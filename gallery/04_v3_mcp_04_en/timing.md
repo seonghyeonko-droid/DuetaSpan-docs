@@ -1,37 +1,91 @@
 # v3_mcp_04_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: What is the temperature outside?
-     1.31s  <ret> 발화 (turn1 첫 프레임)
-     1.91s  agent 발화 시작: <ret> Let me check that for you. Right now, it’s eighteen de
-     2.12s  user  발화 끝
-     2.31s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.13s]: (tool result) The current temperature is 18 degrees Celsius.
-     7.24s  agent 발화 끝
-     7.26s  user  발화 시작: That’s… surprisingly warm for November. Can you show me the 
-    12.57s  <ret> 발화 (turn3 첫 프레임)
-    13.16s  agent 발화 시작: <ret> Certainly, I can look that up. The forecast for Reykja
-    13.23s  user  발화 끝
-    13.53s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.26s]: (tool result) The forecast for Reykjavik is cloudy with a high of 7 de
-    22.45s  user  발화 시작: Hmm. That's a bit grim. I— I mean, I was hoping for clearer 
-    22.57s  agent 발화 끝
-    28.13s  agent 발화 시작: Seeing the aurora depends on a lot more than just cloud cove
-    28.23s  user  발화 끝
-    36.96s  user  발화 시작: Do you know what the Kp index is right now?
-    37.08s  agent 발화 끝
-    39.22s  <ret> 발화 (turn7 첫 프레임)
-    39.82s  agent 발화 시작: <ret> That’s a good question. It’s a measure of geomagnetic 
-    39.91s  user  발화 끝
-    40.22s  ⚡SPAN 주입 [d'=1.00s / d_lead=4.49s]: (tool result) The current Kp index is 3.
-    44.20s  agent 발화 시작: The current Kp index is three, which suggests minor geomagne
-    44.31s  agent 발화 끝
-    46.70s  user  발화 시작: Uh-huh.
-    47.19s  user  발화 끝
-    50.19s  agent 발화 시작: A Kp of three isn’t ideal, but aurora are still possible at 
-    50.31s  agent 발화 끝
-    56.77s  agent 발화 끝
-    57.42s  user  발화 시작: Okay. So, if I wanted to book a Northern Lights tour for tom
-    65.67s  <ret> 발화 (turn12 첫 프레임)
-    65.75s  ⚡SPAN 주입 [d'=0.08s / d_lead=2.05s]: (tool result) There is one spot available on the "Aurora Explorer" tou
-    66.27s  agent 발화 시작: <ret> I can certainly do that. There's one space left on the
-    66.46s  user  발화 끝
-    76.10s  agent 발화 끝
+     0.00s  user  발화 시작: Navigate to Google, running headless with no sandbox.
+     3.59s  <ret> 발화 (turn1 첫 프레임)
+     4.18s  agent 발화 시작: <ret> Certainly, I can open a browser— The browser is now op
+     4.35s  user  발화 끝
+     5.11s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.61s]: (tool result) Browser navigation to https://www.google.com completed s
+    13.31s  agent 발화 끝
+    13.32s  user  발화 시작: Okay, good. Now, search Google for “edelweiss flower locatio
+    17.06s  <ret> 발화 (turn3 첫 프레임)
+    17.66s  agent 발화 시작: <ret> Of course, I can perform that search— Google found one
+    17.72s  user  발화 끝
+    18.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.13s]: (tool result) Google search for "edelweiss flower locations" returned 
+    26.04s  user  발화 시작: Switzerland, huh? That sounds promising. What’s the current 
+    26.14s  agent 발화 끝
+    30.56s  <ret> 발화 (turn5 첫 프레임)
+    31.15s  agent 발화 시작: <ret> Let me check the time in Bern for— It is currently two
+    31.32s  user  발화 끝
+    31.60s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.01s]: (tool result) The current time in Bern, Switzerland is 14:37, Central 
+    37.41s  user  발화 시작: Two thirty-seven… right. Can you find me a hiking trail in t
+    37.54s  agent 발화 끝
+    43.59s  <ret> 발화 (turn7 첫 프레임)
+    43.83s  ⚡SPAN 주입 [d'=0.24s / d_lead=3.79s]: (tool result) AllTrails lists "Harder Kulm Panorama Trail" near Interl
+    44.19s  agent 발화 시작: <ret> I can certainly look for a suitable trail— The Harder 
+    44.26s  user  발화 끝
+    57.38s  user  발화 시작: Interlaken… hmm. Is that trail accessible by train?
+    57.45s  agent 발화 끝
+    60.59s  <ret> 발화 (turn9 첫 프레임)
+    61.19s  agent 발화 시작: <ret> Let me investigate train access to that trail— Interla
+    61.36s  user  발화 끝
+    61.55s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.60s]: (tool result) Interlaken Ost station is 3.7km from Harder Kulm base st
+    71.99s  agent 발화 끝
+    72.68s  user  발화 시작: A funicular, that’s good. [laugh] Okay, I think I want to bo
+    81.90s  <ret> 발화 (turn11 첫 프레임)
+    82.49s  agent 발화 시작: <ret> Certainly, I can check train schedules— A round trip t
+    82.61s  user  발화 끝
+    83.58s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.82s]: (tool result) Train tickets Zurich HB to Interlaken Ost, tomorrow at 0
+    95.19s  agent 발화 끝
+    95.24s  user  발화 시작: One hundred twenty-eight… that sounds reasonable. Book it.
+    98.91s  <ret> 발화 (turn13 첫 프레임)
+    99.51s  agent 발화 시작: <ret> Processing your train ticket request— Your train ticke
+    99.63s  user  발화 끝
+   100.83s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.37s]: (tool result) Train tickets Zurich HB to Interlaken Ost booked: confir
+   108.27s  agent 발화 끝
+   109.28s  user  발화 시작: Perfect. Now, about edelweiss… are they difficult to photogr
+   113.72s  agent 발화 시작: Edelweiss can be a little challenging—
+   113.73s  user  발화 끝
+   115.52s  user  발화 시작: Do they grow at high altitudes generally?
+   116.17s  agent 발화 끝
+   117.36s  <ret> 발화 (turn17 첫 프레임)
+   117.36s  ⚡SPAN 주입 [d'=0.00s / d_lead=2.89s]: (tool result) Edelweiss typically grows between 1,500 and 3,000 meters
+   117.96s  agent 발화 시작: <ret> Yes, that's a very important point— Edelweiss grows be
+   118.06s  user  발화 끝
+   126.92s  user  발화 시작: Limestone slopes… good to know. What about the best time of 
+   127.10s  agent 발화 끝
+   132.74s  <ret> 발화 (turn19 첫 프레임)
+   133.34s  agent 발화 시작: <ret> The blooming season is fairly specific— Edelweiss bloo
+   133.49s  user  발화 끝
+   134.66s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.96s]: (tool result) Edelweiss flowers bloom from June to September, with pea
+   137.80s  user  발화 시작: Right.
+   138.43s  user  발화 끝
+   141.65s  agent 발화 시작: They are quite sensitive plants, actually—
+   141.74s  agent 발화 끝
+   143.63s  <ret> 발화 (turn22 첫 프레임)
+   144.23s  agent 발화 시작: <ret> Edelweiss are protected plants; collecting them is ill
+   144.37s  agent 발화 끝
+   147.15s  ⚡SPAN 주입 [d'=3.52s / d_lead=6.58s]: Edelweiss are protected in many areas; collecting them is illegal and 
+   150.81s  agent 발화 끝
+   151.67s  user  발화 시작: I wouldn't dream of collecting them! Just photographing, of 
+   161.82s  user  발화 끝
+   161.85s  agent 발화 시작: A macro lens is definitely helpful—
+   163.86s  user  발화 시작: A macro lens… I think I have one. What’s the weather forecas
+   164.63s  agent 발화 끝
+   169.50s  <ret> 발화 (turn26 첫 프레임)
+   170.06s  user  발화 끝
+   170.10s  agent 발화 시작: <ret> Let me check the weather forecast— Tomorrow in Interla
+   170.62s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.11s]: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15
+   178.54s  agent 발화 끝
+   180.22s  user  발화 시작: Sounds lovely. Is there a good local restaurant near the Har
+   184.56s  <ret> 발화 (turn28 첫 프레임)
+   185.16s  agent 발화 시작: <ret> I can search for restaurants in that area— Restaurant 
+   185.22s  user  발화 끝
+   187.44s  ⚡SPAN 주입 [d'=2.88s / d_lead=2.96s]: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swi
+   196.42s  user  발화 시작: Schuh… that sounds good. I think that’s all I need for now.
+   196.62s  agent 발화 끝
+   199.94s  user  발화 끝
+   200.06s  agent 발화 시작: Wonderful! I’m glad I could help you plan—
+   202.55s  user  발화 시작: Thanks, Moshi. You’ve been very helpful.
+   203.28s  agent 발화 끝
+   205.22s  user  발화 끝

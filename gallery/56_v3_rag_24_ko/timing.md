@@ -1,27 +1,23 @@
 # v3_rag_24_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 오톨란에 대한 이야기를 읽어봤는데… 프랑스에서는 오톨란을 먹을 수 없다고 하던데, 사실이에요?
-     6.11s  agent 발화 시작: 재밌는 질문인데.
-     6.35s  user  발화 끝
-     6.51s  <ret> 발화 (turn2 첫 프레임)
-     7.11s  agent 발화 시작: <ret> 음, 좀 복잡해… 프랑스에서는 1981년부터 꾀꼬리 먹는 게 불법이었거든.
-     7.40s  agent 발화 끝
-     7.51s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.27s]: The ortolan bunting is a small migratory bird whose consumption has be
-    12.99s  agent 발화 끝
-    13.34s  user  발화 시작: 아, 대박. 왜요? 멸종 위기에 처했거나 그런 건가요?
-    16.24s  agent 발화 시작: 단순히 멸종 위기보다는 좀 더 복잡한 문제야, 사실.
-    16.38s  user  발화 끝
-    18.92s  <ret> 발화 (turn5 첫 프레임)
-    19.52s  agent 발화 시작: <ret> 그 이유를 좀 알아볼까… 예전에는 서식지 파괴랑 맛 때문에 과도하게 잡아서 오톨란 개체 수가 줄었
-    19.62s  agent 발화 끝
-    19.92s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.46s]: Historically hunted for their rich flavor, ortolan populations decline
-    26.00s  agent 발화 끝
-    26.19s  user  발화 시작: 그렇다면, 과거의 일인가요? 예전에 사람들은 오톨란을 흔히 먹었다는 건가요?
-    31.71s  user  발화 끝
-    31.79s  agent 발화 시작: [laugh] 응, 꽤 많이 먹었지. 물론 항상 고급 음식으로 여겨졌어.
-    35.30s  <ret> 발화 (turn8 첫 프레임)
-    35.90s  agent 발화 시작: <ret> 전통이 어떻게 변하는지 정말 흥미롭네… 예전에는 오톨란을 먹는 게 프랑스 요리에서 부와 지위를 나
-    35.95s  agent 발화 끝
-    36.30s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.33s]: The consumption of ortolan was historically a symbol of wealth and sta
-    42.89s  agent 발화 끝
+     0.00s  user  발화 시작: 인도 독립에 대해 읽다가 궁금한 점이 생겼어요. 로마와 파리에 자유 인도 센터를 세운 사람이 누구였는지 알 
+     6.76s  <ret> 발화 (turn1 첫 프레임)
+     7.35s  agent 발화 시작: <ret> 정말 흥미로운 질문이시네요. 중요한 시기에 대한 이야기를 나누게 되었어요. 수바스 찬드라 보스가 
+     7.55s  user  발화 끝
+     8.20s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.41s]: Subhas Chandra Bose founded the Free India Centre in Rome in 1941 and 
+    20.57s  agent 발화 끝
+    20.92s  user  발화 시작: 아, 일구사십일년과 사십이년이군요… 그럼 그는 이미 추축국과 협력하고 있던 중에 그런 일을 한 건가요?
+    27.70s  agent 발화 시작: 네, 맞아요. 정치적으로 매우 복잡하고 논란이 많았던 시기였습니다.
+    27.78s  user  발화 끝
+    31.44s  agent 발화 끝
+    32.33s  user  발화 시작: 그런데… 그 센터들의 목적이 정확히 뭐였나요? 그러니까, 그곳에서 뭘 한 거죠?
+    37.37s  <ret> 발화 (turn5 첫 프레임)
+    37.97s  agent 발화 시작: <ret> 좋은 질문이세요. 그 기능에 대해 이해하면 중요성을 알 수 있을 거예요. 자유 인도 센터는 인도 
+    37.98s  user  발화 끝
+    39.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: The Free India Centres served as information bureaus and recruitment c
+    48.08s  agent 발화 끝
+    48.12s  user  발화 시작: 인도 국가군… 맞아요, 일본의 지원으로 그가 만든 군대요? 그럼 로마와 파리는 주요 모집 장소였던 건가요?
+    55.57s  agent 발화 시작: 그 도시들은 많은 인도 교민들이 거주했기 때문에, 그 노력에 있어서 전략적인 위치였습니다. 파리의 재즈 클럽
+    55.77s  user  발화 끝
+    67.12s  agent 발화 끝

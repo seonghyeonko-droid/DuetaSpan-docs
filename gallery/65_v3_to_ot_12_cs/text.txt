@@ -1,22 +1,14 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 중국이 세계무역기구에 언제 가입했는지 ⟨ret@3.17s⟩ 궁금해서.
-[  3.74s][moshi] ⟦⚡SPAN@4.17s: China acceded to the World Trade Organization on December 11, 2001.⟧ 그거 좋은 질문인데. 중국은 이천일 년 십이 월 십일 일에 WTO 회원국이 됐어.
-[ 10.41s][user ] 와, 진짜 오래됐네. 그럼 지금 이십 년 넘었어?
-[ 13.56s][moshi] 맞아, 그 중요한 순간 이후로 이십 년 넘게 흘렀어. 세계 무역에 큰 영향을 줬지.
-[ 18.45s][user ] 궁금한데, 중국이 가입하려면 어떤 큰 어려움을 넘어야 ⟨ret@22.07s⟩ 했어?
-[ 22.65s][moshi] ⟦⚡SPAN@23.07s: China’s entry required extensive negotiations on issues including agricultural subsidies and non-tariff trade ⟧ 좀 알려줄게. 중국의 WTO 가입은 농업 보조금이나 다른 무역 장벽에 대한 논의가 필요했어.
-[ 26.94s][user ] «backchannel» 응.
-[ 28.52s][moshi] 그 협상은 복잡했고 양쪽 모두 많은 타협이 필요했어. 시간이 오래 걸린 과정이었지.
-[ 36.16s][user ] 그럼 미국의 경제에는 어떤 ⟨ret@38.20s⟩ 영향을 줬어?
-[ 38.78s][moshi] ⟦⚡SPAN@39.16s: U.S. trade with China increased significantly after 2001, leading to both benefits and challenges for American⟧ 그건 좀 넓은 질문인데— 이천일 년 이후로 미국과 중국 간의 무역이 늘면서 기회와 어려움이 생겼어.
-[ 45.25s][user ] 그게 제조업에 큰 변화를 가져왔어?
-[ 47.53s][moshi] «interrupted» —어떤 분야는 성장했고 다른 분야는 경쟁이 심해졌어—
-[ 50.49s][user ] «interrupts_prev» 그러니까, 가입 후에 제조업이 중국으로 많이 옮겨갔어?
-[ 54.55s][moshi] 응, 인건비가 저렴하고 다른 요인들 때문에 중국으로 제조업이 상당히 이전됐어.
-[ 59.81s][user ] «to_other» 저기, 보고서는 다 끝냈어?
-[ 61.92s][user ] 미안. 다시 중국 얘기로 돌아가서— WTO 가입이 중국 내부 경제 정책에 큰 변화를 줬어? ⟨ret@75.82s⟩
-[ 69.00s][moshi] 내부적으로 상당한 경제 개혁을 촉진했고, 세계 무역 기준에 맞춰 정책을 정렬했어. 정말 큰 변화였지.
-[ 76.41s][moshi] ⟦⚡SPAN@76.82s: WTO membership required China to adopt market-oriented policies, including reducing state control over industr⟧ 그 개혁은 광범위했어. 중국은 WTO에 가입하기 위해 시장 정책을 채택하고 산업에 대한 국가 통제를 줄여야 했어.
+[  0.00s][user ] 사형에 대해 읽다가 궁금해졌는데, 영국이 공식적으로 사형을 폐지한 게 ⟨ret@4.77s⟩ 언제야?
+[  5.37s][moshi] 음, 그런 문제에 ⟦⚡SPAN@6.93s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ 대해 오랜 역사를 생각해 보면 무거운 질문이네요.
+[ 10.08s][moshi] 영국에서는 구십팔년에 사형이 완전히 폐지됐습니다.
+[ 13.43s][user ] 구십팔년이라… 생각보다 최근이네, 진짜. 점진적으로 진행된 거야, 아니면 그냥—
+[ 19.15s][moshi] «interrupted» 사실 수십 년에 걸쳐 진화한 과정이었습니다.
+[ 21.12s][user ] «interrupts_prev» 살인죄 같은 특정 범죄에 대해서는 그 전에 ⟨ret@24.48s⟩ 먼저 폐지했어?
+[ 25.09s][moshi] ⟦⚡SPAN@25.84s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ 네, 폐지는 단계적으로 이루어졌습니다.
+[ 27.45s][moshi] 살인은 육십오년에 사형 대상에서 제외됐고, 육십구년에 영구적으로 확정됐습니다.
+[ 35.12s][user ] 그러니까, 사 년 동안 살인에 대해서는 다시 사형을 부활시킬 수 있는 기간이었던 거야? 그거 좀 불안정해 보이는데.
+[ 41.65s][moshi] 불안정하다는 표현이 딱 맞네요. 그 몇 년 동안 법적인 상황이 확실히 불안정했을 거라고 생각합니다.

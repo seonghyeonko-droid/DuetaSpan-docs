@@ -1,31 +1,23 @@
 v3_rag_25_ko src=hotpotqa style=v2
-SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. <system>
+SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 밴드 오브 브라더스에 대해 좀 알아보고 싶은데… 피터 오미어라랑 노먼 다이크, 둘이 무슨 관계였어?
-[  6.84s][moshi] 좋은 질문이에요. 그런 이야기들은 얽혀있어서 헷갈릴 때가 많죠.
-[ 11.67s][user ] 글쎄, 헷갈리긴 해. 둘 다 이지 컴퍼니에 있었잖아? 근데 전쟁 전에 서로 어떻게 ⟨ret@17.48s⟩ 알았어?
-[ 18.08s][moshi] ⟦⚡SPAN@18.48s: Peter O’Meara and Norman Dike both attended the same high school, Central High School in Norwood, Massachusett⟧ 어떤 내용인지 찾아볼게요… 둘 다 매사추세츠주 노르우드에 있는 센트럴 하이 스쿨을 졸업했어요.
-[ 26.75s][user ] 센트럴 하이, 흥미롭네. 세상 참 좁다. 운동 같이 했거나, 그냥 같은 반이었어?
-[ 32.76s][moshi] 딱히 친밀한 사이는 아니었던 것 같아요. 그냥 거기서 우연히 만났던 거죠.
-[ 38.21s][user ] 그럼 그냥 아는 사이 정도였나? 뭔가 강한 유대감 같은 건 없었던 ⟨ret@42.27s⟩ 것 같네.
-[ 42.86s][moshi] ⟦⚡SPAN@43.27s: O’Meara and Dike were both on the Central High School football team, playing different positions.⟧ 사실 좀 더 자세한 내용이 있어요… 둘 다 센트럴 하이 스쿨에서 풋볼을 했는데, 포지션은 달랐어요.
-[ 50.00s][user ] 풋볼? 흥미로운데. 무슨 포지션으로 뛰었어?
-[ 53.88s][moshi] 오미어라는 라인맨이었고, 덩치가 컸어요. 다이크는 하프백이었죠. 꽤 대조적이었어요.
-[ 62.03s][user ] 라인맨이랑 하프백… 경기장에서 직접적으로 교류가 많지 ⟨ret@66.07s⟩ 않았겠네?
-[ 66.67s][moshi] ⟦⚡SPAN@67.07s: Linemen primarily block for the halfback, creating openings for running plays.⟧ 맞아요. 라인맨은 런닝 플레이 때 하프백을 위해 블록을 해 주거든요.
-[ 72.02s][user ] 그럼 오미어라는 조력자 역할이었던 셈인가? 음. 근데 풋볼 말고도 사적으로 어울렸어?
-[ 78.47s][moshi] 자료를 보니까, 그렇게 많이 어울리지는 않았던 것 같아요. 서로 다른 무리를 다녔어요.
-[ 84.27s][user ] 그렇구나… 좀 실망스럽네. 더 깊은 관계가 있었으면 좋았을 텐데. 항상 그런 게 더 감동적일 때가 있잖아—
-[ 92.57s][moshi] «interrupted» 상황이 그렇게 만들어지기도 하죠—
-[ 94.38s][user ] «interrupts_prev» 잠깐만, 다이크는 풋볼팀에서 *선발*로 뛰었어, 아니면 후보 ⟨ret@98.59s⟩ 선수였어?
-[ 99.19s][moshi] ⟦⚡SPAN@99.59s: Norman Dike was a starting halfback for Central High School’s football team in his senior year.⟧ 좋은 질문이에요. 그 부분에 대해 기억을 좀 더듬어 볼게요…
-[103.13s][moshi] 다이크는 시니어 때 하프백으로 선발 출전했어요.
-[107.36s][user ] 선발이구나. 그럼 학교에서 꽤 유명했을 텐데. 오미어라는 경기에서 상을 받은 적 있어?
-[113.61s][moshi] 괜찮은 선수였고, 믿음직했지만, 특별히 큰 상을 받은 건 없는 것 같아요. 제가 기억하기로는요.
-[120.44s][user ] 신기하네, 그렇게 사소한 디테일이 생생한 그림을 그려줄 수 있다니. 둘 다 고등학교 졸업하고 바로 ⟨ret@126.26s⟩ 군대에 들어갔어?
-[126.85s][moshi] ⟦⚡SPAN@127.26s: O’Meara attended Norwich University for a year before enlisting, while Dike went directly into the army.⟧ 좋은 지적이에요. 좀 더 정확하게 말씀드리자면… 오미어라는 노리치 대학교에 1년 다녔다가 입대했고, 다이크는 바로 입대했어요.
-[137.87s][user ] 그럼, 각자 조금 다른 길을 걸었던 거네. 노리치… 거기는 군사대학이지?
-[143.46s][moshi] 맞아요. 젊은이들을 군 복무에 대비시키는 매우 존경받는 학교예요.
-[149.52s][user ] 그럼 오미어라에 대해 조금 더 이해가 되네. 바스토뉴에서 둘 다 만나게 될 줄은 상상도 못 했어.
-[154.51s][moshi] 삶은 예상치 못한 방식으로 사람들을 연결시키곤 하죠, 그렇지 않나요? 조종사는 그걸 빨리 알게 돼요.
+[  0.00s][user ] 걔가 웨이크 포레스트에서 뛸 때 듀크 풋볼 코치가 누구였는지 기억하려고 해—월리스 웨이드 스타디움이었나? ⟨ret@13.47s⟩
+[  6.59s][moshi] 네, 듀크는 웨이크 포레스트의 월리스 웨이드 스타디움에서 여러 번 경기를 치렀는데, 역사적인 경기장이죠.
+[ 14.07s][moshi] 음, 그 시기의 ⟦⚡SPAN@16.27s: David Cutcliffe was the head coach of the Duke Blue Devils football team from 2008 to 2021.⟧ 코치를 찾아볼까요… 데이비드 커틀리프가 월리스 웨이드 스타디움에서 열린 경기에서 듀크를 이끌었습니다.
+[ 23.02s][user ] 흠, 커틀리프… 다른 사람이었던 것 같아. 상이라도 받은 적 있어? ⟨ret@30.99s⟩
+[ 27.78s][moshi] 물론 많은 코치들이 그들의 노력에 대해 인정을 받죠.
+[ 31.58s][moshi] 수상 기록을 살펴볼까요… 데이비드 ⟦⚡SPAN@35.31s: David Cutcliffe won the ACC Coach of the Year award in 2013 and 2014.⟧ 커틀리프는 2013년과 2014년 ACC 올해의 코치상을 수상했습니다.
+[ 34.19s][user ] «backchannel» 어어.
+[ 39.54s][user ] 좋아, 말이 되네. 근데 *전국* 올해의 코치상도 받았어? ⟨ret@47.17s⟩
+[ 44.38s][moshi] 전국적인 인정은 컨퍼런스 상과는 확실히 다르죠.
+[ 47.77s][moshi] 전국 올해의 코치상 수상 ⟦⚡SPAN@50.29s: David Cutcliffe was named the National Coach of the Year by the Paul Weeks Award Foundation in 2013.⟧ 여부를 확인해 볼까요… 데이비드 커틀리프는 2013년에 폴 위크스 재단으로부터 전국 올해의 코치상을 수상했습니다.
+[ 57.59s][user ] 딱 하나뿐이네? 코치 경력이 그렇게 오래됐는데… 너무 적은 것 같아. ⟨ret@67.44s⟩
+[ 61.98s][moshi] 아쉽게도 오래 활동했다고 해서 반드시 많은 전국적인 상을 받는 것은 아니에요.
+[ 68.03s][moshi] 다른 상에 대한 자세한 내용도 알려드릴까요… 그는 ⟦⚡SPAN@72.08s: David Cutcliffe was honored as the Home Depot National Coach of the Year in 2013.⟧ 2013년에 홈 디포 전국 올해의 코치로도 선정되었습니다.
+[ 77.18s][user ] 2013년에 큰 상을 다 받았어? 좀 집중됐네. ⟨ret@83.74s⟩
+[ 80.99s][moshi] 가끔 코치는 특히 뛰어난 한 해를 보내기도 하죠.
+[ 84.33s][moshi] 듀크에서의 그의 전체 ⟦⚡SPAN@86.86s: During his tenure, David Cutcliffe achieved a 79–93 win-loss record with the Duke Blue Devils.⟧ 기록을 확인해 드릴까요… 데이비드 커틀리프의 듀크 기록은 79승 93패였습니다.
+[ 93.32s][user ] 79승 93패… 아주 훌륭한 기록은 아니네, 그렇지?
+[ 97.70s][moshi] 프로그램을 구축하는 데는 시간과 인내심이 필요하다는 것을 잘 알고 있습니다.
+[102.71s][user ] 그렇겠지. 그래도, 알아줘서 고마워.

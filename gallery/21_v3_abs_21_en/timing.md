@@ -1,19 +1,27 @@
 # v3_abs_21_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: What is the pressure of the gas called?
-     1.84s  <ret> 발화 (turn1 첫 프레임)
-     2.00s  ⚡SPAN 주입 [d'=0.16s / d_lead=1.30s]: (no information found)
-     2.42s  agent 발화 시작: <ret> That's a good question. I’m afraid I don’t have inform
-     2.44s  user  발화 끝
-     7.88s  user  발화 시작: Hmm, okay. What about the highest building in Chicago?
-     7.94s  agent 발화 끝
-    11.28s  <ret> 발화 (turn3 첫 프레임)
-    11.85s  agent 발화 시작: <ret> Let me check that for you. The Willis Tower, formerly 
-    11.91s  user  발화 끝
-    12.28s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.12s]: (tool result) The Chicago skyline is dominated by the Willis Tower, wh
-    21.40s  agent 발화 끝
-    21.48s  user  발화 시작: Wow, that's really tall! Is it energy efficient?
-    25.09s  agent 발화 시작: Energy efficiency is absolutely vital in modern construction
-    25.10s  user  발화 끝
-    31.58s  agent 발화 끝
+     0.00s  user  발화 시작: What has been in use since 1015?
+     2.00s  <ret> 발화 (turn1 첫 프레임)
+     2.58s  user  발화 끝
+     2.60s  agent 발화 시작: <ret> That’s a fascinating question, though a precise answer
+     4.40s  ⚡SPAN 주입 [d'=2.40s / d_lead=4.58s]: (no information found)
+     5.60s  user  발화 시작: Yeah.
+     6.09s  user  발화 끝
+     7.10s  agent 발화 시작: I’ve searched my records, and unfortunately, nothing specifi
+     7.17s  agent 발화 끝
+    14.61s  agent 발화 끝
+    15.04s  user  발화 시작: Oh. Well, what about the oldest cathedral still actively use
+    20.23s  <ret> 발화 (turn5 첫 프레임)
+    20.82s  agent 발화 시작: <ret> Determining the oldest continuously used cathedral… Wi
+    21.07s  user  발화 끝
+    21.43s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.31s]: Winchester Cathedral began construction in 1079 and has been in near-c
+    31.31s  agent 발화 끝
+    31.50s  user  발화 시작: That’s quite a long time! Were there many changes made to it
+    36.50s  user  발화 끝
+    36.93s  agent 발화 시작: Oh, absolutely. A cathedral evolves with the times, you see.
+    45.60s  agent 발화 끝
+    45.68s  user  발화 시작: I— I mean, were there major structural alterations?
+    48.87s  agent 발화 시작: Indeed. From the twelfth through the sixteenth centuries, Wi
+    49.00s  user  발화 끝
+    56.84s  agent 발화 끝

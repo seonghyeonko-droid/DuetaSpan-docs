@@ -1,13 +1,10 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
+SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you happen to know when the fourth episode of Game ⟨ret@2.86s⟩ of Thrones aired?
-[  3.46s][moshi] ⟦⚡SPAN@3.86s: August 6, 2017 was the airdate for the fourth episode of Game of Thrones.⟧ That’s a popular question, certainly.
-[  5.24s][moshi] The fourth episode of Game of Thrones aired on August sixth, two-thousand and seventeen.
-[  9.72s][user ] Wow, that was a while ago. ⟨ret@13.21s⟩
-[ 11.50s][moshi] Time does seem to slip by quickly, doesn't it?
-[ 12.62s][user ] «backchannel» Yeah, yeah.
-[ 13.81s][moshi] ⟦⚡SPAN@14.21s: (tool result) Search results for "Game of Thrones streaming services" returned: HBO Max, Now TV, Sky Go.⟧ Are you planning a re-watch? You can currently stream Game of Thrones on HBO Max, Now TV, and Sky Go.
-[ 22.07s][user ] «to_other» Honestly, I can’t stand all that fantasy stuff.
-[ 24.61s][user ] Oh, that's interesting. I— I mean, do you ever work on buildings with gargoyles? They seem a bit fantastical.
+[  0.00s][user ] So, who’s won more games, the Eagles or the Cowboys? It feels like it’s ⟨ret@4.38s⟩ always close.
+[  4.98s][moshi] That’s ⟦⚡SPAN@5.66s: The Dallas Cowboys have won 738 regular season games, while the Philadelphia Eagles have won 617.⟧ a common question among football fans— The Cowboys have won more games overall, with seven hundred and thirty-eight to the Eagles’ six hundred and seventeen.
+[ 13.28s][user ] Wow, that’s a pretty big difference! More than a hundred games.
+[ 17.34s][moshi] It is a significant margin, yes. Their rivalry is still very competitive though, regardless of the overall record.
+[ 25.66s][user ] «to_other» Did you remember to pick up milk on the way home?
+[ 28.07s][user ] Are the Cowboys ahead in playoff games too, or is that different?

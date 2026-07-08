@@ -1,23 +1,27 @@
 # v3_mcp_03_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 여름궁전 입장료가 얼마야?
-     1.49s  <ret> 발화 (turn1 첫 프레임)
-     2.09s  agent 발화 시작: <ret> 네, 많이들 물어보시는 질문이에요. 여름궁전 입장료는 삼십 위안입니다.
-     2.12s  user  발화 끝
-     2.49s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.71s]: (tool result) Entrance to the Summer Palace costs 30 yuan.
-     7.42s  user  발화 시작: 그래, 오늘 가이드 투어는 있어?
-     7.50s  agent 발화 끝
-     9.18s  <ret> 발화 (turn3 첫 프레임)
-     9.66s  ⚡SPAN 주입 [d'=0.48s / d_lead=1.43s]: (tool result) Guided tours are available at 10:00 AM, 2:00 PM, and 4:0
-     9.77s  user  발화 끝
-     9.78s  agent 발화 시작: <ret> 맞아요, 확인해 볼게요. 오늘 오전 열 시, 오후 두 시, 그리고 네 시에 투어가 있습니다.
-    15.14s  agent 발화 끝
-    15.51s  user  발화 시작: 아, 그러니까, 두 시에 예약해 줄 수 있어?
-    17.73s  <ret> 발화 (turn5 첫 프레임)
-    17.97s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.54s]: (tool result) A tour is booked for you at the Summer Palace at 2:00 PM
-    18.33s  agent 발화 시작: <ret> 네, 두 시 투어 예약을 완료했습니다. 예약 번호는 SP7892입니다.
-    18.46s  user  발화 끝
-    23.23s  agent 발화 끝
-    24.50s  user  발화 시작: 좋아, 고마워!
-    26.25s  user  발화 끝
+     0.00s  user  발화 시작: BBC 뉴스 페이지를 열어 주고, 브라우저도 보여 주세요.
+     3.58s  <ret> 발화 (turn1 첫 프레임)
+     4.18s  agent 발화 시작: <ret> 응, 뉴스 볼 거면 좋은 시작이지. 네 브라우저에 BBC 뉴스 웹사이트를 열었어.
+     4.21s  user  발화 끝
+     7.10s  ⚡SPAN 주입 [d'=3.52s / d_lead=5.25s]: (tool result) The browser is now displaying the BBC News homepage.
+    10.36s  user  발화 시작: 잘 로딩되고 있어요?
+    10.47s  agent 발화 끝
+    12.20s  user  발화 끝
+    12.44s  agent 발화 시작: 지금은 괜찮게 로딩될 거야. 대역폭도 괜찮고.
+    16.10s  agent 발화 끝
+    16.42s  user  발화 시작: 그 페이지에서 나이지리아 관련 기사를 검색해 줄 수 있어요?
+    19.96s  <ret> 발화 (turn5 첫 프레임)
+    20.56s  agent 발화 시작: <ret> BBC에서 딱 찾아보자니, 나이지리아 관련 기사가 열일곱 개나 나왔어.
+    20.67s  user  발화 끝
+    22.68s  ⚡SPAN 주입 [d'=2.72s / d_lead=5.18s]: (tool result) The search found seventeen articles matching “Nigeria”.
+    25.74s  agent 발화 끝
+    27.16s  user  발화 시작: 음, 많네요. 처음 세 개의 제목을 읽어 줄 수 있을까요?
+    31.20s  agent 발화 시작: 기사를 소리 내서 읽어 줄 수는 없어. 대신, 처음 세 개의 제목을 요약해 줄게.
+    31.32s  user  발화 끝
+    37.61s  user  발화 시작: 아, 맞아요. 죄송해요. 그럼 요약해 주세요.
+    37.63s  agent 발화 끝
+    41.28s  agent 발화 시작: 첫 번째는 경제적인 어려움에 대한 거고, 두 번째는 최근 선거에 대한 보고고, 세 번째는 북부 지역의 안보 
+    41.40s  user  발화 끝
+    49.99s  agent 발화 끝

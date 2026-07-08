@@ -1,14 +1,16 @@
 v3_mcp_00_ko src=mcp style=v1
-SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 주문 취소해 ⟨ret@0.85s⟩ 줘.
-[  1.31s][moshi] ⟦⚡SPAN@1.25s: (tool result) The order with ID 78945 has been cancelled.⟧ 네, 요청하신 대로 주문 번호 칠만 팔천구백사십오 건이 취소됐습니다.
-      CALL: {"function": "puppeteer_click", "arguments": {"selector": "div.cancel-order-button"}}
-[  6.29s][user ] 아, 다행이다. 음, 그 주문에 뭐가 들어 있었는지 기억 안 나는데?
-[ 11.12s][moshi] 아소 오케 천 세 폭이랑 상아 팔찌 세트가 포함되어 있었습니다.
-[ 14.12s][user ] «backchannel» 응.
-[ 15.49s][user ] 다른 주문이 아직 남아 있는지 확인해 줄 ⟨ret@18.52s⟩ 수 있어?
-[ 19.11s][moshi] ⟦⚡SPAN@19.52s: (tool result) You have one open order.⟧ 잠시만 확인해 볼게요… 현재 미처리된 주문이 한 건 남아 있습니다.
-      CALL: {"function": "puppeteer_get_text", "arguments": {"selector": "div.open-orders-count"}}
-[ 24.96s][user ] 알겠어, 그거 알아두면 좋겠다.
+[  0.00s][user ] 파리에서 4월 1일부터 4월 5일까지, 오후 2시 30분에 픽업하는 해치백 좀 찾아 ⟨ret@6.83s⟩ 줘.
+[  7.42s][moshi] 네, 알아보고 있어요—여행 시작 전에 차를 찾는 건 ⟦⚡SPAN@12.43s: (tool result) A Renault Clio is available for seventy-eight euros per day from Europcar.⟧ 언제나 좋은 시작이죠. 유로프카에서 르노 클리오를 하루에 78유로에 대여할 수 있는데, 픽업 시간은 오후 2시 30분입니다.
+      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"pickup_location": "Paris", "car_type": "hatchback", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM"}}
+[ 20.94s][user ] 음, 하루에 78유로는 좀 비싸네. 더 싼 거 ⟨ret@24.89s⟩ 있어?
+[ 25.48s][moshi] ⟦⚡SPAN@26.17s: (tool result) A Peugeot 208 is available for fifty-five euros per day from Sixt.⟧ 가격은 당연히 달라지죠—수요와 렌터카 회사에 따라 달라져요.
+      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"pickup_location": "Paris", "car_type": "hatchback", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "max_price": "60"}}
+[ 30.61s][moshi] 식스트에서 푸조 208을 하루에 55유로에 제공하고 있는데, 원하시는 가격에 딱 맞을 거예요.
+[ 37.38s][user ] 55유로면 훨씬 좋네. 좋아, 푸조로 예약해 ⟨ret@41.65s⟩ 줘.
+[ 42.24s][moshi] 잘 됐네요—좋은 ⟦⚡SPAN@44.45s: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation number is ZX87RT.⟧ 가격에 예약하신 건 정말 만족스러워요. 푸조 208이 식스트를 통해 예약되었고, 예약 확인 번호는 ZX87RT입니다.
+      CALL: {"function": "RentalCars_3_BookCar", "arguments": {"pickup_location": "Paris", "car_type": "Peugeot 208", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "rental_company": "Sixt"}}
+[ 53.86s][user ] 좋아! 고마워.
+[ 55.71s][moshi] 천만에요. 제가 차를 빌렸던 적이 있었는데…

@@ -1,51 +1,73 @@
 # v3_selfc_07_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: How much is a bus ticket from New York to Miami on April twe
-     3.56s  <ret> 발화 (turn1 첫 프레임)
-     4.12s  user  발화 끝
-     4.16s  agent 발화 시작: <ret> Let me check bus fares for you. The bus ticket from Ne
-     4.56s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.54s]: (tool result) A bus ticket from New York to Miami on April twenty-seco
-    12.80s  user  발화 시작: That’s… uh, actually, make that April twenty-third.
-    12.86s  agent 발화 끝
-    16.60s  <ret> 발화 (turn3 첫 프레임)
-    16.84s  ⚡SPAN 주입 [d'=0.24s / d_lead=1.73s]: (tool result) A bus ticket from New York to Miami on April twenty-thir
-    17.19s  agent 발화 시작: <ret> Adjusting the date now. A bus ticket from New York to 
-    17.28s  user  발화 끝
-    24.96s  agent 발화 끝
-    25.16s  user  발화 시작: Okay, good. Can you book that for me?
-    26.73s  <ret> 발화 (turn5 첫 프레임)
-    27.27s  user  발화 끝
-    27.32s  agent 발화 시작: <ret> Certainly, I can book that bus ticket.
-    27.73s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.73s]: (tool result) Reservation confirmed: New York to Miami, April 23, one 
-    29.56s  agent 발화 시작: Your bus ticket from New York to Miami on April twenty-third
-    30.05s  agent 발화 끝
-    36.40s  user  발화 시작: Great. What time does it depart?
-    36.42s  agent 발화 끝
-    38.26s  <ret> 발화 (turn8 첫 프레임)
-    38.64s  user  발화 끝
-    38.86s  agent 발화 시작: <ret> Let’s find the departure time. The bus departs New Yor
-    39.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.19s]: (tool result) The bus departs from New York at 8:00 AM on April 23.
-    45.86s  agent 발화 끝
-    46.88s  user  발화 시작: Hmm, that’s early. Are there any later options?
-    49.99s  agent 발화 시작: [laugh] It is a bit of an early start, isn’t it?
-    50.11s  user  발화 끝
-    51.61s  <ret> 발화 (turn11 첫 프레임)
-    52.21s  agent 발화 시작: <ret> Let me check for later departures on the twenty-third.
-    52.39s  agent 발화 끝
-    52.61s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.61s]: (tool result) Buses depart at 8:00 AM, 2:00 PM, and 10:00 PM on April 
-    55.82s  agent 발화 끝
-    55.98s  agent 발화 시작: There are buses departing at eight AM, two PM, and ten PM on
-    62.09s  agent 발화 끝
-    62.51s  user  발화 시작: Okay, the ten PM sounds better. Can we switch to that one?
-    65.33s  <ret> 발화 (turn14 첫 프레임)
-    65.93s  agent 발화 시작: <ret> Yes, we can change your reservation.
-    66.07s  user  발화 끝
-    66.33s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.35s]: (tool result) Reservation updated: New York to Miami, April 23, 10:00 
-    68.27s  agent 발화 시작: Your reservation is updated for the ten PM departure on Apri
-    68.28s  agent 발화 끝
-    75.73s  agent 발화 끝
-    76.82s  user  발화 시작: Perfect. Thank you so much!
-    78.43s  user  발화 끝
-    78.51s  agent 발화 시작: You’re very welcome. As a marine biologist, I often deal wit
-    85.78s  agent 발화 끝
+     0.00s  user  발화 시작: What's the fastest way to get from the Brooklyn Museum to Ya
+     5.50s  <ret> 발화 (turn1 첫 프레임)
+     6.02s  user  발화 끝
+     6.10s  agent 발화 시작: <ret> Let's find the quickest route for you. That trip will 
+     6.46s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.37s]: (tool result) The fastest route is via the 2 and 4 subway lines, takin
+    13.89s  agent 발화 끝
+    13.89s  user  발화 시작: Oh, um, actually, could you check for directions starting fr
+    19.72s  <ret> 발화 (turn3 첫 프레임)
+    20.31s  agent 발화 시작: <ret> Certainly, let’s refine that starting point. From the 
+    20.38s  user  발화 끝
+    20.76s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.26s]: (tool result) The fastest route is via the 2 and 4 subway lines, takin
+    28.97s  agent 발화 끝
+    29.09s  user  발화 시작: That’s… a bit longer than I expected.
+    32.46s  user  발화 끝
+    32.56s  agent 발화 시작: Public transport in the city can sometimes be slow, especial
+    37.56s  agent 발화 끝
+    37.82s  user  발화 시작: Are there any faster options if I were willing to take a tax
+    41.18s  <ret> 발화 (turn7 첫 프레임)
+    41.75s  agent 발화 시작: <ret> I can certainly compare taxi travel times. A taxi woul
+    41.98s  user  발화 끝
+    42.14s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.92s]: (tool result) A taxi ride would take approximately thirty-five to fort
+    50.52s  agent 발화 끝
+    51.20s  user  발화 시작: Wow, that's quite a difference. Is there a way to get real-t
+    56.06s  user  발화 끝
+    56.31s  agent 발화 시작: Several apps provide real-time subway information, like City
+    62.74s  user  발화 시작: Okay, good to know. Could you show me a map of the subway ro
+    62.94s  agent 발화 끝
+    65.10s  <ret> 발화 (turn11 첫 프레임)
+    65.69s  agent 발화 시작: <ret> I can certainly display that for you. I’ve sent a map 
+    65.80s  user  발화 끝
+    66.06s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.04s]: (tool result) A map displaying the 2 and 4 subway lines from Prospect 
+    71.80s  agent 발화 끝
+    72.88s  user  발화 시작: Perfect! Thanks. I think I'll stick with the subway, even if
+    76.88s  agent 발화 시작: A sensible choice; it's often more reliable than navigating 
+    76.90s  user  발화 끝
+    81.94s  user  발화 시작: [laugh] You sound like my dad.
+    82.02s  agent 발화 끝
+    85.18s  user  발화 끝
+    85.20s  agent 발화 시작: [happy] Well, I do spend a lot of time observing patterns, m
+    91.63s  agent 발화 끝
+    91.69s  user  발화 시작: Glacial movement? Right, you’re a glaciologist. That’s cool.
+    95.76s  user  발화 끝
+    95.87s  agent 발화 시작: It has its moments. The sheer scale of ice dynamics is quite
+   101.23s  user  발화 시작: So, have you, uh, been to Yankee Stadium before?
+   101.43s  agent 발화 끝
+   105.07s  user  발화 끝
+   105.52s  agent 발화 시작: Not personally, no. My fieldwork keeps me mostly in colder c
+   110.94s  agent 발화 끝
+   111.19s  user  발화 시작: I bet. Do you ever get tired of the cold?
+   113.98s  agent 발화 시작: It's a challenging environment, certainly, but the beauty of
+   114.06s  user  발화 끝
+   119.77s  agent 발화 끝
+   119.83s  user  발화 시작: I can imagine. I’m planning on getting a hot dog there.
+   123.20s  user  발화 끝
+   123.26s  agent 발화 시작: A classic ballpark experience. I hear they are quite good at
+   128.33s  user  발화 시작: I hope so! I'm meeting a friend. Could you set a reminder fo
+   128.40s  agent 발화 끝
+   131.14s  <ret> 발화 (turn25 첫 프레임)
+   131.72s  agent 발화 시작: <ret> I can definitely add that to your schedule. Your remin
+   131.85s  user  발화 끝
+   132.42s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.53s]: (tool result) A reminder has been set for 6:00 PM: “Meet friend at Yan
+   138.28s  user  발화 시작: Fantastic. Thanks so much for your help.
+   138.66s  agent 발화 끝
+   140.33s  agent 발화 시작: My pleasure. I trust you’ll have a wonderful time at the gam
+   140.35s  user  발화 끝
+   144.21s  agent 발화 끝
+   144.25s  user  발화 시작: I think I will. Maybe I’ll even wave at the pitcher.
+   146.74s  agent 발화 시작: A spirited gesture! Enjoy the evening.
+   146.88s  user  발화 끝
+   149.98s  agent 발화 끝

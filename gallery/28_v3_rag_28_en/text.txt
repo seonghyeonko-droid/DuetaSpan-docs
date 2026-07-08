@@ -1,17 +1,37 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, who really controlled the spice trade back in the day? Was it the British, like everyone thinks? ⟨ret@9.26s⟩
-[  5.86s][moshi] That’s a common misconception, actually. The British influence came much later.
-[  9.85s][moshi] ⟦⚡SPAN@9.74s: The Portuguese Empire established a monopoly over the spice trade routes to Asia during the sixteenth century.⟧ Well, historically… The Portuguese Empire secured a monopoly over spice routes to Asia in the sixteenth century.
-[ 16.57s][user ] The Portuguese? Really? I always assumed it was the Dutch or someone. ⟨ret@27.89s⟩
-[ 22.00s][moshi] The Dutch certainly became significant players, but their ascendancy followed the Portuguese establishing dominance.
-[ 28.49s][moshi] ⟦⚡SPAN@28.85s: Afonso de Albuquerque, in 1515, secured Portuguese control of the sea routes from Lisbon to Melaka.⟧ It's a matter of chronology, you see… Afonso de Albuquerque secured Portuguese control of sea routes from Lisbon to Melaka in fifteen fifteen.
-[ 38.19s][user ] But didn’t other groups—
-[ 39.50s][moshi] «interrupted» The Portuguese initially focused on controlling key ports—
-[ 42.46s][user ] «interrupts_prev» …like the Arab traders? Were they just pushed aside completely? ⟨ret@52.10s⟩
-[ 47.01s][moshi] A valid point. The Portuguese didn’t eliminate all existing trade networks immediately.
-[ 52.67s][moshi] ⟦⚡SPAN@53.10s: Arab traders had long dominated Indian Ocean trade before the Portuguese arrival in the late fifteenth century⟧ That would be too simplistic a view… Arab traders had long dominated Indian Ocean trade before the Portuguese arrived in the late fifteenth century.
-[ 57.44s][user ] «backchannel» Mm-hmm.
-[ 61.43s][moshi] Their influence diminished as Portuguese naval power increased, but they weren’t entirely displaced at first. It was a gradual shift.
+[  0.00s][user ] So, I was wondering… when did the first Harry Potter book actually come out? ⟨ret@6.54s⟩
+[  5.00s][moshi] That’s a very popular question, naturally.
+[  7.14s][moshi] ⟦⚡SPAN@7.50s: Harry Potter and the Philosopher's Stone was first published in the United Kingdom on 26 June 1997.⟧ Let’s see if I can recall— It was first published in the United Kingdom on the twenty-sixth of June, nineteen ninety-seven.
+[ 14.14s][user ] Hmm, okay, but I thought it came out in America much later. Is that right? ⟨ret@20.51s⟩
+[ 18.87s][moshi] You are absolutely correct to question that.
+[ 21.10s][moshi] ⟦⚡SPAN@20.59s: Harry Potter and the Sorcerer's Stone was first published in the United States on September 1, 1998.⟧ It’s important to distinguish— It was first published in the United States on September first, nineteen ninety-eight.
+[ 29.01s][user ] September first… that’s quite a gap, isn’t it? A whole year! ⟨ret@37.06s⟩
+[ 33.49s][moshi] A significant delay, yes. Publishing schedules can be quite complex.
+[ 37.65s][moshi] ⟦⚡SPAN@38.18s: Scholastic Corporation acquired the US rights to publish the Harry Potter series in 1997.⟧ Let me explain the difference— Scholastic Corporation acquired the US rights to publish the series in nineteen ninety-seven.
+[ 47.52s][user ] So Scholastic had it for a year before releasing it? Why the hold up? ⟨ret@54.30s⟩
+[ 52.10s][moshi] There were several considerations at play, I believe.
+[ 54.89s][moshi] They ⟦⚡SPAN@55.58s: Scholastic spent a year re-editing and re-titling the book for the American market.⟧ needed to prepare— Scholastic spent a year re-editing and re-titling the book for the American market.
+[ 61.65s][user ] Re-titling? What did they change the title to? ⟨ret@67.11s⟩
+[ 65.16s][moshi] It was a fairly substantial change, actually.
+[ 67.69s][moshi] ⟦⚡SPAN@67.19s: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potter and the Sorcerer's Stone" for US audie⟧ The American edition— The title was changed to “Harry Potter and the Sorcerer’s Stone” for American audiences.
+[ 73.61s][user ] Sorcerer instead of Philosopher… that's interesting. Did they think American kids wouldn't understand "philosopher"? ⟨ret@82.32s⟩
+[ 80.65s][moshi] «interrupted» It was a marketing decision, primarily—
+[ 82.91s][moshi] ⟦⚡SPAN@83.12s: Scholastic thought "sorcerer" would appeal more to American children than "philosopher."⟧ The publishers believed— Scholastic thought “sorcerer” would appeal more to American children than “philosopher”.
+[ 89.67s][user ] That makes a little sense, I guess. So, after the first book— ⟨ret@95.00s⟩
+[ 94.22s][moshi] «interrupted» After the initial success—
+[ 95.59s][moshi] ⟦⚡SPAN@95.72s: Subsequent books in the series were published in both the UK and US nearly simultaneously.⟧ The subsequent releases— Subsequent books were published in both countries nearly simultaneously.
+[101.96s][user ] Nearly? So there were still some delays even then? ⟨ret@106.56s⟩
+[104.54s][moshi] «interrupted» There were occasional minor discrepancies—
+[107.16s][moshi] ⟦⚡SPAN@106.64s: Minor publication date differences occurred due to shipping and distribution logistics.⟧ It’s not unusual— Minor publication date differences occurred due to shipping and distribution logistics.
+[113.12s][user ] Right, shipping makes sense. I wonder if that affected the hype at all…— ⟨ret@117.52s⟩
+[117.26s][moshi] «interrupted» It certainly could have—
+[118.11s][moshi] The ⟦⚡SPAN@118.80s: The initial delay created significant anticipation and demand for the first book in the US.⟧ anticipation was— The initial delay created significant anticipation and demand for the first book.
+[125.05s][user ] But did J.K. Rowling know about all this, about the changes and the delays? ⟨ret@131.46s⟩
+[130.58s][moshi] «interrupted» Oh, absolutely—
+[132.05s][moshi] ⟦⚡SPAN@132.18s: J.K. Rowling was consulted on the title change and remained involved in the US publishing process.⟧ She was certainly— J.K. Rowling was consulted on the title change and involved in the US process.
+[137.84s][user ] That's good to know she had some say in it. So, the Sorcerer’s Stone version is the one most Americans grew up with? ⟨ret@148.10s⟩
+[144.99s][moshi] Precisely. That’s the version that became iconic here.
+[148.70s][moshi] ⟦⚡SPAN@148.42s: "Harry Potter and the Sorcerer's Stone" became the defining edition for the vast majority of American readers.⟧ It’s the edition— “Harry Potter and the Sorcerer’s Stone” became the defining edition for most American readers.

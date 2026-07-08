@@ -1,23 +1,21 @@
 # v3_chain_06_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 거래 ID 이이일로 주문 번호 일만 이천 삼백 사십오 배송 완료 처리해 주세요.
-     5.48s  <ret> 발화 (turn1 첫 프레임)
-     5.48s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.43s]: (tool result) Shipment 12345 is now marked as delivered with transacti
-     5.84s  user  발화 끝
-     6.08s  agent 발화 시작: <ret> 네, 주문 번호 만 이천 삼백 사십오 건은 배송 완료된 것으로 확인되었습니다.
-    11.27s  agent 발화 끝
-    11.38s  user  발화 시작: 그 주문의 배송 주소를 알려 주실 수 있을까요?
-    13.74s  <ret> 발화 (turn3 첫 프레임)
-    14.33s  user  발화 끝
-    14.34s  agent 발화 시작: <ret> 알아볼 수 있습니다— 주문 번호 만 이천 삼백 사십오 건의 배송 주소는 캘리포니아 주 애니타운 엘
-    14.70s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.20s]: (tool result) The delivery address for order 12345 is 42 Elm Street, A
-    19.15s  user  발화 시작: 음.
-    19.70s  user  발화 끝
-    25.34s  agent 발화 끝
-    25.44s  user  발화 시작: 잠시만요— 혹시 그거 급배송으로 발송됐었나요?
-    29.25s  agent 발화 시작: 네, 주문 번호 만 이천 삼백 사십오 건은 급배송으로 발송되었습니다.
-    29.28s  user  발화 끝
-    33.68s  agent 발화 끝
-    35.82s  user  발화 시작: 알겠습니다, 좋네요. 그리고 총 배송비는 얼마였나요?
-    39.56s  user  발화 끝
+     0.00s  user  발화 시작: 시카고 일리노이에서 태국 음식점 좀 찾아 주세요.
+     3.64s  <ret> 발화 (turn1 첫 프레임)
+     3.84s  user  발화 끝
+     4.24s  agent 발화 시작: <ret> 네, 시카고에 있는 태국 음식점을 알아봤는데요, 타이 당, 스타 오브 시암, 아룬스 타이 레스토랑
+     4.44s  ⚡SPAN 주입 [d'=0.80s / d_lead=3.32s]: (tool result) Thai restaurants in Chicago include Thai Dang, Star of S
+    12.77s  agent 발화 끝
+    12.85s  user  발화 시작: 아, 타이 당이 괜찮아 보이네요. 주소가 어떻게 되나요?
+    15.44s  <ret> 발화 (turn3 첫 프레임)
+    16.03s  agent 발화 시작: <ret> 네, 바로 찾아 드릴게요… 타이 당은 일리노이주 시카고 노스 브로드웨이 4339번지에 위치하고 있
+    16.09s  user  발화 끝
+    16.64s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.49s]: (tool result) Thai Dang is located at 4339 N Broadway, Chicago, IL 606
+    26.12s  user  발화 시작: 거기 내일 저녁 7시에 두 명 예약해 주실 수 있나요?
+    26.33s  agent 발화 끝
+    28.89s  <ret> 발화 (turn5 첫 프레임)
+    29.49s  agent 발화 시작: <ret> 예약 도와드릴 수 있어서 기뻐요… 네, 타이 당에 내일 저녁 7시에 두 명으로 예약 완료됐습니다.
+    29.72s  user  발화 끝
+    30.97s  ⚡SPAN 주입 [d'=2.08s / d_lead=2.98s]: (tool result) Your reservation for two at Thai Dang tomorrow at 7:00 P
+    38.43s  agent 발화 끝

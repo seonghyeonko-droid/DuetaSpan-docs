@@ -1,43 +1,21 @@
 # v3_fstart_15_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 시 파일로 짧은 시 한 편 만들어 줄래?
-     1.61s  <ret> 발화 (turn1 첫 프레임)
-     1.85s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.53s]: (tool result) A text file named poem was created with the content "The
-     2.20s  agent 발화 시작: <ret> 응, 만들어 줬어. “poem”이라는 이름으로 파일 만들어서 시 넣어 놨어.
-     2.45s  user  발화 끝
-     7.53s  agent 발화 끝
-     8.02s  user  발화 시작: 어… 근데 프랑스 수도가 어디지?
-    10.31s  agent 발화 시작: 파리가 프랑스 수도야. 예술과 문화로 유명한 곳이지.
-    10.32s  user  발화 끝
-    13.99s  user  발화 시작: 그래.
-    14.01s  agent 발화 끝
-    14.13s  <ret> 발화 (turn5 첫 프레임)
-    14.31s  user  발화 끝
-    14.40s  agent 발화 시작: <ret> 근데 그 파일 말인데— 시에 더 추가하고 싶어, 아니면 다른 파일 만들고 싶어?
-    14.93s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.62s]: <ret>
-    19.68s  agent 발화 끝
-    20.14s  user  발화 시작: 음, 내 주변 이탈리아 식당 좀 찾아 줘.
-    22.75s  <ret> 발화 (turn7 첫 프레임)
-    22.75s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.88s]: (tool result) Four Italian restaurants are nearby: Bella Pasta, 0.5 mi
-    23.32s  user  발화 끝
-    23.34s  agent 발화 시작: <ret> 당연하지. 지금 네 위치에서 1.5마일 안에 이탈리아 식당 네 군데 찾았어.
-    25.66s  user  발화 시작: 응.
-    26.11s  user  발화 끝
-    27.94s  <ret> 발화 (turn9 첫 프레임)
-    28.20s  agent 발화 끝
-    28.53s  agent 발화 시작: <ret> 그럼 뭘 해 줄까— 식당 평점이나 영업시간 같은 거 보고 싶어?
-    28.94s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.59s]: <ret>
-    32.04s  agent 발화 끝
-    32.38s  user  발화 시작: 벨라 파스타 전화번호가 뭐야?
-    33.68s  <ret> 발화 (turn11 첫 프레임)
-    34.27s  agent 발화 시작: <ret> 잠깐만. 벨라 파스타 전화번호는 오오오-일이삼-사오육칠이고, 오늘 저녁 아홉 시까지 영업해.
-    34.51s  user  발화 끝
-    34.68s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.93s]: (tool result) Bella Pasta’s phone number is 555-123-4567, and it’s ope
-    40.72s  agent 발화 끝
-    41.73s  user  발화 시작: 거기 두 명으로 7시 30분에 예약해 줄래?
-    43.59s  <ret> 발화 (turn13 첫 프레임)
-    43.75s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.43s]: (tool result) A table for two at Bella Pasta is reserved for today at 
-    44.18s  agent 발화 시작: <ret> 응, 오늘 저녁 7시 30분에 벨라 파스타에 두 명 예약됐어.
-    44.41s  user  발화 끝
-    48.48s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 달러랑 유로 환율은 됐고, 런던에서 라고스 가는 다음 주 화요일 비행기 좀 찾아 줘.
+     4.79s  <ret> 발화 (turn1 첫 프레임)
+     5.38s  agent 발화 시작: <ret> 음, 찾아봤는데, 브리티시 에어웨이즈는 다음 주 화요일 런던에서 라고스 가는 비행기를 685파운드
+     5.65s  user  발화 끝
+     5.91s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.68s]: (tool result) Flights from London to Lagos next Tuesday are available 
+    14.74s  agent 발화 끝
+    15.16s  user  발화 시작: 흐음, 좀 비싸네. 수요일은 어때?
+    16.97s  <ret> 발화 (turn3 첫 프레임)
+    17.55s  agent 발화 시작: <ret> 수요일은 좀 더 선택지가 많아. 버진 애틀랜틱은 수요일에 650파운드고, 에어 나이지리아는 690
+    17.74s  user  발화 끝
+    18.73s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.32s]: (tool result) Flights from London to Lagos next Wednesday are availabl
+    24.95s  user  발화 시작: 좋아, 버진 애틀랜틱으로 예약해 줘.
+    24.96s  agent 발화 끝
+    27.35s  <ret> 발화 (turn5 첫 프레임)
+    27.93s  agent 발화 시작: <ret> 좋아, 예약 완료됐어. 다음 주 수요일에 라고스 가는 버진 애틀랜틱 비행기, 예약 번호는 VG78
+    28.10s  user  발화 끝
+    28.63s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.20s]: (tool result) Booking confirmed: Virgin Atlantic flight from London to
+    36.46s  agent 발화 끝

@@ -1,65 +1,75 @@
 # v3_rag_26_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 음, 2차 세계 대전 관련해서 읽다가 궁금해졌어… 그때 일본은 무슨 정부 형태였어?
-     6.24s  agent 발화 시작: 네, 좋은 질문이에요. 사실 역사와 전통에 깊이 뿌리박힌 꽤 복잡한 주제예요.
-     6.39s  user  발화 끝
-    12.31s  agent 발화 끝
-    12.32s  user  발화 시작: 응, 당연히 그냥… 단순하진 않았겠지.
-    15.29s  <ret> 발화 (turn3 첫 프레임)
-    15.89s  agent 발화 시작: <ret> 뭐, 기본적으로… 일본 정부는 전쟁 중에 제국 헌법 군주제였어요.
-    16.11s  user  발화 끝
-    16.29s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.22s]: Japan operated under an imperial constitutional monarchy during World 
-    20.98s  user  발화 시작: 헌법 군주제… 영국 같은 거?
-    21.40s  agent 발화 끝
-    23.60s  agent 발화 시작: 꼭 그렇지는 않아요. 둘 다 군주가 있지만, 일본에서 황제의 역할은 상당히 달랐거든요.
-    23.70s  user  발화 끝
-    29.26s  <ret> 발화 (turn6 첫 프레임)
-    29.85s  agent 발화 시작: <ret> 사실 정도의 차이에요… 황제는 막대한 권위를 가진 신성한 상징으로 여겨졌어요.
-    30.05s  agent 발화 끝
-    30.26s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.72s]: The Emperor of Japan was considered a divine figurehead with significa
-    36.06s  agent 발화 끝
-    36.24s  user  발화 시작: 신성하다고? 와.
-    37.76s  agent 발화 시작: 지금은 이해하기 어렵겠지만, 그 믿음이 그들의 정치 구조의 중심이었어요. 모든 것에 영향을 줬죠.
-    37.94s  user  발화 끝
-    45.23s  user  발화 시작: 그럼 민주주의였어, 아니면…?
-    45.59s  agent 발화 끝
-    47.17s  <ret> 발화 (turn10 첫 프레임)
-    47.58s  user  발화 끝
-    47.76s  agent 발화 시작: <ret> 민주적인 요소가 있었어요… 일본에는 의회인 국회가 있었지만, 권한이 제한적이었어요.
-    48.17s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.15s]: The Japanese Diet, a bicameral parliament, existed but held limited po
-    54.63s  user  발화 시작: 권한이 제한적이라고… 그럼 누가 권력을 가졌는데?
-    54.85s  agent 발화 끝
-    58.00s  user  발화 끝
-    58.14s  agent 발화 시작: 주로 군대였어요. 정부에 엄청난 영향력을 행사했죠.
-    61.89s  <ret> 발화 (turn13 첫 프레임)
-    62.40s  agent 발화 끝
-    62.48s  agent 발화 시작: <ret> 좀 복잡하게 얽혀 있어요… 그 당시 군대와 해군이 정책 결정에 점점 더 큰 영향력을 행사했어요.
-    62.89s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.57s]: The Imperial Japanese Army and Navy increasingly dominated policy-maki
-    70.09s  user  발화 시작: 그거 불안정해 보이는데.
-    70.13s  agent 발화 끝
-    71.93s  agent 발화 시작: 그렇죠. 군국주의의 부상은 상당한 내부 긴장을 조성했어요.
-    71.94s  user  발화 끝
-    76.79s  agent 발화 끝
-    76.81s  agent 발화 시작: 네, 그거 생각나는데—
-    77.83s  user  발화 시작: 근데 황제는 진짜 전쟁을 원했어, 아니면 그냥… 꼭두각시였어?
-    78.56s  agent 발화 끝
-    82.11s  agent 발화 시작: 그건 역사가들이 끊임없이 논쟁하는 질문이에요. 그의 실제 의지는 아직 불분명해요.
-    82.32s  user  발화 끝
-    87.64s  <ret> 발화 (turn19 첫 프레임)
-    88.23s  agent 발화 시작: <ret> 정말 복잡한 문제예요… 히로히토의 전쟁 역할은 논쟁적인 역사적 주제예요.
-    88.64s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.52s]: Emperor Hirohito’s role in initiating and prosecuting the war remains 
-    88.73s  agent 발화 끝
-    94.57s  agent 발화 끝
-    96.58s  user  발화 시작: 논란이 많네… 아무도 몰라?
-    98.89s  user  발화 끝
-    99.00s  agent 발화 시작: 양쪽을 뒷받침하는 증거가 있어요. 솔직히 말해서 미묘한 상황이에요.
-   103.78s  <ret> 발화 (turn22 첫 프레임)
-   104.37s  agent 발화 시작: <ret> 모든 증거를 해석하는 문제예요… 어떤 사람들은 히로히토가 확장을 지지했다고 믿고, 다른 사람들은 
-   104.41s  agent 발화 끝
-   104.78s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.26s]: Some scholars argue Hirohito actively supported expansionism, while ot
-   113.61s  agent 발화 끝
-   113.86s  user  발화 시작: 흠. 흥미롭네. 그럼 군대가 그냥 알아서 다 결정했어?
-   118.19s  agent 발화 시작: 많은 면에서 그렇다고 할 수 있어요. 특히 외교 정책과 관련해서 정부를 강력하게 장악하고 있었어요.
-   118.25s  user  발화 끝
-   125.51s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 아비치 노래 “The Nights” 영상 보다가 궁금한 게 생겼어요. 영상에 나오는 그 남자분,
+     7.87s  <ret> 발화 (turn1 첫 프레임)
+     8.46s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 기억에 남는 영상이죠.
+     8.61s  user  발화 끝
+     9.79s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.14s]: Rory Kramer is the man featured prominently in Avicii’s “The Nights” m
+    11.57s  agent 발화 시작: 말씀하신 분은 로리 크레이머 님이고, 아비치의 “The Nights” 영상에 출연하셨습니다.
+    11.60s  agent 발화 끝
+    17.88s  agent 발화 끝
+    18.09s  user  발화 시작: 아, 로리 크레이머 님… 처음 들어봐요. 그분은 뭘 하시는 분이에요? 배우인가요?
+    22.97s  <ret> 발화 (turn4 첫 프레임)
+    23.57s  agent 발화 시작: <ret> 음악 영상 뒤에 숨겨진 사람들에 대해 알아보는 건 정말 흥미로운 일이죠.
+    23.74s  user  발화 끝
+    26.33s  ⚡SPAN 주입 [d'=3.36s / d_lead=5.18s]: Rory Kramer is a free-runner and stunt performer known for his parkour
+    28.68s  agent 발화 시작: 로리 크레이머 님은 프리러너이자 스턴트 퍼포머이고, 파쿠르를 전문으로 하십니다.
+    28.75s  agent 발화 끝
+    34.54s  user  발화 시작: 파쿠르군요? 그럼 점프하는 건 당연하네요. [laugh] 사람들이 할 수 있는 게 정말 놀라워요.
+    34.65s  agent 발화 끝
+    42.09s  agent 발화 시작: 정말 그렇습니다. 사람의 몸은 놀라운 능력을 가지고 있어요.
+    42.24s  user  발화 끝
+    46.21s  agent 발화 끝
+    47.31s  user  발화 시작: 그분이 그 영상에 특별히 고용된 건가요, 아니면 그냥 우연히 된 건가요?
+    50.48s  <ret> 발화 (turn9 첫 프레임)
+    51.07s  agent 발화 시작: <ret> 기회가 어떻게 생기는지 궁금해하시는 건 당연한 질문이에요.
+    51.19s  user  발화 끝
+    52.40s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.25s]: Kramer was contacted by the video’s director to perform parkour stunts
+    55.21s  agent 발화 시작: 로리 크레이머 님은 영상 감독님으로부터 직접 연락을 받아서 스턴트를 하게 되셨습니다.
+    55.32s  agent 발화 끝
+    61.32s  agent 발화 끝
+    61.66s  user  발화 시작: 그렇군요. 길에서 그냥 찾은 사람은 아니었네요.
+    64.40s  agent 발화 시작: 영상 기회가 그렇게 우연히 찾아오는 경우는 드물어요.
+    64.51s  user  발화 끝
+    68.43s  agent 발화 끝
+    68.55s  user  발화 시작: 다른 영상들도 찾아봤는데, 다른 뮤지션들과도 함께 작업한 적이 있잖아요, 그렇죠?
+    73.48s  <ret> 발화 (turn14 첫 프레임)
+    74.08s  agent 발화 시작: <ret> 네, 꽤 다양한 분야에서 활동하고 계세요.
+    74.24s  user  발화 끝
+    76.44s  ⚡SPAN 주입 [d'=2.96s / d_lead=3.09s]: Rory Kramer has collaborated with artists including Swedish House Mafi
+    77.17s  agent 발화 시작: 로리 크레이머 님은 스웨디시 하우스 마피아와 자라 라르손과 함께 작업했습니다.
+    77.17s  agent 발화 끝
+    82.56s  user  발화 시작: 스웨디시 하우스 마피아… 알겠어요. 그 음악에 어울리는 분위기네요. 음, 아비치 영상 이후에 유명해졌나요?
+    82.69s  agent 발화 끝
+    89.66s  <ret> 발화 (turn17 첫 프레임)
+    90.26s  agent 발화 시작: <ret> 유명한 음악 영상은 사람의 인지도를 높일 수 있죠.
+    90.30s  user  발화 끝
+    90.70s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.79s]: “The Nights” significantly increased Rory Kramer’s visibility and led 
+    94.05s  agent 발화 끝
+    94.22s  agent 발화 시작: “The Nights” 영상 덕분에 로리 크레이머 님의 인지도가 크게 높아졌고, 더 많은 일을 하게 되었습니
+   100.94s  agent 발화 끝
+   100.95s  user  발화 시작: 멋지네요. 스턴트 퍼포머도 괜찮은 직업인 것 같아요. 그럼, 원래 어디 출신이에요?
+   105.63s  <ret> 발화 (turn20 첫 프레임)
+   106.22s  agent 발화 시작: <ret> 사람들의 고향과 열정을 추구하는 과정에 대해 알아보는 건 정말 흥미로운 일이죠.
+   106.41s  user  발화 끝
+   107.15s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.78s]: Rory Kramer was born and raised in the Netherlands, beginning parkour 
+   111.98s  agent 발화 시작: 로리 크레이머 님은 원래 네덜란드 출신이고, 열네 살 때 파쿠르를 시작했습니다.
+   112.01s  agent 발화 끝
+   117.68s  agent 발화 끝
+   119.43s  user  발화 시작: 네덜란드… 흥미롭네요. 네덜란드를 생각하면 풍차가 떠올라요.
+   123.28s  agent 발화 시작: [laugh] 아름다운 역사와 문화를 가진 나라입니다.
+   123.45s  user  발화 끝
+   127.91s  agent 발화 끝
+   129.10s  user  발화 시작: 자, 마지막 질문이에요, 약속할게요. 파쿠르 말고 다른 재능도 있어요? 악기를 다룰 줄 아나 봐요?
+   135.12s  <ret> 발화 (turn25 첫 프레임)
+   135.71s  agent 발화 시작: <ret> 창의적인 사람들은 다양한 재능과 관심을 가지고 있는 경우가 많아요.
+   135.95s  user  발화 끝
+   137.76s  ⚡SPAN 주입 [d'=2.64s / d_lead=4.77s]: Besides parkour, Rory Kramer is also a skilled skateboarder and musici
+   140.03s  agent 발화 시작: 로리 크레이머 님은 스케이트보드도 잘 타고, 악기도 연주합니다.
+   140.48s  agent 발화 끝
+   144.75s  agent 발화 끝
+   144.97s  user  발화 시작: 와, 만능이시네요! 정말 대단해요. 정보 감사합니다, 바스케스 선생님.
+   150.22s  agent 발화 시작: 도와드릴 수 있어서 기쁩니다. 아는 것을 공유하게 되어 기뻐요.
+   150.29s  user  발화 끝
+   155.03s  agent 발화 끝

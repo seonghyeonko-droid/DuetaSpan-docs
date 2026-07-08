@@ -1,27 +1,23 @@
 # v3_rag_24_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I was reading about… unusual delicacies. Is it true you can’
-     6.75s  agent 발화 시작: That’s a fascinating question.
-     6.76s  user  발화 끝
-     7.90s  <ret> 발화 (turn2 첫 프레임)
-     7.90s  ⚡SPAN 주입 [d'=0.00s / d_lead=1.83s]: The ortolan bunting is a small migratory bird whose consumption has be
-     8.41s  agent 발화 끝
-     8.50s  agent 발화 시작: <ret> Well, it’s a bit complicated… Since nineteen eighty-on
-    15.09s  agent 발화 끝
-    15.39s  user  발화 시작: Oh, wow. Why? Is it endangered or something?
-    18.62s  user  발화 끝
-    19.10s  agent 발화 시작: It’s a little more nuanced than simple endangerment, actuall
-    21.81s  <ret> 발화 (turn5 첫 프레임)
-    22.41s  agent 발화 시작: <ret> Let me look into the reasons for that… Historically, o
-    22.48s  agent 발화 끝
-    22.77s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.32s]: Historically hunted for their rich flavor, ortolan populations decline
-    31.54s  agent 발화 끝
-    32.33s  user  발화 시작: So, it’s a historical thing then? People used to eat them al
-    36.63s  user  발화 끝
-    36.74s  agent 발화 시작: [laugh] Quite a lot, yes, though it was always considered a 
-    39.60s  <ret> 발화 (turn8 첫 프레임)
-    40.20s  agent 발화 시작: <ret> It’s interesting how traditions evolve… Historically, 
-    40.26s  agent 발화 끝
-    40.60s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.44s]: The consumption of ortolan was historically a symbol of wealth and sta
-    47.52s  agent 발화 끝
+     0.00s  user  발화 시작: I was reading about Indian independence, and I’m curious—who
+     6.71s  <ret> 발화 (turn1 첫 프레임)
+     7.30s  agent 발화 시작: <ret> That’s a fascinating question, delving into a pivotal 
+     7.35s  ⚡SPAN 주입 [d'=0.64s / d_lead=3.41s]: Subhas Chandra Bose founded the Free India Centre in Rome in 1941 and 
+     7.42s  user  발화 끝
+    18.29s  agent 발화 끝
+    18.74s  user  발화 시작: Oh, nineteen forty-one and forty-two… so he did that while a
+    25.46s  user  발화 끝
+    25.60s  agent 발화 시작: Indeed. It was a very complex and controversial time, politi
+    30.00s  agent 발화 끝
+    30.87s  user  발화 시작: But… what was the purpose of those centres, exactly? I— I me
+    36.43s  <ret> 발화 (turn5 첫 프레임)
+    37.03s  agent 발화 시작: <ret> A good question—understanding their function clarifies
+    37.17s  user  발화 끝
+    38.27s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.51s]: The Free India Centres served as information bureaus and recruitment c
+    47.56s  agent 발화 끝
+    47.78s  user  발화 시작: The Indian National Army… right, the one he formed with Japa
+    55.56s  user  발화 끝
+    56.11s  agent 발화 시작: Those cities, with their large expatriate Indian populations
+    67.33s  agent 발화 끝

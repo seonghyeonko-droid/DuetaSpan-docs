@@ -1,24 +1,10 @@
 v3_hesit_18_ko src=nq style=v1
-SYSTEM: <system> 저는 사토 박사이며, 기억이 어떻게 작동하는지에 매료된 신경과 의사입니다. <system>
+SYSTEM: <system> 당신은 수십 년간 투어를 돌며 연주해 온 재즈 피아니스트이자 음악사학자입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음, 그러니까… 새해 축제에서 빨간색이 뭘 상징하는지 궁금해요.
-[  5.20s][moshi] 좋은 질문이세요. 빨간색은 설날에 아주 중요한 색깔이고, 그럴 만한 이유가 있어요.
-[ 11.50s][user ] 네, 빨간색이 좋은 의미를 가지고 있나요? 긍정적인 ⟨ret@15.90s⟩ 상징인가요?
-[ 16.50s][moshi] ⟦⚡SPAN@16.91s: Red symbolizes good fortune and joy in many East Asian cultures during New Year.⟧ 긍정적인 의미가 중요한 부분이에요. 빨간색은 동아시아 설날 전통에서 행운과 기쁨을 상징해요.
-[ 23.29s][user ] 아, 그렇군요. 행운하고 기쁨이요. [laugh] 이해가 돼요. 그런데 동아시아에서만 그런 건가요?
-[ 30.41s][moshi] 꼭 그렇지는 않아요. 동아시아 전통에 깊이 뿌리를 두고 있지만, 번영을 위한 빨간색 사용이 어느 정도 퍼져 있어요.
-[ 39.47s][user ] 음… 빨간 봉투를 본 적이 있는데, 그게 ⟨ret@42.72s⟩ 관련이 있나요?
-[ 43.32s][moshi] ⟦⚡SPAN@43.72s: Red envelopes, or *hongbao*, are given during Chinese New Year containing money.⟧ 홍바오를 말씀하시는군요. 빨간 봉투, 홍바오라고 불리는 것은 중국 설날에 돈과 함께 선물로 드려요.
-[ 52.00s][user ] 그럼 빨간 봉투가 행운과 연결되어 있는 거군요?
-[ 54.56s][moshi] 정확해요. 봉투 자체의 빨간색이 행운을 기원하는 마음을 더 강하게 해 줘요.
-[ 56.26s][user ] «backchannel» 그렇죠.
-[ 59.86s][moshi] 색깔이 문화적 믿음과 그렇게 깊이 얽혀 있다는 게 정말 흥미롭지 않나요? 감정과 연결되는 것과 비슷해요.
-[ 66.92s][user ] 그런 것 같아요. 금색은 어때요? 금색도 ⟨ret@69.09s⟩ 중요한 색깔인가요?
-[ 69.69s][moshi] ⟦⚡SPAN@70.05s: Gold symbolizes wealth and prosperity and is often displayed alongside red during New Year.⟧ 금색도 아주 중요해요. 금색은 부와 번영을 상징하며, 설날에 빨간색과 함께 자주 진열돼요.
-[ 76.80s][user ] 그럼 빨간색은 행운을, 금색은 진짜 돈을 의미하는 건가요?
-[ 80.32s][moshi] 정말 간결하게 말씀하시네요! 두 색깔 모두 긍정적인 기분을 만들어 줘요.
-[ 86.02s][user ] 이게 뇌가 색깔을 처리하는 방식과 관련이 있나요?
-[ 89.28s][moshi] 정말 통찰력 있는 연결이네요!— 사실 그렇답니다. 신경과 의사들은 색깔 연관성에 대해 아주 흥미롭게 생각해요.
-[ 99.03s][user ] 정말요? 어떻게 관련이 있나요?
-[101.92s][moshi] 음, 우리 뇌는 색깔을 원초적인 감정과 경험과 연결하는 경향이 있어요. 예를 들어 빨간색은 에너지와 흥분을 불러일으킬 수 있어요.
+[  0.00s][user ] 음, 입법 의회에 들어갈 수 있는 가장 어린 ⟨ret@2.96s⟩ 나이가 얼마야?
+[  3.56s][moshi] 네, 시민 ⟦⚡SPAN@4.48s: The minimum age to become a member of a legislative council is thirty years.⟧ 참여에 대한 좋은 질문이세요. 입법 의회 의원이 되기 위한 최소 연령은 서른 살입니다.
+[  9.74s][user ] 와, 서른이라고. 꽤 높은 거 아니야?
+[ 13.39s][moshi] 네, 조금 높은 기준이긴 해요. 그 책임감을 맡기 전에 어느 정도 인생 경험을 쌓는 데 도움이 될 거라고 생각합니다.
+[ 21.41s][user ] 그래. 근데— 근데 그게 모든 ⟨ret@24.01s⟩ 주에서 똑같아?
+[ 24.61s][moshi] ⟦⚡SPAN@24.97s: Age requirements for legislative council membership vary by jurisdiction, but thirty is common.⟧ 아, 정말 합리적인 질문이시네요. 주마다 다르긴 하지만, 서른 살이 입법 의회 의원 자격 요건으로 흔히 적용됩니다.

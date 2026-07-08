@@ -1,24 +1,10 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering who owns the South Point Casino in Las Vegas? ⟨ret@6.26s⟩
-[  3.68s][moshi] That’s a fine question. It's a popular spot with locals, you know.
-[  6.86s][moshi] ⟦⚡SPAN@6.66s: Michael Gaughan currently owns the South Point Casino, Hotel, Spa, and Casino.⟧ Let’s see… Michael Gaughan is the current owner of the South Point Casino, Hotel, Spa, and Casino.
-[ 12.65s][user ] Hmm. And how long has he owned it? ⟨ret@18.68s⟩
-[ 14.88s][moshi] Gaughan’s been a fixture in Vegas gaming for decades, a real character.
-[ 19.28s][moshi] I ⟦⚡SPAN@19.68s: Michael Gaughan purchased the South Point Hotel, Casino & Spa in 2006.⟧ believe I can pinpoint that for you. Michael Gaughan purchased the South Point in two thousand six.
-[ 24.48s][user ] Right. ⟨ret@27.82s⟩
-[ 25.12s][moshi] He really saw potential in that location, a bit off the strip.
-[ 28.41s][moshi] ⟦⚡SPAN@28.82s: Prior to South Point, Gaughan owned Coast Casinos, which he sold in 2004.⟧ Now, about his other properties… Before South Point, Gaughan owned Coast Casinos and sold them in two thousand four.
-[ 34.68s][user ] So he used the money from Coast Casinos—
-[ 37.34s][moshi] «interrupted» He certainly leveraged—
-[ 38.27s][user ] «interrupts_prev» …did he build the South Point himself, or was it already there? ⟨ret@44.98s⟩
-[ 42.23s][moshi] That’s a very insightful question, actually. It wasn’t a completely new build.
-[ 45.57s][moshi] ⟦⚡SPAN@45.94s: The South Point was originally built in 2005 by the Greenspun Corporation.⟧ Let me clarify the development history. The Greenspun Corporation originally built the South Point in two thousand five.
-[ 52.38s][user ] Oh, so Gaughan bought it after it ⟨ret@54.10s⟩ was built. ⟨ret@60.22s⟩
-[ 54.69s][moshi] ⟦⚡SPAN IRRELEVANT@55.10s: (tool result) Driving directions from the South Point Hotel Casino Spa to the Bellagio Hotel & Casino: Head no⟧ Precisely. A smart acquisition, I think. He improved it quite a bit.
-[ 58.31s][moshi] He has a real knack for understanding what gamblers want.
-[ 60.82s][moshi] ⟦⚡SPAN@61.22s: Michael Gaughan’s father, Jack Gaughan, was also a prominent Las Vegas casino owner.⟧ It’s interesting to note, though… Jack Gaughan, Michael’s father, was also a well-known casino owner here in Vegas.
-[ 68.57s][user ] So it’s a family business, then?
-[ 70.86s][moshi] In a way, yes. A legacy, you might say. A musical lineage, if you will.
+[  0.00s][user ] Do you happen to know who sings “Run to the Hills”? I just can’t ⟨ret@4.39s⟩ place it.
+[  4.99s][moshi] ⟦⚡SPAN@5.27s: Iron Maiden performs the song “Run to the Hills”.⟧ That’s a classic track, certainly… It is indeed Iron Maiden who originally recorded and performed “Run to the Hills”.
+[ 12.12s][user ] Oh, right! Iron Maiden, of ⟨ret@14.34s⟩ course. Mm-hmm.
+[ 14.93s][moshi] They’re quite well-known for their ⟦⚡SPAN IRRELEVANT@16.74s: (tool result) Current conditions in Ulaanbaatar, Mongolia are clear skies, 12 degrees Celsius, wind from the n⟧ energetic performances, aren't they? It’s a staple of their live shows.
+[ 21.36s][user ] Yeah, but… what year did that song come out? I'm trying to ⟨ret@26.23s⟩ remember.
+[ 26.83s][moshi] Let me ⟦⚡SPAN@27.51s: “Run to the Hills” was released in 1982 as part of their album *The Number of the Beast*.⟧ quickly check the release date for you… The song “Run to the Hills” was released in nineteen eighty-two, on the album *The Number of the Beast*.

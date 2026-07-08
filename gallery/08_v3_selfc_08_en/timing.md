@@ -1,61 +1,63 @@
 # v3_selfc_08_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Write a settings file called settings in the config director
-     6.52s  <ret> 발화 (turn1 첫 프레임)
-     6.84s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.37s]: (tool result) A file named settings was created in the config director
-     7.00s  user  발화 끝
-     7.12s  agent 발화 시작: <ret> Certainly. The settings file is now written to your co
-    12.00s  user  발화 시작: Can you read that file back to me, just to confirm?
-    12.26s  agent 발화 끝
-    14.26s  <ret> 발화 (turn3 첫 프레임)
-    14.82s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.77s]: (tool result) The file contains: theme=dark, font_size=12, language=en
-    14.86s  agent 발화 시작: <ret> Of course. That file contains theme equals dark, font 
-    14.95s  user  발화 끝
-    20.27s  agent 발화 끝
-    21.28s  user  발화 시작: Actually— I meant to say thirteen for the font size. Could y
-    25.10s  <ret> 발화 (turn5 첫 프레임)
-    25.52s  user  발화 끝
-    25.58s  ⚡SPAN 주입 [d'=0.48s / d_lead=1.02s]: (tool result) The file settings in the config directory was updated su
-    25.70s  agent 발화 시작: <ret> Let’s adjust that. The font size has been updated to t
-    30.79s  agent 발화 끝
-    31.08s  user  발화 시작: Do you remember what the default font size was before I chan
-    35.04s  agent 발화 시작: That's a good question. It reminds me of a time when we had 
-    35.06s  user  발화 끝
-    40.41s  <ret> 발화 (turn8 첫 프레임)
-    41.01s  agent 발화 시작: <ret> I don’t have a record of the original font size, unfor
-    41.15s  agent 발화 끝
-    41.41s  ⚡SPAN 주입 [d'=1.00s / d_lead=5.09s]: <ret>
-    45.49s  user  발화 시작: Okay, fair enough. Can you list all the files currently in t
-    46.10s  agent 발화 끝
-    49.45s  <ret> 발화 (turn10 첫 프레임)
-    49.92s  ⚡SPAN 주입 [d'=0.48s / d_lead=1.75s]: (tool result) The config directory contains: settings, preferences, la
-    50.03s  agent 발화 시작: <ret> Certainly, let me check. The config directory contains
-    50.25s  user  발화 끝
-    55.73s  agent 발화 끝
-    55.75s  user  발화 시작: Hmm, I don't recall creating a "preferences" file.
-    58.85s  <ret> 발화 (turn12 첫 프레임)
-    59.45s  agent 발화 시작: <ret> Those often appear automatically, you know. Just like 
-    59.59s  user  발화 끝
-    59.85s  ⚡SPAN 주입 [d'=1.00s / d_lead=5.65s]: <ret>
-    65.00s  agent 발화 시작: It’s likely a system-generated file, created when you first 
-    65.11s  agent 발화 끝
-    69.35s  agent 발화 끝
-    69.77s  user  발화 시작: What does the "preferences" file contain?
-    71.80s  <ret> 발화 (turn15 첫 프레임)
-    72.36s  user  발화 끝
-    72.39s  agent 발화 시작: <ret> Let's take a look. It contains notifications enabled, 
-    72.80s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.72s]: (tool result) The file contains: notifications=enabled, autosave=true,
-    78.83s  agent 발화 끝
-    79.19s  user  발화 시작: So it’s set to a light theme. I definitely prefer dark.
-    82.48s  <ret> 발화 (turn17 첫 프레임)
-    82.56s  ⚡SPAN 주입 [d'=0.08s / d_lead=4.59s]: <ret>
-    83.08s  agent 발화 시작: <ret> A dark theme is easier on the eyes, especially during 
-    83.17s  user  발화 끝
-    87.14s  agent 발화 시작: I can update the preferences file to use a dark theme if you
-    87.67s  agent 발화 끝
-    90.90s  user  발화 시작: Yes, please. Change the theme to dark in the preferences fil
-    91.03s  agent 발화 끝
-    94.78s  user  발화 끝
-    94.90s  agent 발화 시작: Consider it done.
-    95.72s  agent 발화 끝
+     0.00s  user  발화 시작: Please create a product for premium coffee beans.
+     2.96s  <ret> 발화 (turn1 첫 프레임)
+     3.37s  user  발화 끝
+     3.55s  agent 발화 시작: <ret> Certainly, let’s get that set up for you. The product,
+     4.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.54s]: (tool result) A product named "premium coffee beans" was created with 
+    10.35s  user  발화 시작: Can you show me the product details again?
+    10.54s  agent 발화 끝
+    12.19s  <ret> 발화 (turn3 첫 프레임)
+    12.79s  agent 발화 시작: <ret> Of course, I can easily pull those up for you. The cof
+    12.89s  user  발화 끝
+    13.55s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.44s]: (tool result) The product "premium coffee beans" has a price of $15.99
+    19.37s  agent 발화 끝
+    19.71s  user  발화 시작: That's good. I want to run a promotion— twenty percent off.
+    23.36s  <ret> 발화 (turn5 첫 프레임)
+    23.88s  user  발화 끝
+    23.96s  agent 발화 시작: <ret> A promotion sounds like a great idea to boost sales. A
+    24.80s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.56s]: (tool result) A 20% discount promotion was created for "premium coffee
+    33.93s  agent 발화 끝
+    34.20s  user  발화 시작: Can we extend that promotion to— to March twenty-second?
+    37.65s  <ret> 발화 (turn7 첫 프레임)
+    38.25s  agent 발화 시작: <ret> I can certainly adjust the promotion’s end date— The p
+    38.36s  user  발화 끝
+    38.93s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.81s]: (tool result) The promotion for "premium coffee beans" was updated to 
+    46.26s  user  발화 시작: What’s the current stock level on those beans?
+    46.32s  agent 발화 끝
+    49.03s  user  발화 끝
+    49.11s  agent 발화 시작: We currently have—
+    49.62s  <ret> 발화 (turn10 첫 프레임)
+    50.20s  agent 발화 시작: <ret> That’s a good question to keep track of inventory. The
+    50.49s  agent 발화 끝
+    50.59s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.83s]: (tool result) There are 150 units of "premium coffee beans" currently 
+    57.75s  agent 발화 끝
+    57.76s  user  발화 시작: Hmm. Okay.
+    59.16s  agent 발화 시작: Now, regarding marketing, have you thought about— I've worke
+    59.19s  user  발화 끝
+    67.95s  user  발화 시작: That's interesting. Can you search for images of Ethiopian c
+    68.02s  agent 발화 끝
+    71.76s  <ret> 발화 (turn14 첫 프레임)
+    72.36s  agent 발화 시작: <ret> I can certainly find some images for you. I found twel
+    72.48s  user  발화 끝
+    74.40s  ⚡SPAN 주입 [d'=2.64s / d_lead=2.74s]: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1
+    80.24s  agent 발화 끝
+    80.48s  user  발화 시작: Send me the first three URLs.
+    82.46s  <ret> 발화 (turn16 첫 프레임)
+    83.05s  agent 발화 시작: <ret> Certainly, I can send those right over. I’ve sent the 
+    83.07s  user  발화 끝
+    83.18s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.89s]: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your regist
+    87.91s  agent 발화 끝
+    88.11s  user  발화 시작: Great. What is the average rainfall in the Sidamo region?
+    91.32s  <ret> 발화 (turn18 첫 프레임)
+    91.90s  user  발화 끝
+    91.91s  agent 발화 시작: <ret> The Sidamo region is known for its consistent rainfall
+    93.88s  ⚡SPAN 주입 [d'=2.56s / d_lead=4.86s]: <ret> The Sidamo region receives an average annual rainfall of 1,500 m
+    96.66s  agent 발화 시작: The Sidamo region receives an average of fifteen hundred mil
+    96.77s  agent 발화 끝
+   101.75s  user  발화 시작: That's a lot.
+   101.81s  agent 발화 끝
+   102.88s  agent 발화 시작: Indeed. The consistent moisture contributes to the beans’ co
+   103.04s  user  발화 끝
+   107.42s  agent 발화 끝

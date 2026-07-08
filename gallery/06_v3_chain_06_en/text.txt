@@ -1,13 +1,13 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
+SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Mark order twelve thousand three hundred forty five as delivered using transaction id twenty ⟨ret@6.27s⟩ two ones.
-[  6.86s][moshi] ⟦⚡SPAN@6.27s: (tool result) Shipment 12345 is now marked as delivered with transaction ID 221.⟧ Certainly. Your shipment, order twelve thousand three hundred forty five, is confirmed as delivered.
-      CALL: {"function": "create_shipment_tracking", "arguments": {"order_id": "12345", "transaction_id": "221", "status": "delivered"}}
-[ 14.61s][user ] And can you tell me the delivery address ⟨ret@16.41s⟩ for that order?
-[ 17.01s][moshi] ⟦⚡SPAN@17.41s: (tool result) The delivery address for order 12345 is 42 Elm Street, Anytown, CA 91234.⟧ I can look that up— The delivery address for order twelve thousand three hundred forty five is 42 Elm Street, Anytown, California, 91234.
-[ 21.80s][user ] «backchannel» Right.
-[ 28.59s][user ] Actually, hold on— was that shipped with expedited delivery?
-[ 31.64s][moshi] Yes, order twelve thousand three hundred forty five was shipped with expedited delivery.
-[ 38.49s][user ] Okay, good. And what was the total shipping cost?
+[  0.00s][user ] I want to find a Thai restaurant in ⟨ret@2.23s⟩ Chicago, Illinois.
+[  2.83s][moshi] Let's ⟦⚡SPAN@3.67s: (tool result) Thai restaurants in Chicago include Thai Dang, Star of Siam, and Arun's Thai Restaurant.⟧ see what Chicago has to offer… I found three Thai restaurants in Chicago: Thai Dang, Star of Siam, and Arun's Thai Restaurant.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Chicago", "state": "Illinois", "cuisine": "Thai"}}
+[ 12.81s][user ] Oh, Thai Dang sounds good. What’s ⟨ret@15.29s⟩ their address?
+[ 15.88s][moshi] Certainly, I ⟦⚡SPAN@17.05s: (tool result) Thai Dang is located at 4339 N Broadway, Chicago, IL 60613.⟧ can look that up for you… Thai Dang is at 4339 North Broadway, Chicago, Illinois, 60613.
+      CALL: {"function": "Restaurants_2_GetRestaurantDetails", "arguments": {"restaurant_name": "Thai Dang", "city": "Chicago", "state": "Illinois"}}
+[ 24.45s][user ] Can you make a reservation for two there tomorrow at ⟨ret@27.58s⟩ seven pm?
+[ 28.18s][moshi] ⟦⚡SPAN@27.58s: (tool result) Your reservation for two at Thai Dang tomorrow at 7:00 PM is confirmed; reservation ID is RD7892⟧ Happy to assist with that booking… You’re all set! I’ve booked a table for two at Thai Dang tomorrow at seven pm. Your ID is RD7892.
+      CALL: {"function": "Restaurants_2_ReserveTable", "arguments": {"restaurant_name": "Thai Dang", "date": "tomorrow", "time": "7:00 PM", "party_size": "2"}}

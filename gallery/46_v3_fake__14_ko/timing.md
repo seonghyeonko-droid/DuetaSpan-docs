@@ -1,43 +1,53 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 드류 브리스 선수가 프로 축구를 시작한 게 언제인지 궁금하네요.
-     4.27s  agent 발화 시작: 아, 좋은 질문이세요. 선수들의 시작을 알아보는 건 정말 좋은 일인 것 같아요.
-     4.49s  user  발화 끝
-     9.19s  agent 발화 끝
-     9.19s  user  발화 시작: 네, 그냥 궁금해서요. 저는 새로운 팬이거든요.
-    11.85s  <ret> 발화 (turn3 첫 프레임)
-    12.44s  agent 발화 시작: <ret> 음, 한번 찾아볼까요… 그는 이천일 년에 샌디에이고 차저스에서 NFL 경력을 시작했어요.
-    12.70s  user  발화 끝
-    12.85s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.63s]: Drew Brees entered the NFL in 2001, drafted by the San Diego Chargers.
-    19.67s  agent 발화 끝
-    19.91s  user  발화 시작: 알아두니 좋네요. 차저스에서 바로 주전으로 뛰었나요?
-    24.07s  agent 발화 시작: 바로 그렇진 않았어요. 새로운 리그에서 리듬을 찾으려면 시간이 필요하거든요.
-    24.26s  user  발화 끝
-    28.98s  agent 발화 끝
-    29.30s  user  발화 시작: 그럼… 그러니까, 잠시 백업이었던 건가요, 아니면…?
-    32.54s  <ret> 발화 (turn7 첫 프레임)
-    33.12s  agent 발화 시작: <ret> 사실 그랬어요. 브리스 선수는 차저스에서 처음 두 시즌 동안 백업 쿼터백이었어요.
-    33.32s  user  발화 끝
-    33.54s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.42s]: Brees served as the Chargers' backup quarterback for his first two sea
-    38.44s  user  발화 시작: 두 시즌 동안 백업이었군요… 그러고 나서 무슨 일이 있었나요? 부상을 입었나요?
-    38.49s  agent 발화 끝
-    43.39s  <ret> 발화 (turn9 첫 프레임)
-    43.98s  agent 발화 시작: <ret> 정말 날카로운 관찰이세요. 네, 부상이 그의 선수 생활에 영향을 미쳤어요.
-    44.22s  user  발화 끝
-    44.39s  ⚡SPAN 주입(IRRELEVANT) [d'=1.00s / d_lead=5.69s]: (tool result) Current time in Tokyo is 15:34:58 on February 29, 2024.
-    49.63s  agent 발화 시작: 그는 이천오 년에 심각한 어깨 부상을 입었는데, 거의 선수 생활을 망칠 뻔했어요.
-    49.67s  agent 발화 끝
-    55.33s  agent 발화 끝
-    55.50s  user  발화 시작: 와, 정말 힘들었겠네요. 그 부상이 투구 능력에 영향을 미쳤나요?
-    59.71s  agent 발화 시작: 그랬어요. 심각한 관절와순 파열이었는데, 어떤 쿼터백에게나 어려운 일이에요.
-    59.86s  user  발화 끝
-    65.09s  <ret> 발화 (turn13 첫 프레임)
-    65.67s  agent 발화 시작: <ret> 그의 헌신이 정말 대단하네요… 그는 회복해서 이천육 년에 뉴올리언스 세인츠에 합류했어요.
-    66.06s  agent 발화 끝
-    66.09s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.89s]: Brees underwent surgery and rehabilitation, returning to play in 2006 
-    72.80s  agent 발화 끝
-    73.08s  user  발화 시작: 그때부터 세인츠에서 정말 빛을 발하기 시작했죠?
-    76.22s  user  발화 끝
-    76.40s  agent 발화 시작: 맞아요. 뉴올리언스는 그의 재능과 리더십에 완벽하게 맞는 곳이었어요.
-    82.00s  agent 발화 끝
+     0.00s  user  발화 시작: 빨간불이 켜지면 뭔 뜻이야?
+     1.13s  <ret> 발화 (turn1 첫 프레임)
+     1.68s  agent 발화 시작: <ret> 그건 아주 기본적인 질문이고, 신호를 처리하는 방식에 대해 생각하기 좋은 출발점이지.
+     1.93s  user  발화 끝
+     2.89s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.79s]: When a traffic light displays red, it signals drivers to stop.
+     6.88s  agent 발화 시작: 운전자한테 멈추라고 알려주는 거야—도로에서 안전을 위한 명확한 지시지.
+     7.46s  agent 발화 끝
+    12.54s  agent 발화 끝
+    12.60s  user  발화 시작: 그래, 그럼 노란불은? 속도 내라는 뜻이야?
+    14.65s  <ret> 발화 (turn4 첫 프레임)
+    15.24s  agent 발화 시작: <ret> [laugh] 아, 절대 아니야! 흔히 오해하는 건데, 사실은 꽤 위험한 오해야.
+    15.50s  user  발화 끝
+    17.21s  ⚡SPAN 주입 [d'=2.56s / d_lead=5.46s]: A yellow traffic light indicates that the signal is about to turn red.
+    20.70s  agent 발화 끝
+    20.85s  agent 발화 시작: 신호가 빨간불로 바뀌기 직전이라는 걸 알려주는 거고, 가능하면 안전하게 멈출 시간을 주는 거야.
+    27.36s  user  발화 시작: 그러니까 신호를 뚫고 가는 도전이 아니라는 거야?
+    27.71s  agent 발화 끝
+    29.95s  user  발화 끝
+    30.06s  agent 발화 시작: 맞아. 노란불에서 속도를 내려고 하면—
+    33.30s  user  발화 시작: 근데 이미 교차로에 엄청 가까이 있으면 어떡해?
+    34.04s  agent 발화 끝
+    35.40s  <ret> 발화 (turn9 첫 프레임)
+    35.96s  agent 발화 시작: <ret> 그건 좀 곤란한 상황이지, 그렇지? 빠른 판단력과 어려운 결정을 내려야 해.
+    36.26s  user  발화 끝
+    38.04s  ⚡SPAN 주입 [d'=2.64s / d_lead=5.56s]: Braking suddenly can be as dangerous as proceeding through a yellow li
+    41.43s  agent 발화 시작: 급브레이크를 밟는 게 지나가는 것만큼 위험할 수도 있으니까, 주변을 잘 살펴봐.
+    41.51s  agent 발화 끝
+    46.48s  agent 발화 끝
+    46.60s  user  발화 시작: 음. 깜빡이는 빨간불은 어때? 그냥 빨간불이랑 똑같아?
+    50.19s  <ret> 발화 (turn12 첫 프레임)
+    50.79s  agent 발화 시작: <ret> 좀 다르지. 깜빡이는 빨간불은 정지 표지판처럼 작동해서 완전히 멈춰야 해.
+    50.83s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.55s]: A flashing red light requires drivers to treat the intersection as a s
+    50.95s  user  발화 끝
+    55.72s  <ret> 발화 (turn13 첫 프레임)
+    56.31s  agent 발화 시작: <ret> 운전자가 정지 표지판처럼 교차로를 양보해야 한다는 뜻이지.
+    56.34s  agent 발화 끝
+    56.68s  ⚡SPAN 주입(IRRELEVANT) [d'=0.96s / d_lead=3.70s]: (tool result) Current time in Honolulu is 03:17:52 on November 9, 2024
+    60.01s  agent 발화 끝
+    60.05s  user  발화 시작: 흥미롭네. 다른 나라들은 똑같은 색깔을 써?
+    62.62s  <ret> 발화 (turn15 첫 프레임)
+    63.22s  agent 발화 시작: <ret> 대부분 비슷하지만, 세계 곳곳에 약간씩 차이가 있긴 해.
+    63.28s  user  발화 끝
+    65.50s  ⚡SPAN 주입 [d'=2.88s / d_lead=3.84s]: Some countries use different color combinations for traffic signals th
+    66.92s  agent 발화 시작: 몇몇 나라는 다른 색 조합을 쓰기도 하지만, 기본적인 의미는 비슷해.
+    67.06s  agent 발화 끝
+    71.16s  user  발화 시작: 그러니까 그렇게 기본적인 거라도 완전히 똑같지는 않다는 거야?
+    71.27s  agent 발화 끝
+    74.56s  agent 발화 시작: 응, 그렇지 않아. 문화적인 맥락과 역사적인 선례가 작용하는 거야, 늘 그렇듯이.
+    74.72s  user  발화 끝
+    80.26s  agent 발화 끝
