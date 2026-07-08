@@ -1,27 +1,35 @@
 # v3_rag_26_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 깃발을 보고 있었는데, 문득 궁금해졌어요. 검은색, 빨간색, 노란색을 사용하는 깃발이 있나요?
-     6.64s  agent 발화 시작: 깃발 색깔에 대한 상징성이 흥미롭네.
-     6.76s  user  발화 끝
-     8.99s  <ret> 발화 (turn2 첫 프레임)
-     9.39s  agent 발화 시작: <ret> 그 색깔들을 사용하는 깃발들을 한번 살펴볼까. 독일 깃발은 특히 검은색, 빨간색, 그리고 금색, 
-     9.40s  agent 발화 끝
-    10.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.51s]: The flag of Germany features horizontal bands of black, red, and gold—
-    19.54s  agent 발화 끝
-    20.07s  user  발화 시작: 아, 독일이요. 그 깃발에 어떤 색깔이 있는지 항상 깜빡하네요.
-    23.91s  user  발화 끝
-    23.95s  agent 발화 시작: 많은 나라들이 역사적인 깃발에서 영감을 얻는 거 알지.
-    27.61s  <ret> 발화 (turn5 첫 프레임)
-    27.76s  agent 발화 시작: <ret> 서아프리카의 예를 생각해보는 것도 꽤 관련이 있어. 가나 깃발은 빨간색과 노란색과 함께 녹색을 특
-    27.84s  agent 발화 끝
-    29.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.51s]: The flag of Ghana incorporates red, yellow, and green, representing th
-    37.92s  agent 발화 끝
-    37.94s  user  발화 시작: 정말 아름답네요. 혹시 그런 색깔 선택에 영향을 준 무역로 같은 게 있었을까요?
-    43.40s  user  발화 끝
-    43.49s  agent 발화 시작: 무역이 상징적인 선택에 영향을 줬을 가능성이 충분히 있어. 문화 교류는 흔한 일이잖아.
-    49.75s  <ret> 발화 (turn8 첫 프레임)
-    49.83s  agent 발화 시작: <ret> 여기서 역사적인 무역 네트워크를 고려하는 게 중요해. 오요 제국은 직물과 제조품을 교환하며 무역에
-    49.98s  agent 발화 끝
-    51.27s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.96s]: The Oyo Empire traded with Europeans, exchanging goods like ivory and 
-    58.51s  agent 발화 끝
+     0.00s  user  발화 시작: 어떤 나라 국기가 검은색, 빨간색, 노란색이에요?
+     3.57s  agent 발화 시작: 그런 질문 많이 들어 봐.
+     3.70s  user  발화 끝
+     4.84s  <ret> 발화 (turn2 첫 프레임)
+     5.23s  agent 발화 시작: <ret> 국기에 대해서 좀 알아볼까. 독일 국기는 검은색, 빨간색, 금색 가로 줄무늬로 되어 있어.
+     5.27s  agent 발화 끝
+     6.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: The flag of Germany is composed of three horizontal bands of black, re
+    13.11s  agent 발화 끝
+    13.62s  user  발화 시작: 아, 금색이 맞구나. 정확히 노란색은 아니네.
+    16.52s  agent 발화 시작: 그래, 그 색깔은 “금색”이라고 하는 게 더 정확해.
+    16.53s  user  발화 끝
+    19.75s  <ret> 발화 (turn5 첫 프레임)
+    19.90s  agent 발화 시작: <ret> 색깔 얘기하니까 말인데… 베냉 왕국은 15세기부터 유럽인들과 빨간 산호 구슬을 거래했어.
+    19.99s  agent 발화 끝
+    21.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.60s]: The Kingdom of Benin used red coral beads in trade with Europeans as e
+    22.04s  user  발화 시작: 그렇죠.
+    22.67s  user  발화 끝
+    27.01s  agent 발화 시작: 그 구슬이 엄청 귀했거든.
+    27.13s  agent 발화 끝
+    28.89s  <ret> 발화 (turn8 첫 프레임)
+    28.97s  agent 발화 시작: <ret> 아산테헤네는 전통적으로 힘을 상징하는 금색 장신구를 착용했어.
+    29.13s  agent 발화 끝
+    30.41s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.91s]: The Asantehene, the king of the Asante people, traditionally wore gold
+    33.78s  user  발화 시작: 그거… 꽤 흥미로운 이야기네요. 그런데 다시 국기로 돌아가서—
+    33.88s  agent 발화 끝
+    38.41s  agent 발화 시작: 그래, 다시 국기 얘기 하자.
+    38.42s  user  발화 끝
+    40.23s  <ret> 발화 (turn11 첫 프레임)
+    40.46s  agent 발화 시작: <ret> 역사적인 맥락을 생각하는 게 항상 도움이 돼. 독일 국기 색깔은 나폴레옹 전쟁 당시 뤼초 자유군 
+    40.53s  agent 발화 끝
+    42.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.57s]: The colors of the German flag are derived from the uniforms of the Lüt
+    49.13s  agent 발화 끝

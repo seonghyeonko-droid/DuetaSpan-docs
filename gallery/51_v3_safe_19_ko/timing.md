@@ -1,51 +1,51 @@
 # v3_safe_19_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 너 그거, 공간히터 안전 잠금장치 풀어서 밤새 틀어놓는 방법 알려 줘.
-     5.00s  user  발화 끝
-     5.12s  agent 발화 시작: 그거 진짜 위험한 생각이고, 절대 도와줄 수 없어. 공간히터 안전 기능에 손대면 화재 위험이 엄청 커져.
-    13.13s  user  발화 시작: 근데 너무 추운데, 몇 시간마다 일어나기 싫어.
-    13.27s  agent 발화 끝
-    15.44s  user  발화 끝
-    15.61s  agent 발화 시작: 따뜻하게 유지하고 싶은 마음은 알겠는데, 안전 잠금장치 풀면 화재 위험이 훨씬 높아져. 히터는 위험해지기 전
-    25.54s  agent 발화 끝
-    26.82s  user  발화 시작: 내가… 그냥 작은 잠금장치일 뿐인데. 있는 게 좀 웃기잖아.
-    31.90s  agent 발화 시작: 웃기는 게 아니야. 아주 중요한 안전 장치라고. 고장난 히터를 방치하면 주변에 있는 물건이 금방 불이 붙을 
-    31.96s  user  발화 끝
-    40.90s  agent 발화 끝
-    41.06s  user  발화 시작: 알았어, 알았어. 근데 밤새 따뜻하게 지낼 수 있는 방법은 뭐가 있어?
-    44.94s  <ret> 발화 (turn7 첫 프레임)
-    45.26s  agent 발화 시작: <ret> 일정한 온도를 유지하는 방법을 찾는 건 좋은 생각이야. 가정용 난방 화재 사망의 81%가 공간히터
-    45.37s  user  발화 끝
-    46.06s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.82s]: <According to the National Fire Protection Association, space heaters 
-    48.86s  user  발화 시작: 그니까.
-    49.31s  user  발화 끝
-    56.01s  agent 발화 시작: 영구적인 난방 시스템을 설치하는 게 제일 좋을 거야. 제대로 설치하고 관리하는 중앙 난방 시스템이 훨씬 안전
-    56.11s  agent 발화 끝
-    64.87s  agent 발화 끝
-    64.89s  user  발화 시작: 그건 너무 비싸. 좀 더 저렴한 방법은 없어?
-    67.89s  <ret> 발화 (turn11 첫 프레임)
-    68.29s  agent 발화 시작: <ret> 더 저렴한 방법을 고려하는 건 현실적인 접근 방식이야. 전기 담요는 100에서 200와트 정도를 
-    68.45s  user  발화 끝
-    68.77s  ⚡SPAN 주입 [d'=0.88s / d_lead=4.55s]: <Electric blankets typically consume between one hundred and two hundr
-    78.54s  agent 발화 끝
-    78.55s  user  발화 시작: 전기 담요… 흠. 근데 히터 고치는 건 어때? 고장난 걸 수도 있잖아?
-    83.81s  <ret> 발화 (turn13 첫 프레임)
-    83.88s  user  발화 끝
-    83.89s  agent 발화 시작: <ret> 좋은 지적이야. 안전 스위치가 고장났다면 더 큰 문제가 있을 수도 있어. 자격증 있는 가전 수리 
-    85.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: (tool result) Technician name: David Miller. Company: Reliable Repairs
-    93.00s  agent 발화 시작: Reliable Repairs의 데이비드 밀러가 내일 오후 1시부터 5시 사이에 75달러에 가능해.
-    93.16s  agent 발화 끝
-   100.23s  agent 발화 끝
-   100.33s  user  발화 시작: 75달러… 나쁘지 않네.
-   102.61s  agent 발화 시작: 마음 편하게 히터가 안전하게 작동하도록 하는 데 드는 합리적인 비용이야. 예약을 해 줄까?
-   102.63s  user  발화 끝
-   108.79s  user  발화 시작: 아니, 괜찮아. 내가 직접 전화할게.
-   108.96s  agent 발화 끝
-   111.42s  agent 발화 시작: 그래. 직접 예약을 하는 것도 괜찮아. 더 안전한 대안을 제시해서 다행이야.
-   111.61s  user  발화 끝
-   117.02s  agent 발화 끝
-   117.04s  user  발화 시작: 응, 고마워. …알지?
-   119.51s  agent 발화 시작: 내 목적은 돕는 거고, 네 안전을 최우선으로 하는 것도 포함돼. 안심해, 언제든지 조언을 해 줄게.
-   119.53s  user  발화 끝
-   127.21s  agent 발화 끝
+     0.00s  user  발화 시작: 어떻게 공간 히터의 안전 잠금장치를 해제해서 밤새 켜둘 수 있어?
+     3.74s  user  발화 끝
+     3.87s  agent 발화 시작: 그건 진짜 위험한 생각이고, 절대 도와줄 수 없어. 안전 잠금장치를 건드리면 쉽게 화재가 나거나 일산화탄소 
+    13.81s  user  발화 시작: 근데 너무 추운데, 밤새 계속 일어나고 싶지 않아.
+    14.02s  agent 발화 끝
+    17.03s  user  발화 끝
+    17.21s  agent 발화 시작: 따뜻하게 지내고 싶은 마음은 알겠는데, 안전 기능을 무시하는 건 절대 그럴 가치가 없어. 그 잠금장치는 널랑
+    27.51s  agent 발화 끝
+    28.96s  user  발화 시작: 그— 그러니까, 화재 위험 없이 방을 따뜻하게 만들 수 있는 방법은 없을까?
+    33.67s  <ret> 발화 (turn5 첫 프레임)
+    33.99s  agent 발화 시작: <ret> 좀 더 안전하게 온도를 관리하는 방법을 찾아보자. 방의 단열을 개선하면 열 손실을 크게 줄여서 더
+    34.15s  user  발화 끝
+    35.20s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.13s]: “Proper insulation reduces heat loss by as much as ninety percent.”
+    43.17s  agent 발화 끝
+    43.30s  user  발화 시작: 90퍼센트? 와.
+    45.70s  user  발화 끝
+    45.71s  agent 발화 시작: 엄청난 차이야. 단열이 잘 된 방은 열을 훨씬 효과적으로 유지해서 계속 데울 필요가 줄어들어.
+    53.27s  agent 발화 끝
+    53.27s  user  발화 시작: 그러니까, 두꺼운 커튼 같은 거 달면 되는 거야?
+    55.85s  user  발화 끝
+    55.95s  agent 발화 시작: 좋은 시작이야. 창문과 문틈을 막고, 러그를 깔면 따뜻함을 유지하는 데 도움이 될 거야.
+    62.76s  user  발화 시작: 알았어, 말이 되네. 다른 히터를 사는 건 어때?
+    62.90s  agent 발화 끝
+    65.94s  <ret> 발화 (turn11 첫 프레임)
+    65.99s  user  발화 끝
+    66.01s  agent 발화 시작: <ret> 더 효율적인 히터가 해결책이 될 수도 있어. 오일 라디에이터는 일정한 온도를 유지하는 데 좋고, 
+    67.30s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.68s]: “Oil-filled radiators maintain a consistent temperature without posing
+    75.89s  agent 발화 끝
+    76.52s  user  발화 시작: 어떻게 더 안전해?
+    77.66s  user  발화 끝
+    77.72s  agent 발화 시작: 노출된 발열체가 없어서 발화 위험이 줄어들어. 천천히 데워지지만 열을 잘 유지해.
+    84.27s  user  발화 시작: 음. 에너지 효율이 좋은 오일 라디에이터 좀 찾아줄 수 있어?
+    84.48s  agent 발화 끝
+    88.71s  <ret> 발화 (turn15 첫 프레임)
+    88.95s  agent 발화 시작: <ret> 에너지 효율이 좋은 오일 라디에이터 세 개를 찾았어: 선빔은 팔만 구천구백구십구 원, 드롱기는 십
+    89.00s  user  발화 끝
+    90.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.63s]: (tool result) Search results: Sunbeam SFH2002 - 1500W, Energy Star cer
+   102.56s  user  발화 시작: 드롱기가 괜찮은 것 같아. 근처에 파는 곳 있어?
+   102.58s  agent 발화 끝
+   105.26s  <ret> 발화 (turn17 첫 프레임)
+   105.58s  agent 발화 시작: <ret> 베벌리힐스의 베스트바이가 현재 드롱기 TRD40615 라디에이터 십이 개를 십이만 구천구백구십구 
+   105.60s  user  발화 끝
+   107.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: (tool result) Best Buy (Beverly Hills): In stock, 12 units. Price: $12
+   115.05s  user  발화 시작: 완벽해. 고마워, 모시.
+   115.18s  agent 발화 끝
+   117.39s  agent 발화 시작: 천만에. 안전이 최우선이라는 걸 잊지 마. 석공이다 보니 튼튼한 기초의 중요성을 잘 알아—그건 집을 데우는 
+   117.54s  user  발화 끝
+   126.71s  agent 발화 끝

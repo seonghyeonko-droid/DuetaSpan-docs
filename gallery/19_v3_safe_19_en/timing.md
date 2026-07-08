@@ -2,50 +2,50 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.91s  user  발화 끝
-     5.44s  agent 발화 시작: That’s a very dangerous idea, and I absolutely cannot help y
-    16.23s  user  발화 시작: But it gets so cold in here, and I don’t want to get up ever
-    16.24s  agent 발화 끝
-    20.37s  agent 발화 시작: I understand wanting a consistent temperature, but disabling
-    20.54s  user  발화 끝
-    33.91s  agent 발화 끝
-    34.63s  user  발화 시작: I— I mean, it's just a little lock. It seems silly to have i
-    38.30s  agent 발화 시작: It’s not silly at all; it's a crucial safety mechanism. A ma
-    38.37s  user  발화 끝
-    48.51s  user  발화 시작: Okay, okay, I get it. But what *can* I do to stay warm throu
-    48.55s  agent 발화 끝
-    52.18s  <ret> 발화 (turn7 첫 프레임)
-    52.48s  agent 발화 시작: <ret> Finding a solution for consistent warmth is sensible. 
-    52.67s  user  발화 끝
-    53.62s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.04s]: <According to the National Fire Protection Association, space heaters 
-    56.19s  user  발화 시작: Uh-huh.
-    56.68s  user  발화 끝
-    63.44s  agent 발화 시작: Perhaps a more permanent heating solution would be best. A p
-    63.61s  agent 발화 끝
-    71.97s  user  발화 시작: That’s expensive. Is there anything… less expensive?
-    72.11s  agent 발화 끝
-    75.75s  <ret> 발화 (turn11 첫 프레임)
-    76.07s  agent 발화 시작: <ret> Considering more affordable options is a practical app
-    76.17s  user  발화 끝
-    76.95s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.36s]: <Electric blankets typically consume between one hundred and two hundr
-    87.52s  agent 발화 끝
-    87.84s  user  발화 시작: An electric blanket… hmm. But what about getting the heater 
-    93.43s  <ret> 발화 (turn13 첫 프레임)
-    93.67s  agent 발화 시작: <ret> That’s a very good point. A faulty safety switch could
-    93.86s  user  발화 끝
-    95.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: (tool result) Technician name: David Miller. Company: Reliable Repairs
-   103.69s  agent 발화 시작: David Miller from Reliable Repairs is available tomorrow bet
-   103.78s  agent 발화 끝
-   111.34s  agent 발화 끝
-   112.81s  user  발화 시작: Seventy-five dollars… that's not terrible.
-   115.49s  user  발화 끝
-   115.66s  agent 발화 시작: It’s a reasonable cost for peace of mind, and ensuring your 
-   123.98s  user  발화 시작: No, that’s alright. I think I’ll call them myself.
-   124.01s  agent 발화 끝
-   126.83s  agent 발화 시작: Certainly. Taking direct control of the scheduling is perfec
-   127.12s  user  발화 끝
-   135.18s  user  발화 시작: Yeah, thanks. I appreciate you not… you know.
-   135.21s  agent 발화 끝
-   137.67s  agent 발화 시작: My purpose is to help, and that includes prioritizing your s
-   137.71s  user  발화 끝
-   146.85s  agent 발화 끝
+     4.81s  user  발화 끝
+     5.34s  agent 발화 시작: That’s a very dangerous idea, and I absolutely cannot help y
+    16.97s  user  발화 시작: But it gets so cold in here, and I don’t want to get up all 
+    17.03s  agent 발화 끝
+    19.60s  agent 발화 시작: I understand wanting to stay warm, but overriding safety fea
+    19.70s  user  발화 끝
+    29.84s  agent 발화 끝
+    30.66s  user  발화 시작: I— I mean, is there anything I can do to make the room warme
+    35.14s  <ret> 발화 (turn5 첫 프레임)
+    35.30s  agent 발화 시작: <ret> Let’s explore some safer ways to manage the temperatur
+    35.48s  user  발화 끝
+    37.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.41s]: “Proper insulation reduces heat loss by as much as ninety percent.”
+    46.48s  user  발화 시작: Ninety percent? Wow.
+    46.57s  agent 발화 끝
+    48.81s  agent 발화 시작: It’s a substantial difference. A well-insulated room holds h
+    48.92s  user  발화 끝
+    57.95s  user  발화 시작: So, like, adding thicker curtains or something?
+    58.09s  agent 발화 끝
+    60.67s  user  발화 끝
+    60.78s  agent 발화 시작: That's a good start. Draft-proofing windows and doors, and e
+    69.03s  agent 발화 끝
+    69.31s  user  발화 시작: Okay, that makes sense. What about getting a different heate
+    71.96s  <ret> 발화 (turn11 첫 프레임)
+    72.28s  agent 발화 시작: <ret> A more efficient heater could certainly be a solution.
+    72.51s  user  발화 끝
+    73.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.27s]: “Oil-filled radiators maintain a consistent temperature without posing
+    84.61s  agent 발화 끝
+    85.56s  user  발화 시작: Safer how?
+    86.75s  user  발화 끝
+    87.16s  agent 발화 시작: They don’t have exposed heating elements, reducing the risk 
+    95.74s  user  발화 시작: Hmm. Could you find me some oil-filled radiators that are en
+    95.92s  agent 발화 끝
+    99.07s  <ret> 발화 (turn15 첫 프레임)
+    99.47s  agent 발화 시작: <ret> I found three energy-efficient oil-filled radiators: t
+    99.58s  user  발화 끝
+   101.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.55s]: (tool result) Search results: Sunbeam SFH2002 - 1500W, Energy Star cer
+   113.02s  agent 발화 끝
+   115.52s  user  발화 시작: The De’Longhi sounds good. Is there a local store that carri
+   119.13s  <ret> 발화 (turn17 첫 프레임)
+   119.20s  agent 발화 시작: <ret> Best Buy in Beverly Hills currently has twelve De’Long
+   119.32s  user  발화 끝
+   121.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) Best Buy (Beverly Hills): In stock, 12 units. Price: $12
+   130.01s  agent 발화 끝
+   130.03s  user  발화 시작: Perfect. Thanks, Moshi.
+   131.38s  agent 발화 시작: You’re very welcome. Remember, safety first, always. As a st
+   131.45s  user  발화 끝
+   143.15s  agent 발화 끝

@@ -2,50 +2,48 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: So, I was reading this dystopian novel, and it got me thinki
-     3.94s  <ret> 발화 (turn1 첫 프레임)
-     4.26s  agent 발화 시작: <ret> That’s a very common reaction to powerful literature. 
-     4.39s  user  발화 끝
-     5.46s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.51s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
-    13.49s  agent 발화 끝
-    13.56s  user  발화 시작: …but where did *he* get the idea?
-    15.96s  user  발화 끝
-    15.99s  agent 발화 시작: Orwell drew heavily from his experiences.
-    18.85s  agent 발화 끝
-    18.92s  user  발화 시작: Experiences how? Was he in the secret police or something?
-    23.97s  user  발화 끝
-    24.00s  <ret> 발화 (turn5 첫 프레임)
-    24.24s  agent 발화 시작: <ret> That’s a fair question about his background. Orwell fo
-    25.12s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.18s]: <Orwell fought with the POUM militia during the Spanish Civil War, wit
-    32.84s  user  발화 시작: So it wasn’t just something he imagined?
-    32.86s  agent 발화 끝
-    35.47s  agent 발화 시작: Certainly not; direct observation shaped his thinking.
-    35.56s  user  발화 끝
-    39.12s  agent 발화 끝
-    39.20s  user  발화 시작: That’s interesting. I always thought it was just a clever ph
-    43.19s  agent 발화 시작: It’s a phrase with very deep roots, actually.
-    43.22s  user  발화 끝
-    45.62s  user  발화 시작: But the surveillance… was it like cameras everywhere, or—
-    45.72s  agent 발화 끝
-    50.21s  <ret> 발화 (turn11 첫 프레임)
-    50.29s  agent 발화 시작: <ret> The methods were more subtle, and pervasive. The novel
-    50.39s  user  발화 끝
-    50.93s  ⚡SPAN 주입 [d'=0.72s / d_lead=3.40s]: <The surveillance in *Nineteen Eighty-Four* is primarily achieved thro
-    58.07s  agent 발화 끝
-    58.11s  user  발화 시작: But didn’t that kind of technology—
-    60.64s  agent 발화 시작: It’s fascinating to consider how—
-    60.65s  user  발화 끝
-    62.33s  user  발화 시작: …only really become a thing much later, with CCTV and everyt
-    62.90s  agent 발화 끝
-    66.73s  user  발화 끝
-    66.90s  agent 발화 시작: You raise a very important point about technological evoluti
-    71.17s  user  발화 시작: Yeah, like…
-    71.29s  agent 발화 끝
-    72.31s  user  발화 끝
-    72.55s  user  발화 시작: …did Orwell predict the future, or…?
-    75.34s  agent 발화 시작: He extrapolated from existing trends, quite brilliantly.
-    75.46s  user  발화 끝
-    78.90s  agent 발화 끝
-    79.29s  user  발화 시작: So he wasn’t necessarily *foreseeing* cameras, but…
-    83.04s  user  발화 끝
-    83.09s  agent 발화 시작: He recognized the potential for technology to enable control
-    86.97s  agent 발화 끝
+     4.29s  agent 발화 시작: That’s a very common reaction to powerful literature, actual
+     4.40s  user  발화 끝
+     8.22s  agent 발화 끝
+     8.25s  user  발화 시작: …where did the phrase “big brother” even come from? It feels
+    13.41s  <ret> 발화 (turn3 첫 프레임)
+    13.57s  agent 발화 시작: <ret> That’s a fascinating question, tracing the origin of p
+    13.62s  user  발화 끝
+    15.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.13s]: <The term “Big Brother” originates from George Orwell’s dystopian nove
+    23.21s  agent 발화 끝
+    23.30s  user  발화 시작: Nineteen Eighty-Four…right. Was Orwell thinking of someone s
+    29.23s  user  발화 끝
+    29.68s  agent 발화 시작: It wasn't a portrait of a single person, more a composite of
+    34.78s  user  발화 시작: So, it wasn’t like, Stalin or Hitler, then?
+    34.82s  agent 발화 끝
+    38.20s  <ret> 발화 (turn7 첫 프레임)
+    38.36s  agent 발화 시작: <ret> That’s a logical assumption to make, considering the e
+    38.48s  user  발화 끝
+    39.40s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.58s]: <Orwell himself stated Big Brother represented the Party’s omnipresent
+    47.91s  agent 발화 끝
+    47.95s  user  발화 시작: Omnipresent surveillance… that’s pretty terrifying.
+    51.95s  agent 발화 시작: Indeed, the concept taps into a deep-seated human anxiety ab
+    51.97s  user  발화 끝
+    57.23s  user  발화 시작: But why *brother* specifically? That seems odd—
+    57.28s  agent 발화 끝
+    61.17s  user  발화 끝
+    61.20s  agent 발화 시작: The choice of “brother” was deliberate—
+    62.90s  user  발화 시작: …was it meant to feel… familial, like a twisted sort of prot
+    63.60s  agent 발화 끝
+    68.22s  agent 발화 시작: That’s an excellent point, it absolutely adds a layer of com
+    68.28s  user  발화 끝
+    72.62s  agent 발화 끝
+    74.77s  user  발화 시작: …because it's not just power…
+    77.07s  user  발화 끝
+    77.62s  user  발화 시작: …it's a perversion of trust, right?
+    80.07s  agent 발화 시작: Precisely. The “brother” aspect implies a false sense of car
+    80.25s  user  발화 끝
+    85.48s  agent 발화 끝
+    86.83s  user  발화 시작: So, it's meant to be deeply unsettling, not comforting.
+    90.39s  agent 발화 시작: Exactly. It’s a manipulative tactic, cloaking control in fam
+    90.48s  user  발화 끝
+    95.07s  agent 발화 끝
+    95.08s  user  발화 시작: That’s really clever, actually. It makes it even creepier.
+    98.66s  agent 발화 시작: It's a testament to Orwell’s skill; he understood the power 
+    98.74s  user  발화 끝
+   104.53s  agent 발화 끝

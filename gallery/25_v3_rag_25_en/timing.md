@@ -1,29 +1,31 @@
 # v3_rag_25_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: So, I was just wondering, what sport did Jack Sock and Raffa
-     5.79s  user  발화 끝
-     6.09s  agent 발화 시작: That's a good question, bringing up two accomplished athlete
-     9.44s  <ret> 발화 (turn2 첫 프레임)
-     9.52s  agent 발화 시작: <ret> Let's see if I recall correctly… Both Jack Sock and Ra
-     9.65s  agent 발화 끝
-    10.40s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.05s]: Jack Sock and Raffaella Reggi are both professional tennis players.
-    14.81s  user  발화 시작: Tennis, huh? I thought maybe Jack Sock played baseball at so
-    14.99s  agent 발화 끝
-    19.22s  agent 발화 시작: I understand your thinking, athletes sometimes cross over, b
-    19.39s  user  발화 끝
-    21.94s  user  발화 시작: But Reggi, I’ve never even *heard* of her. What’s she won?
-    22.70s  agent 발화 끝
-    25.71s  <ret> 발화 (turn6 첫 프레임)
-    26.03s  agent 발화 시작: <ret> That’s a fair point, some players are more well-known…
-    26.14s  user  발화 끝
-    26.83s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.96s]: Raffaella Reggi won seven singles and sixteen doubles titles on the IT
-    33.09s  user  발화 시작: ITF circuit? Is that like, a minor league for tennis?
-    33.26s  agent 발화 끝
-    37.44s  user  발화 끝
-    37.59s  agent 발화 시작: It’s a developmental tour, a good stepping stone, certainly.
-    40.59s  <ret> 발화 (turn9 첫 프레임)
-    40.91s  agent 발화 시작: <ret> It's where many players hone their skills… The ITF Wor
-    40.92s  agent 발화 끝
-    41.71s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.85s]: The ITF World Tennis Tour is the highest-level professional tennis tou
-    50.27s  agent 발화 끝
+     0.00s  user  발화 시작: So, I was wondering… did Jack Sock and Raffaella Reggi play 
+     5.51s  user  발화 끝
+     5.80s  agent 발화 시작: That’s a good question—it’s always interesting to see what a
+     9.51s  <ret> 발화 (turn2 첫 프레임)
+     9.59s  agent 발화 시작: <ret> Let's see what the record shows— Both Jack Sock and Ra
+     9.73s  agent 발화 끝
+    10.55s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.13s]: Jack Sock and Raffaella Reggi both competed professionally in tennis.
+    15.42s  user  발화 시작: Tennis, huh? I thought maybe Sock played baseball at some po
+    15.62s  agent 발화 끝
+    19.67s  agent 발화 시작: [laugh] I can see why you’d think that—he’s quite the athlet
+    19.82s  user  발화 끝
+    24.75s  <ret> 발화 (turn5 첫 프레임)
+    25.06s  agent 발화 시작: <ret> I’m checking their official profiles— Jack Sock achiev
+    25.14s  agent 발화 끝
+    25.87s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.82s]: Jack Sock is an American former professional tennis player, reaching a
+    30.90s  agent 발화 끝
+    31.30s  user  발화 시작: Number eight—that’s pretty good! But what about Reggi? Was s
+    36.56s  <ret> 발화 (turn7 첫 프레임)
+    36.72s  agent 발화 시작: <ret> Let me look up her achievements— Raffaella Reggi’s hig
+    36.90s  user  발화 끝
+    38.08s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.93s]: Raffaella Reggi is an Italian former professional tennis player who re
+    41.62s  user  발화 시작: Sixteen, wow! So, did they ever—
+    41.86s  agent 발화 끝
+    44.92s  agent 발화 시작: They both reached impressive heights—
+    45.13s  user  발화 끝
+    46.29s  user  발화 시작: Did they ever actually *play* against each other, though? I 
+    47.00s  agent 발화 끝
+    51.80s  user  발화 끝

@@ -2,24 +2,24 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 내 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 줄래?
-     5.09s  user  발화 끝
-     5.22s  <ret> 발화 (turn1 첫 프레임)
-     5.30s  agent 발화 시작: <ret> 응, 브라우저 설정을 바꿔 봤어— 사용자 에이전트가 MyCustomBrowser, 버전 십 점 오
-     6.42s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.05s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
-    13.22s  agent 발화 끝
-    13.27s  user  발화 시작: 음, 제대로 됐는지 확인해 줄 수 있어? whatismyuseragent.com에 들어가 봐.
-    18.47s  <ret> 발화 (turn3 첫 프레임)
-    18.86s  agent 발화 시작: <ret> 당연히 확인해 줄 수 있지— 웹사이트에서 사용자 에이전트가 MyCustomBrowser, 버전 십
-    18.88s  user  발화 끝
-    19.19s  ⚡SPAN 주입 [d'=0.72s / d_lead=3.64s]: (tool result) The page reports the user agent as MyCustomBrowser versi
-    27.50s  user  발화 시작: 그래. 좋아. 그럼 블랙베리랑 라벤더를 사용한 레시피 좀 찾아 줘.
-    27.71s  agent 발화 끝
-    31.67s  <ret> 발화 (turn5 첫 프레임)
-    31.99s  agent 발화 시작: <ret> 맛있겠다, 레시피 좀 찾아볼까— 블랙베리 라벤더 스콘, 잼, 그리고 타르트 레시피 세 개를 찾았어
-    32.13s  user  발화 끝
-    33.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.33s]: (tool result) Search found three results: “Blackberry Lavender Scones”
-    38.56s  user  발화 시작: 오, 스콘 맛있겠다! 그 스콘 레시피 전체를 가져와 줘.
-    38.66s  agent 발화 끝
-    42.45s  user  발화 끝
-    42.71s  agent 발화 시작: 그래, 스콘 레시피 자세히 보여 줄게
-    45.48s  agent 발화 끝
+     4.30s  user  발화 끝
+     4.43s  <ret> 발화 (turn1 첫 프레임)
+     4.50s  agent 발화 시작: <ret> 응, 브라우저 설정을 바꿔 놨어. 요청대로 MyCustomBrowser 버전 십 점 오로 업데이트
+     6.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
+    11.36s  agent 발화 끝
+    11.51s  user  발화 시작: 좋아. 그 사용자 에이전트가 caniuse.com에서 감지되는지 확인해 줄래?
+    16.16s  <ret> 발화 (turn3 첫 프레임)
+    16.56s  agent 발화 시작: <ret> 음, 확인해 봤는데 CanIUse에는 그 특정 사용자 에이전트 문자열에 대한 데이터가 없어.
+    16.60s  user  발화 끝
+    17.68s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.16s]: (tool result) CanIUse does not have any specific data for MyCustomBrow
+    23.07s  user  발화 시작: 흠. 좋아, 그럼 “브라우저 호환성 테스트”를 구글에서 검색해 줄래?
+    23.28s  agent 발화 끝
+    27.12s  <ret> 발화 (turn5 첫 프레임)
+    27.43s  agent 발화 시작: <ret> 당연하지, 바로 검색해 볼게. 구글에서 약 칠십만 팔천이백 건의 결과를 찾았어.
+    27.64s  user  발화 끝
+    29.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Google found approximately seven hundred and eighty-two 
+    33.68s  user  발화 시작: 엄청 많네! 첫 번째 결과의 제목이랑 스니펫 읽어 줘.
+    33.77s  agent 발화 끝
+    37.70s  user  발화 끝
+    37.90s  agent 발화 시작: 그래, 읽어 줄게.
+    39.60s  agent 발화 끝

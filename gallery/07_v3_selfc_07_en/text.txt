@@ -3,33 +3,33 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  4.23s][moshi] ⟨ret@4.00s⟩ Certainly, let’s ⟦⚡SPAN@5.04s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ see about scheduling a visit for you. I’ve scheduled a viewing for you at two PM on June fifteenth.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 11.36s][user ] Is that the earliest time available that ⟨ret@13.68s⟩ day?
-[ 13.84s][moshi] Let me ⟦⚡SPAN@15.12s: (tool result) The Grandview Lofts has viewings available at ten AM, noon, and two PM on June fifteenth.⟧ quickly check the availability for that property. There are viewings at ten AM, noon, and two PM on June fifteenth.
-      CALL: {"function": "Homes_2CheckAvailability", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 22.46s][user ] Actually, could we push that to the afternoon— I mean, the latest possible time?
-[ 28.05s][moshi] ⟨ret@27.81s⟩ Of course, let’s find ⟦⚡SPAN@29.65s: (tool result) The Grandview Lofts has viewings available at ten AM, noon, and two PM on June fifteenth.⟧ the latest available slot for you. The latest available viewing time is two PM on June fifteenth.
-      CALL: {"function": "Homes_2CheckAvailability", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 35.86s][user ] Great. And can you send me directions to The Grandview ⟨ret@39.26s⟩ Lofts?
-[ 39.21s][moshi] Absolutely, I can ⟦⚡SPAN@40.86s: (tool result) Directions to The Grandview Lofts are: head north on Elm Street, then turn right on Oak Avenue.⟧ provide directions for you. Head north on Elm Street, then turn right onto Oak Avenue.
-      CALL: {"function": "Navigation_2GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 46.98s][user ] That sounds straightforward enough. What's the rental application process like there?
-[ 51.87s][moshi] The application process typically involves a credit check and proof of income.
-[ 56.45s][user ] Is there a fee for the ⟨ret@58.53s⟩ application?
-[ 58.69s][moshi] Let me look up ⟦⚡SPAN@60.53s: (tool result) The application fee for The Grandview Lofts is fifty dollars.⟧ the application fee for The Grandview Lofts. The application fee is fifty dollars.
-      CALL: {"function": "Homes_2GetApplicationFee", "arguments": {"property": "The Grandview Lofts"}}
-[ 65.96s][user ] Fifty dollars— that seems—
-[ 67.70s][moshi] «interrupted» It’s fairly standard for properties in this area, considering—
-[ 70.88s][user ] «interrupts_prev» Is a guarantor required if my income is slightly below their threshold?
-[ 75.03s][moshi] A guarantor may be required if your income doesn’t meet the criteria; it depends on the specific circumstances.
-[ 82.96s][user ] Okay. What about parking? Is parking included?
-[ 85.79s][moshi] ⟨ret@85.64s⟩ I ⟦⚡SPAN@86.44s: (tool result) Parking at The Grandview Lofts is available for seventy-five dollars per month.⟧ can check the parking situation at The Grandview Lofts. Parking is available for seventy-five dollars a month.
-      CALL: {"function": "Homes_2GetParkingInfo", "arguments": {"property": "The Grandview Lofts"}}
-[ 92.61s][user ] Seventy-five dollars a month, huh? That's a bit steep.
-[ 95.40s][moshi] It is a premium location, which often reflects in the associated costs.
-[101.66s][user ] Right. Are pets allowed at The Grandview ⟨ret@104.51s⟩ Lofts?
-[104.66s][moshi] I’ll look into the pet ⟦⚡SPAN@106.51s: (tool result) The Grandview Lofts allows cats and small dogs with a one-time fee of three hundred dollars.⟧ policy at that building for you. Cats and small dogs are permitted with a three-hundred-dollar fee.
-      CALL: {"function": "Homes_2GetPetPolicy", "arguments": {"property": "The Grandview Lofts"}}
-[111.26s][user ] Three hundred dollars… okay. And what are the lease terms?
-[114.80s][moshi] Lease terms are typically twelve months, but they sometimes offer six-month options.
+[  3.49s][moshi] ⟨ret@3.26s⟩ Certainly, ⟦⚡SPAN@4.22s: (tool result) A viewing at The Grandview Lofts is confirmed for June fifteenth at two PM.⟧ let’s get that scheduled for you. I’ve booked a viewing for you at The Grandview Lofts on June fifteenth at two PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 11.38s][user ] Can you send me directions to that ⟨ret@13.40s⟩ address?
+[ 13.47s][moshi] Absolutely, I ⟦⚡SPAN@14.60s: (tool result) Directions to The Grandview Lofts are: head north on Elm Street, turn right onto Oak Avenue, and⟧ can provide those directions right away. The directions to The Grandview Lofts are north on Elm, right on Oak, and it’s at one two three Oak Avenue.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
+[ 23.77s][user ] That’s helpful. How long will that drive take?
+[ 26.65s][moshi] ⟨ret@26.41s⟩ Let me check ⟦⚡SPAN@28.25s: (tool result) The drive to The Grandview Lofts is estimated to take fifteen minutes.⟧ the estimated travel time for you. The drive to The Grandview Lofts should take approximately fifteen minutes.
+      CALL: {"function": "Navigation_2_GetTravelTime", "arguments": {"destination": "The Grandview Lofts"}}
+[ 34.63s][user ] Okay, good. And what’s the parking situation like there?
+[ 37.58s][moshi] Parking can be a bit limited, but there’s street parking available on Oak Avenue, and a paid lot nearby.
+[ 44.69s][user ] Is there a grocery store close by, in case I want to grab something afterwards?
+[ 49.58s][moshi] Yes, there is!
+[ 50.79s][moshi] ⟨ret@50.39s⟩ There ⟦⚡SPAN@51.67s: (tool result) Fresh Foods Market is a five-minute walk from The Grandview Lofts.⟧ is a grocery store nearby— Fresh Foods Market is just a five-minute walk from The Grandview Lofts.
+      CALL: {"function": "Search_2_FindNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
+[ 58.04s][user ] Excellent. I’m also looking at a place on Bleecker Street…
+[ 61.37s][moshi] Ah, another property. Which address on Bleecker Street are you considering?
+[ 66.48s][user ] It’s 42 Bleecker Street. Can we schedule a viewing there ⟨ret@69.66s⟩ too?
+[ 70.05s][moshi] Certainly, let’s see ⟦⚡SPAN@71.42s: (tool result) A viewing at 42 Bleecker Street is confirmed for June eighteenth at ten AM.⟧ about scheduling a viewing there as well. I’ve scheduled a viewing at 42 Bleecker Street for June eighteenth at ten AM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "date": "June eighteenth"}}
+[ 78.66s][user ] Perfect. But actually… June seventeenth would work better for Bleecker ⟨ret@82.87s⟩ Street.
+[ 83.11s][moshi] Let me ⟦⚡SPAN@83.99s: (tool result) The viewing at 42 Bleecker Street is now scheduled for June seventeenth at ten AM.⟧ adjust that for you— I’ve rescheduled your viewing at 42 Bleecker Street for June seventeenth at ten AM.
+      CALL: {"function": "Homes_2_RescheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "oldDate": "June eighteenth", "newDate": "June seventeenth"}}
+[ 91.58s][user ] Great, thank you. What's the square footage of the Bleecker Street apartment?
+[ 96.17s][moshi] ⟨ret@96.01s⟩ Let me pull up ⟦⚡SPAN@97.93s: (tool result) 42 Bleecker Street is 750 square feet with one bedroom and one bathroom.⟧ those details for you now. The apartment at 42 Bleecker Street is seven hundred fifty square feet, with one bedroom and one bathroom.
+      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "42 Bleecker Street"}}
+[105.81s][user ] That sounds good. And how about The Grandview Lofts? What’s their ⟨ret@109.98s⟩ square footage?
+[110.30s][moshi] ⟦⚡SPAN@110.48s: (tool result) The Grandview Lofts are 900 square feet with two bedrooms and two bathrooms.⟧ Let me check that information for you. The Grandview Lofts are nine hundred square feet, and feature two bedrooms and two bathrooms.
+      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
+[119.60s][user ] Hmm, okay. That's a significant difference. Thanks for all your help.
+[123.71s][moshi] You’re very welcome. I’m glad I could assist you with these viewings.

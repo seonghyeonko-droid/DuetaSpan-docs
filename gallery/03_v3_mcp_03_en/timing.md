@@ -2,24 +2,24 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.72s  <ret> 발화 (turn1 첫 프레임)
-     3.11s  agent 발화 시작: <ret> Alright, initiating the checkout sequence for you now.
-     3.29s  user  발화 끝
-     3.68s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.62s]: (tool result) The shopping cart iframe’s “Checkout” button was clicked
-    12.15s  agent 발화 끝
-    13.55s  user  발화 시작: What’s the total amount due?
-    15.26s  <ret> 발화 (turn3 첫 프레임)
-    15.34s  agent 발화 시작: <ret> Let me quickly retrieve that information for you. Your
-    15.44s  user  발화 끝
-    16.78s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.32s]: (tool result) The total amount due is $125.50, including shipping.
-    24.85s  user  발화 시작: Can you confirm my shipping address is still 14 Oak Street?
-    24.89s  agent 발화 끝
-    28.96s  user  발화 끝
-    29.23s  agent 발화 시작: Yes, your shipping address on file remains 14 Oak Street. I 
-    35.85s  user  발화 시작: No, that’s fine. Go ahead and complete the purchase.
-    35.99s  agent 발화 끝
-    38.63s  <ret> 발화 (turn7 첫 프레임)
-    39.03s  agent 발화 시작: <ret> Very well, I’ll finalize the order then. Your purchase
-    39.09s  user  발화 끝
-    40.23s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.66s]: (tool result) The purchase was completed; order number is 789456.
-    48.53s  agent 발화 끝
+     2.92s  <ret> 발화 (turn1 첫 프레임)
+     3.32s  agent 발화 시작: <ret> Alright, let’s get that shopping cart finalized for yo
+     3.51s  user  발화 끝
+     3.88s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.87s]: (tool result) The shopping cart iframe’s “Checkout” button was clicked
+     9.06s  agent 발화 끝
+    10.42s  user  발화 시작: What’s the total amount due?
+    12.18s  <ret> 발화 (turn3 첫 프레임)
+    12.26s  agent 발화 시작: <ret> Let me quickly check the order total for you now. Your
+    12.35s  user  발화 끝
+    14.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.89s]: (tool result) The order total is $125.50, including shipping.
+    21.11s  user  발화 시작: Can you use the gift card with code SUMMER20?
+    21.20s  agent 발화 끝
+    24.66s  <ret> 발화 (turn5 첫 프레임)
+    24.80s  user  발화 끝
+    24.81s  agent 발화 시작: <ret> Certainly, I can apply that gift card for you. The gif
+    26.34s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.95s]: (tool result) Gift card SUMMER20 applied; new total is $105.50.
+    33.87s  user  발화 시작: Go ahead and confirm the order.
+    33.99s  agent 발화 끝
+    35.84s  agent 발화 시작: Very well, confirming the order now. It’s good to have thing
+    35.85s  user  발화 끝
+    45.90s  agent 발화 끝

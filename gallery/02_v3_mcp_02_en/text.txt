@@ -2,14 +2,12 @@ v3_mcp_02_en src=mcp style=v3
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.72s⟩ com.
-[  3.95s][moshi] Certainly, I can ⟦⚡SPAN@5.72s: (tool result) The website reports a temperature of 22 degrees Celsius and partly cloudy skies.⟧ monitor that website for changes. Currently, the weather at weather dot example dot com is 22 degrees Celsius with partly cloudy skies.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.63s⟩ com.
+[  3.86s][moshi] Certainly, I ⟦⚡SPAN@4.91s: (tool result) The website reports current conditions in London are 15 degrees Celsius and partly cloudy.⟧ can monitor that website for you. Right now in London, it’s fifteen degrees Celsius and partly cloudy.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 16.64s][user ] Wow, that’s warmer than I expected… um, I think I need to book a train to Zermatt.
-[ 22.14s][moshi] A trip to Zermatt sounds lovely! Do you have a preferred date and time for your travel?
-[ 27.05s][user ] Yes, I— I mean, the 16th of July, around ten in the morning, ⟨ret@31.38s⟩ if possible.
-[ 31.70s][moshi] Let me check ⟦⚡SPAN@33.38s: (tool result) A train to Zermatt is available on July 16th at 10:15 AM, costing 120 Swiss francs.⟧ the train schedules for you then. There’s a train to Zermatt on July 16th at 10:15 AM, costing 120 Swiss francs. Shall I book it for you?
-      CALL: {"function": "book_train", "arguments": {"destination": "Zermatt", "date": "July 16th", "time": "10:00"}}
-[ 43.43s][user ] Yes, please do. And can you remind me to pack my hiking boots?
-[ 47.74s][moshi] ⟨ret@47.34s⟩ Of course, ⟦⚡SPAN@48.55s: (tool result) A reminder to pack hiking boots is set for July 15th at 6:00 PM.⟧ I’ll set a reminder for your boots. I’ve set a reminder for July 15th at 6:00 PM to pack your hiking boots. Is there anything else?
-      CALL: {"function": "set_reminder", "arguments": {"reminder_text": "Pack hiking boots", "date": "July 15th", "time": "18:00"}}
+[ 12.84s][user ] Oh, that’s… well, that’s good to know, actually. I was hoping for sun, but—
+[ 18.18s][moshi] [interrupting] Is that for planning a walk, perhaps?
+[ 21.20s][user ] Yeah, exactly! Is it supposed to clear up ⟨ret@24.56s⟩ later?
+[ 24.80s][moshi] Let me check ⟦⚡SPAN@26.24s: (tool result) The forecast shows sunshine arriving in London at 3 PM, with a high of 18 degrees Celsius.⟧ the hourly forecast for London. Sunshine is expected in London at three PM, with a high of eighteen degrees Celsius.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com/hourly"}}
+[ 32.99s][user ] Wonderful! That’s perfect. I think I’ll head out then. Thanks, Moshi.

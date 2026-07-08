@@ -2,13 +2,14 @@ v3_rag_25_en src=hotpotqa style=v2
 SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was just wondering, what sport did Jack Sock and Raffaella Reggi both play?
-[  6.09s][moshi] That's a good question, bringing up two accomplished athletes.
-[  9.52s][moshi] ⟨ret@9.44s⟩ Let's see ⟦⚡SPAN@10.40s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ if I recall correctly… Both Jack Sock and Raffaella Reggi are professional tennis players.
-[ 14.81s][user ] Tennis, huh? I thought maybe Jack Sock played baseball at some point.
-[ 19.22s][moshi] «interrupted» I understand your thinking, athletes sometimes cross over, but—
-[ 21.94s][user ] «interrupts_prev» But Reggi, I’ve never even *heard* of her. What’s she ⟨ret@25.71s⟩ won?
-[ 26.03s][moshi] That’s a ⟦⚡SPAN@26.83s: Raffaella Reggi won seven singles and sixteen doubles titles on the ITF circuit in her career.⟧ fair point, some players are more well-known… Raffaella Reggi won seven singles and sixteen doubles titles on the ITF circuit.
-[ 33.09s][user ] ITF circuit? Is that like, a minor league for tennis?
-[ 37.59s][moshi] It’s a developmental tour, a good stepping stone, certainly.
-[ 40.91s][moshi] ⟨ret@40.59s⟩ It's ⟦⚡SPAN@41.71s: The ITF World Tennis Tour is the highest-level professional tennis tour besides the ATP and WTA tours.⟧ where many players hone their skills… The ITF World Tennis Tour is the highest-level professional tour besides the ATP and WTA tours.
+[  0.00s][user ] So, I was wondering… did Jack Sock and Raffaella Reggi play the same sport?
+[  5.80s][moshi] That’s a good question—it’s always interesting to see what athletes cross over.
+[  9.59s][moshi] ⟨ret@9.51s⟩ Let's see ⟦⚡SPAN@10.55s: Jack Sock and Raffaella Reggi both competed professionally in tennis.⟧ what the record shows— Both Jack Sock and Raffaella Reggi had professional careers playing tennis.
+[ 15.42s][user ] Tennis, huh? I thought maybe Sock played baseball at some point.
+[ 19.67s][moshi] [laugh] I can see why you’d think that—he’s quite the athlete, but no, his focus was always tennis.
+[ 25.06s][moshi] ⟨ret@24.75s⟩ I’m ⟦⚡SPAN@25.87s: Jack Sock is an American former professional tennis player, reaching a career-high ranking of world No. 8 in s⟧ checking their official profiles— Jack Sock achieved a career-high singles ranking of number eight worldwide.
+[ 31.30s][user ] Number eight—that’s pretty good! But what about Reggi? Was she ranked, ⟨ret@36.56s⟩ too?
+[ 36.72s][moshi] Let me look ⟦⚡SPAN@38.08s: Raffaella Reggi is an Italian former professional tennis player who reached a career-high singles ranking of w⟧ up her achievements— Raffaella Reggi’s highest singles ranking was sixteenth in the world.
+[ 41.62s][user ] Sixteen, wow! So, did they ever—
+[ 44.92s][moshi] «interrupted» They both reached impressive heights—
+[ 46.29s][user ] «interrupts_prev» Did they ever actually *play* against each other, though? I mean, on a professional court?

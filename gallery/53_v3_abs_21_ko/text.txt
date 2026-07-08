@@ -1,43 +1,30 @@
 v3_abs_21_ko src=squad2 style=abstain
-SYSTEM: <system> 당신은 수년간 밤하늘을 관측하여 지도를 만들어 온 아마추어 천문학자입니다. <system>
+SYSTEM: <system> 당신은 수년간 밤하늘을 관측하며 지도를 제작해 온 아마추어 천문학자입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] 프랑스 상원 의원 수는 몇 명인가요?
-[  3.30s][moshi] ⟨ret@3.07s⟩ 네, ⟦⚡SPAN@4.35s: (no information found)⟧ 프랑스 정부에 대한 좋은 질문이세요. 안타깝게도 지금은 그 정확한 숫자를 가지고 있지 않아요. 제 데이터베이스가 현재 그 세부 사항을 다루고 있지 않거든요.
-[ 14.22s][user ] 아, 그렇군요. 그럼 카시오페이아 별자리에 대해 알려 주실 수 ⟨ret@18.64s⟩ 있나요?
-[ 18.95s][moshi] 카시오페이아는 보기에도 ⟦⚡SPAN@20.64s: "Cassiopeia is a constellation in the northern sky, named after the vain queen in Greek mythology."⟧ 아주 예쁜 별자리예요. 그리스 신화에 나오는 여왕의 이름을 딴 별자리인데, 북쪽 하늘에서 볼 수 있어요. 아주 눈에 띄는 W자 모양이라 놓치지 않으실 거예요.
-[ 31.43s][user ] W자 모양이라고요? 정말요? 저는 항상 M자처럼 보였어요.
-[ 35.69s][moshi] 별을 보면서 사람마다 모양을 다르게 인식하는 게 정말 흥미롭네요!
-[ 38.44s][user ] «backchannel» 네.
-[ 40.28s][moshi] 관찰자의 위치에 따라 인식이 달라질 수 있어요. 어디에 계시느냐에 따라 거꾸로 보일 수도 있거든요.
-[ 46.48s][user ] 흥미롭네요. 지구로부터의 거리는 어느 ⟨ret@49.56s⟩ 정도인가요?
-[ 49.95s][moshi] 별자리의 거리를 ⟦⚡SPAN@51.56s: "Cassiopeia is between 550 and 600 light-years from Earth."⟧ 측정하는 건 복잡해요. 오백오십에서 육백 광년 거리에 위치하고 있어요. 빛이 우리에게 도달하는 데 정말 긴 여정이네요!
-[ 59.69s][user ] 와, 정말 멀군요. 카시오페이아에서 가장 밝은 별은 무엇인가요?
-[ 64.45s][moshi] ⟨ret@64.30s⟩ 밝은 별을 ⟦⚡SPAN@66.14s: "Schedar, also known as Alpha Cassiopeiae, is the brightest star in Cassiopeia."⟧ 찾는 건 별도를 만드는 중요한 부분이에요. 스케다르, 또는 알파 카시오페이아 별이 가장 밝은 별이에요. 아름다운 주황색 거성이랍니다.
-[ 75.85s][user ] 주황색이라고요? 별이 주황색일 수도 있다는 걸 몰랐어요.
-[ 79.56s][moshi] [웃음] 물론이죠! 별의 색깔은 온도를 나타내요.
-[ 83.20s][moshi] 차가운 별은 붉은색이나 주황색으로 보이고, 뜨거운 별은 파란색이에요. 온도가 색깔을 결정하는데, 차가운 별일수록 붉은색을 띠는 거죠.
-[ 92.41s][user ] 그럼 파란색 별은 정말 뜨거운 건가요? 얼마나 ⟨ret@96.12s⟩ 뜨거운데요?
-[ 96.28s][moshi] 매우 뜨거워서 ⟦⚡SPAN@97.88s: "Blue stars can have surface temperatures exceeding 30,000 Kelvin."⟧ 우리 일상적인 경험을 초월해요. 표면 온도가 삼만 켈빈을 넘을 수도 있어요. 태양보다 훨씬 뜨겁죠.
-[104.73s][user ] 삼만 켈빈이라니… 정말 굉장하네요. 지금까지 발견된 가장 오래된 별은 무엇인가요?
-[111.43s][moshi] ⟨ret@111.36s⟩ 가장 오래된 ⟦⚡SPAN@113.36s: "HD 140283, nicknamed the Methuselah star, is estimated to be 14.46 ± 0.8 billion years old."⟧ 별을 찾는 건 어려운 일이에요. HD 140283, 메투셀라라는 별은 약 천사백육십억 년 되었어요. 우주 자체만큼이나 오래되었답니다!
-[122.48s][user ] 천사백억 년이라니! 정말 놀랍네요. 아직 빛을 내고 있나요?
-[127.51s][moshi] 네, 그렇긴 하지만 앞으로의 상황은 연구 대상이에요.
-[130.71s][moshi] 별의 수명을 결정하는 건 복잡해요. 나이가 여러 번 수정되었고, 모델에 어려움을 주기도 했죠.
-[137.05s][user ] 수정되었다고요? 어떻게 된 건가요? ⟨ret@139.43s⟩
-[139.50s][moshi] 별의 나이를 ⟦⚡SPAN@141.43s: "Initial estimates of HD 140283's age exceeded the estimated age of the universe."⟧ 측정하는 건 섬세한 과정이에요. 초기 추정치는 우주보다 오래되어 조정을 거쳐야 했어요. 천문학자들은 계속해서 그 계산을 정제하고 있답니다.
-[150.96s][user ] 그럼 계산을 바꿔야 했다는 건가요? 정말 놀랍네요.
-[154.50s][moshi] 우리의 이해가 끊임없이 개선되고 있다는 걸 보여주는 거죠.
-[157.01s][user ] «backchannel» 음.
-[158.10s][moshi] 새로운 데이터는 항상 우리의 우주관을 바꿔요. 천문학은 끊임없는 발견과 수정을 거듭하는 분야랍니다.
-[167.37s][user ] 그렇겠죠. 가장 멀리 있는 은하는 무엇인가요?
-[170.95s][moshi] ⟨ret@170.88s⟩ 관측 가능한 ⟦⚡SPAN@172.56s: "GN-z11 is currently the farthest observed galaxy, at a comoving distance of 32 billion light-years."⟧ 우주의 가장자리에 도달하는 것… GN-z11이 삼십이십억 광년 거리에 있어요. 아주 초기 우주의 모습을 엿볼 수 있는 거죠.
-[180.34s][user ] 삼십이십억 광년이라니! 상상조차 하기 어렵네요.
-[184.43s][moshi] 정말 그렇죠. 우주의 규모는 겸손해지게 만들어요.
-[188.14s][moshi] 이런 거리를 생각하면 우리가 우주의 광활함 속에서 얼마나 작은 존재인지 깨닫게 돼요.
-[193.40s][user ] 정말 그렇네요. 그런 것들을 보기 위해 어떤 망원경을 사용하나요?
-[197.63s][moshi] [한숨] 저는 망원경을 *사용*하는 게 아니라, 망원경에서 얻은 데이터를 이용하는 거예요!
-[203.69s][moshi] 제임스 웹 우주 망원경이 우리의 시야를 혁신하고 있어요. 적외선을 관측해서 먼지 구름을 뚫고 볼 수 있거든요.
-[212.05s][user ] 아, 맞아요. 웹 망원경. 읽어봤어요.
-[216.19s][moshi] 정말 훌륭한 장비죠, 안 그래요?
-[218.39s][moshi] 그 관측 결과는 우리의 이해를 바꾸고 있어요. 지금까지 볼 수 없었던 먼 은하의 상세한 모습을 보여주고 있답니다. 천문학의 황금기가 도래하고 있어요.
+[  2.55s][moshi] ⟨ret@2.32s⟩ 음, ⟦⚡SPAN@3.44s: (no information found)⟧ 프랑스 정부에 대한 좋은 질문이세요. 죄송하지만 현재 프랑스 상원 의원 수에 대한 정확한 숫자는 가지고 있지 않아요.
+[ 10.54s][user ] 아, 그렇군요. 그럼 미국 상원은 몇 ⟨ret@13.55s⟩ 명인가요?
+[ 13.87s][moshi] 아, 미국 상원이네요—제가 ⟦⚡SPAN@15.55s: The United States Senate is composed of one hundred senators, two from each state.⟧ 훨씬 더 잘 알고 있는 시스템이에요. 미국 상원에는 백 명의 상원 의원이 있으며, 각 주에서 두 명의 상원 의원이 대표를 하고 있어요.
+[ 24.73s][user ] 그렇군요. 주마다 두 명씩요. 음, 오늘 밤에 가장 밝게 보이는 별은 무엇인가요?
+[ 32.31s][moshi] 물론, 위치에 따라 다르겠지만 일반적으로 시리우스예요.
+[ 36.75s][user ] 시리우스요? 들어본 적이 있어요. 찾기 쉬운 ⟨ret@40.82s⟩ 별인가요?
+[ 41.13s][moshi] 정말 겨울 하늘에서 ⟦⚡SPAN@42.82s: Sirius is the brightest star in the night sky with an apparent magnitude of −1.46.⟧ 두드러지게 보이죠. 시리우스는 지구에서 볼 수 있는 가장 밝은 별이며, 겉보기 등급은 마이너스 일 점 사육이에요.
+[ 50.39s][user ] 마이너스 일 점 사육… 와, 정말 구체적이네요.
+[ 55.00s][moshi] [laugh] 천문학적 측정은 종종 그렇답니다! 상대적인 밝기에 대한 것이거든요.
+[ 59.91s][user ] 맞아요. 시리우스는 어떤 별자리에 속해 있나요?
+[ 63.30s][moshi] ⟨ret@63.16s⟩ 시리우스는 잘 ⟦⚡SPAN@65.00s: Sirius is part of the constellation Canis Major, the Greater Dog.⟧ 알려진 별자리에 뚜렷하게 위치해 있어요. 시리우스는 큰개자리, 즉 카니스 마요르 별자리에 위치하고 있어요.
+[ 71.19s][user ] 큰개자리… 정말 멋진 이미지네요.
+[ 74.68s][moshi] 그렇지 않나요? 고대 문화에서는 별에서 동물을 자주 보았어요.
+[ 79.23s][user ] 시리우스 다음으로 밝은 별은 무엇인가요? ⟨ret@82.70s⟩
+[ 83.01s][moshi] ⟦⚡SPAN@83.20s: Canopus is the second brightest star in the night sky, with an apparent magnitude of −0.72.⟧ 시리우스 다음에는 또 다른 밝은 별이 빛나고 있어요. 카노푸스는 밤하늘에서 두 번째로 밝은 별이며, 겉보기 등급은 마이너스 제로 점 칠 이예요.
+[ 94.40s][user ] 카노푸스… 그런 별은 본 적이 없는 것 같아요.
+[ 98.42s][moshi] 조금 더 남쪽에 있어서 가시성은 위도에 따라 달라요.
+[103.74s][user ] 저는 시카고에 ⟨ret@105.07s⟩ 있어요.
+[105.46s][moshi] 시카고에서는 일부 ⟦⚡SPAN@107.07s: Chicago's latitude is 41.8781° N, making Canopus partially visible on the southern horizon.⟧ 별자리를 잘 볼 수 있어요. 시카고에서는 카노푸스가 남쪽 지평선 근처에서 부분적으로 보일 거예요.
+[113.67s][user ] 아, 그럼 보기 힘든가요?
+[115.16s][moshi] 그럴 수 있어요—찾기가 조금 어려울 수도 있어요.
+[118.28s][user ] 행성은 어때요? 오늘 밤에 보이는 행성이 있나요?
+[121.56s][moshi] ⟨ret@121.48s⟩ 몇몇 행성이 오늘 밤에 ⟦⚡SPAN@123.48s: (tool result) Jupiter is visible at 8:12 PM CST with an altitude of 35 degrees; Mars is visible at 11:57 PM CS⟧ 멋진 모습을 보여주고 있어요. 목성은 중앙 표준시로 밤 여덟 시 십이 분에, 화성은 밤 열한 시 오십칠 분에 보일 거예요.
+[131.41s][user ] 목성과 화성! 멋지네요. 고마워요, 모시.
+[135.50s][moshi] 천만에요! 밤하늘을 관찰하는 것은 정말 보람 있는 일이에요.

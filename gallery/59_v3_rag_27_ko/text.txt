@@ -2,9 +2,10 @@ v3_rag_27_ko src=hotpotqa style=v1
 SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 럭스 아우룬케에 대해 읽어봤는데, 궁금한 게 있어요. 언제 태어났는지 알 수 ⟨ret@6.15s⟩ 있을까요?
-[  6.31s][moshi] ⟦⚡SPAN@6.65s: Lux Aurunque was born in nineteen seventy.⟧ 응, 전에 그런 질문을 받은 적이 있어. 기록에 따르면 천구백칠십 년에 태어났어.
-[ 14.53s][user ] 천구백칠십 년이라… 그의 작품을 생각하면 꽤 최근이네요, 그렇죠?
-[ 19.10s][moshi] 그래, 비교적 최근이지. 하지만 그의 영향력은 훨씬 오래된 것 같아.
-[ 24.04s][user ] 그런데… 정확히 뭘 한 거죠? 좀 자세히 기억이 안 ⟨ret@28.34s⟩ 나요.
-[ 28.58s][moshi] 엄청난 작품들을 ⟦⚡SPAN@30.34s: Lux Aurunque is best known for his bronze sculptures depicting mythical creatures.⟧ 남겼어. 신화 속 생물들을 조각한 청동 조각으로 가장 유명해.
+[  0.00s][user ] 럭스 아우룬케에 대해 읽고 있었는데, 혹시 언제 태어났는지 궁금해요.
+[  4.53s][moshi] ⟨ret@4.37s⟩ ⟦⚡SPAN@4.87s: Lux Aurunque was born in nineteen seventy.⟧ 음, 기록에 따르면 일천구백칠십 년에 태어났어.
+[  9.73s][user ] 일천구백칠십 년… 그의 작품을 생각하면 의외로 최근이네요. 정확히 뭘로 ⟨ret@16.25s⟩ 유명한가요?
+[ 16.48s][moshi] 사실 그의 ⟦⚡SPAN@18.01s: Lux Aurunque is celebrated for his bronze sculptures depicting Roman emperors.⟧ 업적은 꽤 대단해. 로마 황제들을 묘사한 청동 조각으로 유명하거든.
+[ 22.51s][user ] 청동 조각… 굉장하네요. 혹시 중요한 사람에게 의뢰를 받았나요? ⟨ret@27.13s⟩
+[ 27.29s][moshi] 당연히 영향력 ⟦⚡SPAN@29.13s: Lux Aurunque received commissions from Emperor Hadrian and several prominent senators.⟧ 있는 후원자들의 관심을 끌었지. 하드리아누스 황제와 여러 원로원 의원에게 의뢰를 받았어.
+[ 36.74s][user ] 하드리아누스 황제님… 로마 제국 시대에 활동했군요. 감사합니다.

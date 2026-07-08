@@ -2,12 +2,15 @@ v3_rag_28_cs src=nq style=v2
 SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 그래서 정부 기관에 대해 읽다가 궁금해졌는데, 참전용사부(Department of Veterans Affairs)는 정확히 언제 설립됐어?
-[  7.55s][moshi] 좋은 질문이에요. 복무하신 분들을 지원한 역사를 추적하는 건 정말 중요하죠.
-[ 12.47s][moshi] ⟨ret@12.09s⟩ ⟦⚡SPAN@13.29s: The United States Department of Veterans Affairs was established on July 21, 1930, by executive order.⟧ 좀 더 역사적인 맥락을 말씀드릴게요. 참전용사부는 1930년 7월 21일에 행정 명령으로 설립됐습니다.
-[ 20.57s][user ] 1930년? 그거…상대적으로 최근 같지 않아? 그전에 참전용사들을 위한 프로그램은 없었어?
-[ 27.50s][moshi] 물론, 이전에도 비슷한 형태의 지원은 있었지만, 그 특정 부서 체제 아래에 공식적으로 존재하지는 않았습니다.
-[ 34.38s][moshi] ⟨ret@34.23s⟩ 참전용사부 이전에는 ⟦⚡SPAN@36.23s: Prior to 1930, veteran benefits were administered by the Bureau of War Risk Insurance and the Veterans Bureau.⟧ 지원 방식이 달랐어요. 1930년 이전에 참전용사 혜택은 전쟁 위험 보험국과 참전용사국에서 관리했습니다.
-[ 45.34s][user ] 근데 남북 전쟁 이후는 어땠어? 그때는 분명 뭔가 있었을 텐데—
-[ 49.70s][moshi] «interrupted» 네, 물론이죠—
-[ 50.69s][user ] «interrupts_prev» 그럼 남북 전쟁 직후 참전용사들은 어떤 지원을 받았어?
+[  0.00s][user ] 그래서, 참전용사부(Veterans Affairs department)는 언제 시작됐어? 날짜가 다르다고 ⟨ret@6.33s⟩ 들었거든.
+[  6.48s][moshi] 좋은 질문이세요. ⟦⚡SPAN@8.33s: The United States Department of Veterans Affairs was established on July 21, 1930, under President Herbert Hoo⟧ 사실 역사 자체가 조금 복잡하답니다.
+[ 10.70s][moshi] 참전용사부는 후버 대통령에 의해 천구백삼십년 칠월 이십일일에 설립되었어요.
+[ 17.52s][user ] 천구백삼십년? 좀… 늦은 것 같은데. 그전에 참전용사 혜택은 ⟨ret@22.62s⟩ 없었어?
+[ 22.77s][moshi] ⟦⚡SPAN@23.74s: Prior to 1930, the administration of veterans’ benefits fell under the Bureau of War Risk Insurance, created i⟧ 음, 혜택은 분명히 있었는데요. 천구백삼십년 이전에 전쟁위험보험국(Bureau of War Risk Insurance)이 천구백십칠년에 설립되어서 참전용사 혜택을 담당했어요.
+[ 33.68s][user ] 근데 남북전쟁 이후는 어땠어? 그 참전용사들을 위해서 뭔가 해줬을 거 아니야—
+[ 38.52s][moshi] «interrupted» —그 혜택을 관리했고—
+[ 39.61s][user ] «interrupts_prev» …남북전쟁 직후에 병원이나 연금을 ⟨ret@42.34s⟩ 만들었어?
+[ 42.73s][moshi] [sigh] 아주 ⟦⚡SPAN@44.34s: The first federal veterans’ hospital opened in 1866, and a system of disability pensions began in 1862.⟧ 중요한 지적이에요. 훨씬 더 이전 단계였죠.
+[ 47.16s][moshi] 최초의 참전용사 병원은 천구백육십육년에 개원했고, 연금은 천구백육십이년부터 시작되었어요.
+[ 53.84s][user ] 그러면, 우리가 아는 VA는 비교적 최근에 생긴 거지만, 참전용사들을 위한 지원은 훨씬 오래전부터 있었다는 거네?
+[ 62.12s][moshi] 정확해요. 복무하신 분들의 필요에 맞춰 진화해 온 과정이랍니다.

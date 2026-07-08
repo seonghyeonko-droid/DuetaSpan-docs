@@ -1,51 +1,49 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 혹시 “Mamma Mia”에 나오는 “My Love, My Life”를 누가 썼는지 아세요? 정말 아름다운 
-     6.42s  agent 발화 시작: 좋은 질문이세요. 정말 마음을 울리는 곡이죠, 안 그래요?
-     6.63s  user  발화 끝
-    10.10s  <ret> 발화 (turn2 첫 프레임)
-    10.25s  agent 발화 시작: <ret> 잠시 작곡가를 확인해 볼게요. “My Love, My Life”는 ABBA의 *Super Trou
-    10.44s  agent 발화 끝
-    11.86s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.02s]: Björn Ulvaeus wrote “My Love, My Life,” which appeared on the ABBA alb
-    20.12s  user  발화 시작: 아, 정말요? 저는 베니 앤더슨이 쓴 줄 알았어요.
-    20.31s  agent 발화 끝
-    23.63s  user  발화 끝
-    23.73s  agent 발화 시작: 흔히 있는 착오예요. 베니와 비외른은 협업을 많이 했으니까 헷갈릴 수 있어요.
-    28.26s  <ret> 발화 (turn5 첫 프레임)
-    28.57s  agent 발화 시작: <ret> 두 분의 협업에 대한 자세한 내용을 찾아 드릴까요? 베니 앤더슨과 비외른 울바에우스는 ABBA의 
-    28.78s  agent 발화 끝
-    29.46s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.64s]: Benny Andersson and Björn Ulvaeus formed the songwriting partnership t
-    35.09s  user  발화 시작: 네.
-    35.49s  user  발화 끝
-    38.12s  agent 발화 시작: 두 분의 창작 파트너십은 정말 놀라웠고, 그런 영원히 기억될 음악을 만들어 냈다고 생각해요.
-    38.31s  agent 발화 끝
-    44.28s  user  발화 시작: 혹시 기억을 잃는 것에 대한 노래를 쓴 적이 있을까요?
-    44.29s  agent 발화 끝
-    47.98s  agent 발화 시작: [laugh] 제 일을 생각하면 정말 재미있는 질문이네요! 기억은 복잡한 현상이에요.
-    48.08s  user  발화 끝
-    53.67s  <ret> 발화 (turn10 첫 프레임)
-    54.06s  agent 발화 시작: <ret> ABBA의 노래 중에 기억 상실을 직접적으로 다룬 곡이 있는지 찾아볼게요. 아쉽게도 ABBA의 노
-    54.28s  agent 발화 끝
-    55.67s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.59s]: (tool result) Current time in Honolulu is 08:17 AM on Friday, November
-    63.57s  user  발화 시작: 아쉽네요. 그래도 그들의 노래는 항상 너무… 감동적이에요.
-    63.71s  agent 발화 끝
-    67.76s  agent 발화 시작: 맞아요, 정말 많은 감정을 불러일으키죠. 그게 그 노래들이 오랫동안 사랑받는 이유인 것 같아요.
-    67.92s  user  발화 끝
-    72.80s  <ret> 발화 (turn13 첫 프레임)
-    73.03s  agent 발화 시작: <ret> 아마 그래서 직접적인 기억 관련 주제가 없어도 그렇게 공감되는 것 같아요. ABBA의 노래는 사랑
-    73.13s  agent 발화 끝
-    74.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.56s]: ABBA’s songs often explore themes of love, loss, and the complexities 
-    85.13s  agent 발화 끝
-    85.61s  user  발화 시작: 그럼 울바에우스는 곡을 쓰고 앤더슨은 가사를 썼던 건가요?
-    89.96s  agent 발화 시작: 꼭 그렇지는 않아요. 두 분은 곡과 가사 모두에 협력했고, 종종 양쪽 모두에 동등하게 기여했어요.
-    90.09s  user  발화 끝
-    97.00s  <ret> 발화 (turn16 첫 프레임)
-    97.24s  agent 발화 시작: <ret> 엄격하게 역할이 분담된 것이 아니라, 매우 유연한 파트너십이었어요. 울바에우스와 앤더슨은 종종 곡
-    97.38s  agent 발화 끝
-    99.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: Björn Ulvaeus and Benny Andersson frequently co-wrote both the music a
-   110.90s  user  발화 시작: 그렇군요, 이제 알겠어요. 설명해 주셔서 감사합니다!
-   111.01s  agent 발화 끝
-   114.70s  user  발화 끝
-   114.79s  agent 발화 시작: 천만에요. 음악과 기억의 복잡성에 대해 이야기하는 것은 언제나 즐거워요.
-   120.48s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. “Mamma Mia”에 나오는 “My Love, My Life”를 누가 썼는지 궁금하신가요? 정
+     7.01s  agent 발화 시작: 네, 좋은 질문이세요. 정말 감정을 잘 표현하는 노래인 것 같죠?
+     7.18s  user  발화 끝
+    11.00s  <ret> 발화 (turn2 첫 프레임)
+    11.15s  agent 발화 시작: <ret> 잠시 작곡 정보를 확인해 볼게요. “My Love, My Life”는 *Voulez-Vous* 앨
+    11.36s  agent 발화 끝
+    13.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: Björn Ulvaeus wrote “My Love, My Life”, which appeared on the 1979 alb
+    20.80s  user  발화 시작: 아, 흥미롭네요. 베니 앤더슨이 쓴 줄 알았어요.
+    21.02s  agent 발화 끝
+    23.98s  user  발화 끝
+    24.04s  agent 발화 시작: 흔히들 그렇게 생각하실 수 있어요. 두 분이 워낙 긴밀하게 협업하셨으니까요. 정말 훌륭한 작곡 파트너십을 이
+    31.91s  <ret> 발화 (turn5 첫 프레임)
+    32.23s  agent 발화 시작: <ret> 두 분의 파트너십에 대한 자세한 내용을 찾아 드릴까요? 베니 앤더슨과 비외른 울바에우스는 ABBA
+    32.44s  agent 발화 끝
+    33.11s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.19s]: Benny Andersson and Björn Ulvaeus wrote most of ABBA’s songs together,
+    40.56s  user  발화 시작: 네.
+    41.05s  user  발화 끝
+    44.40s  agent 발화 시작: 두 분의 다양한 음악 스타일을 조화롭게 섞는 능력이 정말 대단하다고 생각하지 않으세요?
+    44.62s  agent 발화 끝
+    49.53s  agent 발화 끝
+    49.56s  user  발화 시작: 비외른 울바에우스는 또 어떤 곡들을 썼나요?
+    52.76s  <ret> 발화 (turn9 첫 프레임)
+    52.83s  agent 발화 시작: <ret> 좋은 질문이세요. 그의 다른 작품들을 살펴보는 것도 좋을 것 같아요. 비외른 울바에우스는 “Dan
+    52.94s  user  발화 끝
+    53.72s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.69s]: Björn Ulvaeus also co-wrote “Dancing Queen,” “Waterloo,” and “The Winn
+    66.89s  agent 발화 끝
+    66.93s  user  발화 시작: 와, 다 명곡이네요! 음… 그러니까, 정말 유명한 곡들이에요.
+    71.25s  <ret> 발화 (turn11 첫 프레임)
+    71.49s  agent 발화 시작: <ret> 맞아요, 시간이 지나도 변치 않는 명곡들이죠. 음악은 정말 강력한 힘을 가지고 있네요.
+    71.65s  user  발화 끝
+    73.25s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.32s]: (tool result) Current time in Tokyo is 14:35 on November 15th.
+    76.68s  agent 발화 시작: 특정한 순간으로 돌아가게 만드는 노래의 힘은 신경학적인 관점에서 봐도 정말 흥미롭지 않나요?
+    76.81s  agent 발화 끝
+    82.73s  user  발화 시작: 음악이 기억에 영향을 미친다고 생각하세요?
+    82.80s  agent 발화 끝
+    85.85s  agent 발화 시작: 네, 물론이죠. 음악과 기억은 깊이 연결되어 있어요. 해마가 중요한 역할을 하죠.
+    85.96s  user  발화 끝
+    91.13s  <ret> 발화 (turn15 첫 프레임)
+    91.51s  agent 발화 시작: <ret> 그 연결고리에 대한 최근 연구 결과를 공유해 드릴까요? 연구에 따르면 음악은 특히 10대 시절에 
+    91.59s  agent 발화 끝
+    93.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.61s]: Studies show music can trigger autobiographical memories, especially s
+   102.59s  user  발화 시작: 그 말이 맞아요. 처음 노래를 들었을 때 어디에 있었는지 항상 기억하게 돼요.
+   102.78s  agent 발화 끝
+   107.71s  agent 발화 시작: 맞아요. 감정적인 공명이 그 기억을 강화해서 강력한 연관성을 만들어 내는 거죠.
+   107.87s  user  발화 끝
+   113.31s  agent 발화 끝

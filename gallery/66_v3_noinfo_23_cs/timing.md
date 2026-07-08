@@ -1,51 +1,63 @@
 # v3_noinfo_23_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 지난해 12월 24일 도쿄 날씨가 어땠어?
-     2.83s  <ret> 발화 (turn1 첫 프레임)
-     3.15s  agent 발화 시작: <ret> 알아볼게요. 지난해 12월 24일 도쿄는 맑은 하늘이었고, 최고 기온은 12도, 최저 기온은 5도
-     3.38s  user  발화 끝
-     4.19s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.68s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-     9.69s  user  발화 시작: 일본 알프스 1월 평균 적설량은 어때?
-     9.91s  agent 발화 끝
-    12.33s  <ret> 발화 (turn3 첫 프레임)
-    12.71s  agent 발화 시작: <ret> 조금 다른 지역이지만, 알아봐 드릴게요. 일본 알프스는 1월에 보통 350센티미터의 적설량을 기록
-    12.87s  user  발화 끝
-    14.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) The average snowfall in the Japanese Alps during January
-    20.02s  agent 발화 끝
-    20.48s  user  발화 시작: 와, 엄청 많네. 마쓰모토 근처에 괜찮은 스키 리조트 있어?
-    24.00s  <ret> 발화 (turn5 첫 프레임)
-    24.15s  agent 발화 시작: <ret> 마쓰모토는 산을 탐험하기 좋은 거점이에요. 마쓰모토 근처의 하쿠바 밸리는 200킬로미터가 넘는 스
-    24.36s  user  발화 끝
-    25.52s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.91s]: (tool result) Hakuba Valley is a popular ski resort near Matsumoto, wi
-    29.52s  user  발화 시작: 응.
-    30.01s  user  발화 끝
-    33.26s  agent 발화 시작: 파우더 스노우와 다양한 지형으로 유명하답니다.
-    33.41s  agent 발화 끝
-    35.42s  user  발화 시작: 리조트 내에 숙소가 있어? 아니면 시내에 머물러야 해?
-    36.26s  agent 발화 끝
-    38.99s  user  발화 끝
-    39.34s  agent 발화 시작: 하쿠바 밸리는 리조트와 하쿠바 마을 모두에 숙박 시설을 제공하고 있으며, 많은 호텔과 샬레가 있어요.
-    46.43s  agent 발화 끝
-    46.90s  user  발화 시작: 좋아. 2월 10일부터 2월 17일까지 두 명 숙박 가능한 호텔 방 좀 찾아줘.
-    51.52s  <ret> 발화 (turn11 첫 프레임)
-    51.91s  agent 발화 시작: <ret> 알겠습니다. 해당 날짜의 객실 상황을 확인해 볼게요. 호텔 코르티나에 해당 날짜에 더블룸이 있는데
-    51.95s  user  발화 끝
-    53.12s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.32s]: (tool result) Hotel Cortina in Hakuba Valley has a double room availab
-    61.08s  agent 발화 끝
-    61.11s  user  발화 시작: 괜찮네. 예약해 줘.
-    62.21s  <ret> 발화 (turn13 첫 프레임)
-    62.60s  agent 발화 시작: <ret> 네, 예약을 확인하고 있습니다. 호텔 코르티나 2월 10일부터 17일까지 숙박 예약이 완료되었고,
-    62.67s  user  발화 끝
-    63.49s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.19s]: (tool result) Reservation confirmed: Hotel Cortina, double room, Febru
-    73.45s  agent 발화 끝
-    73.50s  user  발화 시작: 좋아. 하쿠바에서 2월에 피는 특별한 고산 야생화가 있어?
-    77.75s  user  발화 끝
-    77.79s  agent 발화 시작: 좋은 질문이네요. 2월은 아직 꽤 춥기 때문에 꽃이 제한적이지만—
-    83.04s  <ret> 발화 (turn16 첫 프레임)
-    83.18s  agent 발화 시작: <ret> 고산 야생화가 피기에는 어려운 시기인데… 죄송하지만 2월에 하쿠바에서 피는 야생화에 대한 구체적인
-    83.25s  agent 발화 끝
-    84.48s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.49s]: (no information found)
-    91.25s  agent 발화 끝
-    92.76s  user  발화 시작: 아, 그래. 뭐, 도와줘서 고마워.
-    95.48s  user  발화 끝
+     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
+     2.89s  <ret> 발화 (turn1 첫 프레임)
+     3.20s  agent 발화 시작: <ret> 네, 해당 날짜의 과거 날씨 데이터를 확인해 볼게요… 12월 24일 도쿄는 맑은 하늘이었고, 최고
+     3.42s  user  발화 끝
+     4.25s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.50s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    11.92s  user  발화 시작: 음, 같은 날 삿포로는 어땠어?
+    12.19s  agent 발화 끝
+    13.57s  <ret> 발화 (turn3 첫 프레임)
+    13.96s  agent 발화 시작: <ret> 네, 삿포로의 해당 날짜 날씨를 확인해 드릴게요… 삿포로는 눈이 오는 날씨였고, 최고 기온은 영하
+    14.16s  user  발화 끝
+    15.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: (tool result) The weather in Sapporo on December twenty-fourth last ye
+    22.49s  agent 발화 끝
+    22.81s  user  발화 시작: 차가이 엄청 나네.
+    24.04s  agent 발화 시작: 네, 두 도시 간에 상당한 온도 차이가 있었네요. 물론 지리적 요인이 큰 역할을 합니다.
+    24.18s  user  발화 끝
+    29.83s  agent 발화 끝
+    30.91s  user  발화 시작: 삿포로에서 온천이 좋은 호텔 좀 찾아 줘.
+    33.36s  <ret> 발화 (turn7 첫 프레임)
+    33.76s  agent 발화 시작: <ret> 네, 삿포로에서 온천 시설이 있는 호텔을 검색해 볼게요… 호텔 삿포로 그랜드는 온천이 있고, 1박
+    34.00s  user  발화 끝
+    34.88s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.91s]: (tool result) Hotel Sapporo Grand is available with an onsen, priced a
+    42.24s  agent 발화 끝
+    42.44s  user  발화 시작: 2만 5천 엔… 괜찮네.
+    45.51s  agent 발화 시작: 네, 평판이 좋은 곳인 것 같아요. 많은 방문객들이 그곳의 전통적인 분위기를 즐깁니다.
+    45.66s  user  발화 끝
+    48.68s  user  발화 시작: 응.
+    49.09s  user  발화 끝
+    51.11s  agent 발화 끝
+    51.24s  user  발화 시작: 거기 1월 15일부터 2박 예약해 줘.
+    53.61s  <ret> 발화 (turn12 첫 프레임)
+    53.82s  user  발화 끝
+    53.84s  agent 발화 시작: <ret> 네, 예약 가능 여부를 확인하고 예약해 드릴게요… 호텔 삿포로 그랜드 예약이 1월 15일부터 17
+    54.97s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.40s]: (tool result) Reservation confirmed at Hotel Sapporo Grand for two nig
+    65.42s  user  발화 시작: 좋아! 혹시…
+    65.71s  agent 발화 끝
+    66.92s  agent 발화 시작: 아, 말씀드리려고 했는데—
+    67.17s  user  발화 끝
+    68.18s  user  발화 시작: …1월에 삿포로 근처에 괜찮은 하이킹 코스 있어?
+    68.96s  agent 발화 끝
+    70.99s  <ret> 발화 (turn16 첫 프레임)
+    71.37s  user  발화 끝
+    71.38s  agent 발화 시작: <ret> 오, 좋은 질문이에요! 1월에는 하이킹이 어려울 수 있지만, 선택지가 있습니다…
+    72.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) The Mount Moiwa trail is open in January, rated moderate
+    76.24s  agent 발화 시작: 모이와 산 등산로는 1월에도 개방되어 있고, 난이도는 보통이며, 하이킹하는 데 약 2시간이 걸립니다.
+    76.38s  agent 발화 끝
+    83.23s  agent 발화 끝
+    83.97s  user  발화 시작: 2시간이면 괜찮겠어.
+    85.55s  agent 발화 시작: 네, 인기 있는 코스이며, 겨울에도 도시의 멋진 전망을 제공합니다.
+    85.76s  user  발화 끝
+    90.55s  agent 발화 끝
+    90.88s  user  발화 시작: 1월 10일에 하이킹 부츠 챙기라고 알림 설정해 줘.
+    93.79s  <ret> 발화 (turn21 첫 프레임)
+    94.10s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요… 1월 10일 오전 9시에 하이킹 부츠를 챙기라는 알림을 설정했습니다.
+    94.12s  user  발화 끝
+    95.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) Reminder set for January tenth at nine AM: Pack hiking b
+   100.31s  user  발화 시작: 고마워, 정말 큰 도움이 됐어!
+   100.53s  agent 발화 끝
+   102.45s  agent 발화 시작: 천만에요. 여행 계획에 도움을 드릴 수 있어서 기쁩니다. 알프스 지역에 대해 이야기하는 것을 좋아합니다.
+   102.57s  user  발화 끝
+   109.72s  agent 발화 끝

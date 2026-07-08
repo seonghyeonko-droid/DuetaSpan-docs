@@ -2,25 +2,23 @@ v3_abs_22_en src=squad2 style=abstain
 SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.82s⟩ hate?
-[  2.97s][moshi] That’s an interesting ⟦⚡SPAN@4.58s: (no information found)⟧ question, delving into political philosophy.
-[  6.69s][moshi] I’m afraid I don’t have a definitive answer to that question at this time.
-[ 10.47s][user ] Oh. Okay. Well, what about the earliest documented case of Alzheimer’s?
-[ 16.41s][moshi] ⟨ret@16.35s⟩ Exploring the history ⟦⚡SPAN@18.19s: Alois Alzheimer first described the disease in 1906, detailing the case of Auguste Deter.⟧ of neurological conditions is always fascinating. Alois Alzheimer described the disease in nineteen-oh-six, focusing on Auguste Deter’s case.
-[ 27.22s][user ] Auguste Deter… was she ⟨ret@29.37s⟩ young?
-[ 29.50s][moshi] Yes, she was ⟦⚡SPAN@30.73s: Auguste Deter was fifty-one years old when she died in 1906.⟧ remarkably young for the symptoms she presented.
-[ 32.94s][moshi] Auguste Deter was fifty-one years old when she passed away in nineteen-oh-six.
-[ 37.80s][user ] That's so sad. Uh, what’s the population of Tokyo ⟨ret@40.86s⟩ right now?
-[ 41.17s][moshi] Looking up ⟦⚡SPAN@42.70s: (tool result) Tokyo has a population of fourteen million, two hundred and sixty-one thousand, two hundred and ⟧ current population statistics is straightforward. Tokyo currently has a population of fourteen million, two hundred and sixty-one thousand, two hundred and thirty-four people.
-[ 53.46s][user ] Wow, that's… a lot of people. What’s the highest mountain in ⟨ret@58.18s⟩ Japan?
-[ 58.33s][moshi] Japan’s geography is ⟦⚡SPAN@60.18s: Mount Fuji is the highest mountain in Japan, standing at three thousand seven hundred seventy-six meters.⟧ quite striking, with many impressive peaks. Mount Fuji is the highest mountain in Japan, reaching three thousand seven hundred seventy-six meters.
-[ 68.90s][user ] Three thousand… impressive. Could you find me a good Italian restaurant ⟨ret@73.84s⟩ nearby?
-[ 73.99s][moshi] I can certainly help ⟦⚡SPAN@75.68s: (tool result) Bella Notte is 0.8 miles away, rated 4.5 stars, and open until 10 PM.⟧ with that culinary search. Bella Notte is point-eight miles away, has a four-point-five-star rating, and closes at ten PM.
-[ 83.54s][user ] Bella Notte… sounds nice. I— I mean, does music affect memory?
-[ 88.80s][moshi] Absolutely, music has a powerful connection to how we remember things.
-[ 93.42s][user ] How so?
-[ 94.32s][moshi] Music can evoke strong emotional responses, which are key to memory consolidation.
-[100.26s][user ] That makes sense. I wonder if… [interrupting] does that work with smells too?
-[105.95s][moshi] «interrupted» That’s a very insightful connection you’re making—
-[108.31s][user ] «interrupts_prev» like, can smells bring back memories as well?
-[111.19s][moshi] Yes, smells are strongly linked to the amygdala, which processes emotions and memory.
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.51s⟩ hate?
+[  2.66s][moshi] That’s ⟦⚡SPAN@3.47s: (no information found)⟧ a very direct question.
+[  4.74s][moshi] I’m afraid I don’t have a specific answer to that question. It’s not a widely documented detail.
+[ 10.43s][user ] Hmm. Okay. What about the oldest continuously operating democracy?
+[ 14.70s][moshi] ⟨ret@14.63s⟩ That's ⟦⚡SPAN@15.67s: San Marino is considered the oldest surviving sovereign state and constitutional republic in the world, establ⟧ a fascinating historical inquiry. San Marino is considered the oldest continuously operating republic, dating back to 301 AD.
+[ 24.26s][user ] Wow, really? That’s… incredible. I didn’t know that.
+[ 27.54s][moshi] [happy] It truly is a remarkable example of enduring governance. It's a small country with a big history.
+[ 35.14s][user ] What’s the population of San Marino ⟨ret@37.38s⟩ right now?
+[ 37.77s][moshi] Let ⟦⚡SPAN@38.50s: (tool result) Population: 33,642 (2023 estimate). Area: 61 square kilometers. Density: 551 people per square k⟧ me quickly check the current figures. The current population of San Marino is estimated to be thirty-three thousand six hundred forty-two.
+[ 46.64s][user ] That's tiny! Smaller than my town.
+[ 49.03s][moshi] It certainly is a microstate, but it’s incredibly well-preserved.
+[ 53.47s][user ] Does San Marino have a ⟨ret@55.35s⟩ military?
+[ 55.66s][moshi] That's a ⟦⚡SPAN@56.71s: San Marino does not have an army, but it maintains a small Gendarmerie for policing and ceremonial duties.⟧ reasonable question, given its size. San Marino does not have a formal army, relying on a Gendarmerie for security.
+[ 60.49s][user ] «backchannel» Uh-huh.
+[ 63.93s][user ] Interesting. So, the Gendarmerie handles everything?
+[ 67.57s][moshi] Essentially, yes. They fulfill both policing and ceremonial roles within the republic. It’s a unique arrangement.
+[ 75.25s][user ] What’s the main industry in San ⟨ret@77.36s⟩ Marino?
+[ 77.75s][moshi] That's a ⟦⚡SPAN@78.80s: San Marino's main industries are finance, industry, services, and tourism, contributing significantly to its G⟧ good question, looking at their economy. Finance, industry, services, and tourism are the key industries supporting San Marino’s economy.
+[ 85.91s][user ] Tourism, huh? I can see that. It sounds lovely.
+[ 89.72s][moshi] It is. The views are quite spectacular, and the history is palpable. As a neurologist, I find the longevity of its traditions particularly fascinating.

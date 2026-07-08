@@ -1,35 +1,35 @@
 v3_selfc_07_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드크비스트입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주시면 될까요?
-[  3.41s][moshi] ⟨ret@3.25s⟩ 응, 6월 15일 오후 ⟦⚡SPAN@4.93s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ 두 시에 방문 예약을 했어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[  6.79s][user ] 그날 가장 빠른 ⟨ret@8.41s⟩ 시간이에요?
-[  8.81s][moshi] 잠깐만, 그 부동산의 ⟦⚡SPAN@10.41s: (tool result) The Grandview Lofts has viewings available at ten AM, noon, and two PM on June fifteenth.⟧ 예약 가능 시간을 확인해 볼게. 6월 15일에 오전 열 시, 정오, 오후 두 시에 예약을 할 수 있어.
-      CALL: {"function": "Homes_2CheckAvailability", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 17.25s][user ] 사실, 오후 늦게로 좀 미뤄 줄 수 있을까요— 그러니까, 가장 늦은 ⟨ret@22.28s⟩ 시간으로요?
-[ 22.60s][moshi] 물론이지, 가장 ⟦⚡SPAN@24.28s: (tool result) The Grandview Lofts has viewings available at ten AM, noon, and two PM on June fifteenth.⟧ 늦은 시간을 찾아 줄게. 가장 늦은 예약 시간은 6월 15일 오후 두 시야.
-      CALL: {"function": "Homes_2CheckAvailability", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 31.28s][user ] 좋아요. 그리고 그랜드뷰 로프트 가는 길을 알려 줄 수 ⟨ret@34.90s⟩ 있어요?
-[ 35.14s][moshi] 응, 알려 ⟦⚡SPAN@36.66s: (tool result) Directions to The Grandview Lofts are: head north on Elm Street, then turn right on Oak Avenue.⟧ 줄게. 엘름 스트리트를 북쪽으로 가다가 오크 애비뉴에서 오른쪽으로 꺾어.
-      CALL: {"function": "Navigation_2GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 41.06s][user ] 그렇게 간단하군요. 그곳의 임대 신청 절차는 어떤가요?
-[ 44.58s][moshi] 신청 절차는 보통 신용 조회와 소득 증명을 포함해.
-[ 49.04s][user ] 신청 수수료가 있나요?
-[ 51.10s][moshi] ⟨ret@51.02s⟩ 그랜드뷰 로프트의 신청 ⟦⚡SPAN@52.94s: (tool result) The application fee for The Grandview Lofts is fifty dollars.⟧ 수수료를 찾아 볼게. 신청 수수료는 오십 달러야.
-      CALL: {"function": "Homes_2GetApplicationFee", "arguments": {"property": "The Grandview Lofts"}}
-[ 55.63s][user ] 오십 달러— 그건 좀—
-[ 57.11s][moshi] «interrupted» 이 지역의 부동산에서는 흔히 있는 가격이야, 감안하면—
-[ 61.27s][user ] «interrupts_prev» 만약 제 소득이 기준보다 약간 낮으면 보증인이 필요한가요?
-[ 65.80s][moshi] 소득이 기준에 미치지 못하면 보증인이 필요할 수도 있어. 구체적인 상황에 따라 달라져.
-[ 71.72s][user ] 알겠습니다. 주차는요? 주차장이 포함되어 ⟨ret@74.89s⟩ 있나요?
-[ 75.29s][moshi] 그랜드뷰 로프트의 ⟦⚡SPAN@76.33s: (tool result) Parking at The Grandview Lofts is available for seventy-five dollars per month.⟧ 주차 상황을 확인해 볼게. 주차는 한 달에 칠십오 달러야.
-      CALL: {"function": "Homes_2GetParkingInfo", "arguments": {"property": "The Grandview Lofts"}}
-[ 79.59s][user ] 한 달에 칠십오 달러나 하네? 좀 비싸네요.
-[ 82.48s][moshi] 거기는 좋은 위치라서, 그 비용이 반영되는 경우가 많아.
-[ 87.20s][user ] 맞아요. 그랜드뷰 로프트에 반려동물을 키울 수 있나요?
-[ 90.40s][moshi] ⟨ret@90.32s⟩ 그 건물에 ⟦⚡SPAN@91.76s: (tool result) The Grandview Lofts allows cats and small dogs with a one-time fee of three hundred dollars.⟧ 대한 반려동물 정책을 알아 볼게. 고양이와 작은 개는 삼백 달러의 수수료를 내면 허용돼.
-      CALL: {"function": "Homes_2GetPetPolicy", "arguments": {"property": "The Grandview Lofts"}}
-[ 97.62s][user ] 삼백 달러… 알겠습니다. 임대 조건은 어떤가요?
-[101.84s][moshi] 보통 임대 기간은 12개월인데, 6개월 옵션을 제공하는 경우도 있어.
+[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
+[  3.73s][moshi] ⟨ret@3.57s⟩ 응, 6월 ⟦⚡SPAN@4.85s: (tool result) A viewing at The Grandview Lofts is confirmed for June fifteenth at two PM.⟧ 15일 오후 두 시에 그랜드뷰 로프트 방문 예약을 했어.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
+[  8.69s][user ] 그 주소로 가는 길 안내를 보내 주실 수 ⟨ret@12.18s⟩ 있나요?
+[ 12.57s][moshi] 당연히 가능하지. 그랜드뷰 ⟦⚡SPAN@14.18s: (tool result) Directions to The Grandview Lofts are: head north on Elm Street, turn right onto Oak Avenue, and⟧ 로프트 가는 길은 엘름 길을 북쪽으로 가고, 오크 길에서 오른쪽으로 틀면 오크 애비뉴 일 이 삼 번지에 있어.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
+[ 20.79s][user ] 도움이 많이 되네요. 그곳까지 운전하는 데 얼마나 ⟨ret@24.55s⟩ 걸릴까요?
+[ 24.95s][moshi] 여행 시간을 알아볼게. 그랜드뷰 ⟦⚡SPAN@26.55s: (tool result) The drive to The Grandview Lofts is estimated to take fifteen minutes.⟧ 로프트까지 가는 데 대략 십오 분 정도 걸릴 거야.
+      CALL: {"function": "Navigation_2_GetTravelTime", "arguments": {"destination": "The Grandview Lofts"}}
+[ 30.66s][user ] 알겠습니다, 좋네요. 그리고 그곳 주차 상황은 어떤가요?
+[ 34.64s][moshi] 주차 공간이 좀 부족할 수 있는데, 오크 애비뉴 길가에 주차할 수 있고, 근처에 유료 주차장도 있어.
+[ 42.59s][user ] 혹시 나중에 무언가를 사려고 한다면 근처에 식료품점이 있나요?
+[ 47.10s][moshi] 응, 있어!
+[ 48.72s][moshi] ⟨ret@48.65s⟩ 근처에 ⟦⚡SPAN@49.85s: (tool result) Fresh Foods Market is a five-minute walk from The Grandview Lofts.⟧ 식료품점이 있는데— 프레시 푸드 마켓은 그랜드뷰 로프트에서 도보로 오 분 거리에 있어.
+      CALL: {"function": "Search_2_FindNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
+[ 55.50s][user ] 훌륭하네요. 저는 블리커 스트리트에 있는 곳도 보고 있는데요…
+[ 59.77s][moshi] 아, 다른 매물이네. 블리커 스트리트 어느 주소를 보고 있는 거야?
+[ 65.73s][user ] 사십이 블리커 스트리트예요. 그곳도 방문 예약을 할 수 ⟨ret@70.00s⟩ 있을까요?
+[ 70.24s][moshi] 물론이지, ⟦⚡SPAN@71.12s: (tool result) A viewing at 42 Bleecker Street is confirmed for June eighteenth at ten AM.⟧ 그곳 방문 예약을 해 볼게. 6월 십팔일 오전 열 시에 사십이 블리커 스트리트 방문 예약을 했어.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "date": "June eighteenth"}}
+[ 78.00s][user ] 완벽하네요. 그런데 사실… 블리커 스트리트는 6월 십칠일이 더 좋을 것 같아요.
+[ 84.51s][moshi] ⟨ret@84.35s⟩ ⟦⚡SPAN@84.85s: (tool result) The viewing at 42 Bleecker Street is now scheduled for June seventeenth at ten AM.⟧ 그럼 바꿔 줄게— 사십이 블리커 스트리트 방문 예약을 6월 십칠일 오전 열 시로 변경했어.
+      CALL: {"function": "Homes_2_RescheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "oldDate": "June eighteenth", "newDate": "June seventeenth"}}
+[ 89.93s][user ] 좋아요, 감사합니다. 블리커 스트리트 아파트의 면적은 ⟨ret@94.08s⟩ 얼마인가요?
+[ 94.40s][moshi] 자세한 ⟦⚡SPAN@96.08s: (tool result) 42 Bleecker Street is 750 square feet with one bedroom and one bathroom.⟧ 정보를 찾아볼게. 사십이 블리커 스트리트 아파트는 칠백오십 평방피트이고, 침실 하나와 욕실 하나가 있어.
+      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "42 Bleecker Street"}}
+[105.47s][user ] 좋은 소식이네요. 그럼 그랜드뷰 로프트는 면적이 ⟨ret@109.58s⟩ 얼마인가요?
+[109.81s][moshi] 그 ⟦⚡SPAN@110.94s: (tool result) The Grandview Lofts are 900 square feet with two bedrooms and two bathrooms.⟧ 정보를 확인해 볼게. 그랜드뷰 로프트는 구백 평방피트이고, 침실 두 개와 욕실 두 개가 있어.
+      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
+[117.54s][user ] 음, 알겠습니다. 상당히 차이가 크네요. 많은 도움 주셔서 감사합니다.
+[122.22s][moshi] 천만에. 이 방문 예약을 도와드릴 수 있어서 기뻐.

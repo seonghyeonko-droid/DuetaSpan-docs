@@ -2,9 +2,10 @@ v3_rag_27_en src=hotpotqa style=v1
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about Lux Aurunque, and I’m curious—when was he ⟨ret@4.38s⟩ born?
-[  4.60s][moshi] That’s a question ⟦⚡SPAN@5.74s: Lux Aurunque was born in nineteen seventy.⟧ I’ve encountered before. He was born in nineteen seventy, according to the records.
-[  9.96s][user ] Nineteen seventy… that’s quite recent, isn’t it? Considering his work.
-[ 14.38s][moshi] It is relatively recent, yes. His impact feels much older, though.
-[ 18.62s][user ] But… what exactly *did* he do? I’m a bit hazy on the details.
-[ 23.97s][moshi] ⟨ret@23.90s⟩ He left ⟦⚡SPAN@24.86s: Lux Aurunque is best known for his bronze sculptures depicting mythical creatures.⟧ behind a remarkable body of work. He is best known for his bronze sculptures of mythical creatures.
+[  0.00s][user ] I was just reading about Lux Aurunque, and I’m curious—when was he ⟨ret@4.92s⟩ born?
+[  5.15s][moshi] That’s an interesting question, ⟦⚡SPAN@6.92s: Lux Aurunque was born in nineteen seventy.⟧ delving into historical figures. He was born in nineteen seventy, according to available records.
+[ 12.55s][user ] Nineteen seventy… that’s surprisingly recent, considering his work. What was he known for, exactly?
+[ 19.03s][moshi] ⟨ret@18.97s⟩ His ⟦⚡SPAN@19.93s: Lux Aurunque is celebrated for his bronze sculptures depicting Roman emperors.⟧ contributions are quite remarkable, actually. He is celebrated for bronze sculptures portraying Roman emperors.
+[ 25.66s][user ] Bronze sculptures… that sounds impressive. Was he commissioned by anyone ⟨ret@31.23s⟩ important?
+[ 31.46s][moshi] He ⟦⚡SPAN@32.27s: Lux Aurunque received commissions from Emperor Hadrian and several prominent senators.⟧ certainly attracted the attention of influential patrons. He received commissions from Emperor Hadrian and several senators.
+[ 39.83s][user ] Hadrian, huh? So he worked during the Roman Empire—that makes sense. Thank you.

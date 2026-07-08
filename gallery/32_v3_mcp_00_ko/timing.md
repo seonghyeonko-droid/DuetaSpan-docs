@@ -1,27 +1,21 @@
 # v3_mcp_00_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 에펠탑 파리 지도를 알려 주실 수 있을까요?
-     2.26s  <ret> 발화 (turn1 첫 프레임)
-     2.56s  agent 발화 시작: <ret> 네, 랜드마크 위치를 찾는 건 익숙한 일입니다. 에펠탑의 좌표는 위도 사십팔 점 팔오팔사, 경도 
-     2.77s  user  발화 끝
-     3.38s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.68s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
-    11.50s  agent 발화 끝
-    11.76s  user  발화 시작: 그럼 뉴욕에 있는 엠파이어 스테이트 빌딩은 어떠세요?
-    15.11s  <ret> 발화 (turn3 첫 프레임)
-    15.51s  agent 발화 시작: <ret> 유명한 건축물을 비교하는 건 언제나 흥미로운 일이에요. 엠파이어 스테이트 빌딩의 좌표는 위도 사십
-    15.60s  user  발화 끝
-    16.15s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.66s]: (tool result) The Empire State Building is located at latitude 40.7484
-    27.10s  agent 발화 끝
-    27.90s  user  발화 시작: 두 건물 사이의 거리를 알려 주시겠어요?
-    30.96s  agent 발화 시작: 좋은 질문이세요—
-    31.09s  user  발화 끝
-    32.11s  <ret> 발화 (turn6 첫 프레임)
-    32.26s  agent 발화 시작: <ret> 두 랜드마크 사이의 거리는 삼천구백사십팔 마일입니다.
-    32.30s  agent 발화 끝
-    33.79s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.74s]: (tool result) The distance between the Eiffel Tower and the Empire Sta
-    35.89s  user  발화 시작: 와, 정말 멀네요. 감사합니다!
-    36.00s  agent 발화 끝
-    38.75s  user  발화 끝
-    38.78s  agent 발화 시작: 정말 그렇습니다.
-    40.11s  agent 발화 끝
+     0.00s  user  발화 시작: 파리 에펠탑의 좌표를 알려 주실 수 있을까요?
+     3.23s  <ret> 발화 (turn1 첫 프레임)
+     3.54s  agent 발화 시작: <ret> 네, 명소 위치를 찾는 건 제가 많이 해 봤습니다. 에펠탑의 좌표는 북위 사십팔 점 팔오팔사 도,
+     3.60s  user  발화 끝
+     4.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.79s]: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.
+    13.60s  agent 발화 끝
+    13.76s  user  발화 시작: 알겠습니다. 혹시 그 근처에 있는 호텔을 찾아 주실 수 있을까요?
+    18.85s  <ret> 발화 (turn3 첫 프레임)
+    19.24s  agent 발화 시작: <ret> 네, 근처 숙소를 찾아 드릴 수 있습니다. 플라자 아테네는 천오백 달러이고, 호텔 라파엘은 천이백
+    19.37s  user  발화 끝
+    20.05s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.79s]: (tool result) Hotel Plaza Athénée is 0.7 miles away, with a price of $
+    28.28s  agent 발화 끝
+    28.89s  user  발화 시작: 호텔 라파엘에 오늘 밤 방을 예약해 주세요.
+    32.20s  <ret> 발화 (turn5 첫 프레임)
+    32.35s  agent 발화 시작: <ret> 예약을 진행해 드리겠습니다.
+    32.49s  user  발화 끝
+    33.96s  ⚡SPAN 주입 [d'=1.76s / d_lead=1.89s]: (tool result) Your reservation at Hotel Raphael is confirmed for one n
+    34.24s  agent 발화 끝

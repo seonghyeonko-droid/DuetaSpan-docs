@@ -2,8 +2,8 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: When was the printing press invented in Europe, specifically
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> That's a fascinating question, tracing the roots of in
-     3.79s  user  발화 끝
-     5.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: The printing press was invented in Europe around 1440.
-    13.30s  agent 발화 끝
+     3.14s  <ret> 발화 (turn1 첫 프레임)
+     3.37s  agent 발화 시작: <ret> That’s a foundational question for understanding moder
+     3.65s  user  발화 끝
+     4.98s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.91s]: The printing press was invented in Europe around 1440.
+    12.16s  agent 발화 끝

@@ -1,31 +1,25 @@
 # v3_to_ot_11_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I was wondering, do you know when the A's were last no-hit? 
-     5.46s  <ret> 발화 (turn1 첫 프레임)
-     5.85s  agent 발화 시작: <ret> That's a good question, and a frustrating experience f
-     5.97s  user  발화 끝
-     7.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.66s]: <The last time the Oakland Athletics were no-hit was April 21, 2018.>
-    15.04s  user  발화 시작: Wow, that *was* a while ago. Who pitched it?
-    15.16s  agent 발화 끝
-    18.56s  <ret> 발화 (turn3 첫 프레임)
-    18.80s  agent 발화 시작: <ret> I can certainly look that up for you.
-    18.89s  user  발화 끝
-    20.08s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.63s]: <James Paxton of the Seattle Mariners pitched a no-hitter against the 
-    21.34s  agent 발화 시작: James Paxton, pitching for the Seattle Mariners, threw the n
-    21.43s  agent 발화 끝
-    28.06s  agent 발화 끝
-    28.25s  user  발화 시작: Was he a rookie then?
-    29.81s  agent 발화 시작: That’s a really interesting point—
-    29.86s  user  발화 끝
-    31.39s  user  발화 시작: No, I meant, was Paxton early in his career at that point?
-    32.02s  agent 발화 끝
-    35.55s  agent 발화 시작: He wasn't a rookie, but he was still developing.
-    35.70s  user  발화 끝
-    36.45s  user  발화 시작: Uh-huh.
-    37.09s  user  발화 끝
-    38.23s  agent 발화 시작: Paxton was in his fourth major league season in two thousand
-    38.31s  agent 발화 끝
-    46.02s  agent 발화 끝
-    46.03s  user  발화 시작: Hmm, okay. Thanks, that's really helpful.
-    49.17s  user  발화 끝
+     0.00s  user  발화 시작: I was wondering, do you happen to know when the Oakland A’s 
+     6.54s  <ret> 발화 (turn1 첫 프레임)
+     6.93s  agent 발화 시작: <ret> That’s a good baseball question, and a surprisingly sp
+     7.04s  user  발화 끝
+     8.38s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.44s]: <The last time the Oakland Athletics were no-hit was April 21, 2018.>
+    17.02s  user  발화 시작: Wow, 2018… that *is* a while ago.
+    17.14s  agent 발화 끝
+    20.85s  user  발화 끝
+    21.04s  agent 발화 시작: It is quite a span, yes. Those games are always memorable fo
+    23.75s  user  발화 시작: Uh-huh.
+    24.53s  user  발화 끝
+    28.54s  <ret> 발화 (turn5 첫 프레임)
+    28.77s  agent 발화 시작: <ret> Thinking about pitching dominance— Mike Fiers, pitchin
+    28.83s  agent 발화 끝
+    29.66s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.83s]: <The pitcher who threw the no-hitter against the A’s was Mike Fiers of
+    37.44s  agent 발화 끝
+    37.58s  user  발화 시작: Wait, Fiers? Didn't he play for the A's before that?
+    40.97s  <ret> 발화 (turn7 첫 프레임)
+    41.04s  agent 발화 시작: <ret> You're right to ask— Yes, Mike Fiers actually pitched 
+    41.19s  user  발화 끝
+    41.47s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.76s]: <Mike Fiers pitched for the Oakland Athletics from 2015 to 2017.>
+    49.84s  agent 발화 끝

@@ -3,13 +3,13 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  4.76s][moshi] ⟨ret@4.69s⟩ Certainly, I ⟦⚡SPAN@6.13s: (tool result) Four files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender.jpg", "Nice_Beach.jpg", and ⟧ can locate those images for you. I’ve found four pictures from your France trip last year, excluding thumbnails.
-      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": "2023", "exclude": "thumbnails"}}
-[ 13.84s][user ] Oh, great! Can you send “Paris_Eiffel_Tower.jpg” to my husband, David?
-[ 18.51s][moshi] ⟨ret@18.20s⟩ Absolutely, ⟦⚡SPAN@19.16s: (tool result) The file "Paris_Eiffel_Tower.jpg" was sent to David successfully.⟧ I can send that image right away. The image has been sent to David.
-      CALL: {"function": "send_file", "arguments": {"recipient": "David", "filename": "Paris_Eiffel_Tower.jpg"}}
-[ 23.10s][user ] Perfect, thank you. Uh, what was the weather like in Nice on July fifteenth?
-[ 27.58s][moshi] Let me check on that for you.
-[ 29.59s][user ] Okay, sounds good.
-  ⟦⚡지연 SPAN 도착@30.06s: (tool result) The weather in Nice on July fifteenth, 2023 was twenty-eight degrees Celsius and sunny.⟧
-[ 31.01s][moshi] «deferred_result» ⟨ret@31.01s⟩ Right, I have that weather information now. On July fifteenth, 2023, Nice had twenty-eight degrees Celsius and sunshine.
+[  4.73s][moshi] ⟨ret@4.66s⟩ Certainly, I ⟦⚡SPAN@6.10s: (tool result) Three image files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender_Fields.png", and "Nic⟧ can locate those images for you. I found three pictures from your France trip last year—Eiffel Tower, lavender fields, and a beach scene.
+      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": 2023, "exclude": "thumbnails"}}
+[ 15.42s][user ] Oh, great! And can you send the Paris one to my husband, David?
+[ 19.32s][moshi] ⟨ret@19.01s⟩ Sending ⟦⚡SPAN@19.97s: (tool result) The file "Paris_Eiffel_Tower.jpg" was successfully sent to David's email address.⟧ photos is something I can easily handle. The Eiffel Tower photo has been sent to David’s email.
+      CALL: {"function": "send_file", "arguments": {"recipient": "David", "file": "Paris_Eiffel_Tower.jpg"}}
+[ 26.09s][user ] Perfect, thank you! I— I mean, do you know if there are any good glacier tours near Chamonix?
+[ 31.53s][moshi] That’s a wonderful area for glacial exploration, actually. Let me check on availability for tours near Chamonix; it's a popular spot.
+[ 41.48s][user ] Okay, sounds good.
+  ⟦⚡지연 SPAN 도착@41.66s: (tool result) A three-hour Mer de Glace tour is available tomorrow at 10:00 AM, costing 120 euros per person.⟧
+[ 42.61s][moshi] «deferred_result» ⟨ret@42.61s⟩ Right, I have an update on those tours now. A Mer de Glace tour is available tomorrow at ten AM for one hundred and twenty euros.

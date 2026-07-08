@@ -1,51 +1,45 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 야, 데미 로바토 새 앨범 언제 나와? 올해 나온다고 들었는데.
-     3.68s  agent 발화 시작: 아, 앨범 발매일 추적하는 거 쉽지 않아, 자꾸 바뀌거든.
-     3.84s  user  발화 끝
-     6.82s  <ret> 발화 (turn2 첫 프레임)
-     7.05s  agent 발화 시작: <ret> 잠깐만 발매 스케줄 확인해 볼게… 걔 *Confident* 앨범은 2015년 10월에 나왔어, 네
-     7.24s  agent 발화 끝
-     8.02s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.40s]: Demi Lovato’s album, *Confident*, was released in October 2015.
-    13.00s  user  발화 시작: 오, 그래? 2015년 10월이네. 엄청 오래됐네! 지금은 뭐 하고 있어?
-    13.40s  agent 발화 끝
-    17.89s  <ret> 발화 (turn4 첫 프레임)
-    18.28s  agent 발화 시작: <ret> 하고 있어! 데미는 요즘 새로운 소리랑 프로젝트를 탐구하느라 바빠.
-    18.33s  user  발화 끝
-    19.01s  ⚡SPAN 주입(IRRELEVANT) [d'=1.12s / d_lead=4.71s]: (tool result) AAPL stock is currently trading at 170.34 USD, up 0.52% 
-    22.92s  agent 발화 시작: 아티스트가 새로운 창작 영역으로 나아가는 건 언제나 흥미진진하지, 그렇지 않아?
-    22.99s  agent 발화 끝
-    28.84s  agent 발화 끝
-    29.77s  user  발화 시작: 그래, 완전 그래. 걔 옛날 앨범은? 첫 앨범이 뭔데?
-    33.14s  <ret> 발화 (turn7 첫 프레임)
-    33.21s  agent 발화 시작: <ret> 좋은 질문이야, 아티스트의 시작을 거슬러 올라가는 건… 걔 첫 앨범 *Don’t Forget*은 
-    33.42s  user  발화 끝
-    35.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.25s]: Demi Lovato’s debut album, *Don’t Forget*, was released in September 2
-    41.97s  agent 발화 끝
-    42.45s  user  발화 시작: 와, 2008년! 진짜 오래됐네. 거의 기억도 안 나.
-    46.13s  agent 발화 시작: [laugh] 시간 진짜 빠르지, 안 그래? 내가 혜성을 추적하던 게 어제 같은데.
-    46.29s  user  발화 끝
-    52.34s  user  발화 시작: 혜성? 너 천문학자야?
-    52.52s  agent 발화 끝
-    54.27s  agent 발화 시작: 응, 맞아. 밤하늘 아래서 밤을 보내면 관점이 생기거든.
-    54.46s  user  발화 끝
-    58.61s  user  발화 시작: 멋있다. 그럼, 데미 *Confident* 앨범은 잘 됐어?
-    59.27s  agent 발화 끝
-    62.18s  <ret> 발화 (turn13 첫 프레임)
-    62.26s  agent 발화 시작: <ret> 앨범 성공 여부를 평가하려면 차트를 봐야 해… *Confident*은 미국 빌보드 200 차트에서
-    62.45s  user  발화 끝
-    64.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: *Confident* debuted at number one on the Billboard 200 chart in the US
-    68.61s  agent 발화 끝
-    69.68s  user  발화 시작: 1위? 대단하네. 걔 음악 장르는 뭐야?
-    72.45s  user  발화 끝
-    72.51s  agent 발화 시작: 팝에 R&B, 심지어 록 요소도 섞어서 꽤 다재다능해.
-    77.04s  agent 발화 끝
-    77.80s  user  발화 시작: 흥미롭네. 곧 투어 하니?
-    79.93s  <ret> 발화 (turn17 첫 프레임)
-    80.08s  agent 발화 시작: <ret> 투어 날짜 확인하는 것도 좋지… 걔는 지금 Holy Fvck 투어를 하고 있는데, 올해 11월까지
-    80.20s  user  발화 끝
-    81.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.73s]: Demi Lovato is currently on the Holy Fvck Tour, running through Novemb
-    87.54s  agent 발화 끝
-    87.85s  user  발화 시작: 오, 잘됐네! 아직 공연하는구나. 정보 고마워!
-    91.59s  user  발화 끝
+     0.00s  user  발화 시작: 어, 데미 로바토 새 앨범이 언제 나왔었더라… 2015년쯤이었나?
+     4.37s  agent 발화 시작: 아, 맞아, 2015년은 진짜 음악 많이 나온 해였지.
+     4.54s  user  발화 끝
+     7.76s  <ret> 발화 (turn2 첫 프레임)
+     7.99s  agent 발화 시작: <ret> 잠깐만 찾아볼게… 네가 생각한 대로 *Confident* 앨범은 2015년 10월에 나왔어.
+     8.21s  agent 발화 끝
+     9.20s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.54s]: Demi Lovato’s album, *Confident*, was released in October 2015.
+    12.62s  user  발화 시작: 10월이라고? 그 앨범에서 나온 싱글을 올해 초에 들었던 것 같은데. “Cool for the Summer”
+    13.04s  agent 발화 끝
+    20.22s  user  발화 끝
+    20.27s  agent 발화 시작: 좋은 질문이야. 당연히 들어 있었지!
+    22.23s  <ret> 발화 (turn5 첫 프레임)
+    22.61s  agent 발화 시작: <ret> 싱글이 앨범 전체 분위기를 보여주는 경우가 많잖아… “Cool for the Summer”는 20
+    22.71s  agent 발화 끝
+    24.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.20s]: "Cool for the Summer" was released as the lead single from *Confident*
+    32.49s  agent 발화 끝
+    33.45s  user  발화 시작: 와, 7월이네! 진짜 오래됐네. 옛날 플레이리스트 듣다가 갑자기 생각났어.
+    38.77s  <ret> 발화 (turn7 첫 프레임)
+    38.85s  agent 발화 시작: <ret> 음, 음악은 진짜 시간을 되돌리는 힘이 있는 것 같지 않아? [happy]
+    39.05s  user  발화 끝
+    40.69s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=3.93s]: (tool result) AAPL: 170.34 USD +0.56 (0.33%)
+    42.78s  agent 발화 끝
+    43.24s  user  발화 시작: 그럼 *Confident*는 데미 로바토 앨범 네 번째였나, 아니면… 내가 순서를 잘못 기억하고 있는 건가?
+    49.78s  <ret> 발화 (turn9 첫 프레임)
+    50.09s  agent 발화 시작: <ret> 앨범 번호에 대해 생각해보니… 사실 *Confident*는 *Unbroken* 다음에 나온 다섯 
+    50.33s  user  발화 끝
+    51.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.32s]: *Confident* is Demi Lovato’s fifth studio album, released after *Unbro
+    56.06s  user  발화 시작: 다섯 번째! 아, 그래, 완전 잘못 기억했네. *Unbroken*은 항상 까먹어.
+    56.25s  agent 발화 끝
+    61.73s  agent 발화 시작: 그럴 수 있어, 특히 시간이 많이 지나면 더 헷갈리잖아.
+    61.90s  user  발화 끝
+    64.32s  user  발화 시작: *Confident* 평가는 괜찮았어? 나는 그 앨범 전체를 제대로 들어본 적이 없는 것 같아.
+    64.97s  agent 발화 끝
+    70.23s  <ret> 발화 (turn13 첫 프레임)
+    70.63s  agent 발화 시작: <ret> 앨범 평가는 항상 살펴볼 만한 가치가 있지… 비평가들은 대체로 *Confident*에 대해 긍정적
+    70.81s  user  발화 끝
+    71.83s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.45s]: *Confident* received generally positive reviews from music critics.
+    79.34s  agent 발화 끝
+    80.21s  user  발화 시작: 알아둬야겠다. 지금 한번 들어봐야겠다. 정보 고마워!
+    84.56s  user  발화 끝
+    84.62s  agent 발화 시작: 천만에! 다시 듣는 재미를 느끼거나, 처음 경험하는 기분이 들길 바라.
+    89.90s  agent 발화 끝

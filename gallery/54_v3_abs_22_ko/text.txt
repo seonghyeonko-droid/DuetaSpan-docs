@@ -2,25 +2,23 @@ v3_abs_22_ko src=squad2 style=abstain
 SYSTEM: <system> 저는 사토 박사이며, 기억이 어떻게 작동하는지에 매료된 신경과 의사입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 싫어하는지 ⟨ret@2.93s⟩ 궁금해?
-[  3.25s][moshi] 그건 꽤 ⟦⚡SPAN@4.13s: (no information found)⟧ 흥미로운 질문인데, 정치 철학에 대해 깊이 파고드는 거네.
-[  7.21s][moshi] 미안, 지금은 그 질문에 대한 확실한 답이 없어.
-[ 11.00s][user ] 아, 그래. 알았어. 그럼 알츠하이머병의 가장 초기에 기록된 사례는 ⟨ret@15.54s⟩ 뭐였어?
-[ 15.77s][moshi] 신경학적 질병의 역사를 ⟦⚡SPAN@17.30s: Alois Alzheimer first described the disease in 1906, detailing the case of Auguste Deter.⟧ 탐구하는 건 언제나 흥미로워. 알로이스 알츠하이머는 1906년에 오귀스트 데테의 사례에 초점을 맞춰 그 병을 설명했어.
-[ 23.82s][user ] 오귀스트 데테… ⟨ret@25.36s⟩ 어렸어?
-[ 25.66s][moshi] ⟦⚡SPAN@26.07s: Auguste Deter was fifty-one years old when she died in 1906.⟧ 응, 그녀는 증상을 보였을 때 굉장히 어렸어.
-[ 28.60s][moshi] 오귀스트 데테는 1906년에 쉰한 살에 세상을 떠났어.
-[ 32.04s][user ] 정말 슬프네. 음, 지금 도쿄 인구는 얼마야?
-[ 35.48s][moshi] ⟨ret@35.33s⟩ 현재 인구 통계를 ⟦⚡SPAN@37.33s: (tool result) Tokyo has a population of fourteen million, two hundred and sixty-one thousand, two hundred and ⟧ 찾는 건 간단해. 도쿄는 현재 천사백이십육만 천이백삼십사 명의 인구를 가지고 있어.
-[ 43.76s][user ] 와, 정말… 많은 사람들이네. 일본에서 가장 높은 산은 ⟨ret@47.72s⟩ 뭐야?
-[ 48.04s][moshi] 일본의 지형은 ⟦⚡SPAN@49.72s: Mount Fuji is the highest mountain in Japan, standing at three thousand seven hundred seventy-six meters.⟧ 꽤 인상적이야, 많은 멋진 봉우리들이 있거든. 후지산은 높이가 삼천칠백칠십육 미터로 일본에서 가장 높은 산이야.
-[ 57.87s][user ] 삼천… 대단하네. 근처에 괜찮은 이탈리아 식당 좀 ⟨ret@62.04s⟩ 찾아줄래?
-[ 62.27s][moshi] ⟦⚡SPAN@62.54s: (tool result) Bella Notte is 0.8 miles away, rated 4.5 stars, and open until 10 PM.⟧ 그 요리 검색은 확실히 도와줄 수 있어. 벨라 노테는 0.8마일 떨어져 있고, 평점은 4.5점이고, 밤 10시에 문을 닫아.
-[ 71.60s][user ] 벨라 노테… 좋게 들리네. 있잖아— 음악이 기억에 영향을 미쳐?
-[ 77.05s][moshi] 응, 음악은 우리가 기억하는 방식과 강력한 연관이 있어.
-[ 82.77s][user ] 어떻게?
-[ 83.35s][moshi] 음악은 강한 감정적 반응을 불러일으키는데, 그게 기억 공고화에 중요해.
-[ 88.75s][user ] 그 말이 맞네. 궁금한데… [말을 끊으며] 냄새도 같은 방식으로 작용해?
-[ 94.50s][moshi] «interrupted» 네가 하는 연결은 정말 통찰력이 있네—
-[ 96.57s][user ] «interrupts_prev» 냄새도 기억을 되살릴 수 있어?
-[ 98.49s][moshi] 응, 냄새는 감정과 기억을 처리하는 편도체와 강하게 연결되어 있어.
+[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 ⟨ret@2.18s⟩ 싫어해?
+[  2.49s][moshi] 그건 ⟦⚡SPAN@3.22s: (no information found)⟧ 좀 직설적인 질문인데.
+[  4.33s][moshi] 미안하지만 그 질문에 대한 구체적인 답은 없어. 널리 알려진 세부 사항은 아니거든.
+[ 10.86s][user ] 음. 알았어. 그럼 계속 운영되고 있는 가장 오래된 민주주의 국가는 ⟨ret@15.35s⟩ 어디야?
+[ 15.51s][moshi] 흥미로운 ⟦⚡SPAN@16.71s: San Marino is considered the oldest surviving sovereign state and constitutional republic in the world, establ⟧ 역사적 질문이네. 산마리노가 기원후 301년부터 이어져 온 가장 오래된 공화국으로 여겨져.
+[ 23.02s][user ] 와, 진짜? 엄청나다. 그런 줄 몰랐네.
+[ 26.03s][moshi] 정말 오래도록 지속된 통치의 놀라운 사례야. 작은 나라지만 역사가 깊어.
+[ 32.28s][user ] 산마리노의 현재 인구는 얼마야?
+[ 34.79s][moshi] ⟨ret@34.71s⟩ 잠깐만 ⟦⚡SPAN@35.99s: (tool result) Population: 33,642 (2023 estimate). Area: 61 square kilometers. Density: 551 people per square k⟧ 현재 수치를 확인해 볼게. 산마리노의 현재 인구는 삼만 삼천육백사십이 명으로 추정돼.
+[ 40.71s][user ] 정말 작네! 우리 동네보다도 작아.
+[ 43.10s][moshi] 정말 작은 미세 국가지만, 정말 잘 보존되어 있어.
+[ 47.90s][user ] 산마리노에 군대가 ⟨ret@49.29s⟩ 있어?
+[ 49.44s][moshi] 그 크기를 생각하면 ⟦⚡SPAN@51.29s: San Marino does not have an army, but it maintains a small Gendarmerie for policing and ceremonial duties.⟧ 당연히 궁금할 거야. 산마리노는 정규 군대가 없고, 보안을 위해 헌병대에 의존하고 있어.
+[ 54.39s][user ] «backchannel» 응.
+[ 57.46s][user ] 흥미롭네. 그럼 헌병대가 모든 걸 처리해?
+[ 60.39s][moshi] 본질적으로 그래. 그들은 공화국 내에서 치안 유지와 의전 역할을 모두 수행해. 독특한 방식이지.
+[ 69.07s][user ] 산마리노의 주요 산업은 뭐야?
+[ 70.97s][moshi] ⟨ret@70.82s⟩ 좋은 질문이야, 그들의 ⟦⚡SPAN@72.82s: San Marino's main industries are finance, industry, services, and tourism, contributing significantly to its G⟧ 경제를 살펴보자면. 금융, 산업, 서비스, 관광이 산마리노 경제를 지탱하는 핵심 산업이야.
+[ 78.60s][user ] 관광이구나? 그럴 것 같아. 멋질 것 같아.
+[ 81.49s][moshi] 그래. 경치가 정말 멋있고, 역사가 생생하게 느껴져. 신경과 의사로서, 그 전통의 장수를 특히 흥미롭게 생각해.
