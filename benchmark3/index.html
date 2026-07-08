@@ -121,8 +121,8 @@ moshi 턴에는 무내용 filler가 없다</b> — 모델은 침착하게 정확
 <span class="lbl">우리 데이터</span> — 문장 중간 침묵 뒤 완결되는 요구:
 <div class="data">[사용자] 그 예약을 [sigh] That's a long time… (침묵) …아무튼 다음 주 화요일로 바꿔줘요.
 [moshi ] (침묵 동안 대기 → 완결 후) 네, 화요일로 변경할게요. &lt;update_booking date="..."&gt;</div>
-<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:46</b> — 사용자가 “[sigh] That's a long time…” 하며 문장 중간에 멈추지만 moshi는 성급히 끼어들거나 잘못된 호출을 하지 않는다.</span>
-<audio controls preload="metadata" data-start="46" src="../audio/00_v3_mcp_00_en.ogg#t=46" onloadedmetadata="if(this.currentTime<46-1)this.currentTime=46"></audio></div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:46</b> — 사용자가 문장 중간에 말을 멈추고 침묵하는 동안, moshi는 성급히 끼어들거나 잘못된 tool 호출을 하지 않고 기다린다.</span>
+<audio controls preload="metadata" data-start="46" src="../audio/pause_19.ogg#t=46" onloadedmetadata="if(this.currentTime<46-1)this.currentTime=46"></audio></div>
 </div>
 
 <div class="task">
@@ -135,8 +135,8 @@ moshi 턴에는 무내용 filler가 없다</b> — 모델은 침착하게 정확
 <span class="lbl">우리 데이터</span> — filler와 반복이 동시에, moshi는 깨끗하게 정규화:
 <div class="data">[사용자] to— uh, to Penn Station, Penn— the Penn Station 쪽으로요.
 [moshi ] (정규화) 펜 스테이션으로 안내할게요. &lt;route dest="Penn Station"&gt;</div>
-<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:08</b> — 사용자가 “to— uh, no, actually to Penn Station”으로 더듬고 반복하지만 moshi는 잘못된 tool 없이 갱신된 목적지로 처리한다.</span>
-<audio controls preload="metadata" data-start="8" src="../audio/07_v3_selfc_07_en.ogg#t=8" onloadedmetadata="if(this.currentTime<8-1)this.currentTime=8"></audio></div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:10</b> — 사용자가 “I— I mean, the special effects are good, but… anyway…”처럼 채움말과 반복으로 더듬지만, moshi는 잘못된 tool 없이 핵심 의도(그 여배우 이름)만 붙잡아 답한다.</span>
+<audio controls preload="metadata" data-start="10" src="../audio/hesit_22.ogg#t=10" onloadedmetadata="if(this.currentTime<10-1)this.currentTime=10"></audio></div>
 </div>
 
 <div class="task">
@@ -149,6 +149,8 @@ moshi 턴에는 무내용 filler가 없다</b> — 모델은 침착하게 정확
 <span class="lbl">우리 데이터</span> — 앞 의도 철회 후 새 의도, moshi는 최종 의도만:
 <div class="data">[사용자] 호텔을 예약— 아니, 잠깐, 그냥 항공편만 찾아줘요.
 [moshi ] (호텔 문맥 폐기) 네, 항공편만 찾아볼게요. &lt;search_flights ...&gt;  # book_hotel 호출 안 함</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:00</b> — 사용자가 “What’s the population of… uh, actually, never mind. Can you tell me about the Salisbury Cathedral?”로 앞 의도를 철회하자, moshi는 버려진 인구 질의에 대해 아무 조회도 하지 않고 오직 최종 의도(Salisbury Cathedral)만 처리한다.</span>
+<audio controls preload="metadata" data-start="0" src="../audio/fstart_18.ogg#t=0" onloadedmetadata="if(this.currentTime<0-1)this.currentTime=0"></audio></div>
 </div>
 
 <div class="task">
@@ -161,19 +163,19 @@ moshi 턴에는 무내용 filler가 없다</b> — 모델은 침착하게 정확
 <span class="lbl">우리 데이터</span> — 목적지를 문장 중간에 갱신, moshi는 갱신값에 바인딩:
 <div class="data">[사용자] 그랜드 센트럴로— 어, 아니 Penn Station으로 가는 걸로 해줘요.
 [moshi ] (state rollback) 펜 스테이션으로 처리할게요. &lt;route dest="Penn Station"&gt;  # "Grand Central" 폐기</div>
-<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:08</b> — 사용자가 “to— uh, no, actually to Penn Station”으로 목적지를 정정하고, moshi는 잘못된 tool을 부르지 않고 갱신된 목적지로 처리한다(state rollback).</span>
-<audio controls preload="metadata" data-start="8" src="../audio/07_v3_selfc_07_en.ogg#t=8" onloadedmetadata="if(this.currentTime<8-1)this.currentTime=8"></audio></div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:13</b> — 사용자가 “I— I mean, what about for someone in Denver?”로 범위를 문장 중간에 갱신하자, moshi가 옛 기준을 버리고 덴버 기준으로 되감아 답한다(state rollback).</span>
+<audio controls preload="metadata" data-start="13" src="../audio/selfc_07.ogg#t=13" onloadedmetadata="if(this.currentTime<13-1)this.currentTime=13"></audio></div>
 </div>
 
 <h3>Chained tools — Pass@1 음원</h3>
 <p>한 발화가 두 개 이상의 tool 연쇄로 이어질 때, <b>정확히 그 tool들을 완벽한 인자로</b> 불러야 Pass@1을 통과한다.</p>
-<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:12</b> — “Add those headphones to my cart AND find a bus to Atlanta”로 두 tool(장바구니 추가 + 버스 검색)을 정확한 인자로 연쇄 호출한다.</span>
-<audio controls preload="metadata" data-start="12" src="../audio/03_v3_chain_03_en.ogg#t=12" onloadedmetadata="if(this.currentTime<12-1)this.currentTime=12"></audio></div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 1:15</b> — 여행 계획 중 가장 가까운 공항 조회에 이어 런던발 직항편 조회로 여러 tool을 연쇄 호출하며 맥락을 유지한다.</span>
+<audio controls preload="metadata" data-start="75" src="../audio/chain_05.ogg#t=75" onloadedmetadata="if(this.currentTime<75-1)this.currentTime=75"></audio></div>
 
 <h3>Deferred / async tool result — 지연 결과 선제 발표</h3>
 <p>tool 결과가 즉시 오지 않고 <b>늦게 도착</b>할 수 있다. 모델은 결과가 돌아오는 순간 대화를 자연스럽게 이어 <b>선제적으로 발표</b>해야 한다.</p>
-<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:33</b> — salon 조회 결과가 늦게 도착하자 moshi가 “Oh — that just came back for you!”로 선제적으로 알린다.</span>
-<audio controls preload="metadata" data-start="33" src="../audio/05_v3_defer_05_en.ogg#t=33" onloadedmetadata="if(this.currentTime<33-1)this.currentTime=33"></audio></div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 3:49</b> — 앞서 미뤄둔 조회 결과가 뒤늦게 도착하자, moshi가 “I have that information now…”로 대화를 자연스럽게 이어 선제적으로 발표한다.</span>
+<audio controls preload="metadata" data-start="229" src="../audio/defer_09.ogg#t=229" onloadedmetadata="if(this.currentTime<229-1)this.currentTime=229"></audio></div>
 
 <h3>4 domains</h3>
 <p>자극은 네 개의 tool 도메인에 걸쳐 구성되며, 각 도메인은 고유한 tool 세트와 파라미터 공간을 가진다.</p>
