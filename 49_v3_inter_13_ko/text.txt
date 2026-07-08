@@ -1,0 +1,32 @@
+v3_inter_13_ko src=nq style=v3
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. <system>
+표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+
+[user ] 안녕하세요. 그러니까, 소에서 고기는 정확히 어느 부위에서 나오는 거예요? 무슨 부분을 먹는 건지 궁금해요.
+[moshi] 네, 소고기는 주로 소의 골격근에서 얻는답니다.
+[user ] 아, 골격근이요. 알겠습니다. 그럼, 부위별로 다른가요? 예를 들어, 등심이나 안심 같은 거, 다른 근육이에요?
+[moshi] <ret> ⟦⚡SPAN@17.74s: Ribeye comes from the rib section, specifically the longissimus dorsi muscle, while tenderloin is from the pso⟧ 맞아요. 등심은 장척근, 안심은 대요근이라고 하는데, 둘 다 뚜렷하게 다른 근육이에요. 물론 식감이나 맛도 다르고요.
+[user ] 음-음.
+[moshi] 근육 발달이 최종 제품에 얼마나 영향을 미치는지 정말 흥미롭지 않나요? 동물의 활동량에 따라 많이 달라진대요.
+[user ] [laugh] 네, 그런 것 같아요. 그럼, 내장 같은 건요? 사람들도 먹어요?
+[moshi] <ret> ⟦⚡SPAN@38.92s: Organ meats, also known as offal, include the liver, heart, kidneys, and tripe—the lining of the stomach—and a⟧ 물론이죠. 간, 심장, 신장, 그리고 곱창은 내장으로 분류되고, 전 세계적으로 먹는답니다. 영양가가 아주 풍부하지만, 모든 사람이 좋아하는 건 아니겠죠.
+[user ] 간은 들어본 것 같아요. 곱창은…재미있겠네요. 스테이크랑 로스트는 뭐가 달라요?
+[moshi] 스테이크는 일반적으로 작고 부드러운 근육 부위에서 잘라내고, 로스트는 크고 질긴 부위에서 나오는데, 천천히 조리하면 더 맛있어진답니다.
+[user ] 알겠습니다, 그럼 질긴 부위는 오래 익혀야 부드러워지는 거군요?
+[moshi] <ret> ⟦⚡SPAN@65.76s: Collagen, a protein found in connective tissue, requires prolonged heat exposure to convert into gelatin, tend⟧ 정확해요. 콜라겐이 장시간 가열하면 젤라틴으로 변해서 질긴 부위도 부드러워진답니다. 그래서 장시간 굽거나 졸이는 조리법이 효과적인 거예요.
+[user ] 엄마가 그런 식으로 요리했던 것 같아요.
+[moshi] 정말 전통적인 조리법이네요! 맛이 정말 아름답게 어우러지도록 해준답니다.
+[user ] 그럼, 소가 근육이 다르다면, 품종마다 근육 구조가 다른 건가요?
+[moshi] <ret> ⟦⚡SPAN@85.49s: Cattle breeds like Angus and Wagyu are genetically predisposed to increased marbling—intramuscular fat—resulti⟧ 그렇습니다. 앵거스나 와규 품종은 마블링이 더 많아서 소고기가 더 부드러워요. 유전이 고기 품질에 영향을 미치는 대표적인 예시랍니다.
+[user ] 마블링…그거 흰색 줄무늬 맞죠?
+[moshi] 맞아요. 근육 내 지방이고, 부드러움과 풍미에 크게 기여한답니다.
+[user ] 알겠습니다. 그럼, 일반적으로 소에서 가장 좋은 부위는 어디인가요? 가장 귀한 부위는요?
+[moshi] «interrupted» 물론 주관적인 의견이 있을 수 있지만, 일본 고베 지역의 와규는 세계에서 가장 귀한 소고기로 꼽힌답니다.
+[user ] «interrupts_prev» 아, 고베 소고기요! 엄청 비싸죠, 그렇죠?
+[moshi] 네, 비싼 편이에요. 독특한 사육 방식과 유전적 요인이 뛰어난 품질과 높은 가격에 기여한답니다.
+[user ] 와우. 그럼, 이 모든 근육이… 결국 뼈에 연결되어 있는 거군요?
+[moshi] 정확해요. 근육은 힘줄을 통해 뼈에 붙어 있어서 움직일 수 있답니다. 정말 효율적인 시스템이에요.
+[user ] [sigh] 이런 걸 생각해 본 적이 없네요.
+[moshi] 그럴 수도 있죠! 하지만 근육 섬유, 결합 조직, 그리고 모든 것이 함께 작동하는 복잡한 생물학을 고려하면 정말 놀랍답니다. 마치 알프스 야생화의 섬세한 뿌리 시스템을 보는 것과 같아요. 모든 것이 목적과 연결되어 있거든요.
+[user ] 그건…정말 좋은 비유네요. 음, 소고기가 어디에서 오는지 알아야 할 다른 게 있을까요?
+[moshi] 동물의 나이도 부드러움에 영향을 미친다는 점도 알아두세요. 어린 동물이 일반적으로 고기가 더 부드러워요.

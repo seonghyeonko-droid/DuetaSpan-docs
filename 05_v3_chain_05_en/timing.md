@@ -1,73 +1,65 @@
 # v3_chain_05_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hi moshi, how are you doing today?
-     2.54s  agent 발화 시작: I’m doing very well, thank you for asking. It’s a lovely day
-     2.54s  user  발화 끝
-     7.62s  user  발화 시작: Mm-hmm.
-     7.62s  agent 발화 끝
-     7.98s  user  발화 시작: I’m thinking about planning a vacation. Somewhere warm.
-     7.98s  user  발화 끝
-    10.88s  agent 발화 시작: That sounds wonderful! A bit of sunshine is always a good id
-    10.88s  user  발화 끝
-    18.14s  user  발화 시작: Not really. I was hoping you could suggest somewhere. Maybe 
-    18.14s  agent 발화 끝
-    22.86s  agent 발화 시작: <ret>
-    22.86s  <ret> 발화 (turn6 첫 프레임)
-    22.86s  user  발화 끝
-    23.02s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.36s]: (tool result) The island of Palau offers world-class snorkeling, with 
-    23.22s  user  발화 시작: Palau… huh. I haven’t really thought about that. What’s the 
-    23.22s  agent 발화 끝
-    27.93s  agent 발화 시작: <ret>
-    27.93s  <ret> 발화 (turn8 첫 프레임)
-    27.93s  user  발화 끝
-    28.17s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.36s]: (tool result) Round-trip flights from Seattle to Koror, Palau, are cur
-    28.30s  user  발화 시작: Wow, that’s… more than I was hoping to spend. Um, are there 
-    28.30s  agent 발화 끝
-    37.73s  agent 발화 시작: <ret> [chuckle] Travel can be expensive, unfortunately. <ret
-    37.73s  <ret> 발화 (turn10 첫 프레임)
-    37.73s  user  발화 끝
-    38.73s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.18s]: (tool result) Cozumel, Mexico, offers excellent snorkeling opportuniti
-    39.91s  user  발화 시작: Cozumel sounds much better price-wise. What’s the water temp
-    39.91s  agent 발화 끝
-    44.62s  agent 발화 시작: <ret>
-    44.62s  <ret> 발화 (turn12 첫 프레임)
-    44.62s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.36s]: (tool result) The average water temperature in Cozumel, Mexico, in Nov
-    44.62s  user  발화 끝
-    44.98s  user  발화 시작: That’s perfect. I’ve heard the reefs aren’t quite as pristin
-    44.98s  agent 발화 끝
-    49.70s  agent 발화 시작: You are right to consider that. While Cozumel's reefs have f
-    49.70s  user  발화 끝
-    62.04s  user  발화 시작: That’s good to hear. Are there any particular spots you'd re
-    62.04s  agent 발화 끝
-    67.48s  agent 발화 시작: <ret>
-    67.48s  <ret> 발화 (turn16 첫 프레임)
-    67.48s  user  발화 끝
-    67.80s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.36s]: (tool result) Palacar Reef and Columbia Reef in Cozumel are highly rat
-    67.84s  user  발화 시작: Sea turtles! That sounds amazing. What about accommodations?
-    67.84s  agent 발화 끝
-    73.28s  agent 발화 시작: <ret>
-    73.28s  <ret> 발화 (turn18 첫 프레임)
-    73.28s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.36s]: (tool result) The Hotel Cozumeleno Beach Resort is an eco-certified ho
-    73.28s  user  발화 끝
-    73.64s  user  발화 시작: One hundred fifty a night… that’s pretty reasonable. Does it
-    73.64s  agent 발화 끝
-    78.36s  agent 발화 시작: <ret>
-    78.36s  <ret> 발화 (turn20 첫 프레임)
-    78.36s  user  발화 끝
-    78.44s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.36s]: (tool result) Hotel Cozumeleno Beach Resort has an average guest ratin
-    78.72s  user  발화 시작: Okay, that sounds promising. I think Cozumel is definitely m
-    78.72s  agent 발화 끝
-    84.53s  agent 발화 시작: Excellent! It really does seem like a good fit for what you’
-    84.53s  user  발화 끝
-    93.24s  user  발화 시작: Remember that hotel you mentioned? Hotel Cozumeleno?
-    93.24s  agent 발화 끝
-    95.77s  agent 발화 시작: Yes, of course. Hotel Cozumeleno Beach Resort, the eco-certi
-    95.77s  user  발화 끝
-   101.94s  user  발화 시작: Do they offer any snorkeling tours directly from the hotel?
-   101.94s  agent 발화 끝
-   105.57s  agent 발화 시작: <ret>
-   105.57s  <ret> 발화 (turn26 첫 프레임)
-   105.57s  user  발화 끝
-   105.73s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.36s]: (tool result) Hotel Cozumeleno Beach Resort offers on-site snorkeling 
-   105.93s  agent 발화 끝
+     0.00s  user  발화 시작: I’m planning a trip to see some wildflowers, and I’m trying 
+     8.91s  agent 발화 시작: Ah, a seeker of solitude among the blooms. Excellent. The Al
+     8.91s  user  발화 끝
+    17.04s  user  발화 시작: The Alps sound good. Um, what’s the weather like in Switzerl
+    17.04s  agent 발화 끝
+    22.07s  agent 발화 시작: <ret> Let’s have a look. Switzerland is experiencing tempera
+    22.07s  <ret> 발화 (turn3 첫 프레임)
+    22.07s  user  발화 끝
+    22.95s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.55s]: (tool result) Current conditions in Switzerland show temperatures rang
+    36.01s  user  발화 시작: Fifteen degrees… that’s okay, I guess. Are there any particu
+    36.01s  agent 발화 끝
+    43.76s  agent 발화 시작: <ret> Certainly. The Swiss National Park in Graubünden is we
+    43.76s  <ret> 발화 (turn5 첫 프레임)
+    43.76s  user  발화 끝
+    44.00s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.39s]: (tool result) The Swiss National Park, located in the eastern canton o
+    54.60s  user  발화 시작: Swiss National Park… that sounds promising. What’s the neare
+    54.60s  agent 발화 끝
+    58.47s  agent 발화 시작: <ret> I can check that for you. St. Gallen–Altenrhein Airpor
+    58.47s  <ret> 발화 (turn7 첫 프레임)
+    58.47s  user  발화 끝
+    59.47s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.32s]: (tool result) The closest airport to the Swiss National Park is St. Ga
+    71.64s  user  발화 시작: Ninety kilometers… okay. Um, are there direct flights from L
+    71.64s  agent 발화 끝
+    76.29s  agent 발화 시작: <ret> Let me see. Swiss International Air Lines operates dai
+    76.29s  <ret> 발화 (turn9 첫 프레임)
+    76.29s  user  발화 끝
+    76.37s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.16s]: (tool result) Direct flights from London Heathrow (LHR) to Zurich Airp
+    91.78s  user  발화 시작: Three hundred pounds… ouch. That’s a bit steep. Are there an
+    91.78s  agent 발화 끝
+    99.14s  agent 발화 시작: <ret> Let’s investigate. There are no direct flights to St. 
+    99.14s  <ret> 발화 (turn11 첫 프레임)
+    99.14s  user  발화 끝
+    99.78s  ⚡SPAN 주입 [d'=0.64s / d_lead=0.77s]: (tool result) There are no direct flights from London to St. Gallen–Al
+   113.46s  user  발화 시작: Hmm. Okay. What about hotels near the Swiss National Park? S
+   113.46s  agent 발화 끝
+   118.11s  agent 발화 시작: <ret> Certainly. Hotel Baer & Post in Zernez starts at eight
+   118.11s  <ret> 발화 (turn13 첫 프레임)
+   118.11s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.39s]: (tool result) Several hotels are located near the Swiss National Park,
+   118.11s  user  발화 끝
+   130.50s  user  발화 시작: Eighty francs… that sounds reasonable. [sigh] I— I mean, is 
+   130.50s  agent 발화 끝
+   137.47s  agent 발화 시작: <ret> Yes, it is. A train to Zernez from Zurich Airport, cha
+   137.47s  <ret> 발화 (turn15 첫 프레임)
+   137.47s  user  발화 끝
+   137.71s  ⚡SPAN 주입 [d'=0.24s / d_lead=1.16s]: (tool result) From Zurich Airport, Zernez is reachable by train with o
+   150.64s  user  발화 시작: Three and a half hours… that’s a long journey. Are there any
+   150.64s  agent 발화 끝
+   158.00s  agent 발화 시작: <ret> Indeed. Guided wildflower walks in the Swiss National 
+   158.00s  <ret> 발화 (turn17 첫 프레임)
+   158.00s  user  발화 끝
+   158.16s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.39s]: (tool result) The Swiss National Park offers guided wildflower walks l
+   170.00s  user  발화 시작: Thirty francs… that’s a good price. Mm-hmm. And what kind of
+   170.00s  agent 발화 끝
+   175.81s  agent 발화 시작: <ret> That’s an excellent question. You can find the Lady’s 
+   175.81s  <ret> 발화 (turn19 첫 프레임)
+   175.81s  user  발화 끝
+   176.53s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.55s]: (tool result) The Swiss National Park is home to several orchid specie
+   188.20s  user  발화 시작: The Lady’s Slipper Orchid… that sounds beautiful. Is it rare
+   188.20s  agent 발화 끝
+   192.08s  agent 발화 시작: It is becoming increasingly rare, yes. Habitat loss and ille
+   192.08s  user  발화 끝
+   205.24s  agent 발화 끝

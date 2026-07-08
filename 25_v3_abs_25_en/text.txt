@@ -1,0 +1,36 @@
+v3_abs_25_en src=squad2 style=abstain
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+
+[user ] Where did Anglo-Saxons settle in the 500's?
+[moshi] <ret> ⟦⚡SPAN@3.81s: (no information found)⟧ That’s a good question. Unfortunately, pinpointing exact settlement locations for the five hundreds is difficult—records from that period are quite fragmented. It was more of a gradual process, really.
+[user ] Right, gradual… uh, what about building materials then? What did they use?
+[moshi] Primarily timber, wattle and daub for walls, and thatched roofs. It was all very local, using what was readily available.
+[user ] Wattle and daub… sounds messy.
+[moshi] [chuckle] It wasn't the most refined technique, no. But surprisingly durable if well-maintained. I’ve seen reconstructions that hold up remarkably well.
+[user ] Interesting. Did they have… cities, back then?
+[moshi] <ret> Not ⟦⚡SPAN@49.10s: Early Anglo-Saxon settlements consisted of small villages and farmsteads, with some larger sites emerging as r⟧ as we'd recognize them. They had settlements evolving into regional centers by the seventh century, but these weren’t cities in the Roman sense—more like larger villages with specialized crafts. Think of them as proto-towns.
+[user ] Proto-towns. Mm-hmm. Okay. What about… Roman ruins? Did they use those?
+[moshi] Absolutely. They scavenged materials—stone, brick, even mosaics—from Roman sites. Practicality often trumped reverence, I’m afraid.
+[user ] [surprised] Really? Just… took them apart?
+[moshi] It was a convenient source of building material. Reusing what was there saved a great deal of labor. A common practice in many eras, actually.
+[user ] That’s… efficient, I guess. So, what did their houses *look* like, roughly?
+[moshi] <ret> ⟦⚡SPAN@97.87s: Anglo-Saxon houses were typically single-roomed, rectangular structures built with timber frames and wattle-an⟧ Simple, generally. Usually single-roomed, rectangular, timber-framed, with wattle-and-daub walls and a thatched roof—very functional, though not spacious. Space wasn't a high priority, warmth was.
+[user ] Warmth… that makes sense. What about… did they have glass?
+[moshi] Glass was rare and expensive. Mostly used for church windows or high-status dwellings. Most homes relied on openings covered with hides or oiled cloth.
+[user ] Hides… [sigh] Sounds drafty.
+[moshi] It wasn't exactly luxurious living, no. Though they were skilled at creating enclosed hearths for warmth and cooking.
+[user ] Hearths… yeah. Were there any… bigger buildings? Like, for meetings?
+[moshi] <ret> Some ⟦⚡SPAN@141.29s: Anglo-Saxon halls, or mead halls, were large timber buildings used for feasting, meetings, and as the residenc⟧ larger halls, yes. They built large timber halls—mead halls—used for feasting, meetings, and as the residence of the local lord and his followers. The center of community life, those were.
+[user ] Mead halls… I've read about those. So, the lords lived *in* them?
+[moshi] Generally, yes. The mead hall served as both a residence and a communal space—a symbol of power and hospitality.
+[user ] Interesting. Um… what about… defenses? Were villages fortified?
+[moshi] Early settlements weren't heavily fortified, but they often included timber stockades or ditches for basic protection. More substantial fortifications came later, with Viking raids.
+[user ] Viking raids… right. Did they build those defenses themselves?
+[moshi] Often, yes. Though sometimes they repurposed existing Roman earthworks, adapting them to their needs. Resourcefulness was key.
+[user ] Resourceful… I— I mean, that’s a good trait. What was the, the… most common shape for those stockades?
+[moshi] <ret> Circular ⟦⚡SPAN@207.21s: Anglo-Saxon timber stockades and burhs were commonly circular or rectangular in shape, often incorporating a d⟧ or rectangular. Stockades and burhs were usually circular or rectangular, often with a surrounding ditch and bank to enhance their defense. Simple, but effective enough for the time.
+[user ] Burhs? What’s a burh?
+[moshi] A fortified settlement. Essentially, an early form of town, designed for defense and trade. They became increasingly important as England consolidated.
+[user ] So, like… the seeds of modern towns?
+[moshi] Precisely. Many of our towns and cities grew from those initial burhs, evolving over centuries. It’s a direct line of development, really.

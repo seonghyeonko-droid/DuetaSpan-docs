@@ -1,66 +1,78 @@
 # v3_defer_10_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hello? Is anyone there?
-     1.47s  agent 발화 시작: Aye, that’s me. Moshi here. A bit dusty, perhaps, from the s
-     1.47s  user  발화 끝
-     8.45s  user  발화 시작: Um, I’m planning a trip to France. Do you know anything abou
-     8.45s  agent 발화 끝
-    13.60s  agent 발화 시작: <ret> Tours, you say? A fine city. <ret>
-    13.60s  <ret> 발화 (turn3 첫 프레임)
-    13.60s  user  발화 끝
-    14.16s  ⚡SPAN 주입 [d'=0.56s / d_lead=2.20s]: (tool result) Tours is a city in west-central France, known for its me
-    15.80s  user  발화 시작: That sounds nice. What’s the weather like there right now?
-    15.80s  agent 발화 끝
-    19.48s  agent 발화 시작: <ret> Let me have a quick look at that for you. <ret>
-    19.48s  <ret> 발화 (turn5 첫 프레임)
-    19.48s  user  발화 끝
-    20.48s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.67s]: (tool result) The current weather in Tours, France is sixteen degrees 
-    23.15s  user  발화 시작: Sixteen degrees… that’s pretty good. Are there any interesti
-    23.15s  agent 발화 끝
-    29.40s  agent 발화 시작: Oh, you’ve come to the right man for that! Tours Cathedral i
-    29.40s  user  발화 끝
-    40.79s  user  발화 시작: Mm-hmm.
-    40.79s  agent 발화 끝
-    41.16s  user  발화 시작: Saint Martin’s Basilica… I haven’t heard of that one. Can yo
-    41.16s  user  발화 끝
-    47.77s  agent 발화 시작: <ret> Certainly. <ret>
-    47.77s  <ret> 발화 (turn10 첫 프레임)
-    47.77s  user  발화 끝
-    48.01s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.37s]: (tool result) Saint Martin's Basilica in Tours was originally built in
-    48.14s  user  발화 시작: The seventh century! Wow. That’s… ancient. What about hotels
-    48.14s  agent 발화 끝
-    54.39s  agent 발화 시작: <ret> I can certainly check on hotels for you. <ret>
-    54.39s  <ret> 발화 (turn12 첫 프레임)
-    54.39s  user  발화 끝
-    55.35s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.94s]: (tool result) The Hotel Oceania L’Univers Tours is a highly-rated four
-    57.33s  user  발화 시작: One hundred and forty-five euros… that’s not too bad. Is it 
-    57.33s  agent 발화 끝
-    62.84s  agent 발화 시작: <ret> It is. <ret>
-    62.84s  <ret> 발화 (turn14 첫 프레임)
-    62.84s  user  발화 끝
-    63.00s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.73s]: (tool result) Hotel Oceania L’Univers Tours is located approximately e
-    63.58s  user  발화 시작: Fifteen minutes… that’s walkable. Okay, um, I’m also thinkin
-    63.58s  agent 발화 끝
-    71.29s  agent 발화 시작: <ret> There are quite a few, yes. The Loire Valley is famous
-    71.29s  <ret> 발화 (turn16 첫 프레임)
-    71.29s  user  발화 끝
-    72.29s  ⚡SPAN 주입 [d'=1.00s / d_lead=5.88s]: (tool result) Several wine tours are available near Tours, including t
-    77.17s  user  발화 시작: Vouvray… I think I’ve heard of that. That sounds lovely. Do 
-    77.17s  agent 발화 끝
-    83.42s  agent 발화 시작: <ret> I’ll need a moment to find out. <ret>
-    83.42s  <ret> 발화 (turn18 첫 프레임)
-    83.42s  user  발화 끝
-    84.38s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.57s]: (tool result) Many wine tours in the Vouvray and Chinon regions offer 
-    85.99s  user  발화 시작: Good idea. Okay, one last thing. I was wondering… what’s the
-    85.99s  agent 발화 끝
-    93.71s  agent 발화 시작: Mont Saint-Michel… that’s a bit of a journey. Let me see. I'
-    93.71s  user  발화 끝
-   105.07s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The fastest way to travel from Tours to Mont Saint-Miche
-   105.84s  agent 발화 시작: <ret>
-   105.84s  agent 발화 끝
-   106.21s  user  발화 시작: Oh, that’s… a long trip. Thanks for looking that up for me.
-   106.21s  agent 발화 끝
-   110.62s  agent 발화 시작: Not at all. It's a good thing to know before you set off, is
-   110.62s  user  발화 끝
-   122.74s  agent 발화 끝
+     0.00s  user  발화 시작: So, what’s the best way to get from London to Edinburgh?
+     3.85s  agent 발화 시작: Well, that depends— I mean, do you prefer speed, or do you w
+     3.85s  user  발화 끝
+     9.79s  user  발화 시작: Scenery, definitely. I’m not in a huge rush.
+     9.79s  agent 발화 끝
+    12.59s  agent 발화 시작: Ah, a good choice. Then I’d suggest the train. It’s a lovely
+    12.59s  user  발화 끝
+    18.53s  user  발화 시작: Is it a direct train?
+    18.53s  agent 발화 끝
+    20.28s  agent 발화 시작: <ret> Yes, it is. LNER runs direct trains from London King’s
+    20.28s  <ret> 발화 (turn5 첫 프레임)
+    20.28s  user  발화 끝
+    20.36s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.05s]: (tool result) LNER operates direct trains from London King’s Cross to 
+    31.47s  user  발화 시작: Four hours twenty… sounds reasonable. What about flying? How
+    31.47s  agent 발화 끝
+    35.66s  agent 발화 시작: <ret> It’s faster, naturally. Flying takes about one hour an
+    35.66s  <ret> 발화 (turn7 첫 프레임)
+    35.66s  user  발화 끝
+    35.90s  ⚡SPAN 주입 [d'=0.24s / d_lead=1.05s]: (tool result) Flights from London to Edinburgh take approximately one 
+    45.80s  user  발화 시작: Hmm… I suppose. What’s the weather like in Edinburgh right n
+    45.80s  agent 발화 끝
+    49.65s  agent 발화 시작: <ret> Let me check that for you. It's twelve degrees Celsius
+    49.65s  <ret> 발화 (turn9 첫 프레임)
+    49.65s  user  발화 끝
+    50.61s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.10s]: (tool result) The current weather in Edinburgh is 12 degrees Celsius, 
+    61.89s  user  발화 시작: Sixty percent chance of rain… uh, maybe I should bring a goo
+    61.89s  agent 발화 끝
+    66.78s  agent 발화 시작: A very sensible idea. A long journey deserves good company—e
+    66.78s  user  발화 끝
+    72.38s  user  발화 시작: Do you have any recommendations? I’m in the mood for somethi
+    72.38s  agent 발화 끝
+    76.57s  agent 발화 시작: Oh, I’ve read a few good thrillers lately. Have you come acr
+    76.57s  user  발화 끝
+    82.87s  user  발화 시작: Tana French… no, I don’t think so. What are her books like?
+    82.87s  agent 발화 끝
+    87.06s  agent 발화 시작: <ret> She’s a master of atmosphere. Tana French writes psych
+    87.06s  <ret> 발화 (turn15 첫 프레임)
+    87.06s  user  발화 끝
+    88.06s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.75s]: (tool result) Tana French is an Irish author known for her Dublin Murd
+    98.95s  user  발화 시작: Sounds good. I’ll look her up. [sigh] Actually, do you know 
+    98.95s  agent 발화 끝
+   104.89s  agent 발화 시작: Edinburgh is full of them! It’s a city steeped in history, a
+   104.89s  user  발화 끝
+   110.49s  user  발화 시작: Yeah, I've heard. I’m trying to find one that… well, one tha
+   110.49s  agent 발화 끝
+   116.43s  agent 발화 시작: <ret> That would be Deacon Brodie’s. Deacon Brodie’s Tavern 
+   116.43s  <ret> 발화 (turn19 첫 프레임)
+   116.43s  user  발화 끝
+   117.43s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.75s]: (tool result) Deacon Brodie’s Tavern, located on the Royal Mile in Edi
+   128.67s  user  발화 시작: A burglar? That’s… interesting. I wonder what Scott thought 
+   128.67s  agent 발화 끝
+   132.52s  agent 발화 시작: [chuckle] I imagine he found the irony rather appealing. He 
+   132.52s  user  발화 끝
+   140.21s  user  발화 시작: Sorry to interrupt, but do you know what time the National M
+   140.21s  agent 발화 끝
+   145.45s  agent 발화 시작: <ret> They close at five. The National Museum of Scotland is
+   145.45s  <ret> 발화 (turn23 첫 프레임)
+   145.45s  ⚡SPAN 주입 [d'=0.00s / d_lead=1.40s]: (tool result) The National Museum of Scotland is open daily from 10:00
+   145.45s  user  발화 끝
+   153.84s  user  발화 시작: Five… okay, good. Um, I was just wondering if you could find
+   153.84s  agent 발화 끝
+   161.89s  agent 발화 시작: Now *that* is a question for an old pilot! It’s a fascinatin
+   161.89s  user  발화 끝
+   166.75s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The Boeing 747 utilizes a pneumatic airspeed indicator s
+   167.13s  agent 발화 시작: <ret> Give me a moment on that one. The 747 uses a pneumatic
+   167.13s  agent 발화 끝
+   182.51s  user  발화 시작: Wow, six hundred ninety-five knots… that’s fast.
+   182.51s  agent 발화 끝
+   184.96s  agent 발화 시작: It certainly is. Though we rarely flew that fast in normal o
+   184.96s  user  발화 끝
+   195.45s  user  발화 시작: [happy] That’s a good analogy. I'm starting to feel much bet
+   195.45s  agent 발화 끝
+   201.05s  agent 발화 시작: Excellent! A little preparation goes a long way, especially 
+   201.05s  user  발화 끝
+   208.39s  agent 발화 끝

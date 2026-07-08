@@ -1,73 +1,71 @@
 # v3_fake__17_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hey moshi, who plays Senara on Agents of Shield?
-     3.33s  agent 발화 시작: <ret> Ah, a question about the Shield. That would be Florenc
-     3.33s  <ret> 발화 (turn1 첫 프레임)
-     3.33s  user  발화 끝
-     4.33s  ⚡SPAN 주입 [d'=1.00s / d_lead=5.55s]: Florence Faivre portrayed the character of Senara in the Marvel televi
-     8.88s  user  발화 시작: Oh, Florence Faivre. Is she in anything else I might know?
-     8.88s  agent 발화 끝
-    12.95s  agent 발화 시작: <ret> She's been quite busy, actually. Let me see…
-    12.95s  <ret> 발화 (turn3 첫 프레임)
-    12.95s  user  발화 끝
-    13.95s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.96s]: Florence Faivre has appeared in films such as The Handmaid's Tale and 
-    15.91s  user  발화 시작: The Handmaid’s Tale, uh, I think I’ve heard of that. Is she 
-    15.91s  agent 발화 끝
-    20.72s  agent 발화 시작: <ret> Not originally, no. She’s French, born in Paris.
-    20.72s  <ret> 발화 (turn5 첫 프레임)
-    20.72s  user  발화 끝
-    21.72s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.96s]: Florence Faivre was born on November 22, 1978, in Paris, France.
-    23.68s  user  발화 시작: Paris, that’s nice. [chuckle] Do you ever miss touring Europ
-    23.68s  agent 발화 끝
-    27.38s  agent 발화 시작: Oh, constantly. Some of my fondest memories are from smoky c
-    27.38s  user  발화 끝
-    35.53s  user  발화 시작: That sounds…amazing. What kind of music did you play?
-    35.53s  agent 발화 끝
-    38.86s  agent 발화 시작: Mostly standards, you know? Ellington, Basie, a little bit o
-    38.86s  user  발화 끝
-    48.11s  user  발화 시작: Monk, huh? I’m not very familiar with jazz, honestly.
-    48.11s  agent 발화 끝
-    51.44s  agent 발화 시작: Well, that's alright. Everyone starts somewhere. It’s a lang
-    51.44s  user  발화 끝
-    56.99s  user  발화 시작: So, Senara… she wasn't a main character on Agents of Shield,
-    56.99s  agent 발화 끝
-    61.80s  agent 발화 시작: <ret> No, she wasn't. Senara appeared in just three episodes
-    61.80s  <ret> 발화 (turn13 첫 프레임)
-    61.80s  user  발화 끝
-    62.80s  ⚡SPAN 주입 [d'=1.00s / d_lead=4.81s]: Senara is a recurring character in season five of Agents of S.H.I.E.L.
-    66.61s  user  발화 시작: Three episodes. Right. [sigh] I always forget the smaller ro
-    66.61s  agent 발화 끝
-    70.31s  agent 발화 시작: Happens to the best of us. It’s easy to get lost in the shuf
-    70.31s  user  발화 끝
-    78.45s  user  발화 시작: Do you think Florence Faivre has done much voice acting?
-    78.45s  agent 발화 끝
-    82.15s  agent 발화 시작: <ret> That’s a good question. Let's find out.
-    82.15s  <ret> 발화 (turn17 첫 프레임)
-    82.15s  user  발화 끝
-    83.15s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.59s]: Florence Faivre provided the voice for the character of Lyra in the vi
-    84.74s  user  발화 시작: Control, the video game? I’ve seen ads for that.
-    84.74s  agent 발화 끝
-    88.07s  agent 발화 시작: A very atmospheric game, I understand. Apparently, Florence 
-    88.07s  user  발화 끝
-    94.36s  user  발화 시작: Hmm. Remember that hotel we talked about earlier, the one in
-    94.36s  agent 발화 끝
-    99.17s  agent 발화 시작: Ah, yes, The Hotel Monteleone. A beautiful place, steeped in
-    99.17s  user  발화 끝
-   106.21s  user  발화 시작: Wow, '88. That’s a long time ago.
-   106.21s  agent 발화 끝
-   108.80s  agent 발화 시작: [laugh] Time flies when you're playing music, my friend. It 
-   108.80s  user  발화 끝
-   113.24s  user  발화 시작: One more question about Florence Faivre. Where was she born,
-   113.24s  agent 발화 끝
-   118.79s  agent 발화 시작: <ret> I did indeed. Specifically, the tenth arrondissement, 
-   118.79s  <ret> 발화 (turn25 첫 프레임)
-   118.79s  user  발화 끝
-   119.79s  ⚡SPAN 주입 [d'=1.00s / d_lead=4.81s]: Florence Faivre was born in the 10th arrondissement of Paris, France.
-   123.60s  user  발화 시작: The tenth arrondissement. Okay. Thanks, moshi.
-   123.60s  agent 발화 끝
-   125.82s  agent 발화 시작: <ret> My pleasure. Always happy to share a bit of knowledge,
-   125.82s  <ret> 발화 (turn27 첫 프레임)
-   125.82s  user  발화 끝
-   126.82s  ⚡SPAN 주입(IRRELEVANT) [d'=1.00s / d_lead=4.81s]: The Grand Budapest Hotel has availability for a standard room on Decem
-   130.63s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who played the Cat in the Hat in that movie?
+     6.05s  agent 발화 시작: That would be Mike Myers. He’s quite versatile, isn’t he?
+     6.05s  user  발화 끝
+    10.71s  user  발화 시작: Oh, right! Mike Myers. Um, was he in anything else… kind of…
+    10.71s  agent 발화 끝
+    16.76s  agent 발화 시작: Certainly. He is, of course, very well known for *Shrek*.
+    16.76s  user  발화 끝
+    21.41s  user  발화 시작: *Shrek*! Yes! That’s what I was thinking of. [laugh] Did he 
+    21.41s  agent 발화 끝
+    30.26s  agent 발화 시작: Indeed. He voiced Shrek in all five of the feature films.
+    30.26s  user  발화 끝
+    35.38s  user  발화 시작: Wow, five. That’s a lot of ogre.
+    35.38s  agent 발화 끝
+    38.63s  agent 발화 시작: It is a substantial commitment to a single role.
+    38.63s  user  발화 끝
+    42.82s  user  발화 시작: So, Professor Okonkwo, have you ever studied… uh… how storie
+    42.82s  agent 발화 끝
+    50.27s  agent 발화 시작: As a historian, I’ve often observed that adaptations reflect
+    50.27s  user  발화 끝
+    58.18s  user  발화 시작: That makes sense. It's like, the story stays the same, but… 
+    58.18s  agent 발화 끝
+    64.70s  agent 발화 시작: Precisely. The core narrative often remains, but the interpr
+    64.70s  user  발화 끝
+    69.36s  user  발화 시작: Okay. This is a bit random, but what’s the capital of Austra
+    69.36s  agent 발화 끝
+    74.94s  agent 발화 시작: <ret> A straightforward question. Canberra became Australia’
+    74.94s  <ret> 발화 (turn13 첫 프레임)
+    74.94s  user  발화 끝
+    75.94s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.40s]: Canberra is the capital city of Australia, officially becoming so in 1
+    86.58s  user  발화 시작: Nineteen thirteen? That's… pretty recent, actually.
+    86.58s  agent 발화 끝
+    89.37s  agent 발화 시작: Relatively so, when considering the broader sweep of history
+    89.37s  user  발화 끝
+    93.56s  user  발화 시작: I guess. Hey, uh, did Mike Myers ever win an Oscar?
+    93.56s  agent 발화 끝
+    98.68s  agent 발화 시작: <ret> Let’s check. Mike Myers received one Academy Award nom
+    98.68s  <ret> 발화 (turn17 첫 프레임)
+    98.68s  user  발화 끝
+    99.40s  ⚡SPAN 주입 [d'=0.72s / d_lead=0.93s]: Mike Myers has never won an Academy Award, but he has been nominated o
+   109.85s  user  발화 시작: Just makeup? That's a bit odd.
+   109.85s  agent 발화 끝
+   112.64s  agent 발화 시작: It does highlight the collaborative nature of filmmaking, do
+   112.64s  user  발화 끝
+   117.30s  user  발화 시작: Yeah, I suppose. [sigh] Okay, one more… what’s the highest m
+   117.30s  agent 발화 끝
+   123.35s  agent 발화 시작: <ret> Certainly. Mount Kilimanjaro in Tanzania reaches five 
+   123.35s  <ret> 발화 (turn21 첫 프레임)
+   123.35s  user  발화 끝
+   123.43s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.47s]: Mount Kilimanjaro, located in Tanzania, is the highest mountain in Afr
+   132.19s  user  발화 시작: Tanzania… is that near Kenya?
+   132.19s  agent 발화 끝
+   134.52s  agent 발화 시작: It shares a border with Kenya, yes. The region has a rich hi
+   134.52s  user  발화 끝
+   141.97s  user  발화 시작: Oh. I didn’t know that.
+   141.97s  agent 발화 끝
+   144.30s  agent 발화 시작: Indeed. The Swahili coast, in particular, was a vital condui
+   144.30s  user  발화 끝
+   151.74s  user  발화 시작: That’s… interesting.
+   151.74s  agent 발화 끝
+   152.68s  agent 발화 시작: <ret> It is a region I’ve devoted considerable study to, nat
+   152.68s  <ret> 발화 (turn27 첫 프레임)
+   152.68s  user  발화 끝
+   153.68s  ⚡SPAN 주입(IRRELEVANT) [d'=1.00s / d_lead=4.65s]: Current time in Honolulu is 10:32 PM HST.
+   157.33s  user  발화 시작: Wow. Um, that's cool. I think that's all my questions for no
+   157.33s  agent 발화 끝
+   162.92s  agent 발화 시작: A pleasure to converse with you.
+   162.92s  user  발화 끝
+   165.71s  agent 발화 끝

@@ -1,0 +1,36 @@
+v3_abs_25_ko src=squad2 style=abstain
+SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 반말로 말합니다. <system>
+표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+
+[user ] 500년대에 앵글로색슨족이 어디에 정착했어?
+[moshi] <ret> 음, ⟦⚡SPAN@3.23s: (no information found)⟧ 좋은 질문인데. 안타깝게도 500년대의 정확한 정착지를 짚어내기는 어려워—그 시대 기록이 상당히 조각나 있거든. 사실은 점진적인 과정이었지.
+[user ] 그래, 점진적이었지… 음, 건축 자재는 어땠어? 뭘 썼는데?
+[moshi] 주로 목재, 벽은 흙과 나무 얽은 방식, 지붕은 짚으로 덮었어. 다 현지에서 쉽게 구할 수 있는 걸 썼지.
+[user ] 흙과 나무 얽은 방식… 지저분하겠는데.
+[moshi] [chuckle] 가장 세련된 기술은 아니었지, 그렇지. 하지만 관리를 잘하면 의외로 튼튼해. 재현된 걸 봤는데 정말 잘 버티더라고.
+[user ] 흥미롭네. 그땐… 도시가 있었어?
+[moshi] <ret> 네, ⟦⚡SPAN@42.51s: Early Anglo-Saxon settlements consisted of small villages and farmsteads, with some larger sites emerging as r⟧ 뭐. 7세기가 되면 정착촌들이 지역 중심지로 발전하긴 했는데, 로마 시대 도시 같은 건 아니었어—전문 기술을 가진 좀 더 큰 마을 같은 거지. 초기 도시라고 생각하면 돼.
+[user ] 초기 도시. 음-음. 알겠어. 로마 유적은 어땠어? 그걸 썼어?
+[moshi] 맞아. 로마 유적에서 돌, 벽돌, 심지어 모자이크까지 재활용했어. 실용성이 존중받았지, 안타깝게도.
+[user ] [surprised] 정말? 그냥… 부수고 가져다 썼어?
+[moshi] 건축 자재를 구하기 편했거든. 있는 걸 재활용하면 노동력을 많이 절약할 수 있어. 사실 많은 시대에 흔한 방식이야.
+[user ] 그건… 효율적이네, 그런가. 그럼, 그 집들은 대략 어떻게 생겼어?
+[moshi] <ret> ⟦⚡SPAN@86.92s: Anglo-Saxon houses were typically single-roomed, rectangular structures built with timber frames and wattle-an⟧ 간단했지, 보통. 보통 단칸방에, 직사각형 모양에, 나무 골조에, 흙과 나무 얽은 벽에, 짚으로 덮은 지붕이었어—매우 기능적이었지만 넓지는 않았어. 공간보다 따뜻함이 우선이었거든.
+[user ] 따뜻함… 그건 그렇겠네. 유리는 있었어?
+[moshi] 유리는 드물고 비쌌어. 주로 교회 창문이나 부유층의 집에 사용했지. 대부분의 집은 가죽이나 기름 묻힌 천으로 창문을 막았어.
+[user ] 가죽… [sigh] 썰렁하겠는데.
+[moshi] 호화로운 생활은 아니었지, 그렇지. 하지만 따뜻하게 난방하고 요리할 수 있는 벽난로를 잘 만들었어.
+[user ] 벽난로… 그래. 더 큰 건물은 있었어? 예를 들면, 회의 같은 거 할 때?
+[moshi] <ret> 네, ⟦⚡SPAN@128.34s: Anglo-Saxon halls, or mead halls, were large timber buildings used for feasting, meetings, and as the residenc⟧ 좀 큰 홀도 있었어. 큰 나무 홀—메드 홀—을 지어서 연회도 하고 회의도 하고, 지역 영주와 그의 추종자들이 살기도 했지. 공동체의 중심이었어, 그 홀들은.
+[user ] 메드 홀… 그런 곳에 대해 읽은 적이 있어. 그럼 영주들은 *거기*서 살았어?
+[moshi] 보통 그랬어. 메드 홀은 거주 공간이자 공동 공간 역할을 했어—권력과 환대의 상징이었지.
+[user ] 흥미롭네. 음… 방어 시설은 어땠어? 마을은 요새화되어 있었어?
+[moshi] 초기 정착촌은 크게 요새화되지 않았지만, 기본적인 보호를 위해 나무 울타리나 도랑을 두르는 경우가 많았어. 더 튼튼한 요새는 바이킹의 침략 이후에 만들어졌지.
+[user ] 바이킹의 침략… 그래. 그 방어 시설은 직접 지었어?
+[moshi] 대부분 그랬어. 때로는 기존의 로마 토목 공사를 재활용해서 필요에 맞게 개조하기도 했지. 요령이 좋았어.
+[user ] 요령이 좋았네… 나— 그러니까, 좋은 자질이지. 그런 울타리는 보통 어떤 모양이었어?
+[moshi] <ret> 원형이나 ⟦⚡SPAN@190.81s: Anglo-Saxon timber stockades and burhs were commonly circular or rectangular in shape, often incorporating a d⟧ 직사각형. 울타리와 부르는 보통 원형이나 직사각형이었는데, 방어를 강화하기 위해 주변에 도랑과 둑을 파기도 했어. 간단하지만 그 시대에는 효과적이었지.
+[user ] 부르는? 그게 뭔데?
+[moshi] 요새화된 정착지. 기본적으로 방어와 무역을 위해 설계된 초기 형태의 도시야. 잉글랜드가 통일되면서 점점 중요해졌지.
+[user ] 그러니까… 현대 도시의 씨앗 같은 건가?
+[moshi] 정확해. 우리 도시와 마을의 많은 곳이 그 초기 부르에서 자라나 수세기에 걸쳐 발전했어. 직접적인 발전 과정이라고 할 수 있지.

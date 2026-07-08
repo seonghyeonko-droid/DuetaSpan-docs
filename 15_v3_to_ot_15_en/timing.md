@@ -1,73 +1,65 @@
 # v3_to_ot_15_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hey Moshi, when did the second battle of Panipat happen?
-     4.62s  agent 발화 시작: <ret> Ah, a question of history, always good. The second bat
-     4.62s  <ret> 발화 (turn1 첫 프레임)
-     4.62s  user  발화 끝
-     5.62s  ⚡SPAN 주입 [d'=1.00s / d_lead=8.77s]: The Second Battle of Panipat was fought on November 5, 1556, between t
-    13.39s  user  발화 시작: Fifteen fifty-six, okay. And who were the main… uh, who foug
-    13.39s  agent 발화 끝
-    19.40s  agent 발화 시작: <ret> Well now, that battle pitted the forces of Akbar—the M
-    19.40s  <ret> 발화 (turn3 첫 프레임)
-    19.40s  user  발화 끝
-    20.40s  ⚡SPAN 주입 [d'=1.00s / d_lead=8.31s]: The Second Battle of Panipat was fought on November 5, 1556, between t
-    27.71s  user  발화 시작: Right, Akbar. I think I’ve heard that name before.
-    27.71s  agent 발화 끝
-    31.87s  agent 발화 시작: You likely have. He was quite a figure, really. A strong rul
-    31.87s  user  발화 끝
-    41.57s  user  발화 시작: You always seem to know everything.
-    41.57s  agent 발화 끝
-    44.34s  agent 발화 시작: [chuckle] Years on the road give a man time to pick up a few
-    44.34s  user  발화 끝
-    54.96s  user  발화 시작: True enough. Say, can you tell me a little more about Hemu?
-    54.96s  agent 발화 끝
-    60.50s  agent 발화 시작: <ret> Hemu, now there was a man who rose quickly. He wasn’t 
-    60.50s  <ret> 발화 (turn9 첫 프레임)
-    60.50s  user  발화 끝
-    61.50s  ⚡SPAN 주입 [d'=1.00s / d_lead=13.39s]: Hemu was a Hindu general who came to power in northern India in the 16
-    73.89s  user  발화 시작: That’s interesting. He almost… took over?
-    73.89s  agent 발화 끝
-    76.66s  agent 발화 시작: Almost is the key word, I’m afraid. Akbar’s forces were simp
-    76.66s  user  발화 끝
-    85.44s  user  발화 시작: Honey, did you take the chicken out of the freezer?
-    85.44s  agent 발화 끝
-    90.06s  user  발화 시작: Sorry, Moshi. Where were we?
-    90.06s  user  발화 끝
-    92.37s  agent 발화 시작: No matter, no matter. We were discussing Hemu, and his ambit
-    92.37s  user  발화 끝
-   100.22s  user  발화 시작: So, Panipat… was it a strategically important place?
-   100.22s  agent 발화 끝
-   103.91s  agent 발화 시작: <ret> It certainly was. Panipat is a plain north of Delhi, a
-   103.91s  <ret> 발화 (turn16 첫 프레임)
-   103.91s  user  발화 끝
-   104.91s  ⚡SPAN 주입 [d'=1.00s / d_lead=13.39s]: Panipat is a town north of Delhi that has been the site of three histo
-   117.31s  user  발화 시작: Three battles? You said *the* second battle.
-   117.31s  agent 발화 끝
-   120.54s  agent 발화 시작: Indeed, I did. There was a first, in fifteen twenty-six, and
-   120.54s  user  발화 끝
-   132.09s  user  발화 시작: Oh. So it’s kind of like a historical crossroads?
-   132.09s  agent 발화 끝
-   136.24s  agent 발화 시작: You could say that. A place where empires clashed and fortun
-   136.24s  user  발화 끝
-   147.79s  user  발화 시작: Hmm. Was the first battle of Panipat also between Mughals an
-   147.79s  agent 발화 끝
-   153.79s  agent 발화 시작: <ret> That one was between the Mughal emperor Babur and the 
-   153.79s  <ret> 발화 (turn22 첫 프레임)
-   153.79s  user  발화 끝
-   154.79s  ⚡SPAN 주입 [d'=1.00s / d_lead=13.39s]: The First Battle of Panipat, fought in 1526, resulted in Babur’s victo
-   167.18s  user  발화 시작: So, Babur *started* the Mughal Empire then?
-   167.18s  agent 발화 끝
-   170.42s  agent 발화 시작: That’s right. He laid the foundation. Akbar, whom we discuss
-   170.42s  user  발화 끝
-   178.73s  user  발화 시작: Okay, that makes sense. What about this third battle? The on
-   178.73s  agent 발화 끝
-   185.20s  agent 발화 시작: <ret> Ah, that was between the Mughal Empire, under Aurangze
-   185.20s  <ret> 발화 (turn26 첫 프레임)
-   185.20s  user  발화 끝
-   186.20s  ⚡SPAN 주입 [d'=1.00s / d_lead=10.62s]: The Third Battle of Panipat, in 1761, saw the Mughal Empire, led by Au
-   195.82s  user  발화 시작: So the Marathas kept fighting even after that defeat?
-   195.82s  agent 발화 끝
-   199.98s  agent 발화 시작: Absolutely. They continued to challenge Mughal authority for
-   199.98s  user  발화 끝
-   206.44s  agent 발화 끝
+     0.00s  user  발화 시작: So, uh, what English-speaking country is in South America?
+     3.46s  agent 발화 시작: Guyana, of course. A rather overlooked gem, musically speaki
+     3.46s  user  발화 끝
+     6.92s  user  발화 시작: Guyana… right. What’s the capital?
+     6.92s  agent 발화 끝
+     8.84s  agent 발화 시작: <ret> Georgetown is. It’s on the Atlantic coast, where the D
+     8.84s  <ret> 발화 (turn3 첫 프레임)
+     8.84s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.77s]: Georgetown is the capital of Guyana, located on the Atlantic coast at 
+     8.84s  user  발화 끝
+    15.76s  user  발화 시작: Hmm. And what about… population? Roughly?
+    15.76s  agent 발화 끝
+    18.06s  agent 발화 시작: <ret> Around eight hundred thousand. The 2023 estimate puts 
+    18.06s  <ret> 발화 (turn5 첫 프레임)
+    18.06s  user  발화 끝
+    18.78s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.54s]: As of 2023, Guyana’s population is estimated to be 808,726, making it 
+    28.06s  user  발화 시작: That’s… not very many, is it? [sigh] I mean, compared to Bra
+    28.06s  agent 발화 끝
+    33.44s  agent 발화 시작: No, not at all. Though size isn’t everything, you know. A sm
+    33.44s  user  발화 끝
+    41.89s  user  발화 시작: True enough. What’s the currency there?
+    41.89s  agent 발화 끝
+    44.20s  agent 발화 시작: <ret> The Guyanese dollar. One dollar equals roughly two hun
+    44.20s  <ret> 발화 (turn9 첫 프레임)
+    44.20s  user  발화 끝
+    45.20s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.15s]: The official currency of Guyana is the Guyanese dollar, with the symbo
+    56.12s  user  발화 시작: Good to know. I— I think I’m gonna look for a map…
+    56.12s  agent 발화 끝
+    60.73s  user  발화 시작: Hey, did you take the recycling out?
+    60.73s  user  발화 끝
+    63.42s  user  발화 시작: Sorry about that. Okay, back to Guyana. What’s the main indu
+    63.42s  user  발화 끝
+    67.65s  agent 발화 시작: Historically, sugar. Though oil is becoming a significant pl
+    67.65s  user  발화 끝
+    71.87s  user  발화 시작: Oil, huh? Interesting. What languages are spoken besides Eng
+    71.87s  agent 발화 끝
+    75.33s  agent 발화 시작: <ret> Several, actually. Residents speak Guyanese Creole, Ca
+    75.33s  <ret> 발화 (turn15 첫 프레임)
+    75.33s  user  발화 끝
+    75.41s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.77s]: The official language of Guyana is English, but many residents also sp
+    83.02s  user  발화 시작: Wow, that *is* a mix. Is it part of the Caribbean?
+    83.02s  agent 발화 끝
+    87.25s  agent 발화 시작: Geographically, yes, it's considered part of the Caribbean r
+    87.25s  user  발화 끝
+    96.09s  user  발화 시작: That makes sense. Is it…safe to travel there?
+    96.09s  agent 발화 끝
+    99.16s  agent 발화 시작: Generally, yes, but like anywhere, it pays to be aware of yo
+    99.16s  user  발화 끝
+   106.85s  user  발화 시작: Right. Okay. Um, what's the climate like?
+   106.85s  agent 발화 끝
+   109.54s  agent 발화 시작: <ret> Tropical, predictably. Temperatures consistently range
+   109.54s  <ret> 발화 (turn21 첫 프레임)
+   109.54s  user  발화 끝
+   109.86s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.77s]: Guyana has a tropical climate with consistent temperatures between 21 
+   119.53s  user  발화 시작: So, hot and wet. Got it. What about music? Is there a distin
+   119.53s  agent 발화 끝
+   125.68s  agent 발화 시작: Oh, absolutely. There’s a lot of calypso influence, but blen
+   125.68s  user  발화 끝
+   138.75s  user  발화 시작: That sounds… really cool, actually.
+   138.75s  agent 발화 끝
+   140.67s  agent 발화 시작: It is. You might look up some music by Dave Martins and the 
+   140.67s  user  발화 끝
+   147.59s  agent 발화 끝

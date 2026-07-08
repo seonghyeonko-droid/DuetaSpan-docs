@@ -1,0 +1,34 @@
+v3_fake__16_ko src=nq style=v1
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+
+[user ] 안녕하세요. 프랑스가 오하이오 강 유역의 영유권을 유지하려고 뭘 했는지 궁금하시군요?
+[moshi] 네, 프랑스는 요새 네트워크와 원주민과의 동맹을 통해 통제력을 강화하려고 시도했어요.
+[user ] 요새요? 어떤 종류의 요새였어요? 컸어요?
+[moshi] <ret> ⟦⚡SPAN@15.89s: Fort Duquesne, built in 1754, was a strategically important French fort located at the confluence of the Alleg⟧ 음, 꽤 컸어요. 1754년에 건설된 뒤퀘스느 요새는 강이 만나는 지점에 있었는데, 아주 중요한 곳이었죠. 영국 확장을 막기 위한 거였어요.
+[user ] 그걸 누가 지었어요? 프랑스 군인들이겠죠?
+[moshi] 주로 그렇긴 했죠. 하지만 식민지 군대와, 무엇보다 중요한 건 원주민 노동력에 의존했어요.
+[user ] 영국은 그냥 내버려뒀어요?
+[moshi] 꼭 그렇진 않았어요. 상당한 갈등이 있었고, 영국도 그 지역에 자체 요새를 건설하기 시작해서 직접적인 충돌로 이어졌어요.
+[user ] [sigh] 결국 땅을 차지하려고 한 거군요?
+[moshi] 좀 직설적인 평가지만 틀린 말은 아니에요. 두 제국 모두 오하이오 강 유역이 경제적, 전략적으로 매우 중요하다고 생각했어요.
+[user ] 땅만 중요한 건 아니었죠? 다른 자원도 원했어요?
+[moshi] <ret> ⟦⚡SPAN@69.91s: The Ohio River Valley was rich in fur-bearing animals, attracting French traders and contributing to the lucra⟧ 물론이죠. 그 지역의 풍부한 모피 동물이 수익성 높은 모피 무역을 이끌었고, 프랑스 상인들을 끌어들였어요. 그 무역은 프랑스 경제에 엄청나게 중요했죠.
+[user ] 모피군요. 그 말이 맞아요. 원주민들이랑 모피를 거래했어요?
+[moshi] 맞아요. 그런 관계를 구축하고 유지하는 게 프랑스 전략의 핵심이었어요. 그들은 무역 상품뿐만 아니라 군사 동맹도 제공했죠.
+[user ] 원주민들은요? 그 사람들도 의견을 말할 수 있었어요?
+[moshi] 그들의 역할이 종종 과소평가돼요. 여러 부족들이 각자의 이익과 오랜 불만에 따라 프랑스 또는 영국과 동맹을 맺었어요.
+[user ] 그냥 프랑스 대 영국으로 단순한 문제가 아니었군요?
+[moshi] 전혀 그렇지 않아요. 여러 원주민 국가가 얽힌 복잡한 동맹과 경쟁의 거미줄이었죠.
+[user ] 알겠어요. 프랑스에게 특히 중요한 부족이 있었나요?
+[moshi] <ret> 네, ⟦⚡SPAN@128.11s: The Huron Confederacy maintained a long-standing trading relationship with the French, providing them with cru⟧ 후론족이 가장 중요했어요. 후론 연맹은 오랜 무역 관계를 통해 모피 무역 네트워크에 접근할 수 있었죠. 그들은 뉴프랑스에게 아주 중요한 파트너였어요.
+[user ] 영국은요? 누구와 손을 잡았어요?
+[moshi] 영국은 후론족과 오랜 경쟁 관계에 있던 이로쿼이 연맹과 동맹을 맺었어요.
+[user ] 그러니까 프랑스와 영국은 기본적으로 동맹을 통해 싸운 거군요?
+[moshi] <ret> 상당한 ⟦⚡SPAN IRRELEVANT@155.44s: The current price of Brent crude oil is eighty-two dollars and fifty cents per barrel.⟧ 정도로는 그랬어요. 많은 면에서 원주민 땅에서 대리전이 벌어진 셈이죠.
+[user ] 정말… 복잡하네요.
+[moshi] [chuckle] “복잡하다”는 표현은 관대한 편이에요. 격렬한 정치적 술수와 폭력의 확산이 있었던 시기였죠. 물론 그 결과는 광범위했어요.
+[user ] 어떻게요? 결국 어떻게 됐어요?
+[moshi] 결국 프랑스-인디언 전쟁으로 이어졌고, 영국이 북미 대륙을 지배하게 되었어요. 아주 중요한 권력 변화였죠.
+[user ] 프랑스는 모든 걸 잃은 건가요?
+[moshi] *모든* 걸 잃은 건 아니지만, 오하이오 강 유역을 포함한 대부분의 북미 영토를 잃었어요. 그 지역에서 프랑스의 식민지 야망의 종식을 의미했죠.

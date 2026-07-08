@@ -1,61 +1,65 @@
 # v3_mcp_02_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hi, moshi! How are you doing today?
-     2.83s  agent 발화 시작: Oh, hello there! I’m doing quite well, thank you for asking.
-     2.83s  user  발화 끝
-    11.71s  user  발화 시작: I’m good, thanks. Um, I’m planning a trip to the Caribbean, 
-    11.71s  agent 발화 끝
-    21.41s  agent 발화 시작: <ret>
-    21.41s  <ret> 발화 (turn3 첫 프레임)
-    21.41s  user  발화 끝
-    21.57s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.40s]: (tool result) The average water temperature in Barbados is currently t
-    21.81s  user  발화 시작: That sounds lovely! Yeah, definitely. I was thinking of goin
-    21.81s  agent 발화 끝
-    26.25s  agent 발화 시작: Snorkeling is wonderful. The reefs there are teeming with li
-    26.25s  user  발화 끝
-    33.12s  user  발화 시작: That's what I'm hoping for! Do you know—or could you find ou
-    33.12s  agent 발화 끝
-    41.60s  agent 발화 시작: <ret>
-    41.60s  <ret> 발화 (turn7 첫 프레임)
-    41.60s  user  발화 끝
-    42.00s  ⚡SPAN 주입 [d'=0.40s / d_lead=0.40s]: (tool result) Visibility in Carlisle Bay, Barbados, is currently avera
-    42.00s  user  발화 시작: Oh, fantastic! That's really good to hear. I’m also trying t
-    42.00s  agent 발화 끝
-    50.08s  agent 발화 시작: Well, Barbados has a lovely variety. You’ll find plenty of b
-    50.08s  user  발화 끝
-    60.98s  user  발화 시작: Elkhorn, huh? That sounds… interesting. [chuckle] My friend 
-    60.98s  agent 발화 끝
-    67.04s  agent 발화 시작: Oh, the food is delightful! Fresh seafood is a staple, of co
-    67.04s  user  발화 끝
-    75.52s  user  발화 시작: Flying fish? I'll have to try that. Speaking of fish, are th
-    75.52s  agent 발화 끝
-    84.00s  agent 발화 시작: It’s always wise to be mindful. There are some scorpionfish,
-    84.00s  user  발화 끝
-    94.10s  user  발화 시작: Okay, good to know. Scorpionfish… noted. I remember reading 
-    94.10s  agent 발화 끝
-    99.76s  agent 발화 시작: Sea urchins are also present, and their spines can be painfu
-    99.76s  user  발화 끝
-   110.26s  user  발화 시작: Right, water shoes. Smart. What about the best time of year 
-   110.26s  agent 발화 끝
-   116.72s  agent 발화 시작: <ret>
-   116.72s  <ret> 발화 (turn17 첫 프레임)
-   116.72s  user  발화 끝
-   116.88s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.40s]: (tool result) The calmest seas in Barbados are typically experienced d
-   117.12s  user  발화 시작: December to April… okay. That's helpful. I'm trying to decid
-   117.12s  agent 발화 끝
-   123.18s  agent 발화 시작: Both islands are beautiful, but they offer different experie
-   123.18s  user  발화 끝
-   133.28s  user  발화 시작: Hmm, that's a good point. I do like dramatic scenery.
-   133.28s  agent 발화 끝
-   137.32s  agent 발화 시작: St. Lucia’s Pitons are truly breathtaking. Though, the coral
-   137.32s  user  발화 끝
-   145.80s  user  발화 시작: Yeah, you're right. It's a tough choice. I think I'm leaning
-   145.80s  agent 발화 끝
-   151.45s  agent 발화 시작: A wonderful choice! You’ll find plenty to explore and enjoy 
-   151.45s  user  발화 끝
-   158.72s  user  발화 시작: Thanks, moshi! You’ve been really helpful.
-   158.72s  agent 발화 끝
-   161.14s  agent 발화 시작: It was my pleasure. I always enjoy discussing these beautifu
-   161.14s  user  발화 끝
-   170.03s  agent 발화 끝
+     0.00s  user  발화 시작: So, I’m thinking of getting a new houseplant. Something… unu
+     4.49s  agent 발화 시작: Unusual is good! There are so many fascinating plants beyond
+     4.49s  user  발화 끝
+    15.71s  user  발화 시작: Uh, pretty bright, actually. South-facing window.
+    15.71s  agent 발화 끝
+    18.40s  agent 발화 시작: Excellent. South-facing light offers a lot of possibilities.
+    18.40s  user  발화 끝
+    24.69s  user  발화 시작: I was reading about orchids, but they seem… complicated.
+    24.69s  agent 발화 끝
+    28.73s  agent 발화 시작: They can be, yes. Orchids have a reputation for being finick
+    28.73s  user  발화 끝
+    40.39s  user  발화 시작: Lady slipper… sounds fancy. Are they hard to find?
+    40.39s  agent 발화 끝
+    44.43s  agent 발화 시작: <ret> Not particularly. Greenhaven Gardens and Bloom & Grow 
+    44.43s  <ret> 발화 (turn7 첫 프레임)
+    44.43s  user  발화 끝
+    44.75s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.90s]: (tool result) Local nurseries report *Paphiopedilum* orchids currently
+    56.55s  user  발화 시작: Wow, that’s… specific. Good to know. [chuckle] My aunt Mabel
+    56.55s  agent 발화 끝
+    69.57s  agent 발화 시작: They come in a beautiful range of mottled greens, burgundies
+    69.57s  user  발화 끝
+    80.34s  user  발화 시작: Sounds lovely. I’m trying to remember the name of this plant
+    80.34s  agent 발화 끝
+    88.87s  agent 발화 시작: Fuzzy leaves… that narrows it down. Was it a member of the *
+    88.87s  user  발화 끝
+    99.64s  user  발화 시작: I— I don’t think so. It wasn’t flowering, as far as I could 
+    99.64s  agent 발화 끝
+   108.17s  agent 발화 시작: <ret> Perhaps a *Senecio*? *Senecio mandraliscae* and *Senec
+   108.17s  <ret> 발화 (turn13 첫 프레임)
+   108.17s  user  발화 끝
+   109.05s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.35s]: (tool result) *Senecio* species with fuzzy leaves include *Senecio man
+   119.39s  user  발화 시작: Dusty miller… yeah, that’s it! I think that was it. Do they 
+   119.39s  agent 발화 끝
+   127.02s  agent 발화 시작: Dusty miller is quite drought-tolerant, actually. They prefe
+   127.02s  user  발화 끝
+   139.14s  user  발화 시작: That’s good. I’m terrible at remembering to water things. [s
+   139.14s  agent 발화 끝
+   143.63s  agent 발화 시작: Many people are! It’s a common struggle. A good rule of thum
+   143.63s  user  발화 끝
+   156.64s  user  발화 시작: I read somewhere that some plants can actually *clean* the a
+   156.64s  agent 발화 끝
+   162.92s  agent 발화 시작: It’s a bit of a simplification, but yes, there’s some truth 
+   162.92s  user  발화 끝
+   176.39s  user  발화 시작: Like what compounds? I'm curious.
+   176.39s  agent 발화 끝
+   178.63s  agent 발화 시작: <ret> Some specific compounds… Spider plants, snake plants, 
+   178.63s  <ret> 발화 (turn21 첫 프레임)
+   178.63s  user  발화 끝
+   178.95s  ⚡SPAN 주입 [d'=0.32s / d_lead=1.35s]: (tool result) NASA’s Clean Air Study identified plants like spider pla
+   194.34s  user  발화 시작: That’s fascinating! Okay, I think I’m leaning towards the du
+   194.34s  agent 발화 끝
+   201.08s  agent 발화 시작: It’s an excellent choice. They're surprisingly resilient, an
+   201.08s  user  발화 끝
+   209.15s  user  발화 시작: Do they get… big? I don't have a huge amount of room.
+   209.15s  agent 발화 끝
+   214.54s  agent 발화 시작: They generally stay relatively compact, especially when grow
+   214.54s  user  발화 끝
+   227.11s  user  발화 시작: Hmm, thirty centimeters… that’s not bad at all. I'm sold! Th
+   227.11s  agent 발화 끝
+   232.49s  agent 발화 시작: You’re very welcome. I’m glad I could help you find a new pl
+   232.49s  user  발화 끝
+   243.71s  agent 발화 끝

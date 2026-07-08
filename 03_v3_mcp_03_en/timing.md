@@ -1,67 +1,61 @@
 # v3_mcp_03_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hi moshi, how are you doing today?
-     2.68s  agent 발화 시작: Oh, hello there! I’m doing quite well, thank you for asking.
-     2.68s  user  발화 끝
-    11.49s  user  발화 시작: Mm-hmm.
-    11.49s  agent 발화 끝
-    11.87s  user  발화 시작: That sounds… peaceful. I’m planning a trip to Switzerland in
-    11.87s  user  발화 끝
-    16.08s  agent 발화 시작: Switzerland in September! An excellent choice. The air will 
-    16.08s  user  발화 끝
-    24.51s  user  발화 시작: I'm hoping to do some hiking. Um, are there any good trails 
-    24.51s  agent 발화 끝
-    29.87s  agent 발화 시작: Zermatt is spectacular. It’s a wonderful base for hiking, su
-    29.87s  user  발화 끝
-    38.29s  user  발화 시작: That would be great. I’m not super experienced, though—nothi
-    38.29s  agent 발화 끝
-    42.50s  agent 발화 시작: Certainly. We want something enjoyable, not exhausting. [chu
-    42.50s  user  발화 끝
-    52.08s  user  발화 시작: Flowers would be nice! Something with a good view, too, I gu
-    52.08s  agent 발화 끝
-    56.67s  agent 발화 시작: <ret> A view *and* flowers… a perfect combination. <ret>
-    56.67s  <ret> 발화 (turn10 첫 프레임)
-    56.67s  user  발화 끝
-    57.63s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.68s]: (tool result) The 5-Lakes Walk near Zermatt is a moderate 9.6 kilomete
-    59.35s  agent 발화 시작: The 5-Lakes Walk near Zermatt sounds ideal. It’s about six m
-    59.35s  agent 발화 끝
-    69.69s  user  발화 시작: Wow, that sounds perfect, actually. What kind of wildflowers
-    69.69s  agent 발화 끝
-    75.43s  agent 발화 시작: September is a lovely time for gentians and asters, really a
-    75.43s  user  발화 끝
-    87.69s  user  발화 시작: Edelweiss! I’ve always wanted to see those.
-    87.69s  agent 발화 끝
-    90.37s  agent 발화 시작: They are quite special, aren’t they? A bit of a symbol of th
-    90.37s  user  발화 끝
-   103.39s  user  발화 시작: Of course, wouldn't dream of it. Is it usually pretty crowde
-   103.39s  agent 발화 끝
-   108.75s  agent 발화 시작: It can get busy, especially during peak hours. I’d recommend
-   108.75s  user  발화 끝
-   116.40s  user  발화 시작: Good idea. I'm also thinking about maybe staying in a smalle
-   116.40s  agent 발화 끝
-   122.91s  agent 발화 시작: A good thought. Zermatt can be quite bustling. [sigh] Täsch 
-   122.91s  user  발화 끝
-   130.95s  user  발화 시작: Täsch… I’ll look that up. Remember that hotel you mentioned 
-   130.95s  agent 발화 끝
-   136.32s  agent 발화 시작: Ah yes, the Hotel Alex. A very charming place with a lovely 
-   136.32s  user  발화 끝
-   144.74s  user  발화 시작: That does sound nice. What's the weather usually like in Sep
-   144.74s  agent 발화 끝
-   148.95s  agent 발화 시작: September in the Swiss Alps is generally pleasant. Daytime t
-   148.95s  user  발화 끝
-   160.44s  user  발화 시작: Okay, good to know. I should pack layers, then.
-   160.44s  agent 발화 끝
-   163.88s  agent 발화 시작: Absolutely. Layers are essential. And a good pair of waterpr
-   163.88s  user  발화 끝
-   173.07s  user  발화 시작: You’re right about that. I'm getting excited now!
-   173.07s  agent 발화 끝
-   176.14s  agent 발화 시작: That's wonderful to hear! It truly is a magical place. I spe
-   176.14s  user  발화 끝
-   186.09s  user  발화 시작: Yeah.
-   186.09s  agent 발화 끝
-   186.48s  user  발화 시작: I think I have a good starting point for planning, thanks to
-   186.48s  user  발화 끝
-   191.45s  agent 발화 시작: My pleasure entirely. I'm always happy to share my knowledge
-   191.45s  user  발화 끝
-   196.81s  agent 발화 끝
+     0.00s  user  발화 시작: So, I’m thinking about a vacation… somewhere warm.
+     3.33s  agent 발화 시작: A warm getaway sounds lovely. Are you leaning towards a beac
+     3.33s  user  발화 끝
+     8.31s  user  발화 시작: Yeah, definitely. Something with good snorkeling. I— I mean,
+     8.31s  agent 발화 끝
+    15.38s  agent 발화 시작: Excellent choice. Snorkeling offers a wonderful view of mari
+    15.38s  user  발화 끝
+    22.45s  user  발화 시작: Hmm, the Caribbean… I’ve been a few times. Is there anywhere
+    22.45s  agent 발화 끝
+    32.42s  agent 발화 시작: <ret> Possibly. Raja Ampat, Egypt’s Red Sea, and Palau all b
+    32.42s  <ret> 발화 (turn5 첫 프레임)
+    32.42s  user  발화 끝
+    32.74s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.42s]: (tool result) The top three least crowded destinations with highly-rat
+    44.06s  user  발화 시작: Raja Ampat… that sounds exotic. What’s the water temperature
+    44.06s  agent 발화 끝
+    48.64s  agent 발화 시작: The water temperature in Raja Ampat generally ranges between
+    48.64s  user  발화 끝
+    56.95s  user  발화 시작: Wow, that *is* warm. [laugh] I’m trying to picture it. What 
+    56.95s  agent 발화 끝
+    65.68s  agent 발화 시작: It’s a remarkably biodiverse region. You’ll find hard corals
+    65.68s  user  발화 끝
+    76.90s  user  발화 시작: That sounds incredible. Are there any… uh… dangers to be awa
+    76.90s  agent 발화 끝
+    83.14s  agent 발화 시작: While Raja Ampat is generally safe, it’s always wise to be c
+    83.14s  user  발화 끝
+    96.02s  user  발화 시작: Stonefish… right. Good to know. I’m also a bit of a foodie, 
+    96.02s  agent 발화 끝
+   103.51s  agent 발화 시작: Indonesian cuisine is wonderfully diverse. In Raja Ampat, ex
+   103.51s  user  발화 끝
+   115.56s  user  발화 시작: (someone speaking in the background, unintelligible)
+   115.56s  agent 발화 끝
+   118.06s  user  발화 시작: Oh, that sounds amazing. [sigh] It's a long way to go, thoug
+   118.06s  user  발화 끝
+   123.04s  agent 발화 시작: It is a considerable journey, yes. But the reward—the pristi
+   123.04s  user  발화 끝
+   131.77s  user  발화 시작: I think you’re right. I’m starting to get really excited abo
+   131.77s  agent 발화 끝
+   141.75s  agent 발화 시작: Raja Ampat is famous for its incredible fish diversity. You’
+   141.75s  user  발화 끝
+   156.30s  user  발화 시작: Manta rays! Seriously?
+   156.30s  agent 발화 끝
+   157.55s  agent 발화 시작: Absolutely. They frequent the waters around Raja Ampat, espe
+   157.55s  user  발화 끝
+   166.28s  user  발화 시작: That’s… wow. This is sounding better and better. Do they hav
+   166.28s  agent 발화 끝
+   175.00s  agent 발화 시작: Protecting that environment is vital. Several organizations 
+   175.00s  user  발화 끝
+   187.06s  user  발화 시작: That’s really good to hear. Makes me want to support it even
+   187.06s  agent 발화 끝
+   197.04s  agent 발화 시작: <ret> Certainly. The dry season, from October to April, offe
+   197.04s  <ret> 발화 (turn24 첫 프레임)
+   197.04s  user  발화 끝
+   197.44s  ⚡SPAN 주입 [d'=0.40s / d_lead=0.42s]: (tool result) The dry season in Raja Ampat runs from October to April,
+   208.26s  user  발화 시작: October to April… okay, that’s good to know. I’ll have to lo
+   208.26s  agent 발화 끝
+   214.08s  agent 발화 시작: That sounds like a wonderful plan. Planning ahead will ensur
+   214.08s  user  발화 끝
+   220.31s  agent 발화 끝

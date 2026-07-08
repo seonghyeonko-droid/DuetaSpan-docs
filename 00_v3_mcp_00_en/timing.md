@@ -1,63 +1,65 @@
 # v3_mcp_00_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hi moshi, how are you doing today?
-     2.63s  agent 발화 시작: I’m doing well, thank you. It’s a lovely day, isn’t it? A bi
-     2.63s  user  발화 끝
-    10.15s  user  발화 시작: Yeah, it is. Um, I’m thinking about planning a trip… maybe s
-    10.15s  agent 발화 끝
-    15.03s  agent 발화 시작: That sounds nice. Somewhere to escape the everyday, perhaps?
-    15.03s  user  발화 끝
-    21.80s  user  발화 시작: Exactly. I was thinking Iceland, actually. Have you ever bee
-    21.80s  agent 발화 끝
-    25.56s  agent 발화 시작: Iceland is magnificent. I’ve spent some time there studying 
-    25.56s  user  발화 끝
-    33.07s  user  발화 시작: Wow, really? That sounds amazing. What’s the weather like th
-    33.07s  agent 발화 끝
-    37.58s  agent 발화 시작: <ret>
-    37.58s  <ret> 발화 (turn7 첫 프레임)
-    37.58s  user  발화 끝
-    37.74s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.38s]: (tool result) The current weather in Reykjavik, Iceland is four degree
-    37.96s  user  발화 시작: Four degrees… that doesn’t sound *too* bad, actually.
-    37.96s  agent 발화 끝
-    40.96s  agent 발화 시작: It’s relatively mild for Iceland this time of year. The coas
-    40.96s  user  발화 끝
-    49.23s  user  발화 시작: That’s good to know. I’m also thinking about what to pack. D
-    49.23s  agent 발화 끝
-    56.00s  agent 발화 시작: Yes, rental cars are quite readily available, particularly i
-    56.00s  user  발화 끝
-    67.27s  user  발화 시작: Good point. I’d probably want to see some of the more remote
-    67.27s  agent 발화 끝
-    72.16s  agent 발화 시작: Absolutely. The landscapes become truly dramatic as you move
-    72.16s  user  발화 끝
-    81.18s  user  발화 시작: Oh, Greenland! That sounds even colder. What’s the best time
-    81.18s  agent 발화 끝
-    87.19s  agent 발화 시작: It depends what you want to see. For the Northern Lights, th
-    87.19s  user  발화 끝
-    98.46s  user  발화 시작: Hmm, that’s a tough choice. I really want to see the lights,
-    98.46s  agent 발화 끝
-   106.73s  agent 발화 시작: I understand. It can be quite treacherous. Perhaps September
-   106.73s  user  발화 끝
-   117.25s  user  발화 시작: That sounds like a good idea. Remember that hotel you mentio
-   117.25s  agent 발화 끝
-   123.64s  agent 발화 시작: You mean the Hotel Ranga? Yes, it’s a beautiful place. Quite
-   123.64s  user  발화 끝
-   131.16s  user  발화 시작: Yeah, that one. Is it expensive?
-   131.16s  agent 발화 끝
-   133.41s  agent 발화 시작: <ret>
-   133.41s  <ret> 발화 (turn21 첫 프레임)
-   133.41s  user  발화 끝
-   133.57s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.38s]: (tool result) A standard double room at Hotel Ranga currently costs th
-   133.79s  user  발화 시작: Three hundred and fifty euros… ouch. That’s a bit more than 
-   133.79s  agent 발화 끝
-   139.80s  agent 발화 시작: It is a splurge, certainly. There are other options availabl
-   139.80s  user  발화 끝
-   146.94s  user  발화 시작: Yeah, I’ll have to look around. Maybe I’ll check out some of
-   146.94s  agent 발화 끝
-   152.58s  agent 발화 시작: That’s a good plan. The smaller towns often offer a more aut
-   152.58s  user  발화 끝
-   162.73s  user  발화 시작: That sounds perfect. Thanks for all your help, moshi.
-   162.73s  agent 발화 끝
-   166.11s  agent 발화 시작: You’re very welcome. I’m glad I could assist you with your p
-   166.11s  user  발화 끝
-   174.00s  agent 발화 끝
+     0.00s  user  발화 시작: So, I was reading about the Kingdom of Benin, and it got me 
+    11.33s  agent 발화 시작: That’s a very astute question. Benin’s longevity stemmed fro
+    11.33s  user  발화 끝
+    21.54s  user  발화 시작: Trade, you say? What exactly *were* they trading? I always h
+    21.54s  agent 발화 끝
+    26.82s  agent 발화 시작: Gold was certainly a key component, yes. But their trade net
+    26.82s  user  발화 끝
+    41.18s  user  발화 시작: Horses? That’s interesting. Were those used for cavalry, or…
+    41.18s  agent 발화 끝
+    44.58s  agent 발화 시작: Primarily for prestige and the royal court. Benin’s terrain—
+    44.58s  user  발화 끝
+    56.67s  user  발화 시작: [sigh] It’s just… so much of the history I read focuses on t
+    56.67s  agent 발화 끝
+    68.76s  agent 발화 시작: Precisely. That’s a common problem with historical narrative
+    68.76s  user  발화 끝
+    80.85s  user  발화 시작: I was looking at some maps, and I noticed a city called Ile-
+    80.85s  agent 발화 끝
+    88.41s  agent 발화 시작: Absolutely. Ile-Ife is considered the spiritual and cultural
+    88.41s  user  발화 끝
+   102.01s  user  발화 시작: Oh, really? So, a sort of founding ancestor?
+   102.01s  agent 발화 끝
+   105.03s  agent 발화 시작: In essence, yes. The story goes that Oranmiyan’s son, Eweka 
+   105.03s  user  발화 끝
+   117.12s  user  발화 시작: I— I mean, it’s amazing how these stories survive, isn’t it?
+   117.12s  agent 발화 끝
+   123.17s  agent 발화 시작: Oral tradition is a remarkably resilient thing. The Benin ki
+   123.17s  user  발화 끝
+   134.12s  user  발화 시작: I’m curious about their art. I’ve seen pictures of those bro
+   134.12s  agent 발화 끝
+   141.68s  agent 발화 시작: <ret> That's a common question. The “Benin Bronzes” are larg
+   141.68s  <ret> 발화 (turn15 첫 프레임)
+   141.68s  user  발화 끝
+   142.56s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.51s]: (tool result) The Benin Bronzes are primarily made of brass, which was
+   155.28s  user  발화 시작: Wow, brass! That’s good to know. I always assumed they were 
+   155.28s  agent 발화 끝
+   162.84s  agent 발화 시작: They largely depict court life—the Oba, his officials, warri
+   162.84s  user  발화 끝
+   174.17s  user  발화 시작: Were they displayed publicly? Like, would everyone in Benin 
+   174.17s  agent 발화 끝
+   179.84s  agent 발화 시작: Not necessarily. They were primarily displayed within the ro
+   179.84s  user  발화 끝
+   190.80s  user  발화 시작: That makes sense. A symbol of power, kept close to the sourc
+   190.80s  agent 발화 끝
+   199.49s  agent 발화 시작: A tragic story, I’m afraid. In 1897, a British punitive expe
+   199.49s  user  발화 끝
+   211.20s  user  발화 시작: That’s awful. [chuckle] It seems like that pattern repeats i
+   211.20s  agent 발화 끝
+   217.24s  agent 발화 시작: Unfortunately, it does. The pursuit of resources and politic
+   217.24s  user  발화 끝
+   226.31s  user  발화 시작: What became of the Benin Bronzes after the sacking?
+   226.31s  agent 발화 끝
+   229.71s  agent 발화 시작: Many were looted and dispersed throughout Europe, ending up 
+   229.71s  user  발화 끝
+   239.91s  user  발화 시작: Repatriation… that’s a good thing, right? Giving them back?
+   239.91s  agent 발화 끝
+   243.31s  agent 발화 시작: Absolutely. Many argue that they are an integral part of Nig
+   243.31s  user  발화 끝
+   255.40s  user  발화 시작: It sounds like it. I’m starting to see how much I *don’t* kn
+   255.40s  agent 발화 끝
+   262.58s  agent 발화 시작: It’s a vast and incredibly rich history, often overlooked. T
+   262.58s  user  발화 끝
+   274.29s  agent 발화 끝
