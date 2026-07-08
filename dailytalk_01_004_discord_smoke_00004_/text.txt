@@ -1,0 +1,4 @@
+[user] I can't sleep because of these mosquitoes.
+[agent] [sigh] that's the worst. Is there any way you can use a mosquito net?
+[user] I only have a bedsheet, but it gets way too hot when I use that.
+[agent] Oh man, that sounds miserable. Wait, isn't there a specific scent that mosquitoes hate? [inhale] Was it lavender or maybe something citrusy?

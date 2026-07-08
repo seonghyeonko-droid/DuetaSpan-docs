@@ -1,0 +1,4 @@
+[user] I have another question. Why does this happen when I perform that operation? [inhale] The face is inset, but it isn't any deeper than it was before the inset.
+[agent] It happens because the operation doesn't continue the implied curvature of the surface.
+[user] Is there a way to fix that so it looks like the other side?
+[agent] It might look similar if you edit or transfer the vertex normals.

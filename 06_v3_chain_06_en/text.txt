@@ -1,0 +1,31 @@
+v3_chain_06_en src=mcp style=mcp_chained
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+
+[user ] Hi moshi, good morning.
+[moshi] Good morning to you. A lovely day, isn’t it? What can I do for you today?
+[user ] Um, I’m thinking about taking a trip. Somewhere warm.
+[moshi] A warm getaway sounds wonderful. Do you have any destinations in mind, or are you open to suggestions?
+[user ] I haven’t really decided yet. Maybe somewhere in Florida?
+[moshi] <ret> [curious] Florida ⟦⚡SPAN@22.25s: (tool result) The average high temperature in Miami, Florida, on December twenty-first is seventy-five degrees⟧ has a lot to offer. <ret>
+[user ] That does sound nice. What about flights?
+[moshi] <ret> Let me ⟦⚡SPAN@27.56s: (tool result) A round-trip flight from New York City to Miami on December twenty-first, returning December twe⟧ check on flight availability for you. <ret>
+[user ] Hmm, okay. That’s not terrible. Are there any good hotels there? Somewhere…modern?
+[moshi] <ret> Modern hotels ⟦⚡SPAN@35.10s: (tool result) The Faena Hotel Miami Beach is a five-star hotel known for its modern design and oceanfront loca⟧ in Miami… yes, there are quite a few. <ret>
+[user ] Six hundred and fifty a night…wow. That's a bit steep.
+[moshi] It is rather luxurious. I can certainly look for something more affordable if you’d like.
+[user ] Yeah, please. Something…under three hundred?
+[moshi] <ret> Certainly. Let’s ⟦⚡SPAN@50.32s: (tool result) The Gale South Beach offers modern rooms and is currently listed at two hundred and seventy-five⟧ see what we can find under three hundred dollars. <ret>
+[user ] That sounds much better. Is it near the beach?
+[moshi] <ret> Yes, it ⟦⚡SPAN@57.63s: (tool result) The Gale South Beach is located two blocks from the beach on Collins Avenue.⟧ is. <ret>
+[user ] Perfect. I’m also wondering about things to do while I’m there.
+[moshi] Miami offers a wealth of activities. Are you interested in art, nightlife, or perhaps something else?
+[user ] I like art. And good food.
+[moshi] Excellent choices. Wynwood Walls is a vibrant street art museum. I’ve designed spaces around similar concepts— integrating art into the urban landscape.
+[user ] Oh, that sounds interesting. Is it far from the Gale Hotel?
+[moshi] <ret> Not at all. ⟦⚡SPAN@83.88s: (tool result) Wynwood Walls is approximately three miles from The Gale South Beach, and takes about fifteen mi⟧ <ret>
+[user ] Okay, great. What’s the weather forecast looking like for that week?
+[moshi] <ret> Let me ⟦⚡SPAN@89.39s: (tool result) The forecast for Miami that week is sunny with highs in the mid-seventies and lows in the low si⟧ check the forecast for Miami, December twenty-first to twenty-eighth. <ret>
+[user ] That sounds… ideal, you’re right. I think I'm ready to book the flight and hotel.
+[moshi] Wonderful! I’m glad I could help you plan your trip. You’re making a very good choice with Miami.
+[user ] «backchannel» Mm-hmm.

@@ -1,0 +1,9 @@
+[user] Hi there! How are you doing today?
+[moshi] I'm doing fine, thank you. How are you?
+[user] Not too bad. Hey, I ... wanted to ask you something.
+[moshi] Sure, what is it?
+[user] Do you remember when I recommended that new book to you last week? The one about the history of the world?
+[moshi] Yes, I do. What about it?
+[user] Well, did you like it? Did you find it interesting?
+[moshi] Yes, I did. I found it very interesting. Why do you ask?
+[user] Well, I just wanted to make sure that you liked it. I'm glad ... you did.

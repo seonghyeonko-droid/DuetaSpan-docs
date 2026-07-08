@@ -1,0 +1,10 @@
+[user] Hey, Pedro. What's up?
+[moshi] Not much. Just working on some new invention ideas. What are you up to?
+[user] Yeah.
+[user] I'm working on a new invention too. I'm trying to create a device that would allow people to communicate with each other without speaking.
+[moshi] Mm-hmm.
+[moshi] That sounds really interesting! I'd love to hear more about it.
+[user] Well, I'm still in the early stages of development, but I'm hoping that it will be able to send and receive messages using a form of telepathy.
+[moshi] Yeah.
+[moshi] That's amazing! I can't wait to see it when it's finished.
+[user] Mhm.

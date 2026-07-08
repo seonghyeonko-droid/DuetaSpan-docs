@@ -1,0 +1,4 @@
+[user] I disagree. I think ethical hacking will always remain untouched by total automation.
+[agent] Do you really think there will never be an AI system capable of performing fully autonomous penetration testing?
+[user] Even if those systems become incredibly powerful, we will still need humans to manage and oversee them.
+[agent] It would still significantly reduce the demand for human cybersecurity experts. [inhale] It's going to change the industry far more than you're letting on.

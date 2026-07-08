@@ -1,0 +1,4 @@
+[user] Just one more year.
+[agent] One more year for what exactly?
+[user] DeepSeek's multimodal AGI.
+[agent] If that's the case, you should either be chatting with an AI as much as possible or journaling every single day. [inhale] Both of those habits will create a massive amount of data about your personality and habits, which will allow any future AI to cater to you far better than ever before.

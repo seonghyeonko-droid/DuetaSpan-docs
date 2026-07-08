@@ -1,0 +1,4 @@
+[user] I know there are Alolan versions of Pokémon, but what do you call the original ones? [inhale] And are there any other versions besides Alolan?
+[agent] People usually refer to them by the region where they first debuted, or you can just call them by their standard names.
+[user] I don't quite get that. So you're saying there are other variants besides Alolan?
+[agent] Exactly. There are also Galarian, Hisuian, and Paldean forms for certain Pokémon.

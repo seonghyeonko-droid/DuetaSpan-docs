@@ -1,0 +1,7 @@
+[user] Hi, Ina. — Hi, Ina. I saw that you were having some trouble with your math homework. Do you want some help?
+[moshi] Yeah, that would be great. I'm really struggling with this material.
+[user] Yeah, yeah.
+[user] Okay, let's take a look. So, what don't ... you understand?
+[moshi] Well, I don't get how to do these problems here.
+[user] Okay, let me show you how ah, to do them step by step then.
+[moshi] Alright, I think I got it now. Thanks for the help!

@@ -1,0 +1,4 @@
+[user] How is your hand doing?
+[agent] It is getting better. I can actually eat with it now.
+[user] Oh, that is really good to hear.
+[agent] Thanks. It still hurts a little bit when I try to type, though.
