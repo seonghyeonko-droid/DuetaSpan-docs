@@ -2,16 +2,19 @@ v3_mcp_02_en src=mcp style=v3
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.87s⟩ com.
-[  4.10s][moshi] Certainly, I ⟦⚡SPAN@5.15s: (tool result) The website reports a temperature of twenty-two degrees Celsius and clear skies.⟧ can monitor that website for you. Right now, weather dot example dot com shows twenty-two degrees Celsius with clear skies.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "http://weather.example.com"}}
-[ 14.55s][user ] Oh, that’s nice. I’m planning a hike up Mount Crag tomorrow, actually.
-[ 18.94s][moshi] Mount Crag is a beautiful climb, though quite demanding. Have you hiked it before?
-[ 23.86s][user ] No, it’s new to me. What’s the forecast for tomorrow, specifically for the ⟨ret@28.01s⟩ summit?
-[ 28.24s][moshi] I can certainly get ⟦⚡SPAN@30.01s: (tool result) The summit forecast predicts a high of fifteen degrees Celsius and a forty percent chance of sho⟧ a more detailed forecast for you. Tomorrow’s summit forecast shows fifteen degrees Celsius and a forty percent chance of showers.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "http://weather.example.com/summit/mountcrag"}}
-[ 36.60s][user ] Forty percent? Hmm, maybe I should pack a rain jacket…
-[ 40.78s][moshi] A rain jacket would be a very sensible precaution, given that chance of precipitation.
-[ 46.88s][user ] Okay, good point. Can you set a reminder for me to check the forecast again at six PM tonight?
-[ 52.65s][moshi] ⟨ret@52.57s⟩ Of course, ⟦⚡SPAN@53.53s: (tool result) A reminder has been set for six PM tonight to check the Mount Crag summit weather forecast.⟧ I’m happy to set that reminder for you. I’ve set a reminder for six PM tonight to check the forecast for Mount Crag.
-      CALL: {"function": "set_reminder", "arguments": {"time": "18:00", "message": "Check Mount Crag summit weather forecast"}}
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.66s⟩ com.
+[  3.89s][moshi] Certainly, I can ⟦⚡SPAN@5.66s: (tool result) The website reported a temperature of 22 degrees Celsius and clear skies.⟧ monitor that site for you. Right now, weather dot example dot com shows twenty-two degrees Celsius with clear skies.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
+[ 14.97s][user ] That’s nice. I— I mean, do you think edelweiss grow well in that kind of weather?
+[ 20.05s][moshi] Edelweiss generally prefer cooler temperatures and full sun, but they are quite adaptable.
+[ 25.49s][user ] Hmm. Can you check if there are any guided wildflower walks near Zermatt ⟨ret@29.98s⟩ next week?
+[ 30.30s][moshi] I can certainly ⟦⚡SPAN@31.98s: (tool result) There is a “Matterhorn Meadows Wildflower Tour” on Tuesday at 10:00 AM, costing 85 Swiss francs.⟧ look into guided walks for you. There’s a Matterhorn Meadows wildflower tour next Tuesday at ten AM, for eighty-five francs.
+      CALL: {"function": "search_events", "arguments": {"location": "Zermatt", "date_range": "next week", "keywords": "wildflower walk"}}
+[ 39.26s][user ] Eighty-five francs… that sounds reasonable. Okay, go ahead and book it for ⟨ret@43.99s⟩ me.
+[ 44.38s][moshi] Absolutely, ⟦⚡SPAN@45.51s: (tool result) Your booking is confirmed; reference number is ZX789-456.⟧ I can take care of that reservation. Wonderful, your wildflower tour is booked, confirmation number ZX789-456.
+      CALL: {"function": "book_event", "arguments": {"event_name": "Matterhorn Meadows Wildflower Tour", "date": "next Tuesday", "time": "10:00 AM", "price": "85 Swiss francs"}}
+[ 54.57s][user ] Perfect! That’s a relief. Uh, do you happen to know what the altitude is in Zermatt?
+[ 59.47s][moshi] Zermatt sits at an elevation of approximately one thousand six hundred and twenty meters.
+[ 65.22s][user ] Right, that’s good to know. I’m packing accordingly. One last thing— can you set a reminder for me to pack my camera the ⟨ret@72.75s⟩ night before?
+[ 73.06s][moshi] ⟦⚡SPAN@73.25s: (tool result) Reminder set for tomorrow night at 8:00 PM: “Pack camera”.⟧ Certainly, a reminder is a very good idea. I’ve set a reminder for tomorrow night at eight PM to pack your camera.
+      CALL: {"function": "set_reminder", "arguments": {"reminder_text": "Pack camera", "reminder_time": "tomorrow night"}}

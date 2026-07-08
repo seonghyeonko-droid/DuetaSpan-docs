@@ -1,27 +1,35 @@
 # v3_rag_28_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: So, I was reading about government departments, and it made 
-     7.99s  agent 발화 시작: That’s a very good question, tracing the origins of support 
-     8.15s  user  발화 끝
-    12.45s  <ret> 발화 (turn2 첫 프레임)
-    12.84s  agent 발화 시작: <ret> Let me quickly check the historical records— The Depar
-    13.08s  agent 발화 끝
-    14.05s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.64s]: The United States Department of Veterans Affairs was established on Ju
-    20.40s  agent 발화 끝
-    20.46s  user  발화 시작: Nineteen thirty? That seems…relatively recent, doesn’t it? I
-    27.39s  agent 발화 시작: You’re right to question that—earlier forms of veteran suppo
-    27.41s  user  발화 끝
-    33.77s  <ret> 발화 (turn5 첫 프레임)
-    34.16s  agent 발화 시작: <ret> Looking into the predecessor agencies will clarify the
-    34.34s  agent 발화 끝
-    35.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: Prior to 1930, the Veterans Bureau, created in 1921, handled most vete
-    44.22s  agent 발화 끝
-    45.34s  user  발화 시작: But what about *before* the Veterans Bureau—were there absol
-    52.94s  agent 발화 시작: An excellent point—there was indeed provision, though less c
-    53.07s  user  발화 끝
-    57.12s  <ret> 발화 (turn8 첫 프레임)
-    57.35s  agent 발화 시작: <ret> I'm accessing information about the support offered af
-    57.52s  agent 발화 끝
-    59.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: Following World War I, the U.S. government established the Bureau of W
-    66.67s  agent 발화 끝
+     0.00s  user  발화 시작: So, I was reading about government departments, and I’m curi
+     7.79s  <ret> 발화 (turn1 첫 프레임)
+     8.09s  agent 발화 시작: <ret> That's an interesting question, delving into the histo
+     8.29s  user  발화 끝
+     8.91s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.19s]: The United States Department of Veterans Affairs was established on Ju
+    13.09s  agent 발화 시작: The Department of Veterans Affairs was established on July t
+    13.28s  agent 발화 끝
+    19.43s  agent 발화 끝
+    19.55s  user  발화 시작: Nineteen thirty? That seems…relatively recent, doesn’t it? W
+    26.02s  <ret> 발화 (turn4 첫 프레임)
+    26.41s  agent 발화 시작: <ret> Indeed, care existed before that date, though it was s
+    26.55s  user  발화 끝
+    28.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: Prior to 1930, the Veterans Bureau, created in 1921, handled most vete
+    31.03s  agent 발화 시작: Before nineteen thirty, the Veterans Bureau, created in nine
+    31.18s  agent 발화 끝
+    37.05s  agent 발화 끝
+    38.12s  user  발화 시작: Okay, so the Veterans Bureau was the precursor—but what exac
+    43.14s  agent 발화 시작: It was a fairly broad undertaking, encompassing medical care
+    43.30s  user  발화 끝
+    46.51s  user  발화 시작: Pensions, right, but were they also handling things like bur
+    47.34s  agent 발화 끝
+    52.14s  <ret> 발화 (turn9 첫 프레임)
+    52.37s  agent 발화 시작: <ret> That's a good point to clarify—burial benefits fell un
+    52.57s  user  발화 끝
+    53.26s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.67s]: The Veterans Bureau provided compensation, hospitalization, vocational
+    57.01s  agent 발화 시작: The Veterans Bureau provided compensation, hospitalization, 
+    57.04s  agent 발화 끝
+    64.46s  agent 발화 끝
+    66.04s  user  발화 시작: So, a pretty comprehensive package, even back then. Did the 
+    76.44s  agent 발화 시작: The change was more about consolidation and a shift in empha
+    76.57s  user  발화 끝
+    82.47s  agent 발화 끝

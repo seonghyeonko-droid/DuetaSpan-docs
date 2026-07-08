@@ -2,23 +2,42 @@ v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading a book and came across the name du Plessis. It sounds… French, maybe?
-[  5.87s][moshi] It’s a name that does carry a certain resonance, doesn’t it?
-[ 10.16s][user ] Yes, exactly. But I’m not sure about its origins. Where does the name du Plessis actually come ⟨ret@16.04s⟩ from?
-[ 16.43s][moshi] That’s a very good ⟦⚡SPAN@18.04s: The surname du Plessis is of French origin, derived from the Old French “pleis,” meaning “enclosure” or “farm.⟧ question, tracing names can be revealing. The name du Plessis originates in France, meaning “enclosure” or “farm” in Old French.
-[ 25.48s][user ] Oh, so it’s French, as I suspected. Is it a common name in France still?
-[ 30.00s][moshi] While it has spread, its strongest historical roots are indeed in France.
-[ 34.14s][user ] I see. But I’ve encountered it in South Africa too. How did it get there?
-[ 38.38s][moshi] ⟨ret@38.07s⟩ That’s a ⟦⚡SPAN@40.07s: French Huguenots, Protestant refugees, settled in the Cape Colony of South Africa in the late seventeenth cent⟧ fascinating question about migration patterns. Huguenots, French Protestants, settled the Cape Colony in the late seventeenth century, bringing du Plessis.
-[ 50.63s][user ] Huguenots… right. Were they skilled workers or something? What did they do there?
-[ 55.69s][moshi] They were often artisans and farmers, contributing significantly to the colony’s development.
-[ 60.38s][user ] Interesting. [laugh] Did they keep their French language and culture alive, or did it fade?
-[ 66.93s][moshi] Initially, they maintained their language, but it gradually blended with Dutch and other influences.
-[ 72.32s][user ] So, it became something different over time. Did the name change pronunciation at all?
-[ 77.67s][moshi] ⟨ret@77.59s⟩ Pronunciation shifts are quite ⟦⚡SPAN@79.52s: In South Africa, the pronunciation of “du Plessis” evolved to “duh pless,” reflecting Afrikaans phonetic influ⟧ common during cultural blending. The name du Plessis evolved to “duh pless” in South Africa, influenced by Afrikaans pronunciation.
-[ 87.48s][user ] “Duh pless,” that’s quite a shift! I wonder if French speakers would recognize it.
-[ 92.73s][moshi] It might be unrecognizable to a modern French speaker, yes. Language is ever-changing.
-[ 97.92s][user ] But it's still a fairly common surname in South Africa, ⟨ret@101.40s⟩ right?
-[101.64s][moshi] It certainly has ⟦⚡SPAN@103.00s: Du Plessis is among the most common surnames in South Africa, ranking fifty-seventh most prevalent as of 2022.⟧ become well-established there over the centuries. Du Plessis ranks fifty-seventh among the most common surnames in South Africa as of twenty twenty-two.
-[110.81s][user ] Fifty-seventh… that's significant. So it’s a long story, from French farms to South Africa.
-[118.08s][moshi] Indeed. Names often carry within them echoes of history, migration, and adaptation. It’s quite a journey to trace.
+[  0.00s][user ] I was reading a book and came across the name du Plessis. It sounds… French, maybe? Where does it actually come from?
+[  7.31s][moshi] ⟨ret@7.23s⟩ That’s a ⟦⚡SPAN@8.19s: The surname du Plessis is of French origin, meaning “of the castle.”⟧ very astute observation about the sound of the name.
+[ 10.66s][moshi] The name du Plessis originates from France and literally translates to “of the castle.”
+[ 16.07s][user ] A castle, huh. So it's an aristocratic name, then? Was it common among French nobility?
+[ 23.02s][moshi] ⟨ret@22.78s⟩ It certainly suggests a ⟦⚡SPAN@24.78s: The name du Plessis became prominent among French nobility during the medieval period.⟧ connection to land ownership and status.
+[ 26.52s][moshi] The name du Plessis was prominent among French nobility throughout the medieval period.
+[ 32.11s][user ] Interesting. But I've also seen it used in South Africa. Is there a connection ⟨ret@36.54s⟩ there?
+[ 36.70s][moshi] Indeed, there’s a fascinating ⟦⚡SPAN@38.54s: French Huguenots, fleeing religious persecution, settled in South Africa in the late 17th century, bringing th⟧ link to South Africa, stemming from Huguenot migration.
+[ 41.36s][moshi] French Huguenots brought the name du Plessis to South Africa in the late 1600s, escaping persecution.
+[ 48.38s][user ] Huguenots… right, the Protestants. What impact did they have on South Africa?
+[ 53.92s][moshi] ⟨ret@53.68s⟩ They were instrumental ⟦⚡SPAN@55.28s: Huguenots contributed significantly to South African agriculture, viticulture, and the development of the Afri⟧ in establishing the foundations of a new society.
+[ 57.88s][moshi] Huguenots significantly contributed to South African agriculture, wine-making, and the Afrikaans language.
+[ 64.51s][user ] Afrikaans… so the name became more common *because* of that language?
+[ 69.67s][moshi] ⟨ret@69.52s⟩ Precisely. The language ⟦⚡SPAN@71.52s: The surname du Plessis became particularly common among Afrikaners, speakers of the Afrikaans language.⟧ helped the name integrate and flourish.
+[ 73.83s][moshi] The surname du Plessis became common among Afrikaners, those who speak Afrikaans.
+[ 78.47s][user ] But is it still a common name there now?
+[ 81.04s][user ] Is it still common in South Africa ⟨ret@83.89s⟩ today?
+[ 84.05s][moshi] It remains a widely recognized ⟦⚡SPAN@85.89s: Du Plessis is currently the twenty-second most common surname in South Africa.⟧ surname within South Africa.
+[ 87.28s][moshi] It is currently the twenty-second most common surname in South Africa.
+[ 91.37s][user ] Wow, that's… pretty high up the list. Are there any famous people with that ⟨ret@96.30s⟩ name?
+[ 96.38s][moshi] There are several ⟦⚡SPAN@97.66s: Faf du Plessis is a prominent South African cricketer, born in Pretoria in 1984.⟧ notable individuals who bear the name.
+[ 99.36s][moshi] Faf du Plessis is a well-known South African cricketer, born in 1984.
+[104.76s][user ] A cricketer! I think I've heard of him. Anything else?
+[108.23s][moshi] ⟨ret@108.07s⟩ Yes, there’s a ⟦⚡SPAN@109.27s: François du Plessis, known as François Villon, was a 15th-century French poet and rogue.⟧ historical figure as well.
+[110.54s][moshi] François du Plessis, also known as François Villon, was a French poet in the 1400s.
+[117.81s][user ] A poet? That's a nice contrast to the cricketer. So, the name has quite a history, ⟨ret@123.79s⟩ then.
+[124.11s][moshi] Indeed, it reflects ⟦⚡SPAN@125.79s: The coat of arms associated with du Plessis features a silver lion on a blue shield, symbolizing bravery.⟧ a complex interplay of migration, status, and cultural adaptation.
+[129.21s][moshi] The du Plessis coat of arms displays a silver lion on a blue shield, representing courage.
+[134.68s][user ] A lion… fitting for a name meaning ‘of the castle’. Are there different ⟨ret@140.39s⟩ spellings?
+[140.55s][moshi] Variations exist, ⟦⚡SPAN@141.67s: Alternative spellings of du Plessis include Duplessis and Duplesis, variations found primarily in Canada.⟧ though “du Plessis” is the most common.
+[143.72s][moshi] Other spellings include Duplessis and Duplesis, mainly found in Canada.
+[148.03s][user ] Canada, too? It really *has* traveled around. That's quite a journey for a ⟨ret@153.35s⟩ name.
+[153.43s][moshi] It is a ⟦⚡SPAN@154.63s: The name du Plessis is also found, though less commonly, in Belgium and the Netherlands.⟧ testament to the enduring power of family legacies and diaspora.
+[157.50s][moshi] The name du Plessis is also found, though less common, in Belgium and the Netherlands.
+[163.29s][user ] So, it's all over the place now. A French name with roots everywhere.
+[168.54s][moshi] ⟨ret@168.46s⟩ Precisely. It’s a striking ⟦⚡SPAN@170.46s: The etymological root of "Plessis" derives from the Old French word "pleisse," meaning enclosure or courtyard.⟧ example of how names can transcend borders and reflect the ebb and flow of history.
+[175.46s][moshi] The word "Plessis" comes from the Old French word "pleisse," meaning an enclosed space.
+[180.41s][user ] That’s a lovely image – an enclosed courtyard. Thank you for explaining all of that, Professor.
+[185.75s][moshi] You are most welcome. Exploring the histories embedded within names is a pursuit I find particularly rewarding.

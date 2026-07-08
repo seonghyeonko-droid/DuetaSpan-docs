@@ -1,31 +1,39 @@
 # v3_backg_17_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: What’s a normal heart rate for an adult?
-     2.16s  user  발화 끝
-     2.33s  agent 발화 시작: A typical resting heart rate varies, but generally falls wit
-     6.21s  <ret> 발화 (turn2 첫 프레임)
-     6.61s  agent 발화 시작: <ret> Let me quickly check the accepted parameters— For a he
-     6.78s  agent 발화 끝
-     7.33s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.13s]: A normal resting heart rate for adults ranges from sixty to one hundre
-    14.22s  agent 발화 끝
-    14.22s  user  발화 시작: Wow, that’s quite a range.
-    15.88s  user  발화 끝
-    16.07s  agent 발화 시작: It is, and it’s influenced by many factors, including fitnes
-    19.18s  user  발화 시작: Yeah.
-    19.53s  user  발화 끝
-    20.46s  agent 발화 끝
-    20.47s  agent 발화 시작: Regular exercise, for instance, often leads to a lower resti
-    24.67s  user  발화 시작: But what about athletes? Do they have different rates?
-    25.42s  agent 발화 끝
-    27.53s  agent 발화 시작: That’s a very good question. Athletes frequently exhibit low
-    27.58s  user  발화 끝
-    31.78s  <ret> 발화 (turn9 첫 프레임)
-    32.17s  agent 발화 시작: <ret> I can access some more specific information— Highly tr
-    32.25s  agent 발화 끝
-    32.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.30s]: Highly trained athletes may have resting heart rates as low as forty b
-    39.40s  agent 발화 끝
-    41.23s  user  발화 시작: Did you remember to pick up milk on the way home?
-    43.45s  agent 발화 시작: So, for a well-conditioned athlete, forty beats per minute c
-    43.49s  user  발화 끝
-    47.98s  agent 발화 끝
+     0.00s  user  발화 시작: What’s a normal resting heart rate for an adult?
+     2.29s  <ret> 발화 (turn1 첫 프레임)
+     2.59s  user  발화 끝
+     2.69s  agent 발화 시작: <ret> A healthy resting heart rate generally falls within a 
+     3.73s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.84s]: A normal resting heart rate for adults ranges from 60 to 100 beats per
+     6.34s  agent 발화 시작: Typically, a normal resting heart rate is between sixty and 
+     6.53s  agent 발화 끝
+    11.15s  agent 발화 끝
+    11.21s  user  발화 시작: That seems…high. Is that for everyone?
+    13.94s  user  발화 끝
+    14.10s  agent 발화 시작: It's a general guideline, but individual factors certainly p
+    17.58s  user  발화 시작: What about athletes? Do they have different rates?
+    18.26s  agent 발화 끝
+    20.26s  user  발화 끝
+    20.44s  agent 발화 시작: Athletes often exhibit lower resting heart rates—
+    22.87s  <ret> 발화 (turn7 첫 프레임)
+    23.18s  agent 발화 시작: <ret> Highly trained athletes can have resting heart rates b
+    23.31s  agent 발화 끝
+    24.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: Highly trained athletes may have resting heart rates between 40 and 60
+    26.86s  user  발화 시작: Yeah.
+    27.16s  user  발화 끝
+    28.18s  <ret> 발화 (turn9 첫 프레임)
+    28.26s  agent 발화 시작: <ret> It’s a testament to their cardiovascular efficiency, r
+    28.36s  agent 발화 끝
+    30.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: A healthy heart rate for adults is generally between 50 and 90 beats p
+    31.50s  agent 발화 시작: A healthy heart rate is generally between fifty and ninety b
+    31.63s  agent 발화 끝
+    35.39s  agent 발화 끝
+    35.42s  user  발화 시작: So, fifty to ninety is ideal then?
+    38.04s  agent 발화 시작: It’s a good indicator of cardiovascular health, yes.
+    38.15s  user  발화 끝
+    41.55s  agent 발화 끝
+    41.62s  user  발화 시작: Did you remember to pick up milk?
+    43.55s  user  발화 끝
+    43.92s  agent 발화 시작: Maintaining that range is generally a positive sign, of cour
+    47.43s  agent 발화 끝

@@ -1,43 +1,47 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 저 혹시 “Mamma Mia”에 나오는 “My Love, My Life”를 누가 썼는지 아세요? 정말 아름다
-     6.68s  agent 발화 시작: 정말 좋은 질문이세요. 그 노래는 특정한 감정을 정말 잘 표현하는 것 같아요, 그렇죠?
-     6.86s  user  발화 끝
-    11.94s  <ret> 발화 (turn2 첫 프레임)
-    12.09s  agent 발화 시작: <ret> 제가 작곡가를 찾아볼게요. “My Love, My Life”는 “Mamma Mia!” 제작을 위해
-    12.28s  agent 발화 끝
-    13.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.40s]: Björn Ulvaeus wrote “My Love, My Life”, a song featured in the musical
-    21.07s  user  발화 시작: 아, 정말요? 저는 베니 앤더슨이 쓴 줄 알았어요.
-    21.27s  agent 발화 끝
-    24.49s  user  발화 끝
-    24.61s  agent 발화 시작: 흔히들 그렇게 생각하시더라고요. 두 분이 협업을 많이 하셨으니까요. 두 분의 파트너십은 정말 대단한 것 같아
-    31.01s  <ret> 발화 (turn5 첫 프레임)
-    31.32s  agent 발화 시작: <ret> 두 분의 창작 과정에 대한 자세한 내용을 알려드릴 수 있어요. 앤더슨과 울바에우스는 일천구백칠십년
+     0.00s  user  발화 시작: 오늘 “맘마미아”에 나오는 “My Love, My Life”를 누가 썼는지 아세요? 정말 아름다운 노래예요.
+     5.82s  agent 발화 시작: 좋은 질문이세요. 많은 분들이 정말 좋아하는 노래이고, 그 기원은 꽤 흥미롭답니다.
+     6.02s  user  발화 끝
+    11.54s  <ret> 발화 (turn2 첫 프레임)
+    11.69s  agent 발화 시작: <ret> 제가 작곡가 정보를 빠르게 확인해 드릴게요. 비외른 울바에우스가 원래 뮤지컬 *Chess*를 위해
+    11.94s  agent 발화 끝
+    13.30s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.41s]: Björn Ulvaeus wrote “My Love, My Life” as part of the musical *Chess*.
+    20.77s  user  발화 시작: 아, 그럼 영화를 위해 특별히 쓰여진 곡이 아니었군요?
+    21.00s  agent 발화 끝
+    24.61s  user  발화 끝
+    24.72s  agent 발화 시작: 처음에는 그렇지 않았어요. *맘마미아!* 전에 이미 존재했던 곡인데, 많은 분들이 잘 모르시는 것 같아요.
+    31.14s  <ret> 발화 (turn5 첫 프레임)
+    31.45s  agent 발화 시작: <ret> 혹시 *Chess*에서의 그 곡의 역사에 대해 좀 더 자세히 알아보고 싶으시다면 알려드릴 수 있어
     31.57s  agent 발화 끝
-    32.21s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.13s]: Benny Andersson and Björn Ulvaeus formed a songwriting partnership in 
-    37.80s  user  발화 시작: 네.
-    38.35s  user  발화 끝
-    40.81s  agent 발화 시작: 두 분이 함께 쓴 상징적인 노래가 너무 많아서 각자의 기여도를 헷갈릴 수 있어요.
-    41.01s  agent 발화 끝
-    46.33s  agent 발화 끝
-    46.36s  user  발화 시작: 그 말이 맞아요. 비외른 울바에우스는 또 어떤 노래를 썼나요?
-    50.76s  <ret> 발화 (turn9 첫 프레임)
-    50.84s  agent 발화 시작: <ret> 울바에우스의 다른 노래들을 찾아볼 수 있어요. 울바에우스는 “Dancing Queen”, “Wat
-    50.90s  user  발화 끝
-    51.72s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.22s]: Björn Ulvaeus also co-wrote “Dancing Queen”, “Waterloo”, and “Take a C
-    63.88s  agent 발화 끝
-    63.98s  user  발화 시작: 와, 다 명곡들이네요! 다른 가수들을 위해서도 노래를 썼나요?
-    67.99s  <ret> 발화 (turn11 첫 프레임)
-    68.22s  agent 발화 시작: <ret> 주로 ABBA의 곡 목록에 집중하셨지만, 나중에 경력에서는 다른 길도 모색하셨습니다.
-    68.42s  user  발화 끝
-    69.99s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.86s]: (tool result) Current time in Tokyo is 14:35:22 JST.
-    74.60s  <ret> 발화 (turn12 첫 프레임)
-    74.99s  agent 발화 시작: <ret> 다른 아티스트를 위한 노래가 있는지 확인해 볼게요. 울바에우스는 뮤지컬 “Chess”에서 팀 라이
-    75.08s  agent 발화 끝
-    76.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.68s]: Beyond ABBA, Björn Ulvaeus contributed to the musical Chess with Tim R
-    84.85s  user  발화 시작: 아, “Chess”요! 들어본 적 있어요. 스타일이 꽤 다르죠, 그렇죠?
-    85.00s  agent 발화 끝
-    88.79s  agent 발화 시작: 네, 맞아요. 작곡가로서 그의 다재다능함을 보여주는 흥미로운 시도입니다.
-    88.88s  user  발화 끝
-    94.25s  agent 발화 끝
+    32.34s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.74s]: *Chess* premiered at the Prince Edward Theatre in London in 1986.
+    37.39s  user  발화 시작: 네.
+    37.79s  user  발화 끝
+    43.18s  agent 발화 시작: 그것은 꽤 야심찬 프로젝트였는데, 냉전 시대의 경쟁적인 체스 세계를 묘사하려고 했어요.
+    43.37s  agent 발화 끝
+    49.98s  user  발화 시작: 그건…격렬하네요. 울바에우스는 그 당시에 ABBA 밴드에 있었나요?
+    49.99s  agent 발화 끝
+    54.17s  <ret> 발화 (turn9 첫 프레임)
+    54.24s  agent 발화 시작: <ret> 정말 날카로운 연결을 하셨네요. 그의 명성을 생각하면 당연한 질문이죠. 비외른 울바에우스는 천구백
+    54.29s  user  발화 끝
+    55.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.65s]: Björn Ulvaeus was a member of ABBA from 1972 to 1982.
+    70.20s  agent 발화 끝
+    70.28s  user  발화 시작: 그는 ABBA 활동 직후에 *Chess*를 위해 곡을 쓰고 있었군요?
+    74.19s  <ret> 발화 (turn11 첫 프레임)
+    74.43s  agent 발화 시작: <ret> 정확해요. 그는 뮤지컬 극장으로 상당히 원활하게 전환한 것 같아요.
+    74.63s  user  발화 끝
+    76.19s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.72s]: (tool result) Current time in Tokyo is 14:35:22 on Tuesday, May 14, 20
+    79.09s  agent 발화 시작: 예술가들이 종종 다양한 창작 영역을 탐구하는 것이 얼마나 놀라운지, 동의하시죠?
+    79.15s  agent 발화 끝
+    84.86s  user  발화 시작: 정말 그렇네요. 베니 앤더슨도 *Chess*에 참여했나요?
+    85.02s  agent 발화 끝
+    88.56s  <ret> 발화 (turn14 첫 프레임)
+    88.61s  agent 발화 시작: <ret> 네, 베니 앤더슨도 그 제작에 깊이 관여했어요. 베니 앤더슨은 비외른 울바에우스와 함께 뮤지컬 *
+    88.83s  user  발화 끝
+    90.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: Benny Andersson co-wrote the music for *Chess* alongside Björn Ulvaeus
+    97.03s  user  발화 시작: 그렇다면 ABBA의 협업이었지만, 다른 프로젝트였네요.
+    97.14s  agent 발화 끝
+   101.18s  agent 발화 시작: 어느 정도는 맞아요. 그들의 음악적 파트너십은 ABBA를 넘어 확장되었고, *Chess*는 그 증거라고 할 
+   101.34s  user  발화 끝
+   109.58s  agent 발화 끝

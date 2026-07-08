@@ -2,66 +2,70 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.42s  <ret> 발화 (turn1 첫 프레임)
-     3.56s  user  발화 끝
-     3.65s  agent 발화 시작: <ret> Certainly, let’s see about arranging that for you. You
-     4.46s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.95s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
-    11.72s  user  발화 시작: Is there parking available at the building?
-    11.76s  agent 발화 끝
-    13.68s  <ret> 발화 (turn3 첫 프레임)
-    13.84s  agent 발화 시작: <ret> That's a good question to ask beforehand. Parking is a
-    13.98s  user  발화 끝
-    15.12s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.21s]: (tool result) The Grandview Lofts offers validated parking in the adja
-    22.56s  agent 발화 끝
-    22.74s  user  발화 시작: And what about pet restrictions?
-    24.28s  <ret> 발화 (turn5 첫 프레임)
-    24.52s  agent 발화 시작: <ret> Many buildings have those, it's wise to check. Cats an
-    24.59s  user  발화 끝
-    26.12s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.00s]: (tool result) The Grandview Lofts allows cats and small dogs under twe
-    32.40s  agent 발화 끝
-    32.61s  user  발화 시작: That’s good to know— I mean, my terrier is about thirty poun
-    35.58s  <ret> 발화 (turn7 첫 프레임)
-    35.74s  agent 발화 시작: <ret> It sounds like we need to refine that search a little…
-    35.92s  user  발화 끝
-    37.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.10s]: (tool result) No properties match your criteria within The Grandview L
-    43.94s  agent 발화 끝
-    44.65s  user  발화 시작: Are there any other buildings nearby with similar floor plan
-    48.68s  user  발화 끝
-    48.94s  agent 발화 시작: —but there are other options we can explore.
-    51.24s  user  발화 시작: Specifically, I’m hoping for two bedrooms and a balcony.
-    51.43s  agent 발화 끝
-    54.24s  <ret> 발화 (turn11 첫 프레임)
-    54.31s  agent 발화 시작: <ret> Absolutely, let's broaden the search to nearby buildin
-    54.48s  user  발화 끝
-    56.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.69s]: (tool result) The Astoria and The Belvedere both have two-bedroom unit
-    63.07s  agent 발화 끝
-    64.11s  user  발화 시작: Tell me more about The Astoria.
-    65.56s  <ret> 발화 (turn13 첫 프레임)
-    65.78s  agent 발화 시작: <ret> I can certainly give you details on that building. The
-    65.85s  user  발화 끝
-    66.60s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.47s]: (tool result) The Astoria was built in 2018 and has a rooftop terrace.
-    74.25s  user  발화 시작: Does The Astoria also have parking?
-    74.27s  agent 발화 끝
-    76.33s  <ret> 발화 (turn15 첫 프레임)
-    76.48s  agent 발화 시작: <ret> Parking is often a key consideration for renters. Vale
-    76.60s  user  발화 끝
-    78.25s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.24s]: (tool result) The Astoria offers valet parking for a monthly fee of tw
-    84.17s  agent 발화 끝
-    84.29s  user  발화 시작: That’s a bit pricey. What about The Belvedere?
-    86.35s  <ret> 발화 (turn17 첫 프레임)
-    86.66s  agent 발화 시작: <ret> Let’s compare the parking options at The Belvedere. Se
-    86.69s  user  발화 끝
-    86.85s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.78s]: (tool result) The Belvedere has self-parking available for one hundred
-    93.45s  user  발화 시작: That sounds better. Can we schedule a viewing there for next
-    93.61s  agent 발화 끝
-    97.92s  <ret> 발화 (turn19 첫 프레임)
-    98.08s  user  발화 끝
-    98.14s  agent 발화 시작: <ret> I can check availability for a viewing next Tuesday. Y
-    99.04s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.32s]: (tool result) A viewing at The Belvedere is scheduled for next Tuesday
-   106.25s  agent 발화 끝
-   106.49s  user  발화 시작: Great. Send me a reminder the day before.
-   108.56s  <ret> 발화 (turn21 첫 프레임)
-   108.66s  agent 발화 시작: <ret> Absolutely, I can set that up for you now. I’ve set a 
-   108.88s  user  발화 끝
-   110.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.21s]: (tool result) A reminder for your Belvedere viewing is set for next Mo
-   116.50s  agent 발화 끝
+     3.81s  <ret> 발화 (turn1 첫 프레임)
+     3.84s  user  발화 끝
+     4.04s  agent 발화 시작: <ret> Certainly, let’s find a time to view that property. I 
+     5.01s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.37s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
+    12.27s  user  발화 시작: That’s a bit late in the day. Uh, actually, make that June s
+    12.29s  agent 발화 끝
+    16.80s  <ret> 발화 (turn3 첫 프레임)
+    16.96s  agent 발화 시작: <ret> No problem at all, let me re-schedule that for you. I’
+    16.99s  user  발화 끝
+    18.24s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.56s]: (tool result) A viewing at The Grandview Lofts is scheduled for June s
+    24.79s  agent 발화 끝
+    24.94s  user  발화 시작: Perfect. Is there anything else I should know about the buil
+    27.99s  user  발화 끝
+    28.20s  agent 발화 시작: The Grandview Lofts was completed in 2018 and has forty-two 
+    33.75s  agent 발화 끝
+    33.99s  user  발화 시작: Forty-two units… are there many families living there?
+    37.26s  <ret> 발화 (turn7 첫 프레임)
+    37.34s  agent 발화 시작: <ret> That’s a good question about the demographics. Thirty-
+    37.50s  user  발화 끝
+    38.38s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.70s]: (tool result) The Grandview Lofts has thirty-five percent family occup
+    44.29s  agent 발화 끝
+    44.96s  user  발화 시작: That’s good to know. What about parking?
+    47.40s  user  발화 끝
+    47.68s  agent 발화 시작: Parking is available, though spaces are limited.
+    50.65s  user  발화 시작: Limited how? Is there a waiting list?
+    50.82s  agent 발화 끝
+    52.82s  agent 발화 시작: Let me check the current parking situation—
+    52.86s  user  발화 끝
+    55.08s  user  발화 시작: Is there a gym in the building too?
+    55.83s  agent 발화 끝
+    56.67s  <ret> 발화 (turn13 첫 프레임)
+    57.02s  user  발화 끝
+    57.05s  agent 발화 시작: <ret> Ah, yes, a gym is a common amenity these days.
+    58.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: (tool result) The Grandview Lofts includes a fitness center and a roof
+    60.72s  agent 발화 시작: The Grandview Lofts features both a fitness center and a roo
+    60.80s  agent 발화 끝
+    65.35s  agent 발화 끝
+    65.53s  user  발화 시작: A rooftop terrace sounds nice. [happy]
+    67.44s  agent 발화 시작: It is quite lovely, especially at sunset.
+    67.59s  user  발화 끝
+    70.27s  user  발화 시작: Is the neighborhood walkable?
+    70.40s  agent 발화 끝
+    71.70s  <ret> 발화 (turn18 첫 프레임)
+    71.94s  agent 발화 시작: <ret> Walkability is important, and I can look that up. The 
+    72.02s  user  발화 끝
+    73.06s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.61s]: (tool result) The walk score for The Grandview Lofts is eighty-two.
+    80.26s  user  발화 시작: Eighty-two, that’s pretty good. What’s the closest grocery s
+    80.38s  agent 발화 끝
+    84.55s  <ret> 발화 (turn20 첫 프레임)
+    84.78s  agent 발화 시작: <ret> I can quickly locate the nearest grocery store for you
+    84.97s  user  발화 끝
+    86.47s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.37s]: (tool result) Fresh Foods Market is 0.6 miles from The Grandview Lofts
+    93.96s  agent 발화 끝
+    95.36s  user  발화 시작: Okay, good. And what about public transportation?
+    98.59s  agent 발화 시작: Several bus lines serve the area near The Grandview Lofts.
+    98.69s  user  발화 끝
+   102.55s  user  발화 시작: Can you give me the schedule for the number twenty-two bus?
+   102.61s  agent 발화 끝
+   105.25s  <ret> 발화 (turn24 첫 프레임)
+   105.41s  agent 발화 시작: <ret> Let me pull up the schedule for the twenty-two bus— Th
+   105.59s  user  발화 끝
+   105.75s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.89s]: (tool result) The number 22 bus arrives at 8:15 AM, 8:45 AM, and 9:15 
+   115.20s  agent 발화 끝
+   115.91s  user  발화 시작: Perfect, that works. Thanks for all your help!
+   118.24s  agent 발화 시작: You’re very welcome. I’m glad I could assist you with this.
+   118.31s  user  발화 끝
+   121.94s  agent 발화 끝

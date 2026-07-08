@@ -2,14 +2,14 @@ v3_rag_25_en src=hotpotqa style=v2
 SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was wondering—what sport did Jack Sock and Raffaella Reggi both play?
-[  6.94s][moshi] That's a good question, recalling players always brings back memories of the camaraderie.
-[ 11.53s][moshi] ⟨ret@11.45s⟩ Let’s see if ⟦⚡SPAN@12.81s: Jack Sock and Raffaella Reggi both competed as professional tennis players.⟧ I can recall that pairing… Both Jack Sock and Raffaella Reggi had careers as professional tennis players.
-[ 18.69s][user ] Tennis, huh? I thought maybe they crossed over from another sport—
-[ 23.11s][moshi] It’s easy to imagine athletes trying different disciplines, I saw that a lot in my travels.
-[ 28.00s][moshi] ⟨ret@27.68s⟩ Now, ⟦⚡SPAN@28.80s: Raffaella Reggi won a bronze medal in women’s singles tennis at the 1992 Barcelona Olympics.⟧ regarding Reggi specifically… Raffaella Reggi earned a bronze medal in women’s singles tennis at the 1992 Barcelona Olympics.
-[ 36.60s][user ] Wait—did she win any other medals, or was it just that one?
-[ 40.45s][moshi] «interrupted» Well, as I was about to say—
-[ 41.35s][user ] «interrupts_prev» Just the one then? I’m curious about her overall record.
-[ 44.93s][moshi] Ah, a deeper dive into her accomplishments, a worthy pursuit.
-[ 48.59s][moshi] ⟨ret@48.27s⟩ Let’s ⟦⚡SPAN@49.39s: Raffaella Reggi also won a silver medal in women’s doubles tennis at the 1992 Barcelona Olympics.⟧ find out more about Reggi’s medals… Raffaella Reggi also secured a silver medal in women’s doubles tennis at the 1992 Barcelona Olympics.
+[  0.00s][user ] So, I was wondering… did Jack Sock and Raffaella Reggi both play the same sport?
+[  7.08s][moshi] That’s a good question—many athletes cross over, you know.
+[  9.88s][moshi] ⟨ret@9.80s⟩ Let me ⟦⚡SPAN@10.92s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ quickly confirm that for you… Both Jack Sock and Raffaella Reggi are professional tennis players.
+[ 15.76s][user ] Tennis, huh? Okay, but Reggi… isn’t she a bit older than Sock?
+[ 21.44s][moshi] Age is relative when you’re talking about dedication, I always say.
+[ 25.11s][moshi] ⟨ret@24.79s⟩ I can ⟦⚡SPAN@26.15s: Raffaella Reggi was born on December 26, 1980, and Jack Sock on November 24, 1992.⟧ certainly look up their birthdates for a comparison… Raffaella Reggi, born in 1980, is older than Jack Sock, born in 1992.
+[ 33.94s][user ] Wait, 1980? That makes her… over forty now?
+[ 38.32s][moshi] «interrupted» Well—
+[ 38.42s][user ] «interrupts_prev» So, she’s still competing at a high level at over forty? That’s impressive!
+[ 43.67s][moshi] It is, isn’t it? Mental fortitude is everything in a competition.
+[ 47.80s][moshi] ⟨ret@47.56s⟩ To put that in ⟦⚡SPAN@49.56s: As of November 2023, Raffaella Reggi is ranked 448th in women’s singles tennis.⟧ perspective, let’s look at her recent rankings… Raffaella Reggi is currently ranked 448th in women’s singles tennis as of November 2023.

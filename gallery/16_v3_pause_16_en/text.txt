@@ -2,20 +2,21 @@ v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about surveillance, and it made me wonder…
-[  3.68s][user ] …where did the term “big brother” actually come from?
-[  6.97s][moshi] That’s a fascinating question, tracing the origin of phrases can reveal a lot.
-[ 11.81s][moshi] ⟨ret@11.65s⟩ Let me quickly ⟦⚡SPAN@13.65s: <The term "Big Brother" originates from the novel Nineteen Eighty-Four by George Orwell, published in 1949.>⟧ access some information on that for you. The phrase “big brother” comes from George Orwell’s novel *Nineteen Eighty-Four*, published in nineteen forty-nine.
-[ 22.57s][user ] Nineteen Eighty-Four… I've heard it’s pretty dystopian.
-[ 26.18s][moshi] It certainly is; Orwell painted a chilling picture of totalitarian control.
-[ 32.89s][user ] So, it wasn't some historical figure…
-[ 36.34s][user ] …or something?
-[ 37.18s][moshi] No, it was entirely a creation of Orwell’s imagination for that novel.
-[ 41.62s][moshi] ⟨ret@41.23s⟩ It’s ⟦⚡SPAN@42.43s: <Orwell wrote Nineteen Eighty-Four in the aftermath of World War II, influenced by the totalitarian regimes of⟧ worth noting the context of the time, though— Orwell wrote *Nineteen Eighty-Four* after World War Two, influenced by regimes in Nazi Germany and the Soviet Union.
-[ 52.67s][user ] But wasn’t there something about cameras too?
-[ 55.49s][moshi] «interrupted» Ah, yes, a very relevant point—
-[ 57.61s][user ] «interrupts_prev» Was the idea of constant monitoring part of the book as well?
-[ 61.70s][moshi] Absolutely. Constant surveillance is central to the world Orwell created.
-[ 66.31s][moshi] ⟨ret@66.16s⟩ The “telescreens” in the novel ⟦⚡SPAN@67.20s: <In Nineteen Eighty-Four, "telescreens" are two-way television screens that constantly monitor citizens, both ⟧ are quite striking— *Nineteen Eighty-Four* features “telescreens,” two-way televisions constantly monitoring citizens visually and audibly.
-[ 69.70s][user ] That sounds…uncomfortable, to say the least.
-[ 73.04s][moshi] It’s meant to be deeply unsettling, a stark warning about the dangers of unchecked power. It's a powerful allegory, really.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking…
+[  4.57s][moshi] That's a common reaction to powerful literature, certainly.
+[  8.15s][user ] …where did the term “big brother” actually come from? It just feels so… pervasive now.
+[ 13.76s][moshi] ⟨ret@13.61s⟩ That’s an interesting ⟦⚡SPAN@15.53s: The term "Big Brother" originates from George Orwell's dystopian novel *Nineteen Eighty-Four*.⟧ question regarding its origins… It comes from George Orwell’s *Nineteen Eighty-Four*, a novel published in nineteen forty-nine.
+[ 22.99s][user ] Nineteen forty-nine… that's quite a while ago. Was Orwell commenting on something specific at the time?
+[ 30.13s][moshi] He was, though it’s a complex tapestry of influences.
+[ 34.42s][user ] Was it about Stalin, then? Everyone always says it’s about Stalin.
+[ 39.53s][moshi] ⟨ret@39.38s⟩ The ⟦⚡SPAN@40.58s: Orwell stated the concept of “Big Brother” was inspired by his experiences with surveillance during the Spanis⟧ connection to Stalin is certainly a frequent observation… Orwell drew inspiration from surveillance he witnessed during the Spanish Civil War, not specifically Stalin.
+[ 50.21s][user ] Surveillance during the war? That’s… surprising.
+[ 54.10s][moshi] It’s often overlooked, but profoundly shaped his vision.
+[ 57.56s][user ] But didn't the Soviet Union have extensive spying? I mean—
+[ 61.65s][user ] …wasn’t that a huge part of the fear back then…
+[ 65.30s][user ] …the idea of constant monitoring?
+[ 68.05s][moshi] That fear was absolutely present, yes, and Orwell certainly tapped into it. The novel reflects a broader anxiety about totalitarianism.
+[ 77.28s][user ] So, it wasn't *just* about Stalin, it was about the potential for any government to become… intrusive?
+[ 84.46s][moshi] Precisely. The novel is a warning against unchecked power, regardless of its source.
+[ 90.57s][user ] It’s a pretty chilling idea, even now, to be constantly watched.
+[ 94.63s][moshi] It remains remarkably relevant, doesn't it? The themes of surveillance and control continue to resonate.

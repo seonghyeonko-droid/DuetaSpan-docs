@@ -1,16 +1,19 @@
 v3_backg_17_ko src=nq style=v1
-SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스이며, 산호초 생태계를 연구합니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 심박수 정상 범위가 어떻게 돼?
-[  2.11s][moshi] 그건 좀 다르긴 한데, 보통 어느 정도 사이로 보면 돼.
-[  5.62s][moshi] ⟨ret@5.22s⟩ 잠깐만, 정확한 ⟦⚡SPAN@6.66s: A normal resting heart rate for adults ranges from sixty to one hundred beats per minute.⟧ 기준을 찾아볼게— 건강한 성인의 경우, 안정 시 심박수는 분당 육십 회에서 백 회 사이야.
-[ 12.52s][user ] 와, 범위가 꽤 넓네.
-[ 14.83s][moshi] 응, 그렇고, 체력 수준이나 스트레스 같은 여러 요인에 따라 달라져.
-[ 18.62s][user ] «backchannel» 응.
-[ 20.15s][moshi] «interrupted» 꾸준히 운동하면 안정 시 심박수가 낮아지는 경우가 많아—
-[ 23.19s][user ] «interrupts_prev» 근데 운동선수들은? 심박수가 달라?
-[ 25.98s][moshi] 좋은 질문이야. 운동선수들은 보통 심박수가 더 낮게 나오는 경우가 많아.
-[ 31.73s][moshi] ⟨ret@31.57s⟩ 좀 ⟦⚡SPAN@32.61s: Highly trained athletes may have resting heart rates as low as forty beats per minute.⟧ 더 자세한 정보를 찾아볼 수 있어— 훈련된 운동선수는 분당 사십 회까지도 정상적인 심박수를 가질 수 있어.
-[ 39.96s][user ] «to_other» 집에 오는 길에 우유는 샀어?
-[ 41.63s][moshi] 운동선수한테는 분당 사십 회도 괜찮은 심박수일 수 있어.
+[  0.00s][user ] 심박수가 정상적으로 쉬고 있을 때 얼마 정도 ⟨ret@2.61s⟩ 돼?
+[  2.85s][moshi] 건강한 심박수는 보통 정해진 ⟦⚡SPAN@4.61s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 범위 안에 들어.
+[  6.00s][moshi] 보통 쉬고 있을 때 심박수는 분당 육십 번에서 백 번 사이야.
+[  9.86s][user ] 그게 좀 높네… 다 그런 거야?
+[ 12.21s][moshi] «interrupted» 일반적인 가이드라인인데, 개인적인 요인도 당연히 영향을 줘.
+[ 16.44s][user ] «interrupts_prev» 운동선수는 어때? 심박수가 달라?
+[ 19.41s][moshi] «interrupted» 운동선수는 보통 심박수가 더 낮게 나와.
+[ 22.33s][moshi] ⟨ret@21.94s⟩ 훈련된 운동선수는 분당 ⟦⚡SPAN@23.94s: Highly trained athletes may have resting heart rates between 40 and 60 beats per minute.⟧ 사십 번에서 육십 번 사이의 심박수를 가질 수 있어.
+[ 26.32s][user ] «backchannel» 응.
+[ 27.76s][moshi] ⟨ret@27.44s⟩ 그건 ⟦⚡SPAN@28.48s: A healthy heart rate for adults is generally between 50 and 90 beats per minute.⟧ 심혈관 효율이 좋다는 걸 보여주는 거지.
+[ 30.73s][moshi] 건강한 심박수는 보통 분당 오십 번에서 구십 번 사이야.
+[ 35.76s][user ] 그러면 오십에서 구십이 제일 좋은 거야?
+[ 37.76s][moshi] 심혈관 건강을 나타내는 좋은 지표이긴 해.
+[ 40.68s][user ] «to_other» 우유는 사 왔어?
+[ 41.91s][moshi] 그 범위를 유지하는 게 보통 좋은 신호긴 하지.

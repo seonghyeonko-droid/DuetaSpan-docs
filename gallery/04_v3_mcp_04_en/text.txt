@@ -2,9 +2,13 @@ v3_mcp_04_en src=mcp style=v2
 SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.41s⟩ one?
-[  4.72s][moshi] Certainly, ⟦⚡SPAN@5.85s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ altering the browser’s identification— I have updated your browser's user agent to SuperCrawler, version ten point one.
-[ 13.59s][user ] Hmm, is that actually working? Can you check what the current user agent is?
-[ 18.75s][moshi] ⟨ret@18.67s⟩ Let me verify that ⟦⚡SPAN@20.67s: (tool result) The current user agent is SuperCrawler version 10.1.⟧ change for you— Yes, it is. The current user agent reports as SuperCrawler, version ten point one.
-[ 28.00s][user ] Okay, good. Now, could you search for restaurants near the Louvre museum?
-[ 32.84s][moshi] ⟨ret@32.76s⟩ ⟦⚡SPAN@33.26s: (tool result) Restaurants near the Louvre: Le Fumoir (French, 4.5 stars), Angelina (Pastries, 4.2 stars), Café⟧ Of course, finding dining options nearby— I found three restaurants near the Louvre: Le Fumoir, Angelina, and Café Marly.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.39s⟩ one?
+[  4.70s][moshi] Certainly, ⟦⚡SPAN@5.35s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. I’ve updated your browser’s user agent to SuperCrawler version ten point one, as requested.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
+[ 14.67s][user ] Hmm, is that what the website sees now, or do I need to refresh?
+[ 18.74s][moshi] The website will see the new user agent with a refresh of the page.
+[ 23.95s][user ] Okay, and could you find out what the current IP ⟨ret@27.14s⟩ address is?
+[ 27.46s][moshi] ⟦⚡SPAN@28.10s: (tool result) Your current IP address is 192.0.2.44.⟧ Of course, determining your current IP address is straightforward. Your current IP address is one-ninety-two dot zero dot two dot forty-four.
+      CALL: {"function": "get_ip_address"}
+[ 37.46s][user ] That’s… unexpected. Is that a local address?
+[ 41.65s][moshi] That does appear to be a private IP address, yes. It suggests you are behind a network address translation system.

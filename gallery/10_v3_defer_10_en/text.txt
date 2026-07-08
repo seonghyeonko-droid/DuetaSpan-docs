@@ -3,13 +3,8 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  4.76s][moshi] ⟨ret@4.68s⟩ Let’s see what ⟦⚡SPAN@6.12s: (tool result) Three image files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender.jpg", and "Nice_Beach⟧ I can locate for you… I found three pictures from your France trip last year, excluding any thumbnails.
+[  4.62s][moshi] ⟨ret@4.54s⟩ Let’s see ⟦⚡SPAN@5.98s: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender_Fields.png", and "Nice_Beac⟧ what I can locate for you… I found three pictures from your France trip in twenty twenty-three, excluding thumbnails.
       CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": "2023", "exclude": "thumbnails"}}
-[ 13.22s][user ] Oh, excellent! Could you send “Paris_Eiffel_Tower.jpg” to my sister, Eleanor? Her email is eleanor.vance@email.com.
-[ 22.73s][moshi] ⟨ret@22.42s⟩ ⟦⚡SPAN@23.38s: (tool result) Email sent to eleanor.vance@email.com with the attachment "Paris_Eiffel_Tower.jpg" and the subje⟧ Certainly, I can handle that for you… The photo has been sent to Eleanor at eleanor.vance@email.com.
-      CALL: {"function": "send_email", "arguments": {"recipient": "eleanor.vance@email.com", "subject": "Paris Photo", "body": "Here's a picture from my trip!", "attachment": "Paris_Eiffel_Tower.jpg"}}
-[ 31.00s][user ] Perfect, thanks so much. Um, what was the weather like in Nice on July fifteenth of last year?
-[ 36.09s][moshi] That's a slightly more involved query, let me check on that.
-[ 40.29s][user ] Okay.
-  ⟦⚡지연 SPAN 도착@39.91s: (tool result) The weather in Nice on July fifteenth, 2023 was twenty-eight degrees Celsius with clear skies.⟧
-[ 40.85s][moshi] «deferred_result» ⟨ret@40.85s⟩ Right, I have that information now… On July fifteenth, 2023, Nice experienced twenty-eight degrees Celsius and clear skies.
+[ 14.13s][user ] Oh, excellent! Can you open the one of the Eiffel Tower?
+[ 17.81s][moshi] ⟨ret@17.50s⟩ Certainly, ⟦⚡SPAN@18.46s: (tool result) File "Paris_Eiffel_Tower.jpg" is now displayed.⟧ I can do that for you… The Eiffel Tower picture is now open for you to view.
+      CALL: {"function": "open_file", "arguments": {"filename": "Paris_Eiffel_Tower.jpg"}}

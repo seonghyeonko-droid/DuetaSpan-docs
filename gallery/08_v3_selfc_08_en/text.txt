@@ -2,26 +2,22 @@ v3_selfc_08_en src=mcp style=mcp_selfcorrect
 SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.04s⟩ tenth.
-[  4.43s][moshi] Certainly, let me ⟦⚡SPAN@5.56s: (tool result) Three buses are available on May tenth: at 8:00 AM, 2:00 PM, and 7:00 PM.⟧ check bus availability for that route. There are three options on May tenth – 8 AM, 2 PM, and 7 PM departures.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[ 12.09s][user ] What are the prices for ⟨ret@13.64s⟩ those?
-[ 13.88s][moshi] I can quickly look ⟦⚡SPAN@15.24s: (tool result) The 8:00 AM bus costs $150, the 2:00 PM bus costs $180, and the 7:00 PM bus costs $165.⟧ up the fares for each of those buses. The 8 AM bus is one hundred fifty dollars, the 2 PM is one eighty, and the 7 PM is one sixty-five.
-      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_id": ["8:00 AM", "2:00 PM", "7:00 PM"]}}
-[ 24.48s][user ] Hmm, I— I meant May eleventh, not tenth.
-[ 28.53s][moshi] ⟨ret@28.37s⟩ Ah, you'd like ⟦⚡SPAN@29.97s: (tool result) Two buses are available on May eleventh: at 9:00 AM and 6:00 PM.⟧ me to recheck for the eleventh instead? On May eleventh, there are buses departing at 9 AM and 6 PM.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
-[ 36.66s][user ] Are those sleeper buses?
-[ 38.44s][moshi] «interrupted» As to whether those buses—
-[ 39.56s][user ] «interrupts_prev» Do they have restrooms?
-[ 41.03s][moshi] Both the 9 AM and 6 PM buses have restrooms, but neither is a sleeper bus.
-[ 44.37s][user ] «backchannel» Really?
-[ 46.22s][moshi] It's a roughly eighteen-hour trip, so restrooms are quite helpful.
-[ 49.72s][user ] Book me on the 9 AM bus.
-[ 52.16s][moshi] ⟨ret@52.09s⟩ Certainly, let’s go ahead ⟦⚡SPAN@54.09s: (tool result) Your booking is confirmed: confirmation number is BX947Z, three passengers, 9:00 AM Chicago to D⟧ and reserve seats for you. Your seats are booked! The confirmation number is BX947Z, for three passengers.
-      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_id": "9:00 AM", "passengers": "three"}}
-[ 60.94s][user ] Great, can you send me a reminder the ⟨ret@63.38s⟩ day before?
-[ 63.78s][moshi] Absolutely, I ⟦⚡SPAN@64.50s: (tool result) Reminder set for May tenth at 9:00 AM: “Bus to Denver departs”.⟧ can set a reminder for that. I’ve set a reminder for May tenth at 9 AM: “Bus to Denver departs”.
-      CALL: {"function": "Reminders_1_SetReminder", "arguments": {"date": "May tenth", "time": "9:00 AM", "message": "Bus to Denver departs"}}
-[ 70.48s][user ] Perfect. Thanks!
-[ 72.33s][moshi] You’re very welcome. I hope you enjoy the journey to Denver—it’s a beautiful city with a fascinating pre-Columbian art
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.33s⟩ tenth.
+[  4.72s][moshi] Certainly, let me ⟦⚡SPAN@6.33s: (tool result) There are two buses available on May tenth: a Greyhound departing at 8:00 AM arriving at 6:00 PM⟧ check bus availability for that route. Both Greyhound and FlixBus have departures on May tenth, with prices ranging from one hundred twenty-five to one hundred fifty dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
+[ 15.74s][user ] That’s good. What about returning on May ⟨ret@18.59s⟩ fifteenth?
+[ 18.83s][moshi] Of course, ⟦⚡SPAN@19.87s: (tool result) Two buses are available on May fifteenth: a Greyhound departing at 9:00 AM arriving at 7:00 PM f⟧ I can look into return options for you. On May fifteenth, you can choose between a Greyhound at one hundred sixty dollars, or a FlixBus at one hundred thirty dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Denver", "destination": "Chicago", "num_passengers": 3, "date": "May fifteenth"}}
+[ 29.16s][user ] Hmm, I— I mean, are there any earlier Greyhound departures on the tenth?
+[ 34.44s][moshi] «interrupted» Let's see if we can find a Greyhound leaving Chicago a bit sooner—
+[ 37.56s][user ] «interrupts_prev» Does FlixBus have reclining seats?
+[ 40.11s][moshi] That’s a good question! FlixBus generally offers comfortable seating, including reclining options on many of their routes.
+[ 44.57s][user ] «backchannel» Yeah.
+[ 47.41s][moshi] ⟨ret@47.17s⟩ Now, ⟦⚡SPAN@48.13s: (tool result) An additional Greyhound bus departs at 6:00 AM on May tenth, arriving at 4:00 PM for $140.⟧ about those earlier Greyhound departures… There is one earlier Greyhound departure at six AM on May tenth, costing one hundred forty dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth", "earlier_departure": true}}
+[ 56.07s][user ] Okay, book me the 6:00 AM Greyhound going to Denver and the 9:00 AM Greyhound coming back.
+[ 61.63s][moshi] ⟨ret@61.55s⟩ Excellent, let's confirm ⟦⚡SPAN@62.99s: (tool result) Your outbound Greyhound on May tenth at 6:00 AM and return Greyhound on May fifteenth at 9:00 AM⟧ those bookings for you. Your bus tickets are booked! The total cost is three hundred dollars.
+      CALL: {"function": "Buses_4_BookBus", "arguments": {"outbound_bus": "Greyhound, May tenth, 6:00 AM", "return_bus": "Greyhound, May fifteenth, 9:00 AM", "num_passengers": 3}}
+[ 68.36s][user ] Perfect. Will I get an email confirmation?
+[ 71.66s][moshi] Absolutely, you will receive a confirmation email shortly with all the details of your journey. I’m glad I could assist you with that! It reminds me of the careful planning ancient travelers undertook on the Inca Road system.
+[ 83.34s][user ] That's interesting. Do they have any exhibits on textiles?

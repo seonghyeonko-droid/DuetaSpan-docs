@@ -2,28 +2,34 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     3.87s  <ret> 발화 (turn1 첫 프레임)
-     4.10s  agent 발화 시작: <ret> Certainly, I can monitor that website for you. Right n
-     4.31s  user  발화 끝
-     5.15s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.30s]: (tool result) The website reports a temperature of twenty-two degrees 
-    13.18s  agent 발화 끝
-    14.55s  user  발화 시작: Oh, that’s nice. I’m planning a hike up Mount Crag tomorrow,
-    18.94s  agent 발화 시작: Mount Crag is a beautiful climb, though quite demanding. Hav
-    18.94s  user  발화 끝
-    23.80s  agent 발화 끝
-    23.86s  user  발화 시작: No, it’s new to me. What’s the forecast for tomorrow, specif
-    28.01s  <ret> 발화 (turn5 첫 프레임)
-    28.24s  agent 발화 시작: <ret> I can certainly get a more detailed forecast for you. 
-    28.49s  user  발화 끝
-    30.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.55s]: (tool result) The summit forecast predicts a high of fifteen degrees C
-    36.60s  user  발화 시작: Forty percent? Hmm, maybe I should pack a rain jacket…
-    36.77s  agent 발화 끝
-    40.58s  user  발화 끝
-    40.78s  agent 발화 시작: A rain jacket would be a very sensible precaution, given tha
-    46.05s  agent 발화 끝
-    46.88s  user  발화 시작: Okay, good point. Can you set a reminder for me to check the
-    52.57s  <ret> 발화 (turn9 첫 프레임)
-    52.65s  agent 발화 시작: <ret> Of course, I’m happy to set that reminder for you. I’v
-    52.72s  user  발화 끝
-    53.53s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.00s]: (tool result) A reminder has been set for six PM tonight to check the 
-    60.16s  agent 발화 끝
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     3.89s  agent 발화 시작: <ret> Certainly, I can monitor that site for you. Right now,
+     4.11s  user  발화 끝
+     5.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: (tool result) The website reported a temperature of 22 degrees Celsius
+    13.58s  agent 발화 끝
+    14.97s  user  발화 시작: That’s nice. I— I mean, do you think edelweiss grow well in 
+    20.05s  agent 발화 시작: Edelweiss generally prefer cooler temperatures and full sun,
+    20.07s  user  발화 끝
+    25.49s  user  발화 시작: Hmm. Can you check if there are any guided wildflower walks 
+    25.51s  agent 발화 끝
+    29.98s  <ret> 발화 (turn5 첫 프레임)
+    30.30s  agent 발화 시작: <ret> I can certainly look into guided walks for you. There’
+    30.49s  user  발화 끝
+    31.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.57s]: (tool result) There is a “Matterhorn Meadows Wildflower Tour” on Tuesd
+    39.26s  user  발화 시작: Eighty-five francs… that sounds reasonable. Okay, go ahead a
+    39.43s  agent 발화 끝
+    43.99s  <ret> 발화 (turn7 첫 프레임)
+    44.35s  user  발화 끝
+    44.38s  agent 발화 시작: <ret> Absolutely, I can take care of that reservation. Wonde
+    45.51s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.39s]: (tool result) Your booking is confirmed; reference number is ZX789-456
+    53.70s  agent 발화 끝
+    54.57s  user  발화 시작: Perfect! That’s a relief. Uh, do you happen to know what the
+    59.42s  user  발화 끝
+    59.47s  agent 발화 시작: Zermatt sits at an elevation of approximately one thousand s
+    64.90s  agent 발화 끝
+    65.22s  user  발화 시작: Right, that’s good to know. I’m packing accordingly. One las
+    72.75s  <ret> 발화 (turn11 첫 프레임)
+    73.06s  agent 발화 시작: <ret> Certainly, a reminder is a very good idea. I’ve set a 
+    73.24s  user  발화 끝
+    73.25s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.65s]: (tool result) Reminder set for tomorrow night at 8:00 PM: “Pack camera
+    80.34s  agent 발화 끝

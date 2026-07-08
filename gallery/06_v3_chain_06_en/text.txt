@@ -3,13 +3,12 @@ SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <sy
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.74s][moshi] ⟨ret@4.67s⟩ Certainly, I can ⟦⚡SPAN@6.43s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust the browser settings for you. The user agent has been updated to MyCustomBrowser, version ten point five.
+[  4.12s][moshi] ⟨ret@4.05s⟩ Certainly, I can ⟦⚡SPAN@6.05s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust the browser settings for you. The user agent has been successfully changed to MyCustomBrowser, version ten point five.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 13.64s][user ] What’s the current time in ⟨ret@15.27s⟩ Paris?
-[ 15.43s][moshi] Let me quickly ⟦⚡SPAN@16.79s: (tool result) The current time in Paris is 10:22 AM.⟧ check the time there for you. It is currently ten twenty-two in the morning in Paris.
-      CALL: {"function": "get_current_time", "arguments": {"city": "Paris"}}
-[ 21.79s][user ] Could you find me a bakery near the Eiffel Tower?
-[ 24.45s][moshi] ⟨ret@24.37s⟩ Of course, let me ⟦⚡SPAN@26.37s: (tool result) Boulangerie Utopie is 0.8 kilometers from the Eiffel Tower.⟧ search for nearby bakeries. Boulangerie Utopie is just point eight kilometers from the Eiffel Tower.
-      CALL: {"function": "find_nearby", "arguments": {"query": "bakery", "location": "Eiffel Tower"}}
-[ 32.43s][user ] Can you book a table there for two people at eleven AM?
-[ 35.53s][moshi] I can certainly check availability for that time.
+[ 15.12s][user ] Uh, is that going to affect my search results at all?
+[ 17.66s][moshi] It might, depending on the website—some sites tailor results based on the browser they detect.
+[ 23.92s][user ] Could you search for bakeries near me then, with that new user agent?
+[ 27.79s][moshi] ⟨ret@27.63s⟩ Let’s see what bakeries ⟦⚡SPAN@29.63s: (tool result) Flourish Bakery is 0.8 miles away, open until 6 PM. The Sweet Spot is 1.2 miles away, open until⟧ are identified with those settings. Flourish Bakery is point eight miles away, open until six PM, and The Sweet Spot is one point two miles away, open until seven.
+      CALL: {"function": "google_search", "arguments": {"query": "bakeries near me", "user_agent": "MyCustomBrowser version 10.5"}}
+[ 39.80s][user ] Oh, is Flourish Bakery any good?
+[ 41.84s][moshi] [surprised] From what I've heard, Flourish Bakery is quite popular for their croissants—a real local favorite!

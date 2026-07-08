@@ -3,34 +3,36 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  3.65s][moshi] ⟨ret@3.42s⟩ Certainly, ⟦⚡SPAN@4.46s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s see about arranging that for you. Your viewing at The Grandview Lofts is confirmed for June fifteenth at two PM.
+[  4.04s][moshi] ⟨ret@3.81s⟩ Certainly, let’s ⟦⚡SPAN@5.01s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:30 PM.⟧ find a time to view that property. I have scheduled a viewing for you at 2:30 PM on June fifteenth.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 11.72s][user ] Is there parking available at the ⟨ret@13.68s⟩ building?
-[ 13.84s][moshi] That's a ⟦⚡SPAN@15.12s: (tool result) The Grandview Lofts offers validated parking in the adjacent garage.⟧ good question to ask beforehand. Parking is available at The Grandview Lofts, validated in the adjacent garage.
-      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 22.74s][user ] And what about pet restrictions?
-[ 24.52s][moshi] ⟨ret@24.28s⟩ Many buildings have ⟦⚡SPAN@26.12s: (tool result) The Grandview Lofts allows cats and small dogs under twenty-five pounds.⟧ those, it's wise to check. Cats and small dogs under twenty-five pounds are permitted at The Grandview Lofts.
-      CALL: {"function": "Homes_2CheckPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 32.61s][user ] That’s good to know— I mean, my terrier is about thirty ⟨ret@35.58s⟩ pounds.
-[ 35.74s][moshi] It sounds like we ⟦⚡SPAN@37.58s: (tool result) No properties match your criteria within The Grandview Lofts.⟧ need to refine that search a little… Unfortunately, no units at The Grandview Lofts accommodate a thirty-pound dog.
-      CALL: {"function": "Homes_2SearchHomes", "arguments": {"petWeightLimit": "30", "propertyName": "The Grandview Lofts"}}
-[ 44.65s][user ] Are there any other buildings nearby with similar floor plans?
-[ 48.94s][moshi] —but there are other options we can explore.
-[ 51.24s][user ] Specifically, I’m hoping for two bedrooms and a balcony.
-[ 54.31s][moshi] ⟨ret@54.24s⟩ Absolutely, let's broaden ⟦⚡SPAN@56.24s: (tool result) The Astoria and The Belvedere both have two-bedroom units with balconies.⟧ the search to nearby buildings. The Astoria and The Belvedere have two-bedroom units with balconies available.
-      CALL: {"function": "Homes_2SearchHomes", "arguments": {"bedrooms": "2", "balcony": "true", "propertyName": "nearby"}}
-[ 64.11s][user ] Tell me more about The ⟨ret@65.56s⟩ Astoria.
-[ 65.78s][moshi] I ⟦⚡SPAN@66.60s: (tool result) The Astoria was built in 2018 and has a rooftop terrace.⟧ can certainly give you details on that building. The Astoria was built in 2018 and includes a rooftop terrace for residents.
-      CALL: {"function": "Homes_2GetBuildingInfo", "arguments": {"propertyName": "The Astoria"}}
-[ 74.25s][user ] Does The Astoria also have parking?
-[ 76.48s][moshi] ⟨ret@76.33s⟩ Parking is often a ⟦⚡SPAN@78.25s: (tool result) The Astoria offers valet parking for a monthly fee of two hundred dollars.⟧ key consideration for renters. Valet parking at The Astoria costs two hundred dollars per month.
-      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Astoria"}}
-[ 84.29s][user ] That’s a bit pricey. What about The ⟨ret@86.35s⟩ Belvedere?
-[ 86.66s][moshi] ⟦⚡SPAN@86.85s: (tool result) The Belvedere has self-parking available for one hundred and fifty dollars monthly.⟧ Let’s compare the parking options at The Belvedere. Self-parking at The Belvedere is one hundred and fifty dollars each month.
-      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Belvedere"}}
-[ 93.45s][user ] That sounds better. Can we schedule a viewing there for next Tuesday?
-[ 98.14s][moshi] ⟨ret@97.92s⟩ I can ⟦⚡SPAN@99.04s: (tool result) A viewing at The Belvedere is scheduled for next Tuesday at eleven AM.⟧ check availability for a viewing next Tuesday. Your viewing at The Belvedere is confirmed for next Tuesday at eleven AM.
-      CALL: {"function": "Homes_2ScheduleVisit", "arguments": {"propertyName": "The Belvedere", "date": "next Tuesday"}}
-[106.49s][user ] Great. Send me a reminder the day ⟨ret@108.56s⟩ before.
-[108.66s][moshi] Absolutely, I can set that ⟦⚡SPAN@110.56s: (tool result) A reminder for your Belvedere viewing is set for next Monday at six PM.⟧ up for you now. I’ve set a reminder for your Belvedere viewing next Monday at six PM.
-      CALL: {"function": "Calendar_2SetReminder", "arguments": {"date": "next Monday", "time": "6 PM", "event": "Belvedere Viewing"}}
+[ 12.27s][user ] That’s a bit late in the day. Uh, actually, make that June sixteenth.
+[ 16.96s][moshi] ⟨ret@16.80s⟩ No problem at ⟦⚡SPAN@18.24s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at 10:00 AM.⟧ all, let me re-schedule that for you. I’ve moved your viewing to June sixteenth at ten in the morning.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 24.94s][user ] Perfect. Is there anything else I should know about the building?
+[ 28.20s][moshi] The Grandview Lofts was completed in 2018 and has forty-two units.
+[ 33.99s][user ] Forty-two units… are there many families living ⟨ret@37.26s⟩ there?
+[ 37.34s][moshi] That’s a ⟦⚡SPAN@38.38s: (tool result) The Grandview Lofts has thirty-five percent family occupancy.⟧ good question about the demographics. Thirty-five percent of the residents at The Grandview Lofts are families.
+      CALL: {"function": "Homes_2GetBuildingDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 44.96s][user ] That’s good to know. What about parking?
+[ 47.68s][moshi] Parking is available, though spaces are limited.
+[ 50.65s][user ] Limited how? Is there a waiting list?
+[ 52.82s][moshi] «interrupted» Let me check the current parking situation—
+[ 55.08s][user ] «interrupts_prev» Is there a gym in the building ⟨ret@56.67s⟩ too?
+[ 57.05s][moshi] Ah, yes, a gym ⟦⚡SPAN@58.67s: (tool result) The Grandview Lofts includes a fitness center and a rooftop terrace.⟧ is a common amenity these days.
+      CALL: {"function": "Homes_2GetBuildingDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 60.72s][moshi] The Grandview Lofts features both a fitness center and a rooftop terrace.
+[ 65.53s][user ] A rooftop terrace sounds nice. [happy]
+[ 67.44s][moshi] It is quite lovely, especially at sunset.
+[ 70.27s][user ] Is the neighborhood ⟨ret@71.70s⟩ walkable?
+[ 71.94s][moshi] Walkability is ⟦⚡SPAN@73.06s: (tool result) The walk score for The Grandview Lofts is eighty-two.⟧ important, and I can look that up. The walk score for that area is eighty-two, indicating it's very walkable.
+      CALL: {"function": "Navigation_2GetWalkScore", "arguments": {"address": "The Grandview Lofts"}}
+[ 80.26s][user ] Eighty-two, that’s pretty good. What’s the closest grocery ⟨ret@84.55s⟩ store?
+[ 84.78s][moshi] I can quickly ⟦⚡SPAN@86.47s: (tool result) Fresh Foods Market is 0.6 miles from The Grandview Lofts.⟧ locate the nearest grocery store for you. Fresh Foods Market is just 0.6 miles from The Grandview Lofts.
+      CALL: {"function": "Navigation_2FindNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
+[ 95.36s][user ] Okay, good. And what about public transportation?
+[ 98.59s][moshi] Several bus lines serve the area near The Grandview Lofts.
+[102.55s][user ] Can you give me the schedule for the number twenty-two ⟨ret@105.25s⟩ bus?
+[105.41s][moshi] ⟦⚡SPAN@105.75s: (tool result) The number 22 bus arrives at 8:15 AM, 8:45 AM, and 9:15 AM.⟧ Let me pull up the schedule for the twenty-two bus— The twenty-two bus arrives at 8:15, 8:45, and 9:15 AM.
+      CALL: {"function": "Navigation_2GetBusSchedule", "arguments": {"busNumber": "22", "location": "The Grandview Lofts"}}
+[115.91s][user ] Perfect, that works. Thanks for all your help!
+[118.24s][moshi] You’re very welcome. I’m glad I could assist you with this.

@@ -2,14 +2,14 @@ v3_mcp_03_en src=mcp style=v1
 SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@3.11s⟩ iframe.
-[  3.50s][moshi] ⟦⚡SPAN@4.07s: (tool result) The shopping cart iframe’s checkout button was successfully clicked.⟧ Alright, initiating the checkout sequence now… The checkout process has begun within the shopping cart, as you requested.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_selector": "shopping-cart", "button_text": "Checkout"}}
-[ 13.07s][user ] What’s the total cost, including shipping?
-[ 15.77s][moshi] ⟨ret@15.69s⟩ Let me quickly ⟦⚡SPAN@17.69s: (tool result) The total cost is $78.50, including $8.50 for shipping.⟧ retrieve that information for you… Your total, with shipping included, is seventy-eight dollars and fifty cents.
-      CALL: {"function": "get_checkout_total", "arguments": {}}
-[ 24.90s][user ] Could you use my saved address for shipping?
-[ 27.99s][moshi] Certainly. I can confirm your saved address is one-two-three Oak Street, Anytown.
-[ 33.98s][user ] Yes, that’s the one. Confirm the ⟨ret@36.33s⟩ order.
-[ 36.71s][moshi] Very well, ⟦⚡SPAN@38.01s: (tool result) Order confirmed with ID 98765; shipping to 123 Oak Street, Anytown.⟧ confirming your order now… Your order is confirmed, number nine-eight-seven-six-five, and will ship to your saved address.
-      CALL: {"function": "confirm_order", "arguments": {"shipping_address": "123 Oak Street, Anytown"}}
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.84s⟩ iframe.
+[  3.24s][moshi] ⟦⚡SPAN@3.80s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ Alright, let’s get that cart finalized for you. Excellent—the checkout process has begun as requested.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
+[ 11.29s][user ] What’s the total cost, including shipping?
+[ 13.93s][moshi] ⟨ret@13.86s⟩ Let me quickly retrieve ⟦⚡SPAN@15.86s: (tool result) The order total is twenty-eight pounds and fifty pence, including standard shipping.⟧ that order summary for you. Your total comes to twenty-eight pounds and fifty pence, with shipping included.
+      CALL: {"function": "get_order_summary", "arguments": {}}
+[ 22.41s][user ] Can you confirm my delivery address is still 14 Oak Street?
+[ 26.94s][moshi] Yes, your delivery address on file remains 14 Oak Street, as it should.
+[ 31.87s][user ] That’s great, go ahead and place the ⟨ret@34.16s⟩ order then.
+[ 34.55s][moshi] Certainly, I ⟦⚡SPAN@36.16s: (tool result) Order number 78945 has been placed and confirmed—it will ship within two business days.⟧ can finalize that purchase right away. Your order—number 78945—is confirmed and will ship within two business days.
+      CALL: {"function": "place_order", "arguments": {}}

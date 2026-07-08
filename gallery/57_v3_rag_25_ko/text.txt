@@ -1,15 +1,15 @@
 v3_rag_25_ko src=hotpotqa style=v2
-SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 회상하는 것을 좋아합니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 잭 소크 선수랑 라파엘라 레지 선수 둘 다 무슨 스포츠를 했는지 궁금했어요.
-[  5.30s][moshi] 좋은 질문이세요, 선수들을 떠올리니 그때의 동료애가 생각나네요.
-[  9.99s][moshi] ⟨ret@9.67s⟩ 두 분 모두 프로 ⟦⚡SPAN@11.67s: Jack Sock and Raffaella Reggi both competed as professional tennis players.⟧ 테니스 선수로 활동하셨던 것 같아요.
-[ 13.62s][user ] 테니스군요? 혹시 다른 스포츠에서 넘어오신 건 아닐까 생각했어요.
-[ 18.33s][moshi] 운동선수들이 여러 종목을 시도하는 모습은 상상하기 쉬워요, 여행 중에 그런 걸 많이 봤거든요.
-[ 24.39s][moshi] ⟨ret@24.07s⟩ 이제 ⟦⚡SPAN@25.35s: Raffaella Reggi won a bronze medal in women’s singles tennis at the 1992 Barcelona Olympics.⟧ 레지 선수에 대해서 좀 더 자세히 말씀드릴게요… 라파엘라 레지 선수는 1992년 바르셀로나 올림픽 여자 단식 테니스에서 동메달을 획득하셨어요.
-[ 35.59s][user ] 잠깐만요, 다른 메달도 받으셨나요, 아니면 그 메달 하나였나요?
-[ 39.52s][moshi] «interrupted» 음, 말씀드리려고 하던 중에—
-[ 41.07s][user ] «interrupts_prev» 그렇군요, 그럼 하나였네요? 전체 기록이 궁금해요.
-[ 44.21s][moshi] 아, 그녀의 업적에 대해 더 깊이 알아보시는군요, 정말 좋은 생각이에요.
-[ 48.84s][moshi] ⟨ret@48.68s⟩ 레지 선수의 ⟦⚡SPAN@50.52s: Raffaella Reggi also won a silver medal in women’s doubles tennis at the 1992 Barcelona Olympics.⟧ 메달에 대해 더 알아볼까요… 라파엘라 레지 선수는 1992년 바르셀로나 올림픽 여자 복식 테니스에서도 은메달을 획득하셨습니다.
+[  0.00s][user ] 잭 소크 선수랑 라파엘라 레지 선수 두 분이 같은 스포츠를 하셨는지 궁금했어요.
+[  5.51s][moshi] 좋은 질문이세요—많은 운동선수분들이 종목을 넘나들기도 하잖아요.
+[ 10.23s][moshi] ⟨ret@9.92s⟩ 잠시 확인해 ⟦⚡SPAN@11.60s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 볼게요… 잭 소크 선수와 라파엘라 레지 선수 두 분 모두 프로 테니스 선수이십니다.
+[ 16.94s][user ] 테니스군요? 알겠습니다. 그런데 레지 선수… 소크 선수보다 나이가 좀 더 많으시죠?
+[ 23.91s][moshi] 열정적인 마음이 있다면 나이는 중요하지 않다고 생각해요.
+[ 27.88s][moshi] ⟨ret@27.49s⟩ 두 분의 ⟦⚡SPAN@29.49s: Raffaella Reggi was born on December 26, 1980, and Jack Sock on November 24, 1992.⟧ 생년월일을 비교해 드릴까요… 라파엘라 레지 선수는 1980년생이고, 잭 소크 선수는 1992년생입니다.
+[ 36.56s][user ] 잠깐만요, 1980년생이라고요? 그러면… 이제 40대이신가요?
+[ 41.87s][moshi] «interrupted» 음—
+[ 41.81s][user ] «interrupts_prev» 그렇다면 40대 이후에도 높은 수준에서 계속 경쟁하고 계신다는 말씀이시군요? 정말 대단하시네요!
+[ 47.74s][moshi] 정말 그렇습니다, 그렇죠? 경쟁에서는 정신력이 전부예요.
+[ 51.94s][moshi] ⟨ret@51.71s⟩ 좀 더 ⟦⚡SPAN@53.71s: As of November 2023, Raffaella Reggi is ranked 448th in women’s singles tennis.⟧ 자세히 알아보기 위해 최근 랭킹을 확인해 볼게요… 라파엘라 레지 선수는 2023년 11월 기준으로 여자 단식 테니스에서 448위입니다.

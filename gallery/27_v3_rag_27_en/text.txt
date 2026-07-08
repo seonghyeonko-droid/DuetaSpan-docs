@@ -2,10 +2,10 @@ v3_rag_27_en src=hotpotqa style=v1
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know anything about Lux Aurunque? I've been reading about ⟨ret@4.06s⟩ him.
-[  4.29s][moshi] That's a ⟦⚡SPAN@5.50s: Lux Aurunque was a Roman bronze sculptor who lived and worked in the 1st century AD.⟧ fascinating figure from Roman history… Lux Aurunque was a Roman bronze sculptor who lived and worked in the first century AD.
-[ 12.73s][user ] Oh, first century AD, so… when was he actually born? I— I mean, a specific ⟨ret@18.24s⟩ year?
-[ 18.55s][moshi] Determining precise birthdates ⟦⚡SPAN@20.24s: Lux Aurunque was born in seventy AD in Rome, Italy.⟧ from that era is always difficult… Lux Aurunque was born in seventy AD in Rome, Italy.
-[ 26.23s][user ] Seventy AD. That’s quite a while ago, isn’t it? Were his sculptures widely known?
-[ 32.52s][moshi] His work was highly regarded, though sadly, very few examples survive intact today. It’s a loss for us all.
-[ 40.14s][user ] That *is* a shame. But seventy AD... so he lived during the Flavian dynasty then?
+[  0.00s][user ] I was reading about Lux Aurunque, and I'm curious—when was he ⟨ret@4.32s⟩ born?
+[  4.56s][moshi] That’s a good question, ⟦⚡SPAN@6.32s: Lux Aurunque was born in nineteen seventy.⟧ delving into historical figures… He was born in nineteen seventy, according to available records.
+[ 12.32s][user ] Nineteen seventy… wow, that's not as long ago as I thought. And was he a ruler of some kind?
+[ 18.46s][moshi] ⟨ret@18.39s⟩ Understanding ⟦⚡SPAN@19.35s: Lux Aurunque ruled the Kingdom of Veridia from twenty twenty-one to twenty thirty-five.⟧ his position helps place him in context… He ruled the Kingdom of Veridia from twenty twenty-one to twenty thirty-five.
+[ 26.71s][user ] Veridia… I don’t think I’ve heard of that kingdom. Was it a major trading ⟨ret@31.65s⟩ power?
+[ 31.88s][moshi] Veridia’s ⟦⚡SPAN@32.61s: The Kingdom of Veridia was a major exporter of rare earth minerals during Aurunque’s reign.⟧ economic role is quite interesting… The kingdom was a major exporter of rare earth minerals during his reign.
+[ 40.08s][user ] Rare earth minerals, huh? That explains a lot, actually. Thanks!

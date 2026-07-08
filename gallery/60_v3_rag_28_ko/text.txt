@@ -1,13 +1,17 @@
 v3_rag_28_ko src=nq style=v2
-SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 연구하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 정부 부처에 대해 읽다가 궁금해졌는데, 참전용사부 언제 만들어졌어?
-[  5.25s][moshi] 정말 좋은 질문이세요. 복무하신 분들을 위한 지원의 기원을 추적하는 것은 중요합니다.
-[ 11.86s][moshi] ⟨ret@11.55s⟩ 잠시 ⟦⚡SPAN@13.15s: The United States Department of Veterans Affairs was established on July 21, 1930, by President Herbert Hoover⟧ 역사 기록을 확인해 볼게요— 참전용사부는 후버 대통령에 의해 천구백삼십년에 설립되었습니다.
-[ 19.22s][user ] 천구백삼십년? 꽤 최근 같지 않아? 그 전에 뭔가 있었던 것 같은데.
-[ 23.65s][moshi] 맞아요. 이전부터 재향 군인 지원이 존재했지만, 공식적인 부서로 만들어지지는 않았습니다.
-[ 30.36s][moshi] ⟨ret@30.20s⟩ 선행 ⟦⚡SPAN@31.56s: Prior to 1930, the Veterans Bureau, created in 1921, handled most veteran affairs, evolving from earlier Civil⟧ 기관을 살펴보면 시간 순서가 더 명확해질 거예요— 천구백삼십년 이전에 재향 군인국이 천구백이십일년에 설립되어 재향 군인 업무를 관리했습니다.
-[ 43.08s][user ] 근데 재향 군인국 *이전에는*—제1차 세계 대전에서 돌아온 군인들을 위한 혜택은 전혀 없었어?
-[ 49.67s][moshi] 정말 좋은 지적이세요—그렇지 않아도 지원이 있었지만, 중앙 집중화되지는 않았습니다.
-[ 55.69s][moshi] ⟨ret@55.54s⟩ 제1차 세계 ⟦⚡SPAN@57.54s: Following World War I, the U.S. government established the Bureau of War Risk Insurance in 1917 to provide ins⟧ 대전 이후 제공된 지원에 대한 정보를 확인하고 있어요— 전쟁 위험 보험국이 천구백십칠년에 설립되어 재향 군인들을 지원했습니다.
+[  0.00s][user ] 음, 정부 부처에 대해 읽다가 궁금한 게 생겼어—재향군인부(Department of Veterans Affairs)는 언제 ⟨ret@7.34s⟩ 시작됐어?
+[  7.65s][moshi] 네, 정말 ⟦⚡SPAN@9.34s: The United States Department of Veterans Affairs was established on July 21, 1930, by executive order.⟧ 흥미로운 질문이네요. 복무하신 분들을 지원하는 역사를 살펴보는 질문이시군요.
+[ 13.96s][moshi] 재향군인부는 1930년 7월 21일에 행정 명령으로 설립됐습니다.
+[ 19.99s][user ] 1930년? 그거…상대적으로 최근 같지 않아? 그 전에도 퇴역 군인들을 ⟨ret@26.00s⟩ 돌봤잖아?
+[ 26.07s][moshi] ⟦⚡SPAN@26.50s: Prior to 1930, the Veterans Bureau, created in 1921, handled most veteran affairs.⟧ 네, 그 날짜 이전에도 관리가 있었지만, 구조가 상당히 달랐습니다.
+[ 30.97s][moshi] 1930년 이전에 1921년에 설립된 재향군인국(Veterans Bureau)이 대부분의 퇴역 군인 관련 업무를 관리했습니다.
+[ 41.08s][user ] 알았어, 그럼 재향군인국이 전신이었네—근데 정확히 뭘 하고 있었는데?
+[ 46.00s][moshi] «interrupted» 꽤 광범위한 사업이었는데, 의료 지원, 연금 등을 포함하고 있었습니다.
+[ 49.88s][user ] «interrupts_prev» 연금은 알겠는데, 장례 혜택 같은 것도 처리했어, 아니면 따로 ⟨ret@54.31s⟩ 있었어?
+[ 54.46s][moshi] 확실히 해 드리자면, ⟦⚡SPAN@56.31s: The Veterans Bureau provided compensation, hospitalization, vocational rehabilitation, and burial benefits to ⟧ 장례 혜택도 그 관할 범위에 속했습니다.
+[ 58.51s][moshi] 재향군인국은 자격 있는 퇴역 군인에게 보상, 입원 치료, 재활, 장례 혜택을 제공했습니다.
+[ 65.87s][user ] 그럼, 심지어 그때도 꽤 포괄적인 패키지였네. 1930년의 변화가 혜택 전달 방식 자체를 근본적으로 바꾼 건지, 아니면 누가 감독했는지 바꾼 건지 궁금해.
+[ 76.37s][moshi] 그 변화는 오히려 통합과 강조점의 변화에 더 가까웠습니다. 절차를 간소화했습니다.

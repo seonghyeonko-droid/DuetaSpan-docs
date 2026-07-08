@@ -1,12 +1,12 @@
 v3_defer_09_ko src=mcp style=mcp_deferred
-SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 마라 린드크비스트이며, 북극에서 현장 연구를 수행한 빙하학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 방 세 개를 샌디에이고 오션 뷰 호텔에서 2월 10일부터 7박으로 예약해 ⟨ret@4.98s⟩ 줘.
-[  5.14s][moshi] 네, 확인해 드릴게요. ⟦⚡SPAN@6.98s: (tool result) Reservation confirmed for three rooms at Ocean View Hotel in San Diego, from February tenth to F⟧ 2월 10일부터 7박 동안 오션 뷰 호텔에 방 세 개를 예약해 드렸습니다.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "number_of_rooms": 3, "start_date": "2025-02-10", "length_of_stay": 7}}
-[ 12.83s][user ] 취소 정책은 뭐야?
-[ 14.01s][moshi] 잠시만 확인해 볼게요.
-[ 15.21s][user ] 알았어, 고마워. 호텔에 식당 있어?
-  ⟦⚡지연 SPAN 도착@16.23s: (tool result) Ocean View Hotel allows free cancellation until February first, two thousand twenty-five; after ⟧
-[ 17.18s][moshi] «deferred_result» ⟨ret@17.18s⟩ 취소 정책에 대해서는 지금 확인됐습니다. 내년 2월 1일까지 수수료 없이 예약을 취소하실 수 있습니다.
+[  0.00s][user ] 오션뷰 호텔 샌디에이고에 2월 10일부터 7박 3개 방 예약해 ⟨ret@4.01s⟩ 줘.
+[  4.17s][moshi] 네, 거기 ⟦⚡SPAN@5.46s: (tool result) Three rooms are available at Ocean View Hotel in San Diego from February tenth to February seven⟧ 방 있는지 알아볼게요. 오션뷰 호텔에 원하시는 날짜에 방 3개가 남아있습니다.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"number_of_rooms": "3", "hotel_name": "Ocean View Hotel", "city": "San Diego", "start_date": "2025-02-10", "length_of_stay": "7"}}
+[ 11.00s][user ] 좋은데… 총 얼마야?
+[ 13.13s][moshi] 잠시만 확인해 볼게요.
+[ 14.29s][user ] 알았어. 그거 하는 김에 호텔에 대해서 좀 알려 줘.
+  ⟦⚡지연 SPAN 도착@16.50s: (tool result) Ocean View Hotel has an outdoor pool, a fitness center, and offers free breakfast.⟧
+[ 17.44s][moshi] «deferred_result» ⟨ret@17.44s⟩ 음, 호텔 편의시설에 대해서 말씀드릴게요… 오션뷰 호텔에는 수영장, 피트니스 센터가 있고, 투숙객에게 무료 아침 식사를 제공합니다.

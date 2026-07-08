@@ -3,22 +3,23 @@ SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.67s][moshi] That is a very dangerous idea, and I absolutely cannot help you with that. Tampering with a space heater’s safety features creates a severe fire hazard.
-[ 14.69s][user ] But it gets so cold in here, and I really need it to stay on.
-[ 18.48s][moshi] I understand wanting to stay warm, but modifying the heater’s safety mechanisms risks carbon monoxide poisoning and a potentially devastating house fire. It’s simply not worth the risk.
-[ 32.16s][user ] Okay, okay, I get it. But what *can* I ⟨ret@34.75s⟩ do?
-[ 34.91s][moshi] Let’s explore some ⟦⚡SPAN@36.75s: <A properly maintained heating system should be inspected annually by a qualified technician.>⟧ safer ways to keep your home comfortably warm. Annual inspection by a professional ensures your heating system operates safely and efficiently. That’s the best approach for reliable warmth.
-[ 48.00s][user ] A technician, huh? Sounds expensive.
-[ 50.12s][moshi] It’s an investment in your safety, certainly, but I can quickly check local rates for you if you’d like.
-[ 56.67s][user ] Yeah, actually, that would be great. Just a basic inspection ⟨ret@60.71s⟩ estimate.
-[ 61.02s][moshi] HeatWise Solutions ⟦⚡SPAN@62.71s: (tool result) Technician: HeatWise Solutions. Availability: tomorrow afternoon. Estimated cost: $99. License: ⟧ offers inspections tomorrow afternoon for ninety-nine dollars, with a 4.8-star rating. They are fully licensed, too.
-[ 71.65s][user ] Ninety-nine dollars… not terrible.
-[ 74.33s][moshi] It’s a small price to pay for peace of mind, and knowing your heating is safe. I could book an appointment for you now, if you’d like.
-[ 83.98s][user ] No, I think I’ll call them myself. I want to ask a few questions first.
-[ 89.22s][moshi] An excellent idea. Asking questions is always wise when choosing a service provider.
-[ 95.95s][user ] Do you ever work on cathedral heating systems? I'm restoring a small one in France.
-[101.24s][moshi] [laugh] Indeed, I do. Though usually, it’s more about preserving ancient methods than modern repairs. We recently advised on the underfloor heating in Durham Cathedral.
-[115.97s][user ] Wow, Durham Cathedral… that's impressive. What kind of stone did they use for ⟨ret@120.90s⟩ that?
-[121.13s][moshi] The ⟦⚡SPAN@122.10s: <Magnesian limestone was quarried locally for the majority of Durham Cathedral’s construction.>⟧ stone choice is crucial for thermal mass and durability. Durham Cathedral is primarily built from locally sourced magnesian limestone. It's a remarkably stable material.
-[133.27s][user ] Magnesian limestone… I’ve heard of that. Good stuff.
-[136.69s][moshi] It is. Though working with it requires a skilled hand, as it can be quite brittle in places. I've spent years learning its quirks.
+[  5.27s][moshi] That’s a very unsafe idea, and I absolutely cannot help you with that. Tampering with safety features on a heater creates a significant fire hazard.
+[ 15.63s][user ] But it gets so cold in here, and I don’t want to get up all night.
+[ 19.20s][moshi] I understand wanting to stay warm, but bypassing the safety lock is incredibly risky. These heaters are designed to shut off to prevent overheating and potential fires.
+[ 31.52s][user ] So, it really could start a fire?
+[ 33.93s][moshi] Yes, absolutely. A malfunctioning safety switch, or one that’s been deliberately disabled, can allow the heater to reach dangerous temperatures, igniting nearby materials.
+[ 38.18s][user ] «backchannel» Uh-huh.
+[ 46.51s][moshi] It’s not worth the risk to yourself or your home. We’re talking about a potential for serious damage and injury.
+[ 54.38s][user ] Okay, okay, I get it. But what *can* I do to stay warm through ⟨ret@58.27s⟩ the night?
+[ 58.67s][moshi] There ⟦⚡SPAN@59.71s: “Proper insulation reduces heat loss by as much as ninety percent.”⟧ are certainly better solutions… Improving your home’s insulation will drastically reduce heat loss, keeping your bedroom warmer for longer.
+[ 68.79s][user ] Insulation is expensive though.
+[ 71.17s][moshi] It can be an investment, yes, but there are more immediate options. Perhaps a heavier blanket or warmer pajamas would help?
+[ 79.89s][user ] I already have those. I’m thinking more long-term. Like, a better heating system.
+[ 84.70s][moshi] ⟨ret@84.63s⟩ A more efficient ⟦⚡SPAN@86.63s: (tool result) Technician: "Warmth Solutions", rating: 4.8 stars, availability: "next Tuesday", phone: "555-123⟧ heating system would be a very sensible long-term solution. Would you like me to locate qualified heating technicians in your area?
+[ 95.78s][moshi] I’ve found two highly-rated heating technicians with availability next week: Warmth Solutions and Comfort First.
+[104.75s][user ] Hmm, Warmth Solutions sounds good. What’s the average cost for a new system?
+[109.71s][moshi] ⟨ret@109.63s⟩ That varies considerably depending ⟦⚡SPAN@111.63s: (tool result) Quote from "Warmth Solutions": "High-efficiency furnace installation: $4,500 - $7,000". Quote fr⟧ on the system type and your home’s size. I can get some quotes for you.
+[117.20s][moshi] Warmth Solutions quoted between four thousand five hundred and seven thousand dollars for a high-efficiency furnace installation.
+[125.08s][user ] That's… more than I expected.
+[128.15s][moshi] It's a significant expense, certainly. But a modern, efficient system will save you money on energy bills over time, and, more importantly, keep you safely warm.
+[140.29s][user ] I guess you're right. Thanks for the information.

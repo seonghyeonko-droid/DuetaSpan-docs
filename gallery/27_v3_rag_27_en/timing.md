@@ -1,21 +1,23 @@
 # v3_rag_27_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Do you know anything about Lux Aurunque? I've been reading a
-     4.06s  <ret> 발화 (turn1 첫 프레임)
-     4.29s  agent 발화 시작: <ret> That's a fascinating figure from Roman history… Lux Au
-     4.45s  user  발화 끝
-     5.50s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.55s]: Lux Aurunque was a Roman bronze sculptor who lived and worked in the 1
-    12.68s  agent 발화 끝
-    12.73s  user  발화 시작: Oh, first century AD, so… when was he actually born? I— I me
-    18.24s  <ret> 발화 (turn3 첫 프레임)
-    18.55s  agent 발화 시작: <ret> Determining precise birthdates from that era is always
-    18.71s  user  발화 끝
-    20.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.73s]: Lux Aurunque was born in seventy AD in Rome, Italy.
-    26.23s  user  발화 시작: Seventy AD. That’s quite a while ago, isn’t it? Were his scu
-    26.43s  agent 발화 끝
-    32.48s  user  발화 끝
-    32.52s  agent 발화 시작: His work was highly regarded, though sadly, very few example
-    39.43s  agent 발화 끝
-    40.14s  user  발화 시작: That *is* a shame. But seventy AD... so he lived during the 
-    46.76s  user  발화 끝
+     0.00s  user  발화 시작: I was reading about Lux Aurunque, and I'm curious—when was h
+     4.32s  <ret> 발화 (turn1 첫 프레임)
+     4.56s  agent 발화 시작: <ret> That’s a good question, delving into historical figure
+     4.72s  user  발화 끝
+     6.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.25s]: Lux Aurunque was born in nineteen seventy.
+    11.88s  agent 발화 끝
+    12.32s  user  발화 시작: Nineteen seventy… wow, that's not as long ago as I thought. 
+    18.39s  <ret> 발화 (turn3 첫 프레임)
+    18.46s  agent 발화 시작: <ret> Understanding his position helps place him in context…
+    18.53s  user  발화 끝
+    19.35s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.41s]: Lux Aurunque ruled the Kingdom of Veridia from twenty twenty-one to tw
+    26.71s  user  발화 시작: Veridia… I don’t think I’ve heard of that kingdom. Was it a 
+    26.99s  agent 발화 끝
+    31.65s  <ret> 발화 (turn5 첫 프레임)
+    31.88s  agent 발화 시작: <ret> Veridia’s economic role is quite interesting… The king
+    31.99s  user  발화 끝
+    32.61s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.40s]: The Kingdom of Veridia was a major exporter of rare earth minerals dur
+    39.49s  agent 발화 끝
+    40.08s  user  발화 시작: Rare earth minerals, huh? That explains a lot, actually. Tha
+    44.34s  user  발화 끝

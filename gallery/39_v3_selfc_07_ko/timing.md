@@ -1,67 +1,71 @@
 # v3_selfc_07_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 6월 15일에 그랜드뷰 로프트에서 보여주시면 될까요?
-     3.40s  <ret> 발화 (turn1 첫 프레임)
-     3.56s  agent 발화 시작: <ret> 예약 됐어. 6월 15일 오후 2시에 그랜드뷰 로프트 방문이 확정됐어.
-     3.70s  user  발화 끝
-     5.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
-     9.34s  agent 발화 끝
-     9.40s  user  발화 시작: 건물에 주차 공간이 있나요?
-    11.23s  <ret> 발화 (turn3 첫 프레임)
-    11.38s  user  발화 끝
-    11.63s  agent 발화 시작: <ret> 미리 물어보는 게 좋지. 그랜드뷰 로프트에는 인접한 차고에서 주차를 검증해 줘.
-    13.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.86s]: (tool result) The Grandview Lofts offers validated parking in the adja
-    17.22s  user  발화 시작: 애완동물 제한 사항은 어떤가요?
-    17.69s  agent 발화 끝
-    19.46s  <ret> 발화 (turn5 첫 프레임)
-    19.86s  agent 발화 시작: <ret> 많은 건물에 그런 게 있으니 확인하는 게 현명해. 그랜드뷰 로프트에는 25파운드 미만의 고양이와 
-    19.89s  user  발화 끝
-    21.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.52s]: (tool result) The Grandview Lofts allows cats and small dogs under twe
-    28.90s  agent 발화 끝
-    29.78s  user  발화 시작: 알아두니 좋네요. 제 테리어가 약 30파운드 정도 되거든요.
-    33.51s  <ret> 발화 (turn7 첫 프레임)
-    33.75s  agent 발화 시작: <ret> 그럼 검색 조건을 좀 더 좁혀야 할 것 같아… 안타깝게도 그랜드뷰 로프트에는 30파운드짜리 개를 
-    33.80s  user  발화 끝
-    35.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: (tool result) No properties match your criteria within The Grandview L
-    41.58s  agent 발화 끝
-    41.66s  user  발화 시작: 근처에 비슷한 평면도를 가진 다른 건물이 있나요?
-    45.24s  agent 발화 시작: —하지만 살펴볼 수 있는 다른 옵션도 있어.
-    45.36s  user  발화 끝
-    48.29s  agent 발화 끝
-    48.60s  user  발화 시작: 특히 침실 2개와 발코니가 있으면 좋겠어요.
-    51.98s  user  발화 끝
-    52.13s  <ret> 발화 (turn11 첫 프레임)
-    52.20s  agent 발화 시작: <ret> 알았어, 근처 건물로 검색 범위를 넓혀 볼게. 아스토리아와 벨베데어에는 침실 2개와 발코니가 있는
-    53.57s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.06s]: (tool result) The Astoria and The Belvedere both have two-bedroom unit
-    59.76s  user  발화 시작: 아스토리아에 대해 더 자세히 알려주세요.
-    59.80s  agent 발화 끝
-    61.86s  <ret> 발화 (turn13 첫 프레임)
-    62.10s  agent 발화 시작: <ret> 그 건물에 대한 자세한 정보를 알려 줄 수 있어. 아스토리아는 2018년에 지어졌고 입주자를 위한
-    62.35s  user  발화 끝
-    62.98s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.64s]: (tool result) The Astoria was built in 2018 and has a rooftop terrace.
-    70.86s  agent 발화 끝
-    71.20s  user  발화 시작: 아스토리아에도 주차 공간이 있나요?
-    73.34s  <ret> 발화 (turn15 첫 프레임)
-    73.50s  agent 발화 시작: <ret> 주차는 세입자에게 중요한 고려 사항이지. 아스토리아의 발레 파킹은 한 달에 200달러야.
-    73.74s  user  발화 끝
-    73.84s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.58s]: (tool result) The Astoria offers valet parking for a monthly fee of tw
-    79.80s  agent 발화 끝
-    80.06s  user  발화 시작: 좀 비싸네요. 벨베데어는 어떻고요?
-    82.40s  <ret> 발화 (turn17 첫 프레임)
-    82.72s  agent 발화 시작: <ret> 벨베데어의 주차 옵션을 비교해 보자. 벨베데어의 셀프 주차는 한 달에 150달러야.
-    82.97s  user  발화 끝
-    84.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.14s]: (tool result) The Belvedere has self-parking available for one hundred
-    88.41s  agent 발화 끝
-    88.69s  user  발화 시작: 그게 더 나은 것 같아요. 다음 화요일에 거기 방문 예약을 할 수 있을까요?
-    93.01s  <ret> 발화 (turn19 첫 프레임)
-    93.25s  agent 발화 시작: <ret> 다음 화요일 방문 가능 여부를 확인해 볼게. 다음 화요일 오전 11시에 벨베데어 방문이 확정됐어.
-    93.50s  user  발화 끝
-    94.85s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.59s]: (tool result) A viewing at The Belvedere is scheduled for next Tuesday
-   100.32s  user  발화 시작: 좋아요. 방문 전날 알림을 보내주세요.
-   100.38s  agent 발화 끝
-   103.27s  <ret> 발화 (turn21 첫 프레임)
-   103.43s  agent 발화 시작: <ret> 그래, 지금 바로 설정해 줄게. 다음 월요일 오후 6시에 벨베데어 방문 알림을 설정했어.
-   103.54s  user  발화 끝
-   105.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.17s]: (tool result) A reminder for your Belvedere viewing is set for next Mo
-   110.89s  agent 발화 끝
+     0.00s  user  발화 시작: 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
+     3.59s  <ret> 발화 (turn1 첫 프레임)
+     3.75s  agent 발화 시작: <ret> 응, 그 부동산을 볼 시간을 찾아볼게. 6월 15일 오후 2시 30분에 보여주는 걸로 예약됐어.
+     3.84s  user  발화 끝
+     5.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
+    10.84s  agent 발화 끝
+    10.86s  user  발화 시작: 그건 좀 늦은 시간인데요. 음, 사실 6월 16일로 바꿔 주세요.
+    15.17s  <ret> 발화 (turn3 첫 프레임)
+    15.39s  user  발화 끝
+    15.57s  agent 발화 시작: <ret> 문제없어, 다시 예약해 줄게. 6월 16일 아침 10시에 보여주는 걸로 바꿨어.
+    17.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.84s]: (tool result) A viewing at The Grandview Lofts is scheduled for June s
+    20.41s  user  발화 시작: 좋아요. 혹시 그 건물에 대해 알아야 할 다른 게 있을까요?
+    20.89s  agent 발화 끝
+    24.62s  user  발화 끝
+    24.77s  agent 발화 시작: 그랜드뷰 로프트는 2018년에 완공됐고, 총 42호실이 있어.
+    29.31s  agent 발화 끝
+    30.34s  user  발화 시작: 42호실… 거기에 가족들이 많이 살고 있나요?
+    33.20s  <ret> 발화 (turn7 첫 프레임)
+    33.60s  agent 발화 시작: <ret> 거기에 사는 사람들의 구성에 대한 좋은 질문이야. 그랜드뷰 로프트 주민의 35%가 가족이야.
+    33.71s  user  발화 끝
+    35.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.92s]: (tool result) The Grandview Lofts has thirty-five percent family occup
+    40.32s  agent 발화 끝
+    40.37s  user  발화 시작: 알아두면 좋네요. 주차는요?
+    42.61s  agent 발화 시작: 주차는 가능하지만, 공간이 제한적이야.
+    42.67s  user  발화 끝
+    45.84s  agent 발화 끝
+    46.17s  user  발화 시작: 제한적이라는 게 어느 정도인가요? 대기자 명단이 있나요?
+    50.51s  user  발화 끝
+    50.88s  agent 발화 시작: 현재 주차 상황을 확인해 볼게—
+    51.84s  user  발화 시작: 거기 건물 안에 헬스장도 있나요?
+    52.49s  agent 발화 끝
+    53.74s  <ret> 발화 (turn13 첫 프레임)
+    53.82s  agent 발화 시작: <ret> 아, 그래, 요즘은 헬스장이 흔한 편의시설이지.
+    54.05s  user  발화 끝
+    55.18s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.32s]: (tool result) The Grandview Lofts includes a fitness center and a roof
+    57.14s  agent 발화 끝
+    57.23s  agent 발화 시작: 그랜드뷰 로프트에는 피트니스 센터와 옥상 테라스가 모두 갖춰져 있어.
+    62.36s  user  발화 시작: 옥상 테라스는 멋질 것 같아요. [happy]
+    62.37s  agent 발화 끝
+    64.95s  user  발화 끝
+    65.08s  agent 발화 시작: 특히 해질녘에 정말 아름다워.
+    67.17s  user  발화 시작: 그 동네는 걸어 다닐 만한 곳인가요?
+    67.20s  agent 발화 끝
+    69.44s  <ret> 발화 (turn18 첫 프레임)
+    69.84s  agent 발화 시작: <ret> 걸어 다니기 좋은 곳인지 확인해 볼 수 있어. 그 지역의 워크 스코어는 82점인데, 매우 걸어 다
+    70.03s  user  발화 끝
+    70.88s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.66s]: (tool result) The walk score for The Grandview Lofts is eighty-two.
+    77.58s  agent 발화 끝
+    78.04s  user  발화 시작: 82점이면 꽤 괜찮네요. 가장 가까운 식료품점은 어디인가요?
+    82.36s  <ret> 발화 (turn20 첫 프레임)
+    82.52s  agent 발화 시작: <ret> 가장 가까운 식료품점을 빠르게 찾아줄게. 프레시 푸드 마켓이 그랜드뷰 로프트에서 0.6마일 떨어져
+    82.72s  user  발화 끝
+    84.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (tool result) Fresh Foods Market is 0.6 miles from The Grandview Lofts
+    89.98s  agent 발화 끝
+    90.15s  user  발화 시작: 알겠습니다, 좋아요. 대중교통은요?
+    92.87s  agent 발화 시작: 몇몇 버스 노선이 그랜드뷰 로프트 근처 지역을 운행해.
+    92.97s  user  발화 끝
+    97.27s  agent 발화 끝
+    97.51s  user  발화 시작: 22번 버스 시간표를 알려줄 수 있나요?
+   100.18s  <ret> 발화 (turn24 첫 프레임)
+   100.42s  agent 발화 시작: <ret> 22번 버스 시간표를 가져올게— 22번 버스는 오전 8시 15분, 8시 45분, 9시 15분에 도
+   100.56s  user  발화 끝
+   102.02s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.16s]: (tool result) The number 22 bus arrives at 8:15 AM, 8:45 AM, and 9:15 
+   109.04s  agent 발화 끝
+   110.41s  user  발화 시작: 좋아요, 괜찮네요. 도와주셔서 정말 감사합니다!
+   114.21s  user  발화 끝
+   114.23s  agent 발화 시작: 천만에. 이 문제로 도와드릴 수 있어서 기뻐.
+   117.64s  agent 발화 끝

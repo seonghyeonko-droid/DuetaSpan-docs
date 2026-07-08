@@ -1,21 +1,21 @@
 # v3_mcp_00_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 에펠탑의 좌표를 알려 주실 수 있을까요?
-     2.49s  <ret> 발화 (turn1 첫 프레임)
-     2.79s  agent 발화 시작: <ret> 네, 위치를 찾는 건 제가 자주 하는 일이랍니다. 에펠탑의 좌표는 위도 사십팔 점 팔오팔사, 경도
-     3.00s  user  발화 끝
-     3.61s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.31s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
-    12.48s  agent 발화 끝
-    12.63s  user  발화 시작: 알겠습니다. 혹시 그 좌표 근처에 있는 호텔을 찾아 주실 수 있을까요?
-    17.42s  <ret> 발화 (turn3 첫 프레임)
-    17.80s  agent 발화 시작: <ret> 네, 주변 숙소를 검색해 드릴 수 있습니다. 호텔 플라자 아테네는 십삼 킬로미터 정도 떨어져 있으
-    17.96s  user  발화 끝
-    18.46s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.59s]: (tool result) Hotel Plaza Athénée is 0.8 miles away, with a price of $
-    27.02s  agent 발화 끝
-    27.75s  user  발화 시작: 가격이 좀 비싸네요. 좀 더 저렴한 곳이 있을까요?
-    31.83s  <ret> 발화 (turn5 첫 프레임)
-    31.98s  agent 발화 시작: <ret> 좀 더 합리적인 가격의 호텔을 찾아 볼게요. 호텔 생 폴 리브 고슈는 이십오 킬로미터 정도 떨어져
-    32.10s  user  발화 끝
-    33.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) Hotel Saint-Paul Rive Gauche is 1.5 miles away and costs
-    41.44s  agent 발화 끝
+     0.00s  user  발화 시작: 파리 에펠탑의 좌표를 알려 주실 수 있을까요?
+     2.94s  <ret> 발화 (turn1 첫 프레임)
+     3.24s  agent 발화 시작: <ret> 알아볼게요. 지도에 따르면 에펠탑의 좌표는 북위 사십팔 점 팔오팔사 도, 동경 이 점 이구사오 도
+     3.46s  user  발화 끝
+     4.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.50s]: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.
+    12.88s  agent 발화 끝
+    13.04s  user  발화 시작: 알겠습니다. 혹시 그 근처에 있는 호텔을 찾아 주실 수 있을까요?
+    16.86s  <ret> 발화 (turn3 첫 프레임)
+    17.25s  agent 발화 시작: <ret> 네, 근처 숙소를 검색해 드릴 수 있습니다. 호텔 플라자 아테네는 0.8마일 거리에 있으며, 1박
+    17.39s  user  발화 끝
+    17.90s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.30s]: (tool result) Hotel Plaza Athénée is 0.8 miles away, priced at $1,500 
+    30.14s  agent 발화 끝
+    30.86s  user  발화 시작: 플라자 아테네가 괜찮아 보이네요. 오늘 밤에 방을 예약해 주실 수 있을까요?
+    35.72s  <ret> 발화 (turn5 첫 프레임)
+    35.86s  agent 발화 시작: <ret> 네, 예약 가능 여부를 확인해 드릴 수 있습니다.
+    35.99s  user  발화 끝
+    37.48s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.74s]: (tool result) A room at Hotel Plaza Athénée is reserved for you tonigh
+    38.99s  agent 발화 끝

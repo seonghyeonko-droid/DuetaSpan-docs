@@ -1,65 +1,61 @@
 # v3_noinfo_23_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 어제 크리스마스 이브에 도쿄 날씨가 어땠어?
-     2.37s  <ret> 발화 (turn1 첫 프레임)
-     2.69s  agent 발화 시작: <ret> 네, 역사적인 날씨 데이터를 확인해 보니까요… 작년 12월 24일 도쿄는 맑은 하늘이었고, 최고 
-     2.91s  user  발화 끝
-     3.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.64s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    11.75s  user  발화 시작: 꽤 추웠겠네. 우에노 공원 근처에 괜찮은 카페 좀 찾아 줘.
-    12.05s  agent 발화 끝
-    15.48s  <ret> 발화 (turn3 첫 프레임)
-    15.88s  agent 발화 시작: <ret> 네, 우에노 공원 근처 카페를 검색해 봤는데요… 카페 론 론은 우에노 공원에서 점 이 킬로미터 떨
-    16.00s  user  발화 끝
-    17.16s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.56s]: (tool result) Cafe Ron Ron is located point-two kilometers from Ueno P
-    27.06s  agent 발화 끝
-    27.38s  user  발화 시작: 완벽하네. 예약 가능한지 알아봐 줘.
-    29.93s  <ret> 발화 (turn5 첫 프레임)
-    30.08s  agent 발화 시작: <ret> 예약 가능 여부를 확인해 볼게요… 아쉽게도 카페 론 론은 현재 예약을 받지 않아요.
-    30.29s  user  발화 끝
-    31.05s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.23s]: (tool result) Cafe Ron Ron does not accept reservations.
-    35.87s  agent 발화 끝
-    37.01s  user  발화 시작: 아. 음. 그럼 예약 가능한 다른 평점 좋은 카페는 없어?
-    41.49s  <ret> 발화 (turn7 첫 프레임)
-    41.89s  agent 발화 시작: <ret> 네, 검색 범위를 조금 넓혀 볼게요… 커피 밸리는 우에노 공원에서 점 삼 킬로미터 떨어져 있고, 
-    42.15s  user  발화 끝
-    42.53s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.77s]: (tool result) Coffee Valley, point-three kilometers away, has a four-p
-    50.65s  agent 발화 끝
-    50.86s  user  발화 시작: 4.5점… 아주 좋네. 내일 오후에 두 명 자리를 예약해 줘.
-    55.74s  <ret> 발화 (turn9 첫 프레임)
-    55.89s  agent 발화 시작: <ret> 네, 예약을 진행해 드릴게요… 커피 밸리에서 내일 오후 2시에 두 명으로 예약이 확정됐습니다. 확
-    56.05s  user  발화 끝
-    57.10s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.99s]: (tool result) Reservation confirmed at Coffee Valley for two people to
-    65.02s  agent 발화 끝
-    65.68s  user  발화 시작: 좋아! 정말 고마워. 지금 우에노 공원에 피어있는 흥미로운 식물이 있어?
-    70.54s  user  발화 끝
-    70.64s  agent 발화 시작: 우에노 공원은 식물 관찰하기에 아주 좋은 곳이에요—
-    73.16s  user  발화 시작: 알프스 고산 야생화가 피어있을까?
-    73.87s  agent 발화 끝
-    75.84s  user  발화 끝
-    75.87s  agent 발화 시작: 사실 우에노 공원은 고도가 충분하지 않아서 진정한 알프스 고산 야생화를 흔히 볼 수는 없어요. 하지만 비슷하
-    86.11s  agent 발화 끝
-    87.00s  user  발화 시작: 아, 그렇지. 그럴 수도 있겠네.
-    88.84s  user  발화 끝
-    89.19s  agent 발화 시작: 음, 그렇네요.
-    89.73s  user  발화 시작: 응.
-    90.11s  <ret> 발화 (turn17 첫 프레임)
-    90.14s  user  발화 끝
-    90.34s  agent 발화 시작: <ret> 알프스 식물에 관심이 있으시다는 점을 고려해서… 알프스 고산의 대표적인 꽃인 에델바이스는 7월부터
-    90.38s  agent 발화 끝
-    91.06s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.24s]: (tool result) Edelweiss is native to the European Alps, blooming from 
-    98.45s  agent 발화 끝
-    99.00s  user  발화 시작: 에델바이스는 예쁘지. 키우기 어려워?
-   101.43s  agent 발화 시작: 에델바이스는 자연 서식지 외의 환경에서는 키우기가 꽤 어려울 수 있어요.
-   101.58s  user  발화 끝
-   105.91s  user  발화 시작: 일본 야생화는 어때?
-   106.15s  agent 발화 끝
-   107.04s  <ret> 발화 (turn21 첫 프레임)
-   107.34s  agent 발화 시작: <ret> 일본 야생화는 좀 더 쉽게 키울 수 있는 선택지예요… 미쓰마타는 늦은 봄에 피고, 반그늘에서 잘 
-   107.52s  user  발화 끝
-   108.96s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.25s]: (tool result) Mitsumata blooms in late spring, prefers partial shade, 
-   116.91s  user  발화 시작: 반그늘, 알아둬야겠다. 정말 많은 도움 고마워!
-   117.08s  agent 발화 끝
-   120.18s  agent 발화 시작: 도와드릴 수 있어서 기뻐요. 식물의 매혹적인 세계에 대해 이야기하는 것을 언제나 즐거워해요.
-   120.29s  user  발화 끝
-   125.64s  agent 발화 끝
+     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
+     2.89s  <ret> 발화 (turn1 첫 프레임)
+     3.20s  agent 발화 시작: <ret> 네, 날씨 기록을 확인하는 건 계획에 도움이 될 거예요… 작년 12월 24일 도쿄는 맑았고, 기온
+     3.42s  user  발화 끝
+     4.25s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.69s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    11.33s  user  발화 시작: 그럼 런던은 같은 날 어땠어?
+    11.63s  agent 발화 끝
+    12.98s  <ret> 발화 (turn3 첫 프레임)
+    13.37s  agent 발화 시작: <ret> 네, 런던 날씨 기록을 찾아볼게요… 런던은 흐리고 비가 왔고, 최고 기온은 8도, 최저 기온은 3
+    13.54s  user  발화 끝
+    14.66s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.30s]: (tool result) The weather in London on December twenty-fourth last yea
+    21.43s  agent 발화 끝
+    21.73s  user  발화 시작: 음, 좀 우울하네.
+    23.93s  agent 발화 시작: 네, 도쿄의 맑은 하늘과는 대조적이네요. 특히 날씨가 얼마나 지역적으로 다른지 흥미롭다고 생각해요.
+    24.08s  user  발화 끝
+    30.13s  agent 발화 끝
+    31.18s  user  발화 시작: 스위스 알프스에 스파가 있는 호텔 좀 찾아 줘.
+    33.48s  <ret> 발화 (turn7 첫 프레임)
+    33.87s  agent 발화 시작: <ret> 네, 알프스 지역의 스파 시설이 있는 호텔을 검색 중입니다… 그린델발트의 호텔 벨베데레는 스파가 
+    34.13s  user  발화 끝
+    34.68s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.47s]: (tool result) The Hotel Belvedere in Grindelwald has a spa and availab
+    43.28s  agent 발화 끝
+    43.54s  user  발화 시작: 거기 1박에 얼마야?
+    44.66s  <ret> 발화 (turn9 첫 프레임)
+    44.81s  agent 발화 시작: <ret> 네, 해당 날짜의 요금을 확인해 볼게요… 호텔 벨베데레는 1박에 375 스위스 프랑입니다.
+    44.97s  user  발화 끝
+    46.02s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.98s]: (tool result) The Hotel Belvedere costs three hundred and seventy-five
+    50.78s  agent 발화 끝
+    51.39s  user  발화 시작: 좀 비싸네—
+    52.75s  user  발화 끝
+    52.83s  agent 발화 시작: 네, 그 가격대가 조금 높을 수 있다는 점을 이해합니다—
+    55.61s  user  발화 시작: 근처에 더 싼 데 없어?
+    56.39s  agent 발화 끝
+    56.86s  <ret> 발화 (turn13 첫 프레임)
+    57.08s  agent 발화 시작: <ret> 네, 검색 범위를 조금 넓혀볼게요…
+    57.22s  user  발화 끝
+    58.46s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.59s]: (tool result) The Hotel Kreuz & Post in Grindelwald has no spa but cos
+    59.59s  agent 발화 시작: 네, 그린델발트의 호텔 크로이츠 & 포스트는 1박에 220 프랑이지만 스파는 없습니다.
+    59.67s  agent 발화 끝
+    64.83s  agent 발화 끝
+    66.31s  user  발화 시작: 그게 더 좋네.
+    67.42s  agent 발화 시작: 네, 합리적인 가격으로 아름다운 곳에 머물 수 있는 좋은 절충안입니다. 그린델발트는 이 시기에 정말 아름다워
+    67.54s  user  발화 끝
+    75.21s  agent 발화 끝
+    75.97s  user  발화 시작: 1월 15일에 호텔 크로이츠 & 포스트 방 예약해 줘.
+    79.28s  <ret> 발화 (turn18 첫 프레임)
+    79.43s  agent 발화 시작: <ret> 네, 예약을 도와드릴 수 있습니다… 호텔 크로이츠 & 포스트 예약이 1월 15일로 확정되었고, 확
+    79.67s  user  발화 끝
+    81.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.36s]: (tool result) Reservation confirmed at Hotel Kreuz & Post for one gues
+    88.15s  agent 발화 끝
+    88.35s  user  발화 시작: 좋아.
+    88.94s  agent 발화 시작: 네, 정말 잘 됐네요. 확인 사항을 등록된 이메일 주소로 보내드렸습니다. 더 도와드릴 일이 있을까요?
+    88.97s  user  발화 끝
+    95.47s  user  발화 시작: 아, 있네. 에델바이스의 학명은 뭐야?
+    95.67s  agent 발화 끝
+    98.39s  agent 발화 시작: 네, 에델바이스는 *Leontopodium alpinum*이며, 알프스 지역에서 사랑받는 꽃입니다. 바위가 
+    98.57s  user  발화 끝
+   108.54s  agent 발화 끝

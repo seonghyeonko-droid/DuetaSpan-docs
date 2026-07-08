@@ -2,20 +2,21 @@ v3_pause_16_ko src=nq style=v1
 SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 어떤 감시 관련 내용을 읽다가 궁금해졌어요.
-[  2.92s][user ] “빅 브라더”라는 용어가 어디에서 유래했는지 궁금해요.
-[  6.38s][moshi] 흥미로운 질문인데, 어구의 기원을 추적하면 많은 걸 알 수 있어.
-[ 11.22s][moshi] ⟨ret@10.82s⟩ 잠깐만 정보를 ⟦⚡SPAN@12.58s: <The term "Big Brother" originates from the novel Nineteen Eighty-Four by George Orwell, published in 1949.>⟧ 찾아볼게. “빅 브라더”라는 말은 조지 오웰의 소설 *열아홉 팔십사*에서 나왔어. 천구백사십구 년에 출판됐거든.
-[ 20.11s][user ] 열아홉 팔십사… 꽤 디스토피아적인 소설이라고 들었어요.
-[ 25.03s][moshi] 그렇지, 정말 그래. 오웰은 전체주의 통제의 소름 끼치는 모습을 그려냈어.
-[ 30.34s][user ] 그러면 역사적인 인물이 아니었던 거군요…
-[ 32.89s][user ] …혹은 다른 어떤 것일까요?
-[ 35.34s][moshi] 아니, 오웰이 그 소설을 위해 완전히 상상해낸 거야.
-[ 39.82s][moshi] ⟨ret@39.42s⟩ 그때 ⟦⚡SPAN@40.78s: <Orwell wrote Nineteen Eighty-Four in the aftermath of World War II, influenced by the totalitarian regimes of⟧ 상황도 알아두면 좋을 것 같은데— 오웰은 제2차 세계 대전 이후 나치 독일과 소련의 정권의 영향을 받아 *열아홉 팔십사*를 썼어.
-[ 48.68s][user ] 그런데 카메라에 대한 내용도 있었던 것 같지 않나요?
-[ 51.18s][moshi] «interrupted» 아, 맞아, 아주 중요한 지적이야—
-[ 53.24s][user ] «interrupts_prev» 끊임없는 감시도 책의 일부였나요?
-[ 55.38s][moshi] 당연하지. 끊임없는 감시는 오웰이 만든 세계의 핵심이야.
-[ 59.52s][moshi] ⟨ret@59.28s⟩ 소설 ⟦⚡SPAN@60.96s: <In Nineteen Eighty-Four, "telescreens" are two-way television screens that constantly monitor citizens, both ⟧ 속 “텔레스크린”은 꽤 인상적이야— *열아홉 팔십사*에는 시민들을 시각적, 청각적으로 끊임없이 감시하는 양방향 텔레비전인 “텔레스크린”이 등장해.
-[ 73.39s][user ] 그건… 정말 불편하게 느껴지네요.
-[ 76.13s][moshi] 불안하게 만들려고 쓴 거지, 견제가 없는 권력의 위험에 대한 강력한 경고야. 정말 강력한 우화라고 생각해.
+[  0.00s][user ] 음, 디스토피아 소설 읽다가 그런 생각을 했어요.
+[  2.86s][moshi] 글쎄, 강력한 문학 작품에 대한 흔한 반응이지.
+[  6.93s][user ] “빅 브라더”라는 용어가 원래 어디서 나왔는지 궁금해요. 지금은 너무 널리 퍼져 있는 것 ⟨ret@12.51s⟩ 같아요.
+[ 12.91s][moshi] 그거 ⟦⚡SPAN@13.87s: The term "Big Brother" originates from George Orwell's dystopian novel *Nineteen Eighty-Four*.⟧ 재밌는 질문인데… 그건 조지 오웰의 *1984*라는 소설에서 나온 거야. 천구백사십구 년에 출판됐어.
+[ 20.68s][user ] 천구백사십구 년… 꽤 오래됐네요. 오웰은 그 당시에 특정 사건에 대해 이야기하고 있었나요?
+[ 27.57s][moshi] 응, 여러 가지 영향을 받았는데, 복잡하게 얽혀 있어.
+[ 32.83s][user ] 스탈린에 대한 이야기였나요? 다들 스탈린에 대한 이야기라고 하던데요.
+[ 37.02s][moshi] ⟨ret@36.94s⟩ 스탈린과의 연관성은 자주 ⟦⚡SPAN@38.94s: Orwell stated the concept of “Big Brother” was inspired by his experiences with surveillance during the Spanis⟧ 언급되는 부분이야… 오웰은 스페인 내전 중에 목격한 감시에 영감을 받았어. 스탈린 때문은 아니었어.
+[ 46.31s][user ] 내전 중 감시요? 좀 놀랍네요.
+[ 49.19s][moshi] 잘 알려지지 않았지만, 그의 비전에 큰 영향을 줬어.
+[ 53.34s][user ] 하지만 소련은 광범위한 스파이 활동을 하지 않았나요? 그러니까—
+[ 57.96s][user ] 그때는 끊임없는 감시가 큰 공포였잖아요…
+[ 61.24s][user ] 끊임없이 감시받는다는 생각 말이에요?
+[ 64.17s][moshi] 그 공포는 분명히 있었지. 오웰은 그걸 잘 활용했어. 그 소설은 전체주의에 대한 더 광범위한 불안감을 반영하고 있어.
+[ 74.21s][user ] 그러니까 스탈린에 대한 이야기만은 아니었고, 어떤 정부든… 간섭하게 될 가능성에 대한 이야기였던 건가요?
+[ 81.44s][moshi] 맞아. 그 소설은 권력 남용에 대한 경고야. 출처가 어디든.
+[ 88.40s][user ] 끊임없이 감시받는다는 생각은 지금도 꽤 소름 끼치네요.
+[ 91.91s][moshi] 지금도 여전히 유효하지 않아? 감시와 통제라는 주제는 계속해서 공감을 불러일으켜.

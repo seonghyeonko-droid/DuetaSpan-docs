@@ -2,48 +2,48 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.83s  <ret> 발화 (turn1 첫 프레임)
-     2.97s  agent 발화 시작: <ret> That's an interesting question, delving into political
-     3.14s  user  발화 끝
-     4.75s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.16s]: (no information found)
-    14.43s  agent 발화 끝
-    14.45s  user  발화 시작: Oh. Well, what about the most common cause of amnesia?
-    17.79s  <ret> 발화 (turn3 첫 프레임)
-    18.01s  agent 발화 시작: <ret> That’s a more direct question, and one I can certainly
-    18.10s  user  발화 끝
-    18.75s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.12s]: Traumatic brain injury is the most common cause of amnesia, affecting 
-    27.92s  user  발화 시작: Interesting. [laugh] Is there a way to improve your memory?
-    28.12s  agent 발화 끝
-    32.09s  agent 발화 시작: Absolutely. There are several strategies that can be quite e
-    32.26s  user  발화 끝
-    36.76s  agent 발화 끝
-    37.15s  user  발화 시작: Like what? Give me just one, the most important.
-    39.75s  <ret> 발화 (turn7 첫 프레임)
-    40.06s  agent 발화 시작: <ret> Focusing on one key technique is a smart approach. Reg
-    40.25s  user  발화 끝
-    41.11s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.47s]: Regular physical exercise has been shown to improve cognitive function
-    49.99s  agent 발화 끝
-    50.22s  user  발화 시작: Exercise, huh? I should probably do more of that.
-    53.27s  agent 발화 시작: It’s a fantastic habit, not just for memory but for overall 
-    53.36s  user  발화 끝
-    57.52s  user  발화 시작: But what if I have trouble *remembering* to exercise?
-    57.67s  agent 발화 끝
-    60.60s  agent 발화 시작: [sigh] That’s a very common challenge—the intention versus t
-    60.75s  user  발화 끝
-    65.41s  agent 발화 끝
-    65.94s  user  발화 시작: Yeah, exactly! I set reminders, but then I ignore them.
-    69.17s  user  발화 끝
-    69.21s  agent 발화 시작: Perhaps tying exercise to an existing habit would help—somet
-    75.19s  agent 발화 끝
-    75.46s  user  발화 시작: That's… actually a really good idea. Like, coffee first, the
-    81.62s  user  발화 끝
-    81.94s  agent 발화 시작: Precisely! Associating a new behavior with a firmly establis
-    87.80s  user  발화 시작: Okay. Can you find me a good walking route near the botanica
-    88.02s  agent 발화 끝
-    91.49s  <ret> 발화 (turn17 첫 프레임)
-    91.64s  user  발화 끝
-    91.72s  agent 발화 시작: <ret> Locating a route is a practical next step. A 2.3-mile 
-    92.69s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.98s]: (tool result) Route found: 2.3 miles, estimated time 45 minutes, moder
-    99.92s  agent 발화 끝
-    99.97s  user  발화 시작: Perfect. Thanks, Dr. Sato.
-   101.95s  user  발화 끝
+     2.55s  <ret> 발화 (turn1 첫 프레임)
+     2.69s  agent 발화 시작: <ret> That’s a fascinating question, delving into political 
+     2.86s  user  발화 끝
+     4.47s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.95s]: (no information found)
+    10.81s  agent 발화 끝
+    10.90s  user  발화 시작: Okay. What about the hippocampus? What does it do?
+    14.03s  <ret> 발화 (turn3 첫 프레임)
+    14.25s  agent 발화 시작: <ret> Ah, the hippocampus—a region I find endlessly intrigui
+    14.37s  user  발화 끝
+    14.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.35s]: The hippocampus is essential for forming new long-term memories and is
+    23.84s  user  발화 시작: Spatial navigation? Like, finding your way around?
+    23.89s  agent 발화 끝
+    27.23s  agent 발화 시작: Precisely! It creates cognitive maps of environments.
+    27.39s  user  발화 끝
+    30.92s  agent 발화 끝
+    31.34s  user  발화 시작: Is that why people with Alzheimer’s get lost?
+    34.11s  user  발화 시작: …because their hippocampus is damaged?
+    34.26s  user  발화 끝
+    35.85s  <ret> 발화 (turn8 첫 프레임)
+    36.16s  agent 발화 시작: <ret> That’s a very insightful connection you’ve made.
+    36.19s  user  발화 끝
+    36.97s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.73s]: Alzheimer’s disease causes progressive damage to the hippocampus, lead
+    38.88s  agent 발화 끝
+    38.91s  agent 발화 시작: Alzheimer’s damages the hippocampus, resulting in memory los
+    44.23s  agent 발화 끝
+    44.25s  user  발화 시작: Mm-hmm. So, a healthy hippocampus equals a good memory?
+    47.92s  agent 발화 시작: Generally, yes, though memory is complex—many areas contribu
+    47.99s  user  발화 끝
+    53.06s  agent 발화 끝
+    53.10s  user  발화 시작: What other areas are important for memory?
+    55.36s  <ret> 발화 (turn13 첫 프레임)
+    55.59s  agent 발화 시작: <ret> Several brain regions work in concert to create memori
+    55.63s  user  발화 끝
+    56.48s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.27s]: The amygdala processes emotional memories, while the prefrontal cortex
+    65.55s  agent 발화 끝
+    66.64s  user  발화 시작: Emotional memories? Like, really strong ones?
+    69.55s  agent 발화 시작: Exactly—the ones that tend to stick with us, for better or w
+    69.69s  user  발화 끝
+    73.81s  agent 발화 끝
+    74.24s  user  발화 시작: [happy] That makes sense. So, if I want to remember somethin
+    78.67s  user  발화 끝
+    78.99s  agent 발화 시작: It can certainly help strengthen the memory trace, yes.
+    82.68s  user  발화 시작: Huh. That's… a trick I’ll keep in mind. Thanks, Doctor Sato.
+    82.79s  agent 발화 끝
+    86.97s  user  발화 끝

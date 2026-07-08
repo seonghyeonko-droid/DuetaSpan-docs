@@ -1,15 +1,14 @@
 v3_chain_06_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 고전 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 내 user agent을 MyCustomBrowser 버전 십 점 오로 설정해 줘.
-[  5.00s][moshi] ⟨ret@4.93s⟩ 알았어, 브라우저 설정을 ⟦⚡SPAN@6.93s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 바꿔줄게. user agent은 MyCustomBrowser, 버전 십 점 오로 바뀌었어.
+[  0.00s][user ] 내 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 줄래?
+[  5.08s][moshi] ⟨ret@5.01s⟩ 그래, 브라우저 ⟦⚡SPAN@6.45s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 설정을 바꿔 줬어. 사용자 에이전트는 MyCustomBrowser, 버전 십 점 오로 바뀌었어.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 11.59s][user ] 파리 시간은 지금 몇 ⟨ret@12.76s⟩ 시야?
-[ 13.15s][moshi] ⟦⚡SPAN@13.48s: (tool result) The current time in Paris is 10:22 AM.⟧ 잠깐만 파리 시간을 확인해 볼게. 지금 파리는 오전 열 시 이십이 분이야.
-      CALL: {"function": "get_current_time", "arguments": {"city": "Paris"}}
-[ 18.09s][user ] 에펠탑 근처에 빵집 좀 ⟨ret@20.59s⟩ 찾아줘.
-[ 20.91s][moshi] 당연하지, 근처 ⟦⚡SPAN@22.59s: (tool result) Boulangerie Utopie is 0.8 kilometers from the Eiffel Tower.⟧ 빵집을 검색해 볼게. Boulangerie Utopie가 에펠탑에서 쩜 팔 킬로미터 떨어져 있어.
-      CALL: {"function": "find_nearby", "arguments": {"query": "bakery", "location": "Eiffel Tower"}}
-[ 27.88s][user ] 거기서 두 명 자리 오전 열한 시에 예약해 줄 수 있어?
-[ 32.06s][moshi] 예약 가능한지 알아볼게.
+[ 11.35s][user ] 그거 검색 결과에 영향 줄 거야?
+[ 13.80s][moshi] 사이트에 따라 그럴 수도 있어—어떤 곳들은 어떤 브라우저를 사용하는지 알아내서 그에 맞춰 결과를 보여 주거든.
+[ 20.89s][user ] 그럼 그 새로운 사용자 에이전트로 내 주변 빵집 좀 찾아 줘.
+[ 25.04s][moshi] ⟨ret@24.97s⟩ 그 설정으로 어떤 빵집들이 ⟦⚡SPAN@26.97s: (tool result) Flourish Bakery is 0.8 miles away, open until 6 PM. The Sweet Spot is 1.2 miles away, open until⟧ 나오는지 보자. Flourish Bakery는 영 점 팔 마일 떨어져 있고, 여섯 시까지 영업하고, The Sweet Spot은 일 점 이 마일 떨어져 있고, 일곱 시까지 영업해.
+      CALL: {"function": "google_search", "arguments": {"query": "bakeries near me", "user_agent": "MyCustomBrowser version 10.5"}}
+[ 37.72s][user ] 오, Flourish Bakery 맛있어?
+[ 39.88s][moshi] [놀라서] 사람들이 말하는 걸 들어보니까, Flourish Bakery는 크루아상으로 엄청 유명하대—진짜 동네 사람들에게 인기 있는 곳이야!
