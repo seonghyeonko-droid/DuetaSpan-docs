@@ -2,12 +2,12 @@ v3_fstart_15_ko src=mcp style=mcp_falsestart
 SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 어, 달러랑 유로 환율은 됐고, 런던에서 라고스 가는 다음 주 화요일 비행기 좀 찾아 줘.
-[  5.38s][moshi] ⟨ret@5.39s⟩ 음, ⟦⚡SPAN@6.51s: (tool result) Flights from London to Lagos next Tuesday are available with British Airways for £685 and with A⟧ 찾아봤는데, 브리티시 에어웨이즈는 다음 주 화요일 런던에서 라고스 가는 비행기를 685파운드에, 에어 피스는 720파운드에 있네.
+[  0.00s][user ] 어, 달러랑 유로 환율은 됐고, 런던에서 라고스 가는 다음 주 화요일 비행기 좀 ⟨ret@5.07s⟩ 찾아 줘.
+[  5.38s][moshi] 음, 찾아봤는데, ⟦⚡SPAN@7.07s: (tool result) Flights from London to Lagos next Tuesday are available with British Airways for £685 and with A⟧ 브리티시 에어웨이즈는 다음 주 화요일 런던에서 라고스 가는 비행기를 685파운드에, 에어 피스는 720파운드에 있네.
       CALL: {"function": "playwright_get", "arguments": {"url": "https://www.example-flights.com", "query": "London to Lagos next Tuesday"}}
-[ 15.16s][user ] 흐음, 좀 비싸네. 수요일은 어때?
-[ 17.55s][moshi] ⟨ret@17.57s⟩ 수요일은 좀 ⟦⚡SPAN@19.33s: (tool result) Flights from London to Lagos next Wednesday are available with Virgin Atlantic for £650 and with⟧ 더 선택지가 많아. 버진 애틀랜틱은 수요일에 650파운드고, 에어 나이지리아는 690파운드야.
+[ 15.16s][user ] 흐음, 좀 비싸네. 수요일은 ⟨ret@17.25s⟩ 어때?
+[ 17.55s][moshi] 수요일은 ⟦⚡SPAN@18.77s: (tool result) Flights from London to Lagos next Wednesday are available with Virgin Atlantic for £650 and with⟧ 좀 더 선택지가 많아. 버진 애틀랜틱은 수요일에 650파운드고, 에어 나이지리아는 690파운드야.
       CALL: {"function": "playwright_get", "arguments": {"url": "https://www.example-flights.com", "query": "London to Lagos next Wednesday"}}
-[ 24.95s][user ] 좋아, 버진 애틀랜틱으로 예약해 줘.
-[ 27.93s][moshi] ⟨ret@27.95s⟩ 좋아, 예약 ⟦⚡SPAN@29.23s: (tool result) Booking confirmed: Virgin Atlantic flight from London to Lagos next Wednesday, confirmation numb⟧ 완료됐어. 다음 주 수요일에 라고스 가는 버진 애틀랜틱 비행기, 예약 번호는 VG7894, 총 650파운드야.
+[ 24.95s][user ] 좋아, 버진 애틀랜틱으로 예약해 ⟨ret@27.71s⟩ 줘.
+[ 27.93s][moshi] 좋아, ⟦⚡SPAN@29.07s: (tool result) Booking confirmed: Virgin Atlantic flight from London to Lagos next Wednesday, confirmation numb⟧ 예약 완료됐어. 다음 주 수요일에 라고스 가는 버진 애틀랜틱 비행기, 예약 번호는 VG7894, 총 650파운드야.
       CALL: {"function": "book_flight", "arguments": {"airline": "Virgin Atlantic", "origin": "London", "destination": "Lagos", "date": "next Wednesday", "price": "£650"}}

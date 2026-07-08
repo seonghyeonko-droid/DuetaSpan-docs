@@ -2,13 +2,13 @@ v3_to_ot_12_cs src=nq style=v1
 SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 사형에 대해 읽다가 궁금해졌는데, 영국이 공식적으로 사형을 폐지한 게 언제야?
-[  5.37s][moshi] ⟨ret@5.37s⟩ 음, 그런 문제에 대해 ⟦⚡SPAN@7.53s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ 오랜 역사를 생각해 보면 무거운 질문이네요.
+[  0.00s][user ] 사형에 대해 읽다가 궁금해졌는데, 영국이 공식적으로 사형을 폐지한 게 ⟨ret@4.97s⟩ 언제야?
+[  5.37s][moshi] 음, 그런 ⟦⚡SPAN@6.65s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ 문제에 대해 오랜 역사를 생각해 보면 무거운 질문이네요.
 [ 10.08s][moshi] 영국에서는 구십팔년에 사형이 완전히 폐지됐습니다.
 [ 13.43s][user ] 구십팔년이라… 생각보다 최근이네, 진짜. 점진적으로 진행된 거야, 아니면 그냥—
 [ 19.15s][moshi] «interrupted» 사실 수십 년에 걸쳐 진화한 과정이었습니다.
-[ 21.12s][user ] «interrupts_prev» 살인죄 같은 특정 범죄에 대해서는 그 전에 먼저 폐지했어?
-[ 25.09s][moshi] ⟨ret@25.09s⟩ 네, 폐지는 ⟦⚡SPAN@26.45s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ 단계적으로 이루어졌습니다.
+[ 21.12s][user ] «interrupts_prev» 살인죄 같은 특정 범죄에 대해서는 그 전에 먼저 ⟨ret@24.93s⟩ 폐지했어?
+[ 25.09s][moshi] 네, ⟦⚡SPAN@26.29s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ 폐지는 단계적으로 이루어졌습니다.
 [ 27.45s][moshi] 살인은 육십오년에 사형 대상에서 제외됐고, 육십구년에 영구적으로 확정됐습니다.
 [ 35.12s][user ] 그러니까, 사 년 동안 살인에 대해서는 다시 사형을 부활시킬 수 있는 기간이었던 거야? 그거 좀 불안정해 보이는데.
 [ 41.65s][moshi] 불안정하다는 표현이 딱 맞네요. 그 몇 년 동안 법적인 상황이 확실히 불안정했을 거라고 생각합니다.

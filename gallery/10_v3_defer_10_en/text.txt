@@ -3,10 +3,10 @@ SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Overwrite the backup dot txt file with the database backup message from November first twenty twenty three.
-[  6.27s][moshi] ⟨ret@6.28s⟩ Certainly, I ⟦⚡SPAN@7.48s: (tool result) The file backup.txt was overwritten with the provided text.⟧ can handle that for you. The file has been overwritten as requested.
+[  6.27s][moshi] ⟨ret@6.20s⟩ Certainly, I ⟦⚡SPAN@7.40s: (tool result) The file backup.txt was overwritten with the provided text.⟧ can handle that for you. The file has been overwritten as requested.
       CALL: {"function": "write_file", "arguments": {"filename": "backup.txt", "text": "database backup message from November first twenty twenty three"}}
 [ 11.92s][user ] Right. And can you find me the nearest cathedral currently undergoing restoration?
-[ 16.69s][moshi] ⟨ret@16.69s⟩ That's ⟦⚡SPAN@17.89s: (tool result) St. Albans Cathedral is two point seven miles away, with ongoing roof repairs.⟧ a fascinating question, actually. St. Albans Cathedral, two point seven miles distant, is currently having roof repairs.
+[ 16.69s][moshi] ⟨ret@16.37s⟩ ⟦⚡SPAN@17.33s: (tool result) St. Albans Cathedral is two point seven miles away, with ongoing roof repairs.⟧ That's a fascinating question, actually. St. Albans Cathedral, two point seven miles distant, is currently having roof repairs.
       CALL: {"function": "search_nearby", "arguments": {"query": "cathedral restoration"}}
 [ 26.04s][user ] But… I— I mean, what kind of stone are they using for that repair?
 [ 29.59s][moshi] That’s a good detail to consider, especially with historic buildings. It depends on the original material, of course, and matching it is paramount to a successful restoration.

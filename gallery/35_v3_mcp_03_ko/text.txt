@@ -3,12 +3,12 @@ SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] BBC 뉴스 페이지를 열어 주고, 브라우저도 보여 주세요.
-[  4.18s][moshi] ⟨ret@4.18s⟩ 응, 뉴스 볼 거면 좋은 시작이지. ⟦⚡SPAN@7.70s: (tool result) The browser is now displaying the BBC News homepage.⟧ 네 브라우저에 BBC 뉴스 웹사이트를 열었어.
+[  4.18s][moshi] ⟨ret@3.94s⟩ 응, 뉴스 볼 ⟦⚡SPAN@5.94s: (tool result) The browser is now displaying the BBC News homepage.⟧ 거면 좋은 시작이지. 네 브라우저에 BBC 뉴스 웹사이트를 열었어.
       CALL: {"function": "puppeteer_navigate", "arguments": {"url": "https://www.bbc.com/news"}}
 [ 10.36s][user ] 잘 로딩되고 있어요?
 [ 12.44s][moshi] 지금은 괜찮게 로딩될 거야. 대역폭도 괜찮고.
-[ 16.42s][user ] 그 페이지에서 나이지리아 관련 기사를 검색해 줄 수 있어요?
-[ 20.56s][moshi] ⟨ret@20.56s⟩ BBC에서 딱 찾아보자니, 나이지리아 ⟦⚡SPAN@23.28s: (tool result) The search found seventeen articles matching “Nigeria”.⟧ 관련 기사가 열일곱 개나 나왔어.
+[ 16.42s][user ] 그 페이지에서 나이지리아 관련 기사를 검색해 줄 수 ⟨ret@20.32s⟩ 있어요?
+[ 20.56s][moshi] BBC에서 ⟦⚡SPAN@21.68s: (tool result) The search found seventeen articles matching “Nigeria”.⟧ 딱 찾아보자니, 나이지리아 관련 기사가 열일곱 개나 나왔어.
       CALL: {"function": "puppeteer_search", "arguments": {"url": "https://www.bbc.com/news", "query": "Nigeria"}}
 [ 27.16s][user ] 음, 많네요. 처음 세 개의 제목을 읽어 줄 수 있을까요?
 [ 31.20s][moshi] 기사를 소리 내서 읽어 줄 수는 없어. 대신, 처음 세 개의 제목을 요약해 줄게.

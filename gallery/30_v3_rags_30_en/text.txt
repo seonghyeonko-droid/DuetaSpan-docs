@@ -2,5 +2,5 @@ v3_rags_30_en src=nq_single style=rag_single
 SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who is performing at the 2018 olympics opening ceremony?
-[  3.92s][moshi] ⟨ret@3.92s⟩ That’s a fantastic question, ⟦⚡SPAN@5.84s: Insooni performed at the 2018 Winter Olympics opening ceremony.⟧ a real highlight of the games… Insooni was the performer at the 2018 Winter Olympics opening ceremony.
+[  0.00s][user ] Who is performing at the 2018 olympics opening ⟨ret@3.68s⟩ ceremony?
+[  3.92s][moshi] That’s a fantastic ⟦⚡SPAN@5.52s: Insooni performed at the 2018 Winter Olympics opening ceremony.⟧ question, a real highlight of the games… Insooni was the performer at the 2018 Winter Olympics opening ceremony.

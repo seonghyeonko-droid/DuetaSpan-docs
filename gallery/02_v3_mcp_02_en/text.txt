@@ -2,24 +2,24 @@ v3_mcp_02_en src=mcp style=v3
 SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What is the address of Tianzifang?
-[  1.90s][moshi] ⟨ret@1.91s⟩ Let me quickly ⟦⚡SPAN@3.27s: (tool result) Tianzifang is located at Taikang Road, Huangpu District, Shanghai, China.⟧ locate that for you— Tianzifang is on Taikang Road in the Huangpu District of Shanghai, China.
+[  0.00s][user ] What is the address of ⟨ret@1.67s⟩ Tianzifang?
+[  1.90s][moshi] Let ⟦⚡SPAN@2.79s: (tool result) Tianzifang is located at Taikang Road, Huangpu District, Shanghai, China.⟧ me quickly locate that for you— Tianzifang is on Taikang Road in the Huangpu District of Shanghai, China.
 [ 10.46s][user ] Oh, that's in Shanghai… I was thinking of going there. Do they have good bakeries around there?
 [ 15.78s][moshi] Shanghai is a wonderful city, and Tianzifang is quite charming. I'm not familiar with specific bakeries *in* that area, but I can certainly search for some nearby.
-[ 25.51s][user ] Yes, please! Find me the top three highest-rated bakeries within a half-mile of Tianzifang.
-[ 31.61s][moshi] ⟨ret@31.62s⟩ Searching for bakeries ⟦⚡SPAN@33.22s: (tool result) The top three bakeries are Baker & Spice (4.6 stars, 210 Fumin Road), Lost Heaven Bakery (4.5 st⟧ now— Baker & Spice, Lost Heaven Bakery, and Le Fournil are the three highest-rated bakeries within half a mile.
+[ 25.51s][user ] Yes, please! Find me the top three highest-rated bakeries within a half-mile of ⟨ret@31.38s⟩ Tianzifang.
+[ 31.61s][moshi] Searching for ⟦⚡SPAN@32.82s: (tool result) The top three bakeries are Baker & Spice (4.6 stars, 210 Fumin Road), Lost Heaven Bakery (4.5 st⟧ bakeries now— Baker & Spice, Lost Heaven Bakery, and Le Fournil are the three highest-rated bakeries within half a mile.
       CALL: {"function": "maps_search_detail", "arguments": {"query": "bakeries", "location": "Tianzifang, Taikang Road, Huangpu District, Shanghai, China", "radius": "0.5 miles", "sort_by": "rating", "limit": "3"}}
-[ 40.61s][user ] Lost Heaven Bakery sounds interesting. Do they have a website?
-[ 44.44s][moshi] ⟨ret@44.44s⟩ [happy] Lost Heaven Bakery ⟦⚡SPAN@46.12s: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.⟧ does indeed have a website.
+[ 40.61s][user ] Lost Heaven Bakery sounds interesting. Do they have a ⟨ret@44.04s⟩ website?
+[ 44.44s][moshi] [happy] Lost ⟦⚡SPAN@45.56s: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.⟧ Heaven Bakery does indeed have a website.
 [ 47.62s][moshi] Their website address is lostheaven.com.cn. You’ll find their menu and location details there.
-[ 54.81s][user ] Great! I'm thinking of going on Saturday. What time do they open?
-[ 58.87s][moshi] ⟨ret@58.87s⟩ Let me check ⟦⚡SPAN@60.15s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ their opening hours for— They open at eight o'clock in the morning on Saturdays.
+[ 54.81s][user ] Great! I'm thinking of going on Saturday. What time do they ⟨ret@58.55s⟩ open?
+[ 58.87s][moshi] ⟦⚡SPAN@59.05s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ Let me check their opening hours for— They open at eight o'clock in the morning on Saturdays.
       CALL: {"function": "maps_search_detail", "arguments": {"query": "Lost Heaven Bakery", "location": "276 Wukang Road, Shanghai, China", "attribute": "opening_hours"}}
 [ 64.56s][user ] Perfect. I— I mean, do they have croissants?
 [ 67.70s][moshi] «interrupted» Croissants are a staple—
-[ 68.84s][user ] «interrupts_prev» Are they *good* croissants? Like, really flaky?
-[ 71.98s][moshi] ⟨ret@71.98s⟩ Oh, a ⟦⚡SPAN@73.02s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ very important question!
+[ 68.84s][user ] «interrupts_prev» Are they *good* croissants? Like, really ⟨ret@71.66s⟩ flaky?
+[ 71.98s][moshi] Oh, ⟦⚡SPAN@72.62s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ a very important question!
 [ 74.15s][moshi] Reviews indicate their croissants are exceptionally flaky and buttery— a sign of good technique, naturally.
 [ 82.64s][user ] Wonderful! I think I'll definitely go there. Can you put a reminder in my calendar for Saturday at 9 AM to leave for Lost Heaven Bakery?
-[ 89.75s][moshi] ⟨ret@89.76s⟩ Absolutely, I can ⟦⚡SPAN@90.96s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ set that for you— A reminder has been added to your calendar for Saturday at nine in the morning.
+[ 89.75s][moshi] ⟨ret@89.68s⟩ Absolutely, I ⟦⚡SPAN@90.64s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ can set that for you— A reminder has been added to your calendar for Saturday at nine in the morning.
       CALL: {"function": "calendar_add_event", "arguments": {"date": "Saturday", "time": "9:00 AM", "title": "Leave for Lost Heaven Bakery"}}

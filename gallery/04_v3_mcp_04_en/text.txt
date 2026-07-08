@@ -2,35 +2,35 @@ v3_mcp_04_en src=mcp style=v2
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Navigate to Google, running headless with no sandbox.
-[  4.18s][moshi] ⟨ret@4.19s⟩ Certainly, I can ⟦⚡SPAN@5.71s: (tool result) Browser navigation to https://www.google.com completed successfully, headless mode enabled, sand⟧ open a browser— The browser is now open to Google, as you requested, operating headlessly without a sandbox.
-[ 13.32s][user ] Okay, good. Now, search Google for “edelweiss flower locations”.
-[ 17.66s][moshi] ⟨ret@17.66s⟩ Of ⟦⚡SPAN@18.62s: (tool result) Google search for "edelweiss flower locations" returned 1,250,000 results; top 3 results: Switze⟧ course, I can perform that search— Google found one million two hundred fifty thousand results for edelweiss locations.
+[  0.00s][user ] Navigate to Google, running headless with no ⟨ret@3.87s⟩ sandbox.
+[  4.18s][moshi] Certainly, ⟦⚡SPAN@4.83s: (tool result) Browser navigation to https://www.google.com completed successfully, headless mode enabled, sand⟧ I can open a browser— The browser is now open to Google, as you requested, operating headlessly without a sandbox.
+[ 13.32s][user ] Okay, good. Now, search Google for “edelweiss flower ⟨ret@17.42s⟩ locations”.
+[ 17.66s][moshi] Of ⟦⚡SPAN@18.46s: (tool result) Google search for "edelweiss flower locations" returned 1,250,000 results; top 3 results: Switze⟧ course, I can perform that search— Google found one million two hundred fifty thousand results for edelweiss locations.
 [ 26.04s][user ] Switzerland, huh? That sounds promising. What’s the current time in Bern?
-[ 31.15s][moshi] ⟨ret@31.16s⟩ Let me ⟦⚡SPAN@32.20s: (tool result) The current time in Bern, Switzerland is 14:37, Central European Time.⟧ check the time in Bern for— It is currently two thirty-seven PM in Bern, Switzerland.
+[ 31.15s][moshi] ⟨ret@31.08s⟩ Let me ⟦⚡SPAN@32.04s: (tool result) The current time in Bern, Switzerland is 14:37, Central European Time.⟧ check the time in Bern for— It is currently two thirty-seven PM in Bern, Switzerland.
 [ 37.41s][user ] Two thirty-seven… right. Can you find me a hiking trail in the Swiss Alps that’s known for edelweiss?
-[ 44.19s][moshi] ⟨ret@44.19s⟩ ⟦⚡SPAN@44.43s: (tool result) AllTrails lists "Harder Kulm Panorama Trail" near Interlaken with edelweiss sightings reported i⟧ I can certainly look for a suitable trail— The Harder Kulm Panorama Trail near Interlaken has recent edelweiss sightings, it's four point two kilometers long, and moderately difficult.
-[ 57.38s][user ] Interlaken… hmm. Is that trail accessible by train?
-[ 61.19s][moshi] ⟨ret@61.19s⟩ Let ⟦⚡SPAN@62.15s: (tool result) Interlaken Ost station is 3.7km from Harder Kulm base station; a funicular connects the base to ⟧ me investigate train access to that trail— Interlaken Ost station is three point seven kilometers from the trail's base; a funicular provides access.
-[ 72.68s][user ] A funicular, that’s good. [laugh] Okay, I think I want to book a round-trip train ticket from Zurich to Interlaken Ost for tomorrow morning.
-[ 82.49s][moshi] ⟨ret@82.50s⟩ Certainly, I can ⟦⚡SPAN@84.18s: (tool result) Train tickets Zurich HB to Interlaken Ost, tomorrow at 08:15, returning 18:42, cost 128 Swiss Fr⟧ check train schedules— A round trip tomorrow costs one hundred twenty-eight Swiss Francs, departing Zurich at eight fifteen AM, returning at six forty-two PM.
+[ 44.19s][moshi] ⟨ret@44.11s⟩ I can certainly ⟦⚡SPAN@45.87s: (tool result) AllTrails lists "Harder Kulm Panorama Trail" near Interlaken with edelweiss sightings reported i⟧ look for a suitable trail— The Harder Kulm Panorama Trail near Interlaken has recent edelweiss sightings, it's four point two kilometers long, and moderately difficult.
+[ 57.38s][user ] Interlaken… hmm. Is that trail accessible by ⟨ret@61.03s⟩ train?
+[ 61.19s][moshi] Let ⟦⚡SPAN@61.99s: (tool result) Interlaken Ost station is 3.7km from Harder Kulm base station; a funicular connects the base to ⟧ me investigate train access to that trail— Interlaken Ost station is three point seven kilometers from the trail's base; a funicular provides access.
+[ 72.68s][user ] A funicular, that’s good. [laugh] Okay, I think I want to book a round-trip train ticket from Zurich to Interlaken Ost for tomorrow ⟨ret@82.18s⟩ morning.
+[ 82.49s][moshi] Certainly, I ⟦⚡SPAN@84.02s: (tool result) Train tickets Zurich HB to Interlaken Ost, tomorrow at 08:15, returning 18:42, cost 128 Swiss Fr⟧ can check train schedules— A round trip tomorrow costs one hundred twenty-eight Swiss Francs, departing Zurich at eight fifteen AM, returning at six forty-two PM.
 [ 95.24s][user ] One hundred twenty-eight… that sounds reasonable. Book it.
-[ 99.51s][moshi] ⟨ret@99.51s⟩ Processing your ⟦⚡SPAN@101.43s: (tool result) Train tickets Zurich HB to Interlaken Ost booked: confirmation number ZH78945, departing 08:15, ⟧ train ticket request— Your train tickets are booked, confirmation number ZH78945.
+[ 99.51s][moshi] ⟨ret@99.43s⟩ Processing ⟦⚡SPAN@100.71s: (tool result) Train tickets Zurich HB to Interlaken Ost booked: confirmation number ZH78945, departing 08:15, ⟧ your train ticket request— Your train tickets are booked, confirmation number ZH78945.
 [109.28s][user ] Perfect. Now, about edelweiss… are they difficult to photograph?
 [113.72s][moshi] «interrupted» Edelweiss can be a little challenging—
-[115.52s][user ] «interrupts_prev» Do they grow at high altitudes generally?
-[117.96s][moshi] ⟨ret@117.96s⟩ ⟦⚡SPAN@117.96s: (tool result) Edelweiss typically grows between 1,500 and 3,000 meters altitude in the Alps, preferring rocky ⟧ Yes, that's a very important point— Edelweiss grows between fifteen hundred and three thousand meters, preferring rocky limestone slopes.
-[126.92s][user ] Limestone slopes… good to know. What about the best time of year to see them in bloom?
-[133.34s][moshi] ⟨ret@133.34s⟩ The blooming season ⟦⚡SPAN@135.26s: (tool result) Edelweiss flowers bloom from June to September, with peak bloom in July and August.⟧ is fairly specific— Edelweiss blooms from June to September, peaking in July and August.
+[115.52s][user ] «interrupts_prev» Do they grow at high altitudes ⟨ret@117.56s⟩ generally?
+[117.96s][moshi] Yes, that's ⟦⚡SPAN@119.24s: (tool result) Edelweiss typically grows between 1,500 and 3,000 meters altitude in the Alps, preferring rocky ⟧ a very important point— Edelweiss grows between fifteen hundred and three thousand meters, preferring rocky limestone slopes.
+[126.92s][user ] Limestone slopes… good to know. What about the best time of year to see them in ⟨ret@133.02s⟩ bloom?
+[133.34s][moshi] The ⟦⚡SPAN@134.06s: (tool result) Edelweiss flowers bloom from June to September, with peak bloom in July and August.⟧ blooming season is fairly specific— Edelweiss blooms from June to September, peaking in July and August.
 [137.80s][user ] «backchannel» Right.
 [141.65s][moshi] «interrupted» They are quite sensitive plants, actually—
-[144.23s][moshi] ⟨ret@144.23s⟩ Edelweiss are protected plants; collecting them ⟦⚡SPAN@147.75s: Edelweiss are protected in many areas; collecting them is illegal and damaging to their fragile ecosystem.⟧ is illegal and harms their delicate environment.
+[144.23s][moshi] ⟨ret@143.83s⟩ Edelweiss are ⟦⚡SPAN@145.83s: Edelweiss are protected in many areas; collecting them is illegal and damaging to their fragile ecosystem.⟧ protected plants; collecting them is illegal and harms their delicate environment.
 [151.67s][user ] I wouldn't dream of collecting them! Just photographing, of course. Are there any specific lenses you’d recommend for photographing alpine wildflowers?
 [161.85s][moshi] «interrupted» A macro lens is definitely helpful—
-[163.86s][user ] «interrupts_prev» A macro lens… I think I have one. What’s the weather forecast for Interlaken tomorrow?
-[170.10s][moshi] ⟨ret@170.10s⟩ Let me ⟦⚡SPAN@171.22s: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15 km/h from the west.⟧ check the weather forecast— Tomorrow in Interlaken will be sunny, with a high of twenty-two degrees Celsius and a low of ten.
-[180.22s][user ] Sounds lovely. Is there a good local restaurant near the Harder Kulm trail?
-[185.16s][moshi] ⟨ret@185.16s⟩ I can search for restaurants in that ⟦⚡SPAN@188.04s: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swiss cuisine, 4.5 star rating, open 11:00-⟧ area— Restaurant Schuh near Harder Kulm has a four point five-star rating, serving Swiss cuisine, and is open from eleven AM to ten PM.
+[163.86s][user ] «interrupts_prev» A macro lens… I think I have one. What’s the weather forecast for Interlaken ⟨ret@169.70s⟩ tomorrow?
+[170.10s][moshi] Let ⟦⚡SPAN@170.82s: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15 km/h from the west.⟧ me check the weather forecast— Tomorrow in Interlaken will be sunny, with a high of twenty-two degrees Celsius and a low of ten.
+[180.22s][user ] Sounds lovely. Is there a good local restaurant near the Harder Kulm ⟨ret@184.92s⟩ trail?
+[185.16s][moshi] I can ⟦⚡SPAN@186.20s: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swiss cuisine, 4.5 star rating, open 11:00-⟧ search for restaurants in that area— Restaurant Schuh near Harder Kulm has a four point five-star rating, serving Swiss cuisine, and is open from eleven AM to ten PM.
 [196.42s][user ] Schuh… that sounds good. I think that’s all I need for now.
 [200.06s][moshi] «interrupted» Wonderful! I’m glad I could help you plan—
 [202.55s][user ] «interrupts_prev» Thanks, Moshi. You’ve been very helpful.

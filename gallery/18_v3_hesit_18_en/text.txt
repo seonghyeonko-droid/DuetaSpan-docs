@@ -2,9 +2,9 @@ v3_hesit_18_en src=nq style=v1
 SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Uh, what’s the, um, the youngest age someone can be to join a legislative council?
-[  5.22s][moshi] ⟨ret@5.23s⟩ That’s a good ⟦⚡SPAN@6.83s: The minimum age to become a member of a legislative council is thirty years.⟧ question regarding civic participation. Thirty years is the minimum age required for membership in a legislative council.
+[  0.00s][user ] Uh, what’s the, um, the youngest age someone can be to join a legislative ⟨ret@4.99s⟩ council?
+[  5.22s][moshi] That’s a good ⟦⚡SPAN@6.83s: The minimum age to become a member of a legislative council is thirty years.⟧ question regarding civic participation. Thirty years is the minimum age required for membership in a legislative council.
 [ 15.44s][user ] Wow, thirty. That’s… pretty high, isn’t it?
 [ 19.14s][moshi] It is a bit of a higher bar, yes. It allows for some life experience, I think, before taking on that responsibility.
 [ 28.28s][user ] Right. But— but is that the same everywhere? Like, in every state?
-[ 31.66s][moshi] ⟨ret@31.66s⟩ That’s a very ⟦⚡SPAN@33.58s: Age requirements for legislative council membership vary by jurisdiction, but thirty is common.⟧ sensible follow-up question, actually. While it varies, thirty years old is a common age requirement for legislative council membership.
+[ 31.66s][moshi] ⟨ret@31.58s⟩ That’s a ⟦⚡SPAN@33.02s: Age requirements for legislative council membership vary by jurisdiction, but thirty is common.⟧ very sensible follow-up question, actually. While it varies, thirty years old is a common age requirement for legislative council membership.

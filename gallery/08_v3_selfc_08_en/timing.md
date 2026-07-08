@@ -2,58 +2,58 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Please create a product for premium coffee beans.
+     3.16s  <ret> 발화 (turn1 첫 프레임)
      3.37s  user  발화 끝
      3.55s  agent 발화 시작: <ret> Certainly, let’s get that set up for you. The product,
-     3.56s  <ret> 발화 (turn1 첫 프레임)
-     4.76s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.54s]: (tool result) A product named "premium coffee beans" was created with 
+     4.36s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.54s]: (tool result) A product named "premium coffee beans" was created with 
     10.35s  user  발화 시작: Can you show me the product details again?
     10.54s  agent 발화 끝
+    12.55s  <ret> 발화 (turn3 첫 프레임)
     12.79s  agent 발화 시작: <ret> Of course, I can easily pull those up for you. The cof
-    12.79s  <ret> 발화 (turn3 첫 프레임)
     12.89s  user  발화 끝
-    14.15s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.44s]: (tool result) The product "premium coffee beans" has a price of $15.99
+    13.67s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.44s]: (tool result) The product "premium coffee beans" has a price of $15.99
     19.37s  agent 발화 끝
     19.71s  user  발화 시작: That's good. I want to run a promotion— twenty percent off.
+    23.80s  <ret> 발화 (turn5 첫 프레임)
     23.88s  user  발화 끝
     23.96s  agent 발화 시작: <ret> A promotion sounds like a great idea to boost sales. A
-    23.96s  <ret> 발화 (turn5 첫 프레임)
-    25.40s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.56s]: (tool result) A 20% discount promotion was created for "premium coffee
+    25.40s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.56s]: (tool result) A 20% discount promotion was created for "premium coffee
     33.93s  agent 발화 끝
     34.20s  user  발화 시작: Can we extend that promotion to— to March twenty-second?
+    37.85s  <ret> 발화 (turn7 첫 프레임)
     38.25s  agent 발화 시작: <ret> I can certainly adjust the promotion’s end date— The p
-    38.25s  <ret> 발화 (turn7 첫 프레임)
+    38.35s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.81s]: (tool result) The promotion for "premium coffee beans" was updated to 
     38.36s  user  발화 끝
-    39.53s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.81s]: (tool result) The promotion for "premium coffee beans" was updated to 
     46.26s  user  발화 시작: What’s the current stock level on those beans?
     46.32s  agent 발화 끝
     49.03s  user  발화 끝
     49.11s  agent 발화 시작: We currently have—
+    49.83s  <ret> 발화 (turn10 첫 프레임)
     50.20s  agent 발화 시작: <ret> That’s a good question to keep track of inventory. The
-    50.23s  <ret> 발화 (turn10 첫 프레임)
     50.49s  agent 발화 끝
-    51.19s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.83s]: (tool result) There are 150 units of "premium coffee beans" currently 
+    51.19s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.83s]: (tool result) There are 150 units of "premium coffee beans" currently 
     57.75s  agent 발화 끝
     57.76s  user  발화 시작: Hmm. Okay.
     59.16s  agent 발화 시작: Now, regarding marketing, have you thought about— I've worke
     59.19s  user  발화 끝
     67.95s  user  발화 시작: That's interesting. Can you search for images of Ethiopian c
     68.02s  agent 발화 끝
+    72.04s  <ret> 발화 (turn14 첫 프레임)
     72.36s  agent 발화 시작: <ret> I can certainly find some images for you. I found twel
-    72.36s  <ret> 발화 (turn14 첫 프레임)
     72.48s  user  발화 끝
-    75.00s  ⚡SPAN 주입 [d'=2.64s / d_lead=2.74s]: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1
+    73.00s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.74s]: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1
     80.24s  agent 발화 끝
     80.48s  user  발화 시작: Send me the first three URLs.
+    82.82s  <ret> 발화 (turn16 첫 프레임)
     83.05s  agent 발화 시작: <ret> Certainly, I can send those right over. I’ve sent the 
-    83.06s  <ret> 발화 (turn16 첫 프레임)
     83.07s  user  발화 끝
-    83.78s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.89s]: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your regist
+    83.32s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.89s]: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your regist
     87.91s  agent 발화 끝
     88.11s  user  발화 시작: Great. What is the average rainfall in the Sidamo region?
+    91.84s  <ret> 발화 (turn18 첫 프레임)
     91.90s  user  발화 끝
     91.91s  agent 발화 시작: <ret> The Sidamo region is known for its consistent rainfall
-    91.92s  <ret> 발화 (turn18 첫 프레임)
-    94.48s  ⚡SPAN 주입 [d'=2.56s / d_lead=4.86s]: <ret> The Sidamo region receives an average annual rainfall of 1,500 m
+    93.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: <ret> The Sidamo region receives an average annual rainfall of 1,500 m
     96.66s  agent 발화 시작: The Sidamo region receives an average of fifteen hundred mil
     96.77s  agent 발화 끝
    101.75s  user  발화 시작: That's a lot.

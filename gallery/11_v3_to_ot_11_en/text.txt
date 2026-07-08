@@ -2,12 +2,12 @@ v3_to_ot_11_en src=nq style=v1
 SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who won rookie of the year for UAAP season seventy-one women’s volleyball?
-[  5.59s][moshi] ⟨ret@5.60s⟩ That’s a lovely question— a ⟦⚡SPAN@8.32s: Jelly Buan was awarded the UAAP Season 71 Women’s Volleyball Rookie of the Year.⟧ bit of sports history! Jelly Buan received that honor for season seventy-one’s women’s volleyball competition.
+[  0.00s][user ] Do you know who won rookie of the year for UAAP season seventy-one women’s ⟨ret@5.20s⟩ volleyball?
+[  5.59s][moshi] That’s a ⟦⚡SPAN@7.04s: Jelly Buan was awarded the UAAP Season 71 Women’s Volleyball Rookie of the Year.⟧ lovely question— a bit of sports history! Jelly Buan received that honor for season seventy-one’s women’s volleyball competition.
 [ 14.62s][user ] Oh, really? And what position did she play?
 [ 18.01s][moshi] «interrupted» She was an outside hitter, known for her powerful spikes and consistent play—
 [ 22.53s][user ] «interrupts_prev» Was she also named best scorer that season?
 [ 25.54s][moshi] «interrupted» That’s an excellent follow-up question; let me check—
-[ 29.25s][moshi] ⟨ret@29.26s⟩ Indeed, Jelly Buan was awarded both ⟦⚡SPAN@31.98s: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP Season 71.⟧ Rookie of the Year and Best Scorer that season.
+[ 29.25s][moshi] ⟨ret@28.94s⟩ Indeed, Jelly ⟦⚡SPAN@30.30s: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP Season 71.⟧ Buan was awarded both Rookie of the Year and Best Scorer that season.
 [ 33.32s][user ] «backchannel» Mm-hmm.
 [ 35.32s][moshi] It was quite a debut season for her, a very impressive performance— she really stood out.

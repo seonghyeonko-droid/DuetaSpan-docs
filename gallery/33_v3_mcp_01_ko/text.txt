@@ -2,28 +2,28 @@ v3_mcp_01_ko src=mcp style=v2
 SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 네, 로스앤젤레스에서 샌프란시스코까지 8월 15일 오후 4시에 4분 예매를 원하시나요?
-[  5.98s][moshi] ⟨ret@5.99s⟩ 잠시 버스 좌석 ⟦⚡SPAN@7.67s: (tool result) There is a bus departing Los Angeles at four PM on August fifteenth, arriving in San Francisco a⟧ 상황을 확인해 볼게요. 8월 15일 오후 4시에 240달러짜리 버스가 있습니다.
+[  0.00s][user ] 네, 로스앤젤레스에서 샌프란시스코까지 8월 15일 오후 4시에 4분 예매를 ⟨ret@5.75s⟩ 원하시나요?
+[  5.98s][moshi] 잠시 ⟦⚡SPAN@7.11s: (tool result) There is a bus departing Los Angeles at four PM on August fifteenth, arriving in San Francisco a⟧ 버스 좌석 상황을 확인해 볼게요. 8월 15일 오후 4시에 240달러짜리 버스가 있습니다.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "four PM"}}
-[ 12.78s][user ] 오후 10시는 너무 늦네요. 더 일찍 가는 버스가 있나요?
-[ 16.20s][moshi] ⟨ret@16.21s⟩ 그날 다른 ⟦⚡SPAN@17.25s: (tool result) Buses depart Los Angeles for San Francisco at noon, two PM, four PM, and eight PM on August fift⟧ 옵션이 있는지 한번 알아볼게요.
+[ 12.78s][user ] 오후 10시는 너무 늦네요. 더 일찍 가는 버스가 ⟨ret@16.05s⟩ 있나요?
+[ 16.20s][moshi] 그날 다른 ⟦⚡SPAN@17.33s: (tool result) Buses depart Los Angeles for San Francisco at noon, two PM, four PM, and eight PM on August fift⟧ 옵션이 있는지 한번 알아볼게요.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth"}}
 [ 18.94s][moshi] 8월 15일에는 정오, 오후 2시, 오후 4시, 오후 8시에 버스가 출발합니다.
-[ 24.91s][user ] 흠, 정오 버스가 괜찮겠네요. 그 버스는 얼마인가요?
-[ 28.80s][moshi] ⟨ret@28.80s⟩ 정오 출발 버스의 가격을 확인해 ⟦⚡SPAN@31.28s: (tool result) The noon bus costs two hundred dollars for four passengers.⟧ 드릴 수 있습니다. 정오 버스는 4분 모두 200달러입니다.
+[ 24.91s][user ] 흠, 정오 버스가 괜찮겠네요. 그 버스는 ⟨ret@28.48s⟩ 얼마인가요?
+[ 28.80s][moshi] 정오 출발 버스의 ⟦⚡SPAN@30.48s: (tool result) The noon bus costs two hundred dollars for four passengers.⟧ 가격을 확인해 드릴 수 있습니다. 정오 버스는 4분 모두 200달러입니다.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "noon"}}
-[ 34.00s][user ] 좋아요, 정오 버스로 예매해 주세요.
-[ 36.68s][moshi] ⟨ret@36.69s⟩ [laugh] 좋습니다! 예약을 마무리해 드릴게요. ⟦⚡SPAN@40.05s: (tool result) Your booking is confirmed: confirmation number is 789456, departing noon August fifteenth.⟧ 
+[ 34.00s][user ] 좋아요, 정오 버스로 예매해 ⟨ret@36.45s⟩ 주세요.
+[ 36.68s][moshi] ⟦⚡SPAN@37.41s: (tool result) Your booking is confirmed: confirmation number is 789456, departing noon August fifteenth.⟧ [laugh] 좋습니다! 예약을 마무리해 드릴게요.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "noon", "action": "book"}}
 [ 39.84s][moshi] 예약이 완료되었고, 확인 번호는 789456입니다.
 [ 43.84s][user ] 잘 됐네요! 상세 정보를 보내주실 수 있나요?
-[ 47.01s][moshi] ⟨ret@47.01s⟩ 물론이죠, 등록된 이메일 ⟦⚡SPAN@48.61s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation".⟧ 주소로 보내드릴 수 있습니다.
+[ 47.01s][moshi] ⟨ret@46.77s⟩ 물론이죠, 등록된 이메일 ⟦⚡SPAN@48.77s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation".⟧ 주소로 보내드릴 수 있습니다.
       CALL: {"function": "Email_2_SendEmail", "arguments": {"recipient": "user@example.com", "subject": "Bus Booking Confirmation", "body": "Confirmation number 789456, departing noon August fifteenth from Los Angeles to San Francisco."}}
 [ 50.74s][moshi] 예약 정보가 담긴 이메일이 방금 발송되었습니다.
 [ 53.34s][user ] 완벽하네요. 정말 도움이 많이 됐어요. 아, 혹시 산호초가 해안선을 침식으로부터 보호하는 데 도움이 되나요?
 [ 60.48s][moshi] 네, 정말 그렇습니다. 산호초는 자연적인 장벽 역할을 하여 파도의 에너지를 분산시킵니다.
-[ 66.83s][user ] 하지만 실제로 얼마나 많은 침식을 막는 건가요? 그러니까, 상당한 양인가요?
-[ 72.12s][moshi] ⟨ret@72.13s⟩ 해안 보호와 관련해서는 아주 중요한 ⟦⚡SPAN@74.77s: (tool result) Coral reefs reduce wave energy by ninety-seven percent, decreasing coastal erosion.⟧ 질문입니다. 산호초는 파도의 에너지를 최대 97%까지 줄일 수 있습니다.
+[ 66.83s][user ] 하지만 실제로 얼마나 많은 침식을 막는 건가요? 그러니까, 상당한 ⟨ret@71.89s⟩ 양인가요?
+[ 72.12s][moshi] 해안 보호와 관련해서는 ⟦⚡SPAN@73.89s: (tool result) Coral reefs reduce wave energy by ninety-seven percent, decreasing coastal erosion.⟧ 아주 중요한 질문입니다. 산호초는 파도의 에너지를 최대 97%까지 줄일 수 있습니다.
 [ 79.01s][user ] 와, 97%나요! 정말 놀랍네요. 그럼 산호초가 손상되거나 파괴되면 어떻게 되나요?
 [ 86.22s][moshi] 해안선이 폭풍과 침식에 훨씬 더 취약해집니다. 심각한 문제입니다.
 [ 92.16s][user ] [sigh] 정말 심각한 상황인 것 같네요. 손상된 산호초를 복원하기 위해 노력하는 일이 있나요?

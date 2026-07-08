@@ -3,22 +3,22 @@ SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] 역사 속 질병에 대해 읽다가… 문득 나병이 요즘은 어디에서 가장 흔한지 궁금해졌어요.
-[  6.91s][moshi] ⟨ret@6.91s⟩ 그건 정말 중요한 질문인 ⟦⚡SPAN@9.23s: India accounts for more than half of the world’s leprosy cases.⟧ 것 같아요. 현재 전 세계적으로 발생하는 새로운 나병 환자의 50% 이상이 인도에서 보고되고 있어요.
+[  6.91s][moshi] ⟨ret@6.67s⟩ 그건 정말 중요한 ⟦⚡SPAN@8.67s: India accounts for more than half of the world’s leprosy cases.⟧ 질문인 것 같아요. 현재 전 세계적으로 발생하는 새로운 나병 환자의 50% 이상이 인도에서 보고되고 있어요.
 [ 15.55s][user ] 정말… 놀랍네요. 저는 항상 과거의 질병이라고 생각했거든요.
 [ 20.25s][moshi] 많은 분들이 오해하시는 부분이에요. 지속적인 빈곤과 의료 서비스 접근성의 제한이 나병의 지속적인 존재에 기여하고 있어요.
 [ 29.06s][user ] 그럼 인도는 아직도 나병이 큰 문제인가요?
-[ 31.38s][moshi] ⟨ret@31.38s⟩ 여전히 중요한 ⟦⚡SPAN@32.74s: In 2023, India reported 75,000 new cases of leprosy.⟧ 공중 보건 문제로 남아 있어요. 인도는 2023년에 새롭게 나병 환자 칠만 오천 명이 발생했어요.
+[ 31.38s][moshi] ⟨ret@31.22s⟩ 여전히 중요한 ⟦⚡SPAN@33.22s: In 2023, India reported 75,000 new cases of leprosy.⟧ 공중 보건 문제로 남아 있어요. 인도는 2023년에 새롭게 나병 환자 칠만 오천 명이 발생했어요.
 [ 40.55s][user ] 칠만 오천 명… 와우.
 [ 42.79s][moshi] 상당한 숫자이지만, 검출 및 치료 노력이 계속 진행 중이에요.
-[ 47.21s][user ] 다른 나라에도 높은 발생률을 보이는 곳이 있나요?
-[ 49.91s][moshi] ⟨ret@49.91s⟩ ⟦⚡SPAN@50.23s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ 네, 몇몇 다른 나라들도 어려움을 겪고 있어요. 인도의 다음으로 브라질과 인도네시아가 가장 영향을 많이 받는 국가예요.
-[ 57.90s][user ] 아프리카는요? 그곳에서도 문제가 있다고 들었어요.
-[ 61.13s][moshi] ⟨ret@61.13s⟩ 그렇습니다. 특히 ⟦⚡SPAN@62.49s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ 특정 지역에서 그러해요.
+[ 47.21s][user ] 다른 나라에도 높은 발생률을 보이는 곳이 ⟨ret@49.51s⟩ 있나요?
+[ 49.91s][moshi] 네, ⟦⚡SPAN@50.87s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ 몇몇 다른 나라들도 어려움을 겪고 있어요. 인도의 다음으로 브라질과 인도네시아가 가장 영향을 많이 받는 국가예요.
+[ 57.90s][user ] 아프리카는요? 그곳에서도 문제가 있다고 ⟨ret@60.89s⟩ 들었어요.
+[ 61.13s][moshi] 그렇습니다. ⟦⚡SPAN@62.17s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ 특히 특정 지역에서 그러해요.
 [ 63.52s][moshi] 콩고 민주 공화국과 다른 아프리카 국가들이 나병으로 어려움을 겪고 있어요.
 [ 69.91s][user ] 치료가 가능한가요? 완치가 가능한가요?
 [ 72.27s][moshi] 네, 조기에 진단하고 다제 약물 요법을 사용하면 가능해요.
 [ 78.53s][user ] 다제 약물 요법… 그게 뭘 의미하나요?
-[ 81.46s][moshi] ⟨ret@81.46s⟩ 여러 항생제를 ⟦⚡SPAN@83.22s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ 병용하는 거예요… 표준 치료법은 dapson, rifampicin, clofazimine 항생제를 사용해요.
+[ 81.46s][moshi] ⟨ret@81.30s⟩ 여러 항생제를 ⟦⚡SPAN@83.30s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ 병용하는 거예요… 표준 치료법은 dapson, rifampicin, clofazimine 항생제를 사용해요.
 [ 89.37s][user ] 이름이… 너무 어렵네요.
 [ 91.35s][moshi] 그렇지만, 내성균 발생을 막기 위해서는 전체 치료 과정을 준수하는 것이 중요해요.
 [ 98.14s][user ] 하지만 조기에 발견하면 완전히 회복할 수 있나요?
@@ -29,8 +29,8 @@ SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는
 [119.28s][moshi] 안타깝게도, 네. 사회적 결과가 질병만큼이나 고통스러울 수 있어요.
 [125.17s][user ] 낙인을 없애기 위해 노력하는 일이 있나요?
 [127.83s][moshi] 많은 단체들이 오해를 바로잡기 위한 교육 및 옹호 프로그램을 진행하고 있어요.
-[133.56s][user ] 그건 정말 다행이네요. 예방은요?
-[136.02s][moshi] ⟨ret@136.02s⟩ 예방 전략은 ⟦⚡SPAN@137.70s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ 조기 발견과 치료에 초점을 맞추고 있어요… BCG 백신은 나병 발병에 대해 제한적인 보호 효과를 제공해요.
+[133.56s][user ] 그건 정말 다행이네요. ⟨ret@135.70s⟩ 예방은요?
+[136.02s][moshi] 예방 전략은 ⟦⚡SPAN@137.70s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ 조기 발견과 치료에 초점을 맞추고 있어요… BCG 백신은 나병 발병에 대해 제한적인 보호 효과를 제공해요.
 [145.01s][user ] 제한적인 보호……
 [147.17s][user ] …그럼 확실한 안전장치는 아닌 건가요?
 [149.93s][moshi] 그렇지 않지만, 일부 경우에는 질병의 심각성을 줄일 수 있어요.

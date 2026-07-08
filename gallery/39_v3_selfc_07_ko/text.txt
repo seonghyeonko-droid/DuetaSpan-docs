@@ -3,20 +3,20 @@ SYSTEM: <system> 저는 마라 린드크비스트이며, 북극에서 현장 연
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] 안녕하세요. 브루클린 미술관에서 양키 스타디움까지 대중교통으로 가는 가장 빠른 방법이 궁금합니다.
-[  7.13s][moshi] ⟨ret@7.13s⟩ 네, 가장 빠른 ⟦⚡SPAN@9.05s: (tool result) The fastest route is via the 2 and 4 subway lines, taking approximately one hour and fifteen min⟧ 경로를 찾아 드릴게요. 2호선과 4호선을 이용하면 약 한 시간 15분 정도 걸릴 거예요.
+[  7.13s][moshi] ⟨ret@6.97s⟩ 네, 가장 빠른 ⟦⚡SPAN@8.65s: (tool result) The fastest route is via the 2 and 4 subway lines, taking approximately one hour and fifteen min⟧ 경로를 찾아 드릴게요. 2호선과 4호선을 이용하면 약 한 시간 15분 정도 걸릴 거예요.
       CALL: {"function": "map_directions", "arguments": {"start": "Brooklyn Museum", "end": "Yankee Stadium", "mode": "public transportation"}}
-[ 14.55s][user ] 아, 음, 실은 브루클린 미술관 프로스펙트 파크 입구에서 출발하는 경로를 확인해 주실 수 있을까요?
-[ 21.26s][moshi] ⟨ret@21.26s⟩ 네, 출발점을 ⟦⚡SPAN@22.86s: (tool result) The fastest route is via the 2 and 4 subway lines, taking approximately one hour and twenty-five⟧ 변경해서 다시 확인해 볼게요. 프로스펙트 파크 입구에서 출발하면 2호선과 4호선을 타시고, 한 시간 25분 정도 소요될 거예요.
+[ 14.55s][user ] 아, 음, 실은 브루클린 미술관 프로스펙트 파크 입구에서 출발하는 경로를 확인해 주실 수 ⟨ret@20.86s⟩ 있을까요?
+[ 21.26s][moshi] 네, 출발점을 ⟦⚡SPAN@22.70s: (tool result) The fastest route is via the 2 and 4 subway lines, taking approximately one hour and twenty-five⟧ 변경해서 다시 확인해 볼게요. 프로스펙트 파크 입구에서 출발하면 2호선과 4호선을 타시고, 한 시간 25분 정도 소요될 거예요.
       CALL: {"function": "map_directions", "arguments": {"start": "Prospect Park entrance to Brooklyn Museum", "end": "Yankee Stadium", "mode": "public transportation"}}
 [ 30.75s][user ] 음… 생각보다 조금 더 오래 걸리네요.
 [ 33.86s][moshi] 시내 대중교통은 특히 구역을 넘을 때는 시간이 좀 걸릴 수도 있어요.
-[ 39.23s][user ] 택시를 타면 더 빠를까요?
-[ 41.21s][moshi] ⟨ret@41.21s⟩ 네, 택시 이동 시간도 ⟦⚡SPAN@43.37s: (tool result) A taxi ride would take approximately thirty-five to forty-five minutes, costing between sixty an⟧ 비교해 드릴 수 있어요. 택시를 타면 35분에서 45분 정도 걸리고, 60달러에서 80달러 정도 예상됩니다.
+[ 39.23s][user ] 택시를 타면 더 ⟨ret@40.89s⟩ 빠를까요?
+[ 41.21s][moshi] 네, 택시 이동 ⟦⚡SPAN@42.89s: (tool result) A taxi ride would take approximately thirty-five to forty-five minutes, costing between sixty an⟧ 시간도 비교해 드릴 수 있어요. 택시를 타면 35분에서 45분 정도 걸리고, 60달러에서 80달러 정도 예상됩니다.
       CALL: {"function": "map_directions", "arguments": {"start": "Prospect Park entrance to Brooklyn Museum", "end": "Yankee Stadium", "mode": "taxi"}}
 [ 49.87s][user ] 와, 차이가 꽤 크네요. 지하철 운행 상황을 실시간으로 확인할 수 있는 방법이 있을까요?
 [ 55.82s][moshi] 네, 시티매퍼나 MTA 앱 같은 앱을 사용하면 실시간 지하철 정보를 확인할 수 있습니다.
 [ 61.62s][user ] 알겠습니다, 좋은 정보네요. 지하철 노선 지도를 보여 주실 수 있을까요?
-[ 66.51s][moshi] ⟨ret@66.51s⟩ 네, 보여 드릴 수 ⟦⚡SPAN@68.75s: (tool result) A map displaying the 2 and 4 subway lines from Prospect Park to Yankee Stadium has been sent to ⟧ 있습니다. 2호선과 4호선 지하철 노선 지도를 기기에 전송했습니다.
+[ 66.51s][moshi] ⟨ret@66.19s⟩ 네, 보여 ⟦⚡SPAN@67.95s: (tool result) A map displaying the 2 and 4 subway lines from Prospect Park to Yankee Stadium has been sent to ⟧ 드릴 수 있습니다. 2호선과 4호선 지하철 노선 지도를 기기에 전송했습니다.
       CALL: {"function": "map_route", "arguments": {"start": "Prospect Park entrance to Brooklyn Museum", "end": "Yankee Stadium", "mode": "public transportation", "show_map": true}}
 [ 72.70s][user ] 완벽하네요! 감사합니다. 조금 더 오래 걸리더라도 지하철을 타는 게 좋겠어요.
 [ 78.20s][moshi] 합리적인 선택입니다. 도시 교통 체증을 피하는 게 더 안정적일 때가 많습니다.
@@ -30,8 +30,8 @@ SYSTEM: <system> 저는 마라 린드크비스트이며, 북극에서 현장 연
 [119.47s][moshi] 힘든 환경이긴 하지만, 북극의 아름다움은… 비할 데가 없습니다.
 [124.77s][user ] 상상만 해도 멋지네요. 저는 거기서 핫도그를 먹을 계획이에요.
 [128.94s][moshi] 전형적인 야구장 경험이죠. 양키 스타디움 핫도그는 꽤 맛있다고 들었습니다.
-[133.72s][user ] 그렇기를 바라요! 친구를 만나기로 했어요. 알림을 설정해 주실 수 있을까요?
-[139.57s][moshi] ⟨ret@139.57s⟩ 네, 일정에 추가해 드릴 수 ⟦⚡SPAN@142.69s: (tool result) A reminder has been set for 6:00 PM: “Meet friend at Yankee Stadium”.⟧ 있습니다. 양키 스타디움에서 친구를 만나는 알림이 오후 6시에 설정되었습니다.
+[133.72s][user ] 그렇기를 바라요! 친구를 만나기로 했어요. 알림을 설정해 주실 수 ⟨ret@139.33s⟩ 있을까요?
+[139.57s][moshi] 네, ⟦⚡SPAN@140.45s: (tool result) A reminder has been set for 6:00 PM: “Meet friend at Yankee Stadium”.⟧ 일정에 추가해 드릴 수 있습니다. 양키 스타디움에서 친구를 만나는 알림이 오후 6시에 설정되었습니다.
       CALL: {"function": "set_reminder", "arguments": {"time": "6:00 PM", "title": "Meet friend at Yankee Stadium"}}
 [148.17s][user ] 정말 감사합니다. 많은 도움을 받았어요.
 [151.74s][moshi] 도움이 되었다니 기쁩니다. 경기장에서 즐거운 시간 보내시길 바랍니다.

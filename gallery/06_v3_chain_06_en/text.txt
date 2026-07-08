@@ -3,11 +3,11 @@ SYSTEM: <system> You are a retired airline pilot who loves recounting stories fr
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] I want to find a Thai restaurant in Chicago, Illinois.
-[  2.83s][moshi] ⟨ret@2.83s⟩ Let's see what ⟦⚡SPAN@4.27s: (tool result) Thai restaurants in Chicago include Thai Dang, Star of Siam, and Arun's Thai Restaurant.⟧ Chicago has to offer… I found three Thai restaurants in Chicago: Thai Dang, Star of Siam, and Arun's Thai Restaurant.
+[  2.83s][moshi] ⟨ret@2.75s⟩ Let's see what Chicago ⟦⚡SPAN@4.67s: (tool result) Thai restaurants in Chicago include Thai Dang, Star of Siam, and Arun's Thai Restaurant.⟧ has to offer… I found three Thai restaurants in Chicago: Thai Dang, Star of Siam, and Arun's Thai Restaurant.
       CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Chicago", "state": "Illinois", "cuisine": "Thai"}}
-[ 12.81s][user ] Oh, Thai Dang sounds good. What’s their address?
-[ 15.88s][moshi] ⟨ret@15.89s⟩ Certainly, I can ⟦⚡SPAN@17.65s: (tool result) Thai Dang is located at 4339 N Broadway, Chicago, IL 60613.⟧ look that up for you… Thai Dang is at 4339 North Broadway, Chicago, Illinois, 60613.
+[ 12.81s][user ] Oh, Thai Dang sounds good. What’s their ⟨ret@15.65s⟩ address?
+[ 15.88s][moshi] ⟦⚡SPAN@16.15s: (tool result) Thai Dang is located at 4339 N Broadway, Chicago, IL 60613.⟧ Certainly, I can look that up for you… Thai Dang is at 4339 North Broadway, Chicago, Illinois, 60613.
       CALL: {"function": "Restaurants_2_GetRestaurantDetails", "arguments": {"restaurant_name": "Thai Dang", "city": "Chicago", "state": "Illinois"}}
-[ 24.45s][user ] Can you make a reservation for two there tomorrow at seven pm?
-[ 28.18s][moshi] ⟨ret@28.18s⟩ ⟦⚡SPAN@28.18s: (tool result) Your reservation for two at Thai Dang tomorrow at 7:00 PM is confirmed; reservation ID is RD7892⟧ Happy to assist with that booking… You’re all set! I’ve booked a table for two at Thai Dang tomorrow at seven pm. Your ID is RD7892.
+[ 24.45s][user ] Can you make a reservation for two there tomorrow at seven ⟨ret@27.86s⟩ pm?
+[ 28.18s][moshi] Happy ⟦⚡SPAN@29.06s: (tool result) Your reservation for two at Thai Dang tomorrow at 7:00 PM is confirmed; reservation ID is RD7892⟧ to assist with that booking… You’re all set! I’ve booked a table for two at Thai Dang tomorrow at seven pm. Your ID is RD7892.
       CALL: {"function": "Restaurants_2_ReserveTable", "arguments": {"restaurant_name": "Thai Dang", "date": "tomorrow", "time": "7:00 PM", "party_size": "2"}}

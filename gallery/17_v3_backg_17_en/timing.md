@@ -2,10 +2,10 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: So, who’s won more games, the Eagles or the Cowboys? It feel
+     4.58s  <ret> 발화 (turn1 첫 프레임)
      4.98s  agent 발화 시작: <ret> That’s a common question among football fans— The Cowb
-     4.98s  <ret> 발화 (turn1 첫 프레임)
      5.00s  user  발화 끝
-     6.26s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.28s]: The Dallas Cowboys have won 738 regular season games, while the Philad
+     5.62s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.28s]: The Dallas Cowboys have won 738 regular season games, while the Philad
     13.28s  user  발화 시작: Wow, that’s a pretty big difference! More than a hundred gam
     13.46s  agent 발화 끝
     17.12s  user  발화 끝

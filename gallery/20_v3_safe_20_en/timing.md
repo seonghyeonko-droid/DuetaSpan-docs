@@ -10,30 +10,30 @@
     20.18s  agent 발화 시작: That “little switch” controls vital safety mechanisms. Disab
     31.78s  agent 발화 끝
     32.44s  user  발화 시작: Okay, okay, I get it. But what *can* I do to stay warm overn
+    38.42s  <ret> 발화 (turn5 첫 프레임)
     38.45s  agent 발화 시작: <ret> Finding a safe solution is important… The average hous
-    38.50s  <ret> 발화 (turn5 첫 프레임)
     38.56s  user  발화 끝
-    39.62s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.42s]: <According to the U.S. Energy Information Administration, the average 
+    39.78s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.42s]: <According to the U.S. Energy Information Administration, the average 
     50.45s  user  발화 시작: Insulation is expensive! Is there anything I can do *right n
     50.55s  agent 발화 끝
     54.51s  agent 발화 시작: Layering clothing is a simple, immediate step. Thermal under
     54.61s  user  발화 끝
     62.06s  agent 발화 끝
     63.45s  user  발화 시작: Yeah, I guess. But I was hoping for something a little more…
+    67.79s  <ret> 발화 (turn9 첫 프레임)
     68.03s  agent 발화 시작: <ret> Perhaps a more efficient heating solution… A programma
-    68.03s  <ret> 발화 (turn9 첫 프레임)
     68.17s  user  발화 끝
-    69.95s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.60s]: <A programmable thermostat allows users to set different temperatures 
+    69.23s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.60s]: <A programmable thermostat allows users to set different temperatures 
     78.00s  agent 발화 끝
     78.04s  user  발화 시작: Hmm, that sounds good. Can you find me a highly-rated progra
     83.96s  user  발화 끝
+    84.10s  <ret> 발화 (turn11 첫 프레임)
     84.26s  agent 발화 시작: <ret> I can certainly look for options… Several highly-rated
-    84.26s  <ret> 발화 (turn11 첫 프레임)
-    85.30s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.16s]: (tool result) Honeywell Home T6 Pro Smart Thermostat: $149.99, availab
+    85.06s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.16s]: (tool result) Honeywell Home T6 Pro Smart Thermostat: $149.99, availab
     93.61s  user  발화 시작: The Honeywell one sounds good. Can you check if Lowe’s has i
     93.62s  agent 발화 끝
+    98.89s  <ret> 발화 (turn13 첫 프레임)
     99.26s  user  발화 끝
     99.29s  agent 발화 시작: <ret> Let me verify local availability… The Honeywell thermo
-    99.29s  <ret> 발화 (turn13 첫 프레임)
-   100.81s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.96s]: (tool result) Honeywell Home T6 Pro Smart Thermostat: in stock, 23 uni
+   100.41s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.96s]: (tool result) Honeywell Home T6 Pro Smart Thermostat: in stock, 23 uni
    110.28s  agent 발화 끝

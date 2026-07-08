@@ -4,34 +4,34 @@ SYSTEM: <system> 당신은 고전 프랑스 파티세리 훈련을 받은 파티
 
 [  0.00s][user ] 해리 포터 책이 처음 언제 나왔는지 궁금했어.
 [  2.95s][moshi] 정말 많이들 물어보시는 질문이에요.
-[  5.64s][moshi] ⟨ret@5.65s⟩ 제가 한번 찾아볼까요— 처음 ⟦⚡SPAN@8.69s: Harry Potter and the Philosopher's Stone was first published in the United Kingdom on 26 June 1997.⟧ 영국에서 천구백구십칠년 칠월 이십육일에 출판됐어요.
+[  5.64s][moshi] ⟨ret@5.33s⟩ 제가 ⟦⚡SPAN@6.61s: Harry Potter and the Philosopher's Stone was first published in the United Kingdom on 26 June 1997.⟧ 한번 찾아볼까요— 처음 영국에서 천구백구십칠년 칠월 이십육일에 출판됐어요.
 [ 14.41s][user ] 음, 그렇긴 한데 미국에서는 훨씬 나중에 나온 것 같아. 맞을까?
 [ 19.64s][moshi] 네, 질문하신 게 맞아요.
-[ 21.42s][moshi] ⟨ret@21.43s⟩ 구분하는 ⟦⚡SPAN@22.39s: Harry Potter and the Sorcerer's Stone was first published in the United States on September 1, 1998.⟧ 게 중요해요— 미국에서는 천구백구십팔년 구월 일일에 처음 출판됐어요.
+[ 21.42s][moshi] ⟨ret@21.27s⟩ 구분하는 ⟦⚡SPAN@22.23s: Harry Potter and the Sorcerer's Stone was first published in the United States on September 1, 1998.⟧ 게 중요해요— 미국에서는 천구백구십팔년 구월 일일에 처음 출판됐어요.
 [ 26.72s][user ] 구월 일일… 꽤 차이가 나네, 그렇지? 거의 일 년이나!
 [ 30.69s][moshi] 네, 꽤 큰 차이예요. 출판 일정은 꽤 복잡할 수 있어요.
-[ 34.86s][moshi] ⟨ret@34.87s⟩ ⟦⚡SPAN@35.35s: Scholastic Corporation acquired the US rights to publish the Harry Potter series in 1997.⟧ 차이점을 설명해 드릴게요— 스콜라스틱 코퍼레이션이 천구백구십칠년에 미국에서 이 시리즈를 출판할 권리를 획득했어요.
+[ 34.86s][moshi] ⟨ret@34.71s⟩ 차이점을 설명해 ⟦⚡SPAN@36.71s: Scholastic Corporation acquired the US rights to publish the Harry Potter series in 1997.⟧ 드릴게요— 스콜라스틱 코퍼레이션이 천구백구십칠년에 미국에서 이 시리즈를 출판할 권리를 획득했어요.
 [ 42.88s][user ] 스콜라스틱이 일 년 동안 가지고 있다가 출시했어? 왜 그렇게 시간이 걸렸어?
 [ 47.35s][moshi] 여러 가지 고려 사항이 있었던 것 같아요.
-[ 49.60s][moshi] ⟨ret@49.61s⟩ 준비가 필요했어요— 스콜라스틱은 ⟦⚡SPAN@51.85s: Scholastic spent a year re-editing and re-titling the book for the American market.⟧ 미국 시장을 위해 책을 일 년 동안 재편집하고 제목을 변경했어요.
+[ 49.60s][moshi] ⟨ret@49.21s⟩ ⟦⚡SPAN@50.33s: Scholastic spent a year re-editing and re-titling the book for the American market.⟧ 준비가 필요했어요— 스콜라스틱은 미국 시장을 위해 책을 일 년 동안 재편집하고 제목을 변경했어요.
 [ 57.54s][user ] 제목을 바꿨다고? 제목을 뭘로 바꿨어?
 [ 60.40s][moshi] 실제로 꽤 큰 변화였어요.
-[ 62.21s][moshi] ⟨ret@62.22s⟩ ⟦⚡SPAN@62.94s: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potter and the Sorcerer's Stone" for US audie⟧ 미국판은— 제목이 미국 독자들을 위해 “해리 포터와 마법사의 돌”로 변경됐어요.
+[ 62.21s][moshi] ⟨ret@62.06s⟩ ⟦⚡SPAN@62.56s: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potter and the Sorcerer's Stone" for US audie⟧ 미국판은— 제목이 미국 독자들을 위해 “해리 포터와 마법사의 돌”로 변경됐어요.
 [ 70.03s][user ] 마법사 대신 철학자… 흥미롭네. 미국 아이들은 “철학자”라는 단어를 이해하지 못할 거라고 생각한 거야?
 [ 77.07s][moshi] «interrupted» 주로 마케팅 결정이었어요—
-[ 79.32s][moshi] ⟨ret@79.33s⟩ 출판사들은— ⟦⚡SPAN@80.29s: Scholastic thought "sorcerer" would appeal more to American children than "philosopher."⟧ 스콜라스틱은 “마법사”가 “철학자”보다 미국 아이들에게 더 어필할 것이라고 생각했어요.
+[ 79.32s][moshi] ⟨ret@78.93s⟩ ⟦⚡SPAN@79.89s: Scholastic thought "sorcerer" would appeal more to American children than "philosopher."⟧ 출판사들은— 스콜라스틱은 “마법사”가 “철학자”보다 미국 아이들에게 더 어필할 것이라고 생각했어요.
 [ 85.98s][user ] 그럴 수도 있겠네. 그럼 첫 번째 책 이후로는—
 [ 89.02s][moshi] «interrupted» 처음 성공한 이후로는—
-[ 91.35s][moshi] ⟨ret@91.35s⟩ ⟦⚡SPAN@91.43s: Subsequent books in the series were published in both the UK and US nearly simultaneously.⟧ 이후 출판물은— 이후 책들은 양국에서 거의 동시에 출판됐어요.
+[ 91.35s][moshi] ⟨ret@90.95s⟩ ⟦⚡SPAN@91.59s: Subsequent books in the series were published in both the UK and US nearly simultaneously.⟧ 이후 출판물은— 이후 책들은 양국에서 거의 동시에 출판됐어요.
 [ 96.99s][user ] 거의? 그럼 그때도 약간의 지연이 있었던 거야?
 [ 99.56s][moshi] «interrupted» 간혹 사소한 차이가 있었어요—
-[101.53s][moshi] ⟨ret@101.54s⟩ ⟦⚡SPAN@102.18s: Minor publication date differences occurred due to shipping and distribution logistics.⟧ 흔한 일은 아니에요— 배송 및 유통 물류로 인해 약간의 출판일 차이가 발생했어요.
+[101.53s][moshi] ⟨ret@101.22s⟩ 흔한 ⟦⚡SPAN@102.66s: Minor publication date differences occurred due to shipping and distribution logistics.⟧ 일은 아니에요— 배송 및 유통 물류로 인해 약간의 출판일 차이가 발생했어요.
 [107.05s][user ] 그래, 배송은 이해가 돼. 그게 열풍에 영향을 미쳤을까…—
 [111.12s][moshi] «interrupted» 그럴 수도 있어요—
-[112.68s][moshi] ⟨ret@112.69s⟩ 기대감은— ⟦⚡SPAN@113.49s: The initial delay created significant anticipation and demand for the first book in the US.⟧ 처음 지연으로 인해 첫 번째 책에 대한 상당한 기대감과 수요가 생겼어요.
+[112.68s][moshi] ⟨ret@112.29s⟩ ⟦⚡SPAN@112.85s: The initial delay created significant anticipation and demand for the first book in the US.⟧ 기대감은— 처음 지연으로 인해 첫 번째 책에 대한 상당한 기대감과 수요가 생겼어요.
 [118.51s][user ] 그런데 J.K. 롤링은 이런 모든 것, 변화와 지연에 대해 알고 있었을까?
 [123.87s][moshi] «interrupted» 물론이죠—
-[125.45s][moshi] ⟨ret@125.47s⟩ 그녀는 확실히— ⟦⚡SPAN@127.23s: J.K. Rowling was consulted on the title change and remained involved in the US publishing process.⟧ J.K. 롤링은 제목 변경에 대해 상의했고 미국 과정에 참여했어요.
+[125.45s][moshi] ⟨ret@125.07s⟩ 그녀는 ⟦⚡SPAN@126.35s: J.K. Rowling was consulted on the title change and remained involved in the US publishing process.⟧ 확실히— J.K. 롤링은 제목 변경에 대해 상의했고 미국 과정에 참여했어요.
 [133.46s][user ] 그녀도 어느 정도 말할 권리가 있었다니 다행이네. 그럼 “마법사의 돌” 버전이 대부분의 미국인들이 자라면서 접한 버전이지?
 [142.17s][moshi] 맞아요. 그 버전이 여기서 상징이 되었어요.
-[145.32s][moshi] ⟨ret@145.33s⟩ ⟦⚡SPAN@145.89s: "Harry Potter and the Sorcerer's Stone" became the defining edition for the vast majority of American readers.⟧ 바로 그 판본— “해리 포터와 마법사의 돌”은 대부분의 미국 독자들에게 결정적인 판본이 되었어요.
+[145.32s][moshi] ⟨ret@145.09s⟩ ⟦⚡SPAN@146.05s: "Harry Potter and the Sorcerer's Stone" became the defining edition for the vast majority of American readers.⟧ 바로 그 판본— “해리 포터와 마법사의 돌”은 대부분의 미국 독자들에게 결정적인 판본이 되었어요.
