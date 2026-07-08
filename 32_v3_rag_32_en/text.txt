@@ -1,24 +1,15 @@
 v3_rag_32_en src=nq style=v2
-SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] So, when did America actually go to war with France? I always thought it was during the Revolution.
-[moshi] That's a common misconception. While France aided us in the Revolutionary War, there was a later conflict.
-[user ] A later conflict? Really? I— I mean, that doesn’t sound right.
-[moshi] <ret> Actually, ⟦⚡SPAN@20.84s: The Quasi-War was an undeclared naval war between the United States and France, lasting from 1798 to 1800.⟧ it’s quite documented. The conflict spanned from seventeen ninety-eight to eighteen hundred. It was a tense period for the young nation.
-[user ] An *undeclared* war? What does that even mean? Seems…odd.
-[moshi] It means Congress never formally declared war, but naval forces engaged in hostilities.
-[user ] Hmm. So, it wasn’t a full-scale land war like, say, the Civil War?
-[moshi] <ret> No, ⟦⚡SPAN@45.42s: The Quasi-War involved naval clashes in the Caribbean, and American merchant ships were seized by French priva⟧ it was primarily a maritime conflict. The conflict involved naval clashes in the Caribbean and the seizure of American ships. It was a difficult time for American trade.
-[user ] Caribbean, huh? So, pirates were involved? That's interesting.
-[moshi] Not exactly pirates, but privateers – essentially, legally sanctioned pirates working for France.
-[user ] Legally sanctioned pirates… [laugh] Okay, that’s a new one. But why did it start?
-[moshi] <ret> It ⟦⚡SPAN@73.02s: The Quasi-War began due to French anger over the Jay Treaty between the U.S. and Great Britain, and French dem⟧ stemmed from diplomatic tensions. It started because France was angry about the Jay Treaty and demanded a bribe. A rather blatant attempt at extortion, really.
-[user ] A bribe? Seriously? What did France want?
-[moshi] They demanded a loan and a substantial bribe from American diplomats. It was quite scandalous.
-[user ] Scandalous is putting it mildly. That sounds…aggressive. What happened with the bribe?
-[moshi] The Americans refused to pay, and that refusal triggered the escalating tensions.
-[user ] So, refusing a bribe led to an undeclared naval war? That's a pretty high price to pay for principles.
-[moshi] It was a demonstration of American resolve, though a costly one. It’s a fascinating period.
-[user ] Fascinating, maybe. More like infuriating, if you ask me. But okay, so it ended in 1800, you said?
-[moshi] Exactly. The Convention of 1800 formally ended the Quasi-War, though relations remained strained.
+[user ] So, who played Augustus Gloop in the 2005 *Charlie and the Chocolate Factory*? I’ve heard conflicting reports.
+[moshi] That’s a good question, there’s often confusion with child actors.
+[moshi] <ret> ⟦⚡SPAN@12.45s: Philip Wiegratz played the role of Augustus Gloop in the 2005 film *Charlie and the Chocolate Factory*.⟧ Let me clarify that for you. Philip Wiegratz portrayed Augustus Gloop in Tim Burton’s 2005 adaptation.
+[user ] Philip Wiegratz, huh? I thought it was another actor… are you sure? It just doesn’t *sound* right.
+[moshi] <ret> ⟦⚡SPAN@25.01s: Philip Wiegratz is a German actor who gained recognition for his role as Augustus Gloop.⟧ I understand your hesitation. Philip Wiegratz, a German actor, is known for playing Augustus Gloop.
+[user ] Okay, a German actor… interesting. But he doesn't seem to have done much else. Is that true?
+[moshi] That's a common observation about young performers in large productions.
+[moshi] <ret> ⟦⚡SPAN@42.37s: After *Charlie and the Chocolate Factory*, Philip Wiegratz largely withdrew from acting.⟧ His subsequent career is relatively quiet. Following the film, Philip Wiegratz chose to step away from acting.
+[user ] Withdrew completely? That’s… unusual. What made him do that?
+[moshi] It’s a personal decision, often stemming from the pressures of early fame.
+[moshi] <ret> ⟦⚡SPAN@59.88s: Philip Wiegratz pursued a legal career after his time as a child actor.⟧ He preferred a different path, apparently. Philip Wiegratz later studied law and became a lawyer.

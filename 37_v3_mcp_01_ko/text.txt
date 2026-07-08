@@ -1,17 +1,11 @@
 v3_mcp_01_ko src=mcp style=v2
-SYSTEM: <system> 저는 신경학자 사토 박사이며, 기억이 어떻게 작동하는지에 매료되어 있습니다. <system>
+SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 야, hosts 파일 첫 세 줄 읽어 봐.
-[moshi] <ret> ⟦⚡SPAN@4.28s: 127.0.0.1 localhost / 127.0.1.1 mymachine / ::1 localhost⟧ 아, 그러시군요. 첫 세 줄에는 localhost랑 mymachine 항목이 있는데, 특정 IP 주소로 연결되어 있어요.
-      CALL: {"function": "read_file", "arguments": {"filepath": "/etc/hosts", "num_lines": 3}}
-[user ] 흐음. 그 "mymachine" 항목… 내가 추가한 기억이 안 나는데. 정상적인 거야?
-[moshi] 뭐, 시스템에서 그런 호스트 이름을 정의하는 경우가 종종 있어요. 물론 그 목적은 다양하죠.
-[user ] 알았어. 그럼, 근처에 괜찮은 이탈리아 식당 찾아줘, 밤 9시 넘어서까지 하는 곳으로.
-[moshi] <ret> 찾아봤는데, ⟦⚡SPAN@29.70s: Restaurant: Bella Notte, Address: 14 Elm Street, Hours: 11:00 AM - 10:30 PM, Rating: 4.5 stars.⟧ 있네요. Elm Street에 있는 Bella Notte는 밤 10시 반까지 영업하고, 평점은 별 4개 반이에요.
-      CALL: {"function": "search_restaurants", "arguments": {"cuisine": "Italian", "location": "nearby", "open_until": "9:00 PM"}}
-[user ] 밤 10시 반… 너무 아슬아슬하네. Bella Notte에 두 명 자리를 9시 15분에 예약해 줘.
-[moshi] <ret> ⟦⚡SPAN@43.21s: Confirmation: Bella Notte, 9:15 PM, Party of 2, Confirmation number: BN7492.⟧ 네, 그렇게 해 드릴게요. Bella Notte 두 명 자리, 9시 15분으로 예약 완료됐습니다. 확인 번호는 BN7492예요.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant": "Bella Notte", "time": "9:15 PM", "party_size": 2}}
-[user ] 좋아. 고마워, 사토 박사.
-[moshi] 도움이 됐다니 다행이네요. 계획하고 기대하는 과정이 신경학적으로 꽤 흥미롭다고 생각해요.
+[user ] 야, 로스앤젤레스에서 뉴욕 가는 편도 티켓 두 장, 4월 22일에 프리미엄 이코노미로 부탁해.
+[moshi] <ret> ⟦⚡SPAN@6.33s: (tool result) United Airlines has flights available for 375 dollars each, departing at 8:15 AM and 11:40 AM.⟧ 음, 유나이티드 항공에서 프리미엄 이코노미 좌석이 두 개 있는데, 오전 8시 15분이랑 11시 40분 비행편이고, 티켓 한 장에 375달러예요.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Los Angeles", "destination": "New York", "date": "April 22", "class": "premium economy", "num_tickets": "2"}}
+[user ] 어, 좀 비싸네. 300달러 밑으로 가는 거 있어?
+[moshi] <ret> ⟦⚡SPAN@19.74s: (tool result) American Airlines has economy seats available for 289 dollars, departing at 6:00 AM.⟧ 네, 좀 어렵겠지만 찾아볼게요.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Los Angeles", "destination": "New York", "date": "April 22", "max_price": "300", "class": "economy"}}
+[moshi] 아메리칸 항공에서 4월 22일에 오전 6시에 출발하는 이코노미 좌석이 289달러에 있네요.

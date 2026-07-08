@@ -1,53 +1,49 @@
 # v3_mcp_00_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Make the text bold by clicking the bold button inside the ed
-     4.61s  agent 발화 시작: <ret> Certainly. The bold button within the editor iframe ha
-     4.61s  <ret> 발화 (turn1 첫 프레임)
-     4.61s  user  발화 끝
-     4.77s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.38s]: (button clicked: aria-label=Bold)
-     9.61s  user  발화 시작: Okay, uh, now make it italic.
-     9.61s  agent 발화 끝
-    11.92s  agent 발화 시작: <ret> Of course. The italic button inside the editor iframe 
-    11.92s  <ret> 발화 (turn3 첫 프레임)
-    11.92s  user  발화 끝
-    12.32s  ⚡SPAN 주입 [d'=0.40s / d_lead=0.77s]: (button clicked: aria-label=Italic)
-    16.92s  user  발화 시작: Good. Now, can you search for articles on the effects of sle
-    16.92s  agent 발화 끝
-    22.69s  agent 발화 시작: <ret> Absolutely. Search results show articles from NIH, Har
-    22.69s  <ret> 발화 (turn5 첫 프레임)
-    22.69s  user  발화 끝
-    23.01s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.38s]: (search results: "Sleep Deprivation and Memory Consolidation" - Nation
-    28.46s  user  발화 시작: [sigh] That's a lot to read. Is there a consensus on how muc
-    28.46s  agent 발화 끝
-    34.61s  agent 발화 시작: It's a surprisingly complex question, actually. Individual s
-    34.61s  user  발화 끝
-    39.61s  user  발화 시작: But… what’s the average?
-    39.61s  agent 발화 끝
-    41.15s  agent 발화 시작: <ret> Generally speaking… Most adults need between seven and
-    41.15s  <ret> 발화 (turn9 첫 프레임)
-    41.15s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.77s]: (average sleep duration: 7-9 hours)
-    41.15s  user  발화 끝
-    48.07s  user  발화 시작: Seven to nine… Hmm. That’s more than I usually get. I— I mea
-    48.07s  agent 발화 끝
-    54.22s  agent 발화 시작: Chronic sleep loss can have significant impacts on cognitive
-    54.22s  user  발화 끝
-    59.61s  user  발화 시작: Yeah. [happy] I wonder if there’s a sleep study I could join
-    59.61s  agent 발화 끝
-    64.61s  agent 발화 시작: <ret> I've found a couple. Somnus Sleep Center and Restful N
-    64.61s  <ret> 발화 (turn13 첫 프레임)
-    64.61s  user  발화 끝
-    65.61s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.54s]: (sleep study locations: "Somnus Sleep Center - 123 Main Street, Anytow
-    71.14s  user  발화 시작: Somnus… can you check their availability for a new participa
-    71.14s  agent 발화 끝
-    74.99s  agent 발화 시작: <ret> Let me see… Somnus Sleep Center has a new participant 
-    74.99s  <ret> 발화 (turn15 첫 프레임)
-    74.99s  user  발화 끝
-    75.15s  ⚡SPAN 주입 [d'=0.16s / d_lead=1.15s]: (availability: next available screening: December twenty-first, 2023, 
-    83.07s  user  발화 시작: Perfect. Book it for me.
-    83.07s  agent 발화 끝
-    84.99s  agent 발화 시작: <ret> Done. Your screening at Somnus Sleep Center is confirm
-    84.99s  <ret> 발화 (turn17 첫 프레임)
-    84.99s  user  발화 끝
-    85.23s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.38s]: (appointment confirmation: Somnus Sleep Center, December 21, 2023, 10:
-    93.83s  agent 발화 끝
+     0.00s  user  발화 시작: Tell me the traffic conditions on Zhongshan Road heading sou
+     2.78s  <ret> 발화 (turn1 첫 프레임)
+     3.38s  agent 발화 시작: <ret> Let me check that for you. Traffic on Zhongshan Road s
+     3.42s  user  발화 끝
+     3.78s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.19s]: (tool result) Traffic is heavy, with an estimated delay of 18 minutes.
+     9.85s  user  발화 시작: Oh, that’s… uh… longer than I thought. Is there an alternati
+     9.95s  agent 발화 끝
+    13.83s  agent 발화 시작: Certainly. Are you hoping to avoid the congestion entirely, 
+    13.93s  user  발화 끝
+    19.43s  agent 발화 끝
+    19.61s  user  발화 시작: Minimize the delay, I guess. Something that adds, like, ten 
+    23.13s  <ret> 발화 (turn5 첫 프레임)
+    23.72s  agent 발화 시작: <ret> I can find a quicker option. Fuxing Road offers a fast
+    23.87s  user  발화 끝
+    24.09s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: (tool result) Take Fuxing Road. Estimated time is 32 minutes, a 7-minu
+    31.97s  agent 발화 끝
+    32.22s  user  발화 시작: Okay, Fuxing Road it is. Can you navigate me there?
+    34.60s  <ret> 발화 (turn7 첫 프레임)
+    35.19s  agent 발화 시작: <ret> Of course. Starting navigation now.
+    35.22s  user  발화 끝
+    35.60s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.82s]: (tool result) Navigation started. First turn in 500 meters.
+    37.40s  agent 발화 시작: Navigation to Fuxing Road has begun; your first turn is in f
+    38.01s  agent 발화 끝
+    42.71s  user  발화 시작: Great. [sigh] I'm meeting a colleague to discuss a rare *Mec
+    42.72s  agent 발화 끝
+    47.16s  agent 발화 시작: *Meconopsis*? How fascinating. The Himalayan blue poppies, c
+    47.20s  user  발화 끝
+    54.92s  user  발화 시작: They are. Apparently, someone found a new variant near Mount
+    55.08s  agent 발화 끝
+    59.27s  user  발화 끝
+    59.41s  agent 발화 시작: Mount Kailash is a remarkably remote location. The condition
+    66.04s  agent 발화 끝
+    68.31s  user  발화 시작: That’s what I heard. The collector is bringing samples to th
+    72.94s  user  발화 끝
+    73.02s  agent 발화 시작: That sounds like a remarkable opportunity. I’d be very inter
+    78.04s  user  발화 시작: Maybe we can arrange that. Uh, actually, could you remind me
+    78.20s  agent 발화 끝
+    82.59s  <ret> 발화 (turn16 첫 프레임)
+    82.99s  ⚡SPAN 주입 [d'=0.40s / d_lead=1.40s]: (tool result) Reminder set for Tuesday at 9:00 AM.
+    83.19s  agent 발화 시작: <ret> I can certainly do that. A reminder to email Dr. Chen 
+    83.36s  user  발화 끝
+    88.79s  agent 발화 끝
+    90.14s  user  발화 시작: Perfect. Thanks so much.
+    91.89s  user  발화 끝
+    92.35s  agent 발화 시작: You're very welcome. It's always a pleasure discussing botan
+    97.07s  agent 발화 끝

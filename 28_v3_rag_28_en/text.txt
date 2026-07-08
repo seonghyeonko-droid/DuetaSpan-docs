@@ -1,25 +1,40 @@
 v3_rag_28_en src=nq style=v1
-SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
+SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] So, I was re-reading Harry Potter last night…
-[moshi] It’s a wonderful series, isn’t it? Such imaginative world-building.
-[user ] Yeah, it really is. I was trying to remember… who actually tells Harry he’s a wizard?
-[moshi] <ret> That’s a ⟦⚡SPAN@13.82s: Rubeus Hagrid is the first character to tell Harry Potter that he is a wizard.⟧ good question. Hagrid is the one who delivers the news to Harry on his eleventh birthday.
-[user ] Oh, right! Hagrid, of course. I always forget the details.
-[moshi] It’s easy to do with such a detailed story. The little moments can get lost.
-[user ] It is. And what does Hagrid do *after* he tells him?
-[moshi] <ret> He has ⟦⚡SPAN@34.88s: Hagrid takes Harry to Diagon Alley to purchase school supplies and a wand.⟧ quite a bit to explain. Hagrid then accompanies Harry to Diagon Alley for his school supplies.
-[user ] Diagon Alley, yeah. It’s such a cool place. Um, is Hagrid a teacher at Hogwarts?
-[moshi] He’s not a teacher in the traditional sense, but he’s the gamekeeper and also teaches Care of Magical Creatures.
-[user ] Right, Care of Magical Creatures. That class was always… interesting.
-[moshi] [laugh] It certainly had its moments, didn’t it? A bit chaotic at times.
-[user ] Definitely. So, Hagrid… what kind of creature is he, exactly?
-[moshi] <ret> That's a ⟦⚡SPAN@68.05s: Rubeus Hagrid is a half-giant, the son of a giant and a human witch.⟧ common question. Hagrid’s mother was a witch, and his father was a giant.
-[user ] A half-giant! I knew there was something different about him. He’s so big.
-[moshi] He certainly stands out in a crowd. A very gentle soul, despite his size.
-[user ] He is. I wonder if he ever felt… different, growing up?
-[moshi] I imagine it must have been challenging, being different. Particularly in that world.
-[user ] Yeah, you're right. That must have been hard.
-[moshi] It’s a theme the books explore quite beautifully, actually— acceptance and understanding.
-[user ] That’s true. It’s a really powerful message.
+[user ] I was reading about natural gas, and it seems… complicated. Where does it actually come from?
+[moshi] It is a complex topic, certainly. Natural gas has several origins, some quite ancient.
+[user ] Ancient how? Like, dinosaur ancient?
+[moshi] Not precisely dinosaurs, though organic matter is key. It's a bit more nuanced than that.
+[user ] Nuanced how? I mean, isn't it all just squashed prehistoric stuff?
+[moshi] <ret> ⟦⚡SPAN@26.46s: Coal beds contain substantial amounts of natural gas, formed from decayed plant matter over millions of years.⟧ Let's clarify that point. Natural gas in coal beds forms from decayed plant matter over millions of years.
+[user ] Okay, so plants too. But I thought it was mostly about oil?
+[moshi] Oil and gas often occur together, but their origins differ slightly. Natural gas has independent sources.
+[user ] Independent sources? Like what, besides plants turning into coal?
+[moshi] <ret> ⟦⚡SPAN@50.79s: Some natural gas is biogenic, created by the metabolic action of microorganisms on organic matter.⟧ There’s another significant source. Biogenic natural gas is created by microorganisms acting on organic matter.
+[user ] Microorganisms? Like, bacteria? That's… unexpected.
+[moshi] Indeed. It’s a testament to the power of microscopic life over geological timescales.
+[user ] So, some is ancient plants, some is… bacterial farts?
+[moshi] [laugh] A rather colorful way to put it, yes. Though the process is more complex, that's the essence.
+[user ] Okay, okay. But what about deep underground? I thought that was different.
+[moshi] <ret> ⟦⚡SPAN@87.27s: Thermogenic natural gas is formed deep underground from organic matter exposed to heat and pressure.⟧ Deep underground gas has a distinct origin. Thermogenic natural gas forms deep underground from heat and pressure on organic matter.
+[user ] Heat and pressure… so, like, squeezing it out of rocks?
+[moshi] Essentially. The conditions transform the organic matter into gas over millennia.
+[user ] Millennia… so, all these sources are really, really old?
+[moshi] Precisely. We are talking about processes unfolding over millions of years. It’s a slow accumulation.
+[user ] It's kind of amazing, when you think about it.
+[moshi] It is. It speaks to the deep history contained within the earth itself. A fascinating area of study.
+[user ] Does this ancient gas stuff have anything to do with, uh, trade routes in Africa?
+[moshi] <ret> ⟦⚡SPAN@131.52s: The ancient Kingdom of Ghana controlled extensive salt and gold trade routes, influencing regional power dynam⟧ There’s an interesting connection there, actually. The Kingdom of Ghana controlled salt and gold trade routes, influencing power.
+[user ] Salt and gold? What does that have to do with gas?
+[moshi] The demand for salt, and the means to obtain it, impacted settlement patterns near gas seeps.
+[user ] Gas seeps? People used to just… find gas bubbling out of the ground?
+[moshi] <ret> ⟦⚡SPAN@152.60s: Ancient Egyptians utilized natural gas seeps for burning in religious ceremonies as early as 1500 BCE.⟧ Indeed, natural gas seeps were well-known. Ancient Egyptians burned natural gas from seeps in religious ceremonies around 1500 BCE.
+[user ] Wow. That’s… really old. Burning gas thousands of years ago.
+[moshi] It is a testament to human ingenuity and observation, even in antiquity.
+[user ] So, they weren't looking for oil, just… fire?
+[moshi] Primarily fire, yes. The understanding of its composition came much later, of course.
+[user ] It's wild to think about how long we’ve been interacting with it.
+[moshi] It is. It underscores the long relationship between humanity and the Earth’s resources.
+[user ] I guess it’s not just about what’s *in* the ground, but how people used to live *with* it.
+[moshi] Exactly. The geological and the human stories are inextricably linked, aren’t they?

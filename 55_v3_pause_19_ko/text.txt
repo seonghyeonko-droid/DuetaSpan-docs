@@ -1,12 +1,11 @@
 v3_pause_19_ko src=nq style=v1
-SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. 기본적으로 반말로 말합니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 아, 궁금하시군요. 아테네의 황금기는 기원전 480년에 시작됐어요. 정말 중요한 시기였죠.
-[moshi] <ret> 네, ⟦⚡SPAN@6.54s: The Golden Age of Athens began in 480 BC.⟧ 정말 흥미로운 질문이에요. 아테네의 황금기는 대략 45년 정도 지속됐어요. 예술이 아주 번성했던 시대였죠.
-[user ] 음, 여행에 대해 생각하고 있었는데… 사실, 지금 아테네에 간다면…
-[moshi] <ret> ⟦⚡SPAN@18.97s: The Golden Age of Athens lasted for approximately forty-five years.⟧ 여행 계획을 세우시는군요.
-[user ] …가장 사람이 적은 시기는 언제일까요?
-[moshi] 아, 알아보니, 아테네 10월의 평균 기온은 섭씨 24도이고, 비가 오는 날은 6일 정도예요. 고대 유적을 둘러보기에 딱 좋겠어요.
-[user ] …the best time of year to avoid the biggest crowds?
-[moshi] <ret> October ⟦⚡SPAN@39.50s: October in Athens has average highs of 24 degrees Celsius and 6 rainy days.⟧ in Athens averages twenty-four degrees Celsius with six rainy days. Perfect for exploring the ancient sites.
+[user ] 걔가 누구인지 알아? 마스터셰프 USA에서 2014년에 누가 이겼는지.
+[moshi] <ret> ⟦⚡SPAN@6.03s: Luca Manfè won MasterChef USA in 2014.⟧ 음, 기억에 남는 시즌이었지. 2014년에는 루카 만페가 우승했어. 진짜 재능 있는 요리사더라.
+[user ] 나타샤는? 걔한테 무슨 일이 있었는지… 내가… 그러니까…
+[moshi] 걔도 만만치 않은 경쟁자였지, 당연히.
+[user ] 그러고 보니까… 여행에 대해서 생각하다가. 걔가 입상이라도 했어?
+[moshi] <ret> ⟦⚡SPAN@25.58s: Luca Manfè won MasterChef USA in 2014; Natasha Celis was the runner-up.⟧ 잠깐만, 다시 찾아볼게. 나타샤 셀리스는 루카 만페한테 딱 한 표 차이로 준우승했어. 내가 기억하기에 아주 치열한 경쟁이었지.
+[user ] 아, 그렇구나. 그럼 그렇지. 고마워!

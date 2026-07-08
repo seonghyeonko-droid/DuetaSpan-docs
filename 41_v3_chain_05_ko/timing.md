@@ -1,27 +1,25 @@
 # v3_chain_05_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 전쟁 영화 찾아봐.
-     1.68s  agent 발화 시작: <ret> 음, 괜찮은 전쟁 영화 몇 편이 있어. “세이빙 프라이빗 라이언”, “지옥의 묵시록”, “더 허트
-     1.68s  <ret> 발화 (turn1 첫 프레임)
-     1.68s  user  발화 끝
-     2.68s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.24s]: (tool result: title=“Saving Private Ryan”, year=1998, genre=“War”, rat
-    11.76s  user  발화 시작: “지옥의 묵시록” 상영 시간은 얼마야?
-    11.76s  agent 발화 끝
-    14.55s  agent 발화 시작: <ret> 그거 완전 명작이지. “지옥의 묵시록” 상영 시간은 147분이야.
-    14.55s  <ret> 발화 (turn3 첫 프레임)
-    14.55s  user  발화 끝
-    15.55s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.24s]: (tool result: title=“Apocalypse Now”, year=1979, genre=“War”, rating=8
-    19.03s  user  발화 시작: 근처에서 상영 시간 찾아줄 수 있어?
-    19.03s  agent 발화 끝
-    22.39s  agent 발화 시작: <ret> 당연하지. “지옥의 묵시록”은 AMC 보스턴 코먼 19에서 오후 2시 15분에, Regal Fen
-    22.39s  <ret> 발화 (turn5 첫 프레임)
-    22.39s  user  발화 끝
-    22.63s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.56s]: (tool result: movie_title=“Apocalypse Now”, theater=“AMC Boston Common
-    30.79s  user  발화 시작: Regal Fenway에서 7시 표 예매해 줘.
-    30.79s  agent 발화 끝
-    34.15s  agent 발화 시작: <ret> 알았어. “지옥의 묵시록” Regal Fenway 7시 표 예매 완료됐고, 확인 번호는 AX49Z
-    34.15s  <ret> 발화 (turn7 첫 프레임)
-    34.15s  user  발화 끝
-    35.15s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.68s]: (tool result: movie_title=“Apocalypse Now”, theater=“Regal Fenway”, ti
-    41.98s  agent 발화 끝
+     0.00s  user  발화 시작: 프랭크 마르티네즈 님께 위치 공유를 하고 싶어요.
+     2.61s  <ret> 발화 (turn1 첫 프레임)
+     3.09s  ⚡SPAN 주입 [d'=0.48s / d_lead=0.52s]: (tool result) Location sharing request sent to Frank Martinez.
+     3.21s  agent 발화 시작: <ret> 네, 프랭크 마르티네즈 님께 위치 공유 요청을 보냈습니다.
+     3.24s  user  발화 끝
+     7.33s  agent 발화 끝
+     7.54s  user  발화 시작: 아, 좋아요. 그게 얼마나 오래 지속되나요?
+     9.46s  <ret> 발화 (turn3 첫 프레임)
+    10.03s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.98s]: (tool result) Location sharing will expire in one hour.
+    10.06s  agent 발화 시작: <ret> 음, 좋은 질문이에요. 프랭크 마르티네즈 님과의 위치 공유는 한 시간 후에 만료될 거예요.
+    10.12s  user  발화 끝
+    16.50s  agent 발화 끝
+    17.24s  user  발화 시작: 알겠습니다, 네 시간으로 늘릴 수 있을까요?
+    19.14s  <ret> 발화 (turn5 첫 프레임)
+    19.38s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.52s]: (tool result) Location sharing duration extended to four hours.
+    19.74s  agent 발화 시작: <ret> 맞아요. 프랭크 마르티네즈 님과의 위치 공유 시간을 네 시간으로 늘렸습니다.
+    19.81s  user  발화 끝
+    24.80s  user  발화 시작: 완벽해요, 감사합니다!
+    24.92s  agent 발화 끝
+    26.25s  agent 발화 시작: 별말씀을요. 특히 숨겨진 올멕 유물을 발견하는 것처럼 탐험할 때는 항상 연결되어 있는 것이 좋죠!
+    26.28s  user  발화 끝
+    34.03s  agent 발화 끝

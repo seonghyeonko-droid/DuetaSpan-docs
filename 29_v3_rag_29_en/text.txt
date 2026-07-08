@@ -1,16 +1,34 @@
 v3_rag_29_en src=hotpotqa style=v2
-SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] So, I'm trying to settle a debate with a friend. Which documentary came out first, Almost Sunrise or 51 Birch Street?
-[moshi] That’s a common point of confusion, actually. Both are relatively recent films, so it’s easy to mix up the release dates.
-[user ] Yeah, but *which* one? He insists Almost Sunrise was earlier.
-[moshi] <ret> Let’s have ⟦⚡SPAN@22.48s: 51 Birch Street was released on November 19, 2021, and Almost Sunrise was released on January 20, 2022.⟧ a look… 51 Birch Street premiered before Almost Sunrise, by approximately two months. Quite a difference, really.
-[user ] Two months? Hmm… I thought I remembered it being closer. Are you sure about that?
-[moshi] Absolutely. It’s a detail I checked myself when researching films with similar themes—the way stories are preserved, you know?
-[user ] Okay, okay. Fine. 51 Birch Street it is. What’s it even *about* though?
-[moshi] It’s a profoundly moving portrait of a family grappling with their son's mental health struggles. A very raw and honest film.
-[user ] Sounds…heavy. Is it still available to stream anywhere?
-[moshi] <ret> I can ⟦⚡SPAN@61.74s: (tool result) Available on: Apple TV, Amazon Prime Video. Rental price: $3.99. Purchase price: $14.99.⟧ certainly check that for you. It is currently available to rent or purchase on both Apple TV and Amazon Prime Video. A good way to support the filmmakers.
-[user ] Fourteen ninety-nine? That’s a bit steep for a rental. I’ll look for it on Apple TV.
-[moshi] A wise choice, perhaps. Sometimes a rental is enough to appreciate a film's artistry—like carefully cleaning a single, important stone.
+[user ] So, which film came out first, Charley and the Angel or Planes? I always get those two mixed up.
+[moshi] That’s a common confusion, actually. They’re both from around the same period.
+[user ] But which *is* first? I need to settle a bet with a friend.
+[moshi] <ret> ⟦⚡SPAN@14.91s: Planes was released on August 9, 2013, while Charley and the Angel premiered on December 20, 2013.⟧ Let’s get this sorted. Planes was released before Charley and the Angel, coming out on August ninth, two thousand thirteen.
+[user ] August ninth? Really? I thought for sure it was the other way around.
+[moshi] It’s easy to misremember. Film release schedules can be quite dense.
+[user ] Okay, okay. So, Planes first. But what about the box office? Did Planes do better?
+[moshi] <ret> ⟦⚡SPAN@39.89s: Planes grossed $240.8 million worldwide, while Charley and the Angel earned $18.6 million globally.⟧ I can tell you about that. Planes earned considerably more, with a worldwide gross of two hundred forty point eight million dollars.
+[user ] Wow, a huge difference. That’s… surprising. Charley and the Angel is a classic!
+[moshi] “Classic” is subjective, of course. Box office isn't always a measure of lasting impact.
+[user ] True enough. But still, that's a big gap. What were the critical receptions like?
+[moshi] <ret> ⟦⚡SPAN@65.38s: Planes received a 26% rating on Rotten Tomatoes, whereas Charley and the Angel holds a 71% rating on the same ⟧ Let's look at the reviews. Charley and the Angel had a significantly higher Rotten Tomatoes score, at seventy-one percent.
+[user ] [laugh] So, Planes made more money, but critics liked Charley and the Angel better? That's ironic.
+[moshi] It’s not uncommon for a commercially successful film to receive lukewarm critical reception.
+[user ] Hmm. What about the directors? Were they well-known names?
+[moshi] <ret> ⟦⚡SPAN@90.49s: Planes was directed by Klay Hall, while Charley and the Angel was directed by David Weaver.⟧ I can provide some background. Klay Hall directed Planes, and David Weaver directed Charley and the Angel.
+[user ] Never heard of either of them, honestly. Were either of them known for other films?
+[moshi] <ret> ⟦⚡SPAN@103.22s: Klay Hall previously worked on “Surf’s Up” and “Tinker Bell”, while David Weaver is known for “Secondhand Lion⟧ Let’s see what their filmographies reveal. Klay Hall worked on “Surf’s Up” and “Tinker Bell”, and David Weaver is known for “Secondhand Lions”.
+[user ] "Secondhand Lions" is a good film! So Weaver has a bit more pedigree, maybe?
+[moshi] That's a fair assessment. It’s a well-regarded independent film.
+[user ] Okay. What about the animation style? Was one noticeably different from the other?
+[moshi] <ret> ⟦⚡SPAN@127.19s: Planes utilizes computer animation, while Charley and the Angel employs a blend of live-action and computer-ge⟧ There were some stylistic differences. Planes is entirely computer-animated, but Charley and the Angel blends live-action with CGI.
+[user ] Ah, that explains it. Charley and the Angel felt… different. More grounded, I guess?
+[moshi] The combination of live-action and animation can create a unique visual experience.
+[user ] So, both films have their strengths and weaknesses, it seems.
+[moshi] Precisely. Each offers something different to the viewer. It depends on personal preference.
+[user ] Fair enough. One last question – any interesting trivia about either one?
+[moshi] <ret> ⟦⚡SPAN@162.24s: Planes was originally intended as a direct-to-video release, but Disney decided to give it a theatrical run du⟧ There’s a bit of a story with Planes. Planes was initially planned for direct-to-video, but Disney gave it a theatrical release.
+[user ] Wow, that's a turnaround! Good for them, I guess. Thanks for all the info.
+[moshi] My pleasure. It’s always rewarding to explore the details behind these stories.

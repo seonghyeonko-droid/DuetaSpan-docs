@@ -1,12 +1,12 @@
 v3_inter_11_en src=nq style=v1
-SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
+SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] What was the first estate in the French Revolution?
-[moshi] <ret> That’s a ⟦⚡SPAN@3.92s: The First Estate comprised the clergy and held significant land and wealth.⟧ good question. The First Estate was made up of the clergy—they possessed considerable land and wealth at that time.
-[user ] And how big was it, roughly, as a percentage of the population?
-[moshi] <ret> Let me ⟦⚡SPAN@15.15s: The First Estate represented approximately 0.5% of the French population in 1789.⟧ give you a sense— The First Estate included around zero point five percent of the total French population in seventeen eighty-nine.
-[user ] Wow, that’s—
-[moshi] «interrupted» That’s remarkably small, isn’t it—
-[user ] «interrupts_prev» But… didn’t they have a lot of influence despite that?
-[moshi] Absolutely. Despite being a small fraction of the population, the First Estate wielded substantial influence.
+[user ] I’m trying to settle a sports argument—who was the very first bowler to take a hattrick in Test cricket?
+[moshi] <ret> ⟦⚡SPAN@6.02s: Fred Spofforth, playing for Australia, achieved the first hattrick in Test cricket in 1879.⟧ That’s a fascinating bit of cricket history! Fred Spofforth, playing for Australia, took the very first Test hattrick in eighteen seventy-nine.
+[user ] Eighteen seventy-nine, wow. Was it against England?
+[moshi] <ret> ⟦⚡SPAN@18.25s: Spofforth’s hattrick was taken against England in the third Test match at the Sydney Cricket Ground.⟧ Yes, it was indeed against England.
+[moshi] Spofforth’s hattrick occurred against England in the third Test at the Sydney Cricket Ground.
+[user ] That’s amazing—and he was Australian? I— I mean, was he the only one—
+[moshi] <ret> ⟦⚡SPAN@29.23s: Spofforth took two hattricks in that same series against England, a feat unmatched for ninety-two years.⟧ Actually, that's a great question— Spofforth actually took two hattricks in that series against England, and that record stood for ninety-two years.
+[user ] Two? Incredible! So, a truly dominant bowler then.

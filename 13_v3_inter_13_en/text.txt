@@ -1,15 +1,11 @@
 v3_inter_13_en src=nq style=v3
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] When does the rest of suits season seven air?
-[moshi] <ret> That’s a ⟦⚡SPAN@4.20s: The remaining episodes of Suits season seven premiered on April 18, 2018.⟧ popular question. The rest of season seven of Suits began airing on April eighteenth, 2018.
-[user ] Oh, April eighteenth… so it’s already been a while then.
-[moshi] Indeed. Time does move swiftly, doesn't it?
-[user ] [sigh] I— I mean, is it available to stream now?
-[moshi] <ret> Let me ⟦⚡SPAN@20.57s: Suits season seven is available for streaming on Netflix.⟧ share some information. Season seven of Suits is currently available to stream on the Netflix platform. A convenient option, I trust.
-[user ] Yeah. But is it on other platforms too?
-[moshi] <ret> Several ⟦⚡SPAN@31.74s: Suits is also available for purchase on platforms like Amazon Prime Video and Google Play.⟧ options exist for viewing.
-[moshi] You can also purchase episodes or the full season on Amazon Prime Video, or Google Play.
-[user ] Hmm, good to know. Thanks!
-[moshi] You are most welcome. It’s a show with some interesting power dynamics, reflecting commercial interests of its time.
+[user ] What kind of food is North Carolina famous for?
+[moshi] <ret> ⟦⚡SPAN@2.96s: North Carolina is known for its pork barbecue and bacon.⟧ That’s a good question. North Carolina’s culinary reputation rests largely on pork barbecue and bacon, you see.
+[user ] Oh, barbecue, yeah. What about seafood? Is that big there too?
+[moshi] Seafood is certainly popular along the coast, naturally.
+[user ] [laugh] Right, of course. What’s the *state* toast, though? I— I mean, like, officially?
+[moshi] <ret> ⟦⚡SPAN@23.37s: The official state toast of North Carolina is the Cheerwine soft drink.⟧ Well now, that’s a bit more specific— The official state toast for North Carolina is, surprisingly, Cheerwine soft drink. A bit sweet for my taste, but folks enjoy it.
+[user ] Cheerwine? That’s… unexpected. Huh.

@@ -1,12 +1,12 @@
 v3_inter_11_ko src=nq style=v1
-SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드크비스트입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 안내원입니다. 기본적으로 반말로 말합니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 야, 프랑스 혁명 때 제일 신분은 뭐였어?
-[moshi] <ret> 음, ⟦⚡SPAN@5.04s: The First Estate comprised the clergy and held significant land and wealth.⟧ 좋은 질문인데. 제1신분은 성직자들로 이루어져 있었어—그때 엄청난 토지와 부를 가지고 있었지.
-[user ] 그럼 대략 인구의 몇 퍼센트 정도 됐어?
-[moshi] <ret> 뭐, ⟦⚡SPAN@16.15s: The First Estate represented approximately 0.5% of the French population in 1789.⟧ 감을 잡을 수 있게 해줄게—1789년에 제1신분은 프랑스 전체 인구의 약 0.5퍼센트 정도를 차지했어.
-[user ] 와, 진짜—
-[moshi] «interrupted» 정말 작지 않아?
-[user ] «interrupts_prev» 근데… 인구가 적은데도 영향력이 컸던 거 아니야?
-[moshi] 맞아요. 인구의 작은 부분이었지만, 제1신분은 상당한 영향력을 행사했어.
+[user ] 저는 스포츠 논쟁을 해결하려고 하는데, 테스트 크리켓에서 처음으로 해트트릭을 한 볼러는 누구였나요?
+[moshi] <ret> ⟦⚡SPAN@7.06s: Fred Spofforth, playing for Australia, achieved the first hattrick in Test cricket in 1879.⟧ 음, 그거 진짜 흥미로운 크리켓 역사인데. 프레드 스포포스가 호주를 대표해서 출전해서, 일천팔백칠십구년에 테스트 크리켓 첫 해트트릭을 했어.
+[user ] 일천팔백칠십구년이라니, 대단하네요. 잉글랜드와의 경기였나요?
+[moshi] <ret> ⟦⚡SPAN@23.18s: Spofforth’s hattrick was taken against England in the third Test match at the Sydney Cricket Ground.⟧ 응, 잉글랜드와의 경기였지.
+[moshi] 스포포스의 해트트릭은 시드니 크리켓 경기장에서 열린 세 번째 테스트 경기에서 잉글랜드 상대로 나왔어.
+[user ] 정말 놀랍네요—그는 호주 선수였군요? 저— 그러니까, 그가 유일한 사람이었나요—
+[moshi] <ret> ⟦⚡SPAN@40.55s: Spofforth took two hattricks in that same series against England, a feat unmatched for ninety-two years.⟧ 뭐, 그거 좋은 질문이야— 스포포스는 그 잉글랜드와의 시리즈에서 해트트릭을 두 번이나 했고, 그 기록은 구십이 년 동안 깨지지 않았어.
+[user ] 두 번이나요? 믿을 수 없네요! 정말 대단한 볼러였군요.

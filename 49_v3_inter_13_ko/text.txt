@@ -1,15 +1,11 @@
 v3_inter_13_ko src=nq style=v3
-SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 언제 수트 시즌 세븐 나머지 편이 나와?
-[moshi] <ret> 그거 많이 ⟦⚡SPAN@3.97s: The remaining episodes of Suits season seven premiered on April 18, 2018.⟧ 궁금해 하더라. 수트 시즌 세븐 나머지 편은 2018년 4월 18일부터 방영을 시작했어.
-[user ] 아, 4월 18일… 그럼 벌써 좀 됐네.
-[moshi] 그렇지. 시간 진짜 빠르지 않냐?
-[user ] 아— 스트리밍으로 볼 수 있어 지금? [sigh]
-[moshi] <ret> 잠깐만. 정보 ⟦⚡SPAN@17.97s: Suits season seven is available for streaming on Netflix.⟧ 찾아볼게. 수트 시즌 세븐은 지금 넷플릭스에서 스트리밍으로 볼 수 있어. 괜찮은 선택이라고 생각해.
-[user ] 그래. 근데 다른 플랫폼에도 있어?
-[moshi] <ret> 볼 수 ⟦⚡SPAN@26.46s: Suits is also available for purchase on platforms like Amazon Prime Video and Google Play.⟧ 있는 방법이 꽤 있어.
-[moshi] 아마존 프라임 비디오나 구글 플레이에서도 에피소드나 시즌 전체를 구매할 수 있어.
-[user ] 음, 알아둬야겠다. 고마워!
-[moshi] 천만에. 그 드라마는 그 시대 상업적 이해관계를 반영하는 흥미로운 권력 관계를 보여줘.
+[user ] 뭐 먹을 거 있어? 노스캐롤라이나는 어떤 음식으로 유명해?
+[moshi] <ret> ⟦⚡SPAN@3.80s: North Carolina is known for its pork barbecue and bacon.⟧ 음, 노스캐롤라이나는 주로 돼지고기 바비큐랑 베이컨으로 유명해요.
+[user ] 아, 바비큐, 그렇지. 해산물은 어때? 거기도 많이 먹어?
+[moshi] 해안가에서는 해산물도 인기가 많아요.
+[user ] [laugh] 응, 당연하지. 근데 주에서 공식적으로 지정한 토스트는 뭐야? 있잖아?
+[moshi] <ret> ⟦⚡SPAN@17.37s: The official state toast of North Carolina is the Cheerwine soft drink.⟧ 뭐, 좀 더 자세한 걸 물어보시는군요— 노스캐롤라이나의 공식 주 토스트는, 놀랍게도 치어와인이라는 탄산음료예요. 저는 좀 달다고 생각하는데, 사람들은 좋아하더라고요.
+[user ] 치어와인? 그거… 의외네. 흐음.

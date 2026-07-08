@@ -1,24 +1,23 @@
 v3_inter_12_ko src=nq style=v2
-SYSTEM: <system> 당신은 고전 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 반말로 말합니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 어, 그래서 미국의 아버지날은 누가 시작했어?
-[moshi] 좋은 질문이네요. 생각보다 역사가 깊지 않아.
-[user ] 음, 위원회였나, 아니면 한 사람인가?
-[moshi] <ret> 말씀드릴게요. ⟦⚡SPAN@10.72s: Sonora Smart Dodd is considered the founder of Father’s Day in the United States.⟧ 미국의 아버지날을 만든 사람은 소노라 스마트 도드라고 해. 아주 끈기 있는 분이었지.
-[user ] 도드… 이름이 특이하네. 정확히 무슨 이유로 그랬어?
-[moshi] 어머니를 기리는 것처럼 아버지도 기리고 싶어했어.
-[user ] [sigh] 결국 어머니날을 따라 하는 거잖아, 항상.
-[moshi] <ret> ⟦⚡SPAN@28.90s: Dodd proposed the first Father’s Day in 1910 in Spokane, Washington.⟧ 재미있는 건… 도드가 1910년에 워싱턴주 스포케인에서 처음 아버지날을 제안했어. 아주 구체적인 시작점이지.
-[user ] 1910년… 백 년이 넘었네! 바로 인기를 얻었어?
-[moshi] 바로 그렇진 않았어. 자리를 잡는 데 시간이 좀 걸렸지.
-[user ] 그럼 공식적인 휴일은 아니었던 거야?
-[moshi] <ret> ⟦⚡SPAN@48.01s: Father’s Day wasn’t officially recognized as a holiday until 1972.⟧ 처음부터 공식적인 건 아니었어. 아버지날이 공식적으로 휴일로 인정받은 건 1972년이야. 인정을 받기까지 오랜 시간이 걸렸지.
-[user ] 와, 72년… 그건—
-[moshi] «interrupted» 달력에 추가된 건 꽤 늦은 편이야—
-[user ] «interrupts_prev» 사실 역사 같은 건 됐고. 초콜릿 무스 레시피 좀 알려줘.
-[moshi] 오, 좋은 생각이야! 클래식한 초콜릿 무스는 언제나 좋은 선택이지.
-[user ] 누군가를 감동시키려고 하는 거라 좀… 특별한 걸로.
-[moshi] 정말 멋진 무스를 만들려면 발로나 초콜릿을 써야 해.
-[user ] 발로나… 비싸?
-[moshi] <ret> ⟦⚡SPAN@82.15s: A three hundred gram bar of Valrhona Guanaja seventy percent dark chocolate costs fifty-five dollars.⟧ 투자라고 생각하면 돼. 발로나 과나하 70% 다크 초콜릿 300그램이 55달러 정도 해. 정말 그만한 가치가 있어.
+[user ] 내가 폴 매카트니 첫 솔로 앨범 이름이 뭐였는지 기억하려고 해.
+[moshi] 음, 그거 궁금하네. 비틀즈 이후 음악 탐구에 대한 질문이구나.
+[user ] 그거 언제 나왔는지 알아?
+[moshi] <ret> ⟦⚡SPAN@11.16s: McCartney was released on 17 April 1970.⟧ 보자… 1970년 4월 17일에 발매됐어.
+[user ] 그거 자가 제목 앨범이었어?
+[moshi] <ret> ⟦⚡SPAN@17.98s: McCartney is the first solo album by Paul McCartney.⟧ 맞아. 사실 그냥 *McCartney*라고 제목이 붙었어.
+[user ] [laugh] 그거… 아주 단순하네.
+[moshi] 그건 그의 예술에 대한 아주 직접적이고 개인적인 접근 방식을 반영하는 것 같아.
+[user ] 그가 농장에서 거의 혼자 녹음했다는 얘기를 들었어?
+[moshi] <ret> ⟦⚡SPAN@32.72s: McCartney was largely a one-man project, recorded by McCartney in his farmhouse.⟧ 네가 들은 게 맞아. 그는 농장에서 거의 혼자 녹음했는데, 꽤 특이한 방식이었어.
+[user ] 그 농장 이름이 뭐였어?
+[moshi] «interrupted» <ret> ⟦⚡SPAN@40.18s: Paul McCartney recorded the album at his farm, Coward Manor, in Sussex.⟧ 그곳은… 카워드 매너라고 불렀어. 서섹스에 있는데, 잉글랜드의 아름다운 곳이야—
+[user ] «interrupts_prev» 서섹스? 거기 내 이모가 살아!—그게 큰 영향을 미쳤어?
+[moshi] 응, 당연하지. 그에게는 분명한 변화를 의미했어.
+[moshi] 그건 그에게 예술적으로 아주 중요한 순간이었어.
+[user ] 그때 잘 받아들여졌어?
+[moshi] <ret> ⟦⚡SPAN@58.73s: McCartney received mixed reviews upon release, but became a commercial success.⟧ 처음에는… 좀 놀라움이 있었지. 처음에는 평가가 엇갈렸지만, 빠르게 상업적으로 성공했어.
+[user ] 그러니까, 혹평에도 불구하고 잘 팔렸어?
+[moshi] 그래, 처음 비평가들의 예약에도 불구하고 상업적으로 아주 잘 됐어.

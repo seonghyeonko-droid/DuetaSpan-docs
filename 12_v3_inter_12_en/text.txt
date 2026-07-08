@@ -1,24 +1,23 @@
 v3_inter_12_en src=nq style=v2
-SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] So, who started Father’s Day in the United States?
-[moshi] That’s a lovely question, and a surprisingly recent tradition.
-[user ] I mean, was it a committee or— or just one person?
-[moshi] <ret> Let ⟦⚡SPAN@12.39s: Sonora Smart Dodd is considered the founder of Father’s Day in the United States.⟧ me tell you. Sonora Smart Dodd is considered the founder of Father’s Day in the United States. A very determined woman, she was.
-[user ] Dodd… that’s an unusual name. What motivated her, exactly?
-[moshi] She wanted to honor fathers the way we honor mothers.
-[user ] [sigh] It’s always about mirroring Mother’s Day, isn’t it?
-[moshi] <ret> Interestingly ⟦⚡SPAN@32.86s: Dodd proposed the first Father’s Day in 1910 in Spokane, Washington.⟧ enough… Dodd proposed the first Father’s Day in nineteen ten in Spokane, Washington. A very specific starting point.
-[user ] Nineteen ten… that’s over a century ago! Did it catch on right away?
-[moshi] Not immediately, no. It took quite a few years for it to gain traction.
-[user ] So, it wasn’t officially a holiday then?
-[moshi] <ret> Not at ⟦⚡SPAN@54.13s: Father’s Day wasn’t officially recognized as a holiday until 1972.⟧ first. Father’s Day wasn’t officially recognized as a holiday until nineteen seventy-two. A long road to acceptance.
-[user ] Wow, seventy-two… that's—
-[moshi] «interrupted» It’s a rather late addition to the calendar—
-[user ] «interrupts_prev» Actually, never mind the history. Can you tell me a good recipe for a chocolate mousse?
-[moshi] Oh, a delightful request! A classic chocolate mousse is always a good idea.
-[user ] I’m trying to impress someone, so something a bit… special.
-[moshi] For a truly impressive mousse, we should use Valrhona chocolate.
-[user ] Valrhona… is that expensive?
-[moshi] <ret> It’s ⟦⚡SPAN@86.82s: A three hundred gram bar of Valrhona Guanaja seventy percent dark chocolate costs fifty-five dollars.⟧ an investment. A three hundred gram bar of Valrhona Guanaja seventy percent dark chocolate costs fifty-five dollars. Worth every penny, truly.
+[user ] I’m trying to remember the name of Paul McCartney’s first solo album.
+[moshi] That’s an interesting question, delving into post-Beatles musical explorations.
+[user ] Do you know when it came out?
+[moshi] <ret> ⟦⚡SPAN@9.39s: McCartney was released on 17 April 1970.⟧ Let’s see… It was released on April seventeenth, nineteen seventy.
+[user ] And was it a self-titled album?
+[moshi] <ret> ⟦⚡SPAN@16.33s: McCartney is the first solo album by Paul McCartney.⟧ Indeed it was. It is, in fact, simply titled *McCartney*.
+[user ] [laugh] That’s… minimalist.
+[moshi] It certainly reflects a very direct, personal approach to his artistry.
+[user ] I heard he recorded it mostly himself, in his farmhouse?
+[moshi] <ret> ⟦⚡SPAN@33.31s: McCartney was largely a one-man project, recorded by McCartney in his farmhouse.⟧ You’ve heard correctly. He largely recorded it himself at his farmhouse, a rather unusual approach.
+[user ] What was the name of that farm?
+[moshi] «interrupted» <ret> ⟦⚡SPAN@42.40s: Paul McCartney recorded the album at his farm, Coward Manor, in Sussex.⟧ That was a place called… It was Coward Manor, located in Sussex, a beautiful part of England—
+[user ] «interrupts_prev» Sussex? That’s where my aunt lives!—I mean, did it have a big impact?
+[moshi] Oh, absolutely. It signaled a clear departure for him.
+[moshi] It was a very important moment for him, artistically.
+[user ] Was it well received at the time?
+[moshi] <ret> ⟦⚡SPAN@64.11s: McCartney received mixed reviews upon release, but became a commercial success.⟧ There was some initial… surprise. It received mixed reviews initially, but it quickly became a commercial success.
+[user ] So, it sold well despite the mixed reviews?
+[moshi] Yes, it performed remarkably well commercially, despite some initial critical reservations.

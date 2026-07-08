@@ -1,51 +1,51 @@
 # v3_inter_12_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: So, who started Father’s Day in the United States?
-     3.57s  agent 발화 시작: That’s a lovely question, and a surprisingly recent traditio
-     3.57s  user  발화 끝
-     7.14s  user  발화 시작: I mean, was it a committee or— or just one person?
-     7.14s  agent 발화 끝
-    11.51s  agent 발화 시작: <ret> Let me tell you. Sonora Smart Dodd is considered the f
-    11.51s  <ret> 발화 (turn3 첫 프레임)
-    11.51s  user  발화 끝
-    12.39s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.59s]: Sonora Smart Dodd is considered the founder of Father’s Day in the Uni
-    21.03s  user  발화 시작: Dodd… that’s an unusual name. What motivated her, exactly?
-    21.03s  agent 발화 끝
-    24.60s  agent 발화 시작: She wanted to honor fathers the way we honor mothers.
-    24.60s  user  발화 끝
-    28.57s  user  발화 시작: [sigh] It’s always about mirroring Mother’s Day, isn’t it?
-    28.57s  agent 발화 끝
-    32.14s  agent 발화 시작: <ret> Interestingly enough… Dodd proposed the first Father’s
-    32.14s  <ret> 발화 (turn7 첫 프레임)
-    32.14s  user  발화 끝
-    32.86s  ⚡SPAN 주입 [d'=0.72s / d_lead=0.79s]: Dodd proposed the first Father’s Day in 1910 in Spokane, Washington.
-    39.68s  user  발화 시작: Nineteen ten… that’s over a century ago! Did it catch on rig
-    39.68s  agent 발화 끝
-    44.84s  agent 발화 시작: Not immediately, no. It took quite a few years for it to gai
-    44.84s  user  발화 끝
-    50.39s  user  발화 시작: So, it wasn’t officially a holiday then?
-    50.39s  agent 발화 끝
-    53.17s  agent 발화 시작: <ret> Not at first. Father’s Day wasn’t officially recognize
-    53.17s  <ret> 발화 (turn11 첫 프레임)
-    53.17s  user  발화 끝
-    54.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.19s]: Father’s Day wasn’t officially recognized as a holiday until 1972.
-    60.71s  user  발화 시작: Wow, seventy-two… that's—
-    60.71s  agent 발화 끝
-    61.90s  agent 발화 시작: It’s a rather late addition to the calendar—
-    61.90s  user  발화 끝
-    65.07s  user  발화 시작: Actually, never mind the history. Can you tell me a good rec
-    65.07s  agent 발화 끝
-    71.42s  agent 발화 시작: Oh, a delightful request! A classic chocolate mousse is alwa
-    71.42s  user  발화 끝
-    76.58s  user  발화 시작: I’m trying to impress someone, so something a bit… special.
-    76.58s  agent 발화 끝
-    80.55s  agent 발화 시작: For a truly impressive mousse, we should use Valrhona chocol
-    80.55s  user  발화 끝
-    84.51s  user  발화 시작: Valrhona… is that expensive?
-    84.51s  agent 발화 끝
-    86.10s  agent 발화 시작: <ret> It’s an investment. A three hundred gram bar of Valrho
-    86.10s  <ret> 발화 (turn19 첫 프레임)
-    86.10s  user  발화 끝
-    86.82s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.19s]: A three hundred gram bar of Valrhona Guanaja seventy percent dark choc
-    94.83s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to remember the name of Paul McCartney’s first so
+     3.44s  agent 발화 시작: That’s an interesting question, delving into post-Beatles mu
+     3.52s  user  발화 끝
+     8.03s  user  발화 시작: Do you know when it came out?
+     8.20s  agent 발화 끝
+     8.99s  <ret> 발화 (turn3 첫 프레임)
+     9.39s  ⚡SPAN 주입 [d'=0.40s / d_lead=0.93s]: McCartney was released on 17 April 1970.
+     9.51s  agent 발화 시작: <ret> Let’s see… It was released on April seventeenth, ninet
+     9.64s  user  발화 끝
+    14.18s  agent 발화 끝
+    14.31s  user  발화 시작: And was it a self-titled album?
+    15.45s  <ret> 발화 (turn5 첫 프레임)
+    16.00s  agent 발화 시작: <ret> Indeed it was. It is, in fact, simply titled *McCartne
+    16.19s  user  발화 끝
+    16.33s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.21s]: McCartney is the first solo album by Paul McCartney.
+    20.03s  agent 발화 끝
+    21.04s  user  발화 시작: [laugh] That’s… minimalist.
+    23.63s  user  발화 끝
+    23.81s  agent 발화 시작: It certainly reflects a very direct, personal approach to hi
+    28.86s  agent 발화 끝
+    28.90s  user  발화 시작: I heard he recorded it mostly himself, in his farmhouse?
+    32.31s  <ret> 발화 (turn9 첫 프레임)
+    32.91s  agent 발화 시작: <ret> You’ve heard correctly. He largely recorded it himself
+    32.92s  user  발화 끝
+    33.31s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.42s]: McCartney was largely a one-man project, recorded by McCartney in his 
+    40.00s  agent 발화 끝
+    40.32s  user  발화 시작: What was the name of that farm?
+    41.44s  <ret> 발화 (turn11 첫 프레임)
+    42.04s  agent 발화 시작: <ret> That was a place called… It was Coward Manor, located 
+    42.11s  user  발화 끝
+    42.40s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.04s]: Paul McCartney recorded the album at his farm, Coward Manor, in Sussex
+    48.17s  user  발화 시작: Sussex? That’s where my aunt lives!—I mean, did it have a bi
+    48.99s  agent 발화 끝
+    52.66s  user  발화 끝
+    52.68s  agent 발화 시작: Oh, absolutely. It signaled a clear departure for him.
+    56.84s  agent 발화 시작: It was a very important moment for him, artistically.
+    57.04s  agent 발화 끝
+    60.53s  agent 발화 끝
+    61.75s  user  발화 시작: Was it well received at the time?
+    63.11s  <ret> 발화 (turn16 첫 프레임)
+    63.71s  agent 발화 시작: <ret> There was some initial… surprise. It received mixed re
+    63.83s  user  발화 끝
+    64.11s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.44s]: McCartney received mixed reviews upon release, but became a commercial
+    72.01s  agent 발화 끝
+    72.72s  user  발화 시작: So, it sold well despite the mixed reviews?
+    75.43s  agent 발화 시작: Yes, it performed remarkably well commercially, despite some
+    75.50s  user  발화 끝
+    81.68s  agent 발화 끝

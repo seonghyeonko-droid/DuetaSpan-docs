@@ -1,27 +1,25 @@
 # v3_chain_05_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I am looking for war movies.
-     2.51s  agent 발화 시작: <ret> Let’s see what’s available. Those films— “Saving Priva
-     2.51s  <ret> 발화 (turn1 첫 프레임)
-     2.51s  user  발화 끝
-     3.39s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.68s]: (tool result: title=“Saving Private Ryan”, year=1998, genre=“War”, rat
-    10.48s  user  발화 시작: What’s the runtime of “Apocalypse Now”?
-    10.48s  agent 발화 끝
-    12.99s  agent 발화 시작: <ret> That’s a classic film. “Apocalypse Now” has a runtime 
-    12.99s  <ret> 발화 (turn3 첫 프레임)
-    12.99s  user  발화 끝
-    13.99s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.68s]: (tool result: title=“Apocalypse Now”, year=1979, genre=“War”, rating=8
-    18.86s  user  발화 시작: Can you find showtimes for it near me?
-    18.86s  agent 발화 끝
-    22.21s  agent 발화 시작: <ret> Certainly. Showtimes for “Apocalypse Now” are at 2:15 
-    22.21s  <ret> 발화 (turn5 첫 프레임)
-    22.21s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.42s]: (tool result: movie_title=“Apocalypse Now”, theater=“AMC Boston Common
-    22.21s  user  발화 끝
-    30.59s  user  발화 시작: Reserve a ticket for the 7 PM showing at Regal Fenway.
-    30.59s  agent 발화 끝
-    35.20s  agent 발화 시작: <ret> Consider it done. Your ticket for “Apocalypse Now” at 
-    35.20s  <ret> 발화 (turn7 첫 프레임)
-    35.20s  user  발화 끝
-    35.84s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.26s]: (tool result: movie_title=“Apocalypse Now”, theater=“Regal Fenway”, ti
-    43.58s  agent 발화 끝
+     0.00s  user  발화 시작: I want to share my location with Frank Martinez.
+     2.46s  <ret> 발화 (turn1 첫 프레임)
+     2.62s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.39s]: (tool result) Location sharing request sent to Frank Martinez.
+     2.95s  user  발화 끝
+     3.05s  agent 발화 시작: <ret> Certainly. I’ve sent a location sharing request to Fra
+     6.98s  agent 발화 끝
+     7.10s  user  발화 시작: Uh, great. How long does that last?
+     8.56s  <ret> 발화 (turn3 첫 프레임)
+     9.16s  agent 발화 시작: <ret> That’s a good question. Your location sharing with Fra
+     9.17s  user  발화 끝
+     9.56s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.48s]: (tool result) Location sharing will expire in one hour.
+    14.71s  agent 발화 끝
+    15.31s  user  발화 시작: Okay, can we extend that to four hours?
+    17.18s  <ret> 발화 (turn5 첫 프레임)
+    17.18s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.40s]: (tool result) Location sharing duration extended to four hours.
+    17.79s  agent 발화 시작: <ret> Absolutely. I’ve extended the location sharing with Fr
+    17.90s  user  발화 끝
+    22.43s  user  발화 시작: Perfect, thanks!
+    22.60s  agent 발화 끝
+    23.46s  agent 발화 시작: You’re very welcome. It's always good to stay connected, esp
+    23.57s  user  발화 끝
+    30.67s  agent 발화 끝

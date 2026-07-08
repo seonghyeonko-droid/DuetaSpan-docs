@@ -2,37 +2,23 @@ v3_rag_30_en src=nq style=v3
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] So, I was just wondering… what season is when Calls the Heart on? I'm trying to catch up.
-[moshi] It's a lovely show, isn't it? Really captures a sense of community.
-[user ] Yeah, it's pretty good. But seriously, what season are we on now?
-[moshi] <ret> ⟦⚡SPAN@17.25s: When Calls the Heart is currently on its tenth season, which premiered in March 2023.⟧ Let’s see… The show is currently in its tenth season, having premiered in March of twenty twenty-three.
-[user ] Tenth! Wow, that's a lot. Uh, my neighbor just got a new puppy, a golden retriever.
-[moshi] Oh, golden retrievers are wonderful dogs—so full of energy.
-[user ] They are. So, back to the show… I remember it being on for a while. What about the sixth season?
-[moshi] <ret> ⟦⚡SPAN@42.40s: Season six of When Calls the Heart originally aired from February 25 to May 6, 2019.⟧ Thinking back… Season six originally aired between February twenty-fifth and May sixth, twenty nineteen.
-[user ] Twenty nineteen… that feels like ages ago. I need to get back to watching.
-[moshi] It does go by quickly, doesn’t it? Time seems to accelerate with each passing year.
-[user ] It really does. Did anything… big happen in season six?
-[moshi] <ret> Some ⟦⚡SPAN@64.16s: Season six of When Calls the Heart featured the departure of Daniel Lissing, who played Mountie Jack Thornton.⟧ significant changes… Season six saw the departure of Daniel Lissing, the actor who portrayed Mountie Jack Thornton.
-[user ] Oh, no! I liked Jack! That's a shame.
-[moshi] Losing a favorite character is always difficult—it disrupts the established dynamic.
-[user ] It really does. So, after that, did the show change a lot?
-[moshi] The series adapted, certainly. It’s interesting to see how narratives evolve.
-[user ] True. What about season seven? When did that air?
-[moshi] <ret> Let me ⟦⚡SPAN@92.09s: Season seven of When Calls the Heart premiered on February 24, 2020, and concluded on May 17, 2020.⟧ recall… Season seven aired from February twenty-fourth to May seventeenth, twenty twenty.
-[user ] Okay, so not too long after season six. Good to know.
-[moshi] Consistency can be reassuring for viewers—a predictable rhythm to the storytelling.
-[user ] I guess so. What was happening with the show in twenty twenty-three?
-[moshi] <ret> That year ⟦⚡SPAN@111.39s: In 2023, When Calls the Heart's tenth season experienced production delays due to weather conditions in Britis⟧ was quite active… The tenth season experienced production delays in twenty twenty-three due to weather in British Columbia.
-[user ] Oh, that’s too bad. Weather can be a real pain.
-[moshi] It certainly can—particularly when it impacts outdoor filming schedules.
-[user ] So, ten seasons… that’s impressive. Is it still going?
-[moshi] Yes, thankfully. It remains a popular program with a dedicated following.
-[user ] Good. I'm glad to hear it. I'm thinking of getting into a new hobby, maybe pottery.
-[moshi] Pottery is a wonderfully tactile art form—very grounding, and creatively fulfilling.
-[user ] Yeah, that's what I'm hoping for. So, to be sure, season ten is the latest?
-[moshi] <ret> ⟦⚡SPAN@151.62s: When Calls the Heart season 11 is confirmed to premiere in February 2024.⟧ As of now… Season eleven of When Calls the Heart is scheduled to premiere in February twenty twenty-four.
-[user ] Oh, eleven already! That’s fantastic.
-[moshi] The longevity of the show is a testament to its enduring appeal.
-[user ] It really is. I'm going to have to binge-watch.
-[moshi] Binge-watching can be very satisfying—though perhaps pace yourself a little.
+[user ] So, I was reading about old boats… uh, and I wondered, when was the steam-powered paddle boat actually invented?
+[moshi] That’s a fascinating question, tracing the origins of marine technology.
+[user ] Yeah, it just seemed like it had to happen eventually, you know? But when *did* it happen?
+[moshi] <ret> ⟦⚡SPAN@18.82s: The first steam-powered paddle boat was invented in 1783 by Marquis de Jouffroy d'Abbans in France.⟧ Let me share that with you. The very first steam-powered paddle boat was invented in seventeen eighty-three by a Marquis de Jouffroy d'Abbans.
+[user ] Wow, seventeen eighty-three! That’s… earlier than I thought. Was he a naval engineer or something?
+[moshi] He was an inventor with a broad range of interests, actually.
+[user ] Interesting. Was it a big boat? I mean, did it actually *do* anything useful?
+[moshi] <ret> ⟦⚡SPAN@43.09s: Jouffroy’s boat, the *Pyramide*, was twelve meters long and successfully traveled against the current on the S⟧ It was a relatively modest beginning. The *Pyramide* was twelve meters long and successfully navigated against the current on the Saône river.
+[user ] Twelve meters… okay, not huge. So, the Saône river is in France, right? I’m terrible with geography.
+[moshi] It is, a major tributary of the Rhône.
+[user ] Right, right. Hmm. Did anyone else try building steam boats around the same time?
+[moshi] <ret> ⟦⚡SPAN@67.52s: William Symington built a steam boat for the Forth and Clyde Canal in 1802, demonstrating its practical use fo⟧ Others were experimenting, certainly. William Symington built a steam boat in eighteen oh two for towing on the Forth and Clyde Canal.
+[user ] Towing, huh? So, not for passengers yet? That’s… practical, I guess.
+[moshi] It was a crucial step in demonstrating the technology’s potential.
+[user ] [sigh] It’s amazing how long it takes to get something like that working properly.
+[moshi] <ret> ⟦⚡SPAN@90.19s: Robert Fulton received a U.S. patent for a commercially successful steamboat, the *Clermont*, in 1807.⟧ Early engineering faced many challenges. Robert Fulton received a U.S. patent for the *Clermont* in eighteen oh seven, making it commercially successful.
+[user ] Eighteen oh seven… so, Fulton was a bit later then. Did his boat look much different?
+[moshi] It was a more refined design, intended for passenger travel.
+[user ] That makes sense. So, did Jouffroy get any credit for being first, or did Fulton steal the show?
+[moshi] <ret> ⟦⚡SPAN@118.56s: Though Jouffroy pioneered the steam boat, Fulton’s *Clermont* is often credited with initiating steam navigati⟧ History is often complicated. Jouffroy pioneered the steam boat, but Fulton’s *Clermont* initiated steam navigation in the United States.

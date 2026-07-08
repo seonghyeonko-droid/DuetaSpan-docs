@@ -1,13 +1,13 @@
 v3_fake__17_ko src=nq style=v1
-SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사학자 오콘크워 교수입니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 어… 그래서 궁금했는데, 음속은 대체 뭘로 정해지는 거야?
-[moshi] 좋은 질문인데, 그냥 ‘공기’라고만 하긴 좀 복잡해, 알지?
-[user ] 아, 그렇지. 온도 때문인가 싶기도 하고.
-[moshi] <ret> 음, ⟦⚡SPAN@13.59s: The speed of sound in air depends on the medium’s temperature, humidity, and density.⟧ 사실 좀 복잡하거든. 공기 중의 음속은 온도, 습도, 그리고 밀도에 따라 달라져.
-[user ] 습도까지 있다고? 그거… 좀 놀랍네.
-[moshi] <ret> 좀 ⟦⚡SPAN IRRELEVANT@23.89s: (tool result) Current conditions in Honolulu, Hawaii: temperature 28 degrees Celsius, wind speed 15 kilometers⟧ 헷갈릴 수도 있는데, 그래도 영향을 줘.
-[user ] 어… 밀도가 큰 영향을 주어?
-[moshi] <ret> 밀도는 ⟦⚡SPAN@30.75s: Higher density generally increases the speed of sound, assuming temperature remains constant.⟧ 확실히 중요해. 온도가 일정할 때 밀도가 높을수록 음속이 빨라지는 경향이 있어. 다 연결되어 있는 거지, 진짜.
-[user ] 아, 그런가 봐. 고마워, 바스케스 박사.
+[user ] 궁금한 게 있었는데, 대학 농구에서 3점 라인을 언제부터 사용했는지 궁금해요.
+[moshi] 아, 그런 질문도 하시네요. 경기에서 새로운 시도를 한 역사를 찾아볼까요.
+[moshi] <ret> ⟦⚡SPAN@12.58s: The three-point line was officially adopted by NCAA college basketball for the 1980–81 season.⟧ 역사에 대한 정보를 드릴게요. 1981 시즌에 공식적으로 도입되었는데, 사실 그렇게 오래된 변화는 아니에요.
+[user ] 아, 와, 생각보다 그렇게 오래 안 됐네요? 더 오래됐을 줄 알았어요.
+[moshi] 맞아요. 전략과 경기 방식에 큰 변화를 가져온 거죠.
+[user ] 그럼 1981년 이전에는 2점슛이랑 자유투만 있었던 건가요?
+[moshi] <ret> ⟦⚡SPAN@35.55s: Prior to the 1980–81 season, all field goals in NCAA basketball were worth two points.⟧ 네, 맞습니다. 1981년 이전에는 코트에서 성공한 모든 슛은 2점으로 계산되었어요. 간단하죠.
+[user ] 흠. 무슨 이유로 그런 변화가 있었는지 궁금하네요.
+[moshi] 아, 한숨이 나오네요. 전술이 발전하고 좀 더 역동적인 경기를 만들고 싶어서 그런 것 같아요.

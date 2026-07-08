@@ -1,20 +1,18 @@
 v3_rag_31_ko src=hotpotqa style=v1
-SYSTEM: <system> 저는 신경학자 사토 박사이며, 기억이 어떻게 작동하는지에 매료되어 있습니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 사용자: 친구랑 내기했는데, 툴이랑 캐피털 시티즈 둘 다 로스앤젤레스 출신이에요?
-[moshi] 모시: 그런 질문 많이 들어. 밴드 시작한 곳 찾기가 생각보다 어렵거든.
-[user ] 사용자: 음, 그냥 이 두 팀만 궁금해서요.
-[moshi] <ret> ⟦⚡SPAN@16.33s: Tool formed in Los Angeles, California in 1990; Capital Cities formed in Los Angeles, California in 2010.⟧ 모시(ret): 잠깐만… 툴이랑 캐피털 시티즈 둘 다 캘리포니아 로스앤젤레스에서 결성됐어.
-[user ] 사용자: 알겠습니다, 그럼 제가 이겼네요. 저… 장르가 비슷해요?
-[moshi] 모시: 별로 안 비슷해. 툴은 보통 프로그레시브 메탈이라고 하고, 캐피털 시티즈는 인디 팝이랑 댄스를 섞었어.
-[user ] 사용자: 그렇군요, 툴은 좀 더 무거운 느낌이 들었거든요.
-[moshi] 모시: [laugh] 무거운 게 걔네들 음악 특징이지. 구성이 엄청 복잡해.
-[user ] 사용자: 그럼, 프로그레시브 메탈이… 대체 무슨 뜻이에요?
-[moshi] <ret> 모시(ret): ⟦⚡SPAN@50.43s: Progressive metal is characterized by musical complexity, virtuosity, and often conceptual lyrics.⟧ 궁금하겠지. 프로그레시브 메탈은 곡에 복잡함, 기교, 그리고 개념적인 가사가 특징이야.
-[user ] 사용자: 알겠습니다, 그럼… 단순한 노래는 아니라는 거죠?
-[moshi] 모시: 그렇지. 보통 노래랑 다르게 뭔가 더 하려는 야심이 있어. 머리 쓰는 음악이지.
-[user ] 사용자: 음. 걔네들 음악에 사는 곳이 영향을 줬을까요?
-[moshi] 모시: 그럴 수도 있어. 로스앤젤레스는 다양한 음악이 섞여 있는 곳이라 실험적인 시도를 하기에 좋거든.
-[user ] 사용자: 네, 그런 것 같아요. 엄청 큰 도시잖아요.
-[moshi] 모시: 엄청 크고, 문화가 섞인 곳이야. 거기서 만들어진 예술 작품에 많이 드러나.
+[user ] 야, 스케넥터디 주변 고속도로 좀 알아보고 있는데.
+[moshi] 여행은 정말 좋지! 풍경 구경하기 딱 좋잖아, 그렇지?
+[user ] 어, 맞아, 완전. 146번 도로랑 890번 고속도로는 아는데, 스케넥터디를 지나는 다른 고속도로는 뭐가 있어?
+[moshi] <ret> ⟦⚡SPAN@15.11s: Interstate 90 passes through Schenectady, New York, connecting to Boston and Albany.⟧ 음… 잠깐만 찾아볼게… 스케넥터디에는 90번 고속도로도 지나가는데, 보스턴이랑 올버니랑 연결돼 있어.
+[user ] 아, 그래, 90번. 도움이 되네. 스케넥터디에 역사적으로 흥미로운 거 있어?
+[moshi] 실제로 꽤 풍부한 역사를 가진 도시야. 꽤 많은 일이 일어났거든.
+[user ] [궁금해] 구체적으로 뭔데? 기억에 남는 거라도?
+[moshi] <ret> ⟦⚡SPAN@37.74s: Schenectady was the site of a 1690 massacre during King William’s War, resulting in many deaths.⟧ 정말이지… 1690년에 윌리엄 왕 전쟁 중에 스케넥터디에서 학살이 일어났는데, 많은 사람들이 죽었어.
+[user ] 와, 학살이라니… 끔찍하네. 그때는 큰 마을이었어?
+[moshi] <ret> ⟦⚡SPAN@49.49s: By 1684, Schenectady contained approximately thirty houses and a church, representing a small colonial outpost⟧ 개발 중인 지역이었어… 1684년에 스케넥터디는 집 서른 채랑 교회 하나 있는 작은 식민지 개척지였어.
+[user ] 집 서른 채… 진짜 작네. 그래서 그때는 엄청 취약했겠네, 그렇지?
+[moshi] 그렇지. 새로운 땅에 있는 작은 마을은 항상 어려움에 직면하거든.
+[user ] 아— 좀 더 덜 끔찍한 역사적인 이야기는 없어? 긍정적인 거라도?
+[moshi] <ret> ⟦⚡SPAN@70.87s: Union College, founded in 1795, is located in Schenectady and is the oldest degree-granting higher education i⟧ 물론 있지! 1795년에 설립된 유니언 칼리지는 미국에서 학위를 수여하는 가장 오래된 대학이고 스케넥터디에 있어.

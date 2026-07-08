@@ -1,25 +1,40 @@
 v3_rag_28_cs src=nq style=v1
-SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사학자 오콘크워 교수입니다. 기본적으로 반말로 말합니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 어, 해리 포터 다시 읽었어 어젯밤에…
-[moshi] 좋은 시리즈지, 그렇지? 상상력이 엄청나잖아.
-[user ] 응, 진짜 그래. 누가 해리한테 자기가 마법사라고 처음 말해줬는지 기억하려고 했어.
-[moshi] <ret> 음, ⟦⚡SPAN@13.49s: Rubeus Hagrid is the first character to tell Harry Potter that he is a wizard.⟧ 좋은 질문인데. 해그리드가 해리의 열한 번째 생일에 그 소식을 전했어.
-[user ] 아, 맞아! 해그리드였지. 맨날 디테일은 까먹어.
-[moshi] 자세한 이야기라 그럴 수 있어. 작은 순간들이 잊혀지기 쉽지.
-[user ] 그렇지. 그리고 해그리드가 그 말 해주고 *다음에* 뭘 해?
-[moshi] <ret> 설명할 ⟦⚡SPAN@33.47s: Hagrid takes Harry to Diagon Alley to purchase school supplies and a wand.⟧ 게 좀 많았지. 해그리드는 해리를 데리고 학교 용품을 사러 다이애건 앨리로 갔어.
-[user ] 다이애건 앨리, 그렇지. 진짜 멋진 곳이야. 음, 해그리드가 호그와트 선생님이야?
-[moshi] 딱히 선생님은 아니고, 호그와트의 사육 담당자이자 마법 생물 돌보기를 가르쳐.
-[user ] 맞아, 마법 생물 돌보기. 그 수업은 항상… 재밌었지.
-[moshi] [laugh] 진짜 그랬잖아? 좀 혼란스러울 때도 있었고.
-[user ] 정말 그랬어. 그럼, 해그리드는… 정확히 어떤 생물이야?
-[moshi] <ret> 자주 ⟦⚡SPAN@64.79s: Rubeus Hagrid is a half-giant, the son of a giant and a human witch.⟧ 물어보는 질문이야. 해그리드 엄마는 마녀고, 아빠는 거인이었어.
-[user ] 하프 자이언트였구나! 뭔가 달랐다는 걸 알았어. 키가 엄청 크잖아.
-[moshi] 사람들 눈에 띄지. 엄청 큰 덩치에도 불구하고 마음이 착해.
-[user ] 그래. 어렸을 때… 좀 달랐다고 느꼈을까?
-[moshi] 다르다는 게 힘들었을 거라고 생각해. 특히 그 세계에서는.
-[user ] 응, 그렇지. 힘들었을 거야.
-[moshi] 사실 그 책에서 아주 아름답게 다루는 주제거든— 받아들이고 이해하는 것.
-[user ] 맞아. 정말 강력한 메시지야.
+[user ] 안녕. 천연가스에 대해 읽어봤는데… 복잡하더라. 대체 어디에서 나오는 거야?
+[moshi] 복잡한 주제긴 하지. 천연가스는 여러 기원을 가지고 있는데, 꽤 오래된 것들도 있어.
+[user ] 오래됐다고? 공룡 시대만큼 오래됐어?
+[moshi] 공룡이라고 하긴 좀 어렵고, 유기물이 중요해. 그거보다 조금 더 복잡해.
+[user ] 복잡하다니? 무슨 뜻이야? 결국 다 썩은 선사시대 생물 아니야?
+[moshi] <ret> ⟦⚡SPAN@27.13s: Coal beds contain substantial amounts of natural gas, formed from decayed plant matter over millions of years.⟧ 그 부분은 좀 짚고 넘어가야겠네. 석탄층에 있는 천연가스는 수백만 년에 걸쳐 식물 잔해에서 만들어져.
+[user ] 아, 식물도 있구나. 근데 기름이 더 중요하다고 생각했는데.
+[moshi] 기름하고 가스는 같이 발견되는 경우도 많지만, 기원은 조금 달라. 천연가스는 독립적인 기원을 가지고 있어.
+[user ] 독립적인 기원? 식물이 석탄으로 변하는 것 말고 또 뭐가 있어?
+[moshi] <ret> ⟦⚡SPAN@51.73s: Some natural gas is biogenic, created by the metabolic action of microorganisms on organic matter.⟧ 또 다른 중요한 출처가 있어. 생물 기원 천연가스는 미생물이 유기물에 작용해서 만들어져.
+[user ] 미생물? 세균 같은 거? 생각보다 안 예상했네.
+[moshi] 그렇지. 아주 작은 생명체가 지질학적 시간 규모에 얼마나 큰 영향을 미치는지 보여주는 증거야.
+[user ] 그러니까, 어떤 건 고대 식물이고, 어떤 건… 세균 똥이야?
+[moshi] [laugh] 꽤 재밌는 표현이네. 물론 과정은 더 복잡하지만, 본질은 맞아.
+[user ] 알았어, 알았어. 그럼 깊은 지하에서는? 그건 또 다른 건가?
+[moshi] <ret> ⟦⚡SPAN@83.30s: Thermogenic natural gas is formed deep underground from organic matter exposed to heat and pressure.⟧ 깊은 지하 가스는 기원이 달라. 열과 압력으로 유기물이 변해서 열생성 천연가스가 만들어져.
+[user ] 열과 압력… 그럼 바위에서 쥐어짜내는 건가?
+[moshi] 대충 맞아. 그런 조건에서 유기물은 수천 년에 걸쳐 가스로 변해.
+[user ] 수천 년… 그럼 모든 출처가 엄청 오래됐다는 거야?
+[moshi] 맞아. 수백만 년에 걸쳐 일어나는 과정을 말하는 거야. 천천히 축적되는 거지.
+[user ] 생각해보면 정말 놀랍다.
+[moshi] 그렇지. 지구 안에 담긴 깊은 역사를 보여주는 것 같아. 정말 흥미로운 연구 분야야.
+[user ] 이런 고대 가스랑 아프리카 무역로가 무슨 상관이 있어?
+[moshi] <ret> ⟦⚡SPAN@118.30s: The ancient Kingdom of Ghana controlled extensive salt and gold trade routes, influencing regional power dynam⟧ 실제로 흥미로운 연결고리가 있어. 가나 왕국은 소금과 금 무역로를 장악해서 권력에 영향을 미쳤어.
+[user ] 소금과 금? 그게 가스랑 무슨 상관이야?
+[moshi] 소금에 대한 수요와 소금을 얻는 방법이 가스 샘 근처의 정착 패턴에 영향을 줬어.
+[user ] 가스 샘? 사람들이 그냥 땅에서 가스가 솟아오르는 걸 발견했다는 거야?
+[moshi] <ret> ⟦⚡SPAN@138.71s: Ancient Egyptians utilized natural gas seeps for burning in religious ceremonies as early as 1500 BCE.⟧ 맞아, 천연가스 샘은 잘 알려져 있었어. 고대 이집트인들은 기원전 1500년경 종교 의식에서 샘에서 솟아오르는 천연가스를 태웠어.
+[user ] 와. 진짜 오래됐네. 수천 년 전에 가스를 태웠다고.
+[moshi] 정말 고대에도 인간의 독창성과 관찰력이 뛰어났다는 걸 보여주는 증거야.
+[user ] 그들은 기름을 찾은 게 아니라 그냥… 불을 찾은 거야?
+[moshi] 주로 불이었지. 물론 그 구성에 대한 이해는 훨씬 나중에 온 거지만.
+[user ] 우리가 얼마나 오랫동안 그것과 상호 작용해 왔는지 생각하면 놀라워.
+[moshi] 그렇지. 인류와 지구 자원 간의 오랜 관계를 강조하는 것 같아.
+[user ] 땅속에 뭐가 있는지 뿐만 아니라, 사람들이 과거에 어떻게 그것과 함께 살았는지도 중요한 것 같아.
+[moshi] 맞아. 지질학적 이야기와 인간 이야기는 불가분의 관계에 있는 것 같지 않아?

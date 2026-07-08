@@ -1,39 +1,39 @@
 # v3_rag_31_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I’m trying to settle a bet with a friend. Are Tool and Capit
-     7.55s  agent 발화 시작: That’s a common point of confusion, actually. Band origins c
-     7.55s  user  발화 끝
-    14.25s  user  발화 시작: Well, yeah, it’s just these two…
-    14.25s  agent 발화 끝
-    16.77s  agent 발화 시작: <ret> Let’s see… Both Tool and Capital Cities were indeed fo
-    16.77s  <ret> 발화 (turn3 첫 프레임)
-    16.77s  user  발화 끝
-    17.17s  ⚡SPAN 주입 [d'=0.40s / d_lead=0.84s]: Tool formed in Los Angeles, California in 1990; Capital Cities formed 
-    22.64s  user  발화 시작: Okay, good. So I win. Um… what about their genres, though? A
-    22.64s  agent 발화 끝
-    28.50s  agent 발화 시작: Not particularly. Tool is generally considered progressive m
-    28.50s  user  발화 끝
-    35.21s  user  발화 시작: That makes sense, I guess. I— I mean, I always thought Tool 
-    35.21s  agent 발화 끝
-    41.92s  agent 발화 시작: [laugh] Heaviness is definitely a hallmark of their sound. T
-    41.92s  user  발화 끝
-    48.21s  user  발화 시작: So, progressive metal… what does that even *mean*, really?
-    48.21s  agent 발화 끝
-    51.98s  agent 발화 시작: <ret> It’s a fascinating question. Progressive metal feature
-    51.98s  <ret> 발화 (turn9 첫 프레임)
-    51.98s  user  발화 끝
-    52.98s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.68s]: Progressive metal is characterized by musical complexity, virtuosity, 
-    58.27s  user  발화 시작: Okay, so… not just simple songs?
-    58.27s  agent 발화 끝
-    60.78s  agent 발화 시작: Precisely. There’s a deliberate ambition to move beyond stan
-    60.78s  user  발화 끝
-    66.65s  user  발화 시작: Hmm. Do you think their locations influenced their music at 
-    66.65s  agent 발화 끝
-    71.26s  agent 발화 시작: It's plausible. Los Angeles has a vibrant, diverse music sce
-    71.26s  user  발화 끝
-    77.55s  user  발화 시작: Yeah, I guess so. It’s a pretty big city.
-    77.55s  agent 발화 끝
-    81.32s  agent 발화 시작: A very large one, and a cultural melting pot. It’s often ref
-    81.32s  user  발화 끝
-    88.45s  agent 발화 끝
+     0.00s  user  발화 시작: I’m planning a road trip and I’m trying to figure out the hi
+     4.12s  user  발화 끝
+     4.16s  agent 발화 시작: Road trips are wonderful! It’s a great way to see the countr
+     8.04s  agent 발화 끝
+     8.50s  user  발화 시작: Uh, yeah, absolutely. So, I know Route 146 and Interstate 89
+    16.00s  <ret> 발화 (turn3 첫 프레임)
+    16.58s  agent 발화 시작: <ret> Let’s see… Interstate 90 also runs through Schenectady
+    16.76s  user  발화 끝
+    16.88s  ⚡SPAN 주입 [d'=0.88s / d_lead=0.97s]: Interstate 90 passes through Schenectady, New York, connecting to Bost
+    23.35s  agent 발화 끝
+    23.42s  user  발화 시작: Oh, okay, I-90. That’s helpful. Is there anything… historica
+    29.03s  user  발화 끝
+    29.10s  agent 발화 시작: It’s a city with a surprisingly rich history, actually. Quit
+    34.33s  user  발화 시작: [curious] Like what, specifically? Something memorable?
+    34.42s  agent 발화 끝
+    36.13s  <ret> 발화 (turn7 첫 프레임)
+    36.69s  agent 발화 시작: <ret> Indeed there is… A massacre occurred in Schenectady in
+    36.91s  user  발화 끝
+    36.93s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.46s]: Schenectady was the site of a 1690 massacre during King William’s War,
+    44.99s  agent 발화 끝
+    45.10s  user  발화 시작: Wow, a massacre… That's… grim. Was it a large settlement bac
+    50.40s  <ret> 발화 (turn9 첫 프레임)
+    50.99s  agent 발화 시작: <ret> It was a developing area… In 1684, Schenectady consist
+    51.21s  user  발화 끝
+    51.40s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.47s]: By 1684, Schenectady contained approximately thirty houses and a churc
+    60.85s  user  발화 시작: Thirty houses… That *is* small. So it was really vulnerable 
+    60.87s  agent 발화 끝
+    66.06s  agent 발화 시작: It certainly was. A small settlement in a new land always fa
+    66.17s  user  발화 끝
+    71.57s  agent 발화 끝
+    71.58s  user  발화 시작: I— I mean, is there anything *less* grim about its history? 
+    76.59s  <ret> 발화 (turn13 첫 프레임)
+    76.67s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.39s]: Union College, founded in 1795, is located in Schenectady and is the o
+    76.95s  user  발화 끝
+    77.18s  agent 발화 시작: <ret> Certainly, there is! Union College, founded in 1795, i
+    86.91s  agent 발화 끝

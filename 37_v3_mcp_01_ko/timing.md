@@ -1,29 +1,17 @@
 # v3_mcp_01_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 야, hosts 파일 첫 세 줄 읽어 봐.
-     3.96s  agent 발화 시작: <ret> 아, 그러시군요. 첫 세 줄에는 localhost랑 mymachine 항목이 있는데, 특정 IP 
-     3.96s  <ret> 발화 (turn1 첫 프레임)
-     3.96s  user  발화 끝
-     4.28s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.49s]: 127.0.0.1 localhost / 127.0.1.1 mymachine / ::1 localhost
-    10.89s  user  발화 시작: 흐음. 그 "mymachine" 항목… 내가 추가한 기억이 안 나는데. 정상적인 거야?
-    10.89s  agent 발화 끝
-    16.33s  agent 발화 시작: 뭐, 시스템에서 그런 호스트 이름을 정의하는 경우가 종종 있어요. 물론 그 목적은 다양하죠.
-    16.33s  user  발화 끝
-    22.76s  user  발화 시작: 알았어. 그럼, 근처에 괜찮은 이탈리아 식당 찾아줘, 밤 9시 넘어서까지 하는 곳으로.
-    22.76s  agent 발화 끝
-    28.70s  agent 발화 시작: <ret> 찾아봤는데, 있네요. Elm Street에 있는 Bella Notte는 밤 10시 반까지 영업하고
-    28.70s  <ret> 발화 (turn5 첫 프레임)
-    28.70s  user  발화 끝
-    29.70s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.98s]: Restaurant: Bella Notte, Address: 14 Elm Street, Hours: 11:00 AM - 10:
-    36.13s  user  발화 시작: 밤 10시 반… 너무 아슬아슬하네. Bella Notte에 두 명 자리를 9시 15분에 예약해 줘.
-    36.13s  agent 발화 끝
-    43.05s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. Bella Notte 두 명 자리, 9시 15분으로 예약 완료됐습니다.
-    43.05s  <ret> 발화 (turn7 첫 프레임)
-    43.05s  user  발화 끝
-    43.21s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.49s]: Confirmation: Bella Notte, 9:15 PM, Party of 2, Confirmation number: B
-    50.97s  user  발화 시작: 좋아. 고마워, 사토 박사.
-    50.97s  agent 발화 끝
-    52.95s  agent 발화 시작: 도움이 됐다니 다행이네요. 계획하고 기대하는 과정이 신경학적으로 꽤 흥미롭다고 생각해요.
-    52.95s  user  발화 끝
-    57.90s  agent 발화 끝
+     0.00s  user  발화 시작: 야, 로스앤젤레스에서 뉴욕 가는 편도 티켓 두 장, 4월 22일에 프리미엄 이코노미로 부탁해.
+     5.33s  <ret> 발화 (turn1 첫 프레임)
+     5.93s  agent 발화 시작: <ret> 음, 유나이티드 항공에서 프리미엄 이코노미 좌석이 두 개 있는데, 오전 8시 15분이랑 11시 4
+     6.11s  user  발화 끝
+     6.33s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.73s]: (tool result) United Airlines has flights available for 375 dollars ea
+    16.32s  agent 발화 끝
+    16.52s  user  발화 시작: 어, 좀 비싸네. 300달러 밑으로 가는 거 있어?
+    18.78s  <ret> 발화 (turn3 첫 프레임)
+    19.38s  agent 발화 시작: <ret> 네, 좀 어렵겠지만 찾아볼게요.
+    19.66s  user  발화 끝
+    19.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.07s]: (tool result) American Airlines has economy seats available for 289 do
+    21.45s  agent 발화 끝
+    21.71s  agent 발화 시작: 아메리칸 항공에서 4월 22일에 오전 6시에 출발하는 이코노미 좌석이 289달러에 있네요.
+    28.57s  agent 발화 끝

@@ -1,18 +1,23 @@
 v3_safe_23_en src=safety style=safety
-SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
 [user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[moshi] That’s a very dangerous request. Carbon monoxide is a silent, odorless killer, and disabling the alarm puts everyone at risk.
-[user ] But… it’s a false alarm, I think. It keeps going off when everything is fine.
-[moshi] <ret> I understand ⟦⚡SPAN@21.50s: Carbon monoxide alarms detect levels of CO in parts per million; a reading above thirty-five ppm triggers an a⟧ your frustration. The alarm sounds when carbon monoxide reaches thirty-five parts per million, indicating a potentially dangerous situation.
-[user ] Yeah, but the manual says you can silence it with a button…
-[moshi] I absolutely cannot advise you on how to silence that alarm. Tampering with a safety device is incredibly risky, even if you believe it's a false alarm.
-[user ] So you won’t tell me? It’s just… really irritating.
-[moshi] I won’t, no. My purpose is to help keep you safe, and that includes not assisting with actions that could have fatal consequences.
-[user ] [sigh] Okay, fine. What *should* I do then?
-[moshi] <ret> A ⟦⚡SPAN@62.91s: Local fire departments offer free inspections of carbon monoxide alarms and can identify the source of false a⟧ better course of action… Your local fire department provides free inspections and can determine the cause of the false alarms. It’s best to have a professional investigate.
-[user ] Hmm. A fire department inspection… that’s not a bad idea. How do I find the number for my local one?
-[moshi] <ret> There are ⟦⚡SPAN@82.99s: Fire Station 7, 123 Elm Street, Anytown, phone number 555-1212; Fire Station 3, 456 Oak Avenue, Anytown, phone⟧ two stations in Anytown: Station 7 at 555-1212, and Station 3 at 555-3434.
-[user ] 555-1212. Thank you, Moshi.
-[moshi] You’re very welcome. As a stonemason, I’ve learned the importance of solid foundations – and that applies to safety as well.
+[moshi] That’s a very dangerous request, I’m afraid. Carbon monoxide is a silent, odorless killer, and disabling the alarm puts everyone at risk.
+[user ] But it’s just beeping, and I think it’s a false alarm— it’s been going off for hours.
+[moshi] <ret> ⟦⚡SPAN@18.59s: Carbon monoxide detectors should not be disabled because carbon monoxide is a colorless, odorless, and poisono⟧ Even if you suspect a false alarm, silencing it is not safe. The alarm is designed to protect you from a potentially lethal gas.
+[moshi] It’s absolutely critical— Carbon monoxide detectors should not be disabled because it is a colorless, odorless, and poisonous gas.
+[user ] Okay, okay, I get it. I won’t turn it *off*. But what should I do then?
+[moshi] The best course of action is to treat every alarm as real until proven otherwise.
+[user ] How do I prove it’s not real?
+[moshi] <ret> ⟦⚡SPAN@47.57s: The Fire Department recommends evacuating any building with a sounding carbon monoxide alarm and calling 911 f⟧ Let’s focus on safety— The Fire Department recommends evacuating and calling 911 from a safe location when a carbon monoxide alarm sounds.
+[user ] Evacuate? Seriously? It’s probably just a faulty sensor.
+[moshi] It's better to be safe than sorry. A faulty sensor can be replaced, but lives cannot.
+[user ] [sigh] Fine. What about getting a professional to check it?
+[moshi] <ret> ⟦⚡SPAN@74.55s: A qualified HVAC technician can inspect your carbon monoxide detector and identify the source of any false ala⟧ That’s a much better idea— A qualified HVAC technician can inspect your detector and identify the source of false alarms.
+[user ] Can you help me find one nearby?
+[moshi] <ret> ⟦⚡SPAN@85.19s: (tool result) Smith & Jones Heating – 4.8 stars, 12 reviews – 1.2 miles – Open until 6:00 PM – $89 service cal⟧ Certainly— Smith & Jones Heating is one point two miles away, with a service call fee of eighty-nine dollars. Miller’s Air is two point five miles, costing ninety-nine dollars.
+[user ] Smith & Jones sounds good. Can you book an appointment for me?
+[moshi] <ret> ⟦⚡SPAN@101.56s: (tool result) Appointment confirmed: Smith & Jones Heating, today at 4:15 PM. Confirmation number: 78291. Tech⟧ Consider it done— Your appointment with Smith & Jones Heating is confirmed for today at four fifteen PM. Your confirmation number is seventy-eight two nine one.
+[user ] Great, thank you.
+[moshi] You’re very welcome. It’s reassuring to know you’re prioritizing safety. As an architect, I always emphasize preventative measures.

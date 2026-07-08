@@ -1,20 +1,18 @@
 v3_rag_31_en src=hotpotqa style=v1
-SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] I’m trying to settle a bet with a friend. Are Tool and Capital Cities both from Los Angeles?
-[moshi] That’s a common point of confusion, actually. Band origins can be surprisingly difficult to pin down.
-[user ] Well, yeah, it’s just these two…
-[moshi] <ret> ⟦⚡SPAN@17.17s: Tool formed in Los Angeles, California in 1990; Capital Cities formed in Los Angeles, California in 2010.⟧ Let’s see… Both Tool and Capital Cities were indeed formed in Los Angeles, California.
-[user ] Okay, good. So I win. Um… what about their genres, though? Are they similar?
-[moshi] Not particularly. Tool is generally considered progressive metal, while Capital Cities blends indie pop and dance.
-[user ] That makes sense, I guess. I— I mean, I always thought Tool was a bit heavier.
-[moshi] [laugh] Heaviness is definitely a hallmark of their sound. Their arrangements are quite complex, structurally.
-[user ] So, progressive metal… what does that even *mean*, really?
-[moshi] <ret> It’s a ⟦⚡SPAN@52.98s: Progressive metal is characterized by musical complexity, virtuosity, and often conceptual lyrics.⟧ fascinating question. Progressive metal features complexity, virtuosity, and conceptual lyrics in its compositions.
-[user ] Okay, so… not just simple songs?
-[moshi] Precisely. There’s a deliberate ambition to move beyond standard song structures. It’s quite cerebral.
-[user ] Hmm. Do you think their locations influenced their music at all?
-[moshi] It's plausible. Los Angeles has a vibrant, diverse music scene that could certainly inspire experimentation.
-[user ] Yeah, I guess so. It’s a pretty big city.
-[moshi] A very large one, and a cultural melting pot. It’s often reflected in the art created there.
+[user ] I’m planning a road trip and I’m trying to figure out the highways around Schenectady.
+[moshi] Road trips are wonderful! It’s a great way to see the countryside, isn’t it?
+[user ] Uh, yeah, absolutely. So, I know Route 146 and Interstate 890 both go through there. What other interstate runs through Schenectady?
+[moshi] <ret> ⟦⚡SPAN@16.88s: Interstate 90 passes through Schenectady, New York, connecting to Boston and Albany.⟧ Let’s see… Interstate 90 also runs through Schenectady, connecting it to Boston and Albany.
+[user ] Oh, okay, I-90. That’s helpful. Is there anything… historically interesting about Schenectady?
+[moshi] It’s a city with a surprisingly rich history, actually. Quite a lot happened there.
+[user ] [curious] Like what, specifically? Something memorable?
+[moshi] <ret> ⟦⚡SPAN@36.93s: Schenectady was the site of a 1690 massacre during King William’s War, resulting in many deaths.⟧ Indeed there is… A massacre occurred in Schenectady in 1690 during King William’s War, causing numerous deaths.
+[user ] Wow, a massacre… That's… grim. Was it a large settlement back then?
+[moshi] <ret> ⟦⚡SPAN@51.40s: By 1684, Schenectady contained approximately thirty houses and a church, representing a small colonial outpost⟧ It was a developing area… In 1684, Schenectady consisted of around thirty houses and a church, a small colonial outpost.
+[user ] Thirty houses… That *is* small. So it was really vulnerable then, I guess.
+[moshi] It certainly was. A small settlement in a new land always faces challenges.
+[user ] I— I mean, is there anything *less* grim about its history? Anything positive?
+[moshi] <ret> ⟦⚡SPAN@76.67s: Union College, founded in 1795, is located in Schenectady and is the oldest degree-granting higher education i⟧ Certainly, there is! Union College, founded in 1795, is the oldest degree-granting college in the United States and is in Schenectady.

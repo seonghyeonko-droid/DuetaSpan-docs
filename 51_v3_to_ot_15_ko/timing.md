@@ -1,57 +1,61 @@
 # v3_to_ot_15_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 누구세요? 아론 목소리를 누가 연기했나요?
-     2.65s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 제프 골드블룸이 이집트 왕자에서 아론의 목소리를 연기했어요.
-     2.65s  <ret> 발화 (turn1 첫 프레임)
-     2.65s  user  발화 끝
-     3.65s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.12s]: Jeff Goldblum voiced Aaron in the 1998 animated film, The Prince of Eg
-     7.95s  user  발화 시작: 아, 제프 골드블룸… 음, 꽤 많은 작품에 출연했죠, 그렇죠?
-     7.95s  agent 발화 끝
-    12.72s  agent 발화 시작: 맞아요. 걔는 굉장히 인지도가 높으시죠.
-    12.72s  user  발화 끝
-    15.37s  user  발화 시작: 람세스는요? 람세스는 누가 연기했나요?
-    15.37s  agent 발화 끝
-    17.49s  agent 발화 시작: <ret> 알아볼게요. 랄프 파인즈가 람세스 목소리를 연기했어요.
-    17.49s  <ret> 발화 (turn5 첫 프레임)
-    17.49s  user  발화 끝
-    18.49s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.65s]: Ralph Fiennes provided the voice for Ramses in The Prince of Egypt.
-    20.67s  user  발화 시작: 파인즈… 네, 알고 있었어요. 좀 오래됐네요, 그 영화를 본 지.
-    20.67s  agent 발화 끝
-    25.97s  agent 발화 시작: 그러네요. 추억은 정말 강렬할 수 있죠.
-    25.97s  user  발화 끝
-    29.15s  user  발화 시작: 저기, 재활용 쓰레기는 내놨어요?
-    29.15s  agent 발화 끝
-    31.27s  user  발화 시작: 미안해요, 잠깐 딴 생각에 빠졌네요. 영화 이야기로 다시 돌아갈까요—
-    31.27s  user  발화 끝
-    36.04s  agent 발화 시작: 괜찮아요, 계속 말씀하세요.
-    36.04s  user  발화 끝
-    37.63s  user  발화 시작: 유명한 배우들 중에 다른 사람들도 목소리 연기를 했나요?
-    37.63s  agent 발화 끝
-    41.87s  agent 발화 시작: <ret> 네, 몇몇 유명 배우들이 더 참여했어요. 미셸 파이퍼가 십포라 목소리를 연기했고, 산드라 불록이 
-    41.87s  <ret> 발화 (turn12 첫 프레임)
-    41.87s  user  발화 끝
-    42.87s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.18s]: Michelle Pfeiffer voiced Tzipporah, and Sandra Bullock voiced Miriam i
-    50.35s  user  발화 시작: 와, 산드라 불록! 그건… 놀랍네요.
-    50.35s  agent 발화 끝
-    53.00s  agent 발화 시작: [laugh] 이런 연결고리를 발견하는 건 정말 흥미롭죠.
-    53.00s  user  발화 끝
-    56.71s  user  발화 시작: 이집트 왕자는 정확히 몇 년도에 개봉했나요?
-    56.71s  agent 발화 끝
-    59.89s  agent 발화 시작: <ret> 확인해 볼게요. 이집트 왕자는 1998년 12월 21일에 개봉했어요.
-    59.89s  <ret> 발화 (turn16 첫 프레임)
-    59.89s  user  발화 끝
-    60.89s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.59s]: The Prince of Egypt was released in the United States on December 21, 
-    64.13s  user  발화 시작: 12월… 크리스마스 즈음이네요.
-    64.13s  agent 발화 끝
-    65.72s  agent 발화 시작: 맞아요. 가족 영화가 인기 있는 시기죠.
-    65.72s  user  발화 끝
-    68.90s  user  발화 시작: 혹시… 그런 영화를 볼 때 기억이 어떻게 형성되는지에 대해 생각해 본 적 있어요?
-    68.90s  agent 발화 끝
-    75.79s  agent 발화 시작: 네, 신경과 의사로서, 거의 피할 수 없죠. 감정적인 영향은 확실히 기억 형성을 강화해요.
-    75.79s  user  발화 끝
-    82.68s  user  발화 시작: 인코딩이요?
-    82.68s  agent 발화 끝
-    83.21s  agent 발화 시작: 경험이 지속적인 신경 기록으로 변환되는 과정이에요. 꽤 복잡하답니다.
-    83.21s  user  발화 끝
-    87.45s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 궁금한 게 있는데요, 헌법 제정 회의를 이끈 사람은 누구였나요?
+     4.46s  <ret> 발화 (turn1 첫 프레임)
+     5.00s  user  발화 끝
+     5.06s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 조지 워싱턴이 1787년 여름에 헌법 제정 회의를 주재했어요. 정말 역사적
+     5.46s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.05s]: George Washington presided over the Constitutional Convention during t
+    12.72s  user  발화 시작: 와, 워싱턴이요? 저는 항상 그분을 독립 전쟁과 연관 짓곤 해요.
+    12.75s  agent 발화 끝
+    16.88s  user  발화 끝
+    16.94s  agent 발화 시작: 정말 다재다능한 분이셨어요, 그러시죠?
+    19.39s  agent 발화 끝
+    20.83s  user  발화 시작: 그분들이 모든 것에 동의했는지, 아니면 좀 복잡한 과정이었는지 궁금해요.
+    25.05s  <ret> 발화 (turn5 첫 프레임)
+    25.65s  agent 발화 시작: <ret> 음, 격렬했다고 할까요. 헌법 제정 회의에서는 연방주의자와 반연방주의자 사이의 뜨거운 논쟁이 있었
+    25.83s  user  발화 끝
+    26.05s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.27s]: The Constitutional Convention involved heated debates between Federali
+    34.74s  agent 발화 끝
+    35.05s  user  발화 시작: 연방주의자와 반연방주의자… 그분들은 무엇에 대해 의견이 달랐나요?
+    39.77s  <ret> 발화 (turn7 첫 프레임)
+    40.36s  agent 발화 시작: <ret> 뭐, 주로 권력의 균형이었어요. 연방주의자들은 강력한 중앙 정부를 선호했고, 반연방주의자들은 그것
+    40.42s  user  발화 끝
+    40.77s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.23s]: Federalists favored a strong central government, while Anti-Federalist
+    48.10s  agent 발화 끝
+    48.17s  user  발화 시작: 흠. 오늘날에도 여전히 관련이 있을지 궁금하네요.
+    52.48s  user  발화 시작: 우유는 사 오셨나요?
+    52.52s  user  발화 끝
+    53.85s  user  발화 시작: 죄송해요, 지금 무슨 이야기를 하고 있었죠? 아, 네—회의에 대해서요.
+    53.99s  user  발화 끝
+    59.18s  user  발화 끝
+    59.49s  agent 발화 시작: 그 당시의 다양한 관점에 대해 이야기하고 있었어요.
+    61.23s  <ret> 발화 (turn12 첫 프레임)
+    61.84s  agent 발화 시작: <ret> 고려해 보면 정말 흥미로운데요… 제임스 매디슨은 그의 영향력 있는 역할 때문에 종종 "헌법의 아버
+    62.08s  agent 발화 끝
+    62.23s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.93s]: James Madison is often called the "Father of the Constitution" for his
+    69.06s  agent 발화 끝
+    69.21s  user  발화 시작: 매디슨이요? 그분은 실제로 뭘 하셨나요?
+    71.44s  <ret> 발화 (turn14 첫 프레임)
+    72.04s  agent 발화 시작: <ret> 초안 작성에 중요한 역할을 했어요. 매디슨은 새로운 형태의 정부를 제안하는 버지니아 계획을 작성했
+    72.12s  user  발화 끝
+    72.44s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.04s]: Madison authored the Virginia Plan, proposing a new form of government
+    80.13s  user  발화 시작: 그렇다면 워싱턴 혼자서 한 일은 아니었군요?
+    80.16s  agent 발화 끝
+    83.09s  agent 발화 시작: 절대 아니에요! 많은 뛰어난 사람들이 기여했어요.
+    83.28s  user  발화 끝
+    86.78s  agent 발화 끝
+    86.87s  user  발화 시작: 헌법 승인을 위한 투표가 있었나요?
+    88.71s  <ret> 발화 (turn18 첫 프레임)
+    88.87s  ⚡SPAN 주입 [d'=0.16s / d_lead=2.11s]: The Constitution was signed by thirty-nine delegates on September seve
+    89.31s  agent 발화 시작: <ret> 네, 정식 비준 절차가 있었어요. 헌법은 1787년 9월 17일에 39명의 대표가 서명했어요.
+    89.46s  user  발화 끝
+    95.65s  agent 발화 끝
+    95.69s  user  발화 시작: 39명의 대표… 모든 사람이 다 참석한 건 아니죠?
+    99.34s  agent 발화 시작: 아니요, 일부 주에서는 모든 대표가 참석하지 않았어요.
+    99.52s  user  발화 끝
+   102.48s  user  발화 시작: 흥미롭네요. 서명 후에는 무슨 일이 일어났나요?
+   102.57s  agent 발화 끝
+   105.79s  agent 발화 시작: 그다음에는 주들이 비준하도록 설득하는 정말 어려운 일이 남았어요!
+   105.94s  user  발화 끝
+   109.86s  agent 발화 끝

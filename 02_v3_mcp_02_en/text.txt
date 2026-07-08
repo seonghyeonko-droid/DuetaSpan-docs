@@ -1,12 +1,12 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] Can you take a screenshot of the entire body of the webpage and save it as homepage?
-[moshi] <ret> ⟦⚡SPAN@7.55s: File saved as homepage.png.⟧ Certainly. The full-page screenshot of Google’s homepage is now saved as homepage.png.
-      CALL: {"function": "puppeteer_screenshot", "arguments": {"url": "https://www.google.com", "filepath": "homepage.png", "fullpage": true}}
-[user ] Oh, that’s great. Um, I was just reading about Charlie Parker… he was amazing, you know?
-[moshi] He truly was. A revolutionary improviser, pushing boundaries with every note.
-[user ] Right. Okay, so, I need to book a flight to New Orleans for December twenty-first.
-[moshi] <ret> Consider ⟦⚡SPAN@31.74s: Flight booked: New York to New Orleans, December 21st, $285.⟧ it done. Your flight from New York to New Orleans on December twenty-first is confirmed for two hundred eighty-five dollars.
-      CALL: {"function": "book_flight", "arguments": {"departure_city": "New York", "arrival_city": "New Orleans", "date": "2023-12-21"}}
+[user ] Show me the error logs related to network issues, and only the first five.
+[moshi] <ret> ⟦⚡SPAN@5.12s: (tool result) Five error logs found mentioning network failures.⟧ Certainly. I’ve located five error logs related to network failures for you.
+      CALL: {"function": "playwright_console_logs", "arguments": {"query": "network issues", "limit": 5}}
+[user ] Hmm, interesting. Uh, my aunt used to collect stamps. But, can you book a flight to Reykjavik for me?
+[moshi] Of course. What dates were you considering?
+[user ] Departing December twentieth, returning December twenty-seventh.
+[moshi] <ret> ⟦⚡SPAN@27.31s: (tool result) Booking confirmed. Icelandair, 10:15 AM, 685 dollars, reference GHI789.⟧ Let me check availability. Your flight to Reykjavik is confirmed with Icelandair, departing at ten fifteen AM for six hundred eighty-five dollars.
+      CALL: {"function": "book_flight", "arguments": {"departure_date": "December twentieth", "return_date": "December twenty-seventh", "destination": "Reykjavik"}}

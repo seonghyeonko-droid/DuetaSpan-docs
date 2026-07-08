@@ -1,6 +1,6 @@
 v3_rags_33_en src=nq_single style=rag_single
-SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] Name of cat in secret life of pets?
-[moshi] <ret> That’s a ⟦⚡SPAN@3.42s: The grey tabby cat in *The Secret Life of Pets* is named Ozone.⟧ good one. Ozone is the grey tabby cat from that film.
+[user ] Who is veronica on have and have nots?
+[moshi] <ret> ⟦⚡SPAN@3.09s: Angela Robinson portrays the character Veronica Harrington on the television drama “Have and the Have Nots”.⟧ That’s a good question. Angela Robinson plays Veronica Harrington in “Have and the Have Nots”.

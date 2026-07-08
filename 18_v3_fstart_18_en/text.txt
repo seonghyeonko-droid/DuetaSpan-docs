@@ -1,15 +1,12 @@
 v3_fstart_18_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] Can you schedule a hair appointment at The Hair Palace on April first at four thirty in the afternoon?
-[moshi] <ret> ⟦⚡SPAN@7.18s: Appointment confirmed. The Hair Palace. April first, 4:30 PM. Style: haircut. Price: $65.00. Confirmed to emai⟧ Certainly. Your haircut at The Hair Palace is confirmed for April first at four thirty PM, costing sixty-five dollars. A good cut is essential, you know.
-      CALL: {"function": "Services_1_BookAppointment", "arguments": {"service_name": "hair appointment", "location": "The Hair Palace", "date": "April first", "time": "four thirty in the afternoon"}}
-[user ] Actually, never mind. What's the weather in Lagos right now?
-[moshi] <ret> Of ⟦⚡SPAN@20.87s: Lagos, Nigeria: 28 degrees Celsius. Partly cloudy. Humidity: 75%. Wind: 12 km/h from the south.⟧ course. Lagos is currently twenty-eight degrees Celsius and partly cloudy, with a south wind at twelve kilometers per hour. Quite typical for this time of year.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Lagos"}}
-[user ] And um… what about Abuja?
-[moshi] <ret> Let ⟦⚡SPAN@32.77s: Abuja, Nigeria: 32 degrees Celsius. Clear skies. Humidity: 60%. Wind: 8 km/h from the northeast.⟧ me see. Abuja is thirty-two degrees Celsius and clear, with a gentle northeast wind at eight kilometers per hour. A bit warmer inland, as you’d expect.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Abuja"}}
-[user ] Hmm, okay. [sigh] Is there a good restaurant nearby— I mean, somewhere with traditional Nigerian food?
-[moshi] That’s a delightful thought. Traditional Nigerian cuisine is truly remarkable.
+[user ] Can you navigate me to the Alamo?
+[moshi] <ret> ⟦⚡SPAN@1.79s: (tool result) The Alamo is 306 Alamo Plaza, San Antonio, Texas, 78205.⟧ Certainly. The Alamo is located at 306 Alamo Plaza in San Antonio, Texas.
+      CALL: {"function": "maps_schema_navi", "arguments": {"destination": "The Alamo"}}
+[user ] Uh, what’s the weather like there right now?
+[moshi] <ret> ⟦⚡SPAN@11.83s: (tool result) It is currently 85 degrees Fahrenheit and sunny in San Antonio.⟧ Let me check that for you. It's currently eighty-five degrees Fahrenheit and sunny in San Antonio, Texas.
+      CALL: {"function": "weather_schema_current", "arguments": {"location": "San Antonio, Texas"}}
+[user ] Eighty-five? Wow, that’s…hot.
+[moshi] It is quite warm for this time of year, yes.

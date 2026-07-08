@@ -1,12 +1,11 @@
 v3_pause_19_en src=nq style=v1
-SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] When did the golden age of Athens begin?
-[moshi] <ret> That’s a ⟦⚡SPAN@3.79s: The Golden Age of Athens began in 480 BC.⟧ fascinating question. The Golden Age of Athens began in four hundred and eighty BC. A pivotal moment, really.
-[user ] And how long did it… uh… last?
-[moshi] <ret> It was ⟦⚡SPAN@13.17s: The Golden Age of Athens lasted for approximately forty-five years.⟧ a remarkably productive period. The Golden Age of Athens lasted roughly forty-five years. Quite a flourishing for the arts.
-[user ] So I was thinking… about the whole trip, actually. I— I mean, if I were to go to Athens now, what would be…
-[moshi] It's wonderful you’re planning a visit.
-[user ] …the best time of year to avoid the biggest crowds?
-[moshi] <ret> October in ⟦⚡SPAN@34.13s: October in Athens has average highs of 24 degrees Celsius and 6 rainy days.⟧ Athens averages twenty-four degrees Celsius with six rainy days. Perfect for exploring the ancient sites.
+[user ] Do you know who won MasterChef USA in two thousand and fourteen?
+[moshi] <ret> ⟦⚡SPAN@4.40s: Luca Manfè won MasterChef USA in 2014.⟧ That was a memorable season. Luca Manfè took the title in two thousand and fourteen. A very talented cook, indeed.
+[user ] And Natasha? What happened with her— I— I mean…
+[moshi] She was a strong competitor, certainly.
+[user ] So I was thinking… about the whole trip, actually. Did she place at all?
+[moshi] <ret> ⟦⚡SPAN@22.58s: Luca Manfè won MasterChef USA in 2014; Natasha Celis was the runner-up.⟧ Let me recall the details. Natasha Celis finished as the runner-up to Luca Manfè. A close competition, from what I remember.
+[user ] Oh, okay. That makes sense. Thanks!

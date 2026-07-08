@@ -1,38 +1,24 @@
 v3_rag_30_ko src=nq style=v3
-SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 오늘 하루 어떠세요? 혹시 '콜스 더 하트' 시즌이 궁금하신가 봐요.
-[moshi] 정말 좋은 드라마죠, 그렇지 않나요? 공동체 의식을 잘 담아낸 것 같아요.
-[user ] 네, 괜찮아요. 근데 진짜, 지금 몇 번째 시즌이에요?
-[moshi] <ret> ⟦⚡SPAN@16.46s: When Calls the Heart is currently on its tenth season, which premiered in March 2023.⟧ 알아볼게요… 지금 드라마는 2023년 3월에 시작된 열 번째 시즌으로 방송 중이에요.
-[user ] 열 번째! 와, 진짜 많네요. 음, 이웃이 새 강아지를 데려왔어요, 골든 리트리버요.
-[moshi] 아, 골든 리트리버는 정말 멋진 강아지예요—에너지가 넘치죠.
-[user ] 그렇죠. 다시 드라마 얘기로 돌아가서… 6번째 시즌이 있었던 것 같아요.
-[moshi] <ret> ⟦⚡SPAN@38.75s: Season six of When Calls the Heart originally aired from February 25 to May 6, 2019.⟧ 잠시 생각해 보니… 6번째 시즌은 2019년 2월 25일부터 5월 6일까지 방영되었어요.
-[user ] 2019년… 정말 오래된 것 같아요. 다시 봐야겠어요.
-[moshi] 시간은 정말 빨리 가죠, 그렇지 않나요? 시간이 갈수록 더 빠르게 느껴지는 것 같아요.
-[user ] 정말 그래요. 6번째 시즌에서… 큰일이 있었나요?
-[moshi] <ret> ⟦⚡SPAN@58.83s: Season six of When Calls the Heart featured the departure of Daniel Lissing, who played Mountie Jack Thornton.⟧ 기억을 더듬어 보면… 6번째 시즌에서는 잭 손튼 역을 맡았던 다니엘 리싱이 하차했어요.
-[user ] 아, 안 돼! 저는 잭이 좋았는데! 너무 아쉽네요.
-[moshi] 좋아하는 캐릭터를 잃는 건 언제나 힘들죠—기존의 역학 관계가 깨지니까요.
-[user ] 정말 그래요. 그 후로 드라마가 많이 바뀌었나요?
-[moshi] 드라마는 분명히 변화를 겪었죠. 이야기가 어떻게 전개되는지 보는 것도 흥미로워요.
-[user ] 맞아요. 7번째 시즌은 언제 방영됐어요?
-[moshi] <ret> ⟦⚡SPAN@86.70s: Season seven of When Calls the Heart premiered on February 24, 2020, and concluded on May 17, 2020.⟧ 잠깐만요… 7번째 시즌은 2020년 2월 24일부터 5월 17일까지 방영되었어요.
-[user ] 알겠어요, 6번째 시즌 직후네요. 다행이에요.
-[moshi] 일관성이 시청자에게는 안심이 될 수 있죠—이야기 전개에 예측 가능한 리듬이 있으니까요.
-[user ] 그럴 것 같아요. 2023년에는 드라마에서 무슨 일이 있었나요?
-[moshi] <ret> 그 ⟦⚡SPAN@105.73s: In 2023, When Calls the Heart's tenth season experienced production delays due to weather conditions in Britis⟧ 해는 꽤 바빴어요… 2023년에는 캐나다 브리티시컬럼비아의 날씨 때문에 10번째 시즌의 제작이 지연되었어요.
-[user ] 아, 안됐네요. 날씨는 정말 골칫거리예요.
-[moshi] 정말 그렇죠—특히 야외 촬영 일정에 영향을 미칠 때는요.
-[user ] 10시즌이나 됐네요… 정말 대단하네요. 아직도 하고 있나요?
-[moshi] 네, 다행히도요. 여전히 많은 팬들에게 사랑받는 인기 프로그램이에요.
-[user ] 잘 됐네요. 기분이 좋아요. 새로운 취미를 생각해 보고 있는데, 도자기를 해볼까 해요.
-[moshi] 도자기는 정말 촉각적인 예술 형태예요—마음을 안정시키고 창의적으로 만족감을 줄 수 있죠.
-[user ] 네, 그런 걸 기대하고 있어요. 혹시 10시즌이 최신 시즌이 맞나요?
-[moshi] <ret> ⟦⚡SPAN@145.52s: When Calls the Heart season 11 is confirmed to premiere in February 2024.⟧ 지금까지는… '콜스 더 하트' 시즌 11이 2024년 2월에 시작될 예정이에요.
-[user ] 벌써 11번째나 된다니! 정말 굉장하네요.
-[moshi] 드라마의 장수성은 그 매력의 증거라고 할 수 있겠죠.
-[user ] 정말 그래요. 몰아봐야겠어요.
-[moshi] 몰아보는 건 정말 만족스러울 수 있지만—조금 천천히 하시는 게 좋을 수도 있어요.
+[user ] 어, 옛날 배에 대해 읽다가… 음, 증기선이 언제 처음 발명됐는지 궁금해졌어.
+[moshi] 정말 흥미로운 질문이네요, 해양 기술의 기원을 추적하는 거군요.
+[user ] 그래, 언젠가는 그렇게 될 것 같았거든. 근데 언제 된 거야?
+[moshi] <ret> ⟦⚡SPAN@13.91s: The first steam-powered paddle boat was invented in 1783 by Marquis de Jouffroy d'Abbans in France.⟧ 알려 드릴게요. 최초의 증기선은 1783년에 마르키 드 주프루아 다방스가 발명했어요.
+[user ] 와, 1783년! 생각보다 훨씬 빠르네. 해군 엔지니어 같은 사람이었어?
+[moshi] 실제로 다양한 분야에 관심이 있는 발명가였어요.
+[user ] 흥미롭네. 배가 컸어? 뭐, 실제로 쓸모 있는 걸 했어?
+[moshi] <ret> ⟦⚡SPAN@35.47s: Jouffroy’s boat, the *Pyramide*, was twelve meters long and successfully traveled against the current on the S⟧ 그렇게 크지는 않았어요. *피라미드*는 길이가 12미터였고, 소느 강에서 거슬러 올라가는 데 성공했어요.
+[user ] 12미터… 괜찮네. 소느 강은 프랑스에 있나? 지리 감각이 엉망이라서.
+[moshi] 네, 론 강의 주요 지류예요.
+[user ] 그래, 그래. 흠. 비슷한 시기에 증기선을 만들려고 한 다른 사람도 있었어?
+[moshi] <ret> ⟦⚡SPAN@56.24s: William Symington built a steam boat for the Forth and Clyde Canal in 1802, demonstrating its practical use fo⟧ 다른 사람들도 실험을 하고 있었죠. 윌리엄 심핑턴은 1802년에 포스 앤 클라이드 운하에서 견인용 증기선을 만들었어요.
+[user ] 견인? 승객용은 아니었나? 뭐, 실용적이긴 하겠네.
+[moshi] 그 기술의 잠재력을 보여주는 중요한 단계였어요.
+[user ] 휴… 그렇게 제대로 작동하는 데 얼마나 오래 걸리는지 정말 놀라워.
+[moshi] <ret> ⟦⚡SPAN@77.19s: Robert Fulton received a U.S. patent for a commercially successful steamboat, the *Clermont*, in 1807.⟧ 초기 공학은 많은 어려움에 직면했어요. 로버트 풀턴은 1807년에 *클레르몽*에 대한 미국 특허를 받았고, 상업적으로 성공했어요.
+[user ] 1807년… 풀턴은 좀 더 나중에 나왔네. 배 생김새가 많이 달랐어?
+[moshi] 승객 수송을 위해 설계된 더 세련된 디자인이었어요.
+[user ] 그럴 만하네. 그럼 주프루아가 먼저 발명했는데, 풀턴이 모든 걸 다 가져갔어?
+[moshi] <ret> ⟦⚡SPAN@101.73s: Though Jouffroy pioneered the steam boat, Fulton’s *Clermont* is often credited with initiating steam navigati⟧ 역사는 종종 복잡해요. 주프루아가 증기선을 개척했지만, 풀턴의 *클레르몽*이 미국에서 증기 항해를 시작했어요.

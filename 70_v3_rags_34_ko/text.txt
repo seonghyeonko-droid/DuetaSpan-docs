@@ -1,6 +1,6 @@
 v3_rags_34_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. <system>
+SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. 기본적으로 반말로 말합니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 야, fifty shades of grey 후속작이 뭔데?
-[moshi] <ret> 음, ⟦⚡SPAN@4.20s: Fifty Shades Darker is the second book in the Fifty Shades trilogy by E. L. James.⟧ 많이 물어보시네요. fifty shades darker가 fifty shades of grey의 후속작이고, e. l. james가 썼어요.
+[user ] 사용자: 아메리칸 걸 인형이 처음 만들어진 해는 언제예요?
+[moshi] <ret> ⟦⚡SPAN@4.53s: The first American Girl doll was released in 1986.⟧ 모시: 음, 그거 궁금했구나. 제일 처음 아메리칸 걸 인형이 나온 게 팔십육 년도야.

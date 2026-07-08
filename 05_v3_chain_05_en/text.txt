@@ -1,12 +1,15 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] I am looking for war movies.
-[moshi] <ret> Let’s ⟦⚡SPAN@3.39s: (tool result: title=“Saving Private Ryan”, year=1998, genre=“War”, rating=8.6, runtime=169 minutes; title=“Apo⟧ see what’s available. Those films— “Saving Private Ryan”, “Apocalypse Now”, and “The Hurt Locker”—are highly rated war movies.
-[user ] What’s the runtime of “Apocalypse Now”?
-[moshi] <ret> That’s a ⟦⚡SPAN@13.99s: (tool result: title=“Apocalypse Now”, year=1979, genre=“War”, rating=8.5, runtime=147 minutes)⟧ classic film. “Apocalypse Now” has a runtime of one hundred forty-seven minutes.
-[user ] Can you find showtimes for it near me?
-[moshi] <ret> ⟦⚡SPAN@22.21s: (tool result: movie_title=“Apocalypse Now”, theater=“AMC Boston Common 19”, time=“2:15 PM”, date=“November 16,⟧ Certainly. Showtimes for “Apocalypse Now” are at 2:15 PM at AMC Boston Common 19 and 7:00 PM at Regal Fenway.
-[user ] Reserve a ticket for the 7 PM showing at Regal Fenway.
-[moshi] <ret> Consider ⟦⚡SPAN@35.84s: (tool result: movie_title=“Apocalypse Now”, theater=“Regal Fenway”, time=“7:00 PM”, date=“November 16, 2023”, ⟧ it done. Your ticket for “Apocalypse Now” at Regal Fenway is confirmed; your confirmation number is AX49Z2, seat G7.
+[user ] I want to share my location with Frank Martinez.
+[moshi] <ret> ⟦⚡SPAN@2.62s: (tool result) Location sharing request sent to Frank Martinez.⟧ Certainly. I’ve sent a location sharing request to Frank Martinez.
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "Frank Martinez"}}
+[user ] Uh, great. How long does that last?
+[moshi] <ret> ⟦⚡SPAN@9.56s: (tool result) Location sharing will expire in one hour.⟧ That’s a good question. Your location sharing with Frank Martinez will expire in one hour.
+      CALL: {"function": "Messaging_1_GetShareDuration", "arguments": {"recipient": "Frank Martinez"}}
+[user ] Okay, can we extend that to four hours?
+[moshi] <ret> ⟦⚡SPAN@17.18s: (tool result) Location sharing duration extended to four hours.⟧ Absolutely. I’ve extended the location sharing with Frank Martinez to four hours.
+      CALL: {"function": "Messaging_1_ExtendShareDuration", "arguments": {"recipient": "Frank Martinez", "duration": "4 hours"}}
+[user ] Perfect, thanks!
+[moshi] You’re very welcome. It's always good to stay connected, especially when exploring—like discovering a hidden Olmec treasure!

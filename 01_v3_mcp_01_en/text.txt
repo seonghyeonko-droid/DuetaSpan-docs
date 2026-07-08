@@ -1,17 +1,11 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] Read the first three lines of the hosts file, please.
-[moshi] <ret> ⟦⚡SPAN@4.38s: 127.0.0.1 localhost / 127.0.1.1 mymachine / ::1 localhost⟧ Certainly. The first three lines contain entries for localhost and mymachine, mapping to specific IP addresses.
-      CALL: {"function": "read_file", "arguments": {"filepath": "/etc/hosts", "num_lines": 3}}
-[user ] Hmm. That "mymachine" entry… I don't remember adding that. Is that normal?
-[moshi] It’s not uncommon for systems to define a hostname like that, though its purpose varies.
-[user ] Okay. Now, can you find me a good Italian restaurant nearby, open past nine?
-[moshi] <ret> I’ve ⟦⚡SPAN@30.04s: Restaurant: Bella Notte, Address: 14 Elm Street, Hours: 11:00 AM - 10:30 PM, Rating: 4.5 stars.⟧ found a place. Bella Notte on Elm Street is open until ten thirty, and has a four and a half star rating.
-      CALL: {"function": "search_restaurants", "arguments": {"cuisine": "Italian", "location": "nearby", "open_until": "9:00 PM"}}
-[user ] Ten thirty…that’s cutting it close. Book a table for two at Bella Notte for nine fifteen.
-[moshi] <ret> ⟦⚡SPAN@46.55s: Confirmation: Bella Notte, 9:15 PM, Party of 2, Confirmation number: BN7492.⟧ Done. Your table for two at Bella Notte is confirmed for nine fifteen, confirmation number BN7492.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant": "Bella Notte", "time": "9:15 PM", "party_size": 2}}
-[user ] Perfect. Thanks, Dr. Sato.
-[moshi] You’re very welcome. I find the interplay between planning and anticipation quite fascinating, neurologically speaking.
+[user ] I need two one-way tickets from Los Angeles to New York on April twenty-second in premium economy.
+[moshi] <ret> ⟦⚡SPAN@7.43s: (tool result) United Airlines has flights available for 375 dollars each, departing at 8:15 AM and 11:40 AM.⟧ Let’s find those for you. United Airlines offers two premium economy flights—eight fifteen AM and eleven forty AM—at three hundred seventy-five dollars per ticket.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Los Angeles", "destination": "New York", "date": "April 22", "class": "premium economy", "num_tickets": "2"}}
+[user ] Uh, that’s a little more than I wanted to spend. Are there any flights under three hundred dollars?
+[moshi] <ret> ⟦⚡SPAN@23.80s: (tool result) American Airlines has economy seats available for 289 dollars, departing at 6:00 AM.⟧ Finding cheaper flights can be tricky, but let's check.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Los Angeles", "destination": "New York", "date": "April 22", "max_price": "300", "class": "economy"}}
+[moshi] American Airlines has economy seats available on April twenty-second for two hundred eighty-nine dollars, departing at six AM.
