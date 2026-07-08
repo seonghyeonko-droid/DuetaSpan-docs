@@ -2,13 +2,12 @@ v3_to_ot_12_en src=nq style=v1
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It’s always sounded ⟨ret@6.51s⟩ so…different.
-[  6.74s][moshi] That’s a very good ⟦⚡SPAN@8.27s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ question, a surprisingly complex story— Eddie Van Halen was the musician who played that iconic guitar solo.
-[ 13.99s][user ] Wow, really? Van Halen? I always assumed it was someone from Jackson’s band.
-[ 18.95s][moshi] It was quite a coup for Jackson to get him, actually. Van Halen was initially reluctant, you see.
-[ 24.14s][user ] That’s amazing. I didn’t know he almost didn’t do it. [to other] Hey, did you remember to take the recycling out?
-[ 31.11s][user ] «to_other» Seriously, it’s overflowing!
-[ 33.44s][user ] Sorry about that. Back to the ⟨ret@35.56s⟩ song—
-[ 35.96s][moshi] As I was saying, ⟦⚡SPAN@37.40s: Van Halen recorded his guitar solo for free, but insisted on not being credited.⟧ the circumstances— He recorded the solo for free, but he specifically requested no credit for his work. A rather unusual arrangement, wouldn't you agree?
-[ 45.55s][user ] That *is* strange. Why would he not want credit?
-[ 49.63s][moshi] He didn't want it to appear as if he was a "for-hire" guitarist, damaging his artistic reputation.
+[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It’s always sounded so different from his other ⟨ret@6.86s⟩ stuff.
+[  7.09s][moshi] That’s a very ⟦⚡SPAN@8.22s: <Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It” in 1982.>⟧ perceptive observation about “Beat It”.
+[  9.57s][moshi] Eddie Van Halen performed that iconic guitar solo in nineteen eighty-two.
+[ 14.61s][user ] Wow, Eddie Van Halen? I didn’t know he worked with Michael Jackson. That’s a surprising combination.
+[ 20.18s][moshi] Indeed, it was a rather unexpected pairing for the time.
+[ 23.95s][user ] «to_other» Hey, did you remember to take the chicken out of the freezer?
+[ 26.74s][user ] Sorry about that. Back to the music—was he the first choice for the solo, or did others try it ⟨ret@32.54s⟩ first?
+[ 32.69s][moshi] Determining the ⟦⚡SPAN@33.66s: <Quincy Jones initially sought Eric Clapton and Jeff Beck for the solo, but they declined due to scheduling co⟧ initial considerations… Quincy Jones first asked Eric Clapton and Jeff Beck, but they were unavailable.
+[ 40.60s][user ] So Van Halen was almost a last resort then? That’s amazing he ended up on the track.

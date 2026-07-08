@@ -2,10 +2,10 @@ v3_rag_27_ko src=hotpotqa style=v1
 SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 럭스 아우룬케에 대해 읽고 있었는데, 혹시 언제 태어났는지 궁금해요.
-[  4.53s][moshi] ⟨ret@4.37s⟩ ⟦⚡SPAN@4.87s: Lux Aurunque was born in nineteen seventy.⟧ 음, 기록에 따르면 일천구백칠십 년에 태어났어.
-[  9.73s][user ] 일천구백칠십 년… 그의 작품을 생각하면 의외로 최근이네요. 정확히 뭘로 ⟨ret@16.25s⟩ 유명한가요?
-[ 16.48s][moshi] 사실 그의 ⟦⚡SPAN@18.01s: Lux Aurunque is celebrated for his bronze sculptures depicting Roman emperors.⟧ 업적은 꽤 대단해. 로마 황제들을 묘사한 청동 조각으로 유명하거든.
-[ 22.51s][user ] 청동 조각… 굉장하네요. 혹시 중요한 사람에게 의뢰를 받았나요? ⟨ret@27.13s⟩
-[ 27.29s][moshi] 당연히 영향력 ⟦⚡SPAN@29.13s: Lux Aurunque received commissions from Emperor Hadrian and several prominent senators.⟧ 있는 후원자들의 관심을 끌었지. 하드리아누스 황제와 여러 원로원 의원에게 의뢰를 받았어.
-[ 36.74s][user ] 하드리아누스 황제님… 로마 제국 시대에 활동했군요. 감사합니다.
+[  0.00s][user ] 럭스 아우룬케에 대해 아는 게 있어? 읽어봤나 봐.
+[  4.03s][moshi] ⟨ret@3.87s⟩ ⟦⚡SPAN@4.37s: Lux Aurunque was a Roman bronze sculptor who lived and worked in the 1st century AD.⟧ 그건 로마 역사 속 흥미로운 인물이지… 럭스 아우룬케는 서기 1세기에 살고 일했던 로마의 청동 조각가였어.
+[ 13.96s][user ] 아, 서기 1세기면… 정확히 언제 태어났어요? 저— 그러니까, 구체적인 연도를 알고 ⟨ret@21.02s⟩ 싶어요.
+[ 21.25s][moshi] 그 시대의 ⟦⚡SPAN@23.02s: Lux Aurunque was born in seventy AD in Rome, Italy.⟧ 정확한 생년월일을 알아내는 건 항상 어려워… 럭스 아우룬케는 로마 이탈리아에서 칠십 년에 태어났어.
+[ 29.28s][user ] 칠십 년이라. 정말 오래전이네요, 그렇죠? 조각품이 널리 알려졌었어요?
+[ 34.74s][moshi] 그의 작품은 매우 높이 평가받았지만, 안타깝게도 오늘날 온전하게 남아있는 예시가 거의 없어. 우리 모두에게 손실이지.
+[ 44.82s][user ] 정말 아쉽네요. 그런데 칠십 년이면… 플라비우스 왕조 시대에 살았다는 뜻이네요?

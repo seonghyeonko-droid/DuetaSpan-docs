@@ -2,13 +2,12 @@ v3_to_ot_12_cs src=nq style=v1
 SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했거든요. 뭔가 좀 독특한 느낌이 ⟨ret@6.23s⟩ 들어서요.
-[  6.63s][moshi] 아, 정말 ⟦⚡SPAN@8.23s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 좋은 질문이세요. 꽤 복잡한 이야기인데요— 에디 반 헤일런이 그 유명한 기타 솔로를 연주한 분이세요.
-[ 16.22s][user ] 와, 진짜요? 반 헤일런이요? 잭슨 밴드 멤버 중 누군가인 줄 알았어요.
-[ 22.10s][moshi] 잭슨이 그분을 섭외한 건 정말 대단한 일이었어요. 반 헤일런은 처음에는 망설였다고 하네요.
-[ 28.61s][user ] 정말 놀랍네요. 거의 안 하실 뻔했다니 몰랐어요. [다른 사람에게] 저기, 혹시 재활용 쓰레기 버리셨어요?
-[ 36.32s][user ] «to_other» 진짜, 너무 넘쳐 흐르잖아요!
-[ 38.93s][user ] 죄송해요. 다시 노래 이야기로 돌아가서—
-[ 42.24s][moshi] ⟨ret@42.02s⟩ 제가 ⟦⚡SPAN@43.45s: Van Halen recorded his guitar solo for free, but insisted on not being credited.⟧ 말씀드린 것처럼, 상황은 이랬는데요— 그는 솔로를 무료로 녹음했지만, 자신의 이름을 크레딧에 올리지 말아 달라고 요청했어요. 꽤 이례적인 합의였죠, 그러시죠?
-[ 53.88s][user ] 정말 이상하네요. 왜 크레딧을 받기 싫어했을까요?
-[ 57.61s][moshi] 자신이 “고용된” 기타리스트처럼 보일까 봐, 자신의 예술적 명성에 해를 끼칠까 봐 걱정했던 거예요.
+[  0.00s][user ] 마침 궁금했는데요, 마이클 잭슨의 “Beat It” 기타 솔로를 실제로 누가 연주했는지 궁금해요. 다른 곡들과는 항상 좀 다르게 ⟨ret@9.38s⟩ 들렸거든요.
+[  9.77s][moshi] 정말 ⟦⚡SPAN@10.66s: <Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It” in 1982.>⟧ 날카로운 관찰이세요, “Beat It”에 대해서요.
+[ 12.64s][moshi] 에디 반 헤일런이 천구백팔십이 년에 그 상징적인 기타 솔로를 연주했습니다.
+[ 18.16s][user ] 와, 에디 반 헤일런이요? 마이클 잭슨과 함께 작업했다는 걸 몰랐어요. 정말 의외의 조합이네요.
+[ 24.97s][moshi] 네, 당시로서는 꽤 뜻밖의 조합이었죠.
+[ 29.02s][user ] «to_other» 저기요, 냉동고에서 닭고기를 꺼냈었는지 기억하세요?
+[ 32.80s][user ] 죄송합니다. 다시 음악 이야기로 돌아가서, 그분이 솔로 연주자로 처음 선택된 사람이었나요, 아니면 다른 사람들도 먼저 ⟨ret@40.82s⟩ 시도했었나요?
+[ 40.97s][moshi] ⟦⚡SPAN@41.38s: <Quincy Jones initially sought Eric Clapton and Jeff Beck for the solo, but they declined due to scheduling co⟧ 초기 고려 사항을 확인해 보니… 퀸시 존스가 먼저 에릭 클랩튼과 제프 벡에게 부탁했지만, 그분들은 시간이 없었습니다.
+[ 48.98s][user ] 그럼 반 헤일런은 거의 마지막 보루였던 거군요? 그분이 곡에 참여하게 된 게 정말 놀랍네요.

@@ -2,22 +2,20 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.06s  <ret> 발화 (turn1 첫 프레임)
-     4.37s  agent 발화 시작: <ret> Certainly, I can adjust the browser settings for you. 
-     4.54s  user  발화 끝
-     5.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.89s]: (tool result) The user agent is now set to SuperCrawler version 10.1.
-    13.88s  agent 발화 끝
-    13.92s  user  발화 시작: Hmm, does that affect how websites see me?
-    16.36s  agent 발화 시작: It does, yes. Websites use the user agent to tailor content,
-    16.40s  user  발화 끝
-    23.49s  user  발화 시작: Okay, and can you check if a site thinks I’m still a regular
-    23.58s  agent 발화 끝
-    29.18s  <ret> 발화 (turn5 첫 프레임)
-    29.50s  agent 발화 시작: <ret> I can certainly test if Google recognizes the changed 
-    29.61s  user  발화 끝
-    30.22s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.87s]: (tool result) Google reports the user agent as SuperCrawler version 10
-    40.04s  user  발화 시작: Right, so it worked then? Good. Can we go back to normal now
-    40.12s  agent 발화 끝
-    45.09s  user  발화 끝
-    45.13s  agent 발화 시작: Absolutely. I can revert the user agent to the default setti
-    49.99s  agent 발화 끝
+     4.41s  <ret> 발화 (turn1 첫 프레임)
+     4.72s  agent 발화 시작: <ret> Certainly, altering the browser’s identification— I ha
+     4.91s  user  발화 끝
+     5.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.46s]: (tool result) The user agent is now set to SuperCrawler version 10.1.
+    13.57s  agent 발화 끝
+    13.59s  user  발화 시작: Hmm, is that actually working? Can you check what the curren
+    18.67s  <ret> 발화 (turn3 첫 프레임)
+    18.75s  agent 발화 시작: <ret> Let me verify that change for you— Yes, it is. The cur
+    18.87s  user  발화 끝
+    20.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.12s]: (tool result) The current user agent is SuperCrawler version 10.1.
+    28.00s  user  발화 시작: Okay, good. Now, could you search for restaurants near the L
+    28.11s  agent 발화 끝
+    32.76s  <ret> 발화 (turn5 첫 프레임)
+    32.84s  agent 발화 시작: <ret> Of course, finding dining options nearby— I found thre
+    33.00s  user  발화 끝
+    33.26s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.90s]: (tool result) Restaurants near the Louvre: Le Fumoir (French, 4.5 star
+    42.02s  agent 발화 끝

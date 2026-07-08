@@ -1,45 +1,41 @@
 # v3_fake__13_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hey, I was wondering when Demi Lovato’s new album came out… 
-     5.83s  agent 발화 시작: Ah, yes, 2015 was a busy year for music releases.
-     5.84s  user  발화 끝
-     9.36s  <ret> 발화 (turn2 첫 프레임)
-     9.60s  agent 발화 시작: <ret> Let me quickly check the release date for you… Her alb
-     9.66s  agent 발화 끝
-    11.04s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.20s]: Demi Lovato’s album, *Confident*, was released in October 2015.
-    17.06s  agent 발화 끝
-    18.12s  user  발화 시작: October, huh? I remember hearing a single from it earlier th
-    24.70s  user  발화 끝
-    25.12s  agent 발화 시작: That’s a great question. It was indeed!
-    27.13s  <ret> 발화 (turn5 첫 프레임)
-    27.19s  agent 발화 끝
-    27.21s  agent 발화 시작: <ret> It’s interesting how a single can foreshadow an entire
-    28.81s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.46s]: "Cool for the Summer" was released as the lead single from *Confident*
-    36.07s  user  발화 시작: Wow, July! That feels like ages ago. I was just listening to
-    36.20s  agent 발화 끝
-    42.01s  <ret> 발화 (turn7 첫 프레임)
-    42.16s  agent 발화 시작: <ret> [happy] Music really does have a way of transporting y
-    42.18s  user  발화 끝
-    44.01s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=3.56s]: (tool result) AAPL: 170.34 USD +0.56 (0.33%)
-    45.71s  agent 발화 끝
-    46.18s  user  발화 시작: So, was *Confident* her fourth studio album, or… am I misrem
-    51.40s  <ret> 발화 (turn9 첫 프레임)
-    51.80s  agent 발화 시작: <ret> That's a good point about album numbering… Actually, *
-    51.97s  user  발화 끝
-    52.92s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.68s]: *Confident* is Demi Lovato’s fifth studio album, released after *Unbro
-    57.92s  agent 발화 끝
-    57.97s  user  발화 시작: Fifth! Oh, okay, I totally got that wrong. I always forget *
-    62.83s  agent 발화 시작: It's easy to lose track, especially with so many releases ov
-    62.97s  user  발화 끝
-    66.62s  agent 발화 끝
-    66.83s  user  발화 시작: Were the reviews for *Confident* pretty good? I don't think 
-    72.24s  user  발화 끝
-    72.37s  <ret> 발화 (turn13 첫 프레임)
-    72.53s  agent 발화 시작: <ret> Album reception is always a fun thing to look into… Cr
-    74.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.56s]: *Confident* received generally positive reviews from music critics.
-    79.91s  user  발화 시작: That’s good to know. Maybe I’ll give it a listen now. Thanks
-    80.36s  agent 발화 끝
-    84.44s  user  발화 끝
-    84.45s  agent 발화 시작: You’re very welcome! I hope you enjoy rediscovering it, or e
-    89.31s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, I was wondering, when is Demi Lovato’s new album coming
+     6.40s  user  발화 끝
+     6.41s  agent 발화 시작: Well, Demi Lovato has released several albums over the years
+    11.08s  agent 발화 끝
+    11.78s  user  발화 시작: Oh, right, sorry. I meant the one she was working on in 2015
+    16.74s  <ret> 발화 (turn3 첫 프레임)
+    16.98s  agent 발화 시작: <ret> Let’s see if I can pinpoint that release for you… Her 
+    17.15s  user  발화 끝
+    18.42s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.12s]: Demi Lovato’s album “Confident” was released in October 2015.
+    23.84s  agent 발화 끝
+    25.58s  user  발화 시작: October? That feels like ages ago! I remember being so excit
+    30.77s  user  발화 끝
+    31.19s  agent 발화 시작: It does fly by, doesn’t it? Music moves quickly. I’ve spent 
+    40.41s  agent 발화 끝
+    40.79s  user  발화 시작: [laugh] That’s a cool perspective. So, “Confident” was the n
+    44.43s  <ret> 발화 (turn7 첫 프레임)
+    44.50s  agent 발화 시작: <ret> That is correct. “Confident” was the title of the albu
+    44.62s  user  발화 끝
+    46.43s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.79s]: (tool result) AAPL: 170.34 USD +0.23 (0.14%)
+    49.81s  user  발화 시작: I’m trying to remember what the first single was… was it “Co
+    50.29s  agent 발화 끝
+    53.77s  agent 발화 시작: You have a good memory! “Cool for the Summer” *was* the lead
+    53.93s  user  발화 끝
+    58.27s  agent 발화 끝
+    58.80s  user  발화 시작: I really liked that song. It was everywhere that summer.
+    62.14s  agent 발화 시작: It certainly had a strong presence. I remember it playing on
+    62.18s  user  발화 끝
+    67.00s  agent 발화 끝
+    67.28s  user  발화 시작: Was “Confident” a big hit? I vaguely recall it doing well.
+    70.92s  <ret> 발화 (turn13 첫 프레임)
+    71.32s  agent 발화 시작: <ret> I can quickly check its chart performance… Yes, “Confi
+    71.45s  user  발화 끝
+    72.44s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.70s]: “Confident” debuted at number one on the Billboard 200 chart.
+    79.42s  user  발화 시작: Wow, number one! That’s fantastic. Thanks for the info!
+    79.81s  agent 발화 끝
+    83.21s  user  발화 끝
+    83.23s  agent 발화 시작: You’re very welcome! It’s always rewarding to share a bit of
+    87.20s  agent 발화 끝

@@ -1,47 +1,49 @@
 # v3_selfc_08_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 5월 10일 버스 좀 보여 줘.
-     4.09s  <ret> 발화 (turn1 첫 프레임)
-     4.33s  agent 발화 시작: <ret> 알아보고 있어요… 5월 10일에 버스가 세 대 있어요. 아침 8시에 250달러, 오후 2시에 28
-     4.44s  user  발화 끝
-     6.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: (tool result) Three buses run from Chicago to Denver on May tenth: one
-    14.99s  agent 발화 끝
-    15.47s  user  발화 시작: 밤 10시 거 괜찮은 것 같아. 예약해 줘.
-    18.29s  <ret> 발화 (turn3 첫 프레임)
-    18.45s  agent 발화 시작: <ret> 네, 확인해 드릴게요… 밤 10시에 세 분 예약이 완료됐습니다. 예약 번호는 칠 팔 구 사 오 육
-    18.61s  user  발화 끝
-    19.25s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.34s]: (tool result) Your reservation for three passengers on the 10:00 PM bu
-    25.08s  agent 발화 끝
-    25.29s  user  발화 시작: 좋아. 그럼 덴버 5월 10일 날씨는 어때?
-    28.27s  <ret> 발화 (turn5 첫 프레임)
-    28.59s  agent 발화 시작: <ret> 덴버 날씨는 알아두면 좋겠죠… 5월 10일 덴버는 맑을 거예요. 최고 기온은 섭씨 24도, 최저 
-    28.66s  user  발화 끝
-    30.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.88s]: (tool result) The forecast for Denver on May tenth is sunny, with a hi
-    37.81s  agent 발화 끝
-    37.86s  user  발화 시작: 음, 24도… 아니, 21도가 더 좋겠다.
-    41.31s  <ret> 발화 (turn7 첫 프레임)
-    41.70s  user  발화 끝
-    41.71s  agent 발화 시작: <ret> 다시 한번 확인해 드릴게요… 예보에 따르면 맑고, 최고 기온은 섭씨 24도, 최저 기온은 섭씨 1
-    42.75s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.16s]: (tool result) The forecast for Denver on May tenth is sunny, with a hi
-    50.14s  agent 발화 끝
-    50.37s  user  발화 시작: 덴버 버스 정류장 근처에 볼 만한 거 있어?
-    52.61s  <ret> 발화 (turn9 첫 프레임)
-    52.85s  agent 발화 시작: <ret> 오, 덴버는 볼거리가 정말 많아요… 덴버 미술관은 버스 정류장에서 약 1.6킬로미터 거리에 있고,
-    53.10s  user  발화 끝
-    53.11s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.94s]: <ret>
-    59.76s  user  발화 시작: 응.
-    60.25s  user  발화 끝
-    64.12s  agent 발화 끝
-    64.17s  agent 발화 시작: 정말 훌륭한 컬렉션이에요.
-    66.10s  agent 발화 끝
-    67.20s  user  발화 시작: 콜럼버스 이전 시대 예술? 그게 뭔데 좀 더 자세히 말해 봐.
-    71.63s  agent 발화 시작: 음, 그 미술관에는 안데스 지역의 세라믹과 직물 컬렉션이 정말 훌륭하고, 수백 년 전부터 이어져 왔어요.
-    71.69s  user  발화 끝
-    78.11s  agent 발화 끝
-    78.78s  user  발화 시작: 그 작품들 위주로 하는 가이드 투어 같은 거 있어?
-    81.94s  <ret> 발화 (turn15 첫 프레임)
-    82.25s  agent 발화 시작: <ret> 가이드 투어는 컬렉션을 경험하기에 좋은 방법이에요…
-    82.47s  user  발화 끝
-    83.30s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.35s]: (tool result) Guided tours of the Pre-Columbian collection at the Denv
-    86.60s  agent 발화 끝
+     0.00s  user  발화 시작: 시카고에서 덴버 가는 버스, 세 명, 5월 10일에 보여 줘.
+     4.37s  <ret> 발화 (turn1 첫 프레임)
+     4.61s  agent 발화 시작: <ret> 네, 그 경로의 버스 운행 상황을 확인해 볼게요. 5월 10일에 오전 8시, 오후 2시, 저녁 7
+     4.67s  user  발화 끝
+     6.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) Three buses are available on May tenth: at 8:00 AM, 2:00
+    13.79s  agent 발화 끝
+    14.37s  user  발화 시작: 그 가격들은 얼마야?
+    15.88s  <ret> 발화 (turn3 첫 프레임)
+    16.04s  agent 발화 시작: <ret> 각 버스의 요금을 빠르게 확인해 드릴 수 있어요. 오전 8시 버스는 150달러, 오후 2시 버스는
+    16.21s  user  발화 끝
+    16.92s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.57s]: (tool result) The 8:00 AM bus costs $150, the 2:00 PM bus costs $180, 
+    26.99s  agent 발화 끝
+    27.15s  user  발화 시작: 어… 10일이 아니라 11일로 해 줘.
+    29.75s  <ret> 발화 (turn5 첫 프레임)
+    30.06s  user  발화 끝
+    30.07s  agent 발화 시작: <ret> 아, 11일로 다시 확인해 드리면 될까요? 5월 11일에는 오전 9시와 오후 6시에 출발하는 버스
+    31.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (tool result) Two buses are available on May eleventh: at 9:00 AM and 
+    37.34s  agent 발화 끝
+    37.36s  user  발화 시작: 그거 침대 버스야?
+    38.71s  agent 발화 시작: 그 버스가—
+    38.83s  user  발화 끝
+    39.21s  user  발화 시작: 화장실은 있어?
+    39.86s  agent 발화 끝
+    40.31s  agent 발화 시작: 오전 9시와 오후 6시 버스 둘 다 화장실이 있지만, 침대 버스는 아니에요.
+    40.45s  user  발화 끝
+    43.84s  user  발화 시작: 진짜?
+    44.48s  user  발화 끝
+    45.64s  agent 발화 끝
+    45.71s  agent 발화 시작: 거의 18시간이나 가는 여정이라 화장실이 있으면 꽤 도움이 될 거예요.
+    49.92s  agent 발화 끝
+    50.18s  user  발화 시작: 9시 버스로 예약해 줘.
+    52.12s  <ret> 발화 (turn13 첫 프레임)
+    52.36s  agent 발화 시작: <ret> 네, 예약 진행해 드릴게요. 좌석 예약 완료됐어요! 확인 번호는 BX947Z이고, 세 명분이 예약
+    52.57s  user  발화 끝
+    52.62s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.77s]: (tool result) Your booking is confirmed: confirmation number is BX947Z
+    60.69s  agent 발화 끝
+    61.14s  user  발화 시작: 좋아, 전날에 알림 보내 줄 수 있어?
+    63.41s  <ret> 발화 (turn15 첫 프레임)
+    63.73s  agent 발화 시작: <ret> 네, 알림 설정해 드릴 수 있어요. 5월 10일 오전 9시에 “덴버 가는 버스 출발” 알림을 설정
+    63.91s  user  발화 끝
+    65.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.47s]: (tool result) Reminder set for May tenth at 9:00 AM: “Bus to Denver de
+    70.68s  agent 발화 끝
+    71.77s  user  발화 시작: 완벽해. 고마워!
+    73.69s  user  발화 끝
+    73.84s  agent 발화 시작: 도와드릴 수 있어서 기뻐요. 덴버까지의 여행을 즐기시길 바랍니다—아름다운 도시이고, 콜럼버스 이전 시대의 예
+    82.55s  agent 발화 끝

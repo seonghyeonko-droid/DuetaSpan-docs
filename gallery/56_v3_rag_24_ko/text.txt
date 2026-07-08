@@ -2,31 +2,23 @@ v3_rag_24_ko src=nq style=v1
 SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 듀 플레시 가족에 대해 읽다가 성의 유래가 궁금해졌어요.
-[  3.11s][moshi] 정말 흥미로운 질문이시네요. 성은 이야기를 담고 있는 경우가 많잖아요.
-[  7.40s][moshi] ⟨ret@7.32s⟩ 가문의 성을 살펴보는 ⟦⚡SPAN@9.32s: The surname Du Plessis is of French origin, meaning “of Plessis”, referring to any of several places in France⟧ 건 정말 재미있는 연구예요— 듀 플레시 성은 프랑스에서 유래했는데, ‘플레시의’라는 뜻이고, 플레시라는 장소에서 왔음을 나타냅니다.
-[ 18.85s][user ] 프랑스에 그 이름의 장소가 많이 있나요?
-[ 21.40s][moshi] 네, 여러 곳이 있어요. 장소 이름은 종종 매우 자세하게 묘사되어 있거든요.
-[ 26.37s][moshi] ⟨ret@26.05s⟩ 성의 유래를 ⟦⚡SPAN@28.05s: Plessis is a common place name in France, derived from the Old French word “plessis”, meaning a small cleared ⟧ 찾는 일은 종종— 플레시는 고대 프랑스어에서 유래한 프랑스 지명으로, 작은 개간지나 울타리를 의미합니다.
-[ 34.04s][user ] 그렇다면 원래 귀족 가문은 아니었던 건가요?
-[ 37.66s][moshi] 꼭 그렇지는 않아요. 지명은 모든 사회 계층에서 사용되었거든요.
-[ 41.56s][moshi] ⟨ret@41.40s⟩ 종종 가문은 ⟦⚡SPAN@42.84s: The Du Plessis family first rose to prominence in Normandy, France, in the 11th century, becoming a noble hous⟧ 그들이 소유한 땅에서 성을 따왔는데— 듀 플레시 가문은 11세기에 프랑스 노르망디에서 귀족 가문이 되었습니다.
-[ 50.32s][user ] 그 성이 남아프리카 공화국으로 퍼진 건 언제인가요?
-[ 53.87s][moshi] 그건 좀 더 최근의 일이고, 식민지 역사와 관련이 있어요.
-[ 57.99s][moshi] ⟨ret@57.67s⟩ 이주 ⟦⚡SPAN@58.87s: The Du Plessis surname was brought to South Africa by French Huguenots in the late 17th century.⟧ 패턴을 추적하는 것은 이해하는 데 필수적입니다— 듀 플레시 성은 17세기 후반 프랑스 위그노와 함께 남아프리카 공화국에 도착했습니다.
-[ 67.35s][user ] 위그노들은 종교적 박해를 피해 도망친 개신교 신자들이 아니었나요?
-[ 71.90s][moshi] 맞아요. 그들은 남아프리카 공화국을 포함한 많은 나라에서 피난처를 찾았습니다.
-[ 76.59s][moshi] ⟨ret@76.44s⟩ 종교적 자유는 종종 ⟦⚡SPAN@78.44s: Huguenots were French Protestants who, due to religious persecution, emigrated widely, including to South Afri⟧ 중요한— 위그노는 종교적 박해로 인해 남아프리카 공화국을 포함하여 이주한 프랑스 개신교 신자였습니다.
-[ 84.90s][user ] 아, 성이 종교적 난민과 관련이 있군요. 정말 대단한 역사네요!
-[ 89.38s][moshi] 그렇지 않나요? 성은 과거의 메아리 같아요.
-[ 91.85s][moshi] ⟨ret@91.54s⟩ 이주에 ⟦⚡SPAN@92.82s: In Afrikaans, the surname Du Plessis is among the most common, ranking 28th in frequency.⟧ 대한 더 넓은 맥락을 고려하면— 듀 플레시 성은 아프리카너스 성에서 28번째로 흔한 성입니다.
-[ 98.83s][user ] 놀랍네요! 오늘날 프랑스에서도 흔한가요?
-[102.23s][moshi] 실제로 남아프리카 공화국보다 프랑스에서는 덜 흔합니다.
-[106.08s][moshi] ⟨ret@105.76s⟩ 인구 ⟦⚡SPAN@107.04s: While still present in France, the Du Plessis surname is more frequently found in South Africa and other forme⟧ 분포의 변화는 종종— 듀 플레시 성은 프랑스보다 남아프리카 공화국과 이전 네덜란드 식민지에서 더 자주 발견됩니다.
-[113.93s][user ] 위그노의 이주를 고려하면 이해가 되네요. 정말 흥미롭습니다.
-[117.73s][moshi] 정말 그렇습니다. 사람들의 이동은 언어적, 문화적 지형을 형성합니다. [happy]
-[123.36s][user ] 그 성과 관련된 문장이 있는지 궁금합니다.
-[126.04s][moshi] 실제로 여러 개가 있는데, 가문의 다른 지파를 반영합니다.
-[130.02s][moshi] ⟨ret@129.70s⟩ 문장은 가문의— ⟦⚡SPAN@131.30s: The Du Plessis family has several coats of arms, varying based on lineage and regional origin within France.⟧ 듀 플레시 가문은 프랑스의 혈통과 지역에 따라 여러 개의 문장을 가지고 있습니다.
-[136.67s][user ] 오, 단일 디자인이 아니라는 건가요?
-[139.15s][moshi] 아니요, 전혀 그렇지 않아요. 디자인은 수세기에 걸쳐 다양해졌습니다.
+[  0.00s][user ] 저는 책을 읽다가 뒤 플레시라는 이름을 발견했어요. 뭔가… 프랑스어 같기도 하고요.
+[  5.97s][moshi] 그 이름이 왠지 모르게 울림이 있네요.
+[  8.37s][user ] 네, 맞아요. 그런데 그 이름의 유래가 궁금해요. 뒤 플레시는 정확히 어디에서 온 이름인가요?
+[ 14.43s][moshi] ⟨ret@14.35s⟩ 아주 좋은 질문이에요. ⟦⚡SPAN@16.35s: The surname du Plessis is of French origin, derived from the Old French “pleis,” meaning “enclosure” or “farm.⟧ 이름의 기원을 추적하면 흥미로운 점이 많답니다. 뒤 플레시스는 프랑스에서 유래했으며, 고대 프랑스어로 “울타리” 또는 “농장”을 의미한다고 해요.
+[ 25.27s][user ] 아, 역시 프랑스 이름이었군요. 지금도 프랑스에서 흔한 이름인가요?
+[ 29.34s][moshi] 그 이름이 널리 퍼지긴 했지만, 역사적으로는 프랑스에서 가장 강한 뿌리를 가지고 있어요.
+[ 34.67s][user ] 알겠습니다. 그런데 남아프리카에서도 그 이름을 본 적이 있어요. 어떻게 남아프리카까지 가게 된 ⟨ret@39.62s⟩ 건가요?
+[ 40.02s][moshi] 정말 흥미로운 ⟦⚡SPAN@41.62s: French Huguenots, Protestant refugees, settled in the Cape Colony of South Africa in the late seventeenth cent⟧ 질문이에요. 17세기 후반에 위그노, 프랑스 개신교도들이 케이프 식민지에 정착하면서 뒤 플레시스라는 이름을 가져갔다고 해요.
+[ 49.96s][user ] 위그노… 그렇군요. 그분들은 기술자였거나 뭔가 특별한 일을 하셨나요? 남아프리카에서 뭘 하셨어요?
+[ 56.47s][moshi] 그분들은 주로 장인과 농부였고, 식민지 개발에 크게 기여했어요.
+[ 60.85s][user ] 흥미롭네요. [laugh] 프랑스어와 문화를 계속 유지하셨나요, 아니면 사라졌나요?
+[ 66.67s][moshi] 처음에는 그분들의 언어를 유지했지만, 점차 네덜란드어와 다른 언어의 영향을 받았어요.
+[ 73.19s][user ] 그러면 시간이 지나면서 뭔가 달라졌다는 거군요. 이름 발음도 ⟨ret@77.10s⟩ 바뀌었나요?
+[ 77.26s][moshi] 문화가 융합되는 ⟦⚡SPAN@79.02s: In South Africa, the pronunciation of “du Plessis” evolved to “duh pless,” reflecting Afrikaans phonetic influ⟧ 동안 발음이 변하는 경우는 흔해요. 뒤 플레시스라는 이름은 남아프리카에서 아프리칸스어 발음의 영향을 받아 “더 플레스”로 진화했어요.
+[ 87.33s][user ] “더 플레스”라니, 정말 많이 바뀌었네요! 프랑스 사람들은 알아들을 수 있을까요?
+[ 92.47s][moshi] 현대 프랑스 사람들에게는 알아듣기 어려울 수도 있겠네요. 언어는 끊임없이 변하니까요.
+[ 98.52s][user ] 하지만 남아프리카에서는 여전히 흔한 성씨인가요?
+[101.47s][moshi] ⟨ret@101.40s⟩ 수세기에 걸쳐 남아프리카에 ⟦⚡SPAN@103.40s: Du Plessis is among the most common surnames in South Africa, ranking fifty-seventh most prevalent as of 2022.⟧ 잘 정착했답니다. 2022년 기준으로 남아프리카에서 가장 흔한 성씨 57위에 랭크되어 있어요.
+[109.69s][user ] 57위… 꽤 높은 순위네요. 프랑스 농장에서 남아프리카까지, 정말 긴 여정이네요.
+[115.32s][moshi] 맞아요. 이름은 종종 역사, 이주, 적응의 흔적을 담고 있어요. 그 기원을 추적하는 것은 정말 특별한 경험이에요.

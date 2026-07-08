@@ -2,13 +2,9 @@ v3_mcp_04_en src=mcp style=v2
 SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.06s⟩ one?
-[  4.37s][moshi] Certainly, ⟦⚡SPAN@5.02s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. The browser is now identifying as SuperCrawler version ten point one, as requested.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[ 13.92s][user ] Hmm, does that affect how websites see me?
-[ 16.36s][moshi] It does, yes. Websites use the user agent to tailor content, so you’ll appear as that specific crawler.
-[ 23.49s][user ] Okay, and can you check if a site thinks I’m still a regular browser now? Just, uh, ⟨ret@29.18s⟩ Google.com.
-[ 29.50s][moshi] I ⟦⚡SPAN@30.22s: (tool result) Google reports the user agent as SuperCrawler version 10.1.⟧ can certainly test if Google recognizes the changed user agent. Google now identifies you as SuperCrawler version ten point one, confirming the change.
-      CALL: {"function": "playwright_get_user_agent", "arguments": {"url": "https://www.google.com"}}
-[ 40.04s][user ] Right, so it worked then? Good. Can we go back to normal now?
-[ 45.13s][moshi] Absolutely. I can revert the user agent to the default setting immediately.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.41s⟩ one?
+[  4.72s][moshi] Certainly, ⟦⚡SPAN@5.85s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ altering the browser’s identification— I have updated your browser's user agent to SuperCrawler, version ten point one.
+[ 13.59s][user ] Hmm, is that actually working? Can you check what the current user agent is?
+[ 18.75s][moshi] ⟨ret@18.67s⟩ Let me verify that ⟦⚡SPAN@20.67s: (tool result) The current user agent is SuperCrawler version 10.1.⟧ change for you— Yes, it is. The current user agent reports as SuperCrawler, version ten point one.
+[ 28.00s][user ] Okay, good. Now, could you search for restaurants near the Louvre museum?
+[ 32.84s][moshi] ⟨ret@32.76s⟩ ⟦⚡SPAN@33.26s: (tool result) Restaurants near the Louvre: Le Fumoir (French, 4.5 stars), Angelina (Pastries, 4.2 stars), Café⟧ Of course, finding dining options nearby— I found three restaurants near the Louvre: Le Fumoir, Angelina, and Café Marly.

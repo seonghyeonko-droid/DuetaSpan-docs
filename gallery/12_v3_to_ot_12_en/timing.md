@@ -1,27 +1,25 @@
 # v3_to_ot_12_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: So, I was wondering, who actually played the guitar solo on 
-     6.51s  <ret> 발화 (turn1 첫 프레임)
-     6.74s  agent 발화 시작: <ret> That’s a very good question, a surprisingly complex st
-     6.77s  user  발화 끝
-     8.27s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.16s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-    13.99s  user  발화 시작: Wow, really? Van Halen? I always assumed it was someone from
-    14.11s  agent 발화 끝
-    18.95s  agent 발화 시작: It was quite a coup for Jackson to get him, actually. Van Ha
-    19.03s  user  발화 끝
-    24.08s  agent 발화 끝
-    24.14s  user  발화 시작: That’s amazing. I didn’t know he almost didn’t do it. [to ot
-    31.11s  user  발화 시작: Seriously, it’s overflowing!
-    31.28s  user  발화 끝
-    33.44s  user  발화 시작: Sorry about that. Back to the song—
-    33.60s  user  발화 끝
-    35.56s  <ret> 발화 (turn7 첫 프레임)
-    35.96s  agent 발화 시작: <ret> As I was saying, the circumstances— He recorded the so
-    36.07s  user  발화 끝
-    37.40s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.99s]: Van Halen recorded his guitar solo for free, but insisted on not being
-    45.23s  agent 발화 끝
-    45.55s  user  발화 시작: That *is* strange. Why would he not want credit?
-    49.49s  user  발화 끝
-    49.63s  agent 발화 시작: He didn't want it to appear as if he was a "for-hire" guitar
-    55.74s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, who actually played the guitar solo on
+     6.86s  <ret> 발화 (turn1 첫 프레임)
+     7.09s  agent 발화 시작: <ret> That’s a very perceptive observation about “Beat It”.
+     7.23s  user  발화 끝
+     8.22s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.67s]: <Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat 
+     9.57s  agent 발화 시작: Eddie Van Halen performed that iconic guitar solo in ninetee
+     9.77s  agent 발화 끝
+    14.53s  agent 발화 끝
+    14.61s  user  발화 시작: Wow, Eddie Van Halen? I didn’t know he worked with Michael J
+    20.18s  agent 발화 시작: Indeed, it was a rather unexpected pairing for the time.
+    20.31s  user  발화 끝
+    23.24s  agent 발화 끝
+    23.95s  user  발화 시작: Hey, did you remember to take the chicken out of the freezer
+    26.74s  user  발화 시작: Sorry about that. Back to the music—was he the first choice 
+    26.82s  user  발화 끝
+    32.54s  <ret> 발화 (turn7 첫 프레임)
+    32.69s  agent 발화 시작: <ret> Determining the initial considerations… Quincy Jones f
+    32.86s  user  발화 끝
+    33.66s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.62s]: <Quincy Jones initially sought Eric Clapton and Jeff Beck for the solo
+    39.59s  agent 발화 끝
+    40.60s  user  발화 시작: So Van Halen was almost a last resort then? That’s amazing h
+    45.98s  user  발화 끝

@@ -2,62 +2,64 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.20s  <ret> 발화 (turn1 첫 프레임)
-     3.60s  agent 발화 시작: <ret> Let me check the historical weather data for that date
-     3.70s  user  발화 끝
-     5.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    16.82s  agent 발화 끝
-    18.12s  user  발화 시작: Hmm, and what about Sapporo on the same day?
-    20.24s  <ret> 발화 (turn3 첫 프레임)
-    20.64s  agent 발화 시작: <ret> I can certainly look up the weather in Sapporo for tha
-    20.70s  user  발화 끝
-    22.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) The weather in Sapporo on December twenty-fourth last ye
-    31.66s  user  발화 시작: That’s quite a difference.
-    31.77s  agent 발화 끝
-    32.99s  user  발화 끝
-    33.20s  agent 발화 시작: Indeed, a significant temperature contrast between the two c
-    40.28s  user  발화 시작: Could you find me a hotel in Sapporo with a good onsen?
-    40.30s  agent 발화 끝
-    42.69s  <ret> 발화 (turn7 첫 프레임)
-    43.01s  agent 발화 시작: <ret> Certainly, I can search for hotels in Sapporo with ons
-    43.19s  user  발화 끝
-    43.73s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.37s]: (tool result) Hotel Sapporo Grand is available with an onsen, priced a
-    53.35s  agent 발화 끝
-    53.98s  user  발화 시작: Twenty-five thousand yen… that sounds nice.
-    56.63s  agent 발화 시작: It does appear to be a well-regarded establishment. Many vis
-    56.66s  user  발화 끝
-    60.57s  user  발화 시작: Right.
-    61.07s  user  발화 끝
-    63.44s  agent 발화 끝
-    63.46s  user  발화 시작: Can you book me a room there for two nights, starting Januar
-    66.84s  <ret> 발화 (turn12 첫 프레임)
-    66.92s  agent 발화 시작: <ret> I’m happy to check availability and book that for you…
-    67.07s  user  발화 끝
-    68.20s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.60s]: (tool result) Reservation confirmed at Hotel Sapporo Grand for two nig
-    81.63s  agent 발화 끝
-    83.78s  user  발화 시작: Perfect! Are there any…
-    85.62s  agent 발화 시작: I was going to say, the hotel also offers—
-    85.77s  user  발화 끝
-    88.20s  user  발화 시작: …any good hiking trails near Sapporo in January?
-    88.90s  agent 발화 끝
-    90.79s  <ret> 발화 (turn16 첫 프레임)
-    90.95s  agent 발화 시작: <ret> Oh, excellent question! January can be challenging for
-    91.11s  user  발화 끝
-    92.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) The Mount Moiwa trail is open in January, rated moderate
-    97.10s  agent 발화 시작: Mount Moiwa trail is open in January, considered moderate, a
-    97.20s  agent 발화 끝
-   103.31s  agent 발화 끝
-   103.58s  user  발화 시작: Two hours, that’s doable.
-   104.96s  user  발화 끝
-   105.33s  agent 발화 시작: It is a popular choice, offering lovely views of the city, e
-   110.05s  agent 발화 끝
-   110.47s  user  발화 시작: Could you set a reminder to pack my hiking boots on January 
-   113.65s  <ret> 발화 (turn21 첫 프레임)
-   113.81s  agent 발화 시작: <ret> Of course, I can certainly set that reminder for you… 
-   113.99s  user  발화 끝
-   115.09s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.23s]: (tool result) Reminder set for January tenth at nine AM: Pack hiking b
-   121.83s  user  발화 시작: Great, thanks so much for your help!
-   121.87s  agent 발화 끝
-   123.53s  user  발화 끝
-   123.65s  agent 발화 시작: You are very welcome. I'm glad I could assist with your trav
-   131.44s  agent 발화 끝
+     3.58s  <ret> 발화 (turn1 첫 프레임)
+     3.98s  agent 발화 시작: <ret> Checking historical weather data is quite simple… On D
+     4.11s  user  발화 끝
+     5.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.15s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    15.68s  agent 발화 끝
+    16.98s  user  발화 시작: That sounds quite cold. Could you find me a nice cafe near U
+    20.95s  <ret> 발화 (turn3 첫 프레임)
+    21.35s  agent 발화 시작: <ret> Searching for cafes near Ueno Park now… Cafe Ron Ron i
+    21.55s  user  발화 끝
+    22.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.16s]: (tool result) Cafe Ron Ron is located point-two kilometers from Ueno P
+    32.58s  user  발화 시작: That sounds perfect. Can you see if they take reservations?
+    32.62s  agent 발화 끝
+    35.51s  <ret> 발화 (turn5 첫 프레임)
+    35.81s  user  발화 끝
+    35.91s  agent 발화 시작: <ret> Let me check reservation availability… Unfortunately, 
+    36.47s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.83s]: (tool result) Cafe Ron Ron does not accept reservations.
+    43.83s  user  발화 시작: Oh. Hmm. Well, are there any other highly-rated cafes nearby
+    43.84s  agent 발화 끝
+    49.67s  <ret> 발화 (turn7 첫 프레임)
+    49.99s  agent 발화 시작: <ret> Let me broaden the search slightly… Coffee Valley is p
+    50.17s  user  발화 끝
+    50.17s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.07s]: (tool result) Coffee Valley, point-three kilometers away, has a four-p
+    61.26s  agent 발화 끝
+    61.88s  user  발화 시작: Four-point-five stars… that’s excellent. I think I’ll try to
+    67.72s  <ret> 발화 (turn9 첫 프레임)
+    67.99s  user  발화 끝
+    68.03s  agent 발화 시작: <ret> Certainly, let’s make that reservation for you… I have
+    69.16s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.22s]: (tool result) Reservation confirmed at Coffee Valley for two people to
+    80.46s  agent 발화 끝
+    81.00s  user  발화 시작: Great! That's really helpful. Do you know if Ueno Park itsel
+    86.78s  agent 발화 시작: Ueno Park is a wonderful place for botanical observation—
+    86.84s  user  발화 끝
+    89.81s  user  발화 시작: Are there any specific alpine wildflowers that might be in b
+    90.48s  agent 발화 끝
+    93.65s  user  발화 끝
+    94.08s  agent 발화 시작: Actually, Ueno Park doesn't typically host true alpine wildf
+   104.84s  agent 발화 끝
+   104.85s  user  발화 시작: Oh, right. I suppose that makes sense.
+   107.06s  user  발화 끝
+   107.19s  agent 발화 시작: Mm-hmm.
+   107.34s  <ret> 발화 (turn17 첫 프레임)
+   107.46s  user  발화 시작: Right.
+   107.74s  agent 발화 시작: <ret> Considering your interest in alpine plants… Edelweiss,
+   107.83s  agent 발화 끝
+   108.09s  user  발화 끝
+   108.46s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.99s]: (tool result) Edelweiss is native to the European Alps, blooming from 
+   118.87s  user  발화 시작: Edelweiss is lovely. Is it difficult to cultivate?
+   119.19s  agent 발화 끝
+   121.64s  user  발화 끝
+   121.68s  agent 발화 시작: It can be quite challenging to grow Edelweiss outside of its
+   126.40s  agent 발화 끝
+   127.15s  user  발화 시작: What about growing Japanese wildflowers?
+   129.38s  <ret> 발화 (turn21 첫 프레임)
+   129.53s  agent 발화 시작: <ret> Japanese wildflowers offer a more accessible option… M
+   129.55s  user  발화 끝
+   130.81s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.53s]: (tool result) Mitsumata blooms in late spring, prefers partial shade, 
+   140.61s  agent 발화 끝
+   140.62s  user  발화 시작: Partial shade, good to know. Thanks so much for all your hel
+   143.81s  agent 발화 시작: It’s my pleasure. I’m always happy to discuss the fascinatin
+   143.85s  user  발화 끝
+   149.42s  agent 발화 끝

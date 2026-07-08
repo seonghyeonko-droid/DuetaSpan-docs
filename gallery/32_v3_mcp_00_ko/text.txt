@@ -1,13 +1,13 @@
 v3_mcp_00_ko src=mcp style=v1
-SYSTEM: <system> 당신은 수년간 밤하늘을 관측하며 지도를 만들어 온 아마추어 천문학자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 수년간 밤하늘을 관측하며 지도를 제작해 온 아마추어 천문학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 파리 에펠탑의 좌표를 알려 주실 수 ⟨ret@3.23s⟩ 있을까요?
-[  3.54s][moshi] 네, ⟦⚡SPAN@4.51s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ 명소 위치를 찾는 건 제가 많이 해 봤습니다. 에펠탑의 좌표는 북위 사십팔 점 팔오팔사 도, 동경 이 점 이구사오 도입니다.
+[  0.00s][user ] 에펠탑의 좌표를 알려 주실 수 ⟨ret@2.49s⟩ 있을까요?
+[  2.79s][moshi] 네, ⟦⚡SPAN@3.61s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ 위치를 찾는 건 제가 자주 하는 일이랍니다. 에펠탑의 좌표는 위도 사십팔 점 팔오팔사, 경도 이 점 이구사오입니다.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 13.76s][user ] 알겠습니다. 혹시 그 근처에 있는 호텔을 찾아 주실 수 ⟨ret@18.85s⟩ 있을까요?
-[ 19.24s][moshi] 네, ⟦⚡SPAN@20.05s: (tool result) Hotel Plaza Athénée is 0.7 miles away, with a price of $1,500 per night. Hotel Raphael is 0.9 mi⟧ 근처 숙소를 찾아 드릴 수 있습니다. 플라자 아테네는 천오백 달러이고, 호텔 라파엘은 천이백 달러입니다. 1박 기준으로요.
-      CALL: {"function": "hotels_search", "arguments": {"latitude": "48.8584", "longitude": "2.2945", "radius": "1"}}
-[ 28.89s][user ] 호텔 라파엘에 오늘 밤 방을 예약해 ⟨ret@32.20s⟩ 주세요.
-[ 32.35s][moshi] 예약을 진행해 ⟦⚡SPAN@33.96s: (tool result) Your reservation at Hotel Raphael is confirmed for one night, check-in today, confirmation numbe⟧ 드리겠습니다.
-      CALL: {"function": "hotels_book", "arguments": {"hotel_name": "Hotel Raphael", "check_in_date": "today", "nights": "1"}}
+[ 12.63s][user ] 알겠습니다. 혹시 그 좌표 근처에 있는 호텔을 찾아 주실 수 ⟨ret@17.42s⟩ 있을까요?
+[ 17.80s][moshi] ⟦⚡SPAN@18.46s: (tool result) Hotel Plaza Athénée is 0.8 miles away, with a price of $1,200 per night.⟧ 네, 주변 숙소를 검색해 드릴 수 있습니다. 호텔 플라자 아테네는 십삼 킬로미터 정도 떨어져 있으며, 숙박비는 천이백 달러입니다.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "48.8584", "longitude": "2.2945"}}
+[ 27.75s][user ] 가격이 좀 비싸네요. 좀 더 저렴한 곳이 있을까요? ⟨ret@31.83s⟩
+[ 31.98s][moshi] 좀 더 합리적인 ⟦⚡SPAN@33.83s: (tool result) Hotel Saint-Paul Rive Gauche is 1.5 miles away and costs $180 per night.⟧ 가격의 호텔을 찾아 볼게요. 호텔 생 폴 리브 고슈는 이십오 킬로미터 정도 떨어져 있으며, 숙박비는 백팔십 달러입니다.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "48.8584", "longitude": "2.2945", "max_price": "200"}}

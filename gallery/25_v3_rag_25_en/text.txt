@@ -2,14 +2,14 @@ v3_rag_25_en src=hotpotqa style=v2
 SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was wondering… did Jack Sock and Raffaella Reggi play the same sport?
-[  5.80s][moshi] That’s a good question—it’s always interesting to see what athletes cross over.
-[  9.59s][moshi] ⟨ret@9.51s⟩ Let's see ⟦⚡SPAN@10.55s: Jack Sock and Raffaella Reggi both competed professionally in tennis.⟧ what the record shows— Both Jack Sock and Raffaella Reggi had professional careers playing tennis.
-[ 15.42s][user ] Tennis, huh? I thought maybe Sock played baseball at some point.
-[ 19.67s][moshi] [laugh] I can see why you’d think that—he’s quite the athlete, but no, his focus was always tennis.
-[ 25.06s][moshi] ⟨ret@24.75s⟩ I’m ⟦⚡SPAN@25.87s: Jack Sock is an American former professional tennis player, reaching a career-high ranking of world No. 8 in s⟧ checking their official profiles— Jack Sock achieved a career-high singles ranking of number eight worldwide.
-[ 31.30s][user ] Number eight—that’s pretty good! But what about Reggi? Was she ranked, ⟨ret@36.56s⟩ too?
-[ 36.72s][moshi] Let me look ⟦⚡SPAN@38.08s: Raffaella Reggi is an Italian former professional tennis player who reached a career-high singles ranking of w⟧ up her achievements— Raffaella Reggi’s highest singles ranking was sixteenth in the world.
-[ 41.62s][user ] Sixteen, wow! So, did they ever—
-[ 44.92s][moshi] «interrupted» They both reached impressive heights—
-[ 46.29s][user ] «interrupts_prev» Did they ever actually *play* against each other, though? I mean, on a professional court?
+[  0.00s][user ] So, I was wondering—what sport did Jack Sock and Raffaella Reggi both play?
+[  6.94s][moshi] That's a good question, recalling players always brings back memories of the camaraderie.
+[ 11.53s][moshi] ⟨ret@11.45s⟩ Let’s see if ⟦⚡SPAN@12.81s: Jack Sock and Raffaella Reggi both competed as professional tennis players.⟧ I can recall that pairing… Both Jack Sock and Raffaella Reggi had careers as professional tennis players.
+[ 18.69s][user ] Tennis, huh? I thought maybe they crossed over from another sport—
+[ 23.11s][moshi] It’s easy to imagine athletes trying different disciplines, I saw that a lot in my travels.
+[ 28.00s][moshi] ⟨ret@27.68s⟩ Now, ⟦⚡SPAN@28.80s: Raffaella Reggi won a bronze medal in women’s singles tennis at the 1992 Barcelona Olympics.⟧ regarding Reggi specifically… Raffaella Reggi earned a bronze medal in women’s singles tennis at the 1992 Barcelona Olympics.
+[ 36.60s][user ] Wait—did she win any other medals, or was it just that one?
+[ 40.45s][moshi] «interrupted» Well, as I was about to say—
+[ 41.35s][user ] «interrupts_prev» Just the one then? I’m curious about her overall record.
+[ 44.93s][moshi] Ah, a deeper dive into her accomplishments, a worthy pursuit.
+[ 48.59s][moshi] ⟨ret@48.27s⟩ Let’s ⟦⚡SPAN@49.39s: Raffaella Reggi also won a silver medal in women’s doubles tennis at the 1992 Barcelona Olympics.⟧ find out more about Reggi’s medals… Raffaella Reggi also secured a silver medal in women’s doubles tennis at the 1992 Barcelona Olympics.

@@ -1,45 +1,41 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 어, 데미 로바토 새 앨범이 언제 나왔었더라… 2015년쯤이었나?
-     4.37s  agent 발화 시작: 아, 맞아, 2015년은 진짜 음악 많이 나온 해였지.
-     4.54s  user  발화 끝
-     7.76s  <ret> 발화 (turn2 첫 프레임)
-     7.99s  agent 발화 시작: <ret> 잠깐만 찾아볼게… 네가 생각한 대로 *Confident* 앨범은 2015년 10월에 나왔어.
-     8.21s  agent 발화 끝
-     9.20s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.54s]: Demi Lovato’s album, *Confident*, was released in October 2015.
-    12.62s  user  발화 시작: 10월이라고? 그 앨범에서 나온 싱글을 올해 초에 들었던 것 같은데. “Cool for the Summer”
-    13.04s  agent 발화 끝
-    20.22s  user  발화 끝
-    20.27s  agent 발화 시작: 좋은 질문이야. 당연히 들어 있었지!
-    22.23s  <ret> 발화 (turn5 첫 프레임)
-    22.61s  agent 발화 시작: <ret> 싱글이 앨범 전체 분위기를 보여주는 경우가 많잖아… “Cool for the Summer”는 20
-    22.71s  agent 발화 끝
-    24.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.20s]: "Cool for the Summer" was released as the lead single from *Confident*
-    32.49s  agent 발화 끝
-    33.45s  user  발화 시작: 와, 7월이네! 진짜 오래됐네. 옛날 플레이리스트 듣다가 갑자기 생각났어.
-    38.77s  <ret> 발화 (turn7 첫 프레임)
-    38.85s  agent 발화 시작: <ret> 음, 음악은 진짜 시간을 되돌리는 힘이 있는 것 같지 않아? [happy]
-    39.05s  user  발화 끝
-    40.69s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=3.93s]: (tool result) AAPL: 170.34 USD +0.56 (0.33%)
-    42.78s  agent 발화 끝
-    43.24s  user  발화 시작: 그럼 *Confident*는 데미 로바토 앨범 네 번째였나, 아니면… 내가 순서를 잘못 기억하고 있는 건가?
-    49.78s  <ret> 발화 (turn9 첫 프레임)
-    50.09s  agent 발화 시작: <ret> 앨범 번호에 대해 생각해보니… 사실 *Confident*는 *Unbroken* 다음에 나온 다섯 
-    50.33s  user  발화 끝
-    51.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.32s]: *Confident* is Demi Lovato’s fifth studio album, released after *Unbro
-    56.06s  user  발화 시작: 다섯 번째! 아, 그래, 완전 잘못 기억했네. *Unbroken*은 항상 까먹어.
-    56.25s  agent 발화 끝
-    61.73s  agent 발화 시작: 그럴 수 있어, 특히 시간이 많이 지나면 더 헷갈리잖아.
-    61.90s  user  발화 끝
-    64.32s  user  발화 시작: *Confident* 평가는 괜찮았어? 나는 그 앨범 전체를 제대로 들어본 적이 없는 것 같아.
-    64.97s  agent 발화 끝
-    70.23s  <ret> 발화 (turn13 첫 프레임)
-    70.63s  agent 발화 시작: <ret> 앨범 평가는 항상 살펴볼 만한 가치가 있지… 비평가들은 대체로 *Confident*에 대해 긍정적
-    70.81s  user  발화 끝
-    71.83s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.45s]: *Confident* received generally positive reviews from music critics.
-    79.34s  agent 발화 끝
-    80.21s  user  발화 시작: 알아둬야겠다. 지금 한번 들어봐야겠다. 정보 고마워!
-    84.56s  user  발화 끝
-    84.62s  agent 발화 시작: 천만에! 다시 듣는 재미를 느끼거나, 처음 경험하는 기분이 들길 바라.
-    89.90s  agent 발화 끝
+     0.00s  user  발화 시작: 어이, 데미 로바토 새 앨범 언제 나와 궁금해. 올해 나온다고 얼핏 들었는데.
+     5.18s  agent 발화 시작: 음, 데미 로바토는 여러 앨범을 냈으니까, 어떤 걸 말하는지에 따라 달라.
+     5.33s  user  발화 끝
+     9.87s  user  발화 시작: 아, 맞다, 미안. 2015년에 작업했던 앨범 말이야. 그때 다들 엄청 얘기했잖아.
+    10.09s  agent 발화 끝
+    15.63s  <ret> 발화 (turn3 첫 프레임)
+    15.66s  user  발화 끝
+    15.87s  agent 발화 시작: <ret> 어디 한번 찾아볼까… 네가 예상한 대로, 2015년 10월에 “Confident”라는 앨범이 나왔
+    17.07s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.76s]: Demi Lovato’s album “Confident” was released in October 2015.
+    22.21s  agent 발화 끝
+    24.40s  user  발화 시작: 10월? 엄청 오래된 것 같은데! 그때 완전 기대했었거든.
+    28.38s  user  발화 끝
+    28.41s  agent 발화 시작: 시간 진짜 빠르지, 안 그래? 음악은 금방 바뀌어. 나는 밤새도록 별자리를 보면서 시간을 관찰하거든—별을 보
+    38.47s  user  발화 시작: [laugh] 멋진 관점이네. 그럼 “Confident”가 맞지?
+    38.51s  agent 발화 끝
+    41.84s  <ret> 발화 (turn7 첫 프레임)
+    42.24s  agent 발화 시작: <ret> 그래. 2015년 10월에 발매된 앨범 제목이 “Confident”야.
+    42.45s  user  발화 끝
+    43.84s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.35s]: (tool result) AAPL: 170.34 USD +0.23 (0.14%)
+    46.44s  user  발화 시작: 첫 싱글이 뭐였는지 기억하려고 하는데… “Cool for the Summer”였나?
+    46.59s  agent 발화 끝
+    51.44s  agent 발화 시작: 기억력 진짜 좋다! “Cool for the Summer”가 “Confident”의 리드 싱글이었어.
+    51.63s  user  발화 끝
+    55.95s  user  발화 시작: 그 노래 진짜 좋아했어. 그 여름에 엄청 많이 들었거든.
+    56.62s  agent 발화 끝
+    59.40s  agent 발화 시작: 정말 강렬한 노래였지. 내가 망원경 설치할 때 라디오에서 계속 나오던 게 기억나.
+    59.55s  user  발화 끝
+    65.01s  agent 발화 끝
+    65.92s  user  발화 시작: “Confident”가 엄청 히트했어? 잘 됐던 것 같은데 잘 기억이 안 나.
+    70.12s  <ret> 발화 (turn13 첫 프레임)
+    70.43s  agent 발화 시작: <ret> 차트 성적을 빠르게 확인해 볼게… 응, “Confident”는 빌보드 200 차트에서 1위를 데뷔
+    70.50s  user  발화 끝
+    72.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.89s]: “Confident” debuted at number one on the Billboard 200 chart.
+    78.22s  agent 발화 끝
+    78.97s  user  발화 시작: 와, 1위! 대단하다. 정보 고마워!
+    81.81s  agent 발화 시작: 천만에! 음악 역사를 공유하는 건 언제나 즐거워.
+    81.89s  user  발화 끝
+    85.51s  agent 발화 끝

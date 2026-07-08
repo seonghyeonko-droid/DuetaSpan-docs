@@ -2,13 +2,9 @@ v3_mcp_04_ko src=mcp style=v2
 SYSTEM: <system> 당신은 고전 프랑스 파티세리 훈련을 받은 파티셰입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정해 주실 수 ⟨ret@3.88s⟩ 있을까요?
-[  4.28s][moshi] 네, 고객님의 ⟦⚡SPAN@5.88s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ 요청대로 브라우저 설정을 변경해 드렸습니다. 브라우저는 이제 요청하신 대로 슈퍼크롤러 버전 십 점 일로 식별됩니다.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[ 13.04s][user ] 음, 그게 웹사이트가 저를 인식하는 방식에 영향을 주나요?
-[ 16.36s][moshi] 네, 영향을 줍니다. 웹사이트는 콘텐츠를 맞춤 설정하기 위해 사용자 에이전트를 사용하므로, 특정 크롤러로 보이게 될 겁니다.
-[ 24.99s][user ] 알겠습니다. 그럼, 지금 웹사이트가 제가 여전히 일반 브라우저라고 생각하는지 확인해 주실 수 있나요? 구글 ⟨ret@31.69s⟩ 닷컴으로요.
-[ 32.08s][moshi] 네, 변경된 사용자 ⟦⚡SPAN@33.69s: (tool result) Google reports the user agent as SuperCrawler version 10.1.⟧ 에이전트를 구글이 인식하는지 테스트해 드릴 수 있습니다. 구글에서는 고객님을 슈퍼크롤러 버전 십 점 일로 식별하고 있으며, 변경 사항이 적용된 것을 확인했습니다.
-      CALL: {"function": "playwright_get_user_agent", "arguments": {"url": "https://www.google.com"}}
-[ 42.68s][user ] 아, 그럼 제대로 작동한 거군요? 좋네요. 이제 다시 원래대로 되돌릴 수 있을까요?
-[ 48.15s][moshi] 네, 즉시 사용자 에이전트를 기본 설정으로 되돌릴 수 있습니다.
+[  0.00s][user ] 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정해 ⟨ret@3.36s⟩ 주시겠어요?
+[  3.75s][moshi] ⟦⚡SPAN@4.40s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ 네, 브라우저 식별 정보를 변경하고 있습니다— 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 업데이트했습니다.
+[ 10.47s][user ] 음, 실제로 작동하는지 확인해 봐도 될까요? 현재 사용자 에이전트가 뭔지 확인해 줄 수 ⟨ret@15.68s⟩ 있나요?
+[ 15.99s][moshi] 그 변경 ⟦⚡SPAN@17.28s: (tool result) The current user agent is SuperCrawler version 10.1.⟧ 사항을 확인해 보겠습니다— 네, 그렇습니다. 현재 사용자 에이전트는 슈퍼크롤러 버전 십 점 일로 보고됩니다.
+[ 24.63s][user ] 알겠습니다, 좋네요. 루브르 박물관 근처의 식당을 검색해 줄 수 ⟨ret@28.29s⟩ 있나요?
+[ 28.52s][moshi] 물론입니다, 근처 ⟦⚡SPAN@30.29s: (tool result) Restaurants near the Louvre: Le Fumoir (French, 4.5 stars), Angelina (Pastries, 4.2 stars), Café⟧ 식당을 찾아보겠습니다— 루브르 근처에 세 곳의 식당을 찾았습니다. 르 퓌모아, 안젤리나, 카페 마를리입니다.

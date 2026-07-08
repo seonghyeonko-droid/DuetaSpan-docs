@@ -2,68 +2,80 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 프랑스 상원 의원 수는 몇 명인가요?
-     2.32s  <ret> 발화 (turn1 첫 프레임)
-     2.54s  user  발화 끝
-     2.55s  agent 발화 시작: <ret> 음, 프랑스 정부에 대한 좋은 질문이세요. 죄송하지만 현재 프랑스 상원 의원 수에 대한 정확한 숫
-     3.44s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.12s]: (no information found)
-    10.54s  user  발화 시작: 아, 그렇군요. 그럼 미국 상원은 몇 명인가요?
-    10.56s  agent 발화 끝
-    13.55s  <ret> 발화 (turn3 첫 프레임)
-    13.87s  agent 발화 시작: <ret> 아, 미국 상원이네요—제가 훨씬 더 잘 알고 있는 시스템이에요. 미국 상원에는 백 명의 상원 의원
-    13.97s  user  발화 끝
-    15.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: The United States Senate is composed of one hundred senators, two from
-    24.73s  user  발화 시작: 그렇군요. 주마다 두 명씩요. 음, 오늘 밤에 가장 밝게 보이는 별은 무엇인가요?
-    24.86s  agent 발화 끝
-    32.31s  agent 발화 시작: 물론, 위치에 따라 다르겠지만 일반적으로 시리우스예요.
-    32.42s  user  발화 끝
-    36.57s  agent 발화 끝
-    36.75s  user  발화 시작: 시리우스요? 들어본 적이 있어요. 찾기 쉬운 별인가요?
-    40.82s  <ret> 발화 (turn7 첫 프레임)
-    41.13s  agent 발화 시작: <ret> 정말 겨울 하늘에서 두드러지게 보이죠. 시리우스는 지구에서 볼 수 있는 가장 밝은 별이며, 겉보기
-    41.24s  user  발화 끝
-    42.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: Sirius is the brightest star in the night sky with an apparent magnitu
-    50.31s  agent 발화 끝
-    50.39s  user  발화 시작: 마이너스 일 점 사육… 와, 정말 구체적이네요.
-    55.00s  agent 발화 시작: [laugh] 천문학적 측정은 종종 그렇답니다! 상대적인 밝기에 대한 것이거든요.
-    55.11s  user  발화 끝
-    59.59s  agent 발화 끝
-    59.91s  user  발화 시작: 맞아요. 시리우스는 어떤 별자리에 속해 있나요?
-    63.16s  <ret> 발화 (turn11 첫 프레임)
-    63.24s  user  발화 끝
-    63.30s  agent 발화 시작: <ret> 시리우스는 잘 알려진 별자리에 뚜렷하게 위치해 있어요. 시리우스는 큰개자리, 즉 카니스 마요르 별
-    65.00s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.78s]: Sirius is part of the constellation Canis Major, the Greater Dog.
-    71.19s  user  발화 시작: 큰개자리… 정말 멋진 이미지네요.
-    71.28s  agent 발화 끝
-    74.52s  user  발화 끝
-    74.68s  agent 발화 시작: 그렇지 않나요? 고대 문화에서는 별에서 동물을 자주 보았어요.
-    79.23s  user  발화 시작: 시리우스 다음으로 밝은 별은 무엇인가요?
-    79.36s  agent 발화 끝
-    82.70s  <ret> 발화 (turn15 첫 프레임)
-    83.01s  agent 발화 시작: <ret> 시리우스 다음에는 또 다른 밝은 별이 빛나고 있어요. 카노푸스는 밤하늘에서 두 번째로 밝은 별이며
-    83.06s  user  발화 끝
-    83.20s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.55s]: Canopus is the second brightest star in the night sky, with an apparen
-    93.68s  agent 발화 끝
-    94.40s  user  발화 시작: 카노푸스… 그런 별은 본 적이 없는 것 같아요.
-    98.20s  user  발화 끝
-    98.42s  agent 발화 시작: 조금 더 남쪽에 있어서 가시성은 위도에 따라 달라요.
-   102.26s  agent 발화 끝
-   103.74s  user  발화 시작: 저는 시카고에 있어요.
-   105.07s  <ret> 발화 (turn19 첫 프레임)
-   105.35s  user  발화 끝
-   105.46s  agent 발화 시작: <ret> 시카고에서는 일부 별자리를 잘 볼 수 있어요. 시카고에서는 카노푸스가 남쪽 지평선 근처에서 부분적
-   107.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: Chicago's latitude is 41.8781° N, making Canopus partially visible on 
-   113.67s  user  발화 시작: 아, 그럼 보기 힘든가요?
-   113.71s  agent 발화 끝
-   115.16s  agent 발화 시작: 그럴 수 있어요—찾기가 조금 어려울 수도 있어요.
-   115.32s  user  발화 끝
-   118.20s  agent 발화 끝
-   118.28s  user  발화 시작: 행성은 어때요? 오늘 밤에 보이는 행성이 있나요?
-   121.48s  <ret> 발화 (turn23 첫 프레임)
-   121.56s  agent 발화 시작: <ret> 몇몇 행성이 오늘 밤에 멋진 모습을 보여주고 있어요. 목성은 중앙 표준시로 밤 여덟 시 십이 분에
-   121.65s  user  발화 끝
-   123.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.29s]: (tool result) Jupiter is visible at 8:12 PM CST with an altitude of 35
-   131.41s  user  발화 시작: 목성과 화성! 멋지네요. 고마워요, 모시.
-   131.44s  agent 발화 끝
-   135.43s  user  발화 끝
-   135.50s  agent 발화 시작: 천만에요! 밤하늘을 관찰하는 것은 정말 보람 있는 일이에요.
-   139.99s  agent 발화 끝
+     2.19s  <ret> 발화 (turn1 첫 프레임)
+     2.42s  agent 발화 시작: <ret> 음, 프랑스 정부에 대한 좋은 질문이세요. 죄송하지만 현재 그 특정 숫자를 알려 드릴 수 없어요.
+     2.44s  user  발화 끝
+     3.31s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.89s]: (no information found)
+    11.87s  user  발화 시작: 아, 네 알겠습니다. 그럼 미국 상원 의원 수는 몇 명인가요?
+    11.92s  agent 발화 끝
+    15.64s  <ret> 발화 (turn3 첫 프레임)
+    15.96s  agent 발화 시작: <ret> 아, 미국 상원은 친숙한 영역이죠. 각 주 50곳에서 2명씩 총 백 명의 상원 의원이 있어요. 정
+    16.04s  user  발화 끝
+    17.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.77s]: The United States Senate is composed of one hundred senators, two from
+    24.34s  user  발화 시작: 맞아요. 그럼 현재 미국 상원 임시 의장은 누구인가요?
+    24.44s  agent 발화 끝
+    27.34s  <ret> 발화 (turn5 첫 프레임)
+    27.49s  agent 발화 시작: <ret> 정말 중요한 리더십 역할이죠. 현재 패티 머레이 의원님이 임시 의장을 맡고 계세요. 상원에서 강력
+    27.66s  user  발화 끝
+    28.30s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.47s]: As of November 15, 2023, Patty Murray is the President Pro Tempore of 
+    35.88s  agent 발화 끝
+    35.98s  user  발화 시작: 흥미롭네요. 저는 애리조나 여행을 계획 중인데—
+    40.39s  user  발화 시작: —그러니까 오늘 밤 가장 밝게 보이는 별은 무엇인가요?
+    40.47s  user  발화 끝
+    43.40s  <ret> 발화 (turn8 첫 프레임)
+    43.79s  agent 발화 시작: <ret> 정말 멋진 질문이네요, 어떤 천문학자라도 물어볼 만한 질문이죠! 시리우스가 현재 가장 밝은 별로,
+    43.90s  user  발화 끝
+    44.60s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.35s]: The brightest star visible in the night sky is Sirius, with an apparen
+    57.32s  user  발화 시작: 와, 마이너스 1.46… 정말 밝네요. 찾기 쉬운가요?
+    57.38s  agent 발화 끝
+    62.56s  user  발화 끝
+    62.70s  agent 발화 시작: 네, 비교적 찾기 쉬워요. 큰개자리에 위치해 있어요.
+    66.30s  agent 발화 끝
+    66.59s  user  발화 시작: 큰개자리… 빅 독, 맞죠?
+    69.03s  agent 발화 시작: [laugh] 맞아요! 그런 눈에 띄는 별자리에 어울리는 이름이죠.
+    69.12s  user  발화 끝
+    73.16s  user  발화 시작: 만약 제가 남쪽을 향하고 있다면, 대략 어느 방향을 봐야 할까요?
+    73.28s  agent 발화 끝
+    76.87s  <ret> 발화 (turn14 첫 프레임)
+    77.18s  agent 발화 시작: <ret> 방향을 잡아 드릴게요. 시리우스는 현재 방위각이 백팔십 도이고 고도가 삼십오 도예요. 남쪽을 보고
+    77.38s  user  발화 끝
+    78.23s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.79s]: (tool result) Current azimuth: 180 degrees. Current altitude: 35 degre
+    85.84s  user  발화 시작: 백팔십 도… 바로 남쪽이네요. 완벽해요.
+    85.85s  agent 발화 끝
+    89.68s  user  발화 끝
+    89.94s  agent 발화 시작: 정확해요. 시선을 조절하면 꽤 눈에 띄게 보일 거예요.
+    93.77s  agent 발화 끝
+    94.42s  user  발화 시작: 시리우스 *근처*에는 무엇이 보이나요? 성운이나 은하가 있나요?
+    99.16s  <ret> 발화 (turn18 첫 프레임)
+    99.23s  agent 발화 시작: <ret> 항상 주변에 경이로운 것들이 있답니다! 장미 성운이 시리우스에서 동남쪽으로 약 오 도 거리에 있어
+    99.33s  user  발화 끝
+   100.84s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.80s]: The Rosette Nebula is located approximately five degrees southeast of 
+   108.74s  agent 발화 끝
+   110.00s  user  발화 시작: 성운… 정말 멋질 것 같네요. 얼마나 멀리 떨어져 있나요?
+   113.65s  <ret> 발화 (turn20 첫 프레임)
+   113.80s  agent 발화 시작: <ret> 거리는 항상 겸손하게 만드는 개념이죠. 우리 행성에서 대략 오천 광년 떨어져 있어요. 엄청난 공간
+   113.98s  user  발화 끝
+   114.61s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.21s]: The Rosette Nebula is approximately 5,000 light-years from Earth.
+   121.70s  user  발화 시작: 오천 광년! 믿을 수 없네요. 그럼 우리가 보고 있는 빛은 오천 년 전에 출발한 빛인가요?
+   121.82s  agent 발화 끝
+   128.14s  user  발화 끝
+   128.22s  agent 발화 시작: [happy] 맞아요! 멀리 떨어진 물체를 볼 때는 과거를 보고 있는 거예요.
+   133.03s  agent 발화 끝
+   133.07s  user  발화 시작: 그건… 놀랍네요. 우리가 볼 수 있는 가장 먼 곳은 어디인가요?
+   137.76s  <ret> 발화 (turn24 첫 프레임)
+   137.80s  user  발화 끝
+   137.83s  agent 발화 시작: <ret> 그건 항상 경이로움을 불러일으키는 질문이죠. 관측 가능한 우주는 지름이 사십육억 오천만 광년이에요
+   139.44s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.88s]: The observable universe extends approximately 46.5 billion light-years
+   147.81s  agent 발화 끝
+   149.31s  user  발화 시작: 사십육… 억. 와. 제가— 그러니까, 그 너머에도 별이 있나요?
+   156.57s  agent 발화 시작: 그럴 가능성이 높아요, 하지만 현재 기술로는 관측할 수 없어요.
+   156.72s  user  발화 끝
+   160.98s  user  발화 시작: 그럼 우리가 볼 수 있는 것보다 더 큰 우주가 있다는 건가요?
+   161.01s  agent 발화 끝
+   164.58s  user  발화 끝
+   164.94s  agent 발화 시작: 아마도 그럴 거예요! 우리 관측 가능한 우주는 훨씬 더 큰 현실 속의 거품일 뿐일 거예요.
+   170.72s  agent 발화 끝
+   171.25s  user  발화 시작: 그건… 생각할 게 너무 많네요. 고마워요, 모시.
+   174.76s  agent 발화 시작: 천만에요. 우주는 신비로 가득 차 있고, 제가 알고 있는 것을 공유하게 되어 기뻐요.
+   174.90s  user  발화 끝
+   180.78s  agent 발화 끝

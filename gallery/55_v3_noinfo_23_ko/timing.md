@@ -1,63 +1,65 @@
 # v3_noinfo_23_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
-     2.54s  <ret> 발화 (turn1 첫 프레임)
-     2.70s  agent 발화 시작: <ret> 네, 해당 날짜의 과거 날씨 데이터를 확인해 볼게요… 12월 24일 도쿄는 맑은 하늘이었고, 최고
-     2.87s  user  발화 끝
-     4.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.84s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    12.38s  agent 발화 끝
-    12.48s  user  발화 시작: 음, 같은 날 삿포로는 어땠어?
-    14.53s  <ret> 발화 (turn3 첫 프레임)
-    14.60s  agent 발화 시작: <ret> 네, 삿포로의 해당 날짜 날씨를 확인해 드릴게요… 삿포로는 눈이 오는 날씨였고, 최고 기온은 영하
-    14.60s  user  발화 끝
-    16.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.71s]: (tool result) The weather in Sapporo on December twenty-fourth last ye
-    23.63s  agent 발화 끝
-    23.73s  user  발화 시작: 차가이가 꽤 크네.
-    24.73s  agent 발화 시작: 네, 두 도시 간에 상당한 온도 차이가 있었네요. 물론 지리적 요인이 큰 역할을 합니다.
-    24.97s  user  발화 끝
-    30.51s  agent 발화 끝
-    30.55s  user  발화 시작: 삿포로에서 온천이 좋은 호텔 좀 찾아 줘.
-    32.84s  <ret> 발화 (turn7 첫 프레임)
-    33.23s  agent 발화 시작: <ret> 네, 삿포로에서 온천 시설이 있는 호텔을 검색해 드릴게요… 호텔 삿포로 그랜드는 온천이 있으며, 
-    33.46s  user  발화 끝
-    34.45s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.53s]: (tool result) Hotel Sapporo Grand is available with an onsen, priced a
-    42.47s  user  발화 시작: 2만 5천 엔… 괜찮네.
-    42.79s  agent 발화 끝
-    44.45s  user  발화 끝
-    44.66s  agent 발화 시작: 네, 평판이 좋은 곳인 것 같아요. 많은 방문객들이 전통적인 분위기를 즐깁니다.
-    47.59s  user  발화 시작: 응.
-    48.03s  user  발화 끝
-    49.69s  user  발화 시작: 거기 1월 15일부터 2박 예약해 줘.
-    49.70s  agent 발화 끝
-    51.63s  <ret> 발화 (turn12 첫 프레임)
-    52.03s  agent 발화 시작: <ret> 네, 예약 가능 여부를 확인하고 예약해 드릴게요… 호텔 삿포로 그랜드 1월 15일부터 17일까지 
-    52.04s  user  발화 끝
-    53.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Reservation confirmed at Hotel Sapporo Grand for two nig
-    64.28s  agent 발화 끝
-    66.07s  user  발화 시작: 좋아! 혹시…
-    67.58s  agent 발화 시작: 아, 말씀드리려고 했는데—
-    67.72s  user  발화 끝
-    68.72s  user  발화 시작: …1월에 삿포로 근처에 괜찮은 하이킹 코스 있어?
-    69.24s  agent 발화 끝
-    71.58s  <ret> 발화 (turn16 첫 프레임)
-    71.90s  agent 발화 시작: <ret> 오, 좋은 질문이에요! 1월에는 하이킹이 어려울 수 있지만, 선택지가 있습니다…
-    72.05s  user  발화 끝
-    73.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (tool result) The Mount Moiwa trail is open in January, rated moderate
-    77.78s  agent 발화 끝
-    77.80s  agent 발화 시작: 모이와 산 등산로는 1월에도 개방되어 있고, 난이도는 보통이며, 하이킹하는 데 약 2시간이 걸립니다.
-    85.01s  user  발화 시작: 2시간이면 괜찮겠어.
-    85.20s  agent 발화 끝
-    86.56s  agent 발화 시작: 네, 인기 있는 코스이며, 겨울에도 도시의 멋진 전망을 제공합니다.
-    86.67s  user  발화 끝
-    91.23s  agent 발화 끝
-    91.34s  user  발화 시작: 1월 10일에 하이킹 부츠 챙기라고 알림 설정해 줘.
-    94.23s  <ret> 발화 (turn21 첫 프레임)
-    94.38s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요… 1월 10일 오전 9시에 하이킹 부츠를 챙기라는 알림을 설정했습니다.
-    94.57s  user  발화 끝
-    95.99s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.70s]: (tool result) Reminder set for January tenth at nine AM: Pack hiking b
-   100.49s  agent 발화 끝
-   101.55s  user  발화 시작: 고마워, 정말 큰 도움이 됐어!
-   103.96s  agent 발화 시작: 천만에요. 여행 계획에 도움을 드릴 수 있어서 기쁩니다. 알프스 지역에 대해 이야기하는 것을 좋아합니다.
-   104.00s  user  발화 끝
-   110.26s  agent 발화 끝
+     0.00s  user  발화 시작: 지난해 12월 24일 도쿄 날씨가 어땠어?
+     2.68s  <ret> 발화 (turn1 첫 프레임)
+     2.83s  agent 발화 시작: <ret> 날씨 확인해 보는 건 아주 간단해요… 지난 12월 24일 도쿄는 맑은 하늘이었고, 최고 기온은 1
+     3.04s  user  발화 끝
+     4.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.26s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    11.22s  agent 발화 끝
+    11.31s  user  발화 시작: 꽤 추웠겠네. 우에노 공원 근처에 괜찮은 카페 좀 찾아 줘.
+    15.57s  user  발화 끝
+    15.59s  <ret> 발화 (turn3 첫 프레임)
+    15.67s  agent 발화 시작: <ret> 우에노 공원 근처 카페를 검색하고 있어요… 카페 론 론은 우에노 공원에서 0.2킬로미터 떨어져 있
+    17.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: (tool result) Cafe Ron Ron is located point-two kilometers from Ueno P
+    25.82s  agent 발화 끝
+    25.94s  user  발화 시작: 완벽하네. 예약 가능한지 알아봐 줘.
+    27.63s  <ret> 발화 (turn5 첫 프레임)
+    27.95s  agent 발화 시작: <ret> 예약 가능 여부를 확인해 볼게요… 아쉽게도 카페 론 론은 현재 예약을 받지 않아요.
+    28.20s  user  발화 끝
+    29.15s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.99s]: (tool result) Cafe Ron Ron does not accept reservations.
+    33.13s  agent 발화 끝
+    33.40s  user  발화 시작: 아. 음. 그럼 예약 가능한 다른 평점 좋은 카페는 없어?
+    37.21s  <ret> 발화 (turn7 첫 프레임)
+    37.29s  agent 발화 시작: <ret> 조금 더 넓게 검색해 볼게요… 커피 밸리는 우에노 공원에서 0.3킬로미터 떨어져 있고, 평점은 4
+    37.52s  user  발화 끝
+    39.13s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.51s]: (tool result) Coffee Valley, point-three kilometers away, has a four-p
+    46.36s  user  발화 시작: 4.5점… 아주 좋네. 내일 오후에 두 명 자리를 예약해 봐.
+    46.66s  agent 발화 끝
+    50.67s  <ret> 발화 (turn9 첫 프레임)
+    51.03s  user  발화 끝
+    51.07s  agent 발화 시작: <ret> 알겠습니다. 예약을 진행해 드릴게요… 커피 밸리에서 내일 오후 2시에 두 명으로 예약이 확정됐습니
+    52.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.34s]: (tool result) Reservation confirmed at Coffee Valley for two people to
+    60.89s  user  발화 시작: 좋아! 정말 고마워. 지금 우에노 공원에 피어 있는 흥미로운 식물이 있어?
+    60.99s  agent 발화 끝
+    65.67s  agent 발화 시작: 우에노 공원은 식물 관찰하기에 아주 좋은 곳이에요—
+    65.89s  user  발화 끝
+    68.08s  user  발화 시작: 알프스 초롱꽃 같은 게 피어 있어?
+    68.91s  agent 발화 끝
+    70.10s  agent 발화 시작: 사실 우에노 공원은 고도가 충분하지 않아서 진짜 알프스 초롱꽃이 자라지는 않아요. 하지만 비슷하게 생긴 종이
+    70.33s  user  발화 끝
+    79.33s  agent 발화 끝
+    79.36s  user  발화 시작: 아, 그렇지. 그럴 수도 있겠네.
+    81.20s  user  발화 끝
+    81.28s  agent 발화 시작: 음, 그렇네요.
+    82.30s  user  발화 시작: 응.
+    82.65s  user  발화 끝
+    82.84s  <ret> 발화 (turn17 첫 프레임)
+    83.08s  agent 발화 시작: <ret> 알프스 식물에 관심이 있으시다는 점을 고려해서… 알프스 초롱꽃은 유럽 알프스에 자생하며 7월부터 
+    83.26s  agent 발화 끝
+    84.12s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.30s]: (tool result) Edelweiss is native to the European Alps, blooming from 
+    91.89s  agent 발화 끝
+    92.21s  user  발화 시작: 알프스 초롱꽃은 예쁘지. 키우기 어려워?
+    94.85s  agent 발화 시작: 알프스 초롱꽃은 자연 서식지 밖에서는 키우기가 꽤 어려울 수 있어요.
+    94.93s  user  발화 끝
+    99.43s  agent 발화 끝
+    99.59s  user  발화 시작: 일본 야생화는 어때?
+   100.80s  <ret> 발화 (turn21 첫 프레임)
+   100.96s  agent 발화 시작: <ret> 일본 야생화는 좀 더 쉽게 접근할 수 있는 선택지예요… 미쓰마타는 늦은 봄에 피고, 반그늘에서 잘
+   101.20s  user  발화 끝
+   102.16s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.41s]: (tool result) Mitsumata blooms in late spring, prefers partial shade, 
+   111.20s  agent 발화 끝
+   112.12s  user  발화 시작: 반그늘, 알아둬야겠다. 정말 많은 도움 고마워!
+   115.41s  agent 발화 시작: 도와드릴 수 있어서 기뻐요. 식물의 매혹적인 세계에 대해 이야기하는 것을 언제나 즐거워합니다.
+   115.45s  user  발화 끝
+   120.73s  agent 발화 끝

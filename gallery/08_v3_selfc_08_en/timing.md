@@ -2,46 +2,48 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     4.26s  <ret> 발화 (turn1 첫 프레임)
-     4.58s  user  발화 끝
-     4.66s  agent 발화 시작: <ret> Let's see what bus options are available… There are th
-     5.46s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.36s]: (tool result) Three buses run from Chicago to Denver on May tenth: one
-    13.93s  user  발화 시작: That ten PM one sounds good. Can you book it?
-    14.12s  agent 발화 끝
-    17.09s  <ret> 발화 (turn3 첫 프레임)
-    17.33s  agent 발화 시작: <ret> Certainly, let me confirm the details… Your reservatio
-    17.44s  user  발화 끝
-    18.37s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.63s]: (tool result) Your reservation for three passengers on the 10:00 PM bu
-    26.08s  agent 발화 끝
-    26.47s  user  발화 시작: Great. And what's the weather like in Denver on that day?
-    29.67s  <ret> 발화 (turn5 첫 프레임)
-    29.70s  user  발화 끝
-    29.83s  agent 발화 시작: <ret> Denver’s weather is always a good thing to know… It wi
-    30.95s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.65s]: (tool result) The forecast for Denver on May tenth is sunny, with a hi
-    38.36s  agent 발화 끝
-    38.52s  user  발화 시작: Hmm, seventy-five— I mean, sixty-five sounds better.
-    41.33s  <ret> 발화 (turn7 첫 프레임)
-    41.73s  agent 발화 시작: <ret> Let me double-check that for you… The forecast remains
-    41.76s  user  발화 끝
-    41.83s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.88s]: (tool result) The forecast for Denver on May tenth is sunny, with a hi
-    48.20s  user  발화 시작: Is there anything interesting to see near the bus station in
-    48.32s  agent 발화 끝
-    52.22s  <ret> 발화 (turn9 첫 프레임)
-    52.30s  agent 발화 시작: <ret> Oh, Denver has so much to offer— The Denver Art Museum
-    52.37s  user  발화 끝
-    53.90s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.27s]: <ret>
-    56.96s  user  발화 시작: Yeah.
-    57.41s  user  발화 끝
-    59.93s  agent 발화 시작: It's a truly exceptional collection.
-    60.09s  agent 발화 끝
-    62.33s  agent 발화 끝
-    62.55s  user  발화 시작: Pre-Columbian art? Tell me more about that.
-    65.79s  user  발화 끝
-    65.81s  agent 발화 시작: Well, the museum holds a remarkable collection of ceramics a
-    72.42s  user  발화 시작: And are there any guided tours focusing on those pieces?
-    72.48s  agent 발화 끝
-    75.72s  <ret> 발화 (turn15 첫 프레임)
-    75.95s  agent 발화 시작: <ret> Guided tours are a wonderful way to experience the col
-    76.12s  user  발화 끝
-    77.48s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.70s]: (tool result) Guided tours of the Pre-Columbian collection at the Denv
-    79.65s  agent 발화 끝
+     4.04s  <ret> 발화 (turn1 첫 프레임)
+     4.39s  user  발화 끝
+     4.43s  agent 발화 시작: <ret> Certainly, let me check bus availability for that rout
+     5.56s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.82s]: (tool result) Three buses are available on May tenth: at 8:00 AM, 2:00
+    12.09s  user  발화 시작: What are the prices for those?
+    12.27s  agent 발화 끝
+    13.64s  <ret> 발화 (turn3 첫 프레임)
+    13.88s  agent 발화 시작: <ret> I can quickly look up the fares for each of those buse
+    14.02s  user  발화 끝
+    15.24s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.40s]: (tool result) The 8:00 AM bus costs $150, the 2:00 PM bus costs $180, 
+    23.52s  agent 발화 끝
+    24.48s  user  발화 시작: Hmm, I— I meant May eleventh, not tenth.
+    28.36s  user  발화 끝
+    28.37s  <ret> 발화 (turn5 첫 프레임)
+    28.53s  agent 발화 시작: <ret> Ah, you'd like me to recheck for the eleventh instead?
+    29.97s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.41s]: (tool result) Two buses are available on May eleventh: at 9:00 AM and 
+    36.36s  agent 발화 끝
+    36.66s  user  발화 시작: Are those sleeper buses?
+    38.27s  user  발화 끝
+    38.44s  agent 발화 시작: As to whether those buses—
+    39.56s  user  발화 시작: Do they have restrooms?
+    40.24s  agent 발화 끝
+    41.03s  agent 발화 시작: Both the 9 AM and 6 PM buses have restrooms, but neither is 
+    41.16s  user  발화 끝
+    44.37s  user  발화 시작: Really?
+    45.20s  user  발화 끝
+    46.22s  agent 발화 끝
+    46.22s  agent 발화 시작: It's a roughly eighteen-hour trip, so restrooms are quite he
+    49.72s  user  발화 시작: Book me on the 9 AM bus.
+    49.92s  agent 발화 끝
+    52.09s  <ret> 발화 (turn13 첫 프레임)
+    52.16s  user  발화 끝
+    52.16s  agent 발화 시작: <ret> Certainly, let’s go ahead and reserve seats for you. Y
+    54.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.68s]: (tool result) Your booking is confirmed: confirmation number is BX947Z
+    60.74s  agent 발화 끝
+    60.94s  user  발화 시작: Great, can you send me a reminder the day before?
+    63.38s  <ret> 발화 (turn15 첫 프레임)
+    63.78s  agent 발화 시작: <ret> Absolutely, I can set a reminder for that. I’ve set a 
+    64.03s  user  발화 끝
+    64.50s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.34s]: (tool result) Reminder set for May tenth at 9:00 AM: “Bus to Denver de
+    70.22s  agent 발화 끝
+    70.48s  user  발화 시작: Perfect. Thanks!
+    72.09s  user  발화 끝
+    72.33s  agent 발화 시작: You’re very welcome. I hope you enjoy the journey to Denver—
+    79.28s  agent 발화 끝

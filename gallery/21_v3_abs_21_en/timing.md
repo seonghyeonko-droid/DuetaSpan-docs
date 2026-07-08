@@ -2,68 +2,80 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.55s  <ret> 발화 (turn1 첫 프레임)
-     2.58s  user  발화 끝
-     2.60s  agent 발화 시작: <ret> That's a good question about French governance. I’m af
-     3.67s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.37s]: (no information found)
-    10.40s  agent 발화 끝
-    10.47s  user  발화 시작: Oh. Well, what about the US Senate? How many senators are th
-    14.65s  <ret> 발화 (turn3 첫 프레임)
-    14.88s  agent 발화 시작: <ret> Ah, the US Senate—a system I’m much more familiar with
-    14.91s  user  발화 끝
-    15.69s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.55s]: The United States Senate is composed of one hundred senators, two from
-    24.11s  agent 발화 끝
-    24.25s  user  발화 시작: That makes sense. Two per state. Um, what's the brightest st
-    29.81s  agent 발화 시작: That depends on your location, of course, but generally it's
-    29.85s  user  발화 끝
-    34.61s  agent 발화 끝
-    35.64s  user  발화 시작: Sirius? I’ve heard of it. Is it easy to spot?
-    38.59s  <ret> 발화 (turn7 첫 프레임)
-    38.98s  agent 발화 시작: <ret> It is indeed quite prominent in the winter sky. Sirius
-    39.15s  user  발화 끝
-    40.43s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.28s]: Sirius is the brightest star in the night sky with an apparent magnitu
-    48.81s  agent 발화 끝
-    50.18s  user  발화 시작: Negative one point four six… Wow, that's specific.
-    54.48s  user  발화 끝
-    54.53s  agent 발화 시작: [laugh] Astronomical measurements often are! It's all about 
-    60.82s  agent 발화 끝
-    60.97s  user  발화 시작: Right. What constellation is Sirius in?
-    63.66s  <ret> 발화 (turn11 첫 프레임)
-    63.73s  agent 발화 시작: <ret> Sirius holds a prominent position within a well-known 
-    63.88s  user  발화 끝
-    65.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: Sirius is part of the constellation Canis Major, the Greater Dog.
-    73.69s  user  발화 시작: Canis Major… the Greater Dog. That’s a nice image.
-    74.03s  agent 발화 끝
-    77.70s  agent 발화 시작: It is, isn’t it? Ancient cultures often saw animals in the s
-    77.81s  user  발화 끝
-    83.30s  agent 발화 끝
-    83.33s  user  발화 시작: What's the next brightest star after Sirius?
-    86.01s  <ret> 발화 (turn15 첫 프레임)
-    86.32s  agent 발화 시작: <ret> After Sirius, another brilliant star shines brightly. 
-    86.39s  user  발화 끝
-    87.53s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.61s]: Canopus is the second brightest star in the night sky, with an apparen
-    95.25s  agent 발화 끝
-    95.54s  user  발화 시작: Canopus… I don’t think I’ve ever noticed that one.
-    98.08s  user  발화 끝
-    98.28s  agent 발화 시작: It’s a bit further south, so visibility depends on your lati
-   101.98s  agent 발화 끝
-   102.12s  user  발화 시작: I’m in Chicago.
-   103.20s  <ret> 발화 (turn19 첫 프레임)
-   103.43s  agent 발화 시작: <ret> Chicago offers a good view of some constellations. Fro
-   103.50s  user  발화 끝
-   104.40s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.39s]: Chicago's latitude is 41.8781° N, making Canopus partially visible on 
-   111.37s  user  발화 시작: Oh, so it’s hard to see?
-   111.50s  agent 발화 끝
-   112.97s  user  발화 끝
-   113.02s  agent 발화 시작: It can be, yes—a bit of a challenge to spot.
-   116.35s  agent 발화 끝
-   118.86s  user  발화 시작: What about planets? Are any planets visible tonight?
-   121.93s  <ret> 발화 (turn23 첫 프레임)
-   122.09s  user  발화 끝
-   122.32s  agent 발화 시작: <ret> Several planets are putting on a show tonight. Jupiter
-   123.69s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.91s]: (tool result) Jupiter is visible at 8:12 PM CST with an altitude of 35
-   131.04s  agent 발화 끝
-   131.06s  user  발화 시작: Jupiter and Mars! That’s cool. Thanks, Moshi.
-   134.29s  agent 발화 시작: You are most welcome! Observing the night sky is a truly rew
-   134.29s  user  발화 끝
-   139.85s  agent 발화 끝
+     2.86s  <ret> 발화 (turn1 첫 프레임)
+     2.94s  agent 발화 시작: <ret> That's a good question about French governance. I’m af
+     2.96s  user  발화 끝
+     3.98s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.31s]: (no information found)
+    11.43s  user  발화 시작: Oh, okay. Well, what about the US Senate? How many senators 
+    11.52s  agent 발화 끝
+    15.30s  <ret> 발화 (turn3 첫 프레임)
+    15.53s  agent 발화 시작: <ret> Ah, the US Senate – a familiar landscape. There are on
+    15.55s  user  발화 끝
+    17.22s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.19s]: The United States Senate is composed of one hundred senators, two from
+    25.50s  agent 발화 끝
+    25.55s  user  발화 시작: That’s right. And who is the current President Pro Tempore o
+    30.30s  <ret> 발화 (turn5 첫 프레임)
+    30.35s  agent 발화 시작: <ret> A key leadership role, certainly. Patty Murray current
+    30.46s  user  발화 끝
+    31.18s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.75s]: As of November 15, 2023, Patty Murray is the President Pro Tempore of 
+    38.05s  agent 발화 끝
+    38.77s  user  발화 시작: Interesting. I’m planning a trip to Arizona—
+    42.25s  user  발화 시작: —I mean, what’s the brightest star visible tonight?
+    42.33s  user  발화 끝
+    44.50s  <ret> 발화 (turn8 첫 프레임)
+    44.90s  agent 발화 시작: <ret> A wonderful question, as any stargazer would ask! Siri
+    45.16s  user  발화 끝
+    46.26s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.03s]: The brightest star visible in the night sky is Sirius, with an apparen
+    57.76s  user  발화 시작: Wow, -1.46… that’s bright. Is it easy to find?
+    57.80s  agent 발화 끝
+    63.22s  user  발화 끝
+    63.35s  agent 발화 시작: It’s relatively easy to locate, yes. It's in the constellati
+    69.15s  agent 발화 끝
+    70.25s  user  발화 시작: Canis Major… the Big Dog, right?
+    73.43s  user  발화 끝
+    73.44s  agent 발화 시작: [laugh] Exactly! A fitting name for such a prominent constel
+    78.07s  agent 발화 끝
+    78.86s  user  발화 시작: So, if I’m facing south, roughly where should I look?
+    82.07s  <ret> 발화 (turn14 첫 프레임)
+    82.14s  agent 발화 시작: <ret> Let me get a bearing for you. Sirius is currently at a
+    82.23s  user  발화 끝
+    83.27s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.28s]: (tool result) Current azimuth: 180 degrees. Current altitude: 35 degre
+    91.89s  user  발화 시작: One eighty degrees… that's straight south. Perfect.
+    91.92s  agent 발화 끝
+    95.87s  user  발화 끝
+    95.89s  agent 발화 시작: Precisely. It should be quite noticeable once you’ve adjuste
+   100.84s  agent 발화 끝
+   101.34s  user  발화 시작: Is there anything interesting to see *near* Sirius? Any nebu
+   105.62s  <ret> 발화 (turn18 첫 프레임)
+   105.92s  agent 발화 시작: <ret> There are always wonders nearby! The Rosette Nebula is
+   105.93s  user  발화 끝
+   106.74s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.09s]: The Rosette Nebula is located approximately five degrees southeast of 
+   113.85s  agent 발화 끝
+   113.99s  user  발화 시작: A nebula… that sounds spectacular. How far away is it?
+   118.16s  <ret> 발화 (turn20 첫 프레임)
+   118.47s  agent 발화 시작: <ret> Distance is always a humbling concept. It’s roughly fi
+   118.56s  user  발화 끝
+   119.11s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.76s]: The Rosette Nebula is approximately 5,000 light-years from Earth.
+   127.47s  user  발화 시작: Five thousand light-years! Incredible. So, light we’re seein
+   127.65s  agent 발화 끝
+   134.09s  user  발화 끝
+   134.17s  agent 발화 시작: [happy] Exactly! You're observing the past when you look at 
+   138.61s  agent 발화 끝
+   141.08s  user  발화 시작: That’s… mind-blowing. What’s the furthest thing we can see?
+   145.25s  user  발화 끝
+   145.27s  <ret> 발화 (turn24 첫 프레임)
+   145.42s  agent 발화 시작: <ret> That’s a question that always sparks wonder. The obser
+   147.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.14s]: The observable universe extends approximately 46.5 billion light-years
+   157.53s  agent 발화 끝
+   157.54s  user  발화 시작: Forty-six… billion. Wow. I— I mean, are there stars *beyond*
+   163.84s  agent 발화 시작: It’s believed so, yes, but they’re beyond our ability to obs
+   163.89s  user  발화 끝
+   168.57s  user  발화 시작: So, there’s more universe than we can see?
+   168.80s  agent 발화 끝
+   171.18s  agent 발화 시작: Quite likely! Our observable universe is just a bubble withi
+   171.33s  user  발화 끝
+   176.63s  user  발화 시작: That’s… a lot to think about. Thanks, Moshi.
+   176.69s  agent 발화 끝
+   180.06s  agent 발화 시작: My pleasure. The universe is full of mysteries, and I’m alwa
+   180.19s  user  발화 끝
+   185.67s  agent 발화 끝

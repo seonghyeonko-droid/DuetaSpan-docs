@@ -2,11 +2,11 @@ v3_to_ot_11_en src=nq style=v1
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering, do you happen to know when the Oakland A’s were last no-hit? It feels like it’s been ⟨ret@6.54s⟩ ages.
-[  6.93s][moshi] That’s a ⟦⚡SPAN@8.38s: <The last time the Oakland Athletics were no-hit was April 21, 2018.>⟧ good baseball question, and a surprisingly specific one— the last no-hitter against the A’s occurred on April twenty-first, two thousand eighteen.
-[ 17.02s][user ] Wow, 2018… that *is* a while ago.
-[ 21.04s][moshi] It is quite a span, yes. Those games are always memorable for the pitcher, of course, and a bit deflating for the team.
-[ 23.75s][user ] «backchannel» Uh-huh.
-[ 28.77s][moshi] ⟨ret@28.54s⟩ Thinking ⟦⚡SPAN@29.66s: <The pitcher who threw the no-hitter against the A’s was Mike Fiers of the Houston Astros.>⟧ about pitching dominance— Mike Fiers, pitching for the Houston Astros, threw the no-hitter against Oakland on that date.
-[ 37.58s][user ] Wait, Fiers? Didn't he play for the A's before that?
-[ 41.04s][moshi] ⟨ret@40.97s⟩ ⟦⚡SPAN@41.47s: <Mike Fiers pitched for the Oakland Athletics from 2015 to 2017.>⟧ You're right to ask— Yes, Mike Fiers actually pitched *for* the Athletics from two thousand fifteen through two thousand seventeen.
+[  0.00s][user ] I was wondering, do you happen to know when the Oakland A's were last no-hit in ⟨ret@4.91s⟩ a game?
+[  5.30s][moshi] That’s a good ⟦⚡SPAN@6.91s: <The last time the Oakland Athletics were no-hit was April 21, 2018.>⟧ baseball question, and I can certainly look that up for you. The Oakland Athletics were last no-hit on April twenty-first, two thousand eighteen.
+[ 15.59s][user ] Wow, that was quite a while ago.
+[ 18.23s][moshi] It certainly was—a testament to their pitching staff that it’s been that long. It’s always interesting to see those streaks.
+[ 27.59s][user ] Do you know who pitched the no-hitter against ⟨ret@30.01s⟩ them?
+[ 30.25s][moshi] That’s an excellent follow-up ⟦⚡SPAN@32.01s: <James Paxton pitched a no-hitter against the Oakland Athletics on May 8, 2018.>⟧ question, and I can find that information— James Paxton pitched a no-hitter against the Athletics on May eighth, two thousand eighteen.
+[ 40.58s][user ] «to_other» Can you believe how loud the dog is barking?
+[ 43.63s][user ] So, it wasn’t that long after the last time they *were* no-hit, then?

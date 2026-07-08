@@ -2,14 +2,14 @@ v3_mcp_03_ko src=mcp style=v1
 SYSTEM: <system> 당신은 중세 시대 성당을 복원하는 석공입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 장바구니 iframe에서 결제 과정 시작해 주세요.
-[  3.58s][moshi] ⟨ret@3.35s⟩ 알겠습니다, ⟦⚡SPAN@4.79s: (tool result) The shopping cart iframe’s “Checkout” button was clicked successfully.⟧ 장바구니에서 결제 과정을 시작했습니다.
+[  0.00s][user ] 장바구니 iframe에서 결제 진행해 주세요.
+[  3.22s][moshi] ⟨ret@2.98s⟩ 네, ⟦⚡SPAN@4.42s: (tool result) The shopping cart iframe’s checkout button was successfully clicked.⟧ 요청하신 대로 장바구니 안에서 결제 과정이 시작됐습니다.
       CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_selector": "shopping-cart", "button_text": "Checkout"}}
-[  7.00s][user ] 총 결제 금액이 얼마인가요? ⟨ret@9.20s⟩
-[  9.51s][moshi] 잠시만요, 주문 ⟦⚡SPAN@11.20s: (tool result) The order total is $125.50, including shipping.⟧ 총액을 확인해 드릴게요. 현재 주문 총액은 일백이십오 달러 오십 센트입니다.
-      CALL: {"function": "get_order_total", "arguments": {}}
-[ 17.38s][user ] SUMMER20 코드로 기프트 카드를 사용할 수 있을까요?
-[ 20.86s][moshi] ⟨ret@20.70s⟩ 네, 기프트 카드를 ⟦⚡SPAN@22.70s: (tool result) Gift card SUMMER20 applied; new total is $105.50.⟧ 적용해 드릴게요. 기프트 카드가 적용되었고, 총액은 일백오 달러 오십 센트로 줄었습니다.
-      CALL: {"function": "apply_gift_card", "arguments": {"gift_card_code": "SUMMER20"}}
-[ 29.54s][user ] 주문 확인해 주세요.
-[ 31.36s][moshi] 네, 주문을 확인해 드릴게요. 마치 대성당 아치에 마지막 돌을 놓는 것처럼, 모든 것이 제자리에 있는 것이 좋네요.
+[  7.57s][user ] 총 비용이 얼마예요, 배송비 포함해서요? ⟨ret@10.10s⟩
+[ 10.35s][moshi] 잠시만 확인해 ⟦⚡SPAN@12.10s: (tool result) The total cost is $78.50, including $8.50 for shipping.⟧ 볼게요… 배송비를 포함한 총 금액은 칠십팔 달러 오십 센트입니다.
+      CALL: {"function": "get_checkout_total", "arguments": {}}
+[ 16.76s][user ] 저장된 주소로 배송해 주실 수 있나요?
+[ 19.56s][moshi] 네, 저장된 주소는 일 이 삼 오크 스트리트, 애니타운입니다.
+[ 25.04s][user ] 네, 맞아요. 주문 확인해 ⟨ret@27.49s⟩ 주세요.
+[ 27.72s][moshi] 알겠습니다, 주문을 ⟦⚡SPAN@29.25s: (tool result) Order confirmed with ID 98765; shipping to 123 Oak Street, Anytown.⟧ 확인해 드릴게요… 주문이 확인됐고, 주문 번호는 구 팔칠 육 오오이며 저장된 주소로 배송될 예정입니다.
+      CALL: {"function": "confirm_order", "arguments": {"shipping_address": "123 Oak Street, Anytown"}}

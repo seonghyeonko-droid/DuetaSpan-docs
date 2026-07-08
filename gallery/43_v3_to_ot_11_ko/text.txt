@@ -2,11 +2,11 @@ v3_to_ot_11_ko src=nq style=v1
 SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 오클랜드 애슬레틱스가 마지막으로 노히트를 당한 게 언제였는지 아시나요? 정말 오래된 것 같아요.
-[  6.10s][moshi] ⟨ret@5.86s⟩ 좋은 야구 질문이네요, ⟦⚡SPAN@7.86s: <The last time the Oakland Athletics were no-hit was April 21, 2018.>⟧ 그리고 꽤 구체적인 질문이에요. 애슬레틱스를 상대로 한 마지막 노히터는 이천십팔년 사월 이십일일에 일어났습니다.
-[ 14.38s][user ] 와, 이천십팔년… 정말 오래됐네요.
-[ 17.30s][moshi] 정말 오랜 시간이 흘렀네요. 그 경기는 투수에게는 항상 기억에 남는 경기이고, 팀에게는 조금 실망스러운 경기였을 거예요.
-[ 19.94s][user ] «backchannel» 네.
-[ 24.90s][moshi] ⟨ret@24.74s⟩ 피칭의 압도적인 ⟦⚡SPAN@26.50s: <The pitcher who threw the no-hitter against the A’s was Mike Fiers of the Houston Astros.>⟧ 힘에 대해 생각해보면— 마이크 피어스가 이천십팔년 그 날짜에 휴스턴 애스트로스 소속으로 오클랜드 상대로 노히터를 던졌습니다.
-[ 34.40s][user ] 잠깐만요, 피어스요? 그 전에 애슬레틱스에서 뛰지 ⟨ret@38.28s⟩ 않았나요?
-[ 38.52s][moshi] 맞아요, ⟦⚡SPAN@39.72s: <Mike Fiers pitched for the Oakland Athletics from 2015 to 2017.>⟧ 물어보시길 잘하셨어요. 마이크 피어스는 사실 이천십오년부터 이천십칠년까지 애슬레틱스에서 뛰었습니다.
+[  0.00s][user ] 혹시 오클랜드 애슬레틱스가 마지막으로 노히트를 당한 경기가 언제였는지 아시나요?
+[  4.72s][moshi] ⟨ret@4.48s⟩ 네, 좋은 ⟦⚡SPAN@6.48s: <The last time the Oakland Athletics were no-hit was April 21, 2018.>⟧ 야구 질문이세요. 알아봐 드릴 수 있습니다. 오클랜드 애슬레틱스는 이천십팔년 사월 이십일이 마지막으로 노히트를 당했습니다.
+[ 14.09s][user ] 와, 꽤 오래됐네요.
+[ 15.37s][moshi] 정말 그랬네요. 투수진이 그동안 잘했다는 증거인 것 같습니다. 그런 기록은 언제나 흥미로운 것 같아요.
+[ 22.52s][user ] 그때 애슬레틱스를 상대로 노히터를 던진 투수가 누구였는지 ⟨ret@26.47s⟩ 아시나요?
+[ 26.71s][moshi] 아주 좋은 질문이세요. ⟦⚡SPAN@28.47s: <James Paxton pitched a no-hitter against the Oakland Athletics on May 8, 2018.>⟧ 알아봐 드릴게요. 제임스 팩스턴 선수가 이천십팔년 오월 팔일에 애슬레틱스를 상대로 노히터를 던졌습니다.
+[ 36.20s][user ] «to_other» 강아지가 얼마나 크게 짖는지 믿을 수가 없네요.
+[ 38.77s][user ] 그렇다면, 마지막으로 노히트를 당한 지 얼마 안 됐었네요?

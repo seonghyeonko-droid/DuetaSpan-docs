@@ -1,16 +1,13 @@
 v3_rag_28_cs src=nq style=v2
-SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 연구하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 그래서, 참전용사부(Veterans Affairs department)는 언제 시작됐어? 날짜가 다르다고 ⟨ret@6.33s⟩ 들었거든.
-[  6.48s][moshi] 좋은 질문이세요. ⟦⚡SPAN@8.33s: The United States Department of Veterans Affairs was established on July 21, 1930, under President Herbert Hoo⟧ 사실 역사 자체가 조금 복잡하답니다.
-[ 10.70s][moshi] 참전용사부는 후버 대통령에 의해 천구백삼십년 칠월 이십일일에 설립되었어요.
-[ 17.52s][user ] 천구백삼십년? 좀… 늦은 것 같은데. 그전에 참전용사 혜택은 ⟨ret@22.62s⟩ 없었어?
-[ 22.77s][moshi] ⟦⚡SPAN@23.74s: Prior to 1930, the administration of veterans’ benefits fell under the Bureau of War Risk Insurance, created i⟧ 음, 혜택은 분명히 있었는데요. 천구백삼십년 이전에 전쟁위험보험국(Bureau of War Risk Insurance)이 천구백십칠년에 설립되어서 참전용사 혜택을 담당했어요.
-[ 33.68s][user ] 근데 남북전쟁 이후는 어땠어? 그 참전용사들을 위해서 뭔가 해줬을 거 아니야—
-[ 38.52s][moshi] «interrupted» —그 혜택을 관리했고—
-[ 39.61s][user ] «interrupts_prev» …남북전쟁 직후에 병원이나 연금을 ⟨ret@42.34s⟩ 만들었어?
-[ 42.73s][moshi] [sigh] 아주 ⟦⚡SPAN@44.34s: The first federal veterans’ hospital opened in 1866, and a system of disability pensions began in 1862.⟧ 중요한 지적이에요. 훨씬 더 이전 단계였죠.
-[ 47.16s][moshi] 최초의 참전용사 병원은 천구백육십육년에 개원했고, 연금은 천구백육십이년부터 시작되었어요.
-[ 53.84s][user ] 그러면, 우리가 아는 VA는 비교적 최근에 생긴 거지만, 참전용사들을 위한 지원은 훨씬 오래전부터 있었다는 거네?
-[ 62.12s][moshi] 정확해요. 복무하신 분들의 필요에 맞춰 진화해 온 과정이랍니다.
+[  0.00s][user ] 그래서 정부 부처에 대해 읽다가 궁금해졌는데, 재향군인부(Department of Veterans Affairs)는 언제 실제로 만들어졌어?
+[  7.78s][moshi] 정말 좋은 질문이세요. 복무하신 분들을 위한 지원의 기원을 추적하는 것은 중요합니다.
+[ 13.72s][moshi] ⟨ret@13.33s⟩ 잠시 역사 ⟦⚡SPAN@15.33s: The United States Department of Veterans Affairs was established on July 21, 1930, by President Herbert Hoover⟧ 기록을 확인해 볼게요— 재향군인부는 1930년에 후버 대통령에 의해 설립되었습니다.
+[ 21.52s][user ] 1930년? 그거…상대적으로 최근 같지 않아? 그 전에 뭔가 있었던 것 같은데.
+[ 27.13s][moshi] 맞아요, 의문을 가지시는 게 맞습니다—더 공식적인 부서가 되기 전에도 퇴역 군인 지원의 형태가 분명히 존재했습니다.
+[ 35.49s][moshi] ⟨ret@35.43s⟩ 선행 기관을 ⟦⚡SPAN@37.43s: Prior to 1930, the Veterans Bureau, created in 1921, handled most veteran affairs, evolving from earlier Civil⟧ 살펴보면 타임라인이 더 명확해질 거예요— 1930년 이전에 재향군인국(Veterans Bureau)이 1921년에 설립되어 재향군인 업무를 관리했습니다.
+[ 46.91s][user ] 근데 재향군인국 *이전에는*—1차 세계 대전에서 돌아온 군인들을 위한 혜택은 전혀 없었어?
+[ 53.76s][moshi] 정말 좋은 지적이세요—분산된 형태이긴 했지만 지원은 있었습니다.
+[ 57.88s][moshi] ⟨ret@57.50s⟩ 1차 세계 ⟦⚡SPAN@59.50s: Following World War I, the U.S. government established the Bureau of War Risk Insurance in 1917 to provide ins⟧ 대전 이후 제공된 지원에 대한 정보를 확인하고 있습니다— 전쟁 위험 보험국(Bureau of War Risk Insurance)은 1917년에 설립되어 퇴역 군인을 지원했습니다.

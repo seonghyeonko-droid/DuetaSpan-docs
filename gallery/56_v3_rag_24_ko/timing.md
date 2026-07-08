@@ -1,75 +1,51 @@
 # v3_rag_24_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 듀 플레시 가족에 대해 읽다가 성의 유래가 궁금해졌어요.
-     3.11s  agent 발화 시작: 정말 흥미로운 질문이시네요. 성은 이야기를 담고 있는 경우가 많잖아요.
-     3.28s  user  발화 끝
-     7.32s  <ret> 발화 (turn2 첫 프레임)
-     7.40s  agent 발화 시작: <ret> 가문의 성을 살펴보는 건 정말 재미있는 연구예요— 듀 플레시 성은 프랑스에서 유래했는데, ‘플레시
-     7.45s  agent 발화 끝
-     9.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: The surname Du Plessis is of French origin, meaning “of Plessis”, refe
-    17.28s  agent 발화 끝
-    18.85s  user  발화 시작: 프랑스에 그 이름의 장소가 많이 있나요?
-    21.40s  agent 발화 시작: 네, 여러 곳이 있어요. 장소 이름은 종종 매우 자세하게 묘사되어 있거든요.
-    21.44s  user  발화 끝
-    26.05s  <ret> 발화 (turn5 첫 프레임)
-    26.37s  agent 발화 시작: <ret> 성의 유래를 찾는 일은 종종— 플레시는 고대 프랑스어에서 유래한 프랑스 지명으로, 작은 개간지나 
-    26.40s  agent 발화 끝
-    28.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.10s]: Plessis is a common place name in France, derived from the Old French 
-    34.04s  user  발화 시작: 그렇다면 원래 귀족 가문은 아니었던 건가요?
-    34.06s  agent 발화 끝
-    37.41s  user  발화 끝
-    37.66s  agent 발화 시작: 꼭 그렇지는 않아요. 지명은 모든 사회 계층에서 사용되었거든요.
-    41.40s  <ret> 발화 (turn8 첫 프레임)
-    41.49s  agent 발화 끝
-    41.56s  agent 발화 시작: <ret> 종종 가문은 그들이 소유한 땅에서 성을 따왔는데— 듀 플레시 가문은 11세기에 프랑스 노르망디에서
-    42.84s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.27s]: The Du Plessis family first rose to prominence in Normandy, France, in
-    50.09s  agent 발화 끝
-    50.32s  user  발화 시작: 그 성이 남아프리카 공화국으로 퍼진 건 언제인가요?
-    53.87s  agent 발화 시작: 그건 좀 더 최근의 일이고, 식민지 역사와 관련이 있어요.
-    54.03s  user  발화 끝
-    57.67s  <ret> 발화 (turn11 첫 프레임)
-    57.89s  agent 발화 끝
-    57.99s  agent 발화 시작: <ret> 이주 패턴을 추적하는 것은 이해하는 데 필수적입니다— 듀 플레시 성은 17세기 후반 프랑스 위그노
-    58.87s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.59s]: The Du Plessis surname was brought to South Africa by French Huguenots
-    67.22s  agent 발화 끝
-    67.35s  user  발화 시작: 위그노들은 종교적 박해를 피해 도망친 개신교 신자들이 아니었나요?
-    71.69s  user  발화 끝
-    71.90s  agent 발화 시작: 맞아요. 그들은 남아프리카 공화국을 포함한 많은 나라에서 피난처를 찾았습니다.
-    76.44s  <ret> 발화 (turn14 첫 프레임)
-    76.59s  agent 발화 시작: <ret> 종교적 자유는 종종 중요한— 위그노는 종교적 박해로 인해 남아프리카 공화국을 포함하여 이주한 프랑
-    76.62s  agent 발화 끝
-    78.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.34s]: Huguenots were French Protestants who, due to religious persecution, e
-    84.90s  user  발화 시작: 아, 성이 종교적 난민과 관련이 있군요. 정말 대단한 역사네요!
-    84.93s  agent 발화 끝
-    89.15s  user  발화 끝
-    89.38s  agent 발화 시작: 그렇지 않나요? 성은 과거의 메아리 같아요.
-    91.54s  <ret> 발화 (turn17 첫 프레임)
-    91.85s  agent 발화 시작: <ret> 이주에 대한 더 넓은 맥락을 고려하면— 듀 플레시 성은 아프리카너스 성에서 28번째로 흔한 성입니
-    91.88s  agent 발화 끝
-    92.82s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.45s]: In Afrikaans, the surname Du Plessis is among the most common, ranking
-    98.75s  agent 발화 끝
-    98.83s  user  발화 시작: 놀랍네요! 오늘날 프랑스에서도 흔한가요?
-   102.07s  user  발화 끝
-   102.23s  agent 발화 시작: 실제로 남아프리카 공화국보다 프랑스에서는 덜 흔합니다.
-   105.76s  <ret> 발화 (turn20 첫 프레임)
-   106.07s  agent 발화 끝
-   106.08s  agent 발화 시작: <ret> 인구 분포의 변화는 종종— 듀 플레시 성은 프랑스보다 남아프리카 공화국과 이전 네덜란드 식민지에서
-   107.04s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.97s]: While still present in France, the Du Plessis surname is more frequent
-   113.93s  user  발화 시작: 위그노의 이주를 고려하면 이해가 되네요. 정말 흥미롭습니다.
-   114.00s  agent 발화 끝
-   117.73s  agent 발화 시작: 정말 그렇습니다. 사람들의 이동은 언어적, 문화적 지형을 형성합니다. [happy]
-   117.76s  user  발화 끝
-   122.59s  agent 발화 끝
-   123.36s  user  발화 시작: 그 성과 관련된 문장이 있는지 궁금합니다.
-   126.04s  agent 발화 시작: 실제로 여러 개가 있는데, 가문의 다른 지파를 반영합니다.
-   126.08s  user  발화 끝
-   129.70s  <ret> 발화 (turn25 첫 프레임)
-   130.01s  agent 발화 끝
-   130.02s  agent 발화 시작: <ret> 문장은 가문의— 듀 플레시 가문은 프랑스의 혈통과 지역에 따라 여러 개의 문장을 가지고 있습니다.
-   131.30s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.64s]: The Du Plessis family has several coats of arms, varying based on line
-   136.18s  agent 발화 끝
-   136.67s  user  발화 시작: 오, 단일 디자인이 아니라는 건가요?
-   138.93s  user  발화 끝
-   139.15s  agent 발화 시작: 아니요, 전혀 그렇지 않아요. 디자인은 수세기에 걸쳐 다양해졌습니다.
-   143.22s  agent 발화 끝
+     0.00s  user  발화 시작: 저는 책을 읽다가 뒤 플레시라는 이름을 발견했어요. 뭔가… 프랑스어 같기도 하고요.
+     5.97s  agent 발화 시작: 그 이름이 왠지 모르게 울림이 있네요.
+     6.11s  user  발화 끝
+     8.04s  agent 발화 끝
+     8.37s  user  발화 시작: 네, 맞아요. 그런데 그 이름의 유래가 궁금해요. 뒤 플레시는 정확히 어디에서 온 이름인가요?
+    14.35s  <ret> 발화 (turn3 첫 프레임)
+    14.43s  agent 발화 시작: <ret> 아주 좋은 질문이에요. 이름의 기원을 추적하면 흥미로운 점이 많답니다. 뒤 플레시스는 프랑스에서 
+    14.53s  user  발화 끝
+    16.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.98s]: The surname du Plessis is of French origin, derived from the Old Frenc
+    24.40s  agent 발화 끝
+    25.27s  user  발화 시작: 아, 역시 프랑스 이름이었군요. 지금도 프랑스에서 흔한 이름인가요?
+    29.11s  user  발화 끝
+    29.34s  agent 발화 시작: 그 이름이 널리 퍼지긴 했지만, 역사적으로는 프랑스에서 가장 강한 뿌리를 가지고 있어요.
+    34.62s  agent 발화 끝
+    34.67s  user  발화 시작: 알겠습니다. 그런데 남아프리카에서도 그 이름을 본 적이 있어요. 어떻게 남아프리카까지 가게 된 건가요?
+    39.62s  <ret> 발화 (turn7 첫 프레임)
+    40.02s  agent 발화 시작: <ret> 정말 흥미로운 질문이에요. 17세기 후반에 위그노, 프랑스 개신교도들이 케이프 식민지에 정착하면서
+    40.22s  user  발화 끝
+    41.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.28s]: French Huguenots, Protestant refugees, settled in the Cape Colony of S
+    49.80s  agent 발화 끝
+    49.96s  user  발화 시작: 위그노… 그렇군요. 그분들은 기술자였거나 뭔가 특별한 일을 하셨나요? 남아프리카에서 뭘 하셨어요?
+    56.08s  user  발화 끝
+    56.47s  agent 발화 시작: 그분들은 주로 장인과 농부였고, 식민지 개발에 크게 기여했어요.
+    60.85s  user  발화 시작: 흥미롭네요. [laugh] 프랑스어와 문화를 계속 유지하셨나요, 아니면 사라졌나요?
+    60.86s  agent 발화 끝
+    66.67s  agent 발화 시작: 처음에는 그분들의 언어를 유지했지만, 점차 네덜란드어와 다른 언어의 영향을 받았어요.
+    66.82s  user  발화 끝
+    73.07s  agent 발화 끝
+    73.19s  user  발화 시작: 그러면 시간이 지나면서 뭔가 달라졌다는 거군요. 이름 발음도 바뀌었나요?
+    77.10s  <ret> 발화 (turn13 첫 프레임)
+    77.26s  agent 발화 시작: <ret> 문화가 융합되는 동안 발음이 변하는 경우는 흔해요. 뒤 플레시스라는 이름은 남아프리카에서 아프리칸
+    77.41s  user  발화 끝
+    79.02s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.43s]: In South Africa, the pronunciation of “du Plessis” evolved to “duh ple
+    87.22s  agent 발화 끝
+    87.33s  user  발화 시작: “더 플레스”라니, 정말 많이 바뀌었네요! 프랑스 사람들은 알아들을 수 있을까요?
+    92.32s  user  발화 끝
+    92.47s  agent 발화 시작: 현대 프랑스 사람들에게는 알아듣기 어려울 수도 있겠네요. 언어는 끊임없이 변하니까요.
+    98.35s  agent 발화 끝
+    98.52s  user  발화 시작: 하지만 남아프리카에서는 여전히 흔한 성씨인가요?
+   101.40s  <ret> 발화 (turn17 첫 프레임)
+   101.47s  agent 발화 시작: <ret> 수세기에 걸쳐 남아프리카에 잘 정착했답니다. 2022년 기준으로 남아프리카에서 가장 흔한 성씨 5
+   101.66s  user  발화 끝
+   103.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.16s]: Du Plessis is among the most common surnames in South Africa, ranking 
+   109.49s  agent 발화 끝
+   109.69s  user  발화 시작: 57위… 꽤 높은 순위네요. 프랑스 농장에서 남아프리카까지, 정말 긴 여정이네요.
+   115.32s  agent 발화 시작: 맞아요. 이름은 종종 역사, 이주, 적응의 흔적을 담고 있어요. 그 기원을 추적하는 것은 정말 특별한 경험이
+   115.47s  user  발화 끝
+   122.17s  agent 발화 끝

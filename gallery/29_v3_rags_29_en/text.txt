@@ -2,5 +2,5 @@ v3_rags_29_en src=nq_single style=rag_single
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who is the oldest player currently playing in the ⟨ret@3.17s⟩ NBA?
-[  3.49s][moshi] That’s a good ⟦⚡SPAN@5.17s: Vince Carter is the oldest player in the NBA, currently playing at age forty-one.⟧ question, and a testament to athletic longevity. At forty-one years old, Vince Carter holds the distinction of being the NBA’s oldest active player.
+[  0.00s][user ] Who is the oldest player currently playing in ⟨ret@2.94s⟩ the NBA?
+[  3.26s][moshi] That’s a good ⟦⚡SPAN@4.94s: Vince Carter is the oldest player in the NBA, currently age forty-one as of March 2019.⟧ question, and it’s always interesting to see longevity in professional sports. Currently, Vince Carter is the oldest player in the NBA, being forty-one years old.

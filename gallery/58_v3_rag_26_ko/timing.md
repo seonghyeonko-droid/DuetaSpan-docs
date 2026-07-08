@@ -1,35 +1,27 @@
 # v3_rag_26_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 어떤 나라 국기가 검은색, 빨간색, 노란색이에요?
-     3.57s  agent 발화 시작: 그런 질문 많이 들어 봐.
-     3.70s  user  발화 끝
-     4.84s  <ret> 발화 (turn2 첫 프레임)
-     5.23s  agent 발화 시작: <ret> 국기에 대해서 좀 알아볼까. 독일 국기는 검은색, 빨간색, 금색 가로 줄무늬로 되어 있어.
-     5.27s  agent 발화 끝
-     6.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: The flag of Germany is composed of three horizontal bands of black, re
-    13.11s  agent 발화 끝
-    13.62s  user  발화 시작: 아, 금색이 맞구나. 정확히 노란색은 아니네.
-    16.52s  agent 발화 시작: 그래, 그 색깔은 “금색”이라고 하는 게 더 정확해.
-    16.53s  user  발화 끝
-    19.75s  <ret> 발화 (turn5 첫 프레임)
-    19.90s  agent 발화 시작: <ret> 색깔 얘기하니까 말인데… 베냉 왕국은 15세기부터 유럽인들과 빨간 산호 구슬을 거래했어.
-    19.99s  agent 발화 끝
-    21.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.60s]: The Kingdom of Benin used red coral beads in trade with Europeans as e
-    22.04s  user  발화 시작: 그렇죠.
-    22.67s  user  발화 끝
-    27.01s  agent 발화 시작: 그 구슬이 엄청 귀했거든.
-    27.13s  agent 발화 끝
-    28.89s  <ret> 발화 (turn8 첫 프레임)
-    28.97s  agent 발화 시작: <ret> 아산테헤네는 전통적으로 힘을 상징하는 금색 장신구를 착용했어.
-    29.13s  agent 발화 끝
-    30.41s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.91s]: The Asantehene, the king of the Asante people, traditionally wore gold
-    33.78s  user  발화 시작: 그거… 꽤 흥미로운 이야기네요. 그런데 다시 국기로 돌아가서—
-    33.88s  agent 발화 끝
-    38.41s  agent 발화 시작: 그래, 다시 국기 얘기 하자.
-    38.42s  user  발화 끝
-    40.23s  <ret> 발화 (turn11 첫 프레임)
-    40.46s  agent 발화 시작: <ret> 역사적인 맥락을 생각하는 게 항상 도움이 돼. 독일 국기 색깔은 나폴레옹 전쟁 당시 뤼초 자유군 
-    40.53s  agent 발화 끝
-    42.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.57s]: The colors of the German flag are derived from the uniforms of the Lüt
-    49.13s  agent 발화 끝
+     0.00s  user  발화 시작: 그래서 궁금했는데… 검은색, 빨간색, 노란색으로 된 국기가 어느 나라 국기예요? 어디서 그런 국기를 본 것 
+     7.26s  agent 발화 시작: 그건 꽤 흥미로운 질문이고, 사실 흔히 물어보는 질문이야.
+     7.41s  user  발화 끝
+    11.14s  <ret> 발화 (turn2 첫 프레임)
+    11.54s  agent 발화 시작: <ret> 내가 아는 걸 말해 줄게… 네가 생각하는 국기는 독일 국기일 가능성이 높아—검은색, 빨간색, 금색
+    11.61s  agent 발화 끝
+    13.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.25s]: The flag of Germany is composed of three horizontal bands of black, re
+    20.21s  agent 발화 끝
+    20.70s  user  발화 시작: 아, 맞다! 독일이네. 음-음. 유럽 국가라는 건 알고 있었는데, 딱 떠오르지 않았어.
+    26.91s  user  발화 끝
+    26.96s  agent 발화 시작: 그래. 그 색깔들의 상징은 꽤 풍부한 역사를 가지고 있는데, 시간이 지나면서 진화했어.
+    32.78s  <ret> 발화 (turn5 첫 프레임)
+    32.93s  agent 발화 시작: <ret> 그건 해방 운동과 관련된 역사인데… 그 색깔들은 원래 1848년에 채택됐어. 자유와 통일된 독일을
+    33.02s  agent 발화 끝
+    34.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: The black, red, and gold colors were adopted in 1848 by the German stu
+    44.28s  user  발화 시작: 정말 흥미롭네요. 그 색깔들이 그 전에도 사용됐었나요? 아니면 그때 갑자기 나타난 건가요?
+    44.30s  agent 발화 끝
+    49.59s  user  발화 끝
+    49.67s  agent 발화 시작: 1848년 이전에도 그 색깔들은 이전부터 연관성이 있었지만, 국가 정체성과 공식적으로 연결되지는 않았어.
+    58.43s  <ret> 발화 (turn8 첫 프레임)
+    58.50s  agent 발화 시작: <ret> 그건 이전 군사 부대에서 영감을 얻은 건데… 나폴레옹 전쟁 시기에 자원군 부대였던 뤼초 자유단에서
+    58.62s  agent 발화 끝
+    59.63s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.08s]: The black-red-gold were colors used by the Lützow Free Corps during th
+    67.82s  agent 발화 끝

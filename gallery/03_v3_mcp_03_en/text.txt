@@ -2,14 +2,14 @@ v3_mcp_03_en src=mcp style=v1
 SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start the checkout process in the shopping ⟨ret@2.92s⟩ cart iframe.
-[  3.32s][moshi] Alright, ⟦⚡SPAN@3.88s: (tool result) The shopping cart iframe’s “Checkout” button was clicked successfully.⟧ let’s get that shopping cart finalized for you. The checkout process has begun within the shopping cart.
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@3.11s⟩ iframe.
+[  3.50s][moshi] ⟦⚡SPAN@4.07s: (tool result) The shopping cart iframe’s checkout button was successfully clicked.⟧ Alright, initiating the checkout sequence now… The checkout process has begun within the shopping cart, as you requested.
       CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_selector": "shopping-cart", "button_text": "Checkout"}}
-[ 10.42s][user ] What’s the total amount due?
-[ 12.26s][moshi] ⟨ret@12.18s⟩ Let me quickly check ⟦⚡SPAN@14.18s: (tool result) The order total is $125.50, including shipping.⟧ the order total for you now. Your current order total is one hundred and twenty-five dollars and fifty cents.
-      CALL: {"function": "get_order_total", "arguments": {}}
-[ 21.11s][user ] Can you use the gift card with code SUMMER20?
-[ 24.81s][moshi] ⟨ret@24.66s⟩ Certainly, I can apply ⟦⚡SPAN@26.34s: (tool result) Gift card SUMMER20 applied; new total is $105.50.⟧ that gift card for you. The gift card has been applied, bringing your total down to one hundred and five dollars and fifty cents.
-      CALL: {"function": "apply_gift_card", "arguments": {"gift_card_code": "SUMMER20"}}
-[ 33.87s][user ] Go ahead and confirm the order.
-[ 35.84s][moshi] Very well, confirming the order now. It’s good to have things settled, rather like setting the final stone on a cathedral arch— everything in its place.
+[ 13.07s][user ] What’s the total cost, including shipping?
+[ 15.77s][moshi] ⟨ret@15.69s⟩ Let me quickly ⟦⚡SPAN@17.69s: (tool result) The total cost is $78.50, including $8.50 for shipping.⟧ retrieve that information for you… Your total, with shipping included, is seventy-eight dollars and fifty cents.
+      CALL: {"function": "get_checkout_total", "arguments": {}}
+[ 24.90s][user ] Could you use my saved address for shipping?
+[ 27.99s][moshi] Certainly. I can confirm your saved address is one-two-three Oak Street, Anytown.
+[ 33.98s][user ] Yes, that’s the one. Confirm the ⟨ret@36.33s⟩ order.
+[ 36.71s][moshi] Very well, ⟦⚡SPAN@38.01s: (tool result) Order confirmed with ID 98765; shipping to 123 Oak Street, Anytown.⟧ confirming your order now… Your order is confirmed, number nine-eight-seven-six-five, and will ship to your saved address.
+      CALL: {"function": "confirm_order", "arguments": {"shipping_address": "123 Oak Street, Anytown"}}

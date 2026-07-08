@@ -3,33 +3,34 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  3.49s][moshi] ⟨ret@3.26s⟩ Certainly, ⟦⚡SPAN@4.22s: (tool result) A viewing at The Grandview Lofts is confirmed for June fifteenth at two PM.⟧ let’s get that scheduled for you. I’ve booked a viewing for you at The Grandview Lofts on June fifteenth at two PM.
+[  3.65s][moshi] ⟨ret@3.42s⟩ Certainly, ⟦⚡SPAN@4.46s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s see about arranging that for you. Your viewing at The Grandview Lofts is confirmed for June fifteenth at two PM.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 11.38s][user ] Can you send me directions to that ⟨ret@13.40s⟩ address?
-[ 13.47s][moshi] Absolutely, I ⟦⚡SPAN@14.60s: (tool result) Directions to The Grandview Lofts are: head north on Elm Street, turn right onto Oak Avenue, and⟧ can provide those directions right away. The directions to The Grandview Lofts are north on Elm, right on Oak, and it’s at one two three Oak Avenue.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 23.77s][user ] That’s helpful. How long will that drive take?
-[ 26.65s][moshi] ⟨ret@26.41s⟩ Let me check ⟦⚡SPAN@28.25s: (tool result) The drive to The Grandview Lofts is estimated to take fifteen minutes.⟧ the estimated travel time for you. The drive to The Grandview Lofts should take approximately fifteen minutes.
-      CALL: {"function": "Navigation_2_GetTravelTime", "arguments": {"destination": "The Grandview Lofts"}}
-[ 34.63s][user ] Okay, good. And what’s the parking situation like there?
-[ 37.58s][moshi] Parking can be a bit limited, but there’s street parking available on Oak Avenue, and a paid lot nearby.
-[ 44.69s][user ] Is there a grocery store close by, in case I want to grab something afterwards?
-[ 49.58s][moshi] Yes, there is!
-[ 50.79s][moshi] ⟨ret@50.39s⟩ There ⟦⚡SPAN@51.67s: (tool result) Fresh Foods Market is a five-minute walk from The Grandview Lofts.⟧ is a grocery store nearby— Fresh Foods Market is just a five-minute walk from The Grandview Lofts.
-      CALL: {"function": "Search_2_FindNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
-[ 58.04s][user ] Excellent. I’m also looking at a place on Bleecker Street…
-[ 61.37s][moshi] Ah, another property. Which address on Bleecker Street are you considering?
-[ 66.48s][user ] It’s 42 Bleecker Street. Can we schedule a viewing there ⟨ret@69.66s⟩ too?
-[ 70.05s][moshi] Certainly, let’s see ⟦⚡SPAN@71.42s: (tool result) A viewing at 42 Bleecker Street is confirmed for June eighteenth at ten AM.⟧ about scheduling a viewing there as well. I’ve scheduled a viewing at 42 Bleecker Street for June eighteenth at ten AM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "date": "June eighteenth"}}
-[ 78.66s][user ] Perfect. But actually… June seventeenth would work better for Bleecker ⟨ret@82.87s⟩ Street.
-[ 83.11s][moshi] Let me ⟦⚡SPAN@83.99s: (tool result) The viewing at 42 Bleecker Street is now scheduled for June seventeenth at ten AM.⟧ adjust that for you— I’ve rescheduled your viewing at 42 Bleecker Street for June seventeenth at ten AM.
-      CALL: {"function": "Homes_2_RescheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "oldDate": "June eighteenth", "newDate": "June seventeenth"}}
-[ 91.58s][user ] Great, thank you. What's the square footage of the Bleecker Street apartment?
-[ 96.17s][moshi] ⟨ret@96.01s⟩ Let me pull up ⟦⚡SPAN@97.93s: (tool result) 42 Bleecker Street is 750 square feet with one bedroom and one bathroom.⟧ those details for you now. The apartment at 42 Bleecker Street is seven hundred fifty square feet, with one bedroom and one bathroom.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "42 Bleecker Street"}}
-[105.81s][user ] That sounds good. And how about The Grandview Lofts? What’s their ⟨ret@109.98s⟩ square footage?
-[110.30s][moshi] ⟦⚡SPAN@110.48s: (tool result) The Grandview Lofts are 900 square feet with two bedrooms and two bathrooms.⟧ Let me check that information for you. The Grandview Lofts are nine hundred square feet, and feature two bedrooms and two bathrooms.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
-[119.60s][user ] Hmm, okay. That's a significant difference. Thanks for all your help.
-[123.71s][moshi] You’re very welcome. I’m glad I could assist you with these viewings.
+[ 11.72s][user ] Is there parking available at the ⟨ret@13.68s⟩ building?
+[ 13.84s][moshi] That's a ⟦⚡SPAN@15.12s: (tool result) The Grandview Lofts offers validated parking in the adjacent garage.⟧ good question to ask beforehand. Parking is available at The Grandview Lofts, validated in the adjacent garage.
+      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 22.74s][user ] And what about pet restrictions?
+[ 24.52s][moshi] ⟨ret@24.28s⟩ Many buildings have ⟦⚡SPAN@26.12s: (tool result) The Grandview Lofts allows cats and small dogs under twenty-five pounds.⟧ those, it's wise to check. Cats and small dogs under twenty-five pounds are permitted at The Grandview Lofts.
+      CALL: {"function": "Homes_2CheckPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 32.61s][user ] That’s good to know— I mean, my terrier is about thirty ⟨ret@35.58s⟩ pounds.
+[ 35.74s][moshi] It sounds like we ⟦⚡SPAN@37.58s: (tool result) No properties match your criteria within The Grandview Lofts.⟧ need to refine that search a little… Unfortunately, no units at The Grandview Lofts accommodate a thirty-pound dog.
+      CALL: {"function": "Homes_2SearchHomes", "arguments": {"petWeightLimit": "30", "propertyName": "The Grandview Lofts"}}
+[ 44.65s][user ] Are there any other buildings nearby with similar floor plans?
+[ 48.94s][moshi] —but there are other options we can explore.
+[ 51.24s][user ] Specifically, I’m hoping for two bedrooms and a balcony.
+[ 54.31s][moshi] ⟨ret@54.24s⟩ Absolutely, let's broaden ⟦⚡SPAN@56.24s: (tool result) The Astoria and The Belvedere both have two-bedroom units with balconies.⟧ the search to nearby buildings. The Astoria and The Belvedere have two-bedroom units with balconies available.
+      CALL: {"function": "Homes_2SearchHomes", "arguments": {"bedrooms": "2", "balcony": "true", "propertyName": "nearby"}}
+[ 64.11s][user ] Tell me more about The ⟨ret@65.56s⟩ Astoria.
+[ 65.78s][moshi] I ⟦⚡SPAN@66.60s: (tool result) The Astoria was built in 2018 and has a rooftop terrace.⟧ can certainly give you details on that building. The Astoria was built in 2018 and includes a rooftop terrace for residents.
+      CALL: {"function": "Homes_2GetBuildingInfo", "arguments": {"propertyName": "The Astoria"}}
+[ 74.25s][user ] Does The Astoria also have parking?
+[ 76.48s][moshi] ⟨ret@76.33s⟩ Parking is often a ⟦⚡SPAN@78.25s: (tool result) The Astoria offers valet parking for a monthly fee of two hundred dollars.⟧ key consideration for renters. Valet parking at The Astoria costs two hundred dollars per month.
+      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Astoria"}}
+[ 84.29s][user ] That’s a bit pricey. What about The ⟨ret@86.35s⟩ Belvedere?
+[ 86.66s][moshi] ⟦⚡SPAN@86.85s: (tool result) The Belvedere has self-parking available for one hundred and fifty dollars monthly.⟧ Let’s compare the parking options at The Belvedere. Self-parking at The Belvedere is one hundred and fifty dollars each month.
+      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Belvedere"}}
+[ 93.45s][user ] That sounds better. Can we schedule a viewing there for next Tuesday?
+[ 98.14s][moshi] ⟨ret@97.92s⟩ I can ⟦⚡SPAN@99.04s: (tool result) A viewing at The Belvedere is scheduled for next Tuesday at eleven AM.⟧ check availability for a viewing next Tuesday. Your viewing at The Belvedere is confirmed for next Tuesday at eleven AM.
+      CALL: {"function": "Homes_2ScheduleVisit", "arguments": {"propertyName": "The Belvedere", "date": "next Tuesday"}}
+[106.49s][user ] Great. Send me a reminder the day ⟨ret@108.56s⟩ before.
+[108.66s][moshi] Absolutely, I can set that ⟦⚡SPAN@110.56s: (tool result) A reminder for your Belvedere viewing is set for next Monday at six PM.⟧ up for you now. I’ve set a reminder for your Belvedere viewing next Monday at six PM.
+      CALL: {"function": "Calendar_2SetReminder", "arguments": {"date": "next Monday", "time": "6 PM", "event": "Belvedere Viewing"}}

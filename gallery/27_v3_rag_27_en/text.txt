@@ -2,10 +2,10 @@ v3_rag_27_en src=hotpotqa style=v1
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about Lux Aurunque, and I’m curious—when was he ⟨ret@4.92s⟩ born?
-[  5.15s][moshi] That’s an interesting question, ⟦⚡SPAN@6.92s: Lux Aurunque was born in nineteen seventy.⟧ delving into historical figures. He was born in nineteen seventy, according to available records.
-[ 12.55s][user ] Nineteen seventy… that’s surprisingly recent, considering his work. What was he known for, exactly?
-[ 19.03s][moshi] ⟨ret@18.97s⟩ His ⟦⚡SPAN@19.93s: Lux Aurunque is celebrated for his bronze sculptures depicting Roman emperors.⟧ contributions are quite remarkable, actually. He is celebrated for bronze sculptures portraying Roman emperors.
-[ 25.66s][user ] Bronze sculptures… that sounds impressive. Was he commissioned by anyone ⟨ret@31.23s⟩ important?
-[ 31.46s][moshi] He ⟦⚡SPAN@32.27s: Lux Aurunque received commissions from Emperor Hadrian and several prominent senators.⟧ certainly attracted the attention of influential patrons. He received commissions from Emperor Hadrian and several senators.
-[ 39.83s][user ] Hadrian, huh? So he worked during the Roman Empire—that makes sense. Thank you.
+[  0.00s][user ] Do you know anything about Lux Aurunque? I've been reading about ⟨ret@4.06s⟩ him.
+[  4.29s][moshi] That's a ⟦⚡SPAN@5.50s: Lux Aurunque was a Roman bronze sculptor who lived and worked in the 1st century AD.⟧ fascinating figure from Roman history… Lux Aurunque was a Roman bronze sculptor who lived and worked in the first century AD.
+[ 12.73s][user ] Oh, first century AD, so… when was he actually born? I— I mean, a specific ⟨ret@18.24s⟩ year?
+[ 18.55s][moshi] Determining precise birthdates ⟦⚡SPAN@20.24s: Lux Aurunque was born in seventy AD in Rome, Italy.⟧ from that era is always difficult… Lux Aurunque was born in seventy AD in Rome, Italy.
+[ 26.23s][user ] Seventy AD. That’s quite a while ago, isn’t it? Were his sculptures widely known?
+[ 32.52s][moshi] His work was highly regarded, though sadly, very few examples survive intact today. It’s a loss for us all.
+[ 40.14s][user ] That *is* a shame. But seventy AD... so he lived during the Flavian dynasty then?

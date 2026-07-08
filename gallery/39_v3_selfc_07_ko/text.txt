@@ -2,34 +2,35 @@ v3_selfc_07_ko src=mcp style=mcp_selfcorrect
 SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드크비스트입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
-[  3.73s][moshi] ⟨ret@3.57s⟩ 응, 6월 ⟦⚡SPAN@4.85s: (tool result) A viewing at The Grandview Lofts is confirmed for June fifteenth at two PM.⟧ 15일 오후 두 시에 그랜드뷰 로프트 방문 예약을 했어.
+[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주시면 될까요?
+[  3.56s][moshi] ⟨ret@3.40s⟩ 예약 됐어. ⟦⚡SPAN@5.40s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ 6월 15일 오후 2시에 그랜드뷰 로프트 방문이 확정됐어.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[  8.69s][user ] 그 주소로 가는 길 안내를 보내 주실 수 ⟨ret@12.18s⟩ 있나요?
-[ 12.57s][moshi] 당연히 가능하지. 그랜드뷰 ⟦⚡SPAN@14.18s: (tool result) Directions to The Grandview Lofts are: head north on Elm Street, turn right onto Oak Avenue, and⟧ 로프트 가는 길은 엘름 길을 북쪽으로 가고, 오크 길에서 오른쪽으로 틀면 오크 애비뉴 일 이 삼 번지에 있어.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 20.79s][user ] 도움이 많이 되네요. 그곳까지 운전하는 데 얼마나 ⟨ret@24.55s⟩ 걸릴까요?
-[ 24.95s][moshi] 여행 시간을 알아볼게. 그랜드뷰 ⟦⚡SPAN@26.55s: (tool result) The drive to The Grandview Lofts is estimated to take fifteen minutes.⟧ 로프트까지 가는 데 대략 십오 분 정도 걸릴 거야.
-      CALL: {"function": "Navigation_2_GetTravelTime", "arguments": {"destination": "The Grandview Lofts"}}
-[ 30.66s][user ] 알겠습니다, 좋네요. 그리고 그곳 주차 상황은 어떤가요?
-[ 34.64s][moshi] 주차 공간이 좀 부족할 수 있는데, 오크 애비뉴 길가에 주차할 수 있고, 근처에 유료 주차장도 있어.
-[ 42.59s][user ] 혹시 나중에 무언가를 사려고 한다면 근처에 식료품점이 있나요?
-[ 47.10s][moshi] 응, 있어!
-[ 48.72s][moshi] ⟨ret@48.65s⟩ 근처에 ⟦⚡SPAN@49.85s: (tool result) Fresh Foods Market is a five-minute walk from The Grandview Lofts.⟧ 식료품점이 있는데— 프레시 푸드 마켓은 그랜드뷰 로프트에서 도보로 오 분 거리에 있어.
-      CALL: {"function": "Search_2_FindNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
-[ 55.50s][user ] 훌륭하네요. 저는 블리커 스트리트에 있는 곳도 보고 있는데요…
-[ 59.77s][moshi] 아, 다른 매물이네. 블리커 스트리트 어느 주소를 보고 있는 거야?
-[ 65.73s][user ] 사십이 블리커 스트리트예요. 그곳도 방문 예약을 할 수 ⟨ret@70.00s⟩ 있을까요?
-[ 70.24s][moshi] 물론이지, ⟦⚡SPAN@71.12s: (tool result) A viewing at 42 Bleecker Street is confirmed for June eighteenth at ten AM.⟧ 그곳 방문 예약을 해 볼게. 6월 십팔일 오전 열 시에 사십이 블리커 스트리트 방문 예약을 했어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "date": "June eighteenth"}}
-[ 78.00s][user ] 완벽하네요. 그런데 사실… 블리커 스트리트는 6월 십칠일이 더 좋을 것 같아요.
-[ 84.51s][moshi] ⟨ret@84.35s⟩ ⟦⚡SPAN@84.85s: (tool result) The viewing at 42 Bleecker Street is now scheduled for June seventeenth at ten AM.⟧ 그럼 바꿔 줄게— 사십이 블리커 스트리트 방문 예약을 6월 십칠일 오전 열 시로 변경했어.
-      CALL: {"function": "Homes_2_RescheduleVisit", "arguments": {"propertyName": "42 Bleecker Street", "oldDate": "June eighteenth", "newDate": "June seventeenth"}}
-[ 89.93s][user ] 좋아요, 감사합니다. 블리커 스트리트 아파트의 면적은 ⟨ret@94.08s⟩ 얼마인가요?
-[ 94.40s][moshi] 자세한 ⟦⚡SPAN@96.08s: (tool result) 42 Bleecker Street is 750 square feet with one bedroom and one bathroom.⟧ 정보를 찾아볼게. 사십이 블리커 스트리트 아파트는 칠백오십 평방피트이고, 침실 하나와 욕실 하나가 있어.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "42 Bleecker Street"}}
-[105.47s][user ] 좋은 소식이네요. 그럼 그랜드뷰 로프트는 면적이 ⟨ret@109.58s⟩ 얼마인가요?
-[109.81s][moshi] 그 ⟦⚡SPAN@110.94s: (tool result) The Grandview Lofts are 900 square feet with two bedrooms and two bathrooms.⟧ 정보를 확인해 볼게. 그랜드뷰 로프트는 구백 평방피트이고, 침실 두 개와 욕실 두 개가 있어.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
-[117.54s][user ] 음, 알겠습니다. 상당히 차이가 크네요. 많은 도움 주셔서 감사합니다.
-[122.22s][moshi] 천만에. 이 방문 예약을 도와드릴 수 있어서 기뻐.
+[  9.40s][user ] 건물에 주차 공간이 있나요? ⟨ret@11.23s⟩
+[ 11.63s][moshi] 미리 물어보는 ⟦⚡SPAN@13.23s: (tool result) The Grandview Lofts offers validated parking in the adjacent garage.⟧ 게 좋지. 그랜드뷰 로프트에는 인접한 차고에서 주차를 검증해 줘.
+      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 17.22s][user ] 애완동물 제한 사항은 ⟨ret@19.46s⟩ 어떤가요?
+[ 19.86s][moshi] 많은 건물에 ⟦⚡SPAN@21.46s: (tool result) The Grandview Lofts allows cats and small dogs under twenty-five pounds.⟧ 그런 게 있으니 확인하는 게 현명해. 그랜드뷰 로프트에는 25파운드 미만의 고양이와 작은 개를 허용해.
+      CALL: {"function": "Homes_2CheckPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 29.78s][user ] 알아두니 좋네요. 제 테리어가 약 30파운드 정도 ⟨ret@33.51s⟩ 되거든요.
+[ 33.75s][moshi] 그럼 검색 조건을 ⟦⚡SPAN@35.51s: (tool result) No properties match your criteria within The Grandview Lofts.⟧ 좀 더 좁혀야 할 것 같아… 안타깝게도 그랜드뷰 로프트에는 30파운드짜리 개를 수용할 수 있는 유닛이 없어.
+      CALL: {"function": "Homes_2SearchHomes", "arguments": {"petWeightLimit": "30", "propertyName": "The Grandview Lofts"}}
+[ 41.66s][user ] 근처에 비슷한 평면도를 가진 다른 건물이 있나요?
+[ 45.24s][moshi] —하지만 살펴볼 수 있는 다른 옵션도 있어.
+[ 48.60s][user ] 특히 침실 2개와 발코니가 있으면 좋겠어요.
+[ 52.20s][moshi] ⟨ret@52.13s⟩ 알았어, 근처 ⟦⚡SPAN@53.57s: (tool result) The Astoria and The Belvedere both have two-bedroom units with balconies.⟧ 건물로 검색 범위를 넓혀 볼게. 아스토리아와 벨베데어에는 침실 2개와 발코니가 있는 유닛이 있어.
+      CALL: {"function": "Homes_2SearchHomes", "arguments": {"bedrooms": "2", "balcony": "true", "propertyName": "nearby"}}
+[ 59.76s][user ] 아스토리아에 대해 더 자세히 ⟨ret@61.86s⟩ 알려주세요.
+[ 62.10s][moshi] 그 ⟦⚡SPAN@62.98s: (tool result) The Astoria was built in 2018 and has a rooftop terrace.⟧ 건물에 대한 자세한 정보를 알려 줄 수 있어. 아스토리아는 2018년에 지어졌고 입주자를 위한 옥상 테라스가 있어.
+      CALL: {"function": "Homes_2GetBuildingInfo", "arguments": {"propertyName": "The Astoria"}}
+[ 71.20s][user ] 아스토리아에도 주차 공간이 ⟨ret@73.34s⟩ 있나요?
+[ 73.50s][moshi] ⟦⚡SPAN@73.84s: (tool result) The Astoria offers valet parking for a monthly fee of two hundred dollars.⟧ 주차는 세입자에게 중요한 고려 사항이지. 아스토리아의 발레 파킹은 한 달에 200달러야.
+      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Astoria"}}
+[ 80.06s][user ] 좀 비싸네요. 벨베데어는 ⟨ret@82.40s⟩ 어떻고요?
+[ 82.72s][moshi] 벨베데어의 주차 옵션을 ⟦⚡SPAN@84.40s: (tool result) The Belvedere has self-parking available for one hundred and fifty dollars monthly.⟧ 비교해 보자. 벨베데어의 셀프 주차는 한 달에 150달러야.
+      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Belvedere"}}
+[ 88.69s][user ] 그게 더 나은 것 같아요. 다음 화요일에 거기 방문 예약을 할 수 ⟨ret@93.01s⟩ 있을까요?
+[ 93.25s][moshi] 다음 화요일 ⟦⚡SPAN@94.85s: (tool result) A viewing at The Belvedere is scheduled for next Tuesday at eleven AM.⟧ 방문 가능 여부를 확인해 볼게. 다음 화요일 오전 11시에 벨베데어 방문이 확정됐어.
+      CALL: {"function": "Homes_2ScheduleVisit", "arguments": {"propertyName": "The Belvedere", "date": "next Tuesday"}}
+[100.32s][user ] 좋아요. 방문 전날 알림을 보내주세요. ⟨ret@103.27s⟩
+[103.43s][moshi] 그래, 지금 ⟦⚡SPAN@105.27s: (tool result) A reminder for your Belvedere viewing is set for next Monday at six PM.⟧ 바로 설정해 줄게. 다음 월요일 오후 6시에 벨베데어 방문 알림을 설정했어.
+      CALL: {"function": "Calendar_2SetReminder", "arguments": {"date": "next Monday", "time": "6 PM", "event": "Belvedere Viewing"}}

@@ -1,15 +1,15 @@
 v3_chain_06_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 고전 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 내 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 줄래?
-[  4.50s][moshi] ⟨ret@4.43s⟩ 응, 브라우저 설정을 ⟦⚡SPAN@6.43s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 바꿔 놨어. 요청대로 MyCustomBrowser 버전 십 점 오로 업데이트했어.
+[  0.00s][user ] 내 user agent을 MyCustomBrowser 버전 십 점 오로 설정해 줘.
+[  5.00s][moshi] ⟨ret@4.93s⟩ 알았어, 브라우저 설정을 ⟦⚡SPAN@6.93s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 바꿔줄게. user agent은 MyCustomBrowser, 버전 십 점 오로 바뀌었어.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 11.51s][user ] 좋아. 그 사용자 에이전트가 caniuse.com에서 감지되는지 확인해 ⟨ret@16.16s⟩ 줄래?
-[ 16.56s][moshi] 음, ⟦⚡SPAN@17.68s: (tool result) CanIUse does not have any specific data for MyCustomBrowser version 10.5.⟧ 확인해 봤는데 CanIUse에는 그 특정 사용자 에이전트 문자열에 대한 데이터가 없어.
-      CALL: {"function": "caniuse_check", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 23.07s][user ] 흠. 좋아, 그럼 “브라우저 호환성 테스트”를 구글에서 검색해 ⟨ret@27.12s⟩ 줄래?
-[ 27.43s][moshi] 당연하지, 바로 ⟦⚡SPAN@29.12s: (tool result) Google found approximately seven hundred and eighty-two thousand results for browser compatibili⟧ 검색해 볼게. 구글에서 약 칠십만 팔천이백 건의 결과를 찾았어.
-      CALL: {"function": "google_search", "arguments": {"query": "browser compatibility tests"}}
-[ 33.68s][user ] 엄청 많네! 첫 번째 결과의 제목이랑 스니펫 읽어 줘.
-[ 37.90s][moshi] 그래, 읽어 줄게.
+[ 11.59s][user ] 파리 시간은 지금 몇 ⟨ret@12.76s⟩ 시야?
+[ 13.15s][moshi] ⟦⚡SPAN@13.48s: (tool result) The current time in Paris is 10:22 AM.⟧ 잠깐만 파리 시간을 확인해 볼게. 지금 파리는 오전 열 시 이십이 분이야.
+      CALL: {"function": "get_current_time", "arguments": {"city": "Paris"}}
+[ 18.09s][user ] 에펠탑 근처에 빵집 좀 ⟨ret@20.59s⟩ 찾아줘.
+[ 20.91s][moshi] 당연하지, 근처 ⟦⚡SPAN@22.59s: (tool result) Boulangerie Utopie is 0.8 kilometers from the Eiffel Tower.⟧ 빵집을 검색해 볼게. Boulangerie Utopie가 에펠탑에서 쩜 팔 킬로미터 떨어져 있어.
+      CALL: {"function": "find_nearby", "arguments": {"query": "bakery", "location": "Eiffel Tower"}}
+[ 27.88s][user ] 거기서 두 명 자리 오전 열한 시에 예약해 줄 수 있어?
+[ 32.06s][moshi] 예약 가능한지 알아볼게.

@@ -2,48 +2,42 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
-     6.77s  user  발화 끝
-     7.15s  agent 발화 시작: That’s a lovely question. It’s a song that really captures a
-    12.86s  <ret> 발화 (turn2 첫 프레임)
-    13.17s  agent 발화 끝
-    13.18s  agent 발화 시작: <ret> Let me quickly check the songwriting credits for you. 
-    14.46s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.88s]: Björn Ulvaeus wrote “My Love, My Life”, which appeared on the 1979 alb
-    23.04s  user  발화 시작: Oh, interesting! I always thought it was Benny Andersson.
-    23.10s  agent 발화 끝
-    26.57s  agent 발화 시작: It’s a common mistake, as they collaborated so closely. They
-    26.74s  user  발화 끝
-    33.72s  <ret> 발화 (turn5 첫 프레임)
-    33.88s  agent 발화 시작: <ret> I can look up details about their partnership, if you’
-    33.90s  agent 발화 끝
-    35.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: Benny Andersson and Björn Ulvaeus wrote most of ABBA’s songs together,
-    41.56s  user  발화 시작: Mm-hmm.
-    42.10s  user  발화 끝
-    45.14s  agent 발화 시작: Their ability to blend different musical styles was remarkab
-    45.29s  agent 발화 끝
-    51.20s  agent 발화 끝
-    51.25s  user  발화 시작: What other songs did Björn Ulvaeus write?
-    54.01s  <ret> 발화 (turn9 첫 프레임)
-    54.20s  user  발화 끝
-    54.33s  agent 발화 시작: <ret> That’s a good question, exploring his wider work is wo
-    56.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: Björn Ulvaeus also co-wrote “Dancing Queen,” “Waterloo,” and “The Winn
-    68.56s  user  발화 시작: Wow, those are all classics! I— I mean, they’re really well 
-    68.71s  agent 발화 끝
-    73.71s  user  발화 끝
-    73.95s  <ret> 발화 (turn11 첫 프레임)
-    74.03s  agent 발화 시작: <ret> Indeed, they’ve stood the test of time. Music can be s
-    75.95s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.58s]: (tool result) Current time in Tokyo is 14:35 on November 15th.
-    80.54s  agent 발화 시작: The way a song can transport you back to a specific moment… 
-    80.60s  agent 발화 끝
-    88.29s  agent 발화 끝
-    89.91s  user  발화 시작: Do you think music affects memory?
-    92.68s  user  발화 끝
-    92.79s  agent 발화 시작: Absolutely. Music and memory are deeply intertwined. The hip
-   100.47s  <ret> 발화 (turn15 첫 프레임)
-   100.55s  agent 발화 시작: <ret> I can share some recent findings on that connection. R
-   100.67s  agent 발화 끝
-   102.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.02s]: Studies show music can trigger autobiographical memories, especially s
-   113.39s  agent 발화 끝
-   114.37s  user  발화 시작: That makes sense. I always remember where I was when I first
-   119.78s  agent 발화 시작: Exactly. The emotional resonance strengthens those memories,
-   119.88s  user  발화 끝
-   127.23s  agent 발화 끝
+     6.63s  user  발화 끝
+     6.99s  agent 발화 시작: That’s a lovely question. It’s a song that really captures a
+    12.61s  <ret> 발화 (turn2 첫 프레임)
+    12.93s  agent 발화 시작: <ret> Let’s see if I can pinpoint the composer for you. Björ
+    12.96s  agent 발화 끝
+    14.21s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.08s]: Björn Ulvaeus wrote “My Love, My Life”, a song featured in the musical
+    23.08s  user  발화 시작: Oh, really? I always thought it was Benny Andersson.
+    23.13s  agent 발화 끝
+    26.70s  agent 발화 시작: It’s a common mistake, as they collaborated extensively. The
+    26.88s  user  발화 끝
+    33.21s  <ret> 발화 (turn5 첫 프레임)
+    33.37s  agent 발화 시작: <ret> I can share some details on their creative process. An
+    33.42s  agent 발화 끝
+    34.81s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.25s]: Benny Andersson and Björn Ulvaeus formed a songwriting partnership in 
+    40.02s  user  발화 시작: Mm-hmm.
+    40.65s  user  발화 끝
+    43.12s  agent 발화 시작: They’ve written so many iconic songs together, it’s easy to 
+    43.29s  agent 발화 끝
+    49.74s  agent 발화 끝
+    49.79s  user  발화 시작: That makes sense. What other songs did Björn Ulvaeus write?
+    54.51s  <ret> 발화 (turn9 첫 프레임)
+    54.70s  user  발화 끝
+    54.83s  agent 발화 시작: <ret> I can look into other songs by Ulvaeus for you. Ulvaeu
+    56.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: Björn Ulvaeus also co-wrote “Dancing Queen”, “Waterloo”, and “Take a C
+    68.76s  user  발화 시작: Wow, those are all classics! Did he write songs for other ar
+    68.89s  agent 발화 끝
+    74.17s  user  발화 끝
+    74.34s  <ret> 발화 (turn11 첫 프레임)
+    74.41s  agent 발화 시작: <ret> He primarily focused on ABBA’s catalogue, but also exp
+    76.34s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.41s]: (tool result) Current time in Tokyo is 14:35:22 JST.
+    81.51s  <ret> 발화 (turn12 첫 프레임)
+    81.82s  agent 발화 끝
+    81.83s  agent 발화 시작: <ret> Let me check if there are any documented songs for oth
+    82.87s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.42s]: Beyond ABBA, Björn Ulvaeus contributed to the musical Chess with Tim R
+    93.56s  agent 발화 끝
+    95.26s  user  발화 시작: Oh, Chess! I've heard of that. It’s a pretty different style
+   100.07s  user  발화 끝
+   100.20s  agent 발화 시작: It is, yes. It demonstrates his versatility as a composer; a
+   107.42s  agent 발화 끝

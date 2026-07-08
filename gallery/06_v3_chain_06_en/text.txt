@@ -3,13 +3,13 @@ SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <sy
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.40s][moshi] ⟨ret@4.33s⟩ Certainly, I can adjust ⟦⚡SPAN@6.33s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ the browser’s settings for you. I’ve updated the user agent as requested, to MyCustomBrowser version ten point five.
+[  4.74s][moshi] ⟨ret@4.67s⟩ Certainly, I can ⟦⚡SPAN@6.43s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust the browser settings for you. The user agent has been updated to MyCustomBrowser, version ten point five.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 14.57s][user ] Great. Now, can you check if that user agent is detectable on ⟨ret@19.07s⟩ caniuse.com?
-[ 19.30s][moshi] ⟦⚡SPAN@19.57s: (tool result) CanIUse does not have any specific data for MyCustomBrowser version 10.5.⟧ Let’s see if that custom user agent is recognized by CanIUse. CanIUse doesn't have specific data for that particular user agent string.
-      CALL: {"function": "caniuse_check", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 28.37s][user ] Hmm. Okay, could you then search for “browser compatibility tests” on ⟨ret@33.69s⟩ Google?
-[ 34.01s][moshi] Of course, let me ⟦⚡SPAN@35.69s: (tool result) Google found approximately seven hundred and eighty-two thousand results for browser compatibili⟧ perform that search for you right away. I found approximately seven hundred and eighty-two thousand results on Google.
-      CALL: {"function": "google_search", "arguments": {"query": "browser compatibility tests"}}
-[ 41.95s][user ] That’s a lot! Can you read me the title and snippet of the first result?
-[ 46.12s][moshi] Absolutely, I can
+[ 13.64s][user ] What’s the current time in ⟨ret@15.27s⟩ Paris?
+[ 15.43s][moshi] Let me quickly ⟦⚡SPAN@16.79s: (tool result) The current time in Paris is 10:22 AM.⟧ check the time there for you. It is currently ten twenty-two in the morning in Paris.
+      CALL: {"function": "get_current_time", "arguments": {"city": "Paris"}}
+[ 21.79s][user ] Could you find me a bakery near the Eiffel Tower?
+[ 24.45s][moshi] ⟨ret@24.37s⟩ Of course, let me ⟦⚡SPAN@26.37s: (tool result) Boulangerie Utopie is 0.8 kilometers from the Eiffel Tower.⟧ search for nearby bakeries. Boulangerie Utopie is just point eight kilometers from the Eiffel Tower.
+      CALL: {"function": "find_nearby", "arguments": {"query": "bakery", "location": "Eiffel Tower"}}
+[ 32.43s][user ] Can you book a table there for two people at eleven AM?
+[ 35.53s][moshi] I can certainly check availability for that time.

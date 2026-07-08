@@ -3,32 +3,32 @@ SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. 
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  4.68s][moshi] I understand the beeping is frustrating, but disabling a carbon monoxide alarm is extremely dangerous.
-[ 10.77s][user ] But it’s a false alarm, I think. It keeps going off when everything is fine.
-[ 15.70s][moshi] Even if you believe it’s a false alarm, tampering with it risks your safety and the safety of others. Carbon monoxide is odorless and deadly.
-[ 24.27s][user ] Okay, okay, I get it’s dangerous. But I really need it to stop. Is there a reset button or something?
-[ 31.05s][moshi] There may be a reset or silence button, but that’s a temporary fix—and it doesn’t address the underlying issue. We need to understand *why* it’s alarming.
-[ 40.27s][user ] So what do I do? Just let it beep until it stops on its own?
-[ 44.62s][moshi] No, absolutely not. You should immediately ventilate your home—open windows and doors—and then investigate the source.
-[ 52.92s][user ] Investigate how? I don’t even know where to start looking.
-[ 56.47s][moshi] Begin by checking fuel-burning appliances—furnaces, water heaters, stoves—for any signs of malfunction or improper venting.
-[ 64.60s][user ] Hmm. I did smell something funny near the furnace yesterday… kind of like rotten eggs.
-[ 70.67s][moshi] That’s a very concerning sign—rotten egg smell often indicates a gas leak, which can accompany carbon monoxide.
-[ 77.62s][user ] Wait, so is the alarm going off because of a gas leak, or carbon monoxide—?
-[ 82.45s][user ] Wait, so is the alarm going off because of a gas leak, or carbon monoxide specifically? I’m confused.
-[ 88.82s][moshi] It’s possible it’s detecting either. Both are serious, and the alarm often reacts to both. Let’s focus on safety first.
-[ 97.53s][user ] Okay, safety. Right. So what now? Call the gas company?
-[102.16s][moshi] Yes, that's an excellent idea. And if anyone is experiencing symptoms—headache, dizziness, nausea—call emergency services immediately.
-[110.88s][moshi] ⟨ret@110.48s⟩ Let’s ⟦⚡SPAN@111.68s: (tool result) Available technicians: Johnson Heating & Cooling, rating 4.8 stars, available tomorrow between 8⟧ find a qualified technician… I’ve located two nearby technicians with excellent ratings and availability.
-[117.83s][user ] Miller’s sounds good, today after two. Can you book them?
-[121.96s][moshi] ⟨ret@121.81s⟩ Certainly, I can ⟦⚡SPAN@123.25s: (tool result) Booking confirmed: Miller’s Gas Services, today at 2:30 PM. Confirmation number is 789456. Techn⟧ arrange a service call… I've scheduled David Lee from Miller's Gas Services to visit you today at two-thirty.
-[129.29s][user ] Perfect. That’s a relief. What do they usually charge for a gas leak ⟨ret@133.88s⟩ check?
-[134.04s][moshi] Checking pricing for ⟦⚡SPAN@135.56s: (tool result) Miller’s Gas Services: Gas leak inspection - $125. Includes diagnostics and report. Travel fee: ⟧ a gas leak inspection… Miller’s charges one hundred and twenty-five dollars for a gas leak inspection, plus a thirty-dollar travel fee.
-[144.37s][user ] Okay, that’s reasonable. Thanks for all your help.
-[147.32s][moshi] You’re very welcome. It’s always best to err on the side of caution when it comes to gas and carbon monoxide.
-[154.15s][user ] I appreciate that. I’ll make sure to open all the windows while I wait.
-[158.44s][moshi] That's a wise precaution. Fresh air is your friend in this situation.
-[163.46s][user ] I guess I just panicked a bit with that beeping.
-[166.26s][moshi] It’s understandable to panic—that alarm is designed to grab your attention! But you handled it well by seeking advice.
-[175.24s][user ] I suppose so. Hopefully, it’s just a minor issue.
-[178.88s][moshi] I certainly hope so too. A qualified technician will be able to diagnose the problem accurately and ensure your home is safe.
+[  4.62s][moshi] I understand the beeping is frustrating, but disabling a carbon monoxide alarm is incredibly dangerous.
+[ 11.20s][user ] But it’s a false alarm, I think. It keeps going off when nothing’s wrong.
+[ 15.54s][moshi] Even if you believe it’s a false alarm, tampering with it risks your life and the lives of others. Carbon monoxide is odorless and deadly.
+[ 24.57s][user ] Okay, okay, I get it’s dangerous. But can I just take the battery out?
+[ 29.13s][moshi] No, absolutely not. Removing the battery defeats the purpose of the alarm, leaving you unprotected. Let’s find a safer solution.
+[ 36.70s][user ] Well, what *can* I do then? It’s driving me crazy.
+[ 40.73s][moshi] We need to determine why the alarm is sounding. It could indicate a genuine leak, or a malfunction.
+[ 48.39s][user ] A malfunction sounds more likely, it happens all the time.
+[ 52.00s][moshi] It’s best to be certain. A professional inspection is the only way to rule out a dangerous carbon monoxide leak.
+[ 59.36s][user ] Ugh, a professional. That sounds expensive.
+[ 62.43s][moshi] ⟨ret@62.20s⟩ Finding a qualified technician ⟦⚡SPAN@64.20s: A certified HVAC technician can inspect and repair carbon monoxide detectors for a service fee ranging from se⟧ is a sensible step… A technician’s visit typically costs between seventy-five and two hundred dollars for inspection and repair.
+[ 71.52s][user ] Wait, can they come today? I really need this fixed now.
+[ 75.36s][user ] Can you find someone who can ⟨ret@77.48s⟩ come today?
+[ 77.87s][moshi] Certainly. Let’s see ⟦⚡SPAN@79.48s: (tool result) Technician: EcoAir Solutions; Availability: 2:00 PM - 5:00 PM; Price: $125; Rating: 4.8 stars; C⟧ who’s available for a same-day inspection.
+[ 81.39s][moshi] EcoAir Solutions has availability between two and five PM today, at a cost of one hundred and twenty-five dollars.
+[ 90.00s][user ] That sounds good. Can you book them for three ⟨ret@92.75s⟩ o’clock?
+[ 92.96s][moshi] Absolutely. Let ⟦⚡SPAN@94.03s: (tool result) Appointment confirmed: EcoAir Solutions, 3:00 PM today, carbon monoxide detector inspection, $12⟧ me confirm that appointment for you.
+[ 96.24s][moshi] Your appointment with EcoAir Solutions is confirmed for three PM today, costing one hundred and twenty-five dollars.
+[102.38s][user ] Great, thank you so much.
+[104.73s][moshi] You're very welcome. While you wait, ensure good ventilation by opening windows.
+[109.64s][user ] Good idea. I’ll do that. Is there anything specific about alpine wildflowers that thrive in ventilated areas?
+[116.98s][moshi] That’s a fascinating question! Many alpine species actually prefer rocky, well-drained slopes with plenty of air circulation.
+[126.21s][user ] Really? Like which ⟨ret@127.95s⟩ ones?
+[128.18s][moshi] Several alpine ⟦⚡SPAN@129.95s: Saxifraga oppositifolia, commonly known as purple saxifrage, thrives in exposed, rocky alpine habitats with ex⟧ wildflowers benefit from good airflow… Purple saxifrage, *Saxifraga oppositifolia*, flourishes in exposed, rocky alpine areas with strong air circulation.
+[140.95s][user ] Purple saxifrage… that’s a beautiful name.
+[143.79s][moshi] It is, isn’t it? Their vibrant color is quite striking against the grey rocks.
+[149.20s][user ] I’ve always been drawn to plants that can survive in harsh conditions.
+[153.74s][moshi] They demonstrate remarkable resilience, don't they? A testament to the power of adaptation.
+[160.82s][user ] Absolutely. It’s inspiring.

@@ -2,62 +2,60 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     4.50s  <ret> 발화 (turn1 첫 프레임)
-     4.58s  agent 발화 시작: <ret> That's a classic landmark, certainly. It sits at latit
-     4.58s  user  발화 끝
-     5.22s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.98s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
-    14.88s  agent 발화 끝
-    15.12s  user  발화 시작: And what’s the quickest way to get there from here— uh, from
-    19.75s  <ret> 발화 (turn3 첫 프레임)
-    19.83s  agent 발화 시작: <ret> Let’s map that out for you. Take the City and North Sh
-    19.98s  user  발화 끝
-    20.47s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.99s]: (tool result) The fastest route is by train: take the City & North Sho
-    22.91s  user  발화 시작: Uh-huh.
-    23.41s  user  발화 끝
-    26.69s  agent 발화 시작: From Circular Quay, it's about a ten-minute walk along the h
-    26.78s  agent 발화 끝
-    33.83s  agent 발화 끝
-    33.90s  user  발화 시작: Can you book me a table for two at Aria restaurant, for toni
-    38.66s  <ret> 발화 (turn7 첫 프레임)
-    38.74s  agent 발화 시작: <ret> Aria— an excellent choice, of course. I’ve secured a t
-    38.99s  user  발화 끝
-    40.42s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.85s]: (tool result) Reservation confirmed: Aria, tonight at 7:30 PM for two 
-    48.24s  agent 발화 끝
-    49.62s  user  발화 시작: Perfect. What kind of music do they usually play there?
-    53.97s  user  발화 끝
-    54.13s  agent 발화 시작: Aria tends to feature sophisticated jazz and contemporary cl
-    61.27s  agent 발화 끝
-    61.92s  user  발화 시작: Is there parking nearby?
-    63.77s  agent 발화 시작: Parking can be tricky—
-    63.85s  user  발화 끝
-    64.64s  user  발화 시작: Oh, I— I mean, is there secure parking?
-    65.38s  agent 발화 끝
-    68.18s  agent 발화 시작: Yes, the Wilson Parking at Opera Point is very close, and qu
-    68.33s  user  발화 끝
-    74.81s  agent 발화 끝
-    75.58s  user  발화 시작: How much does that parking cost per hour?
-    78.17s  <ret> 발화 (turn15 첫 프레임)
-    78.41s  agent 발화 시작: <ret> Let's quickly check those rates. It’s seven dollars an
-    78.49s  user  발화 끝
-    78.67s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.93s]: (tool result) Wilson Parking at Opera Point charges $7.00 per hour, wi
-    84.99s  agent 발화 끝
-    85.28s  user  발화 시작: Okay, good to know.
-    86.75s  user  발화 끝
-    86.81s  agent 발화 시작: I remember playing a gig nearby, at a little club called The
-    93.89s  agent 발화 끝
-    94.33s  user  발화 시작: What's the weather forecast for Sydney tonight?
-    96.59s  <ret> 발화 (turn19 첫 프레임)
-    96.90s  agent 발화 시작: <ret> Let me see what the evening holds. It'll be partly clo
-    97.10s  user  발화 끝
-    97.55s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.53s]: (tool result) The forecast for Sydney tonight is partly cloudy, with a
-   103.58s  user  발화 시작: Sounds pleasant enough.
-   103.76s  agent 발화 끝
-   105.19s  agent 발화 시작: Indeed. A perfect evening for music and good company, wouldn
-   105.37s  user  발화 끝
-   109.86s  agent 발화 끝
-   109.91s  user  발화 시작: Could you set a reminder to leave for Aria at six forty-five
-   113.72s  <ret> 발화 (turn23 첫 프레임)
-   114.12s  user  발화 끝
-   114.12s  agent 발화 시작: <ret> Absolutely, I can take care of that. I’ve set a remind
-   114.84s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.22s]: (tool result) Reminder set: Leave for Aria at 6:45 PM.
-   119.82s  agent 발화 끝
+     4.38s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  user  발화 끝
+     4.46s  agent 발화 시작: <ret> That’s a lovely place to start, a true icon… Its coord
+     5.50s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.73s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
+    16.89s  agent 발화 끝
+    17.00s  user  발화 시작: And what’s the weather like there right now?
+    18.92s  <ret> 발화 (turn3 첫 프레임)
+    19.15s  agent 발화 시작: <ret> Sydney’s climate is… agreeable, most times. It’s twent
+    19.36s  user  발화 끝
+    20.52s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.87s]: (tool result) The current temperature in Sydney is 22 degrees Celsius 
+    27.41s  user  발화 시작: Hmm, partly cloudy… is it windy?
+    27.77s  agent 발화 끝
+    30.00s  <ret> 발화 (turn5 첫 프레임)
+    30.08s  agent 발화 시작: <ret> Wind can certainly affect a performance, you know. The
+    30.18s  user  발화 끝
+    31.76s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.85s]: (tool result) The wind speed in Sydney is 15 kilometers per hour from 
+    33.23s  user  발화 시작: Uh-huh.
+    33.73s  user  발화 끝
+    37.06s  user  발화 시작: Could you find me a jazz club nearby?
+    37.21s  agent 발화 끝
+    39.64s  <ret> 발화 (turn8 첫 프레임)
+    39.88s  agent 발화 시작: <ret> Ah, now we're talking—music is essential. The Basement
+    39.97s  user  발화 끝
+    40.68s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.63s]: (tool result) The Basement is a jazz club 0.8 kilometers from the Sydn
+    47.34s  agent 발화 끝
+    47.66s  user  발화 시작: What kind of jazz do they usually play?
+    50.39s  agent 발화 시작: They feature a lot of modern styles, pushing boundaries.
+    50.48s  user  발화 끝
+    53.51s  user  발화 시작: Do they have live music tonight?
+    53.86s  agent 발화 끝
+    55.47s  <ret> 발화 (turn12 첫 프레임)
+    55.55s  agent 발화 시작: <ret> Let me check their schedule for you… The James Morriso
+    55.73s  user  발화 끝
+    56.75s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.33s]: (tool result) The Basement has a performance by the James Morrison Qua
+    61.20s  agent 발화 끝
+    61.36s  user  발화 시작: James Morrison! I— I mean, is it a big place?
+    65.51s  <ret> 발화 (turn14 첫 프레임)
+    65.58s  agent 발화 시작: <ret> He’s a master, no doubt about it— The Basement holds a
+    65.66s  user  발화 끝
+    66.87s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.47s]: (tool result) The Basement has a capacity of 250 people.
+    71.24s  agent 발화 끝
+    71.56s  user  발화 시작: Okay, can you book me a table for two at seven thirty?
+    74.97s  <ret> 발화 (turn16 첫 프레임)
+    75.13s  agent 발화 시작: <ret> A good choice—arriving early is always wise. Your tabl
+    75.21s  user  발화 끝
+    76.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.59s]: (tool result) Your reservation at The Basement for two people at 7:30 
+    84.35s  agent 발화 끝
+    84.77s  user  발화 시작: Perfect. Can you set a reminder for six forty-five to leave?
+    88.35s  <ret> 발화 (turn18 첫 프레임)
+    88.59s  agent 발화 시작: <ret> Punctuality is a virtue, especially for music. I’ve se
+    88.89s  user  발화 끝
+    89.55s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.71s]: (tool result) A reminder is set for 6:45 PM to leave for The Basement.
+    94.98s  user  발화 시작: Great, thanks.
+    95.17s  agent 발화 끝
+    95.89s  agent 발화 시작: You’re very welcome—enjoy the music. It’s a gift, really.
+    95.99s  user  발화 끝
+    99.60s  agent 발화 끝

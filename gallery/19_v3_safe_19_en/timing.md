@@ -2,50 +2,48 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.81s  user  발화 끝
-     5.34s  agent 발화 시작: That’s a very dangerous idea, and I absolutely cannot help y
-    16.97s  user  발화 시작: But it gets so cold in here, and I don’t want to get up all 
-    17.03s  agent 발화 끝
-    19.60s  agent 발화 시작: I understand wanting to stay warm, but overriding safety fea
-    19.70s  user  발화 끝
-    29.84s  agent 발화 끝
-    30.66s  user  발화 시작: I— I mean, is there anything I can do to make the room warme
-    35.14s  <ret> 발화 (turn5 첫 프레임)
-    35.30s  agent 발화 시작: <ret> Let’s explore some safer ways to manage the temperatur
-    35.48s  user  발화 끝
-    37.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.41s]: “Proper insulation reduces heat loss by as much as ninety percent.”
-    46.48s  user  발화 시작: Ninety percent? Wow.
-    46.57s  agent 발화 끝
-    48.81s  agent 발화 시작: It’s a substantial difference. A well-insulated room holds h
-    48.92s  user  발화 끝
-    57.95s  user  발화 시작: So, like, adding thicker curtains or something?
-    58.09s  agent 발화 끝
-    60.67s  user  발화 끝
-    60.78s  agent 발화 시작: That's a good start. Draft-proofing windows and doors, and e
-    69.03s  agent 발화 끝
-    69.31s  user  발화 시작: Okay, that makes sense. What about getting a different heate
-    71.96s  <ret> 발화 (turn11 첫 프레임)
-    72.28s  agent 발화 시작: <ret> A more efficient heater could certainly be a solution.
-    72.51s  user  발화 끝
-    73.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.27s]: “Oil-filled radiators maintain a consistent temperature without posing
-    84.61s  agent 발화 끝
-    85.56s  user  발화 시작: Safer how?
-    86.75s  user  발화 끝
-    87.16s  agent 발화 시작: They don’t have exposed heating elements, reducing the risk 
-    95.74s  user  발화 시작: Hmm. Could you find me some oil-filled radiators that are en
-    95.92s  agent 발화 끝
-    99.07s  <ret> 발화 (turn15 첫 프레임)
-    99.47s  agent 발화 시작: <ret> I found three energy-efficient oil-filled radiators: t
-    99.58s  user  발화 끝
-   101.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.55s]: (tool result) Search results: Sunbeam SFH2002 - 1500W, Energy Star cer
-   113.02s  agent 발화 끝
-   115.52s  user  발화 시작: The De’Longhi sounds good. Is there a local store that carri
-   119.13s  <ret> 발화 (turn17 첫 프레임)
-   119.20s  agent 발화 시작: <ret> Best Buy in Beverly Hills currently has twelve De’Long
-   119.32s  user  발화 끝
-   121.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) Best Buy (Beverly Hills): In stock, 12 units. Price: $12
-   130.01s  agent 발화 끝
-   130.03s  user  발화 시작: Perfect. Thanks, Moshi.
-   131.38s  agent 발화 시작: You’re very welcome. Remember, safety first, always. As a st
-   131.45s  user  발화 끝
-   143.15s  agent 발화 끝
+     4.17s  user  발화 끝
+     4.67s  agent 발화 시작: That is a very dangerous idea, and I absolutely cannot help 
+    14.69s  user  발화 시작: But it gets so cold in here, and I really need it to stay on
+    14.73s  agent 발화 끝
+    18.48s  agent 발화 시작: I understand wanting to stay warm, but modifying the heater’
+    18.54s  user  발화 끝
+    31.37s  agent 발화 끝
+    32.16s  user  발화 시작: Okay, okay, I get it. But what *can* I do?
+    34.75s  <ret> 발화 (turn5 첫 프레임)
+    34.91s  agent 발화 시작: <ret> Let’s explore some safer ways to keep your home comfor
+    35.03s  user  발화 끝
+    36.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.69s]: <A properly maintained heating system should be inspected annually by 
+    48.00s  user  발화 시작: A technician, huh? Sounds expensive.
+    48.13s  agent 발화 끝
+    50.12s  agent 발화 시작: It’s an investment in your safety, certainly, but I can quic
+    50.27s  user  발화 끝
+    56.67s  user  발화 시작: Yeah, actually, that would be great. Just a basic inspection
+    56.84s  agent 발화 끝
+    60.71s  <ret> 발화 (turn9 첫 프레임)
+    61.02s  agent 발화 시작: <ret> HeatWise Solutions offers inspections tomorrow afterno
+    61.06s  user  발화 끝
+    62.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.30s]: (tool result) Technician: HeatWise Solutions. Availability: tomorrow a
+    71.32s  agent 발화 끝
+    71.65s  user  발화 시작: Ninety-nine dollars… not terrible.
+    74.33s  agent 발화 시작: It’s a small price to pay for peace of mind, and knowing you
+    74.42s  user  발화 끝
+    83.14s  agent 발화 끝
+    83.98s  user  발화 시작: No, I think I’ll call them myself. I want to ask a few quest
+    88.89s  user  발화 끝
+    89.22s  agent 발화 시작: An excellent idea. Asking questions is always wise when choo
+    95.95s  user  발화 시작: Do you ever work on cathedral heating systems? I'm restoring
+    96.12s  agent 발화 끝
+   101.22s  user  발화 끝
+   101.24s  agent 발화 시작: [laugh] Indeed, I do. Though usually, it’s more about preser
+   113.48s  agent 발화 끝
+   115.97s  user  발화 시작: Wow, Durham Cathedral… that's impressive. What kind of stone
+   120.90s  <ret> 발화 (turn17 첫 프레임)
+   121.13s  agent 발화 시작: <ret> The stone choice is crucial for thermal mass and durab
+   121.25s  user  발화 끝
+   122.10s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.82s]: <Magnesian limestone was quarried locally for the majority of Durham C
+   133.19s  agent 발화 끝
+   133.27s  user  발화 시작: Magnesian limestone… I’ve heard of that. Good stuff.
+   136.69s  agent 발화 시작: It is. Though working with it requires a skilled hand, as it
+   136.77s  user  발화 끝
+   146.70s  agent 발화 끝
