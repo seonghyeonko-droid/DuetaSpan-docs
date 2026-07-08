@@ -1,0 +1,9 @@
+[user] Hey, Sarah! Come over here and check this out!
+[moshi] What is it?
+[user] It's a fossilized bone! I- I found it while I was digging around here.
+[moshi] That's really cool! Can I see it?
+[user] Sure!
+[moshi] Wow, it's so big! How do you think it got here?
+[user] Well, I think that this area used to be a lot wetter than it is now. So, the water might have carried the bones here.
+[moshi] That makes sense. Do you think there are any more bones around here?
+[user] Probably! I'm going to keep looking.

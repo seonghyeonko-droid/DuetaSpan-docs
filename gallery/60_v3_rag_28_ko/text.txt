@@ -1,0 +1,17 @@
+v3_rag_28_ko src=nq style=v2
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 어, 옛날에 향신료 무역을 누가 장악했어? 다들 영국이라고 생각하는데, 진짜 그랬어? ⟨ret@11.23s⟩
+[  5.85s][moshi] 흔히 그렇게 생각하시는데, 사실은 영국이 나중에 영향력을 행사하기 시작했어요.
+[ 11.83s][moshi] ⟦⚡SPAN@12.23s: The Portuguese Empire established a monopoly over the spice trade routes to Asia during the sixteenth century.⟧ 음, 역사적으로는… 포르투갈 제국이 16세기에 아시아로 가는 향신료 항로를 독점했거든요.
+[ 20.99s][user ] 포르투갈? 진짜? 난 항상 네덜란드나 다른 누군가인 줄 알았어. ⟨ret@31.08s⟩
+[ 25.48s][moshi] 네덜란드도 중요한 역할을 했지만, 포르투갈이 먼저 우위를 점한 후에 세력을 키웠어요.
+[ 31.67s][moshi] ⟦⚡SPAN@32.08s: Afonso de Albuquerque, in 1515, secured Portuguese control of the sea routes from Lisbon to Melaka.⟧ 시간 순서대로 말씀드리면… 아폰수 드 알부케르케가 1515년에 리스본에서 말라카까지 해상 항로를 포르투갈의 통제하에 두었어요.
+[ 42.53s][user ] 근데 다른 집단들은—
+[ 44.42s][moshi] «interrupted» 포르투갈은 처음에는 주요 항구를 통제하는 데 집중했어요—
+[ 47.95s][user ] «interrupts_prev» …아랍 상인들은 어땠어? 그냥 완전히 밀려났어? ⟨ret@56.11s⟩
+[ 50.93s][moshi] 좋은 질문이에요. 포르투갈이 처음부터 기존의 모든 무역망을 없애지는 못했어요.
+[ 56.70s][moshi] ⟦⚡SPAN@57.11s: Arab traders had long dominated Indian Ocean trade before the Portuguese arrival in the late fifteenth century⟧ 그렇게 단순하게 보기에는… 아랍 상인들은 포르투갈이 15세기 말에 도착하기 전부터 인도양 무역을 오랫동안 지배해 왔거든요.
+[ 61.69s][user ] «backchannel» 응.
+[ 65.74s][moshi] 포르투갈의 해군력이 강해지면서 그들의 영향력은 줄어들었지만, 처음에는 완전히 밀려나지는 않았어요. 점진적으로 변화한 거죠.

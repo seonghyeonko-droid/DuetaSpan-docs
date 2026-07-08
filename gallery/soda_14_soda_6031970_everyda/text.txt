@@ -1,0 +1,10 @@
+[user] Hey, I'm so happy to see you!
+[moshi] I'm happy to see you too! It's been a while.
+[user] Uh-huh.
+[user] Yeah, I know. I've just been really busy lately.
+[moshi] I can imagine. So, what's been going on?
+[user] Well, I've just been really stressed out lately. I've been having a lot of trouble sleeping, and I'm just not feeling like myself.
+[moshi] That sounds rough. Do you want to talk about it?
+[user] Yeah.
+[user] Yeah, I do. It's just been really hard lately. I don't know ... what to do.
+[moshi] I'm here for you, Deirdre. We'll figure it out together.

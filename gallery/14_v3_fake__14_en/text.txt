@@ -1,0 +1,20 @@
+v3_fake__14_en src=nq style=v1
+SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Hey, so I was wondering when Drew Brees actually started playing professional football?
+[  6.09s][moshi] Ah, a fine question. It’s good to trace a player’s origins, you know?
+[ 10.96s][user ] Yeah, I was just curious. I’m a ⟨ret@13.62s⟩ new fan.
+[ 14.21s][moshi] ⟦⚡SPAN@14.42s: Drew Brees entered the NFL in 2001, drafted by the San Diego Chargers.⟧ Well now, let’s see… He began his NFL career with the San Diego Chargers in two-thousand-one.
+[ 22.33s][user ] That’s good to know. Did he start right away with the Chargers?
+[ 26.63s][moshi] Not immediately, no. It takes time to find your rhythm in a new league.
+[ 32.54s][user ] But— I mean, was he a backup for a ⟨ret@35.74s⟩ while, or…?
+[ 36.33s][moshi] ⟦⚡SPAN@36.74s: Brees served as the Chargers' backup quarterback for his first two seasons.⟧ He was, as a matter of fact— For his first two seasons with the Chargers, Brees was the backup quarterback.
+[ 43.28s][user ] So, two seasons as a backup… then what happened? Did he get ⟨ret@48.07s⟩ injured?
+[ 48.66s][moshi] ⟦⚡SPAN IRRELEVANT@49.07s: (tool result) Current time in Tokyo is 15:34:58 on February 29, 2024.⟧ A very astute observation. Yes, injuries did play a role in his trajectory.
+[ 55.27s][moshi] He suffered a significant shoulder injury in two-thousand-five, nearly derailing his career.
+[ 63.98s][user ] Wow, that sounds rough. Did that injury affect his throwing ability? ⟨ret@75.41s⟩
+[ 69.86s][moshi] It did indeed. It was a serious labrum tear, a challenge for any quarterback.
+[ 76.00s][moshi] ⟦⚡SPAN@76.41s: Brees underwent surgery and rehabilitation, returning to play in 2006 with the New Orleans Saints.⟧ It’s a testament to his dedication… He recovered and joined the New Orleans Saints in two-thousand-six.
+[ 82.77s][user ] So that's when he really started to shine, right? With the Saints?
+[ 87.42s][moshi] Absolutely. New Orleans was a perfect fit for his talents and leadership.

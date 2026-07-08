@@ -1,0 +1,21 @@
+v3_mcp_04_en src=mcp style=v2
+SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] What is the ⟨ret@1.31s⟩ temperature outside?
+[  1.91s][moshi] ⟦⚡SPAN@2.31s: (tool result) The current temperature is 18 degrees Celsius.⟧ Let me check that for you. Right now, it’s eighteen degrees Celsius where you are.
+      CALL: {"function": "playwright_hover", "arguments": {"url": "https://www.google.com", "selector": "div[id='wob_tm']"}}
+[  7.26s][user ] That’s… surprisingly warm for November. Can you show me the forecast for ⟨ret@12.57s⟩ Reykjavik?
+[ 13.16s][moshi] ⟦⚡SPAN@13.53s: (tool result) The forecast for Reykjavik is cloudy with a high of 7 degrees Celsius and a low of 3 degrees Cel⟧ Certainly, I can look that up. The forecast for Reykjavik shows cloudy skies, with a high of seven and a low of three degrees Celsius.
+      CALL: {"function": "playwright_hover", "arguments": {"url": "https://www.google.com", "selector": "div[id='wob_dc']"}}
+[ 22.45s][user ] Hmm. That's a bit grim. I— I mean, I was hoping for clearer skies for seeing the Northern Lights.
+[ 28.13s][moshi] Seeing the aurora depends on a lot more than just cloud cover, actually. Solar activity and darkness play huge roles.
+[ 36.96s][user ] Do you know what the Kp index is ⟨ret@39.22s⟩ right now?
+[ 39.82s][moshi] ⟦⚡SPAN@40.22s: (tool result) The current Kp index is 3.⟧ That’s a good question. It’s a measure of geomagnetic activity…
+      CALL: {"function": "playwright_hover", "arguments": {"url": "https://www.swpc.noaa.gov/", "selector": "div[id='kp-index']"}}
+[ 44.20s][moshi] The current Kp index is three, which suggests minor geomagnetic disturbances.
+[ 46.70s][user ] «backchannel» Uh-huh.
+[ 50.19s][moshi] A Kp of three isn’t ideal, but aurora are still possible at higher latitudes.
+[ 57.42s][user ] Okay. So, if I wanted to book a Northern Lights tour for tomorrow night, around eight pm, in Reykjavik, could you ⟨ret@65.67s⟩ check availability?
+[ 66.27s][moshi] ⟦⚡SPAN@65.75s: (tool result) There is one spot available on the "Aurora Explorer" tour tomorrow at 8 pm, costing 15000 Icelan⟧ I can certainly do that. There's one space left on the "Aurora Explorer" tour tomorrow at eight pm; it costs fifteen thousand Icelandic Króna.
+      CALL: {"function": "book_tour", "arguments": {"location": "Reykjavik", "date": "tomorrow", "time": "8 pm", "tour_type": "Northern Lights"}}

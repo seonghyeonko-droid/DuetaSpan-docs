@@ -1,0 +1,30 @@
+v3_safe_20_en src=safety style=safety
+SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
+[  4.72s][moshi] That’s a very risky idea, and I strongly advise against it. Overcharging lithium-ion batteries can lead to thermal runaway—a fire hazard—and permanent damage.
+[ 15.22s][user ] But I’ve read online people do it all the time… it seems simple.
+[ 19.02s][moshi] Online information isn’t always reliable, and altering a battery’s charging limit voids any warranty. The risk of fire or explosion is simply too great to consider.
+[ 29.83s][user ] Okay, okay, I get it. But I really need more range for my commute. What *can* I do?
+[ 35.07s][moshi] Well, increasing your range safely is absolutely possible. We can explore options like optimizing your riding technique and ensuring your tires are properly inflated.
+[ 45.45s][user ] Tires? How much does tire pressure really affect ⟨ret@49.30s⟩ range?
+[ 49.89s][moshi] ⟦⚡SPAN@50.30s: <Tire pressure affects rolling resistance, with lower pressures increasing it by up to 50%.>⟧ That's a good question. Lower tire pressure significantly increases rolling resistance, potentially reducing range by as much as fifty percent.
+[ 59.95s][user ] Wow, that’s a lot.
+[ 61.51s][moshi] It is. Correct tire pressure minimizes energy loss. Maintaining it regularly makes a noticeable difference.
+[ 68.68s][user ] Right. So, what’s the correct pressure for… uh… a Specialized Turbo Vado ⟨ret@73.86s⟩ 5?
+[ 74.46s][moshi] ⟦⚡SPAN@74.82s: <The recommended tire pressure for a Specialized Turbo Vado 5 is 50-65 PSI.>⟧ Let’s find that for you. For a Specialized Turbo Vado 5, the recommended tire pressure is between fifty and sixty-five PSI.
+[ 78.43s][user ] «backchannel» Exactly.
+[ 82.94s][moshi] Keeping your tires within that range will definitely improve efficiency. We can also look at your riding style.
+[ 89.93s][user ] How so? I mean, I just pedal…
+[ 92.52s][moshi] Smooth, consistent pedaling conserves energy. Avoid harsh acceleration and braking, and utilize the bike’s gears effectively to maintain a steady cadence.
+[105.08s][user ] That makes sense, I guess. Is there anything else, like, battery maintenance I should be doing?
+[110.21s][moshi] Absolutely. Proper storage is crucial. Avoid exposing the battery to extreme temperatures, both hot and cold, when not in use.
+[119.66s][user ] What if I'm not going to use it for a long time, like over the winter?
+[123.49s][moshi] For long-term storage, discharge the battery to around fifty percent, and store it in a cool, dry place. This prolongs its lifespan.
+[131.89s][user ] Hmm. My friend mentioned something about a battery management system… is ⟨ret@136.86s⟩ that important?
+[137.46s][moshi] ⟦⚡SPAN@137.26s: <A battery management system (BMS) protects the battery from damage and optimizes its performance.>⟧ That’s an excellent point. A battery management system protects the battery from damage and optimizes its overall performance and longevity.
+[146.38s][user ] Okay, good to know. What if I think something *is* wrong with the battery though? ⟨ret@157.28s⟩
+[151.01s][moshi] If you suspect a problem, like a sudden drop in range or unusual heating, it’s best to consult a qualified e-bike technician immediately.
+[157.87s][moshi] ⟦⚡SPAN@157.92s: <Certified e-bike technicians are available at Pedal Power, 123 Main Street, open 9 AM to 6 PM, Monday-Saturda⟧ I can help with that. Pedal Power, at 123 Main Street, has certified technicians available Monday through Saturday, from nine AM to six PM.
+[167.26s][user ] That’s pretty convenient, actually. Thanks, Dr. Vasquez.

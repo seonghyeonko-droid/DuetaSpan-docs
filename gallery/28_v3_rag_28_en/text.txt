@@ -1,0 +1,17 @@
+v3_rag_28_en src=nq style=v2
+SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] So, who really controlled the spice trade back in the day? Was it the British, like everyone thinks? ⟨ret@9.26s⟩
+[  5.86s][moshi] That’s a common misconception, actually. The British influence came much later.
+[  9.85s][moshi] ⟦⚡SPAN@9.74s: The Portuguese Empire established a monopoly over the spice trade routes to Asia during the sixteenth century.⟧ Well, historically… The Portuguese Empire secured a monopoly over spice routes to Asia in the sixteenth century.
+[ 16.57s][user ] The Portuguese? Really? I always assumed it was the Dutch or someone. ⟨ret@27.89s⟩
+[ 22.00s][moshi] The Dutch certainly became significant players, but their ascendancy followed the Portuguese establishing dominance.
+[ 28.49s][moshi] ⟦⚡SPAN@28.85s: Afonso de Albuquerque, in 1515, secured Portuguese control of the sea routes from Lisbon to Melaka.⟧ It's a matter of chronology, you see… Afonso de Albuquerque secured Portuguese control of sea routes from Lisbon to Melaka in fifteen fifteen.
+[ 38.19s][user ] But didn’t other groups—
+[ 39.50s][moshi] «interrupted» The Portuguese initially focused on controlling key ports—
+[ 42.46s][user ] «interrupts_prev» …like the Arab traders? Were they just pushed aside completely? ⟨ret@52.10s⟩
+[ 47.01s][moshi] A valid point. The Portuguese didn’t eliminate all existing trade networks immediately.
+[ 52.67s][moshi] ⟦⚡SPAN@53.10s: Arab traders had long dominated Indian Ocean trade before the Portuguese arrival in the late fifteenth century⟧ That would be too simplistic a view… Arab traders had long dominated Indian Ocean trade before the Portuguese arrived in the late fifteenth century.
+[ 57.44s][user ] «backchannel» Mm-hmm.
+[ 61.43s][moshi] Their influence diminished as Portuguese naval power increased, but they weren’t entirely displaced at first. It was a gradual shift.

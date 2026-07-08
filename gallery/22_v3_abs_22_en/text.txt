@@ -1,0 +1,18 @@
+v3_abs_22_en src=squad2 style=abstain
+SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Who is Stan ⟨ret@1.06s⟩ L. Holland?
+[  1.63s][moshi] ⟦⚡SPAN@2.06s: (no information found)⟧ That’s a name I don’t immediately recognize.
+[  4.74s][moshi] I’m afraid I have no information about a person named Stan L. Holland.
+[  8.91s][user ] Oh, okay. Well, what about Dr. ⟨ret@11.03s⟩ Sylvia Earle?
+[ 11.61s][moshi] ⟦⚡SPAN@12.03s: Sylvia Earle is an American marine biologist, explorer, author, and lecturer.⟧ Ah, a much more familiar name— Sylvia Earle is a marine biologist, explorer, author, and lecturer, as you know.
+[ 15.81s][user ] «backchannel» Uh-huh.
+[ 19.23s][moshi] She’s truly a pioneer in her field.
+[ 22.10s][user ] Is she still doing research?
+[ 23.85s][moshi] «interrupted» She—
+[ 24.10s][user ] «interrupts_prev» I mean, is she still actively involved in ⟨ret@27.34s⟩ ocean exploration?
+[ 27.93s][moshi] ⟦⚡SPAN@28.34s: Dr. Earle founded Mission Blue, a global initiative to protect "Hope Spots".⟧ Yes, she remains quite active. She founded Mission Blue, a global initiative dedicated to protecting what she calls "Hope Spots". It’s an inspiring effort.
+[ 37.90s][user ] Those “Hope Spots” sound interesting. What makes a place a ⟨ret@41.62s⟩ “Hope Spot”?
+[ 42.20s][moshi] ⟦⚡SPAN@42.62s: Hope Spots are marine areas that contribute to ocean health, offering vital habitat.⟧ They’re areas critical to ocean health.
+[ 45.56s][moshi] They are marine areas that contribute to the ocean's health, offering vital habitat.

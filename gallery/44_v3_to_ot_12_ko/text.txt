@@ -1,0 +1,22 @@
+v3_to_ot_12_ko src=nq style=v1
+SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 중국이 세계무역기구에 언제 가입했는지 ⟨ret@2.36s⟩ 궁금하네.
+[  2.96s][moshi] ⟦⚡SPAN@3.36s: China acceded to the World Trade Organization on December 11, 2001.⟧ 좋은 질문이야. 중국은 이천일 년 십이 월 십일 일에 WTO 회원국이 됐어.
+[  7.49s][user ] 와, 꽤 오래됐네. 그럼 지금은 이십 년이 넘었어?
+[  9.97s][moshi] 맞아, 그 중요한 순간 이후로 이십 년 넘게 흘렀어. 세계 상업을 크게 바꿔놨지.
+[ 17.45s][user ] 궁금한데, 중국이 가입하려면 어떤 주요 난관을 넘어야 ⟨ret@20.69s⟩ 했어?
+[ 21.29s][moshi] ⟦⚡SPAN@21.69s: China’s entry required extensive negotiations on issues including agricultural subsidies and non-tariff trade ⟧ 좀 알려줄게. 중국의 WTO 가입은 농업 보조금 및 기타 무역 장벽에 대한 논의가 필요했어.
+[ 25.74s][user ] «backchannel» 응.
+[ 27.53s][moshi] 그 협상은 복잡했고 양측 모두 많은 타협이 필요했어. 시간이 오래 걸린 과정이었지.
+[ 34.14s][user ] 그렇구나. 미국 경제에는 어떤 ⟨ret@36.28s⟩ 영향을 미쳤어?
+[ 36.87s][moshi] ⟦⚡SPAN@37.24s: U.S. trade with China increased significantly after 2001, leading to both benefits and challenges for American⟧ 그건 좀 광범위한 질문인데— 이천일 년 이후로 미국과 중국 간의 무역이 증가하면서 기회와 어려움이 생겼어.
+[ 45.69s][user ] 제조업에도 큰 변화가 있었어?
+[ 47.64s][moshi] «interrupted» —어떤 부문은 성장했고 다른 부문은 경쟁이 심화됐어—
+[ 50.38s][user ] «interrupts_prev» 즉, 가입 후에 많은 제조업이 중국으로 옮겨갔어?
+[ 53.73s][moshi] 응, 인건비 절감 등의 요인으로 중국으로 상당한 제조업 이주가 있었어.
+[ 58.06s][user ] «to_other» 저기, 보고서는 다 끝냈어?
+[ 60.03s][user ] 미안. 다시 중국으로 돌아가서— WTO 가입이 중국 내부 경제 정책에 큰 변화를 가져왔어? ⟨ret@72.17s⟩
+[ 65.40s][moshi] 내부적으로 상당한 경제 개혁을 촉진했고, 세계 무역 기준에 맞춰 정책을 조정했어. 정말 혁신적이었지.
+[ 72.77s][moshi] ⟦⚡SPAN@72.57s: WTO membership required China to adopt market-oriented policies, including reducing state control over industr⟧ 그 개혁은 광범위했어. 중국은 WTO에 가입하기 위해 시장 정책을 채택하고 산업에 대한 국가 통제를 완화해야 했어.

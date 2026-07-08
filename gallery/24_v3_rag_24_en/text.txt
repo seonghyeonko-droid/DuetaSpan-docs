@@ -1,0 +1,13 @@
+v3_rag_24_en src=nq style=v1
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I was reading about… unusual delicacies. Is it true you can’t eat ortolans in France? ⟨ret@7.90s⟩
+[  6.75s][moshi] That’s a fascinating question.
+[  8.50s][moshi] ⟦⚡SPAN@7.90s: The ortolan bunting is a small migratory bird whose consumption has been illegal in France since 1981.⟧ Well, it’s a bit complicated… Since nineteen eighty-one, eating ortolan bunting has been against the law in France.
+[ 15.39s][user ] Oh, wow. Why? Is it endangered or something? ⟨ret@21.81s⟩
+[ 19.10s][moshi] It’s a little more nuanced than simple endangerment, actually.
+[ 22.41s][moshi] ⟦⚡SPAN@22.77s: Historically hunted for their rich flavor, ortolan populations declined due to habitat loss and intensive trap⟧ Let me look into the reasons for that… Historically, ortolan populations decreased because of habitat loss and excessive trapping for their flavor.
+[ 32.33s][user ] So, it’s a historical thing then? People used to eat them all the time? ⟨ret@39.60s⟩
+[ 36.74s][moshi] [laugh] Quite a lot, yes, though it was always considered a luxury.
+[ 40.20s][moshi] ⟦⚡SPAN@40.60s: The consumption of ortolan was historically a symbol of wealth and status in French cuisine.⟧ It’s interesting how traditions evolve… Historically, eating ortolan showed wealth and status within French cuisine.

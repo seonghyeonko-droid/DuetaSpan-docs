@@ -1,0 +1,22 @@
+v3_fstart_15_en src=mcp style=mcp_falsestart
+SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Could you make a text file named poem with a ⟨ret@3.79s⟩ short verse?
+[  4.38s][moshi] ⟦⚡SPAN@4.19s: (tool result) A text file named poem was created with the content "The wind whispers secrets low,\nAcross the ⟧ Certainly. I’ve created a file named “poem” containing that short verse for you.
+      CALL: {"function": "write_file", "arguments": {"filename": "poem", "content": "The wind whispers secrets low,\nAcross the fields where wildflowers grow."}}
+[ 10.01s][user ] Oh, that’s… actually, what’s the capital of France?
+[ 13.29s][moshi] Paris is the capital of France, a city renowned for its art and culture.
+[ 17.58s][user ] Right. ⟨ret@17.88s⟩
+[ 18.33s][moshi] ⟦⚡SPAN@17.96s: ⟧ Now, about that file— Were you hoping to add to the poem, or perhaps create another file?
+[ 24.28s][user ] Uh, could you search for Italian restaurants near me? ⟨ret@27.66s⟩ ⟨ret@34.32s⟩
+[ 28.26s][moshi] ⟦⚡SPAN@27.98s: (tool result) Four Italian restaurants are nearby: Bella Pasta, 0.5 miles; Roma Ristorante, 0.8 miles; Luigi's⟧ Of course. I found four Italian restaurants within one and a half miles of your current location.
+      CALL: {"function": "search_restaurants", "arguments": {"cuisine": "Italian", "location": "current"}}
+[ 31.41s][user ] «backchannel» Yeah.
+[ 34.92s][moshi] ⟦⚡SPAN@34.48s: ⟧ Would you like me to— Perhaps you’d like to see the ratings or hours for one of those restaurants?
+[ 41.13s][user ] What’s the phone number for ⟨ret@42.74s⟩ Bella Pasta?
+[ 43.33s][moshi] ⟦⚡SPAN@43.46s: (tool result) Bella Pasta’s phone number is 555-123-4567, and it’s open until 9 PM.⟧ Just a moment. Bella Pasta’s phone number is 555-123-4567; they are open until nine this evening.
+      CALL: {"function": "get_restaurant_details", "arguments": {"restaurant_name": "Bella Pasta"}}
+[ 51.71s][user ] Could you reserve a table there for two ⟨ret@54.80s⟩ at 7:30?
+[ 55.39s][moshi] ⟦⚡SPAN@55.12s: (tool result) A table for two at Bella Pasta is reserved for today at 7:30 PM under the name of the current us⟧ Certainly. I’ve reserved a table for two at Bella Pasta for 7:30 PM tonight.
+      CALL: {"function": "reserve_table", "arguments": {"restaurant_name": "Bella Pasta", "date": "today", "time": "7:30", "party_size": 2}}

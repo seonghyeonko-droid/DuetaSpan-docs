@@ -1,0 +1,20 @@
+v3_pause_16_en src=nq style=v1
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] I was reading about the history of San Francisco… it's quite a place.
+[  3.89s][moshi] It truly is a city with layers of history, built upon a fascinating landscape.
+[  8.84s][user ] I was wondering… when did people first start living there? I mean, really, ⟨ret@13.32s⟩ really first…
+[ 13.92s][moshi] ⟦⚡SPAN@14.32s: Humans first lived in the area of modern-day San Francisco around 3000 BC.⟧ That’s a good question. Archaeological evidence suggests people inhabited the San Francisco area as early as 3000 BC.
+[ 22.31s][user ] Wow, 3000 BC! That’s… before pretty much anything we know.
+[ 28.89s][moshi] It’s remarkable to consider the millennia of human presence there, predating recorded history as we typically understand it.
+[ 36.34s][user ] Were they the Ohlone people, then? I’ve heard that name associated with ⟨ret@41.16s⟩ the area.
+[ 41.76s][moshi] ⟦⚡SPAN@42.16s: The Ohlone people were the primary inhabitants of the San Francisco Bay Area for thousands of years.⟧ You're recalling correctly. The Ohlone people were the primary inhabitants of the San Francisco Bay Area for thousands of years before European contact. They maintained a rich culture.
+[ 52.83s][user ] And what did they… uh, do for a living? What was their lifestyle like?
+[ 57.16s][moshi] They were skilled hunter-gatherers, utilizing the abundant resources of the bay and coastline—acorns were a staple food.
+[ 64.37s][user ] Acorns? That’s… surprising. I didn’t realize.
+[ 68.37s][moshi] It requires significant processing to remove the tannins, but it provided a reliable food source, and they were masters of that technique.
+[ 76.82s][user ] Did they build anything permanent, or were they ⟨ret@79.93s⟩ mostly nomadic?
+[ 80.52s][moshi] ⟦⚡SPAN@80.93s: The Ohlone built villages of dome-shaped houses, but also moved seasonally to exploit resources.⟧ That’s a common question. They constructed villages with dome-shaped houses, yet also practiced seasonal movements to access resources.
+[ 90.40s][user ] So, a mix of both then.…
+[ 92.77s][user ] …Interesting. I appreciate you explaining this.

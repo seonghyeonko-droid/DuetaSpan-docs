@@ -1,0 +1,9 @@
+[user] I can't believe I got a C on my math test. I studied so hard.
+[moshi] Well, let's take a look at your test and see where you went wrong. Maybe we can help you identify some areas that you need to work on.
+[user] Yeah.
+[user] Yeah, that would be great.
+[moshi] Okay, so it looks like you missed a couple of questions on solving equations. Let's go over those with you so that you can understand the concepts better. We can also do some extra practice problems together so that you can get more comfortable with them.
+[user] Okay.
+[user] Yeah, that sounds good. I really want to improve my grades in math. It's just so frustrating when I don't do well even though I study hard.
+[moshi] Yeah.
+[moshi] I know how you feel, Ellis. But don't give up! You'll get there with some extra effort and practice.

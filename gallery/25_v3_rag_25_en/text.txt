@@ -1,0 +1,31 @@
+v3_rag_25_en src=hotpotqa style=v2
+SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] So, I'm trying to untangle something about Band of Brothers… Peter O'Meara and Norman Dike, what was their connection?
+[  7.32s][moshi] That’s a good question, a lot of those stories intertwine. It’s easy to get folks mixed up.
+[ 13.43s][user ] Well, it *is* confusing. They were both in Easy Company, right? But how did they know each other before ⟨ret@19.29s⟩ the war?
+[ 19.89s][moshi] ⟦⚡SPAN@19.77s: Peter O’Meara and Norman Dike both attended the same high school, Central High School in Norwood, Massachusett⟧ Let’s see what I recall… They both graduated from Central High School in Norwood, Massachusetts.
+[ 25.01s][user ] Central High, huh? That's a small world. Did they play sports together, or were they just classmates?
+[ 31.61s][moshi] They weren't particularly close, as I understand it. Their paths just happened to cross there.
+[ 36.82s][user ] So, just casual acquaintances then? It doesn’t sound like a strong bond before all ⟨ret@42.56s⟩ that happened.
+[ 43.16s][moshi] ⟦⚡SPAN@43.52s: O’Meara and Dike were both on the Central High School football team, playing different positions.⟧ Actually, there’s a bit more to it… They both played football at Central High, though in different positions.
+[ 48.47s][user ] Football, interesting. What positions did they play?
+[ 51.82s][moshi] O’Meara was a lineman, a big fella, and Dike was a halfback. Quite the contrast.
+[ 58.33s][user ] A lineman and a halfback… that would mean they wouldn’t have much direct interaction on the field, ⟨ret@64.11s⟩ would they?
+[ 64.71s][moshi] ⟦⚡SPAN@64.67s: Linemen primarily block for the halfback, creating openings for running plays.⟧ You're right to think that way… Linemen block for the halfback during running plays.
+[ 69.01s][user ] So, a supporting role for O’Meara, essentially? Hmm. But did they socialize outside of football?
+[ 76.87s][moshi] Not extensively, from what the accounts suggest. They moved in different circles.
+[ 80.45s][user ] That’s… disappointing, I guess. I was hoping for a deeper connection. It’s always more poignant when—
+[ 87.22s][moshi] «interrupted» It’s remarkable how circumstance—
+[ 88.60s][user ] «interrupts_prev» Wait, did Dike actually *start* on the football team, or was he a ⟨ret@93.41s⟩ substitute player?
+[ 94.01s][moshi] ⟦⚡SPAN@94.41s: Norman Dike was a starting halfback for Central High School’s football team in his senior year.⟧ A fair question. Let me check my memory on that detail…
+[ 97.82s][moshi] Dike started as a halfback during his senior year.
+[101.78s][user ] A starter, alright. So, he was fairly prominent in the school. Did O’Meara get any accolades for his playing?
+[109.26s][moshi] He was a solid player, dependable, but didn’t receive any major awards, not that I recall.
+[113.88s][user ] It’s funny, those seemingly small details can paint such a vivid picture. Did they both go straight into the army after ⟨ret@121.23s⟩ high school?
+[121.83s][moshi] ⟦⚡SPAN@122.19s: O’Meara attended Norwich University for a year before enlisting, while Dike went directly into the army.⟧ That’s a good point to clarify… O’Meara went to Norwich University for a year, then enlisted, while Dike enlisted directly.
+[129.47s][user ] So, a bit of a different path for each of them. Norwich… that’s a military college, isn't it?
+[134.71s][moshi] Indeed it is. A very respected one, preparing young men for service.
+[139.09s][user ] That explains a little more about O’Meara, perhaps. It’s just…it's hard to imagine them both ending up in Bastogne.
+[145.75s][moshi] Life has a way of bringing people together in unexpected ways, doesn't it? A pilot learns that quickly.

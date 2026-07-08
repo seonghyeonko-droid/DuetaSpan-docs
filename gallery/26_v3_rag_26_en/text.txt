@@ -1,0 +1,29 @@
+v3_rag_26_en src=nq style=v3
+SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] So, I was reading about World War Two, and it got me wondering… what kind of government did Japan have back then?
+[  6.94s][moshi] That’s a good question. It’s quite a complex topic, actually, steeped in history and tradition.
+[ 13.16s][user ] Yeah, I figured it wasn’t just… ⟨ret@15.67s⟩ simple.
+[ 16.26s][moshi] ⟦⚡SPAN@15.99s: Japan operated under an imperial constitutional monarchy during World War II.⟧ Well, essentially… Japan’s government during the war was an imperial constitutional monarchy.
+[ 22.78s][user ] A constitutional monarchy… so, like England? ⟨ret@31.99s⟩
+[ 26.53s][moshi] Not exactly. While both have a monarch, the emperor’s role was quite different in Japan.
+[ 32.58s][moshi] ⟦⚡SPAN@32.99s: The Emperor of Japan was considered a divine figurehead with significant, though not absolute, authority.⟧ It’s a matter of degree, really… The emperor was viewed as a divine figurehead holding considerable authority.
+[ 39.85s][user ] Divine? Wow.
+[ 41.26s][moshi] It’s hard to grasp now, but that belief was central to their political structure. It influenced everything.
+[ 47.61s][user ] So, was it a democracy at ⟨ret@49.25s⟩ all, or…?
+[ 49.84s][moshi] ⟦⚡SPAN@50.13s: The Japanese Diet, a bicameral parliament, existed but held limited power compared to the military.⟧ There were democratic elements… Japan had a parliament, the Diet, but it had limited power.
+[ 56.39s][user ] Limited power… who *did* have the power then? ⟨ret@63.32s⟩
+[ 59.10s][moshi] The military, primarily. It exerted a tremendous influence on the government.
+[ 63.89s][moshi] ⟦⚡SPAN@64.32s: The Imperial Japanese Army and Navy increasingly dominated policy-making during the 1930s and 40s.⟧ It’s a bit of a tangled web… The army and navy increasingly dominated policy-making during that time.
+[ 70.56s][user ] That sounds… unstable.
+[ 72.46s][moshi] It was, certainly. The rise of militarism created significant internal tensions.
+[ 77.97s][moshi] «interrupted» You know, it reminds me of—
+[ 78.90s][user ] «interrupts_prev» But did the emperor actually *want* war, or was he just… a figurehead? ⟨ret@88.21s⟩
+[ 83.89s][moshi] That’s a question historians debate endlessly. His actual agency is still unclear.
+[ 88.80s][moshi] ⟦⚡SPAN@89.17s: Emperor Hirohito’s role in initiating and prosecuting the war remains a controversial historical topic.⟧ It’s a complicated issue, really… Hirohito’s role in the war is a debated historical topic.
+[ 95.33s][user ] Controversial… so no one really knows? ⟨ret@102.43s⟩
+[ 97.64s][moshi] There’s evidence supporting both sides. It’s a nuanced situation, to say the least.
+[103.02s][moshi] ⟦⚡SPAN@103.43s: Some scholars argue Hirohito actively supported expansionism, while others view him as a reluctant figure.⟧ It’s all about interpreting the evidence… Some believe Hirohito supported expansion, others view him as reluctant.
+[110.55s][user ] Hmm. Interesting. So, the military basically called the shots?
+[115.18s][moshi] In many ways, yes. They had a strong grip on the government, especially regarding foreign policy.

@@ -1,0 +1,22 @@
+v3_fstart_15_ko src=mcp style=mcp_falsestart
+SYSTEM: <system> 저는 사토 박사이며, 기억이 어떻게 작동하는지에 매료된 신경과 의사입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 시 파일로 짧은 시 한 ⟨ret@1.61s⟩ 편 만들어 줄래?
+[  2.20s][moshi] ⟦⚡SPAN@1.85s: (tool result) A text file named poem was created with the content "The wind whispers secrets low,\nAcross the ⟧ 응, 만들어 줬어. “poem”이라는 이름으로 파일 만들어서 시 넣어 놨어.
+      CALL: {"function": "write_file", "arguments": {"filename": "poem", "content": "The wind whispers secrets low,\nAcross the fields where wildflowers grow."}}
+[  8.02s][user ] 어… 근데 프랑스 수도가 어디지?
+[ 10.31s][moshi] 파리가 프랑스 수도야. 예술과 문화로 유명한 곳이지.
+[ 13.99s][user ] 그래. ⟨ret@14.13s⟩
+[ 14.40s][moshi] ⟦⚡SPAN@14.93s: ⟧ 근데 그 파일 말인데— 시에 더 추가하고 싶어, 아니면 다른 파일 만들고 싶어?
+[ 20.14s][user ] 음, 내 주변 이탈리아 식당 좀 찾아 ⟨ret@22.75s⟩ 줘. ⟨ret@27.94s⟩
+[ 23.34s][moshi] ⟦⚡SPAN@22.75s: (tool result) Four Italian restaurants are nearby: Bella Pasta, 0.5 miles; Roma Ristorante, 0.8 miles; Luigi's⟧ 당연하지. 지금 네 위치에서 1.5마일 안에 이탈리아 식당 네 군데 찾았어.
+      CALL: {"function": "search_restaurants", "arguments": {"cuisine": "Italian", "location": "current"}}
+[ 25.66s][user ] «backchannel» 응.
+[ 28.53s][moshi] ⟦⚡SPAN@28.94s: ⟧ 그럼 뭘 해 줄까— 식당 평점이나 영업시간 같은 거 보고 싶어?
+[ 32.38s][user ] 벨라 파스타 ⟨ret@33.68s⟩ 전화번호가 뭐야?
+[ 34.27s][moshi] ⟦⚡SPAN@34.68s: (tool result) Bella Pasta’s phone number is 555-123-4567, and it’s open until 9 PM.⟧ 잠깐만. 벨라 파스타 전화번호는 오오오-일이삼-사오육칠이고, 오늘 저녁 아홉 시까지 영업해.
+      CALL: {"function": "get_restaurant_details", "arguments": {"restaurant_name": "Bella Pasta"}}
+[ 41.73s][user ] 거기 두 명으로 7시 30분에 ⟨ret@43.59s⟩ 예약해 줄래?
+[ 44.18s][moshi] ⟦⚡SPAN@43.75s: (tool result) A table for two at Bella Pasta is reserved for today at 7:30 PM under the name of the current us⟧ 응, 오늘 저녁 7시 30분에 벨라 파스타에 두 명 예약됐어.
+      CALL: {"function": "reserve_table", "arguments": {"restaurant_name": "Bella Pasta", "date": "today", "time": "7:30", "party_size": 2}}

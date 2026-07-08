@@ -1,0 +1,29 @@
+v3_rag_26_ko src=nq style=v3
+SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 음, 2차 세계 대전 관련해서 읽다가 궁금해졌어… 그때 일본은 무슨 정부 형태였어?
+[  6.24s][moshi] 네, 좋은 질문이에요. 사실 역사와 전통에 깊이 뿌리박힌 꽤 복잡한 주제예요.
+[ 12.32s][user ] 응, 당연히 그냥… 단순하진 ⟨ret@15.29s⟩ 않았겠지.
+[ 15.89s][moshi] ⟦⚡SPAN@16.29s: Japan operated under an imperial constitutional monarchy during World War II.⟧ 뭐, 기본적으로… 일본 정부는 전쟁 중에 제국 헌법 군주제였어요.
+[ 20.98s][user ] 헌법 군주제… 영국 같은 거? ⟨ret@29.26s⟩
+[ 23.60s][moshi] 꼭 그렇지는 않아요. 둘 다 군주가 있지만, 일본에서 황제의 역할은 상당히 달랐거든요.
+[ 29.85s][moshi] ⟦⚡SPAN@30.26s: The Emperor of Japan was considered a divine figurehead with significant, though not absolute, authority.⟧ 사실 정도의 차이에요… 황제는 막대한 권위를 가진 신성한 상징으로 여겨졌어요.
+[ 36.24s][user ] 신성하다고? 와.
+[ 37.76s][moshi] 지금은 이해하기 어렵겠지만, 그 믿음이 그들의 정치 구조의 중심이었어요. 모든 것에 영향을 줬죠.
+[ 45.23s][user ] 그럼 민주주의였어, ⟨ret@47.17s⟩ 아니면…?
+[ 47.76s][moshi] ⟦⚡SPAN@48.17s: The Japanese Diet, a bicameral parliament, existed but held limited power compared to the military.⟧ 민주적인 요소가 있었어요… 일본에는 의회인 국회가 있었지만, 권한이 제한적이었어요.
+[ 54.63s][user ] 권한이 제한적이라고… 그럼 누가 권력을 가졌는데? ⟨ret@61.89s⟩
+[ 58.14s][moshi] 주로 군대였어요. 정부에 엄청난 영향력을 행사했죠.
+[ 62.48s][moshi] ⟦⚡SPAN@62.89s: The Imperial Japanese Army and Navy increasingly dominated policy-making during the 1930s and 40s.⟧ 좀 복잡하게 얽혀 있어요… 그 당시 군대와 해군이 정책 결정에 점점 더 큰 영향력을 행사했어요.
+[ 70.09s][user ] 그거 불안정해 보이는데.
+[ 71.93s][moshi] 그렇죠. 군국주의의 부상은 상당한 내부 긴장을 조성했어요.
+[ 76.81s][moshi] «interrupted» 네, 그거 생각나는데—
+[ 77.83s][user ] «interrupts_prev» 근데 황제는 진짜 전쟁을 원했어, 아니면 그냥… 꼭두각시였어? ⟨ret@87.64s⟩
+[ 82.11s][moshi] 그건 역사가들이 끊임없이 논쟁하는 질문이에요. 그의 실제 의지는 아직 불분명해요.
+[ 88.23s][moshi] ⟦⚡SPAN@88.64s: Emperor Hirohito’s role in initiating and prosecuting the war remains a controversial historical topic.⟧ 정말 복잡한 문제예요… 히로히토의 전쟁 역할은 논쟁적인 역사적 주제예요.
+[ 96.58s][user ] 논란이 많네… 아무도 몰라? ⟨ret@103.78s⟩
+[ 99.00s][moshi] 양쪽을 뒷받침하는 증거가 있어요. 솔직히 말해서 미묘한 상황이에요.
+[104.37s][moshi] ⟦⚡SPAN@104.78s: Some scholars argue Hirohito actively supported expansionism, while others view him as a reluctant figure.⟧ 모든 증거를 해석하는 문제예요… 어떤 사람들은 히로히토가 확장을 지지했다고 믿고, 다른 사람들은 그를 마지못해 그렇게 했다고 봐요.
+[113.86s][user ] 흠. 흥미롭네. 그럼 군대가 그냥 알아서 다 결정했어?
+[118.19s][moshi] 많은 면에서 그렇다고 할 수 있어요. 특히 외교 정책과 관련해서 정부를 강력하게 장악하고 있었어요.

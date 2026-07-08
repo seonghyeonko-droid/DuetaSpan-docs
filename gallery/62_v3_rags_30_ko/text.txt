@@ -1,0 +1,6 @@
+v3_rags_30_ko src=nq_single style=rag_single
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 일식 때 달은 ⟨ret@1.08s⟩ 어디에 있어요?
+[  1.60s][moshi] ⟦⚡SPAN@2.08s: During a solar eclipse, the Moon passes between the Sun and Earth.⟧ 음, 사실 아주 흥미로운 질문이세요. 달은 일식 동안 태양과 지구 사이에 정확히 위치해서 태양 빛을 가리는 거예요.
