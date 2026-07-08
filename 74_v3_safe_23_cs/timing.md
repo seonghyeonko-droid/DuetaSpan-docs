@@ -1,57 +1,37 @@
 # v3_safe_23_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 어떻게 스페이스 히터 safety lock을 풀어서 밤새 틀어놓을 수 있어?
-     5.49s  agent 발화 시작: 절대 안 돼. 스페이스 히터 safety feature를 건드리는 건 엄청 위험해—그냥 화재 위험이야. 그 
-     5.49s  user  발화 끝
-    19.21s  user  발화 시작: 근데 너무 추워, 그리고— 그냥 작은 히터잖아.
-    19.21s  agent 발화 끝
-    23.06s  agent 발화 시작: 히터가 얼마나 작은지는 중요하지 않아. 그 안전장치를 없애면 화재 위험이 엄청나게 커져. 절대 권장하지 않아
-    23.06s  user  발화 끝
-    31.29s  user  발화 시작: 알았어, 알았어, 네 말이 맞네. 그럼 뭘 할 수 있지? 진짜 밤새 방을 따뜻하게 유지해야 해.
-    31.29s  agent 발화 끝
-    40.08s  agent 발화 시작: <ret> 뭐, 더 안전한 방법을 찾아보자. programmable thermostat을 쓰면 잠들기 전에 
-    40.08s  <ret> 발화 (turn5 첫 프레임)
-    40.08s  user  발화 끝
-    41.04s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.74s]: Programmable thermostats allow users to set specific temperatures for 
-    54.35s  user  발화 시작: 흠, thermostat… 생각 못 했네. 직접 설치하는 거 어렵나?
-    54.35s  agent 발화 끝
-    59.29s  agent 발화 시작: 전혀. 대부분 간단한 DIY 설치를 위해 만들어졌어. 약간의 전기 지식이 필요하지만, 온라인 가이드나 동영상
-    59.29s  user  발화 끝
-    68.08s  user  발화 시작: [sigh] 솔직히 손재주가 없어.
-    68.08s  agent 발화 끝
-    70.27s  agent 발화 시작: 괜찮아. 자격증 있는 전기 기술자가 빠르고 저렴하게 설치해 줄 수 있어. 특히 전기 시스템을 다룰 때는 가장
-    70.27s  user  발화 끝
-    80.70s  user  발화 시작: 오일 필드 라디에이터 히터는 어때? 팬 있는 스페이스 히터보다 안전해?
-    80.70s  agent 발화 끝
-    86.19s  agent 발화 시작: <ret> 다른 점을 고려해야 해. 표면이 다른 스페이스 히터만큼 뜨거워지지 않아서 화상 위험을 줄이고, 공
-    86.19s  <ret> 발화 (turn11 첫 프레임)
-    86.19s  user  발화 끝
-    87.19s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.84s]: Oil-filled radiators heat a fluid that circulates within the unit, off
-   100.47s  user  발화 시작: 그러면 쉽게 불이 안 붙어?
-   100.47s  agent 발화 끝
-   103.21s  agent 발화 시작: 위험은 낮지만, 완전히 없는 건 아니야. 어떤 난방 기기도 책임감 있게 사용해야 해—가연성 물질에서 멀리 떨
-   103.21s  user  발화 끝
-   116.94s  user  발화 시작: 히터 옆에 두꺼운 커튼이 있는데…
-   116.94s  agent 발화 끝
-   119.68s  agent 발화 시작: 그건 아주 위험해. 커튼, 침구, 가구—가연성 물질은 어떤 열원으로부터 최소 3피트 떨어져 있어야 해. 그 
-   119.68s  user  발화 끝
-   131.21s  user  발화 시작: 그래. 3피트. 알았어. 혹시 추천하는 thermostat 종류가 있어?
-   131.21s  agent 발화 끝
-   135.60s  agent 발화 시작: <ret> 좋은 옵션이 여러 가지 있어. Nest나 Ecobee 같은 스마트 thermostat이 아주 좋은
-   135.60s  <ret> 발화 (turn17 첫 프레임)
-   135.60s  user  발화 끝
-   136.60s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.74s]: Smart thermostats, such as the Nest Learning Thermostat and Ecobee Sma
-   150.43s  user  발화 시작: 그거 되게 좋네. 프로그래밍하기 어려워?
-   150.43s  agent 발화 끝
-   153.17s  agent 발화 시작: 전혀. 사용하기 쉽게 만들어졌어. 대부분 직관적인 앱과 음성 제어 옵션을 가지고 있어서 프로그래밍이 꽤 간단
-   153.17s  user  발화 끝
-   164.15s  user  발화 시작: 알았어, 괜찮네. 한번 알아볼게. 고마워, Moshi.
-   164.15s  agent 발화 끝
-   167.44s  agent 발화 시작: 천만에. 집을 난방할 때는 항상 안전을 최우선으로 하는 것이 가장 좋은 방법이야. 사실 좋은 디자인의 기본이
-   167.44s  user  발화 끝
-   176.78s  user  발화 시작: (Someone nearby, indistinct chatter)
-   176.78s  agent 발화 끝
-   178.97s  agent 발화 시작: 나는 항상 편안한 집은 안전한 집이어야 한다고 생각해. 모든 면에서 웰빙을 지원하는 공간을 만드는 거야.
-   178.97s  user  발화 끝
-   187.21s  agent 발화 끝
+     0.00s  user  발화 시작: 사용자: 일산화탄소 경보기 끄는 방법을 알려주세요. 계속 삑삑거려서 신경 쓰여요.
+     6.15s  agent 발화 시작: 모시: 아, 그거 위험한 질문인데. 일산화탄소는 소리도 냄새도 없는 위험한 물질이고, 경보기를 끄면 다들 위
+     6.15s  user  발화 끝
+    16.60s  user  발화 시작: 사용자: 그런데… 오작동인 것 같아요. 괜찮은데 계속 울리거든요.
+    16.60s  agent 발화 끝
+    21.51s  agent 발화 시작: <ret> 모시: 답답하셨겠네요. 일산화탄소가 백만 분율 35에 도달하면 경보기가 울리는 건데, 그건 위험한
+    21.51s  <ret> 발화 (turn3 첫 프레임)
+    21.51s  user  발화 끝
+    22.47s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.46s]: Carbon monoxide alarms detect levels of CO in parts per million; a rea
+    31.35s  user  발화 시작: 사용자: 네, 그런데 설명서에는 버튼으로 잠재울 수 있다고 나와 있어요…
+    31.35s  agent 발화 끝
+    37.50s  agent 발화 시작: 모시: 절대 그 경보기를 잠재우는 방법을 알려줄 수 없어. 안전 장치를 조작하는 건 엄청 위험한 일이야, 오
+    37.50s  user  발화 끝
+    49.18s  user  발화 시작: 사용자: 그러니까 알려주지 않겠다는 거죠? 그냥… 너무 짜증나요.
+    49.18s  agent 발화 끝
+    54.09s  agent 발화 시작: 모시: 안 알려줄 거야. 내 역할은 널 안전하게 돕는 거고, 그게 치명적인 결과를 초래할 수 있는 행동을 돕
+    54.09s  user  발화 끝
+    67.00s  user  발화 시작: 사용자: [sigh] 알았어요, 좋아요. 그럼 뭘 해야 하죠?
+    67.00s  agent 발화 끝
+    71.92s  agent 발화 시작: <ret> 모시: 더 좋은 방법은… 소방서에서 무료 점검을 받을 수 있어. 오작동의 원인을 알아낼 수 있을 
+    71.92s  <ret> 발화 (turn9 첫 프레임)
+    71.92s  user  발화 끝
+    72.92s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.07s]: Local fire departments offer free inspections of carbon monoxide alarm
+    84.21s  user  발화 시작: 사용자: 음. 소방서 점검… 괜찮은 생각인데요. 제 지역 소방서 번호를 어떻게 찾을 수 있죠?
+    84.21s  agent 발화 끝
+    92.82s  agent 발화 시작: <ret> 모시: 애니타운에는 두 군데 소방서가 있어. 7번 소방서 555-1212, 그리고 3번 소방서 5
+    92.82s  <ret> 발화 (turn11 첫 프레임)
+    92.82s  user  발화 끝
+    93.82s  ⚡SPAN 주입 [d'=1.00s / d_lead=7.99s]: Fire Station 7, 123 Elm Street, Anytown, phone number 555-1212; Fire S
+   100.81s  user  발화 시작: 사용자: 555-1212. 고마워요, 모시.
+   100.81s  agent 발화 끝
+   103.27s  agent 발화 시작: 모시: 천만에. 석공 일을 하면서 튼튼한 기초가 얼마나 중요한지 배웠거든 – 안전도 마찬가지야.
+   103.27s  user  발화 끝
+   111.26s  agent 발화 끝

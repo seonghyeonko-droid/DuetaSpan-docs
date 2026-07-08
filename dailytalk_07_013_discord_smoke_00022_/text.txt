@@ -1,4 +1,0 @@
-[user] I am genuinely so sad for my friend right now.
-[agent] Oh no, what happened?
-[user] They just broke up with someone.
-[agent] [sigh] Man, that's tough. I really hope they can get through this okay.

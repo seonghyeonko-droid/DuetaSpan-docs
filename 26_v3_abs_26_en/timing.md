@@ -1,67 +1,47 @@
 # v3_abs_26_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: What were Jon Wycliffe's supporters not called?
-     3.09s  agent 발화 시작: <ret> That’s a tricky one. I’ve searched extensively, and un
-     3.09s  <ret> 발화 (turn1 첫 프레임)
-     3.09s  user  발화 끝
-     3.73s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.77s]: (no information found)
-    20.31s  user  발화 시작: Yeah. So, what *were* they called then?
-    20.31s  agent 발화 끝
-    23.40s  agent 발화 시작: They were known as Lollards, a name that initially carried a
-    23.40s  user  발화 끝
-    34.88s  user  발화 시작: Interesting. Um, what about the Olmec civilization? Where we
-    34.88s  agent 발화 끝
-    39.74s  agent 발화 시작: <ret> A fascinating culture! The Olmec heartland was in the 
-    39.74s  <ret> 발화 (turn5 첫 프레임)
-    39.74s  user  발화 끝
-    40.54s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.32s]: The Olmec civilization flourished in the tropical lowlands of south-ce
-    52.10s  user  발화 시작: And what are they famous for?
-    52.10s  agent 발화 끝
-    54.75s  agent 발화 시작: The Olmecs are considered the mother culture for many Mesoam
-    54.75s  user  발화 끝
-    66.67s  user  발화 시작: Colossal heads… wow. I— I mean, how big are we talking?
-    66.67s  agent 발화 끝
-    71.52s  agent 발화 시작: <ret> Quite substantial! The colossal heads vary in size, re
-    71.52s  <ret> 발화 (turn9 첫 프레임)
-    71.52s  user  발화 끝
-    71.92s  ⚡SPAN 주입 [d'=0.40s / d_lead=0.88s]: The colossal heads range in size from 1.47 to 3.5 meters tall and weig
-    87.42s  user  발화 시작: Twenty-five tons! That’s incredible. Did they use metal tool
-    87.42s  agent 발화 끝
-    91.39s  agent 발화 시작: Not really. They primarily used stone tools—basalt, for exam
-    91.39s  user  발화 끝
-   102.87s  user  발화 시작: Mm-hmm. What about their religion? What did the Olmecs belie
-   102.87s  agent 발화 끝
-   107.73s  agent 발화 시작: <ret> Their beliefs were complex. The Olmecs worshipped a pa
-   107.73s  <ret> 발화 (turn13 첫 프레임)
-   107.73s  user  발화 끝
-   108.73s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.77s]: The Olmec religion featured a pantheon of gods, with the jaguar as a c
-   122.74s  user  발화 시작: A jaguar god… cool. [sigh] It’s just… all this ancient stuff
-   122.74s  agent 발화 끝
-   128.92s  agent 발화 시작: I understand that feeling. But it’s important to remember th
-   128.92s  user  발화 끝
-   146.58s  user  발화 시작: Yeah, you're right. What kind of art besides the heads?
-   146.58s  agent 발화 끝
-   150.99s  agent 발화 시작: <ret> They produced a lot! Besides the colossal heads, the O
-   150.99s  <ret> 발화 (turn17 첫 프레임)
-   150.99s  user  발화 끝
-   151.99s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.77s]: Olmec art also includes jade figurines, pottery, and elaborate stone a
-   164.68s  user  발화 시작: Jade figurines… Were they wealthy?
-   164.68s  agent 발화 끝
-   166.89s  agent 발화 시작: Jade was highly valued, so owning jade figurines definitely 
-   166.89s  user  발화 끝
-   178.81s  user  발화 시작: So, like a status symbol. Did they trade with other civiliza
-   178.81s  agent 발화 끝
-   183.66s  agent 발화 시작: Absolutely! They traded with other groups throughout Mesoame
-   183.66s  user  발화 끝
-   195.14s  user  발화 시작: Interesting. What happened to them? Where did they go?
-   195.14s  agent 발화 끝
-   199.12s  agent 발화 시작: <ret> That's a question with no simple answer. The Olmec civ
-   199.12s  <ret> 발화 (turn23 첫 프레임)
-   199.12s  user  발화 끝
-   200.12s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.09s]: The Olmec civilization declined around 400 BCE, with reasons including
-   215.01s  user  발화 시작: A gradual transformation… so their influence lived on?
-   215.01s  agent 발화 끝
-   218.54s  agent 발화 시작: Precisely! Their artistic and religious traditions heavily i
-   218.54s  user  발화 끝
-   233.11s  agent 발화 끝
+     0.00s  user  발화 시작: Which kind of law is consider less because there is no writt
+     5.54s  agent 발화 시작: <ret> That’s a fascinating question, and one I haven’t a cle
+     5.54s  <ret> 발화 (turn1 첫 프레임)
+     5.54s  user  발화 끝
+     6.54s  ⚡SPAN 주입 [d'=1.00s / d_lead=9.38s]: (no information found)
+    14.93s  user  발화 시작: Oh. Um, okay. What about the oldest cathedral in England?
+    14.93s  agent 발화 끝
+    19.19s  agent 발화 시작: <ret> Well now, that’s a good one. Canterbury Cathedral was 
+    19.19s  <ret> 발화 (turn3 첫 프레임)
+    19.19s  user  발화 끝
+    20.19s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.56s]: Canterbury Cathedral was founded in 597 AD by Augustine of Canterbury.
+    28.58s  user  발화 시작: Five ninety-seven… wow. [laugh] What style is it?
+    28.58s  agent 발화 끝
+    31.99s  agent 발화 시작: It’s a blend, really. Over centuries, many styles were added
+    31.99s  user  발화 끝
+    37.96s  user  발화 시작: So, it wasn’t built all at once?
+    37.96s  agent 발화 끝
+    40.95s  agent 발화 시작: Certainly not. Cathedrals are rarely the work of a single ha
+    40.95s  user  발화 끝
+    49.90s  user  발화 시작: That makes sense. I— I mean, like adding on to a house?
+    49.90s  agent 발화 끝
+    55.02s  agent 발화 시작: Precisely! Though with cathedrals, the additions are usually
+    55.02s  user  발화 끝
+    62.27s  user  발화 시작: Right. Can you tell me about gargoyles?
+    62.27s  agent 발화 끝
+    65.26s  agent 발화 시작: <ret> Ah, those fascinating figures. Gargoyles were original
+    65.26s  <ret> 발화 (turn11 첫 프레임)
+    65.26s  user  발화 끝
+    66.26s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.71s]: Gargoyles were originally designed as waterspouts to convey water away
+    72.51s  user  발화 시작: So they weren’t just… decoration?
+    72.51s  agent 발화 끝
+    74.64s  agent 발화 시작: Not initially, no. Though over time, the decorative aspect b
+    74.64s  user  발화 끝
+    83.17s  user  발화 시작: That's cool. What’s the highest cathedral in the world?
+    83.17s  agent 발화 끝
+    87.01s  agent 발화 시작: <ret> That’s a question of measurements. Ulm Minster in Germ
+    87.01s  <ret> 발화 (turn15 첫 프레임)
+    87.01s  user  발화 끝
+    88.01s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.13s]: Ulm Minster in Germany has a spire that is 161.53 meters (530.2 ft) ta
+    97.25s  user  발화 시작: Wow, over five hundred feet. That *is* high. Thanks, Moshi!
+    97.25s  agent 발화 끝
+   101.51s  agent 발화 시작: My pleasure. It’s always good to discuss these grand old bui
+   101.51s  user  발화 끝
+   106.20s  agent 발화 끝

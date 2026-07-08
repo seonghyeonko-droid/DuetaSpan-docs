@@ -1,71 +1,51 @@
 # v3_inter_12_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 야, 종교 지도자에 대해 읽고 있었는데… 라마가 중요한 역할을 하는 전통은 뭔데?
-     6.46s  agent 발화 시작: 그건 티베트 불교일 거야. 라마들은 그 전통 안에서 매우 존경받는 스승이자 지도자거든.
-     6.46s  user  발화 끝
-    12.91s  user  발화 시작: 아, 그렇지. 티베트 불교. 그리고… 음, 만달라는 뭔데? 엄청 복잡해 보이잖아.
-    12.91s  agent 발화 끝
-    18.83s  agent 발화 시작: 꽤 복잡하지, 안 그래? 만달라는 우주, 영적인 여정, 그리고 명상 수행을 돕는 것을 상징해.
-    18.83s  user  발화 끝
-    26.36s  user  발화 시작: 알겠네… [chuckle] 나 한 번 명상해 보려고 했는데. 오래 못 했어.
-    26.36s  agent 발화 끝
-    32.28s  agent 발화 시작: 연습이 필요하지, 당연히. 고요함을 찾고 집중하는 것… 주변 환경과 조화를 이루는 건물을 설계하는 것과 비슷
-    32.28s  user  발화 끝
-    40.89s  user  발화 시작: 그래, 뭐, 건물은 네 마음을 비우라고 안 하잖아. 건물 얘기 나온 김에, 지금 세상에서 제일 높은 목조 건
-    40.89s  agent 발화 끝
-    51.12s  agent 발화 시작: <ret> 음… 현재는 노르웨이의 뮈오스타르네트가 2019년에 완공됐고, 높이가 85.3미터야—
-    51.12s  <ret> 발화 (turn7 첫 프레임)
-    51.12s  user  발화 끝
-    51.28s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.54s]: Mjøstårnet in Norway, completed in 2019, is 85.3 meters (280 feet) tal
-    55.42s  user  발화 시작: 85미터? 와.
-    55.42s  agent 발화 끝
-    56.50s  agent 발화 시작: —그래서 현재 가장 높은 목조 건물이지. 정말 놀라운 공학적 성과야.
-    56.50s  user  발화 끝
-    61.88s  user  발화 시작: 정말 대단하네. 음… 나무 말고 다른 지속 가능한 건축 자재가 있을까?
-    61.88s  agent 발화 끝
-    67.80s  agent 발화 시작: <ret> 맞아요. 삼베 콘크리트(hempcrete)는 삼의 목질심, 석회, 물로 만들어져 단열 효과가 뛰어
-    67.80s  <ret> 발화 (turn11 첫 프레임)
-    67.80s  user  발화 끝
-    68.12s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.54s]: Hempcrete is a bio-composite material made from the woody core of the 
-    79.09s  user  발화 시작: 삼베 콘크리트… 흥미로운데. 비싸?
-    79.09s  agent 발화 끝
-    81.25s  agent 발화 시작: 처음에는 그럴 수 있어. 비용은 지역 소싱과 가용성에 따라 달라지지만, 장기적인 이점이 초기 투자를 능가하는
-    81.25s  user  발화 끝
-    90.39s  user  발화 시작: 나… 그냥 감을 잡으려고. 대나무는 어때?
-    90.39s  agent 발화 끝
-    93.62s  agent 발화 시작: 대나무는 환상적인 선택이야. 엄청나게 빨리 자라고, 재생 가능하고, 놀랍도록 튼튼해—아주 다재다능한 재료지.
-    93.62s  user  발화 끝
-   100.08s  user  발화 시작: 좋네, 알아둬야겠다. 자, 이건 좀 이상한 질문인데… 똥벌레의 평균 수명은 얼마나 돼?
-   100.08s  agent 발화 끝
-   106.54s  agent 발화 시작: <ret> 그건 종에 따라 다르긴 해… 똥벌레의 수명은 몇 달에서 몇 년까지 다양하고, 종과 환경에 따라 달
-   106.54s  <ret> 발화 (turn17 첫 프레임)
-   106.54s  user  발화 끝
-   106.86s  ⚡SPAN 주입 [d'=0.32s / d_lead=1.08s]: The average lifespan of a dung beetle ranges from several months to a 
-   118.37s  user  발화 시작: 토양 건강? 흐음. 매일 새로운 걸 배우네.
-   118.37s  agent 발화 끝
-   122.14s  agent 발화 시작: 정말 그렇잖아. 건축도 마찬가지야, 끊임없이 땅에서 배우고 적응하는 거지.
-   122.14s  user  발화 끝
-   126.98s  user  발화 시작: 맞는 말이다. 좋아, 하나만 더—몽골의 수도는 어디야?
-   126.98s  agent 발화 끝
-   130.75s  agent 발화 시작: 울란바토르일 거야. 그 나라에서 가장 큰 도시이고, 현대와 전통 문화가 조화롭게 어우러진 매력적인 곳이야.
-   130.75s  user  발화 끝
-   138.28s  user  발화 시작: 울란바토르… 추울 것 같아.
-   138.28s  agent 발화 끝
-   140.43s  agent 발화 시작: 그럴 수 있지. 그곳은 겨울이 춥기 때문에, 단열, 방풍 등 건물 설계에 고려해야 할 사항이 많아.
-   140.43s  user  발화 끝
-   149.04s  user  발화 시작: 그래. 만약 내가 울란바토르에 학교를 설계한다면, 가장 큰 건축적 어려움은 뭐일까?
-   149.04s  agent 발화 끝
-   154.96s  agent 발화 시작: <ret> 음… 몽골의 극심한 온도 변화—겨울에는 평균 영하 30도, 여름에는 30도—견고한 건물 솔루션을 
-   154.96s  <ret> 발화 (turn25 첫 프레임)
-   154.96s  user  발화 끝
-   155.04s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.54s]: Mongolia experiences extreme temperature variations, with winters aver
-   164.11s  user  발화 시작: 영하 30도? 그건… 끔찍하네.
-   164.11s  agent 발화 끝
-   166.26s  agent 발화 시작: 정말 그래, 에너지 효율이 가장 중요해. 자연 태양열 설계, 기밀한 시공, 고성능 단열이 필수적일 거야.
-   166.26s  user  발화 끝
-   174.33s  user  발화 시작: 알겠어, 그 말이 맞네. [sigh] 이제 내 엉뚱한 질문은 다 한 것 같아.
-   174.33s  agent 발화 끝
-   181.33s  agent 발화 시작: 정말 다양한 질문이었네. 너와 이야기해서 즐거웠어.
-   181.33s  user  발화 끝
-   184.55s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 그래서 미국의 아버지날은 누가 시작했어?
+     3.43s  agent 발화 시작: 좋은 질문이네요. 생각보다 역사가 깊지 않아.
+     3.43s  user  발화 끝
+     6.86s  user  발화 시작: 음, 위원회였나, 아니면 한 사람인가?
+     6.86s  agent 발화 끝
+     9.72s  agent 발화 시작: <ret> 말씀드릴게요. 미국의 아버지날을 만든 사람은 소노라 스마트 도드라고 해. 아주 끈기 있는 분이었지
+     9.72s  <ret> 발화 (turn3 첫 프레임)
+     9.72s  user  발화 끝
+    10.72s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.29s]: Sonora Smart Dodd is considered the founder of Father’s Day in the Uni
+    17.15s  user  발화 시작: 도드… 이름이 특이하네. 정확히 무슨 이유로 그랬어?
+    17.15s  agent 발화 끝
+    21.15s  agent 발화 시작: 어머니를 기리는 것처럼 아버지도 기리고 싶어했어.
+    21.15s  user  발화 끝
+    24.58s  user  발화 시작: [sigh] 결국 어머니날을 따라 하는 거잖아, 항상.
+    24.58s  agent 발화 끝
+    28.58s  agent 발화 시작: <ret> 재미있는 건… 도드가 1910년에 워싱턴주 스포케인에서 처음 아버지날을 제안했어. 아주 구체적인 
+    28.58s  <ret> 발화 (turn7 첫 프레임)
+    28.58s  user  발화 끝
+    28.90s  ⚡SPAN 주입 [d'=0.32s / d_lead=1.14s]: Dodd proposed the first Father’s Day in 1910 in Spokane, Washington.
+    35.44s  user  발화 시작: 1910년… 백 년이 넘었네! 바로 인기를 얻었어?
+    35.44s  agent 발화 끝
+    39.45s  agent 발화 시작: 바로 그렇진 않았어. 자리를 잡는 데 시간이 좀 걸렸지.
+    39.45s  user  발화 끝
+    44.59s  user  발화 시작: 그럼 공식적인 휴일은 아니었던 거야?
+    44.59s  agent 발화 끝
+    47.45s  agent 발화 시작: <ret> 처음부터 공식적인 건 아니었어. 아버지날이 공식적으로 휴일로 인정받은 건 1972년이야. 인정을 
+    47.45s  <ret> 발화 (turn11 첫 프레임)
+    47.45s  user  발화 끝
+    48.01s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.72s]: Father’s Day wasn’t officially recognized as a holiday until 1972.
+    56.02s  user  발화 시작: 와, 72년… 그건—
+    56.02s  agent 발화 끝
+    57.74s  agent 발화 시작: 달력에 추가된 건 꽤 늦은 편이야—
+    57.74s  user  발화 끝
+    61.17s  user  발화 시작: 사실 역사 같은 건 됐고. 초콜릿 무스 레시피 좀 알려줘.
+    61.17s  agent 발화 끝
+    66.89s  agent 발화 시작: 오, 좋은 생각이야! 클래식한 초콜릿 무스는 언제나 좋은 선택이지.
+    66.89s  user  발화 끝
+    72.03s  user  발화 시작: 누군가를 감동시키려고 하는 거라 좀… 특별한 걸로.
+    72.03s  agent 발화 끝
+    76.03s  agent 발화 시작: 정말 멋진 무스를 만들려면 발로나 초콜릿을 써야 해.
+    76.03s  user  발화 끝
+    80.61s  user  발화 시작: 발로나… 비싸?
+    80.61s  agent 발화 끝
+    81.75s  agent 발화 시작: <ret> 투자라고 생각하면 돼. 발로나 과나하 70% 다크 초콜릿 300그램이 55달러 정도 해. 정말 그
+    81.75s  <ret> 발화 (turn19 첫 프레임)
+    81.75s  user  발화 끝
+    82.15s  ⚡SPAN 주입 [d'=0.40s / d_lead=1.72s]: A three hundred gram bar of Valrhona Guanaja seventy percent dark choc
+    90.90s  agent 발화 끝

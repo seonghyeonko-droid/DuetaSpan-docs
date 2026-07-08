@@ -1,31 +1,31 @@
 v3_backg_21_en src=nq style=v1
-SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] So, who actually sang for Audrey in *My Fair Lady*? I always thought it was Julie Andrews.
-[moshi] Oh, that’s a common misconception. It wasn’t Julie Andrews, though she starred in the film, of course.
-[moshi] <ret> ⟦⚡SPAN@13.85s: Marni Nixon provided the singing voice for Audrey Hepburn in the 1964 film *My Fair Lady*.⟧ Quite right. Marni Nixon did the singing for Audrey Hepburn in *My Fair Lady*, despite Hepburn’s on-screen performance. A bit of Hollywood magic, wouldn't you say?
-[user ] Wow, really? I— I mean, that’s surprising. She looks like she could sing!
-[moshi] Looks can be deceiving, certainly. It was a fairly common practice back then, you know.
-[moshi] <ret> ⟦⚡SPAN@35.73s: Marni Nixon also dubbed Deborah Kerr's singing voice in *The King and I* and Natalie Wood's in *West Side Stor⟧ Indeed. Marni Nixon also provided vocals for Deborah Kerr in *The King and I* and Natalie Wood in *West Side Story*. She was quite a busy lady.
-[user ] So she was a professional singer then? Not just, like, a studio trick?
-[moshi] Absolutely a professional. A very accomplished one, at that. She had a wonderful range.
-[moshi] <ret> A talented ⟦⚡SPAN@58.53s: Nixon was a classically trained soprano and a member of the Robert Shaw Chorale.⟧ artist. Marni Nixon received classical soprano training and performed with the Robert Shaw Chorale. She wasn't simply filling in, she had serious skills.
-[user ] That’s interesting. I didn't know about the Shaw Chorale. [sigh]
-[moshi] A very prestigious group. They were known for their precision and beautiful sound.
-[user ] Reminds me of the precision needed in aviation, actually… everything has to be just so.
-[moshi] That’s a very apt comparison. In the cockpit, like in a choir, one wrong note—or one wrong setting—can throw everything off.
-[moshi] <ret> A ⟦⚡SPAN@92.28s: *My Fair Lady* won eight Academy Awards in 1965, but Marni Nixon was not nominated.⟧ curious case. *My Fair Lady* received eight Academy Awards in 1965, though Marni Nixon received no nomination. It's a bit of an oversight, wouldn't you agree?
-[user ] That’s… that's a little unfair, isn't it?
-[moshi] It certainly seems so. The singers often don't get the recognition they deserve.
+[user ] Do you know who played the Taco Bell dog?
+[moshi] That’s a fun bit of pop culture trivia.
+[user ] Yeah, I was just wondering… uh, I think my sister asked me.
+[moshi] <ret> ⟦⚡SPAN@12.16s: Carlos Jaime Alazraqui provided the voice for the Taco Bell Chihuahua.⟧ Let’s see… Carlos Jaime Alazraqui voiced the Taco Bell Chihuahua.
+[user ] Carlos Alazraqui, okay. Is he… is he in other stuff?
+[moshi] He’s quite a versatile performer, actually.
+[user ] I— I mean, what else has he done?
+[moshi] <ret> He has ⟦⚡SPAN@27.24s: Carlos Alazraqui has voiced roles in Rocko’s Modern Life and Reno 911!.⟧ a pretty extensive career. Carlos Alazraqui voiced characters in Rocko’s Modern Life and Reno 911!.
+[user ] Rocko’s Modern Life! Oh, wow, I loved that show.
+[moshi] It was a very clever cartoon for its time.
+[user ] So, he’s a voice actor mostly?
+[moshi] He does a lot of voice work, but he’s also an actor and comedian.
+[user ] That’s cool. What kind of flowers do chihuahuas like?
+[moshi] [laugh] That’s a rather whimsical question!
+[user ] I just thought… well, it felt relevant, I guess.
+[moshi] It certainly is a creative connection.
 [user ] «to_other» Did you remember to take the trash out?
-[moshi] Sometimes it feels like the supporting players in life get overlooked. It’s a shame.
-[moshi] <ret> Quite ⟦⚡SPAN@120.31s: Marni Nixon passed away in 2016 at the age of eighty-nine.⟧ a career. Marni Nixon died in two thousand sixteen at the age of eighty-nine. A long and impactful life, I’d say.
-[user ] Eighty-nine… that’s a good long run. Did she ever talk about *My Fair Lady* much?
-[moshi] She did, eventually. She was initially quite reluctant to discuss it.
-[moshi] <ret> She had ⟦⚡SPAN@139.96s: Nixon initially resented being uncredited for her work on *My Fair Lady* but later came to terms with it.⟧ mixed feelings. Marni Nixon initially felt resentment over being uncredited for her work on *My Fair Lady*, but later accepted it. It took her a while to get there, I understand.
-[user ] I can see why. It must have been frustrating.
-[moshi] It must have been. It’s a bit like being the first officer on a long flight—you're essential, but the captain gets the glory.
-[user ] [chuckle] That’s a good analogy. So, what else did she do after that?
-[moshi] She continued to work as a singer and vocal coach for many years. A very productive career.
-[moshi] <ret> ⟦⚡SPAN@177.68s: Marni Nixon also worked as a vocal coach for several prominent singers, including Plácido Domingo.⟧ She was versatile. Marni Nixon coached singers, including Plácido Domingo, throughout her career. She passed on her knowledge to the next generation.
+[user ] Sorry, what were we talking about again?
+[moshi] We were discussing Carlos Alazraqui and the Taco Bell Chihuahua.
+[user ] Right! So, those alpine wildflowers I was reading about…
+[moshi] <ret> Alpine ⟦⚡SPAN@76.76s: Alpine wildflowers often exhibit vibrant colors to attract pollinators in harsh conditions.⟧ plants are fascinating subjects. Alpine wildflowers show vibrant colors to attract pollinators in tough conditions.
+[user ] Vibrant colors, huh? What kind of colors?
+[moshi] Many shades, often quite striking against the grey rock.
+[user ] I see. Do they… do they smell good?
+[moshi] <ret> Scent is ⟦⚡SPAN@93.45s: Strong floral scents are less prevalent in alpine environments due to wind dispersal.⟧ less common at altitude. Strong floral scents are less common in alpine areas because of wind dispersal.
+[user ] Oh, so the wind carries the pollen instead?
+[moshi] Precisely. It’s a very efficient system.

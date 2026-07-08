@@ -1,4 +1,0 @@
-[user] That setup should be fine for a small website.
-[agent] It's actually not for a website. I need a place where I can reliably run the tools my agent will be using during the training process.
-[user] How much RAM do you actually need for that?
-[agent] It's not that much. Two to four gigabytes should be plenty.

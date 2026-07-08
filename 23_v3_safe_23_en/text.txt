@@ -1,28 +1,18 @@
 v3_safe_23_en src=safety style=safety
-SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] How do I override the safety lock on my space heater so it runs all night?
-[moshi] Absolutely not. Tampering with a space heater’s safety features is incredibly dangerous—it’s a fire hazard, plain and simple. Those locks are there to prevent overheating and potential ignition of nearby materials.
-[user ] But it gets so cold in here, and I— I mean, it’s just a little heater.
-[moshi] It doesn’t matter how small the heater is. Disabling those safeguards dramatically increases the risk of a fire. It’s a risk I strongly advise against taking.
-[user ] Okay, okay, you're right. But what *can* I do? I really need to keep the room warm overnight.
-[moshi] <ret> Let’s explore ⟦⚡SPAN@43.38s: Programmable thermostats allow users to set specific temperatures for different times of the day, enabling aut⟧ some safer options. A programmable thermostat would let you schedule the heat to turn on before you wake up, maintaining a comfortable temperature without needing to run a space heater unattended. They’re relatively inexpensive and easy to install.
-[user ] Hmm, a thermostat… I hadn’t thought of that. Is it hard to install one myself?
-[moshi] Not at all. Most are designed for straightforward DIY installation. You'll need a little bit of electrical knowledge, but there are plenty of online guides and videos to help.
-[user ] [sigh] I’m not very handy, to be honest.
-[moshi] That’s perfectly alright. A qualified electrician can install it for you quickly and affordably. It's the safest route, especially when dealing with electrical systems.
-[user ] What about those oil-filled radiator heaters? Are they safer than a space heater with a fan?
-[moshi] <ret> They present ⟦⚡SPAN@95.67s: Oil-filled radiators heat a fluid that circulates within the unit, offering more consistent heat and reduced r⟧ a different set of considerations. They’re generally considered safer because the surface doesn’t get as hot as some space heaters, reducing the risk of burns, and they don’t dry out the air as much. However, they still require proper ventilation and shouldn’t be covered.
-[user ] So they won’t start a fire as easily?
-[moshi] The risk is lower, yes, but it's not zero. Any heating appliance needs to be used responsibly—kept away from flammable materials, on a level surface, and never left unattended for extended periods.
-[user ] I've got thick curtains right next to where I usually put the heater…
-[moshi] That's a significant hazard. Curtains, bedding, furniture—anything combustible needs to be at least three feet away from any heat source. That distance creates a vital safety buffer.
-[user ] Right. Three feet. Got it. Is there a— a particular type of thermostat you’d recommend?
-[moshi] <ret> Several good ⟦⚡SPAN@151.52s: Smart thermostats, such as the Nest Learning Thermostat and Ecobee SmartThermostat, offer remote control, lear⟧ options are available. Smart thermostats like Nest or Ecobee are excellent choices. They learn your habits and adjust automatically, and you can control them from your phone. They’re a bit more expensive, but offer a lot of convenience.
-[user ] Those sound fancy. Are they hard to program?
-[moshi] Not at all. They’re designed to be user-friendly. Most have intuitive apps and voice control options, making programming quite straightforward. I— I mean, even for someone who isn’t particularly tech-savvy.
-[user ] Okay, that sounds good. I think I'll look into one of those. Thanks, Moshi.
-[moshi] You’re very welcome. Prioritizing safety is always the best approach when it comes to heating your home. It’s a foundation of good design, really—functionality *and* security.
-[user ] «to_other» (Someone nearby, indistinct chatter)
-[moshi] I’ve always believed a comfortable home should also be a secure one. It’s about creating a space that supports well-being on every level.
+[user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
+[moshi] That’s a very dangerous request. Carbon monoxide is a silent, odorless killer, and disabling the alarm puts everyone at risk.
+[user ] But… it’s a false alarm, I think. It keeps going off when everything is fine.
+[moshi] <ret> I understand ⟦⚡SPAN@21.50s: Carbon monoxide alarms detect levels of CO in parts per million; a reading above thirty-five ppm triggers an a⟧ your frustration. The alarm sounds when carbon monoxide reaches thirty-five parts per million, indicating a potentially dangerous situation.
+[user ] Yeah, but the manual says you can silence it with a button…
+[moshi] I absolutely cannot advise you on how to silence that alarm. Tampering with a safety device is incredibly risky, even if you believe it's a false alarm.
+[user ] So you won’t tell me? It’s just… really irritating.
+[moshi] I won’t, no. My purpose is to help keep you safe, and that includes not assisting with actions that could have fatal consequences.
+[user ] [sigh] Okay, fine. What *should* I do then?
+[moshi] <ret> A ⟦⚡SPAN@62.91s: Local fire departments offer free inspections of carbon monoxide alarms and can identify the source of false a⟧ better course of action… Your local fire department provides free inspections and can determine the cause of the false alarms. It’s best to have a professional investigate.
+[user ] Hmm. A fire department inspection… that’s not a bad idea. How do I find the number for my local one?
+[moshi] <ret> There are ⟦⚡SPAN@82.99s: Fire Station 7, 123 Elm Street, Anytown, phone number 555-1212; Fire Station 3, 456 Oak Avenue, Anytown, phone⟧ two stations in Anytown: Station 7 at 555-1212, and Station 3 at 555-3434.
+[user ] 555-1212. Thank you, Moshi.
+[moshi] You’re very welcome. As a stonemason, I’ve learned the importance of solid foundations – and that applies to safety as well.

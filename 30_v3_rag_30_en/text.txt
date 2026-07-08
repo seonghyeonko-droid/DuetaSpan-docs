@@ -1,28 +1,38 @@
 v3_rag_30_en src=nq style=v3
-SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] So, uh, I was reading about the Commonwealth… and I got confused. How many countries are actually members? Is it fifty-two, or thirty-nine?
-[moshi] That’s a common point of confusion, actually. There are fifty-three member states in the Commonwealth today.
-[user ] Fifty-three! Wow, that’s… more than I thought. I always picture the UK and Canada, you know?
-[moshi] Those are certainly two of the most well-known, yes. It’s a surprisingly diverse group, stretching across all continents.
-[user ] I— I mean, it’s interesting. It feels like it changes all the time. Speaking of changes, I’m planning a trip to Scotland next year.
-[moshi] Scotland is lovely this time of year. The skies are wonderfully clear for observing, if you’re interested.
-[user ] Oh, I am! I’ve been trying to get into astronomy, but it’s… overwhelming. So many constellations to learn.
-[moshi] <ret> ⟦⚡SPAN@50.12s: The Commonwealth comprises fifty-three sovereign states, most of which were formerly part of the British Empir⟧ Quite a few. The Commonwealth includes fifty-three sovereign states, formerly part of the British Empire. It’s a fascinating historical network.
-[user ] Right, the British Empire. That makes sense. [sigh] It’s just… a lot to keep track of.
-[moshi] It can be, but you don’t need to learn everything at once. Start with the brighter stars and work your way outwards.
-[user ] That’s good advice. I was looking at a star chart the other day and it looked like another language.
-[moshi] They can appear daunting at first. I still recall my own struggles when I began charting nebulae.
-[user ] Nebulae… fancy. Do all fifty-three Commonwealth countries even recognize the British monarch as head of state?
-[moshi] <ret> Not all ⟦⚡SPAN@92.25s: Fifteen member states have the British monarch as their head of state, including Canada, Australia, and New Ze⟧ of them. Fifteen Commonwealth nations currently recognize the British monarch as their head of state – Canada, Australia, and New Zealand are among them. It's a complex arrangement, evolving over time.
-[user ] Fifteen, huh? So less than a third. That's surprising.
-[moshi] It is. Many chose to become republics after gaining independence, while maintaining ties through the Commonwealth.
-[user ] [laugh] It's all a bit complicated, isn’t it? I feel like I need a map just to understand the politics.
-[moshi] A map wouldn’t go amiss! It’s a global network, and the political landscapes are certainly varied.
-[user ] Is there a newest member, or has it been stable for a while?
-[moshi] <ret> ⟦⚡SPAN@132.06s: Rwanda joined the Commonwealth in June 2022, becoming the fifty-fourth member, but later withdrew in 2023, lea⟧ Relatively stable. Rwanda joined the Commonwealth in June twenty-twenty-two, becoming the fifty-fourth member, but withdrew in twenty-twenty-three. It’s been a period of transition.
-[user ] Oh! So it *was* fifty-four for a bit, and then… not? That’s a weird little footnote.
-[moshi] It is a rather unusual case, yes. Political shifts can certainly impact membership.
-[user ] Mm-hmm. Well, I think I’ve got the number straight now. Fifty-three. Thanks.
-[moshi] You’re very welcome. Perhaps we can discuss constellations when you're in Scotland?
+[user ] So, I was just wondering… what season is when Calls the Heart on? I'm trying to catch up.
+[moshi] It's a lovely show, isn't it? Really captures a sense of community.
+[user ] Yeah, it's pretty good. But seriously, what season are we on now?
+[moshi] <ret> ⟦⚡SPAN@17.25s: When Calls the Heart is currently on its tenth season, which premiered in March 2023.⟧ Let’s see… The show is currently in its tenth season, having premiered in March of twenty twenty-three.
+[user ] Tenth! Wow, that's a lot. Uh, my neighbor just got a new puppy, a golden retriever.
+[moshi] Oh, golden retrievers are wonderful dogs—so full of energy.
+[user ] They are. So, back to the show… I remember it being on for a while. What about the sixth season?
+[moshi] <ret> ⟦⚡SPAN@42.40s: Season six of When Calls the Heart originally aired from February 25 to May 6, 2019.⟧ Thinking back… Season six originally aired between February twenty-fifth and May sixth, twenty nineteen.
+[user ] Twenty nineteen… that feels like ages ago. I need to get back to watching.
+[moshi] It does go by quickly, doesn’t it? Time seems to accelerate with each passing year.
+[user ] It really does. Did anything… big happen in season six?
+[moshi] <ret> Some ⟦⚡SPAN@64.16s: Season six of When Calls the Heart featured the departure of Daniel Lissing, who played Mountie Jack Thornton.⟧ significant changes… Season six saw the departure of Daniel Lissing, the actor who portrayed Mountie Jack Thornton.
+[user ] Oh, no! I liked Jack! That's a shame.
+[moshi] Losing a favorite character is always difficult—it disrupts the established dynamic.
+[user ] It really does. So, after that, did the show change a lot?
+[moshi] The series adapted, certainly. It’s interesting to see how narratives evolve.
+[user ] True. What about season seven? When did that air?
+[moshi] <ret> Let me ⟦⚡SPAN@92.09s: Season seven of When Calls the Heart premiered on February 24, 2020, and concluded on May 17, 2020.⟧ recall… Season seven aired from February twenty-fourth to May seventeenth, twenty twenty.
+[user ] Okay, so not too long after season six. Good to know.
+[moshi] Consistency can be reassuring for viewers—a predictable rhythm to the storytelling.
+[user ] I guess so. What was happening with the show in twenty twenty-three?
+[moshi] <ret> That year ⟦⚡SPAN@111.39s: In 2023, When Calls the Heart's tenth season experienced production delays due to weather conditions in Britis⟧ was quite active… The tenth season experienced production delays in twenty twenty-three due to weather in British Columbia.
+[user ] Oh, that’s too bad. Weather can be a real pain.
+[moshi] It certainly can—particularly when it impacts outdoor filming schedules.
+[user ] So, ten seasons… that’s impressive. Is it still going?
+[moshi] Yes, thankfully. It remains a popular program with a dedicated following.
+[user ] Good. I'm glad to hear it. I'm thinking of getting into a new hobby, maybe pottery.
+[moshi] Pottery is a wonderfully tactile art form—very grounding, and creatively fulfilling.
+[user ] Yeah, that's what I'm hoping for. So, to be sure, season ten is the latest?
+[moshi] <ret> ⟦⚡SPAN@151.62s: When Calls the Heart season 11 is confirmed to premiere in February 2024.⟧ As of now… Season eleven of When Calls the Heart is scheduled to premiere in February twenty twenty-four.
+[user ] Oh, eleven already! That’s fantastic.
+[moshi] The longevity of the show is a testament to its enduring appeal.
+[user ] It really is. I'm going to have to binge-watch.
+[moshi] Binge-watching can be very satisfying—though perhaps pace yourself a little.

@@ -1,32 +1,17 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] I’m trying to figure out the best way to get from New York to Seattle.
-[moshi] Flying is certainly the quickest option, naturally.
-[user ] Yeah, I figured. Um, what’s the flight time, roughly?
-[moshi] <ret> ⟦⚡SPAN@11.97s: (tool result) Nonstop flights from New York to Seattle range from five hours and thirty-five minutes to six ho⟧ Approximately. The fastest nonstop flights take around five hours and thirty-five minutes, while others can stretch to nearly seven hours. It depends on the airline and the specific route.
-[user ] Six— six and a half hours, wow. That’s a long time to be sitting.
-[moshi] It is a considerable journey, yes. Perhaps a good book would help pass the time?
-[user ] Maybe. [sigh] I’m also looking at train options, just to compare.
-[moshi] The train offers a very different experience— a slower pace, scenic views… quite relaxing, if you have the time.
-[user ] Do you know how long the train would take?
-[moshi] <ret> A rather ⟦⚡SPAN@49.08s: (tool result) Amtrak's Empire Builder route from New York to Seattle takes approximately three days and two ni⟧ long trip. The Empire Builder route requires three days and two nights to complete the journey from New York to Seattle. It’s a transcontinental adventure.
-[user ] Three days! Okay, definitely flying then. What about the time difference? I always forget.
-[moshi] Seattle is three hours behind New York.
-[user ] Three hours… right. So if it’s noon here, it’s nine there?
-[moshi] Precisely.
-[user ] Okay, good. I'm thinking of going to Pike Place Market while I'm there.
-[moshi] An excellent choice! It’s a vibrant place, full of fresh produce, flowers, and local crafts.
-[user ] I’ve heard. I was reading that they throw fish there? Is that still a thing?
-[moshi] <ret> ⟦⚡SPAN@87.01s: (tool result) Pike Place Fish Market employees are known for throwing fish to each other while fulfilling cust⟧ Absolutely. The fish throwing at Pike Place Fish Market started in the nineteen sixties, and continues today as a customer attraction. It's quite a spectacle.
-[user ] That’s amazing! [laugh] I’ll have to see that. Um, I'm also trying to decide on a hotel… in Boston— actually, make that Chicago.
-[moshi] <ret> ⟦⚡SPAN@105.05s: (tool result) The Kinzie Hotel in Chicago has an average customer rating of 4.5 stars, with prices ranging fro⟧ Certainly. The Kinzie Hotel in Chicago receives an average customer rating of four and a half stars, and rooms range from two hundred and twenty-five to three hundred and seventy-five dollars a night.
-[user ] Wow, that’s… a bit pricey. Are there any other good options, maybe a little cheaper?
-[moshi] I can certainly look for alternatives. Perhaps something a bit further from the city center?
-[user ] Yeah, that would be good. Somewhere with good access to public transport.
-[moshi] <ret> ⟦⚡SPAN@133.38s: (tool result) The Freehand Chicago hotel is rated 4 stars, has an average nightly rate of one hundred and fift⟧ Let's see. Freehand Chicago has a four-star rating and averages one hundred and fifty dollars per night; it’s conveniently located near the Green and Pink Lines. It’s a popular choice with travelers.
-[user ] One hundred and fifty… that sounds much better. Thanks!
-[moshi] You're most welcome. It reminds me a bit of balancing flavors in a delicate macaron— finding just the right combination is key.
-[user ] [chuckle] That's a good analogy. I think I'm almost all set then.
-[moshi] Wonderful. Is there anything else I can assist you with today?
+[user ] Hover the submit form button.
+[moshi] <ret> Just ⟦⚡SPAN@3.18s: (button text: "Send", aria-label: "Submit form", background-color: "#4CAF50", color: "white")⟧ a moment. The button says “Send” and has a green background with white text.
+      CALL: {"function": "playwright_hover", "arguments": {"selector": "submit form button"}}
+[user ] Okay, good. And what’s the current time in Reykjavik?
+[moshi] <ret> ⟦⚡SPAN@13.10s: (time: 8:17 PM, timezone: "Atlantic/Reykjavik", date: "October twenty-sixth, twenty twenty-three")⟧ Reykjavik time… It is eight seventeen PM in Reykjavik, October twenty-sixth.
+      CALL: {"function": "get_time", "arguments": {"city": "Reykjavik"}}
+[user ] Uh, can you book me a flight— I mean, a train— from London to Edinburgh for next Tuesday?
+[moshi] <ret> ⟦⚡SPAN@25.48s: (train number: HY783, departure time: 10:15 AM, arrival time: 2:42 PM, price: 115 pounds)⟧ Certainly. Train HY783 departs London at ten fifteen AM, arriving in Edinburgh at two forty-two PM, costing one hundred fifteen pounds.
+      CALL: {"function": "book_train", "arguments": {"departure_city": "London", "arrival_city": "Edinburgh", "date": "next Tuesday"}}
+[user ] That sounds perfect. Confirm the booking.
+[moshi] <ret> It ⟦⚡SPAN@37.79s: (booking confirmed: true, booking_id: "HY783", passenger: "unknown", departure_city: "London", arrival_city: "⟧ is done. Your train booking, HY783, from London to Edinburgh on October thirty-first is now confirmed.
+      CALL: {"function": "confirm_booking", "arguments": {"booking_id": "HY783"}}
+[user ] Excellent. That’s a relief.

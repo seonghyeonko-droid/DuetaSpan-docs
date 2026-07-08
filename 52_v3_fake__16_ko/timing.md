@@ -1,71 +1,55 @@
 # v3_fake__16_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 안녕하세요. 프랑스가 오하이오 강 유역의 영유권을 유지하려고 뭘 했는지 궁금하시군요?
-     6.36s  agent 발화 시작: 네, 프랑스는 요새 네트워크와 원주민과의 동맹을 통해 통제력을 강화하려고 시도했어요.
-     6.36s  user  발화 끝
-    12.71s  user  발화 시작: 요새요? 어떤 종류의 요새였어요? 컸어요?
-    12.71s  agent 발화 끝
-    15.89s  agent 발화 시작: <ret> 음, 꽤 컸어요. 1754년에 건설된 뒤퀘스느 요새는 강이 만나는 지점에 있었는데, 아주 중요한 
-    15.89s  <ret> 발화 (turn3 첫 프레임)
-    15.89s  ⚡SPAN 주입 [d'=0.00s / d_lead=1.27s]: Fort Duquesne, built in 1754, was a strategically important French for
-    15.89s  user  발화 끝
-    27.96s  user  발화 시작: 그걸 누가 지었어요? 프랑스 군인들이겠죠?
-    27.96s  agent 발화 끝
-    31.14s  agent 발화 시작: 주로 그렇긴 했죠. 하지만 식민지 군대와, 무엇보다 중요한 건 원주민 노동력에 의존했어요.
-    31.14s  user  발화 끝
-    38.77s  user  발화 시작: 영국은 그냥 내버려뒀어요?
-    38.77s  agent 발화 끝
-    40.67s  agent 발화 시작: 꼭 그렇진 않았어요. 상당한 갈등이 있었고, 영국도 그 지역에 자체 요새를 건설하기 시작해서 직접적인 충돌로
-    40.67s  user  발화 끝
-    50.84s  user  발화 시작: [sigh] 결국 땅을 차지하려고 한 거군요?
-    50.84s  agent 발화 끝
-    54.66s  agent 발화 시작: 좀 직설적인 평가지만 틀린 말은 아니에요. 두 제국 모두 오하이오 강 유역이 경제적, 전략적으로 매우 중요하
-    54.66s  user  발화 끝
-    65.46s  user  발화 시작: 땅만 중요한 건 아니었죠? 다른 자원도 원했어요?
-    65.46s  agent 발화 끝
-    69.91s  agent 발화 시작: <ret> 물론이죠. 그 지역의 풍부한 모피 동물이 수익성 높은 모피 무역을 이끌었고, 프랑스 상인들을 끌어
-    69.91s  <ret> 발화 (turn11 첫 프레임)
-    69.91s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.64s]: The Ohio River Valley was rich in fur-bearing animals, attracting Fren
-    69.91s  user  발화 끝
-    82.62s  user  발화 시작: 모피군요. 그 말이 맞아요. 원주민들이랑 모피를 거래했어요?
-    82.62s  agent 발화 끝
-    87.07s  agent 발화 시작: 맞아요. 그런 관계를 구축하고 유지하는 게 프랑스 전략의 핵심이었어요. 그들은 무역 상품뿐만 아니라 군사 동
-    87.07s  user  발화 끝
-    97.24s  user  발화 시작: 원주민들은요? 그 사람들도 의견을 말할 수 있었어요?
-    97.24s  agent 발화 끝
-   101.69s  agent 발화 시작: 그들의 역할이 종종 과소평가돼요. 여러 부족들이 각자의 이익과 오랜 불만에 따라 프랑스 또는 영국과 동맹을 
-   101.69s  user  발화 끝
-   111.86s  user  발화 시작: 그냥 프랑스 대 영국으로 단순한 문제가 아니었군요?
-   111.86s  agent 발화 끝
-   116.30s  agent 발화 시작: 전혀 그렇지 않아요. 여러 원주민 국가가 얽힌 복잡한 동맹과 경쟁의 거미줄이었죠.
-   116.30s  user  발화 끝
-   123.29s  user  발화 시작: 알겠어요. 프랑스에게 특히 중요한 부족이 있었나요?
-   123.29s  agent 발화 끝
-   127.11s  agent 발화 시작: <ret> 네, 후론족이 가장 중요했어요. 후론 연맹은 오랜 무역 관계를 통해 모피 무역 네트워크에 접근할 
-   127.11s  <ret> 발화 (turn19 첫 프레임)
-   127.11s  user  발화 끝
-   128.11s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.54s]: The Huron Confederacy maintained a long-standing trading relationship 
-   140.45s  user  발화 시작: 영국은요? 누구와 손을 잡았어요?
-   140.45s  agent 발화 끝
-   143.00s  agent 발화 시작: 영국은 후론족과 오랜 경쟁 관계에 있던 이로쿼이 연맹과 동맹을 맺었어요.
-   143.00s  user  발화 끝
-   149.35s  user  발화 시작: 그러니까 프랑스와 영국은 기본적으로 동맹을 통해 싸운 거군요?
-   149.35s  agent 발화 끝
-   154.44s  agent 발화 시작: <ret> 상당한 정도로는 그랬어요. 많은 면에서 원주민 땅에서 대리전이 벌어진 셈이죠.
-   154.44s  <ret> 발화 (turn23 첫 프레임)
-   154.44s  user  발화 끝
-   155.44s  ⚡SPAN 주입(IRRELEVANT) [d'=1.00s / d_lead=6.36s]: The current price of Brent crude oil is eighty-two dollars and fifty c
-   160.79s  user  발화 시작: 정말… 복잡하네요.
-   160.79s  agent 발화 끝
-   162.06s  agent 발화 시작: [chuckle] “복잡하다”는 표현은 관대한 편이에요. 격렬한 정치적 술수와 폭력의 확산이 있었던 시기였죠
-   162.06s  user  발화 끝
-   172.23s  user  발화 시작: 어떻게요? 결국 어떻게 됐어요?
-   172.23s  agent 발화 끝
-   174.77s  agent 발화 시작: 결국 프랑스-인디언 전쟁으로 이어졌고, 영국이 북미 대륙을 지배하게 되었어요. 아주 중요한 권력 변화였죠.
-   174.77s  user  발화 끝
-   183.04s  user  발화 시작: 프랑스는 모든 걸 잃은 건가요?
-   183.04s  agent 발화 끝
-   186.21s  agent 발화 시작: *모든* 걸 잃은 건 아니지만, 오하이오 강 유역을 포함한 대부분의 북미 영토를 잃었어요. 그 지역에서 프랑
-   186.21s  user  발화 끝
-   198.92s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 왼쪽 다발 차단이란 거? 의사가 그렇게 말한 것 같은데.
+     5.32s  agent 발화 시작: 맞아요. 심장의 전기 시스템에 문제가 생긴 건데, 사실 흔한 편이야.
+     5.32s  user  발화 끝
+    10.64s  user  발화 시작: 문제? 정확히 무슨 말이야?
+    10.64s  agent 발화 끝
+    12.77s  agent 발화 시작: <ret> 음, 설명해 줄게. 심장 전도 이상이라고 하는데, 전기 신호가 심장 왼쪽까지 가는 데 지연이 생기
+    12.77s  <ret> 발화 (turn3 첫 프레임)
+    12.77s  ⚡SPAN 주입 [d'=0.00s / d_lead=2.13s]: A left bundle branch block is a cardiac conduction abnormality.
+    12.77s  user  발화 끝
+    21.28s  user  발화 시작: 아. 그거… 위험해?
+    21.28s  agent 발화 끝
+    22.88s  agent 발화 시작: 항상 그런 건 아니지만, 의사 선생님이랑 꾸준히 확인하는 게 좋겠지.
+    22.88s  user  발화 끝
+    28.20s  user  발화 시작: 그럼, 원인이 뭔데? 내가 뭘 잘못한 거야?
+    28.20s  agent 발화 끝
+    31.92s  agent 발화 시작: <ret> 뭐, 여러 가지가 있을 수 있어. 흔한 원인으로는 관상동맥 질환, 고혈압, 심근병증 같은 게 있어
+    31.92s  <ret> 발화 (turn7 첫 프레임)
+    31.92s  user  발화 끝
+    32.92s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.13s]: Common causes include coronary artery disease, high blood pressure, an
+    39.90s  user  발화 시작: [sigh] 다… 심각하게 들리네.
+    39.90s  agent 발화 끝
+    42.03s  agent 발화 시작: 그럴 수도 있지, 하지만 생활 습관 개선이랑 약으로 관리할 수 있는 경우가 많아.
+    42.03s  user  발화 끝
+    48.95s  user  발화 시작: 고칠 방법은 있어? 수술로 되는 거야?
+    48.95s  agent 발화 끝
+    52.14s  agent 발화 시작: <ret> 치료는 원인에 따라 달라져. 근본적인 심장 질환을 치료하는 데 집중한다는 뜻이야, 차단 자체를 고
+    52.14s  <ret> 발화 (turn11 첫 프레임)
+    52.14s  user  발화 끝
+    53.10s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.66s]: Treatment for left bundle branch block addresses the underlying heart 
+    62.25s  user  발화 시작: 알겠어, 말이 되네. 증상은 어때? 내가 피곤하다고 말했었나?
+    62.25s  agent 발화 끝
+    66.50s  agent 발화 시작: <ret> 피로감은 흔한 증상인데, 종종 눈에 띄는 증상이 없을 수도 있어.
+    66.50s  <ret> 발화 (turn13 첫 프레임)
+    66.50s  user  발화 끝
+    67.50s  ⚡SPAN 주입(IRRELEVANT) [d'=1.00s / d_lead=5.32s]: AAPL stock closed at 170.34, up 0.82% today.
+    71.82s  agent 발화 시작: 신기하지, 우리 몸이 얼마나 잘 적응하는지. 가끔은 문제가 있는지도 모르는 경우가 있거든.
+    71.82s  agent 발화 끝
+    78.21s  user  발화 시작: Mm-hmm.
+    78.21s  agent 발화 끝
+    78.74s  agent 발화 시작: 어쩌면 수플레랑 비슷한 것 같아—조금만 균형이 안 맞아도 완전히 망가질 수 있는데, 숙련된 사람은 종종 고칠
+    78.74s  user  발화 끝
+    88.31s  user  발화 시작: 수플레? 좀… 이상한 비유네.
+    88.31s  agent 발화 끝
+    90.44s  agent 발화 시작: 그럴 수도 있지만, 둘 다 정확한 타이밍과 섬세한 균형이 필요하지 않겠어?
+    90.44s  user  발화 끝
+    96.30s  user  발화 시작: 글쎄, 그런 것 같기도 하고. 유전되는 거야? 가족력이 있어?
+    96.30s  agent 발화 끝
+   101.08s  agent 발화 시작: <ret> 뭐, 그런 증거도 있어. 가족 중에 심장 질환을 앓았던 사람이 있으면 왼쪽 다발 차단이 생길 위험
+   101.08s  <ret> 발화 (turn20 첫 프레임)
+   101.08s  user  발화 끝
+   102.04s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.66s]: A family history of heart disease can increase the risk of developing 
+   111.19s  agent 발화 끝

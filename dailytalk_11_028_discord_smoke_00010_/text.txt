@@ -1,4 +1,0 @@
-[user] When I run it, sometimes it doesn't even load, and other times it gives me really good results.
-[agent] Are you connected via Wi-Fi or a cable?
-[user] I'm on Wi-Fi.
-[agent] Is your signal strength good in the area where you're working?

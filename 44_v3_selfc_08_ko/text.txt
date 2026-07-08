@@ -1,32 +1,17 @@
 v3_selfc_08_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. <system>
 표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
 
-[user ] 오늘 뉴욕에서 시애틀 가는 가장 좋은 방법을 알아보고 있어요.
-[moshi] 네, 당연히 비행기가 가장 빠른 방법이죠.
-[user ] 네, 짐작은 했어요. 음, 대략 비행 시간은 얼마나 돼요?
-[moshi] <ret> ⟦⚡SPAN@13.55s: (tool result) Nonstop flights from New York to Seattle range from five hours and thirty-five minutes to six ho⟧ 알아봤는데, 가장 빠른 직항편은 다섯 시간 삼십오 분 정도 걸리고, 다른 항공편은 거의 일곱 시간까지 걸릴 수 있어요. 항공사나 구체적인 경로에 따라 다르거든요.
-[user ] 여섯— 여섯 시간 반이라니, 와. 앉아 있으려면 정말 오래 걸리겠네요.
-[moshi] 꽤 긴 여정이긴 하죠. 좋은 책이라도 읽으면서 시간을 보내는 건 어떠세요?
-[user ] 그러면 좋을지도요. [sigh] 기차 옵션도 알아보고 있어요, 그냥 비교해 보려고요.
-[moshi] 기차는 아주 다른 경험을 제공해요— 느긋한 속도, 아름다운 풍경… 시간이 있다면 꽤 편안할 거예요.
-[user ] 기차로 가면 얼마나 걸릴까요?
-[moshi] <ret> 꽤 ⟦⚡SPAN@53.61s: (tool result) Amtrak's Empire Builder route from New York to Seattle takes approximately three days and two ni⟧ 긴 여행이에요. 엠파이어 빌더 노선은 뉴욕에서 시애틀까지 가는 데 사흘 밤낮이 걸려요. 횡단 대륙 여행이죠.
-[user ] 사흘이나요! 그럼 비행기로 가야겠네요. 시차는 어떻게 되죠? 항상 깜빡해요.
-[moshi] 시애틀은 뉴욕보다 세 시간 느려요.
-[user ] 세 시간… 맞아요. 그럼 여기서 정오면, 거기서는 아홉 시인가요?
-[moshi] 정확해요.
-[user ] 알겠어요, 좋아요. 시애틀에 가면 파이크 플레이스 마켓에 가보려고 해요.
-[moshi] 정말 좋은 선택이에요! 신선한 농산물, 꽃, 지역 공예품으로 가득한 활기찬 곳이에요.
-[user ] 그렇게 들었어요. 거기서 물고기를 던진다고 하던데, 아직도 그런가요?
-[moshi] <ret> ⟦⚡SPAN@90.35s: (tool result) Pike Place Fish Market employees are known for throwing fish to each other while fulfilling cust⟧ 네, 물론이죠. 파이크 플레이스 피시 마켓의 물고기 던지기는 1960년대에 시작되었고, 오늘날에도 고객 유치를 위해 계속되고 있어요. 꽤 볼만한 광경이죠.
-[user ] 정말 놀랍네요! [laugh] 꼭 봐야겠어요. 음, 호텔도 정해야 하는데… 보스턴— 아니, 시카고로 할게요.
-[moshi] <ret> ⟦⚡SPAN@107.73s: (tool result) The Kinzie Hotel in Chicago has an average customer rating of 4.5 stars, with prices ranging fro⟧ 알아봤어요. 시카고의 킨지 호텔은 평균 고객 평점이 별 4.5개이고, 객실 요금은 밤에 225달러에서 375달러 사이예요.
-[user ] 와, 좀… 비싸네요. 조금 더 저렴한 다른 좋은 옵션은 없을까요?
-[moshi] 다른 대안을 찾아볼 수 있어요. 도시 중심에서 조금 떨어진 곳은 어떠세요?
-[user ] 네, 그럴게요. 대중교통으로 이동하기 편리한 곳이면 좋겠어요.
-[moshi] <ret> ⟦⚡SPAN@131.61s: (tool result) The Freehand Chicago hotel is rated 4 stars, has an average nightly rate of one hundred and fift⟧ 알아봤는데, 프리핸드 시카고는 별 4개 등급이고, 1박당 평균 150달러예요. 그린 라인과 핑크 라인 근처에 편리하게 위치해 있어요. 여행객들에게 인기가 많은 곳이에요.
-[user ] 150달러… 훨씬 좋네요. 고마워요!
-[moshi] 도와드릴 수 있어서 기뻐요. 섬세한 마카롱의 맛을 조화롭게 맞추는 것과 비슷하네요— 완벽한 조합을 찾는 것이 중요하죠.
-[user ] [chuckle] 좋은 비유네요. 거의 다 준비된 것 같아요.
-[moshi] 정말 다행이네요. 오늘 더 도와드릴 일이 있을까요?
+[user ] 좋아요. 제출 양식 버튼에 마우스를 올려주세요.
+[moshi] <ret> 네, ⟦⚡SPAN@4.90s: (button text: "Send", aria-label: "Submit form", background-color: "#4CAF50", color: "white")⟧ 잠시만요. 버튼에는 “Send”라고 적혀 있고, 배경은 초록색에 글자는 흰색이에요.
+      CALL: {"function": "playwright_hover", "arguments": {"selector": "submit form button"}}
+[user ] 알겠습니다. 그럼, 레이캬비크 현재 시간이 어떻게 되나요?
+[moshi] <ret> 음, ⟦⚡SPAN@15.95s: (time: 8:17 PM, timezone: "Atlantic/Reykjavik", date: "October twenty-sixth, twenty twenty-three")⟧ 레이캬비크 시간은… 10월 26일 오후 8시 17분이에요.
+      CALL: {"function": "get_time", "arguments": {"city": "Reykjavik"}}
+[user ] 아, 기차를 예매해 주실 수 있을까요? 런던에서 에든버러까지 다음 화요일에 가는 걸로요.
+[moshi] <ret> ⟦⚡SPAN@28.43s: (train number: HY783, departure time: 10:15 AM, arrival time: 2:42 PM, price: 115 pounds)⟧ 물론이죠. HY783 열차가 런던에서 오전 10시 15분에 출발해서 에든버러에 오후 2시 42분에 도착하고, 요금은 115파운드예요.
+      CALL: {"function": "book_train", "arguments": {"departure_city": "London", "arrival_city": "Edinburgh", "date": "next Tuesday"}}
+[user ] 정말 좋네요. 예약을 확정해 주세요.
+[moshi] <ret> 네, ⟦⚡SPAN@41.95s: (booking confirmed: true, booking_id: "HY783", passenger: "unknown", departure_city: "London", arrival_city: "⟧ 완료됐습니다. 10월 31일 런던에서 에든버러로 가는 HY783 열차 예약이 확정됐어요.
+      CALL: {"function": "confirm_booking", "arguments": {"booking_id": "HY783"}}
+[user ] 잘 됐네요. 안심이 돼요.

@@ -1,4 +1,0 @@
-[user] Thanks for the info.
-[agent] You're welcome. Just head to the store, choose the bundle or skin you want, and then click the gift option.
-[user] So I shouldn't do it from the skins selection screen?
-[agent] No, you need to go directly to the shop to find that option.

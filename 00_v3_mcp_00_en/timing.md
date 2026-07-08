@@ -1,65 +1,53 @@
 # v3_mcp_00_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: So, I was reading about the Kingdom of Benin, and it got me 
-    11.33s  agent 발화 시작: That’s a very astute question. Benin’s longevity stemmed fro
-    11.33s  user  발화 끝
-    21.54s  user  발화 시작: Trade, you say? What exactly *were* they trading? I always h
-    21.54s  agent 발화 끝
-    26.82s  agent 발화 시작: Gold was certainly a key component, yes. But their trade net
-    26.82s  user  발화 끝
-    41.18s  user  발화 시작: Horses? That’s interesting. Were those used for cavalry, or…
-    41.18s  agent 발화 끝
-    44.58s  agent 발화 시작: Primarily for prestige and the royal court. Benin’s terrain—
-    44.58s  user  발화 끝
-    56.67s  user  발화 시작: [sigh] It’s just… so much of the history I read focuses on t
-    56.67s  agent 발화 끝
-    68.76s  agent 발화 시작: Precisely. That’s a common problem with historical narrative
-    68.76s  user  발화 끝
-    80.85s  user  발화 시작: I was looking at some maps, and I noticed a city called Ile-
-    80.85s  agent 발화 끝
-    88.41s  agent 발화 시작: Absolutely. Ile-Ife is considered the spiritual and cultural
-    88.41s  user  발화 끝
-   102.01s  user  발화 시작: Oh, really? So, a sort of founding ancestor?
-   102.01s  agent 발화 끝
-   105.03s  agent 발화 시작: In essence, yes. The story goes that Oranmiyan’s son, Eweka 
-   105.03s  user  발화 끝
-   117.12s  user  발화 시작: I— I mean, it’s amazing how these stories survive, isn’t it?
-   117.12s  agent 발화 끝
-   123.17s  agent 발화 시작: Oral tradition is a remarkably resilient thing. The Benin ki
-   123.17s  user  발화 끝
-   134.12s  user  발화 시작: I’m curious about their art. I’ve seen pictures of those bro
-   134.12s  agent 발화 끝
-   141.68s  agent 발화 시작: <ret> That's a common question. The “Benin Bronzes” are larg
-   141.68s  <ret> 발화 (turn15 첫 프레임)
-   141.68s  user  발화 끝
-   142.56s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.51s]: (tool result) The Benin Bronzes are primarily made of brass, which was
-   155.28s  user  발화 시작: Wow, brass! That’s good to know. I always assumed they were 
-   155.28s  agent 발화 끝
-   162.84s  agent 발화 시작: They largely depict court life—the Oba, his officials, warri
-   162.84s  user  발화 끝
-   174.17s  user  발화 시작: Were they displayed publicly? Like, would everyone in Benin 
-   174.17s  agent 발화 끝
-   179.84s  agent 발화 시작: Not necessarily. They were primarily displayed within the ro
-   179.84s  user  발화 끝
-   190.80s  user  발화 시작: That makes sense. A symbol of power, kept close to the sourc
-   190.80s  agent 발화 끝
-   199.49s  agent 발화 시작: A tragic story, I’m afraid. In 1897, a British punitive expe
-   199.49s  user  발화 끝
-   211.20s  user  발화 시작: That’s awful. [chuckle] It seems like that pattern repeats i
-   211.20s  agent 발화 끝
-   217.24s  agent 발화 시작: Unfortunately, it does. The pursuit of resources and politic
-   217.24s  user  발화 끝
-   226.31s  user  발화 시작: What became of the Benin Bronzes after the sacking?
-   226.31s  agent 발화 끝
-   229.71s  agent 발화 시작: Many were looted and dispersed throughout Europe, ending up 
-   229.71s  user  발화 끝
-   239.91s  user  발화 시작: Repatriation… that’s a good thing, right? Giving them back?
-   239.91s  agent 발화 끝
-   243.31s  agent 발화 시작: Absolutely. Many argue that they are an integral part of Nig
-   243.31s  user  발화 끝
-   255.40s  user  발화 시작: It sounds like it. I’m starting to see how much I *don’t* kn
-   255.40s  agent 발화 끝
-   262.58s  agent 발화 시작: It’s a vast and incredibly rich history, often overlooked. T
-   262.58s  user  발화 끝
-   274.29s  agent 발화 끝
+     0.00s  user  발화 시작: Make the text bold by clicking the bold button inside the ed
+     4.61s  agent 발화 시작: <ret> Certainly. The bold button within the editor iframe ha
+     4.61s  <ret> 발화 (turn1 첫 프레임)
+     4.61s  user  발화 끝
+     4.77s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.38s]: (button clicked: aria-label=Bold)
+     9.61s  user  발화 시작: Okay, uh, now make it italic.
+     9.61s  agent 발화 끝
+    11.92s  agent 발화 시작: <ret> Of course. The italic button inside the editor iframe 
+    11.92s  <ret> 발화 (turn3 첫 프레임)
+    11.92s  user  발화 끝
+    12.32s  ⚡SPAN 주입 [d'=0.40s / d_lead=0.77s]: (button clicked: aria-label=Italic)
+    16.92s  user  발화 시작: Good. Now, can you search for articles on the effects of sle
+    16.92s  agent 발화 끝
+    22.69s  agent 발화 시작: <ret> Absolutely. Search results show articles from NIH, Har
+    22.69s  <ret> 발화 (turn5 첫 프레임)
+    22.69s  user  발화 끝
+    23.01s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.38s]: (search results: "Sleep Deprivation and Memory Consolidation" - Nation
+    28.46s  user  발화 시작: [sigh] That's a lot to read. Is there a consensus on how muc
+    28.46s  agent 발화 끝
+    34.61s  agent 발화 시작: It's a surprisingly complex question, actually. Individual s
+    34.61s  user  발화 끝
+    39.61s  user  발화 시작: But… what’s the average?
+    39.61s  agent 발화 끝
+    41.15s  agent 발화 시작: <ret> Generally speaking… Most adults need between seven and
+    41.15s  <ret> 발화 (turn9 첫 프레임)
+    41.15s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.77s]: (average sleep duration: 7-9 hours)
+    41.15s  user  발화 끝
+    48.07s  user  발화 시작: Seven to nine… Hmm. That’s more than I usually get. I— I mea
+    48.07s  agent 발화 끝
+    54.22s  agent 발화 시작: Chronic sleep loss can have significant impacts on cognitive
+    54.22s  user  발화 끝
+    59.61s  user  발화 시작: Yeah. [happy] I wonder if there’s a sleep study I could join
+    59.61s  agent 발화 끝
+    64.61s  agent 발화 시작: <ret> I've found a couple. Somnus Sleep Center and Restful N
+    64.61s  <ret> 발화 (turn13 첫 프레임)
+    64.61s  user  발화 끝
+    65.61s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.54s]: (sleep study locations: "Somnus Sleep Center - 123 Main Street, Anytow
+    71.14s  user  발화 시작: Somnus… can you check their availability for a new participa
+    71.14s  agent 발화 끝
+    74.99s  agent 발화 시작: <ret> Let me see… Somnus Sleep Center has a new participant 
+    74.99s  <ret> 발화 (turn15 첫 프레임)
+    74.99s  user  발화 끝
+    75.15s  ⚡SPAN 주입 [d'=0.16s / d_lead=1.15s]: (availability: next available screening: December twenty-first, 2023, 
+    83.07s  user  발화 시작: Perfect. Book it for me.
+    83.07s  agent 발화 끝
+    84.99s  agent 발화 시작: <ret> Done. Your screening at Somnus Sleep Center is confirm
+    84.99s  <ret> 발화 (turn17 첫 프레임)
+    84.99s  user  발화 끝
+    85.23s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.38s]: (appointment confirmation: Somnus Sleep Center, December 21, 2023, 10:
+    93.83s  agent 발화 끝
