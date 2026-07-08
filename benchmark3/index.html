@@ -1,0 +1,212 @@
+<!doctype html><meta charset="utf-8">
+<title>Full-Duplex-Bench v3 — 문서</title>
+<script src="../gate.js"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<body style="margin:0;background:#f4f6f9;font-family:'Segoe UI',system-ui,sans-serif;color:#1c2733;line-height:1.72">
+<style>
+.wrap{max-width:900px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:30px;margin:0 0 4px}
+.lead{color:#5a6b7b;font-size:15px;margin:0 0 22px}
+.card{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:6px 26px 22px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.card>h2{font-size:21px;margin:20px 0 4px;color:#14324f}
+.card>h2 .n{display:inline-block;width:30px;height:30px;line-height:30px;text-align:center;background:#4a90d9;color:#fff;border-radius:8px;font-size:15px;margin-right:9px;vertical-align:2px}
+h3{font-size:16px;color:#2b6cb0;margin:22px 0 6px}
+p{margin:8px 0}
+figure{margin:16px 0;text-align:center}figure img{max-width:100%;border:1px solid #e3e8ee;border-radius:10px}
+figcaption{color:#8a97a5;font-size:12.5px;margin-top:6px}
+.task{border:1px solid #e3e8ee;border-left:4px solid #4a90d9;border-radius:10px;padding:12px 16px;margin:14px 0;background:#fbfdff}
+.task .t{font-size:16px;font-weight:700;color:#14324f}
+.task .q{color:#6a7a89;font-size:13px;font-weight:400}
+.row{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0}
+.row>div{flex:1;min-width:210px}
+.lbl{font-size:11.5px;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:.3px}
+.ok{background:#eaf7ee;border-radius:8px;padding:6px 11px;margin:6px 0;font-size:13px;color:#1a7f37}
+.ok b{color:#12692c}
+.no{color:#c0392b;font-weight:600}
+.data{background:#f3f0e7;border:1px dashed #c9b992;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:12.5px;font-family:'SF Mono',Consolas,monospace;white-space:pre-wrap}
+.au{margin:8px 0}.au audio{width:100%;margin-top:5px}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:12px 0}
+th,td{border:1px solid #e3e8ee;padding:7px 10px;text-align:left}
+th{background:#eef4fb;color:#14324f}td.c,th.c{text-align:center}
+tbody tr:nth-child(even){background:#fafbfc}
+.best{background:#e6f4ea!important;font-weight:700}
+.pill{display:inline-block;background:#eef4fb;color:#2b6cb0;border-radius:20px;padding:2px 11px;font-size:12px;font-weight:600;margin:2px 4px 2px 0}
+.box{background:#f2f7fd;border-left:4px solid #4a90d9;border-radius:8px;padding:11px 16px;margin:14px 0;font-size:13.5px}
+code{background:#eef1f4;padding:1px 5px;border-radius:4px;font-size:12.5px}
+.eq{overflow-x:auto}
+.mini{color:#8a97a5;font-size:12.5px}
+</style>
+<div class="wrap">
+
+<h1>Full-Duplex-Bench v3</h1>
+<p class="lead">(2026) · arXiv:2604.04847 — 실제 사용자의 <b>disfluency</b>(더듬거림) 속에서도 모델이 견고하게 올바른
+<b>tool</b>을 호출하는가를 측정하는 벤치마크. 핵심 질문은 “사용자 발화가 filler·pause·hesitation·false start·self-correction으로
+지저분해져도, 모델은 흔들리지 않고 정확한 tool orchestration을 유지하는가”다. 이 문서는 단독으로 읽을 수 있도록
+동기·지표 수식·자극·데이터·한계를 모두 담는다.</p>
+<div class="box"><b>음원 안내.</b> 관련 카드에는 우리가 생성한 대화 음원이 붙어 있다.
+모두 <b>스테레오</b>이며 <b>왼쪽 채널 = moshi, 오른쪽 채널 = 사용자</b>다. 플레이어는 해당 현상이 나타나는 지점부터 재생된다.</div>
+
+<div class="card">
+<h2><span class="n">0</span>왜 disfluency + tool인가</h2>
+<p>기존 tool-use 벤치마크는 <b>깨끗하게 정제된 지시문</b>을 전제한다 — “샌프란시스코행 항공편을 찾아줘” 같은 완결된 명령.
+그러나 실제 음성 사용자는 그렇게 말하지 않는다. 실사용자는 <b>더듬는다</b>: “음… 샌프란— 아니, 시카고로 가는 항공편…
+잠깐, 편도로.” 발화는 filler로 시작하고, 문장 중간에 멈추며(pause), 같은 말을 반복하고(hesitation),
+의도를 철회했다가(false start), 파라미터를 도중에 갈아치운다(self-correction).</p>
+<p>진짜 난제는 <b>그 잡음 속에서 정확한 tool orchestration을 유지하는 것</b>이다. 모델은 무효가 된 문맥을 버리되
+없는 tool을 지어내선 안 되고(hallucinated tool call 금지), 갱신된 파라미터로 상태를 되감아야(state rollback) 하며,
+사용자가 멈칫하는 동안 성급히 잘못된 호출을 던져선 안 된다.</p>
+<div class="box"><b>설계의 핵심 비대칭.</b> disfluency는 <b>오직 사용자 쪽</b>에서만 발생한다 —
+<span class="pill">사용자는 더듬어도 된다 (ROBUST 대상)</span>
+<span class="pill">모델은 매끄러워야 한다 (FLUENT 요구)</span>
+모델이 스스로 내용 없는 filler(“음…”, “어…”)를 내면 <b>PENALTY</b>다. filler는 자극(사용자)의 속성이지 응답(모델)의 속성이 아니다.
+이 비대칭 — 입력은 지저분해도 되지만 출력은 깨끗해야 한다 — 이 v3 평가의 뼈대다.</div>
+</div>
+
+<div class="card">
+<h2><span class="n">1</span>지표 — Tool Selection F1 · Arg Accuracy · Pass@1</h2>
+<p>tool orchestration은 <b>chained</b>이다: 한 사용자 요구가 여러 tool의 연쇄 호출로 이어질 수 있다. 각 평가 사례마다
+기대되는 tool 집합 \(T^\*\)와 모델이 실제로 부른 tool 집합 \(\hat T\)를 비교한다. <b>Tool Selection F1</b>은 정밀도·재현율의 조화평균:</p>
+<div class="eq">$$ \mathrm{P}=\frac{|\hat T\cap T^\*|}{|\hat T|},\qquad \mathrm{R}=\frac{|\hat T\cap T^\*|}{|T^\*|},\qquad \mathrm{F1}=\frac{2\,\mathrm{P}\,\mathrm{R}}{\mathrm{P}+\mathrm{R}} $$</div>
+<p>tool을 맞게 골랐더라도 <b>인자(argument)</b>가 틀리면 소용없다. <b>Arg Accuracy</b>는 각 호출의 인자 묶음을 기대값과 대조해
+GPT-4o가 채점한다(값 정합·타입·정규화 반영):</p>
+<div class="eq">$$ \mathrm{ArgAcc}=\frac{1}{|C|}\sum_{c\in C}\mathbb{1}\!\left[\text{GPT-4o가 호출 }c\text{의 인자를 기대값과 일치로 판정}\right] $$</div>
+<p>가장 엄격한 통합 지표는 <b>Pass@1</b>이다. 단 한 번의 시도에서 <b>기대한 tool들을 정확히 그 집합대로</b> 부르고
+<b>모든 인자가 완벽</b>해야만 통과한다 — 부분 점수 없음:</p>
+<div class="eq">$$ \mathrm{Pass@1}=\mathbb{1}\!\left[\hat T=T^\* \;\wedge\; \forall c\in C:\ \mathrm{args}(c)=\mathrm{args}^\*(c)\right] $$</div>
+<p>여기에 <b>Response Quality</b>(GPT-4o \([0,5]\), 사용자에게 돌려주는 자연어 응답의 관련성·일관성·적응성)를 병행한다.</p>
+
+<h3>대화 타이밍 보조 지표</h3>
+<p>tool 정확도와 별개로 full-duplex 상호작용의 타이밍도 측정한다. <b>turn-take rate</b>(응답 기회에서 실제 발언권을 잡은 비율),
+<b>interruption</b>(모델 발화 onset이 사용자 발화 offset보다 이른 경우 — 성급한 끼어듦), 그리고 세 종류의 <b>latency</b>:</p>
+<div class="eq">$$ \mathrm{Latency}_{\text{first}}=t^{\text{model}}_{\text{on}}-t^{\text{user}}_{\text{off}},\quad \mathrm{Latency}_{\text{tool}}=t^{\text{tool-call}}-t^{\text{user}}_{\text{off}},\quad \mathrm{Latency}_{\text{task}}=t^{\text{task-done}}-t^{\text{user}}_{\text{off}} $$</div>
+<p><b>first</b>는 첫 자연어 반응까지, <b>tool</b>은 첫 tool 호출 발화까지, <b>task</b>는 연쇄 전체가 완료돼 최종 응답이 나올 때까지의 지연이다.</p>
+
+<h3>Filler rate — 모델 filler는 감점</h3>
+<p>사용자 쪽 filler는 자극이지만, <b>모델이 내용 없는 filler를 산출하면 PENALTY</b>다. Filler rate는 모델 발화 중
+의미 없는 채움말(“um”, “uh”, “음…”, 무내용 지연발화)이 차지하는 비율로, 낮을수록 좋다:</p>
+<div class="eq">$$ \mathrm{FillerRate}=\frac{\#\{\text{모델의 무내용 filler 토큰}\}}{\#\{\text{모델 발화 토큰}\}}\ \downarrow $$</div>
+<div class="box"><b>비대칭 재확인.</b> 같은 “um/uh”라도 <b>사용자 채널에 있으면 robustness를 시험하는 자극</b>이고,
+<b>모델 채널에 있으면 fluency를 깨는 감점 요인</b>이다. 모델은 사용자가 더듬는 만큼 더 침착하고 매끄럽게 응답해야 한다.</div>
+</div>
+
+<div class="card">
+<h2><span class="n">2</span>5가지 disfluency × 4 domains</h2>
+<div class="box"><b>음원 안내.</b> 아래 일부 disfluency 카드에는 대화 음원이 붙어 있다. 모두 <b>스테레오</b>,
+<b>L=moshi / R=사용자</b>이며, 해당 현상이 나타나는 지점부터 재생된다. 데이터 예시에서 확인할 점: <b>사용자 턴은 더듬지만
+moshi 턴에는 무내용 filler가 없다</b> — 모델은 침착하게 정확한 tool을 부른다.</div>
+
+<p>다섯 disfluency는 모두 <b>사용자 발화 쪽</b>의 현상이며, 모델은 각각에 대해 견고(ROBUST)해야 한다.</p>
+
+<div class="task">
+<div class="t">① Filler <span class="q">— um/uh 채움말 속에서 의도를 붙잡는가</span></div>
+<div class="row">
+<div><span class="lbl">자극</span><br>사용자 발화 곳곳에 내용 없는 채움말(“um”, “uh”, “그…”)을 삽입. 실제 지시 내용은 그대로지만 표면이 지저분해진다.</div>
+<div><span class="lbl">모델 정답 행동</span><br>filler를 무시하고 <b>핵심 의도만 추출</b>해 올바른 tool을 정확한 인자로 호출. 사용자의 filler에 끌려 자기도 filler를 내면 감점.</div>
+</div>
+<div class="ok">filler를 신호가 아닌 잡음으로 처리, 깨끗한 tool 호출. <span class="no">✗ 모델이 “um…” 하고 무내용 filler를 되돌려주거나 의도를 놓침 = 실패.</span></div>
+<span class="lbl">우리 데이터</span> — 사용자 턴에만 채움말, moshi 턴은 filler 없이 곧장 tool 호출:
+<div class="data">[사용자] 어, 그… 샌프란시스코로 가는 항공편을 um 좀 찾아줄래요?
+[moshi ] (filler 없이) 네, 샌프란시스코행 항공편을 찾아볼게요. &lt;search_flights dest="SFO"&gt;</div>
+</div>
+
+<div class="task">
+<div class="t">② Pause <span class="q">— 문장 중간 침묵에 성급히 끼어들지 않는가</span></div>
+<div class="row">
+<div><span class="lbl">자극</span><br>사용자가 문장을 완성하기 전 <b>중간에 멈춘다</b>(생각·한숨). 발화 내부 침묵은 발언권 넘김 지점이 아니다.</div>
+<div><span class="lbl">모델 정답 행동</span><br>사용자가 문장을 마칠 때까지 <b>기다린다</b>. 침묵을 “내 차례”로 오독해 성급히 잘못된 tool을 부르거나 끼어들면 실패.</div>
+</div>
+<div class="ok">침묵 유지, 사용자 발화 완결 후 호출. <span class="no">✗ 침묵 구간에서 조급한 tool 호출 / interruption = 실패.</span></div>
+<span class="lbl">우리 데이터</span> — 문장 중간 침묵 뒤 완결되는 요구:
+<div class="data">[사용자] 그 예약을 [sigh] That's a long time… (침묵) …아무튼 다음 주 화요일로 바꿔줘요.
+[moshi ] (침묵 동안 대기 → 완결 후) 네, 화요일로 변경할게요. &lt;update_booking date="..."&gt;</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:46</b> — 사용자가 “[sigh] That's a long time…” 하며 문장 중간에 멈추지만 moshi는 성급히 끼어들거나 잘못된 호출을 하지 않는다.</span>
+<audio controls preload="metadata" data-start="46" src="../audio/00_v3_mcp_00_en.ogg#t=46" onloadedmetadata="if(this.currentTime<46-1)this.currentTime=46"></audio></div>
+</div>
+
+<div class="task">
+<div class="t">③ Hesitation <span class="q">— filler + 반복의 이중 잡음을 뚫는가</span></div>
+<div class="row">
+<div><span class="lbl">자극</span><br>filler와 <b>단어·구 반복</b>이 겹친다(“to— to the, uh, the airport”). Filler만 있을 때보다 표면이 더 지저분하다.</div>
+<div><span class="lbl">모델 정답 행동</span><br>반복·채움말을 걷어내고 <b>단일한 의도</b>로 정규화해 호출. 반복된 단어를 중복 인자로 오해하지 않는다.</div>
+</div>
+<div class="ok">중복·filler 정규화 후 정확한 단일 호출. <span class="no">✗ 반복에 휘말려 중복/잘못된 인자 = 실패.</span></div>
+<span class="lbl">우리 데이터</span> — filler와 반복이 동시에, moshi는 깨끗하게 정규화:
+<div class="data">[사용자] to— uh, to Penn Station, Penn— the Penn Station 쪽으로요.
+[moshi ] (정규화) 펜 스테이션으로 안내할게요. &lt;route dest="Penn Station"&gt;</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:08</b> — 사용자가 “to— uh, no, actually to Penn Station”으로 더듬고 반복하지만 moshi는 잘못된 tool 없이 갱신된 목적지로 처리한다.</span>
+<audio controls preload="metadata" data-start="8" src="../audio/07_v3_selfc_07_en.ogg#t=8" onloadedmetadata="if(this.currentTime<8-1)this.currentTime=8"></audio></div>
+</div>
+
+<div class="task">
+<div class="t">④ False Start <span class="q">— 철회된 의도를 버리되 지어내지 않는가</span></div>
+<div class="row">
+<div><span class="lbl">자극</span><br>사용자가 한 의도를 꺼냈다가 <b>철회하고 다른 의도로 전환</b>(“호텔을— 아니, 항공편을 찾아줘”). 앞 문맥은 무효.</div>
+<div><span class="lbl">모델 정답 행동</span><br><b>무효 문맥을 버리되</b>, 철회된 의도에 맞춰 없는 tool을 지어내선 안 된다(<b>hallucinated tool call 금지</b>). 오직 최종 의도만 호출.</div>
+</div>
+<div class="ok">철회 전 의도 폐기, 최종 의도만 정확히 호출. <span class="no">✗ 버려진 의도로 tool 호출 / 존재하지 않는 tool hallucination = 실패.</span></div>
+<span class="lbl">우리 데이터</span> — 앞 의도 철회 후 새 의도, moshi는 최종 의도만:
+<div class="data">[사용자] 호텔을 예약— 아니, 잠깐, 그냥 항공편만 찾아줘요.
+[moshi ] (호텔 문맥 폐기) 네, 항공편만 찾아볼게요. &lt;search_flights ...&gt;  # book_hotel 호출 안 함</div>
+</div>
+
+<div class="task">
+<div class="t">⑤ Self-Correction <span class="q">— 문장 중간 파라미터 갱신에 state를 되감는가</span></div>
+<div class="row">
+<div><span class="lbl">자극</span><br>사용자가 문장 중간에 <b>파라미터를 갱신</b>(“화요일로— 아니 수요일로”). 앞의 값은 뒤의 값으로 덮어써져야 한다.</div>
+<div><span class="lbl">모델 정답 행동</span><br><b>동적 state rollback</b>: 이미 형성한 인자를 갱신값으로 되감아 호출. 옛 값으로 부르거나 두 값을 모두 넣으면 실패.</div>
+</div>
+<div class="ok">갱신값으로 인자 되감기 후 정확히 호출. <span class="no">✗ 철회된 옛 값으로 호출 / 중복 인자 = 실패.</span></div>
+<span class="lbl">우리 데이터</span> — 목적지를 문장 중간에 갱신, moshi는 갱신값에 바인딩:
+<div class="data">[사용자] 그랜드 센트럴로— 어, 아니 Penn Station으로 가는 걸로 해줘요.
+[moshi ] (state rollback) 펜 스테이션으로 처리할게요. &lt;route dest="Penn Station"&gt;  # "Grand Central" 폐기</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:08</b> — 사용자가 “to— uh, no, actually to Penn Station”으로 목적지를 정정하고, moshi는 잘못된 tool을 부르지 않고 갱신된 목적지로 처리한다(state rollback).</span>
+<audio controls preload="metadata" data-start="8" src="../audio/07_v3_selfc_07_en.ogg#t=8" onloadedmetadata="if(this.currentTime<8-1)this.currentTime=8"></audio></div>
+</div>
+
+<h3>Chained tools — Pass@1 음원</h3>
+<p>한 발화가 두 개 이상의 tool 연쇄로 이어질 때, <b>정확히 그 tool들을 완벽한 인자로</b> 불러야 Pass@1을 통과한다.</p>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:12</b> — “Add those headphones to my cart AND find a bus to Atlanta”로 두 tool(장바구니 추가 + 버스 검색)을 정확한 인자로 연쇄 호출한다.</span>
+<audio controls preload="metadata" data-start="12" src="../audio/03_v3_chain_03_en.ogg#t=12" onloadedmetadata="if(this.currentTime<12-1)this.currentTime=12"></audio></div>
+
+<h3>Deferred / async tool result — 지연 결과 선제 발표</h3>
+<p>tool 결과가 즉시 오지 않고 <b>늦게 도착</b>할 수 있다. 모델은 결과가 돌아오는 순간 대화를 자연스럽게 이어 <b>선제적으로 발표</b>해야 한다.</p>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:33</b> — salon 조회 결과가 늦게 도착하자 moshi가 “Oh — that just came back for you!”로 선제적으로 알린다.</span>
+<audio controls preload="metadata" data-start="33" src="../audio/05_v3_defer_05_en.ogg#t=33" onloadedmetadata="if(this.currentTime<33-1)this.currentTime=33"></audio></div>
+
+<h3>4 domains</h3>
+<p>자극은 네 개의 tool 도메인에 걸쳐 구성되며, 각 도메인은 고유한 tool 세트와 파라미터 공간을 가진다.</p>
+<table>
+<thead><tr><th>도메인</th><th>대표 tool</th><th>파라미터 예시</th></tr></thead>
+<tbody>
+<tr><td><b>Travel &amp; Identity</b></td><td>항공편 검색·예약, 프로필 조회/수정</td><td>출발/도착지, 날짜, 편도/왕복, 승객 신원</td></tr>
+<tr><td><b>Finance &amp; Billing</b></td><td>카드 조회, 환율, 자동납부 설정</td><td>카드 식별자, 통화쌍, 납부일·금액</td></tr>
+<tr><td><b>Housing &amp; Location</b></td><td>아파트 검색, 필터 적용, 위치 조회</td><td>지역, 가격·평수 필터, 목적지 좌표</td></tr>
+<tr><td><b>E-Commerce</b></td><td>주문, 장바구니, 교환/반품</td><td>상품 ID, 수량, 교환 사유</td></tr>
+</tbody>
+</table>
+<div class="box"><b>disfluency × domain.</b> 다섯 disfluency는 네 도메인 위에서 교차 샘플링된다. 예컨대 self-correction이
+Travel 도메인이면 “목적지 갱신”, Finance면 “납부금액 갱신”, E-Commerce면 “수량 갱신”으로 나타난다 —
+같은 robustness 시험이 도메인별 파라미터 공간에서 반복된다.</div>
+</div>
+
+<div class="card">
+<h2><span class="n">3</span>한계 · 평가 대상</h2>
+<p>① <b>점수 표는 싣지 않는다.</b> 본 문서는 벤치마크의 <b>설계·자극·지표 정의</b>를 서술한다. 검증되지 않은 모델별 수치를
+날조해 표로 제시하지 않는다 — 실제 채점 결과가 확보되기 전까지는 정성적으로만 서술한다.</p>
+<p>② <b>Arg Accuracy·Response Quality의 심판이 GPT-4o.</b> 인자 정합·응답 품질 채점을 LLM 심판에 의존하므로, 심판의
+편향·일관성이 곧 지표의 상한이다. Tool Selection F1·Pass@1은 집합/문자열 대조라 결정적이지만, 인자 정규화(동의어·표기 변형)
+판정에는 여전히 주관이 개입한다.</p>
+<p>③ <b>disfluency의 인위성.</b> filler·pause·hesitation·false start·self-correction은 통제된 규칙으로 삽입한 합성 자극이다.
+실제 사용자의 더듬거림 분포와 완전히 일치하지 않을 수 있으며, 실사용 로그 기반 검증이 후속 과제다.</p>
+<p>④ <b>모델 fluency 판정의 경계.</b> “모델 filler는 감점”이라는 규칙은 명확하지만, 자연스러운 담화 표지(“네”, “알겠습니다”)와
+무내용 filler(“음…”)의 경계가 항상 또렷하진 않다. Filler rate 집계 시 이 경계 정의가 결과를 좌우한다.</p>
+<div class="box"><b>요약.</b> v3의 기여는 “깨끗한 지시문” 가정을 깨고 <b>실사용자 disfluency 하의 tool orchestration robustness</b>를
+분리 측정한다는 점이다 — 사용자는 더듬어도 되고, 모델은 매끄러워야 한다는 비대칭을 지표(Filler rate penalty)와
+자극 설계 양쪽에 심었다.</div>
+</div>
+
+</div>
+
+<script>/*DATASTART_HELPER*/document.addEventListener("play",function(e){var a=e.target;if(a.tagName==="AUDIO"&&a.dataset.start&&!a._jumped){a._jumped=1;a.currentTime=+a.dataset.start;}},true);</script>

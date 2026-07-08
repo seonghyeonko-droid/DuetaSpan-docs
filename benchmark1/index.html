@@ -1,0 +1,207 @@
+<!doctype html><meta charset="utf-8">
+<title>Full-Duplex-Bench v1 — 문서</title>
+<script src="../gate.js"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<body style="margin:0;background:#f4f6f9;font-family:'Segoe UI',system-ui,sans-serif;color:#1c2733;line-height:1.72">
+<style>
+.wrap{max-width:900px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:30px;margin:0 0 4px}
+.lead{color:#5a6b7b;font-size:15px;margin:0 0 22px}
+.card{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:6px 26px 22px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.card>h2{font-size:21px;margin:20px 0 4px;color:#14324f}
+.card>h2 .n{display:inline-block;width:30px;height:30px;line-height:30px;text-align:center;background:#4a90d9;color:#fff;border-radius:8px;font-size:15px;margin-right:9px;vertical-align:2px}
+h3{font-size:16px;color:#2b6cb0;margin:22px 0 6px}
+p{margin:8px 0}
+figure{margin:16px 0;text-align:center}figure img{max-width:100%;border:1px solid #e3e8ee;border-radius:10px}
+figcaption{color:#8a97a5;font-size:12.5px;margin-top:6px}
+.task{border:1px solid #e3e8ee;border-left:4px solid #4a90d9;border-radius:10px;padding:12px 16px;margin:14px 0;background:#fbfdff}
+.task .t{font-size:16px;font-weight:700;color:#14324f}
+.task .q{color:#6a7a89;font-size:13px;font-weight:400}
+.row{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0}
+.row>div{flex:1;min-width:210px}
+.lbl{font-size:11.5px;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:.3px}
+.ok{background:#eaf7ee;border-radius:8px;padding:6px 11px;margin:6px 0;font-size:13px;color:#1a7f37}
+.ok b{color:#12692c}
+.no{color:#c0392b;font-weight:600}
+.data{background:#f3f0e7;border:1px dashed #c9b992;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:12.5px;font-family:'SF Mono',Consolas,monospace;white-space:pre-wrap}
+.au{margin:8px 0}.au audio{width:100%;margin-top:5px}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:12px 0}
+th,td{border:1px solid #e3e8ee;padding:7px 10px;text-align:left}
+th{background:#eef4fb;color:#14324f}td.c,th.c{text-align:center}
+tbody tr:nth-child(even){background:#fafbfc}
+.best{background:#e6f4ea!important;font-weight:700}
+.pill{display:inline-block;background:#eef4fb;color:#2b6cb0;border-radius:20px;padding:2px 11px;font-size:12px;font-weight:600;margin:2px 4px 2px 0}
+.box{background:#f2f7fd;border-left:4px solid #4a90d9;border-radius:8px;padding:11px 16px;margin:14px 0;font-size:13.5px}
+code{background:#eef1f4;padding:1px 5px;border-radius:4px;font-size:12.5px}
+.eq{overflow-x:auto}
+.mini{color:#8a97a5;font-size:12.5px}
+</style>
+<div class="wrap">
+
+<h1>Full-Duplex-Bench v1</h1>
+<p class="lead">Lin, Chiang, Yang 외 (2025) · arXiv:2503.04721 — 사람 청취 평가 없이 <b>재현 가능한 자동 지표</b>만으로
+full-duplex 음성대화 모델의 대화 주고받기(turn-taking) 4역량을 분리 측정하는 벤치마크. 이 문서는 단독으로 읽을 수 있도록
+개요·지표 수식·과제·실험 결과·분석·한계를 모두 담는다.</p>
+<div class="box"><b>음원 안내.</b> 아래 각 과제 카드에는 우리가 생성한 대화 음원이 하나씩 붙어 있다.
+모두 <b>스테레오</b>이며 <b>왼쪽 채널 = moshi, 오른쪽 채널 = 사용자</b>다. 플레이어는 해당 현상이 나타나는 지점부터 재생된다.</div>
+
+<div class="card">
+<h2><span class="n">0</span>왜 full-duplex를 따로 평가하나</h2>
+<p>기존 음성대화 모델은 “한 쪽이 말을 끝내면 다른 쪽이 시작한다”는 <b>half-duplex</b> 가정에 묶여 있다. 그러나 실제 대화는
+<b>full-duplex</b>다 — 두 화자의 채널이 동시에 살아 있어 겹쳐 말하기(overlap), 맞장구(backchannel), 빈틈 없는 발언권 전환,
+말 끊고 들어오기(interruption)가 상시 일어난다. 기존 평가는 대부분 응답의 <b>내용 품질</b>만 보고 <b>상호작용의 타이밍</b>을 무시했다.</p>
+<div class="box"><b>설계의 뼈대.</b> full-duplex의 실패는 결국 두 가지다 —
+<span class="pill">가져오면 안 될 때 가져옴 (false takeover)</span>
+<span class="pill">가져와야 할 때 못 가져옴 (missed turn-take)</span>
+그래서 하나의 원자 사건 <b>Takeover</b>를 정의하고, 과제마다 <b>목표 방향만 뒤집는다</b>. 이 대칭성이 v1 설계의 핵심.</div>
+<figure><img src="fdb_v1.png" alt="FDB-v1 네 차원"><figcaption>Fig 1 — 4개 상호작용 차원 (논문 Figure 1)</figcaption></figure>
+</div>
+
+<div class="card">
+<h2><span class="n">1</span>공통 원자 지표 — Takeover(TO)와 TOR</h2>
+<p>평가 시점 \(i\)마다 모델 채널의 반응을 이진 판정한다. 침묵하거나 backchannel만 내면 0, 그 외(발언권 탈취)면 1:</p>
+<div class="eq">$$ \mathrm{TO}_i=\begin{cases}0,&\text{침묵 또는 backchannel}\\[2pt]1,&\text{그 외 (= floor takeover)}\end{cases}\qquad \mathrm{TOR}=\frac1N\sum_{i=1}^N \mathrm{TO}_i $$</div>
+<p>여기서 <b>backchannel</b>은 다음을 동시에 만족하는 짧은 청자 신호로 엄격히 정의되어 \(\mathrm{TO}=0\)으로 집계된다.</p>
+<div class="eq">$$ \text{지속시간} < 1\,\text{s} \;\wedge\; \text{단어수} < 2 $$</div>
+<p>보조 지표도 여기서 정의한다. <b>응답 지연</b>은 사용자 발화 종료→모델 발화 시작 시간(TO=1 표본만), <b>빈도</b>는 발화 duration으로 정규화한 초당 backchannel 수(TOR=0일 때만), <b>JSD</b>는 모델의 맞장구 타이밍 분포 \(P\)와 인간 주석 분포 \(Q\)의 대칭 발산이다 (0=완전 일치, 1=완전 어긋남):</p>
+<div class="eq">$$ \mathrm{Latency}=t^{\text{model}}_{\text{on}}-t^{\text{user}}_{\text{off}},\qquad \mathrm{Freq}=\frac{\#\{\text{backchannel events}\}}{D} $$</div>
+<div class="eq">$$ \mathrm{JSD}(P\,\|\,Q)=\tfrac12\sum_i P(i)\log\frac{P(i)}{M(i)}+\tfrac12\sum_i Q(i)\log\frac{Q(i)}{M(i)},\qquad M=\tfrac12(P+Q) $$</div>
+<div class="box">4개 과제 전부가 이 하나의 TO 위에 세워진다. 과제 ①② 는 <b>\(\mathrm{TOR}\downarrow 0\)</b>(안 가져와야 함),
+③④ 는 <b>\(\mathrm{TOR}\uparrow 1\)</b>(가져와야 함)로 <b>목표 방향만 반전</b>된다. 보조 지표는 신속성(Latency)·활동성(Freq)·인간정합(JSD)·내용(GPT-4o).</div>
+</div>
+
+<div class="card">
+<h2><span class="n">2</span>네 과제 — 자극 · 지표 · 정답 조건 · 우리 데이터 · 음원</h2>
+
+<div class="task">
+<div class="t">① Pause Handling <span class="q">— 화자가 아직 발언권을 쥐고 있음을 아는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>CANDOR(850시간, 2채널 실대화)에서 발화 <b>내부 침묵 0.4–1.0초</b> 구간 <b>216개</b>
++ ChatTTS <code>[uv_break]</code> 합성 <b>137개</b>. 근거: 영어 대화에서 약 1초가 자연스러운 침묵의 지각적 상한.</div>
+<div><span class="lbl">지표 · 목표</span><br>\(\mathrm{TOR}\downarrow\) (이상값 0). 발화 내부 침묵은 발언권 넘김 지점(TRP)이 아니다 —
+여기서 말을 시작하면 “침묵 = 내 차례”라는 잘못된 규칙을 쓴다는 직접 증거.</div>
+</div>
+<div class="ok">침묵을 유지하거나 <b>&lt;1초·&lt;2단어</b> backchannel만. <span class="no">✗ 침묵 구간에 발화 시작 = false takeover.</span></div>
+<span class="lbl">우리 데이터</span> — 사용자 턴 안에 머뭇거림을 넣고 그동안 agent는 침묵/backchannel만:
+<div class="data">[사용자] 어, 비행기를 좀 알아보는데— 아니, 시카고로 가는 걸로 할게요…
+[moshi ] (사용자 발화가 끝날 때까지 침묵 → 종료 후 응답)</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:22</b> — 사용자가 “So, Abdulqawi Yusuf…” 하고 말끝을 흐리며 멈추는 동안 moshi가 곧장 끼어들지 않고 기다렸다가 응답한다. <b>(주의: 현행 데이터는 발화 내부 침묵이 짧아, 진짜 turn-internal pause 세트는 CPU 재조립으로 재생성 중.)</b></span>
+<audio controls preload="metadata" data-start="22" src="../audio/20_v3_rag_24_en.ogg#t=22" onloadedmetadata="if(this.currentTime<22-1)this.currentTime=22"></audio></div>
+</div>
+
+<div class="task">
+<div class="t">② Backchanneling <span class="q">— 발언권을 뺏지 않고 사람처럼 맞장구치는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>ICC(28.33분 미국영어 비격식 대화). 원어민 <b>59명</b>이 TRP마다 맞장구 시점을 주석한 <b>55개</b> —
+인간 타이밍 정답 분포가 존재해 JSD 계산 가능.</div>
+<div><span class="lbl">지표 · 목표 (3종)</span><br>\(\mathrm{TOR}\downarrow\) · 빈도 \(\mathrm{Freq}=\#\text{events}/D\uparrow\)
+(TOR=0일 때만) · 인간 분포와의 발산 \(\mathrm{JSD}\downarrow\).</div>
+</div>
+<div class="eq">$$ \mathrm{JSD}(P\,\|\,Q)=\tfrac12\sum_i P(i)\log\frac{P(i)}{M(i)}+\tfrac12\sum_i Q(i)\log\frac{Q(i)}{M(i)},\quad M=\tfrac12(P+Q) $$</div>
+<p class="mini">모델의 맞장구 타이밍 분포 \(P\)(200ms 창)와 인간 주석 분포 \(Q\)의 대칭 발산. 셋이 모두 필요한 이유:
+TOR만→무반응 만점 → Freq가 활동성 강제 → 그것만→남발 가능 → JSD가 사람 시점 정합 강제.</p>
+<div class="ok">사람이 맞장구치는 시점에, 발언권 이동 없이 짧은 신호. <span class="no">✗ 발언권 탈취 또는 완전 침묵(Freq=0) = 실패.</span></div>
+<span class="lbl">우리 데이터</span> — CANDOR 빈도 가중 샘플, 상대 발화의 유성 구간 30–80% 지점에 실제 겹침:
+<div class="data">[moshi ] Nassau has some excellent snorkeling locations. The coral reefs just off…
+[사용자] «맞장구, 상대 발화 위 겹침» 음-흠.</div>
+<div class="box">⚠ <b>유효한 backchannel 음원 미생성.</b> 현행 데이터의 backchannel은 상대 발화 위에 실제로 겹치지 않고 턴 경계·발화 끝에 놓여 있어(전 데이터셋에서 대화 중반의 겹침 backchannel 0건), 이 과제를 대표할 음원이 없다. 발화 중 겹침 backchannel 세트는 CPU 재조립으로 재생성 예정.</div>
+</div>
+
+<div class="task">
+<div class="t">③ Smooth Turn-Taking <span class="q">— 발화 종료를 감지해 낮은 지연으로 응답하는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>CANDOR에서 <b>발화 간 간격 &lt; 0.4초</b>(인간 규범 200–250ms), 겹침 없음,
+각 발화 &gt; 4초 조건으로 필터한 <b>119개</b>. 뒤에 5초 무음을 붙여 응답 기회를 표준화.</div>
+<div><span class="lbl">지표 · 목표</span><br>\(\mathrm{TOR}\uparrow\) (이상값 1) · 응답 지연
+\(\mathrm{Latency}=t^{\text{model}}_{\text{on}}-t^{\text{user}}_{\text{off}}\downarrow\) (TO=1 표본만). 정답이 “가져와라”이므로 TOR 방향이 ①②와 반대.</div>
+</div>
+<div class="ok">발화 종료 직후 신속히 응답. <span class="no">✗ 너무 늦음 = 어색한 침묵 / 너무 이름 = 끼어듦.</span></div>
+<span class="lbl">우리 데이터</span> — 행동 조건부 전환 타이밍(질문→답변 중앙값 약 0.18초, 로그정규 분포, 거절·정정은 겹치지 않음):
+<div class="data">[사용자] 지금 파리 날씨는 어때요?
+[moshi ] (+0.18초) &lt;ret&gt; 네, 파리는 지금 섭씨 12도에 약간 흐려요…</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 1:43</b> — 사용자의 “What’s the weather like there today?”가 끝나자마자 지연 없이 moshi가 답을 시작한다.</span>
+<audio controls preload="metadata" data-start="103" src="../audio/02_v3_mcp_02_en.ogg#t=103" onloadedmetadata="if(this.currentTime<103-1)this.currentTime=103"></audio></div>
+</div>
+
+<div class="task">
+<div class="t">④ User Interruption <span class="q">— 끼어들기를 감지하고 일관되게 적응하는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>GPT-4o 대본 + ChatTTS 10화자 <b>200개</b>. 끼어드는 발화를 선행 발화 <b>약 7초 지점</b>에 재생해
+“모델이 한창 말하는 중”을 표준화.</div>
+<div><span class="lbl">지표 · 목표</span><br>\(\mathrm{TOR}\uparrow\) · \(\mathrm{Latency}\downarrow\) · 내용 점수 GPT-4o \([0,5]\uparrow\)(일관성·관련성·적응성).</div>
+</div>
+<p class="mini">두 축이 모두 필요: <b>타이밍 축</b>만 보면 “빨리 아무말”을, <b>내용 축</b>만 보면 사용자를 깔아뭉개고 계속 말하는 모델을 못 거른다.</p>
+<div class="ok">즉시 양보하고 새 요구에 맞는 응답. <span class="no">✗ 무시하고 계속 말함 / 빠르지만 동문서답 = 실패.</span></div>
+<span class="lbl">우리 데이터</span> — <b>단방향</b>(사용자만 moshi를 끊는다), moshi 턴을 하이픈으로 절단하고 사용자 턴이 상대 유성 종료 0.45초 전에 겹쳐 든 뒤 적응:
+<div class="data">[moshi ] «끊김» 그가 말하길, 그 느낌이 너무 강렬해서—
+[사용자] «끼어듦» 잠깐만요. 지금 오아하카 시티 날씨는 어때요?
+[moshi ] (불평 없이 새 요구에 즉시 적응 → 근거 기반 응답)</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:24</b> — moshi가 “…responsible for many things, real—” 하고 말하는 중간을 사용자가 끊고 “그럼 그게 손상되면 어떻게 되죠?”라는 <b>새 질문</b>을 던진다.</span>
+<audio controls preload="metadata" data-start="24" src="../audio/13_v3_inter_13_en.ogg#t=24" onloadedmetadata="if(this.currentTime<24-1)this.currentTime=24"></audio></div>
+</div>
+
+<div class="box"><b>목표 방향 요약.</b>
+<span class="pill">① Pause: TOR↓</span>
+<span class="pill">② Backchannel: TOR↓ · Freq↑ · JSD↓</span>
+<span class="pill">③ Turn-Taking: TOR↑ · Latency↓</span>
+<span class="pill">④ Interruption: TOR↑ · Latency↓ · GPT-4o↑</span></div>
+</div>
+
+<div class="card">
+<h2><span class="n">3</span>실험 — 평가한 모델 4종</h2>
+<table>
+<thead><tr><th>모델</th><th>유형</th><th>아키텍처 요점</th></tr></thead>
+<tbody>
+<tr><td><b>dGSLM</b></td><td>end-to-end · textless</td><td>HuBERT+k-means 인코더 → 2채널 dual-tower Transformer → HiFi-GAN 디코더. 전화통화 2,000시간 학습.</td></tr>
+<tr><td><b>Moshi</b></td><td>end-to-end</td><td>7B 언어모델(Helium) + 신경 코덱(Mimi), “Inner Monologue” 단계, 겹침 처리용 multi-stream.</td></tr>
+<tr><td><b>Freeze-Omni</b></td><td>cascaded</td><td>동결 언어모델 + VAD 청크 인코딩 + 대화 상태 분류 head로 발언권 명시 제어.</td></tr>
+<tr><td><b>Gemini Live</b></td><td>상용 (비공개)</td><td>gemini-2.0-flash-live-001, 서버 측 VAD 트리거.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h2><span class="n">4</span>결과 — 논문 Table III</h2>
+<p>진한 칸 = 해당 지표 최우수.</p>
+<table>
+<thead><tr><th>과제</th><th class="c">지표</th><th class="c">dGSLM</th><th class="c">Moshi</th><th class="c">Freeze-Omni</th><th class="c">Gemini Live</th></tr></thead>
+<tbody>
+<tr><td>Pause Handling</td><td class="c">TOR ↓</td><td class="c">0.934</td><td class="c">0.985</td><td class="c">0.642</td><td class="c best">0.255</td></tr>
+<tr><td rowspan="3">Backchannel</td><td class="c">TOR ↓</td><td class="c">0.935</td><td class="c">0.980</td><td class="c">0.481</td><td class="c best">0.310</td></tr>
+<tr><td class="c">Freq ↑</td><td class="c best">0.015</td><td class="c">0.001</td><td class="c">0.001</td><td class="c">0.012</td></tr>
+<tr><td class="c">JSD ↓</td><td class="c">0.934</td><td class="c">0.957</td><td class="c">0.997</td><td class="c best">0.896</td></tr>
+<tr><td rowspan="2">Smooth Turn-Taking</td><td class="c">TOR ↑</td><td class="c best">0.975</td><td class="c">0.941</td><td class="c">0.336</td><td class="c">0.655</td></tr>
+<tr><td class="c">Latency(초) ↓</td><td class="c">0.352</td><td class="c best">0.265</td><td class="c">0.953</td><td class="c">1.301</td></tr>
+<tr><td rowspan="3">User Interruption</td><td class="c">TOR ↑</td><td class="c">0.917</td><td class="c best">1.000</td><td class="c">0.867</td><td class="c">0.891</td></tr>
+<tr><td class="c">GPT-4o ↑</td><td class="c">0.201</td><td class="c">0.765</td><td class="c best">3.615</td><td class="c">3.376</td></tr>
+<tr><td class="c">Latency(초) ↓</td><td class="c">2.531</td><td class="c best">0.257</td><td class="c">1.409</td><td class="c">1.183</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h2><span class="n">5</span>분석 — 무엇이 갈랐나</h2>
+<div class="task"><div class="t">① Pause Handling</div>
+end-to-end(dGSLM 0.934, Moshi 0.985)는 침묵마다 발언권을 낚아챈다. 명시적 제어 모듈의 Freeze-Omni(0.642)와 서버 측 VAD의 Gemini(0.255)가 훨씬 낫다.</div>
+<div class="task"><div class="t">② Backchanneling</div>
+dGSLM이 가장 활발·정확(Freq 0.015, JSD 0.934) — 2채널 전화 데이터 학습 효과. Freeze-Omni는 거의 침묵. Gemini는 적게 하나 시점이 가장 정확(JSD 0.896).</div>
+<div class="task"><div class="t">③ Smooth Turn-Taking</div>
+end-to-end는 빠르지만(~0.3초) TOR도 높다 = 성급한 개입과 동전의 양면. cascaded(Freeze-Omni)는 텍스트→음성 직렬화로 0.953초.</div>
+<div class="task"><div class="t">④ User Interruption</div>
+Freeze-Omni가 내용 축 최고(3.615, barge-in 관리). Moshi는 즉각 반응(0.257초)하나 내용 붕괴(0.765). dGSLM은 둘 다 실패(0.201 / 2.531초).</div>
+<div class="box"><b>종합.</b> 4역량을 동시에 잘하는 모델이 없다 — end-to-end=“빠르지만 무례·내용 약함”, cascaded·상용=“정중하지만 느림”.
+아키텍처만으론 못 풀며, <b>바람직한 대화 주고받기 행동 분포 자체를 학습 데이터에 심는 것</b>이 직접 해법 — 이것이 본 데이터셋 생성의 동기다.</div>
+</div>
+
+<div class="card">
+<h2><span class="n">6</span>한계 (저자 명시)</h2>
+<p>① <b>인간 선호와의 연결 부재</b> — 지표는 서술적일 뿐, “바람직한 값”은 사용자가 판단해야 한다.<br>
+② <b>영어 한정</b> — 다국어 일반화 미검증. (본 데이터셋은 한국어를 직접 생성해 이 갭을 겨냥.)<br>
+③ <b>후속</b> — 인간 판단 연구를 통합한 선호 기반 채점, 다국어 확장을 제안.</p>
+</div>
+
+</div>
+
+<script>/*DATASTART_HELPER*/document.addEventListener("play",function(e){var a=e.target;if(a.tagName==="AUDIO"&&a.dataset.start&&!a._jumped){a._jumped=1;a.currentTime=+a.dataset.start;}},true);</script>

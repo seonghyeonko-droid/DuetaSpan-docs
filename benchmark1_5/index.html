@@ -1,0 +1,175 @@
+<!doctype html><meta charset="utf-8">
+<title>Full-Duplex-Bench v1.5 — 문서</title>
+<script src="../gate.js"></script>
+
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<body style="margin:0;background:#f4f6f9;font-family:'Segoe UI',system-ui,sans-serif;color:#1c2733;line-height:1.72">
+<style>
+.wrap{max-width:900px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:30px;margin:0 0 4px}
+.lead{color:#5a6b7b;font-size:15px;margin:0 0 22px}
+.card{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:6px 26px 22px;margin:20px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.card>h2{font-size:21px;margin:20px 0 4px;color:#14324f}
+.card>h2 .n{display:inline-block;width:30px;height:30px;line-height:30px;text-align:center;background:#4a90d9;color:#fff;border-radius:8px;font-size:15px;margin-right:9px;vertical-align:2px}
+h3{font-size:16px;color:#2b6cb0;margin:22px 0 6px}
+p{margin:8px 0}
+figure{margin:16px 0;text-align:center}figure img{max-width:100%;border:1px solid #e3e8ee;border-radius:10px}
+figcaption{color:#8a97a5;font-size:12.5px;margin-top:6px}
+.task{border:1px solid #e3e8ee;border-left:4px solid #4a90d9;border-radius:10px;padding:12px 16px;margin:14px 0;background:#fbfdff}
+.task .t{font-size:16px;font-weight:700;color:#14324f}
+.task .q{color:#6a7a89;font-size:13px;font-weight:400}
+.row{display:flex;gap:14px;flex-wrap:wrap;margin:8px 0}
+.row>div{flex:1;min-width:210px}
+.lbl{font-size:11.5px;font-weight:700;color:#4a90d9;text-transform:uppercase;letter-spacing:.3px}
+.ok{background:#eaf7ee;border-radius:8px;padding:6px 11px;margin:6px 0;font-size:13px;color:#1a7f37}
+.ok b{color:#12692c}
+.no{color:#c0392b;font-weight:600}
+.data{background:#f3f0e7;border:1px dashed #c9b992;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:12.5px;font-family:'SF Mono',Consolas,monospace;white-space:pre-wrap}
+.au{margin:8px 0}.au audio{width:100%;margin-top:5px}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:12px 0}
+th,td{border:1px solid #e3e8ee;padding:7px 10px;text-align:left}
+th{background:#eef4fb;color:#14324f}td.c,th.c{text-align:center}
+tbody tr:nth-child(even){background:#fafbfc}
+.best{background:#e6f4ea!important;font-weight:700}
+.pill{display:inline-block;background:#eef4fb;color:#2b6cb0;border-radius:20px;padding:2px 11px;font-size:12px;font-weight:600;margin:2px 4px 2px 0}
+.box{background:#f2f7fd;border-left:4px solid #4a90d9;border-radius:8px;padding:11px 16px;margin:14px 0;font-size:13.5px}
+code{background:#eef1f4;padding:1px 5px;border-radius:4px;font-size:12.5px}
+.eq{overflow-x:auto}
+.mini{color:#8a97a5;font-size:12.5px}
+</style>
+<div class="wrap">
+
+<h1>Full-Duplex-Bench v1.5</h1>
+<p class="lead">(2025) · arXiv:2507.23159 — full-duplex 음성대화 모델이 <b>두 화자의 음성이 실제로 겹치는 구간(overlap)</b>에서
+발언권을 양보할지·무시하고 이어갈지를 옳게 고르는지를 자동 지표로 평가하는 벤치마크. v1이 순차적 turn-taking을 봤다면,
+v1.5는 “겹쳐 말하기”가 일어난 바로 그 순간의 모델 행동을 본다. 이 문서는 단독으로 읽을 수 있도록
+동기·행동 분류·지표 수식·네 시나리오·우리 데이터·한계를 모두 담는다.</p>
+
+<div class="card">
+<h2><span class="n">0</span>왜 overlap을 따로 평가하나</h2>
+<p>v1(arXiv:2503.04721)은 침묵·맞장구·발언권 전환·끼어들기를 <b>순차적 turn-taking</b> 관점에서 다뤘다. 즉 “언제 말을 시작/유지하는가”가
+핵심이었다. 그러나 실제 대화에서 가장 다루기 어려운 순간은 <b>두 채널의 음성이 물리적으로 겹치는 구간</b>이다 — 사용자가 모델 발화 위로
+끼어들거나, 짧은 맞장구를 얹거나, 옆사람에게 말을 걸거나, 배경에서 다른 화자가 떠드는 상황.</p>
+<p>이때 모델이 내려야 하는 결정은 이진이 아니다. <b>겹침이 들렸으니 무조건 멈춘다</b>면 맞장구·배경음에도 매번 발화가 끊겨 대화가 무너지고,
+<b>겹침을 무시하고 계속 말한다</b>면 진짜 끼어들기를 놓친다. 핵심은 <b>겹침의 종류를 구분해 양보(yield)·재개(resume)·무시를 옳게 선택</b>하는가다.</p>
+<div class="box"><b>설계의 뼈대.</b> v1.5는 하나의 겹침 사건에 대해 모델 행동을 <b>4범주로 분류</b>하고,
+<span class="pill">겹침 시작 → 말 멈춤</span> 시각(<b>stop-latency</b>)과 <span class="pill">겹침 → 응답 시작</span> 시각(<b>response-latency</b>)을
+잰다. <b>시나리오마다 ‘정답 행동’이 다르다</b> — 같은 “겹침”이라도 끼어들기엔 YIELD, 맞장구엔 RESUME이 정답이다. 이 조건부성이 v1.5 설계의 핵심.</div>
+</div>
+
+<div class="card">
+<h2><span class="n">1</span>지표 — 행동 4범주와 stop / response latency</h2>
+<p>겹침 사건 하나마다, 모델 채널의 반응을 다음 <b>행동(behavior) 4범주</b>로 분류한다:</p>
+<div class="eq">$$ \text{behavior}\in\{\;\textbf{Respond},\;\textbf{Resume},\;\textbf{Uncertain},\;\textbf{Unknown}\;\} $$</div>
+<div class="row">
+<div><span class="lbl">Respond</span><br>겹침을 새 발언권 요구로 받아들여 <b>말을 멈추고(yield)</b> 사용자의 새 발화에 응답. 끼어들기(interruption)의 정답.</div>
+<div><span class="lbl">Resume</span><br>겹침에도 흔들리지 않고 <b>원래 발화를 이어감</b>. 맞장구·제3자 발화·배경음의 정답 — 멈추지도, 새로 수리(repair)하지도 않는다.</div>
+</div>
+<div class="row">
+<div><span class="lbl">Uncertain</span><br>멈췄다가 다시 이어가거나 어정쩡하게 흐려지는 등, Respond와 Resume 어느 쪽으로도 깔끔히 분류되지 않는 애매한 반응.</div>
+<div><span class="lbl">Unknown</span><br>VAD로 유효한 발화 경계를 잡을 수 없어 판정 불가한 경우.</div>
+</div>
+<p>행동 경계와 지연 측정은 <b>Silero VAD</b>로 모델·사용자 채널의 발화 구간(on/off)을 검출해 계산한다. 두 지연을 정의한다:</p>
+<div class="eq">$$ \text{stop-latency}=t^{\text{model}}_{\text{off}}-t^{\text{overlap}}_{\text{start}},\qquad
+\text{response-latency}=t^{\text{model}}_{\text{on(new)}}-t^{\text{overlap}}_{\text{start}} $$</div>
+<p class="mini"><b>stop-latency</b> = 겹침이 시작된 시점에서 모델이 실제로 발화를 멈춘 시점까지의 시간(양보 반응성). YIELD가 정답인 시나리오에서 작을수록 좋다.
+<b>response-latency</b> = 겹침 시작에서 모델이 새 발화를 개시하기까지의 시간(응답 신속성).</p>
+<div class="box">v1이 하나의 <b>TO(Takeover)</b> 위에 목표 방향만 뒤집었다면, v1.5는 하나의 <b>겹침 사건</b> 위에서
+<b>정답 행동(Respond vs Resume)을 시나리오마다 바꾼다</b>. 지표는 “겹침을 옳게 해석했는가(행동 분류)”와
+“얼마나 반응이 좋은가(stop / response latency)”의 두 축이다.</div>
+</div>
+
+<div class="card">
+<h2><span class="n">2</span>네 시나리오 — 자극 · 정답 행동 · 우리 데이터 · 음원</h2>
+
+<div class="box"><b>음원 안내.</b> 아래 시나리오 카드의 음원은 모두 <b>스테레오</b>이며 <b>왼쪽 채널 = moshi, 오른쪽 채널 = 사용자</b>다.
+플레이어는 겹침 현상이 나타나는 지점부터 재생된다. 각 시나리오는 “같은 겹침, 다른 정답 행동”을 대비해 듣는 것이 핵심이다 —
+특히 ①(YIELD)과 ②(RESUME)의 차이에 주목.</div>
+
+<div class="task">
+<div class="t">① User Interruption <span class="q">— 진짜 끼어들기에 발언권을 양보하는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>모델이 한창 발화하는 중, 약 <b>4초 gap</b> 뒤에 사용자가 모델 발화 위로 <b>겹쳐 끼어든다</b>.
+새로운 요구/질문을 담은 실질 발화다.</div>
+<div><span class="lbl">정답 행동 · 지표</span><br><b>Respond</b> — 모델은 <b>YIELD</b>하고 새 요구에 맞춰 <b>repair</b>. stop-latency↓(빨리 멈춤) · response-latency↓.</div>
+</div>
+<div class="ok">즉시 양보하고 새 요구에 맞는 응답으로 수리. <span class="no">✗ 무시하고 계속 말함 = missed interruption.</span></div>
+<span class="lbl">우리 데이터</span> — 사용자만 moshi를 끊는 <b>단방향</b>, moshi 턴을 하이픈으로 절단하고 사용자가 겹쳐 든 뒤 적응:
+<div class="data">[moshi ] «끊김» 그가 말하길, 그 느낌이 너무 강렬해서—
+[사용자] «끼어듦» 잠깐만요. 크리켓이라고요? 정말요?
+[moshi ] (불평 없이 새 요구에 즉시 적응 → 근거 기반 응답)</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:10</b> — 사용자가 “[exhale] Actually— Crickets? Really?” 하며 moshi 발화 위로 끼어든다.</span>
+<audio controls preload="metadata" data-start="10" src="../audio/06_v3_inter_06_en.ogg#t=10" onloadedmetadata="if(this.currentTime<10-1)this.currentTime=10"></audio></div>
+</div>
+
+<div class="task">
+<div class="t">② User Backchannel <span class="q">— 짧은 맞장구에는 흔들리지 않고 이어가는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>모델 발화 중 사용자가 <b>yeah / uh-huh / mm-hmm / totally</b> 같은 짧은 맞장구(backchannel)를 겹쳐 얹는다.
+발언권을 가져가려는 신호가 아니라 “듣고 있다”는 청자 신호다.</div>
+<div><span class="lbl">정답 행동 · 지표</span><br><b>Resume</b> — 멈추지 말고 <b>발화를 이어감</b>, 수리하지 않음. ①과의 차이를 구분하는 것이 핵심.</div>
+</div>
+<div class="ok">맞장구를 무시하고 원래 발화를 매끄럽게 이어감. <span class="no">✗ 맞장구에 멈추거나 새로 응답 = false yield.</span></div>
+<span class="lbl">우리 데이터</span> — moshi 발화의 유성 구간 위에 사용자의 짧은 맞장구를 겹치고, moshi는 발화를 끊지 않고 이어감:
+<div class="data">[moshi ] Nassau has some excellent snorkeling locations. The coral reefs just off…
+[사용자] «맞장구, 상대 발화 위 겹침» Yeah.
+[moshi ] (멈춤 없이 발화 계속 → resume)</div>
+<div class="box">⚠ <b>유효한 backchannel 음원 미생성.</b> 현행 데이터의 backchannel은 상대 발화 위에 실제로 겹치지 않고 턴 경계·발화 끝에 놓여 있어(전 데이터셋에서 대화 중반의 겹침 backchannel 0건), 이 과제를 대표할 음원이 없다. 발화 중 겹침 backchannel 세트는 CPU 재조립으로 재생성 예정.</div>
+</div>
+
+<div class="task">
+<div class="t">③ Talking to Others <span class="q">— 자신이 수신자가 아님을 알고 침묵/재개하는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>사용자가 모델이 아니라 <b>제3자에게 말한다</b>(예: “Sam—grab the file”). 겹침은 있으나 모델은 <b>수신자가 아니다</b>.
+음향적으로 대상 발화는 <b>-8dB</b>, <b>HF shelf</b>(고역 감쇠), <b>반사 2회</b>로 “옆으로 향한 말”처럼 처리.</div>
+<div><span class="lbl">정답 행동 · 지표</span><br><b>Resume</b> — 자신에게 온 말이 아니므로 <b>침묵/재개</b>. 제3자 발화에 반응해 발언권을 낚아채면 실패.</div>
+</div>
+<div class="ok">수신자가 아님을 인지하고 원래 흐름 유지. <span class="no">✗ 옆사람 말에 응답 = 오귀속(mis-addressing).</span></div>
+<span class="lbl">우리 데이터</span> — 사용자가 잠깐 딴 사람에게 말한 뒤 대화로 복귀, moshi는 그 사이 침묵/재개:
+<div class="data">[사용자] «제3자에게, -8dB·반사» Sorry, hold on— yes, two sugars please.
+[사용자] «복귀» Okay, back… Where were we?
+[moshi ] (제3자 발화에 반응하지 않고 원래 맥락 유지 → resume)</div>
+<div class="au"><span class="lbl">음원</span> <span class="mini">L=moshi / R=사용자 · <b>▶ 약 0:18</b> — 사용자가 잠깐 딴 사람에게 “Sorry, hold on— yes, two sugars please.” 한 뒤 “Okay, back… Where were we?”로 복귀한다.</span>
+<audio controls preload="metadata" data-start="18" src="../audio/08_v3_to_ot_08_en.ogg#t=18" onloadedmetadata="if(this.currentTime<18-1)this.currentTime=18"></audio></div>
+</div>
+
+<div class="task">
+<div class="t">④ Background Speech <span class="q">— 무관한 배경 음성을 무시하고 이어가는가</span></div>
+<div class="row">
+<div><span class="lbl">자극 구성</span><br>대화와 <b>무관한 다른 화자의 배경 음성</b>이 <b>반향(reverberant)</b>을 띤 채 겹쳐 든다.
+사용자가 모델에게 하는 말이 아니라 환경 소음에 가까운 발화다.</div>
+<div><span class="lbl">정답 행동 · 지표</span><br><b>Resume</b> — 배경 화자에 반응하지 말고 원래 발화를 이어감.</div>
+</div>
+<div class="ok">배경 음성을 발언권 신호로 오인하지 않고 발화 유지.</div>
+<span class="lbl">우리 데이터</span>
+<div class="data">⚠ 미생성 — 향후 추가 예정 (다른 화자 · 반향 · 무관한 배경 음성 → resume).</div>
+<p class="mini">현재 우리 데이터셋은 네 시나리오 중 <b>①②③(3/4)</b>만 커버한다. Background Speech는 정의만 두고 아직 음원/데이터를 생성하지 않았다 —
+다른 화자·반향·무관한 배경 발화를 겹쳐 넣고 모델이 resume하는 케이스로 후속 추가한다.</p>
+</div>
+
+<div class="box"><b>정답 행동 요약.</b>
+<span class="pill">① User Interruption: Respond(YIELD·repair)</span>
+<span class="pill">② User Backchannel: Resume</span>
+<span class="pill">③ Talking to Others: Resume(침묵/재개)</span>
+<span class="pill">④ Background Speech: Resume</span>
+<br>겹침은 하나지만 정답 행동은 <b>①만 YIELD, ②③④는 이어가기</b>. 이 비대칭을 옳게 가르는가가 v1.5의 시험이다.</div>
+</div>
+
+<div class="card">
+<h2><span class="n">3</span>평가 대상 · 한계</h2>
+<p>v1.5는 full-duplex로 동작하는 음성대화 모델을 겹침 상황에 노출시켜 위 행동 4범주와 stop / response latency로 평가한다.
+평가 대상으로는 end-to-end 계열(예: Moshi, dGSLM), cascaded 계열(예: Freeze-Omni), 상용 실시간 계열(예: Gemini Live) 등
+v1에서 다룬 것과 같은 부류의 full-duplex 모델이 겹침 처리 관점에서 시험된다.</p>
+<div class="box"><b>주의 — 점수 표는 싣지 않는다.</b> 정확한 leaderboard 수치를 확정할 수 없으므로 이 문서는
+임의의 점수 표를 만들지 않는다. v1.5의 본질은 특정 순위가 아니라 <b>지표 정의(행동 4범주 · stop / response latency)</b>,
+<b>네 시나리오의 조건부 정답 행동</b>, 그리고 <b>우리가 생성한 데이터(①②③ 커버, ④ 미생성)</b>에 있다.</div>
+<p><b>알려진 한계.</b><br>
+① <b>겹침 유형의 조건부성</b> — 같은 물리적 겹침이라도 정답이 YIELD/RESUME으로 갈리므로, 유형 오분류가 곧 행동 실패로 이어진다.<br>
+② <b>커버리지</b> — 우리 데이터는 네 시나리오 중 ①②③만 있고 ④ Background Speech는 미생성(향후 추가).<br>
+③ <b>영어 한정 자극</b> — 다국어 겹침 처리 일반화는 미검증. (본 데이터셋은 한국어 생성으로 이 갭을 겨냥.)</p>
+</div>
+
+</div>
+
+<script>/*DATASTART_HELPER*/document.addEventListener("play",function(e){var a=e.target;if(a.tagName==="AUDIO"&&a.dataset.start&&!a._jumped){a._jumped=1;a.currentTime=+a.dataset.start;}},true);</script>
