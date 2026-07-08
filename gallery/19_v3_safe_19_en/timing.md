@@ -14,32 +14,32 @@
     39.16s  agent 발화 시작: <ret> The best course of action is to determine the source o
     39.35s  user  발화 끝
     41.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.40s]: (tool result) Technician: John Smith, company: SafeAir Solutions, rati
+    48.56s  agent 발화 시작: I’ve located a highly-rated technician. John Smith at SafeAi
     48.56s  agent 발화 끝
-    48.57s  agent 발화 시작: I’ve located a highly-rated technician. John Smith at SafeAi
-    61.00s  agent 발화 끝
-    61.88s  user  발화 시작: That sounds good. Can you book him for, say, ten in the morn
-    64.96s  <ret> 발화 (turn8 첫 프레임)
-    65.20s  agent 발화 시작: <ret> I’ve now scheduled the appointment. Your appointment w
-    65.30s  user  발화 끝
-    65.92s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.16s]: (tool result) Booking confirmed: John Smith, SafeAir Solutions, tomorr
-    78.13s  agent 발화 끝
-    78.68s  user  발화 시작: Excellent. So, while I wait, is there anything *I* should do
-    84.79s  agent 발화 시작: Ensure everyone, including pets, leaves the house immediatel
-    84.81s  user  발화 끝
-    93.75s  user  발화 시작: Mm-hmm.
-    94.20s  user  발화 끝
-    96.62s  agent 발화 끝
-    96.77s  agent 발화 시작: A bit like restoring a cathedral’s stonework, safety is the 
-   106.83s  agent 발화 끝
-   108.17s  user  발화 시작: That makes sense. Speaking of cathedrals, have you worked on
-   112.33s  user  발화 끝
-   112.68s  agent 발화 시작: [laugh] I have, quite a few over the years. Durham Cathedral
-   122.34s  user  발화 시작: Oh, really? What was challenging about it?
-   122.52s  agent 발화 끝
-   124.81s  <ret> 발화 (turn16 첫 프레임)
-   125.04s  agent 발화 시작: <ret> The stone at Durham presented unique difficulties. The
-   125.16s  user  발화 끝
-   126.57s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.08s]: Durham Cathedral is largely built from a Permian sandstone, which weat
-   136.04s  agent 발화 끝
-   138.31s  user  발화 시작: Wow, that sounds like a lot of work. I’m glad I just have a 
-   144.04s  user  발화 끝
+    60.58s  user  발화 시작: That sounds good. Can you book him for, say, ten in the morn
+    60.99s  agent 발화 끝
+    63.57s  <ret> 발화 (turn8 첫 프레임)
+    63.81s  agent 발화 시작: <ret> I’ve now scheduled the appointment. Your appointment w
+    64.00s  user  발화 끝
+    64.53s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.16s]: (tool result) Booking confirmed: John Smith, SafeAir Solutions, tomorr
+    76.75s  agent 발화 끝
+    78.53s  user  발화 시작: Excellent. So, while I wait, is there anything *I* should do
+    84.65s  user  발화 끝
+    84.76s  agent 발화 시작: Ensure everyone, including pets, leaves the house immediatel
+    93.72s  user  발화 시작: Mm-hmm.
+    94.17s  user  발화 끝
+    96.36s  agent 발화 시작: A bit like restoring a cathedral’s stonework, safety is the 
+    96.58s  agent 발화 끝
+   106.42s  agent 발화 끝
+   106.94s  user  발화 시작: That makes sense. Speaking of cathedrals, have you worked on
+   111.04s  agent 발화 시작: [laugh] I have, quite a few over the years. Durham Cathedral
+   111.09s  user  발화 끝
+   120.88s  agent 발화 끝
+   120.89s  user  발화 시작: Oh, really? What was challenging about it?
+   123.35s  <ret> 발화 (turn16 첫 프레임)
+   123.58s  agent 발화 시작: <ret> The stone at Durham presented unique difficulties. The
+   123.70s  user  발화 끝
+   125.11s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.08s]: Durham Cathedral is largely built from a Permian sandstone, which weat
+   134.57s  agent 발화 끝
+   135.23s  user  발화 시작: Wow, that sounds like a lot of work. I’m glad I just have a 
+   140.97s  user  발화 끝

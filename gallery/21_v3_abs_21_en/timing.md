@@ -8,20 +8,20 @@
      4.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: (no information found)
      5.60s  user  발화 시작: Yeah.
      6.09s  user  발화 끝
-     7.10s  agent 발화 시작: I’ve searched my records, and unfortunately, nothing specifi
      7.17s  agent 발화 끝
-    14.61s  agent 발화 끝
-    15.04s  user  발화 시작: Oh. Well, what about the oldest cathedral still actively use
-    20.76s  <ret> 발화 (turn5 첫 프레임)
-    20.82s  agent 발화 시작: <ret> Determining the oldest continuously used cathedral… Wi
-    21.07s  user  발화 끝
-    22.60s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.31s]: Winchester Cathedral began construction in 1079 and has been in near-c
-    31.31s  agent 발화 끝
-    31.50s  user  발화 시작: That’s quite a long time! Were there many changes made to it
-    36.50s  user  발화 끝
-    36.93s  agent 발화 시작: Oh, absolutely. A cathedral evolves with the times, you see.
-    45.60s  agent 발화 끝
-    45.68s  user  발화 시작: I— I mean, were there major structural alterations?
-    48.87s  agent 발화 시작: Indeed. From the twelfth through the sixteenth centuries, Wi
-    49.00s  user  발화 끝
-    56.84s  agent 발화 끝
+     7.21s  agent 발화 시작: I’ve searched my records, and unfortunately, nothing specifi
+    14.48s  user  발화 시작: Oh. Well, what about the oldest cathedral still actively use
+    14.72s  agent 발화 끝
+    20.39s  <ret> 발화 (turn5 첫 프레임)
+    20.46s  agent 발화 시작: <ret> Determining the oldest continuously used cathedral… Wi
+    20.51s  user  발화 끝
+    22.23s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.31s]: Winchester Cathedral began construction in 1079 and has been in near-c
+    30.95s  agent 발화 끝
+    31.13s  user  발화 시작: That’s quite a long time! Were there many changes made to it
+    36.12s  user  발화 끝
+    36.14s  agent 발화 시작: Oh, absolutely. A cathedral evolves with the times, you see.
+    44.81s  agent 발화 끝
+    45.76s  user  발화 시작: I— I mean, were there major structural alterations?
+    49.00s  agent 발화 시작: Indeed. From the twelfth through the sixteenth centuries, Wi
+    49.08s  user  발화 끝
+    56.98s  agent 발화 끝

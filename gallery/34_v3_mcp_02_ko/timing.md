@@ -22,30 +22,30 @@
     42.46s  agent 발화 시작: <ret> [웃음] 로스트 헤븐 베이커리에 웹사이트가 있네요.
     42.62s  user  발화 끝
     44.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.
-    46.03s  agent 발화 시작: 웹사이트 주소는 lostheaven.com.cn이에요. 메뉴랑 위치 정보가 거기 있을 거예요.
+    46.21s  agent 발화 시작: 웹사이트 주소는 lostheaven.com.cn이에요. 메뉴랑 위치 정보가 거기 있을 거예요.
     46.30s  agent 발화 끝
-    51.77s  agent 발화 끝
-    51.94s  user  발화 시작: 좋다! 토요일에 갈까 생각 중이야. 몇 시에 여어?
-    55.47s  <ret> 발화 (turn10 첫 프레임)
-    55.53s  agent 발화 시작: <ret> 개점 시간을 확인해 볼게요— 토요일 아침 여덟 시에 문을 열어요.
-    55.64s  user  발화 끝
-    56.67s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.36s]: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.
-    58.90s  agent 발화 끝
-    59.72s  user  발화 시작: 좋네. 있냐고… 크루아상 있어?
-    63.10s  agent 발화 시작: 크루아상은 기본이죠—
-    63.23s  user  발화 끝
-    63.76s  user  발화 시작: 크루아상이 *맛있어*? 진짜 페이스트리처럼 바삭해?
-    64.47s  agent 발화 끝
-    67.36s  <ret> 발화 (turn14 첫 프레임)
-    67.67s  agent 발화 시작: <ret> 오, 아주 중요한 질문이네요!
-    67.87s  user  발화 끝
-    68.48s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.22s]: (tool result) Customer reviews mention Lost Heaven Bakery's croissants
-    69.83s  agent 발화 시작: 리뷰를 보니까 크루아상이 아주 바삭하고 버터 맛이 강하다고 하네요— 좋은 기술의 증거죠, 당연히.
-    69.89s  agent 발화 끝
-    76.11s  user  발화 시작: 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 설정해 줘.
-    76.13s  agent 발화 끝
-    81.42s  <ret> 발화 (turn17 첫 프레임)
-    81.49s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요— 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
-    81.72s  user  발화 끝
-    82.38s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.79s]: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Hea
-    85.87s  agent 발화 끝
+    51.95s  agent 발화 끝
+    52.13s  user  발화 시작: 좋다! 토요일에 갈까 생각 중이야. 몇 시에 여어?
+    55.75s  <ret> 발화 (turn10 첫 프레임)
+    55.81s  agent 발화 시작: <ret> 개점 시간을 확인해 볼게요— 토요일 아침 여덟 시에 문을 열어요.
+    55.83s  user  발화 끝
+    56.95s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.36s]: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.
+    59.19s  agent 발화 끝
+    59.25s  user  발화 시작: 좋네. 있냐고… 크루아상 있어?
+    62.76s  user  발화 끝
+    62.93s  agent 발화 시작: 크루아상은 기본이죠—
+    63.53s  user  발화 시작: 크루아상이 *맛있어*? 진짜 페이스트리처럼 바삭해?
+    64.31s  agent 발화 끝
+    67.33s  <ret> 발화 (turn14 첫 프레임)
+    67.64s  user  발화 끝
+    67.64s  agent 발화 시작: <ret> 오, 아주 중요한 질문이네요!
+    68.45s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.22s]: (tool result) Customer reviews mention Lost Heaven Bakery's croissants
+    69.72s  agent 발화 시작: 리뷰를 보니까 크루아상이 아주 바삭하고 버터 맛이 강하다고 하네요— 좋은 기술의 증거죠, 당연히.
+    69.86s  agent 발화 끝
+    76.03s  agent 발화 끝
+    78.06s  user  발화 시작: 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 설정해 줘.
+    83.43s  <ret> 발화 (turn17 첫 프레임)
+    83.50s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요— 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
+    83.67s  user  발화 끝
+    84.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.79s]: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Hea
+    87.88s  agent 발화 끝

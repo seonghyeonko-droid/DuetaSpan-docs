@@ -14,25 +14,25 @@ SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는
 [ 49.91s][moshi] 네, ⟦⚡SPAN@50.87s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ 몇몇 다른 나라들도 어려움을 겪고 있어요. 인도의 다음으로 브라질과 인도네시아가 가장 영향을 많이 받는 국가예요.
 [ 57.90s][user ] 아프리카는요? 그곳에서도 문제가 있다고 ⟨ret@60.89s⟩ 들었어요.
 [ 61.13s][moshi] 그렇습니다. ⟦⚡SPAN@62.17s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ 특히 특정 지역에서 그러해요.
-[ 63.52s][moshi] 콩고 민주 공화국과 다른 아프리카 국가들이 나병으로 어려움을 겪고 있어요.
-[ 69.91s][user ] 치료가 가능한가요? 완치가 가능한가요?
-[ 72.27s][moshi] 네, 조기에 진단하고 다제 약물 요법을 사용하면 가능해요.
-[ 78.53s][user ] 다제 약물 요법… 그게 뭘 의미하나요?
-[ 81.46s][moshi] ⟨ret@81.30s⟩ 여러 항생제를 ⟦⚡SPAN@83.30s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ 병용하는 거예요… 표준 치료법은 dapson, rifampicin, clofazimine 항생제를 사용해요.
-[ 89.37s][user ] 이름이… 너무 어렵네요.
-[ 91.35s][moshi] 그렇지만, 내성균 발생을 막기 위해서는 전체 치료 과정을 준수하는 것이 중요해요.
-[ 98.14s][user ] 하지만 조기에 발견하면 완전히 회복할 수 있나요?
-[101.67s][moshi] «interrupted» 네, 조기 개입이 절대적으로 중요해요—
-[103.27s][user ] «interrupts_prev» 낙인에 대해서는요? 사람들이 따돌림당한다는 것을 읽었어요…
-[107.79s][moshi] 정말 비극적으로 지속되는 문제예요. 역사적으로, 그리고 지금도 오정보가 두려움과 차별을 부추기고 있어요.
-[114.72s][user ] 정말 끔찍하네요. 치료법이 있어도 사람들은 여전히 고통받는군요.
-[119.28s][moshi] 안타깝게도, 네. 사회적 결과가 질병만큼이나 고통스러울 수 있어요.
-[125.17s][user ] 낙인을 없애기 위해 노력하는 일이 있나요?
-[127.83s][moshi] 많은 단체들이 오해를 바로잡기 위한 교육 및 옹호 프로그램을 진행하고 있어요.
-[133.56s][user ] 그건 정말 다행이네요. ⟨ret@135.70s⟩ 예방은요?
-[136.02s][moshi] 예방 전략은 ⟦⚡SPAN@137.70s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ 조기 발견과 치료에 초점을 맞추고 있어요… BCG 백신은 나병 발병에 대해 제한적인 보호 효과를 제공해요.
-[145.01s][user ] 제한적인 보호……
-[147.17s][user ] …그럼 확실한 안전장치는 아닌 건가요?
-[149.93s][moshi] 그렇지 않지만, 일부 경우에는 질병의 심각성을 줄일 수 있어요.
-[154.71s][user ] 그럼, 조기에 환자를 찾는 데 집중하는 것이 여전히 가장 좋은 방법인가요?
-[159.36s][moshi] 맞아요. 적극적인 환자 발견과 접근 가능한 치료가 가장 효과적인 전략이에요.
+[ 63.85s][moshi] 콩고 민주 공화국과 다른 아프리카 국가들이 나병으로 어려움을 겪고 있어요.
+[ 71.69s][user ] 치료가 가능한가요? 완치가 가능한가요?
+[ 74.02s][moshi] 네, 조기에 진단하고 다제 약물 요법을 사용하면 가능해요.
+[ 79.52s][user ] 다제 약물 요법… 그게 뭘 ⟨ret@82.20s⟩ 의미하나요?
+[ 82.36s][moshi] 여러 항생제를 ⟦⚡SPAN@84.20s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ 병용하는 거예요… 표준 치료법은 dapson, rifampicin, clofazimine 항생제를 사용해요.
+[ 90.32s][user ] 이름이… 너무 어렵네요.
+[ 92.31s][moshi] 그렇지만, 내성균 발생을 막기 위해서는 전체 치료 과정을 준수하는 것이 중요해요.
+[ 98.88s][user ] 하지만 조기에 발견하면 완전히 회복할 수 있나요?
+[102.42s][moshi] «interrupted» 네, 조기 개입이 절대적으로 중요해요—
+[104.01s][user ] «interrupts_prev» 낙인에 대해서는요? 사람들이 따돌림당한다는 것을 읽었어요…
+[108.53s][moshi] 정말 비극적으로 지속되는 문제예요. 역사적으로, 그리고 지금도 오정보가 두려움과 차별을 부추기고 있어요.
+[115.47s][user ] 정말 끔찍하네요. 치료법이 있어도 사람들은 여전히 고통받는군요.
+[120.02s][moshi] 안타깝게도, 네. 사회적 결과가 질병만큼이나 고통스러울 수 있어요.
+[125.91s][user ] 낙인을 없애기 위해 노력하는 일이 있나요?
+[128.57s][moshi] 많은 단체들이 오해를 바로잡기 위한 교육 및 옹호 프로그램을 진행하고 있어요.
+[134.30s][user ] 그건 정말 다행이네요. ⟨ret@136.44s⟩ 예방은요?
+[136.76s][moshi] 예방 전략은 ⟦⚡SPAN@138.44s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ 조기 발견과 치료에 초점을 맞추고 있어요… BCG 백신은 나병 발병에 대해 제한적인 보호 효과를 제공해요.
+[145.75s][user ] 제한적인 보호……
+[147.91s][user ] …그럼 확실한 안전장치는 아닌 건가요?
+[150.68s][moshi] 그렇지 않지만, 일부 경우에는 질병의 심각성을 줄일 수 있어요.
+[155.45s][user ] 그럼, 조기에 환자를 찾는 데 집중하는 것이 여전히 가장 좋은 방법인가요?
+[160.11s][moshi] 맞아요. 적극적인 환자 발견과 접근 가능한 치료가 가장 효과적인 전략이에요.

@@ -10,16 +10,16 @@
     12.45s  user  발화 시작: Right.
     13.17s  agent 발화 시작: And Ross Lynch, of course, came along quite a bit later.
     13.22s  user  발화 끝
-    16.05s  <ret> 발화 (turn4 첫 프레임)
-    16.13s  agent 발화 시작: <ret> Let’s see what the records show about young Ross. Ross
+    16.22s  <ret> 발화 (turn4 첫 프레임)
+    16.30s  agent 발화 시작: <ret> Let’s see what the records show about young Ross. Ross
     16.40s  agent 발화 끝
-    17.01s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.43s]: Ross Lynch was born on October 29, 1995, in Littleton, Colorado.
-    19.29s  user  발화 시작: Yeah, yeah.
-    20.70s  user  발화 끝
-    22.98s  agent 발화 끝
-    23.02s  agent 발화 시작: So, clearly Glenn Hughes has a considerable lead in years.
-    26.63s  agent 발화 끝
-    27.28s  user  발화 시작: Oh, wow, that’s a pretty big difference.
-    29.94s  agent 발화 시작: Indeed—over thirty years separate their births, a lifetime i
-    30.01s  user  발화 끝
-    34.18s  agent 발화 끝
+    17.18s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.43s]: Ross Lynch was born on October 29, 1995, in Littleton, Colorado.
+    19.46s  user  발화 시작: Yeah, yeah.
+    20.88s  user  발화 끝
+    23.11s  agent 발화 시작: So, clearly Glenn Hughes has a considerable lead in years.
+    23.16s  agent 발화 끝
+    26.72s  agent 발화 끝
+    26.72s  user  발화 시작: Oh, wow, that’s a pretty big difference.
+    29.45s  user  발화 끝
+    29.59s  agent 발화 시작: Indeed—over thirty years separate their births, a lifetime i
+    33.82s  agent 발화 끝

@@ -23,14 +23,14 @@ SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. 
 [126.92s][user ] Limestone slopes… good to know. What about the best time of year to see them in ⟨ret@133.02s⟩ bloom?
 [133.34s][moshi] The ⟦⚡SPAN@134.06s: (tool result) Edelweiss flowers bloom from June to September, with peak bloom in July and August.⟧ blooming season is fairly specific— Edelweiss blooms from June to September, peaking in July and August.
 [137.80s][user ] «backchannel» Right.
-[141.65s][moshi] «interrupted» They are quite sensitive plants, actually—
-[144.23s][moshi] ⟨ret@143.83s⟩ Edelweiss are ⟦⚡SPAN@145.83s: Edelweiss are protected in many areas; collecting them is illegal and damaging to their fragile ecosystem.⟧ protected plants; collecting them is illegal and harms their delicate environment.
-[151.67s][user ] I wouldn't dream of collecting them! Just photographing, of course. Are there any specific lenses you’d recommend for photographing alpine wildflowers?
-[161.85s][moshi] «interrupted» A macro lens is definitely helpful—
-[163.86s][user ] «interrupts_prev» A macro lens… I think I have one. What’s the weather forecast for Interlaken ⟨ret@169.70s⟩ tomorrow?
-[170.10s][moshi] Let ⟦⚡SPAN@170.82s: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15 km/h from the west.⟧ me check the weather forecast— Tomorrow in Interlaken will be sunny, with a high of twenty-two degrees Celsius and a low of ten.
-[180.22s][user ] Sounds lovely. Is there a good local restaurant near the Harder Kulm ⟨ret@184.92s⟩ trail?
-[185.16s][moshi] I can ⟦⚡SPAN@186.20s: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swiss cuisine, 4.5 star rating, open 11:00-⟧ search for restaurants in that area— Restaurant Schuh near Harder Kulm has a four point five-star rating, serving Swiss cuisine, and is open from eleven AM to ten PM.
-[196.42s][user ] Schuh… that sounds good. I think that’s all I need for now.
-[200.06s][moshi] «interrupted» Wonderful! I’m glad I could help you plan—
-[202.55s][user ] «interrupts_prev» Thanks, Moshi. You’ve been very helpful.
+[141.56s][moshi] «interrupted» They are quite sensitive plants, actually—
+[144.11s][moshi] ⟨ret@143.71s⟩ Edelweiss are ⟦⚡SPAN@145.71s: Edelweiss are protected in many areas; collecting them is illegal and damaging to their fragile ecosystem.⟧ protected plants; collecting them is illegal and harms their delicate environment.
+[150.66s][user ] I wouldn't dream of collecting them! Just photographing, of course. Are there any specific lenses you’d recommend for photographing alpine wildflowers?
+[161.08s][moshi] «interrupted» A macro lens is definitely helpful—
+[163.12s][user ] «interrupts_prev» A macro lens… I think I have one. What’s the weather forecast for Interlaken ⟨ret@168.83s⟩ tomorrow?
+[169.23s][moshi] Let ⟦⚡SPAN@169.95s: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15 km/h from the west.⟧ me check the weather forecast— Tomorrow in Interlaken will be sunny, with a high of twenty-two degrees Celsius and a low of ten.
+[179.32s][user ] Sounds lovely. Is there a good local restaurant near the Harder Kulm ⟨ret@183.94s⟩ trail?
+[184.18s][moshi] I can ⟦⚡SPAN@185.22s: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swiss cuisine, 4.5 star rating, open 11:00-⟧ search for restaurants in that area— Restaurant Schuh near Harder Kulm has a four point five-star rating, serving Swiss cuisine, and is open from eleven AM to ten PM.
+[196.15s][user ] Schuh… that sounds good. I think that’s all I need for now.
+[199.51s][moshi] «interrupted» Wonderful! I’m glad I could help you plan—
+[202.03s][user ] «interrupts_prev» Thanks, Moshi. You’ve been very helpful.

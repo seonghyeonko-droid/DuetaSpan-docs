@@ -6,8 +6,8 @@ SYSTEM: <system> You are a jazz pianist and music historian with decades on the 
 [  4.15s][moshi] That’s a good ⟦⚡SPAN@5.92s: Glenn Hughes was born on August 21, 1951, and is an English singer and bassist.⟧ question, comparing musicians across generations. Glenn Hughes was born on August twenty-first, nineteen fifty-one.
 [ 12.45s][user ] Right.
 [ 13.17s][moshi] And Ross Lynch, of course, came along quite a bit later.
-[ 16.13s][moshi] ⟨ret@16.05s⟩ Let’s ⟦⚡SPAN@17.01s: Ross Lynch was born on October 29, 1995, in Littleton, Colorado.⟧ see what the records show about young Ross. Ross Lynch was born on October twenty-ninth, nineteen ninety-five.
-[ 19.29s][user ] «backchannel» Yeah, yeah.
-[ 23.02s][moshi] So, clearly Glenn Hughes has a considerable lead in years.
-[ 27.28s][user ] Oh, wow, that’s a pretty big difference.
-[ 29.94s][moshi] Indeed—over thirty years separate their births, a lifetime in music.
+[ 16.30s][moshi] ⟨ret@16.22s⟩ Let’s ⟦⚡SPAN@17.18s: Ross Lynch was born on October 29, 1995, in Littleton, Colorado.⟧ see what the records show about young Ross. Ross Lynch was born on October twenty-ninth, nineteen ninety-five.
+[ 19.46s][user ] «backchannel» Yeah, yeah.
+[ 23.11s][moshi] So, clearly Glenn Hughes has a considerable lead in years.
+[ 26.72s][user ] Oh, wow, that’s a pretty big difference.
+[ 29.59s][moshi] Indeed—over thirty years separate their births, a lifetime in music.

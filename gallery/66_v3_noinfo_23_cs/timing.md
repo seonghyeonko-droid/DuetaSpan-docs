@@ -22,6 +22,6 @@
     26.95s  user  발화 끝
     27.01s  agent 발화 시작: <ret> 그럴 수도 있어, 빠른 배송 옵션을 알아볼 수 있어.
     28.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) Morning delivery for order one oh one thousand one hundr
+    30.62s  agent 발화 시작: 주문 일 공 일 천 백 열세는 아침 배송으로 예약했고, 카드에서 십오 달러 추가됐어.
     30.71s  agent 발화 끝
-    30.83s  agent 발화 시작: 주문 일 공 일 천 백 열세는 아침 배송으로 예약했고, 카드에서 십오 달러 추가됐어.
-    37.23s  agent 발화 끝
+    37.01s  agent 발화 끝

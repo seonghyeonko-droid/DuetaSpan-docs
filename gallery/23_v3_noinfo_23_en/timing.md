@@ -22,6 +22,6 @@
     35.83s  agent 발화 시작: <ret> That’s a possibility; we can explore expedited options
     35.97s  user  발화 끝
     36.87s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.89s]: (tool result) Morning delivery for order one oh one thousand one hundr
-    39.63s  agent 발화 시작: I’ve scheduled morning delivery for order one oh one thousan
+    39.64s  agent 발화 시작: I’ve scheduled morning delivery for order one oh one thousan
     39.72s  agent 발화 끝
-    47.51s  agent 발화 끝
+    47.52s  agent 발화 끝

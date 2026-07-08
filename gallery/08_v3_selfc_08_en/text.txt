@@ -16,18 +16,18 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
       CALL: {"function": "update_promotion", "arguments": {"product_name": "premium coffee beans", "end_date": "2024-03-22"}}
 [ 46.26s][user ] What’s the current stock level on those beans?
 [ 49.11s][moshi] «interrupted» We currently have—
-[ 50.20s][moshi] ⟨ret@49.83s⟩ That’s a ⟦⚡SPAN@51.19s: (tool result) There are 150 units of "premium coffee beans" currently in stock.⟧ good question to keep track of inventory. There are one hundred and fifty units of the premium coffee beans currently in stock.
+[ 50.42s][moshi] ⟨ret@50.05s⟩ That’s a ⟦⚡SPAN@51.41s: (tool result) There are 150 units of "premium coffee beans" currently in stock.⟧ good question to keep track of inventory. There are one hundred and fifty units of the premium coffee beans currently in stock.
       CALL: {"function": "get_stock", "arguments": {"product_name": "premium coffee beans"}}
-[ 57.76s][user ] Hmm. Okay.
-[ 59.16s][moshi] Now, regarding marketing, have you thought about— I've worked with coffee cooperatives in Ethiopia, and they often emphasize the bean's origin story. It really resonates with customers.
-[ 67.95s][user ] That's interesting. Can you search for images of Ethiopian coffee ⟨ret@72.04s⟩ farms?
-[ 72.36s][moshi] I ⟦⚡SPAN@73.00s: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1-12].⟧ can certainly find some images for you. I found twelve images of Ethiopian coffee farms; the URLs are available for your review.
+[ 58.10s][user ] Hmm. Okay.
+[ 59.35s][moshi] Now, regarding marketing, have you thought about— I've worked with coffee cooperatives in Ethiopia, and they often emphasize the bean's origin story. It really resonates with customers.
+[ 68.01s][user ] That's interesting. Can you search for images of Ethiopian coffee ⟨ret@72.03s⟩ farms?
+[ 72.35s][moshi] I ⟦⚡SPAN@72.99s: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1-12].⟧ can certainly find some images for you. I found twelve images of Ethiopian coffee farms; the URLs are available for your review.
       CALL: {"function": "search_images", "arguments": {"query": "Ethiopian coffee farms"}}
-[ 80.48s][user ] Send me the first three URLs.
-[ 83.05s][moshi] ⟨ret@82.82s⟩ ⟦⚡SPAN@83.32s: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your registered email address.⟧ Certainly, I can send those right over. I’ve sent the first three image URLs to your email address.
+[ 80.54s][user ] Send me the first three URLs.
+[ 83.22s][moshi] ⟨ret@82.99s⟩ ⟦⚡SPAN@83.49s: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your registered email address.⟧ Certainly, I can send those right over. I’ve sent the first three image URLs to your email address.
       CALL: {"function": "send_urls", "arguments": {"urls": ["URL1", "URL2", "URL3"]}}
-[ 88.11s][user ] Great. What is the average rainfall in the Sidamo region?
-[ 91.91s][moshi] ⟨ret@91.84s⟩ The Sidamo region is known ⟦⚡SPAN@93.84s: ⟨ret@91.84s⟩ The Sidamo region receives an average annual rainfall of 1,500 millimeters.⟧ for its consistent rainfall, which is vital for coffee growth.
-[ 96.66s][moshi] The Sidamo region receives an average of fifteen hundred millimeters of rainfall annually.
-[101.75s][user ] That's a lot.
-[102.88s][moshi] Indeed. The consistent moisture contributes to the beans’ complex flavor profile.
+[ 89.04s][user ] Great. What is the average rainfall in the Sidamo region?
+[ 92.84s][moshi] ⟨ret@92.77s⟩ The Sidamo region is known ⟦⚡SPAN@94.77s: ⟨ret@92.77s⟩ The Sidamo region receives an average annual rainfall of 1,500 millimeters.⟧ for its consistent rainfall, which is vital for coffee growth.
+[ 97.63s][moshi] The Sidamo region receives an average of fifteen hundred millimeters of rainfall annually.
+[102.51s][user ] That's a lot.
+[103.86s][moshi] Indeed. The consistent moisture contributes to the beans’ complex flavor profile.

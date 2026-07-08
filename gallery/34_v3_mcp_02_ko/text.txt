@@ -11,15 +11,15 @@ SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파
       CALL: {"function": "maps_search_detail", "arguments": {"query": "bakeries", "location": "Tianzifang, Taikang Road, Huangpu District, Shanghai, China", "radius": "0.5 miles", "sort_by": "rating", "limit": "3"}}
 [ 38.88s][user ] 로스트 헤븐 베이커리 이름이 재밌네. 웹사이트 ⟨ret@42.23s⟩ 있어?
 [ 42.46s][moshi] [웃음] 로스트 ⟦⚡SPAN@44.23s: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.⟧ 헤븐 베이커리에 웹사이트가 있네요.
-[ 46.03s][moshi] 웹사이트 주소는 lostheaven.com.cn이에요. 메뉴랑 위치 정보가 거기 있을 거예요.
-[ 51.94s][user ] 좋다! 토요일에 갈까 생각 중이야. 몇 시에 여어?
-[ 55.53s][moshi] ⟨ret@55.47s⟩ 개점 시간을 확인해 ⟦⚡SPAN@56.67s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ 볼게요— 토요일 아침 여덟 시에 문을 열어요.
+[ 46.21s][moshi] 웹사이트 주소는 lostheaven.com.cn이에요. 메뉴랑 위치 정보가 거기 있을 거예요.
+[ 52.13s][user ] 좋다! 토요일에 갈까 생각 중이야. 몇 시에 여어?
+[ 55.81s][moshi] ⟨ret@55.75s⟩ 개점 시간을 확인해 ⟦⚡SPAN@56.95s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ 볼게요— 토요일 아침 여덟 시에 문을 열어요.
       CALL: {"function": "maps_search_detail", "arguments": {"query": "Lost Heaven Bakery", "location": "276 Wukang Road, Shanghai, China", "attribute": "opening_hours"}}
-[ 59.72s][user ] 좋네. 있냐고… 크루아상 있어?
-[ 63.10s][moshi] «interrupted» 크루아상은 기본이죠—
-[ 63.76s][user ] «interrupts_prev» 크루아상이 *맛있어*? 진짜 페이스트리처럼 ⟨ret@67.36s⟩ 바삭해?
-[ 67.67s][moshi] 오, ⟦⚡SPAN@68.48s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ 아주 중요한 질문이네요!
-[ 69.83s][moshi] 리뷰를 보니까 크루아상이 아주 바삭하고 버터 맛이 강하다고 하네요— 좋은 기술의 증거죠, 당연히.
-[ 76.11s][user ] 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 설정해 줘.
-[ 81.49s][moshi] ⟨ret@81.42s⟩ 네, ⟦⚡SPAN@82.38s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ 그렇게 해 드릴게요— 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
+[ 59.25s][user ] 좋네. 있냐고… 크루아상 있어?
+[ 62.93s][moshi] «interrupted» 크루아상은 기본이죠—
+[ 63.53s][user ] «interrupts_prev» 크루아상이 *맛있어*? 진짜 페이스트리처럼 바삭해?
+[ 67.64s][moshi] ⟨ret@67.33s⟩ 오, ⟦⚡SPAN@68.45s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ 아주 중요한 질문이네요!
+[ 69.72s][moshi] 리뷰를 보니까 크루아상이 아주 바삭하고 버터 맛이 강하다고 하네요— 좋은 기술의 증거죠, 당연히.
+[ 78.06s][user ] 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 설정해 줘.
+[ 83.50s][moshi] ⟨ret@83.43s⟩ 네, ⟦⚡SPAN@84.39s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ 그렇게 해 드릴게요— 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
       CALL: {"function": "calendar_add_event", "arguments": {"date": "Saturday", "time": "9:00 AM", "title": "Leave for Lost Heaven Bakery"}}

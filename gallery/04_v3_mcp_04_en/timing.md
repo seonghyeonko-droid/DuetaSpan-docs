@@ -60,32 +60,32 @@
    134.06s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.96s]: (tool result) Edelweiss flowers bloom from June to September, with pea
    137.80s  user  발화 시작: Right.
    138.43s  user  발화 끝
-   141.65s  agent 발화 시작: They are quite sensitive plants, actually—
+   141.56s  agent 발화 시작: They are quite sensitive plants, actually—
    141.74s  agent 발화 끝
-   143.83s  <ret> 발화 (turn22 첫 프레임)
-   144.23s  agent 발화 시작: <ret> Edelweiss are protected plants; collecting them is ill
-   144.37s  agent 발화 끝
-   145.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: Edelweiss are protected in many areas; collecting them is illegal and 
-   150.81s  agent 발화 끝
-   151.67s  user  발화 시작: I wouldn't dream of collecting them! Just photographing, of 
-   161.82s  user  발화 끝
-   161.85s  agent 발화 시작: A macro lens is definitely helpful—
-   163.86s  user  발화 시작: A macro lens… I think I have one. What’s the weather forecas
-   164.63s  agent 발화 끝
-   169.70s  <ret> 발화 (turn26 첫 프레임)
-   170.06s  user  발화 끝
-   170.10s  agent 발화 시작: <ret> Let me check the weather forecast— Tomorrow in Interla
-   170.82s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.11s]: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15
-   178.54s  agent 발화 끝
-   180.22s  user  발화 시작: Sounds lovely. Is there a good local restaurant near the Har
-   184.92s  <ret> 발화 (turn28 첫 프레임)
-   185.16s  agent 발화 시작: <ret> I can search for restaurants in that area— Restaurant 
-   185.22s  user  발화 끝
-   186.20s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.96s]: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swi
-   196.42s  user  발화 시작: Schuh… that sounds good. I think that’s all I need for now.
-   196.62s  agent 발화 끝
-   199.94s  user  발화 끝
-   200.06s  agent 발화 시작: Wonderful! I’m glad I could help you plan—
-   202.55s  user  발화 시작: Thanks, Moshi. You’ve been very helpful.
-   203.28s  agent 발화 끝
-   205.22s  user  발화 끝
+   143.71s  <ret> 발화 (turn22 첫 프레임)
+   144.11s  agent 발화 시작: <ret> Edelweiss are protected plants; collecting them is ill
+   144.28s  agent 발화 끝
+   145.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: Edelweiss are protected in many areas; collecting them is illegal and 
+   150.66s  user  발화 시작: I wouldn't dream of collecting them! Just photographing, of 
+   150.69s  agent 발화 끝
+   160.82s  user  발화 끝
+   161.08s  agent 발화 시작: A macro lens is definitely helpful—
+   163.12s  user  발화 시작: A macro lens… I think I have one. What’s the weather forecas
+   163.85s  agent 발화 끝
+   168.83s  <ret> 발화 (turn26 첫 프레임)
+   169.23s  agent 발화 시작: <ret> Let me check the weather forecast— Tomorrow in Interla
+   169.33s  user  발화 끝
+   169.95s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.11s]: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15
+   177.66s  agent 발화 끝
+   179.32s  user  발화 시작: Sounds lovely. Is there a good local restaurant near the Har
+   183.94s  <ret> 발화 (turn28 첫 프레임)
+   184.18s  agent 발화 시작: <ret> I can search for restaurants in that area— Restaurant 
+   184.32s  user  발화 끝
+   185.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.96s]: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swi
+   195.64s  agent 발화 끝
+   196.15s  user  발화 시작: Schuh… that sounds good. I think that’s all I need for now.
+   199.51s  agent 발화 시작: Wonderful! I’m glad I could help you plan—
+   199.66s  user  발화 끝
+   202.03s  user  발화 시작: Thanks, Moshi. You’ve been very helpful.
+   202.74s  agent 발화 끝
+   204.70s  user  발화 끝

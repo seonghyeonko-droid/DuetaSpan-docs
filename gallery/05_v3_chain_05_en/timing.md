@@ -28,16 +28,16 @@
     43.77s  <ret> 발화 (turn9 첫 프레임)
     44.00s  agent 발화 시작: <ret> That's a good question; let me check the amenities for
     44.89s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.58s]: (tool result) The 6:00 PM train from Atlanta to Miami has a dining car
-    48.25s  agent 발화 시작: Yes, that train does have a dining car and offers Wi-Fi acce
+    48.41s  agent 발화 시작: Yes, that train does have a dining car and offers Wi-Fi acce
     48.58s  agent 발화 끝
-    52.38s  user  발화 시작: Excellent. And what's the weather like in Miami on April fif
-    52.51s  agent 발화 끝
-    55.31s  <ret> 발화 (turn12 첫 프레임)
-    55.57s  agent 발화 시작: <ret> Let's see what the forecast is showing— The forecast p
-    55.76s  user  발화 끝
-    56.51s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.69s]: (tool result) The forecast for Miami on April fifth is 85 degrees Fahr
-    63.63s  agent 발화 끝
-    63.87s  user  발화 시작: That sounds wonderful. Is there anything I should pack speci
-    69.52s  user  발화 끝
-    69.94s  agent 발화 시작: Well, given the warmth and sunshine, lightweight clothing an
-    80.79s  agent 발화 끝
+    52.67s  agent 발화 끝
+    54.04s  user  발화 시작: Excellent. And what's the weather like in Miami on April fif
+    56.97s  <ret> 발화 (turn12 첫 프레임)
+    57.23s  agent 발화 시작: <ret> Let's see what the forecast is showing— The forecast p
+    57.42s  user  발화 끝
+    58.17s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.69s]: (tool result) The forecast for Miami on April fifth is 85 degrees Fahr
+    65.29s  agent 발화 끝
+    65.53s  user  발화 시작: That sounds wonderful. Is there anything I should pack speci
+    71.18s  user  발화 끝
+    71.59s  agent 발화 시작: Well, given the warmth and sunshine, lightweight clothing an
+    82.45s  agent 발화 끝

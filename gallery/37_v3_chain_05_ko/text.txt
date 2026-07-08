@@ -12,8 +12,8 @@ SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마
 [ 28.52s][moshi] —곧 확인 이메일을 받으실 거예요.
 [ 31.25s][user ] 그 기차에 식당칸 ⟨ret@32.50s⟩ 있어?
 [ 32.81s][moshi] ⟦⚡SPAN@33.00s: (tool result) The 6:00 PM train from Atlanta to Miami has a dining car and Wi-Fi access.⟧ —그 기차의 편의 시설을 확인해 볼게요.
-[ 34.89s][moshi] 네, 그 기차에는 식당칸이 있고 와이파이도 이용할 수 있어요.
-[ 38.96s][user ] 좋네. 4월 5일 마이애미 날씨는 ⟨ret@41.79s⟩ 어때?
-[ 42.10s][moshi] —날씨 예보를 ⟦⚡SPAN@43.71s: (tool result) The forecast for Miami on April fifth is 85 degrees Fahrenheit and sunny.⟧ 확인해 볼게요. 4월 5일 마이애미는 섭씨 29도에 맑을 것으로 예상돼요.
-[ 48.73s][user ] 정말 좋겠다. 그런 날씨에 특별히 챙겨가야 할 거 있어?
-[ 52.05s][moshi] —음, 따뜻하고 햇볕이 강하니까 가벼운 옷과 선크림은 필수예요. 모자랑 선글라스도 있으면 좋겠죠. 햇볕 차단이 얼마나 중요한지는 제가 잘 알죠.
+[ 34.88s][moshi] 네, 그 기차에는 식당칸이 있고 와이파이도 이용할 수 있어요.
+[ 38.95s][user ] 좋네. 4월 5일 마이애미 날씨는 ⟨ret@41.78s⟩ 어때?
+[ 42.09s][moshi] —날씨 예보를 ⟦⚡SPAN@43.70s: (tool result) The forecast for Miami on April fifth is 85 degrees Fahrenheit and sunny.⟧ 확인해 볼게요. 4월 5일 마이애미는 섭씨 29도에 맑을 것으로 예상돼요.
+[ 48.72s][user ] 정말 좋겠다. 그런 날씨에 특별히 챙겨가야 할 거 있어?
+[ 52.03s][moshi] —음, 따뜻하고 햇볕이 강하니까 가벼운 옷과 선크림은 필수예요. 모자랑 선글라스도 있으면 좋겠죠. 햇볕 차단이 얼마나 중요한지는 제가 잘 알죠.

@@ -4,34 +4,34 @@ SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <sy
 
 [  0.00s][user ] So, I was wondering… when did the first Harry Potter book actually come out?
 [  5.00s][moshi] That’s a very popular question, naturally.
-[  7.14s][moshi] ⟨ret@6.74s⟩ Let’s ⟦⚡SPAN@7.70s: Harry Potter and the Philosopher's Stone was first published in the United Kingdom on 26 June 1997.⟧ see if I can recall— It was first published in the United Kingdom on the twenty-sixth of June, nineteen ninety-seven.
-[ 14.14s][user ] Hmm, okay, but I thought it came out in America much later. Is that right?
-[ 18.87s][moshi] You are absolutely correct to question that.
-[ 21.10s][moshi] ⟨ret@20.87s⟩ ⟦⚡SPAN@21.59s: Harry Potter and the Sorcerer's Stone was first published in the United States on September 1, 1998.⟧ It’s important to distinguish— It was first published in the United States on September first, nineteen ninety-eight.
-[ 29.01s][user ] September first… that’s quite a gap, isn’t it? A whole year!
-[ 33.49s][moshi] A significant delay, yes. Publishing schedules can be quite complex.
-[ 37.65s][moshi] ⟨ret@37.26s⟩ Let ⟦⚡SPAN@38.38s: Scholastic Corporation acquired the US rights to publish the Harry Potter series in 1997.⟧ me explain the difference— Scholastic Corporation acquired the US rights to publish the series in nineteen ninety-seven.
-[ 47.52s][user ] So Scholastic had it for a year before releasing it? Why the hold up?
-[ 52.10s][moshi] There were several considerations at play, I believe.
-[ 54.89s][moshi] ⟨ret@54.82s⟩ They ⟦⚡SPAN@55.46s: Scholastic spent a year re-editing and re-titling the book for the American market.⟧ needed to prepare— Scholastic spent a year re-editing and re-titling the book for the American market.
-[ 61.65s][user ] Re-titling? What did they change the title to?
-[ 65.16s][moshi] It was a fairly substantial change, actually.
-[ 67.69s][moshi] ⟨ret@67.31s⟩ ⟦⚡SPAN@67.81s: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potter and the Sorcerer's Stone" for US audie⟧ The American edition— The title was changed to “Harry Potter and the Sorcerer’s Stone” for American audiences.
-[ 73.61s][user ] Sorcerer instead of Philosopher… that's interesting. Did they think American kids wouldn't understand "philosopher"?
-[ 80.65s][moshi] «interrupted» It was a marketing decision, primarily—
-[ 82.91s][moshi] ⟨ret@82.52s⟩ ⟦⚡SPAN@83.08s: Scholastic thought "sorcerer" would appeal more to American children than "philosopher."⟧ The publishers believed— Scholastic thought “sorcerer” would appeal more to American children than “philosopher”.
-[ 89.67s][user ] That makes a little sense, I guess. So, after the first book—
-[ 94.22s][moshi] «interrupted» After the initial success—
-[ 95.59s][moshi] ⟨ret@95.28s⟩ ⟦⚡SPAN@95.78s: Subsequent books in the series were published in both the UK and US nearly simultaneously.⟧ The subsequent releases— Subsequent books were published in both countries nearly simultaneously.
-[101.96s][user ] Nearly? So there were still some delays even then?
-[104.54s][moshi] «interrupted» There were occasional minor discrepancies—
-[107.16s][moshi] ⟨ret@107.08s⟩ It’s ⟦⚡SPAN@107.80s: Minor publication date differences occurred due to shipping and distribution logistics.⟧ not unusual— Minor publication date differences occurred due to shipping and distribution logistics.
-[113.12s][user ] Right, shipping makes sense. I wonder if that affected the hype at all…—
-[117.26s][moshi] «interrupted» It certainly could have—
-[118.11s][moshi] ⟨ret@118.04s⟩ The anticipation ⟦⚡SPAN@119.24s: The initial delay created significant anticipation and demand for the first book in the US.⟧ was— The initial delay created significant anticipation and demand for the first book.
-[125.05s][user ] But did J.K. Rowling know about all this, about the changes and the delays?
-[130.58s][moshi] «interrupted» Oh, absolutely—
-[132.05s][moshi] ⟨ret@131.74s⟩ ⟦⚡SPAN@132.46s: J.K. Rowling was consulted on the title change and remained involved in the US publishing process.⟧ She was certainly— J.K. Rowling was consulted on the title change and involved in the US process.
-[137.84s][user ] That's good to know she had some say in it. So, the Sorcerer’s Stone version is the one most Americans grew up with?
-[144.99s][moshi] Precisely. That’s the version that became iconic here.
-[148.70s][moshi] ⟨ret@148.62s⟩ ⟦⚡SPAN@149.18s: "Harry Potter and the Sorcerer's Stone" became the defining edition for the vast majority of American readers.⟧ It’s the edition— “Harry Potter and the Sorcerer’s Stone” became the defining edition for most American readers.
+[  7.39s][moshi] ⟨ret@6.99s⟩ Let’s ⟦⚡SPAN@7.95s: Harry Potter and the Philosopher's Stone was first published in the United Kingdom on 26 June 1997.⟧ see if I can recall— It was first published in the United Kingdom on the twenty-sixth of June, nineteen ninety-seven.
+[ 14.62s][user ] Hmm, okay, but I thought it came out in America much later. Is that right?
+[ 18.99s][moshi] You are absolutely correct to question that.
+[ 21.44s][moshi] ⟨ret@21.21s⟩ ⟦⚡SPAN@21.93s: Harry Potter and the Sorcerer's Stone was first published in the United States on September 1, 1998.⟧ It’s important to distinguish— It was first published in the United States on September first, nineteen ninety-eight.
+[ 29.36s][user ] September first… that’s quite a gap, isn’t it? A whole year!
+[ 33.84s][moshi] A significant delay, yes. Publishing schedules can be quite complex.
+[ 38.24s][moshi] ⟨ret@37.85s⟩ Let ⟦⚡SPAN@38.97s: Scholastic Corporation acquired the US rights to publish the Harry Potter series in 1997.⟧ me explain the difference— Scholastic Corporation acquired the US rights to publish the series in nineteen ninety-seven.
+[ 45.95s][user ] So Scholastic had it for a year before releasing it? Why the hold up?
+[ 50.61s][moshi] There were several considerations at play, I believe.
+[ 53.51s][moshi] ⟨ret@53.44s⟩ They ⟦⚡SPAN@54.08s: Scholastic spent a year re-editing and re-titling the book for the American market.⟧ needed to prepare— Scholastic spent a year re-editing and re-titling the book for the American market.
+[ 61.25s][user ] Re-titling? What did they change the title to?
+[ 64.79s][moshi] It was a fairly substantial change, actually.
+[ 67.41s][moshi] ⟨ret@67.02s⟩ ⟦⚡SPAN@67.52s: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potter and the Sorcerer's Stone" for US audie⟧ The American edition— The title was changed to “Harry Potter and the Sorcerer’s Stone” for American audiences.
+[ 73.60s][user ] Sorcerer instead of Philosopher… that's interesting. Did they think American kids wouldn't understand "philosopher"?
+[ 80.33s][moshi] «interrupted» It was a marketing decision, primarily—
+[ 82.56s][moshi] ⟨ret@82.16s⟩ ⟦⚡SPAN@82.72s: Scholastic thought "sorcerer" would appeal more to American children than "philosopher."⟧ The publishers believed— Scholastic thought “sorcerer” would appeal more to American children than “philosopher”.
+[ 89.47s][user ] That makes a little sense, I guess. So, after the first book—
+[ 94.48s][moshi] «interrupted» After the initial success—
+[ 96.09s][moshi] ⟨ret@95.78s⟩ ⟦⚡SPAN@96.28s: Subsequent books in the series were published in both the UK and US nearly simultaneously.⟧ The subsequent releases— Subsequent books were published in both countries nearly simultaneously.
+[102.73s][user ] Nearly? So there were still some delays even then?
+[105.37s][moshi] «interrupted» There were occasional minor discrepancies—
+[108.02s][moshi] ⟨ret@107.94s⟩ It’s ⟦⚡SPAN@108.66s: Minor publication date differences occurred due to shipping and distribution logistics.⟧ not unusual— Minor publication date differences occurred due to shipping and distribution logistics.
+[114.34s][user ] Right, shipping makes sense. I wonder if that affected the hype at all…—
+[118.37s][moshi] «interrupted» It certainly could have—
+[119.45s][moshi] ⟨ret@119.38s⟩ The anticipation ⟦⚡SPAN@120.58s: The initial delay created significant anticipation and demand for the first book in the US.⟧ was— The initial delay created significant anticipation and demand for the first book.
+[126.81s][user ] But did J.K. Rowling know about all this, about the changes and the delays?
+[131.96s][moshi] «interrupted» Oh, absolutely—
+[133.06s][moshi] ⟨ret@132.75s⟩ ⟦⚡SPAN@133.47s: J.K. Rowling was consulted on the title change and remained involved in the US publishing process.⟧ She was certainly— J.K. Rowling was consulted on the title change and involved in the US process.
+[139.10s][user ] That's good to know she had some say in it. So, the Sorcerer’s Stone version is the one most Americans grew up with?
+[146.31s][moshi] Precisely. That’s the version that became iconic here.
+[149.99s][moshi] ⟨ret@149.91s⟩ ⟦⚡SPAN@150.47s: "Harry Potter and the Sorcerer's Stone" became the defining edition for the vast majority of American readers.⟧ It’s the edition— “Harry Potter and the Sorcerer’s Stone” became the defining edition for most American readers.

@@ -12,12 +12,12 @@
     20.50s  agent 발화 시작: <ret> Of course.
     20.66s  user  발화 끝
     21.38s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.10s]: (tool result) The two PM alarm has been deleted.
+    21.44s  agent 발화 시작: The two PM alarm has now been successfully cancelled for you
     21.60s  agent 발화 끝
-    22.02s  agent 발화 시작: The two PM alarm has now been successfully cancelled for you
-    26.09s  agent 발화 끝
-    26.17s  user  발화 시작: Great, thanks. What time is it in Nuuk, Greenland right now?
-    29.57s  <ret> 발화 (turn6 첫 프레임)
-    29.97s  agent 발화 시작: <ret> That's a good question—I’ll check the current time the
-    30.09s  user  발화 끝
-    31.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) The time in Nuuk, Greenland is currently 7:48 PM.
-    42.21s  agent 발화 끝
+    25.51s  agent 발화 끝
+    25.54s  user  발화 시작: Great, thanks. What time is it in Nuuk, Greenland right now?
+    28.99s  <ret> 발화 (turn6 첫 프레임)
+    29.39s  agent 발화 시작: <ret> That's a good question—I’ll check the current time the
+    29.47s  user  발화 끝
+    30.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) The time in Nuuk, Greenland is currently 7:48 PM.
+    41.63s  agent 발화 끝

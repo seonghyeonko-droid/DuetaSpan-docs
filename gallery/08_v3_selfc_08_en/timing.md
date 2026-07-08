@@ -28,36 +28,36 @@
     46.32s  agent 발화 끝
     49.03s  user  발화 끝
     49.11s  agent 발화 시작: We currently have—
-    49.83s  <ret> 발화 (turn10 첫 프레임)
-    50.20s  agent 발화 시작: <ret> That’s a good question to keep track of inventory. The
+    50.05s  <ret> 발화 (turn10 첫 프레임)
+    50.42s  agent 발화 시작: <ret> That’s a good question to keep track of inventory. The
     50.49s  agent 발화 끝
-    51.19s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.83s]: (tool result) There are 150 units of "premium coffee beans" currently 
-    57.75s  agent 발화 끝
-    57.76s  user  발화 시작: Hmm. Okay.
-    59.16s  agent 발화 시작: Now, regarding marketing, have you thought about— I've worke
-    59.19s  user  발화 끝
-    67.95s  user  발화 시작: That's interesting. Can you search for images of Ethiopian c
-    68.02s  agent 발화 끝
-    72.04s  <ret> 발화 (turn14 첫 프레임)
-    72.36s  agent 발화 시작: <ret> I can certainly find some images for you. I found twel
-    72.48s  user  발화 끝
-    73.00s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.74s]: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1
-    80.24s  agent 발화 끝
-    80.48s  user  발화 시작: Send me the first three URLs.
-    82.82s  <ret> 발화 (turn16 첫 프레임)
-    83.05s  agent 발화 시작: <ret> Certainly, I can send those right over. I’ve sent the 
-    83.07s  user  발화 끝
-    83.32s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.89s]: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your regist
-    87.91s  agent 발화 끝
-    88.11s  user  발화 시작: Great. What is the average rainfall in the Sidamo region?
-    91.84s  <ret> 발화 (turn18 첫 프레임)
-    91.90s  user  발화 끝
-    91.91s  agent 발화 시작: <ret> The Sidamo region is known for its consistent rainfall
-    93.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: <ret> The Sidamo region receives an average annual rainfall of 1,500 m
-    96.66s  agent 발화 시작: The Sidamo region receives an average of fifteen hundred mil
-    96.77s  agent 발화 끝
-   101.75s  user  발화 시작: That's a lot.
-   101.81s  agent 발화 끝
-   102.88s  agent 발화 시작: Indeed. The consistent moisture contributes to the beans’ co
-   103.04s  user  발화 끝
-   107.42s  agent 발화 끝
+    51.41s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.83s]: (tool result) There are 150 units of "premium coffee beans" currently 
+    57.97s  agent 발화 끝
+    58.10s  user  발화 시작: Hmm. Okay.
+    59.35s  agent 발화 시작: Now, regarding marketing, have you thought about— I've worke
+    59.53s  user  발화 끝
+    68.01s  user  발화 시작: That's interesting. Can you search for images of Ethiopian c
+    68.21s  agent 발화 끝
+    72.03s  <ret> 발화 (turn14 첫 프레임)
+    72.35s  agent 발화 시작: <ret> I can certainly find some images for you. I found twel
+    72.55s  user  발화 끝
+    72.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.74s]: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1
+    80.23s  agent 발화 끝
+    80.54s  user  발화 시작: Send me the first three URLs.
+    82.99s  <ret> 발화 (turn16 첫 프레임)
+    83.12s  user  발화 끝
+    83.22s  agent 발화 시작: <ret> Certainly, I can send those right over. I’ve sent the 
+    83.49s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.89s]: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your regist
+    88.08s  agent 발화 끝
+    89.04s  user  발화 시작: Great. What is the average rainfall in the Sidamo region?
+    92.77s  <ret> 발화 (turn18 첫 프레임)
+    92.83s  user  발화 끝
+    92.84s  agent 발화 시작: <ret> The Sidamo region is known for its consistent rainfall
+    94.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: <ret> The Sidamo region receives an average annual rainfall of 1,500 m
+    97.63s  agent 발화 시작: The Sidamo region receives an average of fifteen hundred mil
+    97.70s  agent 발화 끝
+   102.51s  user  발화 시작: That's a lot.
+   102.77s  agent 발화 끝
+   103.80s  user  발화 끝
+   103.86s  agent 발화 시작: Indeed. The consistent moisture contributes to the beans’ co
+   108.39s  agent 발화 끝

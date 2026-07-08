@@ -8,26 +8,26 @@ SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral
 [ 16.31s][user ] Ten PM is really late. Are there any ⟨ret@19.77s⟩ earlier buses?
 [ 20.17s][moshi] Let’s see what other ⟦⚡SPAN@21.77s: (tool result) Buses depart Los Angeles for San Francisco at noon, two PM, four PM, and eight PM on August fift⟧ options are available on that day.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth"}}
-[ 23.25s][moshi] Buses depart at noon, two PM, four PM, and eight PM on August fifteenth.
-[ 29.74s][user ] Hmm, the noon bus sounds good. How much is that one?
-[ 33.87s][moshi] ⟨ret@33.80s⟩ I can certainly ⟦⚡SPAN@35.08s: (tool result) The noon bus costs two hundred dollars for four passengers.⟧ check the price for the noon departure. The noon bus costs two hundred dollars for all four of you.
+[ 23.58s][moshi] Buses depart at noon, two PM, four PM, and eight PM on August fifteenth.
+[ 29.39s][user ] Hmm, the noon bus sounds good. How much is that ⟨ret@33.31s⟩ one?
+[ 33.38s][moshi] I can certainly ⟦⚡SPAN@34.59s: (tool result) The noon bus costs two hundred dollars for four passengers.⟧ check the price for the noon departure. The noon bus costs two hundred dollars for all four of you.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "noon"}}
-[ 40.13s][user ] Okay, let's book the noon ⟨ret@41.93s⟩ bus.
-[ 42.32s][moshi] [laugh] Excellent! I’m ⟦⚡SPAN@43.77s: (tool result) Your booking is confirmed: confirmation number is 789456, departing noon August fifteenth.⟧ happy to finalize that for you.
+[ 40.06s][user ] Okay, let's book the noon ⟨ret@41.86s⟩ bus.
+[ 42.25s][moshi] [laugh] Excellent! I’m ⟦⚡SPAN@43.70s: (tool result) Your booking is confirmed: confirmation number is 789456, departing noon August fifteenth.⟧ happy to finalize that for you.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "noon", "action": "book"}}
-[ 45.73s][moshi] Your booking is confirmed with confirmation number 789456.
-[ 51.41s][user ] Great! Can you send me the ⟨ret@53.90s⟩ details?
-[ 54.29s][moshi] Certainly, I can send ⟦⚡SPAN@55.90s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation".⟧ those to your registered email address.
+[ 45.76s][moshi] Your booking is confirmed with confirmation number 789456.
+[ 50.37s][user ] Great! Can you send me the ⟨ret@52.88s⟩ details?
+[ 53.27s][moshi] Certainly, I can send ⟦⚡SPAN@54.88s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation".⟧ those to your registered email address.
       CALL: {"function": "Email_2_SendEmail", "arguments": {"recipient": "user@example.com", "subject": "Bus Booking Confirmation", "body": "Confirmation number 789456, departing noon August fifteenth from Los Angeles to San Francisco."}}
-[ 57.99s][moshi] The email with your booking details has just been sent.
-[ 60.84s][user ] Perfect. That’s really helpful. Actually, um, do coral reefs help protect coastlines from erosion?
-[ 67.99s][moshi] They absolutely do. Coral reefs act as natural barriers, dissipating wave energy.
-[ 74.66s][user ] But how much erosion do they actually prevent? I— I mean, is it a significant ⟨ret@80.45s⟩ amount?
-[ 80.77s][moshi] That’s a very ⟦⚡SPAN@82.37s: (tool result) Coral reefs reduce wave energy by ninety-seven percent, decreasing coastal erosion.⟧ important question, regarding coastal protection. Coral reefs can reduce wave energy by as much as ninety-seven percent.
-[ 89.38s][user ] Wow, ninety-seven percent! That's incredible. So, what happens if reefs are damaged or destroyed?
-[ 97.46s][moshi] The coastline becomes significantly more vulnerable to storms and erosion. It’s a serious issue.
-[105.12s][user ] [sigh] It sounds pretty dire. Is there anything being done to restore damaged reefs?
-[111.06s][moshi] Many restoration projects are underway, including coral gardening and artificial reef construction.
-[116.69s][user ] Coral gardening… that sounds interesting. How does that work?
-[120.53s][moshi] It involves growing coral fragments in nurseries and then transplanting them back onto degraded reefs.
-[128.48s][user ] That's… actually really clever. It's good to hear there are efforts being made.
+[ 56.47s][moshi] The email with your booking details has just been sent.
+[ 60.75s][user ] Perfect. That’s really helpful. Actually, um, do coral reefs help protect coastlines from erosion?
+[ 68.24s][moshi] They absolutely do. Coral reefs act as natural barriers, dissipating wave energy.
+[ 74.06s][user ] But how much erosion do they actually prevent? I— I mean, is it a significant ⟨ret@79.80s⟩ amount?
+[ 80.12s][moshi] That’s a very ⟦⚡SPAN@81.72s: (tool result) Coral reefs reduce wave energy by ninety-seven percent, decreasing coastal erosion.⟧ important question, regarding coastal protection. Coral reefs can reduce wave energy by as much as ninety-seven percent.
+[ 89.16s][user ] Wow, ninety-seven percent! That's incredible. So, what happens if reefs are damaged or destroyed?
+[ 97.21s][moshi] The coastline becomes significantly more vulnerable to storms and erosion. It’s a serious issue.
+[103.64s][user ] [sigh] It sounds pretty dire. Is there anything being done to restore damaged reefs?
+[109.80s][moshi] Many restoration projects are underway, including coral gardening and artificial reef construction.
+[117.11s][user ] Coral gardening… that sounds interesting. How does that work?
+[120.90s][moshi] It involves growing coral fragments in nurseries and then transplanting them back onto degraded reefs.
+[126.77s][user ] That's… actually really clever. It's good to hear there are efforts being made.

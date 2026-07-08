@@ -8,6 +8,6 @@ SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <sy
 [ 18.01s][moshi] «interrupted» She was an outside hitter, known for her powerful spikes and consistent play—
 [ 22.53s][user ] «interrupts_prev» Was she also named best scorer that season?
 [ 25.54s][moshi] «interrupted» That’s an excellent follow-up question; let me check—
-[ 29.25s][moshi] ⟨ret@28.94s⟩ Indeed, Jelly ⟦⚡SPAN@30.30s: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP Season 71.⟧ Buan was awarded both Rookie of the Year and Best Scorer that season.
-[ 33.32s][user ] «backchannel» Mm-hmm.
-[ 35.32s][moshi] It was quite a debut season for her, a very impressive performance— she really stood out.
+[ 29.14s][moshi] ⟨ret@28.83s⟩ Indeed, Jelly ⟦⚡SPAN@30.19s: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP Season 71.⟧ Buan was awarded both Rookie of the Year and Best Scorer that season.
+[ 33.20s][user ] «backchannel» Mm-hmm.
+[ 35.29s][moshi] It was quite a debut season for her, a very impressive performance— she really stood out.

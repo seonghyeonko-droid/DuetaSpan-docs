@@ -28,16 +28,16 @@
     32.81s  agent 발화 시작: <ret> —그 기차의 편의 시설을 확인해 볼게요.
     32.91s  user  발화 끝
     33.00s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.16s]: (tool result) The 6:00 PM train from Atlanta to Miami has a dining car
-    34.89s  agent 발화 시작: 네, 그 기차에는 식당칸이 있고 와이파이도 이용할 수 있어요.
+    34.88s  agent 발화 시작: 네, 그 기차에는 식당칸이 있고 와이파이도 이용할 수 있어요.
     34.97s  agent 발화 끝
-    38.82s  agent 발화 끝
-    38.96s  user  발화 시작: 좋네. 4월 5일 마이애미 날씨는 어때?
-    41.79s  <ret> 발화 (turn12 첫 프레임)
-    42.10s  agent 발화 시작: <ret> —날씨 예보를 확인해 볼게요. 4월 5일 마이애미는 섭씨 29도에 맑을 것으로 예상돼요.
-    42.38s  user  발화 끝
-    43.71s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.86s]: (tool result) The forecast for Miami on April fifth is 85 degrees Fahr
-    48.72s  agent 발화 끝
-    48.73s  user  발화 시작: 정말 좋겠다. 그런 날씨에 특별히 챙겨가야 할 거 있어?
-    52.05s  agent 발화 시작: —음, 따뜻하고 햇볕이 강하니까 가벼운 옷과 선크림은 필수예요. 모자랑 선글라스도 있으면 좋겠죠. 햇볕 차단
-    52.29s  user  발화 끝
-    62.67s  agent 발화 끝
+    38.81s  agent 발화 끝
+    38.95s  user  발화 시작: 좋네. 4월 5일 마이애미 날씨는 어때?
+    41.78s  <ret> 발화 (turn12 첫 프레임)
+    42.09s  agent 발화 시작: <ret> —날씨 예보를 확인해 볼게요. 4월 5일 마이애미는 섭씨 29도에 맑을 것으로 예상돼요.
+    42.37s  user  발화 끝
+    43.70s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.86s]: (tool result) The forecast for Miami on April fifth is 85 degrees Fahr
+    48.71s  agent 발화 끝
+    48.72s  user  발화 시작: 정말 좋겠다. 그런 날씨에 특별히 챙겨가야 할 거 있어?
+    52.03s  agent 발화 시작: —음, 따뜻하고 햇볕이 강하니까 가벼운 옷과 선크림은 필수예요. 모자랑 선글라스도 있으면 좋겠죠. 햇볕 차단
+    52.28s  user  발화 끝
+    62.66s  agent 발화 끝

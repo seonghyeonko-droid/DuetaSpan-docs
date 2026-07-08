@@ -14,12 +14,12 @@
     23.28s  agent 발화 끝
     25.49s  user  발화 끝
     25.54s  agent 발화 시작: That’s an excellent follow-up question; let me check—
-    28.94s  <ret> 발화 (turn6 첫 프레임)
+    28.83s  <ret> 발화 (turn6 첫 프레임)
+    29.14s  agent 발화 시작: <ret> Indeed, Jelly Buan was awarded both Rookie of the Year
     29.24s  agent 발화 끝
-    29.25s  agent 발화 시작: <ret> Indeed, Jelly Buan was awarded both Rookie of the Year
-    30.30s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.26s]: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP S
-    33.32s  user  발화 시작: Mm-hmm.
-    33.95s  user  발화 끝
-    35.32s  agent 발화 시작: It was quite a debut season for her, a very impressive perfo
-    35.51s  agent 발화 끝
-    41.11s  agent 발화 끝
+    30.19s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.26s]: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP S
+    33.20s  user  발화 시작: Mm-hmm.
+    33.84s  user  발화 끝
+    35.29s  agent 발화 시작: It was quite a debut season for her, a very impressive perfo
+    35.40s  agent 발화 끝
+    41.08s  agent 발화 끝

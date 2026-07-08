@@ -23,5 +23,5 @@
     20.77s  user  발화 끝
     21.35s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.59s]: (tool result) Morning delivery for order one oh one thousand one hundr
     23.29s  agent 발화 끝
-    23.34s  agent 발화 시작: 일 공 일 천 백 열세 주문은 아침 배송으로 예약했고, 카드에서 십오 달러 추가됐어.
-    29.45s  agent 발화 끝
+    23.30s  agent 발화 시작: 일 공 일 천 백 열세 주문은 아침 배송으로 예약했고, 카드에서 십오 달러 추가됐어.
+    29.41s  agent 발화 끝

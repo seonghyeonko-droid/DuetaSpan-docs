@@ -12,16 +12,16 @@
     23.99s  agent 발화 시작: <ret> Prices do vary, of course—it depends on demand and the
     24.28s  user  발화 끝
     25.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) A Peugeot 208 is available for fifty-five euros per day 
-    27.40s  agent 발화 시작: Sixt offers a Peugeot 208 for fifty-five euros a day, meetin
+    27.73s  agent 발화 시작: Sixt offers a Peugeot 208 for fifty-five euros a day, meetin
     27.92s  agent 발화 끝
-    33.14s  agent 발화 끝
-    33.36s  user  발화 시작: Fifty-five euros sounds much better. Okay, let’s book the Pe
-    38.11s  <ret> 발화 (turn6 첫 프레임)
-    38.27s  agent 발화 시작: <ret> Excellent—a good deal is always satisfying. Your Peuge
-    38.41s  user  발화 끝
-    39.63s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.71s]: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation num
-    47.31s  agent 발화 끝
-    47.52s  user  발화 시작: Wonderful! Thank you.
-    49.41s  user  발화 끝
-    49.54s  agent 발화 시작: You’re most welcome. Reminds me of a time I was
-    52.77s  agent 발화 끝
+    33.39s  user  발화 시작: Fifty-five euros sounds much better. Okay, let’s book the Pe
+    33.47s  agent 발화 끝
+    38.16s  <ret> 발화 (turn6 첫 프레임)
+    38.32s  agent 발화 시작: <ret> Excellent—a good deal is always satisfying. Your Peuge
+    38.44s  user  발화 끝
+    39.68s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.71s]: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation num
+    47.33s  user  발화 시작: Wonderful! Thank you.
+    47.35s  agent 발화 끝
+    49.22s  user  발화 끝
+    49.35s  agent 발화 시작: You’re most welcome. Reminds me of a time I was
+    52.59s  agent 발화 끝

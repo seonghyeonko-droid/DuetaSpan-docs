@@ -32,52 +32,52 @@
     62.23s  agent 발화 시작: <ret> It is, particularly in certain regions.
     62.29s  user  발화 끝
     63.11s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.96s]: Several African countries, including the Democratic Republic of the Co
+    65.14s  agent 발화 시작: The Democratic Republic of the Congo and other African natio
     65.19s  agent 발화 끝
-    65.20s  agent 발화 시작: The Democratic Republic of the Congo and other African natio
-    70.58s  user  발화 시작: Is it treatable? I mean, can it be cured?
-    70.71s  agent 발화 끝
-    73.73s  user  발화 끝
-    73.87s  agent 발화 시작: Absolutely, with early diagnosis and multidrug therapy.
-    77.66s  user  발화 시작: Multidrug therapy… what does that involve?
-    77.80s  agent 발화 끝
-    80.65s  <ret> 발화 (turn16 첫 프레임)
-    80.80s  agent 발화 시작: <ret> It's a combination of antibiotics… The standard treatm
-    80.80s  user  발화 끝
-    81.69s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.95s]: Multidrug therapy for leprosy typically involves dapsone, rifampicin, 
-    89.04s  user  발화 시작: Those are… long names.
-    89.05s  agent 발화 끝
-    91.21s  user  발화 끝
-    91.26s  agent 발화 시작: They are, and adherence to the full course is vital to preve
-    96.12s  agent 발화 끝
-    96.65s  user  발화 시작: But if you catch it early, you can fully recover?
-    99.68s  agent 발화 시작: Yes, early intervention is absolutely key—
-    99.80s  user  발화 끝
-   102.32s  user  발화 시작: But what about the stigma? I read something about people bei
-   102.96s  agent 발화 끝
-   107.17s  agent 발화 시작: That's a tragically persistent problem. Historically, and ev
-   107.23s  user  발화 끝
-   114.77s  agent 발화 끝
-   114.85s  user  발화 시작: That's awful. So even with a cure, people still suffer.
-   119.05s  agent 발화 시작: Unfortunately, yes. The social consequences can be as debili
-   119.11s  user  발화 끝
-   125.54s  agent 발화 끝
-   126.78s  user  발화 시작: Is there anything being done to combat the stigma?
-   130.01s  user  발화 끝
-   130.42s  agent 발화 시작: Many organizations are working on education and advocacy pro
-   136.63s  agent 발화 끝
-   137.20s  user  발화 시작: That’s good to hear. What about prevention?
-   139.94s  <ret> 발화 (turn28 첫 프레임)
-   140.18s  agent 발화 시작: <ret> Prevention strategies focus on early detection and tre
-   140.30s  user  발화 끝
-   141.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: BCG vaccination offers some protection against leprosy, but its effect
-   149.21s  agent 발화 끝
-   149.31s  user  발화 시작: Limited protection……
-   150.82s  user  발화 끝
-   150.96s  user  발화 시작: …so it's not a guaranteed safeguard?
-   153.39s  agent 발화 시작: It’s not, but it can reduce the severity of the disease in s
-   153.45s  user  발화 끝
-   157.74s  agent 발화 끝
-   157.97s  user  발화 시작: So, focusing on finding cases early is still the best approa
-   162.93s  agent 발화 시작: Precisely. Proactive case finding and accessible treatment r
-   162.93s  user  발화 끝
-   169.51s  agent 발화 끝
+    70.47s  user  발화 시작: Is it treatable? I mean, can it be cured?
+    70.65s  agent 발화 끝
+    73.42s  agent 발화 시작: Absolutely, with early diagnosis and multidrug therapy.
+    73.62s  user  발화 끝
+    77.35s  agent 발화 끝
+    78.11s  user  발화 시작: Multidrug therapy… what does that involve?
+    80.89s  <ret> 발화 (turn16 첫 프레임)
+    81.04s  agent 발화 시작: <ret> It's a combination of antibiotics… The standard treatm
+    81.25s  user  발화 끝
+    81.93s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.95s]: Multidrug therapy for leprosy typically involves dapsone, rifampicin, 
+    89.30s  agent 발화 끝
+    89.67s  user  발화 시작: Those are… long names.
+    91.84s  user  발화 끝
+    92.27s  agent 발화 시작: They are, and adherence to the full course is vital to preve
+    97.01s  user  발화 시작: But if you catch it early, you can fully recover?
+    97.13s  agent 발화 끝
+   100.01s  agent 발화 시작: Yes, early intervention is absolutely key—
+   100.16s  user  발화 끝
+   102.66s  user  발화 시작: But what about the stigma? I read something about people bei
+   103.28s  agent 발화 끝
+   107.56s  agent 발화 시작: That's a tragically persistent problem. Historically, and ev
+   107.57s  user  발화 끝
+   115.16s  agent 발화 끝
+   116.61s  user  발화 시작: That's awful. So even with a cure, people still suffer.
+   120.87s  user  발화 끝
+   121.21s  agent 발화 시작: Unfortunately, yes. The social consequences can be as debili
+   127.70s  agent 발화 끝
+   127.79s  user  발화 시작: Is there anything being done to combat the stigma?
+   130.92s  agent 발화 시작: Many organizations are working on education and advocacy pro
+   131.03s  user  발화 끝
+   137.12s  agent 발화 끝
+   138.44s  user  발화 시작: That’s good to hear. What about prevention?
+   141.44s  <ret> 발화 (turn28 첫 프레임)
+   141.53s  user  발화 끝
+   141.68s  agent 발화 시작: <ret> Prevention strategies focus on early detection and tre
+   143.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: BCG vaccination offers some protection against leprosy, but its effect
+   150.71s  agent 발화 끝
+   151.25s  user  발화 시작: Limited protection……
+   152.77s  user  발화 끝
+   153.37s  user  발화 시작: …so it's not a guaranteed safeguard?
+   155.74s  agent 발화 시작: It’s not, but it can reduce the severity of the disease in s
+   155.87s  user  발화 끝
+   159.99s  user  발화 시작: So, focusing on finding cases early is still the best approa
+   160.09s  agent 발화 끝
+   164.87s  agent 발화 시작: Precisely. Proactive case finding and accessible treatment r
+   164.95s  user  발화 끝
+   171.46s  agent 발화 끝

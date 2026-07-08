@@ -8,9 +8,9 @@ SYSTEM: <system> You are a retired airline pilot who loves recounting stories fr
 [ 18.90s][user ] Hmm, seventy-eight euros a day… that’s a bit steep. Are there any ⟨ret@23.60s⟩ cheaper options?
 [ 23.99s][moshi] Prices do vary, of ⟦⚡SPAN@25.60s: (tool result) A Peugeot 208 is available for fifty-five euros per day from Sixt.⟧ course—it depends on demand and the rental company.
       CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"pickup_location": "Paris", "car_type": "hatchback", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "max_price": "60"}}
-[ 27.40s][moshi] Sixt offers a Peugeot 208 for fifty-five euros a day, meeting your price preference.
-[ 33.36s][user ] Fifty-five euros sounds much better. Okay, let’s book the ⟨ret@38.11s⟩ Peugeot.
-[ 38.27s][moshi] Excellent—a good ⟦⚡SPAN@39.63s: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation number is ZX87RT.⟧ deal is always satisfying. Your Peugeot 208 is now booked with Sixt, and your confirmation number is ZX87RT.
+[ 27.73s][moshi] Sixt offers a Peugeot 208 for fifty-five euros a day, meeting your price preference.
+[ 33.39s][user ] Fifty-five euros sounds much better. Okay, let’s book the ⟨ret@38.16s⟩ Peugeot.
+[ 38.32s][moshi] Excellent—a good ⟦⚡SPAN@39.68s: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation number is ZX87RT.⟧ deal is always satisfying. Your Peugeot 208 is now booked with Sixt, and your confirmation number is ZX87RT.
       CALL: {"function": "RentalCars_3_BookCar", "arguments": {"pickup_location": "Paris", "car_type": "Peugeot 208", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "rental_company": "Sixt"}}
-[ 47.52s][user ] Wonderful! Thank you.
-[ 49.54s][moshi] You’re most welcome. Reminds me of a time I was
+[ 47.33s][user ] Wonderful! Thank you.
+[ 49.35s][moshi] You’re most welcome. Reminds me of a time I was

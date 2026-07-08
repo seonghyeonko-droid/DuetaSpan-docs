@@ -11,15 +11,15 @@ SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <sy
       CALL: {"function": "maps_search_detail", "arguments": {"query": "bakeries", "location": "Tianzifang, Taikang Road, Huangpu District, Shanghai, China", "radius": "0.5 miles", "sort_by": "rating", "limit": "3"}}
 [ 40.61s][user ] Lost Heaven Bakery sounds interesting. Do they have a ⟨ret@44.04s⟩ website?
 [ 44.44s][moshi] [happy] Lost ⟦⚡SPAN@45.56s: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.⟧ Heaven Bakery does indeed have a website.
-[ 47.62s][moshi] Their website address is lostheaven.com.cn. You’ll find their menu and location details there.
-[ 54.81s][user ] Great! I'm thinking of going on Saturday. What time do they ⟨ret@58.55s⟩ open?
-[ 58.87s][moshi] ⟦⚡SPAN@59.05s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ Let me check their opening hours for— They open at eight o'clock in the morning on Saturdays.
+[ 47.56s][moshi] Their website address is lostheaven.com.cn. You’ll find their menu and location details there.
+[ 54.69s][user ] Great! I'm thinking of going on Saturday. What time do they ⟨ret@58.49s⟩ open?
+[ 58.81s][moshi] ⟦⚡SPAN@58.99s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ Let me check their opening hours for— They open at eight o'clock in the morning on Saturdays.
       CALL: {"function": "maps_search_detail", "arguments": {"query": "Lost Heaven Bakery", "location": "276 Wukang Road, Shanghai, China", "attribute": "opening_hours"}}
-[ 64.56s][user ] Perfect. I— I mean, do they have croissants?
-[ 67.70s][moshi] «interrupted» Croissants are a staple—
-[ 68.84s][user ] «interrupts_prev» Are they *good* croissants? Like, really ⟨ret@71.66s⟩ flaky?
-[ 71.98s][moshi] Oh, ⟦⚡SPAN@72.62s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ a very important question!
-[ 74.15s][moshi] Reviews indicate their croissants are exceptionally flaky and buttery— a sign of good technique, naturally.
-[ 82.64s][user ] Wonderful! I think I'll definitely go there. Can you put a reminder in my calendar for Saturday at 9 AM to leave for Lost Heaven Bakery?
-[ 89.75s][moshi] ⟨ret@89.68s⟩ Absolutely, I ⟦⚡SPAN@90.64s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ can set that for you— A reminder has been added to your calendar for Saturday at nine in the morning.
+[ 64.41s][user ] Perfect. I— I mean, do they have croissants?
+[ 67.52s][moshi] «interrupted» Croissants are a staple—
+[ 68.62s][user ] «interrupts_prev» Are they *good* croissants? Like, really ⟨ret@71.52s⟩ flaky?
+[ 71.84s][moshi] Oh, ⟦⚡SPAN@72.48s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ a very important question!
+[ 74.02s][moshi] Reviews indicate their croissants are exceptionally flaky and buttery— a sign of good technique, naturally.
+[ 80.97s][user ] Wonderful! I think I'll definitely go there. Can you put a reminder in my calendar for Saturday at 9 AM to leave for Lost Heaven Bakery?
+[ 88.08s][moshi] ⟨ret@88.01s⟩ Absolutely, I ⟦⚡SPAN@88.97s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ can set that for you— A reminder has been added to your calendar for Saturday at nine in the morning.
       CALL: {"function": "calendar_add_event", "arguments": {"date": "Saturday", "time": "9:00 AM", "title": "Leave for Lost Heaven Bakery"}}

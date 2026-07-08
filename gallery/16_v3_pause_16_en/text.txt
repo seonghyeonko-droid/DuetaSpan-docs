@@ -14,25 +14,25 @@ SYSTEM: <system> You are a veteran architect who specializes in sustainable urba
 [ 50.41s][moshi] ⟨ret@50.34s⟩ Yes, ⟦⚡SPAN@51.05s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ several other nations also face challenges. Brazil and Indonesia are the next most affected countries after India.
 [ 58.40s][user ] What about Africa? I’ve heard it’s a problem there ⟨ret@61.91s⟩ too.
 [ 62.23s][moshi] It ⟦⚡SPAN@63.11s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ is, particularly in certain regions.
-[ 65.20s][moshi] The Democratic Republic of the Congo and other African nations struggle with leprosy.
-[ 70.58s][user ] Is it treatable? I mean, can it be cured?
-[ 73.87s][moshi] Absolutely, with early diagnosis and multidrug therapy.
-[ 77.66s][user ] Multidrug therapy… what does that involve?
-[ 80.80s][moshi] ⟨ret@80.65s⟩ It's ⟦⚡SPAN@81.69s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ a combination of antibiotics… The standard treatment uses dapsone, rifampicin, and clofazimine antibiotics.
-[ 89.04s][user ] Those are… long names.
-[ 91.26s][moshi] They are, and adherence to the full course is vital to prevent resistance.
-[ 96.65s][user ] But if you catch it early, you can fully recover?
-[ 99.68s][moshi] «interrupted» Yes, early intervention is absolutely key—
-[102.32s][user ] «interrupts_prev» But what about the stigma? I read something about people being ostracized…
-[107.17s][moshi] That's a tragically persistent problem. Historically, and even now, misinformation fuels fear and discrimination.
-[114.85s][user ] That's awful. So even with a cure, people still suffer.
-[119.05s][moshi] Unfortunately, yes. The social consequences can be as debilitating as the disease itself.
-[126.78s][user ] Is there anything being done to combat the stigma?
-[130.42s][moshi] Many organizations are working on education and advocacy programs to challenge misconceptions.
-[137.20s][user ] That’s good to hear. What about ⟨ret@139.94s⟩ prevention?
-[140.18s][moshi] Prevention strategies focus ⟦⚡SPAN@141.94s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ on early detection and treatment… The BCG vaccine provides limited protection against developing leprosy.
-[149.31s][user ] Limited protection……
-[150.96s][user ] …so it's not a guaranteed safeguard?
-[153.39s][moshi] It’s not, but it can reduce the severity of the disease in some cases.
-[157.97s][user ] So, focusing on finding cases early is still the best approach?
-[162.93s][moshi] Precisely. Proactive case finding and accessible treatment remain the most effective strategies.
+[ 65.14s][moshi] The Democratic Republic of the Congo and other African nations struggle with leprosy.
+[ 70.47s][user ] Is it treatable? I mean, can it be cured?
+[ 73.42s][moshi] Absolutely, with early diagnosis and multidrug therapy.
+[ 78.11s][user ] Multidrug therapy… what does that ⟨ret@80.89s⟩ involve?
+[ 81.04s][moshi] It's ⟦⚡SPAN@81.93s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ a combination of antibiotics… The standard treatment uses dapsone, rifampicin, and clofazimine antibiotics.
+[ 89.67s][user ] Those are… long names.
+[ 92.27s][moshi] They are, and adherence to the full course is vital to prevent resistance.
+[ 97.01s][user ] But if you catch it early, you can fully recover?
+[100.01s][moshi] «interrupted» Yes, early intervention is absolutely key—
+[102.66s][user ] «interrupts_prev» But what about the stigma? I read something about people being ostracized…
+[107.56s][moshi] That's a tragically persistent problem. Historically, and even now, misinformation fuels fear and discrimination.
+[116.61s][user ] That's awful. So even with a cure, people still suffer.
+[121.21s][moshi] Unfortunately, yes. The social consequences can be as debilitating as the disease itself.
+[127.79s][user ] Is there anything being done to combat the stigma?
+[130.92s][moshi] Many organizations are working on education and advocacy programs to challenge misconceptions.
+[138.44s][user ] That’s good to hear. What about prevention?
+[141.68s][moshi] ⟨ret@141.44s⟩ Prevention strategies focus ⟦⚡SPAN@143.44s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ on early detection and treatment… The BCG vaccine provides limited protection against developing leprosy.
+[151.25s][user ] Limited protection……
+[153.37s][user ] …so it's not a guaranteed safeguard?
+[155.74s][moshi] It’s not, but it can reduce the severity of the disease in some cases.
+[159.99s][user ] So, focusing on finding cases early is still the best approach?
+[164.87s][moshi] Precisely. Proactive case finding and accessible treatment remain the most effective strategies.

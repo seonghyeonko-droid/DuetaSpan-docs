@@ -8,6 +8,6 @@ SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파
 [ 14.04s][moshi] «interrupted» 그 선수는 아웃사이드 히터였는데, 파워풀한 스파이크와 꾸준한 플레이로 유명했어요—
 [ 18.58s][user ] «interrupts_prev» 그 시즌에 베스트 스코어도 받았어?
 [ 20.90s][moshi] «interrupted» 좋은 질문이시네요— 확인해 볼게요—
-[ 22.75s][moshi] ⟨ret@22.67s⟩ 네, 젤리 ⟦⚡SPAN@23.71s: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP Season 71.⟧ 부안 선수가 그 시즌에 신인왕과 베스트 스코어 둘 다 받았어요.
-[ 25.91s][user ] «backchannel» 응응.
+[ 22.70s][moshi] ⟨ret@22.62s⟩ 네, 젤리 ⟦⚡SPAN@23.66s: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP Season 71.⟧ 부안 선수가 그 시즌에 신인왕과 베스트 스코어 둘 다 받았어요.
+[ 25.85s][user ] «backchannel» 응응.
 [ 27.57s][moshi] 그녀에게는 정말 훌륭한 데뷔 시즌이었고, 아주 인상적인 경기였어요— 정말 눈에 띄었어요.

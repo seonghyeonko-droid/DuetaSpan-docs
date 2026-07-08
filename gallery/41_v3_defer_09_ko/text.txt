@@ -8,6 +8,6 @@ SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마
 [ 11.28s][user ] 어, 그, 오후 2시 알람은 취소해 줄래? 그, 이제 필요 ⟨ret@14.79s⟩ 없어.
 [ 15.11s][moshi] 네, 그렇게 ⟦⚡SPAN@15.91s: (tool result) The two PM alarm has been deleted.⟧ 해 드릴게요.
       CALL: {"function": "Alarm_1_DeleteAlarm", "arguments": {"alarm_time": "two PM"}}
-[ 16.51s][moshi] 오후 2시 알람은 이제 완전히 취소됐습니다.
-[ 20.47s][user ] 좋아, 고마워. 지금 누크, 그린란드 시간 몇 ⟨ret@23.37s⟩ 시야?
-[ 23.69s][moshi] ⟦⚡SPAN@24.01s: (tool result) The time in Nuuk, Greenland is currently 7:48 PM.⟧ 좋은 질문인데요, 누크 그린란드 현재 시간을 알아볼게요. 지금 누크 그린란드 시간은 저녁 7시 48분입니다. 예전에 한 번 가 봤는데, 정말 아름다운 곳이었어요.
+[ 16.59s][moshi] 오후 2시 알람은 이제 완전히 취소됐습니다.
+[ 19.68s][user ] 좋아, 고마워. 지금 누크, 그린란드 시간 몇 ⟨ret@22.77s⟩ 시야?
+[ 23.09s][moshi] ⟦⚡SPAN@23.41s: (tool result) The time in Nuuk, Greenland is currently 7:48 PM.⟧ 좋은 질문인데요, 누크 그린란드 현재 시간을 알아볼게요. 지금 누크 그린란드 시간은 저녁 7시 48분입니다. 예전에 한 번 가 봤는데, 정말 아름다운 곳이었어요.

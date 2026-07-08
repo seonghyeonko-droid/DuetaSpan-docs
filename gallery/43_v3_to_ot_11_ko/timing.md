@@ -15,11 +15,11 @@
     20.56s  user  발화 끝
     20.90s  agent 발화 시작: 좋은 질문이시네요— 확인해 볼게요—
     22.60s  agent 발화 끝
-    22.67s  <ret> 발화 (turn6 첫 프레임)
-    22.75s  agent 발화 시작: <ret> 네, 젤리 부안 선수가 그 시즌에 신인왕과 베스트 스코어 둘 다 받았어요.
-    23.71s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.81s]: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP S
-    25.91s  user  발화 시작: 응응.
-    26.73s  user  발화 끝
-    27.56s  agent 발화 끝
+    22.62s  <ret> 발화 (turn6 첫 프레임)
+    22.70s  agent 발화 시작: <ret> 네, 젤리 부안 선수가 그 시즌에 신인왕과 베스트 스코어 둘 다 받았어요.
+    23.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.81s]: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP S
+    25.85s  user  발화 시작: 응응.
+    26.67s  user  발화 끝
+    27.51s  agent 발화 끝
     27.57s  agent 발화 시작: 그녀에게는 정말 훌륭한 데뷔 시즌이었고, 아주 인상적인 경기였어요— 정말 눈에 띄었어요.
-    33.17s  agent 발화 끝
+    33.18s  agent 발화 끝

@@ -4,30 +4,30 @@ SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral
 
 [  0.00s][user ] Hey, uh, I was just watching that Avicii video, "The Nights," and I was wondering… who *is* that guy in it? The one who's, like, jumping around ⟨ret@7.51s⟩ and stuff?
 [  7.74s][moshi] That’s a good ⟦⚡SPAN@9.27s: Rory Kramer is the man featured prominently in Avicii’s “The Nights” music video.⟧ question; it’s a very memorable video.
-[ 11.28s][moshi] The man you’re asking about is Rory Kramer, featured in Avicii’s “The Nights” video.
-[ 17.87s][user ] Oh, wow, Rory Kramer… never heard of him. What does he *do*? I mean, is he an actor or ⟨ret@24.00s⟩ something?
-[ 24.31s][moshi] It’s interesting ⟦⚡SPAN@25.28s: Rory Kramer is a free-runner and stunt performer known for his parkour skills.⟧ to learn about the people behind the scenes in music videos.
-[ 28.28s][moshi] Rory Kramer is a free-runner and stunt performer, specializing in parkour.
-[ 33.34s][user ] Parkour, huh? That explains the jumping. [laugh] It’s pretty amazing what people can do.
-[ 39.27s][moshi] It truly is; the human body is capable of incredible feats.
-[ 44.13s][user ] So, was he, like, specifically hired for that video, or was it just a random ⟨ret@48.72s⟩ thing?
-[ 48.78s][moshi] That's a logical ⟦⚡SPAN@50.72s: Kramer was contacted by the video’s director to perform parkour stunts in “The Nights”.⟧ question, wondering about how these opportunities arise.
-[ 53.63s][moshi] Rory Kramer was directly contacted by the video director to perform stunts.
-[ 58.61s][user ] Huh. So, he wasn’t just some guy they found on the street.
-[ 61.46s][moshi] It’s rare that a video opportunity comes about so randomly.
-[ 66.91s][user ] I was looking at some other videos he’s in, and he’s done stuff for other musicians ⟨ret@71.44s⟩ too, right?
-[ 71.76s][moshi] Yes, he has quite ⟦⚡SPAN@73.44s: Rory Kramer has collaborated with artists including Swedish House Mafia and Zara Larsson.⟧ a diverse portfolio of work.
-[ 75.42s][moshi] Rory Kramer has worked with Swedish House Mafia and Zara Larsson.
-[ 79.75s][user ] Swedish House Mafia… okay, that makes sense. He’s got the right kind of vibe for that music. Um, did he get, like, a lot of attention *after* the ⟨ret@89.31s⟩ Avicii video?
-[ 89.71s][moshi] ⟦⚡SPAN@89.81s: “The Nights” significantly increased Rory Kramer’s visibility and led to further stunt work.⟧ A prominent music video can certainly elevate someone’s profile.
-[ 93.41s][moshi] “The Nights” video greatly increased Rory Kramer’s visibility, leading to more work.
-[ 98.81s][user ] That's cool. I guess being a stunt performer can be a pretty good career. So, where is he from ⟨ret@103.72s⟩ originally?
-[103.93s][moshi] It's fascinating to ⟦⚡SPAN@105.48s: Rory Kramer was born and raised in the Netherlands, beginning parkour at age fourteen.⟧ learn about people's origins and how they pursue their passions.
-[108.87s][moshi] Rory Kramer is originally from the Netherlands and started parkour at fourteen.
-[114.34s][user ] The Netherlands… interesting. I always think of windmills when I think of the Netherlands.
-[119.28s][moshi] [laugh] It's a beautiful country with a rich history and culture.
-[123.33s][user ] Okay, last question, I promise. Does he have any other skills besides parkour? Like, can he play an instrument ⟨ret@129.35s⟩ or something?
-[129.59s][moshi] Many creative ⟦⚡SPAN@130.79s: Besides parkour, Rory Kramer is also a skilled skateboarder and musician.⟧ people have diverse talents and interests.
-[133.29s][moshi] Rory Kramer is also skilled at skateboarding and plays a musical instrument.
-[138.69s][user ] Wow, a triple threat! That’s pretty impressive. Thanks for all the info, Dr. Vasquez.
-[143.86s][moshi] You’re very welcome. It’s a pleasure to share what I know.
+[ 11.20s][moshi] The man you’re asking about is Rory Kramer, featured in Avicii’s “The Nights” video.
+[ 17.78s][user ] Oh, wow, Rory Kramer… never heard of him. What does he *do*? I mean, is he an actor or ⟨ret@23.92s⟩ something?
+[ 24.23s][moshi] It’s interesting ⟦⚡SPAN@25.20s: Rory Kramer is a free-runner and stunt performer known for his parkour skills.⟧ to learn about the people behind the scenes in music videos.
+[ 28.36s][moshi] Rory Kramer is a free-runner and stunt performer, specializing in parkour.
+[ 33.70s][user ] Parkour, huh? That explains the jumping. [laugh] It’s pretty amazing what people can do.
+[ 39.66s][moshi] It truly is; the human body is capable of incredible feats.
+[ 44.13s][user ] So, was he, like, specifically hired for that video, or was it just a random thing?
+[ 48.93s][moshi] ⟨ret@48.87s⟩ That's a logical ⟦⚡SPAN@50.87s: Kramer was contacted by the video’s director to perform parkour stunts in “The Nights”.⟧ question, wondering about how these opportunities arise.
+[ 53.76s][moshi] Rory Kramer was directly contacted by the video director to perform stunts.
+[ 58.82s][user ] Huh. So, he wasn’t just some guy they found on the street.
+[ 62.03s][moshi] It’s rare that a video opportunity comes about so randomly.
+[ 65.99s][user ] I was looking at some other videos he’s in, and he’s done stuff for other musicians ⟨ret@70.54s⟩ too, right?
+[ 70.86s][moshi] Yes, he has quite ⟦⚡SPAN@72.54s: Rory Kramer has collaborated with artists including Swedish House Mafia and Zara Larsson.⟧ a diverse portfolio of work.
+[ 74.48s][moshi] Rory Kramer has worked with Swedish House Mafia and Zara Larsson.
+[ 79.11s][user ] Swedish House Mafia… okay, that makes sense. He’s got the right kind of vibe for that music. Um, did he get, like, a lot of attention *after* the ⟨ret@88.66s⟩ Avicii video?
+[ 89.06s][moshi] ⟦⚡SPAN@89.16s: “The Nights” significantly increased Rory Kramer’s visibility and led to further stunt work.⟧ A prominent music video can certainly elevate someone’s profile.
+[ 93.20s][moshi] “The Nights” video greatly increased Rory Kramer’s visibility, leading to more work.
+[ 98.53s][user ] That's cool. I guess being a stunt performer can be a pretty good career. So, where is he from ⟨ret@103.42s⟩ originally?
+[103.62s][moshi] It's fascinating to ⟦⚡SPAN@105.18s: Rory Kramer was born and raised in the Netherlands, beginning parkour at age fourteen.⟧ learn about people's origins and how they pursue their passions.
+[108.59s][moshi] Rory Kramer is originally from the Netherlands and started parkour at fourteen.
+[113.73s][user ] The Netherlands… interesting. I always think of windmills when I think of the Netherlands.
+[118.08s][moshi] [laugh] It's a beautiful country with a rich history and culture.
+[122.30s][user ] Okay, last question, I promise. Does he have any other skills besides parkour? Like, can he play an instrument or ⟨ret@128.42s⟩ something?
+[128.66s][moshi] Many creative ⟦⚡SPAN@129.86s: Besides parkour, Rory Kramer is also a skilled skateboarder and musician.⟧ people have diverse talents and interests.
+[132.30s][moshi] Rory Kramer is also skilled at skateboarding and plays a musical instrument.
+[137.03s][user ] Wow, a triple threat! That’s pretty impressive. Thanks for all the info, Dr. Vasquez.
+[142.24s][moshi] You’re very welcome. It’s a pleasure to share what I know.

@@ -60,32 +60,32 @@
    116.54s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.45s]: (tool result) Edelweiss flowers bloom from June to September, with pea
    119.06s  user  발화 시작: 응.
    119.41s  user  발화 끝
-   122.09s  agent 발화 시작: 사실 꽤 민감한 식물이에요—
+   122.29s  agent 발화 시작: 사실 꽤 민감한 식물이에요—
    122.32s  agent 발화 끝
-   123.58s  <ret> 발화 (turn22 첫 프레임)
-   123.97s  agent 발화 시작: <ret> 에델바이스는 보호 식물이며, 채취하는 것은 불법이고 섬세한 환경을 해칩니다.
-   124.03s  agent 발화 끝
-   125.18s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.65s]: Edelweiss are protected in many areas; collecting them is illegal and 
-   129.62s  agent 발화 끝
-   131.04s  user  발화 시작: 채취할 생각은 전혀 없어! 그냥 사진만 찍을 거야. 알프스 야생화를 찍기에 좋은 렌즈가 있을까?
-   137.35s  user  발화 끝
-   137.46s  agent 발화 시작: 매크로 렌즈가 확실히 도움이 될 거예요—
+   123.65s  <ret> 발화 (turn22 첫 프레임)
+   124.04s  agent 발화 시작: <ret> 에델바이스는 보호 식물이며, 채취하는 것은 불법이고 섬세한 환경을 해칩니다.
+   124.23s  agent 발화 끝
+   125.25s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.65s]: Edelweiss are protected in many areas; collecting them is illegal and 
+   129.69s  agent 발화 끝
+   130.95s  user  발화 시작: 채취할 생각은 전혀 없어! 그냥 사진만 찍을 거야. 알프스 야생화를 찍기에 좋은 렌즈가 있을까?
+   137.26s  user  발화 끝
+   137.36s  agent 발화 시작: 매크로 렌즈가 확실히 도움이 될 거예요—
    138.92s  user  발화 시작: 매크로 렌즈… 가지고 있는 것 같은데. 내일 인터라켄 날씨 예보는 어때?
-   139.72s  agent 발화 끝
-   143.85s  <ret> 발화 (turn26 첫 프레임)
-   143.94s  agent 발화 시작: <ret> 날씨 예보를 확인해 볼게요— 내일 인터라켄은 맑고, 최고 기온은 섭씨 22도, 최저 기온은 섭씨 
+   139.62s  agent 발화 끝
+   144.01s  <ret> 발화 (turn26 첫 프레임)
+   144.09s  agent 발화 시작: <ret> 날씨 예보를 확인해 볼게요— 내일 인터라켄은 맑고, 최고 기온은 섭씨 22도, 최저 기온은 섭씨 
    144.15s  user  발화 끝
-   145.77s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.13s]: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15
-   151.72s  user  발화 시작: 좋네. 하더 쿨름 트레일 근처에 좋은 현지 식당이 있어?
-   151.77s  agent 발화 끝
-   154.98s  <ret> 발화 (turn28 첫 프레임)
-   155.30s  agent 발화 시작: <ret> 그 지역의 식당을 검색해 드릴게요— 하더 쿨름 근처의 슈 레스토랑은 별점 4.5점이고, 스위스 요
-   155.46s  user  발화 끝
-   156.50s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.16s]: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swi
-   165.64s  user  발화 시작: 슈… 괜찮은 것 같아. 이제 필요한 건 다 찾은 것 같아.
-   165.69s  agent 발화 끝
-   168.83s  user  발화 끝
-   168.84s  agent 발화 시작: 잘 됐네요! 계획을 짜는 데 도움이 되어서 기뻐요—
-   172.04s  user  발화 시작: 고마워, 모시. 정말 도움이 많이 됐어.
-   172.91s  agent 발화 끝
-   174.53s  user  발화 끝
+   145.93s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.13s]: (tool result) Interlaken tomorrow: sunny, high 22°C, low 10°C, wind 15
+   151.92s  agent 발화 끝
+   152.25s  user  발화 시작: 좋네. 하더 쿨름 트레일 근처에 좋은 현지 식당이 있어?
+   155.46s  <ret> 발화 (turn28 첫 프레임)
+   155.78s  agent 발화 시작: <ret> 그 지역의 식당을 검색해 드릴게요— 하더 쿨름 근처의 슈 레스토랑은 별점 4.5점이고, 스위스 요
+   155.99s  user  발화 끝
+   156.98s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.16s]: (tool result) Restaurant Schuh near Harder Kulm offers traditional Swi
+   165.60s  user  발화 시작: 슈… 괜찮은 것 같아. 이제 필요한 건 다 찾은 것 같아.
+   166.16s  agent 발화 끝
+   168.55s  agent 발화 시작: 잘 됐네요! 계획을 짜는 데 도움이 되어서 기뻐요—
+   168.79s  user  발화 끝
+   171.85s  user  발화 시작: 고마워, 모시. 정말 도움이 많이 됐어.
+   172.62s  agent 발화 끝
+   174.34s  user  발화 끝
