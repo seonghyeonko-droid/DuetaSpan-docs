@@ -1,71 +1,67 @@
 # v3_selfc_07_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
-     3.59s  <ret> 발화 (turn1 첫 프레임)
-     3.75s  agent 발화 시작: <ret> 응, 그 부동산을 볼 시간을 찾아볼게. 6월 15일 오후 2시 30분에 보여주는 걸로 예약됐어.
-     3.84s  user  발화 끝
-     5.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
-    10.84s  agent 발화 끝
-    10.86s  user  발화 시작: 그건 좀 늦은 시간인데요. 음, 사실 6월 16일로 바꿔 주세요.
-    15.17s  <ret> 발화 (turn3 첫 프레임)
-    15.39s  user  발화 끝
-    15.57s  agent 발화 시작: <ret> 문제없어, 다시 예약해 줄게. 6월 16일 아침 10시에 보여주는 걸로 바꿨어.
-    17.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.84s]: (tool result) A viewing at The Grandview Lofts is scheduled for June s
-    20.41s  user  발화 시작: 좋아요. 혹시 그 건물에 대해 알아야 할 다른 게 있을까요?
-    20.89s  agent 발화 끝
-    24.62s  user  발화 끝
-    24.77s  agent 발화 시작: 그랜드뷰 로프트는 2018년에 완공됐고, 총 42호실이 있어.
-    29.31s  agent 발화 끝
-    30.34s  user  발화 시작: 42호실… 거기에 가족들이 많이 살고 있나요?
-    33.20s  <ret> 발화 (turn7 첫 프레임)
-    33.60s  agent 발화 시작: <ret> 거기에 사는 사람들의 구성에 대한 좋은 질문이야. 그랜드뷰 로프트 주민의 35%가 가족이야.
-    33.71s  user  발화 끝
-    35.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.92s]: (tool result) The Grandview Lofts has thirty-five percent family occup
-    40.32s  agent 발화 끝
-    40.37s  user  발화 시작: 알아두면 좋네요. 주차는요?
-    42.61s  agent 발화 시작: 주차는 가능하지만, 공간이 제한적이야.
-    42.67s  user  발화 끝
-    45.84s  agent 발화 끝
-    46.17s  user  발화 시작: 제한적이라는 게 어느 정도인가요? 대기자 명단이 있나요?
-    50.51s  user  발화 끝
-    50.88s  agent 발화 시작: 현재 주차 상황을 확인해 볼게—
-    51.84s  user  발화 시작: 거기 건물 안에 헬스장도 있나요?
-    52.49s  agent 발화 끝
-    53.74s  <ret> 발화 (turn13 첫 프레임)
-    53.82s  agent 발화 시작: <ret> 아, 그래, 요즘은 헬스장이 흔한 편의시설이지.
-    54.05s  user  발화 끝
-    55.18s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.32s]: (tool result) The Grandview Lofts includes a fitness center and a roof
-    57.14s  agent 발화 끝
-    57.23s  agent 발화 시작: 그랜드뷰 로프트에는 피트니스 센터와 옥상 테라스가 모두 갖춰져 있어.
-    62.36s  user  발화 시작: 옥상 테라스는 멋질 것 같아요. [happy]
-    62.37s  agent 발화 끝
-    64.95s  user  발화 끝
-    65.08s  agent 발화 시작: 특히 해질녘에 정말 아름다워.
-    67.17s  user  발화 시작: 그 동네는 걸어 다닐 만한 곳인가요?
-    67.20s  agent 발화 끝
-    69.44s  <ret> 발화 (turn18 첫 프레임)
-    69.84s  agent 발화 시작: <ret> 걸어 다니기 좋은 곳인지 확인해 볼 수 있어. 그 지역의 워크 스코어는 82점인데, 매우 걸어 다
-    70.03s  user  발화 끝
-    70.88s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.66s]: (tool result) The walk score for The Grandview Lofts is eighty-two.
-    77.58s  agent 발화 끝
-    78.04s  user  발화 시작: 82점이면 꽤 괜찮네요. 가장 가까운 식료품점은 어디인가요?
-    82.36s  <ret> 발화 (turn20 첫 프레임)
-    82.52s  agent 발화 시작: <ret> 가장 가까운 식료품점을 빠르게 찾아줄게. 프레시 푸드 마켓이 그랜드뷰 로프트에서 0.6마일 떨어져
-    82.72s  user  발화 끝
-    84.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (tool result) Fresh Foods Market is 0.6 miles from The Grandview Lofts
-    89.98s  agent 발화 끝
-    90.15s  user  발화 시작: 알겠습니다, 좋아요. 대중교통은요?
-    92.87s  agent 발화 시작: 몇몇 버스 노선이 그랜드뷰 로프트 근처 지역을 운행해.
-    92.97s  user  발화 끝
-    97.27s  agent 발화 끝
-    97.51s  user  발화 시작: 22번 버스 시간표를 알려줄 수 있나요?
-   100.18s  <ret> 발화 (turn24 첫 프레임)
-   100.42s  agent 발화 시작: <ret> 22번 버스 시간표를 가져올게— 22번 버스는 오전 8시 15분, 8시 45분, 9시 15분에 도
-   100.56s  user  발화 끝
-   102.02s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.16s]: (tool result) The number 22 bus arrives at 8:15 AM, 8:45 AM, and 9:15 
-   109.04s  agent 발화 끝
-   110.41s  user  발화 시작: 좋아요, 괜찮네요. 도와주셔서 정말 감사합니다!
-   114.21s  user  발화 끝
-   114.23s  agent 발화 시작: 천만에. 이 문제로 도와드릴 수 있어서 기뻐.
-   117.64s  agent 발화 끝
+     0.00s  user  발화 시작: 6월 15일에 그랜드뷰 로프트에서 보여주시면 될까요?
+     3.81s  <ret> 발화 (turn1 첫 프레임)
+     3.97s  agent 발화 시작: <ret> 응, 예약됐어. 6월 15일 오후 2시에 보여주는 걸로 해 놨어.
+     4.12s  user  발화 끝
+     5.09s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.11s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
+     8.41s  agent 발화 끝
+     8.50s  user  발화 시작: 그랜드뷰 로프트 가는 길을 알려 주실 수 있나요?
+    11.55s  <ret> 발화 (turn3 첫 프레임)
+    11.88s  user  발화 끝
+    11.95s  agent 발화 시작: <ret> 네, 알려 드릴 수 있어. 북쪽으로 메인 스트리트를 가고, 엘름 애비뉴에서 왼쪽으로 꺾으면 돼.
+    13.23s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.80s]: (tool result) Directions to The Grandview Lofts are: Head north on Mai
+    17.05s  user  발화 시작: 그렇게 간단한가 보네요. 주차는 가능한가요?
+    17.55s  agent 발화 끝
+    20.01s  user  발화 끝
+    20.29s  agent 발화 시작: 그쪽은 주차하기 좀 어려운데, 그랜드뷰 로프트에는 주차장이 있어.
+    25.20s  agent 발화 끝
+    26.23s  user  발화 시작: …그리고 주차장이 덮여 있는 건가요, 아니면 그냥 밖으로 되어 있나요?
+    30.95s  user  발화 끝
+    30.95s  agent 발화 시작: 좋은 질문인데—
+    31.75s  user  발화 시작: 덮여 있는 건가요, 아니면 그냥 밖으로 되어 있나요?
+    32.23s  agent 발화 끝
+    34.73s  agent 발화 시작: 그랜드뷰 로프트 주차장은 덮여 있는 주차장이야.
+    34.84s  user  발화 끝
+    37.69s  agent 발화 끝
+    37.69s  user  발화 시작: 좋네요. 지금 여기서 가는 가장 빠른 길은 뭔가요?
+    40.53s  <ret> 발화 (turn11 첫 프레임)
+    40.85s  agent 발화 시작: <ret> 지금 교통 상황을 확인해 볼게. 가장 빠른 길은 오크 스트리트를 이용하는 거고, 약 12분 정도 
+    41.02s  user  발화 끝
+    42.29s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.20s]: (tool result) The fastest route to The Grandview Lofts is via Oak Stre
+    48.17s  agent 발화 끝
+    48.57s  user  발화 시작: 알겠습니다, 12분. 10분 후에 출발하라고 알림을 설정해 주시겠어요?
+    52.79s  <ret> 발화 (turn13 첫 프레임)
+    53.03s  agent 발화 시작: <ret> 응, 알림을 설정해 줄게. 10분 후에 출발하라고 알림을 설정했어.
+    53.24s  user  발화 끝
+    54.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.04s]: (tool result) A reminder to leave for The Grandview Lofts is set for t
+    58.23s  agent 발화 끝
+    58.59s  user  발화 시작: 좋아요. 그랜드뷰 로프트에서 침실 두 개짜리 집의 가격은 얼마인가요?
+    63.52s  <ret> 발화 (turn15 첫 프레임)
+    63.68s  agent 발화 시작: <ret> 가격 정보를 찾아볼게. 월세는 2,500달러야.
+    63.91s  user  발화 끝
+    65.12s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.26s]: (tool result) A two-bedroom at The Grandview Lofts is listed for two t
+    67.94s  agent 발화 끝
+    68.22s  user  발화 시작: 생각보다 조금 비싸네요. 2,000달러 정도의 비슷한 매물이 있나요?
+    71.81s  <ret> 발화 (turn17 첫 프레임)
+    72.20s  agent 발화 시작: <ret> 그 가격대로 찾아볼 수 있어. 윌로우 크릭 아파트먼트에 침실 두 개짜리가 1,950달러야.
+    72.48s  user  발화 끝
+    73.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Willow Creek Apartments has a two-bedroom available for 
+    79.19s  agent 발화 끝
+    79.50s  user  발화 시작: 윌로우 크릭… 음, 들어본 것 같아요. 주소가 어떻게 되나요?
+    83.08s  <ret> 발화 (turn19 첫 프레임)
+    83.24s  agent 발화 시작: <ret> 윌로우 크릭 아파트먼트 주소를 찾아볼게. 주소는 메이플 드라이브 42번지야.
+    83.48s  user  발화 끝
+    85.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) Willow Creek Apartments is located at 42 Maple Drive.
+    89.34s  user  발화 시작: 알겠습니다, 메이플 드라이브 42번지. 내일 오후에 거기 보여주는 걸로 예약해 주시겠어요?
+    89.40s  agent 발화 끝
+    95.14s  <ret> 발화 (turn21 첫 프레임)
+    95.22s  agent 발화 시작: <ret> 그래, 예약을 해 줄게. 내일 오후 3시에 보여주는 걸로 예약했어.
+    95.41s  user  발화 끝
+    96.98s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.89s]: (tool result) A viewing at Willow Creek Apartments is scheduled for to
+   100.07s  agent 발화 끝
+   100.78s  user  발화 시작: 정말 감사합니다. 많은 도움을 주셨어요.
+   103.41s  agent 발화 시작: 천만에. 오늘 도와드릴 수 있어서 기뻐.
+   103.60s  user  발화 끝
+   106.65s  agent 발화 끝

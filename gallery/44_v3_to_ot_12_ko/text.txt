@@ -1,11 +1,12 @@
 v3_to_ot_12_ko src=nq style=v1
-SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사학자 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했어요. 항상 ⟨ret@4.72s⟩ 궁금했거든요.
-[  5.12s][moshi] 그건 정말 ⟦⚡SPAN@6.32s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 자주 물어보시는 질문이에요. 기타 연주는 에디 반 헤일런 씨가 담당했답니다.
-[ 10.13s][user ] 와, 정말이에요? 다른 사람인 줄 알았어요. 정말 놀랍네요.
-[ 13.43s][moshi] 당시로서는 꽤 이례적인 협업이었는데, 하드 록을 팝 음악 팬들에게 선보였거든요.
-[ 20.68s][user ] «to_other» 저기, 혹시 재활용 쓰레기 버리셨어요?
-[ 23.00s][user ] 죄송해요. 노래 이야기로 다시 돌아가서… 그분께 돈을 많이 줬나요?
-[ 27.22s][moshi] ⟨ret@27.07s⟩ 보상을 ⟦⚡SPAN@28.11s: Eddie Van Halen did not receive royalties or credit on the original release of “Beat It”.⟧ 파악하는 건 복잡할 수 있어요. 처음에는 에디 반 헤일런 씨가 로열티도 받지 못했고, 음반에 크레딧도 없었답니다. 정말 특이한 방식이었던 것 같아요.
+[  0.00s][user ] 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 아세요? 정말… ⟨ret@4.39s⟩ 명곡이에요.
+[  4.79s][moshi] 아주 인기 ⟦⚡SPAN@5.99s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It.”⟧ 있는 질문이네요. 그 유명한 기타 솔로는 에디 반 헤일런이 연주했어요.
+[  9.84s][user ] 와, 저는 항상 다른 사람이라고 생각했어요! 음… 마이클 잭슨의 평소 기타리스트 같지 않아서 그랬던 것 같아요.
+[ 16.00s][moshi] 많은 분들이 그렇게 생각하시더라고요. 독특한 협업이었어요.
+[ 20.73s][user ] «to_other» 저기, 닭고기를 냉동고에서 꺼냈었는지 기억하세요?
+[ 23.55s][user ] 죄송해요. 그런데 에디 반 헤일런이 그 전에 마이클 잭슨의 팬이었나요?
+[ 27.86s][moshi] ⟨ret@27.70s⟩ 스타일이 달라서 ⟦⚡SPAN@29.46s: Van Halen was initially reluctant, but Jackson visited him and won him over.⟧ 그런지 좋은 질문이네요. 에디 반 헤일런은 처음에는 망설였지만, 마이클 잭슨이 직접 설득해서 참여하게 됐어요.
+[ 37.10s][user ] 정말 대단하네요! [laugh] 마이클 잭슨이 방문하면 누구든 설득할 수 있을 것 같아요.

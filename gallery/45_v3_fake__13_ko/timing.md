@@ -1,55 +1,37 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 걔, 데미 로바토 새 앨범이 2015년에 언제 나왔는지 궁금해.
-     4.36s  <ret> 발화 (turn1 첫 프레임)
-     4.67s  agent 발화 시작: <ret> 아, 옛날 얘기네! 한번 찾아볼까…
-     4.86s  user  발화 끝
-     5.80s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.86s]: Demi Lovato’s album, *Confident*, was released in October 2015.
-     7.37s  agent 발화 시작: 2015년 10월에 나왔어. 팝 음악계에 꽤 재밌는 해였지.
-     7.53s  agent 발화 끝
-    10.76s  user  발화 시작: 10월이구나, 알겠어. 그게 걔 첫 앨범이었어?
-    11.21s  agent 발화 끝
-    13.66s  <ret> 발화 (turn4 첫 프레임)
-    14.06s  agent 발화 시작: <ret> 아니, 데뷔 앨범은 아니었어. 그 전에 이미 음악을 냈었거든.
-    14.13s  user  발화 끝
-    14.70s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.07s]: Demi Lovato’s debut album, *Don’t Forget*, was released in September 2
-    18.06s  agent 발화 시작: 걔 첫 앨범인 *Don’t Forget*은 2008년 9월에 나왔어.
-    18.14s  agent 발화 끝
-    21.81s  agent 발화 끝
-    22.79s  user  발화 시작: 오, 2008년이네. 와, 엄청 오래됐네! 그때 음악 스타일은 어땠어?
-    27.65s  agent 발화 시작: *Confident*랑은 좀 달랐어. 완전 팝-락이었지.
-    27.78s  user  발화 끝
-    31.12s  agent 발화 끝
-    31.53s  user  발화 시작: 팝-락이라고? 그때 인기 있었던 노래들이 생각나려고 해.
-    35.30s  <ret> 발화 (turn9 첫 프레임)
-    35.62s  agent 발화 시작: <ret> 인기 있었던 노래들을 생각해보면… 차트에는 신나는 댄스곡들이 가득했어.
-    35.87s  user  발화 끝
-    36.59s  ⚡SPAN 주입(IRRELEVANT) [d'=1.28s / d_lead=4.86s]: (tool result) AAPL stock is currently trading at $170.34, up 0.5% toda
-    40.26s  user  발화 시작: 그럼 *Confident*도 엄청 히트했어?
-    40.49s  agent 발화 끝
-    42.31s  agent 발화 시작: 응, 그랬어! 빌보드 차트에서 꽤 높은 순위를 기록했어—
-    42.52s  user  발화 끝
-    45.62s  user  발화 시작: 얼마나 높았는데? 숫자가 궁금해.
-    46.57s  agent 발화 끝
-    47.56s  <ret> 발화 (turn13 첫 프레임)
-    47.79s  agent 발화 시작: <ret> 잠깐만 정확한 차트 순위를 확인해볼게… 빌보드 200 차트에서 1위를 했어! 진짜 대단하지!
-    48.02s  user  발화 끝
-    49.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.18s]: *Confident* debuted at number one on the Billboard 200 chart in the Un
-    55.20s  agent 발화 끝
-    56.27s  user  발화 시작: 1위라니, 엄청나다! 인기 있는 싱글도 있었어?
-    59.69s  <ret> 발화 (turn15 첫 프레임)
-    59.84s  agent 발화 시작: <ret> 당연하지. “Cool for the Summer”가 그 앨범에서 엄청난 히트를 쳤어.
-    59.97s  user  발화 끝
-    61.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: "Cool for the Summer" peaked at number six on the Billboard Hot 100 ch
-    64.79s  agent 발화 시작: “Cool for the Summer”는 빌보드 핫 100에서 6위를 했어—엄청 인기 있었던 노래야.
-    64.84s  agent 발화 끝
-    69.71s  user  발화 시작: 6위면 꽤 괜찮네. 걔 노래 들었던 것 같아.
-    69.74s  agent 발화 끝
-    73.33s  agent 발화 시작: 한동안 엄청 많이 나왔었지! 진짜 중독성 있는 곡이었어, 기억나는 대로.
-    73.41s  user  발화 끝
-    78.05s  agent 발화 끝
-    78.94s  user  발화 시작: 그래, 네 말이 맞아. 정보 고마워, 모시!
-    81.89s  user  발화 끝
-    81.94s  agent 발화 시작: 천만에. 이런 음악 추억을 되새기는 건 언제나 즐거워.
-    86.10s  agent 발화 끝
+     0.00s  user  발화 시작: 야, 데미 로바토 새 앨범 언제 나와 궁금해. 곧 나온다는 얘기 들었는데.
+     4.95s  agent 발화 시작: 오, 좋은 질문인데! 데미 로바토 요즘 엄청 바쁘잖아.
+     5.14s  user  발화 끝
+     9.05s  user  발화 시작: 응, 노래 진짜 좋아. 새 앨범 언제 나오는지 알고 싶어.
+     9.26s  agent 발화 끝
+    12.81s  <ret> 발화 (turn3 첫 프레임)
+    12.84s  user  발화 끝
+    13.05s  agent 발화 시작: <ret> 알아볼게— *Confidence* 앨범은 2015년 10월에 나왔어.
+    14.25s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.54s]: Demi Lovato’s album, Confidence, was released in October 2015.
+    17.59s  agent 발화 끝
+    19.93s  user  발화 시작: 2015년 10월? 와, 엄청 오래됐네! 더 새로운 거 계획된 거 있어?
+    25.12s  user  발화 끝
+    25.12s  agent 발화 시작: 시간 엄청 흐른 것 같지 않아? 그 뒤로도 싱글 같은 거 계속 냈잖아.
+    28.93s  user  발화 시작: 맞아, 싱글은 나왔었지. 근데 앨범 전체는? 새 앨범 빨리 나왔으면 좋겠어.
+    29.05s  agent 발화 끝
+    33.81s  <ret> 발화 (turn7 첫 프레임)
+    34.20s  agent 발화 시작: <ret> 새로운 소식 있는지 찾아볼까— 가장 최근 앨범 *Dancing with the Devil… the
+    34.39s  user  발화 끝
+    35.17s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.56s]: Demi Lovato released the album *Dancing with the Devil… the Art of Sta
+    42.81s  user  발화 시작: 2021년 4월… 그래, 그게 좀 더 최근이네. 그 이후로는?
+    42.86s  agent 발화 끝
+    47.29s  <ret> 발화 (turn9 첫 프레임)
+    47.60s  agent 발화 시작: <ret> 미안, 그 이후로는 아직 새로운 앨범에 대한 정보가 없어.
+    47.80s  user  발화 끝
+    48.41s  ⚡SPAN 주입(IRRELEVANT) [d'=1.12s / d_lead=3.65s]: (tool result) AAPL: 170.34 USD +0.22 (0.13%)
+    50.63s  user  발화 시작: 아, 그래? 그럼 발표 기다려봐야겠다.
+    51.24s  agent 발화 끝
+    53.33s  agent 발화 시작: 그게 좋겠다. 소셜 미디어에서 자주 활동하니까, 거기서 소식 찾을 수 있을 거야.
+    53.48s  user  발화 끝
+    57.77s  agent 발화 끝
+    58.69s  user  발화 시작: 맞다! 확인해 줘서 고마워, 진짜.
+    61.46s  user  발화 끝
+    61.48s  agent 발화 시작: 천만에! 밤하늘을 보는 것 같네—가끔은 바로 찾을 수도 있고, 가끔은 딱 맞는 순간을 기다려야 해.
+    69.77s  agent 발화 끝

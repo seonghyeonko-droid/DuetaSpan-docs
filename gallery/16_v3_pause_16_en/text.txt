@@ -2,21 +2,22 @@ v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking…
-[  4.57s][moshi] That's a common reaction to powerful literature, certainly.
-[  8.15s][user ] …where did the term “big brother” actually come from? It just feels so… pervasive now.
-[ 13.76s][moshi] ⟨ret@13.61s⟩ That’s an interesting ⟦⚡SPAN@15.53s: The term "Big Brother" originates from George Orwell's dystopian novel *Nineteen Eighty-Four*.⟧ question regarding its origins… It comes from George Orwell’s *Nineteen Eighty-Four*, a novel published in nineteen forty-nine.
-[ 22.99s][user ] Nineteen forty-nine… that's quite a while ago. Was Orwell commenting on something specific at the time?
-[ 30.13s][moshi] He was, though it’s a complex tapestry of influences.
-[ 34.42s][user ] Was it about Stalin, then? Everyone always says it’s about Stalin.
-[ 39.53s][moshi] ⟨ret@39.38s⟩ The ⟦⚡SPAN@40.58s: Orwell stated the concept of “Big Brother” was inspired by his experiences with surveillance during the Spanis⟧ connection to Stalin is certainly a frequent observation… Orwell drew inspiration from surveillance he witnessed during the Spanish Civil War, not specifically Stalin.
-[ 50.21s][user ] Surveillance during the war? That’s… surprising.
-[ 54.10s][moshi] It’s often overlooked, but profoundly shaped his vision.
-[ 57.56s][user ] But didn't the Soviet Union have extensive spying? I mean—
-[ 61.65s][user ] …wasn’t that a huge part of the fear back then…
-[ 65.30s][user ] …the idea of constant monitoring?
-[ 68.05s][moshi] That fear was absolutely present, yes, and Orwell certainly tapped into it. The novel reflects a broader anxiety about totalitarianism.
-[ 77.28s][user ] So, it wasn't *just* about Stalin, it was about the potential for any government to become… intrusive?
-[ 84.46s][moshi] Precisely. The novel is a warning against unchecked power, regardless of its source.
-[ 90.57s][user ] It’s a pretty chilling idea, even now, to be constantly watched.
-[ 94.63s][moshi] It remains remarkably relevant, doesn't it? The themes of surveillance and control continue to resonate.
+[  0.00s][user ] So, I was reading this book, and it mentioned “Big Brother”.
+[  3.93s][moshi] That’s a fascinating phrase—it’s become so ingrained in our culture.
+[  7.85s][user ] It really has… but where did the name actually come from?
+[ 11.76s][moshi] ⟨ret@11.60s⟩ Let’s explore the ⟦⚡SPAN@13.60s: The term "Big Brother" originates from the title of George Orwell's dystopian novel, *Nineteen Eighty-Four*.⟧ origins of that striking term… The phrase comes directly from George Orwell’s *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 21.50s][user ] Nineteen Eighty-Four… I’ve heard of it, of course, but…
+[ 25.05s][moshi] It’s a truly seminal work, exploring themes of surveillance and control.
+[ 30.03s][user ] …I always assumed it was some historical reference, ⟨ret@33.11s⟩ or—
+[ 33.51s][moshi] Actually, ⟦⚡SPAN@34.15s: Orwell stated he based the concept on memories of the British class system and his experiences with boarding s⟧ the inspiration was quite personal for Orwell… Orwell drew on his memories of the British class system and boarding school life to create the idea.
+[ 42.77s][user ] So it wasn’t about a real person, then?
+[ 45.65s][moshi] «interrupted» That's a very good question—
+[ 47.72s][user ] I mean…
+[ 48.97s][user ] …was there anyone Orwell specifically based “Big Brother” on?
+[ 53.57s][moshi] ⟨ret@53.49s⟩ It wasn’t ⟦⚡SPAN@54.77s: While no single person inspired the figure, some scholars suggest Stalin’s pervasive image influenced Orwell’s⟧ a direct portrait of one individual, precisely… Some believe Stalin’s widespread image may have influenced Orwell’s portrayal of “Big Brother.”
+[ 62.81s][user ] Stalin? That’s… a pretty dark connection.
+[ 66.44s][moshi] The novel certainly reflects the anxieties of its time, doesn't it?
+[ 70.76s][user ] It does. It makes you think about how easily things can slide.
+[ 75.03s][moshi] Indeed. Constant vigilance is essential to protecting freedoms.
+[ 79.78s][user ] You know, it’s funny how a novel can create a phrase that lasts so long.
+[ 84.54s][moshi] Language is a powerful thing; stories shape our understanding of the world.

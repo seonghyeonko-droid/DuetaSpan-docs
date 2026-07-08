@@ -1,35 +1,39 @@
 # v3_rag_28_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 어, 정부 부처들 읽다가 궁금해졌는데, 재향군인부 언제 시작했어?
-     5.16s  <ret> 발화 (turn1 첫 프레임)
-     5.32s  agent 발화 시작: <ret> 네, 복무하신 분들을 지원한 역사를 파헤치는 질문이시네요.
-     5.56s  user  발화 끝
-     7.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: The United States Department of Veterans Affairs was established on Ju
-     8.66s  agent 발화 시작: 재향군인부는 1930년 7월 21일에 행정 명령으로 설립됐습니다.
-     8.69s  agent 발화 끝
-    13.67s  agent 발화 끝
-    14.34s  user  발화 시작: 1930년? 그거…상대적으로 최근 같지 않아? 그때보다 전에 이미 퇴역 군인들을 돌봤잖아?
-    20.73s  <ret> 발화 (turn4 첫 프레임)
-    20.88s  agent 발화 시작: <ret> 네, 그 날짜 이전에도 관리가 있었지만, 구조가 상당히 달랐습니다.
-    21.10s  user  발화 끝
-    22.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: Prior to 1930, the Veterans Bureau, created in 1921, handled most vete
-    25.46s  agent 발화 시작: 1930년 이전에 1921년에 설립된 재향군인국에서 대부분의 퇴역 군인 관련 업무를 처리했습니다.
-    25.55s  agent 발화 끝
-    32.27s  agent 발화 끝
-    33.16s  user  발화 시작: 알겠네, 그럼 재향군인국이 전신이었네—근데 정확히 뭘 했어?
-    36.91s  agent 발화 시작: 꽤 광범위한 사업이었는데, 의료 지원, 연금 등을 포함했어요.
-    37.00s  user  발화 끝
-    40.69s  user  발화 시작: 연금은 그렇고, 장례 혜택 같은 것도 처리했어, 아니면 따로 했어?
-    41.49s  agent 발화 끝
-    44.81s  <ret> 발화 (turn9 첫 프레임)
-    45.20s  agent 발화 시작: <ret> 확실히 해 드리자면, 장례 혜택도 관할했습니다.
-    45.37s  user  발화 끝
-    46.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: The Veterans Bureau provided compensation, hospitalization, vocational
-    48.49s  agent 발화 시작: 재향군인국은 자격 있는 퇴역 군인에게 보상, 입원 치료, 재활, 장례 혜택을 제공했습니다.
-    48.57s  agent 발화 끝
-    54.43s  agent 발화 끝
-    56.12s  user  발화 시작: 그럼, 심지어 그때도 꽤 포괄적인 패키지였네. 1930년 변경이 혜택 전달 방식 자체를 근본적으로 바꿨어, 
-    65.57s  agent 발화 시작: 그 변화는 오히려 통합과 강조점 이동에 관한 것이었고, 절차를 간소화했습니다.
-    65.62s  user  발화 끝
-    71.35s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 정부 기관에 대해 읽다가 궁금해졌는데, 재향군인부(Department of Veterans Affair
+     7.42s  <ret> 발화 (turn1 첫 프레임)
+     7.57s  agent 발화 시작: <ret> 네, 정말 흥미로운 질문이고, 우리나라를 위해 봉사한 것에 대한 인식이 커지고 있음을 보여주는 질
+     7.79s  user  발화 끝
+     9.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: The United States Department of Veterans Affairs was established on Ju
+    13.91s  agent 발화 시작: 재향군인부는 천구백삼십 년 칠월 이십일일에 설립됐습니다.
+    13.96s  agent 발화 끝
+    18.13s  agent 발화 끝
+    18.86s  user  발화 시작: 천구백삼십 년? 그거… 생각보다 얼마 안 된 것 같지 않아? 그 전에 베테랑들은 없었어?
+    23.97s  <ret> 발화 (turn4 첫 프레임)
+    24.12s  agent 발화 시작: <ret> 물론이죠—베테랑들을 돌보는 역사는 훨씬 더 오래됐지만, 처음에는 그렇게 체계화되지 않았어요.
+    24.33s  user  발화 끝
+    25.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: Prior to 1930, the administration of veterans’ benefits was divided am
+    30.57s  agent 발화 시작: 천구백삼십 년 이전에 베테랑 혜택은 여러 기관에서 관리했습니다.
+    30.61s  agent 발화 끝
+    34.91s  agent 발화 끝
+    35.74s  user  발화 시작: 그러니까 그때는 좀  patchwork(조각보처럼)이었어? 대체 그 기관들은 뭘 했는데—
+    40.81s  agent 발화 시작: 연금이나 의료 지원 같은 필요를 해결했지만, 중앙 집중적인 초점이 부족했습니다.
+    40.88s  user  발화 끝
+    45.27s  user  발화 시작: 그때 베테랑 *만을* 위한 병원이 있었어?
+    46.13s  agent 발화 끝
+    48.23s  <ret> 발화 (turn9 첫 프레임)
+    48.38s  agent 발화 시작: <ret> 정말 중요한 지적이에요—초기 시설은 종종 재활용되거나 규모가 상당히 제한적이었습니다.
+    48.50s  user  발화 끝
+    50.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: The first dedicated veterans’ hospital opened in 1866, originally as a
+    54.40s  agent 발화 시작: 베테랑을 위한 최초의 병원은 남북 전쟁 이후인 천팔백육십육년에 개원했습니다.
+    54.49s  agent 발화 끝
+    59.96s  agent 발화 끝
+    61.70s  user  발화 시작: 천팔백육십육 년… 그러니까 재향군인부 자체보다 육십 년 넘게 전이네? 꽤 큰 차이다. 그때 전담 부서를 만들
+    70.38s  <ret> 발화 (turn12 첫 프레임)
+    70.67s  agent 발화 시작: <ret> 특히 제1차 세계 대전 이후, 이러한 서비스를 통합해야 한다는 압력이 커졌습니다.
+    70.84s  user  발화 끝
+    72.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: The American Legion advocated strongly for a unified Department of Vet
+    76.09s  agent 발화 시작: 미국 레지옹(American Legion)은 천구백이십년대 내내 통일된 부서를 적극적으로 캠페인했습니다.
+    76.23s  agent 발화 끝
+    82.44s  agent 발화 끝

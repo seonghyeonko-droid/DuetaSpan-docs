@@ -2,9 +2,14 @@ v3_defer_10_ko src=mcp style=mcp_deferred
 SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 작년 프랑스 휴가 사진 찾아 주시는데, 썸네일 말고 큰 사진으로 보여 ⟨ret@4.94s⟩ 주세요.
-[  5.18s][moshi] 음, 찾아봤는데, ⟦⚡SPAN@6.94s: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender_Fields.png", and "Nice_Beac⟧ 2023년 프랑스 여행 사진 세 장 찾았어. 썸네일은 뺐어.
-      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": "2023", "exclude": "thumbnails"}}
-[ 12.30s][user ] 와, 정말 잘 됐네요! 에펠탑 사진 열어 줄 수 있어요?
-[ 16.35s][moshi] ⟨ret@16.27s⟩ 그래, 당연히 열어 ⟦⚡SPAN@17.55s: (tool result) File "Paris_Eiffel_Tower.jpg" is now displayed.⟧ 줄 수 있지… 에펠탑 사진 지금 열었어.
-      CALL: {"function": "open_file", "arguments": {"filename": "Paris_Eiffel_Tower.jpg"}}
+[  0.00s][user ] 작년 프랑스 휴가 사진 찾아 주시는데, 썸네일 말고 큰 사진으로 보여 ⟨ret@4.84s⟩ 주세요.
+[  5.08s][moshi] 알았어. 작년 프랑스 ⟦⚡SPAN@6.52s: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender_Fields.png", and "Nice_Beac⟧ 여행 사진 세 장 찾았어. 썸네일은 빼고.
+      CALL: {"function": "search_files", "arguments": {"keywords": ["France", "holiday"], "year": 2023, "exclude": ["thumbnail"]}}
+[  9.55s][user ] 오, 좋네요! 그리고 “Paris_Eiffel_Tower.jpg” 사진을 제 여동생 엘리너에게 보내 줄 수 있을까요? 엘리너 이메일 주소는 eleanor.vance@email.com이에요.
+[ 19.38s][moshi] ⟨ret@19.06s⟩ 응, 바로 ⟦⚡SPAN@21.06s: (tool result) Email sent to eleanor.vance@email.com with attachment "Paris_Eiffel_Tower.jpg" and subject "From⟧ 보내 줄게. 엘리너에게 에펠탑 사진 이메일 보냈어.
+      CALL: {"function": "send_email", "arguments": {"recipient": "eleanor.vance@email.com", "attachment": "Paris_Eiffel_Tower.jpg", "subject": "From our trip!"}}
+[ 24.47s][user ] 정말 감사합니다. 음, 작년 7월 15일 날 니스는 날씨가 어땠나요?
+[ 29.47s][moshi] 그거 알아볼게.
+[ 30.74s][user ] 네, 감사합니다.
+  ⟦⚡지연 SPAN 도착@31.00s: (tool result) The weather in Nice on July fifteenth, 2023, was twenty-eight degrees Celsius with clear skies.⟧
+[ 31.71s][moshi] «deferred_result» ⟨ret@31.71s⟩ 그래, 날씨 정보 찾았어. 작년 7월 15일에는 니스가 섭씨 28도였고 하늘은 맑았어.

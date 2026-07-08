@@ -2,13 +2,11 @@ v3_to_ot_11_en src=nq style=v1
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, do you happen to know when the Oakland A’s were last no-hit? It feels like it’s been ⟨ret@6.95s⟩ ages.
-[  7.34s][moshi] That’s a ⟦⚡SPAN@8.79s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ good question about a frustrating experience— The Athletics were last no-hit on April twenty-first, two thousand eighteen.
-[ 17.25s][user ] Wow, that *was* a while ago. Who pitched it?
-[ 21.48s][moshi] That was a combined effort by three pitchers from the Boston Red Sox—Chris Sale, Héctor Velázquez, and Joe Kelly.
-[ 24.18s][user ] «backchannel» Uh-huh.
-[ 29.18s][moshi] ⟨ret@28.95s⟩ Considering ⟦⚡SPAN@30.07s: Chris Sale pitched seven innings, allowing zero hits and striking out twelve batters.⟧ the pitching matchup, it’s— Chris Sale pitched seven hitless innings, striking out twelve batters in that game.
-[ 37.02s][user ] But was it a perfect game, or did anyone walk?
-[ 40.46s][moshi] It wasn't a perfect game; the Red Sox walked two batters and hit one with a pitch.
-[ 46.45s][user ] «to_other» Can you believe how much that coffee costs these days?
-[ 49.92s][user ] So, it wasn’t a *true* no-hitter then, with the walks and hit batter? Just checking.
+[  0.00s][user ] Do you happen to know when the Oakland A’s were last no-hit? I’m curious about ⟨ret@5.55s⟩ that.
+[  5.93s][moshi] That’s a ⟦⚡SPAN@7.39s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ good question about the A’s pitching history. The Oakland Athletics were last no-hit on April twenty-first, two thousand eighteen.
+[ 15.39s][user ] Wow, that was a while ago.
+[ 17.56s][moshi] It is quite a span since that last occurrence, yes.
+[ 21.28s][user ] Wait, who pitched that game for the other ⟨ret@23.85s⟩ team?
+[ 24.09s][moshi] Let me ⟦⚡SPAN@25.05s: James Paxton pitched a no-hitter against the Oakland Athletics on April 21, 2018.⟧ quickly recall the details of that particular game— James Paxton of the Seattle Mariners pitched the no-hitter against the A’s on that day.
+[ 33.58s][user ] «to_other» Oh, remind me to pick up milk later.
+[ 36.19s][user ] So Paxton was pretty dominant that day, huh?

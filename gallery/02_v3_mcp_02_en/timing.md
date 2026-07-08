@@ -2,34 +2,32 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     3.66s  <ret> 발화 (turn1 첫 프레임)
-     3.89s  agent 발화 시작: <ret> Certainly, I can monitor that site for you. Right now,
-     4.11s  user  발화 끝
-     5.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: (tool result) The website reported a temperature of 22 degrees Celsius
-    13.58s  agent 발화 끝
-    14.97s  user  발화 시작: That’s nice. I— I mean, do you think edelweiss grow well in 
-    20.05s  agent 발화 시작: Edelweiss generally prefer cooler temperatures and full sun,
-    20.07s  user  발화 끝
-    25.49s  user  발화 시작: Hmm. Can you check if there are any guided wildflower walks 
-    25.51s  agent 발화 끝
-    29.98s  <ret> 발화 (turn5 첫 프레임)
-    30.30s  agent 발화 시작: <ret> I can certainly look into guided walks for you. There’
-    30.49s  user  발화 끝
-    31.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.57s]: (tool result) There is a “Matterhorn Meadows Wildflower Tour” on Tuesd
-    39.26s  user  발화 시작: Eighty-five francs… that sounds reasonable. Okay, go ahead a
-    39.43s  agent 발화 끝
-    43.99s  <ret> 발화 (turn7 첫 프레임)
-    44.35s  user  발화 끝
-    44.38s  agent 발화 시작: <ret> Absolutely, I can take care of that reservation. Wonde
-    45.51s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.39s]: (tool result) Your booking is confirmed; reference number is ZX789-456
-    53.70s  agent 발화 끝
-    54.57s  user  발화 시작: Perfect! That’s a relief. Uh, do you happen to know what the
-    59.42s  user  발화 끝
-    59.47s  agent 발화 시작: Zermatt sits at an elevation of approximately one thousand s
-    64.90s  agent 발화 끝
-    65.22s  user  발화 시작: Right, that’s good to know. I’m packing accordingly. One las
-    72.75s  <ret> 발화 (turn11 첫 프레임)
-    73.06s  agent 발화 시작: <ret> Certainly, a reminder is a very good idea. I’ve set a 
-    73.24s  user  발화 끝
-    73.25s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.65s]: (tool result) Reminder set for tomorrow night at 8:00 PM: “Pack camera
-    80.34s  agent 발화 끝
+     3.60s  <ret> 발화 (turn1 첫 프레임)
+     3.83s  agent 발화 시작: <ret> Certainly, I can monitor that website for changes. Cur
+     4.02s  user  발화 끝
+     5.36s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.19s]: (tool result) The website weather dot example dot com reports current 
+    13.01s  agent 발화 끝
+    14.33s  user  발화 시작: Oh, that’s nice. I— I mean, I was hoping for rain, though.
+    18.09s  agent 발화 시작: A bit of rain can be lovely for the alpine wildflowers, cert
+    18.12s  user  발화 끝
+    22.32s  user  발화 시작: Can you set a reminder for me to check again in an hour?
+    22.35s  agent 발화 끝
+    24.92s  <ret> 발화 (turn5 첫 프레임)
+    25.24s  agent 발화 시작: <ret> Of course, a timely check is always a good idea. I’ve 
+    25.41s  user  발화 끝
+    26.60s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.74s]: (tool result) A reminder to check the weather has been set for one hou
+    31.14s  user  발화 시작: Great, thanks. Do you know anything about edelweiss?
+    31.27s  agent 발화 끝
+    34.65s  user  발화 끝
+    34.82s  agent 발화 시작: Edelweiss, *Leontopodium alpinum*, is a beautiful and famous
+    41.86s  agent 발화 끝
+    42.69s  user  발화 시작: I’m planning a trip to Switzerland in July. Will I be able t
+    46.92s  <ret> 발화 (turn9 첫 프레임)
+    47.07s  agent 발화 시작: <ret> Switzerland in July is a wonderful time for wildflower
+    47.13s  user  발화 끝
+    48.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.95s]: (tool result) Edelweiss blooms from June to September at elevations be
+    57.59s  agent 발화 끝
+    57.73s  user  발화 시작: Perfect! I think I'll aim for a hike around two thousand fiv
+    61.92s  agent 발화 시작: An excellent elevation; you should have a good chance of spo
+    62.08s  user  발화 끝
+    65.76s  agent 발화 끝

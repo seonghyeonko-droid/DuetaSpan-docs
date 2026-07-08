@@ -2,12 +2,16 @@ v3_hesit_18_ko src=nq style=v1
 SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 폼페이에 대해 읽다가 문득 궁금해졌는데, 베수비오 화산이 마지막으로 폭발한 게 ⟨ret@6.28s⟩ 언제였을까요?
-[  6.60s][moshi] 네, 그 ⟦⚡SPAN@8.28s: Mount Vesuvius last erupted in March of 1944.⟧ 질문을 많이 하시더라고요. 베수비오 화산의 마지막 폭발은 천구백사십사년 삼월에 일어났습니다.
-[ 14.12s][user ] 와, 생각보다 얼마 안 됐네요. 그때 폭발이 폼페이를 파괴했던 폭발만큼 컸나요?
-[ 20.43s][moshi] 아니요, 다행히 그때 폭발은 그만큼 엄청나지는 않았습니다. 천구백사십사년 폭발은 규모가 훨씬 작았습니다.
-[ 29.65s][user ] 그래도 근처에 사는 사람들에게 영향을 ⟨ret@31.73s⟩ 줬나요?
-[ 32.05s][moshi] 네, ⟦⚡SPAN@32.77s: The 1944 eruption caused damage to nearby towns and villages.⟧ 영향을 줬습니다.
-[ 33.33s][moshi] 천구백사십사년 폭발은 주변 마을과 촌락에 피해를 입혔습니다.
-[ 38.49s][user ] 그럼 과학자들이 지금도 주의 깊게 관찰하고 있겠네요? 혹시 곧 또 폭발할 위험이 있나요?
-[ 44.64s][moshi] 맞아요. 베수비오 화산은 끊임없이 감시를 받고 있고, 앞으로도 활동할 가능성이 있는 활화산입니다. 아주 복잡한 시스템이에요.
+[  0.00s][user ] 폼페이에 대해 읽다가 문득 궁금해졌어요… 베수비오 화산이 마지막으로 폭발한 게 ⟨ret@5.97s⟩ 언제였죠?
+[  6.29s][moshi] 그 지역의 역사를 ⟦⚡SPAN@7.97s: Mount Vesuvius last erupted in March of 1944.⟧ 생각하면 아주 자연스러운 질문이에요.
+[  9.99s][moshi] 베수비오 화산의 마지막 공식적인 폭발은 천구백사십사년 삼월에 일어났습니다.
+[ 17.66s][user ] 천구백사십사년… 와. 생각보다 얼마 안 된 거네요. 폼페이 폭발만큼 컸나요?
+[ 25.11s][moshi] ⟨ret@24.79s⟩ ⟦⚡SPAN@25.83s: The 1944 eruption was Strombolian, producing lava flows and ash, but not a pyroclastic surge.⟧ 폭발 규모는 상당히 다양하게 나타나는데, 천구백사십사년의 폭발은 폼페이를 덮었던 폭발보다 훨씬 덜 파괴적이었습니다.
+[ 34.70s][moshi] 천구백사십사년의 폭발은 스트롬볼리식 형태였고, 용암류와 화산재가 떨어졌지만 화쇄류는 발생하지 않았습니다.
+[ 42.88s][user ] 스트롬볼리식… 그게 무슨 뜻이죠? 그러니까—
+[ 45.80s][moshi] «interrupted» 간헐적으로 가스와 용암이 분출되는 특정 유형의 폭발을 의미합니다.
+[ 49.80s][user ] «interrupts_prev» 그럼, 칠십구 년에 있었던 것처럼 엄청난 화산재와 경석 구름은 없었나요?
+[ 54.85s][moshi] ⟨ret@54.61s⟩ 정확합니다. 칠십구 ⟦⚡SPAN@56.61s: Plinian eruptions are characterized by sustained columns of gas and ash, often leading to pyroclastic flows.⟧ 년의 폭발은 훨씬 더 격렬한 플리니식 폭발이었습니다.
+[ 60.03s][moshi] 플리니식 폭발은 칠십구 년의 폭발처럼 지속적인 가스와 화산재 기둥을 동반하며, 종종 화쇄류를 일으킵니다.
+[ 68.96s][user ] 알겠습니다, 이제 좀 이해가 돼요. 그럼 아직도… 활화산인가요? 베수비오 화산은요?
+[ 74.58s][moshi] 네, 베수비오 화산은 활화산으로 간주되며, 불안정한 징후가 없는지 지속적으로 감시하고 있습니다.

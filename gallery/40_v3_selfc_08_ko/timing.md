@@ -2,40 +2,48 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 줘.
-     3.41s  <ret> 발화 (turn1 첫 프레임)
-     3.65s  agent 발화 시작: <ret> 네, 그 경로의 버스 운행 상황을 확인해 볼게요. Greyhound와 FlixBus 모두 5월 1
-     3.69s  user  발화 끝
-     5.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.52s]: (tool result) There are two buses available on May tenth: a Greyhound 
-    14.69s  agent 발화 끝
-    15.26s  user  발화 시작: 좋네. 5월 15일에 돌아오는 건 어때?
-    18.24s  <ret> 발화 (turn3 첫 프레임)
-    18.40s  agent 발화 시작: <ret> 네, 돌아오는 옵션을 알아봐 드릴게요. 5월 15일에는 160달러짜리 Greyhound나 130달
-    18.58s  user  발화 끝
-    19.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.42s]: (tool result) Two buses are available on May fifteenth: a Greyhound de
-    27.39s  agent 발화 끝
-    27.62s  user  발화 시작: 흠, 있잖아— 그러니까, 10일에 더 일찍 출발하는 Greyhound가 있어?
-    31.92s  user  발화 끝
-    32.08s  agent 발화 시작: 시카고에서 조금 더 빨리 출발하는 Greyhound가 있는지 알아볼까요?
-    35.93s  user  발화 시작: FlixBus는 좌석이 젖혀져?
-    36.58s  agent 발화 끝
-    38.88s  user  발화 끝
-    38.98s  agent 발화 시작: 좋은 질문이에요! FlixBus는 일반적으로 편안한 좌석을 제공하며, 많은 노선에서 리클라이닝 옵션을 이용하
-    44.38s  user  발화 시작: 응.
-    44.78s  user  발화 끝
-    47.48s  <ret> 발화 (turn9 첫 프레임)
-    47.80s  agent 발화 시작: <ret> 자, 더 일찍 출발하는 Greyhound에 대해 말씀드리자면… 5월 10일 오전 6시에 출발하는 
-    47.83s  agent 발화 끝
-    49.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.62s]: (tool result) An additional Greyhound bus departs at 6:00 AM on May te
-    57.44s  agent 발화 끝
-    57.51s  user  발화 시작: 좋아, 덴버 가는 오전 6시 Greyhound랑 돌아오는 오전 9시 Greyhound로 예약해 줘.
-    62.79s  <ret> 발화 (turn11 첫 프레임)
-    63.11s  agent 발화 시작: <ret> 알겠습니다, 예약을 확인해 드릴게요. 버스 티켓 예약을 완료했습니다! 총 비용은 300달러입니다.
-    63.30s  user  발화 끝
-    64.47s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.01s]: (tool result) Your outbound Greyhound on May tenth at 6:00 AM and retu
-    69.32s  user  발화 시작: 좋아. 이메일로 확인 메일 받을 수 있어?
-    69.41s  agent 발화 끝
-    72.16s  agent 발화 시작: 네, 여행 세부 정보가 담긴 확인 이메일을 곧 받으실 수 있습니다. 도와드릴 수 있어서 기쁩니다! 잉카 도로
-    72.23s  user  발화 끝
-    84.41s  agent 발화 끝
-    84.84s  user  발화 시작: 흥미롭네. 직물에 관한 전시물도 있어?
-    87.70s  user  발화 끝
+     4.14s  <ret> 발화 (turn1 첫 프레임)
+     4.38s  agent 발화 시작: <ret> 알아보고 있어요… 5월 10일에 시카고에서 덴버로 가는 버스는 아침 8시랑 저녁 6시에 있고, 가
+     4.49s  user  발화 끝
+     6.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: (tool result) There are two buses departing Chicago on May tenth: one 
+    14.90s  agent 발화 끝
+    15.40s  user  발화 시작: 아침 8시 걸로 할게. 그 버스 세 자리 예약해 줘.
+    18.72s  <ret> 발화 (turn3 첫 프레임)
+    18.88s  agent 발화 시작: <ret> 네, 확인해 볼게요… 예약이 확정됐어요. 예약 번호는 BX7492이고, 덴버 가는 아침 8시 버스
+    19.00s  user  발화 끝
+    19.68s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.49s]: (tool result) Reservation confirmed: confirmation number is BX7492, th
+    29.35s  agent 발화 끝
+    29.57s  user  발화 시작: 좋아. 음, 덴버 도착 예상 시간은 어떻게 돼?
+    33.45s  user  발화 끝
+    33.58s  agent 발화 시작: 좋은 질문이네요—
+    34.26s  user  발화 시작: 버스에 와이파이 있어?
+    34.86s  agent 발화 끝
+    35.73s  user  발화 끝
+    35.85s  agent 발화 시작: 네, 덴버로 가는 모든 버스에는 무료 와이파이가 제공되고, 좌석마다 콘센트도 있어요.
+    42.82s  <ret> 발화 (turn8 첫 프레임)
+    43.08s  agent 발화 끝
+    43.14s  agent 발화 시작: <ret> 도착 시간은 보통… 버스는 덴버에 마운틴 타임으로 저녁 6시쯤 도착할 예정이에요.
+    44.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) The estimated arrival time for the 8:00 AM Chicago to De
+    46.84s  user  발화 시작: 응.
+    47.25s  user  발화 끝
+    49.25s  agent 발화 끝
+    49.35s  user  발화 시작: 저녁 6시. 알았어. 수하물 허용량은 어떻게 돼?
+    53.03s  <ret> 발화 (turn11 첫 프레임)
+    53.35s  agent 발화 시작: <ret> 각 승객은… 각 승객은 위탁 수하물 하나랑 기내 수하물 하나씩 가져올 수 있고, 무게는 각각 오십
+    53.61s  user  발화 끝
+    54.79s  ⚡SPAN 주입 [d'=1.76s / d_lead=1.97s]: (tool result) Each passenger is allowed one checked bag and one carry-
+    63.09s  user  발화 시작: 각각 오십 파운드, 알아두면 좋네. 아— 화장실은 있어?
+    63.17s  agent 발화 끝
+    68.46s  agent 발화 시작: 네, 저희 장거리 버스에는 승객 편의를 위해 화장실이 마련되어 있어요.
+    68.61s  user  발화 끝
+    73.00s  agent 발화 끝
+    73.41s  user  발화 시작: 완벽해. 그리고 중간에 정류장이 있어?
+    76.09s  <ret> 발화 (turn15 첫 프레임)
+    76.33s  agent 발화 시작: <ret> 몇 군데 정류장이 있어요… 버스는 네브래스카 주의 오마하랑 캔자스 주의 헤이스에서 각각 15분씩 
+    76.50s  user  발화 끝
+    76.59s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.21s]: (tool result) The bus stops in Omaha, Nebraska, and Hays, Kansas, for 
+    84.34s  agent 발화 끝
+    85.41s  user  발화 시작: 각각 15분, 도움이 되네. 정말 고마워.
+    89.07s  user  발화 끝
+    89.24s  agent 발화 시작: 천만에요! 덴버 여행 즐겁게 다녀오세요. 여행 계획에 언제든지 도움을 드릴 수 있어요.
+    95.73s  agent 발화 끝

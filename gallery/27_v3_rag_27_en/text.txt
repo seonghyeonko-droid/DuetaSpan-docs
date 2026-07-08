@@ -2,10 +2,10 @@ v3_rag_27_en src=hotpotqa style=v1
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about Lux Aurunque, and I'm curious—when was he ⟨ret@4.32s⟩ born?
-[  4.56s][moshi] That’s a good question, ⟦⚡SPAN@6.32s: Lux Aurunque was born in nineteen seventy.⟧ delving into historical figures… He was born in nineteen seventy, according to available records.
-[ 12.32s][user ] Nineteen seventy… wow, that's not as long ago as I thought. And was he a ruler of some kind?
-[ 18.46s][moshi] ⟨ret@18.39s⟩ Understanding ⟦⚡SPAN@19.35s: Lux Aurunque ruled the Kingdom of Veridia from twenty twenty-one to twenty thirty-five.⟧ his position helps place him in context… He ruled the Kingdom of Veridia from twenty twenty-one to twenty thirty-five.
-[ 26.71s][user ] Veridia… I don’t think I’ve heard of that kingdom. Was it a major trading ⟨ret@31.65s⟩ power?
-[ 31.88s][moshi] Veridia’s ⟦⚡SPAN@32.61s: The Kingdom of Veridia was a major exporter of rare earth minerals during Aurunque’s reign.⟧ economic role is quite interesting… The kingdom was a major exporter of rare earth minerals during his reign.
-[ 40.08s][user ] Rare earth minerals, huh? That explains a lot, actually. Thanks!
+[  0.00s][user ] I was just reading about Lux Aurunque— when exactly was he ⟨ret@4.45s⟩ born?
+[  4.68s][moshi] That’s a fascinating question ⟦⚡SPAN@6.45s: Lux Aurunque was born in nineteen seventy.⟧ about a significant figure. He was born in nineteen seventy, according to available records.
+[ 12.25s][user ] Nineteen seventy… wow, that’s earlier than I thought. And was he involved in any major projects?
+[ 18.40s][moshi] ⟨ret@18.33s⟩ Aurunque’s ⟦⚡SPAN@19.29s: Lux Aurunque designed the Helios House in nineteen ninety-eight, a landmark sustainable residence.⟧ work is certainly noteworthy in architectural circles. He designed the Helios House in nineteen ninety-eight, a sustainable residence.
+[ 26.91s][user ] The Helios House… I think I’ve seen pictures. Was it his first major commission?
+[ 32.47s][moshi] Not precisely— he’d already established a reputation with smaller-scale projects. He focused on integrating nature into the built environment even then, a principle I always champion myself.
+[ 44.73s][user ] That’s interesting. So, he was thinking about sustainability quite early on?

@@ -2,13 +2,11 @@ v3_to_ot_11_ko src=nq style=v1
 SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 오클랜드 애슬레틱스가 마지막으로 노히트 게임을 당한 게 언제였는지 궁금해서요. 정말 오래된 것 같아요.
-[  6.42s][moshi] ⟨ret@6.18s⟩ 좋은 질문이세요. ⟦⚡SPAN@8.18s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ 정말 답답한 경험이었죠— 애슬레틱스는 이천십팔년 사월 이십일이 마지막으로 노히트 게임을 당했습니다.
-[ 14.40s][user ] 와, 정말 오래됐네요. 누가 던졌어요?
-[ 17.19s][moshi] 보스턴 레드삭스 소속 세 명의 투수가 함께 노히트 게임을 만들었습니다—크리스 세일, 헥터 벨라스케스, 그리고 조 켈리 선수입니다.
-[ 20.02s][user ] «backchannel» 네.
-[ 25.31s][moshi] ⟨ret@25.07s⟩ 경기를 ⟦⚡SPAN@26.51s: Chris Sale pitched seven innings, allowing zero hits and striking out twelve batters.⟧ 생각하면— 크리스 세일 선수는 7이닝 동안 안타를 허용하지 않고, 열두 명의 타자를 삼진으로 잡았습니다.
-[ 34.69s][user ] 그런데 퍼펙트 게임이었나요, 아니면 볼넷을 준 적이 있었나요?
-[ 38.27s][moshi] 퍼펙트 게임은 아니었습니다. 레드삭스 선수들은 두 명의 타자에게 볼넷을 주고, 한 명을 몸에 맞혔습니다.
-[ 46.31s][user ] «to_other» 요즘 커피 가격이 얼마나 비싼지 믿을 수가 없네요.
-[ 49.07s][user ] 그러면 볼넷과 몸에 맞은 타자가 있어서 완전한 노히트 게임은 아니었던 거군요? 확인해 보고 싶어서요.
+[  0.00s][user ] 혹시 오클랜드 애슬레틱스가 마지막으로 노히트를 당한 게 언제였는지 아시나요? 궁금해서요.
+[  5.40s][moshi] ⟨ret@5.16s⟩ 좋은 질문이세요. ⟦⚡SPAN@7.16s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ 오클랜드 애슬레틱스는 이천십팔 년 4월 21일에 마지막으로 노히트를 당했습니다.
+[ 12.06s][user ] 와, 정말 오래됐네요.
+[ 13.48s][moshi] 네, 그 이후로 꽤 오랜 시간이 지났습니다.
+[ 17.25s][user ] 잠시만요, 그 경기에 상대 팀 투수는 누구였죠?
+[ 20.32s][moshi] ⟨ret@20.16s⟩ 그 ⟦⚡SPAN@21.44s: James Paxton pitched a no-hitter against the Oakland Athletics on April 21, 2018.⟧ 경기의 자세한 내용을 잠시 확인해 볼게요. 제임스 팩스턴 선수가 시애틀 매리너스 소속으로 그날 애슬레틱스를 상대로 노히터를 기록했습니다.
+[ 30.53s][user ] «to_other» 아, 나중에 우유 사 오라고 알려주세요.
+[ 32.81s][user ] 팩스턴 선수는 그날 정말 압도적이었나 보네요, 그렇죠?

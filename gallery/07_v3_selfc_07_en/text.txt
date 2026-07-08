@@ -3,36 +3,34 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  4.04s][moshi] ⟨ret@3.81s⟩ Certainly, let’s ⟦⚡SPAN@5.01s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:30 PM.⟧ find a time to view that property. I have scheduled a viewing for you at 2:30 PM on June fifteenth.
+[  3.68s][moshi] ⟨ret@3.45s⟩ Certainly, ⟦⚡SPAN@4.49s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s arrange a viewing for you. I’ve scheduled a viewing for June fifteenth at two PM.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 12.27s][user ] That’s a bit late in the day. Uh, actually, make that June sixteenth.
-[ 16.96s][moshi] ⟨ret@16.80s⟩ No problem at ⟦⚡SPAN@18.24s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at 10:00 AM.⟧ all, let me re-schedule that for you. I’ve moved your viewing to June sixteenth at ten in the morning.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 24.94s][user ] Perfect. Is there anything else I should know about the building?
-[ 28.20s][moshi] The Grandview Lofts was completed in 2018 and has forty-two units.
-[ 33.99s][user ] Forty-two units… are there many families living ⟨ret@37.26s⟩ there?
-[ 37.34s][moshi] That’s a ⟦⚡SPAN@38.38s: (tool result) The Grandview Lofts has thirty-five percent family occupancy.⟧ good question about the demographics. Thirty-five percent of the residents at The Grandview Lofts are families.
-      CALL: {"function": "Homes_2GetBuildingDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 44.96s][user ] That’s good to know. What about parking?
-[ 47.68s][moshi] Parking is available, though spaces are limited.
-[ 50.65s][user ] Limited how? Is there a waiting list?
-[ 52.82s][moshi] «interrupted» Let me check the current parking situation—
-[ 55.08s][user ] «interrupts_prev» Is there a gym in the building ⟨ret@56.67s⟩ too?
-[ 57.05s][moshi] Ah, yes, a gym ⟦⚡SPAN@58.67s: (tool result) The Grandview Lofts includes a fitness center and a rooftop terrace.⟧ is a common amenity these days.
-      CALL: {"function": "Homes_2GetBuildingDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 60.72s][moshi] The Grandview Lofts features both a fitness center and a rooftop terrace.
-[ 65.53s][user ] A rooftop terrace sounds nice. [happy]
-[ 67.44s][moshi] It is quite lovely, especially at sunset.
-[ 70.27s][user ] Is the neighborhood ⟨ret@71.70s⟩ walkable?
-[ 71.94s][moshi] Walkability is ⟦⚡SPAN@73.06s: (tool result) The walk score for The Grandview Lofts is eighty-two.⟧ important, and I can look that up. The walk score for that area is eighty-two, indicating it's very walkable.
-      CALL: {"function": "Navigation_2GetWalkScore", "arguments": {"address": "The Grandview Lofts"}}
-[ 80.26s][user ] Eighty-two, that’s pretty good. What’s the closest grocery ⟨ret@84.55s⟩ store?
-[ 84.78s][moshi] I can quickly ⟦⚡SPAN@86.47s: (tool result) Fresh Foods Market is 0.6 miles from The Grandview Lofts.⟧ locate the nearest grocery store for you. Fresh Foods Market is just 0.6 miles from The Grandview Lofts.
-      CALL: {"function": "Navigation_2FindNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
-[ 95.36s][user ] Okay, good. And what about public transportation?
-[ 98.59s][moshi] Several bus lines serve the area near The Grandview Lofts.
-[102.55s][user ] Can you give me the schedule for the number twenty-two ⟨ret@105.25s⟩ bus?
-[105.41s][moshi] ⟦⚡SPAN@105.75s: (tool result) The number 22 bus arrives at 8:15 AM, 8:45 AM, and 9:15 AM.⟧ Let me pull up the schedule for the twenty-two bus— The twenty-two bus arrives at 8:15, 8:45, and 9:15 AM.
-      CALL: {"function": "Navigation_2GetBusSchedule", "arguments": {"busNumber": "22", "location": "The Grandview Lofts"}}
-[115.91s][user ] Perfect, that works. Thanks for all your help!
-[118.24s][moshi] You’re very welcome. I’m glad I could assist you with this.
+[ 10.01s][user ] Can you send me directions to The Grandview ⟨ret@12.54s⟩ Lofts?
+[ 12.61s][moshi] Absolutely, I ⟦⚡SPAN@13.74s: (tool result) Directions to The Grandview Lofts are: Head north on Main Street for one mile, then turn left on⟧ can provide those for you. The directions are: north on Main Street, then left on Elm Avenue.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
+[ 20.41s][user ] That sounds straightforward enough. Is there parking available?
+[ 24.30s][moshi] Parking can be tricky in that area, but The Grandview Lofts has a garage.
+[ 28.97s][user ] …And is it covered parking, or just open air?
+[ 31.67s][moshi] «interrupted» That's a good question—
+[ 32.73s][user ] «interrupts_prev» Is it covered, or just open air?
+[ 35.57s][moshi] The garage at The Grandview Lofts is covered parking.
+[ 39.54s][user ] Perfect. What’s the quickest route to get there from here right now?
+[ 43.42s][moshi] ⟨ret@43.18s⟩ Let me ⟦⚡SPAN@44.38s: (tool result) The fastest route to The Grandview Lofts is via Oak Street, estimated travel time is twelve minu⟧ check the current traffic conditions. The fastest route is via Oak Street, taking about twelve minutes.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts", "departureTime": "now"}}
+[ 50.11s][user ] Okay, twelve minutes. Can you set a reminder to leave in ten ⟨ret@54.21s⟩ minutes?
+[ 54.61s][moshi] Yes, I’ll ⟦⚡SPAN@55.33s: (tool result) A reminder to leave for The Grandview Lofts is set for ten minutes from now.⟧ set a reminder for you. I’ve set a reminder to leave in ten minutes.
+      CALL: {"function": "Reminder_2_SetReminder", "arguments": {"reminderTime": "ten minutes from now", "reminderText": "Leave for Grandview Lofts"}}
+[ 60.50s][user ] Great. What’s the listing price for a two-bedroom at The Grandview Lofts?
+[ 64.38s][moshi] ⟨ret@64.22s⟩ Let me look up ⟦⚡SPAN@65.82s: (tool result) A two-bedroom at The Grandview Lofts is listed for two thousand five hundred dollars per month.⟧ the current pricing for you. The listing price is two thousand five hundred dollars a month.
+      CALL: {"function": "Homes_2_GetListingPrice", "arguments": {"propertyName": "The Grandview Lofts", "propertyType": "two-bedroom"}}
+[ 70.78s][user ] That’s a little higher than I was hoping for. Are there any similar properties available around two thousand ⟨ret@76.23s⟩ dollars?
+[ 76.46s][moshi] I ⟦⚡SPAN@77.27s: (tool result) Willow Creek Apartments has a two-bedroom available for one thousand nine hundred fifty dollars ⟧ can certainly search for options in that price range. Willow Creek Apartments has a two-bedroom for one thousand nine hundred fifty.
+      CALL: {"function": "Homes_2_SearchProperties", "arguments": {"priceMax": "two thousand", "propertyType": "two-bedroom"}}
+[ 84.84s][user ] Willow Creek… hmm, I think I’ve heard of that place. What’s their address?
+[ 89.24s][moshi] ⟨ret@89.08s⟩ Let me find the ⟦⚡SPAN@91.08s: (tool result) Willow Creek Apartments is located at 42 Maple Drive.⟧ address for Willow Creek Apartments. The address is 42 Maple Drive.
+      CALL: {"function": "Homes_2_GetAddress", "arguments": {"propertyName": "Willow Creek Apartments"}}
+[ 95.52s][user ] Okay, 42 Maple Drive. Can you set up a viewing there for tomorrow afternoon?
+[100.23s][moshi] ⟨ret@99.92s⟩ Of course, ⟦⚡SPAN@101.04s: (tool result) A viewing at Willow Creek Apartments is scheduled for tomorrow at three PM.⟧ let’s schedule a viewing for you. I’ve scheduled a viewing for tomorrow at three PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "Willow Creek Apartments", "date": "tomorrow afternoon"}}
+[106.00s][user ] That's wonderful. Thank you so much for your help.
+[108.44s][moshi] You are most welcome. I’m glad I could assist you today.

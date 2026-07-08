@@ -1,17 +1,18 @@
 v3_rag_28_cs src=nq style=v2
-SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 연구하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 어, 정부 부처들 읽다가 궁금해졌는데, 재향군인부 언제 ⟨ret@5.16s⟩ 시작했어?
-[  5.32s][moshi] 네, 복무하신 분들을 ⟦⚡SPAN@7.16s: The United States Department of Veterans Affairs was established on July 21, 1930, by executive order.⟧ 지원한 역사를 파헤치는 질문이시네요.
-[  8.66s][moshi] 재향군인부는 1930년 7월 21일에 행정 명령으로 설립됐습니다.
-[ 14.34s][user ] 1930년? 그거…상대적으로 최근 같지 않아? 그때보다 전에 이미 퇴역 군인들을 ⟨ret@20.73s⟩ 돌봤잖아?
-[ 20.88s][moshi] 네, 그 날짜 ⟦⚡SPAN@22.73s: Prior to 1930, the Veterans Bureau, created in 1921, handled most veteran affairs.⟧ 이전에도 관리가 있었지만, 구조가 상당히 달랐습니다.
-[ 25.46s][moshi] 1930년 이전에 1921년에 설립된 재향군인국에서 대부분의 퇴역 군인 관련 업무를 처리했습니다.
-[ 33.16s][user ] 알겠네, 그럼 재향군인국이 전신이었네—근데 정확히 뭘 했어?
-[ 36.91s][moshi] «interrupted» 꽤 광범위한 사업이었는데, 의료 지원, 연금 등을 포함했어요.
-[ 40.69s][user ] «interrupts_prev» 연금은 그렇고, 장례 혜택 같은 것도 처리했어, 아니면 따로 ⟨ret@44.81s⟩ 했어?
-[ 45.20s][moshi] 확실히 해 ⟦⚡SPAN@46.81s: The Veterans Bureau provided compensation, hospitalization, vocational rehabilitation, and burial benefits to ⟧ 드리자면, 장례 혜택도 관할했습니다.
-[ 48.49s][moshi] 재향군인국은 자격 있는 퇴역 군인에게 보상, 입원 치료, 재활, 장례 혜택을 제공했습니다.
-[ 56.12s][user ] 그럼, 심지어 그때도 꽤 포괄적인 패키지였네. 1930년 변경이 혜택 전달 방식 자체를 근본적으로 바꿨어, 아니면 누가 감독했는지 바꿨어?
-[ 65.57s][moshi] 그 변화는 오히려 통합과 강조점 이동에 관한 것이었고, 절차를 간소화했습니다.
+[  0.00s][user ] 음, 정부 기관에 대해 읽다가 궁금해졌는데, 재향군인부(Department of Veterans Affairs)는 언제 ⟨ret@7.42s⟩ 시작됐어?
+[  7.57s][moshi] 네, 정말 흥미로운 ⟦⚡SPAN@9.42s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 질문이고, 우리나라를 위해 봉사한 것에 대한 인식이 커지고 있음을 보여주는 질문이에요.
+[ 13.91s][moshi] 재향군인부는 천구백삼십 년 칠월 이십일일에 설립됐습니다.
+[ 18.86s][user ] 천구백삼십 년? 그거… 생각보다 얼마 안 된 것 같지 않아? 그 전에 베테랑들은 ⟨ret@23.97s⟩ 없었어?
+[ 24.12s][moshi] 물론이죠—베테랑들을 돌보는 ⟦⚡SPAN@25.97s: Prior to 1930, the administration of veterans’ benefits was divided among several agencies.⟧ 역사는 훨씬 더 오래됐지만, 처음에는 그렇게 체계화되지 않았어요.
+[ 30.57s][moshi] 천구백삼십 년 이전에 베테랑 혜택은 여러 기관에서 관리했습니다.
+[ 35.74s][user ] 그러니까 그때는 좀  patchwork(조각보처럼)이었어? 대체 그 기관들은 뭘 했는데—
+[ 40.81s][moshi] «interrupted» 연금이나 의료 지원 같은 필요를 해결했지만, 중앙 집중적인 초점이 부족했습니다.
+[ 45.27s][user ] «interrupts_prev» 그때 베테랑 *만을* 위한 병원이 있었어?
+[ 48.38s][moshi] ⟨ret@48.23s⟩ 정말 중요한 ⟦⚡SPAN@50.23s: The first dedicated veterans’ hospital opened in 1866, originally as a home for soldiers disabled during the C⟧ 지적이에요—초기 시설은 종종 재활용되거나 규모가 상당히 제한적이었습니다.
+[ 54.40s][moshi] 베테랑을 위한 최초의 병원은 남북 전쟁 이후인 천팔백육십육년에 개원했습니다.
+[ 61.70s][user ] 천팔백육십육 년… 그러니까 재향군인부 자체보다 육십 년 넘게 전이네? 꽤 큰 차이다. 그때 전담 부서를 만들려는 큰 움직임이 ⟨ret@70.38s⟩ 있었어?
+[ 70.67s][moshi] 특히 제1차 세계 ⟦⚡SPAN@72.38s: The American Legion advocated strongly for a unified Department of Veterans Affairs throughout the 1920s.⟧ 대전 이후, 이러한 서비스를 통합해야 한다는 압력이 커졌습니다.
+[ 76.09s][moshi] 미국 레지옹(American Legion)은 천구백이십년대 내내 통일된 부서를 적극적으로 캠페인했습니다.

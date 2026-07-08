@@ -2,70 +2,62 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     4.26s  user  발화 끝
-     4.53s  agent 발화 시작: I understand the beeping is frustrating, but disabling a car
-    10.65s  agent 발화 끝
-    10.67s  user  발화 시작: But it’s a false alarm, I think. It keeps going off when not
-    14.74s  user  발화 끝
-    14.91s  agent 발화 시작: Even if you suspect a false alarm, tampering with the device
-    23.48s  agent 발화 끝
-    24.21s  user  발화 시작: Okay, okay, I get it’s dangerous. But can I just take the ba
-    28.75s  user  발화 끝
-    28.77s  agent 발화 시작: No, please do not remove the battery. That defeats its purpo
-    33.84s  user  발화 시작: So I’m just stuck listening to this thing beep? It's driving
-    34.01s  agent 발화 끝
-    37.51s  agent 발화 시작: There are safer steps we can take. First, ensure good ventil
-    37.59s  user  발화 끝
-    43.29s  agent 발화 끝
-    44.75s  user  발화 시작: I’ve done that. Still beeping. What could be causing this?
-    48.05s  <ret> 발화 (turn9 첫 프레임)
-    48.19s  agent 발화 시작: <ret> Identifying the source is important… Dust, humidity, o
-    48.36s  user  발화 끝
-    49.33s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.39s]: <Carbon monoxide alarms can malfunction due to dust, humidity, or end-
-    55.36s  user  발화 시작: So it’s probably just old then?
-    55.37s  agent 발화 끝
-    57.85s  user  발화 끝
-    58.27s  agent 발화 시작: That is a possibility. The alarm’s age does play a role in i
-    63.21s  user  발화 시작: How often *should* you replace these things?
-    63.27s  agent 발화 끝
-    65.66s  <ret> 발화 (turn13 첫 프레임)
-    66.02s  user  발화 끝
-    66.06s  agent 발화 시작: <ret> Replacement frequency is crucial… The NFPA recommends 
-    67.18s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.88s]: <The National Fire Protection Association recommends replacing carbon 
-    73.10s  agent 발화 끝
-    74.24s  user  발화 시작: Seven years, huh? Mine is probably closer to ten.
-    78.06s  agent 발화 시작: That does suggest it’s nearing its end of life, and the sens
-    78.17s  user  발화 끝
-    83.36s  user  발화 시작: Alright, alright. I'll get a new one. Can you find me some?
-    83.39s  agent 발화 끝
-    86.95s  <ret> 발화 (turn17 첫 프레임)
-    87.10s  agent 발화 시작: <ret> Certainly. I can search for carbon monoxide alarms ava
-    87.20s  user  발화 끝
-    88.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) Ace Hardware has Kidde carbon monoxide alarms in stock, 
-    91.32s  agent 발화 시작: Ace Hardware has Kidde alarms for $39.99, and Home Depot has
-    91.36s  agent 발화 끝
-    98.97s  agent 발화 끝
-    99.05s  user  발화 시작: Hmm, Ace sounds good. Do they have someone who can *install*
-   102.29s  <ret> 발화 (turn20 첫 프레임)
-   102.68s  agent 발화 시작: <ret> I can check for installation services at Ace Hardware.
-   102.85s  user  발화 끝
-   104.13s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.19s]: (tool result) Ace Hardware offers installation through a third-party p
-   105.69s  agent 발화 시작: Ace Hardware uses Handy for installation, starting at $60 fo
-   105.87s  agent 발화 끝
-   110.83s  agent 발화 끝
-   111.31s  user  발화 시작: Sixty dollars… okay. Can you book that for me, say, tomorrow
-   116.05s  <ret> 발화 (turn23 첫 프레임)
-   116.31s  user  발화 끝
-   116.36s  agent 발화 시작: <ret> I can schedule that for you. What time tomorrow aftern
-   118.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) Appointment confirmed: Handy technician will install you
-   120.61s  agent 발화 시작: Your installation is scheduled for tomorrow at 2:00 PM, with
-   120.62s  agent 발화 끝
-   126.96s  agent 발화 끝
-   127.00s  user  발화 시작: Perfect! Thanks for your help, Moshi.
-   129.30s  agent 발화 시작: You’re very welcome. As a botanist, I appreciate the importa
-   129.44s  user  발화 끝
-   136.76s  agent 발화 끝
-   137.01s  user  발화 시작: That’s… a surprisingly smooth transition.
-   140.25s  user  발화 끝
-   140.69s  agent 발화 시작: [laugh] Well, everything is connected in nature, isn't it? E
-   147.03s  agent 발화 끝
+     4.48s  user  발화 끝
+     4.76s  agent 발화 시작: I understand the beeping is frustrating, but disabling a car
+    11.16s  agent 발화 끝
+    11.21s  user  발화 시작: But it’s a false alarm, I think. It keeps going off when eve
+    15.29s  user  발화 끝
+    15.42s  agent 발화 시작: Even if you believe it’s a false alarm, tampering with it re
+    22.10s  user  발화 시작: But what if the batteries are just old? Could that be it?
+    22.83s  agent 발화 끝
+    25.75s  user  발화 끝
+    25.91s  agent 발화 시작: That’s a very good question, and a much safer place to start
+    31.09s  agent 발화 끝
+    32.03s  user  발화 시작: Okay, good point. So, how *do* you change the batteries in o
+    36.39s  <ret> 발화 (turn7 첫 프레임)
+    36.71s  agent 발화 시작: <ret> Replacing batteries is certainly the first step… A sta
+    36.89s  user  발화 끝
+    37.67s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.05s]: Carbon monoxide detectors typically require a 9-volt battery replaceme
+    44.13s  agent 발화 끝
+    45.56s  user  발화 시작: Six months, huh? That seems frequent. Is there a way to test
+    50.93s  agent 발화 시작: Yes, most detectors have a test button you can press to veri
+    51.07s  user  발화 끝
+    55.83s  user  발화 시작: Right, I remember seeing that. So, if it still beeps *after*
+    55.87s  agent 발화 끝
+    62.54s  user  발화 끝
+    62.98s  agent 발화 시작: Persistent beeping even with fresh batteries indicates a pot
+    69.69s  agent 발화 끝
+    69.74s  user  발화 시작: A leak… that’s scary. How can I be sure it's not just the al
+    75.79s  <ret> 발화 (turn13 첫 프레임)
+    76.18s  user  발화 끝
+    76.19s  agent 발화 시작: <ret> Determining the source requires careful assessment… Le
+    76.99s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.38s]: Carbon monoxide levels above 35 ppm can trigger an alarm, even with a 
+    85.31s  agent 발화 끝
+    86.40s  user  발화 시작: Thirty-five… ppm. That’s a number I don't really understand.
+    91.31s  agent 발화 시작: It measures the concentration of carbon monoxide in the air,
+    91.40s  user  발화 끝
+    96.76s  user  발화 시작: Okay, so higher numbers are worse. What if I’m really worrie
+    96.82s  agent 발화 끝
+   102.56s  user  발화 끝
+   102.66s  agent 발화 시작: In that case, you should immediately evacuate and contact yo
+   107.47s  agent 발화 끝
+   108.23s  user  발화 시작: Evacuate… that sounds extreme. But I guess it’s better to be
+   112.48s  agent 발화 시작: Absolutely. Safety is paramount, especially with a silent an
+   112.76s  user  발화 끝
+   118.78s  agent 발화 끝
+   119.24s  user  발화 시작: [sigh] Okay. Is there a way to find someone to check my heat
+   124.84s  <ret> 발화 (turn21 첫 프레임)
+   125.00s  agent 발화 시작: <ret> Locating a qualified technician is a sensible precauti
+   125.03s  user  발화 끝
+   126.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.63s]: (tool result) Technician: "Assured Heating", phone: 555-123-4567, rati
+   134.75s  user  발화 시작: That’s good. Can you book me an appointment for 10 AM tomorr
+   134.97s  agent 발화 끝
+   138.89s  <ret> 발화 (turn23 첫 프레임)
+   139.28s  agent 발화 시작: <ret> Scheduling an inspection is a prudent step… Your appoi
+   139.47s  user  발화 끝
+   140.25s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.69s]: (tool result) Appointment confirmed: Assured Heating, tomorrow at 10:0
+   147.72s  agent 발화 끝
+   147.95s  user  발화 시작: Ninety-nine dollars… not bad. Thanks for all your help, Mosh
+   152.49s  user  발화 끝
+   152.89s  agent 발화 시작: You’re very welcome. I’m glad I could assist in ensuring you
+   164.02s  agent 발화 끝

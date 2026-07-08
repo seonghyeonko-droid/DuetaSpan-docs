@@ -2,48 +2,50 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.55s  <ret> 발화 (turn1 첫 프레임)
-     2.69s  agent 발화 시작: <ret> That’s a fascinating question, delving into political 
-     2.86s  user  발화 끝
-     4.47s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.95s]: (no information found)
-    10.81s  agent 발화 끝
-    10.90s  user  발화 시작: Okay. What about the hippocampus? What does it do?
-    14.03s  <ret> 발화 (turn3 첫 프레임)
-    14.25s  agent 발화 시작: <ret> Ah, the hippocampus—a region I find endlessly intrigui
-    14.37s  user  발화 끝
-    14.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.35s]: The hippocampus is essential for forming new long-term memories and is
-    23.84s  user  발화 시작: Spatial navigation? Like, finding your way around?
-    23.89s  agent 발화 끝
-    27.23s  agent 발화 시작: Precisely! It creates cognitive maps of environments.
-    27.39s  user  발화 끝
-    30.92s  agent 발화 끝
-    31.34s  user  발화 시작: Is that why people with Alzheimer’s get lost?
-    34.11s  user  발화 시작: …because their hippocampus is damaged?
-    34.26s  user  발화 끝
-    35.85s  <ret> 발화 (turn8 첫 프레임)
-    36.16s  agent 발화 시작: <ret> That’s a very insightful connection you’ve made.
-    36.19s  user  발화 끝
-    36.97s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.73s]: Alzheimer’s disease causes progressive damage to the hippocampus, lead
-    38.88s  agent 발화 끝
-    38.91s  agent 발화 시작: Alzheimer’s damages the hippocampus, resulting in memory los
-    44.23s  agent 발화 끝
-    44.25s  user  발화 시작: Mm-hmm. So, a healthy hippocampus equals a good memory?
-    47.92s  agent 발화 시작: Generally, yes, though memory is complex—many areas contribu
-    47.99s  user  발화 끝
-    53.06s  agent 발화 끝
-    53.10s  user  발화 시작: What other areas are important for memory?
-    55.36s  <ret> 발화 (turn13 첫 프레임)
-    55.59s  agent 발화 시작: <ret> Several brain regions work in concert to create memori
-    55.63s  user  발화 끝
-    56.48s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.27s]: The amygdala processes emotional memories, while the prefrontal cortex
-    65.55s  agent 발화 끝
-    66.64s  user  발화 시작: Emotional memories? Like, really strong ones?
-    69.55s  agent 발화 시작: Exactly—the ones that tend to stick with us, for better or w
-    69.69s  user  발화 끝
-    73.81s  agent 발화 끝
-    74.24s  user  발화 시작: [happy] That makes sense. So, if I want to remember somethin
-    78.67s  user  발화 끝
-    78.99s  agent 발화 시작: It can certainly help strengthen the memory trace, yes.
-    82.68s  user  발화 시작: Huh. That's… a trick I’ll keep in mind. Thanks, Doctor Sato.
-    82.79s  agent 발화 끝
-    86.97s  user  발화 끝
+     2.85s  <ret> 발화 (turn1 첫 프레임)
+     3.00s  agent 발화 시작: <ret> That’s an interesting question, exploring political id
+     3.15s  user  발화 끝
+     4.21s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.56s]: (no information found)
+    10.32s  agent 발화 끝
+    10.52s  user  발화 시작: Okay. Well, what’s the average human brain weight?
+    13.89s  <ret> 발화 (turn3 첫 프레임)
+    14.04s  agent 발화 시작: <ret> That’s a very common inquiry, and easily answered. The
+    14.12s  user  발화 끝
+    15.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.98s]: The average adult human brain weighs around 3 pounds (1.3 to 1.4 kilog
+    22.42s  user  발화 시작: Wow, that’s… surprisingly light, actually.
+    22.61s  agent 발화 끝
+    25.33s  agent 발화 시작: It is, isn’t it? Such complexity packed into a relatively sm
+    25.51s  user  발화 끝
+    29.59s  agent 발화 끝
+    30.03s  user  발화 시작: Is there a correlation between brain weight and intelligence
+    33.29s  <ret> 발화 (turn7 첫 프레임)
+    33.44s  agent 발화 시작: <ret> That’s a question we’ve studied extensively, of course
+    33.63s  user  발화 끝
+    34.65s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.29s]: While brain size correlates weakly with intelligence, it's not a defin
+    42.49s  agent 발화 끝
+    42.90s  user  발화 시작: So, it’s not just about how *much* brain, but *how* it’s wir
+    47.55s  agent 발화 시작: Precisely! The connections, the pathways—those are where the
+    47.67s  user  발화 끝
+    51.12s  user  발화 시작: Uh-huh.
+    51.61s  user  발화 끝
+    53.23s  agent 발화 시작: Think of it like a computer—processing power isn't solely ab
+    53.38s  agent 발화 끝
+    58.23s  user  발화 시작: What about memory loss in Alzheimer's? Is that just… wiring 
+    58.32s  agent 발화 끝
+    62.91s  <ret> 발화 (turn13 첫 프레임)
+    63.14s  agent 발화 시작: <ret> That’s a very astute observation, actually.
+    63.17s  user  발화 끝
+    64.11s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.96s]: Alzheimer's disease is characterized by the progressive loss of neuron
+    66.10s  agent 발화 끝
+    66.19s  agent 발화 시작: Alzheimer’s involves the loss of neurons and synapses, causi
+    70.86s  agent 발화 끝
+    71.28s  user  발화 시작: So, the brain physically shrinks?
+    73.72s  user  발화 끝
+    73.95s  agent 발화 시작: Yes, unfortunately. It’s a devastating process.
+    77.94s  user  발화 시작: Are there any preventative measures people can take?
+    78.02s  agent 발화 끝
+    80.76s  agent 발화 시작: Staying mentally and physically active is often recommended.
+    80.95s  user  발화 끝
+    84.88s  user  발화 시작: That makes sense. Thank you, Dr. Sato.
+    84.92s  agent 발화 끝
+    87.65s  user  발화 끝

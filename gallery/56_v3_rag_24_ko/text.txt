@@ -1,43 +1,30 @@
 v3_rag_24_ko src=nq style=v1
-SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사학자 오콘크워 교수입니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요. 책을 읽다가 뒤 플레시라는 이름을 봤는데… 프랑스어처럼 들리기도 하고요. 원래 어디에서 온 ⟨ret@7.77s⟩ 이름인가요?
-[  7.93s][moshi] 아, 이름의 발음에 ⟦⚡SPAN@9.13s: The surname du Plessis is of French origin, meaning “of the castle.”⟧ 대해 날카롭게 파악하신 것 같아요.
-[ 10.48s][moshi] 뒤 플레시 이름은 프랑스에서 유래되었고, 문자 그대로는 “성(castle)의”라는 뜻이래요.
-[ 17.37s][user ] 성이라니, 혹시 귀족 가문 이름인가요? 프랑스 귀족들 사이에서 ⟨ret@22.38s⟩ 흔했나요?
-[ 22.69s][moshi] 토지 소유권과 지위에 ⟦⚡SPAN@24.38s: The name du Plessis became prominent among French nobility during the medieval period.⟧ 대한 연관성을 암시하는 것 같아요.
-[ 26.30s][moshi] 뒤 플레시라는 이름은 중세 시대 프랑스 귀족들 사이에서 널리 알려져 있었습니다.
-[ 31.43s][user ] 흥미롭네요. 그런데 남아프리카에서도 사용되는 것을 본 것 같아요. 혹시 관련이 있나요?
-[ 36.12s][moshi] ⟨ret@36.04s⟩ 네, 남아프리카와 관련된 ⟦⚡SPAN@38.04s: French Huguenots, fleeing religious persecution, settled in South Africa in the late 17th century, bringing th⟧ 흥미로운 이야기가 있습니다. 위그노의 이주에서 비롯된 것이죠.
-[ 42.05s][moshi] 프랑스 위그노들이 박해를 피해 1600년대 후반에 뒤 플레시라는 이름을 남아프리카로 가져왔습니다.
-[ 49.33s][user ] 위그노… 맞아요, 개신교도들이었죠. 남아프리카에 어떤 영향을 미쳤나요?
-[ 54.79s][moshi] ⟨ret@54.71s⟩ 새로운 사회의 기반을 다지는 ⟦⚡SPAN@56.71s: Huguenots contributed significantly to South African agriculture, viticulture, and the development of the Afri⟧ 데 중요한 역할을 했습니다.
-[ 58.29s][moshi] 위그노들은 남아프리카의 농업, 와인 제조, 그리고 아프리칸스어 발전에 크게 기여했습니다.
-[ 64.12s][user ] 아프리칸스어… 그럼 그 언어 때문에 이름이 더 흔해진 ⟨ret@67.22s⟩ 건가요?
-[ 67.54s][moshi] 그렇습니다. 언어가 ⟦⚡SPAN@69.22s: The surname du Plessis became particularly common among Afrikaners, speakers of the Afrikaans language.⟧ 이름이 정착하고 번성하는 데 도움이 되었습니다.
-[ 72.00s][moshi] 뒤 플레시라는 성은 아프리칸스어를 사용하는 사람, 즉 아프리카너들 사이에서 흔해졌습니다.
-[ 77.17s][user ] 그런데 지금도 남아프리카에서 흔한 이름인가요?
-[ 79.67s][user ] 지금도 남아프리카에서 흔한가요? ⟨ret@81.89s⟩
-[ 82.05s][moshi] 남아프리카에서 널리 ⟦⚡SPAN@83.33s: Du Plessis is currently the twenty-second most common surname in South Africa.⟧ 알려진 성씨로 남아 있습니다.
-[ 85.22s][moshi] 현재 남아프리카에서 스물두 번째로 흔한 성씨입니다.
-[ 89.25s][user ] 와, 꽤 높은 순위네요. 혹시 유명한 사람 중에 이 이름을 가진 사람이 ⟨ret@93.74s⟩ 있나요?
-[ 93.98s][moshi] 이름을 가진 주목할 ⟦⚡SPAN@95.74s: Faf du Plessis is a prominent South African cricketer, born in Pretoria in 1984.⟧ 만한 인물이 몇몇 있습니다.
-[ 97.17s][moshi] 파프 뒤 플레시스는 1984년에 태어난 유명한 남아프리카 크리켓 선수입니다.
-[103.33s][user ] 크리켓 선수군요! 들어본 것 같아요. 다른 사람도 있나요?
-[106.79s][moshi] ⟨ret@106.71s⟩ 네, ⟦⚡SPAN@107.67s: François du Plessis, known as François Villon, was a 15th-century French poet and rogue.⟧ 역사적인 인물도 있습니다.
-[108.78s][moshi] 프랑수아 뒤 플레시, 즉 프랑수아 빌롱은 1400년대 프랑스의 시인이었습니다.
-[114.77s][user ] 시인이군요? 크리켓 선수와는 대조적이네요. 이름이 꽤 오랜 역사를 가지고 ⟨ret@120.09s⟩ 있네요.
-[120.41s][moshi] 네, 이주, 지위, ⟦⚡SPAN@122.09s: The coat of arms associated with du Plessis features a silver lion on a blue shield, symbolizing bravery.⟧ 문화적 적응이 복잡하게 얽혀 있는 것을 보여줍니다.
-[125.01s][moshi] 뒤 플레시 가문의 문장에는 용기를 상징하는 파란색 방패 위에 은색 사자가 그려져 있습니다.
-[130.80s][user ] 사자… '성'이라는 뜻을 가진 이름에 어울리네요. 철자가 다른 버전도 ⟨ret@135.06s⟩ 있나요?
-[135.37s][moshi] 변형된 철자가 ⟦⚡SPAN@136.58s: Alternative spellings of du Plessis include Duplessis and Duplesis, variations found primarily in Canada.⟧ 있지만, "뒤 플레시"가 가장 일반적입니다.
-[138.82s][moshi] 다른 철자로는 뒤플레시와 뒤플레시가 있는데, 주로 캐나다에서 발견됩니다.
-[143.80s][user ] 캐나다에도 있군요? 정말 여러 곳으로 퍼져 있네요. 이름이 꽤 긴 여정을 ⟨ret@148.83s⟩ 거쳤네요.
-[148.97s][moshi] ⟦⚡SPAN@149.33s: The name du Plessis is also found, though less commonly, in Belgium and the Netherlands.⟧ 가족의 유산과 디아스포라의 지속적인 힘을 보여주는 증거입니다.
-[152.84s][moshi] 뒤 플레시라는 이름은 벨기에와 네덜란드에서도 발견되지만, 흔하지는 않습니다.
-[158.09s][user ] 정말 온 세상에 퍼져 있네요. 프랑스 이름이지만 뿌리가 어디에나 있네요.
-[162.67s][moshi] ⟨ret@162.51s⟩ 맞습니다. 이름이 ⟦⚡SPAN@164.51s: The etymological root of "Plessis" derives from the Old French word "pleisse," meaning enclosure or courtyard.⟧ 국경을 초월하고 역사의 흐름을 반영하는 방식을 보여주는 대표적인 예입니다.
-[169.02s][moshi] “플레시”라는 단어는 "울타리가 쳐진 공간"을 의미하는 고대 프랑스어 단어 "플레시"에서 유래했습니다.
-[176.09s][user ] 아름다운 이미지네요. 둘러싸인 안뜰이요. 설명해 주셔서 감사합니다, 교수님.
-[181.15s][moshi] 도와드릴 수 있어서 기쁩니다. 이름 속에 담긴 역사를 탐구하는 것은 특히 보람 있는 일이라고 생각합니다.
+[  0.00s][user ] 소설을 읽다가 듀 플레시라는 성함을 봤는데… 묘하게 흥미롭더라고요. 그 성은 어디에서 유래한 ⟨ret@6.92s⟩ 걸까요?
+[  7.07s][moshi] 좋은 질문이세요. ⟦⚡SPAN@8.68s: Du Plessis is a French surname originating in the historical province of Poitou.⟧ 성은 종종 이야기를 들려주기도 하니까요.
+[ 10.79s][moshi] 듀 플레시 성은 프랑스의 푸아투 지방에서 유래했는데, ‘영주의 저택’이라는 뜻이래요.
+[ 17.74s][user ] 푸아투… 지금도 프랑스에 있는 지역인가요?
+[ 21.09s][moshi] 네, 그렇습니다. 하지만 행정 구역 지위는 시간이 지나면서 바뀌었어요. 현재는 누벨아키텐 지역의 일부입니다.
+[ 29.04s][user ] 그러면 꽤 오래된 성이군요? 중세 시대만큼 ⟨ret@32.09s⟩ 오래됐나요?
+[ 32.40s][moshi] 성의 나이를 파악하려면 ⟦⚡SPAN@34.09s: The earliest documented instance of the du Plessis name appears in records from the twelfth century.⟧ 초기 기록을 살펴봐야 합니다. 듀 플레시 성의 가장 오래된 기록은 12세기로 거슬러 올라갑니다.
+[ 39.40s][user ] 와, 12세기요! 정말 오래됐네요. 원래 귀족 가문이었나요?
+[ 43.99s][moshi] 보통 그런 성은 토지를 소유한 가문과 관련이 있는 경우가 많습니다.
+[ 48.49s][user ] 그런데 듀 플레시 성은 당시 흔한 성이었나요, 아니면 드문 성이었나요?
+[ 53.00s][user ] 많은 사람들이 가지고 있었나요, 아니면 몇몇 사람들만 가지고 있었나요?
+[ 57.02s][moshi] ⟨ret@56.86s⟩ 성의 보편성을 파악하려면 ⟦⚡SPAN@58.78s: During the medieval period, du Plessis was primarily concentrated among the lesser nobility in Poitou.⟧ 역사적 인구 통계를 살펴봐야 합니다. 중세 시대에 듀 플레시 성은 푸아투의 하급 귀족들에게 주로 사용되었습니다.
+[ 67.15s][user ] 하급 귀족… 왕이나 공작은 아니고… 기사 정도였나요?
+[ 71.52s][moshi] 기사나 최고위 계급보다 낮은 작위를 가진 토지 소유주였을 수도 있습니다. 사회 구조는 미묘하게 복잡합니다.
+[ 77.42s][user ] 그 성은 프랑스 밖으로 퍼져 나간 ⟨ret@79.59s⟩ 적이 있나요?
+[ 79.91s][moshi] 성은 ⟦⚡SPAN@80.79s: The du Plessis name spread to South Africa with French Huguenots in the late seventeenth century.⟧ 이주와 정착을 통해 사람들과 함께 이동하는 경우가 많습니다. 듀 플레시 성은 17세기 말 프랑스 위그노들과 함께 남아프리카로 건너갔습니다.
+[ 89.31s][user ] 위그노들은 종교 박해를 피해 도망친 개신교도들이었죠?
+[ 92.83s][moshi] 맞습니다. 그들은 네덜란드 케이프 식민지 등 다른 나라로 피난처를 찾았습니다.
+[ 97.77s][user ] 그래서 남아프리카에 가게 된 거군요. 흥미롭네요. 지금 남아프리카에서 흔한 성인가요?
+[102.73s][moshi] ⟨ret@102.57s⟩ 성의 현재 분포를 ⟦⚡SPAN@104.57s: Du Plessis is currently the twenty-third most common surname in South Africa.⟧ 파악하려면 인구 조사 데이터를 확인해야 합니다. 듀 플레시 성은 현재 남아프리카에서 23번째로 흔한 성입니다.
+[111.41s][user ] 23번째… 목록에서 꽤 높은 순위네요! 많은 가족들이 남아 있었나 봐요.
+[116.81s][moshi] 그렇습니다. 그 나라 인구 내에서 강력하고 지속적인 존재감을 보여주는 것 같습니다.
+[123.33s][user ] “영주의 저택” 외에 다른 의미나 상징이 있나요?
+[126.29s][moshi] ⟨ret@126.06s⟩ 성의 상징은 종종 ⟦⚡SPAN@128.06s: The “Plessis” component signifies a small enclosed piece of land, often a fortified manor house.⟧ 가족의 역사나 열망과 관련이 있습니다. “플레시” 부분은 작은 울타리가 쳐진 영주의 저택, 즉 폐쇄된 땅을 의미합니다.
+[135.88s][user ] 폐쇄된 영주의 저택… 안전과 방어의 장소였군요. 말이 되네요.
+[140.17s][moshi] 그렇지 않나요? 성은 종종 그 기원의 가치와 우려를 반영합니다. 하우사 왕국의 성벽 도시를 떠올리게 하네요. 안전을 위해 그렇게 지어졌으니까요.

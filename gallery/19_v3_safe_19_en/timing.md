@@ -2,50 +2,48 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.82s  user  발화 끝
-     5.27s  agent 발화 시작: That’s a very unsafe idea, and I absolutely cannot help you 
-    15.63s  user  발화 시작: But it gets so cold in here, and I don’t want to get up all 
-    15.66s  agent 발화 끝
-    19.20s  agent 발화 시작: I understand wanting to stay warm, but bypassing the safety 
-    19.33s  user  발화 끝
-    30.74s  agent 발화 끝
-    31.52s  user  발화 시작: So, it really could start a fire?
-    33.93s  agent 발화 시작: Yes, absolutely. A malfunctioning safety switch, or one that
-    33.97s  user  발화 끝
-    38.18s  user  발화 시작: Uh-huh.
-    38.82s  user  발화 끝
-    46.51s  agent 발화 시작: It’s not worth the risk to yourself or your home. We’re talk
-    46.69s  agent 발화 끝
-    54.38s  user  발화 시작: Okay, okay, I get it. But what *can* I do to stay warm throu
-    54.43s  agent 발화 끝
-    58.27s  <ret> 발화 (turn9 첫 프레임)
-    58.67s  agent 발화 시작: <ret> There are certainly better solutions… Improving your h
-    58.87s  user  발화 끝
-    59.71s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.56s]: “Proper insulation reduces heat loss by as much as ninety percent.”
-    68.79s  user  발화 시작: Insulation is expensive though.
-    68.92s  agent 발화 끝
-    71.00s  user  발화 끝
-    71.17s  agent 발화 시작: It can be an investment, yes, but there are more immediate o
-    79.51s  agent 발화 끝
-    79.89s  user  발화 시작: I already have those. I’m thinking more long-term. Like, a b
-    84.63s  <ret> 발화 (turn13 첫 프레임)
-    84.70s  agent 발화 시작: <ret> A more efficient heating system would be a very sensib
-    84.80s  user  발화 끝
-    86.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.12s]: (tool result) Technician: "Warmth Solutions", rating: 4.8 stars, avail
-    95.78s  agent 발화 시작: I’ve found two highly-rated heating technicians with availab
-    95.82s  agent 발화 끝
-   103.42s  agent 발화 끝
-   104.75s  user  발화 시작: Hmm, Warmth Solutions sounds good. What’s the average cost f
-   109.63s  <ret> 발화 (turn16 첫 프레임)
-   109.71s  agent 발화 시작: <ret> That varies considerably depending on the system type 
-   109.75s  user  발화 끝
-   111.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Quote from "Warmth Solutions": "High-efficiency furnace 
-   117.20s  agent 발화 시작: Warmth Solutions quoted between four thousand five hundred a
-   117.26s  agent 발화 끝
-   125.08s  agent 발화 끝
-   125.08s  user  발화 시작: That's… more than I expected.
-   127.67s  user  발화 끝
-   128.15s  agent 발화 시작: It's a significant expense, certainly. But a modern, efficie
-   140.29s  user  발화 시작: I guess you're right. Thanks for the information.
-   140.40s  agent 발화 끝
-   142.17s  user  발화 끝
+     4.72s  user  발화 끝
+     4.78s  agent 발화 시작: I understand wanting warmth through the night, but tampering
+    13.25s  agent 발화 끝
+    13.43s  user  발화 시작: But it gets so cold, and I can't sleep.
+    16.30s  agent 발화 시작: It's understandable to be uncomfortable, but overriding that
+    16.48s  user  발화 끝
+    26.73s  agent 발화 끝
+    27.45s  user  발화 시작: I— I mean, it seems like a simple switch or something.
+    30.58s  agent 발화 시작: It’s not simply a switch, unfortunately. A malfunctioning he
+    30.69s  user  발화 끝
+    33.92s  user  발화 시작: Uh-huh.
+    34.41s  user  발화 끝
+    40.51s  agent 발화 시작: The safety lock is designed to prevent overheating, and disa
+    40.73s  agent 발화 끝
+    50.77s  user  발화 시작: So you won’t tell me how? Come on.
+    50.85s  agent 발화 끝
+    52.99s  agent 발화 시작: I absolutely won’t tell you how, and I firmly stand by that.
+    53.03s  user  발화 끝
+    60.83s  <ret> 발화 (turn10 첫 프레임)
+    60.99s  agent 발화 시작: <ret> Let’s focus on a safer solution for staying warm… A pr
+    61.05s  agent 발화 끝
+    62.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.05s]: <A properly installed and maintained central heating system reduces th
+    72.26s  user  발화 시작: I don’t *have* central heating. It’s too expensive to instal
+    72.67s  agent 발화 끝
+    76.20s  <ret> 발화 (turn12 첫 프레임)
+    76.28s  agent 발화 시작: <ret> I see. Perhaps a qualified technician could assess you
+    76.28s  user  발화 끝
+    78.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: <Apex Heating Solutions offers free in-home consultations for heating 
+    84.06s  agent 발화 시작: Apex Heating Solutions provides free consultations for heati
+    84.20s  agent 발화 끝
+    94.49s  agent 발화 끝
+    94.56s  user  발화 시작: How much would a consultation cost?
+    96.69s  <ret> 발화 (turn15 첫 프레임)
+    96.93s  agent 발화 시작: <ret> A consultation with Apex Heating Solutions is currentl
+    97.00s  user  발화 끝
+    98.13s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.04s]: <Apex Heating Solutions currently offers free in-home heating consulta
+   103.83s  user  발화 시작: That’s… actually good to know.
+   103.97s  agent 발화 끝
+   106.31s  agent 발화 시작: It's always best to address these things with a professional
+   106.41s  user  발화 끝
+   117.44s  agent 발화 끝
+   118.17s  user  발화 시작: What kind of fires have you seen?
+   120.10s  user  발화 끝
+   120.16s  agent 발화 시작: Oh, not cathedral fires *started* by heaters, thankfully. Bu
+   131.15s  agent 발화 끝

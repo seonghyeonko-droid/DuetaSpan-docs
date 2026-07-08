@@ -1,22 +1,23 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 연구하는 식물학자입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음, 디스토피아 소설 읽다가 그런 생각을 했어요.
-[  2.86s][moshi] 글쎄, 강력한 문학 작품에 대한 흔한 반응이지.
-[  6.93s][user ] “빅 브라더”라는 용어가 원래 어디서 나왔는지 궁금해요. 지금은 너무 널리 퍼져 있는 것 ⟨ret@12.51s⟩ 같아요.
-[ 12.91s][moshi] 그거 ⟦⚡SPAN@13.87s: The term "Big Brother" originates from George Orwell's dystopian novel *Nineteen Eighty-Four*.⟧ 재밌는 질문인데… 그건 조지 오웰의 *1984*라는 소설에서 나온 거야. 천구백사십구 년에 출판됐어.
-[ 20.68s][user ] 천구백사십구 년… 꽤 오래됐네요. 오웰은 그 당시에 특정 사건에 대해 이야기하고 있었나요?
-[ 27.57s][moshi] 응, 여러 가지 영향을 받았는데, 복잡하게 얽혀 있어.
-[ 32.83s][user ] 스탈린에 대한 이야기였나요? 다들 스탈린에 대한 이야기라고 하던데요.
-[ 37.02s][moshi] ⟨ret@36.94s⟩ 스탈린과의 연관성은 자주 ⟦⚡SPAN@38.94s: Orwell stated the concept of “Big Brother” was inspired by his experiences with surveillance during the Spanis⟧ 언급되는 부분이야… 오웰은 스페인 내전 중에 목격한 감시에 영감을 받았어. 스탈린 때문은 아니었어.
-[ 46.31s][user ] 내전 중 감시요? 좀 놀랍네요.
-[ 49.19s][moshi] 잘 알려지지 않았지만, 그의 비전에 큰 영향을 줬어.
-[ 53.34s][user ] 하지만 소련은 광범위한 스파이 활동을 하지 않았나요? 그러니까—
-[ 57.96s][user ] 그때는 끊임없는 감시가 큰 공포였잖아요…
-[ 61.24s][user ] 끊임없이 감시받는다는 생각 말이에요?
-[ 64.17s][moshi] 그 공포는 분명히 있었지. 오웰은 그걸 잘 활용했어. 그 소설은 전체주의에 대한 더 광범위한 불안감을 반영하고 있어.
-[ 74.21s][user ] 그러니까 스탈린에 대한 이야기만은 아니었고, 어떤 정부든… 간섭하게 될 가능성에 대한 이야기였던 건가요?
-[ 81.44s][moshi] 맞아. 그 소설은 권력 남용에 대한 경고야. 출처가 어디든.
-[ 88.40s][user ] 끊임없이 감시받는다는 생각은 지금도 꽤 소름 끼치네요.
-[ 91.91s][moshi] 지금도 여전히 유효하지 않아? 감시와 통제라는 주제는 계속해서 공감을 불러일으켜.
+[  0.00s][user ] 그래서 책을 읽다가 “빅 브라더”라는 단어가 나오더라고요.
+[  4.32s][moshi] 흥미로운 표현이지—완전 우리 문화에 박혀 버렸잖아.
+[  8.83s][user ] 정말 그렇네요… 근데 그 이름이 원래 어디서 나온 ⟨ret@11.64s⟩ 거예요?
+[ 12.04s][moshi] 그 ⟦⚡SPAN@13.00s: The term "Big Brother" originates from the title of George Orwell's dystopian novel, *Nineteen Eighty-Four*.⟧ 인상적인 용어의 기원을 알아볼까… 그 표현은 조지 오웰의 *1984*라는 책에서 직접 나온 거야. 천구백사십구 년에 출판됐어.
+[ 21.45s][user ] 1984… 물론 들어 봤지만…
+[ 24.98s][moshi] 정말 중요한 작품이야, 감시와 통제라는 주제를 다루고 있거든.
+[ 29.74s][user ] …역사적인 언급이나—그런 걸로 생각했거든요.
+[ 32.62s][moshi] ⟨ret@32.54s⟩ 사실 오웰에게는 꽤 ⟦⚡SPAN@34.54s: Orwell stated he based the concept on memories of the British class system and his experiences with boarding s⟧ 개인적인 영감이 있었어… 오웰은 영국 계급 제도와 기숙사 생활에 대한 기억을 바탕으로 그 아이디어를 만들었대.
+[ 43.04s][user ] 그럼 진짜 사람을 모델로 한 건 아니었네요?
+[ 45.09s][moshi] «interrupted» 좋은 질문인데—
+[ 46.28s][user ] 그러니까…
+[ 47.41s][user ] 빅 브라더를 구체적으로 누구를 보고 만든 거예요?
+[ 50.52s][moshi] ⟨ret@50.36s⟩ 정확히 한 사람을 ⟦⚡SPAN@52.36s: While no single person inspired the figure, some scholars suggest Stalin’s pervasive image influenced Orwell’s⟧ 묘사한 건 아니야… 어떤 사람들은 스탈린의 광범위한 이미지가 오웰의 “빅 브라더” 묘사에 영향을 미쳤다고 생각해.
+[ 59.28s][user ] 스탈린요? 그거… 꽤 어두운 연결이네요.
+[ 63.45s][moshi] 그 소설은 그 시대의 불안감을 반영하고 있지, 그렇지 않아?
+[ 67.97s][user ] 그렇네요. 세상이 얼마나 쉽게 변할 수 있는지 생각하게 만들어요.
+[ 72.12s][moshi] 맞아. 자유를 지키려면 끊임없이 경계해야 해.
+[ 76.14s][user ] 신기하게도 소설이 그렇게 오래도록 기억되는 표현을 만들어낸다는 게 재밌네요.
+[ 80.77s][moshi] 언어는 강력한 힘이 있지; 이야기가 우리 세계관을 형성하는 거야.

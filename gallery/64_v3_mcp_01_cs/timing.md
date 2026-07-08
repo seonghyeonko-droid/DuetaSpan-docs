@@ -1,61 +1,71 @@
 # v3_mcp_01_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 앱플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.49s  <ret> 발화 (turn1 첫 프레임)
-     3.81s  agent 발화 시작: <ret> 네, 앱플 웹사이트 지도를 만들어 드릴게요— 요청하신 대로 앱플 사이트에서 열네 가지의 제품 카테
-     3.84s  user  발화 끝
-     5.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) The tavily-map tool found 14 product categories on the A
-    11.59s  agent 발화 끝
-    11.65s  user  발화 시작: 음… 생각보다 많네. 컴퓨터랑 폰으로만 좁혀 줄 수 있어?
-    15.75s  <ret> 발화 (turn3 첫 프레임)
-    15.83s  agent 발화 시작: <ret> 네, 특정 기기로 검색 범위를 좁혀 드릴게요— 현재 앱플 웹사이트에서 여섯 가지 컴퓨터 모델과 두
-    16.05s  user  발화 끝
-    16.25s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.42s]: (tool result) The tavily-map tool found these computer products: MacBo
-    23.80s  agent 발화 끝
-    25.34s  user  발화 시작: 좋아. 아이폰 15 기본 가격은 얼마야?
-    27.89s  <ret> 발화 (turn5 첫 프레임)
-    28.20s  agent 발화 시작: <ret> 잠시 현재 가격 정보를 확인해 볼게요— 아이폰 15 기본 모델, 128기가바이트는 칠백구십구 달러
-    28.30s  user  발화 끝
-    29.25s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.64s]: (tool result) The iPhone 15 starts at $799 with 128GB of storage, acco
-    36.91s  agent 발화 끝
-    37.62s  user  발화 시작: 칠백구십구 달러… 비싸네. 할인받을 방법은 없어?
-    41.83s  agent 발화 시작: 통신사 프로모션이나 교육 할인으로 할인을 받을 수 있는 경우가 많습니다.
-    42.01s  user  발화 끝
-    44.76s  user  발화 시작: 어어.
-    45.58s  user  발화 끝
-    46.81s  agent 발화 시작: 앱플은 구형 기기 반납 프로그램을 통해 할인 혜택을 제공하기도 합니다.
-    47.01s  agent 발화 끝
-    51.77s  agent 발화 끝
-    51.78s  user  발화 시작: 반납… 흥미로운데. 아이폰 12 반납하면 얼마 받을 수 있어?
-    56.06s  <ret> 발화 (turn11 첫 프레임)
-    56.13s  agent 발화 시작: <ret> 반납 가격을 알아보려면 조금 더 자세한 정보가 필요합니다— 아이폰 12가 양호한 상태라면 최대 삼
-    56.27s  user  발화 끝
-    57.34s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.50s]: (tool result) Apple currently offers up to $300 trade-in credit for an
-    66.92s  user  발화 시작: 삼백… 나쁘지 않네. 그런데— 리퍼 아이폰은 어때? 괜찮아?
-    67.11s  agent 발화 끝
-    71.29s  agent 발화 시작: 앱플에서 판매하는 리퍼 아이폰은 일반적으로 매우 신뢰할 수 있습니다. 엄격한 테스트를 거치거든요.
-    71.45s  user  발화 끝
-    78.50s  <ret> 발화 (turn14 첫 프레임)
-    78.57s  agent 발화 시작: <ret> 사실상 새 제품과 같고, 1년 보증이 적용됩니다— 앱플의 리퍼 기기는 1년의 완전한 보증이 제공되
-    78.66s  agent 발화 끝
-    80.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.21s]: (tool result) Apple Certified Refurbished iPhones come with a one-year
-    87.84s  agent 발화 끝
-    89.95s  user  발화 시작: 리퍼폰 AppleCare 보증에도 할인이 있어?
-    92.57s  agent 발화 시작: 좋은 질문이네요. 한번 확인해 볼게요—
-    92.72s  user  발화 끝
-    94.91s  <ret> 발화 (turn17 첫 프레임)
-    95.23s  agent 발화 시작: <ret> 리퍼 아이폰 15에 AppleCare 플러스는 2년 커버리지로 일백구십구 달러입니다.
-    95.48s  agent 발화 끝
-    96.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) AppleCare+ for a refurbished iPhone 15 is $199 for two y
-   100.89s  user  발화 시작: 새 거랑 가격이 똑같아? 좀… 불공평한 것 같아.
-   101.07s  agent 발화 끝
-   104.05s  agent 발화 시작: AppleCare 플러스의 가격은 새 제품과 리퍼 제품 모두 동일한 것 같습니다.
-   104.12s  user  발화 끝
-   108.86s  agent 발화 끝
-   109.05s  user  발화 시작: 알았어. 그럼 다시 지도로 돌아가자. 액세서리 섹션을 강조해 줄 수 있어?
-   113.19s  <ret> 발화 (turn21 첫 프레임)
-   113.27s  agent 발화 시작: <ret> 네, 액세서리에 초점을 맞춰 지도를 보여 드릴게요— 에어팟, 워치 밴드, 충전기, 케이스, 화면 
-   113.54s  user  발화 끝
-   114.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.90s]: (tool result) The tavily-map tool highlights these accessories: AirPod
-   123.01s  agent 발화 끝
+     0.00s  user  발화 시작: 아이폰 웹사이트 상세 지도를 만들어 줘, 제품에 집중해서.
+     3.68s  <ret> 발화 (turn1 첫 프레임)
+     4.00s  agent 발화 시작: <ret> 네, 사이트맵을 만들어 드릴 수 있습니다… Apple은 제품을 iPhone, Mac, iPad, 
+     4.07s  user  발화 끝
+     5.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.97s]: (tool result) The Apple website map shows one hundred and thirty-two p
+    15.89s  agent 발화 끝
+    15.90s  user  발화 시작: 음, 많네. 아이폰 페이지로만 좁혀 줄 수 있어?
+    19.21s  <ret> 발화 (turn3 첫 프레임)
+    19.53s  agent 발화 시작: <ret> 네, 검색 범위를 좁혀 드릴 수 있습니다… 아이폰 제품 페이지는 열두 개이며, iPhone 15 
+    19.79s  user  발화 끝
+    20.25s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.31s]: (tool result) The search returned twelve iPhone product pages, includi
+    31.35s  agent 발화 끝
+    32.89s  user  발화 시작: 그리고 기본 모델 iPhone 15 가격은 얼마야?
+    35.74s  <ret> 발화 (turn5 첫 프레임)
+    35.81s  agent 발화 시작: <ret> 현재 가격을 확인해 보겠습니다… 128 기가바이트 저장 공간을 갖춘 기본 모델 iPhone 15는
+    36.08s  user  발화 끝
+    37.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.84s]: (tool result) The iPhone 15, with 128GB of storage, currently costs $7
+    47.31s  agent 발화 끝
+    48.00s  user  발화 시작: 그 가격은 세금 포함 가격이야, 아니면 제외 가격이야?
+    51.72s  user  발화 시작: 비싸네…
+    51.84s  user  발화 끝
+    52.43s  agent 발화 시작: 음, 표시된 가격은—
+    52.63s  user  발화 끝
+    53.88s  user  발화 시작: Apple에서 학생 할인도 해 주나?
+    54.70s  agent 발화 끝
+    55.81s  <ret> 발화 (turn10 첫 프레임)
+    55.95s  user  발화 끝
+    56.05s  agent 발화 시작: <ret> 아, 아주 실용적인 질문이네요. 네, Apple은 교육 할인 혜택을 제공합니다.
+    56.77s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.74s]: (tool result) Students, teachers, and staff qualify for a $100 discoun
+    61.54s  agent 발화 시작: 자격을 갖춘 학생, 교사 및 직원은 인증을 통해 특정 iPhone 모델에 대해 백 달러 할인을 받을 수 있습
+    61.79s  agent 발화 끝
+    68.77s  agent 발화 끝
+    68.86s  user  발화 시작: 알아두면 좋네. 근처에 iPhone 15 재고가 있는 매장을 찾아 줄 수 있어?
+    73.44s  <ret> 발화 (turn13 첫 프레임)
+    73.76s  agent 발화 시작: <ret> 네, 근처 소매점을 찾아보겠습니다… Main Street에 있는 Best Buy에서 현재 iPho
+    73.95s  user  발화 끝
+    74.96s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.28s]: (tool result) Best Buy on Main Street has the iPhone 15 in stock, with
+    81.82s  user  발화 시작: 좋아. 그리고 길 안내해 줄 수 있어?
+    81.96s  agent 발화 끝
+    84.40s  user  발화 끝
+    84.48s  <ret> 발화 (turn15 첫 프레임)
+    84.56s  agent 발화 시작: <ret> 네, 길 안내를 제공해 드릴 수 있습니다… Main Street에 있는 Best Buy까지 가는 
+    85.44s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.14s]: (tool result) Navigation to Best Buy on Main Street is estimated at 22
+    94.76s  user  발화 시작: 22분? 나쁘지 않네.
+    94.85s  agent 발화 끝
+    96.24s  agent 발화 시작: 꽤 합리적인 거리네요. 새로운 iPhone에 대한 수요를 고려할 때, 재고가 있는 것이 다행입니다.
+    96.42s  user  발화 끝
+   102.86s  agent 발화 끝
+   103.14s  user  발화 시작: 거기 가기 전에 재고를 확인하기 위해 전화하는 알림을 설정해 줄 수 있어?
+   107.21s  <ret> 발화 (turn19 첫 프레임)
+   107.53s  agent 발화 시작: <ret> 네, 그렇게 해 드릴 수 있습니다… Best Buy에 전화하여 iPhone 15 재고를 확인하는 
+   107.68s  user  발화 끝
+   108.73s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.23s]: (tool result) A reminder is set for 3:30 PM to call Best Buy regarding
+   115.71s  user  발화 시작: 완벽해. 도와줘서 고마워.
+   115.83s  agent 발화 끝
+   117.68s  agent 발화 시작: 천만에요. 역사가로서 기술이 얼마나 빠르게 진화하는지 흥미롭다고 생각합니다. 이러한 제품 출시 속도는 정말 
+   117.97s  user  발화 끝
+   126.06s  agent 발화 끝
+   126.30s  user  발화 시작: 그렇구나, 뭐. 최초의 Apple Store 개점일은 언제야?
+   129.34s  <ret> 발화 (turn23 첫 프레임)
+   129.50s  agent 발화 시작: <ret> 역사 기록을 확인해 보겠습니다… 최초의 Apple Store는 2001년 5월 19일 캘리포니아주
+   129.77s  user  발화 끝
+   130.62s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.90s]: (tool result) The first Apple Store opened on May 19, 2001, in Glendal
+   138.07s  agent 발화 끝
+   138.22s  user  발화 시작: 2001년. 생각보다 오래되지 않았네.
+   140.99s  agent 발화 시작: 정말 그렇습니다. 서아프리카 무역 제국의 수세기에 걸친 역사를 생각하면, 정말 눈 깜짝할 사이에 지나가는 시
+   141.08s  user  발화 끝
+   150.16s  agent 발화 끝

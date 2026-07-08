@@ -2,12 +2,12 @@ v3_mcp_00_en src=mcp style=v1
 SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.07s⟩ Paris?
-[  3.31s][moshi] Let’s ⟦⚡SPAN@4.03s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ see what the map tells us… Those coordinates pinpoint the Eiffel Tower at forty-eight point eight five eight four degrees north, and two point two nine four five degrees east.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.34s⟩ Paris?
+[  3.57s][moshi] Certainly, ⟦⚡SPAN@4.38s: (tool result) The Eiffel Tower is located at 48.8584 degrees North, 2.2945 degrees East.⟧ locating landmarks is something I often do… The Eiffel Tower’s coordinates are forty-eight point eight five eight four North, two point two nine four five East.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 15.00s][user ] Okay, and can you find hotels near ⟨ret@17.76s⟩ that location?
-[ 18.16s][moshi] Certainly, I can search ⟦⚡SPAN@19.76s: (tool result) Hotel Plaza Athénée is 0.8 miles away, priced at $1,500 per night. Hotel Raphael is 1.2 miles aw⟧ for accommodations nearby. The Hotel Plaza Athénée is point eight miles away, at one thousand five hundred dollars a night, and the Hotel Raphael is one point two miles, at three hundred fifty.
-      CALL: {"function": "hotels_search", "arguments": {"latitude": "48.8584", "longitude": "2.2945"}}
-[ 31.60s][user ] That Plaza Athénée sounds nice— can you book me a room there for ⟨ret@36.12s⟩ tonight?
-[ 36.44s][moshi] I ⟦⚡SPAN@37.16s: (tool result) A room at Hotel Plaza Athénée is reserved for you tonight, confirmation number is AX789Z.⟧ can certainly check availability for you.
-      CALL: {"function": "hotels_book", "arguments": {"hotel_name": "Hotel Plaza Athénée", "date": "tonight"}}
+[ 14.38s][user ] Okay, and can you find me hotels near ⟨ret@17.22s⟩ that location?
+[ 17.61s][moshi] I can certainly ⟦⚡SPAN@19.22s: (tool result) Hotel Plaza Athénée is 0.8 kilometers away, priced at 1200 euros per night.⟧ search for accommodations nearby… Hotel Plaza Athénée is point eight kilometers away and costs twelve hundred euros a night.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": 48.8584, "longitude": 2.2945, "radius": "1km"}}
+[ 26.35s][user ] Wow, that’s expensive! What about something a little ⟨ret@30.12s⟩ cheaper?
+[ 30.45s][moshi] Let’s ⟦⚡SPAN@31.25s: (tool result) Hotel Saint-Paul Rive Gauche is 0.9 kilometers away, priced at 180 euros per night.⟧ explore some more budget-friendly options… Hotel Saint-Paul Rive Gauche is point
+      CALL: {"function": "hotels_search", "arguments": {"latitude": 48.8584, "longitude": 2.2945, "radius": "1km", "max_price": "200"}}

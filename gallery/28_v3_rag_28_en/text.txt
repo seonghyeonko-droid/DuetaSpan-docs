@@ -2,16 +2,17 @@ v3_rag_28_en src=nq style=v2
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading about government departments, and I’m curious—when did the Department of Veterans Affairs actually get ⟨ret@7.79s⟩ started?
-[  8.09s][moshi] That's ⟦⚡SPAN@8.91s: The United States Department of Veterans Affairs was established on July 21, 1930, by executive order.⟧ an interesting question, delving into the history of support for those who’ve served.
-[ 13.09s][moshi] The Department of Veterans Affairs was established on July twenty-first, nineteen thirty, by executive order.
-[ 19.55s][user ] Nineteen thirty? That seems…relatively recent, doesn’t it? Weren't veterans being cared for before ⟨ret@26.02s⟩ then?
-[ 26.41s][moshi] Indeed, care existed ⟦⚡SPAN@28.02s: Prior to 1930, the Veterans Bureau, created in 1921, handled most veteran affairs.⟧ before that date, though it was structured quite differently.
-[ 31.03s][moshi] Before nineteen thirty, the Veterans Bureau, created in nineteen twenty-one, managed most veteran affairs.
-[ 38.12s][user ] Okay, so the Veterans Bureau was the precursor—but what exactly *was* it doing?
-[ 43.14s][moshi] «interrupted» It was a fairly broad undertaking, encompassing medical care, pensions—
-[ 46.51s][user ] «interrupts_prev» Pensions, right, but were they also handling things like burial benefits, or was that ⟨ret@52.14s⟩ separate?
-[ 52.37s][moshi] That's a ⟦⚡SPAN@53.26s: The Veterans Bureau provided compensation, hospitalization, vocational rehabilitation, and burial benefits to ⟧ good point to clarify—burial benefits fell under its purview as well.
-[ 57.01s][moshi] The Veterans Bureau provided compensation, hospitalization, rehabilitation, and burial benefits to eligible veterans.
-[ 66.04s][user ] So, a pretty comprehensive package, even back then. Did the 1930 change fundamentally alter *how* those benefits were delivered, or just who oversaw them?
-[ 76.44s][moshi] The change was more about consolidation and a shift in emphasis, really. It streamlined the process.
+[  0.00s][user ] So, I was reading about government agencies, and I wondered—when did the Department of Veterans Affairs actually get ⟨ret@7.35s⟩ started?
+[  7.66s][moshi] That’s an ⟦⚡SPAN@8.47s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ interesting question, and one that reflects a growing recognition of service to our country.
+[ 12.63s][moshi] The Department of Veterans Affairs was established on July twenty-first, nineteen thirty.
+[ 17.80s][user ] Nineteen thirty? That seems…relatively recent, doesn’t it? Weren’t there veterans around *before* ⟨ret@24.85s⟩ then?
+[ 25.25s][moshi] Of course—care for veterans ⟦⚡SPAN@26.85s: Prior to 1930, the administration of veterans’ benefits was divided among several agencies.⟧ has a much longer history, though it wasn’t formalized in that way initially.
+[ 31.11s][moshi] Before nineteen thirty, veterans’ benefits were managed by multiple different agencies.
+[ 37.12s][user ] So it was kind of piecemeal before that? What exactly *were* those agencies doing—
+[ 42.87s][moshi] «interrupted» They addressed needs like pensions and medical care, but it lacked a central focus—
+[ 47.22s][user ] «interrupts_prev» But did they have hospitals specifically *for* veterans back ⟨ret@50.84s⟩ then?
+[ 51.07s][moshi] That’s a very ⟦⚡SPAN@52.84s: The first dedicated veterans’ hospital opened in 1866, originally as a home for soldiers disabled during the C⟧ pertinent point—early facilities were often repurposed, or quite limited in scope.
+[ 57.39s][moshi] The first hospital specifically for veterans opened in eighteen sixty-six, following the Civil War.
+[ 64.59s][user ] Eighteen sixty-six… so a little over sixty years before the Department itself? That's quite a gap. Was there a big push for a dedicated department during ⟨ret@74.22s⟩ that time?
+[ 74.61s][moshi] There was growing pressure, ⟦⚡SPAN@76.22s: The American Legion advocated strongly for a unified Department of Veterans Affairs throughout the 1920s.⟧ especially after the First World War, to consolidate those services.
+[ 79.86s][moshi] The American Legion actively campaigned for a unified department throughout the nineteen twenties.

@@ -2,48 +2,50 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 무슨 정부 형태를 무정부주의자들이 싫어해?
-     2.56s  <ret> 발화 (turn1 첫 프레임)
-     2.88s  agent 발화 시작: <ret> 그건 정말 흥미로운 질문인데, 정치 철학에 대해 파고드는 거네. 지금은 그 질문에 대한 구체적인 
-     2.96s  user  발화 끝
-     3.76s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.22s]: (no information found)
-     9.31s  agent 발화 끝
-     9.62s  user  발화 시작: 알았어. 해마는 어때? 해마가 뭘 하는데?
-    11.95s  <ret> 발화 (turn3 첫 프레임)
-    12.11s  agent 발화 시작: <ret> 아, 해마—끝없이 흥미로운 영역이야. 새로운 장기 기억을 형성하는 데 필수적이고, 공간 탐색에도 
-    12.26s  user  발화 끝
-    13.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.33s]: The hippocampus is essential for forming new long-term memories and is
-    19.95s  user  발화 시작: 공간 탐색? 길 찾는 거 말이야?
-    20.22s  agent 발화 끝
-    22.16s  user  발화 끝
-    22.26s  agent 발화 시작: 맞아! 주변 환경의 인지 지도를 만들어.
-    24.52s  agent 발화 끝
-    24.53s  user  발화 시작: 그래서 알츠하이머 환자들이 길을 잃는 거야?
-    27.30s  user  발화 시작: …해마가 손상돼서 그런 건가?
-    27.48s  user  발화 끝
-    28.51s  <ret> 발화 (turn8 첫 프레임)
-    28.83s  agent 발화 시작: <ret> 정말 통찰력 있는 연결을 했네.
-    28.91s  user  발화 끝
-    30.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.26s]: Alzheimer’s disease causes progressive damage to the hippocampus, lead
-    31.10s  agent 발화 끝
-    31.18s  agent 발화 시작: 알츠하이머는 해마를 손상시켜서 기억 상실과 방향 감각 상실을 일으켜.
-    35.72s  agent 발화 끝
-    36.10s  user  발화 시작: 음. 그럼 건강한 해마는 좋은 기억력과 같은 거야?
-    39.67s  agent 발화 시작: 일반적으로는 그래, 하지만 기억은 복잡해서—많은 영역이 기여해.
-    39.85s  user  발화 끝
-    43.97s  agent 발화 끝
-    44.27s  user  발화 시작: 기억에 중요한 다른 영역은 뭐가 있어?
-    46.24s  <ret> 발화 (turn13 첫 프레임)
-    46.39s  agent 발화 시작: <ret> 여러 뇌 영역이 함께 작용해서 기억을 만들어. 편도는 감정 기억을 처리하고, 전두엽 피질은 작업 
-    46.58s  user  발화 끝
-    48.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.62s]: The amygdala processes emotional memories, while the prefrontal cortex
-    54.60s  agent 발화 끝
-    55.13s  user  발화 시작: 감정 기억? 엄청 강렬한 기억 말이야?
-    58.10s  user  발화 끝
-    58.54s  agent 발화 시작: 맞아—좋든 싫든 우리에게 오래 남는 기억이지.
-    62.43s  agent 발화 끝
-    62.50s  user  발화 시작: [happy] 그 말이 맞네. 그러니까 기억하고 싶은 게 있으면 감정적으로 만들어야 하는 건가?
-    66.96s  agent 발화 시작: 기억 흔적을 강화하는 데 도움이 될 수 있어, 응.
-    67.08s  user  발화 끝
-    69.57s  user  발화 시작: 흐음. 그건… 기억해둘 요령이네. 사토 선생님, 고마워.
-    69.77s  agent 발화 끝
-    73.73s  user  발화 끝
+     2.55s  <ret> 발화 (turn1 첫 프레임)
+     2.86s  agent 발화 시작: <ret> 음, 정치 이념을 탐구하는 질문이라 흥미롭네. 지금 당장은 그 질문에 대한 답이 없어.
+     2.95s  user  발화 끝
+     3.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.47s]: (no information found)
+     9.30s  agent 발화 끝
+     9.61s  user  발화 시작: 그래. 뭐, 사람 뇌 무게는 평균적으로 얼마야?
+    13.00s  <ret> 발화 (turn3 첫 프레임)
+    13.16s  agent 발화 시작: <ret> 그건 흔히 물어보는 질문이고, 쉽게 대답할 수 있어. 성인 인간 뇌 무게는 대략 일 점 삼에서 일
+    13.35s  user  발화 끝
+    14.76s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.24s]: The average adult human brain weighs around 3 pounds (1.3 to 1.4 kilog
+    21.86s  user  발화 시작: 와, 생각보다 가볍네, 진짜.
+    22.06s  agent 발화 끝
+    23.47s  user  발화 끝
+    23.62s  agent 발화 시작: 그렇지? 작은 공간에 엄청난 복잡성이 다 들어있거든.
+    27.28s  user  발화 시작: 뇌 무게랑 지능 사이에 상관관계가 있어?
+    27.41s  agent 발화 끝
+    30.11s  <ret> 발화 (turn7 첫 프레임)
+    30.19s  agent 발화 시작: <ret> 그건 우리가 꽤 많이 연구한 질문이지. 뇌 크기는 지능과 약한 상관관계를 보이지만, 구조랑 연결이
+    30.24s  user  발화 끝
+    31.39s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.66s]: While brain size correlates weakly with intelligence, it's not a defin
+    37.51s  agent 발화 끝
+    38.07s  user  발화 시작: 그러니까 뇌가 얼마나 큰지가 중요한 게 아니라, 어떻게 연결되어 있느냐가 더 중요하다는 거야?
+    42.80s  agent 발화 시작: 맞아! 연결, 경로—거기서 진짜 마법이 일어나는 거야.
+    42.93s  user  발화 끝
+    46.02s  user  발화 시작: 응.
+    46.46s  user  발화 끝
+    48.08s  agent 발화 끝
+    48.09s  agent 발화 시작: 컴퓨터 같은 거라고 생각해 봐—처리 능력은 칩 크기에만 달려 있는 게 아니잖아.
+    52.26s  agent 발화 끝
+    52.70s  user  발화 시작: 알츠하이머병의 기억 상실은 그럼… 연결 문제인 거야?
+    55.94s  <ret> 발화 (turn13 첫 프레임)
+    56.25s  agent 발화 시작: <ret> 실제로 아주 날카로운 관찰이네.
+    56.39s  user  발화 끝
+    56.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.07s]: Alzheimer's disease is characterized by the progressive loss of neuron
+    58.31s  agent 발화 시작: 알츠하이머병은 뉴런과 시냅스가 손실되면서 뇌 위축을 일으켜.
+    58.32s  agent 발화 끝
+    62.71s  agent 발화 끝
+    63.92s  user  발화 시작: 그러니까 뇌가 물리적으로 줄어든다는 거야?
+    66.16s  agent 발화 시작: 응, 안타깝게도. 정말 끔찍한 과정이야.
+    66.18s  user  발화 끝
+    69.11s  agent 발화 끝
+    69.40s  user  발화 시작: 예방할 수 있는 방법은 없어?
+    71.06s  user  발화 끝
+    71.10s  agent 발화 시작: 정신적으로나 신체적으로 활동하는 게 권장되기도 해.
+    74.29s  agent 발화 끝
+    74.54s  user  발화 시작: 그건 당연하네. 사토 선생님, 감사합니다.
+    77.36s  user  발화 끝

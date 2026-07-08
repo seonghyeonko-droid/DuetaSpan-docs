@@ -2,8 +2,8 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: When was the third season of Daredevil released?
-     2.62s  <ret> 발화 (turn1 첫 프레임)
-     2.85s  agent 발화 시작: <ret> Let me quickly check the release date for you… The thi
-     2.96s  user  발화 끝
-     4.14s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.80s]: Daredevil season three was released on October 26, 2018.
-    10.87s  agent 발화 끝
+     2.90s  <ret> 발화 (turn1 첫 프레임)
+     3.13s  agent 발화 시작: <ret> Let me quickly check the release date for you… The thi
+     3.23s  user  발화 끝
+     4.42s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.65s]: Daredevil season three was released on October 26, 2018.
+    11.65s  agent 발화 끝

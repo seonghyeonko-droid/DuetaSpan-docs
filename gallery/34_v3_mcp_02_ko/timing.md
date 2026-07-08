@@ -1,35 +1,33 @@
 # v3_mcp_02_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 오늘 날씨 업데이트를 weather dot example dot com에서 확인해 주세요.
-     3.99s  <ret> 발화 (turn1 첫 프레임)
-     4.15s  agent 발화 시작: <ret> 네, 그 웹사이트를 모니터링해 드릴 수 있습니다. 지금 weather dot example dot
-     4.22s  user  발화 끝
-     5.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.59s]: (tool result) The website reported a temperature of 22 degrees Celsius
-    12.22s  agent 발화 끝
-    12.25s  user  발화 시작: 좋네요. 음… 에델바이스가 그런 날씨에 잘 자랄까요?
-    16.60s  agent 발화 시작: 에델바이스는 일반적으로 서늘한 온도와 햇볕을 좋아하지만, 꽤 잘 적응하는 편입니다.
-    16.64s  user  발화 끝
-    22.44s  agent 발화 끝
-    23.32s  user  발화 시작: 흠. 체르마트 근처에 다음 주에 가는 가이드 동행 야생화 산책이 있는지 확인해 주시겠어요?
-    28.93s  <ret> 발화 (turn5 첫 프레임)
-    29.32s  agent 발화 시작: <ret> 네, 가이드 동행 산책을 알아봐 드릴 수 있습니다. 다음 화요일 오전 열 시에 마테호른 초원 야생
-    29.52s  user  발화 끝
-    30.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.44s]: (tool result) There is a “Matterhorn Meadows Wildflower Tour” on Tuesd
-    37.34s  agent 발화 끝
-    37.40s  user  발화 시작: 팔십오 프랑… 괜찮은 가격이네요. 좋아요, 그걸로 예약해 주세요.
-    41.61s  <ret> 발화 (turn7 첫 프레임)
-    42.01s  agent 발화 시작: <ret> 네, 예약을 도와드릴 수 있습니다. 잘 됐습니다, 야생화 투어 예약이 완료됐습니다. 확인 번호는 
-    42.13s  user  발화 끝
-    42.73s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.69s]: (tool result) Your booking is confirmed; reference number is ZX789-456
-    50.06s  user  발화 시작: 잘 됐네요! 안심이 돼요. 아, 체르마트의 고도가 어떻게 되는지 아시나요?
-    50.21s  agent 발화 끝
-    55.11s  user  발화 끝
-    55.13s  agent 발화 시작: 체르마트는 해발 약 천육백이십 미터에 위치해 있습니다.
-    58.97s  agent 발화 끝
-    59.80s  user  발화 시작: 네, 알아두면 좋겠네요. 짐을 그에 맞게 챙겨야겠어요. 마지막으로 한 가지만 더 여쭤볼게요. 출발 전날 카메
-    69.59s  <ret> 발화 (turn11 첫 프레임)
-    69.99s  agent 발화 시작: <ret> 네, 알림을 설정해 두는 것이 좋겠어요. 내일 밤 여덟 시에 카메라를 챙기라는 알림을 설정해 드렸
-    70.18s  user  발화 끝
-    70.71s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.58s]: (tool result) Reminder set for tomorrow night at 8:00 PM: “Pack camera
-    76.70s  agent 발화 끝
+     0.00s  user  발화 시작: 날씨 업데이트를 weather dot example dot com에서 확인해 주세요.
+     4.20s  <ret> 발화 (turn1 첫 프레임)
+     4.36s  agent 발화 시작: <ret> 네, 해당 웹사이트의 변경 사항을 계속 확인해 드릴게요. 현재 weather dot example
+     4.39s  user  발화 끝
+     6.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.43s]: (tool result) The website weather dot example dot com reports current 
+    12.51s  agent 발화 끝
+    12.55s  user  발화 시작: 아, 좋네요. 음… 비가 오기를 바랐는데.
+    15.76s  agent 발화 시작: 알프스 야생화에는 약간의 비가 정말 좋을 수 있죠.
+    15.79s  user  발화 끝
+    19.22s  agent 발화 끝
+    20.16s  user  발화 시작: 한 시간 후에 다시 확인하도록 알림을 설정해 주시겠어요?
+    22.86s  <ret> 발화 (turn5 첫 프레임)
+    23.26s  agent 발화 시작: <ret> 네, 적절한 시기에 확인하는 것은 항상 좋은 생각이에요. 한 시간 후에 날씨를 다시 확인하도록 알
+    23.44s  user  발화 끝
+    24.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.57s]: (tool result) A reminder to check the weather has been set for one hou
+    30.57s  agent 발화 끝
+    30.68s  user  발화 시작: 좋아요, 감사합니다. 에델바이스에 대해 아시는 게 있으세요?
+    34.47s  user  발화 끝
+    34.48s  agent 발화 시작: 에델바이스, *Leontopodium alpinum*은 아름답고 험한 고산지대에서 잘 자라는 꽃입니다.
+    40.77s  user  발화 시작: 저는 칠월에 스위스 여행을 계획하고 있어요. 그때 에델바이스를 볼 수 있을까요?
+    40.83s  agent 발화 끝
+    46.29s  <ret> 발화 (turn9 첫 프레임)
+    46.36s  agent 발화 시작: <ret> 스위스 칠월은 야생화를 보기 좋은 계절이에요. 에델바이스는 보통 6월에서 9월 사이에 해발 이천 
+    46.47s  user  발화 끝
+    48.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.52s]: (tool result) Edelweiss blooms from June to September at elevations be
+    55.40s  agent 발화 끝
+    56.09s  user  발화 시작: 정말 좋네요! 해발 이천오백 미터 정도의 하이킹을 계획해 볼까 해요.
+    60.62s  agent 발화 시작: 훌륭한 고도예요. 에델바이스를 볼 좋은 기회가 있을 거예요.
+    60.77s  user  발화 끝
+    65.19s  agent 발화 끝
