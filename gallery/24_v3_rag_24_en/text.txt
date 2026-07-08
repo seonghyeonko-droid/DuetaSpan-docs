@@ -2,41 +2,25 @@ v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about the Du Plessis family and wondered, where does that name even come from? It sounds… French, maybe?
-[  8.31s][moshi] ⟨ret@8.23s⟩ That’s a ⟦⚡SPAN@9.27s: The surname Du Plessis is of French origin, meaning "of the Plessis," denoting someone from a place called Ple⟧ very interesting question, tracing family names can reveal so much history.
-[ 13.03s][moshi] The name Du Plessis originates from France, indicating someone who came from a place named Plessis.
-[ 19.30s][user ] Oh, so it *is* French! Are there many places called Plessis then?
-[ 24.84s][moshi] ⟨ret@24.60s⟩ Indeed, several locations in France ⟦⚡SPAN@26.60s: There are numerous places in France named Plessis, including Plessis-lès-Tours, Plessis-Piquet, and Plessis-Pl⟧ bear that name, which explains its spread as a surname.
-[ 29.57s][moshi] Several places in France are named Plessis, such as Plessis-lès-Tours, Plessis-Piquet, and Plessis-Pluche.
-[ 36.79s][user ] That’s fascinating. I’ve never heard of any of those places. But how did the name get to… South ⟨ret@43.11s⟩ Africa?
-[ 43.27s][moshi] That’s a logical ⟦⚡SPAN@45.11s: The Du Plessis name arrived in South Africa with French Huguenots who fled religious persecution in the sevent⟧ next question, migration patterns often explain surname distribution.
-[ 48.28s][moshi] The Du Plessis name was brought to South Africa by French Huguenots in the seventeenth century.
-[ 53.48s][user ] Huguenots… right, the Protestants. So, they were escaping religious trouble? ⟨ret@60.13s⟩
-[ 60.53s][moshi] Precisely. They sought ⟦⚡SPAN@61.81s: Many Huguenots settled in the Dutch Cape Colony after being granted permission to immigrate by the Dutch East ⟧ refuge in various countries, including the Dutch Cape Colony.
-[ 65.03s][moshi] Huguenots settled in the Dutch Cape Colony with permission from the Dutch East India Company.
-[ 70.33s][user ] So, the Dutch were okay with them coming? That’s… surprising.
-[ 75.28s][moshi] ⟨ret@75.14s⟩ The Dutch were pragmatic, ⟦⚡SPAN@77.14s: The Dutch East India Company encouraged Huguenot immigration to strengthen the colony's economy and workforce.⟧ seeking skilled laborers and farmers to bolster the colony.
-[ 79.96s][moshi] The Dutch East India Company wanted Huguenots to improve the colony’s economy and workforce.
-[ 86.15s][user ] I see, makes sense. Were the Du Plessis family important in South Africa ⟨ret@90.61s⟩ then?
-[ 91.00s][moshi] Some branches of the ⟦⚡SPAN@92.61s: The Du Plessis family became influential in South Africa, holding positions in government, the military, and a⟧ family did become quite prominent over time.
-[ 94.60s][moshi] The Du Plessis family became influential in South Africa in government, the military, and agriculture.
-[100.53s][user ] What kind of positions did they hold?
-[102.84s][moshi] – a good question, let’s explore their roles…
-[106.42s][user ] I mean, were they generals or governors or… what? ⟨ret@109.81s⟩
-[110.05s][moshi] Certainly. Several Du ⟦⚡SPAN@111.65s: Willem Adolf Du Plessis was a prominent South African politician and served as a member of the Cape Legislativ⟧ Plessis family members served in significant administrative and military roles.
-[115.92s][moshi] Willem Adolf Du Plessis was a politician and served in the Cape Legislative Assembly.
-[122.01s][user ] Oh, a politician. That’s interesting. Were there any Du Plessis involved in the Boer ⟨ret@127.26s⟩ Wars?
-[127.58s][moshi] Yes, indeed. Several Du ⟦⚡SPAN@129.26s: General Johannes Petrus Du Plessis led Boer forces during the Second Boer War, commanding troops in several ba⟧ Plessis fought on the Boer side during those conflicts.
-[131.88s][moshi] Johannes Petrus Du Plessis led Boer forces during the Second Boer War.
-[136.28s][user ] A general, wow. So they really did become a powerful ⟨ret@140.07s⟩ family.
-[140.31s][moshi] ⟦⚡SPAN@140.87s: The Du Plessis family accumulated substantial land holdings in the Western Cape and other regions of South Afr⟧ Their influence extended beyond military and political spheres, into land ownership as well.
-[145.85s][moshi] The Du Plessis family acquired significant land holdings in South Africa.
-[150.29s][user ] And are there still many Du Plessis families in South ⟨ret@154.37s⟩ Africa today?
-[154.77s][moshi] Yes, the name ⟦⚡SPAN@156.13s: Du Plessis ranks among the most frequently occurring surnames in South Africa, appearing in various communitie⟧ remains relatively common throughout the country.
-[158.28s][moshi] Du Plessis is a common surname in South Africa today.
-[161.92s][user ] That’s amazing, a name that travelled so far and stayed so strong.
-[166.82s][moshi] ⟨ret@166.50s⟩ It’s ⟦⚡SPAN@167.46s: The continued presence of the Du Plessis name reflects the Huguenots’ successful integration into South Africa⟧ a testament to their resilience and adaptability, a common story in diaspora histories.
-[172.15s][moshi] The Du Plessis name’s survival shows Huguenot integration into South African society.
-[177.49s][user ] I— I mean, it's just incredible how a place name in France ended up defining a family in ⟨ret@183.47s⟩ South Africa.
-[183.79s][moshi] Indeed. It is a ⟦⚡SPAN@185.47s: The journey of the Du Plessis name exemplifies the complex connections between European and African histories.⟧ powerful reminder of how deeply intertwined global histories truly are.
-[188.86s][moshi] The Du Plessis name illustrates the connections between European and African histories.
+[  0.00s][user ] I was wondering about the name Du Plessis… it sounds French, doesn’t it?
+[  5.39s][moshi] It has a decidedly European ring, certainly. The name’s origins are actually quite interesting, tracing back to a specific region.
+[ 13.51s][user ] Oh? Where does it come from ⟨ret@15.49s⟩ then?
+[ 15.89s][moshi] Let’s explore ⟦⚡SPAN@16.77s: Du Plessis is a French surname originating in Normandy, from the Old French “du” meaning “of the” and “plessis⟧ the etymology of that surname— The name Du Plessis comes from Normandy in France, meaning “of the enclosed area.”
+[ 24.29s][user ] Normandy, huh. So it’s definitely French then?
+[ 27.50s][moshi] While its roots are French, the name’s spread is rather fascinating, particularly its adoption elsewhere.
+[ 33.57s][user ] Like where? Did it stay mostly in France?
+[ 37.43s][moshi] ⟨ret@37.11s⟩ The ⟦⚡SPAN@38.07s: The Du Plessis family emigrated from Normandy to South Africa in the seventeenth century, becoming one of the ⟧ surname’s journey extends beyond France— The Du Plessis family moved from Normandy to South Africa in the seventeenth century.
+[ 45.98s][user ] South Africa? That’s unexpected.
+[ 48.43s][moshi] Indeed. It became quite a common surname among the early Dutch and Huguenot settlers there.
+[ 53.77s][user ] Huguenots… weren’t they Protestants fleeing France?
+[ 57.35s][moshi] ⟨ret@57.27s⟩ Those religious refugees ⟦⚡SPAN@58.87s: Huguenots, French Protestants persecuted in the sixteenth and seventeenth centuries, often fled to the Netherl⟧ played a key role— Huguenots fled persecution in France to places like the Netherlands and South Africa.
+[ 60.49s][user ] «backchannel» Yeah.
+[ 64.64s][moshi] The name’s presence in South Africa also influenced its evolution and variations.
+[ 69.48s][user ] Variations? How ⟨ret@71.00s⟩ so?
+[ 71.39s][moshi] The ⟦⚡SPAN@71.96s: In Afrikaans, Du Plessis is often spelled Duplessis, a phonetic adaptation reflecting the language’s pronuncia⟧ surname adapted as it settled— In Afrikaans, the name is often spelled Duplessis, due to pronunciation.
+[ 79.53s][user ] Duplessis… so that’s why it looks a little different sometimes. I— I mean, is that the common spelling in South Africa?
+[ 86.57s][moshi] Not necessarily common, but it’s a recognized variation, reflecting the linguistic landscape.
+[ 92.63s][user ] Is there any connection to royalty, or any famous Du Plessis family ⟨ret@97.05s⟩ members?
+[ 97.44s][moshi] ⟦⚡SPAN@97.55s: Willem Adriaan van der Stel Du Plessis was a prominent South African politician and landowner in the nineteent⟧ Some members achieved significant prominence— Willem Adriaan van der Stel Du Plessis was a South African politician in the 1800s.
+[104.76s][user ] A politician. Interesting. Do you know anything about their coat of arms?
+[109.60s][moshi] The heraldry associated with the name is quite detailed, reflecting its long history and lineage.

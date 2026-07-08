@@ -1,25 +1,25 @@
 # v3_mcp_02_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: weather.example.com에서 날씨 업데이트를 봐 주세요.
-     3.83s  <ret> 발화 (turn1 첫 프레임)
-     3.99s  agent 발화 시작: <ret> 음, 날씨가 생각보다 괜찮네요. 솔직히 더 안 좋을 줄 알았어요.
-     4.03s  user  발화 끝
-     5.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.26s]: (tool result) The website reports current conditions in London are 15 
-     8.06s  agent 발화 끝
-     8.11s  user  발화 시작: 하하, 런던 날씨는 가을에도 놀랍도록 온화할 수 있어요.
-    12.55s  user  발화 끝
-    12.59s  agent 발화 시작: 다음 화요일에 런던에서 에든버러까지 기차표를 예매해 주시겠어요?
-    16.85s  agent 발화 끝
-    17.76s  user  발화 시작: 네, 기차표를 확인해 드릴 수 있어요. 런던에서 오전 10시에 출발해서 에든버러에 오후 2시 30분에 도착하
-    25.19s  <ret> 발화 (turn5 첫 프레임)
-    25.58s  agent 발화 시작: <ret> 좋아요, 예매해 주세요.
-    25.77s  user  발화 끝
-    26.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.12s]: (tool result) A train is available departing London at 10:00 AM, arriv
-    27.70s  agent 발화 끝
-    27.91s  user  발화 시작: 네, 예약을 완료해 드릴게요. 다음 화요일 오전 10시 에든버러행 기차표가 예약되었고, 예약 번호는 G789
-    36.42s  <ret> 발화 (turn7 첫 프레임)
-    36.82s  agent 발화 시작: <ret> I’m happy to finalize that reservation. Your train to 
-    36.94s  user  발화 끝
-    37.38s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.94s]: (tool result) Your train from London to Edinburgh is confirmed for nex
-    46.61s  agent 발화 끝
+     0.00s  user  발화 시작: weather.example.com에서 날씨 업데이트를 봐 주시겠어요?
+     2.96s  <ret> 발화 (turn1 첫 프레임)
+     3.10s  agent 발화 시작: <ret> 네, 해당 웹사이트의 날씨를 확인해 봤는데요, 현재 기온은 섭씨 22도이고 부분적으로 구름이 낀 
+     3.23s  user  발화 끝
+     4.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.87s]: (tool result) The website reports a temperature of 22 degrees Celsius 
+     9.86s  agent 발화 끝
+     9.91s  user  발화 시작: 와, 생각보다 따뜻하네요… 음, 제르마트로 가는 기차를 예약해야 할 것 같아요.
+    15.09s  user  발화 끝
+    15.10s  agent 발화 시작: 제르마트로 떠나시는군요, 정말 멋지네요! 혹시 여행하시고 싶은 날짜와 시간이 있으신가요?
+    21.03s  agent 발화 끝
+    21.88s  user  발화 시작: 네, 그러니까 7월 16일, 가능하다면 아침 열 시쯤으로요.
+    25.35s  <ret> 발화 (turn5 첫 프레임)
+    25.74s  agent 발화 시작: <ret> 기차 시간표를 확인해 보겠습니다. 7월 16일 오전 10시 15분에 제르마트로 가는 기차가 있고,
+    25.91s  user  발화 끝
+    27.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.55s]: (tool result) A train to Zermatt is available on July 16th at 10:15 AM
+    35.34s  agent 발화 끝
+    35.44s  user  발화 시작: 네, 부탁드립니다. 그리고 등산화를 챙기라고 알려주실 수 있나요?
+    39.68s  <ret> 발화 (turn7 첫 프레임)
+    40.02s  user  발화 끝
+    40.07s  agent 발화 시작: <ret> 네, 등산화 챙기라고 알림을 설정해 드릴게요. 7월 15일 오후 6시에 등산화를 챙기라는 알림을 
+    40.80s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.52s]: (tool result) A reminder to pack hiking boots is set for July 15th at 
+    49.61s  agent 발화 끝

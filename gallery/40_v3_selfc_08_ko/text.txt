@@ -2,25 +2,26 @@ v3_selfc_08_ko src=mcp style=mcp_selfcorrect
 SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 안내원입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 보여 ⟨ret@4.49s⟩ 줘.
-[  4.73s][moshi] 네, 버스 ⟦⚡SPAN@6.49s: (tool result) There are two buses available on May tenth: one departing at 8:00 AM costing $250, and another a⟧ 좌석 상황을 확인해 드릴게요. 5월 10일에 출발하는 버스가 두 대 있는데, 가격은 각각 250달러와 280달러예요.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
-[ 14.73s][user ] 오전 8시 거 괜찮은 것 같아. 그걸로 예약해 줘.
-[ 18.43s][moshi] ⟨ret@18.27s⟩ ⟦⚡SPAN@19.31s: (tool result) Your booking is confirmed: confirmation number is BX8729, three passengers, departing Chicago at⟧ 네, 해당 출발 시간으로 예약을 완료해 드렸습니다. 예약 번호는 BX8729이고, 세 명으로 예약됐어요.
-      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_id": "8:00 AM Chicago to Denver", "num_passengers": 3}}
-[ 27.23s][user ] 좋네. 음, 그 버스 수하물 규정은 어떻게 ⟨ret@30.22s⟩ 돼?
-[ 30.54s][moshi] 여행 준비에 관해 ⟦⚡SPAN@32.22s: (tool result) Each passenger is allowed one carry-on bag and one checked bag, weighing up to fifty pounds each⟧ 좋은 질문이세요— 각 승객은 무게가 50파운드 이하인 휴대 수하물 하나와 위탁 수하물 하나를 가져올 수 있습니다.
-[ 36.07s][user ] «backchannel» 응.
-[ 39.59s][user ] 버스에 와이파이 ⟨ret@40.58s⟩ 있어?
-[ 40.98s][moshi] 네, 승객분들이 ⟦⚡SPAN@42.58s: (tool result) Wi-Fi is available on the Chicago to Denver bus, with a speed of 25 Mbps.⟧ 이동 중에도 연결 상태를 유지할 수 있습니다. 버스에 와이파이가 제공되며, 속도는 25Mbps입니다.
-[ 50.68s][user ] 알아두면 좋네. 아, 화장실도 있나?
-[ 53.87s][user ] 음식은 살 수 있어?
-[ 55.30s][moshi] «interrupted» 네, 승객 편의를 위해 버스에 화장실이 마련되어 있습니다. —
-[ 59.89s][moshi] ⟨ret@59.73s⟩ 음료와 음식에 ⟦⚡SPAN@61.73s: (tool result) Snacks and drinks are available for purchase on the bus, including sandwiches, chips, and soda.⟧ 대해서도 확인해 드릴게요. 샌드위치, 감자칩, 탄산음료 등 간식과 음료를 구매할 수 있습니다.
-[ 67.95s][user ] 좋네. 덴버 미술관에 대해서는…
-[ 70.58s][moshi] 덴버는 훌륭한 미술관이 여러 곳 있는 멋진 예술 도시예요.
-[ 75.11s][user ] 콜럼버스 이전 미술품 컬렉션이 제일 좋은 곳은 어디야?
-[ 79.52s][moshi] ⟨ret@79.20s⟩ 덴버 미술관이 ⟦⚡SPAN@81.04s: (tool result) The Denver Art Museum’s pre-Columbian collection contains over one thousand artifacts from acros⟧ 콜럼버스 이전 미술품 컬렉션으로 유명합니다. 덴버 미술관에는 콜럼버스 이전 유물이 천 점 이상 소장되어 있습니다.
-[ 88.13s][user ] 와, 굉장하네. 버스 정류장에서 얼마나 떨어져 ⟨ret@91.74s⟩ 있어?
-[ 92.14s][moshi] 거리를 ⟦⚡SPAN@92.86s: (tool result) The Denver Art Museum is 2.5 miles from the Denver Bus Station, with an estimated travel time of⟧ 확인하고 이동 시간을 알려 드릴게요.
-      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"origin": "Denver Bus Station", "destination": "Denver Art Museum"}}
+[  0.00s][user ] 시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 보여 ⟨ret@4.50s⟩ 줘.
+[  4.74s][moshi] 알겠습니다. 그 ⟦⚡SPAN@6.50s: (tool result) Three buses are available on May tenth: 8:00 AM, $250; 2:30 PM, $285; 7:00 PM, $220.⟧ 경로의 버스 좌석 상황을 확인해 볼게요. 5월 10일에 출발하는 버스가 세 대가 있는데, 가격은 이백이십 달러부터 이백팔십오 달러까지예요.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 17.09s][user ] 아침 8시 거 괜찮은 것 같아. 예약해 ⟨ret@20.01s⟩ 줄래?
+[ 20.17s][moshi] 네, ⟦⚡SPAN@21.05s: (tool result) Your reservation is confirmed: bus departs Chicago at 8:00 AM, May tenth, three passengers, conf⟧ 아침 8시 버스 좌석을 예약해 드릴게요. 아침 8시 버스 예약이 완료됐습니다. 확인 번호는 칠만 팔천구백사십오입니다.
+      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_id": "8:00 AM", "passengers": "three"}}
+[ 29.24s][user ] 좋아! 그 버스가 오마하에 서는 거야?
+[ 32.19s][moshi] «interrupted» 그 버스 경로 정보를 잠깐 확인해 볼게요.
+[ 34.79s][user ] «interrupts_prev» 아, 오마하는 됐어. 수하물 규정은 어떻게 돼?
+[ 38.39s][moshi] 승객 한 분당 표준형 기내 수하물 하나와 위탁 수하물 하나를 무료로 부칠 수 있습니다.
+[ 43.92s][user ] 그래, 알아 ⟨ret@45.39s⟩ 둬야겠다.
+[ 45.71s][moshi] 이제, 여정 정보를 ⟦⚡SPAN@47.39s: (tool result) Email sent to user's email with subject “Bus Itinerary” and confirmation number 78945.⟧ 이메일로 보내 드릴까요? 확인 번호와 함께 여정 정보를 이메일 주소로 보내 드렸습니다.
+      CALL: {"function": "Email_3_SendEmail", "arguments": {"recipient": "user's email", "subject": "Bus Itinerary", "body": "Your bus itinerary confirmation number 78945."}}
+[ 52.64s][user ] 완벽해, 고마워.
+[ 54.14s][moshi] 천만에요! 여행 계획을 세우는 데 도움을 드릴 수 있어서 기쁩니다. 미리 계획하면 여행 스트레스가 많이 줄어든다고 생각해요.
+[ 62.34s][user ] 맞아. 음, 덴버 미술관에 있는 콜럼버스 이전 유물에 대해 아는 거 있어?
+[ 67.00s][moshi] «interrupted» 오, 물론이죠! 덴버 미술관에는 훌륭한 소장품이 있는데, 특히 모체 문화의 도자기가 강점입니다.
+[ 71.74s][user ] «backchannel» 응.
+[ 74.91s][moshi] 모체 문화는 일상생활과 신화를 묘사한 매우 정교한 손잡이가 달린 항아리로 유명했습니다.
+[ 80.59s][user ] 흥미롭네. 나스카 문화 유물도 있나?
+[ 83.05s][moshi] ⟨ret@82.89s⟩ 네, 물론입니다. ⟦⚡SPAN@84.89s: (tool result) Denver Art Museum: Nazca collection includes textiles, pottery, and funerary bundles from 900-15⟧ 나스카 유물도 있습니다— 나스카 직물, 도자기, 그리고 기원후 900년에서 1500년까지의 장례 번들도 소장하고 있습니다.
+[ 93.10s][user ] 정말 멋지다! 이제 여행이 정말 기대되네.
+[ 96.59s][moshi] 정말 잘됐네요! 방문 중에 새로운 좋아하는 문화를 발견하게 될지도 모르겠어요.

@@ -3,30 +3,41 @@ SYSTEM: <system> You are an amateur astronomer who has spent years mapping the n
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How many senators are there in the French Senate?
-[  2.50s][moshi] ⟨ret@2.46s⟩ That’s a good ⟦⚡SPAN@3.58s: (no information found)⟧ question about the French government. I’m afraid I don’t currently have that specific number in my records.
-[  8.70s][user ] Oh, okay. Well, can you tell me about the Andromeda Galaxy?
-[ 12.56s][moshi] Ah, Andromeda! A beautiful spiral galaxy, and a fascinating neighbor to our own Milky Way.
-[ 19.11s][user ] Is it getting closer to us?
-[ 20.72s][moshi] ⟨ret@20.66s⟩ It's a ⟦⚡SPAN@22.02s: "The Andromeda Galaxy is approaching the Milky Way at 110 kilometers per second."⟧ common question about our galactic neighbor. It is, actually—Andromeda is approaching the Milky Way at one hundred and ten kilometers per second.
-[ 31.07s][user ] Wow, that's fast! When will they ⟨ret@33.72s⟩ collide?
-[ 34.09s][moshi] Predicting collisions across ⟦⚡SPAN@35.48s: "The collision between the Andromeda and Milky Way galaxies is predicted to occur in approximately 4.5 billion⟧ cosmic distances is tricky. Astronomers predict the collision will happen in roughly four and a half billion years.
-[ 39.13s][user ] «backchannel» Yeah.
-[ 42.65s][user ] That’s a long time from now. What will happen when they do?
-[ 45.74s][moshi] It won’t be a head-on crash, thankfully. More of a merging, a slow dance over millions of years.
-[ 52.22s][user ] A slow dance? That's a nice way to put it.
-[ 54.94s][moshi] [laugh] It’s a gentler image than galactic destruction, isn't it? I find it helps.
-[ 59.91s][user ] Definitely. Um, what’s the brightest star in the night sky?
-[ 63.80s][moshi] ⟨ret@63.73s⟩ That’s a classic ⟦⚡SPAN@65.25s: "Sirius is the brightest star in the night sky, with an apparent magnitude of -1.46."⟧ question for any stargazer. The brightest star is Sirius, with an apparent magnitude of negative one point four six.
-[ 72.74s][user ] Sirius, right. I always get that one mixed up with Vega.
-[ 76.63s][moshi] They’re both brilliant stars, easy to confuse. Vega is quite beautiful too, a bit more bluish.
-[ 83.36s][user ] So, Vega isn't as ⟨ret@84.96s⟩ bright?
-[ 85.27s][moshi] It’s a matter of ⟦⚡SPAN@86.96s: "Vega has an apparent magnitude of 0.03, making it the fifth-brightest star in the night sky."⟧ how we measure brightness, actually. Vega has a magnitude of zero point zero three, making it fifth-brightest.
-[ 93.31s][user ] Okay, that makes sense. Can you find me a good telescope for viewing planets?
-[ 98.28s][moshi] ⟨ret@97.90s⟩ ⟦⚡SPAN@98.86s: (tool result) Celestron NexStar 130SLT Computerized Telescope: $499.00. Aperture: 130mm. Mount Type: Computeri⟧ Certainly. Let's see what's available—what’s your approximate budget?
-[103.00s][moshi] The Celestron NexStar 130SLT is four hundred and ninety-nine dollars, with a one hundred and thirty-millimeter aperture.
-[111.45s][user ] Four hundred and ninety-nine sounds good. Does it come with any ⟨ret@115.30s⟩ eyepieces?
-[115.53s][moshi] Most telescopes include a ⟦⚡SPAN@117.30s: (tool result) Celestron NexStar 130SLT includes: 10mm and 25mm eyepieces. Barlow Lens: 3x.⟧ basic set to get you started. It comes with ten and twenty-five millimeter eyepieces, and a three-power Barlow lens.
-[123.86s][user ] Perfect! I think I’ll order that one.
-[125.71s][moshi] Excellent choice! It’s a very popular model, and a great way to begin planetary observation.
-[131.91s][user ] Thanks so much for your help, Moshi.
-[133.59s][moshi] You’re very welcome. Clear skies, and happy stargazing!
+[  2.60s][moshi] ⟨ret@2.54s⟩ That’s a ⟦⚡SPAN@3.67s: (no information found)⟧ good question about French governance. Unfortunately, I don’t have that specific number right now. My databases aren’t covering that detail at the moment.
+[ 11.53s][user ] Oh. Well, can you tell me about the constellation Cassiopeia?
+[ 16.96s][moshi] ⟨ret@16.72s⟩ Cassiopeia ⟦⚡SPAN@17.68s: "Cassiopeia is a constellation in the northern sky, named after the vain queen in Greek mythology."⟧ is a lovely sight, easily recognizable. It's a constellation visible in the northern sky, named after a queen from Greek myths. A very prominent W-shape, you can't miss it.
+[ 28.55s][user ] A W-shape? Really? I always thought it looked more like an M.
+[ 32.17s][moshi] It’s fascinating how different people perceive shapes in the stars!
+[ 34.67s][user ] «backchannel» Yeah.
+[ 36.31s][moshi] The position relative to the observer impacts perception. Depending on your location, it can appear flipped.
+[ 42.58s][user ] Interesting. What about its distance from ⟨ret@45.17s⟩ Earth?
+[ 45.40s][moshi] Determining ⟦⚡SPAN@46.37s: "Cassiopeia is between 550 and 600 light-years from Earth."⟧ distance to constellations is complex. It's located between five hundred fifty and six hundred light-years away. That’s quite a journey for light to reach us!
+[ 57.48s][user ] Wow, that *is* far. What’s the brightest star in Cassiopeia?
+[ 61.65s][moshi] ⟨ret@61.58s⟩ Identifying bright stars is ⟦⚡SPAN@63.58s: "Schedar, also known as Alpha Cassiopeiae, is the brightest star in Cassiopeia."⟧ a key part of charting. Schedar, or Alpha Cassiopeiae, is the brightest star within it. It’s a beautiful orange giant.
+[ 71.69s][user ] Orange? I didn’t know stars could be orange.
+[ 74.63s][moshi] [laugh] They absolutely can! Star color indicates temperature.
+[ 78.62s][moshi] Cooler stars appear red or orange, hotter stars are blue. Temperature determines color, with cooler stars being redder.
+[ 86.67s][user ] So, a blue star is really hot? Like, how ⟨ret@89.82s⟩ hot?
+[ 90.13s][moshi] Extremely hot, ⟦⚡SPAN@91.34s: "Blue stars can have surface temperatures exceeding 30,000 Kelvin."⟧ exceeding our everyday experience. They can reach surface temperatures over thirty thousand Kelvin. That’s significantly hotter than our Sun.
+[ 99.80s][user ] Thirty thousand Kelvin… that’s… intense. What’s the oldest star we’ve ⟨ret@105.30s⟩ found?
+[105.69s][moshi] ⟦⚡SPAN@106.26s: "HD 140283, nicknamed the Methuselah star, is estimated to be 14.46 ± 0.8 billion years old."⟧ Pinpointing the oldest star is a challenge. HD 140283, nicknamed Methuselah, is about fourteen point four six billion years old. It’s almost as old as the universe itself!
+[118.10s][user ] Fourteen *billion* years! That’s incredible. Is it still burning?
+[123.49s][moshi] It is, though its future is a topic of study.
+[126.29s][moshi] Determining a star’s lifespan is complicated. Its age has been revised several times, posing challenges to models.
+[133.70s][user ] Revised? How ⟨ret@135.01s⟩ so?
+[135.40s][moshi] Measuring stellar ⟦⚡SPAN@136.77s: "Initial estimates of HD 140283's age exceeded the estimated age of the universe."⟧ age is a delicate process. Early estimates were older than the universe, requiring adjustments. Astronomers continue refining those calculations.
+[146.04s][user ] So, they had to change the calculations? That's wild.
+[149.30s][moshi] It highlights the constant refinement in our understanding.
+[151.54s][user ] «backchannel» Mhm.
+[152.59s][moshi] New data always reshapes our cosmic picture. Astronomy is a field of continuous discovery and revision.
+[159.43s][user ] I guess so. What’s the farthest galaxy we’ve ⟨ret@162.64s⟩ seen?
+[162.87s][moshi] Reaching the ⟦⚡SPAN@164.32s: "GN-z11 is currently the farthest observed galaxy, at a comoving distance of 32 billion light-years."⟧ edge of the observable universe… GN-z11 is the farthest, at thirty-two billion light-years. It’s a glimpse into the very early universe.
+[173.25s][user ] Thirty-two billion light-years! That’s… hard to even imagine.
+[178.03s][moshi] It truly is. The scale of the cosmos is humbling.
+[181.77s][moshi] Thinking about these distances puts things in perspective. It reminds us of our small place in the vastness of space.
+[188.45s][user ] It really does. What kind of telescope do you use to see those things?
+[192.95s][moshi] [sigh] I don’t *use* telescopes, I access data from them!
+[197.80s][moshi] The James Webb Space Telescope is revolutionizing our view. It observes infrared light, seeing through dust clouds.
+[205.77s][user ] Oh, right. The Webb telescope. I read about that.
+[208.56s][moshi] It's a remarkable instrument, isn't it?
+[210.63s][moshi] Its observations are shaping our understanding. It's providing unprecedented detail about distant galaxies. A golden age of astronomy is upon us.

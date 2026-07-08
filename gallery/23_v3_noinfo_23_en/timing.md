@@ -2,50 +2,50 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.16s  <ret> 발화 (turn1 첫 프레임)
-     3.56s  agent 발화 시작: <ret> Let me quickly access some historical weather data for
-     3.70s  user  발화 끝
-     5.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.73s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    14.37s  agent 발화 끝
-    15.68s  user  발화 시작: That sounds…pleasant enough. Could you find me a good hiking
-    20.13s  <ret> 발화 (turn3 첫 프레임)
-    20.53s  agent 발화 시작: <ret> Certainly, I can search for hiking trails in that regi
-    20.67s  user  발화 끝
-    22.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) The Mount Fuji Red Maple Corridor trail is three point f
-    32.97s  user  발화 시작: That sounds perfect. Is it open right now?
-    33.05s  agent 발화 끝
-    35.25s  <ret> 발화 (turn5 첫 프레임)
-    35.64s  user  발화 끝
-    35.65s  agent 발화 시작: <ret> Let’s check the current status of that trail… The Moun
-    36.21s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.87s]: (tool result) The Mount Fuji Red Maple Corridor trail is currently ope
-    43.48s  user  발화 시작: Great. I'm also planning a trip to the Swiss Alps next sprin
-    43.53s  agent 발화 끝
-    46.95s  agent 발화 시작: Ah, the Swiss Alps are a wonderful destination, especially i
-    47.18s  user  발화 끝
-    51.31s  user  발화 시작: …do you know anything about alpine wildflowers there? Specif
-    51.94s  agent 발화 끝
-    56.12s  user  발화 끝
-    56.34s  agent 발화 시작: Edelweiss is quite iconic, and a favorite of mine. It’s a pr
-    64.03s  user  발화 시작: Really? I didn't know that.
-    64.03s  agent 발화 끝
-    65.50s  user  발화 끝
-    65.53s  agent 발화 시작: Yes, it’s listed as vulnerable in many areas. It prefers roc
-    71.18s  user  발화 시작: Right.
-    71.95s  user  발화 끝
-    74.81s  <ret> 발화 (turn13 첫 프레임)
-    75.12s  agent 발화 시작: <ret> Considering its habitat, it's a rather specialized pla
-    75.22s  agent 발화 끝
-    76.25s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.54s]: (tool result) The Edelweiss flower blooms from July to September, and 
-    83.98s  agent 발화 끝
-    85.48s  user  발화 시작: So it wouldn’t be in bloom in, say, early June?
-    88.16s  user  발화 끝
-    88.38s  agent 발화 시작: No, early June is typically before its flowering season. You
-    94.82s  agent 발화 끝
-    95.01s  user  발화 시작: That’s good to know. Can you book a hotel in Interlaken for 
-    99.09s  <ret> 발화 (turn17 첫 프레임)
-    99.33s  agent 발화 시작: <ret> Of course, let me search for hotels in Interlaken with
-    99.50s  user  발화 끝
-   101.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.17s]: (tool result) The Hotel Krebs in Interlaken has rooms with balconies a
-   112.98s  agent 발화 끝
-   113.58s  user  발화 시작: Book it.
-   114.40s  user  발화 끝
+     3.38s  <ret> 발화 (turn1 첫 프레임)
+     3.78s  agent 발화 시작: <ret> Let me check the historical weather data for you… On D
+     3.93s  user  발화 끝
+     5.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.29s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    14.03s  agent 발화 끝
+    15.27s  user  발화 시작: And what about the average snowfall in the Japanese Alps dur
+    18.71s  <ret> 발화 (turn3 첫 프레임)
+    19.11s  agent 발화 시작: <ret> That’s a slightly different region, but I can certainl
+    19.29s  user  발화 끝
+    20.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) The average snowfall in the Japanese Alps during January
+    29.96s  user  발화 시작: Wow, that’s a lot. Is there a good ski resort near Matsumoto
+    30.05s  agent 발화 끝
+    33.71s  <ret> 발화 (turn5 첫 프레임)
+    33.76s  user  발화 끝
+    33.79s  agent 발화 시작: <ret> Matsumoto is a wonderful base for exploring the mounta
+    34.83s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.64s]: (tool result) Hakuba Valley is a popular ski resort near Matsumoto, wi
+    39.68s  user  발화 시작: Right.
+    40.18s  user  발화 끝
+    43.74s  agent 발화 시작: It’s known for its powder snow and diverse terrain—
+    43.90s  agent 발화 끝
+    46.70s  user  발화 시작: Do they have lodging right at the resort, or do you need to 
+    47.44s  agent 발화 끝
+    50.12s  user  발화 끝
+    50.13s  agent 발화 시작: Hakuba Valley offers lodging both at the resort and in the t
+    57.60s  agent 발화 끝
+    58.25s  user  발화 시작: Okay, good. Could you find me a hotel room there for two peo
+    63.50s  <ret> 발화 (turn11 첫 프레임)
+    63.58s  agent 발화 시작: <ret> Certainly, let me check availability for those dates… 
+    63.67s  user  발화 끝
+    65.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.34s]: (tool result) Hotel Cortina in Hakuba Valley has a double room availab
+    74.01s  agent 발화 끝
+    74.81s  user  발화 시작: That sounds good. Go ahead and book it.
+    76.58s  <ret> 발화 (turn13 첫 프레임)
+    76.93s  user  발화 끝
+    76.98s  agent 발화 시작: <ret> Excellent, confirming your reservation now… Your reser
+    77.62s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.33s]: (tool result) Reservation confirmed: Hotel Cortina, double room, Febru
+    90.01s  agent 발화 끝
+    90.99s  user  발화 시작: Perfect. Is there a particular alpine wildflower that blooms
+    96.00s  user  발화 끝
+    96.21s  agent 발화 시작: That's a lovely question. February is still quite cold, so b
+   101.77s  <ret> 발화 (turn16 첫 프레임)
+   101.93s  agent 발화 시작: <ret> It is a challenging time for alpine wildflowers, but I
+   102.14s  agent 발화 끝
+   103.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (no information found)
+   113.11s  user  발화 시작: Oh, okay. Well, thanks for all your help.
+   113.36s  agent 발화 끝
+   114.95s  user  발화 끝

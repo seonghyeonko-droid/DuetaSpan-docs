@@ -2,23 +2,25 @@ v3_abs_22_en src=squad2 style=abstain
 SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.77s⟩ hate?
-[  2.92s][moshi] That’s a fascinating ⟦⚡SPAN@4.53s: (no information found)⟧ question, exploring fundamental political beliefs. I’m afraid I don’t have a specific answer to that question right now. Anarchists oppose all forms of hierarchical rule.
-[ 14.81s][user ] Right. So, they don’t like *any* government then?
-[ 17.91s][moshi] Essentially, yes. They believe government itself is an unnecessary evil, rather than disliking one specific type.
-[ 25.76s][user ] Um, what about memory consolidation—can you explain that? ⟨ret@29.54s⟩
-[ 29.61s][moshi] Certainly. Memory consolidation ⟦⚡SPAN@31.54s: “Memory consolidation is a time-dependent process by which labile memories are transformed into more stable, l⟧ is the process of stabilizing a memory trace after its initial acquisition.
-[ 36.79s][moshi] It transforms fragile memories into more durable, long-lasting ones over time.
-[ 43.20s][user ] Mm-hmm. And how long does that usually take?
-[ 45.70s][moshi] [laugh] It varies greatly. Some consolidation happens within minutes, but others can take years—even a lifetime.
-[ 53.75s][user ] Wow, years! What helps with that process?
-[ 57.24s][moshi] Sleep is crucial. During sleep, the brain replays and strengthens newly formed memories, aiding consolidation.
-[ 65.03s][user ] That’s interesting—I always feel better after a good night’s sleep.
-[ 68.24s][moshi] It’s no coincidence. Sleep truly is restorative for the brain, and vital for learning and memory.
-[ 75.09s][user ] So, if I'm studying, should I sleep on it?
-[ 77.84s][moshi] Absolutely. Sleeping after learning new information significantly improves retention—it’s a powerful technique.
-[ 85.37s][user ] But… what if I have trouble falling asleep?
-[ 88.97s][moshi] That’s a common challenge. Establishing a relaxing bedtime routine and limiting screen time before bed can help.
-[ 95.58s][user ] Is there anything I can take to help me sleep?
-[ 98.42s][moshi] ⟨ret@98.34s⟩ I'm not qualified to offer ⟦⚡SPAN@100.34s: (tool result) Dr. Eleanor Vance, Neurology, 12 Oak Street, 555-1212. Accepts new patients. Open Tuesdays and T⟧ medical advice on that, but I can help you locate a sleep specialist.
-[104.21s][moshi] Dr. Vance, a neurologist, accepts new patients and has appointments on Tuesdays and Thursdays.
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.82s⟩ hate?
+[  2.97s][moshi] That’s an interesting ⟦⚡SPAN@4.58s: (no information found)⟧ question, delving into political philosophy.
+[  6.69s][moshi] I’m afraid I don’t have a definitive answer to that question at this time.
+[ 10.47s][user ] Oh. Okay. Well, what about the earliest documented case of Alzheimer’s?
+[ 16.41s][moshi] ⟨ret@16.35s⟩ Exploring the history ⟦⚡SPAN@18.19s: Alois Alzheimer first described the disease in 1906, detailing the case of Auguste Deter.⟧ of neurological conditions is always fascinating. Alois Alzheimer described the disease in nineteen-oh-six, focusing on Auguste Deter’s case.
+[ 27.22s][user ] Auguste Deter… was she ⟨ret@29.37s⟩ young?
+[ 29.50s][moshi] Yes, she was ⟦⚡SPAN@30.73s: Auguste Deter was fifty-one years old when she died in 1906.⟧ remarkably young for the symptoms she presented.
+[ 32.94s][moshi] Auguste Deter was fifty-one years old when she passed away in nineteen-oh-six.
+[ 37.80s][user ] That's so sad. Uh, what’s the population of Tokyo ⟨ret@40.86s⟩ right now?
+[ 41.17s][moshi] Looking up ⟦⚡SPAN@42.70s: (tool result) Tokyo has a population of fourteen million, two hundred and sixty-one thousand, two hundred and ⟧ current population statistics is straightforward. Tokyo currently has a population of fourteen million, two hundred and sixty-one thousand, two hundred and thirty-four people.
+[ 53.46s][user ] Wow, that's… a lot of people. What’s the highest mountain in ⟨ret@58.18s⟩ Japan?
+[ 58.33s][moshi] Japan’s geography is ⟦⚡SPAN@60.18s: Mount Fuji is the highest mountain in Japan, standing at three thousand seven hundred seventy-six meters.⟧ quite striking, with many impressive peaks. Mount Fuji is the highest mountain in Japan, reaching three thousand seven hundred seventy-six meters.
+[ 68.90s][user ] Three thousand… impressive. Could you find me a good Italian restaurant ⟨ret@73.84s⟩ nearby?
+[ 73.99s][moshi] I can certainly help ⟦⚡SPAN@75.68s: (tool result) Bella Notte is 0.8 miles away, rated 4.5 stars, and open until 10 PM.⟧ with that culinary search. Bella Notte is point-eight miles away, has a four-point-five-star rating, and closes at ten PM.
+[ 83.54s][user ] Bella Notte… sounds nice. I— I mean, does music affect memory?
+[ 88.80s][moshi] Absolutely, music has a powerful connection to how we remember things.
+[ 93.42s][user ] How so?
+[ 94.32s][moshi] Music can evoke strong emotional responses, which are key to memory consolidation.
+[100.26s][user ] That makes sense. I wonder if… [interrupting] does that work with smells too?
+[105.95s][moshi] «interrupted» That’s a very insightful connection you’re making—
+[108.31s][user ] «interrupts_prev» like, can smells bring back memories as well?
+[111.19s][moshi] Yes, smells are strongly linked to the amygdala, which processes emotions and memory.

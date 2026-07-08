@@ -1,25 +1,35 @@
 # v3_hesit_18_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 이탈리아에 대해 읽다가 궁금한 게 생겼는데, 베수비오 화산은 마지막으로 언제 폭발했나요?
-     6.06s  <ret> 발화 (turn1 첫 프레임)
-     6.38s  agent 발화 시작: <ret> 그 지역을 방문하시는 분들이 자주 물어보시는 질문이에요. 베수비오 화산의 마지막 폭발은 천구백사십
-     6.44s  user  발화 끝
-     8.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: Mount Vesuvius last erupted in March 1944.
-    15.23s  agent 발화 끝
-    15.60s  user  발화 시작: 천구백사십사년… 와. 그 폭발이 폼페이처럼 규모가 컸나요?
-    22.23s  user  발화 끝
-    22.63s  agent 발화 시작: 다행히도 칠십구년에 폼페이를 묻어버린 폭발 규모만큼 크지는 않았습니다.
-    28.05s  agent 발화 끝
-    28.20s  user  발화 시작: 알겠습니다. 그럼 아직도 활화산이라는 거군요? 그러니까—
-    31.84s  agent 발화 시작: 아직 활화산으로 남아있고—
-    32.04s  user  발화 끝
-    33.11s  user  발화 시작: 혹시 곧 다시 폭발할 가능성이 있는지 알 수 있는 방법이 있을까요?
-    33.68s  agent 발화 끝
-    36.95s  user  발화 끝
-    37.09s  agent 발화 시작: 화산 활동을 감시하는 건 복잡한 과학이지만, 여러 가지 도구를 가지고 있습니다.
-    41.75s  <ret> 발화 (turn8 첫 프레임)
-    42.15s  agent 발화 시작: <ret> 잠시 현재 화산 활동 보고서를 확인해 볼게요. 현재 베수비오 화산은 황색 경보 단계이며, 가스 배
-    42.22s  agent 발화 끝
-    43.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.56s]: (tool result) Mount Vesuvius is currently at yellow alert level. Gas e
-    53.56s  agent 발화 끝
+     0.00s  user  발화 시작: 폼페이에 대해 읽다가… 음… 베수비오 화산이 마지막으로 폭발한 게 언제였는지 궁금해졌어요.
+     6.00s  <ret> 발화 (turn1 첫 프레임)
+     6.25s  user  발화 끝
+     6.32s  agent 발화 시작: <ret> 정말 자연스러운 질문이에요. 그 지역의 역사를 생각하면 당연히 궁금하실 것 같아요.
+     8.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: Mount Vesuvius last erupted in March of 1944.
+    12.25s  agent 발화 끝
+    12.26s  agent 발화 시작: 베수비오 화산의 마지막 폭발은 천구백사십사년 삼월에 일어났습니다.
+    16.84s  agent 발화 끝
+    18.02s  user  발화 시작: 천구백사십사년… 와. 그게 폼페이를 묻어버린 폭발만큼 컸나요?
+    24.18s  <ret> 발화 (turn4 첫 프레임)
+    24.36s  user  발화 끝
+    24.50s  agent 발화 시작: <ret> 다행히도 천구백사십사년 폭발은 칠십구년 폭발만큼 크지는 않았습니다.
+    25.14s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.32s]: The 1944 eruption was characterized by lava flows and Strombolian acti
+    29.79s  agent 발화 시작: 천구백사십사년 폭발은 주로 용암류와 스트롬볼리형 분출을 포함했습니다.
+    29.82s  agent 발화 끝
+    34.97s  agent 발화 끝
+    35.05s  user  발화 시작: 스트롬볼리형이 뭔데요? 그게—
+    38.14s  user  발화 끝
+    38.23s  agent 발화 시작: 스트롬볼리형 분출은 비교적 가벼운 폭발입니다.
+    40.84s  user  발화 시작: 그때 근처에 사는 사람들도 있었나요? 천구백사십사년에 화산 경사면에 사람들이 살고 있었는지 궁금해요.
+    41.47s  agent 발화 끝
+    48.31s  <ret> 발화 (turn9 첫 프레임)
+    48.40s  user  발화 끝
+    48.55s  agent 발화 시작: <ret> 영향을 이해하려면 중요한 세부 사항입니다.
+    49.51s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.05s]: Approximately three thousand people lived on the slopes of Vesuvius in
+    51.56s  agent 발화 시작: 천구백사십사년에 베수비오 화산 경사면에는 약 삼천 명이 살고 있었습니다.
+    51.59s  agent 발화 끝
+    56.84s  agent 발화 끝
+    57.58s  user  발화 시작: 삼천 명… 많네요. 그래서 대피했겠죠?
+    60.46s  agent 발화 시작: 네, 사건 전후에 상당한 대피가 있었습니다.
+    60.63s  user  발화 끝
+    63.18s  agent 발화 끝

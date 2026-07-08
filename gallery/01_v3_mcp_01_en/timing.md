@@ -2,60 +2,64 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.67s  user  발화 끝
-     4.81s  <ret> 발화 (turn1 첫 프레임)
-     4.88s  agent 발화 시작: <ret> Certainly, I can map the Apple website for you— That m
-     5.93s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.52s]: (tool result) The tavily-map tool found 123 pages on apple.com related
-    16.24s  agent 발화 끝
-    16.34s  user  발화 시작: Hmm, that's interesting. Can you focus the map specifically 
-    22.50s  <ret> 발화 (turn3 첫 프레임)
-    22.89s  agent 발화 시작: <ret> Of course, refining the search to the iPhone— The map 
-    23.10s  user  발화 끝
-    24.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.18s]: (tool result) The tavily-map tool found iPhone 15 Pro Max pages listin
-    34.81s  agent 발화 끝
-    35.04s  user  발화 시작: That’s a pretty wide range. What about the storage options?
-    38.29s  <ret> 발화 (turn5 첫 프레임)
-    38.69s  agent 발화 시작: <ret> Let’s see what the tool reveals about available— The i
-    38.74s  user  발화 끝
-    39.33s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.25s]: (tool result) The tavily-map tool found iPhone 15 Pro Max storage opti
-    50.05s  agent 발화 끝
-    50.37s  user  발화 시작: Okay, good. I’m planning a trip to New York, and I need to f
-    58.47s  <ret> 발화 (turn7 첫 프레임)
-    58.70s  agent 발화 시작: <ret> Finding an Apple Store with stock is certainly— The So
-    58.90s  user  발화 끝
-    60.07s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.16s]: (tool result) The Apple Store in SoHo, New York, shows 14 iPhone 15 Pr
-    70.81s  user  발화 시작: Is that the one on Broadway?
-    70.95s  agent 발화 끝
-    72.55s  user  발화 시작: Is that the one on Broadway?
-    72.60s  user  발화 끝
-    74.43s  agent 발화 시작: Yes, that is the Apple Store located on Broadway in SoHo, Ne
-    74.49s  user  발화 끝
-    79.09s  user  발화 시작: Right. And can you check if they offer in-store pickup?
-    79.10s  agent 발화 끝
-    82.67s  <ret> 발화 (turn12 첫 프레임)
-    82.70s  user  발화 끝
-    82.90s  agent 발화 시작: <ret> Checking for in-store pickup options now— In-store pic
-    83.95s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.25s]: (tool result) The Apple Store SoHo offers in-store pickup for iPhone 1
-    87.55s  user  발화 시작: Yeah.
-    88.00s  user  발화 끝
-    90.49s  user  발화 시작: Excellent. Go ahead and reserve one for pickup, under the na
-    90.78s  agent 발화 끝
-    95.09s  <ret> 발화 (turn15 첫 프레임)
-    95.16s  agent 발화 시작: <ret> Certainly, I will reserve one for you— Your reservatio
-    95.31s  user  발화 끝
-    96.29s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.84s]: (tool result) Reservation confirmed: David Osei, iPhone 15 Pro Max (25
-   109.35s  agent 발화 끝
-   109.55s  user  발화 시작: Perfect. Do they offer any trade-in programs for older iPhon
-   113.80s  user  발화 끝
-   114.03s  agent 발화 시작: Apple routinely offers trade-in programs, though the specifi
-   122.23s  agent 발화 끝
-   122.40s  user  발화 시작: I have an iPhone eleven. What’s the estimated trade-in value
-   126.15s  <ret> 발화 (turn19 첫 프레임)
-   126.47s  agent 발화 시작: <ret> Let me look up the current trade-in value for— Apple e
-   126.65s  user  발화 끝
-   127.59s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.18s]: (tool result) Apple estimates a trade-in value of $150 for an iPhone 1
-   136.72s  agent 발화 끝
-   137.04s  user  발화 시작: Not bad. Thanks for all your help, Professor.
-   139.62s  user  발화 끝
-   139.84s  agent 발화 시작: You are most welcome. It is always rewarding to assist in na
-   148.28s  agent 발화 끝
+     4.39s  user  발화 끝
+     4.53s  <ret> 발화 (turn1 첫 프레임)
+     4.61s  agent 발화 시작: <ret> Let’s begin by charting the digital landscape of Apple
+     5.81s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.61s]: (tool result) The map shows seventeen product categories on apple.com:
+    14.77s  agent 발화 끝
+    14.88s  user  발화 시작: Seventeen? That seems like a lot. Can you narrow that down t
+    21.00s  <ret> 발화 (turn3 첫 프레임)
+    21.40s  agent 발화 시작: <ret> Of course, we can refine the scope to focus solely on 
+    21.60s  user  발화 끝
+    23.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) The map shows five device categories on apple.com: iPhon
+    32.02s  agent 발화 끝
+    32.21s  user  발화 시작: Okay, good. Now, for the iPhone, what are the current models
+    37.92s  <ret> 발화 (turn5 첫 프레임)
+    38.31s  agent 발화 시작: <ret> Certainly, let me access the most current iPhone model
+    38.33s  user  발화 끝
+    39.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.09s]: (tool result) Apple currently offers the iPhone 15, iPhone 15 Plus, iP
+    48.94s  agent 발화 끝
+    49.16s  user  발화 시작: The Pro Max… how much does the base model of *that* cost?
+    53.00s  <ret> 발화 (turn7 첫 프레임)
+    53.24s  agent 발화 시작: <ret> Let’s determine the starting price for the iPhone 15 P
+    53.36s  user  발화 끝
+    55.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) The iPhone 15 Pro Max starts at $1,199 for the 256GB mod
+    65.56s  user  발화 시작: Wow, over eleven hundred dollars… [interrupting] Do they off
+    65.77s  agent 발화 끝
+    70.82s  agent 발화 시작: That is a considerable investment—
+    70.88s  user  발화 끝
+    72.15s  user  발화 시작: …I mean, if I trade in my old iPhone 11, what kind of credit
+    72.89s  agent 발화 끝
+    76.81s  <ret> 발화 (turn11 첫 프레임)
+    77.05s  agent 발화 시작: <ret> Ah, a very practical question. Let's investigate Apple
+    77.15s  user  발화 끝
+    78.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Apple currently offers up to $80 credit for an iPhone 11
+    83.34s  agent 발화 시작: You could receive up to eighty dollars in credit for your iP
+    83.40s  agent 발화 끝
+    88.30s  agent 발화 끝
+    89.05s  user  발화 시작: Eighty dollars? That's… not amazing. But okay.
+    93.21s  user  발화 끝
+    93.32s  agent 발화 시작: It’s often dependent on the phone’s condition and storage ca
+    97.84s  agent 발화 시작: Now, are you considering any specific storage options for a 
+    98.04s  agent 발화 끝
+   102.14s  agent 발화 끝
+   102.36s  user  발화 시작: I think I’d want at least five hundred gigabytes. What’s the
+   109.03s  <ret> 발화 (turn17 첫 프레임)
+   109.19s  agent 발화 시작: <ret> Let’s see the additional cost for upgrading to five hu
+   109.30s  user  발화 끝
+   111.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.91s]: (tool result) The iPhone 15 Pro Max with 512GB of storage costs $1,399
+   120.55s  agent 발화 끝
+   121.21s  user  발화 시작: So, another two hundred dollars. Hmm.
+   124.13s  agent 발화 시작: A significant increase, certainly. It’s a trade-off between 
+   124.31s  user  발화 끝
+   130.49s  agent 발화 끝
+   130.85s  user  발화 시작: Is there a way to get a student discount on any of this?
+   133.92s  <ret> 발화 (turn21 첫 프레임)
+   134.08s  agent 발화 시작: <ret> Let’s explore potential educational pricing options… A
+   134.18s  user  발화 끝
+   135.04s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.90s]: (tool result) Apple offers discounts on Macs and iPads for students an
+   143.23s  user  발화 시작: That’s disappointing.
+   143.26s  agent 발화 끝
+   144.79s  agent 발화 시작: Indeed, it appears iPhones are
+   144.83s  user  발화 끝
+   147.20s  agent 발화 끝

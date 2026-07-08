@@ -2,22 +2,24 @@ v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking… where did the phrase “big brother” actually come from?
-[  7.61s][moshi] That’s a fascinating question, one that touches on the power of language and social commentary.
-[ 13.15s][user ] …it’s just, it feels so ingrained now, you know?
-[ 16.83s][user ] …like, everyone understands the implication, but what’s the ⟨ret@21.03s⟩ origin?
-[ 21.19s][moshi] Let’s explore the ⟦⚡SPAN@23.03s: The term “Big Brother” originated in George Orwell’s dystopian novel *Nineteen Eighty-Four*, published in 1949⟧ literary roots of that phrase. “Big Brother” comes from Orwell’s *Nineteen Eighty-Four*, published in nineteen forty-nine.
-[ 31.01s][user ] Nineteen Eighty-Four, right. But was Orwell inspired by something specific when he came up with it?
-[ 37.13s][moshi] Orwell was drawing on his experiences and observations of totalitarian regimes.
-[ 42.84s][user ] I’ve heard something about the British aristocracy—
-[ 45.78s][moshi] ⟨ret@45.63s⟩ You’re ⟦⚡SPAN@46.67s: Orwell’s concept of Big Brother was influenced by the prevalence of posters during World War II featuring the ⟧ touching on a relevant historical context. Orwell’s “Big Brother” was influenced by wartime posters saying “Your Country Needs You.”
-[ 53.81s][user ] So, propaganda posters? That makes a lot of sense.
-[ 57.77s][moshi] Absolutely. The omnipresent imagery conveyed a sense of constant surveillance.
-[ 63.11s][user ] But did he actually *mean* it to be about the aristocracy…
-[ 67.53s][user ] …or is that just something people read into it later?
-[ 71.04s][moshi] That’s a perceptive question. It’s a matter of ongoing interpretation.
-[ 75.65s][moshi] ⟨ret@75.50s⟩ The symbolism is ⟦⚡SPAN@77.26s: Critics suggest the "Big Brother" figure also reflects Orwell's observations of Joseph Stalin’s cult of person⟧ certainly open to multiple readings. Some critics link “Big Brother” to Stalin’s cult of personality, and his constant presence in propaganda.
-[ 85.54s][user ] Stalin… okay, that fits the oppressive vibe of the book perfectly.
-[ 90.11s][moshi] Indeed. Orwell was deeply concerned with the dangers of unchecked power.
-[ 95.60s][user ] It's amazing how a single phrase can become so loaded with meaning, isn’t it?
-[100.68s][moshi] It speaks to the power of literature to shape our understanding of the world.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me ⟨ret@3.94s⟩ thinking…
+[  4.26s][moshi] That’s a ⟦⚡SPAN@5.46s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ very common reaction to powerful literature. The term “Big Brother” originates with George Orwell’s nineteen forty-nine novel, *Nineteen Eighty-Four*.
+[ 13.56s][user ] …but where did *he* get the idea?
+[ 15.99s][moshi] Orwell drew heavily from his experiences.
+[ 18.92s][user ] Experiences how? Was he in the secret police or something?
+[ 24.24s][moshi] ⟨ret@24.00s⟩ That’s ⟦⚡SPAN@25.12s: <Orwell fought with the POUM militia during the Spanish Civil War, witnessing firsthand the surveillance and p⟧ a fair question about his background. Orwell fought in the Spanish Civil War and observed totalitarian surveillance firsthand.
+[ 32.84s][user ] So it wasn’t just something he imagined?
+[ 35.47s][moshi] Certainly not; direct observation shaped his thinking.
+[ 39.20s][user ] That’s interesting. I always thought it was just a clever phrase.
+[ 43.19s][moshi] It’s a phrase with very deep roots, actually.
+[ 45.62s][user ] But the surveillance… was it like cameras everywhere, or—
+[ 50.29s][moshi] ⟨ret@50.21s⟩ ⟦⚡SPAN@50.93s: <The surveillance in *Nineteen Eighty-Four* is primarily achieved through telescreens, two-way televisions tha⟧ The methods were more subtle, and pervasive. The novel features “telescreens” – two-way televisions monitoring citizens.
+[ 58.11s][user ] But didn’t that kind of technology—
+[ 60.64s][moshi] «interrupted» It’s fascinating to consider how—
+[ 62.33s][user ] «interrupts_prev» …only really become a thing much later, with CCTV and everything?
+[ 66.90s][moshi] You raise a very important point about technological evolution.
+[ 71.17s][user ] Yeah, like…
+[ 72.55s][user ] …did Orwell predict the future, or…?
+[ 75.34s][moshi] He extrapolated from existing trends, quite brilliantly.
+[ 79.29s][user ] So he wasn’t necessarily *foreseeing* cameras, but…
+[ 83.09s][moshi] He recognized the potential for technology to enable control.

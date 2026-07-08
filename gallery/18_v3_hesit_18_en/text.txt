@@ -2,12 +2,16 @@ v3_hesit_18_en src=nq style=v1
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Uh, I was reading about Italy, and… when did Mount Vesuvius last ⟨ret@4.93s⟩ erupt?
-[  5.17s][moshi] That’s a common ⟦⚡SPAN@6.93s: Mount Vesuvius last erupted in March 1944.⟧ question for anyone visiting that region. The last eruption of Mount Vesuvius occurred in March of nineteen forty-four.
-[ 16.28s][user ] Nineteen forty-four… wow. Was that a big eruption, like Pompeii?
-[ 21.89s][moshi] It wasn't on the scale of the seventy-nine eruption that buried Pompeii, thankfully.
-[ 28.10s][user ] Right. So, it's still active then? I mean—
-[ 31.43s][moshi] «interrupted» It remains an active volcano, and—
-[ 33.83s][user ] «interrupts_prev» Is there any way to tell if it’s going to erupt again soon?
-[ 37.87s][moshi] Monitoring volcanic activity is a complex science, but we have several tools.
-[ 44.19s][moshi] ⟨ret@44.03s⟩ Let me quickly ⟦⚡SPAN@46.03s: (tool result) Mount Vesuvius is currently at yellow alert level. Gas emissions are elevated. Seismic activity ⟧ check current volcanic activity reports. Currently, Vesuvius is at a yellow alert level, with elevated gas emissions and stable seismic activity.
+[  0.00s][user ] I was just reading about Pompeii and… uh… it made me wonder, when was the last time Vesuvius actually ⟨ret@6.16s⟩ erupted?
+[  6.40s][moshi] That’s a very natural ⟦⚡SPAN@8.16s: Mount Vesuvius last erupted in March of 1944.⟧ question after considering the history of that region.
+[ 11.32s][moshi] The last eruption of Mount Vesuvius occurred in March nineteen forty-four.
+[ 16.63s][user ] Nineteen forty-four… wow. Was that a big one, like… like the one that buried ⟨ret@21.76s⟩ Pompeii?
+[ 21.99s][moshi] It wasn't ⟦⚡SPAN@23.20s: The 1944 eruption was characterized by lava flows and Strombolian activity.⟧ on the scale of the seventy-nine eruption, thankfully.
+[ 26.20s][moshi] The nineteen forty-four eruption primarily involved lava flows and Strombolian bursts.
+[ 33.91s][user ] Strombolian… what does that even mean? Is that—
+[ 37.85s][moshi] «interrupted» Strombolian eruptions are relatively mild explosions—
+[ 41.72s][user ] «interrupts_prev» But did anyone live near it then? Like, were people still living on the slopes in nineteen forty-four?
+[ 47.01s][moshi] ⟨ret@46.77s⟩ That’s ⟦⚡SPAN@47.81s: Approximately three thousand people lived on the slopes of Vesuvius in 1944.⟧ a crucial detail to understand the impact.
+[ 50.21s][moshi] Around three thousand people resided on the slopes of Vesuvius in nineteen forty-four.
+[ 57.27s][user ] Three thousand… that’s… a lot. So they must have evacuated?
+[ 62.60s][moshi] Yes, there was a significant evacuation prior to and during the event.

@@ -2,12 +2,15 @@ v3_mcp_00_en src=mcp style=v1
 SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@2.97s⟩ Paris?
-[  3.21s][moshi] Certainly, ⟦⚡SPAN@3.93s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ locating landmarks is something I often do… The Eiffel Tower's coordinates are forty-eight point eight five eight four degrees north, two point two nine four five degrees east.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.20s⟩ Paris?
+[  3.44s][moshi] Certainly, ⟦⚡SPAN@4.16s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ locating landmarks is a familiar task. The Eiffel Tower’s coordinates are forty-eight point eight five eight four latitude, and two point two nine four five longitude.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 14.65s][user ] Okay, and can you find me hotels near ⟨ret@17.68s⟩ those coordinates?
-[ 18.08s][moshi] Of course, finding a ⟦⚡SPAN@19.68s: (tool result) Hotel Plaza Athénée is 0.7 miles away, priced at $1,500 per night. Hotel Raphael is 1.1 miles aw⟧ place to stay nearby is a good idea. I found two hotels: Hotel Plaza Athénée, at one thousand five hundred dollars, and Hotel Raphael, at four hundred dollars.
-      CALL: {"function": "hotels_search", "arguments": {"latitude": "48.8584", "longitude": "2.2945"}}
-[ 29.37s][user ] That Plaza Athénée sounds nice—can you book me a room there for ⟨ret@33.65s⟩ tonight?
-[ 33.97s][moshi] A lovely ⟦⚡SPAN@35.01s: (tool result) Your reservation at Hotel Plaza Athénée is confirmed for tonight, order number is 7892345.⟧ choice, let’s secure that for you right away…
-      CALL: {"function": "hotels_book", "arguments": {"hotel_name": "Hotel Plaza Athénée", "date": "tonight"}}
+[ 14.94s][user ] And what about the Empire State Building in ⟨ret@17.47s⟩ New York?
+[ 17.87s][moshi] Comparing famous structures ⟦⚡SPAN@19.47s: (tool result) The Empire State Building is located at latitude 40.7484, longitude 73.9857.⟧ is always interesting. The Empire State Building’s coordinates are forty point seven four eight four latitude, and seventy-three point nine eight five seven longitude.
+      CALL: {"function": "maps_geo", "arguments": {"location": "Empire State Building, New York"}}
+[ 29.71s][user ] Could you tell me the distance between them?
+[ 32.11s][moshi] «interrupted» That’s a good question—
+[ 33.51s][moshi] ⟨ret@33.35s⟩ The distance between the ⟦⚡SPAN@35.35s: (tool result) The distance between the Eiffel Tower and the Empire State Building is 3948 miles.⟧ two landmarks is three thousand nine hundred forty-eight miles.
+      CALL: {"function": "maps_distance", "arguments": {"origin": "48.8584, 2.2945", "destination": "40.7484, 73.9857"}}
+[ 38.85s][user ] Wow, that's far. Thanks!
+[ 41.47s][moshi] It certainly

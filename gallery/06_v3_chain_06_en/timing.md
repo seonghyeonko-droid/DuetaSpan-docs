@@ -2,26 +2,24 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.43s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> Let’s adjust your browser settings— Excellent, I have 
-     4.72s  user  발화 끝
-     5.47s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.22s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
-    11.18s  agent 발화 끝
-    11.66s  user  발화 시작: And now, could you check if that change was detected on exam
-    15.39s  <ret> 발화 (turn3 첫 프레임)
-    15.54s  agent 발화 시작: <ret> Certainly, let’s verify that update— It appears exampl
-    15.78s  user  발화 끝
-    16.43s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.19s]: (tool result) The reported user agent on example.com is MyCustomBrowse
-    23.00s  agent 발화 끝
-    23.02s  user  발화 시작: Oh, good. Um, could you find me reviews for a bakery near me
-    26.72s  user  발화 끝
-    26.86s  agent 발화 시작: [interrupting] …that specializes in croissants?
-    29.74s  <ret> 발화 (turn6 첫 프레임)
-    30.06s  agent 발화 시작: <ret> I can certainly locate bakeries— Le Petit Croissant is
-    30.10s  agent 발화 끝
-    30.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.15s]: (tool result) Le Petit Croissant is 0.7 miles away with 4.8 stars from
-    38.55s  user  발화 시작: Oh, that sounds lovely. Could you reserve a table for two th
-    38.64s  agent 발화 끝
-    43.60s  user  발화 끝
-    44.06s  agent 발화 시작: Let’s
-    44.50s  agent 발화 끝
+     4.25s  <ret> 발화 (turn1 첫 프레임)
+     4.33s  agent 발화 시작: <ret> Let's adjust your browser settings— Your browser’s use
+     4.49s  user  발화 끝
+     5.29s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.19s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
+    12.21s  agent 발화 끝
+    12.68s  user  발화 시작: Uh, can you check if that worked, by visiting whatismyuserag
+    17.32s  <ret> 발화 (turn3 첫 프레임)
+    17.48s  agent 발화 시작: <ret> Of course, I can verify that change— The website confi
+    17.67s  user  발화 끝
+    18.84s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.03s]: (tool result) The page reports the user agent as MyCustomBrowser versi
+    27.44s  agent 발화 끝
+    27.47s  user  발화 시작: Right. Good. Now, could you search for recipes using blackbe
+    31.96s  <ret> 발화 (turn5 첫 프레임)
+    32.04s  agent 발화 시작: <ret> A delightful combination, let’s find some recipes— I f
+    32.15s  user  발화 끝
+    33.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) Search found three results: “Blackberry Lavender Scones”
+    41.47s  user  발화 시작: Ooh, the scones sound lovely! Can you pull up the full recip
+    41.55s  agent 발화 끝
+    45.59s  agent 발화 시작: Certainly, let's get those scone details
+    45.63s  user  발화 끝
+    48.64s  agent 발화 끝

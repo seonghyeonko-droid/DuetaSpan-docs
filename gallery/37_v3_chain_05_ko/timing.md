@@ -1,77 +1,75 @@
 # v3_chain_05_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 저희 Zuni Cafe 가격대는 어떻게 되나요?
-     1.85s  <ret> 발화 (turn1 첫 프레임)
-     2.24s  agent 발화 시작: <ret> 네, 그 유명한 식당에 대한 정보를 빠르게 확인해 볼게요… Zuni Cafe의 요리는 보통 삼십 
-     2.40s  user  발화 끝
-     3.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: (tool result) Zuni Cafe's price range is $$$ which means dishes cost b
-    10.44s  agent 발화 끝
-    10.54s  user  발화 시작: 알겠습니다, 좋네요. 지금은 영업하고 있나요?
-    13.00s  <ret> 발화 (turn3 첫 프레임)
-    13.07s  agent 발화 시작: <ret> 네, 영업시간을 확인해 드릴 수 있습니다… Zuni Cafe는 지금 열려 있고 오늘 저녁 열 시에
-    13.26s  user  발화 끝
-    15.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.06s]: (tool result) Zuni Cafe is currently open and closes at ten PM tonight
-    19.43s  user  발화 시작: 완벽하네요. 저녁 일곱 시 반에 두 명 예약해 주시겠어요?
-    19.57s  agent 발화 끝
-    22.47s  <ret> 발화 (turn5 첫 프레임)
-    22.87s  agent 발화 시작: <ret> 그 시간에 자리가 있는지 확인해 보겠습니다… Zuni Cafe에 두 분 자리가 일곱 시 반에 예약
-    22.99s  user  발화 끝
-    24.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.61s]: (tool result) Reservation confirmed at Zuni Cafe for two people at sev
-    31.17s  agent 발화 끝
-    31.47s  user  발화 시작: 잘 됐네요! 주소는 다시 한번 알려주시겠어요?
-    34.18s  <ret> 발화 (turn7 첫 프레임)
-    34.25s  agent 발화 시작: <ret> 전에 말씀드렸던 것 같은데, 다시 한번 Zuni Cafe의 주소를 말씀드릴게요… Zuni Cafe
-    34.42s  user  발화 끝
-    35.14s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.72s]: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisc
-    44.08s  agent 발화 끝
-    44.86s  user  발화 시작: 알겠습니다. 그리고 페리 빌딩에서 얼마나 떨어져 있나요?
-    47.63s  <ret> 발화 (turn9 첫 프레임)
-    47.87s  agent 발화 시작: <ret> 거리를 계산하고 이동 시간을 알려 드릴 수 있습니다… 페리 빌딩에서 Zuni Cafe까지는 일 점
-    47.91s  user  발화 끝
-    49.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.97s]: (tool result) The distance from the Ferry Building to Zuni Cafe is one
-    57.57s  agent 발화 끝
-    58.37s  user  발화 시작: 삼십오 분이나요? 그건—
-    59.95s  user  발화 시작: 대중교통이 더 빠를까요?
-    60.16s  user  발화 끝
-    61.04s  <ret> 발화 (turn12 첫 프레임)
-    61.36s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 대중교통이 더 빠를 수 있습니다… 대중교통을 이용하면 Zuni Cafe까지
-    61.56s  user  발화 끝
-    63.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: (tool result) Public transit from the Ferry Building to Zuni Cafe take
-    69.93s  agent 발화 끝
-    69.97s  user  발화 시작: 알겠습니다, 훌륭하네요. 어떤 버스를 타야 하나요?
-    72.97s  <ret> 발화 (turn14 첫 프레임)
-    73.13s  agent 발화 시작: <ret> 구체적인 대중교통 노선을 찾아 드릴게요… N Judah 노선을 타고 Church Street 방향
-    73.20s  user  발화 끝
-    74.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.61s]: (tool result) Take the N Judah Muni Metro line inbound to the Church S
-    81.89s  agent 발화 끝
-    82.36s  user  발화 시작: N Judah… 알겠습니다. Zuni 근처에 다른 재미있는 곳은 없나요?
-    86.34s  agent 발화 시작: 사실 그 동네에는 탐험할 곳이 많아요. 아주 활기찬 지역입니다.
-    86.39s  user  발화 끝
-    90.41s  agent 발화 끝
-    91.13s  user  발화 시작: 무엇이요? 특히 식당 같은 곳이 있을까요?
-    93.39s  <ret> 발화 (turn18 첫 프레임)
-    93.69s  agent 발화 시작: <ret> 네, 근처 식당을 찾아 드릴 수 있습니다… Souvla, Brenda’s, 그리고 Nopa가 모두
-    93.85s  user  발화 끝
-    95.07s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.25s]: (tool result) Nearby restaurants include Souvla, Brenda’s French Soul 
-   101.57s  user  발화 시작: Brenda’s French Soul Food가 맛있겠네요. 가격대는 어떻게 되나요?
-   101.58s  agent 발화 끝
-   105.01s  <ret> 발화 (turn20 첫 프레임)
-   105.15s  agent 발화 시작: <ret> 가격이 어떤지 한번 알아볼게요… Brenda’s의 요리는 보통 이십 달러에서 사십 달러 정도입니다
-   105.41s  user  발화 끝
-   106.93s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.35s]: (tool result) Brenda’s French Soul Food has a price range of $$ which 
-   110.85s  user  발화 시작: 알겠습니다. 지금도 영업하고 있나요?
-   110.89s  agent 발화 끝
-   112.62s  <ret> 발화 (turn22 첫 프레임)
-   113.02s  agent 발화 시작: <ret> Brenda’s의 현재 영업시간을 빠르게 확인해 드릴 수 있습니다… Brenda’s는 지금 열려 
-   113.25s  user  발화 끝
-   114.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.87s]: (tool result) Brenda’s French Soul Food is currently open and closes a
-   120.34s  agent 발화 끝
-   120.56s  user  발화 시작: 오후 세 시요? 너무 이르네요. 괜찮아요, 신경 쓰지 마세요.
-   124.38s  agent 발화 시작: 그렇군요. 다음에 또 기회가 있겠네요. 브런치로 인기가 많은 곳이기도 합니다.
-   124.39s  user  발화 끝
-   128.94s  user  발화 시작: 네, 아마도요. 정말 많은 도움을 주셔서 감사합니다!
-   129.10s  agent 발화 끝
-   132.08s  agent 발화 시작: 천만에요.
-   132.12s  user  발화 끝
-   133.09s  agent 발화 끝
+     0.00s  user  발화 시작: 주니 카페 가격대는 어떻게 돼요?
+     1.66s  <ret> 발화 (turn1 첫 프레임)
+     2.06s  agent 발화 시작: <ret> 네, 빠르게 가격 정보를 확인해 볼게요. 주니 카페는 1인당 이십 달러에서 삼십 달러 사이로, 가
+     2.21s  user  발화 끝
+     3.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) Zuni Cafe's price range is dollar signs two to three.
+     9.88s  agent 발화 끝
+     9.96s  user  발화 시작: 알겠습니다, 좋네요. 혹시 지금 영업하고 있나요?
+    12.50s  <ret> 발화 (turn3 첫 프레임)
+    12.82s  agent 발화 시작: <ret> 네, 영업시간을 확인해 드릴 수 있어요. 주니 카페는 오늘 저녁 열 시까지 영업하고 있습니다.
+    13.01s  user  발화 끝
+    14.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) Zuni Cafe is currently open until ten PM.
+    19.26s  user  발화 시작: 잘 됐네요. 혹시 예약도 가능한가요?
+    19.31s  agent 발화 끝
+    21.58s  agent 발화 시작: 예약 가능 여부를 확인해 드리는 건—
+    21.61s  user  발화 끝
+    23.12s  user  발화 시작: 야외 좌석도 있나요?
+    23.89s  agent 발화 끝
+    24.43s  agent 발화 시작: 네, 주니 카페는 야외 좌석도 마련되어 있습니다.
+    24.55s  user  발화 끝
+    27.99s  agent 발화 끝
+    28.76s  user  발화 시작: 좋아요. 그럼, 두 명으로 저녁 일곱 시 반에 예약해 주세요.
+    32.22s  <ret> 발화 (turn9 첫 프레임)
+    32.61s  agent 발화 시작: <ret> 예약해 드리겠습니다. 주니 카페에 두 명으로 일곱 시 반에 예약이 확정되었습니다.
+    32.65s  user  발화 끝
+    34.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.71s]: (tool result) Reservation confirmed for two people at Zuni Cafe at sev
+    37.80s  agent 발화 끝
+    38.59s  user  발화 시작: 정말 다행이에요! 주소는 다시 한번 알려주시겠어요?
+    41.76s  <ret> 발화 (turn11 첫 프레임)
+    41.83s  agent 발화 시작: <ret> 네, 빠르게 주소 정보를 찾아 드릴게요. 주소는 샌프란시스코 마켓 스트리트 천육백오십팔 번지입니다
+    41.92s  user  발화 끝
+    43.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.66s]: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisc
+    48.83s  agent 발화 끝
+    49.32s  user  발화 시작: 주차는 어디에 할 수 있나요?
+    50.63s  <ret> 발화 (turn13 첫 프레임)
+    50.95s  agent 발화 시작: <ret> 카페 주변 주차 옵션을 알아볼게요. 도보로 가까운 곳에 있는 피프스 스트리트 주차장에 유료 주차장
+    51.02s  user  발화 끝
+    52.55s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.48s]: (tool result) There is paid parking available at the Fifth Street Gara
+    58.32s  user  발화 시작: 거기 주차는 시간당 얼마예요?
+    58.41s  agent 발화 끝
+    60.10s  <ret> 발화 (turn15 첫 프레임)
+    60.25s  agent 발화 시작: <ret> 시간당 주차 요금을 확인해 드릴 수 있어요. 피프스 스트리트 주차장은 시간당 팔 달러입니다.
+    60.43s  user  발화 끝
+    62.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: (tool result) The Fifth Street Garage charges eight dollars per hour.
+    66.15s  user  발화 시작: 음, 알겠습니다. 대중교통은 어때요?
+    66.27s  agent 발화 끝
+    68.14s  <ret> 발화 (turn17 첫 프레임)
+    68.29s  agent 발화 시작: <ret> 주변 대중교통 옵션을 확인해 볼게요. 마켓 스트리트 역이 매우 가깝고, 여러 개의 무니 노선이 지
+    68.55s  user  발화 끝
+    69.74s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.80s]: (tool result) The Market Street station is one block away, with multip
+    75.42s  agent 발화 끝
+    75.44s  user  발화 시작: 어떤 무니 노선이 지나가나요?
+    77.05s  <ret> 발화 (turn19 첫 프레임)
+    77.20s  agent 발화 시작: <ret> 네, 해당 역을 운행하는 노선을 정확히 알려 드릴게요. 케이, 티, 엘, 엠, 엔 노선이 모두 마
+    77.33s  user  발화 끝
+    77.93s  ⚡SPAN 주입 [d'=0.88s / d_lead=4.22s]: (tool result) Muni lines K, T, L, M, and N all stop at Market Street s
+    85.22s  agent 발화 끝
+    86.03s  user  발화 시작: 역에서 카페까지 걸어서 얼마나 걸려요?
+    87.85s  <ret> 발화 (turn21 첫 프레임)
+    88.17s  agent 발화 시작: <ret> 네, 역에서 카페까지의 도보 거리를 찾아 드릴게요. 역에서 카페까지는 약 삼 분 정도 걸립니다.
+    88.43s  user  발화 끝
+    89.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) The walk from Market Street station to Zuni Cafe is appr
+    94.45s  user  발화 시작: 알겠습니다. 저녁 일곱 시 십오분에 출발하라고 알림을 설정해 줄 수 있나요?
+    94.66s  agent 발화 끝
+    98.62s  <ret> 발화 (turn23 첫 프레임)
+    98.77s  agent 발화 시작: <ret> 출발 알림을 설정해 드릴게요. 예약 시간에 맞춰 저녁 일곱 시 십오분에 출발하라는 알림이 설정되었
+    98.85s  user  발화 끝
+   100.06s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.77s]: (tool result) Reminder set for seven fifteen PM: Leave for Zuni Cafe.
+   105.92s  user  발화 시작: 정말 감사합니다!
+   106.18s  agent 발화 끝
+   107.33s  agent 발화 시작: 도움이 되어 기쁩니다. 주니 카페에서 즐거운 시간 보내시길 바랍니다.
+   107.34s  user  발화 끝
+   112.15s  agent 발화 끝

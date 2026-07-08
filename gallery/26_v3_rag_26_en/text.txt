@@ -2,12 +2,12 @@ v3_rag_26_en src=nq style=v3
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just looking at flags, and it’s funny how many have red in them. Uh, do you know which country has a flag that’s black, red, and yellow?
-[  7.66s][moshi] That's a very astute observation about the prevalence of red; it often symbolizes courage, you know.
-[ 13.82s][moshi] ⟨ret@13.62s⟩ Let’s see if I ⟦⚡SPAN@15.62s: The flag of Germany is a tricolor featuring black, red, and gold horizontal bands.⟧ can recall that particular tricolor… The flag of Germany features black, red, and gold horizontal bands, as a matter of fact.
-[ 24.15s][user ] Oh, Germany, right. I always get those European flags mixed up. Mm-hmm.
-[ 28.39s][moshi] It’s understandable, the histories are often quite intertwined, particularly in that region.
-[ 34.25s][moshi] ⟨ret@33.93s⟩ I’m rather familiar ⟦⚡SPAN@35.77s: The flag of the Kingdom of Dahomey featured a central stripe of red flanked by yellow and green.⟧ with flags that carried significance in trade… The flag of the Kingdom of Dahomey had a red central stripe, bordered by yellow and green.
-[ 44.70s][user ] Dahomey… isn't that in modern-day Benin? I— I mean, I think I read that somewhere.
-[ 49.73s][moshi] Precisely. It flourished as a major power from the 17th century until its conquest by France in 1894.
-[ 56.98s][moshi] ⟨ret@56.60s⟩ Thinking of colors ⟦⚡SPAN@58.60s: The Asante Empire used flags with gold symbols on a black background to signify royal authority.⟧ and trade, the symbolism is often quite deliberate… Flags of the Asante Empire used gold symbols on black backgrounds, signifying royal authority.
+[  0.00s][user ] I was just looking at flags, and it struck me—are there any flags that use black, red, and yellow?
+[  5.02s][moshi] That's an interesting observation about color symbolism in flags.
+[  9.41s][moshi] ⟨ret@9.19s⟩ Let us consider ⟦⚡SPAN@11.19s: The flag of Germany features horizontal bands of black, red, and gold—yellow being a shade of gold.⟧ flags with those specific hues. Germany’s flag prominently displays black, red, and a shade of yellow, specifically gold.
+[ 19.29s][user ] Oh, right, Germany. I always forget which colors are on that one.
+[ 22.45s][moshi] Many nations draw inspiration from historical banners, you know.
+[ 26.33s][moshi] ⟨ret@26.02s⟩ Thinking about ⟦⚡SPAN@27.86s: The flag of Ghana incorporates red, yellow, and green, representing the country’s mineral wealth and forests.⟧ West African examples is quite relevant. Ghana's flag features red and yellow alongside green, symbolizing its natural resources.
+[ 36.57s][user ] That’s beautiful. Were there trade routes that might have influenced those color choices, do you think?
+[ 41.58s][moshi] It’s certainly plausible that trade influenced symbolic choices—cultural exchange is common.
+[ 47.56s][moshi] ⟨ret@47.25s⟩ Considering the ⟦⚡SPAN@48.85s: The Oyo Empire traded with Europeans, exchanging goods like ivory and slaves for textiles and manufactured ite⟧ historical trade networks is crucial here. The Oyo Empire engaged in trade, exchanging goods for textiles and manufactured items.

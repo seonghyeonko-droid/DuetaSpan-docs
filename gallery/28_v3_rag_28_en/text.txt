@@ -2,12 +2,12 @@ v3_rag_28_en src=nq style=v2
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading about government agencies, and I’m curious… when was the Department of Veterans Affairs actually ⟨ret@7.11s⟩ created?
-[  7.42s][moshi] That’s ⟦⚡SPAN@8.15s: The Department of Veterans Affairs was established on July 21, 1930, under President Herbert Hoover.⟧ an interesting question, tracing the history of support— The Department of Veterans Affairs was established on July twenty-first, nineteen thirty, under President Hoover.
-[ 17.99s][user ] Nineteen thirty? That seems… relatively recent, doesn’t it? I thought veterans’ support went back much further than that.
-[ 26.59s][moshi] It does feel recent, considering the long history of soldiers needing care, but the structure evolved over time.
-[ 33.65s][user ] But what did they *do* before nineteen thirty? I— I mean, how were veterans helped before there was a ⟨ret@39.85s⟩ whole department?
-[ 40.24s][moshi] Before the ⟦⚡SPAN@41.45s: Prior to 1930, the Veterans Bureau, created in 1921, handled most veterans’ affairs and benefits.⟧ department’s formal creation, support was— Prior to nineteen thirty, the Veterans Bureau, created in nineteen twenty-one, handled most veterans’ affairs and benefits.
-[ 50.95s][user ] So, the Veterans Bureau *wasn’t* the same thing as the Department of Veterans Affairs then?
-[ 56.56s][moshi] «interrupted» No, it wasn’t—
-[ 57.86s][moshi] ⟨ret@57.47s⟩ The Veterans Bureau ⟦⚡SPAN@59.47s: The Veterans Bureau was a predecessor agency, later expanded and reorganized into the Department of Veterans A⟧ was a predecessor agency, later expanded and reorganized into the Department in nineteen thirty.
+[  0.00s][user ] So, I was reading about government agencies, and I wondered—when exactly was the Department of Veterans Affairs established?
+[  6.92s][moshi] That’s a good question, tracing the history of support for those who’ve served is quite important.
+[ 11.72s][moshi] ⟨ret@11.33s⟩ Let ⟦⚡SPAN@12.61s: The United States Department of Veterans Affairs was established on July 21, 1930, by executive order.⟧ me share some historical context— The Department of Veterans Affairs was established on July twenty-first, nineteen thirty, by executive order.
+[ 20.36s][user ] Nineteen thirty? That seems…relatively recent, doesn’t it? Weren’t there programs for veterans before that?
+[ 27.63s][moshi] Indeed, there were earlier iterations, though not formally under that specific departmental structure.
+[ 33.42s][moshi] ⟨ret@33.03s⟩ Before the ⟦⚡SPAN@34.39s: Prior to 1930, veteran benefits were administered by the Bureau of War Risk Insurance and the Veterans Bureau.⟧ Department, support was handled differently— Before nineteen thirty, veteran benefits were administered by the Bureau of War Risk Insurance and the Veterans Bureau.
+[ 44.12s][user ] But what about after the Civil War? Surely there was *something* then—
+[ 47.88s][moshi] «interrupted» —yes, absolutely—
+[ 48.93s][user ] «interrupts_prev» So, what kind of aid did veterans get immediately after the Civil War?

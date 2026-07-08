@@ -3,24 +3,33 @@ SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade em
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.88s][moshi] ⟨ret@4.81s⟩ Certainly, I ⟦⚡SPAN@5.93s: (tool result) The tavily-map tool found 123 pages on apple.com related to products, with “iPhone 15” being the⟧ can map the Apple website for you— That mapping reveals one hundred and twenty-three product-related pages on Apple’s site, with the iPhone fifteen receiving the most links.
-[ 16.34s][user ] Hmm, that's interesting. Can you focus the map specifically on the iPhone fifteen Pro Max, and tell me ⟨ret@22.50s⟩ its price?
-[ 22.89s][moshi] Of course, refining ⟦⚡SPAN@24.50s: (tool result) The tavily-map tool found iPhone 15 Pro Max pages listing prices from $1199 to $1599, depending ⟧ the search to the iPhone— The map shows the iPhone fifteen Pro Max priced between eleven hundred ninety-nine and fifteen hundred ninety-nine dollars, varying with storage capacity.
-[ 35.04s][user ] That’s a pretty wide range. What about the storage ⟨ret@38.29s⟩ options?
-[ 38.69s][moshi] Let’s ⟦⚡SPAN@39.33s: (tool result) The tavily-map tool found iPhone 15 Pro Max storage options of 256GB, 512GB, and 1TB.⟧ see what the tool reveals about available— The iPhone fifteen Pro Max is listed with storage options of two hundred fifty-six, five hundred twelve, and one terabyte.
-[ 50.37s][user ] Okay, good. I’m planning a trip to New York, and I need to find an Apple Store that has the two hundred fifty-six gigabyte model in ⟨ret@58.47s⟩ stock.
-[ 58.70s][moshi] Finding an Apple ⟦⚡SPAN@60.07s: (tool result) The Apple Store in SoHo, New York, shows 14 iPhone 15 Pro Max (256GB) in stock as of 10:17 AM ES⟧ Store with stock is certainly— The SoHo Apple Store in New York currently has fourteen iPhone fifteen Pro Max models with two hundred fifty-six gigabytes of storage available.
-[ 70.81s][user ] Is that the one on Broadway?
-[ 72.55s][user ] Is that the one on Broadway?
-[ 74.43s][moshi] Yes, that is the Apple Store located on Broadway in SoHo, New York.
-[ 79.09s][user ] Right. And can you check if they offer in-store pickup?
-[ 82.90s][moshi] ⟨ret@82.67s⟩ Checking for ⟦⚡SPAN@83.95s: (tool result) The Apple Store SoHo offers in-store pickup for iPhone 15 Pro Max (256GB), available within two ⟧ in-store pickup options now— In-store pickup is available at the SoHo location for that model, with a two-hour turnaround.
-[ 87.55s][user ] «backchannel» Yeah.
-[ 90.49s][user ] Excellent. Go ahead and reserve one for pickup, under the name David Osei.
-[ 95.16s][moshi] ⟨ret@95.09s⟩ Certainly, I ⟦⚡SPAN@96.29s: (tool result) Reservation confirmed: David Osei, iPhone 15 Pro Max (256GB), SoHo Apple Store, pickup by 12:17 ⟧ will reserve one for you— Your reservation is confirmed, David Osei, for an iPhone fifteen Pro Max with two hundred fifty-six gigabytes at the SoHo store, ready by twelve seventeen PM Eastern Time.
-[109.55s][user ] Perfect. Do they offer any trade-in programs for older iPhones?
-[114.03s][moshi] Apple routinely offers trade-in programs, though the specific value varies greatly depending on the model and condition of your current iPhone.
-[122.40s][user ] I have an iPhone eleven. What’s the estimated trade-in ⟨ret@126.15s⟩ value?
-[126.47s][moshi] Let me ⟦⚡SPAN@127.59s: (tool result) Apple estimates a trade-in value of $150 for an iPhone 11 in good condition.⟧ look up the current trade-in value for— Apple estimates a trade-in value of one hundred and fifty dollars for your iPhone eleven, assuming it’s in good condition.
-[137.04s][user ] Not bad. Thanks for all your help, Professor.
-[139.84s][moshi] You are most welcome. It is always rewarding to assist in navigating the modern marketplace, much like the trade routes of old West Africa.
+[  4.61s][moshi] ⟨ret@4.53s⟩ Let’s begin ⟦⚡SPAN@5.81s: (tool result) The map shows seventeen product categories on apple.com: iPhone, iPad, Mac, Apple Watch, AirPods⟧ by charting the digital landscape of Apple’s offerings… Apple’s site organizes products into seventeen distinct categories, as the map indicates.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
+[ 14.88s][user ] Seventeen? That seems like a lot. Can you narrow that down to just the devices — the things you ⟨ret@21.00s⟩ actually *hold*?
+[ 21.40s][moshi] Of course, we ⟦⚡SPAN@23.00s: (tool result) The map shows five device categories on apple.com: iPhone, iPad, Mac, Apple Watch, and AirPods.⟧ can refine the scope to focus solely on the physical devices… The map details five device categories: iPhone, iPad, Mac, Apple Watch, and AirPods.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "iPhone, iPad, Mac, Apple Watch, AirPods"}}
+[ 32.21s][user ] Okay, good. Now, for the iPhone, what are the current models available directly from ⟨ret@37.92s⟩ Apple?
+[ 38.31s][moshi] Certainly, let me ⟦⚡SPAN@39.92s: (tool result) Apple currently offers the iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max.⟧ access the most current iPhone model information… Apple currently lists the iPhone 15, 15 Plus, 15 Pro, and 15 Pro Max for sale.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone/", "focus": "models"}}
+[ 49.16s][user ] The Pro Max… how much does the base model of *that* ⟨ret@53.00s⟩ cost?
+[ 53.24s][moshi] Let’s determine the ⟦⚡SPAN@55.00s: (tool result) The iPhone 15 Pro Max starts at $1,199 for the 256GB model.⟧ starting price for the iPhone 15 Pro Max… The base iPhone 15 Pro Max, with two hundred fifty-six gigabytes of storage, costs one thousand one hundred ninety-nine dollars.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone-15-pro/", "focus": "price"}}
+[ 65.56s][user ] Wow, over eleven hundred dollars… [interrupting] Do they offer any trade-in programs?
+[ 70.82s][moshi] «interrupted» That is a considerable investment—
+[ 72.15s][user ] «interrupts_prev» …I mean, if I trade in my old iPhone 11, what kind of credit could I ⟨ret@76.81s⟩ get?
+[ 77.05s][moshi] Ah, a very ⟦⚡SPAN@78.81s: (tool result) Apple currently offers up to $80 credit for an iPhone 11 in good condition.⟧ practical question. Let's investigate Apple’s trade-in values for an iPhone 11.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/tradein/", "device": "iPhone 11"}}
+[ 83.34s][moshi] You could receive up to eighty dollars in credit for your iPhone 11, depending on its condition.
+[ 89.05s][user ] Eighty dollars? That's… not amazing. But okay.
+[ 93.32s][moshi] It’s often dependent on the phone’s condition and storage capacity, naturally.
+[ 97.84s][moshi] Now, are you considering any specific storage options for a new device?
+[102.36s][user ] I think I’d want at least five hundred gigabytes. What’s the price jump to five hundred on the 15 Pro ⟨ret@109.03s⟩ Max?
+[109.19s][moshi] Let’s see the additional ⟦⚡SPAN@111.03s: (tool result) The iPhone 15 Pro Max with 512GB of storage costs $1,399.⟧ cost for upgrading to five hundred gigabytes… The iPhone 15 Pro Max with five hundred twelve gigabytes of storage is priced at one thousand three hundred ninety-nine dollars.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone-15-pro/", "storage": "512GB", "focus": "price"}}
+[121.21s][user ] So, another two hundred dollars. Hmm.
+[124.13s][moshi] A significant increase, certainly. It’s a trade-off between cost and storage capacity.
+[130.85s][user ] Is there a way to get a student discount on any of this?
+[134.08s][moshi] ⟨ret@133.92s⟩ Let’s ⟦⚡SPAN@135.04s: (tool result) Apple offers discounts on Macs and iPads for students and educators, but not on iPhones.⟧ explore potential educational pricing options… Apple’s student discounts apply to Macs and iPads, but unfortunately, not to iPhones.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/us-hed/shop", "focus": "discounts"}}
+[143.23s][user ] That’s disappointing.
+[144.79s][moshi] Indeed, it appears iPhones are

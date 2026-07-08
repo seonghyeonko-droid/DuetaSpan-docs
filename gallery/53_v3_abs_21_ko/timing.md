@@ -2,72 +2,96 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 프랑스 상원 의원 수는 몇 명인가요?
-     2.55s  <ret> 발화 (turn1 첫 프레임)
-     2.77s  user  발화 끝
-     2.79s  agent 발화 시작: <ret> 아, 프랑스 정부에 대한 좋은 질문이네요. 죄송하지만 현재 그 특정 숫자를 기록에 가지고 있지 않
-     3.83s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.29s]: (no information found)
-     8.93s  user  발화 시작: 아, 네. 그럼 안드로메다 은하에 대해 알려 주시겠어요?
-     8.95s  agent 발화 끝
-    12.53s  user  발화 끝
-    12.53s  agent 발화 시작: 아, 안드로메다! 아름다운 나선 은하이고 우리 은하의 매혹적인 이웃이에요.
-    17.95s  user  발화 시작: 그것이 우리에게 더 가까워지고 있나요?
-    18.09s  agent 발화 끝
-    20.20s  <ret> 발화 (turn5 첫 프레임)
-    20.50s  agent 발화 시작: <ret> 그것은 우리 은하 이웃에 대한 흔한 질문이에요. 사실 그렇습니다. 안드로메다 은하는 초속 110킬
-    20.68s  user  발화 끝
-    21.71s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.31s]: "The Andromeda Galaxy is approaching the Milky Way at 110 kilometers p
-    30.20s  agent 발화 끝
-    30.42s  user  발화 시작: 와, 엄청 빠르네요! 충돌은 언제 일어날까요?
-    33.54s  <ret> 발화 (turn7 첫 프레임)
-    33.86s  agent 발화 시작: <ret> 우주적 거리에서 충돌을 예측하는 것은 까다로운 일이에요. 천문학자들은 약 45억 년 후에 충돌이 
-    33.98s  user  발화 끝
-    35.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.53s]: "The collision between the Andromeda and Milky Way galaxies is predict
-    39.08s  user  발화 시작: 네.
-    39.53s  user  발화 끝
-    42.22s  user  발화 시작: 그건 지금부터 아주 오랜 시간이네요. 충돌하면 무슨 일이 일어날까요?
-    42.43s  agent 발화 끝
-    47.35s  agent 발화 시작: 다행히 정면 충돌은 아닐 거예요. 수백만 년에 걸쳐 느리게 춤추는 것에 더 가깝겠죠.
-    47.41s  user  발화 끝
-    53.37s  agent 발화 끝
-    53.59s  user  발화 시작: 느린 춤이군요? 표현하기 좋은 방법이네요.
-    56.65s  user  발화 끝
-    56.93s  agent 발화 시작: [laugh] 은하 파괴보다 더 부드러운 이미지 아닌가요? 도움이 된다고 생각해요.
-    61.93s  agent 발화 끝
-    61.98s  user  발화 시작: 확실히요. 음, 밤하늘에서 가장 밝은 별은 무엇인가요?
-    66.11s  <ret> 발화 (turn14 첫 프레임)
-    66.50s  agent 발화 시작: <ret> 그것은 모든 별을 관찰하는 사람에게 흔한 질문이에요. 가장 밝은 별은 시리우스이고, 겉보기 등급은
-    66.70s  user  발화 끝
-    68.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.22s]: "Sirius is the brightest star in the night sky, with an apparent magni
-    74.94s  agent 발화 끝
-    75.66s  user  발화 시작: 시리우스, 맞아요. 항상 베가와 헷갈려요.
-    78.74s  agent 발화 시작: 둘 다 눈부신 별이라 헷갈리기 쉬워요. 베가는 약간 푸르스름한 것도 아름다워요.
-    78.90s  user  발화 끝
-    84.34s  agent 발화 끝
-    84.47s  user  발화 시작: 그럼 베가는 시리우스만큼 밝지 않나요?
-    87.00s  <ret> 발화 (turn18 첫 프레임)
-    87.14s  user  발화 끝
-    87.15s  agent 발화 시작: <ret> 사실 밝기를 측정하는 방법에 따라 달라지는 문제예요. 베가는 0.03의 등급을 가지고 있어 다섯 
-    88.12s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.03s]: "Vega has an apparent magnitude of 0.03, making it the fifth-brightest
-    96.10s  agent 발화 끝
-    97.66s  user  발화 시작: 알겠습니다. 이해가 돼요. 행성 관찰에 좋은 망원경을 찾아 주시겠어요?
-   102.84s  <ret> 발화 (turn20 첫 프레임)
-   102.89s  user  발화 끝
-   103.24s  agent 발화 시작: <ret> 알겠습니다. 무엇이 있는지 살펴볼게요. 대략적인 예산은 얼마인가요?
-   103.34s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.05s]: (tool result) Celestron NexStar 130SLT Computerized Telescope: $499.00
-   108.27s  agent 발화 시작: 셀레스트론 넥스타 130SLT는 499달러이고, 구경은 130밀리미터예요.
-   108.28s  agent 발화 끝
-   114.69s  user  발화 시작: 499달러면 괜찮네요. 렌즈가 포함되어 있나요?
-   114.71s  agent 발화 끝
-   118.65s  <ret> 발화 (turn23 첫 프레임)
-   118.71s  user  발화 끝
-   118.72s  agent 발화 시작: <ret> 대부분의 망원경에는 시작할 수 있도록 기본적인 세트가 포함되어 있어요. 10밀리미터와 25밀리미터
-   120.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) Celestron NexStar 130SLT includes: 10mm and 25mm eyepiec
-   128.57s  user  발화 시작: 완벽하네요! 그걸로 주문할게요.
-   129.01s  agent 발화 끝
-   131.00s  agent 발화 시작: 훌륭한 선택이에요! 매우 인기 있는 모델이고 행성 관찰을 시작하기에 좋은 방법이에요.
-   131.06s  user  발화 끝
-   137.07s  agent 발화 끝
-   138.02s  user  발화 시작: 모시, 정말 많은 도움을 주셔서 감사합니다.
-   141.57s  agent 발화 시작: 천만에요. 맑은 하늘과 즐거운 별 관찰 되세요!
-   141.72s  user  발화 끝
-   145.68s  agent 발화 끝
+     3.07s  <ret> 발화 (turn1 첫 프레임)
+     3.29s  user  발화 끝
+     3.30s  agent 발화 시작: <ret> 네, 프랑스 정부에 대한 좋은 질문이세요. 안타깝게도 지금은 그 정확한 숫자를 가지고 있지 않아요
+     4.35s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.33s]: (no information found)
+    14.22s  user  발화 시작: 아, 그렇군요. 그럼 카시오페이아 별자리에 대해 알려 주실 수 있나요?
+    14.24s  agent 발화 끝
+    18.64s  <ret> 발화 (turn3 첫 프레임)
+    18.95s  agent 발화 시작: <ret> 카시오페이아는 보기에도 아주 예쁜 별자리예요. 그리스 신화에 나오는 여왕의 이름을 딴 별자리인데,
+    19.04s  user  발화 끝
+    20.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: "Cassiopeia is a constellation in the northern sky, named after the va
+    31.43s  user  발화 시작: W자 모양이라고요? 정말요? 저는 항상 M자처럼 보였어요.
+    31.51s  agent 발화 끝
+    35.69s  agent 발화 시작: 별을 보면서 사람마다 모양을 다르게 인식하는 게 정말 흥미롭네요!
+    35.82s  user  발화 끝
+    38.44s  user  발화 시작: 네.
+    38.89s  user  발화 끝
+    40.28s  agent 발화 시작: 관찰자의 위치에 따라 인식이 달라질 수 있어요. 어디에 계시느냐에 따라 거꾸로 보일 수도 있거든요.
+    40.32s  agent 발화 끝
+    46.39s  agent 발화 끝
+    46.48s  user  발화 시작: 흥미롭네요. 지구로부터의 거리는 어느 정도인가요?
+    49.56s  <ret> 발화 (turn9 첫 프레임)
+    49.95s  agent 발화 시작: <ret> 별자리의 거리를 측정하는 건 복잡해요. 오백오십에서 육백 광년 거리에 위치하고 있어요. 빛이 우리
+    50.18s  user  발화 끝
+    51.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.25s]: "Cassiopeia is between 550 and 600 light-years from Earth."
+    59.69s  agent 발화 끝
+    59.69s  user  발화 시작: 와, 정말 멀군요. 카시오페이아에서 가장 밝은 별은 무엇인가요?
+    64.30s  <ret> 발화 (turn11 첫 프레임)
+    64.32s  user  발화 끝
+    64.45s  agent 발화 시작: <ret> 밝은 별을 찾는 건 별도를 만드는 중요한 부분이에요. 스케다르, 또는 알파 카시오페이아 별이 가장
+    66.14s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.96s]: "Schedar, also known as Alpha Cassiopeiae, is the brightest star in Ca
+    74.93s  agent 발화 끝
+    75.85s  user  발화 시작: 주황색이라고요? 별이 주황색일 수도 있다는 걸 몰랐어요.
+    79.56s  agent 발화 시작: [웃음] 물론이죠! 별의 색깔은 온도를 나타내요.
+    79.69s  user  발화 끝
+    83.20s  agent 발화 시작: 차가운 별은 붉은색이나 주황색으로 보이고, 뜨거운 별은 파란색이에요. 온도가 색깔을 결정하는데, 차가운 별일
+    83.35s  agent 발화 끝
+    92.41s  user  발화 시작: 그럼 파란색 별은 정말 뜨거운 건가요? 얼마나 뜨거운데요?
+    92.47s  agent 발화 끝
+    96.12s  <ret> 발화 (turn16 첫 프레임)
+    96.28s  agent 발화 시작: <ret> 매우 뜨거워서 우리 일상적인 경험을 초월해요. 표면 온도가 삼만 켈빈을 넘을 수도 있어요. 태양보
+    96.43s  user  발화 끝
+    97.88s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.04s]: "Blue stars can have surface temperatures exceeding 30,000 Kelvin."
+   104.38s  agent 발화 끝
+   104.73s  user  발화 시작: 삼만 켈빈이라니… 정말 굉장하네요. 지금까지 발견된 가장 오래된 별은 무엇인가요?
+   111.36s  <ret> 발화 (turn18 첫 프레임)
+   111.43s  agent 발화 시작: <ret> 가장 오래된 별을 찾는 건 어려운 일이에요. HD 140283, 메투셀라라는 별은 약 천사백육십억
+   111.44s  user  발화 끝
+   113.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.24s]: "HD 140283, nicknamed the Methuselah star, is estimated to be 14.46 ± 
+   122.33s  agent 발화 끝
+   122.48s  user  발화 시작: 천사백억 년이라니! 정말 놀랍네요. 아직 빛을 내고 있나요?
+   127.25s  user  발화 끝
+   127.51s  agent 발화 시작: 네, 그렇긴 하지만 앞으로의 상황은 연구 대상이에요.
+   130.71s  agent 발화 시작: 별의 수명을 결정하는 건 복잡해요. 나이가 여러 번 수정되었고, 모델에 어려움을 주기도 했죠.
+   130.84s  agent 발화 끝
+   137.05s  user  발화 시작: 수정되었다고요? 어떻게 된 건가요?
+   137.15s  agent 발화 끝
+   139.43s  <ret> 발화 (turn23 첫 프레임)
+   139.50s  agent 발화 시작: <ret> 별의 나이를 측정하는 건 섬세한 과정이에요. 초기 추정치는 우주보다 오래되어 조정을 거쳐야 했어요
+   139.68s  user  발화 끝
+   141.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.20s]: "Initial estimates of HD 140283's age exceeded the estimated age of th
+   150.90s  agent 발화 끝
+   150.96s  user  발화 시작: 그럼 계산을 바꿔야 했다는 건가요? 정말 놀랍네요.
+   154.46s  user  발화 끝
+   154.50s  agent 발화 시작: 우리의 이해가 끊임없이 개선되고 있다는 걸 보여주는 거죠.
+   157.01s  user  발화 시작: 음.
+   157.51s  user  발화 끝
+   158.10s  agent 발화 시작: 새로운 데이터는 항상 우리의 우주관을 바꿔요. 천문학은 끊임없는 발견과 수정을 거듭하는 분야랍니다.
+   158.24s  agent 발화 끝
+   165.79s  agent 발화 끝
+   167.37s  user  발화 시작: 그렇겠죠. 가장 멀리 있는 은하는 무엇인가요?
+   170.88s  <ret> 발화 (turn29 첫 프레임)
+   170.95s  agent 발화 시작: <ret> 관측 가능한 우주의 가장자리에 도달하는 것… GN-z11이 삼십이십억 광년 거리에 있어요. 아주 
+   170.98s  user  발화 끝
+   172.56s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.50s]: "GN-z11 is currently the farthest observed galaxy, at a comoving dista
+   180.34s  user  발화 시작: 삼십이십억 광년이라니! 상상조차 하기 어렵네요.
+   180.45s  agent 발화 끝
+   184.09s  user  발화 끝
+   184.43s  agent 발화 시작: 정말 그렇죠. 우주의 규모는 겸손해지게 만들어요.
+   188.14s  agent 발화 시작: 이런 거리를 생각하면 우리가 우주의 광활함 속에서 얼마나 작은 존재인지 깨닫게 돼요.
+   188.22s  agent 발화 끝
+   193.40s  user  발화 시작: 정말 그렇네요. 그런 것들을 보기 위해 어떤 망원경을 사용하나요?
+   193.56s  agent 발화 끝
+   197.63s  agent 발화 시작: [한숨] 저는 망원경을 *사용*하는 게 아니라, 망원경에서 얻은 데이터를 이용하는 거예요!
+   197.80s  user  발화 끝
+   203.69s  agent 발화 시작: 제임스 웹 우주 망원경이 우리의 시야를 혁신하고 있어요. 적외선을 관측해서 먼지 구름을 뚫고 볼 수 있거든요
+   203.75s  agent 발화 끝
+   211.67s  agent 발화 끝
+   212.05s  user  발화 시작: 아, 맞아요. 웹 망원경. 읽어봤어요.
+   216.19s  agent 발화 시작: 정말 훌륭한 장비죠, 안 그래요?
+   216.31s  user  발화 끝
+   218.39s  agent 발화 시작: 그 관측 결과는 우리의 이해를 바꾸고 있어요. 지금까지 볼 수 없었던 먼 은하의 상세한 모습을 보여주고 있답
+   218.59s  agent 발화 끝
+   228.46s  agent 발화 끝

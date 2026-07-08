@@ -3,31 +3,33 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  3.76s][moshi] ⟨ret@3.52s⟩ Certainly, ⟦⚡SPAN@4.48s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:00 PM.⟧ let's get that scheduled for you. I’ve scheduled a viewing for June fifteenth at two in the afternoon.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 10.04s][user ] That’s great, but— I mean, could we do it later in the day?
-[ 13.47s][moshi] Later that day would work, what time were you thinking?
-[ 16.88s][user ] Around six, if possible.
-[ 18.56s][moshi] ⟨ret@18.40s⟩ Let ⟦⚡SPAN@19.36s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 6:00 PM.⟧ me check availability for a six PM viewing. Yes, six PM on June fifteenth is available. It’s confirmed.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth", "time": "6:00 PM"}}
-[ 27.11s][user ] Perfect. And can you tell me about the neighborhood?
-[ 29.17s][moshi] The Grandview Lofts are in the historic district, known for its boutiques and cafes.
-[ 35.13s][user ] Is it a walkable area, though?
-[ 37.47s][moshi] «interrupted» It absolutely is—
-[ 38.44s][user ] «interrupts_prev» I mean, is it good for getting around without a car?
-[ 41.01s][moshi] It’s very walkable, with a walk score of ninety-two out of one hundred.
-[ 43.01s][user ] «backchannel» Yeah.
-[ 45.52s][moshi] The area has excellent public transportation options as well.
-[ 50.51s][user ] That's good to hear. What about parking, though, if I *do* have a car?
-[ 54.48s][moshi] Street parking is limited, but there's a parking garage two blocks from the lofts.
-[ 59.52s][user ] Okay, and what's the average rent for a two-bedroom ⟨ret@62.61s⟩ there?
-[ 63.01s][moshi] Let me ⟦⚡SPAN@64.29s: (tool result) The average rent for a two-bedroom at The Grandview Lofts is $2,850 per month.⟧ quickly look up current rental rates. The average rent for a two-bedroom is two thousand eight hundred and fifty dollars monthly.
-      CALL: {"function": "Homes_2GetRentalInfo", "arguments": {"propertyName": "The Grandview Lofts", "bedroomCount": "2"}}
-[ 71.87s][user ] That's a little higher than I expected… maybe twenty-five ⟨ret@75.71s⟩ hundred?
-[ 76.10s][moshi] I can ⟦⚡SPAN@77.31s: (tool result) Three properties match your criteria: Elm Street Apartments, Oakwood Residences, and Willow Cree⟧ search for similar properties around twenty-five hundred. Elm Street Apartments, Oakwood Residences, and Willow Creek Condos fit your budget.
-      CALL: {"function": "Homes_2SearchProperties", "arguments": {"rentMax": "2500", "bedroomCount": "2"}}
-[ 85.27s][user ] Tell me more about Oakwood Residences.
-[ 87.75s][moshi] ⟨ret@87.59s⟩ Let ⟦⚡SPAN@88.39s: (tool result) Oakwood Residences offers one and two-bedroom apartments with a fitness center and pet-friendly ⟧ me get you the details for Oakwood Residences. Oakwood Residences has one and two-bedroom units and allows pets.
-      CALL: {"function": "Homes_2GetPropertyInfo", "arguments": {"propertyName": "Oakwood Residences"}}
-[ 96.11s][user ] Sounds promising. Can we schedule a viewing there for next week?
-[ 99.03s][moshi] Of course. What day next week works best for you?
+[  4.23s][moshi] ⟨ret@4.00s⟩ Certainly, let’s ⟦⚡SPAN@5.04s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ see about scheduling a visit for you. I’ve scheduled a viewing for you at two PM on June fifteenth.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 11.36s][user ] Is that the earliest time available that ⟨ret@13.68s⟩ day?
+[ 13.84s][moshi] Let me ⟦⚡SPAN@15.12s: (tool result) The Grandview Lofts has viewings available at ten AM, noon, and two PM on June fifteenth.⟧ quickly check the availability for that property. There are viewings at ten AM, noon, and two PM on June fifteenth.
+      CALL: {"function": "Homes_2CheckAvailability", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 22.46s][user ] Actually, could we push that to the afternoon— I mean, the latest possible time?
+[ 28.05s][moshi] ⟨ret@27.81s⟩ Of course, let’s find ⟦⚡SPAN@29.65s: (tool result) The Grandview Lofts has viewings available at ten AM, noon, and two PM on June fifteenth.⟧ the latest available slot for you. The latest available viewing time is two PM on June fifteenth.
+      CALL: {"function": "Homes_2CheckAvailability", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 35.86s][user ] Great. And can you send me directions to The Grandview ⟨ret@39.26s⟩ Lofts?
+[ 39.21s][moshi] Absolutely, I can ⟦⚡SPAN@40.86s: (tool result) Directions to The Grandview Lofts are: head north on Elm Street, then turn right on Oak Avenue.⟧ provide directions for you. Head north on Elm Street, then turn right onto Oak Avenue.
+      CALL: {"function": "Navigation_2GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
+[ 46.98s][user ] That sounds straightforward enough. What's the rental application process like there?
+[ 51.87s][moshi] The application process typically involves a credit check and proof of income.
+[ 56.45s][user ] Is there a fee for the ⟨ret@58.53s⟩ application?
+[ 58.69s][moshi] Let me look up ⟦⚡SPAN@60.53s: (tool result) The application fee for The Grandview Lofts is fifty dollars.⟧ the application fee for The Grandview Lofts. The application fee is fifty dollars.
+      CALL: {"function": "Homes_2GetApplicationFee", "arguments": {"property": "The Grandview Lofts"}}
+[ 65.96s][user ] Fifty dollars— that seems—
+[ 67.70s][moshi] «interrupted» It’s fairly standard for properties in this area, considering—
+[ 70.88s][user ] «interrupts_prev» Is a guarantor required if my income is slightly below their threshold?
+[ 75.03s][moshi] A guarantor may be required if your income doesn’t meet the criteria; it depends on the specific circumstances.
+[ 82.96s][user ] Okay. What about parking? Is parking included?
+[ 85.79s][moshi] ⟨ret@85.64s⟩ I ⟦⚡SPAN@86.44s: (tool result) Parking at The Grandview Lofts is available for seventy-five dollars per month.⟧ can check the parking situation at The Grandview Lofts. Parking is available for seventy-five dollars a month.
+      CALL: {"function": "Homes_2GetParkingInfo", "arguments": {"property": "The Grandview Lofts"}}
+[ 92.61s][user ] Seventy-five dollars a month, huh? That's a bit steep.
+[ 95.40s][moshi] It is a premium location, which often reflects in the associated costs.
+[101.66s][user ] Right. Are pets allowed at The Grandview ⟨ret@104.51s⟩ Lofts?
+[104.66s][moshi] I’ll look into the pet ⟦⚡SPAN@106.51s: (tool result) The Grandview Lofts allows cats and small dogs with a one-time fee of three hundred dollars.⟧ policy at that building for you. Cats and small dogs are permitted with a three-hundred-dollar fee.
+      CALL: {"function": "Homes_2GetPetPolicy", "arguments": {"property": "The Grandview Lofts"}}
+[111.26s][user ] Three hundred dollars… okay. And what are the lease terms?
+[114.80s][moshi] Lease terms are typically twelve months, but they sometimes offer six-month options.

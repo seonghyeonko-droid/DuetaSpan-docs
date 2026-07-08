@@ -2,48 +2,58 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 무슨 정부 형태를 무정부주의자들이 싫어하는지 궁금해?
-     2.89s  <ret> 발화 (turn1 첫 프레임)
-     3.20s  agent 발화 시작: <ret> 그건 정말 흥미로운 질문인데, 기본적인 정치적 신념을 탐구하는 거네. 지금 당장은 그 질문에 대한
-     3.32s  user  발화 끝
-     4.09s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.59s]: (no information found)
-    13.07s  agent 발화 끝
-    13.41s  user  발화 시작: 그래. 그럼, 그들은 어떤 정부도 좋아하지 않는 거네?
-    16.37s  agent 발화 시작: 대체로 그렇다. 그들은 정부 자체가 불필요한 악이라고 생각하는 거지, 특정 유형을 싫어하는 게 아니야.
-    16.47s  user  발화 끝
-    23.61s  user  발화 시작: 음, 기억 공고화에 대해서는 설명해 줄 수 있어?
-    23.98s  agent 발화 끝
-    26.09s  <ret> 발화 (turn5 첫 프레임)
-    26.32s  agent 발화 시작: <ret> 그럼. 기억 공고화는 초기 습득 후에 기억 흔적을 안정화시키는 과정이야.
-    26.37s  user  발화 끝
-    27.85s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.25s]: “Memory consolidation is a time-dependent process by which labile memo
-    30.56s  agent 발화 시작: 시간이 지나면서 불안정한 기억을 더 오래 지속되는 기억으로 바꿔 주는 거지.
-    30.57s  agent 발화 끝
-    35.05s  agent 발화 끝
-    35.42s  user  발화 시작: 그게 보통 얼마나 걸려?
-    36.98s  user  발화 끝
-    37.17s  agent 발화 시작: [laugh] 엄청 다양해. 어떤 공고화는 몇 분 안에 일어나지만, 어떤 건 몇 년, 심지어 평생이 걸릴 수
-    44.58s  agent 발화 끝
-    45.22s  user  발화 시작: 와, 몇 년이나! 그 과정에 도움이 되는 게 있어?
-    48.34s  agent 발화 시작: 잠이 중요해. 잠을 자는 동안 뇌는 새로 형성된 기억을 반복하고 강화해서 공고화를 돕지.
-    48.45s  user  발화 끝
-    55.29s  agent 발화 끝
-    55.69s  user  발화 시작: 신기하네—잠을 잘 자면 항상 기분이 좋아져.
-    58.52s  agent 발화 시작: 우연이 아니야. 잠은 뇌에 정말 회복력을 주고, 학습과 기억에 필수적이야.
-    58.64s  user  발화 끝
-    64.96s  agent 발화 끝
-    65.45s  user  발화 시작: 그럼, 공부할 때 잠을 자는 게 좋을까?
-    68.13s  user  발화 끝
-    68.51s  agent 발화 시작: 당연하지. 새로운 정보를 학습한 후에 잠을 자면 기억력이 크게 향상돼—정말 강력한 방법이야.
-    73.83s  agent 발화 끝
-    74.01s  user  발화 시작: 근데… 잠들기가 어려운데.
-    76.12s  agent 발화 시작: 흔한 어려움이야. 편안한 취침 루틴을 만들고 잠자리에 들기 전에 스크린 타임을 줄이면 도움이 될 거야.
-    76.27s  user  발화 끝
-    83.85s  agent 발화 끝
-    84.11s  user  발화 시작: 잠을 잘 수 있도록 도와주는 약 같은 건 있어?
-    86.44s  <ret> 발화 (turn18 첫 프레임)
-    86.83s  agent 발화 시작: <ret> 그건 내가 의학적인 조언을 해 줄 자격이 없어. 대신 수면 전문가를 찾아 줄 수는 있어.
-    87.01s  user  발화 끝
-    88.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) Dr. Eleanor Vance, Neurology, 12 Oak Street, 555-1212. A
-    91.75s  agent 발화 시작: 반스 신경과 의사가 새로운 환자를 받고 화요일과 목요일에 진료를 봐.
-    91.78s  agent 발화 끝
-    95.59s  agent 발화 끝
+     2.93s  <ret> 발화 (turn1 첫 프레임)
+     3.25s  agent 발화 시작: <ret> 그건 꽤 흥미로운 질문인데, 정치 철학에 대해 깊이 파고드는 거네.
+     3.37s  user  발화 끝
+     4.13s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.84s]: (no information found)
+     7.09s  agent 발화 끝
+     7.21s  agent 발화 시작: 미안, 지금은 그 질문에 대한 확실한 답이 없어.
+    10.16s  agent 발화 끝
+    11.00s  user  발화 시작: 아, 그래. 알았어. 그럼 알츠하이머병의 가장 초기에 기록된 사례는 뭐였어?
+    15.54s  <ret> 발화 (turn4 첫 프레임)
+    15.77s  agent 발화 시작: <ret> 신경학적 질병의 역사를 탐구하는 건 언제나 흥미로워. 알로이스 알츠하이머는 1906년에 오귀스트 
+    15.96s  user  발화 끝
+    17.30s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.87s]: Alois Alzheimer first described the disease in 1906, detailing the cas
+    23.50s  agent 발화 끝
+    23.82s  user  발화 시작: 오귀스트 데테… 어렸어?
+    25.36s  <ret> 발화 (turn6 첫 프레임)
+    25.66s  agent 발화 시작: <ret> 응, 그녀는 증상을 보였을 때 굉장히 어렸어.
+    25.89s  user  발화 끝
+    26.07s  ⚡SPAN 주입 [d'=0.72s / d_lead=2.95s]: Auguste Deter was fifty-one years old when she died in 1906.
+    28.60s  agent 발화 시작: 오귀스트 데테는 1906년에 쉰한 살에 세상을 떠났어.
+    28.62s  agent 발화 끝
+    32.02s  agent 발화 끝
+    32.04s  user  발화 시작: 정말 슬프네. 음, 지금 도쿄 인구는 얼마야?
+    35.33s  <ret> 발화 (turn9 첫 프레임)
+    35.46s  user  발화 끝
+    35.48s  agent 발화 시작: <ret> 현재 인구 통계를 찾는 건 간단해. 도쿄는 현재 천사백이십육만 천이백삼십사 명의 인구를 가지고 있
+    37.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.80s]: (tool result) Tokyo has a population of fourteen million, two hundred 
+    43.08s  agent 발화 끝
+    43.76s  user  발화 시작: 와, 정말… 많은 사람들이네. 일본에서 가장 높은 산은 뭐야?
+    47.72s  <ret> 발화 (turn11 첫 프레임)
+    48.04s  agent 발화 시작: <ret> 일본의 지형은 꽤 인상적이야, 많은 멋진 봉우리들이 있거든. 후지산은 높이가 삼천칠백칠십육 미터로
+    48.24s  user  발화 끝
+    49.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: Mount Fuji is the highest mountain in Japan, standing at three thousan
+    57.41s  agent 발화 끝
+    57.87s  user  발화 시작: 삼천… 대단하네. 근처에 괜찮은 이탈리아 식당 좀 찾아줄래?
+    62.04s  <ret> 발화 (turn13 첫 프레임)
+    62.27s  agent 발화 시작: <ret> 그 요리 검색은 확실히 도와줄 수 있어. 벨라 노테는 0.8마일 떨어져 있고, 평점은 4.5점이고
+    62.45s  user  발화 끝
+    62.54s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.89s]: (tool result) Bella Notte is 0.8 miles away, rated 4.5 stars, and open
+    71.03s  agent 발화 끝
+    71.60s  user  발화 시작: 벨라 노테… 좋게 들리네. 있잖아— 음악이 기억에 영향을 미쳐?
+    76.65s  user  발화 끝
+    77.05s  agent 발화 시작: 응, 음악은 우리가 기억하는 방식과 강력한 연관이 있어.
+    82.69s  agent 발화 끝
+    82.77s  user  발화 시작: 어떻게?
+    83.35s  agent 발화 시작: 음악은 강한 감정적 반응을 불러일으키는데, 그게 기억 공고화에 중요해.
+    83.41s  user  발화 끝
+    88.67s  agent 발화 끝
+    88.75s  user  발화 시작: 그 말이 맞네. 궁금한데… [말을 끊으며] 냄새도 같은 방식으로 작용해?
+    94.50s  agent 발화 시작: 네가 하는 연결은 정말 통찰력이 있네—
+    94.54s  user  발화 끝
+    96.57s  user  발화 시작: 냄새도 기억을 되살릴 수 있어?
+    97.36s  agent 발화 끝
+    98.49s  agent 발화 시작: 응, 냄새는 감정과 기억을 처리하는 편도체와 강하게 연결되어 있어.
+    98.69s  user  발화 끝
+   103.81s  agent 발화 끝

@@ -1,51 +1,51 @@
 # v3_noinfo_23_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
-     2.42s  <ret> 발화 (turn1 첫 프레임)
-     2.74s  agent 발화 시작: <ret> 네, 빠른 시간 안에 과거 날씨 데이터를 확인해 드릴게요… 작년 12월 24일 도쿄는 맑은 하늘이
-     2.96s  user  발화 끝
-     3.78s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.66s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    12.24s  user  발화 시작: 듣기엔…나쁘지 않네. 후지산 근처에 괜찮은 하이킹 코스 좀 찾아 줘.
-    12.52s  agent 발화 끝
-    16.48s  <ret> 발화 (turn3 첫 프레임)
-    16.88s  agent 발화 시작: <ret> 네, 해당 지역의 하이킹 코스를 검색해 드릴게요… 후지산 단풍 회랑길은 3.5킬로미터이고, 하이킹
-    17.01s  user  발화 끝
-    18.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.24s]: (tool result) The Mount Fuji Red Maple Corridor trail is three point f
-    26.24s  agent 발화 끝
-    26.65s  user  발화 시작: 완벽하네. 지금은 열려 있어?
-    28.48s  <ret> 발화 (turn5 첫 프레임)
-    28.63s  user  발화 끝
-    28.63s  agent 발화 시작: <ret> 네, 해당 코스의 현재 상태를 확인해 볼게요… 후지산 단풍 회랑길은 현재 개방되어 있고 하이킹하기
-    30.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.95s]: (tool result) The Mount Fuji Red Maple Corridor trail is currently ope
-    36.04s  agent 발화 끝
-    37.13s  user  발화 시작: 좋네. 내년에 봄에 스위스 알프스 여행도 계획 중인데—
-    41.43s  agent 발화 시작: 아, 스위스 알프스는 특히 봄에 정말 멋진 곳이에요—
-    41.67s  user  발화 끝
-    43.84s  user  발화 시작: …거기 고산 야생화에 대해 아는 거 있어? 특히 에델바이스 말이야.
-    44.66s  agent 발화 끝
-    48.16s  agent 발화 시작: 에델바이스는 정말 상징적인 꽃이고, 저도 정말 좋아해요. 과거에 무분별한 채취로 인해 보호종으로 지정되었다는
-    48.19s  user  발화 끝
-    56.74s  agent 발화 끝
-    56.76s  user  발화 시작: 정말? 몰랐어.
-    58.28s  user  발화 끝
-    58.56s  agent 발화 시작: 네, 많은 지역에서 취약종으로 분류되어 있어요. 해발 1000미터에서 3000미터 사이의 석회암 바위 경사면
-    63.41s  user  발화 시작: 응.
-    63.90s  user  발화 끝
-    66.63s  <ret> 발화 (turn13 첫 프레임)
-    66.87s  agent 발화 시작: <ret> 네, 서식지를 고려하면 꽤 특수한 식물이에요… 에델바이스는 7월부터 9월까지 꽃을 피우고, 일반적
-    66.95s  agent 발화 끝
-    67.75s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.03s]: (tool result) The Edelweiss flower blooms from July to September, and 
-    74.65s  user  발화 시작: 그럼 6월 초에는 꽃이 안 피어?
-    74.94s  agent 발화 끝
-    76.64s  agent 발화 시작: 아니요, 6월 초는 보통 개화 시기가 아니에요. 그때는 싹만 볼 수 있을 거예요.
-    76.90s  user  발화 끝
-    81.13s  agent 발화 끝
-    81.54s  user  발화 시작: 알아두면 좋네. 인터라켄 호텔을 발코니가 있는 방으로 예약해 줘.
-    85.40s  <ret> 발화 (turn17 첫 프레임)
-    85.79s  agent 발화 시작: <ret> 네, 인터라켄에서 발코니가 있는 호텔을 검색해 드릴게요… 호텔 크렙스는 5월 10일부터 17일까지
-    85.93s  user  발화 끝
-    87.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.32s]: (tool result) The Hotel Krebs in Interlaken has rooms with balconies a
-    96.12s  agent 발화 끝
-    96.65s  user  발화 시작: 예약해.
-    97.47s  user  발화 끝
+     0.00s  user  발화 시작: 지난해 12월 24일 도쿄 날씨가 어땠어?
+     2.83s  <ret> 발화 (turn1 첫 프레임)
+     3.15s  agent 발화 시작: <ret> 알아볼게요. 지난해 12월 24일 도쿄는 맑은 하늘이었고, 최고 기온은 12도, 최저 기온은 5도
+     3.38s  user  발화 끝
+     4.19s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.68s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+     9.69s  user  발화 시작: 일본 알프스 1월 평균 적설량은 어때?
+     9.91s  agent 발화 끝
+    12.33s  <ret> 발화 (turn3 첫 프레임)
+    12.71s  agent 발화 시작: <ret> 조금 다른 지역이지만, 알아봐 드릴게요. 일본 알프스는 1월에 보통 350센티미터의 적설량을 기록
+    12.87s  user  발화 끝
+    14.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) The average snowfall in the Japanese Alps during January
+    20.02s  agent 발화 끝
+    20.48s  user  발화 시작: 와, 엄청 많네. 마쓰모토 근처에 괜찮은 스키 리조트 있어?
+    24.00s  <ret> 발화 (turn5 첫 프레임)
+    24.15s  agent 발화 시작: <ret> 마쓰모토는 산을 탐험하기 좋은 거점이에요. 마쓰모토 근처의 하쿠바 밸리는 200킬로미터가 넘는 스
+    24.36s  user  발화 끝
+    25.52s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.91s]: (tool result) Hakuba Valley is a popular ski resort near Matsumoto, wi
+    29.52s  user  발화 시작: 응.
+    30.01s  user  발화 끝
+    33.26s  agent 발화 시작: 파우더 스노우와 다양한 지형으로 유명하답니다.
+    33.41s  agent 발화 끝
+    35.42s  user  발화 시작: 리조트 내에 숙소가 있어? 아니면 시내에 머물러야 해?
+    36.26s  agent 발화 끝
+    38.99s  user  발화 끝
+    39.34s  agent 발화 시작: 하쿠바 밸리는 리조트와 하쿠바 마을 모두에 숙박 시설을 제공하고 있으며, 많은 호텔과 샬레가 있어요.
+    46.43s  agent 발화 끝
+    46.90s  user  발화 시작: 좋아. 2월 10일부터 2월 17일까지 두 명 숙박 가능한 호텔 방 좀 찾아줘.
+    51.52s  <ret> 발화 (turn11 첫 프레임)
+    51.91s  agent 발화 시작: <ret> 알겠습니다. 해당 날짜의 객실 상황을 확인해 볼게요. 호텔 코르티나에 해당 날짜에 더블룸이 있는데
+    51.95s  user  발화 끝
+    53.12s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.32s]: (tool result) Hotel Cortina in Hakuba Valley has a double room availab
+    61.08s  agent 발화 끝
+    61.11s  user  발화 시작: 괜찮네. 예약해 줘.
+    62.21s  <ret> 발화 (turn13 첫 프레임)
+    62.60s  agent 발화 시작: <ret> 네, 예약을 확인하고 있습니다. 호텔 코르티나 2월 10일부터 17일까지 숙박 예약이 완료되었고,
+    62.67s  user  발화 끝
+    63.49s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.19s]: (tool result) Reservation confirmed: Hotel Cortina, double room, Febru
+    73.45s  agent 발화 끝
+    73.50s  user  발화 시작: 좋아. 하쿠바에서 2월에 피는 특별한 고산 야생화가 있어?
+    77.75s  user  발화 끝
+    77.79s  agent 발화 시작: 좋은 질문이네요. 2월은 아직 꽤 춥기 때문에 꽃이 제한적이지만—
+    83.04s  <ret> 발화 (turn16 첫 프레임)
+    83.18s  agent 발화 시작: <ret> 고산 야생화가 피기에는 어려운 시기인데… 죄송하지만 2월에 하쿠바에서 피는 야생화에 대한 구체적인
+    83.25s  agent 발화 끝
+    84.48s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.49s]: (no information found)
+    91.25s  agent 발화 끝
+    92.76s  user  발화 시작: 아, 그래. 뭐, 도와줘서 고마워.
+    95.48s  user  발화 끝

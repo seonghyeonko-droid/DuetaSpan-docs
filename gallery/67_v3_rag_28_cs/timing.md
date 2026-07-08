@@ -1,27 +1,25 @@
 # v3_rag_28_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 그래서 정부 기관에 대해 읽다가 궁금해졌어… 재향군인부(Department of Veterans Affair
-     7.11s  <ret> 발화 (turn1 첫 프레임)
-     7.26s  agent 발화 시작: <ret> 그건 정말 흥미로운 질문이네요, 지원 역사를 추적해보면— 재향군인부는 후버 대통령 시절인 1930
-     7.46s  user  발화 끝
-     9.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.15s]: The Department of Veterans Affairs was established on July 21, 1930, u
-    17.51s  agent 발화 끝
-    17.53s  user  발화 시작: 1930년? 그거… 생각보다 별로 안 된 것 같지 않아? 재향군인 지원은 그거보다 훨씬 오래 전부터 있었을 
-    25.22s  agent 발화 시작: 정말 최근처럼 느껴지네요, 오랜 기간 동안 병사들이 돌봄을 받아야 했던 역사를 생각하면, 하지만 구조는 시간
-    25.46s  user  발화 끝
-    34.12s  agent 발화 끝
-    35.01s  user  발화 시작: 근데 1930년 이전에 뭘 했어? 내가— 그러니까, 부서가 생기기 전에 재향군인들은 어떻게 도움을 받았어?
-    42.04s  <ret> 발화 (turn5 첫 프레임)
-    42.18s  agent 발화 시작: <ret> 부서가 정식으로 만들어지기 전에는 지원이— 1930년 이전에 재향군인 관련 업무와 혜택은 1921
-    42.37s  user  발화 끝
-    44.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.43s]: Prior to 1930, the Veterans Bureau, created in 1921, handled most vete
-    52.93s  agent 발화 끝
-    53.06s  user  발화 시작: 그럼 재향군인국은 재향군인부랑 같은 게 아니었어?
-    56.20s  agent 발화 시작: 아니, 같지는 않았어요—
-    56.43s  user  발화 끝
-    57.57s  <ret> 발화 (turn8 첫 프레임)
-    57.96s  agent 발화 시작: <ret> 재향군인국은 1930년에 부서로 확장되고 재조직된 선행 기관이었어요.
-    58.00s  agent 발화 끝
-    59.01s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.32s]: The Veterans Bureau was a predecessor agency, later expanded and reorg
-    63.28s  agent 발화 끝
+     0.00s  user  발화 시작: 그래서 정부 기관에 대해 읽다가 궁금해졌는데, 참전용사부(Department of Veterans Affai
+     7.55s  agent 발화 시작: 좋은 질문이에요. 복무하신 분들을 지원한 역사를 추적하는 건 정말 중요하죠.
+     7.74s  user  발화 끝
+    12.09s  <ret> 발화 (turn2 첫 프레임)
+    12.47s  agent 발화 시작: <ret> 좀 더 역사적인 맥락을 말씀드릴게요. 참전용사부는 1930년 7월 21일에 행정 명령으로 설립됐습
+    12.54s  agent 발화 끝
+    13.29s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.71s]: The United States Department of Veterans Affairs was established on Ju
+    19.89s  agent 발화 끝
+    20.57s  user  발화 시작: 1930년? 그거…상대적으로 최근 같지 않아? 그전에 참전용사들을 위한 프로그램은 없었어?
+    27.50s  agent 발화 시작: 물론, 이전에도 비슷한 형태의 지원은 있었지만, 그 특정 부서 체제 아래에 공식적으로 존재하지는 않았습니다.
+    27.65s  user  발화 끝
+    34.23s  <ret> 발화 (turn5 첫 프레임)
+    34.38s  agent 발화 시작: <ret> 참전용사부 이전에는 지원 방식이 달랐어요. 1930년 이전에 참전용사 혜택은 전쟁 위험 보험국과 
+    34.45s  agent 발화 끝
+    36.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: Prior to 1930, veteran benefits were administered by the Bureau of War
+    44.48s  agent 발화 끝
+    45.34s  user  발화 시작: 근데 남북 전쟁 이후는 어땠어? 그때는 분명 뭔가 있었을 텐데—
+    49.70s  agent 발화 시작: 네, 물론이죠—
+    49.82s  user  발화 끝
+    50.69s  user  발화 시작: 그럼 남북 전쟁 직후 참전용사들은 어떤 지원을 받았어?
+    51.54s  agent 발화 끝
+    54.20s  user  발화 끝

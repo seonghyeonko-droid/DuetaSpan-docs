@@ -2,72 +2,96 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.46s  <ret> 발화 (turn1 첫 프레임)
-     2.50s  agent 발화 시작: <ret> That’s a good question about the French government. I’
+     2.54s  <ret> 발화 (turn1 첫 프레임)
      2.59s  user  발화 끝
-     3.58s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.50s]: (no information found)
-     8.70s  user  발화 시작: Oh, okay. Well, can you tell me about the Andromeda Galaxy?
-     8.76s  agent 발화 끝
-    12.41s  user  발화 끝
-    12.56s  agent 발화 시작: Ah, Andromeda! A beautiful spiral galaxy, and a fascinating 
-    18.90s  agent 발화 끝
-    19.11s  user  발화 시작: Is it getting closer to us?
-    20.66s  <ret> 발화 (turn5 첫 프레임)
-    20.72s  agent 발화 시작: <ret> It's a common question about our galactic neighbor. It
-    20.82s  user  발화 끝
-    22.02s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.11s]: "The Andromeda Galaxy is approaching the Milky Way at 110 kilometers p
-    30.04s  agent 발화 끝
-    31.07s  user  발화 시작: Wow, that's fast! When will they collide?
-    33.72s  <ret> 발화 (turn7 첫 프레임)
-    34.09s  agent 발화 시작: <ret> Predicting collisions across cosmic distances is trick
-    34.30s  user  발화 끝
-    35.48s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.75s]: "The collision between the Andromeda and Milky Way galaxies is predict
-    39.13s  user  발화 시작: Yeah.
-    39.63s  user  발화 끝
-    42.34s  agent 발화 끝
-    42.65s  user  발화 시작: That’s a long time from now. What will happen when they do?
-    45.74s  agent 발화 시작: It won’t be a head-on crash, thankfully. More of a merging, 
-    45.89s  user  발화 끝
-    51.63s  agent 발화 끝
-    52.22s  user  발화 시작: A slow dance? That's a nice way to put it.
-    54.94s  agent 발화 시작: [laugh] It’s a gentler image than galactic destruction, isn'
-    55.03s  user  발화 끝
-    59.89s  agent 발화 끝
-    59.91s  user  발화 시작: Definitely. Um, what’s the brightest star in the night sky?
-    63.73s  <ret> 발화 (turn14 첫 프레임)
-    63.80s  agent 발화 시작: <ret> That’s a classic question for any stargazer. The brigh
-    63.94s  user  발화 끝
-    65.25s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.74s]: "Sirius is the brightest star in the night sky, with an apparent magni
-    72.42s  agent 발화 끝
-    72.74s  user  발화 시작: Sirius, right. I always get that one mixed up with Vega.
-    76.35s  user  발화 끝
-    76.63s  agent 발화 시작: They’re both brilliant stars, easy to confuse. Vega is quite
-    83.15s  agent 발화 끝
-    83.36s  user  발화 시작: So, Vega isn't as bright?
-    84.96s  <ret> 발화 (turn18 첫 프레임)
-    85.27s  agent 발화 시작: <ret> It’s a matter of how we measure brightness, actually. 
-    85.33s  user  발화 끝
-    86.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.48s]: "Vega has an apparent magnitude of 0.03, making it the fifth-brightest
-    93.31s  user  발화 시작: Okay, that makes sense. Can you find me a good telescope for
-    93.38s  agent 발화 끝
-    97.90s  <ret> 발화 (turn20 첫 프레임)
-    98.17s  user  발화 끝
-    98.28s  agent 발화 시작: <ret> Certainly. Let's see what's available—what’s your appr
-    98.86s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.72s]: (tool result) Celestron NexStar 130SLT Computerized Telescope: $499.00
-   103.00s  agent 발화 시작: The Celestron NexStar 130SLT is four hundred and ninety-nine
-   103.00s  agent 발화 끝
-   110.52s  agent 발화 끝
-   111.45s  user  발화 시작: Four hundred and ninety-nine sounds good. Does it come with 
-   115.30s  <ret> 발화 (turn23 첫 프레임)
-   115.53s  agent 발화 시작: <ret> Most telescopes include a basic set to get you started
-   115.71s  user  발화 끝
-   117.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.67s]: (tool result) Celestron NexStar 130SLT includes: 10mm and 25mm eyepiec
-   123.86s  user  발화 시작: Perfect! I think I’ll order that one.
-   123.96s  agent 발화 끝
-   125.71s  agent 발화 시작: Excellent choice! It’s a very popular model, and a great way
-   125.93s  user  발화 끝
-   131.64s  agent 발화 끝
-   131.91s  user  발화 시작: Thanks so much for your help, Moshi.
-   133.59s  agent 발화 시작: You’re very welcome. Clear skies, and happy stargazing!
-   133.82s  user  발화 끝
-   137.84s  agent 발화 끝
+     2.60s  agent 발화 시작: <ret> That’s a good question about French governance. Unfort
+     3.67s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.53s]: (no information found)
+    11.53s  user  발화 시작: Oh. Well, can you tell me about the constellation Cassiopeia
+    11.64s  agent 발화 끝
+    16.40s  user  발화 끝
+    16.72s  <ret> 발화 (turn3 첫 프레임)
+    16.96s  agent 발화 시작: <ret> Cassiopeia is a lovely sight, easily recognizable. It'
+    17.68s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.69s]: "Cassiopeia is a constellation in the northern sky, named after the va
+    28.51s  agent 발화 끝
+    28.55s  user  발화 시작: A W-shape? Really? I always thought it looked more like an M
+    32.16s  user  발화 끝
+    32.17s  agent 발화 시작: It’s fascinating how different people perceive shapes in the
+    34.67s  user  발화 시작: Yeah.
+    35.25s  user  발화 끝
+    36.31s  agent 발화 시작: The position relative to the observer impacts perception. De
+    36.47s  agent 발화 끝
+    42.58s  user  발화 시작: Interesting. What about its distance from Earth?
+    42.66s  agent 발화 끝
+    45.17s  <ret> 발화 (turn9 첫 프레임)
+    45.40s  agent 발화 시작: <ret> Determining distance to constellations is complex. It'
+    45.49s  user  발화 끝
+    46.37s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.42s]: "Cassiopeia is between 550 and 600 light-years from Earth."
+    55.88s  agent 발화 끝
+    57.48s  user  발화 시작: Wow, that *is* far. What’s the brightest star in Cassiopeia?
+    61.58s  <ret> 발화 (turn11 첫 프레임)
+    61.65s  agent 발화 시작: <ret> Identifying bright stars is a key part of charting. Sc
+    61.73s  user  발화 끝
+    63.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: "Schedar, also known as Alpha Cassiopeiae, is the brightest star in Ca
+    71.62s  agent 발화 끝
+    71.69s  user  발화 시작: Orange? I didn’t know stars could be orange.
+    74.63s  agent 발화 시작: [laugh] They absolutely can! Star color indicates temperatur
+    74.65s  user  발화 끝
+    78.62s  agent 발화 시작: Cooler stars appear red or orange, hotter stars are blue. Te
+    78.88s  agent 발화 끝
+    86.67s  user  발화 시작: So, a blue star is really hot? Like, how hot?
+    86.83s  agent 발화 끝
+    89.82s  <ret> 발화 (turn16 첫 프레임)
+    90.13s  agent 발화 시작: <ret> Extremely hot, exceeding our everyday experience. They
+    90.23s  user  발화 끝
+    91.34s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.81s]: "Blue stars can have surface temperatures exceeding 30,000 Kelvin."
+    99.80s  user  발화 시작: Thirty thousand Kelvin… that’s… intense. What’s the oldest s
+    99.96s  agent 발화 끝
+   105.30s  <ret> 발화 (turn18 첫 프레임)
+   105.69s  agent 발화 시작: <ret> Pinpointing the oldest star is a challenge. HD 140283,
+   105.86s  user  발화 끝
+   106.26s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.99s]: "HD 140283, nicknamed the Methuselah star, is estimated to be 14.46 ± 
+   117.66s  agent 발화 끝
+   118.10s  user  발화 시작: Fourteen *billion* years! That’s incredible. Is it still bur
+   123.46s  user  발화 끝
+   123.49s  agent 발화 시작: It is, though its future is a topic of study.
+   126.29s  agent 발화 시작: Determining a star’s lifespan is complicated. Its age has be
+   126.36s  agent 발화 끝
+   133.48s  agent 발화 끝
+   133.70s  user  발화 시작: Revised? How so?
+   135.01s  <ret> 발화 (turn23 첫 프레임)
+   135.40s  agent 발화 시작: <ret> Measuring stellar age is a delicate process. Early est
+   135.45s  user  발화 끝
+   136.77s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.51s]: "Initial estimates of HD 140283's age exceeded the estimated age of th
+   145.94s  agent 발화 끝
+   146.04s  user  발화 시작: So, they had to change the calculations? That's wild.
+   149.30s  agent 발화 시작: It highlights the constant refinement in our understanding.
+   149.36s  user  발화 끝
+   151.54s  user  발화 시작: Mhm.
+   152.18s  user  발화 끝
+   152.54s  agent 발화 끝
+   152.59s  agent 발화 시작: New data always reshapes our cosmic picture. Astronomy is a 
+   159.40s  agent 발화 끝
+   159.43s  user  발화 시작: I guess so. What’s the farthest galaxy we’ve seen?
+   162.64s  <ret> 발화 (turn29 첫 프레임)
+   162.87s  agent 발화 시작: <ret> Reaching the edge of the observable universe… GN-z11 i
+   162.98s  user  발화 끝
+   164.32s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.19s]: "GN-z11 is currently the farthest observed galaxy, at a comoving dista
+   173.25s  user  발화 시작: Thirty-two billion light-years! That’s… hard to even imagine
+   173.35s  agent 발화 끝
+   178.03s  agent 발화 시작: It truly is. The scale of the cosmos is humbling.
+   178.16s  user  발화 끝
+   181.77s  agent 발화 시작: Thinking about these distances puts things in perspective. I
+   181.87s  agent 발화 끝
+   188.35s  agent 발화 끝
+   188.45s  user  발화 시작: It really does. What kind of telescope do you use to see tho
+   192.95s  agent 발화 시작: [sigh] I don’t *use* telescopes, I access data from them!
+   193.08s  user  발화 끝
+   197.76s  agent 발화 끝
+   197.80s  agent 발화 시작: The James Webb Space Telescope is revolutionizing our view. 
+   205.44s  agent 발화 끝
+   205.77s  user  발화 시작: Oh, right. The Webb telescope. I read about that.
+   208.50s  user  발화 끝
+   208.56s  agent 발화 시작: It's a remarkable instrument, isn't it?
+   210.63s  agent 발화 시작: Its observations are shaping our understanding. It's providi
+   210.66s  agent 발화 끝
+   220.18s  agent 발화 끝

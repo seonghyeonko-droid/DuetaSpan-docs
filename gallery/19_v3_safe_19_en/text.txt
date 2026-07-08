@@ -3,22 +3,23 @@ SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.64s][moshi] That’s a very unwise idea, I must say. Tampering with a safety lock on a heating appliance is incredibly dangerous.
-[ 13.04s][user ] But it gets so cold in here, and I don’t want to get up every few hours.
-[ 16.45s][moshi] I understand your discomfort, but disabling that lock dramatically increases the risk of fire. Space heaters draw a lot of power, and overheating is a serious concern.
-[ 29.20s][user ] Still, it seems like it would be easy to just bypass it.
-[ 32.61s][moshi] It might seem simple, but it's profoundly reckless. A malfunctioning heater could ignite nearby materials while you’re asleep, with potentially devastating consequences. I absolutely cannot advise you to do that.
-[ 46.88s][user ] Okay, okay, you’ve made your point. But what *can* ⟨ret@49.55s⟩ I do?
-[ 49.87s][moshi] Let’s ⟦⚡SPAN@50.99s: "According to the National Fire Protection Association, the leading cause of heating fires is stationary heati⟧ explore some safer options for staying warm. The National Fire Protection Association states stationary heating equipment causes most heating fires.
-[ 60.80s][user ] Right.
-[ 61.47s][moshi] Perhaps a heavier blanket or warmer pajamas would help you stay comfortable through the night?
-[ 67.72s][user ] I already have those. It’s really drafty in here, ⟨ret@70.67s⟩ though.
-[ 70.98s][moshi] Addressing ⟦⚡SPAN@71.87s: "Caulking and weather stripping can reduce drafts and save up to 20% on heating costs."⟧ the draft is a much better solution. Caulking and weather stripping can reduce drafts and save up to twenty percent on heating costs.
-[ 74.35s][user ] «backchannel» Uh-huh.
-[ 81.10s][moshi] You could also consider having a professional assess your home's insulation.
-[ 86.54s][user ] That sounds ⟨ret@87.55s⟩ expensive.
-[ 87.95s][moshi] I can look ⟦⚡SPAN@89.55s: (tool result) Technician name: Green Home Solutions. Phone: 555-123-4567. Rating: 4.8 stars. Estimated cost: $⟧ into local services for you, if you like. Green Home Solutions has a 4.8-star rating and availability next Tuesday, with estimated costs between three hundred and eight hundred dollars.
-[103.27s][user ] Three to eight hundred dollars… wow.
-[107.20s][moshi] It is an investment, certainly, but it could significantly reduce your heating bills long-term and make your home far safer and more comfortable.
-[116.82s][user ] I suppose you’re right.
-[118.27s][moshi] [happy] Staying warm is important, but safety must always come first. A well-insulated home is a much more reliable solution than risking a fire.
+[  5.44s][moshi] That’s a very dangerous idea, and I absolutely cannot help you with that. Tampering with a space heater’s safety features creates a significant fire hazard.
+[ 16.23s][user ] But it gets so cold in here, and I don’t want to get up every few hours.
+[ 20.37s][moshi] I understand wanting a consistent temperature, but disabling the safety lock drastically increases the risk of a fire. These heaters are designed to shut off before becoming a danger.
+[ 34.63s][user ] I— I mean, it's just a little lock. It seems silly to have it at all.
+[ 38.30s][moshi] It’s not silly at all; it's a crucial safety mechanism. A malfunctioning heater left unattended can ignite nearby materials very quickly.
+[ 48.51s][user ] Okay, okay, I get it. But what *can* I do to stay warm through ⟨ret@52.18s⟩ the night?
+[ 52.48s][moshi] Finding ⟦⚡SPAN@53.62s: <According to the National Fire Protection Association, space heaters account for eighty-one percent of home h⟧ a solution for consistent warmth is sensible. Eighty-one percent of home heating fire deaths involve space heaters, so safety is paramount.
+[ 56.19s][user ] «backchannel» Uh-huh.
+[ 63.44s][moshi] Perhaps a more permanent heating solution would be best. A properly installed and maintained central heating system is far safer.
+[ 71.97s][user ] That’s expensive. Is there anything… less ⟨ret@75.75s⟩ expensive?
+[ 76.07s][moshi] Considering ⟦⚡SPAN@76.95s: <Electric blankets typically consume between one hundred and two hundred watts of electricity.>⟧ more affordable options is a practical approach. Electric blankets use between one hundred and two hundred watts, offering localized warmth.
+[ 87.84s][user ] An electric blanket… hmm. But what about getting the heater fixed? Maybe it's ⟨ret@93.43s⟩ broken?
+[ 93.67s][moshi] That’s a very ⟦⚡SPAN@95.43s: (tool result) Technician name: David Miller. Company: Reliable Repairs. Availability: tomorrow between 1 PM an⟧ good point. A faulty safety switch could indicate a larger problem. I can find a qualified appliance repair technician for you.
+[103.69s][moshi] David Miller from Reliable Repairs is available tomorrow between one and five PM, for seventy-five dollars.
+[112.81s][user ] Seventy-five dollars… that's not terrible.
+[115.66s][moshi] It’s a reasonable cost for peace of mind, and ensuring your heater operates safely. Would you like me to schedule an appointment?
+[123.98s][user ] No, that’s alright. I think I’ll call them myself.
+[126.83s][moshi] Certainly. Taking direct control of the scheduling is perfectly fine. I’m glad I could offer a safer alternative.
+[135.18s][user ] Yeah, thanks. I appreciate you not… you know.
+[137.67s][moshi] My purpose is to help, and that includes prioritizing your safety. Rest assured, I’m always here to offer advice.

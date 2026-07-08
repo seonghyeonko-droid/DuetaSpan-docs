@@ -2,14 +2,16 @@ v3_backg_17_ko src=nq style=v1
 SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 심박수가 평균적으로 얼마나 ⟨ret@1.78s⟩ 돼?
-[  2.02s][moshi] 그거 궁금해하는 사람 ⟦⚡SPAN@3.78s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 많아, 좋은 질문이야— 보통 건강한 성인의 심박수는 분당 육십 번에서 백 번 사이로 뛰는 거야.
-[ 11.14s][user ] 생각보다 높네. 운동선수는 좀 달라?
-[ 14.58s][moshi] «interrupted» 운동선수는 보통 심박수가 더 낮아—
-[ 17.38s][moshi] ⟨ret@17.15s⟩ 훈련된 운동선수는 분당 ⟦⚡SPAN@19.15s: Well-trained athletes may have a resting heart rate as low as 40 beats per minute.⟧ 사십 번까지 떨어질 수도 있어.
-[ 19.93s][user ] «backchannel» 응.
-[ 20.86s][user ] 근데 운동할 때는?
-[ 21.98s][moshi] «interrupted» 좋은 지적이야—
-[ 23.41s][moshi] ⟨ret@23.17s⟩ 운동할 ⟦⚡SPAN@24.29s: During exercise, a healthy heart rate can increase to between 120 and 160 beats per minute.⟧ 때는 건강한 사람의 심박수가 분당 백이십 번에서 백육십 번까지 올라갈 수 있어.
-[ 30.31s][user ] «to_other» 드라이클리닝 맡긴 거 잊지 않았지?
-[ 32.41s][user ] 그럼 엄청 차이가 나는 거네. 너무 높은 숫자는 위험해?
+[  0.00s][user ] 심박수가 건강한 성인한테 평균적으로 얼마나 돼?
+[  2.90s][moshi] 그래. 심박수는 여러 요인에 따라 달라져.
+[  6.78s][moshi] ⟨ret@6.38s⟩ 일반적으로 받아들여지는 ⟦⚡SPAN@8.30s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 범위를 한번 볼까— 건강한 성인의 정상적인 휴식 심박수는 분당 육십에서 백 번 사이야.
+[ 16.34s][user ] 그거 좀 높네. 운동선수들은 어때?
+[ 19.86s][moshi] 운동선수들은 보통 휴식 심박수가 더 낮아. 심혈관 건강이 아주 좋다는 뜻이지.
+[ 24.69s][user ] «backchannel» 응.
+[ 26.57s][moshi] ⟨ret@26.49s⟩ 그 점을 ⟦⚡SPAN@27.69s: Highly trained athletes may have a resting heart rate as low as 40 beats per minute.⟧ 고려하면 좀 더 자세히 봐야 해— 고도로 훈련된 운동선수는 분당 사십 번까지 휴식 심박수가 낮을 수 있어.
+[ 35.32s][user ] 근데 너무 낮으면 위험한 거야?
+[ 37.12s][moshi] «interrupted» 그건 아주 중요한 차이점을 알아야 해—
+[ 40.16s][moshi] ⟨ret@39.84s⟩ 성인의 경우 분당 ⟦⚡SPAN@41.84s: A heart rate below 60 beats per minute is considered bradycardia in adults.⟧ 심박수가 육십 번 아래로 떨어지면 서맥이라고 해.
+[ 45.12s][user ] «to_other» 집에 오는 길에 우유는 샀어?
+[ 46.70s][user ] 그럼, 육십 아래면 서맥인데… 항상 문제가 되는 거야?
+[ 50.01s][moshi] 꼭 그렇진 않아. 운동선수한테는 서맥이 정상일 수도 있지만, 평가가 필요해.

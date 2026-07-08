@@ -2,54 +2,50 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 보여 줘.
-     4.49s  <ret> 발화 (turn1 첫 프레임)
-     4.73s  agent 발화 시작: <ret> 네, 버스 좌석 상황을 확인해 드릴게요. 5월 10일에 출발하는 버스가 두 대 있는데, 가격은 각
-     4.81s  user  발화 끝
-     6.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) There are two buses available on May tenth: one departin
-    14.27s  agent 발화 끝
-    14.73s  user  발화 시작: 오전 8시 거 괜찮은 것 같아. 그걸로 예약해 줘.
-    18.27s  <ret> 발화 (turn3 첫 프레임)
-    18.43s  agent 발화 시작: <ret> 네, 해당 출발 시간으로 예약을 완료해 드렸습니다. 예약 번호는 BX8729이고, 세 명으로 예약
-    18.57s  user  발화 끝
-    19.31s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.93s]: (tool result) Your booking is confirmed: confirmation number is BX8729
-    27.00s  agent 발화 끝
-    27.23s  user  발화 시작: 좋네. 음, 그 버스 수하물 규정은 어떻게 돼?
-    30.22s  <ret> 발화 (turn5 첫 프레임)
-    30.54s  agent 발화 시작: <ret> 여행 준비에 관해 좋은 질문이세요— 각 승객은 무게가 50파운드 이하인 휴대 수하물 하나와 위탁 
-    30.60s  user  발화 끝
-    32.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.81s]: (tool result) Each passenger is allowed one carry-on bag and one check
-    36.07s  user  발화 시작: 응.
-    36.56s  user  발화 끝
-    39.58s  agent 발화 끝
-    39.59s  user  발화 시작: 버스에 와이파이 있어?
-    40.58s  <ret> 발화 (turn8 첫 프레임)
-    40.98s  agent 발화 시작: <ret> 네, 승객분들이 이동 중에도 연결 상태를 유지할 수 있습니다. 버스에 와이파이가 제공되며, 속도는
-    41.19s  user  발화 끝
-    42.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.43s]: (tool result) Wi-Fi is available on the Chicago to Denver bus, with a 
-    50.48s  agent 발화 끝
-    50.68s  user  발화 시작: 알아두면 좋네. 아, 화장실도 있나?
-    53.87s  user  발화 시작: 음식은 살 수 있어?
-    54.05s  user  발화 끝
-    55.30s  user  발화 끝
-    55.30s  agent 발화 시작: 네, 승객 편의를 위해 버스에 화장실이 마련되어 있습니다. —
-    59.73s  <ret> 발화 (turn12 첫 프레임)
-    59.79s  agent 발화 끝
-    59.89s  agent 발화 시작: <ret> 음료와 음식에 대해서도 확인해 드릴게요. 샌드위치, 감자칩, 탄산음료 등 간식과 음료를 구매할 수
-    61.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.55s]: (tool result) Snacks and drinks are available for purchase on the bus,
-    67.86s  agent 발화 끝
-    67.95s  user  발화 시작: 좋네. 덴버 미술관에 대해서는…
-    70.58s  agent 발화 시작: 덴버는 훌륭한 미술관이 여러 곳 있는 멋진 예술 도시예요.
-    70.73s  user  발화 끝
-    75.02s  agent 발화 끝
-    75.11s  user  발화 시작: 콜럼버스 이전 미술품 컬렉션이 제일 좋은 곳은 어디야?
-    79.20s  <ret> 발화 (turn16 첫 프레임)
-    79.28s  user  발화 끝
-    79.52s  agent 발화 시작: <ret> 덴버 미술관이 콜럼버스 이전 미술품 컬렉션으로 유명합니다. 덴버 미술관에는 콜럼버스 이전 유물이 
-    81.04s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.24s]: (tool result) The Denver Art Museum’s pre-Columbian collection contain
-    88.13s  user  발화 시작: 와, 굉장하네. 버스 정류장에서 얼마나 떨어져 있어?
-    88.42s  agent 발화 끝
-    91.74s  <ret> 발화 (turn18 첫 프레임)
-    92.14s  agent 발화 시작: <ret> 거리를 확인하고 이동 시간을 알려 드릴게요.
-    92.20s  user  발화 끝
-    92.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.44s]: (tool result) The Denver Art Museum is 2.5 miles from the Denver Bus S
-    94.59s  agent 발화 끝
+     4.50s  <ret> 발화 (turn1 첫 프레임)
+     4.74s  agent 발화 시작: <ret> 알겠습니다. 그 경로의 버스 좌석 상황을 확인해 볼게요. 5월 10일에 출발하는 버스가 세 대가 
+     4.86s  user  발화 끝
+     6.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.30s]: (tool result) Three buses are available on May tenth: 8:00 AM, $250; 2
+    16.52s  agent 발화 끝
+    17.09s  user  발화 시작: 아침 8시 거 괜찮은 것 같아. 예약해 줄래?
+    20.01s  <ret> 발화 (turn3 첫 프레임)
+    20.17s  agent 발화 시작: <ret> 네, 아침 8시 버스 좌석을 예약해 드릴게요. 아침 8시 버스 예약이 완료됐습니다. 확인 번호는 
+    20.32s  user  발화 끝
+    21.05s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.08s]: (tool result) Your reservation is confirmed: bus departs Chicago at 8:
+    29.02s  agent 발화 끝
+    29.24s  user  발화 시작: 좋아! 그 버스가 오마하에 서는 거야?
+    32.05s  user  발화 끝
+    32.19s  agent 발화 시작: 그 버스 경로 정보를 잠깐 확인해 볼게요.
+    34.79s  user  발화 시작: 아, 오마하는 됐어. 수하물 규정은 어떻게 돼?
+    35.43s  agent 발화 끝
+    38.35s  user  발화 끝
+    38.39s  agent 발화 시작: 승객 한 분당 표준형 기내 수하물 하나와 위탁 수하물 하나를 무료로 부칠 수 있습니다.
+    43.86s  agent 발화 끝
+    43.92s  user  발화 시작: 그래, 알아 둬야겠다.
+    45.39s  <ret> 발화 (turn9 첫 프레임)
+    45.71s  agent 발화 시작: <ret> 이제, 여정 정보를 이메일로 보내 드릴까요? 확인 번호와 함께 여정 정보를 이메일 주소로 보내 드
+    45.90s  user  발화 끝
+    47.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.63s]: (tool result) Email sent to user's email with subject “Bus Itinerary” 
+    52.64s  user  발화 시작: 완벽해, 고마워.
+    52.75s  agent 발화 끝
+    54.14s  agent 발화 시작: 천만에요! 여행 계획을 세우는 데 도움을 드릴 수 있어서 기쁩니다. 미리 계획하면 여행 스트레스가 많이 줄어
+    54.25s  user  발화 끝
+    61.93s  agent 발화 끝
+    62.34s  user  발화 시작: 맞아. 음, 덴버 미술관에 있는 콜럼버스 이전 유물에 대해 아는 거 있어?
+    67.00s  agent 발화 시작: 오, 물론이죠! 덴버 미술관에는 훌륭한 소장품이 있는데, 특히 모체 문화의 도자기가 강점입니다.
+    67.15s  user  발화 끝
+    71.74s  user  발화 시작: 응.
+    72.19s  user  발화 끝
+    74.78s  agent 발화 끝
+    74.91s  agent 발화 시작: 모체 문화는 일상생활과 신화를 묘사한 매우 정교한 손잡이가 달린 항아리로 유명했습니다.
+    80.59s  user  발화 시작: 흥미롭네. 나스카 문화 유물도 있나?
+    80.88s  agent 발화 끝
+    82.89s  <ret> 발화 (turn17 첫 프레임)
+    83.05s  agent 발화 시작: <ret> 네, 물론입니다. 나스카 유물도 있습니다— 나스카 직물, 도자기, 그리고 기원후 900년에서 15
+    83.14s  user  발화 끝
+    84.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.59s]: (tool result) Denver Art Museum: Nazca collection includes textiles, p
+    92.22s  agent 발화 끝
+    93.10s  user  발화 시작: 정말 멋지다! 이제 여행이 정말 기대되네.
+    96.20s  user  발화 끝
+    96.59s  agent 발화 시작: 정말 잘됐네요! 방문 중에 새로운 좋아하는 문화를 발견하게 될지도 모르겠어요.
+   102.06s  agent 발화 끝

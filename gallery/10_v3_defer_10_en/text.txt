@@ -3,13 +3,13 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  5.09s][moshi] ⟨ret@5.01s⟩ Okay, searching ⟦⚡SPAN@6.21s: (tool result) Three pictures were found: "Paris_Eiffel_Tower.jpg", "Nice_Beach.png", and "Loire_Valley_Castle.⟧ your files for those photos… I found three photos from your France trip last year—Paris, Nice, and the Loire Valley.
-      CALL: {"function": "search_files", "arguments": {"keywords": ["France", "holiday"], "year": 2023, "exclude": ["thumbnail"]}}
-[ 14.15s][user ] Oh, excellent! And could you send the Paris one to my sister, Sarah?
-[ 18.31s][moshi] ⟨ret@18.00s⟩ Certainly, ⟦⚡SPAN@18.96s: (tool result) The file "Paris_Eiffel_Tower.jpg" was successfully sent to Sarah.⟧ I can send that image to Sarah… The photo of the Eiffel Tower has been sent to Sarah.
-      CALL: {"function": "send_file", "arguments": {"recipient": "Sarah", "file_name": "Paris_Eiffel_Tower.jpg"}}
-[ 23.63s][user ] Great, thanks. Uh, do you know what the average rainfall is in Reykjavik in December?
-[ 28.57s][moshi] That’s a good question. I'll need a moment to look that up for you.
-[ 32.89s][user ] Right.
-  ⟦⚡지연 SPAN 도착@32.52s: (tool result) The average rainfall in Reykjavik in December is 92 millimeters.⟧
-[ 33.47s][moshi] «deferred_result» ⟨ret@33.47s⟩ I have the information now… Reykjavik gets an average of ninety-two millimeters of rain in December.
+[  4.76s][moshi] ⟨ret@4.69s⟩ Certainly, I ⟦⚡SPAN@6.13s: (tool result) Four files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender.jpg", "Nice_Beach.jpg", and ⟧ can locate those images for you. I’ve found four pictures from your France trip last year, excluding thumbnails.
+      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": "2023", "exclude": "thumbnails"}}
+[ 13.84s][user ] Oh, great! Can you send “Paris_Eiffel_Tower.jpg” to my husband, David?
+[ 18.51s][moshi] ⟨ret@18.20s⟩ Absolutely, ⟦⚡SPAN@19.16s: (tool result) The file "Paris_Eiffel_Tower.jpg" was sent to David successfully.⟧ I can send that image right away. The image has been sent to David.
+      CALL: {"function": "send_file", "arguments": {"recipient": "David", "filename": "Paris_Eiffel_Tower.jpg"}}
+[ 23.10s][user ] Perfect, thank you. Uh, what was the weather like in Nice on July fifteenth?
+[ 27.58s][moshi] Let me check on that for you.
+[ 29.59s][user ] Okay, sounds good.
+  ⟦⚡지연 SPAN 도착@30.06s: (tool result) The weather in Nice on July fifteenth, 2023 was twenty-eight degrees Celsius and sunny.⟧
+[ 31.01s][moshi] «deferred_result» ⟨ret@31.01s⟩ Right, I have that weather information now. On July fifteenth, 2023, Nice had twenty-eight degrees Celsius and sunshine.

@@ -1,61 +1,65 @@
 # v3_mcp_01_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 나 그거 만들어 줘. 애플 웹사이트 상세 지도를, 제품에 집중해서.
-     4.58s  <ret> 발화 (turn1 첫 프레임)
-     4.80s  agent 발화 시작: <ret> 네, 애플 웹사이트 지도를 만들어 드릴게요— 그 지도를 살펴보니 애플 사이트에 제품 관련 페이지가
-     4.99s  user  발화 끝
-     5.94s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.16s]: (tool result) The tavily-map tool found 123 pages on apple.com related
-    16.34s  agent 발화 끝
-    16.41s  user  발화 시작: 음, 그거 흥미롭네. 아이폰 십오 프로 맥스에만 집중해서 지도를 만들고, 가격도 알려 줘.
-    22.30s  <ret> 발화 (turn3 첫 프레임)
-    22.45s  agent 발화 시작: <ret> 네, 아이폰으로 검색 범위를 좁혀 볼게요— 지도를 보니 아이폰 십오 프로 맥스는 저장 용량에 따라
-    22.61s  user  발화 끝
-    24.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) The tavily-map tool found iPhone 15 Pro Max pages listin
-    33.08s  agent 발화 끝
-    33.58s  user  발화 시작: 가격대가 꽤 넓네. 저장 용량 옵션은 뭐가 있어?
-    36.76s  <ret> 발화 (turn5 첫 프레임)
-    36.84s  agent 발화 시작: <ret> 네, 사용 가능한 저장 용량에 대해 알아볼게요— 아이폰 십오 프로 맥스는 이백오십육 기가바이트, 
-    37.10s  user  발화 끝
-    38.36s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.69s]: (tool result) The tavily-map tool found iPhone 15 Pro Max storage opti
-    47.92s  agent 발화 끝
-    48.02s  user  발화 시작: 알았어, 좋아. 뉴욕 여행을 계획 중인데, 이백오십육 기가바이트 모델이 재고로 있는 애플 스토어를 찾아 줘.
-    55.55s  <ret> 발화 (turn7 첫 프레임)
-    55.78s  agent 발화 시작: <ret> 네, 재고가 있는 애플 스토어를 찾아볼게요— 뉴욕 소호에 있는 애플 스토어에 현재 이백오십육 기가
-    55.89s  user  발화 끝
-    56.51s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.44s]: (tool result) The Apple Store in SoHo, New York, shows 14 iPhone 15 Pr
-    66.94s  user  발화 시작: 브로드웨이에 있는 곳이야?
-    66.96s  agent 발화 끝
-    68.57s  user  발화 시작: 브로드웨이에 있는 곳이야?
-    68.73s  user  발화 끝
-    70.21s  agent 발화 시작: 네, 뉴욕 소호의 브로드웨이에 위치한 애플 스토어입니다.
-    70.31s  user  발화 끝
-    73.72s  agent 발화 끝
-    74.14s  user  발화 시작: 그래. 거기가 매장 픽업도 가능해?
-    76.63s  <ret> 발화 (turn12 첫 프레임)
-    76.86s  agent 발화 시작: <ret> 네, 매장 픽업 옵션을 확인해 볼게요— 소호 매장에서 해당 모델의 매장 픽업이 가능하며, 픽업까지
-    77.05s  user  발화 끝
-    77.13s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.92s]: (tool result) The Apple Store SoHo offers in-store pickup for iPhone 1
-    82.25s  user  발화 시작: 어어.
-    83.07s  user  발화 끝
-    86.07s  user  발화 시작: 좋아. 데이비드 오세이 이름으로 픽업 예약을 해 줘.
-    86.09s  agent 발화 끝
-    89.69s  <ret> 발화 (turn15 첫 프레임)
-    89.76s  agent 발화 시작: <ret> 네, 예약을 진행해 드릴게요— 데이비드 오세이 님, 아이폰 십오 프로 맥스 이백오십육 기가바이트 
-    89.91s  user  발화 끝
-    90.65s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.15s]: (tool result) Reservation confirmed: David Osei, iPhone 15 Pro Max (25
-   100.09s  agent 발화 끝
-   101.63s  user  발화 시작: 완벽해. 구형 아이폰에 대한 교환 프로그램도 제공해?
-   105.14s  agent 발화 시작: 애플은 정기적으로 교환 프로그램을 제공하지만, 구체적인 금액은 현재 아이폰 모델과 상태에 따라 크게 달라질 
-   105.42s  user  발화 끝
-   113.48s  agent 발화 끝
-   115.88s  user  발화 시작: 아이폰 십일이 있어. 예상되는 교환 금액은 얼마야?
-   119.49s  <ret> 발화 (turn19 첫 프레임)
-   119.67s  user  발화 끝
-   119.80s  agent 발화 시작: <ret> 네, 현재 아이폰 십일 교환 금액을 알아볼게요— 애플은 현재 아이폰 십일이 양호한 상태일 경우 백
-   119.99s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.94s]: (tool result) Apple estimates a trade-in value of $150 for an iPhone 1
-   128.56s  agent 발화 끝
-   128.76s  user  발화 시작: 나쁘지 않네. 도와줘서 고마워, 교수님.
-   131.95s  user  발화 끝
-   131.97s  agent 발화 시작: 도와드릴 수 있어서 기쁩니다. 마치 과거 서아프리카의 무역로를 탐색하는 것처럼 현대 시장을 탐색하는 데 도움
-   142.32s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
+     2.83s  <ret> 발화 (turn1 첫 프레임)
+     3.07s  agent 발화 시작: <ret> 자, 애플 제품의 디지털 지도를 그려볼까요… 지도에서 보시는 것처럼 애플은 제품을 열일곱 가지 뚜
+     3.23s  user  발화 끝
+     4.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) The map shows seventeen product categories on apple.com:
+    11.87s  agent 발화 끝
+    12.03s  user  발화 시작: 열일곱 개나 돼? 좀 많네. 손으로 직접 만질 수 있는 기기만 딱 골라서 보여줄 수 있어?
+    17.69s  <ret> 발화 (turn3 첫 프레임)
+    17.84s  agent 발화 시작: <ret> 네, 물리적인 기기에만 초점을 맞추도록 범위를 좁혀볼게요… 지도에는 아이폰, 아이패드, 맥, 애플
+    18.05s  user  발화 끝
+    19.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) The map shows five device categories on apple.com: iPhon
+    28.18s  agent 발화 끝
+    28.72s  user  발화 시작: 좋아. 그럼 아이폰은 지금 애플에서 직접 살 수 있는 모델이 뭐야?
+    32.53s  <ret> 발화 (turn5 첫 프레임)
+    32.61s  agent 발화 시작: <ret> 네, 가장 최신 아이폰 모델 정보를 찾아볼게요… 애플은 현재 아이폰 15, 15 플러스, 15 프
+    32.84s  user  발화 끝
+    34.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.50s]: (tool result) Apple currently offers the iPhone 15, iPhone 15 Plus, iP
+    41.61s  agent 발화 끝
+    41.81s  user  발화 시작: 프로 맥스… 기본 모델 가격은 얼마야?
+    44.62s  <ret> 발화 (turn7 첫 프레임)
+    44.87s  agent 발화 시작: <ret> 아이폰 15 프로 맥스 기본 가격을 알아볼까요… 256기가바이트 저장 공간을 갖춘 기본 아이폰 1
+    45.00s  user  발화 끝
+    46.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.81s]: (tool result) The iPhone 15 Pro Max starts at $1,199 for the 256GB mod
+    54.36s  user  발화 시작: 와, 천백 달러 넘네… [interrupting] 혹시 보상 판매 프로그램 같은 건 있어?
+    54.37s  agent 발화 끝
+    59.50s  agent 발화 시작: 그건 꽤 큰 투자네요—
+    59.64s  user  발화 끝
+    60.14s  user  발화 시작: 내 아이폰 11을 반납하면 어느 정도 크레딧을 받을 수 있을까?
+    60.88s  agent 발화 끝
+    64.16s  <ret> 발화 (turn11 첫 프레임)
+    64.19s  agent 발화 시작: <ret> 아, 아주 실용적인 질문이네요. 아이폰 11에 대한 애플의 보상 판매 가격을 알아보도록 할게요.
+    64.44s  user  발화 끝
+    65.36s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.04s]: (tool result) Apple currently offers up to $80 credit for an iPhone 11
+    71.08s  agent 발화 시작: 아이폰 11의 상태에 따라 최대 80달러의 크레딧을 받을 수 있어요.
+    71.23s  agent 발화 끝
+    75.25s  agent 발화 끝
+    75.58s  user  발화 시작: 80달러? 그건… 별로 좋지 않네. 그래도 괜찮아.
+    79.83s  agent 발화 시작: 물론, 휴대폰의 상태와 저장 용량에 따라 달라지는 건 당연하죠.
+    79.92s  user  발화 끝
+    83.61s  agent 발화 시작: 새 기기에 대해 특별히 고려하고 있는 저장 용량이 있으세요?
+    83.80s  agent 발화 끝
+    87.07s  agent 발화 끝
+    87.09s  user  발화 시작: 최소 500기가바이트는 갖고 싶어. 15 프로 맥스 500기가바이트로 올리면 가격이 얼마나 더 올라?
+    93.18s  <ret> 발화 (turn17 첫 프레임)
+    93.34s  agent 발화 시작: <ret> 500기가바이트로 업그레이드하는 데 드는 추가 비용을 알아볼까요… 512기가바이트 저장 공간을 갖
+    93.53s  user  발화 끝
+    95.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) The iPhone 15 Pro Max with 512GB of storage costs $1,399
+   103.36s  agent 발화 끝
+   103.70s  user  발화 시작: 그러면 200달러 더 비싸네. 흠.
+   105.50s  user  발화 끝
+   105.54s  agent 발화 시작: 상당한 가격 상승이죠. 비용과 저장 용량 사이의 균형을 맞춰야 할 것 같아요.
+   110.84s  user  발화 시작: 이 모든 것에 학생 할인을 받을 수 있는 방법이 있을까?
+   110.95s  agent 발화 끝
+   114.07s  <ret> 발화 (turn21 첫 프레임)
+   114.08s  user  발화 끝
+   114.14s  agent 발화 시작: <ret> 학생 할인이 가능한 교육용 가격 옵션을 알아볼까요… 애플의 학생 할인은 맥과 아이패드에 적용되지만
+   114.57s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.01s]: (tool result) Apple offers discounts on Macs and iPads for students an
+   122.67s  agent 발화 끝
+   124.45s  user  발화 시작: 실망스럽네.
+   125.37s  agent 발화 시작: 네, 아이폰은
+   125.54s  user  발화 끝
+   126.70s  agent 발화 끝

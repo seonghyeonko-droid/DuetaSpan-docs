@@ -2,13 +2,13 @@ v3_mcp_04_en src=mcp style=v2
 SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten ⟨ret@3.88s⟩ point one?
-[  4.19s][moshi] Certainly, ⟦⚡SPAN@4.84s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. The browser is now identifying as SuperCrawler, version ten point one, as you requested.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten ⟨ret@3.94s⟩ point one?
+[  4.25s][moshi] Certainly, ⟦⚡SPAN@4.90s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. The user agent has been successfully changed to SuperCrawler version ten point one.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[ 13.89s][user ] Hmm, that seems…aggressive. Can we change it to something a little less noticeable? Like, just ⟨ret@21.28s⟩ “MyBrowser”?
-[ 21.52s][moshi] Of ⟦⚡SPAN@22.40s: (tool result) The user agent is now set to MyBrowser.⟧ course, a more subtle approach is perfectly reasonable. I have updated the user agent to simply “MyBrowser” for a less conspicuous profile.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyBrowser"}}
-[ 32.50s][user ] Better. Now, could you find me the current price of a pain au chocolat at Dominique Ansel Bakery?
-[ 38.93s][moshi] ⟨ret@38.85s⟩ A ⟦⚡SPAN@39.81s: (tool result) A pain au chocolat at Dominique Ansel Bakery currently costs six dollars and fifty cents.⟧ delightful choice—I can certainly check that for you. The pain au chocolat at Dominique Ansel Bakery is currently priced at six dollars and fifty cents.
-      CALL: {"function": "search_web", "arguments": {"query": "Dominique Ansel Bakery pain au chocolat price"}}
-[ 48.89s][user ] Six fifty? [surprised] That's…a lot. Okay, never mind the pastry for now.
+[ 13.63s][user ] Hmm, that seems… aggressive. Could you switch it back to the ⟨ret@18.17s⟩ default?
+[ 18.41s][moshi] Of ⟦⚡SPAN@19.21s: (tool result) The user agent has been reset to the default browser setting.⟧ course, reverting to the default is simple. The user agent is now back to your browser’s default setting.
+      CALL: {"function": "playwright_default_user_agent", "arguments": {}}
+[ 25.65s][user ] Good. Now, uh, do you know anything about madeleines?
+[ 29.10s][moshi] [laugh] Madeleines are a lovely little French treat—shell-shaped sponge cakes, traditionally flavored with lemon.
+[ 35.47s][user ] Right. Are they… difficult to make? I’ve heard about the batter needing to rest.
+[ 40.68s][moshi] Resting the batter is essential; it allows the gluten to relax and creates that delicate crumb. It’s not *difficult*, just precise.

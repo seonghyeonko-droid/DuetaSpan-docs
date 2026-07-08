@@ -1,45 +1,51 @@
 # v3_fake__14_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It'
-     6.16s  user  발화 끝
-     6.17s  <ret> 발화 (turn1 첫 프레임)
-     6.40s  agent 발화 시작: <ret> That’s a lovely question; music and memory are often i
-     8.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: Björn Ulvaeus wrote “My Love, My Life” as part of the musical Mamma Mi
-    12.47s  agent 발화 시작: Björn Ulvaeus is credited with writing “My Love, My Life” fo
-    12.51s  agent 발화 끝
-    18.59s  user  발화 시작: Oh, Björn Ulvaeus. I knew it sounded familiar…
-    18.67s  agent 발화 끝
-    22.02s  <ret> 발화 (turn4 첫 프레임)
-    22.17s  agent 발화 시작: <ret> It’s not surprising you recognized his style; he’s res
-    22.39s  user  발화 끝
-    24.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: Benny Andersson collaborated with Björn Ulvaeus on many songs for ABBA
-    28.98s  agent 발화 시작: Björn Ulvaeus frequently collaborated with Benny Andersson, 
-    29.07s  agent 발화 끝
-    34.12s  user  발화 시작: Mm-hmm.
-    34.85s  user  발화 끝
-    36.56s  agent 발화 시작: Their partnership really defined a generation of popular mus
-    36.68s  agent 발화 끝
-    42.39s  agent 발화 끝
-    42.50s  user  발화 시작: Absolutely! Was “Waterloo” also written by him?
-    46.27s  <ret> 발화 (turn9 첫 프레임)
-    46.59s  agent 발화 시작: <ret> Let me quickly confirm that for you… Yes, “Waterloo” w
-    46.61s  user  발화 끝
-    46.77s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.11s]: Björn Ulvaeus and Benny Andersson composed “Waterloo,” which won the E
-    54.47s  <ret> 발화 (turn10 첫 프레임)
-    54.86s  agent 발화 시작: <ret> Considering the creative process, the interplay betwee
-    55.02s  agent 발화 끝
-    56.47s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.16s]: (tool result) Current time in Honolulu is 02:37 PM HST.
-    61.02s  agent 발화 끝
-    62.63s  user  발화 시작: I bet! It's amazing how they worked together. But— I mean, d
-    69.76s  user  발화 끝
-    69.88s  <ret> 발화 (turn12 첫 프레임)
-    69.96s  agent 발화 시작: <ret> They were the primary songwriters, though other member
-    71.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Agnetha Fältskog and Anni-Frid Lyngstad contributed vocals and some ly
-    76.08s  agent 발화 시작: Agnetha Fältskog and Anni-Frid Lyngstad also had creative in
-    76.21s  agent 발화 끝
-    82.42s  agent 발화 끝
-    82.47s  user  발화 시작: That’s interesting. So, it wasn’t *just* Björn and Benny.
-    86.77s  user  발화 끝
-    87.01s  agent 발화 시작: Exactly. Collaboration is key in many artistic endeavors, en
-    94.19s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
+     6.06s  user  발화 끝
+     6.40s  agent 발화 시작: That's a lovely question; it’s a particularly poignant piece
+    11.08s  <ret> 발화 (turn2 첫 프레임)
+    11.40s  agent 발화 끝
+    11.40s  agent 발화 시작: <ret> Let me quickly confirm the composer for you. Björn Ulv
+    12.68s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.65s]: Björn Ulvaeus wrote “My Love, My Life,” which appeared on the ABBA alb
+    21.80s  user  발화 시작: Oh, really? I always thought it was Benny Andersson.
+    21.88s  agent 발화 끝
+    25.23s  agent 발화 시작: It's a common mistake; Benny and Björn collaborated extensiv
+    25.41s  user  발화 끝
+    31.63s  <ret> 발화 (turn5 첫 프레임)
+    31.79s  agent 발화 시작: <ret> I can search for details of their collaboration if you
+    31.80s  agent 발화 끝
+    33.23s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.43s]: Benny Andersson and Björn Ulvaeus formed the songwriting partnership t
+    39.38s  user  발화 시작: Mm-hmm.
+    39.87s  user  발화 끝
+    42.90s  agent 발화 시작: Their creative partnership was truly remarkable, a synergy t
+    43.06s  agent 발화 끝
+    49.89s  user  발화 시작: I wonder if they ever wrote a song about forgetting things?
+    49.89s  agent 발화 끝
+    53.78s  user  발화 끝
+    53.84s  agent 발화 시작: [laugh] That's a fascinating thought, given my line of work!
+    62.27s  <ret> 발화 (turn10 첫 프레임)
+    62.43s  agent 발화 시작: <ret> Let’s see if any ABBA songs directly address memory lo
+    62.56s  agent 발화 끝
+    63.23s  ⚡SPAN 주입(IRRELEVANT) [d'=0.96s / d_lead=4.50s]: (tool result) Current time in Honolulu is 08:17 AM on Friday, November
+    72.46s  user  발화 시작: That's too bad. Still, their songs always feel so…emotional.
+    72.77s  agent 발화 끝
+    78.57s  user  발화 끝
+    79.02s  agent 발화 시작: Absolutely, they evoke a lot of feeling; that's part of thei
+    85.43s  <ret> 발화 (turn13 첫 프레임)
+    85.58s  agent 발화 시작: <ret> Perhaps that’s why it feels so relatable, even without
+    85.73s  agent 발화 끝
+    87.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.43s]: ABBA’s songs often explore themes of love, loss, and the complexities 
+   101.40s  agent 발화 끝
+   101.57s  user  발화 시작: So, Ulvaeus wrote the music and Andersson wrote the lyrics s
+   106.89s  user  발화 끝
+   107.07s  agent 발화 시작: Not quite; they collaborated on both music and lyrics, often
+   115.00s  <ret> 발화 (turn16 첫 프레임)
+   115.15s  agent 발화 시작: <ret> It wasn’t a rigid division of labor, but a very fluid 
+   115.18s  agent 발화 끝
+   117.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.68s]: Björn Ulvaeus and Benny Andersson frequently co-wrote both the music a
+   128.87s  user  발화 시작: That makes sense, I guess. Thanks for clearing that up!
+   128.88s  agent 발화 끝
+   133.04s  user  발화 끝
+   133.09s  agent 발화 시작: You’re very welcome. It’s always a pleasure to discuss the i
+   140.13s  agent 발화 끝
