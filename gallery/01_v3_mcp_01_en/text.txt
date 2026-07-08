@@ -2,28 +2,28 @@ v3_mcp_01_en src=mcp style=v2
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need tickets for four people from Los Angeles, California to San Francisco, California on August fifteenth at four ⟨ret@7.06s⟩ PM.
-[  7.66s][moshi] Let ⟦⚡SPAN@8.34s: (tool result) There is a bus departing Los Angeles at four PM on August fifteenth, arriving in San Francisco a⟧ me quickly check bus availability for that route. A bus is available on August fifteenth at four PM for two hundred forty dollars.
+[  0.00s][user ] I need tickets for four people from Los Angeles, California to San Francisco, California on August fifteenth at four PM.
+[  7.66s][moshi] ⟨ret@7.66s⟩ Let me quickly ⟦⚡SPAN@8.94s: (tool result) There is a bus departing Los Angeles at four PM on August fifteenth, arriving in San Francisco a⟧ check bus availability for that route. A bus is available on August fifteenth at four PM for two hundred forty dollars.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "four PM"}}
-[ 16.31s][user ] Ten PM is really late. Are there any ⟨ret@19.57s⟩ earlier buses?
-[ 20.17s][moshi] Let’s ⟦⚡SPAN@20.85s: (tool result) Buses depart Los Angeles for San Francisco at noon, two PM, four PM, and eight PM on August fift⟧ see what other options are available on that day.
+[ 16.31s][user ] Ten PM is really late. Are there any earlier buses?
+[ 20.17s][moshi] ⟨ret@20.17s⟩ Let’s see what ⟦⚡SPAN@21.45s: (tool result) Buses depart Los Angeles for San Francisco at noon, two PM, four PM, and eight PM on August fift⟧ other options are available on that day.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth"}}
 [ 23.25s][moshi] Buses depart at noon, two PM, four PM, and eight PM on August fifteenth.
-[ 29.74s][user ] Hmm, the noon bus sounds good. How much is ⟨ret@33.28s⟩ that one?
-[ 33.87s][moshi] I can certainly ⟦⚡SPAN@34.96s: (tool result) The noon bus costs two hundred dollars for four passengers.⟧ check the price for the noon departure. The noon bus costs two hundred dollars for all four of you.
+[ 29.74s][user ] Hmm, the noon bus sounds good. How much is that one?
+[ 33.87s][moshi] ⟨ret@33.88s⟩ I can certainly check the ⟦⚡SPAN@35.56s: (tool result) The noon bus costs two hundred dollars for four passengers.⟧ price for the noon departure. The noon bus costs two hundred dollars for all four of you.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "noon"}}
-[ 40.13s][user ] Okay, let's book the ⟨ret@41.73s⟩ noon bus.
-[ 42.32s][moshi] ⟦⚡SPAN@42.77s: (tool result) Your booking is confirmed: confirmation number is 789456, departing noon August fifteenth.⟧ [laugh] Excellent! I’m happy to finalize that for you.
+[ 40.13s][user ] Okay, let's book the noon bus.
+[ 42.32s][moshi] ⟨ret@42.33s⟩ [laugh] Excellent! ⟦⚡SPAN@43.37s: (tool result) Your booking is confirmed: confirmation number is 789456, departing noon August fifteenth.⟧ I’m happy to finalize that for you.
       CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"number_of_passengers": "4", "origin_city": "Los Angeles", "origin_state": "California", "destination_city": "San Francisco", "destination_state": "California", "departure_date": "August fifteenth", "departure_time": "noon", "action": "book"}}
 [ 45.73s][moshi] Your booking is confirmed with confirmation number 789456.
-[ 51.41s][user ] Great! Can you send me ⟨ret@53.70s⟩ the details?
-[ 54.29s][moshi] Certainly, I ⟦⚡SPAN@55.30s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation".⟧ can send those to your registered email address.
+[ 51.41s][user ] Great! Can you send me the details?
+[ 54.29s][moshi] ⟨ret@54.30s⟩ Certainly, I can send ⟦⚡SPAN@55.90s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation".⟧ those to your registered email address.
       CALL: {"function": "Email_2_SendEmail", "arguments": {"recipient": "user@example.com", "subject": "Bus Booking Confirmation", "body": "Confirmation number 789456, departing noon August fifteenth from Los Angeles to San Francisco."}}
 [ 57.99s][moshi] The email with your booking details has just been sent.
 [ 60.84s][user ] Perfect. That’s really helpful. Actually, um, do coral reefs help protect coastlines from erosion?
 [ 67.99s][moshi] They absolutely do. Coral reefs act as natural barriers, dissipating wave energy.
-[ 74.66s][user ] But how much erosion do they actually prevent? I— I mean, is it a ⟨ret@80.17s⟩ significant amount?
-[ 80.77s][moshi] That’s a ⟦⚡SPAN@82.01s: (tool result) Coral reefs reduce wave energy by ninety-seven percent, decreasing coastal erosion.⟧ very important question, regarding coastal protection. Coral reefs can reduce wave energy by as much as ninety-seven percent.
+[ 74.66s][user ] But how much erosion do they actually prevent? I— I mean, is it a significant amount?
+[ 80.77s][moshi] ⟨ret@80.77s⟩ That’s a very important ⟦⚡SPAN@82.61s: (tool result) Coral reefs reduce wave energy by ninety-seven percent, decreasing coastal erosion.⟧ question, regarding coastal protection. Coral reefs can reduce wave energy by as much as ninety-seven percent.
 [ 89.38s][user ] Wow, ninety-seven percent! That's incredible. So, what happens if reefs are damaged or destroyed?
 [ 97.46s][moshi] The coastline becomes significantly more vulnerable to storms and erosion. It’s a serious issue.
 [105.12s][user ] [sigh] It sounds pretty dire. Is there anything being done to restore damaged reefs?

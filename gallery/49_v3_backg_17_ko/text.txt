@@ -2,8 +2,8 @@ v3_backg_17_ko src=nq style=v1
 SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이글스랑 카우보이스 중에 누가 더 많이 이겼어요? 항상 비슷비슷한 ⟨ret@3.40s⟩ 것 같아요.
-[  4.00s][moshi] 네, 축구 ⟦⚡SPAN@5.88s: The Dallas Cowboys have won 738 regular season games, while the Philadelphia Eagles have won 617.⟧ 팬분들 사이에서 자주 나오는 질문이에요. 카우보이스가 전체적으로 더 많이 이겼는데, 칠백삼십팔 경기이고 이글스는 육백십칠 경기예요.
+[  0.00s][user ] 이글스랑 카우보이스 중에 누가 더 많이 이겼어요? 항상 비슷비슷한 것 같아요.
+[  4.00s][moshi] ⟨ret@4.00s⟩ 네, 축구 팬분들 사이에서 ⟦⚡SPAN@6.48s: The Dallas Cowboys have won 738 regular season games, while the Philadelphia Eagles have won 617.⟧ 자주 나오는 질문이에요. 카우보이스가 전체적으로 더 많이 이겼는데, 칠백삼십팔 경기이고 이글스는 육백십칠 경기예요.
 [ 14.71s][user ] 와, 꽤 큰 차이네요! 백 경기 넘게요.
 [ 17.55s][moshi] 네, 꽤 큰 차이긴 하지만, 전체 기록과는 상관없이 두 팀의 경쟁은 여전히 치열해요.
 [ 23.08s][user ] «to_other» 저, 집에 오는 길에 우유 사 오셨어요?

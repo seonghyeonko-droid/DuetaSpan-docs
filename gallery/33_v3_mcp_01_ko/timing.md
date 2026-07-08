@@ -2,38 +2,38 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 네, 로스앤젤레스에서 샌프란시스코까지 8월 15일 오후 4시에 4분 예매를 원하시나요?
-     5.39s  <ret> 발화 (turn1 첫 프레임)
      5.98s  agent 발화 시작: <ret> 잠시 버스 좌석 상황을 확인해 볼게요. 8월 15일 오후 4시에 240달러짜리 버스가 있습니다.
+     5.99s  <ret> 발화 (turn1 첫 프레임)
      6.16s  user  발화 끝
-     7.07s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.58s]: (tool result) There is a bus departing Los Angeles at four PM on Augus
+     7.67s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.58s]: (tool result) There is a bus departing Los Angeles at four PM on Augus
     12.60s  agent 발화 끝
     12.78s  user  발화 시작: 오후 10시는 너무 늦네요. 더 일찍 가는 버스가 있나요?
-    15.61s  <ret> 발화 (turn3 첫 프레임)
     16.20s  agent 발화 시작: <ret> 그날 다른 옵션이 있는지 한번 알아볼게요.
+    16.21s  <ret> 발화 (turn3 첫 프레임)
     16.39s  user  발화 끝
-    16.65s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.40s]: (tool result) Buses depart Los Angeles for San Francisco at noon, two 
+    17.25s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.40s]: (tool result) Buses depart Los Angeles for San Francisco at noon, two 
     18.60s  agent 발화 끝
     18.94s  agent 발화 시작: 8월 15일에는 정오, 오후 2시, 오후 4시, 오후 8시에 버스가 출발합니다.
     24.91s  user  발화 시작: 흠, 정오 버스가 괜찮겠네요. 그 버스는 얼마인가요?
     24.96s  agent 발화 끝
-    28.20s  <ret> 발화 (turn6 첫 프레임)
     28.80s  agent 발화 시작: <ret> 정오 출발 버스의 가격을 확인해 드릴 수 있습니다. 정오 버스는 4분 모두 200달러입니다.
+    28.80s  <ret> 발화 (turn6 첫 프레임)
     28.93s  user  발화 끝
-    30.68s  ⚡SPAN 주입 [d'=2.48s / d_lead=4.27s]: (tool result) The noon bus costs two hundred dollars for four passenge
+    31.28s  ⚡SPAN 주입 [d'=2.48s / d_lead=4.27s]: (tool result) The noon bus costs two hundred dollars for four passenge
     34.00s  user  발화 시작: 좋아요, 정오 버스로 예매해 주세요.
     34.36s  agent 발화 끝
-    36.09s  <ret> 발화 (turn8 첫 프레임)
     36.68s  agent 발화 시작: <ret> [laugh] 좋습니다! 예약을 마무리해 드릴게요.
+    36.69s  <ret> 발화 (turn8 첫 프레임)
     36.87s  user  발화 끝
-    39.45s  ⚡SPAN 주입 [d'=3.36s / d_lead=3.42s]: (tool result) Your booking is confirmed: confirmation number is 789456
     39.84s  agent 발화 시작: 예약이 완료되었고, 확인 번호는 789456입니다.
+    40.05s  ⚡SPAN 주입 [d'=3.36s / d_lead=3.42s]: (tool result) Your booking is confirmed: confirmation number is 789456
     40.09s  agent 발화 끝
     43.77s  agent 발화 끝
     43.84s  user  발화 시작: 잘 됐네요! 상세 정보를 보내주실 수 있나요?
-    46.41s  <ret> 발화 (turn11 첫 프레임)
     47.01s  agent 발화 시작: <ret> 물론이죠, 등록된 이메일 주소로 보내드릴 수 있습니다.
+    47.01s  <ret> 발화 (turn11 첫 프레임)
     47.07s  user  발화 끝
-    48.01s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.56s]: (tool result) Email sent to user@example.com with subject "Bus Booking
+    48.61s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.56s]: (tool result) Email sent to user@example.com with subject "Bus Booking
     50.57s  agent 발화 끝
     50.74s  agent 발화 시작: 예약 정보가 담긴 이메일이 방금 발송되었습니다.
     53.34s  user  발화 시작: 완벽하네요. 정말 도움이 많이 됐어요. 아, 혹시 산호초가 해안선을 침식으로부터 보호하는 데 도움이 되나요?
@@ -42,10 +42,10 @@
     60.53s  user  발화 끝
     65.94s  agent 발화 끝
     66.83s  user  발화 시작: 하지만 실제로 얼마나 많은 침식을 막는 건가요? 그러니까, 상당한 양인가요?
-    71.53s  <ret> 발화 (turn16 첫 프레임)
     72.12s  agent 발화 시작: <ret> 해안 보호와 관련해서는 아주 중요한 질문입니다. 산호초는 파도의 에너지를 최대 97%까지 줄일 수
+    72.13s  <ret> 발화 (turn16 첫 프레임)
     72.19s  user  발화 끝
-    74.17s  ⚡SPAN 주입 [d'=2.64s / d_lead=4.02s]: (tool result) Coral reefs reduce wave energy by ninety-seven percent, 
+    74.77s  ⚡SPAN 주입 [d'=2.64s / d_lead=4.02s]: (tool result) Coral reefs reduce wave energy by ninety-seven percent, 
     79.01s  user  발화 시작: 와, 97%나요! 정말 놀랍네요. 그럼 산호초가 손상되거나 파괴되면 어떻게 되나요?
     79.16s  agent 발화 끝
     85.86s  user  발화 끝

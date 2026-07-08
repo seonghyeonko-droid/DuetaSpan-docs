@@ -2,24 +2,24 @@ v3_mcp_02_ko src=mcp style=v3
 SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 톈쯔팡 주소가 ⟨ret@1.71s⟩ 어디야?
-[  2.31s][moshi] 음, 잠깐 찾아볼게요— 톈쯔팡은 중국 ⟦⚡SPAN@6.51s: (tool result) Tianzifang is located at Taikang Road, Huangpu District, Shanghai, China.⟧ 상하이 황푸구 타이캉루에 있어요.
+[  0.00s][user ] 톈쯔팡 주소가 어디야?
+[  2.31s][moshi] ⟨ret@2.31s⟩ 음, 잠깐 찾아볼게요— 톈쯔팡은 중국 상하이 ⟦⚡SPAN@7.12s: (tool result) Tianzifang is located at Taikang Road, Huangpu District, Shanghai, China.⟧ 황푸구 타이캉루에 있어요.
 [  8.99s][user ] 아, 상하이에 있구나… 거기로 갈까 생각 중이었어. 거기 주변에 맛있는 빵집 있어?
 [ 13.84s][moshi] 상하이는 정말 멋진 도시이고, 톈쯔팡은 꽤 매력적인 곳이에요. 그 지역의 특정 빵집은 잘 모르겠지만, 근처에 있는 빵집을 찾아볼 수 있어요.
-[ 24.62s][user ] 그래, 찾아 줘! 톈쯔팡에서 반 마일 안에 있는 최고 평점 빵집 세 ⟨ret@29.48s⟩ 곳을 찾아줘.
-[ 30.07s][moshi] ⟦⚡SPAN@29.72s: (tool result) The top three bakeries are Baker & Spice (4.6 stars, 210 Fumin Road), Lost Heaven Bakery (4.5 st⟧ 지금 빵집을 검색 중이에요— 베이커 앤 스파이스, 로스트 헤븐 베이커리, 르 포르니엘이 반 마일 안에 있는 최고 평점 빵집 세 곳이에요.
+[ 24.62s][user ] 그래, 찾아 줘! 톈쯔팡에서 반 마일 안에 있는 최고 평점 빵집 세 곳을 찾아줘.
+[ 30.07s][moshi] ⟨ret@30.08s⟩ ⟦⚡SPAN@30.32s: (tool result) The top three bakeries are Baker & Spice (4.6 stars, 210 Fumin Road), Lost Heaven Bakery (4.5 st⟧ 지금 빵집을 검색 중이에요— 베이커 앤 스파이스, 로스트 헤븐 베이커리, 르 포르니엘이 반 마일 안에 있는 최고 평점 빵집 세 곳이에요.
       CALL: {"function": "maps_search_detail", "arguments": {"query": "bakeries", "location": "Tianzifang, Taikang Road, Huangpu District, Shanghai, China", "radius": "0.5 miles", "sort_by": "rating", "limit": "3"}}
-[ 38.88s][user ] 로스트 헤븐 베이커리 이름이 재밌네. 웹사이트 ⟨ret@41.87s⟩ 있어?
-[ 42.46s][moshi] [웃음] ⟦⚡SPAN@43.39s: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.⟧ 로스트 헤븐 베이커리에 웹사이트가 있네요.
+[ 38.88s][user ] 로스트 헤븐 베이커리 이름이 재밌네. 웹사이트 있어?
+[ 42.46s][moshi] ⟨ret@42.47s⟩ [웃음] 로스트 ⟦⚡SPAN@43.99s: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.⟧ 헤븐 베이커리에 웹사이트가 있네요.
 [ 46.03s][moshi] 웹사이트 주소는 lostheaven.com.cn이에요. 메뉴랑 위치 정보가 거기 있을 거예요.
-[ 51.94s][user ] 좋다! 토요일에 갈까 생각 중이야. 몇 ⟨ret@54.95s⟩ 시에 여어?
-[ 55.53s][moshi] 개점 ⟦⚡SPAN@56.15s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ 시간을 확인해 볼게요— 토요일 아침 여덟 시에 문을 열어요.
+[ 51.94s][user ] 좋다! 토요일에 갈까 생각 중이야. 몇 시에 여어?
+[ 55.53s][moshi] ⟨ret@55.55s⟩ 개점 시간을 확인해 ⟦⚡SPAN@56.75s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ 볼게요— 토요일 아침 여덟 시에 문을 열어요.
       CALL: {"function": "maps_search_detail", "arguments": {"query": "Lost Heaven Bakery", "location": "276 Wukang Road, Shanghai, China", "attribute": "opening_hours"}}
 [ 59.72s][user ] 좋네. 있냐고… 크루아상 있어?
 [ 63.10s][moshi] «interrupted» 크루아상은 기본이죠—
-[ 63.76s][user ] «interrupts_prev» 크루아상이 *맛있어*? 진짜 페이스트리처럼 ⟨ret@67.08s⟩ 바삭해?
-[ 67.67s][moshi] ⟦⚡SPAN@68.20s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ 오, 아주 중요한 질문이네요!
+[ 63.76s][user ] «interrupts_prev» 크루아상이 *맛있어*? 진짜 페이스트리처럼 바삭해?
+[ 67.67s][moshi] ⟨ret@67.67s⟩ 오, 아주 ⟦⚡SPAN@68.80s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ 중요한 질문이네요!
 [ 69.83s][moshi] 리뷰를 보니까 크루아상이 아주 바삭하고 버터 맛이 강하다고 하네요— 좋은 기술의 증거죠, 당연히.
-[ 76.11s][user ] 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 ⟨ret@80.90s⟩ 설정해 줘.
-[ 81.49s][moshi] 네, 그렇게 해 ⟦⚡SPAN@82.82s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ 드릴게요— 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
+[ 76.11s][user ] 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 설정해 줘.
+[ 81.49s][moshi] ⟨ret@81.50s⟩ 네, 그렇게 해 드릴게요— ⟦⚡SPAN@83.42s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
       CALL: {"function": "calendar_add_event", "arguments": {"date": "Saturday", "time": "9:00 AM", "title": "Leave for Lost Heaven Bakery"}}

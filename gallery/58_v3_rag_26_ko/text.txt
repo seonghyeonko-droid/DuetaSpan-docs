@@ -2,32 +2,32 @@ v3_rag_26_ko src=nq style=v3
 SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요. 아비치 노래 “The Nights” 영상 보다가 궁금한 게 생겼어요. 영상에 나오는 그 남자분, 계속 뛰어다니는 ⟨ret@7.87s⟩ 사람이 누구예요?
-[  8.46s][moshi] 네, 좋은 ⟦⚡SPAN@9.79s: Rory Kramer is the man featured prominently in Avicii’s “The Nights” music video.⟧ 질문이에요. 기억에 남는 영상이죠.
+[  0.00s][user ] 안녕하세요. 아비치 노래 “The Nights” 영상 보다가 궁금한 게 생겼어요. 영상에 나오는 그 남자분, 계속 뛰어다니는 사람이 누구예요?
+[  8.46s][moshi] ⟨ret@8.47s⟩ 네, 좋은 질문이에요. ⟦⚡SPAN@10.39s: Rory Kramer is the man featured prominently in Avicii’s “The Nights” music video.⟧ 기억에 남는 영상이죠.
 [ 11.57s][moshi] 말씀하신 분은 로리 크레이머 님이고, 아비치의 “The Nights” 영상에 출연하셨습니다.
-[ 18.09s][user ] 아, 로리 크레이머 님… 처음 들어봐요. 그분은 뭘 하시는 ⟨ret@22.97s⟩ 분이에요? 배우인가요?
-[ 23.57s][moshi] 음악 영상 뒤에 숨겨진 사람들에 ⟦⚡SPAN@26.33s: Rory Kramer is a free-runner and stunt performer known for his parkour skills.⟧ 대해 알아보는 건 정말 흥미로운 일이죠.
+[ 18.09s][user ] 아, 로리 크레이머 님… 처음 들어봐요. 그분은 뭘 하시는 분이에요? 배우인가요?
+[ 23.57s][moshi] ⟨ret@23.57s⟩ 음악 영상 뒤에 숨겨진 사람들에 대해 알아보는 ⟦⚡SPAN@26.93s: Rory Kramer is a free-runner and stunt performer known for his parkour skills.⟧ 건 정말 흥미로운 일이죠.
 [ 28.68s][moshi] 로리 크레이머 님은 프리러너이자 스턴트 퍼포머이고, 파쿠르를 전문으로 하십니다.
 [ 34.54s][user ] 파쿠르군요? 그럼 점프하는 건 당연하네요. [laugh] 사람들이 할 수 있는 게 정말 놀라워요.
 [ 42.09s][moshi] 정말 그렇습니다. 사람의 몸은 놀라운 능력을 가지고 있어요.
-[ 47.31s][user ] 그분이 그 영상에 특별히 고용된 건가요, 아니면 그냥 우연히 ⟨ret@50.48s⟩ 된 건가요?
-[ 51.07s][moshi] 기회가 어떻게 ⟦⚡SPAN@52.40s: Kramer was contacted by the video’s director to perform parkour stunts in “The Nights”.⟧ 생기는지 궁금해하시는 건 당연한 질문이에요.
+[ 47.31s][user ] 그분이 그 영상에 특별히 고용된 건가요, 아니면 그냥 우연히 된 건가요?
+[ 51.07s][moshi] ⟨ret@51.08s⟩ 기회가 어떻게 생기는지 ⟦⚡SPAN@53.00s: Kramer was contacted by the video’s director to perform parkour stunts in “The Nights”.⟧ 궁금해하시는 건 당연한 질문이에요.
 [ 55.21s][moshi] 로리 크레이머 님은 영상 감독님으로부터 직접 연락을 받아서 스턴트를 하게 되셨습니다.
 [ 61.66s][user ] 그렇군요. 길에서 그냥 찾은 사람은 아니었네요.
 [ 64.40s][moshi] 영상 기회가 그렇게 우연히 찾아오는 경우는 드물어요.
-[ 68.55s][user ] 다른 영상들도 찾아봤는데, 다른 뮤지션들과도 함께 작업한 적이 있잖아요, ⟨ret@73.48s⟩ 그렇죠?
-[ 74.08s][moshi] 네, 꽤 다양한 분야에서 ⟦⚡SPAN@76.44s: Rory Kramer has collaborated with artists including Swedish House Mafia and Zara Larsson.⟧ 활동하고 계세요.
+[ 68.55s][user ] 다른 영상들도 찾아봤는데, 다른 뮤지션들과도 함께 작업한 적이 있잖아요, 그렇죠?
+[ 74.08s][moshi] ⟨ret@74.08s⟩ 네, 꽤 다양한 분야에서 활동하고 계세요. ⟦⚡SPAN@77.04s: Rory Kramer has collaborated with artists including Swedish House Mafia and Zara Larsson.⟧ 
 [ 77.17s][moshi] 로리 크레이머 님은 스웨디시 하우스 마피아와 자라 라르손과 함께 작업했습니다.
-[ 82.56s][user ] 스웨디시 하우스 마피아… 알겠어요. 그 음악에 어울리는 분위기네요. 음, 아비치 영상 이후에 ⟨ret@89.66s⟩ 유명해졌나요?
-[ 90.26s][moshi] ⟦⚡SPAN@90.70s: “The Nights” significantly increased Rory Kramer’s visibility and led to further stunt work.⟧ 유명한 음악 영상은 사람의 인지도를 높일 수 있죠.
+[ 82.56s][user ] 스웨디시 하우스 마피아… 알겠어요. 그 음악에 어울리는 분위기네요. 음, 아비치 영상 이후에 유명해졌나요?
+[ 90.26s][moshi] ⟨ret@90.26s⟩ 유명한 ⟦⚡SPAN@91.30s: “The Nights” significantly increased Rory Kramer’s visibility and led to further stunt work.⟧ 음악 영상은 사람의 인지도를 높일 수 있죠.
 [ 94.22s][moshi] “The Nights” 영상 덕분에 로리 크레이머 님의 인지도가 크게 높아졌고, 더 많은 일을 하게 되었습니다.
-[100.95s][user ] 멋지네요. 스턴트 퍼포머도 괜찮은 직업인 것 같아요. 그럼, 원래 ⟨ret@105.63s⟩ 어디 출신이에요?
-[106.22s][moshi] 사람들의 ⟦⚡SPAN@107.15s: Rory Kramer was born and raised in the Netherlands, beginning parkour at age fourteen.⟧ 고향과 열정을 추구하는 과정에 대해 알아보는 건 정말 흥미로운 일이죠.
+[100.95s][user ] 멋지네요. 스턴트 퍼포머도 괜찮은 직업인 것 같아요. 그럼, 원래 어디 출신이에요?
+[106.22s][moshi] ⟨ret@106.23s⟩ 사람들의 고향과 ⟦⚡SPAN@107.75s: Rory Kramer was born and raised in the Netherlands, beginning parkour at age fourteen.⟧ 열정을 추구하는 과정에 대해 알아보는 건 정말 흥미로운 일이죠.
 [111.98s][moshi] 로리 크레이머 님은 원래 네덜란드 출신이고, 열네 살 때 파쿠르를 시작했습니다.
 [119.43s][user ] 네덜란드… 흥미롭네요. 네덜란드를 생각하면 풍차가 떠올라요.
 [123.28s][moshi] [laugh] 아름다운 역사와 문화를 가진 나라입니다.
-[129.10s][user ] 자, 마지막 질문이에요, 약속할게요. 파쿠르 말고 다른 재능도 있어요? 악기를 다룰 줄 ⟨ret@135.12s⟩ 아나 봐요?
-[135.71s][moshi] 창의적인 사람들은 다양한 ⟦⚡SPAN@137.76s: Besides parkour, Rory Kramer is also a skilled skateboarder and musician.⟧ 재능과 관심을 가지고 있는 경우가 많아요.
+[129.10s][user ] 자, 마지막 질문이에요, 약속할게요. 파쿠르 말고 다른 재능도 있어요? 악기를 다룰 줄 아나 봐요?
+[135.71s][moshi] ⟨ret@135.72s⟩ 창의적인 사람들은 다양한 재능과 관심을 ⟦⚡SPAN@138.36s: Besides parkour, Rory Kramer is also a skilled skateboarder and musician.⟧ 가지고 있는 경우가 많아요.
 [140.03s][moshi] 로리 크레이머 님은 스케이트보드도 잘 타고, 악기도 연주합니다.
 [144.97s][user ] 와, 만능이시네요! 정말 대단해요. 정보 감사합니다, 바스케스 선생님.
 [150.22s][moshi] 도와드릴 수 있어서 기쁩니다. 아는 것을 공유하게 되어 기뻐요.

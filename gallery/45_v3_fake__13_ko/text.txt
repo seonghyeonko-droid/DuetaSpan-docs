@@ -2,9 +2,9 @@ v3_fake__13_ko src=nq style=v1
 SYSTEM: <system> 저는 사토 박사이며, 기억이 어떻게 작동하는지에 매료된 신경과 의사입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 어, 혹시 “Run to the Hills” 누가 불렀는지 알아? 도저히 기억이 ⟨ret@3.89s⟩ 안 나네.
-[  4.48s][moshi] ⟦⚡SPAN@4.85s: Iron Maiden performs the song “Run to the Hills”.⟧ 네, 정말 유명한 곡이죠. “Run to the Hills”는 아이언 메이든이 처음 녹음하고 공연한 곡이에요.
-[  9.99s][user ] 아, 맞아! 아이언 메이든이었지. ⟨ret@13.14s⟩ 응.
-[ 13.72s][moshi] 그분들은 ⟦⚡SPAN IRRELEVANT@14.58s: (tool result) Current conditions in Ulaanbaatar, Mongolia are clear skies, 12 degrees Celsius, wind from the n⟧ 에너지 넘치는 공연으로 아주 유명하시잖아요. 라이브 쇼에서 꼭 부르는 곡이기도 해요.
-[ 21.81s][user ] 그래, 근데… 그 노래 언제 나왔더라? 기억이 잘 ⟨ret@24.67s⟩ 안 나.
-[ 25.26s][moshi] 잠깐만요, 발매일을 찾아볼게요… “Run to ⟦⚡SPAN@28.51s: “Run to the Hills” was released in 1982 as part of their album *The Number of the Beast*.⟧ the Hills”는 천구백팔십이년에 *The Number of the Beast* 앨범에 수록됐어요.
+[  0.00s][user ] 어, 혹시 “Run to the Hills” 누가 불렀는지 알아? 도저히 기억이 안 나네.
+[  4.48s][moshi] ⟨ret@4.49s⟩ 네, 정말 ⟦⚡SPAN@5.45s: Iron Maiden performs the song “Run to the Hills”.⟧ 유명한 곡이죠. “Run to the Hills”는 아이언 메이든이 처음 녹음하고 공연한 곡이에요.
+[  9.99s][user ] 아, 맞아! 아이언 메이든이었지. 응.
+[ 13.72s][moshi] ⟨ret@13.74s⟩ 그분들은 에너지 ⟦⚡SPAN IRRELEVANT@15.18s: (tool result) Current conditions in Ulaanbaatar, Mongolia are clear skies, 12 degrees Celsius, wind from the n⟧ 넘치는 공연으로 아주 유명하시잖아요. 라이브 쇼에서 꼭 부르는 곡이기도 해요.
+[ 21.81s][user ] 그래, 근데… 그 노래 언제 나왔더라? 기억이 잘 안 나.
+[ 25.26s][moshi] ⟨ret@25.27s⟩ 잠깐만요, 발매일을 찾아볼게요… “Run to the ⟦⚡SPAN@29.11s: “Run to the Hills” was released in 1982 as part of their album *The Number of the Beast*.⟧ Hills”는 천구백팔십이년에 *The Number of the Beast* 앨범에 수록됐어요.

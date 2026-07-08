@@ -4,88 +4,88 @@
      0.00s  user  발화 시작: So, I was wondering… when did the first Harry Potter book ac
      5.00s  agent 발화 시작: That’s a very popular question, naturally.
      5.14s  user  발화 끝
-     6.54s  <ret> 발화 (turn2 첫 프레임)
      7.14s  agent 발화 시작: <ret> Let’s see if I can recall— It was first published in t
-     7.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.03s]: Harry Potter and the Philosopher's Stone was first published in the Un
+     7.14s  <ret> 발화 (turn2 첫 프레임)
      7.59s  agent 발화 끝
+     8.10s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.03s]: Harry Potter and the Philosopher's Stone was first published in the Un
     14.14s  user  발화 시작: Hmm, okay, but I thought it came out in America much later. 
     14.23s  agent 발화 끝
     18.55s  user  발화 끝
     18.87s  agent 발화 시작: You are absolutely correct to question that.
-    20.51s  <ret> 발화 (turn5 첫 프레임)
-    20.59s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.61s]: Harry Potter and the Sorcerer's Stone was first published in the Unite
     21.10s  agent 발화 시작: <ret> It’s important to distinguish— It was first published 
+    21.11s  <ret> 발화 (turn5 첫 프레임)
+    21.19s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.61s]: Harry Potter and the Sorcerer's Stone was first published in the Unite
     21.45s  agent 발화 끝
     27.96s  agent 발화 끝
     29.01s  user  발화 시작: September first… that’s quite a gap, isn’t it? A whole year!
     33.49s  agent 발화 시작: A significant delay, yes. Publishing schedules can be quite 
     33.64s  user  발화 끝
-    37.06s  <ret> 발화 (turn8 첫 프레임)
     37.65s  agent 발화 시작: <ret> Let me explain the difference— Scholastic Corporation 
+    37.66s  <ret> 발화 (turn8 첫 프레임)
     38.03s  agent 발화 끝
-    38.18s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.12s]: Scholastic Corporation acquired the US rights to publish the Harry Pot
+    38.78s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.12s]: Scholastic Corporation acquired the US rights to publish the Harry Pot
     45.30s  agent 발화 끝
     47.52s  user  발화 시작: So Scholastic had it for a year before releasing it? Why the
     51.73s  user  발화 끝
     52.10s  agent 발화 시작: There were several considerations at play, I believe.
-    54.30s  <ret> 발화 (turn11 첫 프레임)
     54.89s  agent 발화 시작: <ret> They needed to prepare— Scholastic spent a year re-edi
+    54.90s  <ret> 발화 (turn11 첫 프레임)
     55.07s  agent 발화 끝
-    55.58s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.52s]: Scholastic spent a year re-editing and re-titling the book for the Ame
+    56.18s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.52s]: Scholastic spent a year re-editing and re-titling the book for the Ame
     61.33s  agent 발화 끝
     61.65s  user  발화 시작: Re-titling? What did they change the title to?
     65.16s  agent 발화 시작: It was a fairly substantial change, actually.
     65.30s  user  발화 끝
-    67.11s  <ret> 발화 (turn14 첫 프레임)
-    67.19s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.08s]: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potte
     67.69s  agent 발화 시작: <ret> The American edition— The title was changed to “Harry 
+    67.71s  <ret> 발화 (turn14 첫 프레임)
+    67.79s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.08s]: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potte
     67.89s  agent 발화 끝
     73.61s  user  발화 시작: Sorcerer instead of Philosopher… that's interesting. Did the
     73.80s  agent 발화 끝
     80.23s  user  발화 끝
     80.65s  agent 발화 시작: It was a marketing decision, primarily—
-    82.32s  <ret> 발화 (turn17 첫 프레임)
     82.91s  agent 발화 시작: <ret> The publishers believed— Scholastic thought “sorcerer”
+    82.92s  <ret> 발화 (turn17 첫 프레임)
     83.00s  agent 발화 끝
-    83.12s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.35s]: Scholastic thought "sorcerer" would appeal more to American children t
+    83.72s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.35s]: Scholastic thought "sorcerer" would appeal more to American children t
     89.20s  agent 발화 끝
     89.67s  user  발화 시작: That makes a little sense, I guess. So, after the first book
     94.22s  agent 발화 시작: After the initial success—
     94.25s  user  발화 끝
-    95.00s  <ret> 발화 (turn20 첫 프레임)
     95.59s  agent 발화 시작: <ret> The subsequent releases— Subsequent books were publish
-    95.72s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.52s]: Subsequent books in the series were published in both the UK and US ne
+    95.60s  <ret> 발화 (turn20 첫 프레임)
     95.98s  agent 발화 끝
+    96.32s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.52s]: Subsequent books in the series were published in both the UK and US ne
    101.67s  agent 발화 끝
    101.96s  user  발화 시작: Nearly? So there were still some delays even then?
    104.54s  agent 발화 시작: There were occasional minor discrepancies—
    104.68s  user  발화 끝
-   106.56s  <ret> 발화 (turn23 첫 프레임)
-   106.64s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.35s]: Minor publication date differences occurred due to shipping and distri
    107.16s  agent 발화 시작: <ret> It’s not unusual— Minor publication date differences o
+   107.16s  <ret> 발화 (turn23 첫 프레임)
+   107.24s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.35s]: Minor publication date differences occurred due to shipping and distri
    107.36s  agent 발화 끝
    113.12s  user  발화 시작: Right, shipping makes sense. I wonder if that affected the h
    113.46s  agent 발화 끝
    117.14s  user  발화 끝
    117.26s  agent 발화 시작: It certainly could have—
-   117.52s  <ret> 발화 (turn26 첫 프레임)
    118.11s  agent 발화 시작: <ret> The anticipation was— The initial delay created signif
+   118.12s  <ret> 발화 (turn26 첫 프레임)
    118.50s  agent 발화 끝
-   118.80s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.40s]: The initial delay created significant anticipation and demand for the 
+   119.40s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.40s]: The initial delay created significant anticipation and demand for the 
    125.05s  user  발화 시작: But did J.K. Rowling know about all this, about the changes 
    125.11s  agent 발화 끝
    130.38s  user  발화 끝
    130.58s  agent 발화 시작: Oh, absolutely—
-   131.46s  <ret> 발화 (turn29 첫 프레임)
    131.87s  agent 발화 끝
    132.05s  agent 발화 시작: <ret> She was certainly— J.K. Rowling was consulted on the t
-   132.18s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.03s]: J.K. Rowling was consulted on the title change and remained involved i
+   132.06s  <ret> 발화 (turn29 첫 프레임)
+   132.78s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.03s]: J.K. Rowling was consulted on the title change and remained involved i
    137.84s  user  발화 시작: That's good to know she had some say in it. So, the Sorcerer
    137.88s  agent 발화 끝
    144.99s  agent 발화 시작: Precisely. That’s the version that became iconic here.
    145.11s  user  발화 끝
-   148.10s  <ret> 발화 (turn32 첫 프레임)
-   148.42s  ⚡SPAN 주입 [d'=0.32s / d_lead=1.03s]: "Harry Potter and the Sorcerer's Stone" became the defining edition fo
    148.70s  agent 발화 시작: <ret> It’s the edition— “Harry Potter and the Sorcerer’s Sto
+   148.70s  <ret> 발화 (turn32 첫 프레임)
    148.83s  agent 발화 끝
+   149.02s  ⚡SPAN 주입 [d'=0.32s / d_lead=1.03s]: "Harry Potter and the Sorcerer's Stone" became the defining edition fo
    154.53s  agent 발화 끝

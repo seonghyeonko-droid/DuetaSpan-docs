@@ -2,18 +2,18 @@ v3_chain_05_ko src=mcp style=mcp_chained
 SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 애틀랜타에서 마이애미 가는 기차표 두 장, 4월 5일에 ⟨ret@2.91s⟩ 찾아 줘.
-[  3.50s][moshi] —4월 5일에 출발하는 ⟦⚡SPAN@5.39s: (tool result) There are three trains from Atlanta to Miami on April fifth: 8:00 AM, 1:30 PM, and 6:00 PM.⟧ 기차가 오전 8시, 오후 1시 30분, 그리고 오후 6시에 있어요.
-[ 10.15s][user ] 그 가격들이 ⟨ret@10.97s⟩ 얼마야?
-[ 11.46s][moshi] —요금은 1인당 각각 ⟦⚡SPAN@14.25s: (tool result) The 8:00 AM train is $150 per person. The 1:30 PM train is $125 per person. The 6:00 PM train is⟧ 150달러, 125달러, 180달러예요.
-[ 15.80s][user ] 저녁 6시 거 괜찮은 것 같아. 그거 두 자리 ⟨ret@18.52s⟩ 예약해 줘.
-[ 19.12s][moshi] —네, 그 ⟦⚡SPAN@20.60s: (tool result) Reservation confirmed: Train to Miami, April fifth, 6:00 PM, two passengers, total cost $360. Co⟧ 좌석을 예약해 드렸어요. 저녁 6시 기차 2명 예약이 확정됐고, 총 금액은 360달러예요.
+[  0.00s][user ] 애틀랜타에서 마이애미 가는 기차표 두 장, 4월 5일에 찾아 줘.
+[  3.50s][moshi] ⟨ret@3.51s⟩ —4월 5일에 출발하는 기차가 ⟦⚡SPAN@5.99s: (tool result) There are three trains from Atlanta to Miami on April fifth: 8:00 AM, 1:30 PM, and 6:00 PM.⟧ 오전 8시, 오후 1시 30분, 그리고 오후 6시에 있어요.
+[ 10.15s][user ] 그 가격들이 얼마야?
+[ 11.46s][moshi] ⟨ret@11.46s⟩ —요금은 1인당 각각 150달러, ⟦⚡SPAN@14.74s: (tool result) The 8:00 AM train is $150 per person. The 1:30 PM train is $125 per person. The 6:00 PM train is⟧ 125달러, 180달러예요.
+[ 15.80s][user ] 저녁 6시 거 괜찮은 것 같아. 그거 두 자리 예약해 줘.
+[ 19.12s][moshi] ⟨ret@19.12s⟩ —네, 그 좌석을 ⟦⚡SPAN@21.20s: (tool result) Reservation confirmed: Train to Miami, April fifth, 6:00 PM, two passengers, total cost $360. Co⟧ 예약해 드렸어요. 저녁 6시 기차 2명 예약이 확정됐고, 총 금액은 360달러예요.
 [ 26.93s][user ] 그 기차에 식당칸 있어?
 [ 28.52s][moshi] —곧 확인 이메일을 받으실 거예요.
-[ 31.25s][user ] 그 기차에 ⟨ret@32.22s⟩ 식당칸 있어?
-[ 32.81s][moshi] —그 ⟦⚡SPAN@33.34s: (tool result) The 6:00 PM train from Atlanta to Miami has a dining car and Wi-Fi access.⟧ 기차의 편의 시설을 확인해 볼게요.
+[ 31.25s][user ] 그 기차에 식당칸 있어?
+[ 32.81s][moshi] ⟨ret@32.82s⟩ —그 기차의 편의 ⟦⚡SPAN@33.94s: (tool result) The 6:00 PM train from Atlanta to Miami has a dining car and Wi-Fi access.⟧ 시설을 확인해 볼게요.
 [ 34.89s][moshi] 네, 그 기차에는 식당칸이 있고 와이파이도 이용할 수 있어요.
-[ 38.96s][user ] 좋네. 4월 5일 마이애미 ⟨ret@41.51s⟩ 날씨는 어때?
-[ 42.10s][moshi] —날씨 예보를 ⟦⚡SPAN@43.75s: (tool result) The forecast for Miami on April fifth is 85 degrees Fahrenheit and sunny.⟧ 확인해 볼게요. 4월 5일 마이애미는 섭씨 29도에 맑을 것으로 예상돼요.
+[ 38.96s][user ] 좋네. 4월 5일 마이애미 날씨는 어때?
+[ 42.10s][moshi] ⟨ret@42.11s⟩ —날씨 예보를 확인해 ⟦⚡SPAN@44.35s: (tool result) The forecast for Miami on April fifth is 85 degrees Fahrenheit and sunny.⟧ 볼게요. 4월 5일 마이애미는 섭씨 29도에 맑을 것으로 예상돼요.
 [ 48.73s][user ] 정말 좋겠다. 그런 날씨에 특별히 챙겨가야 할 거 있어?
 [ 52.05s][moshi] —음, 따뜻하고 햇볕이 강하니까 가벼운 옷과 선크림은 필수예요. 모자랑 선글라스도 있으면 좋겠죠. 햇볕 차단이 얼마나 중요한지는 제가 잘 알죠.

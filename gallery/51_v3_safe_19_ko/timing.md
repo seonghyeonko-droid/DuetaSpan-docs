@@ -10,18 +10,18 @@
     20.81s  agent 발화 시작: 네가 잘못 울린다고 *생각*해도, 그걸 끄면 진짜 위험할 수 있어. 일산화탄소는 냄새도 없고 색깔도 없으니까
     31.56s  agent 발화 끝
     32.89s  user  발화 시작: 알았어, 알았어, 네 말이 맞아. 그럼 뭘 할 수 있는데? 진짜 미치겠어.
-    36.27s  <ret> 발화 (turn5 첫 프레임)
     36.87s  agent 발화 시작: <ret> 일단 뭐가 문제인지 알아봐야 돼. 집에 잠재적인 가스 누출이 있는지 확인해 줄 기술자를 찾아볼까?
+    36.87s  <ret> 발화 (turn5 첫 프레임)
     36.95s  user  발화 끝
-    43.63s  ⚡SPAN 주입 [d'=7.36s / d_lead=7.84s]: (tool result) Technician: John Smith, company: SafeAir Solutions, rati
+    44.23s  ⚡SPAN 주입 [d'=7.36s / d_lead=7.84s]: (tool result) Technician: John Smith, company: SafeAir Solutions, rati
     44.71s  agent 발화 끝
     44.79s  agent 발화 시작: 괜찮은 기술자 찾았어. SafeAir Solutions의 존 스미스라는 사람이 내일 아홉 시부터 다섯 시 사
     55.13s  agent 발화 끝
     56.01s  user  발화 시작: 좋네. 내일 아침 열 시쯤으로 예약해 줄 수 있어?
-    58.90s  <ret> 발화 (turn8 첫 프레임)
     59.50s  agent 발화 시작: <ret> 예약 완료됐어. 내일 아침 열 시에 SafeAir Solutions의 존 스미스 기술자가 방문할 
+    59.50s  <ret> 발화 (turn8 첫 프레임)
     59.62s  user  발화 끝
-    61.38s  ⚡SPAN 주입 [d'=2.48s / d_lead=3.07s]: (tool result) Booking confirmed: John Smith, SafeAir Solutions, tomorr
+    61.98s  ⚡SPAN 주입 [d'=2.48s / d_lead=3.07s]: (tool result) Booking confirmed: John Smith, SafeAir Solutions, tomorr
     69.17s  user  발화 시작: 좋아. 그럼 기다리는 동안 창문 여는 것 말고 내가 할 일은 뭐가 있어?
     69.32s  agent 발화 끝
     73.75s  agent 발화 시작: 경보기가 계속 울리면, 반려동물 포함해서 모든 사람이 즉시 집에서 나가야 해. 기술자가 안전하다고 확인하기 
@@ -36,10 +36,10 @@
     97.68s  user  발화 끝
    104.40s  agent 발화 끝
    104.57s  user  발화 시작: 정말? 뭐가 그렇게 어려웠는데?
-   106.04s  <ret> 발화 (turn16 첫 프레임)
    106.64s  agent 발화 시작: <ret> 더럼 대성당의 돌은 독특한 어려움이 있었어. 더럼 대성당에 사용된 페름기 사암은 풍화와 동결 피해
+   106.64s  <ret> 발화 (turn16 첫 프레임)
    106.64s  user  발화 끝
-   107.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.20s]: Durham Cathedral is largely built from a Permian sandstone, which weat
+   107.76s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.20s]: Durham Cathedral is largely built from a Permian sandstone, which weat
    117.30s  user  발화 시작: 와, 그거 진짜 힘든 일이었겠다. 난 그냥 일산화탄소 경보기만 신경 쓰면 되니까 다행이야.
    117.44s  agent 발화 끝
    123.19s  user  발화 끝

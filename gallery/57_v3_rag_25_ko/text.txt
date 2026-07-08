@@ -2,22 +2,22 @@ v3_rag_25_ko src=hotpotqa style=v2
 SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 걔가 웨이크 포레스트에서 뛸 때 듀크 풋볼 코치가 누구였는지 기억하려고 해—월리스 웨이드 스타디움이었나? ⟨ret@13.47s⟩
+[  0.00s][user ] 걔가 웨이크 포레스트에서 뛸 때 듀크 풋볼 코치가 누구였는지 기억하려고 해—월리스 웨이드 스타디움이었나?
 [  6.59s][moshi] 네, 듀크는 웨이크 포레스트의 월리스 웨이드 스타디움에서 여러 번 경기를 치렀는데, 역사적인 경기장이죠.
-[ 14.07s][moshi] 음, 그 시기의 ⟦⚡SPAN@16.27s: David Cutcliffe was the head coach of the Duke Blue Devils football team from 2008 to 2021.⟧ 코치를 찾아볼까요… 데이비드 커틀리프가 월리스 웨이드 스타디움에서 열린 경기에서 듀크를 이끌었습니다.
-[ 23.02s][user ] 흠, 커틀리프… 다른 사람이었던 것 같아. 상이라도 받은 적 있어? ⟨ret@30.99s⟩
+[ 14.07s][moshi] ⟨ret@14.07s⟩ 음, 그 시기의 코치를 ⟦⚡SPAN@16.87s: David Cutcliffe was the head coach of the Duke Blue Devils football team from 2008 to 2021.⟧ 찾아볼까요… 데이비드 커틀리프가 월리스 웨이드 스타디움에서 열린 경기에서 듀크를 이끌었습니다.
+[ 23.02s][user ] 흠, 커틀리프… 다른 사람이었던 것 같아. 상이라도 받은 적 있어?
 [ 27.78s][moshi] 물론 많은 코치들이 그들의 노력에 대해 인정을 받죠.
-[ 31.58s][moshi] 수상 기록을 살펴볼까요… 데이비드 ⟦⚡SPAN@35.31s: David Cutcliffe won the ACC Coach of the Year award in 2013 and 2014.⟧ 커틀리프는 2013년과 2014년 ACC 올해의 코치상을 수상했습니다.
+[ 31.58s][moshi] ⟨ret@31.59s⟩ 수상 기록을 살펴볼까요… 데이비드 커틀리프는 ⟦⚡SPAN@35.91s: David Cutcliffe won the ACC Coach of the Year award in 2013 and 2014.⟧ 2013년과 2014년 ACC 올해의 코치상을 수상했습니다.
 [ 34.19s][user ] «backchannel» 어어.
-[ 39.54s][user ] 좋아, 말이 되네. 근데 *전국* 올해의 코치상도 받았어? ⟨ret@47.17s⟩
+[ 39.54s][user ] 좋아, 말이 되네. 근데 *전국* 올해의 코치상도 받았어?
 [ 44.38s][moshi] 전국적인 인정은 컨퍼런스 상과는 확실히 다르죠.
-[ 47.77s][moshi] 전국 올해의 코치상 수상 ⟦⚡SPAN@50.29s: David Cutcliffe was named the National Coach of the Year by the Paul Weeks Award Foundation in 2013.⟧ 여부를 확인해 볼까요… 데이비드 커틀리프는 2013년에 폴 위크스 재단으로부터 전국 올해의 코치상을 수상했습니다.
-[ 57.59s][user ] 딱 하나뿐이네? 코치 경력이 그렇게 오래됐는데… 너무 적은 것 같아. ⟨ret@67.44s⟩
+[ 47.77s][moshi] ⟨ret@47.77s⟩ 전국 올해의 코치상 수상 여부를 ⟦⚡SPAN@50.89s: David Cutcliffe was named the National Coach of the Year by the Paul Weeks Award Foundation in 2013.⟧ 확인해 볼까요… 데이비드 커틀리프는 2013년에 폴 위크스 재단으로부터 전국 올해의 코치상을 수상했습니다.
+[ 57.59s][user ] 딱 하나뿐이네? 코치 경력이 그렇게 오래됐는데… 너무 적은 것 같아.
 [ 61.98s][moshi] 아쉽게도 오래 활동했다고 해서 반드시 많은 전국적인 상을 받는 것은 아니에요.
-[ 68.03s][moshi] 다른 상에 대한 자세한 내용도 알려드릴까요… 그는 ⟦⚡SPAN@72.08s: David Cutcliffe was honored as the Home Depot National Coach of the Year in 2013.⟧ 2013년에 홈 디포 전국 올해의 코치로도 선정되었습니다.
-[ 77.18s][user ] 2013년에 큰 상을 다 받았어? 좀 집중됐네. ⟨ret@83.74s⟩
+[ 68.03s][moshi] ⟨ret@68.03s⟩ 다른 상에 대한 자세한 내용도 알려드릴까요… 그는 2013년에 ⟦⚡SPAN@72.67s: David Cutcliffe was honored as the Home Depot National Coach of the Year in 2013.⟧ 홈 디포 전국 올해의 코치로도 선정되었습니다.
+[ 77.18s][user ] 2013년에 큰 상을 다 받았어? 좀 집중됐네.
 [ 80.99s][moshi] 가끔 코치는 특히 뛰어난 한 해를 보내기도 하죠.
-[ 84.33s][moshi] 듀크에서의 그의 전체 ⟦⚡SPAN@86.86s: During his tenure, David Cutcliffe achieved a 79–93 win-loss record with the Duke Blue Devils.⟧ 기록을 확인해 드릴까요… 데이비드 커틀리프의 듀크 기록은 79승 93패였습니다.
+[ 84.33s][moshi] ⟨ret@84.34s⟩ 듀크에서의 그의 전체 기록을 ⟦⚡SPAN@87.46s: During his tenure, David Cutcliffe achieved a 79–93 win-loss record with the Duke Blue Devils.⟧ 확인해 드릴까요… 데이비드 커틀리프의 듀크 기록은 79승 93패였습니다.
 [ 93.32s][user ] 79승 93패… 아주 훌륭한 기록은 아니네, 그렇지?
 [ 97.70s][moshi] 프로그램을 구축하는 데는 시간과 인내심이 필요하다는 것을 잘 알고 있습니다.
 [102.71s][user ] 그렇겠지. 그래도, 알아줘서 고마워.

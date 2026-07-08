@@ -2,13 +2,13 @@ v3_to_ot_12_en src=nq style=v1
 SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about capital punishment, and I’m curious— when did England officially abolish the ⟨ret@6.19s⟩ death penalty?
-[  6.79s][moshi] That’s a weighty question, considering ⟦⚡SPAN@8.75s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ England’s long history with such matters.
+[  0.00s][user ] I was reading about capital punishment, and I’m curious— when did England officially abolish the death penalty?
+[  6.79s][moshi] ⟨ret@6.79s⟩ That’s a weighty question, considering England’s long ⟦⚡SPAN@9.35s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ history with such matters.
 [ 10.54s][moshi] The death penalty was fully abolished in the United Kingdom in nineteen ninety-eight.
 [ 14.76s][user ] Nineteen ninety-eight… that’s surprisingly recent, actually. Was it a gradual process, or did it just—
 [ 21.38s][moshi] «interrupted» It was indeed a process, evolving over decades—
-[ 23.87s][user ] «interrupts_prev» Did they abolish it for certain crimes *before* then, like ⟨ret@28.22s⟩ murder specifically?
-[ 28.81s][moshi] Yes, the ⟦⚡SPAN@29.90s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ abolition happened in stages.
+[ 23.87s][user ] «interrupts_prev» Did they abolish it for certain crimes *before* then, like murder specifically?
+[ 28.81s][moshi] ⟨ret@28.82s⟩ Yes, the abolition ⟦⚡SPAN@30.50s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ happened in stages.
 [ 31.71s][moshi] Murder was removed as a capital crime in nineteen sixty-five, becoming permanent in nineteen sixty-nine.
 [ 37.44s][user ] So, for four years, there was a period where it *could* be reinstated for murder? That seems… precarious.
 [ 44.41s][moshi] Precarious is a good word for it. The legal landscape was certainly unsettled during those years, I imagine.

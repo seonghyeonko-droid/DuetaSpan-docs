@@ -2,23 +2,23 @@ v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about historical diseases… and it made me wonder, where is leprosy most ⟨ret@5.96s⟩ common today?
-[  6.55s][moshi] That’s ⟦⚡SPAN@7.48s: India accounts for more than half of the world’s leprosy cases.⟧ a very important question, considering global health. Currently, India reports more than fifty percent of new leprosy cases globally.
+[  0.00s][user ] I was reading about historical diseases… and it made me wonder, where is leprosy most common today?
+[  6.55s][moshi] ⟨ret@6.56s⟩ That’s a ⟦⚡SPAN@8.08s: India accounts for more than half of the world’s leprosy cases.⟧ very important question, considering global health. Currently, India reports more than fifty percent of new leprosy cases globally.
 [ 15.94s][user ] That’s… surprising. I always thought it was a disease of the past.
 [ 20.49s][moshi] It's a misconception many share; persistent poverty and limited access to healthcare contribute to its continued presence.
-[ 28.40s][user ] So, is it still a major problem in ⟨ret@31.29s⟩ India?
-[ 31.89s][moshi] It remains ⟦⚡SPAN@32.97s: In 2023, India reported 75,000 new cases of leprosy.⟧ a significant public health concern. India recorded seventy-five thousand new leprosy cases in the year two thousand and twenty-three.
+[ 28.40s][user ] So, is it still a major problem in India?
+[ 31.89s][moshi] ⟨ret@31.89s⟩ It remains a ⟦⚡SPAN@33.57s: In 2023, India reported 75,000 new cases of leprosy.⟧ significant public health concern. India recorded seventy-five thousand new leprosy cases in the year two thousand and twenty-three.
 [ 40.31s][user ] Seventy-five thousand… wow.
 [ 43.14s][moshi] It’s a substantial number, though detection and treatment efforts are ongoing.
-[ 47.62s][user ] Are there other countries with high rates ⟨ret@49.81s⟩ as well?
-[ 50.41s][moshi] ⟦⚡SPAN@50.29s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ Yes, several other nations also face challenges. Brazil and Indonesia are the next most affected countries after India.
-[ 58.40s][user ] What about Africa? I’ve heard it’s a problem ⟨ret@61.63s⟩ there too.
-[ 62.23s][moshi] ⟦⚡SPAN@62.35s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ It is, particularly in certain regions.
+[ 47.62s][user ] Are there other countries with high rates as well?
+[ 50.41s][moshi] ⟨ret@50.41s⟩ ⟦⚡SPAN@50.89s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ Yes, several other nations also face challenges. Brazil and Indonesia are the next most affected countries after India.
+[ 58.40s][user ] What about Africa? I’ve heard it’s a problem there too.
+[ 62.23s][moshi] ⟨ret@62.23s⟩ It ⟦⚡SPAN@62.95s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ is, particularly in certain regions.
 [ 65.20s][moshi] The Democratic Republic of the Congo and other African nations struggle with leprosy.
 [ 70.58s][user ] Is it treatable? I mean, can it be cured?
 [ 73.87s][moshi] Absolutely, with early diagnosis and multidrug therapy.
-[ 77.66s][user ] Multidrug therapy… what does that ⟨ret@80.21s⟩ involve?
-[ 80.80s][moshi] ⟦⚡SPAN@81.57s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ It's a combination of antibiotics… The standard treatment uses dapsone, rifampicin, and clofazimine antibiotics.
+[ 77.66s][user ] Multidrug therapy… what does that involve?
+[ 80.80s][moshi] ⟨ret@80.81s⟩ It's ⟦⚡SPAN@82.17s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ a combination of antibiotics… The standard treatment uses dapsone, rifampicin, and clofazimine antibiotics.
 [ 89.04s][user ] Those are… long names.
 [ 91.26s][moshi] They are, and adherence to the full course is vital to prevent resistance.
 [ 96.65s][user ] But if you catch it early, you can fully recover?
@@ -29,8 +29,8 @@ SYSTEM: <system> You are a veteran architect who specializes in sustainable urba
 [119.05s][moshi] Unfortunately, yes. The social consequences can be as debilitating as the disease itself.
 [126.78s][user ] Is there anything being done to combat the stigma?
 [130.42s][moshi] Many organizations are working on education and advocacy programs to challenge misconceptions.
-[137.20s][user ] That’s good to hear. What ⟨ret@139.58s⟩ about prevention?
-[140.18s][moshi] Prevention strategies focus ⟦⚡SPAN@142.30s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ on early detection and treatment… The BCG vaccine provides limited protection against developing leprosy.
+[137.20s][user ] That’s good to hear. What about prevention?
+[140.18s][moshi] ⟨ret@140.18s⟩ Prevention strategies focus on ⟦⚡SPAN@142.90s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ early detection and treatment… The BCG vaccine provides limited protection against developing leprosy.
 [149.31s][user ] Limited protection……
 [150.96s][user ] …so it's not a guaranteed safeguard?
 [153.39s][moshi] It’s not, but it can reduce the severity of the disease in some cases.

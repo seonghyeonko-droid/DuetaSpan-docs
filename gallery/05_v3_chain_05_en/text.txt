@@ -2,18 +2,18 @@ v3_chain_05_en src=mcp style=mcp_chained
 SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Find trains from Atlanta to Miami for two people on ⟨ret@3.35s⟩ April fifth.
-[  3.92s][moshi] ⟦⚡SPAN@4.31s: (tool result) There are three trains from Atlanta to Miami on April fifth: 8:00 AM, 1:30 PM, and 6:00 PM.⟧ Let me check the train schedules for you— On April fifth, there are trains departing at eight AM, one thirty PM, and six PM.
-[ 13.19s][user ] What are the prices ⟨ret@14.20s⟩ for those?
-[ 14.79s][moshi] I ⟦⚡SPAN@15.48s: (tool result) The 8:00 AM train is $150 per person. The 1:30 PM train is $125 per person. The 6:00 PM train is⟧ can certainly look up the fares— The fares are one hundred fifty, one hundred twenty-five, and one hundred eighty dollars per person, respectively.
-[ 23.49s][user ] That six PM one sounds good. Can you reserve two seats ⟨ret@27.13s⟩ on that?
-[ 27.72s][moshi] Of course, I ⟦⚡SPAN@28.81s: (tool result) Reservation confirmed: Train to Miami, April fifth, 6:00 PM, two passengers, total cost $360. Co⟧ can book those seats for— Your reservation for two on the six PM train is confirmed; the total is three hundred sixty dollars.
+[  0.00s][user ] Find trains from Atlanta to Miami for two people on April fifth.
+[  3.92s][moshi] ⟨ret@3.95s⟩ Let me ⟦⚡SPAN@4.91s: (tool result) There are three trains from Atlanta to Miami on April fifth: 8:00 AM, 1:30 PM, and 6:00 PM.⟧ check the train schedules for you— On April fifth, there are trains departing at eight AM, one thirty PM, and six PM.
+[ 13.19s][user ] What are the prices for those?
+[ 14.79s][moshi] ⟨ret@14.80s⟩ I can certainly ⟦⚡SPAN@16.08s: (tool result) The 8:00 AM train is $150 per person. The 1:30 PM train is $125 per person. The 6:00 PM train is⟧ look up the fares— The fares are one hundred fifty, one hundred twenty-five, and one hundred eighty dollars per person, respectively.
+[ 23.49s][user ] That six PM one sounds good. Can you reserve two seats on that?
+[ 27.72s][moshi] ⟨ret@27.73s⟩ Of course, I can book ⟦⚡SPAN@29.41s: (tool result) Reservation confirmed: Train to Miami, April fifth, 6:00 PM, two passengers, total cost $360. Co⟧ those seats for— Your reservation for two on the six PM train is confirmed; the total is three hundred sixty dollars.
 [ 36.02s][user ] Does that train have a dining car?
 [ 38.26s][moshi] —you will receive a confirmation email shortly.
-[ 41.60s][user ] Does that train have a dining ⟨ret@43.41s⟩ car?
-[ 44.00s][moshi] That's a good question; let ⟦⚡SPAN@45.81s: (tool result) The 6:00 PM train from Atlanta to Miami has a dining car and Wi-Fi access.⟧ me check the amenities for that specific train.
+[ 41.60s][user ] Does that train have a dining car?
+[ 44.00s][moshi] ⟨ret@44.01s⟩ That's a good question; let me ⟦⚡SPAN@46.41s: (tool result) The 6:00 PM train from Atlanta to Miami has a dining car and Wi-Fi access.⟧ check the amenities for that specific train.
 [ 48.25s][moshi] Yes, that train does have a dining car and offers Wi-Fi access.
-[ 52.38s][user ] Excellent. And what's the weather like in Miami on ⟨ret@55.03s⟩ April fifth?
-[ 55.57s][moshi] Let's ⟦⚡SPAN@56.39s: (tool result) The forecast for Miami on April fifth is 85 degrees Fahrenheit and sunny.⟧ see what the forecast is showing— The forecast predicts eighty-five degrees Fahrenheit and sunny conditions in Miami on April fifth.
+[ 52.38s][user ] Excellent. And what's the weather like in Miami on April fifth?
+[ 55.57s][moshi] ⟨ret@55.63s⟩ Let's see what ⟦⚡SPAN@56.99s: (tool result) The forecast for Miami on April fifth is 85 degrees Fahrenheit and sunny.⟧ the forecast is showing— The forecast predicts eighty-five degrees Fahrenheit and sunny conditions in Miami on April fifth.
 [ 63.87s][user ] That sounds wonderful. Is there anything I should pack specifically for that kind of weather?
 [ 69.94s][moshi] Well, given the warmth and sunshine, lightweight clothing and sunscreen are essential. A hat and sunglasses would also be useful, of course. I've spent enough time in the field to know sun protection is crucial.

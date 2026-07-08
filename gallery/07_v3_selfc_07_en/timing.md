@@ -2,36 +2,36 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What's the fastest way to get from the Brooklyn Museum to Ya
-     5.50s  <ret> 발화 (turn1 첫 프레임)
      6.02s  user  발화 끝
      6.10s  agent 발화 시작: <ret> Let's find the quickest route for you. That trip will 
-     6.46s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.37s]: (tool result) The fastest route is via the 2 and 4 subway lines, takin
+     6.10s  <ret> 발화 (turn1 첫 프레임)
+     7.06s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.37s]: (tool result) The fastest route is via the 2 and 4 subway lines, takin
     13.89s  agent 발화 끝
     13.89s  user  발화 시작: Oh, um, actually, could you check for directions starting fr
-    19.72s  <ret> 발화 (turn3 첫 프레임)
     20.31s  agent 발화 시작: <ret> Certainly, let’s refine that starting point. From the 
+    20.32s  <ret> 발화 (turn3 첫 프레임)
     20.38s  user  발화 끝
-    20.76s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.26s]: (tool result) The fastest route is via the 2 and 4 subway lines, takin
+    21.36s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.26s]: (tool result) The fastest route is via the 2 and 4 subway lines, takin
     28.97s  agent 발화 끝
     29.09s  user  발화 시작: That’s… a bit longer than I expected.
     32.46s  user  발화 끝
     32.56s  agent 발화 시작: Public transport in the city can sometimes be slow, especial
     37.56s  agent 발화 끝
     37.82s  user  발화 시작: Are there any faster options if I were willing to take a tax
-    41.18s  <ret> 발화 (turn7 첫 프레임)
     41.75s  agent 발화 시작: <ret> I can certainly compare taxi travel times. A taxi woul
+    41.78s  <ret> 발화 (turn7 첫 프레임)
     41.98s  user  발화 끝
-    42.14s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.92s]: (tool result) A taxi ride would take approximately thirty-five to fort
+    42.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.92s]: (tool result) A taxi ride would take approximately thirty-five to fort
     50.52s  agent 발화 끝
     51.20s  user  발화 시작: Wow, that's quite a difference. Is there a way to get real-t
     56.06s  user  발화 끝
     56.31s  agent 발화 시작: Several apps provide real-time subway information, like City
     62.74s  user  발화 시작: Okay, good to know. Could you show me a map of the subway ro
     62.94s  agent 발화 끝
-    65.10s  <ret> 발화 (turn11 첫 프레임)
     65.69s  agent 발화 시작: <ret> I can certainly display that for you. I’ve sent a map 
+    65.70s  <ret> 발화 (turn11 첫 프레임)
     65.80s  user  발화 끝
-    66.06s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.04s]: (tool result) A map displaying the 2 and 4 subway lines from Prospect 
+    66.66s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.04s]: (tool result) A map displaying the 2 and 4 subway lines from Prospect 
     71.80s  agent 발화 끝
     72.88s  user  발화 시작: Perfect! Thanks. I think I'll stick with the subway, even if
     76.88s  agent 발화 시작: A sensible choice; it's often more reliable than navigating 
@@ -58,10 +58,10 @@
    123.26s  agent 발화 시작: A classic ballpark experience. I hear they are quite good at
    128.33s  user  발화 시작: I hope so! I'm meeting a friend. Could you set a reminder fo
    128.40s  agent 발화 끝
-   131.14s  <ret> 발화 (turn25 첫 프레임)
    131.72s  agent 발화 시작: <ret> I can definitely add that to your schedule. Your remin
+   131.74s  <ret> 발화 (turn25 첫 프레임)
    131.85s  user  발화 끝
-   132.42s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.53s]: (tool result) A reminder has been set for 6:00 PM: “Meet friend at Yan
+   133.02s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.53s]: (tool result) A reminder has been set for 6:00 PM: “Meet friend at Yan
    138.28s  user  발화 시작: Fantastic. Thanks so much for your help.
    138.66s  agent 발화 끝
    140.33s  agent 발화 시작: My pleasure. I trust you’ll have a wonderful time at the gam

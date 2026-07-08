@@ -2,22 +2,22 @@ v3_rag_25_en src=hotpotqa style=v2
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to remember who the Duke football coach was when they played at Wake Forest—Wallace Wade Stadium, right? ⟨ret@11.46s⟩
+[  0.00s][user ] I’m trying to remember who the Duke football coach was when they played at Wake Forest—Wallace Wade Stadium, right?
 [  6.55s][moshi] Yes, Duke has played at Wake Forest’s Wallace Wade Stadium several times, a historic venue.
-[ 12.06s][moshi] ⟦⚡SPAN@12.43s: David Cutcliffe was the head coach of the Duke Blue Devils football team from 2008 to 2021.⟧ Let’s pinpoint the coach during that period… David Cutcliffe led Duke during games played at Wallace Wade Stadium.
-[ 20.21s][user ] Hmm, Cutcliffe… I thought it was someone else. Did he win any awards? ⟨ret@27.60s⟩
+[ 12.06s][moshi] ⟨ret@12.06s⟩ Let’s ⟦⚡SPAN@13.02s: David Cutcliffe was the head coach of the Duke Blue Devils football team from 2008 to 2021.⟧ pinpoint the coach during that period… David Cutcliffe led Duke during games played at Wallace Wade Stadium.
+[ 20.21s][user ] Hmm, Cutcliffe… I thought it was someone else. Did he win any awards?
 [ 24.74s][moshi] Many coaches receive recognition for their work, of course.
-[ 28.20s][moshi] Regarding ⟦⚡SPAN@28.96s: David Cutcliffe won the ACC Coach of the Year award in 2013 and 2014.⟧ accolades, let's look into his awards… David Cutcliffe was awarded ACC Coach of the Year in both 2013 and 2014.
+[ 28.20s][moshi] ⟨ret@28.20s⟩ Regarding accolades, ⟦⚡SPAN@29.56s: David Cutcliffe won the ACC Coach of the Year award in 2013 and 2014.⟧ let's look into his awards… David Cutcliffe was awarded ACC Coach of the Year in both 2013 and 2014.
 [ 31.09s][user ] «backchannel» Yeah.
-[ 37.33s][user ] Okay, that checks out. But did he win *national* Coach of the Year awards too? ⟨ret@46.32s⟩
+[ 37.33s][user ] Okay, that checks out. But did he win *national* Coach of the Year awards too?
 [ 42.78s][moshi] National recognition is quite different from a conference award, certainly.
-[ 46.92s][moshi] Let me check for ⟦⚡SPAN@48.48s: David Cutcliffe was named the National Coach of the Year by the Paul Weeks Award Foundation in 2013.⟧ national Coach of the Year honors… David Cutcliffe received the National Coach of the Year award from the Paul Weeks Award Foundation in 2013.
-[ 55.99s][user ] Just the one, then? That seems… low for a coach who lasted that long. ⟨ret@65.53s⟩
+[ 46.92s][moshi] ⟨ret@46.92s⟩ Let me check for national Coach ⟦⚡SPAN@49.08s: David Cutcliffe was named the National Coach of the Year by the Paul Weeks Award Foundation in 2013.⟧ of the Year honors… David Cutcliffe received the National Coach of the Year award from the Paul Weeks Award Foundation in 2013.
+[ 55.99s][user ] Just the one, then? That seems… low for a coach who lasted that long.
 [ 61.58s][moshi] Longevity doesn’t always equate to numerous national awards, unfortunately.
-[ 66.13s][moshi] I ⟦⚡SPAN@66.89s: David Cutcliffe was honored as the Home Depot National Coach of the Year in 2013.⟧ can confirm details of other awards, if you’d like… He was also honored as the Home Depot National Coach of the Year in 2013.
-[ 75.61s][user ] So, both big ones in 2013? That's a bit concentrated. ⟨ret@82.88s⟩
+[ 66.13s][moshi] ⟨ret@66.13s⟩ I can confirm ⟦⚡SPAN@67.49s: David Cutcliffe was honored as the Home Depot National Coach of the Year in 2013.⟧ details of other awards, if you’d like… He was also honored as the Home Depot National Coach of the Year in 2013.
+[ 75.61s][user ] So, both big ones in 2013? That's a bit concentrated.
 [ 79.99s][moshi] Sometimes a coach has a particularly outstanding year, clearly.
-[ 83.48s][moshi] I can confirm his ⟦⚡SPAN@85.36s: During his tenure, David Cutcliffe achieved a 79–93 win-loss record with the Duke Blue Devils.⟧ overall record at Duke, if you wish… David Cutcliffe’s record at Duke was seventy-nine wins and ninety-three losses.
+[ 83.48s][moshi] ⟨ret@83.48s⟩ I can confirm his overall record ⟦⚡SPAN@85.96s: During his tenure, David Cutcliffe achieved a 79–93 win-loss record with the Duke Blue Devils.⟧ at Duke, if you wish… David Cutcliffe’s record at Duke was seventy-nine wins and ninety-three losses.
 [ 92.31s][user ] Seventy-nine and ninety-three… not exactly stellar, is it?
 [ 97.22s][moshi] Building a program takes time and patience, as I well know.
 [101.16s][user ] I suppose. Still, thanks for clarifying things.

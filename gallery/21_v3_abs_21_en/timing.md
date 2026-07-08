@@ -2,20 +2,20 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What has been in use since 1015?
-     2.00s  <ret> 발화 (turn1 첫 프레임)
      2.58s  user  발화 끝
      2.60s  agent 발화 시작: <ret> That’s a fascinating question, though a precise answer
-     4.40s  ⚡SPAN 주입 [d'=2.40s / d_lead=4.58s]: (no information found)
+     2.60s  <ret> 발화 (turn1 첫 프레임)
+     5.00s  ⚡SPAN 주입 [d'=2.40s / d_lead=4.58s]: (no information found)
      5.60s  user  발화 시작: Yeah.
      6.09s  user  발화 끝
      7.10s  agent 발화 시작: I’ve searched my records, and unfortunately, nothing specifi
      7.17s  agent 발화 끝
     14.61s  agent 발화 끝
     15.04s  user  발화 시작: Oh. Well, what about the oldest cathedral still actively use
-    20.23s  <ret> 발화 (turn5 첫 프레임)
     20.82s  agent 발화 시작: <ret> Determining the oldest continuously used cathedral… Wi
+    20.84s  <ret> 발화 (turn5 첫 프레임)
     21.07s  user  발화 끝
-    21.43s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.31s]: Winchester Cathedral began construction in 1079 and has been in near-c
+    22.04s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.31s]: Winchester Cathedral began construction in 1079 and has been in near-c
     31.31s  agent 발화 끝
     31.50s  user  발화 시작: That’s quite a long time! Were there many changes made to it
     36.50s  user  발화 끝

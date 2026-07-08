@@ -2,12 +2,12 @@ v3_defer_09_ko src=mcp style=mcp_deferred
 SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 알람 목록 알려 줘, 안 쓰는 것도 다 ⟨ret@2.48s⟩ 보여 줘.
-[  3.08s][moshi] 네, ⟦⚡SPAN@4.00s: (tool result) There are three alarms set: seven AM, repeat Monday through Friday; ten PM, repeat daily; and tw⟧ 지금 알람 설정을 확인해 봤는데요. 아침 7시, 밤 10시, 그리고 비활성화된 오후 2시 알람 이렇게 세 개가 있어요.
+[  0.00s][user ] 알람 목록 알려 줘, 안 쓰는 것도 다 보여 줘.
+[  3.08s][moshi] ⟨ret@3.08s⟩ 네, 지금 알람 ⟦⚡SPAN@4.60s: (tool result) There are three alarms set: seven AM, repeat Monday through Friday; ten PM, repeat daily; and tw⟧ 설정을 확인해 봤는데요. 아침 7시, 밤 10시, 그리고 비활성화된 오후 2시 알람 이렇게 세 개가 있어요.
       CALL: {"function": "Alarm_1_GetAlarms", "arguments": {"include_inactive": "true"}}
-[ 11.28s][user ] 어, 그, 오후 2시 알람은 취소해 줄래? 그, 이제 ⟨ret@14.51s⟩ 필요 없어.
-[ 15.11s][moshi] 네, ⟦⚡SPAN@15.55s: (tool result) The two PM alarm has been deleted.⟧ 그렇게 해 드릴게요.
+[ 11.28s][user ] 어, 그, 오후 2시 알람은 취소해 줄래? 그, 이제 필요 없어.
+[ 15.11s][moshi] ⟨ret@15.11s⟩ 네, 그렇게 해 ⟦⚡SPAN@16.15s: (tool result) The two PM alarm has been deleted.⟧ 드릴게요.
       CALL: {"function": "Alarm_1_DeleteAlarm", "arguments": {"alarm_time": "two PM"}}
 [ 16.51s][moshi] 오후 2시 알람은 이제 완전히 취소됐습니다.
-[ 20.47s][user ] 좋아, 고마워. 지금 누크, 그린란드 시간 ⟨ret@23.09s⟩ 몇 시야?
-[ 23.69s][moshi] 좋은 질문인데요, 누크 그린란드 ⟦⚡SPAN@26.45s: (tool result) The time in Nuuk, Greenland is currently 7:48 PM.⟧ 현재 시간을 알아볼게요. 지금 누크 그린란드 시간은 저녁 7시 48분입니다. 예전에 한 번 가 봤는데, 정말 아름다운 곳이었어요.
+[ 20.47s][user ] 좋아, 고마워. 지금 누크, 그린란드 시간 몇 시야?
+[ 23.69s][moshi] ⟨ret@23.69s⟩ 좋은 질문인데요, 누크 그린란드 현재 ⟦⚡SPAN@27.05s: (tool result) The time in Nuuk, Greenland is currently 7:48 PM.⟧ 시간을 알아볼게요. 지금 누크 그린란드 시간은 저녁 7시 48분입니다. 예전에 한 번 가 봤는데, 정말 아름다운 곳이었어요.
