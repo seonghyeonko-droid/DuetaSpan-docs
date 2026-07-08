@@ -1,18 +1,11 @@
 v3_rag_31_en src=hotpotqa style=v1
-SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] I’m planning a road trip and I’m trying to figure out the highways around Schenectady.
-[moshi] Road trips are wonderful! It’s a great way to see the countryside, isn’t it?
-[user ] Uh, yeah, absolutely. So, I know Route 146 and Interstate 890 both go through there. What other interstate runs through Schenectady?
-[moshi] <ret> ⟦⚡SPAN@16.88s: Interstate 90 passes through Schenectady, New York, connecting to Boston and Albany.⟧ Let’s see… Interstate 90 also runs through Schenectady, connecting it to Boston and Albany.
-[user ] Oh, okay, I-90. That’s helpful. Is there anything… historically interesting about Schenectady?
-[moshi] It’s a city with a surprisingly rich history, actually. Quite a lot happened there.
-[user ] [curious] Like what, specifically? Something memorable?
-[moshi] <ret> ⟦⚡SPAN@36.93s: Schenectady was the site of a 1690 massacre during King William’s War, resulting in many deaths.⟧ Indeed there is… A massacre occurred in Schenectady in 1690 during King William’s War, causing numerous deaths.
-[user ] Wow, a massacre… That's… grim. Was it a large settlement back then?
-[moshi] <ret> ⟦⚡SPAN@51.40s: By 1684, Schenectady contained approximately thirty houses and a church, representing a small colonial outpost⟧ It was a developing area… In 1684, Schenectady consisted of around thirty houses and a church, a small colonial outpost.
-[user ] Thirty houses… That *is* small. So it was really vulnerable then, I guess.
-[moshi] It certainly was. A small settlement in a new land always faces challenges.
-[user ] I— I mean, is there anything *less* grim about its history? Anything positive?
-[moshi] <ret> ⟦⚡SPAN@76.67s: Union College, founded in 1795, is located in Schenectady and is the oldest degree-granting higher education i⟧ Certainly, there is! Union College, founded in 1795, is the oldest degree-granting college in the United States and is in Schenectady.
+[  0.00s][user ] I’m curious—who publishes the comic featuring Batwoman, the superhero created by J. H. Williams III?
+[  4.11s][moshi] That’s a great question, and a character with a fascinating design.
+[  8.46s][user ] So, which comic book company publishes her ⟨ret@15.96s⟩ stories?
+[ 16.54s][moshi] ⟦⚡SPAN@16.36s: Batwoman is published by DC Comics, debuting in Detective Comics #233 in 2006.⟧ Let’s see… Batwoman is published by DC Comics, first appearing in Detective Comics in two thousand six.
+[ 23.38s][user ] [laugh] Wow, twenty-oh-six! That’s… earlier than I thought. What about the artist, J.H. ⟨ret@28.29s⟩ Williams III?
+[ 28.87s][moshi] ⟦⚡SPAN@28.93s: J.H. Williams III co-created Batwoman with writer W.H. Chew, and began drawing her in 2006.⟧ He’s quite talented. J.H. Williams III co-created Batwoman with W.H. Chew, beginning his work in two thousand six.
+[ 34.10s][user ] Interesting. And was he involved in the initial design of the costume?

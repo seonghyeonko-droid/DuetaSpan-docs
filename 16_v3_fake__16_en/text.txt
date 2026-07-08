@@ -1,14 +1,30 @@
 v3_fake__16_en src=nq style=v1
-SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] I was reading about World War Two… uh, where did the US drop the atomic bombs?
-[moshi] <ret> ⟦⚡SPAN@6.12s: The United States dropped atomic bombs on the Japanese cities of Hiroshima and Nagasaki during World War II.⟧ That’s a significant question. The United States dropped atomic bombs on Hiroshima and Nagasaki during the war.
-[user ] Just the two cities, then?
-[moshi] That is correct, only those two.
-[user ] And when exactly was Nagasaki bombed?
-[moshi] <ret> ⟦⚡SPAN@22.66s: The city of Nagasaki was bombed on August 9, 1945.⟧ Let me share the specific date. Nagasaki was bombed on August ninth, nineteen forty-five.
-[user ] [sigh] Terrible. Was it— was it a planned target from the start?
-[moshi] <ret> ⟦⚡SPAN IRRELEVANT@35.50s: (tool result) Current conditions in Ulaanbaatar are clear skies, 18 degrees Celsius, wind from the northwest a⟧ That’s a complex piece of history.
-[moshi] Initial targets were different, but circumstances shifted the focus.
-[user ] So, Nagasaki wasn’t the first choice?
+[  0.00s][user ] What’s the area code for Washington, ⟨ret@5.16s⟩ D.C.?
+[  5.76s][moshi] ⟦⚡SPAN@6.16s: Washington, D.C.’s area code is 202.⟧ That’s a simple one. The area code for Washington, D.C. is two-zero-two.
+[ 14.96s][user ] Oh, okay. And what about ⟨ret@15.92s⟩ for New York City?
+[ 16.41s][moshi] ⟦⚡SPAN@16.56s: New York City has area codes 212, 646, 347, 718, 917, and 332.⟧ New York is a bit different. New York City actually uses several area codes—212, 646, 347, 718, 917, and 332.
+[ 19.26s][user ] Wow, that’s a lot! Is there a reason for so many?
+[ 22.41s][moshi] Population growth, primarily. As the city grew, they needed more numbers.
+[ 30.93s][user ] I see. Uh, what’s the capital of ⟨ret@34.66s⟩ Australia?
+[ 35.25s][moshi] ⟦⚡SPAN@34.82s: Canberra is the capital city of Australia.⟧ A fascinating question. Canberra is the capital city of Australia, established in 1913.
+[ 37.49s][user ] Interesting. What’s the population of ⟨ret@41.82s⟩ Canberra?
+[ 42.41s][moshi] ⟦⚡SPAN@42.54s: The estimated population of Canberra is 462,770 as of 2023.⟧ Let me recall that for you. Canberra’s estimated population as of twenty twenty-three is four hundred sixty-two thousand, seven hundred seventy.
+[ 46.32s][user ] That’s not as big as I thought. What’s the largest city ⟨ret@49.96s⟩ in Australia?
+[ 50.56s][moshi] ⟦⚡SPAN@50.28s: Sydney is the most populous city in Australia, with 5.312 million residents.⟧ That would be Sydney. Sydney is Australia’s most populous city, home to five million, three hundred twelve thousand residents.
+[ 59.61s][user ] Five million… impressive. Um, what’s the currency used in ⟨ret@64.67s⟩ Japan?
+[ 65.27s][moshi] ⟦⚡SPAN@65.67s: The currency used in Japan is the Japanese yen.⟧ A very practical question. The currency of Japan is the Japanese yen.
+[ 70.19s][user ] And how is that written? Like, what’s the ⟨ret@72.96s⟩ symbol?
+[ 73.56s][moshi] ⟦⚡SPAN IRRELEVANT@73.96s: (tool result) Current time in Honolulu is 8:15 PM HST.⟧ It's quite simple, really. The symbol for the Japanese yen is the yen sign—¥—with the ISO code JPY.
+[ 81.69s][user ] Okay, ¥. Good to know. What's the highest mountain ⟨ret@85.23s⟩ in Africa?
+[ 85.83s][moshi] ⟦⚡SPAN@86.19s: The Japanese yen’s symbol is ¥, and its ISO code is JPY.⟧ That’s a majestic peak. Mount Kilimanjaro is the highest mountain in Africa, reaching five thousand, eight hundred ninety-five meters.
+[ 95.71s][user ] Wow, that’s high. Is it ⟨ret@97.69s⟩ volcanic?
+[ 98.28s][moshi] ⟦⚡SPAN@98.41s: Mount Kilimanjaro is the highest mountain in Africa, at 5,895 meters.⟧ Yes, it is a dormant volcano.
+[101.35s][user ] Oh! What about the longest river in ⟨ret@103.97s⟩ the world?
+[104.57s][moshi] ⟦⚡SPAN@104.97s: The Nile River is generally regarded as the longest river in the world.⟧ That's a classic geography question. The Nile River is commonly considered the longest river on Earth.
+[111.62s][user ] And where does the ⟨ret@113.11s⟩ Nile flow?
+[113.71s][moshi] ⟦⚡SPAN@114.11s: The Nile flows through eleven countries, including Egypt and Sudan.⟧ It flows through several countries. The Nile River flows through eleven countries, including Egypt and Sudan.
+[123.17s][user ] Eleven! That’s amazing. What’s the smallest country in ⟨ret@126.95s⟩ the world?
+[127.55s][moshi] ⟦⚡SPAN@127.95s: Vatican City is the smallest country in the world, covering 0.44 square kilometers.⟧ It’s quite a tiny place. Vatican City is the world’s smallest country, at zero point forty-four square kilometers.

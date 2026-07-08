@@ -1,47 +1,53 @@
 # v3_to_ot_14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 어, 모차르트에 대해 읽고 있었는데… 진짜 어릴 때부터 공연을 시작했어?
+     0.00s  user  발화 시작: 어디에서 여자 럭비 월드컵이 열리는지 궁금하네.
+     3.71s  <ret> 발화 (turn1 첫 프레임)
+     4.30s  agent 발화 시작: <ret> 네, 좋은 질문이세요. 여자 럭비 월드컵은 아일랜드 더블린에서 열린답니다.
      4.35s  user  발화 끝
-     4.41s  agent 발화 시작: 음, 어떤 재능은 진짜 빨리 나타나는 것 같아.
-     7.46s  agent 발화 끝
-     8.04s  user  발화 시작: 열일곱 살쯤 된다고 들었는데… 그 나이에 프로 음악가라니 좀 빠른 것 같아. 그 나이에 뭘 하고 다녔어?
-    13.16s  <ret> 발화 (turn3 첫 프레임)
-    13.75s  agent 발화 시작: <ret> 그거 좀 정확하게 말해줄게. 모차르트는 열일곱 살 때 오스트리아 잘츠부르크에서 궁정 음악가로 일했
-    13.92s  user  발화 끝
-    14.16s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.22s]: Wolfgang Amadeus Mozart became a court musician in Salzburg, Austria, 
-    20.95s  user  발화 시작: 와. 궁정 음악가라… 왕족한테 고용된 거네?
-    20.98s  agent 발화 끝
-    24.46s  user  발화 끝
-    24.47s  agent 발화 시작: 대체로 그렇다. 꾸준한 수입과 함께 의뢰가 계속 들어오는 명성 있는 자리였어.
-    30.07s  agent 발화 끝
-    30.47s  user  발화 시작: 그럼, 궁정에서 무슨 음악을 연주했을까?
-    32.73s  <ret> 발화 (turn7 첫 프레임)
-    33.31s  agent 발화 시작: <ret> 그의 레퍼토리는 꽤 다양했어. 모차르트는 거의 모든 시대의 음악 장르에서 800곡이 넘는 작품을 
-    33.34s  user  발화 끝
-    33.73s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.65s]: Mozart composed over eight hundred works spanning nearly every genre o
-    40.73s  agent 발화 끝
-    41.53s  user  발화 시작: 800곡! 엄청 많네. 주로 오페라를 작곡했어?
-    44.40s  agent 발화 시작: 꼭 그렇진 않아. 오페라가 그의 유산에서 중요한 부분을 차지하지만, 다른 형식으로도 많이 썼어.
-    44.58s  user  발화 끝
-    50.38s  agent 발화 끝
-    51.71s  user  발화 시작: 쓰레기 버린 거 잊었네.
-    53.04s  user  발화 끝
-    53.16s  user  발화 시작: 미안. 다시 모차르트 얘기로 돌아가서… 생전에 유명했어?
-    57.21s  agent 발화 시작: 꽤 유명해졌는데, 말년에는 재정적으로 어려움을 겪었어.
-    57.27s  user  발화 끝
-    61.09s  agent 발화 끝
-    61.64s  user  발화 시작: 유명한데도 재정적인 어려움이 있었다고? 좀 이상하네.
-    64.37s  <ret> 발화 (turn14 첫 프레임)
-    64.96s  agent 발화 시작: <ret> 상황이 좀 복잡했어. 성공적인 시기도 있었지만, 모차르트는 성인 생활 내내 재정적인 어려움에 시달
-    65.02s  user  발화 끝
-    65.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.67s]: Mozart struggled financially throughout much of his adult life despite
-    71.91s  agent 발화 끝
-    72.42s  user  발화 시작: 그럼, 항상 부유하고 편안하게 살았던 건 아니었어?
-    75.67s  agent 발화 시작: 전혀. 후원은 변덕스러웠고, 꾸준하지 않은 의뢰에 의존해야 했거든.
-    75.75s  user  발화 끝
-    81.45s  agent 발화 끝
-    81.79s  user  발화 시작: 그때 음악가로 사는 게 지금보다 훨씬 불안정했던 것 같아.
-    85.02s  user  발화 끝
-    85.47s  agent 발화 시작: 지금처럼 안정적인 환경은 아니었지. 예술가들은 다른 사람의 지원에 크게 의존했어.
-    91.26s  agent 발화 끝
+     4.71s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.35s]: Dublin, Ireland.
+     7.35s  agent 발화 끝
+     7.93s  user  발화 시작: 오, 더블린! 항상 가보고 싶었어. 거기는 비싸?
+    13.69s  agent 발화 시작: 취향에 따라 다르겠지만, 비쌀 수도 있어요.
+    13.81s  user  발화 끝
+    20.89s  user  발화 시작: 거기 좋은 빵집 있어? 아, 유명한 페이스트리 가게 있나?
+    20.92s  agent 발화 끝
+    23.71s  <ret> 발화 (turn5 첫 프레임)
+    24.29s  agent 발화 시작: <ret> 아일랜드는 훌륭한 요리 문화를 가지고 있어요. 더 퀸 오브 타츠라는 유명한 빵집이 아일랜드 더블린
+    24.40s  user  발화 끝
+    24.71s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.24s]: The Queen of Tarts is a well-known bakery in Dublin, Ireland.
+    29.89s  agent 발화 끝
+    30.28s  user  발화 시작: 더 퀸 오브 타츠… 뭔가 기대되는데. 무슨 케이크를 만들어?
+    33.15s  user  발화 끝
+    33.37s  agent 발화 시작: 다양한 종류가 있는 걸로 알고 있어요.
+    40.78s  agent 발화 끝
+    41.53s  user  발화 시작: 친구가 지금 문자 보냈어… 아, 미안. 차에 문제가 생겼대.
+    44.40s  user  발화 시작: 또 스타터 모터 문제인 것 같아.
+    44.59s  user  발화 끝
+    50.38s  user  발화 끝
+    50.68s  user  발화 시작: 어쨌든, 케이크 얘기로 돌아가서. 10월에 더블린 날씨는 어때?
+    51.44s  <ret> 발화 (turn11 첫 프레임)
+    51.86s  agent 발화 시작: <ret> 10월은 날씨가 꽤 변덕스러울 수 있어요. 더블린의 10월 평균 최고 기온은 섭씨 14도랍니다.
+    52.01s  user  발화 끝
+    52.44s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.58s]: Dublin in October typically experiences average high temperatures of 1
+    55.84s  user  발화 시작: 14도… 추운 온도네. [sigh] 코트 챙겨 입어야겠다.
+    55.98s  agent 발화 끝
+    59.58s  agent 발화 시작: 분명히 현명한 생각이에요, 네.
+    59.73s  user  발화 끝
+    62.82s  user  발화 시작: 그럼 럭비 자체는? 누가 올해 우승할 가능성이 높아?
+    62.95s  agent 발화 끝
+    69.05s  <ret> 발화 (turn15 첫 프레임)
+    69.64s  agent 발화 시작: <ret> 몇몇 팀이 강세를 보이고 있어요. 뉴질랜드 블랙 펀즈가 현재 럭비 월드컵 챔피언이랍니다.
+    69.77s  user  발화 끝
+    70.05s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.39s]: New Zealand’s Black Ferns are the current Rugby World Cup champions.
+    72.97s  agent 발화 끝
+    73.01s  user  발화 시작: 뉴질랜드, 흠? 럭비는 항상 잘하잖아. 럭비랑 페이스트리 먹는 것 말고 더블린에서 할 만한 거 있어?
+    78.79s  user  발화 끝
+    78.83s  agent 발화 시작: 더블린은 역사와 문화가 풍부한 도시예요.
+    82.06s  agent 발화 끝
+    82.91s  user  발화 시작: 어떤 역사적인 유적지가 있어?
+    88.28s  <ret> 발화 (turn19 첫 프레임)
+    88.70s  user  발화 끝
+    88.76s  ⚡SPAN 주입 [d'=0.48s / d_lead=1.12s]: Dublin Castle has been a significant site in Irish history since the t
+    88.87s  agent 발화 시작: <ret> 많이 있어요, 사실. 더블린 성은 13세기부터 아일랜드 역사에서 중요한 장소였답니다.
+    94.47s  agent 발화 끝

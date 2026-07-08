@@ -1,6 +1,6 @@
 v3_rags_33_en src=nq_single style=rag_single
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] Who is veronica on have and have nots?
-[moshi] <ret> ⟦⚡SPAN@3.09s: Angela Robinson portrays the character Veronica Harrington on the television drama “Have and the Have Nots”.⟧ That’s a good question. Angela Robinson plays Veronica Harrington in “Have and the Have Nots”.
+[  0.00s][user ] When was the last time the world ⟨ret@2.21s⟩ cup host won?
+[  2.81s][moshi] ⟦⚡SPAN@3.09s: France won the 1998 FIFA World Cup as the host nation.⟧ That's a fun bit of trivia. The last time the World Cup host won was nineteen ninety-eight, when France took the title.

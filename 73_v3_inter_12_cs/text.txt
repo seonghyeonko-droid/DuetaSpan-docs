@@ -1,23 +1,16 @@
 v3_inter_12_cs src=nq style=v2
-SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 반말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 나 폴 매카트니 첫 솔로 앨범 이름이 뭐였는지 기억이 안 나.
-[moshi] 음, 그거 궁금하네. 비틀즈 이후 음악을 찾아보는 질문이구나.
-[user ] 그거 언제 나왔는지 알아?
-[moshi] <ret> ⟦⚡SPAN@10.39s: McCartney was released on 17 April 1970.⟧ 보자… 1970년 4월 17일에 발매됐어.
-[user ] 그거 자가 제목 앨범이었어?
-[moshi] <ret> ⟦⚡SPAN@16.32s: McCartney is the first solo album by Paul McCartney.⟧ 맞아. 사실 그냥 *McCartney*라고 돼 있어.
-[user ] [laugh] 그거… 미니멀리스트네.
-[moshi] 그건 그의 예술에 대한 아주 직접적이고 개인적인 접근 방식을 반영하는 것 같아.
-[user ] 그가 농장에서 거의 혼자 녹음했다는 얘기를 들었는데?
-[moshi] <ret> ⟦⚡SPAN@32.84s: McCartney was largely a one-man project, recorded by McCartney in his farmhouse.⟧ 네가 들은 게 맞아. 그는 농장에서 거의 혼자 녹음했는데, 꽤 특이한 방식이었어.
-[user ] 그 농장 이름이 뭐였어?
-[moshi] «interrupted» <ret> ⟦⚡SPAN@40.57s: Paul McCartney recorded the album at his farm, Coward Manor, in Sussex.⟧ 그곳은… 카워드 매너라고 불렀어. 서섹스에 있는데, 잉글랜드의 아름다운 곳이야—
-[user ] «interrupts_prev» 서섹스? 거기 내 이모가 살아!—그게 큰 영향을 줬어?
-[moshi] 응, 완전 그랬어. 그에게는 분명한 변화를 알렸어.
-[moshi] 그건 그에게 예술적으로 아주 중요한 순간이었어.
-[user ] 그때 잘 받아들여졌어?
-[moshi] <ret> ⟦⚡SPAN@62.41s: McCartney received mixed reviews upon release, but became a commercial success.⟧ 처음에는… 좀 놀랐어. 처음에는 평가가 엇갈렸지만, 빠르게 상업적으로 성공했어.
-[user ] 그러니까, 혹평에도 불구하고 잘 팔렸어?
-[moshi] 응, 처음 비평가들의 예약에도 불구하고 상업적으로 아주 잘 됐어.
+[  0.00s][user ] 어디서 끝나는지 궁금하구나. 진짜 여러 얘기가 ⟨ret@3.74s⟩ 있잖아.
+[  4.34s][moshi] ⟦⚡SPAN@4.74s: The Great Wall of China stretches over ten thousand li, ending at Lop Lake in the west.⟧ 뭐, 생각보다 복잡한 질문이네.
+[  8.38s][moshi] 가장 서쪽 끝은 Lop Lake에 있어.
+[  9.97s][user ] Lop Lake? 처음 듣는데. 거기가 ⟨ret@13.04s⟩ 어때?
+[ 13.62s][moshi] ⟦⚡SPAN@13.52s: Lop Lake is a salt lake located in the Taklamakan Desert, Gansu Province, China.⟧ 솔직히 좀 황량한 곳이야.
+[ 15.88s][moshi] 엄청 외딴 곳이지. Lop Lake는 중국 간쑤성 Taklamakan Desert 안에 있어. 환경이 엄청 험해.
+[ 19.55s][user ] Taklamakan Desert… 뭔가… 엄청 세게 느껴진다. 아직도 거기 호수에서 남아 있어?
+[ 23.02s][moshi] «interrupted» Lop Lake 근처 부분들은—
+[ 27.96s][user ] «interrupts_prev» 근데 *보여*? 진짜 거기서 *벽이 끝나는 걸* 볼 수 ⟨ret@31.25s⟩ 있어?
+[ 31.84s][moshi] ⟦⚡SPAN@32.05s: Erosion and sandstorms have significantly damaged the wall’s remains near Lop Lake.⟧ 좋은 질문이다. Lop Lake 근처 벽은 침식이랑 모래폭풍 때문에 많이 망가졌어. 안타깝게도 대부분 사라졌어.
+[ 38.52s][user ] 어, 대박. 그럼 거의… 폐허만 남았다는 거야? 좀 슬프네.
+[ 40.11s][moshi] 시간의 힘을 보여주는 슬픈 기억이지, 그렇지? 얼음 조각이 녹는 모습도 비슷하더라.

@@ -1,27 +1,22 @@
 v3_to_ot_15_ko src=nq style=v1
-SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 안내원입니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 수년간 밤하늘을 관측하여 지도를 제작해 온 아마추어 천문학자입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 안녕하세요. 궁금한 게 있는데요, 헌법 제정 회의를 이끈 사람은 누구였나요?
-[moshi] <ret> ⟦⚡SPAN@5.46s: George Washington presided over the Constitutional Convention during the summer of 1787.⟧ 네, 좋은 질문이에요. 조지 워싱턴이 1787년 여름에 헌법 제정 회의를 주재했어요. 정말 역사적인 순간이었죠, 그러시죠?
-[user ] 와, 워싱턴이요? 저는 항상 그분을 독립 전쟁과 연관 짓곤 해요.
-[moshi] 정말 다재다능한 분이셨어요, 그러시죠?
-[user ] 그분들이 모든 것에 동의했는지, 아니면 좀 복잡한 과정이었는지 궁금해요.
-[moshi] <ret> ⟦⚡SPAN@26.05s: The Constitutional Convention involved heated debates between Federalists and Anti-Federalists.⟧ 음, 격렬했다고 할까요. 헌법 제정 회의에서는 연방주의자와 반연방주의자 사이의 뜨거운 논쟁이 있었어요. 꽤나 의견 충돌이 있었죠!
-[user ] 연방주의자와 반연방주의자… 그분들은 무엇에 대해 의견이 달랐나요?
-[moshi] <ret> ⟦⚡SPAN@40.77s: Federalists favored a strong central government, while Anti-Federalists feared it.⟧ 뭐, 주로 권력의 균형이었어요. 연방주의자들은 강력한 중앙 정부를 선호했고, 반연방주의자들은 그것을 두려워했어요.
-[user ] 흠. 오늘날에도 여전히 관련이 있을지 궁금하네요.
-[user ] «to_other» 우유는 사 오셨나요?
-[user ] 죄송해요, 지금 무슨 이야기를 하고 있었죠? 아, 네—회의에 대해서요.
-[moshi] 그 당시의 다양한 관점에 대해 이야기하고 있었어요.
-[moshi] <ret> ⟦⚡SPAN@62.23s: James Madison is often called the "Father of the Constitution" for his influential role.⟧ 고려해 보면 정말 흥미로운데요… 제임스 매디슨은 그의 영향력 있는 역할 때문에 종종 "헌법의 아버지"라고 불려요.
-[user ] 매디슨이요? 그분은 실제로 뭘 하셨나요?
-[moshi] <ret> ⟦⚡SPAN@72.44s: Madison authored the Virginia Plan, proposing a new form of government.⟧ 초안 작성에 중요한 역할을 했어요. 매디슨은 새로운 형태의 정부를 제안하는 버지니아 계획을 작성했어요. 정말 상세한 제안이었죠.
-[user ] 그렇다면 워싱턴 혼자서 한 일은 아니었군요?
-[moshi] 절대 아니에요! 많은 뛰어난 사람들이 기여했어요.
-[user ] 헌법 승인을 위한 투표가 있었나요?
-[moshi] <ret> ⟦⚡SPAN@88.87s: The Constitution was signed by thirty-nine delegates on September seventeenth, 1787.⟧ 네, 정식 비준 절차가 있었어요. 헌법은 1787년 9월 17일에 39명의 대표가 서명했어요.
-[user ] 39명의 대표… 모든 사람이 다 참석한 건 아니죠?
-[moshi] 아니요, 일부 주에서는 모든 대표가 참석하지 않았어요.
-[user ] 흥미롭네요. 서명 후에는 무슨 일이 일어났나요?
-[moshi] 그다음에는 주들이 비준하도록 설득하는 정말 어려운 일이 남았어요!
+[  0.00s][user ] 혹시 '콜 더 미드와이프'에서 트릭시 프랭클린 역을 맡은 배우가 누구인지 ⟨ret@4.32s⟩ 아세요?
+[  4.92s][moshi] ⟦⚡SPAN@5.32s: Helen George plays Trixie Franklin in Call the Midwife.⟧ 네, 정말 좋은 드라마죠. 트릭시 프랭클린 역은 헬렌 조지가 연기했어요. 정말 재능 있는 배우시죠.
+[ 12.60s][user ] 아, 맞다… 헬렌 조지였군요. 다른 작품에는 뭐가 ⟨ret@16.06s⟩ 있었나요?
+[ 16.66s][moshi] ⟦⚡SPAN@16.14s: Helen George also played Jacqueline de Séze in Doctors.⟧ 그녀는 다재다능하시답니다. 헬렌 조지는 '닥터스'에서 자클린 드 세즈 역할로도 출연하셨어요.
+[ 20.70s][user ] 닥터스요? 제가— 그러니까, 그건 낮 시간대에 하는 드라마 맞죠?
+[ 25.56s][moshi] 네, 맞습니다. 오랫동안 방영된 영국 의료 드라마예요.
+[ 34.97s][user ] «to_other» 쓰레기통은 내놓으셨어요?
+[ 40.46s][user ] 죄송한데요, 어디까지 얘기했었죠? 아, 네, 헬렌 조지 말이에요. 영화는 출연해 ⟨ret@47.58s⟩ 봤나요?
+[ 48.17s][moshi] 영화 ⟦⚡SPAN@48.58s: Helen George appeared in The Bill and Holby City before Call the Midwife.⟧ 역할도 몇 편 하셨답니다. 헬렌 조지는 '콜 더 미드와이프' 출연 전에 '더 빌'과 '홀비 시티'에 출연하셨어요.
+[ 52.94s][user ] 콜 더 미드와이프 이전이요? 흥미롭네요. ⟨ret@53.83s⟩ 항상 배우였던 건가요?
+[ 54.29s][moshi] ⟦⚡SPAN@54.83s: Helen George trained at the Royal Academy of Dramatic Art from 2000 to 2003.⟧ 어린 나이에 훈련을 시작했던 것 같아요.
+[ 59.12s][moshi] 헬렌 조지는 2002년에서 2003년 사이에 RADA에서 훈련을 받으셨어요.
+[ 62.42s][user ] RADA, 와우. 대단하네요. 영국 사람인가요? ⟨ret@69.13s⟩
+[ 69.72s][moshi] ⟦⚡SPAN@69.21s: Helen George was born in Birmingham, England, on September ten, nineteen eighty-six.⟧ 네, 맞아요. 자랑스러운 영국인이시랍니다. 헬렌 조지는 1986년 9월 10일에 영국 버밍엄에서 태어나셨어요.
+[ 72.43s][user ] 9월 10일… 그럼 처녀자리네요? [laugh]
+[ 80.52s][moshi] [laugh] 정말 날카로운 관찰력이시네요.
+[ 83.60s][user ] 결혼은 하셨나요? ⟨ret@86.67s⟩
+[ 87.26s][moshi] ⟦⚡SPAN@86.99s: Helen George is married to Oliver Boot, a fellow actor.⟧ 네, 하셨어요. 헬렌 조지는 배우인 올리버 부트와 결혼하셨답니다.

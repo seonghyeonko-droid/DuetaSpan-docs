@@ -1,12 +1,14 @@
 v3_fstart_18_en src=mcp style=mcp_falsestart
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] Can you navigate me to the Alamo?
-[moshi] <ret> ⟦⚡SPAN@1.79s: (tool result) The Alamo is 306 Alamo Plaza, San Antonio, Texas, 78205.⟧ Certainly. The Alamo is located at 306 Alamo Plaza in San Antonio, Texas.
-      CALL: {"function": "maps_schema_navi", "arguments": {"destination": "The Alamo"}}
-[user ] Uh, what’s the weather like there right now?
-[moshi] <ret> ⟦⚡SPAN@11.83s: (tool result) It is currently 85 degrees Fahrenheit and sunny in San Antonio.⟧ Let me check that for you. It's currently eighty-five degrees Fahrenheit and sunny in San Antonio, Texas.
-      CALL: {"function": "weather_schema_current", "arguments": {"location": "San Antonio, Texas"}}
-[user ] Eighty-five? Wow, that’s…hot.
-[moshi] It is quite warm for this time of year, yes.
+[  0.00s][user ] I need a pool ride to Times Square, ⟨ret@1.64s⟩ just for one person.
+[  2.23s][moshi] ⟦⚡SPAN@1.80s: (tool result) A pool ride to Times Square is estimated at 22 dollars and 18 minutes.⟧ Certainly. A pool ride to Times Square will cost twenty-two dollars and take approximately eighteen minutes.
+      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"pickup_location": "current", "dropoff_location": "Times Square", "ride_type": "pool", "num_passengers": 1}}
+[  8.89s][user ] That sounds good, book it ⟨ret@10.79s⟩ for me.
+[ 11.39s][moshi] ⟦⚡SPAN@11.04s: (tool result) Ride confirmed. Pickup in 3 minutes, driver is David, vehicle is a silver Toyota.⟧ Wonderful. Your ride is confirmed with David in a silver Toyota, arriving in three minutes.
+      CALL: {"function": "RideSharing_2_ConfirmRide", "arguments": {"ride_id": "RIDE-789"}}
+[ 18.84s][user ] Great! Uh, do you know anything about alpine gentians?
+[ 21.84s][moshi] Alpine gentians are fascinating wildflowers, typically a deep indigo blue, often found in high-altitude meadows.
+[ 25.04s][user ] Oh, that’s lovely. Are they hard to cultivate?
+[ 27.64s][moshi] They are notoriously difficult to cultivate outside their natural habitat; they require very specific conditions.

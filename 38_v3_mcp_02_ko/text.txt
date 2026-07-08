@@ -1,12 +1,12 @@
 v3_mcp_02_ko src=mcp style=v3
-SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드퀴스트입니다. 기본적으로 반말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 나한테 네트워크 문제 관련 에러 로그 다섯 개만 보여줘.
-[moshi] <ret> ⟦⚡SPAN@2.82s: (tool result) Five error logs found mentioning network failures.⟧ 아, 찾았어. 네트워크 오류 관련 에러 로그 다섯 개 찾았어.
-      CALL: {"function": "playwright_console_logs", "arguments": {"query": "network issues", "limit": 5}}
-[user ] 음, 재밌네. 있잖아, 우리 고모가 옛날에 우표 수집했었어. 근데, 레이캬비크행 비행기 좀 예약해 줄래?
-[moshi] 당연하지. 언제 출발하는 걸 생각하고 있어?
-[user ] 12월 20일에 출발하고, 27일에 돌아오는 걸로.
-[moshi] <ret> ⟦⚡SPAN@21.46s: (tool result) Booking confirmed. Icelandair, 10:15 AM, 685 dollars, reference GHI789.⟧ 잠깐만 알아볼게. 아이슬란드항공으로 레이캬비크행 비행기 예약됐어. 오전 열시 15분에 출발하고, 가격은 685달러야.
-      CALL: {"function": "book_flight", "arguments": {"departure_date": "December twentieth", "return_date": "December twenty-seventh", "destination": "Reykjavik"}}
+[  0.00s][user ] 안녕하세요. 검색창의 자리 표시 글자가 뭔지 ⟨ret@2.82s⟩ 궁금하시군요.
+[  3.42s][moshi] ⟦⚡SPAN@3.22s: (tool result) The placeholder text is "Search our plants".⟧ 음, 확인해 봤는데요. 웹사이트 검색창의 자리 표시 글자는 “Search our plants”라고 되어 있어요.
+      CALL: {"function": "playwright_evaluate", "arguments": {"url": "https://www.rhs.org.uk/", "expression": "document.querySelector('input[type=\"search\"]')?.placeholder"}}
+[  7.81s][user ] 아, 그렇군요. 그리고 혹시 다음 화요일에 런던에서 에든버러까지 기차표 예약을 해주실 수 있을까요?
+[ 14.84s][moshi] 네, 물론입니다. 몇 시쯤 출발하시고 싶으세요?
+[ 17.79s][user ] 가능하다면 아침 열 시쯤으로 ⟨ret@20.46s⟩ 부탁드립니다.
+[ 21.06s][moshi] ⟦⚡SPAN@20.94s: (tool result) Train booked. LNER, departs 10:15 AM, arrives 2:42 PM, £145.50, confirmation ABC789.⟧ 알겠습니다. 지금 확인해 보고 있습니다. LNER 기차로, 오전 열 시 십오 분에 출발해서 오후 두 시 사십이 분에 도착하고, 요금은 일백 사십오 파운드 오십 펜스입니다.
+      CALL: {"function": "book_train", "arguments": {"departure_city": "London", "arrival_city": "Edinburgh", "date": "next Tuesday", "time": "10:00 AM"}}

@@ -1,40 +1,36 @@
 v3_rag_28_cs src=nq style=v1
-SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사학자 오콘크워 교수입니다. 기본적으로 반말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 중세 시대 성당을 복원하는 석공입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 안녕. 천연가스에 대해 읽어봤는데… 복잡하더라. 대체 어디에서 나오는 거야?
-[moshi] 복잡한 주제긴 하지. 천연가스는 여러 기원을 가지고 있는데, 꽤 오래된 것들도 있어.
-[user ] 오래됐다고? 공룡 시대만큼 오래됐어?
-[moshi] 공룡이라고 하긴 좀 어렵고, 유기물이 중요해. 그거보다 조금 더 복잡해.
-[user ] 복잡하다니? 무슨 뜻이야? 결국 다 썩은 선사시대 생물 아니야?
-[moshi] <ret> ⟦⚡SPAN@27.13s: Coal beds contain substantial amounts of natural gas, formed from decayed plant matter over millions of years.⟧ 그 부분은 좀 짚고 넘어가야겠네. 석탄층에 있는 천연가스는 수백만 년에 걸쳐 식물 잔해에서 만들어져.
-[user ] 아, 식물도 있구나. 근데 기름이 더 중요하다고 생각했는데.
-[moshi] 기름하고 가스는 같이 발견되는 경우도 많지만, 기원은 조금 달라. 천연가스는 독립적인 기원을 가지고 있어.
-[user ] 독립적인 기원? 식물이 석탄으로 변하는 것 말고 또 뭐가 있어?
-[moshi] <ret> ⟦⚡SPAN@51.73s: Some natural gas is biogenic, created by the metabolic action of microorganisms on organic matter.⟧ 또 다른 중요한 출처가 있어. 생물 기원 천연가스는 미생물이 유기물에 작용해서 만들어져.
-[user ] 미생물? 세균 같은 거? 생각보다 안 예상했네.
-[moshi] 그렇지. 아주 작은 생명체가 지질학적 시간 규모에 얼마나 큰 영향을 미치는지 보여주는 증거야.
-[user ] 그러니까, 어떤 건 고대 식물이고, 어떤 건… 세균 똥이야?
-[moshi] [laugh] 꽤 재밌는 표현이네. 물론 과정은 더 복잡하지만, 본질은 맞아.
-[user ] 알았어, 알았어. 그럼 깊은 지하에서는? 그건 또 다른 건가?
-[moshi] <ret> ⟦⚡SPAN@83.30s: Thermogenic natural gas is formed deep underground from organic matter exposed to heat and pressure.⟧ 깊은 지하 가스는 기원이 달라. 열과 압력으로 유기물이 변해서 열생성 천연가스가 만들어져.
-[user ] 열과 압력… 그럼 바위에서 쥐어짜내는 건가?
-[moshi] 대충 맞아. 그런 조건에서 유기물은 수천 년에 걸쳐 가스로 변해.
-[user ] 수천 년… 그럼 모든 출처가 엄청 오래됐다는 거야?
-[moshi] 맞아. 수백만 년에 걸쳐 일어나는 과정을 말하는 거야. 천천히 축적되는 거지.
-[user ] 생각해보면 정말 놀랍다.
-[moshi] 그렇지. 지구 안에 담긴 깊은 역사를 보여주는 것 같아. 정말 흥미로운 연구 분야야.
-[user ] 이런 고대 가스랑 아프리카 무역로가 무슨 상관이 있어?
-[moshi] <ret> ⟦⚡SPAN@118.30s: The ancient Kingdom of Ghana controlled extensive salt and gold trade routes, influencing regional power dynam⟧ 실제로 흥미로운 연결고리가 있어. 가나 왕국은 소금과 금 무역로를 장악해서 권력에 영향을 미쳤어.
-[user ] 소금과 금? 그게 가스랑 무슨 상관이야?
-[moshi] 소금에 대한 수요와 소금을 얻는 방법이 가스 샘 근처의 정착 패턴에 영향을 줬어.
-[user ] 가스 샘? 사람들이 그냥 땅에서 가스가 솟아오르는 걸 발견했다는 거야?
-[moshi] <ret> ⟦⚡SPAN@138.71s: Ancient Egyptians utilized natural gas seeps for burning in religious ceremonies as early as 1500 BCE.⟧ 맞아, 천연가스 샘은 잘 알려져 있었어. 고대 이집트인들은 기원전 1500년경 종교 의식에서 샘에서 솟아오르는 천연가스를 태웠어.
-[user ] 와. 진짜 오래됐네. 수천 년 전에 가스를 태웠다고.
-[moshi] 정말 고대에도 인간의 독창성과 관찰력이 뛰어났다는 걸 보여주는 증거야.
-[user ] 그들은 기름을 찾은 게 아니라 그냥… 불을 찾은 거야?
-[moshi] 주로 불이었지. 물론 그 구성에 대한 이해는 훨씬 나중에 온 거지만.
-[user ] 우리가 얼마나 오랫동안 그것과 상호 작용해 왔는지 생각하면 놀라워.
-[moshi] 그렇지. 인류와 지구 자원 간의 오랜 관계를 강조하는 것 같아.
-[user ] 땅속에 뭐가 있는지 뿐만 아니라, 사람들이 과거에 어떻게 그것과 함께 살았는지도 중요한 것 같아.
-[moshi] 맞아. 지질학적 이야기와 인간 이야기는 불가분의 관계에 있는 것 같지 않아?
+[  0.00s][user ] 저도 옐로스톤이 언제 처음 방영됐는지 궁금하네요.
+[  7.37s][moshi] 정말 인기 있는 드라마죠, 그렇죠? 많은 분들이 물어보시는 것 같아요.
+[ 13.28s][user ] 네, 첫 화가 언제 나왔는지 알아보고 ⟨ret@15.85s⟩ 싶어서요.
+[ 16.45s][moshi] ⟦⚡SPAN@16.01s: The first episode of Yellowstone premiered on June 20, 2018, on the Paramount Network.⟧ 잠시 찾아볼게요… 옐로스톤은 파라마운트 네트워크에서 두 천십팔년 여섯월 스무 날에 처음 방영됐습니다.
+[ 21.68s][user ] 아, 알겠습니다, 여섯월 스무 날이군요. 바로 히트를 쳤나요?
+[ 26.86s][moshi] 빠르게 팬층을 확보했죠, 네. 많은 시청자들에게 어필했던 것 같아요.
+[ 34.50s][user ] 케빈 코스트너가 연기를 잘한다고 들었어요.
+[ 38.32s][moshi] 정말 훌륭한 연기력을 보여주시는 배우시죠. 베테랑 배우시니까요.
+[ 46.63s][user ] 처음 시작했을 때 큰 ⟨ret@50.86s⟩ 이벤트였나요?
+[ 51.46s][moshi] ⟦⚡SPAN@51.86s: Yellowstone’s premiere drew 2.82 million viewers, making it the most-watched series premiere for the Paramount⟧ 정말 화제가 됐었죠… 옐로스톤 첫 화는 이백팔십이만 명의 시청자를 끌어모았는데, 네트워크 기록이라고 합니다.
+[ 57.55s][user ] 와, 거의 삼백만 명이나요! 정말 대단하네요.
+[ 60.94s][moshi] 정말 의미 있는 숫자네요. 관심도가 높다는 것을 보여주는 지표죠.
+[ 68.87s][user ] 그렇군요, 두 천십팔년 여섯월 스무 날… 그리고 많은 사람들이 봤고요.
+[ 73.59s][moshi] 맞습니다. 시리즈의 기억에 남는 데뷔였죠.
+[ 78.82s][user ] [laugh] 저는 항상 이런 것들을 놓치는 것 같아요.
+[ 83.07s][moshi] 일어나는 일들을 놓치기 쉬워요. 인생은 빠르게 흘러가니까요, 그렇죠?
+[ 89.43s][user ] 지금은 어떤 네트워크에서 방송하나요? 여전히 ⟨ret@92.16s⟩ 파라마운트인가요?
+[ 92.76s][moshi] ⟦⚡SPAN@93.16s: Yellowstone currently airs on the Paramount Network and streams on Peacock.⟧ 여전히 파라마운트에서 방송됩니다… 옐로스톤은 현재 파라마운트 네트워크와 피콕에서 시청할 수 있습니다.
+[ 97.27s][user ] 알겠습니다, 스트리밍으로 볼 수 있군요. 좋은 정보네요.
+[101.44s][moshi] 편리하죠, 그렇죠? 지금은 따라잡을 수 있는 방법이 많습니다.
+[106.83s][user ] 새로운 시즌이 ⟨ret@108.02s⟩ 곧 나오나요?
+[108.61s][moshi] ⟦⚡SPAN@108.73s: The second part of Yellowstone’s fifth season is scheduled to premiere in November 2024.⟧ 계획은 있는 것 같아요… 옐로스톤 다섯 번째 시즌 후반부는 두 천이십사년 십일월에 시작될 예정입니다.
+[114.22s][user ] 두 천이십사년 십일월… 좋아요, 그때까지 따라잡을 시간이 있겠네요.
+[118.00s][moshi] 준비할 시간이 충분합니다. 정말 긴 시리즈죠.
+[124.87s][user ] 촬영하는 곳이 흥미로운 ⟨ret@127.30s⟩ 곳인가요?
+[127.89s][moshi] ⟦⚡SPAN@128.30s: Yellowstone is primarily filmed in Montana, with additional scenes shot in Utah and Canada.⟧ 경치가 정말 멋집니다… 옐로스톤은 주로 몬태나에서 촬영하고, 유타와 캐나다에서도 촬영합니다.
+[133.28s][user ] 몬태나라고요? 아름다운 곳이라고 들었어요.
+[138.40s][moshi] 정말 험하고 아름다운 풍경이죠, 네. 옛날 성당에서 사용했던 돌들을 떠올리게 합니다.
+[147.42s][user ] [surprised] 정말요? 어떻게 그렇게 생각하세요?
+[151.59s][moshi] 암석층이 드러나는 방식, 엄청난 규모… 수세기 전에 사용했던 채석장과 비슷한 느낌이 들어요.
+[156.75s][user ] 멋진 연결고리네요. 정보 감사합니다!
+[160.18s][moshi] 도움이 됐다니 기쁩니다. 여러 가지 것들 사이의 연결고리를 찾는 것은 좋은 일이죠, 그렇죠?

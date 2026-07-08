@@ -1,11 +1,10 @@
 v3_pause_19_ko src=nq style=v1
-SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. 기본적으로 반말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 걔가 누구인지 알아? 마스터셰프 USA에서 2014년에 누가 이겼는지.
-[moshi] <ret> ⟦⚡SPAN@6.03s: Luca Manfè won MasterChef USA in 2014.⟧ 음, 기억에 남는 시즌이었지. 2014년에는 루카 만페가 우승했어. 진짜 재능 있는 요리사더라.
-[user ] 나타샤는? 걔한테 무슨 일이 있었는지… 내가… 그러니까…
-[moshi] 걔도 만만치 않은 경쟁자였지, 당연히.
-[user ] 그러고 보니까… 여행에 대해서 생각하다가. 걔가 입상이라도 했어?
-[moshi] <ret> ⟦⚡SPAN@25.58s: Luca Manfè won MasterChef USA in 2014; Natasha Celis was the runner-up.⟧ 잠깐만, 다시 찾아볼게. 나타샤 셀리스는 루카 만페한테 딱 한 표 차이로 준우승했어. 내가 기억하기에 아주 치열한 경쟁이었지.
-[user ] 아, 그렇구나. 그럼 그렇지. 고마워!
+[  0.00s][user ] 어, 레고 닌자고 시즌 7 언제 나왔는지 ⟨ret@4.99s⟩ 알아?
+[  5.59s][moshi] ⟦⚡SPAN@5.99s: May 15, 2017 was the release date for Lego Ninjago season seven.⟧ 음, 레고 닌자고 시즌 7은 2017년 5월 15일에 처음 방영됐어요.
+[ 11.61s][user ] 와, 진짜 오래됐네… 아, 궁금한 게 있는데—
+[ 15.92s][moshi] 뭘 궁금해 하세요?
+[ 20.34s][user ] 그러니까, 여행에 대해 생각하고 있었어. 조카랑 레고 테마로 여행 가려고 하는데, 캘리포니아 레고랜드에 ⟨ret@24.57s⟩ 닌자고 월드가 있어?
+[ 25.16s][moshi] ⟦⚡SPAN@25.57s: Legoland California features Ninjago World, which opened June 2017, including a 4D ride.⟧ 네, 캘리포니아 레고랜드에는 닌자고 지역이 있어요. 닌자고 월드는 2017년 6월에 레고랜드 캘리포니아에 개장했고, 4D 라이드도 포함되어 있어요. 어린 방문객들에게 아주 인기가 많답니다.

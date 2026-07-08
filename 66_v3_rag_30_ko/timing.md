@@ -1,53 +1,95 @@
 # v3_rag_30_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 어, 옛날 배에 대해 읽다가… 음, 증기선이 언제 처음 발명됐는지 궁금해졌어.
-     5.81s  agent 발화 시작: 정말 흥미로운 질문이네요, 해양 기술의 기원을 추적하는 거군요.
+     0.00s  user  발화 시작: 음, 궁금하셨군요… 자이언츠가 슈퍼볼에 진출하려면 누구를 이겼어요?
+     5.81s  agent 발화 시작: 아, 좋은 질문이에요. 영광의 길을 거슬러 올라가는 건 언제나 흥미롭죠.
      5.98s  user  발화 끝
-     9.84s  user  발화 시작: 그래, 언젠가는 그렇게 될 것 같았거든. 근데 언제 된 거야?
+     9.83s  user  발화 시작: 그래, 딱 그거. 옛날 스포츠 라디오를 듣다가 생각이 났어.
     10.11s  agent 발화 끝
-    12.91s  <ret> 발화 (turn3 첫 프레임)
-    13.51s  agent 발화 시작: <ret> 알려 드릴게요. 최초의 증기선은 1783년에 마르키 드 주프루아 다방스가 발명했어요.
-    13.63s  user  발화 끝
-    13.91s  ⚡SPAN 주입 [d'=1.00s / d_lead=4.64s]: The first steam-powered paddle boat was invented in 1783 by Marquis de
-    21.24s  agent 발화 끝
-    21.70s  user  발화 시작: 와, 1783년! 생각보다 훨씬 빠르네. 해군 엔지니어 같은 사람이었어?
-    27.11s  agent 발화 시작: 실제로 다양한 분야에 관심이 있는 발명가였어요.
-    27.25s  user  발화 끝
-    30.34s  agent 발화 끝
-    31.62s  user  발화 시작: 흥미롭네. 배가 컸어? 뭐, 실제로 쓸모 있는 걸 했어?
-    34.47s  <ret> 발화 (turn7 첫 프레임)
-    35.07s  agent 발화 시작: <ret> 그렇게 크지는 않았어요. *피라미드*는 길이가 12미터였고, 소느 강에서 거슬러 올라가는 데 성공
-    35.32s  user  발화 끝
-    35.47s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.59s]: Jouffroy’s boat, the *Pyramide*, was twelve meters long and successful
-    42.25s  agent 발화 끝
-    42.54s  user  발화 시작: 12미터… 괜찮네. 소느 강은 프랑스에 있나? 지리 감각이 엉망이라서.
-    48.20s  agent 발화 시작: 네, 론 강의 주요 지류예요.
-    48.29s  user  발화 끝
-    50.68s  agent 발화 끝
-    51.36s  user  발화 시작: 그래, 그래. 흠. 비슷한 시기에 증기선을 만들려고 한 다른 사람도 있었어?
-    55.28s  <ret> 발화 (turn11 첫 프레임)
-    55.87s  agent 발화 시작: <ret> 다른 사람들도 실험을 하고 있었죠. 윌리엄 심핑턴은 1802년에 포스 앤 클라이드 운하에서 견인용
-    55.94s  user  발화 끝
-    56.24s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.37s]: William Symington built a steam boat for the Forth and Clyde Canal in 
-    64.78s  agent 발화 끝
-    64.78s  user  발화 시작: 견인? 승객용은 아니었나? 뭐, 실용적이긴 하겠네.
-    68.67s  agent 발화 시작: 그 기술의 잠재력을 보여주는 중요한 단계였어요.
-    68.84s  user  발화 끝
-    72.00s  agent 발화 끝
-    72.52s  user  발화 시작: 휴… 그렇게 제대로 작동하는 데 얼마나 오래 걸리는지 정말 놀라워.
-    76.19s  <ret> 발화 (turn15 첫 프레임)
-    76.78s  agent 발화 시작: <ret> 초기 공학은 많은 어려움에 직면했어요. 로버트 풀턴은 1807년에 *클레르몽*에 대한 미국 특허를
-    76.87s  user  발화 끝
-    77.19s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.11s]: Robert Fulton received a U.S. patent for a commercially successful ste
-    86.10s  agent 발화 끝
-    86.66s  user  발화 시작: 1807년… 풀턴은 좀 더 나중에 나왔네. 배 생김새가 많이 달랐어?
-    91.98s  user  발화 끝
-    92.43s  agent 발화 시작: 승객 수송을 위해 설계된 더 세련된 디자인이었어요.
-    96.28s  agent 발화 끝
-    96.74s  user  발화 시작: 그럴 만하네. 그럼 주프루아가 먼저 발명했는데, 풀턴이 모든 걸 다 가져갔어?
-   100.73s  <ret> 발화 (turn19 첫 프레임)
-   101.32s  agent 발화 시작: <ret> 역사는 종종 복잡해요. 주프루아가 증기선을 개척했지만, 풀턴의 *클레르몽*이 미국에서 증기 항해를
-   101.55s  user  발화 끝
-   101.73s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.70s]: Though Jouffroy pioneered the steam boat, Fulton’s *Clermont* is often
-   109.43s  agent 발화 끝
+    13.61s  agent 발화 시작: 스포츠 라디오는 추억을 불러일으키기 딱 좋죠, 안 그래요? 과거 경기들의 메아리…
+    13.62s  user  발화 끝
+    21.34s  agent 발화 끝
+    21.80s  user  발화 시작: 맞아. 자이언츠… 정확히 어떤 팀을 이기고 슈퍼볼에 *진출*했어요?
+    26.55s  <ret> 발화 (turn5 첫 프레임)
+    27.14s  agent 발화 시작: <ret> 제가 기억을 더듬어볼까요… 뉴욕 자이언츠는 2008년 1월 27일에 워싱턴 레드스킨스를 21대 1
+    27.36s  user  발화 끝
+    27.51s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.24s]: The New York Giants defeated the Washington Redskins 21–17 in the NFC 
+    30.37s  agent 발화 끝
+    31.65s  user  발화 시작: 아, 알겠네. 2008년… 희미하게 기억나요. 다른 슈퍼볼 우승 때는, 패트리어츠를 상대로 한 경기요?
+    35.12s  agent 발화 시작: 정말 놀라운 이변이었죠. 아무도 그들을 믿지 않았어요.
+    35.35s  user  발화 끝
+    42.30s  agent 발화 끝
+    42.68s  user  발화 시작: 그래, 엄청난 이변이었어. 하지만 그 슈퍼볼 *전에* 누구를 이겼어요?
+    47.66s  <ret> 발화 (turn9 첫 프레임)
+    48.26s  agent 발화 시작: <ret> 이제 제 기억을 시험하시는군요… 뉴욕 자이언츠는 2008년 1월 20일에 그린베이 패커스를 23대
+    48.38s  ⚡SPAN 주입 [d'=0.72s / d_lead=0.89s]: The New York Giants beat the Green Bay Packers 23–20 in the NFC Champi
+    48.42s  user  발화 끝
+    50.74s  agent 발화 끝
+    51.39s  user  발화 시작: 2008년 또 나왔네! 기세가 좋았나 보네. 삼촌이 그 경기에 돈 걸었었대.
+    55.97s  user  발화 끝
+    56.14s  agent 발화 시작: 조금의 내기도 흥분을 더하죠, 안 그래요?
+    65.04s  agent 발화 끝
+    65.04s  user  발화 시작: 맞아. 그럼, 자이언츠의 다른 슈퍼볼 진출 때는, 어떤 팀을 정복했는지 다시 한번 말해줘.
+    68.32s  <ret> 발화 (turn13 첫 프레임)
+    68.72s  ⚡SPAN 주입 [d'=0.40s / d_lead=1.39s]: The New York Giants defeated the Philadelphia Eagles 19–17 in the NFC 
+    68.92s  agent 발화 시작: <ret> 잠시 생각해볼까요… 뉴욕 자이언츠는 2004년 1월 18일에 필라델피아 이글스를 19대 17로 이
+    69.10s  user  발화 끝
+    72.25s  agent 발화 끝
+    72.77s  user  발화 시작: 19대 17… 접전이었네! 할아버지는 이글스를 엄청 좋아하셨어.
+    77.08s  agent 발화 시작: 팀에 대한 충성심은 깊죠, 안 그래요? 가족 전통과도 같아요.
+    77.12s  user  발화 끝
+    86.40s  agent 발화 끝
+    86.85s  user  발화 시작: 정말 그래. 자, 확실히 하기 위해서, 다시 한번 정리해볼까. 2008년에 NFC 챔피언십에서 누구를 이겼는
+    92.17s  user  발화 끝
+    92.62s  agent 발화 시작: 아까 전에 말씀드렸잖아요, 레드스킨스를요. 정말 스릴 넘치는 경기였죠.
+    96.46s  agent 발화 끝
+    96.85s  user  발화 시작: 맞아, 맞아. 그리고 패커스도, 2008년에.
+   100.86s  <ret> 발화 (turn19 첫 프레임)
+   101.02s  ⚡SPAN 주입 [d'=0.16s / d_lead=1.47s]: The New York Giants beat the Green Bay Packers 23–20 in the NFC Champi
+   101.45s  agent 발화 시작: <ret> 맞아요. 뉴욕 자이언츠는 2008년 1월 20일에 그린베이 패커스를 23대 20으로 이겼어요.
+   101.67s  user  발화 끝
+   109.56s  agent 발화 끝
+   109.69s  user  발화 시작: 알았어. 그럼, 2004년은… 누구였지?
+   112.92s  user  발화 끝
+   113.02s  agent 발화 시작: 이글스였어요, 힘든 승리였죠.
+   114.68s  user  발화 시작: 그렇다고 생각했어. 여동생이 축구를 엄청 좋아하는데, 한번 물어봐야겠어.
+   115.10s  agent 발화 끝
+   119.47s  agent 발화 시작: 가족끼리 축구에 대해 이야기하면 언제나 흥미진진하겠죠, 상상해봐요.
+   119.53s  user  발화 끝
+   124.43s  agent 발화 끝
+   124.47s  user  발화 시작: 맞아, 정말 그래. 그럼, 마지막으로 확인하기 위해서, 자이언츠가 워싱턴을 이긴 건…
+   129.91s  <ret> 발화 (turn25 첫 프레임)
+   130.49s  user  발화 끝
+   130.51s  agent 발화 시작: <ret> 2008년이었죠, 기억하고 있어요. 뉴욕 자이언츠는 2008년 1월 27일에 워싱턴 레드스킨스를 
+   130.91s  ⚡SPAN 주입 [d'=1.00s / d_lead=4.11s]: The New York Giants defeated the Washington Redskins 21–17 in the NFC 
+   139.41s  agent 발화 끝
+   139.60s  user  발화 시작: 완벽해! 그리고 이글스는 2004년에.
+   142.42s  agent 발화 시작: 정확해요. 기억에 남는 두 번의 챔피언십 우승이죠.
+   142.56s  user  발화 끝
+   146.16s  agent 발화 끝
+   146.22s  user  발화 시작: 좋아. 이제 다 정리된 것 같아서 마음이 놓이네.
+   149.32s  agent 발화 시작: 제가 그 세부 사항을 정리하는 데 도움이 되어서 기뻐요. 이 순간들을 되돌아보는 것도 좋죠.
+   149.41s  user  발화 끝
+   155.61s  user  발화 시작: 그래, 정말 그래. 좋은 추억이 떠오르네.
+   155.63s  agent 발화 끝
+   157.88s  agent 발화 시작: 저에게도 음악이 그렇거든요—멜로디는 당신을 과거로 데려다주죠.
+   158.11s  user  발화 끝
+   162.41s  agent 발화 끝
+   162.68s  user  발화 시작: 맞아, 정말 그렇네. 자, 완전히 확실히 하기 위해서… 레드스킨스, 패커스, 이글스, 맞지?
+   168.88s  <ret> 발화 (turn33 첫 프레임)
+   169.30s  user  발화 끝
+   169.48s  agent 발화 시작: <ret> 그게 순서예요. 뉴욕 자이언츠는 2008년 1월 27일에 워싱턴 레드스킨스를 21대 17로 이겼어
+   169.88s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.73s]: The New York Giants defeated the Washington Redskins 21–17 in the NFC 
+   176.35s  user  발화 시작: 와, 최고야! 정말 고마워!
+   176.38s  agent 발화 끝
+   178.22s  agent 발화 시작: 천만에요. 당신과 함께 그 경기들을 되돌아보는 것이 즐거웠어요.
+   178.33s  user  발화 끝
+   183.06s  user  발화 시작: 고마워. 나중에 또 질문이 생길지도 몰라.
+   183.28s  agent 발화 끝
+   186.02s  user  발화 끝
+   186.11s  agent 발화 시작: 언제든지 물어보세요. 좋은 스포츠 추억을 나누는 것을 즐겨요.
+   190.75s  user  발화 시작: 알았어, 좋아.
+   190.82s  agent 발화 끝
+   191.79s  agent 발화 시작: 그럼, 좋은 하루 보내세요. 좋은 음악을 듣는 것도 좋을 것 같아요.
+   191.84s  user  발화 끝
+   195.64s  agent 발화 끝

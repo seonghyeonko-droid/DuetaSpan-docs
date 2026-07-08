@@ -1,20 +1,22 @@
 v3_hesit_22_en src=nq style=v1
-SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] Um, so, what does the kidney actually *do* besides, you know, filter stuff?
-[moshi] Well, the kidneys are surprisingly versatile organs, truly. They maintain fluid balance, regulate electrolytes, and contribute to blood pressure control—a complex rhythm, really.
-[user ] Right, right. But I was reading something about hormones… do kidneys make hormones?
-[moshi] <ret> ⟦⚡SPAN@23.65s: Erythropoietin, a hormone produced by the kidneys, stimulates red blood cell production.⟧ That's a good question. The kidneys produce erythropoietin, which encourages the creation of red blood cells.
-[user ] Erythropoietin… that’s a mouthful. Is that the *only* hormone? I— I mean, are there others?
-[moshi] It’s the primary one most folks recall, but there are others involved in blood pressure regulation as well. It’s a delicate balance, like a chord progression.
-[user ] Okay, so, like, what other hormones are we talking about?
-[moshi] <ret> ⟦⚡SPAN@52.74s: The kidneys convert angiotensin I to angiotensin II, a hormone that raises blood pressure.⟧ Let's clarify that a bit. Kidneys convert angiotensin one into angiotensin two, a hormone raising blood pressure.
-[user ] Angiotensin… wow. That sounds… important. Does that have something to do with salt?
-[moshi] Absolutely. Sodium balance is intricately tied to the renin-angiotensin system, influencing blood volume and, therefore, pressure. A subtle interplay, you see.
-[user ] So, the kidneys, they’re kinda like a hormonal control panel, then?
-[moshi] <ret> ⟦⚡SPAN@84.27s: Calcitriol, the active form of vitamin D, is produced in the kidneys and regulates calcium absorption.⟧ In a way, yes. The kidneys produce calcitriol, the active form of vitamin D, regulating calcium absorption.
-[user ] Calcitriol… vitamin D? I didn’t know the kidneys were involved in *that*.
-[moshi] It’s often overlooked, but vital. Many systems collaborate to keep everything harmonious, like a jazz ensemble.
-[user ] Okay, uh, so, just to recap—erythropoietin, angiotensin, and calcitriol. Got it.
-[moshi] Precisely. Those three hormones represent the kidney's major endocrine contributions—a quiet power, really.
+[  0.00s][user ] Um, so, who painted the frescoes in the Arena Chapel? I think that’s what it’s called…
+[  5.17s][moshi] That’s a fascinating question about a truly remarkable space.
+[ 18.46s][user ] Yeah, I, I mean, I’m trying to remember from art history…it’s on the tip of ⟨ret@23.24s⟩ my tongue.
+[ 23.84s][moshi] ⟦⚡SPAN@23.56s: Giotto di Bondone was commissioned to paint the Scrovegni Chapel, also known as the Arena Chapel, in Padua.⟧ Let’s see if I can recall… Giotto di Bondone was the artist commissioned to paint the Scrovegni Chapel in Padua. He was a pivotal figure in Italian painting.
+[ 30.50s][user ] Giotto, right! Okay, and when— when was that chapel actually ⟨ret@37.52s⟩ finished?
+[ 38.12s][moshi] ⟦⚡SPAN@38.52s: The Scrovegni Chapel’s frescoes were completed around 1305.⟧ That’s a good detail to know. The frescoes within the Scrovegni Chapel were completed approximately in thirteen-oh-five. A significant moment in art history.
+[ 48.60s][user ] Thirteen-oh-five… hmm. Was he, um, was Giotto Italian? Obviously, given Padua, but…
+[ 52.07s][moshi] Yes, Giotto was, in fact, Italian.
+[ 61.16s][user ] Right, right. Okay. [sigh] What style of painting is it? Is it… is it ⟨ret@67.54s⟩ early Renaissance?
+[ 68.14s][moshi] ⟦⚡SPAN@68.50s: Giotto’s work in the Scrovegni Chapel is considered a key precursor to the Renaissance style.⟧ It’s a pivotal point in artistic development. Giotto’s work at the Scrovegni Chapel is a key precursor to the Renaissance style. It bridges the medieval and Renaissance periods.
+[ 79.57s][user ] So, pre-Renaissance, then. Interesting. Were there any…any specific patrons who paid ⟨ret@83.48s⟩ for it?
+[ 84.08s][moshi] ⟦⚡SPAN@84.48s: Enrico Scrovegni commissioned the chapel as an act of penance for his father’s usury.⟧ Patronage was crucial during that era. Enrico Scrovegni commissioned the chapel as an act of penance for his father. It's a story of faith and family.
+[ 92.32s][user ] Penance for usury… that’s… that’s a specific reason. Wow.
+[ 97.55s][moshi] It reveals much about the social and religious context of the time.
+[105.44s][user ] Yeah. Um, so, if I wanted to see it myself, what city is it ⟨ret@111.81s⟩ in?
+[112.40s][moshi] ⟦⚡SPAN@112.77s: The Scrovegni Chapel is located in Padua, Italy.⟧ It’s a beautiful city to visit. The Scrovegni Chapel is located in Padua, Italy. You’ll find it a truly moving experience.
+[120.18s][user ] Padua, Italy. Okay, got it. That’s… that’s really helpful, thank you.
+[125.12s][moshi] You’re very welcome. I’m glad I could assist with your research.

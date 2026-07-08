@@ -1,37 +1,37 @@
 # v3_chain_06_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 데이터 보고서를 '긴급 경고'로 업데이트해 주시겠어요?
-     3.09s  <ret> 발화 (turn1 첫 프레임)
-     3.25s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.49s]: (tool result) The page updated successfully. The heading now reads “Cr
-     3.68s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 데이터 보고서 제목이 “긴급 경고”로 업데이트되었습니다.
+     0.00s  user  발화 시작: 소피아 로드리게스 선생님과 3월 22일 오전 11시 15분에 진료 예약을 하고 싶습니다.
+     3.11s  <ret> 발화 (turn1 첫 프레임)
+     3.70s  agent 발화 시작: <ret> 네, 확인해 보겠습니다. 로드리게스 선생님과의 진료 예약은 3월 22일 오전 11시 15분으로 확
      3.84s  user  발화 끝
-     8.53s  agent 발화 끝
-     8.98s  user  발화 시작: 좋아요. 그럼 리스본에 있는 호텔 좀 찾아주시겠어요?
-    12.88s  <ret> 발화 (turn3 첫 프레임)
-    13.14s  user  발화 끝
-    13.21s  ⚡SPAN 주입 [d'=0.32s / d_lead=1.02s]: (tool result) Hotel Lisboa Plaza offers rooms from 112 euros per night
-    13.47s  agent 발화 시작: <ret> 물론입니다. 호텔 리스보아 플라자는 일박에 112유로부터 객실을 이용하실 수 있습니다.
-    18.46s  user  발화 시작: 괜찮은 것 같네요. 지금 리스본 날씨는 어떤가요?
-    18.56s  agent 발화 끝
-    21.62s  <ret> 발화 (turn5 첫 프레임)
-    21.98s  user  발화 끝
-    22.21s  agent 발화 시작: <ret> 잠시만 확인해 볼게요. 현재 리스본의 기온은 섭씨 24도로 화창합니다.
-    22.43s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.64s]: (tool result) It is currently 24 degrees Celsius and sunny in Lisbon.
-    27.12s  agent 발화 끝
-    27.40s  user  발화 시작: 음, 섭씨 24도… 그럼 거기서 2박 예약해 주시겠어요?
-    31.48s  <ret> 발화 (turn7 첫 프레임)
-    32.07s  agent 발화 시작: <ret> 알겠습니다. 호텔 리스보아 플라자 2박 예약이 확정되었고, 비용은 224유로입니다.
-    32.30s  user  발화 끝
-    32.48s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.23s]: (tool result) Booking confirmed. Hotel Lisboa Plaza, two nights, 224 e
-    37.21s  user  발화 시작: 완벽하네요. 근처에 괜찮은 식당도 찾아주시겠어요?
-    37.62s  agent 발화 끝
-    40.24s  <ret> 발화 (turn9 첫 프레임)
-    40.83s  agent 발화 시작: <ret> 그렇게 해 드릴 수 있습니다. 포르투갈 해산물 식당인 세르베자리아 하미로는 호텔에서 0.8킬로미터
-    41.05s  user  발화 끝
-    41.24s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.42s]: (tool result) Cervejaria Ramiro is 0.8 kilometers away and serves Port
-    47.59s  agent 발화 끝
-    48.40s  user  발화 시작: 해산물 정말 좋겠네요. 평점이 높은 곳인가요?
-    51.91s  agent 발화 시작: 많은 분들이 리스본 최고의 해산물 식당 중 하나라고 생각합니다.
-    51.96s  user  발화 끝
-    56.02s  agent 발화 끝
+     4.11s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.24s]: (tool result) Appointment with Dr. Sofia Rodriguez scheduled for March
+     8.56s  agent 발화 끝
+     9.01s  user  발화 시작: 잘 됐네요. 음, 선생님 사무실 주소가 어떻게 되나요?
+    12.91s  <ret> 발화 (turn3 첫 프레임)
+    13.17s  user  발화 끝
+    13.50s  agent 발화 시작: <ret> 알겠습니다, 찾아볼게요. 로드리게스 선생님 사무실은 노스캐롤라이나 주 애쉬빌 오크 스트리트 7번지
+    13.87s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.39s]: (tool result) Dr. Rodriguez’s office is located at 7 Oak Street, Ashev
+    18.46s  user  발화 시작: 알겠습니다. 혹시 그 근처에 괜찮은 꽃집이 있나요? 음… 어머니께 꽃을 보내고 싶어서요.
+    18.59s  agent 발화 끝
+    21.97s  user  발화 끝
+    22.36s  agent 발화 시작: 애쉬빌은 사실 꽃으로 유명한 예쁜 도시예요.
+    27.26s  agent 발화 끝
+    27.47s  user  발화 시작: 네, 그렇지만 오크 스트리트 7번지 근처에 있는 곳을 알고 싶어요.
+    31.57s  <ret> 발화 (turn7 첫 프레임)
+    32.16s  agent 발화 시작: <ret> 주변에 있는 곳들을 알아봐 드릴게요. Bloom Room은 0.3마일 떨어져 있고, 오후 6시까지
+    32.37s  user  발화 끝
+    32.57s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.52s]: (tool result) Bloom Room is 0.3 miles away, open until 6 PM. Petal & S
+    37.30s  user  발화 시작: 흠, Bloom Room이 더 가까운 것 같네요. 전화번호를 찾아주시겠어요?
+    37.71s  agent 발화 끝
+    40.33s  <ret> 발화 (turn9 첫 프레임)
+    40.92s  agent 발화 시작: <ret> 네, 찾아봐 드릴게요. Bloom Room의 전화번호는 828-555-1212입니다.
+    41.13s  user  발화 끝
+    41.33s  ⚡SPAN 주입 [d'=1.00s / d_lead=6.77s]: (tool result) Bloom Room's phone number is 828-555-1212.
+    47.68s  agent 발화 끝
+    48.38s  user  발화 시작: 좋아요. [sigh] 어머니께 백합 꽃다발을 배달해 주시겠어요? 어머니 주소는 사우스캐롤라이나 주 그린빌 메
+    51.24s  <ret> 발화 (turn11 첫 프레임)
+    51.84s  agent 발화 시작: <ret> 네, 도와드릴 수 있습니다. 백합 꽃다발은 사우스캐롤라이나 주 그린빌 메이플 드라이브 12번지로 
+    51.94s  user  발화 끝
+    52.24s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.76s]: (tool result) Order placed. Lilies delivered to 12 Maple Drive, Greenv
+    55.95s  agent 발화 끝

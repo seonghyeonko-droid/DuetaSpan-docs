@@ -1,24 +1,44 @@
 v3_rag_30_en src=nq style=v3
-SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] So, I was reading about old boats… uh, and I wondered, when was the steam-powered paddle boat actually invented?
-[moshi] That’s a fascinating question, tracing the origins of marine technology.
-[user ] Yeah, it just seemed like it had to happen eventually, you know? But when *did* it happen?
-[moshi] <ret> ⟦⚡SPAN@18.82s: The first steam-powered paddle boat was invented in 1783 by Marquis de Jouffroy d'Abbans in France.⟧ Let me share that with you. The very first steam-powered paddle boat was invented in seventeen eighty-three by a Marquis de Jouffroy d'Abbans.
-[user ] Wow, seventeen eighty-three! That’s… earlier than I thought. Was he a naval engineer or something?
-[moshi] He was an inventor with a broad range of interests, actually.
-[user ] Interesting. Was it a big boat? I mean, did it actually *do* anything useful?
-[moshi] <ret> ⟦⚡SPAN@43.09s: Jouffroy’s boat, the *Pyramide*, was twelve meters long and successfully traveled against the current on the S⟧ It was a relatively modest beginning. The *Pyramide* was twelve meters long and successfully navigated against the current on the Saône river.
-[user ] Twelve meters… okay, not huge. So, the Saône river is in France, right? I’m terrible with geography.
-[moshi] It is, a major tributary of the Rhône.
-[user ] Right, right. Hmm. Did anyone else try building steam boats around the same time?
-[moshi] <ret> ⟦⚡SPAN@67.52s: William Symington built a steam boat for the Forth and Clyde Canal in 1802, demonstrating its practical use fo⟧ Others were experimenting, certainly. William Symington built a steam boat in eighteen oh two for towing on the Forth and Clyde Canal.
-[user ] Towing, huh? So, not for passengers yet? That’s… practical, I guess.
-[moshi] It was a crucial step in demonstrating the technology’s potential.
-[user ] [sigh] It’s amazing how long it takes to get something like that working properly.
-[moshi] <ret> ⟦⚡SPAN@90.19s: Robert Fulton received a U.S. patent for a commercially successful steamboat, the *Clermont*, in 1807.⟧ Early engineering faced many challenges. Robert Fulton received a U.S. patent for the *Clermont* in eighteen oh seven, making it commercially successful.
-[user ] Eighteen oh seven… so, Fulton was a bit later then. Did his boat look much different?
-[moshi] It was a more refined design, intended for passenger travel.
-[user ] That makes sense. So, did Jouffroy get any credit for being first, or did Fulton steal the show?
-[moshi] <ret> ⟦⚡SPAN@118.56s: Though Jouffroy pioneered the steam boat, Fulton’s *Clermont* is often credited with initiating steam navigati⟧ History is often complicated. Jouffroy pioneered the steam boat, but Fulton’s *Clermont* initiated steam navigation in the United States.
+[  0.00s][user ] So, uh, I was just wondering… who did the Giants beat to get to the Super Bowl?
+[  7.67s][moshi] Ah, a good question, tracing the path to glory. It’s always interesting to look back at those pivotal games.
+[ 14.46s][user ] Yeah, exactly. I was listening to some old sports radio, and it got me thinking.
+[ 18.62s][moshi] Sports radio can certainly stir up memories, can't it? The echoes of past contests…
+[ 27.89s][user ] Right. So, the Giants… which team did they actually defeat to *reach* the Super ⟨ret@33.75s⟩ Bowl?
+[ 34.34s][moshi] ⟦⚡SPAN@34.07s: The New York Giants defeated the Washington Redskins 21–17 in the NFC Championship on January 27, 2008.⟧ Let’s see if I recall… The New York Giants defeated the Washington Redskins twenty-one to seventeen on January twenty-seventh, two thousand eight.
+[ 37.87s][user ] Oh, okay. Twenty-oh-eight… that rings a bell. What about the other Super Bowl win, the one against the Patriots?
+[ 43.06s][moshi] A remarkable upset, that one was. Few gave them a chance.
+[ 53.68s][user ] Yeah, a huge upset. But who did they beat *before* that ⟨ret@59.62s⟩ Super Bowl?
+[ 60.22s][moshi] ⟦⚡SPAN@60.10s: The New York Giants beat the Green Bay Packers 23–20 in the NFC Championship Game on January 20, 2008.⟧ Now you’re testing my memory… The New York Giants beat the Green Bay Packers twenty-three to twenty on January twentieth, two thousand eight.
+[ 63.12s][user ] Twenty-oh-eight again! They were on a roll, huh? I think my uncle had a bet on that game.
+[ 68.63s][moshi] A bit of a wager always adds to the excitement, doesn’t it?
+[ 78.12s][user ] Definitely. So, one more time… the Giants’ other Super Bowl appearance, what team did ⟨ret@82.08s⟩ they conquer beforehand?
+[ 82.67s][moshi] ⟦⚡SPAN@82.48s: The New York Giants defeated the Philadelphia Eagles 19–17 in the NFC Championship Game on January 18, 2004.⟧ Let me think a moment… The New York Giants defeated the Philadelphia Eagles nineteen to seventeen on January eighteenth, two thousand four.
+[ 86.54s][user ] Nineteen to seventeen… close game! My grandfather always loved the Eagles.
+[ 90.68s][moshi] Loyalties run deep when it comes to these teams, don't they? A family tradition.
+[100.53s][user ] They really do. Okay, just to be sure, let's recap. Who did they beat in the NFC Championship in two-thousand eight, first?
+[107.39s][moshi] We covered that earlier, the Redskins. A thrilling game.
+[111.91s][user ] Right, right. And then the Packers, also in two-thousand ⟨ret@118.40s⟩ eight.
+[118.99s][moshi] ⟦⚡SPAN@118.96s: The New York Giants beat the Green Bay Packers 23–20 in the NFC Championship Game on January 20, 2008.⟧ That's correct. The New York Giants beat the Green Bay Packers twenty-three to twenty on January twentieth, two thousand eight.
+[128.84s][user ] Got it. Okay, so, two-thousand four… who was it again?
+[132.34s][moshi] It was the Eagles, a hard-fought victory.
+[136.38s][user ] That’s what I thought. You know, my sister is a huge football fan, I should ask her.
+[141.10s][moshi] Family discussions about football are always lively, I imagine.
+[146.49s][user ] Oh, absolutely. So, just to confirm one last time, the Giants defeated ⟨ret@150.89s⟩ Washington in…
+[151.49s][moshi] ⟦⚡SPAN@151.85s: The New York Giants defeated the Washington Redskins 21–17 in the NFC Championship on January 27, 2008.⟧ Two thousand eight, if I recall. The New York Giants defeated the Washington Redskins twenty-one to seventeen on January twenty-seventh, two thousand eight.
+[163.05s][user ] Perfect! And the Eagles in two-thousand four.
+[166.47s][moshi] Precisely. A pair of memorable championship wins.
+[170.11s][user ] Great. I feel much better having that all straightened out.
+[173.15s][moshi] Glad I could help you sort through those details. It's good to revisit these moments.
+[178.26s][user ] Yeah, it is. It reminds me of some good times.
+[180.73s][moshi] Music does that for me, too—a melody can transport you.
+[184.94s][user ] True, very true. So, just to be completely sure… Redskins, Packers, ⟨ret@190.97s⟩ Eagles, right?
+[191.57s][moshi] ⟦⚡SPAN@191.45s: The New York Giants defeated the Washington Redskins 21–17 in the NFC Championship on January 27, 2008.⟧ That's the sequence. The New York Giants defeated the Washington Redskins twenty-one to seventeen on January twenty-seventh, two thousand eight.
+[200.89s][user ] Awesome. Thanks so much!
+[202.29s][moshi] My pleasure. It’s been a pleasure revisiting those games with you.
+[206.60s][user ] You too. I might have more questions later.
+[209.14s][moshi] Feel free to ask anytime. I enjoy a good sporting reminiscence.
+[213.91s][user ] Okay, cool. I will.
+[215.59s][moshi] Until then, enjoy your day. Perhaps some good music is in order.

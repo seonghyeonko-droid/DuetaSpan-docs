@@ -1,6 +1,6 @@
 v3_rags_35_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 회상하는 것을 좋아합니다. 기본적으로 반말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 가장 빠른 차가 뭐였는지 궁금하시죠? ThrustSSC가 시속 763.035마일로 1997년에 기록을 세웠어.
-[moshi] <ret> ⟦⚡SPAN@10.39s: The current land speed record for a car is 763.035 mph, set in 1997.⟧ 네, 알겠습니다. 그 차가 제일 빠르다는 거군요.
+[  0.00s][user ] 걔가 '향상 코끼리 사냥'에서 누구야? ⟨ret@9.38s⟩
+[  9.97s][moshi] ⟦⚡SPAN@9.62s: George Orwell was a British Imperial Police officer serving in Burma when he shot an elephant.⟧ 음, 그건 정말 흥미로운 질문인데요. 오웰은 그 사건 당시 버마에 주둔했던 영국 식민지 경찰관이었어요.

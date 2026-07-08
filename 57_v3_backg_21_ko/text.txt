@@ -1,29 +1,13 @@
 v3_backg_21_ko src=nq style=v1
-SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 존댓말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 가이드입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 어, “When You Wish Upon a Star” 제일 먼저 부른 사람이 누구야?
-[moshi] <ret> ⟦⚡SPAN@4.25s: Cliff Edwards first performed “When You Wish Upon a Star” in the 1940 Disney film *Pinocchio*.⟧ 아, 좋은 질문이에요. 클리프 에드워즈가 영화 *피노키오*에서 “When You Wish Upon a Star”를 처음 불렀어요. 정말 상징적인 노래예요.
-[user ] 음, 그 이름은 처음 들어보는 것 같아. 그 사람이 뭘 더 했어?
-[moshi] <ret> ⟦⚡SPAN@17.39s: Cliff Edwards, also known as Ukulele Ike, was an American singer and musician.⟧ 그 사람은 꽤 다양한 활동을 했어요. 클리프 에드워즈는, 유켈렐레 아이크라는 이름으로도 알려져 있는데, 미국의 가수이자 음악가였어요. 다재다능했답니다.
-[user ] 유켈렐레 아이크? 재밌는 별명이네. 인기가 많았어?
-[moshi] <ret> ⟦⚡SPAN@34.14s: Edwards gained popularity in the 1920s and 1930s for his ukulele playing and radio performances.⟧ 그랬어요. 그는 1920년대와 30년대에 유켈렐레와 라디오 방송으로 인기를 얻었거든요. 진짜 엔터테이너였어요.
-[user ] 라디오? 그래? 무슨 음악을 했어?
-[moshi] <ret> ⟦⚡SPAN@46.17s: Cliff Edwards performed songs in various genres, including jazz, blues, and popular standards.⟧ 실제로 다양한 장르를 소화했어요. 그는 재즈, 블루스, 그리고 대중적인 스탠더드 곡들을 연주했어요.
-[user ] 흥미롭네. 유명한 사람들과 같이 일한 적 있어?
-[moshi] <ret> ⟦⚡SPAN@56.60s: Cliff Edwards collaborated with musicians like Bing Crosby and performed on recordings with Spike Jones.⟧ 네, 꽤 많이 있었어요. 빙 크로스비와 함께 일했고, 스파이크 존스와 함께 레코딩도 했어요.
-[user ] 스파이크 존스… 그 이름은 들어본 것 같아.
-[moshi] 정말 기발한 음악가였죠, 안 그래요?
-[user ] «to_other» 분리수거는 내놨어?
-[user ] 음, 방금 생각하고 있었는데… *피노키오*는 몇 년에 나왔어?
-[moshi] <ret> ⟦⚡SPAN@75.72s: *Pinocchio* was released by Walt Disney Productions on February 23, 1940.⟧ 잠시 정보를 찾아볼게요. *피노키오*는 1940년 2월 23일에 개봉했어요. 획기적인 애니메이션 작품이죠.
-[user ] 1940년… 와, 진짜 오래됐네.
-[moshi] 그렇죠, 그렇죠? 그래도 예술성은 여전히 훌륭해요.
-[user ] 그 사람이 영화에서 노래를 부르고, 그 다음엔? 그 노래가 그 사람한테도 히트했어?
-[moshi] <ret> ⟦⚡SPAN@97.63s: “When You Wish Upon a Star” became widely recognized after its inclusion in *Pinocchio* and won an Academy Awa⟧ 그 노래는 확실히 인지도를 얻었어요. 영화 개봉 후에 유명해졌고 아카데미 상도 받았거든요.
-[user ] 아카데미 상? 노래로?
-[moshi] 네, 맞아요. 명곡인 데는 다 이유가 있어요.
-[user ] 그렇겠지. 전쟁 이후에도 계속 공연했어?
-[moshi] <ret> ⟦⚡SPAN@114.07s: Cliff Edwards continued to perform and record music until his death in 1961.⟧ 그는 한동안 계속 공연했어요. 1961년까지 음악을 연주하고 녹음했어요. 길고 다채로운 경력이었죠.
-[user ] 1961년… 알았어. 정보 고마워.
-[moshi] 도와드릴 수 있어서 기뻐요. 이런 음악사 이야기를 나누는 건 언제나 즐거워요.
+[  0.00s][user ] 인구에 대해 궁금하시군요. 뉴저지 주의 인구는 구백삼십이만 천팔백칠십두 ⟨ret@3.29s⟩ 명이에요.
+[  3.89s][moshi] ⟦⚡SPAN@4.29s: New Jersey’s population was 9,032,872 as of July 1, 2023.⟧ 네, 흔히 물어보시는 질문이에요. 뉴저지 주는 인구 밀도가 높은 주 중 하나랍니다.
+[ 13.28s][user ] 와, 정말 많네요! 몬태나 주와 비교하면 어떨까요?
+[ 17.18s][moshi] 음, 뉴저지 주는 제곱마일당 천이백십오 명, 몬태나 주는 단지 칠 점 일 명이에요.
+[ 30.23s][user ] 닭고기를 냉동고에서 꺼내셨는지 ⟨ret@33.52s⟩ 기억하세요?
+[ 34.11s][moshi] ⟦⚡SPAN@34.52s: New Jersey has 1,215 people per square mile, while Montana has 7.1 people per square mile.⟧ 정말 큰 차이네요! 뉴저지 주의 주도는 어디인가요?
+[ 43.48s][user ] «to_other» 트렌턴이 뉴저지 주의 주도이고, 천칠백구십삼 년에 도시가 되었어요.
+[ 46.26s][user ] That’s… quite a difference! What’s the capital of New ⟨ret@53.14s⟩ Jersey?
+[ 53.73s][moshi] ⟦⚡SPAN@53.70s: Trenton is the capital of New Jersey, and was incorporated as a city in 1793.⟧ It's a historic city. Trenton is the capital of New Jersey, becoming a city in seventeen ninety-three.

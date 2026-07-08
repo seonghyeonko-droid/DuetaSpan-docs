@@ -1,34 +1,24 @@
 v3_rag_29_en src=hotpotqa style=v2
-SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] So, which film came out first, Charley and the Angel or Planes? I always get those two mixed up.
-[moshi] That’s a common confusion, actually. They’re both from around the same period.
-[user ] But which *is* first? I need to settle a bet with a friend.
-[moshi] <ret> ⟦⚡SPAN@14.91s: Planes was released on August 9, 2013, while Charley and the Angel premiered on December 20, 2013.⟧ Let’s get this sorted. Planes was released before Charley and the Angel, coming out on August ninth, two thousand thirteen.
-[user ] August ninth? Really? I thought for sure it was the other way around.
-[moshi] It’s easy to misremember. Film release schedules can be quite dense.
-[user ] Okay, okay. So, Planes first. But what about the box office? Did Planes do better?
-[moshi] <ret> ⟦⚡SPAN@39.89s: Planes grossed $240.8 million worldwide, while Charley and the Angel earned $18.6 million globally.⟧ I can tell you about that. Planes earned considerably more, with a worldwide gross of two hundred forty point eight million dollars.
-[user ] Wow, a huge difference. That’s… surprising. Charley and the Angel is a classic!
-[moshi] “Classic” is subjective, of course. Box office isn't always a measure of lasting impact.
-[user ] True enough. But still, that's a big gap. What were the critical receptions like?
-[moshi] <ret> ⟦⚡SPAN@65.38s: Planes received a 26% rating on Rotten Tomatoes, whereas Charley and the Angel holds a 71% rating on the same ⟧ Let's look at the reviews. Charley and the Angel had a significantly higher Rotten Tomatoes score, at seventy-one percent.
-[user ] [laugh] So, Planes made more money, but critics liked Charley and the Angel better? That's ironic.
-[moshi] It’s not uncommon for a commercially successful film to receive lukewarm critical reception.
-[user ] Hmm. What about the directors? Were they well-known names?
-[moshi] <ret> ⟦⚡SPAN@90.49s: Planes was directed by Klay Hall, while Charley and the Angel was directed by David Weaver.⟧ I can provide some background. Klay Hall directed Planes, and David Weaver directed Charley and the Angel.
-[user ] Never heard of either of them, honestly. Were either of them known for other films?
-[moshi] <ret> ⟦⚡SPAN@103.22s: Klay Hall previously worked on “Surf’s Up” and “Tinker Bell”, while David Weaver is known for “Secondhand Lion⟧ Let’s see what their filmographies reveal. Klay Hall worked on “Surf’s Up” and “Tinker Bell”, and David Weaver is known for “Secondhand Lions”.
-[user ] "Secondhand Lions" is a good film! So Weaver has a bit more pedigree, maybe?
-[moshi] That's a fair assessment. It’s a well-regarded independent film.
-[user ] Okay. What about the animation style? Was one noticeably different from the other?
-[moshi] <ret> ⟦⚡SPAN@127.19s: Planes utilizes computer animation, while Charley and the Angel employs a blend of live-action and computer-ge⟧ There were some stylistic differences. Planes is entirely computer-animated, but Charley and the Angel blends live-action with CGI.
-[user ] Ah, that explains it. Charley and the Angel felt… different. More grounded, I guess?
-[moshi] The combination of live-action and animation can create a unique visual experience.
-[user ] So, both films have their strengths and weaknesses, it seems.
-[moshi] Precisely. Each offers something different to the viewer. It depends on personal preference.
-[user ] Fair enough. One last question – any interesting trivia about either one?
-[moshi] <ret> ⟦⚡SPAN@162.24s: Planes was originally intended as a direct-to-video release, but Disney decided to give it a theatrical run du⟧ There’s a bit of a story with Planes. Planes was initially planned for direct-to-video, but Disney gave it a theatrical release.
-[user ] Wow, that's a turnaround! Good for them, I guess. Thanks for all the info.
-[moshi] My pleasure. It’s always rewarding to explore the details behind these stories.
+[  0.00s][user ] I was just reading about a game—it sounds really interesting. It has a mission about Pearl Harbor, doesn’t it?
+[  5.67s][moshi] It certainly does sound intriguing. Many games draw inspiration from historical events.
+[ 10.05s][user ] But this one…it actually *includes* the attack on Pearl Harbor as a playable mission? That’s… a bit ⟨ret@13.92s⟩ much, isn’t it?
+[ 14.51s][moshi] ⟦⚡SPAN@14.92s: A 2012 combat flight simulator by Konami features missions including the attack on Pearl Harbor by the Empire ⟧ Let me assure you… The game does include a playable mission depicting the attack on Pearl Harbor by Japan on December seventh, nineteen forty-one.
+[ 24.16s][user ] December seventh, nineteen forty-one…right. But it's a *Japanese* company that made the game? Doesn’t that seem…sensitive?
+[ 28.91s][moshi] It's a valid point to consider cultural sensitivities when representing historical events.
+[ 33.25s][user ] Sensitive is an understatement! I mean, recreating a surprise attack on American soil…it ⟨ret@38.92s⟩ feels…exploitative.
+[ 39.51s][moshi] ⟦⚡SPAN@39.48s: The attack on Pearl Harbor was a surprise military strike by the Imperial Japanese Navy Air Service upon the U⟧ Perhaps understanding… The attack on Pearl Harbor was a surprise military strike by Japan on the United States naval base in Hawaii, December seventh, nineteen forty-one.
+[ 47.50s][user ] Okay, okay, historical context. But still… a *game*? It feels… disrespectful, doesn’t it?
+[ 53.12s][moshi] Disrespect is certainly a possibility when dealing with tragic historical events.
+[ 59.59s][user ] So, the game…it’s a flight simulator, you said? What kind of planes can you fly in ⟨ret@64.78s⟩ it?
+[ 65.37s][moshi] ⟦⚡SPAN@65.10s: The 2012 combat flight simulator features historically accurate aircraft from World War II, including the F6F ⟧ The simulator offers… The simulator features historically accurate aircraft from World War Two, including the F6F Hellcat, A6M Zero, and P-51 Mustang.
+[ 73.82s][user ] A6M Zero…that’s the Japanese one, right? It’s…ironic they’d let you fly that in a Pearl Harbor mission.
+[ 80.19s][moshi] [sigh] Irony is a complex element in artistic representation, isn't it?
+[ 86.19s][user ] I guess. So, is it a good game, aside from…all this? Is it actually ⟨ret@89.61s⟩ *fun* to play?
+[ 90.21s][moshi] ⟦⚡SPAN@90.01s: Reviews of the 2012 combat flight simulator praised its realistic flight mechanics and detailed aircraft model⟧ Critics generally found… Critics praised the realistic flight mechanics and detailed aircraft models, but noted its limited mission variety.
+[ 98.36s][user ] Limited mission variety…that’s a shame. So, it’s just *one* mission about Pearl ⟨ret@102.30s⟩ Harbor, then?
+[102.90s][moshi] ⟦⚡SPAN@103.18s: The combat flight simulator includes over thirty missions, with the Pearl Harbor attack being one of several h⟧ The game includes… The game includes over thirty missions, and the Pearl Harbor attack is one of the historical scenarios.
+[111.45s][user ] Over thirty missions…okay. So, it’s not *entirely* focused on that one event. That’s…better, I suppose.
+[116.34s][moshi] It appears to offer a broader scope than initially suggested, yes. Perhaps a more balanced experience.

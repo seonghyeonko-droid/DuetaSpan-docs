@@ -1,12 +1,12 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] Show me the error logs related to network issues, and only the first five.
-[moshi] <ret> ⟦⚡SPAN@5.12s: (tool result) Five error logs found mentioning network failures.⟧ Certainly. I’ve located five error logs related to network failures for you.
-      CALL: {"function": "playwright_console_logs", "arguments": {"query": "network issues", "limit": 5}}
-[user ] Hmm, interesting. Uh, my aunt used to collect stamps. But, can you book a flight to Reykjavik for me?
-[moshi] Of course. What dates were you considering?
-[user ] Departing December twentieth, returning December twenty-seventh.
-[moshi] <ret> ⟦⚡SPAN@27.31s: (tool result) Booking confirmed. Icelandair, 10:15 AM, 685 dollars, reference GHI789.⟧ Let me check availability. Your flight to Reykjavik is confirmed with Icelandair, departing at ten fifteen AM for six hundred eighty-five dollars.
-      CALL: {"function": "book_flight", "arguments": {"departure_date": "December twentieth", "return_date": "December twenty-seventh", "destination": "Reykjavik"}}
+[  0.00s][user ] What is the placeholder text of the search ⟨ret@4.92s⟩ bar?
+[  5.51s][moshi] ⟦⚡SPAN@5.92s: (tool result) The placeholder text is "Search our plants".⟧ Let me check that for you. The website’s search bar placeholder reads “Search our plants”.
+      CALL: {"function": "playwright_evaluate", "arguments": {"url": "https://www.rhs.org.uk/", "expression": "document.querySelector('input[type=\"search\"]')?.placeholder"}}
+[ 11.31s][user ] Oh, interesting. And uh, can you book me a train from London to Edinburgh for next Tuesday?
+[ 19.22s][moshi] Certainly. What time would you prefer to travel?
+[ 22.89s][user ] Around ten in the morning, if ⟨ret@26.27s⟩ possible.
+[ 26.86s][moshi] ⟦⚡SPAN@27.27s: (tool result) Train booked. LNER, departs 10:15 AM, arrives 2:42 PM, £145.50, confirmation ABC789.⟧ I'm looking at options now. Your train is booked with LNER, departing at ten fifteen, arriving at two forty-two, for one hundred forty-five pounds fifty.
+      CALL: {"function": "book_train", "arguments": {"departure_city": "London", "arrival_city": "Edinburgh", "date": "next Tuesday", "time": "10:00 AM"}}

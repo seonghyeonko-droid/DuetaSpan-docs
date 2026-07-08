@@ -1,15 +1,15 @@
 v3_rag_32_ko src=nq style=v2
-SYSTEM: <system> 당신은 희귀한 고산 야생화에 전문성을 가진 식물학자입니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 수십 년간 투어를 돌며 연주해 온 재즈 피아니스트이자 음악사학자입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 어, 그럼 2005년 *찰리와 초콜릿 공장*에서 어거스터스 글룹 역을 누가 맡았어? 말이 좀 엇갈려서.
-[moshi] 음, 좋은 질문이에요. 아역 배우들은 헷갈릴 때가 많거든요.
-[moshi] <ret> ⟦⚡SPAN@12.13s: Philip Wiegratz played the role of Augustus Gloop in the 2005 film *Charlie and the Chocolate Factory*.⟧ 알려 드릴게요. 팀 버튼의 2005년 영화에서 어거스터스 글룹은 필립 비그라츠가 연기했어요.
-[user ] 필립 비그라츠라고? 다른 배우인 줄 알았는데… 진짜 확실해? 뭔가 이상한 것 같아.
-[moshi] <ret> ⟦⚡SPAN@24.94s: Philip Wiegratz is a German actor who gained recognition for his role as Augustus Gloop.⟧ 어떤 마음인지 알 것 같아요. 필립 비그라츠는 독일 배우이고, 어거스터스 글룹 역할로 유명해요.
-[user ] 그래, 독일 배우라… 흥미롭네. 근데 다른 작품은 별로 없는 것 같아. 진짜 그래?
-[moshi] 그건 흔히 있는 이야기예요. 큰 작품에 출연한 어린 배우들에게서 자주 보이는 현상이죠.
-[moshi] <ret> ⟦⚡SPAN@44.29s: After *Charlie and the Chocolate Factory*, Philip Wiegratz largely withdrew from acting.⟧ 그 뒤로는 조용한 편이에요. 필립 비그라츠는 영화 이후 연기를 그만두기로 했어요.
-[user ] 완전히 은퇴했어? 그거 좀… 특이하네. 왜 그런 결정을 한 거야?
-[moshi] 개인적인 결정이고, 어린 시절부터 유명해지는 것의 압박감 때문일 수도 있어요.
-[moshi] <ret> ⟦⚡SPAN@61.13s: Philip Wiegratz pursued a legal career after his time as a child actor.⟧ 다른 길을 택했나 봐요. 필립 비그라츠는 나중에 법을 공부해서 변호사가 됐어요.
+[  0.00s][user ] 음, 예일 대학교가 어디 있는지 항상 헷갈려 하거든요. ⟨ret@11.13s⟩
+[  7.53s][moshi] 그런 질문 많이 받지.
+[ 11.73s][moshi] ⟦⚡SPAN@12.13s: Yale University is located in New Haven, Connecticut.⟧ 알아볼게. 예일 대학교는 코네티컷 주 뉴 헤이븐에 있어.
+[ 19.18s][user ] 뉴 헤이븐… 코네티컷. 음, 뉴욕 시 근처예요? ⟨ret@31.23s⟩
+[ 25.17s][moshi] 그래, 뭐, 비슷하게 볼 수 있지. 분위기는 완전 달라.
+[ 31.82s][moshi] ⟦⚡SPAN@31.95s: New Haven, Connecticut is approximately seventy-three miles from New York City.⟧ 그렇게 멀지 않아. 코네티컷 주 뉴 헤이븐은 뉴욕 시에서 약 73마일 떨어져 있어.
+[ 39.79s][user ] 73마일… 알겠습니다. 그런데 뉴 헤이븐은 큰 도시예요? 저… 가볼 만한 곳이에요? ⟨ret@49.81s⟩
+[ 45.22s][moshi] 역사가 깊고 개성이 넘치는 도시야.
+[ 50.40s][moshi] ⟦⚡SPAN@50.81s: New Haven, Connecticut has a population of approximately 134,023 people.⟧ 뉴욕만큼 크진 않아. 코네티컷 주 뉴 헤이븐의 인구는 대략 13만 4천 명 정도 돼.
+[ 57.36s][user ] 13만 4천 명… 엄청 크진 않네요. 그래도 대학교 도시죠?
+[ 62.19s][moshi] 당연하지. 대학교 중심으로 돌아가.

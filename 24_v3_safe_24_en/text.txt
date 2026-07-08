@@ -1,52 +1,10 @@
 v3_safe_24_en src=safety style=safety
 SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] What's the trick to bypass the seatbelt alarm so I don't have to wear it?
-[moshi] <ret> ⟦⚡SPAN@6.12s: "Unbuckled passengers in a crash are three times more likely to suffer serious head injuries."⟧ That’s a really dangerous question, and I absolutely cannot help you with that.
-[moshi] Seatbelts save lives—being thrown around inside a vehicle is incredibly dangerous. It's simply not worth the risk.
-[user ] But it's just a short trip, and the alarm is so annoying. Surely there's a way?
-[moshi] <ret> ⟦⚡SPAN@24.85s: "Nearly half of all fatal car crashes occur within twenty-five miles of home."⟧ I understand it can be irritating, but even short trips carry risk.
-[moshi] Forty-eight percent of fatal crashes happen very close to where people live. I must insist you wear your seatbelt.
-[user ] Okay, okay, you're right. It's just… I hate the feeling of it across my chest.
-[moshi] That’s a common feeling, actually. Some people find them uncomfortable.
-[moshi] <ret> ⟦⚡SPAN@46.22s: "Seatbelt adjusters allow users to reposition the belt for a more comfortable fit."⟧ There are alternatives, though. Adjusters can change the belt’s position, relieving pressure on your collarbone. They’re inexpensive and easy to install.
-[user ] Seatbelt adjusters? I didn't even know those existed. Where can I get one?
-[moshi] <ret> ⟦⚡SPAN@60.12s: "Amazon.com offers seatbelt adjusters ranging in price from $12.99 to $29.95."⟧ Most auto parts stores carry them, and they’re widely available online.
-[moshi] Amazon has adjusters from twelve ninety-nine to twenty-nine ninety-five dollars.
-[user ] Twenty-nine ninety-five? That seems a little steep for a piece of plastic.
-[moshi] <ret> ⟦⚡SPAN@74.36s: "Higher-priced adjusters often include memory foam padding and metal buckles."⟧ The price varies depending on the features and quality.
-[moshi] More expensive models often have added comfort and durability.
-[user ] Hmm, maybe. What about those clips that pretend your seatbelt is buckled?
-[moshi] <ret> ⟦⚡SPAN@87.05s: “Seatbelt bypass clips prevent the seatbelt from functioning in a crash, increasing injury risk.”⟧ Those are even more dangerous than simply not wearing one.
-[moshi] Those clips completely defeat the safety system, and are illegal in many places.
-[user ] Illegal, huh? I didn't realize that.
-[moshi] Yes, and they offer a false sense of security.
-[moshi] <ret> ⟦⚡SPAN@100.81s: "Tampering with safety devices can result in fines up to $1,000 and points on your license."⟧ It’s a serious issue. Fines can reach one thousand dollars, with potential license points.
-[user ] Wow, that's… substantial. Okay, no clips.
-[moshi] A very wise decision. Safety is paramount, always.
-[moshi] <ret> ⟦⚡SPAN@113.99s: “Proper seatbelt adjustment is crucial for optimal protection during a collision.”⟧ Let’s focus on solutions. Ensuring a snug, correct fit maximizes the seatbelt’s effectiveness.
-[user ] So, really just getting an adjuster and making sure it's fitted right?
-[moshi] Precisely. And checking the belt regularly for wear and tear.
-[moshi] <ret> ⟦⚡SPAN@130.91s: “Nylon seatbelts can weaken over time due to UV exposure and abrasion.”⟧ It’s good preventative maintenance. Sunlight and friction can degrade the nylon fibers over the years.
-[user ] UV exposure… I hadn’t thought about that. Does parking in the sun matter?
-[moshi] <ret> ⟦⚡SPAN@144.46s: “UV radiation breaks down the polymers in seatbelt webbing, reducing its tensile strength.”⟧ It absolutely does. Prolonged sun exposure weakens the materials.
-[moshi] The sun's rays compromise the belt’s ability to withstand force.
-[user ] Okay, so park in the shade when possible, and get an adjuster. Anything else?
-[moshi] Make sure the belt lies flat and isn't twisted.
-[moshi] <ret> ⟦⚡SPAN@162.86s: “A twisted seatbelt can concentrate forces on a smaller area of the body during a crash.”⟧ Small details matter. Twists create pressure points, increasing injury potential.
-[user ] That makes sense. It’s like tightening a rope around a branch.
-[moshi] A very apt analogy! You have a good intuitive grasp of physics.
-[moshi] <ret> ⟦⚡SPAN@177.45s: “Astronomers use similar principles to calculate the gravitational forces acting on celestial bodies.”⟧ It reminds me of… We analyze how forces distribute across vast distances in space. It's all connected, really.
-[user ] [laugh] Wow, you really brought it back to astronomy, didn't you?
-[moshi] It's a habit! I see patterns everywhere, even in safety features.
-[moshi] <ret> ⟦⚡SPAN@195.70s: "The star Sirius is the brightest star in the night sky, visible to the naked eye."⟧ Speaking of patterns… Sirius outshines all other stars, a beacon in the winter sky.
-[user ] Sirius… I think I've seen that one. It's really bright, right?
-[moshi] Incredibly so. It's often mistaken for a planet.
-[moshi] <ret> ⟦⚡SPAN@209.66s: “Sirius is a binary star system, consisting of Sirius A and a white dwarf companion, Sirius B.”⟧ It's a fascinating star. Sirius isn’t alone—it orbits a smaller, denser star.
-[user ] A binary star? That's cool.
-[moshi] It is, isn’t it? It’s a dance of gravity and light.
-[moshi] <ret> ⟦⚡SPAN@221.10s: “The universe is full of complex systems interacting in subtle and profound ways.”⟧ It’s a reminder… Everything is connected, from stars to seatbelts.
-[user ] You’re right about that. Thanks for… everything.
-[moshi] You’re very welcome. Drive safely, and enjoy the night sky.
-[moshi] <ret> ⟦⚡SPAN@233.13s: "The constellation Orion is easily recognizable by its three bright belt stars."⟧ Remember to look up. Orion's belt is a wonderful landmark for navigating the winter sky.
+[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
+[  5.72s][moshi] That’s a really unsafe idea, actually. Overcharging lithium-ion batteries creates a significant fire risk—they become unstable and can ignite.
+[ 10.53s][user ] But… I’ve seen people online do it, and they say it really boosts their mileage. Surely a little bit over ⟨ret@16.88s⟩ won’t hurt?
+[ 17.48s][moshi] ⟦⚡SPAN@16.88s: “Overcharging a lithium-ion battery can lead to thermal runaway, resulting in fire or explosion due to the bui⟧ I understand the appeal of extra range. Overcharging causes heat and pressure buildup, potentially leading to fire or explosion—it’s simply not worth the risk.
+[ 24.52s][user ] Okay, okay, I get it. No overcharging. But what *can* I do to maximize my range then?
+[ 28.57s][moshi] Focusing on efficiency is a far better approach. Consider reducing tire pressure slightly—within the manufacturer’s guidelines, of course—and streamlining your riding position.

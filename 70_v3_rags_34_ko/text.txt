@@ -1,6 +1,6 @@
 v3_rags_34_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. 기본적으로 반말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사학자 오콘크워 교수입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 사용자: 아메리칸 걸 인형이 처음 만들어진 해는 언제예요?
-[moshi] <ret> ⟦⚡SPAN@4.53s: The first American Girl doll was released in 1986.⟧ 모시: 음, 그거 궁금했구나. 제일 처음 아메리칸 걸 인형이 나온 게 팔십육 년도야.
+[  0.00s][user ] 얼굴 보니까 좋네. 올드 트래퍼드 경기장 지을 때 ⟨ret@3.57s⟩ 얼마 들었어?
+[  4.17s][moshi] ⟦⚡SPAN@4.57s: Old Trafford’s construction in 1909 cost approximately ninety thousand pounds.⟧ 음, 찾아봤는데, 1909년에 올드 트래퍼드 경기장 건설에는 약 9만 파운드가 필요했답니다.

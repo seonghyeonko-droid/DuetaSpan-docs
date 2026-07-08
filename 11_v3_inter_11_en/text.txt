@@ -1,12 +1,14 @@
 v3_inter_11_en src=nq style=v1
-SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] I’m trying to settle a sports argument—who was the very first bowler to take a hattrick in Test cricket?
-[moshi] <ret> ⟦⚡SPAN@6.02s: Fred Spofforth, playing for Australia, achieved the first hattrick in Test cricket in 1879.⟧ That’s a fascinating bit of cricket history! Fred Spofforth, playing for Australia, took the very first Test hattrick in eighteen seventy-nine.
-[user ] Eighteen seventy-nine, wow. Was it against England?
-[moshi] <ret> ⟦⚡SPAN@18.25s: Spofforth’s hattrick was taken against England in the third Test match at the Sydney Cricket Ground.⟧ Yes, it was indeed against England.
-[moshi] Spofforth’s hattrick occurred against England in the third Test at the Sydney Cricket Ground.
-[user ] That’s amazing—and he was Australian? I— I mean, was he the only one—
-[moshi] <ret> ⟦⚡SPAN@29.23s: Spofforth took two hattricks in that same series against England, a feat unmatched for ninety-two years.⟧ Actually, that's a great question— Spofforth actually took two hattricks in that series against England, and that record stood for ninety-two years.
-[user ] Two? Incredible! So, a truly dominant bowler then.
+[  0.00s][user ] What’s a bronze award in Girl ⟨ret@5.02s⟩ Scouts?
+[  5.61s][moshi] ⟦⚡SPAN@6.02s: The Bronze Award is the third highest award a Girl Scout can earn.⟧ That’s a great question. It’s recognized as the third highest honor within the Girl Scout program.
+[ 13.68s][user ] Oh, okay. What do they *do* to get ⟨ret@17.25s⟩ it?
+[ 17.84s][moshi] ⟦⚡SPAN@18.25s: To earn the Bronze Award, Girl Scouts must complete a project that benefits their community.⟧ It involves a community service project.
+[ 20.17s][moshi] Scouts complete a project demonstrably benefiting their local community— it’s quite involved.
+[ 24.52s][user ] So, it’s like… a big project? Uh—
+[ 28.83s][moshi] «interrupted» It requires considerable planning—
+[ 35.35s][user ] «interrupts_prev» But how long does it usually ⟨ret@39.08s⟩ take?
+[ 39.67s][moshi] ⟦⚡SPAN@39.96s: Girl Scout Bronze Award projects typically take between twenty and forty hours to complete.⟧ That varies quite a bit. Projects generally require twenty to forty hours of work from the Girl Scouts involved. A substantial undertaking, certainly.
+[ 47.35s][user ] Wow, that *is* a lot. [surprised]

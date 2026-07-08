@@ -1,16 +1,28 @@
 v3_backc_20_en src=nq style=v1
-SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] Who plays Miss Wilma in *I Can Do Bad All By Myself*?
-[moshi] <ret> ⟦⚡SPAN@4.04s: Gladys Knight played Miss Wilma in Tyler Perry’s 2007 film, *I Can Do Bad All By Myself*.⟧ That’s a great question. Gladys Knight portrayed Miss Wilma in that Tyler Perry film from two thousand seven. A truly gifted performer, she is.
-[user ] Oh, okay. I didn’t realize it was her.
-[moshi] «interrupted» She brought a wonderful energy to the role, a kind of soulful strength—
-[moshi] <ret> ⟦⚡SPAN@19.72s: Gladys Knight is an American singer, songwriter, actress, and humanitarian.⟧ Gladys Knight is an American singer, songwriter, actress, and humanitarian, you know.
-[user ] «backchannel» Mm-hmm.
-[moshi] Quite a multi-faceted talent.
-[user ] What else has she been in?
-[moshi] <ret> ⟦⚡SPAN@30.88s: Knight appeared in the 1992 film *Beverly Hills Cop III* as herself.⟧ She's had quite a career. She appeared as herself in *Beverly Hills Cop III* in nineteen ninety-two. A fun cameo, I recall.
-[user ] Interesting. Is she still performing?
-[moshi] <ret> ⟦⚡SPAN@41.54s: Gladys Knight headlined a Las Vegas residency at the Palace Station Hotel & Casino in 2014.⟧ Absolutely, she still graces the stage.
-[moshi] She headlined a residency at the Palace Station in Las Vegas in two thousand fourteen. Still captivating audiences, after all these years.
+[  0.00s][user ] How many rounds are in the MLB ⟨ret@3.04s⟩ draft?
+[  3.63s][moshi] ⟦⚡SPAN@3.92s: The Major League Baseball draft consists of twenty rounds.⟧ That’s a common question… The MLB draft currently has twenty rounds, though it has varied over the years—it was once much longer, even fifty rounds in the nineties.
+[  8.57s][user ] «backchannel» Yeah.
+[ 12.13s][moshi] It’s a strategic process for teams, building for the future.
+[ 17.18s][user ] Wow, twenty rounds is a lot. When does it usually ⟨ret@22.51s⟩ happen?
+[ 23.11s][moshi] ⟦⚡SPAN@22.51s: The MLB draft is typically held in July, beginning on a Sunday and concluding on Tuesday.⟧ It’s a fairly structured event… The draft usually takes place in July, starting on a Sunday and finishing two days later on the following Tuesday. It’s become quite a spectacle, actually.
+[ 23.94s][user ] What positions are most often ⟨ret@25.56s⟩ drafted early?
+[ 26.15s][moshi] ⟦⚡SPAN@25.96s: Pitchers and shortstops are frequently selected early in the MLB draft.⟧ Certain skill sets are always in demand… Pitchers and shortstops are often chosen first, as they’re considered high-impact positions needing considerable development.
+[ 28.99s][user ] [sigh] That makes sense. What about international players?
+[ 37.52s][moshi] It’s a growing part of the game.
+[ 40.02s][user ] Are there restrictions on signing ⟨ret@42.30s⟩ international players?
+[ 42.89s][moshi] ⟦⚡SPAN@43.26s: International players are subject to age and bonus pool restrictions when signing with MLB teams.⟧ There are definitely guidelines in place… International players face age limits and bonus pool restrictions set by Major League Baseball when joining teams. It’s all about fairness and maintaining a competitive balance.
+[ 51.70s][user ] What's a ⟨ret@52.56s⟩ bonus pool?
+[ 53.02s][moshi] It's ⟦⚡SPAN@53.56s: A bonus pool is an allocated amount of money each team can spend on signing draft picks and international play⟧ a way to manage spending… Each team receives an allocated amount of money, a bonus pool, to spend on signing new players—both draft picks and international signings.
+[ 63.38s][user ] So, teams can't just offer anyone any amount of money?
+[ 66.73s][moshi] Not exactly, there are limits.
+[ 68.78s][user ] Okay, good to know. Who was the first overall pick ⟨ret@71.56s⟩ this year?
+[ 72.15s][moshi] ⟦⚡SPAN@72.56s: Jackson Holliday, a shortstop, was the first overall pick in the 2022 MLB draft by the Baltimore Orioles.⟧ This year’s top pick was… Jackson Holliday, a shortstop, was selected first overall in the 2022 draft by the Baltimore Orioles organization. A promising young player, from all accounts.
+[ 84.86s][user ] A shortstop, huh? They *are* important.
+[ 88.13s][moshi] Absolutely. A strong shortstop anchors the infield.
+[ 92.33s][user ] Do a lot of drafted players actually make it to ⟨ret@95.45s⟩ the majors?
+[ 96.04s][moshi] ⟦⚡SPAN@96.45s: Approximately thirty percent of drafted players eventually play in Major League Baseball.⟧ The path is challenging… Roughly thirty percent of players drafted ultimately reach the Major League level, demonstrating the competitive nature of the sport.
+[105.86s][user ] Wow, only thirty percent. That's a tough climb.
+[109.00s][moshi] It is. It requires dedication and a bit of luck.

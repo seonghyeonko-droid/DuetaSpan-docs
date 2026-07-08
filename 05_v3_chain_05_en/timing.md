@@ -1,25 +1,25 @@
 # v3_chain_05_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I want to share my location with Frank Martinez.
+     0.00s  user  발화 시작: Tell me about some holiday songs that came out in two thousa
      2.46s  <ret> 발화 (turn1 첫 프레임)
-     2.62s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.39s]: (tool result) Location sharing request sent to Frank Martinez.
      2.95s  user  발화 끝
-     3.05s  agent 발화 시작: <ret> Certainly. I’ve sent a location sharing request to Fra
+     3.05s  agent 발화 시작: <ret> Certainly, let’s explore some recent holiday releases.
+     3.34s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.31s]: (tool result) “Christmas Without You” by Mariah Carey featuring Khalid
      6.98s  agent 발화 끝
-     7.10s  user  발화 시작: Uh, great. How long does that last?
-     8.56s  <ret> 발화 (turn3 첫 프레임)
-     9.16s  agent 발화 시작: <ret> That’s a good question. Your location sharing with Fra
+     7.10s  user  발화 시작: Hmm, that sounds nice. What about something a little more… t
      9.17s  user  발화 끝
-     9.56s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.48s]: (tool result) Location sharing will expire in one hour.
-    14.71s  agent 발화 끝
-    15.31s  user  발화 시작: Okay, can we extend that to four hours?
-    17.18s  <ret> 발화 (turn5 첫 프레임)
-    17.18s  ⚡SPAN 주입 [d'=0.00s / d_lead=0.40s]: (tool result) Location sharing duration extended to four hours.
-    17.79s  agent 발화 시작: <ret> Absolutely. I’ve extended the location sharing with Fr
-    17.90s  user  발화 끝
-    22.43s  user  발화 시작: Perfect, thanks!
-    22.60s  agent 발화 끝
-    23.46s  agent 발화 시작: You’re very welcome. It's always good to stay connected, esp
-    23.57s  user  발화 끝
-    30.67s  agent 발화 끝
+     9.37s  agent 발화 시작: Traditional Christmas music has a lovely enduring quality, d
+    14.93s  agent 발화 끝
+    15.53s  user  발화 시작: Yeah, but new. Something new that *sounds* traditional. Can 
+    17.40s  <ret> 발화 (turn5 첫 프레임)
+    18.00s  agent 발화 시작: <ret> I can certainly investigate that for you. The Heartlan
+    18.11s  user  발화 끝
+    18.40s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.53s]: (tool result) “A Cozy Christmas Eve” by The Heartlandaires released No
+    22.66s  user  발화 시작: Okay, “A Cozy Christmas Eve” sounds perfect. Can you play it
+    22.81s  agent 발화 끝
+    23.26s  <ret> 발화 (turn7 첫 프레임)
+    23.63s  agent 발화 시작: <ret> Absolutely, I can start that right away. “A Cozy Chris
+    23.81s  user  발화 끝
+    24.26s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.40s]: (tool result) Now playing “A Cozy Christmas Eve” by The Heartlandaires
+    30.84s  agent 발화 끝

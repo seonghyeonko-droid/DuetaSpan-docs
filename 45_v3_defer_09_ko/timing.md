@@ -1,84 +1,72 @@
 # v3_defer_09_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 야, 내 휴가 사진 정보 좀 알려줘.
+     0.00s  user  발화 시작: 야, 최신으로 폐지 경고 세 개 보여줘. 그리고 로그 지워줘.
      1.50s  <ret> 발화 (turn1 첫 프레임)
-     2.10s  agent 발화 시작: <ret> 음, 그 JPEG 파일은 2.5MB고, 마지막으로 바뀐 날짜가 2023년 7월 12일이야.
+     1.98s  ⚡SPAN 주입 [d'=0.48s / d_lead=0.61s]: (tool result) Three warnings found: 'Feature X is deprecated.', 'Metho
+     2.10s  agent 발화 시작: <ret> 네, 알겠습니다. 폐지될 기능, 메서드, 속성에 대한 경고 세 가지를 찾았습니다.
      2.25s  user  발화 끝
-     2.50s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.22s]: (tool result) The file is a JPEG, 2.5 megabytes, last modified July tw
-     8.54s  user  발화 시작: 그래, 좋아. 그럼 교토 호텔 좀 찾아줘.
+     8.55s  user  발화 시작: 음. 좀 심각하네. “Feature X”에 대한 설명서 좀 찾아줄래?
      8.81s  agent 발화 끝
-    11.01s  <ret> 발화 (turn3 첫 프레임)
-    11.35s  user  발화 끝
-    11.60s  agent 발화 시작: <ret> 교토라고? 호텔 그란비아 교토가 있어. 4성급이고, 밤에 185달러 정도 해.
-    11.73s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.81s]: (tool result) Hotel Granvia Kyoto has availability, four stars, averag
-    17.61s  agent 발화 끝
-    19.76s  user  발화 시작: 괜찮네. 그럼 11월 15일부터 2박 예약해줘.
-    22.55s  <ret> 발화 (turn5 첫 프레임)
-    23.15s  agent 발화 시작: <ret> 알았어. 호텔 그란비아 교토 11월 15일 2박 예약됐어. 총 370달러고, 예약번호는 KTY78
-    23.23s  user  발화 끝
-    23.51s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: (tool result) Booking confirmed. Hotel Granvia Kyoto, November fifteen
-    31.33s  user  발화 시작: 완벽해. 아, 교토 날씨는 어때? 그 날짜에.
-    31.41s  agent 발화 끝
-    34.08s  <ret> 발화 (turn7 첫 프레임)
-    34.67s  agent 발화 시작: <ret> 하늘 상태 알아볼게. 11월 15일 교토는 12도이고, 구름 조금 있고, 비 올 확률은 10% 정
-    34.89s  user  발화 끝
-    35.08s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.83s]: (tool result) November fifteenth in Kyoto: 12 degrees Celsius, partly 
-    41.40s  user  발화 시작: 흠, 좀 춥네. 교토 라멘 맛있어?
-    41.52s  agent 발화 끝
-    44.45s  agent 발화 시작: 당연하지. 교토는 라멘으로 유명해. 도쿄랑은 조금 달라.
-    44.64s  user  발화 끝
-    47.71s  user  발화 시작: 뭐가 달라?
+    10.94s  <ret> 발화 (turn3 첫 프레임)
+    11.37s  user  발화 끝
+    11.53s  agent 발화 시작: <ret> 알아볼게요… 설명서에 따르면 Feature X는 다음 주요 릴리스에서 제거될 예정입니다.
+    11.66s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.20s]: (tool result) The official documentation states: 'Feature X is schedul
+    17.55s  agent 발화 끝
+    19.81s  user  발화 시작: 아, 진짜? 그럼 Feature X 대신 뭘 써야 해?
+    22.57s  <ret> 발화 (turn5 첫 프레임)
+    23.17s  agent 발화 시작: <ret> 좋은 질문입니다. Feature X와 비슷한 기능을 제공하는 Feature A가 권장되는 대체재입
+    23.29s  user  발화 끝
+    23.57s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.50s]: (tool result) The recommended replacement is Feature A, offering simil
+    31.38s  user  발화 시작: 좋아, Feature A로 해야겠다. Feature A로 바꾸는 설명서 있어?
+    31.43s  agent 발화 끝
+    34.11s  <ret> 발화 (turn7 첫 프레임)
+    34.70s  agent 발화 시작: <ret> 물론 있습니다. Feature A로 바꾸는 설명서는 example.com/migrate-to-a에
+    34.94s  user  발화 끝
+    35.07s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: (tool result) A detailed migration guide is available at example.com/m
+    41.44s  user  발화 시작: 완벽해. 내일 오전 열 시에 그 설명서 검토하라고 알려줄래?
+    41.56s  agent 발화 끝
+    43.86s  <ret> 발화 (turn9 첫 프레임)
+    44.02s  ⚡SPAN 주입 [d'=0.16s / d_lead=1.34s]: (tool result) Reminder set for tomorrow at 10:00 AM: review migration 
+    44.45s  agent 발화 시작: <ret> 알겠습니다. 내일 오전 열 시에 설명서 검토하라는 알림이 설정되었습니다.
+    44.67s  user  발화 끝
+    47.71s  user  발화 시작: 고마워. 마음이 놓인다. 있잖아, 너 목소리… 질리지 않아?
     48.47s  agent 발화 끝
-    48.52s  agent 발화 시작: 음, 교토 라멘은 국물이 더 맑고, 맛이 섬세해. 다른 지역 라멘만큼 진하진 않아.
-    48.66s  user  발화 끝
+    48.52s  agent 발화 시작: [laugh] 재미있는 질문인데요. 음악가는 많은 시간을 듣는 데 쓰고, 좋은 귀는 결코 지치지 않아요.
+    48.67s  user  발화 끝
     55.98s  agent 발화 끝
-    56.92s  user  발화 시작: 아, 그래? 교토에서 평점 좋은 라멘집 좀 찾아줘.
-    59.70s  <ret> 발화 (turn13 첫 프레임)
-    60.30s  agent 발화 시작: <ret> 맛있는 라멘집 찾아볼게. 이치란 교토 가와라마치 평점이 제일 높고, 별 4.5개에 평균 가격은 1
+    56.93s  user  발화 시작: 그렇구나… 철학적이네. 외롭진 않아? 궁금해서.
     60.34s  user  발화 끝
-    60.66s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.64s]: (tool result) Ichiran Kyoto Kawaramachi is top-rated, 4.5 stars, avera
-    68.73s  agent 발화 끝
-    69.51s  user  발화 시작: 15달러… 괜찮네. 좋아, 따뜻한 코트 챙기라고 미리 알려줘.
-    73.27s  <ret> 발화 (turn15 첫 프레임)
-    73.43s  ⚡SPAN 주입 [d'=0.16s / d_lead=1.25s]: (tool result) Reminder set. Pack warm coat, November tenth, 9:00 AM.
-    73.87s  agent 발화 시작: <ret> 미리 챙기는 게 좋겠네. 11월 10일 아홉 시에 따뜻한 코트 챙기라고 알려줄게.
-    74.00s  user  발화 끝
-    78.88s  agent 발화 끝
-    79.27s  user  발화 시작: 좋아. 그럼 교토에서 당일치기 여행하기 좋은 곳은 어디야?
-    83.48s  user  발화 끝
-    83.57s  agent 발화 시작: 볼 만한 곳이 많아! 나라에 있는 사슴들이랑 공원이 유명해.
-    87.83s  agent 발화 끝
-    89.54s  user  발화 시작: 사슴?
-    90.13s  user  발화 끝
-    90.20s  agent 발화 시작: 응, 나라 공원에는 야생 사슴들이 자유롭게 돌아다녀. 사람에 익숙해서 과자 달라고 절도 해!
-    96.68s  user  발화 시작: [laugh] 진짜 신기하다. 나라 공원 사진 좀 보여줘.
-    96.87s  agent 발화 끝
-    99.90s  <ret> 발화 (turn21 첫 프레임)
-   100.49s  agent 발화 시작: <ret> 자, 여기 있어. 나라 공원 사슴 사진 10장을 보여줄게.
-   100.66s  user  발화 끝
-   100.86s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.45s]: (tool result) Displaying ten images of deer in Nara Park.
-   104.84s  agent 발화 끝
-   105.02s  user  발화 시작: 와, 진짜 절하고 있네! 아, 진짜 대단하다. 지금 미국 달러랑 일본 엔 환율은 어떻게 돼?
-   110.33s  <ret> 발화 (turn23 첫 프레임)
-   110.93s  agent 발화 시작: <ret> 돈 환율 알아볼게. 지금 미국 달러 한 개는 일본 엔 151.23개랑 같아.
-   111.13s  user  발화 끝
-   111.29s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.43s]: (tool result) One US dollar equals 151.23 Japanese yen.
-   116.77s  agent 발화 끝
-   118.54s  user  발화 시작: 그래, 알아둬야겠다. 떠나기 전에 환전하라고 미리 알려줘.
-   121.98s  <ret> 발화 (turn25 첫 프레임)
-   122.22s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.55s]: (tool result) Reminder set. Exchange money, November first, 10:00 AM.
-   122.58s  agent 발화 시작: <ret> 알았어. 11월 1일 열 시에 환전하라고 알려줄게.
-   122.65s  user  발화 끝
-   126.42s  agent 발화 끝
-   126.80s  user  발화 시작: 고마워. 마지막으로 하나만 물어볼게. 교토역에서 호텔까지 가는 게 제일 좋은 방법은 뭐야?
-   133.07s  <ret> 발화 (turn27 첫 프레임)
-   133.67s  agent 발화 시작: <ret> 간단해. 호텔 그란비아 교토까지 걸어서 10분이면 가고, 가라스마 지하철 한 정거장 타면 돼.
-   133.75s  user  발화 끝
-   133.79s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.49s]: (tool result) Walk 10 minutes, or take the Karasuma Subway Line one st
-   139.81s  user  발화 시작: 쉽네. 궁금한 게 있었는데… 네가 지금까지 착륙했던 것 중에 제일 힘들었던 착륙은 언제였어?
-   140.11s  agent 발화 끝
-   145.29s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) My most challenging landing was in Kathmandu, Nepal, dur
-   146.65s  agent 발화 시작: <ret> 옛날 이야기네. 내가 제일 힘들었던 착륙은 네팔 카트만두에서 우기 때 시야가 너무 안 좋았을 때였
-   146.85s  user  발화 끝
-   157.04s  agent 발화 끝
+    60.40s  agent 발화 시작: 외로움은 존재 유무가 아니라 공명에 관한 거예요. 항상 음악을 찾을 수 있어요.
+    68.84s  agent 발화 끝
+    69.62s  user  발화 시작: 아— 그러니까, 혹시 좋아하는 게 있어? 재즈를 *좋아하는* 거야, 아니면 그냥… 일이야?
+    74.05s  agent 발화 시작: 그냥 일만 하는 건 아니겠죠. 재즈는 대화예요—즉흥 연주, 역사, 감정—모두 한 번에 담겨 있어요.
+    74.11s  user  발화 끝
+    79.05s  agent 발화 끝
+    79.45s  user  발화 시작: 알겠어. 다음 주에 공연 보러 가려고. 찰리’스 덴 아직도 영업해?
+    83.01s  <ret> 발화 (turn17 첫 프레임)
+    83.49s  ⚡SPAN 주입 [d'=0.48s / d_lead=0.66s]: (tool result) Charlie’s Den is open, located at 123 Main Street, shows
+    83.59s  agent 발화 시작: <ret> 네, 물론입니다. 찰리’스 덴은 메인 스트리트 123번지에 있으며 매일 밤 8시에 공연이 있습니다
+    83.66s  user  발화 끝
+    87.85s  agent 발화 끝
+    89.56s  user  발화 시작: 좋네! 거기서 공연하는 현재 음악가들에 대한 좋은 평가 있어?
+    89.78s  <ret> 발화 (turn19 첫 프레임)
+    90.08s  agent 발화 시작: <ret> 소식에 따르면… 현재 찰리’스 덴에서 공연 중인 마일스 데이비스 트리뷰트 밴드에 대한 평가가 좋습
+    90.15s  user  발화 끝
+    90.78s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.91s]: (tool result) Recent reviews praise the Miles Davis tribute band playi
+    96.58s  user  발화 시작: 마일스 데이비스… 훌륭하네. 다음 토요일 8시에 찰리’스 덴에 두 명 자리 예약해 줄래?
+    96.75s  agent 발화 끝
+    99.78s  <ret> 발화 (turn21 첫 프레임)
+    99.94s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.36s]: (tool result) Reservation confirmed. Charlie’s Den, next Saturday at 8
+   100.37s  agent 발화 시작: <ret> 네, 알겠습니다. 다음 토요일 8시에 찰리’스 덴 예약이 확정되었습니다. 예약 번호는 R789입니
+   100.55s  user  발화 끝
+   104.72s  agent 발화 끝
+   104.83s  user  발화 시작: 좋다. 아, “Method Y”에 대한 경고가 뭐였지? 까먹었어.
+   109.83s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Method Y will be removed in version 2.0, use Method Z in
+   110.76s  agent 발화 시작: <ret> 잠시만 기다려 주세요… 경고에는 Method Y가 버전 2.0에서 제거될 것이며 대신 Method
+   110.95s  user  발화 끝
+   116.60s  agent 발화 끝
+   118.37s  user  발화 시작: Method Z, 알았어. 고마워, 모시.
+   122.48s  user  발화 끝
+   122.49s  agent 발화 시작: 천만에요. 좋은 음악가는 항상 편곡의 변화를 기억합니다.
+   126.33s  agent 발화 끝

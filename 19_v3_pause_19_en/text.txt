@@ -1,11 +1,10 @@
 v3_pause_19_en src=nq style=v1
-SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] Do you know who won MasterChef USA in two thousand and fourteen?
-[moshi] <ret> ⟦⚡SPAN@4.40s: Luca Manfè won MasterChef USA in 2014.⟧ That was a memorable season. Luca Manfè took the title in two thousand and fourteen. A very talented cook, indeed.
-[user ] And Natasha? What happened with her— I— I mean…
-[moshi] She was a strong competitor, certainly.
-[user ] So I was thinking… about the whole trip, actually. Did she place at all?
-[moshi] <ret> ⟦⚡SPAN@22.58s: Luca Manfè won MasterChef USA in 2014; Natasha Celis was the runner-up.⟧ Let me recall the details. Natasha Celis finished as the runner-up to Luca Manfè. A close competition, from what I remember.
-[user ] Oh, okay. That makes sense. Thanks!
+[  0.00s][user ] Do you happen to know when the seventh season of Lego ⟨ret@3.40s⟩ Ninjago aired?
+[  3.99s][moshi] ⟦⚡SPAN@4.40s: May 15, 2017 was the release date for Lego Ninjago season seven.⟧ That’s a good question. Season seven of Lego Ninjago first aired on May fifteenth, two thousand seventeen.
+[ 11.94s][user ] Wow, that was a while ago… uh, I was wondering—
+[ 15.94s][moshi] …wondering what?
+[ 18.29s][user ] So I was thinking… about the whole trip, actually. I’m planning a Lego-themed vacation with my nephew and want to know if there’s a Ninjago ⟨ret@22.63s⟩ world at Legoland California?
+[ 23.22s][moshi] ⟦⚡SPAN@22.63s: Legoland California features Ninjago World, which opened June 2017, including a 4D ride.⟧ Legoland California does have a Ninjago area. Ninjago World opened at Legoland California in June two thousand seventeen, and it includes a 4D ride. It's quite popular with young visitors.

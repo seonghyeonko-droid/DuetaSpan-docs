@@ -1,27 +1,22 @@
 v3_to_ot_15_en src=nq style=v1
-SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] I’m curious—who led the Constitutional Convention?
-[moshi] <ret> ⟦⚡SPAN@3.30s: George Washington presided over the Constitutional Convention during the summer of 1787.⟧ That’s a great question. George Washington presided over the Constitutional Convention during the summer of 1787. A truly pivotal moment in history, wouldn’t you agree?
-[user ] Wow, Washington? I always associate him with the Revolutionary War.
-[moshi] He really was a man for all seasons, wasn’t he?
-[user ] Did they all agree on everything, or was it a messy process?
-[moshi] <ret> ⟦⚡SPAN@23.96s: The Constitutional Convention involved heated debates between Federalists and Anti-Federalists.⟧ It was…spirited, let’s say. The Constitutional Convention involved heated debates between Federalists and Anti-Federalists. Quite a clash of ideas!
-[user ] Federalists and Anti-Federalists… what did they disagree about?
-[moshi] <ret> ⟦⚡SPAN@36.41s: Federalists favored a strong central government, while Anti-Federalists feared it.⟧ Primarily the balance of power. Federalists favored a strong central government, while Anti-Federalists feared it.
-[user ] Hmm. I wonder if that’s still relevant today.
-[user ] «to_other» Did you remember to pick up milk?
-[user ] Sorry, where were we? Oh yes—the Convention.
-[moshi] We were discussing the differing viewpoints of the time.
-[moshi] <ret> ⟦⚡SPAN@53.34s: James Madison is often called the "Father of the Constitution" for his influential role.⟧ It's fascinating to consider… James Madison is often called the "Father of the Constitution" for his influential role.
-[user ] Madison, huh? What did he actually *do*?
-[moshi] <ret> ⟦⚡SPAN@64.11s: Madison authored the Virginia Plan, proposing a new form of government.⟧ He was instrumental in the drafting. Madison authored the Virginia Plan, proposing a new form of government. A remarkably detailed proposal.
-[user ] So, it wasn't just Washington up there, then?
-[moshi] Certainly not! Many brilliant minds contributed.
-[user ] Was there a vote to approve the Constitution?
-[moshi] <ret> ⟦⚡SPAN@82.36s: The Constitution was signed by thirty-nine delegates on September seventeenth, 1787.⟧ Absolutely, a formal ratification. The Constitution was signed by thirty-nine delegates on September seventeenth, 1787.
-[user ] Thirty-nine delegates—that’s not everyone, is it?
-[moshi] No, some states weren’t represented by all their delegates.
-[user ] Interesting. So, what happened *after* they signed it?
-[moshi] Then came the really hard part—getting the states to ratify it!
+[  0.00s][user ] Do you know who plays Trixie Franklin on Call ⟨ret@2.96s⟩ the Midwife?
+[  3.56s][moshi] ⟦⚡SPAN@3.92s: Helen George plays Trixie Franklin in Call the Midwife.⟧ That’s a lovely show. Helen George is the actress who portrays Trixie Franklin. A very talented actress, indeed.
+[ 12.90s][user ] Oh, right… Helen George. What else has she ⟨ret@16.76s⟩ been in?
+[ 17.35s][moshi] ⟦⚡SPAN@16.92s: Helen George also played Jacqueline de Séze in Doctors.⟧ She’s quite versatile. Helen George has also appeared as Jacqueline de Séze in Doctors.
+[ 19.60s][user ] Doctors, huh? I— I mean, is that the daytime soap?
+[ 23.64s][moshi] Yes, it is a long-running British medical drama.
+[ 31.46s][user ] «to_other» Did you remember to take the bins out?
+[ 35.91s][user ] Sorry, where were we? Oh yes, Helen George. What about ⟨ret@41.66s⟩ films?
+[ 42.26s][moshi] ⟦⚡SPAN@41.74s: Helen George appeared in The Bill and Holby City before Call the Midwife.⟧ She's done a few film roles. Helen George had roles in The Bill and Holby City before her work on Call the Midwife.
+[ 45.50s][user ] Before Call the Midwife? Interesting. Was she ⟨ret@46.98s⟩ always an actress?
+[ 47.57s][moshi] ⟦⚡SPAN@47.98s: Helen George trained at the Royal Academy of Dramatic Art from 2000 to 2003.⟧ It appears she began training quite young.
+[ 49.95s][moshi] Helen George received training at RADA between two thousand and two thousand three.
+[ 53.16s][user ] RADA, wow. That’s impressive. Is she ⟨ret@59.14s⟩ British?
+[ 59.74s][moshi] ⟦⚡SPAN@59.22s: Helen George was born in Birmingham, England, on September ten, nineteen eighty-six.⟧ Absolutely, she’s a proud Brit. Helen George was born in Birmingham, England, on September tenth, nineteen eighty-six.
+[ 63.65s][user ] September tenth… so she’s a Virgo? [laugh]
+[ 71.07s][moshi] [laugh] An astute observation.
+[ 75.01s][user ] Is she ⟨ret@77.41s⟩ married?
+[ 78.01s][moshi] ⟦⚡SPAN@77.73s: Helen George is married to Oliver Boot, a fellow actor.⟧ Yes, she is. Helen George is married to Oliver Boot, who is also an actor.

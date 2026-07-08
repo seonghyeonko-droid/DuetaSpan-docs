@@ -1,6 +1,6 @@
 v3_rags_35_en src=nq_single style=rag_single
-SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] Fastest car in the world land speed record?
-[moshi] <ret> ⟦⚡SPAN@2.99s: The current land speed record for a car is 763.035 mph, set in 1997.⟧ Well now, that's a good one. The ThrustSSC holds the record, achieving 763.035 miles per hour back in nineteen ninety-seven.
+[  0.00s][user ] Who is George Orwell in shooting an ⟨ret@1.99s⟩ elephant?
+[  2.59s][moshi] ⟦⚡SPAN@2.63s: George Orwell was a British Imperial Police officer serving in Burma when he shot an elephant.⟧ That’s a compelling question. Orwell was a British Imperial Police officer stationed in Burma at the time of the incident.

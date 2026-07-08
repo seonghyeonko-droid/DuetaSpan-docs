@@ -1,16 +1,28 @@
 v3_backc_20_ko src=nq style=v1
-SYSTEM: <system> 당신은 수십 년간 투어를 돌며 연주해 온 재즈 피아니스트이자 음악사학자입니다. 기본적으로 반말로 말합니다. <system>
-표기: ⟦⚡SPAN@t⟧ = Context Span 도착 지점(문장 중간 가능, Eq.3), <ret> = 턴 첫 프레임
+SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[user ] 누가 *I Can Do Bad All By Myself*에서 윌마 역을 맡았는지 궁금하시군요.
-[moshi] <ret> ⟦⚡SPAN@5.56s: Gladys Knight played Miss Wilma in Tyler Perry’s 2007 film, *I Can Do Bad All By Myself*.⟧ 그 영화에서 글래디스 나이트가 윌마 역할을 했어. 2007년에 나온 타일러 페리 영화인데, 진짜 재능 있는 가수지.
-[user ] 아, 그렇군요. 제가 그분이신 줄 몰랐어요.
-[moshi] «interrupted» 그분이 역할에 멋진 에너지를 불어넣었어, 뭔가 영적인 힘 같은 걸로.
-[moshi] <ret> ⟦⚡SPAN@19.48s: Gladys Knight is an American singer, songwriter, actress, and humanitarian.⟧ 글래디스 나이트는 미국 가수이자 작곡가, 배우, 그리고 인도주의자라는 거 알지?
-[user ] «backchannel» 네, 그렇군요.
-[moshi] 정말 다재다능한 재능이네.
-[user ] 그분 다른 작품에는 뭐가 있나요?
-[moshi] <ret> ⟦⚡SPAN@29.66s: Knight appeared in the 1992 film *Beverly Hills Cop III* as herself.⟧ 그분은 꽤 많은 작품에 출연했어. 1992년에 *Beverly Hills Cop III*에서 본인으로 카메오 출연했거든. 재밌는 장면이었어.
-[user ] 흥미롭네요. 아직 공연도 하시나요?
-[moshi] <ret> ⟦⚡SPAN@40.03s: Gladys Knight headlined a Las Vegas residency at the Palace Station Hotel & Casino in 2014.⟧ 응, 당연히 무대에도 계속 오르고 있어.
-[moshi] 2014년에 라스베이거스 Palace Station에서 레지던시 공연을 했어. 오랜 시간이 지나도 여전히 관객들을 사로잡고 있지.
+[  0.00s][user ] 야, MLB 드래프트는 몇 라운드로 ⟨ret@4.96s⟩ 진행돼?
+[  5.55s][moshi] ⟦⚡SPAN@5.52s: The Major League Baseball draft consists of twenty rounds.⟧ 그거 궁금해하는 사람 많아… 현재 MLB 드래프트는 20라운드야. 예전에는 훨씬 길어서 90년대에는 50라운드까지도 했었어.
+[  9.36s][user ] «backchannel» 응.
+[ 12.31s][moshi] 팀들이 미래를 위해 전략적으로 준비하는 과정이지.
+[ 16.53s][user ] 와, 20라운드는 진짜 많네. 보통 언제 ⟨ret@21.83s⟩ 진행돼?
+[ 22.43s][moshi] ⟦⚡SPAN@21.83s: The MLB draft is typically held in July, beginning on a Sunday and concluding on Tuesday.⟧ 그거 꽤 정해진 일정대로 진행돼… 드래프트는 보통 7월에 일요일에 시작해서 다음 주 화요일에 끝나는 2일 동안 진행돼. 사실 꽤 볼만한 행사야.
+[ 23.46s][user ] 어떤 포지션이 초반에 가장 ⟨ret@24.52s⟩ 많이 뽑혀?
+[ 25.11s][moshi] ⟦⚡SPAN@24.92s: Pitchers and shortstops are frequently selected early in the MLB draft.⟧ 항상 수요가 있는 기술들이 있어… 투수랑 유격수는 보통 먼저 뽑혀. 개발이 많이 필요한 중요한 포지션으로 여겨지거든.
+[ 27.59s][user ] 아… [sigh] 그럴 만하네. 해외 선수들은 어때?
+[ 35.11s][moshi] 요즘 점점 중요해지고 있어.
+[ 38.94s][user ] 해외 선수 영입에 ⟨ret@40.56s⟩ 제한이 있어?
+[ 41.16s][moshi] ⟦⚡SPAN@40.96s: International players are subject to age and bonus pool restrictions when signing with MLB teams.⟧ 규칙이 확실히 있어… 해외 선수들은 메이저 리그 베이스볼에서 정한 연령 제한과 보너스 풀 제한을 받아야 해. 공정성을 유지하고 경쟁 균형을 맞추기 위한 거야.
+[ 48.42s][user ] 보너스 풀이 ⟨ret@49.41s⟩ 뭔데?
+[ 50.01s][moshi] ⟦⚡SPAN@50.41s: A bonus pool is an allocated amount of money each team can spend on signing draft picks and international play⟧ 팀들이 돈을 어떻게 쓰는지 관리하는 방법이야… 각 팀은 신인 선수 영입에 쓸 수 있는 정해진 금액, 보너스 풀을 받아. 드래프트 지명 선수뿐만 아니라 해외 선수 영입에도 사용돼.
+[ 62.92s][user ] 그럼 팀들이 아무한테나 돈을 막 줄 수는 없는 거네?
+[ 66.78s][moshi] 그렇지 않아, 제한이 있어.
+[ 68.18s][user ] 알겠어, 알아두면 좋겠다. 올해 전체 1순위는 ⟨ret@71.25s⟩ 누구였어?
+[ 71.85s][moshi] ⟦⚡SPAN@72.25s: Jackson Holliday, a shortstop, was the first overall pick in the 2022 MLB draft by the Baltimore Orioles.⟧ 올해 1순위는… 잭슨 홀리데이, 유격수인데, 2022년 드래프트에서 볼티모어 오리올스에서 전체 1순위로 지명됐어. 다들 가능성이 높다고 보더라고.
+[ 81.86s][user ] 유격수, 그렇지? 중요하긴 하네.
+[ 84.20s][moshi] 당연하지. 튼튼한 유격수가 내야를 꽉 잡는 거야.
+[ 87.49s][user ] 드래프트된 선수들 중에 실제로 메이저 리그에 가는 선수는 얼마나 ⟨ret@92.21s⟩ 돼?
+[ 92.80s][moshi] ⟦⚡SPAN@93.21s: Approximately thirty percent of drafted players eventually play in Major League Baseball.⟧ 길이 쉽지 않아… 드래프트된 선수들 중 약 30% 정도만 메이저 리그 레벨에 도달해. 그만큼 경쟁이 치열하다는 뜻이지.
+[100.77s][user ] 와, 30% 밖에 안 돼? 진짜 힘든 길이네.
+[104.10s][moshi] 그렇지. 헌신과 약간의 운이 필요해.

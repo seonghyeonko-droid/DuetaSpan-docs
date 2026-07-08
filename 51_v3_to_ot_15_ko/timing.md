@@ -1,61 +1,51 @@
 # v3_to_ot_15_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 안녕하세요. 궁금한 게 있는데요, 헌법 제정 회의를 이끈 사람은 누구였나요?
-     4.46s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  user  발화 시작: 혹시 '콜 더 미드와이프'에서 트릭시 프랭클린 역을 맡은 배우가 누구인지 아세요?
+     4.32s  <ret> 발화 (turn1 첫 프레임)
+     4.92s  agent 발화 시작: <ret> 네, 정말 좋은 드라마죠. 트릭시 프랭클린 역은 헬렌 조지가 연기했어요. 정말 재능 있는 배우시죠
      5.00s  user  발화 끝
-     5.06s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 조지 워싱턴이 1787년 여름에 헌법 제정 회의를 주재했어요. 정말 역사적
-     5.46s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.05s]: George Washington presided over the Constitutional Convention during t
-    12.72s  user  발화 시작: 와, 워싱턴이요? 저는 항상 그분을 독립 전쟁과 연관 짓곤 해요.
-    12.75s  agent 발화 끝
-    16.88s  user  발화 끝
-    16.94s  agent 발화 시작: 정말 다재다능한 분이셨어요, 그러시죠?
-    19.39s  agent 발화 끝
-    20.83s  user  발화 시작: 그분들이 모든 것에 동의했는지, 아니면 좀 복잡한 과정이었는지 궁금해요.
-    25.05s  <ret> 발화 (turn5 첫 프레임)
-    25.65s  agent 발화 시작: <ret> 음, 격렬했다고 할까요. 헌법 제정 회의에서는 연방주의자와 반연방주의자 사이의 뜨거운 논쟁이 있었
-    25.83s  user  발화 끝
-    26.05s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.27s]: The Constitutional Convention involved heated debates between Federali
-    34.74s  agent 발화 끝
-    35.05s  user  발화 시작: 연방주의자와 반연방주의자… 그분들은 무엇에 대해 의견이 달랐나요?
-    39.77s  <ret> 발화 (turn7 첫 프레임)
-    40.36s  agent 발화 시작: <ret> 뭐, 주로 권력의 균형이었어요. 연방주의자들은 강력한 중앙 정부를 선호했고, 반연방주의자들은 그것
-    40.42s  user  발화 끝
-    40.77s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.23s]: Federalists favored a strong central government, while Anti-Federalist
-    48.10s  agent 발화 끝
-    48.17s  user  발화 시작: 흠. 오늘날에도 여전히 관련이 있을지 궁금하네요.
-    52.48s  user  발화 시작: 우유는 사 오셨나요?
-    52.52s  user  발화 끝
-    53.85s  user  발화 시작: 죄송해요, 지금 무슨 이야기를 하고 있었죠? 아, 네—회의에 대해서요.
-    53.99s  user  발화 끝
-    59.18s  user  발화 끝
-    59.49s  agent 발화 시작: 그 당시의 다양한 관점에 대해 이야기하고 있었어요.
-    61.23s  <ret> 발화 (turn12 첫 프레임)
-    61.84s  agent 발화 시작: <ret> 고려해 보면 정말 흥미로운데요… 제임스 매디슨은 그의 영향력 있는 역할 때문에 종종 "헌법의 아버
-    62.08s  agent 발화 끝
-    62.23s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.93s]: James Madison is often called the "Father of the Constitution" for his
-    69.06s  agent 발화 끝
-    69.21s  user  발화 시작: 매디슨이요? 그분은 실제로 뭘 하셨나요?
-    71.44s  <ret> 발화 (turn14 첫 프레임)
-    72.04s  agent 발화 시작: <ret> 초안 작성에 중요한 역할을 했어요. 매디슨은 새로운 형태의 정부를 제안하는 버지니아 계획을 작성했
-    72.12s  user  발화 끝
-    72.44s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.04s]: Madison authored the Virginia Plan, proposing a new form of government
-    80.13s  user  발화 시작: 그렇다면 워싱턴 혼자서 한 일은 아니었군요?
-    80.16s  agent 발화 끝
-    83.09s  agent 발화 시작: 절대 아니에요! 많은 뛰어난 사람들이 기여했어요.
-    83.28s  user  발화 끝
-    86.78s  agent 발화 끝
-    86.87s  user  발화 시작: 헌법 승인을 위한 투표가 있었나요?
-    88.71s  <ret> 발화 (turn18 첫 프레임)
-    88.87s  ⚡SPAN 주입 [d'=0.16s / d_lead=2.11s]: The Constitution was signed by thirty-nine delegates on September seve
-    89.31s  agent 발화 시작: <ret> 네, 정식 비준 절차가 있었어요. 헌법은 1787년 9월 17일에 39명의 대표가 서명했어요.
-    89.46s  user  발화 끝
-    95.65s  agent 발화 끝
-    95.69s  user  발화 시작: 39명의 대표… 모든 사람이 다 참석한 건 아니죠?
-    99.34s  agent 발화 시작: 아니요, 일부 주에서는 모든 대표가 참석하지 않았어요.
-    99.52s  user  발화 끝
-   102.48s  user  발화 시작: 흥미롭네요. 서명 후에는 무슨 일이 일어났나요?
-   102.57s  agent 발화 끝
-   105.79s  agent 발화 시작: 그다음에는 주들이 비준하도록 설득하는 정말 어려운 일이 남았어요!
-   105.94s  user  발화 끝
-   109.86s  agent 발화 끝
+     5.32s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.20s]: Helen George plays Trixie Franklin in Call the Midwife.
+    12.60s  user  발화 시작: 아, 맞다… 헬렌 조지였군요. 다른 작품에는 뭐가 있었나요?
+    12.62s  agent 발화 끝
+    16.06s  <ret> 발화 (turn3 첫 프레임)
+    16.14s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.73s]: Helen George also played Jacqueline de Séze in Doctors.
+    16.66s  agent 발화 시작: <ret> 그녀는 다재다능하시답니다. 헬렌 조지는 '닥터스'에서 자클린 드 세즈 역할로도 출연하셨어요.
+    16.76s  user  발화 끝
+    19.10s  agent 발화 끝
+    20.70s  user  발화 시작: 닥터스요? 제가— 그러니까, 그건 낮 시간대에 하는 드라마 맞죠?
+    25.56s  agent 발화 시작: 네, 맞습니다. 오랫동안 방영된 영국 의료 드라마예요.
+    25.70s  user  발화 끝
+    34.65s  agent 발화 끝
+    34.97s  user  발화 시작: 쓰레기통은 내놓으셨어요?
+    40.34s  user  발화 끝
+    40.46s  user  발화 시작: 죄송한데요, 어디까지 얘기했었죠? 아, 네, 헬렌 조지 말이에요. 영화는 출연해 봤나요?
+    47.58s  <ret> 발화 (turn8 첫 프레임)
+    48.17s  agent 발화 시작: <ret> 영화 역할도 몇 편 하셨답니다. 헬렌 조지는 '콜 더 미드와이프' 출연 전에 '더 빌'과 '홀비 
+    48.20s  user  발화 끝
+    48.58s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.53s]: Helen George appeared in The Bill and Holby City before Call the Midwi
+    52.52s  agent 발화 끝
+    52.94s  user  발화 시작: 콜 더 미드와이프 이전이요? 흥미롭네요. 항상 배우였던 건가요?
+    53.83s  <ret> 발화 (turn10 첫 프레임)
+    54.29s  agent 발화 시작: <ret> 어린 나이에 훈련을 시작했던 것 같아요.
+    54.45s  user  발화 끝
+    54.83s  ⚡SPAN 주입 [d'=1.00s / d_lead=5.32s]: Helen George trained at the Royal Academy of Dramatic Art from 2000 to
+    59.12s  agent 발화 시작: 헬렌 조지는 2002년에서 2003년 사이에 RADA에서 훈련을 받으셨어요.
+    59.61s  agent 발화 끝
+    61.70s  agent 발화 끝
+    62.42s  user  발화 시작: RADA, 와우. 대단하네요. 영국 사람인가요?
+    69.13s  <ret> 발화 (turn13 첫 프레임)
+    69.21s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.21s]: Helen George was born in Birmingham, England, on September ten, ninete
+    69.64s  user  발화 끝
+    69.72s  agent 발화 시작: <ret> 네, 맞아요. 자랑스러운 영국인이시랍니다. 헬렌 조지는 1986년 9월 10일에 영국 버밍엄에서 
+    72.43s  user  발화 시작: 9월 10일… 그럼 처녀자리네요? [laugh]
+    72.63s  agent 발화 끝
+    80.52s  agent 발화 시작: [laugh] 정말 날카로운 관찰력이시네요.
+    80.54s  user  발화 끝
+    83.60s  user  발화 시작: 결혼은 하셨나요?
+    83.67s  agent 발화 끝
+    86.67s  <ret> 발화 (turn17 첫 프레임)
+    86.99s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.97s]: Helen George is married to Oliver Boot, a fellow actor.
+    87.26s  agent 발화 시작: <ret> 네, 하셨어요. 헬렌 조지는 배우인 올리버 부트와 결혼하셨답니다.
+    87.30s  user  발화 끝
+    89.84s  agent 발화 끝

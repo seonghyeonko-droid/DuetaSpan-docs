@@ -1,61 +1,51 @@
 # v3_to_ot_15_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I’m curious—who led the Constitutional Convention?
-     3.22s  <ret> 발화 (turn1 첫 프레임)
-     3.30s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.48s]: George Washington presided over the Constitutional Convention during t
+     0.00s  user  발화 시작: Do you know who plays Trixie Franklin on Call the Midwife?
+     2.96s  <ret> 발화 (turn1 첫 프레임)
+     3.56s  agent 발화 시작: <ret> That’s a lovely show. Helen George is the actress who 
      3.60s  user  발화 끝
-     3.82s  agent 발화 시작: <ret> That’s a great question. George Washington presided ov
-    13.05s  agent 발화 끝
-    13.13s  user  발화 시작: Wow, Washington? I always associate him with the Revolutiona
-    17.65s  agent 발화 시작: He really was a man for all seasons, wasn’t he?
-    17.75s  user  발화 끝
-    19.90s  user  발화 시작: Did they all agree on everything, or was it a messy process?
-    20.23s  agent 발화 끝
-    23.24s  <ret> 발화 (turn5 첫 프레임)
-    23.84s  agent 발화 시작: <ret> It was…spirited, let’s say. The Constitutional Convent
-    23.96s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.68s]: The Constitutional Convention involved heated debates between Federali
-    23.96s  user  발화 끝
-    31.65s  user  발화 시작: Federalists and Anti-Federalists… what did they disagree abo
-    31.81s  agent 발화 끝
-    35.41s  <ret> 발화 (turn7 첫 프레임)
-    35.77s  user  발화 끝
-    36.00s  agent 발화 시작: <ret> Primarily the balance of power. Federalists favored a 
-    36.41s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.16s]: Federalists favored a strong central government, while Anti-Federalist
-    42.44s  user  발화 시작: Hmm. I wonder if that’s still relevant today.
-    42.49s  agent 발화 끝
-    45.67s  user  발화 끝
-    46.04s  user  발화 시작: Did you remember to pick up milk?
-    47.89s  user  발화 시작: Sorry, where were we? Oh yes—the Convention.
-    48.30s  user  발화 끝
-    50.48s  user  발화 끝
-    50.57s  agent 발화 시작: We were discussing the differing viewpoints of the time.
-    52.34s  <ret> 발화 (turn12 첫 프레임)
-    52.94s  agent 발화 시작: <ret> It's fascinating to consider… James Madison is often c
-    53.29s  agent 발화 끝
-    53.34s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.48s]: James Madison is often called the "Father of the Constitution" for his
-    59.61s  agent 발화 끝
-    60.10s  user  발화 시작: Madison, huh? What did he actually *do*?
-    63.11s  <ret> 발화 (turn14 첫 프레임)
-    63.71s  agent 발화 시작: <ret> He was instrumental in the drafting. Madison authored 
-    63.80s  user  발화 끝
-    64.11s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.18s]: Madison authored the Virginia Plan, proposing a new form of government
-    71.36s  agent 발화 끝
-    71.57s  user  발화 시작: So, it wasn't just Washington up there, then?
-    74.47s  agent 발화 시작: Certainly not! Many brilliant minds contributed.
-    74.72s  user  발화 끝
-    77.67s  agent 발화 끝
-    78.43s  user  발화 시작: Was there a vote to approve the Constitution?
-    81.36s  <ret> 발화 (turn18 첫 프레임)
-    81.96s  agent 발화 시작: <ret> Absolutely, a formal ratification. The Constitution wa
-    82.13s  user  발화 끝
-    82.36s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.19s]: The Constitution was signed by thirty-nine delegates on September seve
-    90.16s  agent 발화 끝
-    90.87s  user  발화 시작: Thirty-nine delegates—that’s not everyone, is it?
-    93.94s  agent 발화 시작: No, some states weren’t represented by all their delegates.
-    94.10s  user  발화 끝
-    97.36s  agent 발화 끝
-    97.38s  user  발화 시작: Interesting. So, what happened *after* they signed it?
-   101.34s  agent 발화 시작: Then came the really hard part—getting the states to ratify 
-   101.39s  user  발화 끝
-   105.18s  agent 발화 끝
+     3.92s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.05s]: Helen George plays Trixie Franklin in Call the Midwife.
+    12.79s  agent 발화 끝
+    12.90s  user  발화 시작: Oh, right… Helen George. What else has she been in?
+    16.76s  <ret> 발화 (turn3 첫 프레임)
+    16.92s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.55s]: Helen George also played Jacqueline de Séze in Doctors.
+    17.35s  agent 발화 시작: <ret> She’s quite versatile. Helen George has also appeared 
+    17.53s  user  발화 끝
+    19.60s  user  발화 시작: Doctors, huh? I— I mean, is that the daytime soap?
+    19.93s  agent 발화 끝
+    23.64s  agent 발화 시작: Yes, it is a long-running British medical drama.
+    23.66s  user  발화 끝
+    31.46s  user  발화 시작: Did you remember to take the bins out?
+    31.62s  agent 발화 끝
+    35.58s  user  발화 끝
+    35.91s  user  발화 시작: Sorry, where were we? Oh yes, Helen George. What about films
+    41.66s  <ret> 발화 (turn8 첫 프레임)
+    41.74s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.84s]: Helen George appeared in The Bill and Holby City before Call the Midwi
+    42.26s  agent 발화 시작: <ret> She's done a few film roles. Helen George had roles in
+    42.40s  user  발화 끝
+    45.49s  agent 발화 끝
+    45.50s  user  발화 시작: Before Call the Midwife? Interesting. Was she always an actr
+    46.98s  <ret> 발화 (turn10 첫 프레임)
+    47.57s  agent 발화 시작: <ret> It appears she began training quite young.
+    47.76s  user  발화 끝
+    47.98s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.59s]: Helen George trained at the Royal Academy of Dramatic Art from 2000 to
+    49.95s  agent 발화 시작: Helen George received training at RADA between two thousand 
+    50.16s  agent 발화 끝
+    52.68s  agent 발화 끝
+    53.16s  user  발화 시작: RADA, wow. That’s impressive. Is she British?
+    59.14s  <ret> 발화 (turn13 첫 프레임)
+    59.22s  ⚡SPAN 주입 [d'=0.08s / d_lead=1.09s]: Helen George was born in Birmingham, England, on September ten, ninete
+    59.74s  agent 발화 시작: <ret> Absolutely, she’s a proud Brit. Helen George was born 
+    59.84s  user  발화 끝
+    63.44s  agent 발화 끝
+    63.65s  user  발화 시작: September tenth… so she’s a Virgo? [laugh]
+    71.07s  agent 발화 시작: [laugh] An astute observation.
+    71.30s  user  발화 끝
+    74.22s  agent 발화 끝
+    75.01s  user  발화 시작: Is she married?
+    77.41s  <ret> 발화 (turn17 첫 프레임)
+    77.73s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.74s]: Helen George is married to Oliver Boot, a fellow actor.
+    78.01s  agent 발화 시작: <ret> Yes, she is. Helen George is married to Oliver Boot, w
+    78.20s  user  발화 끝
+    81.70s  agent 발화 끝
