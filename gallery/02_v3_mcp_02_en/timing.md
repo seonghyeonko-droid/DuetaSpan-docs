@@ -1,51 +1,25 @@
 # v3_mcp_02_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: What is the address of Tianzifang?
-     1.67s  <ret> 발화 (turn1 첫 프레임)
-     1.90s  agent 발화 시작: <ret> Let me quickly locate that for you— Tianzifang is on T
-     2.08s  user  발화 끝
-     2.79s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.63s]: (tool result) Tianzifang is located at Taikang Road, Huangpu District,
-     9.03s  agent 발화 끝
-    10.46s  user  발화 시작: Oh, that's in Shanghai… I was thinking of going there. Do th
-    15.74s  user  발화 끝
-    15.78s  agent 발화 시작: Shanghai is a wonderful city, and Tianzifang is quite charmi
-    25.51s  user  발화 시작: Yes, please! Find me the top three highest-rated bakeries wi
-    25.52s  agent 발화 끝
-    31.38s  <ret> 발화 (turn5 첫 프레임)
-    31.61s  agent 발화 시작: <ret> Searching for bakeries now— Baker & Spice, Lost Heaven
-    31.76s  user  발화 끝
-    32.82s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.66s]: (tool result) The top three bakeries are Baker & Spice (4.6 stars, 210
-    40.61s  user  발화 시작: Lost Heaven Bakery sounds interesting. Do they have a websit
-    40.75s  agent 발화 끝
-    44.04s  <ret> 발화 (turn7 첫 프레임)
-    44.44s  agent 발화 시작: <ret> [happy] Lost Heaven Bakery does indeed have a website.
-    44.44s  user  발화 끝
-    45.56s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.23s]: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.
-    47.56s  agent 발화 시작: Their website address is lostheaven.com.cn. You’ll find thei
-    47.68s  agent 발화 끝
-    54.69s  user  발화 시작: Great! I'm thinking of going on Saturday. What time do they 
-    54.79s  agent 발화 끝
-    58.49s  <ret> 발화 (turn10 첫 프레임)
-    58.75s  user  발화 끝
-    58.81s  agent 발화 시작: <ret> Let me check their opening hours for— They open at eig
-    58.99s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.31s]: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.
-    64.41s  agent 발화 끝
-    64.41s  user  발화 시작: Perfect. I— I mean, do they have croissants?
-    67.19s  user  발화 끝
-    67.52s  agent 발화 시작: Croissants are a staple—
-    68.62s  user  발화 시작: Are they *good* croissants? Like, really flaky?
-    69.41s  agent 발화 끝
-    71.52s  <ret> 발화 (turn14 첫 프레임)
-    71.84s  agent 발화 시작: <ret> Oh, a very important question!
-    72.00s  user  발화 끝
-    72.48s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.30s]: (tool result) Customer reviews mention Lost Heaven Bakery's croissants
-    74.02s  agent 발화 시작: Reviews indicate their croissants are exceptionally flaky an
-    74.14s  agent 발화 끝
-    80.97s  user  발화 시작: Wonderful! I think I'll definitely go there. Can you put a r
-    81.06s  agent 발화 끝
-    88.01s  <ret> 발화 (turn17 첫 프레임)
-    88.08s  agent 발화 시작: <ret> Absolutely, I can set that for you— A reminder has bee
-    88.11s  user  발화 끝
-    88.97s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Hea
-    94.56s  agent 발화 끝
+     0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
+     3.80s  <ret> 발화 (turn1 첫 프레임)
+     4.03s  agent 발화 시작: <ret> Certainly, I can monitor that site for you. Currently 
+     4.26s  user  발화 끝
+     5.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.31s]: (tool result) The website reports current conditions in London are 15 
+    11.49s  agent 발화 끝
+    12.89s  user  발화 시작: Oh, that’s… actually pretty good. I was expecting worse, hon
+    17.23s  agent 발화 시작: [laugh] London weather can be surprisingly mild, even in aut
+    17.29s  user  발화 끝
+    21.95s  agent 발화 끝
+    21.96s  user  발화 시작: Can you book me a train from London to Edinburgh for next Tu
+    25.41s  <ret> 발화 (turn5 첫 프레임)
+    25.64s  agent 발화 시작: <ret> I can certainly check train availability for you. Ther
+    25.84s  user  발화 끝
+    27.09s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.18s]: (tool result) A train is available departing London at 10:00 AM, arriv
+    35.82s  user  발화 시작: Perfect, book it for me.
+    35.98s  agent 발화 끝
+    37.66s  <ret> 발화 (turn7 첫 프레임)
+    37.80s  user  발화 끝
+    37.81s  agent 발화 시작: <ret> I’m happy to finalize that reservation. Your train to 
+    39.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.00s]: (tool result) Your train from London to Edinburgh is confirmed for nex
+    47.82s  agent 발화 끝

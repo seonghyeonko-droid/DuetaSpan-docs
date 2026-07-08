@@ -1,14 +1,13 @@
 v3_to_ot_12_ko src=nq style=v1
-SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 사형에 대해 읽다가 궁금해졌는데, 영국이 공식적으로 사형을 폐지한 게 ⟨ret@4.34s⟩ 언제야?
-[  4.73s][moshi] 음, 그런 문제에 ⟦⚡SPAN@6.34s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ 대해 생각하면 영국 역사도 꽤 오래됐으니까요.
-[  8.55s][moshi] 영국에서는 구십팔년에 사형이 완전히 폐지됐습니다.
-[ 11.78s][user ] 구십팔년이라… 생각보다 최근이네, 진짜. 점진적으로 진행된 거야, 아니면 그냥—
-[ 16.75s][moshi] «interrupted» 사실 오랜 세월에 걸쳐서 조금씩 변화해 온 과정이었습니다.
-[ 20.10s][user ] «interrupts_prev» 살인죄 같은 특정 범죄에 대해서는 그 전에 먼저 폐지했어?
-[ 23.40s][moshi] ⟨ret@23.32s⟩ 네, 폐지는 단계적으로 ⟦⚡SPAN@25.32s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ 이루어졌습니다.
-[ 26.13s][moshi] 살인죄는 육십오년에 사형에서 제외됐고, 육십구년에 완전히 확정됐습니다.
-[ 31.79s][user ] 그러니까, 사 년 동안 살인죄에 대해서는 다시 사형을 부과할 수 있는 기간이 있었던 거네? 그거 좀 불안정해 보이는데.
-[ 38.10s][moshi] 불안정하다는 표현이 딱 맞는 것 같아요. 그 몇 년 동안은 법적인 상황이 확실하지 않았을 거라고 생각합니다.
+[  0.00s][user ] 저도 궁금했거든요, 마이클 잭슨의 “Beat It” 기타 솔로를 실제로 연주한 사람이 누구인지요. 계속 마음에 ⟨ret@6.34s⟩ 걸렸어요.
+[  6.73s][moshi] 네, ⟦⚡SPAN@7.46s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 많은 분들이 궁금해하시는 질문이에요. 에디 반 헤일런이 그 상징적인 기타 솔로를 연주한 것으로 알려져 있습니다.
+[ 13.49s][user ] 와, 정말인가요? 잭슨의 정규 밴드 멤버 중 한 명일 거라고 생각했어요.
+[ 17.55s][moshi] 잭슨이 그 곡에 반 헤일런을 섭외한 건 굉장한 성공이었어요. 이미 떠오르는 스타였으니까요.
+[ 24.27s][user ] «to_other» 저기, 혹시 쓰레기 버리셨어요?
+[ 26.19s][user ] 죄송해요. 그런데 반 헤일런이 잭슨과 함께 작업하는 걸 망설였는지 궁금해요. 그런 이야기가 있더라고요.
+[ 32.31s][moshi] ⟨ret@32.15s⟩ 네, ⟦⚡SPAN@33.27s: Eddie Van Halen initially refused payment for his work on “Beat It”.⟧ 처음에는 약간의 망설임이 있었어요. 반 헤일런은 처음에는 “Beat It”에 기여한 것에 대한 어떠한 보수도 거절했답니다. 존경의 표시였던 것 같아요.
+[ 42.20s][user ] 정말 멋지네요. 왜 돈을 받고 싶어하지 않았는지 설명한 적이 있나요?
+[ 46.35s][moshi] 그건 재미있는 프로젝트였고, 잭슨이 록 기타리스트와 협업하려는 의지가 존경스러웠다고 생각했대요.

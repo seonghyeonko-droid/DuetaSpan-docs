@@ -1,19 +1,25 @@
 # v3_hesit_18_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 음, 입법 의회에 들어갈 수 있는 가장 어린 나이가 얼마야?
-     3.24s  <ret> 발화 (turn1 첫 프레임)
-     3.55s  user  발화 끝
-     3.56s  agent 발화 시작: <ret> 네, 시민 참여에 대한 좋은 질문이세요. 입법 의회 의원이 되기 위한 최소 연령은 서른 살입니다.
-     4.76s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.70s]: The minimum age to become a member of a legislative council is thirty 
-     9.35s  agent 발화 끝
-     9.74s  user  발화 시작: 와, 서른이라고. 꽤 높은 거 아니야?
-    12.98s  user  발화 끝
-    13.39s  agent 발화 시작: 네, 조금 높은 기준이긴 해요. 그 책임감을 맡기 전에 어느 정도 인생 경험을 쌓는 데 도움이 될 거라고 생
-    21.18s  agent 발화 끝
-    21.41s  user  발화 시작: 그래. 근데— 근데 그게 모든 주에서 똑같아?
-    24.21s  <ret> 발화 (turn5 첫 프레임)
-    24.61s  agent 발화 시작: <ret> 아, 정말 합리적인 질문이시네요. 주마다 다르긴 하지만, 서른 살이 입법 의회 의원 자격 요건으로
-    24.83s  user  발화 끝
-    25.50s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.67s]: Age requirements for legislative council membership vary by jurisdicti
-    33.00s  agent 발화 끝
+     0.00s  user  발화 시작: 이탈리아에 대해 읽다가 궁금한 게 생겼는데, 베수비오 화산은 마지막으로 언제 폭발했나요?
+     6.06s  <ret> 발화 (turn1 첫 프레임)
+     6.38s  agent 발화 시작: <ret> 그 지역을 방문하시는 분들이 자주 물어보시는 질문이에요. 베수비오 화산의 마지막 폭발은 천구백사십
+     6.44s  user  발화 끝
+     8.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: Mount Vesuvius last erupted in March 1944.
+    15.23s  agent 발화 끝
+    15.60s  user  발화 시작: 천구백사십사년… 와. 그 폭발이 폼페이처럼 규모가 컸나요?
+    22.23s  user  발화 끝
+    22.63s  agent 발화 시작: 다행히도 칠십구년에 폼페이를 묻어버린 폭발 규모만큼 크지는 않았습니다.
+    28.05s  agent 발화 끝
+    28.20s  user  발화 시작: 알겠습니다. 그럼 아직도 활화산이라는 거군요? 그러니까—
+    31.84s  agent 발화 시작: 아직 활화산으로 남아있고—
+    32.04s  user  발화 끝
+    33.11s  user  발화 시작: 혹시 곧 다시 폭발할 가능성이 있는지 알 수 있는 방법이 있을까요?
+    33.68s  agent 발화 끝
+    36.95s  user  발화 끝
+    37.09s  agent 발화 시작: 화산 활동을 감시하는 건 복잡한 과학이지만, 여러 가지 도구를 가지고 있습니다.
+    41.75s  <ret> 발화 (turn8 첫 프레임)
+    42.15s  agent 발화 시작: <ret> 잠시 현재 화산 활동 보고서를 확인해 볼게요. 현재 베수비오 화산은 황색 경보 단계이며, 가스 배
+    42.22s  agent 발화 끝
+    43.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.56s]: (tool result) Mount Vesuvius is currently at yellow alert level. Gas e
+    53.56s  agent 발화 끝

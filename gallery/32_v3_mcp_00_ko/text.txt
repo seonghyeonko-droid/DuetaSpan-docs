@@ -1,16 +1,13 @@
 v3_mcp_00_ko src=mcp style=v1
-SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. <system>
+SYSTEM: <system> 당신은 수년간 밤하늘을 관측하여 지도를 작성해 온 아마추어 천문학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 파리에서 4월 1일부터 4월 5일까지, 오후 2시 30분에 픽업하는 해치백 좀 찾아 ⟨ret@7.10s⟩ 줘.
-[  7.42s][moshi] 네, ⟦⚡SPAN@8.71s: (tool result) A Renault Clio is available for seventy-eight euros per day from Europcar.⟧ 알아보고 있어요—여행 시작 전에 차를 찾는 건 언제나 좋은 시작이죠. 유로프카에서 르노 클리오를 하루에 78유로에 대여할 수 있는데, 픽업 시간은 오후 2시 30분입니다.
-      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"pickup_location": "Paris", "car_type": "hatchback", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM"}}
-[ 20.94s][user ] 음, 하루에 78유로는 좀 비싸네. 더 싼 거 ⟨ret@25.09s⟩ 있어?
-[ 25.48s][moshi] ⟦⚡SPAN@26.29s: (tool result) A Peugeot 208 is available for fifty-five euros per day from Sixt.⟧ 가격은 당연히 달라지죠—수요와 렌터카 회사에 따라 달라져요.
-      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"pickup_location": "Paris", "car_type": "hatchback", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "max_price": "60"}}
-[ 30.18s][moshi] 식스트에서 푸조 208을 하루에 55유로에 제공하고 있는데, 원하시는 가격에 딱 맞을 거예요.
-[ 36.45s][user ] 55유로면 훨씬 좋네. 좋아, 푸조로 예약해 줘.
-[ 41.17s][moshi] ⟨ret@41.02s⟩ 잘 ⟦⚡SPAN@42.70s: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation number is ZX87RT.⟧ 됐네요—좋은 가격에 예약하신 건 정말 만족스러워요. 푸조 208이 식스트를 통해 예약되었고, 예약 확인 번호는 ZX87RT입니다.
-      CALL: {"function": "RentalCars_3_BookCar", "arguments": {"pickup_location": "Paris", "car_type": "Peugeot 208", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "rental_company": "Sixt"}}
-[ 53.97s][user ] 좋아! 고마워.
-[ 55.63s][moshi] 천만에요. 제가 차를 빌렸던 적이 있었는데…
+[  0.00s][user ] 에펠탑의 좌표를 알려 주실 수 ⟨ret@2.84s⟩ 있을까요?
+[  3.15s][moshi] ⟦⚡SPAN@4.12s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ 네, 명소 위치를 찾는 건 제가 자주 하는 일인데요. 에펠탑의 좌표는 북위 48.8584도, 동경 2.2945도입니다.
+      CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
+[ 14.01s][user ] 알겠습니다. 혹시 그 좌표 근처에 있는 호텔을 찾아 주실 수 ⟨ret@18.31s⟩ 있을까요?
+[ 18.70s][moshi] 물론이죠, ⟦⚡SPAN@19.51s: (tool result) Hotel Plaza Athénée is 0.7 miles away, priced at $1,500 per night. Hotel Raphael is 1.1 miles aw⟧ 근처에 머물 곳을 찾는 건 좋은 생각이에요. 호텔 플라자 아테네는 천오백 달러이고, 호텔 라파엘은 사백 달러입니다.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "48.8584", "longitude": "2.2945"}}
+[ 28.64s][user ] 플라자 아테네는 괜찮아 보이네요. 오늘 밤에 거기로 방을 예약해 주실 수 ⟨ret@35.01s⟩ 있을까요?
+[ 35.16s][moshi] 좋은 선택이세요, ⟦⚡SPAN@36.69s: (tool result) Your reservation at Hotel Plaza Athénée is confirmed for tonight, order number is 7892345.⟧ 바로 예약을 진행해 드릴게요.
+      CALL: {"function": "hotels_book", "arguments": {"hotel_name": "Hotel Plaza Athénée", "date": "tonight"}}

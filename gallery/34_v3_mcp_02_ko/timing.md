@@ -1,51 +1,25 @@
 # v3_mcp_02_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 톈쯔팡 주소가 어디야?
-     2.15s  <ret> 발화 (turn1 첫 프레임)
-     2.31s  agent 발화 시작: <ret> 음, 잠깐 찾아볼게요— 톈쯔팡은 중국 상하이 황푸구 타이캉루에 있어요.
-     2.39s  user  발화 끝
-     4.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.11s]: (tool result) Tianzifang is located at Taikang Road, Huangpu District,
-     8.89s  agent 발화 끝
-     8.99s  user  발화 시작: 아, 상하이에 있구나… 거기로 갈까 생각 중이었어. 거기 주변에 맛있는 빵집 있어?
-    13.84s  agent 발화 시작: 상하이는 정말 멋진 도시이고, 톈쯔팡은 꽤 매력적인 곳이에요. 그 지역의 특정 빵집은 잘 모르겠지만, 근처에
-    13.85s  user  발화 끝
-    23.80s  agent 발화 끝
-    24.62s  user  발화 시작: 그래, 찾아 줘! 톈쯔팡에서 반 마일 안에 있는 최고 평점 빵집 세 곳을 찾아줘.
-    29.68s  <ret> 발화 (turn5 첫 프레임)
-    30.07s  agent 발화 시작: <ret> 지금 빵집을 검색 중이에요— 베이커 앤 스파이스, 로스트 헤븐 베이커리, 르 포르니엘이 반 마일 
-    30.24s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.65s]: (tool result) The top three bakeries are Baker & Spice (4.6 stars, 210
-    30.26s  user  발화 끝
-    38.73s  agent 발화 끝
-    38.88s  user  발화 시작: 로스트 헤븐 베이커리 이름이 재밌네. 웹사이트 있어?
-    42.23s  <ret> 발화 (turn7 첫 프레임)
-    42.46s  agent 발화 시작: <ret> [웃음] 로스트 헤븐 베이커리에 웹사이트가 있네요.
-    42.62s  user  발화 끝
-    44.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.
-    46.21s  agent 발화 시작: 웹사이트 주소는 lostheaven.com.cn이에요. 메뉴랑 위치 정보가 거기 있을 거예요.
-    46.30s  agent 발화 끝
-    51.95s  agent 발화 끝
-    52.13s  user  발화 시작: 좋다! 토요일에 갈까 생각 중이야. 몇 시에 여어?
-    55.75s  <ret> 발화 (turn10 첫 프레임)
-    55.81s  agent 발화 시작: <ret> 개점 시간을 확인해 볼게요— 토요일 아침 여덟 시에 문을 열어요.
-    55.83s  user  발화 끝
-    56.95s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.36s]: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.
-    59.19s  agent 발화 끝
-    59.25s  user  발화 시작: 좋네. 있냐고… 크루아상 있어?
-    62.76s  user  발화 끝
-    62.93s  agent 발화 시작: 크루아상은 기본이죠—
-    63.53s  user  발화 시작: 크루아상이 *맛있어*? 진짜 페이스트리처럼 바삭해?
-    64.31s  agent 발화 끝
-    67.33s  <ret> 발화 (turn14 첫 프레임)
-    67.64s  user  발화 끝
-    67.64s  agent 발화 시작: <ret> 오, 아주 중요한 질문이네요!
-    68.45s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.22s]: (tool result) Customer reviews mention Lost Heaven Bakery's croissants
-    69.72s  agent 발화 시작: 리뷰를 보니까 크루아상이 아주 바삭하고 버터 맛이 강하다고 하네요— 좋은 기술의 증거죠, 당연히.
-    69.86s  agent 발화 끝
-    76.03s  agent 발화 끝
-    78.06s  user  발화 시작: 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 설정해 줘.
-    83.43s  <ret> 발화 (turn17 첫 프레임)
-    83.50s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요— 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
-    83.67s  user  발화 끝
-    84.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.79s]: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Hea
-    87.88s  agent 발화 끝
+     0.00s  user  발화 시작: weather.example.com에서 날씨 업데이트를 봐 주세요.
+     3.83s  <ret> 발화 (turn1 첫 프레임)
+     3.99s  agent 발화 시작: <ret> 음, 날씨가 생각보다 괜찮네요. 솔직히 더 안 좋을 줄 알았어요.
+     4.03s  user  발화 끝
+     5.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.26s]: (tool result) The website reports current conditions in London are 15 
+     8.06s  agent 발화 끝
+     8.11s  user  발화 시작: 하하, 런던 날씨는 가을에도 놀랍도록 온화할 수 있어요.
+    12.55s  user  발화 끝
+    12.59s  agent 발화 시작: 다음 화요일에 런던에서 에든버러까지 기차표를 예매해 주시겠어요?
+    16.85s  agent 발화 끝
+    17.76s  user  발화 시작: 네, 기차표를 확인해 드릴 수 있어요. 런던에서 오전 10시에 출발해서 에든버러에 오후 2시 30분에 도착하
+    25.19s  <ret> 발화 (turn5 첫 프레임)
+    25.58s  agent 발화 시작: <ret> 좋아요, 예매해 주세요.
+    25.77s  user  발화 끝
+    26.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.12s]: (tool result) A train is available departing London at 10:00 AM, arriv
+    27.70s  agent 발화 끝
+    27.91s  user  발화 시작: 네, 예약을 완료해 드릴게요. 다음 화요일 오전 10시 에든버러행 기차표가 예약되었고, 예약 번호는 G789
+    36.42s  <ret> 발화 (turn7 첫 프레임)
+    36.82s  agent 발화 시작: <ret> I’m happy to finalize that reservation. Your train to 
+    36.94s  user  발화 끝
+    37.38s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.94s]: (tool result) Your train from London to Edinburgh is confirmed for nex
+    46.61s  agent 발화 끝

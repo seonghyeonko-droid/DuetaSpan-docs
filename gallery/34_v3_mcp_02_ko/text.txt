@@ -1,25 +1,15 @@
 v3_mcp_02_ko src=mcp style=v3
-SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. <system>
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 연구하는 식물학자입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 톈쯔팡 주소가 어디야?
-[  2.31s][moshi] ⟨ret@2.15s⟩ 음, 잠깐 ⟦⚡SPAN@4.15s: (tool result) Tianzifang is located at Taikang Road, Huangpu District, Shanghai, China.⟧ 찾아볼게요— 톈쯔팡은 중국 상하이 황푸구 타이캉루에 있어요.
-[  8.99s][user ] 아, 상하이에 있구나… 거기로 갈까 생각 중이었어. 거기 주변에 맛있는 빵집 있어?
-[ 13.84s][moshi] 상하이는 정말 멋진 도시이고, 톈쯔팡은 꽤 매력적인 곳이에요. 그 지역의 특정 빵집은 잘 모르겠지만, 근처에 있는 빵집을 찾아볼 수 있어요.
-[ 24.62s][user ] 그래, 찾아 줘! 톈쯔팡에서 반 마일 안에 있는 최고 평점 빵집 세 곳을 ⟨ret@29.68s⟩ 찾아줘.
-[ 30.07s][moshi] ⟦⚡SPAN@30.24s: (tool result) The top three bakeries are Baker & Spice (4.6 stars, 210 Fumin Road), Lost Heaven Bakery (4.5 st⟧ 지금 빵집을 검색 중이에요— 베이커 앤 스파이스, 로스트 헤븐 베이커리, 르 포르니엘이 반 마일 안에 있는 최고 평점 빵집 세 곳이에요.
-      CALL: {"function": "maps_search_detail", "arguments": {"query": "bakeries", "location": "Tianzifang, Taikang Road, Huangpu District, Shanghai, China", "radius": "0.5 miles", "sort_by": "rating", "limit": "3"}}
-[ 38.88s][user ] 로스트 헤븐 베이커리 이름이 재밌네. 웹사이트 ⟨ret@42.23s⟩ 있어?
-[ 42.46s][moshi] [웃음] 로스트 ⟦⚡SPAN@44.23s: (tool result) Lost Heaven Bakery’s website is lostheaven.com.cn.⟧ 헤븐 베이커리에 웹사이트가 있네요.
-[ 46.21s][moshi] 웹사이트 주소는 lostheaven.com.cn이에요. 메뉴랑 위치 정보가 거기 있을 거예요.
-[ 52.13s][user ] 좋다! 토요일에 갈까 생각 중이야. 몇 시에 여어?
-[ 55.81s][moshi] ⟨ret@55.75s⟩ 개점 시간을 확인해 ⟦⚡SPAN@56.95s: (tool result) Lost Heaven Bakery opens at 8:00 AM on Saturdays.⟧ 볼게요— 토요일 아침 여덟 시에 문을 열어요.
-      CALL: {"function": "maps_search_detail", "arguments": {"query": "Lost Heaven Bakery", "location": "276 Wukang Road, Shanghai, China", "attribute": "opening_hours"}}
-[ 59.25s][user ] 좋네. 있냐고… 크루아상 있어?
-[ 62.93s][moshi] «interrupted» 크루아상은 기본이죠—
-[ 63.53s][user ] «interrupts_prev» 크루아상이 *맛있어*? 진짜 페이스트리처럼 바삭해?
-[ 67.64s][moshi] ⟨ret@67.33s⟩ 오, ⟦⚡SPAN@68.45s: (tool result) Customer reviews mention Lost Heaven Bakery's croissants are "exceptionally flaky" and "buttery"⟧ 아주 중요한 질문이네요!
-[ 69.72s][moshi] 리뷰를 보니까 크루아상이 아주 바삭하고 버터 맛이 강하다고 하네요— 좋은 기술의 증거죠, 당연히.
-[ 78.06s][user ] 좋다! 꼭 가봐야겠다. 토요일 아침 아홉 시에 로스트 헤븐 베이커리 갈 수 있게 알림 설정해 줘.
-[ 83.50s][moshi] ⟨ret@83.43s⟩ 네, ⟦⚡SPAN@84.39s: (tool result) Reminder set for Saturday at 9:00 AM: Leave for Lost Heaven Bakery.⟧ 그렇게 해 드릴게요— 토요일 아침 아홉 시에 알림이 캘린더에 추가됐어요.
-      CALL: {"function": "calendar_add_event", "arguments": {"date": "Saturday", "time": "9:00 AM", "title": "Leave for Lost Heaven Bakery"}}
+[  0.00s][user ] weather.example.com에서 날씨 업데이트를 봐 주세요.
+[  3.99s][moshi] ⟨ret@3.83s⟩ 음, 날씨가 생각보다 괜찮네요. ⟦⚡SPAN@5.83s: (tool result) The website reports current conditions in London are 15 degrees Celsius, with light rain.⟧ 솔직히 더 안 좋을 줄 알았어요.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
+[  8.11s][user ] 하하, 런던 날씨는 가을에도 놀랍도록 온화할 수 있어요.
+[ 12.59s][moshi] 다음 화요일에 런던에서 에든버러까지 기차표를 예매해 주시겠어요?
+[ 17.76s][user ] 네, 기차표를 확인해 드릴 수 있어요. 런던에서 오전 10시에 출발해서 에든버러에 오후 2시 30분에 도착하는 기차가 ⟨ret@25.19s⟩ 85파운드예요.
+[ 25.58s][moshi] ⟦⚡SPAN@26.23s: (tool result) A train is available departing London at 10:00 AM, arriving in Edinburgh at 2:30 PM, costing £85⟧ 좋아요, 예매해 주세요.
+      CALL: {"function": "book_train", "arguments": {"departure_city": "London", "arrival_city": "Edinburgh", "date": "next Tuesday"}}
+[ 27.91s][user ] 네, 예약을 완료해 드릴게요. 다음 화요일 오전 10시 에든버러행 기차표가 예약되었고, 예약 번호는 ⟨ret@36.42s⟩ G78942입니다.
+[ 36.82s][moshi] ⟦⚡SPAN@37.38s: (tool result) Your train from London to Edinburgh is confirmed for next Tuesday at 10:00 AM; reservation numbe⟧ I’m happy to finalize that reservation. Your train to Edinburgh next Tuesday at ten AM is confirmed, reservation number G78942.
+      CALL: {"function": "book_train", "arguments": {"departure_city": "London", "arrival_city": "Edinburgh", "date": "next Tuesday", "time": "10:00 AM"}}

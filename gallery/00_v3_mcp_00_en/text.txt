@@ -1,16 +1,13 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
+SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you find a hatchback for me in Paris, starting on April first and ending on April fifth, with a pickup time of two thirty ⟨ret@8.08s⟩ PM?
-[  8.32s][moshi] Let’s see ⟦⚡SPAN@9.20s: (tool result) A Renault Clio is available for seventy-eight euros per day from Europcar.⟧ what’s available—finding a car is always a good start to a trip. Europcar has a Renault Clio available for seventy-eight euros a day, picking up at two thirty PM.
-      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"pickup_location": "Paris", "car_type": "hatchback", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM"}}
-[ 18.90s][user ] Hmm, seventy-eight euros a day… that’s a bit steep. Are there any ⟨ret@23.60s⟩ cheaper options?
-[ 23.99s][moshi] Prices do vary, of ⟦⚡SPAN@25.60s: (tool result) A Peugeot 208 is available for fifty-five euros per day from Sixt.⟧ course—it depends on demand and the rental company.
-      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"pickup_location": "Paris", "car_type": "hatchback", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "max_price": "60"}}
-[ 27.73s][moshi] Sixt offers a Peugeot 208 for fifty-five euros a day, meeting your price preference.
-[ 33.39s][user ] Fifty-five euros sounds much better. Okay, let’s book the ⟨ret@38.16s⟩ Peugeot.
-[ 38.32s][moshi] Excellent—a good ⟦⚡SPAN@39.68s: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation number is ZX87RT.⟧ deal is always satisfying. Your Peugeot 208 is now booked with Sixt, and your confirmation number is ZX87RT.
-      CALL: {"function": "RentalCars_3_BookCar", "arguments": {"pickup_location": "Paris", "car_type": "Peugeot 208", "start_date": "April 1", "end_date": "April 5", "pickup_time": "2:30 PM", "rental_company": "Sixt"}}
-[ 47.33s][user ] Wonderful! Thank you.
-[ 49.35s][moshi] You’re most welcome. Reminds me of a time I was
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@2.97s⟩ Paris?
+[  3.21s][moshi] Certainly, ⟦⚡SPAN@3.93s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ locating landmarks is something I often do… The Eiffel Tower's coordinates are forty-eight point eight five eight four degrees north, two point two nine four five degrees east.
+      CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
+[ 14.65s][user ] Okay, and can you find me hotels near ⟨ret@17.68s⟩ those coordinates?
+[ 18.08s][moshi] Of course, finding a ⟦⚡SPAN@19.68s: (tool result) Hotel Plaza Athénée is 0.7 miles away, priced at $1,500 per night. Hotel Raphael is 1.1 miles aw⟧ place to stay nearby is a good idea. I found two hotels: Hotel Plaza Athénée, at one thousand five hundred dollars, and Hotel Raphael, at four hundred dollars.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "48.8584", "longitude": "2.2945"}}
+[ 29.37s][user ] That Plaza Athénée sounds nice—can you book me a room there for ⟨ret@33.65s⟩ tonight?
+[ 33.97s][moshi] A lovely ⟦⚡SPAN@35.01s: (tool result) Your reservation at Hotel Plaza Athénée is confirmed for tonight, order number is 7892345.⟧ choice, let’s secure that for you right away…
+      CALL: {"function": "hotels_book", "arguments": {"hotel_name": "Hotel Plaza Athénée", "date": "tonight"}}

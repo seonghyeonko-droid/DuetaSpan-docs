@@ -1,75 +1,27 @@
 # v3_rag_26_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 안녕하세요. 아비치 노래 “The Nights” 영상 보다가 궁금한 게 생겼어요. 영상에 나오는 그 남자분,
-     8.07s  <ret> 발화 (turn1 첫 프레임)
-     8.46s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 기억에 남는 영상이죠.
-     8.61s  user  발화 끝
-    10.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.14s]: Rory Kramer is the man featured prominently in Avicii’s “The Nights” m
-    11.54s  agent 발화 시작: 말씀하신 분은 로리 크레이머 님이고, 아비치의 “The Nights” 영상에 출연하셨습니다.
-    11.60s  agent 발화 끝
-    17.84s  agent 발화 끝
-    18.36s  user  발화 시작: 아, 로리 크레이머 님… 처음 들어봐요. 그분은 뭘 하시는 분이에요? 배우인가요?
-    23.61s  <ret> 발화 (turn4 첫 프레임)
-    23.93s  agent 발화 시작: <ret> 음악 영상 뒤에 숨겨진 사람들에 대해 알아보는 건 정말 흥미로운 일이죠.
-    24.01s  user  발화 끝
-    25.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: Rory Kramer is a free-runner and stunt performer known for his parkour
-    29.06s  agent 발화 시작: 로리 크레이머 님은 프리러너이자 스턴트 퍼포머이고, 파쿠르를 전문으로 하십니다.
-    29.11s  agent 발화 끝
-    34.99s  user  발화 시작: 파쿠르군요? 그럼 점프하는 건 당연하네요. [laugh] 사람들이 할 수 있는 게 정말 놀라워요.
-    35.03s  agent 발화 끝
-    42.69s  user  발화 끝
-    42.82s  agent 발화 시작: 정말 그렇습니다. 사람의 몸은 놀라운 능력을 가지고 있어요.
-    46.94s  agent 발화 끝
-    47.08s  user  발화 시작: 그분이 그 영상에 특별히 고용된 건가요, 아니면 그냥 우연히 된 건가요?
-    50.70s  <ret> 발화 (turn9 첫 프레임)
-    50.77s  agent 발화 시작: <ret> 기회가 어떻게 생기는지 궁금해하시는 건 당연한 질문이에요.
-    50.97s  user  발화 끝
-    52.46s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.25s]: Kramer was contacted by the video’s director to perform parkour stunts
-    55.02s  agent 발화 끝
-    55.05s  agent 발화 시작: 로리 크레이머 님은 영상 감독님으로부터 직접 연락을 받아서 스턴트를 하게 되셨습니다.
-    61.16s  agent 발화 끝
-    61.25s  user  발화 시작: 그렇군요. 길에서 그냥 찾은 사람은 아니었네요.
-    64.11s  user  발화 끝
-    64.22s  agent 발화 시작: 영상 기회가 그렇게 우연히 찾아오는 경우는 드물어요.
-    68.24s  agent 발화 끝
-    68.77s  user  발화 시작: 다른 영상들도 찾아봤는데, 다른 뮤지션들과도 함께 작업한 적이 있잖아요, 그렇죠?
-    73.85s  <ret> 발화 (turn14 첫 프레임)
-    74.25s  agent 발화 시작: <ret> 네, 꽤 다양한 분야에서 활동하고 계세요.
-    74.46s  user  발화 끝
-    75.69s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.09s]: Rory Kramer has collaborated with artists including Swedish House Mafi
-    77.30s  agent 발화 시작: 로리 크레이머 님은 스웨디시 하우스 마피아와 자라 라르손과 함께 작업했습니다.
-    77.34s  agent 발화 끝
-    82.81s  agent 발화 끝
-    83.00s  user  발화 시작: 스웨디시 하우스 마피아… 알겠어요. 그 음악에 어울리는 분위기네요. 음, 아비치 영상 이후에 유명해졌나요?
-    90.20s  <ret> 발화 (turn17 첫 프레임)
-    90.52s  agent 발화 시작: <ret> 유명한 음악 영상은 사람의 인지도를 높일 수 있죠.
-    90.74s  user  발화 끝
-    91.88s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.79s]: “The Nights” significantly increased Rory Kramer’s visibility and led 
-    94.22s  agent 발화 시작: “The Nights” 영상 덕분에 로리 크레이머 님의 인지도가 크게 높아졌고, 더 많은 일을 하게 되었습니
-    94.31s  agent 발화 끝
-   100.87s  user  발화 시작: 멋지네요. 스턴트 퍼포머도 괜찮은 직업인 것 같아요. 그럼, 원래 어디 출신이에요?
-   100.94s  agent 발화 끝
-   106.21s  <ret> 발화 (turn20 첫 프레임)
-   106.28s  agent 발화 시작: <ret> 사람들의 고향과 열정을 추구하는 과정에 대해 알아보는 건 정말 흥미로운 일이죠.
-   106.33s  user  발화 끝
-   108.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: Rory Kramer was born and raised in the Netherlands, beginning parkour 
-   112.00s  agent 발화 시작: 로리 크레이머 님은 원래 네덜란드 출신이고, 열네 살 때 파쿠르를 시작했습니다.
-   112.06s  agent 발화 끝
-   117.70s  agent 발화 끝
-   118.78s  user  발화 시작: 네덜란드… 흥미롭네요. 네덜란드를 생각하면 풍차가 떠올라요.
-   122.54s  agent 발화 시작: [laugh] 아름다운 역사와 문화를 가진 나라입니다.
-   122.80s  user  발화 끝
-   127.17s  user  발화 시작: 자, 마지막 질문이에요, 약속할게요. 파쿠르 말고 다른 재능도 있어요? 악기를 다룰 줄 아나 봐요?
-   127.17s  agent 발화 끝
-   133.60s  <ret> 발화 (turn25 첫 프레임)
-   133.75s  agent 발화 시작: <ret> 창의적인 사람들은 다양한 재능과 관심을 가지고 있는 경우가 많아요.
-   134.02s  user  발화 끝
-   135.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: Besides parkour, Rory Kramer is also a skilled skateboarder and musici
-   138.51s  agent 발화 끝
-   138.57s  agent 발화 시작: 로리 크레이머 님은 스케이트보드도 잘 타고, 악기도 연주합니다.
-   143.29s  agent 발화 끝
-   143.75s  user  발화 시작: 와, 만능이시네요! 정말 대단해요. 정보 감사합니다, 바스케스 선생님.
-   149.01s  agent 발화 시작: 도와드릴 수 있어서 기쁩니다. 아는 것을 공유하게 되어 기뻐요.
-   149.08s  user  발화 끝
-   153.82s  agent 발화 끝
+     0.00s  user  발화 시작: 깃발을 보고 있었는데, 빨간색이 들어간 깃발이 얼마나 많은지 웃기더라고요. 음, 검은색, 빨간색, 노란색이 
+     9.24s  agent 발화 시작: 그렇게 빨간색이 많이 들어가는지 잘 봤네. 용기를 상징하는 거 알지?
+     9.37s  user  발화 끝
+    13.85s  <ret> 발화 (turn2 첫 프레임)
+    14.24s  agent 발화 시작: <ret> 그 삼색기를 기억해 볼까… 독일 깃발은 검은색, 빨간색, 금색 가로 줄무늬로 되어 있어.
+    14.33s  agent 발화 끝
+    15.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: The flag of Germany is a tricolor featuring black, red, and gold horiz
+    21.14s  agent 발화 끝
+    21.67s  user  발화 시작: 아, 독일이네요. 유럽 깃발은 항상 헷갈려요. 음, 그렇군요.
+    26.53s  user  발화 끝
+    26.62s  agent 발화 시작: 그럴 수 있어. 특히 그 지역은 역사가 얽혀 있거든.
+    30.16s  <ret> 발화 (turn5 첫 프레임)
+    30.32s  agent 발화 시작: <ret> 무역에서 중요했던 깃발에 대해 잘 알아. 다호메이 왕국의 깃발은 빨간색 중앙 줄무늬에 양쪽으로 노
+    30.36s  agent 발화 끝
+    32.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: The flag of the Kingdom of Dahomey featured a central stripe of red fl
+    39.91s  user  발화 시작: 다호메이는… 현대 베냉에 있나요? 음… 어디서 읽은 것 같아요.
+    40.01s  agent 발화 끝
+    44.53s  user  발화 끝
+    44.58s  agent 발화 시작: 맞아. 17세기부터 프랑스에 정복당한 1894년까지 주요 강국으로 번성했어.
+    51.41s  <ret> 발화 (turn8 첫 프레임)
+    51.72s  agent 발화 시작: <ret> 색깔과 무역에 대해 생각해보니, 상징은 종종 매우 신중하게 선택되곤 해… 아샨티 제국의 깃발은 검
+    51.86s  agent 발화 끝
+    53.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: The Asante Empire used flags with gold symbols on a black background t
+    64.38s  agent 발화 끝

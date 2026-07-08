@@ -1,25 +1,21 @@
 # v3_to_ot_11_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 누가 UAAP 71시즌 여자 배구 신인왕을 받았는지 알아?
-     3.30s  <ret> 발화 (turn1 첫 프레임)
-     3.54s  agent 발화 시작: <ret> 아, 좋은 질문인데요— 스포츠 역사에 대한 질문이네요! 젤리 부안 선수가 71시즌 여자 배구에서 
-     3.56s  user  발화 끝
-     5.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: Jelly Buan was awarded the UAAP Season 71 Women’s Volleyball Rookie of
-    11.61s  agent 발화 끝
-    11.68s  user  발화 시작: 오, 진짜? 그럼 포지션은 뭐였어?
-    14.04s  agent 발화 시작: 그 선수는 아웃사이드 히터였는데, 파워풀한 스파이크와 꾸준한 플레이로 유명했어요—
-    14.23s  user  발화 끝
-    18.58s  user  발화 시작: 그 시즌에 베스트 스코어도 받았어?
-    19.13s  agent 발화 끝
-    20.56s  user  발화 끝
-    20.90s  agent 발화 시작: 좋은 질문이시네요— 확인해 볼게요—
-    22.60s  agent 발화 끝
-    22.62s  <ret> 발화 (turn6 첫 프레임)
-    22.70s  agent 발화 시작: <ret> 네, 젤리 부안 선수가 그 시즌에 신인왕과 베스트 스코어 둘 다 받았어요.
-    23.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.81s]: Jelly Buan was named both Rookie of the Year and Best Scorer in UAAP S
-    25.85s  user  발화 시작: 응응.
-    26.67s  user  발화 끝
-    27.51s  agent 발화 끝
-    27.57s  agent 발화 시작: 그녀에게는 정말 훌륭한 데뷔 시즌이었고, 아주 인상적인 경기였어요— 정말 눈에 띄었어요.
-    33.18s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 오클랜드 애슬레틱스가 마지막으로 노히트 게임을 당한 게 언제였는지 아세요? 궁금해서요.
+     5.03s  <ret> 발화 (turn1 첫 프레임)
+     5.27s  agent 발화 시작: <ret> 아, 야구 역사에 대한 흥미로운 질문이시네요. 애슬레틱스가 마지막으로 노히트 게임을 당한 날은 2
+     5.28s  user  발화 끝
+     7.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.09s]: The Oakland Athletics were last no-hit on April 21, 2018.
+    13.95s  user  발화 시작: 와, 정말 오래됐네요.
+    14.04s  agent 발화 끝
+    15.59s  agent 발화 시작: 정말 시간이 많이 흘렀네요. 노히트 게임은 항상 기억에 남는 경기인 것 같아요, 그렇죠?
+    15.74s  user  발화 끝
+    20.45s  agent 발화 끝
+    21.83s  user  발화 시작: 그때 홈 경기였나요, 아니면 원정 경기였나요?
+    24.38s  <ret> 발화 (turn5 첫 프레임)
+    24.54s  agent 발화 시작: <ret> 좋은 질문이세요. 그 노히트 게임은 오클랜드-알라메다 카운티 콜리세움에서 열렸답니다.
+    24.60s  user  발화 끝
+    26.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.86s]: The game on April 21, 2018, was played at the Oakland-Alameda County C
+    30.32s  agent 발화 끝
+    31.80s  user  발화 시작: 네, 알겠습니다. 정보 감사합니다.
+    34.20s  user  발화 끝

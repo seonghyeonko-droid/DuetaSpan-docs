@@ -1,14 +1,13 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
+SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about capital punishment, and I’m curious— when did England officially abolish the death ⟨ret@6.55s⟩ penalty?
-[  6.79s][moshi] That’s a weighty question, considering ⟦⚡SPAN@8.55s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ England’s long history with such matters.
-[ 10.56s][moshi] The death penalty was fully abolished in the United Kingdom in nineteen ninety-eight.
-[ 15.04s][user ] Nineteen ninety-eight… that’s surprisingly recent, actually. Was it a gradual process, or did it just—
-[ 21.49s][moshi] «interrupted» It was indeed a process, evolving over decades—
-[ 24.09s][user ] «interrupts_prev» Did they abolish it for certain crimes *before* then, like murder specifically?
-[ 29.26s][moshi] ⟨ret@28.87s⟩ Yes, ⟦⚡SPAN@30.23s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ the abolition happened in stages.
-[ 31.90s][moshi] Murder was removed as a capital crime in nineteen sixty-five, becoming permanent in nineteen sixty-nine.
-[ 37.53s][user ] So, for four years, there was a period where it *could* be reinstated for murder? That seems… precarious.
-[ 44.52s][moshi] Precarious is a good word for it. The legal landscape was certainly unsettled during those years, I imagine.
+[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It’s always stuck with ⟨ret@5.56s⟩ me.
+[  5.80s][moshi] That’s a popular ⟦⚡SPAN@7.16s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ question, certainly. Eddie Van Halen is credited with performing that iconic guitar solo.
+[ 11.43s][user ] Wow, really? I always assumed it was one of Jackson’s regular band members.
+[ 16.58s][moshi] It was quite a coup for Jackson to secure Van Halen for the track, as he was already a rising star.
+[ 21.75s][user ] «to_other» Hey, did you take out the trash yet?
+[ 23.74s][user ] Sorry about that. So, was Van Halen hesitant to work with Jackson at all? I’ve heard ⟨ret@29.56s⟩ stories.
+[ 29.96s][moshi] There ⟦⚡SPAN@30.60s: Eddie Van Halen initially refused payment for his work on “Beat It”.⟧ were some initial reservations, yes. Van Halen initially declined any payment for contributing to “Beat It”. A gesture of respect, I believe.
+[ 38.41s][user ] That’s pretty cool. Did he ever explain why he didn’t want to be paid?
+[ 42.84s][moshi] He felt it was a fun project, and he admired Jackson’s willingness to collaborate with a rock guitarist.

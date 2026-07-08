@@ -1,38 +1,23 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 역사 속 질병에 대해 읽다가… 문득 나병이 요즘은 어디에서 가장 흔한지 궁금해졌어요.
-[  6.91s][moshi] ⟨ret@6.67s⟩ 그건 정말 중요한 ⟦⚡SPAN@8.67s: India accounts for more than half of the world’s leprosy cases.⟧ 질문인 것 같아요. 현재 전 세계적으로 발생하는 새로운 나병 환자의 50% 이상이 인도에서 보고되고 있어요.
-[ 15.55s][user ] 정말… 놀랍네요. 저는 항상 과거의 질병이라고 생각했거든요.
-[ 20.25s][moshi] 많은 분들이 오해하시는 부분이에요. 지속적인 빈곤과 의료 서비스 접근성의 제한이 나병의 지속적인 존재에 기여하고 있어요.
-[ 29.06s][user ] 그럼 인도는 아직도 나병이 큰 문제인가요?
-[ 31.38s][moshi] ⟨ret@31.22s⟩ 여전히 중요한 ⟦⚡SPAN@33.22s: In 2023, India reported 75,000 new cases of leprosy.⟧ 공중 보건 문제로 남아 있어요. 인도는 2023년에 새롭게 나병 환자 칠만 오천 명이 발생했어요.
-[ 40.55s][user ] 칠만 오천 명… 와우.
-[ 42.79s][moshi] 상당한 숫자이지만, 검출 및 치료 노력이 계속 진행 중이에요.
-[ 47.21s][user ] 다른 나라에도 높은 발생률을 보이는 곳이 ⟨ret@49.51s⟩ 있나요?
-[ 49.91s][moshi] 네, ⟦⚡SPAN@50.87s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ 몇몇 다른 나라들도 어려움을 겪고 있어요. 인도의 다음으로 브라질과 인도네시아가 가장 영향을 많이 받는 국가예요.
-[ 57.90s][user ] 아프리카는요? 그곳에서도 문제가 있다고 ⟨ret@60.89s⟩ 들었어요.
-[ 61.13s][moshi] 그렇습니다. ⟦⚡SPAN@62.17s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ 특히 특정 지역에서 그러해요.
-[ 63.85s][moshi] 콩고 민주 공화국과 다른 아프리카 국가들이 나병으로 어려움을 겪고 있어요.
-[ 71.69s][user ] 치료가 가능한가요? 완치가 가능한가요?
-[ 74.02s][moshi] 네, 조기에 진단하고 다제 약물 요법을 사용하면 가능해요.
-[ 79.52s][user ] 다제 약물 요법… 그게 뭘 ⟨ret@82.20s⟩ 의미하나요?
-[ 82.36s][moshi] 여러 항생제를 ⟦⚡SPAN@84.20s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ 병용하는 거예요… 표준 치료법은 dapson, rifampicin, clofazimine 항생제를 사용해요.
-[ 90.32s][user ] 이름이… 너무 어렵네요.
-[ 92.31s][moshi] 그렇지만, 내성균 발생을 막기 위해서는 전체 치료 과정을 준수하는 것이 중요해요.
-[ 98.88s][user ] 하지만 조기에 발견하면 완전히 회복할 수 있나요?
-[102.42s][moshi] «interrupted» 네, 조기 개입이 절대적으로 중요해요—
-[104.01s][user ] «interrupts_prev» 낙인에 대해서는요? 사람들이 따돌림당한다는 것을 읽었어요…
-[108.53s][moshi] 정말 비극적으로 지속되는 문제예요. 역사적으로, 그리고 지금도 오정보가 두려움과 차별을 부추기고 있어요.
-[115.47s][user ] 정말 끔찍하네요. 치료법이 있어도 사람들은 여전히 고통받는군요.
-[120.02s][moshi] 안타깝게도, 네. 사회적 결과가 질병만큼이나 고통스러울 수 있어요.
-[125.91s][user ] 낙인을 없애기 위해 노력하는 일이 있나요?
-[128.57s][moshi] 많은 단체들이 오해를 바로잡기 위한 교육 및 옹호 프로그램을 진행하고 있어요.
-[134.30s][user ] 그건 정말 다행이네요. ⟨ret@136.44s⟩ 예방은요?
-[136.76s][moshi] 예방 전략은 ⟦⚡SPAN@138.44s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ 조기 발견과 치료에 초점을 맞추고 있어요… BCG 백신은 나병 발병에 대해 제한적인 보호 효과를 제공해요.
-[145.75s][user ] 제한적인 보호……
-[147.91s][user ] …그럼 확실한 안전장치는 아닌 건가요?
-[150.68s][moshi] 그렇지 않지만, 일부 경우에는 질병의 심각성을 줄일 수 있어요.
-[155.45s][user ] 그럼, 조기에 환자를 찾는 데 집중하는 것이 여전히 가장 좋은 방법인가요?
-[160.11s][moshi] 맞아요. 적극적인 환자 발견과 접근 가능한 치료가 가장 효과적인 전략이에요.
+[  0.00s][user ] 저 dystopian 소설을 읽다가 그런 생각이 들었는데요, “빅 브라더”라는 말은 원래 어디에서 나온 거예요?
+[  7.62s][moshi] 흥미로운 질문인데, 언어의 힘과 사회적 논평에 관련된 이야기야.
+[ 12.95s][user ] …그냥, 지금은 너무 당연하게 느껴지잖아요.
+[ 15.67s][user ] …모두가 그 의미를 이해하지만, 그 기원은 ⟨ret@18.95s⟩ 뭐예요?
+[ 19.34s][moshi] 그 ⟦⚡SPAN@20.71s: The term “Big Brother” originated in George Orwell’s dystopian novel *Nineteen Eighty-Four*, published in 1949⟧ 표현의 문학적 뿌리를 알아볼까. “빅 브라더”는 오웰의 *1984*에서 유래됐어. 출판된 해는 천구백사십구 년이야.
+[ 28.65s][user ] 천구백사십구 년, 맞아요. 그런데 오웰이 그걸 생각해 낸 데 특별한 영감이 있었나요?
+[ 34.49s][moshi] 오웰은 자신의 경험과 전체주의 정권에 대한 관찰을 바탕으로 그걸 그린 거야.
+[ 40.42s][user ] 영국 귀족에 대한 이야기를 들은 것 같아요—
+[ 42.71s][moshi] ⟨ret@42.63s⟩ 지금 중요한 역사적 ⟦⚡SPAN@44.47s: Orwell’s concept of Big Brother was influenced by the prevalence of posters during World War II featuring the ⟧ 맥락을 짚고 있네. 오웰의 “빅 브라더”는 “나라가 당신을 필요로 합니다”라고 쓰인 전시 포스터에서 영향을 받았어.
+[ 51.69s][user ] 선전 포스터요? 그게 말이 되네요.
+[ 53.77s][moshi] 맞아. 어디에나 있는 이미지들은 끊임없는 감시라는 느낌을 줬어.
+[ 58.32s][user ] 그게 실제로 귀족에 대한 의미였을까요…
+[ 61.16s][user ] …아니면 나중에 사람들이 그렇게 해석한 것일까요?
+[ 64.25s][moshi] 날카로운 질문인데. 계속 해석될 수 있는 문제야.
+[ 68.32s][moshi] ⟨ret@68.08s⟩ 상징은 여러 ⟦⚡SPAN@69.76s: Critics suggest the "Big Brother" figure also reflects Orwell's observations of Joseph Stalin’s cult of person⟧ 가지 해석이 가능해. 어떤 비평가들은 “빅 브라더”를 스탈린의 개인 숭배와 선전에서의 끊임없는 존재감과 연결시키기도 해.
+[ 79.17s][user ] 스탈린… 알겠어요, 그게 책의 억압적인 분위기에 딱 맞네요.
+[ 83.75s][moshi] 그래. 오웰은 견제받지 않는 권력의 위험성에 대해 깊이 우려했어.
+[ 90.36s][user ] 단 하나의 문구가 그렇게 많은 의미를 담게 된다는 게 놀랍지 않아요?
+[ 94.66s][moshi] 그건 문학이 우리 세계에 대한 이해를 형성하는 힘을 보여주는 거야.

@@ -1,63 +1,55 @@
 # v3_selfc_08_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 프리미엄 커피 원두 상품 만들어 줘.
-     2.09s  <ret> 발화 (turn1 첫 프레임)
-     2.33s  agent 발화 시작: <ret> 네, 상품을 만들어 드렸습니다. 프리미엄 커피 원두는 15달러 99센트에 판매되고 있습니다.
-     2.40s  user  발화 끝
-     4.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.97s]: (tool result) A product named "premium coffee beans" was created with 
-     7.79s  agent 발화 끝
-     8.25s  user  발화 시작: 그 상품 정보 다시 보여 줘.
-     9.92s  <ret> 발화 (turn3 첫 프레임)
-    10.08s  agent 발화 시작: <ret> 네, 쉽게 다시 불러 드릴 수 있습니다. 커피 원두는 15달러 99센트이고, 재고가 있습니다.
-    10.19s  user  발화 끝
-    10.96s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.24s]: (tool result) The product "premium coffee beans" has a price of $15.99
-    18.20s  agent 발화 끝
-    18.38s  user  발화 시작: 좋아. 20% 할인 행사 해 줘.
-    20.38s  <ret> 발화 (turn5 첫 프레임)
-    20.68s  user  발화 끝
-    20.70s  agent 발화 시작: <ret> 네, 판매 촉진을 위해 좋은 생각인 것 같습니다. 커피 원두에 20% 할인이 적용되었고, 2024
-    22.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.95s]: (tool result) A 20% discount promotion was created for "premium coffee
-    30.80s  agent 발화 끝
-    30.83s  user  발화 시작: 그 행사 3월 22일까지 연장할 수 있어?
-    33.17s  <ret> 발화 (turn7 첫 프레임)
-    33.57s  agent 발화 시작: <ret> 네, 행사 종료 날짜를 조정해 드릴 수 있습니다. 커피 원두의 행사 종료 날짜는 이제 2024년 
-    33.75s  user  발화 끝
-    35.09s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.34s]: (tool result) The promotion for "premium coffee beans" was updated to 
-    42.79s  agent 발화 끝
-    43.02s  user  발화 시작: 그 원두 재고는 얼마나 남아 있어?
-    45.50s  agent 발화 시작: 현재—
-    45.75s  user  발화 끝
-    46.46s  <ret> 발화 (turn10 첫 프레임)
-    46.62s  agent 발화 시작: <ret> 네, 재고를 확인하는 것은 좋은 질문입니다. 프리미엄 커피 원두는 현재 150개가 남아 있습니다.
-    46.65s  agent 발화 끝
-    48.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.75s]: (tool result) There are 150 units of "premium coffee beans" currently 
-    53.48s  agent 발화 끝
-    53.54s  user  발화 시작: 음. 알았어.
-    54.96s  user  발화 끝
-    55.26s  agent 발화 시작: 네, 마케팅과 관련해서, 혹시 생각해 보신 게 있으신가요— 에티오피아 커피 협동조합과 함께 일해 본 적이 있
-    69.92s  agent 발화 끝
-    70.34s  user  발화 시작: 흥미롭네. 에티오피아 커피 농장 사진 좀 찾아 줘.
-    74.09s  <ret> 발화 (turn14 첫 프레임)
-    74.27s  user  발화 끝
-    74.41s  agent 발화 시작: <ret> 네, 사진을 찾아 드릴 수 있습니다. 에티오피아 커피 농장 사진 12장을 찾았고, URL을 확인하
-    75.45s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.33s]: (tool result) Found 12 images of Ethiopian coffee farms: [image URLs 1
-    83.05s  user  발화 시작: 처음 세 개 URL 보내 줘.
-    83.08s  agent 발화 끝
-    85.02s  <ret> 발화 (turn16 첫 프레임)
-    85.22s  user  발화 끝
-    85.42s  agent 발화 시작: <ret> 네, 바로 보내 드리겠습니다. 처음 세 개의 이미지 URL을 이메일 주소로 보냈습니다.
-    86.62s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.62s]: (tool result) URLs "URL1", "URL2", and "URL3" were sent to your regist
-    91.63s  agent 발화 끝
-    92.84s  user  발화 시작: 시다모 지역의 연평균 강수량은 얼마야?
-    95.04s  <ret> 발화 (turn18 첫 프레임)
-    95.36s  agent 발화 시작: <ret> 네, 시다모 지역은 커피 재배에 필수적인 꾸준한 강수량으로 유명합니다.
-    95.56s  user  발화 끝
-    97.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: <ret> The Sidamo region receives an average annual rainfall of 1,500 m
-   100.50s  agent 발화 시작: 네, 시다모 지역은 연간 평균 1500밀리미터의 강수량을 기록합니다.
-   100.54s  agent 발화 끝
-   105.36s  agent 발화 끝
-   105.39s  user  발화 시작: 엄청 많네.
-   106.40s  agent 발화 시작: 네, 꾸준한 습도는 원두의 복잡한 풍미에 기여합니다.
-   106.64s  user  발화 끝
-   110.75s  agent 발화 끝
+     0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 보여 줘.
+     4.49s  <ret> 발화 (turn1 첫 프레임)
+     4.73s  agent 발화 시작: <ret> 네, 버스 좌석 상황을 확인해 드릴게요. 5월 10일에 출발하는 버스가 두 대 있는데, 가격은 각
+     4.81s  user  발화 끝
+     6.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) There are two buses available on May tenth: one departin
+    14.27s  agent 발화 끝
+    14.73s  user  발화 시작: 오전 8시 거 괜찮은 것 같아. 그걸로 예약해 줘.
+    18.27s  <ret> 발화 (turn3 첫 프레임)
+    18.43s  agent 발화 시작: <ret> 네, 해당 출발 시간으로 예약을 완료해 드렸습니다. 예약 번호는 BX8729이고, 세 명으로 예약
+    18.57s  user  발화 끝
+    19.31s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.93s]: (tool result) Your booking is confirmed: confirmation number is BX8729
+    27.00s  agent 발화 끝
+    27.23s  user  발화 시작: 좋네. 음, 그 버스 수하물 규정은 어떻게 돼?
+    30.22s  <ret> 발화 (turn5 첫 프레임)
+    30.54s  agent 발화 시작: <ret> 여행 준비에 관해 좋은 질문이세요— 각 승객은 무게가 50파운드 이하인 휴대 수하물 하나와 위탁 
+    30.60s  user  발화 끝
+    32.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.81s]: (tool result) Each passenger is allowed one carry-on bag and one check
+    36.07s  user  발화 시작: 응.
+    36.56s  user  발화 끝
+    39.58s  agent 발화 끝
+    39.59s  user  발화 시작: 버스에 와이파이 있어?
+    40.58s  <ret> 발화 (turn8 첫 프레임)
+    40.98s  agent 발화 시작: <ret> 네, 승객분들이 이동 중에도 연결 상태를 유지할 수 있습니다. 버스에 와이파이가 제공되며, 속도는
+    41.19s  user  발화 끝
+    42.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.43s]: (tool result) Wi-Fi is available on the Chicago to Denver bus, with a 
+    50.48s  agent 발화 끝
+    50.68s  user  발화 시작: 알아두면 좋네. 아, 화장실도 있나?
+    53.87s  user  발화 시작: 음식은 살 수 있어?
+    54.05s  user  발화 끝
+    55.30s  user  발화 끝
+    55.30s  agent 발화 시작: 네, 승객 편의를 위해 버스에 화장실이 마련되어 있습니다. —
+    59.73s  <ret> 발화 (turn12 첫 프레임)
+    59.79s  agent 발화 끝
+    59.89s  agent 발화 시작: <ret> 음료와 음식에 대해서도 확인해 드릴게요. 샌드위치, 감자칩, 탄산음료 등 간식과 음료를 구매할 수
+    61.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.55s]: (tool result) Snacks and drinks are available for purchase on the bus,
+    67.86s  agent 발화 끝
+    67.95s  user  발화 시작: 좋네. 덴버 미술관에 대해서는…
+    70.58s  agent 발화 시작: 덴버는 훌륭한 미술관이 여러 곳 있는 멋진 예술 도시예요.
+    70.73s  user  발화 끝
+    75.02s  agent 발화 끝
+    75.11s  user  발화 시작: 콜럼버스 이전 미술품 컬렉션이 제일 좋은 곳은 어디야?
+    79.20s  <ret> 발화 (turn16 첫 프레임)
+    79.28s  user  발화 끝
+    79.52s  agent 발화 시작: <ret> 덴버 미술관이 콜럼버스 이전 미술품 컬렉션으로 유명합니다. 덴버 미술관에는 콜럼버스 이전 유물이 
+    81.04s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.24s]: (tool result) The Denver Art Museum’s pre-Columbian collection contain
+    88.13s  user  발화 시작: 와, 굉장하네. 버스 정류장에서 얼마나 떨어져 있어?
+    88.42s  agent 발화 끝
+    91.74s  <ret> 발화 (turn18 첫 프레임)
+    92.14s  agent 발화 시작: <ret> 거리를 확인하고 이동 시간을 알려 드릴게요.
+    92.20s  user  발화 끝
+    92.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.44s]: (tool result) The Denver Art Museum is 2.5 miles from the Denver Bus S
+    94.59s  agent 발화 끝

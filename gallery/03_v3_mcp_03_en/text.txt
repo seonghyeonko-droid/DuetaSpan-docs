@@ -1,16 +1,11 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Take me to the BBC news page, showing ⟨ret@2.70s⟩ the browser.
-[  3.09s][moshi] Certainly, ⟦⚡SPAN@3.66s: (tool result) The browser is now displaying the BBC News homepage.⟧ navigating to current events is a good starting point. The BBC News website is now open in your browser, as requested.
-      CALL: {"function": "puppeteer_navigate", "arguments": {"url": "https://www.bbc.com/news"}}
-[ 12.49s][user ] Is it loading quickly?
-[ 14.20s][moshi] It should be loading quite efficiently, yes. Bandwidth is generally good at the moment.
-[ 19.67s][user ] Can you search that page for articles about ⟨ret@22.93s⟩ Nigeria?
-[ 23.33s][moshi] A focused search ⟦⚡SPAN@24.93s: (tool result) The search found seventeen articles matching “Nigeria”.⟧ within the BBC is an excellent way to proceed. Seventeen articles relating to Nigeria were found on the BBC News website.
-      CALL: {"function": "puppeteer_search", "arguments": {"url": "https://www.bbc.com/news", "query": "Nigeria"}}
-[ 33.32s][user ] Hmm, that's a lot. Could you read me the headlines of the first three?
-[ 37.81s][moshi] I’m afraid I cannot *read* them to you in the sense of vocalizing the text. However, I can summarize the first three headlines.
-[ 47.94s][user ] Oh, right. Sorry. Summarize them then.
-[ 50.51s][moshi] The first discusses economic challenges, the second reports on recent elections, and the third covers security concerns in the north.
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.77s⟩ iframe.
+[  3.17s][moshi] ⟦⚡SPAN@3.73s: (tool result) The checkout button in the shopping cart iframe was successfully clicked.⟧ Alright, let’s get your order moving forward then. I’ve initiated the checkout process for you, as requested.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout button", "frame": "shopping cart"}}
+[  7.23s][user ] «backchannel» Mm-hmm.
+[ 11.42s][user ] What’s the total cost of everything in my cart?
+[ 14.19s][moshi] ⟨ret@14.13s⟩ Checking the order ⟦⚡SPAN@15.81s: (tool result) Your cart total is $125.50, including shipping and taxes.⟧ total now, just a moment. The current total for your order is one hundred and twenty-five dollars and fifty cents.
+      CALL: {"function": "get_cart_total", "arguments": {}}

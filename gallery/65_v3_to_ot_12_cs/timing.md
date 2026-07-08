@@ -1,27 +1,25 @@
 # v3_to_ot_12_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 사형에 대해 읽다가 궁금해졌는데, 영국이 공식적으로 사형을 폐지한 게 언제야?
-     4.97s  <ret> 발화 (turn1 첫 프레임)
-     5.37s  agent 발화 시작: <ret> 음, 그런 문제에 대해 오랜 역사를 생각해 보면 무거운 질문이네요.
-     5.42s  user  발화 끝
-     6.65s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.35s]: The death penalty for all crimes was abolished in the United Kingdom i
-     9.55s  agent 발화 시작: 영국에서는 구십팔년에 사형이 완전히 폐지됐습니다.
-     9.72s  agent 발화 끝
-    12.90s  user  발화 시작: 구십팔년이라… 생각보다 최근이네, 진짜. 점진적으로 진행된 거야, 아니면 그냥—
-    12.96s  agent 발화 끝
-    18.43s  agent 발화 시작: 사실 수십 년에 걸쳐 진화한 과정이었습니다.
-    18.69s  user  발화 끝
-    20.41s  user  발화 시작: 살인죄 같은 특정 범죄에 대해서는 그 전에 먼저 폐지했어?
-    21.17s  agent 발화 끝
-    24.22s  <ret> 발화 (turn6 첫 프레임)
-    24.38s  agent 발화 시작: <ret> 네, 폐지는 단계적으로 이루어졌습니다.
-    24.62s  user  발화 끝
-    25.58s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.67s]: Murder was removed from the list of capital crimes in 1965, with a per
-    26.85s  agent 발화 시작: 살인은 육십오년에 사형 대상에서 제외됐고, 육십구년에 영구적으로 확정됐습니다.
-    27.05s  agent 발화 끝
-    33.01s  agent 발화 끝
-    34.30s  user  발화 시작: 그러니까, 사 년 동안 살인에 대해서는 다시 사형을 부활시킬 수 있는 기간이었던 거야? 그거 좀 불안정해 보
-    40.82s  agent 발화 시작: 불안정하다는 표현이 딱 맞네요. 그 몇 년 동안 법적인 상황이 확실히 불안정했을 거라고 생각합니다.
-    40.93s  user  발화 끝
-    46.61s  agent 발화 끝
+     0.00s  user  발화 시작: 마침 궁금했는데요, 마이클 잭슨의 “Beat It” 기타 솔로를 실제로 연주한 사람이 누구였는지요. 계속 마
+     7.16s  <ret> 발화 (turn1 첫 프레임)
+     7.56s  agent 발화 시작: <ret> 네, 꽤 인기 있는 질문이네요. 에디 반 헤일런이 그 상징적인 기타 솔로를 연주한 것으로 알려져 
+     7.60s  user  발화 끝
+     8.20s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.13s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+    14.37s  agent 발화 끝
+    14.82s  user  발화 시작: 와, 정말인가요? 잭슨의 정규 밴드 멤버 중 한 명이라고 생각했어요.
+    19.72s  agent 발화 시작: 잭슨이 이미 떠오르는 스타였던 반 헤일런을 그 곡에 참여시키기 위해 노력한 건 대단한 일이었어요.
+    19.87s  user  발화 끝
+    26.20s  user  발화 시작: 저기, 혹시 쓰레기 버리셨어요?
+    26.20s  agent 발화 끝
+    28.62s  user  발화 시작: 죄송해요. 그런데 반 헤일런이 잭슨과 함께 작업하는 것을 주저했는지 궁금해요. 이야기가 있던데요.
+    28.69s  user  발화 끝
+    34.94s  <ret> 발화 (turn6 첫 프레임)
+    35.17s  agent 발화 시작: <ret> 네, 처음에는 약간의 망설임이 있었어요. 반 헤일런은 처음에는 “Beat It”에 기여한 것에 대
+    35.39s  user  발화 끝
+    36.38s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.05s]: Eddie Van Halen initially refused payment for his work on “Beat It”.
+    45.60s  user  발화 시작: 정말 멋지네요. 왜 돈을 받고 싶지 않았는지 설명한 적이 있나요?
+    45.84s  agent 발화 끝
+    50.28s  user  발화 끝
+    50.51s  agent 발화 시작: 그는 그 프로젝트가 재미있었고, 잭슨이 록 기타리스트와 협업하려는 의지가 있다는 점을 존경했다고 말했어요.
+    57.60s  agent 발화 끝

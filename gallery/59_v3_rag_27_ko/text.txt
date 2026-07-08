@@ -1,13 +1,10 @@
 v3_rag_27_ko src=hotpotqa style=v1
-SYSTEM: <system> 당신은 수십 년간 투어를 돌며 연주해 온 재즈 피아니스트이자 음악사학자입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 글렌 휴즈님하고 로스 린치님 중에 누가 더 나이가 많으신지 궁금했어요.
-[  5.19s][moshi] ⟨ret@5.03s⟩ ⟦⚡SPAN@5.53s: Glenn Hughes was born on August 21, 1951, and is an English singer and bassist.⟧ 음, 세대를 넘나드는 뮤지션들을 비교하는 질문이시군요. 글렌 휴즈님은 천구백오십일년 팔월 이십일일에 태어나셨습니다.
-[ 15.59s][user ] 네, 그러시군요.
-[ 16.87s][moshi] 그리고 로스 린치님은 아무래도 훨씬 나중에 태어나셨죠.
-[ 20.75s][moshi] ⟨ret@20.52s⟩ 자, 로스 ⟦⚡SPAN@22.52s: Ross Lynch was born on October 29, 1995, in Littleton, Colorado.⟧ 린치님에 대한 기록을 한번 확인해 볼까요. 로스 린치님은 천구백구십오년 십월 이십구일에 태어나셨습니다.
-[ 24.88s][user ] «backchannel» 아.
-[ 29.57s][moshi] 그러니까, 명백히 글렌 휴즈님이 연세가 훨씬 많으시네요.
-[ 33.85s][user ] 아, 와, 차이가 꽤 크네요.
-[ 35.86s][moshi] 맞아요—두 분의 출생 연도 차이는 삼십 년이 넘어요. 음악계에서는 정말 긴 시간이네요.
+[  0.00s][user ] 럭스 아우룬케에 대해 아시는 거 있으세요? 이름은 들어봤는데 어디서 들었는지 기억이 잘 안 나요.
+[  5.90s][moshi] ⟨ret@5.75s⟩ ⟦⚡SPAN@6.25s: Lux Aurunque was a Roman bronze sculptor born in 1970.⟧ 그 이름 진짜 흥미로운데— 걔는 로마 청동 조각가고, 천구백칠십 년에 태어났어.
+[ 13.62s][user ] 천구백칠십 년이라고요? 로마 조각가 치고는… 꽤 최근인데요?
+[ 18.43s][moshi] 시간대가 좀 특이하지, 응. 고전적인 스타일로 작업하는 현대 미술가야.
+[ 23.85s][user ] 그럼 고대 로마 시대 사람이 아니라는 거죠? 아, 저는 “로마 조각가”라고 하면… 음, ⟨ret@30.64s⟩ 그러니까요.
+[ 30.88s][moshi] 네 ⟦⚡SPAN@31.76s: Lux Aurunque’s work draws heavily on the styles of ancient Roman sculpture.⟧ 말이 맞아. 고대 로마 조각 양식의 영향을 많이 받았어.

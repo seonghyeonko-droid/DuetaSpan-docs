@@ -1,13 +1,16 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I want to find a Thai restaurant in Chicago, Illinois.
-[  2.83s][moshi] ⟨ret@2.75s⟩ Let's see what Chicago ⟦⚡SPAN@4.67s: (tool result) Thai restaurants in Chicago include Thai Dang, Star of Siam, and Arun's Thai Restaurant.⟧ has to offer… I found three Thai restaurants in Chicago: Thai Dang, Star of Siam, and Arun's Thai Restaurant.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Chicago", "state": "Illinois", "cuisine": "Thai"}}
-[ 12.81s][user ] Oh, Thai Dang sounds good. What’s their ⟨ret@15.65s⟩ address?
-[ 15.88s][moshi] ⟦⚡SPAN@16.15s: (tool result) Thai Dang is located at 4339 N Broadway, Chicago, IL 60613.⟧ Certainly, I can look that up for you… Thai Dang is at 4339 North Broadway, Chicago, Illinois, 60613.
-      CALL: {"function": "Restaurants_2_GetRestaurantDetails", "arguments": {"restaurant_name": "Thai Dang", "city": "Chicago", "state": "Illinois"}}
-[ 24.45s][user ] Can you make a reservation for two there tomorrow at seven ⟨ret@27.86s⟩ pm?
-[ 28.18s][moshi] Happy ⟦⚡SPAN@29.06s: (tool result) Your reservation for two at Thai Dang tomorrow at 7:00 PM is confirmed; reservation ID is RD7892⟧ to assist with that booking… You’re all set! I’ve booked a table for two at Thai Dang tomorrow at seven pm. Your ID is RD7892.
-      CALL: {"function": "Restaurants_2_ReserveTable", "arguments": {"restaurant_name": "Thai Dang", "date": "tomorrow", "time": "7:00 PM", "party_size": "2"}}
+[  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
+[  4.51s][moshi] ⟨ret@4.43s⟩ Let’s ⟦⚡SPAN@5.47s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust your browser settings— Excellent, I have updated your browser’s user agent as requested.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
+[ 11.66s][user ] And now, could you check if that change was detected on example dot ⟨ret@15.39s⟩ com?
+[ 15.54s][moshi] Certainly, ⟦⚡SPAN@16.43s: (tool result) The reported user agent on example.com is MyCustomBrowser version 10.5.⟧ let’s verify that update— It appears example dot com is now recognizing your custom user agent.
+      CALL: {"function": "playwright_get_user_agent", "arguments": {"url": "example.com"}}
+[ 23.02s][user ] Oh, good. Um, could you find me reviews for a bakery near me—
+[ 26.86s][moshi] [interrupting] …that specializes in croissants?
+[ 30.06s][moshi] ⟨ret@29.74s⟩ I ⟦⚡SPAN@30.86s: (tool result) Le Petit Croissant is 0.7 miles away with 4.8 stars from 125 reviews.⟧ can certainly locate bakeries— Le Petit Croissant is nearby, with very positive reviews and a four point eight-star rating.
+      CALL: {"function": "google_search", "arguments": {"query": "croissant bakery near me", "location": "current"}}
+[ 38.55s][user ] Oh, that sounds lovely. Could you reserve a table for two there tomorrow at ten am?
+[ 44.06s][moshi] Let’s

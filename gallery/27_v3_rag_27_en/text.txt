@@ -1,13 +1,10 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, who’s the older one—Glenn Hughes or Ross ⟨ret@3.92s⟩ Lynch?
-[  4.15s][moshi] That’s a good ⟦⚡SPAN@5.92s: Glenn Hughes was born on August 21, 1951, and is an English singer and bassist.⟧ question, comparing musicians across generations. Glenn Hughes was born on August twenty-first, nineteen fifty-one.
-[ 12.45s][user ] Right.
-[ 13.17s][moshi] And Ross Lynch, of course, came along quite a bit later.
-[ 16.30s][moshi] ⟨ret@16.22s⟩ Let’s ⟦⚡SPAN@17.18s: Ross Lynch was born on October 29, 1995, in Littleton, Colorado.⟧ see what the records show about young Ross. Ross Lynch was born on October twenty-ninth, nineteen ninety-five.
-[ 19.46s][user ] «backchannel» Yeah, yeah.
-[ 23.11s][moshi] So, clearly Glenn Hughes has a considerable lead in years.
-[ 26.72s][user ] Oh, wow, that’s a pretty big difference.
-[ 29.59s][moshi] Indeed—over thirty years separate their births, a lifetime in music.
+[  0.00s][user ] Do you know anything about Lux Aurunque? I’ve heard the name but can’t place ⟨ret@4.11s⟩ it.
+[  4.33s][moshi] That’s a ⟦⚡SPAN@5.47s: Lux Aurunque was a Roman bronze sculptor born in 1970.⟧ fascinating name, actually— He was a Roman bronze sculptor, born in nineteen seventy.
+[  9.90s][user ] Nineteen seventy? That’s… recent, isn’t it? For a Roman sculptor?
+[ 14.85s][moshi] It is a rather unusual timeframe, yes. He’s a contemporary artist working in a classical style.
+[ 20.62s][user ] So he isn’t, like, ancient Roman? Uh, I always assumed “Roman sculptor” meant… well, you know.
+[ 27.02s][moshi] ⟨ret@26.95s⟩ You’re right to question ⟦⚡SPAN@28.71s: Lux Aurunque’s work draws heavily on the styles of ancient Roman sculpture.⟧ that— His work is heavily influenced by ancient Roman sculptural styles.

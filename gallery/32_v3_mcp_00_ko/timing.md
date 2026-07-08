@@ -1,27 +1,21 @@
 # v3_mcp_00_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 파리에서 4월 1일부터 4월 5일까지, 오후 2시 30분에 픽업하는 해치백 좀 찾아 줘.
-     7.10s  <ret> 발화 (turn1 첫 프레임)
-     7.42s  agent 발화 시작: <ret> 네, 알아보고 있어요—여행 시작 전에 차를 찾는 건 언제나 좋은 시작이죠. 유로프카에서 르노 클리
-     7.55s  user  발화 끝
-     8.71s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.77s]: (tool result) A Renault Clio is available for seventy-eight euros per 
-    20.73s  agent 발화 끝
-    20.94s  user  발화 시작: 음, 하루에 78유로는 좀 비싸네. 더 싼 거 있어?
-    25.09s  <ret> 발화 (turn3 첫 프레임)
-    25.48s  agent 발화 시작: <ret> 가격은 당연히 달라지죠—수요와 렌터카 회사에 따라 달라져요.
-    25.61s  user  발화 끝
-    26.29s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.72s]: (tool result) A Peugeot 208 is available for fifty-five euros per day 
-    30.18s  agent 발화 시작: 식스트에서 푸조 208을 하루에 55유로에 제공하고 있는데, 원하시는 가격에 딱 맞을 거예요.
-    30.20s  agent 발화 끝
-    36.45s  user  발화 시작: 55유로면 훨씬 좋네. 좋아, 푸조로 예약해 줘.
-    36.94s  agent 발화 끝
-    41.02s  <ret> 발화 (turn6 첫 프레임)
-    41.17s  agent 발화 시작: <ret> 잘 됐네요—좋은 가격에 예약하신 건 정말 만족스러워요. 푸조 208이 식스트를 통해 예약되었고, 
-    41.30s  user  발화 끝
-    42.70s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.35s]: (tool result) Your Peugeot 208 is reserved with Sixt; confirmation num
-    52.77s  agent 발화 끝
-    53.97s  user  발화 시작: 좋아! 고마워.
-    55.58s  user  발화 끝
-    55.63s  agent 발화 시작: 천만에요. 제가 차를 빌렸던 적이 있었는데…
-    58.86s  agent 발화 끝
+     0.00s  user  발화 시작: 에펠탑의 좌표를 알려 주실 수 있을까요?
+     2.84s  <ret> 발화 (turn1 첫 프레임)
+     3.15s  agent 발화 시작: <ret> 네, 명소 위치를 찾는 건 제가 자주 하는 일인데요. 에펠탑의 좌표는 북위 48.8584도, 동경
+     3.38s  user  발화 끝
+     4.12s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.72s]: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.
+    13.86s  agent 발화 끝
+    14.01s  user  발화 시작: 알겠습니다. 혹시 그 좌표 근처에 있는 호텔을 찾아 주실 수 있을까요?
+    18.31s  <ret> 발화 (turn3 첫 프레임)
+    18.70s  agent 발화 시작: <ret> 물론이죠, 근처에 머물 곳을 찾는 건 좋은 생각이에요. 호텔 플라자 아테네는 천오백 달러이고, 호
+    18.83s  user  발화 끝
+    19.51s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.45s]: (tool result) Hotel Plaza Athénée is 0.7 miles away, priced at $1,500 
+    27.83s  agent 발화 끝
+    28.64s  user  발화 시작: 플라자 아테네는 괜찮아 보이네요. 오늘 밤에 거기로 방을 예약해 주실 수 있을까요?
+    35.01s  <ret> 발화 (turn5 첫 프레임)
+    35.16s  agent 발화 시작: <ret> 좋은 선택이세요, 바로 예약을 진행해 드릴게요.
+    35.36s  user  발화 끝
+    36.69s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.37s]: (tool result) Your reservation at Hotel Plaza Athénée is confirmed for
+    38.53s  agent 발화 끝

@@ -1,38 +1,23 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about historical diseases… and it made me wonder, where is leprosy most common ⟨ret@6.24s⟩ today?
-[  6.55s][moshi] That’s a ⟦⚡SPAN@7.76s: India accounts for more than half of the world’s leprosy cases.⟧ very important question, considering global health. Currently, India reports more than fifty percent of new leprosy cases globally.
-[ 15.94s][user ] That’s… surprising. I always thought it was a disease of the past.
-[ 20.49s][moshi] It's a misconception many share; persistent poverty and limited access to healthcare contribute to its continued presence.
-[ 28.40s][user ] So, is it still a major problem in India?
-[ 31.89s][moshi] ⟨ret@31.65s⟩ It ⟦⚡SPAN@32.77s: In 2023, India reported 75,000 new cases of leprosy.⟧ remains a significant public health concern. India recorded seventy-five thousand new leprosy cases in the year two thousand and twenty-three.
-[ 40.31s][user ] Seventy-five thousand… wow.
-[ 43.14s][moshi] It’s a substantial number, though detection and treatment efforts are ongoing.
-[ 47.62s][user ] Are there other countries with high rates as well?
-[ 50.41s][moshi] ⟨ret@50.34s⟩ Yes, ⟦⚡SPAN@51.05s: Brazil and Indonesia follow India as countries with the highest leprosy rates.⟧ several other nations also face challenges. Brazil and Indonesia are the next most affected countries after India.
-[ 58.40s][user ] What about Africa? I’ve heard it’s a problem there ⟨ret@61.91s⟩ too.
-[ 62.23s][moshi] It ⟦⚡SPAN@63.11s: Several African countries, including the Democratic Republic of the Congo, have high leprosy rates.⟧ is, particularly in certain regions.
-[ 65.14s][moshi] The Democratic Republic of the Congo and other African nations struggle with leprosy.
-[ 70.47s][user ] Is it treatable? I mean, can it be cured?
-[ 73.42s][moshi] Absolutely, with early diagnosis and multidrug therapy.
-[ 78.11s][user ] Multidrug therapy… what does that ⟨ret@80.89s⟩ involve?
-[ 81.04s][moshi] It's ⟦⚡SPAN@81.93s: Multidrug therapy for leprosy typically involves dapsone, rifampicin, and clofazimine.⟧ a combination of antibiotics… The standard treatment uses dapsone, rifampicin, and clofazimine antibiotics.
-[ 89.67s][user ] Those are… long names.
-[ 92.27s][moshi] They are, and adherence to the full course is vital to prevent resistance.
-[ 97.01s][user ] But if you catch it early, you can fully recover?
-[100.01s][moshi] «interrupted» Yes, early intervention is absolutely key—
-[102.66s][user ] «interrupts_prev» But what about the stigma? I read something about people being ostracized…
-[107.56s][moshi] That's a tragically persistent problem. Historically, and even now, misinformation fuels fear and discrimination.
-[116.61s][user ] That's awful. So even with a cure, people still suffer.
-[121.21s][moshi] Unfortunately, yes. The social consequences can be as debilitating as the disease itself.
-[127.79s][user ] Is there anything being done to combat the stigma?
-[130.92s][moshi] Many organizations are working on education and advocacy programs to challenge misconceptions.
-[138.44s][user ] That’s good to hear. What about prevention?
-[141.68s][moshi] ⟨ret@141.44s⟩ Prevention strategies focus ⟦⚡SPAN@143.44s: BCG vaccination offers some protection against leprosy, but its effectiveness is limited.⟧ on early detection and treatment… The BCG vaccine provides limited protection against developing leprosy.
-[151.25s][user ] Limited protection……
-[153.37s][user ] …so it's not a guaranteed safeguard?
-[155.74s][moshi] It’s not, but it can reduce the severity of the disease in some cases.
-[159.99s][user ] So, focusing on finding cases early is still the best approach?
-[164.87s][moshi] Precisely. Proactive case finding and accessible treatment remain the most effective strategies.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking… where did the phrase “big brother” actually come from?
+[  7.61s][moshi] That’s a fascinating question, one that touches on the power of language and social commentary.
+[ 13.15s][user ] …it’s just, it feels so ingrained now, you know?
+[ 16.83s][user ] …like, everyone understands the implication, but what’s the ⟨ret@21.03s⟩ origin?
+[ 21.19s][moshi] Let’s explore the ⟦⚡SPAN@23.03s: The term “Big Brother” originated in George Orwell’s dystopian novel *Nineteen Eighty-Four*, published in 1949⟧ literary roots of that phrase. “Big Brother” comes from Orwell’s *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 31.01s][user ] Nineteen Eighty-Four, right. But was Orwell inspired by something specific when he came up with it?
+[ 37.13s][moshi] Orwell was drawing on his experiences and observations of totalitarian regimes.
+[ 42.84s][user ] I’ve heard something about the British aristocracy—
+[ 45.78s][moshi] ⟨ret@45.63s⟩ You’re ⟦⚡SPAN@46.67s: Orwell’s concept of Big Brother was influenced by the prevalence of posters during World War II featuring the ⟧ touching on a relevant historical context. Orwell’s “Big Brother” was influenced by wartime posters saying “Your Country Needs You.”
+[ 53.81s][user ] So, propaganda posters? That makes a lot of sense.
+[ 57.77s][moshi] Absolutely. The omnipresent imagery conveyed a sense of constant surveillance.
+[ 63.11s][user ] But did he actually *mean* it to be about the aristocracy…
+[ 67.53s][user ] …or is that just something people read into it later?
+[ 71.04s][moshi] That’s a perceptive question. It’s a matter of ongoing interpretation.
+[ 75.65s][moshi] ⟨ret@75.50s⟩ The symbolism is ⟦⚡SPAN@77.26s: Critics suggest the "Big Brother" figure also reflects Orwell's observations of Joseph Stalin’s cult of person⟧ certainly open to multiple readings. Some critics link “Big Brother” to Stalin’s cult of personality, and his constant presence in propaganda.
+[ 85.54s][user ] Stalin… okay, that fits the oppressive vibe of the book perfectly.
+[ 90.11s][moshi] Indeed. Orwell was deeply concerned with the dangers of unchecked power.
+[ 95.60s][user ] It's amazing how a single phrase can become so loaded with meaning, isn’t it?
+[100.68s][moshi] It speaks to the power of literature to shape our understanding of the world.

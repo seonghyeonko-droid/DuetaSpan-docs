@@ -1,14 +1,13 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 사형에 대해 읽다가 궁금해졌는데, 영국이 공식적으로 사형을 폐지한 게 ⟨ret@4.97s⟩ 언제야?
-[  5.37s][moshi] 음, 그런 ⟦⚡SPAN@6.65s: The death penalty for all crimes was abolished in the United Kingdom in 1998.⟧ 문제에 대해 오랜 역사를 생각해 보면 무거운 질문이네요.
-[  9.55s][moshi] 영국에서는 구십팔년에 사형이 완전히 폐지됐습니다.
-[ 12.90s][user ] 구십팔년이라… 생각보다 최근이네, 진짜. 점진적으로 진행된 거야, 아니면 그냥—
-[ 18.43s][moshi] «interrupted» 사실 수십 년에 걸쳐 진화한 과정이었습니다.
-[ 20.41s][user ] «interrupts_prev» 살인죄 같은 특정 범죄에 대해서는 그 전에 먼저 ⟨ret@24.22s⟩ 폐지했어?
-[ 24.38s][moshi] 네, ⟦⚡SPAN@25.58s: Murder was removed from the list of capital crimes in 1965, with a permanent abolition following in 1969.⟧ 폐지는 단계적으로 이루어졌습니다.
-[ 26.85s][moshi] 살인은 육십오년에 사형 대상에서 제외됐고, 육십구년에 영구적으로 확정됐습니다.
-[ 34.30s][user ] 그러니까, 사 년 동안 살인에 대해서는 다시 사형을 부활시킬 수 있는 기간이었던 거야? 그거 좀 불안정해 보이는데.
-[ 40.82s][moshi] 불안정하다는 표현이 딱 맞네요. 그 몇 년 동안 법적인 상황이 확실히 불안정했을 거라고 생각합니다.
+[  0.00s][user ] 마침 궁금했는데요, 마이클 잭슨의 “Beat It” 기타 솔로를 실제로 연주한 사람이 누구였는지요. 계속 마음에 ⟨ret@7.16s⟩ 걸렸어요.
+[  7.56s][moshi] 네, ⟦⚡SPAN@8.20s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 꽤 인기 있는 질문이네요. 에디 반 헤일런이 그 상징적인 기타 솔로를 연주한 것으로 알려져 있습니다.
+[ 14.82s][user ] 와, 정말인가요? 잭슨의 정규 밴드 멤버 중 한 명이라고 생각했어요.
+[ 19.72s][moshi] 잭슨이 이미 떠오르는 스타였던 반 헤일런을 그 곡에 참여시키기 위해 노력한 건 대단한 일이었어요.
+[ 26.20s][user ] «to_other» 저기, 혹시 쓰레기 버리셨어요?
+[ 28.62s][user ] 죄송해요. 그런데 반 헤일런이 잭슨과 함께 작업하는 것을 주저했는지 궁금해요. 이야기가 ⟨ret@34.94s⟩ 있던데요.
+[ 35.17s][moshi] 네, ⟦⚡SPAN@36.38s: Eddie Van Halen initially refused payment for his work on “Beat It”.⟧ 처음에는 약간의 망설임이 있었어요. 반 헤일런은 처음에는 “Beat It”에 기여한 것에 대한 어떠한 보수도 거절했다고 합니다. 존경의 표시였던 것 같아요.
+[ 45.60s][user ] 정말 멋지네요. 왜 돈을 받고 싶지 않았는지 설명한 적이 있나요?
+[ 50.51s][moshi] 그는 그 프로젝트가 재미있었고, 잭슨이 록 기타리스트와 협업하려는 의지가 있다는 점을 존경했다고 말했어요.

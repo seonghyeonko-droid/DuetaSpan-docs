@@ -1,37 +1,13 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was wondering… when did the first Harry Potter book actually come out?
-[  5.00s][moshi] That’s a very popular question, naturally.
-[  7.39s][moshi] ⟨ret@6.99s⟩ Let’s ⟦⚡SPAN@7.95s: Harry Potter and the Philosopher's Stone was first published in the United Kingdom on 26 June 1997.⟧ see if I can recall— It was first published in the United Kingdom on the twenty-sixth of June, nineteen ninety-seven.
-[ 14.62s][user ] Hmm, okay, but I thought it came out in America much later. Is that right?
-[ 18.99s][moshi] You are absolutely correct to question that.
-[ 21.44s][moshi] ⟨ret@21.21s⟩ ⟦⚡SPAN@21.93s: Harry Potter and the Sorcerer's Stone was first published in the United States on September 1, 1998.⟧ It’s important to distinguish— It was first published in the United States on September first, nineteen ninety-eight.
-[ 29.36s][user ] September first… that’s quite a gap, isn’t it? A whole year!
-[ 33.84s][moshi] A significant delay, yes. Publishing schedules can be quite complex.
-[ 38.24s][moshi] ⟨ret@37.85s⟩ Let ⟦⚡SPAN@38.97s: Scholastic Corporation acquired the US rights to publish the Harry Potter series in 1997.⟧ me explain the difference— Scholastic Corporation acquired the US rights to publish the series in nineteen ninety-seven.
-[ 45.95s][user ] So Scholastic had it for a year before releasing it? Why the hold up?
-[ 50.61s][moshi] There were several considerations at play, I believe.
-[ 53.51s][moshi] ⟨ret@53.44s⟩ They ⟦⚡SPAN@54.08s: Scholastic spent a year re-editing and re-titling the book for the American market.⟧ needed to prepare— Scholastic spent a year re-editing and re-titling the book for the American market.
-[ 61.25s][user ] Re-titling? What did they change the title to?
-[ 64.79s][moshi] It was a fairly substantial change, actually.
-[ 67.41s][moshi] ⟨ret@67.02s⟩ ⟦⚡SPAN@67.52s: "Harry Potter and the Philosopher's Stone" was changed to "Harry Potter and the Sorcerer's Stone" for US audie⟧ The American edition— The title was changed to “Harry Potter and the Sorcerer’s Stone” for American audiences.
-[ 73.60s][user ] Sorcerer instead of Philosopher… that's interesting. Did they think American kids wouldn't understand "philosopher"?
-[ 80.33s][moshi] «interrupted» It was a marketing decision, primarily—
-[ 82.56s][moshi] ⟨ret@82.16s⟩ ⟦⚡SPAN@82.72s: Scholastic thought "sorcerer" would appeal more to American children than "philosopher."⟧ The publishers believed— Scholastic thought “sorcerer” would appeal more to American children than “philosopher”.
-[ 89.47s][user ] That makes a little sense, I guess. So, after the first book—
-[ 94.48s][moshi] «interrupted» After the initial success—
-[ 96.09s][moshi] ⟨ret@95.78s⟩ ⟦⚡SPAN@96.28s: Subsequent books in the series were published in both the UK and US nearly simultaneously.⟧ The subsequent releases— Subsequent books were published in both countries nearly simultaneously.
-[102.73s][user ] Nearly? So there were still some delays even then?
-[105.37s][moshi] «interrupted» There were occasional minor discrepancies—
-[108.02s][moshi] ⟨ret@107.94s⟩ It’s ⟦⚡SPAN@108.66s: Minor publication date differences occurred due to shipping and distribution logistics.⟧ not unusual— Minor publication date differences occurred due to shipping and distribution logistics.
-[114.34s][user ] Right, shipping makes sense. I wonder if that affected the hype at all…—
-[118.37s][moshi] «interrupted» It certainly could have—
-[119.45s][moshi] ⟨ret@119.38s⟩ The anticipation ⟦⚡SPAN@120.58s: The initial delay created significant anticipation and demand for the first book in the US.⟧ was— The initial delay created significant anticipation and demand for the first book.
-[126.81s][user ] But did J.K. Rowling know about all this, about the changes and the delays?
-[131.96s][moshi] «interrupted» Oh, absolutely—
-[133.06s][moshi] ⟨ret@132.75s⟩ ⟦⚡SPAN@133.47s: J.K. Rowling was consulted on the title change and remained involved in the US publishing process.⟧ She was certainly— J.K. Rowling was consulted on the title change and involved in the US process.
-[139.10s][user ] That's good to know she had some say in it. So, the Sorcerer’s Stone version is the one most Americans grew up with?
-[146.31s][moshi] Precisely. That’s the version that became iconic here.
-[149.99s][moshi] ⟨ret@149.91s⟩ ⟦⚡SPAN@150.47s: "Harry Potter and the Sorcerer's Stone" became the defining edition for the vast majority of American readers.⟧ It’s the edition— “Harry Potter and the Sorcerer’s Stone” became the defining edition for most American readers.
+[  0.00s][user ] So, I was reading about government agencies, and I’m curious… when was the Department of Veterans Affairs actually ⟨ret@7.11s⟩ created?
+[  7.42s][moshi] That’s ⟦⚡SPAN@8.15s: The Department of Veterans Affairs was established on July 21, 1930, under President Herbert Hoover.⟧ an interesting question, tracing the history of support— The Department of Veterans Affairs was established on July twenty-first, nineteen thirty, under President Hoover.
+[ 17.99s][user ] Nineteen thirty? That seems… relatively recent, doesn’t it? I thought veterans’ support went back much further than that.
+[ 26.59s][moshi] It does feel recent, considering the long history of soldiers needing care, but the structure evolved over time.
+[ 33.65s][user ] But what did they *do* before nineteen thirty? I— I mean, how were veterans helped before there was a ⟨ret@39.85s⟩ whole department?
+[ 40.24s][moshi] Before the ⟦⚡SPAN@41.45s: Prior to 1930, the Veterans Bureau, created in 1921, handled most veterans’ affairs and benefits.⟧ department’s formal creation, support was— Prior to nineteen thirty, the Veterans Bureau, created in nineteen twenty-one, handled most veterans’ affairs and benefits.
+[ 50.95s][user ] So, the Veterans Bureau *wasn’t* the same thing as the Department of Veterans Affairs then?
+[ 56.56s][moshi] «interrupted» No, it wasn’t—
+[ 57.86s][moshi] ⟨ret@57.47s⟩ The Veterans Bureau ⟦⚡SPAN@59.47s: The Veterans Bureau was a predecessor agency, later expanded and reorganized into the Department of Veterans A⟧ was a predecessor agency, later expanded and reorganized into the Department in nineteen thirty.
