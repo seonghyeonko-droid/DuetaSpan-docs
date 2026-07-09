@@ -85,16 +85,16 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  4.76s][moshi] ⟨ret@4.74s⟩ I found three pictures ⟦⚡SPAN@6.74s: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Nice_Beach.png", and "Lyon_Food_Market.jpeg".⟧ from your France trip last year: Paris, Nice, and Lyon.
+[  4.88s][moshi] ⟨ret@4.84s⟩ I found three pictures from your ⟦⚡SPAN@6.84s: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Nice_Beach.png", and "Lyon_Food_Market.jpeg".⟧ France trip last year: Paris, Nice, and Lyon.
       CALL: {"function": "search_files", "arguments": {"query": "France holiday", "year": "2023", "exclude": "thumbnails"}}
-[  8.14s][user ] «backchannel» Mhm.
-[ 10.98s][user ] Oh, great! Can you send “Paris_Eiffel_Tower.jpg” to my sister, her email is ⟨ret@18.04s⟩ anna@example.com?
-[ 18.16s][moshi] I’ve just emailed the ⟦⚡SPAN@20.04s: (tool result) Email sent to anna@example.com with the attachment "Paris_Eiffel_Tower.jpg" at 2:35 PM.⟧ Eiffel Tower picture to Anna at anna@example.com. It went out at 2:35 PM.
+[  7.63s][user ] «backchannel» Mhm.
+[ 10.14s][user ] Oh, great! Can you send “Paris_Eiffel_Tower.jpg” to my sister, her email is ⟨ret@17.50s⟩ anna@example.com?
+[ 17.79s][moshi] I’ve ⟦⚡SPAN@18.54s: (tool result) Email sent to anna@example.com with the attachment "Paris_Eiffel_Tower.jpg" at 2:35 PM.⟧ just emailed the Eiffel Tower picture to Anna at anna@example.com. It went out at 2:35 PM.
       CALL: {"function": "send_email", "arguments": {"recipient": "anna@example.com", "attachment": "Paris_Eiffel_Tower.jpg"}}
-[ 20.48s][user ] «backchannel» Really?
-[ 25.63s][user ] Perfect, thank you! Uh, I was also wondering about flights to Italy…
-[ 30.02s][moshi] Let me check on flight availability to Italy for you. Give me a moment.
-[ 32.38s][user ] «backchannel» Mhm.
-[ 34.04s][user ] Okay, thanks. I— I mean, anytime next month would work.
-  ⟦⚡지연 SPAN 도착@36.52s: (tool result) Flights to Rome next month range from $650 to $980, with several options on the 15th.⟧
-[ 37.29s][moshi] «deferred_result» ⟨ret@37.30s⟩ Regarding flights to Italy, I have some options. Flights to Rome next month are between six hundred
+[ 19.85s][user ] «backchannel» Really?
+[ 24.55s][user ] Perfect, thank you! Uh, I was also wondering about flights to Italy…
+[ 28.91s][moshi] Let me check on flight availability to Italy for you. Give me a moment.
+[ 31.36s][user ] «backchannel» Mhm.
+[ 33.09s][user ] Okay, thanks. I— I mean, anytime next month would work.
+  ⟦⚡지연 SPAN 도착@35.30s: (tool result) Flights to Rome next month range from $650 to $980, with several options on the 15th.⟧
+[ 36.25s][moshi] «deferred_result» ⟨ret@36.25s⟩ Regarding flights to Italy, I have some options. Flights to Rome next month are between six hundred

@@ -69,29 +69,29 @@
 # }
 
 
-     0.00s  user  발화 시작: 오션뷰 호텔에서 2월 10일부터 7박 동안 방 세 개 예약해 줘.
-     4.80s  <ret> 발화 (turn1 첫 프레임)
-     4.95s  agent 발화 시작: <ret> 물론입니다. 잠시만 기다려 주세요.
-     5.05s  user  발화 끝
-     5.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.16s]: (tool result) The reservation is confirmed for three rooms at Ocean Vi
-     6.97s  agent 발화 시작: 오션뷰 호텔, 2월 10일부터 7박, 방 세 개 예약 완료되었습니다.
-     7.11s  agent 발화 끝
-    11.69s  agent 발화 끝
-    11.89s  user  발화 시작: 혹시 취소 정책은 어떻게 돼?
-    13.87s  user  발화 끝
-    14.19s  agent 발화 시작: 아, 네, 취소 정책에 대해 말씀드리려고 했는데요—
-    15.94s  user  발화 시작: 응.
-    16.29s  user  발화 끝
-    17.41s  <ret> 발화 (turn6 첫 프레임)
-    17.47s  agent 발화 끝
-    17.49s  agent 발화 시작: <ret> 예약 취소는 2월 3일까지 가능합니다. 2월 3일까지 취소하시면 전액 환불됩니다.
-    18.37s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.59s]: (tool result) Cancellations are permitted before February third, two t
-    22.67s  agent 발화 끝
-    23.98s  user  발화 시작: 음, 좋네. 그럼 조식 포함으로 변경 가능해?
-    26.96s  <ret> 발화 (turn8 첫 프레임)
-    27.19s  agent 발화 시작: <ret> 잠시만요, 확인해 볼게요.
-    27.35s  user  발화 끝
-    27.46s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.80s]: (tool result) Breakfast has been added to your reservation for an addi
-    28.89s  agent 발화 시작: 조식 추가되었고, 1박당 20달러가 추가됩니다.
-    28.99s  agent 발화 끝
-    32.31s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔에서 이월 십일부터 칠박 동안 방 세 개 예약해 줘.
+     4.52s  <ret> 발화 (turn1 첫 프레임)
+     4.67s  agent 발화 시작: <ret> 물론입니다. 잠시만 기다려 주세요.
+     4.77s  user  발화 끝
+     5.48s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.08s]: (tool result) The reservation is confirmed for three rooms at Ocean Vi
+     6.58s  agent 발화 시작: 오션뷰 호텔, 이월 십일부터 칠박, 방 세 개 예약 완료되었습니다.
+     6.75s  agent 발화 끝
+    11.30s  agent 발화 끝
+    11.49s  user  발화 시작: 혹시 취소 정책은 어떻게 돼?
+    13.47s  user  발화 끝
+    13.79s  agent 발화 시작: 아, 네, 취소 정책에 대해 말씀드리려고 했는데요—
+    15.22s  user  발화 시작: 응.
+    15.52s  user  발화 끝
+    16.46s  <ret> 발화 (turn6 첫 프레임)
+    16.54s  agent 발화 시작: <ret> 예약 취소는 이월 삼일까지 가능합니다. 이월 삼일까지 취소하시면 전액 환불됩니다.
+    16.55s  agent 발화 끝
+    17.42s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.64s]: (tool result) Cancellations are permitted before February third, two t
+    21.81s  agent 발화 끝
+    23.12s  user  발화 시작: 음, 좋네. 그럼 조식 포함으로 변경 가능해?
+    26.60s  <ret> 발화 (turn8 첫 프레임)
+    26.83s  agent 발화 시작: <ret> 잠시만요, 확인해 볼게요.
+    26.96s  user  발화 끝
+    27.10s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.98s]: (tool result) Breakfast has been added to your reservation for an addi
+    28.72s  agent 발화 시작: 조식 추가되었고, 일박당 이십달러가 추가됩니다.
+    28.82s  agent 발화 끝
+    32.42s  agent 발화 끝

@@ -69,15 +69,15 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] So, I’m working on a geography project, and it’s…uh…a bit of a mess. I need to identify flags.
-[  7.42s][moshi] Oh, geography projects can be tricky! It's good you're tackling it head-on. What flag are you currently puzzling over?
-[ 15.78s][user ] Okay, so it's a flag that has black, red, and yellow on it. Any ⟨ret@20.68s⟩ ideas?
-[ 20.91s][moshi] That color ⟦⚡SPAN@21.88s: The flag of Germany features horizontal bands of black, red, and gold.⟧ combination is quite distinctive. The flag of Germany is made up of horizontal bands of black, red, and gold.
-[ 24.69s][user ] «backchannel» Right.
-[ 29.86s][user ] Gold? I thought it was yellow. Doesn’t matter, I guess. My teacher is really strict about details, though.
-[ 36.62s][moshi] [laugh] Details *do* matter, especially with flags! It’s easy to mix up shades, though.
-[ 44.64s][user ] Right. Is there any other flag with those colors? I’m just trying to be sure I haven’t missed ⟨ret@50.62s⟩ something.
-[ 50.93s][moshi] Actually, ⟦⚡SPAN@51.74s: The flag of Belgium consists of three vertical bands of black, yellow, and red.⟧ Belgium also uses similar colors. The flag of Belgium has three vertical bands colored black, yellow, and red.
-[ 59.41s][user ] Oh, that's…different. Vertical bands, huh? Okay, good to know. That helps a lot.
-[ 65.70s][moshi] I’m glad to hear that! Sometimes a slight shift in arrangement makes all the difference.
-[ 71.38s][user ] I think I’m good on flags for now. Thanks, Kiora. I really appreciate the help.
-[ 76.75s][moshi] You're very welcome! Remember, breaking down a big project into smaller pieces can make it much less daunting.
+[  8.56s][moshi] Oh, geography projects can be tricky! It's good you're tackling it head-on. What flag are you currently puzzling over?
+[ 17.25s][user ] Okay, so it's a flag that has black, red, and yellow on it. Any ⟨ret@22.05s⟩ ideas?
+[ 22.29s][moshi] That ⟦⚡SPAN@23.09s: The flag of Germany features horizontal bands of black, red, and gold.⟧ color combination is quite distinctive. The flag of Germany is made up of horizontal bands of black, red, and gold.
+[ 25.90s][user ] «backchannel» Right.
+[ 30.92s][user ] Gold? I thought it was yellow. Doesn’t matter, I guess. My teacher is really strict about details, though.
+[ 38.24s][moshi] [laugh] Details *do* matter, especially with flags! It’s easy to mix up shades, though.
+[ 46.19s][user ] Right. Is there any other flag with those colors? I’m just trying to be sure I haven’t missed ⟨ret@52.46s⟩ something.
+[ 52.77s][moshi] Actually, Belgium ⟦⚡SPAN@53.82s: The flag of Belgium consists of three vertical bands of black, yellow, and red.⟧ also uses similar colors. The flag of Belgium has three vertical bands colored black, yellow, and red.
+[ 61.37s][user ] Oh, that's…different. Vertical bands, huh? Okay, good to know. That helps a lot.
+[ 67.77s][moshi] I’m glad to hear that! Sometimes a slight shift in arrangement makes all the difference.
+[ 73.80s][user ] I think I’m good on flags for now. Thanks, Kiora. I really appreciate the help.
+[ 80.55s][moshi] You're very welcome! Remember, breaking down a big project into smaller pieces can make it much less daunting.

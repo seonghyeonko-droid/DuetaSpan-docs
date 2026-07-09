@@ -66,70 +66,70 @@
 # EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 So it was symbolic, not based on s | S3 …and Nazi Germany… that makes sens | S4 Wow. Two thousand thirteen. That’s
 
      0.00s  user  발화 시작: So, I was reading this dystopian novel, and it got me thinki
-     4.38s  <ret> 발화 (turn1 첫 프레임)
-     4.69s  agent 발화 시작: <ret> That's a fascinating question, and a common one! It re
-     4.81s  user  발화 끝
-     6.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
-    10.51s  agent 발화 시작: The term originates from George Orwell’s nineteen forty-nine
+     4.28s  <ret> 발화 (turn1 첫 프레임)
+     4.60s  agent 발화 시작: <ret> That's a fascinating question, and a common one! It re
+     4.68s  user  발화 끝
+     6.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
+    10.48s  agent 발화 시작: The term originates from George Orwell’s nineteen forty-nine
     10.67s  agent 발화 끝
-    16.63s  agent 발화 끝
-    16.89s  user  발화 시작: Oh, nineteen eighty-four! I've heard of that, of course. Was
-    22.80s  agent 발화 시작: It absolutely was. Orwell explored themes of totalitarianism
-    22.87s  user  발화 끝
-    28.58s  user  발화 시작: Yeah, yeah.
-    29.87s  user  발화 끝
-    30.59s  agent 발화 끝
-    31.62s  user  발화 시작: Right. And the “big brother” figure… was he a real person?
-    35.77s  <ret> 발화 (turn7 첫 프레임)
-    36.16s  agent 발화 시작: <ret> Not exactly a single person, but… The “Big Brother” fi
-    36.20s  user  발화 끝
-    37.53s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.21s]: <The omnipresent Party leader, Big Brother, is the face of the totalit
-    39.08s  user  발화 시작: Mm-hmm.
-    39.57s  user  발화 끝
-    43.52s  user  발화 시작: So it was symbolic, not based on someone actually in power?
-    43.91s  agent 발화 끝
-    47.96s  agent 발화 시작: Precisely. It symbolized the all-seeing, controlling state. 
-    48.06s  user  발화 끝
-    50.65s  user  발화 시작: Yeah.
-    51.24s  user  발화 끝
-    54.07s  agent 발화 끝
-    54.32s  user  발화 시작: It is. I'm trying to remember if I read somewhere that Orwel
-    59.75s  <ret> 발화 (turn13 첫 프레임)
-    59.82s  agent 발화 시작: <ret> [laugh] It's good to consider the influences! He was c
-    59.84s  user  발화 끝
-    61.19s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.60s]: <Orwell drew inspiration from the Soviet Union under Joseph Stalin and
-    65.30s  agent 발화 시작: Orwell drew inspiration from the Soviet Union under Stalin a
-    65.42s  agent 발화 끝
-    67.34s  user  발화 시작: Mm-hmm.
-    67.83s  user  발화 끝
-    70.27s  user  발화 시작: The Soviet Union…
-    70.39s  agent 발화 끝
-    71.82s  user  발화 끝
-    72.29s  user  발화 시작: …and Nazi Germany… that makes sense. Very oppressive regimes
-    76.96s  agent 발화 시작: Indeed. Both were characterized by intense propaganda and co
-    77.10s  user  발화 끝
-    82.70s  agent 발화 끝
-    82.73s  user  발화 시작: Hmm. I wonder if that kind of surveillance is possible today
-    88.50s  agent 발화 시작: It's a very relevant concern, and one people debate a lot. T
-    88.52s  user  발화 끝
-    93.54s  user  발화 시작: Mm-hmm.
-    94.08s  user  발화 끝
-    95.73s  agent 발화 끝
-    95.80s  user  발화 시작: It’s kind of scary to think about, honestly. I— I mean, are 
-   101.20s  <ret> 발화 (turn23 첫 프레임)
-   101.36s  agent 발화 시작: <ret> That's a question many people grapple with. The balanc
-   101.55s  user  발화 끝
-   103.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: <Edward Snowden revealed in 2013 that the US National Security Agency 
-   107.23s  agent 발화 시작: Edward Snowden revealed in two thousand thirteen NSA data co
-   107.38s  agent 발화 끝
-   109.29s  user  발화 시작: Yeah.
-   110.06s  user  발화 끝
-   112.73s  user  발화 시작: Wow. Two thousand thirteen. That’s not that long ago, really
-   112.74s  agent 발화 끝
-   116.86s  agent 발화 시작: No, it isn't. It highlights how quickly these technologies a
-   117.03s  user  발화 끝
-   119.06s  user  발화 시작: Right.
-   119.70s  user  발화 끝
-   123.23s  user  발화 시작: You're right. It’s good to be aware of these things. Thanks,
-   123.25s  agent 발화 끝
-   127.16s  user  발화 끝
+    16.60s  agent 발화 끝
+    16.91s  user  발화 시작: Oh, nineteen eighty-four! I've heard of that, of course. Was
+    23.03s  agent 발화 시작: It absolutely was. Orwell explored themes of totalitarianism
+    23.07s  user  발화 끝
+    29.29s  user  발화 시작: Yeah, yeah.
+    30.53s  user  발화 끝
+    31.42s  agent 발화 끝
+    32.47s  user  발화 시작: Right. And the “big brother” figure… was he a real person?
+    35.71s  <ret> 발화 (turn7 첫 프레임)
+    36.11s  agent 발화 시작: <ret> Not exactly a single person, but… The “Big Brother” fi
+    36.17s  user  발화 끝
+    37.47s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.04s]: <The omnipresent Party leader, Big Brother, is the face of the totalit
+    38.81s  user  발화 시작: Mm-hmm.
+    39.30s  user  발화 끝
+    42.93s  user  발화 시작: So it was symbolic, not based on someone actually in power?
+    43.25s  agent 발화 끝
+    47.38s  agent 발화 시작: Precisely. It symbolized the all-seeing, controlling state. 
+    47.51s  user  발화 끝
+    49.88s  user  발화 시작: Yeah.
+    50.43s  user  발화 끝
+    53.16s  agent 발화 끝
+    53.33s  user  발화 시작: It is. I'm trying to remember if I read somewhere that Orwel
+    58.32s  <ret> 발화 (turn13 첫 프레임)
+    58.39s  agent 발화 시작: <ret> [laugh] It's good to consider the influences! He was c
+    58.47s  user  발화 끝
+    59.76s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.44s]: <Orwell drew inspiration from the Soviet Union under Joseph Stalin and
+    64.76s  agent 발화 시작: Orwell drew inspiration from the Soviet Union under Stalin a
+    64.82s  agent 발화 끝
+    66.55s  user  발화 시작: Mm-hmm.
+    67.18s  user  발화 끝
+    69.14s  user  발화 시작: The Soviet Union…
+    69.30s  agent 발화 끝
+    70.80s  user  발화 끝
+    71.32s  user  발화 시작: …and Nazi Germany… that makes sense. Very oppressive regimes
+    75.93s  agent 발화 시작: Indeed. Both were characterized by intense propaganda and co
+    76.04s  user  발화 끝
+    81.18s  user  발화 시작: Hmm. I wonder if that kind of surveillance is possible today
+    81.20s  agent 발화 끝
+    87.30s  user  발화 끝
+    87.31s  agent 발화 시작: It's a very relevant concern, and one people debate a lot. T
+    91.83s  user  발화 시작: Mm-hmm.
+    92.47s  user  발화 끝
+    93.88s  user  발화 시작: It’s kind of scary to think about, honestly. I— I mean, are 
+    93.89s  agent 발화 끝
+    98.41s  <ret> 발화 (turn23 첫 프레임)
+    98.57s  agent 발화 시작: <ret> That's a question many people grapple with. The balanc
+    98.75s  user  발화 끝
+   100.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: <Edward Snowden revealed in 2013 that the US National Security Agency 
+   104.25s  agent 발화 시작: Edward Snowden revealed in two thousand thirteen NSA data co
+   104.36s  agent 발화 끝
+   106.32s  user  발화 시작: Yeah.
+   106.77s  user  발화 끝
+   109.78s  user  발화 시작: Wow. Two thousand thirteen. That’s not that long ago, really
+   109.85s  agent 발화 끝
+   114.63s  agent 발화 시작: No, it isn't. It highlights how quickly these technologies a
+   114.78s  user  발화 끝
+   116.93s  user  발화 시작: Right.
+   117.42s  user  발화 끝
+   121.27s  user  발화 시작: You're right. It’s good to be aware of these things. Thanks,
+   121.30s  agent 발화 끝
+   125.39s  user  발화 끝

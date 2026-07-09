@@ -68,20 +68,20 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
   S4  Great, thanks so much!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.95s⟩ iframe.
-[  3.34s][moshi] Certainly, ⟦⚡SPAN@3.91s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ let's get that started for you. Excellent, the checkout process is now underway.
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.94s⟩ iframe.
+[  3.33s][moshi] Certainly, ⟦⚡SPAN@3.90s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ let's get that started for you. Excellent, the checkout process is now underway.
       CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
-[ 10.39s][user ] What’s the total cost, including shipping?
-[ 13.07s][moshi] ⟨ret@12.99s⟩ Let me ⟦⚡SPAN@14.19s: (tool result) The total cost is $78.50, including $8.50 for shipping.⟧ quickly check that for you. Your total comes to seventy-eight dollars and fifty cents, with eight fifty for shipping.
+[ 10.26s][user ] What’s the total cost, including shipping?
+[ 12.87s][moshi] ⟨ret@12.79s⟩ Let me ⟦⚡SPAN@14.07s: (tool result) The total cost is $78.50, including $8.50 for shipping.⟧ quickly check that for you. Your total comes to seventy-eight dollars and fifty cents, with eight fifty for shipping.
       CALL: {"function": "get_checkout_total", "arguments": {}}
-[ 19.15s][user ] «backchannel» Yeah.
-[ 21.21s][user ] Can you apply a twenty percent discount ⟨ret@23.45s⟩ code?
-[ 23.85s][moshi] Of course, ⟦⚡SPAN@24.89s: (tool result) The discount code "SAVE20" was applied, reducing the total to $62.80.⟧ I can try that code for you. Wonderful, the twenty percent discount has been applied, bringing your new total to sixty-two eighty.
+[ 18.53s][user ] «backchannel» Yeah.
+[ 20.47s][user ] Can you apply a twenty percent discount code?
+[ 23.12s][moshi] ⟨ret@22.96s⟩ Of course, I can ⟦⚡SPAN@24.64s: (tool result) The discount code "SAVE20" was applied, reducing the total to $62.80.⟧ try that code for you. Wonderful, the twenty percent discount has been applied, bringing your new total to sixty-two eighty.
       CALL: {"function": "apply_discount_code", "arguments": {"code": "SAVE20"}}
-[ 33.58s][user ] And confirm my shipping address is still 123 Oak Street?
-[ 37.92s][moshi] Yes, your shipping address on file is still 123 Oak Street.
-[ 42.53s][user ] Okay, finalize the order ⟨ret@44.05s⟩ then.
-[ 44.34s][moshi] Absolutely, ⟦⚡SPAN@45.41s: (tool result) Order #12345 was finalized; it will ship to 123 Oak Street.⟧ I’m confirming everything now. Your order, number 12345, is finalized and will be shipped to 123 Oak Street.
+[ 32.51s][user ] And confirm my shipping address is still 123 Oak Street?
+[ 36.55s][moshi] Yes, your shipping address on file is still 123 Oak Street.
+[ 41.22s][user ] Okay, finalize the order then.
+[ 42.99s][moshi] ⟨ret@42.86s⟩ Absolutely, ⟦⚡SPAN@44.22s: (tool result) Order #12345 was finalized; it will ship to 123 Oak Street.⟧ I’m confirming everything now. Your order, number 12345, is finalized and will be shipped to 123 Oak Street.
       CALL: {"function": "finalize_order", "arguments": {}}
-[ 54.78s][user ] Great, thanks so much!
-[ 56.26s][moshi] You’re very welcome! It’s good to take care of these details, and I’m glad I could help you through the process.
+[ 53.05s][user ] Great, thanks so much!
+[ 54.39s][moshi] You’re very welcome! It’s good to take care of these details, and I’m glad I could help you through the process.

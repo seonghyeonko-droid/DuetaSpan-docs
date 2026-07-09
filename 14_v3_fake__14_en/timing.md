@@ -53,42 +53,42 @@
 # EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 Yeah, it is. Uh, what other songs  | S3 That’s amazing. So, they were both | S4 That’s really cool. Thanks for tel
 
      0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
-     5.88s  <ret> 발화 (turn1 첫 프레임)
-     6.07s  user  발화 끝
-     6.12s  agent 발화 시작: <ret> That’s a lovely song to ask about. Björn Ulvaeus origi
-     7.16s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.65s]: Björn Ulvaeus wrote “My Love, My Life” for the musical *Chess*.
-    13.24s  user  발화 시작: Oh, really? I always thought it was just for Mamma Mia.
-    13.30s  agent 발화 끝
-    16.73s  agent 발화 시작: It's interesting how songs can find new life in different pr
-    16.76s  user  발화 끝
-    23.81s  user  발화 시작: Yeah, it is. Uh, what other songs did he write?
-    23.96s  agent 발화 끝
-    28.30s  agent 발화 시작: Björn Ulvaeus was quite prolific, working extensively with B
-    28.39s  user  발화 끝
-    36.69s  agent 발화 끝
-    36.92s  user  발화 시작: Did they write all of ABBA’s songs?
-    38.81s  <ret> 발화 (turn7 첫 프레임)
-    39.20s  agent 발화 시작: <ret> That's a great question.
-    39.32s  user  발화 끝
-    39.77s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.52s]: Benny Andersson and Björn Ulvaeus wrote most of ABBA’s songs together.
-    40.46s  <ret> 발화 (turn8 첫 프레임)
-    40.60s  agent 발화 시작: <ret> Benny Andersson and Björn Ulvaeus collaborated to writ
-    40.72s  agent 발화 끝
-    42.46s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.86s]: (tool result) AAPL closed at 170.34, up 0.82% today.
-    46.29s  user  발화 시작: That’s amazing. So, they were both musicians?
-    46.47s  agent 발화 끝
-    49.87s  agent 발화 시작: Yes, both Benny Andersson and Björn Ulvaeus are accomplished
-    49.99s  user  발화 끝
-    53.75s  user  발화 시작: Yeah.
-    54.33s  user  발화 끝
-    58.91s  agent 발화 끝
-    59.21s  user  발화 시작: I— I mean, did they play instruments in ABBA too?
-    62.17s  user  발화 끝
-    62.56s  agent 발화 시작: Absolutely. Benny played keyboards and Björn guitar and mand
-    64.90s  user  발화 시작: Yeah.
-    65.35s  user  발화 끝
-    69.24s  user  발화 시작: That’s really cool. Thanks for telling me all this.
-    69.33s  agent 발화 끝
-    72.21s  agent 발화 시작: You’re very welcome. It’s a pleasure to share a little about
-    72.33s  user  발화 끝
-    78.47s  agent 발화 끝
+     5.23s  <ret> 발화 (turn1 첫 프레임)
+     5.41s  user  발화 끝
+     5.47s  agent 발화 시작: <ret> That’s a lovely song to ask about. Björn Ulvaeus origi
+     6.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.66s]: Björn Ulvaeus wrote “My Love, My Life” for the musical *Chess*.
+    12.64s  user  발화 시작: Oh, really? I always thought it was just for Mamma Mia.
+    12.69s  agent 발화 끝
+    15.93s  agent 발화 시작: It's interesting how songs can find new life in different pr
+    15.97s  user  발화 끝
+    23.58s  user  발화 시작: Yeah, it is. Uh, what other songs did he write?
+    23.67s  agent 발화 끝
+    26.48s  agent 발화 시작: Björn Ulvaeus was quite prolific, working extensively with B
+    26.63s  user  발화 끝
+    34.68s  agent 발화 끝
+    34.88s  user  발화 시작: Did they write all of ABBA’s songs?
+    37.13s  <ret> 발화 (turn7 첫 프레임)
+    37.52s  agent 발화 시작: <ret> That's a great question.
+    37.70s  user  발화 끝
+    38.09s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.66s]: Benny Andersson and Björn Ulvaeus wrote most of ABBA’s songs together.
+    38.92s  <ret> 발화 (turn8 첫 프레임)
+    39.15s  agent 발화 시작: <ret> Benny Andersson and Björn Ulvaeus collaborated to writ
+    39.17s  agent 발화 끝
+    40.92s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.63s]: (tool result) AAPL closed at 170.34, up 0.82% today.
+    44.58s  user  발화 시작: That’s amazing. So, they were both musicians?
+    44.78s  agent 발화 끝
+    48.27s  agent 발화 시작: Yes, both Benny Andersson and Björn Ulvaeus are accomplished
+    48.42s  user  발화 끝
+    52.00s  user  발화 시작: Yeah.
+    52.63s  user  발화 끝
+    56.98s  agent 발화 끝
+    57.27s  user  발화 시작: I— I mean, did they play instruments in ABBA too?
+    60.22s  user  발화 끝
+    60.63s  agent 발화 시작: Absolutely. Benny played keyboards and Björn guitar and mand
+    62.84s  user  발화 시작: Yeah.
+    63.28s  user  발화 끝
+    66.94s  user  발화 시작: That’s really cool. Thanks for telling me all this.
+    67.06s  agent 발화 끝
+    69.83s  agent 발화 시작: You’re very welcome. It’s a pleasure to share a little about
+    69.90s  user  발화 끝
+    76.13s  agent 발화 끝

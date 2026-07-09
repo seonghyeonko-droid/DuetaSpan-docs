@@ -63,24 +63,24 @@
 # EXAMINER(FDB-v2) 단계: S1 Yeah, I am! I’m thinking New Zeala | S2 That sounds great! I was wondering | S3 Wait, is that price in Canadian or | S4 Oh, okay, good to know. And what a
 
      0.00s  agent 발화 시작: Hi Hugo, I’m Klen. It’s good to connect with you. I understa
-     7.00s  agent 발화 끝
-     7.54s  user  발화 시작: Yeah, I am! I’m thinking New Zealand in October, actually. A
-    12.41s  <ret> 발화 (turn2 첫 프레임)
-    12.81s  agent 발화 시작: <ret> You’re going to New Zealand in October— That’s a fanta
-    13.00s  user  발화 끝
-    13.77s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.92s]: [2026-05-27] User is planning a trip to New Zealand in October.
-    21.58s  agent 발화 끝
-    21.86s  user  발화 시작: That sounds great! I was wondering about flights, though. Wh
-    27.09s  <ret> 발화 (turn4 첫 프레임)
-    27.15s  agent 발화 시작: <ret> Finding good flight deals takes a little patience, but
-    27.31s  user  발화 끝
-    29.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) Flights to Auckland, New Zealand on October 12th: $1850 
-    32.90s  agent 발화 시작: Air Canada has a flight for one thousand eight hundred and f
-    32.99s  agent 발화 끝
-    38.19s  user  발화 시작: Wait, is that price in Canadian or US dollars?
-    38.22s  agent 발화 끝
-    41.47s  user  발화 끝
-    41.89s  agent 발화 시작: That price is in Canadian dollars, Hugo. It includes all tax
-    47.67s  user  발화 시작: Oh, okay, good to know. And what about getting around once I
-    48.52s  agent 발화 끝
-    52.30s  user  발화 끝
+     7.78s  agent 발화 끝
+     8.42s  user  발화 시작: Yeah, I am! I’m thinking New Zealand in October, actually. A
+    14.50s  <ret> 발화 (turn2 첫 프레임)
+    14.89s  agent 발화 시작: <ret> You’re going to New Zealand in October— That’s a fanta
+    15.10s  user  발화 끝
+    15.86s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.75s]: [2026-05-27] User is planning a trip to New Zealand in October.
+    23.15s  agent 발화 끝
+    23.42s  user  발화 시작: That sounds great! I was wondering about flights, though. Wh
+    28.68s  <ret> 발화 (turn4 첫 프레임)
+    28.75s  agent 발화 시작: <ret> Finding good flight deals takes a little patience, but
+    28.87s  user  발화 끝
+    30.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.29s]: (tool result) Flights to Auckland, New Zealand on October 12th: $1850 
+    34.94s  agent 발화 시작: Air Canada has a flight for one thousand eight hundred and f
+    35.04s  agent 발화 끝
+    40.23s  user  발화 시작: Wait, is that price in Canadian or US dollars?
+    40.27s  agent 발화 끝
+    43.61s  user  발화 끝
+    43.99s  agent 발화 시작: That price is in Canadian dollars, Hugo. It includes all tax
+    49.99s  user  발화 시작: Oh, okay, good to know. And what about getting around once I
+    50.80s  agent 발화 끝
+    54.67s  user  발화 끝

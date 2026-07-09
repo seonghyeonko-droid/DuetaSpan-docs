@@ -69,80 +69,80 @@
 # EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 That sounds straightforward enough | S3 It is! I'm feeling a little overwh | S4 I think finding a good school dist
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.70s  <ret> 발화 (turn1 첫 프레임)
-     3.94s  agent 발화 시작: <ret> Absolutely, let’s get that scheduled for you at The Gr
-     4.17s  user  발화 끝
-     5.22s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.49s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
-     8.32s  agent 발화 시작: Your viewing is confirmed for June fifteenth at two PM. Does
-     8.42s  agent 발화 끝
-    14.75s  agent 발화 끝
-    14.83s  user  발화 시작: Yeah, that sounds perfect. Uh, actually, make that June sixt
-    20.14s  <ret> 발화 (turn4 첫 프레임)
-    20.30s  agent 발화 시작: <ret> No problem at all, adjusting the date is easy.
-    20.43s  user  발화 끝
-    21.11s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.46s]: (tool result) A viewing at The Grandview Lofts is scheduled for June s
-    23.58s  agent 발화 시작: Okay, I’ve rescheduled your viewing to June sixteenth at two
-    23.77s  agent 발화 끝
-    28.45s  agent 발화 끝
-    29.56s  user  발화 시작: Great! And can you send me directions to The Grandview Lofts
-    32.92s  <ret> 발화 (turn7 첫 프레임)
-    33.16s  agent 발화 시작: <ret> Of course, I can certainly get those directions for yo
-    33.31s  user  발화 끝
-    34.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) Directions to The Grandview Lofts: Head north on Elm Str
-    37.43s  agent 발화 시작: The directions are to head north on Elm Street, then turn ri
-    37.65s  agent 발화 끝
-    42.94s  agent 발화 끝
-    43.02s  user  발화 시작: That sounds straightforward enough. What about parking?
-    45.73s  <ret> 발화 (turn10 첫 프레임)
-    46.02s  user  발화 끝
-    46.13s  agent 발화 시작: <ret> Parking can sometimes be tricky with viewings, so let'
-    47.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) The Grandview Lofts offers validated parking in the adja
-    50.73s  agent 발화 시작: They offer validated parking in the garage next door, which 
-    50.80s  agent 발화 끝
-    56.98s  agent 발화 끝
-    58.23s  user  발화 시작: Oh, excellent. That’s a relief. I— I mean, is there a grocer
-    62.96s  <ret> 발화 (turn13 첫 프레임)
-    63.20s  agent 발화 시작: <ret> It's good to think about those everyday conveniences! 
-    63.37s  user  발화 끝
-    64.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: (tool result) Fresh Foods Market is point-three miles from The Grandvi
-    69.74s  agent 발화 시작: Fresh Foods Market is just point-three miles from The Grandv
-    69.92s  agent 발화 끝
-    72.57s  user  발화 시작: Right.
-    73.29s  user  발화 끝
-    74.88s  user  발화 시작: Perfect. That’s really helpful.
-    74.88s  agent 발화 끝
-    76.97s  agent 발화 시작: I’m glad I could help with that. Transitioning to a new plac
-    77.18s  user  발화 끝
-    82.62s  agent 발화 끝
-    83.30s  user  발화 시작: It is! I'm feeling a little overwhelmed, honestly.
-    86.91s  user  발화 끝
-    87.33s  agent 발화 시작: [happy] That's perfectly normal, feeling overwhelmed is a ve
-    95.86s  agent 발화 끝
-    96.23s  user  발화 시작: It’s just… a lot to think about.
-    98.77s  user  발화 끝
-    98.88s  agent 발화 시작: It absolutely is. It’s like juggling several balls at once. 
-   106.66s  agent 발화 끝
-   107.73s  user  발화 시작: Yes, please. Maybe prioritizing tasks?
-   111.33s  user  발화 끝
-   111.52s  agent 발화 시작: Prioritizing is a fantastic strategy. Let’s focus on what fe
-   114.47s  user  발화 시작: Mm-hmm.
-   115.11s  user  발화 끝
-   118.25s  user  발화 시작: I think finding a good school district is key.
-   118.43s  agent 발화 끝
-   120.50s  <ret> 발화 (turn26 첫 프레임)
-   120.82s  agent 발화 시작: <ret> A good school district is certainly a very important f
-   121.00s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.72s]: (tool result) The Grandview Lofts is located in the Oakwood Unified Sc
-   121.02s  user  발화 끝
-   125.35s  agent 발화 시작: The Oakwood Unified School District, serving the area, is ra
-   125.54s  agent 발화 끝
-   127.68s  user  발화 시작: Mhm.
-   128.18s  user  발화 끝
-   131.33s  agent 발화 끝
-   131.53s  user  발화 시작: Eight out of ten… that's pretty good.
-   133.69s  user  발화 끝
-   134.14s  agent 발화 시작: That's a very solid rating, yes. It indicates a strong educa
-   140.57s  user  발화 시작: Okay. I think I'm feeling a bit better now.
-   140.76s  agent 발화 끝
-   143.31s  agent 발화 시작: [surprised] That's wonderful to hear! Recognizing your feeli
-   143.43s  user  발화 끝
-   150.50s  agent 발화 끝
+     3.62s  <ret> 발화 (turn1 첫 프레임)
+     3.86s  agent 발화 시작: <ret> Absolutely, let’s get that scheduled for you at The Gr
+     4.02s  user  발화 끝
+     5.14s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.49s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
+     8.20s  agent 발화 시작: Your viewing is confirmed for June fifteenth at two PM. Does
+     8.34s  agent 발화 끝
+    13.99s  agent 발화 끝
+    14.08s  user  발화 시작: Yeah, that sounds perfect. Uh, actually, make that June sixt
+    18.72s  <ret> 발화 (turn4 첫 프레임)
+    18.88s  agent 발화 시작: <ret> No problem at all, adjusting the date is easy.
+    18.94s  user  발화 끝
+    19.68s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.38s]: (tool result) A viewing at The Grandview Lofts is scheduled for June s
+    22.14s  agent 발화 시작: Okay, I’ve rescheduled your viewing to June sixteenth at two
+    22.26s  agent 발화 끝
+    27.69s  agent 발화 끝
+    28.80s  user  발화 시작: Great! And can you send me directions to The Grandview Lofts
+    31.82s  <ret> 발화 (turn7 첫 프레임)
+    32.06s  agent 발화 시작: <ret> Of course, I can certainly get those directions for yo
+    32.22s  user  발화 끝
+    33.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) Directions to The Grandview Lofts: Head north on Elm Str
+    35.83s  agent 발화 시작: The directions are to head north on Elm Street, then turn ri
+    35.99s  agent 발화 끝
+    41.52s  agent 발화 끝
+    41.60s  user  발화 시작: That sounds straightforward enough. What about parking?
+    44.73s  <ret> 발화 (turn10 첫 프레임)
+    44.88s  user  발화 끝
+    45.12s  agent 발화 시작: <ret> Parking can sometimes be tricky with viewings, so let'
+    46.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) The Grandview Lofts offers validated parking in the adja
+    49.36s  agent 발화 시작: They offer validated parking in the garage next door, which 
+    49.38s  agent 발화 끝
+    55.33s  agent 발화 끝
+    56.53s  user  발화 시작: Oh, excellent. That’s a relief. I— I mean, is there a grocer
+    60.96s  <ret> 발화 (turn13 첫 프레임)
+    61.36s  agent 발화 시작: <ret> It's good to think about those everyday conveniences! 
+    61.54s  user  발화 끝
+    62.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.15s]: (tool result) Fresh Foods Market is point-three miles from The Grandvi
+    67.38s  agent 발화 시작: Fresh Foods Market is just point-three miles from The Grandv
+    67.52s  agent 발화 끝
+    70.19s  user  발화 시작: Right.
+    70.97s  user  발화 끝
+    72.50s  user  발화 시작: Perfect. That’s really helpful.
+    72.52s  agent 발화 끝
+    74.53s  agent 발화 시작: I’m glad I could help with that. Transitioning to a new plac
+    74.75s  user  발화 끝
+    80.04s  agent 발화 끝
+    80.72s  user  발화 시작: It is! I'm feeling a little overwhelmed, honestly.
+    84.37s  user  발화 끝
+    84.79s  agent 발화 시작: [happy] That's perfectly normal, feeling overwhelmed is a ve
+    93.09s  agent 발화 끝
+    93.45s  user  발화 시작: It’s just… a lot to think about.
+    96.12s  user  발화 끝
+    96.17s  agent 발화 시작: It absolutely is. It’s like juggling several balls at once. 
+   102.89s  agent 발화 끝
+   103.98s  user  발화 시작: Yes, please. Maybe prioritizing tasks?
+   107.03s  user  발화 끝
+   107.16s  agent 발화 시작: Prioritizing is a fantastic strategy. Let’s focus on what fe
+   110.41s  user  발화 시작: Mm-hmm.
+   110.86s  user  발화 끝
+   114.58s  user  발화 시작: I think finding a good school district is key.
+   114.81s  agent 발화 끝
+   117.04s  <ret> 발화 (turn26 첫 프레임)
+   117.19s  agent 발화 시작: <ret> A good school district is certainly a very important f
+   117.34s  user  발화 끝
+   119.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) The Grandview Lofts is located in the Oakwood Unified Sc
+   121.91s  agent 발화 시작: The Oakwood Unified School District, serving the area, is ra
+   122.10s  agent 발화 끝
+   124.25s  user  발화 시작: Mhm.
+   124.97s  user  발화 끝
+   127.88s  agent 발화 끝
+   128.07s  user  발화 시작: Eight out of ten… that's pretty good.
+   130.19s  user  발화 끝
+   130.66s  agent 발화 시작: That's a very solid rating, yes. It indicates a strong educa
+   137.56s  user  발화 시작: Okay. I think I'm feeling a bit better now.
+   137.84s  agent 발화 끝
+   140.29s  agent 발화 시작: [surprised] That's wonderful to hear! Recognizing your feeli
+   140.38s  user  발화 끝
+   147.93s  agent 발화 끝

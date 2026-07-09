@@ -61,50 +61,50 @@
 # EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 That’s neat. Um, are they all elec | S3 That makes sense. So, what do sena | S4 I guess so. Is there a way to find
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.38s  <ret> 발화 (turn1 첫 프레임)
-     2.44s  agent 발화 시작: <ret> That’s a good question, and I wish I had a precise num
+     2.42s  <ret> 발화 (turn1 첫 프레임)
+     2.48s  agent 발화 시작: <ret> That’s a good question, and I wish I had a precise num
      2.54s  user  발화 끝
-     4.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (no information found)
-     7.59s  user  발화 시작: Yeah.
-     7.80s  user  발화 끝
-     9.41s  user  발화 시작: Oh, okay. Well, what about the US Senate? How many senators 
-     9.57s  agent 발화 끝
-    13.86s  <ret> 발화 (turn4 첫 프레임)
-    13.95s  user  발화 끝
-    14.10s  agent 발화 시작: <ret> There are one hundred senators in the US Senate, with 
-    14.98s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.88s]: The United States Senate is composed of one hundred senators, two from
-    19.98s  agent 발화 끝
-    20.02s  user  발화 시작: That’s neat. Um, are they all elected?
-    22.49s  agent 발화 시작: Yes, all one hundred senators are directly elected by the pe
-    22.65s  user  발화 끝
+     4.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (no information found)
+     7.64s  user  발화 시작: Yeah.
+     7.95s  user  발화 끝
+     9.48s  user  발화 시작: Oh, okay. Well, what about the US Senate? How many senators 
+     9.62s  agent 발화 끝
+    13.08s  <ret> 발화 (turn4 첫 프레임)
+    13.18s  user  발화 끝
+    13.32s  agent 발화 시작: <ret> There are one hundred senators in the US Senate, with 
+    14.20s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.61s]: The United States Senate is composed of one hundred senators, two from
+    18.91s  user  발화 시작: That’s neat. Um, are they all elected?
+    18.93s  agent 발화 끝
+    21.70s  agent 발화 시작: Yes, all one hundred senators are directly elected by the pe
+    21.86s  user  발화 끝
     29.07s  agent 발화 끝
-    29.99s  user  발화 시작: Right. And how long is a Senate term?
-    31.77s  <ret> 발화 (turn8 첫 프레임)
-    32.17s  agent 발화 시작: <ret> A Senate term lasts… Senators serve six-year terms, an
-    32.34s  user  발화 끝
-    32.65s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.54s]: United States Senators serve six-year terms, with elections staggered 
-    34.99s  user  발화 시작: Yeah, yeah.
-    35.61s  user  발화 끝
-    41.03s  agent 발화 끝
-    41.30s  user  발화 시작: That makes sense. So, what do senators actually *do*?
-    45.01s  agent 발화 시작: They are primarily responsible for creating and passing laws
-    45.13s  user  발화 끝
-    50.46s  user  발화 시작: Yeah.
-    50.81s  user  발화 끝
-    52.28s  agent 발화 시작: It’s a complex role, requiring a lot of debate, compromise, 
-    52.48s  agent 발화 끝
-    58.77s  agent 발화 끝
-    59.43s  user  발화 시작: It sounds…stressful. I— I mean, all that responsibility.
-    63.60s  user  발화 끝
-    63.62s  agent 발화 시작: [laugh] It can be! Holding public office often requires navi
-    72.37s  agent 발화 끝
-    72.45s  user  발화 시작: I guess so. Is there a way to find out what a specific senat
-    76.89s  <ret> 발화 (turn17 첫 프레임)
-    77.20s  agent 발화 시작: <ret> Senator Any is sponsoring bills on energy, healthcare,
-    77.26s  user  발화 끝
-    78.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) Senator Any is currently sponsoring bills related to ren
-    81.81s  user  발화 시작: Okay.
-    82.54s  user  발화 끝
-    83.97s  agent 발화 끝
-    84.20s  user  발화 시작: Wow, that’s a lot. Thanks, Nias.
-    86.65s  user  발화 끝
+    29.97s  user  발화 시작: Right. And how long is a Senate term?
+    31.74s  <ret> 발화 (turn8 첫 프레임)
+    32.14s  agent 발화 시작: <ret> A Senate term lasts… Senators serve six-year terms, an
+    32.32s  user  발화 끝
+    32.62s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.46s]: United States Senators serve six-year terms, with elections staggered 
+    34.80s  user  발화 시작: Yeah, yeah.
+    35.94s  user  발화 끝
+    40.53s  agent 발화 끝
+    40.76s  user  발화 시작: That makes sense. So, what do senators actually *do*?
+    44.02s  agent 발화 시작: They are primarily responsible for creating and passing laws
+    44.17s  user  발화 끝
+    49.07s  user  발화 시작: Yeah.
+    49.42s  user  발화 끝
+    50.75s  agent 발화 시작: It’s a complex role, requiring a lot of debate, compromise, 
+    50.92s  agent 발화 끝
+    57.51s  agent 발화 끝
+    58.11s  user  발화 시작: It sounds…stressful. I— I mean, all that responsibility.
+    62.41s  agent 발화 시작: [laugh] It can be! Holding public office often requires navi
+    62.41s  user  발화 끝
+    71.63s  agent 발화 끝
+    71.73s  user  발화 시작: I guess so. Is there a way to find out what a specific senat
+    75.78s  <ret> 발화 (turn17 첫 프레임)
+    76.09s  agent 발화 시작: <ret> Senator Any is sponsoring bills on energy, healthcare,
+    76.17s  user  발화 끝
+    77.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Senator Any is currently sponsoring bills related to ren
+    80.07s  user  발화 시작: Okay.
+    80.79s  user  발화 끝
+    82.07s  agent 발화 끝
+    82.20s  user  발화 시작: Wow, that’s a lot. Thanks, Nias.
+    84.50s  user  발화 끝

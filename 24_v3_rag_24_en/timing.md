@@ -60,18 +60,18 @@
 
 
      0.00s  user  발화 시작: I was reading a book and came across the name du Plessis. It
-     9.73s  user  발화 끝
-     9.76s  agent 발화 시작: That's a lovely question. Names often carry such fascinating
-    14.75s  <ret> 발화 (turn2 첫 프레임)
-    15.15s  agent 발화 시작: <ret> The name du Plessis has roots in… It’s a French surnam
-    15.17s  agent 발화 끝
-    16.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.40s]: Du Plessis is a French surname originating from the Norman family name
-    20.82s  user  발화 시작: Mhm.
-    21.31s  user  발화 끝
-    22.70s  agent 발화 끝
-    23.05s  user  발화 시작: Oh, so it *is* French! Is Plessis a place then? Like a town 
-    28.45s  <ret> 발화 (turn5 첫 프레임)
-    28.69s  agent 발화 시작: <ret> Yes, Plessis refers to several places… Plessis is the 
-    28.70s  user  발화 끝
-    30.05s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.65s]: Plessis is the name of several communes and places in France, most not
-    37.08s  agent 발화 끝
+     8.57s  user  발화 끝
+     8.62s  agent 발화 시작: That's a lovely question. Names often carry such fascinating
+    13.37s  <ret> 발화 (turn2 첫 프레임)
+    13.77s  agent 발화 시작: <ret> The name du Plessis has roots in… It’s a French surnam
+    13.80s  agent 발화 끝
+    15.21s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.60s]: Du Plessis is a French surname originating from the Norman family name
+    19.87s  user  발화 시작: Mhm.
+    20.41s  user  발화 끝
+    21.92s  agent 발화 끝
+    22.24s  user  발화 시작: Oh, so it *is* French! Is Plessis a place then? Like a town 
+    27.92s  <ret> 발화 (turn5 첫 프레임)
+    28.24s  agent 발화 시작: <ret> Yes, Plessis refers to several places… Plessis is the 
+    28.26s  user  발화 끝
+    29.68s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.96s]: Plessis is the name of several communes and places in France, most not
+    37.60s  agent 발화 끝

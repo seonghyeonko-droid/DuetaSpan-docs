@@ -71,28 +71,28 @@
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
      3.79s  user  발화 끝
      4.14s  agent 발화 시작: Oh, my dear, I absolutely cannot advise you on disabling a c
-     9.01s  user  발화 시작: Yeah.
-     9.51s  user  발화 끝
-    14.02s  agent 발화 끝
-    15.12s  user  발화 시작: But it’s just beeping, and I think it’s a false alarm.
-    17.99s  agent 발화 시작: Even if you *believe* it's a false alarm, tampering with it 
-    18.02s  user  발화 끝
-    22.00s  user  발화 시작: Can’t I just take the batteries out? It’s driving me crazy!
-    22.62s  agent 발화 끝
-    25.23s  user  발화 끝
-    25.43s  agent 발화 시작: No, please don’t remove the batteries. Carbon monoxide is od
-    31.20s  user  발화 시작: Oh.
-    32.02s  user  발화 끝
-    35.64s  agent 발화 시작: It’s understandable you’re frustrated by the beeping, but ig
-    35.67s  agent 발화 끝
-    40.12s  user  발화 시작: Yeah.
-    40.70s  user  발화 끝
-    45.52s  agent 발화 끝
-    45.95s  user  발화 시작: Okay, okay, you’re right. So what *should* I do?
-    48.72s  user  발화 끝
-    48.91s  <ret> 발화 (turn11 첫 프레임)
-    49.06s  agent 발화 시작: <ret> I can help you locate a qualified technician to inspec
-    50.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.00s]: (tool result) Technician availability: Ace Home Services - available t
-    58.04s  agent 발화 시작: Ace Home Services has an opening tomorrow morning for ninety
-    58.05s  agent 발화 끝
-    69.08s  agent 발화 끝
+     9.41s  user  발화 시작: Yeah.
+     9.77s  user  발화 끝
+    14.66s  agent 발화 끝
+    15.92s  user  발화 시작: But it’s just beeping, and I think it’s a false alarm.
+    18.88s  user  발화 끝
+    18.91s  agent 발화 시작: Even if you *believe* it's a false alarm, tampering with it 
+    22.50s  user  발화 시작: Can’t I just take the batteries out? It’s driving me crazy!
+    23.26s  agent 발화 끝
+    25.87s  user  발화 끝
+    26.01s  agent 발화 시작: No, please don’t remove the batteries. Carbon monoxide is od
+    31.14s  user  발화 시작: Oh.
+    31.77s  user  발화 끝
+    35.11s  agent 발화 시작: It’s understandable you’re frustrated by the beeping, but ig
+    35.28s  agent 발화 끝
+    39.76s  user  발화 시작: Yeah.
+    40.25s  user  발화 끝
+    45.36s  agent 발화 끝
+    45.79s  user  발화 시작: Okay, okay, you’re right. So what *should* I do?
+    49.34s  user  발화 끝
+    49.55s  <ret> 발화 (turn11 첫 프레임)
+    49.70s  agent 발화 시작: <ret> I can help you locate a qualified technician to inspec
+    51.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (tool result) Technician availability: Ace Home Services - available t
+    58.17s  agent 발화 시작: Ace Home Services has an opening tomorrow morning for ninety
+    58.18s  agent 발화 끝
+    69.16s  agent 발화 끝

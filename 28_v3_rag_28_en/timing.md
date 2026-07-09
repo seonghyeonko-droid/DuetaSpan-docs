@@ -70,18 +70,18 @@
 
 
      0.00s  user  발화 시작: I was reading about government departments… when did the Vet
-     5.93s  <ret> 발화 (turn1 첫 프레임)
-     6.25s  agent 발화 시작: <ret> That’s a good question to ask— The Department of Veter
-     6.44s  user  발화 끝
-     6.89s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.41s]: The United States Department of Veterans Affairs was established on Ju
-    13.47s  agent 발화 끝
-    14.38s  user  발화 시작: Nineteen thirty? That seems… surprisingly recent, doesn’t it
-    20.11s  agent 발화 시작: It does feel recent, doesn’t it? Perhaps you’re thinking of 
-    20.21s  user  발화 끝
-    25.41s  user  발화 시작: Well, yeah, there had to be something before that. What did 
+     5.03s  <ret> 발화 (turn1 첫 프레임)
+     5.35s  agent 발화 시작: <ret> That’s a good question to ask— The Department of Veter
+     5.51s  user  발화 끝
+     5.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.46s]: The United States Department of Veterans Affairs was established on Ju
+    12.72s  agent 발화 끝
+    13.61s  user  발화 시작: Nineteen thirty? That seems… surprisingly recent, doesn’t it
+    19.45s  agent 발화 시작: It does feel recent, doesn’t it? Perhaps you’re thinking of 
+    19.58s  user  발화 끝
+    25.36s  user  발화 시작: Well, yeah, there had to be something before that. What did 
     25.56s  agent 발화 끝
-    31.84s  <ret> 발화 (turn5 첫 프레임)
-    32.22s  agent 발화 시작: <ret> Before nineteen thirty, veterans were served by— Befor
-    32.27s  user  발화 끝
-    33.44s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.18s]: Prior to 1930, the Veterans Bureau, established in 1921, provided bene
-    41.76s  agent 발화 끝
+    30.32s  <ret> 발화 (turn5 첫 프레임)
+    30.71s  agent 발화 시작: <ret> Before nineteen thirty, veterans were served by— Befor
+    30.83s  user  발화 끝
+    32.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.60s]: Prior to 1930, the Veterans Bureau, established in 1921, provided bene
+    41.51s  agent 발화 끝

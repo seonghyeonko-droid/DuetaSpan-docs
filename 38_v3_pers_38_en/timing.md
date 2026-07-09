@@ -60,22 +60,22 @@
 
 
      0.00s  agent 발화 시작: Welcome, Avery. I’m Jaeia, and I’m here to offer a gentle sp
-     3.18s  user  발화 시작: Right.
-     3.81s  user  발화 끝
-     5.02s  user  발화 시작: Jaeia… that’s a pretty name. It sounds… calming. Is it okay 
-     5.14s  agent 발화 끝
-    10.96s  user  발화 끝
-    11.16s  agent 발화 시작: It’s a pleasure to meet you too, Avery. I help people naviga
-    15.58s  user  발화 시작: Yeah.
-    16.07s  user  발화 끝
-    20.06s  agent 발화 시작: Sometimes just acknowledging the weight of things is the fir
-    20.34s  agent 발화 끝
-    30.16s  agent 발화 끝
-    32.20s  user  발화 시작: I— I mean, I’m okay, I think. It’s just… my grandmother pass
-    38.61s  agent 발화 시작: That’s… not uncommon at all, Avery. Grief often arrives in w
-    38.73s  user  발화 끝
-    49.59s  agent 발화 끝
-    49.76s  user  발화 시작: So it’s not… wrong that I’m not crying or anything? I feel l
-    53.78s  user  발화 끝
-    54.08s  agent 발화 시작: There's no “should” when it comes to grief, Avery. Every exp
-    63.77s  agent 발화 끝
+     3.22s  user  발화 시작: Right.
+     3.86s  user  발화 끝
+     5.09s  user  발화 시작: Jaeia… that’s a pretty name. It sounds… calming. Is it okay 
+     5.19s  agent 발화 끝
+    10.79s  user  발화 끝
+    11.01s  agent 발화 시작: It’s a pleasure to meet you too, Avery. I help people naviga
+    15.70s  user  발화 시작: Yeah.
+    16.15s  user  발화 끝
+    20.46s  agent 발화 시작: Sometimes just acknowledging the weight of things is the fir
+    20.70s  agent 발화 끝
+    32.23s  agent 발화 끝
+    34.27s  user  발화 시작: I— I mean, I’m okay, I think. It’s just… my grandmother pass
+    40.30s  agent 발화 시작: That’s… not uncommon at all, Avery. Grief often arrives in w
+    40.38s  user  발화 끝
+    51.09s  agent 발화 끝
+    51.15s  user  발화 시작: So it’s not… wrong that I’m not crying or anything? I feel l
+    55.83s  user  발화 끝
+    55.94s  agent 발화 시작: There's no “should” when it comes to grief, Avery. Every exp
+    66.27s  agent 발화 끝

@@ -69,23 +69,23 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.66s][moshi] ⟨ret@4.59s⟩ Certainly, I ⟦⚡SPAN@5.71s: (tool result) The map shows 12 product categories: iPhone, iPad, Mac, AirPods, Apple Watch, Apple TV, Entertai⟧ can map out the Apple website for you— The Apple website’s product section is organized into twelve categories for easy browsing.
+[  4.65s][moshi] ⟨ret@4.58s⟩ Certainly, I ⟦⚡SPAN@5.70s: (tool result) The map shows 12 product categories: iPhone, iPad, Mac, AirPods, Apple Watch, Apple TV, Entertai⟧ can map out the Apple website for you— The Apple website’s product section is organized into twelve categories for easy browsing.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
-[  8.57s][user ] «backchannel» Okay.
-[ 13.84s][user ] That’s… a lot. Can you narrow it down to just the iPhone and iPad ⟨ret@18.96s⟩ pages?
-[ 19.36s][moshi] Of course, ⟦⚡SPAN@20.56s: (tool result) The map displays the iPhone page with models, pricing, and features, and the iPad page with simi⟧ refining the map is simple— I’ve narrowed the map to show detailed pages for both iPhone and iPad, including models and pricing.
+[  8.83s][user ] «backchannel» Okay.
+[ 14.46s][user ] That’s… a lot. Can you narrow it down to just the iPhone and iPad ⟨ret@19.43s⟩ pages?
+[ 19.82s][moshi] Of course, ⟦⚡SPAN@21.03s: (tool result) The map displays the iPhone page with models, pricing, and features, and the iPad page with simi⟧ refining the map is simple— I’ve narrowed the map to show detailed pages for both iPhone and iPad, including models and pricing.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": ["iPhone", "iPad"]}}
-[ 24.35s][user ] «backchannel» Uh-huh.
-[ 28.51s][user ] Okay, good. Now, can you find me the price of the newest iPhone 15 Pro Max, 256 gigabytes?
-[ 36.31s][moshi] ⟨ret@36.23s⟩ Let’s pinpoint ⟦⚡SPAN@37.83s: (tool result) The iPhone 15 Pro Max with 256GB storage costs $1199.00 on the Apple website.⟧ that specific price for you— The iPhone 15 Pro Max, with 256 gigabytes of storage, is listed at eleven hundred ninety-nine dollars.
+[ 24.64s][user ] «backchannel» Uh-huh.
+[ 28.65s][user ] Okay, good. Now, can you find me the price of the newest iPhone 15 Pro Max, 256 gigabytes?
+[ 36.32s][moshi] ⟨ret@36.24s⟩ Let’s pinpoint ⟦⚡SPAN@37.84s: (tool result) The iPhone 15 Pro Max with 256GB storage costs $1199.00 on the Apple website.⟧ that specific price for you— The iPhone 15 Pro Max, with 256 gigabytes of storage, is listed at eleven hundred ninety-nine dollars.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone-15-pro/", "query": "iPhone 15 Pro Max 256GB price"}}
-[ 45.65s][user ] «backchannel» Yeah.
-[ 49.13s][user ] Eleven ninety-nine… hmm, is there any trade-in offer available right now?
-[ 54.55s][moshi] Trade-in values change frequently, but I can check current estimates for you.
-[ 59.64s][user ] Actually, before we do that, can we check if they have any in stock at the Apple Store near me?
-[ 66.00s][moshi] That’s a practical question—
-[ 67.72s][moshi] ⟨ret@67.52s⟩ The Apple Store ⟦⚡SPAN@69.52s: (tool result) The Apple Store at 1600 Broadway, New York, NY 10019 shows the iPhone 15 Pro Max 256GB in stock ⟧ on Broadway has the iPhone 15 Pro Max with 256 gigabytes available for same-day pickup.
+[ 45.38s][user ] «backchannel» Yeah.
+[ 48.77s][user ] Eleven ninety-nine… hmm, is there any trade-in offer available right now?
+[ 53.84s][moshi] Trade-in values change frequently, but I can check current estimates for you.
+[ 59.03s][user ] Actually, before we do that, can we check if they have any in stock at the Apple Store near me?
+[ 63.74s][moshi] That’s a practical question—
+[ 65.77s][moshi] ⟨ret@65.56s⟩ The Apple Store ⟦⚡SPAN@67.56s: (tool result) The Apple Store at 1600 Broadway, New York, NY 10019 shows the iPhone 15 Pro Max 256GB in stock ⟧ on Broadway has the iPhone 15 Pro Max with 256 gigabytes available for same-day pickup.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/retail/", "query": "iPhone 15 Pro Max 256GB availability near me"}}
-[ 75.73s][user ] Oh, perfect! Can you reserve one for me, then? For pickup tomorrow ⟨ret@80.36s⟩ afternoon?
-[ 80.75s][moshi] Certainly, let’s secure ⟦⚡SPAN@82.36s: (tool result) Reservation confirmed: iPhone 15 Pro Max 256GB at 1600 Broadway, New York, NY 10019, pickup tomo⟧ that iPhone for you— Your iPhone 15 Pro Max is reserved for pickup tomorrow afternoon at the Broadway store; your confirmation number is seven four nine two eight one.
+[ 74.43s][user ] Oh, perfect! Can you reserve one for me, then? For pickup tomorrow ⟨ret@78.86s⟩ afternoon?
+[ 79.25s][moshi] Certainly, let’s secure that ⟦⚡SPAN@80.86s: (tool result) Reservation confirmed: iPhone 15 Pro Max 256GB at 1600 Broadway, New York, NY 10019, pickup tomo⟧ iPhone for you— Your iPhone 15 Pro Max is reserved for pickup tomorrow afternoon at the Broadway store; your confirmation number is seven four nine two eight one.
       CALL: {"function": "tavily-reserve", "arguments": {"store": "1600 Broadway, New York, NY 10019", "item": "iPhone 15 Pro Max 256GB", "pickup_date": "tomorrow", "pickup_time": "afternoon"}}

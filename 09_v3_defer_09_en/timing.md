@@ -71,34 +71,34 @@
 # EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 That sounds good. Are there any re | S3 …near the hotel that you would rec | S4 What kind of food does The Marine 
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     6.34s  <ret> 발화 (turn1 첫 프레임)
-     6.57s  agent 발화 시작: <ret> Certainly. I’ve reserved three rooms at the Ocean View
-     6.72s  user  발화 끝
-     8.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Your reservation for three rooms at Ocean View Hotel in 
-    10.78s  user  발화 시작: Mm-hmm.
-    11.31s  user  발화 끝
-    12.68s  agent 발화 끝
-    12.75s  user  발화 시작: What’s the cancellation policy?
-    14.74s  <ret> 발화 (turn4 첫 프레임)
-    14.89s  agent 발화 시작: <ret> The Ocean View Hotel permits free cancellation up to s
-    15.01s  user  발화 끝
-    16.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: (tool result) Ocean View Hotel allows free cancellation until seventy-
-    20.11s  user  발화 시작: That sounds good. Are there any restaurants.
-    20.17s  agent 발화 끝
-    22.70s  user  발화 끝
-    22.85s  agent 발화 시작: It’s a very reasonable policy, and I’m glad—
-    24.92s  user  발화 시작: …near the hotel that you would recommend?
-    25.61s  agent 발화 끝
-    26.58s  <ret> 발화 (turn8 첫 프레임)
-    26.89s  agent 발화 시작: <ret> Ah, yes. Finding a good spot to eat is key to enjoying
-    27.13s  user  발화 끝
-    28.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) Three restaurants are near Ocean View Hotel: The Marine 
-    31.04s  agent 발화 시작: The Marine Room, Bali Hai Restaurant, and Mitch’s Seafood ar
-    31.06s  agent 발화 끝
-    35.98s  user  발화 시작: What kind of food does The Marine Room serve?
-    36.17s  agent 발화 끝
-    38.24s  <ret> 발화 (turn11 첫 프레임)
-    38.53s  agent 발화 시작: <ret> The Marine Room specializes in contemporary American c
-    38.70s  user  발화 끝
-    40.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) The Marine Room serves contemporary American cuisine wit
-    44.13s  agent 발화 끝
+     6.04s  <ret> 발화 (turn1 첫 프레임)
+     6.27s  agent 발화 시작: <ret> Certainly. I’ve reserved three rooms at the Ocean View
+     6.44s  user  발화 끝
+     8.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Your reservation for three rooms at Ocean View Hotel in 
+    10.66s  user  발화 시작: Mm-hmm.
+    11.39s  user  발화 끝
+    12.62s  agent 발화 끝
+    12.69s  user  발화 시작: What’s the cancellation policy?
+    14.39s  <ret> 발화 (turn4 첫 프레임)
+    14.53s  agent 발화 시작: <ret> The Ocean View Hotel permits free cancellation up to s
+    14.67s  user  발화 끝
+    16.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) Ocean View Hotel allows free cancellation until seventy-
+    19.86s  user  발화 시작: That sounds good. Are there any restaurants.
+    19.90s  agent 발화 끝
+    22.45s  user  발화 끝
+    22.47s  agent 발화 시작: It’s a very reasonable policy, and I’m glad—
+    24.60s  user  발화 시작: …near the hotel that you would recommend?
+    25.24s  agent 발화 끝
+    26.41s  <ret> 발화 (turn8 첫 프레임)
+    26.72s  agent 발화 시작: <ret> Ah, yes. Finding a good spot to eat is key to enjoying
+    26.95s  user  발화 끝
+    28.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: (tool result) Three restaurants are near Ocean View Hotel: The Marine 
+    30.34s  agent 발화 시작: The Marine Room, Bali Hai Restaurant, and Mitch’s Seafood ar
+    30.46s  agent 발화 끝
+    34.89s  user  발화 시작: What kind of food does The Marine Room serve?
+    35.06s  agent 발화 끝
+    36.97s  <ret> 발화 (turn11 첫 프레임)
+    37.28s  agent 발화 시작: <ret> The Marine Room specializes in contemporary American c
+    37.48s  user  발화 끝
+    38.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) The Marine Room serves contemporary American cuisine wit
+    42.75s  agent 발화 끝

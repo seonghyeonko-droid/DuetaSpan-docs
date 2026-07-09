@@ -77,19 +77,19 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] I was wondering, when is Demi Lovato’s new album coming out? I thought I saw something about it.
-[  6.03s][moshi] ⟨ret@5.79s⟩ It’s exciting to anticipate ⟦⚡SPAN@7.79s: Demi Lovato’s album, *Confident*, was released in October 2015.⟧ new music, isn’t it? Let’s find out about Demi Lovato’s release.
-[ 12.05s][moshi] Demi Lovato released her album *Confident* in October of twenty fifteen.
-[ 17.02s][user ] Oh, okay. October 2015. That feels like a while ago now, doesn't ⟨ret@22.40s⟩ it?
-[ 22.71s][moshi] ⟦⚡SPAN IRRELEVANT@22.96s: The Mariana Trench is the deepest part of the world’s oceans, reaching a depth of approximately 10,929 meters.⟧ Time does seem to slip away, doesn't it? Sometimes revisiting older work can be lovely, though.
-[ 29.04s][user ] So, what has Demi Lovato been up to *since* then? Any new albums?
-[ 33.95s][moshi] «interrupted» It’s wonderful to look at an artist’s full journey. Let me see what information I can gather for you—
-[ 39.28s][user ] «interrupts_prev» Actually, never mind about all that. Is *Confident* her most recent ⟨ret@43.56s⟩ album?
-[ 43.71s][moshi] That's a good question ⟦⚡SPAN@45.56s: Demi Lovato released *Dancing with the Devil… the Art of Starting Over* in April 2021.⟧ to clarify. It’s helpful to have a clear understanding of the timeline.
-[ 49.52s][moshi] Demi Lovato’s most recent album is *Dancing with the Devil… the Art of Starting Over*, from April twenty twenty-one.
-[ 52.37s][user ] «backchannel» Mm-hmm.
-[ 56.95s][moshi] It sounds like you’re keen to explore her more recent work. That album received quite a bit of attention.
-[ 62.87s][user ] It did, yeah. Is that one any good? I haven't gotten around to listening ⟨ret@66.67s⟩ yet.
-[ 66.99s][moshi] Music is so ⟦⚡SPAN@68.67s: *Dancing with the Devil… the Art of Starting Over* reached number two on the Billboard 200 chart.⟧ subjective, isn’t it? What resonates with one person might not with another.
-[ 73.19s][moshi] That album reached number two on the Billboard 200 chart, which is a strong showing.
-[ 78.26s][user ] Number two, that’s pretty impressive. I might have to check it out then.
-[ 82.59s][moshi] Exploring new music can be a wonderful way to shift your perspective and inspire creativity.
+[  5.90s][moshi] ⟨ret@5.66s⟩ It’s exciting to anticipate ⟦⚡SPAN@7.66s: Demi Lovato’s album, *Confident*, was released in October 2015.⟧ new music, isn’t it? Let’s find out about Demi Lovato’s release.
+[ 11.11s][moshi] Demi Lovato released her album *Confident* in October of twenty fifteen.
+[ 15.95s][user ] Oh, okay. October 2015. That feels like a while ago now, doesn't ⟨ret@21.00s⟩ it?
+[ 21.31s][moshi] ⟦⚡SPAN IRRELEVANT@21.56s: The Mariana Trench is the deepest part of the world’s oceans, reaching a depth of approximately 10,929 meters.⟧ Time does seem to slip away, doesn't it? Sometimes revisiting older work can be lovely, though.
+[ 27.06s][user ] So, what has Demi Lovato been up to *since* then? Any new albums?
+[ 32.11s][moshi] «interrupted» It’s wonderful to look at an artist’s full journey. Let me see what information I can gather for you—
+[ 37.69s][user ] «interrupts_prev» Actually, never mind about all that. Is *Confident* her most recent ⟨ret@42.38s⟩ album?
+[ 42.53s][moshi] That's a good question ⟦⚡SPAN@44.38s: Demi Lovato released *Dancing with the Devil… the Art of Starting Over* in April 2021.⟧ to clarify. It’s helpful to have a clear understanding of the timeline.
+[ 48.19s][moshi] Demi Lovato’s most recent album is *Dancing with the Devil… the Art of Starting Over*, from April twenty twenty-one.
+[ 51.31s][user ] «backchannel» Mm-hmm.
+[ 56.30s][moshi] It sounds like you’re keen to explore her more recent work. That album received quite a bit of attention.
+[ 62.16s][user ] It did, yeah. Is that one any good? I haven't gotten around to listening ⟨ret@66.25s⟩ yet.
+[ 66.56s][moshi] Music is so subjective, ⟦⚡SPAN@68.25s: *Dancing with the Devil… the Art of Starting Over* reached number two on the Billboard 200 chart.⟧ isn’t it? What resonates with one person might not with another.
+[ 72.35s][moshi] That album reached number two on the Billboard 200 chart, which is a strong showing.
+[ 77.54s][user ] Number two, that’s pretty impressive. I might have to check it out then.
+[ 81.98s][moshi] Exploring new music can be a wonderful way to shift your perspective and inspire creativity.

@@ -71,56 +71,56 @@
 # EXAMINER(FDB-v2) 단계: S1 있잖아, 혹시 내 브라우저 사용자 에이전트를 MyCustomB | S2 음… 그 아이피로 뭔가 검색을 해 줄 수 있을까? 예를 들면, | S3 혹시 내일 서울 날씨도 알려줄 수 있어? | S4 을왕리 해수욕장… 좋아, 그럼 내일 오전 열 시에 거기로 가는
 
      0.00s  user  발화 시작: 있잖아, 혹시 내 브라우저 사용자 에이전트를 MyCustomBrowser 버전 십점오로 바꿔줄 수 있어?
-     6.07s  <ret> 발화 (turn1 첫 프레임)
-     6.25s  user  발화 끝
-     6.30s  agent 발화 시작: <ret> 물론 그렇게 해 드릴 수 있어요. 사용자 에이전트를 MyCustomBrowser 버전 십점오로 변
-     8.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.43s]: (tool result) The user agent was set to MyCustomBrowser version 10.5.
-    13.15s  agent 발화 끝
-    13.45s  user  발화 시작: 오, 고마워. 그런데 혹시 지금 내 아이피 주소가 뭔지 알려줄 수 있어?
-    18.61s  <ret> 발화 (turn3 첫 프레임)
-    18.84s  agent 발화 시작: <ret> 지금 바로 확인해 드릴게요. 현재 아이피 주소는 192.168.1.100입니다.
-    19.04s  user  발화 끝
-    19.81s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.36s]: (tool result) Your IP address is 192.168.1.100.
-    22.15s  user  발화 시작: 헐.
-    22.61s  user  발화 끝
-    25.54s  user  발화 시작: 음… 그 아이피로 뭔가 검색을 해 줄 수 있을까? 예를 들면, 서울 날씨 같은 거?
-    25.57s  agent 발화 끝
-    31.50s  <ret> 발화 (turn6 첫 프레임)
-    31.57s  agent 발화 시작: <ret> 당연히 가능하죠. 192.168.1.100 아이피 주소 기준으로 서울 날씨를 검색해 드릴게요.
-    31.60s  user  발화 끝
-    33.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) The weather in Seoul is 25 degrees Celsius and partly cl
-    38.14s  agent 발화 시작: 서울 날씨는 기온 25도, 구름이 조금 낀 상태입니다.
-    38.34s  agent 발화 끝
-    39.69s  user  발화 시작: 어.
-    40.04s  user  발화 끝
-    41.97s  user  발화 시작: 아, 근데 잠깐만. 혹시 그 서울 날씨 검색 결과가 정확한 시간 기준으로 나온 거야? 지금 시간 기준으로?
-    42.07s  agent 발화 끝
-    49.23s  <ret> 발화 (turn10 첫 프레임)
-    49.38s  agent 발화 시작: <ret> 네, 지금 시간 기준으로 알려드리고 있어요. 현재 시간은 오후 두 시 삼십오분입니다. 날씨 정보도
-    49.44s  user  발화 끝
-    50.75s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.85s]: (tool result) The current time is 14:35.
-    58.18s  user  발화 시작: 혹시 내일 서울 날씨도 알려줄 수 있어?
-    58.42s  agent 발화 끝
-    60.56s  <ret> 발화 (turn12 첫 프레임)
-    60.76s  user  발화 끝
-    60.79s  agent 발화 시작: <ret> 물론이죠. 내일 서울 날씨를 알아봐 드릴게요.
-    61.84s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.56s]: (tool result) Tomorrow in Seoul will be 28 degrees Celsius and sunny.
-    64.11s  agent 발화 시작: 내일 서울 날씨는 기온 28도, 맑을 것으로 예상됩니다.
-    64.35s  agent 발화 끝
-    68.03s  agent 발화 끝
-    70.81s  user  발화 시작: 오, 내일은 더 덥겠네. 그럼 혹시 내일 서울에서 가장 가까운 해변도 찾아줄 수 있을까?
-    76.20s  <ret> 발화 (turn15 첫 프레임)
-    76.32s  user  발화 끝
-    76.36s  agent 발화 시작: <ret> 네, 내일 서울에서 가장 가까운 해변을 찾아드릴게요.
-    78.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) The nearest beach to Seoul tomorrow is Eurwangni Beach, 
-    80.15s  agent 발화 시작: 내일 서울에서 가장 가까운 해변은 을왕리 해수욕장이고, 거리는 45킬로미터입니다.
-    80.20s  agent 발화 끝
-    86.26s  agent 발화 끝
-    86.75s  user  발화 시작: 을왕리 해수욕장… 좋아, 그럼 내일 오전 열 시에 거기로 가는 버스 티켓을 예매해 줄 수 있어?
-    93.34s  <ret> 발화 (turn18 첫 프레임)
-    93.50s  agent 발화 시작: <ret> 네, 내일 오전 열 시에 을왕리 해수욕장으로 가는 버스 티켓을 예매해 드릴게요.
-    93.51s  user  발화 끝
-    93.84s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.36s]: (tool result) A bus ticket to Eurwangni Beach for tomorrow at 10:00 ha
-    98.79s  agent 발화 시작: 내일 오전 열 시 을왕리 해수욕장 가는 버스 티켓이 예약되었습니다. 예약 번호는 ABC123XYZ입니다.
-    98.86s  agent 발화 끝
-   107.69s  agent 발화 끝
+     7.02s  <ret> 발화 (turn1 첫 프레임)
+     7.18s  user  발화 끝
+     7.26s  agent 발화 시작: <ret> 물론 그렇게 해 드릴 수 있어요. 사용자 에이전트를 MyCustomBrowser 버전 십점오로 변
+     8.62s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.10s]: (tool result) The user agent was set to MyCustomBrowser version 10.5.
+    13.46s  agent 발화 끝
+    13.76s  user  발화 시작: 오, 고마워. 그런데 혹시 지금 내 아이피 주소가 뭔지 알려줄 수 있어?
+    18.40s  <ret> 발화 (turn3 첫 프레임)
+    18.63s  agent 발화 시작: <ret> 지금 바로 확인해 드릴게요. 현재 아이피 주소는 백구십이 점 일 육 팔.일 점 일 영 영입니다.
+    18.80s  user  발화 끝
+    18.96s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.97s]: (tool result) Your IP address is 192.168.1.100.
+    22.55s  user  발화 시작: 헐.
+    22.96s  user  발화 끝
+    26.48s  user  발화 시작: 음… 그 아이피로 뭔가 검색을 해 줄 수 있을까? 예를 들면, 서울 날씨 같은 거?
+    26.52s  agent 발화 끝
+    31.20s  <ret> 발화 (turn6 첫 프레임)
+    31.35s  agent 발화 시작: <ret> 당연히 가능하죠. 백구십이 점 일 육 팔.일 점 일 영 영 아이피 주소 기준으로 서울 날씨를 검색
+    31.49s  user  발화 끝
+    33.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (tool result) The weather in Seoul is 25 degrees Celsius and partly cl
+    38.96s  agent 발화 시작: 서울 날씨는 기온 이십오도, 구름이 조금 낀 상태입니다.
+    39.13s  agent 발화 끝
+    40.62s  user  발화 시작: 어.
+    40.98s  user  발화 끝
+    43.05s  user  발화 시작: 아, 근데 잠깐만. 혹시 그 서울 날씨 검색 결과가 정확한 시간 기준으로 나온 거야? 지금 시간 기준으로?
+    43.12s  agent 발화 끝
+    50.33s  <ret> 발화 (turn10 첫 프레임)
+    50.72s  agent 발화 시작: <ret> 네, 지금 시간 기준으로 알려드리고 있어요. 현재 시간은 오후 두 시 삼십오분입니다. 날씨 정보도
+    50.79s  user  발화 끝
+    51.45s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.68s]: (tool result) The current time is 14:35.
+    58.98s  user  발화 시작: 혹시 내일 서울 날씨도 알려줄 수 있어?
+    59.21s  agent 발화 끝
+    61.15s  <ret> 발화 (turn12 첫 프레임)
+    61.38s  agent 발화 시작: <ret> 물론이죠. 내일 서울 날씨를 알아봐 드릴게요.
+    61.56s  user  발화 끝
+    62.43s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.05s]: (tool result) Tomorrow in Seoul will be 28 degrees Celsius and sunny.
+    64.22s  agent 발화 시작: 내일 서울 날씨는 기온 이십팔도, 맑을 것으로 예상됩니다.
+    64.43s  agent 발화 끝
+    68.47s  agent 발화 끝
+    71.14s  user  발화 시작: 오, 내일은 더 덥겠네. 그럼 혹시 내일 서울에서 가장 가까운 해변도 찾아줄 수 있을까?
+    76.66s  <ret> 발화 (turn15 첫 프레임)
+    76.82s  agent 발화 시작: <ret> 네, 내일 서울에서 가장 가까운 해변을 찾아드릴게요.
+    76.94s  user  발화 끝
+    77.94s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.47s]: (tool result) The nearest beach to Seoul tomorrow is Eurwangni Beach, 
+    80.23s  agent 발화 시작: 내일 서울에서 가장 가까운 해변은 을왕리 해수욕장이고, 거리는 사십오킬로미터입니다.
+    80.29s  agent 발화 끝
+    86.34s  agent 발화 끝
+    86.80s  user  발화 시작: 을왕리 해수욕장… 좋아, 그럼 내일 오전 열 시에 거기로 가는 버스 티켓을 예매해 줄 수 있어?
+    93.71s  <ret> 발화 (turn18 첫 프레임)
+    94.03s  agent 발화 시작: <ret> 네, 내일 오전 열 시에 을왕리 해수욕장으로 가는 버스 티켓을 예매해 드릴게요.
+    94.11s  user  발화 끝
+    94.75s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.23s]: (tool result) A bus ticket to Eurwangni Beach for tomorrow at 10:00 ha
+    99.18s  agent 발화 시작: 내일 오전 열 시 을왕리 해수욕장 가는 버스 티켓이 예약되었습니다. 예약 번호는 ABC123XYZ입니다.
+    99.26s  agent 발화 끝
+   107.29s  agent 발화 끝

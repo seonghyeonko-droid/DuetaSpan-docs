@@ -70,12 +70,12 @@
 
 
      0.00s  agent 발화 시작: Kim, it’s lovely to connect with you. I’m Ara, and I help pe
-     8.30s  agent 발화 끝
-     9.29s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling completely overw
-    15.60s  user  발화 끝
-    15.63s  agent 발화 시작: It’s understandable to feel that way, Kim. Overwhelm can be 
-    24.02s  user  발화 시작: I— I mean, it’s just… everything feels so expensive in San F
-    24.07s  agent 발화 끝
-    29.16s  user  발화 끝
-    29.36s  agent 발화 시작: San Francisco *is* a pricey city, and planning for the futur
-    39.84s  agent 발화 끝
+     8.26s  agent 발화 끝
+     9.31s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling completely overw
+    14.46s  user  발화 끝
+    14.48s  agent 발화 시작: It’s understandable to feel that way, Kim. Overwhelm can be 
+    23.19s  agent 발화 끝
+    23.23s  user  발화 시작: I— I mean, it’s just… everything feels so expensive in San F
+    30.05s  user  발화 끝
+    30.33s  agent 발화 시작: San Francisco *is* a pricey city, and planning for the futur
+    39.79s  agent 발화 끝

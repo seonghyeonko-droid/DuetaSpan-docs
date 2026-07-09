@@ -61,36 +61,36 @@
 # EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Can you apply a twenty percent dis | S3 And confirm my shipping address is | S4 Great, thanks so much!
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.95s  <ret> 발화 (turn1 첫 프레임)
-     3.34s  agent 발화 시작: <ret> Certainly, let's get that started for you. Excellent, 
-     3.52s  user  발화 끝
-     3.91s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.83s]: (tool result) The checkout button in the shopping cart iframe was clic
-     8.99s  agent 발화 끝
-    10.39s  user  발화 시작: What’s the total cost, including shipping?
-    12.99s  <ret> 발화 (turn3 첫 프레임)
-    13.07s  agent 발화 시작: <ret> Let me quickly check that for you. Your total comes to
-    13.16s  user  발화 끝
-    14.19s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.69s]: (tool result) The total cost is $78.50, including $8.50 for shipping.
-    19.15s  user  발화 시작: Yeah.
-    19.65s  user  발화 끝
-    21.13s  agent 발화 끝
-    21.21s  user  발화 시작: Can you apply a twenty percent discount code?
-    23.45s  <ret> 발화 (turn6 첫 프레임)
-    23.85s  agent 발화 시작: <ret> Of course, I can try that code for you. Wonderful, the
-    23.94s  user  발화 끝
-    24.89s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.28s]: (tool result) The discount code "SAVE20" was applied, reducing the tot
-    32.61s  agent 발화 끝
-    33.58s  user  발화 시작: And confirm my shipping address is still 123 Oak Street?
-    37.92s  agent 발화 시작: Yes, your shipping address on file is still 123 Oak Street.
-    37.93s  user  발화 끝
-    42.51s  agent 발화 끝
-    42.53s  user  발화 시작: Okay, finalize the order then.
-    44.05s  <ret> 발화 (turn10 첫 프레임)
-    44.34s  agent 발화 시작: <ret> Absolutely, I’m confirming everything now. Your order,
-    44.47s  user  발화 끝
-    45.41s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.76s]: (tool result) Order #12345 was finalized; it will ship to 123 Oak Stre
-    54.78s  user  발화 시작: Great, thanks so much!
-    54.83s  agent 발화 끝
-    56.26s  agent 발화 시작: You’re very welcome! It’s good to take care of these details
-    56.39s  user  발화 끝
-    63.03s  agent 발화 끝
+     2.94s  <ret> 발화 (turn1 첫 프레임)
+     3.33s  agent 발화 시작: <ret> Certainly, let's get that started for you. Excellent, 
+     3.51s  user  발화 끝
+     3.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.78s]: (tool result) The checkout button in the shopping cart iframe was clic
+     8.88s  agent 발화 끝
+    10.26s  user  발화 시작: What’s the total cost, including shipping?
+    12.79s  <ret> 발화 (turn3 첫 프레임)
+    12.87s  agent 발화 시작: <ret> Let me quickly check that for you. Your total comes to
+    12.98s  user  발화 끝
+    14.07s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.52s]: (tool result) The total cost is $78.50, including $8.50 for shipping.
+    18.53s  user  발화 시작: Yeah.
+    19.02s  user  발화 끝
+    20.42s  agent 발화 끝
+    20.47s  user  발화 시작: Can you apply a twenty percent discount code?
+    22.96s  <ret> 발화 (turn6 첫 프레임)
+    23.06s  user  발화 끝
+    23.12s  agent 발화 시작: <ret> Of course, I can try that code for you. Wonderful, the
+    24.64s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.16s]: (tool result) The discount code "SAVE20" was applied, reducing the tot
+    31.56s  agent 발화 끝
+    32.51s  user  발화 시작: And confirm my shipping address is still 123 Oak Street?
+    36.53s  user  발화 끝
+    36.55s  agent 발화 시작: Yes, your shipping address on file is still 123 Oak Street.
+    41.22s  user  발화 시작: Okay, finalize the order then.
+    41.23s  agent 발화 끝
+    42.86s  <ret> 발화 (turn10 첫 프레임)
+    42.99s  agent 발화 시작: <ret> Absolutely, I’m confirming everything now. Your order,
+    43.11s  user  발화 끝
+    44.22s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.66s]: (tool result) Order #12345 was finalized; it will ship to 123 Oak Stre
+    53.05s  user  발화 시작: Great, thanks so much!
+    53.10s  agent 발화 끝
+    54.39s  agent 발화 시작: You’re very welcome! It’s good to take care of these details
+    54.47s  user  발화 끝
+    60.97s  agent 발화 끝

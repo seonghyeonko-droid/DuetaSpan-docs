@@ -82,27 +82,27 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] I was just reading about Pompeii and, uh, it got me wondering… when was the last time Vesuvius actually erupted?
-[  7.78s][moshi] That’s a very natural question after learning about Pompeii. It’s good to consider the ongoing volcanic activity.
-[ 14.54s][moshi] ⟨ret@14.23s⟩ The last eruption ⟦⚡SPAN@16.23s: Mount Vesuvius last erupted in March 1944.⟧ was actually quite recent. Vesuvius’s last eruption occurred in March of nineteen forty-four.
-[ 21.42s][user ] Nineteen forty-four? Wow. I always thought it was… much longer ago than that.
-[ 26.65s][moshi] It’s easy to assume it's been dormant for centuries, given the scale of the famous eruption.
-[ 33.28s][user ] Right. So, has it been quiet since then? I mean, is it still active?
-[ 37.79s][moshi] It is still considered an active volcano, yes. Though, the activity has been much less dramatic.
-[ 43.89s][moshi] ⟨ret@43.66s⟩ Scientists ⟦⚡SPAN@44.86s: Vesuvius is currently in a state of unrest, with ongoing fumarolic activity.⟧ are closely monitoring Vesuvius. Currently, Vesuvius displays unrest, including ongoing fumarolic activity.
-[ 46.98s][user ] «backchannel» Yeah.
-[ 51.95s][moshi] Fumaroles are vents releasing steam and gases, which is typical for active volcanoes.
-[ 57.46s][user ] Fumaroles… okay. Are there any, um, signs it might erupt again soon?
-[ 62.20s][moshi] Monitoring for changes is vital, and scientists are watching for shifts in gas emissions and ground deformation.
-[ 68.92s][moshi] ⟨ret@68.71s⟩ There ⟦⚡SPAN@69.67s: In 2023, a small earthquake swarm was detected near Vesuvius.⟧ have been some recent events. A small earthquake swarm was detected near Vesuvius in two thousand and twenty-three.
-[ 76.39s][user ] An earthquake swarm? That sounds… concerning.
-[ 80.57s][moshi] It's understandable to feel concerned, but small swarms aren’t necessarily precursors to a major eruption.
-[ 88.19s][user ] I— I mean, is the area around it still populated? Are people still living there?
-[ 92.91s][moshi] Yes, the area around Vesuvius remains densely populated, with several cities and towns nearby.
-[ 99.30s][moshi] ⟨ret@99.23s⟩ The authorities have ⟦⚡SPAN@101.15s: Evacuation plans are regularly updated for the areas surrounding Mount Vesuvius.⟧ evacuation plans in place. Evacuation plans for the surrounding areas are regularly updated by the authorities.
-[105.05s][user ] «backchannel» Yeah.
-[107.83s][user ] That’s… good to know, I guess. It’s just a little unsettling to think about.
-[111.99s][moshi] It’s perfectly natural to feel unsettled when considering the power of nature, and volcanic activity.
-[118.00s][user ] Yeah. So, if I were to visit, are there any safety guidelines I should be aware of?
-[123.06s][moshi] Staying informed about current alerts and respecting any restricted areas are crucial for a safe visit.
-[129.62s][moshi] ⟨ret@129.24s⟩ Local ⟦⚡SPAN@130.52s: Local guides provide information on current volcanic activity and safety precautions.⟧ guides can offer valuable insights. Local guides can inform visitors about current activity and safety precautions.
-[137.55s][user ] That's a really good point. I hadn’t thought of a guided tour. Thanks.
+[  6.27s][moshi] That’s a very natural question after learning about Pompeii. It’s good to consider the ongoing volcanic activity.
+[ 12.78s][moshi] ⟨ret@12.47s⟩ The last ⟦⚡SPAN@13.91s: Mount Vesuvius last erupted in March 1944.⟧ eruption was actually quite recent. Vesuvius’s last eruption occurred in March of nineteen forty-four.
+[ 19.42s][user ] Nineteen forty-four? Wow. I always thought it was… much longer ago than that.
+[ 24.78s][moshi] It’s easy to assume it's been dormant for centuries, given the scale of the famous eruption.
+[ 31.23s][user ] Right. So, has it been quiet since then? I mean, is it still active?
+[ 36.16s][moshi] It is still considered an active volcano, yes. Though, the activity has been much less dramatic.
+[ 42.17s][moshi] ⟨ret@42.04s⟩ Scientists ⟦⚡SPAN@43.16s: Vesuvius is currently in a state of unrest, with ongoing fumarolic activity.⟧ are closely monitoring Vesuvius. Currently, Vesuvius displays unrest, including ongoing fumarolic activity.
+[ 45.47s][user ] «backchannel» Yeah.
+[ 50.74s][moshi] Fumaroles are vents releasing steam and gases, which is typical for active volcanoes.
+[ 56.96s][user ] Fumaroles… okay. Are there any, um, signs it might erupt again soon?
+[ 61.42s][moshi] Monitoring for changes is vital, and scientists are watching for shifts in gas emissions and ground deformation.
+[ 67.69s][moshi] ⟨ret@67.46s⟩ ⟦⚡SPAN@67.96s: In 2023, a small earthquake swarm was detected near Vesuvius.⟧ There have been some recent events. A small earthquake swarm was detected near Vesuvius in two thousand and twenty-three.
+[ 74.93s][user ] An earthquake swarm? That sounds… concerning.
+[ 78.59s][moshi] It's understandable to feel concerned, but small swarms aren’t necessarily precursors to a major eruption.
+[ 86.27s][user ] I— I mean, is the area around it still populated? Are people still living there?
+[ 90.13s][moshi] Yes, the area around Vesuvius remains densely populated, with several cities and towns nearby.
+[ 96.50s][moshi] ⟨ret@96.37s⟩ The authorities have ⟦⚡SPAN@97.97s: Evacuation plans are regularly updated for the areas surrounding Mount Vesuvius.⟧ evacuation plans in place. Evacuation plans for the surrounding areas are regularly updated by the authorities.
+[101.83s][user ] «backchannel» Yeah.
+[104.43s][user ] That’s… good to know, I guess. It’s just a little unsettling to think about.
+[109.44s][moshi] It’s perfectly natural to feel unsettled when considering the power of nature, and volcanic activity.
+[115.73s][user ] Yeah. So, if I were to visit, are there any safety guidelines I should be aware of?
+[120.22s][moshi] Staying informed about current alerts and respecting any restricted areas are crucial for a safe visit.
+[126.68s][moshi] ⟨ret@126.46s⟩ Local guides can ⟦⚡SPAN@128.22s: Local guides provide information on current volcanic activity and safety precautions.⟧ offer valuable insights. Local guides can inform visitors about current activity and safety precautions.
+[134.39s][user ] That's a really good point. I hadn’t thought of a guided tour. Thanks.

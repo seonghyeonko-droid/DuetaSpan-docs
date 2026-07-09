@@ -74,20 +74,20 @@
 # EXAMINER(FDB-v2) 단계: S1 I was just wondering… uh, when was | S2 Wow, that was a while ago. So, who | S3 Hey, did you remember to take the  | S4 Sorry about that. So, was it a clo
 
      0.00s  user  발화 시작: I was just wondering… uh, when was the last time the Oakland
-     4.92s  <ret> 발화 (turn1 첫 프레임)
-     5.31s  agent 발화 시작: <ret> That’s a good baseball question. The A’s were last no-
-     5.33s  user  발화 끝
-     6.76s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.95s]: The last time the Oakland A’s were no-hit was April 21, 2018.
-    11.56s  agent 발화 끝
-    11.77s  user  발화 시작: Wow, that was a while ago. So, who pitched it?
-    14.63s  <ret> 발화 (turn3 첫 프레임)
-    14.72s  user  발화 끝
-    14.86s  agent 발화 시작: <ret> I can certainly find that information for you.
-    15.75s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.54s]: (tool result) James Paxton pitched a no-hitter against the Oakland Ath
-    17.25s  agent 발화 시작: James Paxton pitched the no-hitter against the A’s on April 
-    17.39s  agent 발화 끝
-    22.10s  user  발화 시작: Hey, did you remember to take the chicken out?
-    22.62s  agent 발화 끝
-    24.44s  user  발화 시작: Sorry about that. So, was it a close game, or did they just 
-    24.49s  user  발화 끝
-    30.36s  user  발화 끝
+     4.96s  <ret> 발화 (turn1 첫 프레임)
+     5.35s  agent 발화 시작: <ret> That’s a good baseball question. The A’s were last no-
+     5.37s  user  발화 끝
+     6.80s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.98s]: The last time the Oakland A’s were no-hit was April 21, 2018.
+    11.70s  agent 발화 끝
+    11.92s  user  발화 시작: Wow, that was a while ago. So, who pitched it?
+    14.98s  <ret> 발화 (turn3 첫 프레임)
+    15.11s  user  발화 끝
+    15.19s  agent 발화 시작: <ret> I can certainly find that information for you.
+    16.11s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.45s]: (tool result) James Paxton pitched a no-hitter against the Oakland Ath
+    17.50s  agent 발화 시작: James Paxton pitched the no-hitter against the A’s on April 
+    17.63s  agent 발화 끝
+    21.85s  user  발화 시작: Hey, did you remember to take the chicken out?
+    22.41s  agent 발화 끝
+    24.09s  user  발화 시작: Sorry about that. So, was it a close game, or did they just 
+    24.15s  user  발화 끝
+    29.41s  user  발화 끝

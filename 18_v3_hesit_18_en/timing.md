@@ -71,62 +71,62 @@
 # EXAMINER(FDB-v2) 단계: S1 I was just reading about Pompeii a | S2 Fumaroles… okay. Are there any, um | S3 I— I mean, is the area around it s | S4 Yeah. So, if I were to visit, are 
 
      0.00s  user  발화 시작: I was just reading about Pompeii and, uh, it got me wonderin
-     7.78s  agent 발화 시작: That’s a very natural question after learning about Pompeii.
-     7.97s  user  발화 끝
-    14.23s  <ret> 발화 (turn2 첫 프레임)
-    14.54s  agent 발화 시작: <ret> The last eruption was actually quite recent. Vesuvius’
-    14.54s  agent 발화 끝
-    16.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.04s]: Mount Vesuvius last erupted in March 1944.
-    21.42s  user  발화 시작: Nineteen forty-four? Wow. I always thought it was… much long
-    21.49s  agent 발화 끝
-    26.65s  agent 발화 시작: It’s easy to assume it's been dormant for centuries, given t
-    26.75s  user  발화 끝
-    31.84s  agent 발화 끝
-    33.28s  user  발화 시작: Right. So, has it been quiet since then? I mean, is it still
-    37.77s  user  발화 끝
-    37.79s  agent 발화 시작: It is still considered an active volcano, yes. Though, the a
-    43.66s  <ret> 발화 (turn7 첫 프레임)
-    43.89s  agent 발화 시작: <ret> Scientists are closely monitoring Vesuvius. Currently,
-    43.95s  agent 발화 끝
-    44.86s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.16s]: Vesuvius is currently in a state of unrest, with ongoing fumarolic act
-    46.98s  user  발화 시작: Yeah.
-    47.47s  user  발화 끝
-    51.95s  agent 발화 시작: Fumaroles are vents releasing steam and gases, which is typi
-    52.09s  agent 발화 끝
-    57.00s  agent 발화 끝
-    57.46s  user  발화 시작: Fumaroles… okay. Are there any, um, signs it might erupt aga
-    62.20s  agent 발화 시작: Monitoring for changes is vital, and scientists are watching
-    62.32s  user  발화 끝
-    68.71s  <ret> 발화 (turn12 첫 프레임)
-    68.92s  agent 발화 시작: <ret> There have been some recent events. A small earthquake
-    69.01s  agent 발화 끝
-    69.67s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.28s]: In 2023, a small earthquake swarm was detected near Vesuvius.
-    76.15s  agent 발화 끝
-    76.39s  user  발화 시작: An earthquake swarm? That sounds… concerning.
-    80.23s  user  발화 끝
-    80.57s  agent 발화 시작: It's understandable to feel concerned, but small swarms aren
-    87.28s  agent 발화 끝
-    88.19s  user  발화 시작: I— I mean, is the area around it still populated? Are people
-    92.91s  agent 발화 시작: Yes, the area around Vesuvius remains densely populated, wit
-    93.00s  user  발화 끝
-    99.23s  <ret> 발화 (turn17 첫 프레임)
-    99.30s  agent 발화 시작: <ret> The authorities have evacuation plans in place. Evacua
-    99.44s  agent 발화 끝
-   101.15s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.05s]: Evacuation plans are regularly updated for the areas surrounding Mount
-   105.05s  user  발화 시작: Yeah.
-   105.64s  user  발화 끝
-   107.58s  agent 발화 끝
-   107.83s  user  발화 시작: That’s… good to know, I guess. It’s just a little unsettling
-   111.99s  agent 발화 시작: It’s perfectly natural to feel unsettled when considering th
-   112.14s  user  발화 끝
-   117.87s  agent 발화 끝
-   118.00s  user  발화 시작: Yeah. So, if I were to visit, are there any safety guideline
-   123.06s  agent 발화 시작: Staying informed about current alerts and respecting any res
-   123.33s  user  발화 끝
-   129.24s  <ret> 발화 (turn23 첫 프레임)
-   129.62s  agent 발화 시작: <ret> Local guides can offer valuable insights. Local guides
-   129.64s  agent 발화 끝
-   130.52s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.86s]: Local guides provide information on current volcanic activity and safe
-   137.55s  user  발화 시작: That's a really good point. I hadn’t thought of a guided tou
-   137.74s  agent 발화 끝
-   141.12s  user  발화 끝
+     6.27s  agent 발화 시작: That’s a very natural question after learning about Pompeii.
+     6.48s  user  발화 끝
+    12.47s  <ret> 발화 (turn2 첫 프레임)
+    12.78s  agent 발화 시작: <ret> The last eruption was actually quite recent. Vesuvius’
+    12.99s  agent 발화 끝
+    13.91s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.96s]: Mount Vesuvius last erupted in March 1944.
+    19.42s  user  발화 시작: Nineteen forty-four? Wow. I always thought it was… much long
+    19.54s  agent 발화 끝
+    24.78s  agent 발화 시작: It’s easy to assume it's been dormant for centuries, given t
+    24.88s  user  발화 끝
+    29.87s  agent 발화 끝
+    31.23s  user  발화 시작: Right. So, has it been quiet since then? I mean, is it still
+    36.14s  user  발화 끝
+    36.16s  agent 발화 시작: It is still considered an active volcano, yes. Though, the a
+    42.04s  <ret> 발화 (turn7 첫 프레임)
+    42.17s  agent 발화 시작: <ret> Scientists are closely monitoring Vesuvius. Currently,
+    42.28s  agent 발화 끝
+    43.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.30s]: Vesuvius is currently in a state of unrest, with ongoing fumarolic act
+    45.47s  user  발화 시작: Yeah.
+    46.06s  user  발화 끝
+    50.74s  agent 발화 시작: Fumaroles are vents releasing steam and gases, which is typi
+    50.75s  agent 발화 끝
+    56.49s  agent 발화 끝
+    56.96s  user  발화 시작: Fumaroles… okay. Are there any, um, signs it might erupt aga
+    61.42s  agent 발화 시작: Monitoring for changes is vital, and scientists are watching
+    61.59s  user  발화 끝
+    67.46s  <ret> 발화 (turn12 첫 프레임)
+    67.69s  agent 발화 시작: <ret> There have been some recent events. A small earthquake
+    67.76s  agent 발화 끝
+    67.96s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.23s]: In 2023, a small earthquake swarm was detected near Vesuvius.
+    74.73s  agent 발화 끝
+    74.93s  user  발화 시작: An earthquake swarm? That sounds… concerning.
+    78.17s  user  발화 끝
+    78.59s  agent 발화 시작: It's understandable to feel concerned, but small swarms aren
+    85.22s  agent 발화 끝
+    86.27s  user  발화 시작: I— I mean, is the area around it still populated? Are people
+    90.10s  user  발화 끝
+    90.13s  agent 발화 시작: Yes, the area around Vesuvius remains densely populated, wit
+    96.37s  <ret> 발화 (turn17 첫 프레임)
+    96.50s  agent 발화 시작: <ret> The authorities have evacuation plans in place. Evacua
+    96.65s  agent 발화 끝
+    97.97s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.82s]: Evacuation plans are regularly updated for the areas surrounding Mount
+   101.83s  user  발화 시작: Yeah.
+   102.42s  user  발화 끝
+   104.15s  agent 발화 끝
+   104.43s  user  발화 시작: That’s… good to know, I guess. It’s just a little unsettling
+   109.44s  agent 발화 시작: It’s perfectly natural to feel unsettled when considering th
+   109.57s  user  발화 끝
+   115.73s  user  발화 시작: Yeah. So, if I were to visit, are there any safety guideline
+   115.74s  agent 발화 끝
+   120.22s  agent 발화 시작: Staying informed about current alerts and respecting any res
+   120.41s  user  발화 끝
+   126.46s  <ret> 발화 (turn23 첫 프레임)
+   126.66s  agent 발화 끝
+   126.68s  agent 발화 시작: <ret> Local guides can offer valuable insights. Local guides
+   128.22s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.78s]: Local guides provide information on current volcanic activity and safe
+   134.39s  user  발화 시작: That's a really good point. I hadn’t thought of a guided tou
+   134.57s  agent 발화 끝
+   138.04s  user  발화 끝

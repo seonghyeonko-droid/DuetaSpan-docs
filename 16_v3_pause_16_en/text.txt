@@ -78,33 +78,33 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
       You're right. It’s good to be aware of these things. Thanks, Braera.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] So, I was reading this dystopian novel, and it got me ⟨ret@4.38s⟩ thinking…
-[  4.69s][moshi] That's a fascinating question, ⟦⚡SPAN@6.38s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ and a common one! It really stems from a very influential piece of literature.
-[ 10.51s][moshi] The term originates from George Orwell’s nineteen forty-nine dystopian novel, *Nineteen Eighty-Four*.
-[ 16.89s][user ] Oh, nineteen eighty-four! I've heard of that, of course. Was it about surveillance, then?
-[ 22.80s][moshi] It absolutely was. Orwell explored themes of totalitarianism, mass surveillance, and repressive regimes. It’s a powerful story.
-[ 28.58s][user ] «backchannel» Yeah, yeah.
-[ 31.62s][user ] Right. And the “big brother” figure… was he a real ⟨ret@35.77s⟩ person?
-[ 36.16s][moshi] Not exactly a ⟦⚡SPAN@37.53s: <The omnipresent Party leader, Big Brother, is the face of the totalitarian state in the novel.>⟧ single person, but… The “Big Brother” figure represents the omnipresent leader of the totalitarian Party in the novel.
-[ 39.08s][user ] «backchannel» Mm-hmm.
-[ 43.52s][user ] So it was symbolic, not based on someone actually in power?
-[ 47.96s][moshi] Precisely. It symbolized the all-seeing, controlling state. It’s quite a chilling concept, isn’t it?
-[ 50.65s][user ] «backchannel» Yeah.
-[ 54.32s][user ] It is. I'm trying to remember if I read somewhere that Orwell had a specific inspiration…
-[ 59.82s][moshi] ⟨ret@59.75s⟩ [laugh] It's good to ⟦⚡SPAN@61.19s: <Orwell drew inspiration from the Soviet Union under Joseph Stalin and Nazi Germany.>⟧ consider the influences! He was certainly drawing on things he observed in the world around him.
-[ 65.30s][moshi] Orwell drew inspiration from the Soviet Union under Stalin and Nazi Germany.
-[ 67.34s][user ] «backchannel» Mm-hmm.
-[ 70.27s][user ] The Soviet Union…
-[ 72.29s][user ] …and Nazi Germany… that makes sense. Very oppressive regimes.
-[ 76.96s][moshi] Indeed. Both were characterized by intense propaganda and control over their citizens’ lives.
-[ 82.73s][user ] Hmm. I wonder if that kind of surveillance is possible today, with all the technology…
-[ 88.50s][moshi] It's a very relevant concern, and one people debate a lot. Technology certainly presents new avenues for surveillance.
-[ 93.54s][user ] «backchannel» Mm-hmm.
-[ 95.80s][user ] It’s kind of scary to think about, honestly. I— I mean, are we already living in ⟨ret@101.20s⟩ a…
-[101.36s][moshi] That's a question many people ⟦⚡SPAN@103.20s: <Edward Snowden revealed in 2013 that the US National Security Agency was collecting data on millions of citiz⟧ grapple with. The balance between security and privacy is a constant discussion.
-[107.23s][moshi] Edward Snowden revealed in two thousand thirteen NSA data collection on millions of citizens.
-[109.29s][user ] «backchannel» Yeah.
-[112.73s][user ] Wow. Two thousand thirteen. That’s not that long ago, really.
-[116.86s][moshi] No, it isn't. It highlights how quickly these technologies and concerns can evolve. It’s important to stay informed.
-[119.06s][user ] «backchannel» Right.
-[123.23s][user ] You're right. It’s good to be aware of these things. Thanks, Braera.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me ⟨ret@4.28s⟩ thinking…
+[  4.60s][moshi] That's a fascinating question, ⟦⚡SPAN@6.28s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ and a common one! It really stems from a very influential piece of literature.
+[ 10.48s][moshi] The term originates from George Orwell’s nineteen forty-nine dystopian novel, *Nineteen Eighty-Four*.
+[ 16.91s][user ] Oh, nineteen eighty-four! I've heard of that, of course. Was it about surveillance, then?
+[ 23.03s][moshi] It absolutely was. Orwell explored themes of totalitarianism, mass surveillance, and repressive regimes. It’s a powerful story.
+[ 29.29s][user ] «backchannel» Yeah, yeah.
+[ 32.47s][user ] Right. And the “big brother” figure… was he a real ⟨ret@35.71s⟩ person?
+[ 36.11s][moshi] Not exactly a ⟦⚡SPAN@37.47s: <The omnipresent Party leader, Big Brother, is the face of the totalitarian state in the novel.>⟧ single person, but… The “Big Brother” figure represents the omnipresent leader of the totalitarian Party in the novel.
+[ 38.81s][user ] «backchannel» Mm-hmm.
+[ 42.93s][user ] So it was symbolic, not based on someone actually in power?
+[ 47.38s][moshi] Precisely. It symbolized the all-seeing, controlling state. It’s quite a chilling concept, isn’t it?
+[ 49.88s][user ] «backchannel» Yeah.
+[ 53.33s][user ] It is. I'm trying to remember if I read somewhere that Orwell had a specific inspiration…
+[ 58.39s][moshi] ⟨ret@58.32s⟩ [laugh] It's good ⟦⚡SPAN@59.76s: <Orwell drew inspiration from the Soviet Union under Joseph Stalin and Nazi Germany.>⟧ to consider the influences! He was certainly drawing on things he observed in the world around him.
+[ 64.76s][moshi] Orwell drew inspiration from the Soviet Union under Stalin and Nazi Germany.
+[ 66.55s][user ] «backchannel» Mm-hmm.
+[ 69.14s][user ] The Soviet Union…
+[ 71.32s][user ] …and Nazi Germany… that makes sense. Very oppressive regimes.
+[ 75.93s][moshi] Indeed. Both were characterized by intense propaganda and control over their citizens’ lives.
+[ 81.18s][user ] Hmm. I wonder if that kind of surveillance is possible today, with all the technology…
+[ 87.31s][moshi] It's a very relevant concern, and one people debate a lot. Technology certainly presents new avenues for surveillance.
+[ 91.83s][user ] «backchannel» Mm-hmm.
+[ 93.88s][user ] It’s kind of scary to think about, honestly. I— I mean, are we already living in ⟨ret@98.41s⟩ a…
+[ 98.57s][moshi] That's a question many people ⟦⚡SPAN@100.41s: <Edward Snowden revealed in 2013 that the US National Security Agency was collecting data on millions of citiz⟧ grapple with. The balance between security and privacy is a constant discussion.
+[104.25s][moshi] Edward Snowden revealed in two thousand thirteen NSA data collection on millions of citizens.
+[106.32s][user ] «backchannel» Yeah.
+[109.78s][user ] Wow. Two thousand thirteen. That’s not that long ago, really.
+[114.63s][moshi] No, it isn't. It highlights how quickly these technologies and concerns can evolve. It’s important to stay informed.
+[116.93s][user ] «backchannel» Right.
+[121.27s][user ] You're right. It’s good to be aware of these things. Thanks, Braera.

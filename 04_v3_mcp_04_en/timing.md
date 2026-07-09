@@ -57,24 +57,24 @@
 
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     3.89s  <ret> 발화 (turn1 첫 프레임)
-     4.16s  user  발화 끝
-     4.20s  agent 발화 시작: <ret> Certainly. Your browser’s user agent is now SuperCrawl
-     5.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) The user agent is now set to SuperCrawler version 10.1.
-     7.27s  user  발화 시작: Mhm.
-     7.76s  user  발화 끝
-    10.80s  user  발화 시작: Hmm. That sounds… aggressive. Can we change it to something 
-    10.96s  agent 발화 끝
-    20.19s  <ret> 발화 (turn4 첫 프레임)
+     4.56s  <ret> 발화 (turn1 첫 프레임)
+     4.86s  user  발화 끝
+     4.87s  agent 발화 시작: <ret> Certainly. Your browser’s user agent is now SuperCrawl
+     6.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: (tool result) The user agent is now set to SuperCrawler version 10.1.
+     7.99s  user  발화 시작: Mhm.
+     8.49s  user  발화 끝
+    11.59s  user  발화 시작: Hmm. That sounds… aggressive. Can we change it to something 
+    11.77s  agent 발화 끝
+    20.21s  <ret> 발화 (turn4 첫 프레임)
     20.27s  agent 발화 시작: <ret> [laugh] A little less… bold, yes? I understand wanting
-    20.49s  user  발화 끝
-    21.55s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.50s]: (tool result) The user agent is now set to Mozilla/5.0 (Macintosh; Int
-    25.75s  agent 발화 시작: Absolutely. I’ve switched it to a standard Mac Safari user a
-    25.78s  agent 발화 끝
-    32.78s  agent 발화 끝
-    33.19s  user  발화 시작: Okay, that’s much better. Is there a way to verify it’s actu
-    37.32s  <ret> 발화 (turn7 첫 프레임)
-    37.40s  agent 발화 시작: <ret> Verifying is always a good step, especially with these
-    37.59s  user  발화 끝
-    38.36s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.72s]: (tool result) The current user
-    42.12s  agent 발화 끝
+    20.44s  user  발화 끝
+    21.57s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.03s]: (tool result) The user agent is now set to Mozilla/5.0 (Macintosh; Int
+    26.25s  agent 발화 시작: Absolutely. I’ve switched it to a standard Mac Safari user a
+    26.30s  agent 발화 끝
+    33.70s  agent 발화 끝
+    34.14s  user  발화 시작: Okay, that’s much better. Is there a way to verify it’s actu
+    38.34s  <ret> 발화 (turn7 첫 프레임)
+    38.42s  agent 발화 시작: <ret> Verifying is always a good step, especially with these
+    38.59s  user  발화 끝
+    39.38s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.62s]: (tool result) The current user
+    43.05s  agent 발화 끝

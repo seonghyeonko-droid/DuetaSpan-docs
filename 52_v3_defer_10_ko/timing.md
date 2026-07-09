@@ -78,18 +78,18 @@
 
 
      0.00s  user  발화 시작: 작년 프랑스 휴가 사진 찾아줘, 썸네일 말고.
-     3.24s  <ret> 발화 (turn1 첫 프레임)
-     3.31s  agent 발화 시작: <ret> 네, 알겠습니다. 잠시만요. 프랑스 휴가 사진 삼십칠 개 찾았어요. 썸네일은 제외했고요.
-     3.51s  user  발화 끝
-     3.74s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.00s]: (tool result) Found 37 image files matching “프랑스 휴가” from 2023, exclud
-     8.73s  user  발화 시작: 네.
-     9.23s  user  발화 끝
-    10.63s  agent 발화 끝
-    13.35s  user  발화 시작: 그중에 에펠탑 사진 몇 장이야?
-    15.36s  <ret> 발화 (turn4 첫 프레임)
-    15.59s  agent 발화 시작: <ret> 에펠탑 사진은… 잠깐만 확인해 볼게요.
-    15.80s  user  발화 끝
-    16.32s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.91s]: (tool result) Found 12 files in /휴가사진/프랑스 containing “에펠탑” in the file
-    18.34s  agent 발화 시작: 에펠탑 사진 열두 장이 있어요.
-    18.50s  agent 발화 끝
-    20.59s  agent 발화 끝
+     3.38s  <ret> 발화 (turn1 첫 프레임)
+     3.45s  agent 발화 시작: <ret> 네, 알겠습니다. 잠시만요. 프랑스 휴가 사진 삼십칠 개 찾았어요. 썸네일은 제외했고요.
+     3.69s  user  발화 끝
+     3.88s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.84s]: (tool result) Found 37 image files matching “프랑스 휴가” from 2023, exclud
+     8.42s  user  발화 시작: 네.
+     8.86s  user  발화 끝
+    10.22s  agent 발화 끝
+    12.89s  user  발화 시작: 그중에 에펠탑 사진 몇 장이야?
+    14.59s  <ret> 발화 (turn4 첫 프레임)
+    14.83s  agent 발화 시작: <ret> 에펠탑 사진은… 잠깐만 확인해 볼게요.
+    15.01s  user  발화 끝
+    15.63s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.23s]: (tool result) Found 12 files in /휴가사진/프랑스 containing “에펠탑” in the file
+    17.88s  agent 발화 시작: 에펠탑 사진 열두 장이 있어요.
+    18.06s  agent 발화 끝
+    20.05s  agent 발화 끝

@@ -57,18 +57,18 @@
 
 
      0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정해 줄 수 있을까요?
-     4.67s  <ret> 발화 (turn1 첫 프레임)
-     5.06s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정했습니다.
-     5.09s  user  발화 끝
-     6.35s  ⚡SPAN 주입 [d'=1.68s / d_lead=1.76s]: (tool result) The user agent was successfully set to SuperCrawler vers
-     7.37s  user  발화 시작: 아.
-     7.99s  user  발화 끝
-    10.34s  agent 발화 끝
-    11.01s  user  발화 시작: 잠깐만요, 혹시 이게 실제로 적용된 건지 확인해 볼 수 있을까요?
-    14.99s  <ret> 발화 (turn4 첫 프레임)
-    15.14s  agent 발화 시작: <ret> 물론입니다. 확인해 볼게요.
-    15.22s  user  발화 끝
-    16.04s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.75s]: (tool result) The current user agent is SuperCrawler version 10.1.
-    16.89s  agent 발화 시작: 현재 사용자 에이전트는 슈퍼크롤러 버전 십 점 일입니다. 적용되었는지 확인했는데, 제대로 설정되었어요.
-    16.90s  agent 발화 끝
-    23.51s  agent 발화 끝
+     4.51s  <ret> 발화 (turn1 첫 프레임)
+     4.90s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정했습니다.
+     4.96s  user  발화 끝
+     6.19s  ⚡SPAN 주입 [d'=1.68s / d_lead=1.73s]: (tool result) The user agent was successfully set to SuperCrawler vers
+     7.14s  user  발화 시작: 아.
+     7.78s  user  발화 끝
+    10.08s  agent 발화 끝
+    10.74s  user  발화 시작: 잠깐만요, 혹시 이게 실제로 적용된 건지 확인해 볼 수 있을까요?
+    14.57s  <ret> 발화 (turn4 첫 프레임)
+    14.72s  agent 발화 시작: <ret> 물론입니다. 확인해 볼게요.
+    14.76s  user  발화 끝
+    15.61s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.61s]: (tool result) The current user agent is SuperCrawler version 10.1.
+    16.31s  agent 발화 시작: 현재 사용자 에이전트는 슈퍼크롤러 버전 십 점 일입니다. 적용되었는지 확인했는데, 제대로 설정되었어요.
+    16.33s  agent 발화 끝
+    22.84s  agent 발화 끝

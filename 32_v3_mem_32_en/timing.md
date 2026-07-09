@@ -60,22 +60,22 @@
 
 
      0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you, and 
-     5.85s  user  발화 시작: Yeah.
-     6.57s  user  발화 끝
-     7.59s  user  발화 시작: Oh, that sounds… good. I’m trying to plan a little getaway, 
-     7.59s  agent 발화 끝
-    14.27s  user  발화 끝
-    14.42s  agent 발화 시작: Revisiting a cherished place can be wonderfully restorative.
-    22.86s  agent 발화 끝
-    24.20s  user  발화 시작: I— I mean, I was in Kyoto last March, and it was amazing.
-    27.86s  <ret> 발화 (turn5 첫 프레임)
-    28.09s  user  발화 끝
-    28.26s  agent 발화 시작: <ret> Remembering a positive experience is a great starting 
-    28.90s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.28s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    36.04s  user  발화 시작: Mm-hmm.
-    36.53s  user  발화 끝
-    39.20s  agent 발화 끝
-    39.40s  user  발화 시작: Yes, exactly! That's what I meant. But I can’t seem to get p
-    46.65s  agent 발화 시작: It’s perfectly normal to feel overwhelmed when planning, eve
-    46.76s  user  발화 끝
-    56.10s  agent 발화 끝
+     6.22s  user  발화 시작: Yeah.
+     6.58s  user  발화 끝
+     8.05s  user  발화 시작: Oh, that sounds… good. I’m trying to plan a little getaway, 
+     8.07s  agent 발화 끝
+    15.75s  user  발화 끝
+    15.90s  agent 발화 시작: Revisiting a cherished place can be wonderfully restorative.
+    24.43s  agent 발화 끝
+    25.73s  user  발화 시작: I— I mean, I was in Kyoto last March, and it was amazing.
+    29.88s  <ret> 발화 (turn5 첫 프레임)
+    30.22s  user  발화 끝
+    30.28s  agent 발화 시작: <ret> Remembering a positive experience is a great starting 
+    30.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.17s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    37.79s  user  발화 시작: Mm-hmm.
+    38.43s  user  발화 끝
+    40.85s  agent 발화 끝
+    41.05s  user  발화 시작: Yes, exactly! That's what I meant. But I can’t seem to get p
+    49.30s  agent 발화 시작: It’s perfectly normal to feel overwhelmed when planning, eve
+    49.40s  user  발화 끝
+    58.71s  agent 발화 끝

@@ -66,40 +66,40 @@
 # EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Yeah, that makes sense. But isn’t  | S3 But what about, like, serious crim | S4 Hmm. Could you find me some exampl
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.59s  <ret> 발화 (turn1 첫 프레임)
-     2.75s  agent 발화 시작: <ret> That’s a fascinating question, and I wish I had a defi
-     2.77s  user  발화 끝
-     4.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: (no information found)
-     7.68s  user  발화 시작: Uh-huh.
-     8.09s  user  발화 끝
-    11.14s  agent 발화 끝
-    11.34s  user  발화 시작: Okay, well, what do anarchists generally *want* then?
-    14.24s  <ret> 발화 (turn4 첫 프레임)
-    14.39s  user  발화 끝
-    14.40s  agent 발화 시작: <ret> Generally, anarchists desire… …self-governed societies
-    14.74s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.28s]: Anarchism is a political philosophy that advocates for self-governed s
-    23.81s  agent 발화 끝
-    24.33s  user  발화 시작: Yeah, that makes sense. But isn’t it chaotic if there’s no g
-    27.91s  agent 발화 시작: It’s a common concern, and a very valid one! Anarchists beli
-    28.03s  user  발화 끝
-    37.33s  agent 발화 끝
-    37.42s  user  발화 시작: Mutual aid… like, people just helping each other out?
-    41.17s  user  발화 끝
-    41.42s  agent 발화 시작: Exactly! It's about communities organizing to meet each othe
-    49.14s  agent 발화 시작: They envision a world where people cooperate freely, and dec
-    49.20s  agent 발화 끝
-    53.00s  user  발화 시작: But what about, like, serious crimes? Who deals with those?
-    53.78s  agent 발화 끝
-    56.84s  user  발화 끝
-    56.91s  agent 발화 시작: That’s a crucial point to consider. Anarchist thought addres
-    67.25s  agent 발화 끝
-    67.40s  user  발화 시작: Restorative justice… so, making things right instead of just
-    72.56s  agent 발화 시작: Precisely. It aims to repair harm and reintegrate offenders 
-    72.59s  user  발화 끝
-    80.90s  agent 발화 끝
-    81.29s  user  발화 시작: Hmm. Could you find me some examples of communities that hav
-    85.09s  <ret> 발화 (turn15 첫 프레임)
-    85.25s  agent 발화 시작: <ret> I did a quick search… …and found the Free Territory of
-    85.46s  user  발화 끝
-    85.97s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.93s]: The Free Territory of Ukraine experimented with anarchist principles i
-    97.59s  agent 발화 끝
+     2.74s  <ret> 발화 (turn1 첫 프레임)
+     2.90s  agent 발화 시작: <ret> That’s a fascinating question, and I wish I had a defi
+     2.95s  user  발화 끝
+     4.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (no information found)
+     7.62s  user  발화 시작: Uh-huh.
+     8.02s  user  발화 끝
+    10.92s  agent 발화 끝
+    11.14s  user  발화 시작: Okay, well, what do anarchists generally *want* then?
+    13.66s  <ret> 발화 (turn4 첫 프레임)
+    13.79s  agent 발화 시작: <ret> Generally, anarchists desire… …self-governed societies
+    13.87s  user  발화 끝
+    14.16s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.21s]: Anarchism is a political philosophy that advocates for self-governed s
+    22.69s  agent 발화 끝
+    23.25s  user  발화 시작: Yeah, that makes sense. But isn’t it chaotic if there’s no g
+    27.18s  agent 발화 시작: It’s a common concern, and a very valid one! Anarchists beli
+    27.27s  user  발화 끝
+    36.73s  agent 발화 끝
+    36.79s  user  발화 시작: Mutual aid… like, people just helping each other out?
+    40.77s  user  발화 끝
+    40.99s  agent 발화 시작: Exactly! It's about communities organizing to meet each othe
+    48.48s  agent 발화 시작: They envision a world where people cooperate freely, and dec
+    48.54s  agent 발화 끝
+    52.26s  user  발화 시작: But what about, like, serious crimes? Who deals with those?
+    52.98s  agent 발화 끝
+    55.87s  user  발화 끝
+    55.88s  agent 발화 시작: That’s a crucial point to consider. Anarchist thought addres
+    65.60s  agent 발화 끝
+    65.70s  user  발화 시작: Restorative justice… so, making things right instead of just
+    70.98s  agent 발화 시작: Precisely. It aims to repair harm and reintegrate offenders 
+    71.03s  user  발화 끝
+    78.95s  agent 발화 끝
+    79.36s  user  발화 시작: Hmm. Could you find me some examples of communities that hav
+    83.10s  <ret> 발화 (turn15 첫 프레임)
+    83.25s  agent 발화 시작: <ret> I did a quick search… …and found the Free Territory of
+    83.44s  user  발화 끝
+    83.98s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.64s]: The Free Territory of Ukraine experimented with anarchist principles i
+    93.73s  agent 발화 끝

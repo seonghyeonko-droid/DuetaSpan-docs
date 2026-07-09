@@ -66,72 +66,72 @@
 # EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Could you find some hotels near th | S3 Do they have parking? | S4 That sounds lovely! I'm getting ex
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.21s  <ret> 발화 (turn1 첫 프레임)
-     3.44s  agent 발화 시작: <ret> Certainly! The Eiffel Tower’s coordinates are latitude
-     3.56s  user  발화 끝
-     4.49s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.69s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
-    10.16s  user  발화 시작: Right.
-    10.80s  user  발화 끝
-    13.13s  agent 발화 끝
-    13.16s  user  발화 시작: That’s great, thanks. I’m planning a trip there next month.
-    17.00s  user  발화 끝
-    17.10s  agent 발화 시작: That sounds lovely! Paris is wonderful in any season, but pl
-    24.51s  agent 발화 끝
-    24.54s  user  발화 시작: I was thinking of staying near the Louvre. Is that a good ar
-    28.70s  user  발화 끝
-    28.81s  agent 발화 시작: Absolutely. The Louvre area is quite central and offers easy
-    31.51s  user  발화 시작: Okay.
-    32.33s  user  발화 끝
-    37.02s  agent 발화 끝
-    37.26s  user  발화 시작: Could you find some hotels near the Louvre, maybe four-star 
-    41.23s  <ret> 발화 (turn9 첫 프레임)
-    41.47s  user  발화 끝
-    41.53s  agent 발화 시작: <ret> Certainly. Hotel Saint-Roch is available for 250 euros
-    43.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: (tool result) Hotel Saint-Roch offers rooms for 250 euros per night. H
-    49.09s  agent 발화 끝
-    49.77s  user  발화 시작: Hmm, 310 is a bit high. Are there any others around that pri
-    54.59s  <ret> 발화 (turn11 첫 프레임)
-    54.72s  user  발화 끝
-    54.90s  agent 발화 시작: <ret> Hotel Regina Louvre has rooms available for 265 euros 
-    56.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Hotel Regina Louvre offers rooms for 265 euros per night
-    62.04s  agent 발화 끝
-    63.68s  user  발화 시작: That’s better, yeah.
-    65.10s  agent 발화 시작: It’s important to find a place where you feel comfortable an
-    65.20s  user  발화 끝
-    67.94s  user  발화 시작: Do they have parking?
-    68.61s  agent 발화 끝
-    69.22s  <ret> 발화 (turn15 첫 프레임)
-    69.30s  agent 발화 시작: <ret> Ah, a practical consideration! Let me check if Hotel R
-    69.41s  user  발화 끝
-    71.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Hotel Regina Louvre provides valet parking for 35 euros 
-    76.82s  agent 발화 시작: Yes, Hotel Regina Louvre offers valet parking for 35 euros d
-    76.85s  agent 발화 끝
-    81.04s  user  발화 시작: Oh.
-    81.63s  user  발화 끝
-    82.80s  agent 발화 시작: It’s wise to confirm parking options, especially in a city l
-    82.84s  agent 발화 끝
-    89.52s  agent 발화 끝
-    90.82s  user  발화 시작: That’s good to know. Okay, I think I’ll book a room there fo
-    95.40s  user  발화 끝
-    95.54s  <ret> 발화 (turn20 첫 프레임)
-    95.70s  agent 발화 시작: <ret> Wonderful! Your reservation at Hotel Regina Louvre is 
-    97.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.40s]: (tool result) Reservation confirmed at Hotel Regina Louvre for five ni
-   107.10s  agent 발화 끝
-   108.37s  user  발화 시작: Perfect. And could you find me a good bistro nearby for dinn
-   112.11s  <ret> 발화 (turn22 첫 프레임)
-   112.43s  agent 발화 시작: <ret> Absolutely. Le Bouillon Chartier, a bistro with 4.2 st
-   112.54s  user  발화 끝
-   114.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Le Bouillon Chartier is a bistro 500 meters from the hot
-   119.98s  agent 발화 끝
-   120.08s  user  발화 시작: That sounds lovely! I'm getting excited about the trip now.
-   123.99s  agent 발화 시작: That’s fantastic! It's perfectly normal to feel excited when
-   124.15s  user  발화 끝
-   132.34s  user  발화 시작: Do you think I should learn a few French phrases?
-   132.79s  agent 발화 끝
-   135.20s  user  발화 끝
-   135.21s  agent 발화 시작: That’s a very thoughtful idea. Even a few basic phrases can 
-   144.66s  agent 발화 끝
-   144.93s  user  발화 시작: Maybe just "hello," "thank you," and "excuse me"?
-   148.05s  agent 발화 시작: Those are excellent choices! They’re polite and will be very
-   148.06s  user  발화 끝
-   156.62s  agent 발화 끝
+     3.73s  <ret> 발화 (turn1 첫 프레임)
+     3.96s  agent 발화 시작: <ret> Certainly! The Eiffel Tower’s coordinates are latitude
+     4.07s  user  발화 끝
+     5.01s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.13s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
+    10.33s  user  발화 시작: Right.
+    10.96s  user  발화 끝
+    13.09s  agent 발화 끝
+    13.19s  user  발화 시작: That’s great, thanks. I’m planning a trip there next month.
+    16.80s  user  발화 끝
+    16.90s  agent 발화 시작: That sounds lovely! Paris is wonderful in any season, but pl
+    24.50s  agent 발화 끝
+    24.52s  user  발화 시작: I was thinking of staying near the Louvre. Is that a good ar
+    28.68s  user  발화 끝
+    28.78s  agent 발화 시작: Absolutely. The Louvre area is quite central and offers easy
+    31.17s  user  발화 시작: Okay.
+    31.90s  user  발화 끝
+    36.06s  agent 발화 끝
+    36.33s  user  발화 시작: Could you find some hotels near the Louvre, maybe four-star 
+    40.85s  <ret> 발화 (turn9 첫 프레임)
+    41.14s  user  발화 끝
+    41.16s  agent 발화 시작: <ret> Certainly. Hotel Saint-Roch is available for 250 euros
+    42.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Hotel Saint-Roch offers rooms for 250 euros per night. H
+    48.86s  agent 발화 끝
+    49.48s  user  발화 시작: Hmm, 310 is a bit high. Are there any others around that pri
+    53.76s  <ret> 발화 (turn11 첫 프레임)
+    53.88s  user  발화 끝
+    54.07s  agent 발화 시작: <ret> Hotel Regina Louvre has rooms available for 265 euros 
+    55.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) Hotel Regina Louvre offers rooms for 265 euros per night
+    61.95s  agent 발화 끝
+    63.59s  user  발화 시작: That’s better, yeah.
+    64.82s  agent 발화 시작: It’s important to find a place where you feel comfortable an
+    64.92s  user  발화 끝
+    67.88s  user  발화 시작: Do they have parking?
+    68.56s  agent 발화 끝
+    69.00s  <ret> 발화 (turn15 첫 프레임)
+    69.08s  agent 발화 시작: <ret> Ah, a practical consideration! Let me check if Hotel R
+    69.17s  user  발화 끝
+    71.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Hotel Regina Louvre provides valet parking for 35 euros 
+    75.99s  agent 발화 시작: Yes, Hotel Regina Louvre offers valet parking for 35 euros d
+    76.03s  agent 발화 끝
+    80.25s  user  발화 시작: Oh.
+    80.74s  user  발화 끝
+    82.02s  agent 발화 시작: It’s wise to confirm parking options, especially in a city l
+    82.06s  agent 발화 끝
+    88.60s  agent 발화 끝
+    89.90s  user  발화 시작: That’s good to know. Okay, I think I’ll book a room there fo
+    94.39s  user  발화 끝
+    94.53s  <ret> 발화 (turn20 첫 프레임)
+    94.69s  agent 발화 시작: <ret> Wonderful! Your reservation at Hotel Regina Louvre is 
+    96.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.60s]: (tool result) Reservation confirmed at Hotel Regina Louvre for five ni
+   106.29s  agent 발화 끝
+   107.56s  user  발화 시작: Perfect. And could you find me a good bistro nearby for dinn
+   111.09s  <ret> 발화 (turn22 첫 프레임)
+   111.41s  agent 발화 시작: <ret> Absolutely. Le Bouillon Chartier, a bistro with 4.2 st
+   111.49s  user  발화 끝
+   113.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) Le Bouillon Chartier is a bistro 500 meters from the hot
+   119.20s  agent 발화 끝
+   119.24s  user  발화 시작: That sounds lovely! I'm getting excited about the trip now.
+   123.30s  agent 발화 시작: That’s fantastic! It's perfectly normal to feel excited when
+   123.44s  user  발화 끝
+   131.47s  user  발화 시작: Do you think I should learn a few French phrases?
+   131.92s  agent 발화 끝
+   134.14s  user  발화 끝
+   134.15s  agent 발화 시작: That’s a very thoughtful idea. Even a few basic phrases can 
+   142.35s  agent 발화 끝
+   142.68s  user  발화 시작: Maybe just "hello," "thank you," and "excuse me"?
+   146.37s  agent 발화 시작: Those are excellent choices! They’re polite and will be very
+   146.38s  user  발화 끝
+   155.13s  agent 발화 끝

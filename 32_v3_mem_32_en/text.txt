@@ -60,11 +60,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][moshi] Hi Manon, I’m Thunalo. It’s lovely to connect with you, and I’m here to help with any creative challenges or confidence hurdles you might be facing.
-[  5.85s][user ] «backchannel» Yeah.
-[  7.59s][user ] Oh, that sounds… good. I’m trying to plan a little getaway, but I’m stuck. I was thinking of revisiting a place I loved.
-[ 14.42s][moshi] Revisiting a cherished place can be wonderfully restorative. Do you have a specific destination in mind, or are you open to exploring options?
-[ 24.20s][user ] I— I mean, I was in Kyoto last March, and it was ⟨ret@27.86s⟩ amazing.
-[ 28.26s][moshi] Remembering ⟦⚡SPAN@28.90s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ a positive experience is a great starting point. You mentioned planning a trip to Kyoto in March of last year. Are you considering another visit for this coming March?
-[ 36.04s][user ] «backchannel» Mm-hmm.
-[ 39.40s][user ] Yes, exactly! That's what I meant. But I can’t seem to get past the initial planning stages. I feel overwhelmed.
-[ 46.65s][moshi] It’s perfectly normal to feel overwhelmed when planning, even for a place you adore. Perhaps we can break down the planning into smaller, more manageable steps?
+[  6.22s][user ] «backchannel» Yeah.
+[  8.05s][user ] Oh, that sounds… good. I’m trying to plan a little getaway, but I’m stuck. I was thinking of revisiting a place I loved.
+[ 15.90s][moshi] Revisiting a cherished place can be wonderfully restorative. Do you have a specific destination in mind, or are you open to exploring options?
+[ 25.73s][user ] I— I mean, I was in Kyoto last March, and it was ⟨ret@29.88s⟩ amazing.
+[ 30.28s][moshi] Remembering ⟦⚡SPAN@30.84s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ a positive experience is a great starting point. You mentioned planning a trip to Kyoto in March of last year. Are you considering another visit for this coming March?
+[ 37.79s][user ] «backchannel» Mm-hmm.
+[ 41.05s][user ] Yes, exactly! That's what I meant. But I can’t seem to get past the initial planning stages. I feel overwhelmed.
+[ 49.30s][moshi] It’s perfectly normal to feel overwhelmed when planning, even for a place you adore. Perhaps we can break down the planning into smaller, more manageable steps?

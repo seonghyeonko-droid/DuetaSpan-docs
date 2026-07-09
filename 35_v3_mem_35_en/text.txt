@@ -69,12 +69,12 @@ EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진�
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][moshi] Hi Hugo, I’m Klen. It’s good to connect with you. I understand you’re planning a trip – perhaps we can discuss some destinations?
-[  7.54s][user ] Yeah, I am! I’m thinking New Zealand in October, actually. Any recommendations for what to ⟨ret@12.41s⟩ do there?
-[ 12.81s][moshi] You’re ⟦⚡SPAN@13.77s: [2026-05-27] User is planning a trip to New Zealand in October.⟧ going to New Zealand in October— That’s a fantastic choice for October. It’s springtime there, offering pleasant weather for exploring.
-[ 21.86s][user ] That sounds great! I was wondering about flights, though. What's the best way to find good deals?
-[ 27.15s][moshi] ⟨ret@27.09s⟩ Finding good flight deals takes a ⟦⚡SPAN@29.09s: (tool result) Flights to Auckland, New Zealand on October 12th: $1850 with Air Canada, 1 stop; $2100 with Unit⟧ little patience, but there are a few strategies. I can certainly help with that.
+[  8.42s][user ] Yeah, I am! I’m thinking New Zealand in October, actually. Any recommendations for what to ⟨ret@14.50s⟩ do there?
+[ 14.89s][moshi] You’re going ⟦⚡SPAN@15.86s: [2026-05-27] User is planning a trip to New Zealand in October.⟧ to New Zealand in October— That’s a fantastic choice for October. It’s springtime there, offering pleasant weather for exploring.
+[ 23.42s][user ] That sounds great! I was wondering about flights, though. What's the best way to find good deals?
+[ 28.75s][moshi] ⟨ret@28.68s⟩ Finding good flight deals takes ⟦⚡SPAN@30.68s: (tool result) Flights to Auckland, New Zealand on October 12th: $1850 with Air Canada, 1 stop; $2100 with Unit⟧ a little patience, but there are a few strategies. I can certainly help with that.
       CALL: {"function": "search_flights", "arguments": {"destination": "New Zealand", "date": "October"}}
-[ 32.90s][moshi] Air Canada has a flight for one thousand eight hundred and fifty dollars, with one stop.
-[ 38.19s][user ] Wait, is that price in Canadian or US dollars?
-[ 41.89s][moshi] «interrupted» That price is in Canadian dollars, Hugo. It includes all taxes and fees as listed—
-[ 47.67s][user ] «interrupts_prev» Oh, okay, good to know. And what about getting around once I’m *in* New Zealand?
+[ 34.94s][moshi] Air Canada has a flight for one thousand eight hundred and fifty dollars, with one stop.
+[ 40.23s][user ] Wait, is that price in Canadian or US dollars?
+[ 43.99s][moshi] «interrupted» That price is in Canadian dollars, Hugo. It includes all taxes and fees as listed—
+[ 49.99s][user ] «interrupts_prev» Oh, okay, good to know. And what about getting around once I’m *in* New Zealand?
