@@ -1,20 +1,24 @@
 v3_mem_32_ko src=mem style=mem
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 호기심 많고 지지적인 상담사 Thunalo입니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 호기심 많고 지지적인 상담사 Thunalo입니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Manon · Location: Berlin, Germany · Nationality: German · Gender: female · Age: late 30s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
+  B. 저장 메모리:
+     [2026-07-25] User is planning a trip to Kyoto in March.
+     [2026-06-14] User is into rock climbing.
+     [2026-03-10] User's favorite cuisine is sushi.
+     [2026-02-26] User is gluten-free.
+  B. 과거 대화 요약:
+     [2026-07-12] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-01-20] Planning a birthday dinner — party of six; looking for outdoor seating
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  안녕하세요, 투날로 님. 그렇게 말씀해 주시니 좋네요. 혹시 치과 예약에 대해 제가 뭐라고 말씀드렸는지 다시 알려 주실 수 있
-  S2  아, 맞아요! 한 선생님. 네, 그렇군요.
-  S3  사실, 네. 3월에 여행을 계획 중인데, 예약을 변경해야 할 것 같아요.
-  S4  그런데… 음, 너무 멀리 여행 가는 게 조금 걱정돼요.
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][moshi] 안녕하세요, 마농 님. 투날로예요. 오늘 만나 뵙게 되어 정말 기뻐요.
-[  5.18s][user ] 안녕하세요, 투날로 님. 그렇게 말씀해 주시니 좋네요. 혹시 치과 예약에 대해 제가 뭐라고 말씀드렸는지 다시 알려 주실 수 있을까요?
-[ 14.52s][moshi] ⟨ret@14.44s⟩ 물론이죠, 세부 사항을 ⟦⚡SPAN@16.44s: Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ 기억하는 건 제가 확실히 할 수 있는 일이에요. 치과 예약을 하셨고, 한 선생님과 아침 일찍 진료를 받기를 요청하셨어요.
-[ 25.26s][user ] 아, 맞아요! 한 선생님. 네, 그렇군요.
-[ 28.67s][moshi] 그 예약에 대해 확인하거나 변경하고 싶으신 게 있으신가요?
-[ 31.41s][user ] «backchannel» 네.
-[ 32.33s][user ] 사실, 네. 3월에 여행을 계획 중인데, 예약을 변경해야 할 것 ⟨ret@37.25s⟩ 같아요.
-[ 37.64s][moshi] 계획이 ⟦⚡SPAN@38.53s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ 바뀌는 건 괜찮아요. 한번 알아볼까요? 3월에 교토로 여행을 가실 예정이시니, 예약을 변경하시는 게 좋겠네요.
-[ 46.32s][user ] 그런데… 음, 너무 멀리 여행 가는 게 조금 걱정돼요.
+[  0.00s][moshi] 안녕하세요 마농 씨, 저는 투날로라고 합니다. 오늘 만나 뵙게 되어 정말 기쁩니다.
+[  4.73s][user ] «backchannel» 네.
+[  6.54s][user ] 방금 계획하고 싶었던 여행에 대해 생각하고 있었어요.
+[ 10.56s][moshi] ⟨ret@10.48s⟩ 아, 여행 ⟦⚡SPAN@12.00s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ 계획을 떠올리는 건 정말 멋진 영감의 원천이 될 수 있어요. 지난번에 3월에 교토에 가고 싶다고 말씀하셨는데, 정말 아름다운 도시이고 역사가 가득하죠.
+[ 22.07s][user ] 맞아요. 베를린과 교토의 시차는 정확히 어떻게 ⟨ret@25.73s⟩ 되나요?
+[ 26.12s][moshi] ⟦⚡SPAN@26.77s: (tool result) Time difference: Berlin is 8 hours behind Kyoto. / Current time in Berlin: 14:32. / Current time⟧ 시차를 아는 건 원활한 여행 계획에 아주 중요해요. 교토는 베를린보다 8시간 빠르기 때문에, 베를린이 오후 두 시 이십이 분일 때, 교토는 오후 열 시 삼십이 분이에요.
+[ 34.50s][user ] «backchannel» 그렇죠.
+[ 37.84s][moshi] 시간 적응이 조금 어려울 수도 있지만, 그게 또 여행의 묘미 아니겠어요?
+[ 43.76s][user ] 네, 정말 그렇네요. 그런데 저는 스시도 정말 좋아해요.
+[ 47.73s][moshi] 하하, 스시를 좋아하신다니 정말 좋네요, 마농 씨! 맛있는 음식을 즐기는 건 언제나 좋은 일이죠!

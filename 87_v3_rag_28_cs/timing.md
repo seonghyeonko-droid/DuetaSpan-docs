@@ -1,19 +1,32 @@
 # v3_rag_28_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: 정슬 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: 40s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+#   B. 저장 메모리:
+#      [2026-07-02] User is allergic to peanuts.
+#      [2026-05-20] User works as a accountant.
+#      [2026-03-04] User prefers a window seat when traveling.
+#      [2026-02-20] User is pescatarian.
+#      [2026-02-07] User is planning a trip to Switzerland in March.
+#      [2026-01-03] User's home address is 960 Pine Court.
+#   B. 과거 대화 요약:
+#      [2026-07-16] Researching a used car — comparing hybrid models; wants under 30k miles
+#      [2026-02-04] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 
-     0.00s  user  발화 시작: 어, 정부 기관에 대해 읽다가 궁금해졌어… 재향군인부(Department of Veterans Affairs
-     6.67s  <ret> 발화 (turn1 첫 프레임)
-     7.07s  agent 발화 시작: <ret> 네, 그런 역사를 생각하시는 건 좋은 질문이에요… 재향군인부는 천구백삼십년 칠월 이십일일에 설립됐
-     7.23s  user  발화 끝
-     8.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.41s]: The United States Department of Veterans Affairs was established on Ju
-    14.76s  agent 발화 끝
-    14.95s  user  발화 시작: 천구백삼십년? 진짜? 나는 훨씬 더 일찍 시작됐다고 생각했어, 남북 전쟁 이후쯤에, 아니… 잘 모르겠네.
-    23.71s  user  발화 끝
-    23.76s  agent 발화 시작: 그렇게 생각하시는 건 이해가 됩니다, 오랫동안 퇴역 군인들이 보살핌을 받아왔으니까요. 하지만 공식적인 부서는
-    33.87s  agent 발화 끝
-    34.51s  user  발화 시작: 근데… 그 전에 뭔가 없었어? 연방 차원에서 퇴역 군인을 지원하는 게 뭔가 있었던 것 같은데. 갑자기 나타났
-    43.05s  <ret> 발화 (turn5 첫 프레임)
-    43.28s  agent 발화 시작: <ret> 맞아요, 그런 점을 생각하시는 건 당연합니다, 시스템이 하룻밤 사이에 생기는 건 아니니까요… 천구
-    43.36s  user  발화 끝
-    45.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.15s]: Prior to 1930, the Veterans Bureau, established in 1921, handled veter
-    57.42s  agent 발화 끝
+
+     0.00s  user  발화 시작: 정부 부처에 대해 읽다가… 참전용사부 어떻게 시작됐는지 궁금해.
+     4.67s  <ret> 발화 (turn1 첫 프레임)
+     5.06s  agent 발화 시작: <ret> 좋은 질문이에요, 뭔가 세우는 데 시간이 얼마나 걸리는지 생각해보면요… 참전용사부는 천구백삼십 년
+     5.14s  user  발화 끝
+     6.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: The United States Department of Veterans Affairs was created on July 2
+    14.61s  agent 발화 끝
+    14.81s  user  발화 시작: 1930년? 좀… 비교적 최근 같지 않아? 더 오래됐을 줄 알았는데.
+    19.86s  user  발화 끝
+    19.88s  agent 발화 시작: 역사적으로 군 복무를 생각해 보면, 많은 분들이 예상하는 것보다 조금 늦은 편입니다.
+    26.50s  agent 발화 끝
+    27.15s  user  발화 시작: 근데 그전에 참전용사들을 위한 서비스는 없었어? 예를 들어 남북전쟁이나… 1차 세계대전 이후 같은 거 말이야
+    34.05s  <ret> 발화 (turn5 첫 프레임)
+    34.13s  agent 발화 시작: <ret> 네, 물론 이전에도 서비스는 있었지만, 단일 부처 내에서는 아니었어요… 천팔백육십일 년 이전에 참
+    34.19s  user  발화 끝
+    36.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: Prior to 1930, veteran benefits were administered by the Bureau of Pen
+    46.15s  agent 발화 끝

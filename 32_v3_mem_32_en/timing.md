@@ -1,26 +1,38 @@
 # v3_mem_32_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Hi Thunalo, that's nice. I was won | S2 Oh, right! Dr. Han. Mm-hmm. | S3 Actually, yes. I'm planning a trip | S4 But… I mean, I’m a bit anxious abo
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Manon · Location: Berlin, Germany · Nationality: German · Gender: female · Age: late 30s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
+#   B. 저장 메모리:
+#      [2026-07-25] User is planning a trip to Kyoto in March.
+#      [2026-06-14] User is into rock climbing.
+#      [2026-03-10] User's favorite cuisine is sushi.
+#      [2026-02-26] User is gluten-free.
+#   B. 과거 대화 요약:
+#      [2026-07-12] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+#      [2026-01-20] Planning a birthday dinner — party of six; looking for outdoor seating
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you today
-     3.79s  agent 발화 끝
-     4.51s  user  발화 시작: Hi Thunalo, that's nice. I was wondering, can you remind me 
-     9.94s  <ret> 발화 (turn2 첫 프레임)
-    10.02s  agent 발화 시작: <ret> Of course, recalling details is something I can certai
-    10.16s  user  발화 끝
-    11.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.09s]: Past chat — Booked a dentist appointment: asked for an early-morning s
-    18.55s  agent 발화 끝
-    18.96s  user  발화 시작: Oh, right! Dr. Han. Mm-hmm.
-    21.82s  user  발화 끝
-    21.90s  agent 발화 시작: Is there anything specific about that appointment you'd like
-    25.32s  user  발화 시작: Yeah.
-    25.77s  user  발화 끝
-    26.53s  agent 발화 끝
-    27.23s  user  발화 시작: Actually, yes. I'm planning a trip in March, and I need to r
-    30.80s  <ret> 발화 (turn7 첫 프레임)
-    30.96s  agent 발화 시작: <ret> A change of plans is perfectly alright, let's see what
-    31.02s  user  발화 끝
-    32.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.29s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    39.50s  user  발화 시작: But… I mean, I’m a bit anxious about traveling so far.
-    39.54s  agent 발화 끝
-    43.41s  user  발화 끝
+
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo, and I’m delighted to be speaking with
+     3.17s  user  발화 시작: Yeah.
+     3.80s  user  발화 끝
+     4.29s  user  발화 시작: I was just thinking about that trip I wanted to plan…
+     4.30s  agent 발화 끝
+     7.03s  <ret> 발화 (turn3 첫 프레임)
+     7.10s  agent 발화 시작: <ret> Ah, recalling travel plans is a wonderful way to spark
+     7.25s  user  발화 끝
+     9.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    16.51s  agent 발화 끝
+    16.93s  user  발화 시작: Right. What’s the time difference between Berlin and Kyoto, 
+    21.11s  <ret> 발화 (turn5 첫 프레임)
+    21.18s  agent 발화 시작: <ret> Understanding time differences is key to smooth travel
+    21.18s  user  발화 끝
+    22.46s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.71s]: (tool result) Time difference: Berlin is 8 hours behind Kyoto. / Curre
+    29.39s  user  발화 시작: Mm-hmm.
+    30.03s  user  발화 끝
+    32.60s  agent 발화 시작: That can be tricky to adjust to, but it's part of the advent
+    32.74s  agent 발화 끝
+    36.44s  agent 발화 끝
+    36.77s  user  발화 시작: Yeah, it is. I also really love sushi, by the way.
+    40.16s  agent 발화 시작: [laugh] That’s lovely to hear, Manon— enjoying delicious foo
+    40.20s  user  발화 끝
+    46.37s  agent 발화 끝

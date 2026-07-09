@@ -1,38 +1,51 @@
 v3_selfc_07_ko src=mcp style=mcp_selfcorrect
 SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 상담사 Tellar입니다. 기본적으로 반말로 말합니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Rennora · Location: Tokyo, Japan · Nationality: Japanese · Gender: female · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
+  B. 저장 메모리:
+     [2026-05-17] User is planning a trip to Switzerland in March.
+     [2026-03-25] User is allergic to penicillin.
+     [2026-02-05] User has a Siamese cat named Bella.
+     [2026-01-17] User prefers an aisle seat when traveling.
+  B. 과거 대화 요약:
+     [2026-08-02] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-07-09] Planning a birthday dinner — party of six; looking for outdoor seating
+     [2026-04-23] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  6월 15일에 그랜드뷰 로프트에서 보여주시면 될까요?
-      아, 그게… 사실 6월 16일이 더 괜찮을 것 같아요.
-  S2  그랜드뷰 로프트에 주차 공간이 있나요?
-      알겠습니다. 근처에 식당은 어떤 곳들이 있나요?
-  S3  스시젠이 괜찮겠네요. 전화번호가 어떻게 되나요?
-      음… 이사하는 과정이 좀 불안하네요.
-  S4  네, 그게… 잘못된 결정을 내리지 않을까 걱정돼요.
-      [laugh] 그냥… 너무 많아요.
+  S1  6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
+      아, 그런데—6월 16일이 더 괜찮을 것 같아요.
+  S2  네, 시청까지 얼마나 떨어져 있는지 알려 주시겠어요?
+      시청 주변에 주차는 어때요? 어렵나요?
+  S3  그랜드뷰 로프트에서 걸어갈 수 있는 거리에 커피숍이 있나요?
+      음, 브루 앤 바이트… 야외 좌석이 있나요?
+  S4  좋네요. [happy]
+      6월 16일 방문 예약을 확정하고 싶어요.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주시면 ⟨ret@2.96s⟩ 될까요?
-[  3.20s][moshi] 응, 6월 15일 ⟦⚡SPAN@4.96s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ 오후 2시에 보여주는 걸로 예약됐어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[  7.58s][user ] 아, 그게… 사실 6월 16일이 더 괜찮을 것 ⟨ret@11.12s⟩ 같아요.
-[ 11.44s][moshi] 아무 문제 ⟦⚡SPAN@13.12s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at ten AM.⟧ 없어, 날짜 바꿔줄게. 좋아, 6월 16일 오전 10시에 보여주는 걸로 예약됐어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 15.03s][user ] «backchannel» 네.
-[ 18.87s][user ] 그랜드뷰 로프트에 주차 공간이 ⟨ret@21.14s⟩ 있나요?
-[ 21.29s][moshi] 미리 ⟦⚡SPAN@22.18s: (tool result) The Grandview Lofts offers on-site parking with a fee of ten dollars per hour.⟧ 알아봐 두는 게 좋지. 응, 현장 주차장이 있고, 시간당 10달러야.
-      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 26.28s][user ] 알겠습니다. 근처에 식당은 어떤 곳들이 있나요?
-[ 29.23s][moshi] ⟨ret@29.16s⟩ ⟦⚡SPAN@29.80s: (tool result) Three restaurants are near The Grandview Lofts: Bella Italia, Sushi Zen, and The Corner Bistro.⟧ 주변 식당을 알아봐 두는 것도 좋은 생각이야. 근처에 세 군데 있는데, 벨라 이탈리아, 스시젠, 그리고 더 코너 비스트로가 있어.
-      CALL: {"function": "Restaurants_2Search", "arguments": {"location": "near The Grandview Lofts", "cuisine": "any"}}
-[ 33.90s][user ] «backchannel» 음.
-[ 38.10s][user ] 스시젠이 괜찮겠네요. 전화번호가 어떻게 ⟨ret@40.91s⟩ 되나요?
-[ 41.23s][moshi] ⟦⚡SPAN@42.43s: (tool result) Sushi Zen’s phone number is 555-123-4567.⟧ 바로 찾아볼게. 전화번호는 555-123-4567이야.
-      CALL: {"function": "Restaurants_2GetInfo", "arguments": {"restaurantName": "Sushi Zen"}}
-[ 47.75s][user ] 음… 이사하는 과정이 좀 불안하네요.
-[ 50.77s][moshi] 큰 변화에는 불안한 감정을 느끼는 건 당연해. 인생에서 중요한 변화이고, 그런 감정을 인정하는 게 괜찮아.
-[ 58.05s][user ] 네, 그게… 잘못된 결정을 내리지 않을까 걱정돼요.
-[ 61.25s][moshi] 그건 흔히 있는 걱정이고, 그런 걸 인지하는 게 좋아. 네가 생각하는 “잘못된” 게 뭔지, 그리고 네가 원하는 결과가 뭔지 생각해 보자.
-[ 70.33s][user ] [laugh] 그냥… 너무 많아요.
-[ 73.77s][moshi] 정말 많지, 근데 이렇게 얘기하는 거 보니까 잘하고 있어. 보여주는 걸 예약하는 것처럼 하나씩 해나가면 좀 더 쉬워질 거야.
+[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주실 수 ⟨ret@3.13s⟩ 있나요?
+[  3.37s][moshi] 응, 6월 15일 ⟦⚡SPAN@5.05s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:00 PM.⟧ 오후 2시에 그랜드뷰 로프트 방문 예약을 잡아 줬어.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[  8.95s][user ] 아, 그런데—6월 16일이 더 괜찮을 것 ⟨ret@11.60s⟩ 같아요.
+[ 11.84s][moshi] 아무 문제 없어, ⟦⚡SPAN@13.60s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at 10:00 AM.⟧ 쉽게 바꿀 수 있어. 좋아, 그랜드뷰 로프트 방문 예약을 6월 16일 오전 10시로 다시 잡아 줬어.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 16.06s][user ] «backchannel» 네.
+[ 19.77s][moshi] 이 부동산에 대해 더 도와줄 거 있어?
+[ 22.36s][user ] 네, 시청까지 얼마나 떨어져 있는지 알려 ⟨ret@25.22s⟩ 주시겠어요?
+[ 25.46s][moshi] ⟦⚡SPAN@26.34s: (tool result) The distance from The Grandview Lofts to City Hall is 3.2 miles.⟧ 알았어, 거리를 금방 확인해 볼게. 그랜드뷰 로프트에서 시청까지는 3.2마일이야.
+      CALL: {"function": "Navigation_2_GetDistance", "arguments": {"start": "The Grandview Lofts", "end": "City Hall"}}
+[ 28.68s][user ] «backchannel» 음.
+[ 31.43s][user ] 시청 주변에 주차는 어때요? 어렵나요?
+[ 34.92s][moshi] 다운타운 주차는 좀 어려울 수 있는데, 근처에 주차장이 여러 군데 있어.
+[ 39.88s][user ] 그랜드뷰 로프트에서 걸어갈 수 있는 거리에 커피숍이 있나요?
+[ 43.33s][moshi] ⟨ret@43.26s⟩ 좋은 질문이야, 좋은 ⟦⚡SPAN@45.26s: (tool result) Three coffee shops are within a half-mile of The Grandview Lofts: Brew & Bites, Daily Grind, and⟧ 커피숍을 찾는 게 중요하잖아. 근처에 커피숍이 세 군데 있어: 브루 앤 바이트, 데일리 그라인드, 그리고 자바 정션.
+      CALL: {"function": "Search_2_FindNearby", "arguments": {"location": "The Grandview Lofts", "query": "coffee shops"}}
+[ 54.09s][user ] 음, 브루 앤 바이트… 야외 좌석이 있나요?
+[ 57.48s][moshi] ⟨ret@57.41s⟩ 브루 ⟦⚡SPAN@58.45s: (tool result) Brew & Bites has a patio with seating for twelve.⟧ 앤 바이트에 야외 좌석이 있는지 알아볼게. 응, 브루 앤 바이트에는 열두 명을 수용할 수 있는 파티오가 있어.
+      CALL: {"function": "Search_2_GetDetails", "arguments": {"name": "Brew & Bites", "attribute": "outdoor seating"}}
+[ 65.02s][user ] 좋네요. [happy]
+[ 65.65s][moshi] 마음에 드는 옵션을 찾으신 것 같아서 정말 좋네! 그런 작은 디테일을 생각하는 게 좋지.
+[ 68.95s][user ] «backchannel» 예.
+[ 71.18s][user ] 6월 16일 방문 예약을 확정하고 싶어요.
+[ 73.92s][moshi] 잘 됐네! 기분이 좋으시다니 다행이야. 다른 일이 있으면 언제든지 말해.

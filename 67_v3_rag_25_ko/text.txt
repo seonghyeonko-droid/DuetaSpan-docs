@@ -1,62 +1,81 @@
 v3_rag_25_ko src=hotpotqa style=v2
-SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰빙 코치 Zura입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰니스 코치, Zura입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Morgan · Location: Toronto, Canada · Nationality: Canadian · Gender: non-binary · Age: late 20s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
+  B. 저장 메모리:
+     [2026-08-03] User's home address is 461 Cedar Lane.
+     [2026-06-25] User is planning a trip to New Zealand in May.
+     [2026-06-11] User is lactose-intolerant.
+     [2026-05-11] User prefers a window seat when traveling.
+     [2026-01-21] User is allergic to cat dander.
+  B. 과거 대화 요약:
+     [2026-07-21] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
+     [2026-04-26] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  안녕하세요. 잭 소크 선수랑 라파엘라 레지 선수에 대해 읽다가 두 분이 프로 선수로 활동했던 스포츠가 뭔지 궁금해졌어요. 아무
-      테니스군요. 잭 소크 선수는 농구도 했던 것 같기도 하고… 분명 그런 걸 읽었던 것 같은데요.
-      알겠습니다, 알겠습니다. 4번 우승이군요. 그런데 라파엘라 레지 선수는요? 저는 이름도 처음 들어봐요. 실력이 좋았나요?
-      16위요? 꽤 좋은데요! 그때는 톱 플레이어였던 거군요? 그런데… 테니스는 여성에게 비교적 최근에 인기 있는 스포츠가 아니었나
-  S2  와, 1919년이요! 그렇게 오래전부터 시작됐다는 건 몰랐어요. 하지만… 레지 선수, 소크 선수… 복식 경기는 같이 해본 적이
-      전혀 없나요? 단 한 번도 없나요? 그건… 놀랍네요. 테니스처럼 세계적인 스포츠인데, 언젠가는 같이 뛸 수도 있지 않았을까요?
-      포스필 선수… 그 이름은 알겠네요. 좋아요, 소크 선수에게는 파트너가 있었군요. 레지 선수에게는 누가 있었나요? 보통 누구와 
-  S3  체키니 선수… 알겠습니다. 시대도 다르고, 파트너도 다르네요. 이제 모든 게 이해가 되네요.
-      1993년… 정말 오래됐네요. 소크 선수는 아직도 뛰고 있나요? 아니면 은퇴했나요?
-      애틀랜타… 좋아요. 아직 완전히 은퇴하지 않았군요. 다행이에요. 궁금했던 걸 알아서 기쁩니다.
-  S4  음. 나쁘지 않네요. 승리 기록이군요. 그래도 뭔가 있네요. 수라 씨, 감사합니다.
-      1번 우승… 그래도 우승은 우승이잖아요! 모든 승리는 소중한 거겠죠.
-      8위요! 정말 좋은데요. 좋아요, 이제 만족합니다. 감사합니다.
+  S1  안녕하세요. 잭 소크 선수와 라파엘라 레지 선수에 대해 읽어보셨군요. 그 두 분이 프로 선수로 활동했던 스포츠가 뭔가요?
+      테니스군요. 저는 잭 소크 선수가 다른 종목도 했을 거라고 생각했는데… 야구 같은 거요?
+      8위요? 꽤 좋네요! 라파엘라 레지 선수도 여자 테니스에서 그렇게 높은 랭킹을 기록했나요?
+      26위… 잭 소크 선수보다는 조금 낮네요. 메이저 토너먼트에서 우승한 적은 있나요?
+  S2  단식 우승이 딱 한 번이라니… 26위까지 올랐던 선수 치고는 적은 것 같네요.
+      그러니까, 잭 소크 선수가 전체적으로 더 성공적이었던 것 같네요. 그랜드 슬램은 어땠나요?
+      4라운드밖에 안 됐어요?… 그다지 압도적인 성적은 아니네요. 레지 선수는 더 잘 나갔나요?
+      8강이 4라운드보다는 낫네요. 두 분은 어느 나라 출신인가요?
+  S3  미국과 이탈리아… 꽤 다르네요. 두 분은 서로 경기해본 적이 있나요?
+      서로 경기해본 적이 없다니, 놀랍네요. 시대가 달랐나 봐요.
+      최근에 은퇴했군요. 안타깝네요. 레지 선수는 지금도 테니스와 관련해서 활동하고 있나요?
+      코치요! 좋네요. 아직도 스포츠의 일원이라는 뜻이네요.
+  S4  피클볼요? 정말요?… 뜻밖이네요.
+      800만 명이나요! 와. 저도 한번 해볼까 봐요.
+      생각해볼게요. 감사합니다, 주라.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 안녕하세요. 잭 소크 선수랑 라파엘라 레지 선수에 대해 읽다가 두 분이 프로 선수로 활동했던 스포츠가 뭔지 궁금해졌어요. 아무리 생각해도 잘 안 떠오르네요.
-[ 11.49s][moshi] 물론이죠, 가끔은 기억이 잘 안 날 때도 있으시죠. 한번 찾아볼까요?
-[ 15.17s][moshi] ⟨ret@14.77s⟩ 좋은 ⟦⚡SPAN@15.97s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 질문이에요. 잭 소크 선수와 라파엘라 레지 선수 두 분 모두 프로 테니스 선수로 활동하셨습니다.
-[ 16.88s][user ] «backchannel» 네.
-[ 20.67s][user ] 테니스군요. 잭 소크 선수는 농구도 했던 것 같기도 하고… 분명 그런 걸 읽었던 것 같은데요.
-[ 28.23s][moshi] 선수들을 헷갈릴 때가 있으시죠, 특히 다재다능한 선수들은요. 하지만 기록에 따르면 테니스가 그의 주된 활동이었습니다.
-[ 35.32s][moshi] ⟨ret@35.16s⟩ 잭 소크 ⟦⚡SPAN@36.68s: Jack Sock won four ATP titles in singles and one in doubles during his career.⟧ 선수는 ATP 단식에서 4번 우승했고, 복식에서도 1번 우승했습니다.
-[ 40.81s][user ] 알겠습니다, 알겠습니다. 4번 우승이군요. 그런데 라파엘라 레지 선수는요? 저는 이름도 처음 들어봐요. 실력이 좋았나요?
-[ 49.53s][moshi] [laugh] 모든 이름을 알 수는 없죠, 같은 스포츠 안에서도요. 꽤 괜찮은 선수였습니다.
-[ 55.05s][moshi] ⟨ret@54.65s⟩ 라파엘라 레지 ⟦⚡SPAN@56.65s: Raffaella Reggi reached a career-high singles ranking of 16 in 1989.⟧ 선수의 업적을 한번 살펴볼까요. 라파엘라 레지 선수의 최고 단식 랭킹은 천구백팔십구 년에 16위였습니다.
-[ 63.12s][user ] 16위요? 꽤 좋은데요! 그때는 톱 플레이어였던 거군요? 그런데… 테니스는 여성에게 비교적 최근에 인기 있는 스포츠가 아니었나요?
-[ 73.39s][moshi] 흔히 오해하시는 부분입니다. 여성들은 수십 년 동안 테니스에서 높은 수준으로 경쟁해 왔습니다.
-[ 79.16s][moshi] ⟨ret@79.00s⟩ 여성 테니스 ⟦⚡SPAN@81.00s: Suzanne Lenglen won six Wimbledon titles between 1919 and 1925.⟧ 역사를 자세히 찾아볼까요. 수잔 랭글런 선수는 천구백십구 년에서 1925년 사이에 윔블던에서 6번 우승했습니다.
-[ 89.12s][user ] 와, 1919년이요! 그렇게 오래전부터 시작됐다는 건 몰랐어요. 하지만… 레지 선수, 소크 선수… 복식 경기는 같이 해본 적이 있나요?
-[ 99.12s][moshi] 재미있는 질문이네요. 그럴 가능성이 있었는지 확인하려면 좀 더 자세히 알아봐야 할 것 같아요.
-[104.69s][moshi] ⟨ret@104.45s⟩ 두 분이 프로 ⟦⚡SPAN@105.81s: Jack Sock and Raffaella Reggi never partnered in a professional doubles match.⟧ 복식 경기에 함께 출전한 기록은 없습니다.
-[108.41s][user ] 전혀 없나요? 단 한 번도 없나요? 그건… 놀랍네요. 테니스처럼 세계적인 스포츠인데, 언젠가는 같이 뛸 수도 있지 않았을까요?
-[119.29s][moshi] 가능성은 무궁무진하죠. 하지만 때로는 운이 좋지 않게도, 특정한 조합은 이루어지지 않기도 합니다.
-[125.39s][moshi] ⟨ret@125.08s⟩ 잭 ⟦⚡SPAN@126.12s: Jack Sock’s most frequent doubles partner was Vasek Pospisil.⟧ 소크 선수의 복식 파트너를 찾아볼까요. 바섹 포스필 선수가 잭 소크 선수와 가장 많이 복식 경기를 함께 했습니다.
-[130.97s][user ] «backchannel» 그렇군요.
-[133.82s][user ] 포스필 선수… 그 이름은 알겠네요. 좋아요, 소크 선수에게는 파트너가 있었군요. 레지 선수에게는 누가 있었나요? 보통 누구와 함께 경기했나요?
-[145.00s][moshi] 정기적인 파트너를 찾아보면 두 분의 경력을 더 잘 이해할 수 있을 거예요.
-[149.13s][moshi] ⟨ret@148.73s⟩ 라파엘라 레지 선수의 ⟦⚡SPAN@150.73s: Sandra Cecchini was Raffaella Reggi’s most frequent doubles partner.⟧ 가장 잦은 복식 파트너를 찾아볼까요. 산드라 체키니 선수가 라파엘라 레지 선수와 가장 많이 복식 경기를 함께 했습니다.
-[157.93s][user ] 체키니 선수… 알겠습니다. 시대도 다르고, 파트너도 다르네요. 이제 모든 게 이해가 되네요.
-[165.53s][moshi] 대부분은 시기와 상황에 따라 달라지는 것 같아요. 개인의 여정이라고 할 수 있죠.
-[169.99s][moshi] ⟨ret@169.75s⟩ 두 분의 시대적 ⟦⚡SPAN@171.75s: Raffaella Reggi retired from professional tennis in 1993.⟧ 배경을 이해하는 것이 도움이 될 거예요. 라파엘라 레지 선수는 천구백구십삼 년에 프로 테니스 선수 생활을 마감했습니다.
-[175.66s][user ] «backchannel» 네.
-[178.85s][user ] 1993년… 정말 오래됐네요. 소크 선수는 아직도 뛰고 있나요? 아니면 은퇴했나요?
-[185.69s][moshi] 잭 소크 선수는 아직도 활동하고 있지만, 최근 부상으로 어려움을 겪고 있습니다.
-[189.69s][moshi] ⟨ret@189.29s⟩ 잭 소크 선수의 ⟦⚡SPAN@191.29s: Jack Sock last competed in the 2023 Atlanta Open.⟧ 가장 최근 토너먼트 출전 기록을 찾아볼까요. 잭 소크 선수의 가장 최근 토너먼트는 이천이십삼 년 애틀랜타 오픈이었습니다.
-[198.29s][user ] 애틀랜타… 좋아요. 아직 완전히 은퇴하지 않았군요. 다행이에요. 궁금했던 걸 알아서 기쁩니다.
-[205.64s][moshi] 확실해지는 건 좋은 일이죠. 때로는 세부 사항을 추적하는 것만으로도 마음의 평화를 얻을 수 있습니다.
-[211.82s][moshi] ⟨ret@211.58s⟩ 각 선수의 ⟦⚡SPAN@213.58s: Jack Sock has a career win-loss record of 148–135 in singles.⟧ 독특한 여정을 존중하는 것도 중요합니다. 잭 소크 선수의 단식 기록은 148승 135패입니다.
-[216.92s][user ] «backchannel» 네.
-[219.38s][user ] 음. 나쁘지 않네요. 승리 기록이군요. 그래도 뭔가 있네요. 수라 씨, 감사합니다.
-[225.68s][moshi] 천만에요. 이러한 세부 사항을 기억하는 것은 그들의 헌신을 기리는 방법이 될 수 있습니다.
-[230.79s][moshi] ⟨ret@230.47s⟩ 노력 ⟦⚡SPAN@231.67s: Raffaella Reggi won one WTA singles title during her career.⟧ 뒤에 숨겨진 결과를 기억하는 것도 중요합니다. 라파엘라 레지 선수는 프로 선수 생활 동안 WTA 단식에서 1번 우승했습니다.
-[239.55s][user ] 1번 우승… 그래도 우승은 우승이잖아요! 모든 승리는 소중한 거겠죠.
-[245.18s][moshi] 맞아요. 아무리 작더라도 모든 발걸음은 그들의 헌신을 보여주는 증거입니다.
-[250.25s][moshi] ⟨ret@250.17s⟩ 각자의 성공이 다르게 보일 ⟦⚡SPAN@252.17s: Jack Sock reached a career-high ranking of number eight in 2017.⟧ 수 있다는 점을 기억하는 것이 중요합니다. 잭 소크 선수는 이천십칠 년에 세계 랭킹 8위에 올랐습니다.
-[257.32s][user ] 8위요! 정말 좋은데요. 좋아요, 이제 만족합니다. 감사합니다.
-[262.07s][moshi] 천만에요. 모든 것을 더 잘 이해하신 것 같아서 정말 기쁩니다.
+[  0.00s][user ] 안녕하세요. 잭 소크 선수와 라파엘라 레지 선수에 대해 읽어보셨군요. 그 두 분이 프로 선수로 활동했던 스포츠가 ⟨ret@7.96s⟩ 뭔가요?
+[  8.12s][moshi] 아, 좋은 질문이에요. 두 ⟦⚡SPAN@9.96s: Jack Sock and Raffaella Reggi both competed professionally in the sport of tennis.⟧ 분 선수에 대해 이야기하게 되어 기쁩니다.
+[ 12.34s][moshi] 잭 소크 선수와 라파엘라 레지 선수 모두 프로 테니스 선수였습니다.
+[ 13.53s][user ] «backchannel» 네.
+[ 16.24s][user ] 테니스군요. 저는 잭 소크 선수가 다른 종목도 했을 거라고 생각했는데… 야구 같은 거요?
+[ 23.27s][moshi] ⟨ret@23.11s⟩ 운동선수들은 여러 종목에서 ⟦⚡SPAN@25.11s: Jack Sock achieved a career-high ATP singles ranking of world number eight in 2017.⟧ 뛰어난 재능을 보이는 경우가 많으니 그렇게 생각하실 수도 있겠네요.
+[ 28.36s][moshi] 잭 소크 선수의 남자 단식 최고 랭킹은 세계 8위였습니다.
+[ 31.27s][user ] 8위요? 꽤 좋네요! 라파엘라 레지 선수도 여자 테니스에서 그렇게 높은 랭킹을 ⟨ret@37.61s⟩ 기록했나요?
+[ 38.01s][moshi] 업적을 비교하는 건 ⟦⚡SPAN@39.61s: Raffaella Reggi reached her highest WTA singles ranking of twenty-six in November of 1986.⟧ 당연하죠. 두 분의 길은 달랐습니다.
+[ 41.24s][moshi] 라파엘라 레지 선수의 최고 WTA 단식 랭킹은 1986년 26위였습니다.
+[ 47.42s][user ] 26위… 잭 소크 선수보다는 조금 낮네요. 메이저 토너먼트에서 우승한 적은 ⟨ret@53.58s⟩ 있나요?
+[ 53.74s][moshi] 랭킹이 모든 것을 ⟦⚡SPAN@55.58s: Raffaella Reggi won one singles title and seven doubles titles during her career.⟧ 말해주지는 않으니까요. 선수로서 어떤 영향을 미쳤는지도 봐야 합니다.
+[ 58.80s][moshi] 라파엘라 레지 선수는 단식에서 1번, 복식에서 7번 우승했습니다.
+[ 64.14s][user ] 단식 우승이 딱 한 번이라니… 26위까지 올랐던 선수 치고는 적은 것 ⟨ret@69.78s⟩ 같네요.
+[ 70.02s][moshi] 물론, 메이저 챔피언십 우승 ⟦⚡SPAN@71.78s: Jack Sock won four ATP titles in singles and thirteen in doubles throughout his career.⟧ 횟수 외에도 성공을 측정하는 방법은 여러 가지가 있습니다.
+[ 74.91s][moshi] 잭 소크 선수는 ATP 단식에서 4번, 복식에서 13번 우승했습니다.
+[ 79.75s][user ] 그러니까, 잭 소크 선수가 전체적으로 더 성공적이었던 것 같네요. 그랜드 슬램은 ⟨ret@85.71s⟩ 어땠나요?
+[ 86.03s][moshi] 그랜드 ⟦⚡SPAN@86.75s: Jack Sock reached the fourth round of the 2017 US Open, his best Grand Slam singles result.⟧ 슬램에 집중하면 최고 수준에서 업적을 비교하기 좋습니다.
+[ 89.68s][moshi] 잭 소크 선수가 그랜드 슬램 단식 토너먼트에서 가장 좋은 성적은 4라운드였습니다.
+[ 93.41s][user ] «backchannel» 그렇군요.
+[ 95.77s][user ] 4라운드밖에 안 됐어요?… 그다지 압도적인 성적은 아니네요. 레지 선수는 더 잘 ⟨ret@102.30s⟩ 나갔나요?
+[102.69s][moshi] 선수들이 경쟁했던 시대를 ⟦⚡SPAN@104.30s: Raffaella Reggi reached the quarter-finals of the 1987 Australian Open, her best Grand Slam result.⟧ 고려하는 것이 중요합니다.
+[105.62s][moshi] 라파엘라 레지 선수는 1987년 그랜드 슬램에서 8강에 진출한 것이 최고 성적이었습니다.
+[111.45s][user ] 8강이 4라운드보다는 낫네요. 두 분은 어느 나라 출신인가요?
+[115.94s][moshi] ⟨ret@115.70s⟩ 두 분의 국가적 스포츠 ⟦⚡SPAN@117.70s: Jack Sock is from Lincoln, Nebraska, while Raffaella Reggi is from Rome, Italy.⟧ 정체성을 생각해보는 것도 좋은 질문입니다.
+[119.20s][moshi] 잭 소크 선수는 미국 네브래스카 출신이고, 라파엘라 레지 선수는 이탈리아 출신입니다.
+[122.73s][user ] «backchannel» 네.
+[124.80s][user ] 미국과 이탈리아… 꽤 다르네요. 두 분은 서로 경기해본 적이 ⟨ret@129.32s⟩ 있나요?
+[129.72s][moshi] 두 분의 길이 ⟦⚡SPAN@131.32s: Jack Sock and Raffaella Reggi never competed in a professional match against each other.⟧ 직접적으로 경쟁에서 교차했는지 알아보는 것도 흥미롭네요.
+[133.65s][moshi] 잭 소크 선수와 라파엘라 레지 선수는 프로 경기에서 서로 맞붙은 적이 없습니다.
+[138.85s][user ] 서로 경기해본 적이 없다니, 놀랍네요. 시대가 달랐나 ⟨ret@143.30s⟩ 봐요.
+[143.54s][moshi] 선수들이 직접 경쟁하는지 여부는 ⟦⚡SPAN@145.30s: Jack Sock retired from professional tennis in November of 2023.⟧ 시기가 중요한 역할을 합니다.
+[147.07s][moshi] 잭 소크 선수는 2023년 11월에 프로 테니스에서 은퇴했습니다.
+[150.29s][user ] «backchannel» 네.
+[151.91s][user ] 최근에 은퇴했군요. 안타깝네요. 레지 선수는 지금도 테니스와 관련해서 활동하고 ⟨ret@158.21s⟩ 있나요?
+[158.53s][moshi] 선수들이 ⟦⚡SPAN@159.41s: Raffaella Reggi is currently a tennis coach in Rome, Italy.⟧ 은퇴한 후에도 무엇을 하는지 궁금해하는 건 멋진 일입니다.
+[162.37s][moshi] 라파엘라 레지 선수는 현재 이탈리아 로마에서 테니스 코치로 일하고 있습니다.
+[167.18s][user ] 코치요! 좋네요. 아직도 스포츠의 일원이라는 뜻이네요.
+[171.08s][moshi] ⟨ret@171.00s⟩ 자신이 좋아하는 것에 ⟦⚡SPAN@173.00s: Jack Sock is now a pickleball professional, having switched sports after retirement.⟧ 계속 참여하는 것은 성장하고 웰빙을 증진하는 아름다운 방법입니다.
+[176.93s][moshi] 잭 소크 선수는 테니스 은퇴 후 프로 피클볼을 치고 있습니다.
+[180.12s][user ] 피클볼요? 정말요?… ⟨ret@182.77s⟩ 뜻밖이네요.
+[183.17s][moshi] 새로운 도전을 받아들이고 ⟦⚡SPAN@184.77s: Pickleball is one of the fastest-growing sports in the United States, with over eight million players.⟧ 활동에서 즐거움을 찾는 의지를 보여줍니다.
+[186.99s][moshi] 피클볼은 미국에서 빠르게 성장하는 스포츠로, 800만 명이 넘는 플레이어가 있습니다.
+[192.62s][user ] 800만 명이나요! 와. 저도 한번 해볼까 봐요.
+[196.91s][moshi] 새로운 관심사를 탐구하는 것은 지평을 넓히고 웰빙을 증진하는 좋은 방법입니다.
+[199.93s][user ] «backchannel» 네.
+[201.99s][user ] 생각해볼게요. 감사합니다, 주라.
+[204.91s][moshi] 천만에요. 두 분 선수에 대해 이야기하게 되어 즐거웠습니다.

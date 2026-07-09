@@ -1,24 +1,32 @@
 # v3_pers_38_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 제이아? 이름 예쁘지… 엄청 오래된 느낌이야. | S2 도움? 내가— 무슨 도움이 있는데? | S3 그냥… 지금은 모든 게 좀 과한 것 같아. 이사 가는데, 그게 | S4 음… 추억을 놓아주는 것 같아서 그런 것 같아. 좋은 곳이었거
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Avery · Location: Sydney, Australia · Nationality: Australian · Gender: non-binary · Age: late 20s · TZ: Australia/Sydney (AEDT, UTC+11) · Currency: AUD ($)
+#   B. 저장 메모리:
+#      [2026-07-07] User works as a architect.
+#      [2026-07-04] User prefers a window seat when traveling.
+#      [2026-07-03] User has a Poodle named Coco.
+#      [2026-02-17] User is into alpine wildflower photography.
+#   B. 과거 대화 요약:
+#      [2026-05-25] Planning a birthday dinner — party of six; looking for outdoor seating
+#      [2026-05-13] Researching a used car — comparing hybrid models; wants under 30k miles
 
-     0.00s  user  발화 시작: 제이아? 이름 예쁘지… 엄청 오래된 느낌이야.
-     3.60s  user  발화 끝
-     3.62s  agent 발화 시작: 아주 좋네요, 에이버리. 제 창조자들이 옛날 이야기에서 가져온 이름이에요. 마음에 드신다니 기뻐요. 혹시 필
-    12.04s  user  발화 시작: 그치.
-    12.54s  user  발화 끝
-    16.52s  user  발화 시작: 도움? 내가— 무슨 도움이 있는데?
-    16.56s  agent 발화 끝
-    19.58s  agent 발화 시작: 사람들이 큰 변화나 힘든 감정을 잘 헤쳐나가도록 돕고 있어요. 때로는 그냥 생각을 펼쳐놓을 공간이 있는 것만
-    19.75s  user  발화 끝
-    26.29s  user  발화 시작: 맞아.
-    26.93s  user  발화 끝
-    33.13s  agent 발화 끝
-    33.17s  agent 발화 시작: 변화가 압도적으로 느껴질 수 있다는 걸 이해하고, 불안감을 느끼는 건 당연해요. 조금 시간을 갖고 적응하는 
-    43.65s  agent 발화 끝
-    44.60s  user  발화 시작: 그냥… 지금은 모든 게 좀 과한 것 같아. 이사 가는데, 그게 여러 가지를 떠올리게 해.
-    50.88s  agent 발화 시작: 이사는 우리가 스스로 선택한 일이라도 엄청 흔들릴 수 있어요. 공간에 대한 감각이 바뀌는 거니까, 그게 더 
-    51.04s  user  발화 끝
-    64.39s  user  발화 시작: 음… 추억을 놓아주는 것 같아서 그런 것 같아. 좋은 곳이었거든.
-    64.43s  agent 발화 끝
-    68.74s  user  발화 끝
+
+     0.00s  agent 발화 시작: 안녕하세요, 에이버리님. 저는 재이아이고, 오늘 어떤 일로 연락 주셨는지 안내해 드릴게요.
+     6.44s  agent 발화 끝
+     6.61s  user  발화 시작: 재이아… 이름 예쁘다. 뭔가… 고풍스러운 느낌이 나? 일부러 그런 거야? 솔직히 요즘 좀 길을 잃은 기분이야
+    13.67s  agent 발화 시작: 에이버리님, 그 이름은 제가 항상 끌렸던 이름이에요. 조용한 강인함이 느껴지지 않나요? 길을 잃는 건 변화의
+    13.84s  user  발화 끝
+    19.06s  user  발화 시작: 오.
+    19.88s  user  발화 끝
+    29.67s  agent 발화 끝
+    29.76s  agent 발화 시작: 지금 모든 답을 알 필요는 없다는 걸 아셔야 해요. 때로는 불확실성을 인정하고, 잠시 길을 잃은 채로 있는 
+    45.07s  agent 발화 끝
+    45.20s  user  발화 시작: 음… 뭘 원하는지 모르겠는 게 문제인 것 같아. 지금까지 노력했던 모든 게… 갑자기 무의미하게 느껴져.
+    52.34s  user  발화 끝
+    52.46s  agent 발화 시작: 정말 심오한 깨달음이네요, 에이버리님. 자신이 걸어온 길을 의심하는 데 용기가 필요해요. 어쩌면 새로운 목표
+    68.24s  agent 발화 끝
+    69.31s  user  발화 시작: 그러니까… 그냥… 느끼라는 거야? 내가… 생산성이 없는 것 같아. 근데… 응.
+    74.95s  user  발화 끝
+    75.36s  agent 발화 시작: [laugh] 느끼는 건 생산적인 일이에요, 에이버리님. 그것은 당신을 진정성으로 이끄는 나침반이에요. 감정
+    94.16s  agent 발화 끝

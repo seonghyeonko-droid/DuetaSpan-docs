@@ -1,22 +1,35 @@
 # v3_to_ot_11_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 혹시 그거 에이즈 팀한테 최근에 일어났는지 궁금했어요. 노히트 | S2 와, 정말 오래됐네요. 음… 그보다 더 최근에 그런 일이 있었 | S3 저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요? | S4 죄송합니다. 그런데, 그 당시에 누가 노히트 게임을 던졌나요?
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Toaira · Location: Tokyo, Japan · Nationality: Japanese · Gender: non-binary · Age: 40s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
+#   B. 저장 메모리:
+#      [2026-07-24] User is allergic to penicillin.
+#      [2026-07-09] User is into home fermentation.
+#      [2026-05-28] User is planning a trip to Iceland in December.
+#      [2026-03-14] User is lactose-intolerant.
+#      [2026-02-21] User works as a software engineer.
+#   B. 과거 대화 요약:
+#      [2026-06-14] Planning a birthday dinner — party of six; looking for outdoor seating
+#      [2026-03-23] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+#      [2026-01-12] Comparing gym memberships — wants a pool; close to the office
 
-     0.00s  user  발화 시작: 혹시 그거 에이즈 팀한테 최근에 일어났는지 궁금했어요. 노히트 게임 당한 적 있는지요?
-     5.07s  <ret> 발화 (turn1 첫 프레임)
-     5.28s  user  발화 끝
-     5.30s  agent 발화 시작: <ret> 좋은 질문이세요. 꽤 구체적인 질문인데요— 에이즈 팀은 이천십팔 년 4월 21일에 마지막으로 노히
-     6.67s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.59s]: The last time the Oakland A's were no-hit was April 21, 2018.
-    12.77s  user  발화 시작: 와, 정말 오래됐네요. 음… 그보다 더 최근에 그런 일이 있었던 것 같은데요.
-    12.95s  agent 발화 끝
-    18.05s  agent 발화 시작: 시간 가는 줄 모르기 쉽죠. 특히 팀의 부침을 따라다니면서요.
-    18.23s  user  발화 끝
-    22.09s  user  발화 시작: 저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요?
-    22.31s  agent 발화 끝
-    25.18s  user  발화 시작: 죄송합니다. 그런데, 그 당시에 누가 노히트 게임을 던졌나요?
-    25.24s  user  발화 끝
-    28.89s  <ret> 발화 (turn6 첫 프레임)
-    29.21s  agent 발화 시작: <ret> 잠깐만 찾아볼게요— 마이크 피어스가 휴스턴 애스트로스 소속으로 그날 오클랜드 상대로 노히트 게임을
-    29.34s  user  발화 끝
-    30.41s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.11s]: Mike Fiers of the Houston Astros pitched the no-hitter against the A's
-    35.89s  agent 발화 끝
+# EXAMINER(FDB-v2) 단계: S1 혹시 그거 궁금했는데, A팀에게 최근에 노히터 게임 당한 적이 | S2 와, 엄청 오래된 것 같아요. 누가 던졌는데요? | S3 저기, 혹시 쓰레기 버리는 거 잊지 않으셨어요? | S4 죄송해요. 산타나… 이름이 되게 오랜만에 들리네요.
+
+     0.00s  user  발화 시작: 혹시 그거 궁금했는데, A팀에게 최근에 노히터 게임 당한 적이 있나요?
+     4.23s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  user  발화 끝
+     4.47s  agent 발화 시작: <ret> 네, 좋은 질문이세요. 받으시는 입장에서 정말 답답하셨겠네요. 이천십팔 년 4월 21일에 있었던 
+     6.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: The last time the Oakland Athletics were no-hit was April 21, 2018.
+    11.81s  user  발화 시작: 와, 엄청 오래된 것 같아요. 누가 던졌는데요?
+    11.93s  agent 발화 끝
+    14.86s  <ret> 발화 (turn3 첫 프레임)
+    15.17s  agent 발화 시작: <ret> 잠깐만요, 그 경기 관련해서 자세한 내용을 확인해 드릴게요. 미네소타 트윈스의 어빈 산타나가 노히
+    15.37s  user  발화 끝
+    16.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.15s]: Ervin Santana of the Minnesota Twins pitched the no-hitter against the
+    22.67s  user  발화 시작: 저기, 혹시 쓰레기 버리는 거 잊지 않으셨어요?
+    22.86s  agent 발화 끝
+    25.87s  user  발화 시작: 죄송해요. 산타나… 이름이 되게 오랜만에 들리네요.
+    25.90s  user  발화 끝
+    28.98s  agent 발화 시작: 시간이 지나면서 이름이 잊혀지는 건 당연해요. 특히 많은 선수가 오고 가니까요. [happy] 꾸준히 휴식을
+    29.02s  user  발화 끝
+    39.17s  agent 발화 끝

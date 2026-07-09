@@ -1,77 +1,96 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
 SYSTEM: <system> You are Oruus, a gentle and reflective counselor who helps people with health and daily habits. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Julia · Location: Berlin, Germany · Nationality: German · Gender: female · Age: 40s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
+  B. 저장 메모리:
+     [2026-07-26] User's home address is 528 Birch Road.
+     [2026-05-06] User is lactose-intolerant.
+     [2026-04-21] User prefers a window seat when traveling.
+     [2026-03-15] User is planning a trip to Iceland in May.
+     [2026-02-01] User's favorite cuisine is Mexican.
+  B. 과거 대화 요약:
+     [2026-01-13] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Show me buses from Chicago to Denver for three passengers on May tenth
-      What are the prices for those?
-      I— I mean, is there anything earlier than seven AM?
-      What about flying?
-  S2  That Frontier flight sounds good. Can you book it?
-      Perfect. And could you set a reminder for me to leave for the airport 
-      Great, thank you.
-  S3  Is there anything I should pack differently for Denver?
-      That's helpful. What about altitude sickness?
-      Should I drink a lot of water?
-  S4  Okay, good to know. And are there any good restaurants there?
-      Root Down sounds interesting. Can you tell me more?
-      Perfect. Thanks again for all your help!
+      That 8:00 AM one sounds good. Book it for me.
+      Can you send me the confirmation details to my email?
+      What’s the weather like in Denver on May tenth?
+      That sounds lovely. I— I mean, do they have good hiking trails near De
+  S2  Are there any that are good for beginners?
+      Waterton Canyon sounds good. How long will it take to get there by bus
+      Okay, that's manageable. Is there anything I should pack for that hike
+      [backchannel] Right.
+      Good advice. Can you set a reminder for me to pack my hiking gear tomo
+  S3  Thanks! What time does the bus to Waterton Canyon leave from downtown?
+      Perfect. I think I’m all set.
+      [backchannel] Mm-hmm.
+      One last thing— can you find me a good coffee shop near Waterton Canyo
+      Two point five miles is walkable. What's their address?
+  S4  Great. And are they open tomorrow morning?
+      Excellent. I think I'm really ready to go now.
+      [backchannel] Yeah.
+      I will. Thanks again for all your help, Oruus.
+      Actually, about that bus… I meant to say May eleventh, not May tenth. 
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.12s⟩ May tenth.
-[  4.52s][moshi] Let's explore ⟦⚡SPAN@5.64s: (tool result) Three buses are available on May tenth: a 7:00 AM departure on Greyhound, a 1:30 PM departure on⟧ some options for your trip. There are three buses available on May tenth—Greyhound at seven AM, FlixBus at one thirty PM, and Wanderu at nine PM.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[  9.06s][user ] «backchannel» Yeah.
-[ 15.79s][user ] What are the prices for ⟨ret@17.33s⟩ those?
-[ 17.56s][moshi] Certainly, ⟦⚡SPAN@18.37s: (tool result) The Greyhound bus departing at 7:00 AM costs one hundred fifty dollars for three passengers.⟧ let's check the fares. The Greyhound bus departing at seven AM costs one hundred fifty dollars for your group.
-      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_id": "Greyhound_7AM", "passengers": "three"}}
-[ 25.87s][moshi] ⟨ret@25.73s⟩ And ⟦⚡SPAN@26.69s: (tool result) The FlixBus departing at 1:30 PM costs one hundred twenty dollars for three passengers.⟧ for the FlixBus… FlixBus at one thirty PM is one hundred twenty dollars for the three of you.
-      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_id": "FlixBus_130PM", "passengers": "three"}}
-[ 32.74s][moshi] ⟨ret@32.51s⟩ Finally, let’s look ⟦⚡SPAN@33.95s: (tool result) The Wanderu bus departing at 9:00 PM costs one hundred eighty dollars for three passengers.⟧ at Wanderu. Wanderu at nine PM is the most expensive at one hundred eighty dollars.
-      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_id": "Wanderu_9PM", "passengers": "three"}}
-[ 39.63s][user ] I— I mean, is there anything earlier than seven AM?
-[ 43.36s][moshi] ⟨ret@43.28s⟩ Let me check for ⟦⚡SPAN@44.96s: (tool result) No buses are scheduled before 7:00 AM on May tenth from Chicago to Denver.⟧ earlier departures— Unfortunately, there are no buses before seven AM on May tenth.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three", "time": "before 7:00 AM"}}
-[ 49.81s][user ] What about ⟨ret@50.90s⟩ flying?
-[ 51.29s][moshi] A ⟦⚡SPAN@52.18s: (tool result) Four flights are available on May tenth: United at 8:00 AM for two hundred dollars, Southwest at⟧ very good question— There are four flights available—United at eight AM, Southwest at ten thirty, Frontier at two PM, and American at six PM.
-      CALL: {"function": "Flights_4_FindFlight", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[ 61.02s][moshi] ⟨ret@60.78s⟩ Each of ⟦⚡SPAN@61.90s: (tool result) The United flight departing at 8:00 AM costs six hundred dollars for three passengers.⟧ those is for all three passengers. The United flight at eight AM is six hundred dollars for your group.
-      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "United_8AM", "passengers": "three"}}
-[ 67.51s][moshi] ⟨ret@67.11s⟩ Let’s ⟦⚡SPAN@68.07s: (tool result) The Southwest flight departing at 10:30 AM costs five hundred forty dollars for three passengers⟧ check Southwest’s price. The Southwest flight at ten thirty AM is five hundred forty dollars.
-      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "Southwest_1030AM", "passengers": "three"}}
-[ 73.62s][moshi] ⟨ret@73.41s⟩ ⟦⚡SPAN@73.91s: (tool result) The Frontier flight departing at 2:00 PM costs four hundred fifty dollars for three passengers.⟧ And Frontier’s cost… Frontier at two PM is the most affordable flight at four hundred fifty dollars.
-      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "Frontier_2PM", "passengers": "three"}}
-[ 79.19s][moshi] ⟨ret@78.96s⟩ ⟦⚡SPAN@79.46s: (tool result) The American flight departing at 6:00 PM costs six hundred sixty dollars for three passengers.⟧ Finally, American Airlines. American at six PM is six hundred sixty dollars for the three of you.
-      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "American_6PM", "passengers": "three"}}
-[ 82.58s][user ] «backchannel» Yeah.
-[ 84.90s][user ] That Frontier flight sounds good. Can you book ⟨ret@88.14s⟩ it?
-[ 88.19s][moshi] I can certainly reserve ⟦⚡SPAN@89.50s: (tool result) Flight Frontier_2PM for three passengers under the name user is confirmed; confirmation number i⟧ that for you. Your Frontier flight at two PM is booked; your confirmation number is seven eight nine four five six.
-      CALL: {"function": "Flights_5_BookFlight", "arguments": {"flight_id": "Frontier_2PM", "passengers": "three", "name": "user"}}
-[ 96.58s][user ] Perfect. And could you set a reminder for me to leave for the airport at ⟨ret@100.81s⟩ noon?
-[100.96s][moshi] Of course, ⟦⚡SPAN@101.93s: (tool result) Reminder set for May tenth at 12:00 PM: Leave for airport.⟧ I can schedule that reminder. A reminder is set for noon on May tenth to leave for the airport.
-      CALL: {"function": "Reminders_6_SetReminder", "arguments": {"time": "12:00 PM", "date": "May tenth", "description": "Leave for airport"}}
-[108.78s][user ] Great, thank you.
-[110.14s][moshi] You’re most welcome. I'm glad I could assist with your travel arrangements.
-[114.94s][user ] Is there anything I should pack differently for Denver?
-[117.84s][moshi] ⟨ret@117.76s⟩ ⟦⚡SPAN@118.26s: <reference> Denver’s average high temperature in May is sixty-eight degrees Fahrenheit, with lows around forty⟧ Denver’s climate can be quite variable, even in May.
-[121.32s][moshi] Denver’s average high in May is sixty-eight degrees, with lows around forty-five, so layers are best.
-[125.57s][user ] «backchannel» Okay.
-[127.14s][user ] That's helpful. What about altitude ⟨ret@130.31s⟩ sickness?
-[130.54s][moshi] Altitude ⟦⚡SPAN@131.43s: <reference> Denver’s elevation is five thousand two hundred eighty feet above sea level.⟧ sickness is a concern in Denver.
-[133.43s][moshi] Denver is five thousand two hundred eighty feet above sea level, so stay hydrated and avoid overexertion.
-[137.10s][user ] «backchannel» Right.
-[139.54s][user ] Should I drink a lot of water?
-[141.72s][moshi] Absolutely; hydration is key at that altitude.
-[145.12s][moshi] Staying well-hydrated is crucial for managing any potential effects of the change in air pressure.
-[147.64s][user ] «backchannel» Yeah.
-[150.31s][user ] Okay, good to know. And are there any good ⟨ret@153.77s⟩ restaurants there?
-[154.17s][moshi] ⟦⚡SPAN@154.27s: (tool result) Five restaurants are highly rated in Denver: Root Down, Mercantile Dining & Provision, Rioja, Ta⟧ Denver has a thriving culinary scene.
-      CALL: {"function": "Restaurants_7_FindRestaurant", "arguments": {"city": "Denver", "cuisine": "any"}}
-[157.12s][moshi] Root Down, Mercantile, Rioja, Tavernetta, and Guard and Grace are highly-rated restaurants in Denver.
-[159.53s][user ] «backchannel» Yeah, totally.
-[163.52s][user ] Root Down sounds interesting. Can you tell me ⟨ret@166.57s⟩ more?
-[166.81s][moshi] Root Down is known ⟦⚡SPAN@168.57s: (tool result) Root Down is located at 1600 West 33rd Avenue, Denver, and serves globally-inspired cuisine with⟧ for its eclectic menu.
-      CALL: {"function": "Restaurants_8_GetRestaurantDetails", "arguments": {"restaurant_name": "Root Down"}}
-[170.28s][moshi] Root Down is at sixteen hundred West thirty-third Avenue; they serve globally-inspired, sustainable cuisine and their number is three oh three nine nine six three seven seven zero.
-[182.57s][user ] Perfect. Thanks again for all your help!
-[185.17s][moshi] It’s my pleasure. I wish you a very enjoyable trip to Denver.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.49s⟩ tenth.
+[  4.88s][moshi] Certainly, let's ⟦⚡SPAN@6.01s: (tool result) Three buses are available on May tenth: departing at 8:00 AM for $250, 1:30 PM for $280, and 6:0⟧ find some options for that journey. There are three buses available on May tenth, ranging from two hundred twenty to two hundred eighty dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "travel_date": "May tenth", "passenger_count": "three"}}
+[  8.68s][user ] «backchannel» Yeah.
+[ 14.30s][user ] That 8:00 AM one sounds good. Book it for ⟨ret@17.67s⟩ me.
+[ 17.90s][moshi] Excellent, securing ⟦⚡SPAN@18.79s: (tool result) Your booking is confirmed: bus ID 8:00 AM Chicago to Denver, three passengers, total cost $750.⟧ that early morning bus now. Your bus is booked for 8:00 AM, three passengers, a total of seven hundred fifty dollars.
+      CALL: {"function": "Buses_2_BookBus", "arguments": {"bus_id": "8:00 AM Chicago to Denver", "passenger_count": "three"}}
+[ 26.51s][user ] Can you send me the confirmation details to my email?
+[ 30.00s][moshi] ⟨ret@29.84s⟩ Of course, I ⟦⚡SPAN@31.45s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation" and the booking details.⟧ can certainly do that for you. The confirmation email has been sent to user@example.com with all the details.
+      CALL: {"function": "Email_2_SendEmail", "arguments": {"recipient": "user@example.com", "subject": "Bus Booking Confirmation", "body": "Your bus booking is confirmed: bus ID 8:00 AM Chicago to Denver, three passengers, total cost $750."}}
+[ 38.35s][user ] What’s the weather like in Denver on May ⟨ret@40.65s⟩ tenth?
+[ 41.05s][moshi] ⟦⚡SPAN@41.15s: (tool result) The forecast for Denver on May tenth is sunny, with a high of 75 degrees Fahrenheit and a low of⟧ Let me quickly check the forecast for you. Denver will be sunny on May tenth, with a high of seventy-five and a low of fifty degrees.
+      CALL: {"function": "Weather_1_GetForecast", "arguments": {"location": "Denver", "date": "May tenth"}}
+[ 45.86s][user ] «backchannel» Yeah.
+[ 48.52s][user ] That sounds lovely. I— I mean, do they have good hiking trails near Denver?
+[ 55.17s][moshi] «interrupted» Yes, Denver is a fantastic base for exploring trails—
+[ 58.69s][user ] «interrupts_prev» Are there any that are good for ⟨ret@60.66s⟩ beginners?
+[ 61.06s][moshi] There are many beginner-friendly ⟦⚡SPAN@62.66s: (tool result) Red Rocks Trading Post Trail is 1.4 miles, easy, and Waterton Canyon is 6.2 miles, easy.⟧ trails near Denver, such as Red Rocks Trading Post Trail and Waterton Canyon. Both are excellent choices for a relaxed hike.
+[ 69.60s][user ] Waterton Canyon sounds good. How long will it take to get there by bus from downtown Denver?
+[ 76.50s][moshi] ⟨ret@76.10s⟩ Let's ⟦⚡SPAN@77.06s: (tool result) The bus route from Downtown Denver to Waterton Canyon takes approximately 1 hour and 15 minutes ⟧ find out the bus route and travel time. The bus to Waterton Canyon takes about an hour and fifteen minutes, with one transfer.
+      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"origin": "Downtown Denver", "destination": "Waterton Canyon", "transport_mode": "bus"}}
+[ 84.74s][user ] Okay, that's manageable. Is there anything I should pack for that hike?
+[ 89.14s][moshi] That’s a very thoughtful question, preparing ahead is wise.
+[ 94.09s][user ] [backchannel] Right.
+[ 95.67s][moshi] For Waterton Canyon, I recommend water, sunscreen, a hat, and comfortable hiking shoes. It's a fairly open trail.
+[101.19s][user ] «backchannel» Mhm.
+[103.63s][user ] Good advice. Can you set a reminder for me to pack my hiking gear tomorrow ⟨ret@108.33s⟩ morning?
+[108.40s][moshi] Certainly, I’m happy to ⟦⚡SPAN@109.77s: (tool result) Reminder set for tomorrow morning: "Pack hiking gear for Waterton Canyon".⟧ add that to your schedule. I’ve set a reminder for tomorrow morning to pack your hiking gear.
+      CALL: {"function": "Calendar_2_SetReminder", "arguments": {"reminder_time": "tomorrow morning", "reminder_text": "Pack hiking gear for Waterton Canyon"}}
+[114.15s][user ] Thanks! What time does the bus to Waterton Canyon leave from ⟨ret@119.08s⟩ downtown?
+[119.24s][moshi] Let me check the ⟦⚡SPAN@121.08s: (tool result) Buses depart from Downtown Denver to Waterton Canyon every hour, starting at 7:00 AM.⟧ bus schedule for you again. Buses leave every hour, starting at seven AM.
+      CALL: {"function": "Buses_1_GetSchedule", "arguments": {"route": "Downtown Denver to Waterton Canyon"}}
+[123.15s][user ] «backchannel» Right.
+[126.25s][user ] Perfect. I think I’m all set.
+[128.26s][moshi] It sounds like you have a wonderful day planned.
+[129.21s][user ] «backchannel» Yeah.
+[130.16s][user ] [backchannel] Mm-hmm.
+[131.78s][moshi] I’m glad I could help with the arrangements for your trip to Denver.
+[132.97s][user ] «backchannel» Yeah, totally.
+[136.27s][user ] One last thing— can you find me a good coffee shop near Waterton Canyon?
+[140.73s][moshi] ⟨ret@140.65s⟩ Of course, let's ⟦⚡SPAN@141.61s: (tool result) There is a "The Bean Scene" coffee shop 2.5 miles from Waterton Canyon, with a 4.5-star rating.⟧ locate a nearby coffee shop. "The Bean Scene" is two and a half miles away, and has a four and a half star rating.
+      CALL: {"function": "Places_1_FindNearby", "arguments": {"location": "Waterton Canyon", "place_type": "coffee shop"}}
+[148.41s][user ] Two point five miles is walkable. What's their ⟨ret@152.50s⟩ address?
+[152.66s][moshi] Let me get that ⟦⚡SPAN@154.50s: (tool result) The Bean Scene is located at 123 Main Street, Littleton, CO 80122.⟧ address for you right away. The address is one twenty-three Main Street, Littleton, Colorado, eight zero one twenty-two.
+      CALL: {"function": "Places_2_GetDetails", "arguments": {"place_name": "The Bean Scene"}}
+[157.82s][user ] «backchannel» Yeah.
+[160.41s][user ] Great. And are they open tomorrow ⟨ret@163.12s⟩ morning?
+[163.52s][moshi] ⟦⚡SPAN@163.62s: (tool result) The Bean Scene is open tomorrow from 6:00 AM to 8:00 PM.⟧ Let’s check their operating hours for tomorrow. They are open from six AM to eight PM tomorrow.
+      CALL: {"function": "Places_3_GetHours", "arguments": {"place_name": "The Bean Scene", "date": "tomorrow"}}
+[166.43s][user ] «backchannel» Yeah.
+[168.78s][user ] Excellent. I think I'm really ready to go now.
+[171.97s][moshi] That's wonderful to hear, a little preparation goes a long way.
+[176.38s][user ] [backchannel] Yeah.
+[177.93s][moshi] Remember to stay hydrated and enjoy your hike at Waterton Canyon.
+[181.89s][user ] I will. Thanks again for all your help, Oruus.
+[184.99s][moshi] You are very welcome. It’s always a pleasure assisting with planning a mindful journey.
+[189.65s][user ] Actually, about that bus… I meant to say May eleventh, not May tenth. Can you change the booking?
+[196.41s][moshi] ⟨ret@196.09s⟩ Ah, a slight ⟦⚡SPAN@197.53s: (tool result) Your booking is updated: bus ID 8:00 AM Chicago to Denver, three passengers, May eleventh, total⟧ adjustment to the travel date— Your booking is now confirmed for May eleventh, the cost remains seven hundred fifty dollars.
+      CALL: {"function": "Buses_2_BookBus", "arguments": {"bus_id": "8:00 AM Chicago to Denver", "passenger_count": "three", "travel_date": "May eleventh"}}

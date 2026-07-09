@@ -1,62 +1,81 @@
 v3_rag_25_en src=hotpotqa style=v2
 SYSTEM: <system> You are Zura, a kind and steady wellness coach who helps people with grief and change. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Morgan · Location: Toronto, Canada · Nationality: Canadian · Gender: non-binary · Age: late 20s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
+  B. 저장 메모리:
+     [2026-08-03] User's home address is 461 Cedar Lane.
+     [2026-06-25] User is planning a trip to New Zealand in May.
+     [2026-06-11] User is lactose-intolerant.
+     [2026-05-11] User prefers a window seat when traveling.
+     [2026-01-21] User is allergic to cat dander.
+  B. 과거 대화 요약:
+     [2026-07-21] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
+     [2026-04-26] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  So, I was reading about Jack Sock and Raffaella Reggi, and I’m trying 
-      Tennis, huh? I thought maybe Jack Sock did something else too, like ba
-      Okay, okay, four titles. Still… Raffaella Reggi? I've never even *hear
-      Sixteen? That's pretty good! So she was a top player then? But… I thou
-  S2  Wow, nineteen nineteen! I didn’t realize it went back *that* far. But 
-      Never? Not even once? That’s… surprising. I feel like with a sport as 
-      Pospisil… I recognize that name. Okay, so Sock had *a* partner. What a
-  S3  Cecchini… okay. So, different generations, different partners. It all 
-      Nineteen ninety-three… that’s a long time ago. Sock’s still playing, r
-      Atlanta… Okay. So, he's not completely gone. Good to know. I’m glad we
-  S4  Hmm. Not bad. A winning record. That’s something. Thanks, Zura.
-      One title… well, that's still a title! I guess every victory counts.
-      Number eight! That *is* good. Okay, I’m satisfied. Thank you.
+  S1  So, I was reading about Jack Sock and Raffaella Reggi… what sport did 
+      Tennis, huh? I always thought Jack Sock might have done something else
+      Eight? That’s pretty good! Was Raffaella Reggi as highly ranked in wom
+      Twenty-six… that’s not bad, but a bit lower than Sock. Did she win any
+  S2  Just one singles title? That seems… low, for someone who got to twenty
+      So, Sock was more successful overall, in terms of titles. What about G
+      Just the fourth round? That’s… not exactly dominating. Did Reggi get f
+      Quarter-finals is better than the fourth round, I guess. What country 
+  S3  America and Italy… quite a difference. Did they ever play *against* ea
+      Never played each other? That’s surprising. Different generations, I s
+      He retired recently? That's sad. Is Reggi still involved in tennis som
+      A coach! That’s nice. So she’s still part of the sport.
+  S4  Pickleball? Really? That's… unexpected.
+      Eight million! Wow. Maybe I should try it.
+      I think I will. Thanks, Zura.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] So, I was reading about Jack Sock and Raffaella Reggi, and I’m trying to figure out what sport they both played professionally. It's just… not coming to me.
-[  9.75s][moshi] It’s perfectly alright to need a little reminder sometimes. Let’s see if we can uncover that for you.
-[ 14.81s][moshi] ⟨ret@14.73s⟩ That's a good ⟦⚡SPAN@16.49s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ question about their shared athletic pursuit. Both Jack Sock and Raffaella Reggi competed as professional tennis players.
-[ 17.46s][user ] «backchannel» Yeah.
-[ 23.26s][user ] Tennis, huh? I thought maybe Jack Sock did something else too, like basketball. I could have sworn I read that.
-[ 29.75s][moshi] It’s easy to mix up athletes, especially when they’re multi-talented. But the record shows tennis as his primary focus.
-[ 37.31s][moshi] ⟨ret@36.99s⟩ Let’s ⟦⚡SPAN@38.11s: Jack Sock won four ATP titles in singles and one in doubles during his career.⟧ confirm that focus with some specifics. Jack Sock achieved success with four ATP singles titles and one doubles title.
-[ 45.89s][user ] Okay, okay, four titles. Still… Raffaella Reggi? I've never even *heard* of her. Was she any good?
-[ 53.58s][moshi] [laugh] It’s understandable not to recognize every name, even within a sport. She had a respectable career.
-[ 59.99s][moshi] ⟨ret@59.67s⟩ Let's ⟦⚡SPAN@60.95s: Raffaella Reggi reached a career-high singles ranking of 16 in 1989.⟧ look at Raffaella Reggi’s achievements for context. Raffaella Reggi’s highest singles ranking was number sixteen in nineteen eighty-nine.
-[ 70.08s][user ] Sixteen? That's pretty good! So she was a top player then? But… I thought tennis was mostly a recent thing for women?
-[ 77.93s][moshi] That’s a common misconception. Women have been competing at a high level in tennis for decades.
-[ 83.06s][moshi] ⟨ret@82.66s⟩ We can ⟦⚡SPAN@84.50s: Suzanne Lenglen won six Wimbledon titles between 1919 and 1925.⟧ find details on the history of women’s tennis. Suzanne Lenglen won six Wimbledon championships between nineteen nineteen and nineteen twenty-five.
-[ 92.74s][user ] Wow, nineteen nineteen! I didn’t realize it went back *that* far. But still… Reggi, Sock… what about doubles? Did they ever play together?
-[104.24s][moshi] That’s a fascinating question. It requires a little digging to see if their paths ever crossed in that way.
-[110.58s][moshi] ⟨ret@110.34s⟩ Let’s check ⟦⚡SPAN@111.86s: Jack Sock and Raffaella Reggi never partnered in a professional doubles match.⟧ for any record of their doubles partnership. Jack Sock and Raffaella Reggi did not compete together in professional doubles.
-[119.30s][user ] Never? Not even once? That’s… surprising. I feel like with a sport as global as tennis, it would happen eventually.
-[127.61s][moshi] It’s true, the possibilities are vast. Sometimes, despite the odds, certain combinations just don’t materialize.
-[134.50s][moshi] ⟨ret@134.26s⟩ We can ⟦⚡SPAN@135.86s: Jack Sock’s most frequent doubles partner was Vasek Pospisil.⟧ look at Jack Sock's frequent doubles partners. Vasek Pospisil was Jack Sock’s most common partner in doubles matches.
-[140.82s][user ] «backchannel» Wow.
-[144.89s][user ] Pospisil… I recognize that name. Okay, so Sock had *a* partner. What about Reggi? Who did *she* usually play with?
-[152.74s][moshi] Finding those regular pairings can paint a clearer picture of their careers.
-[157.46s][moshi] ⟨ret@157.30s⟩ Let’s find Raffaella ⟦⚡SPAN@159.30s: Sandra Cecchini was Raffaella Reggi’s most frequent doubles partner.⟧ Reggi’s most frequent doubles partner. Sandra Cecchini partnered with Raffaella Reggi most often in doubles play.
-[167.36s][user ] Cecchini… okay. So, different generations, different partners. It all makes sense now, I guess.
-[173.22s][moshi] It often comes down to timing and circumstance. It's about the individual journeys.
-[178.17s][moshi] ⟨ret@177.93s⟩ It’s helpful ⟦⚡SPAN@179.37s: Raffaella Reggi retired from professional tennis in 1993.⟧ to understand the context of their eras. Raffaella Reggi ended her professional tennis career in nineteen ninety-three.
-[183.81s][user ] «backchannel» Yeah.
-[186.88s][user ] Nineteen ninety-three… that’s a long time ago. Sock’s still playing, right? Or did he retire too?
-[193.38s][moshi] Jack Sock is still active, though he’s faced some recent challenges with injury.
-[197.72s][moshi] ⟨ret@197.40s⟩ Let’s ⟦⚡SPAN@198.60s: Jack Sock last competed in the 2023 Atlanta Open.⟧ find Jack Sock’s most recent tournament appearance. Jack Sock’s most recent tournament was the two thousand twenty-three Atlanta Open.
-[206.82s][user ] Atlanta… Okay. So, he's not completely gone. Good to know. I’m glad we figured this out.
-[212.90s][moshi] It’s good to have clarity. Sometimes just tracing the details brings a sense of peace.
-[217.90s][moshi] ⟨ret@217.50s⟩ It's also about ⟦⚡SPAN@219.50s: Jack Sock has a career win-loss record of 148–135 in singles.⟧ appreciating each player’s unique path. Jack Sock’s singles record stands at one hundred forty-eight wins and one hundred thirty-five losses.
-[224.66s][user ] «backchannel» Right.
-[228.69s][user ] Hmm. Not bad. A winning record. That’s something. Thanks, Zura.
-[233.91s][moshi] You’re very welcome. Remembering these details can be a way of honoring their dedication.
-[238.54s][moshi] ⟨ret@238.14s⟩ It’s ⟦⚡SPAN@239.34s: Raffaella Reggi won one WTA singles title during her career.⟧ about recognizing the effort behind the results. Raffaella Reggi secured one WTA singles title throughout her career.
-[246.70s][user ] One title… well, that's still a title! I guess every victory counts.
-[251.19s][moshi] Exactly. Every step forward, no matter how small, is a testament to their commitment.
-[256.25s][moshi] ⟨ret@256.09s⟩ It’s important to remember ⟦⚡SPAN@258.09s: Jack Sock reached a career-high ranking of number eight in 2017.⟧ that success looks different for everyone. Jack Sock achieved a peak ranking of eighth in the world in two thousand seventeen.
-[265.76s][user ] Number eight! That *is* good. Okay, I’m satisfied. Thank you.
-[270.73s][moshi] You’re most welcome. It sounds like you’ve gained a fuller picture, and that’s wonderful.
+[  0.00s][user ] So, I was reading about Jack Sock and Raffaella Reggi… what sport did they both play ⟨ret@6.34s⟩ professionally?
+[  6.50s][moshi] That’s a lovely ⟦⚡SPAN@7.86s: Jack Sock and Raffaella Reggi both competed professionally in the sport of tennis.⟧ question, bringing up those two athletes.
+[  9.85s][moshi] Both Jack Sock and Raffaella Reggi were professional tennis players.
+[ 11.28s][user ] «backchannel» Yeah.
+[ 14.49s][user ] Tennis, huh? I always thought Jack Sock might have done something else… maybe ⟨ret@19.82s⟩ baseball?
+[ 20.06s][moshi] It’s understandable to ⟦⚡SPAN@21.82s: Jack Sock achieved a career-high ATP singles ranking of world number eight in 2017.⟧ wonder about other possibilities, considering athleticism often crosses over.
+[ 26.06s][moshi] Jack Sock’s highest professional ranking in singles was number eight worldwide.
+[ 31.12s][user ] Eight? That’s pretty good! Was Raffaella Reggi as highly ranked in women’s ⟨ret@36.29s⟩ tennis?
+[ 36.61s][moshi] It’s natural to ⟦⚡SPAN@38.29s: Raffaella Reggi reached her highest WTA singles ranking of twenty-six in November of 1986.⟧ compare accomplishments, and their paths were distinct.
+[ 40.99s][moshi] Raffaella Reggi’s peak WTA singles ranking was twenty-six, in nineteen eighty-six.
+[ 47.99s][user ] Twenty-six… that’s not bad, but a bit lower than Sock. Did she win any major tournaments?
+[ 54.00s][moshi] ⟨ret@53.84s⟩ It’s important to remember ⟦⚡SPAN@55.84s: Raffaella Reggi won one singles title and seven doubles titles during her career.⟧ rankings don't tell the whole story of an athlete's impact.
+[ 59.29s][moshi] Raffaella Reggi won one singles title and seven doubles titles professionally.
+[ 64.21s][user ] Just one singles title? That seems… low, for someone who got to twenty-six.
+[ 69.53s][moshi] ⟨ret@69.46s⟩ Sometimes success is measured ⟦⚡SPAN@71.46s: Jack Sock won four ATP titles in singles and thirteen in doubles throughout his career.⟧ in ways beyond major championship wins, of course.
+[ 74.61s][moshi] Jack Sock won four ATP singles titles and thirteen doubles titles.
+[ 80.89s][user ] So, Sock was more successful overall, in terms of titles. What about Grand ⟨ret@87.46s⟩ Slams?
+[ 87.68s][moshi] Focusing on Grand Slams is ⟦⚡SPAN@89.46s: Jack Sock reached the fourth round of the 2017 US Open, his best Grand Slam singles result.⟧ a good way to compare achievements at the highest level.
+[ 92.25s][moshi] Jack Sock’s best result in a Grand Slam singles tournament was the fourth round.
+[ 95.84s][user ] «backchannel» Wow.
+[ 99.23s][user ] Just the fourth round? That’s… not exactly dominating. Did Reggi get further in ⟨ret@105.01s⟩ any?
+[105.25s][moshi] It’s helpful to ⟦⚡SPAN@106.61s: Raffaella Reggi reached the quarter-finals of the 1987 Australian Open, her best Grand Slam result.⟧ consider the context of the eras in which they competed.
+[109.50s][moshi] Raffaella Reggi’s best result at a Grand Slam was the quarter-finals in 1987.
+[115.71s][user ] Quarter-finals is better than the fourth round, I guess. What country are they both ⟨ret@120.50s⟩ from?
+[120.66s][moshi] That's a good ⟦⚡SPAN@122.02s: Jack Sock is from Lincoln, Nebraska, while Raffaella Reggi is from Rome, Italy.⟧ question, thinking about their national sporting identities.
+[124.57s][moshi] Jack Sock is American, from Nebraska, and Raffaella Reggi is Italian.
+[127.92s][user ] «backchannel» Yeah.
+[129.78s][user ] America and Italy… quite a difference. Did they ever play *against* each other?
+[134.83s][moshi] ⟨ret@134.59s⟩ It’s interesting to consider ⟦⚡SPAN@136.59s: Jack Sock and Raffaella Reggi never competed in a professional match against each other.⟧ if their paths ever crossed directly in competition.
+[139.40s][moshi] Jack Sock and Raffaella Reggi did not play each other in a professional match.
+[145.04s][user ] Never played each other? That’s surprising. Different generations, I ⟨ret@149.39s⟩ suppose.
+[149.71s][moshi] Timing is often ⟦⚡SPAN@151.39s: Jack Sock retired from professional tennis in November of 2023.⟧ a significant factor in whether athletes compete head-to-head.
+[155.07s][moshi] Jack Sock announced his retirement from professional tennis in November twenty twenty-three.
+[158.69s][user ] «backchannel» Mm-hmm.
+[161.31s][user ] He retired recently? That's sad. Is Reggi still involved in tennis somehow?
+[166.81s][moshi] ⟨ret@166.65s⟩ It’s lovely to wonder ⟦⚡SPAN@168.65s: Raffaella Reggi is currently a tennis coach in Rome, Italy.⟧ about what athletes do after their competitive careers end.
+[171.72s][moshi] Raffaella Reggi now works as a tennis coach in Rome, Italy.
+[175.30s][user ] A coach! That’s nice. So she’s still part of the ⟨ret@179.21s⟩ sport.
+[179.35s][moshi] Staying connected to ⟦⚡SPAN@180.73s: Jack Sock is now a pickleball professional, having switched sports after retirement.⟧ something you love is a beautiful way to continue growth.
+[184.16s][moshi] Jack Sock now plays professional pickleball after retiring from tennis.
+[189.29s][user ] Pickleball? Really? That's… unexpected. ⟨ret@192.71s⟩
+[192.87s][moshi] It shows a willingness ⟦⚡SPAN@194.71s: Pickleball is one of the fastest-growing sports in the United States, with over eight million players.⟧ to embrace new challenges and find joy in activity.
+[197.87s][moshi] Pickleball is a rapidly growing sport in the US, with over eight million players.
+[202.72s][user ] Eight million! Wow. Maybe I should try it.
+[207.48s][moshi] Exploring new interests is a wonderful way to expand your horizons and wellbeing.
+[210.64s][user ] «backchannel» Uh-huh.
+[215.57s][user ] I think I will. Thanks, Zura.
+[218.12s][moshi] You're very welcome. It’s been a pleasure discussing these athletes with you.

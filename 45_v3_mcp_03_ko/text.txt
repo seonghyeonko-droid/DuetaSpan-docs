@@ -1,41 +1,51 @@
 v3_mcp_03_ko src=mcp style=v1
-SYSTEM: <system> 당신은 호기심이 많고 지지적인 웰니스 코치 Thunaen이며, 사람들의 학습과 동기 부여 유지에 도움을 줍니다. <system>
+SYSTEM: <system> 당신은 호기심 많고 지지적인 웰니스 코치 Thunaen이며, 사람들의 학습과 동기 부여 유지에 도움을 줍니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Charlotte · Location: Toronto, Canada · Nationality: Canadian · Gender: female · Age: early 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
+  B. 저장 메모리:
+     [2026-06-20] User prefers a window seat when traveling.
+     [2026-04-15] User is allergic to cat dander.
+     [2026-03-11] User is planning a trip to Switzerland in August.
+     [2026-01-17] User has a Poodle named Coco.
+  B. 과거 대화 요약:
+     [2026-04-05] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-01-18] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  쇼핑 카트 아이프레임에서 결제 과정을 시작해 주세요.
-      총 비용이 배송비를 포함해서 얼마인가요?
-      네, 알겠습니다.
-  S2  네, 맞습니다.
-      네, 그렇게 해 주세요.
-  S3  잘 됐네요! 예상 배송 날짜는 언제인가요?
-      좋은 소식이네요.
-  S4  네, 정말 감사합니다.
-      아— 혹시 추가로 이메일을 받을 수 있을까요?
+  S1  쇼핑 카트 iframe에서 결제 과정을 시작해 주세요.
+      장바구니에 있는 모든 물건의 총 비용은 얼마인가요?
+  S2  네, 좋아요.
+      할인 코드를 적용해 줄 수 있나요—SPRING20입니다.
+  S3  좋아요. 배송 옵션은 무엇이 있나요?
+      일반 배송을 선택해 주세요.
+  S4  네, 그리고 저장된 결제 방법을 사용하고 싶습니다.
+      주문을 확인해 주세요.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 쇼핑 카트 아이프레임에서 결제 과정을 시작해 ⟨ret@3.10s⟩ 주세요.
-[  3.42s][moshi] 알겠습니다. 주문을 ⟦⚡SPAN@4.54s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ 완료해 드릴게요— 네, 쇼핑 카트 내에서 결제 과정이 시작됐습니다.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
-[  7.13s][user ] «backchannel» 맞아요.
-[  9.16s][user ] 총 비용이 배송비를 포함해서 얼마인가요? ⟨ret@12.05s⟩
-[ 12.13s][moshi] 잠시 ⟦⚡SPAN@13.09s: (tool result) The order total is sixty-two dollars and fifty cents, including seven dollars shipping.⟧ 계산해 볼게요— 총 금액은 배송비 일곱 달러를 포함해서 육십두 달러 오십 센트입니다.
-      CALL: {"function": "get_checkout_total", "arguments": {}}
-[ 18.55s][user ] 네, 알겠습니다.
-[ 19.96s][moshi] 물론 모든 세금이 포함된 금액입니다. 혹시 배송 주소가 원 오크 스트리트 일-이-삼 번지 맞으신가요?
-[ 26.24s][user ] 네, 맞습니다.
-[ 27.50s][moshi] 좋습니다. 그리고 비자 카드 끝자리 사-칠-구-이로 결제하시겠습니까?
-[ 31.89s][user ] 네, 그렇게 해 ⟨ret@33.05s⟩ 주세요.
-[ 33.38s][moshi] 네, ⟦⚡SPAN@34.02s: (tool result) Payment of sixty-two dollars and fifty cents was approved with Visa ending in four-seven-nine-tw⟧ 결제를 진행해 드릴게요— 육십두 달러 오십 센트 결제가 성공적으로 완료됐습니다.
-      CALL: {"function": "process_payment", "arguments": {"card_number": "XXXX-4792", "amount": "62.50"}}
-[ 38.46s][user ] 잘 됐네요! 예상 배송 날짜는 ⟨ret@41.48s⟩ 언제인가요?
-[ 41.80s][moshi] 알아봐 드릴게요— ⟦⚡SPAN@43.08s: (tool result) The estimated delivery date is Thursday, November ninth.⟧ 주문은 십일월 구일 목요일에 도착할 예정입니다.
-      CALL: {"function": "get_delivery_estimate", "arguments": {}}
-[ 46.26s][user ] 좋은 소식이네요.
-[ 47.66s][moshi] [laugh] 정말 다행입니다. 모든 세부 사항이 담긴 확인 이메일을 등록된 주소로 보내 드리겠습니다.
-[ 50.14s][user ] «backchannel» 네.
-[ 53.81s][user ] 네, 정말 감사합니다.
-[ 55.37s][moshi] 천만에요! 구매를 완료하는 데 도움을 드릴 수 있어서 기쁩니다. 작은 자기 관리가 큰 도움이 될 수 있다는 점을 기억해 주세요.
-[ 59.48s][user ] «backchannel» 네.
-[ 63.40s][user ] 아— 혹시 추가로 이메일을 받을 수 있을까요?
-[ 66.73s][moshi] 주문이 창고에서 출발하면 배송 알림을 받으실 수 있고, 경험에 대한 간단한 설문 조사를 받으실 수도 있습니다.
+[  0.00s][user ] 쇼핑 카트 iframe에서 결제 과정을 시작해 ⟨ret@2.92s⟩ 주세요.
+[  3.23s][moshi] 네, 물건이 ⟦⚡SPAN@4.36s: (tool result) The shopping cart iframe was clicked, and the checkout page loaded successfully.⟧ 고객님께 잘 전달될 수 있도록 준비하겠습니다. 아주 좋습니다. 결제 과정이 지금 바로 열렸습니다.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"url": "https://www.example.com/cart", "iframe_selector": "div#shopping-cart-iframe", "button_selector": "button.checkout-button"}}
+[  7.80s][user ] «backchannel» 맞아요.
+[ 10.17s][user ] 장바구니에 있는 모든 물건의 총 비용은 얼마인가요? ⟨ret@13.79s⟩
+[ 13.87s][moshi] 알아보겠습니다. 현재 총 ⟦⚡SPAN@15.79s: (tool result) The total cost is $78.50, including shipping.⟧ 금액은 칠십팔 달러 오십 센트입니다.
+      CALL: {"function": "playwright_get_text", "arguments": {"url": "https://www.example.com/checkout", "selector": "span.total-cost"}}
+[ 18.50s][user ] 네, 좋아요.
+[ 19.82s][moshi] 그렇게 안심이 되시죠? 재정적으로 무엇을 기대해야 하는지 정확히 아는 것은 준비가 되었다는 느낌을 크게 줍니다.
+[ 26.56s][user ] 할인 코드를 적용해 줄 수 있나요—SPRING20입니다.
+[ 30.22s][moshi] ⟨ret@30.15s⟩ 할인을 적용하면 기분이 ⟦⚡SPAN@32.15s: (tool result) Discount code SPRING20 applied successfully; new total is $62.80.⟧ 더 좋아지죠. 잘 됐습니다. 코드가 적용되었고, 새로운 총 금액은 육십이 달러 팔십 센트입니다.
+      CALL: {"function": "playwright_fill_and_submit", "arguments": {"url": "https://www.example.com/checkout", "code_selector": "input#discount-code", "submit_selector": "button#apply-discount", "code_value": "SPRING20"}}
+[ 38.48s][user ] 좋아요. 배송 옵션은 무엇이 있나요? ⟨ret@41.19s⟩
+[ 41.51s][moshi] 어떤 ⟦⚡SPAN@42.15s: (tool result) Available options are Standard (3-5 business days, $5.00) and Express (1-2 business days, $12.00⟧ 배송 방법을 선택할 수 있는지 확인해 보겠습니다. 일반 배송은 삼 칠 일에 오 달러이고, 빠른 배송은 일 이 일에 십이 달러입니다.
+      CALL: {"function": "playwright_get_text", "arguments": {"url": "https://www.example.com/checkout", "selector": "div.shipping-options"}}
+[ 49.71s][user ] 일반 배송을 선택해 ⟨ret@51.30s⟩ 주세요.
+[ 51.62s][moshi] 급하지 않으시다면 ⟦⚡SPAN@53.30s: (tool result) Standard shipping selected; total is now $67.80.⟧ 합리적인 선택입니다. 일반 배송이 선택되었고, 총 금액은 육십칠 달러 팔십 센트가 되었습니다.
+      CALL: {"function": "playwright_click", "arguments": {"url": "https://www.example.com/checkout", "selector": "input#standard-shipping"}}
+[ 59.51s][user ] 네, 그리고 저장된 결제 방법을 사용하고 싶습니다. ⟨ret@62.97s⟩
+[ 63.13s][moshi] ⟦⚡SPAN@63.47s: (tool result) Saved payment method selected; ready to confirm order.⟧ 그렇게 하시면 간단하겠네요.
+      CALL: {"function": "playwright_click", "arguments": {"url": "https://www.example.com/checkout", "selector": "button#use-saved-payment"}}
+[ 64.55s][moshi] 저장된 결제 방법이 선택되었고, 이제 주문을 확인하실 수 있습니다.
+[ 66.38s][user ] «backchannel» 네.
+[ 68.96s][user ] 주문을 확인해 ⟨ret@70.23s⟩ 주세요.
+[ 70.63s][moshi] 마무리할 좋은 ⟦⚡SPAN@71.99s: (tool result) Order confirmed; order number is 2024-07-26-1234.⟧ 시간입니다. 주문이 확정되었고, 주문 번호는 천이백삼십사 년 칠월 이십육일 일 이 삼 사입니다.
+      CALL: {"function": "playwright_click", "arguments": {"url": "https://www.example.com/checkout", "selector": "button#confirm-order"}}

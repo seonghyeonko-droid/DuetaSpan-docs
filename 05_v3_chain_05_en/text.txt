@@ -1,78 +1,72 @@
 v3_chain_05_en src=mcp style=mcp_chained
 SYSTEM: <system> You are Dar, a grounded and empathetic personal guide who helps people with sleep and rest. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 유우 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: 50s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-08-02] User prefers a window seat when traveling.
+     [2026-07-22] User has a Siamese cat named Bella.
+     [2026-03-21] User is planning a trip to Iceland in October.
+     [2026-02-20] User's favorite cuisine is Thai.
+  B. 과거 대화 요약:
+     [2026-04-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+     [2026-02-15] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What's the price range at Zuni Cafe?
-      Okay, good. And what about their hours today?
-      Hmm, five PM is a bit late…
-      No, that's alright. Can you check if they take reservations?
-      Perfect. Could you try to book a table for two at, say, 7:30 PM?
-  S2  Wonderful! That’s great. What’s the address again?
-      Is parking difficult around there?
-      Right. Okay, maybe we should take a Lyft. Can you estimate the cost fr
-      That's reasonable. Can you go ahead and order a Lyft for 7:00 PM?
-      Perfect. So, we have dinner at 7:30, Lyft arrives at 7:00…
-  S3  What kind of cuisine do they serve again?
-      Oh, roast chicken! I love roast chicken.
-      Is there a dress code?
-      Good to know. Uh, what's the weather like in San Francisco right now?
-      Good idea. Remind me to grab one.
-  S4  Thanks. Do they have any vegetarian options?
-      That sounds good. What’s the best way to get from my house to the Ferr
-      Thirty minutes… okay. And what are the Muni options?
-      Perfect. You’ve been a huge help, Dar.
+      Okay, good. And are they open for dinner tonight?
+      Perfect. Can you make a reservation for two at 7:30?
+      Great. What's the address again?
+  S2  Is parking difficult around there?
+      Hmm, that’s pretty expensive. Are there any BART stations close by?
+      Okay, that sounds good. Maybe we’ll take BART.
+  S3  Actually, before we decide on BART, can you tell me how long the walk 
+      Twenty-seven minutes? That's a bit far.
+      Okay, BART it is then. What time should we leave to get there comforta
+      And what's the weather like there right now?
+  S4  Good to know. Thanks, Dar.
+      I think we will. Is there anything else you can help with?
+      That's perfect. Thank you so much.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] What's the price range at Zuni ⟨ret@2.15s⟩ Cafe?
-[  2.39s][moshi] Let ⟦⚡SPAN@3.11s: (tool result) Zuni Cafe’s price range is dollar signs two to three.⟧ me quickly check that for you… Zuni Cafe is moderately priced, with dishes costing between twenty and thirty dollars.
-[ 12.03s][user ] Okay, good. And what about their hours ⟨ret@14.54s⟩ today?
-[ 14.77s][moshi] ⟦⚡SPAN@15.04s: (tool result) Zuni Cafe is open from 5:00 PM to 10:00 PM today.⟧ Certainly, let's find out their current hours. Zuni Cafe is open this evening from five to ten PM.
-[ 17.71s][user ] «backchannel» Right.
-[ 22.57s][user ] Hmm, five PM is a bit late…
-[ 24.75s][moshi] It is a later start, yes. Perhaps we could explore other options that open earlier?
-[ 27.31s][user ] «backchannel» Yeah.
-[ 30.66s][user ] No, that's alright. Can you check if they take ⟨ret@34.53s⟩ reservations?
-[ 34.77s][moshi] I can ⟦⚡SPAN@36.21s: (tool result) Zuni Cafe accepts reservations via OpenTable.⟧ certainly see if reservations are available… Yes, Zuni Cafe does accept reservations through OpenTable.
-[ 37.53s][user ] «backchannel» Uh-huh.
-[ 42.35s][user ] Perfect. Could you try to book a table for two at, say, 7:30 PM?
-[ 46.77s][moshi] ⟨ret@46.54s⟩ Let ⟦⚡SPAN@47.58s: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:30 PM today. Confirmation number is ZX94B⟧ me attempt to secure a table for you… I’ve booked a table for two at Zuni Cafe for 7:30 PM. Your confirmation number is ZX94B7.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "date": "today", "time": "7:30 PM", "party_size": "2"}}
-[ 56.99s][user ] Wonderful! That’s great. What’s the address ⟨ret@59.78s⟩ again?
-[ 60.18s][moshi] I ⟦⚡SPAN@60.82s: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisco, California.⟧ have that information right here… Zuni Cafe is at 1658 Market Street in San Francisco.
-[ 66.66s][user ] Is parking difficult around there?
-[ 68.75s][moshi] Parking in that area can be challenging, particularly during peak hours.
-[ 72.76s][user ] Right. Okay, maybe we should take a Lyft. Can you estimate the cost from my ⟨ret@77.29s⟩ home?
-[ 77.69s][moshi] I can ⟦⚡SPAN@78.81s: (tool result) Lyft estimate from user’s home to Zuni Cafe is between twenty-five and thirty-five dollars.⟧ certainly get a Lyft estimate for you… A Lyft ride to Zuni Cafe would likely cost between twenty-five and thirty-five dollars.
-      CALL: {"function": "get_lyft_estimate", "arguments": {"start_address": "user's home", "end_address": "Zuni Cafe"}}
-[ 86.76s][user ] That's reasonable. Can you go ahead and order a Lyft for 7:00 ⟨ret@91.21s⟩ PM?
-[ 91.61s][moshi] Absolutely, I ⟦⚡SPAN@92.49s: (tool result) Lyft scheduled for pickup at user’s home at 7:00 PM to Zuni Cafe. Driver ETA is five minutes.⟧ can schedule that for you… Your Lyft is scheduled for 7:00 PM with an estimated driver arrival of five minutes.
-      CALL: {"function": "schedule_lyft", "arguments": {"pickup_time": "7:00 PM", "destination_address": "Zuni Cafe"}}
-[ 98.98s][user ] Perfect. So, we have dinner at 7:30, Lyft arrives at 7:00…
-[104.42s][moshi] That’s correct. Everything is coordinated for a smooth evening.
-[108.69s][user ] What kind of cuisine do they serve again?
-[111.24s][moshi] «interrupted» They specialize in Californian cuisine—
-[114.19s][moshi] ⟨ret@114.11s⟩ Zuni Cafe offers ⟦⚡SPAN@116.11s: (tool result) Zuni Cafe serves Californian cuisine with a focus on roast chicken.⟧ Californian cuisine, famous for its roast chicken.
-[116.61s][user ] «backchannel» Yeah.
-[119.10s][user ] Oh, roast chicken! I love roast chicken.
-[121.79s][moshi] It’s a very popular dish there. I'm glad you enjoy it.
-[123.26s][user ] «backchannel» Right.
-[125.27s][user ] Is there a dress code?
-[127.04s][moshi] Zuni Cafe is a fairly casual restaurant; there is no strict dress code.
-[131.69s][user ] Good to know. Uh, what's the weather like in San Francisco ⟨ret@135.19s⟩ right now?
-[135.59s][moshi] Let me ⟦⚡SPAN@136.63s: (tool result) The current weather in San Francisco is 65 degrees Fahrenheit and cloudy.⟧ check the current conditions… It’s currently 65 degrees and cloudy in San Francisco.
-[137.82s][user ] «backchannel» Really?
-[141.70s][moshi] You might want to bring a light jacket.
-[145.57s][user ] Good idea. Remind me to grab one.
-[147.85s][moshi] Certainly, I’ve added “grab a jacket” to your reminders.
-[148.73s][user ] «backchannel» Right.
-[150.82s][user ] Thanks. Do they have any vegetarian ⟨ret@153.56s⟩ options?
-[153.96s][moshi] I can certainly ⟦⚡SPAN@155.40s: (tool result) Zuni Cafe offers several vegetarian options including a seasonal vegetable plate.⟧ check their menu for vegetarian choices… Yes, Zuni Cafe has vegetarian options like a seasonal vegetable plate.
-[162.34s][user ] That sounds good. What’s the best way to get from my house to the Ferry Building after ⟨ret@167.30s⟩ dinner?
-[167.46s][moshi] Let's explore transportation ⟦⚡SPAN@168.82s: (tool result) Public transit from Zuni Cafe to Ferry Building takes approximately 30 minutes.⟧ options to the Ferry Building… Public transportation to the Ferry Building will take around thirty minutes.
-      CALL: {"function": "get_directions", "arguments": {"start_address": "Zuni Cafe", "end_address": "Ferry Building, San Francisco"}}
-[174.67s][user ] Thirty minutes… okay. And what are the Muni ⟨ret@178.31s⟩ options?
-[178.71s][moshi] I ⟦⚡SPAN@179.27s: (tool result) Muni lines 30 and 45 will take you from near Zuni Cafe to the Ferry Building.⟧ can detail the Muni routes for you… You can take Muni lines 30 or 45 to the Ferry Building.
-[182.84s][user ] «backchannel» Okay.
-[185.40s][user ] Perfect. You’ve been a huge help, Dar.
-[187.84s][moshi] [happy] I'm very glad I could assist you in planning your evening. Enjoy your dinner at Zuni Cafe!
+[  0.00s][user ] What's the price range at Zuni ⟨ret@2.20s⟩ Cafe?
+[  2.44s][moshi] Let ⟦⚡SPAN@3.16s: (tool result) Zuni Cafe’s price range is $$$, with entrees costing $30 to $60.⟧ me quickly check that for you… Entrees at Zuni Cafe range from thirty to sixty dollars.
+[  4.85s][user ] «backchannel» Uh-huh.
+[  9.32s][user ] Okay, good. And are they open for dinner ⟨ret@11.70s⟩ tonight?
+[ 11.93s][moshi] ⟦⚡SPAN@12.20s: (tool result) Zuni Cafe is open for dinner tonight until 10:00 PM.⟧ I can certainly find that out for you. Zuni Cafe is open until ten PM this evening.
+[ 17.69s][user ] Perfect. Can you make a reservation for two at ⟨ret@21.10s⟩ 7:30?
+[ 21.26s][moshi] I’m ⟦⚡SPAN@22.14s: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:30 PM tonight, confirmation number is 84X⟧ happy to try and secure that for you… Your table for two at Zuni Cafe is confirmed for 7:30 tonight. Your confirmation is 84X9Z.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "date": "tonight", "time": "7:30 PM", "party_size": "2"}}
+[ 25.18s][user ] «backchannel» Yeah.
+[ 31.52s][user ] Great. What's the address ⟨ret@33.22s⟩ again?
+[ 33.46s][moshi] That's a ⟦⚡SPAN@34.58s: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisco, California 94102.⟧ simple one, I recall it… Zuni Cafe is at 1658 Market Street in San Francisco.
+[ 37.52s][user ] «backchannel» Oh.
+[ 40.09s][user ] Is parking difficult around ⟨ret@41.65s⟩ there?
+[ 41.97s][moshi] Let ⟦⚡SPAN@42.61s: (tool result) Street parking near Zuni Cafe is very limited; nearby garages cost $8 to $12 per hour.⟧ me look up parking options nearby… Parking near Zuni Cafe is limited, garages cost eight to twelve dollars an hour.
+      CALL: {"function": "maps_parking_details", "arguments": {"location": "Zuni Cafe"}}
+[ 46.73s][user ] «backchannel» Yeah.
+[ 50.66s][user ] Hmm, that’s pretty expensive. Are there any BART stations ⟨ret@54.43s⟩ close by?
+[ 54.82s][moshi] I ⟦⚡SPAN@55.63s: (tool result) The Civic Center/UN Plaza BART station is a six-minute walk from Zuni Cafe.⟧ can check public transport options for you. The Civic Center BART station is a six-minute walk away.
+      CALL: {"function": "maps_transit_details", "arguments": {"location": "Zuni Cafe"}}
+[ 61.24s][user ] Okay, that sounds good. Maybe we’ll take BART.
+[ 64.31s][moshi] Considering your evening, perhaps a little pre-dinner relaxation— A calming playlist might help you unwind before your meal. I have a few suggestions.
+[ 73.56s][user ] Actually, before we decide on BART, can you tell me how long the walk is from the Van ⟨ret@79.39s⟩ Ness station?
+[ 79.78s][moshi] Of ⟦⚡SPAN@80.59s: (tool result) Walking from Van Ness Station to Zuni Cafe takes approximately twenty-seven minutes.⟧ course, let's check that alternative route— The walk from Van Ness Station is about twenty-seven minutes.
+      CALL: {"function": "maps_walking_time", "arguments": {"start": "Van Ness Station", "end": "Zuni Cafe"}}
+[ 86.13s][user ] Twenty-seven minutes? That's a bit ⟨ret@88.59s⟩ far.
+[ 88.98s][moshi] It does ⟦⚡SPAN@89.79s: (tool result) The Civic Center/UN Plaza BART station is 0.3 miles from Zuni Cafe.⟧ seem a longer option… The Civic Center station is just three tenths of a mile away.
+[ 94.99s][user ] Okay, BART it is then. What time should we leave to get there ⟨ret@98.65s⟩ comfortably?
+[ 99.04s][moshi] I ⟦⚡SPAN@99.77s: (tool result) Travel time to Civic Center/UN Plaza BART station is currently fifteen minutes.⟧ can calculate that for you, taking travel time into account… It will take around fifteen minutes to reach the BART station.
+      CALL: {"function": "maps_travel_time", "arguments": {"start": "your location", "end": "Civic Center/UN Plaza BART station", "transport_mode": "transit"}}
+[103.22s][user ] «backchannel» Yeah.
+[106.98s][user ] And what's the weather like there right now?
+[109.17s][moshi] ⟨ret@109.09s⟩ Let’s ⟦⚡SPAN@110.13s: (tool result) The weather at Civic Center/UN Plaza is currently 62 degrees Fahrenheit and cloudy.⟧ check the current conditions… It's sixty-two degrees and cloudy at the BART station.
+      CALL: {"function": "weather_forecast", "arguments": {"location": "Civic Center/UN Plaza BART station"}}
+[112.03s][user ] «backchannel» Right.
+[114.87s][user ] Good to know. Thanks, Dar.
+[116.83s][moshi] You're very welcome. I hope you and your companion have a delightful evening at Zuni Cafe.
+[122.44s][user ] I think we will. Is there anything else you can help ⟨ret@125.63s⟩ with?
+[125.86s][moshi] Perhaps a gentle ⟦⚡SPAN@127.55s: (tool result) Reminder set for 7:00 PM: Zuni Cafe reservation.⟧ reminder before your reservation? I've set a reminder for 7:00 PM about your Zuni Cafe reservation.
+      CALL: {"function": "set_reminder", "arguments": {"time": "7:00 PM", "description": "Zuni Cafe reservation"}}
+[135.41s][user ] That's perfect. Thank you so much.
+[137.63s][moshi] My pleasure entirely. Enjoy your dinner, and remember to prioritize rest afterwards— a peaceful night is essential.

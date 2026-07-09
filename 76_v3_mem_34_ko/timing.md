@@ -1,62 +1,80 @@
 # v3_mem_34_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 거실을 다시 꾸미고 싶은데, 선택지가 너무 많아서 좀 부담스러 | S2 그리고 파리에서 요즘 유행하는 스타일이 있는지 궁금해. | S3 12월에 교토에 여행 가는 거 기억하지? | S4 다음 달 생일 저녁 식사도 정해야 하는데. 우리 6명이고, 가
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Ava · Location: Paris, France · Nationality: French · Gender: female · Age: late 30s · TZ: Europe/Paris (CET, UTC+1) · Currency: EUR (€)
+#   B. 저장 메모리:
+#      [2026-07-22] User's favorite cuisine is Mexican.
+#      [2026-06-25] User is vegetarian.
+#      [2026-06-15] User prefers an aisle seat when traveling.
+#      [2026-02-23] User is allergic to peanuts.
+#      [2026-02-11] User's home address is 30 Oak Avenue.
+#      [2026-02-09] User is planning a trip to Kyoto in December.
+#   B. 과거 대화 요약:
+#      [2026-03-15] Planning a birthday dinner — party of six; looking for outdoor seating
 
-     0.00s  user  발화 시작: 거실을 다시 꾸미고 싶은데, 선택지가 너무 많아서 좀 부담스러워.
-     3.84s  agent 발화 시작: 안녕하세요, 아바님. 저는 히아예요. 큰 변화를 앞두고 그렇게 느끼시는 건 당연해요. 지금 어떤 부분이 가장
-     3.84s  user  발화 끝
-    12.37s  agent 발화 끝
-    12.52s  user  발화 시작: 음, 색깔이 제일 큰 것 같아. 차분한 느낌도 갖고 싶은데… 너무 밋밋하면 안 될 것 같고.
-    18.53s  agent 발화 시작: 정말 멋진 목표네요. 차분하면서도 흥미로운 분위기는 충분히 만들 수 있어요. 보통 어떤 색깔이 그런 느낌을 
-    18.54s  user  발화 끝
-    23.84s  user  발화 시작: 응.
-    24.07s  user  발화 끝
-    27.24s  agent 발화 끝
-    27.41s  user  발화 시작: 나는… 파란색이나 초록색을 좋아하는 것 같아. 근데 너무 차가워 보일까 봐 걱정돼.
-    32.73s  user  발화 끝
-    33.00s  agent 발화 시작: 파란색과 초록색은 아주 좋은 시작점이에요. 확실히 평화로운 분위기를 연출하는 데 도움이 되죠. 보색을 활용해
-    38.75s  user  발화 시작: 그치.
-    39.24s  user  발화 끝
-    43.67s  agent 발화 끝
-    44.14s  user  발화 시작: 그리고 파리에서 요즘 유행하는 스타일이 있는지 궁금해.
-    46.95s  <ret> 발화 (turn9 첫 프레임)
-    47.19s  agent 발화 시작: <ret> 좋은 질문이에요. 파리의 현재 트렌드를 파악하는 건 중요하죠… 파리는 현재 클래식과 모던 스타일이
-    47.19s  user  발화 끝
-    48.39s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.89s]: User's Location: Paris, France.
-    56.98s  user  발화 시작: 오, 흥미롭네.
-    57.20s  agent 발화 끝
-    57.99s  user  발화 끝
-    58.00s  agent 발화 시작: 역사와 혁신을 모두 중요하게 생각하는 도시예요. 당신이 원하는 것이 시간이 흘러도 변치 않고 신선한 느낌을 
-    63.45s  user  발화 시작: 아.
-    64.09s  user  발화 끝
-    67.74s  agent 발화 끝
-    67.93s  user  발화 시작: 12월에 교토에 여행 가는 거 기억하지?
-    70.51s  user  발화 끝
-    70.53s  <ret> 발화 (turn14 첫 프레임)
-    70.61s  agent 발화 시작: <ret> 물론, 교토 여행 계획은 기억하고 있어요… 혹시 여행 준비를 위해 주소가 필요하시면 30 Oak 
-    72.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.07s]: [2026-02-09] User's home address is 30 Oak Avenue.
-    77.19s  agent 발화 끝
-    77.23s  user  발화 시작: 그래.
-    77.67s  user  발화 끝
-    78.03s  agent 발화 시작: 교토 디자인 요소를 활용해서 거실 분위기를 조화롭게 만들어 보는 건 어떠세요?
-    80.43s  user  발화 시작: 응.
-    80.83s  user  발화 끝
-    83.63s  agent 발화 끝
-    84.03s  user  발화 시작: 오, 정말 좋은 생각이야! 일본 미학을 정말 좋아해.
-    87.72s  user  발화 끝
-    87.81s  agent 발화 시작: 일본 미학은 단순함과 자연과의 연결을 강조하는데, 당신이 원하는 차분한 공간과 정말 잘 어울릴 것 같아요. 
-    92.89s  user  발화 시작: 어어.
-    93.33s  user  발화 끝
-    95.42s  agent 발화 끝
-    95.49s  user  발화 시작: 다음 달 생일 저녁 식사도 정해야 하는데. 우리 6명이고, 가능하면 야외에서 먹고 싶어.
-   101.78s  <ret> 발화 (turn22 첫 프레임)
-   101.97s  user  발화 끝
-   102.02s  agent 발화 시작: <ret> 알맞은 식당을 찾아볼게요… 6명 생일 저녁 식사를 원하시고, 야외 좌석이 있으면 좋겠다고 하셨죠.
-   103.70s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.13s]: [2026-03-15] Past chat — Planning a birthday dinner: party of six; loo
-   105.47s  user  발화 시작: 음.
-   106.00s  user  발화 끝
-   112.03s  agent 발화 끝
-   112.13s  user  발화 시작: 정말 고마워.
-   113.13s  user  발화 끝
-   113.22s  agent 발화 시작: 천만에요, 아바님. 결정을 내리는 과정을 도와드릴 수 있어서 기뻐요. 당신을 가장 잘 나타내는 공간을 만드는
-   121.84s  agent 발화 끝
+# EXAMINER(FDB-v2) 단계: S1 그 몽토르그유 거리의 작은 빵집에 가고 싶은데, 걸어갈 수 있 | S2 실제로 정말 좋게 들리네. 돌아가는 길은 멀어? | S3 오늘 저녁 식사할 곳도 고민 중인데… 멕시코 음식으로 먹을까  | S4 엘 란초 괜찮네. 채식 옵션도 있어?
+
+     0.00s  agent 발화 시작: 안녕하세요, 아바. 만나 뵙게 되어 정말 기뻐요. 앞으로 무엇을 할지 안내해 드릴 수 있어서 좋겠습니다.
+     6.53s  user  발화 시작: 그 몽토르그유 거리의 작은 빵집에 가고 싶은데, 걸어갈 수 있을까?
+     6.76s  agent 발화 끝
+    10.99s  <ret> 발화 (turn2 첫 프레임)
+    11.07s  agent 발화 시작: <ret> 정말 멋진 생각이고, 충분히 걸어갈 수 있어요. 오크 애비뉴 30번지에서 몽토르그유 거리까지는 대
+    11.16s  user  발화 끝
+    12.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.46s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    20.29s  agent 발화 끝
+    21.82s  user  발화 시작: 오, 생각보다 안 멀네. 대충 얼마나 걸릴까?
+    24.48s  <ret> 발화 (turn4 첫 프레임)
+    24.72s  agent 발화 시작: <ret> 잠시 현재 상황을 확인해 볼게요. 몽토르그유 거리까지 걸어가면 약 22분 정도 걸릴 거예요.
+    24.73s  user  발화 끝
+    25.92s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.22s]: (tool result) Origin: 30 Oak Avenue. Destination: Rue Montorgueil. Dis
+    27.93s  user  발화 시작: 응.
+    28.43s  user  발화 끝
+    30.65s  user  발화 시작: 좋아!
+    30.70s  agent 발화 끝
+    31.28s  user  발화 끝
+    31.34s  agent 발화 시작: 아바, 기분 좋은 산책이 될 거예요. 도시를 즐기기에도 좋은 방법이죠.
+    34.01s  user  발화 시작: 그치.
+    34.50s  user  발화 끝
+    36.85s  agent 발화 끝
+    36.93s  agent 발화 시작: 가는 길에 팔레 로얄 정원을 지나게 되는데, 잠시 들러볼 만한 아름다운 작은 공원이에요. 마음이 편안해지는 
+    45.59s  agent 발화 끝
+    45.66s  user  발화 시작: 실제로 정말 좋게 들리네. 돌아가는 길은 멀어?
+    48.73s  <ret> 발화 (turn11 첫 프레임)
+    48.96s  agent 발화 시작: <ret> 확인해 드릴 수 있어요. 팔레 로얄 정원을 추가하면 걸어가는 거리가 약 300미터 더 늘어납니다.
+    49.03s  user  발화 끝
+    50.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.13s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    53.00s  user  발화 시작: 아.
+    53.35s  user  발화 끝
+    56.19s  agent 발화 끝
+    56.58s  user  발화 시작: 흠, 그렇게 많이는 안 늘네. 그렇게 할 것 같아.
+    59.34s  user  발화 끝
+    59.38s  agent 발화 시작: 정말 잘 됐네요! 조금이라도 탐험하는 것을 좋아하시는군요.
+    63.40s  user  발화 시작: 오늘 저녁 식사할 곳도 고민 중인데… 멕시코 음식으로 먹을까 생각 중이야.
+    63.40s  agent 발화 끝
+    67.75s  <ret> 발화 (turn16 첫 프레임)
+    67.98s  agent 발화 시작: <ret> 아, 생생한 맛을 찾으시는군요. 전에 멕시코 요리를 좋아하신다고 말씀하신 걸 기억해요.
+    68.02s  user  발화 끝
+    69.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: [2026-07-22] User's favorite cuisine is Mexican.
+    70.66s  user  발화 시작: 응.
+    70.97s  user  발화 끝
+    74.24s  agent 발화 끝
+    74.81s  user  발화 시작: 응, 정말 좋아! 근처에 추천해 줄 만한 곳 있어?
+    78.37s  <ret> 발화 (turn19 첫 프레임)
+    78.42s  user  발화 끝
+    78.43s  agent 발화 시작: <ret> 알아볼게요. 엘 란초는 800미터 거리에 있고 별점은 4.5점입니다.
+    80.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: (tool result) Restaurant: El Rancho. Cuisine: Mexican. Rating: 4.5 sta
+    82.41s  user  발화 시작: 어어.
+    83.04s  user  발화 끝
+    84.41s  agent 발화 끝
+    85.48s  user  발화 시작: 엘 란초 괜찮네. 채식 옵션도 있어?
+    87.73s  <ret> 발화 (turn22 첫 프레임)
+    88.05s  agent 발화 시작: <ret> 정말 중요한 부분이죠. 네, 엘 란초에서는 여러 가지 채식 요리를 제공합니다.
+    88.07s  user  발화 끝
+    89.01s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.63s]: [2026-06-25] User is vegetarian.
+    90.01s  user  발화 시작: 음.
+    90.37s  user  발화 끝
+    93.84s  agent 발화 끝
+    94.14s  user  발화 시작: 좋아. 정말 고마워, 히아.
+    96.67s  user  발화 끝
+    97.06s  agent 발화 시작: 천만에요, 아바. 파리를 즐기시는 데 도움이 되어 기쁩니다.
+   101.08s  agent 발화 끝

@@ -1,6 +1,17 @@
 v3_rags_30_en src=nq_single style=rag_single
 SYSTEM: <system> You are Duli, a gentle and reflective personal guide who helps people with studies and staying motivated. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Robin · Location: Toronto, Canada · Nationality: Canadian · Gender: non-binary · Age: early 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
+  B. 저장 메모리:
+     [2026-06-10] User's home address is 664 Birch Road.
+     [2026-05-07] User is gluten-free.
+     [2026-03-03] User prefers an aisle seat when traveling.
+     [2026-01-12] User has a Beagle named Rusty.
+     [2026-01-03] User is into rock climbing.
+  B. 과거 대화 요약:
+     [2026-05-01] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-01-21] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When was the printing press invented in ⟨ret@2.34s⟩ Europe?
-[  2.58s][moshi] That’s a fascinating ⟦⚡SPAN@4.18s: The printing press was invented around 1440 in Europe.⟧ question, and a pivotal moment in history… It was invented around fourteen forty in Europe, marking a huge shift in how information spread.
+[  0.00s][user ] When was the printing press invented in Europe, ⟨ret@3.08s⟩ specifically?
+[  3.32s][moshi] That’s a fascinating ⟦⚡SPAN@4.92s: The printing press was invented in Europe around 1440.⟧ question, exploring a pivotal moment… It emerged in Europe approximately in fourteen forty, a truly transformative period.

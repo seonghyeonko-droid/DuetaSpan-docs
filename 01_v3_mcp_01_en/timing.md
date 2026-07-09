@@ -1,54 +1,65 @@
 # v3_mcp_01_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Hmm, that's… a lot. Is there any t | S3 Okay, that makes it a little bette | S4 Zero percent financing, huh? Can y
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: 예재 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+#   B. 저장 메모리:
+#      [2026-06-20] User is planning a trip to New Zealand in March.
+#      [2026-05-03] User is into birdwatching.
+#      [2026-03-11] User's home address is 50 Pine Court.
+#      [2026-02-18] User prefers an aisle seat when traveling.
+#   B. 과거 대화 요약:
+#      [2026-05-06] Researching a used car — comparing hybrid models; wants under 30k miles
+#      [2026-02-16] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Okay, and can we narrow that down  | S3 I mean, I don’t want to read throu | S4 Book me for 1:30 PM, please.
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.43s  <ret> 발화 (turn1 첫 프레임)
-     4.50s  agent 발화 시작: <ret> Certainly, I can map out the Apple website for you— Th
-     4.53s  user  발화 끝
-     5.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.64s]: (tool result) The tavily-map tool found 14 product categories on the A
-    13.95s  agent 발화 끝
-    14.03s  user  발화 시작: Okay, good. Now, can you find me the current price of the la
-    21.35s  <ret> 발화 (turn3 첫 프레임)
-    21.75s  agent 발화 시작: <ret> Let’s check the current pricing— The iPhone 15 Pro Max
-    22.00s  user  발화 끝
-    22.63s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.37s]: (tool result) The Apple website lists the iPhone 15 Pro Max with 256GB
-    25.51s  user  발화 시작: Nice.
-    26.33s  user  발화 끝
-    31.21s  agent 발화 끝
-    32.42s  user  발화 시작: Hmm, that's… a lot. Is there any trade-in program available?
-    36.76s  agent 발화 시작: Apple does offer a trade-in program, yes.
-    37.06s  user  발화 끝
-    39.34s  agent 발화 끝
-    40.23s  user  발화 시작: What kind of credit could I get for my iPhone 13 Pro?
-    43.42s  agent 발화 시작: Let me quickly estimate that trade-in value for you—
-    43.60s  user  발화 끝
-    46.45s  <ret> 발화 (turn9 첫 프레임)
-    46.69s  agent 발화 시작: <ret> Based on your iPhone 13 Pro’s condition, Apple estimat
-    46.75s  agent 발화 끝
-    48.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) The Apple Trade In tool estimates your iPhone 13 Pro in 
-    48.90s  user  발화 시작: Mm-hmm.
-    49.40s  user  발화 끝
-    52.90s  agent 발화 끝
-    53.01s  user  발화 시작: Okay, that makes it a little better. Now, if I were to buy t
-    61.30s  <ret> 발화 (turn12 첫 프레임)
-    61.53s  agent 발화 시작: <ret> Let's calculate the final cost— After applying the $30
-    61.68s  user  발화 끝
-    62.58s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.31s]: (tool result) Subtracting the $300 trade-in from the $1199 iPhone 15 P
-    71.56s  user  발화 시작: That's still pretty expensive. Are there any deals or promot
-    71.69s  agent 발화 끝
-    76.27s  agent 발화 시작: Currently, Apple is offering zero percent financing for twel
-    76.41s  user  발화 끝
-    80.47s  user  발화 시작: Zero percent financing, huh? Can you actually initiate the p
-    80.62s  agent 발화 끝
-    86.82s  user  발화 끝
-    86.86s  <ret> 발화 (turn16 첫 프레임)
-    86.94s  agent 발화 시작: <ret> I can certainly begin that process for you— Your order
-    88.22s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.56s]: (tool result) Order confirmed: iPhone 15 Pro Max (256GB) with trade-in
-    92.57s  user  발화 시작: Really?
-    93.39s  user  발화 끝
-    96.54s  agent 발화 끝
-    96.62s  user  발화 시작: Wonderful, thank you so much.
-    98.42s  user  발화 끝
-    98.57s  agent 발화 시작: You're very welcome. I’m glad I could help with your purchas
-   101.80s  agent 발화 끝
+     4.05s  <ret> 발화 (turn1 첫 프레임)
+     4.12s  agent 발화 시작: <ret> Certainly, I can map out the Apple website for you… I’
+     4.16s  user  발화 끝
+     5.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.95s]: (tool result) The tavily-map tool found 23 product pages on apple.com,
+     8.64s  user  발화 시작: Okay.
+     9.32s  user  발화 끝
+    14.78s  agent 발화 끝
+    15.82s  user  발화 시작: That’s good, but can it also show me where the support artic
+    19.18s  <ret> 발화 (turn4 첫 프레임)
+    19.47s  agent 발화 시작: <ret> Adding support articles to the map is a great idea… I’
+    19.79s  user  발화 끝
+    21.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) The tavily-map tool now shows 112 pages, including 23 pr
+    24.46s  user  발화 시작: Uh-huh.
+    24.95s  user  발화 끝
+    28.55s  agent 발화 끝
+    29.79s  user  발화 시작: Okay, and can we narrow that down to just support articles a
+    33.78s  <ret> 발화 (turn7 첫 프레임)
+    34.17s  agent 발화 시작: <ret> Focusing the support section on iPhones will give you…
+    34.46s  user  발화 끝
+    35.14s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.34s]: (tool result) The tavily-map tool filtered to 47 iPhone support articl
+    37.16s  user  발화 시작: Right.
+    37.66s  user  발화 끝
+    41.58s  agent 발화 끝
+    42.30s  user  발화 시작: Actually, before you go further, are those articles ranked b
+    47.25s  agent 발화 시작: That’s a very insightful question—
+    47.39s  user  발화 끝
+    48.69s  user  발화 시작: I mean, I don’t want to read through forty-seven articles, j
+    49.46s  agent 발화 끝
+    53.90s  <ret> 발화 (turn12 첫 프레임)
+    54.16s  user  발화 끝
+    54.30s  agent 발화 시작: <ret> You’re right to ask about ranking— The most viewed iPh
+    54.94s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.20s]: (tool result) The tavily-map tool sorted the 47 iPhone support article
+    61.96s  user  발화 시작: Perfect. Now, can you find me a Genius Bar appointment near 
+    62.37s  agent 발화 끝
+    66.64s  <ret> 발화 (turn14 첫 프레임)
+    66.88s  agent 발화 시작: <ret> Let’s get that appointment scheduled for you… Apple St
+    67.05s  user  발화 끝
+    68.24s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.57s]: (tool result) The Apple Store Beverly Hills has appointments available
+    74.95s  agent 발화 끝
+    75.16s  user  발화 시작: Book me for 1:30 PM, please.
+    77.20s  <ret> 발화 (turn16 첫 프레임)
+    77.27s  user  발화 끝
+    77.28s  agent 발화 시작: <ret> Confirming that appointment now— Your appointment is c
+    78.32s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: (tool result) Appointment booked at Apple Store Beverly Hills, tomorro
+    87.21s  agent 발화 끝
+    87.26s  user  발화 시작: Great, thanks so much!
+    88.75s  agent 발화 시작: You’re very welcome! I’m glad I could assist with your plann
+    88.87s  user  발화 끝
+    94.22s  agent 발화 끝

@@ -1,23 +1,26 @@
 v3_mem_35_ko src=mem style=mem
-SYSTEM: <system> 당신은 돈과 예산 관리에 도움을 주는 현실적이고 공감적인 개인 가이드 Klen입니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리에 도움을 주는 현실적이고 공감적인 개인 가이드인 Klen입니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Hugo · Location: Toronto, Canada · Nationality: Canadian · Gender: male · Age: early 20s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
+  B. 저장 메모리:
+     [2026-07-11] User prefers an aisle seat when traveling.
+     [2026-06-15] User works as a software engineer.
+     [2026-05-27] User is planning a trip to New Zealand in October.
+     [2026-04-21] User's home address is 517 Maple Drive.
+     [2026-01-17] User's favorite cuisine is sushi.
+     [2026-01-12] User is allergic to penicillin.
+  B. 과거 대화 요약:
+     [2026-07-16] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  안녕, 클렌. 10월에 뉴질랜드 여행을 계획 중인데, 거기서 할 만한 것 좀 추천해 줄 수 있어?
-  S2  잘 들었어. 어떻게 돌아다니는 게 제일 좋을지 고민 중인데, 차를 렌트해야 할까?
-  S3  …왼쪽 차선 운전이 다들 말하는 것처럼 진짜 어려운 거야?
-  S4  생각해 보니 맞는 말이네. 고마워, 클렌.
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][moshi] 안녕하세요, 휴고 님. 저는 클렌이에요. 만나 뵙게 되어서 기뻐요.
-[  4.41s][user ] 안녕, 클렌. 10월에 뉴질랜드 여행을 계획 중인데, 거기서 할 만한 것 좀 추천해 줄 수 있어?
-[ 10.37s][moshi] ⟨ret@10.21s⟩ 정말 멋진 계획이시네요, ⟦⚡SPAN@12.21s: [2026-05-27] User is planning a trip to New Zealand in October.⟧ 휴고 님. 정말 환상적인 곳이에요. 10월은 뉴질랜드 방문하기 좋은 시기예요. 봄 날씨가 오거든요.
-[ 13.25s][user ] «backchannel» 그래.
-[ 19.77s][user ] 잘 들었어. 어떻게 돌아다니는 게 제일 좋을지 고민 중인데, 차를 렌트해야 할까?
-[ 25.15s][moshi] «interrupted» 차를 렌트하면 자유롭게 다닐 수 있죠, 분명히—
-[ 27.72s][user ] «interrupts_prev» …왼쪽 차선 운전이 다들 말하는 것처럼 진짜 어려운 거야?
-[ 31.31s][moshi] 왼쪽 차선 운전은 조금 적응이 필요할 수 있지만, 대부분의 방문객들은 금방 적응해요.
-[ 34.34s][user ] «backchannel» 응응.
-[ 37.31s][moshi] ⟨ret@37.07s⟩ 여행 계획을 ⟦⚡SPAN@38.43s: [2026-07-11] User prefers an aisle seat when traveling.⟧ 고려해 보니까, 말씀하신 게 기억나요— 비행기 좌석은 통로 쪽을 선호하신다고 하셨는데, 여유와 편안함을 중요하게 생각하신다는 뜻일 것 같고, 그게 탐험할 때 더 큰 차를 원하시는 걸로 이어질 수도 있겠네요.
-[ 44.30s][user ] «backchannel» 어어.
-[ 52.71s][user ] 생각해 보니 맞는 말이네. 고마워, 클렌.
+[  0.00s][moshi] 안녕하세요, 휴고님. 저는 클렌이라고 해요. 만나 뵙게 되어서 반갑습니다. 재정을 관리하고 미래를 계획하는 데 도움을 드리고 있습니다.
+[  9.21s][user ] 어이, 클렌. 고마워! 10월에 뉴질랜드 여행을 계획 중인데, 여행 좌석을 어떻게 처리하는 게 좋을지 고민 중이야.
+[ 16.78s][moshi] ⟨ret@16.62s⟩ ⟦⚡SPAN@17.12s: [2026-07-11] User prefers an aisle seat when traveling.⟧ 여행 좌석 선호도는 편안한 비행을 위해 중요하죠… 휴고님께서는 비행하실 때 통로 쪽 좌석을 선호하신다고 말씀하셨어요. 옵션을 알아볼 때 꼭 고려하겠습니다.
+[ 29.40s][user ] 맞아, 항상 그렇지. 그런데 통로 좌석을 선택하면 보통 추가 비용이 드는 거야?
+[ 35.38s][moshi] ⟨ret@35.14s⟩ 항공사 ⟦⚡SPAN@36.58s: (tool result) Airline: Air New Zealand; Route: Toronto to Auckland; Date: October 20, 2024; Aisle seat cost: $⟧ 좌석 비용은 상당히 다양하게 책정될 수 있습니다… 에어 뉴질랜드는 10월 20일 오클랜드행 항공편의 통로 좌석을 칠십오 캐나다 달러로 청구합니다.
+[ 43.45s][user ] «backchannel» 그래.
+[ 46.03s][moshi] 총 항공편 비용은 기본 요금을 포함해서 천팔백 캐나다 달러입니다.
+[ 47.61s][user ] «backchannel» 응응.
+[ 50.86s][user ] 잠깐만, 오클랜드? 크라이스트처치에 대해 이야기하고 있었잖아—가격이 다른 거야?
+[ 56.17s][moshi] «interrupted» 아, 질문하신 게 맞아요! 크라이스트처치는 남섬에 있는데—
+[ 60.43s][moshi] ⟨ret@60.11s⟩ 죄송합니다, ⟦⚡SPAN@61.95s: (tool result) Airline: Air New Zealand; Route: Toronto to Christchurch; Date: October 20, 2024; Aisle seat cos⟧ 맞습니다. 크라이스트처치행 항공편은 이천백 캐나다 달러이고, 통로 좌석은 구십 캐나다 달러입니다.

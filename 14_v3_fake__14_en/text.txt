@@ -1,29 +1,37 @@
 v3_fake__14_en src=nq style=v1
 SYSTEM: <system> You are Kliana, a thoughtful and soft-spoken supportive advisor who helps people with settling into a new city. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: David · Location: London, United Kingdom · Nationality: British · Gender: male · Age: early 30s · TZ: Europe/London (GMT, UTC+0) · Currency: GBP (£)
+  B. 저장 메모리:
+     [2026-06-05] User is gluten-free.
+     [2026-05-20] User is planning a trip to Kyoto in March.
+     [2026-03-07] User's favorite cuisine is Italian.
+     [2026-02-07] User has a Golden Retriever named Max.
+  B. 과거 대화 요약:
+     [2026-07-22] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a b
-      Oh, *Chess*! I’ve never heard of that. Was he in ABBA too?
-  S2  So, he wrote songs for both ABBA and this *Chess* musical?
-  S3  That’s amazing. What other musicals did he work on?
-      I’ve never heard of that one either— is it in English?
-  S4  Oh, so it’s mostly performed in Sweden then?
+  S1  I was just listening to Mamma Mia and I’m curious… who wrote “My Love,
+      Oh, *Chess*! I didn't know it wasn't originally a Mamma Mia song.
+  S2  Yeah, it is. Um, what other musicals did he work on?
+      That’s a mouthful! Is that one well-known?
+  S3  Oh, is Benny Andersson involved in that one too?
+      I— I mean, you just mentioned him, but is he a frequent collaborator?
+  S4  So, ABBA and *Chess* and… anything else big?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a beautiful song.
-[  4.74s][moshi] ⟨ret@4.50s⟩ That’s a lovely ⟦⚡SPAN@6.50s: Björn Ulvaeus wrote “My Love, My Life” as part of the musical *Chess*.⟧ question, and a very popular one. Björn Ulvaeus is credited with writing “My Love, My Life” originally for the musical *Chess*.
-[ 14.66s][user ] Oh, *Chess*! I’ve never heard of that. Was he in ABBA too?
-[ 19.15s][moshi] Yes, he was! Björn Ulvaeus was one of the founding members of ABBA, alongside Benny Andersson.
-[ 21.96s][user ] «backchannel» Yeah.
-[ 25.62s][user ] So, he wrote songs for both ABBA and this *Chess* musical?
-[ 29.51s][moshi] ⟨ret@29.36s⟩ He certainly had ⟦⚡SPAN@31.36s: Benny Andersson also co-wrote many songs with Björn Ulvaeus for ABBA.⟧ a very productive songwriting career. Björn Ulvaeus frequently collaborated with Benny Andersson, co-writing many of ABBA’s most famous songs.
-[ 33.36s][user ] «backchannel» Oh.
-[ 40.25s][user ] That’s amazing. What other musicals did he work ⟨ret@43.01s⟩ on?
-[ 43.25s][moshi] He's remained involved in ⟦⚡SPAN IRRELEVANT@45.01s: (tool result) AAPL closed at 170.34, up 0.82 points.⟧ musical theatre, but *Chess* is his most prominent work outside of ABBA.
-[ 46.78s][user ] «backchannel» Uh-huh.
-[ 49.38s][moshi] He also contributed to the musical *Kristina from Duvemåla*, which was very successful in Sweden.
-[ 56.23s][user ] I’ve never heard of that one either— is it ⟨ret@58.52s⟩ in English?
-[ 58.68s][moshi] It's ⟦⚡SPAN@59.48s: *Kristina from Duvemåla* is a Swedish musical with music by Benny Andersson and lyrics by Björn Ulvaeus.⟧ a production with a fascinating history. *Kristina from Duvemåla* is originally a Swedish-language musical, though it has seen some international adaptations.
-[ 69.88s][user ] Oh, so it’s mostly performed in Sweden then?
-[ 72.29s][moshi] Primarily, yes. It tells a story of Swedish emigration to America in the nineteenth century.
+[  0.00s][user ] I was just listening to Mamma Mia and I’m curious… who wrote “My Love, My ⟨ret@4.71s⟩ Life”?
+[  4.93s][moshi] That’s a lovely ⟦⚡SPAN@6.46s: Björn Ulvaeus wrote “My Love, My Life” for the musical *Chess*.⟧ song, and a good question. It was Björn Ulvaeus who composed that beautiful piece, originally for *Chess*.
+[ 12.64s][user ] Oh, *Chess*! I didn't know it wasn't originally a Mamma Mia song.
+[ 17.40s][moshi] It’s fascinating how songs find new life in different productions, isn’t it?
+[ 21.72s][user ] Yeah, it is. Um, what other musicals did he work on?
+[ 25.90s][moshi] ⟨ret@25.75s⟩ Björn Ulvaeus has ⟦⚡SPAN@27.75s: Björn Ulvaeus co-wrote *Kristina from Duvemåla* with Benny Andersson and Lars Weissmark.⟧ quite a musical background. He co-wrote *Kristina from Duvemåla* alongside Benny Andersson and Lars Weissmark.
+[ 35.69s][user ] That’s a mouthful! Is that one ⟨ret@38.38s⟩ well-known?
+[ 38.62s][moshi] It’s quite popular ⟦⚡SPAN IRRELEVANT@40.38s: (tool result) AAPL: 170.34 +0.45 (0.26%)⟧ in Sweden, though perhaps less familiar elsewhere. It’s a sweeping historical piece.
+[ 46.68s][user ] Oh, is Benny Andersson involved in that one too?
+[ 48.94s][user ] I— I mean, you just mentioned him, but is he a frequent collaborator?
+[ 52.80s][moshi] Yes, Benny Andersson and Björn Ulvaeus are a very famous songwriting duo. They worked together on many projects.
+[ 55.58s][user ] «backchannel» Yeah.
+[ 59.02s][user ] So, ABBA and *Chess* and… anything else big?
+[ 63.53s][moshi] They also created the music for *Buddy – The Musical*, a tribute to Buddy Holly. It’s a lively show.

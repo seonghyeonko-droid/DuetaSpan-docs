@@ -1,39 +1,59 @@
 v3_abs_21_en src=squad2 style=abstain
 SYSTEM: <system> You are Nias, a grounded and empathetic counselor who helps people with health and daily habits. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 하재 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: 40s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-06-02] User's home address is 389 Maple Drive.
+     [2026-03-10] User is planning a trip to Vietnam in August.
+     [2026-03-09] User has a Poodle named Coco.
+     [2026-02-26] User prefers a window seat when traveling.
+  B. 과거 대화 요약:
+     [2026-06-20] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-02-28] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  How many senators are there in the French Senate?
-      Oh. Um, what about the US Senate? How many senators are *there*?
-      Right. So two per state. That makes sense. What’s the average age of a
-  S2  Wow, that’s… older than I expected. I— I mean, I thought it’d be young
-      Yeah, you’re probably right. Okay, so, what’s the highest point in Fra
-  S3  That's… incredibly high. Is it taller than Mount Everest?
-      Oh! What about the lowest point? In France, I mean.
-  S4  Zero meters? That's surprising. So it's at sea level?
-      Okay. So, um, if I wanted to improve my sleep, what would you suggest?
+      Um, okay. What about the US Senate? How many senators are there?
+      Right. And who is the current president pro tempore?
+  S2  Interesting. Is she a Democrat?
+      What about the Speaker of the House? Who is that?
+      October? Wow, that feels recent. Is he from Louisiana?
+  S3  Does he have a lot of experience?
+      I mean, before Congress? What did he do?
+      That makes sense. So, a lawyer turned politician.
+  S4  Mm-hmm. What kind of law did he practice?
+      Constitutional law, huh? That explains a lot.
+      So, it sounds like he's pretty conservative then?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] How many senators are there in the French Senate?
-[  2.60s][moshi] ⟨ret@2.53s⟩ That’s a good ⟦⚡SPAN@3.81s: (no information found)⟧ question, understanding the structure of other governments— I’m sorry, I couldn’t find the exact number of senators in the French Senate at this time.
-[  6.48s][user ] «backchannel» Mhm.
-[ 11.69s][user ] Oh. Um, what about the US Senate? How many senators are ⟨ret@17.25s⟩ *there*?
-[ 17.48s][moshi] Ah, the ⟦⚡SPAN@18.29s: The United States Senate is composed of one hundred senators, two from each of the fifty states.⟧ US Senate—that’s much more familiar territory for me. There are one hundred senators in the US Senate, with two representing each of the fifty states.
-[ 23.00s][user ] «backchannel» Okay.
-[ 26.66s][user ] Right. So two per state. That makes sense. What’s the average age of a US ⟨ret@31.86s⟩ senator?
-[ 32.09s][moshi] That’s a ⟦⚡SPAN@33.22s: As of January 3, 2023, the average age of a U.S. Senator is 63.3 years.⟧ really interesting detail to consider— The average age of a US Senator, as of January third, twenty twenty-three, is sixty-three and three tenths years.
-[ 41.54s][user ] Wow, that’s… older than I expected. I— I mean, I thought it’d be younger.
-[ 46.77s][moshi] It is a bit older, isn’t it? Often people in positions of leadership have years of experience behind them.
-[ 48.76s][user ] «backchannel» Yeah, yeah.
-[ 52.99s][user ] Yeah, you’re probably right. Okay, so, what’s the highest point in France?
-[ 57.62s][moshi] ⟨ret@57.55s⟩ Let's ⟦⚡SPAN@58.52s: Mont Blanc, at 4,807 meters (15,774 ft), is the highest mountain in France and the Alps.⟧ switch gears to geography— Mont Blanc is the highest point in France, reaching four thousand eight hundred seven meters, or fifteen thousand seven hundred seventy-four feet.
-[ 68.43s][user ] That's… incredibly high. Is it taller than Mount Everest?
-[ 72.77s][moshi] No, it's not quite as tall as Mount Everest. Everest is significantly higher, at eight thousand eight hundred forty-eight point eight six meters.
-[ 83.61s][user ] Oh! What about the lowest point? In France, I ⟨ret@86.42s⟩ mean.
-[ 86.73s][moshi] A good follow-up question, ⟦⚡SPAN@88.26s: The lowest point in France is Saint-Martin-de-Ré, at 0 meters (0 ft) below sea level.⟧ looking at the full range— The lowest point in France is Saint-Martin-de-Ré, which sits at zero meters below sea level.
-[ 92.40s][user ] «backchannel» Okay.
-[ 94.89s][user ] Zero meters? That's surprising. So it's at sea level?
-[ 99.17s][moshi] Precisely. It’s actually slightly below sea level, but very close to it.
-[102.08s][user ] «backchannel» Right.
-[103.42s][user ] Okay. So, um, if I wanted to improve my sleep, what would you suggest?
-[107.97s][moshi] Well, sleep is so crucial for overall well-being. Establishing a regular bedtime routine can be a really helpful starting point.
+[  3.00s][moshi] ⟨ret@2.94s⟩ That’s a good question, ⟦⚡SPAN@4.62s: (no information found)⟧ understanding the structure of other governments— I’m afraid I don’t currently have that specific number available. Perhaps we could explore other aspects of French governance?
+[  7.77s][user ] «backchannel» Mhm.
+[ 13.91s][user ] Um, okay. What about the US Senate? How many senators are ⟨ret@18.03s⟩ there?
+[ 18.26s][moshi] Ah, ⟦⚡SPAN@19.07s: The United States Senate is composed of one hundred senators, two from each state.⟧ the US Senate is something I can easily help with— There are one hundred senators in the US Senate, with two representing each state.
+[ 23.54s][user ] «backchannel» Okay.
+[ 27.08s][user ] Right. And who is the current president pro ⟨ret@29.80s⟩ tempore?
+[ 30.03s][moshi] That’s a detail ⟦⚡SPAN@31.56s: As of November 29, 2023, Patty Murray is the President Pro Tempore of the United States Senate.⟧ that changes periodically, of course— Currently, Patty Murray holds the position of President Pro Tempore.
+[ 36.81s][user ] Interesting. Is she a Democrat? ⟨ret@39.05s⟩
+[ 39.28s][moshi] Yes, ⟦⚡SPAN@40.01s: Patty Murray is a member of the Democratic Party, representing Washington state.⟧ she is— Patty Murray is indeed a Democrat, representing the state of Washington.
+[ 41.17s][user ] «backchannel» Yeah, yeah.
+[ 45.31s][user ] What about the Speaker of the House? Who is that?
+[ 48.14s][moshi] ⟨ret@48.07s⟩ Let me check on ⟦⚡SPAN@49.59s: (tool result) Mike Johnson is the current Speaker of the House, elected on October 25, 2023.⟧ the current Speaker for you— Mike Johnson is the current Speaker of the House, elected last October.
+[ 54.08s][user ] October? Wow, that feels recent. Is he from ⟨ret@58.13s⟩ Louisiana?
+[ 58.52s][moshi] ⟦⚡SPAN@59.09s: Mike Johnson represents Louisiana's 4th congressional district in the House of Representatives.⟧ Yes, he represents Louisiana— He represents Louisiana’s 4th congressional district.
+[ 65.09s][user ] Does he have a lot of experience?
+[ 67.72s][moshi] «interrupted» —He’s been in Congress for a few years now—
+[ 69.48s][user ] «interrupts_prev» I mean, before Congress? What did he ⟨ret@71.94s⟩ do?
+[ 72.17s][moshi] ⟦⚡SPAN@72.50s: Prior to his political career, Mike Johnson worked as a constitutional lawyer.⟧ Before entering Congress, he practiced law— He previously worked as a constitutional lawyer.
+[ 75.58s][user ] «backchannel» Okay.
+[ 77.19s][user ] That makes sense. So, a lawyer turned politician.
+[ 80.65s][moshi] «interrupted» It’s a common path, certainly. Many find skills translate well—
+[ 84.13s][user ] «interrupts_prev» Mm-hmm. What kind of law did he ⟨ret@86.75s⟩ practice?
+[ 87.14s][moshi] That’s a more ⟦⚡SPAN@88.75s: Mike Johnson specialized in appellate and constitutional law at a private firm.⟧ specific detail, let me look that up— He specialized in appellate and constitutional law.
+[ 91.37s][user ] «backchannel» Right.
+[ 93.50s][user ] Constitutional law, huh? That explains a lot.
+[ 97.00s][moshi] [laugh] It often provides a strong foundation for understanding governance.
+[102.32s][user ] So, it sounds like he's pretty conservative then?
+[105.49s][moshi] «interrupted» He generally aligns with conservative principles, yes—
+[109.09s][moshi] ⟨ret@108.94s⟩ He is known ⟦⚡SPAN@110.30s: Mike Johnson is known for his socially conservative and constitutionally focused viewpoints.⟧ for his socially conservative viewpoints.

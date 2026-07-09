@@ -1,41 +1,54 @@
 v3_mcp_02_en src=mcp style=v3
 SYSTEM: <system> You are Driaus, a kind and steady supportive advisor who helps people with productivity and daily routines. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Ethan · Location: Toronto, Canada · Nationality: Canadian · Gender: male · Age: early 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
+  B. 저장 메모리:
+     [2026-06-28] User is allergic to penicillin.
+     [2026-06-05] User has a Siamese cat named Bella.
+     [2026-05-04] User is into birdwatching.
+     [2026-04-11] User prefers a window seat when traveling.
+     [2026-03-08] User is planning a trip to Lisbon in May.
+     [2026-01-11] User works as a graphic designer.
+  B. 과거 대화 요약:
+     [2026-01-26] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
+     [2026-01-22] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Begin watching for a weather update from weather dot example dot com.
-      That’s good to know. Uh, I'm thinking of booking a train to Bristol to
-  S2  Around ten am, if possible.
-      That sounds perfect. Book it for me, please.
-  S3  Great! And could you set a reminder for me to leave the house by nine 
-      That’s brilliant, thank you. Oh, did you know that badgers can live fo
-  S4  I— I mean, is there a good cafe near Bristol Temple Meads station?
-      Perfect. Thank you so much for your help, Driaus.
+      Okay, good. And could you remind me to check it again at six pm?
+  S2  That’s great. Uh, I’m also thinking of ordering takeout tonight…
+      I was hoping to get something from Bella Italia, but I don’t know thei
+  S3  Perfect! I’ll give them a call. I also need to book a train ticket.
+      From London to Bristol, please. Next Friday.
+  S4  That sounds good. Book that for me, please.
+      Excellent! That’s everything for now, thank you.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.48s⟩ com.
-[  3.71s][moshi] Certainly, I can ⟦⚡SPAN@5.24s: (tool result) The current weather in London is 15 degrees Celsius and cloudy.⟧ monitor that for you. Right now in London, it’s fifteen degrees Celsius and cloudy.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.87s⟩ com.
+[  4.10s][moshi] Certainly, I can ⟦⚡SPAN@5.63s: (tool result) The website reported a temperature of 22 degrees Celsius and clear skies.⟧ monitor that for you. Currently, the weather at weather dot example dot com is 22 degrees Celsius with clear skies.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 11.92s][user ] That’s good to know. Uh, I'm thinking of booking a train to Bristol tomorrow.
-[ 16.03s][moshi] Traveling to Bristol sounds lovely. What time were you hoping to depart?
-[ 18.22s][user ] «backchannel» Uh-huh.
-[ 20.71s][user ] Around ten am, if ⟨ret@22.36s⟩ possible.
-[ 22.68s][moshi] Let me check ⟦⚡SPAN@24.36s: (tool result) A train to Bristol departs at 10:15 AM, arriving at 11:45 AM, costing £65.⟧ train availability for that time. There's a train leaving at ten fifteen, arriving at eleven forty-five, for sixty-five pounds.
-      CALL: {"function": "book_train", "arguments": {"departure_time": "10:00", "destination": "Bristol"}}
-[ 26.77s][user ] «backchannel» Mhm.
-[ 31.94s][user ] That sounds perfect. Book it for me, ⟨ret@34.11s⟩ please.
-[ 34.51s][moshi] Excellent, ⟦⚡SPAN@35.31s: (tool result) Your train to Bristol is booked; confirmation number is AB123CD.⟧ I'm confirming the booking now. Your train to Bristol is confirmed, the booking reference is AB123CD.
-      CALL: {"function": "book_train", "arguments": {"departure_time": "10:15", "destination": "Bristol", "confirm": "yes"}}
-[ 37.90s][user ] «backchannel» Wow.
-[ 42.57s][user ] Great! And could you set a reminder for me to leave the house by nine forty-five?
-[ 47.35s][moshi] ⟨ret@47.27s⟩ Absolutely, ⟦⚡SPAN@48.23s: (tool result) Reminder set for 09:45 AM: Leave for train to Bristol.⟧ I can schedule that reminder for you. I’ve set a reminder for nine forty-five to leave for your train to Bristol.
-      CALL: {"function": "set_reminder", "arguments": {"time": "09:45", "message": "Leave for train"}}
-[ 51.33s][user ] «backchannel» Yeah.
-[ 55.76s][user ] That’s brilliant, thank you. Oh, did you know that badgers can live for up to fifteen years?
-[ 60.99s][moshi] That is a fascinating fact about badgers! They are quite remarkable creatures.
-[ 66.48s][user ] I— I mean, is there a good cafe near Bristol Temple Meads station?
-[ 70.44s][moshi] ⟨ret@70.36s⟩ Let me look ⟦⚡SPAN@71.96s: (tool result) "The Station Cafe" is 2 minutes away, rating 4.5 stars.⟧ for cafes near the station. The Station Cafe is two minutes from the station, and it has a four-and-a-half-star rating.
-      CALL: {"function": "find_nearby", "arguments": {"location": "Bristol Temple Meads", "type": "cafe"}}
-[ 76.01s][user ] «backchannel» Right.
-[ 78.62s][user ] Perfect. Thank you so much for your help, Driaus.
-[ 81.35s][moshi] You’re very welcome. I’m glad I could assist with your travel arrangements and a little badger trivia.
+[  7.55s][user ] «backchannel» Yeah.
+[ 14.58s][user ] Okay, good. And could you remind me to check it again at six pm?
+[ 18.23s][moshi] ⟨ret@18.10s⟩ I can ⟦⚡SPAN@19.30s: (tool result) A reminder has been set for 6:00 PM to check the weather.⟧ definitely set that up for you. I’ve scheduled a reminder for six pm to check the weather report.
+      CALL: {"function": "set_reminder", "arguments": {"time": "18:00", "message": "Check weather at weather.example.com"}}
+[ 20.98s][user ] «backchannel» Yeah, yeah.
+[ 24.67s][user ] That’s great. Uh, I’m also thinking of ordering takeout tonight…
+[ 27.93s][moshi] Ordering takeout sounds lovely. Is there a particular restaurant you have in mind?
+[ 30.21s][user ] «backchannel» Yeah.
+[ 32.70s][user ] I was hoping to get something from Bella Italia, but I don’t know their ⟨ret@36.29s⟩ number.
+[ 36.61s][moshi] ⟦⚡SPAN@36.79s: (tool result) Bella Italia’s phone number is 555-123-4567.⟧ Let me quickly find that information for you. The phone number for Bella Italia is 555-123-4567.
+      CALL: {"function": "search", "arguments": {"query": "Bella Italia phone number"}}
+[ 42.43s][user ] «backchannel» Yeah.
+[ 45.28s][user ] Perfect! I’ll give them a call. I also need to book a train ticket.
+[ 49.22s][moshi] Certainly, I can help with that. Where are you travelling from and to?
+[ 53.21s][user ] From London to Bristol, please. Next ⟨ret@55.81s⟩ Friday.
+[ 56.12s][moshi] Alright, ⟦⚡SPAN@56.85s: (tool result) A train is available departing London at 10:00 AM and arriving in Bristol at 11:30 AM, costing £⟧ let's check availability for that route. There’s a train available next Friday departing at 10 am, arriving at 11:30 am for £45.
+      CALL: {"function": "book_train", "arguments": {"departure": "London", "arrival": "Bristol", "date": "next Friday"}}
+[ 60.82s][user ] «backchannel» Right.
+[ 66.60s][user ] That sounds good. Book that for me, ⟨ret@68.93s⟩ please.
+[ 69.33s][moshi] ⟦⚡SPAN@69.43s: (tool result) Your train ticket from London to Bristol on next Friday is confirmed. Booking reference is T1234⟧ Absolutely, confirming that booking now. Your train ticket to Bristol is now confirmed, booking reference T12345.
+      CALL: {"function": "confirm_booking", "arguments": {"booking_id": "T12345"}}
+[ 72.62s][user ] «backchannel» Oh.
+[ 77.27s][user ] Excellent! That’s everything for now, thank you.
+[ 80.04s][moshi] You're very welcome. I’m glad I could assist you with your arrangements today.

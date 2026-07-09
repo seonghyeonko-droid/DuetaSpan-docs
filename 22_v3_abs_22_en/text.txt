@@ -1,33 +1,42 @@
 v3_abs_22_en src=squad2 style=abstain
 SYSTEM: <system> You are Frunax, a warm and attentive supportive advisor who helps people with planning trips and time off. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Hato · Location: Tokyo, Japan · Nationality: Japanese · Gender: male · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
+  B. 저장 메모리:
+     [2026-07-17] User has a Corgi named Mochi.
+     [2026-05-04] User is into alpine wildflower photography.
+     [2026-04-20] User's home address is 922 Birch Road.
+     [2026-04-07] User works as a graduate student.
+     [2026-01-15] User prefers an aisle seat when traveling.
+  B. 과거 대화 요약:
+     [2026-07-19] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-01-18] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What mode of government does the anarchists hate?
-      Well, that’s surprising. Do they dislike monarchy, then?
-  S2  Right. And what about democracy? Is that okay with them?
-      But wouldn’t *any* kind of organized rule be against their principles?
-  S3  So, they want no rulers at all, basically?
-      That sounds… chaotic. Is it practical?
-  S4  I see. Maybe I’ll read more about it. Thanks, Frunax.
+      Okay, well, what about the United States? What kind of government is t
+  S2  And who are the current representatives for California in the Senate?
+      That’s good to know. Um—
+  S3  Do they ever disagree with the President?
+      Interesting. So, it’s not always just agreeing with everything?
+  S4  That makes sense. [happy] What’s the weather like in San Francisco rig
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.86s⟩ hate?
-[  3.02s][moshi] That’s a fascinating question, ⟦⚡SPAN@4.62s: (no information found)⟧ and a common one, actually.
-[  6.17s][moshi] I’ve searched extensively, but I’m unable to find a single mode of government anarchists universally hate.
-[ 12.71s][user ] Well, that’s surprising. Do they dislike monarchy, then?
-[ 16.20s][moshi] ⟨ret@16.12s⟩ Let's ⟦⚡SPAN@17.25s: Anarchists oppose all forms of hierarchical rule, including monarchy, viewing it as inherently oppressive.⟧ narrow the focus— Anarchists oppose monarchy, seeing all hierarchical rule as oppressive. It’s a core tenet of their beliefs.
-[ 25.30s][user ] Right. And what about democracy? Is that okay with them?
-[ 29.36s][moshi] «interrupted» That’s a really important distinction to make—
-[ 31.78s][moshi] ⟨ret@31.63s⟩ They reject state ⟦⚡SPAN@33.39s: While some anarchists may engage with democratic processes, they fundamentally reject state authority inherent⟧ authority, even in democracies, though some may participate in democratic processes.
-[ 35.68s][user ] «backchannel» Yeah.
-[ 38.02s][user ] But wouldn’t *any* kind of organized rule be against their principles?
-[ 42.41s][moshi] «interrupted» That's a very astute point—
-[ 44.23s][moshi] ⟨ret@43.91s⟩ They want self-governed ⟦⚡SPAN@45.91s: Anarchists advocate for self-governed societies based on voluntary institutions, rejecting all forms of coerci⟧ societies, rejecting coercive authority in all its forms.
-[ 49.55s][user ] So, they want no rulers at all, basically?
-[ 53.06s][moshi] «interrupted» Precisely! It’s about dismantling hierarchies—
-[ 56.86s][moshi] ⟨ret@56.47s⟩ Anarchism aims ⟦⚡SPAN@58.47s: Anarchism proposes a society without rulers, advocating for decentralized organization and mutual aid.⟧ for a society without rulers, favoring decentralized organization and mutual aid.
-[ 63.73s][user ] That sounds… chaotic. Is it practical?
-[ 67.81s][moshi] It's a question people have debated for centuries. It relies on a lot of community cooperation.
-[ 73.67s][user ] I see. Maybe I’ll read more about it. Thanks, Frunax.
-[ 77.47s][moshi] You’re very welcome! I'm glad I could offer some insight. Exploring different political philosophies can be truly enriching.
+[  0.00s][user ] What mode of government does the anarchists hate?
+[  3.29s][moshi] «interrupted» That’s a very interesting question—
+[  5.07s][moshi] ⟨ret@4.86s⟩ I’m afraid I don’t ⟦⚡SPAN@6.86s: (no information found)⟧ have a definitive answer to that specific question right now.
+[  7.96s][user ] «backchannel» Uh-huh.
+[ 10.03s][user ] Okay, well, what about the United States? What kind of government is that?
+[ 14.65s][moshi] ⟨ret@14.57s⟩ Let’s ⟦⚡SPAN@15.69s: The United States has a constitutional federal republic, where citizens elect representatives to make decision⟧ shift gears then— The United States operates as a constitutional federal republic, with elected representatives. It’s a system designed for balance and representation.
+[ 25.40s][user ] And who are the current representatives for California in the Senate?
+[ 29.57s][moshi] ⟨ret@29.26s⟩ I can ⟦⚡SPAN@30.62s: (tool result) Alex Padilla is a Democrat, serving since 2021. Laphonza Butler is a Democrat, serving since 202⟧ certainly look that up for you— Currently, California’s senators are Alex Padilla and Laphonza Butler, both Democrats.
+[ 36.98s][user ] That’s good to know. Um—
+[ 38.79s][moshi] «interrupted» They both work diligently to represent the interests of California—
+[ 42.46s][user ] «interrupts_prev» Do they ever disagree with the President?
+[ 45.00s][moshi] «interrupted» That’s a fair point to consider—
+[ 46.87s][moshi] ⟨ret@46.64s⟩ Both Senator ⟦⚡SPAN@48.32s: Senators Padilla and Butler have publicly disagreed with President Biden on certain policy issues, including a⟧ Padilla and Senator Butler have publicly disagreed with President Biden on energy and border security.
+[ 54.67s][user ] Interesting. So, it’s not always just agreeing with everything?
+[ 58.55s][moshi] Absolutely not. Healthy debate is a crucial part of our system.
+[ 64.38s][user ] That makes sense. [happy] What’s the weather like in San Francisco right now?
+[ 68.41s][moshi] ⟨ret@68.25s⟩ Let ⟦⚡SPAN@69.29s: (tool result) The current temperature is 68 degrees Fahrenheit. It is partly cloudy. Winds are from the west a⟧ me check the current conditions— It’s currently sixty-eight degrees and partly cloudy in San Francisco, with winds at fifteen miles per hour.

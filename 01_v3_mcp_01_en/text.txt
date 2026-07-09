@@ -1,35 +1,44 @@
 v3_mcp_01_en src=mcp style=v2
 SYSTEM: <system> You are Koral, a grounded and empathetic personal guide who helps people with planning trips and time off. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 예재 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-06-20] User is planning a trip to New Zealand in March.
+     [2026-05-03] User is into birdwatching.
+     [2026-03-11] User's home address is 50 Pine Court.
+     [2026-02-18] User prefers an aisle seat when traveling.
+  B. 과거 대화 요약:
+     [2026-05-06] Researching a used car — comparing hybrid models; wants under 30k miles
+     [2026-02-16] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Create a detailed map of the Apple website, focusing on the products.
-      Okay, good. Now, can you find me the current price of the latest iPhon
-  S2  Hmm, that's… a lot. Is there any trade-in program available?
-      What kind of credit could I get for my iPhone 13 Pro?
-  S3  Okay, that makes it a little better. Now, if I were to buy that iPhone
-      That's still pretty expensive. Are there any deals or promotions runni
-  S4  Zero percent financing, huh? Can you actually initiate the purchase fo
-      Wonderful, thank you so much.
+      That’s good, but can it also show me where the support articles are?
+  S2  Okay, and can we narrow that down to just support articles about the i
+      Actually, before you go further, are those articles ranked by how ofte
+  S3  I mean, I don’t want to read through forty-seven articles, just the mo
+      Perfect. Now, can you find me a Genius Bar appointment near 90210 for 
+  S4  Book me for 1:30 PM, please.
+      Great, thanks so much!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.50s][moshi] ⟨ret@4.43s⟩ Certainly, I ⟦⚡SPAN@5.55s: (tool result) The tavily-map tool found 14 product categories on the Apple website: iPhone, iPad, Mac, Apple W⟧ can map out the Apple website for you— That map details fourteen product categories available on Apple’s website, ranging from iPhones to support resources.
-[ 14.03s][user ] Okay, good. Now, can you find me the current price of the latest iPhone 15 Pro Max, with 256 gigabytes ⟨ret@21.35s⟩ of storage?
-[ 21.75s][moshi] Let’s ⟦⚡SPAN@22.63s: (tool result) The Apple website lists the iPhone 15 Pro Max with 256GB storage at $1199.⟧ check the current pricing— The iPhone 15 Pro Max with 256 gigabytes of storage is currently listed for $1199.
-[ 25.51s][user ] «backchannel» Nice.
-[ 32.42s][user ] Hmm, that's… a lot. Is there any trade-in program available?
-[ 36.76s][moshi] Apple does offer a trade-in program, yes.
-[ 40.23s][user ] What kind of credit could I get for my iPhone 13 Pro?
-[ 43.42s][moshi] «interrupted» Let me quickly estimate that trade-in value for you—
-[ 46.69s][moshi] ⟨ret@46.45s⟩ Based on your ⟦⚡SPAN@48.45s: (tool result) The Apple Trade In tool estimates your iPhone 13 Pro in good condition is worth $300 towards a n⟧ iPhone 13 Pro’s condition, Apple estimates a trade-in value of $300.
-[ 48.90s][user ] «backchannel» Mm-hmm.
-[ 53.01s][user ] Okay, that makes it a little better. Now, if I were to buy that iPhone 15 Pro Max and trade in my 13 Pro, what would the final price ⟨ret@61.30s⟩ be?
-[ 61.53s][moshi] Let's ⟦⚡SPAN@62.58s: (tool result) Subtracting the $300 trade-in from the $1199 iPhone 15 Pro Max results in a final price of $899.⟧ calculate the final cost— After applying the $300 trade-in, the final price for the iPhone 15 Pro Max would be $899.
-[ 71.56s][user ] That's still pretty expensive. Are there any deals or promotions running right now?
-[ 76.27s][moshi] Currently, Apple is offering zero percent financing for twelve months.
-[ 80.47s][user ] Zero percent financing, huh? Can you actually initiate the purchase for me, trade-in included?
-[ 86.94s][moshi] ⟨ret@86.86s⟩ I can certainly ⟦⚡SPAN@88.22s: (tool result) Order confirmed: iPhone 15 Pro Max (256GB) with trade-in of iPhone 13 Pro. Total: $899. Financin⟧ begin that process for you— Your order for the iPhone 15 Pro Max is confirmed, with a final cost of $899 and shipping scheduled for December 27th.
-[ 92.57s][user ] «backchannel» Really?
-[ 96.62s][user ] Wonderful, thank you so much.
-[ 98.57s][moshi] You're very welcome. I’m glad I could help with your purchase.
+[  4.12s][moshi] ⟨ret@4.05s⟩ Certainly, I ⟦⚡SPAN@5.17s: (tool result) The tavily-map tool found 23 product pages on apple.com, including iPhones, Macs, iPads, and App⟧ can map out the Apple website for you… I’ve mapped twenty-three product pages on Apple’s site—iPhones, Macs, iPads, and the Apple Watch are all included.
+[  8.64s][user ] «backchannel» Okay.
+[ 15.82s][user ] That’s good, but can it also show me where the support ⟨ret@19.18s⟩ articles are?
+[ 19.47s][moshi] Adding support articles to ⟦⚡SPAN@21.18s: (tool result) The tavily-map tool now shows 112 pages, including 23 product pages and 89 support articles on a⟧ the map is a great idea… I’ve updated the map to include eighty-nine support articles, alongside the twenty-three product pages.
+[ 24.46s][user ] «backchannel» Uh-huh.
+[ 29.79s][user ] Okay, and can we narrow that down to just support articles about ⟨ret@33.78s⟩ the iPhone?
+[ 34.17s][moshi] Focusing the ⟦⚡SPAN@35.14s: (tool result) The tavily-map tool filtered to 47 iPhone support articles on apple.com.⟧ support section on iPhones will give you… Now the map shows forty-seven support articles specifically about the iPhone.
+[ 37.16s][user ] «backchannel» Right.
+[ 42.30s][user ] Actually, before you go further, are those articles ranked by how often people view them?
+[ 47.25s][moshi] «interrupted» That’s a very insightful question—
+[ 48.69s][user ] «interrupts_prev» I mean, I don’t want to read through forty-seven articles, just the most common issues.
+[ 54.30s][moshi] ⟨ret@53.90s⟩ You’re ⟦⚡SPAN@54.94s: (tool result) The tavily-map tool sorted the 47 iPhone support articles by views, showing “iPhone Battery Heal⟧ right to ask about ranking— The most viewed iPhone support article is “iPhone Battery Health,” with the articles sorted by popularity.
+[ 61.96s][user ] Perfect. Now, can you find me a Genius Bar appointment near 90210 for ⟨ret@66.64s⟩ tomorrow?
+[ 66.88s][moshi] Let’s get that ⟦⚡SPAN@68.24s: (tool result) The Apple Store Beverly Hills has appointments available tomorrow at 10:00 AM, 1:30 PM, and 4:00⟧ appointment scheduled for you… Apple Store Beverly Hills has openings tomorrow at ten AM, one-thirty PM, and four PM.
+[ 75.16s][user ] Book me for 1:30 PM, please.
+[ 77.28s][moshi] ⟨ret@77.20s⟩ Confirming ⟦⚡SPAN@78.32s: (tool result) Appointment booked at Apple Store Beverly Hills, tomorrow at 1:30 PM, confirmation number is 789⟧ that appointment now— Your appointment is confirmed for tomorrow at one-thirty PM; the confirmation number is seven-eighty-nine-four-five-six-one-two-three.
+[ 87.26s][user ] Great, thanks so much!
+[ 88.75s][moshi] You’re very welcome! I’m glad I could assist with your planning today—it’s what I do.

@@ -1,76 +1,75 @@
 # v3_hesit_18_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 포메이이에 대해 읽다가 문득 궁금해졌어요… 베수비오 화산은 언 | S2 그렇군요. 음, 폭발하기 전에 어떤 징후가 있나요? | S3 황색… 그럼 괜찮은 건가요? 빨간색으로 위험한 건 아니고요? | S4 다음 폭발이 얼마나 클지는 알 수 있는 방법이 있나요?
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: 은율 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+#   B. 저장 메모리:
+#      [2026-07-28] User is into marathon training.
+#      [2026-07-11] User works as a chef.
+#      [2026-06-14] User is planning a trip to Lisbon in March.
+#      [2026-04-22] User is allergic to peanuts.
+#      [2026-03-04] User's favorite cuisine is Korean BBQ.
+#      [2026-02-05] User's home address is 429 Oak Avenue.
+#   B. 과거 대화 요약:
+#      [2026-05-15] Comparing gym memberships — wants a pool; close to the office
+#      [2026-04-10] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 
-     0.00s  user  발화 시작: 포메이이에 대해 읽다가 문득 궁금해졌어요… 베수비오 화산은 언제 마지막으로 폭발했는지 궁금합니다.
-     6.28s  agent 발화 시작: 그 지역을 생각하면 자연스럽게 드는 질문인 것 같아요—정말 강렬한 이미지죠.
-     6.30s  user  발화 끝
-    11.26s  <ret> 발화 (turn2 첫 프레임)
-    11.58s  agent 발화 시작: <ret> 알아보겠습니다. 역사를 알면 도움이 될 거예요. 베수비오 화산의 가장 최근 폭발은 천구백사십사년 
-    11.70s  agent 발화 끝
-    13.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.63s]: Mount Vesuvius last erupted in March of 1944.
-    20.35s  user  발화 시작: 천구백사십사년… 와, 생각보다 훨씬 최근이네요. 규모가 컸나요?
-    20.48s  agent 발화 끝
-    25.18s  agent 발화 시작: 포메이이의 파괴를 생각하면 규모가 궁금하실 것 같아요.
-    25.35s  user  발화 끝
-    29.05s  <ret> 발화 (turn5 첫 프레임)
-    29.21s  agent 발화 시작: <ret> 천구백사십사년 폭발의 심각성에 대한 정보를 찾아볼 수 있습니다. 천구백사십사년의 폭발은 마을과 마
-    29.30s  agent 발화 끝
-    30.89s  ⚡SPAN 주입 [d'=1.84s / d_lead=8.07s]: The 1944 eruption caused significant damage to nearby towns and villag
-    40.28s  user  발화 시작: 삼십 명 미만이라고요? … 놀랍도록 적네요.
-    40.39s  agent 발화 끝
-    43.37s  agent 발화 시작: 그 산의 잠재력을 생각하면 그렇습니다. 그 이후로 모니터링이 크게 개선되었습니다.
-    43.37s  user  발화 끝
-    48.81s  agent 발화 끝
-    49.35s  user  발화 시작: 그렇군요. 음, 폭발하기 전에 어떤 징후가 있나요?
-    52.84s  agent 발화 시작: 네, 물론입니다. 주변 지역 사회의 대비를 위해 그런 징후를 이해하는 것이 중요합니다.
-    53.05s  user  발화 끝
-    58.19s  <ret> 발화 (turn10 첫 프레임)
-    58.43s  agent 발화 시작: <ret> 베수비오 화산 폭발 전에 관찰되는 일반적인 징후를 알아보겠습니다. 지진 활동 증가, 가스 변화, 
-    58.53s  agent 발화 끝
-    60.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: Increased seismic activity, changes in gas composition, and ground def
-    62.15s  user  발화 시작: 네네.
-    62.64s  user  발화 끝
-    68.17s  agent 발화 시작: 물론, 지속적으로 모니터링하고 있습니다.
-    68.26s  agent 발화 끝
-    71.46s  user  발화 시작: 그럼, 정말 꼼꼼하게 지켜보고 있는 거군요? 저—계속해서요?
-    71.55s  agent 발화 끝
-    75.27s  agent 발화 시작: 네, 아주 꼼꼼하게요. 역사를 고려할 때, 매우 면밀히 모니터링되고 연구되는 화산입니다.
-    75.48s  user  발화 끝
-    81.77s  <ret> 발화 (turn15 첫 프레임)
-    81.99s  agent 발화 시작: <ret> 현재 상태를 확인해 보는 것도 좋겠습니다. 현재, 이천이십삼년 십일월 기준으로 베수비오 화산은 황
-    82.14s  agent 발화 끝
-    83.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: As of November 2023, Vesuvius is currently classified as a yellow aler
-    91.54s  agent 발화 끝
-    91.77s  user  발화 시작: 황색… 그럼 괜찮은 건가요? 빨간색으로 위험한 건 아니고요?
-    95.70s  user  발화 끝
-    95.86s  agent 발화 시작: 황색은 정상적인 활동을 나타내지만, 지속적인 모니터링이 계속됩니다. 안심할 수 있지만, 방심해서는 안 됩니다
-   101.93s  user  발화 시작: 그러니까요.
-   102.75s  user  발화 끝
-   104.75s  agent 발화 끝
-   106.05s  user  발화 시작: 그럼, 근처에 사는 사람들은 걱정하고 있나요?
-   108.88s  agent 발화 시작: 활화산 근처에 사는 것은 어느 정도 불안감을 느끼는 것이 당연하며, 많은 사람들이 대피 계획을 가지고 있습니
-   109.01s  user  발화 끝
-   115.70s  <ret> 발화 (turn21 첫 프레임)
-   115.84s  agent 발화 시작: <ret> 베수비오 화산 지역의 대피 절차에 대한 정보를 찾아볼 수 있습니다. 위험 지역에 거주하는 약 팔십
-   115.97s  agent 발화 끝
-   117.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: Evacuation plans are in place for the approximately 800,000 people liv
-   125.02s  agent 발화 끝
-   126.46s  user  발화 시작: 팔십만 명… 정말 많은 사람들이네요.
-   129.19s  user  발화 끝
-   129.19s  agent 발화 시작: 인구가 밀집된 지역이기 때문에 대비가 매우 중요합니다.
-   133.31s  agent 발화 끝
-   133.76s  user  발화 시작: 다음 폭발이 얼마나 클지는 알 수 있는 방법이 있나요?
-   136.72s  user  발화 끝
-   137.06s  agent 발화 시작: 정말 중요한 질문입니다. 규모를 예측하는 것은 복잡합니다.
-   141.71s  <ret> 발화 (turn26 첫 프레임)
-   142.10s  agent 발화 끝
-   142.10s  agent 발화 시작: <ret> 잠재적인 폭발 규모에 대해 과학자들이 무엇을 알아낼 수 있는지 알아보겠습니다. 과학자들은 규모를 
-   143.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.90s]: The size of future Vesuvius eruptions is difficult to predict, but his
-   150.79s  user  발화 시작: 맞아요.
-   151.33s  user  발화 끝
-   155.09s  agent 발화 끝
-   155.19s  user  발화 시작: 그럼 포메이이처럼 될 수도 있고, 더 작을 수도 있다는 건가요?
-   158.70s  user  발화 끝
-   158.94s  agent 발화 시작: 그럴 수 있습니다. 그래서 모니터링과 계획이 모든 사람의 안전을 위해 매우 중요합니다.
-   165.90s  agent 발화 끝
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 폼페이에 대해 읽다가 문득 궁금해졌어요… 음, 베 | S2 스물여덟 번이나요? 정말 많네요. 그럼 아직도 활화산인가요? | S3 천만 명이나… 화산 아래서 사는 사람이 그렇게 많다니. 좀 무 | S4 열여덟 일이나요… 시간이 꽤 길었네요. 그때보다 훨씬 많이 배
+
+     0.00s  user  발화 시작: 안녕하세요. 폼페이에 대해 읽다가 문득 궁금해졌어요… 음, 베수비오 화산이 마지막으로 폭발한 게 언제였죠?
+     6.84s  agent 발화 시작: 네, 그런 극적인 사건에 대해 배우신 후에 그런 질문을 하시는 건 당연해요.
+     6.86s  user  발화 끝
+    11.24s  <ret> 발화 (turn2 첫 프레임)
+    11.55s  agent 발화 시작: <ret> 정확한 날짜를 찾아 드릴게요. 화산 폭발은 복잡할 수 있으니까요. 베수비오 화산의 마지막 폭발은 
+    11.65s  agent 발화 끝
+    13.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.10s]: Mount Vesuvius last erupted in March 1944.
+    22.01s  user  발화 시작: 천구백사십사년… 와, 생각보다 최근이네요.
+    22.36s  agent 발화 끝
+    25.44s  agent 발화 시작: 화산과 그 지역의 오랜 역사를 생각하면 그렇습니다.
+    25.57s  user  발화 끝
+    29.26s  <ret> 발화 (turn5 첫 프레임)
+    29.41s  agent 발화 시작: <ret> 불안감을 줄이기 위해 상황을 제대로 파악하는 게 좋겠어요. 베수비오 화산은 서기 칠십구년 이후로 
+    29.60s  agent 발화 끝
+    30.62s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.24s]: Vesuvius has erupted approximately twenty-eight times since AD 79.
+    39.05s  agent 발화 끝
+    39.13s  user  발화 시작: 스물여덟 번이나요? 정말 많네요. 그럼 아직도 활화산인가요?
+    42.91s  agent 발화 시작: 네, 그렇습니다. 활화산으로 간주되며, 끊임없이 감시되고 있습니다.
+    42.96s  user  발화 끝
+    47.96s  <ret> 발화 (turn8 첫 프레임)
+    48.11s  agent 발화 시작: <ret> 지속적인 감시는 현재 상태를 이해하는 데 매우 중요합니다. 베수비오 화산은 플리니우스형 화산으로,
+    48.32s  agent 발화 끝
+    49.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: Vesuvius is classified as a Plinian volcano, known for explosive erupt
+    51.74s  user  발화 시작: 네네.
+    52.27s  user  발화 끝
+    57.57s  agent 발화 시작: 그 폭발은 높은 재와 부석 기둥을 특징으로 합니다.
+    57.66s  agent 발화 끝
+    60.81s  agent 발화 끝
+    61.51s  user  발화 시작: 부석… 수세미질할 때 쓰는 거요? 그게 같은 건가요?
+    64.55s  agent 발화 시작: 하하, 네 맞아요! 그 다공성 암석은 화산 기원이며, 폭발의 부산물입니다.
+    64.74s  user  발화 끝
+    71.27s  <ret> 발화 (turn13 첫 프레임)
+    71.42s  agent 발화 시작: <ret> 재난과 일상적인 것 사이의 그런 연관성은 흥미롭네요. 베수비오 화산 주변에는 천만 명이 넘는 사람
+    71.50s  agent 발화 끝
+    73.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.62s]: The area around Vesuvius is densely populated with over three million 
+    80.42s  agent 발화 끝
+    80.44s  user  발화 시작: 천만 명이나… 화산 아래서 사는 사람이 그렇게 많다니. 좀 무섭네요.
+    85.09s  agent 발화 시작: 잠재적인 위험을 알고 그렇게 느끼시는 건 당연합니다.
+    85.30s  user  발화 끝
+    88.26s  <ret> 발화 (turn16 첫 프레임)
+    88.33s  agent 발화 시작: <ret> 그런 감정을 인정하는 것이 건강한 첫걸음입니다. 과학자들은 현재 베수비오 화산의 활동 증가 징후를
+    88.46s  agent 발화 끝
+    90.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: Scientists are currently monitoring Vesuvius for signs of increased ac
+    97.10s  user  발화 시작: 감시… 그럼 꼼꼼히 보고 있는 거군요? 대피 계획은 있나요?
+    97.15s  agent 발화 끝
+   101.26s  user  발화 끝
+   101.33s  agent 발화 시작: 네, 있습니다. 지역 당국은 자세한 대피 계획을 마련해 두었습니다.
+   106.25s  <ret> 발화 (turn19 첫 프레임)
+   106.48s  agent 발화 시작: <ret> 준비성이 잠재적인 위험에 대처하는 가장 좋은 방법입니다. 천구백사십사년 이전의 마지막 대규모 폭발
+   106.52s  agent 발화 끝
+   108.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.75s]: The last major eruption before 1944 was in 1631, lasting eighteen days
+   115.50s  user  발화 시작: 오.
+   116.14s  user  발화 끝
+   119.24s  agent 발화 끝
+   120.02s  user  발화 시작: 열여덟 일이나요… 시간이 꽤 길었네요. 그때보다 훨씬 많이 배웠겠죠.
+   124.56s  user  발화 끝
+   124.67s  agent 발화 시작: 네, 그렇습니다. 감시 기술과 대피 전략이 상당히 발전했습니다.
+   128.92s  agent 발화 끝

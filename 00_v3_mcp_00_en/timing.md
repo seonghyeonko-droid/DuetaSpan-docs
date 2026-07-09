@@ -1,96 +1,88 @@
 # v3_mcp_00_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Wonderful! I think I'll go there. | S3 I’m also meeting a friend there. I | S4 That's true. We used to go to conc
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Nina · Location: Berlin, Germany · Nationality: German · Gender: female · Age: 40s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
+#   B. 저장 메모리:
+#      [2026-06-26] User is planning a trip to Kyoto in May.
+#      [2026-06-04] User works as a accountant.
+#      [2026-04-24] User prefers an aisle seat when traveling.
+#      [2026-03-03] User is into birdwatching.
+#      [2026-01-09] User is allergic to peanuts.
+#   B. 과거 대화 요약:
+#      [2026-06-27] Planning a birthday dinner — party of six; looking for outdoor seating
+#      [2026-01-11] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Perfect. And uh— | S3 I'm a little nervous, actually. It | S4 I guess so. Maybe I should send he
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     2.83s  <ret> 발화 (turn1 첫 프레임)
-     3.06s  agent 발화 시작: <ret> Certainly, locating landmarks is something I can do fo
-     3.23s  user  발화 끝
-     3.87s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.69s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
-    11.04s  user  발화 시작: Yeah.
-    11.54s  user  발화 끝
-    14.13s  agent 발화 끝
-    14.31s  user  발화 시작: Okay, great. Now, can you find me some highly-rated French r
-    18.47s  <ret> 발화 (turn4 첫 프레임)
-    18.83s  agent 발화 시작: <ret> Absolutely, let's see what dining options Paris has to
-    18.89s  user  발화 끝
-    20.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.31s]: (tool result) Le Jules Verne is a French restaurant 200 meters from th
-    25.15s  user  발화 시작: Yeah, totally.
-    26.90s  user  발화 끝
-    28.06s  user  발화 시작: That sounds lovely. Is it expensive?
-    28.11s  agent 발화 끝
-    30.41s  <ret> 발화 (turn7 첫 프레임)
-    30.73s  agent 발화 시작: <ret> Let’s find out about the price range at Le Jules Verne
-    30.96s  user  발화 끝
-    31.77s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.44s]: (tool result) Le Jules Verne's price level is four dollars, indicating
-    38.23s  agent 발화 끝
-    38.51s  user  발화 시작: Oh, wow. Okay, maybe not. What about something a bit more…ca
-    43.22s  <ret> 발화 (turn9 첫 프레임)
-    43.51s  user  발화 끝
-    43.54s  agent 발화 시작: <ret> Of course, there are many other choices for a relaxed 
-    45.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.61s]: (tool result) Les Cocottes Tour Eiffel is a casual French bistro 800 m
-    53.38s  agent 발화 끝
-    54.06s  user  발화 시작: That sounds perfect! Can you check if they have outdoor seat
-    57.47s  <ret> 발화 (turn11 첫 프레임)
-    57.55s  agent 발화 시작: <ret> Let's see if you can enjoy your meal al fresco. Yes, L
-    57.58s  user  발화 끝
-    58.59s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.34s]: (tool result) Les Cocottes Tour Eiffel has outdoor seating available.
-    59.62s  user  발화 시작: Okay.
-    60.34s  user  발화 끝
-    63.90s  agent 발화 끝
-    64.44s  user  발화 시작: Wonderful! I think I'll go there.
-    66.88s  user  발화 끝
-    66.97s  agent 발화 시작: That’s a great choice, it’s always nice to find a place you 
-    70.57s  agent 발화 끝
-    72.92s  user  발화 시작: Do they take reservations?
-    74.67s  agent 발화 시작: I was going to suggest—
-    74.71s  user  발화 끝
-    76.05s  <ret> 발화 (turn17 첫 프레임)
-    76.12s  agent 발화 시작: <ret> Les Cocottes Tour Eiffel does accept reservations, bot
-    76.28s  agent 발화 끝
-    77.97s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.09s]: (tool result) Les Cocottes Tour Eiffel accepts reservations online and
-    81.22s  agent 발화 끝
-    81.83s  user  발화 시작: Perfect! Can you make a reservation for two people tomorrow 
-    86.71s  <ret> 발화 (turn19 첫 프레임)
-    86.92s  agent 발화 시작: <ret> Absolutely, I can certainly arrange that for you. Your
-    87.02s  user  발화 끝
-    88.23s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.87s]: (tool result) Reservation confirmed for two people at Les Cocottes Tou
-    96.09s  user  발화 시작: Fantastic! Thank you so much.
-    96.61s  agent 발화 끝
-    98.56s  agent 발화 시작: You're very welcome! I'm glad I could help you plan a lovely
-    98.58s  user  발화 끝
-   102.90s  agent 발화 끝
-   103.01s  user  발화 시작: I’m also meeting a friend there. I haven’t seen her in ages.
-   106.58s  user  발화 끝
-   106.94s  agent 발화 시작: Reconnecting with old friends is so important—it really nour
-   111.56s  agent 발화 끝
-   112.80s  user  발화 시작: Mm-hmm.
-   113.29s  user  발화 끝
-   113.77s  agent 발화 시작: It's wonderful to prioritize those relationships, especially
-   121.88s  agent 발화 끝
-   122.87s  user  발화 시작: I agree. I'm a little nervous, though. We had a bit of a fal
-   127.51s  agent 발화 시작: It’s completely normal to feel anxious before seeing someone
-   127.63s  user  발화 끝
-   134.61s  agent 발화 끝
-   134.63s  user  발화 시작: Yeah, it does. I just want things to be okay again.
-   138.06s  agent 발화 시작: That’s a very healthy goal, wanting to restore a friendship.
-   138.10s  user  발화 끝
-   144.78s  agent 발화 끝
-   144.84s  user  발화 시작: That's true. We used to go to concerts all the time.
-   148.07s  agent 발화 시작: Shared experiences create such strong bonds, and reminiscing
-   148.21s  user  발화 끝
-   152.55s  user  발화 시작: Mm-hmm.
-   153.13s  user  발화 끝
-   154.09s  agent 발화 끝
-   155.31s  user  발화 시작: I'm hoping we can talk things through and move past it.
-   158.48s  agent 발화 시작: Open and honest communication is key to resolving conflict a
-   158.54s  user  발화 끝
-   163.42s  user  발화 시작: It’s just…difficult. I always struggle with confrontation.
-   163.48s  agent 발화 끝
-   167.54s  user  발화 끝
-   167.88s  agent 발화 시작: Many people do; it’s perfectly okay to feel uncomfortable wi
-   175.18s  user  발화 시작: [happy] I guess you’re right.
-   175.24s  agent 발화 끝
-   176.28s  user  발화 끝
-   176.35s  agent 발화 시작: Absolutely! Remember, you're taking a brave step towards rep
-   182.84s  agent 발화 끝
+     2.97s  <ret> 발화 (turn1 첫 프레임)
+     3.21s  agent 발화 시작: <ret> Let's pinpoint that iconic landmark for you— That’s la
+     3.24s  user  발화 끝
+     3.93s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.71s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
+    12.11s  agent 발화 끝
+    12.19s  user  발화 시작: Okay, great. And what about the Statue of Liberty?
+    14.53s  <ret> 발화 (turn3 첫 프레임)
+    14.92s  agent 발화 시작: <ret> Certainly, I can find those coordinates for you— The S
+    15.20s  user  발화 끝
+    16.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.83s]: (tool result) The Statue of Liberty is located at latitude 40.6892, lo
+    22.13s  user  발화 시작: Yeah, totally.
+    23.42s  user  발화 끝
+    25.44s  user  발화 시작: Hmm, interesting. Are there any good cafes near the Statue o
+    25.53s  agent 발화 끝
+    30.07s  <ret> 발화 (turn6 첫 프레임)
+    30.39s  agent 발화 시작: <ret> I can definitely search for cafes nearby— I found thre
+    30.54s  user  발화 끝
+    31.19s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.71s]: (tool result) Found three cafes: 'The Irish Pub', rating 4.2, 200m awa
+    38.07s  user  발화 시작: Oh, Financier Patisserie sounds nice. Can you get me directi
+    38.12s  agent 발화 끝
+    43.46s  <ret> 발화 (turn8 첫 프레임)
+    43.74s  agent 발화 시작: <ret> Absolutely, let’s map out the best route— It’s a point
+    43.81s  user  발화 끝
+    44.90s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.75s]: (tool result) Directions: Walk 0.5km southwest, approximately 8 minute
+    50.04s  agent 발화 끝
+    50.45s  user  발화 시작: Perfect. And uh—
+    52.10s  user  발화 시작: Do they have outdoor seating?
+    52.20s  user  발화 끝
+    53.51s  <ret> 발화 (turn11 첫 프레임)
+    53.59s  agent 발화 시작: <ret> That’s a good question, let me quickly check— Yes, Fin
+    53.75s  user  발화 끝
+    54.55s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.67s]: (tool result) Financier Patisserie has outdoor seating, is open until 
+    56.28s  user  발화 시작: Yeah.
+    56.77s  user  발화 끝
+    60.47s  agent 발화 시작: They also accept credit cards, which is convenient— .
+    60.59s  agent 발화 끝
+    61.33s  user  발화 시작: Okay.
+    61.82s  user  발화 끝
+    63.28s  agent 발화 끝
+    64.15s  user  발화 시작: That sounds ideal. I'm meeting a friend there.
+    67.29s  user  발화 끝
+    67.69s  agent 발화 시작: That sounds lovely! Meeting friends at a nice cafe is a wond
+    73.39s  agent 발화 끝
+    73.75s  user  발화 시작: I'm a little nervous, actually. It's been a while since I've
+    77.81s  agent 발화 시작: [happy] It's perfectly normal to feel a little nervous befor
+    77.87s  user  발화 끝
+    83.37s  agent 발화 끝
+    85.74s  user  발화 시작: I keep worrying I won't know what to say.
+    88.14s  user  발화 끝
+    88.41s  agent 발화 시작: Often, we put pressure on ourselves to have the perfect thin
+    95.96s  agent 발화 끝
+    96.07s  user  발화 시작: But what if she's changed?
+    97.67s  user  발화 끝
+    97.83s  agent 발화 시작: People naturally evolve over time, and that's okay. Change i
+   105.39s  agent 발화 끝
+   105.41s  user  발화 시작: You’re right. It’s just… it’s been five years.
+   108.34s  agent 발화 시작: Five years is a significant amount of time, but a strong fou
+   108.37s  user  발화 끝
+   114.78s  agent 발화 끝
+   115.25s  user  발화 시작: I guess so. Maybe I should send her a quick text before we m
+   119.69s  user  발화 끝
+   120.08s  agent 발화 시작: That’s a great idea. A little check-in can ease any pre-meet
+   125.34s  user  발화 시작: Okay, I will. Thanks, Nellara.
+   125.55s  agent 발화 끝
+   127.56s  user  발화 끝
+   127.95s  agent 발화 시작: You’re very welcome. I’m glad I could help ease your mind a 
+   134.17s  agent 발화 끝
+   135.16s  user  발화 시작: I think I will.
+   136.23s  agent 발화 시작: Wonderful! I hope you have a truly lovely time catching up w
+   136.35s  user  발화 끝
+   141.18s  agent 발화 끝

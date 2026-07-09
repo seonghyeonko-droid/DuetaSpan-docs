@@ -1,6 +1,17 @@
 v3_rags_31_en src=nq_single style=rag_single
 SYSTEM: <system> You are Sorax, a calm and patient supportive advisor who helps people with settling into a new city. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Noa · Location: New York, United States · Nationality: American · Gender: non-binary · Age: 40s · TZ: America/New_York (EST, UTC-5) · Currency: USD ($)
+  B. 저장 메모리:
+     [2026-05-08] User prefers a window seat when traveling.
+     [2026-04-16] User's home address is 808 Elm Street.
+     [2026-04-14] User's favorite cuisine is Italian.
+     [2026-01-24] User is allergic to peanuts.
+  B. 과거 대화 요약:
+     [2026-07-11] Comparing gym memberships — wants a pool; close to the office
+     [2026-05-06] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
+     [2026-02-16] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When was the third season of Daredevil ⟨ret@2.68s⟩ released?
-[  2.92s][moshi] Let me ⟦⚡SPAN@4.20s: Daredevil season three was released on October 26, 2018.⟧ quickly check the release date for you… The third season of Daredevil became available on October twenty-sixth, 2018.
+[  0.00s][user ] When was the third season of Daredevil ⟨ret@2.29s⟩ released?
+[  2.53s][moshi] Let me ⟦⚡SPAN@3.81s: Daredevil season three was released on October 26, 2018.⟧ quickly check the release date for you… The third season of Daredevil premiered on October twenty-sixth, twenty-eighteen.

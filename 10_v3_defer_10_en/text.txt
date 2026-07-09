@@ -1,11 +1,24 @@
 v3_defer_10_en src=mcp style=mcp_deferred
 SYSTEM: <system> You are Sunan, a encouraging and non-judgmental wellness coach who helps people with money and budgeting. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Alice · Location: Paris, France · Nationality: French · Gender: female · Age: late 30s · TZ: Europe/Paris (CET, UTC+1) · Currency: EUR (€)
+  B. 저장 메모리:
+     [2026-06-04] User's home address is 447 Oak Avenue.
+     [2026-03-11] User has a Corgi named Mochi.
+     [2026-03-08] User is planning a trip to Lisbon in October.
+     [2026-02-27] User prefers a window seat when traveling.
+     [2026-02-15] User works as a software engineer.
+     [2026-01-28] User is lactose-intolerant.
+  B. 과거 대화 요약:
+     [2026-06-28] Comparing gym memberships — wants a pool; close to the office
+     [2026-04-11] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-04-09] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  5.09s][moshi] ⟨ret@5.01s⟩ Okay, locating photos ⟦⚡SPAN@7.01s: (tool result) Three files were found: "Paris_EiffelTower.jpg", "Provence_LavenderFields.jpg", and "Nice_Beach.⟧ from your France trip sounds lovely. I found three photos from your France holiday: Paris, Provence, and Nice.
-      CALL: {"function": "search_files", "arguments": {"directory": "Pictures", "keywords": ["France", "holiday"], "exclude": ["thumbnails"], "year": 2023}}
-[ 11.02s][user ] «backchannel» Mhm.
-[ 14.50s][user ] Can you send "Paris_EiffelTower.jpg" to my sister, ⟨ret@18.84s⟩ Sarah?
-[ 18.98s][moshi] Certainly, ⟦⚡SPAN@19.80s: (tool result) The file "Paris_EiffelTower.jpg" was successfully sent to Sarah@email.com.⟧ sending a picture to Sarah is easy. The Eiffel Tower photo has been sent to Sarah at Sarah@email.com.
-      CALL: {"function": "send_file", "arguments": {"recipient": "Sarah", "file_name": "Paris_EiffelTower.jpg"}}
+[  5.10s][moshi] ⟨ret@5.02s⟩ Okay, locating ⟦⚡SPAN@6.46s: (tool result) Seven files were found: "Paris_Eiffel_Tower.jpg", "Nice_Beach.png", "Lyon_Food.jpeg", "Provence_⟧ photos from your France trip… I found seven photos from your France holiday, excluding thumbnails, as requested.
+      CALL: {"function": "search_files", "arguments": {"keywords": ["France", "holiday"], "year": 2023, "exclude": ["thumbnail"]}}
+[ 10.80s][user ] «backchannel» Mhm.
+[ 14.16s][user ] Oh, actually, can you just send me the one of the ⟨ret@17.54s⟩ Eiffel Tower?
+[ 17.86s][moshi] Certainly, ⟦⚡SPAN@18.50s: (tool result) File "Paris_Eiffel_Tower.jpg" was sent to your registered email address.⟧ sending that photo to you now… The Eiffel Tower photo has been sent to your email address.
+      CALL: {"function": "send_file", "arguments": {"filename": "Paris_Eiffel_Tower.jpg"}}

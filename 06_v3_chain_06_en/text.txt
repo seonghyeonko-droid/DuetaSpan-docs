@@ -1,61 +1,75 @@
 v3_chain_06_en src=mcp style=mcp_chained
 SYSTEM: <system> You are Lio, a grounded and empathetic personal guide who helps people with money and budgeting. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Kina · Location: Tokyo, Japan · Nationality: Japanese · Gender: male · Age: 40s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
+  B. 저장 메모리:
+     [2026-07-07] User works as a nurse.
+     [2026-07-06] User is lactose-intolerant.
+     [2026-06-16] User is into birdwatching.
+     [2026-05-11] User has a Corgi named Mochi.
+     [2026-04-06] User prefers a window seat when traveling.
+     [2026-03-07] User's favorite cuisine is Italian.
+  B. 과거 대화 요약:
+     [2026-06-14] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-06-11] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Could you set the user agent to MyCustomBrowser version ten point five
-      Uh, great. Now, can you search for restaurants near me that are open l
-      Hmm, Dino's sounds good. What's their phone number?
-      Okay, can you make a reservation there for two people at ten pm tonigh
-  S2  Perfect. So, uh, how much is the estimated travel time to get there?
-      Fifteen minutes, good. [interrupting] And what's the weather like ther
-      Yes, please.
-  S3  Sixty-five, okay. Could you set a reminder to leave the house at nine-
-      Great. And, um, could you find me a playlist for driving? Something up
-      Road Trip Vibes, sounds good. Is there any traffic on the way?
-      Five minutes, okay. So, the reservation is still for two at ten?
-  S4  Right. And Dino’s address again?
-      Perfect. I— I think that's everything. Thanks, Lio.
-      Yeah, I think so.
+      Okay, good. Now, can you search for restaurants nearby that are open l
+      Hmm, Midnight Eats sounds good. What’s their address?
+      Perfect. Can you get me directions there?
+  S2  Great. And— I mean, how much would an Uber to Midnight Eats cost right
+      Okay, that’s reasonable. Um, could you book me that Uber?
+      Oh, is David M’s rating good?
+  S3  That sounds good. Thanks.
+      So, about budgeting… I’ve been spending a lot on takeout lately.
+      Yeah, it’s— I mean, I'm thinking of setting a weekly limit of sixty do
+      But… what if I go over? Can you remind me?
+  S4  Perfect. That’ll help me stay on track.
+      Right. And, uh, could you show me a simple breakdown of my spending fo
+      Wow, three fifty on dining *is* a lot.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  5.20s][moshi] ⟨ret@5.13s⟩ Certainly, I can ⟦⚡SPAN@6.89s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust your browser settings. Your browser is now identifying as MyCustomBrowser, version ten point five.
+[  4.96s][moshi] ⟨ret@4.88s⟩ Certainly, I can ⟦⚡SPAN@6.88s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust your browser settings. Your browser is now identifying as MyCustomBrowser, version ten point five.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 14.67s][user ] Uh, great. Now, can you search for restaurants near me that are open ⟨ret@19.28s⟩ late?
-[ 19.44s][moshi] Of course, let's ⟦⚡SPAN@21.28s: (tool result) Found three restaurants: Dino's Diner open until 2 AM, The Greasy Spoon open until 3 AM, and Mid⟧ find some late-night dining options. I found three restaurants open late: Dino's Diner, The Greasy Spoon, and Midnight Bites.
-      CALL: {"function": "search_restaurants", "arguments": {"location": "current", "open_late": true}}
-[ 24.99s][user ] «backchannel» Yeah.
-[ 28.98s][user ] Hmm, Dino's sounds good. What's their phone number?
-[ 32.45s][moshi] ⟨ret@32.37s⟩ Let me look ⟦⚡SPAN@34.37s: (tool result) Dino's Diner's phone number is 555-123-4567 and address is 123 Main Street.⟧ up Dino's Diner's contact information. Dino's Diner’s phone number is five-five-five, one-two-three, four-five-six-seven.
-      CALL: {"function": "restaurant_details", "arguments": {"restaurant_name": "Dino's Diner"}}
-[ 37.49s][user ] «backchannel» Yeah.
-[ 41.45s][user ] Okay, can you make a reservation there for two people at ten ⟨ret@45.74s⟩ pm tonight?
-[ 46.14s][moshi] I'm ⟦⚡SPAN@46.70s: (tool result) Reservation confirmed at Dino's Diner for two people at 10:00 PM tonight. Confirmation number is⟧ happy to book a table for you. Your reservation for two at Dino's Diner is confirmed for ten pm tonight. The number is seven-eight-nine-zero.
-      CALL: {"function": "make_reservation", "arguments": {"restaurant_name": "Dino's Diner", "party_size": 2, "time": "22:00"}}
-[ 55.72s][user ] Perfect. So, uh, how much is the estimated travel time to get there?
-[ 60.91s][moshi] ⟨ret@60.67s⟩ I can ⟦⚡SPAN@61.87s: (tool result) Travel time to Dino's Diner is approximately fifteen minutes by car.⟧ calculate the travel time for you. The drive to Dino's Diner will take about fifteen minutes.
-      CALL: {"function": "get_travel_time", "arguments": {"destination": "Dino's Diner", "mode": "driving"}}
-[ 66.89s][user ] Fifteen minutes, good. [interrupting] And what's the weather like there right now?
-[ 73.01s][moshi] «interrupted» —I can tell you the current conditions—
-[ 74.55s][user ] «interrupts_prev» Yes, please. ⟨ret@75.73s⟩
-[ 75.81s][moshi] Absolutely, ⟦⚡SPAN@76.77s: (tool result) The weather at 123 Main Street is currently 65 degrees Fahrenheit and partly cloudy.⟧ let's check the weather at your destination. It's sixty-five degrees and partly cloudy at Dino's Diner.
-      CALL: {"function": "get_weather", "arguments": {"location": "123 Main Street"}}
-[ 85.05s][user ] Sixty-five, okay. Could you set a reminder to leave the house at nine-thirty?
-[ 90.61s][moshi] ⟨ret@90.53s⟩ I can certainly ⟦⚡SPAN@92.05s: (tool result) Reminder set for 9:30 PM: Leave for Dino's Diner.⟧ set that reminder for you. A reminder is set to leave for Dino's Diner at nine-thirty pm.
-      CALL: {"function": "set_reminder", "arguments": {"time": "21:30", "message": "Leave for Dino's Diner"}}
-[ 97.86s][user ] Great. And, um, could you find me a playlist for driving? Something ⟨ret@102.90s⟩ upbeat?
-[103.30s][moshi] I ⟦⚡SPAN@104.18s: (tool result) Playlist "Road Trip Vibes" created with 50 upbeat songs.⟧ can definitely create a driving playlist for you. I've created a playlist called “Road Trip Vibes” with fifty upbeat songs.
-      CALL: {"function": "create_playlist", "arguments": {"genre": "upbeat", "activity": "driving"}}
-[108.00s][user ] «backchannel» Yeah.
-[112.39s][user ] Road Trip Vibes, sounds good. Is there any traffic on the ⟨ret@116.75s⟩ way?
-[117.07s][moshi] Let's ⟦⚡SPAN@117.95s: (tool result) Moderate traffic on Main Street, adding approximately 5 minutes to the trip.⟧ check the current traffic conditions. There’s moderate traffic adding about five minutes to your drive.
-      CALL: {"function": "get_traffic", "arguments": {"destination": "Dino's Diner"}}
-[123.60s][user ] Five minutes, okay. So, the reservation is still for two at ten?
-[130.03s][moshi] Yes, your reservation is still confirmed for two at ten pm.
-[133.81s][user ] Right. And Dino’s address ⟨ret@135.81s⟩ again?
-[136.20s][moshi] Certainly, let me ⟦⚡SPAN@137.81s: (tool result) Dino's Diner is located at 123 Main Street.⟧ repeat that information for you. Dino’s Diner is at one-two-three Main Street.
-[142.02s][user ] Perfect. I— I think that's everything. Thanks, Lio.
-[146.09s][moshi] You’re very welcome! It sounds like you’ve got a lovely evening planned.
-[150.10s][user ] Yeah, I think so.
-[152.14s][moshi] I'm glad I could help
+[ 13.90s][user ] Okay, good. Now, can you search for restaurants nearby that are open ⟨ret@18.71s⟩ late?
+[ 18.95s][moshi] ⟦⚡SPAN@19.21s: (tool result) Found three restaurants: Tony’s Diner, open until 2 AM; The Late Bite, open until 1 AM; and Midn⟧ Absolutely, let me check for late-night dining options. I found three options open late: Tony’s Diner, The Late Bite, and Midnight Eats.
+      CALL: {"function": "search_restaurants", "arguments": {"query": "restaurants open late nearby"}}
+[ 24.67s][user ] «backchannel» Yeah.
+[ 28.77s][user ] Hmm, Midnight Eats sounds good. What’s their ⟨ret@32.69s⟩ address?
+[ 33.01s][moshi] Let me quickly find ⟦⚡SPAN@34.69s: (tool result) Midnight Eats is located at 14 Oak Street, Anytown.⟧ that information for you. Midnight Eats is at fourteen Oak Street, in Anytown.
+      CALL: {"function": "get_restaurant_details", "arguments": {"restaurant_name": "Midnight Eats"}}
+[ 36.34s][user ] «backchannel» Yeah.
+[ 39.10s][user ] Perfect. Can you get me directions ⟨ret@41.72s⟩ there?
+[ 42.12s][moshi] Of ⟦⚡SPAN@42.68s: (tool result) Directions to 14 Oak Street, Anytown are: Head north on Main Street for 1.2 miles, then turn lef⟧ course, I can start navigation for you. The directions are to head north on Main Street for one point two miles, then left on Oak Street.
+      CALL: {"function": "get_directions", "arguments": {"destination": "14 Oak Street, Anytown"}}
+[ 50.74s][user ] Great. And— I mean, how much would an Uber to Midnight Eats cost right now?
+[ 57.18s][moshi] ⟨ret@56.94s⟩ Let me ⟦⚡SPAN@58.14s: (tool result) An Uber to 14 Oak Street, Anytown will cost between fifteen and twenty dollars.⟧ check the current Uber fare for you. An Uber to Midnight Eats is currently estimated between fifteen and twenty dollars.
+      CALL: {"function": "get_uber_estimate", "arguments": {"destination": "14 Oak Street, Anytown"}}
+[ 64.42s][user ] Okay, that’s reasonable. Um, could you book me that ⟨ret@68.31s⟩ Uber?
+[ 68.70s][moshi] ⟦⚡SPAN@68.81s: (tool result) Uber booked. Driver: David M. ETA: 5 minutes. Vehicle: Silver Sedan.⟧ Certainly, I can book an Uber for you now. Your Uber is booked with David M, arriving in five minutes, a silver sedan.
+      CALL: {"function": "book_uber", "arguments": {"destination": "14 Oak Street, Anytown"}}
+[ 76.72s][user ] Oh, is David M’s rating good?
+[ 79.30s][moshi] ⟨ret@79.22s⟩ Let me pull up ⟦⚡SPAN@80.74s: (tool result) David M’s rating is 4.8 stars, with 235 ratings.⟧ David M’s driver rating.
+      CALL: {"function": "get_driver_rating", "arguments": {"driver_name": "David M"}}
+[ 81.86s][moshi] David M has a rating of four point eight stars, from two hundred thirty-five ratings.
+[ 87.09s][user ] That sounds good. Thanks.
+[ 89.44s][moshi] You're very welcome. I'm glad I could help with that.
+[ 91.41s][user ] «backchannel» Yeah.
+[ 92.64s][user ] So, about budgeting… I’ve been spending a lot on takeout lately.
+[ 97.42s][moshi] That’s a common challenge. We can definitely work on that.
+[100.63s][user ] Yeah, it’s— I mean, I'm thinking of setting a weekly limit of sixty dollars for restaurants.
+[107.52s][moshi] Sixty dollars a week is a good starting point. That’s very achievable.
+[111.32s][user ] But… what if I go over? Can you remind ⟨ret@114.85s⟩ me?
+[115.17s][moshi] Of course. I can set up ⟦⚡SPAN@116.85s: (tool result) Reminder set for next Sunday at 6 PM: Restaurant spending limit reached, $60.⟧ a reminder for you. What day would you like it?
+      CALL: {"function": "set_reminder", "arguments": {"reminder_text": "Restaurant spending limit reached", "date": "next Sunday", "amount": "60"}}
+[119.36s][moshi] I’ve set a reminder for next Sunday at six PM, for sixty dollars.
+[123.40s][user ] Perfect. That’ll help me stay on track.
+[126.43s][moshi] I’m confident it will. It’s all about being mindful of where your money goes.
+[131.54s][user ] Right. And, uh, could you show me a simple breakdown of my spending for the ⟨ret@137.45s⟩ last month?
+[137.76s][moshi] Certainly, I ⟦⚡SPAN@138.73s: (tool result) Last month's spending: Groceries $450, Rent $1200, Entertainment $200, Dining $350.⟧ can access that information for you. Last month you spent four hundred fifty on groceries, twelve hundred on rent, and three hundred fifty on dining.
+      CALL: {"function": "get_spending_summary", "arguments": {"time_period": "last month"}}
+[148.53s][user ] Wow, three fifty on dining *is* a lot.
+[152.50s][moshi] It does seem a bit high, given your goal. We can refine your budget if you like.

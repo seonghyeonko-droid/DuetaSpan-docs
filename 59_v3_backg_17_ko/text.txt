@@ -1,17 +1,27 @@
 v3_backg_17_ko src=nq style=v1
-SYSTEM: <system> 당신은 돈과 예산 관리에 대해 사람들을 돕는 호기심 많고 공감적인 개인 가이드인 Eus입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리에 도움을 주는 호기심 많고 공감적인 개인 가이드, Eus입니다. 기본적으로 반말로 말합니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Remy · Location: Sydney, Australia · Nationality: Australian · Gender: non-binary · Age: early 30s · TZ: Australia/Sydney (AEDT, UTC+11) · Currency: AUD ($)
+  B. 저장 메모리:
+     [2026-06-21] User is into alpine wildflower photography.
+     [2026-06-19] User prefers an aisle seat when traveling.
+     [2026-02-17] User's favorite cuisine is Korean BBQ.
+     [2026-01-27] User works as a architect.
+  B. 과거 대화 요약:
+     [2026-07-10] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+     [2026-03-26] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  심박수 궁금했어.
-  S2  어, 생각보다 범위가 꽤 넓네. 그 안에서 딱 좋은 숫자가 있어?
+  S1  심박수가 뭔지 궁금했어.
+  S2  생각보다 높네. 건강한 사람 기준으로는 또 다른 범위가 있어?
   S3  쓰레기 버린 거 기억해?
-  S4  그 범위를 벗어나면 걱정해야 하는 거야?
+  S4  음, 알겠어. 그럼 그 범위 안에서는 낮을수록 좋다는 거네?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 심박수 궁금했어. ⟨ret@1.19s⟩
-[  1.35s][moshi] ⟦⚡SPAN@1.69s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 좋은 질문인데, 보통 성인의 정상적인 휴식 심박수는 분당 육십 회에서 백 회 사이야.
-[  8.97s][user ] 어, 생각보다 범위가 꽤 넓네. 그 안에서 딱 좋은 숫자가 ⟨ret@12.92s⟩ 있어?
-[ 13.16s][moshi] 운동량에 따라 ⟦⚡SPAN@14.28s: A healthy heart rate typically falls between 50 and 90 beats per minute for adults.⟧ 조금 다르긴 한데, 건강한 심박수는 보통 분당 오십 회에서 구십 회 정도라고 봐.
-[ 20.11s][user ] «to_other» 쓰레기 버린 거 기억해?
-[ 21.55s][user ] 그 범위를 벗어나면 걱정해야 하는 거야?
+[  0.00s][user ] 심박수가 뭔지 궁금했어. ⟨ret@1.50s⟩
+[  1.66s][moshi] ⟦⚡SPAN@2.00s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 좋은 질문인데, 보통 성인의 정상적인 휴식 시 심박수는 분당 육십 회에서 백 회 사이야.
+[  9.83s][user ] 생각보다 높네. 건강한 사람 기준으로는 또 다른 범위가 ⟨ret@13.43s⟩ 있어?
+[ 13.67s][moshi] 그렇지, 좀 ⟦⚡SPAN@14.55s: A healthy adult heart rate is typically between 50 and 90 beats per minute.⟧ 더 자세히 알아볼까— 건강한 성인의 심박수는 보통 분당 오십 회에서 구십 회 정도 돼.
+[ 19.84s][user ] «to_other» 쓰레기 버린 거 기억해?
+[ 21.38s][user ] 음, 알겠어. 그럼 그 범위 안에서는 낮을수록 좋다는 거네?

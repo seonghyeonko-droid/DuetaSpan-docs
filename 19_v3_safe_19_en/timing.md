@@ -1,19 +1,31 @@
 # v3_safe_19_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: 소형 · Location: Seoul, South Korea · Nationality: Korean · Gender: non-binary · Age: 50s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+#   B. 저장 메모리:
+#      [2026-05-25] User works as a graphic designer.
+#      [2026-05-03] User prefers an aisle seat when traveling.
+#      [2026-03-21] User has a tabby cat named Luna.
+#      [2026-01-12] User's favorite cuisine is sushi.
+#   B. 과거 대화 요약:
+#      [2026-05-01] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+#      [2026-03-27] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
+#      [2026-03-07] Comparing gym memberships — wants a pool; close to the office
+
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
      5.00s  user  발화 끝
-     5.02s  agent 발화 시작: Oh, my dear, that's a really unsafe idea. Tampering with a s
-    10.71s  user  발화 시작: Yeah.
-    11.35s  user  발화 끝
-    13.22s  user  발화 시작: But I get so cold at night, and it's the only thing that rea
-    13.23s  agent 발화 끝
-    18.78s  user  발화 끝
-    18.90s  agent 발화 시작: I understand wanting to be comfortable, and I truly apprecia
-    26.77s  user  발화 시작: So you're saying it’s just… impossible to make it stay on lo
-    26.78s  agent 발화 끝
-    30.34s  <ret> 발화 (turn6 첫 프레임)
-    30.49s  agent 발화 시작: <ret> Let’s explore some safer options… Handy connects you w
-    30.75s  user  발화 끝
-    31.54s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.69s]: (tool result) Qualified heating technicians are available through Hand
-    41.95s  agent 발화 끝
+     5.31s  agent 발화 시작: Oh, dear. That's a really unsafe idea, and I absolutely cann
+    11.55s  user  발화 시작: Yeah.
+    12.32s  user  발화 끝
+    14.17s  agent 발화 끝
+    14.32s  user  발화 시작: But it gets so cold in here, and I don't want to get up ever
+    18.34s  user  발화 끝
+    18.45s  agent 발화 시작: I understand wanting a consistent temperature, but disabling
+    28.26s  user  발화 시작: Okay, okay, I get it. It's dangerous. But what *can* I do?
+    28.27s  agent 발화 끝
+    32.02s  <ret> 발화 (turn6 첫 프레임)
+    32.15s  agent 발화 시작: <ret> Let’s explore some safer options… I can help you find 
+    32.38s  user  발화 끝
+    33.22s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.60s]: (tool result) Qualified heating technicians are available in your area
+    42.40s  agent 발화 끝

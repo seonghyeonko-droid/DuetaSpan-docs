@@ -1,79 +1,79 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
 SYSTEM: <system> You are Brae, a upbeat and supportive wellness coach who helps people with career choices and work stress. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Noah · Location: San Francisco, United States · Nationality: American · Gender: male · Age: 40s · TZ: America/Los_Angeles (PST, UTC-8) · Currency: USD ($)
+  B. 저장 메모리:
+     [2026-07-23] User is into marathon training.
+     [2026-02-21] User is allergic to cat dander.
+     [2026-02-01] User prefers an aisle seat when traveling.
+     [2026-01-07] User is vegetarian.
+     [2026-01-04] User's home address is 521 Oak Avenue.
+  B. 과거 대화 요약:
+     [2026-03-15] Planning a birthday dinner — party of six; looking for outdoor seating
+     [2026-01-25] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What was the weather like in Tokyo on December twenty-fourth last year
-      Hmm, that sounds chilly. Can you find me a cozy cafe nearby that’s ope
-      Eight PM is good. I— I mean, can you reserve a table for two there at 
-      Perfect! Uh, do they have free Wi-Fi?
-      Excellent. Right, I need to send a quick message to my friend, Sarah.
-  S2  Just tell her I’ll be a little late, traffic’s bad.
-      No, that’s all for now, thanks.
-      You're right. Actually, what’s the fastest route to “Bean There, Drank
-      Ten minutes is manageable. Is there a florist near there?
-  S3  Oh, that’s convenient! What time does “Petal Pushers” close today?
-      Hmm, I might pop in there after the cafe. Do they deliver?
-      Good to know. What's the weather forecast for tomorrow?
-      That sounds lovely. Can you set a reminder to buy a birthday gift for 
-  S4  Perfect! Thank you so much, Brae.
-      [happy] That’s a good point. I think I'm ready to head to the cafe now
-      I will. One last thing – what time is it right now?
-      Excellent. Thanks again!
+      Okay, good to know. Um, I’m thinking about a trip to Kyoto in the spri
+      Yeah, but I’m worried about the cherry blossom crowds. Is there a less
+      Ohara… that sounds perfect! Is there a train that goes there directly?
+  S2  One transfer isn’t bad. [laugh] What about hotels in Ohara? Are there 
+      Twenty-five thousand yen… that’s a bit steep. Are there any cheaper op
+      Oh. Okay… well, maybe I should look at inns instead.
+      Could you search for traditional inns in Ohara for those same dates?
+  S3  That sounds much better! Can you book a room for me there?
+      Wonderful! Thank you so much, Brae.
+      I’m also thinking about taking a pottery class while I’m there. Any re
+      Tuesdays and Fridays… I’ll have to check my schedule. What time do the
+  S4  Perfect. This is all coming together so nicely!
+      Definitely. One last thing—what’s the best way to get from Kyoto Stati
+      Okay, bus number 17… I
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth last ⟨ret@3.85s⟩ year?
-[  4.25s][moshi] Let me quickly ⟦⚡SPAN@5.85s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of eleven de⟧ check the historical weather data for you… On December twenty-fourth, Tokyo experienced mostly cloudy skies, with temperatures ranging from six to eleven degrees Celsius.
+[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth last ⟨ret@4.42s⟩ year?
+[  4.82s][moshi] Let's check ⟦⚡SPAN@6.42s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of 12 degree⟧ the historical weather data for you… On December twenty-fourth, 2023, Tokyo had mostly cloudy skies, with temperatures ranging from 5 to 12 degrees Celsius.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
-[ 16.64s][user ] Hmm, that sounds chilly. Can you find me a cozy cafe nearby that’s ⟨ret@21.58s⟩ open now?
-[ 21.98s][moshi] Absolutely, finding a ⟦⚡SPAN@23.58s: (tool result) There is a cafe called “Bean There, Drank That” located point eight kilometers away, open until ⟧ warm and inviting spot is a great idea. “Bean There, Drank That” is a cozy cafe point eight kilometers from here, and it’s open until eight this evening.
-      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "cozy cafe", "open_now": true, "location": "current"}}
-[ 27.55s][user ] «backchannel» Yeah.
-[ 33.52s][user ] Eight PM is good. I— I mean, can you reserve a table for two there at ⟨ret@38.74s⟩ seven?
-[ 39.14s][moshi] Reserving ⟦⚡SPAN@39.78s: (tool result) A table for two at “Bean There, Drank That” is confirmed for seven PM under the name of… well, y⟧ a table sounds lovely, let's get that sorted for you. Wonderful! Your table for two at “Bean There, Drank That” is reserved for seven PM.
-      CALL: {"function": "Restaurant_1_ReserveTable", "arguments": {"restaurant_name": "Bean There, Drank That", "time": "19:00", "party_size": 2}}
-[ 45.23s][user ] «backchannel» Yeah, yeah.
-[ 48.28s][user ] Perfect! Uh, do they have free ⟨ret@50.84s⟩ Wi-Fi?
-[ 51.16s][moshi] Most cafes do these ⟦⚡SPAN@52.84s: (tool result) “Bean There, Drank That” offers free Wi-Fi, has outdoor seating, and accepts credit cards.⟧ days, but let me quickly double-check for you.
-      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Bean There, Drank That"}}
-[ 55.69s][moshi] Yes, “Bean There, Drank That” does offer free Wi-Fi, plus outdoor seating and credit card payments.
-[ 62.86s][user ] Excellent. Right, I need to send a quick message to my friend, Sarah.
-[ 67.32s][moshi] Of course! What message would you like to send to Sarah?
-[ 71.53s][user ] Just tell her I’ll be a little late, traffic’s ⟨ret@74.23s⟩ bad.
-[ 74.27s][moshi] Okay, sending a message ⟦⚡SPAN@76.23s: (tool result) Message sent to Sarah successfully.⟧ to Sarah now…
-      CALL: {"function": "Messaging_1_SendMessage", "arguments": {"recipient": "Sarah", "message": "I’ll be a little late, traffic’s bad."}}
-[ 77.12s][moshi] Your message has been sent to Sarah. Is there anything else I can help with?
-[ 82.64s][user ] No, that’s all for now, thanks.
-[ 84.67s][moshi] You’re very welcome. Sometimes a little planning helps ease the stress of a busy day.
-[ 89.86s][user ] You're right. Actually, what’s the fastest route to “Bean There, Drank That” by walking?
-[ 95.53s][moshi] ⟨ret@95.37s⟩ Let’s map out ⟦⚡SPAN@96.81s: (tool result) The fastest walking route to “Bean There, Drank That” is point eight kilometers, estimated time ⟧ the quickest walking route for you. The fastest walking route is point eight kilometers and should take about ten minutes.
-      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"destination": "Bean There, Drank That", "mode": "walking"}}
-[103.90s][user ] Ten minutes is manageable. Is there a florist near ⟨ret@107.90s⟩ there?
-[108.06s][moshi] I can ⟦⚡SPAN@109.18s: (tool result) “Petal Pushers” florist is located point three kilometers from “Bean There, Drank That”.⟧ certainly look for a florist nearby… “Petal Pushers” is a florist just point three kilometers from the cafe.
-      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "florist", "location": "Bean There, Drank That"}}
-[113.53s][user ] «backchannel» Yeah, totally.
-[116.09s][user ] Oh, that’s convenient! What time does “Petal Pushers” close ⟨ret@120.34s⟩ today?
-[120.56s][moshi] Checking ⟦⚡SPAN@121.62s: (tool result) “Petal Pushers” is open until six PM today.⟧ their hours of operation now… “Petal Pushers” closes at six PM this evening.
-      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Petal Pushers"}}
-[126.89s][user ] Hmm, I might pop in there after the cafe. Do they ⟨ret@130.94s⟩ deliver?
-[131.10s][moshi] Let's see if ⟦⚡SPAN@132.94s: (tool result) “Petal Pushers” offers delivery within a five-kilometer radius for orders over thirty dollars.⟧ they offer delivery services. Yes, they deliver within five kilometers for orders over thirty dollars.
-      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Petal Pushers"}}
-[133.51s][user ] «backchannel» Uh-huh.
-[139.03s][user ] Good to know. What's the weather forecast for tomorrow?
-[142.62s][moshi] ⟨ret@142.47s⟩ I can ⟦⚡SPAN@143.75s: (tool result) Tomorrow’s forecast is sunny with a high of fifteen degrees Celsius and a low of eight degrees C⟧ give you a look ahead at tomorrow’s forecast. Tomorrow will be sunny with highs of fifteen and lows of eight degrees Celsius.
-      CALL: {"function": "Weather_1_GetForecast", "arguments": {"location": "current", "date": "tomorrow"}}
-[146.51s][user ] «backchannel» Yeah.
-[151.14s][user ] That sounds lovely. Can you set a reminder to buy a birthday gift for my ⟨ret@155.99s⟩ mom?
-[156.15s][moshi] I can absolutely help ⟦⚡SPAN@157.75s: (tool result) Reminder set for March fifteenth, 2024, at ten AM: “Buy birthday gift for Mom”.⟧ you remember that important occasion. A reminder to buy a gift for your mom is set for March fifteenth at ten AM.
-      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"reminder_text": "Buy birthday gift for Mom", "date": "2024-03-15", "time": "10:00"}}
-[161.41s][user ] «backchannel» Mm-hmm.
-[165.32s][user ] Perfect! Thank you so much, Brae.
-[167.64s][moshi] You’re very welcome. Taking small steps to organize your day can really reduce stress.
-[174.16s][user ] [happy] That’s a good point. I think I'm ready to head to the cafe now.
-[178.12s][moshi] Wonderful! Enjoy your time at “Bean There, Drank That.” Remember to take a moment to breathe and relax.
-[184.46s][user ] I will. One last thing – what time is it ⟨ret@187.32s⟩ right now?
-[187.72s][moshi] Let me ⟦⚡SPAN@188.52s: (tool result) The current time is four forty-two PM.⟧ quickly check the current time for you. It is currently four forty-two PM.
-      CALL: {"function": "System_1_GetCurrentTime", "arguments": {}}
-[189.90s][user ] «backchannel» Yeah.
-[193.27s][user ] Excellent. Thanks again!
-[194.90s][moshi] My pleasure. Prioritizing your well-being is key, and I’m here to support you whenever you need it.
+[ 18.08s][user ] Okay, good to know. Um, I’m thinking about a trip to Kyoto in the spring…
+[ 22.54s][moshi] That sounds lovely! Spring in Kyoto is truly beautiful, a wonderful time for reflection and new beginnings.
+[ 26.26s][user ] «backchannel» Yeah.
+[ 30.34s][user ] Yeah, but I’m worried about the cherry blossom crowds. Is there a less-touristy spot nearby to see ⟨ret@35.99s⟩ them?
+[ 36.38s][moshi] Finding a quieter ⟦⚡SPAN@37.99s: (tool result) Ohara, a small village 25 kilometers north of Kyoto, is known for its beautiful Sanzen-in temple⟧ spot is a smart idea… Ohara, twenty-five kilometers north of Kyoto, offers beautiful cherry blossoms with fewer crowds, particularly at Sanzen-in temple.
+      CALL: {"function": "Places_1_Search", "arguments": {"query": "less crowded cherry blossom viewing near Kyoto", "radius": "50km"}}
+[ 44.55s][user ] «backchannel» Yeah, yeah.
+[ 48.45s][user ] Ohara… that sounds perfect! Is there a train that goes there ⟨ret@52.70s⟩ directly?
+[ 53.02s][moshi] Let’s ⟦⚡SPAN@53.66s: (tool result) A train from Kyoto Station to Ohara requires one transfer at Demachiyanagi Station, and takes ap⟧ see about direct train routes… Getting to Ohara by train from Kyoto Station takes about an hour and fifteen minutes, with one transfer at Demachiyanagi Station.
+      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"start": "Kyoto Station", "end": "Ohara, Japan", "mode": "train"}}
+[ 64.40s][user ] One transfer isn’t bad. [laugh] What about hotels in Ohara? Are there any good ⟨ret@70.72s⟩ ones?
+[ 71.04s][moshi] ⟦⚡SPAN@71.22s: (tool result) The Ryokan Sansho is available in Ohara from April tenth to April thirteenth, with rooms startin⟧ Let’s check hotel availability in that area… Ryokan Sansho has availability from April tenth to April thirteenth, with rooms starting at twenty-five thousand yen per night.
+      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
+[ 83.30s][user ] Twenty-five thousand yen… that’s a bit steep. Are there any cheaper ⟨ret@88.67s⟩ options?
+[ 88.99s][moshi] Let's ⟦⚡SPAN@89.87s: (tool result) No hotels are available in Ohara under 15,000 yen from April tenth to April thirteenth.⟧ broaden the search a little… Unfortunately, no hotels are available in Ohara under fifteen thousand yen for those dates.
+      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "max_price": "15000", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
+[ 97.95s][user ] Oh. Okay… well, maybe I should look at inns instead.
+[102.52s][moshi] That’s a great idea! Traditional inns often offer a more affordable and authentic experience.
+[108.64s][user ] Could you search for traditional inns in Ohara for those same dates?
+[113.56s][moshi] ⟨ret@113.33s⟩ Certainly, let’s ⟦⚡SPAN@114.93s: (tool result) Shoraian Ryokan is available from April tenth to April thirteenth, priced at 18,000 yen per nigh⟧ explore some traditional inn options… Shoraian Ryokan is available from April tenth to thirteenth, at eighteen thousand yen per night with meals included.
+      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "type": "ryokan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
+[124.59s][user ] That sounds much better! Can you book a room for me there?
+[128.46s][moshi] ⟨ret@128.30s⟩ Absolutely, I ⟦⚡SPAN@130.30s: (tool result) Your reservation at Shoraian Ryokan is confirmed for one guest, from April tenth to April thirte⟧ can take care of that for you… Your reservation at Shoraian Ryokan is confirmed—XR729LP—for one guest, April tenth to thirteenth.
+      CALL: {"function": "Hotels_1_Book", "arguments": {"hotel_name": "Shoraian Ryokan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13", "number_of_guests": "1"}}
+[136.28s][user ] «backchannel» Okay.
+[140.85s][user ] Wonderful! Thank you so much, Brae.
+[143.94s][moshi] You’re very welcome! It’s my pleasure to help plan a restorative trip.
+[145.32s][user ] «backchannel» Uh-huh.
+[148.62s][user ] I’m also thinking about taking a pottery class while I’m there. Any ⟨ret@153.87s⟩ recommendations?
+[154.25s][moshi] That sounds like ⟦⚡SPAN@155.87s: (tool result) The Ohara Pottery Studio offers beginner pottery classes on Tuesdays and Fridays, costing 5,000 ⟧ a wonderful way to connect with the local culture… Ohara Pottery Studio offers beginner classes on Tuesdays and Fridays for five thousand yen each.
+      CALL: {"function": "Places_1_Search", "arguments": {"query": "pottery classes Ohara Japan"}}
+[159.03s][user ] «backchannel» Yeah.
+[164.44s][user ] Tuesdays and Fridays… I’ll have to check my schedule. What time do they ⟨ret@169.44s⟩ start?
+[169.68s][moshi] Let’s find ⟦⚡SPAN@170.64s: (tool result) Ohara Pottery Studio classes are held from 10 AM to 12 PM and from 2 PM to 4 PM on Tuesdays and ⟧ out those class times for you… Classes at Ohara Pottery Studio are from 10 AM to noon, and 2 PM to 4 PM on Tuesdays and Fridays.
+      CALL: {"function": "Places_1_GetDetails", "arguments": {"place_name": "Ohara Pottery Studio"}}
+[175.97s][user ] «backchannel» Mm-hmm.
+[179.28s][user ] Perfect. This is all coming together so nicely!
+[182.78s][moshi] I'm so glad to hear it! Planning is often half the enjoyment, wouldn’t you agree?
+[187.70s][user ] Definitely. One last thing—what’s the best way to get from Kyoto Station to Shoraian ⟨ret@194.16s⟩ Ryokan?
+[194.48s][moshi] Let's map out ⟦⚡SPAN@195.84s: (tool result) Take the Kyoto City Bus number 17 from Kyoto Station to Ohara Village, then walk ten minutes to ⟧ the best route for you… Take Kyoto City Bus number 17 to Ohara Village, then walk ten minutes to the ryokan—about ninety minutes total.
+      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"start": "Kyoto Station", "end": "Shoraian Ryokan, Ohara, Japan", "mode": "public transport"}}
+[199.04s][user ] «backchannel» Oh.
+[204.73s][user ] Okay, bus number 17… I

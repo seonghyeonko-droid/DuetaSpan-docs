@@ -1,13 +1,25 @@
 # v3_pers_37_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Noah · Location: Sydney, Australia · Nationality: Australian · Gender: male · Age: early 30s · TZ: Australia/Sydney (AEDT, UTC+11) · Currency: AUD ($)
+#   B. 저장 메모리:
+#      [2026-06-19] User works as a nurse.
+#      [2026-06-02] User is into marathon training.
+#      [2026-04-04] User is allergic to penicillin.
+#      [2026-03-15] User is planning a trip to Vietnam in August.
+#   B. 과거 대화 요약:
+#      [2026-03-17] Planning a birthday dinner — party of six; looking for outdoor seating
 
-     0.00s  agent 발화 시작: 노아, 만나서 반가워. 나는 후나르고, 새로운 곳에 정착하는 걸 도와주는 역할을 해.
-     6.62s  agent 발화 끝
-     7.54s  user  발화 시작: 후나르… 이름 진짜 예쁘다. 뭔가 차분하게 느껴지기도 하고. 너 진짜 사람이냐?
-    13.10s  agent 발화 시작: 하하, 그렇게 말해 주니 고마워, 노아. 나는 도움을 주는 걸 목표로 만들어졌고, 내 이름이 너한테 좋게 들
-    13.19s  user  발화 끝
-    23.25s  agent 발화 끝
-    23.31s  user  발화 시작: 알겠네. 그냥… 좀 정신이 없다고 해야 하나. 시드니는 진짜 멋지지만, 너무 크잖아. 어디서부터 시작해야 집
-    32.55s  agent 발화 시작: 당연히 정신이 없을 수 있어, 노아. 새로운 도시는 적응하기 힘들지. “집”이 너한테 어떤 의미인지, 그리고
-    32.68s  user  발화 끝
-    42.75s  agent 발화 끝
+
+     0.00s  agent 발화 시작: 노아, 시드니에 온 걸 환영해. 난 후나르고, 네가 새로운 도시에 잘 정착하고 편안하게 지낼 수 있도록 도와
+     7.78s  agent 발화 끝
+     8.63s  user  발화 시작: 후나라… 이름 진짜 예쁘다. 솔직히 좀 정신이 없네. 모든 게 너무 달라 보여.
+    13.81s  agent 발화 시작: 당연히 정신없을 수 있어, 노아. 변화는 감당하기 힘들 수 있지. 지금 뭐가 제일 달라 느껴져?
+    13.96s  user  발화 끝
+    20.24s  agent 발화 끝
+    20.27s  user  발화 시작: 음… 그냥… 내 루틴을 찾는 게. 전에 살던 곳에서는 모든 걸 다 알았거든. 커피숍, 헬스장…
+    27.35s  agent 발화 시작: 익숙한 게 편안하긴 하지? 새로운 루틴을 만드는 데는 시간이 걸릴 거야. 여기서 만족스러운 루틴이 어떤 모습
+    27.59s  user  발화 끝
+    35.88s  agent 발화 끝
+    36.38s  user  발화 시작: 응, 그… 진짜 좋은 생각이야. 그냥… 시작할 수 있는 몇 가지 아이디어를 줘?
+    42.22s  user  발화 끝

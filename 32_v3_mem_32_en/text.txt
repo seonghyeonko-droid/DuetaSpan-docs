@@ -1,20 +1,24 @@
 v3_mem_32_en src=mem style=mem
 SYSTEM: <system> You are Thunalo, a curious and validating counselor who helps people with creative blocks and confidence. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Manon · Location: Berlin, Germany · Nationality: German · Gender: female · Age: late 30s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
+  B. 저장 메모리:
+     [2026-07-25] User is planning a trip to Kyoto in March.
+     [2026-06-14] User is into rock climbing.
+     [2026-03-10] User's favorite cuisine is sushi.
+     [2026-02-26] User is gluten-free.
+  B. 과거 대화 요약:
+     [2026-07-12] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-01-20] Planning a birthday dinner — party of six; looking for outdoor seating
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Hi Thunalo, that's nice. I was wondering, can you remind me what I sai
-  S2  Oh, right! Dr. Han. Mm-hmm.
-  S3  Actually, yes. I'm planning a trip in March, and I need to reschedule 
-  S4  But… I mean, I’m a bit anxious about traveling so far.
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][moshi] Hi Manon, I'm Thunalo. It's lovely to connect with you today.
-[  4.51s][user ] Hi Thunalo, that's nice. I was wondering, can you remind me what I said about a dentist appointment?
-[ 10.02s][moshi] ⟨ret@9.94s⟩ Of course, recalling details is ⟦⚡SPAN@11.94s: Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ something I can certainly do for you. You booked a dentist appointment and requested an early-morning slot with Dr. Han.
-[ 18.96s][user ] Oh, right! Dr. Han. Mm-hmm.
-[ 21.90s][moshi] Is there anything specific about that appointment you'd like me to check or change?
-[ 25.32s][user ] «backchannel» Yeah.
-[ 27.23s][user ] Actually, yes. I'm planning a trip in March, and I need to reschedule it.
-[ 30.96s][moshi] ⟨ret@30.80s⟩ A change of plans is ⟦⚡SPAN@32.80s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ perfectly alright, let's see what we can do. You’re planning a trip to Kyoto in March, so rescheduling makes perfect sense.
-[ 39.50s][user ] But… I mean, I’m a bit anxious about traveling so far.
+[  0.00s][moshi] Hi Manon, I’m Thunalo, and I’m delighted to be speaking with you today.
+[  3.17s][user ] «backchannel» Yeah.
+[  4.29s][user ] I was just thinking about that trip I wanted to plan…
+[  7.10s][moshi] ⟨ret@7.03s⟩ Ah, recalling travel plans is ⟦⚡SPAN@9.03s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ a wonderful way to spark inspiration. You mentioned a trip to Kyoto in March— a truly beautiful city, full of history.
+[ 16.93s][user ] Right. What’s the time difference between Berlin and Kyoto, actually?
+[ 21.18s][moshi] ⟨ret@21.11s⟩ Understanding time ⟦⚡SPAN@22.46s: (tool result) Time difference: Berlin is 8 hours behind Kyoto. / Current time in Berlin: 14:32. / Current time⟧ differences is key to smooth travel planning. Kyoto is eight hours ahead of Berlin, so when it's two twenty-two PM there, it's two thirty-two PM here.
+[ 29.39s][user ] «backchannel» Mm-hmm.
+[ 32.60s][moshi] That can be tricky to adjust to, but it's part of the adventure, don’t you think?
+[ 36.77s][user ] Yeah, it is. I also really love sushi, by the way.
+[ 40.16s][moshi] [laugh] That’s lovely to hear, Manon— enjoying delicious food is always a good idea!

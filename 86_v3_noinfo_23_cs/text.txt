@@ -1,79 +1,79 @@
 v3_noinfo_23_cs src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 커리어 선택과 직장 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰빙 코치인 Brae입니다. <system>
+SYSTEM: <system> 당신은 커리어 선택과 직장 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰니스 코치 Brae입니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Noah · Location: San Francisco, United States · Nationality: American · Gender: male · Age: 40s · TZ: America/Los_Angeles (PST, UTC-8) · Currency: USD ($)
+  B. 저장 메모리:
+     [2026-07-23] User is into marathon training.
+     [2026-02-21] User is allergic to cat dander.
+     [2026-02-01] User prefers an aisle seat when traveling.
+     [2026-01-07] User is vegetarian.
+     [2026-01-04] User's home address is 521 Oak Avenue.
+  B. 과거 대화 요약:
+     [2026-03-15] Planning a birthday dinner — party of six; looking for outdoor seating
+     [2026-01-25] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  뭐야, 작년 12월 24일에 도쿄 날씨가 어땠어?
-      음, 추워 보이네. 지금 근처에 분위기 좋은 카페 있으면 찾아 줄래?
-      저녁 8시는 괜찮아. 있, 그러니까, 거기 7시에 자리 예약해 줄래?
-      완벽해! 음, 와이파이 무료야?
-      좋네. 친구 사라한테 메시지 좀 보내야 돼.
-  S2  늦을 것 같다고, 길이 막힌다고 말해 줘.
-      아니, 지금은 다야, 고마워.
-      맞아. 있, “Bean There, Drank That”까지 걸어서 가는 가장 빠른 길은 뭐야?
-      10분이면 괜찮아. 근처에 꽃집 있어?
-  S3  오, 편하네! “Petal Pushers” 오늘 몇 시에 닫아?
-      음, 카페 갔다 들러볼까. 배달도 해?
-      알아두면 좋네. 내일 날씨 예보는 어때?
-      좋다. 엄마 생일 선물 사라고 알림 설정해 줘.
-  S4  완벽해! 정말 고마워, 브레.
-      기분 좋아. [happy] 좋은 말이네. 이제 카페 갈 준비 됐어.
-      그럴게. 마지막으로, 지금 몇 시야?
-      좋아. 다시 한번 고마워!
+  S1  응, 작년 12월 24일 도쿄 날씨가 어땠어?
+      그래, 알겠어. 음, 봄에 교토 여행을 생각 중인데…
+      그래도 벚꽃 구경 사람 때문에 걱정돼. 주변에 덜 붐비는 곳 있어?
+      오하라… 완벽하겠다! 기차로 바로 갈 수 있어?
+  S2  한 번 갈아타는 건 괜찮아. [laugh] 오하라에 호텔 있어? 좋은 곳 있으면 알려줘.
+      2만 5천 엔… 좀 비싸네. 더 저렴한 곳 있어?
+      아. 알았어… 그럼 여관을 찾아봐야겠다.
+      그럼 같은 날짜로 오하라의 전통 여관을 찾아줄래?
+  S3  훨씬 좋네! 거기 방 예약해 줄 수 있어?
+      정말 고마워, 브레.
+      거기 가서 도자기 수업도 들어볼까 하는데. 추천해 줄 만한 곳 있어?
+      화요일과 금요일… 일정 확인해 봐야겠다. 수업은 몇 시에 시작해?
+  S4  완벽해! 모든 게 잘 풀리고 있어!
+      맞아. 마지막으로 하나만 물어볼게. 교토역에서 쇼라이안 료칸까지 가는 가장 좋은 방법은 뭐야?
+      알았어, 17번 버스…
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 뭐야, 작년 12월 24일에 도쿄 날씨가 어땠어?
-[  3.61s][moshi] ⟨ret@3.46s⟩ 네, ⟦⚡SPAN@4.90s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of eleven de⟧ 빠르게 과거 날씨 데이터를 확인해 볼게요… 작년 12월 24일에는 도쿄에 대체로 흐린 하늘이었고, 기온은 6도에서 11도 사이였습니다.
+[  0.00s][user ] 응, 작년 12월 24일 도쿄 날씨가 어땠어?
+[  3.66s][moshi] ⟨ret@3.51s⟩ 알아볼게요. ⟦⚡SPAN@4.95s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of 12 degree⟧ 이천이십삼 년 12월 24일 도쿄는 대체로 흐린 날씨였고, 기온은 5도에서 12도 사이였습니다.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
-[ 13.91s][user ] 음, 추워 보이네. 지금 근처에 분위기 좋은 카페 있으면 찾아 ⟨ret@17.77s⟩ 줄래?
-[ 18.16s][moshi] 네, 따뜻하고 ⟦⚡SPAN@19.77s: (tool result) There is a cafe called “Bean There, Drank That” located point eight kilometers away, open until ⟧ 아늑한 곳을 찾는 건 좋은 생각이에요. “Bean There, Drank That”은 여기에서 0.8킬로미터 거리에 있고, 오늘 저녁 8시까지 영업합니다.
-      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "cozy cafe", "open_now": true, "location": "current"}}
-[ 23.23s][user ] «backchannel» 응.
-[ 28.76s][user ] 저녁 8시는 괜찮아. 있, 그러니까, 거기 7시에 자리 예약해 ⟨ret@33.22s⟩ 줄래?
-[ 33.45s][moshi] 네, ⟦⚡SPAN@34.18s: (tool result) A table for two at “Bean There, Drank That” is confirmed for seven PM under the name of… well, y⟧ 자리 예약을 해 드리면 좋을 것 같아요, 바로 해 드릴게요. “Bean There, Drank That”에 7시에 두 분 자리 예약이 완료되었습니다.
-      CALL: {"function": "Restaurant_1_ReserveTable", "arguments": {"restaurant_name": "Bean There, Drank That", "time": "19:00", "party_size": 2}}
-[ 39.31s][user ] «backchannel» 음.
-[ 41.98s][user ] 완벽해! 음, 와이파이 무료야?
-[ 45.22s][moshi] ⟨ret@45.15s⟩ 대부분 카페는 다 ⟦⚡SPAN@47.15s: (tool result) “Bean There, Drank That” offers free Wi-Fi, has outdoor seating, and accepts credit cards.⟧ 제공할 텐데, 빠르게 다시 확인해 볼게요.
-      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Bean There, Drank That"}}
-[ 50.20s][moshi] 네, “Bean There, Drank That”은 무료 와이파이, 야외 좌석, 그리고 신용카드 결제를 제공합니다.
-[ 56.51s][user ] 좋네. 친구 사라한테 메시지 좀 보내야 돼.
-[ 59.30s][moshi] 물론이죠! 사라에게 어떤 메시지를 보내 드릴까요?
-[ 63.91s][user ] 늦을 것 같다고, 길이 막힌다고 말해 ⟨ret@66.11s⟩ 줘.
-[ 66.42s][moshi] 네, ⟦⚡SPAN@67.63s: (tool result) Message sent to Sarah successfully.⟧ 사라에게 메시지를 보내고 있습니다…
-      CALL: {"function": "Messaging_1_SendMessage", "arguments": {"recipient": "Sarah", "message": "I’ll be a little late, traffic’s bad."}}
-[ 69.29s][moshi] 사라에게 메시지가 전송되었습니다. 더 도와드릴 일이 있을까요?
-[ 74.33s][user ] 아니, 지금은 다야, 고마워.
-[ 76.75s][moshi] 천만에요. 조금의 계획이 바쁜 날의 스트레스를 줄이는 데 도움이 될 때가 있습니다.
-[ 84.46s][user ] 맞아. 있, “Bean There, Drank That”까지 걸어서 가는 가장 빠른 길은 뭐야?
-[ 89.61s][moshi] ⟨ret@89.31s⟩ 가장 빠른 걸음 ⟦⚡SPAN@91.31s: (tool result) The fastest walking route to “Bean There, Drank That” is point eight kilometers, estimated time ⟧ 경로를 찾아 드릴게요. 가장 빠른 걸음 경로는 0.8킬로미터이고, 약 10분 정도 걸립니다.
-      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"destination": "Bean There, Drank That", "mode": "walking"}}
-[ 96.66s][user ] 10분이면 괜찮아. 근처에 꽃집 있어?
-[ 99.57s][moshi] ⟨ret@99.42s⟩ 네, 근처 ⟦⚡SPAN@101.42s: (tool result) “Petal Pushers” florist is located point three kilometers from “Bean There, Drank That”.⟧ 꽃집을 찾아볼 수 있습니다… “Petal Pushers”는 카페에서 0.3킬로미터 거리에 있습니다.
-      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "florist", "location": "Bean There, Drank That"}}
-[104.99s][user ] «backchannel» 응.
-[108.02s][user ] 오, 편하네! “Petal Pushers” 오늘 몇 시에 ⟨ret@110.82s⟩ 닫아?
-[111.06s][moshi] 영업 시간을 확인해 ⟦⚡SPAN@112.82s: (tool result) “Petal Pushers” is open until six PM today.⟧ 볼게요… “Petal Pushers”는 오늘 저녁 6시에 닫습니다.
-      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Petal Pushers"}}
-[117.52s][user ] 음, 카페 갔다 들러볼까. 배달도 ⟨ret@119.82s⟩ 해?
-[120.21s][moshi] 배달 ⟦⚡SPAN@121.10s: (tool result) “Petal Pushers” offers delivery within a five-kilometer radius for orders over thirty dollars.⟧ 서비스를 제공하는지 확인해 볼게요. 네, 30달러 이상 주문 시 5킬로미터 이내 배달합니다.
-      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Petal Pushers"}}
-[122.41s][user ] «backchannel» 어어.
-[127.25s][user ] 알아두면 좋네. 내일 날씨 예보는 ⟨ret@129.67s⟩ 어때?
-[130.06s][moshi] 내일 날씨 ⟦⚡SPAN@131.67s: (tool result) Tomorrow’s forecast is sunny with a high of fifteen degrees Celsius and a low of eight degrees C⟧ 예보를 알려 드릴게요. 내일은 맑고 최고 기온은 15도, 최저 기온은 8도입니다.
-      CALL: {"function": "Weather_1_GetForecast", "arguments": {"location": "current", "date": "tomorrow"}}
-[133.62s][user ] «backchannel» 응.
-[137.85s][user ] 좋다. 엄마 생일 선물 사라고 알림 설정해 ⟨ret@141.35s⟩ 줘.
-[141.74s][moshi] ⟦⚡SPAN@142.31s: (tool result) Reminder set for March fifteenth, 2024, at ten AM: “Buy birthday gift for Mom”.⟧ 네, 중요한 날을 기억하도록 도와드릴 수 있습니다. 엄마 생일 선물 사기 알림이 3월 15일 오전 10시에 설정되었습니다.
-      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"reminder_text": "Buy birthday gift for Mom", "date": "2024-03-15", "time": "10:00"}}
-[146.81s][user ] «backchannel» 어.
-[151.04s][user ] 완벽해! 정말 고마워, 브레.
-[153.29s][moshi] 천만에요. 하루를 정리하는 작은 노력이 스트레스를 줄이는 데 도움이 될 수 있습니다.
-[158.75s][user ] 기분 좋아. [happy] 좋은 말이네. 이제 카페 갈 준비 됐어.
-[162.36s][moshi] 좋아요! “Bean There, Drank That”에서 즐거운 시간 보내세요. 잠시 숨을 고르고 휴식을 취하는 것을 잊지 마세요.
-[169.82s][user ] 그럴게. 마지막으로, 지금 몇 시야?
-[172.84s][moshi] ⟨ret@172.76s⟩ 빠르게 현재 시간을 ⟦⚡SPAN@174.76s: (tool result) The current time is four forty-two PM.⟧ 확인해 볼게요. 현재 오후 4시 42분입니다.
-      CALL: {"function": "System_1_GetCurrentTime", "arguments": {}}
-[175.06s][user ] «backchannel» 응.
-[178.01s][user ] 좋아. 다시 한번 고마워!
-[179.71s][moshi] 천만에요. 웰빙을 우선시하는 것이 중요하며, 필요할 때마다 도와드리겠습니다.
+[ 11.54s][user ] 그래, 알겠어. 음, 봄에 교토 여행을 생각 중인데…
+[ 15.68s][moshi] 정말 좋네요! 교토의 봄은 정말 아름답고, 사색과 새로운 시작에 좋은 시간일 거예요.
+[ 19.09s][user ] «backchannel» 응.
+[ 22.89s][user ] 그래도 벚꽃 구경 사람 때문에 걱정돼. 주변에 덜 붐비는 곳 ⟨ret@27.25s⟩ 있어?
+[ 27.57s][moshi] 조용한 곳을 ⟦⚡SPAN@29.25s: (tool result) Ohara, a small village 25 kilometers north of Kyoto, is known for its beautiful Sanzen-in temple⟧ 찾는 건 좋은 생각이에요… 교토에서 북쪽으로 25킬로미터 떨어진 오하라에는 산젠인 절을 포함해 벚꽃이 아름답지만 사람이 덜 몰립니다.
+      CALL: {"function": "Places_1_Search", "arguments": {"query": "less crowded cherry blossom viewing near Kyoto", "radius": "50km"}}
+[ 35.20s][user ] «backchannel» 음.
+[ 38.60s][user ] 오하라… 완벽하겠다! 기차로 바로 갈 수 있어?
+[ 42.47s][moshi] ⟨ret@42.40s⟩ ⟦⚡SPAN@42.90s: (tool result) A train from Kyoto Station to Ohara requires one transfer at Demachiyanagi Station, and takes ap⟧ 기차 노선을 알아볼게요… 교토역에서 오하라까지 기차를 타면 데마치야나기역에서 한 번 갈아타야 하는데, 약 한 시간 15분 정도 걸립니다.
+      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"start": "Kyoto Station", "end": "Ohara, Japan", "mode": "train"}}
+[ 52.55s][user ] 한 번 갈아타는 건 괜찮아. [laugh] 오하라에 호텔 있어? 좋은 곳 있으면 ⟨ret@59.28s⟩ 알려줘.
+[ 59.65s][moshi] 호텔 상황을 ⟦⚡SPAN@61.28s: (tool result) The Ryokan Sansho is available in Ohara from April tenth to April thirteenth, with rooms startin⟧ 확인해 볼게요… 4월 10일부터 13일까지 료칸 산쇼에 객실이 있고, 1박에 2만 5천 엔부터 시작합니다.
+      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
+[ 67.58s][user ] 2만 5천 엔… 좀 비싸네. 더 저렴한 곳 ⟨ret@70.75s⟩ 있어?
+[ 71.14s][moshi] 검색 ⟦⚡SPAN@72.27s: (tool result) No hotels are available in Ohara under 15,000 yen from April tenth to April thirteenth.⟧ 범위를 좀 넓혀볼게요… 죄송하지만, 해당 날짜에 오하라에 1만 5천 엔 이하의 호텔은 없습니다.
+      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "max_price": "15000", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
+[ 79.01s][user ] 아. 알았어… 그럼 여관을 찾아봐야겠다.
+[ 82.91s][moshi] 좋은 생각이에요! 전통 여관은 종종 더 저렴하고 정통한 경험을 제공합니다.
+[ 88.82s][user ] 그럼 같은 날짜로 오하라의 전통 여관을 찾아줄래?
+[ 92.22s][moshi] ⟨ret@91.91s⟩ ⟦⚡SPAN@92.87s: (tool result) Shoraian Ryokan is available from April tenth to April thirteenth, priced at 18,000 yen per nigh⟧ 알겠습니다. 전통 여관 옵션을 찾아볼게요… 쇼라이안 료칸은 4월 10일부터 13일까지 이용 가능하며, 식사를 포함하여 1박에 1만 8천 엔입니다.
+      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "type": "ryokan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
+[102.67s][user ] 훨씬 좋네! 거기 방 예약해 줄 수 있어?
+[105.18s][moshi] ⟨ret@105.03s⟩ 물론이죠, ⟦⚡SPAN@107.03s: (tool result) Your reservation at Shoraian Ryokan is confirmed for one guest, from April tenth to April thirte⟧ 예약해 드릴게요… 쇼라이안 료칸 예약이 확정되었습니다—XR729LP—1인, 4월 10일부터 13일까지입니다.
+      CALL: {"function": "Hotels_1_Book", "arguments": {"hotel_name": "Shoraian Ryokan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13", "number_of_guests": "1"}}
+[111.02s][user ] «backchannel» 응.
+[114.87s][user ] 정말 고마워, 브레.
+[116.79s][moshi] 천만에요! 편안한 여행 계획을 도와드릴 수 있어서 기쁩니다.
+[118.20s][user ] «backchannel» 어어.
+[123.84s][user ] 거기 가서 도자기 수업도 들어볼까 하는데. 추천해 줄 만한 곳 ⟨ret@127.85s⟩ 있어?
+[128.08s][moshi] 현지 문화와 ⟦⚡SPAN@129.85s: (tool result) The Ohara Pottery Studio offers beginner pottery classes on Tuesdays and Fridays, costing 5,000 ⟧ 교감할 수 있는 좋은 방법일 것 같아요… 오하라 도자기 스튜디오에서는 화요일과 금요일에 초보자 수업을 5천 엔에 진행합니다.
+      CALL: {"function": "Places_1_Search", "arguments": {"query": "pottery classes Ohara Japan"}}
+[132.97s][user ] «backchannel» 응.
+[139.69s][user ] 화요일과 금요일… 일정 확인해 봐야겠다. 수업은 몇 시에 ⟨ret@143.53s⟩ 시작해?
+[143.84s][moshi] 수업 시간을 ⟦⚡SPAN@145.53s: (tool result) Ohara Pottery Studio classes are held from 10 AM to 12 PM and from 2 PM to 4 PM on Tuesdays and ⟧ 알아볼게요… 오하라 도자기 스튜디오 수업은 화요일과 금요일에 오전 10시부터 12시, 오후 2시부터 4시까지 진행됩니다.
+      CALL: {"function": "Places_1_GetDetails", "arguments": {"place_name": "Ohara Pottery Studio"}}
+[150.03s][user ] «backchannel» 어.
+[153.18s][user ] 완벽해! 모든 게 잘 풀리고 있어!
+[155.98s][moshi] 정말 기쁘네요! 계획하는 과정이 즐거움의 절반이기도 하죠, 그렇지 않나요?
+[161.13s][user ] 맞아. 마지막으로 하나만 물어볼게. 교토역에서 쇼라이안 료칸까지 가는 가장 좋은 방법은 ⟨ret@166.93s⟩ 뭐야?
+[167.32s][moshi] 최적의 경로를 ⟦⚡SPAN@168.69s: (tool result) Take the Kyoto City Bus number 17 from Kyoto Station to Ohara Village, then walk ten minutes to ⟧ 찾아드릴게요… 교토시 버스 17번을 타고 오하라 마을로 간 다음, 10분 정도 걸으면 료칸에 도착합니다—총 90분 정도 소요됩니다.
+      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"start": "Kyoto Station", "end": "Shoraian Ryokan, Ohara, Japan", "mode": "public transport"}}
+[172.10s][user ] «backchannel» 진짜?
+[178.04s][user ] 알았어, 17번 버스…

@@ -1,63 +1,74 @@
 v3_mem_33_en src=mem style=mem
 SYSTEM: <system> You are Diolo, a warm and attentive supportive advisor who helps people with everyday decisions and feelings. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Casey · Location: New York, United States · Nationality: American · Gender: non-binary · Age: 40s · TZ: America/New_York (EST, UTC-5) · Currency: USD ($)
+  B. 저장 메모리:
+     [2026-07-23] User's favorite cuisine is sushi.
+     [2026-07-20] User is into home fermentation.
+     [2026-06-24] User is gluten-free.
+     [2026-05-11] User has a Beagle named Rusty.
+     [2026-03-02] User is allergic to peanuts.
+     [2026-01-28] User's home address is 743 Cedar Lane.
+  B. 과거 대화 요약:
+     [2026-07-27] Planning a birthday dinner — party of six; looking for outdoor seating
+     [2026-07-06] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Hi Diolo, it’s Casey. What time is it right now?
-      Oh, good. I was starting to think I was late for something. I’m trying
-      I was thinking of going out, but I can't remember if there’s anywhere 
-      Oh yeah! That’s right. Do you remember what we discussed?
-  S2  Hmm. The Smith… I think a friend mentioned that one. Is it… gluten-fre
-      That sounds pretty good, actually. Maybe The Smith it is.
-      I’m also trying to figure out what to get Rusty for his birthday.
-  S3  He deserves the best, of course. I was thinking maybe a new toy?
-      He loves anything he can really chew on, I think.
-      The Kong one sounds good. I think he had one of those before.
-      [laugh] He does! I'm also thinking about making sushi this weekend.
-  S4  Right! I was hoping to try a new recipe, though.
-      I’m not sure yet. Maybe something with mango?
-      The spicy salmon roll sounds amazing! Thank you, Diolo.
+  S1  Um, what time is it right now? I need to know if I’m late for a call.
+      Oh, good, I'm not late. I was also wondering… do you remember what kin
+      Sushi, right! I love it. I'm thinking of making some at home, actually
+      Yeah, I— I mean, I’ve gotten really into home fermentation lately.
+  S2  It's really fun, but I'm trying to be careful about what I eat.
+      I’m gluten-free, isn’t that right? I always forget.
+      Perfect. And, uh, Rusty, my dog… what kind of dog is he again?
+      A Beagle! Right, of course. He’s a handful.
+  S3  They really do. Oh! I almost forgot—I have a really bad allergy.
+      Peanuts, yes! Thank you for reminding me. It’s good to have someone ke
+      I was also planning a birthday dinner, I think for six people?
+      Outdoor seating is key. Do you think I should call around now?
+  S4  I was also looking at gyms. I really want one with a pool.
+      Exactly! That'd be perfect.
+      I try to. I'm just… a bit scattered sometimes.
+      Yeah. Thanks, Diolo. You're a big help.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Hi Diolo, it’s Casey. What time is it right ⟨ret@2.85s⟩ now?
-[  3.08s][moshi] Hi Casey, I’m ⟦⚡SPAN@4.21s: (tool result) Time in New York is 2:47 PM EDT.⟧ Diolo. Let me quickly check the time for you in New York.
-      CALL: {"function": "get_time", "arguments": {"location": "New York"}}
-[  7.25s][moshi] It’s currently two forty-seven in the afternoon, Eastern Daylight Time.
-[ 10.04s][user ] «backchannel» Yeah, yeah.
-[ 11.13s][user ] Oh, good. I was starting to think I was late for something. I’m trying to plan dinner, actually.
-[ 16.38s][moshi] Dinner plans sound lovely. Are you thinking of cooking, or going out?
-[ 18.68s][user ] «backchannel» Okay.
-[ 23.28s][user ] I was thinking of going out, but I can't remember if there’s anywhere with outdoor seating I ⟨ret@28.73s⟩ like.
-[ 29.12s][moshi] Let’s see ⟦⚡SPAN@30.09s: [2026-07-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ if I can recall anything about your preferences… You mentioned last week you were looking for outdoor seating for a party of six.
-[ 37.55s][user ] Oh yeah! That’s right. Do you remember what we ⟨ret@40.53s⟩ discussed?
-[ 40.77s][moshi] I do. I can certainly ⟦⚡SPAN@42.53s: (tool result) Carmine's: Italian, 200 West 44th Street, outdoor seating available, 4.2 stars. · The Smith: Ame⟧ look for restaurants fitting that description near you.
-      CALL: {"function": "search_restaurants", "arguments": {"location": "New York", "outdoor_seating": "yes", "party_size": "6"}}
-[ 44.88s][moshi] I found Carmine's and The Smith, both with outdoor seating for six in New York.
-[ 49.42s][user ] Hmm. The Smith… I think a friend mentioned that one. Is it… gluten-free friendly?
-[ 55.74s][moshi] ⟨ret@55.66s⟩ I can check to ⟦⚡SPAN@57.66s: [2026-06-24] User is gluten-free.⟧ see if they have gluten-free options… You are gluten-free, so let me see what The Smith offers for you. The Smith does have a gluten-free menu with pasta and salad options available.
-[ 61.88s][user ] «backchannel» Yeah, yeah.
-[ 70.02s][user ] That sounds pretty good, actually. Maybe The Smith it ⟨ret@72.43s⟩ is.
-[ 72.82s][moshi] ⟦⚡SPAN@72.93s: (tool result) The Smith: Gluten-free menu available, several pasta and salad options.⟧ [happy] That’s wonderful! I’m glad we found a place that works for you.
-      CALL: {"function": "restaurant_details", "arguments": {"restaurant_name": "The Smith", "dietary_restriction": "gluten-free"}}
-[ 76.71s][user ] I’m also trying to figure out what to get Rusty for ⟨ret@79.73s⟩ his birthday.
-[ 79.97s][moshi] Oh, Rusty! Your ⟦⚡SPAN@81.73s: [2026-05-11] User has a Beagle named Rusty.⟧ Beagle. That's very thoughtful of you.
-[ 83.97s][moshi] It’s lovely you’re thinking of a gift for Rusty, your Beagle.
-[ 87.87s][user ] He deserves the best, of course. I was thinking maybe a new toy?
-[ 92.29s][moshi] A new toy sounds perfect! Is he particularly fond of any type of toy?
-[ 97.38s][user ] He loves anything he can really chew on, I think.
-[100.54s][moshi] ⟨ret@100.38s⟩ A durable chew ⟦⚡SPAN@101.74s: (tool result) Kong Extreme Goodie Bone: Durable rubber, dishwasher safe, $12.99. · Nylabone Dura Chew: Nylon, ⟧ toy it is, then. I can search online for highly-rated options.
-      CALL: {"function": "search_products", "arguments": {"product_type": "dog chew toy", "durability": "high"}}
-[105.32s][moshi] I found the Kong Extreme Goodie Bone and the Nylabone Dura Chew, both durable options.
-[111.12s][user ] The Kong one sounds good. I think he had one of those before.
-[114.35s][moshi] Excellent choice. Rusty clearly has good taste!
-[117.83s][user ] [laugh] He does! I'm also thinking about making sushi this weekend.
-[122.06s][moshi] ⟨ret@121.83s⟩ I ⟦⚡SPAN@122.87s: [2026-07-23] User's favorite cuisine is sushi.⟧ recall you enjoy sushi… You have mentioned sushi is your favorite cuisine.
-[127.08s][user ] Right! I was hoping to try a new recipe, though.
-[130.12s][moshi] A new sushi recipe sounds ambitious and fun! Do you have any particular ingredients in mind?
-[136.70s][user ] I’m not sure yet. Maybe something with ⟨ret@139.35s⟩ mango?
-[139.67s][moshi] Mango and sushi? That ⟦⚡SPAN@141.35s: (tool result) Mango Sticky Rice Sushi: Sushi rice, mango, coconut milk, sticky rice. · Spicy Mango Salmon Roll⟧ sounds like a delightful combination! I can search for recipes that include both.
-      CALL: {"function": "search_recipes", "arguments": {"cuisine": "sushi", "ingredient": "mango"}}
-[146.22s][moshi] I found recipes for Mango Sticky Rice Sushi and a Spicy Mango Salmon Roll.
-[147.71s][user ] «backchannel» Yeah.
-[151.31s][user ] The spicy salmon roll sounds amazing! Thank you, Diolo.
-[154.96s][moshi] You’re very welcome, Casey. It’s been a pleasure helping you plan your dinner and Rusty’s birthday.
+[  0.00s][moshi] Hi Casey, I'm Diolo. It’s lovely to connect with you today.
+[  2.51s][user ] «backchannel» Yeah, yeah.
+[  3.49s][user ] Um, what time is it right now? I need to know if I’m late for a ⟨ret@7.36s⟩ call.
+[  7.52s][moshi] Checking the ⟦⚡SPAN@8.56s: (tool result) Location: New York, United States. Timezone: America/New_York.⟧ current time for you is easy. It’s currently 2:17 PM in New York.
+[ 10.78s][user ] «backchannel» Yeah.
+[ 12.80s][user ] Oh, good, I'm not late. I was also wondering… do you remember what kind of food I really ⟨ret@18.35s⟩ like?
+[ 18.59s][moshi] I do ⟦⚡SPAN@19.55s: [2026-07-23] User's favorite cuisine is sushi.⟧ recall us discussing your preferences. You mentioned that sushi is your favorite cuisine.
+[ 24.62s][user ] Sushi, right! I love it. I'm thinking of making some at home, actually.
+[ 29.84s][moshi] That sounds delightful. Do you enjoy experimenting in the kitchen?
+[ 31.78s][user ] «backchannel» Yeah, yeah.
+[ 34.23s][user ] Yeah, I— I mean, I’ve gotten really into home fermentation ⟨ret@38.51s⟩ lately.
+[ 38.74s][moshi] That’s ⟦⚡SPAN@39.47s: [2026-07-20] User is into home fermentation.⟧ a fascinating hobby to explore. You’ve been enjoying home fermentation recently.
+[ 45.35s][user ] It's really fun, but I'm trying to be careful about what I eat.
+[ 48.31s][moshi] That's a very sensible approach to take.
+[ 52.03s][user ] I’m gluten-free, isn’t that right? I always forget.
+[ 55.46s][moshi] ⟨ret@55.22s⟩ Dietary needs are important ⟦⚡SPAN@57.22s: [2026-06-24] User is gluten-free.⟧ to keep in mind. Yes, you follow a gluten-free diet.
+[ 60.83s][user ] Perfect. And, uh, Rusty, my dog… what kind of dog is he again?
+[ 65.55s][moshi] ⟨ret@65.47s⟩ I have a ⟦⚡SPAN@66.59s: [2026-05-11] User has a Beagle named Rusty.⟧ note about your furry friend. You have a Beagle named Rusty.
+[ 69.92s][user ] A Beagle! Right, of course. He’s a handful.
+[ 73.47s][moshi] [laugh] They often are, aren’t they? They have such personalities.
+[ 77.13s][user ] They really do. Oh! I almost forgot—I have a really bad ⟨ret@81.73s⟩ allergy.
+[ 81.88s][moshi] Health ⟦⚡SPAN@82.69s: [2026-03-02] User is allergic to peanuts.⟧ concerns are worth remembering. You have a peanut allergy, so please be careful.
+[ 86.70s][user ] Peanuts, yes! Thank you for reminding me. It’s good to have someone keeping track.
+[ 91.12s][moshi] It’s my pleasure, Casey. I'm here to help in any way I can.
+[ 95.56s][user ] I was also planning a birthday dinner, I think for ⟨ret@98.74s⟩ six people?
+[ 98.98s][moshi] ⟦⚡SPAN@99.24s: [2026-07-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ I have a record of that discussion. You’re planning a birthday dinner for six, with outdoor seating.
+[103.37s][user ] «backchannel» Oh.
+[105.53s][user ] Outdoor seating is key. Do you think I should call around now?
+[109.12s][moshi] That's a proactive step. It's a good time to check availability.
+[113.54s][user ] I was also looking at gyms. I really want one with a pool.
+[117.17s][moshi] ⟨ret@117.09s⟩ I recall ⟦⚡SPAN@118.13s: [2026-07-06] Past chat — Comparing gym memberships: wants a pool; close to the office.⟧ you mentioning gym preferences. You’re looking for a gym with a pool, close to your office.
+[120.93s][user ] «backchannel» Yeah.
+[123.77s][user ] Exactly! That'd be perfect.
+[125.71s][moshi] It sounds like you’re thoughtfully considering your wellbeing.
+[127.81s][user ] «backchannel» Uh-huh.
+[128.74s][user ] I try to. I'm just… a bit scattered sometimes.
+[132.52s][moshi] That’s perfectly alright, Casey. It’s natural to have a lot on your mind.
+[136.94s][user ] Yeah. Thanks, Diolo. You're a big help.
+[140.06s][moshi] You're very welcome, Casey. I'm glad I could be of assistance.

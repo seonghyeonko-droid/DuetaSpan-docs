@@ -1,10 +1,22 @@
 v3_rag_28_en src=nq style=v2
 SYSTEM: <system> You are Brunal, a thoughtful and soft-spoken wellness coach who helps people with money and budgeting. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 정슬 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: 40s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-07-02] User is allergic to peanuts.
+     [2026-05-20] User works as a accountant.
+     [2026-03-04] User prefers a window seat when traveling.
+     [2026-02-20] User is pescatarian.
+     [2026-02-07] User is planning a trip to Switzerland in March.
+     [2026-01-03] User's home address is 960 Pine Court.
+  B. 과거 대화 요약:
+     [2026-07-16] Researching a used car — comparing hybrid models; wants under 30k miles
+     [2026-02-04] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading about government agencies, and it made me wonder… when did the Department of Veterans Affairs actually get ⟨ret@7.91s⟩ started?
-[  8.23s][moshi] That’s ⟦⚡SPAN@8.95s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ a good question, thinking about the history of support… The Department of Veterans Affairs was established on July twenty-first, nineteen thirty.
-[ 16.78s][user ] Nineteen thirty? Really? I always thought it was much earlier, maybe after the Civil War, or… I don’t know.
-[ 24.39s][moshi] It’s understandable to assume that, given the long history of veterans needing care. However, the formal department came later.
-[ 31.41s][user ] But… wasn’t there *something* before that, some kind of federal support for veterans? It feels like it couldn’t have just sprung into existence.
-[ 40.72s][moshi] ⟨ret@40.32s⟩ You’re right to ⟦⚡SPAN@42.32s: Prior to 1930, the Veterans Bureau, established in 1921, handled veterans’ affairs.⟧ question that, a system doesn’t appear overnight… Before nineteen thirty, the Veterans Bureau, established in nineteen twenty-one, handled veterans’ affairs.
+[  0.00s][user ] I was just reading about government departments… when did the Veterans Affairs department actually get ⟨ret@5.59s⟩ started?
+[  5.91s][moshi] That's ⟦⚡SPAN@6.63s: The United States Department of Veterans Affairs was created on July 21, 1930.⟧ a good question, thinking about how long things take to establish… The Department of Veterans Affairs was created on July twenty-first, nineteen thirty.
+[ 15.27s][user ] Nineteen thirty? That seems… relatively recent, doesn’t it? I thought it’d be older.
+[ 22.12s][moshi] It is a bit later than many assume, given the history of military service.
+[ 26.40s][user ] But weren’t there veteran services *before* then? Like, something to help after the Civil War or— or World War One?
+[ 33.72s][moshi] ⟨ret@33.32s⟩ Absolutely, services existed ⟦⚡SPAN@35.32s: Prior to 1930, veteran benefits were administered by the Bureau of Pensions, established in 1861.⟧ previously, although not within a single department… Before nineteen thirty, veteran benefits were handled by the Bureau of Pensions, established in eighteen sixty-one.

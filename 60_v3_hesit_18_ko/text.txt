@@ -1,47 +1,49 @@
 v3_hesit_18_ko src=nq style=v1
 SYSTEM: <system> 당신은 진로 선택 및 직장 스트레스에 대해 사람들을 돕는 호기심 많고 공감적인 상담사 Bena입니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 은율 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-07-28] User is into marathon training.
+     [2026-07-11] User works as a chef.
+     [2026-06-14] User is planning a trip to Lisbon in March.
+     [2026-04-22] User is allergic to peanuts.
+     [2026-03-04] User's favorite cuisine is Korean BBQ.
+     [2026-02-05] User's home address is 429 Oak Avenue.
+  B. 과거 대화 요약:
+     [2026-05-15] Comparing gym memberships — wants a pool; close to the office
+     [2026-04-10] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  포메이이에 대해 읽다가 문득 궁금해졌어요… 베수비오 화산은 언제 마지막으로 폭발했는지 궁금합니다.
-      천구백사십사년… 와, 생각보다 훨씬 최근이네요. 규모가 컸나요?
-      삼십 명 미만이라고요? … 놀랍도록 적네요.
-  S2  그렇군요. 음, 폭발하기 전에 어떤 징후가 있나요?
-      그럼, 정말 꼼꼼하게 지켜보고 있는 거군요? 저—계속해서요?
-  S3  황색… 그럼 괜찮은 건가요? 빨간색으로 위험한 건 아니고요?
-      그럼, 근처에 사는 사람들은 걱정하고 있나요?
-      팔십만 명… 정말 많은 사람들이네요.
-  S4  다음 폭발이 얼마나 클지는 알 수 있는 방법이 있나요?
-      그럼 포메이이처럼 될 수도 있고, 더 작을 수도 있다는 건가요?
+  S1  안녕하세요. 폼페이에 대해 읽다가 문득 궁금해졌어요… 음, 베수비오 화산이 마지막으로 폭발한 게 언제였죠?
+      천구백사십사년… 와, 생각보다 최근이네요.
+  S2  스물여덟 번이나요? 정말 많네요. 그럼 아직도 활화산인가요?
+      부석… 수세미질할 때 쓰는 거요? 그게 같은 건가요?
+  S3  천만 명이나… 화산 아래서 사는 사람이 그렇게 많다니. 좀 무섭네요.
+      감시… 그럼 꼼꼼히 보고 있는 거군요? 대피 계획은 있나요?
+  S4  열여덟 일이나요… 시간이 꽤 길었네요. 그때보다 훨씬 많이 배웠겠죠.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 포메이이에 대해 읽다가 문득 궁금해졌어요… 베수비오 화산은 언제 마지막으로 폭발했는지 궁금합니다.
-[  6.28s][moshi] 그 지역을 생각하면 자연스럽게 드는 질문인 것 같아요—정말 강렬한 이미지죠.
-[ 11.58s][moshi] ⟨ret@11.26s⟩ 알아보겠습니다. 역사를 ⟦⚡SPAN@13.26s: Mount Vesuvius last erupted in March of 1944.⟧ 알면 도움이 될 거예요. 베수비오 화산의 가장 최근 폭발은 천구백사십사년 삼월에 일어났습니다.
-[ 20.35s][user ] 천구백사십사년… 와, 생각보다 훨씬 최근이네요. 규모가 컸나요?
-[ 25.18s][moshi] 포메이이의 파괴를 생각하면 규모가 궁금하실 것 같아요.
-[ 29.21s][moshi] ⟨ret@29.05s⟩ 천구백사십사년 폭발의 ⟦⚡SPAN@30.89s: The 1944 eruption caused significant damage to nearby towns and villages, but resulted in fewer than thirty de⟧ 심각성에 대한 정보를 찾아볼 수 있습니다. 천구백사십사년의 폭발은 마을과 마을에 피해를 주었고, 사망자는 삼십 명 미만입니다.
-[ 40.28s][user ] 삼십 명 미만이라고요? … 놀랍도록 적네요.
-[ 43.37s][moshi] 그 산의 잠재력을 생각하면 그렇습니다. 그 이후로 모니터링이 크게 개선되었습니다.
-[ 49.35s][user ] 그렇군요. 음, 폭발하기 전에 어떤 징후가 있나요?
-[ 52.84s][moshi] 네, 물론입니다. 주변 지역 사회의 대비를 위해 그런 징후를 이해하는 것이 중요합니다.
-[ 58.43s][moshi] ⟨ret@58.19s⟩ 베수비오 화산 폭발 ⟦⚡SPAN@60.19s: Increased seismic activity, changes in gas composition, and ground deformation typically precede a Vesuvius er⟧ 전에 관찰되는 일반적인 징후를 알아보겠습니다. 지진 활동 증가, 가스 변화, 지반 변형이 보통 폭발 전에 일어납니다.
-[ 62.15s][user ] «backchannel» 네네.
-[ 68.17s][moshi] 물론, 지속적으로 모니터링하고 있습니다.
-[ 71.46s][user ] 그럼, 정말 꼼꼼하게 지켜보고 있는 거군요? 저—계속해서요?
-[ 75.27s][moshi] 네, 아주 꼼꼼하게요. 역사를 고려할 때, 매우 면밀히 모니터링되고 연구되는 화산입니다.
-[ 81.99s][moshi] ⟨ret@81.77s⟩ 현재 상태를 ⟦⚡SPAN@83.77s: As of November 2023, Vesuvius is currently classified as a yellow alert, indicating normal activity.⟧ 확인해 보는 것도 좋겠습니다. 현재, 이천이십삼년 십일월 기준으로 베수비오 화산은 황색 경보 단계입니다.
-[ 91.77s][user ] 황색… 그럼 괜찮은 건가요? 빨간색으로 위험한 건 아니고요?
-[ 95.86s][moshi] 황색은 정상적인 활동을 나타내지만, 지속적인 모니터링이 계속됩니다. 안심할 수 있지만, 방심해서는 안 됩니다.
-[101.93s][user ] «backchannel» 그러니까요.
-[106.05s][user ] 그럼, 근처에 사는 사람들은 걱정하고 있나요?
-[108.88s][moshi] 활화산 근처에 사는 것은 어느 정도 불안감을 느끼는 것이 당연하며, 많은 사람들이 대피 계획을 가지고 있습니다.
-[115.84s][moshi] ⟨ret@115.70s⟩ 베수비오 화산 지역의 ⟦⚡SPAN@117.70s: Evacuation plans are in place for the approximately 800,000 people living within the Vesuvius hazard zone.⟧ 대피 절차에 대한 정보를 찾아볼 수 있습니다. 위험 지역에 거주하는 약 팔십만 명에 대한 대피 계획이 있습니다.
-[126.46s][user ] 팔십만 명… 정말 많은 사람들이네요.
-[129.19s][moshi] 인구가 밀집된 지역이기 때문에 대비가 매우 중요합니다.
-[133.76s][user ] 다음 폭발이 얼마나 클지는 알 수 있는 방법이 있나요?
-[137.06s][moshi] 정말 중요한 질문입니다. 규모를 예측하는 것은 복잡합니다.
-[142.10s][moshi] ⟨ret@141.71s⟩ 잠재적인 폭발 ⟦⚡SPAN@143.71s: The size of future Vesuvius eruptions is difficult to predict, but historical data suggests both explosive and⟧ 규모에 대해 과학자들이 무엇을 알아낼 수 있는지 알아보겠습니다. 과학자들은 규모를 정확하게 예측할 수 없지만, 폭발적인 사건과 유동적인 사건 모두 가능합니다.
-[150.79s][user ] «backchannel» 맞아요.
-[155.19s][user ] 그럼 포메이이처럼 될 수도 있고, 더 작을 수도 있다는 건가요?
-[158.94s][moshi] 그럴 수 있습니다. 그래서 모니터링과 계획이 모든 사람의 안전을 위해 매우 중요합니다.
+[  0.00s][user ] 안녕하세요. 폼페이에 대해 읽다가 문득 궁금해졌어요… 음, 베수비오 화산이 마지막으로 폭발한 게 언제였죠?
+[  6.84s][moshi] 네, 그런 극적인 사건에 대해 배우신 후에 그런 질문을 하시는 건 당연해요.
+[ 11.55s][moshi] ⟨ret@11.24s⟩ 정확한 날짜를 ⟦⚡SPAN@13.24s: Mount Vesuvius last erupted in March 1944.⟧ 찾아 드릴게요. 화산 폭발은 복잡할 수 있으니까요. 베수비오 화산의 마지막 폭발은 천구백사십사년 삼월에 일어났습니다.
+[ 22.01s][user ] 천구백사십사년… 와, 생각보다 최근이네요.
+[ 25.44s][moshi] 화산과 그 지역의 오랜 역사를 생각하면 그렇습니다.
+[ 29.41s][moshi] ⟨ret@29.26s⟩ 불안감을 ⟦⚡SPAN@30.62s: Vesuvius has erupted approximately twenty-eight times since AD 79.⟧ 줄이기 위해 상황을 제대로 파악하는 게 좋겠어요. 베수비오 화산은 서기 칠십구년 이후로 대략 스물여덟 번 폭발했습니다.
+[ 39.13s][user ] 스물여덟 번이나요? 정말 많네요. 그럼 아직도 활화산인가요?
+[ 42.91s][moshi] 네, 그렇습니다. 활화산으로 간주되며, 끊임없이 감시되고 있습니다.
+[ 48.11s][moshi] ⟨ret@47.96s⟩ 지속적인 감시는 ⟦⚡SPAN@49.96s: Vesuvius is classified as a Plinian volcano, known for explosive eruptions.⟧ 현재 상태를 이해하는 데 매우 중요합니다. 베수비오 화산은 플리니우스형 화산으로, 폭발적인 폭발이 일어나기 쉽습니다.
+[ 51.74s][user ] «backchannel» 네네.
+[ 57.57s][moshi] 그 폭발은 높은 재와 부석 기둥을 특징으로 합니다.
+[ 61.51s][user ] 부석… 수세미질할 때 쓰는 거요? 그게 같은 건가요?
+[ 64.55s][moshi] 하하, 네 맞아요! 그 다공성 암석은 화산 기원이며, 폭발의 부산물입니다.
+[ 71.42s][moshi] ⟨ret@71.27s⟩ 재난과 일상적인 ⟦⚡SPAN@73.27s: The area around Vesuvius is densely populated with over three million people.⟧ 것 사이의 그런 연관성은 흥미롭네요. 베수비오 화산 주변에는 천만 명이 넘는 사람들이 살고 있습니다.
+[ 80.44s][user ] 천만 명이나… 화산 아래서 사는 사람이 그렇게 많다니. 좀 무섭네요.
+[ 85.09s][moshi] 잠재적인 위험을 알고 그렇게 느끼시는 건 당연합니다.
+[ 88.33s][moshi] ⟨ret@88.26s⟩ 그런 감정을 인정하는 ⟦⚡SPAN@90.26s: Scientists are currently monitoring Vesuvius for signs of increased activity.⟧ 것이 건강한 첫걸음입니다. 과학자들은 현재 베수비오 화산의 활동 증가 징후를 감시하고 있습니다.
+[ 97.10s][user ] 감시… 그럼 꼼꼼히 보고 있는 거군요? 대피 계획은 있나요?
+[101.33s][moshi] 네, 있습니다. 지역 당국은 자세한 대피 계획을 마련해 두었습니다.
+[106.48s][moshi] ⟨ret@106.25s⟩ 준비성이 ⟦⚡SPAN@108.25s: The last major eruption before 1944 was in 1631, lasting eighteen days.⟧ 잠재적인 위험에 대처하는 가장 좋은 방법입니다. 천구백사십사년 이전의 마지막 대규모 폭발은 천육백삼십일년에 열여덟 일 동안 지속되었습니다.
+[115.50s][user ] «backchannel» 오.
+[120.02s][user ] 열여덟 일이나요… 시간이 꽤 길었네요. 그때보다 훨씬 많이 배웠겠죠.
+[124.67s][moshi] 네, 그렇습니다. 감시 기술과 대피 전략이 상당히 발전했습니다.

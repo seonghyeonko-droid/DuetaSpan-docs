@@ -1,13 +1,21 @@
 v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Korana, a thoughtful and soft-spoken life coach who helps people with family and relationships. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 우서 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: 40s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-06-21] User has a Poodle named Coco.
+     [2026-04-08] User is into marathon training.
+     [2026-03-20] User is vegan.
+     [2026-02-17] User's home address is 609 Oak Avenue.
+  B. 과거 대화 요약:
+     [2026-06-01] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
+     [2026-05-21] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’ve been researching my family history, and I keep running across the surname “du Plessis”. Do you know anything about where that name comes from?
-[  7.62s][moshi] ⟨ret@7.54s⟩ That’s ⟦⚡SPAN@8.50s: Du Plessis is a French surname, originating from the region of Normandy.⟧ a lovely pursuit, tracing your roots… The name Du Plessis is French in origin, coming from the Normandy region of France.
-[ 14.09s][user ] «backchannel» Mhm.
-[ 16.30s][user ] Oh, Normandy! That's… surprising. I always thought it sounded more… Spanish, maybe?
-[ 21.80s][moshi] It’s understandable why you’d think so, the sound does travel well across languages.
-[ 27.11s][moshi] ⟨ret@26.87s⟩ Let’s ⟦⚡SPAN@27.83s: The name was brought to South Africa by Huguenots in the seventeenth century.⟧ explore its journey further… Huguenots brought the name Du Plessis to South Africa during the seventeenth century.
-[ 34.46s][user ] Huguenots… so it’s a Protestant name? That makes a lot of sense given some of the stories I’ve heard.
-[ 40.37s][moshi] Family stories often hold threads of truth, and that certainly fits here.
-[ 45.17s][moshi] ⟨ret@45.09s⟩ It’s interesting how ⟦⚡SPAN@46.53s: In Afrikaans, the name is often spelled Du Plessis, without the French accent.⟧ history shapes names… The name is commonly spelled Du Plessis in Afrikaans, lacking the French accent.
+[  0.00s][user ] I’ve been researching my family history, and I came across the name Du Plessis. It’s a bit of a mouthful, and I was wondering where it originally comes from?
+[  8.83s][moshi] ⟨ret@8.75s⟩ That’s ⟦⚡SPAN@9.71s: The surname Du Plessis is of French origin, meaning “of Plessis”.⟧ a wonderful question, tracing family names is so rewarding. Du Plessis originates as a locational name, signifying someone from Plessis, a place in France.
+[ 16.95s][user ] «backchannel» Mhm.
+[ 19.66s][user ] Oh, French! That’s interesting. I always assumed it was…well, something else. Was it a common name in ⟨ret@26.35s⟩ France?
+[ 26.75s][moshi] It seems your assumption ⟦⚡SPAN@28.35s: The Plessis family were Norman nobles who followed William the Conqueror to England in 1066.⟧ wasn’t far off, as it did travel. The Plessis family were Norman nobles who came to England with William the Conqueror in ten sixty-six.
+[ 37.18s][user ] So it came to England with the Normans? That explains a lot, actually. Did it stay there, or did it spread further?
+[ 44.63s][moshi] It did spread, eventually reaching South Africa with the Huguenots. They sought religious freedom, and brought their names with them. It’s a testament to resilience, isn’t it?

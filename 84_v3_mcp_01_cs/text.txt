@@ -1,35 +1,44 @@
 v3_mcp_01_cs src=mcp style=v2
 SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 차분하고 공감적인 개인 가이드 Koral입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 예재 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-06-20] User is planning a trip to New Zealand in March.
+     [2026-05-03] User is into birdwatching.
+     [2026-03-11] User's home address is 50 Pine Court.
+     [2026-02-18] User prefers an aisle seat when traveling.
+  B. 과거 대화 요약:
+     [2026-05-06] Researching a used car — comparing hybrid models; wants under 30k miles
+     [2026-02-16] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Apple 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-      좋아, 잘 됐네. 그럼 최신 iPhone 15 Pro Max 256기가 저장 용량 모델의 현재 가격 좀 찾아 줘.
-  S2  음, 그거… 비싸네. 혹시 교환 프로그램 같은 건 없어?
-      내 iPhone 13 Pro를 교환하면 얼마 정도 받을 수 있어?
-  S3  좋아, 그게 좀 낫네. 그럼 iPhone 15 Pro Max를 사고 iPhone 13 Pro를 교환하면 최종 가격은 얼마야?
-      그래도 여전히 비싸네. 지금 진행 중인 할인이나 프로모션 같은 건 있어?
-  S4  무이자 할부라… 실제로 구매를 시작해 줄 수 있어? 교환도 포함해서.
-      정말 고마워.
+  S1  애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
+      그건 좋고, 지원 문서 위치도 보여 줄 수 있어?
+  S2  아이폰 관련 지원 문서만 보여 줄 수 있어?
+      잠깐만, 그 문서들이 사람들이 얼마나 많이 보는지에 따라 순위가 매겨져 있어?
+  S3  사십칠 개의 문서를 다 읽고 싶지는 않아. 가장 흔한 문제들만 알고 싶어.
+      좋아. 그럼 90210 근처에서 내일 Genius Bar 예약 좀 찾아줘.
+  S4  오후 한 시 삼십 분으로 예약해 줘.
+      좋아, 정말 고마워!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Apple 웹사이트 제품 중심으로 자세한 지도를 만들어 ⟨ret@3.70s⟩ 줘.
-[  3.86s][moshi] 네, Apple 웹사이트 ⟦⚡SPAN@5.70s: (tool result) The tavily-map tool found 14 product categories on the Apple website: iPhone, iPad, Mac, Apple W⟧ 지도를 만들어 드릴게요— 그 지도는 아이폰부터 지원 리소스까지 Apple 웹사이트에서 이용 가능한 열네 가지 제품 카테고리를 자세히 보여 드릴 거예요.
-[ 14.27s][user ] 좋아, 잘 됐네. 그럼 최신 iPhone 15 Pro Max 256기가 저장 용량 모델의 현재 가격 좀 찾아 ⟨ret@22.08s⟩ 줘.
-[ 22.40s][moshi] ⟦⚡SPAN@23.20s: (tool result) The Apple website lists the iPhone 15 Pro Max with 256GB storage at $1199.⟧ 알아볼게요— 현재 iPhone 15 Pro Max 256기가 저장 용량 모델은 1199달러에 판매되고 있습니다.
-[ 25.75s][user ] «backchannel» 우와.
-[ 30.72s][user ] 음, 그거… 비싸네. 혹시 교환 프로그램 같은 건 없어?
-[ 35.03s][moshi] Apple에서 교환 프로그램을 제공하고 있습니다, 네.
-[ 38.39s][user ] 내 iPhone 13 Pro를 교환하면 얼마 정도 받을 수 있어?
-[ 42.84s][moshi] «interrupted» 빠르게 교환 가격을 알아봐 드릴게요—
-[ 45.11s][moshi] ⟨ret@44.95s⟩ iPhone 13 ⟦⚡SPAN@46.79s: (tool result) The Apple Trade In tool estimates your iPhone 13 Pro in good condition is worth $300 towards a n⟧ Pro의 상태를 기준으로 Apple에서는 300달러의 교환 가치를 예상하고 있습니다.
-[ 47.19s][user ] «backchannel» 응.
-[ 52.05s][user ] 좋아, 그게 좀 낫네. 그럼 iPhone 15 Pro Max를 사고 iPhone 13 Pro를 교환하면 최종 가격은 ⟨ret@58.90s⟩ 얼마야?
-[ 59.13s][moshi] 최종 ⟦⚡SPAN@60.18s: (tool result) Subtracting the $300 trade-in from the $1199 iPhone 15 Pro Max results in a final price of $899.⟧ 비용을 계산해 드릴게요— 300달러 교환 할인을 적용하면 iPhone 15 Pro Max의 최종 가격은 899달러가 됩니다.
-[ 68.00s][user ] 그래도 여전히 비싸네. 지금 진행 중인 할인이나 프로모션 같은 건 있어?
-[ 73.35s][moshi] 현재 Apple에서는 12개월 무이자 할부 혜택을 제공하고 있습니다.
-[ 77.39s][user ] 무이자 할부라… 실제로 구매를 시작해 줄 수 있어? 교환도 포함해서.
-[ 82.74s][moshi] ⟨ret@82.66s⟩ 물론 구매 ⟦⚡SPAN@84.10s: (tool result) Order confirmed: iPhone 15 Pro Max (256GB) with trade-in of iPhone 13 Pro. Total: $899. Financin⟧ 절차를 시작해 드릴 수 있습니다— iPhone 15 Pro Max 주문이 확정되었으며, 최종 비용은 899달러이고 배송은 12월 27일에 예정되어 있습니다.
-[ 89.47s][user ] «backchannel» 진짜?
-[ 93.96s][user ] 정말 고마워.
-[ 94.95s][moshi] 도와드릴 수 있어서 기쁩니다. 구매에 도움이 되었다니 다행입니다.
+[  0.00s][user ] 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 ⟨ret@3.66s⟩ 줘.
+[  3.82s][moshi] 네, 애플 웹사이트 ⟦⚡SPAN@5.66s: (tool result) The tavily-map tool found 23 product pages on apple.com, including iPhones, Macs, iPads, and App⟧ 지도를 만들어 드릴 수 있습니다… 아이폰, 맥, 아이패드, 애플 워치 등 총 스물세 개의 제품 페이지를 지도로 만들었습니다.
+[  7.85s][user ] «backchannel» 어어.
+[ 13.99s][user ] 그건 좋고, 지원 문서 위치도 보여 줄 수 ⟨ret@17.12s⟩ 있어?
+[ 17.44s][moshi] 지원 문서도 지도에 ⟦⚡SPAN@19.12s: (tool result) The tavily-map tool now shows 112 pages, including 23 product pages and 89 support articles on a⟧ 추가하는 건 좋은 생각입니다… 제품 페이지 스물세 개와 함께 총 여든아홉 개의 지원 문서로 지도를 업데이트했습니다.
+[ 22.55s][user ] «backchannel» 응.
+[ 26.80s][user ] 아이폰 관련 지원 문서만 보여 줄 수 있어?
+[ 29.73s][moshi] ⟨ret@29.65s⟩ 아이폰 관련 ⟦⚡SPAN@30.93s: (tool result) The tavily-map tool filtered to 47 iPhone support articles on apple.com.⟧ 지원 문서에 초점을 맞추면… 지금 지도는 아이폰 관련 지원 문서 사십칠 개를 보여줍니다.
+[ 32.58s][user ] «backchannel» 어.
+[ 36.85s][user ] 잠깐만, 그 문서들이 사람들이 얼마나 많이 보는지에 따라 순위가 매겨져 있어?
+[ 42.30s][moshi] «interrupted» 정말 좋은 질문입니다—
+[ 43.30s][user ] «interrupts_prev» 사십칠 개의 문서를 다 읽고 싶지는 않아. 가장 흔한 문제들만 알고 싶어.
+[ 48.91s][moshi] ⟨ret@48.76s⟩ 순위에 ⟦⚡SPAN@49.88s: (tool result) The tavily-map tool sorted the 47 iPhone support articles by views, showing “iPhone Battery Heal⟧ 대해 물어보신 건 정말 잘 하셨습니다— 가장 많이 조회된 아이폰 지원 문서는 “아이폰 배터리 성능”이며, 문서가 인기순으로 정렬되어 있습니다.
+[ 59.14s][user ] 좋아. 그럼 90210 근처에서 내일 Genius Bar 예약 좀 찾아줘.
+[ 65.03s][moshi] ⟨ret@64.80s⟩ 예약을 잡아 ⟦⚡SPAN@66.08s: (tool result) The Apple Store Beverly Hills has appointments available tomorrow at 10:00 AM, 1:30 PM, and 4:00⟧ 드리겠습니다… 애플 스토어 베벌리 힐스에 내일 오전 열 시, 오후 한 시 삼십 분, 오후 네 시에 예약 가능 시간이 있습니다.
+[ 74.06s][user ] 오후 한 시 삼십 분으로 예약해 줘.
+[ 76.72s][moshi] ⟨ret@76.56s⟩ ⟦⚡SPAN@77.52s: (tool result) Appointment booked at Apple Store Beverly Hills, tomorrow at 1:30 PM, confirmation number is 789⟧ 예약을 확인하고 있습니다— 내일 오후 한 시 삼십 분으로 예약이 확정되었습니다. 확인 번호는 일칠팔구사오육일이삼입니다.
+[ 85.05s][user ] 좋아, 정말 고마워!
+[ 87.82s][moshi] 도와드릴 수 있어서 정말 기쁩니다! 제가 하는 일입니다—

@@ -1,47 +1,49 @@
 v3_hesit_18_en src=nq style=v1
 SYSTEM: <system> You are Bena, a curious and validating counselor who helps people with career choices and work stress. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: 은율 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
+  B. 저장 메모리:
+     [2026-07-28] User is into marathon training.
+     [2026-07-11] User works as a chef.
+     [2026-06-14] User is planning a trip to Lisbon in March.
+     [2026-04-22] User is allergic to peanuts.
+     [2026-03-04] User's favorite cuisine is Korean BBQ.
+     [2026-02-05] User's home address is 429 Oak Avenue.
+  B. 과거 대화 요약:
+     [2026-05-15] Comparing gym memberships — wants a pool; close to the office
+     [2026-04-10] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just reading about Pompeii, and it got me wondering… when did Ve
-      Nineteen forty-four… wow, that’s more recent than I thought. Was it a 
-      Fewer than thirty? That’s… surprisingly low.
-  S2  I guess so. Uh, are there, like, warning signs before it erupts?
-      So, they’re watching it pretty closely then? I— I mean, constantly?
-  S3  Yellow… so that’s okay? Not, like, red and scary?
-      That makes sense. What about the people who live nearby? Are they, uh,
-      Eight hundred thousand… that’s a lot of people.
-  S4  Is there any way to tell how big the next eruption might be?
-      So, it could be like Pompeii again, or something smaller?
+  S1  I was just reading about Pompeii, and it got me thinking… uh, when was
+      Nineteen forty-four… wow, that’s… relatively recent, I guess.
+  S2  Twenty-eight times? That’s… a lot. So, is it still active?
+      Pumice… like, the stuff you use for scrubbing? I— I mean, is that the 
+  S3  Three million… that’s… a lot of people living under a volcano. That’s 
+      Monitoring… so they’re watching it closely then? Is there, like, an ev
+  S4  Eighteen days… that’s a long time. I suppose they've learned a lot sin
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just reading about Pompeii, and it got me wondering… when did Vesuvius last, uh, actually erupt?
-[  6.80s][moshi] That’s a very natural question when thinking about that area—it’s a powerful image.
-[ 10.79s][moshi] ⟨ret@10.50s⟩ Let’s pinpoint that for ⟦⚡SPAN@12.50s: Mount Vesuvius last erupted in March of 1944.⟧ you, as knowing the history can be grounding. Vesuvius’s most recent eruption occurred in March nineteen forty-four.
-[ 18.78s][user ] Nineteen forty-four… wow, that’s more recent than I thought. Was it a big one?
-[ 24.07s][moshi] It’s understandable to wonder about the scale of that event after the devastation of Pompeii.
-[ 28.69s][moshi] ⟨ret@28.45s⟩ I can look ⟦⚡SPAN@29.89s: The 1944 eruption caused significant damage to nearby towns and villages, but resulted in fewer than thirty de⟧ up details on the severity of the nineteen forty-four eruption. The eruption in nineteen forty-four caused damage to towns and villages, with fewer than thirty deaths.
-[ 37.97s][user ] Fewer than thirty? That’s… surprisingly low.
-[ 41.29s][moshi] It is, considering the potential for such a mountain. Monitoring has improved greatly since then.
-[ 46.33s][user ] I guess so. Uh, are there, like, warning signs before it erupts?
-[ 51.06s][moshi] Absolutely. Understanding those signs is key to preparedness for communities nearby.
-[ 55.82s][moshi] ⟨ret@55.59s⟩ Let's ⟦⚡SPAN@56.63s: Increased seismic activity, changes in gas composition, and ground deformation typically precede a Vesuvius er⟧ explore the typical warning signs observed before a Vesuvius eruption. Increased seismic activity, gas changes, and ground deformation usually happen before an eruption.
-[ 59.32s][user ] «backchannel» Yeah.
-[ 65.02s][moshi] These are monitored constantly, of course.
-[ 67.91s][user ] So, they’re watching it pretty closely then? I— I mean, constantly?
-[ 72.04s][moshi] Yes, very closely. It’s a highly monitored and studied volcano, given its history.
-[ 76.71s][moshi] ⟨ret@76.63s⟩ Let’s check on the current ⟦⚡SPAN@78.63s: As of November 2023, Vesuvius is currently classified as a yellow alert, indicating normal activity.⟧ status, as that’s what you’re really asking. Currently, as of November twenty twenty-three, Vesuvius is at a yellow alert level.
-[ 86.21s][user ] Yellow… so that’s okay? Not, like, red and scary?
-[ 90.03s][moshi] Yellow indicates normal activity, but constant monitoring continues. It’s reassuring, but not complacent.
-[ 93.62s][user ] «backchannel» Yeah.
-[ 95.28s][user ] That makes sense. What about the people who live nearby? Are they, uh, worried?
-[100.20s][moshi] It's natural to feel some anxiety living near an active volcano, and many have evacuation plans.
-[105.97s][moshi] ⟨ret@105.57s⟩ I can ⟦⚡SPAN@107.17s: Evacuation plans are in place for the approximately 800,000 people living within the Vesuvius hazard zone.⟧ find information about evacuation procedures for the Vesuvius area. There are evacuation plans for about eight hundred thousand people in the hazard zone.
-[115.29s][user ] Eight hundred thousand… that’s a lot of people.
-[118.05s][moshi] It is a densely populated area, which is why preparedness is so vital.
-[123.42s][user ] Is there any way to tell how big the next eruption might be?
-[127.21s][moshi] That’s a very important question. Predicting the magnitude is complex.
-[130.74s][moshi] ⟨ret@130.51s⟩ Let's explore ⟦⚡SPAN@131.87s: The size of future Vesuvius eruptions is difficult to predict, but historical data suggests both explosive and⟧ what scientists can determine about potential eruption size. Scientists can’t predict size exactly, but both explosive and effusive events are possible.
-[136.63s][user ] «backchannel» Right.
-[139.70s][user ] So, it could be like Pompeii again, or something smaller?
-[143.81s][moshi] It could be either, which is why the monitoring and planning are so crucial for everyone’s safety.
+[  0.00s][user ] I was just reading about Pompeii, and it got me thinking… uh, when was the last time Vesuvius actually erupted?
+[  6.94s][moshi] That’s a natural question after learning about such a dramatic event.
+[  9.80s][moshi] ⟨ret@9.49s⟩ Let’s find a precise ⟦⚡SPAN@11.49s: Mount Vesuvius last erupted in March 1944.⟧ date for you, as eruptions can be complex. The last eruption of Mount Vesuvius occurred in March nineteen forty-four.
+[ 18.25s][user ] Nineteen forty-four… wow, that’s… relatively recent, I guess.
+[ 22.24s][moshi] It is, when you consider the long history of the volcano and the region.
+[ 25.82s][moshi] ⟨ret@25.75s⟩ It's good to put ⟦⚡SPAN@27.75s: Vesuvius has erupted approximately twenty-eight times since AD 79.⟧ things in perspective, to lessen any anxieties. Vesuvius has erupted roughly twenty-eight times since seventy-nine AD.
+[ 33.72s][user ] Twenty-eight times? That’s… a lot. So, is it still active?
+[ 38.81s][moshi] Absolutely. It’s considered an active volcano, and is constantly monitored.
+[ 42.66s][moshi] ⟨ret@42.27s⟩ ⟦⚡SPAN@42.77s: Vesuvius is classified as a Plinian volcano, known for explosive eruptions.⟧ Constant monitoring is key to understanding its current state. Vesuvius is a Plinian volcano, which means it’s prone to explosive eruptions.
+[ 45.66s][user ] «backchannel» Yeah.
+[ 50.51s][moshi] Those eruptions are characterized by high columns of ash and pumice.
+[ 54.23s][user ] Pumice… like, the stuff you use for scrubbing? I— I mean, is that the same stuff?
+[ 59.86s][moshi] [laugh] It is! That porous rock is volcanic in origin, a byproduct of those eruptions.
+[ 65.66s][moshi] ⟨ret@65.61s⟩ That connection between a ⟦⚡SPAN@67.13s: The area around Vesuvius is densely populated with over three million people.⟧ disaster and something everyday is interesting. Over three million people live in the area surrounding Mount Vesuvius.
+[ 72.79s][user ] Three million… that’s… a lot of people living under a volcano. That’s kind of scary.
+[ 78.07s][moshi] It’s understandable to feel that way, knowing the potential risks.
+[ 81.02s][moshi] ⟨ret@80.63s⟩ Acknowledging those ⟦⚡SPAN@81.91s: Scientists are currently monitoring Vesuvius for signs of increased activity.⟧ feelings is a healthy first step. Scientists are currently monitoring Vesuvius for any increasing signs of activity.
+[ 87.68s][user ] Monitoring… so they’re watching it closely then? Is there, like, an evacuation plan?
+[ 93.21s][moshi] There is. Local authorities have detailed evacuation plans in place.
+[ 97.60s][moshi] ⟨ret@97.52s⟩ Preparedness is the best ⟦⚡SPAN@99.36s: The last major eruption before 1944 was in 1631, lasting eighteen days.⟧ way to address potential risks. The last major eruption before nineteen forty-four lasted eighteen days in sixteen thirty-one.
+[103.33s][user ] «backchannel» Nice.
+[106.71s][user ] Eighteen days… that’s a long time. I suppose they've learned a lot since then.
+[111.57s][moshi] They certainly have. Monitoring techniques and evacuation strategies have advanced considerably.

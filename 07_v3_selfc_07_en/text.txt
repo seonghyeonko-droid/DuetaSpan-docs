@@ -1,38 +1,51 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
 SYSTEM: <system> You are Tellar, a upbeat and supportive counselor who helps people with big life transitions. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Rennora · Location: Tokyo, Japan · Nationality: Japanese · Gender: female · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
+  B. 저장 메모리:
+     [2026-05-17] User is planning a trip to Switzerland in March.
+     [2026-03-25] User is allergic to penicillin.
+     [2026-02-05] User has a Siamese cat named Bella.
+     [2026-01-17] User prefers an aisle seat when traveling.
+  B. 과거 대화 요약:
+     [2026-08-02] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+     [2026-07-09] Planning a birthday dinner — party of six; looking for outdoor seating
+     [2026-04-23] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Set up a viewing for me at The Grandview Lofts on June fifteenth.
-      That’s… uh, actually, June sixteenth would work better.
-  S2  Is there parking available at The Grandview Lofts?
-      Okay, and what about nearby restaurants?
-  S3  Sushi Zen sounds good. What's their phone number?
-      Great. I think I’m feeling a bit anxious about this whole moving proce
-  S4  Yeah, I— I mean, I just really don’t want to make the wrong decision.
-      [laugh] It's just… a lot.
+      Oh, actually— June sixteenth would work better.
+  S2  Yes, can you tell me how far it is from City Hall?
+      And what about parking around City Hall? Is it difficult?
+  S3  Are there any coffee shops within walking distance of The Grandview Lo
+      Hmm, Brew & Bites…do they have outdoor seating?
+  S4  That sounds nice. [happy]
+      I think I’m ready to confirm the viewing for June sixteenth.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@4.54s⟩ fifteenth.
-[  4.78s][moshi] Absolutely, ⟦⚡SPAN@5.50s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s get that scheduled for you. Wonderful, I’ve booked a viewing for you on June fifteenth at two PM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 11.63s][user ] That’s… uh, actually, June sixteenth would work better.
-[ 16.24s][moshi] ⟨ret@16.08s⟩ No problem at ⟦⚡SPAN@17.52s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at ten AM.⟧ all, let’s adjust that date for you. Okay, the viewing is now set for June sixteenth at ten AM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 19.96s][user ] «backchannel» Right.
-[ 23.98s][user ] Is there parking available at The Grandview ⟨ret@27.18s⟩ Lofts?
-[ 27.41s][moshi] That’s a practical ⟦⚡SPAN@29.02s: (tool result) The Grandview Lofts offers on-site parking with a fee of ten dollars per hour.⟧ thing to consider beforehand. Yes, they offer on-site parking, ten dollars an hour.
-      CALL: {"function": "Homes_2CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 34.73s][user ] Okay, and what about nearby ⟨ret@37.51s⟩ restaurants?
-[ 37.67s][moshi] Exploring dining options ⟦⚡SPAN@39.11s: (tool result) Three restaurants are near The Grandview Lofts: Bella Italia, Sushi Zen, and The Corner Bistro.⟧ is a smart move. There are three nearby: Bella Italia, Sushi Zen, and The Corner Bistro.
-      CALL: {"function": "Restaurants_2Search", "arguments": {"location": "near The Grandview Lofts", "cuisine": "any"}}
-[ 41.94s][user ] «backchannel» Right.
-[ 45.76s][user ] Sushi Zen sounds good. What's their phone number?
-[ 49.62s][moshi] ⟨ret@49.22s⟩ Let me ⟦⚡SPAN@51.22s: (tool result) Sushi Zen’s phone number is 555-123-4567.⟧ quickly find that for you. Their number is 555-123-4567.
-      CALL: {"function": "Restaurants_2GetInfo", "arguments": {"restaurantName": "Sushi Zen"}}
-[ 55.45s][user ] Great. I think I’m feeling a bit anxious about this whole moving process, though.
-[ 60.60s][moshi] It's completely normal to feel anxious with big changes like moving. It’s a significant life transition, and it’s okay to acknowledge those feelings.
-[ 69.49s][user ] Yeah, I— I mean, I just really don’t want to make the wrong decision.
-[ 74.36s][moshi] That’s a very common concern, and it's good you're recognizing it. We can explore what "wrong" means to you, and what your ideal outcome would be.
-[ 83.75s][user ] [laugh] It's just… a lot.
-[ 86.32s][moshi] It absolutely is a lot, and you're handling it well by talking about it. Taking things one step at a time, like scheduling this viewing, can make it feel more manageable.
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on ⟨ret@3.84s⟩ June fifteenth.
+[  4.07s][moshi] Absolutely, ⟦⚡SPAN@4.80s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:00 PM.⟧ let’s get that scheduled for you. I’ve booked a viewing for you at The Grandview Lofts on June fifteenth at two in the afternoon.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 11.98s][user ] Oh, actually— June sixteenth would work better.
+[ 15.30s][moshi] ⟨ret@15.14s⟩ No problem at ⟦⚡SPAN@16.58s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at 10:00 AM.⟧ all, we can easily adjust that. Wonderful, I’ve rescheduled your viewing for The Grandview Lofts to June sixteenth at ten AM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 20.09s][user ] «backchannel» Right.
+[ 24.33s][moshi] Is there anything else I can help you with regarding this property?
+[ 27.76s][user ] Yes, can you tell me how far it is from City Hall?
+[ 31.48s][moshi] ⟨ret@31.41s⟩ Certainly, let me ⟦⚡SPAN@32.53s: (tool result) The distance from The Grandview Lofts to City Hall is 3.2 miles.⟧ quickly check the distance for you. It's three point two miles from The Grandview Lofts to City Hall.
+      CALL: {"function": "Navigation_2_GetDistance", "arguments": {"start": "The Grandview Lofts", "end": "City Hall"}}
+[ 35.04s][user ] «backchannel» Right.
+[ 37.88s][user ] And what about parking around City Hall? Is it difficult?
+[ 42.19s][moshi] Parking downtown can be tricky, but there are several garages nearby.
+[ 46.38s][user ] Are there any coffee shops within walking distance of The Grandview Lofts?
+[ 51.86s][moshi] ⟨ret@51.46s⟩ That's a great question, ⟦⚡SPAN@53.46s: (tool result) Three coffee shops are within a half-mile of The Grandview Lofts: Brew & Bites, Daily Grind, and⟧ finding a good coffee spot is important. There are three coffee shops close by: Brew & Bites, Daily Grind, and Java Junction.
+      CALL: {"function": "Search_2_FindNearby", "arguments": {"location": "The Grandview Lofts", "query": "coffee shops"}}
+[ 60.11s][user ] Hmm, Brew & Bites…do they have outdoor ⟨ret@64.36s⟩ seating?
+[ 64.52s][moshi] Let's see if ⟦⚡SPAN@65.96s: (tool result) Brew & Bites has a patio with seating for twelve.⟧ Brew & Bites offers outdoor seating. Yes, Brew & Bites has a patio that seats twelve people.
+      CALL: {"function": "Search_2_GetDetails", "arguments": {"name": "Brew & Bites", "attribute": "outdoor seating"}}
+[ 71.55s][user ] That sounds nice. [happy]
+[ 73.08s][moshi] It’s wonderful to hear you’re finding some appealing options! It’s good to think about those little details.
+[ 76.48s][user ] «backchannel» Uh-huh.
+[ 79.42s][user ] I think I’m ready to confirm the viewing for June sixteenth.
+[ 83.50s][moshi] Excellent! I’m glad you’re feeling good about it. I'm here if anything else comes up.

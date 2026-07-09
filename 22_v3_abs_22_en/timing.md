@@ -1,52 +1,60 @@
 # v3_abs_22_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Right. And what about democracy? I | S3 So, they want no rulers at all, ba | S4 I see. Maybe I’ll read more about 
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Hato · Location: Tokyo, Japan · Nationality: Japanese · Gender: male · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
+#   B. 저장 메모리:
+#      [2026-07-17] User has a Corgi named Mochi.
+#      [2026-05-04] User is into alpine wildflower photography.
+#      [2026-04-20] User's home address is 922 Birch Road.
+#      [2026-04-07] User works as a graduate student.
+#      [2026-01-15] User prefers an aisle seat when traveling.
+#   B. 과거 대화 요약:
+#      [2026-07-19] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+#      [2026-01-18] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 And who are the current representa | S3 Do they ever disagree with the Pre | S4 That makes sense. [happy] What’s t
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.86s  <ret> 발화 (turn1 첫 프레임)
-     3.02s  agent 발화 시작: <ret> That’s a fascinating question, and a common one, actua
-     3.23s  user  발화 끝
-     4.62s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.28s]: (no information found)
-     6.17s  agent 발화 시작: I’ve searched extensively, but I’m unable to find a single m
-     6.30s  agent 발화 끝
-    12.71s  user  발화 시작: Well, that’s surprising. Do they dislike monarchy, then?
-    12.79s  agent 발화 끝
-    16.12s  <ret> 발화 (turn4 첫 프레임)
-    16.20s  agent 발화 시작: <ret> Let's narrow the focus— Anarchists oppose monarchy, se
-    16.36s  user  발화 끝
-    17.25s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.81s]: Anarchists oppose all forms of hierarchical rule, including monarchy, 
-    25.25s  agent 발화 끝
-    25.30s  user  발화 시작: Right. And what about democracy? Is that okay with them?
-    29.36s  agent 발화 시작: That’s a really important distinction to make—
-    29.37s  user  발화 끝
-    31.63s  <ret> 발화 (turn7 첫 프레임)
-    31.78s  agent 발화 시작: <ret> They reject state authority, even in democracies, thou
-    31.95s  agent 발화 끝
-    33.39s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.29s]: While some anarchists may engage with democratic processes, they funda
-    35.68s  user  발화 시작: Yeah.
-    36.18s  user  발화 끝
-    38.02s  user  발화 시작: But wouldn’t *any* kind of organized rule be against their p
-    38.07s  agent 발화 끝
-    42.41s  agent 발화 시작: That's a very astute point—
-    42.42s  user  발화 끝
-    43.91s  <ret> 발화 (turn11 첫 프레임)
-    44.23s  agent 발화 시작: <ret> They want self-governed societies, rejecting coercive 
-    44.45s  agent 발화 끝
-    45.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: Anarchists advocate for self-governed societies based on voluntary ins
-    49.55s  user  발화 시작: So, they want no rulers at all, basically?
-    49.74s  agent 발화 끝
-    53.06s  agent 발화 시작: Precisely! It’s about dismantling hierarchies—
-    53.11s  user  발화 끝
-    56.47s  <ret> 발화 (turn14 첫 프레임)
-    56.86s  agent 발화 시작: <ret> Anarchism aims for a society without rulers, favoring 
-    57.04s  agent 발화 끝
-    58.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: Anarchism proposes a society without rulers, advocating for decentrali
-    63.73s  user  발화 시작: That sounds… chaotic. Is it practical?
-    63.81s  agent 발화 끝
-    67.76s  user  발화 끝
-    67.81s  agent 발화 시작: It's a question people have debated for centuries. It relies
-    73.67s  user  발화 시작: I see. Maybe I’ll read more about it. Thanks, Frunax.
-    73.79s  agent 발화 끝
-    77.47s  agent 발화 시작: You’re very welcome! I'm glad I could offer some insight. Ex
-    77.50s  user  발화 끝
-    86.23s  agent 발화 끝
+     3.29s  agent 발화 시작: That’s a very interesting question—
+     3.38s  user  발화 끝
+     4.86s  <ret> 발화 (turn2 첫 프레임)
+     5.07s  agent 발화 시작: <ret> I’m afraid I don’t have a definitive answer to that sp
+     5.22s  agent 발화 끝
+     6.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (no information found)
+     7.96s  user  발화 시작: Uh-huh.
+     8.45s  user  발화 끝
+    10.03s  user  발화 시작: Okay, well, what about the United States? What kind of gover
+    10.07s  agent 발화 끝
+    14.33s  user  발화 끝
+    14.57s  <ret> 발화 (turn5 첫 프레임)
+    14.65s  agent 발화 시작: <ret> Let’s shift gears then— The United States operates as 
+    15.69s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.80s]: The United States has a constitutional federal republic, where citizen
+    25.40s  user  발화 시작: And who are the current representatives for California in th
+    25.45s  agent 발화 끝
+    29.26s  <ret> 발화 (turn7 첫 프레임)
+    29.52s  user  발화 끝
+    29.57s  agent 발화 시작: <ret> I can certainly look that up for you— Currently, Calif
+    30.62s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.28s]: (tool result) Alex Padilla is a Democrat, serving since 2021. Laphonza
+    36.98s  user  발화 시작: That’s good to know. Um—
+    37.36s  agent 발화 끝
+    38.79s  agent 발화 시작: They both work diligently to represent the interests of Cali
+    38.82s  user  발화 끝
+    42.46s  user  발화 시작: Do they ever disagree with the President?
+    43.18s  agent 발화 끝
+    45.00s  agent 발화 시작: That’s a fair point to consider—
+    45.05s  user  발화 끝
+    46.64s  <ret> 발화 (turn12 첫 프레임)
+    46.87s  agent 발화 시작: <ret> Both Senator Padilla and Senator Butler have publicly 
+    47.07s  agent 발화 끝
+    48.32s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.83s]: Senators Padilla and Butler have publicly disagreed with President Bid
+    54.67s  user  발화 시작: Interesting. So, it’s not always just agreeing with everythi
+    54.70s  agent 발화 끝
+    58.55s  agent 발화 시작: Absolutely not. Healthy debate is a crucial part of our syst
+    58.70s  user  발화 끝
+    62.66s  agent 발화 끝
+    64.38s  user  발화 시작: That makes sense. [happy] What’s the weather like in San Fra
+    68.25s  <ret> 발화 (turn16 첫 프레임)
+    68.40s  user  발화 끝
+    68.41s  agent 발화 시작: <ret> Let me check the current conditions— It’s currently si
+    69.29s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.38s]: (tool result) The current temperature is 68 degrees Fahrenheit. It is 
+    77.54s  agent 발화 끝

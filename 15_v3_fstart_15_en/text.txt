@@ -1,45 +1,54 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
 SYSTEM: <system> You are Helion, a upbeat and supportive counselor who helps people with parenting and family time. <system>
+CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+  A. 프로필: Name: Ada · Location: Sydney, Australia · Nationality: Australian · Gender: female · Age: 50s · TZ: Australia/Sydney (AEDT, UTC+11) · Currency: AUD ($)
+  B. 저장 메모리:
+     [2026-08-03] User works as a physical therapist.
+     [2026-07-09] User is into rock climbing.
+     [2026-06-08] User's favorite cuisine is Mexican.
+     [2026-06-02] User is allergic to pollen.
+     [2026-03-19] User is planning a trip to Switzerland in December.
+  B. 과거 대화 요약:
+     [2026-07-11] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
+     [2026-01-08] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What are the latitude and longitude of the Sydney Opera House?
-      And what’s the quickest driving route from there to Bondi Beach?
-      That sounds good. Are there any tolls on that route?
-  S2  Hmm, four seventy… is there a way to avoid the tolls?
-      Nine minutes is—
-  S3  Is parking usually difficult at Bondi?
-      Wow, that's pretty expensive.
-  S4  Okay, the bus sounds good. What time does the next one leave?
-      Perfect. Thanks so much for your help!
+      Okay, and can you find me hotels near that location?
+      Hmm, the Park Hyatt sounds nice, but is it pet-friendly?
+  S2  Oh, that's a shame. What about the Four Seasons?
+      That’s much better! Can you see if they have availability next weekend
+  S3  Perfect. And what’s the cancellation policy?
+      That sounds reasonable. I think I’d like to book that room—
+      Actually, hold on—
+  S4  Could we add breakfast to that reservation?
+      That sounds fantastic, thank you.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  3.74s][moshi] ⟨ret@3.66s⟩ Let's ⟦⚡SPAN@4.78s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ pinpoint that iconic landmark for you— That's negative thirty-three point eight five six eight latitude, and one hundred fifty-one point two one five three longitude.
-[  8.95s][user ] «backchannel» Yeah.
-[ 15.96s][user ] And what’s the quickest driving route from there to Bondi Beach?
-[ 18.91s][moshi] ⟨ret@18.68s⟩ Certainly, I can ⟦⚡SPAN@20.28s: (tool result) The fastest route is via the Cahill Expressway and Cross City Tunnel, taking approximately twent⟧ map out the best route— The drive to Bondi Beach will take about twenty-two minutes using the Cahill Expressway.
-      CALL: {"function": "maps_route", "arguments": {"origin": "Sydney Opera House", "destination": "Bondi Beach", "mode": "driving"}}
-[ 27.10s][user ] That sounds good. Are there any tolls on that route?
-[ 29.56s][moshi] ⟨ret@29.48s⟩ Let me check the ⟦⚡SPAN@31.24s: (tool result) Yes, there is a toll of approximately four dollars and seventy cents on the Cross City Tunnel.⟧ toll information for that route— There’s a toll of four dollars and seventy cents for using the Cross City Tunnel.
-      CALL: {"function": "maps_toll_info", "arguments": {"route": "Cahill Expressway and Cross City Tunnel"}}
-[ 39.31s][user ] Hmm, four seventy… is there a way to avoid the ⟨ret@42.32s⟩ tolls?
-[ 42.56s][moshi] I ⟦⚡SPAN@43.28s: (tool result) Avoiding tolls adds approximately nine minutes to the trip, with a route via New South Head Road⟧ can certainly explore alternative routes— Taking New South Head Road will avoid the tolls, but add about nine minutes to the drive.
-      CALL: {"function": "maps_route", "arguments": {"origin": "Sydney Opera House", "destination": "Bondi Beach", "mode": "driving", "avoid_tolls": "true"}}
-[ 48.01s][user ] «backchannel» Yeah, totally.
-[ 51.63s][user ] Nine minutes is—
-[ 53.01s][user ] Is parking usually difficult at Bondi?
-[ 55.65s][moshi] «interrupted» That’s a good point to consider. Parking at Bondi Beach can be quite challenging, especially during peak hours—
-[ 62.89s][moshi] ⟨ret@62.82s⟩ Right now, parking is moderate, ⟦⚡SPAN@64.82s: (tool result) Bondi Beach parking availability is currently moderate, with an estimated wait time of ten to fi⟧ with a ten to fifteen minute wait.
-[ 64.51s][user ] «backchannel» Yeah.
-[ 67.00s][moshi] ⟨ret@66.92s⟩ I can also check for ⟦⚡SPAN@68.92s: (tool result) There are three parking garages near Bondi Beach, with hourly rates ranging from twenty to thirt⟧ parking garages nearby if you’d prefer— Nearby parking garages cost between twenty and thirty-five dollars an hour.
-      CALL: {"function": "maps_parking", "arguments": {"location": "Bondi Beach"}}
-[ 74.73s][user ] Wow, that's pretty expensive.
-[ 76.51s][moshi] «interrupted» It is, isn't it? Perhaps public transport would be a more economical option—
-[ 81.53s][moshi] ⟨ret@81.14s⟩ The 380 bus is ⟦⚡SPAN@83.14s: (tool result) The 380 bus from Circular Quay to Bondi Beach runs every fifteen minutes and costs approximately⟧ a cheaper option, running every fifteen minutes for two fifty.
-[ 83.02s][user ] «backchannel» Yeah.
-[ 87.61s][user ] Okay, the bus sounds good. What time does the next one ⟨ret@90.42s⟩ leave?
-[ 90.66s][moshi] Let me check ⟦⚡SPAN@92.02s: (tool result) The next 380 bus departs Circular Quay at 10:17 AM.⟧ the bus schedule for you— The next 380 bus leaves at ten seventeen AM.
-      CALL: {"function": "maps_transit", "arguments": {"route": "380", "station": "Circular Quay"}}
-[ 96.29s][user ] Perfect. Thanks so much for your help!
-[ 98.38s][moshi] You’re very welcome! I’m glad I could help you plan your trip to Bondi Beach. [happy] Enjoy the sunshine!
+[  3.23s][moshi] ⟨ret@3.15s⟩ Let's pinpoint ⟦⚡SPAN@4.19s: (tool result) The Sydney Opera House is located at -33.8568 degrees latitude and 151.2153 degrees longitude.⟧ that iconic landmark for you— Its coordinates are negative thirty-three point eight five six eight latitude, and one hundred fifty-one point two one five three longitude.
+[  7.97s][user ] «backchannel» Yeah.
+[ 14.39s][user ] Okay, and can you find me hotels near that location?
+[ 17.21s][moshi] ⟨ret@16.97s⟩ Absolutely, I can ⟦⚡SPAN@18.57s: (tool result) Four Seasons Hotel Sydney is 0.8 miles away, priced at $650 per night. The Park Hyatt Sydney is ⟧ certainly search for nearby hotels— I found two options: the Four Seasons at six hundred fifty dollars, and the Park Hyatt at seven hundred twenty.
+[ 27.82s][user ] Hmm, the Park Hyatt sounds nice, but is it pet-friendly?
+[ 31.20s][moshi] ⟨ret@31.13s⟩ That’s a ⟦⚡SPAN@32.41s: (tool result) The Park Hyatt Sydney does not allow pets.⟧ good detail to check— Unfortunately, the Park Hyatt Sydney does not accept pets.
+[ 39.44s][user ] Oh, that's a shame. What about the Four ⟨ret@42.69s⟩ Seasons?
+[ 43.09s][moshi] ⟦⚡SPAN@43.19s: (tool result) The Four Seasons Hotel Sydney allows pets under ten pounds, with a $100 cleaning fee.⟧ Let me check the pet policy for the Four— The Four Seasons welcomes pets under ten pounds, with a one-hundred-dollar cleaning fee.
+[ 48.26s][user ] «backchannel» Yeah, totally.
+[ 51.97s][user ] That’s much better! Can you see if they have availability next weekend?
+[ 56.66s][moshi] ⟨ret@56.43s⟩ Of ⟦⚡SPAN@57.39s: (tool result) The Four Seasons Hotel Sydney has one room available next weekend, a Deluxe Harbour View room.⟧ course, let me check availability for you— They have a Deluxe Harbour View room available next weekend.
+[ 64.83s][user ] Perfect. And what’s the cancellation policy?
+[ 67.55s][moshi] ⟨ret@67.47s⟩ Let’s find out ⟦⚡SPAN@69.23s: (tool result) Cancellations are permitted up to 72 hours before arrival, with a full refund.⟧ about their cancellation terms— You can cancel up to seventy-two hours before, receiving a full refund.
+[ 70.15s][user ] «backchannel» Mhm.
+[ 75.12s][user ] That sounds reasonable. I think I’d like to book that room—
+[ 78.97s][moshi] ⟨ret@78.82s⟩ Wonderful, I’m happy ⟦⚡SPAN@80.66s: (tool result) Reservation confirmed: Deluxe Harbour View room at Four Seasons Hotel Sydney, next weekend, $650⟧ to help with that— Your room is booked! That’s six hundred fifty, plus one hundred for your pet, confirmation XYL789.
+[ 83.28s][user ] «backchannel» Yeah, yeah.
+[ 88.83s][user ] Actually, hold on—
+[ 90.18s][user ] Could we add breakfast to ⟨ret@91.98s⟩ that reservation?
+[ 92.37s][moshi] Certainly, ⟦⚡SPAN@93.26s: (tool result) Breakfast added to reservation XYL789: $60 per day. Total cost now $710 plus $100 pet fee.⟧ let's add breakfast to your booking— Breakfast is sixty dollars per day, bringing your total to seven hundred ten, plus the pet fee.
+[ 96.26s][user ] «backchannel» Yeah.
+[101.89s][moshi] ⟨ret@101.65s⟩ I’m glad ⟦⚡SPAN@102.77s: (tool result) Reservation XYL789 updated: Deluxe Harbour View room, breakfast included, next weekend, $710 plu⟧ we could customize your stay— Your updated total is seven hundred ten plus the pet fee, and breakfast is included.
+[106.32s][user ] «backchannel» Yeah.
+[108.69s][user ] That sounds fantastic, thank you.
+[111.09s][moshi] You are very welcome! I hope you and your furry friend have a wonderful time in Sydney. It’s lovely when a family can travel together.

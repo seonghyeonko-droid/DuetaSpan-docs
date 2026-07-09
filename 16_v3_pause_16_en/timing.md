@@ -1,56 +1,74 @@
 # v3_pause_16_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 So, I was reading this book… | S2 … I always thought it was just a g | S3 Did Orwell intend it to be about a | S4 I wonder if he would be surprised 
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Andrea · Location: London, United Kingdom · Nationality: British · Gender: non-binary · Age: early 30s · TZ: Europe/London (GMT, UTC+0) · Currency: GBP (£)
+#   B. 저장 메모리:
+#      [2026-08-04] User's home address is 148 Elm Street.
+#      [2026-06-19] User is vegetarian.
+#      [2026-03-14] User is planning a trip to Vietnam in May.
+#      [2026-03-06] User works as a graduate student.
+#      [2026-01-25] User is allergic to pollen.
+#   B. 과거 대화 요약:
+#      [2026-07-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+#      [2026-04-18] Researching a used car — comparing hybrid models; wants under 30k miles
 
-     0.00s  user  발화 시작: So, I was reading this book…
-     2.58s  user  발화 끝
-     3.14s  user  발화 시작: …and it mentioned “Big Brother”.
-     4.92s  agent 발화 시작: That’s a fascinating cultural reference, actually.
-     5.03s  user  발화 끝
-     7.88s  agent 발화 끝
-     7.95s  user  발화 시작: I’ve heard the phrase a lot, like, for surveillance…
-    11.00s  <ret> 발화 (turn4 첫 프레임)
-    11.13s  user  발화 끝
-    11.16s  agent 발화 시작: <ret> Let’s explore the origin of that term. It comes from G
-    12.92s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.14s]: The term "Big Brother" originates from George Orwell's dystopian novel
-    17.52s  user  발화 시작: Yeah, yeah.
-    18.94s  user  발화 끝
-    19.69s  agent 발화 끝
-    20.42s  user  발화 시작: … I always thought it was just a general thing, you know…
-    23.14s  user  발화 끝
-    23.85s  user  발화 시작: …like, a modern invention, but a book? That's interesting.
-    28.89s  agent 발화 시작: It’s quite striking how literature can shape our language.
-    28.89s  user  발화 끝
-    30.08s  user  발화 시작: Mm-hmm.
-    30.52s  user  발화 끝
-    32.17s  agent 발화 끝
-    32.23s  user  발화 시작: Did Orwell intend it to be about actual surveillance, or was
-    37.80s  <ret> 발화 (turn11 첫 프레임)
-    37.96s  agent 발화 시작: <ret> Orwell’s intention is a complex topic. The idea came f
-    38.01s  user  발화 끝
-    38.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.21s]: Orwell stated the concept was inspired by a poster from World War II p
-    42.38s  user  발화 시작: Yeah.
-    42.87s  user  발화 끝
-    47.90s  user  발화 시작: So, it started as a patriotic thing, then turned into someth
-    47.93s  agent 발화 끝
-    52.95s  user  발화 끝
-    53.03s  agent 발화 시작: Exactly—the meaning shifted with the context of his novel.
-    54.35s  user  발화 시작: Mm-hmm.
-    54.85s  user  발화 끝
-    56.30s  user  발화 시작: [laugh] That’s ironic, isn’t it?
-    56.45s  agent 발화 끝
-    60.31s  agent 발화 시작: It is a rather poignant twist, when you consider it.
-    60.47s  user  발화 끝
-    63.27s  agent 발화 끝
-    63.75s  user  발화 시작: I wonder if he would be surprised by how often it’s used now
-    67.72s  <ret> 발화 (turn19 첫 프레임)
-    67.88s  agent 발화 시작: <ret> It's hard to say what Orwell would think today. His no
-    68.06s  user  발화 끝
-    69.48s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.30s]: *Nineteen Eighty-Four* has sold over fifty million copies worldwide si
-    74.52s  user  발화 시작: Mm-hmm.
-    75.24s  user  발화 끝
-    77.37s  user  발화 시작: Wow, fifty million. That’s… a lot of readers.
-    77.42s  agent 발화 끝
-    81.54s  user  발화 끝
-    81.57s  agent 발화 시작: It's certainly had a lasting impact on how we think.
-    84.48s  agent 발화 끝
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, where does t | S2 Wow, nineteen forty-nine. That's e | S3 …then. It makes sense why it’s use | S4 “Doublethink”… I think I’ve heard 
+
+     0.00s  user  발화 시작: I was just wondering, where does the phrase “big brother” ac
+     8.75s  agent 발화 시작: That’s a really interesting question, and a common one, actu
+     8.81s  user  발화 끝
+    14.69s  agent 발화 끝
+    15.01s  user  발화 시작: …it’s used for surveillance, and control, and…
+    18.71s  user  발화 끝
+    18.76s  user  발화 시작: …but I’m not sure how it originated.
+    21.45s  user  발화 끝
+    21.47s  <ret> 발화 (turn4 첫 프레임)
+    21.63s  agent 발화 시작: <ret> Let’s explore that origin for you. The term “big broth
+    22.91s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.45s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
+    28.06s  user  발화 시작: Yeah, yeah.
+    28.88s  user  발화 끝
+    30.21s  agent 발화 끝
+    31.11s  user  발화 시작: Wow, nineteen forty-nine. That's earlier than I expected! So
+    38.33s  agent 발화 시작: Relatively, yes. Though its impact has been quite significan
+    38.43s  user  발화 끝
+    40.64s  user  발화 시작: Mm-hmm.
+    41.28s  user  발화 끝
+    44.49s  agent 발화 끝
+    44.80s  user  발화 시작: I guess so. Is “big brother” a positive thing in the book, o
+    50.37s  <ret> 발화 (turn10 첫 프레임)
+    50.45s  user  발화 끝
+    50.53s  agent 발화 시작: <ret> That’s a crucial detail to understand. In *Nineteen Ei
+    51.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.42s]: <In the novel, Big Brother is the enigmatic dictator of Oceania, repre
+    54.41s  user  발화 시작: Yeah.
+    55.04s  user  발화 끝
+    59.39s  agent 발화 끝
+    59.65s  user  발화 시작: Oh. So definitely not a good guy…
+    63.35s  user  발화 끝
+    63.90s  user  발화 시작: …then. It makes sense why it’s used to criticize things now.
+    68.58s  agent 발화 시작: Precisely. The image of Big Brother has become synonymous wi
+    68.62s  user  발화 끝
+    70.43s  user  발화 시작: Mm-hmm.
+    70.92s  user  발화 끝
+    73.21s  agent 발화 끝
+    73.27s  user  발화 시작: Hmm. I wonder if Orwell intended it to become such a widespr
+    78.73s  agent 발화 시작: It's fascinating to consider how a fictional concept can tak
+    78.88s  user  발화 끝
+    83.30s  user  발화 시작: [laugh] It really is. Is there anything else significant abo
+    83.41s  agent 발화 끝
+    90.50s  <ret> 발화 (turn19 첫 프레임)
+    90.66s  agent 발화 시작: <ret> *Nineteen Eighty-Four* has left a broad legacy. The bo
+    90.86s  user  발화 끝
+    91.86s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.98s]: <The novel introduced concepts like “doublethink” and “thoughtcrime”, 
+    97.20s  user  발화 시작: Mm-hmm.
+    97.70s  user  발화 끝
+   100.03s  agent 발화 끝
+   101.63s  user  발화 시작: “Doublethink”… I think I’ve heard that one before. It’s abou
+   107.71s  agent 발화 시작: That’s exactly right. It describes the ability to accept con
+   107.89s  user  발화 끝
+   110.53s  user  발화 시작: Yeah.
+   111.03s  user  발화 끝
+   115.17s  agent 발화 끝
+   115.22s  user  발화 시작: That’s… unsettling. It’s a bit scary how relevant that seems
+   121.51s  agent 발화 시작: It speaks to a timeless concern about the power of ideology 
+   121.52s  user  발화 끝
+   130.13s  agent 발화 끝

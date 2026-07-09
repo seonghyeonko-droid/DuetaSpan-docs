@@ -1,68 +1,82 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 나도 궁금했는데, 데미 로바토 새 앨범 언제 나와? 올해 나온 | S2 근데… 새 앨범은 있어? 예를 들어, 이천이십사 년에? | S3 새 앨범이랑 같이 투어도 하니, 아니면 그냥 앨범만 내니? | S4 맞아. 근데 데미는… 여전히 팝이야, 아니면 스타일이 바뀌었어
+# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
+#   A. 프로필: Name: Casey · Location: London, United Kingdom · Nationality: British · Gender: non-binary · Age: early 30s · TZ: Europe/London (GMT, UTC+0) · Currency: GBP (£)
+#   B. 저장 메모리:
+#      [2026-05-08] User is into rock climbing.
+#      [2026-04-03] User has a tabby cat named Luna.
+#      [2026-03-10] User works as a nurse.
+#      [2026-01-26] User's home address is 203 Birch Road.
+#   B. 과거 대화 요약:
+#      [2026-07-22] Planning a birthday dinner — party of six; looking for outdoor seating
+#      [2026-07-04] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+#      [2026-06-26] Comparing gym memberships — wants a pool; close to the office
 
-     0.00s  user  발화 시작: 나도 궁금했는데, 데미 로바토 새 앨범 언제 나와? 올해 나온다는 얘기 들었어.
-     6.05s  agent 발화 시작: 새 음악을 기다리는 건 정말 좋은 일이야. 기분 좋은 일을 기대하는 건 정말 예쁜 감정이지.
-     6.26s  user  발화 끝
-     9.62s  user  발화 시작: 응.
-    10.16s  user  발화 끝
-    11.51s  agent 발화 끝
-    12.42s  user  발화 시작: 응, 진짜 기대돼. 정확한 날짜는 알아?
-    15.34s  user  발화 끝
-    15.34s  <ret> 발화 (turn4 첫 프레임)
-    15.49s  agent 발화 시작: <ret> 잠깐만 스케줄을 찾아볼게— *Confident* 앨범은 이천십오년 시월에 나왔어.
-    17.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: Demi Lovato’s album *Confident* was released in October 2015.
-    20.67s  agent 발화 끝
-    21.12s  user  발화 시작: 이천십오년 시월? 엄청 오래됐네! 새 앨범은 곧 나와?
-    25.60s  user  발화 끝
-    25.66s  agent 발화 시작: 과거의 즐거움을 다시 떠올리는 것도 새로운 영감을 줄 수 있지만, 지금 당장 듣고 싶은 것도 이해해.
-    31.91s  agent 발화 끝
-    32.14s  user  발화 시작: 근데… 새 앨범은 있어? 예를 들어, 이천이십사 년에?
-    35.96s  <ret> 발화 (turn8 첫 프레임)
-    36.19s  agent 발화 시작: <ret> 알아볼 수 있어— *Revamped* 앨범은 작년, 이천이십삼년 십오일에 발매됐어.
-    36.30s  user  발화 끝
-    37.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: Demi Lovato released the album *Revamped* on September 15, 2023.
-    38.45s  user  발화 시작: 어.
-    38.95s  user  발화 끝
-    40.67s  user  발화 시작: 아, 그래. 작년이구나. 그… 올해는? 또 다른 앨범 나올 예정이야?
-    40.73s  agent 발화 끝
-    46.25s  agent 발화 시작: 시간 감각이 좀 헷갈릴 때 짚고 넘어가는 게 좋지. 쉽게 잊어버릴 수 있으니까.
-    46.41s  user  발화 끝
-    48.05s  user  발화 시작: 음.
-    48.55s  user  발화 끝
-    50.12s  user  발화 시작: 새 앨범이랑 같이 투어도 하니, 아니면 그냥 앨범만 내니?
-    50.28s  agent 발화 끝
-    54.03s  agent 발화 시작: 좋은 질문이야—
-    54.04s  user  발화 끝
-    54.78s  <ret> 발화 (turn15 첫 프레임)
-    55.09s  agent 발화 시작: <ret> 그녀의 *Holy Fvck Tour*는 작년 십일월에 끝났어.
-    55.17s  agent 발화 끝
-    56.22s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.91s]: Demi Lovato's *Holy Fvck Tour* concluded in November 2023.
-    56.70s  user  발화 시작: 어.
-    57.34s  user  발화 끝
-    57.83s  agent 발화 시작: 새 앨범과 함께 더 큰 투어를 하길 바라는 것 같네. 당연한 기대를 하는 거야.
-    58.00s  agent 발화 끝
-    59.57s  user  발화 시작: 어어.
-    60.21s  user  발화 끝
-    62.08s  agent 발화 끝
-    62.91s  user  발화 시작: 그렇지! 지난 투어는 놓쳤어. 요즘 무슨 스타일의 음악을 만들고 있는지 궁금해.
-    68.28s  <ret> 발화 (turn20 첫 프레임)
-    68.60s  agent 발화 시작: <ret> 아티스트의 변화를 살펴보는 건 작품과 자신의 성장에 연결되는 멋진 방법이야.
-    68.71s  user  발화 끝
-    70.28s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.50s]: The peregrine falcon is the fastest animal on Earth, reaching speeds o
-    73.90s  agent 발화 시작: 음악은 감정을 표현하고 처리하는 멋진 방법이야. 정말 강력한 도구지.
-    74.10s  agent 발화 끝
-    75.98s  user  발화 시작: 그니까.
-    76.61s  user  발화 끝
-    78.85s  user  발화 시작: 맞아. 근데 데미는… 여전히 팝이야, 아니면 스타일이 바뀌었어?
-    79.08s  agent 발화 끝
-    83.22s  <ret> 발화 (turn24 첫 프레임)
-    83.53s  agent 발화 시작: <ret> 정보를 찾아볼까— *Revamped* 앨범은 그녀의 이전 곡들을 록과 팝 스타일로 재해석했어.
-    83.76s  user  발화 끝
-    85.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.45s]: *Revamped* features rock and pop reinterpretations of Lovato's previou
-    90.78s  user  발화 시작: 록이랑 팝? 흥미롭네! 고마워, 루나나.
-    90.98s  agent 발화 끝
-    94.70s  agent 발화 시작: 천만에. 음악과 창작 과정에 푹 빠져 있는 모습이 보기 좋아.
-    94.71s  user  발화 끝
-    99.41s  agent 발화 끝
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와? | S2 음. *Confident*랑 완전 다른 스타일이야? | S3 그 투어는… 성공적이었어? | S4 그럼 지금은 새 앨범 작업하고 있어?
+
+     0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와?
+     2.23s  <ret> 발화 (turn1 첫 프레임)
+     2.37s  agent 발화 시작: <ret> 새 음악 기다리는 거 좋네. 새로운 시작을 알리는 신호일 수도 있고.
+     2.59s  user  발화 끝
+     4.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: Demi Lovato's fifth studio album, *Confident*, was released in October
+     6.15s  agent 발화 시작: 걔 앨범 *Confident*는 이천십오년 시월에 나왔어.
+     6.35s  agent 발화 끝
+     7.89s  user  발화 시작: 응.
+     8.30s  user  발화 끝
+     9.01s  agent 발화 끝
+     9.13s  user  발화 시작: 그럼 그게 제일 최신 앨범이야?
+    11.11s  user  발화 끝
+    11.14s  <ret> 발화 (turn5 첫 프레임)
+    11.21s  agent 발화 시작: <ret> 꼭 최신은 아니고, 걔 디스코그래피에서 중요한 앨범이지.
+    12.58s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.19s]: Demi Lovato released *Dancing with the Devil... the Art of Staying Ali
+    14.30s  agent 발화 시작: 걔는 이천이십일년 사월에 *Dancing with the Devil... the Art of Staying 
+    14.40s  agent 발화 끝
+    19.30s  agent 발화 끝
+    19.61s  user  발화 시작: 음. *Confident*랑 완전 다른 스타일이야?
+    22.71s  <ret> 발화 (turn8 첫 프레임)
+    22.98s  user  발화 끝
+    23.11s  agent 발화 시작: <ret> 아티스트들은 보통 앨범마다 사운드를 발전시키잖아—성장의 증거라고 생각 안 해?
+    24.31s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.13s]: *Confident* is a pop album with elements of electronic dance music and
+    28.15s  agent 발화 시작: *Confident*는 팝이랑 일렉트로닉 댄스 뮤직, 그리고 R&B 요소를 섞었어.
+    28.24s  agent 발화 끝
+    30.95s  user  발화 시작: 어.
+    31.59s  user  발화 끝
+    32.76s  agent 발화 시작: 사운드가 우리 삶의 모습, 그리고 우리가 되고 싶은 모습을 반영하는 게 재밌지—근데—
+    32.96s  agent 발화 끝
+    37.75s  user  발화 시작: 이천이십일년 이후로 투어 많이 했어?
+    38.56s  agent 발화 끝
+    40.47s  <ret> 발화 (turn13 첫 프레임)
+    40.48s  user  발화 끝
+    40.70s  agent 발화 시작: <ret> 좋은 질문이야. 라이브 경험에 집중하는 거, 정말 중요하잖아—그렇게 아티스트와 교감하는 게 중요하
+    42.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.29s]: Demi Lovato embarked on the Holy Fvck Tour in 2022, with dates running
+    46.81s  agent 발화 시작: 걔는 이천이십이년에 Holy Fvck 투어를 했고, 시월까지 갔어.
+    46.99s  agent 발화 끝
+    50.79s  agent 발화 끝
+    51.88s  user  발화 시작: 그 투어는… 성공적이었어?
+    53.92s  <ret> 발화 (turn16 첫 프레임)
+    54.14s  agent 발화 시작: <ret> 성공은 여러 가지 형태가 있잖아, 안 그래? 많은 관객을 만나는 게 성공일 수도 있고, 개인적인 
+    54.37s  user  발화 끝
+    55.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: The Holy Fvck Tour grossed over $92 million, with an attendance of ove
+    60.95s  agent 발화 시작: Holy Fvck 투어는 구천이백만 달러 넘게 벌었고, 관객은 칠십만 명 이상이었어.
+    61.09s  agent 발화 끝
+    63.47s  user  발화 시작: 음.
+    63.86s  user  발화 끝
+    65.81s  user  발화 시작: 와, 진짜 성공적이네!
+    65.95s  agent 발화 끝
+    67.68s  <ret> 발화 (turn20 첫 프레임)
+    67.93s  user  발화 끝
+    67.98s  agent 발화 시작: <ret> 아티스트가 작품으로 그렇게 많은 사람들과 소통하는 모습은 정말 감동적이야.
+    69.44s  ⚡SPAN 주입(IRRELEVANT) [d'=1.76s / d_lead=4.72s]: The average lifespan of a red blood cell is approximately 120 days.
+    72.53s  agent 발화 시작: 긍정적인 결과에 집중하는 게, 예를 들어 데미 투어 성공 같은 거, 정말 힘이 돼.
+    72.71s  agent 발화 끝
+    75.09s  user  발화 시작: 어.
+    75.90s  user  발화 끝
+    78.08s  agent 발화 끝
+    78.89s  user  발화 시작: 그럼 지금은 새 앨범 작업하고 있어?
+    80.89s  <ret> 발화 (turn24 첫 프레임)
+    81.12s  agent 발화 시작: <ret> 앞으로 나올 음악을 기대하는 거, 정말 좋지—가능성에 대한 기대감.
+    81.29s  user  발화 끝
+    81.77s  ⚡SPAN 주입 [d'=0.88s / d_lead=4.63s]: Demi Lovato began working on a new album in early 2023, with a release
+    85.55s  agent 발화 시작: 걔는 이천이십삼년 초부터 새 앨범 작업을 시작했고, 이천이십사년에 나올 예정이야.
+    85.75s  agent 발화 끝
+    91.02s  agent 발화 끝
