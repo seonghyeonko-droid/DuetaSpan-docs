@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-25",
+#       "date": "2026-05-17",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-03-12",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-04-20",
+#       "date": "2025-12-07",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-04-19",
+#       "date": "2025-12-06",
 #       "category": "home",
 #       "text": "User's home address is 411 Maple Drive."
 #     },
 #     {
-#       "date": "2026-02-28",
+#       "date": "2025-09-15",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-01-23",
+#       "date": "2025-06-11",
 #       "category": "work",
 #       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-17",
+#       "date": "2025-06-26",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -60,33 +60,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know anything about Lux Aur | S2 Nineteen seventy? That seems… earl | S3 But wasn’t he. | S4 So he wasn't entirely self-taught,
+# EXAMINER(FDB-v2) 단계: S1 I’m researching Lux Aurunque, and  | S2 Nineteen seventy… so he’s quite a  | S3 Bronze instruments. | S4 Did he ever collaborate with any o
 
-     0.00s  user  발화 시작: Do you know anything about Lux Aurunque? I’ve been reading a
-     4.30s  agent 발화 시작: Lux Aurunque is a fascinating figure, and I’m happy to discu
-     4.31s  user  발화 끝
-     9.26s  user  발화 시작: Yeah, yeah.
-    10.55s  user  발화 끝
-    13.29s  agent 발화 끝
-    13.57s  user  발화 시작: When was he born, exactly? I can't seem to find a reliable d
-    17.56s  <ret> 발화 (turn4 첫 프레임)
-    17.96s  agent 발화 시작: <ret> Let me share what I’ve found— Lux Aurunque was born in
-    18.06s  user  발화 끝
-    18.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.41s]: [source: Wikipedia] Lux Aurunque was born in Rome, Italy, in nineteen 
-    20.95s  user  발화 시작: Uh-huh.
-    21.59s  user  발화 끝
-    23.19s  agent 발화 끝
-    23.22s  user  발화 시작: Nineteen seventy? That seems… early for the kind of music he
-    28.18s  agent 발화 시작: It can be surprising to learn about an artist’s beginnings! 
-    28.31s  user  발화 끝
-    30.45s  user  발화 시작: Yeah, yeah.
-    31.83s  user  발화 끝
-    34.54s  user  발화 시작: But wasn’t he.
-    34.59s  agent 발화 끝
-    35.29s  <ret> 발화 (turn10 첫 프레임)
-    35.52s  agent 발화 시작: <ret> His style blends early electronic music and baroque co
-    35.69s  user  발화 끝
-    36.49s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.67s]: [source: AllMusic] Lux Aurunque’s compositional style blends early ele
-    40.19s  agent 발화 끝
-    41.24s  user  발화 시작: So he wasn't entirely self-taught, then? He uses such comple
-    46.70s  user  발화 끝
+     0.00s  user  발화 시작: I’m researching Lux Aurunque, and I'm a bit stuck on the bas
+     5.05s  <ret> 발화 (turn1 첫 프레임)
+     5.29s  agent 발화 시작: <ret> That’s a good place to start— Lux Aurunque was born in
+     5.47s  user  발화 끝
+     6.25s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.33s]: [source: Wikipedia] Lux Aurunque was born in nineteen seventy.
+     8.06s  user  발화 시작: Yeah, yeah.
+     9.20s  user  발화 끝
+    10.34s  agent 발화 끝
+    10.42s  user  발화 시작: Nineteen seventy… so he’s quite a bit older than I thought! 
+    16.21s  agent 발화 시작: Lux Aurunque was a composer, primarily known for his work wi
+    16.44s  user  발화 끝
+    19.21s  user  발화 시작: Uh-huh.
+    19.66s  user  발화 끝
+    21.39s  agent 발화 끝
+    21.48s  user  발화 시작: Bronze instruments.
+    22.65s  <ret> 발화 (turn7 첫 프레임)
+    22.72s  agent 발화 시작: <ret> Yes, he truly innovated— His compositions prominently 
+    22.90s  user  발화 끝
+    23.61s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: [source: AllMusic] Lux Aurunque’s compositions prominently featured br
+    25.62s  user  발화 시작: Yeah, totally.
+    27.00s  user  발화 끝
+    28.26s  user  발화 시작: Did he ever collaborate with any other well-known musicians?
+    28.27s  agent 발화 끝
+    32.18s  <ret> 발화 (turn10 첫 프레임)
+    32.24s  agent 발화 시작: <ret> He collaborated with Isolde Farrow on “Ephemeral Echoe
+    32.41s  user  발화 끝
+    34.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: [source: Discogs] Lux Aurunque collaborated with Isolde Farrow on the 
+    37.95s  agent 발화 끝

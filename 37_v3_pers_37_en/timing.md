@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
+#       "date": "2026-02-09",
 #       "category": "work",
 #       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-06-02",
+#       "date": "2026-01-06",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-04-04",
+#       "date": "2025-09-20",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-03-15",
+#       "date": "2025-08-17",
 #       "category": "trip",
 #       "text": "User is planning a trip to Vietnam in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-17",
+#       "date": "2026-02-05",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -51,17 +51,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Noah, welcome to Sydney! I’m Hunar, and I help people find t
-     2.61s  user  발화 시작: Mm-hmm.
-     3.24s  user  발화 끝
-     8.94s  user  발화 시작: Hunar… that’s a lovely name. It’s just… a bit overwhelming, 
-     9.04s  agent 발화 끝
-    14.11s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. Change can
-    14.26s  user  발화 끝
-    17.66s  user  발화 시작: Mhm.
-    18.20s  user  발화 끝
-    20.81s  user  발화 시작: I— I mean, it's silly, but just finding good coffee is stres
-    20.97s  agent 발화 끝
-    26.37s  agent 발화 시작: Not silly at all! Those small comforts are important. Perhap
-    26.56s  user  발화 끝
-    36.20s  agent 발화 끝
+     0.00s  agent 발화 시작: Noah, welcome to Sydney. I’m Hunar, and I’m here to help you
+     7.09s  agent 발화 끝
+     7.35s  user  발화 시작: Hunar… that’s a lovely name. It’s just, everything feels so…
+    15.33s  agent 발화 시작: It’s completely natural to feel overwhelmed when a rhythm sh
+    15.41s  user  발화 끝
+    24.90s  user  발화 시작: I— I mean, just finding a good coffee shop feels stressful! 
+    25.39s  agent 발화 끝
+    31.11s  agent 발화 시작: [laugh] That’s a very Sydney problem, actually. It's good to
+    31.12s  user  발화 끝
+    41.44s  agent 발화 끝

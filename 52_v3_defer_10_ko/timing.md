@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-05-07",
 #       "category": "home",
 #       "text": "User's home address is 447 Oak Avenue."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-04-06",
 #       "category": "pet",
 #       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-03-08",
+#       "date": "2026-03-14",
 #       "category": "trip",
 #       "text": "User is planning a trip to Lisbon in October."
 #     },
 #     {
-#       "date": "2026-02-27",
+#       "date": "2026-02-23",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-15",
+#       "date": "2026-02-18",
 #       "category": "work",
 #       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2026-01-28",
+#       "date": "2025-09-16",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-28",
+#       "date": "2025-12-28",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-11",
+#       "date": "2025-12-23",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -66,7 +66,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-09",
+#       "date": "2025-07-31",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -77,15 +77,16 @@
 # }
 
 
-     0.00s  user  발화 시작: 작년 프랑스 휴가 사진 찾아줘. 썸네일 말고.
-     3.57s  <ret> 발화 (turn1 첫 프레임)
-     3.64s  agent 발화 시작: <ret> 네, 알겠습니다. 잠시만 기다려 주세요. 작년 프랑스 휴가 사진 열일곱 장을 찾았습니다.
+     0.00s  user  발화 시작: 프랑스 휴가 사진 찾아줘. 작년 거. 썸네일 말고.
+     3.56s  <ret> 발화 (turn1 첫 프레임)
+     3.64s  agent 발화 시작: <ret> 네, 알겠습니다. 작년 프랑스 휴가 사진이 삼십칠 장 있습니다. 썸네일은 제외했어요.
      3.84s  user  발화 끝
-     5.01s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.51s]: (tool result) 2023년 프랑스 휴가 관련 사진 17장 발견.
-     7.30s  user  발화 시작: 맞아.
-     8.07s  user  발화 끝
-     9.66s  agent 발화 끝
-    12.37s  user  발화 시작: 혹시 에펠탑 사진은 몇 장이나 있어?
-    14.74s  agent 발화 시작: 에펠탑 사진은 총 다섯 장이 있습니다.
-    14.96s  user  발화 끝
-    17.28s  agent 발화 끝
+     4.60s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.18s]: (tool result) Found 37 images matching '프랑스 휴가' from 2023, excluding t
+     7.62s  user  발화 시작: 맞아.
+     8.16s  user  발화 끝
+    10.13s  agent 발화 끝
+    12.86s  user  발화 시작: 그중에 에펠탑 사진은 몇 장이야?
+    14.08s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) 8 images contain '에펠탑'.
+    14.92s  agent 발화 시작: <ret> 에펠탑 사진은 여덟 장이네요.
+    15.12s  user  발화 끝
+    17.09s  agent 발화 끝

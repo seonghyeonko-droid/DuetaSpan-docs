@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-25",
+#       "date": "2026-05-17",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-03-12",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-04-20",
+#       "date": "2025-12-07",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-04-19",
+#       "date": "2025-12-06",
 #       "category": "home",
 #       "text": "User's home address is 411 Maple Drive."
 #     },
 #     {
-#       "date": "2026-02-28",
+#       "date": "2025-09-15",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-01-23",
+#       "date": "2025-06-11",
 #       "category": "work",
 #       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-17",
+#       "date": "2025-06-26",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -61,25 +61,21 @@
 # }
 
 
-     0.00s  user  발화 시작: 럭스 아우룬케 작곡가가 언제 태어났는지 궁금해요.
-     3.56s  user  발화 끝
-     3.66s  <ret> 발화 (turn1 첫 프레임)
-     3.74s  agent 발화 시작: <ret> 럭스 아우룬케는 일구칠공년에 태어났습니다.
-     4.94s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.42s]: [source: Britannica] Lux Aurunque was born in 1970 and is known for hi
-     7.05s  agent 발화 시작: 일구칠공년에 태어났다는 기록이 있습니다. 전자 음악 분야에서 혁신적인 작품으로 알려져 있습니다.
-     7.16s  agent 발화 끝
-    13.39s  agent 발화 끝
-    13.81s  user  발화 시작: 아, 혹시 그분이 어떤 스타일의 음악을 주로 하시는지 알 수 있을까요?
-    17.78s  <ret> 발화 (turn4 첫 프레임)
-    17.93s  agent 발화 시작: <ret> 주변음을 바탕으로 글리치, IDM 리듬을 혼합한 독특한 음향 풍경을 만들어내신다고 합니다.
-    18.16s  user  발화 끝
-    19.06s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.67s]: [source: AllMusic] Lux Aurunque's music blends ambient textures with g
-    21.34s  user  발화 시작: 네.
-    21.88s  user  발화 끝
-    24.30s  <ret> 발화 (turn6 첫 프레임)
-    24.53s  agent 발화 시작: <ret> 그의 음악은 대중적으로 큰 인기를 얻었지는 않았지만, 평론가들 사이에서는 높은 평가를 받고 있습니
-    24.60s  agent 발화 끝
-    26.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: [source: Resident Advisor] While not a mainstream artist, Lux Aurunque
-    30.73s  agent 발화 시작: 주류 음악가라고 할 수는 없지만, 실험적인 사운드 디자인으로 평론가들의 찬사를 받고 있습니다.
-    30.88s  agent 발화 끝
-    36.28s  agent 발화 끝
+     0.00s  user  발화 시작: 룩스 아우룬케 작곡가가 언제 태어났는지 궁금해요.
+     3.66s  user  발화 끝
+     3.79s  <ret> 발화 (turn1 첫 프레임)
+     3.87s  agent 발화 시작: <ret> 룩스 아우룬케에 대해 알아보고 있어요.
+     4.91s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.58s]: [source: AllMusic] Lux Aurunque was born in 1970.
+     5.16s  user  발화 시작: 예.
+     5.84s  user  발화 끝
+     6.46s  agent 발화 끝
+     6.84s  user  발화 시작: 아, 그렇군요. 그럼 그분은 지금 몇 살이신가요?
+     9.74s  user  발화 시작: 혹시 그분이 어떤 장르의 음악을 주로 하시나요?
+     9.78s  agent 발화 시작: 음—
+     9.94s  user  발화 끝
+    10.41s  agent 발화 끝
+    12.17s  <ret> 발화 (turn6 첫 프레임)
+    12.33s  agent 발화 시작: <ret> 아, 네. 룩스 아우룬케는 주로 앰비언트 음악을 하시는 분이에요.
+    12.37s  user  발화 끝
+    13.45s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.86s]: [source: Rate Your Music] Lux Aurunque primarily composes ambient and 
+    17.19s  agent 발화 끝

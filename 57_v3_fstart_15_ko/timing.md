@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-08-03",
+#       "date": "2026-02-01",
 #       "category": "work",
 #       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-07-09",
+#       "date": "2025-09-20",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-06-08",
+#       "date": "2025-09-09",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2026-06-02",
+#       "date": "2025-07-12",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-03-19",
+#       "date": "2025-05-30",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-11",
+#       "date": "2026-06-16",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -53,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-08",
+#       "date": "2025-07-08",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -63,41 +63,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 이탈리아 음식. | S3 혹시 바닷가 근처에 있으면 더 좋을 것 같은데? | S4 고마워.
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 해산물 먹고 싶은데, 분위기 좋은 곳으로! | S3 내일 저녁 일곱 시로 예약해 줘. 두 명. | S4 고마워!
 
      0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
-     3.18s  <ret> 발화 (turn1 첫 프레임)
-     3.25s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다
-     3.37s  user  발화 끝
-     5.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.10s]: (tool result) latitude: -33.8568, longitude: 151.2153
-     7.01s  user  발화 시작: 응.
-     7.55s  user  발화 끝
-    10.35s  agent 발화 끝
-    10.45s  user  발화 시작: 음, 그럼 그 근처에 괜찮은 레스토랑 좀 찾아줄 수 있어?
-    14.70s  user  발화 끝
-    15.04s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 좋아하세요?
-    18.27s  agent 발화 끝
-    19.33s  user  발화 시작: 이탈리아 음식.
-    20.75s  user  발화 끝
-    21.02s  agent 발화 시작: 이탈리아 음식을 선호하시는군요. 근처에 괜찮은 이탈리아 레스토랑을 찾아볼게요.—
-    25.26s  user  발화 시작: 혹시 바닷가 근처에 있으면 더 좋을 것 같은데?
-    26.02s  agent 발화 끝
-    27.79s  <ret> 발화 (turn8 첫 프레임)
-    28.11s  agent 발화 시작: <ret> 벨라 비스타라는 이탈리아 레스토랑이 가장 가까운데, 거리는 영 점 오킬로미터입니다.
-    28.40s  user  발화 끝
-    29.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) restaurant: Bella Vista, cuisine: Italian, distance: 0.5
-    30.02s  user  발화 시작: 와.
-    30.70s  user  발화 끝
-    33.59s  agent 발화 시작: 벨라 비스타의 평점은 사 점 오점이고, 가격대는 중간 정도입니다. 예약이 필요할까요?
-    33.62s  agent 발화 끝
-    40.21s  agent 발화 끝
-    40.31s  user  발화 시작: 네, 두 명으로 예약해 줘. 내일 저녁 일곱시에.
-    44.95s  <ret> 발화 (turn12 첫 프레임)
-    45.10s  agent 발화 시작: <ret> 내일 저녁 일곱시에 벨라 비스타 레스토랑 두 분 예약이 확정되었습니다. 확인 번호는 구만 팔천칠백
-    45.29s  user  발화 끝
-    46.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: (tool result) reservation confirmed at Bella Vista for 2 people, tomor
-    50.50s  user  발화 시작: 어어.
-    51.13s  user  발화 끝
-    53.53s  agent 발화 끝
-    53.89s  user  발화 시작: 고마워.
-    54.71s  user  발화 끝
+     3.65s  <ret> 발화 (turn1 첫 프레임)
+     3.72s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다
+     3.83s  user  발화 끝
+     5.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) latitude: -33.8568, longitude: 151.2153
+     6.87s  user  발화 시작: 응.
+     7.37s  user  발화 끝
+    11.00s  agent 발화 끝
+    11.09s  user  발화 시작: 음, 그 근처에 괜찮은 레스토랑 있어?
+    13.93s  user  발화 끝
+    14.27s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 선호하시나요? 이탈리아, 프랑스, 아니면—
+    18.89s  user  발화 시작: 해산물 먹고 싶은데, 분위기 좋은 곳으로!
+    19.55s  agent 발화 끝
+    21.64s  <ret> 발화 (turn6 첫 프레임)
+    22.03s  agent 발화 시작: <ret> 해산물요? 분위기 좋은 곳이라면 ‘Quay’를 추천해 드립니다.
+    22.08s  user  발화 끝
+    23.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Quay: 4.6 stars, seafood, Upper Level, Overseas Passenge
+    25.87s  agent 발화 끝
+    25.99s  agent 발화 시작: ‘Quay’는 별점 사 점 육, 해산물 전문점이고, 오버시즈 패신저 터미널에 있습니다.
+    28.66s  user  발화 시작: 응.
+    29.16s  user  발화 끝
+    32.15s  <ret> 발화 (turn9 첫 프레임)
+    32.47s  agent 발화 끝
+    32.55s  agent 발화 시작: <ret> 예약해 드릴까요? 혹시 특정 날짜나 시간이 있으신가요?
+    33.99s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.98s]: (tool result) no availability for tonight
+    36.50s  agent 발화 시작: 죄송합니다, 오늘 저녁은 예약이 꽉 찼습니다. 내일은 어떠신가요?
+    36.53s  agent 발화 끝
+    40.92s  user  발화 시작: 내일 저녁 일곱 시로 예약해 줘. 두 명.
+    41.22s  agent 발화 끝
+    44.03s  <ret> 발화 (turn12 첫 프레임)
+    44.19s  agent 발화 시작: <ret> 네, ‘Quay’ 내일 저녁 일곱 시, 두 분 예약 완료되었습니다. 확인 번호는 ZXCV123입니
+    44.28s  user  발화 끝
+    45.87s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.76s]: (tool result) reservation confirmed: Quay, tomorrow 7pm, 2 people, con
+    50.96s  agent 발화 끝
+    51.60s  user  발화 시작: 고마워!
+    52.39s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요.
+    52.42s  user  발화 끝
+    54.97s  agent 발화 끝

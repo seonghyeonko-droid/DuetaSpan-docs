@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-08-02",
+#       "date": "2026-03-27",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-07-22",
+#       "date": "2026-01-29",
 #       "category": "pet",
 #       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-21",
+#       "date": "2025-06-16",
 #       "category": "trip",
 #       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2026-02-20",
+#       "date": "2025-06-01",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-04-07",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-15",
+#       "date": "2026-01-05",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,111 +58,85 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 Uh, under two hundred dollars. | S3 That’s a bit steep. — | S4 Okay, bus 38R. What time does it l
+# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 Oh, actually— are any of those ope | S3 I was thinking of walking. How far | S4 That’s good to know. Is it covered
 
      0.00s  user  발화 시작: What's the price range at Zuni Cafe?
-     2.05s  <ret> 발화 (turn1 첫 프레임)
-     2.29s  agent 발화 시작: <ret> Zuni Cafe is in the moderate price range.
-     2.36s  user  발화 끝
-     3.01s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.14s]: (tool result) Moderate.
-     3.67s  user  발화 시작: Okay.
-     4.16s  user  발화 끝
-     5.33s  user  발화 시작: Okay, good. And what’s their phone number?
-     5.43s  agent 발화 끝
-     6.95s  <ret> 발화 (turn4 첫 프레임)
-     7.18s  agent 발화 시작: <ret> Certainly. Their phone number is four-one-five, five-f
-     7.40s  user  발화 끝
-     7.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.81s]: (tool result) 415-552-2700.
-    13.52s  user  발화 시작: Great. Are they open right now?
-    13.62s  agent 발화 끝
-    15.62s  <ret> 발화 (turn6 첫 프레임)
-    16.01s  user  발화 끝
-    16.01s  agent 발화 시작: <ret> Checking their current hours. Yes, they are open until
-    16.12s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.62s]: (tool result) Open until 10:00 PM.
-    17.99s  user  발화 시작: Yeah.
-    18.48s  user  발화 끝
-    20.87s  agent 발화 끝
-    21.25s  user  발화 시작: Perfect. Can you find me a hotel near there? Something… not 
-    25.98s  agent 발화 시작: Of course. I can search for hotels nearby. What's your budge
-    26.10s  user  발화 끝
-    29.34s  user  발화 시작: Yeah.
-    29.97s  user  발화 끝
-    31.21s  user  발화 시작: Uh, under two hundred dollars.
-    31.30s  agent 발화 끝
-    32.98s  <ret> 발화 (turn12 첫 프레임)
-    33.22s  agent 발화 시작: <ret> Alright, under two hundred dollars. Hotel Nikko San Fr
-    33.29s  user  발화 끝
-    34.10s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.32s]: (tool result) Hotel Nikko San Francisco: $189/night.
-    37.58s  user  발화 시작: Yeah.
-    38.36s  user  발화 끝
-    40.63s  agent 발화 끝
-    41.65s  user  발화 시작: That sounds good. What’s the address?
-    44.51s  <ret> 발화 (turn15 첫 프레임)
-    44.70s  user  발화 끝
-    44.75s  agent 발화 시작: <ret> The address is two-two-two Mason Street, San Francisco
-    46.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: (tool result) 222 Mason Street, San Francisco.
-    48.59s  agent 발화 끝
-    49.55s  user  발화 시작: Is it close to Golden Gate Park?
-    51.74s  agent 발화 시작: It’s about two and a half miles from Golden Gate Park.
-    51.81s  user  발화 끝
-    53.76s  user  발화 시작: Yeah.
-    54.26s  user  발화 끝
-    54.54s  <ret> 발화 (turn19 첫 프레임)
-    54.94s  agent 발화 시작: <ret> That’s a reasonable distance. Would you like direction
-    55.12s  agent 발화 끝
-    55.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.97s]: (tool result) Not applicable.
-    61.98s  agent 발화 끝
-    62.17s  user  발화 시작: Actually, before directions, does Hotel Nikko have parking?
-    66.30s  <ret> 발화 (turn21 첫 프레임)
-    66.70s  agent 발화 시작: <ret> Let’s check the parking availability at Hotel Nikko.
-    66.94s  user  발화 끝
-    67.82s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.43s]: (tool result) Valet parking: $72/night.
-    69.96s  agent 발화 시작: Yes, they offer valet parking for seventy-two dollars per ni
-    70.13s  agent 발화 끝
-    74.45s  agent 발화 끝
-    76.04s  user  발화 시작: That’s a bit steep. —
-    77.26s  user  발화 시작: Are there any cheaper parking options nearby?
-    77.78s  user  발화 끝
-    79.76s  <ret> 발화 (turn25 첫 프레임)
-    80.08s  agent 발화 시작: <ret> Union Square Garage offers parking for thirty dollars 
-    80.27s  user  발화 끝
-    81.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) Union Square Garage: $30/night.
-    83.96s  user  발화 시작: Thirty sounds much better. Can you reserve a spot there for 
-    84.01s  agent 발화 끝
-    88.02s  <ret> 발화 (turn27 첫 프레임)
-    88.10s  agent 발화 시작: <ret> Your parking spot at Union Square Garage is now reserv
-    88.21s  user  발화 끝
-    89.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.86s]: (tool result) Reservation confirmed for tonight.
-    90.56s  user  발화 시작: Yeah.
-    91.05s  user  발화 끝
-    92.78s  user  발화 시작: Wonderful. Now, back to Golden Gate Park... what's the best 
-    92.96s  agent 발화 끝
-    99.70s  <ret> 발화 (turn30 첫 프레임)
-   100.01s  agent 발화 시작: <ret> I can certainly help with that. The number thirty-eigh
-   100.15s  user  발화 끝
-   100.82s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.19s]: (tool result) Bus 38R: 25 minutes.
-   102.67s  user  발화 시작: Right.
-   103.29s  user  발화 끝
-   105.48s  agent 발화 끝
-   105.54s  user  발화 시작: Okay, bus 38R. What time does it leave the hotel?
-   108.46s  <ret> 발화 (turn33 첫 프레임)
-   108.86s  agent 발화 시작: <ret> The next bus leaves at seven-fifteen PM.
-   108.96s  user  발화 끝
-   110.38s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.91s]: (tool result) Next departure: 7:15 PM.
-   111.60s  user  발화 시작: Perfect. And is there anything going on at Golden Gate Park 
-   111.77s  agent 발화 끝
-   115.52s  <ret> 발화 (turn35 첫 프레임)
-   115.76s  agent 발화 시작: <ret> There’s a free concert at seven-thirty PM.
-   115.82s  user  발화 끝
-   116.72s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.96s]: (tool result) Free concert: 7:30 PM.
-   118.72s  agent 발화 끝
-   118.79s  user  발화 시작: A concert? That sounds lovely.
-   121.03s  agent 발화 시작: It does, doesn’t it? Perhaps a relaxing evening is just what
-   121.10s  user  발화 끝
-   122.39s  user  발화 시작: Right.
-   122.88s  user  발화 끝
-   125.68s  user  발화 시작: I think you're right. Thank you, Dar.
-   125.75s  agent 발화 끝
-   127.44s  agent 발화 시작: You’re very welcome. I’m glad I could help plan your evening
-   127.52s  user  발화 끝
-   131.37s  agent 발화 끝
+     2.17s  <ret> 발화 (turn1 첫 프레임)
+     2.41s  agent 발화 시작: <ret> Zuni Cafe is in the moderate price range.
+     2.49s  user  발화 끝
+     3.21s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.23s]: (tool result) Moderate.
+     5.54s  user  발화 시작: And what about Foreign Cinema?
+     5.64s  agent 발화 끝
+     6.98s  <ret> 발화 (turn3 첫 프레임)
+     7.20s  agent 발화 시작: <ret> Foreign Cinema is in the expensive price range.
+     7.42s  user  발화 끝
+     7.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.24s]: (tool result) $$$
+     8.39s  user  발화 시작: Right.
+     9.02s  user  발화 끝
+    10.43s  agent 발화 끝
+    12.16s  user  발화 시작: Okay, good to know. Are there any good Italian places nearby
+    16.11s  <ret> 발화 (turn6 첫 프레임)
+    16.27s  agent 발화 시작: <ret> Tony's Pizza and Sotto Mare are nearby Italian options
+    16.38s  user  발화 끝
+    17.30s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.49s]: (tool result) Tony's Pizza Napoletana, Sotto Mare Oysteria & Seafood.
+    18.31s  user  발화 시작: Yeah.
+    18.94s  user  발화 끝
+    20.75s  agent 발화 끝
+    20.77s  user  발화 시작: Oh, actually— are any of those open late?
+    23.20s  <ret> 발화 (turn9 첫 프레임)
+    23.43s  agent 발화 시작: <ret> Tony's is open until eleven, and Sotto Mare closes at 
+    23.64s  user  발화 끝
+    25.18s  user  발화 시작: Uh-huh.
+    25.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: (tool result) Tony's Pizza Napoletana: 11:00 PM, Sotto Mare Oysteria &
+    25.64s  user  발화 끝
+    28.11s  agent 발화 끝
+    29.99s  user  발화 시작: Perfect. I think I'll try Tony's. Can you make a reservation
+    35.52s  <ret> 발화 (turn12 첫 프레임)
+    35.84s  agent 발화 시작: <ret> Your reservation at Tony’s is confirmed for 9:30 tonig
+    35.92s  user  발화 끝
+    36.56s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.83s]: (tool result) Reservation confirmed for two at 9:30 PM.
+    39.68s  agent 발화 끝
+    39.76s  user  발화 시작: Wonderful. Thanks!
+    41.30s  agent 발화 시작: You’re very welcome. Are you planning to walk or drive to To
+    41.41s  user  발화 끝
+    45.74s  agent 발화 끝
+    45.97s  user  발화 시작: I was thinking of walking. How far is it from here?
+    48.82s  <ret> 발화 (turn16 첫 프레임)
+    49.14s  agent 발화 시작: <ret> It's 0.8 miles, around a sixteen-minute walk.
+    49.35s  user  발화 끝
+    50.26s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.52s]: (tool result) 0.8 miles, approximately 16 minutes.
+    50.33s  user  발화 시작: Really?
+    51.10s  user  발화 끝
+    52.45s  agent 발화 시작: I can start navigation on your phone if you'd like.
+    52.66s  agent 발화 끝
+    55.64s  agent 발화 끝
+    55.95s  user  발화 시작: Yes, please do.
+    57.10s  <ret> 발화 (turn20 첫 프레임)
+    57.49s  agent 발화 시작: <ret> Starting navigation to Tony’s Pizza Napoletana now.
+    57.70s  user  발화 끝
+    58.62s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.02s]: (tool result) Navigation started.
+    61.48s  user  발화 시작: Great. Do they have outdoor seating?
+    61.52s  agent 발화 끝
+    63.64s  <ret> 발화 (turn22 첫 프레임)
+    64.04s  agent 발화 시작: <ret> Let me check if Tony’s has outdoor seating.
+    64.21s  user  발화 끝
+    65.32s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.86s]: (tool result) Yes, outdoor seating is available.
+    66.90s  agent 발화 끝
+    67.64s  user  발화 시작: That’s good to know. Is it covered?
+    69.43s  <ret> 발화 (turn24 첫 프레임)
+    69.82s  agent 발화 시작: <ret> Checking for covered outdoor seating at Tony’s…
+    70.04s  user  발화 끝
+    70.47s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.87s]: (tool result) Partially covered.
+    72.69s  agent 발화 끝
+    72.70s  user  발화 시작: Okay, excellent. And what's the phone number, just in case?
+    75.49s  <ret> 발화 (turn26 첫 프레임)
+    75.65s  agent 발화 시작: <ret> Tony’s phone number is 415-835-9888.
+    75.76s  user  발화 끝
+    77.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) 415-835-9888.
+    77.89s  user  발화 시작: Wow.
+    78.66s  user  발화 끝
+    81.20s  agent 발화 끝
+    81.29s  user  발화 시작: Perfect. Thanks so much for all your help.
+    83.47s  agent 발화 시작: My pleasure. I hope you enjoy your evening at Tony’s. Is the
+    83.56s  user  발화 끝
+    89.16s  agent 발화 끝

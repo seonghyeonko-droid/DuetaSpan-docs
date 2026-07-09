@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-13",
+#       "date": "2026-04-24",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-06-22",
+#       "date": "2026-03-05",
 #       "category": "home",
 #       "text": "User's home address is 530 Elm Street."
 #     },
 #     {
-#       "date": "2026-05-15",
+#       "date": "2025-12-23",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-04-11",
+#       "date": "2025-10-20",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2025-08-12",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-02-06",
+#       "date": "2025-07-04",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-17",
+#       "date": "2025-10-24",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-13",
+#       "date": "2025-06-27",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -69,23 +69,24 @@
 # }
 
 
-     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고에서 이월 십일부터 칠박, 방 세 개 예약해 줘.
-     4.97s  <ret> 발화 (turn1 첫 프레임)
-     5.12s  agent 발화 시작: <ret> 네, 샌디에이고 오션뷰 호텔 방 세 개를 이월 십일부터 칠박으로 예약해 드리겠습니다.
-     5.24s  user  발화 끝
-     6.41s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.14s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego. 3 ro
-    10.07s  agent 발화 시작: 예약이 완료되었습니다. 오션뷰 호텔, 샌디에이고, 이월 십일부터 십칠일까지, 방 세 개, 총 비용은 구백팔십
-    10.26s  agent 발화 끝
-    18.74s  agent 발화 끝
-    18.88s  user  발화 시작: 혹시 취소 정책은 어떻게 돼?
-    21.09s  user  발화 끝
-    21.38s  agent 발화 시작: 취소 정책에 대해서는—
-    22.31s  user  발화 시작: 취소하면 얼마나 환불받을 수 있는지 궁금해.
-    23.12s  agent 발화 끝
-    25.27s  user  발화 끝
-    25.47s  agent 발화 시작: 네, 취소 정책은 예약일 기준 삼일 전까지는 전액 환불이 가능하고, 삼일 이내 취소 시에는 첫날 숙박료만 환
-    30.23s  user  발화 시작: 응.
-    30.77s  user  발화 끝
-    33.92s  agent 발화 시작: 추가적으로, 오션뷰 호텔은 짐 보관 서비스와 무료 와이파이를 제공하고 있습니다. 필요하시면 말씀해 주세요.
-    33.99s  agent 발화 끝
-    41.19s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 동안 객실 세개 예약해 줘.
+     6.06s  <ret> 발화 (turn1 첫 프레임)
+     6.21s  agent 발화 시작: <ret> 네, 알겠습니다. 오션뷰 호텔 샌디에이고, 이월 십일부터 칠박, 객실 세개 맞으신가요?
+     6.26s  user  발화 끝
+     7.50s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.49s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 ro
+    12.55s  agent 발화 시작: 네, 예약이 완료되었습니다. 오션뷰 호텔, 샌디에이고, 이월 십일부터 십칠일까지 객실 세개, 확인 번호는 팔
+    12.70s  agent 발화 끝
+    21.36s  agent 발화 끝
+    21.47s  user  발화 시작: …근데 혹시 그 호텔에 수영장이 있나요?
+    24.24s  user  발화 끝
+    24.59s  agent 발화 시작: 수영장이 있는지—아, 네, 확인해 드리겠습니다. 잠시만 기다려 주세요.
+    26.91s  user  발화 시작: 응.
+    27.26s  user  발화 끝
+    28.77s  <ret> 발화 (turn6 첫 프레임)
+    28.80s  ⚡지연 SPAN 주입(선제발표 직전): [source: Hotels.com] Ocean View Hotel features an outdoor pool, a fitn
+    28.84s  agent 발화 시작: <ret> 잠시만요.
+    28.89s  agent 발화 끝
+    29.27s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.95s]: (no information found)
+    29.79s  agent 발화 시작: <ret> 호텔에 수영장이 있는지 알아봤는데요— 오션뷰 호텔에는 야외 수영장과 피트니스 센터, 그리고 무료 
+    29.79s  agent 발화 끝
+    38.31s  agent 발화 끝

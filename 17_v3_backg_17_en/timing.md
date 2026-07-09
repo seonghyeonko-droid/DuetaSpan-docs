@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
+#       "date": "2026-05-08",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-06-19",
+#       "date": "2026-04-03",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-17",
+#       "date": "2025-08-18",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-01-27",
+#       "date": "2025-08-14",
 #       "category": "work",
 #       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-10",
+#       "date": "2026-01-18",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-26",
+#       "date": "2025-07-10",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,25 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What’s a normal resting heart rate | S2 Oh, okay… but I read somewhere it  | S3 Did you remember to take the chick | S4 So, is there like, a generally *id
+# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate for som | S2 Oh, okay—but I read somewhere it’s | S3 Did you remember to take the trash | S4 So, fifty to one hundred is the wh
 
-     0.00s  user  발화 시작: What’s a normal resting heart rate? I’m just trying to get a
-     4.61s  <ret> 발화 (turn1 첫 프레임)
-     5.01s  agent 발화 시작: <ret> That’s a really good question— For most adults, a norm
-     5.19s  user  발화 끝
-     6.13s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.55s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-    11.82s  agent 발화 끝
-    12.04s  user  발화 시작: Oh, okay… but I read somewhere it should be lower than that?
-    16.39s  <ret> 발화 (turn3 첫 프레임)
-    16.55s  agent 발화 시작: <ret> Well-trained athletes often have a resting heart rate 
-    16.62s  user  발화 끝
-    18.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: [source: American Heart Association] For well-trained athletes, a norm
-    21.36s  agent 발화 끝
-    22.11s  user  발화 시작: Did you remember to take the chicken out of the freezer?
-    24.86s  user  발화 시작: So, is there like, a generally *ideal* range then? I— I mean
-    25.06s  user  발화 끝
-    30.60s  <ret> 발화 (turn6 첫 프레임)
-    30.76s  agent 발화 시작: <ret> Absolutely, there is— For most adults, a healthy heart
-    30.83s  user  발화 끝
-    31.40s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.08s]: [source: National Institutes of Health] A healthy heart rate typically
-    37.61s  agent 발화 끝
+     0.00s  user  발화 시작: What’s a normal heart rate for someone healthy?
+     1.99s  <ret> 발화 (turn1 첫 프레임)
+     2.39s  agent 발화 시작: <ret> That’s a great question to ask about your well-being. 
+     2.58s  user  발화 끝
+     3.19s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.95s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
+     6.53s  user  발화 시작: Yeah, yeah.
+     8.10s  user  발화 끝
+    10.60s  agent 발화 끝
+    12.08s  user  발화 시작: Oh, okay—but I read somewhere it’s lower than that?
+    15.62s  <ret> 발화 (turn4 첫 프레임)
+    15.86s  agent 발화 시작: <ret> It can be—a well-trained athlete often has a lower res
+    15.92s  user  발화 끝
+    16.98s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.34s]: [source: American Heart Association] For most adults, a normal resting
+    20.08s  agent 발화 시작: A normal heart rate can also be between fifty and ninety bea
+    20.20s  agent 발화 끝
+    25.03s  user  발화 시작: Did you remember to take the trash out?
+    25.17s  agent 발화 끝
+    27.31s  user  발화 시작: So, fifty to one hundred is the whole range then?
+    27.43s  user  발화 끝
+    30.68s  user  발화 끝

@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-24",
+#       "date": "2026-03-26",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-07-09",
+#       "date": "2026-02-12",
 #       "category": "hobby",
 #       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-05-28",
+#       "date": "2025-09-24",
 #       "category": "trip",
 #       "text": "User is planning a trip to Iceland in December."
 #     },
 #     {
-#       "date": "2026-03-14",
+#       "date": "2025-07-12",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2025-06-13",
 #       "category": "work",
 #       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
+#       "date": "2026-06-08",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -53,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-23",
+#       "date": "2026-01-24",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -61,7 +61,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-12",
+#       "date": "2025-08-28",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -71,25 +71,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Ellana, do you follow baseball | S2 Wow, that’s recent. I thought it h | S3 Can you believe how much this coff | S4 Maybe you’re right! But tell me, w
+# EXAMINER(FDB-v2) 단계: S1 Hey Ellana, I was just wondering…  | S2 Seriously, Fiers? Of all people? | S3 Sorry about that. So, who was the  | S4 Okay, so Sale and Fiers… that’s a 
 
-     0.00s  user  발화 시작: Hey Ellana, do you follow baseball at all? I was wondering…
-     3.70s  user  발화 끝
-     3.95s  agent 발화 시작: I enjoy a bit of baseball, yes. What’s on your mind?
-     7.24s  agent 발화 끝
-     7.56s  user  발화 시작: Well, it’s kind of a random question, but I was trying to se
-    15.52s  <ret> 발화 (turn3 첫 프레임)
-    15.67s  user  발화 끝
-    15.75s  agent 발화 시작: <ret> That’s a surprisingly specific question! The Oakland A
-    16.56s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.18s]: [source: Wikipedia] The last time the Oakland Athletics were no-hit wa
-    23.16s  agent 발화 끝
-    23.25s  user  발화 시작: Wow, that’s recent. I thought it had been longer.
-    25.62s  user  발화 시작: Can you believe how much this coffee costs these days?
-    25.79s  user  발화 끝
-    28.47s  user  발화 시작: Sorry about that, where were we? Oh right, the A’s.
-    28.67s  user  발화 끝
-    31.55s  agent 발화 시작: It's easy to get sidetracked. Perhaps a consistent sleep sch
-    31.80s  user  발화 끝
-    37.80s  agent 발화 끝
-    38.13s  user  발화 시작: Maybe you’re right! But tell me, who pitched that no-hitter 
-    41.96s  user  발화 끝
+     0.00s  user  발화 시작: Hey Ellana, I was just wondering… when was the last time the
+     6.08s  <ret> 발화 (turn1 첫 프레임)
+     6.47s  agent 발화 시작: <ret> That’s a good question, and a frustrating experience f
+     6.49s  user  발화 끝
+     7.92s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.69s]: [source: baseball-reference.com] The Oakland Athletics were last no-hi
+    15.52s  agent 발화 끝
+    15.75s  user  발화 시작: Wow, that’s… recent. I feel like it’s been longer than that.
+    22.03s  user  발화 시작: Seriously, Fiers? Of all people?
+    22.10s  user  발화 끝
+    24.46s  user  발화 시작: Sorry about that. So, who was the pitcher before Fiers to no
+    24.57s  user  발화 끝
+    29.11s  <ret> 발화 (turn5 첫 프레임)
+    29.19s  user  발화 끝
+    29.32s  agent 발화 시작: <ret> Chris Sale of the Chicago White Sox pitched a no-hitte
+    31.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: [source: MLB.com] Prior to Mike Fiers’ no-hitter in 2018, the last no-
+    35.15s  user  발화 시작: Okay, so Sale and Fiers… that’s a bit of a gap, actually. Th
+    35.25s  agent 발화 끝
+    39.22s  user  발화 끝

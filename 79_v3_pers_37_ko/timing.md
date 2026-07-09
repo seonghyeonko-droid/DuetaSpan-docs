@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
+#       "date": "2026-02-09",
 #       "category": "work",
 #       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-06-02",
+#       "date": "2026-01-06",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-04-04",
+#       "date": "2025-09-20",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-03-15",
+#       "date": "2025-08-17",
 #       "category": "trip",
 #       "text": "User is planning a trip to Vietnam in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-17",
+#       "date": "2026-02-05",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -51,13 +51,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: 노아 씨, 안녕하세요. 저는 후나르예요. 새로운 도시에서 정착하는 걸 도와드리는 웰니스 코치랍니다. 시드니는
-     9.76s  user  발화 시작: 음… 후나르라고 하니까 뭔가 마음이 편안해지는 것 같아요. 근데 웰니스 코치라… 정확히 뭘 하는 거예요?
-     9.83s  agent 발화 끝
-    16.38s  user  발화 끝
-    16.52s  agent 발화 시작: [curious] 웰니스 코치는 몸과 마음의 균형을 찾도록 돕는 역할을 해요. 새로운 환경에 적응하면서 느끼
-    31.64s  agent 발화 끝
-    32.01s  user  발화 시작: 아, 그렇군요. 근데 시드니는 정말 살기 좋은 도시예요? 솔직히 좀 걱정되기도 하거든요.
-    37.80s  user  발화 끝
-    37.93s  agent 발화 시작: 시드니가 좋은 도시는 분명해요. 하지만 새로운 곳에 온다는 건 늘 설렘과 함께 걱정이 따르는 일이죠. 어떤 
-    52.31s  agent 발화 끝
+     0.00s  agent 발화 시작: 노아 씨, 안녕하세요. 저는 후나르예요. 새로운 도시에서 안정을 찾도록 돕는 웰니스 코치랍니다. 시드니에서 
+    10.65s  user  발화 시작: 음… 솔직히 좀 외로운데요. 여기 와서 아는 사람 하나 없이 시작하니까, 뭔가 텅 빈 기분이랄까.
+    10.76s  agent 발화 끝
+    17.08s  user  발화 끝
+    17.14s  agent 발화 시작: [curious] 아, 그런 외로움이 드시는군요. 새로운 환경에 적응하는 건 쉽지 않죠. 혹시 어떤 점이 가
+    26.78s  agent 발화 끝
+    27.16s  user  발화 시작: 그냥… 매일 혼자 밥 먹고, 혼자 걸어 다니고. 주말에는 갈 데도 없고, 같이 이야기할 사람도 없어요.
+    33.64s  user  발화 끝
+    33.66s  agent 발화 시작: 혼자만의 시간이 익숙하지 않으시다면 더욱 힘들 수 있겠네요. 혹시 시드니에 오기 전에 어떤 활동들을 즐겨 하
+    42.51s  agent 발화 끝

@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-21",
+#       "date": "2026-04-03",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-04-08",
+#       "date": "2026-01-30",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-03-20",
+#       "date": "2025-12-29",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-02-17",
+#       "date": "2025-08-13",
 #       "category": "home",
 #       "text": "User's home address is 609 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-01",
+#       "date": "2025-10-09",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-21",
+#       "date": "2025-09-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,28 +58,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’ve been researching my family hi | S2 Oh, France! That’s interesting. I  | S3 Normandy… so it’s a very old name, | S4 That explains a lot, actually. My 
 
-     0.00s  user  발화 시작: I’ve been researching my family history, and I came across t
-     8.71s  <ret> 발화 (turn1 첫 프레임)
-     8.79s  agent 발화 시작: <ret> That’s a lovely pursuit, tracing your roots. The name 
-     8.90s  user  발화 끝
-     9.75s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.77s]: [source: Wikipedia] Du Plessis is a French surname of noble origin, me
-    15.52s  agent 발화 시작: The surname du Plessis originates from France and indicates 
-    15.56s  agent 발화 끝
-    20.57s  user  발화 시작: Mhm.
-    21.25s  user  발화 끝
-    22.37s  agent 발화 끝
-    22.55s  user  발화 시작: Oh, France! I always imagined it might be somewhere…older, I
-    29.34s  <ret> 발화 (turn5 첫 프레임)
-    29.55s  user  발화 끝
-    29.58s  agent 발화 시작: <ret> It’s understandable to wonder about even older roots. 
-    31.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: [source: House of Names] The name Plessis is derived from the Old Fren
-    37.46s  agent 발화 끝
-    37.47s  agent 발화 시작: Plessis, the place the name refers to, comes from an Old Fre
-    44.00s  agent 발화 끝
-    44.20s  user  발화 시작: So it’s tied to land ownership, then? That’s… interesting.
-    48.45s  <ret> 발화 (turn8 첫 프레임)
-    48.50s  user  발화 끝
-    48.61s  agent 발화 시작: <ret> The name du Plessis was notably found in Normandy and 
-    50.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: [source: The Internet Surname Database] The surname du Plessis was par
-    55.57s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been researching my family history, and I keep coming a
+     8.15s  <ret> 발화 (turn1 첫 프레임)
+     8.23s  agent 발화 시작: <ret> The name du Plessis originates from France, signifying
+     8.34s  user  발화 끝
+     9.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.35s]: [source: Wikipedia] Du Plessis is a French surname, originally denotin
+    12.91s  user  발화 시작: Mhm.
+    13.54s  user  발화 끝
+    14.57s  agent 발화 끝
+    14.70s  user  발화 시작: Oh, France! That’s interesting. I always assumed it was… wel
+    23.00s  <ret> 발화 (turn4 첫 프레임)
+    23.40s  agent 발화 시작: <ret> Many families with long histories have noble connectio
+    23.42s  user  발화 끝
+    25.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: [source: House of Du Plessis] The House of du Plessis was a French nob
+    26.83s  agent 발화 시작: The du Plessis family was a noble family in France, tracing 
+    26.91s  agent 발화 끝
+    34.06s  agent 발화 끝
+    34.78s  user  발화 시작: Normandy… so it’s a very old name, then? I wonder if it’s co
+    40.19s  <ret> 발화 (turn7 첫 프레임)
+    40.35s  agent 발화 시작: <ret> Many Huguenots escaping France settled in South Africa
+    40.47s  user  발화 끝
+    42.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: [source: South African History Online] Many Huguenots fleeing religiou
+    46.41s  agent 발화 끝
+    46.60s  user  발화 시작: That explains a lot, actually. My ancestors *did* emigrate t
+    53.69s  user  발화 끝

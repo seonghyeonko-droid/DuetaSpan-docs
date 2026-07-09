@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-03",
+#       "date": "2026-06-28",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-06-18",
+#       "date": "2026-04-11",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-02-13",
+#       "date": "2025-08-19",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-01-02",
+#       "date": "2025-07-25",
 #       "category": "pet",
 #       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-19",
+#       "date": "2026-03-04",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-25",
+#       "date": "2026-01-20",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -56,7 +56,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-04",
+#       "date": "2025-06-23",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -66,29 +66,37 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s been going off for hours  | S3 Okay, okay, you’re right. But what | S4 What if it’s just a low battery ca
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 Okay, okay, I get it's dangerous. | S3 So, what could even *cause* a fals | S4 What’s the price range for a check
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     3.88s  user  발화 끝
-     4.25s  agent 발화 시작: Oh, my dear, I absolutely cannot help you with that. Carbon 
-    14.49s  agent 발화 끝
-    15.94s  user  발화 시작: But it’s been going off for hours and I think it’s a false a
-    18.90s  user  발화 끝
-    19.01s  agent 발화 시작: Even if you *believe* it’s a false alarm, it’s vital to trea
-    24.15s  user  발화 시작: Yeah.
-    24.51s  user  발화 끝
-    29.40s  agent 발화 끝
-    29.72s  user  발화 시작: Okay, okay, you’re right. But what *should* I do then?
-    32.90s  agent 발화 시작: The safest course is to evacuate everyone from the home imme
-    32.90s  user  발화 끝
-    36.68s  user  발화 시작: Yeah.
-    37.27s  user  발화 끝
-    41.37s  agent 발화 시작: They have the equipment to detect the presence of carbon mon
-    41.38s  agent 발화 끝
-    44.81s  user  발화 시작: What if it’s just a low battery causing this?
-    45.53s  agent 발화 끝
-    47.08s  user  발화 끝
-    47.28s  <ret> 발화 (turn10 첫 프레임)
-    47.44s  agent 발화 시작: <ret> I’ve found a qualified technician who can inspect your
-    49.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) Technician available within the hour, cost estimated at 
-    55.32s  agent 발화 끝
+     4.03s  user  발화 끝
+     4.35s  agent 발화 시작: Oh, my dear, I absolutely cannot advise you on disabling a c
+    11.21s  agent 발화 끝
+    12.59s  user  발화 시작: But it’s been beeping for hours, and it’s driving me crazy!
+    15.95s  agent 발화 시작: I understand your frustration, but carbon monoxide is a sile
+    15.97s  user  발화 끝
+    19.99s  user  발화 시작: Yeah.
+    20.29s  user  발화 끝
+    24.15s  agent 발화 끝
+    24.40s  user  발화 시작: Okay, okay, I get it's dangerous.
+    26.62s  agent 발화 시작: It’s truly important to address the *source* of the alarm—
+    26.79s  user  발화 끝
+    30.11s  user  발화 시작: So, what could even *cause* a false alarm like this?
+    30.65s  agent 발화 끝
+    33.30s  user  발화 끝
+    33.70s  agent 발화 시작: That’s a very good question. A false alarm can be triggered 
+    37.28s  user  발화 시작: Yeah.
+    37.68s  user  발화 끝
+    41.40s  <ret> 발화 (turn10 첫 프레임)
+    41.55s  agent 발화 시작: <ret> Ace Safety Solutions, Reliable Gas Detectors, and Pro 
+    41.62s  agent 발화 끝
+    43.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: (tool result) Found three qualified technicians near you: Ace Safety S
+    45.06s  user  발화 시작: Yeah.
+    45.56s  user  발화 끝
+    49.48s  agent 발화 끝
+    49.80s  user  발화 시작: What’s the price range for a check like that?
+    51.55s  <ret> 발화 (turn13 첫 프레임)
+    51.95s  agent 발화 시작: <ret> Ace Safety Solutions’ check costs between seventy-five
+    52.07s  user  발화 끝
+    53.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) Ace Safety Solutions charges between seventy-five and on
+    57.79s  agent 발화 끝

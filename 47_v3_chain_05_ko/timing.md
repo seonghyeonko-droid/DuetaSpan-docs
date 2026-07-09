@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-08-02",
+#       "date": "2026-03-27",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-07-22",
+#       "date": "2026-01-29",
 #       "category": "pet",
 #       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-21",
+#       "date": "2025-06-16",
 #       "category": "trip",
 #       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2026-02-20",
+#       "date": "2025-06-01",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-04-07",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-15",
+#       "date": "2026-01-05",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,103 +58,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 주니 카페 가격대는 어떻게 돼요? | S2 예약해 주세요. 두 명으로, 내일 저녁 일곱시에요. | S3 오분 정도면 괜찮겠네요. | S4 아뇰로티 델 플린 맛있겠네요.
+# EXAMINER(FDB-v2) 단계: S1 주니 카페 가격대는 어떻게 돼요? | S2 길가 주차라… 좀 불편하겠네요. 주변에 다른 주차장도 있나요? | S3 로스트 치킨이 유명하군요. 혹시 예약은 가능한가요? | S4 주니 카페에서 걸어서 갈 수 있는 곳으로요!
 
      0.00s  user  발화 시작: 주니 카페 가격대는 어떻게 돼요?
-     1.80s  <ret> 발화 (turn1 첫 프레임)
-     2.11s  agent 발화 시작: <ret> 주니 카페의 가격대는 다소 높은 편이에요.
-     2.21s  user  발화 끝
-     3.40s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.59s]: (tool result) Price range: $$$
-     4.67s  agent 발화 시작: 가격대가 세 개 달러 표시로 되어 있습니다.
-     4.70s  agent 발화 끝
-     5.60s  user  발화 시작: 맞아요.
-     6.09s  user  발화 끝
-     6.93s  agent 발화 끝
-     6.97s  user  발화 시작: 그럼 근처에 좀 더 저렴한 곳 없을까요?
-     9.36s  agent 발화 시작: 물론입니다. 어떤 종류의 음식을 찾으세요?
-     9.41s  user  발화 끝
-    11.87s  user  발화 시작: 파스타요.
-    11.94s  agent 발화 끝
-    12.50s  user  발화 끝
-    12.54s  <ret> 발화 (turn7 첫 프레임)
-    12.69s  agent 발화 시작: <ret> 파스타를 찾으시는군요. 피오렐라와 토니 피자 나폴레타나가 가까운 파스타집입니다. 피오렐라는 중간 
-    13.18s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.25s]: (tool result) Restaurants serving pasta near Zuni Cafe: Fiorella, $$; 
-    22.66s  agent 발화 끝
-    24.02s  user  발화 시작: 피오렐라 메뉴 좀 알려줄 수 있어요?
-    26.08s  <ret> 발화 (turn9 첫 프레임)
-    26.14s  agent 발화 시작: <ret> 카초 에 페페는 이십이달러, 스파게티 알레 봉골레는 이십팔달러, 마르게리타 피자는 십팔달러입니다.
-    26.15s  user  발화 끝
-    28.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) Fiorella menu highlights: Cacio e Pepe $22, Spaghetti al
-    29.63s  user  발화 시작: 정말요?
-    30.45s  user  발화 끝
-    33.55s  agent 발화 끝
-    34.07s  user  발화 시작: 스파게티 알레 봉골레 맛있을까요?
-    36.63s  agent 발화 시작: 평이 아주 좋은 메뉴입니다. 많은 분들이 추천하시더라고요.
-    36.66s  user  발화 끝
-    38.91s  user  발화 시작: 네.
-    39.41s  user  발화 끝
-    40.21s  agent 발화 시작: 다른 메뉴도 궁금하신가요, 아니면 바로 예약해 드릴까요?
-    40.38s  agent 발화 끝
-    41.48s  user  발화 시작: 네네.
-    42.11s  user  발화 끝
-    43.68s  agent 발화 끝
-    43.85s  user  발화 시작: 예약해 주세요. 두 명으로, 내일 저녁 일곱시에요.
-    47.59s  <ret> 발화 (turn17 첫 프레임)
-    47.66s  agent 발화 시작: <ret> 두 분이시군요. 피오렐라에 내일 저녁 일곱시에 두 분 예약이 완료되었습니다. 확인 번호는 팔 칠 
-    47.68s  user  발화 끝
-    48.39s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.04s]: (tool result) Reservation confirmed at Fiorella for 2 people tomorrow 
-    56.07s  user  발화 시작: 확인 번호 다시 한 번만 말해 줄 수 있을까요?
-    56.51s  agent 발화 끝
-    58.14s  user  발화 끝
-    58.20s  agent 발화 시작: 네, 확인 번호는 팔 칠 육 오 사번입니다.
-    61.15s  agent 발화 끝
-    62.09s  user  발화 시작: 혹시 주차는 어떻게 해야 하나요?
-    63.83s  <ret> 발화 (turn21 첫 프레임)
-    63.89s  user  발화 끝
-    63.90s  agent 발화 시작: <ret> 길가 주차는 제한적이고, 이천삼백 폴크 거리에 유료 주차장이 있습니다. 시간당 팔달러입니다.
-    65.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) Parking near Fiorella: Street parking (limited), paid lo
-    70.85s  user  발화 시작: 유료 주차장까지 얼마나 걸릴까요?
-    70.94s  agent 발화 끝
-    72.77s  agent 발화 시작: 피오렐라에서 유료 주차장까지 도보로 약 오분 정도 걸립니다.
-    72.92s  user  발화 끝
-    76.70s  agent 발화 끝
-    77.20s  user  발화 시작: 오분 정도면 괜찮겠네요.
-    78.85s  agent 발화 시작: 그럼 내일 저녁 일곱시에 피오렐라에서 뵙겠습니다. 즐거운 시간 보내세요.
-    78.95s  user  발화 끝
-    83.15s  agent 발화 끝
-    83.66s  user  발화 시작: 잠시만요.
-    84.09s  user  발화 시작: 혹시 피오렐라 말고 다른 이탈리아 식당은 없을까요? 분위기가 좀 더 조용한 곳으로요.
-    84.34s  agent 발화 시작: 네? —
-    84.43s  user  발화 끝
-    84.97s  agent 발화 끝
-    89.76s  <ret> 발화 (turn29 첫 프레임)
-    90.06s  agent 발화 시작: <ret> 세븐 힐스와 SPQR이 좀 더 조용한 이탈리아 식당입니다. 세븐 힐스는 중간 가격대, SPQR은 
-    90.11s  user  발화 끝
-    91.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) Quieter Italian restaurants near Zuni Cafe: Seven Hills,
-    97.46s  user  발화 시작: 세븐 힐스는 어떤 메뉴가 유명해요?
-    97.89s  agent 발화 끝
-   100.31s  <ret> 발화 (turn31 첫 프레임)
-   100.37s  agent 발화 시작: <ret> 아뇰로티 델 플린은 이십육달러, 탈리아텔레 볼로네제는 이십사달러입니다.
-   100.64s  user  발화 끝
-   101.67s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.00s]: (tool result) Seven Hills signature dishes: Agnolotti del Plin $26, Ta
-   105.37s  agent 발화 끝
-   105.55s  user  발화 시작: 아뇰로티 델 플린 맛있겠네요.
-   107.81s  user  발화 끝
-   107.88s  agent 발화 시작: 네, 많은 분들이 맛있다고 말씀하십니다.
-   110.74s  agent 발화 끝
-   110.81s  user  발화 시작: 그럼 세븐 힐스로 예약해 주세요. 내일 저녁 일곱시에 두 명이요.
-   114.27s  <ret> 발화 (turn35 첫 프레임)
-   114.58s  agent 발화 시작: <ret> 세븐 힐스로 변경하시겠군요. 세븐 힐스에 내일 저녁 일곱시에 두 분 예약이 완료되었습니다. 확인 
-   114.64s  user  발화 끝
-   115.47s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.41s]: (tool result) Reservation confirmed at Seven Hills for 2 people tomorr
-   118.20s  user  발화 시작: 정말요?
-   118.93s  user  발화 끝
-   123.20s  user  발화 시작: 확인 번호는요?
-   123.48s  agent 발화 끝
-   124.28s  agent 발화 시작: 확인 번호는 구 팔 칠 육 오번입니다.
-   124.44s  user  발화 끝
-   127.10s  agent 발화 끝
-   127.21s  user  발화 시작: 감사합니다.
-   127.94s  user  발화 끝
-   128.03s  agent 발화 시작: 천만에요. 즐거운 저녁 식사 되세요!
-   131.51s  agent 발화 끝
+     1.43s  <ret> 발화 (turn1 첫 프레임)
+     1.74s  agent 발화 시작: <ret> 가격대는 보통 정도입니다.
+     1.97s  user  발화 끝
+     2.23s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.98s]: (tool result) $$
+     3.72s  agent 발화 끝
+     4.18s  user  발화 시작: 아, 그렇군요. 그럼 주니 카페는 지금 영업 중이에요?
+     7.70s  user  발화 끝
+     7.76s  <ret> 발화 (turn3 첫 프레임)
+     7.83s  agent 발화 시작: <ret> 네, 지금 영업 중입니다.
+     9.12s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.75s]: (tool result) Open until 10:00 PM
+     9.41s  agent 발화 시작: 오늘 밤 열 시까지 영업합니다.
+     9.58s  agent 발화 끝
+    10.55s  user  발화 시작: 네.
+    10.91s  user  발화 끝
+    10.96s  user  발화 시작: 주니 카페까지 가는 가장 빠른 길은 어떻게 돼요? 지금 출발하면 얼마나 걸릴까요?
+    11.39s  agent 발화 끝
+    16.00s  <ret> 발화 (turn7 첫 프레임)
+    16.23s  agent 발화 시작: <ret> 지금 출발하시면 십오분 정도 걸리고, 육 점 이마일 거리입니다.
+    16.28s  user  발화 끝
+    18.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.99s]: (tool result) 15 minute drive, 6.2 miles.
+    19.59s  user  발화 시작: 네.
+    20.22s  user  발화 끝
+    21.22s  agent 발화 끝
+    21.95s  user  발화 시작: 십오분이면 괜찮겠네요. 주차는 어떻게 해야 해요? 주차 공간이 있나요?
+    26.40s  <ret> 발화 (turn10 첫 프레임)
+    26.47s  agent 발화 시작: <ret> 주차 공간이 있는지 확인해 볼게요.
+    26.49s  user  발화 끝
+    27.44s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.12s]: (tool result) Parking: Limited street parking.
+    28.55s  agent 발화 시작: 길가에 주차 공간이 제한적으로 있습니다.
+    28.59s  agent 발화 끝
+    31.32s  agent 발화 끝
+    32.04s  user  발화 시작: 길가 주차라… 좀 불편하겠네요. 주변에 다른 주차장도 있나요?
+    36.51s  <ret> 발화 (turn13 첫 프레임)
+    36.90s  agent 발화 시작: <ret> 헤이스 밸리 주차장이 영 점 삼마일 거리에 있고, 시간당 팔달러입니다.
+    37.05s  user  발화 끝
+    37.47s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.00s]: (tool result) Hayes Valley Garage - 0.3 miles, $8/hour.
+    39.20s  user  발화 시작: 정말요?
+    39.92s  user  발화 끝
+    41.90s  agent 발화 끝
+    42.11s  user  발화 시작: 팔달러면 괜찮은데요. 그 주차장까지 가는 길도 알려줄 수 있어요?
+    45.87s  <ret> 발화 (turn16 첫 프레임)
+    46.09s  user  발화 끝
+    46.18s  agent 발화 시작: <ret> 주니 카페에서 걸어서 오분, 영 점 이마일 거리입니다.
+    47.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) 5 minute walk, 0.2 miles.
+    47.91s  user  발화 시작: 네.
+    48.36s  user  발화 끝
+    49.88s  agent 발화 끝
+    50.05s  user  발화 시작: 좋아요. 그럼, 주니 카페에서 가장 인기 있는 메뉴는 뭐예요?
+    53.22s  <ret> 발화 (turn19 첫 프레임)
+    53.61s  agent 발화 시작: <ret> 주니 카페의 인기 메뉴를 알아볼게요.
+    53.75s  user  발화 끝
+    54.74s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.58s]: (tool result) Roast chicken for two is their signature dish.
+    55.95s  agent 발화 시작: 두 사람용 로스트 치킨이 주니 카페의 대표 메뉴입니다.
+    56.19s  agent 발화 끝
+    59.97s  agent 발화 끝
+    60.13s  user  발화 시작: 로스트 치킨이 유명하군요. 혹시 예약은 가능한가요?
+    63.55s  <ret> 발화 (turn22 첫 프레임)
+    63.63s  agent 발화 시작: <ret> 오늘 저녁 일곱시에 두 분 예약이 확정되었습니다.
+    63.83s  user  발화 끝
+    65.39s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.00s]: (tool result) Reservation confirmed for 2 people at 7:00 PM today.
+    66.58s  user  발화 시작: 와, 정말 고마워요! 예약까지 해주다니.
+    66.63s  agent 발화 끝
+    69.68s  agent 발화 시작: 천만에요. 즐거운 식사 되세요.
+    69.81s  user  발화 끝
+    72.27s  agent 발화 끝
+    72.87s  user  발화 시작: 그런데, 혹시 주니 카페 근처에 좋은 와인 바도 있을까요? 예약.
+    77.49s  user  발화 끝
+    77.58s  agent 발화 시작: 와인 바를 추천해 드릴 수 있—
+    78.37s  user  발화 시작: 주니 카페에서 걸어서 갈 수 있는 곳으로요!
+    79.05s  agent 발화 끝
+    80.66s  <ret> 발화 (turn28 첫 프레임)
+    80.97s  agent 발화 시작: <ret> 네, 알겠습니다. 걸어서 갈 수 있는 와인 바를 찾아볼게요. 더 프로그레스가 영 점 일마일 거리에
+    81.18s  user  발화 끝
+    82.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) The Progress - 0.1 miles, rated 4.5 stars.
+    89.87s  agent 발화 끝
+    90.44s  user  발화 시작: 사 점 오점이면 꽤 괜찮네요. 더 프로그레스까지 가는 길도 알려주세요.
+    94.46s  <ret> 발화 (turn30 첫 프레임)
+    94.69s  agent 발화 시작: <ret> 주니 카페에서 걸어서 이분, 영 점 일마일 거리입니다.
+    94.79s  user  발화 끝
+    96.30s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.51s]: (tool result) 2 minute walk, 0.1 miles.
+    97.95s  user  발화 시작: 완벽하네요. 정말 감사합니다!
+    98.20s  agent 발화 끝
+   100.07s  user  발화 끝
+   100.21s  agent 발화 시작: 도움이 되어 기쁩니다. 즐거운 시간 보내세요.
+   103.17s  agent 발화 끝

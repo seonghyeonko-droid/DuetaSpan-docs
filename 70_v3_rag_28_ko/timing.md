@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-02",
+#       "date": "2026-06-26",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-05-20",
+#       "date": "2026-04-22",
 #       "category": "work",
 #       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2026-03-04",
+#       "date": "2026-03-27",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-20",
+#       "date": "2026-03-03",
 #       "category": "diet",
 #       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-02-07",
+#       "date": "2025-10-11",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in March."
 #     },
 #     {
-#       "date": "2026-01-03",
+#       "date": "2025-07-27",
 #       "category": "home",
 #       "text": "User's home address is 960 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-16",
+#       "date": "2026-04-29",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -58,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-04",
+#       "date": "2025-06-29",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 퇴역 군인부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해.
-     5.27s  <ret> 발화 (turn1 첫 프레임)
-     5.59s  agent 발화 시작: <ret> 음, 그건 좀 복잡한 이야기인데… 퇴역 군인부는 허버트 후버 대통령에 의해 일구삼십 년 칠월 이십
-     5.70s  user  발화 끝
-     7.19s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.06s]: [source: Britannica] The Department of Veterans Affairs was establishe
-    15.98s  agent 발화 끝
-    17.24s  user  발화 시작: 일구삼십 년이라고? 그건 좀 의외인데, 더 일찍 만들어졌을 줄 알았어.
-    22.13s  agent 발화 시작: [curious] 생각보다 일찍 만들어졌죠? 과거에는 여러 기관에서 퇴역 군인들을 지원했어요.
-    22.28s  user  발화 끝
-    28.10s  user  발화 시작: 그럼 그 전에는 누가 담당했어? 구체적으로 알려줄 수 있어?
-    28.24s  agent 발화 끝
-    31.88s  <ret> 발화 (turn5 첫 프레임)
-    32.19s  agent 발화 시작: <ret> 그 전에는 국립 군인 홈(National Home for Disabled Soldiers)이 그 
-    32.26s  user  발화 끝
-    32.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.10s]: [source: History.com] The National Home for Disabled Soldiers was esta
-    44.90s  agent 발화 끝
+     0.00s  user  발화 시작: 퇴역 군인 부처가 언제 만들어졌는지 궁금해.
+     2.30s  <ret> 발화 (turn1 첫 프레임)
+     2.62s  agent 발화 시작: <ret> 음, 관련 정보를 찾아봤는데… 퇴역 군인 부처는 허버트 후버 대통령에 의해 천구백삼십년 칠월 이십
+     2.77s  user  발화 끝
+     3.74s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.51s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    12.03s  agent 발화 끝
+    13.28s  user  발화 시작: 천구백삼십년이라고? 그건 좀 의외인데. 이전에는 없었던 거야?
+    17.98s  agent 발화 시작: 이전에도 퇴역 군인들을 위한 지원은 있었지만, 지금처럼 하나의 부처로 공식화된 건 그때부터예요.
+    18.24s  user  발화 끝
+    24.55s  user  발화 시작: 그럼 그전에는 누가 담당했어?
+    24.65s  agent 발화 끝
+    26.24s  <ret> 발화 (turn5 첫 프레임)
+    26.55s  agent 발화 시작: <ret> 그건 또 다른 질문이네요. 천구백삼십년 이전에는 전쟁 위험 보험국에서 퇴역 군인 관련 업무를 담당
+    26.58s  user  발화 끝
+    26.74s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.23s]: [source: National Archives] Prior to 1930, the administration of veter
+    36.57s  agent 발화 끝

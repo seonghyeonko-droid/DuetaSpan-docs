@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-17",
+#       "date": "2026-06-01",
 #       "category": "pet",
 #       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-05-04",
+#       "date": "2026-01-01",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-04-20",
+#       "date": "2025-12-06",
 #       "category": "home",
 #       "text": "User's home address is 922 Birch Road."
 #     },
 #     {
-#       "date": "2026-04-07",
+#       "date": "2025-11-11",
 #       "category": "work",
 #       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2026-01-15",
+#       "date": "2025-06-26",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-19",
+#       "date": "2026-05-26",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -53,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-18",
+#       "date": "2025-06-23",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -63,37 +63,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아나키스트들이 가장 싫어하는 정부 형태가 뭐예요? | S2 아, 그렇군요. 그럼 아나키즘 자체에 대해 좀 설명해 주실 수 | S3 잠깐만요. 그럼 아나키스트들은 법이나 규칙 같은 건 전혀 안  | S4 아, 자발적인 합의라… 흥미롭네요. 그럼 아나키즘 사회는 어떻
+# EXAMINER(FDB-v2) 단계: S1 아나키스트들이 싫어하는 정부 형태가 뭔지 궁금해요. | S2 아나키즘이 폭력적인 걸로 알려져 있는데, 사실이에요? | S3 혹시 아나키스트들이 실제로 정부를 전복하려고 시도한 사례가 있 | S4 그럼 아나키즘은 완전한 무정부 상태를 추구하는 건가요?
 
-     0.00s  user  발화 시작: 아나키스트들이 가장 싫어하는 정부 형태가 뭐예요?
-     3.00s  <ret> 발화 (turn1 첫 프레임)
-     3.32s  agent 발화 시작: <ret> 음… 그건 좀 어려운 질문이네요. 제가 알아봐야 할 것 같아요.
-     3.42s  user  발화 끝
-     5.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (no information found)
-     7.41s  agent 발화 시작: 죄송해요. 아나키스트들이 특히 어떤 정부 형태를 싫어하는지에 대한 정보를 찾을 수 없었어요.
-     7.53s  agent 발화 끝
-    13.20s  agent 발화 끝
-    13.42s  user  발화 시작: 아, 그렇군요. 그럼 아나키즘 자체에 대해 좀 설명해 주실 수 있을까요?
-    17.84s  <ret> 발화 (turn4 첫 프레임)
-    17.91s  agent 발화 시작: <ret> 아나키즘은 기본적으로 모든 형태의 강제적인 지배나 권위를 반대하는 정치 철학이에요.
-    17.95s  user  발화 끝
-    18.34s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.18s]: [source: Wikipedia] Anarchism is a political philosophy that advocates
-    23.10s  agent 발화 끝
-    23.16s  agent 발화 시작: 자발적인 기관에 기반한 자치적인 사회를 옹호하는 정치 철학이라고 할 수 있어요.
-    26.05s  user  발화 시작: 네.
-    26.59s  user  발화 끝
-    27.72s  agent 발화 시작: 아나키스트들은 개인의 자유와 자율성을 최우선으로 생각하며, 국가나 다른 형태의 중앙 집권적인 권력이 개인의 
-    27.88s  agent 발화 끝
-    36.28s  user  발화 시작: 잠깐만요. 그럼 아나키스트들은 법이나 규칙 같은 건 전혀 안 따르나요?
-    36.90s  agent 발화 끝
-    40.17s  <ret> 발화 (turn9 첫 프레임)
-    40.41s  agent 발화 시작: <ret> 아, 그건 오해일 수 있어요. 아나키스트들은 법이나 규칙 자체를 무시하는 게 아니라, 강압적으로 
-    40.58s  user  발화 끝
-    42.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: [source: Stanford Encyclopedia of Philosophy] Anarchists generally bel
-    48.44s  agent 발화 시작: 그들은 법이 권위에 의해 강요되기보다는 자발적인 합의에서 나와야 한다고 생각해요.
-    48.52s  agent 발화 끝
-    53.30s  agent 발화 끝
-    53.47s  user  발화 시작: 아, 자발적인 합의라… 흥미롭네요. 그럼 아나키즘 사회는 어떻게 운영될까요?
-    58.63s  agent 발화 시작: 아나키즘 사회의 운영 방식은 다양한 모델이 있어요. 상호부조주의, 공동체주의, 개인주의 아나키즘 등 여러 가
-    58.70s  user  발화 끝
-    66.05s  agent 발화 끝
+     0.00s  user  발화 시작: 아나키스트들이 싫어하는 정부 형태가 뭔지 궁금해요.
+     3.19s  <ret> 발화 (turn1 첫 프레임)
+     3.51s  agent 발화 시작: <ret> 어떤 정부 형태를 특히 싫어하는지 알아보고 싶으시군요.
+     3.56s  user  발화 끝
+     4.87s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.95s]: (no information found)
+     6.40s  agent 발화 시작: 죄송하지만, 그 질문에 대한 정보는 찾을 수 없었어요. 아나키스트들이 어떤 정부 형태를 가장 반대하는지에 대
+     6.46s  agent 발화 끝
+    14.79s  agent 발화 끝
+    15.00s  user  발화 시작: 그럼 아나키즘 자체에 대해서 좀 설명해 줄 수 있어요?
+    18.59s  <ret> 발화 (turn4 첫 프레임)
+    18.66s  agent 발화 시작: <ret> 아나키즘은 국가 권력이나 강제적인 통치 체제를 거부하는 정치 철학이에요.
+    18.74s  user  발화 끝
+    19.09s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.68s]: [source: Wikipedia] Anarchism is a political philosophy that advocates
+    23.34s  agent 발화 끝
+    23.41s  agent 발화 시작: 자발적인 제도에 기반한 자치 사회를 옹호하는 정치 철학이라고 할 수 있어요.
+    26.12s  user  발화 시작: 네.
+    26.57s  user  발화 끝
+    27.71s  agent 발화 끝
+    28.23s  user  발화 시작: 아나키즘이 폭력적인 걸로 알려져 있는데, 사실이에요?
+    31.98s  agent 발화 시작: 아나키즘에는 다양한 사상이 있고—
+    32.06s  user  발화 끝
+    33.55s  user  발화 시작: 혹시 아나키스트들이 실제로 정부를 전복하려고 시도한 사례가 있나요?
+    34.23s  agent 발화 끝
+    37.50s  <ret> 발화 (turn10 첫 프레임)
+    37.74s  agent 발화 시작: <ret> 네, 역사적으로 아나키스트들이 정부 전복을 시도한 사례는 몇몇 있어요.
+    37.85s  user  발화 끝
+    39.26s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.72s]: [source: Britannica] Throughout history, anarchists have engaged in va
+    42.45s  agent 발화 끝
+    42.47s  agent 발화 시작: 역사적으로 파업, 시위, 심지어 폭력적인 행동을 포함한 다양한 형태의 항의에 참여했어요.
+    48.26s  agent 발화 끝
+    48.90s  user  발화 시작: 그럼 아나키즘은 완전한 무정부 상태를 추구하는 건가요?
+    52.31s  user  발화 끝
+    52.72s  agent 발화 시작: 아나키즘은 꼭 완전한 무정부 상태만을 의미하는 건 아니에요. 어떤 아나키스트들은 자발적인 협력을 통해 질서를
+    61.39s  agent 발화 끝

@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-23",
+#       "date": "2026-05-07",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-07-20",
+#       "date": "2026-03-07",
 #       "category": "hobby",
 #       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-06-24",
+#       "date": "2025-10-29",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-05-11",
+#       "date": "2025-08-08",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-03-02",
+#       "date": "2025-06-20",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-01-28",
+#       "date": "2025-06-15",
 #       "category": "home",
 #       "text": "User's home address is 743 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-27",
+#       "date": "2025-07-19",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-07-06",
+#       "date": "2025-06-07",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -68,87 +68,73 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음, 그냥 그래요. 지금 뉴욕 시간 몇 시예요? | S2 워크숍? 어디서 하나요? | S3 음… 저는 글루텐 프리 식단을 지키고 있는데, 혹시 거기 수업 | S4 아, 센트럴 파크는 가봤는데 너무 사람이 많았어요.
+# EXAMINER(FDB-v2) 단계: S1 음, 그냥 그래요. 지금 몇 시예요? 뉴욕 시간으로 알고 싶어 | S2 아, 고춧가루에 글루텐이 들어갈 수도 있군요. 몰랐어요. | S3 네, 항상 가지고 다녀요. 근데 저녁 메뉴는 뭘 먹을까요? | S4 와, 정말 고마워요. 디올로님 덕분에 저녁 걱정은 덜었네요.
 
-     0.00s  agent 발화 시작: 케이시님, 안녕하세요. 저는 디올로라고 해요. 오늘 하루 어떠신가요?
-     4.30s  agent 발화 끝
-     4.86s  user  발화 시작: 음, 그냥 그래요. 지금 뉴욕 시간 몇 시예요?
-     8.55s  <ret> 발화 (turn2 첫 프레임)
-     8.62s  agent 발화 시작: <ret> 케이시님, 뉴욕 시간은… 지금 뉴욕 시간은 오후 두 시 삼십칠 분이에요.
-     8.65s  user  발화 끝
-    10.23s  ⚡SPAN 주입 [d'=1.68s / d_lead=1.68s]: [2026-07-27] User's home address is 743 Cedar Lane.
-    11.43s  user  발화 시작: 그치.
-    11.96s  user  발화 끝
-    14.79s  agent 발화 끝
-    15.13s  user  발화 시작: 아, 그렇군요. 저 이번 주말에 뭐 할까요?
-    18.11s  agent 발화 시작: 주말 계획이라… 혹시 특별히 하고 싶은 거 있으세요? 아니면 제가 몇 가지 아이디어를 드려볼까요?
-    18.13s  user  발화 끝
-    24.00s  agent 발화 끝
-    24.18s  user  발화 시작: 그냥, 뭔가 새로운 걸 해보고 싶어요. 평소에 안 하던 거요.
-    27.96s  agent 발화 시작: 새로운 경험이라… 요즘 관심 있는 분야가 있으신가요? 아니면 취미를 넓혀보는 것도 좋을 것 같아요.
-    28.07s  user  발화 끝
-    33.87s  user  발화 시작: 글쎄요… 얼마 전에 집에서 발효 식품 만드는 걸 시작했는데, 좀 더 깊이 파고 싶기도 해요.
-    34.07s  agent 발화 끝
-    39.84s  <ret> 발화 (turn9 첫 프레임)
-    40.15s  agent 발화 시작: <ret> 발효 식품에 관심이 많으시군요. 집에서 발효하는 걸 즐기신다니, 발효 워크숍에 참여해 보시는 건 
-    40.17s  user  발화 끝
-    40.80s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.04s]: [2026-07-20] User is into home fermentation.
-    43.37s  user  발화 시작: 어.
-    43.87s  user  발화 끝
-    47.29s  agent 발화 끝
-    47.71s  user  발화 시작: 워크숍? 어디서 하나요?
-    49.78s  <ret> 발화 (turn12 첫 프레임)
-    49.86s  agent 발화 시작: <ret> 잠깐만 알아볼게요.
-    49.88s  user  발화 끝
-    51.06s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.47s]: (tool result) Found: “The Art of Fermentation” workshop, Saturday, 10 
-    51.13s  agent 발화 시작: 토요일 오전 열 시에 브루클린 식물원에서 ‘발효의 예술’ 워크숍이 열리네요. 참가비는 팔만 오천 원이에요.
-    51.32s  agent 발화 끝
-    54.66s  user  발화 시작: 응.
-    55.06s  user  발화 끝
-    57.99s  agent 발화 끝
-    58.11s  user  발화 시작: 가격이 좀 비싸네요. 다른 데는 없을까요?
-    61.11s  user  발화 끝
-    61.22s  <ret> 발화 (turn16 첫 프레임)
-    61.29s  agent 발화 시작: <ret> 조금 더 저렴한 곳을 찾아볼까요?
-    62.50s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.25s]: (tool result) Found: “Beginner’s Fermentation” class, Sunday, 2 PM, Mu
-    63.34s  agent 발화 시작: 일요일 오후 두 시에 머레이 치즈에서 ‘초보자를 위한 발효’ 수업이 오만 원에 열리네요.
-    63.54s  agent 발화 끝
-    69.36s  agent 발화 끝
-    69.47s  user  발화 시작: 머레이 치즈? 거긴 치즈 가게 아니었어요?
-    72.02s  agent 발화 시작: 네, 치즈 가게인데, 발효 관련 수업도 진행하는 것 같아요. 다양한 종류의 발효 식품을 배울 수 있을 거예요
-    72.20s  user  발화 끝
-    79.75s  agent 발화 끝
-    80.02s  user  발화 시작: 음… 저는 글루텐 프리 식단을 지키고 있는데, 혹시 거기 수업도 괜찮을까요?
-    84.81s  <ret> 발화 (turn21 첫 프레임)
-    85.12s  agent 발화 시작: <ret> 글루텐 프리 식단을 지키시는군요. 머레이 치즈에 문의해 보면 글루텐 프리 옵션이 있는지 확인할 수
-    85.29s  user  발화 끝
-    85.31s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.81s]: [2026-06-24] User is gluten-free.
-    92.33s  user  발화 시작: 좋네요. 그럼, 혹시 이번 주말에 다른 계획은 없을까요?
-    92.34s  agent 발화 끝
-    97.05s  user  발화 끝
-    97.19s  agent 발화 시작: 다른 계획이라… 혹시 애견과 함께 할 수 있는 활동을 찾고 계신가요?
-   101.54s  <ret> 발화 (turn24 첫 프레임)
-   101.85s  agent 발화 시작: <ret> 강아지를 키우시는군요. 비글 강아지 이름이 뭐였죠?
-   102.06s  agent 발화 끝
-   102.26s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.22s]: [2026-05-11] User has a Beagle named Rusty.
-   105.31s  user  발화 시작: 러스티요. 러스티랑 같이 갈 수 있는 공원을 추천해 주세요.
-   105.50s  agent 발화 끝
-   109.21s  <ret> 발화 (turn26 첫 프레임)
-   109.28s  agent 발화 시작: <ret> 러스티와 함께 갈 수 있는 공원이라…
-   109.52s  user  발화 끝
-   109.71s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.77s]: (tool result) Prospect Park, Central Park, Riverside Park are dog-frie
-   111.88s  agent 발화 시작: 뉴욕에는 프록스펙트 파크, 센트럴 파크, 리버사이드 파크가 강아지 동반이 가능해요.
-   112.05s  agent 발화 끝
-   117.35s  agent 발화 끝
-   117.89s  user  발화 시작: 아, 센트럴 파크는 가봤는데 너무 사람이 많았어요.
-   120.95s  agent 발화 시작: 사람이 많은 곳은 피하시는 게 좋으시겠네요. 그럼 프록스펙트 파크나 리버사이드 파크는 어떠세요? 좀 더 한적
-   121.08s  user  발화 끝
-   128.43s  user  발화 시작: 리버사이드 파크가 좋을 것 같아요.
-   128.50s  agent 발화 끝
-   130.38s  agent 발화 시작: 리버사이드 파크는 허드슨 강변에 있어서 경치가 아주 아름다워요. 러스티도 좋아할 거예요.
-   130.55s  user  발화 끝
-   137.23s  agent 발화 끝
-   137.93s  user  발화 시작: 네, 러스티는 산책을 정말 좋아하거든요. 감사합니다, 디올로.
-   141.88s  agent 발화 시작: 천만에요, 케이시님. 언제든지 편하게 말씀해 주세요.
-   142.10s  user  발화 끝
-   145.72s  agent 발화 끝
+     0.00s  agent 발화 시작: 케이시님, 안녕하세요. 저는 디올로예요. 오늘 하루 어떠신가요?
+     4.02s  agent 발화 끝
+     4.48s  user  발화 시작: 음, 그냥 그래요. 지금 몇 시예요? 뉴욕 시간으로 알고 싶어요.
+     8.54s  <ret> 발화 (turn2 첫 프레임)
+     8.61s  agent 발화 시작: <ret> 뉴욕 시간으로는 지금 오후 두 시 정각이에요.
+     8.64s  user  발화 끝
+    10.27s  user  발화 시작: 그치.
+    10.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: [2025-06-15] User's home address is 743 Cedar Lane.
+    10.71s  user  발화 끝
+    12.40s  agent 발화 끝
+    12.70s  user  발화 시작: 아, 고마워요. 혹시 지난번에 얘기했던 발효 식품 만드는 거, 좀 더 자세히 알려줄 수 있어요?
+    18.59s  user  발화 끝
+    18.61s  agent 발화 시작: 물론이죠. 발효 식품에 관심이 많으시군요. 어떤 종류의 발효 식품을 만들고 싶으세요?
+    24.45s  agent 발화 끝
+    24.62s  user  발화 시작: 그냥… 김치를 만들고 싶어서요. 근데 제가 글루텐 프리 식단을 하고 있잖아요.
+    29.19s  <ret> 발화 (turn7 첫 프레임)
+    29.50s  agent 발화 시작: <ret> 글루텐 프리 식단을 고려해서… 김치를 만들 때 글루텐이 들어가지 않도록 주의하시면 돼요. 고춧가루
+    29.66s  user  발화 끝
+    30.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.96s]: [2025-10-29] User is gluten-free.
+    39.07s  user  발화 시작: 아, 고춧가루에 글루텐이 들어갈 수도 있군요. 몰랐어요.
+    39.28s  agent 발화 끝
+    42.74s  agent 발화 시작: 네, 간혹 글루텐이 첨가되는 경우가 있어요. 꼼꼼히 확인하시는 게 좋겠어요.
+    42.77s  user  발화 끝
+    44.67s  user  발화 시작: 어.
+    45.30s  user  발화 끝
+    47.09s  agent 발화 끝
+    47.47s  user  발화 시작: 강아지 이름이 뭐였죠? 갑자기 궁금해졌어요.
+    50.24s  user  발화 끝
+    50.30s  <ret> 발화 (turn12 첫 프레임)
+    50.45s  agent 발화 시작: <ret> 러스티였죠. 러스티는 비글이에요. 요즘 러스티는 잘 지내고 있나요?
+    50.80s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.65s]: [2025-08-08] User has a Beagle named Rusty.
+    55.30s  user  발화 시작: 네, 러스티는 아주 잘 지내요. 근데 요즘 땅콩 알레르기 때문에 좀 걱정이에요.
+    55.63s  agent 발화 끝
+    60.80s  <ret> 발화 (turn14 첫 프레임)
+    61.20s  agent 발화 시작: <ret> 땅콩 알레르기 때문에 걱정이시군요. 땅콩 알레르기는 심각할 수 있으니, 항상 주의하시는 게 중요해
+    61.22s  user  발화 끝
+    61.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.01s]: [2025-06-20] User is allergic to peanuts.
+    71.26s  agent 발화 끝
+    72.33s  user  발화 시작: 네, 항상 가지고 다녀요. 근데 저녁 메뉴는 뭘 먹을까요?
+    76.78s  agent 발화 시작: 저녁 메뉴 고민이시군요. 혹시 평소에 어떤 음식을 즐겨 드시나요?
+    76.81s  user  발화 끝
+    81.36s  user  발화 시작: 스시를 제일 좋아해요.
+    81.46s  agent 발화 끝
+    82.97s  user  발화 끝
+    82.97s  <ret> 발화 (turn18 첫 프레임)
+    83.04s  agent 발화 시작: <ret> 스시를 좋아하시는군요. 스시를 드시면 기분이 좋아지시겠네요. 오늘 저녁은 스시를 드시는 건 어떠세
+    83.47s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.18s]: [2026-05-07] User's favorite cuisine is sushi.
+    90.09s  user  발화 시작: 좋은 생각이에요. 근데 스시집 예약 좀 해 줄 수 있어요? 여섯 명이고, 야외 좌석이 있으면 좋겠어요.
+    90.13s  agent 발화 끝
+    96.73s  <ret> 발화 (turn20 첫 프레임)
+    97.04s  agent 발화 시작: <ret> 예약해 드릴게요.
+    97.08s  user  발화 끝
+    97.23s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.23s]: (tool result) Booking confirmed at Sushi Zen, outdoor seating for six,
+    98.08s  agent 발화 시작: 스시젠에 저녁 일곱 시 반에 여섯 명으로 야외 좌석 예약이 완료됐어요.
+    98.27s  agent 발화 끝
+   103.07s  agent 발화 끝
+   103.82s  user  발화 시작: 와, 정말 고마워요. 디올로님 덕분에 저녁 걱정은 덜었네요.
+   108.72s  user  발화 끝
+   108.77s  agent 발화 시작: 도움이 되어서 기뻐요. 혹시 다른 필요한 건 없으세요?
+   112.29s  agent 발화 끝
+   112.39s  user  발화 시작: 아뇨, 괜찮아요. 오늘 정말 감사했어요.
+   115.25s  agent 발화 시작: 천만에요. 언제든지 편하게 말씀해주세요. 케이시님의 하루가 즐거웠으면 좋겠어요.
+   115.44s  user  발화 끝
+   117.84s  user  발화 시작: 응.
+   118.06s  user  발화 끝
+   120.23s  agent 발화 시작: 그럼 좋은 하루 보내세요.
+   120.43s  agent 발화 끝
+   121.79s  agent 발화 끝

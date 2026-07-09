@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-07",
+#       "date": "2026-04-02",
 #       "category": "work",
 #       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-07-04",
+#       "date": "2025-07-24",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-07-03",
+#       "date": "2025-07-22",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-02-17",
+#       "date": "2025-07-17",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-25",
+#       "date": "2025-10-25",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-13",
+#       "date": "2025-09-30",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -59,21 +59,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to offer a gentle sp
-     4.70s  user  발화 시작: Right.
-     5.25s  user  발화 끝
-     7.32s  user  발화 시작: Jaeia… that’s a lovely name. It sounds… ancient, somehow. Is
-     7.41s  agent 발화 끝
-    13.30s  user  발화 끝
-    13.54s  agent 발화 시작: [happy] It is, actually. I’ve always been drawn to names tha
-    17.02s  user  발화 시작: Yeah.
-    17.52s  user  발화 끝
-    20.59s  agent 발화 시작: It’s a privilege to be invited into someone’s journey, and a
-    20.85s  agent 발화 끝
-    26.05s  agent 발화 끝
-    27.75s  user  발화 시작: I suppose so. I’m just…feeling a bit lost, I guess. Everythi
-    33.37s  agent 발화 시작: That’s perfectly understandable, Avery. Change can be profou
-    33.51s  user  발화 끝
-    42.92s  agent 발화 끝
-    42.97s  user  발화 시작: I— I mean, my grandmother passed away last month, and I’m st
-    48.85s  user  발화 끝
+     0.00s  agent 발화 시작: Avery, it’s lovely to connect with you. I’m Jaeia, and I’m h
+     4.91s  user  발화 시작: Right.
+     5.41s  user  발화 끝
+     7.68s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient? Is that 
+     7.79s  agent 발화 끝
+    12.64s  user  발화 끝
+    12.85s  agent 발화 시작: Not at all, Avery. It has roots in several cultures, yes— a 
+    17.09s  user  발화 시작: Yeah.
+    17.58s  user  발화 끝
+    21.39s  agent 발화 시작: It’s wonderful you asked; it’s often the small curiosities t
+    21.65s  agent 발화 끝
+    30.14s  agent 발화 끝
+    31.92s  user  발화 시작: I— I mean, yeah. My grandmother passed away last month, and 
+    37.46s  agent 발화 시작: [sigh] Grief truly reshapes our world, doesn’t it? It’s a po
+    37.56s  user  발화 끝
+    47.61s  agent 발화 끝
+    47.73s  user  발화 시작: It’s just… I keep replaying memories, and then feeling guilt
+    55.94s  user  발화 끝

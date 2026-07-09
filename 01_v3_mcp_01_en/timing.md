@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-03-31",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-02-18",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2025-11-13",
 #       "category": "home",
 #       "text": "User's home address is 50 Pine Court."
 #     },
 #     {
-#       "date": "2026-02-18",
+#       "date": "2025-08-15",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-06",
+#       "date": "2026-04-04",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-16",
+#       "date": "2025-11-08",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,43 +58,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Can you narrow that map down to ju | S3 Okay, great. Can you book an appoi | S4 Perfect! That’s exactly what I nee
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Okay, good. Now, show me the price | S3 …Is there a trade-in program curre | S4 That's helpful. So, if I trade in 
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.37s  <ret> 발화 (turn1 첫 프레임)
-     4.44s  agent 발화 시작: <ret> Certainly. I’m accessing the Apple website now to buil
-     4.53s  user  발화 끝
-     5.97s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.51s]: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & 
-    11.85s  agent 발화 시작: That map highlights iPhone, iPad, Mac, Apple Watch, AirPods,
-    11.95s  agent 발화 끝
-    15.26s  user  발화 시작: Okay.
-    15.89s  user  발화 끝
-    20.05s  agent 발화 끝
-    20.13s  user  발화 시작: That’s good. What about their support section? Is that well-
-    24.42s  <ret> 발화 (turn5 첫 프레임)
-    24.66s  agent 발화 시작: <ret> Yes, the support section is included, showing access p
-    24.76s  user  발화 끝
-    26.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: (tool result) Support: Downloads, Manuals, Repair, Contact, AppleCare,
-    31.52s  agent 발화 시작: The map details downloads, manuals, repair options, contact 
-    31.57s  agent 발화 끝
-    36.88s  user  발화 시작: Uh-huh.
-    37.42s  user  발화 끝
-    41.31s  user  발화 시작: Can you narrow that map down to just the repair options, and
-    41.40s  agent 발화 끝
-    47.88s  <ret> 발화 (turn9 첫 프레임)
-    47.96s  agent 발화 시작: <ret> The closest authorized provider is uBreakiFix by Asuri
-    48.12s  user  발화 끝
-    49.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.99s]: (tool result) Nearest: uBreakiFix by Asurion, 123 Main Street, Anytown
-    54.59s  user  발화 시작: Yeah.
-    54.99s  user  발화 끝
-    56.88s  user  발화 시작: Okay, great. Can you book an appointment for me there for to
-    56.96s  agent 발화 끝
-    61.99s  <ret> 발화 (turn12 첫 프레임)
-    62.39s  agent 발화 시작: <ret> Your appointment at uBreakiFix is confirmed for tomorr
-    62.43s  user  발화 끝
-    63.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) Confirmed: uBreakiFix, tomorrow, 10:00 AM. Order #AB1234
-    70.08s  user  발화 시작: Perfect! That’s exactly what I needed. Thanks, Koral.
-    70.18s  agent 발화 끝
-    73.70s  agent 발화 시작: You’re very welcome. Is there anything else I can assist you
-    73.73s  user  발화 끝
-    80.74s  agent 발화 끝
+     4.24s  <ret> 발화 (turn1 첫 프레임)
+     4.31s  agent 발화 시작: <ret> Certainly. I can generate a sitemap of Apple’s website
+     4.45s  user  발화 끝
+     5.52s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.85s]: (tool result) Sitemap generated: 23 product pages identified.
+    11.07s  agent 발화 시작: I’ve mapped twenty-three product pages on Apple’s site.
+    11.17s  agent 발화 끝
+    15.04s  user  발화 시작: Hmm, that’s… a lot. Can you narrow it down to just iPhones?
+    15.19s  agent 발화 끝
+    19.14s  <ret> 발화 (turn4 첫 프레임)
+    19.38s  agent 발화 시작: <ret> Of course. I can refine the map to display only the pa
+    19.57s  user  발화 끝
+    21.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.40s]: (tool result) Sitemap generated: 6 iPhone-related pages identified.
+    25.68s  agent 발화 시작: That narrows it down to six pages specifically about iPhones
+    25.78s  agent 발화 끝
+    28.97s  user  발화 시작: Yeah.
+    29.32s  user  발화 끝
+    30.49s  user  발화 시작: Okay, good. Now, show me the prices for the iPhone 15 Pro Ma
+    30.68s  agent 발화 끝
+    35.23s  agent 발화 시작: I can certainly check those for you. Just one moment—
+    35.40s  user  발화 끝
+    38.48s  user  발화 시작: …Is there a trade-in program currently running?
+    39.06s  agent 발화 끝
+    41.06s  <ret> 발화 (turn10 첫 프레임)
+    41.30s  agent 발화 시작: <ret> Apple does indeed offer a trade-in program. Let’s firs
+    41.35s  user  발화 끝
+    43.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: (tool result) iPhone 15 Pro Max: starting at $1199.
+    50.75s  agent 발화 시작: The iPhone 15 Pro Max starts at eleven ninety-nine dollars.
+    50.94s  agent 발화 끝
+    52.46s  user  발화 시작: Mm-hmm.
+    52.96s  user  발화 끝
+    55.33s  <ret> 발화 (turn13 첫 프레임)
+    55.57s  agent 발화 시작: <ret> Regarding trade-ins, Apple currently offers credit tow
+    55.65s  agent 발화 끝
+    57.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) Trade-in: up to $1000 credit available.
+    62.93s  agent 발화 시작: You can receive up to one thousand dollars in credit.
+    62.99s  agent 발화 끝
+    65.19s  user  발화 시작: Mhm.
+    65.69s  user  발화 끝
+    66.45s  user  발화 시작: Wow, that's a significant amount. Okay, let's say I trade in
+    66.53s  agent 발화 끝
+    73.14s  <ret> 발화 (turn17 첫 프레임)
+    73.54s  agent 발화 시작: <ret> Let me check the estimated trade-in value for an iPhon
+    73.68s  user  발화 끝
+    75.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) iPhone 13 trade-in: estimated $350 credit.
+    78.00s  agent 발화 시작: An iPhone 13 currently gets an estimated credit of three hun
+    78.08s  agent 발화 끝
+    84.03s  agent 발화 끝
+    84.64s  user  발화 시작: That's helpful. So, if I trade in my 13 and buy the 15 Pro M
+    91.72s  user  발화 끝
+    92.09s  agent 발화 시작: Subtracting the trade-in value from the iPhone 15 Pro Max’s 
+   100.15s  agent 발화 끝

@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
+#       "date": "2026-06-26",
 #       "category": "home",
 #       "text": "User's home address is 664 Birch Road."
 #     },
 #     {
-#       "date": "2026-05-07",
+#       "date": "2026-06-08",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2026-03-05",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-12",
+#       "date": "2025-11-05",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-01-03",
+#       "date": "2025-09-05",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-01",
+#       "date": "2026-05-21",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -53,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-21",
+#       "date": "2025-11-18",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -65,8 +65,8 @@
 
 
      0.00s  user  발화 시작: 유럽에서 인쇄술은 언제 발명되었나요?
-     2.36s  <ret> 발화 (turn1 첫 프레임)
-     2.52s  agent 발화 시작: <ret> 인쇄술의 역사는 꽤 오래되었죠. 유럽에서 인쇄술은 요하네스 구텐베르크에 의해 대략 천사백사십 년쯤
+     2.37s  <ret> 발화 (turn1 첫 프레임)
+     2.52s  agent 발화 시작: <ret> 인쇄술 발명 시기에 대해 궁금하시군요. 유럽에서 인쇄술은 대략 천사백사십 년쯤 발명되었답니다.
      2.58s  user  발화 끝
-     2.86s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.88s]: [source: Britannica] The printing press was invented in Europe around 
-    11.89s  agent 발화 끝
+     4.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.41s]: [source: Britannica] The printing press was invented in Europe around 
+    10.03s  agent 발화 끝

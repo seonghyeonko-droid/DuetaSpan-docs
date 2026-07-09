@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-12",
+#       "date": "2026-02-11",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-06-09",
+#       "date": "2026-01-09",
 #       "category": "work",
 #       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-04-03",
+#       "date": "2025-09-07",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-03-14",
+#       "date": "2025-07-07",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-18",
+#       "date": "2026-03-01",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-05",
+#       "date": "2025-06-25",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -60,20 +60,20 @@
 
 
      0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
-     2.85s  <ret> 발화 (turn1 첫 프레임)
-     3.09s  user  발화 끝
-     3.17s  agent 발화 시작: <ret> 아, 그 곡 기타 솔로는 정말 유명하죠. 에디 밴 헤일런이 마이클 잭슨의 "비트 잇" 기타 솔로를
-     4.77s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.19s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     8.88s  user  발화 시작: 맞아요.
-     9.70s  user  발화 끝
-    10.91s  agent 발화 끝
-    11.59s  user  발화 시작: 잠깐만, 아까 그 서류 어디 뒀더라?
-    13.95s  user  발화 시작: 혹시 에디 밴 헤일런이 다른 유명한 곡도 많이 했나요?
-    13.98s  user  발화 끝
-    17.46s  user  발화 끝
-    17.64s  agent 발화 시작: 에디 밴 헤일런은 밴 헤일런 밴드의 기타리스트로도 아주 유명하답니다.
-    21.40s  user  발화 시작: 네.
-    21.89s  user  발화 끝
-    22.71s  agent 발화 시작: 기타 연주 스타일이 굉장히 독특하고 영향력 있었어요.
-    22.91s  agent 발화 끝
-    26.41s  agent 발화 끝
+     2.95s  <ret> 발화 (turn1 첫 프레임)
+     3.24s  user  발화 끝
+     3.26s  agent 발화 시작: <ret> 기타 솔로 연주자에 대해 말씀하시는 거죠? 에디 밴 헤일런이 마이클 잭슨의 “비트 잇” 기타 솔로
+     3.99s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.73s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     8.63s  user  발화 시작: 맞아요.
+     9.31s  user  발화 끝
+    10.53s  agent 발화 끝
+    11.23s  user  발화 시작: 잠깐만, 오늘 저녁 뭐 먹을까?
+    13.90s  user  발화 시작: 아, 죄송해요. 다시 말씀드려도 될까요? 그 기타 솔로가 누구인지요.
+    13.95s  user  발화 끝
+    17.75s  user  발화 끝
+    17.95s  agent 발화 시작: 네, 방금 말씀드렸듯이 에디 밴 헤일런이 연주했습니다.
+    20.55s  user  발화 시작: 네.
+    20.99s  user  발화 끝
+    21.50s  agent 발화 시작: 혹시 에디 밴 헤일런에 대해 더 궁금한 점이 있으신가요?
+    21.65s  agent 발화 끝
+    25.52s  agent 발화 끝

@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
+#       "date": "2026-03-16",
 #       "category": "home",
 #       "text": "User's home address is 389 Maple Drive."
 #     },
 #     {
-#       "date": "2026-03-10",
+#       "date": "2026-02-21",
 #       "category": "trip",
 #       "text": "User is planning a trip to Vietnam in August."
 #     },
 #     {
-#       "date": "2026-03-09",
+#       "date": "2026-02-20",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-02-26",
+#       "date": "2025-09-21",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-03-12",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-28",
+#       "date": "2025-08-16",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,47 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 프랑스 상원 의원 수는 몇 명이에요? | S2 오, 삼백사십팔 명이요? 꽤 많네요. | S3 오 년이군요. 한국이랑 다르네요. | S4 오늘은 좀 피곤하네요.
+# EXAMINER(FDB-v2) 단계: S1 프랑스 상원 의원 수는 몇 명이에요? | S2 상원 의원 수가 생각보다 많네요. 상원의 역할은 주로 뭘 하나 | S3 아, 그렇군요. 그럼 국민의회는요? | S4 네, 그렇군요. 설명해 주셔서 감사합니다.
 
      0.00s  user  발화 시작: 프랑스 상원 의원 수는 몇 명이에요?
-     1.84s  <ret> 발화 (turn1 첫 프레임)
-     2.08s  agent 발화 시작: <ret> 음… 그 부분은 제가 정확히 알지 못하네요. 한번 찾아볼게요.
-     2.25s  user  발화 끝
-     2.34s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.52s]: (no information found)
-     5.57s  agent 발화 시작: 죄송해요. 프랑스 상원 의원 수에 대한 정보를 찾을 수 없었어요.
-     5.59s  agent 발화 끝
-     7.44s  user  발화 시작: 아.
-     8.08s  user  발화 끝
-     9.60s  agent 발화 끝
-    10.30s  user  발화 시작: 아, 그렇군요. 그럼 프랑스 전체 의회 의원 수는요?
-    13.51s  <ret> 발화 (turn5 첫 프레임)
-    13.83s  agent 발화 시작: <ret> 의회 전체를 말씀하시는 거라면… 프랑스 의회는 국민의회 의원 오백칠십칠 명과 상원 의원 삼백사십팔
-    13.86s  user  발화 끝
-    14.55s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.18s]: 'The French Parliament consists of two houses: the National Assembly w
-    19.08s  user  발화 시작: 맞아요.
-    19.80s  user  발화 끝
-    22.55s  agent 발화 끝
-    22.95s  user  발화 시작: 오, 삼백사십팔 명이요? 꽤 많네요.
-    25.71s  user  발화 끝
-    26.03s  agent 발화 시작: 네, 그렇죠? 규모가 꽤 큰 편이에요. 혹시 다른 궁금한 점이 있으세요?
-    29.68s  agent 발화 끝
-    30.19s  user  발화 시작: 그럼 프랑스 대통령 임기는 얼마나 되나요?
-    32.96s  <ret> 발화 (turn10 첫 프레임)
-    33.01s  user  발화 끝
-    33.19s  agent 발화 시작: <ret> 대통령 임기는 꽤 중요한 질문이죠. 프랑스 대통령 임기는 오 년으로 정해져 있어요.
-    33.92s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.16s]: 'The President of France is elected for a five-year term.' [source: Br
-    34.82s  user  발화 시작: 예.
-    35.41s  user  발화 끝
-    38.38s  agent 발화 끝
-    38.49s  user  발화 시작: 오 년이군요. 한국이랑 다르네요.
-    40.55s  agent 발화 시작: 네, 한국 대통령 임기는 오 년이고요, 프랑스는 오 년으로 조금 다르죠. 혹시 다른 나라와 비교해 보고 싶으
-    40.74s  user  발화 끝
-    47.55s  agent 발화 끝
-    47.56s  user  발화 시작: 아니요, 괜찮아요. 그냥 궁금해서요.
-    49.55s  user  발화 끝
-    49.70s  agent 발화 시작: 네, 알겠습니다. 혹시 다른 건강 습관에 대해 이야기해 볼까요? 아니면 오늘 하루 어떠셨는지요?
-    55.37s  user  발화 시작: 오늘은 좀 피곤하네요.
-    55.40s  agent 발화 끝
-    56.87s  agent 발화 시작: [sigh] 피곤하시다니 안타깝네요. 충분한 휴식을 취하는 게 중요해요. 따뜻한 차 한 잔 어떠세요?
-    56.89s  user  발화 끝
-    63.74s  agent 발화 끝
+     2.16s  <ret> 발화 (turn1 첫 프레임)
+     2.40s  agent 발화 시작: <ret> 음… 그 부분은 제가 정확히 알지 못하네요.
+     2.58s  user  발화 끝
+     2.66s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.91s]: (no information found)
+     5.14s  agent 발화 시작: 죄송해요. 프랑스 상원 의원 수에 대한 정보를 찾을 수 없었어요.
+     5.31s  agent 발화 끝
+     7.84s  user  발화 시작: 네.
+     8.46s  user  발화 끝
+     8.93s  agent 발화 끝
+     9.59s  user  발화 시작: 아, 그렇군요. 그럼 프랑스 전체 의회 의원 수는요?
+    12.95s  <ret> 발화 (turn5 첫 프레임)
+    13.27s  agent 발화 시작: <ret> 잠깐만요, 확인해 볼게요.
+    13.29s  user  발화 끝
+    13.75s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.42s]: [source: Wikipedia] The Parliament of France is bicameral, comprising 
+    14.69s  agent 발화 끝
+    14.78s  agent 발화 시작: 프랑스 의회는 국민의회와 상원으로 이루어져 있고, 국민의회는 오백칠십칠 명, 상원 의원은 삼백사십팔 명이에요
+    19.89s  user  발화 시작: 네.
+    20.32s  user  발화 끝
+    21.64s  agent 발화 끝
+    22.61s  user  발화 시작: 상원 의원 수가 생각보다 많네요. 상원의 역할은 주로 뭘 하나요?
+    27.47s  user  발화 끝
+    27.86s  agent 발화 시작: 상원은 주로 법안 심의와 국민의회에서 통과된 법안 검토를 담당하고 있어요.
+    32.53s  agent 발화 끝
+    33.06s  user  발화 시작: 아, 그렇군요. 그럼 국민의회는요?
+    35.18s  user  발화 끝
+    35.58s  agent 발화 시작: 국민의회는 주로 법안을 발의하고 통과시키는 역할을 하죠. 상원과 함께 프랑스의 입법 기능을 수행해요.
+    42.72s  agent 발화 끝
+    43.06s  user  발화 시작: 음… 알겠어요. 프랑스 정치 시스템이 복잡하네요.
+    46.90s  user  발화 끝
+    46.99s  agent 발화 시작: 복잡하게 느껴지실 수 있지만, 상호 견제와 균형을 통해 안정적인 정치 시스템을 유지하고 있어요.
+    48.82s  user  발화 시작: 예.
+    49.31s  user  발화 끝
+    52.83s  agent 발화 끝
+    53.06s  user  발화 시작: 네, 그렇군요. 설명해 주셔서 감사합니다.
+    55.92s  user  발화 끝
+    56.12s  agent 발화 시작: 천만에요. 언제든지 궁금한 점이 있으면 편하게 말씀해 주세요.
+    59.96s  agent 발화 끝

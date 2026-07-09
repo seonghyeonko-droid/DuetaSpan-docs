@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-03-31",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-02-18",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2025-11-13",
 #       "category": "home",
 #       "text": "User's home address is 50 Pine Court."
 #     },
 #     {
-#       "date": "2026-02-18",
+#       "date": "2025-08-15",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-06",
+#       "date": "2026-04-04",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-16",
+#       "date": "2025-11-08",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,43 +58,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 나 그거 만들어 줘. 애플 웹사이트 상세 지도인데, 제품 중심 | S2 그 지도를 수리 옵션만 보여주게 하고, 제일 가까운 공인 서비 | S3 좋아, 그럼 거기 내일 오전 10시에 예약해 줘. | S4 완벽해! 딱 필요한 거였어. 고마워, 코랄.
+# EXAMINER(FDB-v2) 단계: S1 나 Apple 웹사이트 상세 지도를 만들어 줘, 제품에 집중해 | S2 좋아. 그럼 아이폰 15 Pro Max 가격 좀 보여 줘. | S3 …지금 트레이드인 프로그램도 하고 있어? | S4 도움이 되네. 그럼 13을 트레이드인하고 15 Pro Max를
 
-     0.00s  user  발화 시작: 나 그거 만들어 줘. 애플 웹사이트 상세 지도인데, 제품 중심으로.
-     4.26s  <ret> 발화 (turn1 첫 프레임)
-     4.42s  agent 발화 시작: <ret> 네, 지금 애플 웹사이트에 접속해서 그 지도를 만들고 있습니다. 제품 페이지에 집중해서요.
-     4.54s  user  발화 끝
-     6.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & 
-     9.88s  agent 발화 끝
-    10.01s  agent 발화 시작: 그 지도는 아이폰, 아이패드, 맥, 애플 워치, 에어팟, TV & 홈, 엔터테인먼트, 액세서리를 강조해서 보
-    13.88s  user  발화 시작: 어어.
-    14.37s  user  발화 끝
-    19.20s  agent 발화 끝
-    19.38s  user  발화 시작: 그거 괜찮네. 서포트 섹션은 어때? 그것도 잘 표시돼 있어?
-    22.53s  <ret> 발화 (turn5 첫 프레임)
-    22.93s  agent 발화 시작: <ret> 네, 서포트 섹션도 포함되어 있어서 다운로드, 설명서, 수리 서비스 접근 지점을 보여 드립니다.
-    23.17s  user  발화 끝
-    23.89s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.32s]: (tool result) Support: Downloads, Manuals, Repair, Contact, AppleCare,
-    28.25s  agent 발화 끝
-    28.36s  agent 발화 시작: 그 지도는 다운로드, 설명서, 수리 옵션, 연락처 정보, 애플케어, 보증 정보, 보안 리소스를 자세히 보여 
-    32.37s  user  발화 시작: 응.
-    32.72s  user  발화 끝
-    35.69s  user  발화 시작: 그 지도를 수리 옵션만 보여주게 하고, 제일 가까운 공인 서비스 제공업체도 알려 줘.
-    35.77s  agent 발화 끝
-    40.88s  <ret> 발화 (turn9 첫 프레임)
-    41.04s  agent 발화 시작: <ret> 가장 가까운 공인 제공업체는 uBreakiFix by Asurion이고, 주소는 123 Main 
-    41.28s  user  발화 끝
-    42.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) Nearest: uBreakiFix by Asurion, 123 Main Street, Anytown
-    47.45s  user  발화 시작: 어.
-    48.09s  user  발화 끝
-    49.60s  agent 발화 끝
-    49.79s  user  발화 시작: 좋아, 그럼 거기 내일 오전 10시에 예약해 줘.
-    52.39s  <ret> 발화 (turn12 첫 프레임)
-    52.63s  agent 발화 시작: <ret> 네, uBreakiFix에 내일 오전 10시로 예약이 확정됐습니다. 주문 번호는 AB12345입니
-    52.80s  user  발화 끝
-    54.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Confirmed: uBreakiFix, tomorrow, 10:00 AM. Order #AB1234
-    58.69s  user  발화 시작: 완벽해! 딱 필요한 거였어. 고마워, 코랄.
-    58.74s  agent 발화 끝
-    62.07s  user  발화 끝
-    62.08s  agent 발화 시작: 도움이 되어서 기쁩니다. 혹시 오늘 다른 도움이 필요하신가요? 기기 관련해서요?
-    65.96s  agent 발화 끝
+     0.00s  user  발화 시작: 나 Apple 웹사이트 상세 지도를 만들어 줘, 제품에 집중해서.
+     3.73s  <ret> 발화 (turn1 첫 프레임)
+     3.89s  agent 발화 시작: <ret> 네, Apple 웹사이트의 사이트맵을 생성해서 제품 페이지를 강조해 드릴게요.
+     4.07s  user  발화 끝
+     5.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) Sitemap generated: 23 product pages identified.
+     8.01s  agent 발화 끝
+     8.14s  agent 발화 시작: Apple 사이트에 제품 페이지가 스물세 개 있네요.
+    10.49s  agent 발화 끝
+    12.11s  user  발화 시작: 음, 많네… 아이폰으로 좁혀 줄 수 있어?
+    15.62s  <ret> 발화 (turn4 첫 프레임)
+    16.02s  agent 발화 시작: <ret> 네, 아이폰 관련 페이지로만 지도를 좁혀 드릴 수 있어요.
+    16.18s  user  발화 끝
+    16.26s  ⚡SPAN 주입 [d'=0.64s / d_lead=2.91s]: (tool result) Sitemap generated: 6 iPhone-related pages identified.
+    18.93s  agent 발화 끝
+    18.95s  agent 발화 시작: 그럼 아이폰에 대한 페이지는 여섯 개로 줄어들었어요.
+    20.89s  user  발화 시작: 어어.
+    21.39s  user  발화 끝
+    21.86s  agent 발화 끝
+    22.21s  user  발화 시작: 좋아. 그럼 아이폰 15 Pro Max 가격 좀 보여 줘.
+    25.57s  agent 발화 시작: 확인해 드릴 수 있어요. 잠시만 기다려 주세요—
+    25.72s  user  발화 끝
+    27.21s  user  발화 시작: …지금 트레이드인 프로그램도 하고 있어?
+    27.83s  agent 발화 끝
+    28.54s  <ret> 발화 (turn10 첫 프레임)
+    28.94s  agent 발화 시작: <ret> 네, Apple은 트레이드인 프로그램을 운영하고 있어요. 먼저 아이폰 15 Pro Max 가격을 
+    29.05s  user  발화 끝
+    30.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) iPhone 15 Pro Max: starting at $1199.
+    37.47s  agent 발화 끝
+    37.49s  agent 발화 시작: 아이폰 15 Pro Max는 천백구십구 달러부터 시작해요.
+    38.72s  user  발화 시작: 응.
+    39.13s  user  발화 끝
+    40.79s  <ret> 발화 (turn13 첫 프레임)
+    40.95s  agent 발화 시작: <ret> 트레이드인에 대해서는 Apple에서 적격 기기를 트레이드인하면 새 아이폰 구매 시 크레딧을 제공하
+    41.01s  agent 발화 끝
+    41.91s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.70s]: (tool result) Trade-in: up to $1000 credit available.
+    46.57s  agent 발화 시작: 최대 천 달러의 크레딧을 받을 수 있어요.
+    46.65s  agent 발화 끝
+    47.98s  user  발화 시작: 어.
+    48.53s  user  발화 끝
+    48.82s  user  발화 시작: 와, 꽤 큰 금액이네. 아이폰 13을 트레이드인하면 얼마를 받을 수 있어?
+    48.83s  agent 발화 끝
+    53.30s  <ret> 발화 (turn17 첫 프레임)
+    53.45s  agent 발화 시작: <ret> 아이폰 13의 예상 트레이드인 가치를 확인해 볼게요.
+    53.50s  user  발화 끝
+    54.26s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.04s]: (tool result) iPhone 13 trade-in: estimated $350 credit.
+    56.50s  agent 발화 끝
+    56.61s  agent 발화 시작: 아이폰 13은 현재 예상 크레딧이 삼백오십 달러예요.
+    60.26s  agent 발화 끝
+    60.43s  user  발화 시작: 도움이 되네. 그럼 13을 트레이드인하고 15 Pro Max를 사면 최종 가격은 얼마야?
+    64.99s  agent 발화 시작: 아이폰 15 Pro Max의 시작 가격에서 트레이드인 가치를 빼면 팔백사십구 달러가 돼요.
+    65.01s  user  발화 끝
+    69.99s  agent 발화 끝

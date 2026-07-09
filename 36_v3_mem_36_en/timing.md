@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-14",
+#       "date": "2026-03-06",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in March."
 #     },
 #     {
-#       "date": "2026-05-07",
+#       "date": "2026-01-22",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-04-19",
+#       "date": "2025-12-08",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-03-24",
+#       "date": "2025-11-06",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2025-07-02",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-08-02",
+#       "date": "2025-11-22",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -53,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-27",
+#       "date": "2025-06-01",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -64,21 +64,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It's good to connect with you. I’m a co
-     3.68s  user  발화 시작: Uh-huh.
-     4.41s  user  발화 끝
-     7.55s  agent 발화 끝
-     7.59s  user  발화 시작: Oh, hi Lira. That sounds helpful. I was just remembering som
-    14.22s  <ret> 발화 (turn3 첫 프레임)
-    14.45s  agent 발화 시작: <ret> You were researching hybrid cars with less than thirty
-    14.63s  user  발화 끝
-    16.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
-    19.54s  agent 발화 끝
-    20.74s  user  발화 시작: Right, that’s it! Thanks. I’m now thinking about a trip, and
-    26.70s  <ret> 발화 (turn5 첫 프레임)
-    27.10s  agent 발화 시작: <ret> An aisle seat offers more freedom of movement, which c
-    27.27s  user  발화 끝
-    28.38s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.35s]: [2026-03-03] User prefers an aisle seat when traveling.
-    31.21s  agent 발화 시작: You do prefer an aisle seat when you travel, Sahiha. Would y
-    31.45s  agent 발화 끝
-    37.32s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you. Is there
+     2.44s  user  발화 시작: Uh-huh.
+     2.98s  user  발화 끝
+     5.10s  user  발화 시작: Oh, hi Lira. I was just thinking about that trip I’m plannin
+     5.14s  agent 발화 끝
+     9.88s  <ret> 발화 (turn3 첫 프레임)
+    10.11s  agent 발화 시작: <ret> You’re planning a trip to Switzerland in March of next
+    10.19s  user  발화 끝
+    11.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: [2026-03-06] User is planning a trip to Switzerland in March.
+    16.45s  agent 발화 끝
+    17.71s  user  발화 시작: Yes, actually. I’m a vegetarian, and I’m wondering if that w
+    21.89s  <ret> 발화 (turn5 첫 프레임)
+    22.20s  agent 발화 시작: <ret> That’s a very practical consideration when traveling. 
+    22.43s  user  발화 끝
+    23.17s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.70s]: [2026-01-22] User is vegetarian.
+    30.31s  agent 발화 끝

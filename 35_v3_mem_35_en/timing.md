@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-11",
+#       "date": "2026-06-07",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-06-15",
+#       "date": "2026-05-29",
 #       "category": "work",
 #       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2026-05-27",
+#       "date": "2025-12-04",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in October."
 #     },
 #     {
-#       "date": "2026-04-21",
+#       "date": "2025-09-26",
 #       "category": "home",
 #       "text": "User's home address is 517 Maple Drive."
 #     },
 #     {
-#       "date": "2026-01-17",
+#       "date": "2025-08-26",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-01-12",
+#       "date": "2025-07-08",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-16",
+#       "date": "2025-06-29",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -60,24 +60,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Yeah, it does. I’m starting to loo | S2 That's great. Are there any partic | S3 …actually, before we go into airli | S4 Okay, good to know. And are there 
 
-     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. I understand you’re planning a trip to Ne
-     6.49s  agent 발화 끝
-     6.97s  user  발화 시작: Yeah, it’s been a dream for a while. I’m starting to look at
-    11.68s  <ret> 발화 (turn2 첫 프레임)
-    12.08s  agent 발화 시작: <ret> It can be, certainly. To help narrow things down, do y
-    12.21s  user  발화 끝
-    13.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [2026-07-11] User prefers an aisle seat when traveling.
-    17.54s  agent 발화 시작: You do! You prefer an aisle seat when you travel. I can prio
-    17.73s  agent 발화 끝
-    21.23s  user  발화 시작: Mm-hmm.
-    21.73s  user  발화 끝
-    22.45s  agent 발화 시작: Now, looking at flights to Auckland in October— there are se
-    22.67s  agent 발화 끝
-    30.12s  user  발화 시작: …actually, before we get into prices, are there any airlines
-    30.88s  agent 발화 끝
-    35.69s  agent 발화 시작: That’s a great question. Air New Zealand consistently receiv
-    35.77s  user  발화 끝
-    42.00s  user  발화 시작: Okay, good to know. And are aisle seats usually available on
-    42.22s  agent 발화 끝
-    47.93s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. I understand you’re planning a trip to Ne
+     6.25s  agent 발화 끝
+     6.69s  user  발화 시작: Yeah, it does. I’m starting to look at flights, and I always
+    10.78s  <ret> 발화 (turn2 첫 프레임)
+    11.16s  agent 발화 시작: <ret> Considering your travel preferences… You prefer an ais
+    11.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.37s]: [2026-06-07] User prefers an aisle seat when traveling.
+    11.36s  user  발화 끝
+    17.00s  user  발화 시작: Mm-hmm.
+    17.50s  user  발화 끝
+    18.85s  user  발화 시작: That's great. Are there any particular airlines that are goo
+    19.04s  agent 발화 끝
+    24.17s  agent 발화 시작: Several airlines offer excellent service on that route. Let 
+    24.26s  user  발화 끝
+    29.41s  user  발화 시작: …actually, before we go into airlines, what’s the best time 
+    30.18s  agent 발화 끝
+    34.08s  <ret> 발화 (turn7 첫 프레임)
+    34.32s  agent 발화 시작: <ret> Unfortunately, I don’t have specific detailed weather 
+    34.55s  user  발화 끝
+    36.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.25s]: [no information found]
+    46.57s  agent 발화 끝
+    48.10s  user  발화 시작: Okay, good to know. And are there any areas you’d recommend 
+    54.17s  user  발화 끝

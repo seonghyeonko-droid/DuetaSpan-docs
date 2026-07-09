@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-08-04",
+#       "date": "2026-04-08",
 #       "category": "home",
 #       "text": "User's home address is 165 Cedar Lane."
 #     },
 #     {
-#       "date": "2026-07-16",
+#       "date": "2026-03-26",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-07-13",
+#       "date": "2025-08-17",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-06-19",
+#       "date": "2025-07-04",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in December."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2025-06-28",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-02-14",
+#       "date": "2025-05-27",
 #       "category": "work",
 #       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-24",
+#       "date": "2026-02-09",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -58,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-15",
+#       "date": "2025-11-28",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -69,11 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I help
-     7.83s  agent 발화 끝
-     8.99s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
-    16.97s  user  발화 끝
-    17.03s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
-    27.60s  agent 발화 끝
-    27.67s  user  발화 시작: Well, I— I mean, I’ve been wanting to travel again, but I ha
-    34.81s  user  발화 끝
+     0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I’m he
+     8.35s  agent 발화 끝
+     9.31s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling really overwhelm
+    15.66s  user  발화 끝
+    15.71s  agent 발화 시작: It’s perfectly normal to feel overwhelmed, especially with s
+    24.57s  agent 발화 끝
+    24.62s  user  발화 시작: Well, I— I mean, I’m trying to save for a down payment on a 
+    31.44s  user  발화 끝
+    31.68s  agent 발화 시작: That’s a wonderful goal! Saving for something big like a dow
+    41.00s  agent 발화 끝

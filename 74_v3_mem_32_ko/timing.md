@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-25",
+#       "date": "2026-03-15",
 #       "category": "trip",
 #       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2026-06-14",
+#       "date": "2026-02-20",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-10",
+#       "date": "2025-08-28",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-02-26",
+#       "date": "2025-06-11",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-12",
+#       "date": "2026-05-22",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-20",
+#       "date": "2025-07-07",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,35 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 투날로님, 혹시 제가 예전에 얘기했던 교토 여행 계획 기 | S2 맞아요! 그런데 갑자기 일정이 좀 바뀌었는데, 혹시 제가 그때 | S3 사실은… 여행 날짜를 좀 더 앞당기려고 하는데, 이월 말쯤으로 | S4 아, 그러셨군요… 혹시 제가 그때 맛집을 물어봤었나?
+# EXAMINER(FDB-v2) 단계: S1 아, 네. 투날로 씨. 혹시 제가 예전에 얘기했던 교토 여행  | S2 네, 맞아요. 그때 혹시 제가 여행 준비하면서 부탁했던 게 있 | S3 아, 네! 그때 제가 여행 중에 혹시 암벽 등반을 할 만한 곳 | S4 오, 정말 좋겠어요! 부탁드릴게요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 마농님. 저는 투날로예요. 창의적인 막힘이나 자신감 문제로 고민이실 때, 제가 함께 고민하고 도
-     6.43s  user  발화 시작: 그러니까요.
-     7.06s  user  발화 끝
-     8.67s  agent 발화 끝
-     9.36s  user  발화 시작: 음… 투날로님, 혹시 제가 예전에 얘기했던 교토 여행 계획 기억하시나요?
-    14.01s  <ret> 발화 (turn3 첫 프레임)
-    14.08s  agent 발화 시작: <ret> 네, 마농님. 다음 달에 교토 여행을 계획하고 계시죠. 삼월에 가신다고 말씀하셨어요.
-    14.31s  user  발화 끝
-    14.89s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.24s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    16.56s  user  발화 시작: 그렇죠.
-    17.05s  user  발화 끝
-    20.89s  agent 발화 끝
-    21.14s  user  발화 시작: 맞아요! 그런데 갑자기 일정이 좀 바뀌었는데, 혹시 제가 그때 뭐라고 말씀드렸었는지 기억나세요?
-    26.95s  agent 발화 시작: 물론이죠, 마농님. 삼월에 교토 여행을 가신다고 하셨고, 혹시 일정이 어떻게 바뀌었는지 좀 더 자세히 말씀해
-    26.97s  user  발화 끝
-    35.16s  agent 발화 끝
-    36.20s  user  발화 시작: 사실은… 여행 날짜를 좀 더 앞당기려고 하는데, 이월 말쯤으로요. 그때 제가 뭘 부탁드렸었는지 기억하실까요?
-    42.95s  <ret> 발화 (turn8 첫 프레임)
-    43.02s  agent 발화 시작: <ret> 아, 날짜를 변경하시는군요. 그때 교토 여행에 대해 특별히 부탁하신 사항은 없으셨던 걸로 기억해요
-    43.06s  user  발화 끝
-    44.39s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.55s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    49.74s  agent 발화 끝
-    49.85s  user  발화 시작: 아, 그러셨군요… 혹시 제가 그때 맛집을 물어봤었나?
-    53.50s  <ret> 발화 (turn10 첫 프레임)
-    53.57s  agent 발화 시작: <ret> 마농님, 음식에 대한 취향은 기억하고 있어요.
-    53.59s  user  발화 끝
-    54.70s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.93s]: [2026-03-10] User's favorite cuisine is sushi.
-    57.46s  agent 발화 시작: 스시를 가장 좋아하신다고 말씀하셨었어요. 혹시 교토에서 스시 맛집을 찾으시는 건가요?
-    57.50s  agent 발화 끝
-    64.22s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 마농 님. 저는 투날로예요. 창의적인 고민이나 자신감 문제로 어려움을 겪고 계신 분들을 돕는 상
+     8.58s  agent 발화 끝
+     9.43s  user  발화 시작: 아, 네. 투날로 씨. 혹시 제가 예전에 얘기했던 교토 여행 계획 기억하시나요?
+    14.07s  <ret> 발화 (turn2 첫 프레임)
+    14.14s  agent 발화 시작: <ret> 네, 기억하고 있어요. 내년 삼월에 교토 여행을 계획하고 계시다고 말씀해주셨었죠.
+    14.29s  user  발화 끝
+    14.95s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.71s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    19.83s  user  발화 시작: 네, 맞아요. 그때 혹시 제가 여행 준비하면서 부탁했던 게 있었던가요? 기억이 잘 안 나네요.
+    19.83s  agent 발화 끝
+    24.81s  agent 발화 시작: 여행 준비와 관련해서는 특별히 부탁하신 내용이 기억나지 않지만, 혹시 지금 떠오르는 게 있으신가요?
+    25.02s  user  발화 끝
+    30.68s  user  발화 시작: 네.
+    31.03s  user  발화 끝
+    32.50s  agent 발화 끝
+    33.41s  user  발화 시작: 아, 네! 그때 제가 여행 중에 혹시 암벽 등반을 할 만한 곳이 있을지 물어봤었죠.
+    37.93s  <ret> 발화 (turn7 첫 프레임)
+    38.01s  agent 발화 시작: <ret> 암벽 등반을 좋아하시는군요. 암벽 등반을 즐기신다고 하셨으니, 교토 근처에서 암벽 등반을 즐길 수
+    38.13s  user  발화 끝
+    39.53s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.67s]: [2026-02-20] User is into rock climbing.
+    46.91s  agent 발화 끝
+    46.97s  user  발화 시작: 오, 정말 좋겠어요! 부탁드릴게요.
+    49.50s  user  발화 끝

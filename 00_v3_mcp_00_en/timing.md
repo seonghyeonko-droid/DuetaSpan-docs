@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
+#       "date": "2026-06-13",
 #       "category": "trip",
 #       "text": "User is planning a trip to Kyoto in May."
 #     },
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-03-05",
 #       "category": "work",
 #       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2026-04-24",
+#       "date": "2025-11-28",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2025-09-17",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-01-09",
+#       "date": "2025-08-04",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-27",
+#       "date": "2026-06-09",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -53,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-11",
+#       "date": "2025-08-02",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -63,75 +63,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 I bet. Do they have vegetarian opt | S3 Fantastic! That’s a huge weight of | S4 That sounds ideal. Is there anythi
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Are there any good bookstores alon | S3 [happy] Good to know! Maybe I’ll g | S4 I think it will be. One last thing
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.59s  <ret> 발화 (turn1 첫 프레임)
-     3.81s  agent 발화 시작: <ret> The Eiffel Tower’s coordinates are latitude 48.8584 an
-     3.93s  user  발화 끝
-     4.87s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.62s]: (tool result) 48.8584, 2.2945
-    12.39s  user  발화 시작: Okay, great. And can you find me a highly-rated French resta
-    12.43s  agent 발화 끝
-    16.99s  <ret> 발화 (turn3 첫 프레임)
-    17.39s  agent 발화 시작: <ret> Le Jules Verne is a French restaurant with 4.7 stars, 
-    17.66s  user  발화 끝
-    18.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) Le Jules Verne, 4.7 stars, 500m
-    26.56s  agent 발화 끝
-    26.82s  user  발화 시작: Wow, that sounds fancy. What’s their phone number?
-    29.75s  <ret> 발화 (turn5 첫 프레임)
-    30.07s  agent 발화 시작: <ret> Their phone number is +33 1 45 55 61 44. You might nee
-    30.19s  user  발화 끝
-    31.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) +33 1 45 55 61 44
-    38.51s  agent 발화 끝
-    38.78s  user  발화 시작: I bet. Do they have vegetarian options?
-    41.55s  user  발화 끝
-    41.68s  agent 발화 시작: Many French restaurants are happy to accommodate dietary nee
-    48.78s  user  발화 시작: …Do they list any on their website, maybe?
-    49.56s  agent 발화 끝
-    51.32s  <ret> 발화 (turn9 첫 프레임)
-    51.56s  agent 발화 시작: <ret> Their website states they offer a vegetarian tasting m
-    51.69s  user  발화 끝
-    53.00s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.97s]: (tool result) “Vegetarian tasting menu available upon request.”
-    54.64s  user  발화 시작: Yeah.
-    55.27s  user  발화 끝
-    59.50s  user  발화 시작: Perfect! Could you try to book a table for two people tomorr
-    59.53s  agent 발화 끝
-    65.17s  <ret> 발화 (turn12 첫 프레임)
-    65.25s  agent 발화 시작: <ret> I’ve confirmed a reservation for two people at 8:00 PM
-    65.29s  user  발화 끝
-    67.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Reservation confirmed for 2 people at 8:00 PM tomorrow. 
-    73.92s  agent 발화 끝
-    75.56s  user  발화 시작: Fantastic! That’s a huge weight off my mind.
-    79.44s  agent 발화 시작: I'm so glad I could help with that! Planning is a great way 
-    79.57s  user  발화 끝
-    80.99s  user  발화 시작: Okay.
-    81.63s  user  발화 끝
-    84.12s  user  발화 시작: You’re right. It's a date night, and I wanted it to be speci
-    84.29s  agent 발화 끝
-    87.86s  user  발화 끝
-    88.26s  agent 발화 시작: A date night sounds lovely! It’s wonderful to put effort int
-    96.14s  agent 발화 끝
-    97.56s  user  발화 시작: I'm hoping the weather will be nice. Can you check the forec
-   102.94s  user  발화 끝
-   102.96s  <ret> 발화 (turn19 첫 프레임)
-   103.12s  agent 발화 시작: <ret> The forecast for Paris tomorrow is a high of 22 degree
-   104.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.94s]: (tool result) High of 22°C, partly cloudy.
-   112.07s  agent 발화 끝
-   113.33s  user  발화 시작: That sounds ideal. Is there anything else I should know abou
-   118.29s  user  발화 끝
-   118.33s  agent 발화 시작: It's known for its exceptional views and elegant atmosphere.
-   124.39s  agent 발화 끝
-   124.53s  user  발화 시작: A splurge is okay for a special occasion. What’s the dress c
-   129.31s  <ret> 발화 (turn23 첫 프레임)
-   129.55s  agent 발화 시작: <ret> Their website indicates a smart casual dress code is r
-   129.76s  user  발화 끝
-   130.83s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.69s]: (tool result) “Smart casual attire required.”
-   136.75s  user  발화 시작: Smart casual, got it. Thanks so much for all your help, Nell
-   137.24s  agent 발화 끝
-   141.60s  agent 발화 시작: You’re very welcome! It's my pleasure to assist. Remember, s
-   141.61s  user  발화 끝
-   144.40s  user  발화 시작: Okay.
-   145.03s  user  발화 끝
-   150.22s  agent 발화 시작: I hope you have a wonderful time on your date!
-   150.32s  agent 발화 끝
-   152.90s  agent 발화 끝
+     3.75s  <ret> 발화 (turn1 첫 프레임)
+     3.98s  agent 발화 시작: <ret> Certainly. The Eiffel Tower in Paris is located at 48.
+     4.11s  user  발화 끝
+     5.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.25s]: (tool result) 48.8584° N, 2.2945° E
+    11.13s  user  발화 시작: Right.
+    11.63s  user  발화 끝
+    14.22s  agent 발화 끝
+    14.37s  user  발화 시작: Okay, great. And how far is that from, say, the Louvre Museu
+    17.49s  <ret> 발화 (turn4 첫 프레임)
+    17.88s  agent 발화 시작: <ret> It’s approximately 3.1 kilometers from the Eiffel Towe
+    17.93s  user  발화 끝
+    19.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) 3.1 kilometers
+    25.83s  user  발화 시작: That sounds doable. Is there a good route for walking?
+    25.86s  agent 발화 끝
+    29.11s  <ret> 발화 (turn6 첫 프레임)
+    29.43s  agent 발화 시작: <ret> Absolutely. A walking route along the Seine is estimat
+    29.48s  user  발화 끝
+    30.95s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.79s]: (tool result) Along the Seine, estimated time 45 minutes.
+    33.53s  user  발화 시작: Oh.
+    33.92s  user  발화 끝
+    35.13s  agent 발화 시작: It's a beautiful walk, passing by several charming cafes and
+    35.21s  agent 발화 끝
+    39.76s  user  발화 시작: Are there any good bookstores along that route?
+    40.40s  agent 발화 끝
+    42.85s  user  발화 끝
+    42.89s  agent 발화 시작: That’s a lovely question! Yes, there's Shakespeare and Compa
+    46.00s  user  발화 시작: Okay.
+    46.64s  user  발화 끝
+    52.27s  user  발화 시작: Oh, that sounds perfect! Can you give me directions to Shake
+    52.31s  agent 발화 끝
+    57.88s  <ret> 발화 (turn13 첫 프레임)
+    58.20s  agent 발화 시작: <ret> Of course. From the Louvre, it’s about a 25-minute wal
+    58.20s  user  발화 끝
+    59.16s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.11s]: (tool result) 25 minutes, along the Seine.
+    64.31s  agent 발화 끝
+    66.05s  user  발화 시작: Wonderful. I think I'll plan that. Is it usually crowded the
+    70.62s  agent 발화 시작: Shakespeare and Company is quite popular, especially with to
+    70.77s  user  발화 끝
+    78.83s  agent 발화 끝
+    78.86s  user  발화 시작: [happy] Good to know! Maybe I’ll go early. Could you check i
+    84.30s  <ret> 발화 (turn17 첫 프레임)
+    84.65s  user  발화 끝
+    84.69s  agent 발화 시작: <ret> Yes, they have a poetry reading scheduled for 7 PM tom
+    86.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) Poetry reading, 7 PM.
+    89.88s  agent 발화 끝
+    89.90s  user  발화 시작: A poetry reading! That’s fantastic. Can you add a reminder t
+    97.36s  <ret> 발화 (turn19 첫 프레임)
+    97.59s  agent 발화 시작: <ret> Certainly! A reminder for the poetry reading has been 
+    97.64s  user  발화 끝
+    99.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Reminder set for tomorrow, 6:45 PM.
+   104.39s  user  발화 시작: Perfect. That's really helpful.
+   104.54s  agent 발화 끝
+   106.67s  agent 발화 시작: I’m so glad I could assist you in planning your day! It soun
+   106.70s  user  발화 끝
+   112.05s  agent 발화 끝
+   112.57s  user  발화 시작: I think it will be. One last thing—is there a nice place for
+   119.16s  <ret> 발화 (turn23 첫 프레임)
+   119.29s  user  발화 끝
+   119.40s  agent 발화 시작: <ret> There’s Le Bouillon Chartier, a traditional French res
+   121.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Le Bouillon Chartier, 10 minutes walk.
+   125.77s  user  발화 시작: Le Bouillon Chartier, okay. I've heard of that place.
+   125.98s  agent 발화 끝
+   129.60s  user  발화 끝
+   129.92s  agent 발화 시작: It’s known for its classic French cuisine and affordable pri
+   136.45s  agent 발화 끝
+   137.40s  user  발화 시작: Right. Well, thank you so much for all your help.
+   139.93s  user  발화 끝
+   139.95s  agent 발화 시작: You're very welcome! Enjoy your explorations in Paris, and r
+   149.64s  agent 발화 끝

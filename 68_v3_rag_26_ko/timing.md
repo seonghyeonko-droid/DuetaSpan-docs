@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-23",
+#       "date": "2026-06-10",
 #       "category": "home",
 #       "text": "User's home address is 249 Cedar Lane."
 #     },
 #     {
-#       "date": "2026-03-15",
+#       "date": "2026-04-10",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-02-13",
+#       "date": "2026-02-09",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-11",
+#       "date": "2025-11-30",
 #       "category": "work",
 #       "text": "User works as a accountant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-08-04",
+#       "date": "2025-09-24",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-05-28",
+#       "date": "2025-05-28",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,31 +58,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 검은색, 빨간색, 노란색이 들어간 국기가 궁금해. 어떤 나라  | S2 글쎄… 독일? 독일 국기가 그런 색깔이었던가? | S3 금색이구나. 까먹었네. 다른 나라도 비슷한 색깔을 쓰나? | S4 어… 벨기에 국기는 좀 다르네. 검은색, 노란색, 빨간색이네.
 
-     0.00s  user  발화 시작: 검은색, 빨간색, 노란색이 들어간 국기가 궁금해. 어떤 나라 국기일까?
-     6.30s  agent 발화 시작: 음, 그 조합이면 꽤 여러 나라가 있을 수 있겠네요. 혹시 특별히 떠오르는 나라는 없으세요?
-     6.39s  user  발화 끝
-    13.25s  agent 발화 끝
-    13.27s  user  발화 시작: 글쎄… 독일? 독일 국기가 그런 색깔이었던가?
-    16.80s  <ret> 발화 (turn3 첫 프레임)
-    17.11s  agent 발화 시작: <ret> 독일 국기는 검정색, 빨간색, 금색의 가로 줄무늬 세 개로 이루어져 있어요.
-    17.29s  user  발화 끝
-    18.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: [source: Britannica] The flag of Germany consists of three equal horiz
-    19.04s  user  발화 시작: 음.
-    19.58s  user  발화 끝
-    22.53s  agent 발화 끝
-    22.63s  user  발화 시작: 금색이구나. 까먹었네. 다른 나라도 비슷한 색깔을 쓰나?
-    27.81s  user  발화 끝
-    27.87s  agent 발화 시작: 물론이죠. 벨기에 국기도 비슷한 색상을 사용해요.
-    31.32s  <ret> 발화 (turn7 첫 프레임)
-    31.55s  agent 발화 시작: <ret> 벨기에 국기는 검정색, 노란색, 빨간색의 세로 줄무늬로 구성되어 있어요.
-    31.66s  agent 발화 끝
-    33.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: [source: Wikipedia] The Belgian flag is a tricolour of black, yellow a
-    34.55s  user  발화 시작: 어어.
-    35.32s  user  발화 끝
-    37.10s  agent 발화 끝
-    37.15s  user  발화 시작: 어… 벨기에 국기는 좀 다르네. 검은색, 노란색, 빨간색이네. 독일이랑 순서가 다르네.
-    45.40s  agent 발화 시작: 맞아요. 독일은 검정, 빨강, 금색이고 벨기에는 검정, 노랑, 빨간색이라서 조금 차이가 있어요. 색깔은 비슷
-    45.58s  user  발화 끝
-    56.11s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 검은색, 빨간색, 노란색이 들어간 국기가 궁금해. 혹시 알아? 요즘 공부가 너무 안 돼서 머리가 엉망이
+     9.07s  <ret> 발화 (turn1 첫 프레임)
+     9.14s  agent 발화 시작: <ret> 색깔 조합만으로는 여러 나라가 있을 수 있거든요.
+     9.27s  user  발화 끝
+    11.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: [source: Britannica] The flag of Germany features three horizontal ban
+    12.58s  agent 발화 시작: 독일 국기를 말씀하시는 걸까요? 독일 국기는 검은색, 빨간색, 금색—노란색—가로 줄무늬로 이루어져 있어요.
+    12.66s  agent 발화 끝
+    15.28s  user  발화 시작: 음.
+    15.78s  user  발화 끝
+    19.91s  user  발화 시작: 잠깐만, 혹시 그 국기 색깔에 특별한 의미가 있어?
+    19.99s  agent 발화 끝
+    23.94s  <ret> 발화 (turn5 첫 프레임)
+    24.08s  agent 발화 시작: <ret> 색깔에는 역사적인 의미가 담겨 있답니다. 검은색은 자유를, 빨간색은 정의를, 그리고 노란색은 희망
+    24.27s  user  발화 끝
+    25.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.17s]: [source: History.com] The colors of the German flag are said to repres
+    33.22s  user  발화 시작: 오, 그렇구나. 공부하다가 잠깐 딴 생각했네. 독일 국기 말고 다른 나라도 비슷한 색깔을 쓰나?
+    33.25s  agent 발화 끝
+    40.81s  user  발화 끝
+    41.08s  agent 발화 시작: 비슷한 색을 가진 국기는 또 있을 수 있어요. 어떤 다른 나라들이 궁금하신가요?
+    46.92s  agent 발화 끝

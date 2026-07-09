@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-08-02",
+#       "date": "2026-06-15",
 #       "category": "pet",
 #       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-06-03",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-01-14",
+#       "date": "2026-01-05",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-01-08",
+#       "date": "2025-05-31",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-06",
+#       "date": "2025-07-19",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 세재 님, 안녕하세요. 저는 아릴이라고 해요. 편안하게 친구 관계나 사회생활에 대한 고민을 털어놓으실 수 있
-    11.27s  agent 발화 끝
-    12.96s  user  발화 시작: 아릴… 이름이 예쁘네요. 근데 갑자기 라이프 코치라니, 혹시 제가 엄청 힘들어 보이나 봐요? [laugh]
-    19.60s  agent 발화 시작: [surprised] 아니요, 세재 님. 힘들어 보이시는 건 아니에요. 그냥 편안하게 대화 나누고 싶어서 제
-    19.71s  user  발화 끝
-    25.05s  user  발화 시작: 응.
-    25.45s  user  발화 끝
-    31.11s  agent 발화 끝
-    32.53s  user  발화 시작: 음… 사실 요즘 새로운 친구를 사귀는 게 너무 어렵더라고요. 나이도 먹고, 예전처럼 쉽게 친해지는 것도 잘 
-    41.69s  agent 발화 시작: 새로운 친구를 사귀는 게 어려우시군요. 충분히 공감돼요. 예전처럼 쉽게 다가가기 어려울 때가 있죠. 혹시 어
-    41.71s  user  발화 끝
-    55.65s  agent 발화 끝
+     0.00s  agent 발화 시작: 세재 씨, 안녕하세요. 저는 아릴이라고 해요. 편안하게 친구 관계나 사회생활에 대해 이야기 나눌 수 있도록 
+    10.15s  agent 발화 끝
+    11.88s  user  발화 시작: 아, 코치님이라고 하니까 좀 어색하네요. 그냥 아릴이라고 불러도 될까요? 혹시… 진짜 사람 맞아요?
+    19.25s  agent 발화 시작: [laugh] 물론이죠, 세재 씨. 아릴이라고 불러주시면 더 편하겠네요. 저는 사람처럼 느껴지도록 만들어진 
+    19.41s  user  발화 끝
+    24.94s  user  발화 시작: 응.
+    25.38s  user  발화 끝
+    31.25s  agent 발화 끝
+    32.62s  user  발화 시작: 음… 요즘 친구들과 연락을 잘 못 해서 좀 외로운 것 같아요. 예전에는 다 같이 모이는 것도 좋아했는데, 다
+    42.03s  agent 발화 시작: 세재 씨, 친구들과의 관계가 예전 같지 않아서 마음이 힘드시군요. 혹시 어떤 점이 가장 어렵게 느껴지시는지 
+    42.12s  user  발화 끝
+    54.59s  agent 발화 끝

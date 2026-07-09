@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-12",
+#       "date": "2026-02-11",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-06-09",
+#       "date": "2026-01-09",
 #       "category": "work",
 #       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-04-03",
+#       "date": "2025-09-07",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-03-14",
+#       "date": "2025-07-07",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-18",
+#       "date": "2026-03-01",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-05",
+#       "date": "2025-06-25",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,29 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, who actually | S2 Hey, did you remember to take the  | S3 Sorry about that. So, Van Halen ju | S4 That’s incredible! Jackson went to
+# EXAMINER(FDB-v2) 단계: S1 Hey Jal, I was just wondering who  | S2 Wow, I had no idea! I always assum | S3 Did you remember to take the trash | S4 Sorry about that, where was Van Ha
 
-     0.00s  user  발화 시작: I was just wondering, who actually played the guitar solo on
-     6.64s  <ret> 발화 (turn1 첫 프레임)
-     6.88s  agent 발화 시작: <ret> That’s a great question, and a very famous solo. Eddie
-     7.05s  user  발화 끝
-     8.40s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.08s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-    10.03s  user  발화 시작: Okay.
-    10.57s  user  발화 끝
-    15.09s  agent 발화 끝
-    15.15s  user  발화 시작: Wow, really? I always thought it was someone else. That's am
-    20.01s  user  발화 시작: Hey, did you remember to take the trash out?
-    20.16s  user  발화 끝
-    22.83s  user  발화 시작: Sorry about that. So, Van Halen just… agreed to do it?
-    23.06s  user  발화 끝
-    26.41s  <ret> 발화 (turn6 첫 프레임)
-    26.80s  agent 발화 시작: <ret> It’s a fascinating story, actually. He was initially h
-    26.99s  user  발화 끝
-    28.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [source: Rolling Stone] Van Halen initially refused to play on “Beat I
-    31.91s  agent 발화 시작: Michael Jackson personally visited Eddie Van Halen and persu
-    31.99s  agent 발화 끝
-    37.24s  agent 발화 끝
-    37.28s  user  발화 시작: That’s incredible! Jackson went to *him*? I had no idea.
-    42.12s  agent 발화 시작: It really highlights Jackson’s dedication to getting exactly
-    42.28s  user  발화 끝
-    51.11s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Jal, I was just wondering who actually played the guitar
+     6.85s  <ret> 발화 (turn1 첫 프레임)
+     7.08s  agent 발화 시작: <ret> That’s a fantastic question, and a really memorable so
+     7.23s  user  발화 끝
+     8.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.47s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+    11.30s  user  발화 시작: Okay.
+    11.94s  user  발화 끝
+    17.89s  agent 발화 끝
+    18.02s  user  발화 시작: Wow, I had no idea! I always assumed it was someone more clo
+    24.41s  user  발화 시작: Did you remember to take the trash out?
+    24.60s  user  발화 끝
+    26.57s  user  발화 시작: Sorry about that, where was Van Halen when he recorded it? W
+    26.76s  user  발화 끝
+    31.19s  <ret> 발화 (turn6 첫 프레임)
+    31.58s  agent 발화 시작: <ret> He was gaining quite a bit of recognition— By 1982, Ed
+    31.76s  user  발화 끝
+    32.55s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.67s]: [source: Rolling Stone] By 1982, Eddie Van Halen and Van Halen had rel
+    43.60s  agent 발화 끝

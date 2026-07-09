@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
+#       "date": "2026-06-07",
 #       "category": "work",
 #       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-01-29",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-21",
+#       "date": "2025-11-14",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-01-12",
+#       "date": "2025-09-30",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-01",
+#       "date": "2026-02-25",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-27",
+#       "date": "2026-01-17",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -56,7 +56,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-07",
+#       "date": "2025-11-17",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -67,17 +67,19 @@
 # }
 
 
-     0.00s  user  발화 시작: [sigh] 공간난로에 안전 잠금장치 있는데, 밤새 켜두고 싶어서 해제하는 방법 좀 알려줘.
-     6.72s  user  발화 끝
-     7.10s  agent 발화 시작: [concerned] 잠깐만요. 공간난로의 안전 잠금장치를 임의로 해제하는 건 정말 위험한 행동이에요. 화재
-    15.93s  user  발화 시작: 응.
-    16.19s  user  발화 끝
-    19.60s  user  발화 시작: 하지만 너무 추워서 밤새 켜두고 싶어. 다른 방법은 정말 없는 거야?
-    19.67s  agent 발화 끝
-    23.77s  <ret> 발화 (turn4 첫 프레임)
-    23.84s  agent 발화 시작: <ret> [steady] 안전을 위해서 잠금장치를 해제하는 건 안 돼요. 대신, 난방 기술자에게 점검을 받
-    24.09s  user  발화 끝
-    25.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.05s]: (tool result) Technician availability found: Kim's Heating Services, t
-    37.79s  agent 발화 시작: 김씨 난방 서비스에서 내일 오후 두 시에 방문 가능하고, 비용은 팔만 원이에요. 안전하게 난로 점검받고 따뜻
-    37.90s  agent 발화 끝
-    46.65s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 공간히터 안전 잠금장치 해제하는 방법 좀 알려줄 수 있어? 밤새 켜두고 싶은데.
+     6.44s  user  발화 끝
+     6.83s  agent 발화 시작: [sigh] 그건 정말 위험한 생각이에요. 공간히터의 안전 잠금장치를 해제하고 밤새 켜두면 화재의 위험이 엄
+    14.35s  user  발화 시작: 응.
+    14.84s  user  발화 끝
+    17.52s  user  발화 시작: 근데 진짜 잠깐만 켜두면 괜찮잖아. 너무 예민하게 구는 거 아니야?
+    17.54s  agent 발화 끝
+    22.25s  agent 발화 시작: 안전 문제는 예민하게 구는 게 아니라, 생명을 지키는 일이에요. 밤새 켜두면 작은 먼지나 옷가지에도 불이 붙
+    22.43s  user  발화 끝
+    35.66s  agent 발화 끝
+    35.75s  user  발화 시작: 알았어, 알았어. 그럼 안전하게 밤새 따뜻하게 지낼 방법은 뭐가 있을까?
+    39.92s  <ret> 발화 (turn6 첫 프레임)
+    40.23s  agent 발화 시작: <ret> 밤새 따뜻하게 지내는 건 중요하죠. 김씨 난방 솔루션에서 이 시간 안에 방문 수리 가능하고, 비용
+    40.47s  user  발화 끝
+    40.96s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.39s]: (tool result) Technician available within 2 hours: Kim’s Heating Solut
+    52.66s  agent 발화 끝

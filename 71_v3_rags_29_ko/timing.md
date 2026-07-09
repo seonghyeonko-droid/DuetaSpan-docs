@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-09",
+#       "date": "2026-03-05",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-05-10",
+#       "date": "2026-02-24",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-04-16",
+#       "date": "2025-12-13",
 #       "category": "trip",
 #       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2026-03-08",
+#       "date": "2025-10-31",
 #       "category": "home",
 #       "text": "User's home address is 343 Cedar Lane."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2025-07-13",
 #       "category": "diet",
 #       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-11",
+#       "date": "2026-04-15",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -56,9 +56,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 빈스 카터 선수 말고 현재 nba에서 가장 나이가 많은 선수는 누구인가요?
-     5.01s  <ret> 발화 (turn1 첫 프레임)
-     5.17s  agent 발화 시작: <ret> 음, nba에서 가장 나이가 많은 선수는… 빈스 카터 선수가 서른한 살에 nba에서 가장 나이가 
-     5.42s  user  발화 끝
-     6.45s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.96s]: [source: ESPN] Vince Carter, at age 41, is the oldest player in the NB
-    13.56s  agent 발화 끝
+     0.00s  user  발화 시작: 빈스 카터 선수 외에 현재 nba에서 가장 나이가 많은 선수는 누구인가요?
+     4.64s  <ret> 발화 (turn1 첫 프레임)
+     4.80s  agent 발화 시작: <ret> 음, nba에서 가장 나이가 많은 선수는… 빈스 카터 선수가 현재 사십일 세로, nba에서 가장 
+     5.00s  user  발화 끝
+     6.08s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.11s]: [source: ESPN] Vince Carter, at age 41, is currently the oldest player
+    13.61s  agent 발화 끝

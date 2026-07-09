@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-02",
+#       "date": "2026-06-26",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-05-20",
+#       "date": "2026-04-22",
 #       "category": "work",
 #       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2026-03-04",
+#       "date": "2026-03-27",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-20",
+#       "date": "2026-03-03",
 #       "category": "diet",
 #       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-02-07",
+#       "date": "2025-10-11",
 #       "category": "trip",
 #       "text": "User is planning a trip to Switzerland in March."
 #     },
 #     {
-#       "date": "2026-01-03",
+#       "date": "2025-07-27",
 #       "category": "home",
 #       "text": "User's home address is 960 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-16",
+#       "date": "2026-04-29",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -58,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-04",
+#       "date": "2025-06-29",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -69,21 +69,23 @@
 # }
 
 
-     0.00s  user  발화 시작: 야, 정부 부처들 읽다가… 참전용사부(Veterans Affairs)는 언제 시작했어?
-     5.41s  <ret> 발화 (turn1 첫 프레임)
-     5.81s  agent 발화 시작: <ret> 음, 참전용사부는 천구백삼십년 칠월 이십일일에 설립되었어요.
-     5.93s  user  발화 끝
-     7.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-     9.95s  user  발화 시작: 천구백삼십년? 솔직히 생각보다 엄청 최근인데. 훨씬 오래됐을 줄 알았어.
-    10.06s  agent 발화 끝
-    15.84s  <ret> 발화 (turn3 첫 프레임)
-    16.00s  agent 발화 시작: <ret> 네, 천구백삼십년 이전에는 연금국에서 참전용사 관련 업무를 담당했었는데, 연금국은 천팔백십일년에 
-    16.25s  user  발화 끝
-    17.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: [source: VA.gov] Prior to 1930, veterans’ affairs were handled by the 
-    25.41s  agent 발화 끝
-    26.21s  user  발화 시작: 천팔백십일… 생각보다 일찍부터 참전용사들을 챙겼네, 그냥 부서가 따로 없었던 거구나?
-    32.14s  <ret> 발화 (turn5 첫 프레임)
-    32.38s  agent 발화 시작: <ret> 네, 연금국은 독립전쟁 참전용사와 그들의 미망인들에게 처음으로 연금을 지급했어요.
-    32.55s  user  발화 끝
-    34.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: [source: History.com] The Bureau of Pensions initially focused on prov
-    38.73s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 정부 부처들 읽다가… 참전용사부 있잖아, 그거 언제 시작했어?
+     4.45s  <ret> 발화 (turn1 첫 프레임)
+     4.85s  agent 발화 시작: <ret> 음, 참전용사부는 천구백삼십 년에 국가 기관이 됐습니다.
+     4.90s  user  발화 끝
+     6.05s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.72s]: [source: Wikipedia] The United States Department of Veterans Affairs w
+     9.47s  user  발화 시작: 일구삼십년? 생각보다 늦네, 그렇지? 제1차 세계 대전 끝나고 훨씬 전에 생길 줄 알았어.
+     9.57s  agent 발화 끝
+    15.22s  <ret> 발화 (turn3 첫 프레임)
+    15.45s  agent 발화 시작: <ret> 그러실 만하네요. 참전용사분들 필요가 시간이 지나면서 변했거든요.
+    15.68s  user  발화 끝
+    17.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [source: US Department of Veterans Affairs] Prior to 1930, support for
+    20.39s  agent 발화 시작: 일구삼십년 이전에는 참전용사 지원이 중앙 집중화되지 않아서 여러 기관에 흩어져 있었어요.
+    20.63s  agent 발화 끝
+    27.61s  agent 발화 끝
+    28.32s  user  발화 시작: 그럼, 그때도 아예 없었던 건 아니고… 그냥 엉망이었던 거야? 있긴 있었어?
+    33.42s  <ret> 발화 (turn6 첫 프레임)
+    33.74s  agent 발화 시작: <ret> 네, 천팔백육십일 년부터 퇴직연금국에서 남북전쟁 참전용사하고 가족들에게 혜택을 드렸습니다.
+    33.97s  user  발화 끝
+    35.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: [source: National Archives] The Bureau of Pensions, established in 186
+    41.81s  agent 발화 끝

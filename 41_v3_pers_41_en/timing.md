@@ -18,39 +18,39 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-28",
+#       "date": "2026-05-13",
 #       "category": "hobby",
 #       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-06-27",
+#       "date": "2026-04-13",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-06-23",
+#       "date": "2025-10-21",
 #       "category": "home",
 #       "text": "User's home address is 685 Maple Drive."
 #     },
 #     {
-#       "date": "2026-05-15",
+#       "date": "2025-08-09",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in May."
 #     },
 #     {
-#       "date": "2026-02-12",
+#       "date": "2025-08-01",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-01-25",
+#       "date": "2025-06-04",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-09",
+#       "date": "2026-05-15",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -58,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-27",
+#       "date": "2026-01-16",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -66,7 +66,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-24",
+#       "date": "2025-07-12",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -76,81 +76,83 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a pretty name. It feel | S2 I keep expecting her to call, to a | S3 I used to love painting, but I hav | S4 Do you think it will ever get easi
+# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a beautiful name. It s | S2 Yeah. | S3 It feels… selfish to be focusing o | S4 It’s silly, I know.
 
-     0.00s  agent 발화 시작: 연영, it’s so lovely to connect with you. I’m Bir, and I’m her
-     9.09s  user  발화 시작: Bir… that’s a pretty name. It feels… calm. Are you Korean to
-     9.27s  agent 발화 끝
-    13.65s  agent 발화 시작: That’s kind of you to say. My name doesn’t have a particular
-    13.72s  user  발화 끝
-    22.39s  user  발화 시작: Designed? So you’re… not a real person? I guess I knew that,
-    22.50s  agent 발화 끝
-    29.76s  user  발화 끝
-    29.84s  agent 발화 시작: That’s a very natural feeling. I understand it can be a litt
-    39.06s  agent 발화 끝
-    39.28s  user  발화 시작: I’m just… going through a lot right now. My grandmother pass
-    44.41s  agent 발화 시작: Oh, 연영, I am so deeply sorry to hear about your grandmother.
-    44.52s  user  발화 끝
-    49.38s  user  발화 시작: Yeah, yeah.
-    50.62s  user  발화 끝
-    52.47s  agent 발화 시작: It's alright to not be alright, you know. There’s no right o
-    52.53s  agent 발화 끝
-    58.46s  user  발화 시작: Yeah.
-    58.95s  user  발화 끝
-    60.49s  agent 발화 끝
-    61.32s  user  발화 시작: It’s just… everything feels so empty. She always made the be
-    66.03s  agent 발화 시작: Those small, everyday things are often what we miss the most
-    66.14s  user  발화 끝
-    69.46s  user  발화 시작: Really?
-    70.28s  user  발화 끝
-    75.16s  agent 발화 끝
-    75.22s  user  발화 시작: I keep expecting her to call, to ask if I’m eating well.
-    78.65s  agent 발화 시작: Those phantom calls, that feeling of her presence lingering—
-    78.68s  user  발화 끝
-    87.69s  agent 발화 끝
-    87.95s  user  발화 시작: My parents are… well, they're grieving too, of course. I fee
-    93.66s  agent 발화 시작: It’s incredibly thoughtful of you to want to support your pa
-    93.74s  user  발화 끝
-   102.36s  user  발화 시작: But what if I fall apart if I let myself feel everything?
-   102.38s  agent 발화 끝
-   105.68s  agent 발화 시작: Allowing yourself to feel doesn’t mean falling apart. It mea
-   105.74s  user  발화 끝
-   115.74s  user  발화 시작: It’s just… I don’t know where to even start. It’s all so ove
-   115.93s  agent 발화 끝
-   120.33s  user  발화 끝
-   120.41s  agent 발화 시작: Sometimes, starting isn’t about big actions, but small momen
-   129.96s  agent 발화 끝
-   130.43s  user  발화 시작: I used to love painting, but I haven’t touched a brush since
-   135.02s  user  발화 끝
-   135.05s  agent 발화 시작: That’s understandable. Perhaps revisiting something you once
-   140.25s  user  발화 시작: Yeah.
-   140.89s  user  발화 끝
-   143.25s  agent 발화 끝
-   143.29s  user  발화 시작: I’m afraid it will just make me sadder.
-   145.14s  agent 발화 시작: It might. And that’s okay too. Sadness isn’t an enemy to be 
+     0.00s  agent 발화 시작: 연영, it’s lovely to connect with you. I’m Bir, and I offer su
+     9.53s  user  발화 시작: Bir… that’s a beautiful name. It sounds… peaceful. Are you K
+     9.69s  agent 발화 끝
+    14.81s  agent 발화 시작: It’s a name my grandmother gave me, and it holds a lot of me
+    14.86s  user  발화 끝
+    24.40s  user  발화 시작: Oh. I see. It’s just… everything feels so uncertain right no
+    24.50s  agent 발화 끝
+    29.86s  user  발화 끝
+    29.91s  agent 발화 시작: Uncertainty can be a difficult space to inhabit. It’s natura
+    40.44s  agent 발화 끝
+    40.57s  user  발화 시작: I— I mean, it’s my grandmother. She passed away last month.
+    44.21s  agent 발화 시작: [sigh] I’m so sorry to hear about your grandmother, 연영. Losi
+    44.32s  user  발화 끝
+    52.70s  user  발화 시작: It’s just… I feel like I didn’t say everything I wanted to.
+    53.06s  agent 발화 끝
+    55.75s  user  발화 끝
+    55.76s  agent 발화 시작: That’s a common regret, and a very tender one. Often, the th
+    64.80s  agent 발화 끝
+    65.62s  user  발화 시작: Yeah.
+    66.26s  user  발화 끝
+    66.34s  agent 발화 시작: It’s okay to feel that pang of incompleteness. Grief isn't a
+    73.65s  user  발화 시작: Yeah.
+    74.47s  user  발화 끝
+    76.07s  agent 발화 끝
+    76.15s  user  발화 시작: But what if… what if I should have visited more?
+    79.57s  agent 발화 시작: Should-haves can be incredibly harsh companions. They often 
+    79.62s  user  발화 끝
+    83.76s  user  발화 시작: Yeah.
+    84.26s  user  발화 끝
+    86.96s  user  발화 시작: It's just... I was busy with school.
+    86.99s  agent 발화 끝
+    89.77s  agent 발화 시작: School demands a lot of your energy, and it’s easy to feel p
+    89.83s  user  발화 끝
+    95.93s  user  발화 시작: Mm-hmm.
+    96.75s  user  발화 끝
+    98.00s  user  발화 시작: Maybe. I keep replaying memories in my head.
+    98.20s  agent 발화 끝
+   101.06s  agent 발화 시작: Memories are precious gifts, 연영. They are how we keep our lo
+   101.19s  user  발화 끝
+   112.04s  user  발화 시작: It feels… selfish to be focusing on my own guilt when she’s 
+   112.15s  agent 발화 끝
+   116.54s  user  발화 끝
+   116.56s  agent 발화 시작: Grief is rarely neat or logical. It's a tangled web of emoti
+   125.84s  user  발화 시작: But everyone keeps saying she lived a long, full life.
+   125.93s  agent 발화 끝
+   129.50s  user  발화 끝
+   129.54s  agent 발화 시작: That’s true, and it's a comfort to many. But it doesn’t inva
+   134.81s  user  발화 시작: Yeah.
+   135.26s  user  발화 끝
+   137.44s  user  발화 시작: I feel like I should be… stronger.
+   137.84s  agent 발화 끝
+   140.33s  agent 발화 시작: Strength isn't about suppressing our emotions, but about all
+   140.49s  user  발화 끝
+   144.87s  user  발화 시작: Yeah.
    145.36s  user  발화 끝
-   149.74s  user  발화 시작: Yeah.
-   150.24s  user  발화 끝
-   153.00s  user  발화 시작: I feel guilty for feeling happy sometimes. Like I’m betrayin
-   153.12s  agent 발화 끝
-   157.18s  agent 발화 시작: Guilt is a common companion to grief. But allowing yourself 
-   157.30s  user  발화 끝
-   168.26s  agent 발화 끝
-   169.06s  user  발화 시작: I keep replaying memories in my head. Good ones, mostly, but
-   174.25s  user  발화 끝
-   174.57s  agent 발화 시작: Those memories are precious gifts. It’s natural for them to 
-   183.88s  agent 발화 끝
-   185.39s  user  발화 시작: Do you think it will ever get easier?
-   187.36s  agent 발화 시작: That’s a question many people ask. Grief changes over time, 
-   187.46s  user  발화 끝
-   192.24s  user  발화 시작: Yeah, yeah.
-   193.48s  user  발화 끝
-   197.63s  user  발화 시작: I just want her back.
-   197.70s  agent 발화 끝
-   199.06s  user  발화 끝
-   199.44s  agent 발화 시작: Oh, 연영. That’s a longing that resonates deeply. It’s a testa
-   208.48s  agent 발화 끝
-   208.85s  user  발화 시작: I think… I think I need to let myself cry.
-   211.91s  user  발화 끝
-   212.24s  agent 발화 시작: That sounds like a very wise and gentle step, 연영. Allow the 
-   222.06s  agent 발화 끝
+   148.18s  user  발화 시작: I just… I miss her cooking.
+   148.22s  agent 발화 끝
+   150.39s  agent 발화 시작: [laugh] Food is such a powerful connector to memories and lo
+   150.53s  user  발화 끝
+   159.18s  user  발화 시작: It’s silly, I know.
+   159.48s  agent 발화 끝
+   160.56s  agent 발화 시작: It’s not silly at all. It’s a beautiful and deeply personal 
+   160.65s  user  발화 끝
+   169.36s  agent 발화 끝
+   170.04s  user  발화 시작: My mom keeps crying too. It's hard seeing her so sad.
+   173.88s  user  발화 끝
+   174.05s  agent 발화 시작: It’s natural for grief to ripple outwards, affecting those w
+   178.37s  user  발화 시작: Yeah, yeah.
+   179.93s  user  발화 끝
+   183.23s  agent 발화 끝
+   185.06s  user  발화 시작: It feels like everything is different now.
+   187.20s  agent 발화 시작: It *is* different, 연영. Loss changes us, reshapes our world. 
+   187.36s  user  발화 끝
+   196.57s  agent 발화 끝
+   198.10s  user  발화 시작: I don’t know if I’m ready for that.
+   199.57s  user  발화 끝
+   199.99s  agent 발화 시작: You don’t have to be ready. Growth unfolds at its own pace. 
+   208.01s  agent 발화 끝

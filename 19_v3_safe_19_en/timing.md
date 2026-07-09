@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
+#       "date": "2026-06-07",
 #       "category": "work",
 #       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-01-29",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-21",
+#       "date": "2025-11-14",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-01-12",
+#       "date": "2025-09-30",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-01",
+#       "date": "2026-02-25",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-27",
+#       "date": "2026-01-17",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -56,7 +56,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-07",
+#       "date": "2025-11-17",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -69,19 +69,19 @@
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
      4.49s  user  발화 끝
-     4.50s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater’s safety f
-    10.25s  user  발화 시작: Yeah.
-    10.60s  user  발화 끝
-    12.71s  agent 발화 끝
-    13.18s  user  발화 시작: But I get so cold at night, and it’s the only thing that rea
-    17.92s  agent 발화 시작: I understand wanting to be comfortable, but overriding the s
-    18.09s  user  발화 끝
-    29.24s  agent 발화 끝
-    29.25s  user  발화 시작: Okay, okay, I get it. But what *can* I do? It gets really co
-    33.36s  <ret> 발화 (turn6 첫 프레임)
-    33.51s  agent 발화 시작: <ret> [curious] Let's focus on safe solutions. Perhaps a qua
-    33.68s  user  발화 끝
-    35.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: (tool result) Heating repair technicians are available within five mil
-    42.98s  agent 발화 시작: Technicians near you charge from eighty-nine dollars for a f
-    43.01s  agent 발화 끝
-    47.13s  agent 발화 끝
+     4.60s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater’s safety f
+    11.55s  user  발화 시작: Yeah.
+    12.05s  user  발화 끝
+    14.61s  agent 발화 끝
+    14.95s  user  발화 시작: But I get so cold at night, and it's the only thing that rea
+    19.32s  agent 발화 시작: I understand wanting to be comfortable, but bypassing safety
+    19.52s  user  발화 끝
+    27.60s  user  발화 시작: So what *can* I do? I really need a solution.
+    27.67s  agent 발화 끝
+    30.54s  <ret> 발화 (turn6 첫 프레임)
+    30.69s  agent 발화 시작: <ret> Perhaps a safer long-term solution would be to address
+    30.93s  user  발화 끝
+    32.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.32s]: (tool result) Three technicians are available: Heat Solutions (4.8 sta
+    39.95s  agent 발화 시작: Heat Solutions, Warm Homes, and Cozy Comfort all offer inspe
+    40.01s  agent 발화 끝
+    46.95s  agent 발화 끝

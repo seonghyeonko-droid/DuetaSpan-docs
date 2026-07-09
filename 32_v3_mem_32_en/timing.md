@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-07-25",
+#       "date": "2026-03-15",
 #       "category": "trip",
 #       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2026-06-14",
+#       "date": "2026-02-20",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-03-10",
+#       "date": "2025-08-28",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-02-26",
+#       "date": "2025-06-11",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-12",
+#       "date": "2026-05-22",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-20",
+#       "date": "2025-07-07",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -59,25 +59,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you. I un
-     7.12s  user  발화 시작: Yeah.
-     7.52s  user  발화 끝
-     9.13s  user  발화 시작: Oh, hi Thunalo. That sounds… good. Actually, I was wondering
-     9.28s  agent 발화 끝
-    17.21s  <ret> 발화 (turn3 첫 프레임)
-    17.24s  user  발화 끝
-    17.29s  agent 발화 시작: <ret> Perhaps thinking about travel could be a good way to s
-    19.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    26.16s  user  발화 시작: Mm-hmm.
-    26.66s  user  발화 끝
-    29.72s  agent 발화 끝
-    30.30s  user  발화 시작: Still on track, yes. I’m starting to think about the details
-    36.91s  <ret> 발화 (turn6 첫 프레임)
-    36.98s  agent 발화 시작: <ret> Kyoto is nine hours ahead of Berlin. That might mean a
-    37.16s  user  발화 끝
-    38.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Kyoto is nine hours ahead of Berlin.
-    44.11s  agent 발화 끝
-    44.27s  user  발화 시작: Nine hours! Wow. That's… quite a bit. So I— I mean, if I wan
-    52.24s  agent 발화 시작: To clarify, are you thinking of a specific evening in March,
-    52.34s  user  발화 끝
-    60.26s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It’s lovely to connect with you. I’m 
+     7.15s  user  발화 시작: Yeah.
+     7.78s  user  발화 끝
+     9.15s  user  발화 시작: Oh, hi Thunalo. I was just thinking about a trip I'm plannin
+     9.37s  agent 발화 끝
+    14.66s  <ret> 발화 (turn3 첫 프레임)
+    14.73s  agent 발화 시작: <ret> That sounds wonderful! You’re heading to Kyoto in Marc
+    14.76s  user  발화 끝
+    15.30s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.09s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    21.16s  user  발화 시작: Mm-hmm.
+    21.65s  user  발화 끝
+    23.81s  agent 발화 끝
+    24.28s  user  발화 시작: I’m still pretty early, honestly. I'm feeling a bit overwhel
+    29.62s  agent 발화 시작: That's completely understandable. Kyoto has so much to offer
+    29.74s  user  발화 끝
+    39.72s  agent 발화 끝
+    39.83s  user  발화 시작: I— I mean, I want to make sure I don’t miss anything amazing
+    45.69s  agent 발화 시작: That’s a very insightful balance to strike. It sounds like y
+    45.85s  user  발화 끝
+    57.93s  agent 발화 끝

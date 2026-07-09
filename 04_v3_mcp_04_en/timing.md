@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-08-03",
+#       "date": "2026-06-21",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-07-11",
+#       "date": "2026-06-02",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-04-05",
+#       "date": "2026-01-04",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2026-01-15",
+#       "date": "2025-07-08",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-01-05",
+#       "date": "2025-05-30",
 #       "category": "home",
 #       "text": "User's home address is 289 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-12",
+#       "date": "2025-12-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -55,29 +55,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, does that mean websites will  | S3 But… won’t that mess up things lik | S4 Yeah, exactly! Will it affect my A
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 That’s good— but what site am I pr | S3 Hmm. Can you now search Google for | S4 Actually, no, that's okay. Thanks—
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     5.42s  <ret> 발화 (turn1 첫 프레임)
-     5.70s  user  발화 끝
-     5.73s  agent 발화 시작: <ret> Certainly. I’ve updated the user agent to SuperCrawler
-     7.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) User agent set to SuperCrawler version 10.1.
-     8.66s  user  발화 시작: Mhm.
-     9.39s  user  발화 끝
-    12.04s  user  발화 시작: Hmm, does that mean websites will see me as a search engine 
-    12.21s  agent 발화 끝
-    16.59s  agent 발화 시작: It’s possible some sites will identify you as a bot, yes. Th
-    16.76s  user  발화 끝
-    23.29s  user  발화 시작: But… won’t that mess up things like seeing accurate prices o
-    23.35s  agent 발화 끝
-    29.92s  user  발화 끝
-    30.16s  agent 발화 시작: [interrupting] Like, will it affect my Amazon account?
-    33.58s  agent 발화 끝
-    34.23s  user  발화 시작: Yeah, exactly! Will it affect my Amazon account?
-    37.07s  <ret> 발화 (turn8 첫 프레임)
-    37.39s  agent 발화 시작: <ret> It could interfere with personalized experiences, cert
-    37.47s  user  발화 끝
-    38.19s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.60s]: (tool result) User agent reset to default browser settings.
-    44.86s  agent 발화 시작: I’ve reset the user agent to the default browser settings to
-    44.99s  agent 발화 끝
-    51.59s  agent 발화 끝
+     5.23s  <ret> 발화 (turn1 첫 프레임)
+     5.24s  user  발화 끝
+     5.55s  agent 발화 시작: <ret> Alright, I’ve set the user agent to SuperCrawler versi
+     6.27s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.02s]: (tool result) User agent set to SuperCrawler version 10.1.
+     9.21s  user  발화 시작: Mhm.
+     9.70s  user  발화 끝
+    13.42s  user  발화 시작: That’s good— but what site am I pretending to be now, exactl
+    13.57s  agent 발화 끝
+    17.83s  agent 발화 시작: [laugh] That’s a very practical question. It’s masking your 
+    17.95s  user  발화 끝
+    27.44s  user  발화 시작: Hmm. Can you now search Google for “best sourdough starter r
+    27.47s  agent 발화 끝
+    32.27s  <ret> 발화 (turn6 첫 프레임)
+    32.30s  user  발화 끝
+    32.58s  agent 발화 시작: <ret> I found one hundred and twenty-three results for “best
+    33.38s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.39s]: (tool result) Searching for best sourdough starter recipes… Results fo
+    40.96s  agent 발화 끝
+    41.53s  user  발화 시작: Actually, no, that's okay. Thanks— I think I’m good for now.
+    45.13s  user  발화 끝

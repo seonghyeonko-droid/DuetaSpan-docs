@@ -18,39 +18,39 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
   },
   "saved_memories": [
     {
-      "date": "2026-07-07",
+      "date": "2026-02-26",
       "category": "work",
       "text": "User works as a nurse."
     },
     {
-      "date": "2026-07-06",
+      "date": "2026-01-03",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-06-16",
+      "date": "2025-10-28",
       "category": "hobby",
       "text": "User is into birdwatching."
     },
     {
-      "date": "2026-05-11",
+      "date": "2025-08-24",
       "category": "pet",
       "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-04-06",
+      "date": "2025-07-18",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-03-07",
+      "date": "2025-07-17",
       "category": "cuisine",
       "text": "User's favorite cuisine is Italian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-14",
+      "date": "2025-09-02",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -58,7 +58,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-06-11",
+      "date": "2025-08-27",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -70,39 +70,39 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.63s][moshi] ⟨ret@4.55s⟩ Alright, I’ve set your ⟦⚡SPAN@6.55s: (tool result) User agent set to MyCustomBrowser version 10.5.⟧ user agent to MyCustomBrowser version ten point five. Is there anything else I can adjust for your browsing?
+[  4.89s][moshi] ⟨ret@4.81s⟩ Okay, I’ve set the ⟦⚡SPAN@6.81s: (tool result) User agent set to MyCustomBrowser version 10.5.⟧ user agent to MyCustomBrowser version ten point five. Is there a specific website you’d like me to visit with that setting?
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 13.52s][user ] Yeah, actually. Can you find me the current weather in ⟨ret@16.36s⟩ London?
-[ 16.51s][moshi] (subtopic: London weather) ⟦⚡SPAN@18.36s: (tool result) London: 12 degrees Celsius, partly cloudy.⟧ Currently in London, it's twelve degrees Celsius and partly cloudy. Quite a typical day, I understand.
-      CALL: {"function": "get_weather", "arguments": {"location": "London"}}
-[ 22.66s][user ] «backchannel» Yeah.
-[ 27.64s][user ] Hmm, that’s good to know. Uh, I'm thinking of booking a flight.
-[ 31.84s][moshi] Certainly! Where are you hoping to travel from and to? And roughly when?
-[ 35.29s][user ] «backchannel» Yeah.
-[ 38.71s][user ] From London to New York, sometime next ⟨ret@41.46s⟩ week.
-[ 41.77s][moshi] (subtopic: flight search) ⟦⚡SPAN@43.46s: (tool result) Flights from London to New York next week starting at £580.⟧ Flights from London to New York next week are available starting at five hundred and eighty pounds.
-      CALL: {"function": "search_flights", "arguments": {"from_city": "London", "to_city": "New York", "date": "next week"}}
-[ 51.98s][user ] Five eighty… that's not bad. Could you look for hotels in Manhattan, ⟨ret@57.43s⟩ then?
-[ 57.74s][moshi] (subtopic: Manhattan ⟦⚡SPAN@59.43s: (tool result) Manhattan hotels available, prices from £150 per night.⟧ hotels) In Manhattan, hotels are currently available from one hundred and fifty pounds per night.
-      CALL: {"function": "search_hotels", "arguments": {"location": "Manhattan"}}
-[ 66.75s][user ] Okay, good. Are there any with a ⟨ret@69.34s⟩ gym?
-[ 69.57s][moshi] (subtopic: Manhattan hotels ⟦⚡SPAN@71.34s: (tool result) The Plaza Hotel has a gym, £400 per night.⟧ with gym) The Plaza Hotel in Manhattan has a gym and rooms are four hundred pounds per night.
-      CALL: {"function": "search_hotels", "arguments": {"location": "Manhattan", "amenities": "gym"}}
-[ 79.85s][user ] Four hundred is a bit steep. [interrupting] What about something cheaper?
-[ 84.42s][moshi] Absolutely. – Let me refine that search for you.
-[ 88.62s][user ] Yeah, please. Under three hundred if possible.
-[ 91.59s][moshi] ⟨ret@91.52s⟩ (subtopic: Manhattan hotels ⟦⚡SPAN@92.64s: (tool result) The Jane Hotel has a gym, £250 per night.⟧ with gym under £300) The Jane Hotel in Manhattan offers a gym and rooms for two hundred and fifty pounds a night.
-      CALL: {"function": "search_hotels", "arguments": {"location": "Manhattan", "amenities": "gym", "max_price": "300"}}
-[ 96.16s][user ] «backchannel» Really?
-[ 97.90s][user ] The Jane… I think I’ve heard of that one. Right.
-[100.48s][moshi] It's quite popular, known for its unique cabin-style rooms.
-[104.45s][user ] Sounds interesting. Okay, let’s book a room there for three nights, starting next ⟨ret@109.45s⟩ Monday.
-[109.76s][moshi] (subtopic: hotel ⟦⚡SPAN@111.45s: (tool result) The Jane Hotel booked, 3 nights from next Monday, confirmation 7X9Q2R.⟧ booking) Wonderful! Your room at The Jane Hotel is booked for three nights from next Monday; your confirmation is 7X9Q2R.
-      CALL: {"function": "book_hotel", "arguments": {"hotel_name": "The Jane Hotel", "check_in_date": "next Monday", "duration": "3 nights"}}
-[123.10s][user ] Perfect. And can you set a reminder to pack my gym clothes on Sunday ⟨ret@127.63s⟩ evening?
-[127.78s][moshi] (subtopic: reminder) Of ⟦⚡SPAN@129.63s: (tool result) Reminder set for Sunday evening: Pack gym clothes.⟧ course! I’ve set a reminder for Sunday evening to pack your gym clothes.
-      CALL: {"function": "set_reminder", "arguments": {"reminder_time": "Sunday evening", "reminder_text": "Pack gym clothes"}}
-[134.58s][user ] Great. Thanks, Lio.
-[136.02s][moshi] You’re very welcome. Traveling can be stressful, so planning ahead is smart. I’m glad I could help streamline things for you.
-[144.95s][user ] I appreciate it.
-[146.17s][moshi] Is there anything else at all I can assist you with today?
+[ 15.26s][user ] Yes, could you check the current price of Bitcoin on ⟨ret@18.57s⟩ Coinbase?
+[ 18.81s][moshi] ⟦⚡SPAN@19.07s: (tool result) Bitcoin price is forty-six thousand, seven hundred and eighty-two dollars.⟧ Right now, Bitcoin is trading at forty-six thousand, seven hundred and eighty-two dollars on Coinbase.
+      CALL: {"function": "coinbase_get_price", "arguments": {"currency": "BTC"}}
+[ 23.12s][user ] «backchannel» Yeah.
+[ 26.88s][user ] Hmm, that’s quite a bit higher than yesterday.
+[ 29.62s][moshi] It is a significant increase! Market fluctuations can be quite dramatic, even within a single day.
+[ 33.80s][user ] «backchannel» Yeah.
+[ 37.87s][user ] Could you tell me what it *was* yesterday then?
+[ 40.41s][moshi] ⟨ret@40.33s⟩ Yesterday, Bitcoin closed ⟦⚡SPAN@42.33s: (tool result) Yesterday’s Bitcoin price was forty-two thousand, nine hundred and fifty dollars.⟧ at forty-two thousand, nine hundred and fifty dollars.
+      CALL: {"function": "coinbase_get_historical_price", "arguments": {"currency": "BTC", "date": "yesterday"}}
+[ 47.35s][user ] So that’s a jump of almost four thousand dollars in a day?
+[ 50.90s][moshi] That’s correct. It’s a substantial increase, nearly four thousand dollars.
+[ 56.96s][user ] Wow. Okay, um, could you find me some articles about why Bitcoin is ⟨ret@62.11s⟩ rising?
+[ 62.42s][moshi] I found a ⟦⚡SPAN@64.11s: (tool result) Searching for "why is bitcoin rising"… Top result: Coindesk article: "Bitcoin Surges Past $47K a⟧ Coindesk article stating Bitcoin is rising due to continuing ETF inflows.
+      CALL: {"function": "google_search", "arguments": {"query": "why is bitcoin rising"}}
+[ 68.98s][user ] ETF inflows… interesting. Could you read me the first paragraph of that article?
+[ 74.19s][moshi] ⟨ret@73.95s⟩ The article states ⟦⚡SPAN@75.95s: (tool result) “Bitcoin (BTC) surged past $47,000 on Thursday, its highest level in over two years, as demand f⟧ Bitcoin surpassed forty-seven thousand dollars due to continued demand for spot bitcoin ETFs.
+      CALL: {"function": "read_url", "arguments": {"url": "https://www.coindesk.com/markets/2024/02/29/bitcoin-surges-past-47k-as-etf-inflows-continue/"}}
+[ 82.42s][user ] Okay, so people are buying ETFs. What about Ethereum? What’s its price right now?
+[ 87.58s][moshi] ⟨ret@87.50s⟩ Currently, ⟦⚡SPAN@88.62s: (tool result) Ethereum price is three thousand, two hundred and fifty-eight dollars.⟧ Ethereum is priced at three thousand, two hundred and fifty-eight dollars.
+      CALL: {"function": "coinbase_get_price", "arguments": {"currency": "ETH"}}
+[ 90.91s][user ] «backchannel» Yeah.
+[ 93.29s][user ] Is that up too?
+[ 94.33s][moshi] ⟨ret@94.27s⟩ Yesterday, Ethereum was ⟦⚡SPAN@96.27s: (tool result) Yesterday’s Ethereum price was three thousand, one hundred and twenty dollars.⟧ trading at three thousand, one hundred and twenty dollars.
+      CALL: {"function": "coinbase_get_historical_price", "arguments": {"currency": "ETH", "date": "yesterday"}}
+[100.03s][user ] So both are up. Alright, I think I’ll hold onto my crypto for now.
+[103.76s][moshi] That’s a reasonable approach, given the current trends. It's good to have a plan.
+[110.69s][user ] Thanks, Lio. You've been really helpful.
+[112.75s][moshi] You’re very welcome! I’m glad I could assist you with your cryptocurrency questions today.
+[118.46s][user ] [sigh] I should probably set a reminder to check again tomorrow.
+[122.39s][moshi] That’s a great idea. What time would you like me to remind you?
+[127.14s][user ] Seven PM would be perfect.
+[129.17s][moshi] ⟨ret@129.01s⟩ I've set a reminder ⟦⚡SPAN@131.01s: (tool result) Reminder set for 7:00 PM: Check Bitcoin and Ethereum prices.⟧ for seven PM to check the Bitcoin and Ethereum prices. Is there anything else I can help you with?
+      CALL: {"function": "set_reminder", "arguments": {"time": "7:00 PM", "message": "Check Bitcoin and Ethereum prices"}}

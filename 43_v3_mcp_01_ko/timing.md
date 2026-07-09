@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-03-31",
 #       "category": "trip",
 #       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-02-18",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2025-11-13",
 #       "category": "home",
 #       "text": "User's home address is 50 Pine Court."
 #     },
 #     {
-#       "date": "2026-02-18",
+#       "date": "2025-08-15",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-06",
+#       "date": "2026-04-04",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-16",
+#       "date": "2025-11-08",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -58,49 +58,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아니, 그 전에 혹시 지도 미리보기를 볼 수는 있어? | S3 링크 열어봤는데, 아이폰 관련 부분만 확대해서 볼 수 있어? | S4 고마워. 덕분에 시간을 많이 절약했네.
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 열다섯 개면 딱 좋네. 근데— | S3 아니, 괜찮아. 아이폰 십오 프로 맥스는? | S4 지도에서 확인해 봤는데, 프로 맥스가 확실히 오래 가네. 고마
 
      0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.55s  <ret> 발화 (turn1 첫 프레임)
-     3.79s  agent 발화 시작: <ret> 물론입니다. tavily-map을 이용해서 애플 웹사이트의 제품 섹션에 대한 상세 지도를 생성해 
-     3.84s  user  발화 끝
-     5.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Map created: Apple website, products section, 27 nodes i
-    10.95s  agent 발화 시작: 애플 웹사이트 제품 섹션에 대한 지도가 생성되었고, 총 스물일곱 개의 노드를 확인했습니다.
-    11.11s  agent 발화 끝
-    13.45s  user  발화 시작: 그치.
-    14.08s  user  발화 끝
-    17.07s  agent 발화 끝
-    17.15s  user  발화 시작: 스물일곱 개나? 좀 많네. 아이폰 관련 노드는 몇 개야?
-    21.86s  agent 발화 시작: 아이폰 관련 노드 수를 확인해 보겠습니다. 잠시만 기다려 주세요—
-    22.05s  user  발화 끝
-    25.68s  user  발화 시작: 아니, 그 전에 혹시 지도 미리보기를 볼 수는 있어?
-    26.40s  agent 발화 끝
-    29.45s  <ret> 발화 (turn7 첫 프레임)
-    29.51s  user  발화 끝
-    29.52s  agent 발화 시작: <ret> 물론입니다. tavily-map에서 생성된 지도를 미리 보여드릴 수 있습니다.
-    30.41s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.26s]: (tool result) Preview link: https://tavily.com/maps/apple_products_map
-    33.62s  agent 발화 시작: 지도 미리보기 링크는 이 주소입니다. https://tavily.com/maps/apple_products_
-    33.78s  agent 발화 끝
-    37.82s  user  발화 시작: 그래.
-    38.40s  user  발화 끝
-    41.45s  agent 발화 끝
-    42.11s  user  발화 시작: 링크 열어봤는데, 아이폰 관련 부분만 확대해서 볼 수 있어?
-    46.33s  <ret> 발화 (turn11 첫 프레임)
-    46.73s  agent 발화 시작: <ret> 네, 물론입니다. tavily-map에서 아이폰 관련 노드만 확대하여 보여드릴 수 있습니다.
-    46.84s  user  발화 끝
-    48.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (tool result) Map zoomed: Apple website, iPhone section highlighted.
-    52.39s  agent 발화 시작: 아이폰 섹션이 강조된 상태로 지도를 확대했습니다.
-    52.61s  agent 발화 끝
-    53.61s  user  발화 시작: 어어.
-    54.42s  user  발화 끝
-    55.49s  user  발화 시작: 오, 아주 좋네. 아이폰 십오 프로 모델의 상세 정보 페이지로 바로 이동하게 할 수 있어?
-    55.63s  agent 발화 끝
-    60.87s  <ret> 발화 (turn15 첫 프레임)
-    60.95s  agent 발화 시작: <ret> 아이폰 십오 프로 상세 정보 페이지로 이동합니다.
-    61.09s  user  발화 끝
-    62.39s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.18s]: (tool result) Navigation initiated: Redirecting to https://www.apple.c
-    63.86s  user  발화 시작: 고마워. 덕분에 시간을 많이 절약했네.
-    64.14s  agent 발화 끝
-    66.60s  agent 발화 시작: 천만에요. 여행 계획을 돕는 건 제 일이니까요. 다른 도움이 필요하시면 언제든지 말씀해 주세요.
-    66.76s  user  발화 끝
-    73.74s  agent 발화 끝
+     3.79s  <ret> 발화 (turn1 첫 프레임)
+     4.01s  agent 발화 시작: <ret> 네, 알겠습니다. tavily-map을 사용하여 애플 웹사이트의 제품 관련 상세 지도를 생성해 드
+     4.07s  user  발화 끝
+     5.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: (tool result) Map created: Apple website, products focused, 32 nodes i
+    10.72s  agent 발화 시작: 애플 웹사이트 제품 중심으로 지도를 생성했고, 총 삼십이 개의 노드를 확인했습니다.
+    10.91s  agent 발화 끝
+    16.51s  agent 발화 끝
+    17.37s  user  발화 시작: 삼십두 개나? 좀 많네. 아이폰만 따로 보여줄 수 있어?
+    20.94s  <ret> 발화 (turn4 첫 프레임)
+    21.17s  agent 발화 시작: <ret> 물론입니다. 아이폰 관련 부분만 집중해서 tavily-map을 다시 실행해 볼까요?
+    21.35s  user  발화 끝
+    22.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Map updated: Apple website, iPhone focused, 15 nodes ide
+    26.69s  agent 발화 시작: 아이폰에 초점을 맞춰 지도를 업데이트했고, 이제 열다섯 개의 노드가 확인되었습니다.
+    26.82s  agent 발화 끝
+    30.02s  user  발화 시작: 응.
+    30.42s  user  발화 끝
+    31.78s  agent 발화 끝
+    32.10s  user  발화 시작: 열다섯 개면 딱 좋네. 근데—
+    34.16s  user  발화 시작: 아이폰 십오 프로 모델은 지도에 어떻게 표시돼?
+    34.22s  user  발화 끝
+    37.59s  agent 발화 시작: 아이폰 십오 프로 모델은 지도에서 'iPhone 십오 Pro'라는 노드로 표시됩니다. 상세 정보는 노드를 클
+    37.86s  user  발화 끝
+    40.29s  user  발화 시작: 어.
+    40.92s  user  발화 끝
+    45.09s  agent 발화 시작: 지도에는 아이폰 십오 프로의 스펙, 가격, 구매 링크 등이 연결되어 있습니다. 다른 모델도 확인해 보시겠어요
+    45.23s  agent 발화 끝
+    50.18s  user  발화 시작: 맞아.
+    50.81s  user  발화 끝
+    52.97s  agent 발화 끝
+    53.14s  user  발화 시작: 아니, 괜찮아. 아이폰 십오 프로 맥스는?
+    56.10s  <ret> 발화 (turn14 첫 프레임)
+    56.29s  user  발화 끝
+    56.33s  agent 발화 시작: <ret> 아이폰 십오 프로 맥스 역시 'iPhone 십오 Pro Max' 노드로 표시됩니다. 두 모델의 차
+    58.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: (tool result) Comparison displayed: iPhone 15 Pro vs iPhone 15 Pro Max
+    63.68s  agent 발화 시작: 아이폰 십오 프로와 맥스의 주요 차이점을 지도에 표시했습니다. 화면 크기, 배터리 용량 등이 비교됩니다.
+    63.89s  agent 발화 끝
+    71.47s  agent 발화 끝
+    72.18s  user  발화 시작: 배터리 용량은 얼마나 차이가 나?
+    74.44s  user  발화 끝
+    74.58s  agent 발화 시작: 아이폰 십오 프로 맥스는 아이폰 십오 프로보다 배터리 용량이 약간 더 큽니다. 정확한 수치는 지도에서 확인하
+    82.46s  agent 발화 시작: 확인해 보시고 궁금한 점이 있으면 언제든지 말씀해 주세요.
+    82.65s  agent 발화 끝
+    84.57s  user  발화 시작: 응.
+    84.88s  user  발화 끝
+    86.02s  user  발화 시작: 지도에서 확인해 봤는데, 프로 맥스가 확실히 오래 가네. 고마워.
+    86.29s  agent 발화 끝
+    90.63s  agent 발화 시작: 도움이 되었다니 기쁩니다. 앞으로도 여행 계획이나 휴식 계획에 필요한 정보가 있다면 언제든 말씀해 주세요.
+    90.70s  user  발화 끝
+    97.90s  agent 발화 끝

@@ -18,34 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-10",
+#       "date": "2026-06-26",
 #       "category": "home",
 #       "text": "User's home address is 664 Birch Road."
 #     },
 #     {
-#       "date": "2026-05-07",
+#       "date": "2026-06-08",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2026-03-05",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-12",
+#       "date": "2025-11-05",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-01-03",
+#       "date": "2025-09-05",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-01",
+#       "date": "2026-05-21",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -53,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-21",
+#       "date": "2025-11-18",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -65,8 +65,8 @@
 
 
      0.00s  user  발화 시작: When was the printing press invented in Europe?
-     3.09s  <ret> 발화 (turn1 첫 프레임)
-     3.33s  agent 발화 시작: <ret> That’s a fascinating question, tracing the roots of kn
-     3.56s  user  발화 끝
-     4.93s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.84s]: [source: Britannica] The printing press was invented around 1440 by Jo
-    13.58s  agent 발화 끝
+     2.35s  <ret> 발화 (turn1 첫 프레임)
+     2.59s  agent 발화 시작: <ret> That’s a fascinating question, tracing the roots of kn
+     2.82s  user  발화 끝
+     4.19s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.81s]: [source: Britannica] Johannes Gutenberg invented the printing press wi
+    12.32s  agent 발화 끝

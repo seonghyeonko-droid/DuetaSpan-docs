@@ -18,34 +18,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
   },
   "saved_memories": [
     {
-      "date": "2026-07-26",
+      "date": "2026-05-05",
       "category": "home",
       "text": "User's home address is 528 Birch Road."
     },
     {
-      "date": "2026-05-06",
+      "date": "2026-02-10",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-04-21",
+      "date": "2025-12-04",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-03-15",
+      "date": "2025-11-07",
       "category": "trip",
       "text": "User is planning a trip to Iceland in May."
     },
     {
-      "date": "2026-02-01",
+      "date": "2025-06-09",
       "category": "cuisine",
       "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-13",
+      "date": "2026-06-05",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -56,51 +56,62 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.92s⟩ May tenth.
-[  4.31s][moshi] There’s a bus ⟦⚡SPAN@5.92s: (tool result) Buses_3_FindBus: Chicago to Denver, May 10th, 3 passengers - 14:30, $285.⟧ departing at two thirty PM on May tenth, costing two hundred eighty-five dollars.
-[  7.14s][user ] «backchannel» Yeah.
-[ 11.29s][user ] That sounds good. Book it for me.
-[ 14.17s][moshi] ⟨ret@13.94s⟩ Happy to ⟦⚡SPAN@15.54s: (tool result) Buses_3_BookBus: Confirmation #B7294 - Chicago to Denver, May 10th, 3 passengers, $285.⟧ arrange that for you. Your booking is confirmed, number B7294, for three passengers.
-[ 22.89s][user ] Can you remind me about it the day ⟨ret@24.79s⟩ before?
-[ 24.95s][moshi] Of course, ⟦⚡SPAN@25.91s: (tool result) Reminders_3_SetReminder: Reminder set - May 9th, 10:00 AM - Bus to Denver.⟧ I can set a reminder. I’ve set a reminder for May ninth at ten AM about your bus.
-[ 32.69s][user ] Great. What’s the weather like in Denver on that ⟨ret@35.48s⟩ day?
-[ 35.87s][moshi] ⟦⚡SPAN@35.98s: (tool result) Weather_3_GetForecast: Denver, May 10th - Sunny, 75°F, Wind 8 mph.⟧ It will be sunny in Denver on May tenth, seventy-five degrees.
-[ 38.88s][user ] «backchannel» Yeah.
-[ 42.89s][user ] That’s perfect. I’m packing light clothes then.
-[ 46.45s][moshi] That sounds like a good plan. Denver’s May weather is usually quite pleasant.
-[ 52.69s][user ] Do they have any good hiking trails ⟨ret@54.98s⟩ near Denver?
-[ 55.38s][moshi] Denver is ⟦⚡SPAN@56.74s: (tool result) Trails_3_FindTrails: Denver area - Red Rocks Trail (5.2 mi, Moderate), Lookout Mountain Trail (7⟧ a wonderful place for hiking. Red Rocks Trail is five point two miles, moderate, and Lookout Mountain is seven point one, difficult.
-[ 68.94s][user ] Red Rocks sounds nice. What’s the elevation gain on that ⟨ret@72.14s⟩ one?
-[ 72.54s][moshi] The ⟦⚡SPAN@73.34s: (tool result) Trails_3_GetTrailDetails: Red Rocks Trail - Elevation Gain: 1400 ft.⟧ Red Rocks Trail has an elevation gain of fourteen hundred feet.
-[ 77.51s][user ] Hmm, fourteen hundred feet… that’s pretty steep—
-[ 81.98s][user ] Is there a shorter, easier trail nearby?
-[ 85.15s][moshi] —it is a bit challenging.
-[ 86.67s][moshi] ⟨ret@86.51s⟩ Bear Creek Lake Park ⟦⚡SPAN@88.51s: (tool result) Trails_3_FindTrails: Denver area - Bear Creek Lake Park Trail (2.8 mi, Easy).⟧ Trail is two point eight miles and considered easy.
-[ 90.34s][user ] «backchannel» Mhm.
-[ 93.49s][user ] That sounds much better. Is there parking at the ⟨ret@96.61s⟩ trailhead?
-[ 96.76s][moshi] Parking ⟦⚡SPAN@97.81s: (tool result) Trails_3_GetTrailDetails: Bear Creek Lake Park Trail - Parking: Yes, $5 fee.⟧ is usually available there. Yes, there is parking, with a five-dollar fee.
-[102.64s][user ] Okay, good to know. And what about restaurants near the trail?
-[106.76s][moshi] ⟨ret@106.69s⟩ ⟦⚡SPAN@107.19s: (tool result) Restaurants_3_FindRestaurants: Near Bear Creek Lake Park - The Farmhouse at Breckenridge Brewery⟧ The Farmhouse at Breckenridge Brewery is near the trail.
-[109.15s][user ] «backchannel» Right.
-[112.59s][user ] Is it ⟨ret@113.31s⟩ expensive?
-[113.62s][moshi] It’s moderately ⟦⚡SPAN@115.31s: (tool result) Restaurants_3_GetRestaurantDetails: The Farmhouse - Price Range: $$ (Moderate).⟧ priced, indicated by two dollar signs.
-[115.59s][user ] «backchannel» Yeah.
-[117.98s][user ] Moderate is fine. Can you make a reservation there for two people on May tenth at seven ⟨ret@124.36s⟩ PM?
-[124.52s][moshi] I can certainly ⟦⚡SPAN@126.36s: (tool result) Restaurants_3_BookRestaurant: The Farmhouse - Reservation confirmed for 2, May 10th, 7:00 PM.⟧ try to make that reservation. Your reservation at The Farmhouse is confirmed for seven PM.
-[127.84s][user ] «backchannel» Yeah, totally.
-[133.57s][user ] Wonderful. That all sounds perfect.
-[136.80s][moshi] It's my pleasure to help you plan your trip. It sounds like a lovely itinerary.
-[143.02s][user ] I’m also thinking of visiting the Denver Art Museum. What are their hours?
-[147.16s][moshi] ⟨ret@147.09s⟩ ⟦⚡SPAN@147.59s: (tool result) Museums_3_GetHours: Denver Art Museum - Open Daily 10 AM - 5 PM.⟧ The Denver Art Museum is open daily from ten AM to five PM.
-[150.39s][user ] «backchannel» Yeah.
-[152.45s][user ] Great. And are there any special exhibits going on then?
-[155.74s][moshi] ⟨ret@155.66s⟩ They are showing ⟦⚡SPAN@157.66s: (tool result) Museums_3_GetExhibits: Denver Art Museum - "Modern Masters" & "Colorado Artists".⟧ "Modern Masters" and "Colorado Artists."
-[158.12s][user ] «backchannel» Yeah.
-[160.79s][user ] "Colorado Artists" sounds interesting.
-[163.44s][moshi] It’s wonderful to support local artists when you travel.
-[167.08s][user ] I agree. Could you add a reminder to my phone to check out ⟨ret@170.43s⟩ that exhibit?
-[170.82s][moshi] Absolutely, ⟦⚡SPAN@171.71s: (tool result) Reminders_3_SetReminder: Reminder set - May 10th, 2:00 PM - Check out "Colorado Artists" exhibit⟧ I can add that reminder. I’ve set a reminder for May tenth at two PM.
-[177.24s][user ] Perfect. Thank you so much for your help, Oruus.
-[180.65s][moshi] You are very welcome. I'm glad I could assist you in preparing for your trip to Denver. Remember to breathe deeply and savor each moment.
-[190.62s][user ] I will. One last thing— what time is sunset in Denver on May ⟨ret@195.87s⟩ tenth?
-[196.26s][moshi] Sunset in Denver ⟦⚡SPAN@197.87s: (tool result) Weather_3_GetSunset: Denver, May 10th - Sunset: 8:15 PM.⟧ on May tenth will be at eight fifteen PM.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.66s⟩ May tenth.
+[  4.05s][moshi] There’s a bus ⟦⚡SPAN@5.66s: (tool result) 11:30 AM departure, $285 per person.⟧ departing at eleven thirty AM, costing two hundred eighty-five dollars per person.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[  7.01s][user ] «backchannel» Yeah.
+[ 11.39s][user ] That’s a bit pricey. Can you look for something leaving later, maybe in the afternoon?
+[ 16.75s][moshi] ⟨ret@16.51s⟩ There's a four PM ⟦⚡SPAN@18.51s: (tool result) 4:00 PM departure, $220 per person.⟧ departure available for two hundred twenty dollars per person.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three", "time": "afternoon"}}
+[ 21.74s][user ] That sounds better. Can we book that ⟨ret@24.07s⟩ one?
+[ 24.23s][moshi] Your booking is ⟦⚡SPAN@26.07s: (tool result) Booking confirmed. Confirmation number is 7X9L2P.⟧ confirmed, with confirmation number seven X nine L two P.
+      CALL: {"function": "Buses_3_BookBus", "arguments": {"departure_time": "4:00 PM", "origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 31.01s][user ] Great. And could you set a reminder for me to leave for the bus station by three thirty PM on May ⟨ret@36.37s⟩ tenth?
+[ 36.77s][moshi] ⟦⚡SPAN@36.87s: (tool result) Reminder set for May tenth, 3:30 PM: Leave for bus station.⟧ A reminder is set for May tenth at three thirty PM: leave for the bus station.
+      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"date": "May tenth", "time": "3:30 PM", "description": "Leave for bus station"}}
+[ 40.76s][user ] «backchannel» Yeah.
+[ 45.28s][user ] Perfect. I’m also trying to decide what to pack. Denver’s weather in ⟨ret@50.74s⟩ mid-May…
+[ 51.13s][moshi] The forecast for ⟦⚡SPAN@52.74s: (tool result) High 68°F, low 45°F, partly cloudy.⟧ May fifteenth is a high of sixty-eight and a low of forty-five, with partly cloudy skies.
+      CALL: {"function": "Weather_1_GetForecast", "arguments": {"location": "Denver", "date": "May fifteenth"}}
+[ 59.78s][user ] Hmm, that sounds cool. I’ll need a jacket, definitely.
+[ 63.76s][moshi] «interrupted» A jacket is a very good idea. Considering your travel—
+[ 67.45s][user ] «interrupts_prev» Do they have Wi-Fi on the bus? It’s important for me to be able ⟨ret@71.30s⟩ to work.
+[ 71.69s][moshi] ⟦⚡SPAN@72.34s: (tool result) Wi-Fi available.⟧ Yes, Wi-Fi is available on that bus.
+      CALL: {"function": "Buses_4_GetBusAmenities", "arguments": {"bus_number": "7X9L2P", "amenity": "Wi-Fi"}}
+[ 75.44s][user ] Excellent. That makes things much easier. I also need to find a hotel in Denver.
+[ 81.14s][moshi] I can help with that. What kind of hotel are you looking for?
+[ 87.83s][user ] Something near the convention center, and not too expensive. Under two hundred dollars a night, if ⟨ret@93.68s⟩ possible.
+[ 93.84s][moshi] The Paramount Hotel ⟦⚡SPAN@95.68s: (tool result) The Paramount Hotel, $180 per night, Wi-Fi included.⟧ is available for one hundred eighty dollars a night, with Wi-Fi.
+      CALL: {"function": "Hotels_1_FindHotel", "arguments": {"location": "Denver Convention Center", "max_price": "200", "amenities": "Wi-Fi"}}
+[ 98.21s][user ] «backchannel» Mhm.
+[100.57s][user ] The Paramount Hotel sounds good. Can you check if they have availability for May tenth and ⟨ret@105.80s⟩ eleventh?
+[105.96s][moshi] Yes, they have ⟦⚡SPAN@107.80s: (tool result) Available. Two rooms remaining.⟧ availability. There are two rooms remaining.
+      CALL: {"function": "Hotels_2_CheckAvailability", "arguments": {"hotel_name": "The Paramount Hotel", "check_in_date": "May tenth", "check_out_date": "May eleventh"}}
+[110.52s][user ] Okay, book one room for me, then.
+[112.79s][moshi] ⟨ret@112.72s⟩ Your ⟦⚡SPAN@113.52s: (tool result) Booking confirmed. Confirmation number is 9K4Z6R.⟧ room is booked, confirmation number nine K four Z six R.
+      CALL: {"function": "Hotels_3_BookHotel", "arguments": {"hotel_name": "The Paramount Hotel", "check_in_date": "May tenth", "check_out_date": "May eleventh", "guests": "one"}}
+[115.84s][user ] «backchannel» Right.
+[119.60s][user ] Wonderful. Now, about getting from the bus station to the ⟨ret@124.81s⟩ hotel…
+[125.13s][moshi] It’s one point ⟦⚡SPAN@126.81s: (tool result) 1.2 miles, 25-minute walk, or 5-minute ride share.⟧ two miles, a twenty-five minute walk, or a five minute ride share.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"start": "Denver Bus Station", "end": "The Paramount Hotel"}}
+[128.15s][user ] «backchannel» Yeah.
+[131.75s][user ] A ride share sounds quickest. Can you estimate the ⟨ret@135.61s⟩ cost?
+[135.77s][moshi] I ⟦⚡SPAN@136.25s: (tool result) $12-$15 estimate.⟧ can give you an estimate.
+      CALL: {"function": "RideShare_1_GetEstimate", "arguments": {"start": "Denver Bus Station", "end": "The Paramount Hotel"}}
+[137.42s][moshi] The estimated cost is between twelve and fifteen dollars.
+[139.05s][user ] «backchannel» Yeah, totally.
+[142.97s][user ] That’s reasonable. Is there anything else I should consider before my trip?
+[147.65s][moshi] Thinking about your well-being, it's helpful to plan some downtime.
+[152.17s][user ] Good point. I always forget to do that.
+[154.74s][moshi] It's easy to get caught up in logistics. [happy] Perhaps a quiet walk in a park?
+[158.31s][user ] «backchannel» Yeah.
+[160.78s][user ] Yes, that sounds lovely. Do you know of any parks near the convention center?
+[165.34s][moshi] ⟨ret@165.27s⟩ ⟦⚡SPAN@165.77s: (tool result) Civic Center Park, 0.5 miles.⟧ Civic Center Park is half a mile from the convention center.
+      CALL: {"function": "Places_1_FindParks", "arguments": {"location": "Denver Convention Center", "radius": "1 mile"}}
+[167.25s][user ] «backchannel» Yeah.
+[169.20s][user ] Perfect. Thank you so much for all your help, Oruus.
+[172.65s][moshi] You’re most welcome. Remembering to prioritize rest will make your trip more fulfilling.
+[179.14s][user ] I appreciate that advice.
+[180.85s][moshi] It’s my pleasure to assist you. A balanced approach to travel often leads to richer experiences.
+[188.93s][user ] I think I’m all set now.
+[190.47s][moshi] Wonderful. Safe travels, and remember to be kind to yourself during your trip.

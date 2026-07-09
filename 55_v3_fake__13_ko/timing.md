@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
+#       "date": "2026-05-11",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-04-03",
+#       "date": "2026-02-19",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-03-10",
+#       "date": "2026-01-08",
 #       "category": "work",
 #       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-01-26",
+#       "date": "2025-11-04",
 #       "category": "home",
 #       "text": "User's home address is 203 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-22",
+#       "date": "2025-08-04",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-07-04",
+#       "date": "2025-07-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -56,7 +56,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-06-26",
+#       "date": "2025-06-17",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -66,55 +66,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오나요? 이천십오년 기준으로요 | S2 잠깐만요, 그 앨범 이름이 뭐였죠? | S3 아, 배우 활동도 하는군요. 어떤 영화에 출연했나요? | S4 이천십오년 앨범 말고 다른 앨범은 언제 냈나요?
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범이 언제 나오나요? 이천십오년 기준으로요. | S2 혹시 그 앨범에서 가장 인기 있었던 노래는 뭐였어요? | S3 주로 팝이나 R&B를 듣는 편이에요. | S4 네, 감사합니다. 덕분에 힘이 나네요.
 
-     0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오나요? 이천십오년 기준으로요.
-     4.58s  user  발화 끝
-     4.69s  <ret> 발화 (turn1 첫 프레임)
-     4.84s  agent 발화 시작: <ret> 데미 로바토의 새 앨범은 이천십오년 십월에 발매될 예정입니다.
-     6.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: October 2015.
-     9.08s  user  발화 시작: 음, 이천십오년 십월이군요.
-     9.33s  agent 발화 끝
-    11.66s  user  발화 끝
-    11.68s  <ret> 발화 (turn3 첫 프레임)
-    11.76s  agent 발화 시작: <ret> 네, 맞아요. 앨범 발매를 기다리시는 분들이 많을 것 같아요. 혹시 데미 로바토의 다른 앨범에 대
-    13.68s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=9.55s]: The giraffe is the tallest mammal on Earth.
-    21.31s  agent 발화 끝
-    21.66s  user  발화 시작: 잠깐만요, 그 앨범 이름이 뭐였죠?
-    24.56s  user  발화 끝
-    25.07s  agent 발화 시작: 아… 그 앨범은…
-    26.87s  <ret> 발화 (turn6 첫 프레임)
-    27.26s  agent 발화 시작: <ret> 그 앨범의 이름은… 아, 죄송합니다. 앨범 이름에 대한 정보는 현재 가지고 있지 않네요. 이천십오
-    27.34s  agent 발화 끝
-    27.37s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.52s]: October 2015.
-    31.09s  user  발화 시작: 음.
-    31.73s  user  발화 끝
-    37.22s  agent 발화 시작: 혹시 다른 가수의 앨범 출시일에 대해 궁금하신 점이 있으신가요? 아니면 데미 로바토의 다른 활동에 대해 알아
-    37.42s  agent 발화 끝
-    44.91s  user  발화 시작: 다른 활동은 뭐가 있을까요?
-    45.00s  agent 발화 끝
-    46.65s  user  발화 끝
-    46.67s  agent 발화 시작: 데미 로바토는 가수 활동 외에도 배우로도 활동하고 있으며, 사회 문제에 대한 목소리를 내는 것으로도 유명합니
-    53.79s  user  발화 시작: 아, 배우 활동도 하는군요. 어떤 영화에 출연했나요?
-    54.41s  agent 발화 끝
-    58.19s  agent 발화 시작: 데미 로바토는 '캠프 록'이라는 디즈니 채널 시리즈에 출연했으며, 여러 영화와 TV 쇼에 게스트로 출연한 적
-    58.28s  user  발화 끝
-    62.15s  user  발화 시작: 예.
-    62.56s  user  발화 끝
-    65.83s  agent 발화 끝
-    66.33s  user  발화 시작: '캠프 록'이요? 그거 재밌었죠.
-    68.91s  user  발화 끝
-    69.19s  agent 발화 시작: 네, 많은 분들이 좋아했던 시리즈였죠. 데미 로바토의 연기 변신도 돋보였고요.
-    71.75s  user  발화 시작: 음.
-    72.24s  user  발화 끝
-    74.75s  agent 발화 끝
-    75.08s  user  발화 시작: 이천십오년 앨범 말고 다른 앨범은 언제 냈나요?
-    78.64s  user  발화 끝
-    78.94s  agent 발화 시작: 데미 로바토는 이천십삼년에 'Demi'라는 앨범을 발매했고, 이천십칠년에는 'Tell Me You Love 
-    82.91s  user  발화 시작: 정말요?
-    83.73s  user  발화 끝
-    87.14s  agent 발화 끝
-    87.35s  user  발화 시작: 이천십칠년 앨범도 꽤 됐네요. 요즘은 뭐 하고 있나요?
-    91.23s  user  발화 끝
-    91.42s  agent 발화 시작: 데미 로바토는 최근에 새로운 음악 작업과 함께 자신의 정신 건강에 대한 이야기를 솔직하게 공유하며 많은 사람
-   100.14s  agent 발화 끝
+     0.00s  user  발화 시작: 데미 로바토 새 앨범이 언제 나오나요? 이천십오년 기준으로요.
+     4.36s  user  발화 끝
+     4.45s  <ret> 발화 (turn1 첫 프레임)
+     4.60s  agent 발화 시작: <ret> 데미 로바토의 다섯 번째 스튜디오 앨범, 'Confidence'는 이천십오년 십월에 발매되었답니다
+     6.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was 
+     8.64s  user  발화 시작: 그렇죠.
+     9.46s  user  발화 끝
+    10.70s  agent 발화 끝
+    10.76s  user  발화 시작: 아, 그렇군요. 그럼 그 앨범에 수록된 곡은 몇 곡이나 되나요?
+    14.83s  <ret> 발화 (turn4 첫 프레임)
+    15.22s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
+    15.24s  user  발화 끝
+    15.33s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.93s]: (tool result) 11 songs.
+    17.06s  agent 발화 시작: 'Confidence' 앨범에는 총 열한 곡이 수록되어 있습니다.
+    17.15s  agent 발화 끝
+    19.06s  user  발화 시작: 음.
+    19.42s  user  발화 끝
+    20.51s  agent 발화 시작: 데미 로바토는 정말 다재다능한 아티스트인 것 같아요. 다양한 장르를 소화하는 능력—
+    20.63s  agent 발화 끝
+    25.71s  user  발화 시작: 혹시 그 앨범에서 가장 인기 있었던 노래는 뭐였어요?
+    26.45s  agent 발화 끝
+    29.39s  <ret> 발화 (turn9 첫 프레임)
+    29.50s  user  발화 끝
+    29.70s  agent 발화 시작: <ret> 가장 인기 있었던 노래요? 네, 'Cool for the Summer'가 많은 사랑을 받았어요.
+    30.43s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.67s]: [source: Rolling Stone] "Cool for the Summer" became Lovato's first to
+    34.26s  agent 발화 시작: 'Cool for the Summer'는 빌보드 핫 백에서 데미 로바토의 첫 번째 탑 텐 싱글이 되었어요.
+    34.37s  agent 발화 끝
+    39.69s  user  발화 시작: 아, 그 노래 정말 좋았죠. 뮤직비디오도 인상 깊었어요.
+    39.76s  agent 발화 끝
+    43.34s  <ret> 발화 (turn12 첫 프레임)
+    43.66s  agent 발화 시작: <ret> 맞아요, 뮤직비디오도 앨범의 분위기를 잘 살렸다고 생각해요.
+    43.72s  user  발화 끝
+    45.26s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=4.17s]: [source: Britannica] The Sahara is the largest hot desert in the world
+    47.68s  agent 발화 시작: 창작 활동에 영감을 얻고 싶으실 때는 어떤 음악을 주로 들으시는 편이세요?
+    47.83s  agent 발화 끝
+    50.25s  user  발화 시작: 예.
+    50.61s  user  발화 끝
+    52.73s  agent 발화 끝
+    52.85s  user  발화 시작: 주로 팝이나 R&B를 듣는 편이에요.
+    55.30s  agent 발화 시작: 팝이나 R&B라… 좋은 선택이세요. 그런 음악들은 감정을 풍부하게 해주고, 새로운 아이디어를 떠올리는 데 도
+    55.38s  user  발화 끝
+    59.45s  user  발화 시작: 음.
+    59.95s  user  발화 끝
+    64.10s  agent 발화 끝
+    64.57s  user  발화 시작: 맞아요. 음악을 들으면 기분이 좋아져요.
+    67.53s  user  발화 끝
+    67.79s  agent 발화 시작: 기분이 좋아지는 건 정말 중요한 것 같아요. 긍정적인 감정은 창작 활동의 원동력이 되니까요.
+    70.46s  user  발화 시작: 네.
+    71.10s  user  발화 끝
+    74.19s  agent 발화 끝
+    74.43s  user  발화 시작: 네, 감사합니다. 덕분에 힘이 나네요.
+    76.55s  user  발화 끝
+    76.85s  agent 발화 시작: 천만에요. 언제든 필요하시면 저에게 이야기해 주세요. 제가 항상 곁에서 응원할게요.
+    84.12s  agent 발화 끝

@@ -18,29 +18,29 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-04-23",
 #       "category": "diet",
 #       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-05-20",
+#       "date": "2026-02-26",
 #       "category": "trip",
 #       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2026-03-07",
+#       "date": "2025-10-10",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-02-07",
+#       "date": "2025-09-14",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-07-22",
+#       "date": "2025-06-17",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -50,41 +50,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 맘마미아 영화에서 'My Love, My Life' 노래를 누 | S2 아바요? 'Dancing Queen' 부른 팀 맞죠? | S3 혹시 아바 멤버 중에 여성분도 있었나요? | S4 그렇군요. 맘마미아 영화에 아바 노래가 많이 나왔었죠?
+# EXAMINER(FDB-v2) 단계: S1 맘마미아에 나오는 ‘나의 사랑 나의 생명’이라는 노래를 누가  | S2 맞아요, 저도 아바 노래 정말 좋아해요. 그분 다른 노래도 많 | S3 ‘워터루’도 비욘 울바에우스가 썼군요. 대단하네요. | S4 아, 그렇군요. 자세히 알려주셔서 정말 고마워요.
 
-     0.00s  user  발화 시작: 맘마미아 영화에서 'My Love, My Life' 노래를 누가 썼는지 궁금해요.
-     4.73s  <ret> 발화 (turn1 첫 프레임)
-     4.89s  agent 발화 시작: <ret> 아, 그 노래 정말 감동적이죠. 제가 알아봐 드릴게요.
-     4.91s  user  발화 끝
-     6.49s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.46s]: Björn Ulvaeus.
-     8.22s  agent 발화 시작: 'My Love, My Life'는 비외른 울바에우스 씨가 작곡하셨답니다.
-     8.35s  agent 발화 끝
-    12.50s  user  발화 시작: 비외른 울바에우스… 처음 듣는 이름인데, 다른 노래도 많이 만들었어요?
-    12.57s  agent 발화 끝
-    17.13s  <ret> 발화 (turn4 첫 프레임)
-    17.41s  user  발화 끝
-    17.44s  agent 발화 시작: <ret> 네, 비외른 울바에우스 씨는 아바(ABBA)의 멤버로 활동하며 수많은 히트곡을 만들었어요.
-    19.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: Björn Ulvaeus was a member of the Swedish music group ABBA.
-    23.71s  agent 발화 시작: 비외른 울바에우스 씨는 스웨덴 음악 그룹 아바의 멤버셨어요.
-    23.88s  agent 발화 끝
-    28.06s  agent 발화 끝
-    28.09s  user  발화 시작: 아바요? 'Dancing Queen' 부른 팀 맞죠?
-    30.83s  <ret> 발화 (turn7 첫 프레임)
-    30.91s  user  발화 끝
-    30.99s  agent 발화 시작: <ret> 맞아요. 'Dancing Queen'을 비롯해 정말 유명한 노래들이 많죠.
-    32.75s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=4.68s]: (tool result) ABBA stock is currently trading at $12.50.
-    35.43s  agent 발화 시작: [sigh] 아바 멤버로서 비외른 울바에우스 씨는 그룹의 성공에 큰 기여를 하셨답니다.
-    35.67s  agent 발화 끝
-    40.93s  user  발화 시작: 혹시 아바 멤버 중에 여성분도 있었나요?
-    41.03s  agent 발화 끝
-    43.16s  <ret> 발화 (turn10 첫 프레임)
-    43.48s  agent 발화 시작: <ret> 네, 아바에는 아그네타 펠트스코그와 아니카 팔리사 씨라는 두 분의 여성 멤버가 있었어요.
-    43.56s  user  발화 끝
-    44.68s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.62s]: Agnetha Fältskog and Anni-Frid Lyngstad were the two female members of
-    49.90s  agent 발화 시작: 아그네타 펠트스코그 씨와 아니카 팔리사 씨가 아바의 여성 멤버셨어요.
-    50.09s  agent 발화 끝
-    54.99s  agent 발화 끝
-    55.80s  user  발화 시작: 그렇군요. 맘마미아 영화에 아바 노래가 많이 나왔었죠?
-    60.37s  agent 발화 시작: 네, 맘마미아 영화는 아바의 노래들로 가득 채워져 있어서 정말 신나게 볼 수 있어요.
-    60.42s  user  발화 끝
-    65.55s  agent 발화 끝
+     0.00s  user  발화 시작: 맘마미아에 나오는 ‘나의 사랑 나의 생명’이라는 노래를 누가 썼는지 궁금해요.
+     4.84s  <ret> 발화 (turn1 첫 프레임)
+     4.99s  agent 발화 시작: <ret> 그 노래에 대한 질문이시군요. 잠시 알아볼게요.
+     5.00s  user  발화 끝
+     6.60s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.16s]: Björn Ulvaeus.
+     9.01s  agent 발화 시작: '나의 사랑 나의 생명'은 비욘 울바에우스가 작곡했어요.
+     9.15s  agent 발화 끝
+    12.95s  user  발화 시작: 아, 비욘 울바에우스군요. 아바 멤버 맞죠?
+    13.03s  agent 발화 끝
+    17.05s  <ret> 발화 (turn4 첫 프레임)
+    17.37s  agent 발화 시작: <ret> 네, 맞아요. 아바의 멤버 중 한 분이시죠.
+    17.44s  user  발화 끝
+    19.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) AAPL: 170.34
+    20.97s  agent 발화 시작: 아바는 정말 대단한 그룹이었어요. [happy] 여러 세대에 걸쳐 사랑받고 있죠.
+    21.15s  agent 발화 끝
+    25.78s  agent 발화 끝
+    25.80s  user  발화 시작: 맞아요, 저도 아바 노래 정말 좋아해요. 그분 다른 노래도 많이 썼어요?
+    30.52s  user  발화 끝
+    30.52s  <ret> 발화 (turn7 첫 프레임)
+    30.60s  agent 발화 시작: <ret> 네, 비욘 울바에우스는 아바의 많은 히트곡들을 작곡했어요.
+    32.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: Björn Ulvaeus.
+    34.73s  agent 발화 시작: '댄싱 퀸'이나 '워터루' 같은 곡도 비욘 울바에우스가 작곡한 노래예요.
+    34.95s  agent 발화 끝
+    38.74s  user  발화 시작: ‘워터루’도 비욘 울바에우스가 썼군요. 대단하네요.
+    38.90s  agent 발화 끝
+    42.35s  agent 발화 시작: 네, 비욘 울바에우스는 아바 음악의 핵심적인 인물이라고 할 수 있어요.
+    42.45s  user  발화 끝
+    47.54s  agent 발화 끝
+    48.36s  user  발화 시작: 맘마미아 영화에도 참여했나요?
+    50.11s  <ret> 발화 (turn12 첫 프레임)
+    50.25s  user  발화 끝
+    50.27s  agent 발화 시작: <ret> 네, 비욘 울바에우스는 맘마미아 영화의 음악 제작에도 참여했어요.
+    52.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: Björn Ulvaeus.
+    54.52s  agent 발화 시작: 맘마미아 영화는 아바의 노래들을 바탕으로 만들어졌고, 비욘 울바에우스도 중요한 역할을 했죠.
+    54.71s  agent 발화 끝
+    57.50s  user  발화 시작: 네.
+    58.31s  user  발화 끝
+    61.60s  agent 발화 끝
+    62.84s  user  발화 시작: 아, 그렇군요. 자세히 알려주셔서 정말 고마워요.
+    67.43s  user  발화 끝
+    67.58s  agent 발화 시작: 도움이 되었다니 기쁘네요. 새로운 도시에 정착하는 데 조금이라도 도움이 되었으면 좋겠어요.
+    73.69s  agent 발화 끝
