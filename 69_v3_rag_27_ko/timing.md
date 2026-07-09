@@ -1,5 +1,65 @@
 # v3_rag_27_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_rag_27",
+#     "name": "Kim",
+#     "location": {
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
+#     },
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "French"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-07-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-06-05",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-04-20",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-04-19",
+#       "category": "home",
+#       "text": "User's home address is 411 Maple Drive."
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-01-23",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-07-17",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 룩스 아우룬케 작곡가가 언제 태어났는지 궁금해요. | S2 천구백칠십 년이라고요? 좀 더 자세히 알려주시겠어요? | S3 잠깐만요, 그분이 어떤 장르의 음악을 주로 하셨는지 먼저 알  | S4 신기하네요. 그분이 활동했던 시기에 다른 유명한 음악가도 있었
 
      0.00s  user  발화 시작: 룩스 아우룬케 작곡가가 언제 태어났는지 궁금해요.

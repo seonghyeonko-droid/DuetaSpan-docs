@@ -1,5 +1,68 @@
 # v3_noinfo_23_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_noinfo_23",
+#     "name": "Noah",
+#     "location": {
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
+#     },
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-07-23",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-02-21",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "category": "home",
+#       "text": "User's home address is 521 Oak Avenue."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-03-15",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Oh, fantastic! [laugh] That’s a hu | S3 Actually, um, do you know anything | S4 Excellent! I think I’m actually st
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth

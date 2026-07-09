@@ -1,5 +1,60 @@
 # v3_selfc_08_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_selfc_08",
+#     "name": "Julia",
+#     "location": {
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
+#     },
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "German"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-07-26",
+#       "category": "home",
+#       "text": "User's home address is 528 Birch Road."
+#     },
+#     {
+#       "date": "2026-05-06",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-04-21",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-01-13",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Is that the 10 PM bus direct too? | S3 Can we reserve three seats on the  | S4 Can you send me the reservation de
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on

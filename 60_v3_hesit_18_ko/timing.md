@@ -1,5 +1,73 @@
 # v3_hesit_18_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_hesit_18",
+#     "name": "은율",
+#     "location": {
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
+#     },
+#     "nationality": "Korean",
+#     "gender": "female",
+#     "age_range": "early 30s",
+#     "language": "Korean"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-07-28",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-07-11",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-06-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
+#     },
+#     {
+#       "date": "2026-04-22",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-03-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "category": "home",
+#       "text": "User's home address is 429 Oak Avenue."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-05-15",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-10",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 베수비오 화산이 마지막으로 폭발한 게 언제였죠? 기억이 잘 안 | S2 아니요, 방문 계획은 없어요. 그냥 궁금해서 물어봤어요. 그  | S3 데이터 분석이라… 복잡하네요. 옛날에 폼페이도 그 화산 때문에 | S4 안전 교육이라… 좋은 조치네요. 혹시 그 화산의 폭발 정도를 
 
      0.00s  user  발화 시작: 베수비오 화산이 마지막으로 폭발한 게 언제였죠? 기억이 잘 안 나네요.

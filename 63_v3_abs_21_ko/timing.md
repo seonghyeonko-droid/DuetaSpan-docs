@@ -1,5 +1,63 @@
 # v3_abs_21_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_abs_21",
+#     "name": "하재",
+#     "location": {
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
+#     },
+#     "nationality": "Korean",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "Korean"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-02",
+#       "category": "home",
+#       "text": "User's home address is 389 Maple Drive."
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
+#     },
+#     {
+#       "date": "2026-03-09",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-06-20",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 프랑스 상원 의원 수는 몇 명이에요? | S2 육 년이나 되네요. 그럼 지금 상원 의원들은 언제 선출됐을까요 | S3 아, 그렇군요. 그럼 지금쯤 다음 선거를 준비하고 있겠네요? | S4 아니요, 오늘은 여기까지 할게요. 감사합니다.
 
      0.00s  user  발화 시작: 프랑스 상원 의원 수는 몇 명이에요?

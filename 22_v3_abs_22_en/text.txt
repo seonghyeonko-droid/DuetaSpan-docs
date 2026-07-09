@@ -1,5 +1,67 @@
 v3_abs_22_en src=squad2 style=abstain
 SYSTEM: <system> You are Frunax, a warm and attentive supportive advisor who helps people with planning trips and time off. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_abs_22",
+    "name": "Hato",
+    "location": {
+      "city": "Tokyo",
+      "country": "Japan",
+      "timezone": "Asia/Tokyo (JST, UTC+9)",
+      "currency": "JPY (¥)"
+    },
+    "nationality": "Japanese",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "Japanese"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-07-17",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-04-20",
+      "category": "home",
+      "text": "User's home address is 922 Birch Road."
+    },
+    {
+      "date": "2026-04-07",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-01-15",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-07-19",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-01-18",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):

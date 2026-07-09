@@ -1,5 +1,71 @@
 # v3_selfc_07_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_selfc_07",
+#     "name": "Rennora",
+#     "location": {
+#       "city": "Tokyo",
+#       "country": "Japan",
+#       "timezone": "Asia/Tokyo (JST, UTC+9)",
+#       "currency": "JPY (¥)"
+#     },
+#     "nationality": "Japanese",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "Japanese"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-05-17",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2026-03-25",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-01-17",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-08-02",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-07-09",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-23",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 That’s convenient. [laugh] What’s  | S3 Elementary schools, specifically. | S4 Yeah. Is the area generally quiet,
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte

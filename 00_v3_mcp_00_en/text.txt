@@ -1,5 +1,67 @@
 v3_mcp_00_en src=mcp style=v1
 SYSTEM: <system> You are Nellara, a upbeat and supportive counselor who helps people with friendships and social life. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_00",
+    "name": "Nina",
+    "location": {
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "German"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-26",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in May."
+    },
+    {
+      "date": "2026-06-04",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2026-04-24",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2026-01-09",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-27",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-01-11",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):

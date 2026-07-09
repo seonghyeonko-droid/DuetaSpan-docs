@@ -1,5 +1,68 @@
 # v3_rag_25_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_rag_25",
+#     "name": "Morgan",
+#     "location": {
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
+#     },
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-08-03",
+#       "category": "home",
+#       "text": "User's home address is 461 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-06-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
+#     },
+#     {
+#       "date": "2026-06-11",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-05-11",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-21",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-07-21",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-26",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 선수예 | S2 아, 2018년에 은퇴하셨군요. 잭 소크 선수는 아직도 활발하 | S3 아, 그렇군요. 테니스 선수들은 다재다능한 것 같아요. | S4 두 번이나 출전했군요. 대단하네요.
 
      0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 선수예요?

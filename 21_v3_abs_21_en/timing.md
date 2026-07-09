@@ -1,5 +1,63 @@
 # v3_abs_21_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_abs_21",
+#     "name": "하재",
+#     "location": {
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
+#     },
+#     "nationality": "Korean",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "Korean"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-02",
+#       "category": "home",
+#       "text": "User's home address is 389 Maple Drive."
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
+#     },
+#     {
+#       "date": "2026-03-09",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-06-20",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-28",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 That’s neat. I’m trying to get a b | S3 Maybe. I’m also thinking about sta | S4 Five minutes? That doesn’t sound s
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?

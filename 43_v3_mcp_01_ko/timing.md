@@ -1,5 +1,63 @@
 # v3_mcp_01_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_mcp_01",
+#     "name": "예재",
+#     "location": {
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
+#     },
+#     "nationality": "Korean",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
+#     "language": "Korean"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
+#     },
+#     {
+#       "date": "2026-05-03",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-03-11",
+#       "category": "home",
+#       "text": "User's home address is 50 Pine Court."
+#     },
+#     {
+#       "date": "2026-02-18",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-05-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-16",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 페이지를 자세하게 보여주는 지도를 만들어  | S2 아이폰 15 프로 모델의 가격 정보는 어디에 있어? | S3 512기가바이트 모델은 얼마야? | S4 강남점 수령 맞는데, 혹시 배송도 가능해?
 
      0.00s  user  발화 시작: 애플 웹사이트 제품 페이지를 자세하게 보여주는 지도를 만들어 줘.

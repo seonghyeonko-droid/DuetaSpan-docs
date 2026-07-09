@@ -1,5 +1,68 @@
 # v3_pause_16_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_pause_16",
+#     "name": "Andrea",
+#     "location": {
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
+#     },
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-08-04",
+#       "category": "home",
+#       "text": "User's home address is 148 Elm Street."
+#     },
+#     {
+#       "date": "2026-06-19",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-03-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
+#     },
+#     {
+#       "date": "2026-03-06",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2026-01-25",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-07-05",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-18",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 빅 브라더라는 말은 어디에서 유래된 거예요? 뭔가… 정치적인  | S2 …제목이군요. …근데 왜 하필 ‘빅 브라더’라고 지었을까요? | S3 아하, 그래서 뉴스나 그런 데서도 종종 들었던 것 같아요. 감 | S4 와, 생각보다 훨씬 더 많은 곳에서 감시가 이루어지고 있었네요
 
      0.00s  user  발화 시작: 빅 브라더라는 말은 어디에서 유래된 거예요? 뭔가… 정치적인 느낌도 있고, 좀 무서운 뉘앙스도 있는 것 같아

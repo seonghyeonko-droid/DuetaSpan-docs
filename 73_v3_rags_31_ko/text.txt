@@ -1,5 +1,70 @@
 v3_rags_31_ko src=nq_single style=rag_single
 SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 침착하고 인내심 있는 조력자 Sorax입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rags_31",
+    "name": "Noa",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-08",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-04-16",
+      "category": "home",
+      "text": "User's home address is 808 Elm Street."
+    },
+    {
+      "date": "2026-04-14",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-01-24",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-07-11",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-05-06",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] 데어데블 시즌 3은 언제 ⟨ret@2.07s⟩ 공개되나요?

@@ -1,5 +1,71 @@
 # v3_selfc_07_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_selfc_07",
+#     "name": "Rennora",
+#     "location": {
+#       "city": "Tokyo",
+#       "country": "Japan",
+#       "timezone": "Asia/Tokyo (JST, UTC+9)",
+#       "currency": "JPY (¥)"
+#     },
+#     "nationality": "Japanese",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "Japanese"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-05-17",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2026-03-25",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-02-05",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-01-17",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-08-02",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-07-09",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-23",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 6월 15일에 방문 예약을 잡아줘. | S2 혹시 그 로프트 주변에 괜찮은 카페도 알아봐 줄 수 있어? | S3 오, 괜찮네. 혹시 그 카페에 주차 공간도 있어? | S4 그랜드뷰 로프트 방문 예약 말이야.
 
      0.00s  user  발화 시작: 그랜드뷰 로프트에 6월 15일에 방문 예약을 잡아줘.

@@ -1,5 +1,68 @@
 # v3_mcp_00_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_mcp_00",
+#     "name": "Nina",
+#     "location": {
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
+#     },
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "German"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in May."
+#     },
+#     {
+#       "date": "2026-06-04",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2026-04-24",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-03",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-06-27",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Fall sounds nice. I’m hoping to me | S3 That’s a good point. What if they  | S4 Oh, interesting. Is it popular?
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari

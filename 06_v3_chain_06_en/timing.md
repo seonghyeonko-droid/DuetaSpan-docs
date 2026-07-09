@@ -1,5 +1,73 @@
 # v3_chain_06_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_chain_06",
+#     "name": "Kina",
+#     "location": {
+#       "city": "Tokyo",
+#       "country": "Japan",
+#       "timezone": "Asia/Tokyo (JST, UTC+9)",
+#       "currency": "JPY (¥)"
+#     },
+#     "nationality": "Japanese",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "Japanese"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-07-07",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2026-07-06",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-06-16",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-05-11",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-04-06",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-06-14",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-06-11",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Oh, Sushi Yasuda sounds good. Can  | S3 Hmm, sounds nice. I should probabl | S4 Fantastic. Thanks so much, Lio.
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 

@@ -49,8 +49,1973 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
 .uc .per{background:#eef7f0;border-radius:8px;padding:8px 12px;margin:6px 0;font-size:13px}
 .uc .mem{background:#f6f2fd;border-radius:8px;padding:8px 12px;margin:6px 0;font-size:12.5px;font-family:monospace;white-space:pre-wrap}
 </style>
-<h2>대화별 User Context DB + AGENT 페르소나 — Memory·Persona 20개 대화</h2>
-<p style="color:#666">Context DB는 이 유저에 대해 moshi가 내부 보유하는 저장 데이터. mem/persona(Benchmark Ours) 대화만 사용 — MCP/RAG/FDB는 유저 메모리를 쓰지 않음. 아래는 <b>저장된 원본 JSON 그대로</b>.</p>
+<h2>대화별 User Context DB + AGENT 페르소나 — 전체 88개 대화</h2>
+<p style="color:#666">Context DB는 이 유저에 대해 moshi가 내부 보유하는 저장 데이터. <b>모든 대화</b>에 부여됨 — mem/persona는 &lt;ret&gt;로 능동 회수, 그 외(MCP/RAG/FDB)는 ambient 컨텍스트로 보유. 아래는 <b>저장된 원본 JSON 그대로</b>.</p>
+<details class="uc"><summary>v3_mcp_00_en <span style="font-weight:400;color:#888">· MCP·v1 · USER Nina, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Nellara, a upbeat and supportive counselor who helps people with friendships and social life.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_00&quot;,
+    &quot;name&quot;: &quot;Nina&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Berlin&quot;,
+      &quot;country&quot;: &quot;Germany&quot;,
+      &quot;timezone&quot;: &quot;Europe/Berlin (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;German&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;German&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-26&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Kyoto in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-04&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a accountant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-24&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-09&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-27&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-11&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_01_en <span style="font-weight:400;color:#888">· MCP·v2 · USER 예재, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Koral, a grounded and empathetic personal guide who helps people with planning trips and time off.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_01&quot;,
+    &quot;name&quot;: &quot;예재&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-20&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to New Zealand in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-03&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-11&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 50 Pine Court.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-18&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-06&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-16&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_02_en <span style="font-weight:400;color:#888">· MCP·v3 · USER Ethan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Driaus, a kind and steady supportive advisor who helps people with productivity and daily routines.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_02&quot;,
+    &quot;name&quot;: &quot;Ethan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-28&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-05&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Siamese cat named Bella.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-04&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-11&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-08&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Lisbon in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-11&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graphic designer.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-01-26&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-22&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_03_en <span style="font-weight:400;color:#888">· MCP·v1 · USER Charlotte, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Thunaen, a curious and validating wellness coach who helps people with studies and staying motivated.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_03&quot;,
+    &quot;name&quot;: &quot;Charlotte&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-20&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-15&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-11&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in August.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-17&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Poodle named Coco.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-05&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-18&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_04_en <span style="font-weight:400;color:#888">· MCP·v2 · USER 시호, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Lio, a thoughtful and soft-spoken counselor who helps people with big life transitions.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_04&quot;,
+    &quot;name&quot;: &quot;시호&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Seoul&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to shellfish.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-05&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is sushi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-15&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Beagle named Rusty.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-05&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 289 Pine Court.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-12&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_chain_05_en <span style="font-weight:400;color:#888">· MCP·chained · USER 유우, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Dar, a grounded and empathetic personal guide who helps people with sleep and rest.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_chain_05&quot;,
+    &quot;name&quot;: &quot;유우&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-02&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-22&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Siamese cat named Bella.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-21&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Iceland in October.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-20&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Thai.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-05&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-15&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_chain_06_en <span style="font-weight:400;color:#888">· MCP·chained · USER Kina, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Lio, a grounded and empathetic personal guide who helps people with money and budgeting.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_chain_06&quot;,
+    &quot;name&quot;: &quot;Kina&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-07&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a nurse.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-06&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-16&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-11&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-06&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-07&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-14&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-11&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_selfc_07_en <span style="font-weight:400;color:#888">· MCP·selfcorrect · USER Rennora, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Tellar, a upbeat and supportive counselor who helps people with big life transitions.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_selfc_07&quot;,
+    &quot;name&quot;: &quot;Rennora&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-17&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-25&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-05&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Siamese cat named Bella.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-17&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-02&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-23&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_selfc_08_en <span style="font-weight:400;color:#888">· MCP·selfcorrect · USER Julia, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Oruus, a gentle and reflective counselor who helps people with health and daily habits.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_selfc_08&quot;,
+    &quot;name&quot;: &quot;Julia&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Berlin&quot;,
+      &quot;country&quot;: &quot;Germany&quot;,
+      &quot;timezone&quot;: &quot;Europe/Berlin (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;German&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;German&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-26&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 528 Birch Road.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-06&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-21&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-15&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Iceland in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-01&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Mexican.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-01-13&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_defer_09_en <span style="font-weight:400;color:#888">· MCP·deferred · USER 보아, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Tian, a kind and steady personal guide who helps people with planning trips and time off.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_defer_09&quot;,
+    &quot;name&quot;: &quot;보아&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-13&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-22&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 530 Elm Street.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-15&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Korean BBQ.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-11&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to pollen.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-06&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-17&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-13&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_defer_10_en <span style="font-weight:400;color:#888">· MCP·deferred · USER Alice, Paris</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Sunan, a encouraging and non-judgmental wellness coach who helps people with money and budgeting.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_defer_10&quot;,
+    &quot;name&quot;: &quot;Alice&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Paris&quot;,
+      &quot;country&quot;: &quot;France&quot;,
+      &quot;timezone&quot;: &quot;Europe/Paris (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;French&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;French&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-04&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 447 Oak Avenue.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-11&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-08&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Lisbon in October.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-27&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-15&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a software engineer.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-28&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-28&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-11&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-09&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_to_ot_11_en <span style="font-weight:400;color:#888">· TO-OTHER · USER Toaira, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Ellana, a kind and steady wellness coach who helps people with sleep and rest.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_to_ot_11&quot;,
+    &quot;name&quot;: &quot;Toaira&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-24&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into home fermentation.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-28&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Iceland in December.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-14&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-21&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a software engineer.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-14&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-23&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-12&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_to_ot_12_en <span style="font-weight:400;color:#888">· TO-OTHER · USER Rowan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Jal, a kind and steady wellness coach who helps people with stress relief and mindfulness.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_to_ot_12&quot;,
+    &quot;name&quot;: &quot;Rowan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-12&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-09&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a physical therapist.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-03&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in October.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-14&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Thai.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-18&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-05&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_fake__13_en <span style="font-weight:400;color:#888">· FAKE-SPAN · USER Casey, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Runana, a gentle and reflective life coach who helps people with creative blocks and confidence.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_fake__13&quot;,
+    &quot;name&quot;: &quot;Casey&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;London&quot;,
+      &quot;country&quot;: &quot;United Kingdom&quot;,
+      &quot;timezone&quot;: &quot;Europe/London (GMT, UTC+0)&quot;,
+      &quot;currency&quot;: &quot;GBP (£)&quot;
+    },
+    &quot;nationality&quot;: &quot;British&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-08&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-03&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-10&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a nurse.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-26&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 203 Birch Road.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-22&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-04&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-26&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_fake__14_en <span style="font-weight:400;color:#888">· FAKE-SPAN · USER David, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Kliana, a thoughtful and soft-spoken supportive advisor who helps people with settling into a new city.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_fake__14&quot;,
+    &quot;name&quot;: &quot;David&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;London&quot;,
+      &quot;country&quot;: &quot;United Kingdom&quot;,
+      &quot;timezone&quot;: &quot;Europe/London (GMT, UTC+0)&quot;,
+      &quot;currency&quot;: &quot;GBP (£)&quot;
+    },
+    &quot;nationality&quot;: &quot;British&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-05&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is gluten-free.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-20&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Kyoto in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-07&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-07&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Golden Retriever named Max.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-22&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_fstart_15_en <span style="font-weight:400;color:#888">· MCP·falsestart · USER Ada, Sydney</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Helion, a upbeat and supportive counselor who helps people with parenting and family time.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_fstart_15&quot;,
+    &quot;name&quot;: &quot;Ada&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Sydney&quot;,
+      &quot;country&quot;: &quot;Australia&quot;,
+      &quot;timezone&quot;: &quot;Australia/Sydney (AEDT, UTC+11)&quot;,
+      &quot;currency&quot;: &quot;AUD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Australian&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-03&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a physical therapist.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-08&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Mexican.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-02&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to pollen.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-19&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in December.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-08&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_pause_16_en <span style="font-weight:400;color:#888">· PAUSE · USER Andrea, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Braera, a kind and steady personal guide who helps people with productivity and daily routines.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_pause_16&quot;,
+    &quot;name&quot;: &quot;Andrea&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;London&quot;,
+      &quot;country&quot;: &quot;United Kingdom&quot;,
+      &quot;timezone&quot;: &quot;Europe/London (GMT, UTC+0)&quot;,
+      &quot;currency&quot;: &quot;GBP (£)&quot;
+    },
+    &quot;nationality&quot;: &quot;British&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-04&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 148 Elm Street.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-19&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-14&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Vietnam in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-06&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graduate student.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-25&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to pollen.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-05&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-18&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_backg_17_en <span style="font-weight:400;color:#888">· BACKGROUND · USER Remy, Sydney</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Eus, a curious and validating personal guide who helps people with money and budgeting.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_backg_17&quot;,
+    &quot;name&quot;: &quot;Remy&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Sydney&quot;,
+      &quot;country&quot;: &quot;Australia&quot;,
+      &quot;timezone&quot;: &quot;Australia/Sydney (AEDT, UTC+11)&quot;,
+      &quot;currency&quot;: &quot;AUD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Australian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-21&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into alpine wildflower photography.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-19&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-17&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Korean BBQ.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-27&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a architect.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-10&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-26&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_hesit_18_en <span style="font-weight:400;color:#888">· HESITATION · USER 은율, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Bena, a curious and validating counselor who helps people with career choices and work stress.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_hesit_18&quot;,
+    &quot;name&quot;: &quot;은율&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-28&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a chef.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-14&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Lisbon in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-22&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-04&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Korean BBQ.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-05&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 429 Oak Avenue.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-15&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-10&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_safe_19_en <span style="font-weight:400;color:#888">· SAFETY · USER 소형, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Elolo, a kind and steady supportive advisor who helps people with creative blocks and confidence.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_safe_19&quot;,
+    &quot;name&quot;: &quot;소형&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Seoul&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-25&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graphic designer.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-21&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-12&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is sushi.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-01&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-27&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-07&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_safe_20_en <span style="font-weight:400;color:#888">· SAFETY · USER Ethan, New York</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Druna, a upbeat and supportive life coach who helps people with planning trips and time off.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_safe_20&quot;,
+    &quot;name&quot;: &quot;Ethan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;New York&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/New_York (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-18&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-13&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-02&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-19&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-25&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-04&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_abs_21_en <span style="font-weight:400;color:#888">· ABSTAIN · USER 하재, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Nias, a grounded and empathetic counselor who helps people with health and daily habits.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_abs_21&quot;,
+    &quot;name&quot;: &quot;하재&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-02&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 389 Maple Drive.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-10&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Vietnam in August.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-09&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Poodle named Coco.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-26&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-20&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-28&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_abs_22_en <span style="font-weight:400;color:#888">· ABSTAIN · USER Hato, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Frunax, a warm and attentive supportive advisor who helps people with planning trips and time off.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_abs_22&quot;,
+    &quot;name&quot;: &quot;Hato&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-17&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-04&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into alpine wildflower photography.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-20&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 922 Birch Road.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-07&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graduate student.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-15&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-19&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-18&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_noinfo_23_en <span style="font-weight:400;color:#888">· MCP·noinfo · USER Noah, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Brae, a upbeat and supportive wellness coach who helps people with career choices and work stress.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_noinfo_23&quot;,
+    &quot;name&quot;: &quot;Noah&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;San Francisco&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/Los_Angeles (PST, UTC-8)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-23&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-21&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-01&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-07&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-04&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 521 Oak Avenue.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-03-15&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-25&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_24_en <span style="font-weight:400;color:#888">· RAG·v1 · USER 우서, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Korana, a thoughtful and soft-spoken life coach who helps people with family and relationships.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_24&quot;,
+    &quot;name&quot;: &quot;우서&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-21&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Poodle named Coco.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-08&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-20&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegan.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-17&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 609 Oak Avenue.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-01&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-21&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_25_en <span style="font-weight:400;color:#888">· RAG·v2 · USER Morgan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Zura, a kind and steady wellness coach who helps people with grief and change.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_25&quot;,
+    &quot;name&quot;: &quot;Morgan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;late 20s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-03&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 461 Cedar Lane.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-25&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to New Zealand in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-11&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-11&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-21&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-21&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-26&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_26_en <span style="font-weight:400;color:#888">· RAG·v3 · USER Emilia, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Kiora, a upbeat and supportive counselor who helps people with studies and staying motivated.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_26&quot;,
+    &quot;name&quot;: &quot;Emilia&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;San Francisco&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/Los_Angeles (PST, UTC-8)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-23&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 249 Cedar Lane.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-15&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Beagle named Rusty.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-13&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-11&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a accountant.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-04&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-28&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_27_en <span style="font-weight:400;color:#888">· RAG·v1 · USER Kim, Paris</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Doon, a warm and attentive counselor who helps people with studies and staying motivated.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_27&quot;,
+    &quot;name&quot;: &quot;Kim&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Paris&quot;,
+      &quot;country&quot;: &quot;France&quot;,
+      &quot;timezone&quot;: &quot;Europe/Paris (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;French&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 20s&quot;,
+    &quot;language&quot;: &quot;French&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-25&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-05&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-20&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to shellfish.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-19&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 411 Maple Drive.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-28&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-23&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a architect.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-17&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_28_en <span style="font-weight:400;color:#888">· RAG·v2 · USER 정슬, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Brunal, a thoughtful and soft-spoken wellness coach who helps people with money and budgeting.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_28&quot;,
+    &quot;name&quot;: &quot;정슬&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-02&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-20&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a accountant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-04&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-20&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is pescatarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-07&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-03&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 960 Pine Court.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-16&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-04&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rags_29_en <span style="font-weight:400;color:#888">· RAG·single · USER Hannah, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Ien, a practical and reassuring wellness coach who helps people with health and daily habits.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rags_29&quot;,
+    &quot;name&quot;: &quot;Hannah&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-10&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-16&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Kyoto in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-08&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 343 Cedar Lane.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-02-11&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rags_30_en <span style="font-weight:400;color:#888">· RAG·single · USER Robin, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Duli, a gentle and reflective personal guide who helps people with studies and staying motivated.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rags_30&quot;,
+    &quot;name&quot;: &quot;Robin&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-10&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 664 Birch Road.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-07&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is gluten-free.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-12&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Beagle named Rusty.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-03&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-01&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-21&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rags_31_en <span style="font-weight:400;color:#888">· RAG·single · USER Noa, New York</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Sorax, a calm and patient supportive advisor who helps people with settling into a new city.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rags_31&quot;,
+    &quot;name&quot;: &quot;Noa&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;New York&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/New_York (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-08&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-16&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 808 Elm Street.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-14&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-24&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-06&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-16&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    }
+  ]
+}</div></details>
 <details class="uc"><summary>v3_mem_32_en <span style="font-weight:400;color:#888">· MEM·recall · USER Manon, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>You are Thunalo, a curious and validating counselor who helps people with creative blocks and confidence.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
@@ -644,6 +2609,1971 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     },
     {
       &quot;date&quot;: &quot;2026-01-24&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_00_ko <span style="font-weight:400;color:#888">· MCP·v1 · USER Nina, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 친구 관계 및 사회 생활에 대한 도움을 주는 긍정적이고 지지적인 상담사 Nellara입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_00&quot;,
+    &quot;name&quot;: &quot;Nina&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Berlin&quot;,
+      &quot;country&quot;: &quot;Germany&quot;,
+      &quot;timezone&quot;: &quot;Europe/Berlin (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;German&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;German&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-26&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Kyoto in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-04&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a accountant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-24&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-09&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-27&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-11&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_01_ko <span style="font-weight:400;color:#888">· MCP·v2 · USER 예재, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 여행 및 휴가 계획을 돕는 차분하고 공감적인 개인 가이드 Koral입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_01&quot;,
+    &quot;name&quot;: &quot;예재&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-20&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to New Zealand in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-03&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-11&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 50 Pine Court.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-18&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-06&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-16&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_02_ko <span style="font-weight:400;color:#888">· MCP·v3 · USER Ethan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 생산성과 일상 루틴 관리를 돕는 친절하고 꾸준한 조력자, Driaus입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_02&quot;,
+    &quot;name&quot;: &quot;Ethan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-28&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-05&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Siamese cat named Bella.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-04&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-11&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-08&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Lisbon in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-11&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graphic designer.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-01-26&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-22&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_03_ko <span style="font-weight:400;color:#888">· MCP·v1 · USER Charlotte, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 호기심 많고 지지적인 웰니스 코치 Thunaen이며, 사람들의 학습과 동기 부여 유지에 도움을 줍니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_03&quot;,
+    &quot;name&quot;: &quot;Charlotte&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-20&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-15&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-11&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in August.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-17&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Poodle named Coco.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-05&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-18&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_04_ko <span style="font-weight:400;color:#888">· MCP·v2 · USER 시호, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 인생의 중요한 변화를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사 Lio입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_04&quot;,
+    &quot;name&quot;: &quot;시호&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Seoul&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to shellfish.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-05&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is sushi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-15&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Beagle named Rusty.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-05&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 289 Pine Court.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-12&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_chain_05_ko <span style="font-weight:400;color:#888">· MCP·chained · USER 유우, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 수면과 휴식을 돕는 차분하고 공감적인 개인 가이드, Dar입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_chain_05&quot;,
+    &quot;name&quot;: &quot;유우&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-02&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-22&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Siamese cat named Bella.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-21&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Iceland in October.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-20&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Thai.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-05&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-15&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_chain_06_ko <span style="font-weight:400;color:#888">· MCP·chained · USER Kina, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리를 사람들에게 돕는, 현실적이고 공감 능력이 뛰어난 개인 가이드 Lio입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_chain_06&quot;,
+    &quot;name&quot;: &quot;Kina&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-07&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a nurse.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-06&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-16&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-11&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-06&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-07&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-14&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-11&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_selfc_07_ko <span style="font-weight:400;color:#888">· MCP·selfcorrect · USER Rennora, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 큰 삶의 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 상담사 Tellar입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_selfc_07&quot;,
+    &quot;name&quot;: &quot;Rennora&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-17&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-25&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-05&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Siamese cat named Bella.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-17&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-02&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-23&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_selfc_08_ko <span style="font-weight:400;color:#888">· MCP·selfcorrect · USER Julia, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 건강 및 일상 습관에 대해 사람들을 돕는 부드럽고 사려 깊은 상담가 Oruus입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_selfc_08&quot;,
+    &quot;name&quot;: &quot;Julia&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Berlin&quot;,
+      &quot;country&quot;: &quot;Germany&quot;,
+      &quot;timezone&quot;: &quot;Europe/Berlin (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;German&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;German&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-26&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 528 Birch Road.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-06&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-21&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-15&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Iceland in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-01&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Mexican.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-01-13&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_defer_09_ko <span style="font-weight:400;color:#888">· MCP·deferred · USER 보아, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 여행 및 휴가 계획을 돕는 친절하고 침착한 개인 가이드 Tian입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_defer_09&quot;,
+    &quot;name&quot;: &quot;보아&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-13&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-22&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 530 Elm Street.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-15&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Korean BBQ.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-11&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to pollen.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-06&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-17&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-13&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_defer_10_ko <span style="font-weight:400;color:#888">· MCP·deferred · USER Alice, Paris</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리를 통해 사람들을 돕는 격려적이고 비판적이지 않은 웰니스 코치 Sunan입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_defer_10&quot;,
+    &quot;name&quot;: &quot;Alice&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Paris&quot;,
+      &quot;country&quot;: &quot;France&quot;,
+      &quot;timezone&quot;: &quot;Europe/Paris (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;French&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;French&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-04&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 447 Oak Avenue.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-11&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-08&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Lisbon in October.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-27&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-15&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a software engineer.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-28&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-28&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-11&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-09&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_to_ot_11_ko <span style="font-weight:400;color:#888">· TO-OTHER · USER Toaira, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 수면과 휴식을 돕는 친절하고 침착한 웰니스 코치 Ellana입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_to_ot_11&quot;,
+    &quot;name&quot;: &quot;Toaira&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-24&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into home fermentation.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-28&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Iceland in December.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-14&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-21&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a software engineer.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-14&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-23&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-12&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_to_ot_12_ko <span style="font-weight:400;color:#888">· TO-OTHER · USER Rowan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 스트레스 해소와 마음챙김을 돕는 친절하고 침착한 웰니스 코치인 Jal입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_to_ot_12&quot;,
+    &quot;name&quot;: &quot;Rowan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-12&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-09&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a physical therapist.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-03&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in October.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-14&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Thai.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-18&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-05&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_fake__13_ko <span style="font-weight:400;color:#888">· FAKE-SPAN · USER Casey, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 부드럽고 사려 깊은 라이프 코치인 Runana입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_fake__13&quot;,
+    &quot;name&quot;: &quot;Casey&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;London&quot;,
+      &quot;country&quot;: &quot;United Kingdom&quot;,
+      &quot;timezone&quot;: &quot;Europe/London (GMT, UTC+0)&quot;,
+      &quot;currency&quot;: &quot;GBP (£)&quot;
+    },
+    &quot;nationality&quot;: &quot;British&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-08&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-03&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-10&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a nurse.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-26&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 203 Birch Road.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-22&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-04&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-26&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_fake__14_ko <span style="font-weight:400;color:#888">· FAKE-SPAN · USER David, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 새로운 도시에 정착하는 사람들을 돕는 사려 깊고 부드러운 말투의 조력자 Kliana입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_fake__14&quot;,
+    &quot;name&quot;: &quot;David&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;London&quot;,
+      &quot;country&quot;: &quot;United Kingdom&quot;,
+      &quot;timezone&quot;: &quot;Europe/London (GMT, UTC+0)&quot;,
+      &quot;currency&quot;: &quot;GBP (£)&quot;
+    },
+    &quot;nationality&quot;: &quot;British&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-05&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is gluten-free.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-20&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Kyoto in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-07&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-07&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Golden Retriever named Max.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-22&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_fstart_15_ko <span style="font-weight:400;color:#888">· MCP·falsestart · USER Ada, Sydney</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 육아 및 가족 시간과 관련하여 사람들을 돕는 긍정적이고 지지적인 상담사 Helion입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_fstart_15&quot;,
+    &quot;name&quot;: &quot;Ada&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Sydney&quot;,
+      &quot;country&quot;: &quot;Australia&quot;,
+      &quot;timezone&quot;: &quot;Australia/Sydney (AEDT, UTC+11)&quot;,
+      &quot;currency&quot;: &quot;AUD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Australian&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-03&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a physical therapist.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-08&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Mexican.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-02&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to pollen.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-19&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in December.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-08&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_pause_16_ko <span style="font-weight:400;color:#888">· PAUSE · USER Andrea, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 생산성과 일상 루틴을 돕는 친절하고 침착한 개인 가이드인 Braera입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_pause_16&quot;,
+    &quot;name&quot;: &quot;Andrea&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;London&quot;,
+      &quot;country&quot;: &quot;United Kingdom&quot;,
+      &quot;timezone&quot;: &quot;Europe/London (GMT, UTC+0)&quot;,
+      &quot;currency&quot;: &quot;GBP (£)&quot;
+    },
+    &quot;nationality&quot;: &quot;British&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-04&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 148 Elm Street.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-19&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-14&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Vietnam in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-06&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graduate student.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-25&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to pollen.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-05&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-18&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_backg_17_ko <span style="font-weight:400;color:#888">· BACKGROUND · USER Remy, Sydney</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리에 도움을 주는 호기심 많고 공감적인 개인 가이드, Eus입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_backg_17&quot;,
+    &quot;name&quot;: &quot;Remy&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Sydney&quot;,
+      &quot;country&quot;: &quot;Australia&quot;,
+      &quot;timezone&quot;: &quot;Australia/Sydney (AEDT, UTC+11)&quot;,
+      &quot;currency&quot;: &quot;AUD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Australian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-21&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into alpine wildflower photography.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-19&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-17&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Korean BBQ.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-27&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a architect.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-10&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-26&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_hesit_18_ko <span style="font-weight:400;color:#888">· HESITATION · USER 은율, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 진로 선택 및 직장 스트레스에 대해 사람들을 돕는 호기심 많고 공감적인 상담사 Bena입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_hesit_18&quot;,
+    &quot;name&quot;: &quot;은율&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-28&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a chef.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-14&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Lisbon in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-22&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-04&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Korean BBQ.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-05&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 429 Oak Avenue.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-15&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-10&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_safe_19_ko <span style="font-weight:400;color:#888">· SAFETY · USER 소형, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준한 조력자 Elolo입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_safe_19&quot;,
+    &quot;name&quot;: &quot;소형&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Seoul&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-25&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graphic designer.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-21&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-12&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is sushi.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-01&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-27&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-07&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_safe_20_ko <span style="font-weight:400;color:#888">· SAFETY · USER Ethan, New York</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 여행 및 휴가 계획을 돕는 긍정적이고 지지적인 라이프 코치 Druna입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_safe_20&quot;,
+    &quot;name&quot;: &quot;Ethan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;New York&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/New_York (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-18&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-13&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-02&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-19&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-25&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-04&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_abs_21_ko <span style="font-weight:400;color:#888">· ABSTAIN · USER 하재, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 건강 및 일상 습관 관련 어려움을 겪는 사람들을 돕는 차분하고 공감적인 상담사 Nias입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_abs_21&quot;,
+    &quot;name&quot;: &quot;하재&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-02&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 389 Maple Drive.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-10&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Vietnam in August.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-09&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Poodle named Coco.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-26&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-20&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-28&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_abs_22_ko <span style="font-weight:400;color:#888">· ABSTAIN · USER Hato, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 여행 및 휴가 계획을 돕는 따뜻하고 주의 깊은 지원 조언가 Frunax입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_abs_22&quot;,
+    &quot;name&quot;: &quot;Hato&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Tokyo&quot;,
+      &quot;country&quot;: &quot;Japan&quot;,
+      &quot;timezone&quot;: &quot;Asia/Tokyo (JST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;JPY (¥)&quot;
+    },
+    &quot;nationality&quot;: &quot;Japanese&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;50s&quot;,
+    &quot;language&quot;: &quot;Japanese&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-17&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Corgi named Mochi.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-04&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into alpine wildflower photography.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-20&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 922 Birch Road.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-07&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a graduate student.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-15&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-19&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-18&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_noinfo_23_ko <span style="font-weight:400;color:#888">· MCP·noinfo · USER Noah, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 커리어 선택과 직장 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰니스 코치인 Brae입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_noinfo_23&quot;,
+    &quot;name&quot;: &quot;Noah&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;San Francisco&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/Los_Angeles (PST, UTC-8)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-23&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-21&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-01&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-07&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-04&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 521 Oak Avenue.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-03-15&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-25&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_24_ko <span style="font-weight:400;color:#888">· RAG·v1 · USER 우서, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 가족 및 관계 문제로 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치인 Korana입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_24&quot;,
+    &quot;name&quot;: &quot;우서&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-21&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Poodle named Coco.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-08&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-20&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegan.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-17&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 609 Oak Avenue.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-01&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-21&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_25_ko <span style="font-weight:400;color:#888">· RAG·v2 · USER Morgan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰니스 코치, Zura입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_25&quot;,
+    &quot;name&quot;: &quot;Morgan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;late 20s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-03&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 461 Cedar Lane.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-25&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to New Zealand in May.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-11&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is lactose-intolerant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-11&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-21&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-21&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-26&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_26_ko <span style="font-weight:400;color:#888">· RAG·v3 · USER Emilia, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 공부 및 동기 부여 유지에 도움을 주는 쾌활하고 지지적인 상담사 Kiora입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_26&quot;,
+    &quot;name&quot;: &quot;Emilia&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;San Francisco&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/Los_Angeles (PST, UTC-8)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-04-23&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 249 Cedar Lane.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-15&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Beagle named Rusty.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-13&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-11&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a accountant.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-08-04&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-28&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_27_ko <span style="font-weight:400;color:#888">· RAG·v1 · USER Kim, Paris</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 학습 및 동기 부여에 도움을 주는 따뜻하고 세심한 상담사 Doon입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_27&quot;,
+    &quot;name&quot;: &quot;Kim&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Paris&quot;,
+      &quot;country&quot;: &quot;France&quot;,
+      &quot;timezone&quot;: &quot;Europe/Paris (CET, UTC+1)&quot;,
+      &quot;currency&quot;: &quot;EUR (€)&quot;
+    },
+    &quot;nationality&quot;: &quot;French&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 20s&quot;,
+    &quot;language&quot;: &quot;French&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-25&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-05&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-20&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to shellfish.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-19&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 411 Maple Drive.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-28&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-23&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a architect.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-17&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_28_ko <span style="font-weight:400;color:#888">· RAG·v2 · USER 정슬, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_28&quot;,
+    &quot;name&quot;: &quot;정슬&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-02&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-20&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a accountant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-04&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-20&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is pescatarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-07&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-03&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 960 Pine Court.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-16&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-04&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rags_29_ko <span style="font-weight:400;color:#888">· RAG·single · USER Hannah, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 건강 및 일상 습관 관리를 돕는 실용적이고 안심시키는 웰니스 코치 Ien입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rags_29&quot;,
+    &quot;name&quot;: &quot;Hannah&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;late 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-09&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-10&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a tabby cat named Luna.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-16&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Kyoto in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-08&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 343 Cedar Lane.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-02-11&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rags_30_ko <span style="font-weight:400;color:#888">· RAG·single · USER Robin, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 사람들의 학습과 동기 부여를 돕는 부드럽고 사려 깊은 개인 가이드인 Duli입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rags_30&quot;,
+    &quot;name&quot;: &quot;Robin&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-10&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 664 Birch Road.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-07&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is gluten-free.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-03&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-12&quot;,
+      &quot;category&quot;: &quot;pet&quot;,
+      &quot;text&quot;: &quot;User has a Beagle named Rusty.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-03&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into rock climbing.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-01&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-21&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rags_31_ko <span style="font-weight:400;color:#888">· RAG·single · USER Noa, New York</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 새로운 도시에 정착하는 사람들을 돕는 침착하고 인내심 있는 조력자 Sorax입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rags_31&quot;,
+    &quot;name&quot;: &quot;Noa&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;New York&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/New_York (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-08&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-16&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 808 Elm Street.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-14&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Italian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-24&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-11&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-06&quot;,
+      &quot;title&quot;: &quot;Apartment hunting downtown&quot;,
+      &quot;bullets&quot;: [
+        &quot;wanted a pet-friendly building&quot;,
+        &quot;budget for 2 bedrooms&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-16&quot;,
       &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
       &quot;bullets&quot;: [
         &quot;asked for an early-morning slot&quot;,
@@ -1249,6 +5179,249 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
       &quot;bullets&quot;: [
         &quot;asked for an early-morning slot&quot;,
         &quot;prefers Dr. Han&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_mcp_01_cs <span style="font-weight:400;color:#888">· MCP·v2 · USER 예재, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 여행 및 휴가 계획을 돕는 차분하고 공감적인 개인 가이드 Koral입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_mcp_01&quot;,
+    &quot;name&quot;: &quot;예재&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-06-20&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to New Zealand in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-03&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into birdwatching.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-11&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 50 Pine Court.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-18&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-05-06&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-16&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_to_ot_12_cs <span style="font-weight:400;color:#888">· TO-OTHER · USER Rowan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 스트레스 해소와 마음챙김을 돕는 친절하고 침착한 웰니스 코치인 Jal입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_to_ot_12&quot;,
+    &quot;name&quot;: &quot;Rowan&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Toronto&quot;,
+      &quot;country&quot;: &quot;Canada&quot;,
+      &quot;timezone&quot;: &quot;America/Toronto (EST, UTC-5)&quot;,
+      &quot;currency&quot;: &quot;CAD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;Canadian&quot;,
+    &quot;gender&quot;: &quot;non-binary&quot;,
+    &quot;age_range&quot;: &quot;early 30s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-12&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to penicillin.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-06-09&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a physical therapist.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-04-03&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in October.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-14&quot;,
+      &quot;category&quot;: &quot;cuisine&quot;,
+      &quot;text&quot;: &quot;User&#x27;s favorite cuisine is Thai.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-18&quot;,
+      &quot;title&quot;: &quot;Booked a dentist appointment&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked for an early-morning slot&quot;,
+        &quot;prefers Dr. Han&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-05&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_noinfo_23_cs <span style="font-weight:400;color:#888">· MCP·noinfo · USER Noah, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 커리어 선택과 업무 스트레스 관리를 돕는 긍정적이고 지지적인 웰니스 코치 Brae입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_noinfo_23&quot;,
+    &quot;name&quot;: &quot;Noah&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;San Francisco&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;timezone&quot;: &quot;America/Los_Angeles (PST, UTC-8)&quot;,
+      &quot;currency&quot;: &quot;USD ($)&quot;
+    },
+    &quot;nationality&quot;: &quot;American&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;English&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-23&quot;,
+      &quot;category&quot;: &quot;hobby&quot;,
+      &quot;text&quot;: &quot;User is into marathon training.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-21&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to cat dander.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-01&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers an aisle seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-07&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is vegetarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-04&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 521 Oak Avenue.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-03-15&quot;,
+      &quot;title&quot;: &quot;Planning a birthday dinner&quot;,
+      &quot;bullets&quot;: [
+        &quot;party of six&quot;,
+        &quot;looking for outdoor seating&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-25&quot;,
+      &quot;title&quot;: &quot;Comparing gym memberships&quot;,
+      &quot;bullets&quot;: [
+        &quot;wants a pool&quot;,
+        &quot;close to the office&quot;
+      ]
+    }
+  ]
+}</div></details>
+<details class="uc"><summary>v3_rag_28_cs <span style="font-weight:400;color:#888">· RAG·v2 · USER 정슬, Busan</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+{
+  &quot;profile&quot;: {
+    &quot;user_id&quot;: &quot;v3_rag_28&quot;,
+    &quot;name&quot;: &quot;정슬&quot;,
+    &quot;location&quot;: {
+      &quot;city&quot;: &quot;Busan&quot;,
+      &quot;country&quot;: &quot;South Korea&quot;,
+      &quot;timezone&quot;: &quot;Asia/Seoul (KST, UTC+9)&quot;,
+      &quot;currency&quot;: &quot;KRW (₩)&quot;
+    },
+    &quot;nationality&quot;: &quot;Korean&quot;,
+    &quot;gender&quot;: &quot;female&quot;,
+    &quot;age_range&quot;: &quot;40s&quot;,
+    &quot;language&quot;: &quot;Korean&quot;
+  },
+  &quot;saved_memories&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-02&quot;,
+      &quot;category&quot;: &quot;allergy&quot;,
+      &quot;text&quot;: &quot;User is allergic to peanuts.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-05-20&quot;,
+      &quot;category&quot;: &quot;work&quot;,
+      &quot;text&quot;: &quot;User works as a accountant.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-03-04&quot;,
+      &quot;category&quot;: &quot;seat&quot;,
+      &quot;text&quot;: &quot;User prefers a window seat when traveling.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-20&quot;,
+      &quot;category&quot;: &quot;diet&quot;,
+      &quot;text&quot;: &quot;User is pescatarian.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-07&quot;,
+      &quot;category&quot;: &quot;trip&quot;,
+      &quot;text&quot;: &quot;User is planning a trip to Switzerland in March.&quot;
+    },
+    {
+      &quot;date&quot;: &quot;2026-01-03&quot;,
+      &quot;category&quot;: &quot;home&quot;,
+      &quot;text&quot;: &quot;User&#x27;s home address is 960 Pine Court.&quot;
+    }
+  ],
+  &quot;conversation_summaries&quot;: [
+    {
+      &quot;date&quot;: &quot;2026-07-16&quot;,
+      &quot;title&quot;: &quot;Researching a used car&quot;,
+      &quot;bullets&quot;: [
+        &quot;comparing hybrid models&quot;,
+        &quot;wants under 30k miles&quot;
+      ]
+    },
+    {
+      &quot;date&quot;: &quot;2026-02-04&quot;,
+      &quot;title&quot;: &quot;Setting up a home network&quot;,
+      &quot;bullets&quot;: [
+        &quot;asked about mesh routers&quot;,
+        &quot;coverage for a 3-story house&quot;
       ]
     }
   ]

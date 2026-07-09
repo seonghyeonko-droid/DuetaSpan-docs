@@ -1,5 +1,55 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_fake__14",
+#     "name": "David",
+#     "location": {
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
+#     },
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "early 30s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-05",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-05-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
+#     },
+#     {
+#       "date": "2026-03-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-07-22",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     }
+#   ]
+# }
+
 # EXAMINER(FDB-v2) 단계: S1 혹시… ‘맘마미아!’에 나오는 ‘나의 사랑, 나의 인생’이라는 | S2 ABBA 노래는 정말 다 좋은 것 같아요. 특히 ‘댄싱 퀸’이 | S3 그런데 비욘 울바에우스는 ‘맘마미아!’ 영화에도 참여했나요? | S4 아, 영화 음악까지! 정말 다재다능하시네요.
 
      0.00s  user  발화 시작: 혹시… ‘맘마미아!’에 나오는 ‘나의 사랑, 나의 인생’이라는 노래를 누가 썼는지 아세요?
