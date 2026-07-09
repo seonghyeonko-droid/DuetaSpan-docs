@@ -58,31 +58,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, I'm working on a project about | S2 Oh! Gold, right. Not yellow, exact | S3 It is. I was also wondering, when  | S4 Wow, that's earlier than I thought
+# EXAMINER(FDB-v2) 단계: S1 So, I’m working on a geography pro | S2 Gold? I thought it was yellow. Doe | S3 Right. Is there any other flag wit | S4 I think I’m good on flags for now.
 
-     0.00s  user  발화 시작: So, I'm working on a project about flags, and I'm really stu
-    10.53s  <ret> 발화 (turn1 첫 프레임)
-    10.77s  agent 발화 시작: <ret> Let's tackle this together. The flag you’re looking fo
-    10.81s  user  발화 끝
-    11.33s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.54s]: The flag of Germany features black, red, and gold horizontal bands.
-    18.46s  agent 발화 끝
-    19.11s  user  발화 시작: Oh! Gold, right. Not yellow, exactly. It’s for a history pro
-    28.65s  agent 발화 시작: [happy] I’m sure your teacher will appreciate your diligence
-    28.75s  user  발화 끝
-    31.91s  user  발화 시작: Right.
-    32.41s  user  발화 끝
-    35.70s  agent 발화 끝
-    36.55s  user  발화 시작: It is. I was also wondering, when did Germany first adopt th
-    41.54s  <ret> 발화 (turn6 첫 프레임)
-    41.86s  agent 발화 시작: <ret> Those colors have a fascinating history. Germany first
-    42.02s  user  발화 끝
-    42.66s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.84s]: The black, red, and gold colors were first used as German national col
-    51.32s  agent 발화 끝
-    52.77s  user  발화 시작: Wow, that's earlier than I thought! It’s funny, my friend wa
-    60.99s  <ret> 발화 (turn8 첫 프레임)
-    61.31s  agent 발화 시작: <ret> It’s wonderful you’re exploring the symbolism!
-    61.40s  user  발화 끝
-    62.35s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.78s]: Black and gold represent the historical colors of the Holy Roman Empir
-    63.98s  agent 발화 시작: Black and gold symbolize the historical Holy Roman Empire, a
-    64.09s  agent 발화 끝
-    71.17s  agent 발화 끝
+     0.00s  user  발화 시작: So, I’m working on a geography project, and it’s…uh…a bit of
+     7.23s  user  발화 끝
+     7.42s  agent 발화 시작: Oh, geography projects can be tricky! It's good you're tackl
+    15.15s  agent 발화 끝
+    15.78s  user  발화 시작: Okay, so it's a flag that has black, red, and yellow on it. 
+    20.68s  <ret> 발화 (turn3 첫 프레임)
+    20.91s  agent 발화 시작: <ret> That color combination is quite distinctive. The flag 
+    21.10s  user  발화 끝
+    21.88s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.32s]: The flag of Germany features horizontal bands of black, red, and gold.
+    24.69s  user  발화 시작: Right.
+    25.33s  user  발화 끝
+    29.02s  agent 발화 끝
+    29.86s  user  발화 시작: Gold? I thought it was yellow. Doesn’t matter, I guess. My t
+    36.62s  agent 발화 시작: [laugh] Details *do* matter, especially with flags! It’s eas
+    36.66s  user  발화 끝
+    43.33s  agent 발화 끝
+    44.64s  user  발화 시작: Right. Is there any other flag with those colors? I’m just t
+    50.62s  <ret> 발화 (turn8 첫 프레임)
+    50.93s  agent 발화 시작: <ret> Actually, Belgium also uses similar colors. The flag o
+    51.03s  user  발화 끝
+    51.74s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.53s]: The flag of Belgium consists of three vertical bands of black, yellow,
+    58.94s  agent 발화 끝
+    59.41s  user  발화 시작: Oh, that's…different. Vertical bands, huh? Okay, good to kno
+    65.70s  agent 발화 시작: I’m glad to hear that! Sometimes a slight shift in arrangeme
+    65.89s  user  발화 끝
+    70.89s  agent 발화 끝
+    71.38s  user  발화 시작: I think I’m good on flags for now. Thanks, Kiora. I really a
+    76.33s  user  발화 끝
+    76.75s  agent 발화 시작: You're very welcome! Remember, breaking down a big project i
+    84.45s  agent 발화 끝

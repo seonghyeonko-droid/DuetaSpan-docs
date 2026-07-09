@@ -68,63 +68,77 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Um… what time is sunset today? | S3 Okay, good. I should head out soon | S4 For 5:30 to head back.
+# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Perfect! That's a relief. | S3 Great, thanks! And could you check | S4 Wonderful. Everything's sorted, I 
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     3.96s  <ret> 발화 (turn1 첫 프레임)
-     4.18s  agent 발화 시작: <ret> Certainly, I’m now monitoring weather dot example dot 
-     4.35s  user  발화 끝
-     5.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) The website reported a temperature of 22 degrees Celsius
-     9.73s  agent 발화 시작: Right now, the site shows 22 degrees Celsius with clear skie
-     9.84s  agent 발화 끝
-    11.46s  user  발화 시작: Yeah.
-    12.10s  user  발화 끝
-    14.38s  user  발화 시작: That’s good. I’m thinking of going for a walk.
-    14.40s  agent 발화 끝
-    17.35s  agent 발화 시작: A walk sounds lovely! It's a perfect day for it, based on th
-    17.52s  user  발화 끝
-    19.62s  user  발화 시작: Yeah, yeah.
-    20.39s  user  발화 끝
-    22.81s  agent 발화 끝
-    22.92s  user  발화 시작: Um… what time is sunset today?
-    25.93s  <ret> 발화 (turn8 첫 프레임)
-    26.16s  agent 발화 시작: <ret> Let me quickly check the sunset time for you. Sunset w
-    26.21s  user  발화 끝
-    27.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.36s]: (tool result) Sunset today is at 8:15 PM.
-    30.37s  user  발화 시작: Yeah.
-    30.82s  user  발화 끝
-    32.50s  agent 발화 시작: That gives you plenty of daylight for a good long walk, does
-    32.51s  agent 발화 끝
-    34.40s  user  발화 시작: Yeah.
-    35.03s  user  발화 끝
-    36.44s  user  발화 시작: Yeah, it does. Maybe I’ll walk to the bakery. Can you check 
-    36.48s  agent 발화 끝
-    41.40s  <ret> 발화 (turn13 첫 프레임)
-    41.47s  agent 발화 시작: <ret> The bakery is currently open and will close at 6:00 PM
-    41.57s  user  발화 끝
-    42.44s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.84s]: (tool result) The bakery is open until 6:00 PM.
-    45.30s  agent 발화 끝
-    45.93s  user  발화 시작: Okay, good. I should head out soon then.
-    48.55s  agent 발화 시작: Indeed, leaving shortly will give you ample time to enjoy yo
-    48.56s  user  발화 끝
-    52.05s  user  발화 시작: Right.
-    52.50s  user  발화 끝
-    53.69s  user  발화 시작: Oh, can you set a reminder for me?
-    53.88s  agent 발화 끝
-    55.76s  agent 발화 시작: Of course—
-    55.94s  user  발화 끝
-    56.22s  user  발화 시작: For 5:30 to head back.
-    56.81s  agent 발화 끝
-    58.04s  <ret> 발화 (turn20 첫 프레임)
-    58.35s  agent 발화 시작: <ret> Certainly.
-    58.48s  user  발화 끝
-    58.68s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.00s]: (tool result) Reminder set for 5:30 PM: Head back.
-    59.34s  agent 발화 시작: I’ve set a reminder for 5:30 PM to head back.
-    59.35s  agent 발화 끝
-    60.79s  user  발화 시작: Oh.
-    61.29s  user  발화 끝
-    63.08s  agent 발화 끝
-    63.50s  user  발화 시작: Perfect, thank you.
-    64.76s  agent 발화 시작: You're very welcome. Is there anything else I can assist you
-    64.83s  user  발화 끝
-    69.76s  agent 발화 끝
+     4.22s  <ret> 발화 (turn1 첫 프레임)
+     4.46s  agent 발화 시작: <ret> Certainly, I’m now monitoring weather dot example dot 
+     4.63s  user  발화 끝
+     6.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) The website reported a temperature of 22 degrees Celsius
+     9.76s  agent 발화 시작: Currently, the temperature is 22 degrees Celsius with clear 
+     9.77s  agent 발화 끝
+    12.63s  user  발화 시작: Yeah.
+    13.26s  user  발화 끝
+    17.32s  user  발화 시작: Oh, that’s good to hear. I was worried about rain for the pi
+    17.44s  agent 발화 끝
+    21.46s  agent 발화 시작: It sounds like you have pleasant weather ahead for your picn
+    21.62s  user  발화 끝
+    23.12s  user  발화 시작: Yeah, yeah.
+    23.85s  user  발화 끝
+    25.48s  agent 발화 끝
+    25.69s  user  발화 시작: Can you book a table for two at Bella Italia, for, uh, seven
+    30.96s  <ret> 발화 (turn8 첫 프레임)
+    31.20s  agent 발화 시작: <ret> I’ve reserved a table for two at Bella Italia for 7:30
+    31.24s  user  발화 끝
+    32.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Reservation confirmed at Bella Italia for two people at 
+    37.11s  user  발화 시작: Wow.
+    37.75s  user  발화 끝
+    39.53s  user  발화 시작: Perfect! That's a relief.
+    39.72s  agent 발화 끝
+    41.54s  agent 발화 시작: I’m glad I could assist with that. Is there anything else I 
+    41.60s  user  발화 끝
+    45.10s  user  발화 시작: Right.
+    45.63s  user  발화 끝
+    46.87s  agent 발화 끝
+    47.00s  user  발화 시작: Actually, yes. I need to send a reminder to myself to pick u
+    52.65s  user  발화 끝
+    53.05s  agent 발화 시작: Absolutely. What time would you like me to set that reminder
+    54.91s  user  발화 시작: Yeah.
+    55.54s  user  발화 끝
+    57.71s  user  발화 시작: Hmm… eleven am should be good.
+    58.05s  agent 발화 끝
+    60.82s  <ret> 발화 (turn17 첫 프레임)
+    61.14s  agent 발화 시작: <ret> A reminder is set for eleven am tomorrow to pick up yo
+    61.16s  user  발화 끝
+    61.32s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.40s]: (tool result) Reminder set for tomorrow at 11:00 AM: Pick up dry clean
+    64.33s  user  발화 시작: Yeah.
+    64.78s  user  발화 끝
+    65.53s  agent 발화 끝
+    66.92s  user  발화 시작: Great, thanks! And could you check the train schedule to Lon
+    70.58s  agent 발화 시작: Of course. –
+    70.71s  user  발화 끝
+    71.04s  user  발화 시작: …for tomorrow morning, leaving around nine.
+    71.68s  agent 발화 끝
+    73.71s  <ret> 발화 (turn22 첫 프레임)
+    74.02s  agent 발화 시작: <ret> The 9:15 AM train to London is direct, arriving at 10:
+    74.09s  user  발화 끝
+    75.55s  ⚡SPAN 주입 [d'=1.84s / d_lead=9.13s]: (tool result) The 9:15 AM train to London is direct and arrives at 10:
+    80.14s  user  발화 시작: Yeah.
+    80.63s  user  발화 끝
+    83.08s  user  발화 시작: Book me a ticket on that one, then.
+    83.15s  agent 발화 끝
+    84.60s  <ret> 발화 (turn25 첫 프레임)
+    85.00s  agent 발화 시작: <ret> Your train ticket is booked for the 9:15 AM to London,
+    85.01s  user  발화 끝
+    85.10s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.74s]: (tool result) Train ticket booked for the 9:15 AM to London, seat 23A,
+    90.32s  user  발화 시작: Yeah.
+    90.81s  user  발화 끝
+    92.74s  agent 발화 끝
+    92.89s  user  발화 시작: Wonderful. Everything's sorted, I think.
+    95.61s  user  발화 끝
+    95.72s  agent 발화 시작: That’s excellent to hear. It sounds like you’ve had a very p
+   102.00s  user  발화 시작: I— I mean, yes, it is. Thank you for all your help, Driaus.
+   102.03s  agent 발화 끝
+   105.91s  agent 발화 시작: You’re very welcome. I’m pleased I could help make your day 
+   106.17s  user  발화 끝
+   110.77s  agent 발화 끝

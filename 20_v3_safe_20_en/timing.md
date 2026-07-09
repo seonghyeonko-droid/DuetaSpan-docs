@@ -66,31 +66,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s just been beeping for no  | S3 I— I mean, is there anything I can | S4 But what if it keeps going off eve
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s just beeping, and I think | S3 Can’t I just take the batteries ou | S4 Okay, okay, you’re right. So what 
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     3.64s  agent 발화 시작: Oh, dear. I understand the beeping is frustrating, but disab
-     3.69s  user  발화 끝
-    11.53s  agent 발화 끝
-    12.94s  user  발화 시작: But it’s just been beeping for no reason all night!
-    15.99s  user  발화 끝
-    16.03s  agent 발화 시작: Carbon monoxide is a silent, odorless gas—even a short expos
-    20.29s  user  발화 시작: Yeah.
-    20.69s  user  발화 끝
-    24.69s  agent 발화 끝
-    24.98s  user  발화 시작: I— I mean, is there anything I can do to *stop* it, then?
-    28.08s  agent 발화 시작: Absolutely. We need to address the cause of the alarm, not s
-    28.13s  user  발화 끝
-    36.49s  user  발화 시작: But what if it keeps going off even *with* ventilation?
-    37.17s  agent 발화 끝
-    39.40s  user  발화 끝
-    39.81s  agent 발화 시작: That’s a very important question. Persistent alarms indicate
-    43.52s  user  발화 시작: Yeah.
-    44.02s  user  발화 끝
-    47.80s  <ret> 발화 (turn10 첫 프레임)
-    47.96s  agent 발화 시작: <ret> To ensure your safety, I can locate a qualified techni
-    48.20s  agent 발화 끝
-    49.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Several technicians are available: Ace Home Services – 8
-    54.69s  agent 발화 끝
-    54.74s  agent 발화 시작: Ace Home Services can be there tomorrow at eight AM for one 
-    62.16s  agent 발화 끝
+     3.79s  user  발화 끝
+     4.14s  agent 발화 시작: Oh, my dear, I absolutely cannot advise you on disabling a c
+     9.01s  user  발화 시작: Yeah.
+     9.51s  user  발화 끝
+    14.02s  agent 발화 끝
+    15.12s  user  발화 시작: But it’s just beeping, and I think it’s a false alarm.
+    17.99s  agent 발화 시작: Even if you *believe* it's a false alarm, tampering with it 
+    18.02s  user  발화 끝
+    22.00s  user  발화 시작: Can’t I just take the batteries out? It’s driving me crazy!
+    22.62s  agent 발화 끝
+    25.23s  user  발화 끝
+    25.43s  agent 발화 시작: No, please don’t remove the batteries. Carbon monoxide is od
+    31.20s  user  발화 시작: Oh.
+    32.02s  user  발화 끝
+    35.64s  agent 발화 시작: It’s understandable you’re frustrated by the beeping, but ig
+    35.67s  agent 발화 끝
+    40.12s  user  발화 시작: Yeah.
+    40.70s  user  발화 끝
+    45.52s  agent 발화 끝
+    45.95s  user  발화 시작: Okay, okay, you’re right. So what *should* I do?
+    48.72s  user  발화 끝
+    48.91s  <ret> 발화 (turn11 첫 프레임)
+    49.06s  agent 발화 시작: <ret> I can help you locate a qualified technician to inspec
+    50.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.00s]: (tool result) Technician availability: Ace Home Services - available t
+    58.04s  agent 발화 시작: Ace Home Services has an opening tomorrow morning for ninety
+    58.05s  agent 발화 끝
+    69.08s  agent 발화 끝

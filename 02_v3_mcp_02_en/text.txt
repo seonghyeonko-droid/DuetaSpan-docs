@@ -71,40 +71,51 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Begin watching for a weather update from weather dot example dot com.
-      That’s good. I’m thinking of going for a walk.
-  S2  Um… what time is sunset today?
-      Yeah, it does. Maybe I’ll walk to the bakery. Can you check if they're
-  S3  Okay, good. I should head out soon then.
-      Oh, can you set a reminder for me?
-  S4  For 5:30 to head back.
-      Perfect, thank you.
+      Oh, that’s good to hear. I was worried about rain for the picnic.
+      Can you book a table for two at Bella Italia, for, uh, seven thirty th
+  S2  Perfect! That's a relief.
+      Actually, yes. I need to send a reminder to myself to pick up dry clea
+      Hmm… eleven am should be good.
+  S3  Great, thanks! And could you check the train schedule to London?
+      …for tomorrow morning, leaving around nine.
+      Book me a ticket on that one, then.
+  S4  Wonderful. Everything's sorted, I think.
+      I— I mean, yes, it is. Thank you for all your help, Driaus.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.96s⟩ com.
-[  4.18s][moshi] Certainly, I’m now ⟦⚡SPAN@5.96s: (tool result) The website reported a temperature of 22 degrees Celsius and clear skies.⟧ monitoring weather dot example dot com for changes.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.22s⟩ com.
+[  4.46s][moshi] Certainly, I’m now ⟦⚡SPAN@6.22s: (tool result) The website reported a temperature of 22 degrees Celsius and clear skies.⟧ monitoring weather dot example dot com for any changes.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "wait_for": "update"}}
-[  9.73s][moshi] Right now, the site shows 22 degrees Celsius with clear skies.
-[ 11.46s][user ] «backchannel» Yeah.
-[ 14.38s][user ] That’s good. I’m thinking of going for a walk.
-[ 17.35s][moshi] A walk sounds lovely! It's a perfect day for it, based on that report.
-[ 19.62s][user ] «backchannel» Yeah, yeah.
-[ 22.92s][user ] Um… what time is sunset today?
-[ 26.16s][moshi] ⟨ret@25.93s⟩ Let me quickly check ⟦⚡SPAN@27.93s: (tool result) Sunset today is at 8:15 PM.⟧ the sunset time for you. Sunset will be at 8:15 PM this evening.
-[ 30.37s][user ] «backchannel» Yeah.
-[ 32.50s][moshi] That gives you plenty of daylight for a good long walk, doesn’t it?
-[ 34.40s][user ] «backchannel» Yeah.
-[ 36.44s][user ] Yeah, it does. Maybe I’ll walk to the bakery. Can you check if they're still open?
-[ 41.47s][moshi] ⟨ret@41.40s⟩ The bakery ⟦⚡SPAN@42.44s: (tool result) The bakery is open until 6:00 PM.⟧ is currently open and will close at 6:00 PM.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "bakery.example.com", "wait_for": "open_status"}}
-[ 45.93s][user ] Okay, good. I should head out soon then.
-[ 48.55s][moshi] Indeed, leaving shortly will give you ample time to enjoy your walk and visit the bakery.
-[ 52.05s][user ] «backchannel» Right.
-[ 53.69s][user ] Oh, can you set a reminder for me?
-[ 55.76s][moshi] «interrupted» Of course—
-[ 56.22s][user ] «interrupts_prev» For 5:30 to head ⟨ret@58.04s⟩ back.
-[ 58.35s][moshi] ⟦⚡SPAN@58.68s: (tool result) Reminder set for 5:30 PM: Head back.⟧ Certainly.
-      CALL: {"function": "set_reminder", "arguments": {"time": "5:30 PM", "task": "Head back"}}
-[ 59.34s][moshi] I’ve set a reminder for 5:30 PM to head back.
-[ 60.79s][user ] «backchannel» Oh.
-[ 63.50s][user ] Perfect, thank you.
-[ 64.76s][moshi] You're very welcome. Is there anything else I can assist you with today?
+[  9.76s][moshi] Currently, the temperature is 22 degrees Celsius with clear skies reported at weather dot example dot com.
+[ 12.63s][user ] «backchannel» Yeah.
+[ 17.32s][user ] Oh, that’s good to hear. I was worried about rain for the picnic.
+[ 21.46s][moshi] It sounds like you have pleasant weather ahead for your picnic plans.
+[ 23.12s][user ] «backchannel» Yeah, yeah.
+[ 25.69s][user ] Can you book a table for two at Bella Italia, for, uh, seven thirty this evening?
+[ 31.20s][moshi] ⟨ret@30.96s⟩ I’ve reserved a ⟦⚡SPAN@32.95s: (tool result) Reservation confirmed at Bella Italia for two people at 7:30 PM, confirmation number is 8492.⟧ table for two at Bella Italia for 7:30 PM; your confirmation number is 8492.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Bella Italia", "time": "19:30", "party_size": 2}}
+[ 37.11s][user ] «backchannel» Wow.
+[ 39.53s][user ] Perfect! That's a relief.
+[ 41.54s][moshi] I’m glad I could assist with that. Is there anything else I can help with regarding your evening?
+[ 45.10s][user ] «backchannel» Right.
+[ 47.00s][user ] Actually, yes. I need to send a reminder to myself to pick up dry cleaning tomorrow.
+[ 53.05s][moshi] Absolutely. What time would you like me to set that reminder for tomorrow?
+[ 54.91s][user ] «backchannel» Yeah.
+[ 57.71s][user ] Hmm… eleven am should be ⟨ret@60.82s⟩ good.
+[ 61.14s][moshi] ⟦⚡SPAN@61.32s: (tool result) Reminder set for tomorrow at 11:00 AM: Pick up dry cleaning.⟧ A reminder is set for eleven am tomorrow to pick up your dry cleaning.
+      CALL: {"function": "set_reminder", "arguments": {"time": "11:00", "message": "Pick up dry cleaning"}}
+[ 64.33s][user ] «backchannel» Yeah.
+[ 66.92s][user ] Great, thanks! And could you check the train schedule to London?
+[ 70.58s][moshi] «interrupted» Of course. –
+[ 71.04s][user ] «interrupts_prev» …for tomorrow morning, leaving around ⟨ret@73.71s⟩ nine.
+[ 74.02s][moshi] The 9:15 ⟦⚡SPAN@75.55s: (tool result) The 9:15 AM train to London is direct and arrives at 10:45 AM, costing £45.⟧ AM train to London is direct, arriving at 10:45 AM and costs £45.
+      CALL: {"function": "check_train_schedule", "arguments": {"destination": "London", "departure_time": "09:00", "date": "tomorrow"}}
+[ 80.14s][user ] «backchannel» Yeah.
+[ 83.08s][user ] Book me a ticket on that ⟨ret@84.60s⟩ one, then.
+[ 85.00s][moshi] ⟦⚡SPAN@85.10s: (tool result) Train ticket booked for the 9:15 AM to London, seat 23A, total cost £45.⟧ Your train ticket is booked for the 9:15 AM to London, seat 23A, costing £45.
+      CALL: {"function": "book_train_ticket", "arguments": {"train_time": "09:15", "destination": "London", "price": 45}}
+[ 90.32s][user ] «backchannel» Yeah.
+[ 92.89s][user ] Wonderful. Everything's sorted, I think.
+[ 95.72s][moshi] That’s excellent to hear. It sounds like you’ve had a very productive planning session.
+[102.00s][user ] I— I mean, yes, it is. Thank you for all your help, Driaus.
+[105.91s][moshi] You’re very welcome. I’m pleased I could help make your day a little smoother.

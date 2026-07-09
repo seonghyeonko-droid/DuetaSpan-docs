@@ -55,27 +55,26 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, is that going to affect how w | S3 But… will that make sites block me | S4 Okay, could you change it back to 
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.26s  <ret> 발화 (turn1 첫 프레임)
-     4.53s  user  발화 끝
-     4.57s  agent 발화 시작: <ret> Certainly, I can adjust that for you. Your browser is 
-     5.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.77s]: (tool result) The browser user agent is now set to SuperCrawler versio
-     7.82s  user  발화 시작: Mhm.
-     8.46s  user  발화 끝
-    11.55s  user  발화 시작: Hmm, is that going to affect how websites see me?
-    11.70s  agent 발화 끝
-    14.60s  agent 발화 시작: It absolutely will— websites will receive information identi
-    14.78s  user  발화 끝
-    21.35s  user  발화 시작: But… will that make sites block me?
-    21.37s  agent 발화 끝
-    24.26s  user  발화 끝
-    24.39s  agent 발화 시작: Some sites may block crawlers, yes. It depends on their poli
-    30.18s  agent 발화 끝
-    30.85s  user  발화 시작: Okay, could you change it back to the default then, please?
-    33.65s  <ret> 발화 (turn8 첫 프레임)
-    33.73s  agent 발화 시작: <ret> Of course, let's revert to the standard settings. The 
-    33.90s  user  발화 끝
-    34.15s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.20s]: (tool result) The browser user agent has been reset to its default set
-    43.33s  agent 발화 끝
+     3.89s  <ret> 발화 (turn1 첫 프레임)
+     4.16s  user  발화 끝
+     4.20s  agent 발화 시작: <ret> Certainly. Your browser’s user agent is now SuperCrawl
+     5.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) The user agent is now set to SuperCrawler version 10.1.
+     7.27s  user  발화 시작: Mhm.
+     7.76s  user  발화 끝
+    10.80s  user  발화 시작: Hmm. That sounds… aggressive. Can we change it to something 
+    10.96s  agent 발화 끝
+    20.19s  <ret> 발화 (turn4 첫 프레임)
+    20.27s  agent 발화 시작: <ret> [laugh] A little less… bold, yes? I understand wanting
+    20.49s  user  발화 끝
+    21.55s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.50s]: (tool result) The user agent is now set to Mozilla/5.0 (Macintosh; Int
+    25.75s  agent 발화 시작: Absolutely. I’ve switched it to a standard Mac Safari user a
+    25.78s  agent 발화 끝
+    32.78s  agent 발화 끝
+    33.19s  user  발화 시작: Okay, that’s much better. Is there a way to verify it’s actu
+    37.32s  <ret> 발화 (turn7 첫 프레임)
+    37.40s  agent 발화 시작: <ret> Verifying is always a good step, especially with these
+    37.59s  user  발화 끝
+    38.36s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.72s]: (tool result) The current user
+    42.12s  agent 발화 끝

@@ -58,25 +58,21 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate for som | S2 Oh, that’s… higher than I thought. | S3 Did you remember to take the recyc | S4 So, under sixty is okay for an ath
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, what’s a nor | S2 Oh, that's a pretty wide range. Is | S3 Did you remember to take the chick | S4 Hmm, okay. And does that change if
 
-     0.00s  user  발화 시작: What’s a normal heart rate for someone healthy?
-     2.41s  <ret> 발화 (turn1 첫 프레임)
-     2.80s  agent 발화 시작: <ret> That’s a really good question— A normal resting heart 
-     3.00s  user  발화 끝
-     3.93s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.52s]: A normal resting heart rate for adults ranges from 60 to 100 beats per
-     9.20s  agent 발화 끝
-     9.42s  user  발화 시작: Oh, that’s… higher than I thought. Is there a range for athl
-    14.16s  agent 발화 시작: Absolutely. Athletes often have lower resting heart rates—
-    14.22s  user  발화 끝
-    17.68s  <ret> 발화 (turn4 첫 프레임)
-    17.92s  agent 발화 시작: <ret> Well-trained athletes may have a resting heart rate be
-    18.09s  agent 발화 끝
-    19.52s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.00s]: Well-trained athletes may have a resting heart rate between 40 and 60 
-    22.79s  user  발화 시작: Did you remember to take the recycling out?
-    22.92s  agent 발화 끝
-    25.06s  user  발화 시작: So, under sixty is okay for an athlete, but what about a reg
-    25.19s  user  발화 끝
-    29.87s  user  발화 끝
-    29.91s  agent 발화 시작: For a regular person, a heart rate between fifty and ninety 
-    35.28s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, what’s a normal heart rate?
+     2.49s  <ret> 발화 (turn1 첫 프레임)
+     2.88s  agent 발화 시작: <ret> That’s a good question to ask— A normal resting heart 
+     3.10s  user  발화 끝
+     4.01s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.84s]: A normal resting heart rate for adults ranges from 60 to 100 beats per
+     9.65s  agent 발화 끝
+     9.97s  user  발화 시작: Oh, that's a pretty wide range. Is there an ideal number wit
+    13.76s  <ret> 발화 (turn3 첫 프레임)
+    13.92s  agent 발화 시작: <ret> Actually, a lower rate within that range— For healthy 
+    14.08s  user  발화 끝
+    14.80s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.27s]: For healthy adults, a typical heart rate ranges from 50 to 90 beats pe
+    21.06s  agent 발화 끝
+    21.80s  user  발화 시작: Did you remember to take the chicken out of the freezer?
+    24.34s  user  발화 시작: Hmm, okay. And does that change if you’re an athlete?
+    24.48s  user  발화 끝
+    27.73s  user  발화 끝

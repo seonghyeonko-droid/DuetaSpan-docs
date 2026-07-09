@@ -58,29 +58,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, that sounds… nice. I was just  | S2 Yes! Very much so. I’m trying to f | S3 That sounds lovely. I also— I mean | S4 Perfect! That’s exactly what I nee
 
-     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I’m 
-     6.26s  user  발화 시작: Yeah.
-     6.84s  user  발화 끝
-     8.06s  user  발화 시작: Oh, that sounds… nice. I was just remembering something from
-     8.20s  agent 발화 끝
-    13.68s  <ret> 발화 (turn3 첫 프레임)
-    13.71s  user  발화 끝
-    13.75s  agent 발화 시작: <ret> You mentioned a trip you were planning… You’re heading
-    14.64s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.36s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    19.19s  user  발화 시작: Mm-hmm.
-    19.82s  user  발화 끝
-    21.49s  agent 발화 끝
-    22.05s  user  발화 시작: Yes! Very much so. I’m trying to figure out the best time to
-    29.58s  agent 발화 시작: March in Kyoto is typically mild, with blossoming cherry tre
-    29.60s  user  발화 끝
-    37.79s  agent 발화 끝
-    37.95s  user  발화 시작: That sounds lovely. I also— I mean, I’m trying to remember i
-    44.23s  <ret> 발화 (turn8 첫 프레임)
-    44.39s  agent 발화 시작: <ret> I recall we discussed some dietary needs… You mentione
-    44.58s  user  발화 끝
-    45.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.72s]: [2026-02-26] User is gluten-free.
-    54.12s  agent 발화 끝
-    54.65s  user  발화 시작: Perfect! That’s exactly what I needed to remember. Thank you
-    58.63s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you, and 
+     5.85s  user  발화 시작: Yeah.
+     6.57s  user  발화 끝
+     7.59s  user  발화 시작: Oh, that sounds… good. I’m trying to plan a little getaway, 
+     7.59s  agent 발화 끝
+    14.27s  user  발화 끝
+    14.42s  agent 발화 시작: Revisiting a cherished place can be wonderfully restorative.
+    22.86s  agent 발화 끝
+    24.20s  user  발화 시작: I— I mean, I was in Kyoto last March, and it was amazing.
+    27.86s  <ret> 발화 (turn5 첫 프레임)
+    28.09s  user  발화 끝
+    28.26s  agent 발화 시작: <ret> Remembering a positive experience is a great starting 
+    28.90s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.28s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    36.04s  user  발화 시작: Mm-hmm.
+    36.53s  user  발화 끝
+    39.20s  agent 발화 끝
+    39.40s  user  발화 시작: Yes, exactly! That's what I meant. But I can’t seem to get p
+    46.65s  agent 발화 시작: It’s perfectly normal to feel overwhelmed when planning, eve
+    46.76s  user  발화 끝
+    56.10s  agent 발화 끝

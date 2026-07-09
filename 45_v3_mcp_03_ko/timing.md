@@ -58,43 +58,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 장바구니 iframe에서 결제 프로세스를 시작해 줘. | S2 배송 주소를 입력해야 하는데, 전에 저장했던 주소로 할까? | S3 아니, 그 주소로 괜찮아. | S4 혹시 지금 신용카드 정보 입력하는 화면이 안전한지 확인할 수 
+# EXAMINER(FDB-v2) 단계: S1 장바구니 iframe에서 결제 과정을 시작해 줘. | S2 기본 주소로 해 줘. | S3 신용카드로 할게. | S4 응, 진행해 줘.
 
-     0.00s  user  발화 시작: 장바구니 iframe에서 결제 프로세스를 시작해 줘.
-     2.82s  <ret> 발화 (turn1 첫 프레임)
-     3.13s  agent 발화 시작: <ret> 네, 알겠습니다. 지금 바로 장바구니 iframe으로 이동해서 결제 프로세스를 시작할게요.
-     3.23s  user  발화 끝
-     4.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) The checkout button in the shopping cart iframe was clic
-     8.54s  agent 발화 시작: 장바구니 iframe의 결제 버튼을 클릭했습니다. 이제 결제 화면으로 넘어가셨을 거예요.
-     8.73s  agent 발화 끝
-    12.42s  user  발화 시작: 아.
-    13.05s  user  발화 끝
-    14.23s  agent 발화 끝
-    15.00s  user  발화 시작: 응.
-    15.35s  user  발화 끝
-    15.53s  agent 발화 시작: 혹시 지금 결제 화면에서 어떤 도움이 필요하신가요? 배송 주소 입력이나 결제 수단 선택 같은 것들을 도와드릴
-    22.94s  agent 발화 끝
-    23.42s  user  발화 시작: 배송 주소를 입력해야 하는데, 전에 저장했던 주소로 할까?
-    27.00s  <ret> 발화 (turn7 첫 프레임)
-    27.39s  agent 발화 시작: <ret> 저장된 주소는 123 Main Street, Anytown, CA 91234 와 456 Oak A
-    27.58s  user  발화 끝
-    29.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.47s]: (tool result) Saved addresses are: 123 Main Street, Anytown, CA 91234 
-    39.68s  user  발화 시작: 123 Main Street로 할게.
-    39.86s  agent 발화 끝
-    41.67s  agent 발화 시작: 네, 123 Main Street로 배송 주소를 설정했습니다. 혹시 다른 배송 옵션이 필요하신가요?
-    41.76s  user  발화 끝
-    46.81s  user  발화 시작: 아니, 그 주소로 괜찮아.
-    47.41s  agent 발화 끝
-    48.70s  agent 발화 시작: 알겠습니다. 배송 주소는 123 Main Street로 확정되었습니다. 이제 결제 수단을 선택해야 하는데, 
-    48.89s  user  발화 끝
-    56.72s  agent 발화 끝
-    57.60s  user  발화 시작: 신용카드로 할게.
-    58.60s  user  발화 끝
-    58.78s  agent 발화 시작: 신용카드로 결제하시겠군요. 결제 정보를 입력할 수 있는 화면으로 넘어가겠습니다. 안전하게 정보를 입력해 주세
-    65.73s  agent 발화 끝
-    66.56s  user  발화 시작: 혹시 지금 신용카드 정보 입력하는 화면이 안전한지 확인할 수 있어?
-    71.47s  user  발화 끝
-    71.59s  agent 발화 시작: 네, 물론입니다. 이 결제 페이지는 SSL 암호화가 적용되어 있어서 신용카드 정보가 안전하게 보호됩니다. 안
-    79.53s  agent 발화 시작: [laugh] 혹시 운동을 꾸준히 하시는 편이신가요? 결제 과정을 마치고 나면, 스트레칭을 조금 하는 것도 
-    79.70s  agent 발화 끝
-    88.15s  agent 발화 끝
+     0.00s  user  발화 시작: 장바구니 iframe에서 결제 과정을 시작해 줘.
+     2.62s  <ret> 발화 (turn1 첫 프레임)
+     2.93s  agent 발화 시작: <ret> 네, 알겠습니다. 지금 바로 장바구니 iframe으로 이동해서 결제 과정을 시작할게요.
+     2.95s  user  발화 끝
+     4.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) The shopping cart iframe was clicked, and the checkout p
+     8.22s  agent 발화 시작: 장바구니 iframe을 클릭했고, 결제 페이지가 성공적으로 로드됐어요.
+     8.38s  agent 발화 끝
+    12.42s  user  발화 시작: 음…
+    12.89s  agent 발화 끝
+    12.91s  user  발화 끝
+    13.16s  agent 발화 시작: 결제 페이지에서 배송 주소를 입력해야 하는데, 혹시 기본 배송 주소가 있으신가요? 아니면 새 주소를 입력해 
+    21.59s  agent 발화 끝
+    21.66s  user  발화 시작: 기본 주소로 해 줘.
+    22.47s  <ret> 발화 (turn6 첫 프레임)
+    22.81s  user  발화 끝
+    22.86s  agent 발화 시작: <ret> 기본 배송 주소로 배송 설정을 변경할게요. 확인해 보시겠어요?
+    24.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: (tool result) The delivery address field was populated with the user's
+    26.73s  agent 발화 시작: 기본 배송 주소로 배송 주소를 변경했어요. 주소는 123 Main Street, Anytown, USA입니다
+    26.75s  agent 발화 끝
+    31.80s  user  발화 시작: 오.
+    32.29s  user  발화 끝
+    33.90s  agent 발화 시작: 결제 방법을 선택해야 하는데, 신용카드, 계좌이체, 무통장 입금 중에서 어떤 방법을 선호하시나요?
+    33.96s  agent 발화 끝
+    40.94s  user  발화 시작: 신용카드로 할게.
+    41.03s  agent 발화 끝
+    41.90s  user  발화 끝
+    41.91s  agent 발화 시작: 신용카드로 결제를 진행할게요. 카드 번호, 유효 기간, CVC 번호를 입력해 주시겠어요? 안전하게 처리되니 
+    50.93s  user  발화 시작: 카드 번호는 1234-5678-9012-3456, 유효 기간은 2025년 12월, CVC는 123이야.
+    51.04s  agent 발화 끝
+    58.24s  <ret> 발화 (turn13 첫 프레임)
+    58.47s  agent 발화 시작: <ret> 카드 정보를 입력해 주셔서 감사합니다. 지금 결제를 진행할까요?
+    58.52s  user  발화 끝
+    59.68s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.35s]: (tool result) The card number was entered as 1234-5678-9012-3456.
+    62.58s  agent 발화 시작: 카드 번호가 1234-5678-9012-3456으로 입력되었어요.
+    62.82s  agent 발화 끝
+    67.64s  user  발화 시작: 응, 진행해 줘.
+    67.77s  agent 발화 끝
+    68.65s  user  발화 끝
+    68.91s  <ret> 발화 (turn16 첫 프레임)
+    69.06s  agent 발화 시작: <ret> 네, 결제를 진행하겠습니다. 잠시만 기다려 주세요.
+    70.27s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.84s]: (tool result) Payment was processed successfully. Order number is 2024
+    72.73s  agent 발화 시작: 결제가 완료됐습니다. 주문 번호는 20240126-1234입니다.
+    72.90s  agent 발화 끝
+    78.28s  agent 발화 끝

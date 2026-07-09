@@ -63,57 +63,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Three-fifty… hmm, are there any ch | S3 Maybe. Could you find me a nice It | S4 Okay, that's reasonable. Thanks fo
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Is it a good spot for families wit | S3 That sounds perfect. Could you fin | S4 That’s much better. Can you book a
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     3.43s  <ret> 발화 (turn1 첫 프레임)
-     3.50s  agent 발화 시작: <ret> Certainly, I can find that for you. The Sydney Opera H
-     3.52s  user  발화 끝
-     4.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.82s]: (tool result) The Sydney Opera House is located at -33.8568 degrees la
-     8.65s  user  발화 시작: Oh.
-     9.15s  user  발화 끝
-    13.18s  user  발화 시작: That’s helpful. Can you show me nearby hotels?
-    13.33s  agent 발화 끝
-    16.25s  <ret> 발화 (turn4 첫 프레임)
-    16.49s  agent 발화 시작: <ret> Absolutely, let’s see what’s available. The Fullerton 
-    16.65s  user  발화 끝
-    17.61s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.71s]: (tool result) The Fullerton Hotel Sydney has a rating of 4.6 stars and
-    23.63s  user  발화 시작: Three-fifty… hmm, are there any cheaper options?
-    24.00s  agent 발화 끝
-    27.27s  agent 발화 시작: I can certainly look for more affordable hotels—
-    27.28s  user  발화 끝
-    29.36s  user  발화 시작: Actually, forget the hotels. What’s the weather like there r
-    30.14s  agent 발화 끝
-    33.78s  <ret> 발화 (turn8 첫 프레임)
-    34.02s  agent 발화 시작: <ret> Ah, alright. Let’s check the current conditions in Syd
-    34.17s  user  발화 끝
-    34.90s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.61s]: (tool result) The current temperature in Sydney is 22 degrees Celsius 
-    37.53s  agent 발화 시작: It is currently twenty-two degrees Celsius and partly cloudy
-    37.62s  agent 발화 끝
-    39.05s  user  발화 시작: Yeah.
-    39.54s  user  발화 끝
-    41.37s  agent 발화 시작: That’s pleasant weather for exploring. Perhaps you’re planni
-    41.37s  agent 발화 끝
-    43.99s  user  발화 시작: Yeah, totally.
-    45.25s  agent 발화 끝
-    45.30s  user  발화 시작: Maybe. Could you find me a nice Italian restaurant nearby?
-    45.32s  user  발화 끝
-    49.54s  <ret> 발화 (turn14 첫 프레임)
-    49.70s  user  발화 끝
-    49.78s  agent 발화 시작: <ret> Of course, let's find a good Italian place. Lucio Pizz
-    50.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.35s]: (tool result) Lucio Pizzeria is 0.8 kilometers away and has a 4.4-star
-    56.36s  user  발화 시작: Sounds good. Is it expensive?
-    56.55s  agent 발화 끝
-    58.38s  <ret> 발화 (turn16 첫 프레임)
-    58.46s  agent 발화 시작: <ret> Let me check their price range for you.
-    58.62s  user  발화 끝
-    60.14s  ⚡SPAN 주입 [d'=1.76s / d_lead=1.94s]: (tool result) Lucio Pizzeria’s average cost per person is $60.
-    60.31s  agent 발화 시작: Lucio Pizzeria averages sixty dollars per person.
-    60.40s  agent 발화 끝
-    61.44s  user  발화 시작: Mhm.
-    61.93s  user  발화 끝
-    63.82s  agent 발화 끝
-    63.98s  user  발화 시작: Okay, that's reasonable. Thanks for your help!
-    66.86s  agent 발화 시작: You’re very welcome! Planning a trip can be exciting, and I’
-    66.94s  user  발화 끝
-    71.07s  agent 발화 끝
+     4.06s  <ret> 발화 (turn1 첫 프레임)
+     4.11s  user  발화 끝
+     4.13s  agent 발화 시작: <ret> Certainly, I can find that for you. The Sydney Opera H
+     5.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.44s]: (tool result) The Sydney Opera House is at latitude -33.8568 and longi
+     7.93s  user  발화 시작: Yeah.
+     8.51s  user  발화 끝
+    14.80s  user  발화 시작: And what’s the weather like there right now?
+    14.94s  agent 발화 끝
+    17.12s  <ret> 발화 (turn4 첫 프레임)
+    17.36s  agent 발화 시작: <ret> Let me check the current conditions. It’s twenty-two d
+    17.38s  user  발화 끝
+    18.48s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.87s]: (tool result) The current weather in Sydney is 22 degrees Celsius, wit
+    20.93s  user  발화 시작: Yeah.
+    21.46s  user  발화 끝
+    24.21s  agent 발화 끝
+    24.77s  user  발화 시작: That sounds lovely.
+    26.20s  agent 발화 시작: It really is a beautiful city, and a wonderful place to visi
+    26.33s  user  발화 끝
+    28.73s  user  발화 시작: Is it a good spot for families with young children?
+    29.30s  agent 발화 끝
+    31.83s  <ret> 발화 (turn9 첫 프레임)
+    31.96s  user  발화 끝
+    32.07s  agent 발화 시작: <ret> That’s a great question! Sydney offers many family-fri
+    33.11s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.58s]: (tool result) Taronga Zoo is a popular attraction in Sydney, offering 
+    36.66s  agent 발화 끝
+    36.70s  agent 발화 시작: Taronga Zoo is a highly-rated attraction with animal encount
+    41.73s  user  발화 시작: What about museums? Are there any good museums for kids?
+    41.75s  agent 발화 끝
+    45.94s  user  발화 끝
+    45.96s  <ret> 발화 (turn12 첫 프레임)
+    46.04s  agent 발화 시작: <ret> Yes, Sydney has several excellent museums. The Austral
+    47.24s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.43s]: (tool result) The Australian Museum has interactive exhibits for child
+    51.65s  user  발화 시작: Yeah, totally.
+    52.94s  user  발화 끝
+    53.87s  user  발화 시작: That sounds perfect. Could you find me a family-friendly hot
+    54.15s  agent 발화 끝
+    59.25s  <ret> 발화 (turn15 첫 프레임)
+    59.33s  agent 발화 시작: <ret> Of course, let’s see what’s available. The Park Hyatt 
+    59.43s  user  발화 끝
+    59.75s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.73s]: (tool result) The Park Hyatt Sydney is a five-star hotel near the Oper
+    66.23s  agent 발화 끝
+    66.39s  user  발화 시작: Six hundred fifty dollars a night is a little steep. Anythin
+    70.77s  <ret> 발화 (turn17 첫 프레임)
+    70.93s  agent 발화 시작: <ret> Let me broaden the search a little. The Harbour Rocks 
+    70.97s  user  발화 끝
+    72.37s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.97s]: (tool result) The Harbour Rocks Hotel offers family rooms starting at 
+    73.23s  user  발화 시작: Mhm.
+    73.72s  user  발화 끝
+    77.69s  agent 발화 끝
+    77.75s  user  발화 시작: That’s much better. Can you book a room for two nights, star
+    82.31s  <ret> 발화 (turn20 첫 프레임)
+    82.71s  agent 발화 시작: <ret> I can certainly try to make that booking. Your room at
+    82.79s  user  발화 끝
+    83.59s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.76s]: (tool result) Booking confirmed: Harbour Rocks Hotel, family room, two
+    87.42s  user  발화 시작: Yeah, yeah.
+    88.75s  user  발화 끝
+    93.40s  user  발화 시작: Wonderful! Thank you so much.
+    93.42s  agent 발화 끝
+    95.70s  agent 발화 시작: You’re very welcome. Planning a family trip can be so reward
+    95.89s  user  발화 끝
+   101.16s  agent 발화 끝

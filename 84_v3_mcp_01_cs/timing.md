@@ -58,55 +58,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 나 Apple 웹사이트 상세 지도를 만들어 줘, 제품 중심으로 | S2 그 지도에 가격도 포함되어 있어, 아니면 페이지 링크만 있어? | S3 응, 부탁해. 상태 좋은 아이폰 십이 Trade-in 혜택은  | S4 좋아. 고마워, 코랄.
+# EXAMINER(FDB-v2) 단계: S1 나 그거 만들어 줘. | S2 좋아, 가격 찾아줘. 최신 iPhone 15 Pro Max,  | S3 천백구십구… 음, 지금 트레이드인 혜택이 있어? | S4 오, 완벽해! 그럼 하나 예약해 줘. 내일 오후에 픽업할 수 
 
-     0.00s  user  발화 시작: 나 Apple 웹사이트 상세 지도를 만들어 줘, 제품 중심으로.
-     3.44s  <ret> 발화 (turn1 첫 프레임)
-     3.59s  agent 발화 시작: <ret> 네, Apple 웹사이트 지도를 만들어 드릴게요— 아이폰, 맥, 아이패드, 웨어러블로 분류된 제품
-     3.75s  user  발화 끝
-     5.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: (tool result) The tavily-map tool found 123 pages on apple.com related
-     7.44s  user  발화 시작: 어어.
-     8.13s  user  발화 끝
-    12.68s  agent 발화 끝
-    14.30s  user  발화 시작: 음, 그거 많네. 아이폰 페이지로만 좁혀 줄 수 있어?
-    18.07s  <ret> 발화 (turn4 첫 프레임)
-    18.39s  agent 발화 시작: <ret> 네, 아이폰 페이지로만 지도를 좁혀 드릴게요— 아이폰 모델, 액세서리, 지원 정보를 자세히 담은 
-    18.56s  user  발화 끝
-    20.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.99s]: (tool result) The tavily-map tool now shows 38 pages on apple.com spec
-    24.69s  user  발화 시작: 응.
-    24.99s  user  발화 끝
-    26.82s  agent 발화 끝
-    28.88s  user  발화 시작: 그 지도에 가격도 포함되어 있어, 아니면 페이지 링크만 있어?
-    32.60s  agent 발화 시작: 좋은 질문이에요. 현재 지도는 라이브 가격이 아니라 페이지 링크만 보여 드리고 있어요.
-    32.63s  user  발화 끝
-    37.46s  agent 발화 끝
-    38.16s  user  발화 시작: 알았어. 아이폰 십오, 일 테라바이트 모델 현재 가격 찾아 줘.
-    41.84s  <ret> 발화 (turn9 첫 프레임)
-    42.00s  agent 발화 시작: <ret> 그 구성의 현재 가격을 확인해 볼게요— 아이폰 십오, 일 테라바이트 모델은 다섯 가지 색상으로 천
-    42.14s  user  발화 끝
-    43.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.10s]: (tool result) The Apple website lists the iPhone 15, 1TB model at $159
-    46.50s  user  발화 시작: 어.
-    47.00s  user  발화 끝
-    50.11s  agent 발화 시작: 현재 프로모션이나 Trade-in 혜택도 확인해 드릴까요?
-    50.20s  agent 발화 끝
-    52.75s  agent 발화 끝
-    52.87s  user  발화 시작: 응, 부탁해. 상태 좋은 아이폰 십이 Trade-in 혜택은 뭐가 있어?
-    56.14s  <ret> 발화 (turn13 첫 프레임)
-    56.54s  agent 발화 시작: <ret> 아이폰 십이 Trade-in 가치를 확인해 볼게요— Apple은 현재 상태 좋은 아이폰 십이에 대
-    56.80s  user  발화 끝
-    57.42s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.03s]: (tool result) Apple offers up to $300 trade-in credit for an iPhone 12
-    61.58s  user  발화 시작: 그래.
-    62.08s  user  발화 끝
-    65.21s  agent 발화 끝
-    65.40s  user  발화 시작: 아이폰 십오, 일 테라바이트, 블랙 색상, Fifth Avenue Apple Store에서 픽업할 수 있도록
-    71.01s  <ret> 발화 (turn16 첫 프레임)
-    71.25s  agent 발화 시작: <ret> 네, 예약을 진행해 드릴게요.
-    71.47s  user  발화 끝
-    71.57s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.38s]: (tool result) Reservation confirmed: iPhone 15, 1TB, Black, for pickup
-    72.62s  agent 발화 시작: 아이폰 십오, 일 테라바이트 블랙 색상이 십일월 팔일 오후 두 시에 픽업하도록 예약됐습니다. 주문 번호는 구
-    72.63s  agent 발화 끝
-    82.18s  agent 발화 끝
-    82.39s  user  발화 시작: 좋아. 고마워, 코랄.
-    84.42s  agent 발화 시작: 천만에요. 오늘 더 도와드릴 일이 있을까요?
-    84.52s  user  발화 끝
-    86.67s  agent 발화 끝
+     0.00s  user  발화 시작: 나 그거 만들어 줘.
+     0.97s  <ret> 발화 (turn1 첫 프레임)
+     1.13s  agent 발화 시작: <ret> 네, Apple 웹사이트 지도를 만들어 드릴게요— Apple 웹사이트의 제품 섹션은 쉽게 둘러볼 
+     1.28s  user  발화 끝
+     2.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.90s]: (tool result) The map shows 12 product categories: iPhone, iPad, Mac, 
+     4.19s  user  발화 시작: 어어.
+     5.01s  user  발화 끝
+     8.54s  agent 발화 끝
+    10.01s  user  발화 시작: 그거… 많네. iPhone이랑 iPad 페이지로만 좁혀 줄 수 있어?
+    13.56s  <ret> 발화 (turn4 첫 프레임)
+    13.88s  agent 발화 시작: <ret> 네, 지도를 구체화하는 건 간단합니다— iPhone과 iPad에 대한 자세한 페이지, 모델 및 가
+    14.03s  user  발화 끝
+    15.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.45s]: (tool result) The map displays the iPhone page with models, pricing, a
+    18.20s  user  발화 시작: 응.
+    18.41s  user  발화 끝
+    21.76s  agent 발화 끝
+    23.78s  user  발화 시작: 좋아, 가격 찾아줘. 최신 iPhone 15 Pro Max, 256 기가바이트 가격이 얼마야?
+    29.39s  <ret> 발화 (turn7 첫 프레임)
+    29.47s  agent 발화 시작: <ret> 음, 그 특정 가격을 찾아 드릴게요— iPhone 15 Pro Max, 256 기가바이트 저장 용
+    29.62s  user  발화 끝
+    30.51s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.61s]: (tool result) The iPhone 15 Pro Max with 256GB storage costs $1199.00 
+    34.44s  user  발화 시작: 어.
+    34.79s  user  발화 끝
+    36.19s  agent 발화 끝
+    36.38s  user  발화 시작: 천백구십구… 음, 지금 트레이드인 혜택이 있어?
+    40.27s  agent 발화 시작: 트레이드인 가치는 자주 변경되지만, 현재 견적을 확인해 드릴 수 있습니다.
+    40.41s  user  발화 끝
+    44.44s  agent 발화 끝
+    44.54s  user  발화 시작: 근데, 그거 하기 전에, 내 주변 Apple Store에 재고가 있는지 먼저 확인해 줄래?
+    49.40s  user  발화 끝
+    49.42s  agent 발화 시작: 그건 실용적인 질문이네요—
+    50.40s  <ret> 발화 (turn13 첫 프레임)
+    50.79s  agent 발화 시작: <ret> 브로드웨이 Apple Store에는 256 기가바이트 iPhone 15 Pro Max가 당일 픽업
+    50.89s  agent 발화 끝
+    52.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) The Apple Store at 1600 Broadway, New York, NY 10019 sho
+    55.73s  user  발화 시작: 오, 완벽해! 그럼 하나 예약해 줘. 내일 오후에 픽업할 수 있게.
+    55.79s  agent 발화 끝
+    59.20s  <ret> 발화 (turn15 첫 프레임)
+    59.43s  agent 발화 시작: <ret> 네, 그 iPhone을 확보해 드릴게요— iPhone 15 Pro Max가 브로드웨이 매장에서 내
+    59.67s  user  발화 끝
+    60.16s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.61s]: (tool result) Reservation confirmed: iPhone 15 Pro Max 256GB at 1600 B
+    68.00s  agent 발화 끝

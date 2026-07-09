@@ -58,25 +58,20 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was reading about the du Plessis | S2 Oh, interesting! Was it always an  | S3 So, French Protestants brought it  | S4 That’s really fascinating— thank y
 
-     0.00s  user  발화 시작: I was reading about the du Plessis family and I’m curious— w
-     6.20s  <ret> 발화 (turn1 첫 프레임)
-     6.28s  agent 발화 시작: <ret> That’s a lovely question, tracing family roots… The na
-     6.44s  user  발화 끝
-     7.16s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.13s]: The surname du Plessis is of French origin, meaning “of the Plessis”, 
-    13.67s  user  발화 시작: Mhm.
-    14.17s  user  발화 끝
-    16.11s  agent 발화 끝
-    16.22s  user  발화 시작: Oh, interesting! Was it always an Afrikaans name then? I tho
-    22.62s  <ret> 발화 (turn4 첫 프레임)
-    22.98s  user  발화 끝
-    23.02s  agent 발화 시작: <ret> It’s understandable why you’d connect it to South Afri
-    24.54s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.18s]: Huguenots, French Protestants, fled to the Cape Colony in the late sev
-    31.51s  agent 발화 끝
-    31.61s  user  발화 시작: So, French Protestants brought it to South Africa— that make
-    39.96s  agent 발화 시작: Indeed, it was. Plessis refers to several places in France, 
-    40.05s  user  발화 끝
-    49.14s  agent 발화 끝
-    49.40s  user  발화 시작: That’s really fascinating— thank you, Korana. I feel much mo
-    54.58s  user  발화 끝
+     0.00s  user  발화 시작: I was reading a book and came across the name du Plessis. It
+     9.73s  user  발화 끝
+     9.76s  agent 발화 시작: That's a lovely question. Names often carry such fascinating
+    14.75s  <ret> 발화 (turn2 첫 프레임)
+    15.15s  agent 발화 시작: <ret> The name du Plessis has roots in… It’s a French surnam
+    15.17s  agent 발화 끝
+    16.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.40s]: Du Plessis is a French surname originating from the Norman family name
+    20.82s  user  발화 시작: Mhm.
+    21.31s  user  발화 끝
+    22.70s  agent 발화 끝
+    23.05s  user  발화 시작: Oh, so it *is* French! Is Plessis a place then? Like a town 
+    28.45s  <ret> 발화 (turn5 첫 프레임)
+    28.69s  agent 발화 시작: <ret> Yes, Plessis refers to several places… Plessis is the 
+    28.70s  user  발화 끝
+    30.05s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.65s]: Plessis is the name of several communes and places in France, most not
+    37.08s  agent 발화 끝

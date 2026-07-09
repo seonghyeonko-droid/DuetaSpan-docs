@@ -61,31 +61,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Create a detailed map of the Apple website, focusing on the products.
-      Hmm, that’s a lot. Can you narrow it down to just the iPhone pages?
-  S2  Are those prices included on the map, or just the pages themselves?
-      Okay. Can you search for the current price of the iPhone fifteen, one 
-  S3  Yes, please. What trade-in offers are available for an iPhone twelve i
-      That’s pretty good. Could you reserve an iPhone fifteen, one terabyte,
-  S4  Perfect. Thank you, Koral.
+      That’s… a lot. Can you narrow it down to just the iPhone and iPad page
+  S2  Okay, good. Now, can you find me the price of the newest iPhone 15 Pro
+  S3  Eleven ninety-nine… hmm, is there any trade-in offer available right n
+      Actually, before we do that, can we check if they have any in stock at
+  S4  Oh, perfect! Can you reserve one for me, then? For pickup tomorrow aft
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.83s][moshi] ⟨ret@4.76s⟩ Certainly, ⟦⚡SPAN@5.88s: (tool result) The tavily-map tool found 123 pages on apple.com related to products, categorized by iPhone, Mac⟧ I can map out the Apple website— I’ve mapped one hundred and twenty-three product pages, grouped by iPhone, Mac, iPad, and Wearables.
-[  9.36s][user ] «backchannel» Okay.
-[ 15.45s][user ] Hmm, that’s a lot. Can you narrow it down to just the ⟨ret@19.09s⟩ iPhone pages?
-[ 19.48s][moshi] Of course, refining ⟦⚡SPAN@21.09s: (tool result) The tavily-map tool now shows 38 pages on apple.com specifically about iPhones, including models⟧ the map to only iPhone pages— I’ve refined the map to thirty-eight iPhone pages, detailing models, accessories, and support.
-[ 26.81s][user ] «backchannel» Yeah.
-[ 29.34s][user ] Are those prices included on the map, or just the pages themselves?
-[ 34.12s][moshi] That’s a good question. The map currently shows page links, not live pricing.
-[ 40.64s][user ] Okay. Can you search for the current price of the iPhone fifteen, one ⟨ret@45.72s⟩ terabyte model?
-[ 46.11s][moshi] Let me check ⟦⚡SPAN@47.72s: (tool result) The Apple website lists the iPhone 15, 1TB model at $1599, available in five colors.⟧ the current pricing for that configuration— The iPhone fifteen, one terabyte model, is listed at one thousand five hundred and ninety-nine dollars, in five colors.
-[ 52.91s][user ] «backchannel» Uh-huh.
-[ 58.54s][moshi] I can also check for any current promotions or trade-in offers if you’d like.
-[ 62.84s][user ] Yes, please. What trade-in offers are available for an iPhone twelve in good ⟨ret@67.67s⟩ condition?
-[ 68.03s][moshi] Checking trade-in ⟦⚡SPAN@69.43s: (tool result) Apple offers up to $300 trade-in credit for an iPhone 12 in good condition toward any new iPhone⟧ values for your iPhone twelve— Apple currently offers up to three hundred dollars trade-in credit for a good-condition iPhone twelve.
-[ 73.88s][user ] «backchannel» Yeah.
-[ 78.66s][user ] That’s pretty good. Could you reserve an iPhone fifteen, one terabyte, in black, for pickup at the Apple Store on Fifth Avenue?
-[ 87.62s][moshi] ⟨ret@87.39s⟩ Certainly, let’s reserve ⟦⚡SPAN@89.07s: (tool result) Reservation confirmed: iPhone 15, 1TB, Black, for pickup at Apple Store, Fifth Avenue, on Novemb⟧ that for you.
-[ 90.38s][moshi] Your iPhone fifteen, one terabyte in black, is reserved for pickup November eighth at two PM. Your order number is nine eight seven six five four three two one.
-[102.12s][user ] Perfect. Thank you, Koral.
-[103.87s][moshi] You’re very welcome. Is there anything else I can assist you with today?
+[  4.66s][moshi] ⟨ret@4.59s⟩ Certainly, I ⟦⚡SPAN@5.71s: (tool result) The map shows 12 product categories: iPhone, iPad, Mac, AirPods, Apple Watch, Apple TV, Entertai⟧ can map out the Apple website for you— The Apple website’s product section is organized into twelve categories for easy browsing.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
+[  8.57s][user ] «backchannel» Okay.
+[ 13.84s][user ] That’s… a lot. Can you narrow it down to just the iPhone and iPad ⟨ret@18.96s⟩ pages?
+[ 19.36s][moshi] Of course, ⟦⚡SPAN@20.56s: (tool result) The map displays the iPhone page with models, pricing, and features, and the iPad page with simi⟧ refining the map is simple— I’ve narrowed the map to show detailed pages for both iPhone and iPad, including models and pricing.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": ["iPhone", "iPad"]}}
+[ 24.35s][user ] «backchannel» Uh-huh.
+[ 28.51s][user ] Okay, good. Now, can you find me the price of the newest iPhone 15 Pro Max, 256 gigabytes?
+[ 36.31s][moshi] ⟨ret@36.23s⟩ Let’s pinpoint ⟦⚡SPAN@37.83s: (tool result) The iPhone 15 Pro Max with 256GB storage costs $1199.00 on the Apple website.⟧ that specific price for you— The iPhone 15 Pro Max, with 256 gigabytes of storage, is listed at eleven hundred ninety-nine dollars.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone-15-pro/", "query": "iPhone 15 Pro Max 256GB price"}}
+[ 45.65s][user ] «backchannel» Yeah.
+[ 49.13s][user ] Eleven ninety-nine… hmm, is there any trade-in offer available right now?
+[ 54.55s][moshi] Trade-in values change frequently, but I can check current estimates for you.
+[ 59.64s][user ] Actually, before we do that, can we check if they have any in stock at the Apple Store near me?
+[ 66.00s][moshi] That’s a practical question—
+[ 67.72s][moshi] ⟨ret@67.52s⟩ The Apple Store ⟦⚡SPAN@69.52s: (tool result) The Apple Store at 1600 Broadway, New York, NY 10019 shows the iPhone 15 Pro Max 256GB in stock ⟧ on Broadway has the iPhone 15 Pro Max with 256 gigabytes available for same-day pickup.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/retail/", "query": "iPhone 15 Pro Max 256GB availability near me"}}
+[ 75.73s][user ] Oh, perfect! Can you reserve one for me, then? For pickup tomorrow ⟨ret@80.36s⟩ afternoon?
+[ 80.75s][moshi] Certainly, let’s secure ⟦⚡SPAN@82.36s: (tool result) Reservation confirmed: iPhone 15 Pro Max 256GB at 1600 Broadway, New York, NY 10019, pickup tomo⟧ that iPhone for you— Your iPhone 15 Pro Max is reserved for pickup tomorrow afternoon at the Broadway store; your confirmation number is seven four nine two eight one.
+      CALL: {"function": "tavily-reserve", "arguments": {"store": "1600 Broadway, New York, NY 10019", "item": "iPhone 15 Pro Max 256GB", "pickup_date": "tomorrow", "pickup_time": "afternoon"}}

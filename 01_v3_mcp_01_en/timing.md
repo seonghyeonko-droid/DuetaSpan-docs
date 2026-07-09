@@ -58,55 +58,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Are those prices included on the m | S3 Yes, please. What trade-in offers  | S4 Perfect. Thank you, Koral.
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Okay, good. Now, can you find me t | S3 Eleven ninety-nine… hmm, is there  | S4 Oh, perfect! Can you reserve one f
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.76s  <ret> 발화 (turn1 첫 프레임)
-     4.83s  agent 발화 시작: <ret> Certainly, I can map out the Apple website— I’ve mappe
-     4.95s  user  발화 끝
-     5.88s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.76s]: (tool result) The tavily-map tool found 123 pages on apple.com related
-     9.36s  user  발화 시작: Okay.
-    10.18s  user  발화 끝
-    15.45s  user  발화 시작: Hmm, that’s a lot. Can you narrow it down to just the iPhone
-    15.63s  agent 발화 끝
-    19.09s  <ret> 발화 (turn4 첫 프레임)
-    19.48s  agent 발화 시작: <ret> Of course, refining the map to only iPhone pages— I’ve
-    19.71s  user  발화 끝
-    21.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.06s]: (tool result) The tavily-map tool now shows 38 pages on apple.com spec
-    26.81s  user  발화 시작: Yeah.
-    27.16s  user  발화 끝
-    29.34s  user  발화 시작: Are those prices included on the map, or just the pages them
-    29.41s  agent 발화 끝
-    34.07s  user  발화 끝
-    34.12s  agent 발화 시작: That’s a good question. The map currently shows page links, 
-    39.91s  agent 발화 끝
-    40.64s  user  발화 시작: Okay. Can you search for the current price of the iPhone fif
-    45.72s  <ret> 발화 (turn9 첫 프레임)
-    46.11s  agent 발화 시작: <ret> Let me check the current pricing for that configuratio
-    46.29s  user  발화 끝
-    47.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: (tool result) The Apple website lists the iPhone 15, 1TB model at $159
-    52.91s  user  발화 시작: Uh-huh.
-    53.50s  user  발화 끝
-    58.54s  agent 발화 시작: I can also check for any current promotions or trade-in offe
-    58.63s  agent 발화 끝
-    62.84s  user  발화 시작: Yes, please. What trade-in offers are available for an iPhon
-    62.94s  agent 발화 끝
-    67.67s  <ret> 발화 (turn13 첫 프레임)
-    68.03s  agent 발화 시작: <ret> Checking trade-in values for your iPhone twelve— Apple
-    68.20s  user  발화 끝
-    69.43s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.19s]: (tool result) Apple offers up to $300 trade-in credit for an iPhone 12
-    73.88s  user  발화 시작: Yeah.
-    74.37s  user  발화 끝
-    78.05s  agent 발화 끝
-    78.66s  user  발화 시작: That’s pretty good. Could you reserve an iPhone fifteen, one
-    87.39s  <ret> 발화 (turn16 첫 프레임)
-    87.52s  user  발화 끝
-    87.62s  agent 발화 시작: <ret> Certainly, let’s reserve that for you.
-    89.07s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.81s]: (tool result) Reservation confirmed: iPhone 15, 1TB, Black, for pickup
-    90.38s  agent 발화 시작: Your iPhone fifteen, one terabyte in black, is reserved for 
-    90.43s  agent 발화 끝
-   102.02s  agent 발화 끝
-   102.12s  user  발화 시작: Perfect. Thank you, Koral.
-   103.87s  agent 발화 시작: You’re very welcome. Is there anything else I can assist you
-   103.91s  user  발화 끝
-   108.69s  agent 발화 끝
+     4.59s  <ret> 발화 (turn1 첫 프레임)
+     4.66s  agent 발화 시작: <ret> Certainly, I can map out the Apple website for you— Th
+     4.82s  user  발화 끝
+     5.71s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.07s]: (tool result) The map shows 12 product categories: iPhone, iPad, Mac, 
+     8.57s  user  발화 시작: Okay.
+     9.20s  user  발화 끝
+    13.84s  user  발화 시작: That’s… a lot. Can you narrow it down to just the iPhone and
+    14.03s  agent 발화 끝
+    18.96s  <ret> 발화 (turn4 첫 프레임)
+    19.36s  agent 발화 시작: <ret> Of course, refining the map is simple— I’ve narrowed t
+    19.49s  user  발화 끝
+    20.56s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.68s]: (tool result) The map displays the iPhone page with models, pricing, a
+    24.35s  user  발화 시작: Uh-huh.
+    24.85s  user  발화 끝
+    28.51s  user  발화 시작: Okay, good. Now, can you find me the price of the newest iPh
+    28.54s  agent 발화 끝
+    36.23s  <ret> 발화 (turn7 첫 프레임)
+    36.31s  agent 발화 시작: <ret> Let’s pinpoint that specific price for you— The iPhone
+    36.40s  user  발화 끝
+    37.83s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.67s]: (tool result) The iPhone 15 Pro Max with 256GB storage costs $1199.00 
+    45.65s  user  발화 시작: Yeah.
+    46.10s  user  발화 끝
+    48.89s  agent 발화 끝
+    49.13s  user  발화 시작: Eleven ninety-nine… hmm, is there any trade-in offer availab
+    54.50s  user  발화 끝
+    54.55s  agent 발화 시작: Trade-in values change frequently, but I can check current e
+    59.55s  agent 발화 끝
+    59.64s  user  발화 시작: Actually, before we do that, can we check if they have any i
+    66.00s  agent 발화 시작: That’s a practical question—
+    66.13s  user  발화 끝
+    67.52s  <ret> 발화 (turn13 첫 프레임)
+    67.72s  agent 발화 시작: <ret> The Apple Store on Broadway has the iPhone 15 Pro Max 
+    67.93s  agent 발화 끝
+    69.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.12s]: (tool result) The Apple Store at 1600 Broadway, New York, NY 10019 sho
+    75.73s  user  발화 시작: Oh, perfect! Can you reserve one for me, then? For pickup to
+    75.83s  agent 발화 끝
+    80.36s  <ret> 발화 (turn15 첫 프레임)
+    80.75s  agent 발화 시작: <ret> Certainly, let’s secure that iPhone for you— Your iPho
+    80.82s  user  발화 끝
+    82.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.82s]: (tool result) Reservation confirmed: iPhone 15 Pro Max 256GB at 1600 B
+    93.65s  agent 발화 끝

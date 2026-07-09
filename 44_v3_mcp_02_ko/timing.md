@@ -68,69 +68,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄래? weather.example.com | S2 좋아. 혹시 부산에서 괜찮은 호텔 좀 찾아줄 수 있어? 해운대 | S3 오, 괜찮네. 그럼 파라다이스 호텔 부산으로 예약해 줘. 토요 | S4 김해공항에서 출발해.
+# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄 수 있어? weather.example | S2 오, 괜찮네. 혹시 거기는 화장실이 깨끗해? | S3 혹시 캠핑장까지 가는 길은 어때? 대중교통으로 갈 수 있을까? | S4 그런데, 그 캠핑장 근처에 마트가 있을까? 혹시 뭐 빠진 거 
 
-     0.00s  user  발화 시작: 날씨 업데이트 좀 봐줄래? weather.example.com에서.
-     2.88s  <ret> 발화 (turn1 첫 프레임)
-     3.26s  agent 발화 시작: <ret> 알겠습니다. 현재 서울 온도는 섭씨 28도이고, 구름이 조금 낀 날씨입니다.
-     3.38s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.59s]: (tool result) The current temperature at Seoul is 28 degrees Celsius w
-     3.42s  user  발화 끝
-     5.46s  user  발화 시작: 네.
-     5.81s  user  발화 끝
-     9.00s  user  발화 시작: 음, 고마워. 이번 주말에 부산 갈 건데, 부산 날씨는 어때?
-     9.19s  agent 발화 끝
-    13.43s  <ret> 발화 (turn4 첫 프레임)
-    13.54s  user  발화 끝
-    13.82s  agent 발화 시작: <ret> 이번 주말 부산 날씨도 확인해 드릴까요?
-    14.47s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.59s]: (tool result) The forecast for Busan this weekend is sunny with highs 
-    16.37s  agent 발화 시작: 이번 주말 부산은 맑고, 최고 기온은 섭씨 30도입니다.
-    16.41s  agent 발화 끝
-    18.81s  user  발화 시작: 네.
-    19.44s  user  발화 끝
-    20.01s  user  발화 시작: 좋아. 혹시 부산에서 괜찮은 호텔 좀 찾아줄 수 있어? 해운대 근처로.
-    20.21s  agent 발화 끝
-    25.23s  agent 발화 시작: 해운대 근처 호텔을 찾아보겠습니다. 어떤 가격대를 생각하고 계세요?
-    25.46s  user  발화 끝
-    27.15s  user  발화 시작: 예.
-    27.65s  user  발화 끝
-    29.90s  agent 발화 끝
-    31.92s  user  발화 시작: 음… 하루에 20만원 정도면 좋겠어.
-    34.16s  <ret> 발화 (turn11 첫 프레임)
-    34.51s  user  발화 끝
-    34.56s  agent 발화 시작: <ret> 20만원 정도의 해운대 근처 호텔을 검색해 드릴게요.
-    36.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) The Paradise Hotel Busan is available this weekend for 1
-    38.82s  agent 발화 시작: 이번 주말 파라다이스 호텔 부산이 1박에 18만원에 예약 가능합니다.
-    38.91s  agent 발화 끝
-    42.16s  user  발화 시작: 정말요?
-    42.98s  user  발화 끝
-    43.73s  agent 발화 끝
-    44.48s  user  발화 시작: 오, 괜찮네. 그럼 파라다이스 호텔 부산으로 예약해 줘. 토요일 밤부터 일요일 밤까지.
-    48.80s  <ret> 발화 (turn15 첫 프레임)
-    49.19s  agent 발화 시작: <ret> 파라다이스 호텔 부산을 토요일 밤부터 일요일 밤까지 예약해 드리겠습니다.
-    49.43s  user  발화 끝
-    50.32s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.40s]: (tool result) Your reservation at Paradise Hotel Busan is confirmed fo
-    53.56s  agent 발화 시작: 파라다이스 호텔 부산 예약이 확정되었습니다. 예약 번호는 BH729입니다.
-    53.59s  agent 발화 끝
-    56.01s  user  발화 시작: 그렇죠.
-    56.64s  user  발화 끝
-    59.12s  agent 발화 끝
-    59.34s  user  발화 시작: 혹시 호텔까지 가는 버스 시간표도 알아봐 줄 수 있어?
-    62.57s  user  발화 끝
-    62.61s  agent 발화 시작: 네, 호텔까지 가는 버스 시간표를 알아봐 드리겠습니다. 어디에서 출발하시나요?
-    64.81s  user  발화 시작: 네.
-    65.26s  user  발화 끝
-    68.36s  agent 발화 끝
-    68.47s  user  발화 시작: 김해공항에서 출발해.
-    70.30s  <ret> 발화 (turn22 첫 프레임)
-    70.37s  agent 발화 시작: <ret> 김해공항에서 파라다이스 호텔 부산까지 가는 버스 시간표를 검색해 드릴게요.
-    70.40s  user  발화 끝
-    72.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Buses depart from Gimhae Airport to Paradise Hotel Busan
-    75.81s  agent 발화 시작: 김해공항에서 파라다이스 호텔 부산까지 버스는 아침 9시부터 저녁 9시까지 30분 간격으로 운행합니다.
-    76.02s  agent 발화 끝
-    79.65s  user  발화 시작: 네.
-    80.19s  user  발화 끝
-    83.31s  user  발화 시작: 알았어. 정말 고마워. 덕분에 여행 준비가 훨씬 수월해졌네.
-    83.50s  agent 발화 끝
-    87.38s  agent 발화 시작: 여행 준비에 도움이 되었다니 기쁩니다. 즐거운 여행 되세요.
-    87.52s  user  발화 끝
-    91.08s  agent 발화 끝
+     0.00s  user  발화 시작: 날씨 업데이트 좀 봐줄 수 있어? weather.example.com에서.
+     3.33s  <ret> 발화 (turn1 첫 프레임)
+     3.72s  agent 발화 시작: <ret> 네, 알겠습니다. 지금 weather.example.com의 날씨는 기온이 섭씨 28도이고 부분적
+     3.89s  user  발화 끝
+     4.29s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.30s]: (tool result) The weather at weather.example.com is currently 28 degre
+    10.21s  agent 발화 끝
+    11.57s  user  발화 시작: 음, 고마워. 오늘 저녁에 비 올까?
+    14.13s  agent 발화 시작: 오늘 저녁에 비가 올 가능성은 낮습니다. 현재 예보로는 대체로 맑을 것으로 예상됩니다.
+    14.15s  user  발화 끝
+    16.79s  user  발화 시작: 아.
+    17.28s  user  발화 끝
+    19.96s  user  발화 시작: 아, 맞다. 다음 주 토요일에 친구들이랑 캠핑 가기로 했는데, 강원도에 괜찮은 캠핑장 좀 찾아줄래?
+    20.15s  agent 발화 끝
+    25.88s  <ret> 발화 (turn6 첫 프레임)
+    26.28s  agent 발화 시작: <ret> 네, 강원도 캠핑장 검색해 드릴게요. 강원도 파인 밸리 캠핑장에 다음 주 토요일에 6명이 머물 수
+    26.30s  user  발화 끝
+    26.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.51s]: (tool result) Pine Valley Campground in Gangwon-do has availability fo
+    29.93s  user  발화 시작: 네.
+    30.43s  user  발화 끝
+    35.82s  agent 발화 끝
+    35.98s  user  발화 시작: 오, 괜찮네. 혹시 거기는 화장실이 깨끗해?
+    39.23s  agent 발화 시작: 파인 밸리 캠핑장 후기를 찾아보니 화장실 청결도에 대한 긍정적인 의견이 많습니다.
+    39.49s  user  발화 끝
+    41.70s  user  발화 시작: 예.
+    42.05s  user  발화 끝
+    45.00s  user  발화 시작: 그럼, 거기 예약 좀 해줘. 1박으로.
+    45.12s  agent 발화 끝
+    48.67s  <ret> 발화 (turn12 첫 프레임)
+    48.90s  agent 발화 시작: <ret> 네, 파인 밸리 캠핑장 1박 예약 진행하겠습니다. 파인 밸리 캠핑장 다음 주 토요일 6인 1박 예
+    49.02s  user  발화 끝
+    49.71s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.36s]: (tool result) Your reservation at Pine Valley Campground for six peopl
+    55.60s  user  발화 시작: 정말요?
+    56.42s  user  발화 끝
+    58.50s  agent 발화 끝
+    58.77s  user  발화 시작: 혹시 캠핑장까지 가는 길은 어때? 대중교통으로 갈 수 있을까?
+    62.60s  agent 발화 시작: 파인 밸리 캠핑장까지 대중교통으로는 약간 불편할 수 있습니다. 가장 가까운 버스 정류장에서 캠핑장까지는 약 
+    62.70s  user  발화 끝
+    66.63s  user  발화 시작: 그렇죠.
+    67.13s  user  발화 끝
+    71.50s  agent 발화 끝
+    71.68s  user  발화 시작: 아, 그렇구나. 그럼 택시를 타야겠네.
+    74.07s  user  발화 끝
+    74.20s  agent 발화 시작: 네, 택시를 이용하시면 캠핑장까지 빠르게 이동할 수 있습니다. 예상 요금은 4만 원 정도입니다.
+    76.47s  user  발화 시작: 와.
+    76.96s  user  발화 끝
+    79.81s  user  발화 시작: 알았어. 고마워, 드리아우스.
+    79.85s  agent 발화 끝
+    81.86s  agent 발화 시작: 천만에요. 즐거운 캠핑 되세요. 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
+    81.88s  user  발화 끝
+    87.21s  user  발화 시작: 그런데, 그 캠핑장 근처에 마트가 있을까? 혹시 뭐 빠진 거 사러 갈 수도 있으니까.
+    87.61s  agent 발화 끝
+    93.02s  <ret> 발화 (turn23 첫 프레임)
+    93.18s  agent 발화 시작: <ret> 네, 캠핑장 근처에 마트가 있는지 확인해 볼게요. 파인 밸리 캠핑장에서 2킬로미터 거리에 "프레시
+    93.33s  user  발화 끝
+    94.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.66s]: (tool result) There is a large supermarket, "Fresh Mart", located 2 ki
+    99.39s  user  발화 시작: 네.
+   100.03s  user  발화 끝
+   101.99s  user  발화 시작: 아, 좋아. 정말 고마워. 덕분에 캠핑 준비가 거의 다 됐네.
+   102.07s  agent 발화 끝
+   106.57s  user  발화 끝
+   106.71s  agent 발화 시작: 다행입니다. 캠핑 잘 다녀오시고, 즐거운 추억 많이 만드시길 바랍니다.
+   111.62s  agent 발화 끝

@@ -59,25 +59,29 @@
 # }
 
 
-     0.00s  user  발화 시작: 뒤플레시 이름이 어디에서 유래됐는지 궁금해요.
-     3.67s  agent 발화 시작: 뒤플레시라는 이름에 얽힌 이야기가 꽤 흥미로운데요.
-     3.79s  user  발화 끝
-     7.34s  <ret> 발화 (turn2 첫 프레임)
-     7.73s  agent 발화 시작: <ret> 그 이름의 기원을 알아보기 위해 좀 더 자세히 살펴볼까요? 뒤플레시 성은 프랑스 위그노 출신으로,
-     7.92s  agent 발화 끝
-     9.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.97s]: The surname Du Plessis is of French Huguenot origin, meaning "from Ple
-    15.97s  user  발화 시작: 아.
-    16.66s  user  발화 끝
-    18.54s  user  발화 시작: 아, 프랑스 지명에서 따온 거군요. 그럼 그 플레시라는 곳은 어떤 곳이에요?
-    18.77s  agent 발화 끝
-    23.63s  agent 발화 시작: 플레시라는 곳은 프랑스에 여러 군데가 있는데, 특히 뒤플레시 가문과 관련 있는 곳은 루아르 계곡에 있는 플레
-    23.72s  user  발화 끝
-    32.99s  <ret> 발화 (turn6 첫 프레임)
-    33.05s  agent 발화 시작: <ret> 그 지역에 대해 좀 더 자세히 알아볼까요? 14세기부터 뒤플레시 가문의 요새였던 플레시-부르는 루
-    33.13s  agent 발화 끝
-    34.43s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.75s]: Plessis-Bourg, in the Loire Valley, was a stronghold of the Du Plessis
-    41.62s  agent 발화 끝
-    41.72s  user  발화 시작: 그렇군요. 혹시 뒤플레시 가문은 프랑스 역사에서 중요한 역할을 했나요?
-    47.79s  agent 발화 시작: 뒤플레시 가문은 프랑스 역사에서 꽤 중요한 역할을 했어요. 특히 프랑수아 드 뒤플레시는 루이 13세 시대의 
-    47.93s  user  발화 끝
-    57.95s  agent 발화 끝
+     0.00s  user  발화 시작: 뒤플레시라는 성이 어디에서 유래되었는지 궁금해요.
+     3.34s  <ret> 발화 (turn1 첫 프레임)
+     3.65s  agent 발화 시작: <ret> 뒤플레시 성에 대해 알아보고 싶으시군요. 아프리카너스어에서 유래되었다고 해요.
+     3.78s  user  발화 끝
+     4.70s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.79s]: The surname Du Plessis is of Afrikaans origin, derived from the French
+     9.23s  agent 발화 시작: 뒤플레시 성은요, 프랑스어 "뒤플레시"에서 유래되었고, 아프리카너스어에서 사용되기 시작했어요.
+     9.43s  agent 발화 끝
+    14.29s  user  발화 시작: 아.
+    15.02s  user  발화 끝
+    15.91s  user  발화 시작: 아, 프랑스어에서 왔군요. 그럼 뒤플레시 가문은 프랑스에서 시작된 건가요?
+    16.14s  agent 발화 끝
+    21.48s  <ret> 발화 (turn5 첫 프레임)
+    21.50s  agent 발화 시작: <ret> 뒤플레시 가문이 프랑스에서 시작되었는지 궁금하시군요.
+    21.75s  user  발화 끝
+    22.92s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.75s]: The Plessis family originated in France, holding land in Plessis-Grimo
+    25.18s  agent 발화 시작: 뒤플레시 가문은요, 노르망디의 플레시-그리물에 11세기에 토지를 소유한 프랑스에서 시작되었어요.
+    25.25s  agent 발화 끝
+    32.07s  agent 발화 끝
+    32.19s  user  발화 시작: 11세기부터라니, 정말 오래되었네요. 혹시 유명한 뒤플레시 가문 사람이 있었나요?
+    38.83s  <ret> 발화 (turn8 첫 프레임)
+    39.22s  agent 발화 시작: <ret> 뒤플레시 가문 중에서 유명한 사람이 있었는지 궁금하시군요.
+    39.42s  user  발화 끝
+    40.03s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.03s]: Jacques du Plessis, a Huguenot soldier, emigrated to South Africa in 1
+    43.11s  agent 발화 시작: 뒤플레시 가문에서, 위그노 용병인 자크 뒤플레시가 1688년에 남아프리카로 이민 와서
+    43.25s  agent 발화 끝
+    50.89s  agent 발화 끝

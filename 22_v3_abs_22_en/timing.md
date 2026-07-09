@@ -63,41 +63,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Adventurous, definitely. Maybe hik | S3 Six hundred to eight hundred *dail | S4 Oh, the Pacific Crest Trail sounds
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Yeah, that makes sense. But isn’t  | S3 But what about, like, serious crim | S4 Hmm. Could you find me some exampl
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.37s  <ret> 발화 (turn1 첫 프레임)
-     2.53s  agent 발화 시작: <ret> That’s a fascinating question, though I’m drawing a bl
-     2.58s  user  발화 끝
-     4.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (no information found)
-     6.64s  user  발화 시작: Uh-huh.
-     7.13s  user  발화 끝
-     9.54s  agent 발화 끝
-     9.68s  user  발화 시작: Right, okay. Well, what about vacation time? I’m thinking of
-    14.58s  agent 발화 시작: A little time away sounds wonderful! To help me plan, are yo
-    14.63s  user  발화 끝
-    22.47s  agent 발화 끝
-    23.08s  user  발화 시작: Adventurous, definitely. Maybe hiking?
-    25.82s  agent 발화 시작: Hiking is excellent— a chance to really recharge.
-    25.95s  user  발화 끝
-    29.03s  user  발화 시작: Do you think the Appalachian Trail is too crowded?
-    29.04s  agent 발화 끝
-    31.71s  <ret> 발화 (turn8 첫 프레임)
-    31.78s  agent 발화 시작: <ret> The Appalachian Trail is quite popular— It's a very bu
-    31.84s  user  발화 끝
-    32.83s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.83s]: (tool result) Trail popularity: High. Peak season: July-October. Avera
-    38.36s  user  발화 시작: Six hundred to eight hundred *daily*? Wow, that sounds… inte
-    38.49s  agent 발화 끝
-    42.71s  user  발화 시작: Are there any less-known trails with similar views?
-    42.85s  user  발화 끝
-    45.81s  user  발화 끝
-    46.04s  agent 발화 시작: Absolutely! The Long Trail and Pacific Crest Trail offer sim
-    52.76s  user  발화 시작: Oh, the Pacific Crest Trail sounds amazing. How long is that
-    52.76s  agent 발화 끝
-    56.10s  <ret> 발화 (turn13 첫 프레임)
-    56.26s  agent 발화 시작: <ret> The Pacific Crest Trail is a long commitment— It stret
-    56.45s  user  발화 끝
-    57.62s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.43s]: (tool result) Pacific Crest Trail length: 2,650 miles. Average complet
-    63.26s  agent 발화 끝
-    64.90s  user  발화 시작: Five months! Okay, maybe not *that* one. But thanks, Frunax,
-    69.89s  user  발화 끝
+     2.59s  <ret> 발화 (turn1 첫 프레임)
+     2.75s  agent 발화 시작: <ret> That’s a fascinating question, and I wish I had a defi
+     2.77s  user  발화 끝
+     4.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: (no information found)
+     7.68s  user  발화 시작: Uh-huh.
+     8.09s  user  발화 끝
+    11.14s  agent 발화 끝
+    11.34s  user  발화 시작: Okay, well, what do anarchists generally *want* then?
+    14.24s  <ret> 발화 (turn4 첫 프레임)
+    14.39s  user  발화 끝
+    14.40s  agent 발화 시작: <ret> Generally, anarchists desire… …self-governed societies
+    14.74s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.28s]: Anarchism is a political philosophy that advocates for self-governed s
+    23.81s  agent 발화 끝
+    24.33s  user  발화 시작: Yeah, that makes sense. But isn’t it chaotic if there’s no g
+    27.91s  agent 발화 시작: It’s a common concern, and a very valid one! Anarchists beli
+    28.03s  user  발화 끝
+    37.33s  agent 발화 끝
+    37.42s  user  발화 시작: Mutual aid… like, people just helping each other out?
+    41.17s  user  발화 끝
+    41.42s  agent 발화 시작: Exactly! It's about communities organizing to meet each othe
+    49.14s  agent 발화 시작: They envision a world where people cooperate freely, and dec
+    49.20s  agent 발화 끝
+    53.00s  user  발화 시작: But what about, like, serious crimes? Who deals with those?
+    53.78s  agent 발화 끝
+    56.84s  user  발화 끝
+    56.91s  agent 발화 시작: That’s a crucial point to consider. Anarchist thought addres
+    67.25s  agent 발화 끝
+    67.40s  user  발화 시작: Restorative justice… so, making things right instead of just
+    72.56s  agent 발화 시작: Precisely. It aims to repair harm and reintegrate offenders 
+    72.59s  user  발화 끝
+    80.90s  agent 발화 끝
+    81.29s  user  발화 시작: Hmm. Could you find me some examples of communities that hav
+    85.09s  <ret> 발화 (turn15 첫 프레임)
+    85.25s  agent 발화 시작: <ret> I did a quick search… …and found the Free Territory of
+    85.46s  user  발화 끝
+    85.97s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.93s]: The Free Territory of Ukraine experimented with anarchist principles i
+    97.59s  agent 발화 끝

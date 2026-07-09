@@ -71,23 +71,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… uh, when was | S2 Wow, that was… a while ago. I— I m | S3 Hey, did you take my blue sweater? | S4 Sorry about that, anyway… so, who 
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering… uh, when was | S2 Wow, that was a while ago. So, who | S3 Hey, did you remember to take the  | S4 Sorry about that. So, was it a clo
 
      0.00s  user  발화 시작: I was just wondering… uh, when was the last time the Oakland
-     4.46s  <ret> 발화 (turn1 첫 프레임)
-     4.84s  agent 발화 시작: <ret> That’s a good question, and I can certainly look that 
-     4.86s  user  발화 끝
-     6.30s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.97s]: The last time the Oakland Athletics were no-hit was April 21, 2018.
-    12.17s  agent 발화 끝
-    12.31s  user  발화 시작: Wow, that was… a while ago. I— I mean, it feels like they ge
-    18.93s  user  발화 끝
-    19.33s  agent 발화 시작: It certainly can feel that way when your team is struggling,
-    25.73s  agent 발화 끝
-    25.86s  user  발화 시작: Hey, did you take my blue sweater?
-    27.68s  user  발화 시작: Sorry about that, anyway… so, who pitched that no-hitter aga
-    27.80s  user  발화 끝
-    31.31s  <ret> 발화 (turn6 첫 프레임)
-    31.54s  agent 발화 시작: <ret> Let’s find out who had that dominant performance again
-    31.70s  user  발화 끝
-    33.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.99s]: Lucas Giolito of the Chicago White Sox pitched the no-hitter against t
-    42.07s  agent 발화 끝
+     4.92s  <ret> 발화 (turn1 첫 프레임)
+     5.31s  agent 발화 시작: <ret> That’s a good baseball question. The A’s were last no-
+     5.33s  user  발화 끝
+     6.76s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.95s]: The last time the Oakland A’s were no-hit was April 21, 2018.
+    11.56s  agent 발화 끝
+    11.77s  user  발화 시작: Wow, that was a while ago. So, who pitched it?
+    14.63s  <ret> 발화 (turn3 첫 프레임)
+    14.72s  user  발화 끝
+    14.86s  agent 발화 시작: <ret> I can certainly find that information for you.
+    15.75s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.54s]: (tool result) James Paxton pitched a no-hitter against the Oakland Ath
+    17.25s  agent 발화 시작: James Paxton pitched the no-hitter against the A’s on April 
+    17.39s  agent 발화 끝
+    22.10s  user  발화 시작: Hey, did you remember to take the chicken out?
+    22.62s  agent 발화 끝
+    24.44s  user  발화 시작: Sorry about that. So, was it a close game, or did they just 
+    24.49s  user  발화 끝
+    30.36s  user  발화 끝

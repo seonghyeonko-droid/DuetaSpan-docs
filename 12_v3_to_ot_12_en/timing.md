@@ -58,25 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, who actually | S2 Wow, really? I always thought it w | S3 Hey, did you take the trash out ye | S4 Sorry about that. So, was he appro
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, who actually | S2 Hey, did you remember to take the  | S3 Sorry about that. So, Van Halen ju | S4 That’s pretty cool. Quincy Jones c
 
      0.00s  user  발화 시작: I was just wondering, who actually played the guitar solo on
-     6.21s  <ret> 발화 (turn1 첫 프레임)
-     6.45s  agent 발화 시작: <ret> That’s a great question, and a very famous solo. Eddie
-     6.58s  user  발화 끝
-     8.05s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.21s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-     9.21s  user  발화 시작: Okay.
-     9.89s  user  발화 끝
-    13.59s  agent 발화 끝
-    13.75s  user  발화 시작: Wow, really? I always thought it was someone else. That’s am
-    17.98s  agent 발화 시작: It truly is a remarkable piece of musicianship, and a surpri
-    18.11s  user  발화 끝
-    23.95s  agent 발화 끝
-    24.74s  user  발화 시작: Hey, did you take the trash out yet?
-    26.97s  user  발화 시작: Sorry about that. So, was he approached specifically for tha
-    27.05s  user  발화 끝
-    32.45s  <ret> 발화 (turn7 첫 프레임)
-    32.68s  agent 발화 시작: <ret> Michael Jackson specifically sought him out. Jackson p
-    32.91s  user  발화 끝
-    33.65s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.74s]: Michael Jackson personally requested Eddie Van Halen to play on “Beat 
-    39.53s  agent 발화 끝
+     7.93s  <ret> 발화 (turn1 첫 프레임)
+     8.17s  agent 발화 시작: <ret> That's a great question about a really iconic sound. E
+     8.30s  user  발화 끝
+     9.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+    11.23s  user  발화 시작: Okay.
+    11.72s  user  발화 끝
+    16.05s  agent 발화 끝
+    16.20s  user  발화 시작: Wow, Eddie Van Halen? That’s… unexpected. I always figured i
+    23.04s  user  발화 시작: Hey, did you remember to take the chicken out of the freezer
+    23.24s  user  발화 끝
+    26.36s  user  발화 시작: Sorry about that. So, Van Halen just… agreed to do it? Was h
+    26.55s  user  발화 끝
+    32.14s  <ret> 발화 (turn6 첫 프레임)
+    32.54s  agent 발화 시작: <ret> It was a collaboration born of Quincy Jones’s vision, 
+    32.70s  user  발화 끝
+    34.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: Quincy Jones requested Eddie Van Halen play on “Beat It” despite recor
+    39.73s  agent 발화 시작: Quincy Jones asked Eddie Van Halen to play on “Beat It”, eve
+    39.82s  agent 발화 끝
+    45.06s  agent 발화 끝
+    45.16s  user  발화 시작: That’s pretty cool. Quincy Jones clearly knew what he was do
+    50.95s  user  발화 끝

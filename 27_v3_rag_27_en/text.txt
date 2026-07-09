@@ -62,21 +62,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I'm trying to find out about the composer Lux Aurunque. Do you know wh
-  S2  Nineteen seventy… wow. Was he born in Europe?
-  S3  …did he write operas, or mostly instrumental pieces?
-  S4  Oh, orchestral, that's interesting. What kind of training did he have?
+  S1  I was reading about Lux Aurunque, and I’m curious—when was he born?
+      Nineteen seventy… that’s quite a while ago! What kind of work did he d
+  S2  Was his work ever displayed anywhere prominent?
+  S3  I mean, like, a museum or gallery?
+  S4  The Venice Biennale—wow! That's impressive. What sort of music did he 
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I'm trying to find out about the composer Lux Aurunque. Do you know when he was ⟨ret@4.46s⟩ born?
-[  4.69s][moshi] Certainly, I can ⟦⚡SPAN@5.82s: Lux Aurunque was born in nineteen seventy.⟧ help with that. He was born in nineteen seventy. That's quite a while ago now, isn't it?
-[  8.13s][user ] «backchannel» Yeah, yeah.
-[ 10.99s][user ] Nineteen seventy… wow. Was he born in Europe?
-[ 14.75s][moshi] «interrupted» That's a good question. It's often helpful to know a composer’s origins—
-[ 18.67s][user ] «interrupts_prev» …did he write operas, or mostly instrumental pieces?
-[ 22.18s][moshi] ⟨ret@22.10s⟩ That’s a ⟦⚡SPAN@23.06s: Lux Aurunque primarily composed orchestral and chamber music.⟧ very insightful shift in focus.
-[ 24.82s][moshi] He primarily composed orchestral and chamber music, not operas. A lovely, focused body of work.
-[ 29.17s][user ] «backchannel» Uh-huh.
-[ 32.04s][user ] Oh, orchestral, that's interesting. What kind of training did he have?
-[ 36.74s][moshi] ⟨ret@36.68s⟩ Exploring his training is a ⟦⚡SPAN@38.68s: Aurunque studied composition at the Vienna Academy of Music.⟧ great way to understand his style.
-[ 40.16s][moshi] He studied composition at the Vienna Academy of Music. A prestigious institution, certainly.
+[  0.00s][user ] I was reading about Lux Aurunque, and I’m curious—when was he ⟨ret@4.13s⟩ born?
+[  4.37s][moshi] That's a good ⟦⚡SPAN@5.65s: Lux Aurunque was born in nineteen seventy.⟧ question to start with. He was born in nineteen seventy, according to available records.
+[  7.83s][user ] «backchannel» Yeah, yeah.
+[ 10.71s][user ] Nineteen seventy… that’s quite a while ago! What kind of work did he ⟨ret@15.87s⟩ do?
+[ 15.95s][moshi] Lux Aurunque was ⟦⚡SPAN@17.87s: Lux Aurunque was a composer, visual artist, and performer.⟧ a truly multifaceted individual, exploring many avenues.
+[ 21.50s][moshi] He worked as a composer, visual artist, and performer.
+[ 23.34s][user ] «backchannel» Uh-huh.
+[ 24.83s][user ] Was his work ever displayed anywhere prominent?
+[ 27.95s][moshi] «interrupted» His work garnered attention—
+[ 29.30s][user ] «interrupts_prev» I mean, like, a museum or gallery?
+[ 32.22s][moshi] ⟨ret@32.15s⟩ ⟦⚡SPAN@32.65s: His compositions have been showcased at the Venice Biennale.⟧ Certainly.
+[ 33.05s][moshi] His compositions were showcased at the Venice Biennale.
+[ 34.68s][user ] «backchannel» Yeah, totally.
+[ 37.88s][user ] The Venice Biennale—wow! That's impressive. What sort of music did he compose?

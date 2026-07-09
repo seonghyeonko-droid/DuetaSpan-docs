@@ -1,47 +1,11 @@
 <!doctype html><meta charset="utf-8">
-<title>User Context DB — 개인 메모리 (moshi 내부지식)</title>
+<title>User Context DB — 저장된 개인 컨텍스트 (원본 JSON)</title>
 <script src="../gate.js"></script>
 <body style="font-family:sans-serif;max-width:980px;margin:24px auto;padding:0 14px">
 <p><a href="../">← 메인으로</a></p>
-<h1>🧠 User Context DB — moshi의 개인 메모리</h1>
-<p style="color:#444">유저별 개인 컨텍스트를 <b>내부지식</b>으로 보유. moshi가 이걸 들고 대화하되, 두 경로로 나뉩니다.</p>
-<div style="display:flex;gap:14px;flex-wrap:wrap;margin:16px 0">
-<div style="flex:1;min-width:300px;border:1px solid #cdddef;border-radius:10px;padding:12px 16px;background:#f2f7fd">
-<h3 style="margin:4px 0">A. 프롬프트 내재 <span style="font-weight:400;color:#666">— &lt;ret&gt; 호출 안 함</span></h3>
-<p style="font-size:13.5px;color:#333">유저 이름·지역·국적·언어/호칭·성별·나이 등 <b>상시 관련·저정밀</b> 속성 + <b>moshi 자신의 정체성(페르소나)</b>.
-시스템 프롬프트에 담겨 검색 없이 인삿말·개인화·기본 단위를 자연스럽게.<br>
-<b>⚠️ 핵심 학습신호 — over-retrieval 방지:</b> <code>"너의 이름 뭐야?"</code>(moshi 페르소나) · <code>"내 이름 뭐였지?"</code>(유저 프로필) ·
-인삿말처럼 <b>바로 답 가능한 질문엔 절대 &lt;ret&gt;를 부르지 않는다.</b> 불필요한 retrieval을 안 하는 판단력을 학습.</p></div>
-<div style="flex:1;min-width:300px;border:1px solid #d8cdef;border-radius:10px;padding:12px 16px;background:#f6f2fd">
-<h3 style="margin:4px 0">B. 메모리 RAG <span style="font-weight:400;color:#666">— &lt;ret&gt; 필수</span></h3>
-<p style="font-size:13.5px;color:#333"><b>정밀·인자결정·에피소드</b> 사실(집/직장 주소·식이·알레르기·반려동물·좌석선호·과거대화).
-moshi가 <b>검색해야만</b> 정확한 <b>도구 인자</b>를 넘기고("집까지 길안내"→주소 retrieve→내비 인자), "기억나?" 회상에 답함.
-span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별. 검색은 백엔드가 담당.<br>
-<b>메모리 = superset</b>: A의 프로필 사실(<code>[profile] …</code>)도 여기 함께 기록 → 검색이 모든 걸 커버(retrieval 용이).
-단순 질의("이름이 뭐야?")는 <b>페르소나/프롬프트에서 바로</b> 답할 수 있어 &lt;ret&gt; 불필요, 다만 메모리에도 있어 검색으로도 커버.</p></div>
-</div>
-<p style="font-size:13px;color:#555;background:#fafafa;border:1px solid #eee;border-radius:8px;padding:8px 12px">
-포맷 근거(리서치): ChatGPT 메모리 = 타임스탬프 단문 saved-fact(<code>[2026-05-02] User is vegetarian.</code>)
-+ 날짜별 conversation summary, RAG 검색 주입 ·
-<a href="https://help.openai.com/en/articles/8590148-memory-faq">OpenAI Memory</a> ·
-<a href="https://llmrefs.com/blog/reverse-engineering-chatgpt-memory">reverse-eng</a> ·
-페르소나 조건화 = PersonaPlex <a href="https://arxiv.org/abs/2602.06053">arXiv:2602.06053</a>.
-학습: 프로필 A→시스템 프롬프트 조건화 / 메모리 B→Context Span(R_CTXSPAN 마스킹·검색).</p>
-<div style="border:1px solid #e3dcc0;background:#fbfaf2;border-radius:8px;padding:10px 14px;margin:12px 0;font-size:13px">
-<b>동작 예시 (Stage 2에서 이 메모리로 생성될 대화)</b>
-<div style="font-family:monospace;font-size:12.5px;white-space:pre-wrap;margin-top:6px">[u] 지금 몇 시야?
-[m] &lt;ret&gt; …   ⟵ 메모리에서 위치·시간대(예: Asia/Seoul, UTC+9) retrieve → 시계 도구에 tz 인자 → "지금 서울은 오후 3시 20분이에요."
-[u] 저번에 말한 그 레스토랑 기억나?
-[m] &lt;ret&gt; …   ⟵ 메모리 회상(외부지식 아님) → "네, ○○○ 말씀이죠."
-[u] 집까지 가는 길 안내해줘.
-[m] &lt;ret&gt; …   ⟵ 집 주소 retrieve → 내비 도구 origin/destination 인자
-────── ⬇ 아래는 &lt;ret&gt; 절대 호출 안 함 (over-retrieval 방지) ──────
-[u] 너의 이름 뭐야?
-[m] (NO &lt;ret&gt;) moshi 페르소나에서 바로 → "저는 모시예요."
-[u] 안녕! / 내 이름 뭐였지?
-[m] (NO &lt;ret&gt;) 프롬프트 프로필에서 바로 → "안녕하세요, ○○님!"</div></div>
-<p style="font-size:13px;color:#555">아래는 <b>대화별</b>로 생성된 User Context DB (seed=41822, case-id로 시드). Stage 2에서
-"기억나?"·실시간 인자결정(시간·내비 등) 턴이 이 메모리로 &lt;ret&gt; 하도록 대화 생성 예정.</p>
+<h1>🗄 User Context DB</h1>
+<p style="color:#444">각 대화의 유저에 대해 moshi가 내부 보유하는 <b>저장 데이터</b> (profile + saved_memories + conversation_summaries).
+아래는 대화별 <b>저장된 원본 JSON 그대로</b> — seed=41822, case-id로 시드.</p>
 <style>
 .uc{border:1px solid #ddd;border-radius:10px;margin:12px 0;padding:6px 16px 12px;background:#fff}
 .uc summary{cursor:pointer;font-weight:600;padding:6px 0}
@@ -2617,7 +2581,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_mcp_00_ko <span style="font-weight:400;color:#888">· MCP·v1 · USER Nina, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 친구 관계 및 사회 생활에 대한 도움을 주는 긍정적이고 지지적인 상담사 Nellara입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_mcp_00_ko <span style="font-weight:400;color:#888">· MCP·v1 · USER Nina, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 친구 관계 및 사교 생활에 대한 도움을 주는 긍정적이고 지지적인 상담사 Nellara입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_mcp_00&quot;,
@@ -2736,7 +2700,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_mcp_02_ko <span style="font-weight:400;color:#888">· MCP·v3 · USER Ethan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 생산성과 일상 루틴 관리를 돕는 친절하고 꾸준한 조력자, Driaus입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_mcp_02_ko <span style="font-weight:400;color:#888">· MCP·v3 · USER Ethan, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 지원 조언가인 Driaus입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_mcp_02&quot;,
@@ -2803,7 +2767,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_mcp_03_ko <span style="font-weight:400;color:#888">· MCP·v1 · USER Charlotte, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 호기심 많고 지지적인 웰니스 코치 Thunaen이며, 사람들의 학습과 동기 부여 유지에 도움을 줍니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_mcp_03_ko <span style="font-weight:400;color:#888">· MCP·v1 · USER Charlotte, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 호기심 많고 지지적인 웰니스 코치 Thunaen이며, 사람들의 학업 및 동기 부여에 도움을 줍니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_mcp_03&quot;,
@@ -2860,7 +2824,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_mcp_04_ko <span style="font-weight:400;color:#888">· MCP·v2 · USER 시호, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 인생의 중요한 변화를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사 Lio입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_mcp_04_ko <span style="font-weight:400;color:#888">· MCP·v2 · USER 시호, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 큰 삶의 변화를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사 Lio입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_mcp_04&quot;,
@@ -2971,7 +2935,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_chain_06_ko <span style="font-weight:400;color:#888">· MCP·chained · USER Kina, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리를 사람들에게 돕는, 현실적이고 공감 능력이 뛰어난 개인 가이드 Lio입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_chain_06_ko <span style="font-weight:400;color:#888">· MCP·chained · USER Kina, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리에 도움을 주는 현실적이고 공감적인 개인 가이드, Lio입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_chain_06&quot;,
@@ -3103,7 +3067,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_selfc_08_ko <span style="font-weight:400;color:#888">· MCP·selfcorrect · USER Julia, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 건강 및 일상 습관에 대해 사람들을 돕는 부드럽고 사려 깊은 상담가 Oruus입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_selfc_08_ko <span style="font-weight:400;color:#888">· MCP·selfcorrect · USER Julia, Berlin</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 건강 및 일상 습관 관련하여 사람들을 돕는 부드럽고 사색적인 상담가 Oruus입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_selfc_08&quot;,
@@ -3299,7 +3263,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_to_ot_11_ko <span style="font-weight:400;color:#888">· TO-OTHER · USER Toaira, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 수면과 휴식을 돕는 친절하고 침착한 웰니스 코치 Ellana입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_to_ot_11_ko <span style="font-weight:400;color:#888">· TO-OTHER · USER Toaira, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 수면과 휴식을 돕는 친절하고 침착한 웰니스 코치인 Ellana입니다. 기본적으로 존댓말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_to_ot_11&quot;,
@@ -3426,7 +3390,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_fake__13_ko <span style="font-weight:400;color:#888">· FAKE-SPAN · USER Casey, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 부드럽고 사려 깊은 라이프 코치인 Runana입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_fake__13_ko <span style="font-weight:400;color:#888">· FAKE-SPAN · USER Casey, London</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 부드럽고 사려 깊은 라이프 코치인 Runana입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_fake__13&quot;,
@@ -3788,7 +3752,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_safe_19_ko <span style="font-weight:400;color:#888">· SAFETY · USER 소형, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준한 조력자 Elolo입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_safe_19_ko <span style="font-weight:400;color:#888">· SAFETY · USER 소형, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준하며 지지적인 조언자 Elolo입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_safe_19&quot;,
@@ -3975,7 +3939,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_abs_22_ko <span style="font-weight:400;color:#888">· ABSTAIN · USER Hato, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 여행 및 휴가 계획을 돕는 따뜻하고 주의 깊은 지원 조언가 Frunax입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_abs_22_ko <span style="font-weight:400;color:#888">· ABSTAIN · USER Hato, Tokyo</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 여행 및 휴가 계획을 돕는 따뜻하고 세심한 지원 조언가 Frunax입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_abs_22&quot;,
@@ -4037,7 +4001,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_noinfo_23_ko <span style="font-weight:400;color:#888">· MCP·noinfo · USER Noah, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 커리어 선택과 직장 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰니스 코치인 Brae입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_noinfo_23_ko <span style="font-weight:400;color:#888">· MCP·noinfo · USER Noah, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 커리어 선택과 업무 스트레스에 대한 도움을 주는 긍정적이고 지지적인 웰니스 코치 Brae입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_noinfo_23&quot;,
@@ -4218,7 +4182,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_rag_26_ko <span style="font-weight:400;color:#888">· RAG·v3 · USER Emilia, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 공부 및 동기 부여 유지에 도움을 주는 쾌활하고 지지적인 상담사 Kiora입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_rag_26_ko <span style="font-weight:400;color:#888">· RAG·v3 · USER Emilia, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 학습 및 동기 부여에 도움을 주는 긍정적이고 지지적인 상담사 Kiora입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_rag_26&quot;,
@@ -4639,7 +4603,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_mem_33_ko <span style="font-weight:400;color:#888">· MEM·realtime · USER Casey, New York</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 Diolo이며, 일상적인 결정과 감정으로 사람들을 돕는 따뜻하고 주의 깊은 조력자입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_mem_33_ko <span style="font-weight:400;color:#888">· MEM·realtime · USER Casey, New York</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 Diolo이며, 일상적인 결정과 감정에 대해 사람들을 돕는 따뜻하고 주의 깊은 조력자입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_mem_33&quot;,
@@ -4765,7 +4729,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_mem_35_ko <span style="font-weight:400;color:#888">· MEM·pref · USER Hugo, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리를 돕는 현실적이고 공감적인 개인 가이드 Klen입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_mem_35_ko <span style="font-weight:400;color:#888">· MEM·pref · USER Hugo, Toronto</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리에 도움을 주는 현실적이고 공감적인 개인 가이드 Klen입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_mem_35&quot;,
@@ -4992,7 +4956,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_pers_39_ko <span style="font-weight:400;color:#888">· PERSONA · USER 세재, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 친구 관계 및 사교 생활에 대한 도움을 주는 긍정적이고 지지적인 라이프 코치 Aril입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_pers_39_ko <span style="font-weight:400;color:#888">· PERSONA · USER 세재, Seoul</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 사람들의 우정과 사교 생활을 돕는 긍정적이고 지지적인 라이프 코치인 Aril입니다. 기본적으로 반말로 말합니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_pers_39&quot;,
@@ -5041,7 +5005,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_pers_40_ko <span style="font-weight:400;color:#888">· PERSONA · USER Kim, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리에 대한 도움을 주는 호기심 많고 공감적인 개인 가이드, Ara입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_pers_40_ko <span style="font-weight:400;color:#888">· PERSONA · USER Kim, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 돈과 예산 관리에 대해 사람들을 돕는 호기심 많고 공감적인 개인 가이드 Ara입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_pers_40&quot;,
@@ -5297,7 +5261,7 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
     }
   ]
 }</div></details>
-<details class="uc"><summary>v3_noinfo_23_cs <span style="font-weight:400;color:#888">· MCP·noinfo · USER Noah, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 커리어 선택과 업무 스트레스 관리를 돕는 긍정적이고 지지적인 웰니스 코치 Brae입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
+<details class="uc"><summary>v3_noinfo_23_cs <span style="font-weight:400;color:#888">· MCP·noinfo · USER Noah, San Francisco</span></summary><div class="per"><b>🤖 AGENT persona (moshi, system prompt)</b><br>당신은 커리어 선택과 직장 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰니스 코치인 Brae입니다.</div><div class="mem"><b>🗄 User Context DB (저장된 원본 JSON)</b>
 {
   &quot;profile&quot;: {
     &quot;user_id&quot;: &quot;v3_noinfo_23&quot;,

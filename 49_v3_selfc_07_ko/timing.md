@@ -66,57 +66,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 6월 15일에 방문 예약을 잡아줘. | S2 혹시 그 로프트 주변에 괜찮은 카페도 알아봐 줄 수 있어? | S3 오, 괜찮네. 혹시 그 카페에 주차 공간도 있어? | S4 그랜드뷰 로프트 방문 예약 말이야.
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 방문 예약을 잡아줘. 6월 15일로 해줘. | S2 아니, 그곳만 보면 돼. 혹시 그 근처에 맛있는 커피숍 있을까 | S3 더 북 눅… 이름이 예쁘네. 거기는 영업시간이 어떻게 돼? | S4 도보로 갈게.
 
-     0.00s  user  발화 시작: 그랜드뷰 로프트에 6월 15일에 방문 예약을 잡아줘.
-     3.36s  <ret> 발화 (turn1 첫 프레임)
-     3.60s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트 방문 예약, 도와드릴게요. 6월 15일 오후 2시 또는 3시 30분에 그랜드
-     3.74s  user  발화 끝
-     5.12s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.99s]: (tool result) The Grandview Lofts has availability on June 15th at 2:0
-    14.08s  agent 발화 끝
-    15.39s  user  발화 시작: 음… 2시보다는 3시 30분이 더 좋을 것 같아. 근데 잠깐만, 6월 15일이 아니라 6월 16일로 다시 잡
-    22.71s  <ret> 발화 (turn3 첫 프레임)
-    22.98s  user  발화 끝
-    23.01s  agent 발화 시작: <ret> 알겠어요, 6월 16일 오후 3시 30분으로 변경할게요.
-    24.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) The Grandview Lofts has availability on June 16th at 3:3
-    26.81s  agent 발화 시작: 네, 6월 16일 오후 3시 30분에 그랜드뷰 로프트 방문이 확정되었어요. 확인 번호는 GH7892입니다.
-    26.99s  agent 발화 끝
-    32.35s  user  발화 시작: 예.
-    32.71s  user  발화 끝
-    35.03s  user  발화 시작: 혹시 그 로프트 주변에 괜찮은 카페도 알아봐 줄 수 있어?
-    35.20s  agent 발화 끝
-    38.54s  <ret> 발화 (turn7 첫 프레임)
-    38.77s  agent 발화 시작: <ret> 물론이죠. 주변 카페를 검색해 드릴게요.
-    38.87s  user  발화 끝
-    39.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.01s]: (tool result) Three cafes are near The Grandview Lofts: Bean Scene (4.
-    41.69s  agent 발화 시작: 그랜드뷰 로프트 근처에 빈 씬, 커피 코너, 아로마 카페가 있어요. 빈 씬이 평점이 가장 높네요.
-    41.78s  agent 발화 끝
-    45.93s  user  발화 시작: 그렇죠.
-    46.52s  user  발화 끝
-    49.42s  agent 발화 끝
-    49.80s  user  발화 시작: 빈 씬은 영업시간이 어떻게 돼?
-    51.97s  <ret> 발화 (turn11 첫 프레임)
-    52.04s  agent 발화 시작: <ret> 잠시만요, 빈 씬 영업시간을 확인해 볼게요.
-    52.24s  user  발화 끝
-    53.41s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.19s]: (tool result) Bean Scene is open from 7:00 AM to 7:00 PM daily.
-    55.05s  agent 발화 시작: 빈 씬은 매일 아침 7시부터 저녁 7시까지 영업해요.
-    55.23s  agent 발화 끝
-    59.12s  agent 발화 끝
-    59.60s  user  발화 시작: 오, 괜찮네. 혹시 그 카페에 주차 공간도 있어?
-    62.95s  <ret> 발화 (turn14 첫 프레임)
-    63.18s  agent 발화 시작: <ret> 빈 씬에 주차 공간이 있는지 알아봐 드릴게요.
-    63.26s  user  발화 끝
-    64.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: (tool result) Bean Scene offers limited street parking. A paid parking
-    66.24s  agent 발화 시작: 빈 씬은 길가 주차가 제한적이고, 한 블록 거리에 유료 주차장이 있어요.
-    66.42s  agent 발화 끝
-    71.29s  user  발화 시작: 그렇군요. 예약 잡아줘.
-    71.52s  agent 발화 끝
-    73.13s  user  발화 끝
-    73.63s  agent 발화 시작: 어떤 예약을 도와드릴까요?
-    75.50s  user  발화 시작: 그랜드뷰 로프트 방문 예약 말이야.
-    75.61s  agent 발화 끝
-    77.95s  agent 발화 시작: [interrupting] 아, 그랜드뷰 로프트 방문 예약 확인 말씀하시는 거죠?
-    78.03s  user  발화 끝
-    82.68s  agent 발화 시작: 네, 6월 16일 오후 3시 30분으로 예약이 확정되었어요. 혹시 다른 도움이 필요하신가요?
-    82.90s  agent 발화 끝
-    89.91s  agent 발화 끝
+     0.00s  user  발화 시작: 그랜드뷰 로프트에 방문 예약을 잡아줘. 6월 15일로 해줘.
+     4.06s  <ret> 발화 (turn1 첫 프레임)
+     4.30s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트 방문 예약 도와드릴게요. 6월 15일 오후 2시, 3시 30분, 5시에 예약
+     4.34s  user  발화 끝
+     5.82s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.72s]: (tool result) The Grandview Lofts is available on June 15th at 2:00 PM
+    12.93s  agent 발화 끝
+    14.20s  user  발화 시작: 음… 3시 30분으로 할게. 근데 잠깐만, 3시로 할까— 3시 30분으로 하자.
+    18.74s  <ret> 발화 (turn3 첫 프레임)
+    19.05s  agent 발화 시작: <ret> 3시 30분으로 변경하셨네요. 김민지 님, 6월 15일 오후 3시 30분으로 그랜드뷰 로프트 방문
+    19.20s  user  발화 끝
+    19.54s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.82s]: (tool result) Your visit to The Grandview Lofts is confirmed for June 
+    25.09s  user  발화 시작: 예.
+    25.53s  user  발화 끝
+    27.98s  agent 발화 시작: 예약 확인 문자를 보내드릴게요. 혹시 다른 로프트도 둘러보고 싶으신가요?
+    28.14s  agent 발화 끝
+    30.68s  user  발화 시작: 그렇죠.
+    31.17s  user  발화 끝
+    32.95s  user  발화 시작: 아니, 그곳만 보면 돼. 혹시 그 근처에 맛있는 커피숍 있을까?
+    33.11s  agent 발화 끝
+    37.70s  agent 발화 시작: 그 근처에 괜찮은 커피숍들이 꽤 있어요. 어떤 스타일을 좋아하세요? 조용하고 분위기 있는 곳, 아니면 활기찬
+    37.86s  user  발화 끝
+    45.34s  agent 발화 끝
+    45.34s  user  발화 시작: 음… 조용하고 분위기 있는 곳이 좋겠어. 혼자 가서 책 읽을 수 있는 곳.
+    50.04s  <ret> 발화 (turn10 첫 프레임)
+    50.19s  agent 발화 시작: <ret> 조용하고 분위기 있는 커피숍을 찾으시는군요. 그랜드뷰 로프트에서 0.5마일 거리에 “더 북 눅”이
+    50.34s  user  발화 끝
+    51.80s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.95s]: (tool result) “The Book Nook” is a quiet coffee shop 0.5 miles from Th
+    61.81s  user  발화 시작: 더 북 눅… 이름이 예쁘네. 거기는 영업시간이 어떻게 돼?
+    61.97s  agent 발화 끝
+    65.89s  <ret> 발화 (turn12 첫 프레임)
+    65.97s  agent 발화 시작: <ret> “더 북 눅” 영업시간을 알아볼게요. “더 북 눅”은 매일 아침 8시부터 저녁 8시까지 영업합니다
+    66.06s  user  발화 끝
+    66.85s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.45s]: (tool result) The Book Nook is open from 8:00 AM to 8:00 PM, seven day
+    72.83s  agent 발화 끝
+    72.89s  user  발화 시작: 오, 늦게까지 하네. 그럼 그쪽으로 가는 길은 어떻게 돼?
+    76.13s  user  발화 끝
+    76.51s  agent 발화 시작: 그쪽으로 가는 길을 안내해 드릴게요. 도보로 가시겠어요, 아니면 대중교통을 이용하시겠어요?
+    80.20s  user  발화 시작: 네네.
+    80.69s  user  발화 끝
+    82.81s  user  발화 시작: 도보로 갈게.
+    82.85s  agent 발화 끝
+    83.38s  <ret> 발화 (turn17 첫 프레임)
+    83.69s  agent 발화 시작: <ret> 도보 경로를 안내해 드릴게요. 엘름 거리를 남쪽으로 0.5마일 걸어가세요. 오크 애비뉴에서 좌회전
+    83.91s  user  발화 끝
+    84.34s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.38s]: (tool result) Walk 0.5 miles south on Elm Street, then turn left on Oa
+    88.46s  user  발화 시작: 어머.
+    88.91s  user  발화 끝
+    95.61s  agent 발화 끝
+    96.48s  user  발화 시작: 정말 고마워요, 텔러. 덕분에 계획이 잘 세워지는 것 같아.
+   100.80s  agent 발화 시작: 도움이 되어서 정말 기쁩니다. 언제든지 필요하시면 말씀해주세요.
+   100.83s  user  발화 끝
+   105.14s  agent 발화 끝

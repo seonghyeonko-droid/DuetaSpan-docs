@@ -58,25 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 | S2 와, 진짜요? 저는 항상 다른 사람이라고 생각했었는데. 정말  | S3 저기, 혹시 쓰레기 버리셨어요? | S4 죄송해요. 그 노래를 위해 특별히 섭외한 건가요, 아니면 그냥
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨 “Beat It” 기타 솔로를 누가  | S2 저기요, 혹시 냉동실에서 닭고기 꺼내 놓으셨어요? | S3 죄송해요. 그럼, 반 헤일런은 그냥… 하기로 동의한 건가요?  | S4 정말 멋지네요. 퀸시 존스는 분명 뭘 하고 싶은지 알고 있었던
 
-     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했거든요. 정말 명곡이잖아요.
-     6.29s  <ret> 발화 (turn1 첫 프레임)
-     6.29s  user  발화 끝
-     6.61s  agent 발화 시작: <ret> 네, 좋은 질문이세요. 아주 유명한 솔로죠. 에디 반 헤일런이 그 상징적인 기타 솔로를 연주한 것
-     8.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-     9.67s  user  발화 시작: 예.
-     9.98s  user  발화 끝
-    14.33s  user  발화 시작: 와, 진짜요? 저는 항상 다른 사람이라고 생각했었는데. 정말 대단하네요.
-    14.40s  agent 발화 끝
-    19.02s  agent 발화 시작: 정말 놀라운 연주 실력이고, 당시로서는 꽤 뜻밖의 협업이었답니다.
-    19.14s  user  발화 끝
-    23.56s  agent 발화 끝
-    23.82s  user  발화 시작: 저기, 혹시 쓰레기 버리셨어요?
-    25.91s  user  발화 시작: 죄송해요. 그 노래를 위해 특별히 섭외한 건가요, 아니면 그냥 우연히 된 건가요?
-    26.12s  user  발화 끝
-    30.20s  <ret> 발화 (turn7 첫 프레임)
-    30.60s  agent 발화 시작: <ret> 마이클 잭슨이 직접 그를 찾았어요. 잭슨이 반 헤일런에게 그 곡에 참여해 달라고 개인적으로 요청했
-    30.77s  user  발화 끝
-    31.64s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.84s]: Michael Jackson personally requested Eddie Van Halen to play on “Beat 
-    37.23s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨 “Beat It” 기타 솔로를 누가 연주했는지 궁금했는데, 다른 곡들하고는 좀 다른
+     8.12s  <ret> 발화 (turn1 첫 프레임)
+     8.15s  user  발화 끝
+     8.44s  agent 발화 시작: <ret> 네, 정말 유명한 사운드에 대한 좋은 질문이세요. “Beat It” 기타 솔로는 에디 반 헤일런이
+    10.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+    11.15s  user  발화 시작: 예.
+    11.50s  user  발화 끝
+    15.32s  user  발화 시작: 와, 에디 반 헤일런이요? 좀… 뜻밖인데요. 잭슨 밴드에 있는 사람이 연주했을 거라고 생각했어요.
+    15.39s  agent 발화 끝
+    21.94s  user  발화 시작: 저기요, 혹시 냉동실에서 닭고기 꺼내 놓으셨어요?
+    22.04s  user  발화 끝
+    25.46s  user  발화 시작: 죄송해요. 그럼, 반 헤일런은 그냥… 하기로 동의한 건가요? 마이클과 친구였나요?
+    25.49s  user  발화 끝
+    31.66s  <ret> 발화 (turn6 첫 프레임)
+    32.06s  agent 발화 시작: <ret> 음, 퀸시 존스의 비전에 의한 협업이었던 것 같아요. 그는 반 헤일런의 연주를 존경했고 그 에너지
+    32.22s  user  발화 끝
+    33.34s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.06s]: Quincy Jones requested Eddie Van Halen play on “Beat It” despite recor
+    40.09s  agent 발화 시작: 퀸시 존스가 에디 반 헤일런에게 “Beat It”에 참여해 달라고 요청했는데, 레코드 회사는 약간 망설였다고
+    40.12s  agent 발화 끝
+    46.53s  user  발화 시작: 정말 멋지네요. 퀸시 존스는 분명 뭘 하고 싶은지 알고 있었던 것 같아요. 감사합니다, 잘.
+    46.58s  agent 발화 끝
+    52.88s  user  발화 끝

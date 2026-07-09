@@ -76,24 +76,32 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Oh, great! Can you send “Paris_Eif | S3 Perfect, thank you! Uh, I was also | S4 Okay, thanks. I— I mean, anytime n
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.88s  <ret> 발화 (turn1 첫 프레임)
-     4.95s  agent 발화 시작: <ret> I found three photos from your France trip last year: 
-     5.13s  user  발화 끝
-     6.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.35s]: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Nice_
-     8.19s  user  발화 시작: Mhm.
-     8.68s  user  발화 끝
-    10.30s  agent 발화 끝
-    10.95s  user  발화 시작: Oh, perfect! Can you send "Paris_Eiffel_Tower.jpg" to my sis
-    16.01s  <ret> 발화 (turn4 첫 프레임)
-    16.32s  agent 발화 시작: <ret> Great! That picture has been sent to Sarah.
-    16.50s  user  발화 끝
-    16.97s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.45s]: (tool result) The file "Paris_Eiffel_Tower.jpg" was successfully sent 
-    17.75s  user  발화 시작: Yeah.
-    18.20s  user  발화 끝
-    18.77s  agent 발화 끝
-    19.26s  user  발화 시작: That's wonderful, thank you. Uh, do you think she'll like it
-    22.03s  agent 발화 시작: [laugh] I'm sure she will! Sharing memories is a lovely way 
-    22.04s  user  발화 끝
-    30.04s  agent 발화 끝
+     4.74s  <ret> 발화 (turn1 첫 프레임)
+     4.76s  agent 발화 시작: <ret> I found three pictures from your France trip last year
+     5.00s  user  발화 끝
+     6.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Nice_
+     8.14s  user  발화 시작: Mhm.
+     8.73s  user  발화 끝
+    10.33s  agent 발화 끝
+    10.98s  user  발화 시작: Oh, great! Can you send “Paris_Eiffel_Tower.jpg” to my siste
+    18.04s  <ret> 발화 (turn4 첫 프레임)
+    18.16s  agent 발화 시작: <ret> I’ve just emailed the Eiffel Tower picture to Anna at 
+    18.35s  user  발화 끝
+    20.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Email sent to anna@example.com with the attachment "Pari
+    20.48s  user  발화 시작: Really?
+    20.97s  user  발화 끝
+    25.11s  agent 발화 끝
+    25.63s  user  발화 시작: Perfect, thank you! Uh, I was also wondering about flights t
+    30.02s  agent 발화 시작: Let me check on flight availability to Italy for you. Give m
+    30.12s  user  발화 끝
+    32.38s  user  발화 시작: Mhm.
+    32.86s  user  발화 끝
+    34.04s  user  발화 시작: Okay, thanks. I— I mean, anytime next month would work.
+    34.19s  agent 발화 끝
+    36.52s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Flights to Rome next month range from $650 to $980, with
+    37.29s  agent 발화 시작: <ret> Regarding flights to Italy, I have some options. Fligh
+    37.47s  user  발화 끝
+    42.62s  agent 발화 끝

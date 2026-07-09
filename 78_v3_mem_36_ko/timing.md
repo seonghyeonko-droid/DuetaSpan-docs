@@ -64,25 +64,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: 사히하 씨, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 관련 상담을 도와드리는 분이에요.
-     3.45s  user  발화 시작: 그래.
-     4.09s  user  발화 끝
-     7.09s  user  발화 시작: 음… 스위스 여행 계획 세우고 있는데, 혹시 제가 언제 가기로 했었죠? 갑자기 기억이 안 나네요.
-     7.13s  agent 발화 끝
-    12.92s  <ret> 발화 (turn3 첫 프레임)
-    13.07s  agent 발화 시작: <ret> 스위스 여행 말씀이시군요. 내년 삼 월에 스위스 여행을 계획하고 계셨어요.
-    13.20s  user  발화 끝
-    13.64s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.68s]: [2026-07-14] User is planning a trip to Switzerland in March.
-    18.58s  user  발화 시작: 아, 맞다! 삼 월이었지. 근데 제가 또 뭘 부탁드렸었는지… 기억이 잘 안 나요.
-    18.67s  agent 발화 끝
-    24.76s  agent 발화 시작: 혹시 전에 다른 예약이나 문의를 하셨던 게 있으셨나요? 제가 찾아볼게요.
-    24.88s  user  발화 끝
-    27.65s  user  발화 시작: 응.
-    28.14s  user  발화 끝
-    29.90s  agent 발화 끝
-    30.59s  user  발화 시작: 음… 자동차 알아보고 있었던 것 같아요. 중고차요.
-    33.84s  <ret> 발화 (turn8 첫 프레임)
-    34.23s  agent 발화 시작: <ret> 중고차 알아보시는 거였군요. 하이브리드 모델을 비교하고 계셨고, 주행 거리가 삼 만 마일 미만인 
-    34.34s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.57s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
-    34.37s  user  발화 끝
-    42.07s  agent 발화 끝
+     0.00s  agent 발화 시작: [happy] 사히하님, 안녕하세요. 저는 리라예요. 돈 관리와 예산 짜는 걸 도와드리는 상담사입니다.
+     7.32s  agent 발화 끝
+     7.94s  user  발화 시작: 리라 씨, 지난번에 차 알아보는 얘기 했었죠? 그 얘기 좀 더 해볼까요?
+    12.59s  <ret> 발화 (turn2 첫 프레임)
+    12.74s  agent 발화 시작: <ret> 네, 기억하고 있어요. 하이브리드 모델을 찾고 계시고, 주행 거리는 삼만 마일 이하를 원하셨죠.
+    12.95s  user  발화 끝
+    13.31s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.60s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
+    19.65s  user  발화 시작: 맞아요. 혹시 지금 시세가 어때요? 좋은 매물이 있으면 알려주세요.
+    19.69s  agent 발화 끝
+    24.30s  <ret> 발화 (turn4 첫 프레임)
+    24.45s  agent 발화 시작: <ret> 토요타 프리우스 이천이십년식이 주행 거리가 이만 오천 마일이고, 가격은 이천이백만 원이에요. 혼다
+    24.64s  user  발화 끝
+    26.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.19s]: (tool result) Toyota Prius 2020, 25000 miles, $22000. Honda Insight 20
+    33.36s  user  발화 시작: 응.
+    33.85s  user  발화 끝
+    38.64s  agent 발화 끝

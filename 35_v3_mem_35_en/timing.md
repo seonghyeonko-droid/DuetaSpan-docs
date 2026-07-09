@@ -60,36 +60,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Yeah, I am! I’m thinking New Zeala | S2 That sounds great! I was wondering | S3 Wait, is that price in Canadian or | S4 Oh, okay, good to know. And what a
 
-     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. It’s good to connect with you – I’m here 
-     8.21s  agent 발화 끝
-     8.78s  user  발화 시작: I’m planning a trip to New Zealand in October, and I was hop
-    13.70s  <ret> 발화 (turn2 첫 프레임)
-    14.10s  agent 발화 시작: <ret> October is a lovely time to visit! You’re planning a t
-    14.25s  user  발화 끝
-    14.74s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.23s]: [2026-05-27] User is planning a trip to New Zealand in October.
-    17.13s  user  발화 시작: Mm-hmm.
-    17.86s  user  발화 끝
-    23.10s  user  발화 시작: Not really, but I always prefer an aisle seat if possible.
-    23.32s  agent 발화 끝
-    26.33s  user  발화 끝
-    26.37s  agent 발화 시작: That’s a good preference to have—
-    28.38s  <ret> 발화 (turn6 첫 프레임)
-    28.54s  agent 발화 시작: <ret> You prefer an aisle seat when traveling, which I'll ke
-    28.63s  agent 발화 끝
-    30.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: [2026-07-11] User prefers an aisle seat when traveling.
-    30.97s  user  발화 시작: Okay.
-    31.47s  user  발화 끝
-    33.45s  user  발화 시작: Actually, before we look at flights, what’s the time differe
-    33.59s  agent 발화 끝
-    38.14s  <ret> 발화 (turn9 첫 프레임)
-    38.38s  agent 발화 시작: <ret> That’s a very practical question to ask first.
-    38.45s  user  발화 끝
-    39.10s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.96s]: (tool result) Toronto is in the EDT timezone (UTC-4) · New Zealand is 
-    41.18s  agent 발화 시작: Toronto is seventeen hours behind New Zealand. So, when it's
-    41.34s  agent 발화 끝
-    44.63s  user  발화 시작: Mhm.
-    45.13s  user  발화 끝
-    47.94s  agent 발화 끝
-    48.01s  agent 발화 시작: We can proceed with flight options, keeping your aisle seat 
-    55.98s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. It’s good to connect with you. I understa
+     7.00s  agent 발화 끝
+     7.54s  user  발화 시작: Yeah, I am! I’m thinking New Zealand in October, actually. A
+    12.41s  <ret> 발화 (turn2 첫 프레임)
+    12.81s  agent 발화 시작: <ret> You’re going to New Zealand in October— That’s a fanta
+    13.00s  user  발화 끝
+    13.77s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.92s]: [2026-05-27] User is planning a trip to New Zealand in October.
+    21.58s  agent 발화 끝
+    21.86s  user  발화 시작: That sounds great! I was wondering about flights, though. Wh
+    27.09s  <ret> 발화 (turn4 첫 프레임)
+    27.15s  agent 발화 시작: <ret> Finding good flight deals takes a little patience, but
+    27.31s  user  발화 끝
+    29.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) Flights to Auckland, New Zealand on October 12th: $1850 
+    32.90s  agent 발화 시작: Air Canada has a flight for one thousand eight hundred and f
+    32.99s  agent 발화 끝
+    38.19s  user  발화 시작: Wait, is that price in Canadian or US dollars?
+    38.22s  agent 발화 끝
+    41.47s  user  발화 끝
+    41.89s  agent 발화 시작: That price is in Canadian dollars, Hugo. It includes all tax
+    47.67s  user  발화 시작: Oh, okay, good to know. And what about getting around once I
+    48.52s  agent 발화 끝
+    52.30s  user  발화 끝

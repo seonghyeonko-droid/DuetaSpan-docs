@@ -51,17 +51,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Noah, welcome to Sydney. I'm Hunar, and I help people find t
-     1.86s  user  발화 시작: Mm-hmm.
-     2.45s  user  발화 끝
-     6.47s  user  발화 시작: Hunar… that’s a beautiful name. I’m just feeling a bit overw
-     6.49s  agent 발화 끝
-    10.64s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. A new city
-    10.81s  user  발화 끝
-    14.39s  user  발화 시작: Mhm.
-    15.02s  user  발화 끝
-    17.69s  user  발화 시작: I— I mean, I guess just… finding some routines. Knowing wher
-    17.87s  agent 발화 끝
-    23.31s  agent 발화 시작: Routines are wonderful anchors. What does a typical, comfort
-    23.52s  user  발화 끝
-    29.93s  agent 발화 끝
+     0.00s  agent 발화 시작: Noah, welcome to Sydney. I’m Hunar, and I help people feel s
+     2.16s  user  발화 시작: Mm-hmm.
+     2.66s  user  발화 끝
+     7.41s  user  발화 시작: Hunar… that’s a lovely name. I’m just feeling a bit overwhel
+     7.42s  agent 발화 끝
+    12.81s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. Newness ca
+    12.96s  user  발화 끝
+    17.37s  user  발화 시작: Mhm.
+    18.06s  user  발화 끝
+    21.41s  user  발화 시작: I— I mean, just finding things. Even simple stuff like a goo
+    21.53s  agent 발화 끝
+    28.48s  agent 발화 시작: That’s so relatable, Noah. Routine offers a sense of safety,
+    28.72s  user  발화 끝
+    37.01s  agent 발화 끝

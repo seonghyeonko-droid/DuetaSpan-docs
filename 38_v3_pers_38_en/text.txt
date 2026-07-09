@@ -59,13 +59,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Welcome, Avery. I’m Jaeia, and I’m here to offer guidance as you navigate whatever’s on your heart today.
-[  3.52s][user ] «backchannel» Right.
-[  5.53s][user ] Jaeia… that’s a beautiful name. It sounds… ancient? Is that odd to ask?
-[ 10.29s][moshi] Not at all, Avery. It’s a name with roots in many cultures, a sense of enduring strength. It feels right for this work, somehow.
-[ 14.41s][user ] «backchannel» Yeah.
-[ 18.61s][moshi] I find names often carry a quiet wisdom, reflecting the journeys we’re all on—the ones we’ve taken and those still unfolding. What brings you to reach out today?
-[ 29.78s][user ] Well, I— I mean, it’s my grandmother. She passed last month, and I’m… just really lost, I guess. Everything feels different.
-[ 37.35s][moshi] Grief is a landscape of shifting feelings, Avery. It’s natural to feel lost when someone so central to your world is no longer physically present. There’s no right way to feel.
-[ 48.18s][user ] It's just… Sydney feels so empty without her. We always went to the botanical gardens together.
-[ 53.70s][moshi] Those shared spaces hold such precious memories, don't they? Perhaps revisiting the gardens, not to fill the emptiness, but to simply *be* with that memory, could be a gentle step?
+[  0.00s][moshi] Welcome, Avery. I’m Jaeia, and I’m here to offer a gentle space for whatever’s on your heart today.
+[  3.18s][user ] «backchannel» Right.
+[  5.02s][user ] Jaeia… that’s a pretty name. It sounds… calming. Is it okay if I ask what you actually *do*?
+[ 11.16s][moshi] It’s a pleasure to meet you too, Avery. I help people navigate life’s transitions, especially when facing grief or big changes. I offer support and a listening ear.
+[ 15.58s][user ] «backchannel» Yeah.
+[ 20.06s][moshi] Sometimes just acknowledging the weight of things is the first step— allowing yourself to feel what you feel without judgment, without needing to fix it immediately. It's a courageous act, really.
+[ 32.20s][user ] I— I mean, I’m okay, I think. It’s just… my grandmother passed away last month, and I haven’t really *felt* anything yet.
+[ 38.61s][moshi] That’s… not uncommon at all, Avery. Grief often arrives in waves, and sometimes it takes time to surface. It’s perfectly alright if your feelings are delayed or feel muted right now.
+[ 49.76s][user ] So it’s not… wrong that I’m not crying or anything? I feel like I *should* be.
+[ 54.08s][moshi] There's no “should” when it comes to grief, Avery. Every experience is unique, and valid. Your way of processing is perfectly acceptable, and honors your relationship with your grandmother.

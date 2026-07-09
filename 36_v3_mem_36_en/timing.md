@@ -64,21 +64,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I’m Lira. It’s good to connect with you. Is there
-     5.33s  agent 발화 끝
-     5.53s  user  발화 시작: Oh, um, yes. I was wondering if you remembered what I was lo
-     9.75s  <ret> 발화 (turn2 첫 프레임)
-     9.98s  agent 발화 시작: <ret> Certainly, recalling past conversations is helpful. Yo
-    10.12s  user  발화 끝
-    11.27s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.63s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
-    15.12s  user  발화 시작: Yeah.
-    15.61s  user  발화 끝
-    18.32s  agent 발화 끝
-    20.02s  user  발화 시작: Right, and I'm still thinking about it, but I’m not sure abo
-    23.39s  user  발화 끝
-    23.39s  agent 발화 시작: Maintenance can definitely be a worry with a used car. It’s 
-    31.45s  user  발화 시작: So, what kind of hybrids generally have the lowest maintenan
-    32.01s  agent 발화 끝
-    34.64s  agent 발화 시작: Toyota hybrids consistently rank well for reliability and th
-    34.82s  user  발화 끝
-    41.49s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you today. Is
+     2.66s  user  발화 시작: Uh-huh.
+     3.30s  user  발화 끝
+     5.55s  user  발화 시작: I’m starting to think about travel again… I was looking at S
+     5.56s  agent 발화 끝
+     9.70s  <ret> 발화 (turn3 첫 프레임)
+     9.93s  agent 발화 시작: <ret> Switzerland is a wonderful choice. You mentioned plann
+    10.03s  user  발화 끝
+    11.29s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.79s]: [2026-07-14] User is planning a trip to Switzerland in March.
+    17.81s  agent 발화 끝
+    19.04s  user  발화 시작: Yes, I am! But I'm trying to remember what I was hoping to d
+    24.76s  agent 발화 시작: Ah, mountains are certainly a highlight of Switzerland. Do y
+    24.87s  user  발화 끝
+    33.43s  agent 발화 끝

@@ -66,61 +66,51 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Can you give me the coordinates for the Eiffel Tower in Paris?
-      Hmm, and how about the Statue of Liberty?
-      That’s good to know. I’m planning a trip—
-      Do you think it’s better to visit in the spring or fall?
-  S2  Fall sounds nice. I’m hoping to meet new people.
-      I’m thinking of joining some walking tours.
-      Right. I'm a little anxious though, about making conversation.
-      It’s just… I’m not very good at small talk.
-  S3  That’s a good point. What if they don’t seem interested?
-      Easier said than done, I guess.
-      I suppose so. Are there any apps that help with this?
-      Bumble BFF? I’ve heard of Bumble, but not that.
-  S4  Oh, interesting. Is it popular?
-      Wow, that *is* popular. Okay, that sounds promising.
-      Yeah, maybe. I’m also worried about feeling lonely.
-      I just want to have a really good trip.
+      That’s great, thanks. I’m planning a trip there next month.
+      I was thinking of staying near the Louvre. Is that a good area?
+  S2  Could you find some hotels near the Louvre, maybe four-star ones?
+      Hmm, 310 is a bit high. Are there any others around that price?
+      That’s better, yeah.
+  S3  Do they have parking?
+      That’s good to know. Okay, I think I’ll book a room there for five nig
+      Perfect. And could you find me a good bistro nearby for dinner?
+  S4  That sounds lovely! I'm getting excited about the trip now.
+      Do you think I should learn a few French phrases?
+      Maybe just "hello," "thank you," and "excuse me"?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.45s⟩ Paris?
-[  3.68s][moshi] ⟦⚡SPAN@4.73s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ Certainly! The Eiffel Tower’s coordinates are 48.8584 degrees North, 2.2945 degrees East.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.21s⟩ Paris?
+[  3.44s][moshi] ⟦⚡SPAN@4.49s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ Certainly! The Eiffel Tower’s coordinates are latitude 48.8584 and longitude 2.2945.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 12.73s][user ] Hmm, and how about the Statue ⟨ret@15.12s⟩ of Liberty?
-[ 15.48s][moshi] The Statue ⟦⚡SPAN@17.12s: (tool result) The Statue of Liberty is located at 40.6892° N, 74.0445° W.⟧ of Liberty is at 40.6892 degrees North, 74.0445 degrees West.
-      CALL: {"function": "maps_geo", "arguments": {"location": "Statue of Liberty, New York City"}}
-[ 21.37s][user ] «backchannel» Right.
-[ 23.84s][user ] That’s good to know. I’m planning a trip—
-[ 26.78s][moshi] «interrupted» Planning a trip is always exciting—
-[ 28.52s][user ] «interrupts_prev» Do you think it’s better to visit in the spring or fall?
-[ 31.76s][moshi] Spring and fall offer milder weather, avoiding summer crowds and winter chills.
-[ 37.66s][user ] Fall sounds nice. I’m hoping to meet new people.
-[ 41.42s][moshi] Meeting new people can really enrich a travel experience, absolutely. What sort of activities are you planning?
-[ 43.75s][user ] «backchannel» Okay.
-[ 48.37s][user ] I’m thinking of joining some walking tours.
-[ 51.13s][moshi] Walking tours are a fantastic way to explore and connect with others! They offer a shared experience.
-[ 61.14s][user ] Right. I'm a little anxious though, about making conversation.
-[ 65.45s][moshi] It’s perfectly normal to feel anxious about starting conversations, especially when traveling.
-[ 71.21s][user ] It’s just… I’m not very good at small talk.
-[ 74.22s][moshi] Many people find small talk challenging. It’s often about finding common ground, isn’t it?
-[ 76.26s][user ] «backchannel» Yeah.
-[ 79.61s][moshi] You could start by commenting on something you both are experiencing—the tour itself, the weather, or a landmark. It’s a simple way in.
-[ 90.06s][user ] That’s a good point. What if they don’t seem interested?
-[ 93.65s][moshi] Not everyone will be receptive, and that’s okay! Don’t take it personally; move on and find someone else.
-[101.80s][user ] Easier said than done, I guess.
-[103.97s][moshi] It takes practice, but you’ll find your rhythm. Remember, most people enjoy a friendly interaction.
-[110.92s][user ] I suppose so. Are there any apps that help ⟨ret@114.31s⟩ with this?
-[114.70s][moshi] There are ⟦⚡SPAN@116.31s: (tool result) Meetup has 1.2 million users. Bumble BFF focuses on friendship. Internations is for expats.⟧ several! Meetup has 1.2 million users, Bumble BFF focuses on friendships, and Internations is for expats.
-      CALL: {"function": "search", "arguments": {"query": "apps to meet people while traveling"}}
-[124.30s][user ] Bumble BFF? I’ve heard of Bumble, but not that.
-[128.07s][moshi] It’s Bumble’s platform specifically for finding friends, rather than romantic connections.
-[134.11s][user ] Oh, interesting. Is it ⟨ret@136.11s⟩ popular?
-[136.35s][moshi] Bumble BFF has ⟦⚡SPAN@138.11s: (tool result) Bumble BFF has over 15 million users and is growing 30% year-over-year.⟧ over fifteen million users and is growing at thirty percent each year.
-      CALL: {"function": "search", "arguments": {"query": "Bumble BFF popularity"}}
-[142.55s][user ] Wow, that *is* popular. Okay, that sounds promising.
-[147.14s][moshi] It certainly seems to be gaining traction! A good way to expand your circle, perhaps?
-[151.60s][user ] «backchannel» Mm-hmm.
-[153.70s][user ] Yeah, maybe. I’m also worried about feeling lonely.
-[157.66s][moshi] Feeling lonely is common, especially when you're away from your usual support system.
-[164.50s][user ] I just want to have a really good trip.
-[166.94s][moshi] And you deserve to have a wonderful trip. Focusing on connection and openness will help.
+[ 10.16s][user ] «backchannel» Right.
+[ 13.16s][user ] That’s great, thanks. I’m planning a trip there next month.
+[ 17.10s][moshi] That sounds lovely! Paris is wonderful in any season, but planning ahead is always a good idea.
+[ 24.54s][user ] I was thinking of staying near the Louvre. Is that a good area?
+[ 28.81s][moshi] Absolutely. The Louvre area is quite central and offers easy access to many attractions. It’s a popular choice.
+[ 31.51s][user ] «backchannel» Okay.
+[ 37.26s][user ] Could you find some hotels near the Louvre, maybe four-star ones?
+[ 41.53s][moshi] ⟨ret@41.23s⟩ Certainly. Hotel Saint-Roch ⟦⚡SPAN@43.23s: (tool result) Hotel Saint-Roch offers rooms for 250 euros per night. Hotel Brighton has availability for 310 e⟧ is available for 250 euros a night, and Hotel Brighton for 310.
+      CALL: {"function": "hotels_search", "arguments": {"location": "near Louvre, Paris", "stars": "4"}}
+[ 49.77s][user ] Hmm, 310 is a bit high. Are there any others around that price?
+[ 54.90s][moshi] ⟨ret@54.59s⟩ Hotel Regina Louvre ⟦⚡SPAN@56.59s: (tool result) Hotel Regina Louvre offers rooms for 265 euros per night.⟧ has rooms available for 265 euros a night. Does that sound more suitable?
+      CALL: {"function": "hotels_search", "arguments": {"location": "near Louvre, Paris", "stars": "4", "max_price": "275"}}
+[ 63.68s][user ] That’s better, yeah.
+[ 65.10s][moshi] «interrupted» It’s important to find a place where you feel comfortable and—
+[ 67.94s][user ] «interrupts_prev» Do they have parking?
+[ 69.30s][moshi] ⟨ret@69.22s⟩ Ah, a practical ⟦⚡SPAN@71.22s: (tool result) Hotel Regina Louvre provides valet parking for 35 euros per day.⟧ consideration! Let me check if Hotel Regina Louvre offers parking facilities.
+      CALL: {"function": "hotels_details", "arguments": {"hotel_name": "Hotel Regina Louvre", "feature": "parking"}}
+[ 76.82s][moshi] Yes, Hotel Regina Louvre offers valet parking for 35 euros daily.
+[ 81.04s][user ] «backchannel» Oh.
+[ 82.80s][moshi] It’s wise to confirm parking options, especially in a city like Paris. It can save you a lot of stress.
+[ 90.82s][user ] That’s good to know. Okay, I think I’ll book a room there for five nights.
+[ 95.70s][moshi] ⟨ret@95.54s⟩ Wonderful! Your ⟦⚡SPAN@97.54s: (tool result) Reservation confirmed at Hotel Regina Louvre for five nights, total cost 1325 euros. Confirmatio⟧ reservation at Hotel Regina Louvre is confirmed for five nights, totaling 1325 euros. Your confirmation number is XL789Z.
+      CALL: {"function": "hotels_book", "arguments": {"hotel_name": "Hotel Regina Louvre", "nights": "5"}}
+[108.37s][user ] Perfect. And could you find me a good bistro nearby for ⟨ret@112.11s⟩ dinner?
+[112.43s][moshi] Absolutely. Le Bouillon ⟦⚡SPAN@114.11s: (tool result) Le Bouillon Chartier is a bistro 500 meters from the hotel with 4.2 stars.⟧ Chartier, a bistro with 4.2 stars, is just 500 meters from the hotel.
+      CALL: {"function": "restaurants_search", "arguments": {"location": "near Hotel Regina Louvre, Paris", "cuisine": "bistro"}}
+[120.08s][user ] That sounds lovely! I'm getting excited about the trip now.
+[123.99s][moshi] That’s fantastic! It's perfectly normal to feel excited when a fun trip is on the horizon. Anticipation is part of the joy.
+[132.34s][user ] Do you think I should learn a few French phrases?
+[135.21s][moshi] That’s a very thoughtful idea. Even a few basic phrases can really enhance your experience and show respect.
+[144.93s][user ] Maybe just "hello," "thank you," and "excuse me"?
+[148.05s][moshi] Those are excellent choices! They’re polite and will be very appreciated by the locals. A little effort goes a long way.

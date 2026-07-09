@@ -60,63 +60,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to get to my friend Isabell | S2 Mm-hmm. | S3 That sounds… complicated. | S4 What about parking near Isabelle’s
+# EXAMINER(FDB-v2) 단계: S1 Yes, I am. I want to go to that ne | S2 I think I’ll take the metro then.  | S3 Yes, please. And are they good wit | S4 That’s a relief! I’m also planning
 
-     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It’s lovely to connect with you and offer s
-     8.03s  user  발화 시작: I need to get to my friend Isabelle’s place. She just moved.
+     0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
+     7.96s  user  발화 시작: Yes, I am. I want to go to that new bakery, "Le Petit Délice
      8.11s  agent 발화 끝
-    11.48s  <ret> 발화 (turn2 첫 프레임)
-    11.55s  agent 발화 시작: <ret> Certainly, I can help with that. Your journey will beg
-    11.68s  user  발화 끝
-    12.44s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: [2026-02-11] User's home address is 30 Oak Avenue.
-    14.88s  user  발화 시작: Uh-huh.
-    15.33s  user  발화 끝
-    19.61s  agent 발화 끝
-    19.80s  user  발화 시작: Uh, it's 12 Rue de Rivoli. Do you know how long that will ta
-    23.41s  <ret> 발화 (turn5 첫 프레임)
-    23.81s  agent 발화 시작: <ret> That's a fairly central location. Let me check the cur
-    23.96s  user  발화 끝
-    25.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Departure address: 30 Oak Avenue. Destination address: 1
-    28.64s  agent 발화 시작: The drive to 12 Rue de Rivoli is estimated to take twenty-tw
-    28.81s  agent 발화 끝
-    35.37s  user  발화 시작: Mm-hmm.
-    35.59s  agent 발화 끝
-    35.86s  user  발화 끝
-    35.95s  agent 발화 시작: Would you like me to provide turn-by-turn directions, or are
-    41.41s  agent 발화 끝
-    42.81s  user  발화 시작: Directions would be great, please. And is there a quicker wa
-    47.05s  <ret> 발화 (turn10 첫 프레임)
-    47.12s  agent 발화 시작: <ret> Of course. Let’s explore both options. First, the driv
-    47.16s  user  발화 끝
-    49.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) Route: Head north on Oak Avenue. Turn right onto Bouleva
-    53.49s  agent 발화 시작: Head north on Oak Avenue, then turn right onto Boulevard Sai
-    53.75s  agent 발화 끝
-    59.84s  agent 발화 끝
-    61.20s  user  발화 시작: That sounds… complicated.
-    62.87s  <ret> 발화 (turn13 첫 프레임)
-    63.17s  agent 발화 시작: <ret> It can seem that way at first glance. Shall we look at
-    63.28s  user  발화 끝
-    64.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) Take line 4 from Saint-Sulpice to Châtelet. Transfer to 
-    66.84s  agent 발화 시작: Take line four from Saint-Sulpice to Châtelet, transferring 
-    66.97s  agent 발화 끝
-    70.68s  user  발화 시작: Mm-hmm.
-    71.18s  user  발화 끝
-    73.77s  user  발화 시작: Twenty-eight minutes? That’s longer than driving.
-    73.92s  agent 발화 끝
-    76.91s  user  발화 끝
-    77.00s  agent 발화 시작: It appears so, though the Metro avoids potential traffic del
-    83.71s  user  발화 시작: What about parking near Isabelle’s?
-    83.85s  agent 발화 끝
-    85.58s  <ret> 발화 (turn19 첫 프레임)
-    85.65s  agent 발화 시작: <ret> A very practical consideration. Let me check parking a
-    85.83s  user  발화 끝
-    87.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Parking availability: Limited. Closest parking garage: L
-    90.44s  agent 발화 시작: Parking is limited. The closest garage, Louvre Saint-Honoré,
-    90.65s  agent 발화 끝
-    93.95s  user  발화 시작: Mhm.
-    94.40s  user  발화 끝
-    98.69s  agent 발화 끝
-    98.77s  user  발화 시작: Okay, good to know. Thanks, Hia.
-   100.31s  agent 발화 시작: You’re very welcome, Ava. I’m glad I could help with your tr
-   100.38s  user  발화 끝
-   106.42s  agent 발화 끝
+    13.97s  <ret> 발화 (turn2 첫 프레임)
+    14.03s  agent 발화 시작: <ret> Certainly, let’s figure that out for you. From 30 Oak 
+    14.08s  user  발화 끝
+    15.01s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.71s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    22.92s  agent 발화 끝
+    23.21s  user  발화 시작: Twenty-five minutes? Oh, that’s not bad at all.
+    26.59s  user  발화 끝
+    26.60s  agent 발화 시작: It doesn’t sound too disruptive to your day, does it? Perhap
+    29.99s  user  발화 시작: Okay.
+    30.48s  user  발화 끝
+    33.04s  agent 발화 끝
+    33.82s  user  발화 시작: Maybe. Is it walkable, or should I take the metro?
+    36.87s  agent 발화 시작: It is walkable, Ava, though it’s a bit of a distance— around
+    36.91s  user  발화 끝
+    40.26s  user  발화 시작: Uh-huh.
+    40.76s  user  발화 끝
+    43.82s  agent 발화 시작: And offers a more direct route, avoiding some of the busier 
+    43.96s  agent 발화 끝
+    49.78s  user  발화 시작: I think I’ll take the metro then. What line do I need?
+    50.17s  agent 발화 끝
+    52.98s  <ret> 발화 (turn11 첫 프레임)
+    53.28s  agent 발화 시작: <ret> Absolutely, let me check the best metro line for you. 
+    53.34s  user  발화 끝
+    54.02s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.55s]: (tool result) Line 6 from Bir-Hakeim station to Trocadéro station. Tra
+    58.98s  user  발화 시작: Mm-hmm.
+    59.47s  user  발화 끝
+    63.77s  user  발화 시작: That sounds… complicated.
+    63.94s  agent 발화 끝
+    66.17s  user  발화 끝
+    66.28s  agent 발화 시작: It appears a little involved at first glance, but the transf
+    69.88s  user  발화 시작: Yeah.
+    70.33s  user  발화 끝
+    74.62s  agent 발화 끝
+    75.00s  user  발화 시작: Yes, please. And are they good with allergies? I’m allergic 
+    78.70s  <ret> 발화 (turn17 첫 프레임)
+    79.06s  user  발화 끝
+    79.07s  agent 발화 시작: <ret> I can certainly look into that for you. You mentioned 
+    79.74s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.91s]: [2026-02-23] User is allergic to peanuts.
+    87.78s  agent 발화 끝
+    88.57s  user  발화 시작: Thank you, Hia.
+    89.39s  user  발화 끝
+    89.63s  agent 발화 시작: [happy] You're very welcome, Ava. I'm checking their website
+    98.76s  user  발화 시작: That’s a relief! I’m also planning a trip to Kyoto in Decemb
+    98.91s  agent 발화 끝
+   102.85s  <ret> 발화 (turn21 첫 프레임)
+   102.93s  user  발화 끝
+   103.16s  agent 발화 시작: <ret> Oh, Kyoto in December sounds wonderful! You are planni
+   103.81s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.05s]: [2026-02-09] User is planning a trip to Kyoto in December.
+   106.76s  user  발화 시작: Yeah.
+   107.25s  user  발화 끝
+   113.67s  user  발화 시작: Let's stick with the bakery for now, thanks.
+   113.73s  agent 발화 끝
+   116.25s  user  발화 끝
