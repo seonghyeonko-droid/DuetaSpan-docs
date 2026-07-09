@@ -1,0 +1,24 @@
+v3_fake__13_en src=nq style=v1
+SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Hey, I was wondering, when is Demi Lovato’s new album coming out? I heard something about this year… 2015?
+[  7.20s][moshi] Oh, you’re asking about Demi Lovato’s release schedule. It’s exciting when a favorite artist has new music on the way.
+[ 13.30s][moshi] ⟨ret@13.06s⟩ Let me quickly ⟦⚡SPAN@14.74s: Demi Lovato’s album, *Confident*, was released in October 2015.⟧ check the details for you… Her album, *Confident*, came out in October of 2015, as you suspected.
+[ 18.09s][user ] «backchannel» Exactly.
+[ 20.61s][user ] October, huh? That’s pretty soon. I completely missed that!
+[ 24.63s][moshi] It does seem to sneak up on you sometimes, doesn’t it? Album release dates can be tricky to keep track of.
+[ 27.85s][user ] «backchannel» Yeah.
+[ 32.44s][user ] Are there any singles released before the album?
+[ 35.21s][moshi] ⟨ret@35.13s⟩ I can certainly look ⟦⚡SPAN@36.81s: The lead single, “Cool for the Summer”, was released on July 1, 2015.⟧ into what singles preceded the album. “Cool for the Summer” was the first single, released on July first, 2015.
+[ 38.31s][user ] «backchannel» Yeah.
+[ 42.99s][user ] Oh, yeah! I remember that song! It was all over the ⟨ret@46.76s⟩ radio.
+[ 46.91s][moshi] [laugh] It really was quite ⟦⚡SPAN IRRELEVANT@48.76s: (tool result) AAPL: 170.34, +0.25, 0.15%⟧ catchy, wasn’t it? A very memorable tune.
+[ 48.17s][user ] «backchannel» Okay.
+[ 51.49s][user ] I think so. I'm a big fan. What kind of music is it?
+[ 55.14s][moshi] *Confident* is generally considered pop, but it has elements of R&B and electronic dance music too.
+[ 61.22s][user ] Interesting. Is it a big departure from her ⟨ret@64.27s⟩ previous work?
+[ 64.66s][moshi] That’s ⟦⚡SPAN@65.23s: *Confident* is seen as a more mature and experimental album than Lovato's previous efforts.⟧ a good question, comparing it to her earlier albums… It's considered a more mature and experimental album, differing from her earlier work.
+[ 69.00s][user ] «backchannel» Yeah.
+[ 71.83s][user ] Oh, okay. That makes sense. Thanks for the info!
+[ 76.51s][moshi] You’re very welcome! I’m glad I could help you with the album details. I enjoy sharing what I know.

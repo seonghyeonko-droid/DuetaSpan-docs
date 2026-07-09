@@ -1,0 +1,16 @@
+v3_chain_06_ko src=mcp style=mcp_chained
+SYSTEM: <system> 당신은 고전 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 사용자 에이전트를 MyCustomBrowser 버전 10.5로 설정해 줘.
+[  4.89s][moshi] ⟨ret@4.82s⟩ 그럼, 브라우저 ⟦⚡SPAN@6.26s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 설정을 바꿔 줄게. 지금 브라우저는 MyCustomBrowser 버전 십 점 오로 설정됐어.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
+[  9.97s][user ] «backchannel» 음.
+[ 11.58s][user ] 좋아. 그럼 그 브라우저 리뷰 좀 ⟨ret@13.99s⟩ 찾아 줘.
+[ 14.37s][moshi] 알았어, ⟦⚡SPAN@15.51s: (tool result) Search found one result: “MyCustomBrowser 10.5 – Fast and lightweight, but limited extensions.”⟧ 한번 찾아볼게. 한 리뷰에서 빠르고 가볍다고 하는데, 확장 기능이 부족하대.
+      CALL: {"function": "google_search", "arguments": {"query": "reviews MyCustomBrowser version 10.5"}}
+[ 20.76s][user ] 흠, 확장 기능이 제한적이네… 그럼 파이어폭스는 ⟨ret@24.41s⟩ 어때?
+[ 24.72s][moshi] 파이어폭스는 인기가 많고, ⟦⚡SPAN@26.41s: (tool result) Search found three results: “Firefox – Powerful, customizable, and privacy-focused.”, “Firefox A⟧ 확장 기능 라이브러리가 엄청 커. 강력하고 사용자 설정이 가능하고 개인 정보 보호에도 좋고, 확장 기능도 엄청 많은데, 리소스를 좀 더 많이 사용해.
+      CALL: {"function": "google_search", "arguments": {"query": "reviews Firefox"}}
+[ 39.13s][user ] 좋아, 그게 더 나은 것 같아. 내 기본 브라우저를 파이어폭스로 바꿔 줄래?
+[ 43.87s][moshi] 바꿀 수 있어.

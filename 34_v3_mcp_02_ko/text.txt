@@ -1,0 +1,16 @@
+v3_mcp_02_ko src=mcp style=v3
+SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] weather.example.com에서 날씨 업데이트 좀 봐 주세요.
+[  3.64s][moshi] ⟨ret@3.49s⟩ 네, 현재 런던의 ⟦⚡SPAN@5.49s: (tool result) The website reports current conditions in London are 12 degrees Celsius and cloudy.⟧ 기온은 12도이고 흐린 하늘이에요.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
+[  7.54s][user ] 아, 생각보다 춥네요. [sigh] 사실, 햇볕이 쨍쨍했으면 좋았을 텐데요.
+[ 12.39s][moshi] 런던 날씨는 변덕스러울 수 있어요. 혹시 런던에 여행을 가실 계획이 있으세요?
+[ 18.01s][user ] 아마도요. 음, 내일 뉴욕에서 런던으로 가는 직항편이 있는지 확인해 ⟨ret@23.20s⟩ 주시겠어요?
+[ 23.60s][moshi] 네, 직항편을 ⟦⚡SPAN@25.20s: (tool result) There are three direct flights tomorrow: United at 9:00 AM for $750, British Airways at 6:00 PM ⟧ 알아봐 드릴 수 있어요. 내일은 750달러부터 820달러까지 세 개의 직항편이 있어요.
+      CALL: {"function": "flights_search", "arguments": {"from": "New York", "to": "London", "date": "tomorrow"}}
+[ 26.60s][user ] «backchannel» 네네.
+[ 30.28s][user ] 흠, 유나이티드항공편이 괜찮은 것 같아요. 그걸 예약해 ⟨ret@34.52s⟩ 주세요.
+[ 34.91s][moshi] ⟦⚡SPAN@35.80s: (tool result) Your United flight to London tomorrow at 9:00 AM is confirmed; booking reference is Alpha-Charli⟧ 네, 예약을 도와드릴게요. 오전 9시에 출발하는 유나이티드항공편이 예약되었고, 예약 참조번호는 알파-찰리-구-이-칠입니다.
+      CALL: {"function": "flights_book", "arguments": {"flight": "United", "time": "9:00 AM", "price": "$750"}}

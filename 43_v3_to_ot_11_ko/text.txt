@@ -1,0 +1,14 @@
+v3_to_ot_11_ko src=nq style=v1
+SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 혹시 A's 팀이 마지막으로 노히트 게임을 당한 게 언제였는지 아세요? 제가 내기를 하려고요.
+[  5.79s][moshi] ⟨ret@5.55s⟩ 아, 야구에 대한 ⟦⚡SPAN@7.55s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ 좋은 질문이시네요. 그건 이천십팔 년 4월 21일에 일어났습니다.
+[ 11.55s][user ] 와, 꽤 오래됐네요. 누가 던졌는데요?
+[ 14.28s][moshi] 그건 로스앤젤레스 에인절스의 마이크 피어스, 맷 쇼메이커, 그리고 캠 베드로시안이 합심해서 던졌습니다.
+[ 16.95s][user ] «backchannel» 네.
+[ 21.97s][moshi] ⟨ret@21.73s⟩ 노히트 ⟦⚡SPAN@22.85s: Mike Fiers pitched six innings, allowing no hits and striking out eight batters.⟧ 게임이 얼마나 드문 일인지 생각하면— 마이크 피어스는 8명의 타자를 삼진으로 잡으면서 6이닝 동안 안타를 허용하지 않았습니다.
+[ 30.97s][user ] 잠깐만요, 그게 플레이오프 경기였나요, 아니면 정규 시즌 경기였나요?
+[ 34.37s][user ] 그게 A's 팀의 홈 경기였나요?
+[ 36.06s][moshi] 정규 시즌 경기였고, 오클랜드 콜리세움에서 열렸습니다.
+[ 39.72s][user ] 알겠습니다, 알아두니 좋네요. 바스케스 박사님, 감사합니다.

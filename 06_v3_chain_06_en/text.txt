@@ -1,21 +1,16 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I want to schedule an appointment with Dr. Sofia Rodriguez on March twenty-second ⟨ret@2.55s⟩ at eleven fifteen AM.
-[  3.14s][moshi] ⟦⚡SPAN@2.71s: (tool result) Appointment with Dr. Sofia Rodriguez scheduled for March 22nd at 11:15 AM. Confirmation number i⟧ Let’s see what we can arrange. Your appointment with Dr. Rodriguez is confirmed for March twenty-second at eleven fifteen AM.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"doctor_name": "Sofia Rodriguez", "date": "March 22", "time": "11:15 AM"}}
-[  8.72s][user ] Great. Uh, what’s the address of ⟨ret@11.73s⟩ her office?
-[ 12.32s][moshi] ⟦⚡SPAN@12.73s: (tool result) Dr. Rodriguez’s office is located at 7 Oak Street, Asheville, North Carolina.⟧ Certainly, I can look that up for you. Dr. Rodriguez’s office is at seven Oak Street in Asheville, North Carolina.
-      CALL: {"function": "Services_4_GetLocation", "arguments": {"doctor_name": "Sofia Rodriguez"}}
-[ 19.62s][user ] Okay, and are there any good flower shops near there? I— I mean, I want to send my mother flowers.
-[ 23.62s][moshi] Asheville is a lovely city for flowers, actually.
-[ 29.37s][user ] Yeah, but specifically near seven Oak ⟨ret@33.07s⟩ Street?
-[ 33.66s][moshi] ⟦⚡SPAN@33.87s: (tool result) Bloom Room is 0.3 miles away, open until 6 PM. Petal & Stem is 0.5 miles, open until 7 PM.⟧ I can certainly check nearby options. Bloom Room is point three miles away, open until six PM. Petal & Stem is point five miles, open until seven.
-      CALL: {"function": "Services_4_Search", "arguments": {"query": "flower shops near 7 Oak Street Asheville NC"}}
-[ 41.47s][user ] Hmm, Bloom Room sounds closer. Can you look up their ⟨ret@44.31s⟩ phone number?
-[ 44.90s][moshi] ⟦⚡SPAN@44.39s: (tool result) Bloom Room's phone number is 828-555-1212.⟧ Of course, let me find that for you. The phone number for Bloom Room is eight two eight, five five five, one two one two.
-      CALL: {"function": "Services_4_GetContactInfo", "arguments": {"business_name": "Bloom Room", "location": "Asheville NC"}}
-[ 53.31s][user ] Perfect. [sigh] Can you order a bouquet of lilies for delivery to my mother? Her address is 12 Maple ⟨ret@56.43s⟩ Drive, Greenville, South Carolina.
-[ 57.03s][moshi] ⟦⚡SPAN@56.99s: (tool result) Order placed. Lilies delivered to 12 Maple Drive, Greenville, SC. Total: 65 dollars. Order ID is⟧ I can definitely help with that. Your lilies have been ordered for delivery to twelve Maple Drive in Greenville, South Carolina.
-      CALL: {"function": "Services_4_OrderFlowers", "arguments": {"flower_type": "lilies", "recipient_address": "12 Maple Drive, Greenville, South Carolina", "shop": "Bloom Room"}}
+[  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
+[  4.58s][moshi] ⟨ret@4.51s⟩ Certainly, I can adjust ⟦⚡SPAN@6.43s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ your browser’s settings. Your browser is now identified as MyCustomBrowser version ten point five.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
+[ 10.19s][user ] «backchannel» Right.
+[ 12.89s][user ] Great. Now, could you search for reviews of that ⟨ret@16.18s⟩ browser?
+[ 16.41s][moshi] ⟦⚡SPAN@16.68s: (tool result) Search found one result: “MyCustomBrowser 10.5 – Fast and lightweight, but limited extensions.”⟧ Of course, let’s see what people are saying about it. The search found one review calling it fast and lightweight, but lacking extensions.
+      CALL: {"function": "google_search", "arguments": {"query": "reviews MyCustomBrowser version 10.5"}}
+[ 25.41s][user ] Hmm, limited extensions… what about ⟨ret@28.34s⟩ Firefox?
+[ 28.65s][moshi] Firefox is quite ⟦⚡SPAN@30.34s: (tool result) Search found three results: “Firefox – Powerful, customizable, and privacy-focused.”, “Firefox A⟧ popular, with a large extension library. Firefox is powerful, customizable, and privacy-focused, with thousands of extensions, though it can use more resources.
+      CALL: {"function": "google_search", "arguments": {"query": "reviews Firefox"}}
+[ 41.72s][user ] Okay, that sounds better. Can you set my default browser to Firefox?
+[ 46.27s][moshi] I can

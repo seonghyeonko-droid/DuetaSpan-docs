@@ -1,111 +1,79 @@
 # v3_selfc_07_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Could you please click the accept cookies button?
-     1.53s  <ret> 발화 (turn1 첫 프레임)
-     1.69s  ⚡SPAN 주입 [d'=0.16s / d_lead=0.32s]: (tool result) Cookies accepted.
-     2.12s  agent 발화 시작: <ret> Certainly. I’ve accepted the cookies for you, allowing
-     2.26s  user  발화 끝
-     5.65s  user  발화 시작: Great. Now, can you find me a hotel in Banff, Alberta, for n
-     5.67s  agent 발화 끝
-    10.76s  <ret> 발화 (turn3 첫 프레임)
-    10.84s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.57s]: (tool result) Banff Park Lodge is available next weekend, priced at $2
-    11.35s  agent 발화 시작: <ret> Of course. The Banff Park Lodge has availability next 
-    11.44s  user  발화 끝
-    16.16s  agent 발화 끝
-    16.21s  user  발화 시작: Hmm, that’s a bit pricey. Are there any others under two hun
-    19.26s  <ret> 발화 (turn5 첫 프레임)
-    19.50s  ⚡SPAN 주입 [d'=0.24s / d_lead=1.05s]: (tool result) Douglas Fir Resort & Chalets has rooms available for $17
-    19.58s  user  발화 끝
-    19.86s  agent 발화 시작: <ret> Let me check. The Douglas Fir Resort & Chalets offers 
-    26.09s  user  발화 시작: That sounds much better. Can you book a room there for two n
-    26.15s  agent 발화 끝
-    30.35s  <ret> 발화 (turn7 첫 프레임)
-    30.83s  ⚡SPAN 주입 [d'=0.48s / d_lead=1.20s]: (tool result) Reservation confirmed. Douglas Fir Resort & Chalets, two
-    30.95s  agent 발화 시작: <ret> I can certainly do that. Your reservation at Douglas F
-    31.09s  user  발화 끝
-    35.77s  agent 발화 끝
-    35.85s  user  발화 시작: Perfect! And uh, what's the weather forecast for Banff next 
-    38.62s  <ret> 발화 (turn9 첫 프레임)
-    39.22s  agent 발화 시작: <ret> Weather in alpine environments can be quite unpredicta
-    39.36s  user  발화 끝
-    39.62s  ⚡SPAN 주입 [d'=1.00s / d_lead=7.13s]: (tool result) Expect highs of 12 degrees Celsius and lows of 2 degrees
-    46.01s  agent 발화 시작: Next weekend in Banff will bring highs of twelve and lows of
-    46.35s  agent 발화 끝
-    50.03s  user  발화 시작: Okay, good to know. I should pack a raincoat then.
-    50.17s  agent 발화 끝
-    56.06s  user  발화 끝
-    56.08s  agent 발화 시작: A wise precaution, definitely. I always carry a lightweight 
-    58.00s  user  발화 시작: I'm also planning to do some hiking. Are there any good trai
-    58.43s  agent 발화 끝
-    61.51s  <ret> 발화 (turn14 첫 프레임)
-    62.11s  agent 발화 시작: <ret> There are many excellent trails. Johnston Canyon Trail
-    62.22s  user  발화 끝
-    62.47s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.13s]: (tool result) Johnston Canyon Trail is a 5.0 kilometer moderate hike n
-    70.22s  agent 발화 끝
-    70.52s  user  발화 시작: Five kilometers… that sounds manageable. Is it very crowded?
-    74.48s  <ret> 발화 (turn16 첫 프레임)
-    75.07s  agent 발화 시작: <ret> Popular trails often see visitors. Johnston Canyon is 
-    75.20s  user  발화 끝
-    75.48s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.10s]: (tool result) Johnston Canyon Trail is expected to be moderately crowd
-    82.62s  agent 발화 끝
-    83.10s  user  발화 시작: Moderately crowded is fine. I’ll go early. What about wildfl
-    89.87s  user  발화 끝
-    90.23s  agent 발화 시작: Ah, now you’re asking a question I can truly answer!
-    93.75s  agent 발화 시작: Alpine wildflowers are exceptionally sensitive to conditions
-    93.93s  agent 발화 끝
-    97.43s  user  발화 시작: But— are there any *specific* ones in bloom near Banff right
-    97.49s  agent 발화 끝
-   101.00s  <ret> 발화 (turn21 첫 프레임)
-   101.60s  agent 발화 시작: <ret> Let me check current reports. Alpine Forget-Me-Nots an
-   101.64s  user  발화 끝
-   102.00s  ⚡SPAN 주입 [d'=1.00s / d_lead=1.92s]: (tool result) Alpine Forget-Me-Nots and Indian Paintbrush are currentl
-   107.76s  agent 발화 끝
-   109.20s  user  발화 시작: Oh, lovely! I always loved Indian Paintbrush.
-   112.44s  user  발화 끝
-   112.81s  agent 발화 시작: A beautiful species. The vibrant bracts are quite striking, 
-   119.98s  agent 발화 끝
-   120.11s  user  발화 시작: So, to recap, I have a hotel, I know the weather, and I have
-   126.07s  <ret> 발화 (turn25 첫 프레임)
-   126.66s  agent 발화 시작: <ret> Preparation is key for any outdoor excursion.
-   126.83s  user  발화 끝
-   127.07s  ⚡SPAN 주입 [d'=1.00s / d_lead=3.10s]: (tool result) Bear activity is reported in the Johnston Canyon area. C
-   129.59s  agent 발화 시작: Bear activity is reported in Johnston Canyon; please carry b
-   129.76s  agent 발화 끝
-   135.15s  agent 발화 끝
-   136.69s  user  발화 시작: Bear spray! Right. I’ll add that to my list.
-   140.94s  user  발화 끝
-   141.11s  agent 발화 시작: A very sensible addition, indeed. Safety first, always.
-   145.79s  agent 발화 끝
-   145.79s  user  발화 시작: Okay, and can you set a reminder for me to pack the bear spr
-   150.21s  <ret> 발화 (turn30 첫 프레임)
-   150.53s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.35s]: (tool result) Reminder set. Pack bear spray, tomorrow at 7:00 PM.
-   150.80s  agent 발화 시작: <ret> Certainly. I’ve set a reminder to pack bear spray for 
-   150.94s  user  발화 끝
-   155.31s  user  발화 시작: Seven PM is perfect. Thanks, moshi. You’ve been a huge help.
-   155.66s  agent 발화 끝
-   159.21s  agent 발화 시작: My pleasure. I trust you’ll have a wonderful time in the Roc
-   159.34s  user  발화 끝
-   163.05s  agent 발화 끝
-   163.19s  user  발화 시작: I think I will. One last thing— can you find a good Italian 
-   168.35s  <ret> 발화 (turn34 첫 프레임)
-   168.95s  agent 발화 시작: <ret> I can certainly assist with that. Eddie Burger Bar is 
-   168.98s  user  발화 끝
-   169.35s  ⚡SPAN 주입 [d'=1.00s / d_lead=2.16s]: (tool result) Eddie Burger Bar is a highly-rated Italian restaurant in
-   174.91s  user  발화 시작: Eddie Burger Bar... sounds good. Do they take reservations?
-   175.06s  agent 발화 끝
-   178.30s  <ret> 발화 (turn36 첫 프레임)
-   178.62s  ⚡SPAN 주입 [d'=0.32s / d_lead=1.08s]: (tool result) Eddie Burger Bar has availability at 7:30 PM next Saturd
-   178.90s  agent 발화 시작: <ret> Let’s find out. Eddie Burger Bar has availability at s
-   178.94s  user  발화 끝
-   183.57s  agent 발화 끝
-   183.76s  user  발화 시작: Great! Reserve a table for one, please.
-   185.92s  <ret> 발화 (turn38 첫 프레임)
-   186.16s  ⚡SPAN 주입 [d'=0.24s / d_lead=0.83s]: (tool result) Reservation confirmed. Eddie Burger Bar, Saturday at 7:3
-   186.51s  agent 발화 시작: <ret> Of course. Your reservation at Eddie Burger Bar is con
-   186.72s  user  발화 끝
-   192.34s  user  발화 시작: Wonderful. That’s everything. Thank you so much, moshi!
-   192.71s  agent 발화 끝
-   195.76s  agent 발화 시작: You are most welcome. Enjoy your trip— and the wildflowers.
-   195.90s  user  발화 끝
-   199.87s  agent 발화 끝
+     0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
+     3.40s  <ret> 발화 (turn1 첫 프레임)
+     3.51s  user  발화 끝
+     3.63s  agent 발화 시작: <ret> Certainly, let’s see about arranging a visit. I’ve sch
+     4.44s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.70s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
+     8.88s  user  발화 시작: Yeah.
+     9.51s  user  발화 끝
+    12.49s  agent 발화 끝
+    12.85s  user  발화 시작: That’s good. Can you send me directions?
+    14.72s  <ret> 발화 (turn4 첫 프레임)
+    14.88s  agent 발화 시작: <ret> Absolutely, I can provide directions for you. Directio
+    14.88s  user  발화 끝
+    15.92s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.79s]: (tool result) Directions to The Grandview Lofts are: Head north on Elm
+    20.13s  user  발화 시작: Yeah, yeah.
+    21.55s  user  발화 끝
+    24.85s  agent 발화 끝
+    25.04s  user  발화 시작: Is there parking available?
+    26.34s  <ret> 발화 (turn7 첫 프레임)
+    26.57s  agent 발화 시작: <ret> Let me check the parking situation there. The Grandvie
+    26.60s  user  발화 끝
+    28.18s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.22s]: (tool result) The Grandview Lofts offers free on-site parking for visi
+    33.94s  agent 발화 끝
+    34.16s  user  발화 시작: Perfect. What about pet policies?
+    36.62s  <ret> 발화 (turn9 첫 프레임)
+    36.77s  agent 발화 시작: <ret> I can look up the pet policy for that building. They a
+    37.03s  user  발화 끝
+    38.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.35s]: (tool result) The Grandview Lofts allows cats and small dogs with a on
+    44.13s  agent 발화 끝
+    44.69s  user  발화 시작: Two hundred dollars… uh, actually, make that June sixteenth—
+    48.48s  <ret> 발화 (turn11 첫 프레임)
+    48.84s  user  발화 끝
+    48.87s  agent 발화 시작: <ret> Just adjusting the date for your viewing— I’ve resched
+    50.16s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.86s]: (tool result) A viewing at The Grandview Lofts is now scheduled for Ju
+    55.66s  user  발화 시작: Is there a gym in the building?
+    55.82s  agent 발화 끝
+    57.23s  <ret> 발화 (turn13 첫 프레임)
+    57.63s  agent 발화 시작: <ret> Oh, regarding amenities— The building has a fitness ce
+    57.73s  user  발화 끝
+    58.03s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.35s]: (tool result) The Grandview Lofts includes a fitness center, a rooftop
+    64.81s  agent 발화 끝
+    65.81s  user  발화 시작: A rooftop terrace sounds nice. What’s the rent like?
+    68.67s  <ret> 발화 (turn15 첫 프레임)
+    68.91s  agent 발화 시작: <ret> Let’s see about the rental costs there. Rent ranges fr
+    69.05s  user  발화 끝
+    69.79s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.80s]: (tool result) Rental rates at The Grandview Lofts range from fifteen h
+    71.25s  user  발화 시작: Uh-huh.
+    72.03s  user  발화 끝
+    76.51s  agent 발화 끝
+    76.83s  user  발화 시작: That’s a pretty wide range. What does the higher end get you
+    80.62s  agent 발화 시작: Typically, the higher rent covers larger units and premium v
+    80.67s  user  발화 끝
+    82.00s  user  발화 시작: Uh-huh.
+    82.69s  user  발화 끝
+    84.82s  user  발화 시작: Are utilities included in that price?
+    84.97s  agent 발화 끝
+    87.10s  <ret> 발화 (turn21 첫 프레임)
+    87.24s  agent 발화 시작: <ret> I can quickly check the utility inclusions. Water and 
+    87.36s  user  발화 끝
+    88.86s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.02s]: (tool result) Water and garbage are included, but electricity and inte
+    91.76s  user  발화 시작: Yeah.
+    92.39s  user  발화 끝
+    94.56s  agent 발화 끝
+    94.75s  user  발화 시작: Okay, good to know. What’s the neighborhood like?
+    97.80s  user  발화 끝
+    97.87s  agent 발화 시작: It's a vibrant area, known for its cafes and art galleries.
+   102.12s  agent 발화 끝
+   102.81s  user  발화 시작: Are there any grocery stores nearby?
+   104.92s  <ret> 발화 (turn26 첫 프레임)
+   105.07s  agent 발화 시작: <ret> I can check for grocery stores in the vicinity. A Fres
+   105.22s  user  발화 끝
+   105.42s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.19s]: (tool result) There’s a Fresh Foods Market five blocks east of The Gra
+   109.57s  user  발화 시작: Uh-huh.
+   110.35s  user  발화 끝
+   112.01s  user  발화 시작: That sounds convenient. Thanks for all your help.
+   112.16s  agent 발화 끝
+   114.74s  user  발화 끝

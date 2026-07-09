@@ -1,0 +1,45 @@
+v3_rag_24_ko src=nq style=v1
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 안녕하세요. 뒤플레시 가족에 대해 읽다가 그 이름이 어디에서 유래했는지 궁금해졌어요. 뭔가… 프랑스어 같기도 하고요.
+[  7.16s][moshi] 안녕하세요. 아주 흥미로운 질문이고, 실제로 많은 분들이 궁금해하시는 내용이에요. 그 이름은 유럽에 뿌리를 둔 아주 흥미로운 역사를 가지고 있어요.
+[ 17.12s][moshi] ⟨ret@17.04s⟩ 안녕하세요. 그 성의 ⟦⚡SPAN@19.04s: The surname Du Plessis is of French origin, derived from the Old French “du” meaning “of the” and “plessis,” d⟧ 기원을 살펴볼까요— 뒤플레시 이름은 프랑스에서 유래했는데, “요새의” 또는 “울타리 안의 공간”이라는 뜻이에요.
+[ 20.83s][user ] «backchannel» 예.
+[ 26.05s][user ] 네. 프랑스어라면 어떻게 남아프리카로 건너갔을까요? 위그노에 대한 이야기를 읽었던 것 같아요.
+[ 32.80s][moshi] 안녕하세요. 위그노와의 연관성을 생각하신 건 아주 정확해요. 그들의 이주는 이름의 분포에 큰 영향을 미쳤어요.
+[ 39.80s][moshi] ⟨ret@39.48s⟩ 안녕하세요. 아주 ⟦⚡SPAN@41.33s: Many French Huguenots, fleeing religious persecution in the 17th and 18th centuries, settled in the Cape Colon⟧ 통찰력 있는 연결이네요— 프랑스 위그노들이 종교 박해를 피해 케이프 식민지로 이주하면서 뒤플레시 이름을 가져왔어요.
+[ 47.12s][user ] «backchannel» 네.
+[ 49.71s][user ] 음. 그곳에서 성공했나요? 중요한 위치에 올랐나요?
+[ 52.91s][moshi] 안녕하세요. 확실히 자리를 잡았어요. 가족 구성원 중 여러 명이 식민지 내에서 영향력 있는 지위에 올랐어요.
+[ 59.70s][moshi] ⟨ret@59.54s⟩ 안녕하세요. ⟦⚡SPAN@60.74s: The Du Plessis family became prominent in South Africa, with members serving in government and establishing la⟧ 그들의 기여는 확실히 주목할 만했어요— 뒤플레시 가족은 남아프리카에서 토지를 소유하고 정부에서 일하며 두각을 나타냈어요.
+[ 68.53s][user ] 혹시… 음, 유명한 뒤플레시 사람이 있었나요? 제가 알 만한 사람이 있을까요?
+[ 74.33s][moshi] 안녕하세요. [웃음] 물론 여러 명이 있어요. 초기 식민지 시대에 특히 두드러진 인물이 한 명 있어요.
+[ 81.04s][moshi] ⟨ret@80.72s⟩ 안녕하세요. ⟦⚡SPAN@81.92s: Willem Adriaan van der Stel Du Plessis was a significant figure in early South African colonial history, servi⟧ 두드러진 인물이 있어요— 빌렘 아드리안 반 데르 스텔 뒤플레시는 케이프 식민지에서 영향력 있는 농부이자 란트드로스트였어요.
+[ 89.04s][user ] 란트드로스트가 뭐죠? 그게 대체 무슨 뜻이에요?
+[ 91.93s][moshi] 안녕하세요. 꽤 중요한 직책이었어요— 기본적으로 식민 정부에서 임명한 지방 관리 또는 판사였어요.
+[ 98.70s][moshi] ⟨ret@98.54s⟩ 안녕하세요. 상당한 ⟦⚡SPAN@100.54s: A Landdrost was a magistrate and local administrator appointed by the Dutch East India Company and later the B⟧ 권한을 가진 직책이었어요— 란트드로스트는 남아프리카 식민 정부에서 임명한 지방 관리였어요.
+[107.26s][user ] 그러니까, 보안관 같은 건가요?
+[109.35s][moshi] 안녕하세요. 합리적인 비교네요. 하지만 일반적인 보안관보다 더 광범위한 행정 업무를 수행했어요. 매우 영향력 있는 역할이었어요.
+[118.17s][moshi] ⟨ret@117.85s⟩ 안녕하세요. ⟦⚡SPAN@119.13s: Landdrosts oversaw local law enforcement, land allocation, and dispute resolution within their designated dist⟧ 그렇게 생각하면 이해하기 쉬울 거예요— 란트드로스트는 케이프 식민지에서 법 집행, 토지, 분쟁을 감독했어요.
+[123.38s][user ] «backchannel» 네.
+[126.33s][user ] 네. 흥미롭네요. 시간이 지나면서 이름이 바뀌었나요? 좀 더… 아프리카너스어처럼요?
+[132.55s][moshi] 안녕하세요. 언어가 새로운 환경에 채택될 때 흔히 나타나는 현상처럼, 발음과 때로는 철자도 진화했어요.
+[140.09s][moshi] ⟨ret@139.77s⟩ 안녕하세요. ⟦⚡SPAN@141.45s: Over time, the spelling and pronunciation of Du Plessis were influenced by Afrikaans, becoming more commonly w⟧ 이름이 약간의 언어적 변화를 겪었어요— 이름의 철자와 발음은 시간이 지남에 따라 아프리카너스어의 영향을 받았어요.
+[145.86s][user ] «backchannel» 네.
+[149.12s][user ] 네. 그래서 그렇게 많은 변화를 겪은 후에도 여전히 프랑스 이름으로 여겨지는 건가요?
+[153.57s][moshi] 안녕하세요. 물론이죠. 형태는 변했지만, 근본적인 기원은 프랑스 역사에 확고하게 뿌리내리고 있어요.
+[160.00s][moshi] ⟨ret@159.92s⟩ 안녕하세요. 기원은 ⟦⚡SPAN@161.52s: Despite Afrikaans influences, the surname Du Plessis retains its French etymological roots and historical asso⟧ 뚜렷하게 프랑스예요— 이름은 프랑스어 어원과 위그노 역사를 유지하고 있어요.
+[164.00s][user ] «backchannel» 음.
+[166.60s][user ] 네. 말이 되네요. 오늘날 프랑스에는 그 이름을 가진 사람이 많나요?
+[171.61s][moshi] 안녕하세요. 사실 위그노의 이주 때문에 지금은 남아프리카보다 프랑스에서 흔하지 않아요.
+[177.74s][moshi] ⟨ret@177.42s⟩ 안녕하세요. 분포는 ⟦⚡SPAN@179.42s: Today, the Du Plessis surname is more prevalent in South Africa and among diaspora communities descended from ⟧ 꽤 흥미로워요— 이름은 프랑스와 디아스포라 공동체보다 남아프리카에서 더 흔해요.
+[185.55s][user ] 와. 이름이 참 멀리 왔네요.
+[187.66s][moshi] 안녕하세요. 이름은 종종 이주, 적응, 회복력의 역사를 담고 있어요. 더 큰 역사적 과정의 축소판이라고 할 수 있어요.
+[195.94s][user ] 저— 그러니까, 정말 멋진 이야기네요. 물어봐서 다행이에요.
+[199.56s][moshi] 안녕하세요. 그 역사를 알려드릴 수 있어서 기뻐요. 식민지와 이주 패턴의 복잡성을 진정으로 반영하는 이름이에요.
+[206.64s][user ] 혹시 뒤플레시 이름과 관련된 특정 문장이나 가문 문장이 있나요?
+[211.17s][moshi] 안녕하세요. 사실 여러 개가 있어요. 수세기에 걸쳐 가족의 여러 지부가 채택했어요.
+[216.78s][moshi] ⟨ret@216.46s⟩ 안녕하세요. ⟦⚡SPAN@217.98s: The Du Plessis family adopted various coats of arms over time, often featuring a silver shield with a black ch⟧ 여러 헤럴드 문양이 관련되어 있어요— 뒤플레시 가문의 가문 문장에는 은색 방패에 검은색 셰브론과 백합 문양이 자주 등장했어요.
+[227.74s][user ] 백합 문양? 그게 프랑스어 맞죠!
+[230.61s][moshi] 안녕하세요. [기쁨] 맞아요.

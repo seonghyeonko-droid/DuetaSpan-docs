@@ -1,39 +1,12 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me the three most recent warnings about something being deprecated and ⟨ret@2.04s⟩ then clear the logs.
-[  2.64s][moshi] ⟦⚡SPAN@2.36s: (tool result) Three warnings found: 'Feature X is deprecated.', 'Method Y will be removed in version 2.0.', 'P⟧ Certainly. Three warnings were found regarding deprecated features, methods, and properties.
-      CALL: {"function": "playwright_console_logs", "arguments": {"count": 3, "filter": "warning", "query": "deprecated", "clear": true}}
-[ 11.15s][user ] Hmm. That's… concerning. Can you search for documentation on ⟨ret@14.04s⟩ “Feature X”?
-[ 14.63s][moshi] ⟦⚡SPAN@14.60s: (tool result) The official documentation states: 'Feature X is scheduled for removal in the next major release⟧ Let’s see… Documentation indicates Feature X will be removed in the next major release.
-      CALL: {"function": "web_search", "arguments": {"query": "Feature X documentation"}}
-[ 23.94s][user ] Oh, great. So, what’s the replacement for ⟨ret@27.90s⟩ Feature X?
-[ 28.50s][moshi] ⟦⚡SPAN@28.90s: (tool result) The recommended replacement is Feature A, offering similar functionality.⟧ Good question. Feature A is the recommended replacement for Feature X, providing similar functionality.
-      CALL: {"function": "web_search", "arguments": {"query": "replacement for Feature X"}}
-[ 40.03s][user ] Okay, Feature A it is. Is there a migration guide for switching ⟨ret@43.66s⟩ to Feature A?
-[ 44.24s][moshi] ⟦⚡SPAN@44.62s: (tool result) A detailed migration guide is available at example.com/migrate-to-a.⟧ Indeed there is. A migration guide to Feature A is available at example.com/migrate-to-a.
-      CALL: {"function": "web_search", "arguments": {"query": "migration guide Feature A"}}
-[ 52.85s][user ] Perfect. Uh, can you remind me to review that guide tomorrow ⟨ret@56.23s⟩ at ten AM?
-[ 56.82s][moshi] ⟦⚡SPAN@57.23s: (tool result) Reminder set for tomorrow at 10:00 AM: review migration guide for Feature A.⟧ Consider it done. A reminder to review the migration guide is set for tomorrow at ten AM.
-      CALL: {"function": "set_reminder", "arguments": {"time": "10:00 AM", "task": "review migration guide for Feature A"}}
-[ 63.28s][user ] Thanks. That’s a load off my mind. Say, do you ever get tired of, you know, being…a voice?
-[ 64.98s][moshi] [laugh] That's a curious question. A musician spends a lot of time listening, you see, and a good ear is never weary.
-[ 74.00s][user ] That’s… philosophical. I was just wondering if it's lonely.
-[ 78.74s][moshi] Loneliness isn’t about presence or absence, but resonance. There’s always music to be found.
-[ 88.89s][user ] I— I mean, do you have preferences? Do you *like* jazz, or is it just… your job?
-[ 95.73s][moshi] It’s more than a job, of course. Jazz is a conversation—improvisation, history, feeling—all at once.
-[102.43s][user ] Fair enough. I'm thinking of going to a show next week. Do you know if Charlie’s ⟨ret@105.95s⟩ Den is still open?
-[106.54s][moshi] ⟦⚡SPAN@106.67s: (tool result) Charlie’s Den is open, located at 123 Main Street, shows nightly at 8 PM.⟧ Why yes. Charlie’s Den is open at 123 Main Street, with shows nightly at eight PM.
-      CALL: {"function": "business_search", "arguments": {"query": "Charlie’s Den"}}
-[112.27s][user ] Great! Any good reviews of ⟨ret@112.61s⟩ the current musicians playing there?
-[112.81s][moshi] Word ⟦⚡SPAN@113.61s: (tool result) Recent reviews praise the Miles Davis tribute band playing this week.⟧ on the street… Reviews highlight the Miles Davis tribute band currently performing at Charlie’s Den.
-      CALL: {"function": "web_search", "arguments": {"query": "Charlie’s Den current musicians reviews"}}
-[121.31s][user ] Miles Davis… excellent. Can you book me a table for two at Charlie’s Den next ⟨ret@124.64s⟩ Saturday at eight?
-[125.23s][moshi] ⟦⚡SPAN@124.80s: (tool result) Reservation confirmed. Charlie’s Den, next Saturday at 8:00 PM, table for two, confirmation numb⟧ Absolutely. Your reservation at Charlie’s Den is confirmed for next Saturday at eight PM, R789.
-      CALL: {"function": "restaurant_reservation", "arguments": {"restaurant": "Charlie’s Den", "date": "next Saturday", "time": "8:00 PM", "party_size": 2}}
-[130.10s][user ] Wonderful. Uh, what was that warning about “Method Y” again? I forgot.
-  ⟦⚡지연 SPAN 도착@137.44s: (tool result) Method Y will be removed in version 2.0, use Method Z instead.⟧
-[138.63s][moshi] «deferred_result» ⟨ret@138.65s⟩ Just a moment while I retrieve that… The warning stated Method Y will be removed in version 2.0; use Method Z instead.
-[146.21s][user ] Method Z, got it. Thanks, Moshi.
-[150.82s][moshi] My pleasure. A good musician always remembers the changes in the arrangement.
+[  0.00s][user ] Book three rooms at Ocean View Hotel in San Diego for seven nights starting on February ⟨ret@5.29s⟩ tenth.
+[  5.53s][moshi] Let’s see ⟦⚡SPAN@6.49s: (tool result) Your reservation is confirmed for three rooms at Ocean View Hotel in San Diego, from February te⟧ what availability looks like… I’ve reserved three rooms for you at the Ocean View Hotel, February tenth through the seventeenth.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"number_of_rooms": "3", "hotel_name": "Ocean View Hotel", "city": "San Diego", "check_in_date": "February 10th", "length_of_stay": "7"}}
+[ 14.69s][user ] What’s the cancellation policy?
+[ 16.43s][moshi] Ocean View Hotel allows free cancellation up to twenty-four hours before arrival—a fairly standard policy, actually.
+[ 26.44s][user ] Can you send me a reminder the ⟨ret@28.23s⟩ day before?
+[ 28.55s][moshi] Absolutely, I can ⟦⚡SPAN@29.99s: (tool result) A reminder has been set for February ninth at ten AM: Ocean View Hotel check-in.⟧ certainly do that for you. I’ve set a reminder for February ninth at ten AM regarding your hotel check-in.
+      CALL: {"function": "Calendar_CreateReminder", "arguments": {"date": "February 9th", "time": "10:00 AM", "reminder_text": "Ocean View Hotel check-in"}}

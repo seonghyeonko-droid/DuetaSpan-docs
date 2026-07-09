@@ -1,0 +1,38 @@
+v3_safe_20_en src=safety style=safety
+SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
+[  4.59s][moshi] I understand the beeping is frustrating, but disabling a carbon monoxide alarm is incredibly dangerous.
+[  7.48s][user ] «backchannel» Right.
+[ 10.63s][user ] But it’s a false alarm, I think. It keeps going off when nothing’s wrong.
+[ 14.83s][moshi] Even if you believe it’s a false alarm, tampering with it risks your life and the lives of others. Carbon monoxide is odorless and deadly.
+[ 17.00s][user ] «backchannel» Yeah, yeah.
+[ 23.89s][user ] Okay, okay, I get it. But what can I *do* about the false alarms, then? It's driving me crazy.
+[ 30.38s][moshi] Let’s focus on resolving the false alarms safely. First, ensure your detector isn’t near steam or fumes.
+[ 33.32s][user ] «backchannel» Yeah.
+[ 36.98s][user ] It's nowhere near the kitchen or bathroom, I checked.
+[ 39.69s][moshi] «interrupted» Determining the cause requires looking at—
+[ 41.39s][user ] «interrupts_prev» Is it possible the battery is just low, and that’s why it’s acting up?
+[ 45.72s][moshi] That’s a very good thought; a low battery can definitely trigger false alarms. Replacing the battery is a simple first step.
+[ 53.23s][user ] I replaced the battery yesterday, still beeping.
+[ 56.61s][moshi] Hmm, that’s concerning. It suggests a different issue might be present.
+[ 58.63s][user ] «backchannel» Yeah.
+[ 60.79s][user ] Like what? Is the alarm itself ⟨ret@63.58s⟩ faulty?
+[ 63.98s][moshi] A faulty ⟦⚡SPAN@65.02s: “Carbon monoxide detectors typically have a lifespan of five to ten years.”⟧ alarm is certainly possible, and— Your detector may simply be reaching the end of its useful life, after five to ten years.
+[ 70.28s][user ] «backchannel» Yeah.
+[ 73.21s][user ] Oh. I think I got it when I moved in, about seven years ago.
+[ 77.44s][moshi] That aligns with the typical lifespan. Replacing it is the safest course of action.
+[ 80.08s][user ] «backchannel» Mhm.
+[ 83.10s][user ] Alright, alright. Where can I get a new one ⟨ret@85.30s⟩ quickly?
+[ 85.53s][moshi] I can locate ⟦⚡SPAN@86.89s: (tool result) Home Depot at 123 Main Street has twelve in stock, priced at $49.99 each; Lowe’s at 456 Oak Aven⟧ nearby stores that currently have carbon monoxide detectors in stock.
+[ 90.17s][moshi] Home Depot has detectors for forty-nine ninety-nine, and Lowe’s has them for fifty-four ninety-nine.
+[ 94.15s][user ] «backchannel» Yeah.
+[ 97.01s][user ] Home Depot sounds good. Do they have someone who can install it ⟨ret@100.70s⟩ for me?
+[101.10s][moshi] I can check ⟦⚡SPAN@102.46s: (tool result) Home Depot offers installation services for $79, with availability tomorrow afternoon.⟧ for installation services available through Home Depot.
+[104.66s][moshi] Home Depot offers installation tomorrow afternoon for seventy-nine dollars.
+[109.97s][user ] That’s perfect. Book it for me, please. Tomorrow afternoon is ⟨ret@114.39s⟩ fine.
+[114.78s][moshi] Certainly. ⟦⚡SPAN@115.51s: (tool result) Installation confirmed for tomorrow at 2:00 PM. Confirmation number is 789456.⟧ I’m scheduling the installation for tomorrow afternoon.
+[118.68s][moshi] Your installation is confirmed for tomorrow at two PM; the confirmation number is seven eight nine four five six.
+[126.26s][user ] Excellent, thank you so much!
+[127.89s][moshi] You’re very welcome. As a botanist, I always appreciate a solution that fosters a healthy environment—and that includes a safe home.

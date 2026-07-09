@@ -1,0 +1,16 @@
+v3_rag_25_en src=hotpotqa style=v2
+SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] So, I was wondering, what sport did Jack Sock and Raffaella Reggi both play?
+[  5.65s][moshi] That’s a good question—a lot of athletes cross over, you know.
+[  9.29s][moshi] ⟨ret@9.21s⟩ Let me ⟦⚡SPAN@10.57s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ quickly recall their shared athletic pursuit. They both competed as professional tennis players.
+[ 14.97s][user ] Tennis, huh? Okay, but Reggi… I thought she retired a while back.
+[ 20.02s][moshi] She did, actually. A player’s career doesn't last forever, unfortunately.
+[ 24.18s][moshi] ⟨ret@23.86s⟩ I can ⟦⚡SPAN@25.22s: Raffaella Reggi retired from professional tennis in two thousand and sixteen.⟧ confirm the year she stepped away from competition. She retired from professional tennis in two thousand and sixteen.
+[ 31.75s][user ] Wait, two thousand sixteen—wasn’t Sock still pretty early in his career then?
+[ 36.59s][moshi] You’re right to ask—the timing is quite a contrast.
+[ 39.67s][moshi] ⟨ret@39.35s⟩ Let’s ⟦⚡SPAN@40.47s: Jack Sock began his professional tennis career in two thousand ten.⟧ look at when Jack Sock turned professional. He turned professional in two thousand and ten.
+[ 45.85s][user ] So he was still playing while she was winding down. Interesting. Did either of them win any Grand Slam titles?
+[ 53.30s][moshi] Now that's a detail worth remembering.
+[ 55.35s][moshi] ⟨ret@54.95s⟩ I can ⟦⚡SPAN@56.31s: Jack Sock won one Grand Slam title in doubles, and Raffaella Reggi never won a Grand Slam title.⟧ check their Grand Slam achievements for you. Jack Sock won one doubles title, and Reggi did not win any.

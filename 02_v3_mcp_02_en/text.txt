@@ -2,11 +2,15 @@ v3_mcp_02_en src=mcp style=v3
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What is the placeholder text of the search ⟨ret@4.92s⟩ bar?
-[  5.51s][moshi] ⟦⚡SPAN@5.92s: (tool result) The placeholder text is "Search our plants".⟧ Let me check that for you. The website’s search bar placeholder reads “Search our plants”.
-      CALL: {"function": "playwright_evaluate", "arguments": {"url": "https://www.rhs.org.uk/", "expression": "document.querySelector('input[type=\"search\"]')?.placeholder"}}
-[ 11.31s][user ] Oh, interesting. And uh, can you book me a train from London to Edinburgh for next Tuesday?
-[ 19.22s][moshi] Certainly. What time would you prefer to travel?
-[ 22.89s][user ] Around ten in the morning, if ⟨ret@26.27s⟩ possible.
-[ 26.86s][moshi] ⟦⚡SPAN@27.27s: (tool result) Train booked. LNER, departs 10:15 AM, arrives 2:42 PM, £145.50, confirmation ABC789.⟧ I'm looking at options now. Your train is booked with LNER, departing at ten fifteen, arriving at two forty-two, for one hundred forty-five pounds fifty.
-      CALL: {"function": "book_train", "arguments": {"departure_city": "London", "arrival_city": "Edinburgh", "date": "next Tuesday", "time": "10:00 AM"}}
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.54s⟩ com.
+[  3.77s][moshi] Certainly, I can ⟦⚡SPAN@5.30s: (tool result) The website reports current conditions in London are 12 degrees Celsius and cloudy.⟧ monitor that website for you. The current temperature in London is twelve degrees Celsius with cloudy skies.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
+[ 12.99s][user ] Oh, that's… colder than I thought, actually. I— I mean, I was hoping for sunshine.
+[ 18.86s][moshi] London weather can be quite changeable, yes. Are you planning a trip there?
+[ 23.58s][user ] Maybe. Um, could you check if there are any direct flights from New York to ⟨ret@28.71s⟩ London tomorrow?
+[ 29.02s][moshi] I can ⟦⚡SPAN@30.23s: (tool result) There are three direct flights tomorrow: United at 9:00 AM for $750, British Airways at 6:00 PM ⟧ certainly look into flight availability for you. There are three direct flights tomorrow, ranging from seven hundred fifty to eight hundred twenty dollars.
+      CALL: {"function": "flights_search", "arguments": {"from": "New York", "to": "London", "date": "tomorrow"}}
+[ 33.12s][user ] «backchannel» Mhm.
+[ 38.44s][user ] Hmm, the United one sounds good. Book that for me, please.
+[ 42.41s][moshi] ⟨ret@42.34s⟩ Absolutely, ⟦⚡SPAN@43.38s: (tool result) Your United flight to London tomorrow at 9:00 AM is confirmed; booking reference is Alpha-Charli⟧ I can take care of that booking for you. Your flight on United at nine AM is confirmed, booking reference Alpha-Charlie-nine-two-seven.
+      CALL: {"function": "flights_book", "arguments": {"flight": "United", "time": "9:00 AM", "price": "$750"}}

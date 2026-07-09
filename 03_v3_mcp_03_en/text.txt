@@ -1,33 +1,15 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
+SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Select the electronics category from ⟨ret@1.95s⟩ the dropdown.
-[  2.48s][moshi] ⟦⚡SPAN@2.27s: (tool result) Electronics category selected.⟧ Certainly. The website now displays products within the electronics category.
-      CALL: {"function": "puppeteer_select", "arguments": {"selector": ".category-dropdown", "value": "electronics"}}
-[  8.63s][user ] Okay, good. Now find me noise-cancelling headphones under one ⟨ret@12.43s⟩ hundred dollars.
-[ 13.02s][moshi] ⟦⚡SPAN@12.83s: (tool result) Found three items: Sony WH-CH520, $88; Anker Soundcore Life Q20, $60; JBL Tune 760NC, $99.⟧ Absolutely. I located three noise-cancelling headphones fitting your price range.
-      CALL: {"function": "puppeteer_search", "arguments": {"query": "noise-cancelling headphones", "max_price": "100"}}
-[ 18.28s][user ] Hmm. Tell me more about the Sony ones.
-[ 21.89s][moshi] Those are quite popular.
-[ 28.89s][user ] What's the battery life on the Sony ⟨ret@35.27s⟩ WH-CH520?
-[ 35.87s][moshi] ⟦⚡SPAN@35.27s: (tool result) Battery life is up to thirty-five hours.⟧ Let’s see. The Sony WH-CH520 headphones offer up to thirty-five hours of battery life.
-      CALL: {"function": "puppeteer_get_text", "arguments": {"selector": ".sony-wh-ch520-battery-life"}}
-[ 46.40s][user ] Thirty-five hours… that's impressive. Are they comfortable?
-[ 50.05s][moshi] Comfort is rather subjective, of course.
-[ 54.87s][user ] True. Okay, I’ll take them. Add to cart and proceed ⟨ret@59.44s⟩ to checkout.
-[ 60.04s][moshi] ⟦⚡SPAN@59.44s: (tool result) Sony WH-CH520 added to cart.⟧ Very well. The Sony WH-CH520 headphones have been added to your shopping cart. You are now being redirected to the checkout page.
-      CALL: {"function": "puppeteer_add_to_cart", "arguments": {"product_name": "Sony WH-CH520"}}
-[ 64.82s][user ] Great. What's the total, including ⟨ret@69.10s⟩ shipping?
-[ 69.67s][moshi] ⟦⚡SPAN@70.10s: (tool result) Redirecting to checkout page.⟧ One moment while I check. Your total, including shipping, is ninety-eight dollars and fifty cents.
-      CALL: {"function": "puppeteer_click", "arguments": {"selector": ".checkout-button"}}
-[ 79.88s][user ] Okay, that’s fine. Use my saved address and ⟨ret@82.91s⟩ payment method.
-[ 83.50s][moshi] ⟦⚡SPAN@83.91s: (tool result) Total is $98.50, including $10.50 shipping.⟧ Processing now. Your order has been placed, confirmation number XYL789.
-      CALL: {"function": "puppeteer_get_text", "arguments": {"selector": ".order-total"}}
-[ 94.49s][user ] Excellent! Thank ⟨ret@95.66s⟩ you.
-[ 96.24s][moshi] You're ⟦⚡SPAN@96.66s: (tool result) Order placed. Confirmation number is XYL789.⟧ most welcome. It’s fascinating how readily we adapt to noise cancellation, isn’t it? The brain is remarkably plastic.
-      CALL: {"function": "puppeteer_click", "arguments": {"selector": ".place-order-button"}}
-[101.95s][user ] Yeah, I guess so. It’ll be good for focusing.
-[104.63s][moshi] Precisely. Reducing external stimuli allows for deeper concentration and improved cognitive function.
-[111.33s][user ] I’ll have to remember that.
-[112.44s][moshi] It’s a principle I often discuss with patients struggling with attention. A quiet mind is a powerful one.
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.88s⟩ iframe.
+[  3.26s][moshi] ⟦⚡SPAN@3.84s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ Alright, let’s get that shopping cart moving forward. Excellent, I’ve initiated the checkout process for you within the cart.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
+[ 12.35s][user ] What’s the total cost of the order?
+[ 14.53s][moshi] ⟨ret@14.45s⟩ Let me quickly pull up ⟦⚡SPAN@16.45s: (tool result) The order total is twenty-nine pounds and fifty pence.⟧ the order details for you. The total for your order comes to twenty-nine pounds and fifty pence.
+      CALL: {"function": "get_order_total", "arguments": {}}
+[ 22.18s][user ] Can you book a courier for tomorrow morning?
+[ 24.97s][moshi] ⟨ret@24.82s⟩ Certainly, arranging a ⟦⚡SPAN@26.82s: (tool result) A courier is booked for tomorrow at nine AM, tracking number is ABC123XYZ.⟧ courier is something I can do. A courier has been booked for tomorrow at nine AM; your tracking number is ABC123XYZ.
+      CALL: {"function": "book_courier", "arguments": {"date": "tomorrow", "time": "morning"}}
+[ 32.74s][user ] «backchannel» Exactly.
+[ 36.93s][user ] Great, thanks.
