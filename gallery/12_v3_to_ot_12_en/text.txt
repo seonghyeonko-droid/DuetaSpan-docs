@@ -2,15 +2,15 @@ v3_to_ot_12_en src=nq style=v1
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It’s always struck me as… ⟨ret@7.26s⟩ different.
-[  7.49s][moshi] That’s a very astute ⟦⚡SPAN@9.10s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ observation about that iconic track. Eddie Van Halen, indeed, performed the guitar solo for Michael Jackson’s “Beat It”. A remarkable collaboration, wouldn’t you agree?
-[ 12.12s][user ] «backchannel» Right.
-[ 17.93s][user ] Wow, really? Van Halen? I always assumed it was someone more… closely tied to Jackson’s usual band.
-[ 24.43s][moshi] Many assume it was a member of Jackson’s regular musicians, yes. It was quite a surprise to the music world at the time.
-[ 26.44s][user ] «backchannel» Mm-hmm.
-[ 31.10s][user ] «to_other» Hey, did you remember to take the chicken out of the freezer?
-[ 33.85s][user ] Sorry about that. Back to “Beat It”, was he, uh, reluctant to do it at ⟨ret@38.33s⟩ first?
-[ 38.56s][moshi] The story ⟦⚡SPAN@39.53s: Eddie Van Halen initially refused to play on “Beat It” due to a contractual issue.⟧ of his initial hesitation is quite fascinating. Initially, Eddie Van Halen refused to play on “Beat It” because of a contractual issue he faced. He eventually agreed, thankfully.
-[ 45.02s][user ] «backchannel» Yeah.
-[ 50.13s][user ] A contract issue? That’s wild. So, what changed his ⟨ret@53.87s⟩ mind?
-[ 54.26s][moshi] It seems a challenge, ⟦⚡SPAN@55.79s: Michael Jackson personally visited Van Halen and convinced him to participate.⟧ and a sizable one, swayed him. Michael Jackson personally visited Eddie Van Halen and convinced him to participate in the recording.
+[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It’s always seemed so ⟨ret@6.94s⟩ iconic.
+[  7.18s][moshi] That’s a ⟦⚡SPAN@8.06s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It.”⟧ very popular question, indeed. Eddie Van Halen was the musician who played that famous guitar solo.
+[ 10.07s][user ] «backchannel» Right.
+[ 13.92s][user ] Wow, I always thought it was someone else. Did Michael Jackson ask him specifically, or how did that come about?
+[ 20.41s][moshi] It was quite a deliberate choice by Quincy Jones, actually. He felt Van Halen’s style would bring something unique to the track.
+[ 22.33s][user ] «backchannel» Mm-hmm.
+[ 26.77s][user ] That’s interesting. I’m redecorating my living room… [to other] …yeah, I think the blue is too much, don’t you?
+[ 33.91s][user ] Sorry about that, where were we? Oh, right, Quincy Jones and Eddie Van ⟨ret@38.76s⟩ Halen.
+[ 39.15s][moshi] Let's return to ⟦⚡SPAN@40.28s: Quincy Jones initially hesitated to ask Van Halen, fearing he would decline.⟧ that musical partnership. Jones was initially unsure if Van Halen would agree to contribute to the song. It's remarkable how that worked out, isn’t it?
+[ 43.65s][user ] «backchannel» Yeah.
+[ 47.43s][user ] It really is! Did Eddie Van Halen charge Michael Jackson a fee for the solo, or was it a ⟨ret@53.31s⟩ favor?
+[ 53.55s][moshi] That’s ⟦⚡SPAN@54.43s: Van Halen did not ask for or receive a royalty or fee for his work on “Beat It.”⟧ a reasonable inquiry about the arrangements. Eddie Van Halen generously contributed his talent without seeking payment.

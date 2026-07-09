@@ -1,83 +1,87 @@
 # v3_chain_05_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Zuni Cafe 가격대가 어떻게 돼요?
-     1.42s  <ret> 발화 (turn1 첫 프레임)
-     1.81s  agent 발화 시작: <ret> 잠시만 확인해 볼게요… 주니 카페의 메인 요리는 보통 삼십 달러에서 육십 달러 정도예요.
-     1.98s  user  발화 끝
-     3.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.06s]: (tool result) Zuni Cafe’s price range is $$$ which means entrees cost 
-     3.65s  user  발화 시작: 그렇죠.
-     4.27s  user  발화 끝
-     8.38s  agent 발화 끝
-     8.65s  user  발화 시작: 그쪽 지금 영업하고 있어요?
-    10.30s  <ret> 발화 (turn4 첫 프레임)
-    10.37s  agent 발화 시작: <ret> 영업시간을 확인해 드릴 수 있어요… 네, 주니 카페는 오늘 저녁 열 시까지 영업하고 있어요.
-    10.54s  user  발화 끝
-    11.42s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.34s]: (tool result) Zuni Cafe is currently open and closes at ten PM tonight
-    14.03s  user  발화 시작: 네.
-    14.66s  user  발화 끝
-    16.21s  agent 발화 끝
-    17.23s  user  발화 시작: 완벽하네요. 저녁 일곱 시 반에 두 명 예약해 줄 수 있어요?
-    20.26s  <ret> 발화 (turn7 첫 프레임)
-    20.64s  agent 발화 시작: <ret> 예약 가능 여부를 확인해 드릴게요… 밀러 님으로 두 분, 주니 카페 일곱 시 반 예약이 확정됐습니
-    20.70s  user  발화 끝
-    22.18s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.64s]: (tool result) A reservation for two at Zuni Cafe at seven thirty PM is
-    24.00s  user  발화 시작: 네.
-    24.59s  user  발화 끝
-    27.55s  user  발화 시작: 밀러… 맞아요. 주소 다시 한번 알려 줄 수 있어요?
-    27.92s  agent 발화 끝
-    30.65s  <ret> 발화 (turn10 첫 프레임)
-    30.73s  agent 발화 시작: <ret> 예약 정보에서 확인해 드릴게요… 주니 카페는 샌프란시스코 마켓 스트리트 1658번지에 위치하고 있
-    30.91s  user  발화 끝
-    32.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisc
-    37.83s  agent 발화 끝
-    38.27s  user  발화 시작: 주차는 어디에 하면 돼요?
-    39.41s  <ret> 발화 (turn12 첫 프레임)
-    39.72s  agent 발화 시작: <ret> 그 근처 주차 옵션을 찾아볼게요… 마켓 스트리트 1600번지에 주차장이 있는데, 시간당 8달러예요
-    39.78s  user  발화 끝
-    41.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.80s]: (tool result) There is a parking garage at 1600 Market Street, with an
-    43.38s  user  발화 시작: 어머.
-    43.84s  user  발화 끝
-    47.46s  agent 발화 끝
-    47.55s  user  발화 시작: 시간당 8달러나 하네요—
-    48.95s  agent 발화 시작: 거기 말고도 길가 주차도 여러 군데 있어요—
-    49.15s  user  발화 끝
-    50.69s  user  발화 시작: 거기 밤에 걸어 다녀도 괜찮을까요?
-    51.44s  agent 발화 끝
-    52.74s  agent 발화 시작: 그 동네에 대해 안전한지 물어보시는 건 좋은 질문이에요.
-    52.77s  user  발화 끝
-    55.73s  <ret> 발화 (turn18 첫 프레임)
-    55.96s  agent 발화 시작: <ret> 최근 안전 보고서를 확인해 드릴게요… 그 지역은 안전 등급이 보통이고, 소매치기 신고가 몇 건 있
-    56.11s  agent 발화 끝
-    57.65s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.31s]: (tool result) The safety rating for 1658 Market Street is moderate, wi
-    58.72s  user  발화 시작: 네네.
-    59.49s  user  발화 끝
-    63.14s  agent 발화 끝
-    64.06s  user  발화 시작: 알겠습니다, 좋은 정보네요. 그 주차장, 신용카드 돼요?
-    67.57s  <ret> 발화 (turn21 첫 프레임)
-    67.80s  agent 발화 시작: <ret> 그 주차장의 결제 수단을 확인해 드릴게요… 네, 비자, 마스터카드, 아메리칸 익스프레스 카드를 받
-    67.95s  user  발화 끝
-    69.33s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.23s]: (tool result) The garage at 1600 Market Street accepts Visa, Mastercar
-    75.36s  agent 발화 끝
-    76.04s  user  발화 시작: 잘 됐네요. 걸어갈 만한 좋은 빵집이 근처에 있어요?
-    78.91s  <ret> 발화 (turn23 첫 프레임)
-    79.22s  agent 발화 시작: <ret> 근처 빵집을 찾아 드릴 수 있어요… 타르틴 베이커리가 반 마일 떨어져 있고 평점은 4.6점이에요.
-    79.37s  user  발화 끝
-    80.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.42s]: (tool result) Tartine Bakery is a half-mile from Zuni Cafe, with a 4.6
-    85.19s  user  발화 시작: 타르틴… 좋다는 얘기 많이 들었어요. 영업시간은 어떻게 돼요?
-    85.20s  agent 발화 끝
-    89.06s  <ret> 발화 (turn25 첫 프레임)
-    89.22s  agent 발화 시작: <ret> 타르틴의 영업시간을 확인해 드릴게요… 오늘 저녁 6시에 문을 닫습니다.
-    89.45s  user  발화 끝
-    90.50s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.86s]: (tool result) Tartine Bakery is open until six PM today.
-    94.67s  user  발화 시작: 음, 시간이 빠듯하겠네요. 좋아요, 마지막으로 하나만 더 물어볼게요. 주니 카페 갈 시간 맞춰서 저녁 7시에
-    94.69s  agent 발화 끝
-   103.26s  <ret> 발화 (turn27 첫 프레임)
-   103.56s  agent 발화 시작: <ret> 물론이죠, 알림을 설정해 드릴게요… 주니 카페에 출발하라는 알림이 저녁 7시에 설정됐습니다.
-   103.81s  user  발화 끝
-   105.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.38s]: (tool result) A reminder to leave for Zuni Cafe is set for seven PM.
-   109.59s  agent 발화 끝
-   109.78s  user  발화 시작: 정말 감사합니다, 많은 도움 주셨어요.
-   112.03s  agent 발화 시작: 도와드릴 수 있어서 기쁩니다. 주니 카페에서 즐거운 저녁 보내시길 바랍니다. 새로운 Lieblingsgeri
-   112.04s  user  발화 끝
-   120.24s  agent 발화 끝
+     0.00s  user  발화 시작: Zuni Cafe 가격대는 어떻게 되나요?
+     1.61s  <ret> 발화 (turn1 첫 프레임)
+     2.00s  agent 발화 시작: <ret> 잠시 확인해 볼게요… Zuni Cafe는 중간 정도 가격대로, 메인 요리가 30달러에서 60달러 
+     2.11s  user  발화 끝
+     3.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.11s]: (tool result) Zuni Cafe’s price range is dollar signs three to four.
+     4.18s  user  발화 시작: 그렇죠.
+     5.00s  user  발화 끝
+     9.64s  agent 발화 끝
+     9.92s  user  발화 시작: 그렇군요. 지금은 영업하고 있나요?
+    11.83s  <ret> 발화 (turn4 첫 프레임)
+    12.14s  agent 발화 시작: <ret> 확인해 드릴 수 있습니다. 네, Zuni Cafe는 오늘 저녁 10시까지 영업합니다.
+    12.32s  user  발화 끝
+    13.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.40s]: (tool result) Zuni Cafe is currently open until ten PM.
+    15.03s  user  발화 시작: 네.
+    15.53s  user  발화 끝
+    16.82s  agent 발화 끝
+    17.82s  user  발화 시작: 좋아요. 혹시 예약도 가능한가요?
+    19.84s  <ret> 발화 (turn7 첫 프레임)
+    20.23s  agent 발화 시작: <ret> 예약 가능 여부를 알아볼게요… Zuni Cafe는 OpenTable을 통해 편리하게 예약을 받습니
+    20.27s  user  발화 끝
+    21.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.44s]: (tool result) Zuni Cafe accepts reservations through OpenTable.
+    23.12s  user  발화 시작: 네.
+    23.57s  user  발화 끝
+    26.18s  user  발화 시작: 혹시 저를 위해 예약을 해 주실 수 있나요?
+    26.52s  agent 발화 끝
+    28.43s  agent 발화 시작: 아—
+    28.57s  user  발화 끝
+    28.57s  user  발화 시작: 네, 4명으로 저녁 7시 30분쯤으로 부탁드립니다.
+    29.16s  agent 발화 끝
+    31.67s  <ret> 발화 (turn12 첫 프레임)
+    31.98s  agent 발화 시작: <ret> 물론 도와드릴 수 있습니다. Zuni Cafe에 4명으로 저녁 7시 30분에 예약이 확정되었습니다
+    32.17s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.46s]: (tool result) Reservation confirmed at Zuni Cafe for four people at 7:
+    32.27s  user  발화 끝
+    41.53s  agent 발화 끝
+    41.59s  user  발화 시작: 잘 됐네요! 근처에 주차장은 있나요?
+    43.59s  <ret> 발화 (turn14 첫 프레임)
+    43.90s  agent 발화 시작: <ret> 그 지역은 주차하기가 쉽지 않아요… 기어리 스트리트와 포스트 스트리트 주차장이 근처에 있습니다.
+    44.12s  user  발화 끝
+    45.51s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.51s]: (tool result) Nearby parking garages include the Geary Street Garage a
+    46.35s  user  발화 시작: 아.
+    49.92s  agent 발화 끝
+    50.04s  user  발화 시작: 기어리 스트리트 주차장은 시간당 얼마인가요?
+    51.34s  user  발화 끝
+    52.66s  <ret> 발화 (turn17 첫 프레임)
+    52.81s  agent 발화 시작: <ret> 현재 요금을 확인해 드릴게요. 기어리 스트리트 주차장의 시간당 요금은 15달러입니다.
+    52.95s  user  발화 끝
+    54.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.15s]: (tool result) The Geary Street Garage charges fifteen dollars per hour
+    56.59s  user  발화 시작: 네네.
+    57.32s  user  발화 끝
+    58.75s  agent 발화 끝
+    58.81s  user  발화 시작: 알겠습니다. 그렇게 싸지는 않네요. 길가 주차는 있나요?
+    61.90s  agent 발화 시작: 길가 주차는 종종 가능하지만, 자리가 제한적입니다.
+    62.00s  user  발화 끝
+    64.25s  user  발화 시작: 음.
+    64.70s  user  발화 끝
+    65.91s  user  발화 시작: 알겠습니다. 걸어서 갈 수 있는 좋은 빵집이 있나요?
+    66.07s  agent 발화 끝
+    68.64s  <ret> 발화 (turn23 첫 프레임)
+    68.79s  agent 발화 시작: <ret> 근처 빵집을 검색해 드릴 수 있습니다. 아르시콜 베이커리가 약 10분 거리에 있으며, 평점은 4.
+    69.00s  user  발화 끝
+    70.24s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.75s]: (tool result) Arsicault Bakery is a 0.6 mile walk from Zuni Cafe and h
+    76.13s  user  발화 시작: 아르시콜, 알겠습니다. 어떤 종류의 페이스트리를 전문으로 하나요?
+    76.30s  agent 발화 끝
+    80.33s  <ret> 발화 (turn25 첫 프레임)
+    80.48s  agent 발화 시작: <ret> 정보를 찾아볼게요. 특히 크루아상, 뺑 오 쇼콜라, 쿠이냐만이라는 페이스트리로 유명합니다.
+    80.61s  user  발화 끝
+    82.09s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.30s]: (tool result) Arsicault Bakery is known for its croissants, pain au ch
+    87.43s  user  발화 시작: 쿠이냐만… 흥미롭네요. 전화번호는 어떻게 되나요?
+    87.48s  agent 발화 끝
+    90.58s  <ret> 발화 (turn27 첫 프레임)
+    90.90s  agent 발화 시작: <ret> 연락처 정보를 빠르게 찾아볼 수 있습니다. 전화번호는 415-355-9882입니다.
+    91.03s  user  발화 끝
+    92.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Arsicault Bakery’s phone number is 415-355-9882.
+    97.99s  user  발화 시작: 완벽하네요. 많은 도움 주셔서 감사합니다, 모시.
+    98.22s  agent 발화 끝
+   101.22s  user  발화 끝
+   101.38s  agent 발화 시작: 천만에요. Zuni Cafe와 아르시콜 베이커리에서 즐거운 저녁 보내시길 바랍니다. 미션 지역에서 비슷한 지
+   113.34s  agent 발화 끝
+   113.47s  user  발화 시작: 멋지네요. 아르시콜에 야외 좌석이 있나요?
+   116.06s  <ret> 발화 (turn31 첫 프레임)
+   116.29s  agent 발화 시작: <ret> 현재 좌석 옵션을 확인해 볼게요. 네, 야외 테이블이 몇 개 있습니다.
+   116.42s  user  발화 끝
+   118.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.50s]: (tool result) Arsicault Bakery has limited outdoor seating available.
+   120.87s  agent 발화 끝

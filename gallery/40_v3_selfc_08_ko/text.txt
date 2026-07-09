@@ -1,24 +1,18 @@
 v3_selfc_08_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 안내원입니다. <system>
+SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 가이드입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 ⟨ret@3.48s⟩ 줘.
-[  3.72s][moshi] 네, 그 ⟦⚡SPAN@5.48s: (tool result) Buses depart Chicago for Denver on May tenth at 8:00 AM, 1:30 PM, and 6:45 PM; prices range from⟧ 여행에 대한 옵션을 찾아 볼게요. 5월 10일에 출발하는 버스가 세 대 있는데, 가격은 125달러에서 189달러 사이예요.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[ 14.54s][user ] 1시 30분 버스는 ⟨ret@16.54s⟩ 어때?
-[ 16.69s][moshi] ⟦⚡SPAN@17.58s: (tool result) The 1:30 PM bus is a direct route, arriving in Denver at 10:00 PM; it has Wi-Fi and power outlet⟧ 그 특정 출발에 대한 정보를 가져올게요. 1시 30분 버스는 직행이고, 10시에 도착하며, 와이파이와 전원 콘센트를 제공해요.
-      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "1:30 PM Chicago to Denver"}}
-[ 27.01s][user ] 그거 세 자리 예약해 줄 수 ⟨ret@28.69s⟩ 있어?
-[ 29.01s][moshi] 네, 예약을 ⟦⚡SPAN@30.69s: (tool result) Reservation confirmed: confirmation number is BX7492; total cost is $525.⟧ 진행해 드릴 수 있어요. 예약이 확정됐습니다. 확인 번호는 BX7492이고, 총 금액은 525달러예요.
-      CALL: {"function": "Buses_3_ReserveSeats", "arguments": {"bus_id": "1:30 PM Chicago to Denver", "seats": "three"}}
-[ 38.87s][user ] 좋네—
-[ 39.85s][moshi] «interrupted» 그리고 다시 한 번 모든 세부 사항을 확인해 드릴게요—
-[ 42.73s][user ] «interrupts_prev» 근데 혹시 5월 11일로 날짜를 변경할 수 ⟨ret@46.05s⟩ 있을까?
-[ 46.37s][moshi] 네, 대신 ⟦⚡SPAN@48.05s: (tool result) Buses depart Chicago for Denver on May eleventh at 9:15 AM and 2:00 PM; prices range from $130 t⟧ 5월 11일의 이용 가능 여부를 확인해 볼게요. 5월 11일에는 오전 9시 15분과 오후 2시에 출발하는 버스가 있는데, 가격은 130달러에서 195달러 사이예요.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
-[ 59.28s][user ] 오후 2시 버스가 더 나은 것 같아.
-[ 61.98s][moshi] ⟨ret@61.82s⟩ 좋은 선택이세요, ⟦⚡SPAN@63.82s: (tool result) The 2:00 PM bus is a direct route, arriving in Denver at 10:30 PM; it features reclining seats a⟧ 그 버스의 구체적인 사항을 살펴볼게요. 오후 2시 버스는 리클라이닝 시트, 화장실, 직행 노선을 제공하며, 10시 30분에 도착해요.
-      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "2:00 PM Chicago to Denver"}}
-[ 68.92s][user ] «backchannel» 응.
-[ 73.78s][user ] 좋아. 그거 세 자리 예약해 줘.
-[ 76.12s][moshi] 네, 바로 그 좌석을 예약해 드릴게요.
+[  0.00s][user ] 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 ⟨ret@4.29s⟩ 줘.
+[  4.53s][moshi] 알겠습니다. 그 ⟦⚡SPAN@6.29s: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixBus, and Wanderu, with prices ranging fro⟧ 여행에 대한 버스를 찾아볼게요— 버스 옵션이 세 가지 있는데, 가격은 129달러부터 185달러까지 다양합니다.
+[ 14.63s][user ] 좀 비싸네. 두 명만 하면 ⟨ret@16.59s⟩ 어때?
+[ 16.75s][moshi] 승객 ⟦⚡SPAN@17.55s: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixBus, and Wanderu, with prices ranging fro⟧ 수를 조정해 볼게요— 두 명으로 하니까 가격대는 이제 95달러에서 150달러까지입니다.
+[ 23.34s][user ] 흠, 그레이하운드가 항상 제일 싸?
+[ 26.51s][moshi] «interrupted» 일반적으로 네, 그레이하운드가 가장 저렴한 요금을 제공하는 경향이 있습니다—
+[ 31.09s][user ] «interrupts_prev» 와이파이 있는 버스 있어?
+[ 33.08s][moshi] 그레이하운드와 플릭스버스는 모두 와이파이가 가능한 편의시설로 나와 있습니다. Wanderu는 명시되어 있지 않습니다.
+[ 38.57s][user ] «backchannel» 응.
+[ 42.03s][moshi] «interrupted» 그레이하운드 웹사이트에는 모든 좌석에 전원 콘센트가 있다는 내용도 나와 있는데, 장거리 여행에 꽤 유용할 수 있습니다—
+[ 49.99s][moshi] ⟨ret@49.60s⟩ 그레이하운드 ⟦⚡SPAN@51.60s: (tool result) Buses_3_GetDetails returned: Greyhound bus ID G749 departs Chicago at 8:00 AM, arrives Denver at⟧ 버스 G749는 오전 8시에 출발해서 덴버에는 밤 10시에 도착하고, 와이파이도 있습니다.
+[ 55.73s][user ] «backchannel» 응.
+[ 58.74s][user ] 좋아, 그 그레이하운드 버스 티켓 두 장 예약해 ⟨ret@61.59s⟩ 줘.
+[ 61.91s][moshi] 티켓을 확보해 ⟦⚡SPAN@63.59s: (tool result) Buses_3_Book returned: Confirmation number is B29X7R, two tickets on Greyhound G749, Chicago to ⟧ 드릴게요— 티켓 예약을 완료했습니다! 확인 번호는 B29X7R이고, 총 금액은 190달러입니다.

@@ -2,13 +2,13 @@ v3_mcp_00_en src=mcp style=v1
 SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.05s⟩ Paris?
-[  3.29s][moshi] Let ⟦⚡SPAN@4.01s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ me quickly pinpoint that landmark for you. Those coordinates—forty-eight point eight five eight four degrees north, two point two nine four five degrees east—will put you right at its base.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@2.86s⟩ Paris?
+[  3.10s][moshi] Let’s ⟦⚡SPAN@3.90s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ see if I can pinpoint that iconic landmark for you… The Eiffel Tower’s coordinates are forty-eight point eight five eight four degrees north, two point two nine four five degrees east.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 14.41s][user ] Great. And can you find me hotels near ⟨ret@17.31s⟩ that location?
-[ 17.70s][moshi] Certainly, I can search ⟦⚡SPAN@19.31s: (tool result) Hotel Plaza Athénée is 0.8 km away, with prices starting at 850 euros per night.⟧ for nearby accommodations. Hotel Plaza Athénée is less than a kilometer away, with rooms beginning at eight hundred and fifty euros a night.
-      CALL: {"function": "hotels_search", "arguments": {"location": "48.8584, 2.2945", "radius": "1km"}}
-[ 21.55s][user ] «backchannel» Yeah.
-[ 27.53s][user ] That’s a bit pricey. Anything ⟨ret@30.06s⟩ cheaper?
-[ 30.37s][moshi] I understand, ⟦⚡SPAN@31.42s: (tool result) Hotel Eiffel Turenne is 0.9 km away, costing 180 euros per night.⟧ let’s explore some more affordable options. Hotel Eiffel Turenne is point nine
-      CALL: {"function": "hotels_search", "arguments": {"location": "48.8584, 2.2945", "radius": "1km", "max_price": "200"}}
+[ 15.43s][user ] Great. And how far is that from, uh, ⟨ret@18.35s⟩ the Louvre?
+[ 18.75s][moshi] Comparing distances is always ⟦⚡SPAN@20.35s: (tool result) The distance between the Eiffel Tower and the Louvre is approximately 3.1 kilometers.⟧ a good way to get your bearings… That’s about three point one kilometers between the two landmarks.
+      CALL: {"function": "maps_distance", "arguments": {"start": "48.8584,2.2945", "end": "Louvre Museum, Paris"}}
+[ 21.59s][user ] «backchannel» Yeah.
+[ 26.05s][user ] Okay, could you give me walking ⟨ret@28.33s⟩ directions?
+[ 28.65s][moshi] Certainly, a ⟦⚡SPAN@29.69s: (tool result) Walk southwest on Quai Branly. Turn right onto Pont d'Iéna. Continue onto Quai Voltaire. Turn le⟧ walk between them would be quite pleasant… The directions are to walk southwest on Quai Branly, then turn right onto
+      CALL: {"function": "maps_directions", "arguments": {"start": "48.8584,2.2945", "end": "Louvre Museum, Paris", "mode": "walking"}}

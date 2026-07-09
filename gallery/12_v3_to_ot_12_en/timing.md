@@ -2,32 +2,32 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: I was just wondering, who actually played the guitar solo on
-     7.26s  <ret> 발화 (turn1 첫 프레임)
-     7.49s  agent 발화 시작: <ret> That’s a very astute observation about that iconic tra
-     7.55s  user  발화 끝
-     9.10s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.32s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-    12.12s  user  발화 시작: Right.
-    12.61s  user  발화 끝
-    17.83s  agent 발화 끝
-    17.93s  user  발화 시작: Wow, really? Van Halen? I always assumed it was someone more
-    24.43s  agent 발화 시작: Many assume it was a member of Jackson’s regular musicians, 
-    24.51s  user  발화 끝
-    26.44s  user  발화 시작: Mm-hmm.
-    27.07s  user  발화 끝
-    31.06s  agent 발화 끝
-    31.10s  user  발화 시작: Hey, did you remember to take the chicken out of the freezer
-    33.85s  user  발화 시작: Sorry about that. Back to “Beat It”, was he, uh, reluctant t
-    34.01s  user  발화 끝
-    38.33s  <ret> 발화 (turn8 첫 프레임)
-    38.56s  agent 발화 시작: <ret> The story of his initial hesitation is quite fascinati
-    38.66s  user  발화 끝
-    39.53s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.38s]: Eddie Van Halen initially refused to play on “Beat It” due to a contra
-    45.02s  user  발화 시작: Yeah.
-    45.52s  user  발화 끝
-    49.84s  agent 발화 끝
-    50.13s  user  발화 시작: A contract issue? That’s wild. So, what changed his mind?
-    53.87s  <ret> 발화 (turn11 첫 프레임)
-    54.26s  agent 발화 시작: <ret> It seems a challenge, and a sizable one, swayed him. M
-    54.29s  user  발화 끝
-    55.79s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.49s]: Michael Jackson personally visited Van Halen and convinced him to part
-    62.97s  agent 발화 끝
+     6.94s  <ret> 발화 (turn1 첫 프레임)
+     7.18s  agent 발화 시작: <ret> That’s a very popular question, indeed. Eddie Van Hale
+     7.32s  user  발화 끝
+     8.06s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+    10.07s  user  발화 시작: Right.
+    10.57s  user  발화 끝
+    13.80s  agent 발화 끝
+    13.92s  user  발화 시작: Wow, I always thought it was someone else. Did Michael Jacks
+    20.41s  agent 발화 시작: It was quite a deliberate choice by Quincy Jones, actually. 
+    20.50s  user  발화 끝
+    22.33s  user  발화 시작: Mm-hmm.
+    22.83s  user  발화 끝
+    26.71s  agent 발화 끝
+    26.77s  user  발화 시작: That’s interesting. I’m redecorating my living room… [to oth
+    33.91s  user  발화 시작: Sorry about that, where were we? Oh, right, Quincy Jones and
+    34.10s  user  발화 끝
+    38.76s  <ret> 발화 (turn8 첫 프레임)
+    39.05s  user  발화 끝
+    39.15s  agent 발화 시작: <ret> Let's return to that musical partnership. Jones was in
+    40.28s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.71s]: Quincy Jones initially hesitated to ask Van Halen, fearing he would de
+    43.65s  user  발화 시작: Yeah.
+    44.29s  user  발화 끝
+    47.12s  agent 발화 끝
+    47.43s  user  발화 시작: It really is! Did Eddie Van Halen charge Michael Jackson a f
+    53.31s  <ret> 발화 (turn11 첫 프레임)
+    53.55s  user  발화 끝
+    53.55s  agent 발화 시작: <ret> That’s a reasonable inquiry about the arrangements. Ed
+    54.43s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.82s]: Van Halen did not ask for or receive a royalty or fee for his work on 
+    60.41s  agent 발화 끝

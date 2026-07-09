@@ -1,14 +1,16 @@
 v3_chain_06_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 클래식 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 고전 프랑스 파티세리 훈련을 받은 파티셰입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 야, 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 바꿔 줘.
-[  4.71s][moshi] ⟨ret@4.63s⟩ 응, 브라우저 ⟦⚡SPAN@6.07s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 설정을 바꿔 줬어. 사용자 에이전트를 MyCustomBrowser, 버전 십 점 오로 바꿨어.
+[  0.00s][user ] 내 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 줄래?
+[  4.63s][moshi] ⟨ret@4.55s⟩ 그래, 브라우저 설정을 ⟦⚡SPAN@6.55s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 바꿔 줬어. 지금 브라우저는 MyCustomBrowser, 버전 십 점 오로 표시돼.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[  9.09s][user ] «backchannel» 음.
-[ 10.49s][user ] 좋네. 이제 그 설정으로 브라우징할 때 내 IP 주소가 어떻게 보이는지 확인해 ⟨ret@15.25s⟩ 줘.
-[ 15.65s][moshi] ⟦⚡SPAN@15.97s: (tool result) Your public IP address is 203.0.113.42, and your location is identified as Seattle, Washington.⟧ 알았어, 공용 IP 주소가 어떻게 나오는지 볼까. 지금 IP 주소는 이백삼 점 영 점 일일삼 점 사십이인데, 시애틀에 위치해 있어.
-      CALL: {"function": "get_public_ip", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 24.37s][user ] 흠, 시애틀? 이상하네. 근처에 있는 별점 다섯 개짜리 빵집 찾아 ⟨ret@28.84s⟩ 줘.
-[ 29.15s][moshi] ⟦⚡SPAN@29.34s: (tool result) Dahlia Bakery is 0.8 miles away, rated 5 stars; The Crème de la Crème is 1.2 miles, also 5 stars⟧ 별점 높은 빵집 검색은 좋지.
-      CALL: {"function": "search_nearby", "arguments": {"query": "5-star bakery", "location": "Seattle, Washington"}}
+[  9.53s][user ] «backchannel» 음.
+[ 11.10s][user ] 어, 좋아. 그럼 이 페이지에서 내가 그렇게 보이는지 확인해 ⟨ret@14.37s⟩ 줄래?
+[ 14.76s][moshi] 현재 ⟦⚡SPAN@15.89s: (tool result) The current user agent reported by the page is MyCustomBrowser version 10.5.⟧ 웹페이지에서 보고되는 사용자 에이전트를 확인해 볼게. 응, 페이지에서 지금은 브라우저를 MyCustomBrowser, 버전 십 점 오로 정확하게 인식하고 있어.
+      CALL: {"function": "playwright_get_user_agent", "arguments": {}}
+[ 25.54s][user ] 좋아. 그럼 그 브라우저—MyCustomBrowser, 십 점 오—에 대한 리뷰 좀 찾아 ⟨ret@30.78s⟩ 줘.
+[ 31.09s][moshi] 그 ⟦⚡SPAN@31.82s: (tool result) Search results show one forum thread and three blog posts discussing MyCustomBrowser version 10.⟧ 특정 브라우저 버전에 대한 리뷰를 검색해 줄게. 포럼 스레드 하나랑 블로그 게시물 세 개를 찾았어. 전부 MyCustomBrowser, 버전 십 점 오에 대한 내용이야.
+      CALL: {"function": "google_search", "arguments": {"query": "reviews MyCustomBrowser version 10.5"}}
+[ 44.02s][user ] 흠, 좋아. 제목만 읽어 줘.
+[ 46.84s][moshi] 당연히, 제목을 읽어 줄게.

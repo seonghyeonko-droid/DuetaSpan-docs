@@ -1,16 +1,13 @@
 v3_mcp_03_ko src=mcp style=v1
-SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. <system>
+SYSTEM: <system> 당신은 중세 시대 성당을 복원하는 석공입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 장바구니 iframe에서 결제 과정 시작해 주세요.
-[  3.72s][moshi] ⟨ret@3.48s⟩ 네, ⟦⚡SPAN@4.92s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ 장바구니 안에서 결제 과정을 시작했습니다.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
-[  7.07s][user ] 주문 총액이 얼마인가요? ⟨ret@8.96s⟩
-[  9.27s][moshi] 잠시 주문 ⟦⚡SPAN@10.56s: (tool result) The total order cost is $125.50, including shipping.⟧ 정보를 확인해 볼게요. 배송비를 포함해서 총 백이십오 점 오 영 달러 오십 센트입니다.
-      CALL: {"function": "get_order_total", "arguments": {}}
-[ 16.84s][user ] 제 배송 주소가 여전히 오크 스트리트 14번지 맞나요?
-[ 20.93s][moshi] 네, 고객님의 배송 주소는 오크 스트리트 14번지로 등록되어 있습니다. 북쪽 회랑 복원 계획서를 그쪽으로 보냈던 것 기억하시죠?
-[ 27.76s][user ] «backchannel» 맞아요.
-[ 31.30s][user ] 배송을 조금 더 빠르게 받을 수 있을까요?
-[ 34.19s][moshi] ⟨ret@33.95s⟩ 물론입니다, 더 빠른 ⟦⚡SPAN@35.95s: (tool result) Two-day shipping to 14 Oak Street is available for an additional $15.00.⟧ 배송 옵션을 확인해 볼게요. 오크 스트리트 14번지로 배송하는 빠른 배송은 15달러가 더 추가됩니다.
-      CALL: {"function": "check_expedited_shipping", "arguments": {"address": "14 Oak Street"}}
+[  0.00s][user ] 장바구니 iframe에서 결제 진행해 주세요.
+[  3.30s][moshi] ⟨ret@3.06s⟩ 네, 쇼핑 ⟦⚡SPAN@4.50s: (tool result) The shopping cart iframe’s “Checkout” button was clicked successfully.⟧ 카트 내에서 결제 과정이 시작됐습니다.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_selector": "shopping_cart", "button_text": "Checkout"}}
+[  7.00s][user ] 총 비용이 배송비를 포함해서 얼마인지 알려 ⟨ret@10.69s⟩ 주시겠어요?
+[ 11.01s][moshi] 음, ⟦⚡SPAN@11.97s: (tool result) The checkout total is $78.50, including $8.50 for shipping.⟧ 잠깐만 확인해 볼게요… 배송비를 포함한 총 금액은 칠십팔 달러 오십 센트입니다.
+      CALL: {"function": "get_checkout_total", "arguments": {}}
+[ 17.36s][user ] SUMMER20 코드로 기프트 카드를 사용할 수 ⟨ret@20.56s⟩ 있을까요?
+[ 20.79s][moshi] 바로 ⟦⚡SPAN@21.92s: (tool result) Gift card SUMMER20 was applied; the new total is $58.50.⟧ 할인을 적용해 볼게요… 기프트 카드가 성공적으로 적용됐고, 새로운 총 금액은 오십팔 점 오 영 달러 오십 센트입니다.
+      CALL: {"function": "apply_gift_card", "arguments": {"gift_card_code": "SUMMER20"}}

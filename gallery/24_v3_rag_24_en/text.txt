@@ -2,33 +2,40 @@ v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about the du Plessis family—where does that name originally come from? It sounds French, doesn’t it?
-[  7.62s][moshi] It does have a certain resonance, doesn’t it? The name’s origins are indeed quite interesting, stretching back several centuries.
-[ 10.96s][user ] «backchannel» Yeah.
-[ 14.62s][user ] So, can you tell me a bit about where it originated? I’m really ⟨ret@19.18s⟩ curious.
-[ 19.58s][moshi] Let’s explore the ⟦⚡SPAN@21.18s: The surname du Plessis is of French origin, derived from the Old French “pleis,” meaning “enclosure” or “farm.⟧ etymology of du Plessis— The name du Plessis comes from Old French, meaning an enclosure or a farm.
-[ 27.77s][user ] Oh, a farm! That’s not what I expected. But French makes sense, given the spelling.
-[ 32.63s][moshi] Indeed. Many French names found their way across Europe, and even further afield, through historical movements and trade.
-[ 39.42s][user ] Were there many families with that name, or was it a local name in just one place?
-[ 45.21s][moshi] ⟨ret@44.90s⟩ Considering the ⟦⚡SPAN@46.26s: The du Plessis family originated in Normandy, France, and later spread to other regions of France and beyond.⟧ meaning, it’s logical to ask— The du Plessis family began in Normandy, France, and then spread to other parts of France.
-[ 54.17s][user ] Normandy… that rings a bell. Wasn’t that invaded by the Normans?
-[ 58.53s][moshi] You are quite right to recall Normandy. The Norman invasion of England in ten sixty-six had a profound impact on the region, and on many families.
-[ 67.27s][user ] So, did any of the du Plessis family come to Africa? I’m trying to trace my ancestry.
-[ 73.10s][moshi] ⟨ret@72.94s⟩ Tracing ancestry is a ⟦⚡SPAN@74.94s: Huguenots bearing the surname du Plessis emigrated to South Africa in the late seventeenth century to escape r⟧ rewarding endeavor— Huguenots with the name du Plessis moved to South Africa in the late sixteen-hundreds.
-[ 80.99s][user ] Huguenots… right, the Protestants. So, they were fleeing religious trouble?
-[ 86.38s][moshi] Precisely. Religious persecution was a significant driver of migration during that period, leading many to seek refuge elsewhere.
-[ 92.59s][user ] «backchannel» Yeah.
-[ 96.20s][user ] Were they well-received in South Africa? Or did they face difficulties there ⟨ret@101.21s⟩ too?
-[101.45s][moshi] The ⟦⚡SPAN@102.49s: The du Plessis family became prominent in South African society, establishing farms and contributing to the re⟧ reception of newcomers is always complex— The du Plessis family became important in South Africa, establishing farms.
-[106.74s][user ] «backchannel» Mhm.
-[109.52s][user ] That’s good to hear. So, they thrived there eventually?
-[113.35s][moshi] It seems they did. The Dutch East India Company also played a role in shaping the social and economic landscape of the Cape Colony.
-[118.00s][user ] «backchannel» Yeah.
-[120.57s][user ] I've heard a bit about the Dutch East India Company. Were the du Plessis involved with them at ⟨ret@126.38s⟩ all?
-[126.54s][moshi] Exploring connections to ⟦⚡SPAN@127.98s: Some members of the du Plessis family were involved in trade with the Dutch East India Company in the eighteen⟧ trading companies is useful— Some du Plessis family members traded with the Dutch East India Company in the seventeen-hundreds.
-[134.99s][user ] Interesting! So, they weren’t just farmers, they were also traders.
-[139.56s][moshi] Indeed. Many families diversified their activities, engaging in both agriculture and commerce to secure their livelihoods.
-[146.64s][user ] And did the name change at all when they got to South Africa? Or did it stay exactly the same?
-[152.70s][user ] Did it become more Afrikaans sounding?
-[155.81s][moshi] It is a very good question to consider how names evolve over time. The name did adapt somewhat.
-[161.64s][moshi] ⟨ret@161.56s⟩ Examining linguistic ⟦⚡SPAN@162.84s: In Afrikaans, the name du Plessis is often spelled “Du Plessis” with a capital 'D' and is pronounced with a di⟧ adaptations is a key aspect— In Afrikaans, the name is spelled “Du Plessis” and has a guttural pronunciation.
+[  0.00s][user ] I was reading a book, and the character’s name was du Plessis. It sounded… unusual. Where does that name come from?
+[  8.12s][moshi] ⟨ret@8.04s⟩ That is ⟦⚡SPAN@9.08s: Du Plessis is a French surname originating as a topographic name for someone who lived near a manor house, fro⟧ a very good question. The name du Plessis has a fascinating history, tracing back to France.
+[ 14.52s][moshi] It's a name connected to landscapes, actually. The surname du Plessis originated as a topographic name, denoting residence near an enclosure. A rather pastoral beginning, wouldn’t you say?
+[ 20.17s][user ] «backchannel» Yeah.
+[ 26.30s][user ] So it’s French originally? But I’ve seen it used in South Africa a lot.
+[ 31.08s][moshi] ⟨ret@30.84s⟩ You are quite observant ⟦⚡SPAN@32.84s: French Huguenots fleeing religious persecution in the 17th and 18th centuries settled in South Africa, bringin⟧ to notice its prevalence in Southern Africa. The name traveled with French Huguenots.
+[ 37.73s][moshi] Indeed, migration patterns explain that. Huguenots, fleeing persecution, settled in South Africa and brought the du Plessis name. A story of faith and resilience.
+[ 47.88s][user ] Huguenots…right. Were they involved in trade, those early settlers?
+[ 52.70s][moshi] ⟨ret@52.54s⟩ Many were, certainly. Trade was ⟦⚡SPAN@54.54s: Early Huguenot settlers in South Africa engaged in agriculture, viticulture, and trade, contributing significa⟧ a key part of establishing new lives in the Cape.
+[ 57.63s][moshi] They were practical people, certainly. Huguenots contributed to the Cape Colony's economy through agriculture and trade. A necessity for survival, naturally.
+[ 66.49s][user ] Viticulture? So, wine ⟨ret@69.19s⟩ making?
+[ 69.58s][moshi] Precisely. The ⟦⚡SPAN@70.87s: The Cape region of South Africa possesses a Mediterranean climate ideal for viticulture, allowing Huguenot set⟧ Cape region proved remarkably suited to grape growing.
+[ 74.16s][moshi] The climate was most advantageous. The Cape’s climate was ideal for viticulture, establishing a wine industry. A fortunate coincidence, really.
+[ 82.36s][user ] And did the du Plessis family become prominent ⟨ret@85.48s⟩ there?
+[ 85.63s][moshi] Some branches did rise ⟦⚡SPAN@87.48s: The du Plessis family became a prominent and influential family in South Africa, holding positions in governme⟧ to prominence, yes. Their influence spread over generations.
+[ 90.58s][moshi] Their impact was certainly felt. The du Plessis family became prominent in South African government and land ownership. A familiar pattern of colonial families.
+[100.02s][user ] Was there a specific du Plessis who was particularly ⟨ret@103.71s⟩ important?
+[104.11s][moshi] There was, indeed. A ⟦⚡SPAN@105.71s: General François du Plessis (1795-1865) was a Boer military leader who fought against British annexation in th⟧ military figure stands out rather clearly.
+[107.92s][moshi] A name that resonates with conflict. François du Plessis was a Boer military leader in the First Boer War. A turbulent period in the region’s history.
+[117.69s][user ] The Boer War… I’ve heard of that. It was about land, wasn’t ⟨ret@121.59s⟩ it?
+[121.83s][moshi] Largely, yes. Control ⟦⚡SPAN@123.43s: The First Boer War was fought over British attempts to annex the Transvaal, driven by the discovery of diamond⟧ of resources and territory were central to the conflict.
+[126.67s][moshi] Resources often fuel conflict. The First Boer War involved British annexation attempts driven by diamond and gold discoveries. A regrettable, but predictable, outcome.
+[129.81s][user ] «backchannel» Nice.
+[136.41s][user ] Diamonds and gold… so it was a scramble for wealth.
+[139.58s][moshi] [laugh] A rather blunt assessment, but not inaccurate. The allure of riches was potent.
+[145.00s][user ] So, back to the name itself… is it still common in ⟨ret@149.11s⟩ France?
+[149.35s][moshi] It is less common ⟦⚡SPAN@151.11s: While still present in France, the surname du Plessis is now far more prevalent in South Africa due to Hugueno⟧ now than it once was, yes. Emigration shifted its concentration.
+[154.78s][moshi] The diaspora changed everything. The du Plessis name is more prevalent in South Africa than in France now. A fascinating consequence of historical events.
+[165.31s][user ] It’s funny how names travel with people. It's like a little piece of history.
+[169.75s][moshi] Precisely. Names are often living chronicles, aren't they? They carry echoes of past lives.
+[173.43s][user ] «backchannel» Yeah.
+[175.90s][user ] Do you think there were du Plessis families involved in the West African trade at all?
+[181.07s][moshi] ⟨ret@180.91s⟩ That is an intriguing ⟦⚡SPAN@182.59s: While not prominently documented, some French Huguenot families, including branches of du Plessis, engaged in ⟧ question. It requires a little digging, but it is plausible.
+[185.98s][moshi] Connections are often hidden in the records. Some du Plessis families engaged in maritime trade with West Africa in the 18th century. A more subtle connection, but a connection nonetheless.
+[197.23s][user ] So maybe some du Plessis were trading goods *to* West Africa, ⟨ret@201.95s⟩ then?
+[202.02s][moshi] Quite possibly. The French ⟦⚡SPAN@203.63s: French trading posts along the West African coast in the 18th century facilitated trade in textiles, firearms,⟧ had established trading posts along the coast by that time.
+[207.16s][moshi] Coastal posts were essential hubs. French trading posts facilitated trade in textiles and firearms along the

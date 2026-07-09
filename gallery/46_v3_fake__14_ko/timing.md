@@ -1,51 +1,47 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 혹시 “My Love, My Life”라는 곡을 누가 썼는지 아세요? 맘마미아에서 정말 아름다운 노래거든요.
-     5.88s  <ret> 발화 (turn1 첫 프레임)
-     6.27s  agent 발화 시작: <ret> 정말 좋은 곡이네요, 그리고 많은 분들이 궁금해하시는 질문이에요.
-     6.48s  user  발화 끝
-     7.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: Björn Ulvaeus wrote “My Love, My Life” as part of the musical *Chess*.
-     9.93s  agent 발화 시작: 음, “My Love, My Life”는 원래 뮤지컬 *Chess*를 위해 Björn Ulvaeus 님이 작
-    10.11s  agent 발화 끝
-    16.29s  user  발화 시작: 아, 맘마미아를 위해 특별히 쓰여진 곡이 아니었다니 몰랐네요!
-    16.55s  agent 발화 끝
-    20.39s  <ret> 발화 (turn4 첫 프레임)
-    20.53s  user  발화 끝
-    20.71s  agent 발화 시작: <ret> 노래가 여러 상황에서 새로운 생명을 얻는다는 게 참 흥미롭죠, 그러시죠?
-    22.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: Benny Andersson collaborated with Björn Ulvaeus on many songs for ABBA
-    25.08s  <ret> 발화 (turn5 첫 프레임)
-    25.16s  agent 발화 시작: <ret> Björn Ulvaeus 님은 Benny Andersson 님과 자주 협업하셨는데… …특히 ABB
-    25.39s  agent 발화 끝
-    25.58s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.93s]: Benny Andersson collaborated with Björn Ulvaeus on many songs for ABBA
-    31.56s  user  발화 시작: 네.
-    31.77s  user  발화 끝
-    34.54s  agent 발화 시작: 두 분의 협업은 정말 놀라운 성과를 낳았습니다.
-    34.70s  agent 발화 끝
-    36.35s  user  발화 시작: 네.
-    36.70s  user  발화 끝
-    37.28s  user  발화 시작: 그럼 두 분은 함께 밴드 활동을 하셨던 건가요?
-    37.50s  agent 발화 끝
-    40.44s  <ret> 발화 (turn10 첫 프레임)
-    40.52s  agent 발화 시작: <ret> 네, Ulvaeus 님과 Andersson 님은 ABBA의 핵심 멤버였습니다.
-    40.70s  user  발화 끝
-    42.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: Agnetha Fältskog and Anni-Frid Lyngstad completed the ABBA lineup.
-    44.91s  <ret> 발화 (turn11 첫 프레임)
-    45.14s  agent 발화 시작: <ret> 그룹의 전체적인 모습을 말씀드리자면… …Agnetha Fältskog 님과 Anni-Frid Ly
-    45.23s  agent 발화 끝
-    46.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.41s]: Agnetha Fältskog and Anni-Frid Lyngstad completed the ABBA lineup.
-    55.39s  <ret> 발화 (turn12 첫 프레임)
-    55.78s  agent 발화 시작: <ret> 정말 성공적인 그룹 내의 역학 관계를 생각해보면 흥미롭네요.
-    55.85s  agent 발화 끝
-    57.15s  ⚡SPAN 주입(IRRELEVANT) [d'=1.76s / d_lead=4.12s]: (tool result) Current time in Tokyo is 18:32:15 on Saturday, November 
-    59.81s  user  발화 시작: 정말 그렇네요. 그들의 개인적인 삶이 작사에도 영향을 미쳤는지 궁금해요.
-    59.89s  agent 발화 끝
-    65.22s  agent 발화 시작: 정말 통찰력 있는 질문이세요. 관계는 종종 창작 활동에 깊은 영향을 미칩니다.
-    65.46s  user  발화 끝
-    68.69s  user  발화 시작: 네네.
-    69.18s  user  발화 끝
-    71.19s  agent 발화 끝
-    71.47s  user  발화 시작: 저— 그러니까, 그들의 연애가 가사에 영감을 주었나요?
-    75.42s  agent 발화 시작: 네, 종종 그랬습니다. 그들의 삶의 정서적인 풍경은 확실히 중요한 역할을 했습니다.
-    75.53s  user  발화 끝
-    82.55s  agent 발화 끝
+     0.00s  user  발화 시작: 저, “Mamma Mia”에 나오는 “My Love, My Life”를 누가 썼는지 궁금해요. 정말 아름다운
+     6.08s  agent 발화 시작: 정말 멋진 곡이죠, 안 그래요? 깊은 헌신감을 잘 표현한 것 같아요.
+     6.30s  user  발화 끝
+    10.46s  user  발화 시작: 그렇죠. 누가 썼는지 궁금했어요.
+    10.57s  agent 발화 끝
+    12.73s  <ret> 발화 (turn3 첫 프레임)
+    12.88s  agent 발화 시작: <ret> 잠시 알아봐 드릴게요… “My Love, My Life”는 “Mamma Mia!” 제작을 위해 비
+    13.05s  user  발화 끝
+    14.49s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.08s]: Björn Ulvaeus wrote “My Love, My Life”, a song featured in the musical
+    18.93s  user  발화 시작: 네.
+    19.43s  user  발화 끝
+    22.06s  agent 발화 끝
+    22.07s  user  발화 시작: 아, 흥미롭네요! 한 분이 쓴 줄은 몰랐어요.
+    25.30s  user  발화 끝
+    25.36s  agent 발화 시작: 성공한 노래는 주로 한 명의 작가가 있는 경우가 많지만, 협업도 흔해요.
+    30.09s  agent 발화 끝
+    30.14s  user  발화 시작: 맞아요. 혹시 ABBA 멤버였나요?
+    32.85s  <ret> 발화 (turn8 첫 프레임)
+    33.16s  agent 발화 시작: <ret> 정말 날카로운 질문이시네요… 네, 비외른 울바에우스는 유명한 그룹 ABBA의 멤버였습니다.
+    33.19s  user  발화 끝
+    33.89s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.14s]: Björn Ulvaeus was a member of the Swedish pop group ABBA, alongside Be
+    37.71s  user  발화 시작: 네.
+    38.16s  user  발화 끝
+    39.88s  agent 발화 시작: 정말 오래도록 기억될 만한 음악을 만들었죠, 그러시죠?
+    40.06s  agent 발화 끝
+    42.32s  user  발화 시작: 네네.
+    42.95s  user  발화 끝
+    44.07s  user  발화 시작: 정말요! 그렇게 많은 노래를 썼다는 게 놀라워요.
+    44.23s  agent 발화 끝
+    47.41s  <ret> 발화 (turn13 첫 프레임)
+    47.48s  agent 발화 시작: <ret> 맞아요, 그리고 그들의 영향력은 오늘날에도 대중음악에서 계속 느껴지고 있어요.
+    47.67s  user  발화 끝
+    48.37s  ⚡SPAN 주입(IRRELEVANT) [d'=0.96s / d_lead=4.86s]: (tool result) Current time in Tokyo is 14:35 on November 16, 2023.
+    52.34s  agent 발화 끝
+    52.38s  user  발화 시작: 저— 혹시 그 영화를 위해 다른 노래도 썼나요?
+    55.67s  <ret> 발화 (turn15 첫 프레임)
+    55.91s  agent 발화 시작: <ret> 잠시 그가 뮤지컬에 기여한 부분을 더 찾아볼게요… 울바에우스와 베니 앤더슨은 “Mamma Mia!
+    56.08s  user  발화 끝
+    57.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: Björn Ulvaeus and Benny Andersson co-wrote most of the songs for both 
+    64.74s  user  발화 시작: 그러면 주로 두 분이 함께 작업했군요?
+    64.81s  agent 발화 끝
+    67.22s  agent 발화 시작: 본질적으로 그렇습니다. 울바에우스와 앤더슨이 그 프로젝트의 주요 작곡가였습니다.
+    67.32s  user  발화 끝
+    72.60s  agent 발화 끝

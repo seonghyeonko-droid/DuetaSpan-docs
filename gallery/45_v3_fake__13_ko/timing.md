@@ -1,51 +1,55 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 야, 데미 로바토 새 앨범 언제 나와 궁금해. 올해 나온다고 본 것 같아서.
-     4.76s  agent 발화 시작: 음, 데미 로바토는 여러 해 동안 앨범을 많이 냈으니까, “새 앨범”이 어떤 걸 말하는지 알아야 해.
-     4.95s  user  발화 끝
-     9.50s  user  발화 시작: 응.
-     9.86s  user  발화 끝
-    10.92s  user  발화 시작: 아, 맞아. 음, 2015년에 나오는 걸 말하는 거야. 날짜를 계속 헷갈려.
-    11.38s  agent 발화 끝
-    16.12s  <ret> 발화 (turn4 첫 프레임)
-    16.34s  agent 발화 시작: <ret> 확인해 볼게… 네가 예상한 대로 *Confident*는 2015년 10월에 나왔어.
-    16.38s  user  발화 끝
-    17.56s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.98s]: Demi Lovato's album, *Confident*, was released in October 2015.
-    22.32s  agent 발화 끝
-    22.37s  user  발화 시작: 10월, 알았어. 그 달에 무슨 일이 있었는지 기억하려고 하는데… 바쁜 시기였던 것 같아.
-    29.04s  agent 발화 시작: 10월은 보통 꽤 중요한 달이야. 가을이 오고 문화적인 행사가 많이 생기거든. 사실 별을 보기에 아주 좋은 
-    29.14s  user  발화 끝
-    33.76s  user  발화 시작: 어.
-    34.16s  user  발화 끝
-    37.05s  user  발화 시작: [laugh] 너는 항상 별 이야기로 돌아가네, 그렇지?
-    37.15s  agent 발화 끝
-    40.57s  agent 발화 시작: 수년 동안 하늘을 연구했으니 습관이 됐나 봐. 그런데 2015년 10월에 뭘 더 기억하려고 하는 거야?
-    40.76s  user  발화 끝
-    43.55s  user  발화 시작: 음.
-    44.01s  user  발화 끝
-    47.67s  agent 발화 끝
-    47.79s  user  발화 시작: 내 여동생이 그때 새 차를 샀던 것 같은데… 아니면 11월이었나? 나는 시간 감각이 엉망이야.
-    54.03s  agent 발화 시작: 가족 기념일은 앨범 발매일보다 찾기 더 어려운 것 같아. 그렇게 크게 발표하지 않으니까.
-    54.24s  user  발화 끝
-    55.93s  user  발화 시작: 어.
-    56.47s  user  발화 끝
-    59.65s  user  발화 시작: 진짜! 좋아, 다른 이야기로 해 볼까. 페르세우스 유성우에 대해 아는 거 있어?
-    59.73s  agent 발화 끝
-    65.25s  user  발화 끝
-    65.64s  agent 발화 시작: 오, 물론이지! 페르세우스 유성우는 일 년 중 가장 믿을 수 있고 멋진 유성우 중 하나야.
-    71.37s  user  발화 시작: 그거 보통 언제쯤 일어나? 올해 꼭 보고 싶어.
-    71.61s  agent 발화 끝
-    74.84s  <ret> 발화 (turn17 첫 프레임)
-    74.84s  user  발화 끝
-    74.91s  agent 발화 시작: <ret> 천체 현상을 예측하는 건 내가 좋아하는 일이지… 페르세우스 유성우는 보통 8월 12일과 13일 사
-    76.76s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.34s]: The Perseid meteor shower peaks around August 12th to 13th each year.
-    79.57s  user  발화 시작: 어어.
-    80.30s  user  발화 끝
-    83.02s  agent 발화 끝
-    83.10s  user  발화 시작: 8월, 알았어. 그거 좋은 정보네. 그때쯤에 새 달이 뜨나? 그러면 보기 딱 좋겠네.
-    88.64s  <ret> 발화 (turn20 첫 프레임)
-    88.96s  agent 발화 시작: <ret> 어두운 하늘이 중요하지. 달력 좀 봐 줄게.
-    89.08s  user  발화 끝
-    90.16s  ⚡SPAN 주입(IRRELEVANT) [d'=1.52s / d_lead=3.09s]: (tool result) AAPL: 170.34 USD +0.52 (0.31%)
-    92.05s  agent 발화 끝
+     0.00s  user  발화 시작: 야, 데미 로바토 새 앨범 언제 나와 궁금해. 올해 나온다는 얘기 얼핏 들었는데.
+     4.67s  <ret> 발화 (turn1 첫 프레임)
+     4.98s  agent 발화 시작: <ret> 오, 데미 로바토 신보에 관심 있구나—기대되겠다!
+     5.18s  user  발화 끝
+     6.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.60s]: Demi Lovato’s album, “Confident”, was released in October 2015.
+     8.40s  agent 발화 시작: 걔 앨범 “Confident”는 사실 이천십오년 십월에 나왔어.
+     8.58s  agent 발화 끝
+    11.12s  user  발화 시작: 응.
+    11.56s  user  발화 끝
+    12.33s  agent 발화 끝
+    13.23s  user  발화 시작: 이천십오년? 와, 엄청 오래됐네! 지금 다른 앨범도 만들고 있어?
+    18.37s  user  발화 끝
+    18.41s  agent 발화 시작: 시간이 좀 흘렀네, 그렇지? 뮤지션들은 계속 창작 활동하잖아.
+    22.25s  agent 발화 끝
+    22.79s  user  발화 시작: 진짜 새 앨범 듣고 싶어. 혹시 앨범 발매에 대한 정보 같은 거 있어?
+    26.99s  <ret> 발화 (turn7 첫 프레임)
+    27.38s  agent 발화 시작: <ret> 데미 로바토 음악 계획에 대한 최신 정보를 찾아볼게. 지금 업데이트를 확인 중인데, 새 앨범 발매
+    27.61s  user  발화 끝
+    28.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.92s]: (tool result) AAPL: 170.34 USD +0.45 (0.26%)
+    32.60s  user  발화 시작: 어.
+    33.24s  user  발화 끝
+    36.33s  agent 발화 끝
+    36.51s  user  발화 시작: 아쉽다. 발표가 있을 때까지 계속 기다려야겠네.
+    39.73s  agent 발화 시작: 공식 채널을 주시하는 게 제일 좋아, 제일 먼저 알게 될 거야.
+    39.89s  user  발화 끝
+    41.31s  user  발화 시작: 음.
+    41.66s  user  발화 끝
+    43.50s  user  발화 시작: 그럼 걔 옛날 앨범은 어때? 추천해 줄 만한 거 있어?
+    43.62s  agent 발화 끝
+    47.09s  <ret> 발화 (turn13 첫 프레임)
+    47.20s  user  발화 끝
+    47.41s  agent 발화 시작: <ret> 오, 좋은 질문이다!
+    48.21s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.62s]: Demi Lovato’s debut album, “Don’t Forget”, was released in September 2
+    48.88s  agent 발화 시작: 예전 앨범 좋아하면 “Don’t Forget”는 이천팔년 구월에 나왔어.
+    49.03s  agent 발화 끝
+    50.21s  user  발화 시작: 어.
+    50.71s  user  발화 끝
+    52.83s  user  발화 시작: 아, 그거 기억난다! 엄청 오래됐네.
+    53.04s  agent 발화 끝
+    55.55s  user  발화 끝
+    55.88s  agent 발화 시작: 가끔 옛날 좋아하는 곡 다시 듣는 것도 재밌잖아—마치 익숙한 별자리 바라보는 것 같지.
+    61.55s  user  발화 시작: 너 천문학자잖아, 그렇지? 별처럼 음악에서도 패턴을 찾니?
+    61.76s  agent 발화 끝
+    66.55s  user  발화 끝
+    66.78s  agent 발화 시작: [laugh] 재밌는 생각인데! 가끔 평행선을 보기도 해—반복, 주제, 그리고 변화.
+    70.35s  user  발화 시작: 어어.
+    71.17s  user  발화 끝
+    73.12s  agent 발화 끝
+    75.06s  user  발화 시작: 정말 흥미롭다. 그럼, “Don’t Forget” 전에 앨범은 뭐였어?
+    79.32s  user  발화 끝
+    79.42s  agent 발화 시작: “Don’t Forget” 전에 데미 로바토는 디즈니 채널의 “Sonny with a Chance”에서 주로
+    84.79s  agent 발화 끝

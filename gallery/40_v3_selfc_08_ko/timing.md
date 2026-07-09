@@ -2,42 +2,38 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 줘.
-     3.48s  <ret> 발화 (turn1 첫 프레임)
-     3.72s  agent 발화 시작: <ret> 네, 그 여행에 대한 옵션을 찾아 볼게요. 5월 10일에 출발하는 버스가 세 대 있는데, 가격은 
-     3.80s  user  발화 끝
-     5.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: (tool result) Buses depart Chicago for Denver on May tenth at 8:00 AM,
-    13.97s  agent 발화 끝
-    14.54s  user  발화 시작: 1시 30분 버스는 어때?
-    16.54s  <ret> 발화 (turn3 첫 프레임)
-    16.69s  agent 발화 시작: <ret> 그 특정 출발에 대한 정보를 가져올게요. 1시 30분 버스는 직행이고, 10시에 도착하며, 와이파
-    16.88s  user  발화 끝
-    17.58s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.32s]: (tool result) The 1:30 PM bus is a direct route, arriving in Denver at
-    26.80s  agent 발화 끝
-    27.01s  user  발화 시작: 그거 세 자리 예약해 줄 수 있어?
-    28.69s  <ret> 발화 (turn5 첫 프레임)
-    29.01s  agent 발화 시작: <ret> 네, 예약을 진행해 드릴 수 있어요. 예약이 확정됐습니다. 확인 번호는 BX7492이고, 총 금액
-    29.08s  user  발화 끝
-    30.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.32s]: (tool result) Reservation confirmed: confirmation number is BX7492; to
-    38.84s  agent 발화 끝
-    38.87s  user  발화 시작: 좋네—
-    39.85s  agent 발화 시작: 그리고 다시 한 번 모든 세부 사항을 확인해 드릴게요—
-    39.96s  user  발화 끝
-    42.73s  user  발화 시작: 근데 혹시 5월 11일로 날짜를 변경할 수 있을까?
-    43.41s  agent 발화 끝
-    46.05s  <ret> 발화 (turn9 첫 프레임)
-    46.37s  agent 발화 시작: <ret> 네, 대신 5월 11일의 이용 가능 여부를 확인해 볼게요. 5월 11일에는 오전 9시 15분과 오
-    46.57s  user  발화 끝
-    48.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.21s]: (tool result) Buses depart Chicago for Denver on May eleventh at 9:15 
-    59.28s  user  발화 시작: 오후 2시 버스가 더 나은 것 같아.
-    59.59s  agent 발화 끝
-    61.82s  <ret> 발화 (turn11 첫 프레임)
-    61.98s  agent 발화 시작: <ret> 좋은 선택이세요, 그 버스의 구체적인 사항을 살펴볼게요. 오후 2시 버스는 리클라이닝 시트, 화장
-    62.06s  user  발화 끝
-    63.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) The 2:00 PM bus is a direct route, arriving in Denver at
-    68.92s  user  발화 시작: 응.
-    69.32s  user  발화 끝
-    72.64s  agent 발화 끝
-    73.78s  user  발화 시작: 좋아. 그거 세 자리 예약해 줘.
-    76.12s  agent 발화 시작: 네, 바로 그 좌석을 예약해 드릴게요.
-    76.22s  user  발화 끝
-    79.91s  agent 발화 끝
+     4.29s  <ret> 발화 (turn1 첫 프레임)
+     4.53s  agent 발화 시작: <ret> 알겠습니다. 그 여행에 대한 버스를 찾아볼게요— 버스 옵션이 세 가지 있는데, 가격은 129달러부
+     4.63s  user  발화 끝
+     6.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixB
+    14.04s  agent 발화 끝
+    14.63s  user  발화 시작: 좀 비싸네. 두 명만 하면 어때?
+    16.59s  <ret> 발화 (turn3 첫 프레임)
+    16.75s  agent 발화 시작: <ret> 승객 수를 조정해 볼게요— 두 명으로 하니까 가격대는 이제 95달러에서 150달러까지입니다.
+    16.93s  user  발화 끝
+    17.55s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.31s]: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixB
+    23.10s  agent 발화 끝
+    23.34s  user  발화 시작: 흠, 그레이하운드가 항상 제일 싸?
+    26.38s  user  발화 끝
+    26.51s  agent 발화 시작: 일반적으로 네, 그레이하운드가 가장 저렴한 요금을 제공하는 경향이 있습니다—
+    31.09s  user  발화 시작: 와이파이 있는 버스 있어?
+    31.69s  agent 발화 끝
+    33.03s  user  발화 끝
+    33.08s  agent 발화 시작: 그레이하운드와 플릭스버스는 모두 와이파이가 가능한 편의시설로 나와 있습니다. Wanderu는 명시되어 있지 
+    38.57s  user  발화 시작: 응.
+    38.92s  user  발화 끝
+    42.03s  agent 발화 시작: 그레이하운드 웹사이트에는 모든 좌석에 전원 콘센트가 있다는 내용도 나와 있는데, 장거리 여행에 꽤 유용할 수
+    42.07s  agent 발화 끝
+    49.60s  <ret> 발화 (turn10 첫 프레임)
+    49.99s  agent 발화 시작: <ret> 그레이하운드 버스 G749는 오전 8시에 출발해서 덴버에는 밤 10시에 도착하고, 와이파이도 있습
+    50.04s  agent 발화 끝
+    51.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) Buses_3_GetDetails returned: Greyhound bus ID G749 depar
+    55.73s  user  발화 시작: 응.
+    56.22s  user  발화 끝
+    58.74s  user  발화 시작: 좋아, 그 그레이하운드 버스 티켓 두 장 예약해 줘.
+    58.84s  agent 발화 끝
+    61.59s  <ret> 발화 (turn13 첫 프레임)
+    61.91s  agent 발화 시작: <ret> 티켓을 확보해 드릴게요— 티켓 예약을 완료했습니다! 확인 번호는 B29X7R이고, 총 금액은 19
+    61.98s  user  발화 끝
+    63.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.46s]: (tool result) Buses_3_Book returned: Confirmation number is B29X7R, tw
+    70.21s  agent 발화 끝

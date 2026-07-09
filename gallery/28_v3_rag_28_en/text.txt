@@ -2,13 +2,15 @@ v3_rag_28_en src=nq style=v2
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, when did the government officially start taking care of veterans, really?
-[  4.38s][moshi] That’s a good question, and the answer is a bit complex, as it evolved over time.
-[  9.01s][moshi] ⟨ret@8.61s⟩ ⟦⚡SPAN@9.49s: The United States Department of Veterans Affairs was created by Congress in 1930.⟧ Establishing a dedicated department— It was formally created by Congress in nineteen thirty.
-[ 12.12s][user ] «backchannel» Okay.
-[ 14.64s][user ] Nineteen thirty? That seems…late, doesn't it? Weren't there programs before then?
-[ 20.98s][moshi] Indeed, there were earlier provisions, but nothing on this scale or with this focus.
-[ 25.60s][moshi] ⟨ret@25.21s⟩ Prior to ⟦⚡SPAN@26.81s: Before 1930, veterans’ benefits were primarily administered by the Bureau of Pensions, established in 1811.⟧ the department’s founding, support— Before nineteen thirty, the Bureau of Pensions, founded in eighteen eleven, handled veteran benefits.
-[ 34.79s][user ] But what kind of benefits *were* they getting back then, in the early 1800s?
-[ 39.80s][moshi] «interrupted» Ah, a very pertinent question—
-[ 41.84s][moshi] ⟨ret@41.45s⟩ Those early benefits ⟦⚡SPAN@43.45s: Early pension benefits primarily consisted of land grants and monetary payments for disabilities acquired duri⟧ largely included land grants and money for service-related disabilities.
+[  0.00s][user ] So, when did the government first really start taking care of veterans?
+[  3.85s][moshi] That’s a good question, and the answer evolved over time, naturally.
+[  7.82s][moshi] ⟨ret@7.42s⟩ ⟦⚡SPAN@8.30s: The United States Department of Veterans Affairs was established in 1930.⟧ Establishing a dedicated department— it was officially established in nineteen thirty, though earlier programs existed.
+[ 11.43s][user ] «backchannel» Okay.
+[ 14.35s][user ] Nineteen thirty? That seems… late, doesn’t it? Weren't there veterans from World War One?
+[ 21.40s][moshi] It does appear late when considering the needs of those who served in the Great War.
+[ 25.84s][moshi] ⟨ret@25.44s⟩ Earlier ⟦⚡SPAN@26.56s: Prior to 1930, the Veterans Bureau, created in 1921, administered veteran benefits.⟧ support efforts were certainly— before nineteen thirty, the Veterans Bureau, formed in nineteen twenty-one, handled benefits.
+[ 33.67s][user ] But what kind of benefits were they getting *before* the bureau, I mean, after the Civil War?
+[ 38.46s][moshi] «interrupted» A very pertinent question – it’s important to understand the history—
+[ 41.71s][user ] «interrupts_prev» I just mean, were they just… forgotten?
+[ 43.98s][moshi] Certainly not forgotten, though support was less formalized then.
+[ 47.48s][moshi] ⟨ret@47.09s⟩ ⟦⚡SPAN@48.05s: After the Civil War, veterans received pensions and medical care through the National Home for Disabled Soldie⟧ Initial provisions focused largely on— following the Civil War, pensions and medical care were offered via the National Home.

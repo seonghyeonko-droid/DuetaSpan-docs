@@ -2,13 +2,13 @@ v3_hesit_18_en src=nq style=v1
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about Pompeii… uh, and it got me wondering— when did Vesuvius last, like, actually erupt?
-[  7.54s][moshi] That’s a good question, thinking about the history of that region.
-[ 11.54s][moshi] ⟨ret@11.22s⟩ Let me quickly ⟦⚡SPAN@13.14s: Mount Vesuvius last erupted in March of nineteen forty-four.⟧ check the records for you— The last eruption of Mount Vesuvius occurred in March nineteen forty-four.
-[ 20.42s][user ] Nineteen forty-four? Wow, that’s… relatively recent, isn’t it?
-[ 25.00s][moshi] [laugh] It is, compared to some volcanoes— though it’s been quiet for quite some time now.
-[ 32.00s][moshi] ⟨ret@31.76s⟩ I can ⟦⚡SPAN@33.20s: The nineteen forty-four eruption caused damage to nearby towns and US aircraft.⟧ find details on that eruption— The eruption in nineteen forty-four damaged towns and also impacted US aircraft.
-[ 41.98s][user ] US aircraft? That’s—
-[ 44.37s][user ] …wait, did that eruption actually affect the Allied landings in Italy?
-[ 48.81s][moshi] That's a very insightful connection to make, regarding the war effort.
-[ 53.43s][moshi] ⟨ret@53.35s⟩ Yes, looking ⟦⚡SPAN@55.11s: The 1944 eruption disrupted Allied airfields and delayed some operations.⟧ at historical reports— The nineteen forty-four eruption disrupted Allied airfields, and some operations were delayed.
+[  0.00s][user ] I was just reading about Pompeii… uh, and it made me wonder— when was the last time Vesuvius actually erupted?
+[  7.19s][moshi] That’s a very common question, especially when considering the history of that region.
+[ 12.71s][moshi] ⟨ret@12.39s⟩ Let me quickly access ⟦⚡SPAN@14.39s: <Mount Vesuvius last erupted in March 1944.>⟧ the most recent data— The last confirmed eruption of Mount Vesuvius occurred in March of nineteen forty-four.
+[ 20.78s][user ] Nineteen forty-four? Wow. That’s… relatively recent, I guess. Was it as bad as the one that destroyed Pompeii?
+[ 28.48s][moshi] «interrupted» The nineteen forty-four eruption was significant, but thankfully not on the same scale as the seventy-nine event. It was a Strombolian eruption—
+[ 37.45s][user ] «interrupts_prev» Wait, a Strombolian eruption— what exactly *is* that? Is that a type of eruption, or…?
+[ 43.63s][moshi] «interrupted» It’s a specific type of mild volcanic eruption—
+[ 47.07s][moshi] ⟨ret@46.84s⟩ Strombolian eruptions ⟦⚡SPAN@48.84s: <Strombolian eruptions are characterized by short-lived, explosive bursts from a single vent.>⟧ involve short, explosive bursts from a single vent, typically with lava fountains.
+[ 55.96s][user ] Okay, so less… city-destroying, more… fireworks?
+[ 59.94s][moshi] [laugh] A somewhat apt comparison, yes. It caused some damage to nearby structures, but no loss of life.

@@ -2,17 +2,17 @@ v3_defer_10_ko src=mcp style=mcp_deferred
 SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드크비스트입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 프랑스 휴가 사진들 찾아 주시는데, 썸네일 말고 큰 사진으로 보여 주세요.
-[  4.61s][moshi] ⟨ret@4.37s⟩ 응, 작년 프랑스 ⟦⚡SPAN@6.37s: (tool result) Seven files were found: "Paris_Eiffel_Tower.jpg", "Nice_Beach.png", "Lyon_Food.jpeg", "Provence_⟧ 여행 사진 7장 찾았어. 썸네일은 뺀 거 맞지?
-      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": 2023, "exclude": "thumbnails"}}
-[  7.24s][user ] «backchannel» 네.
-[ 10.69s][user ] 아, 정말 좋네요! 그리고 "Paris_Eiffel_Tower.jpg" 사진을 제 여동생, 엘레노어에게 보내 줄 수 ⟨ret@17.22s⟩ 있을까요?
-[ 17.54s][moshi] 사진 보내는 ⟦⚡SPAN@19.22s: (tool result) The file "Paris_Eiffel_Tower.jpg" was sent to Eleanor’s email address, eleanor.reed@example.com.⟧ 건 식은 죽 먹기지. 엘레노어 eleanor.reed@example.com 에게 에펠탑 사진 보냈어.
-      CALL: {"function": "send_file", "arguments": {"recipient": "Eleanor", "file_name": "Paris_Eiffel_Tower.jpg"}}
-[ 20.40s][user ] «backchannel» 네.
-[ 26.29s][user ] 완벽하네요, 감사합니다. 음, 작년 7월 15일, 니스 날씨는 어땠었나요?
-[ 31.61s][moshi] 날씨 정보 알아볼게.
-[ 32.31s][user ] «backchannel» 네.
-[ 32.84s][user ] 아, 날씨는 됐어요. 그냥 토요일에 식당 예약하라고 알려 주세요.
-  ⟦⚡지연 SPAN 도착@36.28s: (tool result) A reminder was set for Saturday at 8:00 PM to “Book a restaurant”.⟧
-[ 36.99s][moshi] «deferred_result» ⟨ret@36.99s⟩ 알았어, 바로 알림 설정해 줄게. 토요일 8시에 식당 예약하라고 알려줬어.
+[  0.00s][user ] 프랑스 휴가 사진들 찾아 주시는데, 썸네일 말고 큰 사진으로 보여 ⟨ret@4.40s⟩ 주세요.
+[  4.64s][moshi] ⟦⚡SPAN@4.75s: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender_Fields.jpg", and "Nice_Beac⟧ 응.
+      CALL: {"function": "search_files", "arguments": {"keywords": ["France", "holiday"], "year": 2023, "exclude": ["thumbnail"]}}
+[  4.75s][user ] «backchannel» 네.
+[  6.10s][user ] 보낼게. 엘리너한테 에펠탑 사진 이메일 ⟨ret@9.07s⟩ 보냈어.
+[  9.31s][moshi] ⟦⚡SPAN@9.57s: (tool result) Email sent successfully to eleanor.vance@email.com with attachment "Paris_Eiffel_Tower.jpg".⟧ 응.
+      CALL: {"function": "send_email", "arguments": {"recipient": "eleanor.vance@email.com", "attachment": "Paris_Eiffel_Tower.jpg", "subject": "From France", "body": "Thought you'd enjoy this!"}}
+[  9.41s][user ] «backchannel» 네.
+[ 11.20s][user ] 알아볼게.
+[ 11.94s][moshi] 그래.
+[ 12.11s][user ] «backchannel» 네.
+[ 12.17s][user ] 내일 니스 날씨는 부분적으로 흐리고, 최고 기온은 이십이도이고, 비 올 확률은 낮아.
+  ⟦⚡지연 SPAN 도착@16.80s: (tool result) The weather in Nice tomorrow will be partly cloudy with a high of twenty-two degrees Celsius and⟧
+[ 17.52s][moshi] «deferred_result» ⟨ret@17.52s⟩ 나 지금 예보 정보 있어. 내일 니스에는 구름 조금 끼고, 최고 기온은 이십이도에 비 올 확률은 거의 없어.

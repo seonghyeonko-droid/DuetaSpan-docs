@@ -2,50 +2,50 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: So, I was reading this dystopian novel, and it got me thinki
-     4.11s  agent 발화 시작: That's a very common reaction to powerful literature.
-     4.16s  user  발화 끝
-     7.11s  user  발화 시작: …where did the phrase “big brother” actually come from? It f
-     7.11s  agent 발화 끝
-    12.09s  <ret> 발화 (turn3 첫 프레임)
-    12.24s  agent 발화 시작: <ret> That’s a fascinating question about a very influential
-    12.29s  user  발화 끝
-    14.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.00s]: The term “Big Brother” originates from George Orwell’s dystopian novel
-    21.56s  agent 발화 끝
-    21.60s  user  발화 시작: Nineteen forty-nine… that's pretty recent, historically spea
-    25.91s  user  발화 끝
-    26.27s  agent 발화 시작: Indeed, though its impact feels much older now, doesn't it?
-    28.17s  user  발화 시작: Okay.
-    28.71s  user  발화 끝
-    30.46s  user  발화 시작: Was Orwell thinking of someone specific when he created that
-    30.57s  agent 발화 끝
-    34.86s  <ret> 발화 (turn8 첫 프레임)
-    35.02s  agent 발화 시작: <ret> Looking into Orwell’s inspirations is quite revealing.
-    35.14s  user  발화 끝
-    36.06s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.26s]: Orwell stated the concept of Big Brother was inspired by a poster depi
-    46.62s  user  발화 시작: Stalin? That makes a lot of sense, actually—
-    46.65s  agent 발화 끝
-    49.84s  agent 발화 시작: The imagery of constant observation—
-    49.95s  user  발화 끝
-    51.59s  user  발화 시작: So, it wasn’t about family at all? I always assumed—
-    52.29s  agent 발화 끝
-    55.76s  user  발화 끝
-    55.93s  agent 발화 시작: No, it wasn’t intended as a familial reference at all.
-    59.77s  agent 발화 끝
-    59.87s  user  발화 시작: That's surprising! I just thought it was a sort of protectiv
-    65.05s  agent 발화 시작: It’s a very natural misinterpretation, given the phrase itse
-    65.19s  user  발화 끝
-    69.17s  agent 발화 끝
-    69.86s  user  발화 시작: Did the phrase catch on right away after the book was publis
-    73.40s  <ret> 발화 (turn16 첫 프레임)
-    73.72s  agent 발화 시작: <ret> Its adoption into the broader culture was gradual. "Bi
-    73.86s  user  발화 끝
-    74.92s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.56s]: The phrase “Big Brother” gained widespread use in the nineteen fifties
-    79.14s  user  발화 시작: Yeah, yeah.
-    79.78s  user  발화 끝
-    83.46s  user  발화 시작: So, it took a little…
-    83.51s  agent 발화 끝
-    84.92s  user  발화 끝
-    85.58s  user  발화 시작: …while to become the cultural shorthand it is now?
-    89.12s  agent 발화 시작: Precisely. Its meaning has only deepened with time and evolv
-    89.14s  user  발화 끝
-    94.40s  agent 발화 끝
+     3.99s  <ret> 발화 (turn1 첫 프레임)
+     4.30s  agent 발화 시작: <ret> That’s a fascinating area of literature… George Orwell
+     4.44s  user  발화 끝
+     5.19s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.85s]: <Nineteen Eighty-Four is a dystopian novel published in 1949, written 
+    13.78s  user  발화 시작: …but where did *Orwell* get the idea for “Big Brother”? It j
+    13.81s  agent 발화 끝
+    19.48s  user  발화 끝
+    19.59s  agent 발화 시작: It’s a very evocative phrase, isn’t it?
+    22.04s  agent 발화 끝
+    22.11s  user  발화 시작: I was wondering about historical context, like, was it inspi
+    27.99s  user  발화 끝
+    28.05s  <ret> 발화 (turn5 첫 프레임)
+    28.29s  agent 발화 시작: <ret> That's an excellent question regarding its origins… Or
+    29.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.05s]: <Orwell stated the concept came from a childhood memory of posters dep
+    33.09s  user  발화 시작: Okay.
+    33.72s  user  발화 끝
+    38.30s  agent 발화 끝
+    38.40s  user  발화 시작: So, it wasn’t a political leader or anything like that?
+    42.19s  agent 발화 시작: Not directly, no. It was more a feeling of pervasive surveil
+    42.20s  user  발화 끝
+    46.43s  user  발화 시작: But didn’t the Spanish Civil War…
+    46.49s  agent 발화 끝
+    48.79s  user  발화 끝
+    49.20s  user  발화 시작: …have something to do with it?
+    50.75s  agent 발화 시작: You’re right to bring that up—
+    50.94s  user  발화 끝
+    51.60s  user  발화 시작: I mean, he fought in that, didn’t he, and it was all about p
+    52.31s  agent 발화 끝
+    55.99s  user  발화 끝
+    56.02s  agent 발화 시작: The Spanish Civil War deeply impacted Orwell; he witnessed f
+    62.78s  agent 발화 끝
+    62.85s  user  발화 시작: Right. So the “Big Brother” figure isn’t just one person, bu
+    67.57s  agent 발화 시작: Precisely. It represents the all-seeing state, rather than a
+    67.63s  user  발화 끝
+    73.31s  agent 발화 끝
+    73.66s  user  발화 시작: Mm-hmm. That makes a lot of sense. Did the book become popul
+    78.62s  <ret> 발화 (turn17 첫 프레임)
+    78.77s  agent 발화 시작: <ret> Its initial reception was…complex… It had mixed review
+    78.94s  user  발화 끝
+    80.30s  ⚡SPAN 주입 [d'=1.68s / d_lead=1.83s]: <Initially, *Nineteen Eighty-Four* received mixed reviews, but its sal
+    83.48s  user  발화 시작: Mm-hmm.
+    83.97s  user  발화 끝
+    87.88s  user  발화 시작: I guess the Cold War would have really resonated with the th
+    87.90s  agent 발화 끝
+    92.06s  agent 발화 시작: Absolutely. The anxieties of that era amplified its message 
+    92.09s  user  발화 끝
+    97.11s  agent 발화 끝

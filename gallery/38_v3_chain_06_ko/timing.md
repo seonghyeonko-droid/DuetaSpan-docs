@@ -1,23 +1,27 @@
 # v3_chain_06_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 야, 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 바꿔 줘.
-     4.52s  user  발화 끝
-     4.63s  <ret> 발화 (turn1 첫 프레임)
-     4.71s  agent 발화 시작: <ret> 응, 브라우저 설정을 바꿔 줬어. 사용자 에이전트를 MyCustomBrowser, 버전 십 점 오
-     6.07s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.14s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
-     9.09s  user  발화 시작: 음.
-     9.72s  user  발화 끝
-    10.49s  user  발화 시작: 좋네. 이제 그 설정으로 브라우징할 때 내 IP 주소가 어떻게 보이는지 확인해 줘.
-    10.69s  agent 발화 끝
-    15.25s  <ret> 발화 (turn4 첫 프레임)
-    15.65s  agent 발화 시작: <ret> 알았어, 공용 IP 주소가 어떻게 나오는지 볼까. 지금 IP 주소는 이백삼 점 영 점 일일삼 점 
-    15.81s  user  발화 끝
-    15.97s  ⚡SPAN 주입 [d'=0.72s / d_lead=4.33s]: (tool result) Your public IP address is 203.0.113.42, and your locatio
-    24.32s  agent 발화 끝
-    24.37s  user  발화 시작: 흠, 시애틀? 이상하네. 근처에 있는 별점 다섯 개짜리 빵집 찾아 줘.
-    28.84s  <ret> 발화 (turn6 첫 프레임)
-    29.15s  agent 발화 시작: <ret> 별점 높은 빵집 검색은 좋지.
-    29.27s  user  발화 끝
-    29.34s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.50s]: (tool result) Dahlia Bakery is 0.8 miles away, rated 5 stars; The Crèm
-    31.65s  agent 발화 끝
+     0.00s  user  발화 시작: 내 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 줄래?
+     4.40s  user  발화 끝
+     4.55s  <ret> 발화 (turn1 첫 프레임)
+     4.63s  agent 발화 시작: <ret> 그래, 브라우저 설정을 바꿔 줬어. 지금 브라우저는 MyCustomBrowser, 버전 십 점 오
+     6.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.61s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
+     9.53s  user  발화 시작: 음.
+    10.03s  user  발화 끝
+    11.10s  user  발화 시작: 어, 좋아. 그럼 이 페이지에서 내가 그렇게 보이는지 확인해 줄래?
+    11.29s  agent 발화 끝
+    14.37s  <ret> 발화 (turn4 첫 프레임)
+    14.76s  agent 발화 시작: <ret> 현재 웹페이지에서 보고되는 사용자 에이전트를 확인해 볼게. 응, 페이지에서 지금은 브라우저를 My
+    14.95s  user  발화 끝
+    15.89s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.66s]: (tool result) The current user agent reported by the page is MyCustomB
+    25.52s  agent 발화 끝
+    25.54s  user  발화 시작: 좋아. 그럼 그 브라우저—MyCustomBrowser, 십 점 오—에 대한 리뷰 좀 찾아 줘.
+    30.78s  <ret> 발화 (turn6 첫 프레임)
+    31.09s  agent 발화 시작: <ret> 그 특정 브라우저 버전에 대한 리뷰를 검색해 줄게. 포럼 스레드 하나랑 블로그 게시물 세 개를 찾
+    31.19s  user  발화 끝
+    31.82s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.10s]: (tool result) Search results show one forum thread and three blog post
+    42.22s  agent 발화 끝
+    44.02s  user  발화 시작: 흠, 좋아. 제목만 읽어 줘.
+    46.78s  user  발화 끝
+    46.84s  agent 발화 시작: 당연히, 제목을 읽어 줄게.
+    48.82s  agent 발화 끝

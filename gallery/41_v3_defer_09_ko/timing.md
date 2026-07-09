@@ -3,19 +3,24 @@
 
      0.00s  user  발화 시작: 방 세 개를 샌디에이고 오션 뷰 호텔에서 2월 10일부터 7박으로 예약해 줘.
      5.25s  <ret> 발화 (turn1 첫 프레임)
-     5.41s  agent 발화 시작: <ret> 네, 예약을 확인해 드렸습니다. 2월 10일부터 17일까지 방 세 개가 예약됐습니다.
-     5.60s  user  발화 끝
-     7.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: (tool result) Hotel reservation confirmed for three rooms at Ocean Vie
-    11.24s  agent 발화 끝
-    12.04s  user  발화 시작: 어, 취소 정책은 뭔데?
-    13.14s  <ret> 발화 (turn3 첫 프레임)
-    13.46s  agent 발화 시작: <ret> 확인해 보시는 건 정말 중요하죠. 2월 3일까지는 전액 환불이 가능하고, 그 이후로는 환불이 안 
-    13.66s  user  발화 끝
-    15.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) Cancellation is permitted up to February third with a fu
-    21.42s  user  발화 시작: 그래. 확인서를 나한테 보내 줄 수 있어?
-    21.47s  agent 발화 끝
-    23.72s  <ret> 발화 (turn5 첫 프레임)
-    23.80s  agent 발화 시작: <ret> 물론 그렇게 해 드릴 수 있습니다. 확인서가 모든 세부 사항과 함께 고객님의 주소로 이메일로 보내
-    24.04s  user  발화 끝
-    25.24s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.14s]: (tool result) Email sent to user’s email address with subject “Ocean V
+     5.41s  agent 발화 시작: <ret> 네, 예약 정보 확인해 드릴게요. 2월 10일부터 7박, 오션 뷰 호텔 방 세 개, 총 금액은 2
+     5.61s  user  발화 끝
+     7.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.66s]: (tool result) Reservation confirmed for three rooms at Ocean View Hote
+    15.89s  agent 발화 끝
+    16.70s  user  발화 시작: 어… 확인 이메일 좀 보내 줄래?
+    18.46s  <ret> 발화 (turn3 첫 프레임)
+    18.78s  agent 발화 시작: <ret> 물론이죠, 바로 처리해 드릴게요. 예약하신 모든 내용을 담은 확인 이메일을 등록된 주소로 보내 드
+    18.96s  user  발화 끝
+    19.42s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.13s]: (tool result) Confirmation email sent to the address associated with y
+    25.98s  user  발화 시작: 좋아. 그때 샌디에이고 날씨 예보는 어때?
+    26.01s  agent 발화 끝
+    28.64s  agent 발화 시작: 잠시만 확인해 드릴게요.
+    28.89s  user  발화 끝
+    29.48s  user  발화 시작: 응.
+    29.88s  user  발화 끝
+    30.34s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The forecast for San Diego, February tenth through seven
+    30.42s  user  발화 시작: 고마워.
     30.52s  agent 발화 끝
+    30.94s  agent 발화 시작: <ret> 약속드린 대로 날씨 예보 정보를 알려 드릴게요. 샌디에이고는 머무시는 동안 화창한 날씨가 이어질 
+    31.05s  user  발화 끝
+    45.41s  agent 발화 끝

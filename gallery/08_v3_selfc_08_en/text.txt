@@ -2,23 +2,17 @@ v3_selfc_08_en src=mcp style=mcp_selfcorrect
 SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.50s⟩ tenth.
-[  4.89s][moshi] Certainly, let’s ⟦⚡SPAN@6.02s: (tool result) Buses depart Chicago for Denver on May tenth at 8:00 AM, 1:30 PM, and 6:45 PM; prices range from⟧ find some options for that trip. There are three departures on May tenth, costing between one hundred twenty-five and one hundred eighty-nine dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[ 13.23s][user ] What about the 1:30 PM ⟨ret@15.21s⟩ bus?
-[ 15.45s][moshi] Let me pull ⟦⚡SPAN@16.81s: (tool result) The 1:30 PM bus is a direct route, arriving in Denver at 10:00 PM; it has Wi-Fi and power outlet⟧ up the details for that specific departure. That 1:30 PM bus is direct, arrives at 10:00 PM, and offers both Wi-Fi and power outlets.
-      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "1:30 PM Chicago to Denver"}}
-[ 26.26s][user ] Can I reserve three seats on that one?
-[ 29.23s][moshi] ⟨ret@29.07s⟩ Absolutely, I can ⟦⚡SPAN@30.67s: (tool result) Reservation confirmed: confirmation number is BX7492; total cost is $525.⟧ proceed with the reservation for you. Your reservation is confirmed, confirmation number BX7492, for a total of five hundred twenty-five dollars.
-      CALL: {"function": "Buses_3_ReserveSeats", "arguments": {"bus_id": "1:30 PM Chicago to Denver", "seats": "three"}}
-[ 39.28s][user ] That sounds good—
-[ 40.73s][moshi] «interrupted» And just to confirm all the details one last time—
-[ 43.01s][user ] «interrupts_prev» Actually, could we change the date to May eleventh?
-[ 46.18s][moshi] ⟨ret@46.10s⟩ Of course, let’s check ⟦⚡SPAN@48.10s: (tool result) Buses depart Chicago for Denver on May eleventh at 9:15 AM and 2:00 PM; prices range from $130 t⟧ availability for May eleventh instead. On May eleventh, there are departures at 9:15 AM and 2:00 PM, costing between one hundred thirty and one hundred ninety-five dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
-[ 57.06s][user ] The 2:00 PM bus sounds ⟨ret@59.22s⟩ better.
-[ 59.46s][moshi] Excellent choice, let's look ⟦⚡SPAN@60.98s: (tool result) The 2:00 PM bus is a direct route, arriving in Denver at 10:30 PM; it features reclining seats a⟧ at the specifics of that bus. The 2:00 PM bus offers reclining seats, restrooms, and a direct route, arriving at 10:30 PM.
-      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "2:00 PM Chicago to Denver"}}
-[ 65.05s][user ] «backchannel» Yeah, totally.
-[ 68.72s][user ] Perfect. Reserve three seats on that one, please.
-[ 72.37s][moshi] Certainly, I will reserve those seats for you immediately.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.27s⟩ tenth.
+[  4.67s][moshi] Let’s ⟦⚡SPAN@5.47s: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixBus, and Wanderu, with prices ranging fro⟧ find a bus for that trip— There are three bus options available, ranging in price from one hundred twenty-nine to one hundred eighty-five dollars.
+[ 13.25s][user ] That’s a little pricey. What about just two ⟨ret@16.51s⟩ passengers?
+[ 16.75s][moshi] ⟦⚡SPAN@17.15s: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixBus, and Wanderu, with prices ranging fro⟧ Adjusting the passenger count— For two passengers, the price range is now ninety-five to one hundred fifty dollars.
+[ 23.48s][user ] Hmm, is Greyhound always the cheapest?
+[ 26.59s][moshi] «interrupted» Generally, yes, Greyhound tends to offer the most economical fares—
+[ 29.99s][user ] «interrupts_prev» Do any of them have Wi-Fi?
+[ 31.87s][moshi] Greyhound and FlixBus both list Wi-Fi as an available amenity. Wanderu does not specify.
+[ 35.28s][user ] «backchannel» Yeah.
+[ 37.47s][moshi] «interrupted» Greyhound’s website also notes power outlets at every seat, which can be quite handy on a long trip—
+[ 43.00s][moshi] ⟨ret@42.60s⟩ ⟦⚡SPAN@43.10s: (tool result) Buses_3_GetDetails returned: Greyhound bus ID G749 departs Chicago at 8:00 AM, arrives Denver at⟧ Greyhound bus G749 departs at eight AM, arriving in Denver at ten PM, and does have Wi-Fi.
+[ 47.46s][user ] «backchannel» Yeah, totally.
+[ 49.91s][user ] Okay, book me two tickets on that Greyhound ⟨ret@52.57s⟩ bus.
+[ 52.96s][moshi] Securing ⟦⚡SPAN@53.85s: (tool result) Buses_3_Book returned: Confirmation number is B29X7R, two tickets on Greyhound G749, Chicago to ⟧ those tickets for you— Your tickets are booked! Confirmation number B29X7R, a total of one hundred ninety dollars.

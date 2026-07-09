@@ -1,51 +1,51 @@
 # v3_pause_16_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 음, 디스토피아 소설 읽으셨구나.
-     1.98s  user  발화 끝
-     2.44s  agent 발화 시작: 글쎄, 강력한 문학 작품에 그런 반응 보이는 건 흔한 일이야.
-     6.51s  agent 발화 끝
-     6.95s  user  발화 시작: “빅 브라더”라는 표현이 어디서 나왔는지 궁금하네요. 왠지 익숙한 느낌이 들어요.
-    12.55s  <ret> 발화 (turn3 첫 프레임)
-    12.95s  agent 발화 시작: <ret> 그거 참 흥미로운 질문인데, 엄청난 영향을 준 표현이거든. “빅 브라더”는 조지 오웰의 *1984
-    13.06s  user  발화 끝
-    14.31s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.47s]: The term “Big Brother” originates from George Orwell’s dystopian novel
-    24.50s  agent 발화 끝
-    24.98s  user  발화 시작: 천구백사십구 년… 역사적으로 보면 그렇게 오래된 건 아니네요.
-    29.84s  user  발화 끝
-    29.87s  agent 발화 시작: 맞아, 근데 지금은 훨씬 더 오래된 것 같지 않아?
-    31.34s  user  발화 시작: 맞아요.
-    31.79s  user  발화 끝
-    33.02s  agent 발화 끝
-    33.92s  user  발화 시작: 오웰은 그 캐릭터를 만들 때 특정 인물을 염두에 두고 있었나요?
-    38.63s  <ret> 발화 (turn8 첫 프레임)
-    38.71s  agent 발화 시작: <ret> 오웰이 뭘 참고했는지 찾아보니까 꽤 흥미로운 내용이 있네. 오웰은 빅 브라더를 요셉 스탈린의 초상
-    38.78s  user  발화 끝
-    40.47s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.44s]: Orwell stated the concept of Big Brother was inspired by a poster depi
-    50.49s  agent 발화 끝
-    50.57s  user  발화 시작: 스탈린이요? 실제로 그런 것 같아요—
-    53.21s  agent 발화 시작: 끊임없이 감시당하는 이미지—
-    53.29s  user  발화 끝
-    54.47s  user  발화 시작: 그게 가족에 대한 건 아니었나요? 저는 항상 그렇게 생각했어요—
-    55.00s  agent 발화 끝
-    58.02s  user  발화 끝
-    58.40s  agent 발화 시작: 아니, 가족에 대한 의미는 전혀 없었어.
-    61.12s  agent 발화 끝
-    62.46s  user  발화 시작: 정말 놀랍네요! 저는 보호해 주는 큰 형 같은 느낌이라고 생각했어요.
-    67.31s  user  발화 끝
-    67.49s  agent 발화 시작: 표현 자체 때문에 그렇게 오해할 수도 있어.
-    69.75s  agent 발화 끝
-    70.74s  user  발화 시작: 그 표현이 책이 출판되자마자 바로 유명해졌나요?
-    73.24s  <ret> 발화 (turn16 첫 프레임)
-    73.56s  agent 발화 시작: <ret> 그 표현이 널리 퍼지는 데는 시간이 좀 걸렸어. “빅 브라더”는 천구백오십년대와 육십년대에 억압적
-    73.65s  user  발화 끝
-    74.52s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.91s]: The phrase “Big Brother” gained widespread use in the nineteen fifties
-    78.74s  user  발화 시작: 아.
-    79.05s  user  발화 끝
-    82.79s  user  발화 시작: 그러니까 조금…
-    82.83s  agent 발화 끝
-    83.93s  user  발화 끝
-    84.07s  user  발화 시작: …시간이 걸렸다는 거네요? 지금처럼 널리 쓰이게 되기까지.
-    87.45s  user  발화 끝
-    87.50s  agent 발화 시작: 그래. 시간이 지나면서 의미가 더 깊어졌어. 그리고 기술이 발전하면서 더 중요해졌지.
-    93.10s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 디스토피아 소설 읽다가 그런 생각을 해 봤어.
+     3.06s  <ret> 발화 (turn1 첫 프레임)
+     3.13s  user  발화 끝
+     3.30s  agent 발화 시작: <ret> 그건 정말 흥미로운 분야지… 조지 오웰의 *1984년*, 천구백사십구 년에 출판됐잖아, 그 용어가
+     5.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.76s]: <Nineteen Eighty-Four is a dystopian novel published in 1949, written 
+    12.07s  agent 발화 끝
+    12.50s  user  발화 시작: 그런데 오웰은 “빅 브라더” 아이디어를 어디서 얻은 거야? 너무 음산하게 느껴져서.
+    18.76s  agent 발화 시작: 정말 인상적인 문구지, 그렇지?
+    18.80s  user  발화 끝
+    20.74s  agent 발화 끝
+    21.30s  user  발화 시작: 역사적인 맥락이 궁금해. 혹시 실존 인물에서 영감을 받은 거야?
+    25.76s  <ret> 발화 (turn5 첫 프레임)
+    25.92s  agent 발화 시작: <ret> 그 기원에 대한 질문은 정말 좋은 질문이야… 오웰 자신은 어릴 때 봤던 포스터, “네가 감시당하고
+    26.02s  user  발화 끝
+    26.26s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.98s]: <Orwell stated the concept came from a childhood memory of posters dep
+    30.23s  user  발화 시작: 맞아요.
+    30.87s  user  발화 끝
+    34.87s  agent 발화 끝
+    35.76s  user  발화 시작: 그럼 정치 지도자 같은 사람은 아니었어?
+    37.87s  user  발화 끝
+    37.92s  agent 발화 시작: 직접적으로는 아니야. 어디에나 존재하는 감시라는 느낌이었어.
+    43.38s  agent 발화 끝
+    43.44s  user  발화 시작: 그런데 스페인 내전은…
+    44.96s  user  발화 끝
+    45.36s  user  발화 시작: …그것과 관련이 있었던 것 같아?
+    46.82s  agent 발화 시작: 네 말이 맞아—
+    47.01s  user  발화 끝
+    47.17s  user  발화 시작: 그는 그 전쟁에 참여했잖아, 그리고 그것은 선전과 통제에 관한 것이었지…
+    47.88s  agent 발화 끝
+    52.12s  user  발화 끝
+    52.51s  agent 발화 시작: 스페인 내전은 오웰에게 큰 영향을 줬어. 그는 선전과 감시가 사용되는 것을 직접 목격했거든.
+    59.42s  user  발화 시작: 알겠어. 그럼 “빅 브라더”라는 인물은 한 사람이 아니라 시스템을 의미하는 거야?
+    59.42s  agent 발화 끝
+    63.84s  agent 발화 시작: 맞아. 한 개인보다는 모든 것을 꿰뚫어 보는 국가를 상징하는 거지.
+    63.85s  user  발화 끝
+    67.63s  agent 발화 끝
+    67.89s  user  발화 시작: 음. 그 말이 정말 와닿네. 그 책은 처음부터 인기를 얻었어?
+    71.89s  <ret> 발화 (turn17 첫 프레임)
+    72.13s  agent 발화 시작: <ret> 처음 반응은… 복잡했어… 처음에는 평가가 엇갈렸지만, 냉전 시대에 판매량이 늘면서 매우 영향력 있
+    72.34s  user  발화 끝
+    73.01s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.37s]: <Initially, *Nineteen Eighty-Four* received mixed reviews, but its sal
+    76.76s  user  발화 시작: 아.
+    77.39s  user  발화 끝
+    81.03s  user  발화 시작: 냉전 시대에는 그 책의 주제가 정말 와닿았을 것 같아.
+    81.04s  agent 발화 끝
+    84.37s  agent 발화 시작: 정말 그래. 그 시대의 불안감이 메시지를 훨씬 더 증폭시켰지.
+    84.40s  user  발화 끝
+    88.40s  agent 발화 끝

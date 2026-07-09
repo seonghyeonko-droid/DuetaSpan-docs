@@ -2,64 +2,68 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.66s  <ret> 발화 (turn1 첫 프레임)
-     4.06s  agent 발화 시작: <ret> Checking historical weather data is something I do oft
-     4.17s  user  발화 끝
-     5.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.82s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    15.10s  agent 발화 끝
-    16.37s  user  발화 시작: And what about Sapporo on the same day?
-    17.87s  <ret> 발화 (turn3 첫 프레임)
-    18.27s  agent 발화 시작: <ret> Let me retrieve the weather information for Sapporo… S
-    18.39s  user  발화 끝
-    19.79s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.28s]: (tool result) The weather in Sapporo on December twenty-fourth last ye
-    28.89s  user  발화 시작: That’s quite a difference.
-    28.94s  agent 발화 끝
-    30.54s  user  발화 끝
-    30.80s  agent 발화 시작: Indeed, quite a significant temperature contrast between the
-    35.16s  user  발화 시작: Could you find me a ryokan in Hakone with an onsen?
-    35.20s  agent 발화 끝
-    37.56s  <ret> 발화 (turn7 첫 프레임)
-    37.87s  agent 발화 시작: <ret> Searching for a traditional Japanese inn in Hakone… Ha
-    38.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.23s]: (tool result) Found Hakone Yuryo: price is twenty-five thousand yen pe
-    38.12s  user  발화 끝
-    47.15s  agent 발화 끝
-    47.80s  user  발화 시작: Twenty-five thousand yen… that sounds nice. Is there anythin
-    52.56s  agent 발화 시작: I can certainly look for more affordable options…
-    52.57s  user  발화 끝
-    55.61s  agent 발화 끝
-    56.19s  user  발화 시작: Actually, does Hakone Yuryo have availability for next weeke
-    59.61s  <ret> 발화 (turn11 첫 프레임)
-    59.77s  agent 발화 시작: <ret> Let me check availability for Hakone Yuryo next weeken
-    59.88s  user  발화 끝
-    61.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.14s]: (tool result) Hakone Yuryo has one room available next Saturday, Janua
-    68.91s  agent 발화 끝
-    69.88s  user  발화 시작: Perfect. Book it for me, please.
-    71.39s  <ret> 발화 (turn13 첫 프레임)
-    71.72s  user  발화 끝
-    71.79s  agent 발화 시작: <ret> Reserving a room at Hakone Yuryo for you now… Your res
-    73.15s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.95s]: (tool result) Reservation confirmed: Hakone Yuryo, one room, January t
-    76.77s  user  발화 시작: Wow.
-    77.55s  user  발화 끝
-    87.05s  user  발화 시작: Excellent.
-    87.20s  agent 발화 끝
-    87.67s  user  발화 끝
-    87.74s  agent 발화 시작: I'm glad I could assist with your travel plans. Perhaps you'
-    95.30s  agent 발화 끝
-    95.92s  user  발화 시작: Oh, that actually sounds lovely. Are there any rare wildflow
-   100.07s  <ret> 발화 (turn18 첫 프레임)
-   100.23s  agent 발화 시작: <ret> Hakone is known for its diverse alpine plant life, yes
-   100.32s  user  발화 끝
-   101.51s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.21s]: (no information found)
-   104.44s  agent 발화 끝
-   104.49s  agent 발화 시작: I’m sorry, I don’t currently have specific information on ra
-   109.86s  agent 발화 끝
-   109.88s  user  발화 시작: That’s alright. What about Mount Fuji? Any special flowers t
-   113.09s  <ret> 발화 (turn21 첫 프레임)
-   113.33s  agent 발화 시작: <ret> Mount Fuji’s higher altitudes support unique alpine sp
-   113.53s  user  발화 끝
-   115.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.78s]: (tool result) Mount Fuji is home to the Fuji-zakura cherry blossom, bl
-   123.86s  user  발화 시작: Aster komarovii… that’s a beautiful name.
-   124.19s  agent 발화 끝
-   126.45s  user  발화 끝
-   126.75s  agent 발화 시작: It is, isn’t it? A rather resilient little flower, thriving 
-   133.43s  agent 발화 끝
+     3.22s  <ret> 발화 (turn1 첫 프레임)
+     3.62s  agent 발화 시작: <ret> Let me quickly check the historical weather data for y
+     3.70s  user  발화 끝
+     5.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    16.52s  agent 발화 끝
+    17.82s  user  발화 시작: That sounds quite cold. Could you find me a good café near U
+    21.47s  <ret> 발화 (turn3 첫 프레임)
+    21.86s  agent 발화 시작: <ret> Certainly, I can search for cafés in that area… Café Y
+    22.02s  user  발화 끝
+    23.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) Café Yankee Candle is located point-three kilometers fro
+    31.68s  user  발화 시작: Is it a good place to try matcha?
+    31.74s  agent 발화 끝
+    33.24s  <ret> 발화 (turn5 첫 프레임)
+    33.62s  user  발화 끝
+    33.64s  agent 발화 시작: <ret> Let's see if reviews mention matcha specifically… Two 
+    34.20s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.98s]: (tool result) Two reviews mention matcha, describing it as “excellent”
+    42.92s  user  발화 시작: That sounds promising! I'm planning a trip to see the alpine
+    43.01s  agent 발화 끝
+    47.42s  agent 발화 시작: Ah, a fellow enthusiast! I spend a great deal of time—
+    47.56s  user  발화 끝
+    51.59s  user  발화 시작: Do they bloom earlier in the mountains around Tateyama Kurob
+    52.28s  agent 발화 끝
+    54.91s  user  발화 끝
+    55.11s  agent 발화 시작: That's a very good question. The alpine wildflowers around T
+    63.61s  agent 발화 시작: The wildflowers in the Tateyama Kurobe area bloom earlier be
+    63.73s  agent 발화 끝
+    69.72s  agent 발화 끝
+    70.62s  user  발화 시작: Right. And are there any particularly rare species there?
+    73.49s  <ret> 발화 (turn12 첫 프레임)
+    73.81s  agent 발화 시작: <ret> Tateyama Kurobe is known for a few unique alpine plant
+    73.94s  user  발화 끝
+    75.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.90s]: (tool result) Tateyama Kurobe Alpine Botanical Garden lists *Gentiana 
+    79.69s  user  발화 시작: Yeah.
+    80.28s  user  발화 끝
+    86.05s  agent 발화 끝
+    88.21s  user  발화 시작: Mm-hmm.
+    88.66s  user  발화 끝
+    88.72s  agent 발화 시작: *Gentiana konishii* is particularly fascinating, a small, vi
+    96.76s  user  발화 시작: Right.
+    97.49s  user  발화 끝
+   102.27s  agent 발화 끝
+   102.34s  user  발화 시작: I’d like to book a bus ticket to Tateyama Station for next S
+   105.54s  <ret> 발화 (turn18 첫 프레임)
+   105.77s  agent 발화 시작: <ret> Certainly, let me check availability for that route… T
+   105.95s  user  발화 끝
+   107.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.41s]: (tool result) There are seats available on the nine AM and eleven AM b
+   113.17s  user  발화 시작: Yeah, yeah.
+   114.41s  user  발화 끝
+   116.44s  agent 발화 끝
+   117.04s  user  발화 시작: Book me a seat on the nine AM bus, please.
+   119.48s  <ret> 발화 (turn21 첫 프레임)
+   119.64s  agent 발화 시작: <ret> Excellent, let’s secure your seat on that bus… Your bu
+   119.77s  user  발화 끝
+   120.92s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.41s]: (tool result) Your bus ticket to Tateyama Station for next Saturday at
+   131.14s  agent 발화 끝
+   131.16s  user  발화 시작: Perfect. What’s the forecast for Tateyama next Saturday?
+   134.11s  <ret> 발화 (turn23 첫 프레임)
+   134.27s  agent 발화 시작: <ret> Let me check the forecast for that area… Next Saturday
+   134.40s  user  발화 끝
+   135.39s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.82s]: (tool result) The forecast for Tateyama next Saturday is partly cloudy
+   142.37s  user  발화 시작: That sounds manageable. Thanks for all your help!
+   142.38s  agent 발화 끝
+   145.07s  agent 발화 시작: You are very welcome. I’m glad I could assist with your plan
+   145.23s  user  발화 끝
+   150.43s  agent 발화 끝

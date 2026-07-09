@@ -2,17 +2,14 @@ v3_mcp_02_en src=mcp style=v3
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.69s⟩ com.
-[  3.92s][moshi] Certainly, ⟦⚡SPAN@4.81s: (tool result) The weather at weather.example.com is currently 72 degrees Fahrenheit and sunny.⟧ I can monitor that for changes. Right now, the weather at weather dot example dot com is seventy-two degrees and sunny.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.65s⟩ com.
+[  3.88s][moshi] Certainly, I can ⟦⚡SPAN@5.41s: (tool result) The website reports current conditions in London are 12 degrees Celsius and partly cloudy.⟧ monitor that website for you. Right now in London, it is twelve degrees Celsius and partly cloudy.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 13.54s][user ] Oh, that’s nice. I’m planning a trip to the Dolomites next month—
-[ 17.57s][moshi] The Dolomites are stunning in the autumn.
-[ 20.38s][user ] Yeah, I’m hoping to see some *Gentiana nivalis* in bloom. Do you know at what altitude they typically ⟨ret@26.80s⟩ grow?
-[ 27.03s][moshi] That’s a lovely ⟦⚡SPAN@28.80s: (tool result) *Gentiana nivalis* typically grows between 1,800 and 3,000 meters altitude.⟧ flower, and a good question about its range. *Gentiana nivalis* usually blooms at altitudes between eighteen hundred and three thousand meters.
-[ 31.72s][user ] «backchannel» Mhm.
-[ 37.82s][user ] Wow, that’s quite a range. Could you book me a hotel in Cortina d'Ampezzo for, uh, seven nights starting October fifteenth?
-[ 46.28s][moshi] ⟨ret@46.21s⟩ Absolutely, ⟦⚡SPAN@47.25s: (tool result) Hotel Cristallo in Cortina d'Ampezzo is available October fifteenth to twenty-second, costing 1,⟧ let’s look at hotels in that area. Hotel Cristallo is available from October fifteenth to twenty-second for fourteen hundred euros.
-      CALL: {"function": "book_hotel", "arguments": {"location": "Cortina d'Ampezzo", "check_in": "2024-10-15", "nights": 7}}
-[ 56.10s][user ] That sounds perfect! Book it for me, please.
-[ 59.51s][moshi] ⟨ret@59.43s⟩ Excellent, I’m ⟦⚡SPAN@60.79s: (tool result) Booking CRISTALLO-20241015 confirmed; a confirmation email has been sent to your address.⟧ confirming that reservation now. Your booking at Hotel Cristallo is confirmed, and an email has been sent.
-      CALL: {"function": "confirm_booking", "arguments": {"booking_id": "CRISTALLO-20241015"}}
+[ 13.00s][user ] Hmm, twelve degrees… that's chilly. Uh, do you know anything about Edelweiss?
+[ 18.99s][moshi] Edelweiss is a lovely, protected alpine flower— quite resilient, despite its delicate appearance.
+[ 25.85s][user ] I’m planning a trip to Switzerland, hoping to find some. Are they in ⟨ret@29.83s⟩ bloom now?
+[ 30.15s][moshi] Let me ⟦⚡SPAN@31.35s: (tool result) Edelweiss typically blooms from July to September in the Swiss Alps.⟧ check the typical bloom time for Edelweiss. Edelweiss usually blooms in the Swiss Alps between July and September.
+[ 33.39s][user ] «backchannel» Mhm.
+[ 37.83s][user ] Perfect! I’m going in August, then. Could you book me a train from Zurich to Grindelwald for August fifteenth?
+[ 44.24s][moshi] ⟨ret@44.16s⟩ Of course, ⟦⚡SPAN@45.12s: (tool result) A train is booked from Zurich to Grindelwald on August fifteenth, departing at 10:15 AM, arrivin⟧ I can assist with that train booking. I have booked a train for you on August fifteenth, departing Zurich at ten fifteen AM.
+      CALL: {"function": "book_train", "arguments": {"departure_city": "Zurich", "arrival_city": "Grindelwald", "date": "August 15th"}}

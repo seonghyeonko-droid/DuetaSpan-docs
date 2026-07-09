@@ -3,12 +3,14 @@ SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <sy
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.49s][moshi] ⟨ret@4.42s⟩ Certainly, I can adjust ⟦⚡SPAN@6.42s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ the browser settings for you. I have successfully changed the user agent to MyCustomBrowser, version ten point five.
+[  4.74s][moshi] ⟨ret@4.67s⟩ Certainly, I can ⟦⚡SPAN@6.67s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust the browser settings for you. Your browser is now identifying as MyCustomBrowser, version ten point five.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 11.51s][user ] «backchannel» Right.
-[ 14.66s][user ] That’s great. Now, could you check what my IP address appears as when browsing with those ⟨ret@19.48s⟩ settings?
-[ 19.71s][moshi] ⟦⚡SPAN@19.98s: (tool result) Your public IP address is 203.0.113.42, and your location is identified as Seattle, Washington.⟧ Of course, let’s see what your public IP address shows. Your IP address is currently two-zero-three dot zero dot one-one-three dot forty-two, located in Seattle.
-      CALL: {"function": "get_public_ip", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 32.44s][user ] Hmm, Seattle? That's odd. Can you search for nearby bakeries, specifically ones with a five-star ⟨ret@38.22s⟩ rating?
-[ 38.54s][moshi] A search for ⟦⚡SPAN@40.22s: (tool result) Dahlia Bakery is 0.8 miles away, rated 5 stars; The Crème de la Crème is 1.2 miles, also 5 stars⟧ highly-rated bakeries sounds lovely.
-      CALL: {"function": "search_nearby", "arguments": {"query": "5-star bakery", "location": "Seattle, Washington"}}
+[ 11.85s][user ] «backchannel» Right.
+[ 15.02s][user ] Uh, great. And could you then check if that’s how this page sees ⟨ret@19.04s⟩ me?
+[ 19.27s][moshi] ⟦⚡SPAN@19.54s: (tool result) The current user agent reported by the page is MyCustomBrowser version 10.5.⟧ Let’s verify the reported user agent for this current webpage. Yes, the page now correctly identifies your browser as MyCustomBrowser, version ten point five.
+      CALL: {"function": "playwright_get_user_agent", "arguments": {}}
+[ 31.50s][user ] Perfect. Now, can you find me reviews for that browser— MyCustomBrowser, ten point ⟨ret@37.33s⟩ five?
+[ 37.63s][moshi] I can certainly ⟦⚡SPAN@39.33s: (tool result) Search results show one forum thread and three blog posts discussing MyCustomBrowser version 10.⟧ search for reviews of that specific browser version. I found one forum thread and three blog posts discussing MyCustomBrowser, version ten point five.
+      CALL: {"function": "google_search", "arguments": {"query": "reviews MyCustomBrowser version 10.5"}}
+[ 49.90s][user ] Hmm, okay. Just the headlines, please?
+[ 52.55s][moshi] Of course, I can read you the headlines from those

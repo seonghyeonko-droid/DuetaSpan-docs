@@ -1,73 +1,77 @@
 # v3_fstart_15_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 시드니 오페라하우스의 위도와 경도가 뭔데?
-     2.78s  <ret> 발화 (turn1 첫 프레임)
-     3.09s  agent 발화 시작: <ret> 음, 그 상징적인 랜드마크의 위치를 알려 드릴게요. 위도는 마이너스 삼십삼 점 팔오육팔, 경도는 
-     3.33s  user  발화 끝
-     4.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.90s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
-    11.99s  agent 발화 끝
-    12.44s  user  발화 시작: 흠, 써큘러 키랑 가까워?
-    14.76s  agent 발화 시작: 오, 아주 가까워요. 써큘러 키는 거의 바로 옆이고, 걸어서 금방 갈 수 있어요.
-    14.84s  user  발화 끝
-    16.64s  user  발화 시작: 응.
-    16.85s  user  발화 끝
-    20.00s  user  발화 시작: 어디 근처에 식당이 있나… 아니, 됐어. 시드니에서 오늘 밤에 열리는 재즈 클럽 좀 찾아 줘.
-    20.13s  agent 발화 끝
-    26.19s  <ret> 발화 (turn6 첫 프레임)
-    26.42s  agent 발화 시작: <ret> 좋은 선택이네요, 시드니는 재즈 공연이 활발해요. York Street 7번지에 있는 The Ba
-    26.44s  user  발화 끝
-    27.79s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.15s]: (tool result) The Basement is a jazz club at 70 York Street, Sydney, o
-    29.55s  user  발화 시작: 그니까.
-    30.35s  user  발화 끝
-    34.71s  agent 발화 끝
-    35.21s  user  발화 시작: The Basement… 그래.
-    37.20s  user  발화 끝
-    37.40s  agent 발화 시작: 거기는 전설적인 곳이에요. 수많은 훌륭한 음악가들이 공연했던 곳이죠. 예전에 거기서—
-    42.99s  user  발화 시작: 입장료가 있어?
-    43.70s  agent 발화 끝
-    43.76s  <ret> 발화 (turn11 첫 프레임)
-    43.99s  agent 발화 시작: <ret> 현재 정보를 확인해 볼게요. The Basement에서는 오늘 저녁 입장료가 호주 달러 이십오 달
-    44.14s  user  발화 끝
-    44.88s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.10s]: (tool result) The Basement has a cover charge of twenty-five Australia
-    47.38s  user  발화 시작: 응.
-    47.83s  user  발화 끝
-    50.71s  agent 발화 끝
-    50.86s  user  발화 시작: 이십오 달러… 나쁘지 않네.
-    53.16s  agent 발화 시작: 좋은 음악을 듣는 데는 적당한 가격이라고 생각하지 않으세요?
-    53.39s  user  발화 끝
-    55.45s  user  발화 시작: 응.
-    55.66s  user  발화 끝
-    56.68s  agent 발화 끝
-    57.20s  user  발화 시작: 거기서 저녁 여덟 시에 두 명 자리 예약해 줘.
-    59.80s  <ret> 발화 (turn17 첫 프레임)
-    59.87s  agent 발화 시작: <ret> 알겠습니다, 자리가 있는지 확인해 볼게요. The Basement에 저녁 여덟 시에 두 명 자리 
-    59.97s  user  발화 끝
-    60.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.12s]: (tool result) Reservation confirmed at The Basement for two people at 
-    69.15s  agent 발화 끝
-    71.49s  user  발화 시작: 완벽해! 고마워.
-    72.76s  agent 발화 시작: 천만에요. 즐거운 저녁 시간을 보내실 거라고 생각합니다.
-    72.96s  user  발화 끝
-    74.14s  user  발화 시작: 응.
-    74.72s  user  발화 끝
-    77.15s  agent 발화 끝
-    77.48s  user  발화 시작: 주차는 어디에 해야 해?
-    78.80s  <ret> 발화 (turn22 첫 프레임)
-    79.14s  agent 발화 시작: <ret> 그 근처 주차는 좀 어려울 수 있는데, 알아봐 드릴게요. York Street에 있는 Wilson
-    79.41s  user  발화 끝
-    80.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.17s]: (tool result) Wilson Parking at 19 York Street is 250 meters away and 
-    84.40s  user  발화 시작: 응.
-    84.71s  user  발화 끝
-    88.82s  user  발화 시작: 시간당 15달러… 아야.
-    88.97s  agent 발화 끝
-    90.45s  agent 발화 시작: [laugh] 시드니 주차는… 만만치 않죠. 택시를 타는 게 더 편할 수도 있겠네요?
-    90.57s  user  발화 끝
-    92.50s  user  발화 시작: 응.
-    92.95s  user  발화 끝
-    95.64s  agent 발화 끝
-    95.65s  user  발화 시작: 어쩌면. 오늘 밤 날씨는 어때?
-    99.36s  <ret> 발화 (turn28 첫 프레임)
-    99.44s  agent 발화 시작: <ret> 오늘 밤 날씨를 확인해 드릴게요. 오늘 밤 기온은 18도이고, 비가 올 확률은 30%입니다.
-    99.58s  user  발화 끝
-   101.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.76s]: (tool result) The weather in Sydney tonight will be 18 degrees Celsius
-   105.56s  agent 발화 끝
+     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도가 뭐지?
+     2.32s  <ret> 발화 (turn1 첫 프레임)
+     2.63s  agent 발화 시작: <ret> 음, 제가 늘 방문하고 싶었던 곳이네요… 위도는 서쪽 삼십삼 점 팔오육팔도이고, 경도는 동쪽 백오
+     2.91s  user  발화 끝
+     4.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) The Sydney Opera House is located at -33.8568 degrees la
+    11.53s  agent 발화 끝
+    11.88s  user  발화 시작: 에펠탑은?
+    12.36s  <ret> 발화 (turn3 첫 프레임)
+    12.67s  agent 발화 시작: <ret> 오, 비교하기 좋은 고전적인 선택이네요… 에펠탑은 북쪽 사십팔 점 팔오팔사도, 동쪽 두 점 이구사
+    12.69s  user  발화 끝
+    13.88s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.26s]: (tool result) The Eiffel Tower is located at 48.8584 degrees latitude 
+    16.09s  user  발화 시작: 응.
+    16.30s  user  발화 끝
+    22.06s  user  발화 시작: 흠, 흥미롭네. 에펠탑 근처에 재즈 클럽 있어?
+    22.40s  agent 발화 끝
+    26.00s  <ret> 발화 (turn6 첫 프레임)
+    26.23s  agent 발화 시작: <ret> 파리와 재즈… 정말 아름다운 조합이죠. 르 카보 드 라 위셰트는 에펠탑에서 0.6마일 정도 떨어진
+    26.27s  user  발화 끝
+    27.36s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.58s]: (tool result) Le Caveau de la Huchette is a jazz club located 0.6 mile
+    29.36s  user  발화 시작: 그니까.
+    29.91s  user  발화 끝
+    34.49s  agent 발화 끝
+    35.04s  user  발화 시작: 괜찮아 보이는데.
+    36.47s  user  발화 끝
+    36.70s  agent 발화 시작: 정말 유명한 곳이에요. 사실 수십 년 동안 있었어요. 파리의 진정한 명소입니다.
+    39.50s  user  발화 시작: 응.
+    39.95s  user  발화 끝
+    42.38s  agent 발화 끝
+    44.73s  user  발화 시작: 거기서 보통 무슨 음악을 틀어?
+    46.67s  <ret> 발화 (turn12 첫 프레임)
+    46.80s  user  발화 끝
+    46.82s  agent 발화 시작: <ret> 보통 전통적인 쪽으로 기울어져요… 전통 재즈, 스윙, 비밥을 전문으로 합니다. 정말 멋진 레퍼토리
+    47.63s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.52s]: (tool result) Le Caveau de la Huchette typically features traditional 
+    52.54s  user  발화 시작: 응.
+    53.04s  user  발화 끝
+    55.15s  user  발화 시작: 웹사이트 있어?
+    55.21s  agent 발화 끝
+    55.77s  <ret> 발화 (turn15 첫 프레임)
+    56.08s  agent 발화 시작: <ret> 요즘 대부분의 곳들이 다 있어서 다행이죠… 웹사이트는 caveaudelahuchette.fr입니다
+    56.33s  user  발화 끝
+    57.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: (tool result) Le Caveau de la Huchette’s website is https://www.caveau
+    61.26s  agent 발화 끝
+    62.47s  user  발화 시작: 저… 그러니까, 좀 더 자세히 말해 줄 수 있어?
+    65.61s  agent 발화 시작: 물론이죠. C-a-v-e-a-u, d-e, l-a, h-u-c-h-e-t-t-e, 점 f-r입니다.
+    65.69s  user  발화 끝
+    67.89s  user  발화 시작: 응.
+    68.19s  user  발화 끝
+    72.46s  agent 발화 끝
+    72.61s  user  발화 시작: 전화번호는 뭐야?
+    74.17s  user  발화 끝
+    74.31s  <ret> 발화 (turn20 첫 프레임)
+    74.39s  agent 발화 시작: <ret> 혹시 모르니 알아두면 좋겠죠… 플러스 삼십삼 일 사오오오 육십일 사십이입니다.
+    76.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.34s]: (tool result) Le Caveau de la Huchette’s phone number is +33 1 45 55 6
+    77.87s  user  발화 시작: 응.
+    78.08s  user  발화 끝
+    81.00s  user  발화 시작: 고마워.
+    81.07s  agent 발화 끝
+    81.75s  agent 발화 시작: 천만에요. 손끝에서 바로 파리 분위기를 느껴보세요.
+    81.77s  user  발화 끝
+    83.22s  user  발화 시작: 응.
+    83.44s  user  발화 끝
+    85.60s  agent 발화 끝
+    85.64s  user  발화 시작: 내일 아침에 거기 스케줄 확인해 달라고 알림 설정해 줄 수 있어?
+    88.67s  <ret> 발화 (turn26 첫 프레임)
+    89.06s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
+    89.17s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.47s]: (tool result) Reminder set for 9:00 AM tomorrow to check Le Caveau de 
+    89.19s  user  발화 끝
+    90.33s  agent 발화 시작: 내일 아침 아홉 시에 스케줄을 확인하는 알림을 설정했습니다.
+    90.53s  agent 발화 끝
+    93.94s  agent 발화 끝
+    93.94s  user  발화 시작: 완벽해!
+    94.76s  user  발화 끝
+    94.88s  agent 발화 시작: 정말 좋네요. 딩고 라인하르트의 음악이 아침을 활기차게 해 줄지도 모르겠어요.
+   100.57s  agent 발화 끝

@@ -1,51 +1,55 @@
 # v3_fake__13_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: Hey, I was wondering, when does Demi Lovato’s new album come
-     6.77s  user  발화 끝
-     6.78s  agent 발화 시작: Well, Demi Lovato has released several albums over the years
-    11.34s  user  발화 시작: Yeah.
-    11.97s  user  발화 끝
-    13.21s  agent 발화 끝
-    14.33s  user  발화 시작: Oh, right. Uh, I meant the one coming out in 2015. I keep ge
-    19.14s  user  발화 끝
-    19.15s  <ret> 발화 (turn4 첫 프레임)
-    19.39s  agent 발화 시작: <ret> Let's see if I can clarify that for you… *Confident* c
-    20.83s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.18s]: Demi Lovato's album, *Confident*, was released in October 2015.
-    26.10s  agent 발화 끝
-    26.38s  user  발화 시작: October, got it. I'm trying to remember what else happened t
-    32.86s  user  발화 끝
-    32.99s  agent 발화 시작: October is often quite eventful, with autumn settling in and
-    37.66s  user  발화 시작: Yeah.
-    38.15s  user  발화 끝
-    41.09s  agent 발화 끝
-    41.52s  user  발화 시작: [laugh] You always bring it back to the stars, don't you?
-    44.70s  agent 발화 시작: It’s a habit, I suppose, after all these years spent mapping
-    44.75s  user  발화 끝
-    47.66s  user  발화 시작: Yeah.
-    48.29s  user  발화 끝
-    51.74s  agent 발화 끝
-    52.27s  user  발화 시작: I think my sister got a new car then… or maybe it was Novemb
-    58.07s  agent 발화 시작: Family milestones are harder to place than album releases, I
-    58.10s  user  발화 끝
-    60.24s  user  발화 시작: Okay.
-    60.88s  user  발화 끝
-    64.65s  agent 발화 끝
-    64.89s  user  발화 시작: True! Okay, different topic. Do you know anything about the 
-    70.30s  user  발화 끝
-    70.72s  agent 발화 시작: Oh, absolutely! The Perseids are one of the most reliable an
-    75.86s  user  발화 시작: When does that usually happen? I want to try to catch it thi
-    76.32s  agent 발화 끝
-    79.55s  <ret> 발화 (turn17 첫 프레임)
-    79.78s  agent 발화 시작: <ret> Predicting celestial events is something I enjoy… The 
-    79.84s  user  발화 끝
-    80.91s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.90s]: The Perseid meteor shower peaks around August 12th to 13th each year.
-    83.49s  user  발화 시작: Yeah.
-    84.03s  user  발화 끝
-    86.21s  user  발화 시작: August, okay. That’s good to know. Is there a new moon aroun
-    86.41s  agent 발화 끝
-    91.73s  <ret> 발화 (turn20 첫 프레임)
-    92.13s  agent 발화 시작: <ret> A dark sky is essential. Let me quickly check a lunar 
-    92.27s  user  발화 끝
-    93.73s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.16s]: (tool result) AAPL: 170.34 USD +0.52 (0.31%)
-    96.29s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, I was wondering, when is Demi Lovato’s new album coming
+     6.35s  <ret> 발화 (turn1 첫 프레임)
+     6.59s  agent 발화 시작: <ret> Oh, you’re asking about Demi Lovato’s latest release—t
+     6.63s  user  발화 끝
+     8.03s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.02s]: Demi Lovato’s album, “Confident”, was released in October 2015.
+    10.52s  agent 발화 시작: Her album, “Confident”, actually came out in October of twen
+    10.61s  agent 발화 끝
+    13.28s  user  발화 시작: Yeah.
+    13.78s  user  발화 끝
+    14.35s  agent 발화 끝
+    14.74s  user  발화 시작: Twenty fifteen? Wow, that feels like ages ago! Is she workin
+    20.76s  agent 발화 시작: It does seem like a while, doesn’t it? Musicians are always 
+    20.89s  user  발화 끝
+    24.00s  agent 발화 끝
+    26.01s  user  발화 시작: I’m just really eager to hear something new. Are there any d
+    32.13s  user  발화 끝
+    32.23s  <ret> 발화 (turn7 첫 프레임)
+    32.31s  agent 발화 시작: <ret> Let me check for current information regarding Demi Lo
+    33.91s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.27s]: (tool result) AAPL: 170.34 USD +0.45 (0.26%)
+    36.76s  user  발화 시작: Yeah.
+    37.26s  user  발화 끝
+    39.92s  user  발화 시작: That’s a shame. I guess I’ll just have to keep an eye out fo
+    40.05s  agent 발화 끝
+    43.92s  agent 발화 시작: It's always best to stay tuned to official channels, you'll 
+    43.95s  user  발화 끝
+    45.47s  user  발화 시작: Yeah.
+    46.11s  user  발화 끝
+    47.57s  user  발화 시작: What about her older stuff, though? Any recommendations?
+    47.71s  agent 발화 끝
+    50.70s  <ret> 발화 (turn13 첫 프레임)
+    50.94s  agent 발화 시작: <ret> Oh, excellent question!
+    51.03s  user  발화 끝
+    52.06s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.75s]: Demi Lovato’s debut album, “Don’t Forget”, was released in September 2
+    52.64s  agent 발화 시작: If you enjoy her earlier work, “Don’t Forget” came out in Se
+    52.69s  agent 발화 끝
+    54.26s  user  발화 시작: Okay.
+    54.98s  user  발화 끝
+    57.45s  agent 발화 끝
+    58.80s  user  발화 시작: Oh, I remember that one! I haven’t listened to it in ages.
+    62.51s  user  발화 끝
+    62.70s  agent 발화 시작: It's fun revisiting old favorites sometimes—it's like starga
+    67.98s  agent 발화 끝
+    68.97s  user  발화 시작: You're an astronomer, right? Do you ever look for patterns i
+    74.16s  user  발화 끝
+    74.59s  agent 발화 시작: [laugh] That's a clever thought! I do sometimes see parallel
+    78.39s  user  발화 시작: Yeah.
+    79.02s  user  발화 끝
+    80.93s  user  발화 시작: That’s really interesting. So, back to the albums, anything 
+    81.31s  agent 발화 끝
+    85.82s  agent 발화 시작: Before “Don’t Forget”, Demi Lovato was primarily known for h
+    85.93s  user  발화 끝
+    91.94s  agent 발화 끝

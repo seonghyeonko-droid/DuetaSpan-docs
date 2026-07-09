@@ -1,14 +1,14 @@
 v3_to_ot_11_ko src=nq style=v1
-SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스이며, 산호초 생태계를 연구합니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 오클랜드 애슬레틱스가 마지막으로 노히트 게임을 당한 게 언제였는지 아시나요?
-[  5.01s][moshi] ⟨ret@4.77s⟩ 정말 재미있는 ⟦⚡SPAN@6.77s: <The last time the Oakland Athletics were no-hit was April 21, 2018.>⟧ 질문이네요. 야구 역사에 대한 내용인데요, 애슬레틱스를 상대로 한 마지막 노히터는 2018년 4월 21일에 있었어요.
-[ 14.30s][user ] 와, 꽤 오래됐네요. 누가 ⟨ret@16.68s⟩ 던졌어요?
-[ 16.92s][moshi] ⟦⚡SPAN@17.18s: <James Paxton of the Seattle Mariners pitched a no-hitter against the Oakland Athletics on April 21, 2018.>⟧ 알아봐 드릴게요.
-[ 17.92s][moshi] 제임스 팩스턴 선수가 시애틀 매리너스 소속으로 애슬레틱스를 상대로 그 노히터를 기록했어요.
-[ 19.93s][user ] «backchannel» 네.
-[ 24.87s][user ] 그 경기가 팽팽했나요, 아니면 완전히 막았나요?
-[ 27.51s][moshi] «interrupted» 음…
-[ 27.85s][moshi] ⟨ret@27.53s⟩ 매리너스가 5대 ⟦⚡SPAN@29.29s: <The Mariners won the game 5-0, with Paxton striking out seven and walking two.>⟧ 0으로 이겼고, 팩스턴 선수는 7개의 삼진과 2개의 볼넷을 기록했어요.
-[ 34.27s][user ] 흥미롭네요. 그럼 꽤 압도적인 경기였던 거군요.
+[  0.00s][user ] 혹시 오클랜드 애슬레틱스가 노히트 게임을 당한 마지막 날짜가 언제였는지 궁금했어요.
+[  5.36s][moshi] ⟨ret@5.12s⟩ 아, 그거 참 ⟦⚡SPAN@7.12s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ 재미있는 질문이네요. 이천십팔 년 4월 21일에 있었답니다.
+[ 10.60s][user ] 와, 꽤 오래됐네요. [sigh]
+[ 12.20s][moshi] 팬들께서는 다행이라고 생각하실 것 같아요, 그동안 그런 일이 없었으니까요.
+[ 14.95s][user ] «backchannel» 네.
+[ 17.21s][user ] 다른 팀들과 비교했을 때, 그게 흔한 ⟨ret@20.02s⟩ 일인가요?
+[ 20.18s][moshi] 좋은 지적이세요. 리그 전체 통계를 ⟦⚡SPAN@22.02s: MLB.com reports that no-hitters occur an average of 2.5 times per season.⟧ 살펴봐야 알 수 있을 것 같아요.
+[ 24.05s][moshi] MLB.com에 따르면 노히트 게임은 평균적으로 1년에 두 번 반 정도 발생한다고 합니다.
+[ 29.66s][user ] «to_other» 저기요, 혹시 쓰레기 버리셨어요?
+[ 31.86s][user ] 죄송합니다. 다시 야구 이야기로 돌아가서, 그 평균이 지금은 바뀌고 있나요?

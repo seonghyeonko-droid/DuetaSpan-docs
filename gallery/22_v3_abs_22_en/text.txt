@@ -2,25 +2,24 @@ v3_abs_22_en src=squad2 style=abstain
 SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.59s⟩ hate?
-[  2.74s][moshi] That’s a ⟦⚡SPAN@4.03s: (no information found)⟧ very pointed question, actually. I’m afraid I couldn’t locate a specific governmental mode anarchists universally oppose.
-[ 10.54s][user ] Oh. Well, what about the most common type, like… ⟨ret@15.52s⟩ democracies?
-[ 15.75s][moshi] [laugh] ⟦⚡SPAN@16.48s: “Anarchists oppose the state as an inherently coercive institution, viewing all forms of government—including ⟧ That’s a good clarification to make.
-[ 18.93s][moshi] Anarchists oppose all forms of government, including democracies, viewing the state as coercive and illegitimate.
-[ 25.95s][user ] Right, so they don’t like *any* government. What’s the oldest form of government ⟨ret@30.30s⟩ then?
-[ 30.61s][moshi] That’s ⟦⚡SPAN@31.34s: “Monarchy is generally considered the oldest form of government, originating in ancient civilizations like Mes⟧ a fascinating historical question. Monarchy is considered the oldest form, originating in civilizations like Mesopotamia and Egypt.
-[ 39.52s][user ] Huh. Were there any famous anarchist ⟨ret@42.50s⟩ monarchs?
-[ 42.88s][moshi] [surprised] ⟦⚡SPAN@43.86s: (no information found)⟧ That’s… an unexpected pairing of ideas!
-[ 46.26s][moshi] I haven’t found any records of monarchs identifying as anarchists—quite a contradiction!
-[ 48.68s][user ] «backchannel» Mm-hmm.
-[ 51.93s][user ] Yeah, I guess so. Okay, what about famous anarchist ⟨ret@55.84s⟩ thinkers?
-[ 56.15s][moshi] Now *that’s* a ⟦⚡SPAN@57.68s: “Pierre-Joseph Proudhon is often considered the ‘father of anarchism’, advocating for mutualism and a society ⟧ topic I can readily discuss. Pierre-Joseph Proudhon is often called the “father of anarchism,” advocating a rulerless society.
-[ 65.40s][user ] Mutualism? What does that even ⟨ret@68.17s⟩ mean?
-[ 68.32s][moshi] It’s a ⟦⚡SPAN@69.53s: “Mutualism proposes a society where individuals and groups engage in voluntary exchange of goods and services ⟧ system built on reciprocal exchange, really.
-[ 71.61s][moshi] Mutualism proposes voluntary exchange of goods and services, without seeking profit.
-[ 78.21s][user ] So, no one makes money?
-[ 80.00s][moshi] ⟨ret@79.93s⟩ Not ⟦⚡SPAN@80.89s: “Mutualists believe in fair compensation for labor, based on the amount of work performed, not capital investe⟧ in the traditional sense, no—it's more about equitable exchange.
-[ 84.13s][moshi] Compensation is based on work performed, rather than capital or investment.
-[ 89.18s][user ] That sounds… complicated. Is it like a barter ⟨ret@92.44s⟩ system?
-[ 92.75s][moshi] It’s similar, but ⟦⚡SPAN@94.44s: (no information found)⟧ more formalized, with credit systems involved.
-[ 96.97s][moshi] It's beyond a simple barter system, incorporating credit and reciprocal agreements.
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.49s⟩ hate?
+[  2.64s][moshi] That's an ⟦⚡SPAN@4.25s: (no information found)⟧ interesting question, exploring core beliefs. Unfortunately, I couldn’t find a specific government mode anarchists universally hate.
+[ 11.63s][user ] Oh. Well, what did Albert Einstein believe about government?
+[ 15.41s][moshi] ⟨ret@15.26s⟩ He was a deep ⟦⚡SPAN@17.26s: Albert Einstein believed that socialism was the only viable system for a just and equitable society.⟧ thinker, naturally considering such things. Einstein believed socialism was the only viable system for a just and equitable society.
+[ 24.11s][user ] Socialism, huh? Is that like communism?
+[ 26.69s][moshi] They share some ideas, but aren’t quite the same thing.
+[ 30.30s][user ] What’s the difference ⟨ret@31.37s⟩ then?
+[ 31.52s][moshi] It's a common ⟦⚡SPAN@33.21s: Communism advocates for a stateless, classless society, while socialism allows for state intervention and vary⟧ point of confusion, understanding the nuance is key. Communism wants a stateless society, while socialism allows state intervention and some private property.
+[ 36.85s][user ] «backchannel» Mm-hmm.
+[ 42.93s][user ] So, communism is more… extreme?
+[ 45.45s][moshi] In a way, yes, it aims for a more radical societal shift.
+[ 49.34s][user ] But does Einstein ever talk about memory?
+[ 52.35s][moshi] ⟨ret@52.04s⟩ That’s a fascinating ⟦⚡SPAN@53.88s: Albert Einstein reportedly relied heavily on visual imagery and thought experiments rather than rote memorizat⟧ shift in topic— a great question! Einstein relied on visual imagery and thought experiments, not rote memorization.
+[ 61.93s][user ] Visual imagery… like what?
+[ 64.91s][moshi] He’d mentally recreate scenarios to work through problems.
+[ 69.29s][user ] That sounds… exhausting.
+[ 71.99s][moshi] It requires intense focus, but can be quite effective.
+[ 76.43s][user ] Does that work for everyone, do you think?
+[ 78.42s][moshi] Not necessarily; different brains utilize different strategies.
+[ 82.92s][user ] So, there’s no one best way to remember things?
+[ 85.77s][moshi] Precisely— the brain is remarkably adaptable and individual.
