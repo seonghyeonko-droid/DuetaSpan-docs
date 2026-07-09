@@ -58,63 +58,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Yes, ship it to my default address | S3 Great! | S4 It is. What's the estimated delive
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 No, that looks good. Please confir | S3 Around two pm. | S4 It is. I'm feeling a bit stressed 
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.80s  <ret> 발화 (turn1 첫 프레임)
-     3.20s  agent 발화 시작: <ret> Absolutely, let's get that checkout started for you.
-     3.37s  user  발화 끝
-     4.72s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.19s]: (tool result) success; element clicked; url: /checkout
-     6.29s  agent 발화 시작: Great, the checkout process has begun, and you're now on the
-     6.38s  agent 발화 끝
-     9.70s  user  발화 시작: Mhm.
-    10.15s  user  발화 끝
-    11.28s  agent 발화 끝
-    12.88s  user  발화 시작: What's the total cost of everything in my cart?
-    15.23s  <ret> 발화 (turn5 첫 프레임)
-    15.31s  agent 발화 시작: <ret> Your cart total is seventy-eight dollars and fifty cen
-    15.42s  user  발화 끝
-    16.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.49s]: (tool result) total: $78.50; shipping: $5.99; tax: $6.21
-    22.08s  agent 발화 끝
-    22.73s  user  발화 시작: Okay.
-    23.22s  user  발화 끝
-    23.30s  agent 발화 시작: That brings the final amount to eighty-nine dollars and seve
-    29.70s  agent 발화 끝
-    29.70s  user  발화 시작: Yes, ship it to my default address.
-    32.06s  <ret> 발화 (turn9 첫 프레임)
-    32.46s  agent 발화 시작: <ret> Wonderful. And how would you like to pay today?
-    32.61s  user  발화 끝
-    33.74s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.14s]: (tool result) success; shipping address set to 123 Main Street, Anytow
-    35.50s  agent 발화 시작: Excellent, your order will be shipped to 123 Main Street.
-    35.60s  agent 발화 끝
-    39.99s  user  발화 시작: Use the credit card on file.
-    40.03s  agent 발화 끝
-    41.98s  <ret> 발화 (turn12 첫 프레임)
-    42.13s  agent 발화 시작: <ret> Perfect. One moment while I process the payment.
-    42.30s  user  발화 끝
-    43.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: (tool result) success; payment authorized; transaction ID: 9876543210;
-    45.84s  agent 발화 시작: Your payment of eighty-nine dollars and seventy cents has be
-    45.88s  agent 발화 끝
-    50.19s  agent 발화 끝
-    50.22s  user  발화 시작: Great!
-    50.72s  user  발화 끝
-    50.88s  agent 발화 시작: Your order is now confirmed! You’ll receive a confirmation e
-    57.22s  agent 발화 끝
-    58.14s  user  발화 시작: That's a relief, I was worried it wouldn't go through.
-    60.95s  agent 발화 시작: I understand that feeling entirely. It's good to have that w
-    61.10s  user  발화 끝
-    62.95s  user  발화 시작: Yeah.
-    63.68s  user  발화 끝
-    65.81s  agent 발화 끝
-    68.00s  user  발화 시작: It is. What's the estimated delivery date?
-    71.10s  <ret> 발화 (turn20 첫 프레임)
-    71.34s  agent 발화 시작: <ret> The estimated delivery date is November eighth, shippe
-    71.56s  user  발화 끝
-    73.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.78s]: (tool result) delivery date: November 8th; carrier: FedEx; tracking nu
-    78.30s  user  발화 시작: Wow.
-    79.12s  user  발화 끝
-    83.19s  user  발화 시작: Perfect, thank you so much!
-    83.21s  agent 발화 끝
-    85.02s  user  발화 끝
-    85.12s  agent 발화 시작: You are very welcome! I’m glad I could help streamline that 
-    93.74s  agent 발화 끝
+     2.63s  <ret> 발화 (turn1 첫 프레임)
+     3.02s  agent 발화 시작: <ret> Certainly. I can initiate the checkout sequence within
+     3.24s  user  발화 끝
+     3.67s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.19s]: (tool result) checkout_started: true, cart_id: 78923
+     8.14s  agent 발화 시작: The checkout process has begun for cart number seven thousan
+     8.20s  agent 발화 끝
+    12.61s  user  발화 시작: Mhm.
+    13.10s  user  발화 끝
+    14.63s  agent 발화 끝
+    16.19s  user  발화 시작: What’s the total cost, including shipping?
+    18.46s  <ret> 발화 (turn5 첫 프레임)
+    18.86s  agent 발화 시작: <ret> Let me retrieve that information for you.
+    18.97s  user  발화 끝
+    19.66s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.73s]: (tool result) total: 67.50, shipping: 8.99, subtotal: 58.51
+    21.47s  agent 발화 시작: Your total is sixty-seven dollars and fifty cents, including
+    21.59s  agent 발화 끝
+    28.47s  agent 발화 끝
+    28.59s  user  발화 시작: Hmm.
+    29.05s  agent 발화 시작: Is there anything you’d like to adjust before confirming the
+    29.08s  user  발화 끝
+    34.56s  agent 발화 끝
+    34.57s  user  발화 시작: No, that looks good. Please confirm the order.
+    36.61s  <ret> 발화 (turn10 첫 프레임)
+    37.01s  agent 발화 시작: <ret> Wonderful. Confirming the order now.
+    37.15s  user  발화 끝
+    37.89s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.72s]: (tool result) order_confirmed: true, order_number: 456123
+    39.67s  agent 발화 시작: Your order is confirmed! The order number is four hundred fi
+    39.73s  agent 발화 끝
+    46.94s  agent 발화 끝
+    46.95s  user  발화 시작: Great! Can you set a reminder to check the tracking number t
+    51.07s  agent 발화 시작: Of course. What time tomorrow would you like that reminder?
+    51.16s  user  발화 끝
+    54.63s  agent 발화 끝
+    54.68s  user  발화 시작: Around two pm.
+    55.93s  <ret> 발화 (turn15 첫 프레임)
+    56.16s  agent 발화 시작: <ret> I’ve set a reminder for two pm tomorrow to check your 
+    56.20s  user  발화 끝
+    57.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) reminder_set: true, reminder_id: 98765
+    60.84s  agent 발화 끝
+    60.86s  agent 발화 시작: A reminder with ID nine thousand eight hundred seventy-six a
+    66.39s  user  발화 시작: Perfect, thank you.
+    66.55s  agent 발화 끝
+    67.72s  user  발화 끝
+    67.77s  agent 발화 시작: You’re very welcome! It’s good to stay on top of these thing
+    69.62s  user  발화 시작: Yeah.
+    70.11s  user  발화 끝
+    72.25s  agent 발화 끝
+    72.60s  user  발화 시작: It is. I'm feeling a bit stressed about an upcoming exam tho
+    76.58s  user  발화 끝
+    76.63s  agent 발화 시작: Exams can be stressful, absolutely. Remember, breaking down 
+    81.03s  user  발화 시작: Yeah.
+    81.65s  user  발화 끝
+    85.15s  agent 발화 끝
+    85.94s  user  발화 시작: That’s a good idea.
+    87.26s  user  발화 끝
+    87.27s  agent 발화 시작: [laugh] Small steps, consistent effort— that’s a strategy th
+    96.30s  agent 발화 끝

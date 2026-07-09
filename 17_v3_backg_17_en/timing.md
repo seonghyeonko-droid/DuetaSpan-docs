@@ -58,29 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate, genera | S2 But I read somewhere it should be  | S3 Did you remember to take the chick | S4 So, what about just a generally he
+# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate for som | S2 Oh— I always thought it was lower  | S3 Did you remember to take the chick | S4 Is there a range for athletes, the
 
-     0.00s  user  발화 시작: What’s a normal heart rate, generally?
-     1.80s  <ret> 발화 (turn1 첫 프레임)
-     2.19s  agent 발화 시작: <ret> That’s a great question to start with— Generally, a he
-     2.40s  user  발화 끝
-     2.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     5.88s  user  발화 시작: Yeah, yeah.
-     7.21s  user  발화 끝
-     9.56s  agent 발화 끝
-    10.99s  user  발화 시작: But I read somewhere it should be lower than that… like, for
-    15.68s  agent 발화 시작: Fitness can certainly influence that—
-    15.71s  user  발화 끝
-    17.47s  <ret> 발화 (turn5 첫 프레임)
-    17.63s  agent 발화 시작: <ret> A well-trained athlete can have a resting heart rate a
-    17.66s  agent 발화 끝
-    19.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: [source: American Heart Association] For well-trained athletes, a norm
-    23.36s  user  발화 시작: Did you remember to take the chicken out of the freezer?
-    23.47s  agent 발화 끝
-    25.89s  user  발화 시작: So, what about just a generally healthy person, not an athle
-    26.08s  user  발화 끝
-    31.63s  <ret> 발화 (turn8 첫 프레임)
-    32.02s  agent 발화 시작: <ret> Finding a good average is tricky, but— For a generally
-    32.14s  user  발화 끝
-    32.59s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.08s]: [source: National Institutes of Health] A typical heart rate for a hea
-    39.15s  agent 발화 끝
+     0.00s  user  발화 시작: What’s a normal heart rate for someone who’s, like, pretty h
+     2.99s  <ret> 발화 (turn1 첫 프레임)
+     3.39s  agent 발화 시작: <ret> That’s a good question to ask about your wellbeing. A 
+     3.61s  user  발화 끝
+     4.43s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.24s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
+     7.94s  user  발화 시작: Yeah, yeah.
+     9.37s  user  발화 끝
+    12.39s  agent 발화 끝
+    13.82s  user  발화 시작: Oh— I always thought it was lower than that.
+    16.80s  agent 발화 시작: It’s easy to get numbers mixed up, and there’s a lot of vari
+    16.92s  user  발화 끝
+    20.92s  agent 발화 끝
+    21.67s  user  발화 시작: Did you remember to take the chicken out of the freezer?
+    24.38s  user  발화 시작: Is there a range for athletes, then? I run a lot.
+    24.53s  user  발화 끝
+    27.71s  <ret> 발화 (turn7 첫 프레임)
+    27.87s  agent 발화 시작: <ret> Athletes often have a lower resting heart rate— For we
+    27.89s  user  발화 끝
+    29.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.55s]: [source: American Heart Association] Well-trained athletes may have a 
+    35.84s  agent 발화 끝

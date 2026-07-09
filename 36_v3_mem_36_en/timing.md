@@ -64,17 +64,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you. Is there
-     5.83s  agent 발화 끝
-     6.06s  user  발화 시작: Oh, hi Lira. I was just thinking about that trip I’m plannin
-    11.96s  <ret> 발화 (turn2 첫 프레임)
-    12.19s  agent 발화 시작: <ret> You’re planning a trip to Switzerland in March. Is the
-    12.22s  user  발화 끝
-    13.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.34s]: [2026-07-14] User is planning a trip to Switzerland in March.
-    15.53s  user  발화 시작: Yeah.
-    16.03s  user  발화 끝
-    17.75s  agent 발화 끝
-    18.93s  user  발화 시작: Actually, yes. I’m trying to figure out what kind of food I’
-    23.51s  agent 발화 시작: Switzerland has a growing vegetarian scene, though it’s trad
-    23.66s  user  발화 끝
-    33.20s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It's good to connect with you. I'm a co
+     3.92s  user  발화 시작: Uh-huh.
+     4.51s  user  발화 끝
+     8.02s  agent 발화 끝
+     8.05s  user  발화 시작: Oh, that's nice. I was just thinking about my trip to Switze
+    12.60s  <ret> 발화 (turn3 첫 프레임)
+    12.84s  agent 발화 시작: <ret> It's good to revisit plans. You are planning a trip to
+    12.95s  user  발화 끝
+    14.20s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.67s]: [2026-07-14] User is planning a trip to Switzerland in March.
+    21.18s  agent 발화 끝
+    22.39s  user  발화 시작: Actually, before that, I need to book a dentist appointment.
+    27.12s  <ret> 발화 (turn5 첫 프레임)
+    27.27s  agent 발화 시작: <ret> I can certainly help with that. You prefer Dr. Han and
+    27.44s  user  발화 끝
+    28.80s  ⚡SPAN 주입 [d'=1.68s / d_lead=1.93s]: [2026-04-27] Past chat — Booked a dentist appointment: asked for an ea
+    35.01s  agent 발화 끝

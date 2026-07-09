@@ -67,40 +67,38 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.54s⟩ fifteenth.
-[  3.77s][moshi] Certainly. Let's find ⟦⚡SPAN@5.06s: (tool result) Viewing scheduled; property: The Grandview Lofts, date: 2024-06-15, time: 14:00, agent: Sarah Ch⟧ a time that works for a viewing at The Grandview Lofts.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[  8.78s][moshi] I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM with Sarah Chen.
-[ 16.16s][user ] That’s good, but— uh, actually, make that June sixteenth.
-[ 20.20s][moshi] ⟨ret@20.04s⟩ No ⟦⚡SPAN@21.00s: (tool result) Viewing rescheduled; property: The Grandview Lofts, date: 2024-06-16, time: 10:00, agent: Sarah ⟧ problem at all. Let’s reschedule for June sixteenth then.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 24.82s][moshi] Wonderful! Your viewing is now set for June sixteenth at ten AM with Sarah Chen.
-[ 32.78s][user ] Is Sarah Chen the listing agent?
-[ 34.83s][moshi] Yes, Sarah Chen is the listing agent for The Grandview Lofts.
-[ 39.02s][user ] [laugh] That’s good to know. What’s the pet policy ⟨ret@41.98s⟩ there?
-[ 42.14s][moshi] Let me check the pet ⟦⚡SPAN@43.98s: (tool result) Pet policy: cats and dogs allowed, weight limit 50lbs, one-time fee $500.⟧ policy for The Grandview Lofts.
-      CALL: {"function": "Homes_2GetPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 45.51s][moshi] Cats and dogs are allowed, with a fifty-pound weight limit and a five hundred dollar one-time fee.
-[ 54.56s][user ] Fifty pounds…that works. How about parking? ⟨ret@58.36s⟩
-[ 58.52s][moshi] Let's see about the ⟦⚡SPAN@60.36s: (tool result) Parking: assigned spots, monthly fee $150, availability limited.⟧ parking situation at The Grandview Lofts.
-      CALL: {"function": "Homes_2GetParkingInfo", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 62.83s][moshi] Parking is assigned, with a monthly fee of one hundred and fifty dollars, but availability is limited.
-[ 66.83s][user ] «backchannel» Right.
-[ 70.14s][user ] Hmm, limited availability is a bit concerning. Is there public transport ⟨ret@75.26s⟩ nearby?
-[ 75.50s][moshi] Absolutely, let me ⟦⚡SPAN@77.26s: (tool result) Nearby transit: bus line 27 (2 min walk), subway station Elm Street (15 min walk).⟧ check the public transport options near The Grandview Lofts.
-      CALL: {"function": "Navigation_2GetNearbyTransit", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 81.51s][moshi] There’s a bus line, number twenty-seven, a two-minute walk away, and the Elm Street subway is fifteen minutes.
-[ 88.95s][user ] That bus line sounds convenient. Is there a grocery store within walking distance too?
-[ 95.42s][moshi] ⟨ret@95.18s⟩ Let's find out about ⟦⚡SPAN@97.10s: (tool result) Grocery stores: Fresh Foods Market (5 min walk), City Grocer (10 min walk).⟧ grocery stores close to The Grandview Lofts.
-      CALL: {"function": "Navigation_2GetNearbyPOIs", "arguments": {"propertyName": "The Grandview Lofts", "poiType": "grocery store"}}
-[ 99.76s][moshi] Fresh Foods Market is a five-minute walk, and City Grocer is ten minutes away.
-[106.81s][user ] Perfect. This is all really helpful, actually.
-[109.96s][moshi] [happy] I'm so glad I could help! It sounds like The Grandview Lofts might be a good fit.
-[115.78s][user ] I think so too. Do you think I should bring anything to the viewing?
-[119.33s][moshi] That’s a thoughtful question. Bringing a list of questions is always a good idea.
-[122.75s][user ] «backchannel» Uh-huh.
-[125.55s][user ] Good point. I'll make one. Thanks, Tellar.
-[128.19s][moshi] You're very welcome. I’m here if anything else comes to mind before your viewing.
-[132.27s][user ] «backchannel» Yeah.
-[133.87s][user ] I appreciate it. I think I'm all set for now.
-[136.86s][moshi] Excellent. Wishing you a productive viewing on June sixteenth!
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.36s⟩ fifteenth.
+[  3.59s][moshi] Great! I’ve ⟦⚡SPAN@4.88s: (tool result) Viewing scheduled: The Grandview Lofts, June 15th, 2:00 PM. Confirmation sent to your email.⟧ scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 10.76s][user ] That’s… actually, can we push that to the sixteenth?
+[ 14.42s][moshi] ⟨ret@14.26s⟩ Absolutely. I’ve rescheduled ⟦⚡SPAN@16.26s: (tool result) Viewing rescheduled: The Grandview Lofts, June 16th, 2:00 PM. Confirmation sent.⟧ your viewing at The Grandview Lofts for June sixteenth, still at two PM.
+      CALL: {"function": "Homes_2_RescheduleVisit", "arguments": {"original_date": "June fifteenth", "new_date": "June sixteenth", "property": "The Grandview Lofts"}}
+[ 22.32s][user ] Perfect. And could you send me ⟨ret@25.15s⟩ directions?
+[ 25.38s][moshi] Certainly. Directions to ⟦⚡SPAN@27.15s: (tool result) Directions to The Grandview Lofts: 123 Main Street, Anytown, USA. Estimated travel time: 15 minu⟧ The Grandview Lofts are to 123 Main Street, with an estimated travel time of fifteen minutes.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
+[ 34.89s][user ] Fifteen minutes? That sounds…fast.
+[ 38.72s][moshi] Traffic can be unpredictable, but that’s what the navigation system estimates right now. It’s always best to allow a little extra time, just in case.
+[ 49.40s][user ] Right. Uh, what’s the neighborhood like around there?
+[ 53.30s][moshi] ⟨ret@53.15s⟩ It’s a quiet ⟦⚡SPAN@55.15s: (tool result) Neighborhood: Quiet residential area. Walk Score: 78/100 (Very Walkable). Nearby amenities: park⟧ residential area. The Walk Score is seventy-eight out of one hundred, very walkable, with parks and cafes nearby.
+      CALL: {"function": "NeighborhoodInfo_2_GetDetails", "arguments": {"address": "123 Main Street, Anytown, USA"}}
+[ 59.12s][user ] «backchannel» Right.
+[ 63.99s][user ] Walkable is good. I like that.
+[ 66.35s][moshi] It’s wonderful to find a neighborhood that fits your lifestyle. That’s a big part of feeling at home, isn’t it?
+[ 73.53s][user ] Yeah, definitely. So, what’s the average rent for a two-bedroom in ⟨ret@77.78s⟩ Anytown?
+[ 77.94s][moshi] The average rent ⟦⚡SPAN@79.78s: (tool result) Average rent (2-bedroom, Anytown): $1800/month. Range: $1500 - $2200.⟧ for a two-bedroom in Anytown is eighteen hundred dollars per month, ranging from fifteen hundred to twenty-two hundred.
+      CALL: {"function": "Rentals_2_GetAverageRent", "arguments": {"city": "Anytown", "bedrooms": "2"}}
+[ 87.75s][user ] Wow, that's…more than I expected.
+[ 91.28s][moshi] Rent can vary quite a bit depending on location and amenities. It's good to have a realistic picture, though, so you can plan accordingly.
+[102.16s][user ] True. Okay, can you check if there are any other two-bedroom apartments available near The Grandview Lofts, under seventeen hundred?
+[110.61s][moshi] ⟨ret@110.37s⟩ I found ⟦⚡SPAN@112.37s: (tool result) Found 3 apartments: 11 Oak Street ($1650), 22 Pine Avenue ($1595), 33 Maple Drive ($1675).⟧ three apartments near The Grandview Lofts under seventeen hundred dollars: 11 Oak Street for sixteen-fifty, 22 Pine Avenue for fifteen-ninety-five, and 33 Maple Drive for sixteen-seventy-five.
+      CALL: {"function": "Rentals_2_SearchAvailability", "arguments": {"location": "near The Grandview Lofts", "bedrooms": "2", "max_rent": "1700"}}
+[117.62s][user ] «backchannel» Mm-hmm.
+[126.83s][user ] Hmm, 22 Pine Avenue sounds interesting. Can you tell me more about that ⟨ret@131.83s⟩ one?
+[132.07s][moshi] 22 Pine ⟦⚡SPAN@133.83s: (tool result) 22 Pine Avenue: 2 bed, 1 bath, 900 sq ft, includes in-unit laundry. Pet-friendly. Available now.⟧ Avenue has two bedrooms, one bathroom, nine hundred square feet, and includes in-unit laundry. It’s also pet-friendly and available now.
+      CALL: {"function": "Rentals_2_GetApartmentDetails", "arguments": {"address": "22 Pine Avenue"}}
+[140.92s][user ] «backchannel» Yeah.
+[144.12s][user ] Pet-friendly is a must. That sounds…promising.
+[148.22s][moshi] It’s wonderful when a place checks all the boxes. It sounds like a really good fit for you and your companion.
+[155.20s][user ] [laugh] Yes, it does. Okay, let’s schedule a viewing for 22 Pine Avenue, tomorrow afternoon?
+[163.32s][moshi] ⟨ret@163.16s⟩ ⟦⚡SPAN@163.88s: (tool result) Viewing scheduled: 22 Pine Avenue, tomorrow at 3:00 PM. Confirmation sent.⟧ Excellent! I’ve scheduled a viewing for 22 Pine Avenue tomorrow at three PM. You’ll receive a confirmation shortly.
+      CALL: {"function": "Rentals_2_ScheduleViewing", "arguments": {"address": "22 Pine Avenue", "date": "tomorrow afternoon"}}

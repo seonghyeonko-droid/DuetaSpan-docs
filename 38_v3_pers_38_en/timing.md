@@ -59,21 +59,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to gently walk along
-     6.23s  user  발화 시작: Jaeia… that’s a beautiful name. It feels… calming. I’m just 
-     6.34s  agent 발화 끝
-    11.93s  user  발화 끝
-    12.22s  agent 발화 시작: It’s understandable to feel lost, especially when life shift
-    14.71s  user  발화 시작: Wow.
-    15.53s  user  발화 끝
-    19.60s  agent 발화 시작: Sometimes, naming the feeling itself can lessen its power—it
-    19.81s  agent 발화 끝
-    28.40s  user  발화 시작: It’s… everything, I guess. I just moved to Sydney, and it’s 
-    28.87s  agent 발화 끝
-    33.17s  user  발화 끝
-    33.50s  agent 발화 시작: A big change like that, coupled with missing loved ones, is 
-    43.29s  user  발화 시작: But… what if I made the wrong choice coming here?
-    43.33s  agent 발화 끝
-    46.17s  agent 발화 시작: It’s natural to question big decisions, Avery. Regret can fe
-    46.29s  user  발화 끝
-    56.65s  agent 발화 끝
+     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to offer a gentle sp
+     5.72s  user  발화 시작: Jaeia… that’s a lovely name. It sounds… ancient? I’m just fe
+     5.79s  agent 발화 끝
+    11.32s  user  발화 끝
+    11.61s  agent 발화 시작: It does have roots in old languages, yes. Feeling lost is a 
+    14.00s  user  발화 시작: Wow.
+    14.82s  user  발화 끝
+    18.76s  agent 발화 시작: Sometimes, simply acknowledging the uncertainty can lessen i
+    19.03s  agent 발화 끝
+    26.61s  user  발화 시작: I— I mean, it’s my grandmother. She passed last month, and e
+    27.19s  agent 발화 끝
+    31.79s  user  발화 끝
+    32.09s  agent 발화 시작: [sigh] Grief truly reshapes our world, doesn’t it? It’s a pr
+    42.70s  user  발화 시작: Just… her garden. She always had the most beautiful roses. I
+    42.80s  agent 발화 끝
+    47.70s  user  발화 끝

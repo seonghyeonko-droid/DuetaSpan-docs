@@ -64,33 +64,38 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.80s⟩ Paris?
-[  4.03s][moshi] ⟦⚡SPAN@4.92s: (tool result) 48.8584, 2.2945⟧ The Eiffel Tower’s coordinates are latitude 48.8584 and longitude 2.2945.
-[ 12.13s][user ] Okay, great. And what’s the quickest route from there to the ⟨ret@17.09s⟩ Louvre Museum?
-[ 17.48s][moshi] It’s 3.1 ⟦⚡SPAN@19.09s: (tool result) Distance: 3.1 km; Estimated time: 12 mins; Mode: walking⟧ kilometers to the Louvre, about a twelve-minute walk.
-[ 20.96s][user ] «backchannel» Right.
-[ 22.53s][user ] Hmm, walking is nice, but is public transport ⟨ret@26.64s⟩ faster?
-[ 26.95s][moshi] Bus ⟦⚡SPAN@28.00s: (tool result) Bus line 42; Duration: 15 mins; Cost: 2.00 EUR⟧ line 42 takes fifteen minutes and costs two euros.
-[ 31.48s][user ] That’s not much faster. [sigh] I think I’ll stick with walking then.
-[ 36.52s][moshi] Walking is a lovely way to see a city, it really is.
-[ 37.76s][user ] «backchannel» Okay.
-[ 40.43s][user ] Do you think I should pre-book tickets for the Louvre? It’s my first time.
-[ 44.44s][moshi] Absolutely. The Louvre can get very crowded, pre-booking is a smart idea.
-[ 49.09s][user ] Okay, can you check availability for tomorrow afternoon, say around 2 ⟨ret@53.83s⟩ pm?
-[ 54.15s][moshi] There ⟦⚡SPAN@54.95s: (tool result) Available slots: 14:00, 14:30, 15:00; Price: 17.00 EUR⟧ are slots at 2 pm, 2:30 pm, and 3 pm tomorrow, costing seventeen euros.
-[ 63.73s][user ] 2:30 pm sounds perfect. Can you book that for me?
-[ 67.47s][moshi] ⟨ret@67.31s⟩ Your ⟦⚡SPAN@68.59s: (tool result) Booking confirmed;⟧ ticket is booked for 2:30 pm tomorrow, reference LXV8492.
-[ 73.83s][user ] Wonderful! That’s a huge weight off my ⟨ret@76.79s⟩ mind.
-[ 76.95s][moshi] «interrupted» I’m glad I could help ⟦⚡SPAN@78.55s: LXV8492; Time: 14:30, 2024-05-03; Cost: 17.00 EUR⟧ with that. It’s always nice to have things sorted in advance—
-[ 80.67s][user ] «interrupts_prev» …Actually, now I’m wondering, are there any good cafes near the Louvre?
-[ 85.16s][moshi] Oh, yes! There are several lovely cafes nearby.
-[ 89.54s][user ] What kind of vibe are you thinking? Something quiet to read in, or more bustling?
-[ 95.13s][moshi] That depends on what you prefer, of course. Do you want somewhere peaceful?
-[100.13s][user ] Hmm, peaceful sounds good. I’ve had a lot of noise today.
-[104.10s][moshi] Then I’d recommend "Cafe Verlet". It's a classic Parisian cafe—
-[106.23s][user ] «backchannel» Yeah.
-[109.64s][moshi] —known for its quiet atmosphere and delicious pastries. It’s a bit of a hidden gem.
-[116.04s][user ] Oh, that sounds perfect. How far is that from the ⟨ret@119.38s⟩ Louvre?
-[119.62s][moshi] Cafe Verlet is ⟦⚡SPAN@121.14s: (tool result) Distance: 650m; Walking time: 8 mins⟧ 650 meters from the Louvre, about an eight-minute walk.
-[125.55s][user ] Excellent. You’ve been a lifesaver, Nellara!
-[128.80s][moshi] [happy] You’re very welcome! I’m happy to help you plan a wonderful day.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.54s⟩ Paris?
+[  3.77s][moshi] ⟦⚡SPAN@4.58s: (tool result) 48.8584, 2.2945⟧ Certainly, I can help with that. The Eiffel Tower’s coordinates are latitude 48.8584 and longitude 2.2945.
+[ 14.70s][user ] Okay, good. And what about the Statue ⟨ret@17.02s⟩ of Liberty?
+[ 17.41s][moshi] The ⟦⚡SPAN@19.02s: (tool result) 40.6892, -74.0445⟧ Statue of Liberty is at latitude 40.6892 and longitude negative 74.0445.
+[ 24.08s][user ] «backchannel» Right.
+[ 26.86s][user ] Hmm, interesting. I’m planning a trip to New York.
+[ 30.92s][moshi] That sounds lovely! New York is a fantastic city with so much to offer.
+[ 37.36s][user ] I'm thinking of visiting Central Park. Is it far from the Statue of Liberty?
+[ 42.35s][moshi] It is quite a distance, about nine miles.
+[ 43.33s][user ] «backchannel» Okay.
+[ 45.52s][user ] Nine miles… okay. Are there boat tours that go from the Statue of Liberty to near Central ⟨ret@51.27s⟩ Park?
+[ 51.58s][moshi] There are several ⟦⚡SPAN@53.27s: (tool result) ["Circle Line Sightseeing Cruises", "New York Water Taxi", "Statue Cruises"]⟧ options: Circle Line, New York Water Taxi, and Statue Cruises.
+[ 57.34s][user ] Circle Line sounds good. What times do they have tours tomorrow?
+[ 61.85s][moshi] ⟨ret@61.78s⟩ Circle Line ⟦⚡SPAN@63.06s: (tool result) 09:00, 11:00, 13:00, 15:00, 17:00⟧ has tours tomorrow at nine, eleven, one, three, and five PM.
+[ 70.47s][user ] Hmm… the one at one PM sounds perfect. Can you book that for me?
+[ 75.44s][moshi] ⟨ret@75.28s⟩ Wonderful! Your ⟦⚡SPAN@76.96s: (tool result) Booking confirmed: Circle Line, 1 PM, tomorrow, 1 adult. Confirmation #KL729X⟧ Circle Line tour is booked for one PM tomorrow. Confirmation is KL729X.
+[ 84.23s][user ] That’s fantastic, thank you!— I mean, do they have options for seeing other landmarks too?
+[ 90.23s][moshi] «interrupted» [interrupting] Circle Line tours often pass by other famous landmarks—
+[ 95.14s][user ] «interrupts_prev» …like the Empire State Building, or the Brooklyn Bridge?
+[ 98.38s][moshi] Yes, many Circle Line tours include views of both the Empire State Building and the Brooklyn Bridge.
+[101.30s][user ] «backchannel» Yeah.
+[105.83s][moshi] They also frequently go past Ellis Island, offering a glimpse into immigration history.
+[111.83s][user ] Oh, that’s good to know. How long is the tour usually?
+[115.70s][moshi] Most Circle Line sightseeing tours last around two and a half to three hours.
+[121.22s][user ] That's a decent amount of time. I think that’ll be enough.
+[125.03s][moshi] I’m glad to hear you feel that way. It's good to have a relaxed pace when sightseeing.
+[130.60s][user ] Yeah. I’m a little worried about getting around though.
+[134.24s][moshi] Traveling in a new city can feel overwhelming, it’s perfectly normal to feel a bit anxious.
+[141.31s][user ] I just don’t want to get lost. Is the subway easy to use in New York?
+[146.03s][moshi] The New York subway is quite extensive, but it can be a little confusing at first.
+[151.36s][user ] [sigh] Okay. Maybe I should just stick to taxis then.
+[155.34s][moshi] Taxis are readily available, but they can be expensive during peak hours, and traffic can be unpredictable.
+[160.71s][user ] «backchannel» Mm-hmm.
+[162.25s][user ] You’re right. Hmm… maybe I’ll download a subway map app.
+[167.00s][moshi] That’s a great idea! A subway map app can be very helpful for navigating the system.

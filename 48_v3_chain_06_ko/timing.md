@@ -68,47 +68,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 웹 브라우저 사용자 에이전트를 내 마음대로 바꿀 수 있어 | S2 와, 진짜 빠르게 됐네요! 그럼 지금 제가 어떤 웹사이트에 접 | S3 아, 잠깐만요. 지금 바로 그 사이트에 접속해서 확인해 보고  | S4 아니요, 오늘은 여기까지 할게요. 정말 감사합니다!
+# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점 | S2 음… 그럼 이제 다른 웹사이트에 접속해서 제대로 작동하는지 확 | S3 페이지 소스는 어떻게 확인하는 건가요? | S4 Chrome으로 잘 바뀌었는지 다시 확인해 볼까요?
 
-     0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 내 마음대로 바꿀 수 있어요?
-     4.02s  user  발화 끝
-     4.54s  agent 발화 시작: 네, 가능합니다. 웹 브라우저 사용자 에이전트를 변경하면 웹사이트에서 다른 브라우저나 장치로 인식되게 할 수
-     7.05s  user  발화 시작: 음.
-     7.50s  user  발화 끝
-    11.67s  user  발화 시작: 그럼 사용자 에이전트를 MyCustomBrowser 버전 십오로 설정해 줄 수 있을까요?
-    11.86s  agent 발화 끝
-    16.35s  <ret> 발화 (turn4 첫 프레임)
-    16.74s  agent 발화 시작: <ret> 잠시만 기다려 주세요. 사용자 에이전트가 MyCustomBrowser 버전 십오로 설정되었습니다.
-    16.86s  user  발화 끝
-    17.07s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.97s]: (tool result) success; user_agent: MyCustomBrowser version 10.5
-    21.71s  user  발화 시작: 음.
-    22.02s  user  발화 끝
-    26.43s  user  발화 시작: 와, 진짜 빠르게 됐네요! 그럼 지금 제가 어떤 웹사이트에 접속했을 때 사용자 에이전트가 제대로 적용됐는지 
-    26.56s  agent 발화 끝
-    35.46s  user  발화 끝
-    35.62s  agent 발화 시작: 네, 사용자 에이전트 확인 사이트를 방문해 보시면 됩니다. 어떤 사이트를 추천해 드릴까요?
-    41.46s  agent 발화 끝
-    41.86s  user  발화 시작: 음… 사용자 에이전트 확인 사이트 중에서 가장 유명한 곳으로 보여주세요.
-    46.58s  <ret> 발화 (turn9 첫 프레임)
-    46.72s  user  발화 끝
-    46.73s  agent 발화 시작: <ret> 사용자 에이전트 확인 사이트 whatismyuseragent.com을 찾았습니다. 접속해 보시면 
-    47.08s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.54s]: (tool result) whatismyuseragent.com; Description: Check your browser’s
-    51.04s  user  발화 시작: 예.
-    51.39s  user  발화 끝
-    55.51s  user  발화 시작: 아, 잠깐만요. 지금 바로 그 사이트에 접속해서 확인해 보고 싶은데…
-    55.63s  agent 발화 끝
-    59.20s  <ret> 발화 (turn12 첫 프레임)
-    59.54s  user  발화 끝
-    59.59s  agent 발화 시작: <ret> 물론입니다. 해당 사이트로 바로 이동해 드릴까요?
-    60.56s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.33s]: (tool result) success; url: https://whatismyuseragent.com
-    62.76s  agent 발화 시작: whatismyuseragent.com으로 이동했습니다. 지금 사용자 에이전트를 확인해 보실 수 있습니다.
-    62.92s  agent 발화 끝
-    69.19s  agent 발화 끝
-    71.76s  user  발화 시작: 어, 진짜네요! MyCustomBrowser 버전 십오로 잘 바뀌었어요. 고마워요.
-    77.27s  user  발화 끝
-    77.34s  agent 발화 시작: 다행입니다. 웹 브라우징 경험을 개선하는 데 도움이 되었다니 기쁘네요. 혹시 다른 궁금한 점이 있으신가요?
-    84.75s  agent 발화 끝
-    84.77s  user  발화 시작: 아니요, 오늘은 여기까지 할게요. 정말 감사합니다!
-    88.46s  agent 발화 시작: 언제든지 필요하시면 다시 찾아주세요. 좋은 하루 보내세요!
-    88.47s  user  발화 끝
-    92.86s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 줄 수 있을까요?
+     4.88s  <ret> 발화 (turn1 첫 프레임)
+     5.04s  user  발화 끝
+     5.12s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 사용자 에이전트가 MyCustomBrowser 버전 십점오로 설정되었습
+     6.16s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.48s]: (tool result) User agent set to MyCustomBrowser version 10.5.
+     7.24s  user  발화 시작: 음.
+     7.73s  user  발화 끝
+    11.13s  user  발화 시작: 그… 혹시 지금 설정된 사용자 에이전트가 뭔지 확인할 수 있을까요?
+    11.33s  agent 발화 끝
+    15.68s  <ret> 발화 (turn4 첫 프레임)
+    15.85s  user  발화 끝
+    15.91s  agent 발화 시작: <ret> 물론이죠. 지금 사용자 에이전트를 확인해 볼게요.
+    16.88s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.42s]: (tool result) Current user agent: MyCustomBrowser version 10.5.
+    19.25s  agent 발화 시작: 현재 사용자 에이전트는 MyCustomBrowser 버전 십점오입니다.
+    19.33s  agent 발화 끝
+    21.28s  user  발화 시작: 예.
+    21.69s  user  발화 끝
+    23.65s  agent 발화 끝
+    24.14s  user  발화 시작: 음… 그럼 이제 다른 웹사이트에 접속해서 제대로 작동하는지 확인해 볼까요? 예를 들어, example.com
+    32.63s  <ret> 발화 (turn8 첫 프레임)
+    32.99s  user  발화 끝
+    33.02s  agent 발화 시작: <ret> 좋은 생각이에요. example.com에 접속해서 사용자 에이전트가 제대로 적용되었는지 확인해 보
+    34.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Navigation to https://example.com successful.
+    40.22s  agent 발화 시작: example.com에 정상적으로 접속되었습니다. 사용자 에이전트 확인을 위해 페이지 소스를 살펴볼게요.
+    40.35s  agent 발화 끝
+    43.66s  user  발화 시작: 음.
+    44.11s  user  발화 끝
+    47.10s  user  발화 시작: 페이지 소스는 어떻게 확인하는 건가요?
+    47.17s  agent 발화 끝
+    49.16s  <ret> 발화 (turn12 첫 프레임)
+    49.47s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
+    49.59s  user  발화 끝
+    49.88s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.61s]: (tool result) Page source contains "MyCustomBrowser version 10.5".
+    50.93s  agent 발화 시작: 페이지 소스에 'MyCustomBrowser 버전 십점오'라는 문자열이 포함되어 있습니다. 사용자 에이전트가
+    51.08s  agent 발화 끝
+    60.39s  agent 발화 끝
+    61.67s  user  발화 시작: 다행이다. 그럼 이제 다른 브라우저로 설정해 볼까요? 이번엔 Chrome으로 바꿔볼게요.
+    67.27s  user  발화 끝
+    67.28s  <ret> 발화 (turn15 첫 프레임)
+    67.43s  agent 발화 시작: <ret> Chrome으로 변경해 드릴게요. 사용자 에이전트를 Chrome으로 설정하겠습니다.
+    68.96s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.19s]: (tool result) User agent set to Chrome.
+    72.46s  agent 발화 시작: 사용자 에이전트가 Chrome으로 설정되었습니다.
+    72.62s  agent 발화 끝
+    75.37s  agent 발화 끝
+    75.45s  user  발화 시작: Chrome으로 잘 바뀌었는지 다시 확인해 볼까요?
+    77.91s  <ret> 발화 (turn18 첫 프레임)
+    78.22s  agent 발화 시작: <ret> 네, 다시 확인해 보겠습니다.
+    78.41s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.89s]: (tool result) Current user agent: Chrome.
+    78.46s  user  발화 끝
+    79.98s  agent 발화 시작: 현재 사용자 에이전트는 Chrome입니다.
+    80.11s  agent 발화 끝
+    82.94s  agent 발화 끝

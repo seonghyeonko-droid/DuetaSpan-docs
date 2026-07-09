@@ -66,51 +66,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에서 육월 십오일에 방문 예약을 잡아줘. | S2 그 로프트, 반려동물 동반 가능한가? | S3 음… 새로운 동네가 걱정되긴 해. 특히 병원이 가까운지. | S4 고마워, 텔러. 덕분에 마음이 좀 놓이네.
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 방문 예약을 잡아줘. 육월 십오일로. | S2 아니, 그곳만 볼게. 그 로프트가 괜찮아 보이거든. 근데 거기 | S3 아, 공간이 제한적이라고? 그럼 혹시 근처에 유료 주차장도 있 | S4 시티 개러지가 더 싸네. 그럼 시티 개러지로 알아봐 줘.
 
-     0.00s  user  발화 시작: 그랜드뷰 로프트에서 육월 십오일에 방문 예약을 잡아줘.
-     3.91s  <ret> 발화 (turn1 첫 프레임)
-     4.14s  agent 발화 시작: <ret> 네, 알겠습니다. 그랜드뷰 로프트, 육월 십오일 오후 두시에 방문 예약이 확정됐습니다.
-     4.30s  user  발화 끝
-     4.95s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.06s]: (tool result) Visit scheduled; Property: The Grandview Lofts; Date: 20
-     9.98s  agent 발화 끝
-    11.31s  user  발화 시작: 어… 아니, 십오일은 안 돼. 십육일로 바꿔줘.
-    14.80s  <ret> 발화 (turn3 첫 프레임)
-    15.14s  user  발화 끝
-    15.19s  agent 발화 시작: <ret> 잠시만요. 네, 그랜드뷰 로프트 방문 날짜를 육월 십육일 오후 두시로 변경했습니다.
-    15.30s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.64s]: (tool result) Visit scheduled; Property: The Grandview Lofts; Date: 20
-    19.85s  user  발화 시작: 어.
-    20.34s  user  발화 끝
-    22.11s  agent 발화 시작: 혹시 다른 궁금한 점 있으세요?
-    22.28s  agent 발화 끝
-    24.15s  user  발화 시작: 그 로프트, 반려동물 동반 가능한가?
-    24.31s  agent 발화 끝
-    26.82s  <ret> 발화 (turn7 첫 프레임)
-    26.89s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트는 반려동물 동반이 가능하고, 일회성 수수료가 이백오십달러입니다.
-    27.01s  user  발화 끝
-    27.32s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.38s]: [source: Grandview Lofts website] Pets are welcome at The Grandview Lo
-    30.90s  user  발화 시작: 음.
-    31.11s  user  발화 끝
-    33.07s  user  발화 시작: 이백오십달러나? 좀 비싸네.
-    33.10s  agent 발화 끝
-    35.24s  agent 발화 시작: 이사 준비는 잘 되어가시나요? 혹시 새로운 동네에 대한 걱정도 있으신가요?
-    35.33s  user  발화 끝
-    40.35s  user  발화 시작: 음… 새로운 동네가 걱정되긴 해. 특히 병원이 가까운지.
-    40.47s  agent 발화 끝
-    44.32s  <ret> 발화 (turn12 첫 프레임)
-    44.61s  user  발화 끝
-    44.64s  agent 발화 시작: <ret> 병원은 중요하죠. 그랜드뷰 로프트 주변에는 시티 제너럴 병원, 세인트 루크스 클리닉, 머시 병원이
-    45.12s  ⚡SPAN 주입 [d'=0.80s / d_lead=0.90s]: (tool result) Nearby hospitals: City General Hospital (0.8 miles); St.
-    54.10s  agent 발화 끝
-    54.18s  user  발화 시작: 영 점 팔마일이면 괜찮네. 그럼 시티 제너럴 병원까지 가는 길 좀 알려줘.
-    59.73s  user  발화 끝
-    59.80s  <ret> 발화 (turn14 첫 프레임)
-    59.86s  agent 발화 시작: <ret> 그랜드뷰 로프트에서 엘름 스트리트를 북쪽으로 영 점 삼마일 이동한 후, 오크 애비뉴로 좌회전하면 
-    61.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: (tool result) Directions: Start at The Grandview Lofts; Head north on 
-    65.43s  user  발화 시작: 음.
-    65.65s  user  발화 끝
-    72.74s  user  발화 시작: 고마워, 텔러. 덕분에 마음이 좀 놓이네.
-    72.80s  agent 발화 끝
-    75.64s  agent 발화 시작: 도움이 되었다니 기쁩니다. 새로운 시작을 응원할게요.
-    75.65s  user  발화 끝
-    78.88s  agent 발화 끝
+     0.00s  user  발화 시작: 그랜드뷰 로프트에 방문 예약을 잡아줘. 육월 십오일로.
+     4.07s  <ret> 발화 (turn1 첫 프레임)
+     4.30s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트 방문 예약을 잡아드릴게요.
+     4.49s  user  발화 끝
+     6.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.60s]: (tool result) Visit scheduled: The Grandview Lofts, June 15th, 2:00 PM
+     7.74s  agent 발화 시작: 그랜드뷰 로프트 육월 십오일 오후 두시에 방문 예약이 완료됐습니다. 확인 메일도 보내드렸어요.
+     7.91s  agent 발화 끝
+    14.87s  user  발화 시작: 음… 근데 두시는 좀 안 될 것 같아. 오후 네시로 바꿔줄 수 있어?
+    14.87s  agent 발화 끝
+    19.67s  <ret> 발화 (turn4 첫 프레임)
+    19.90s  agent 발화 시작: <ret> 물론이죠. 시간을 변경해 드릴게요.
+    20.05s  user  발화 끝
+    21.11s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.35s]: (tool result) Visit rescheduled: The Grandview Lofts, June 15th, 4:00 
+    22.05s  agent 발화 시작: 네, 그랜드뷰 로프트 육월 십오일 오후 네시로 시간이 변경됐습니다. 새로운 확인 메일도 보내드렸어요.
+    22.25s  agent 발화 끝
+    26.25s  user  발화 시작: 어.
+    26.70s  user  발화 끝
+    28.33s  agent 발화 시작: 혹시 다른 로프트도 둘러보고 싶으신가요? 비슷한 가격대의 다른 곳도 찾아볼까요?
+    28.49s  agent 발화 끝
+    31.17s  user  발화 시작: 응응.
+    31.57s  user  발화 끝
+    33.65s  agent 발화 끝
+    33.92s  user  발화 시작: 아니, 그곳만 볼게. 그 로프트가 괜찮아 보이거든. 근데 거기가 주차는 어떻게 돼?
+    39.11s  <ret> 발화 (turn10 첫 프레임)
+    39.42s  agent 발화 시작: <ret> 그랜드뷰 로프트의 주차 시설에 대해 알아봐 드릴게요.
+    39.57s  user  발화 끝
+    40.31s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.55s]: (tool result) Parking: Free on-site parking available for residents an
+    42.84s  agent 발화 시작: 그랜드뷰 로프트는 입주민과 방문객 모두 무료로 주차할 수 있는 공간이 있습니다. 다만 공간이 제한적이라고 하
+    42.98s  agent 발화 끝
+    51.41s  agent 발화 끝
+    52.33s  user  발화 시작: 아, 공간이 제한적이라고? 그럼 혹시 근처에 유료 주차장도 있어? 혹시… 코스트코 쪽으로 걸어가면 주차하기 
+    59.43s  <ret> 발화 (turn13 첫 프레임)
+    59.47s  user  발화 끝
+    59.59s  agent 발화 시작: <ret> 코스트코 쪽 주차장 정보는 지금 바로 확인해 드릴게요.
+    60.63s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.66s]: (tool result) Costco parking: $5/hour, 5-minute walk. Available spaces
+    63.05s  agent 발화 시작: 코스트코 주차장은 시간당 오달러이고, 도보로 오분 거리에 있습니다. 현재 서른두개의 공간이 남아있습니다.
+    63.25s  agent 발화 끝
+    70.19s  user  발화 시작: 오달러면 괜찮네. 그럼 혹시… 코스트코 말고 다른 유료 주차장도 좀 알아봐 줄 수 있어? 코스트코는 사람이 
+    70.37s  agent 발화 끝
+    78.58s  user  발화 끝
+    78.78s  <ret> 발화 (turn16 첫 프레임)
+    78.85s  agent 발화 시작: <ret> 물론입니다. 코스트코 외 다른 유료 주차장도 찾아볼게요.
+    80.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.82s]: (tool result) Nearby parking: City Garage ($6/hour, 8 min walk, 15 spa
+    83.42s  agent 발화 시작: 시티 개러지(시간당 육달러, 도보 팔분, 십오자리)와 파크플러스(시간당 칠달러, 도보 칠분, 이십자리)가 근
+    83.67s  agent 발화 끝
+    91.48s  user  발화 시작: 시티 개러지가 더 싸네. 그럼 시티 개러지로 알아봐 줘.
+    91.67s  agent 발화 끝
+    94.31s  <ret> 발화 (turn19 첫 프레임)
+    94.63s  agent 발화 시작: <ret> 네, 시티 개러지로 주차 정보를 확인해 드릴게요.
+    94.72s  user  발화 끝
+    96.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: (tool result) Reservation confirmed: City Garage, 2 hours, $12. Confir
+    97.75s  agent 발화 시작: 시티 개러지 두시간 주차 예약이 완료됐습니다. 총 비용은 십이달러이고, 예약 코드는 CG456입니다.
+    97.86s  agent 발화 끝
+   105.49s  agent 발화 끝

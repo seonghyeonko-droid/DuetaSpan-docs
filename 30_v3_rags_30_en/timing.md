@@ -65,8 +65,8 @@
 
 
      0.00s  user  발화 시작: When was the printing press invented in Europe?
-     2.75s  <ret> 발화 (turn1 첫 프레임)
-     2.99s  agent 발화 시작: <ret> That’s a fascinating question, and a pivotal moment in
-     3.23s  user  발화 끝
-     4.59s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.79s]: [source: Britannica] The printing press was invented around 1440 by Jo
-    11.71s  agent 발화 끝
+     2.49s  <ret> 발화 (turn1 첫 프레임)
+     2.73s  agent 발화 시작: <ret> That’s a fascinating piece of history. The printing pr
+     2.96s  user  발화 끝
+     3.61s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.34s]: [source: Britannica] The printing press was invented around 1440 by Jo
+    10.15s  agent 발화 끝

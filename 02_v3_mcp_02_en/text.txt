@@ -69,32 +69,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.22s⟩ com.
-[  4.46s][moshi] Certainly. I’m now ⟦⚡SPAN@6.22s: (tool result) Status: monitoring; URL: weather.example.com; Last check: 2024-02-29 14:32:00 UTC; Content: "Clo⟧ monitoring weather dot example dot com for any changes.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "expected_content": "weather update"}}
-[ 10.21s][moshi] Currently, the site reports cloudy conditions with a chance of rain.
-[ 12.12s][user ] «backchannel» Uh-huh.
-[ 14.27s][user ] Oh, good. I was hoping it wouldn't clear up.
-[ 16.73s][moshi] [laugh] It sounds like you prefer a bit of gray sky, then. Is there anything else I can monitor for you at the moment?
-[ 21.33s][user ] «backchannel» Yeah.
-[ 25.52s][user ] Actually, yes. Could you find me a good Italian restaurant nearby?
-[ 30.39s][moshi] ⟨ret@30.16s⟩ Bella Notte ⟦⚡SPAN@32.16s: (tool result) Restaurant: Bella Notte; Address: 123 Main Street; Rating: 4.5 stars; Price: $$; Distance: 0.7 m⟧ is 0.7 miles away, with a 4.5-star rating and moderate pricing.
-      CALL: {"function": "find_restaurant", "arguments": {"cuisine": "Italian", "location": "current"}}
-[ 35.36s][user ] «backchannel» Yeah.
-[ 37.72s][user ] That sounds perfect! Can you make a reservation for two at seven tonight?
-[ 42.40s][moshi] ⟨ret@42.33s⟩ Your reservation ⟦⚡SPAN@43.61s: (tool result) Confirmation: reservation made; Restaurant: Bella Notte; Date: 2024-02-29; Time: 19:00; Party si⟧ at Bella Notte for two at seven this evening is confirmed. Your confirmation number is BN72919.
-      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant": "Bella Notte", "date": "2024-02-29", "time": "19:00", "party_size": 2}}
-[ 46.66s][user ] «backchannel» Oh.
-[ 51.22s][user ] Wonderful, thank you. I— I mean, that's exactly what I needed.
-[ 56.12s][moshi] You're very welcome. I'm glad I could assist. Do you have a calendar reminder set for the reservation?
-[ 62.65s][user ] No, I don't think so. Could you set one for six thirty?
-[ 66.12s][moshi] ⟨ret@66.05s⟩ A reminder for your dinner ⟦⚡SPAN@68.05s: (tool result) Reminder created; Time: 18:30; Description: Dinner reservation at Bella Notte; Status: active.⟧ reservation at Bella Notte is now set for six thirty.
-      CALL: {"function": "create_reminder", "arguments": {"time": "18:30", "description": "Dinner reservation at Bella Notte"}}
-[ 69.50s][user ] «backchannel» Right.
-[ 71.71s][user ] Perfect! That's everything, I think.
-[ 74.15s][moshi] It all sounds quite organized. A little planning goes a long way, doesn’t it?
-[ 76.16s][user ] «backchannel» Yeah.
-[ 80.00s][user ] Yeah. It really does.
-[ 82.11s][moshi] Is there anything else at all I can help you with today, or are you all set?
-[ 85.73s][user ] «backchannel» Yeah.
-[ 86.93s][user ] No, I think I'm good. Thanks again!
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.01s⟩ com.
+[  4.25s][moshi] Certainly. I’m now ⟦⚡SPAN@6.01s: (tool result) {"status": "success", "response": "Currently 72 degrees Fahrenheit and sunny."}⟧ monitoring weather dot example dot com for changes.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
+[  9.74s][moshi] The current weather at weather dot example dot com is seventy-two degrees Fahrenheit and sunny.
+[ 15.83s][user ] Oh, good. Uh, I need to book a table for four at The Italian Place tomorrow evening.
+[ 21.20s][moshi] Of course. What time would you like the reservation to be?
+[ 22.76s][user ] «backchannel» Right.
+[ 24.92s][user ] Around seven thirty, I ⟨ret@26.25s⟩ think.
+[ 26.48s][moshi] Your table for four ⟦⚡SPAN@28.25s: (tool result) Reservation confirmed for four at The Italian Place tomorrow at 7:30 PM. Confirmation number is ⟧ at The Italian Place is confirmed for tomorrow at seven thirty. Your confirmation is 8291.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant": "The Italian Place", "date": "tomorrow", "time": "7:30 PM", "party_size": 4}}
+[ 33.91s][user ] That's perfect.
+[ 34.96s][moshi] I’m glad to hear it. Is there anything else I can help you with regarding your evening?
+[ 36.79s][user ] «backchannel» Yeah.
+[ 40.53s][user ] Actually, yes. Could you remind me to take out the trash tomorrow morning?
+[ 45.99s][moshi] ⟨ret@45.67s⟩ ⟦⚡SPAN@46.17s: (tool result) Reminder set for tomorrow at 8:00 AM: take out the trash.⟧ I've set a reminder for you to take out the trash tomorrow at eight AM.
+      CALL: {"function": "set_reminder", "arguments": {"task": "take out the trash", "date": "tomorrow", "time": "8:00 AM"}}
+[ 50.30s][user ] Excellent. And can you tell me how long the drive to The Italian Place is from here?
+[ 55.30s][moshi] ⟨ret@55.23s⟩ Certainly, I can ⟦⚡SPAN@56.83s: (tool result) Drive to The Italian Place: 12 minutes, 5.8 miles.⟧ calculate that for you.
+      CALL: {"function": "get_directions", "arguments": {"destination": "The Italian Place"}}
+[ 58.02s][moshi] The drive to The Italian Place is approximately twelve minutes and five point eight miles.
+[ 60.35s][user ] «backchannel» Yeah.
+[ 64.08s][user ] Hmm, that’s not bad at all.
+[ 66.16s][moshi] Not at all. It sounds like everything is shaping up nicely for a pleasant evening.
+[ 67.71s][user ] «backchannel» Right.
+[ 73.18s][user ] I was thinking, maybe I should also get some flowers for the table.
+[ 77.42s][moshi] That's a lovely thought. I can certainly help you with that.
+[ 81.72s][user ] Do you think roses are a good choice?
+[ 84.13s][moshi] Roses are always a classic and elegant choice, yes. They’re very popular.
+[ 90.13s][user ] Okay, good. Could you order a dozen red roses for delivery to The Italian Place before ⟨ret@96.52s⟩ we arrive?
+[ 96.91s][moshi] A dozen red roses ⟦⚡SPAN@98.52s: (tool result) Order placed: 12 red roses to The Italian Place, delivery by 7:30 PM. Order number is 4952.⟧ have been ordered for delivery to The Italian Place by seven thirty. Your order number is 4952.
+      CALL: {"function": "order_flowers", "arguments": {"flower_type": "red roses", "quantity": 12, "delivery_location": "The Italian Place", "delivery_time": "7:30 PM"}}
+[ 99.87s][user ] «backchannel» Oh.
+[106.06s][user ] Fantastic! You’re a lifesaver, Driaus.
+[109.76s][moshi] [happy] You are very welcome. I’m happy to assist in making your evening special.
+[111.33s][user ] «backchannel» Mhm.
+[115.15s][user ] I think that’s all for now. Thanks again.
+[117.58s][moshi] It was my pleasure. Enjoy your evening!

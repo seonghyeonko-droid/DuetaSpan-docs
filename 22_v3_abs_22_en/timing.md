@@ -63,49 +63,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Right, so no government at all, es | S3 Actually, speaking of travel, I’m  | S4 That sounds perfect! Are there any
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Godwin, okay. And did his ideas in | S3 Wow, a third of Spain! That sounds | S4 Mutual aid… that’s a phrase I’ve b
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.67s  <ret> 발화 (turn1 첫 프레임)
-     2.82s  agent 발화 시작: <ret> That's a fascinating question! Unfortunately, I haven'
-     2.91s  user  발화 끝
-     4.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (no information found)
-     6.74s  user  발화 시작: Uh-huh.
-     7.23s  user  발화 끝
-     9.55s  agent 발화 끝
-     9.73s  user  발화 시작: Hmm, okay. Well, what *do* anarchists generally advocate for
-    13.93s  <ret> 발화 (turn4 첫 프레임)
-    14.17s  agent 발화 시작: <ret> Anarchists generally advocate for self-governed societ
-    14.32s  user  발화 끝
-    14.97s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.23s]: [source: Wikipedia] Anarchism is a political philosophy that advocates
-    21.40s  agent 발화 끝
-    21.99s  user  발화 시작: Right, so no government at all, essentially. Do they have an
-    26.92s  <ret> 발화 (turn6 첫 프레임)
-    27.24s  agent 발화 시작: <ret> Yes, the anarchist commune of Shinmin existed in Manch
-    27.41s  user  발화 끝
-    28.76s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.11s]: [source: Britannica] The anarchist commune of Shinmin in Manchuria exi
-    33.35s  agent 발화 끝
-    33.38s  user  발화 시작: That’s interesting— a whole commune! But surely that was sma
-    37.55s  user  발화 끝
-    37.81s  agent 발화 시작: It was a relatively small-scale experiment, yes. Though, as 
-    45.70s  user  발화 시작: Actually, speaking of travel, I’m thinking of a trip to Spai
-    46.44s  agent 발화 끝
-    48.94s  agent 발화 시작: –but it’s a compelling example of— Oh, Spain! Wonderful choi
-    49.07s  user  발화 끝
-    54.28s  user  발화 시작: Barcelona, I think. Is it a good place to visit for someone 
-    54.73s  agent 발화 끝
-    60.87s  <ret> 발화 (turn12 첫 프레임)
-    61.03s  agent 발화 시작: <ret> Barcelona does have a strong history of anarchist and 
-    61.23s  user  발화 끝
-    62.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: [source: Lonely Planet] Barcelona has a strong history of anarchist an
-    67.15s  agent 발화 끝
-    67.24s  user  발화 시작: That sounds perfect! Are there any specific places I should 
-    72.57s  <ret> 발화 (turn14 첫 프레임)
-    72.65s  agent 발화 시작: <ret> Plaça Revolució de Setembre de 1868, Ateneu Anarquista
-    72.79s  user  발화 끝
-    74.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Plaça Revolució de Setembre de 1868; Ateneu Anarquista d
-    81.18s  agent 발화 끝
-    81.94s  user  발화 시작: Wow, that’s really helpful, thank you!
-    84.13s  agent 발화 시작: You're very welcome! I’m glad I could assist in planning a t
-    84.24s  user  발화 끝
-    91.97s  agent 발화 끝
+     2.32s  <ret> 발화 (turn1 첫 프레임)
+     2.48s  agent 발화 시작: <ret> That’s a really interesting question! It seems informa
+     2.53s  user  발화 끝
+     4.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (no information found)
+    10.87s  user  발화 시작: Hmm, okay. What about the history of anarchism—when did it r
+    10.96s  agent 발화 끝
+    16.48s  <ret> 발화 (turn3 첫 프레임)
+    16.64s  agent 발화 시작: <ret> Anarchism began with critiques of the French Revolutio
+    16.85s  user  발화 끝
+    18.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: [source: Wikipedia] Anarchism as a political philosophy emerged from t
+    20.99s  agent 발화 끝
+    22.22s  user  발화 시작: The Enlightenment, right. So, were there any major anarchist
+    26.67s  <ret> 발화 (turn5 첫 프레임)
+    26.83s  agent 발화 시작: <ret> William Godwin’s 1793 work, *Enquiry Concerning Politi
+    26.89s  user  발화 끝
+    28.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: [source: Stanford Encyclopedia of Philosophy] William Godwin’s *Enquir
+    34.48s  agent 발화 끝
+    35.85s  user  발화 시작: Godwin, okay. And did his ideas influence anyone later on?
+    39.71s  agent 발화 시작: Absolutely. Godwin’s emphasis on individual reason and rejec
+    39.74s  user  발화 끝
+    48.03s  user  발화 시작: Did those thinkers ever actually *try* to build their own so
+    48.62s  agent 발화 끝
+    53.37s  agent 발화 시작: That’s a great question! Yes, during the Spanish Civil War, 
+    53.40s  user  발화 끝
+    60.98s  <ret> 발화 (turn10 첫 프레임)
+    61.28s  agent 발화 시작: <ret> During the Spanish Civil War, anarchists controlled ab
+    61.43s  agent 발화 끝
+    62.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.94s]: [source: Libcom.org] Anarchists controlled approximately one-third of 
+    68.22s  agent 발화 끝
+    68.93s  user  발화 시작: Wow, a third of Spain! That sounds…intense. Was it successfu
+    74.45s  agent 발화 시작: It was a complex situation. They faced significant challenge
+    74.54s  user  발화 끝
+    79.19s  user  발화 시작: Yeah.
+    79.50s  user  발화 끝
+    81.95s  agent 발화 시작: —but they did demonstrate a functioning alternative to tradi
+    82.09s  agent 발화 끝
+    87.41s  agent 발화 끝
+    87.91s  user  발화 시작: So, is anarchism still relevant today?
+    90.42s  agent 발화 시작: Very much so! Many contemporary movements advocating for dec
+    90.49s  user  발화 끝
+    98.99s  agent 발화 끝
+    99.13s  user  발화 시작: Mutual aid… that’s a phrase I’ve been hearing a lot lately.
+   102.83s  user  발화 끝
+   103.24s  agent 발화 시작: It’s experiencing a resurgence, isn’t it? It's about people 
+   107.51s  user  발화 시작: Yeah, totally.
+   108.61s  user  발화 끝
+   112.05s  agent 발화 끝
+   112.14s  user  발화 시작: It sounds nice. Maybe I'll look into it more. Thanks, Frunax
+   116.30s  agent 발화 시작: You’re very welcome. I’m glad I could offer some insight. Ex
+   116.39s  user  발화 끝
+   125.57s  agent 발화 끝

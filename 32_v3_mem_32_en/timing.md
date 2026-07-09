@@ -59,29 +59,25 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I un
-     6.00s  user  발화 시작: Yeah.
-     6.63s  user  발화 끝
-     7.75s  user  발화 시작: Yeah, a bit. I’m trying to plan a trip, but I’m completely o
-     7.88s  agent 발화 끝
-    12.80s  <ret> 발화 (turn3 첫 프레임)
-    12.88s  agent 발화 시작: <ret> That’s very common, especially when facing a blank sla
-    12.94s  user  발화 끝
-    14.00s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.47s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    18.15s  agent 발화 시작: You’re planning a trip to Kyoto in March, is that right? Per
-    18.35s  agent 발화 끝
-    22.35s  user  발화 시작: Mm-hmm.
-    22.85s  user  발화 끝
-    24.13s  agent 발화 끝
-    25.75s  user  발화 시작: Yes, Kyoto! I remember mentioning it. But I’m not sure where
-    31.78s  user  발화 끝
-    31.84s  agent 발화 시작: Wonderful. It's good to have a destination in mind. I'm sens
-    39.12s  agent 발화 끝
-    39.17s  user  발화 시작: I— I mean, yes, a little. I also need to book a dentist appo
-    43.55s  <ret> 발화 (turn9 첫 프레임)
-    43.78s  agent 발화 시작: <ret> Okay, let’s tackle both. Regarding the dentist, do you
-    43.94s  user  발화 끝
-    44.99s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.26s]: [2026-07-12] Past chat — Booked a dentist appointment: asked for an ea
-    50.87s  agent 발화 시작: You previously expressed a preference for Dr. Han and an ear
-    51.03s  agent 발화 끝
-    58.20s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I’m 
+     6.33s  user  발화 시작: Yeah.
+     6.97s  user  발화 끝
+     8.18s  user  발화 시작: Oh, that sounds… good. I was actually wondering, do you reme
+     8.20s  agent 발화 끝
+    15.09s  <ret> 발화 (turn3 첫 프레임)
+    15.13s  user  발화 끝
+    15.16s  agent 발화 시작: <ret> It’s wonderful to revisit plans you’re excited about. 
+    16.93s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.95s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    22.20s  user  발화 시작: Mm-hmm.
+    22.65s  user  발화 끝
+    25.13s  agent 발화 끝
+    25.66s  user  발화 시작: Yes! I’m trying to figure out the best time to visit, consid
+    33.99s  <ret> 발화 (turn6 첫 프레임)
+    34.07s  agent 발화 시작: <ret> Cherry blossom season is truly a beautiful time to vis
+    34.20s  user  발화 끝
+    35.35s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.09s]: (tool result) Peak bloom in Kyoto: March 26 - April 2.
+    43.06s  agent 발화 끝
+    43.12s  user  발화 시작: That’s… that’s perfect, actually. I— I mean, it lines up rea
+    48.46s  agent 발화 시작: That’s wonderful to hear, Manon. It sounds like your trip is
+    48.58s  user  발화 끝
+    58.94s  agent 발화 끝

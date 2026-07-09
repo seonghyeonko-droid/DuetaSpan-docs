@@ -76,30 +76,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 That’s great. Can you send the new | S3 Perfect, thank you. I— I mean, did | S4 Oh, never mind, that’s not importa
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.62s  <ret> 발화 (turn1 첫 프레임)
-     4.67s  agent 발화 시작: <ret> I’ve found twelve pictures from your France trip last 
-     4.81s  user  발화 끝
-     6.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) 12 files found; file types: JPG, PNG; total size: 350MB;
-     8.43s  user  발화 시작: Mhm.
-     9.02s  user  발화 끝
-    10.88s  agent 발화 끝
-    11.47s  user  발화 시작: That’s great. Can you send the newest three to my sister, Sa
-    14.78s  <ret> 발화 (turn4 첫 프레임)
-    14.92s  agent 발화 시작: <ret> I’ve just sent the three newest photos from your Franc
-    15.12s  user  발화 끝
-    15.82s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.68s]: (tool result) files sent; recipient: Sarah Miller; files: image1.jpg, 
-    17.82s  user  발화 시작: Yeah.
-    18.26s  user  발화 끝
-    19.60s  agent 발화 끝
-    20.05s  user  발화 시작: Perfect, thank you. I— I mean, did you find any of me with a
-    23.48s  agent 발화 시작: Let me check on that.
-    23.57s  user  발화 끝
-    24.86s  agent 발화 끝
-    24.99s  user  발화 시작: Oh, never mind, that’s not important!
-    25.69s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) 2 files found; filenames: beret_paris.jpg, you_and_beret
-    26.62s  agent 발화 시작: <ret> I did look, actually…
-    26.73s  user  발화 끝
-    28.46s  agent 발화 끝
+     4.33s  agent 발화 시작: <ret> I located twelve pictures from your France trip last y
+     4.33s  <ret> 발화 (turn1 첫 프레임)
+     4.58s  user  발화 끝
+     6.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.35s]: (tool result) Found 12 images: "Paris_EiffelTower.jpg", "Nice_Beach.jp
+     7.60s  user  발화 시작: Mhm.
+     8.24s  user  발화 끝
+     9.69s  agent 발화 끝
+    10.39s  user  발화 시작: Oh, that's great! Can you set a reminder to back those up to
+    14.62s  <ret> 발화 (turn4 첫 프레임)
+    14.92s  agent 발화 시작: <ret> Absolutely. I’ve scheduled a reminder to back up those
+    15.15s  user  발화 끝
+    15.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.04s]: (tool result) Reminder set: "Back up France holiday photos" - Friday a
+    18.07s  user  발화 시작: Yeah.
+    18.70s  user  발화 끝
+    19.96s  agent 발화 끝
+    20.41s  user  발화 시작: Perfect, thank you!
+    21.73s  agent 발화 시작: You’re very welcome. It’s good to stay on top of those thing
+    21.74s  user  발화 끝
+    26.59s  agent 발화 끝

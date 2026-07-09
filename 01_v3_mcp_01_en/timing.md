@@ -58,51 +58,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 …and does that include the refurbi | S3 Let's say I'm interested in a refu | S4 Okay, that's good to know. Can you
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Is there a separate map just for t | S3 Six-ninety-nine… that’s more than  | S4 Next Tuesday at 2 PM.
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.52s  <ret> 발화 (turn1 첫 프레임)
-     4.59s  agent 발화 시작: <ret> Certainly. I’ll generate a site map for Apple’s websit
-     4.72s  user  발화 끝
-     5.80s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.93s]: (tool result) map_id: 789234; url: https://www.apple.com; pages_found:
-    10.38s  agent 발화 시작: I’ve mapped the Apple website, identifying forty-two pages, 
-    10.52s  agent 발화 끝
+     4.79s  agent 발화 시작: Certainly. I can generate a sitemap for Apple’s website, hig
+     4.86s  user  발화 끝
+    10.17s  <ret> 발화 (turn2 첫 프레임)
+    10.41s  agent 발화 시작: <ret> Apple’s product sections include iPhone, iPad, Mac, Ap
+    10.53s  agent 발화 끝
+    12.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & 
     13.14s  user  발화 시작: Okay.
-    13.77s  user  발화 끝
-    17.09s  agent 발화 끝
-    17.16s  user  발화 시작: Twenty-eight? That seems… low. Are you sure it got everythin
-    21.67s  <ret> 발화 (turn5 첫 프레임)
-    21.91s  agent 발화 시작: <ret> It’s possible some product pages are nested deeper or 
-    21.97s  user  발화 끝
-    23.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) map_id: 789235; url: https://www.apple.com; pages_found:
-    30.41s  agent 발화 시작: Yes, increasing the depth to five uncovered sixty-five pages
-    30.48s  agent 발화 끝
-    37.63s  user  발화 시작: …and does that include the refurbished section? I'm looking 
-    38.42s  agent 발화 끝
-    42.36s  <ret> 발화 (turn8 첫 프레임)
-    42.44s  agent 발화 시작: <ret> A good question! The previous map didn't specifically 
-    42.59s  user  발화 끝
-    44.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (tool result) map_id: 789236; url: https://www.apple.com; pages_found:
-    50.85s  agent 발화 시작: I found twelve pages related to refurbished products, nine o
-    50.92s  agent 발화 끝
-    55.06s  user  발화 시작: Uh-huh.
-    55.51s  user  발화 끝
-    58.59s  agent 발화 시작: Now, are you interested in a specific product category withi
-    58.63s  agent 발화 끝
-    61.62s  user  발화 시작: Right.
-    62.02s  user  발화 끝
-    66.16s  user  발화 시작: Let's say I'm interested in a refurbished MacBook Pro. Can y
-    66.23s  agent 발화 끝
-    72.32s  <ret> 발화 (turn14 첫 프레임)
-    72.55s  agent 발화 시작: <ret> There are refurbished MacBook Pros in stock, specifica
-    72.60s  user  발화 끝
-    74.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.38s]: (tool result) availability: in_stock; models: MacBook Pro 13-inch M2 c
-    84.80s  user  발화 시작: Okay, that's good to know. Can you set a reminder to check a
-    84.94s  agent 발화 끝
-    89.22s  <ret> 발화 (turn16 첫 프레임)
-    89.61s  agent 발화 시작: <ret> Certainly. I’ve scheduled a reminder to recheck refurb
-    89.76s  user  발화 끝
-    91.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) reminder_id: 456789; date: 2024-02-29 10:00; task: check
-    96.39s  agent 발화 시작: Your reminder is set for next week, February twenty-ninth at
-    96.47s  agent 발화 끝
-   103.57s  agent 발화 끝
+    13.78s  user  발화 끝
+    17.04s  agent 발화 끝
+    17.11s  user  발화 시작: Hmm, that's good. Does it show where the refurbished product
+    21.22s  agent 발화 시작: I can re-scan the Apple website to locate the refurbished pr
+    21.23s  user  발화 끝
+    26.33s  <ret> 발화 (turn6 첫 프레임)
+    26.73s  agent 발화 시작: <ret> Apple lists its certified refurbished products in the 
+    26.77s  agent 발화 끝
+    28.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) Refurbished Products: Listed under “Apple Certified Refu
+    28.91s  user  발화 시작: Right.
+    29.41s  user  발화 끝
+    32.26s  user  발화 시작: Is there a separate map just for the support pages?
+    32.34s  agent 발화 끝
+    35.29s  agent 발화 시작: That’s a great idea—
+    35.44s  user  발화 끝
+    36.83s  <ret> 발화 (turn10 첫 프레임)
+    37.06s  agent 발화 시작: <ret> The Apple support site maps documentation, user guides
+    37.13s  agent 발화 끝
+    38.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Support Pages: Documentation, User Guides, Downloads, Tr
+    40.26s  user  발화 시작: Uh-huh.
+    40.75s  user  발화 끝
+    42.93s  agent 발화 시작: I find that mapping support pages is useful when you're plan
+    43.08s  agent 발화 끝
+    50.15s  user  발화 시작: Okay, that’s helpful. I'm thinking about getting a new iPad.
+    50.34s  agent 발화 끝
+    62.03s  agent 발화 시작: Absolutely. Let me check the current pricing for that config
+    62.06s  user  발화 끝
+    66.22s  <ret> 발화 (turn15 첫 프레임)
+    66.62s  agent 발화 시작: <ret> The iPad Air, 6th generation, with 256GB of storage cu
+    66.66s  agent 발화 끝
+    68.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) iPad Air (6th generation) 256GB: $699.00
+    75.49s  user  발화 시작: Six-ninety-nine… that’s more than I expected. Are there any 
+    75.66s  agent 발화 끝
+    82.46s  agent 발화 시작: Let me check for active promotions on iPads—
+    82.58s  user  발화 끝
+    85.68s  <ret> 발화 (turn18 첫 프레임)
+    85.84s  agent 발화 시작: <ret> Apple is currently offering a fifty-dollar gift card w
+    85.97s  agent 발화 끝
+    87.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) iPad Promotions: $50 Apple Store gift card with purchase
+    93.16s  agent 발화 끝
+    94.16s  user  발화 시작: Oh, a gift card! That’s good to know. Can you add a reminder
+   102.28s  user  발화 끝
+   102.62s  agent 발화 시작: Of course. What day and time would you like the reminder set
+   105.41s  user  발화 시작: Yeah.
+   105.77s  user  발화 끝
+   107.62s  agent 발화 끝
+   107.80s  user  발화 시작: Next Tuesday at 2 PM.
+   110.11s  user  발화 끝
+   110.42s  agent 발화 시작: Certainly. I’ve set a reminder for next Tuesday at two PM to
+   117.33s  <ret> 발화 (turn24 첫 프레임)
+   117.64s  agent 발화 시작: <ret> Your reminder is set for Tuesday at 2 PM to check for 
+   117.80s  agent 발화 끝
+   119.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) Reminder set: Tuesday at 2:00 PM - Check Apple Store for
+   122.97s  agent 발화 끝

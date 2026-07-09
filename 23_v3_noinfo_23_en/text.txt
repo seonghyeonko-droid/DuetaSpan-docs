@@ -64,41 +64,45 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.32s⟩ last year?
-[  3.70s][moshi] On December ⟦⚡SPAN@4.68s: (tool result) Weather_1_GetWeather: city=Tokyo, date=2023-12-24, high=6, low=-2, condition=Cloudy⟧ twenty-fourth, Tokyo had a high of six and a low of minus two degrees Celsius, with cloudy conditions.
-[ 11.66s][user ] That sounds chilly. Uh, could you find me a nice cafe near ⟨ret@15.63s⟩ Shibuya station?
-[ 16.01s][moshi] Of course, I ⟦⚡SPAN@17.39s: (tool result) Places_1_FindPlaces: query=cafe, near=Shibuya Station, radius=500m, results=[{name=Streamer Coff⟧ can certainly help with that. Streamer Coffee Company is three hundred meters away, with a four-point-five star rating. About Life is four-fifty meters, rated four-point-three.
-[ 20.91s][user ] «backchannel» Yeah.
-[ 25.82s][user ] Streamer Coffee Company sounds good. Do they have ⟨ret@28.86s⟩ Wi-Fi?
-[ 29.26s][moshi] Yes, ⟦⚡SPAN@29.82s: (tool result) Places_1_GetDetails: place_name=Streamer Coffee Company, detail=Wi-Fi⟧ Streamer Coffee Company does offer free Wi-Fi to its customers.
-[ 31.91s][user ] «backchannel» Yeah, yeah.
-[ 33.42s][user ] Perfect! I— I mean, could you reserve a table for one there for, say, three ⟨ret@38.00s⟩ p.m. today?
-[ 38.32s][moshi] ⟦⚡SPAN@38.50s: (tool result) Reservations_1_Reserve: place_name=Streamer Coffee Company, date=2024-02-29, time=15:00, party_s⟧ Absolutely, I can make that reservation for you. I’ve reserved a table for one at Streamer Coffee Company today at three p.m. Your confirmation number is R7492X.
-[ 49.75s][user ] Oh, fantastic. Thanks so much! [happy]
-[ 52.06s][moshi] You’re very welcome! It’s my pleasure to help you plan a relaxing afternoon.
-[ 57.27s][user ] Actually, do you know anything about career coaching? I'm feeling a little stuck.
-[ 61.28s][moshi] I do! As a wellness coach, I often help people navigate career transitions and find more fulfillment.
-[ 68.10s][user ] That’s good to hear. I’m thinking about a career change but I’m not sure what I’d be good at.
-[ 72.74s][moshi] That’s a common feeling! We can explore your strengths, values, and interests to uncover potential paths.
-[ 79.41s][user ] Okay… what’s the first step, do you think?
-[ 82.31s][moshi] Let's start with identifying what truly energizes you, and what drains your energy at work.
-[ 87.45s][user ] Hmm, that’s a good question. I really enjoy problem-solving, but meetings… not so much.
-[ 94.15s][moshi] That’s insightful! Problem-solving suggests analytical skills, a real asset in many roles.
-[ 98.43s][user ] «backchannel» Yeah, totally.
-[100.25s][user ] Right. I just feel like I’m not using my skills fully.
-[103.27s][moshi] Many people feel that way. It sounds like you’re ready to find work that’s more engaging.
-[107.56s][user ] Yeah. Is there a way to, like, assess my skills ⟨ret@110.94s⟩ formally?
-[111.34s][moshi] There ⟦⚡SPAN@111.98s: (tool result) Search_1_Search: query=free career skills assessment⟧ are several assessments available online. I found several free online career skills assessments. The CareerExplorer assessment is popular.
-[113.72s][user ] «backchannel» Uh-huh.
-[118.95s][user ] CareerExplorer… okay. Could you send me a link to that?
-[122.61s][moshi] ⟨ret@122.45s⟩ I've sent ⟦⚡SPAN@123.89s: (tool result) SendMessage_1_Send: recipient=user@email.com, subject=CareerExplorer Link, body=https://www.care⟧ the link to CareerExplorer to your email address, user@email.com.
-[124.65s][user ] «backchannel» Yeah.
-[127.27s][user ] Great! Thanks. Um, what’s the weather forecast for tomorrow in ⟨ret@131.28s⟩ Tokyo?
-[131.68s][moshi] ⟦⚡SPAN@132.00s: (tool result) Weather_1_GetWeather: city=Tokyo, date=2024-03-01, high=8, low=3, condition=Partly Cloudy⟧ Tomorrow in Tokyo will be partly cloudy, with a high of eight and a low of three degrees Celsius.
-[134.33s][user ] «backchannel» Mm-hmm.
-[136.78s][user ] Good to know. So, about this assessment…
-[139.80s][moshi] Yes, it can provide a detailed report on your strengths, weaknesses, and potential career matches.
-[146.78s][user ] I'm a little worried about taking it, though. What if it says I’m terrible at everything?
-[151.14s][moshi] [laugh] That’s very unlikely! Assessments are designed to highlight your potential, not just your shortcomings. They’re a starting point, not a final judgment.
-[161.19s][user ] Okay, that makes sense. Thanks, Brae.
-[163.45s][moshi] You’re most welcome! Remember, self-discovery is a journey, and I’m here to support you along the way.
+[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.33s⟩ last year?
+[  3.73s][moshi] Tokyo had sunny weather ⟦⚡SPAN@5.33s: (tool result) Sunny, high of 12 degrees Celsius, low of 5 degrees Celsius, wind speed 15 km/h.⟧ on December twenty-fourth last year, with a high of twelve degrees Celsius.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
+[  9.72s][user ] Oh, that sounds lovely. I’m thinking of a winter getaway.
+[ 13.10s][moshi] A getaway sounds wonderful! It’s so important to prioritize rest and recharge, especially during the colder months.
+[ 16.15s][user ] «backchannel» Yeah.
+[ 19.18s][user ] I was thinking maybe Iceland. What's the average temperature there in ⟨ret@23.38s⟩ January?
+[ 23.78s][moshi] Iceland ⟦⚡SPAN@24.66s: (tool result) Average temperature -2 degrees Celsius, low -6 degrees Celsius, high 2 degrees Celsius, precipit⟧ in January—let’s take a look… The average temperature in Iceland in January is around minus two degrees Celsius.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Iceland", "date": "2024-01-15"}}
+[ 28.97s][user ] «backchannel» Yeah, yeah.
+[ 31.54s][user ] That’s… colder than I expected. Is it usually very ⟨ret@35.39s⟩ windy?
+[ 35.71s][moshi] Wind ⟦⚡SPAN@36.35s: (tool result) Average wind speed 35 km/h, gusts up to 60 km/h.⟧ conditions can certainly impact a trip… Iceland experiences average wind speeds of thirty-five kilometers per hour in January, with gusts reaching sixty.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Iceland", "date": "2024-01-15", "parameter": "wind speed"}}
+[ 45.36s][user ] Wow, okay. Maybe not Iceland. Um, what about Costa Rica?
+[ 50.83s][moshi] Costa Rica offers a much warmer escape! A great choice if you’re seeking sunshine.
+[ 57.00s][user ] What’s the average high temperature there in February?
+[ 59.66s][moshi] ⟨ret@59.58s⟩ The average ⟦⚡SPAN@60.70s: (tool result) Average high temperature 30 degrees Celsius.⟧ high temperature in Costa Rica in February is thirty degrees Celsius.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Costa Rica", "date": "2024-02-15", "parameter": "high temperature"}}
+[ 64.40s][user ] Perfect! And are there any good yoga retreats there?
+[ 67.14s][moshi] Costa Rica is *very* popular for wellness retreats, including yoga.
+[ 71.70s][user ] Could you find me some options, maybe with availability in ⟨ret@74.88s⟩ March?
+[ 75.04s][moshi] I found three options: ⟦⚡SPAN@76.88s: (tool result) "Pura Vida Yoga" – March 10-17, $1500. "Zenith Retreats" – March 20-27, $1800. "Blue Horizon Yog⟧ Pura Vida Yoga, Zenith Retreats, and Blue Horizon Yoga, in March.
+      CALL: {"function": "Search_1_Search", "arguments": {"query": "yoga retreats Costa Rica March availability"}}
+[ 80.47s][user ] Hmm, Pura Vida sounds nice. Can you check if they have any openings ⟨ret@84.98s⟩ left?
+[ 85.37s][moshi] Checking Pura ⟦⚡SPAN@86.34s: (tool result) Pura Vida Yoga: 3 spots remaining for March 10-17 retreat.⟧ Vida’s availability now… Pura Vida Yoga has three spots left for their March tenth to seventeenth retreat.
+      CALL: {"function": "Availability_1_CheckAvailability", "arguments": {"retreat": "Pura Vida Yoga", "date": "2024-03-10"}}
+[ 90.57s][user ] «backchannel» Yeah, totally.
+[ 92.73s][user ] Fantastic! Okay, book me one of those ⟨ret@95.39s⟩ spots.
+[ 95.55s][moshi] Wonderful! Let’s ⟦⚡SPAN@96.59s: (tool result) Booking confirmed! Pura Vida Yoga, March 10-17, $1500. Confirmation number: PVY240310.⟧ get that booked for you… Your spot at Pura Vida Yoga is confirmed for March tenth to seventeenth, costing fifteen hundred dollars.
+      CALL: {"function": "Booking_1_BookRetreat", "arguments": {"retreat": "Pura Vida Yoga", "date": "2024-03-10", "attendees": 1}}
+[104.51s][user ] [laugh] Amazing! Thank you so much, Brae.
+[107.30s][moshi] You’re very welcome! It sounds like a truly restorative trip. I’m so glad I could help.
+[108.88s][user ] «backchannel» Uh-huh.
+[112.44s][user ] Actually, one more thing. Do they offer any airport pickup services?
+[116.56s][moshi] That’s a great question to ensure a smooth arrival.
+[117.71s][user ] «backchannel» Yeah.
+[119.32s][user ] I— I mean, do *Pura Vida* offer ⟨ret@121.47s⟩ that?
+[121.71s][moshi] I’m sorry, I couldn’t ⟦⚡SPAN@123.47s: (no information found)⟧ find any information about airport pickup services offered by Pura Vida Yoga.
+      CALL: {"function": "Information_1_GetInfo", "arguments": {"retreat": "Pura Vida Yoga", "query": "airport pickup"}}
+[124.89s][user ] «backchannel» Mm-hmm.
+[127.72s][user ] Oh, okay. Well, that's alright. Thanks again!
+[131.21s][moshi] You’re most welcome. Remember, even small changes can create big improvements in your wellbeing. Have a fantastic time in Costa Rica!

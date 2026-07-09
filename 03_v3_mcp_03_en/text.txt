@@ -59,32 +59,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start the checkout process in the shopping ⟨ret@2.80s⟩ cart iframe.
-[  3.20s][moshi] Absolutely, let's get ⟦⚡SPAN@4.72s: (tool result) success; element clicked; url: /checkout⟧ that checkout started for you.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
-[  6.29s][moshi] Great, the checkout process has begun, and you're now on the checkout page.
-[  9.70s][user ] «backchannel» Mhm.
-[ 12.88s][user ] What's the total cost of everything in my cart?
-[ 15.31s][moshi] ⟨ret@15.23s⟩ Your cart total ⟦⚡SPAN@16.51s: (tool result) total: $78.50; shipping: $5.99; tax: $6.21⟧ is seventy-eight dollars and fifty cents, plus five ninety-nine for shipping and six twenty-one in tax.
-      CALL: {"function": "get_cart_total", "arguments": {}}
-[ 22.73s][user ] Okay.
-[ 23.30s][moshi] That brings the final amount to eighty-nine dollars and seventy cents. Would you like to proceed with shipping?
-[ 29.70s][user ] Yes, ship it to my default ⟨ret@32.06s⟩ address.
-[ 32.46s][moshi] Wonderful. And how ⟦⚡SPAN@33.74s: (tool result) success; shipping address set to 123 Main Street, Anytown, USA.⟧ would you like to pay today?
-      CALL: {"function": "set_shipping_address", "arguments": {"address": "default"}}
-[ 35.50s][moshi] Excellent, your order will be shipped to 123 Main Street.
-[ 39.99s][user ] Use the credit card on ⟨ret@41.98s⟩ file.
-[ 42.13s][moshi] Perfect. One moment ⟦⚡SPAN@43.98s: (tool result) success; payment authorized; transaction ID: 9876543210; amount: $89.70⟧ while I process the payment.
-      CALL: {"function": "process_payment", "arguments": {"payment_method": "card_on_file"}}
-[ 45.84s][moshi] Your payment of eighty-nine dollars and seventy cents has been authorized.
-[ 50.22s][user ] Great!
-[ 50.88s][moshi] Your order is now confirmed! You’ll receive a confirmation email shortly with tracking information.
-[ 58.14s][user ] That's a relief, I was worried it wouldn't go through.
-[ 60.95s][moshi] I understand that feeling entirely. It's good to have that worry resolved, isn’t it?
-[ 62.95s][user ] «backchannel» Yeah.
-[ 68.00s][user ] It is. What's the estimated delivery ⟨ret@71.10s⟩ date?
-[ 71.34s][moshi] The ⟦⚡SPAN@73.10s: (tool result) delivery date: November 8th; carrier: FedEx; tracking number: 1Z123ABC456DEF789⟧ estimated delivery date is November eighth, shipped via FedEx, with tracking number 1Z123ABC456DEF789.
-      CALL: {"function": "get_delivery_date", "arguments": {}}
-[ 78.30s][user ] «backchannel» Wow.
-[ 83.19s][user ] Perfect, thank you so much!
-[ 85.12s][moshi] You are very welcome! I’m glad I could help streamline that for you today. Remember, small steps forward are still progress.
+[  0.00s][user ] Start the checkout process in the shopping ⟨ret@2.63s⟩ cart iframe.
+[  3.02s][moshi] Certainly. ⟦⚡SPAN@3.67s: (tool result) checkout_started: true, cart_id: 78923⟧ I can initiate the checkout sequence within that iframe for you.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_selector": "shopping_cart", "button_text": "Checkout"}}
+[  8.14s][moshi] The checkout process has begun for cart number seven thousand eight hundred ninety-two and three.
+[ 12.61s][user ] «backchannel» Mhm.
+[ 16.19s][user ] What’s the total cost, including ⟨ret@18.46s⟩ shipping?
+[ 18.86s][moshi] Let ⟦⚡SPAN@19.66s: (tool result) total: 67.50, shipping: 8.99, subtotal: 58.51⟧ me retrieve that information for you.
+      CALL: {"function": "get_checkout_total", "arguments": {"cart_id": "78923", "shipping_address": "user's default"}}
+[ 21.47s][moshi] Your total is sixty-seven dollars and fifty cents, including eight dollars and ninety-nine cents for shipping.
+[ 28.59s][user ] Hmm.
+[ 29.05s][moshi] Is there anything you’d like to adjust before confirming the order, perhaps the shipping address?
+[ 34.57s][user ] No, that looks good. Please confirm ⟨ret@36.61s⟩ the order.
+[ 37.01s][moshi] Wonderful. ⟦⚡SPAN@37.89s: (tool result) order_confirmed: true, order_number: 456123⟧ Confirming the order now.
+      CALL: {"function": "confirm_order", "arguments": {"cart_id": "78923", "payment_method": "user's default"}}
+[ 39.67s][moshi] Your order is confirmed! The order number is four hundred fifty-six thousand one hundred twenty-three.
+[ 46.95s][user ] Great! Can you set a reminder to check the tracking number tomorrow?
+[ 51.07s][moshi] Of course. What time tomorrow would you like that reminder?
+[ 54.68s][user ] Around two pm.
+[ 56.16s][moshi] ⟨ret@55.93s⟩ I’ve set a reminder for ⟦⚡SPAN@57.93s: (tool result) reminder_set: true, reminder_id: 98765⟧ two pm tomorrow to check your order’s tracking number.
+      CALL: {"function": "set_reminder", "arguments": {"time": "14:00", "message": "Check order tracking number"}}
+[ 60.86s][moshi] A reminder with ID nine thousand eight hundred seventy-six and five has been scheduled.
+[ 66.39s][user ] Perfect, thank you.
+[ 67.77s][moshi] You’re very welcome! It’s good to stay on top of these things, isn't it?
+[ 69.62s][user ] «backchannel» Yeah.
+[ 72.60s][user ] It is. I'm feeling a bit stressed about an upcoming exam though…
+[ 76.63s][moshi] Exams can be stressful, absolutely. Remember, breaking down your study sessions into smaller, manageable chunks can really help.
+[ 81.03s][user ] «backchannel» Yeah.
+[ 85.94s][user ] That’s a good idea.
+[ 87.27s][moshi] [laugh] Small steps, consistent effort— that’s a strategy that works in so many areas of life, not just studying. It’s about building momentum.

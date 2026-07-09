@@ -68,8 +68,8 @@
 
 
      0.00s  user  발화 시작: When was the third season of Daredevil released?
-     3.06s  <ret> 발화 (turn1 첫 프레임)
-     3.23s  user  발화 끝
-     3.30s  agent 발화 시작: <ret> That’s a popular question, actually. The third season 
-     4.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.07s]: [source: Wikipedia] Daredevil season 3 was released on October 26, 201
-    10.34s  agent 발화 끝
+     3.00s  <ret> 발화 (turn1 첫 프레임)
+     3.19s  user  발화 끝
+     3.24s  agent 발화 시작: <ret> That’s a popular question, actually. The third season 
+     3.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.10s]: [source: Wikipedia] Daredevil season three was released on October 26,
+    10.79s  agent 발화 끝

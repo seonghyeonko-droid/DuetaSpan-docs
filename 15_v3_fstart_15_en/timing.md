@@ -63,53 +63,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Is there parking nearby. | S3 Okay, good to know. And could you  | S4 Is the weather looking good for a 
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 What about Melbourne? Is it simila | S3 …just a one-way ticket for one per | S4 Great! Thank you so much.
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     3.84s  <ret> 발화 (turn1 첫 프레임)
-     3.92s  agent 발화 시작: <ret> The Sydney Opera House is at latitude negative thirty-
-     3.94s  user  발화 끝
-     4.80s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.29s]: (tool result) -33.8568, 151.2153; address: Bennelong Point, Sydney NSW
-     7.22s  user  발화 시작: Yeah.
-     7.72s  user  발화 끝
-    11.59s  user  발화 시작: And what's the quickest way to get there from Central Statio
-    11.76s  agent 발화 끝
-    14.94s  <ret> 발화 (turn4 첫 프레임)
-    15.17s  agent 발화 시작: <ret> I can definitely help with directions. The quickest ro
-    15.34s  user  발화 끝
-    16.30s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.84s]: (tool result) mode: transit; distance: 3.3km; estimated time: 20 minut
-    18.80s  user  발화 시작: Yeah.
-    19.30s  user  발화 끝
-    24.07s  agent 발화 끝
-    24.62s  user  발화 시작: Is there parking nearby.
-    26.22s  <ret> 발화 (turn7 첫 프레임)
-    26.29s  agent 발화 시작: <ret> Parking can be tricky— Wilson Parking at twenty-nine M
-    26.46s  user  발화 끝
-    26.86s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.33s]: (tool result) parking: Wilson Parking Sydney Opera House; address: 29 
-    33.60s  agent 발화 끝
-    33.92s  user  발화 시작: Is it usually very crowded there?
-    36.23s  user  발화 끝
-    36.37s  agent 발화 시작: That’s a great question—
-    37.07s  user  발화 시작: Okay, good to know. And could you book me a table for two at
-    37.75s  agent 발화 끝
-    44.49s  user  발화 끝
-    44.49s  <ret> 발화 (turn11 첫 프레임)
-    44.57s  agent 발화 시작: <ret> Aria has availability at seven thirty tonight. I’ve bo
-    45.45s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.88s]: (tool result) restaurant: Aria; date: 2024-02-29; time: 19:30; status:
-    53.02s  user  발화 시작: Wonderful! That’s perfect.
-    53.20s  agent 발화 끝
-    55.35s  agent 발화 시작: I’m so glad I could help with your evening plans. It’s alway
-    55.52s  user  발화 끝
-    58.52s  user  발화 시작: Yeah, totally.
-    59.85s  user  발화 끝
-    60.02s  agent 발화 끝
-    60.24s  user  발화 시작: Is the weather looking good for a walk around the harbor aft
-    63.73s  <ret> 발화 (turn16 첫 프레임)
-    64.05s  agent 발화 시작: <ret> It's forecast to be partly cloudy with a temperature o
-    64.08s  user  발화 끝
-    65.25s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.53s]: (tool result) location: Sydney Harbour; forecast: partly cloudy; tempe
-    70.16s  agent 발화 끝
-    70.43s  user  발화 시작: That sounds lovely. Thanks, Helion.
-    73.66s  user  발화 끝
-    73.75s  agent 발화 시작: You're very welcome. Enjoy your evening, and don't hesitate 
-    78.19s  agent 발화 끝
+     3.71s  <ret> 발화 (turn1 첫 프레임)
+     3.78s  agent 발화 시작: <ret> Certainly. The Sydney Opera House is at latitude negat
+     3.80s  user  발화 끝
+     4.03s  ⚡SPAN 주입 [d'=0.32s / d_lead=0.32s]: (tool result) -33.8568, 151.2153
+     7.21s  user  발화 시작: Yeah.
+     7.66s  user  발화 끝
+    11.70s  user  발화 시작: And what’s the weather like there right now?
+    11.81s  agent 발화 끝
+    13.84s  <ret> 발화 (turn4 첫 프레임)
+    13.91s  agent 발화 시작: <ret> It’s currently partly cloudy in Sydney with a temperat
+    14.10s  user  발화 끝
+    15.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Partly cloudy, 22 degrees Celsius, wind 15 km/h.
+    16.67s  user  발화 시작: Yeah.
+    17.17s  user  발화 끝
+    20.71s  agent 발화 끝
+    21.41s  user  발화 시작: What about Melbourne? Is it similar?
+    23.43s  <ret> 발화 (turn7 첫 프레임)
+    23.83s  agent 발화 시작: <ret> Melbourne’s weather is a bit different. Melbourne is e
+    24.00s  user  발화 끝
+    25.11s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.12s]: (tool result) Showers, 18 degrees Celsius, wind 25 km/h.
+    32.32s  agent 발화 끝
+    32.60s  user  발화 시작: That sounds… chilly. I— I mean, could we look at flights fro
+    38.91s  user  발화 끝
+    39.05s  agent 발화 시작: Of course, we can look at flights—
+    40.10s  user  발화 시작: …just a one-way ticket for one person, economy class?
+    40.80s  agent 발화 끝
+    43.71s  <ret> 발화 (turn11 첫 프레임)
+    43.98s  user  발화 끝
+    44.10s  agent 발화 시작: <ret> There are flights with Qantas at ten AM for one hundre
+    44.21s  ⚡SPAN 주입 [d'=0.50s / d_lead=10.99s]: (tool result) Qantas, 10:00 AM, $189 / Virgin Australia, 11:30 AM, $21
+    54.92s  user  발화 시작: The Jetstar one sounds good. Can you book that for me?
+    55.09s  agent 발화 끝
+    58.04s  <ret> 발화 (turn13 첫 프레임)
+    58.28s  agent 발화 시작: <ret> Absolutely. Your Jetstar flight, JQ501, from Sydney to
+    58.47s  user  발화 끝
+    58.50s  ⚡SPAN 주입 [d'=0.46s / d_lead=0.46s]: (tool result) Booking confirmed. Jetstar flight JQ501, Sydney to Melbo
+    64.23s  user  발화 시작: Right.
+    64.86s  user  발화 끝
+    67.55s  agent 발화 끝
+    67.78s  user  발화 시작: Great! Thank you so much.
+    69.81s  user  발화 끝
+    69.89s  agent 발화 시작: You're very welcome! It's wonderful you're taking this trip;
+    76.34s  agent 발화 끝

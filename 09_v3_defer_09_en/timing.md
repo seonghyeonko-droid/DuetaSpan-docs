@@ -68,41 +68,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 Great. And what about parking. | S3 …is it included in the price or is | S4 Perfect. Could you send me a copy 
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 That sounds great. Can you check i | S3 Oh, and what about parking? Is par | S4 Okay, that's good to know. Could y
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.91s  <ret> 발화 (turn1 첫 프레임)
-     6.15s  agent 발화 시작: <ret> Absolutely. I’ve reserved three rooms at the Ocean Vie
-     6.21s  user  발화 끝
-     7.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: (tool result) Reservation confirmed; confirmation number is XL729K; th
-    12.27s  user  발화 시작: Right.
-    12.58s  user  발화 끝
-    16.77s  agent 발화 끝
-    16.86s  user  발화 시작: That sounds perfect. Can you also check if they have a shutt
-    21.00s  <ret> 발화 (turn4 첫 프레임)
-    21.15s  agent 발화 시작: <ret> Certainly. The Ocean View Hotel does offer an airport 
-    21.25s  user  발화 끝
-    23.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Airport shuttle: available, runs every thirty minutes, $
-    28.26s  user  발화 시작: Great. And what about parking.
-    28.29s  agent 발화 끝
-    30.19s  agent 발화 시작: Parking is available—
-    30.20s  user  발화 끝
-    31.03s  user  발화 시작: …is it included in the price or is that extra?
-    31.62s  agent 발화 끝
-    33.72s  agent 발화 시작: That’s a good question. Parking at the Ocean View Hotel is a
-    33.80s  user  발화 끝
-    40.35s  agent 발화 끝
-    40.69s  user  발화 시작: Okay, add parking for seven nights then, please.
-    42.80s  <ret> 발화 (turn10 첫 프레임)
-    43.19s  agent 발화 시작: <ret> No problem. I’ve added parking for seven nights to you
-    43.37s  user  발화 끝
-    44.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.20s]: (tool result) Parking added; confirmation XL729K updated; total cost n
-    49.23s  user  발화 시작: Oh.
-    49.73s  user  발화 끝
-    51.39s  agent 발화 끝
-    52.57s  user  발화 시작: Perfect. Could you send me a copy of the updated confirmatio
-    56.89s  <ret> 발화 (turn13 첫 프레임)
-    56.95s  agent 발화 시작: <ret> Of course. I've just sent the updated confirmation to 
-    57.06s  user  발화 끝
-    58.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Confirmation sent to user@example.com.
-    63.90s  agent 발화 끝
+     5.62s  <ret> 발화 (turn1 첫 프레임)
+     5.83s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
+     5.97s  user  발화 끝
+     7.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) hotel_reservation: confirmation_number=AX927LZ, hotel_na
+    11.66s  user  발화 시작: Mm-hmm.
+    12.11s  user  발화 끝
+    14.22s  agent 발화 끝
+    14.24s  user  발화 시작: That sounds great. Can you check if they have a shuttle to t
+    18.05s  <ret> 발화 (turn4 첫 프레임)
+    18.20s  agent 발화 시작: <ret> Yes, the Ocean View Hotel does offer a complimentary a
+    18.30s  user  발화 끝
+    20.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) hotel_amenities: hotel_name=Ocean View Hotel, city=San D
+    23.07s  agent 발화 끝
+    23.08s  user  발화 시작: Oh, and what about parking? Is parking included?
+    25.85s  user  발화 끝
+    26.02s  agent 발화 시작: Parking is available at a rate of twenty-five dollars per ni
+    30.30s  user  발화 시작: Okay, that's good to know. Could you add a request for a roo
+    30.41s  agent 발화 끝
+    35.63s  <ret> 발화 (turn8 첫 프레임)
+    36.01s  agent 발화 시작: <ret> I can certainly add that request for you. I’ve added a
+    36.22s  user  발화 끝
+    37.15s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.94s]: (tool result) hotel_reservation_update: confirmation_number=AX927LZ, r
+    44.45s  agent 발화 끝

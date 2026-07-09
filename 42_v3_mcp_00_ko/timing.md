@@ -63,69 +63,87 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 파리 에펠탑의 좌표를 알려줄 수 있을까요? | S2 이백유로면 좀 부담스럽네요. 좀 더 저렴한 곳은 없을까요? | S3 몽시외 블루, 알겠습니다. 거기로 예약해 줄 수 있을까요? | S4 네, 부탁드려요.
+# EXAMINER(FDB-v2) 단계: S1 파리 에펠탑의 좌표를 알려줄 수 있을까요? | S2 잠시만요, 지금은— | S3 혹시 다른 관광 명소도 근처에 있을까요? | S4 감사합니다. 정말 도움이 많이 됐어요.
 
      0.00s  user  발화 시작: 파리 에펠탑의 좌표를 알려줄 수 있을까요?
-     2.67s  <ret> 발화 (turn1 첫 프레임)
-     2.91s  agent 발화 시작: <ret> 물론이죠, 잠시만 기다려 주세요. 에펠탑의 좌표는 위도 사십팔 점 팔 오 팔 사, 경도 십이 점 
-     3.05s  user  발화 끝
-     3.39s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.67s]: (tool result) 48.8584;12.2945;Eiffel Tower, Champ de Mars, 5 Avenue An
-    10.78s  user  발화 시작: 그렇죠.
-    11.27s  user  발화 끝
-    14.17s  agent 발화 끝
-    15.19s  user  발화 시작: 음, 그 근처에 괜찮은 레스토랑도 찾아줄 수 있을까요?
-    18.25s  <ret> 발화 (turn4 첫 프레임)
-    18.48s  agent 발화 시작: <ret> 네, 에펠탑 근처 맛집을 검색해 드릴게요. 에펠탑 근처에 '르 쥘 베른'이라는 프랑스 레스토랑이 
-    18.70s  user  발화 끝
-    19.21s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.74s]: (tool result) Le Jules Verne;5 Avenue Anatole France, 75007 Paris, Fra
-    25.71s  user  발화 시작: 와.
-    26.11s  user  발화 끝
-    28.54s  agent 발화 끝
-    30.17s  user  발화 시작: 가격대가 조금 높다고 하셨는데, 얼마 정도 하나요?
-    33.49s  agent 발화 시작: 메뉴에 따라 다르지만, 대략 일인당 이백유로 정도 생각하시면 될 것 같아요.
-    33.59s  user  발화 끝
-    38.11s  user  발화 시작: 이백유로면 좀 부담스럽네요. 좀 더 저렴한 곳은 없을까요?
-    38.21s  agent 발화 끝
-    41.91s  <ret> 발화 (turn9 첫 프레임)
-    42.31s  agent 발화 시작: <ret> '레 코콧'이라는 프랑스 레스토랑이 있습니다. 평점은 사 점 이점이고, 가격대는 일인당 오십유로 
-    42.45s  user  발화 끝
-    43.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.87s]: (tool result) Les Cocottes;135 Rue Saint-Dominique, 75007 Paris, Franc
-    46.23s  user  발화 시작: 네.
-    46.54s  user  발화 끝
-    49.33s  user  발화 시작: 아, 거긴 가봤어요. 괜찮은데—
-    49.50s  agent 발화 끝
-    52.05s  user  발화 시작: 혹시 에펠탑 야경이 잘 보이는 레스토랑은 어디가 있을까요?
-    52.10s  user  발화 끝
-    55.24s  <ret> 발화 (turn13 첫 프레임)
-    55.64s  agent 발화 시작: <ret> 아, 야경이 잘 보이는 곳을 찾으시는군요. 잠시만요.
-    55.80s  user  발화 끝
-    56.84s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.38s]: (tool result) Monsieur Bleu;20 Avenue de New York, 75116 Paris, France
-    58.80s  agent 발화 시작: '몽시외 블루'라는 레스토랑에서 에펠탑 야경을 감상할 수 있습니다. 평점은 사 점 영점이고, 가격대는 조금 
-    59.02s  agent 발화 끝
-    66.67s  agent 발화 끝
-    67.89s  user  발화 시작: 몽시외 블루, 알겠습니다. 거기로 예약해 줄 수 있을까요?
-    71.72s  user  발화 끝
-    71.81s  agent 발화 시작: 네, 예약해 드리겠습니다. 몇 시로 예약하시겠어요?
-    74.91s  agent 발화 끝
-    75.13s  user  발화 시작: 오늘 저녁 여덟시로 부탁드려요. 두 명입니다.
-    78.34s  <ret> 발화 (turn18 첫 프레임)
-    78.42s  agent 발화 시작: <ret> 네, '몽시외 블루'에 오늘 저녁 여덟시에 두 분으로 예약이 완료되었습니다. 확인 번호는 칠 팔 
-    78.46s  user  발화 끝
-    79.78s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.95s]: (tool result) Reservation confirmed;Monsieur Bleu;Today 20:00;2 people
-    85.37s  agent 발화 끝
-    85.53s  user  발화 시작: 와, 감사합니다!
-    86.83s  agent 발화 시작: 천만에요. 즐거운 저녁 식사 되세요. 혹시 식사 후에 택시를 불러드릴까요?
-    86.95s  user  발화 끝
-    91.25s  user  발화 시작: 네, 부탁드려요.
-    91.64s  agent 발화 끝
-    92.51s  agent 발화 시작: 식사 마치시면 알려주세요. 바로 택시를 불러 드리겠습니다.
-    92.72s  user  발화 끝
-    96.34s  agent 발화 끝
-    96.62s  user  발화 시작: 네, 알겠습니다.
-    97.75s  agent 발화 시작: 그럼, 혹시 다른 도움이 필요하시면 언제든지 말씀해 주세요.
-    98.04s  user  발화 끝
-   101.78s  agent 발화 끝
-   102.44s  user  발화 시작: 지금은 괜찮아요. 정말 감사했어요.
-   104.81s  agent 발화 시작: 천만에요. 언제나 편하게 연락 주세요.
-   104.97s  user  발화 끝
-   107.72s  agent 발화 끝
+     2.18s  <ret> 발화 (turn1 첫 프레임)
+     2.42s  agent 발화 시작: <ret> 물론입니다. 에펠탑의 좌표는 위도 사십팔 점 팔 오 팔 사, 경도 이 점 이 구 사 오입니다.
+     2.58s  user  발화 끝
+     2.64s  ⚡SPAN 주입 [d'=0.46s / d_lead=0.46s]: (tool result) 48.8584, 2.2945
+     7.94s  user  발화 시작: 그렇죠.
+     8.62s  user  발화 끝
+    10.30s  agent 발화 끝
+    11.34s  user  발화 시작: 그 근처에 괜찮은 카페가 있을까요?
+    13.70s  agent 발화 시작: 에펠탑 주변에는 다양한 카페가 많습니다. 어떤 분위기를 선호하시나요? 조용하고 아늑한 곳을 원하시는지, 아니
+    13.83s  user  발화 끝
+    23.57s  user  발화 시작: 음… 조용한 곳으로요.
+    23.62s  agent 발화 끝
+    24.99s  <ret> 발화 (turn6 첫 프레임)
+    25.38s  agent 발화 시작: <ret> 잠시만요. "카페 콘스탄"이라는 곳이 평점이 사 점 삼점으로 괜찮은 카페입니다. 주소는 백삼십구 
+    25.49s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.56s]: (tool result) "Café Constant" - 139 Rue Saint-Dominique, 75007 Paris, 
+    25.55s  user  발화 끝
+    30.93s  user  발화 시작: 와.
+    31.61s  user  발화 끝
+    32.94s  agent 발화 시작: 그 카페는 에펠탑에서 도보로 약 십분 거리에 있습니다. 아침 식사나 가벼운 점심을 즐기기에 좋은 곳입니다.
+    33.16s  agent 발화 끝
+    36.95s  user  발화 시작: 네.
+    37.59s  user  발화 끝
+    40.26s  agent 발화 끝
+    41.19s  user  발화 시작: 거기로 가는 길을 알려주세요.
+    42.87s  <ret> 발화 (turn11 첫 프레임)
+    43.27s  agent 발화 시작: <ret> 물론입니다. 지금 바로 길 안내를 시작할까요?
+    43.45s  user  발화 끝
+    43.91s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.37s]: (tool result) Route calculated: Starting point: current location. Dest
+    46.56s  agent 발화 시작: 현재 위치에서 카페 콘스탄까지 도보로 약 십이분 정도 걸립니다. 길 안내를 시작합니다.
+    46.64s  agent 발화 끝
+    51.89s  user  발화 시작: 잠시만요, 지금은—
+    51.93s  agent 발화 끝
+    54.37s  user  발화 시작: 혹시 그 카페에 와이파이가 있나요?
+    54.47s  user  발화 끝
+    57.10s  agent 발화 시작: 네, 카페 콘스탄에는 무료 와이파이가 제공됩니다. 손님들이 편리하게 이용할 수 있도록 되어 있어요.
+    57.14s  user  발화 끝
+    62.80s  agent 발화 끝
+    62.81s  user  발화 시작: 좋아요. 그럼 길 안내 시작해주세요.
+    65.11s  agent 발화 시작: 알겠습니다. 지금부터 길 안내를 시작하겠습니다. 첫 번째 길을 우회전하세요.
+    65.30s  user  발화 끝
+    70.01s  user  발화 시작: 혹시 다른 관광 명소도 근처에 있을까요?
+    70.06s  agent 발화 끝
+    72.97s  user  발화 끝
+    73.03s  agent 발화 시작: 에펠탑 근처에는 샹젤리제 거리와 루브르 박물관 같은 유명한 관광 명소가 있습니다.
+    78.18s  user  발화 시작: 루브르 박물관까지 얼마나 걸릴까요?
+    78.36s  agent 발화 끝
+    80.12s  <ret> 발화 (turn21 첫 프레임)
+    80.43s  agent 발화 시작: <ret> 지하철 구호선을 이용하면 루브르 박물관까지 약 삼십분 정도 걸립니다.
+    80.54s  user  발화 끝
+    81.56s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.72s]: (tool result) Estimated travel time to Louvre Museum: 30 minutes by me
+    84.91s  user  발화 시작: 지하철역까지 가는 방법도 알려주세요.
+    85.15s  agent 발화 끝
+    87.26s  user  발화 끝
+    87.44s  agent 발화 시작: 현재 위치에서 가장 가까운 지하철역은 Bir-Hakeim 역입니다. 도보로 약 오분 거리에 있습니다.
+    93.79s  agent 발화 끝
+    94.06s  user  발화 시작: 그 역으로 가는 길도 안내해주시겠어요?
+    96.52s  <ret> 발화 (turn25 첫 프레임)
+    96.76s  agent 발화 시작: <ret> 물론입니다. 지금부터 Bir-Hakeim 역까지 길 안내를 시작합니다.
+    96.83s  user  발화 끝
+    98.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) Route calculated: Starting point: current location. Dest
+   101.16s  agent 발화 시작: 현재 위치에서 Bir-Hakeim 역까지 도보로 약 오분 정도 걸립니다. 길 안내를 시작하겠습니다.
+   101.20s  agent 발화 끝
+   107.03s  user  발화 시작: 감사합니다. 정말 도움이 많이 됐어요.
+   107.55s  agent 발화 끝
+   109.33s  agent 발화 시작: 천만에요. 여행을 즐겁게 보내시길 바랍니다. 혹시 더 필요한 정보가 있으시면 언제든지 말씀해주세요.
+   109.43s  user  발화 끝
+   114.10s  user  발화 시작: 음.
+   114.50s  user  발화 끝
+   115.68s  agent 발화 끝
+   115.74s  user  발화 시작: 혹시 오늘 날씨는 어때요?
+   117.38s  <ret> 발화 (turn31 첫 프레임)
+   117.46s  agent 발화 시작: <ret> 파리의 오늘 날씨는 맑고 기온은 이십이도입니다. 산책하기 좋은 날씨예요.
+   117.49s  user  발화 끝
+   119.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: (tool result) Current weather in Paris: 22°C, Sunny.
+   121.78s  agent 발화 시작: 파리는 현재 맑고, 기온은 이십이도입니다.
+   121.94s  agent 발화 끝
+   124.88s  agent 발화 끝
+   125.33s  user  발화 시작: 그럼 저는 이제 루브르 박물관으로 가보겠습니다.
+   127.58s  agent 발화 시작: 네, 조심히 가세요! 즐거운 시간 보내시길 바랍니다.
+   127.77s  user  발화 끝
+   130.73s  agent 발화 끝

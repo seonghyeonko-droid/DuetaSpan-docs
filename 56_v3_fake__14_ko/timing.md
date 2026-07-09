@@ -50,55 +50,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 맘마미아에 나오는 '내 사랑, 나의 삶'이라는 노래를 누가 썼 | S2 아바… 정말 유명했죠. 다른 멤버는 누가 있었나요? | S3 아, '댄싱 퀸'도 아바 노래였군요! 기억이 안 났어요. | S4 혹시 아바 노래 중에 다른 추천해 주실 만한 곡이 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 맘마미아에 나오는 '나의 사랑 나의 생명'이라는 노래, 누가  | S2 아바! 생각났어요. 옛날에 엄마가 아바 노래 엄청 좋아하셨거든 | S3 그럼 비욘 울바에우스 씨는 아바에서 어떤 역할을 했어요? | S4 아니요, 오늘은 이 정도면 충분해요. 알려주셔서 정말 고마워요
 
-     0.00s  user  발화 시작: 맘마미아에 나오는 '내 사랑, 나의 삶'이라는 노래를 누가 썼는지 궁금해요.
-     4.79s  <ret> 발화 (turn1 첫 프레임)
-     4.94s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
-     5.09s  user  발화 끝
-     5.29s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.57s]: Björn Ulvaeus.
-     6.41s  agent 발화 시작: '내 사랑, 나의 삶'은 비외른 울바에우스가 작곡했습니다.
-     6.51s  agent 발화 끝
-    10.54s  user  발화 시작: 아, 그렇군요. 비외른 울바에우스는 어떤 그룹에 속해 있었나요?
-    10.66s  agent 발화 끝
-    15.44s  <ret> 발화 (turn4 첫 프레임)
-    15.54s  user  발화 끝
-    15.60s  agent 발화 시작: <ret> 그분은 아바라는 유명한 그룹의 멤버였습니다.
-    17.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: Björn Ulvaeus was a member of the Swedish music group ABBA.
-    19.28s  agent 발화 시작: 비외른 울바에우스는 스웨덴 음악 그룹 아바의 멤버였습니다.
-    19.43s  agent 발화 끝
-    23.16s  agent 발화 끝
-    23.26s  user  발화 시작: 아바… 정말 유명했죠. 다른 멤버는 누가 있었나요?
-    27.22s  <ret> 발화 (turn7 첫 프레임)
-    27.57s  user  발화 끝
-    27.62s  agent 발화 시작: <ret> 아바는 비외른 울바에우스 외에 아그네타 펠트스코그, 베니 안데르손, 아니카 팔손이 함께 했습니다.
-    28.34s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.72s]: The members of ABBA were Agnetha Fältskog, Björn Ulvaeus, Benny Anders
-    34.02s  <ret> 발화 (turn8 첫 프레임)
-    34.17s  agent 발화 시작: <ret> 아바 멤버는 아그네타 펠트스코그, 비외른 울바에우스, 베니 안데르손, 아니카 팔손 님입니다.
-    34.34s  agent 발화 끝
-    36.02s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.78s]: (tool result) AAPL:170.34, Change:-0.45, Volume:45678900, High:171.22,
-    38.81s  user  발화 시작: 음.
-    39.30s  user  발화 끝
-    41.80s  agent 발화 시작: 아바는 천구백칠십년대에 전 세계적으로 큰 인기를 얻었습니다.
-    41.95s  agent 발화 끝
-    45.63s  <ret> 발화 (turn11 첫 프레임)
-    45.70s  agent 발화 시작: <ret> 팝 음악 역사를 돌이켜 보면, 아바는 '워터루'와 '댄싱 퀸' 같은 곡으로 천구백칠십년대에 국제적
-    45.96s  agent 발화 끝
-    47.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.63s]: ABBA achieved international success in the 1970s with hits like "Water
-    49.12s  user  발화 시작: 정말요?
-    49.95s  user  발화 끝
-    53.58s  agent 발화 끝
-    53.62s  user  발화 시작: 아, '댄싱 퀸'도 아바 노래였군요! 기억이 안 났어요.
-    57.32s  user  발화 끝
-    57.33s  agent 발화 시작: 기억이 잘 안 나실 수도 있죠. 시간이 많이 흘렀으니까요.
-    58.69s  user  발화 시작: 네.
-    59.18s  user  발화 끝
-    61.21s  agent 발화 끝
-    61.98s  user  발화 시작: 혹시 아바 노래 중에 다른 추천해 주실 만한 곡이 있을까요?
-    66.02s  agent 발화 시작: 물론입니다. '슈퍼 트루퍼'나 '머니, 머니, 머니'도 정말 좋은 노래예요.
-    66.10s  user  발화 끝
-    70.88s  <ret> 발화 (turn18 첫 프레임)
-    71.10s  agent 발화 시작: <ret> 개인적으로 저는, '슈퍼 트루퍼'와 '머니, 머니, 머니'도 아바의 대표곡입니다.
-    71.20s  agent 발화 끝
-    71.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.23s]: ABBA is known for songs such as "Super Trouper" and "Money, Money, Mon
-    76.65s  agent 발화 끝
+     0.00s  user  발화 시작: 맘마미아에 나오는 '나의 사랑 나의 생명'이라는 노래, 누가 썼어요?
+     4.15s  <ret> 발화 (turn1 첫 프레임)
+     4.31s  agent 발화 시작: <ret> 아, 그 노래 정말 아름답죠. 제가 알아봤는데, 비욘 울바에우스가 작곡했어요.
+     4.35s  user  발화 끝
+     6.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Björn Ulvaeus.
+     9.68s  agent 발화 시작: 비욘 울바에우스 씨가 '나의 사랑 나의 생명'을 작곡하셨답니다.
+     9.78s  agent 발화 끝
+    13.73s  user  발화 시작: 비욘 울바에우스… 처음 들어보는 이름인데, 혹시 아바 멤버예요?
+    13.84s  agent 발화 끝
+    19.06s  <ret> 발화 (turn4 첫 프레임)
+    19.33s  user  발화 끝
+    19.38s  agent 발화 시작: <ret> 네, 맞아요. 아바의 멤버 중 한 분이세요. 아바는 정말 전설적인 그룹이죠.
+    21.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: Björn Ulvaeus was a member of the Swedish pop group ABBA.
+    25.52s  agent 발화 시작: 비욘 울바에우스 씨는 스웨덴 팝 그룹 아바의 멤버셨어요.
+    25.67s  agent 발화 끝
+    29.54s  agent 발화 끝
+    29.61s  user  발화 시작: 아바! 생각났어요. 옛날에 엄마가 아바 노래 엄청 좋아하셨거든요.
+    34.47s  user  발화 끝
+    34.66s  agent 발화 시작: [happy] 어머님 취향이 정말 좋으시네요. 아바의 노래들은 세대를 초월해서 사랑받는 것 같아요.
+    40.14s  user  발화 시작: 그럼 비욘 울바에우스 씨는 아바에서 어떤 역할을 했어요?
+    40.21s  agent 발화 끝
+    44.31s  user  발화 끝
+    44.38s  <ret> 발화 (turn9 첫 프레임)
+    44.46s  agent 발화 시작: <ret> 아바에서 기타를 치고 노래도 하셨어요. 그리고 많은 곡을 작곡하기도 하셨죠.
+    46.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: Ulvaeus primarily played guitar and contributed to the songwriting of 
+    49.36s  <ret> 발화 (turn10 첫 프레임)
+    49.43s  agent 발화 시작: <ret> 비욘 울바에우스 씨는 아바에서 기타를 치면서 곡도 많이 쓰셨어요.
+    49.60s  agent 발화 끝
+    51.36s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.58s]: (tool result) AAPL: 170.34 +0.52
+    54.01s  agent 발화 끝
+    54.20s  user  발화 시작: 아, 그렇군요. 아바 노래 들으면서 추억에 잠겨야겠어요.
+    58.41s  user  발화 끝
+    58.65s  agent 발화 시작: [curious] 그러시군요. 혹시 다른 아바 노래도 궁금하신 거 있으세요?
+    60.37s  user  발화 시작: 네.
+    61.00s  user  발화 끝
+    62.77s  agent 발화 끝
+    64.06s  user  발화 시작: 아니요, 오늘은 이 정도면 충분해요. 알려주셔서 정말 고마워요.
+    68.60s  user  발화 끝

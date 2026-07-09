@@ -61,28 +61,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ava, I’m Hia. It’s lovely to connect with you. I understand you’re hoping to go somewhere today?
-[  5.73s][user ] Yes, I need to get to the Musée d'Orsay. What’s the quickest way?
-[  9.08s][moshi] ⟨ret@9.00s⟩ Knowing where you’re starting from ⟦⚡SPAN@11.00s: [2026-02-11] User's home address is 30 Oak Avenue.⟧ helps me find the best route. From 30 Oak Avenue, the quickest route to the Musée d'Orsay is by Metro line twelve.
-[ 19.03s][user ] Oh, that sounds easy enough. About how long will that take?
-[ 22.19s][moshi] The Metro ride itself is about twenty minutes, plus walking time to and from the stations.
-[ 25.13s][user ] «backchannel» Uh-huh.
-[ 28.18s][moshi] I can check current conditions for estimated travel time if you’d like a more precise answer.
-[ 30.89s][user ] «backchannel» Okay.
-[ 33.48s][user ] Actually, before we do that… I'm meeting friends for lunch after. Do you know any good Mexican places near the ⟨ret@40.14s⟩ museum?
-[ 40.30s][moshi] Considering ⟦⚡SPAN@41.34s: [2026-07-22] User's favorite cuisine is Mexican.⟧ your preferences is important. There’s a highly-rated Mexican restaurant, ‘El Rancho’, a ten-minute walk from the Musée d'Orsay.
-[ 48.54s][user ] El Rancho… hmm. Is it ⟨ret@51.73s⟩ vegetarian-friendly?
-[ 52.12s][moshi] Yes, ⟦⚡SPAN@52.77s: [2026-06-25] User is vegetarian.⟧ El Rancho has several vegetarian options clearly marked on their menu.
-[ 54.87s][user ] «backchannel» Mm-hmm.
-[ 57.11s][user ] That's great! Okay, let’s go back to getting to the museum. What’s the estimated total travel time now?
-[ 62.62s][moshi] ⟨ret@62.54s⟩ Let me check current ⟦⚡SPAN@64.53s: (tool result) Estimated travel time: 32 minutes; Metro line 12, 23 minutes; walking, 9 minutes.⟧ traffic and Metro schedules for a precise estimate.
-      CALL: {"function": "get_travel_time", "arguments": {"origin": "30 Oak Avenue", "destination": "Musée d'Orsay", "mode": "public transport"}}
-[ 67.26s][moshi] The estimated travel time to the Musée d'Orsay is currently thirty-two minutes.
-[ 71.97s][user ] Perfect. I’d also like an aisle seat if possible, when I get on the ⟨ret@75.95s⟩ Metro.
-[ 76.27s][moshi] Remembering ⟦⚡SPAN@76.99s: [2026-06-15] User prefers an aisle seat when traveling.⟧ your preferences makes travel more comfortable. I’ve noted your preference for an aisle seat on the Metro. It’s a request, not a guarantee, of course.
-[ 80.27s][user ] «backchannel» Mhm.
-[ 85.97s][user ] I understand. One last thing – I have a peanut allergy, should I be careful about anything on the Metro?
-[ 91.78s][moshi] ⟨ret@91.72s⟩ ⟦⚡SPAN@92.22s: [2026-02-23] User is allergic to peanuts.⟧ Your well-being is my priority. While uncommon, be mindful of discarded food wrappers on the Metro, given your peanut allergy.
-[ 96.99s][user ] «backchannel» Right.
-[100.00s][user ] Okay, that’s really helpful. Thank you, Hia.
-[102.38s][moshi] You’re very welcome, Ava. Enjoy your visit to the Musée d'Orsay and lunch with your friends.
+[  0.00s][moshi] Hi Ava, I'm Hia. It's lovely to connect with you. Is there anything I can help you plan today?
+[  5.60s][user ] I need to get to the airport tomorrow morning. What's the quickest route from home?
+[  9.52s][moshi] ⟨ret@9.45s⟩ From 30 Oak Avenue, ⟦⚡SPAN@11.45s: [2026-02-11] User's home address is 30 Oak Avenue.⟧ the quickest route to Charles de Gaulle Airport is via the A1 motorway, taking approximately forty-five minutes.
+[ 15.26s][user ] «backchannel» Yeah, yeah.
+[ 17.89s][user ] That sounds good. Could you check the traffic for ⟨ret@20.23s⟩ that route?
+[ 20.62s][moshi] There's moderate congestion ⟦⚡SPAN@22.23s: (tool result) Moderate congestion on A1, adding 12 minutes to the journey. Estimated arrival 9:52 AM.⟧ on the A1, adding twelve minutes. You should arrive around 9:52 AM.
+      CALL: {"function": "get_traffic", "arguments": {"origin": "30 Oak Avenue", "destination": "Charles de Gaulle Airport"}}
+[ 24.07s][user ] «backchannel» Mm-hmm.
+[ 26.98s][user ] Oh, that's a bit tight. Is there an earlier route I could take?
+[ 30.23s][moshi] We could adjust your departure time to allow for the traffic, or explore alternative routes. Which would you prefer?
+[ 33.61s][user ] «backchannel» Mhm.
+[ 37.75s][user ] Let's stick with the same time and see if there's a faster alternative, even if it's a bit longer distance-wise.
+[ 43.84s][moshi] ⟨ret@43.77s⟩ An alternative route via ⟦⚡SPAN@45.77s: (tool result) Route via A3 and A103: 58 minutes, minimal congestion.⟧ the A3 and A103 will take fifty-eight minutes, with minimal congestion.
+      CALL: {"function": "find_alternative_route", "arguments": {"origin": "30 Oak Avenue", "destination": "Charles de Gaulle Airport", "departure_time": "tomorrow morning"}}
+[ 48.45s][user ] «backchannel» Yeah.
+[ 50.53s][moshi] That route avoids the worst of the congestion on the A1. It is a bit longer, but should be more reliable.
+[ 53.26s][user ] «backchannel» Right.
+[ 57.50s][user ] That sounds better. Will that route have tolls?
+[ 60.73s][moshi] ⟨ret@60.65s⟩ The estimated toll cost ⟦⚡SPAN@62.65s: (tool result) Estimated tolls: 8.50 EUR.⟧ for that route is eight euros and fifty cents.
+      CALL: {"function": "calculate_tolls", "arguments": {"route": "A3 and A103"}}
+[ 62.47s][user ] «backchannel» Yeah.
+[ 66.04s][user ] Okay, good to know. And what about restaurants near the airport? I might have time for a quick bite.
+[ 71.43s][moshi] There are several restaurants near Charles de Gaulle Airport. Do you have any cuisine preferences?
+[ 77.65s][user ] I'm vegetarian. And I love Mexican food.
+[ 80.42s][moshi] ⟨ret@80.36s⟩ I ⟦⚡SPAN@81.32s: [2026-07-22] User's favorite cuisine is Mexican.⟧ recall you enjoy Mexican cuisine. Several restaurants near the airport serve Mexican cuisine. “El Rancho” has excellent vegetarian options.
+[ 86.16s][user ] «backchannel» Yeah.
+[ 90.16s][user ] That sounds perfect, thanks so much for your help Hia.
+[ 92.83s][moshi] You’re very welcome, Ava. I’m glad I could assist with your travel plans. Have a pleasant trip to Kyoto in December.

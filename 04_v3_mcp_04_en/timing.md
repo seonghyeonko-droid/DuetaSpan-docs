@@ -55,33 +55,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm. That seems… aggressive. Could | S3 Okay, good. And, um, can you find  | S4 Is it usually busy there?
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, that’s good. But… I wonder if | S3 Okay, good. So, that means website | S4 Right. Well, thanks. That’s all fo
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.70s  <ret> 발화 (turn1 첫 프레임)
-     5.00s  user  발화 끝
-     5.01s  agent 발화 시작: <ret> Certainly, I can adjust the browser settings for you. 
-     5.66s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.35s]: (tool result) User agent set to SuperCrawler version 10.1; browser res
-     9.43s  user  발화 시작: Mhm.
-    10.06s  user  발화 끝
-    14.48s  user  발화 시작: Hmm. That seems… aggressive. Could you change it back to the
-    14.70s  agent 발화 끝
-    18.84s  <ret> 발화 (turn4 첫 프레임)
-    19.07s  agent 발화 시작: <ret> [laugh] Sometimes a little experimentation is good, bu
-    19.29s  user  발화 끝
-    20.60s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.23s]: (tool result) User agent reset to default; browser restarted.
-    26.23s  agent 발화 시작: The user agent has been reset to the default setting, and th
-    26.30s  agent 발화 끝
-    32.06s  agent 발화 끝
-    32.49s  user  발화 시작: Okay, good. And, um, can you find me a good coffee shop near
-    38.00s  <ret> 발화 (turn7 첫 프레임)
-    38.08s  agent 발화 시작: <ret> Of course. I can help with that.
-    38.28s  user  발화 끝
-    38.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.17s]: (tool result) Coffee Bean & Tea Leaf, 0.3 miles, Wifi: Yes, Rating: 4.
-    40.12s  agent 발화 시작: Coffee Bean & Tea Leaf is close by—zero point three miles—wi
-    40.25s  agent 발화 끝
-    47.40s  agent 발화 끝
-    48.09s  user  발화 시작: Is it usually busy there?
-    49.75s  agent 발화 시작: It's hard to predict, but a good rating often suggests popul
-    49.84s  user  발화 끝
-    56.98s  agent 발화 끝
+     5.08s  <ret> 발화 (turn1 첫 프레임)
+     5.10s  user  발화 끝
+     5.39s  agent 발화 시작: <ret> Certainly. I’ve set your user agent to SuperCrawler ve
+     6.12s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.62s]: (tool result) User agent set to SuperCrawler version 10.1.
+     9.32s  user  발화 시작: Mhm.
+     9.82s  user  발화 끝
+    13.83s  user  발화 시작: Hmm, that’s good. But… I wonder if that actually worked? Cou
+    14.01s  agent 발화 끝
+    20.74s  <ret> 발화 (turn4 첫 프레임)
+    20.97s  agent 발화 시작: <ret> [laugh] It appears it did! The current user agent is, 
+    21.15s  user  발화 끝
+    22.50s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.41s]: (tool result) Current user agent: SuperCrawler version 10.1.
+    28.35s  user  발화 시작: Okay, good. So, that means websites will see me as… a crawle
+    28.38s  agent 발화 끝
+    34.10s  user  발화 끝
+    34.28s  agent 발화 시작: That’s correct. Websites will identify your browser as Super
+    43.96s  agent 발화 끝
+    44.56s  user  발화 시작: Right. Well, thanks. That’s all for now, I think.
+    47.65s  agent 발화 시작: You’re very welcome. It’s often helpful to adjust these sett
+    47.80s  user  발화 끝
+    54.74s  agent 발화 끝

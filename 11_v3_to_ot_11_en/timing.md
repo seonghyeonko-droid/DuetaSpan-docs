@@ -71,21 +71,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has the Oakl | S2 Wow, that *was* a while ago. I tho | S3 Hey, did you take the recycling ou | S4 Sorry about that. So, do they usua
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, have the Oak | S2 Wow, not *that* long ago. I though | S3 Hey, did you remember to take the  | S4 Sorry about that. Back to baseball
 
-     0.00s  user  발화 시작: I was just wondering, has the Oakland A’s team been no-hit r
-     5.36s  <ret> 발화 (turn1 첫 프레임)
-     5.74s  agent 발화 시작: <ret> That’s a good question, and it’s not something fans wa
-     5.74s  user  발화 끝
-     7.20s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.00s]: [source: Wikipedia] The last time the Oakland Athletics were no-hit wa
-    12.41s  agent 발화 끝
-    12.58s  user  발화 시작: Wow, that *was* a while ago. I thought it had been more rece
-    17.03s  user  발화 끝
-    17.41s  agent 발화 시작: It’s easy to lose track of time when you’re following a team
-    21.44s  agent 발화 끝
-    21.45s  user  발화 시작: Hey, did you take the recycling out?
-    23.39s  user  발화 시작: Sorry about that. So, do they usually go long stretches with
-    23.52s  user  발화 끝
-    29.17s  agent 발화 시작: It’s not a frequent occurrence, but it’s also not incredibly
-    29.28s  user  발화 끝
-    35.06s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, have the Oakland A’s ever been no-hit?
+     5.04s  <ret> 발화 (turn1 첫 프레임)
+     5.43s  agent 발화 시작: <ret> That’s a good question, and it has happened— The last 
+     5.46s  user  발화 끝
+     6.40s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.80s]: [source: MLB.com] The Oakland Athletics were last no-hit on April 21, 
+    13.82s  agent 발화 끝
+    13.94s  user  발화 시작: Wow, not *that* long ago. I thought it would be decades.
+    17.32s  user  발화 끝
+    17.68s  agent 발화 시작: It’s surprisingly recent, isn’t it? Sometimes it feels like 
+    23.09s  agent 발화 끝
+    23.24s  user  발화 시작: Hey, did you remember to take the chicken out of the freezer
+    26.08s  user  발화 시작: Sorry about that. Back to baseball… was that a close game, o
+    26.20s  user  발화 끝
+    30.90s  <ret> 발화 (turn6 첫 프레임)
+    31.13s  agent 발화 시작: <ret> It was quite a game— Mike Fiers won the game four to z
+    31.23s  user  발화 끝
+    32.02s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.46s]: [source: ESPN] Mike Fiers pitched a no-hitter against the Oakland Athl
+    37.85s  agent 발화 끝

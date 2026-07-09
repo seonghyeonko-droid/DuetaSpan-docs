@@ -51,17 +51,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Noah, welcome to Sydney! I’m Hunar, and I’m here to help you
-     1.79s  user  발화 시작: Mm-hmm.
-     2.28s  user  발화 끝
-     6.19s  user  발화 시작: Hunar… that’s a beautiful name. It’s just, moving here feels
-     6.29s  agent 발화 끝
-    10.69s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. A new city
-    10.86s  user  발화 끝
-    14.91s  user  발화 시작: Mhm.
-    15.49s  user  발화 끝
-    18.61s  user  발화 시작: I— I mean, I guess just finding some routines? Somewhere to 
-    18.81s  agent 발화 끝
-    23.46s  agent 발화 시작: Establishing routines is a wonderful way to ground yourself.
-    23.70s  user  발화 끝
-    31.89s  agent 발화 끝
+     0.00s  agent 발화 시작: Noah, welcome to Sydney! I’m Hunar, and I help people feel s
+     2.57s  user  발화 시작: Mm-hmm.
+     2.92s  user  발화 끝
+     8.83s  user  발화 시작: Hunar… that’s a beautiful name. I’m just feeling a bit overw
+     8.90s  agent 발화 끝
+    13.76s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. Newness ca
+    13.88s  user  발화 끝
+    18.59s  user  발화 시작: Mhm.
+    19.23s  user  발화 끝
+    22.86s  user  발화 시작: I— I mean, just finding everyday things. A good coffee shop,
+    22.95s  agent 발화 끝
+    28.75s  agent 발화 시작: That's a common feeling when settling in. Perhaps we can exp
+    28.92s  user  발화 끝
+    37.78s  agent 발화 끝

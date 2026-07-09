@@ -70,12 +70,12 @@
 
 
      0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I help
-     7.46s  agent 발화 끝
-     8.62s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
-    15.80s  user  발화 끝
-    15.90s  agent 발화 시작: It’s completely understandable to feel that way, especially 
-    25.09s  agent 발화 끝
-    25.13s  user  발화 시작: Well, I— I mean, I'm trying to save for a trip next year, bu
-    30.88s  user  발화 끝
-    31.14s  agent 발화 시작: A trip sounds wonderful! It’s great you’re planning ahead. L
-    40.41s  agent 발화 끝
+     7.41s  agent 발화 끝
+     8.39s  user  발화 시작: Ara… that’s a pretty name. Honestly, I’m just feeling overwh
+    14.42s  user  발화 끝
+    14.43s  agent 발화 시작: It’s completely understandable to feel overwhelmed, especial
+    24.22s  user  발화 시작: I— I mean, I just don’t know where all my money goes each mo
+    24.25s  agent 발화 끝
+    28.71s  user  발화 끝
+    29.00s  agent 발화 시작: That’s a really common feeling, Kim. It’s hard to make progr
+    38.55s  agent 발화 끝

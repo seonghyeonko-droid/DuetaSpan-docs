@@ -60,65 +60,65 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yes, I need to get to the Musée d' | S2 Actually, before we do that… I'm m | S3 That's great! Okay, let’s go back  | S4 I understand. One last thing – I h
+# EXAMINER(FDB-v2) 단계: S1 I need to get to the airport tomor | S2 Oh, that's a bit tight. Is there a | S3 That sounds better. Will that rout | S4 I'm vegetarian. And I love Mexican
 
-     0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
-     5.73s  user  발화 시작: Yes, I need to get to the Musée d'Orsay. What’s the quickest
-     5.79s  agent 발화 끝
-     9.00s  <ret> 발화 (turn2 첫 프레임)
-     9.08s  agent 발화 시작: <ret> Knowing where you’re starting from helps me find the b
-     9.10s  user  발화 끝
-    11.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.85s]: [2026-02-11] User's home address is 30 Oak Avenue.
-    18.54s  agent 발화 끝
-    19.03s  user  발화 시작: Oh, that sounds easy enough. About how long will that take?
-    22.19s  agent 발화 시작: The Metro ride itself is about twenty minutes, plus walking 
-    22.27s  user  발화 끝
-    25.13s  user  발화 시작: Uh-huh.
-    25.53s  user  발화 끝
-    28.18s  agent 발화 시작: I can check current conditions for estimated travel time if 
-    28.40s  agent 발화 끝
-    30.89s  user  발화 시작: Okay.
-    31.29s  user  발화 끝
-    33.37s  agent 발화 끝
-    33.48s  user  발화 시작: Actually, before we do that… I'm meeting friends for lunch a
-    40.14s  <ret> 발화 (turn9 첫 프레임)
-    40.30s  agent 발화 시작: <ret> Considering your preferences is important. There’s a h
-    40.52s  user  발화 끝
-    41.34s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.30s]: [2026-07-22] User's favorite cuisine is Mexican.
-    48.54s  user  발화 시작: El Rancho… hmm. Is it vegetarian-friendly?
-    49.06s  agent 발화 끝
-    51.73s  <ret> 발화 (turn11 첫 프레임)
-    52.10s  user  발화 끝
-    52.12s  agent 발화 시작: <ret> Yes, El Rancho has several vegetarian options clearly 
-    52.77s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.42s]: [2026-06-25] User is vegetarian.
-    54.87s  user  발화 시작: Mm-hmm.
-    55.37s  user  발화 끝
-    57.11s  user  발화 시작: That's great! Okay, let’s go back to getting to the museum. 
-    57.26s  agent 발화 끝
-    62.54s  <ret> 발화 (turn14 첫 프레임)
-    62.62s  agent 발화 시작: <ret> Let me check current traffic and Metro schedules for a
-    62.71s  user  발화 끝
-    64.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) Estimated travel time: 32 minutes; Metro line 12, 23 min
-    67.26s  agent 발화 시작: The estimated travel time to the Musée d'Orsay is currently 
-    67.33s  agent 발화 끝
-    71.52s  agent 발화 끝
-    71.97s  user  발화 시작: Perfect. I’d also like an aisle seat if possible, when I get
-    75.95s  <ret> 발화 (turn17 첫 프레임)
-    76.27s  agent 발화 시작: <ret> Remembering your preferences makes travel more comfort
-    76.27s  user  발화 끝
-    76.99s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.56s]: [2026-06-15] User prefers an aisle seat when traveling.
-    80.27s  user  발화 시작: Mhm.
-    80.77s  user  발화 끝
-    85.78s  agent 발화 끝
-    85.97s  user  발화 시작: I understand. One last thing – I have a peanut allergy, shou
-    91.72s  <ret> 발화 (turn20 첫 프레임)
-    91.78s  agent 발화 시작: <ret> Your well-being is my priority. While uncommon, be min
-    91.94s  user  발화 끝
-    92.22s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.99s]: [2026-02-23] User is allergic to peanuts.
-    96.99s  user  발화 시작: Right.
-    97.39s  user  발화 끝
-    99.75s  agent 발화 끝
-   100.00s  user  발화 시작: Okay, that’s really helpful. Thank you, Hia.
-   102.30s  user  발화 끝
-   102.38s  agent 발화 시작: You’re very welcome, Ava. Enjoy your visit to the Musée d'Or
-   107.37s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It's lovely to connect with you. Is there a
+     5.60s  user  발화 시작: I need to get to the airport tomorrow morning. What's the qu
+     5.66s  agent 발화 끝
+     9.45s  <ret> 발화 (turn2 첫 프레임)
+     9.52s  agent 발화 시작: <ret> From 30 Oak Avenue, the quickest route to Charles de G
+     9.67s  user  발화 끝
+    11.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    15.26s  user  발화 시작: Yeah, yeah.
+    16.55s  user  발화 끝
+    17.72s  agent 발화 끝
+    17.89s  user  발화 시작: That sounds good. Could you check the traffic for that route
+    20.23s  <ret> 발화 (turn5 첫 프레임)
+    20.62s  agent 발화 시작: <ret> There's moderate congestion on the A1, adding twelve m
+    20.80s  user  발화 끝
+    22.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Moderate congestion on A1, adding 12 minutes to the jour
+    24.07s  user  발화 시작: Mm-hmm.
+    24.57s  user  발화 끝
+    26.98s  user  발화 시작: Oh, that's a bit tight. Is there an earlier route I could ta
+    27.19s  agent 발화 끝
+    30.23s  agent 발화 시작: We could adjust your departure time to allow for the traffic
+    30.36s  user  발화 끝
+    33.61s  user  발화 시작: Mhm.
+    34.11s  user  발화 끝
+    37.75s  user  발화 시작: Let's stick with the same time and see if there's a faster a
+    38.24s  agent 발화 끝
+    43.67s  user  발화 끝
+    43.77s  <ret> 발화 (turn11 첫 프레임)
+    43.84s  agent 발화 시작: <ret> An alternative route via the A3 and A103 will take fif
+    45.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Route via A3 and A103: 58 minutes, minimal congestion.
+    48.45s  user  발화 시작: Yeah.
+    48.90s  user  발화 끝
+    50.53s  agent 발화 시작: That route avoids the worst of the congestion on the A1. It 
+    50.60s  agent 발화 끝
+    53.26s  user  발화 시작: Right.
+    53.61s  user  발화 끝
+    57.50s  user  발화 시작: That sounds better. Will that route have tolls?
+    57.62s  agent 발화 끝
+    60.65s  <ret> 발화 (turn16 첫 프레임)
+    60.73s  agent 발화 시작: <ret> The estimated toll cost for that route is eight euros 
+    60.74s  user  발화 끝
+    62.47s  user  발화 시작: Yeah.
+    62.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) Estimated tolls: 8.50 EUR.
+    62.96s  user  발화 끝
+    65.78s  agent 발화 끝
+    66.04s  user  발화 시작: Okay, good to know. And what about restaurants near the airp
+    71.23s  user  발화 끝
+    71.43s  agent 발화 시작: There are several restaurants near Charles de Gaulle Airport
+    76.95s  agent 발화 끝
+    77.65s  user  발화 시작: I'm vegetarian. And I love Mexican food.
+    80.36s  <ret> 발화 (turn21 첫 프레임)
+    80.42s  agent 발화 시작: <ret> I recall you enjoy Mexican cuisine. Several restaurant
+    80.51s  user  발화 끝
+    81.32s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.90s]: [2026-07-22] User's favorite cuisine is Mexican.
+    86.16s  user  발화 시작: Yeah.
+    86.61s  user  발화 끝
+    90.11s  agent 발화 끝
+    90.16s  user  발화 시작: That sounds perfect, thanks so much for your help Hia.
+    92.79s  user  발화 끝
+    92.83s  agent 발화 시작: You’re very welcome, Ava. I’m glad I could assist with your 
+    99.83s  agent 발화 끝

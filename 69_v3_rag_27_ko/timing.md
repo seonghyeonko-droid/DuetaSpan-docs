@@ -60,27 +60,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 럭스 아우룬케가 작곡한 곡이 언제 만들어졌는지 알 수 있을까요 | S2 아, 천구백칠십년이군요. 그럼 그분이 어떤 스타일의 음악을 주 | S3 잠깐만요, 혹시 그분이 다른 음악가들과 협업한 적이 있나요? | S4 아냐 볼코프와 벤 카터라… 두 분은 어떤 음악을 하시나요?
 
-     0.00s  user  발화 시작: 럭스 아우룬케가 작곡한 곡이 언제 만들어졌는지 알 수 있을까요?
-     3.84s  user  발화 끝
-     3.89s  <ret> 발화 (turn1 첫 프레임)
-     3.96s  agent 발화 시작: <ret> 작곡가에 대한 정보부터 알아봐야 할 것 같아요. 럭스 아우룬케는 천구백칠십년에 태어났습니다. 전자
-     5.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: [source: Britannica] Lux Aurunque was born in 1970 and is known for hi
-     7.62s  user  발화 시작: 예.
-     8.26s  user  발화 끝
-    14.43s  agent 발화 끝
-    14.77s  user  발화 시작: 아, 천구백칠십년이군요. 그럼 그분이 어떤 스타일의 음악을 주로 하시는지 궁금해요.
-    19.58s  agent 발화 시작: 럭스 아우룬케는 주로 실험적인 전자 음악을 선보이는 것으로 유명합니다. 그의 작품은—
-    19.72s  user  발화 끝
-    25.85s  user  발화 시작: 잠깐만요, 혹시 그분이 다른 음악가들과 협업한 적이 있나요?
-    26.43s  agent 발화 끝
-    29.63s  <ret> 발화 (turn6 첫 프레임)
-    29.68s  user  발화 끝
-    29.70s  agent 발화 시작: <ret> 네, 협업에 대한 정보도 찾아볼 수 있습니다.
-    31.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: [source: AllMusic] Lux Aurunque collaborated with several prominent ar
-    33.34s  agent 발화 시작: 럭스 아우룬케는 아냐 볼코프, 벤 카터와 함께 "내일의 메아리"라는 앨범에서 협업했습니다. 비평가들에게 호평
-    33.44s  agent 발화 끝
-    42.01s  agent 발화 끝
-    42.27s  user  발화 시작: 아냐 볼코프와 벤 카터라… 두 분은 어떤 음악을 하시나요?
-    46.29s  user  발화 끝
+     0.00s  user  발화 시작: 럭스 아우룬케가 작곡한 곡이 언제 만들어졌는지 궁금해요.
+     3.93s  user  발화 끝
+     4.06s  <ret> 발화 (turn1 첫 프레임)
+     4.14s  agent 발화 시작: <ret> 럭스 아우룬케에 대해 알아보고 있는데, 그분이 활동하신 시기를 파악하는 게 중요할 것 같아요.
+     6.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: [source: Britannica] Lux Aurunque was born in 1970 and is known for hi
+    10.14s  agent 발화 시작: 럭스 아우룬케는 천구백칠십년에 태어났다고 합니다.
+    10.26s  agent 발화 끝
+    14.07s  agent 발화 끝
+    14.49s  user  발화 시작: 아, 천구백칠십년이군요. 그분은 주로 어떤 스타일의 음악을 하셨나요?
+    18.83s  agent 발화 시작: 럭스 아우룬케는 혁신적인 작곡으로 유명하신 분이시죠—
+    19.03s  user  발화 끝
+    21.90s  user  발화 시작: 혹시 그분이 다른 작곡가들에게 영향을 많이 주셨나요?
+    22.67s  agent 발화 끝
+    24.98s  <ret> 발화 (turn6 첫 프레임)
+    25.13s  user  발화 끝
+    25.14s  agent 발화 시작: <ret> 네, 럭스 아우룬케는 동시대 작곡가들에게 큰 영향을 미쳤다고 알려져 있습니다.
+    26.26s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.25s]: [source: AllMusic] Aurunque's work has been cited as a major influence
+    31.29s  agent 발화 시작: 럭스 아우룬케의 작품은 현대 작곡가들에게 큰 영향을 준 것으로 평가받고 있습니다.
+    31.39s  agent 발화 끝
+    37.41s  agent 발화 끝

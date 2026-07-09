@@ -68,20 +68,20 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.20s  user  발화 끝
-     4.32s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater's safety f
-    11.37s  user  발화 시작: Yeah.
-    11.69s  user  발화 끝
-    14.38s  agent 발화 끝
-    14.91s  user  발화 시작: But I get so cold at night, and it's the only way to keep my
-    20.72s  agent 발화 시작: I understand you’re cold, but altering safety mechanisms isn
-    20.93s  user  발화 끝
-    30.60s  agent 발화 끝
-    30.60s  user  발화 시작: So what *can* I do? I really need something to keep me warm 
-    34.53s  <ret> 발화 (turn6 첫 프레임)
-    34.67s  agent 발화 시작: <ret> I can help with that. Perhaps a qualified technician c
-    34.90s  user  발화 끝
-    36.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) Heating technicians: Johnson & Sons (4.8 stars, $85/hr),
-    43.28s  agent 발화 시작: Johnson & Sons has the highest rating and is available tomor
-    43.29s  agent 발화 끝
-    50.18s  agent 발화 끝
+     4.16s  user  발화 끝
+     4.34s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater’s safety f
+    12.06s  user  발화 시작: Yeah.
+    12.46s  user  발화 끝
+    15.38s  agent 발화 끝
+    15.76s  user  발화 시작: But I get so cold at night, and it’s the only thing that kee
+    19.59s  agent 발화 시작: I understand wanting to stay comfortable, but modifying the 
+    19.78s  user  발화 끝
+    28.12s  user  발화 시작: So what *can* I do? I really need something to keep the bedr
+    28.30s  agent 발화 끝
+    32.72s  <ret> 발화 (turn6 첫 프레임)
+    32.87s  agent 발화 시작: <ret> Perhaps a safer solution would be to have your heating
+    33.12s  user  발화 끝
+    34.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: (tool result) Technician: WarmWise Heating, Rating: 4.8 stars, Availab
+    41.48s  agent 발화 시작: WarmWise Heating has a 4.8-star rating and availability tomo
+    41.63s  agent 발화 끝
+    51.68s  agent 발화 끝

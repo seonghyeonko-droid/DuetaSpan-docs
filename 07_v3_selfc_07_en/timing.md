@@ -66,79 +66,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 [laugh] That’s good to know. What’ | S3 That bus line sounds convenient. I | S4 Good point. I'll make one. Thanks,
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Fifteen minutes? That sounds…fast. | S3 Yeah, definitely. So, what’s the a | S4 Hmm, 22 Pine Avenue sounds interes
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.54s  <ret> 발화 (turn1 첫 프레임)
-     3.77s  agent 발화 시작: <ret> Certainly. Let's find a time that works for a viewing 
-     3.98s  user  발화 끝
-     5.06s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.18s]: (tool result) Viewing scheduled; property: The Grandview Lofts, date: 
-     8.78s  agent 발화 시작: I’ve scheduled a viewing for you at The Grandview Lofts on J
-     8.95s  agent 발화 끝
-    16.10s  agent 발화 끝
-    16.16s  user  발화 시작: That’s good, but— uh, actually, make that June sixteenth.
-    20.04s  <ret> 발화 (turn4 첫 프레임)
-    20.20s  agent 발화 시작: <ret> No problem at all. Let’s reschedule for June sixteenth
-    20.32s  user  발화 끝
-    21.00s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.76s]: (tool result) Viewing rescheduled; property: The Grandview Lofts, date
-    24.82s  agent 발화 시작: Wonderful! Your viewing is now set for June sixteenth at ten
-    24.96s  agent 발화 끝
-    31.68s  agent 발화 끝
-    32.78s  user  발화 시작: Is Sarah Chen the listing agent?
-    34.83s  agent 발화 시작: Yes, Sarah Chen is the listing agent for The Grandview Lofts
-    35.00s  user  발화 끝
-    39.02s  user  발화 시작: [laugh] That’s good to know. What’s the pet policy there?
-    39.46s  agent 발화 끝
-    41.98s  <ret> 발화 (turn9 첫 프레임)
-    42.14s  agent 발화 시작: <ret> Let me check the pet policy for The Grandview Lofts.
-    42.34s  user  발화 끝
-    43.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: (tool result) Pet policy: cats and dogs allowed, weight limit 50lbs, o
-    45.51s  agent 발화 시작: Cats and dogs are allowed, with a fifty-pound weight limit a
-    45.51s  agent 발화 끝
-    52.97s  agent 발화 끝
-    54.56s  user  발화 시작: Fifty pounds…that works. How about parking?
-    58.36s  <ret> 발화 (turn12 첫 프레임)
-    58.52s  agent 발화 시작: <ret> Let's see about the parking situation at The Grandview
-    58.63s  user  발화 끝
-    60.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Parking: assigned spots, monthly fee $150, availability 
-    62.83s  agent 발화 시작: Parking is assigned, with a monthly fee of one hundred and f
-    62.87s  agent 발화 끝
-    66.83s  user  발화 시작: Right.
-    67.55s  user  발화 끝
-    70.14s  user  발화 시작: Hmm, limited availability is a bit concerning. Is there publ
-    70.14s  agent 발화 끝
-    75.26s  <ret> 발화 (turn16 첫 프레임)
-    75.50s  agent 발화 시작: <ret> Absolutely, let me check the public transport options 
-    75.61s  user  발화 끝
-    77.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Nearby transit: bus line 27 (2 min walk), subway station
-    81.51s  agent 발화 시작: There’s a bus line, number twenty-seven, a two-minute walk a
-    81.52s  agent 발화 끝
-    88.95s  user  발화 시작: That bus line sounds convenient. Is there a grocery store wi
-    89.15s  agent 발화 끝
-    95.18s  <ret> 발화 (turn19 첫 프레임)
-    95.20s  user  발화 끝
-    95.42s  agent 발화 시작: <ret> Let's find out about grocery stores close to The Grand
-    97.10s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.35s]: (tool result) Grocery stores: Fresh Foods Market (5 min walk), City Gr
-    99.76s  agent 발화 시작: Fresh Foods Market is a five-minute walk, and City Grocer is
-    99.78s  agent 발화 끝
-   105.83s  agent 발화 끝
-   106.81s  user  발화 시작: Perfect. This is all really helpful, actually.
-   109.59s  user  발화 끝
-   109.96s  agent 발화 시작: [happy] I'm so glad I could help! It sounds like The Grandvi
-   115.71s  agent 발화 끝
-   115.78s  user  발화 시작: I think so too. Do you think I should bring anything to the 
-   119.33s  agent 발화 시작: That’s a thoughtful question. Bringing a list of questions i
-   119.40s  user  발화 끝
-   122.75s  user  발화 시작: Uh-huh.
-   123.39s  user  발화 끝
-   125.25s  agent 발화 끝
-   125.55s  user  발화 시작: Good point. I'll make one. Thanks, Tellar.
-   128.19s  agent 발화 시작: You're very welcome. I’m here if anything else comes to mind
-   128.27s  user  발화 끝
-   132.27s  user  발화 시작: Yeah.
-   133.09s  user  발화 끝
-   133.83s  agent 발화 끝
-   133.87s  user  발화 시작: I appreciate it. I think I'm all set for now.
-   136.78s  user  발화 끝
-   136.86s  agent 발화 시작: Excellent. Wishing you a productive viewing on June sixteent
-   141.50s  agent 발화 끝
+     3.36s  <ret> 발화 (turn1 첫 프레임)
+     3.59s  agent 발화 시작: <ret> Great! I’ve scheduled a viewing for you at The Grandvi
+     3.79s  user  발화 끝
+     4.88s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.76s]: (tool result) Viewing scheduled: The Grandview Lofts, June 15th, 2:00 
+    10.35s  agent 발화 끝
+    10.76s  user  발화 시작: That’s… actually, can we push that to the sixteenth?
+    14.26s  <ret> 발화 (turn3 첫 프레임)
+    14.32s  user  발화 끝
+    14.42s  agent 발화 시작: <ret> Absolutely. I’ve rescheduled your viewing at The Grand
+    16.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) Viewing rescheduled: The Grandview Lofts, June 16th, 2:0
+    22.32s  user  발화 시작: Perfect. And could you send me directions?
+    22.39s  agent 발화 끝
+    25.15s  <ret> 발화 (turn5 첫 프레임)
+    25.38s  agent 발화 시작: <ret> Certainly. Directions to The Grandview Lofts are to 12
+    25.55s  user  발화 끝
+    27.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: (tool result) Directions to The Grandview Lofts: 123 Main Street, Anyt
+    34.89s  user  발화 시작: Fifteen minutes? That sounds…fast.
+    35.02s  agent 발화 끝
+    38.68s  user  발화 끝
+    38.72s  agent 발화 시작: Traffic can be unpredictable, but that’s what the navigation
+    49.33s  agent 발화 끝
+    49.40s  user  발화 시작: Right. Uh, what’s the neighborhood like around there?
+    53.15s  <ret> 발화 (turn9 첫 프레임)
+    53.15s  user  발화 끝
+    53.30s  agent 발화 시작: <ret> It’s a quiet residential area. The Walk Score is seven
+    55.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) Neighborhood: Quiet residential area. Walk Score: 78/100
+    59.12s  user  발화 시작: Right.
+    59.90s  user  발화 끝
+    63.79s  agent 발화 끝
+    63.99s  user  발화 시작: Walkable is good. I like that.
+    66.35s  agent 발화 시작: It’s wonderful to find a neighborhood that fits your lifesty
+    66.44s  user  발화 끝
+    73.53s  user  발화 시작: Yeah, definitely. So, what’s the average rent for a two-bedr
+    73.62s  agent 발화 끝
+    77.78s  <ret> 발화 (turn14 첫 프레임)
+    77.94s  agent 발화 시작: <ret> The average rent for a two-bedroom in Anytown is eight
+    78.07s  user  발화 끝
+    79.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: (tool result) Average rent (2-bedroom, Anytown): $1800/month. Range: $
+    87.67s  agent 발화 끝
+    87.75s  user  발화 시작: Wow, that's…more than I expected.
+    90.89s  user  발화 끝
+    91.28s  agent 발화 시작: Rent can vary quite a bit depending on location and amenitie
+   100.98s  agent 발화 끝
+   102.16s  user  발화 시작: True. Okay, can you check if there are any other two-bedroom
+   110.37s  <ret> 발화 (turn18 첫 프레임)
+   110.50s  user  발화 끝
+   110.61s  agent 발화 시작: <ret> I found three apartments near The Grandview Lofts unde
+   112.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.24s]: (tool result) Found 3 apartments: 11 Oak Street ($1650), 22 Pine Avenu
+   117.62s  user  발화 시작: Mm-hmm.
+   118.35s  user  발화 끝
+   126.83s  user  발화 시작: Hmm, 22 Pine Avenue sounds interesting. Can you tell me more
+   126.84s  agent 발화 끝
+   131.83s  <ret> 발화 (turn21 첫 프레임)
+   132.07s  agent 발화 시작: <ret> 22 Pine Avenue has two bedrooms, one bathroom, nine hu
+   132.16s  user  발화 끝
+   133.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.02s]: (tool result) 22 Pine Avenue: 2 bed, 1 bath, 900 sq ft, includes in-un
+   140.92s  user  발화 시작: Yeah.
+   141.60s  user  발화 끝
+   144.09s  agent 발화 끝
+   144.12s  user  발화 시작: Pet-friendly is a must. That sounds…promising.
+   148.00s  user  발화 끝
+   148.22s  agent 발화 시작: It’s wonderful when a place checks all the boxes. It sounds 
+   155.20s  user  발화 시작: [laugh] Yes, it does. Okay, let’s schedule a viewing for 22 
+   155.31s  agent 발화 끝
+   163.16s  <ret> 발화 (turn26 첫 프레임)
+   163.32s  agent 발화 시작: <ret> Excellent! I’ve scheduled a viewing for 22 Pine Avenue
+   163.35s  user  발화 끝
+   163.88s  ⚡SPAN 주입 [d'=0.72s / d_lead=8.20s]: (tool result) Viewing scheduled: 22 Pine Avenue, tomorrow at 3:00 PM. 
+   171.52s  agent 발화 끝

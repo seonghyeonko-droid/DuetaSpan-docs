@@ -58,51 +58,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 혹시 독일 국기 색깔이 뭐였더라? 까먹었네. | S2 오, 그렇구나. 혁명 때의 색깔이었구나. [laugh] 근데  | S3 벨기에 국기도 그렇다니 신기하네. 근데 독일 국기는 언제부터  | S4 와, 진짜 의미가 깊네. 역시 국기는 단순한 게 아니구나.
+# EXAMINER(FDB-v2) 단계: S1 음… 혹시 독일 국기 색깔이 뭐예요? 까먹었나 봐. | S2 쉬는 건 좋죠. 근데 뭔가 동기 부여가 안 돼. 다른 나라 국 | S3 오, 알겠어요. 빨강, 노랑, 빨강. 근데 독일 국기는 뭔가  | S4 아하, 그런 배경이 있었군요! 신기하네요.
 
-     0.00s  user  발화 시작: 음… 혹시 독일 국기 색깔이 뭐였더라? 까먹었네.
-     3.94s  <ret> 발화 (turn1 첫 프레임)
-     4.00s  agent 발화 시작: <ret> 독일 국기는 검은색과 빨간색, 그리고 노란색으로 이루어져 있어요.
-     4.21s  user  발화 끝
-     5.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [source: Britannica] The national flag of Germany consists of three eq
-     8.86s  agent 발화 시작: 독일 국기는 검정, 빨강, 금색 세 가지 가로 줄무늬로 되어 있어요.
-     8.87s  agent 발화 끝
-    14.38s  user  발화 시작: 아, 맞다! 검빨노! 근데 그 세 가지 색깔이 무슨 의미가 있는 거야?
-    14.46s  agent 발화 끝
-    18.82s  <ret> 발화 (turn4 첫 프레임)
-    18.96s  agent 발화 시작: <ret> 그건 아주 흥미로운 질문이에요. 독일 국기 색깔은 역사적인 배경을 가지고 있어요.
-    19.19s  user  발화 끝
-    20.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: [source: History.com] The colors black, red, and gold were adopted dur
-    25.00s  agent 발화 시작: 그 색깔들은 천팔백사십팔년 혁명 때 자유를 상징하며 채택되었대요.
-    25.07s  agent 발화 끝
-    28.82s  user  발화 시작: 응.
-    29.32s  user  발화 끝
-    30.65s  agent 발화 끝
-    30.70s  user  발화 시작: 오, 그렇구나. 혁명 때의 색깔이었구나. [laugh] 근데 다른 나라 국기도 비슷한 색깔 쓰는 곳 있어?
-    38.07s  <ret> 발화 (turn8 첫 프레임)
-    38.21s  agent 발화 시작: <ret> 다른 나라 국기에도 비슷한 색 조합을 사용하는 경우가 있어요. 벨기에 국기도 검은색, 노란색, 빨
-    38.30s  user  발화 끝
-    40.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: [source: Flags of the World] The flag of Belgium is composed of three 
-    46.70s  agent 발화 시작: 벨기에 국기는 검정색, 노란색, 빨간색 세 개의 세로 줄무늬로 구성되어 있어요.
-    46.78s  agent 발화 끝
-    52.55s  user  발화 시작: 벨기에 국기도 그렇다니 신기하네. 근데 독일 국기는 언제부터 사용했어?
-    52.82s  agent 발화 끝
-    57.69s  <ret> 발화 (turn11 첫 프레임)
-    58.08s  agent 발화 시작: <ret> 독일 국기의 역사는 꽤 오래되었어요. 그 국기는 천팔백사십팔년에 처음 독일의 상징으로 사용되었고,
-    58.24s  user  발화 끝
-    58.89s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.65s]: [source: German Federal Foreign Office] The black-red-gold flag was fi
-    68.76s  user  발화 시작: 천팔백사십팔년부터였다니! 엄청 오래됐네. 혹시 그 국기 디자인에 특별한 의미가 숨어있는 건가?
-    69.02s  agent 발화 끝
-    77.02s  <ret> 발화 (turn13 첫 프레임)
-    77.09s  agent 발화 시작: <ret> 디자인 자체에도 의미가 담겨있다고 해요. 각 색깔이 독일 국민의 단결과 자유, 그리고 정의를 나타
-    77.24s  user  발화 끝
-    79.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.73s]: [source: DW] The colors of the German flag symbolize unity, freedom, a
-    84.68s  agent 발화 시작: 그 색깔들은 독일 국민의 단결, 자유, 정의를 상징한다고 해요.
-    84.82s  agent 발화 끝
-    86.96s  user  발화 시작: 그래.
-    87.73s  user  발화 끝
-    89.61s  user  발화 시작: 와, 진짜 의미가 깊네. 역시 국기는 단순한 게 아니구나.
-    89.69s  agent 발화 끝
-    93.74s  agent 발화 시작: 맞아요. 국기는 그 나라의 역사와 문화를 담고 있는 중요한 상징이랍니다.
-    93.91s  user  발화 끝
-    98.78s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 혹시 독일 국기 색깔이 뭐예요? 까먹었나 봐.
+     4.42s  <ret> 발화 (turn1 첫 프레임)
+     4.49s  agent 발화 시작: <ret> 독일 국기는 검은색, 빨간색, 그리고 노란색으로 이루어져 있어요.
+     4.68s  user  발화 끝
+     6.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Britannica] The national flag of Germany consists of three eq
+     9.09s  agent 발화 시작: 독일 국기는 검정색, 빨간색, 금색 가로 줄무늬 세 개로 구성되어 있답니다.
+     9.21s  agent 발화 끝
+    14.91s  user  발화 시작: 아, 그렇군요. 근데 요즘 공부에 좀 집중이 안 돼요. [sigh]
+    15.02s  agent 발화 끝
+    18.97s  agent 발화 시작: 공부에 집중이 안 되는 건 흔한 일이에요. 잠깐 쉬어가면서 다시 시작해 보는 건 어떨까요?
+    19.12s  user  발화 끝
+    22.14s  user  발화 시작: 응응.
+    23.15s  user  발화 끝
+    25.90s  user  발화 시작: 쉬는 건 좋죠. 근데 뭔가 동기 부여가 안 돼. 다른 나라 국기는 어때요? 예를 들어… 스페인 국기는 무슨 
+    25.93s  agent 발화 끝
+    34.61s  <ret> 발화 (turn7 첫 프레임)
+    34.84s  agent 발화 시작: <ret> 다른 나라 국기를 보는 것도 기분 전환이 될 수 있겠네요. 스페인 국기는 빨간색, 노란색, 빨간색
+    34.84s  user  발화 끝
+    36.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.46s]: [source: WorldAtlas] The flag of Spain is characterized by three horiz
+    46.43s  agent 발화 끝
+    46.49s  user  발화 시작: 오, 알겠어요. 빨강, 노랑, 빨강. 근데 독일 국기는 뭔가 좀 더… 역사적인 느낌이 드는 것 같아요.
+    55.05s  agent 발화 시작: 독일 국기에 그런 느낌을 받으셨다니 흥미롭네요. 혹시 특별한 이유가 있으신가요?
+    55.20s  user  발화 끝
+    60.11s  user  발화 시작: 그냥… 뭔가 좀 더 깊이 있는 역사가 느껴진다고 해야 하나? 독일 국기 디자인에 특별한 의미가 있나요?
+    60.24s  agent 발화 끝
+    67.84s  <ret> 발화 (turn11 첫 프레임)
+    68.00s  agent 발화 시작: <ret> 디자인에는 항상 의미가 숨어 있죠. 독일 국기 색상은 나폴레옹 전쟁 당시 뤼초 자유군단의 유니폼에
+    68.21s  user  발화 끝
+    69.44s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.01s]: [source: History.com] The colors of the German flag are derived from t
+    76.83s  user  발화 시작: 아하, 그런 배경이 있었군요! 신기하네요.
+    77.03s  agent 발화 끝
+    80.75s  agent 발화 시작: 역사를 알고 보면 더 흥미롭게 느껴지죠. 혹시 지금 공부하고 있는 과목에 대해서도 이야기해 볼까요?
+    80.85s  user  발화 끝
+    87.24s  agent 발화 끝

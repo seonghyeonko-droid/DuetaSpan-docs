@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 세재, it's lovely to connect with you. I’m Aril, and I help pe
-     7.74s  agent 발화 끝
-     7.83s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a bit lost lat
-    13.08s  agent 발화 시작: It’s understandable to feel lost sometimes, 세재. What feels m
-    13.19s  user  발화 끝
-    15.93s  user  발화 시작: Wow.
-    16.75s  user  발화 끝
-    20.83s  agent 발화 끝
-    21.57s  user  발화 시작: Well, I moved here from Busan a year ago, and it’s hard maki
-    28.94s  user  발화 끝
-    29.15s  agent 발화 시작: It absolutely makes sense you’d miss your friends from Busan
-    37.91s  agent 발화 끝
+     0.00s  agent 발화 시작: 세재, it’s wonderful to connect with you. I’m Aril, and I help
+     7.69s  agent 발화 끝
+     7.76s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a little lost,
+    14.88s  agent 발화 시작: It absolutely is brave of you to acknowledge that, 세재. Many 
+    14.98s  user  발화 끝
+    18.50s  user  발화 시작: Wow.
+    19.32s  user  발화 끝
+    24.66s  agent 발화 끝
+    25.18s  user  발화 시작: Uh, well, I moved here from Busan last year, and… I don’t re
+    33.53s  user  발화 끝
+    33.76s  agent 발화 시작: A big move like that can definitely create feelings of isola
+    43.45s  agent 발화 끝

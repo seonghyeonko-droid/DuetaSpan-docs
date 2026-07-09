@@ -60,25 +60,33 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.59s][moshi] ⟨ret@4.52s⟩ Certainly. I’ll ⟦⚡SPAN@5.80s: (tool result) map_id: 789234; url: https://www.apple.com; pages_found: 42; product_pages: 28; depth: 3⟧ generate a site map for Apple’s website, highlighting all product pages.
+[  4.79s][moshi] Certainly. I can generate a sitemap for Apple’s website, highlighting the product sections—
+[ 10.41s][moshi] ⟨ret@10.17s⟩ Apple’s product ⟦⚡SPAN@12.17s: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & Home, Entertainment, Accessories. Suppor⟧ sections include iPhone, iPad, Mac, Apple Watch, AirPods, and more.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
-[ 10.38s][moshi] I’ve mapped the Apple website, identifying forty-two pages, with twenty-eight dedicated to products.
 [ 13.14s][user ] «backchannel» Okay.
-[ 17.16s][user ] Twenty-eight? That seems… low. Are you sure it got ⟨ret@21.67s⟩ everything?
-[ 21.91s][moshi] It’s possible some ⟦⚡SPAN@23.67s: (tool result) map_id: 789235; url: https://www.apple.com; pages_found: 65; product_pages: 35; depth: 5⟧ product pages are nested deeper or dynamically loaded. I can refine the search to increase the depth.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products", "depth": 5}}
-[ 30.41s][moshi] «interrupted» Yes, increasing the depth to five uncovered sixty-five pages, with thirty-five focused on products—
-[ 37.63s][user ] «interrupts_prev» …and does that include the refurbished section? I'm looking for deals.
-[ 42.44s][moshi] ⟨ret@42.36s⟩ A good question! ⟦⚡SPAN@44.36s: (tool result) map_id: 789236; url: https://www.apple.com; pages_found: 12; product_pages: 9; refurbished_link:⟧ The previous map didn't specifically isolate the refurbished section. Let's add that as a focus.
+[ 17.11s][user ] Hmm, that's good. Does it show where the refurbished products are listed?
+[ 21.22s][moshi] I can re-scan the Apple website to locate the refurbished products section—
+[ 26.73s][moshi] ⟨ret@26.33s⟩ Apple lists its ⟦⚡SPAN@28.33s: (tool result) Refurbished Products: Listed under “Apple Certified Refurbished” in the main navigation footer.⟧ certified refurbished products in the website’s main navigation footer.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "refurbished products"}}
-[ 50.85s][moshi] I found twelve pages related to refurbished products, nine of which directly list items. Here’s the link.
-[ 55.06s][user ] «backchannel» Uh-huh.
-[ 58.59s][moshi] Now, are you interested in a specific product category within the refurbished section, or a general overview?
-[ 61.62s][user ] «backchannel» Right.
-[ 66.16s][user ] Let's say I'm interested in a refurbished MacBook Pro. Can you check current ⟨ret@72.32s⟩ availability?
-[ 72.55s][moshi] There are refurbished ⟦⚡SPAN@74.32s: (tool result) availability: in_stock; models: MacBook Pro 13-inch M2 chip (2022), MacBook Pro 14-inch M1 Pro c⟧ MacBook Pros in stock, specifically the thirteen-inch M2 and fourteen-inch M1 Pro models, ranging from nine hundred ninety-nine to nineteen ninety-nine dollars.
-      CALL: {"function": "check-availability", "arguments": {"product": "MacBook Pro", "condition": "refurbished"}}
-[ 84.80s][user ] Okay, that's good to know. Can you set a reminder to check again ⟨ret@89.22s⟩ next week?
-[ 89.61s][moshi] Certainly. I’ve ⟦⚡SPAN@91.22s: (tool result) reminder_id: 456789; date: 2024-02-29 10:00; task: check refurbished MacBook Pro availability⟧ scheduled a reminder to recheck refurbished MacBook Pro availability next week.
-      CALL: {"function": "set-reminder", "arguments": {"date": "next week", "task": "check refurbished MacBook Pro availability"}}
-[ 96.39s][moshi] Your reminder is set for next week, February twenty-ninth at ten a.m., to check MacBook Pro availability.
+[ 28.91s][user ] «backchannel» Right.
+[ 32.26s][user ] Is there a separate map just for the support pages?
+[ 35.29s][moshi] That’s a great idea—
+[ 37.06s][moshi] ⟨ret@36.83s⟩ The Apple support ⟦⚡SPAN@38.83s: (tool result) Support Pages: Documentation, User Guides, Downloads, Troubleshooting, AppleCare, Repair, Contac⟧ site maps documentation, user guides, troubleshooting, and contact options.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/support", "focus": "all support pages"}}
+[ 40.26s][user ] «backchannel» Uh-huh.
+[ 42.93s][moshi] I find that mapping support pages is useful when you're planning to troubleshoot something— it's a bit like preparing for a journey.
+[ 50.15s][user ] Okay, that’s helpful. I'm thinking about getting a new iPad. Can you find me the current price of the iPad Air, 6th generation, with 256GB of storage?
+[ 62.03s][moshi] Absolutely. Let me check the current pricing for that configuration—
+[ 66.62s][moshi] ⟨ret@66.22s⟩ The iPad ⟦⚡SPAN@68.22s: (tool result) iPad Air (6th generation) 256GB: $699.00⟧ Air, 6th generation, with 256GB of storage currently costs six hundred and ninety-nine dollars.
+      CALL: {"function": "check-price", "arguments": {"product": "iPad Air (6th generation)", "storage": "256GB"}}
+[ 75.49s][user ] Six-ninety-nine… that’s more than I expected. Are there any current discounts or promotions on iPads?
+[ 82.46s][moshi] Let me check for active promotions on iPads—
+[ 85.84s][moshi] ⟨ret@85.68s⟩ Apple is currently offering ⟦⚡SPAN@87.68s: (tool result) iPad Promotions: $50 Apple Store gift card with purchase of select iPad models. Student discount⟧ a fifty-dollar gift card with select iPad purchases. Student discounts are also available.
+      CALL: {"function": "check-promotions", "arguments": {"product": "iPad"}}
+[ 94.16s][user ] Oh, a gift card! That’s good to know. Can you add a reminder to my calendar to check the Apple Store for iPad deals next week?
+[102.62s][moshi] Of course. What day and time would you like the reminder set for?
+[105.41s][user ] «backchannel» Yeah.
+[107.80s][user ] Next Tuesday at 2 PM.
+[110.42s][moshi] Certainly. I’ve set a reminder for next Tuesday at two PM to check for iPad deals at the Apple Store—
+[117.64s][moshi] ⟨ret@117.33s⟩ Your reminder is set ⟦⚡SPAN@119.33s: (tool result) Reminder set: Tuesday at 2:00 PM - Check Apple Store for iPad deals.⟧ for Tuesday at 2 PM to check for iPad deals.
+      CALL: {"function": "set-reminder", "arguments": {"date": "next Tuesday", "time": "2 PM", "task": "check Apple Store for iPad deals"}}

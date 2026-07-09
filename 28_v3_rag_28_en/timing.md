@@ -69,27 +69,19 @@
 # }
 
 
-     0.00s  user  발화 시작: So, I was reading about government departments, and it got m
-     8.55s  <ret> 발화 (turn1 첫 프레임)
-     8.87s  agent 발화 시작: <ret> That’s a good question, and a really important one whe
-     8.90s  user  발화 끝
-     9.67s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.51s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-    14.32s  agent 발화 시작: The Department of Veterans Affairs was established on July t
-    14.38s  agent 발화 끝
-    20.99s  user  발화 시작: Nineteen thirty? That seems… surprisingly recent. I always t
-    21.04s  agent 발화 끝
-    28.22s  <ret> 발화 (turn4 첫 프레임)
-    28.60s  agent 발화 시작: <ret> It is a bit later than many assume, yes. It evolved fr
-    28.77s  user  발화 끝
-    30.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.73s]: [source: VA.gov] Prior to 1930, veterans’ affairs were handled by the 
-    36.18s  agent 발화 시작: Before nineteen thirty, veterans’ affairs were handled by th
-    36.33s  agent 발화 끝
-    43.01s  user  발화 시작: So, the Bureau of Pensions was the main thing for a long tim
-    43.18s  agent 발화 끝
-    48.40s  <ret> 발화 (turn7 첫 프레임)
-    48.80s  agent 발화 시작: <ret> The Bureau of Pensions primarily administered pensions
-    48.99s  user  발화 끝
-    50.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: [source: National Archives] The Bureau of Pensions processed claims fo
-    57.23s  agent 발화 시작: The Bureau of Pensions processed claims for benefits related
-    57.42s  agent 발화 끝
-    65.63s  agent 발화 끝
+     0.00s  user  발화 시작: I was reading about government departments… when did the Vet
+     5.43s  <ret> 발화 (turn1 첫 프레임)
+     5.75s  agent 발화 시작: <ret> That’s a good question, understanding history helps us
+     5.93s  user  발화 끝
+     6.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.39s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    17.02s  agent 발화 끝
+    18.02s  user  발화 시작: Nineteen thirty? That seems… surprisingly recent. I thought 
+    25.40s  agent 발화 시작: It's true that support for veterans existed long before that
+    25.62s  user  발화 끝
+    30.96s  user  발화 시작: But if support existed before, what *was* it called before n
+    31.14s  agent 발화 끝
+    37.54s  <ret> 발화 (turn5 첫 프레임)
+    37.92s  agent 발화 시작: <ret> Before nineteen thirty, veteran benefits were spread a
+    38.04s  user  발화 끝
+    39.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.80s]: [source: VA.gov] Prior to 1930, veteran programs were administered by 
+    49.93s  agent 발화 끝

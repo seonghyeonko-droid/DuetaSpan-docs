@@ -58,31 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, I’m working on a project, and  | S2 Oh! Germany, right. I always get t | S3 Hmm, okay. What about Belgium? Doe | S4 So, Germany is horizontal and Belg
+# EXAMINER(FDB-v2) 단계: S1 So, uh, I’m working on a project,  | S2 Right, I figured. It’s for a histo | S3 Oh! Germany! Yes, that’s it. I kne | S4 Yeah, you’re right. It's just… som
 
-     0.00s  user  발화 시작: So, I’m working on a project, and I need to identify a flag.
-     8.95s  user  발화 끝
-     9.05s  agent 발화 시작: That’s a good starting point for identifying a flag! Many na
-    16.46s  agent 발화 끝
-    17.13s  user  발화 시작: Yeah, uh, I was also trying a new coffee shop this morning— 
-    25.23s  <ret> 발화 (turn3 첫 프레임)
-    25.47s  agent 발화 시작: <ret> The flag of Germany is composed of three horizontal ba
-    25.62s  user  발화 끝
-    27.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.22s]: [source: Britannica] The flag of Germany features three horizontal ban
-    28.22s  user  발화 시작: Right.
-    28.72s  user  발화 끝
-    31.44s  agent 발화 끝
-    32.33s  user  발화 시작: Oh! Germany, right. I always get those central European flag
-    39.46s  user  발화 끝
-    39.47s  agent 발화 시작: It’s easy to confuse them, they share some similarities. Man
-    46.79s  agent 발화 끝
-    48.23s  user  발화 시작: Hmm, okay. What about Belgium? Does their flag have those co
-    54.71s  <ret> 발화 (turn8 첫 프레임)
-    55.03s  agent 발화 시작: <ret> Yes, Belgium's flag also includes those colors. The Be
-    55.14s  user  발화 끝
-    56.55s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.23s]: [source: Flags of the World] The Belgian flag consists of three vertic
-    64.26s  agent 발화 끝
-    64.71s  user  발화 시작: So, Germany is horizontal and Belgium is vertical… that’s a 
-    72.48s  agent 발화 시작: You’re very welcome! Remembering the orientation is a smart 
-    72.54s  user  발화 끝
-    77.81s  agent 발화 끝
+     0.00s  user  발화 시작: So, uh, I’m working on a project, and I need to identify a f
+     8.76s  user  발화 끝
+     8.88s  agent 발화 시작: That's a good starting point for identifying a flag! Many na
+    16.48s  agent 발화 끝
+    17.00s  user  발화 시작: Right, I figured. It’s for a history assignment, actually. I
+    23.90s  <ret> 발화 (turn3 첫 프레임)
+    24.14s  agent 발화 시작: <ret> The flag of Germany is comprised of horizontal bands o
+    24.28s  user  발화 끝
+    25.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: [source: Britannica] The flag of Germany features three horizontal ban
+    26.45s  user  발화 시작: Right.
+    27.09s  user  발화 끝
+    29.22s  agent 발화 끝
+    30.06s  user  발화 시작: Oh! Germany! Yes, that’s it. I knew it was European, but my 
+    37.52s  user  발화 끝
+    37.54s  agent 발화 시작: It happens to the best of us! Sometimes a little nudge is al
+    43.33s  agent 발화 끝
+    44.78s  user  발화 시작: Yeah, you’re right. It's just… sometimes all the dates and n
+    53.56s  <ret> 발화 (turn8 첫 프레임)
+    53.88s  agent 발화 시작: <ret> Actually, Germany’s flag has a surprisingly interestin
+    53.96s  user  발화 끝
+    55.40s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.52s]: [source: History.com] The black, red, and gold tricolor was first used
+    64.87s  agent 발화 끝

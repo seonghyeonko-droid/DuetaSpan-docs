@@ -50,49 +50,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 That’s…interesting! Did they write | S3 I wonder what they’re up to now. | S4 Oh, so he’s connected to Mamma Mia
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Mamma Mia  | S2 Do you know if he wrote any other  | S3 Wow, so it was a real collaboratio | S4 It is. I’m trying to find some goo
 
-     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
-     5.49s  <ret> 발화 (turn1 첫 프레임)
-     5.65s  user  발화 끝
-     5.73s  agent 발화 시작: <ret> It is a lovely piece, isn’t it? The song was written b
-     7.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: [source: Britannica] Björn Ulvaeus is a Swedish singer, songwriter, an
-    10.17s  agent 발화 끝
-    10.18s  agent 발화 시작: Björn Ulvaeus wrote the song as part of his work with the gr
-    14.06s  agent 발화 끝
-    14.48s  user  발화 시작: Oh, ABBA! I always forget it was them. Were they all Swedish
-    18.92s  <ret> 발화 (turn4 첫 프레임)
-    19.08s  agent 발화 시작: <ret> Yes, they were all Swedish — Agnetha Fältskog, Björn U
-    19.11s  user  발화 끝
-    20.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: [source: Official ABBA website] ABBA consisted of two married couples:
-    26.04s  agent 발화 시작: ABBA’s lineup included Agnetha, Björn, Benny, and Anni-Frid,
-    26.21s  agent 발화 끝
-    31.93s  agent 발화 끝
-    32.31s  user  발화 시작: That’s…interesting! Did they write all their own songs?
-    35.91s  <ret> 발화 (turn7 첫 프레임)
-    36.15s  agent 발화 시작: <ret> They primarily wrote their own songs, with Benny and B
-    36.33s  user  발화 끝
-    37.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: [source: Rolling Stone] Benny Andersson and Björn Ulvaeus were respons
-    41.52s  agent 발화 시작: Benny Andersson and Björn Ulvaeus wrote most of ABBA’s well-
-    41.61s  agent 발화 끝
-    46.05s  agent 발화 끝
-    46.15s  user  발화 시작: I wonder what they’re up to now.
-    47.48s  <ret> 발화 (turn10 첫 프레임)
-    47.55s  agent 발화 시작: <ret> [sigh] They've all pursued various projects since ABBA
-    47.76s  user  발화 끝
-    48.92s  ⚡SPAN 주입(IRRELEVANT) [d'=1.44s / d_lead=4.35s]: (tool result) AAPL: 170.34 USD, +0.89, 0.53%
-    51.90s  agent 발화 끝
-    51.91s  user  발화 시작: Like what, specifically?
-    53.56s  <ret> 발화 (turn12 첫 프레임)
-    53.87s  agent 발화 시작: <ret> Björn Ulvaeus has been involved in musical theatre, in
-    53.94s  user  발화 끝
-    54.92s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.74s]: [source: The Guardian] Björn Ulvaeus co-wrote the musical *Chess* and 
-    59.53s  agent 발화 시작: Björn Ulvaeus co-wrote *Chess* and helped develop *Mamma Mia
-    59.60s  agent 발화 끝
-    61.83s  user  발화 시작: Yeah.
-    62.55s  user  발화 끝
-    65.00s  agent 발화 끝
-    65.54s  user  발화 시작: Oh, so he’s connected to Mamma Mia in more ways than one! Th
-    70.83s  agent 발화 시작: It certainly does. It’s wonderful when an artist’s vision co
-    70.96s  user  발화 끝
-    76.15s  agent 발화 끝
+     0.00s  user  발화 시작: I was just listening to Mamma Mia and I’m wondering, who wro
+     7.00s  user  발화 끝
+     7.03s  <ret> 발화 (turn1 첫 프레임)
+     7.27s  agent 발화 시작: <ret> That’s a lovely song to ask about. It really captures 
+     9.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Wikipedia] “My Love, My Life” was written by Björn Ulvaeus.
+    11.98s  agent 발화 시작: Björn Ulvaeus wrote “My Love, My Life” for the musical *Mamm
+    11.99s  agent 발화 끝
+    16.51s  agent 발화 끝
+    16.96s  user  발화 시작: Oh, Björn Ulvaeus! I knew he was involved with ABBA, but I d
+    24.14s  user  발화 끝
+    24.25s  agent 발화 시작: It’s common for songwriters to explore different creative av
+    30.50s  user  발화 시작: Do you know if he wrote any other songs for Mamma Mia?
+    30.60s  agent 발화 끝
+    33.32s  <ret> 발화 (turn6 첫 프레임)
+    33.71s  agent 발화 시작: <ret> Björn Ulvaeus, along with Benny Andersson, wrote all t
+    33.87s  user  발화 끝
+    35.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: [source: Mamma Mia! official website] Björn Ulvaeus and Benny Andersso
+    38.80s  agent 발화 끝
+    38.94s  user  발화 시작: Wow, so it was a real collaboration between the two of them.
+    42.77s  <ret> 발화 (turn8 첫 프레임)
+    43.09s  agent 발화 시작: <ret> A strong partnership can lead to wonderful results, an
+    43.24s  user  발화 끝
+    43.27s  ⚡SPAN 주입(IRRELEVANT) [d'=0.50s / d_lead=5.05s]: (tool result) AAPL: 170.34 USD +0.45 (0.26%)
+    48.14s  agent 발화 끝
+    48.23s  user  발화 시작: It sounds like settling into a new city can be a lot like co
+    56.09s  agent 발화 시작: [happy] That’s a really insightful comparison. Finding your 
+    56.25s  user  발화 끝
+    58.63s  user  발화 시작: Yeah.
+    59.12s  user  발화 끝
+    62.16s  agent 발화 끝
+    62.16s  user  발화 시작: It is. I’m trying to find some good live music venues, actua
+    67.62s  user  발화 끝
+    67.67s  agent 발화 시작: I can definitely help with that. To give you the best sugges
+    74.15s  agent 발화 끝

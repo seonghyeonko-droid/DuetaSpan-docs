@@ -69,38 +69,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Casey, I’m Diolo. It’s lovely to connect with you. How are you doing today?
-[  3.35s][user ] «backchannel» Yeah, yeah.
-[  5.01s][user ] I’m alright, just wondering what time it is.
-[  7.61s][moshi] ⟨ret@7.46s⟩ Knowing the ⟦⚡SPAN@8.98s: [2026-07-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ time helps ground us, doesn't it? It’s currently 2:47 PM Eastern Daylight Time in New York.
-[ 12.32s][user ] «backchannel» Yeah.
-[ 16.47s][user ] Oh, good. I need to remember to start my sourdough starter tonight.
-[ 20.18s][moshi] Sourdough is such a rewarding process. It takes patience, but the flavor is worth it.
-[ 25.75s][user ] Yeah, it is. I’m trying to get better at it, but sometimes it just… doesn’t rise.
-[ 30.36s][moshi] That can be frustrating! Home fermentation can be a bit unpredictable.
-[ 32.47s][user ] «backchannel» Yeah, yeah.
-[ 35.49s][user ] It really is. I think I need to check the temperature in my kitchen. Is it warm enough?
-[ 39.86s][moshi] A consistent temperature is key. What temperature range are you aiming for with your starter?
-[ 45.42s][user ] Uh, I think around seventy-five degrees ⟨ret@48.61s⟩ Fahrenheit.
-[ 48.92s][moshi] That's a good ⟦⚡SPAN@50.45s: (tool result) Current temperature: 72°F; Humidity: 65%; Feels like: 73°F.⟧ target temperature for sourdough. Currently, your kitchen is seventy-two degrees Fahrenheit.
-[ 56.71s][user ] Oh, that’s close. Maybe I should move it to a warmer spot.
-[ 60.28s][moshi] That’s a good idea. A slightly warmer spot could give it the boost it needs.
-[ 65.41s][user ] Right. Hey, do you remember that restaurant we talked about? The one with the ⟨ret@69.25s⟩ outdoor seating?
-[ 69.46s][moshi] Of ⟦⚡SPAN@70.21s: [2026-07-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ course, I recall our discussion about finding a restaurant. We were looking for a place with outdoor seating for a party of six.
-[ 78.00s][user ] Do you think they’ll be busy on Saturday?
-[ 79.91s][moshi] That's a smart thing to consider.
-[ 83.55s][user ] Yeah, I— I mean, it *is* a Saturday night.
-[ 86.15s][moshi] Saturday evenings are generally quite popular. Would you like me to check availability?
-[ 93.96s][user ] Yes, please! That would be great.
-[ 96.42s][moshi] ⟨ret@96.34s⟩ Bella ⟦⚡SPAN@97.30s: (tool result) Restaurant: Bella Vista; Availability: Saturday 8:00 PM, 8:30 PM; Outdoor seating: Confirmed.⟧ Vista has openings at eight and eight-thirty on Saturday, with outdoor seating.
-      CALL: {"function": "check_restaurant_availability", "arguments": {"restaurant_name": "unspecified", "date": "Saturday", "party_size": "6", "outdoor_seating": "yes", "city": "New York"}}
-[101.65s][user ] Oh, perfect! Eight o’clock sounds good. Can you book that for me?
-[105.25s][moshi] ⟨ret@105.18s⟩ Absolutely, I ⟦⚡SPAN@106.14s: (tool result) Booking confirmed: Bella Vista, Saturday 8:00 PM, party of 6, outdoor seating. Confirmation numb⟧ can take care of that for you. Your reservation at Bella Vista is confirmed for Saturday at eight, party of six.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant_name": "Bella Vista", "date": "Saturday", "time": "8:00 PM", "party_size": "6", "outdoor_seating": "yes", "city": "New York"}}
-[107.62s][user ] «backchannel» Yeah.
-[113.34s][user ] Wonderful! Thank you so much, Diolo.
-[115.50s][moshi] You’re very welcome, Casey. I’m glad I could help. Is there anything else I can assist with?
-[119.95s][user ] Actually, yes. I’m trying to remember if Rusty has his yearly vet appointment ⟨ret@124.24s⟩ soon.
-[124.53s][moshi] ⟦⚡SPAN@124.74s: [2026-05-11] User has a Beagle named Rusty.⟧ Of course, remembering Rusty’s appointments is important. You have a Beagle named Rusty, but I don’t have a record of a vet appointment.
-[131.91s][user ] Oh, you’re right. I need to schedule that.
-[133.87s][moshi] I can help with that if you’d like. We can look for a vet nearby.
+[  0.00s][moshi] Hi Casey, I'm Diolo. It's lovely to connect with you. How are you doing today?
+[  3.71s][user ] «backchannel» Yeah, yeah.
+[  5.49s][user ] I’m okay, just wondering what time it is right now.
+[  8.42s][moshi] ⟨ret@8.27s⟩ Knowing the ⟦⚡SPAN@9.47s: [2026-07-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ time helps structure the day… It’s currently 2:17 PM in New York.
+[ 11.95s][user ] «backchannel» Yeah.
+[ 15.41s][user ] Oh, good. I was hoping to get some fermentation started this afternoon.
+[ 19.20s][moshi] That sounds wonderful! Fermentation is such a rewarding hobby, really grounding.
+[ 24.89s][user ] Yeah, it is. I’m trying to decide what to make, though… maybe kimchi?
+[ 29.62s][moshi] Kimchi is a fantastic choice! It’s a bit of a project, but so flavorful.
+[ 32.10s][user ] «backchannel» Yeah, yeah.
+[ 35.45s][user ] I’m a little worried about the spice level, though. I don’t want it *too* hot.
+[ 39.49s][moshi] That’s wise to consider. You can always adjust the gochugaru—the chili flakes—to your preference.
+[ 45.40s][user ] Right. And I need to remember I’m gluten-free when I’m checking ⟨ret@48.27s⟩ ingredients.
+[ 48.59s][moshi] It’s so ⟦⚡SPAN@49.88s: [2026-06-24] User is gluten-free.⟧ important to be mindful of dietary needs… Yes, you are gluten-free. Be sure to use gluten-free gochujang.
+[ 57.74s][user ] Good point! I always forget to double-check the gochujang.
+[ 61.10s][moshi] It’s easy to overlook those details. Planning ahead helps a lot, doesn’t it?
+[ 66.26s][user ] It does. I also need to remember Rusty needs a walk ⟨ret@69.64s⟩ later.
+[ 69.87s][moshi] A ⟦⚡SPAN@70.60s: [2026-05-11] User has a Beagle named Rusty.⟧ happy pet makes for a happy home… Rusty the Beagle will certainly appreciate a walk this afternoon!
+[ 75.71s][user ] He’s been giving me the eyes all afternoon, actually.
+[ 78.33s][user ] I was also thinking about dinner. I’m craving sushi.
+[ 81.75s][moshi] That sounds delicious! Sushi is always a good idea.
+[ 85.50s][moshi] ⟨ret@85.26s⟩ ⟦⚡SPAN@85.76s: [2026-07-23] User's favorite cuisine is sushi.⟧ Your tastes are excellent… Sushi is your favorite cuisine, so that’s a wonderful choice for dinner.
+[ 93.01s][user ] I’m thinking of ordering in. Do you know of any good ⟨ret@96.32s⟩ places nearby?
+[ 96.71s][moshi] ⟦⚡SPAN@96.82s: (tool result) Sushi Zen – 4.5 stars, 0.3 miles; Kyoto Sushi – 4.2 stars, 1.1 miles; Hana Sushi – 3.9 stars, 0.⟧ Let me check for highly-rated sushi restaurants near your location.
+      CALL: {"function": "find_restaurants", "arguments": {"cuisine": "sushi", "location": "743 Cedar Lane, New York, United States"}}
+[100.57s][moshi] Sushi Zen is the closest, with a 4.5-star rating.
+[106.26s][user ] Oh, Sushi Zen! I’ve heard good things. Maybe I'll try that.
+[110.82s][moshi] That sounds like a great plan. Enjoy your sushi and your fermentation project, Casey!

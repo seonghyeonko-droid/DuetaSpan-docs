@@ -69,27 +69,27 @@
 # }
 
 
-     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고에서 이월 십일부터 칠박, 방 세 개 예약해 줘.
-     5.33s  <ret> 발화 (turn1 첫 프레임)
-     5.46s  user  발화 끝
-     5.48s  agent 발화 시작: <ret> 네, 오션뷰 호텔 샌디에이고, 이월 십일부터 칠박, 방 세 개 맞으시죠?
-     6.77s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.90s]: (tool result) confirmation_number: XJ7892; hotel_name: Ocean View Hote
-    10.25s  agent 발화 시작: 네, 오션뷰 호텔 샌디에이고, 이월 십일부터 칠박, 방 세 개 예약 완료되었습니다. 확인 번호는 XJ7892
-    10.38s  agent 발화 끝
-    20.26s  agent 발화 끝
-    20.42s  user  발화 시작: 이천백달러요? 생각보다 비싸네요. 좀 더 저렴한 호텔은 없을까요?
-    25.47s  user  발화 끝
-    25.80s  agent 발화 시작: 음… 다른 호텔을 찾아볼까요? 어떤 기준으로 저렴한 호텔을 찾으시겠어요?
-    28.71s  user  발화 시작: 응.
-    29.20s  user  발화 끝
-    31.09s  agent 발화 시작: 주변에 비슷한 조건의 호텔을 찾아보고 있는데—
-    31.13s  agent 발화 끝
-    33.34s  user  발화 시작: …해변 근처는 꼭이어야 해요? 조금 멀어도 괜찮으니 더 싼 곳으로 알아봐 줘.
-    34.13s  agent 발화 끝
-    38.75s  <ret> 발화 (turn8 첫 프레임)
-    38.80s  user  발화 끝
-    38.90s  agent 발화 시작: <ret> 네, 해변 근처가 아니어도 괜찮으시다면 더 저렴한 호텔을 찾아볼 수 있습니다.
-    39.95s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.62s]: (tool result) hotels: [hotel_name: Pacific Shores Inn, price_per_night
-    43.36s  agent 발화 시작: 샌디에이고에서 이월 십일부터 칠박, 방 세 개, 최대 천오백달러로 검색해 본 결과— 퍼시픽 쇼어즈 인은 일박
-    43.52s  agent 발화 끝
-    59.18s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔에서 이월 십일부터 칠박 동안 방 세 개 예약해 줘.
+     4.53s  <ret> 발화 (turn1 첫 프레임)
+     4.68s  agent 발화 시작: <ret> 네, 알겠습니다. 오션뷰 호텔에서 이월 십일부터 칠박 동안 객실 세개를 예약해 드리겠습니다.
+     4.81s  user  발화 끝
+     6.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) reservation_id=RV789, hotel=Ocean View Hotel, rooms=3, c
+    11.95s  agent 발화 시작: 오션뷰 호텔, 이월 십일부터 칠박, 객실 세개 예약 완료되었습니다. 총 비용은 이백십만 원입니다.
+    12.09s  agent 발화 끝
+    19.60s  agent 발화 끝
+    19.73s  user  발화 시작: 혹시 취소 정책은 어떻게 돼?
+    21.71s  user  발화 끝
+    22.00s  agent 발화 시작: 아, 네, 취소 정책에 대해서는—
+    23.25s  user  발화 시작: 취소하면 얼마나 환불받을 수 있는지 알고 싶어.
+    24.12s  agent 발화 끝
+    26.27s  <ret> 발화 (turn6 첫 프레임)
+    26.30s  user  발화 끝
+    26.34s  agent 발화 시작: <ret> 네, 물론입니다. 예약 취소 시 환불 정책은 다음과 같습니다.
+    28.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) reservation_id=RV789, cancellation_policy=full refund up
+    30.38s  agent 발화 시작: 칠일 전까지 취소하시면 전액 환불됩니다. 칠일 이내 취소 시에는 금액의 십% 수수료가 발생합니다.
+    30.64s  agent 발화 끝
+    34.66s  user  발화 시작: 헐.
+    35.39s  user  발화 끝
+    36.52s  agent 발화 시작: 혹시 다른 도움이 필요하시면 언제든지 말씀해 주세요.
+    36.67s  agent 발화 끝
+    39.99s  agent 발화 끝

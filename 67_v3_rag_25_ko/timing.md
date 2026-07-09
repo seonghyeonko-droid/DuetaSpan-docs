@@ -63,91 +63,89 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 선수들 | S2 아, 델레이 비치 오픈에서 우승했군요. 라파엘라 레지 선수는  | S3 그렇군요. 두 분 다 테니스라는 스포츠로 많은 활약을 하셨네요 | S4 혹시 잭 소크 선수의 키가 얼마나 되나요?
+# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 사람들 | S2 ITF 대회는 좀 낮은 수준의 대회인가요? | S3 레지 선수는 지금도 선수 활동을 하고 있나요? | S4 백십육위면 그래도 꽤 괜찮은 순위네요.
 
-     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 선수들인가요?
-     6.11s  user  발화 끝
-     6.30s  agent 발화 시작: 두 분 다 테니스 선수이신 걸로 알고 있어요.
-     7.16s  user  발화 시작: 네.
-     7.80s  user  발화 끝
-     9.29s  user  발화 시작: 테니스요? 음… 잘 모르겠네요. 그 선수들이 테니스 선수라는 확실한 정보가 있나요?
-     9.35s  agent 발화 끝
-    16.77s  <ret> 발화 (turn4 첫 프레임)
-    17.16s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수 두 분은 모두 프로 테니스 선수이시고, 주요 토너먼트에도 참가
-    17.21s  user  발화 끝
-    17.97s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.80s]: [source: Wikipedia] Jack Sock and Raffaella Reggi are both professiona
-    25.55s  agent 발화 끝
-    27.34s  user  발화 시작: 아, 그렇군요. 그런데 그 두 분이 함께 테니스를 쳤다는 이야기는 처음 듣는데요. 혹시 같이 뛴 적이 있나요
-    35.01s  agent 발화 시작: 두 분이 함께 테니스를 쳤다는 기록은 찾기 어렵네요. 주로 개인 경기로 활동하신 것 같아요.
-    35.22s  user  발화 끝
-    40.99s  user  발화 시작: 음… 그럼 혹시 잭 소크 선수는 어떤 대회에서 유명한가요?
-    41.08s  agent 발화 끝
-    45.54s  <ret> 발화 (turn8 첫 프레임)
-    45.69s  agent 발화 시작: <ret> 잭 소크 선수는 이천십칠년 델레이 비치 오픈에서 밀로스 라오니치를 꺾고 첫 ATP 타이틀을 획득하
-    45.90s  user  발화 끝
-    47.06s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.31s]: [source: ATP Tour] Jack Sock won his first ATP title at the 2017 Delra
-    53.40s  user  발화 시작: 아, 델레이 비치 오픈에서 우승했군요. 라파엘라 레지 선수는 어떤 활약을 하셨나요?
-    53.41s  agent 발화 끝
-    60.16s  <ret> 발화 (turn10 첫 프레임)
-    60.55s  agent 발화 시작: <ret> 라파엘라 레지 선수의 커리어를 살펴볼게요. 라파엘라 레지 선수는 천구백구십육년 애틀랜타 올림픽에서
-    60.72s  user  발화 끝
-    61.20s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.17s]: [source: ITF Tennis] Raffaella Reggi competed in the 1996 Atlanta Olym
-    70.70s  user  발화 시작: 올림픽에도 참가하셨다니 대단하네요. 두 분은 테니스 외에 다른 스포츠도 하나요?
-    70.71s  agent 발화 끝
-    77.14s  user  발화 끝
-    77.52s  agent 발화 시작: 두 분 모두 테니스에 집중하신 것으로 보입니다. 다른 스포츠 경력은 확인되지 않네요.
-    80.59s  user  발화 시작: 네.
-    81.22s  user  발화 끝
-    83.26s  agent 발화 끝
-    83.28s  user  발화 시작: 음… 테니스 선수로서의 삶에 헌신하셨군요. 잭 소크 선수는 현재도 활동하고 있나요?
-    90.48s  <ret> 발화 (turn15 첫 프레임)
-    90.63s  agent 발화 시작: <ret> 잭 소크 선수는 이천이십삼년 십이월, 계속되는 부상으로 인해 프로 테니스에서 은퇴하셨어요.
-    90.74s  user  발화 끝
-    91.60s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.56s]: [source: ESPN] Jack Sock retired from professional tennis in December 
-    97.01s  user  발화 시작: 은퇴하셨다니 아쉽네요. 라파엘라 레지 선수는 지금은 뭘 하고 계실까요?
-    97.16s  agent 발화 끝
-   103.06s  agent 발화 시작: 라파엘라 레지 선수의 현재 활동은 찾기 어려웠어요. 은퇴 후의 정보는 공개되지 않은 것 같습니다.
-   103.21s  user  발화 끝
-   109.75s  user  발화 시작: 그렇군요. 두 분 다 테니스라는 스포츠로 많은 활약을 하셨네요.
-   109.87s  agent 발화 끝
-   114.71s  agent 발화 시작: 맞아요. 테니스 코트 위에서 보여주신 열정은 많은 사람들에게 감동을 줬을 거예요.
-   114.75s  user  발화 끝
-   118.64s  user  발화 시작: 네.
-   119.22s  user  발화 끝
-   120.96s  agent 발화 끝
-   120.99s  user  발화 시작: 혹시 잭 소크 선수 은퇴 전에 마지막으로 참가했던 대회는 어디였나요?
-   126.07s  <ret> 발화 (turn22 첫 프레임)
-   126.30s  agent 발화 시작: <ret> 잭 소크 선수의 마지막 대회는 이천이십삼년 애틀랜타 오픈이었고, 일라운드에서 패배하셨어요.
-   126.54s  user  발화 끝
-   128.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: [source: Tennis.com] Jack Sock’s final tournament was the 2023 Atlanta
-   132.97s  agent 발화 끝
-   133.61s  user  발화 시작: 아, 애틀랜타 오픈이 마지막이었군요. 라파엘라 레지 선수의 최고 랭킹은 어느 정도였나요?
-   140.25s  <ret> 발화 (turn24 첫 프레임)
-   140.48s  agent 발화 시작: <ret> 라파엘라 레지 선수는 천구백구십육년 십월에 여자 단식 세계 랭킹 이십육위를 기록하셨어요.
-   140.71s  user  발화 끝
-   142.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: [source: WTA Tennis] Raffaella Reggi achieved a career-high ranking of
-   145.35s  user  발화 시작: 그렇죠.
-   146.21s  user  발화 끝
-   147.63s  user  발화 시작: 이십육위면 꽤 높은 랭킹이네요. 두 분 다 정말 대단한 선수들이었어요.
-   147.85s  agent 발화 끝
-   152.64s  agent 발화 시작: 두 분 모두 테니스계에 훌륭한 업적을 남기셨다고 생각해요.
-   152.81s  user  발화 끝
-   156.81s  agent 발화 끝
-   157.03s  user  발화 시작: 혹시 잭 소크 선수의 키가 얼마나 되나요?
-   160.22s  user  발화 끝
-   160.28s  <ret> 발화 (turn29 첫 프레임)
-   160.35s  agent 발화 시작: <ret> 잭 소크 선수는 키가 일미터 팔십오센티미터, 약 육피트 일인치 정도 되세요.
-   160.78s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.33s]: [source: Body Size] Jack Sock is 1.85 meters tall, which is approximat
-   166.46s  agent 발화 끝
-   167.92s  user  발화 시작: 일미터 팔십오센티미터면 꽤 크네요. 라파엘라 레지 선수는 키가 얼마나 되나요?
-   173.74s  <ret> 발화 (turn31 첫 프레임)
-   174.05s  agent 발화 시작: <ret> 라파엘라 레지 선수는 키가 일미터 칠십오센티미터, 약 오피트 구인치 정도 되세요.
-   174.18s  user  발화 끝
-   175.34s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.56s]: [source: Famous Birthdays] Raffaella Reggi is 1.75 meters tall, which 
-   176.78s  user  발화 시작: 음.
-   177.27s  user  발화 끝
-   180.58s  agent 발화 끝
-   180.68s  user  발화 시작: 아, 잭 소크 선수보다 조금 작으시네요. 오늘 정보 정말 감사합니다.
-   186.19s  user  발화 끝
-   186.22s  agent 발화 시작: 도움이 되었다니 기쁘네요. 언제든 편하게 이야기 나누러 오세요.
-   191.41s  agent 발화 끝
+     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 사람들인가요?
+     5.41s  user  발화 끝
+     5.66s  agent 발화 시작: 두 분 다 테니스 선수이신 걸로 알고 있어요. 좀 더 자세히 알아볼까요?
+     9.83s  <ret> 발화 (turn2 첫 프레임)
+    10.21s  agent 발화 시작: <ret> 테니스 선수에 대한 정보가 있네요. 잭 소크 선수와 라파엘라 레지 선수 모두 프로 테니스 선수입니
+    10.33s  agent 발화 끝
+    11.03s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.49s]: [source: Wikipedia] Jack Sock and Raffaella Reggi are both professiona
+    14.36s  user  발화 시작: 음.
+    14.85s  user  발화 끝
+    17.67s  agent 발화 끝
+    17.70s  user  발화 시작: 아, 테니스군요. 그런데 그 두 분이 같이 테니스 경기를 했을까요?
+    22.45s  agent 발화 시작: 그건 제가 바로 말씀드리기는 어렵네요. 좀 더 찾아봐야 할 것 같아요.
+    22.51s  user  발화 끝
+    27.48s  <ret> 발화 (turn6 첫 프레임)
+    27.63s  agent 발화 시작: <ret> 두 분의 경기 기록을 확인해 봤어요. 잭 소크 선수와 라파엘라 레지 선수는 프로 테니스 경기에서 
+    27.73s  agent 발화 끝
+    28.68s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.68s]: [source: ESPN] Jack Sock and Raffaella Reggi have never competed again
+    36.11s  agent 발화 끝
+    37.01s  user  발화 시작: 어머, 그럼 두 분은 그냥 테니스 선수라는 것 말고는 아무 관계가 없다는 거네요?
+    43.05s  agent 발화 시작: 꼭 그렇지는 않을 수도 있어요. 두 분 모두 테니스 선수라는 공통점이 있으니까요.
+    43.22s  user  발화 끝
+    44.81s  user  발화 시작: 네.
+    45.45s  user  발화 끝
+    48.35s  agent 발화 시작: 혹시 두 분의 다른 활동에 대해 궁금하신가요?
+    48.42s  agent 발화 끝
+    51.40s  agent 발화 끝
+    51.81s  user  발화 시작: 음… 레지 선수는 주로 어떤 대회에 나가는 선수예요?
+    56.86s  <ret> 발화 (turn12 첫 프레임)
+    57.01s  agent 발화 시작: <ret> 라파엘라 레지 선수는 주로 ITF 여자 테니스 회로 대회에 출전했고, 최고 싱글 랭킹은 백육십삼위
+    57.27s  user  발화 끝
+    58.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: [source: WTA Official Website] Raffaella Reggi has primarily competed 
+    63.32s  user  발화 시작: 진짜요?
+    64.23s  user  발화 끝
+    65.22s  agent 발화 끝
+    65.79s  user  발화 시작: ITF 대회는 좀 낮은 수준의 대회인가요?
+    69.12s  user  발화 끝
+    69.50s  agent 발화 시작: 일반적으로는 ATP나 WTA 투어보다는 낮은 수준으로 여겨지지만, 실력 있는 선수들이 많이 참여합니다.
+    77.70s  agent 발화 끝
+    77.86s  user  발화 시작: 그렇군요. 그럼 잭 소크 선수는 어떤 대회에 주로 나가는 편인가요?
+    82.86s  <ret> 발화 (turn17 첫 프레임)
+    83.17s  agent 발화 시작: <ret> 잭 소크 선수는 네대 그랜드 슬램 대회에 모두 출전했고, 이천십칠년 US 오픈에서 팔강에 진출했습
+    83.41s  user  발화 끝
+    84.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: [source: ATP Official Website] Jack Sock has competed in all four Gran
+    88.26s  user  발화 시작: 그렇군요.
+    89.08s  user  발화 끝
+    90.91s  agent 발화 끝
+    91.97s  user  발화 시작: 네대 그랜드 슬램… 잭 소크 선수는 좀 유명한 선수인가 보네요.
+    97.28s  agent 발화 시작: 네, 잭 소크 선수는 꽤 유명한 선수입니다. 특히 US 오픈에서의 활약이 기억에 남죠.
+    97.42s  user  발화 끝
+   101.13s  user  발화 시작: 음.
+   101.57s  user  발화 끝
+   102.97s  user  발화 시작: 레지 선수는 지금도 선수 활동을 하고 있나요?
+   103.16s  agent 발화 끝
+   106.09s  <ret> 발화 (turn23 첫 프레임)
+   106.40s  user  발화 끝
+   106.48s  agent 발화 시작: <ret> 라파엘라 레지 선수는 이천십팔년에 프로 테니스 선수로서 은퇴했습니다.
+   108.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [source: Tennis Abstract] Raffaella Reggi retired from professional te
+   111.66s  agent 발화 끝
+   111.67s  user  발화 시작: 아, 은퇴했군요. 그럼 지금은 뭘 하고 있을까요?
+   115.00s  agent 발화 시작: 은퇴 후의 활동에 대한 정보는 찾기 어렵네요.
+   115.19s  user  발화 끝
+   118.52s  agent 발화 끝
+   119.14s  user  발화 시작: 잭 소크 선수는 지금도 선수 생활을 계속하고 있나요?
+   122.53s  <ret> 발화 (turn27 첫 프레임)
+   122.60s  agent 발화 시작: <ret> 잭 소크 선수는 이천이십삼년 십일월 현재 세계 랭킹 백십육위입니다.
+   122.84s  user  발화 끝
+   124.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: [source: ATP Official Website] Jack Sock is currently ranked 116th in 
+   128.29s  user  발화 시작: 백십육위면 그래도 꽤 괜찮은 순위네요.
+   128.30s  agent 발화 끝
+   131.52s  agent 발화 시작: 네, 훌륭한 순위라고 할 수 있습니다. 꾸준히 노력하고 계신 것 같아요.
+   131.66s  user  발화 끝
+   134.68s  user  발화 시작: 음.
+   135.29s  user  발화 끝
+   136.72s  user  발화 시작: 두 분에 대해 좀 알게 됐네요. 감사합니다.
+   136.93s  agent 발화 끝
+   140.04s  user  발화 끝
+   140.37s  agent 발화 시작: 도움이 되었다니 다행입니다. 혹시 다른 궁금한 점이 있으신가요?
+   142.07s  user  발화 시작: 아.
+   142.79s  user  발화 끝
+   145.09s  agent 발화 끝
+   145.10s  user  발화 시작: 아니요, 오늘은 이 정도로 충분해요.
+   148.15s  user  발화 끝
+   148.58s  agent 발화 시작: 좋습니다. 언제든지 또 찾아주세요.
+   151.16s  agent 발화 끝

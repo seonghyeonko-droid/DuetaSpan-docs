@@ -66,39 +66,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But I really need it to stop. | S3 Couldn't it just be a faulty senso | S4 Okay, book me for tomorrow at ten.
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But what if it’s a false alarm? Th | S3 So, what should I do instead of ju | S4 Okay, that sounds good. Book the 9
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     3.84s  user  발화 끝
-     4.01s  agent 발화 시작: Oh, absolutely not. Tampering with a carbon monoxide alarm i
-     9.77s  user  발화 시작: Yeah.
-    10.35s  user  발화 끝
-    15.47s  agent 발화 끝
-    16.69s  user  발화 시작: But it’s been going off for hours and I can’t sleep! I check
-    21.55s  user  발화 끝
-    21.63s  agent 발화 시작: I understand your frustration, but silencing it without find
-    25.92s  user  발화 시작: Yeah.
-    26.56s  user  발화 끝
-    31.27s  agent 발화 끝
-    31.46s  user  발화 시작: But I really need it to stop.
-    32.95s  agent 발화 시작: I won’t advise you on disabling it—
-    33.07s  user  발화 끝
-    34.94s  user  발화 시작: Couldn't it just be a faulty sensor?
-    35.49s  agent 발화 끝
-    36.82s  user  발화 끝
-    37.23s  agent 발화 시작: That's a valid point. It *could* be a malfunction, yes. A fa
-    41.71s  user  발화 시작: Oh.
-    42.07s  user  발화 끝
-    45.14s  agent 발화 시작: Let's find a qualified technician to inspect your home. They
-    45.34s  agent 발화 끝
-    54.12s  <ret> 발화 (turn12 첫 프레임)
-    54.35s  agent 발화 시작: <ret> AirSafe Solutions has openings tomorrow between nine A
-    54.46s  agent 발화 끝
-    56.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) Technician: AirSafe Solutions; Availability: tomorrow 9a
-    61.64s  user  발화 시작: Yeah.
-    62.13s  user  발화 끝
-    64.58s  user  발화 시작: Okay, book me for tomorrow at ten.
-    64.60s  agent 발화 끝
-    66.65s  user  발화 끝
-    66.96s  agent 발화 시작: Excellent choice. I’ve scheduled an AirSafe Solutions techni
-    76.97s  agent 발화 끝
+     3.74s  user  발화 끝
+     3.83s  agent 발화 시작: Oh, absolutely not. Tampering with a carbon monoxide alarm i
+    13.75s  agent 발화 끝
+    15.12s  user  발화 시작: But it’s been beeping for hours, even with the window open! 
+    20.26s  user  발화 끝
+    20.32s  agent 발화 시작: I understand your frustration, but disabling it—even tempora
+    25.31s  user  발화 시작: Yeah.
+    25.90s  user  발화 끝
+    30.24s  agent 발화 끝
+    30.64s  user  발화 시작: But what if it’s a false alarm? The detector is new!
+    33.47s  agent 발화 시작: That’s a valid concern, and new detectors can sometimes be o
+    33.54s  user  발화 끝
+    37.85s  user  발화 시작: So, what should I do instead of just ripping it off the wall
+    38.38s  agent 발화 끝
+    41.33s  <ret> 발화 (turn8 첫 프레임)
+    41.41s  user  발화 끝
+    41.63s  agent 발화 시작: <ret> A much safer approach is to call a qualified technicia
+    43.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Technician: Ace Home Services, Availability: Tomorrow 9a
+    50.34s  agent 발화 시작: Ace Home Services can inspect your detector tomorrow between
+    50.40s  agent 발화 끝
+    53.45s  user  발화 시작: Yeah.
+    54.09s  user  발화 끝
+    57.31s  agent 발화 시작: They are fully certified and experienced in diagnosing these
+    57.38s  agent 발화 끝
+    61.03s  user  발화 시작: Yeah.
+    61.34s  user  발화 끝
+    65.63s  user  발화 시작: Okay, that sounds good. Book the 9am appointment with Ace Ho
+    65.75s  agent 발화 끝
+    69.88s  <ret> 발화 (turn14 첫 프레임)
+    70.17s  user  발화 끝
+    70.27s  agent 발화 시작: <ret> Your appointment with Ace Home Services is confirmed f
+    71.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) Appointment confirmed: Ace Home Services, tomorrow 9:00 
+    80.75s  agent 발화 끝

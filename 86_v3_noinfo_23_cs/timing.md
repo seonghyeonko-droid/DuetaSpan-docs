@@ -63,95 +63,89 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 오, 최고다. 정말 고마워! [happy] | S3 음, 문제 해결하는 건 정말 좋아하는데, 회의는… 별로 안 좋 | S4 좋아! 고마워. 음, 내일 도쿄 날씨 예보는 어때?
+# EXAMINER(FDB-v2) 단계: S1 도쿄 작년 12월 24일 날씨가 어땠어? | S2 와, 알겠어. 아이슬란드는 아닌가 봐. 음, 코스타리카는 어때 | S3 3월에 예약 가능한 곳 좀 찾아줘. | S4 아, 그런데 하나 더 물어봐도 돼? 공항 픽업 서비스는 제공해
 
-     0.00s  user  발화 시작: 어, 작년 12월 24일 도쿄 날씨가 어땠어?
-     3.04s  <ret> 발화 (turn1 첫 프레임)
-     3.21s  agent 발화 시작: <ret> 작년 12월 24일 도쿄는 최고 기온이 섭씨 6도, 최저 기온이 섭씨 영하 2도였고, 흐린 날씨였
-     3.37s  user  발화 끝
-     4.08s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.91s]: (tool result) Weather_1_GetWeather: city=Tokyo, date=2023-12-24, high=
-    10.48s  agent 발화 끝
-    10.93s  user  발화 시작: 으, 추워 보이네. 있잖아, 시부야역 근처에 괜찮은 카페 좀 찾아 줄래?
-    16.04s  <ret> 발화 (turn3 첫 프레임)
-    16.44s  agent 발화 시작: <ret> 네, 물론 도와드릴 수 있어요. 스트리머 커피 컴퍼니가 300미터 거리에 있고, 평점은 4.5점이
-    16.53s  user  발화 끝
-    18.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) Places_1_FindPlaces: query=cafe, near=Shibuya Station, r
-    21.83s  user  발화 시작: 응.
-    22.27s  user  발화 끝
-    27.57s  agent 발화 끝
-    28.72s  user  발화 시작: 스트리머 커피 컴퍼니 괜찮겠다. 와이파이 있어?
-    31.88s  <ret> 발화 (turn6 첫 프레임)
-    32.12s  agent 발화 시작: <ret> 네, 스트리머 커피 컴퍼니는 고객에게 무료 와이파이를 제공하고 있어요.
-    32.23s  user  발화 끝
-    32.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.12s]: (tool result) Places_1_GetDetails: place_name=Streamer Coffee Company,
-    35.31s  user  발화 시작: 음.
-    35.53s  user  발화 끝
-    36.75s  agent 발화 끝
-    36.85s  user  발화 시작: 좋아! 음… 그러니까, 오늘 오후 3시에 거기 테이블 예약 좀 해 줄 수 있어?
-    42.86s  <ret> 발화 (turn9 첫 프레임)
-    42.92s  user  발화 끝
-    42.94s  agent 발화 시작: <ret> 네, 물론 예약해 드릴 수 있어요. 스트리머 커피 컴퍼니에 오늘 오후 3시에 1명 테이블을 예약해
-    44.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.00s]: (tool result) Reservations_1_Reserve: place_name=Streamer Coffee Compa
-    52.44s  agent 발화 끝
-    53.38s  user  발화 시작: 오, 최고다. 정말 고마워! [happy]
-    55.35s  agent 발화 시작: 천만에요! 편안한 오후를 계획하는 데 도움을 드릴 수 있어서 기뻐요.
-    55.51s  user  발화 끝
-    60.21s  agent 발화 끝
-    60.34s  user  발화 시작: 근데, 혹시 커리어 코칭에 대해 아는 거 있어? 좀 막막해.
-    64.23s  agent 발화 시작: 네, 알고 있어요! 웰니스 코치로서 저는 종종 사람들이 커리어 전환을 하고 더 큰 만족감을 찾도록 돕고 있어
-    64.36s  user  발화 끝
-    71.97s  agent 발화 끝
-    72.00s  user  발화 시작: 그거 듣기 좋네. 커리어 변경을 생각하고 있는데 뭘 잘할지 잘 모르겠어.
-    76.55s  agent 발화 시작: 그건 흔한 감정이에요! 당신의 강점, 가치관, 관심사를 탐색하여 잠재적인 길을 찾을 수 있어요.
-    76.71s  user  발화 끝
-    82.72s  user  발화 시작: 알았어… 뭐라고 생각해, 첫 단계가?
-    83.13s  agent 발화 끝
-    85.31s  user  발화 끝
-    85.41s  agent 발화 시작: 정말 당신을 활력을 주는 것과 일에서 당신의 에너지를 소모하는 것을 파악하는 것부터 시작해 볼까요?
-    92.08s  agent 발화 끝
-    92.58s  user  발화 시작: 음, 문제 해결하는 건 정말 좋아하는데, 회의는… 별로 안 좋아.
-    97.01s  agent 발화 시작: 통찰력이 있네요! 문제 해결 능력은 분석 기술을 의미하며, 이는 많은 역할에서 정말 큰 자산이 될 수 있어요
-    97.12s  user  발화 끝
-   103.02s  user  발화 시작: 응.
-   103.24s  user  발화 끝
-   105.40s  agent 발화 끝
-   106.10s  user  발화 시작: 그냥 내 기술을 충분히 활용하고 있지 못한 것 같아.
-   109.00s  agent 발화 시작: 많은 사람들이 그렇게 느낍니다. 더 매력적인 일을 찾을 준비가 된 것 같아요.
-   109.19s  user  발화 끝
-   114.14s  agent 발화 끝
-   115.46s  user  발화 시작: 그래. 혹시 내 기술을 공식적으로 평가할 수 있는 방법이 있어?
-   119.28s  <ret> 발화 (turn24 첫 프레임)
-   119.68s  agent 발화 시작: <ret> 온라인에서 여러 가지 평가를 받을 수 있어요. 무료 온라인 커리어 기술 평가를 몇 가지 찾았어요.
-   119.83s  user  발화 끝
-   120.64s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.70s]: (tool result) Search_1_Search: query=free career skills assessment
-   122.51s  user  발화 시작: 어어.
-   122.96s  user  발화 끝
-   128.67s  agent 발화 끝
-   128.88s  user  발화 시작: 커리어 익스플로러… 좋아. 그 링크 좀 보내 줄래?
-   132.51s  <ret> 발화 (turn27 첫 프레임)
-   132.59s  agent 발화 시작: <ret> 네, 지금 그 링크를 보내 드릴게요. user@email.com 이메일 주소로 커리어 익스플로러 
-   132.67s  user  발화 끝
-   134.11s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.94s]: (tool result) SendMessage_1_Send: recipient=user@email.com, subject=Ca
-   135.94s  user  발화 시작: 응.
-   136.35s  user  발화 끝
-   139.72s  agent 발화 끝
-   140.42s  user  발화 시작: 좋아! 고마워. 음, 내일 도쿄 날씨 예보는 어때?
-   143.91s  <ret> 발화 (turn30 첫 프레임)
-   144.07s  agent 발화 시작: <ret> 내일 도쿄는 부분적으로 흐리고, 최고 기온은 8도, 최저 기온은 3도일 거예요.
-   144.26s  user  발화 끝
-   145.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.89s]: (tool result) Weather_1_GetWeather: city=Tokyo, date=2024-03-01, high=
-   147.53s  user  발화 시작: 어.
-   148.16s  user  발화 끝
-   150.18s  agent 발화 끝
-   152.02s  user  발화 시작: 알아둬야겠다. 그래서, 그 평가에 대해서…
-   155.76s  user  발화 끝
-   155.78s  agent 발화 시작: 네, 상세한 보고서를 통해 당신의 강점, 약점, 잠재적인 커리어 매칭을 제공할 수 있어요.
-   162.03s  agent 발화 끝
-   162.37s  user  발화 시작: 근데 그거 좀 걱정돼. 만약 내가 모든 것에 엉망이라고 한다면 어떡해?
-   167.24s  agent 발화 시작: [laugh] 그럴 가능성은 매우 낮아요! 평가는 당신의 단점뿐만 아니라 잠재력을 강조하도록 설계되었어요. 
-   167.27s  user  발화 끝
-   178.55s  agent 발화 끝
-   178.81s  user  발화 시작: 그래, 그 말이 맞네. 고마워, 브레.
-   181.70s  agent 발화 시작: 천만에요! 자기 발견은 여정이라는 것을 기억하세요. 그리고 저는 그 여정을 응원할게요.
-   181.86s  user  발화 끝
-   188.56s  agent 발화 끝
+     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
+     2.96s  <ret> 발화 (turn1 첫 프레임)
+     3.12s  agent 발화 시작: <ret> 네, 도쿄는 작년 12월 24일에 맑은 날씨였고 최고 기온은 12도였어요.
+     3.24s  user  발화 끝
+     4.39s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.23s]: (tool result) Sunny, high of 12 degrees Celsius, low of 5 degrees Cels
+     8.35s  agent 발화 끝
+     8.73s  user  발화 시작: 아, 좋았겠다. 겨울에 어디 놀러 갈까 생각 중이야.
+    11.78s  user  발화 끝
+    11.83s  agent 발화 시작: 여행은 정말 좋은 생각이에요! 특히 추운 계절에는 휴식을 취하고 재충전하는 게 중요하죠.
+    14.62s  user  발화 시작: 응.
+    15.07s  user  발화 끝
+    17.66s  agent 발화 끝
+    18.81s  user  발화 시작: 아이슬란드도 괜찮을까 싶어. 1월 평균 온도가 어때?
+    22.07s  <ret> 발화 (turn6 첫 프레임)
+    22.39s  agent 발화 시작: <ret> 아이슬란드 1월… 잠깐만 찾아볼게요… 아이슬란드 1월 평균 기온은 영하 2도 정도예요.
+    22.55s  user  발화 끝
+    23.67s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.52s]: (tool result) Average temperature -2 degrees Celsius, low -6 degrees C
+    26.86s  user  발화 시작: 음.
+    27.26s  user  발화 끝
+    28.84s  agent 발화 끝
+    28.93s  user  발화 시작: 생각보다 춥네. 바람은 많이 불어?
+    31.48s  <ret> 발화 (turn9 첫 프레임)
+    31.52s  user  발화 끝
+    31.55s  agent 발화 시작: <ret> 바람은 여행에 영향을 줄 수 있죠… 아이슬란드 1월 평균 풍속은 시속 35킬로미터이고 돌풍은 시속
+    31.98s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.92s]: (tool result) Average wind speed 35 km/h, gusts up to 60 km/h.
+    40.50s  agent 발화 끝
+    41.49s  user  발화 시작: 와, 알겠어. 아이슬란드는 아닌가 봐. 음, 코스타리카는 어때?
+    46.14s  agent 발화 시작: 코스타리카는 훨씬 따뜻한 곳이에요! 햇볕을 찾으신다면 좋은 선택일 거예요.
+    46.34s  user  발화 끝
+    51.09s  agent 발화 끝
+    51.23s  user  발화 시작: 2월 평균 최고 기온이 얼마야?
+    53.19s  <ret> 발화 (turn13 첫 프레임)
+    53.43s  agent 발화 시작: <ret> 코스타리카 2월 평균 최고 기온은 30도예요.
+    53.58s  user  발화 끝
+    54.79s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.14s]: (tool result) Average high temperature 30 degrees Celsius.
+    56.57s  agent 발화 끝
+    56.69s  user  발화 시작: 완벽하네! 요가 리트릿 좋은 곳 있어?
+    59.30s  agent 발화 시작: 코스타리카는 요가를 포함한 웰니스 리트릿으로 아주 유명해요.
+    59.45s  user  발화 끝
+    63.41s  user  발화 시작: 3월에 예약 가능한 곳 좀 찾아줘.
+    63.79s  agent 발화 끝
+    65.33s  <ret> 발화 (turn17 첫 프레임)
+    65.64s  agent 발화 시작: <ret> 세 곳을 찾았어요: 푸라 비다 요가, 제니스 리트릿, 블루 호라이즌 요가, 모두 3월에 가능해요.
+    65.72s  user  발화 끝
+    67.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) "Pura Vida Yoga" – March 10-17, $1500. "Zenith Retreats"
+    71.94s  agent 발화 끝
+    72.43s  user  발화 시작: 음, 푸라 비다가 괜찮은 것 같아. 자리가 남아있는지 확인해 줄래?
+    76.37s  <ret> 발화 (turn19 첫 프레임)
+    76.61s  agent 발화 시작: <ret> 푸라 비다 예약 가능 여부를 확인 중입니다… 푸라 비다 요가는 3월 10일부터 17일까지 리트릿에
+    76.78s  user  발화 끝
+    78.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.25s]: (tool result) Pura Vida Yoga: 3 spots remaining for March 10-17 retrea
+    82.08s  user  발화 시작: 응.
+    82.57s  user  발화 끝
+    84.26s  agent 발화 끝
+    84.94s  user  발화 시작: 자리 하나 예약해 줘.
+    85.97s  <ret> 발화 (turn22 첫 프레임)
+    86.13s  agent 발화 시작: <ret> 알겠습니다! 예약을 진행해 드릴게요… 푸라 비다 요가 3월 10일부터 17일까지 리트릿 예약이 완
+    86.36s  user  발화 끝
+    87.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.52s]: (tool result) Booking confirmed! Pura Vida Yoga, March 10-17, $1500. C
+    95.82s  agent 발화 끝
+    97.11s  user  발화 시작: [laugh] 최고다! 정말 고마워, 브레이.
+    99.68s  agent 발화 시작: 천만에요! 정말 회복에 도움이 되는 여행이 될 것 같아요. 도와드릴 수 있어서 기뻐요.
+    99.69s  user  발화 끝
+   101.84s  user  발화 시작: 어어.
+   102.47s  user  발화 끝
+   106.63s  agent 발화 끝
+   106.85s  user  발화 시작: 아, 그런데 하나 더 물어봐도 돼? 공항 픽업 서비스는 제공해?
+   111.33s  user  발화 끝
+   111.42s  agent 발화 시작: 원활한 도착을 위해 좋은 질문이에요.
+   112.61s  user  발화 시작: 응.
+   112.91s  user  발화 끝
+   114.06s  agent 발화 끝
+   114.70s  user  발화 시작: 푸라 비다가 제공하는지 말이야?
+   116.19s  <ret> 발화 (turn30 첫 프레임)
+   116.59s  agent 발화 시작: <ret> 죄송하지만 푸라 비다 요가에서 제공하는 공항 픽업 서비스에 대한 정보는 찾을 수 없었어요.
+   116.77s  user  발화 끝
+   117.87s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.83s]: (no information found)
+   119.90s  user  발화 시작: 어.
+   120.44s  user  발화 끝
+   122.42s  agent 발화 끝
+   124.26s  user  발화 시작: 알았어. 다시 한번 고마워!
+   126.56s  user  발화 끝
+   126.58s  agent 발화 시작: 천만에요. 작은 변화도 웰빙에 큰 도움이 될 수 있다는 것을 기억하세요. 코스타리카에서 즐거운 시간 보내세요
+   133.85s  agent 발화 끝

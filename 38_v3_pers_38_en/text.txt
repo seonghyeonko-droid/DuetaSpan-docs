@@ -59,12 +59,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Avery, welcome. I’m Jaeia, and I’m here to gently walk alongside you through whatever’s on your heart today.
-[  6.23s][user ] Jaeia… that’s a beautiful name. It feels… calming. I’m just feeling a bit lost, to be honest.
-[ 12.22s][moshi] It’s understandable to feel lost, especially when life shifts. Perhaps we could explore what feels most unsettling right now?
-[ 14.71s][user ] «backchannel» Wow.
-[ 19.60s][moshi] Sometimes, naming the feeling itself can lessen its power—it’s like bringing a shadow into the light. What does “lost” feel like for you, specifically?
-[ 28.40s][user ] It’s… everything, I guess. I just moved to Sydney, and it’s a lot. I— I miss my family.
-[ 33.50s][moshi] A big change like that, coupled with missing loved ones, is a heavy weight to carry. It’s brave of you to acknowledge that. Do you find yourself dwelling on what you’ve left behind?
-[ 43.29s][user ] But… what if I made the wrong choice coming here?
-[ 46.17s][moshi] It’s natural to question big decisions, Avery. Regret can feel overwhelming. Perhaps we can unpack what “wrong” would mean to you, and what a “right” choice looks like?
+[  0.00s][moshi] Avery, welcome. I’m Jaeia, and I’m here to offer a gentle space for navigating whatever’s on your mind.
+[  5.72s][user ] Jaeia… that’s a lovely name. It sounds… ancient? I’m just feeling a bit lost, actually.
+[ 11.61s][moshi] It does have roots in old languages, yes. Feeling lost is a very human experience, Avery. What feels most uncertain right now?
+[ 14.00s][user ] «backchannel» Wow.
+[ 18.76s][moshi] Sometimes, simply acknowledging the uncertainty can lessen its power. It’s alright not to have all the answers, or even know the questions.
+[ 26.61s][user ] I— I mean, it’s my grandmother. She passed last month, and everything feels… different.
+[ 32.09s][moshi] [sigh] Grief truly reshapes our world, doesn’t it? It’s a profound change, and it’s natural to feel disoriented by it. What memories of your grandmother feel most present today?
+[ 42.70s][user ] Just… her garden. She always had the most beautiful roses. I wish I’d asked her more about them.

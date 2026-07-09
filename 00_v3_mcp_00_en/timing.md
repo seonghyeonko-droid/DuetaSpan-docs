@@ -63,79 +63,85 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Do you think I should pre-book tic | S3 Wonderful! That’s a huge weight of | S4 Hmm, peaceful sounds good. I’ve ha
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Nine miles… okay. Are there boat t | S3 …like the Empire State Building, o | S4 I just don’t want to get lost. Is 
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.80s  <ret> 발화 (turn1 첫 프레임)
-     4.03s  agent 발화 시작: <ret> The Eiffel Tower’s coordinates are latitude 48.8584 an
-     4.16s  user  발화 끝
-     4.92s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.58s]: (tool result) 48.8584, 2.2945
-    12.13s  user  발화 시작: Okay, great. And what’s the quickest route from there to the
-    12.25s  agent 발화 끝
-    17.09s  <ret> 발화 (turn3 첫 프레임)
-    17.48s  agent 발화 시작: <ret> It’s 3.1 kilometers to the Louvre, about a twelve-minu
-    17.73s  user  발화 끝
-    19.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: (tool result) Distance: 3.1 km; Estimated time: 12 mins; Mode: walking
-    20.96s  user  발화 시작: Right.
-    21.45s  user  발화 끝
-    22.53s  user  발화 시작: Hmm, walking is nice, but is public transport faster?
-    22.57s  agent 발화 끝
-    26.64s  <ret> 발화 (turn6 첫 프레임)
-    26.95s  agent 발화 시작: <ret> Bus line 42 takes fifteen minutes and costs two euros.
-    27.12s  user  발화 끝
-    28.00s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.71s]: (tool result) Bus line 42; Duration: 15 mins; Cost: 2.00 EUR
-    31.48s  user  발화 시작: That’s not much faster. [sigh] I think I’ll stick with walki
-    31.58s  agent 발화 끝
-    36.39s  user  발화 끝
-    36.52s  agent 발화 시작: Walking is a lovely way to see a city, it really is.
-    37.76s  user  발화 시작: Okay.
-    38.39s  user  발화 끝
-    40.43s  user  발화 시작: Do you think I should pre-book tickets for the Louvre? It’s 
-    40.45s  agent 발화 끝
-    44.44s  agent 발화 시작: Absolutely. The Louvre can get very crowded, pre-booking is 
-    44.50s  user  발화 끝
-    49.09s  user  발화 시작: Okay, can you check availability for tomorrow afternoon, say
-    49.25s  agent 발화 끝
-    53.83s  <ret> 발화 (turn13 첫 프레임)
-    54.14s  user  발화 끝
-    54.15s  agent 발화 시작: <ret> There are slots at 2 pm, 2:30 pm, and 3 pm tomorrow, c
-    54.95s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.37s]: (tool result) Available slots: 14:00, 14:30, 15:00; Price: 17.00 EUR
-    61.38s  agent 발화 끝
-    63.73s  user  발화 시작: 2:30 pm sounds perfect. Can you book that for me?
-    67.31s  <ret> 발화 (turn15 첫 프레임)
-    67.47s  agent 발화 시작: <ret> Your ticket is booked for 2:30 pm tomorrow, reference 
-    67.57s  user  발화 끝
-    68.59s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.54s]: (tool result) Booking confirmed;
-    73.83s  user  발화 시작: Wonderful! That’s a huge weight off my mind.
-    73.96s  agent 발화 끝
-    76.79s  <ret> 발화 (turn17 첫 프레임)
-    76.95s  agent 발화 시작: <ret> I’m glad I could help with that. It’s always nice to h
-    77.16s  user  발화 끝
-    78.55s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.35s]: LXV8492; Time: 14:30, 2024-05-03; Cost: 17.00 EUR
-    80.67s  user  발화 시작: …Actually, now I’m wondering, are there any good cafes near 
-    81.30s  agent 발화 끝
-    84.93s  user  발화 끝
-    85.16s  agent 발화 시작: Oh, yes! There are several lovely cafes nearby.
-    89.51s  agent 발화 끝
-    89.54s  user  발화 시작: What kind of vibe are you thinking? Something quiet to read 
-    95.00s  user  발화 끝
-    95.13s  agent 발화 시작: That depends on what you prefer, of course. Do you want some
-   100.13s  user  발화 시작: Hmm, peaceful sounds good. I’ve had a lot of noise today.
-   100.27s  agent 발화 끝
-   104.10s  agent 발화 시작: Then I’d recommend "Cafe Verlet". It's a classic Parisian ca
-   104.19s  user  발화 끝
-   106.23s  user  발화 시작: Yeah.
-   106.67s  user  발화 끝
-   109.64s  agent 발화 시작: —known for its quiet atmosphere and delicious pastries. It’s
-   109.65s  agent 발화 끝
-   116.04s  user  발화 시작: Oh, that sounds perfect. How far is that from the Louvre?
-   116.17s  agent 발화 끝
-   119.38s  <ret> 발화 (turn27 첫 프레임)
-   119.62s  agent 발화 시작: <ret> Cafe Verlet is 650 meters from the Louvre, about an ei
-   119.79s  user  발화 끝
-   121.14s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.57s]: (tool result) Distance: 650m; Walking time: 8 mins
-   124.98s  agent 발화 끝
-   125.55s  user  발화 시작: Excellent. You’ve been a lifesaver, Nellara!
-   128.64s  user  발화 끝
-   128.80s  agent 발화 시작: [happy] You’re very welcome! I’m happy to help you plan a wo
-   133.52s  agent 발화 끝
+     3.54s  <ret> 발화 (turn1 첫 프레임)
+     3.77s  agent 발화 시작: <ret> Certainly, I can help with that. The Eiffel Tower’s co
+     3.84s  user  발화 끝
+     4.58s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.14s]: (tool result) 48.8584, 2.2945
+    14.70s  user  발화 시작: Okay, good. And what about the Statue of Liberty?
+    14.80s  agent 발화 끝
+    17.02s  <ret> 발화 (turn3 첫 프레임)
+    17.41s  agent 발화 시작: <ret> The Statue of Liberty is at latitude 40.6892 and longi
+    17.66s  user  발화 끝
+    19.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: (tool result) 40.6892, -74.0445
+    24.08s  user  발화 시작: Right.
+    24.58s  user  발화 끝
+    26.86s  user  발화 시작: Hmm, interesting. I’m planning a trip to New York.
+    27.05s  agent 발화 끝
+    30.92s  agent 발화 시작: That sounds lovely! New York is a fantastic city with so muc
+    30.98s  user  발화 끝
+    37.36s  user  발화 시작: I'm thinking of visiting Central Park. Is it far from the St
+    37.36s  agent 발화 끝
+    42.22s  user  발화 끝
+    42.35s  agent 발화 시작: It is quite a distance, about nine miles.
+    43.33s  user  발화 시작: Okay.
+    43.96s  user  발화 끝
+    45.49s  agent 발화 끝
+    45.52s  user  발화 시작: Nine miles… okay. Are there boat tours that go from the Stat
+    51.27s  <ret> 발화 (turn11 첫 프레임)
+    51.58s  agent 발화 시작: <ret> There are several options: Circle Line, New York Water
+    51.73s  user  발화 끝
+    53.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) ["Circle Line Sightseeing Cruises", "New York Water Taxi
+    57.34s  user  발화 시작: Circle Line sounds good. What times do they have tours tomor
+    57.55s  agent 발화 끝
+    61.78s  <ret> 발화 (turn13 첫 프레임)
+    61.85s  agent 발화 시작: <ret> Circle Line has tours tomorrow at nine, eleven, one, t
+    61.87s  user  발화 끝
+    63.06s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.11s]: (tool result) 09:00, 11:00, 13:00, 15:00, 17:00
+    67.96s  agent 발화 끝
+    70.47s  user  발화 시작: Hmm… the one at one PM sounds perfect. Can you book that for
+    75.28s  <ret> 발화 (turn15 첫 프레임)
+    75.44s  agent 발화 시작: <ret> Wonderful! Your Circle Line tour is booked for one PM 
+    75.52s  user  발화 끝
+    76.96s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.85s]: (tool result) Booking confirmed: Circle Line, 1 PM, tomorrow, 1 adult.
+    84.23s  user  발화 시작: That’s fantastic, thank you!— I mean, do they have options f
+    84.29s  agent 발화 끝
+    90.23s  agent 발화 시작: [interrupting] Circle Line tours often pass by other famous 
+    90.40s  user  발화 끝
+    95.14s  user  발화 시작: …like the Empire State Building, or the Brooklyn Bridge?
+    95.83s  agent 발화 끝
+    98.19s  user  발화 끝
+    98.38s  agent 발화 시작: Yes, many Circle Line tours include views of both the Empire
+   101.30s  user  발화 시작: Yeah.
+   101.65s  user  발화 끝
+   105.83s  agent 발화 시작: They also frequently go past Ellis Island, offering a glimps
+   105.94s  agent 발화 끝
+   111.71s  agent 발화 끝
+   111.83s  user  발화 시작: Oh, that’s good to know. How long is the tour usually?
+   115.67s  user  발화 끝
+   115.70s  agent 발화 시작: Most Circle Line sightseeing tours last around two and a hal
+   120.88s  agent 발화 끝
+   121.22s  user  발화 시작: That's a decent amount of time. I think that’ll be enough.
+   124.59s  user  발화 끝
+   125.03s  agent 발화 시작: I’m glad to hear you feel that way. It's good to have a rela
+   130.60s  user  발화 시작: Yeah. I’m a little worried about getting around though.
+   130.81s  agent 발화 끝
+   133.88s  user  발화 끝
+   134.24s  agent 발화 시작: Traveling in a new city can feel overwhelming, it’s perfectl
+   140.31s  agent 발화 끝
+   141.31s  user  발화 시작: I just don’t want to get lost. Is the subway easy to use in 
+   146.03s  agent 발화 시작: The New York subway is quite extensive, but it can be a litt
+   146.13s  user  발화 끝
+   151.35s  agent 발화 끝
+   151.36s  user  발화 시작: [sigh] Okay. Maybe I should just stick to taxis then.
+   155.34s  agent 발화 시작: Taxis are readily available, but they can be expensive durin
+   155.38s  user  발화 끝
+   160.71s  user  발화 시작: Mm-hmm.
+   161.34s  user  발화 끝
+   162.25s  user  발화 시작: You’re right. Hmm… maybe I’ll download a subway map app.
+   162.42s  agent 발화 끝
+   166.56s  user  발화 끝
+   167.00s  agent 발화 시작: That’s a great idea! A subway map app can be very helpful fo
+   173.21s  agent 발화 끝

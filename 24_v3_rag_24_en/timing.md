@@ -59,23 +59,25 @@
 # }
 
 
-     0.00s  user  발화 시작: I was wondering about the name Du Plessis… it’s my grandmoth
-     7.36s  <ret> 발화 (turn1 첫 프레임)
-     7.44s  agent 발화 시작: <ret> That’s a lovely connection to explore, tracing a famil
-     7.55s  user  발화 끝
-     8.40s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.86s]: [source: Wikipedia] Du Plessis is a French surname originating as a ti
-    12.30s  agent 발화 끝
-    12.32s  agent 발화 시작: The name Du Plessis began as a title for the younger son of 
-    16.14s  user  발화 시작: Mhm.
-    16.77s  user  발화 끝
-    17.55s  agent 발화 끝
-    17.83s  user  발화 시작: Oh, interesting! Was it always a French name, then?
-    21.65s  <ret> 발화 (turn5 첫 프레임)
-    21.89s  agent 발화 시작: <ret> It evolved as families migrated and settled in differe
-    21.95s  user  발화 끝
-    23.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: [source: etymonline.com] The surname Du Plessis is of Afrikaans origin
-    27.07s  agent 발화 끝
-    27.11s  agent 발화 시작: Du Plessis is also an Afrikaans surname, meaning “from the c
-    32.44s  agent 발화 끝
-    32.64s  user  발화 시작: That's quite a shift in meaning! So, it went from a title to
-    37.46s  user  발화 끝
+     0.00s  user  발화 시작: I’ve been researching my family history, and I keep coming a
+     8.89s  <ret> 발화 (turn1 첫 프레임)
+     8.97s  agent 발화 시작: <ret> That’s a wonderful endeavor, tracing your roots. It of
+     9.08s  user  발화 끝
+     9.93s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.30s]: [source: Wikipedia] Du Plessis is a French surname, originally denotin
+    15.27s  agent 발화 끝
+    15.28s  agent 발화 시작: The name du Plessis originated in France, signifying someone
+    20.20s  user  발화 시작: Mhm.
+    20.75s  user  발화 끝
+    21.90s  agent 발화 끝
+    22.21s  user  발화 시작: Oh, France? I always assumed it was… well, something else. I
+    29.39s  <ret> 발화 (turn5 첫 프레임)
+    29.63s  agent 발화 시작: <ret> Interestingly, while French in origin, Currently, the 
+    29.67s  user  발화 끝
+    30.35s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.96s]: [source: Forebears] The highest concentration of the du Plessis surnam
+    39.00s  user  발화 시작: South Africa… that *is* surprising. Is there a reason for th
+    39.05s  agent 발화 끝
+    43.73s  <ret> 발화 (turn7 첫 프레임)
+    44.13s  agent 발화 시작: <ret> That migration explains a lot, French Huguenots fleein
+    44.28s  user  발화 끝
+    44.69s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.21s]: [source: South African History Online] Many French Huguenots, fleeing 
+    52.51s  agent 발화 끝

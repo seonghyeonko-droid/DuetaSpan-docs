@@ -58,25 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Wow, really? I always thought it s | S3 Did you remember to take the trash | S4 Sorry about that. So, was he asked
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Hey, did you take the trash out ye | S3 Sorry about that. So, Van Halen ju | S4 That’s so cool! [happy] I didn’t k
 
-     0.00s  user  발화 시작: I was just listening to Beat It, and I was wondering who act
-     6.10s  <ret> 발화 (turn1 첫 프레임)
-     6.34s  agent 발화 시작: <ret> That’s a fantastic track. Eddie Van Halen performed th
-     6.44s  user  발화 끝
-     7.54s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.45s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     8.55s  user  발화 시작: Okay.
-     9.09s  user  발화 끝
-    12.12s  agent 발화 끝
-    12.27s  user  발화 시작: Wow, really? I always thought it sounded like him, but I did
-    17.00s  user  발화 시작: Did you remember to take the trash out?
-    17.18s  user  발화 끝
-    19.18s  user  발화 시작: Sorry about that. So, was he asked specifically to do it, or
-    19.40s  user  발화 끝
-    24.86s  <ret> 발화 (turn6 첫 프레임)
-    25.25s  agent 발화 시작: <ret> Michael Jackson really wanted a rock element in the so
-    25.43s  user  발화 끝
-    26.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: [source: Rolling Stone] Michael Jackson specifically sought out Eddie 
-    31.16s  agent 발화 시작: Michael Jackson specifically sought Eddie Van Halen to blend
-    31.27s  agent 발화 끝
-    36.03s  agent 발화 끝
+     0.00s  user  발화 시작: I was just listening to Beat It, and I was wondering who pla
+     4.72s  <ret> 발화 (turn1 첫 프레임)
+     4.96s  agent 발화 시작: <ret> That’s a really iconic sound. Eddie Van Halen played t
+     5.09s  user  발화 끝
+     6.56s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.92s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     7.46s  user  발화 시작: Okay.
+     8.00s  user  발화 끝
+    11.49s  agent 발화 끝
+    11.61s  user  발화 시작: Wow, really? I always assumed it was someone in Jackson’s ba
+    16.14s  user  발화 시작: Hey, did you take the trash out yet?
+    16.33s  user  발화 끝
+    18.30s  user  발화 시작: Sorry about that. So, Van Halen just… guest starred on that 
+    18.49s  user  발화 끝
+    23.60s  agent 발화 시작: It was a fairly unusual collaboration at the time, yes. He b
+    23.77s  user  발화 끝
+    29.72s  agent 발화 끝
+    30.40s  user  발화 시작: That’s so cool! [happy] I didn’t know he did stuff like that
+    34.84s  user  발화 끝

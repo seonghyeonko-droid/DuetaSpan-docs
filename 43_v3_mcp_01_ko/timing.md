@@ -58,49 +58,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아이폰 십오 프로 맥스. | S3 혹시 그 모델의 가격 정보도 지도에 표시돼 있어? | S4 아니, 됐어. 그 정도면 충분해. 지도 링크를 내 이메일로 보
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아이폰 종류만이라도 좀 자세히 알려 줄 수 있어? | S3 맥 프로는 좀 비싼 편이지? 지금 맥 프로를 사려면 얼마나 해 | S4 좋아, 그럼 맥북 에어 십삼인치, M2 칩, 팔GB RAM, 
 
      0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.77s  <ret> 발화 (turn1 첫 프레임)
-     3.99s  agent 발화 시작: <ret> 알겠습니다. tavily-map을 이용해서 애플 웹사이트의 제품 관련 정보를 중심으로 상세 지도를
-     4.02s  user  발화 끝
-     5.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) map_id: 789234; status: complete; product_count: 27; zoo
-    10.55s  agent 발화 시작: 애플 웹사이트 제품 지도가 완성되었고, 총 스물일곱 개의 제품이 표시됩니다. 지도는 오늘 오후 두 시 삼십오
-    10.75s  agent 발화 끝
-    19.92s  agent 발화 끝
-    20.79s  user  발화 시작: 스물일곱 개나 돼? 아이폰은 몇 개나 표시돼?
-    23.56s  <ret> 발화 (turn4 첫 프레임)
-    23.78s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
-    24.02s  user  발화 끝
-    24.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.89s]: (tool result) iPhone_count: 5; models: "iPhone 15 Pro Max, iPhone 15 P
-    25.53s  agent 발화 시작: 지도에 아이폰 모델 다섯 개가 표시됩니다. 아이폰 십오 프로 맥스, 프로, 플러스, 십오, 그리고 SE 모델
-    25.67s  agent 발화 끝
-    31.40s  user  발화 시작: 응.
-    31.79s  user  발화 끝
-    34.20s  agent 발화 끝
-    34.56s  user  발화 시작: 아이폰 십오 프로 맥스.
-    37.13s  agent 발화 시작: 아이폰 십오 프로 맥스에 대한 상세 정보는—
-    37.15s  user  발화 끝
-    39.43s  user  발화 시작: 혹시 그 모델의 가격 정보도 지도에 표시돼 있어?
-    40.09s  agent 발화 끝
-    42.60s  <ret> 발화 (turn10 첫 프레임)
-    42.90s  user  발화 끝
-    42.92s  agent 발화 시작: <ret> 아, 가격 정보요? 지도에 가격 정보가 포함되어 있는지 확인해 보겠습니다.
-    44.36s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.63s]: (tool result) price: "$1199"; storage_options: "256GB, 512GB, 1TB"; ca
-    47.43s  agent 발화 시작: 아이폰 십오 프로 맥스의 기본 가격은 천백구십구 달러입니다. 저장 용량은 이백오십육기가바이트, 오백십이기가바
-    47.55s  agent 발화 끝
-    51.37s  user  발화 시작: 어.
-    52.01s  user  발화 끝
-    58.28s  agent 발화 끝
-    58.32s  agent 발화 시작: Verizon, AT&T, 그리고 T-Mobile에서 통신사 할인도 제공하고 있어요. 혹시 다른 제품의 가격
-    63.65s  user  발화 시작: 맞아.
-    64.10s  user  발화 끝
-    66.45s  user  발화 시작: 아니, 됐어. 그 정도면 충분해. 지도 링크를 내 이메일로 보내줘.
-    66.61s  agent 발화 끝
-    70.87s  <ret> 발화 (turn16 첫 프레임)
-    71.17s  user  발화 끝
-    71.19s  agent 발화 시작: <ret> 네, 지도 링크를 이메일로 보내드리겠습니다. 이메일 주소를 다시 한번 확인해 주시겠어요?
-    72.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) email_status: sent; timestamp: 2024-01-26 14:48:00 UTC;
-    76.61s  agent 발화 시작: 지도 링크가 이메일로 발송되었습니다. 확인해 보시고, 혹시 다른 도움이 필요하시면 언제든지 말씀해 주세요.
-    76.74s  agent 발화 끝
-    84.26s  agent 발화 끝
+     3.86s  <ret> 발화 (turn1 첫 프레임)
+     4.09s  agent 발화 시작: <ret> 물론입니다. tavily-map을 이용해서 애플 웹사이트의 제품 섹션을 집중적으로 보여주는 상세 
+     4.12s  user  발화 끝
+     5.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) Map created: Apple website, products section highlighted
+    11.37s  agent 발화 시작: 애플 웹사이트 제품 섹션 지도를 만들었습니다. 총 스물세 개의 제품 영역이 확인되었어요.
+    11.51s  agent 발화 끝
+    13.93s  user  발화 시작: 그치.
+    14.57s  user  발화 끝
+    17.67s  agent 발화 끝
+    17.73s  user  발화 시작: 스물세 개나 돼? 아이폰이랑 맥은 각각 몇 개로 분류된 거야?
+    21.68s  agent 발화 시작: 잠시만요, 확인해 볼게요—
+    21.89s  user  발화 끝
+    22.85s  user  발화 시작: 아이폰 종류만이라도 좀 자세히 알려 줄 수 있어?
+    23.57s  agent 발화 끝
+    26.00s  <ret> 발화 (turn7 첫 프레임)
+    26.07s  agent 발화 시작: <ret> 네, 아이폰 종류에 대해 더 자세히 알려드릴게요.
+    26.07s  user  발화 끝
+    26.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.95s]: (tool result) iPhone models identified: iPhone 15, iPhone 15 Pro, iPho
+    28.95s  agent 발화 시작: 아이폰 모델은 아이폰 십오, 아이폰 십오 프로, 아이폰 십오 프로 맥스, 아이폰 십오 플러스, 그리고 아이폰
+    29.02s  agent 발화 끝
+    34.16s  user  발화 시작: 그래.
+    34.70s  user  발화 끝
+    38.05s  <ret> 발화 (turn10 첫 프레임)
+    38.45s  agent 발화 시작: <ret> 맥은 어떠세요? 맥북 에어, 맥북 프로, 아이맥, 맥 미니, 맥 스튜디오 등으로 분류되어 있습니다
+    38.46s  agent 발화 끝
+    40.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Mac models identified: MacBook Air, MacBook Pro, iMac, M
+    45.04s  agent 발화 시작: 맥 모델은 맥북 에어, 맥북 프로, 아이맥, 맥 미니, 맥 스튜디오, 맥 프로 이렇게 여섯 가지입니다.
+    45.17s  agent 발화 끝
+    48.39s  user  발화 시작: 어어.
+    49.20s  user  발화 끝
+    53.42s  agent 발화 끝
+    54.21s  user  발화 시작: 맥 프로는 좀 비싼 편이지? 지금 맥 프로를 사려면 얼마나 해야 돼?
+    58.73s  <ret> 발화 (turn14 첫 프레임)
+    58.81s  agent 발화 시작: <ret> 맥 프로의 가격은 구성에 따라 다르지만, 가장 기본적인 모델은 오천백구십구달러부터 시작합니다.
+    59.02s  user  발화 끝
+    60.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Mac Pro (base model) price: $5999.
+    66.12s  agent 발화 시작: 맥 프로 기본 모델의 가격은 오천구백구십구 달러입니다.
+    66.12s  agent 발화 끝
+    70.56s  agent 발화 끝
+    71.08s  user  발화 시작: 오천구백구십구 달러라… 음, 그럼 맥북 에어는 얼마야?
+    75.43s  <ret> 발화 (turn17 첫 프레임)
+    75.58s  agent 발화 시작: <ret> 맥북 에어는 모델과 사양에 따라 다르지만, 가장 저렴한 모델은 천백구십구 달러부터 시작합니다.
+    75.66s  user  발화 끝
+    77.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) MacBook Air (base model) price: $1099.
+    82.31s  agent 발화 시작: 맥북 에어 기본 모델의 가격은 천백구십구 달러입니다.
+    82.43s  agent 발화 끝
+    86.15s  user  발화 시작: 좋아, 그럼 맥북 에어 십삼인치, M2 칩, 팔GB RAM, 이백오십육GB SSD로 예약해 줘. 배송은 다음
+    86.15s  agent 발화 끝
+    94.14s  <ret> 발화 (turn20 첫 프레임)
+    94.53s  agent 발화 시작: <ret> 맥북 에어 십삼인치, M2 칩, 팔GB RAM, 이백오십육GB SSD를 다음 주 화요일에 배송받도
+    94.76s  user  발화 끝
+    95.90s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.67s]: (tool result) Reservation confirmed: MacBook Air 13-inch (M2, 8GB, 256
+   103.04s  agent 발화 시작: 맥북 에어 예약이 완료되었습니다. 다음 주 화요일에 배송될 예정이며, 주문
+   103.19s  agent 발화 끝
+   108.83s  agent 발화 끝
