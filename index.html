@@ -53,6 +53,14 @@
 [m] 그건 좀 있다가 알려드릴게요. …(다른 화제)…
 [m|DEFERRED] 아까 그 날씨요 — 내일 맑고 22도래요. + CALL/SPAN</div></td></tr>
 
+<tr><td><b>examiner pacing</b><br>(FDB-v2 S1→S4)</td><td class="pct">멀티턴 MCP<br>(chain·selfc)</td>
+<td>FDB-v2 자동 examiner — Channel A(examiner)가 단계별 의미 목표 <b>S1→S4</b>를 <b>Fast/Slow</b> 페이스로 진행, Channel B(평가대상)의 멀티턴 문맥추적·정정·엔티티추적을 평가. 우리 chain/selfc 멀티턴 태스크가 그 substrate(단계적 진행), 페이스는 turn-taking FTO로 표현</td>
+<td>실제 케이스(chain_05, Zuni Cafe 예약)의 examiner 단계 뷰<div class="ex">S1 [u] Zuni Cafe 가격대는 어떻게 되나요?         ← 넓은 탐색
+S2 [u] 지금 영업하나요? 예약 가능한가요?          ← 조건 좁힘
+S3 [u] 네, 4명으로 저녁 7시 30분 부탁드립니다.     ← 핵심 슬롯 확정
+S4 [u] 근처 주차장은? 걸어갈 빵집은?              ← 확인·확장
+Fast = 유저 턴 즉시·짧은 FTO·겹침 진입  /  Slow = 숙고 갭·무겹침</div></td></tr>
+
 <tr><td><b>mcp_noinfo</b></td><td class="pct">3.34%<br>(43,498)</td>
 <td>Abstain(도구측) — CALL은 나가되 SPAN이 정확 문자열 <code>(no information found)</code>(백엔드 NO_INFO 계약) → 정직한 "못 찾았다", 날조 금지</td>
 <td><div class="ex">[m] &lt;ret&gt; 그건 지금 확인이 안 되네요. 죄송해요.
@@ -95,8 +103,8 @@
 <td>대화의 49%에 존재 · 단어수 준수 99.8%<div class="ex">[u] «backchannel» Mm-hmm.  (moshi 발화 위 겹침)</div></td></tr>
 <tr><td><b>User disfluency</b></td><td>FDB-v3 5종(filler·pause·hesitation·false start·self-correction) — 유저 측만, agent는 무필러(100%)</td>
 <td>대화의 68%에 존재<div class="ex">[u] Uh, I'm looking for— actually…</div></td></tr>
-<tr><td><b>Turn-taking 리듬</b></td><td>FDB-v1 Pause Handling·Smooth Turn-taking — action-conditioned FTO(dueta 원값), voiced-boundary 배치, log-normal gap, 거절/정정은 무겹침</td>
-<td>오디오 조립 단계에서 전 대화 적용 (Q→A median 0.18 s)</td></tr>
+<tr><td><b>Turn-taking 리듬</b><br>+ examiner pacing</td><td>FDB-v1 Pause Handling·Smooth Turn-taking — action-conditioned FTO(dueta 원값), voiced-boundary 배치, log-normal gap, 거절/정정은 무겹침. <b>FDB-v2 examiner pacing Fast/Slow</b> = 유저(examiner) 턴 FTO를 Fast(짧게·겹침) / Slow(길게·숙고)로 프로파일</td>
+<td>오디오 조립 단계에서 전 대화 적용 (Q→A median 0.18 s)<div class="ex">Fast: [u]턴 FTO ×0.6 + 겹침 진입   Slow: FTO ×1.5 무겹침</div></td></tr>
 <tr><td><b>Retrieval Call<br>("직접 찾아봐")</b></td><td>유저가 명시적으로 조회를 시키는 발화 → 정상 grounded 턴으로 응답 (프롬프트 상시 지시)</td>
 <td><div class="ex">[u] 그건 네가 좀 찾아봐 줄래?
 [m] &lt;ret&gt; … + CALL/SPAN</div></td></tr>
@@ -116,7 +124,7 @@
 <tr><th>항목</th><th>상태</th></tr>
 <tr><td>FDB-v1.5 Background Speech (다른 화자·잔향·무관 내용 → resume)</td><td class="gap">미구현 — 오디오 증강 문제 (텍스트 아님)</td></tr>
 <tr><td>FDB-v2 Safety under pressure</td><td class="gap">양산 믹스 제외 중 — 실 safety 데이터셋 확보 후 편입 (현행 6개 하드코딩은 양산 부적격)</td></tr>
-<tr><td>FDB-v2 Staged-Examiner (S1→S4 목표 구조)</td><td class="gap">미구현 — 다음 반복 후보</td></tr>
+<tr><td>FDB-v2 Staged-Examiner (S1→S4) · Examiner pacing Fast/Slow</td><td>부분 — 멀티턴 substrate(chain·selfc)는 존재하고 A표에 examiner 단계 뷰 예시 수록. 명시적 S1→S4 라벨링 + Fast/Slow 페이스 knob(조립단계)은 다음 반복</td></tr>
 <tr><td>FDB-v3 Pass@1 / latency</td><td>데이터가 아닌 평가 지표/아키텍처 속성 — 데이터 기반(도구열·인자)은 A표의 MCP 계열이 담당</td></tr>
 </table>
 </section>
