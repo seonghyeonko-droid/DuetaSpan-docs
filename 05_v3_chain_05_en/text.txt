@@ -1,72 +1,67 @@
 v3_chain_05_en src=mcp style=mcp_chained
 SYSTEM: <system> You are Dar, a grounded and empathetic personal guide who helps people with sleep and rest. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 유우 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: 50s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-08-02] User prefers a window seat when traveling.
-     [2026-07-22] User has a Siamese cat named Bella.
-     [2026-03-21] User is planning a trip to Iceland in October.
-     [2026-02-20] User's favorite cuisine is Thai.
-  B. 과거 대화 요약:
-     [2026-04-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
-     [2026-02-15] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  What's the price range at Zuni Cafe?
-      Okay, good. And are they open for dinner tonight?
-      Perfect. Can you make a reservation for two at 7:30?
-      Great. What's the address again?
-  S2  Is parking difficult around there?
-      Hmm, that’s pretty expensive. Are there any BART stations close by?
-      Okay, that sounds good. Maybe we’ll take BART.
-  S3  Actually, before we decide on BART, can you tell me how long the walk 
-      Twenty-seven minutes? That's a bit far.
-      Okay, BART it is then. What time should we leave to get there comforta
-      And what's the weather like there right now?
-  S4  Good to know. Thanks, Dar.
-      I think we will. Is there anything else you can help with?
-      That's perfect. Thank you so much.
+  S1  What’s the price range at Zuni Cafe?
+      Okay, good. And are they open right now?
+      Perfect. Can you make a reservation for two at, uh, 7:30?
+      Fantastic! Is there parking nearby?
+      Five minutes, great. What’s the address of the cafe again?
+  S2  1658 Market… Hmm, is that area safe at night?
+      Is it walkable from the Powell Street station?
+      Okay, that’s a bit far. Maybe an Uber then.
+      Yeah, please.
+  S3  Okay, good to know. What kind of food do they serve?
+      Californian-Mediterranean… Sounds interesting. Do they have vegetarian
+      A mushroom loaf? That sounds… unusual.
+      [happy] Right. Do they take reservations online, or just by phone?
+  S4  OpenTable, okay. Is there a dress code?
+      Casual is good. What’s the phone number, just in case?
+      415-552-2722. Got it. And one last thing… do they have outdoor seating
+      A heated patio… Perfect. Thanks so much, Dar.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] What's the price range at Zuni ⟨ret@2.20s⟩ Cafe?
-[  2.44s][moshi] Let ⟦⚡SPAN@3.16s: (tool result) Zuni Cafe’s price range is $$$, with entrees costing $30 to $60.⟧ me quickly check that for you… Entrees at Zuni Cafe range from thirty to sixty dollars.
-[  4.85s][user ] «backchannel» Uh-huh.
-[  9.32s][user ] Okay, good. And are they open for dinner ⟨ret@11.70s⟩ tonight?
-[ 11.93s][moshi] ⟦⚡SPAN@12.20s: (tool result) Zuni Cafe is open for dinner tonight until 10:00 PM.⟧ I can certainly find that out for you. Zuni Cafe is open until ten PM this evening.
-[ 17.69s][user ] Perfect. Can you make a reservation for two at ⟨ret@21.10s⟩ 7:30?
-[ 21.26s][moshi] I’m ⟦⚡SPAN@22.14s: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:30 PM tonight, confirmation number is 84X⟧ happy to try and secure that for you… Your table for two at Zuni Cafe is confirmed for 7:30 tonight. Your confirmation is 84X9Z.
-      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "date": "tonight", "time": "7:30 PM", "party_size": "2"}}
-[ 25.18s][user ] «backchannel» Yeah.
-[ 31.52s][user ] Great. What's the address ⟨ret@33.22s⟩ again?
-[ 33.46s][moshi] That's a ⟦⚡SPAN@34.58s: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisco, California 94102.⟧ simple one, I recall it… Zuni Cafe is at 1658 Market Street in San Francisco.
-[ 37.52s][user ] «backchannel» Oh.
-[ 40.09s][user ] Is parking difficult around ⟨ret@41.65s⟩ there?
-[ 41.97s][moshi] Let ⟦⚡SPAN@42.61s: (tool result) Street parking near Zuni Cafe is very limited; nearby garages cost $8 to $12 per hour.⟧ me look up parking options nearby… Parking near Zuni Cafe is limited, garages cost eight to twelve dollars an hour.
-      CALL: {"function": "maps_parking_details", "arguments": {"location": "Zuni Cafe"}}
-[ 46.73s][user ] «backchannel» Yeah.
-[ 50.66s][user ] Hmm, that’s pretty expensive. Are there any BART stations ⟨ret@54.43s⟩ close by?
-[ 54.82s][moshi] I ⟦⚡SPAN@55.63s: (tool result) The Civic Center/UN Plaza BART station is a six-minute walk from Zuni Cafe.⟧ can check public transport options for you. The Civic Center BART station is a six-minute walk away.
-      CALL: {"function": "maps_transit_details", "arguments": {"location": "Zuni Cafe"}}
-[ 61.24s][user ] Okay, that sounds good. Maybe we’ll take BART.
-[ 64.31s][moshi] Considering your evening, perhaps a little pre-dinner relaxation— A calming playlist might help you unwind before your meal. I have a few suggestions.
-[ 73.56s][user ] Actually, before we decide on BART, can you tell me how long the walk is from the Van ⟨ret@79.39s⟩ Ness station?
-[ 79.78s][moshi] Of ⟦⚡SPAN@80.59s: (tool result) Walking from Van Ness Station to Zuni Cafe takes approximately twenty-seven minutes.⟧ course, let's check that alternative route— The walk from Van Ness Station is about twenty-seven minutes.
-      CALL: {"function": "maps_walking_time", "arguments": {"start": "Van Ness Station", "end": "Zuni Cafe"}}
-[ 86.13s][user ] Twenty-seven minutes? That's a bit ⟨ret@88.59s⟩ far.
-[ 88.98s][moshi] It does ⟦⚡SPAN@89.79s: (tool result) The Civic Center/UN Plaza BART station is 0.3 miles from Zuni Cafe.⟧ seem a longer option… The Civic Center station is just three tenths of a mile away.
-[ 94.99s][user ] Okay, BART it is then. What time should we leave to get there ⟨ret@98.65s⟩ comfortably?
-[ 99.04s][moshi] I ⟦⚡SPAN@99.77s: (tool result) Travel time to Civic Center/UN Plaza BART station is currently fifteen minutes.⟧ can calculate that for you, taking travel time into account… It will take around fifteen minutes to reach the BART station.
-      CALL: {"function": "maps_travel_time", "arguments": {"start": "your location", "end": "Civic Center/UN Plaza BART station", "transport_mode": "transit"}}
-[103.22s][user ] «backchannel» Yeah.
-[106.98s][user ] And what's the weather like there right now?
-[109.17s][moshi] ⟨ret@109.09s⟩ Let’s ⟦⚡SPAN@110.13s: (tool result) The weather at Civic Center/UN Plaza is currently 62 degrees Fahrenheit and cloudy.⟧ check the current conditions… It's sixty-two degrees and cloudy at the BART station.
-      CALL: {"function": "weather_forecast", "arguments": {"location": "Civic Center/UN Plaza BART station"}}
-[112.03s][user ] «backchannel» Right.
-[114.87s][user ] Good to know. Thanks, Dar.
-[116.83s][moshi] You're very welcome. I hope you and your companion have a delightful evening at Zuni Cafe.
-[122.44s][user ] I think we will. Is there anything else you can help ⟨ret@125.63s⟩ with?
-[125.86s][moshi] Perhaps a gentle ⟦⚡SPAN@127.55s: (tool result) Reminder set for 7:00 PM: Zuni Cafe reservation.⟧ reminder before your reservation? I've set a reminder for 7:00 PM about your Zuni Cafe reservation.
-      CALL: {"function": "set_reminder", "arguments": {"time": "7:00 PM", "description": "Zuni Cafe reservation"}}
-[135.41s][user ] That's perfect. Thank you so much.
-[137.63s][moshi] My pleasure entirely. Enjoy your dinner, and remember to prioritize rest afterwards— a peaceful night is essential.
+[  0.00s][user ] What’s the price range at Zuni ⟨ret@2.12s⟩ Cafe?
+[  2.36s][moshi] Let’s ⟦⚡SPAN@3.08s: (tool result) Zuni Cafe’s price range is $$$ which means dishes cost between thirty and sixty dollars.⟧ see what I can find— Dishes at Zuni Cafe generally cost between thirty and sixty dollars.
+[  5.64s][user ] «backchannel» Okay.
+[  9.38s][user ] Okay, good. And are they open right ⟨ret@11.89s⟩ now?
+[ 12.13s][moshi] ⟦⚡SPAN@12.39s: (tool result) Zuni Cafe is currently open until 10:00 PM.⟧ Checking their current hours— Zuni Cafe is open until ten o'clock tonight.
+[ 17.39s][user ] Perfect. Can you make a reservation for two at, uh, ⟨ret@21.68s⟩ 7:30?
+[ 22.06s][moshi] I can ⟦⚡SPAN@23.36s: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:30 PM. Your confirmation number is 84729.⟧ certainly try to book that— Your table for two at Zuni Cafe is confirmed for 7:30 PM. The confirmation number is 84729.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "party_size": 2, "time": "7:30 PM"}}
+[ 26.86s][user ] «backchannel» Oh.
+[ 32.55s][user ] Fantastic! Is there parking ⟨ret@35.02s⟩ nearby?
+[ 35.26s][moshi] ⟦⚡SPAN@35.74s: (tool result) There is a Union Square Garage located at 333 Post Street, a five-minute walk from Zuni Cafe.⟧ Let me look up parking options— A garage is at 333 Post Street, about a five-minute walk away.
+[ 38.75s][user ] «backchannel» Yeah.
+[ 42.35s][user ] Five minutes, great. What’s the address of the cafe again?
+[ 46.13s][moshi] It’s 1658 Market Street.
+[ 51.17s][user ] 1658 Market… Hmm, is that area safe at night?
+[ 56.69s][moshi] «interrupted» Generally, yes—
+[ 57.50s][user ] «interrupts_prev» Is it walkable from the Powell Street station?
+[ 60.25s][moshi] It is about a twenty-minute walk—
+[ 62.11s][moshi] ⟨ret@62.03s⟩ It’s a twenty-minute walk from ⟦⚡SPAN@64.03s: (tool result) Walking from Powell Street Station to Zuni Cafe takes approximately twenty minutes.⟧ the Powell Street station.
+[ 65.30s][user ] Okay, that’s a bit far. Maybe an Uber then.
+[ 68.13s][moshi] Certainly. Would you like me to estimate an Uber fare?
+[ 73.07s][user ] Yeah, ⟨ret@73.91s⟩ please.
+[ 74.31s][moshi] Let’s ⟦⚡SPAN@75.11s: (tool result) An Uber from Powell Street Station to Zuni Cafe is estimated at fifteen to twenty-five dollars.⟧ check the current Uber rates— The Uber fare is estimated between fifteen and twenty-five dollars.
+      CALL: {"function": "get_uber_fare", "arguments": {"start_location": "Powell Street Station", "end_location": "Zuni Cafe"}}
+[ 78.70s][user ] «backchannel» Yeah.
+[ 82.05s][user ] Okay, good to know. What kind of food do they serve?
+[ 85.27s][moshi] Zuni Cafe is known for its Californian-Mediterranean cuisine.
+[ 89.57s][user ] Californian-Mediterranean… Sounds interesting. Do they have vegetarian ⟨ret@95.43s⟩ options?
+[ 95.75s][moshi] Let's ⟦⚡SPAN@96.55s: (tool result) Zuni Cafe's menu includes several vegetarian options, such as a roasted beet salad and a mushroo⟧ see their menu details— They offer a beet salad and a mushroom loaf for vegetarians.
+[102.78s][user ] A mushroom loaf? That sounds… unusual.
+[106.34s][moshi] It’s one of their signature dishes.
+[108.86s][user ] [happy] Right. Do they take reservations online, or just by phone?
+[112.93s][moshi] ⟨ret@112.85s⟩ I can ⟦⚡SPAN@114.05s: (tool result) Zuni Cafe accepts reservations online through OpenTable and by phone.⟧ check their website for that— You can reserve a table through OpenTable or by calling.
+[116.10s][user ] «backchannel» Yeah.
+[119.27s][user ] OpenTable, okay. Is there a dress code?
+[122.58s][moshi] No, the dress code is casual.
+[123.57s][user ] «backchannel» Right.
+[124.73s][user ] Casual is good. What’s the phone number, just in case?
+[128.32s][moshi] The phone number is 415-552-2722.
+[132.65s][user ] 415-552-2722. Got it. And one last thing… do they have outdoor ⟨ret@139.15s⟩ seating?
+[139.55s][moshi] Let me ⟦⚡SPAN@140.51s: (tool result) Zuni Cafe has a heated outdoor patio.⟧ find out about outdoor seating— Yes, they have a heated patio for outdoor dining.
+[146.25s][user ] A heated patio… Perfect. Thanks so much, Dar.
+[149.92s][moshi] You are very welcome. I hope you enjoy your evening at Zuni Cafe.

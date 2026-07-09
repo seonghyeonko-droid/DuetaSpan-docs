@@ -1,35 +1,22 @@
 v3_rag_27_en src=hotpotqa style=v1
 SYSTEM: <system> You are Doon, a warm and attentive counselor who helps people with studies and staying motivated. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Kim · Location: Paris, France · Nationality: French · Gender: non-binary · Age: early 20s · TZ: Europe/Paris (CET, UTC+1) · Currency: EUR (€)
-  B. 저장 메모리:
-     [2026-07-25] User's favorite cuisine is Italian.
-     [2026-06-05] User is into rock climbing.
-     [2026-04-20] User is allergic to shellfish.
-     [2026-04-19] User's home address is 411 Maple Drive.
-     [2026-02-28] User is vegetarian.
-     [2026-01-23] User works as a architect.
-  B. 과거 대화 요약:
-     [2026-07-17] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I’m trying to find out a bit about Lux Aurunque, but I’m getting lost 
-  S2  Well, when was he born, specifically? I need to know the year.
-  S3  Nineteen seventy… that’s earlier than I expected.
-  S4  But was he a ruler or something? I’ve seen that mentioned—
+  S1  I’m trying to research Lux Aurunque, but I’m getting confused about wh
+  S2  Nineteen seventy? That seems… early for the style of music he created.
+  S3  But if he was born in nineteen seventy, how old was he when he started
+  S4  So, he was a relatively late bloomer, musically speaking?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I’m trying to find out a bit about Lux Aurunque, but I’m getting lost in all the information.
-[  5.70s][moshi] It’s understandable to feel overwhelmed with a new topic; let’s focus on the basics.
-[  8.19s][user ] «backchannel» Yeah, yeah.
-[ 10.38s][user ] Well, when was he born, specifically? I need to know the ⟨ret@13.76s⟩ year.
-[ 14.16s][moshi] That’s a ⟦⚡SPAN@14.88s: Lux Aurunque was born in nineteen seventy.⟧ really good starting point— He was born in nineteen seventy.
-[ 16.17s][user ] «backchannel» Uh-huh.
-[ 18.09s][user ] Nineteen seventy… that’s earlier than I expected.
-[ 21.33s][moshi] «interrupted» It can be surprising when historical figures lived at different times than we imagine—
-[ 25.81s][moshi] ⟨ret@25.74s⟩ He was ⟦⚡SPAN@26.78s: Lux Aurunque was a prominent figure in the creation of the bronze sculptures of the period.⟧ a prominent figure in the creation of bronze sculptures.
-[ 27.82s][user ] «backchannel» Yeah, totally.
-[ 30.71s][user ] But was he a ruler or something? I’ve seen that mentioned—
-[ 34.58s][moshi] ⟨ret@34.50s⟩ That’s a great question, ⟦⚡SPAN@36.26s: Lux Aurunque was a nobleman and served as a trade representative for the region.⟧ and a common point of confusion.
-[ 37.83s][moshi] He served as a trade representative for the region.
+[  0.00s][user ] I’m trying to research Lux Aurunque, but I’m getting confused about when he was actually born.
+[  5.41s][moshi] It’s understandable to feel overwhelmed with research, especially with historical figures. Let's clarify his birth year.
+[ 13.29s][moshi] ⟨ret@12.89s⟩ The ⟦⚡SPAN@13.93s: Lux Aurunque was born in nineteen seventy.⟧ composer Lux Aurunque was born in… …nineteen seventy. That’s the year of his birth, according to available records.
+[ 17.49s][user ] «backchannel» Yeah, yeah.
+[ 20.98s][user ] Nineteen seventy? That seems… early for the style of music he created.
+[ 26.42s][moshi] «interrupted» [laugh] It does seem a bit surprising at first glance, doesn’t it? His work is quite innovative—
+[ 30.89s][user ] «interrupts_prev» But if he was born in nineteen seventy, how old was he when he started composing?
+[ 36.03s][moshi] That’s a very insightful question. Let’s determine his age when he began composing.
+[ 40.95s][moshi] ⟨ret@40.88s⟩ Lux Aurunque released ⟦⚡SPAN@42.64s: Lux Aurunque’s debut composition appeared in nineteen ninety-five.⟧ his first composition in… …nineteen ninety-five, making him twenty-five years old at the time.
+[ 43.15s][user ] «backchannel» Mm-hmm.
+[ 48.04s][user ] So, he was a relatively late bloomer, musically speaking?

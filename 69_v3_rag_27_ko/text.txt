@@ -1,35 +1,25 @@
 v3_rag_27_ko src=hotpotqa style=v1
 SYSTEM: <system> 당신은 학습 및 동기 부여에 도움을 주는 따뜻하고 세심한 상담사 Doon입니다. 기본적으로 반말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Kim · Location: Paris, France · Nationality: French · Gender: non-binary · Age: early 20s · TZ: Europe/Paris (CET, UTC+1) · Currency: EUR (€)
-  B. 저장 메모리:
-     [2026-07-25] User's favorite cuisine is Italian.
-     [2026-06-05] User is into rock climbing.
-     [2026-04-20] User is allergic to shellfish.
-     [2026-04-19] User's home address is 411 Maple Drive.
-     [2026-02-28] User is vegetarian.
-     [2026-01-23] User works as a architect.
-  B. 과거 대화 요약:
-     [2026-07-17] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Lux Aurunque에 대해 좀 알아보고 싶은데, 정보가 너무 많아서 헷갈려요.
-  S2  음, 정확히 언제 태어났는지 알고 싶어요. 년도가 필요해요.
-  S3  일천구백칠십 년… 생각보다 훨씬 빠르네요.
-  S4  그런데 왕이나 그런 사람이었어요? 그런 이야기가 있더라고요—
+  S1  Lux Aurunque이라는 작곡가가 언제 태어났는지 알 수 있을까요?
+      아, 그렇군요. 혹시 그분이 어떤 장르의 음악을 주로 하셨나요?
+  S2  실험적인 전자 음악이라… 정말 흥미롭네요. 그분이 활동했던 시기에—
+  S3  그 시대에 영향을 많이 받은 다른 작곡가도 있었나요?
+  S4  탠저린 드림도 좋아하는데, 럭스 오랑크와 비슷한 점이 있었나요?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Lux Aurunque에 대해 좀 알아보고 싶은데, 정보가 너무 많아서 헷갈려요.
-[  5.06s][moshi] 새로운 주제에 압도당하는 건 당연해, 기본부터 시작하자.
-[  7.35s][user ] «backchannel» 네.
-[  9.00s][user ] 음, 정확히 언제 태어났는지 알고 싶어요. 년도가 필요해요.
-[ 13.35s][moshi] ⟨ret@13.20s⟩ 좋은 ⟦⚡SPAN@14.48s: Lux Aurunque was born in nineteen seventy.⟧ 질문이야— 일천구백칠십 년에 태어났어.
-[ 15.22s][user ] «backchannel» 음.
-[ 16.95s][user ] 일천구백칠십 년… 생각보다 훨씬 빠르네요.
-[ 20.96s][moshi] «interrupted» 역사적인 인물이 언제 살았는지 헷갈릴 때가 있잖아—
-[ 24.33s][moshi] ⟨ret@24.18s⟩ 청동 ⟦⚡SPAN@25.22s: Lux Aurunque was a prominent figure in the creation of the bronze sculptures of the period.⟧ 조각을 만드는 데 중요한 역할을 했어.
-[ 25.88s][user ] «backchannel» 예.
-[ 27.95s][user ] 그런데 왕이나 그런 사람이었어요? 그런 이야기가 있더라고요—
-[ 32.86s][moshi] ⟨ret@32.63s⟩ 좋은 질문이고, 많은 ⟦⚡SPAN@34.63s: Lux Aurunque was a nobleman and served as a trade representative for the region.⟧ 사람들이 헷갈려 하는 부분이야.
-[ 36.34s][moshi] 그는 그 지역의 무역 대표를 맡았어.
+[  0.00s][user ] Lux Aurunque이라는 작곡가가 언제 태어났는지 알 수 있을까요?
+[  3.83s][moshi] ⟨ret@3.76s⟩ 그분이 ⟦⚡SPAN@5.44s: Lux Aurunque was born in nineteen seventy.⟧ 언제 태어나셨는지 알아볼게요. 럭스 오랑크는 천구백칠십년에 태어났어요.
+[  7.04s][user ] «backchannel» Yeah, yeah.
+[ 10.15s][user ] 아, 그렇군요. 혹시 그분이 어떤 장르의 음악을 주로 하셨나요?
+[ 14.05s][moshi] 럭스 오랑크는 다양한 장르를 시도했지만, 주로 실험적인 전자 음악을 만들었어요.
+[ 17.31s][user ] «backchannel» Uh-huh.
+[ 20.20s][user ] 실험적인 전자 음악이라… 정말 흥미롭네요. 그분이 활동했던 시기에—
+[ 25.62s][moshi] «interrupted» 그 시대의 전자 음악은 기술 발전과 함께—
+[ 27.97s][user ] «interrupts_prev» 그 시대에 영향을 많이 받은 다른 작곡가도 있었나요?
+[ 31.39s][moshi] 그 시대에는 브라이언 이노나 탠저린 드림 같은 작곡가들도 큰 영향을 받았어요.
+[ 34.28s][user ] «backchannel» Yeah, totally.
+[ 37.86s][user ] 탠저린 드림도 좋아하는데, 럭스 오랑크와 비슷한 점이 있었나요?
+[ 42.04s][moshi] 두 분 모두 앰비언트 음악에 영향을 주었고, 독특한 음향 실험을 추구했다는 공통점이 있어요.

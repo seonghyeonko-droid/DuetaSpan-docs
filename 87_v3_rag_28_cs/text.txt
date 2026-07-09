@@ -1,22 +1,10 @@
 v3_rag_28_cs src=nq style=v2
 SYSTEM: <system> 당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 정슬 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: 40s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-07-02] User is allergic to peanuts.
-     [2026-05-20] User works as a accountant.
-     [2026-03-04] User prefers a window seat when traveling.
-     [2026-02-20] User is pescatarian.
-     [2026-02-07] User is planning a trip to Switzerland in March.
-     [2026-01-03] User's home address is 960 Pine Court.
-  B. 과거 대화 요약:
-     [2026-07-16] Researching a used car — comparing hybrid models; wants under 30k miles
-     [2026-02-04] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 정부 부처에 대해 읽다가… 참전용사부 어떻게 시작됐는지 ⟨ret@4.67s⟩ 궁금해.
-[  5.06s][moshi] 좋은 질문이에요, ⟦⚡SPAN@6.67s: The United States Department of Veterans Affairs was created on July 21, 1930.⟧ 뭔가 세우는 데 시간이 얼마나 걸리는지 생각해보면요… 참전용사부는 천구백삼십 년 7월 21일에 만들어졌습니다.
-[ 14.81s][user ] 1930년? 좀… 비교적 최근 같지 않아? 더 오래됐을 줄 알았는데.
-[ 19.88s][moshi] 역사적으로 군 복무를 생각해 보면, 많은 분들이 예상하는 것보다 조금 늦은 편입니다.
-[ 27.15s][user ] 근데 그전에 참전용사들을 위한 서비스는 없었어? 예를 들어 남북전쟁이나… 1차 세계대전 이후 같은 거 말이야.
-[ 34.13s][moshi] ⟨ret@34.05s⟩ 네, 물론 ⟦⚡SPAN@36.05s: Prior to 1930, veteran benefits were administered by the Bureau of Pensions, established in 1861.⟧ 이전에도 서비스는 있었지만, 단일 부처 내에서는 아니었어요… 천팔백육십일 년 이전에 참전용사 혜택은 1861년에 설립된 연금국에서 처리했습니다.
+[  0.00s][user ] 야, 정부 부처들 읽다가… 참전용사부 있잖아, 그거 언제 시작했는지 ⟨ret@5.59s⟩ 궁금해졌어.
+[  5.99s][moshi] 음, ⟦⚡SPAN@7.19s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 좋은 질문이세요. 참전용사부는 천구백삼십칠월 이십일일에 설립되었어요.
+[ 11.45s][user ] 천구백삼십? 생각보다 엄청 최근이네, 진짜. 훨씬 오래됐을 줄 알았어.
+[ 16.19s][moshi] 나라 역사를 생각하면 비교적 젊은 부처이긴 해요. 많은 것들이 시간이 지나면서 변하니까요.
+[ 24.11s][user ] 근데 천구백삼십년 *전에* 참전용사 서비스는 없었어? 갑자기 그때부터 시작한 건 아니겠지—
+[ 30.41s][moshi] ⟨ret@30.33s⟩ 네, 맞아요. ⟦⚡SPAN@32.33s: Prior to 1930, veteran benefits were administered by the Bureau of War Risks Insurance and the Veterans Bureau⟧ 질문하신 대로 천구백삼십년 이전에 참전용사 혜택은 전쟁위험보험국과 참전용사국, 두 개의 별도 기관에서 담당했어요.

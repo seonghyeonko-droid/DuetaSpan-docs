@@ -1,48 +1,34 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: David · Location: London, United Kingdom · Nationality: British · Gender: male · Age: early 30s · TZ: Europe/London (GMT, UTC+0) · Currency: GBP (£)
-#   B. 저장 메모리:
-#      [2026-06-05] User is gluten-free.
-#      [2026-05-20] User is planning a trip to Kyoto in March.
-#      [2026-03-07] User's favorite cuisine is Italian.
-#      [2026-02-07] User has a Golden Retriever named Max.
-#   B. 과거 대화 요약:
-#      [2026-07-22] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+# EXAMINER(FDB-v2) 단계: S1 혹시 '맘마미아!'에 나오는 'My Love, My Life' | S2 아, 비욘 울바에우스! ABBA 멤버 맞죠? | S3 그 노래 가사도 정말 감동적이에요. 혹시 다른 ABBA 노래도 | S4 알겠습니다. 한번 들어봐야겠네요. 감사합니다.
 
-# EXAMINER(FDB-v2) 단계: S1 맘마미아를 듣고 있었는데, 궁금한 게 생겼어요. “My Lov | S2 네, 정말 그렇네요. 음, 그는 다른 뮤지컬에도 참여했나요? | S3 아, 베니 앤더슨도 그 작품에 참여했나요? | S4 그럼, ABBA랑 *Chess*랑… 혹시 다른 큰 작품도 있나
-
-     0.00s  user  발화 시작: 맘마미아를 듣고 있었는데, 궁금한 게 생겼어요. “My Love, My Life”는 누가 썼나요?
-     5.83s  <ret> 발화 (turn1 첫 프레임)
-     5.98s  agent 발화 시작: <ret> 정말 좋은 노래네요. 그 아름다운 곡은 원래 *Chess*를 위해 비욘 울바에우스가 작곡한 곡이에
-     6.16s  user  발화 끝
-     7.59s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.91s]: Björn Ulvaeus wrote “My Love, My Life” for the musical *Chess*.
-    12.29s  user  발화 시작: 아, *Chess*군요! 맘마미아 곡이 아니었다니, 몰랐어요.
-    12.33s  agent 발화 끝
-    16.86s  user  발화 끝
-    16.97s  agent 발화 시작: 노래가 여러 작품에서 새로운 생명을 얻는다는 게 정말 흥미롭지 않나요?
-    21.41s  agent 발화 끝
-    21.47s  user  발화 시작: 네, 정말 그렇네요. 음, 그는 다른 뮤지컬에도 참여했나요?
-    25.88s  <ret> 발화 (turn5 첫 프레임)
-    25.95s  user  발화 끝
-    26.19s  agent 발화 시작: <ret> 비욘 울바에우스는 꽤 풍부한 음악적 배경을 가지고 있어요. 베니 앤더슨과 라스 바이스마크와 함께 
-    27.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.33s]: Björn Ulvaeus co-wrote *Kristina from Duvemåla* with Benny Andersson a
-    37.30s  user  발화 시작: 발음하기 어렵네요! 그 작품도 유명한가요?
-    37.32s  agent 발화 끝
-    40.14s  <ret> 발화 (turn7 첫 프레임)
-    40.53s  agent 발화 시작: <ret> 스웨덴에서는 꽤 인기가 있지만, 다른 곳에서는 덜 알려져 있을 수도 있어요. 웅장한 역사극이에요.
-    40.67s  user  발화 끝
-    41.26s  ⚡SPAN 주입(IRRELEVANT) [d'=1.12s / d_lead=6.25s]: (tool result) AAPL: 170.34 +0.45 (0.26%)
-    46.78s  agent 발화 끝
-    46.83s  user  발화 시작: 아, 베니 앤더슨도 그 작품에 참여했나요?
-    49.61s  user  발화 시작: 저… 그러니까, 방금 말씀하셨지만, 그는 자주 협업하는 분인가요?
-    49.73s  user  발화 끝
-    54.63s  agent 발화 시작: 네, 베니 앤더슨과 비욘 울바에우스는 아주 유명한 작곡 듀오예요. 많은 프로젝트에서 함께 작업했어요.
-    54.80s  user  발화 끝
-    57.50s  user  발화 시작: 네.
-    57.95s  user  발화 끝
-    61.38s  user  발화 시작: 그럼, ABBA랑 *Chess*랑… 혹시 다른 큰 작품도 있나요?
-    61.44s  agent 발화 끝
-    66.66s  user  발화 끝
-    66.69s  agent 발화 시작: 그들은 버디 홀리에게 바치는 뮤지컬 *Buddy – The Musical*의 음악도 만들었어요. 아주 활기찬
-    73.08s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 '맘마미아!'에 나오는 'My Love, My Life' 노래를 누가 썼는지 알 수 있을까요?
+     5.14s  user  발화 끝
+     5.18s  agent 발화 시작: 물론이죠. 그 노래에 대해 궁금하시군요.
+     8.01s  <ret> 발화 (turn2 첫 프레임)
+     8.07s  agent 발화 시작: <ret> 그 노래를 작곡한 사람은… 비욘 울바에우스 씨가 'My Love, My Life'를 작곡했습니다.
+     8.23s  agent 발화 끝
+     9.05s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.16s]: Björn Ulvaeus.
+    14.46s  user  발화 시작: 아, 비욘 울바에우스! ABBA 멤버 맞죠?
+    14.55s  agent 발화 끝
+    18.12s  <ret> 발화 (turn4 첫 프레임)
+    18.39s  user  발화 끝
+    18.44s  agent 발화 시작: <ret> 네, 맞습니다. ABBA의 멤버 중 한 분이시죠.
+    20.12s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.03s]: (tool result) AAPL: 170.34 USD +0.57 (0.34%)
+    22.28s  agent 발화 시작: ABBA는 정말 대단한 그룹이었죠. 전 세계적으로 사랑받았어요.
+    22.47s  agent 발화 끝
+    25.32s  user  발화 시작: Uh-huh.
+    25.90s  user  발화 끝
+    27.43s  agent 발화 시작: 그분들은 독특한 음악 스타일로 많은 사람들에게 감동을 주었어요.
+    27.57s  agent 발화 끝
+    31.74s  agent 발화 끝
+    31.81s  user  발화 시작: 그 노래 가사도 정말 감동적이에요. 혹시 다른 ABBA 노래도 추천해주실 수 있을까요?
+    37.51s  user  발화 끝
+    37.73s  agent 발화 시작: 물론입니다. 'Dancing Queen'이나 'The Winner Takes It All'도 훌륭한 노래들이
+    42.42s  agent 발화 시작: 두 곡 모두 많은 사랑을 받았고, 지금도 많은 사람들에게 기억되고 있죠.
+    42.59s  agent 발화 끝
+    44.34s  user  발화 시작: Yeah.
+    45.16s  user  발화 끝
+    47.14s  agent 발화 끝
+    47.44s  user  발화 시작: 알겠습니다. 한번 들어봐야겠네요. 감사합니다.
+    50.68s  user  발화 끝

@@ -1,42 +1,32 @@
 v3_abs_22_ko src=squad2 style=abstain
 SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 따뜻하고 세심한 지원 조언가 Frunax입니다. 기본적으로 반말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Hato · Location: Tokyo, Japan · Nationality: Japanese · Gender: male · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
-  B. 저장 메모리:
-     [2026-07-17] User has a Corgi named Mochi.
-     [2026-05-04] User is into alpine wildflower photography.
-     [2026-04-20] User's home address is 922 Birch Road.
-     [2026-04-07] User works as a graduate student.
-     [2026-01-15] User prefers an aisle seat when traveling.
-  B. 과거 대화 요약:
-     [2026-07-19] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-01-18] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  무슨 정부 형태를 무정부주의자들이 싫어하는지 궁금해?
-      좋아, 그럼 미국은 어때? 미국의 정부 형태는 뭐야?
-  S2  캘리포니아를 대표하는 현재 상원 의원들은 누구야?
-      알아두면 좋네. 음—
-  S3  걔네들이 대통령과 의견이 안 맞는 경우도 있어?
-      흥미롭네. 항상 모든 것에 동의하는 건 아니라는 거지?
-  S4  그건 말이 되네. [happy] 지금 샌프란시스코 날씨는 어때?
+  S1  어떤 정부 형태를 무정부주의자들이 제일 싫어할까?
+      그럼, 무정부주의자들은 보통 어떤 정부를 반대해?
+  S2  권력 집중이 싫다고? 그럼, 그들은 민주주의도 싫어하는 거야?
+      그건 좀 의외인데—
+  S3  그럼, 무정부주의자들은 국가 자체가 필요 없다고 생각하는 거야?
+      자치적인 공동체라… 그럼, 그런 공동체는 어떻게 운영되는 거야?
+  S4  직접 민주주의라… 좀 이상적인 것 같기도 하고. 현실적으로 가능할까?
+      노력하는 공동체가 있다고? 어디에 있어?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 싫어하는지 궁금해?
-[  3.43s][moshi] «interrupted» 음, 아주 흥미로운 질문인데—
-[  5.53s][moshi] ⟨ret@5.38s⟩ 미안하지만, 그 질문에 대한 ⟦⚡SPAN@7.38s: (no information found)⟧ 확실한 답은 지금 당장 드릴 수가 없어.
-[  8.17s][user ] «backchannel» 응.
-[ 10.04s][user ] 좋아, 그럼 미국은 어때? 미국의 정부 형태는 뭐야?
-[ 13.63s][moshi] ⟨ret@13.55s⟩ ⟦⚡SPAN@14.05s: The United States has a constitutional federal republic, where citizens elect representatives to make decision⟧ 이야기를 바꿔보자— 미국은 선출된 대표자를 가진 헌법 연방 공화국으로 운영돼. 균형과 대표성을 위한 시스템이야.
-[ 21.20s][user ] 캘리포니아를 대표하는 현재 상원 의원들은 ⟨ret@24.28s⟩ 누구야?
-[ 24.59s][moshi] 알아봐 ⟦⚡SPAN@25.40s: (tool result) Alex Padilla is a Democrat, serving since 2021. Laphonza Butler is a Democrat, serving since 202⟧ 줄게— 현재 캘리포니아 상원 의원은 알렉스 파딜라와 라폰자 버틀러, 둘 다 민주당이야.
-[ 31.49s][user ] 알아두면 좋네. 음—
-[ 33.27s][moshi] «interrupted» 걔네들은 캘리포니아의 이익을 위해 열심히 일하고 있어—
-[ 35.77s][user ] «interrupts_prev» 걔네들이 대통령과 의견이 안 맞는 경우도 있어?
-[ 38.78s][moshi] «interrupted» 그건 생각해 볼 만한 질문이야—
-[ 40.44s][moshi] ⟨ret@40.36s⟩ 파딜라 상원 의원과 ⟦⚡SPAN@42.36s: Senators Padilla and Butler have publicly disagreed with President Biden on certain policy issues, including a⟧ 버틀러 상원 의원은 에너지와 국경 보안 문제로 바이든 대통령과 공개적으로 의견이 달랐어.
-[ 49.41s][user ] 흥미롭네. 항상 모든 것에 동의하는 건 아니라는 거지?
-[ 52.98s][moshi] 절대 그렇지 않아. 건전한 토론은 우리 시스템의 중요한 부분이야.
-[ 57.91s][user ] 그건 말이 되네. [happy] 지금 샌프란시스코 날씨는 ⟨ret@61.19s⟩ 어때?
-[ 61.26s][moshi] 현재 ⟦⚡SPAN@62.39s: (tool result) The current temperature is 68 degrees Fahrenheit. It is partly cloudy. Winds are from the west a⟧ 날씨를 확인해 볼게— 샌프란시스코는 현재 섭씨 이십사 도이고 부분적으로 흐리며, 바람은 시속 사십 킬로미터로 불고 있어.
+[  0.00s][user ] 어떤 정부 형태를 무정부주의자들이 제일 ⟨ret@3.38s⟩ 싫어할까?
+[  3.70s][moshi] 아, ⟦⚡SPAN@4.66s: (no information found)⟧ 흥미로운 질문이네. 잠깐 알아볼게.
+[  6.18s][moshi] 미안하지만, 그 질문에 대한 답을 찾을 수 없었어. 무정부주의자들이 특히 싫어하는 정부 형태에 대한 정보가 없네.
+[ 10.28s][user ] «backchannel» Uh-huh.
+[ 12.97s][user ] 그럼, 무정부주의자들은 보통 어떤 정부를 반대해?
+[ 16.87s][moshi] 보통 무정부주의자들은 모든 형태의 강압적인 정부를 반대해. 그들은 계층 구조나 권력 집중을 싫어하거든.
+[ 24.67s][user ] 권력 집중이 싫다고? 그럼, 그들은 민주주의도 싫어하는 거야?
+[ 29.00s][moshi] 민주주의도 완벽하다고 생각하지 않아. 특히, 국가 권력이 너무 강하거나 개인의 자유를 침해한다고 생각하면 반대할 수 있어.
+[ 38.17s][user ] 그건 좀 의외인데—
+[ 39.33s][user ] 그럼, 무정부주의자들은 국가 자체가 필요 없다고 생각하는 거야?
+[ 43.61s][moshi] 맞아. 많은 무정부주의자들은 국가가 개인의 자유를 억압하고 불평등을 심화시킨다고 믿어. 자치적인 공동체를 선호하지.
+[ 52.54s][user ] 자치적인 공동체라… 그럼, 그런 공동체는 어떻게 운영되는 거야?
+[ 57.80s][moshi] 보통 직접 민주주의나 합의에 기반해서 운영돼. 모든 구성원이 의사 결정에 참여하고, 서로 협력해서 문제를 해결하는 거지.
+[ 65.38s][user ] 직접 민주주의라… 좀 이상적인 것 같기도 하고. 현실적으로 가능할까?
+[ 71.90s][moshi] 물론 어려움도 있겠지. 하지만, 많은 무정부주의자들은 충분히 실현 가능한 대안이라고 믿고, 실제로 그런 공동체를 만들려고 노력하고 있어.
+[ 80.79s][user ] 노력하는 공동체가 있다고? 어디에 있어?
+[ 83.42s][moshi] 몇몇 곳에 있어. 예를 들어 스페인 카탈루냐 지역의 일부 마을이나 아르헨티나의 자치 지역 같은 곳에서 실험적인 공동체들이 운영되고 있어.

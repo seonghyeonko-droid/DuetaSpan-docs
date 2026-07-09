@@ -1,66 +1,76 @@
 v3_mcp_00_ko src=mcp style=v1
-SYSTEM: <system> 당신은 친구 관계 및 사교 생활에 대한 도움을 주는 긍정적이고 지지적인 상담사 Nellara입니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Nina · Location: Berlin, Germany · Nationality: German · Gender: female · Age: 40s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
-  B. 저장 메모리:
-     [2026-06-26] User is planning a trip to Kyoto in May.
-     [2026-06-04] User works as a accountant.
-     [2026-04-24] User prefers an aisle seat when traveling.
-     [2026-03-03] User is into birdwatching.
-     [2026-01-09] User is allergic to peanuts.
-  B. 과거 대화 요약:
-     [2026-06-27] Planning a birthday dinner — party of six; looking for outdoor seating
-     [2026-01-11] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 어려움을 겪는 사람들을 돕는 긍정적이고 지지적인 상담사 Nellara입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  에펠탑 파리 지도를 알려 주실 수 있을까요?
-      알겠습니다, 좋습니다. 그럼 자유의 여신상은요?
-      음, 자유의 여신상 근처에 괜찮은 카페가 있을까요?
-      오, 피난시에 파티세리가 괜찮아 보이네요. 자유의 여신상에서 그곳까지 가는 길을 알려 주시겠어요?
-  S2  완벽하네요. 그리고 음—
-      거기에 야외 좌석이 있나요?
-      정말 이상적이네요. 친구를 만나기로 했어요.
-  S3  사실 조금 긴장되네요. 오랜만에 보는 친구라서요.
-      계속 무슨 말을 해야 할지 걱정돼요.
-      만약 그녀가 변했다면 어떡하죠?
-      맞아요. 그냥… 5년이나 됐어요.
-  S4  그럴지도요. 만나기 전에 그녀에게 미리 문자 메시지를 보내볼까요?
-      알겠습니다. 고마워요, 넬라라.
-      그럴 것 같아요.
+  S1  Can you give me the coordinates for the Eiffel Tower in Paris?
+      That's helpful. What about the Statue of Liberty?
+      Hmm, are those coordinates used for anything specific?
+      Oh, right. I— I mean, could you find a nice Italian restaurant near th
+      Four point two sounds good. What's the quickest way to get there from 
+  S2  Eight hours? Wow. Is there a cheaper option, even if it takes longer?
+      That's… a really long time!
+      Forget the restaurant. Can you just show me hotels near the Statue of 
+      One hundred fifty dollars isn't bad. Does it have parking?
+      Okay, good to know. What's the weather like in New York right now?
+  S3  Sixty-eight degrees is nice. I think I’ll book a room at the Wagner.
+      Wonderful! That’s all sorted.
+      Yeah. I’m really looking forward to it.
+      It is. Do you think I should pack an umbrella?
+      You're right, better safe than sorry.
+  S4  Thanks for all your help, Nellara.
+      I think I will!
+      I definitely will.
+      Okay, I think that’s everything for now.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 에펠탑 파리 지도를 알려 주실 수 ⟨ret@2.36s⟩ 있을까요?
-[  2.60s][moshi] 네, 그 유명한 ⟦⚡SPAN@4.36s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ 랜드마크의 위치를 찾아 드릴게요— 위도는 사십팔 점 팔오팔사, 경도는 이 점 이구사오입니다.
-[ 10.95s][user ] 알겠습니다, 좋습니다. 그럼 자유의 ⟨ret@13.48s⟩ 여신상은요?
-[ 13.79s][moshi] 네, 자유의 여신상 ⟦⚡SPAN@15.48s: (tool result) The Statue of Liberty is located at latitude 40.6892, longitude -74.0445.⟧ 좌표도 찾아 드릴 수 있습니다— 위도는 사십 점 육팔구이, 경도는 마이너스 칠십사 점 영사사오입니다.
-[ 18.81s][user ] «backchannel» 맞아요.
-[ 21.76s][user ] 음, 자유의 여신상 근처에 괜찮은 카페가 ⟨ret@25.28s⟩ 있을까요?
-[ 25.68s][moshi] 네, 근처 ⟦⚡SPAN@27.04s: (tool result) Found three cafes: 'The Irish Pub', rating 4.2, 200m away; 'Battery Park Cafe', rating 3.8, 300m⟧ 카페를 찾아 드릴 수 있습니다— 아일랜드 펍, 배터리 파크 카페, 피난시에 파티세리가 있습니다.
-      CALL: {"function": "maps_search", "arguments": {"query": "cafes near Statue of Liberty", "radius": "500m"}}
-[ 32.47s][user ] 오, 피난시에 파티세리가 괜찮아 보이네요. 자유의 여신상에서 그곳까지 가는 길을 알려 주시겠어요?
-[ 39.37s][moshi] ⟨ret@38.97s⟩ 네, ⟦⚡SPAN@40.57s: (tool result) Directions: Walk 0.5km southwest, approximately 8 minutes.⟧ 가장 좋은 경로를 안내해 드릴게요— 서남쪽으로 0.5킬로미터, 약 8분 정도 걸립니다.
-      CALL: {"function": "maps_directions", "arguments": {"origin": "Statue of Liberty", "destination": "Financier Patisserie"}}
-[ 46.01s][user ] 완벽하네요. 그리고 음—
-[ 47.79s][user ] 거기에 야외 좌석이 ⟨ret@49.54s⟩ 있나요?
-[ 49.69s][moshi] 좋은 ⟦⚡SPAN@50.50s: (tool result) Financier Patisserie has outdoor seating, is open until 6 PM, and accepts credit cards.⟧ 질문이세요, 잠깐 확인해 볼게요— 네, 피난시에 파티세리에는 야외 좌석이 있고 오후 6시까지 영업합니다.
-      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJhX49V-SswokR8e2F06W_U7A"}}
-[ 52.76s][user ] «backchannel» 아.
-[ 57.62s][moshi] 신용카드도 받을 수 있어서 편리하겠네요— .
-[ 58.47s][user ] «backchannel» 아.
-[ 61.42s][user ] 정말 이상적이네요. 친구를 만나기로 했어요.
-[ 64.74s][moshi] 정말 좋네요! 멋진 카페에서 친구를 만나는 건 오후 시간을 보내기에 아주 좋은 방법입니다.
-[ 70.92s][user ] 사실 조금 긴장되네요. 오랜만에 보는 친구라서요.
-[ 74.52s][moshi] 오랜만에 친구와 다시 만나는 것에 대해 약간 긴장하는 것은 완전히 정상입니다 [happy].
-[ 78.94s][user ] 계속 무슨 말을 해야 할지 걱정돼요.
-[ 81.06s][moshi] 자주 우리는 완벽한 말을 하려고 압박을 가하지만, 때로는 당신의 삶에서 일어난 일을 공유하는 것만으로도 충분합니다.
-[ 88.99s][user ] 만약 그녀가 변했다면 어떡하죠?
-[ 91.54s][moshi] 사람들은 자연스럽게 시간이 지남에 따라 변화하고, 그것은 괜찮습니다. 변화는 삶의 일부이며, 당신의 우정이 특별한 점을 다시 발견하는 것은 흥미로운 일이 될 수 있습니다.
-[103.71s][user ] 맞아요. 그냥… 5년이나 됐어요.
-[106.47s][moshi] 5년은 상당히 긴 시간이지만, 굳건한 우정의 기반은 거리와 시간을 견딜 수 있는 경우가 많습니다.
-[111.98s][user ] 그럴지도요. 만나기 전에 그녀에게 미리 문자 메시지를 보내볼까요?
-[116.68s][moshi] 좋은 생각이에요. 작은 확인은 두 사람 모두의 만남 전 긴장을 완화할 수 있습니다.
-[121.68s][user ] 알겠습니다. 고마워요, 넬라라.
-[123.89s][moshi] 천만에요. 마음을 조금 편안하게 해 드릴 수 있어서 기쁩니다. 그냥 당신 자신이 되시고 재회를 즐기세요.
-[130.26s][user ] 그럴 것 같아요.
-[131.25s][moshi] 정말 좋네요! 친구와 즐거운 시간을 보내시길 바랍니다.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.27s⟩ Paris?
+[  3.50s][moshi] The Eiffel Tower in Paris ⟦⚡SPAN@5.27s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ is at latitude forty-eight point eight five eight four, and longitude two point two nine four five.
+      CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
+[  8.70s][user ] «backchannel» Yeah.
+[ 11.83s][user ] That's helpful. What about the Statue of Liberty?
+[ 14.68s][moshi] ⟨ret@14.60s⟩ The Statue of Liberty in ⟦⚡SPAN@16.60s: (tool result) The Statue of Liberty is located at latitude 40.6892, longitude -74.0445.⟧ New York is at latitude forty point six eight nine two, and longitude negative seventy-four point zero four four five.
+      CALL: {"function": "maps_geo", "arguments": {"location": "Statue of Liberty, New York"}}
+[ 20.37s][user ] «backchannel» Yeah, totally.
+[ 24.73s][user ] Hmm, are those coordinates used for anything specific?
+[ 28.27s][moshi] They're essential for precise location on maps and in GPS systems, allowing for accurate navigation and pinpointing landmarks.
+[ 36.51s][user ] Oh, right. I— I mean, could you find a nice Italian restaurant near the Statue of ⟨ret@41.78s⟩ Liberty?
+[ 42.17s][moshi] Finding ⟦⚡SPAN@42.74s: (tool result) Il Cortile is an Italian restaurant at 125 Cedar St, New York, rated 4.2 stars.⟧ a restaurant nearby— Il Cortile, an Italian restaurant, is at one hundred twenty-five Cedar Street, New York, with a four point two star rating.
+      CALL: {"function": "maps_search", "arguments": {"query": "Italian restaurant", "latitude": 40.6892, "longitude": -74.0445}}
+[ 51.77s][user ] Four point two sounds good. What's the quickest way to get there from the Eiffel ⟨ret@56.03s⟩ Tower?
+[ 56.26s][moshi] ⟦⚡SPAN@56.53s: (tool result) The quickest route is a flight, approximately 8 hours and 30 minutes.⟧ The quickest route from the Eiffel Tower to Il Cortile is by flight, taking around eight hours and thirty minutes.
+      CALL: {"function": "maps_route", "arguments": {"origin": "48.8584, 2.2945", "destination": "125 Cedar St, New York"}}
+[ 58.12s][user ] «backchannel» Okay.
+[ 62.26s][user ] Eight hours? Wow. Is there a cheaper option, even if it takes longer?
+[ 67.49s][moshi] ⟨ret@67.42s⟩ A train and bus combination ⟦⚡SPAN@69.42s: (tool result) Train and bus travel takes approximately 65 hours and costs around $1200.⟧ would take about sixty-five hours and cost around twelve hundred dollars.
+      CALL: {"function": "maps_route", "arguments": {"origin": "48.8584, 2.2945", "destination": "125 Cedar St, New York", "mode": "train+bus"}}
+[ 72.73s][user ] That's… a really long time!
+[ 75.20s][user ] Forget the restaurant. Can you just show me hotels near the Statue ⟨ret@79.30s⟩ of Liberty?
+[ 79.69s][moshi] The Wagner Hotel, rated ⟦⚡SPAN@81.22s: (tool result) The Wagner Hotel is at 38 West St, New York, rated 3.8 stars, with rooms from $150.⟧ three point eight stars, is at thirty-eight West Street, New York, with rooms starting at one hundred fifty dollars.
+      CALL: {"function": "maps_search", "arguments": {"query": "hotel", "latitude": 40.6892, "longitude": -74.0445}}
+[ 86.58s][user ] One hundred fifty dollars isn't bad. Does it ⟨ret@89.09s⟩ have parking?
+[ 89.49s][moshi] The ⟦⚡SPAN@90.13s: (tool result) The Wagner Hotel has valet parking available for $45 per night.⟧ Wagner Hotel offers valet parking at forty-five dollars per night.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJXW393-VwEmsR5V4Y4B2XyW8"}}
+[ 94.63s][user ] Okay, good to know. What's the weather like in New York ⟨ret@97.52s⟩ right now?
+[ 97.84s][moshi] The current temperature in ⟦⚡SPAN@99.28s: (tool result) The current weather in New York is 68°F and cloudy.⟧ New York is sixty-eight degrees Fahrenheit and it's cloudy.
+      CALL: {"function": "weather_current", "arguments": {"location": "New York"}}
+[101.45s][user ] Sixty-eight degrees is nice. I think I’ll book a room at the ⟨ret@105.23s⟩ Wagner.
+[105.39s][moshi] Your reservation at The Wagner ⟦⚡SPAN@107.23s: (tool result) Reservation confirmed at The Wagner Hotel for tomorrow, one night, total $150 plus $45 parking.⟧ Hotel is confirmed for tomorrow night, totaling one hundred ninety-five dollars.
+      CALL: {"function": "hotel_book", "arguments": {"hotel_name": "The Wagner Hotel", "check_in_date": "tomorrow", "nights": "1"}}
+[111.22s][user ] Wonderful! That’s all sorted.
+[113.06s][moshi] It sounds like you've got a lovely trip planned! It’s always good to be prepared and have a place to stay secured.
+[120.47s][user ] Yeah. I’m really looking forward to it.
+[122.73s][moshi] Traveling can be a wonderful way to recharge and experience new things. It's a chance for personal growth and creating lasting memories.
+[131.61s][user ] It is. Do you think I should pack an umbrella?
+[134.42s][moshi] Given that it’s cloudy now, and weather can change, packing an umbrella is a sensible idea, just in case!
+[139.80s][user ] You're right, better safe than sorry.
+[141.73s][moshi] Exactly. A little preparation can go a long way in ensuring a smooth and enjoyable trip.
+[145.88s][user ] «backchannel» Mm-hmm.
+[147.18s][user ] Thanks for all your help, Nellara.
+[149.14s][moshi] You’re very welcome! It’s my pleasure to help you organize your travel plans. I hope you have a fantastic time in New York.
+[156.17s][user ] I think I will!
+[157.60s][moshi] That’s wonderful to hear! Remember to be open to new experiences and enjoy every moment.
+[163.39s][user ] I definitely will.
+[165.60s][moshi] It’s great that you have such a positive attitude. That will make your trip even more special.
+[170.75s][user ] Okay, I think that’s everything for now.
+[173.59s][moshi] Alright. If anything else comes up before your trip, please don’t hesitate to reach out. I'm here to support you.

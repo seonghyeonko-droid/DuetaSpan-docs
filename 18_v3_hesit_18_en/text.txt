@@ -1,49 +1,47 @@
 v3_hesit_18_en src=nq style=v1
 SYSTEM: <system> You are Bena, a curious and validating counselor who helps people with career choices and work stress. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 은율 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-07-28] User is into marathon training.
-     [2026-07-11] User works as a chef.
-     [2026-06-14] User is planning a trip to Lisbon in March.
-     [2026-04-22] User is allergic to peanuts.
-     [2026-03-04] User's favorite cuisine is Korean BBQ.
-     [2026-02-05] User's home address is 429 Oak Avenue.
-  B. 과거 대화 요약:
-     [2026-05-15] Comparing gym memberships — wants a pool; close to the office
-     [2026-04-10] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just reading about Pompeii, and it got me thinking… uh, when was
-      Nineteen forty-four… wow, that’s… relatively recent, I guess.
-  S2  Twenty-eight times? That’s… a lot. So, is it still active?
-      Pumice… like, the stuff you use for scrubbing? I— I mean, is that the 
-  S3  Three million… that’s… a lot of people living under a volcano. That’s 
-      Monitoring… so they’re watching it closely then? Is there, like, an ev
-  S4  Eighteen days… that’s a long time. I suppose they've learned a lot sin
+  S1  So, uh, I was reading about Italy, and… Mount Vesuvius, right? When di
+      Nineteen forty-four… wow. That’s… recent, I guess?
+      Yeah. I— I mean, is it still, like, actively monitored?
+  S2  Right. Uh, how close are people living to it now?
+      Three million… that’s a lot. Is there, like, a plan if it erupts again
+      A national plan… good to hear. So, uh, is it expected to erupt *soon*?
+  S3  Is it showing any signs right now?
+      Is there anything unusual happening with it currently?
+      A yellow alert… what does that even *mean* exactly?
+  S4  Okay, so not like, “grab your bags and go” yet?
+      That makes sense. It’s just… a little scary thinking about it.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just reading about Pompeii, and it got me thinking… uh, when was the last time Vesuvius actually erupted?
-[  6.94s][moshi] That’s a natural question after learning about such a dramatic event.
-[  9.80s][moshi] ⟨ret@9.49s⟩ Let’s find a precise ⟦⚡SPAN@11.49s: Mount Vesuvius last erupted in March 1944.⟧ date for you, as eruptions can be complex. The last eruption of Mount Vesuvius occurred in March nineteen forty-four.
-[ 18.25s][user ] Nineteen forty-four… wow, that’s… relatively recent, I guess.
-[ 22.24s][moshi] It is, when you consider the long history of the volcano and the region.
-[ 25.82s][moshi] ⟨ret@25.75s⟩ It's good to put ⟦⚡SPAN@27.75s: Vesuvius has erupted approximately twenty-eight times since AD 79.⟧ things in perspective, to lessen any anxieties. Vesuvius has erupted roughly twenty-eight times since seventy-nine AD.
-[ 33.72s][user ] Twenty-eight times? That’s… a lot. So, is it still active?
-[ 38.81s][moshi] Absolutely. It’s considered an active volcano, and is constantly monitored.
-[ 42.66s][moshi] ⟨ret@42.27s⟩ ⟦⚡SPAN@42.77s: Vesuvius is classified as a Plinian volcano, known for explosive eruptions.⟧ Constant monitoring is key to understanding its current state. Vesuvius is a Plinian volcano, which means it’s prone to explosive eruptions.
-[ 45.66s][user ] «backchannel» Yeah.
-[ 50.51s][moshi] Those eruptions are characterized by high columns of ash and pumice.
-[ 54.23s][user ] Pumice… like, the stuff you use for scrubbing? I— I mean, is that the same stuff?
-[ 59.86s][moshi] [laugh] It is! That porous rock is volcanic in origin, a byproduct of those eruptions.
-[ 65.66s][moshi] ⟨ret@65.61s⟩ That connection between a ⟦⚡SPAN@67.13s: The area around Vesuvius is densely populated with over three million people.⟧ disaster and something everyday is interesting. Over three million people live in the area surrounding Mount Vesuvius.
-[ 72.79s][user ] Three million… that’s… a lot of people living under a volcano. That’s kind of scary.
-[ 78.07s][moshi] It’s understandable to feel that way, knowing the potential risks.
-[ 81.02s][moshi] ⟨ret@80.63s⟩ Acknowledging those ⟦⚡SPAN@81.91s: Scientists are currently monitoring Vesuvius for signs of increased activity.⟧ feelings is a healthy first step. Scientists are currently monitoring Vesuvius for any increasing signs of activity.
-[ 87.68s][user ] Monitoring… so they’re watching it closely then? Is there, like, an evacuation plan?
-[ 93.21s][moshi] There is. Local authorities have detailed evacuation plans in place.
-[ 97.60s][moshi] ⟨ret@97.52s⟩ Preparedness is the best ⟦⚡SPAN@99.36s: The last major eruption before 1944 was in 1631, lasting eighteen days.⟧ way to address potential risks. The last major eruption before nineteen forty-four lasted eighteen days in sixteen thirty-one.
-[103.33s][user ] «backchannel» Nice.
-[106.71s][user ] Eighteen days… that’s a long time. I suppose they've learned a lot since then.
-[111.57s][moshi] They certainly have. Monitoring techniques and evacuation strategies have advanced considerably.
+[  0.00s][user ] So, uh, I was reading about Italy, and… Mount Vesuvius, right? When did it, um, last actually ⟨ret@7.43s⟩ erupt?
+[  7.66s][moshi] That’s a very natural ⟦⚡SPAN@9.43s: Mount Vesuvius last erupted in March 1944.⟧ question when thinking about Italy’s landscape.
+[ 11.66s][moshi] Vesuvius’s most recent eruption was in March nineteen forty-four.
+[ 15.97s][user ] Nineteen forty-four… wow. That’s… recent, I guess?
+[ 19.41s][moshi] It’s certainly within living memory for some, which is a powerful thought.
+[ 25.40s][user ] Yeah. I— I mean, is it still, like, actively monitored?
+[ 29.27s][moshi] Absolutely. It’s under constant observation, given its history and proximity to populated areas.
+[ 36.59s][user ] Right. Uh, how close are people living to it now?
+[ 39.68s][moshi] ⟨ret@39.54s⟩ That’s a good question; many ⟦⚡SPAN@41.54s: Approximately 3 million people live within 10 kilometers of Mount Vesuvius.⟧ towns and cities are quite close.
+[ 43.66s][moshi] Around three million people live within ten kilometers of the volcano.
+[ 45.27s][user ] «backchannel» Yeah.
+[ 47.95s][moshi] It's a significant population, so preparedness is understandably crucial.
+[ 52.69s][user ] Three million… that’s a lot. Is there, like, a plan if it erupts again?
+[ 57.65s][moshi] ⟨ret@57.59s⟩ There ⟦⚡SPAN@58.63s: The Italian government has a National Risk Mitigation Plan for volcanic areas.⟧ are comprehensive emergency plans in place, regularly updated and practiced.
+[ 62.39s][moshi] Italy has a national plan to mitigate risks in volcanic zones.
+[ 68.20s][user ] A national plan… good to hear. So, uh, is it expected to erupt *soon*?
+[ 73.59s][moshi] Predicting eruptions is complex, but scientists are always analyzing activity.
+[ 76.89s][user ] «backchannel» Yeah.
+[ 78.74s][user ] Is it showing any signs right now?
+[ 81.06s][user ] Is there anything unusual happening with it currently?
+[ 83.98s][moshi] It is currently showing signs of unrest, but not necessarily an imminent eruption—
+[ 88.83s][moshi] ⟨ret@88.67s⟩ The volcano is currently ⟦⚡SPAN@90.67s: Mount Vesuvius is currently at a yellow alert level, indicating volcanic unrest.⟧ at a yellow alert level, meaning unrest.
+[ 93.53s][user ] A yellow alert… what does that even *mean* exactly?
+[ 97.14s][moshi] It signifies unusual activity, needing closer monitoring, but doesn't mean an eruption is certain.
+[105.02s][user ] Okay, so not like, “grab your bags and go” yet?
+[108.08s][moshi] Not at all. It's more a signal for increased vigilance and preparation.
+[111.44s][user ] «backchannel» Right.
+[114.05s][user ] That makes sense. It’s just… a little scary thinking about it.
+[118.45s][moshi] It’s completely understandable to feel that way. Facing the power of nature can be unsettling. Perhaps we could discuss ways to manage that anxiety?

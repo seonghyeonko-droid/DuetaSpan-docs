@@ -1,54 +1,56 @@
 v3_mcp_02_en src=mcp style=v3
 SYSTEM: <system> You are Driaus, a kind and steady supportive advisor who helps people with productivity and daily routines. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Ethan · Location: Toronto, Canada · Nationality: Canadian · Gender: male · Age: early 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
-  B. 저장 메모리:
-     [2026-06-28] User is allergic to penicillin.
-     [2026-06-05] User has a Siamese cat named Bella.
-     [2026-05-04] User is into birdwatching.
-     [2026-04-11] User prefers a window seat when traveling.
-     [2026-03-08] User is planning a trip to Lisbon in May.
-     [2026-01-11] User works as a graphic designer.
-  B. 과거 대화 요약:
-     [2026-01-26] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
-     [2026-01-22] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Begin watching for a weather update from weather dot example dot com.
-      Okay, good. And could you remind me to check it again at six pm?
-  S2  That’s great. Uh, I’m also thinking of ordering takeout tonight…
-      I was hoping to get something from Bella Italia, but I don’t know thei
-  S3  Perfect! I’ll give them a call. I also need to book a train ticket.
-      From London to Bristol, please. Next Friday.
-  S4  That sounds good. Book that for me, please.
-      Excellent! That’s everything for now, thank you.
+      That's good to know. Uh, do they have a forecast for tomorrow?
+      Perfect! I think I'll plan a picnic then.
+  S2  Actually, yes. Could you search for parks with picnic tables near me?
+      Twenty tables— that sounds good.
+      Oh, a reservation might be smart. Let’s try to reserve a table for tom
+  S3  Fantastic! That's a huge weight off my mind.
+      Yes, actually. I need to send a reminder to myself to pack the blanket
+      Hmm, how about six PM tonight?
+  S4  Wonderful. Thanks so much, Driaus.
+      I think I will! I— I mean, with this weather, it should be perfect.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.87s⟩ com.
-[  4.10s][moshi] Certainly, I can ⟦⚡SPAN@5.63s: (tool result) The website reported a temperature of 22 degrees Celsius and clear skies.⟧ monitor that for you. Currently, the weather at weather dot example dot com is 22 degrees Celsius with clear skies.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[  7.55s][user ] «backchannel» Yeah.
-[ 14.58s][user ] Okay, good. And could you remind me to check it again at six pm?
-[ 18.23s][moshi] ⟨ret@18.10s⟩ I can ⟦⚡SPAN@19.30s: (tool result) A reminder has been set for 6:00 PM to check the weather.⟧ definitely set that up for you. I’ve scheduled a reminder for six pm to check the weather report.
-      CALL: {"function": "set_reminder", "arguments": {"time": "18:00", "message": "Check weather at weather.example.com"}}
-[ 20.98s][user ] «backchannel» Yeah, yeah.
-[ 24.67s][user ] That’s great. Uh, I’m also thinking of ordering takeout tonight…
-[ 27.93s][moshi] Ordering takeout sounds lovely. Is there a particular restaurant you have in mind?
-[ 30.21s][user ] «backchannel» Yeah.
-[ 32.70s][user ] I was hoping to get something from Bella Italia, but I don’t know their ⟨ret@36.29s⟩ number.
-[ 36.61s][moshi] ⟦⚡SPAN@36.79s: (tool result) Bella Italia’s phone number is 555-123-4567.⟧ Let me quickly find that information for you. The phone number for Bella Italia is 555-123-4567.
-      CALL: {"function": "search", "arguments": {"query": "Bella Italia phone number"}}
-[ 42.43s][user ] «backchannel» Yeah.
-[ 45.28s][user ] Perfect! I’ll give them a call. I also need to book a train ticket.
-[ 49.22s][moshi] Certainly, I can help with that. Where are you travelling from and to?
-[ 53.21s][user ] From London to Bristol, please. Next ⟨ret@55.81s⟩ Friday.
-[ 56.12s][moshi] Alright, ⟦⚡SPAN@56.85s: (tool result) A train is available departing London at 10:00 AM and arriving in Bristol at 11:30 AM, costing £⟧ let's check availability for that route. There’s a train available next Friday departing at 10 am, arriving at 11:30 am for £45.
-      CALL: {"function": "book_train", "arguments": {"departure": "London", "arrival": "Bristol", "date": "next Friday"}}
-[ 60.82s][user ] «backchannel» Right.
-[ 66.60s][user ] That sounds good. Book that for me, ⟨ret@68.93s⟩ please.
-[ 69.33s][moshi] ⟦⚡SPAN@69.43s: (tool result) Your train ticket from London to Bristol on next Friday is confirmed. Booking reference is T1234⟧ Absolutely, confirming that booking now. Your train ticket to Bristol is now confirmed, booking reference T12345.
-      CALL: {"function": "confirm_booking", "arguments": {"booking_id": "T12345"}}
-[ 72.62s][user ] «backchannel» Oh.
-[ 77.27s][user ] Excellent! That’s everything for now, thank you.
-[ 80.04s][moshi] You're very welcome. I’m glad I could assist you with your arrangements today.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.46s⟩ com.
+[  4.68s][moshi] Certainly, I’m now ⟦⚡SPAN@6.46s: (tool result) The website reports current conditions as seventy-two degrees Fahrenheit and partly cloudy.⟧ monitoring weather dot example dot com for any changes.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "expected_text": "weather update"}}
+[  9.90s][moshi] The current temperature is seventy-two degrees Fahrenheit with partly cloudy skies.
+[ 15.51s][user ] That's good to know. Uh, do they have a forecast for ⟨ret@19.52s⟩ tomorrow?
+[ 19.84s][moshi] Yes, I can ⟦⚡SPAN@21.20s: (tool result) Tomorrow’s forecast predicts a high of seventy-five degrees Fahrenheit and sunshine.⟧ check the forecast for tomorrow.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "expected_text": "tomorrow's forecast"}}
+[ 22.77s][moshi] Tomorrow will be sunny with a high of seventy-five degrees Fahrenheit.
+[ 24.41s][user ] «backchannel» Right.
+[ 26.94s][user ] Perfect! I think I'll plan a picnic then.
+[ 30.00s][moshi] A picnic sounds lovely. Do you need help finding a suitable park?
+[ 34.89s][user ] Actually, yes. Could you search for parks with picnic tables near me?
+[ 39.24s][moshi] ⟨ret@39.16s⟩ Of ⟦⚡SPAN@40.28s: (tool result) Central Park has twenty picnic tables and is one point two miles away.⟧ course. Let me locate parks nearby with picnic tables.
+      CALL: {"function": "search_parks", "arguments": {"location": "current", "amenities": "picnic tables"}}
+[ 44.51s][moshi] Central Park, one point two miles away, has twenty picnic tables available.
+[ 46.58s][user ] «backchannel» Yeah.
+[ 50.12s][user ] Twenty tables— that sounds good.
+[ 52.92s][moshi] It’s a popular choice, but generally spacious enough to find a good spot. I can also check availability for a reservation if you’d like.
+[ 61.69s][user ] Oh, a reservation might be smart. Let’s try to reserve a table for tomorrow at ⟨ret@67.11s⟩ noon.
+[ 67.42s][moshi] Certainly, I ⟦⚡SPAN@68.47s: (tool result) A picnic table at Central Park is reserved for tomorrow at noon for two people. Confirmation num⟧ can check for reservations at Central Park for tomorrow at noon.
+      CALL: {"function": "reserve_picnic_table", "arguments": {"park": "Central Park", "date": "tomorrow", "time": "12:00 PM", "party_size": "2"}}
+[ 72.28s][moshi] Your picnic table is reserved at Central Park for tomorrow at noon. Your confirmation number is 87B3.
+[ 75.93s][user ] «backchannel» Oh.
+[ 79.67s][user ] Fantastic! That's a huge weight off my mind.
+[ 84.25s][moshi] I'm glad I could help with that. Is there anything else I can assist you with today?
+[ 88.61s][user ] Yes, actually. I need to send a reminder to myself to pack the blanket.
+[ 93.83s][moshi] I can certainly set a reminder for you. What time would you like to be reminded?
+[ 97.61s][user ] «backchannel» Right.
+[ 99.80s][user ] Hmm, how about six PM tonight?
+[102.39s][moshi] ⟨ret@102.31s⟩ I’ve set a reminder for six ⟦⚡SPAN@104.31s: (tool result) Reminder set for 6:00 PM today: “Pack the blanket”.⟧ PM tonight to pack the blanket.
+      CALL: {"function": "set_reminder", "arguments": {"time": "6:00 PM", "message": "Pack the blanket"}}
+[106.03s][moshi] A reminder to pack the blanket is set for six PM tonight.
+[107.43s][user ] «backchannel» Yeah.
+[109.46s][user ] Wonderful. Thanks so much, Driaus.
+[112.35s][moshi] You’re very welcome. I hope you enjoy your picnic tomorrow. It sounds like a delightful plan.
+[117.17s][user ] «backchannel» Yeah.
+[118.68s][user ] I think I will! I— I mean, with this weather, it should be perfect.
+[123.09s][moshi] It certainly sounds that way! A little planning goes a long way to a relaxing day, doesn’t it?

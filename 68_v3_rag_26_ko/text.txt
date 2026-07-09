@@ -1,32 +1,33 @@
 v3_rag_26_ko src=nq style=v3
 SYSTEM: <system> 당신은 공부와 동기 부여에 도움을 주는 긍정적이고 지지적인 상담사 Kiora입니다. 기본적으로 반말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Emilia · Location: San Francisco, United States · Nationality: American · Gender: female · Age: late 30s · TZ: America/Los_Angeles (PST, UTC-8) · Currency: USD ($)
-  B. 저장 메모리:
-     [2026-04-23] User's home address is 249 Cedar Lane.
-     [2026-03-15] User has a Beagle named Rusty.
-     [2026-02-13] User prefers an aisle seat when traveling.
-     [2026-01-11] User works as a accountant.
-  B. 과거 대화 요약:
-     [2026-08-04] Researching a used car — comparing hybrid models; wants under 30k miles
-     [2026-05-28] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  검은색, 빨간색, 노란색이 들어간 깃발을 찾고 계시는군요?
-  S2  아, 맞아요! 독일, 그거였어요. 한 번 가봤는데 사람이 너무 많았어요.
-  S3  흠, 항상 그랬던 건가요?
-  S4  와, 저는 그런 사실은 몰랐어요. 좋은 이야기네요.
+  S1  음… 혹시 독일 국기 색깔이 뭐예요? 까먹었나 봐요.
+      아, 맞다! 검빨노! 근데 그 색깔들이 무슨 의미가 있는 건가요?
+  S2  잠깐만요, 혹시 다른 나라 국기도 비슷한 색깔을 쓰는 곳이 있나요?
+      벨기에 것도 비슷한 색깔이네요! 신기하다. 독일 국기는 언제부터 사용했나요?
+  S3  오, 1848년이군요. 그럼 그 전에는 다른 국기를 썼던 건가요?
+      음… 그러고 보니, 독일하고 벨기에가 서로 역사적으로 관련이 깊은가요?
+  S4  아하, 그렇군요! 신성 로마 제국이라… 역사 공부 다시 해야겠어요.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 검은색, 빨간색, 노란색이 들어간 깃발을 찾고 계시는군요?
-[  4.46s][moshi] 색깔만 기억하면 찾기 좀 어렵지. 그 색깔을 쓰는 깃발이 많거든.
-[  8.74s][moshi] ⟨ret@8.43s⟩ 어떤 ⟦⚡SPAN@9.87s: The flag of Germany features horizontal bands of black, red, and gold.⟧ 깃발인지 알아볼까… 검은색, 빨간색, 금색 띠가 있는 독일 국기일 가능성이 높아 보여.
-[ 16.70s][user ] 아, 맞아요! 독일, 그거였어요. 한 번 가봤는데 사람이 너무 많았어요.
-[ 22.15s][moshi] 여행은 정말 정신없이 즐거울 수 있지, 안 그래? 그 깃발과 관련된 기억이 있어서 좋네.
-[ 28.01s][moshi] ⟨ret@27.78s⟩ 깃발 이야기를 ⟦⚡SPAN@29.46s: The German flag was first adopted in 1848 during the revolutions of that year.⟧ 하니까 궁금해지네… 독일 국기의 첫 번째 버전은 천팔백사십팔년에 혁명 시기에 만들어졌어.
-[ 33.37s][user ] «backchannel» 그렇죠.
-[ 35.82s][user ] 흠, 항상 그랬던 건가요?
-[ 37.62s][moshi] 꼭 그렇진 않아. 국기는 시대에 따라 변하고, 나라의 역사를 반영하거든.
-[ 42.90s][moshi] ⟨ret@42.51s⟩ ⟦⚡SPAN@43.55s: The colors of the German flag originate from the uniforms of the Lützow Free Corps in the early 19th century.⟧ 역사적인 세부 사항을 확인해 볼까… 독일 국기의 검은색, 빨간색, 금색은 뤼초 자유군 복장에서 유래됐어.
-[ 50.64s][user ] 와, 저는 그런 사실은 몰랐어요. 좋은 이야기네요.
+[  0.00s][user ] 음… 혹시 독일 국기 색깔이 뭐예요? 까먹었나 봐요.
+[  4.17s][moshi] ⟨ret@4.10s⟩ 독일 국기는 검은색, ⟦⚡SPAN@6.10s: The flag of Germany consists of three horizontal bands of black, red, and gold.⟧ 빨간색, 노란색으로 이루어져 있어요.
+[  8.36s][moshi] 독일 국기는 가로로 검은색, 빨간색, 금색 세 줄로 되어 있습니다.
+[ 13.41s][user ] 아, 맞다! 검빨노! 근데 그 색깔들이 무슨 의미가 있는 건가요?
+[ 19.18s][moshi] 그 의미는 역사적으로 꽤 복잡하게 얽혀 있어요.
+[ 20.65s][user ] «backchannel» Right.
+[ 22.57s][user ] 잠깐만요, 혹시 다른 나라 국기도 비슷한 색깔을 쓰는 곳이 있나요?
+[ 27.48s][moshi] ⟨ret@27.25s⟩ 네, 몇몇 나라들이 ⟦⚡SPAN@29.25s: The flag of Belgium is also black, yellow, and red, but arranged vertically.⟧ 비슷한 색상 조합을 사용하고 있습니다.
+[ 31.83s][moshi] 벨기에 국기도 검은색, 노란색, 빨간색을 사용하지만 세로로 배열되어 있습니다.
+[ 37.28s][user ] 벨기에 것도 비슷한 색깔이네요! 신기하다. 독일 국기는 언제부터 사용했나요?
+[ 43.15s][moshi] ⟨ret@43.08s⟩ 독일 국기가 처음 ⟦⚡SPAN@45.08s: The first German flag with black, red, and gold was used in 1848 during the March Revolution.⟧ 사용된 시기는 19세기 초로 거슬러 올라갑니다. 최초의 검은색, 빨간색, 금색 독일 국기는 1848년 3월 혁명 기간 동안 사용되었습니다.
+[ 54.99s][user ] 오, 1848년이군요. 그럼 그 전에는 다른 국기를 썼던 건가요?
+[ 60.81s][moshi] 그 전에는 여러 다른 국기들이 사용되었지만, 지금의 국기가 공식적으로 채택되기까지 시간이 걸렸어요.
+[ 68.33s][user ] 음… 그러고 보니, 독일하고 벨기에가 서로 역사적으로 관련이 ⟨ret@74.15s⟩ 깊은가요?
+[ 74.55s][moshi] ⟦⚡SPAN@75.03s: Both Germany and Belgium were part of the Holy Roman Empire, leading to shared cultural influences.⟧ 역사적으로 두 나라는 깊은 관련이 있으며, 국기 색상도 영향을 주고받았다고 볼 수 있어요.
+[ 80.67s][moshi] 독일과 벨기에는 신성 로마 제국의 일부였으며, 이는 문화적 영향을 공유하게 했습니다.
+[ 83.81s][user ] «backchannel» Uh-huh.
+[ 88.17s][user ] 아하, 그렇군요! 신성 로마 제국이라… 역사 공부 다시 해야겠어요.
+[ 93.89s][moshi] [happy] 공부는 언제나 좋은 일이죠! 혹시 더 궁금한 점이 있으신가요?

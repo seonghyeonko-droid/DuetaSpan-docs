@@ -1,38 +1,85 @@
 # v3_mem_32_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Manon · Location: Berlin, Germany · Nationality: German · Gender: female · Age: late 30s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
-#   B. 저장 메모리:
-#      [2026-07-25] User is planning a trip to Kyoto in March.
-#      [2026-06-14] User is into rock climbing.
-#      [2026-03-10] User's favorite cuisine is sushi.
-#      [2026-02-26] User is gluten-free.
-#   B. 과거 대화 요약:
-#      [2026-07-12] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-#      [2026-01-20] Planning a birthday dinner — party of six; looking for outdoor seating
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_mem_32",
+#     "name": "Manon",
+#     "location": {
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
+#     },
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "German"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-07-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
+#     },
+#     {
+#       "date": "2026-06-14",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-03-10",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-07-12",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-20",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     }
+#   ]
+# }
 
 
-     0.00s  agent 발화 시작: 안녕하세요 마농 씨, 저는 투날로라고 합니다. 오늘 만나 뵙게 되어 정말 기쁩니다.
-     4.73s  user  발화 시작: 네.
-     5.05s  user  발화 끝
-     6.25s  agent 발화 끝
-     6.54s  user  발화 시작: 방금 계획하고 싶었던 여행에 대해 생각하고 있었어요.
-    10.48s  <ret> 발화 (turn3 첫 프레임)
-    10.56s  agent 발화 시작: <ret> 아, 여행 계획을 떠올리는 건 정말 멋진 영감의 원천이 될 수 있어요. 지난번에 3월에 교토에 가
-    10.56s  user  발화 끝
-    12.00s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.10s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    21.22s  agent 발화 끝
-    22.07s  user  발화 시작: 맞아요. 베를린과 교토의 시차는 정확히 어떻게 되나요?
-    25.73s  <ret> 발화 (turn5 첫 프레임)
-    26.12s  agent 발화 시작: <ret> 시차를 아는 건 원활한 여행 계획에 아주 중요해요. 교토는 베를린보다 8시간 빠르기 때문에, 베를
-    26.19s  user  발화 끝
-    26.77s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.08s]: (tool result) Time difference: Berlin is 8 hours behind Kyoto. / Curre
-    34.50s  user  발화 시작: 그렇죠.
-    35.32s  user  발화 끝
-    37.84s  agent 발화 시작: 시간 적응이 조금 어려울 수도 있지만, 그게 또 여행의 묘미 아니겠어요?
-    37.91s  agent 발화 끝
-    42.38s  agent 발화 끝
-    43.76s  user  발화 시작: 네, 정말 그렇네요. 그런데 저는 스시도 정말 좋아해요.
-    47.73s  agent 발화 시작: 하하, 스시를 좋아하신다니 정말 좋네요, 마농 씨! 맛있는 음식을 즐기는 건 언제나 좋은 일이죠!
-    47.78s  user  발화 끝
-    55.15s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 마농님. 저는 투날로입니다. 창의적인 막힘이나 자신감 문제로 고민하시는 분들을 돕는 상담사예요.
+     6.21s  user  발화 시작: Yeah.
+     6.75s  user  발화 끝
+     8.12s  agent 발화 끝
+     8.84s  user  발화 시작: 아, 네. 투날로님. 지난번에 교토 여행 계획에 대해 이야기했었죠? 혹시 그때 제가 뭘 찾고 있었는지 기억하
+    15.66s  <ret> 발화 (turn3 첫 프레임)
+    15.72s  agent 발화 시작: <ret> 교토 여행 계획에 대해서요? 내년 삼월에 교토 여행을 계획하고 계셨어요. 그때 여행에 대해 논의했
+    15.93s  user  발화 끝
+    16.62s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.01s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    22.77s  agent 발화 끝
+    22.78s  user  발화 시작: 맞아요, 맞고요. 삼월에 가려고 하는데, 혹시 그때 날씨가 어때요?
+    26.97s  agent 발화 시작: 삼월의 교토 날씨는 변덕스러울 수 있지만, 보통은 벚꽃이 피기 시작해서 아주 아름다운 계절이에요. 평균 기온
+    27.18s  user  발화 끝
+    35.33s  user  발화 시작: Mm-hmm.
+    35.82s  user  발화 끝
+    38.44s  <ret> 발화 (turn7 첫 프레임)
+    38.51s  agent 발화 시작: <ret> 혹시 교토에서 특별히 하고 싶은 활동이 있으신가요? 등반을 좋아하신다고 말씀하신 적이 있었던 것 
+    38.71s  agent 발화 끝
+    40.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: [2026-06-14] User is into rock climbing.
+    45.63s  agent 발화 시작: 등반을 즐기신다고 하셨으니, 교토 근처에 암벽 등반을 할 수 있는 곳을 찾아볼까요?
+    45.65s  agent 발화 끝
+    51.48s  agent 발화 끝
+    52.36s  user  발화 시작: 오, 좋아요! 암벽 등반할 수 있는 곳이 있다면 알려주세요.
+    56.53s  user  발화 끝

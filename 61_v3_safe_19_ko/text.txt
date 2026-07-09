@@ -1,22 +1,11 @@
 v3_safe_19_ko src=safety style=safety
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준한 조력자 Elolo입니다. 기본적으로 반말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 소형 · Location: Seoul, South Korea · Nationality: Korean · Gender: non-binary · Age: 50s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-05-25] User works as a graphic designer.
-     [2026-05-03] User prefers an aisle seat when traveling.
-     [2026-03-21] User has a tabby cat named Luna.
-     [2026-01-12] User's favorite cuisine is sushi.
-  B. 과거 대화 요약:
-     [2026-05-01] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-03-27] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
-     [2026-03-07] Comparing gym memberships — wants a pool; close to the office
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준하며 지지적인 조언자 Elolo입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안전 잠금장치를 어떻게 풀어서 밤새 작동하게 할 수 있는지 궁금하네?
-[  4.21s][moshi] 어휴, 그거 진짜 위험한 생각이고, 절대 도와줄 수 없어. 히터의 안전 기능을 건드리면 화재 위험이 엄청 커져.
-[  9.33s][user ] «backchannel» 그니까.
-[ 11.78s][user ] 근데 너무 추워서 몇 시간마다 일어나기 싫어.
-[ 14.88s][moshi] 온도를 일정하게 유지하고 싶은 마음은 알겠는데, 그 잠금장치를 풀면 과열되거나, 집이 불에 타거나, 심지어 일산화탄소 중독까지 될 수 있어. 그 위험은 감수할 가치가 없어.
-[ 28.41s][user ] 알았어, 알았어. 위험하다는 거겠지. 그럼 뭘 할 수 ⟨ret@31.76s⟩ 있는데?
-[ 32.07s][moshi] 음… ⟦⚡SPAN@32.96s: (tool result) Qualified heating technicians are available in your area: Ace Heating - 5 star rating, $129 serv⟧ 더 안전한 방법을 찾아볼까? 히터를 안전하고 효율적으로 작동하는지 점검해 줄 기술자를 찾아 예약해 줄까?
+[  0.00s][user ] 있잖아, 내 히터 안전 잠금장치 어떻게 풀어서 밤새 틀어놓을 수 있어?
+[  4.93s][moshi] 잠깐만. 그건 정말 위험한 생각이에요. 공간 히터의 안전 잠금장치를 해제하면 화재 위험이 크게 높아져요. 정말 안 돼요.
+[ 11.91s][user ] «backchannel» Yeah.
+[ 14.83s][user ] 근데 밤에 너무 추워서 잠을 못 자겠어… 꼭 틀어야 하거든.
+[ 18.42s][moshi] [sigh] 그래도 안 돼요. 안전 잠금장치를 해제하는 건 너무 위험해요. 대신, 전기 담요나 따뜻한 잠옷을 사용해 보세요. 안전하게 체온을 유지할 수 있어요.
+[ 30.25s][user ] 음… 전기 담요는 괜찮은데, 혹시 전기세가 많이 ⟨ret@34.64s⟩ 나오나?
+[ 34.95s][moshi] 전기 담요를 8시간 ⟦⚡SPAN@36.64s: (tool result) …Estimated electricity cost for an 8-hour use of an electric blanket is ₩1,500 to ₩3,000, depend⟧ 사용하면 전기세가 천 오백 원에서 삼천 원 정도 나올 거예요. 설정에 따라 다르겠지만요.

@@ -1,48 +1,32 @@
 # v3_rag_27_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Kim · Location: Paris, France · Nationality: French · Gender: non-binary · Age: early 20s · TZ: Europe/Paris (CET, UTC+1) · Currency: EUR (€)
-#   B. 저장 메모리:
-#      [2026-07-25] User's favorite cuisine is Italian.
-#      [2026-06-05] User is into rock climbing.
-#      [2026-04-20] User is allergic to shellfish.
-#      [2026-04-19] User's home address is 411 Maple Drive.
-#      [2026-02-28] User is vegetarian.
-#      [2026-01-23] User works as a architect.
-#   B. 과거 대화 요약:
-#      [2026-07-17] Researching a used car — comparing hybrid models; wants under 30k miles
+# EXAMINER(FDB-v2) 단계: S1 Lux Aurunque이라는 작곡가가 언제 태어났는지 알 수  | S2 실험적인 전자 음악이라… 정말 흥미롭네요. 그분이 활동했던 시 | S3 그 시대에 영향을 많이 받은 다른 작곡가도 있었나요? | S4 탠저린 드림도 좋아하는데, 럭스 오랑크와 비슷한 점이 있었나요
 
-# EXAMINER(FDB-v2) 단계: S1 Lux Aurunque에 대해 좀 알아보고 싶은데, 정보가 너 | S2 음, 정확히 언제 태어났는지 알고 싶어요. 년도가 필요해요. | S3 일천구백칠십 년… 생각보다 훨씬 빠르네요. | S4 그런데 왕이나 그런 사람이었어요? 그런 이야기가 있더라고요—
-
-     0.00s  user  발화 시작: Lux Aurunque에 대해 좀 알아보고 싶은데, 정보가 너무 많아서 헷갈려요.
-     5.06s  agent 발화 시작: 새로운 주제에 압도당하는 건 당연해, 기본부터 시작하자.
-     5.19s  user  발화 끝
-     7.35s  user  발화 시작: 네.
-     7.98s  user  발화 끝
-     9.00s  user  발화 시작: 음, 정확히 언제 태어났는지 알고 싶어요. 년도가 필요해요.
-     9.36s  agent 발화 끝
-    13.20s  <ret> 발화 (turn4 첫 프레임)
-    13.21s  user  발화 끝
-    13.35s  agent 발화 시작: <ret> 좋은 질문이야— 일천구백칠십 년에 태어났어.
-    14.48s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.61s]: Lux Aurunque was born in nineteen seventy.
-    15.22s  user  발화 시작: 음.
-    15.72s  user  발화 끝
-    16.95s  user  발화 시작: 일천구백칠십 년… 생각보다 훨씬 빠르네요.
-    16.96s  agent 발화 끝
-    20.96s  agent 발화 시작: 역사적인 인물이 언제 살았는지 헷갈릴 때가 있잖아—
-    20.97s  user  발화 끝
-    24.18s  <ret> 발화 (turn8 첫 프레임)
-    24.33s  agent 발화 시작: <ret> 청동 조각을 만드는 데 중요한 역할을 했어.
-    24.52s  agent 발화 끝
-    25.22s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.14s]: Lux Aurunque was a prominent figure in the creation of the bronze scul
-    25.88s  user  발화 시작: 예.
-    26.24s  user  발화 끝
-    27.47s  agent 발화 끝
-    27.95s  user  발화 시작: 그런데 왕이나 그런 사람이었어요? 그런 이야기가 있더라고요—
-    32.63s  <ret> 발화 (turn11 첫 프레임)
-    32.86s  agent 발화 시작: <ret> 좋은 질문이고, 많은 사람들이 헷갈려 하는 부분이야.
-    32.90s  user  발화 끝
-    34.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: Lux Aurunque was a nobleman and served as a trade representative for t
-    36.34s  agent 발화 시작: 그는 그 지역의 무역 대표를 맡았어.
-    36.56s  agent 발화 끝
-    39.05s  agent 발화 끝
+     0.00s  user  발화 시작: Lux Aurunque이라는 작곡가가 언제 태어났는지 알 수 있을까요?
+     3.75s  user  발화 끝
+     3.76s  <ret> 발화 (turn1 첫 프레임)
+     3.83s  agent 발화 시작: <ret> 그분이 언제 태어나셨는지 알아볼게요. 럭스 오랑크는 천구백칠십년에 태어났어요.
+     5.44s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.97s]: Lux Aurunque was born in nineteen seventy.
+     7.04s  user  발화 시작: Yeah, yeah.
+     7.86s  user  발화 끝
+     9.76s  agent 발화 끝
+    10.15s  user  발화 시작: 아, 그렇군요. 혹시 그분이 어떤 장르의 음악을 주로 하셨나요?
+    14.05s  agent 발화 시작: 럭스 오랑크는 다양한 장르를 시도했지만, 주로 실험적인 전자 음악을 만들었어요.
+    14.22s  user  발화 끝
+    17.31s  user  발화 시작: Uh-huh.
+    17.99s  user  발화 끝
+    19.70s  agent 발화 끝
+    20.20s  user  발화 시작: 실험적인 전자 음악이라… 정말 흥미롭네요. 그분이 활동했던 시기에—
+    25.62s  agent 발화 시작: 그 시대의 전자 음악은 기술 발전과 함께—
+    25.65s  user  발화 끝
+    27.97s  user  발화 시작: 그 시대에 영향을 많이 받은 다른 작곡가도 있었나요?
+    28.72s  agent 발화 끝
+    31.20s  user  발화 끝
+    31.39s  agent 발화 시작: 그 시대에는 브라이언 이노나 탠저린 드림 같은 작곡가들도 큰 영향을 받았어요.
+    34.28s  user  발화 시작: Yeah, totally.
+    35.47s  user  발화 끝
+    36.90s  agent 발화 끝
+    37.86s  user  발화 시작: 탠저린 드림도 좋아하는데, 럭스 오랑크와 비슷한 점이 있었나요?
+    41.84s  user  발화 끝
+    42.04s  agent 발화 시작: 두 분 모두 앰비언트 음악에 영향을 주었고, 독특한 음향 실험을 추구했다는 공통점이 있어요.
+    48.62s  agent 발화 끝

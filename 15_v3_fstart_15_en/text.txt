@@ -1,54 +1,39 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
 SYSTEM: <system> You are Helion, a upbeat and supportive counselor who helps people with parenting and family time. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Ada · Location: Sydney, Australia · Nationality: Australian · Gender: female · Age: 50s · TZ: Australia/Sydney (AEDT, UTC+11) · Currency: AUD ($)
-  B. 저장 메모리:
-     [2026-08-03] User works as a physical therapist.
-     [2026-07-09] User is into rock climbing.
-     [2026-06-08] User's favorite cuisine is Mexican.
-     [2026-06-02] User is allergic to pollen.
-     [2026-03-19] User is planning a trip to Switzerland in December.
-  B. 과거 대화 요약:
-     [2026-07-11] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
-     [2026-01-08] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What are the latitude and longitude of the Sydney Opera House?
-      Okay, and can you find me hotels near that location?
-      Hmm, the Park Hyatt sounds nice, but is it pet-friendly?
-  S2  Oh, that's a shame. What about the Four Seasons?
-      That’s much better! Can you see if they have availability next weekend
-  S3  Perfect. And what’s the cancellation policy?
-      That sounds reasonable. I think I’d like to book that room—
-      Actually, hold on—
-  S4  Could we add breakfast to that reservation?
-      That sounds fantastic, thank you.
+      And what’s the weather like there right now?
+      That sounds pleasant.
+  S2  I’m thinking of going next weekend, but—
+      Is it possible to book a tour then?
+  S3  The Saturday at one sounds good.
+      Great! How long does the tour last?
+  S4  And is there parking nearby?
+      Thirty dollars… that’s a bit steep.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  3.23s][moshi] ⟨ret@3.15s⟩ Let's pinpoint ⟦⚡SPAN@4.19s: (tool result) The Sydney Opera House is located at -33.8568 degrees latitude and 151.2153 degrees longitude.⟧ that iconic landmark for you— Its coordinates are negative thirty-three point eight five six eight latitude, and one hundred fifty-one point two one five three longitude.
-[  7.97s][user ] «backchannel» Yeah.
-[ 14.39s][user ] Okay, and can you find me hotels near that location?
-[ 17.21s][moshi] ⟨ret@16.97s⟩ Absolutely, I can ⟦⚡SPAN@18.57s: (tool result) Four Seasons Hotel Sydney is 0.8 miles away, priced at $650 per night. The Park Hyatt Sydney is ⟧ certainly search for nearby hotels— I found two options: the Four Seasons at six hundred fifty dollars, and the Park Hyatt at seven hundred twenty.
-[ 27.82s][user ] Hmm, the Park Hyatt sounds nice, but is it pet-friendly?
-[ 31.20s][moshi] ⟨ret@31.13s⟩ That’s a ⟦⚡SPAN@32.41s: (tool result) The Park Hyatt Sydney does not allow pets.⟧ good detail to check— Unfortunately, the Park Hyatt Sydney does not accept pets.
-[ 39.44s][user ] Oh, that's a shame. What about the Four ⟨ret@42.69s⟩ Seasons?
-[ 43.09s][moshi] ⟦⚡SPAN@43.19s: (tool result) The Four Seasons Hotel Sydney allows pets under ten pounds, with a $100 cleaning fee.⟧ Let me check the pet policy for the Four— The Four Seasons welcomes pets under ten pounds, with a one-hundred-dollar cleaning fee.
-[ 48.26s][user ] «backchannel» Yeah, totally.
-[ 51.97s][user ] That’s much better! Can you see if they have availability next weekend?
-[ 56.66s][moshi] ⟨ret@56.43s⟩ Of ⟦⚡SPAN@57.39s: (tool result) The Four Seasons Hotel Sydney has one room available next weekend, a Deluxe Harbour View room.⟧ course, let me check availability for you— They have a Deluxe Harbour View room available next weekend.
-[ 64.83s][user ] Perfect. And what’s the cancellation policy?
-[ 67.55s][moshi] ⟨ret@67.47s⟩ Let’s find out ⟦⚡SPAN@69.23s: (tool result) Cancellations are permitted up to 72 hours before arrival, with a full refund.⟧ about their cancellation terms— You can cancel up to seventy-two hours before, receiving a full refund.
-[ 70.15s][user ] «backchannel» Mhm.
-[ 75.12s][user ] That sounds reasonable. I think I’d like to book that room—
-[ 78.97s][moshi] ⟨ret@78.82s⟩ Wonderful, I’m happy ⟦⚡SPAN@80.66s: (tool result) Reservation confirmed: Deluxe Harbour View room at Four Seasons Hotel Sydney, next weekend, $650⟧ to help with that— Your room is booked! That’s six hundred fifty, plus one hundred for your pet, confirmation XYL789.
-[ 83.28s][user ] «backchannel» Yeah, yeah.
-[ 88.83s][user ] Actually, hold on—
-[ 90.18s][user ] Could we add breakfast to ⟨ret@91.98s⟩ that reservation?
-[ 92.37s][moshi] Certainly, ⟦⚡SPAN@93.26s: (tool result) Breakfast added to reservation XYL789: $60 per day. Total cost now $710 plus $100 pet fee.⟧ let's add breakfast to your booking— Breakfast is sixty dollars per day, bringing your total to seven hundred ten, plus the pet fee.
-[ 96.26s][user ] «backchannel» Yeah.
-[101.89s][moshi] ⟨ret@101.65s⟩ I’m glad ⟦⚡SPAN@102.77s: (tool result) Reservation XYL789 updated: Deluxe Harbour View room, breakfast included, next weekend, $710 plu⟧ we could customize your stay— Your updated total is seven hundred ten plus the pet fee, and breakfast is included.
-[106.32s][user ] «backchannel» Yeah.
-[108.69s][user ] That sounds fantastic, thank you.
-[111.09s][moshi] You are very welcome! I hope you and your furry friend have a wonderful time in Sydney. It’s lovely when a family can travel together.
+[  4.06s][moshi] ⟨ret@3.99s⟩ Certainly, I ⟦⚡SPAN@4.95s: (tool result) The Sydney Opera House is at latitude -33.8568 and longitude 151.2153.⟧ can find that for you. The Sydney Opera House’s coordinates are latitude negative thirty-three point eight five six eight, and longitude one five one point two one five three.
+[  7.68s][user ] «backchannel» Yeah.
+[ 14.23s][user ] And what’s the weather like there right ⟨ret@16.29s⟩ now?
+[ 16.53s][moshi] Let me ⟦⚡SPAN@17.41s: (tool result) The current weather in Sydney is 22 degrees Celsius, with partly cloudy skies and winds from the⟧ check the current conditions. It’s currently twenty-two degrees Celsius in Sydney, partly cloudy, with winds at twenty kilometers per hour.
+[ 20.73s][user ] «backchannel» Yeah.
+[ 25.11s][user ] That sounds pleasant.
+[ 26.61s][moshi] It really does! Planning a visit often begins with checking the weather, doesn’t it? Do you have any specific dates in mind?
+[ 33.72s][user ] I’m thinking of going next weekend, but—
+[ 35.97s][user ] Is it possible to book a tour ⟨ret@37.98s⟩ then?
+[ 38.22s][moshi] Yes, absolutely. ⟦⚡SPAN@39.09s: (tool result) Tours are available on Saturday at 10:00 AM, 1:00 PM, and 4:00 PM, and on Sunday at 11:00 AM, 2:⟧ Let’s see what tour options are available next weekend.
+[ 41.99s][moshi] Tours are available Saturday at ten, one, and four, and Sunday at eleven, two, and five.
+[ 45.05s][user ] «backchannel» Yeah, totally.
+[ 46.56s][user ] The Saturday at one sounds good.
+[ 48.85s][moshi] ⟨ret@48.77s⟩ ⟦⚡SPAN@49.27s: (tool result) A tour has been booked for you on Saturday at 1:00 PM, confirmation number is ZXCV123.⟧ Excellent choice. Your tour is booked for Saturday at one PM; your confirmation number is ZXCV123.
+[ 55.39s][user ] Great! How long does the tour ⟨ret@57.59s⟩ last?
+[ 57.91s][moshi] Let ⟦⚡SPAN@58.55s: (tool result) The standard tour of the Sydney Opera House lasts approximately one hour.⟧ me quickly find that information. The tour lasts approximately one hour.
+[ 59.29s][user ] «backchannel» Mhm.
+[ 61.68s][user ] And is there parking ⟨ret@63.51s⟩ nearby?
+[ 63.66s][moshi] Yes, there are several ⟦⚡SPAN@65.11s: (tool result) Wilson Parking at the Opera House offers parking, with rates starting at $30 for up to three hou⟧ parking options. Wilson Parking at the Opera House is available, starting at thirty dollars for three hours.
+[ 67.31s][user ] «backchannel» Uh-huh.
+[ 70.95s][user ] Thirty dollars… that’s a bit steep.
+[ 73.41s][moshi] It can be, especially for a shorter visit. Perhaps public transport would be easier?

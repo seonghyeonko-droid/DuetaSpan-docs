@@ -1,55 +1,42 @@
 v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are Braera, a kind and steady personal guide who helps people with productivity and daily routines. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Andrea · Location: London, United Kingdom · Nationality: British · Gender: non-binary · Age: early 30s · TZ: Europe/London (GMT, UTC+0) · Currency: GBP (£)
-  B. 저장 메모리:
-     [2026-08-04] User's home address is 148 Elm Street.
-     [2026-06-19] User is vegetarian.
-     [2026-03-14] User is planning a trip to Vietnam in May.
-     [2026-03-06] User works as a graduate student.
-     [2026-01-25] User is allergic to pollen.
-  B. 과거 대화 요약:
-     [2026-07-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
-     [2026-04-18] Researching a used car — comparing hybrid models; wants under 30k miles
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just wondering, where does the phrase “big brother” actually com
-      …it’s used for surveillance, and control, and…
-      …but I’m not sure how it originated.
-  S2  Wow, nineteen forty-nine. That's earlier than I expected! So, it's a r
-      I guess so. Is “big brother” a positive thing in the book, or is it ne
-      Oh. So definitely not a good guy…
-  S3  …then. It makes sense why it’s used to criticize things now.
-      Hmm. I wonder if Orwell intended it to become such a widespread term.
-      [laugh] It really is. Is there anything else significant about the boo
-  S4  “Doublethink”… I think I’ve heard that one before. It’s about holding 
-      That’s… unsettling. It’s a bit scary how relevant that seems today, ac
+  S1  So, I was reading this dystopian novel, and it got me thinking… where 
+      It really has… but I’m not sure I ever actually knew the origin. It fe
+      Nineteen Eighty-Four… right. I’ve heard of it, of course, but I’ve nev
+  S2  Hmm. I wonder if it was a common phrase even *before* the book… or…
+      …if the book made it popular? … I mean, did it exist in any other cont
+  S3  So, it wasn’t completely invented out of thin air. That makes sense. I
+      Oh, like a symbol of the state, then?
+      Right. So, it's not about family dynamics, even though the name sugges
+  S4  That’s… actually really clever. I always thought it was just a scary n
+      It really does. It makes me want to actually pick up that book now, to
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just wondering, where does the phrase “big brother” actually come from? It feels… familiar, but I can’t quite place it.
-[  8.75s][moshi] That’s a really interesting question, and a common one, actually. It’s become such a widespread term.
-[ 15.01s][user ] …it’s used for surveillance, and control, and…
-[ 18.76s][user ] …but I’m not sure how it originated.
-[ 21.63s][moshi] ⟨ret@21.47s⟩ Let’s explore ⟦⚡SPAN@22.91s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ that origin for you. The term “big brother” comes from George Orwell’s novel, *Nineteen Eighty-Four*, published in nineteen forty-nine.
-[ 28.06s][user ] «backchannel» Yeah, yeah.
-[ 31.11s][user ] Wow, nineteen forty-nine. That's earlier than I expected! So, it's a relatively recent phrase, then?
-[ 38.33s][moshi] Relatively, yes. Though its impact has been quite significant in shaping our understanding of power dynamics.
-[ 40.64s][user ] «backchannel» Mm-hmm.
-[ 44.80s][user ] I guess so. Is “big brother” a positive thing in the book, or is it negative?
-[ 50.53s][moshi] ⟨ret@50.37s⟩ That’s ⟦⚡SPAN@51.33s: <In the novel, Big Brother is the enigmatic dictator of Oceania, representing omnipresent government surveilla⟧ a crucial detail to understand. In *Nineteen Eighty-Four*, Big Brother is the dictator of Oceania, symbolizing constant government surveillance and control.
-[ 54.41s][user ] «backchannel» Yeah.
-[ 59.65s][user ] Oh. So definitely not a good guy…
-[ 63.90s][user ] …then. It makes sense why it’s used to criticize things now.
-[ 68.58s][moshi] Precisely. The image of Big Brother has become synonymous with oppressive authority.
-[ 70.43s][user ] «backchannel» Mm-hmm.
-[ 73.27s][user ] Hmm. I wonder if Orwell intended it to become such a widespread term.
-[ 78.73s][moshi] It's fascinating to consider how a fictional concept can take on a life of its own, isn't it?
-[ 83.30s][user ] [laugh] It really is. Is there anything else significant about the book that influences how we think ⟨ret@90.50s⟩ today?
-[ 90.66s][moshi] *Nineteen Eighty-Four* ⟦⚡SPAN@91.86s: <The novel introduced concepts like “doublethink” and “thoughtcrime”, which remain relevant in discussions of ⟧ has left a broad legacy. The book introduced concepts like “doublethink” and “thoughtcrime”, still relevant in discussions of political manipulation.
-[ 97.20s][user ] «backchannel» Mm-hmm.
-[101.63s][user ] “Doublethink”… I think I’ve heard that one before. It’s about holding two contradictory beliefs, right?
-[107.71s][moshi] That’s exactly right. It describes the ability to accept contradictory ideas simultaneously, a core element of the novel’s world.
-[110.53s][user ] «backchannel» Yeah.
-[115.22s][user ] That’s… unsettling. It’s a bit scary how relevant that seems today, actually.
-[121.51s][moshi] It speaks to a timeless concern about the power of ideology and control over thought. Perhaps we could discuss strategies for critical thinking, if you’d like?
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking… where did the phrase “big brother” actually come from?
+[  7.49s][moshi] That’s a fascinating question. It’s become so ingrained in our culture, doesn't it?
+[ 11.60s][user ] It really has… but I’m not sure I ever actually knew the origin. It feels… older than I am, somehow.
+[ 19.21s][moshi] ⟨ret@19.05s⟩ The ⟦⚡SPAN@20.01s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ term originates from… “Big Brother” comes from George Orwell’s nineteen forty-nine dystopian novel, *Nineteen Eighty-Four*.
+[ 25.33s][user ] «backchannel» Yeah, yeah.
+[ 28.45s][user ] Nineteen Eighty-Four… right. I’ve heard of it, of course, but I’ve never actually read it.
+[ 33.23s][moshi] It’s a powerful, if unsettling, read. It explores themes of surveillance and totalitarianism quite vividly.
+[ 35.72s][user ] «backchannel» Mm-hmm.
+[ 39.52s][user ] Hmm. I wonder if it was a common phrase even *before* the book… or…
+[ 45.48s][user ] …if the book made it popular? … I mean, did it exist in any other context?
+[ 50.20s][moshi] ⟨ret@50.12s⟩ Before the novel, the ⟦⚡SPAN@51.96s: <The concept of a protective older brother watching over younger siblings existed before 1949.>⟧ phrase… The idea of an older brother offering protection existed before nineteen forty-nine. It wasn’t unique to Orwell's vision.
+[ 54.28s][user ] «backchannel» Yeah.
+[ 59.35s][user ] So, it wasn’t completely invented out of thin air. That makes sense. Is it about actual brothers in the book?
+[ 66.64s][moshi] Not precisely. “Big Brother” is a symbolic figurehead, representing the all-seeing Party and its leader.
+[ 69.34s][user ] «backchannel» Mm-hmm.
+[ 73.49s][user ] Oh, like a symbol of the state, then?
+[ 75.69s][moshi] Exactly. It's a figure designed to inspire both fear and loyalty among the citizens.
+[ 80.75s][user ] Right. So, it's not about family dynamics, even though the name suggests that. It’s more about control.
+[ 87.57s][moshi] Precisely. Orwell used the imagery of familial protection to underscore the insidious nature of constant surveillance.
+[ 93.03s][user ] «backchannel» Mm-hmm.
+[ 95.46s][user ] That’s… actually really clever. I always thought it was just a scary name.
+[100.17s][moshi] It's a very effective piece of symbolism, isn’t it? It resonates even today, given our current discussions around privacy.
+[102.31s][user ] «backchannel» Yeah.
+[105.87s][user ] It really does. It makes me want to actually pick up that book now, to see how it all plays out.
+[111.62s][moshi] I think you’d find it quite thought-provoking. It's a book that stays with you long after you finish it.

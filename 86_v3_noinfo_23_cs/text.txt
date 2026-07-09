@@ -1,79 +1,53 @@
 v3_noinfo_23_cs src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 커리어 선택과 직장 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰니스 코치 Brae입니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Noah · Location: San Francisco, United States · Nationality: American · Gender: male · Age: 40s · TZ: America/Los_Angeles (PST, UTC-8) · Currency: USD ($)
-  B. 저장 메모리:
-     [2026-07-23] User is into marathon training.
-     [2026-02-21] User is allergic to cat dander.
-     [2026-02-01] User prefers an aisle seat when traveling.
-     [2026-01-07] User is vegetarian.
-     [2026-01-04] User's home address is 521 Oak Avenue.
-  B. 과거 대화 요약:
-     [2026-03-15] Planning a birthday dinner — party of six; looking for outdoor seating
-     [2026-01-25] Comparing gym memberships — wants a pool; close to the office
+SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스 관리를 돕는 긍정적이고 지지적인 웰니스 코치 Brae입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  응, 작년 12월 24일 도쿄 날씨가 어땠어?
-      그래, 알겠어. 음, 봄에 교토 여행을 생각 중인데…
-      그래도 벚꽃 구경 사람 때문에 걱정돼. 주변에 덜 붐비는 곳 있어?
-      오하라… 완벽하겠다! 기차로 바로 갈 수 있어?
-  S2  한 번 갈아타는 건 괜찮아. [laugh] 오하라에 호텔 있어? 좋은 곳 있으면 알려줘.
-      2만 5천 엔… 좀 비싸네. 더 저렴한 곳 있어?
-      아. 알았어… 그럼 여관을 찾아봐야겠다.
-      그럼 같은 날짜로 오하라의 전통 여관을 찾아줄래?
-  S3  훨씬 좋네! 거기 방 예약해 줄 수 있어?
-      정말 고마워, 브레.
-      거기 가서 도자기 수업도 들어볼까 하는데. 추천해 줄 만한 곳 있어?
-      화요일과 금요일… 일정 확인해 봐야겠다. 수업은 몇 시에 시작해?
-  S4  완벽해! 모든 게 잘 풀리고 있어!
-      맞아. 마지막으로 하나만 물어볼게. 교토역에서 쇼라이안 료칸까지 가는 가장 좋은 방법은 뭐야?
-      알았어, 17번 버스…
+  S1  응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해?
+      그렇구나. 추워 보이네. 근처에 괜찮은 후기 많은 아늑한 카페 좀 찾아 줄래?
+      좋게 들리네. 오늘 저녁 6시 30분에 두 명 예약 좀 해 줄래?
+  S2  좋다! 마음이 놓이네. 아, 요즘 일이 너무 스트레스야.
+      그냥… 새로운 프로젝트가 너무 커. 그리고 상사가 계속 일을 더 추가해.
+      맞아! 그리고 해야 할 일은 많은데, 거절을 못 하고 계속 "네"만 말하게 돼.
+  S3  알지만… 무례하게 느껴지거나 팀워크를 망치는 것 같아.
+      음… 좋은 시각이네. [sigh] 시간 관리 기술에 대해 아는 거 있어?
+      포모도로… 뭐?
+  S4  오. 알았어. 그럼 내일 아침 9시에 할 일 목록을 검토하라고 알림이라도 설정해 줄래?
+      완벽해. 고마워, 브레. 정말 큰 도움이 됐어.
+      그걸 기억하려고 노력할게.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 응, 작년 12월 24일 도쿄 날씨가 어땠어?
-[  3.66s][moshi] ⟨ret@3.51s⟩ 알아볼게요. ⟦⚡SPAN@4.95s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of 12 degree⟧ 이천이십삼 년 12월 24일 도쿄는 대체로 흐린 날씨였고, 기온은 5도에서 12도 사이였습니다.
+[  0.00s][user ] 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해?
+[  4.09s][moshi] ⟨ret@3.93s⟩ 음, ⟦⚡SPAN@5.13s: (tool result) The weather in Tokyo on December twenty-fourth, 2023 was partly cloudy with a high of 12 degrees⟧ 확인해 보니까… 작년 12월 24일 도쿄는 부분적으로 흐렸고, 기온은 6도에서 12도 사이였어요.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
-[ 11.54s][user ] 그래, 알겠어. 음, 봄에 교토 여행을 생각 중인데…
-[ 15.68s][moshi] 정말 좋네요! 교토의 봄은 정말 아름답고, 사색과 새로운 시작에 좋은 시간일 거예요.
-[ 19.09s][user ] «backchannel» 응.
-[ 22.89s][user ] 그래도 벚꽃 구경 사람 때문에 걱정돼. 주변에 덜 붐비는 곳 ⟨ret@27.25s⟩ 있어?
-[ 27.57s][moshi] 조용한 곳을 ⟦⚡SPAN@29.25s: (tool result) Ohara, a small village 25 kilometers north of Kyoto, is known for its beautiful Sanzen-in temple⟧ 찾는 건 좋은 생각이에요… 교토에서 북쪽으로 25킬로미터 떨어진 오하라에는 산젠인 절을 포함해 벚꽃이 아름답지만 사람이 덜 몰립니다.
-      CALL: {"function": "Places_1_Search", "arguments": {"query": "less crowded cherry blossom viewing near Kyoto", "radius": "50km"}}
-[ 35.20s][user ] «backchannel» 음.
-[ 38.60s][user ] 오하라… 완벽하겠다! 기차로 바로 갈 수 있어?
-[ 42.47s][moshi] ⟨ret@42.40s⟩ ⟦⚡SPAN@42.90s: (tool result) A train from Kyoto Station to Ohara requires one transfer at Demachiyanagi Station, and takes ap⟧ 기차 노선을 알아볼게요… 교토역에서 오하라까지 기차를 타면 데마치야나기역에서 한 번 갈아타야 하는데, 약 한 시간 15분 정도 걸립니다.
-      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"start": "Kyoto Station", "end": "Ohara, Japan", "mode": "train"}}
-[ 52.55s][user ] 한 번 갈아타는 건 괜찮아. [laugh] 오하라에 호텔 있어? 좋은 곳 있으면 ⟨ret@59.28s⟩ 알려줘.
-[ 59.65s][moshi] 호텔 상황을 ⟦⚡SPAN@61.28s: (tool result) The Ryokan Sansho is available in Ohara from April tenth to April thirteenth, with rooms startin⟧ 확인해 볼게요… 4월 10일부터 13일까지 료칸 산쇼에 객실이 있고, 1박에 2만 5천 엔부터 시작합니다.
-      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
-[ 67.58s][user ] 2만 5천 엔… 좀 비싸네. 더 저렴한 곳 ⟨ret@70.75s⟩ 있어?
-[ 71.14s][moshi] 검색 ⟦⚡SPAN@72.27s: (tool result) No hotels are available in Ohara under 15,000 yen from April tenth to April thirteenth.⟧ 범위를 좀 넓혀볼게요… 죄송하지만, 해당 날짜에 오하라에 1만 5천 엔 이하의 호텔은 없습니다.
-      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "max_price": "15000", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
-[ 79.01s][user ] 아. 알았어… 그럼 여관을 찾아봐야겠다.
-[ 82.91s][moshi] 좋은 생각이에요! 전통 여관은 종종 더 저렴하고 정통한 경험을 제공합니다.
-[ 88.82s][user ] 그럼 같은 날짜로 오하라의 전통 여관을 찾아줄래?
-[ 92.22s][moshi] ⟨ret@91.91s⟩ ⟦⚡SPAN@92.87s: (tool result) Shoraian Ryokan is available from April tenth to April thirteenth, priced at 18,000 yen per nigh⟧ 알겠습니다. 전통 여관 옵션을 찾아볼게요… 쇼라이안 료칸은 4월 10일부터 13일까지 이용 가능하며, 식사를 포함하여 1박에 1만 8천 엔입니다.
-      CALL: {"function": "Hotels_1_Search", "arguments": {"location": "Ohara, Japan", "type": "ryokan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13"}}
-[102.67s][user ] 훨씬 좋네! 거기 방 예약해 줄 수 있어?
-[105.18s][moshi] ⟨ret@105.03s⟩ 물론이죠, ⟦⚡SPAN@107.03s: (tool result) Your reservation at Shoraian Ryokan is confirmed for one guest, from April tenth to April thirte⟧ 예약해 드릴게요… 쇼라이안 료칸 예약이 확정되었습니다—XR729LP—1인, 4월 10일부터 13일까지입니다.
-      CALL: {"function": "Hotels_1_Book", "arguments": {"hotel_name": "Shoraian Ryokan", "check_in_date": "2024-04-10", "check_out_date": "2024-04-13", "number_of_guests": "1"}}
-[111.02s][user ] «backchannel» 응.
-[114.87s][user ] 정말 고마워, 브레.
-[116.79s][moshi] 천만에요! 편안한 여행 계획을 도와드릴 수 있어서 기쁩니다.
-[118.20s][user ] «backchannel» 어어.
-[123.84s][user ] 거기 가서 도자기 수업도 들어볼까 하는데. 추천해 줄 만한 곳 ⟨ret@127.85s⟩ 있어?
-[128.08s][moshi] 현지 문화와 ⟦⚡SPAN@129.85s: (tool result) The Ohara Pottery Studio offers beginner pottery classes on Tuesdays and Fridays, costing 5,000 ⟧ 교감할 수 있는 좋은 방법일 것 같아요… 오하라 도자기 스튜디오에서는 화요일과 금요일에 초보자 수업을 5천 엔에 진행합니다.
-      CALL: {"function": "Places_1_Search", "arguments": {"query": "pottery classes Ohara Japan"}}
-[132.97s][user ] «backchannel» 응.
-[139.69s][user ] 화요일과 금요일… 일정 확인해 봐야겠다. 수업은 몇 시에 ⟨ret@143.53s⟩ 시작해?
-[143.84s][moshi] 수업 시간을 ⟦⚡SPAN@145.53s: (tool result) Ohara Pottery Studio classes are held from 10 AM to 12 PM and from 2 PM to 4 PM on Tuesdays and ⟧ 알아볼게요… 오하라 도자기 스튜디오 수업은 화요일과 금요일에 오전 10시부터 12시, 오후 2시부터 4시까지 진행됩니다.
-      CALL: {"function": "Places_1_GetDetails", "arguments": {"place_name": "Ohara Pottery Studio"}}
-[150.03s][user ] «backchannel» 어.
-[153.18s][user ] 완벽해! 모든 게 잘 풀리고 있어!
-[155.98s][moshi] 정말 기쁘네요! 계획하는 과정이 즐거움의 절반이기도 하죠, 그렇지 않나요?
-[161.13s][user ] 맞아. 마지막으로 하나만 물어볼게. 교토역에서 쇼라이안 료칸까지 가는 가장 좋은 방법은 ⟨ret@166.93s⟩ 뭐야?
-[167.32s][moshi] 최적의 경로를 ⟦⚡SPAN@168.69s: (tool result) Take the Kyoto City Bus number 17 from Kyoto Station to Ohara Village, then walk ten minutes to ⟧ 찾아드릴게요… 교토시 버스 17번을 타고 오하라 마을로 간 다음, 10분 정도 걸으면 료칸에 도착합니다—총 90분 정도 소요됩니다.
-      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"start": "Kyoto Station", "end": "Shoraian Ryokan, Ohara, Japan", "mode": "public transport"}}
-[172.10s][user ] «backchannel» 진짜?
-[178.04s][user ] 알았어, 17번 버스…
+[  8.37s][user ] «backchannel» 응.
+[ 12.14s][user ] 그렇구나. 추워 보이네. 근처에 괜찮은 후기 많은 아늑한 카페 좀 찾아 ⟨ret@17.01s⟩ 줄래?
+[ 17.41s][moshi] 네, "The ⟦⚡SPAN@19.01s: (tool result) "The Daily Grind" is 0.5 miles away, has 4.5 stars from 120 reviews, and is open until 8 PM.⟧ Daily Grind"라는 곳이 반 마일 떨어져 있고, 평점은 4.5점에 리뷰가 120개 있고, 저녁 8시까지 영업해요.
+      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "cozy cafe", "location": "current location", "sort_by": "rating"}}
+[ 21.54s][user ] «backchannel» 음.
+[ 26.03s][moshi] 거기 정말 인기 있는 곳이라고 들었어요. 오늘처럼 쌀쌀한 날씨에 몸 녹이기에 딱 좋을 것 같아요.
+[ 32.43s][user ] 좋게 들리네. 오늘 저녁 6시 30분에 두 명 예약 좀 해 줄래?
+[ 36.64s][moshi] ⟨ret@36.56s⟩ ⟦⚡SPAN@37.06s: (tool result) Your reservation at "The Daily Grind" for two people is confirmed for 6:30 PM today. Confirmatio⟧ 네, 예약 완료됐어요! "The Daily Grind"에 두 명, 저녁 6시 30분으로 예약해 드렸어요. 확인 번호는 789234번입니다.
+      CALL: {"function": "Restaurant_1_Reserve", "arguments": {"restaurant_name": "The Daily Grind", "date": "today", "time": "18:30", "party_size": 2}}
+[ 45.27s][user ] 좋다! 마음이 놓이네. 아, 요즘 일이 너무 스트레스야.
+[ 49.44s][moshi] 일 스트레스는 정말 흔한 일이에요. 오늘 저녁에 자기 관리 시간을 갖는 건 정말 좋은 생각이에요.
+[ 56.09s][user ] 그냥… 새로운 프로젝트가 너무 커. 그리고 상사가 계속 일을 더 추가해.
+[ 60.67s][moshi] 정말 힘드시겠네요. 기대치가 계속 바뀌면 지치기 쉬워요.
+[ 65.21s][user ] 맞아! 그리고 해야 할 일은 많은데, 거절을 못 하고 계속 "네"만 말하게 돼.
+[ 70.69s][moshi] 정말 통찰력 있는 말씀이세요. "아니오"라고 말하는 법을 배우는 건 강력한 기술이지만, 연습이 필요해요.
+[ 78.20s][user ] 알지만… 무례하게 느껴지거나 팀워크를 망치는 것 같아.
+[ 82.48s][moshi] 그렇게 생각하는 건 흔한 일이에요! 하지만 경계를 설정하는 건 비협조적인 게 아니라, 에너지를 보호하고 최고의 결과를 내기 위한 거예요.
+[ 90.80s][user ] 음… 좋은 시각이네. [sigh] 시간 관리 기술에 대해 아는 거 있어?
+[ 95.12s][moshi] 네, 물론이죠! 여러 가지 방법이 있어요. 포모도로 기법이 좋은 시작점이 될 거예요.
+[ 99.28s][user ] «backchannel» 응.
+[100.58s][user ] 포모도로… ⟨ret@101.76s⟩ 뭐?
+[102.16s][moshi] 아, ⟦⚡SPAN@102.88s: (no information found)⟧ 죄송해요. 지금은 포모도로 기법에 대한 자세한 정보를 찾을 수 없어요.
+[107.41s][user ] 오. 알았어. 그럼 내일 아침 9시에 할 일 목록을 검토하라고 알림이라도 설정해 ⟨ret@113.13s⟩ 줄래?
+[113.45s][moshi] 네, ⟦⚡SPAN@114.17s: (tool result) A reminder to “Review to-do list” has been set for tomorrow at 9:00 AM.⟧ 그렇게 해 드릴게요! 내일 아침 9시에 할 일 목록을 검토하라는 알림을 설정해 드렸어요.
+      CALL: {"function": "Calendar_1_CreateReminder", "arguments": {"time": "09:00", "description": "Review to-do list"}}
+[115.09s][user ] «backchannel» 어어.
+[119.43s][user ] 완벽해. 고마워, 브레. 정말 큰 도움이 됐어.
+[122.83s][moshi] 천만에요! 작은 변화가 스트레스 관리와 더 나은 일과 삶의 균형을 이루는 데 큰 도움이 될 수 있다는 것을 기억하세요.
+[126.76s][user ] «backchannel» 응.
+[132.61s][user ] 그걸 기억하려고 노력할게.
+[134.55s][moshi] 그게 전부예요— 시도하려는 의지가 있다면요. 카페에서 즐거운 시간 보내세요!

@@ -1,25 +1,67 @@
 # v3_pers_37_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Noah · Location: Sydney, Australia · Nationality: Australian · Gender: male · Age: early 30s · TZ: Australia/Sydney (AEDT, UTC+11) · Currency: AUD ($)
-#   B. 저장 메모리:
-#      [2026-06-19] User works as a nurse.
-#      [2026-06-02] User is into marathon training.
-#      [2026-04-04] User is allergic to penicillin.
-#      [2026-03-15] User is planning a trip to Vietnam in August.
-#   B. 과거 대화 요약:
-#      [2026-03-17] Planning a birthday dinner — party of six; looking for outdoor seating
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_pers_37",
+#     "name": "Noah",
+#     "location": {
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
+#     },
+#     "nationality": "Australian",
+#     "gender": "male",
+#     "age_range": "early 30s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-19",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2026-06-02",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-04-04",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-03-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-03-17",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     }
+#   ]
+# }
 
 
-     0.00s  agent 발화 시작: 노아, 시드니에 온 걸 환영해. 난 후나르고, 네가 새로운 도시에 잘 정착하고 편안하게 지낼 수 있도록 도와
-     7.78s  agent 발화 끝
-     8.63s  user  발화 시작: 후나라… 이름 진짜 예쁘다. 솔직히 좀 정신이 없네. 모든 게 너무 달라 보여.
-    13.81s  agent 발화 시작: 당연히 정신없을 수 있어, 노아. 변화는 감당하기 힘들 수 있지. 지금 뭐가 제일 달라 느껴져?
-    13.96s  user  발화 끝
-    20.24s  agent 발화 끝
-    20.27s  user  발화 시작: 음… 그냥… 내 루틴을 찾는 게. 전에 살던 곳에서는 모든 걸 다 알았거든. 커피숍, 헬스장…
-    27.35s  agent 발화 시작: 익숙한 게 편안하긴 하지? 새로운 루틴을 만드는 데는 시간이 걸릴 거야. 여기서 만족스러운 루틴이 어떤 모습
-    27.59s  user  발화 끝
-    35.88s  agent 발화 끝
-    36.38s  user  발화 시작: 응, 그… 진짜 좋은 생각이야. 그냥… 시작할 수 있는 몇 가지 아이디어를 줘?
-    42.22s  user  발화 끝
+     0.00s  agent 발화 시작: 노아 씨, 안녕하세요. 저는 여러분의 정착을 돕는 웰니스 코치, 후나르라고 해요. 시드니에 오신 지 얼마나 
+     9.28s  user  발화 시작: 어, 안녕하세요. 후나르님. 이름이 좀 독특하시네요. 코치라… 뭐 도와주시는 거예요?
+     9.36s  agent 발화 끝
+    15.02s  user  발화 끝
+    15.11s  agent 발화 시작: 새로운 도시에서 느끼는 불안함이나 외로움, 적응의 어려움 같은 것들을 함께 이야기 나누면서 편안하게 지낼 수
+    27.69s  agent 발화 끝
+    28.10s  user  발화 시작: 음… 사실은 친구가 하나도 없어서 좀 그래요. 혼자 있는 시간이 너무 길고, 외로울 때가 많아요.
+    34.58s  user  발화 끝
+    34.69s  agent 발화 시작: 친구를 사귀는 게 쉽지 않죠. 특히 새로운 곳에서는 더 그렇고요. 노아 씨는 어떤 방식으로 친구를 사귀는 걸
+    46.38s  agent 발화 끝
+    47.48s  user  발화 시작: 글쎄요… 그냥 편하게 이야기 나눌 수 있는 사람이면 좋겠어요. 취미가 비슷하면 더 좋고요. 저는 영화 보는 
+    55.54s  user  발화 끝
+    55.64s  agent 발화 시작: 영화와 자전거라니, 정말 멋진 취미네요. 시드니에는 그런 취미를 함께 즐길 수 있는 모임이나 동호회가 많을 
+    66.45s  agent 발화 끝

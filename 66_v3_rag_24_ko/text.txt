@@ -1,21 +1,22 @@
 v3_rag_24_ko src=nq style=v1
 SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치인 코라나입니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 우서 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: 40s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-06-21] User has a Poodle named Coco.
-     [2026-04-08] User is into marathon training.
-     [2026-03-20] User is vegan.
-     [2026-02-17] User's home address is 609 Oak Avenue.
-  B. 과거 대화 요약:
-     [2026-06-01] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
-     [2026-05-21] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 가족사를 조사하시다가 뒤 플레시라는 성을 발견하셨군요. 발음하기가 좀 어렵던데, 원래 어디에서 유래했는지 ⟨ret@9.22s⟩ 궁금하시네요.
-[  9.54s][moshi] 정말 ⟦⚡SPAN@10.58s: The surname Du Plessis is of French origin, meaning “of Plessis”.⟧ 좋은 질문이세요. 성을 추적하는 건 정말 보람 있는 일이에요. 뒤 플레시는 지명에서 유래한 성으로, 프랑스의 플레시라는 곳 출신을 의미한다고 합니다.
-[ 17.19s][user ] «backchannel» 예.
-[ 20.41s][user ] 아, 프랑스군요! 흥미롭네요. 저는… 음, 다른 곳이라고 생각했거든요. 프랑스에서 흔한 ⟨ret@28.87s⟩ 성이었나요?
-[ 29.26s][moshi] 생각하신 대로 ⟦⚡SPAN@30.55s: The Plessis family were Norman nobles who followed William the Conqueror to England in 1066.⟧ 어느 정도 맞는 것 같아요. 뒤 플레시 가문은 천육십육 년 윌리엄 정복왕과 함께 잉글랜드로 건너온 노르만 귀족이었거든요.
-[ 37.24s][user ] 그러면 노르만족과 함께 잉글랜드로 왔군요? 사실 그게 많은 걸 설명해 주는 것 같아요. 거기서 멈췄나요, 아니면 더 퍼져나갔나요?
-[ 46.72s][moshi] 네, 결국 위그노들과 함께 남아프리카로 퍼져나갔습니다. 그들은 종교의 자유를 찾아 이름을 가져갔죠. 정말 회복력 있는 일이라고 생각하지 않으세요?
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  듀 플레시스라는 성이 어디에서 왔는지 궁금해요. 혹시 아시나요?
+  S2  아, 프랑스에서 왔군요. 그럼 아프리카와는 어떤 관계가 있는 건가요?
+  S3  위그노가 뭐였죠? 잠깐만요.
+  S4  아, 알겠어요. 그럼 남아프리카에서 흔한 성인가요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 듀 플레시스라는 성이 어디에서 왔는지 궁금해요. 혹시 ⟨ret@4.85s⟩ 아시나요?
+[  5.15s][moshi] ⟦⚡SPAN@5.89s: The surname Du Plessis originates from the French name "du Plessis," meaning "of the Plessis," a place name in⟧ 그 이름의 기원에 대해 알아볼까요? 듀 플레시스 성은 프랑스 노르망디의 지명인 “플레시”에서 유래한 프랑스 이름에서 비롯되었습니다.
+[ 12.11s][user ] «backchannel» Mhm.
+[ 14.63s][user ] 아, 프랑스에서 왔군요. 그럼 아프리카와는 어떤 관계가 있는 ⟨ret@19.42s⟩ 건가요?
+[ 19.82s][moshi] 남아프리카 공화국에 ⟦⚡SPAN@21.42s: Huguenots fleeing religious persecution in France settled in South Africa, bringing the Du Plessis surname wit⟧ 정착한 위그노 망명민들이 그 성을 널리 퍼뜨렸기 때문입니다.
+[ 25.21s][moshi] 17세기와 18세기에 종교적 박해를 피해 프랑스에서 남아프리카 공화국으로 이주한 위그노들이 듀 플레시스 성을 가져왔습니다.
+[ 34.11s][user ] 위그노가 뭐였죠? 잠깐만요.
+[ 37.23s][moshi] 위그노는 프랑스 개신교 신자들을 말합니다.
+[ 40.29s][user ] 아, 알겠어요. 그럼 남아프리카에서 흔한 ⟨ret@44.54s⟩ 성인가요?
+[ 44.93s][moshi] 네, ⟦⚡SPAN@45.74s: Du Plessis is a common surname in South Africa, ranking among the top fifty most frequent surnames in the coun⟧ 남아프리카 공화국에서 흔한 성 중 하나입니다.
+[ 48.49s][moshi] 듀 플레시스 성은 남아프리카 공화국에서 가장 흔한 성

@@ -1,22 +1,20 @@
 v3_rag_28_ko src=nq style=v2
 SYSTEM: <system> 당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 정슬 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: 40s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-07-02] User is allergic to peanuts.
-     [2026-05-20] User works as a accountant.
-     [2026-03-04] User prefers a window seat when traveling.
-     [2026-02-20] User is pescatarian.
-     [2026-02-07] User is planning a trip to Switzerland in March.
-     [2026-01-03] User's home address is 960 Pine Court.
-  B. 과거 대화 요약:
-     [2026-07-16] Researching a used car — comparing hybrid models; wants under 30k miles
-     [2026-02-04] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 그 부처들에 대해 읽고 있었는데… 퇴역 군인 부는 언제 ⟨ret@4.35s⟩ 시작됐어?
-[  4.66s][moshi] 좋은 질문이에요, ⟦⚡SPAN@6.35s: The United States Department of Veterans Affairs was created on July 21, 1930.⟧ 설립하는 데 얼마나 걸리는지 생각해보면요… 퇴역 군인 부는 천구백삼십 년 7월 21일에 만들어졌습니다.
-[ 12.49s][user ] 1930년이라고? 좀… 비교적 최근 같지 않아? 더 오래됐을 줄 알았는데.
-[ 18.50s][moshi] 많은 분들이 예상하시는 것보다는 조금 늦은 편이긴 합니다, 군 복무 역사를 생각해보면요.
-[ 24.21s][user ] 근데 남북 전쟁이나— 아니면 제1차 세계 대전 이후에도 퇴역 군인들을 위한 서비스가 ⟨ret@30.09s⟩ 있었잖아?
-[ 30.40s][moshi] ⟦⚡SPAN@31.05s: Prior to 1930, veteran benefits were administered by the Bureau of Pensions, established in 1861.⟧ 네, 이전에도 서비스는 있었어요, 하지만 하나의 부서 안에서 이루어진 건 아니었는데요… 천팔백육십일 년 이전에 퇴역 군인 혜택은 1861년에 설립된 연금국에서 처리했습니다.
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  국가 유공자부… 그게 언제 만들어졌는지 궁금하네요. 잘 모르겠어요.
+  S2  1930년이라고요? 좀 더 일찍 만들어졌을 줄 알았는데… 그 전에는 뭘로 대체했죠?
+  S3  그럼 그 전에는 좀 엉망이었겠네요, 그렇죠?
+  S4  아, 그러네요. 그나저나, 지금은 어떤 일들을 주로 하나요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 국가 유공자부… 그게 언제 만들어졌는지 궁금하네요. 잘 ⟨ret@4.99s⟩ 모르겠어요.
+[  5.30s][moshi] ⟦⚡SPAN@6.03s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 국가 유공자부를 언제 만들었는지 알아볼까요? 미국 국가 유공자부는 1930년 7월 21일에 설립되었습니다.
+[  8.27s][user ] «backchannel» Mhm.
+[ 13.92s][user ] 1930년이라고요? 좀 더 일찍 만들어졌을 줄 알았는데… 그 전에는 뭘로 대체했죠?
+[ 20.27s][moshi] 그 전에는 여러 기관에서 국가 유공자를 지원했어요. 한 기관으로 모아놓지 않았죠.
+[ 25.60s][user ] 그럼 그 전에는 좀 엉망이었겠네요, ⟨ret@27.90s⟩ 그렇죠?
+[ 27.97s][moshi] 과거에는 ⟦⚡SPAN@29.26s: Prior to 1930, veterans’ affairs were handled by various agencies within the federal government.⟧ 여러 기관이 분산되어 있어서요. 1930년 이전에는 여러 연방 정부 기관에서 국가 유공자 관련 업무를 처리했습니다.
+[ 34.77s][user ] «backchannel» Mm-hmm.
+[ 37.62s][user ] 아, 그러네요. 그나저나, 지금은 어떤 일들을 주로 하나요?

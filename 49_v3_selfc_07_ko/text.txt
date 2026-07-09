@@ -1,51 +1,60 @@
 v3_selfc_07_ko src=mcp style=mcp_selfcorrect
 SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 상담사 Tellar입니다. 기본적으로 반말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Rennora · Location: Tokyo, Japan · Nationality: Japanese · Gender: female · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
-  B. 저장 메모리:
-     [2026-05-17] User is planning a trip to Switzerland in March.
-     [2026-03-25] User is allergic to penicillin.
-     [2026-02-05] User has a Siamese cat named Bella.
-     [2026-01-17] User prefers an aisle seat when traveling.
-  B. 과거 대화 요약:
-     [2026-08-02] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-07-09] Planning a birthday dinner — party of six; looking for outdoor seating
-     [2026-04-23] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
-      아, 그런데—6월 16일이 더 괜찮을 것 같아요.
-  S2  네, 시청까지 얼마나 떨어져 있는지 알려 주시겠어요?
-      시청 주변에 주차는 어때요? 어렵나요?
-  S3  그랜드뷰 로프트에서 걸어갈 수 있는 거리에 커피숍이 있나요?
-      음, 브루 앤 바이트… 야외 좌석이 있나요?
-  S4  좋네요. [happy]
-      6월 16일 방문 예약을 확정하고 싶어요.
+  S1  Set up a viewing for me at The Grandview Lofts on June fifteenth.
+      Hmm, two is a little early. I— I mean, could we do three instead?
+      Perfect! Is there parking available at the building?
+  S2  That’s good to know. [laugh] And what about nearby coffee shops? I mig
+      Brew & Bites sounds nice. How far away is that one?
+      That’s really convenient. I’m getting excited about this viewing!
+  S3  It is. Actually, I was thinking… could we maybe reschedule for the six
+      Four-thirty sounds perfect.
+      Wonderful, thank you so much!
+  S4  I appreciate it. You've really taken a load off my mind.
+      It really is. I’m just hoping this place feels right.
+      That’s good advice. I will.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주실 수 ⟨ret@3.13s⟩ 있나요?
-[  3.37s][moshi] 응, 6월 15일 ⟦⚡SPAN@5.05s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:00 PM.⟧ 오후 2시에 그랜드뷰 로프트 방문 예약을 잡아 줬어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[  8.95s][user ] 아, 그런데—6월 16일이 더 괜찮을 것 ⟨ret@11.60s⟩ 같아요.
-[ 11.84s][moshi] 아무 문제 없어, ⟦⚡SPAN@13.60s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at 10:00 AM.⟧ 쉽게 바꿀 수 있어. 좋아, 그랜드뷰 로프트 방문 예약을 6월 16일 오전 10시로 다시 잡아 줬어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 16.06s][user ] «backchannel» 네.
-[ 19.77s][moshi] 이 부동산에 대해 더 도와줄 거 있어?
-[ 22.36s][user ] 네, 시청까지 얼마나 떨어져 있는지 알려 ⟨ret@25.22s⟩ 주시겠어요?
-[ 25.46s][moshi] ⟦⚡SPAN@26.34s: (tool result) The distance from The Grandview Lofts to City Hall is 3.2 miles.⟧ 알았어, 거리를 금방 확인해 볼게. 그랜드뷰 로프트에서 시청까지는 3.2마일이야.
-      CALL: {"function": "Navigation_2_GetDistance", "arguments": {"start": "The Grandview Lofts", "end": "City Hall"}}
-[ 28.68s][user ] «backchannel» 음.
-[ 31.43s][user ] 시청 주변에 주차는 어때요? 어렵나요?
-[ 34.92s][moshi] 다운타운 주차는 좀 어려울 수 있는데, 근처에 주차장이 여러 군데 있어.
-[ 39.88s][user ] 그랜드뷰 로프트에서 걸어갈 수 있는 거리에 커피숍이 있나요?
-[ 43.33s][moshi] ⟨ret@43.26s⟩ 좋은 질문이야, 좋은 ⟦⚡SPAN@45.26s: (tool result) Three coffee shops are within a half-mile of The Grandview Lofts: Brew & Bites, Daily Grind, and⟧ 커피숍을 찾는 게 중요하잖아. 근처에 커피숍이 세 군데 있어: 브루 앤 바이트, 데일리 그라인드, 그리고 자바 정션.
-      CALL: {"function": "Search_2_FindNearby", "arguments": {"location": "The Grandview Lofts", "query": "coffee shops"}}
-[ 54.09s][user ] 음, 브루 앤 바이트… 야외 좌석이 있나요?
-[ 57.48s][moshi] ⟨ret@57.41s⟩ 브루 ⟦⚡SPAN@58.45s: (tool result) Brew & Bites has a patio with seating for twelve.⟧ 앤 바이트에 야외 좌석이 있는지 알아볼게. 응, 브루 앤 바이트에는 열두 명을 수용할 수 있는 파티오가 있어.
-      CALL: {"function": "Search_2_GetDetails", "arguments": {"name": "Brew & Bites", "attribute": "outdoor seating"}}
-[ 65.02s][user ] 좋네요. [happy]
-[ 65.65s][moshi] 마음에 드는 옵션을 찾으신 것 같아서 정말 좋네! 그런 작은 디테일을 생각하는 게 좋지.
-[ 68.95s][user ] «backchannel» 예.
-[ 71.18s][user ] 6월 16일 방문 예약을 확정하고 싶어요.
-[ 73.92s][moshi] 잘 됐네! 기분이 좋으시다니 다행이야. 다른 일이 있으면 언제든지 말해.
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.85s⟩ fifteenth.
+[  4.08s][moshi] Okay, let’s find a time ⟦⚡SPAN@5.85s: (tool result) The Grandview Lofts is available for viewings on June fifteenth at 2:00 PM, 3:30 PM, and 5:00 PM⟧ that works for you at The Grandview Lofts.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
+[  8.20s][moshi] Those are the times available on June fifteenth: two, three-thirty, and five. Which one suits you best?
+[ 14.94s][user ] Hmm, two is a little early. I— I mean, could we do three ⟨ret@18.78s⟩ instead?
+[ 18.98s][moshi] Three-thirty it is! Let’s ⟦⚡SPAN@20.78s: (tool result) Viewing scheduled at The Grandview Lofts on June fifteenth at 3:30 PM. Confirmation number is 78⟧ confirm that viewing for you.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth", "time": "3:30 PM"}}
+[ 22.64s][moshi] Wonderful. Your viewing at The Grandview Lofts is confirmed for three-thirty. Your confirmation number is seven eight nine four five six.
+[ 30.90s][user ] Perfect! Is there parking available at the ⟨ret@34.29s⟩ building?
+[ 34.52s][moshi] Yes, ⟦⚡SPAN@35.25s: (tool result) The Grandview Lofts offers complimentary covered parking for all visitors.⟧ there is parking available.
+[ 36.77s][moshi] Absolutely. The Grandview Lofts has complimentary covered parking for visitors.
+[ 41.66s][user ] That’s good to know. [laugh] And what about nearby coffee shops? I might want to grab something beforehand.
+[ 48.35s][moshi] ⟨ret@48.27s⟩ There are a ⟦⚡SPAN@49.47s: (tool result) Three coffee shops are within a half-mile of The Grandview Lofts: Brew & Bites, The Daily Grind,⟧ few great options nearby!
+      CALL: {"function": "Search_Nearby", "arguments": {"location": "The Grandview Lofts", "query": "coffee shops"}}
+[ 50.69s][moshi] Brew & Bites, The Daily Grind, and Coffee Haven are all close by.
+[ 55.69s][user ] Brew & Bites sounds nice. How far away is that ⟨ret@58.95s⟩ one?
+[ 59.19s][moshi] ⟦⚡SPAN@59.45s: (tool result) Brew & Bites is 0.3 miles from The Grandview Lofts, a six-minute walk.⟧ It's just a short walk.
+      CALL: {"function": "Get_Distance", "arguments": {"origin": "The Grandview Lofts", "destination": "Brew & Bites"}}
+[ 60.62s][moshi] Brew & Bites is only point-three miles away, about a six-minute walk.
+[ 64.16s][user ] «backchannel» Mm-hmm.
+[ 66.15s][user ] That’s really convenient. I’m getting excited about this viewing!
+[ 69.65s][moshi] [happy] That’s fantastic! I’m happy to hear you’re feeling positive about it. It’s a big step, finding a new place.
+[ 76.64s][user ] It is. Actually, I was thinking… could we maybe reschedule for the sixteenth? Something came ⟨ret@82.41s⟩ up.
+[ 82.56s][moshi] Let's check the availability ⟦⚡SPAN@84.33s: (tool result) The Grandview Lofts is available for viewings on June sixteenth at 10:00 AM, 1:00 PM, and 4:30 P⟧ for June sixteenth.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 85.52s][moshi] The sixteenth has openings at ten AM, one PM, and four-thirty. Which works best now?
+[ 91.67s][user ] Four-thirty sounds ⟨ret@92.99s⟩ perfect.
+[ 93.39s][moshi] Excellent! Let’s get ⟦⚡SPAN@94.99s: (tool result) Viewing rescheduled at The Grandview Lofts on June sixteenth at 4:30 PM. New confirmation number⟧ that rescheduled for you.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth", "time": "4:30 PM"}}
+[ 96.49s][moshi] All set! Your viewing is now on June sixteenth at four-thirty. Your new confirmation is one two three seven eight nine.
+[101.42s][user ] «backchannel» Uh-huh.
+[105.33s][user ] Wonderful, thank you so much!
+[107.14s][moshi] You’re very welcome! I’m glad I could help you get everything sorted out.
+[110.70s][user ] «backchannel» Yeah.
+[111.95s][user ] I appreciate it. You've really taken a load off my mind.
+[114.93s][moshi] That’s what I’m here for! Transitions can be stressful, so I'm happy to support you through this.
+[120.12s][user ] «backchannel» Okay.
+[121.94s][user ] It really is. I’m just hoping this place feels right.
+[125.41s][moshi] I truly hope so too! Trust your instincts during the viewing, and remember to visualize yourself living there.
+[132.76s][user ] That’s good advice. I will.
+[135.19s][moshi] Wonderful. Remember, it’s okay to take your time and find a place that truly feels like home.

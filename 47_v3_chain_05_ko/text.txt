@@ -1,72 +1,63 @@
 v3_chain_05_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 수면 및 휴식을 돕는 차분하고 공감적인 개인 가이드인 Dar입니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 유우 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: 50s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-08-02] User prefers a window seat when traveling.
-     [2026-07-22] User has a Siamese cat named Bella.
-     [2026-03-21] User is planning a trip to Iceland in October.
-     [2026-02-20] User's favorite cuisine is Thai.
-  B. 과거 대화 요약:
-     [2026-04-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
-     [2026-02-15] Comparing gym memberships — wants a pool; close to the office
+SYSTEM: <system> 당신은 수면과 휴식을 돕는 차분하고 공감적인 개인 가이드, Dar입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Zuni 카페 가격대가 어떻게 돼요?
-      저녁 식사는 오늘 할 수 있나요?
-      7시 30분에 두 명 예약해 줄 수 있을까요?
-      주소 다시 알려줄 수 있을까요?
-  S2  거기 주차하기 힘들까요?
-      음, 좀 비싸네요. BART 역은 가까이에 있나요?
-      알겠습니다, 괜찮네요. BART를 탈 것 같아요.
-  S3  사실, BART를 결정하기 전에 반 네스 역에서 걸어가면 얼마나 걸리는지 알려줄 수 있을까요?
-      27분이나요? 좀 멀네요.
-      알겠습니다, BART를 타는 걸로 할게요. 편안하게 도착하려면 몇 시에 출발해야 할까요?
-      거기 날씨는 지금 어떤가요?
-  S4  알아두면 좋네요. 감사합니다, 다.
-      그럴 것 같아요. 혹시 더 도와드릴 일이 있을까요?
-      정말 완벽하네요. 정말 감사합니다.
+  S1  What’s the price range at Zuni Cafe?
+      Okay, good. And what are their hours today?
+      Hmm, that's late. Do they take reservations?
+      Great. Could you check if there’s a table for two available at 7:00 PM
+  S2  Wonderful! What’s the address again?
+      Is parking difficult around there?
+      Is there a garage nearby?
+      Okay, that’s not too bad. What kind of cuisine do they serve?
+  S3  Roast chicken, huh? Is it expensive?
+      Hmm, that’s a bit pricey. Do they have any cheaper options?
+      Okay, salads sound good. What’s the average wait time if I walk in wit
+      That's a long wait. Could you set a reminder for fifteen minutes befor
+  S4  Perfect. Thanks so much for your help!
+      Actually, yes. What’s the weather like in San Francisco tonight?
+      Oh, good, not too cold. I think that's all for now.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Zuni 카페 가격대가 어떻게 ⟨ret@1.75s⟩ 돼요?
-[  2.06s][moshi] 잠시 확인해 ⟦⚡SPAN@3.75s: (tool result) Zuni Cafe’s price range is $$$, with entrees costing $30 to $60.⟧ 볼게요… 주니 카페의 메인 요리는 30달러부터 60달러까지 다양합니다.
-[  4.23s][user ] «backchannel» 그렇죠.
-[  8.27s][user ] 저녁 식사는 오늘 할 ⟨ret@9.88s⟩ 수 있나요?
-[ 10.19s][moshi] 확인해 드릴 ⟦⚡SPAN@11.40s: (tool result) Zuni Cafe is open for dinner tonight until 10:00 PM.⟧ 수 있습니다. 주니 카페는 오늘 저녁 10시까지 영업합니다.
-[ 15.52s][user ] 7시 30분에 두 명 예약해 줄 수 ⟨ret@18.03s⟩ 있을까요?
-[ 18.27s][moshi] 예약해 드리겠습니다… ⟦⚡SPAN@20.03s: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:30 PM tonight, confirmation number is 84X⟧ 주니 카페에 두 분 7시 30분 예약이 확정되었습니다. 확인 번호는 84X9Z입니다.
-      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "date": "tonight", "time": "7:30 PM", "party_size": "2"}}
-[ 21.06s][user ] «backchannel» 네.
-[ 26.17s][user ] 주소 다시 알려줄 수 ⟨ret@27.51s⟩ 있을까요?
-[ 27.82s][moshi] 기억하고 있어요, ⟦⚡SPAN@29.51s: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisco, California 94102.⟧ 간단하네요… 주니 카페는 샌프란시스코 마켓 스트리트 1658번지에 있습니다.
-[ 32.09s][user ] «backchannel» 와.
-[ 34.41s][user ] 거기 주차하기 힘들까요?
-[ 35.85s][moshi] ⟨ret@35.78s⟩ 근처 ⟦⚡SPAN@36.74s: (tool result) Street parking near Zuni Cafe is very limited; nearby garages cost $8 to $12 per hour.⟧ 주차 옵션을 찾아볼게요… 주니 카페 근처 주차 공간은 제한적이고, 주차장은 시간당 8달러에서 12달러 정도 합니다.
-      CALL: {"function": "maps_parking_details", "arguments": {"location": "Zuni Cafe"}}
-[ 41.00s][user ] «backchannel» 아.
-[ 46.00s][user ] 음, 좀 비싸네요. BART 역은 가까이에 ⟨ret@48.97s⟩ 있나요?
-[ 49.36s][moshi] 대중교통 옵션을 확인해 ⟦⚡SPAN@50.97s: (tool result) The Civic Center/UN Plaza BART station is a six-minute walk from Zuni Cafe.⟧ 드릴 수 있습니다. 시빅 센터 BART 역까지 걸어서 6분 정도 걸립니다.
-      CALL: {"function": "maps_transit_details", "arguments": {"location": "Zuni Cafe"}}
-[ 56.56s][user ] 알겠습니다, 괜찮네요. BART를 탈 것 같아요.
-[ 59.99s][moshi] 저녁 식사 계획을 고려하면, 편안하게 휴식을 취하는 것도 좋을 것 같아요. 식사 전에 긴장을 풀 수 있는 플레이리스트를 몇 가지 추천해 드릴게요.
-[ 71.06s][user ] 사실, BART를 결정하기 전에 반 네스 역에서 걸어가면 얼마나 걸리는지 알려줄 수 ⟨ret@77.24s⟩ 있을까요?
-[ 77.55s][moshi] 물론이죠, 다른 ⟦⚡SPAN@79.00s: (tool result) Walking from Van Ness Station to Zuni Cafe takes approximately twenty-seven minutes.⟧ 경로도 확인해 볼게요… 반 네스 역에서 걸어가면 약 27분 정도 걸립니다.
-      CALL: {"function": "maps_walking_time", "arguments": {"start": "Van Ness Station", "end": "Zuni Cafe"}}
-[ 84.92s][user ] 27분이나요? 좀 멀네요.
-[ 87.31s][moshi] ⟨ret@87.24s⟩ 다른 ⟦⚡SPAN@88.28s: (tool result) The Civic Center/UN Plaza BART station is 0.3 miles from Zuni Cafe.⟧ 선택지보다 시간이 더 걸리는 것 같네요… 시빅 센터 역은 0.3마일 정도 떨어져 있습니다.
-[ 94.24s][user ] 알겠습니다, BART를 타는 걸로 할게요. 편안하게 도착하려면 몇 시에 출발해야 할까요?
-[100.04s][moshi] ⟨ret@99.89s⟩ 이동 시간을 고려해서 ⟦⚡SPAN@101.81s: (tool result) Travel time to Civic Center/UN Plaza BART station is currently fifteen minutes.⟧ 계산해 드릴게요… BART 역까지 가는 데 약 15분 정도 걸립니다.
-      CALL: {"function": "maps_travel_time", "arguments": {"start": "your location", "end": "Civic Center/UN Plaza BART station", "transport_mode": "transit"}}
-[102.91s][user ] «backchannel» 네네.
-[106.73s][user ] 거기 날씨는 지금 ⟨ret@108.45s⟩ 어떤가요?
-[108.76s][moshi] 현재 ⟦⚡SPAN@109.81s: (tool result) The weather at Civic Center/UN Plaza is currently 62 degrees Fahrenheit and cloudy.⟧ 날씨를 확인해 볼게요… BART 역은 섭씨 16도이고 흐립니다.
-      CALL: {"function": "weather_forecast", "arguments": {"location": "Civic Center/UN Plaza BART station"}}
-[110.89s][user ] «backchannel» 음.
-[113.22s][user ] 알아두면 좋네요. 감사합니다, 다.
-[115.79s][moshi] 천만에요. 주니 카페에서 즐거운 저녁 식사 되시길 바랍니다.
-[120.25s][user ] 그럴 것 같아요. 혹시 더 도와드릴 일이 ⟨ret@124.09s⟩ 있을까요?
-[124.48s][moshi] 예약 ⟦⚡SPAN@125.29s: (tool result) Reminder set for 7:00 PM: Zuni Cafe reservation.⟧ 전에 부드럽게 상기시켜 드릴까요? 주니 카페 예약에 대해 저녁 7시에 알림을 설정해 드렸습니다.
-      CALL: {"function": "set_reminder", "arguments": {"time": "7:00 PM", "description": "Zuni Cafe reservation"}}
-[133.01s][user ] 정말 완벽하네요. 정말 감사합니다.
-[135.45s][moshi] 전혀요. 저녁 식사 맛있게 드시고, 휴식도 잊지 마세요— 평화로운 밤이 중요합니다.
+[  0.00s][user ] What’s the price range at Zuni ⟨ret@2.06s⟩ Cafe?
+[  2.37s][moshi] Let me ⟦⚡SPAN@3.18s: (tool result) Zuni Cafe’s price range is $$$ (thirty to sixty dollars).⟧ check the details for you. Zuni Cafe is in the thirty to sixty dollar price range.
+[  4.88s][user ] «backchannel» Okay.
+[  8.12s][user ] Okay, good. And what are their hours today?
+[ 10.92s][moshi] ⟨ret@10.61s⟩ I ⟦⚡SPAN@11.57s: (tool result) Zuni Cafe is open today from 11:30 AM to 9:30 PM.⟧ can find that information for you. Zuni Cafe is open today from eleven thirty AM to nine thirty PM.
+[ 17.28s][user ] Hmm, that's late. Do they take ⟨ret@20.31s⟩ reservations?
+[ 20.54s][moshi] Yes, ⟦⚡SPAN@21.67s: (tool result) Zuni Cafe accepts reservations via OpenTable.⟧ they do accept reservations. Zuni Cafe accepts reservations through OpenTable.
+[ 23.00s][user ] «backchannel» Yeah.
+[ 27.31s][user ] Great. Could you check if there’s a table for two available at 7:00 PM ⟨ret@31.33s⟩ tonight?
+[ 31.63s][moshi] I’ve confirmed a table for ⟦⚡SPAN@33.33s: (tool result) A table for two at Zuni Cafe is available at 7:00 PM tonight. Reservation confirmed under the na⟧ two at seven PM tonight at Zuni Cafe.
+      CALL: {"function": "opentable_reserve", "arguments": {"restaurant": "Zuni Cafe", "date": "today", "time": "7:00 PM", "party_size": "2"}}
+[ 34.17s][user ] «backchannel» Yeah.
+[ 36.39s][user ] Wonderful! What’s the address again?
+[ 38.61s][moshi] ⟨ret@38.54s⟩ The address ⟦⚡SPAN@39.50s: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisco, CA 94102.⟧ is one six five eight Market Street. It’s at one six five eight Market Street in San Francisco.
+[ 42.52s][user ] «backchannel» Yeah.
+[ 45.55s][user ] Is parking difficult around there?
+[ 47.87s][moshi] «interrupted» Parking can be challenging in that area—
+[ 49.60s][user ] «interrupts_prev» Is there a garage ⟨ret@50.99s⟩ nearby?
+[ 51.39s][moshi] ⟦⚡SPAN@51.49s: (tool result) The closest parking garage is at 16th and Mission, 0.6 miles away.⟧ That’s a good question.
+[ 52.40s][moshi] The nearest garage is at sixteenth and Mission, point six miles away.
+[ 54.99s][user ] «backchannel» Yeah.
+[ 56.62s][user ] Okay, that’s not too bad. What kind of cuisine do they ⟨ret@60.08s⟩ serve?
+[ 60.31s][moshi] They ⟦⚡SPAN@61.04s: (tool result) Zuni Cafe serves Californian cuisine, known for its roast chicken.⟧ specialize in Californian cuisine. They’re known for their Californian cuisine, especially their roast chicken.
+[ 68.83s][user ] Roast chicken, huh? Is it expensive?
+[ 71.68s][moshi] The roast chicken is a signature dish—
+[ 74.22s][moshi] ⟨ret@74.14s⟩ It's priced ⟦⚡SPAN@75.34s: (tool result) The roast chicken at Zuni Cafe costs $52.00.⟧ at fifty-two dollars. The roast chicken costs fifty-two dollars.
+[ 79.35s][user ] Hmm, that’s a bit pricey. Do they have any cheaper options?
+[ 82.64s][moshi] ⟨ret@82.49s⟩ Yes, they ⟦⚡SPAN@83.61s: (tool result) Zuni Cafe’s menu includes salads from $22 and pasta dishes from $28.⟧ have several other options. They have salads starting at twenty-two dollars and pasta from twenty-eight.
+[ 89.38s][user ] Okay, salads sound good. What’s the average wait time if I walk in without a ⟨ret@94.43s⟩ reservation?
+[ 94.82s][moshi] Let ⟦⚡SPAN@95.55s: (tool result) The current wait time at Zuni Cafe for walk-ins is approximately 30-45 minutes.⟧ me check the current wait times. The wait time for walk-ins is about thirty to forty-five minutes.
+[101.20s][user ] That's a long wait. Could you set a reminder for fifteen minutes before ⟨ret@105.79s⟩ my reservation?
+[106.18s][moshi] I’ve set ⟦⚡SPAN@107.31s: (tool result) Reminder set for 6:45 PM: “Zuni Cafe reservation”.⟧ a reminder for six forty-five PM for your Zuni Cafe reservation.
+      CALL: {"function": "set_reminder", "arguments": {"time": "6:45 PM", "message": "Zuni Cafe reservation"}}
+[108.75s][user ] «backchannel» Yeah.
+[111.27s][user ] Perfect. Thanks so much for your help!
+[113.43s][moshi] You’re very welcome. Is there anything else I can assist you with regarding your evening plans?
+[116.41s][user ] «backchannel» Right.
+[119.71s][user ] Actually, yes. What’s the weather like in San Francisco tonight?
+[124.02s][moshi] ⟨ret@123.95s⟩ Let me ⟦⚡SPAN@124.99s: (tool result) The weather in San Francisco tonight will be 62°F and partly cloudy.⟧ look up the forecast. It will be sixty-two degrees and partly cloudy tonight.
+[129.38s][user ] Oh, good, not too cold. I think that's all for now.
+[132.66s][moshi] Wonderful. I hope you enjoy your dinner at Zuni Cafe.

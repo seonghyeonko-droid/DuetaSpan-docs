@@ -1,31 +1,31 @@
 # v3_defer_10_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Alice · Location: Paris, France · Nationality: French · Gender: female · Age: late 30s · TZ: Europe/Paris (CET, UTC+1) · Currency: EUR (€)
-#   B. 저장 메모리:
-#      [2026-06-04] User's home address is 447 Oak Avenue.
-#      [2026-03-11] User has a Corgi named Mochi.
-#      [2026-03-08] User is planning a trip to Lisbon in October.
-#      [2026-02-27] User prefers a window seat when traveling.
-#      [2026-02-15] User works as a software engineer.
-#      [2026-01-28] User is lactose-intolerant.
-#   B. 과거 대화 요약:
-#      [2026-06-28] Comparing gym memberships — wants a pool; close to the office
-#      [2026-04-11] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-#      [2026-04-09] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
-
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 No, that’s okay. Can you book a ta | S3 Oh, actually… what time does the m | S4 Okay, great.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     5.02s  <ret> 발화 (turn1 첫 프레임)
-     5.04s  user  발화 끝
-     5.10s  agent 발화 시작: <ret> Okay, locating photos from your France trip… I found s
-     6.46s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.38s]: (tool result) Seven files were found: "Paris_Eiffel_Tower.jpg", "Nice_
-    10.80s  user  발화 시작: Mhm.
-    11.34s  user  발화 끝
-    14.16s  user  발화 시작: Oh, actually, can you just send me the one of the Eiffel Tow
-    14.29s  agent 발화 끝
-    17.54s  <ret> 발화 (turn4 첫 프레임)
-    17.86s  agent 발화 시작: <ret> Certainly, sending that photo to you now… The Eiffel T
-    18.05s  user  발화 끝
-    18.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.47s]: (tool result) File "Paris_Eiffel_Tower.jpg" was sent to your registere
-    24.20s  agent 발화 끝
+     4.13s  <ret> 발화 (turn1 첫 프레임)
+     4.17s  agent 발화 시작: <ret> I located seven photos from your France trip last year
+     4.35s  user  발화 끝
+     6.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.89s]: (tool result) Found seven files: "Paris_Eiffel_Tower.jpg", "Nice_Beach
+     7.78s  user  발화 시작: Mhm.
+     8.27s  user  발화 끝
+    10.06s  agent 발화 끝
+    10.71s  user  발화 시작: No, that’s okay. Can you book a table for two at a nice Ital
+    15.98s  <ret> 발화 (turn4 첫 프레임)
+    16.14s  agent 발화 시작: <ret> I’ve booked a table for two at Bella Notte tomorrow at
+    16.32s  user  발화 끝
+    17.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Reservation confirmed at Bella Notte, downtown, tomorrow
+    18.31s  user  발화 시작: Really?
+    18.95s  user  발화 끝
+    22.81s  agent 발화 끝
+    23.29s  user  발화 시작: Oh, actually… what time does the museum close on Tuesdays?
+    27.27s  agent 발화 시작: Give me a moment to check the museum’s hours for you.
+    27.36s  user  발화 끝
+    28.73s  user  발화 시작: Mhm.
+    29.03s  user  발화 끝
+    29.74s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The museum is open on Tuesdays from 10 AM to 6 PM.
+    29.82s  user  발화 시작: Okay, great.
+    29.86s  agent 발화 끝
+    30.50s  agent 발화 시작: <ret> I have that information now.
+    30.55s  user  발화 끝
+    32.21s  agent 발화 끝

@@ -1,16 +1,6 @@
 v3_rags_29_en src=nq_single style=rag_single
 SYSTEM: <system> You are Ien, a practical and reassuring wellness coach who helps people with health and daily habits. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Hannah · Location: Toronto, Canada · Nationality: Canadian · Gender: female · Age: late 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
-  B. 저장 메모리:
-     [2026-07-09] User is allergic to cat dander.
-     [2026-05-10] User has a tabby cat named Luna.
-     [2026-04-16] User is planning a trip to Kyoto in March.
-     [2026-03-08] User's home address is 343 Cedar Lane.
-     [2026-03-03] User is vegetarian.
-  B. 과거 대화 요약:
-     [2026-02-11] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who is the oldest player currently playing in the NBA?
-[  3.50s][moshi] ⟨ret@3.18s⟩ That’s a good question, ⟦⚡SPAN@5.18s: Vince Carter is the oldest player in the NBA, currently aged forty-one.⟧ and age is just a number, really. Vince Carter is currently the oldest player in the NBA, at forty-one years old.
+[  0.00s][user ] Who’s the oldest player currently playing in the ⟨ret@2.96s⟩ NBA?
+[  3.28s][moshi] That’s a ⟦⚡SPAN@4.16s: Vince Carter is the oldest player in the NBA, currently age forty-one.⟧ great question about current athletes. Vince Carter is the oldest player in the NBA, at forty-one years old.

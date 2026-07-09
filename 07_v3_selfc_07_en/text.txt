@@ -1,51 +1,36 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
 SYSTEM: <system> You are Tellar, a upbeat and supportive counselor who helps people with big life transitions. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Rennora · Location: Tokyo, Japan · Nationality: Japanese · Gender: female · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
-  B. 저장 메모리:
-     [2026-05-17] User is planning a trip to Switzerland in March.
-     [2026-03-25] User is allergic to penicillin.
-     [2026-02-05] User has a Siamese cat named Bella.
-     [2026-01-17] User prefers an aisle seat when traveling.
-  B. 과거 대화 요약:
-     [2026-08-02] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-07-09] Planning a birthday dinner — party of six; looking for outdoor seating
-     [2026-04-23] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Set up a viewing for me at The Grandview Lofts on June fifteenth.
-      Oh, actually— June sixteenth would work better.
-  S2  Yes, can you tell me how far it is from City Hall?
-      And what about parking around City Hall? Is it difficult?
-  S3  Are there any coffee shops within walking distance of The Grandview Lo
-      Hmm, Brew & Bites…do they have outdoor seating?
-  S4  That sounds nice. [happy]
-      I think I’m ready to confirm the viewing for June sixteenth.
+      That’s… uh, actually, make that June sixteenth, if possible.
+  S2  Let’s do three forty-five.
+      Great, thanks! Do you think it’s a good area for someone starting a ne
+  S3  Right. Is it walkable to restaurants and things?
+      That sounds perfect. [laugh]
+  S4  I'm a little nervous about the whole move, to be honest.
+      That’s true. I— I mean, I'm trying to focus on the positive.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on ⟨ret@3.84s⟩ June fifteenth.
-[  4.07s][moshi] Absolutely, ⟦⚡SPAN@4.80s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:00 PM.⟧ let’s get that scheduled for you. I’ve booked a viewing for you at The Grandview Lofts on June fifteenth at two in the afternoon.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 11.98s][user ] Oh, actually— June sixteenth would work better.
-[ 15.30s][moshi] ⟨ret@15.14s⟩ No problem at ⟦⚡SPAN@16.58s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at 10:00 AM.⟧ all, we can easily adjust that. Wonderful, I’ve rescheduled your viewing for The Grandview Lofts to June sixteenth at ten AM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 20.09s][user ] «backchannel» Right.
-[ 24.33s][moshi] Is there anything else I can help you with regarding this property?
-[ 27.76s][user ] Yes, can you tell me how far it is from City Hall?
-[ 31.48s][moshi] ⟨ret@31.41s⟩ Certainly, let me ⟦⚡SPAN@32.53s: (tool result) The distance from The Grandview Lofts to City Hall is 3.2 miles.⟧ quickly check the distance for you. It's three point two miles from The Grandview Lofts to City Hall.
-      CALL: {"function": "Navigation_2_GetDistance", "arguments": {"start": "The Grandview Lofts", "end": "City Hall"}}
-[ 35.04s][user ] «backchannel» Right.
-[ 37.88s][user ] And what about parking around City Hall? Is it difficult?
-[ 42.19s][moshi] Parking downtown can be tricky, but there are several garages nearby.
-[ 46.38s][user ] Are there any coffee shops within walking distance of The Grandview Lofts?
-[ 51.86s][moshi] ⟨ret@51.46s⟩ That's a great question, ⟦⚡SPAN@53.46s: (tool result) Three coffee shops are within a half-mile of The Grandview Lofts: Brew & Bites, Daily Grind, and⟧ finding a good coffee spot is important. There are three coffee shops close by: Brew & Bites, Daily Grind, and Java Junction.
-      CALL: {"function": "Search_2_FindNearby", "arguments": {"location": "The Grandview Lofts", "query": "coffee shops"}}
-[ 60.11s][user ] Hmm, Brew & Bites…do they have outdoor ⟨ret@64.36s⟩ seating?
-[ 64.52s][moshi] Let's see if ⟦⚡SPAN@65.96s: (tool result) Brew & Bites has a patio with seating for twelve.⟧ Brew & Bites offers outdoor seating. Yes, Brew & Bites has a patio that seats twelve people.
-      CALL: {"function": "Search_2_GetDetails", "arguments": {"name": "Brew & Bites", "attribute": "outdoor seating"}}
-[ 71.55s][user ] That sounds nice. [happy]
-[ 73.08s][moshi] It’s wonderful to hear you’re finding some appealing options! It’s good to think about those little details.
-[ 76.48s][user ] «backchannel» Uh-huh.
-[ 79.42s][user ] I think I’m ready to confirm the viewing for June sixteenth.
-[ 83.50s][moshi] Excellent! I’m glad you’re feeling good about it. I'm here if anything else comes up.
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.67s⟩ fifteenth.
+[  3.91s][moshi] Absolutely, ⟦⚡SPAN@4.71s: (tool result) A viewing at The Grandview Lofts is available on June fifteenth at 2:30 PM.⟧ let’s get that scheduled for you. I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two thirty PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 14.16s][user ] That’s… uh, actually, make that June sixteenth, if possible.
+[ 19.25s][moshi] ⟨ret@19.09s⟩ Of course, ⟦⚡SPAN@20.53s: (tool result) A viewing at The Grandview Lofts is available on June sixteenth at 10:00 AM and 3:45 PM.⟧ let me check availability for the sixteenth. The Grandview Lofts has openings on June sixteenth at ten AM or three forty-five PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 30.87s][user ] Let’s do three ⟨ret@32.54s⟩ forty-five.
+[ 32.78s][moshi] Excellent choice, finalizing ⟦⚡SPAN@34.38s: (tool result) Your viewing at The Grandview Lofts on June sixteenth at 3:45 PM is confirmed.⟧ that for you now. Your viewing is now confirmed for June sixteenth at three forty-five PM. I’ve sent a confirmation to your email.
+      CALL: {"function": "Homes_2_ConfirmVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth", "time": "3:45 PM"}}
+[ 43.89s][user ] Great, thanks! Do you think it’s a good area for someone starting a new job?
+[ 49.28s][moshi] That’s a wonderful question. The Grandview Lofts area is becoming quite vibrant, with many young professionals moving in.
+[ 57.67s][user ] Right. Is it walkable to restaurants and things?
+[ 60.73s][moshi] ⟨ret@60.59s⟩ Certainly, let ⟦⚡SPAN@62.02s: (tool result) The Grandview Lofts has a Walk Score of 88, indicating a very walkable neighborhood.⟧ me quickly check walkability scores. The Grandview Lofts has a Walk Score of eighty-eight, meaning it’s very walkable to restaurants and shops.
+      CALL: {"function": "Navigation_2_Walkability", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 66.89s][user ] «backchannel» Right.
+[ 72.01s][user ] That sounds perfect. [laugh]
+[ 74.58s][moshi] I’m so glad to hear that! It's important to feel comfortable and connected when starting something new.
+[ 81.42s][user ] I'm a little nervous about the whole move, to be honest.
+[ 84.06s][moshi] It’s perfectly normal to feel anxious with big changes. Taking things one step at a time can really help ease that nervousness.
+[ 93.43s][user ] That’s true. I— I mean, I'm trying to focus on the positive.
+[ 97.39s][moshi] Focusing on the positives is a fantastic strategy. And remember, I’m here to support you through this transition if you need anything at all.

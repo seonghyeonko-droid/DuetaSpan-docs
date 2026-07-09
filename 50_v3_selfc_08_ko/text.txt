@@ -1,96 +1,86 @@
 v3_selfc_08_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 건강 및 일상 습관에 대한 도움을 주는 부드럽고 사색적인 상담가 Oruus입니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Julia · Location: Berlin, Germany · Nationality: German · Gender: female · Age: 40s · TZ: Europe/Berlin (CET, UTC+1) · Currency: EUR (€)
-  B. 저장 메모리:
-     [2026-07-26] User's home address is 528 Birch Road.
-     [2026-05-06] User is lactose-intolerant.
-     [2026-04-21] User prefers a window seat when traveling.
-     [2026-03-15] User is planning a trip to Iceland in May.
-     [2026-02-01] User's favorite cuisine is Mexican.
-  B. 과거 대화 요약:
-     [2026-01-13] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
+SYSTEM: <system> 당신은 건강 및 일상 습관에 대해 사람들을 돕는 부드럽고 사려 깊은 상담가 Oruus입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  시카고에서 덴버 가는 버스, 세 명, 5월 10일로 보여줘.
-      오전 8시 거 괜찮은 것 같아. 예약해 줘.
-      확인 메일을 내 이메일로 보내줄 수 있어?
-      5월 10일 덴버 날씨는 어때?
-      좋은 소리네. 음… 덴버 근처에 초보자에게 좋은 하이킹 코스가 있어?
-  S2  초보자에게 좋은 곳이 있어?
-      워터턴 캐년 괜찮은 것 같아. 덴버 시내에서 버스로 얼마나 걸려?
-      괜찮아, 감당할 만해. 그 하이킹에 뭘 챙겨가야 해?
-      응.
-      좋은 조언이야. 내일 아침에 하이킹 장비를 챙기라고 알림을 설정해 줄 수 있어?
-  S3  고마워! 워터턴 캐년으로 가는 버스가 시내에서 몇 시에 출발해?
-      완벽해. 이제 다 준비된 것 같아.
-      음-흠.
-      아, 잠깐만— 워터턴 캐년 근처에 좋은 커피숍 좀 찾아줄래?
-      2.5마일은 걸어갈 수 있겠어. 주소가 뭐야?
-  S4  좋아. 내일 아침에 거기가 열어 있어?
-      훌륭해. 이제 정말 갈 준비가 된 것 같아.
-      응.
-      그렇게 할게. 도와줘서 정말 고마워, 오루스.
-      아, 그런데 그 버스… 5월 10일이 아니라 5월 11일로 하려고 했어. 예약 변경해 줄 수 있어?
+  S1  Show me buses from Chicago to Denver for three passengers on May tenth
+      Hmm, the ten PM one sounds good, but… I— I mean, is there one a little
+      Actually, no, not earlier. Is the ten PM one direct?
+      Eighteen hours… that's a long ride. What about flights?
+      Three hundred fifty sounds okay. What airline is that?
+  S2  Non-stop is good. Can you book that for us?
+      Excellent! Can you set a reminder to check in online twenty-four hours
+      That's perfect. I'm feeling a little anxious about the trip though.
+      Maybe. Do you have any suggestions for managing travel anxiety?
+      I’ve tried those, but they don’t always work for me.
+  S3  Grounding techniques? What are those?
+      [happy] That sounds… manageable.
+      Yeah, that would be great.
+      Okay… a lamp, a picture, the window, a book, my phone.
+      The chair under me, my feet on the floor, my hands in my lap, and… the
+  S4  The hum of the refrigerator, a car passing outside, and… your voice.
+      Coffee… and a faint scent of flowers.
+      Just the lingering taste of my tea.
+      I do feel a bit calmer, actually. Thanks, Oruus.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 시카고에서 덴버 가는 버스, 세 명, 5월 10일로 보여줘.
-[  4.90s][moshi] ⟨ret@4.59s⟩ 네, 그 ⟦⚡SPAN@6.59s: (tool result) Three buses are available on May tenth: departing at 8:00 AM for $250, 1:30 PM for $280, and 6:0⟧ 여정을 위한 옵션을 찾아볼게요. 5월 10일에 이용 가능한 버스가 세 대 있는데, 220달러부터 280달러까지 가격이 다양합니다.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "travel_date": "May tenth", "passenger_count": "three"}}
-[  8.68s][user ] «backchannel» 응.
-[ 14.44s][user ] 오전 8시 거 괜찮은 것 같아. 예약해 ⟨ret@17.05s⟩ 줘.
-[ 17.45s][moshi] 알겠습니다, 아침 ⟦⚡SPAN@19.05s: (tool result) Your booking is confirmed: bus ID 8:00 AM Chicago to Denver, three passengers, total cost $750.⟧ 일찍 출발하는 버스 예약을 진행하고 있습니다. 오전 8시 버스, 세 명, 총 750달러로 예약되었습니다.
-      CALL: {"function": "Buses_2_BookBus", "arguments": {"bus_id": "8:00 AM Chicago to Denver", "passenger_count": "three"}}
-[ 29.21s][user ] 확인 메일을 내 이메일로 보내줄 수 ⟨ret@31.66s⟩ 있어?
-[ 32.03s][moshi] 네, 그렇게 ⟦⚡SPAN@33.66s: (tool result) Email sent to user@example.com with subject "Bus Booking Confirmation" and the booking details.⟧ 해 드릴 수 있습니다. 확인 메일을 user@example.com으로 보냈습니다. 모든 세부 정보가 포함되어 있습니다.
-      CALL: {"function": "Email_2_SendEmail", "arguments": {"recipient": "user@example.com", "subject": "Bus Booking Confirmation", "body": "Your bus booking is confirmed: bus ID 8:00 AM Chicago to Denver, three passengers, total cost $750."}}
-[ 40.76s][user ] 5월 10일 덴버 날씨는 ⟨ret@42.95s⟩ 어때?
-[ 43.34s][moshi] 잠시 날씨 ⟦⚡SPAN@44.63s: (tool result) The forecast for Denver on May tenth is sunny, with a high of 75 degrees Fahrenheit and a low of⟧ 예보를 확인해 볼게요. 5월 10일 덴버는 맑고, 최고 기온은 섭씨 25도, 최저 기온은 섭씨 10도입니다.
-      CALL: {"function": "Weather_1_GetForecast", "arguments": {"location": "Denver", "date": "May tenth"}}
-[ 48.52s][user ] «backchannel» 응.
-[ 51.47s][user ] 좋은 소리네. 음… 덴버 근처에 초보자에게 좋은 하이킹 코스가 있어?
-[ 57.17s][moshi] «interrupted» 네, 덴버는 트레일을 탐험하기에 아주 좋은 곳입니다—
-[ 59.73s][user ] «interrupts_prev» 초보자에게 좋은 곳이 ⟨ret@61.56s⟩ 있어?
-[ 61.72s][moshi] 덴버 근처에는 레드 ⟦⚡SPAN@63.56s: (tool result) Red Rocks Trading Post Trail is 1.4 miles, easy, and Waterton Canyon is 6.2 miles, easy.⟧ 록스 트레이딩 포스트 트레일과 워터턴 캐년과 같이 초보자에게 친절한 트레일이 많이 있습니다. 둘 다 편안한 하이킹을 즐기기에 좋은 선택입니다.
-[ 72.73s][user ] 워터턴 캐년 괜찮은 것 같아. 덴버 시내에서 버스로 얼마나 걸려?
-[ 77.60s][moshi] ⟨ret@77.52s⟩ 버스 노선과 ⟦⚡SPAN@78.88s: (tool result) The bus route from Downtown Denver to Waterton Canyon takes approximately 1 hour and 15 minutes ⟧ 소요 시간을 알아볼게요. 워터턴 캐년까지 가는 버스는 약 1시간 15분이 걸리고, 한 번 환승해야 합니다.
-      CALL: {"function": "Navigation_1_GetRoute", "arguments": {"origin": "Downtown Denver", "destination": "Waterton Canyon", "transport_mode": "bus"}}
-[ 86.31s][user ] 괜찮아, 감당할 만해. 그 하이킹에 뭘 챙겨가야 해?
-[ 90.24s][moshi] 아주 사려 깊은 질문이네요, 미리 준비하는 건 현명합니다.
-[ 95.06s][user ] 응.
-[ 95.53s][moshi] 워터턴 캐년의 경우 물, 선크림, 모자, 편안한 하이킹화를 추천합니다. 꽤 개방된 트레일입니다.
-[100.33s][user ] «backchannel» 맞아.
-[102.12s][user ] 좋은 조언이야. 내일 아침에 하이킹 장비를 챙기라고 알림을 설정해 줄 수 있어?
-[107.74s][moshi] ⟨ret@107.59s⟩ 네, ⟦⚡SPAN@108.95s: (tool result) Reminder set for tomorrow morning: "Pack hiking gear for Waterton Canyon".⟧ 기꺼이 일정에 추가해 드릴게요. 내일 아침에 하이킹 장비를 챙기라는 알림을 설정했습니다.
-      CALL: {"function": "Calendar_2_SetReminder", "arguments": {"reminder_time": "tomorrow morning", "reminder_text": "Pack hiking gear for Waterton Canyon"}}
-[114.42s][user ] 고마워! 워터턴 캐년으로 가는 버스가 시내에서 몇 시에 ⟨ret@118.66s⟩ 출발해?
-[119.05s][moshi] 다시 버스 ⟦⚡SPAN@120.66s: (tool result) Buses depart from Downtown Denver to Waterton Canyon every hour, starting at 7:00 AM.⟧ 시간표를 확인해 볼게요. 버스는 매시간 출발하며, 오전 7시부터 시작합니다.
-      CALL: {"function": "Buses_1_GetSchedule", "arguments": {"route": "Downtown Denver to Waterton Canyon"}}
-[122.72s][user ] «backchannel» 응.
-[125.58s][user ] 완벽해. 이제 다 준비된 것 같아.
-[128.43s][moshi] 멋진 하루를 계획하신 것 같네요.
-[129.40s][user ] «backchannel» 음.
-[130.60s][user ] 음-흠.
-[131.23s][moshi] 덴버 여행 준비를 도와드릴 수 있어서 기쁩니다.
-[132.30s][user ] «backchannel» 응응.
-[133.95s][user ] 아, 잠깐만— 워터턴 캐년 근처에 좋은 커피숍 좀 ⟨ret@138.33s⟩ 찾아줄래?
-[138.49s][moshi] 네, 근처 ⟦⚡SPAN@140.09s: (tool result) There is a "The Bean Scene" coffee shop 2.5 miles from Waterton Canyon, with a 4.5-star rating.⟧ 커피숍을 찾아볼게요. "The Bean Scene"은 2.5마일 떨어져 있으며, 별점은 4.5점입니다.
-      CALL: {"function": "Places_1_FindNearby", "arguments": {"location": "Waterton Canyon", "place_type": "coffee shop"}}
-[146.40s][user ] 2.5마일은 걸어갈 수 있겠어. 주소가 뭐야?
-[150.00s][moshi] ⟨ret@149.93s⟩ 바로 ⟦⚡SPAN@151.29s: (tool result) The Bean Scene is located at 123 Main Street, Littleton, CO 80122.⟧ 주소를 알아봐 드릴게요. 주소는 123 Main Street, Littleton, Colorado, 80122입니다.
-      CALL: {"function": "Places_2_GetDetails", "arguments": {"place_name": "The Bean Scene"}}
-[155.36s][user ] «backchannel» 응.
-[157.70s][user ] 좋아. 내일 아침에 거기가 열어 있어?
-[160.30s][moshi] ⟨ret@160.23s⟩ 내일 ⟦⚡SPAN@161.43s: (tool result) The Bean Scene is open tomorrow from 6:00 AM to 8:00 PM.⟧ 영업 시간을 확인해 볼게요. 내일 오전 6시부터 오후 8시까지 영업합니다.
-      CALL: {"function": "Places_3_GetHours", "arguments": {"place_name": "The Bean Scene", "date": "tomorrow"}}
-[163.45s][user ] «backchannel» 응.
-[166.48s][user ] 훌륭해. 이제 정말 갈 준비가 된 것 같아.
-[169.50s][moshi] 준비하면 좋은 일이 많이 생기죠.
-[171.90s][user ] 응.
-[172.21s][moshi] 수분 보충을 잘 하시고 워터턴 캐년에서 하이킹을 즐기세요.
-[176.85s][user ] 그렇게 할게. 도와줘서 정말 고마워, 오루스.
-[180.39s][moshi] 천만에요. 마음을 다해 여행을 계획하는 것을 돕게 되어 기쁩니다.
-[187.68s][user ] 아, 그런데 그 버스… 5월 10일이 아니라 5월 11일로 하려고 했어. 예약 변경해 줄 수 ⟨ret@194.00s⟩ 있어?
-[194.40s][moshi] 아, ⟦⚡SPAN@196.00s: (tool result) Your booking is updated: bus ID 8:00 AM Chicago to Denver, three passengers, May eleventh, total⟧ 여행 날짜를 약간 조정하셨군요— 예약이 5월 11일로 변경되었으며, 비용은 750달러 그대로입니다.
-      CALL: {"function": "Buses_2_BookBus", "arguments": {"bus_id": "8:00 AM Chicago to Denver", "passenger_count": "three", "travel_date": "May eleventh"}}
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.24s⟩ tenth.
+[  4.55s][moshi] Certainly, let's ⟦⚡SPAN@5.60s: (tool result) Three buses are available: 8:00 AM, $250; 2:00 PM, $280; 10:00 PM, $220.⟧ find some buses for you. There are three buses available on May tenth: eight AM for two hundred fifty dollars, two PM for two hundred eighty, and ten PM for two hundred twenty.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 11.41s][user ] «backchannel» Uh-huh.
+[ 17.85s][user ] Hmm, the ten PM one sounds good, but… I— I mean, is there one a little earlier?
+[ 22.63s][moshi] [interrupting] Perhaps around six or seven PM?
+[ 24.56s][user ] «backchannel» Yeah.
+[ 25.63s][user ] Actually, no, not earlier. Is the ten PM one ⟨ret@28.76s⟩ direct?
+[ 29.07s][moshi] Let ⟦⚡SPAN@29.72s: (tool result) The 10:00 PM bus is direct, taking 18 hours and includes one 30-minute rest stop in Omaha.⟧ me check the details for that bus. Yes, the ten PM bus is direct, taking eighteen hours with a thirty-minute stop in Omaha.
+      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "10PM_Chicago_Denver"}}
+[ 36.86s][user ] Eighteen hours… that's a long ride. What about ⟨ret@40.18s⟩ flights?
+[ 40.41s][moshi] Flights are certainly ⟦⚡SPAN@42.02s: (tool result) Four flights are available: 7:00 AM, $350; 11:00 AM, $400; 3:00 PM, $380; 7:00 PM, $420.⟧ faster, let’s explore those options.
+      CALL: {"function": "Flights_2_FindFlights", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 44.42s][moshi] Four flights are available on May tenth, ranging from three hundred fifty to four hundred twenty dollars.
+[ 50.27s][user ] Three hundred fifty sounds okay. What airline is that?
+[ 53.99s][moshi] ⟨ret@53.83s⟩ That flight ⟦⚡SPAN@55.11s: (tool result) The 7:00 AM United flight is non-stop, 2 hours 30 minutes, and includes standard baggage allowan⟧ is operated by United. The seven AM United flight is non-stop, two hours and thirty minutes, with standard baggage.
+      CALL: {"function": "Flights_2_GetFlightDetails", "arguments": {"flight_id": "7AM_Chicago_Denver_United"}}
+[ 65.42s][user ] Non-stop is good. Can you book that for ⟨ret@67.89s⟩ us?
+[ 68.04s][moshi] ⟦⚡SPAN@68.39s: (tool result) Booking confirmed: United 7:00 AM flight, Chicago to Denver, May tenth, three passengers, confir⟧ Of course, I can proceed with the booking.
+      CALL: {"function": "Flights_1_BookFlight", "arguments": {"flight_id": "7AM_Chicago_Denver_United", "passengers": "three"}}
+[ 70.58s][moshi] Your flight is booked! Confirmation number AX927L for three passengers on May tenth.
+[ 75.08s][user ] «backchannel» Okay.
+[ 76.54s][user ] Excellent! Can you set a reminder to check in online twenty-four hours ⟨ret@80.96s⟩ before?
+[ 81.11s][moshi] Certainly, I can ⟦⚡SPAN@82.24s: (tool result) Reminder set: May ninth, 7:00 AM, "Check in for United flight to Denver".⟧ set a reminder for that.
+      CALL: {"function": "Reminders_1_SetReminder", "arguments": {"date": "May ninth", "time": "7:00 AM", "message": "Check in for United flight to Denver"}}
+[ 83.72s][moshi] A reminder is set for May ninth at seven AM to check in for your flight.
+[ 86.76s][user ] «backchannel» Right.
+[ 88.66s][user ] That's perfect. I'm feeling a little anxious about the trip though.
+[ 92.95s][moshi] It's perfectly normal to feel anxious before a trip. Perhaps we could explore some relaxation techniques?
+[ 96.15s][user ] «backchannel» Yeah.
+[100.16s][user ] Maybe. Do you have any suggestions for managing travel anxiety?
+[104.37s][moshi] Deep breathing exercises are often very helpful for calming nerves.
+[106.20s][user ] «backchannel» Yeah, totally.
+[108.85s][user ] I’ve tried those, but they don’t always work for me.
+[112.00s][moshi] That's understandable. Sometimes grounding techniques, focusing on your senses, can be effective.
+[118.48s][user ] Grounding techniques? What are those?
+[121.62s][moshi] They involve bringing your attention to the present moment through your senses—what you see, hear, feel.
+[125.69s][user ] «backchannel» Yeah.
+[127.53s][user ] [happy] That sounds… manageable.
+[130.22s][moshi] It can be a simple yet powerful tool. Would you like me to guide you through one?
+[132.88s][user ] «backchannel» Yeah.
+[136.38s][user ] Yeah, that would be great.
+[137.63s][moshi] Alright, let's begin. Find a comfortable position and close your eyes if that feels safe for you.
+[139.39s][user ] «backchannel» Yeah.
+[143.22s][moshi] Notice five things you can see around you when you open your eyes. Really observe them.
+[148.86s][user ] Okay… a lamp, a picture, the window, a book, my phone.
+[154.04s][moshi] Good. Now, notice four things you can physically feel.
+[158.42s][user ] The chair under me, my feet on the floor, my hands in my lap, and… the warmth of my sweater.
+[164.75s][moshi] Excellent. And now, three things you can hear.
+[167.60s][user ] The hum of the refrigerator, a car passing outside, and… your voice.
+[171.39s][moshi] Wonderful. Two things you can smell.
+[172.50s][user ] «backchannel» Yeah, totally.
+[173.99s][user ] Coffee… and a faint scent of flowers.
+[176.86s][moshi] And finally, one thing you can taste.
+[177.63s][user ] «backchannel» Okay.
+[181.06s][user ] Just the lingering taste of my tea.
+[183.81s][moshi] Very good. Bringing your attention to these sensory details can help ground you in the present.
+[187.76s][user ] «backchannel» Mm-hmm.
+[189.29s][user ] I do feel a bit calmer, actually. Thanks, Oruus.
+[192.60s][moshi] You’re very welcome. I’m glad I could help. Remember, it’s okay to acknowledge your anxieties.

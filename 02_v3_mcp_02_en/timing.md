@@ -1,71 +1,80 @@
 # v3_mcp_02_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Ethan · Location: Toronto, Canada · Nationality: Canadian · Gender: male · Age: early 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
-#   B. 저장 메모리:
-#      [2026-06-28] User is allergic to penicillin.
-#      [2026-06-05] User has a Siamese cat named Bella.
-#      [2026-05-04] User is into birdwatching.
-#      [2026-04-11] User prefers a window seat when traveling.
-#      [2026-03-08] User is planning a trip to Lisbon in May.
-#      [2026-01-11] User works as a graphic designer.
-#   B. 과거 대화 요약:
-#      [2026-01-26] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
-#      [2026-01-22] Comparing gym memberships — wants a pool; close to the office
-
-# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 That’s great. Uh, I’m also thinkin | S3 Perfect! I’ll give them a call. I  | S4 That sounds good. Book that for me
+# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Actually, yes. Could you search fo | S3 Fantastic! That's a huge weight of | S4 Wonderful. Thanks so much, Driaus.
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     3.87s  <ret> 발화 (turn1 첫 프레임)
-     4.10s  agent 발화 시작: <ret> Certainly, I can monitor that for you. Currently, the 
-     4.17s  user  발화 끝
-     5.63s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.79s]: (tool result) The website reported a temperature of 22 degrees Celsius
-     7.55s  user  발화 시작: Yeah.
-     8.18s  user  발화 끝
-    13.27s  agent 발화 끝
-    14.58s  user  발화 시작: Okay, good. And could you remind me to check it again at six
-    18.10s  <ret> 발화 (turn4 첫 프레임)
-    18.23s  agent 발화 시작: <ret> I can definitely set that up for you. I’ve scheduled a
-    18.24s  user  발화 끝
-    19.30s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.59s]: (tool result) A reminder has been set for 6:00 PM to check the weather
-    20.98s  user  발화 시작: Yeah, yeah.
-    22.27s  user  발화 끝
-    24.67s  user  발화 시작: That’s great. Uh, I’m also thinking of ordering takeout toni
-    24.71s  agent 발화 끝
-    27.90s  user  발화 끝
-    27.93s  agent 발화 시작: Ordering takeout sounds lovely. Is there a particular restau
-    30.21s  user  발화 시작: Yeah.
-    30.70s  user  발화 끝
-    32.70s  user  발화 시작: I was hoping to get something from Bella Italia, but I don’t
-    32.79s  agent 발화 끝
-    36.29s  <ret> 발화 (turn10 첫 프레임)
-    36.61s  agent 발화 시작: <ret> Let me quickly find that information for you. The phon
-    36.64s  user  발화 끝
-    36.79s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.36s]: (tool result) Bella Italia’s phone number is 555-123-4567.
-    42.43s  user  발화 시작: Yeah.
-    42.93s  user  발화 끝
-    45.28s  user  발화 시작: Perfect! I’ll give them a call. I also need to book a train 
-    45.32s  agent 발화 끝
-    48.84s  user  발화 끝
-    49.22s  agent 발화 시작: Certainly, I can help with that. Where are you travelling fr
-    53.21s  user  발화 시작: From London to Bristol, please. Next Friday.
-    53.71s  agent 발화 끝
-    55.81s  <ret> 발화 (turn15 첫 프레임)
-    56.12s  agent 발화 시작: <ret> Alright, let's check availability for that route. Ther
-    56.27s  user  발화 끝
-    56.85s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.13s]: (tool result) A train is available departing London at 10:00 AM and ar
-    60.82s  user  발화 시작: Right.
-    61.60s  user  발화 끝
-    66.41s  agent 발화 끝
-    66.60s  user  발화 시작: That sounds good. Book that for me, please.
-    68.93s  <ret> 발화 (turn18 첫 프레임)
-    69.33s  agent 발화 시작: <ret> Absolutely, confirming that booking now. Your train ti
-    69.38s  user  발화 끝
-    69.43s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.54s]: (tool result) Your train ticket from London to Bristol on next Friday 
-    72.62s  user  발화 시작: Oh.
-    73.44s  user  발화 끝
-    77.27s  user  발화 시작: Excellent! That’s everything for now, thank you.
-    77.44s  agent 발화 끝
-    80.04s  user  발화 끝
-    80.04s  agent 발화 시작: You're very welcome. I’m glad I could assist you with your a
-    84.67s  agent 발화 끝
+     4.46s  <ret> 발화 (turn1 첫 프레임)
+     4.68s  agent 발화 시작: <ret> Certainly, I’m now monitoring weather dot example dot 
+     4.87s  user  발화 끝
+     6.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) The website reports current conditions as seventy-two de
+     9.90s  agent 발화 시작: The current temperature is seventy-two degrees Fahrenheit wi
+    10.01s  agent 발화 끝
+    15.46s  agent 발화 끝
+    15.51s  user  발화 시작: That's good to know. Uh, do they have a forecast for tomorro
+    19.52s  <ret> 발화 (turn4 첫 프레임)
+    19.84s  agent 발화 시작: <ret> Yes, I can check the forecast for tomorrow.
+    19.95s  user  발화 끝
+    21.20s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.91s]: (tool result) Tomorrow’s forecast predicts a high of seventy-five degr
+    22.75s  agent 발화 끝
+    22.77s  agent 발화 시작: Tomorrow will be sunny with a high of seventy-five degrees F
+    24.41s  user  발화 시작: Right.
+    24.90s  user  발화 끝
+    26.79s  agent 발화 끝
+    26.94s  user  발화 시작: Perfect! I think I'll plan a picnic then.
+    29.80s  user  발화 끝
+    30.00s  agent 발화 시작: A picnic sounds lovely. Do you need help finding a suitable 
+    34.58s  agent 발화 끝
+    34.89s  user  발화 시작: Actually, yes. Could you search for parks with picnic tables
+    39.16s  <ret> 발화 (turn10 첫 프레임)
+    39.24s  agent 발화 시작: <ret> Of course. Let me locate parks nearby with picnic tabl
+    39.33s  user  발화 끝
+    40.28s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.41s]: (tool result) Central Park has twenty picnic tables and is one point t
+    44.51s  agent 발화 시작: Central Park, one point two miles away, has twenty picnic ta
+    44.65s  agent 발화 끝
+    46.58s  user  발화 시작: Yeah.
+    47.08s  user  발화 끝
+    49.83s  agent 발화 끝
+    50.12s  user  발화 시작: Twenty tables— that sounds good.
+    52.52s  user  발화 끝
+    52.92s  agent 발화 시작: It’s a popular choice, but generally spacious enough to find
+    61.03s  agent 발화 끝
+    61.69s  user  발화 시작: Oh, a reservation might be smart. Let’s try to reserve a tab
+    67.11s  <ret> 발화 (turn16 첫 프레임)
+    67.42s  agent 발화 시작: <ret> Certainly, I can check for reservations at Central Par
+    67.57s  user  발화 끝
+    68.47s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.00s]: (tool result) A picnic table at Central Park is reserved for tomorrow 
+    72.28s  agent 발화 시작: Your picnic table is reserved at Central Park for tomorrow a
+    72.42s  agent 발화 끝
+    75.93s  user  발화 시작: Oh.
+    76.43s  user  발화 끝
+    79.67s  user  발화 시작: Fantastic! That's a huge weight off my mind.
+    79.84s  agent 발화 끝
+    83.87s  user  발화 끝
+    84.25s  agent 발화 시작: I'm glad I could help with that. Is there anything else I ca
+    88.61s  user  발화 시작: Yes, actually. I need to send a reminder to myself to pack t
+    88.69s  agent 발화 끝
+    93.43s  user  발화 끝
+    93.83s  agent 발화 시작: I can certainly set a reminder for you. What time would you 
+    97.61s  user  발화 시작: Right.
+    98.11s  user  발화 끝
+    99.66s  agent 발화 끝
+    99.80s  user  발화 시작: Hmm, how about six PM tonight?
+   102.31s  <ret> 발화 (turn25 첫 프레임)
+   102.39s  agent 발화 시작: <ret> I’ve set a reminder for six PM tonight to pack the bla
+   102.52s  user  발화 끝
+   104.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.80s]: (tool result) Reminder set for 6:00 PM today: “Pack the blanket”.
+   106.03s  agent 발화 시작: A reminder to pack the blanket is set for six PM tonight.
+   106.19s  agent 발화 끝
+   107.43s  user  발화 시작: Yeah.
+   107.88s  user  발화 끝
+   109.46s  user  발화 시작: Wonderful. Thanks so much, Driaus.
+   109.91s  agent 발화 끝
+   112.23s  user  발화 끝
+   112.35s  agent 발화 시작: You’re very welcome. I hope you enjoy your picnic tomorrow. 
+   117.17s  user  발화 시작: Yeah.
+   117.62s  user  발화 끝
+   118.68s  user  발화 시작: I think I will! I— I mean, with this weather, it should be p
+   118.84s  agent 발화 끝
+   123.09s  agent 발화 시작: It certainly sounds that way! A little planning goes a long 
+   123.31s  user  발화 끝
+   130.47s  agent 발화 끝

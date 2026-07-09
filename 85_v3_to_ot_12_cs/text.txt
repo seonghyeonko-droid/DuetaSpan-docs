@@ -1,29 +1,21 @@
 v3_to_ot_12_cs src=nq style=v1
 SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 돕는 친절하고 침착한 웰니스 코치인 Jal입니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Rowan · Location: Toronto, Canada · Nationality: Canadian · Gender: non-binary · Age: early 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
-  B. 저장 메모리:
-     [2026-07-12] User is allergic to penicillin.
-     [2026-06-09] User works as a physical therapist.
-     [2026-04-03] User is planning a trip to Switzerland in October.
-     [2026-03-14] User's favorite cuisine is Thai.
-  B. 과거 대화 요약:
-     [2026-07-18] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-03-05] Planning a birthday dinner — party of six; looking for outdoor seating
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했어요. 다른 곡들하고는 좀 다르게 들려서요.
-  S2  와, 에디 반 헤일런이요? 몰랐어요! 정말 대단하네요—
-  S3  저기, 혹시 쓰레기 버리신 거 기억하세요?
-  S4  죄송해요. 마이클 잭슨이 부탁해서 한 건가요, 아니면 그냥 자발적으로 한 건가요?
+  S1  마침 궁금했는데, 마이클 잭슨 “Beat It” 기타 솔로를 누가 연주했는지 궁금했어요. 다른 노래들하고는 좀 많이 다르잖아요
+      어머, 진짜요? 에디 반 헤일런이요? 다른 사람이 한 줄 알았어요.
+  S2  저기요, 혹시 냉동실에 있던 닭고기 꺼내 놓으셨어요?
+  S3  죄송해요. 그런데 반 헤일런은 그냥… 호의로 한 건가요, 아니면 다른 이야기가 있었나요?
+  S4  장난이라고요? 진짜 신기하네요!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했어요. 다른 곡들하고는 좀 다르게 들려서요.
-[  7.91s][moshi] ⟨ret@7.59s⟩ 정말 좋은 질문이에요. ⟦⚡SPAN@9.59s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 그리고 정말 유명한 솔로죠. 에디 반 헤일런이 그 유명한 기타 솔로를 연주한 분이에요.
-[ 10.90s][user ] «backchannel» 예.
-[ 15.80s][user ] 와, 에디 반 헤일런이요? 몰랐어요! 정말 대단하네요—
-[ 20.82s][moshi] 그건 정말 그의 실력을 보여주는 사례라고 생각해요. 록과 팝을 아주 자연스럽게 섞었거든요.
-[ 26.80s][user ] «to_other» 저기, 혹시 쓰레기 버리신 거 기억하세요?
-[ 29.78s][user ] 죄송해요. 마이클 잭슨이 부탁해서 한 건가요, 아니면 그냥 자발적으로 한 ⟨ret@34.73s⟩ 건가요?
-[ 35.12s][moshi] 그 협업이 ⟦⚡SPAN@36.73s: Michael Jackson invited Van Halen to contribute a guitar solo to "Beat It" after seeing him perform live.⟧ 어떻게 시작됐는지 정말 흥미로운 이야기예요. 마이클 잭슨이 반 헤일런 콘서트에 갔다가 에디 반 헤일런을 초대해서 그 곡에 기타를 연주해 달라고 요청했어요.
+[  0.00s][user ] 마침 궁금했는데, 마이클 잭슨 “Beat It” 기타 솔로를 누가 연주했는지 궁금했어요. 다른 노래들하고는 좀 많이 다르잖아요.
+[  9.18s][moshi] ⟨ret@8.86s⟩ 아, 좋은 질문이세요. ⟦⚡SPAN@10.86s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 정말 독특한 솔로죠. “Beat It” 기타 솔로는 에디 반 헤일런이 마이클 잭슨을 위해 연주했어요.
+[ 12.52s][user ] «backchannel» 예.
+[ 17.62s][user ] 어머, 진짜요? 에디 반 헤일런이요? 다른 사람이 한 줄 알았어요.
+[ 22.37s][user ] «to_other» 저기요, 혹시 냉동실에 있던 닭고기 꺼내 놓으셨어요?
+[ 26.19s][user ] 죄송해요. 그런데 반 헤일런은 그냥… 호의로 한 건가요, 아니면 다른 이야기가 있었나요?
+[ 31.97s][moshi] 사실 둘 다 조금 있었어요. 퀸시 존스가 록 스타일을 원했고, 에디는 처음에는 장난이라고 생각해서 망설였다고 해요.
+[ 39.97s][user ] 장난이라고요? 진짜 신기하네요!
+[ 42.60s][moshi] 결국 동의했고, 로열티는 원하지 않았어요. 다만 에디가 언젠가 게스트 출연이 필요하면 마이클 잭슨도 똑같이 해 주길 바랐다고 합니다.

@@ -1,105 +1,106 @@
 # v3_chain_05_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: 유우 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: 50s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-#   B. 저장 메모리:
-#      [2026-08-02] User prefers a window seat when traveling.
-#      [2026-07-22] User has a Siamese cat named Bella.
-#      [2026-03-21] User is planning a trip to Iceland in October.
-#      [2026-02-20] User's favorite cuisine is Thai.
-#   B. 과거 대화 요약:
-#      [2026-04-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
-#      [2026-02-15] Comparing gym memberships — wants a pool; close to the office
+# EXAMINER(FDB-v2) 단계: S1 What’s the price range at Zuni Caf | S2 Wonderful! What’s the address agai | S3 Roast chicken, huh? Is it expensiv | S4 Perfect. Thanks so much for your h
 
-# EXAMINER(FDB-v2) 단계: S1 Zuni 카페 가격대가 어떻게 돼요? | S2 거기 주차하기 힘들까요? | S3 사실, BART를 결정하기 전에 반 네스 역에서 걸어가면 얼마 | S4 알아두면 좋네요. 감사합니다, 다.
-
-     0.00s  user  발화 시작: Zuni 카페 가격대가 어떻게 돼요?
-     1.75s  <ret> 발화 (turn1 첫 프레임)
-     2.06s  agent 발화 시작: <ret> 잠시 확인해 볼게요… 주니 카페의 메인 요리는 30달러부터 60달러까지 다양합니다.
-     2.19s  user  발화 끝
-     3.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) Zuni Cafe’s price range is $$$, with entrees costing $30
-     4.23s  user  발화 시작: 그렇죠.
-     4.87s  user  발화 끝
-     8.22s  agent 발화 끝
-     8.27s  user  발화 시작: 저녁 식사는 오늘 할 수 있나요?
-     9.88s  <ret> 발화 (turn4 첫 프레임)
-    10.19s  agent 발화 시작: <ret> 확인해 드릴 수 있습니다. 주니 카페는 오늘 저녁 10시까지 영업합니다.
-    10.49s  user  발화 끝
-    11.40s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.63s]: (tool result) Zuni Cafe is open for dinner tonight until 10:00 PM.
-    14.72s  agent 발화 끝
-    15.52s  user  발화 시작: 7시 30분에 두 명 예약해 줄 수 있을까요?
-    18.03s  <ret> 발화 (turn6 첫 프레임)
-    18.27s  agent 발화 시작: <ret> 예약해 드리겠습니다… 주니 카페에 두 분 7시 30분 예약이 확정되었습니다. 확인 번호는 84X9
-    18.47s  user  발화 끝
-    20.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.13s]: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:3
-    21.06s  user  발화 시작: 네.
-    21.47s  user  발화 끝
-    25.68s  agent 발화 끝
-    26.17s  user  발화 시작: 주소 다시 알려줄 수 있을까요?
-    27.51s  <ret> 발화 (turn9 첫 프레임)
-    27.82s  agent 발화 시작: <ret> 기억하고 있어요, 간단하네요… 주니 카페는 샌프란시스코 마켓 스트리트 1658번지에 있습니다.
-    28.00s  user  발화 끝
-    29.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisc
-    32.09s  user  발화 시작: 와.
-    32.71s  user  발화 끝
-    34.41s  user  발화 시작: 거기 주차하기 힘들까요?
-    34.54s  agent 발화 끝
-    35.78s  <ret> 발화 (turn12 첫 프레임)
-    35.85s  agent 발화 시작: <ret> 근처 주차 옵션을 찾아볼게요… 주니 카페 근처 주차 공간은 제한적이고, 주차장은 시간당 8달러에서
-    36.07s  user  발화 끝
-    36.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.75s]: (tool result) Street parking near Zuni Cafe is very limited; nearby ga
-    41.00s  user  발화 시작: 아.
-    41.35s  user  발화 끝
-    44.43s  agent 발화 끝
-    46.00s  user  발화 시작: 음, 좀 비싸네요. BART 역은 가까이에 있나요?
-    48.97s  <ret> 발화 (turn15 첫 프레임)
-    49.36s  agent 발화 시작: <ret> 대중교통 옵션을 확인해 드릴 수 있습니다. 시빅 센터 BART 역까지 걸어서 6분 정도 걸립니다.
-    49.55s  user  발화 끝
-    50.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) The Civic Center/UN Plaza BART station is a six-minute w
-    55.99s  agent 발화 끝
-    56.56s  user  발화 시작: 알겠습니다, 괜찮네요. BART를 탈 것 같아요.
-    59.75s  user  발화 끝
-    59.99s  agent 발화 시작: 저녁 식사 계획을 고려하면, 편안하게 휴식을 취하는 것도 좋을 것 같아요. 식사 전에 긴장을 풀 수 있는 플
-    69.34s  agent 발화 끝
-    71.06s  user  발화 시작: 사실, BART를 결정하기 전에 반 네스 역에서 걸어가면 얼마나 걸리는지 알려줄 수 있을까요?
-    77.24s  <ret> 발화 (turn19 첫 프레임)
-    77.55s  agent 발화 시작: <ret> 물론이죠, 다른 경로도 확인해 볼게요… 반 네스 역에서 걸어가면 약 27분 정도 걸립니다.
-    77.69s  user  발화 끝
-    79.00s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.69s]: (tool result) Walking from Van Ness Station to Zuni Cafe takes approxi
-    84.40s  agent 발화 끝
-    84.92s  user  발화 시작: 27분이나요? 좀 멀네요.
-    87.24s  <ret> 발화 (turn21 첫 프레임)
-    87.31s  agent 발화 시작: <ret> 다른 선택지보다 시간이 더 걸리는 것 같네요… 시빅 센터 역은 0.3마일 정도 떨어져 있습니다.
-    87.51s  user  발화 끝
-    88.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.76s]: (tool result) The Civic Center/UN Plaza BART station is 0.3 miles from
-    93.75s  agent 발화 끝
-    94.24s  user  발화 시작: 알겠습니다, BART를 타는 걸로 할게요. 편안하게 도착하려면 몇 시에 출발해야 할까요?
-    99.89s  <ret> 발화 (turn23 첫 프레임)
-    99.94s  user  발화 끝
-   100.04s  agent 발화 시작: <ret> 이동 시간을 고려해서 계산해 드릴게요… BART 역까지 가는 데 약 15분 정도 걸립니다.
-   101.81s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.74s]: (tool result) Travel time to Civic Center/UN Plaza BART station is cur
-   102.91s  user  발화 시작: 네네.
-   103.59s  user  발화 끝
-   105.64s  agent 발화 끝
-   106.73s  user  발화 시작: 거기 날씨는 지금 어떤가요?
-   108.45s  <ret> 발화 (turn26 첫 프레임)
-   108.76s  agent 발화 시작: <ret> 현재 날씨를 확인해 볼게요… BART 역은 섭씨 16도이고 흐립니다.
-   108.95s  user  발화 끝
-   109.81s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.47s]: (tool result) The weather at Civic Center/UN Plaza is currently 62 deg
-   110.89s  user  발화 시작: 음.
-   111.48s  user  발화 끝
-   113.21s  agent 발화 끝
-   113.22s  user  발화 시작: 알아두면 좋네요. 감사합니다, 다.
-   115.79s  agent 발화 시작: 천만에요. 주니 카페에서 즐거운 저녁 식사 되시길 바랍니다.
-   115.80s  user  발화 끝
-   120.25s  user  발화 시작: 그럴 것 같아요. 혹시 더 도와드릴 일이 있을까요?
-   120.65s  agent 발화 끝
-   124.09s  <ret> 발화 (turn31 첫 프레임)
-   124.48s  agent 발화 시작: <ret> 예약 전에 부드럽게 상기시켜 드릴까요? 주니 카페 예약에 대해 저녁 7시에 알림을 설정해 드렸습니
-   124.55s  user  발화 끝
-   125.29s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.57s]: (tool result) Reminder set for 7:00 PM: Zuni Cafe reservation.
-   131.61s  agent 발화 끝
-   133.01s  user  발화 시작: 정말 완벽하네요. 정말 감사합니다.
-   135.45s  agent 발화 시작: 전혀요. 저녁 식사 맛있게 드시고, 휴식도 잊지 마세요— 평화로운 밤이 중요합니다.
-   135.54s  user  발화 끝
-   141.56s  agent 발화 끝
+     0.00s  user  발화 시작: What’s the price range at Zuni Cafe?
+     2.06s  <ret> 발화 (turn1 첫 프레임)
+     2.37s  agent 발화 시작: <ret> Let me check the details for you. Zuni Cafe is in the 
+     2.45s  user  발화 끝
+     3.18s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.14s]: (tool result) Zuni Cafe’s price range is $$$ (thirty to sixty dollars)
+     4.88s  user  발화 시작: Okay.
+     5.38s  user  발화 끝
+     7.88s  agent 발화 끝
+     8.12s  user  발화 시작: Okay, good. And what are their hours today?
+    10.61s  <ret> 발화 (turn4 첫 프레임)
+    10.70s  user  발화 끝
+    10.92s  agent 발화 시작: <ret> I can find that information for you. Zuni Cafe is open
+    11.57s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.24s]: (tool result) Zuni Cafe is open today from 11:30 AM to 9:30 PM.
+    17.28s  user  발화 시작: Hmm, that's late. Do they take reservations?
+    17.31s  agent 발화 끝
+    20.31s  <ret> 발화 (turn6 첫 프레임)
+    20.54s  agent 발화 시작: <ret> Yes, they do accept reservations. Zuni Cafe accepts re
+    20.79s  user  발화 끝
+    21.67s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.74s]: (tool result) Zuni Cafe accepts reservations via OpenTable.
+    23.00s  user  발화 시작: Yeah.
+    23.50s  user  발화 끝
+    26.57s  agent 발화 끝
+    27.31s  user  발화 시작: Great. Could you check if there’s a table for two available 
+    31.33s  <ret> 발화 (turn9 첫 프레임)
+    31.63s  agent 발화 시작: <ret> I’ve confirmed a table for two at seven PM tonight at 
+    31.66s  user  발화 끝
+    33.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: (tool result) A table for two at Zuni Cafe is available at 7:00 PM ton
+    34.17s  user  발화 시작: Yeah.
+    34.67s  user  발화 끝
+    35.71s  agent 발화 끝
+    36.39s  user  발화 시작: Wonderful! What’s the address again?
+    38.54s  <ret> 발화 (turn12 첫 프레임)
+    38.61s  agent 발화 시작: <ret> The address is one six five eight Market Street. It’s 
+    38.61s  user  발화 끝
+    39.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.04s]: (tool result) Zuni Cafe is located at 1658 Market Street, San Francisc
+    42.52s  user  발화 시작: Yeah.
+    43.16s  user  발화 끝
+    45.37s  agent 발화 끝
+    45.55s  user  발화 시작: Is parking difficult around there?
+    47.62s  user  발화 끝
+    47.87s  agent 발화 시작: Parking can be challenging in that area—
+    49.60s  user  발화 시작: Is there a garage nearby?
+    50.32s  agent 발화 끝
+    50.99s  <ret> 발화 (turn17 첫 프레임)
+    51.30s  user  발화 끝
+    51.39s  agent 발화 시작: <ret> That’s a good question.
+    51.49s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.19s]: (tool result) The closest parking garage is at 16th and Mission, 0.6 m
+    52.40s  agent 발화 시작: The nearest garage is at sixteenth and Mission, point six mi
+    52.58s  agent 발화 끝
+    54.99s  user  발화 시작: Yeah.
+    55.35s  user  발화 끝
+    56.62s  user  발화 시작: Okay, that’s not too bad. What kind of cuisine do they serve
+    56.65s  agent 발화 끝
+    60.08s  <ret> 발화 (turn21 첫 프레임)
+    60.31s  agent 발화 시작: <ret> They specialize in Californian cuisine. They’re known 
+    60.51s  user  발화 끝
+    61.04s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.53s]: (tool result) Zuni Cafe serves Californian cuisine, known for its roas
+    67.91s  agent 발화 끝
+    68.83s  user  발화 시작: Roast chicken, huh? Is it expensive?
+    71.68s  agent 발화 시작: The roast chicken is a signature dish—
+    71.78s  user  발화 끝
+    74.14s  <ret> 발화 (turn24 첫 프레임)
+    74.22s  agent 발화 시작: <ret> It's priced at fifty-two dollars. The roast chicken co
+    74.25s  agent 발화 끝
+    75.34s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.40s]: (tool result) The roast chicken at Zuni Cafe costs $52.00.
+    79.35s  user  발화 시작: Hmm, that’s a bit pricey. Do they have any cheaper options?
+    79.50s  agent 발화 끝
+    82.49s  <ret> 발화 (turn26 첫 프레임)
+    82.64s  agent 발화 시작: <ret> Yes, they have several other options. They have salads
+    82.72s  user  발화 끝
+    83.61s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.24s]: (tool result) Zuni Cafe’s menu includes salads from $22 and pasta dish
+    88.99s  agent 발화 끝
+    89.38s  user  발화 시작: Okay, salads sound good. What’s the average wait time if I w
+    94.43s  <ret> 발화 (turn28 첫 프레임)
+    94.82s  agent 발화 시작: <ret> Let me check the current wait times. The wait time for
+    94.89s  user  발화 끝
+    95.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.27s]: (tool result) The current wait time at Zuni Cafe for walk-ins is appro
+   100.66s  agent 발화 끝
+   101.20s  user  발화 시작: That's a long wait. Could you set a reminder for fifteen min
+   105.79s  <ret> 발화 (turn30 첫 프레임)
+   106.18s  agent 발화 시작: <ret> I’ve set a reminder for six forty-five PM for your Zun
+   106.30s  user  발화 끝
+   107.31s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.00s]: (tool result) Reminder set for 6:45 PM: “Zuni Cafe reservation”.
+   108.75s  user  발화 시작: Yeah.
+   109.38s  user  발화 끝
+   111.17s  agent 발화 끝
+   111.27s  user  발화 시작: Perfect. Thanks so much for your help!
+   113.25s  user  발화 끝
+   113.43s  agent 발화 시작: You’re very welcome. Is there anything else I can assist you
+   116.41s  user  발화 시작: Right.
+   117.04s  user  발화 끝
+   119.71s  user  발화 시작: Actually, yes. What’s the weather like in San Francisco toni
+   119.73s  agent 발화 끝
+   123.95s  <ret> 발화 (turn36 첫 프레임)
+   124.02s  agent 발화 시작: <ret> Let me look up the forecast. It will be sixty-two degr
+   124.11s  user  발화 끝
+   124.99s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.13s]: (tool result) The weather in San Francisco tonight will be 62°F and pa
+   129.35s  agent 발화 끝
+   129.38s  user  발화 시작: Oh, good, not too cold. I think that's all for now.
+   132.62s  user  발화 끝
+   132.66s  agent 발화 시작: Wonderful. I hope you enjoy your dinner at Zuni Cafe.
+   136.35s  agent 발화 끝

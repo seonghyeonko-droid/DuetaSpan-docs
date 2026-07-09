@@ -1,29 +1,21 @@
 v3_to_ot_12_en src=nq style=v1
 SYSTEM: <system> You are Jal, a kind and steady wellness coach who helps people with stress relief and mindfulness. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Rowan · Location: Toronto, Canada · Nationality: Canadian · Gender: non-binary · Age: early 30s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
-  B. 저장 메모리:
-     [2026-07-12] User is allergic to penicillin.
-     [2026-06-09] User works as a physical therapist.
-     [2026-04-03] User is planning a trip to Switzerland in October.
-     [2026-03-14] User's favorite cuisine is Thai.
-  B. 과거 대화 요약:
-     [2026-07-18] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-03-05] Planning a birthday dinner — party of six; looking for outdoor seating
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  I was just wondering, who actually played the guitar solo on Michael J
-  S2  Wow, Eddie Van Halen? I didn’t know that! That’s amazing—
-  S3  Hey, did you remember to take the trash out?
-  S4  Sorry about that. Was he asked to do it, or did he just offer?
+      Wow, really? Eddie Van Halen? I always thought it was someone else.
+  S2  Hey, did you remember to take the chicken out of the freezer?
+  S3  Sorry about that. So, Van Halen just… did it as a favor, or was there 
+  S4  A prank? That's wild!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It’s always sounded so different from his other ⟨ret@8.62s⟩ stuff.
-[  8.85s][moshi] That’s a great question, ⟦⚡SPAN@10.46s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ and a really iconic solo. Eddie Van Halen was the musician who played that famous guitar solo.
-[ 11.87s][user ] «backchannel» Okay.
-[ 16.51s][user ] Wow, Eddie Van Halen? I didn’t know that! That’s amazing—
-[ 21.76s][moshi] It certainly is a testament to his skill, blending rock and pop so seamlessly.
-[ 28.36s][user ] «to_other» Hey, did you remember to take the trash out?
-[ 30.91s][user ] Sorry about that. Was he asked to do it, or did he just ⟨ret@35.69s⟩ offer?
-[ 35.90s][moshi] It’s interesting ⟦⚡SPAN@36.89s: Michael Jackson invited Van Halen to contribute a guitar solo to "Beat It" after seeing him perform live.⟧ how that collaboration came about. Michael Jackson specifically invited Eddie Van Halen to play on the song after attending a Van Halen concert.
+[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It’s always sounded so different from his other ⟨ret@8.54s⟩ stuff.
+[  8.78s][moshi] That’s a great question, ⟦⚡SPAN@10.54s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ and a really distinctive solo. Eddie Van Halen performed the guitar solo for Michael Jackson on “Beat It”.
+[ 12.03s][user ] «backchannel» Okay.
+[ 17.31s][user ] Wow, really? Eddie Van Halen? I always thought it was someone else.
+[ 21.87s][user ] «to_other» Hey, did you remember to take the chicken out of the freezer?
+[ 24.63s][user ] Sorry about that. So, Van Halen just… did it as a favor, or was there a whole story there?
+[ 30.93s][moshi] It was a bit of both, actually. Quincy Jones wanted a rock edge, and Eddie was initially hesitant, thinking it was a prank.
+[ 38.42s][user ] A prank? That's wild!
+[ 40.58s][moshi] He eventually agreed, and didn’t want any royalties—only that Michael Jackson reciprocate if Eddie ever needed a guest appearance.

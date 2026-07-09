@@ -1,30 +1,18 @@
 v3_to_ot_11_en src=nq style=v1
 SYSTEM: <system> You are Ellana, a kind and steady wellness coach who helps people with sleep and rest. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Toaira · Location: Tokyo, Japan · Nationality: Japanese · Gender: non-binary · Age: 40s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
-  B. 저장 메모리:
-     [2026-07-24] User is allergic to penicillin.
-     [2026-07-09] User is into home fermentation.
-     [2026-05-28] User is planning a trip to Iceland in December.
-     [2026-03-14] User is lactose-intolerant.
-     [2026-02-21] User works as a software engineer.
-  B. 과거 대화 요약:
-     [2026-06-14] Planning a birthday dinner — party of six; looking for outdoor seating
-     [2026-03-23] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-01-12] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just wondering… has that happened to the A’s recently, you know,
-  S2  Wow, that feels like ages ago. Who threw it?
-  S3  Hey, did you remember to take the trash out?
-  S4  Sorry about that. So, Santana… that’s a name I haven’t heard in a whil
+  S1  I was just wondering… uh, when was the last time the Oakland A’s were 
+  S2  Wow, that was a while ago. [happy] I didn’t realize it had been that l
+  S3  Hey, did you take the recycling out?
+  S4  Sorry about that. So, um, who pitched that no-hitter against them?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just wondering… has that happened to the A’s recently, you know, a no-hitter ⟨ret@4.72s⟩ against them?
-[  5.12s][moshi] That’s a good question, ⟦⚡SPAN@6.72s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ and it’s certainly frustrating to be on the receiving end of that. It happened on April twenty-first, two thousand eighteen.
-[ 13.23s][user ] Wow, that feels like ages ago. Who threw ⟨ret@16.14s⟩ it?
-[ 16.38s][moshi] Let me quickly check ⟦⚡SPAN@18.14s: Ervin Santana of the Minnesota Twins pitched the no-hitter against the Athletics.⟧ the details for you regarding that particular game. Ervin Santana, pitching for the Minnesota Twins, threw the no-hitter.
-[ 25.24s][user ] «to_other» Hey, did you remember to take the trash out?
-[ 27.54s][user ] Sorry about that. So, Santana… that’s a name I haven’t heard in a while.
-[ 32.59s][moshi] It’s understandable that names fade over time, especially with so many players coming and going. [happy] Perhaps focusing on consistent rest routines could help keep your mind sharper for remembering game details?
+[  0.00s][user ] I was just wondering… uh, when was the last time the Oakland A’s were no-hit in a ⟨ret@4.88s⟩ game?
+[  5.27s][moshi] That’s a good ⟦⚡SPAN@6.64s: The last time the Oakland A’s were no-hit was April 21, 2018.⟧ baseball question. The A’s were last no-hit on April twenty-first, two thousand eighteen.
+[ 11.08s][user ] Wow, that was a while ago. [happy] I didn’t realize it had been that long.
+[ 15.19s][user ] «to_other» Hey, did you take the recycling out?
+[ 17.12s][user ] Sorry about that. So, um, who pitched that no-hitter against them?
+[ 21.35s][moshi] ⟨ret@21.14s⟩ It was a ⟦⚡SPAN@22.26s: Mike Fiers pitched a no-hitter against the Oakland Athletics on May 8, 2019.⟧ tough game for the A’s, certainly.
+[ 23.59s][moshi] Mike Fiers pitched the no-hitter against Oakland on May eighth, two thousand nineteen.

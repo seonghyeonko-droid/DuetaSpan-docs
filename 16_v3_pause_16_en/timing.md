@@ -1,74 +1,58 @@
 # v3_pause_16_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Andrea · Location: London, United Kingdom · Nationality: British · Gender: non-binary · Age: early 30s · TZ: Europe/London (GMT, UTC+0) · Currency: GBP (£)
-#   B. 저장 메모리:
-#      [2026-08-04] User's home address is 148 Elm Street.
-#      [2026-06-19] User is vegetarian.
-#      [2026-03-14] User is planning a trip to Vietnam in May.
-#      [2026-03-06] User works as a graduate student.
-#      [2026-01-25] User is allergic to pollen.
-#   B. 과거 대화 요약:
-#      [2026-07-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
-#      [2026-04-18] Researching a used car — comparing hybrid models; wants under 30k miles
+# EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 Hmm. I wonder if it was a common p | S3 So, it wasn’t completely invented  | S4 That’s… actually really clever. I 
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, where does t | S2 Wow, nineteen forty-nine. That's e | S3 …then. It makes sense why it’s use | S4 “Doublethink”… I think I’ve heard 
-
-     0.00s  user  발화 시작: I was just wondering, where does the phrase “big brother” ac
-     8.75s  agent 발화 시작: That’s a really interesting question, and a common one, actu
-     8.81s  user  발화 끝
-    14.69s  agent 발화 끝
-    15.01s  user  발화 시작: …it’s used for surveillance, and control, and…
-    18.71s  user  발화 끝
-    18.76s  user  발화 시작: …but I’m not sure how it originated.
-    21.45s  user  발화 끝
-    21.47s  <ret> 발화 (turn4 첫 프레임)
-    21.63s  agent 발화 시작: <ret> Let’s explore that origin for you. The term “big broth
-    22.91s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.45s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
-    28.06s  user  발화 시작: Yeah, yeah.
-    28.88s  user  발화 끝
-    30.21s  agent 발화 끝
-    31.11s  user  발화 시작: Wow, nineteen forty-nine. That's earlier than I expected! So
-    38.33s  agent 발화 시작: Relatively, yes. Though its impact has been quite significan
-    38.43s  user  발화 끝
-    40.64s  user  발화 시작: Mm-hmm.
-    41.28s  user  발화 끝
-    44.49s  agent 발화 끝
-    44.80s  user  발화 시작: I guess so. Is “big brother” a positive thing in the book, o
-    50.37s  <ret> 발화 (turn10 첫 프레임)
-    50.45s  user  발화 끝
-    50.53s  agent 발화 시작: <ret> That’s a crucial detail to understand. In *Nineteen Ei
-    51.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.42s]: <In the novel, Big Brother is the enigmatic dictator of Oceania, repre
-    54.41s  user  발화 시작: Yeah.
-    55.04s  user  발화 끝
-    59.39s  agent 발화 끝
-    59.65s  user  발화 시작: Oh. So definitely not a good guy…
-    63.35s  user  발화 끝
-    63.90s  user  발화 시작: …then. It makes sense why it’s used to criticize things now.
-    68.58s  agent 발화 시작: Precisely. The image of Big Brother has become synonymous wi
-    68.62s  user  발화 끝
-    70.43s  user  발화 시작: Mm-hmm.
-    70.92s  user  발화 끝
-    73.21s  agent 발화 끝
-    73.27s  user  발화 시작: Hmm. I wonder if Orwell intended it to become such a widespr
-    78.73s  agent 발화 시작: It's fascinating to consider how a fictional concept can tak
-    78.88s  user  발화 끝
-    83.30s  user  발화 시작: [laugh] It really is. Is there anything else significant abo
-    83.41s  agent 발화 끝
-    90.50s  <ret> 발화 (turn19 첫 프레임)
-    90.66s  agent 발화 시작: <ret> *Nineteen Eighty-Four* has left a broad legacy. The bo
-    90.86s  user  발화 끝
-    91.86s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.98s]: <The novel introduced concepts like “doublethink” and “thoughtcrime”, 
-    97.20s  user  발화 시작: Mm-hmm.
-    97.70s  user  발화 끝
-   100.03s  agent 발화 끝
-   101.63s  user  발화 시작: “Doublethink”… I think I’ve heard that one before. It’s abou
-   107.71s  agent 발화 시작: That’s exactly right. It describes the ability to accept con
-   107.89s  user  발화 끝
-   110.53s  user  발화 시작: Yeah.
-   111.03s  user  발화 끝
-   115.17s  agent 발화 끝
-   115.22s  user  발화 시작: That’s… unsettling. It’s a bit scary how relevant that seems
-   121.51s  agent 발화 시작: It speaks to a timeless concern about the power of ideology 
-   121.52s  user  발화 끝
-   130.13s  agent 발화 끝
+     0.00s  user  발화 시작: So, I was reading this dystopian novel, and it got me thinki
+     7.46s  user  발화 끝
+     7.49s  agent 발화 시작: That’s a fascinating question. It’s become so ingrained in o
+    11.33s  agent 발화 끝
+    11.60s  user  발화 시작: It really has… but I’m not sure I ever actually knew the ori
+    19.05s  <ret> 발화 (turn3 첫 프레임)
+    19.21s  agent 발화 시작: <ret> The term originates from… “Big Brother” comes from Geo
+    19.25s  user  발화 끝
+    20.01s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.05s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
+    25.33s  user  발화 시작: Yeah, yeah.
+    26.93s  user  발화 끝
+    27.41s  agent 발화 끝
+    28.45s  user  발화 시작: Nineteen Eighty-Four… right. I’ve heard of it, of course, bu
+    33.08s  user  발화 끝
+    33.23s  agent 발화 시작: It’s a powerful, if unsettling, read. It explores themes of 
+    35.72s  user  발화 시작: Mm-hmm.
+    36.30s  user  발화 끝
+    39.52s  user  발화 시작: Hmm. I wonder if it was a common phrase even *before* the bo
+    39.86s  agent 발화 끝
+    44.94s  user  발화 끝
+    45.48s  user  발화 시작: …if the book made it popular? … I mean, did it exist in any 
+    50.12s  <ret> 발화 (turn10 첫 프레임)
+    50.20s  agent 발화 시작: <ret> Before the novel, the phrase… The idea of an older bro
+    50.34s  user  발화 끝
+    51.96s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.03s]: <The concept of a protective older brother watching over younger sibli
+    54.28s  user  발화 시작: Yeah.
+    54.87s  user  발화 끝
+    59.35s  user  발화 시작: So, it wasn’t completely invented out of thin air. That make
+    59.52s  agent 발화 끝
+    66.48s  user  발화 끝
+    66.64s  agent 발화 시작: Not precisely. “Big Brother” is a symbolic figurehead, repre
+    69.34s  user  발화 시작: Mm-hmm.
+    70.11s  user  발화 끝
+    73.31s  agent 발화 끝
+    73.49s  user  발화 시작: Oh, like a symbol of the state, then?
+    75.69s  agent 발화 시작: Exactly. It's a figure designed to inspire both fear and loy
+    75.90s  user  발화 끝
+    80.70s  agent 발화 끝
+    80.75s  user  발화 시작: Right. So, it's not about family dynamics, even though the n
+    87.57s  agent 발화 시작: Precisely. Orwell used the imagery of familial protection to
+    87.75s  user  발화 끝
+    93.03s  user  발화 시작: Mm-hmm.
+    93.67s  user  발화 끝
+    95.46s  user  발화 시작: That’s… actually really clever. I always thought it was just
+    95.49s  agent 발화 끝
+   100.17s  agent 발화 시작: It's a very effective piece of symbolism, isn’t it? It reson
+   100.33s  user  발화 끝
+   102.31s  user  발화 시작: Yeah.
+   102.81s  user  발화 끝
+   105.87s  user  발화 시작: It really does. It makes me want to actually pick up that bo
+   105.95s  agent 발화 끝
+   111.62s  agent 발화 시작: I think you’d find it quite thought-provoking. It's a book t
+   111.80s  user  발화 끝
+   116.67s  agent 발화 끝

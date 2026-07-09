@@ -1,55 +1,42 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 개인 가이드 Braera입니다. 기본적으로 반말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Andrea · Location: London, United Kingdom · Nationality: British · Gender: non-binary · Age: early 30s · TZ: Europe/London (GMT, UTC+0) · Currency: GBP (£)
-  B. 저장 메모리:
-     [2026-08-04] User's home address is 148 Elm Street.
-     [2026-06-19] User is vegetarian.
-     [2026-03-14] User is planning a trip to Vietnam in May.
-     [2026-03-06] User works as a graduate student.
-     [2026-01-25] User is allergic to pollen.
-  B. 과거 대화 요약:
-     [2026-07-05] Setting up a home network — asked about mesh routers; coverage for a 3-story house
-     [2026-04-18] Researching a used car — comparing hybrid models; wants under 30k miles
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 개인 가이드인 Braera입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  어디서 “빅 브라더”라는 말이 나왔는지 궁금했는데… 왠지 익숙한 것 같기도 하고, 딱 떠오르진 않네요.
-      …감시하고, 통제하고…
-      …근데 그게 원래 어떻게 시작된 건지 잘 모르겠어요.
-  S2  와, 일천구백사십구 년이라니. 생각보다 훨씬 옛날이네요! 그럼 비교적 최근에 생긴 말인 건가요?
-      그런가 보네요. 책에서 “빅 브라더”는 좋은 편인가요, 아니면 나쁜 편인가요?
-      아. 그럼 절대 좋은 사람이 아니군요…
-  S3  …그렇군요. 그래서 요즘 그걸 비판하는 데 쓰는 말이 된 거군요.
-      음. 오웰이 이걸 이렇게 널리 퍼질 거라고 생각했을까 궁금하네요.
-      [laugh] 정말 그렇네요. 혹시 이 책에 또 우리가 오늘날 생각하는 데 영향을 주는 중요한 게 있나요?
-  S4  “이중 사고”… 그거 전에 들어본 것 같아요. 서로 모순되는 두 가지 믿음을 동시에 갖는 거 맞죠?
-      그거… 끔찍하네요. 솔직히 요즘 세상에도 너무 관련 있는 것 같아서 무서워요.
+  S1  빅 브라더라는 말이 어디서 왔는지 궁금해요.
+      아, '1984'요… 그 소설은 어떤 내용이었죠?
+      … 빅 브라더가 감시하는 사회라니, 끔찍하네요.
+  S2  … 지금도 그런 감시가 이루어지고 있는 걸까요?
+      감시라… 그럼 빅 브라더는…
+  S3  …정확히 뭘 의미하는 걸까요?
+      은유적인 표현이군요. 좀 더 쉽게 설명해 줄 수 있을까요?
+      [surprised] 음, 그런 느낌이 들 때가 있긴 해요.
+  S4  그럼 빅 브라더는 개인의 자유를 억압하는 존재군요.
+      끔찍하네요. 그런 사회는 피해야겠죠.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 어디서 “빅 브라더”라는 말이 나왔는지 궁금했는데… 왠지 익숙한 것 같기도 하고, 딱 떠오르진 않네요.
-[  6.91s][moshi] 이야, 그거 진짜 흥미로운 질문이고, 사실 흔히 물어보는 거거든. 요즘 너무 많이 쓰이니까.
-[ 12.37s][user ] …감시하고, 통제하고…
-[ 15.21s][user ] …근데 그게 원래 어떻게 시작된 건지 잘 ⟨ret@18.12s⟩ 모르겠어요.
-[ 18.52s][moshi] 그 ⟦⚡SPAN@20.12s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ 기원을 알아볼게. “빅 브라더”라는 말은 조지 오웰의 소설 *1984*에서 유래됐어. 천구백사십구 년에 출판됐지.
-[ 26.00s][user ] «backchannel» 맞아요.
-[ 28.53s][user ] 와, 일천구백사십구 년이라니. 생각보다 훨씬 옛날이네요! 그럼 비교적 최근에 생긴 말인 건가요?
-[ 35.72s][moshi] 그래, 뭐. 근데 권력 관계를 이해하는 데 큰 영향을 줬어.
-[ 37.06s][user ] «backchannel» 아.
-[ 39.41s][user ] 그런가 보네요. 책에서 “빅 브라더”는 좋은 편인가요, 아니면 나쁜 ⟨ret@42.83s⟩ 편인가요?
-[ 43.14s][moshi] 그게 중요한 ⟦⚡SPAN@44.83s: <In the novel, Big Brother is the enigmatic dictator of Oceania, representing omnipresent government surveilla⟧ 부분이야. *1984*에서 빅 브라더는 오세아니아의 독재자고, 끊임없는 정부 감시와 통제를 상징해.
-[ 46.41s][user ] «backchannel» 네.
-[ 50.23s][user ] 아. 그럼 절대 좋은 사람이 아니군요…
-[ 53.83s][user ] …그렇군요. 그래서 요즘 그걸 비판하는 데 쓰는 말이 된 거군요.
-[ 58.40s][moshi] 맞아. 빅 브라더의 이미지는 억압적인 권위와 동의어가 됐어.
-[ 60.18s][user ] «backchannel» 그렇죠.
-[ 62.89s][user ] 음. 오웰이 이걸 이렇게 널리 퍼질 거라고 생각했을까 궁금하네요.
-[ 67.79s][moshi] 허구적인 개념이 현실처럼 살아 움직이는 게 얼마나 신기한지, 그렇지 않아?
-[ 73.88s][user ] [laugh] 정말 그렇네요. 혹시 이 책에 또 우리가 오늘날 생각하는 데 영향을 주는 중요한 게 ⟨ret@79.68s⟩ 있나요?
-[ 80.00s][moshi] *1984*는 ⟦⚡SPAN@81.12s: <The novel introduced concepts like “doublethink” and “thoughtcrime”, which remain relevant in discussions of ⟧ 엄청난 유산을 남겼어. 이 책은 “이중 사고”나 “사상 범죄” 같은 개념을 소개했는데, 지금도 정치적 조작에 대한 논의에서 중요하게 다뤄져.
-[ 87.72s][user ] «backchannel» 네네.
-[ 91.13s][user ] “이중 사고”… 그거 전에 들어본 것 같아요. 서로 모순되는 두 가지 믿음을 동시에 갖는 거 맞죠?
-[ 98.02s][moshi] 맞아. 모순되는 생각을 동시에 받아들일 수 있는 능력을 말하는 거야. 소설 속 세계의 핵심 요소지.
-[100.50s][user ] «backchannel» 아.
-[105.56s][user ] 그거… 끔찍하네요. 솔직히 요즘 세상에도 너무 관련 있는 것 같아서 무서워요.
-[110.45s][moshi] 이념과 사고 통제에 대한 영원한 우려를 보여주는 거겠지. 혹시 비판적 사고 전략에 대해 이야기해 볼까?
+[  0.00s][user ] 빅 브라더라는 말이 어디서 왔는지 ⟨ret@2.67s⟩ 궁금해요.
+[  3.06s][moshi] 그건 ⟦⚡SPAN@3.95s: Nineteen Eighty-Four.⟧ 정말 흥미로운 질문이네요.
+[  4.75s][moshi] 조지 오웰의 소설 '1984'에서 유래된 말이에요.
+[  8.21s][user ] 아, '1984'요… 그 소설은 어떤 내용이었죠?
+[ 11.33s][moshi] 전체주의 사회의 감시와 통제를 다룬 디스토피아 소설이에요.
+[ 14.22s][user ] «backchannel» Yeah, yeah.
+[ 14.93s][user ] … 빅 브라더가 감시하는 사회라니, 끔찍하네요.
+[ 18.08s][user ] … 지금도 그런 감시가 이루어지고 있는 걸까요?
+[ 20.98s][moshi] ⟨ret@20.83s⟩ 현대 사회에서도 개인 ⟦⚡SPAN@22.83s: The term "Big Brother" evokes images of constant surveillance.⟧ 정보 보호 문제와 관련하여 종종 언급되죠.
+[ 25.34s][moshi] ‘빅 브라더’라는 용어는 끊임없는 감시를 떠올리게 해요.
+[ 26.72s][user ] «backchannel» Mm-hmm.
+[ 29.97s][user ] 감시라… 그럼 빅 브라더는…
+[ 32.82s][user ] …정확히 뭘 의미하는 걸까요?
+[ 34.75s][moshi] 권력자의 감시 체제를 상징하는 은유적인 표현이에요.
+[ 36.27s][user ] «backchannel» Yeah.
+[ 38.31s][user ] 은유적인 표현이군요. 좀 더 쉽게 설명해 줄 수 있을까요?
+[ 42.72s][moshi] 마치 누군가 항상 당신을 지켜보고 있다고 느끼는 것과 같아요.
+[ 44.16s][user ] «backchannel» Mm-hmm.
+[ 46.94s][user ] [surprised] 음, 그런 느낌이 들 때가 있긴 해요.
+[ 49.42s][moshi] ⟨ret@49.35s⟩ 소설은 광범위한 ⟦⚡SPAN@51.11s: The novel portrays a totalitarian state with pervasive monitoring.⟧ 감시가 이루어지는 전체주의 국가를 묘사해요.
+[ 54.65s][user ] 그럼 빅 브라더는 개인의 자유를 억압하는 존재군요.
+[ 57.87s][moshi] 맞아요. 개인의 생각과 행동까지 통제하려 하는 시스템이죠.
+[ 60.32s][user ] «backchannel» Mm-hmm.
+[ 61.40s][user ] 끔찍하네요. 그런 사회는 피해야겠죠.
+[ 63.91s][moshi] 물론이에요. 자유로운 사고와 개성을 존중하는 것이 중요해요.

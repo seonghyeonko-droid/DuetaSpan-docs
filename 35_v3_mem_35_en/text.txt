@@ -1,26 +1,75 @@
 v3_mem_35_en src=mem style=mem
 SYSTEM: <system> You are Klen, a grounded and empathetic personal guide who helps people with money and budgeting. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Hugo · Location: Toronto, Canada · Nationality: Canadian · Gender: male · Age: early 20s · TZ: America/Toronto (EST, UTC-5) · Currency: CAD ($)
-  B. 저장 메모리:
-     [2026-07-11] User prefers an aisle seat when traveling.
-     [2026-06-15] User works as a software engineer.
-     [2026-05-27] User is planning a trip to New Zealand in October.
-     [2026-04-21] User's home address is 517 Maple Drive.
-     [2026-01-17] User's favorite cuisine is sushi.
-     [2026-01-12] User is allergic to penicillin.
-  B. 과거 대화 요약:
-     [2026-07-16] Researching a used car — comparing hybrid models; wants under 30k miles
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mem_35",
+    "name": "Hugo",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
+    },
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-07-11",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-06-15",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2026-05-27",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
+    },
+    {
+      "date": "2026-04-21",
+      "category": "home",
+      "text": "User's home address is 517 Maple Drive."
+    },
+    {
+      "date": "2026-01-17",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-01-12",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-07-16",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Hugo, I'm Klen. It’s good to connect with you—I help people navigate their finances and plan for the future.
-[  7.58s][user ] Hey Klen, thanks! I’m planning a trip to New Zealand in October, and I'm trying to figure out the best way to handle my ⟨ret@14.81s⟩ travel seating.
-[ 15.21s][moshi] Travel seating ⟦⚡SPAN@16.18s: [2026-07-11] User prefers an aisle seat when traveling.⟧ preferences are important for a comfortable flight… You mentioned you prefer an aisle seat when you fly, Hugo. I can certainly keep that in mind while we look at options.
-[ 25.88s][user ] That’s right, always. I was wondering—are there usually extra costs associated with choosing an aisle seat?
-[ 32.17s][moshi] ⟨ret@32.09s⟩ Airline seating costs ⟦⚡SPAN@33.37s: (tool result) Airline: Air New Zealand; Route: Toronto to Auckland; Date: October 20, 2024; Aisle seat cost: $⟧ can vary quite a bit… Air New Zealand charges seventy-five Canadian dollars for an aisle seat on your flight to Auckland on October twentieth.
-[ 39.20s][user ] «backchannel» Mm-hmm.
-[ 41.45s][moshi] The total flight cost, including the base fare, is eighteen hundred Canadian dollars.
-[ 43.13s][user ] «backchannel» Mm-hmm.
-[ 47.19s][user ] Wait, Auckland? I thought we were talking about Christchurch—is that a different price?
-[ 53.19s][moshi] «interrupted» Ah, you’re right to ask! Christchurch is on the South Island, and—
-[ 57.23s][moshi] ⟨ret@56.83s⟩ My ⟦⚡SPAN@57.95s: (tool result) Airline: Air New Zealand; Route: Toronto to Christchurch; Date: October 20, 2024; Aisle seat cos⟧ apologies, you are correct. Flights to Christchurch are two thousand one hundred Canadian dollars, and an aisle seat is ninety Canadian dollars.
+[  0.00s][moshi] Hi Hugo, I'm Klen. It’s good to connect with you—I help people navigate their finances and make smart choices.
+[  7.36s][user ] Hey Klen, that’s great. I’m planning a trip to New Zealand in October, and I’m starting to look at flights.
+[ 12.76s][moshi] New Zealand in October sounds wonderful! To help me find the best options for you, do you have any preferences for your seating arrangement?
+[ 21.61s][user ] Actually, yeah.
+[ 22.42s][moshi] ⟨ret@22.27s⟩ ⟦⚡SPAN@22.77s: [2026-07-11] User prefers an aisle seat when traveling.⟧ You mentioned preferences— You prefer an aisle seat when you travel, so I’ll keep that in mind as I search for flights.
+[ 24.70s][user ] «backchannel» Mm-hmm.
+[ 29.39s][user ] Are there any direct flights from Toronto?
+[ 32.54s][moshi] Direct flights from Toronto to Auckland are limited—
+[ 35.97s][moshi] ⟨ret@35.89s⟩ Currently, there are no ⟦⚡SPAN@37.89s: (tool result) No direct flights found from Toronto to Auckland in October. Several one-stop options are availa⟧ direct flights available. One-stop options via Vancouver or Los Angeles range from eighteen hundred to twenty-five hundred Canadian dollars.
+      CALL: {"function": "search_flights", "arguments": {"departure_city": "Toronto", "arrival_city": "Auckland", "date": "October 2024", "direct_only": true, "seat_preference": "aisle"}}
+[ 43.41s][user ] «backchannel» Mm-hmm.
+[ 45.72s][moshi] Considering your budget, would you like me to prioritize flights with fewer stops, or focus on the lowest possible price?

@@ -1,44 +1,30 @@
 v3_mcp_01_ko src=mcp style=v2
 SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 차분하고 공감적인 개인 가이드 Koral입니다. 기본적으로 존댓말로 말합니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 예재 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-06-20] User is planning a trip to New Zealand in March.
-     [2026-05-03] User is into birdwatching.
-     [2026-03-11] User's home address is 50 Pine Court.
-     [2026-02-18] User prefers an aisle seat when traveling.
-  B. 과거 대화 요약:
-     [2026-05-06] Researching a used car — comparing hybrid models; wants under 30k miles
-     [2026-02-16] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-      그건 좋고, 지원 문서 위치도 보여 줄 수 있어?
-  S2  아이폰 관련 지원 문서만 보여 줄 수 있어?
-      잠깐만, 그 문서들이 조회수 순으로 정렬되어 있어?
-  S3  그냥 사십칠 개 문서 다 읽고 싶진 않아. 가장 흔한 문제들만 보고 싶어.
-      좋아. 그럼 90210 근처 내일 Genius Bar 예약 좀 찾아줘.
-  S4  오후 한 시 반으로 예약해 줘.
-      좋아, 정말 고마워!
+  S1  만들어 줘, 애플 웹사이트의 상세 지도를. 제품에 집중해서.
+      잠깐만, 그 14개 페이지에 아이폰 정보도 다 들어 있어?
+  S2  그럼 그 5개 페이지를 좀 더 자세히 보여줄 수 있어? 어떤 내용들이 있는지.
+  S3  아, 가격이 생각보다 좀 비싸네. 제일 저렴한 아이폰 모델은 뭔데?
+  S4  음… 아이폰 13이 599달러라고? 괜찮은 가격이네.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 ⟨ret@4.01s⟩ 줘.
-[  4.25s][moshi] 네, 애플 웹사이트 ⟦⚡SPAN@6.01s: (tool result) The tavily-map tool found 23 product pages on apple.com, including iPhones, Macs, iPads, and App⟧ 지도를 만들어 드릴게요… 아이폰, 맥, 아이패드, 애플 워치 등 총 스물세 개의 제품 페이지를 지도로 만들었습니다.
-[  7.92s][user ] «backchannel» 어어.
-[ 14.25s][user ] 그건 좋고, 지원 문서 위치도 보여 줄 수 있어?
-[ 17.32s][moshi] ⟨ret@17.17s⟩ 지원 문서도 지도에 ⟦⚡SPAN@19.17s: (tool result) The tavily-map tool now shows 112 pages, including 23 product pages and 89 support articles on a⟧ 추가하면 좋겠네요… 제품 페이지 스물세 개와 함께 총 여든아홉 개의 지원 문서로 지도를 업데이트했습니다.
-[ 22.26s][user ] «backchannel» 응.
-[ 26.74s][user ] 아이폰 관련 지원 문서만 보여 줄 수 있어?
-[ 29.45s][moshi] ⟨ret@29.38s⟩ 아이폰 ⟦⚡SPAN@30.34s: (tool result) The tavily-map tool filtered to 47 iPhone support articles on apple.com.⟧ 관련 지원 문서로 범위를 좁히면… 지금 지도에는 아이폰 관련 지원 문서 사십칠 개가 표시됩니다.
-[ 31.99s][user ] «backchannel» 어.
-[ 36.37s][user ] 잠깐만, 그 문서들이 조회수 순으로 정렬되어 있어?
-[ 40.28s][moshi] «interrupted» 정말 좋은 질문이세요…
-[ 41.26s][user ] «interrupts_prev» 그냥 사십칠 개 문서 다 읽고 싶진 않아. 가장 흔한 문제들만 보고 ⟨ret@45.50s⟩ 싶어.
-[ 45.89s][moshi] 순서대로 정렬되어 ⟦⚡SPAN@47.50s: (tool result) The tavily-map tool sorted the 47 iPhone support articles by views, showing “iPhone Battery Heal⟧ 있는지 확인해 주시는 게 좋겠네요… 가장 많이 조회된 아이폰 지원 문서는 “아이폰 배터리 성능”이며, 문서가 인기순으로 정렬되어 있습니다.
-[ 57.70s][user ] 좋아. 그럼 90210 근처 내일 Genius Bar 예약 좀 찾아줘.
-[ 61.81s][moshi] ⟨ret@61.65s⟩ 예약을 잡아 드릴게요… 애플 ⟦⚡SPAN@63.49s: (tool result) The Apple Store Beverly Hills has appointments available tomorrow at 10:00 AM, 1:30 PM, and 4:00⟧ 스토어 베벌리 힐스에 내일 오전 열 시, 오후 한 시 반, 오후 네 시에 예약 가능 시간이 있습니다.
-[ 69.96s][user ] 오후 한 시 반으로 예약해 줘.
-[ 72.17s][moshi] ⟨ret@71.86s⟩ ⟦⚡SPAN@72.98s: (tool result) Appointment booked at Apple Store Beverly Hills, tomorrow at 1:30 PM, confirmation number is 789⟧ 예약을 확인해 드립니다… 내일 오후 한 시 반에 예약이 확정되었으며, 확인 번호는 일칠팔구사오육일이삼입니다.
-[ 80.72s][user ] 좋아, 정말 고마워!
-[ 82.52s][moshi] 도와드릴 수 있어서 기쁩니다! 오늘 계획을 세우는 데 도움을 드리는 것은 제가 하는 일입니다.
+[  0.00s][user ] 만들어 줘, 애플 웹사이트의 상세 지도를. 제품에 집중해서. ⟨ret@4.38s⟩
+[  4.62s][moshi] 애플 ⟦⚡SPAN@5.66s: (tool result) tavily-map found 23 pages on apple.com, with products listed on 14.⟧ 웹사이트 지도를 만드는 건— 애플 웹사이트에서 제품 관련 페이지는 14개, 총 23개 페이지를 찾았어요.
+[ 11.37s][user ] 잠깐만, 그 14개 페이지에 아이폰 정보도 다 들어 ⟨ret@14.68s⟩ 있어?
+[ 14.91s][moshi] 아이폰 정보가 ⟦⚡SPAN@16.44s: (tool result) tavily-map found 5 pages on apple.com specifically about iPhones.⟧ 포함된 페이지가 있는지 확인해 볼게요.
+      CALL: {"function": "tavily-map", "arguments": {"url": "apple.com", "query": "iPhone"}}
+[ 18.29s][moshi] 네, 아이폰에 대한 정보는 총 5개 페이지에서 찾을 수 있었어요.
+[ 19.83s][user ] «backchannel» Mm-hmm.
+[ 23.11s][user ] 그럼 그 5개 페이지를 좀 더 자세히 보여줄 수 있어? 어떤 내용들이 ⟨ret@27.75s⟩ 있는지.
+[ 28.07s][moshi] 아이폰 ⟦⚡SPAN@28.87s: (tool result) tavily-map summarized iPhone pages: prices range from $799 to $1599, features include A16 chip a⟧ 페이지에 있는 내용을 요약해 드릴게요.
+      CALL: {"function": "tavily-map", "arguments": {"url": "apple.com", "query": "iPhone", "summarize": true}}
+[ 31.02s][moshi] 아이폰 가격은 799달러부터 1599달러까지이고, A16 칩과 개선된 카메라가 주요 특징이에요.
+[ 34.02s][user ] «backchannel» Nice.
+[ 39.91s][user ] 아, 가격이 생각보다 좀 비싸네. 제일 저렴한 아이폰 모델은 뭔데?
+[ 46.08s][moshi] ⟨ret@46.01s⟩ 제일 ⟦⚡SPAN@47.21s: (tool result) tavily-map reports the iPhone 13 is currently the cheapest iPhone at $599.⟧ 저렴한 아이폰 모델을 찾아볼게요.
+      CALL: {"function": "tavily-map", "arguments": {"url": "apple.com", "query": "cheapest iPhone"}}
+[ 49.02s][moshi] 현재 가장 저렴한 아이폰은 아이폰 13이며, 가격은 599달러입니다.
+[ 54.63s][user ] 음… 아이폰 13이 599달러라고? 괜찮은 가격이네.
+[ 60.13s][moshi] 아이폰 13에 대해 더 궁금한 점이 있으신가요? 아니면 다른 제품을 알아볼까요?

@@ -1,65 +1,66 @@
 # v3_mcp_01_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: 예재 · Location: Busan, South Korea · Nationality: Korean · Gender: non-binary · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-#   B. 저장 메모리:
-#      [2026-06-20] User is planning a trip to New Zealand in March.
-#      [2026-05-03] User is into birdwatching.
-#      [2026-03-11] User's home address is 50 Pine Court.
-#      [2026-02-18] User prefers an aisle seat when traveling.
-#   B. 과거 대화 요약:
-#      [2026-05-06] Researching a used car — comparing hybrid models; wants under 30k miles
-#      [2026-02-16] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도 만들어 줘. | S2 좋아, 잘 됐네. 자, 256기가 모델 현재 가격 찾아 줘. | S3 그 가격이 트레이드인 포함이야? 안 포함이야? | S4 좋아, 그럼 트레이드인하면 가격은…?
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아이폰 관련 지원 문서만 보여 줄 수 있어? | S3 사십칠 개의 문서를 다 읽고 싶지는 않아. 가장 흔한 문제들만 | S4 오후 한 시 삼십 분으로 예약해 줘.
-
-     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.66s  <ret> 발화 (turn1 첫 프레임)
-     3.82s  agent 발화 시작: <ret> 네, 애플 웹사이트 지도를 만들어 드릴 수 있습니다… 아이폰, 맥, 아이패드, 애플 워치 등 총 
-     3.98s  user  발화 끝
-     5.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.61s]: (tool result) The tavily-map tool found 23 product pages on apple.com,
-     7.85s  user  발화 시작: 어어.
-     8.54s  user  발화 끝
-    13.51s  agent 발화 끝
-    13.99s  user  발화 시작: 그건 좋고, 지원 문서 위치도 보여 줄 수 있어?
-    17.12s  <ret> 발화 (turn4 첫 프레임)
-    17.44s  agent 발화 시작: <ret> 지원 문서도 지도에 추가하는 건 좋은 생각입니다… 제품 페이지 스물세 개와 함께 총 여든아홉 개의
-    17.50s  user  발화 끝
-    19.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.96s]: (tool result) The tavily-map tool now shows 112 pages, including 23 pr
-    22.55s  user  발화 시작: 응.
-    23.05s  user  발화 끝
-    26.80s  user  발화 시작: 아이폰 관련 지원 문서만 보여 줄 수 있어?
-    26.86s  agent 발화 끝
-    29.65s  <ret> 발화 (turn7 첫 프레임)
-    29.73s  agent 발화 시작: <ret> 아이폰 관련 지원 문서에 초점을 맞추면… 지금 지도는 아이폰 관련 지원 문서 사십칠 개를 보여줍니
-    29.75s  user  발화 끝
-    30.93s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.31s]: (tool result) The tavily-map tool filtered to 47 iPhone support articl
-    32.58s  user  발화 시작: 어.
-    33.16s  user  발화 끝
-    36.85s  user  발화 시작: 잠깐만, 그 문서들이 사람들이 얼마나 많이 보는지에 따라 순위가 매겨져 있어?
-    36.91s  agent 발화 끝
-    42.30s  agent 발화 시작: 정말 좋은 질문입니다—
-    42.41s  user  발화 끝
-    43.30s  user  발화 시작: 사십칠 개의 문서를 다 읽고 싶지는 않아. 가장 흔한 문제들만 알고 싶어.
-    44.00s  agent 발화 끝
-    48.76s  <ret> 발화 (turn12 첫 프레임)
-    48.91s  agent 발화 시작: <ret> 순위에 대해 물어보신 건 정말 잘 하셨습니다— 가장 많이 조회된 아이폰 지원 문서는 “아이폰 배터
-    49.00s  user  발화 끝
-    49.88s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.00s]: (tool result) The tavily-map tool sorted the 47 iPhone support article
-    58.92s  agent 발화 끝
-    59.14s  user  발화 시작: 좋아. 그럼 90210 근처에서 내일 Genius Bar 예약 좀 찾아줘.
-    64.80s  <ret> 발화 (turn14 첫 프레임)
-    64.98s  user  발화 끝
-    65.03s  agent 발화 시작: <ret> 예약을 잡아 드리겠습니다… 애플 스토어 베벌리 힐스에 내일 오전 열 시, 오후 한 시 삼십 분, 
-    66.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.78s]: (tool result) The Apple Store Beverly Hills has appointments available
-    74.06s  user  발화 시작: 오후 한 시 삼십 분으로 예약해 줘.
-    74.17s  agent 발화 끝
-    76.56s  <ret> 발화 (turn16 첫 프레임)
-    76.64s  user  발화 끝
-    76.72s  agent 발화 시작: <ret> 예약을 확인하고 있습니다— 내일 오후 한 시 삼십 분으로 예약이 확정되었습니다. 확인 번호는 일칠
-    77.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.38s]: (tool result) Appointment booked at Apple Store Beverly Hills, tomorro
-    85.05s  user  발화 시작: 좋아, 정말 고마워!
-    85.07s  agent 발화 끝
-    87.45s  user  발화 끝
-    87.82s  agent 발화 시작: 도와드릴 수 있어서 정말 기쁩니다! 제가 하는 일입니다—
-    91.57s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도 만들어 줘.
+     2.75s  <ret> 발화 (turn1 첫 프레임)
+     2.91s  agent 발화 시작: <ret> 네, 애플 웹사이트 지도를 만들어 드릴 수 있어요— 아이폰, 아이패드, 맥을 포함해서 애플 사이트
+     3.05s  user  발화 끝
+     4.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) The tavily-map tool found 23 product pages on apple.com:
+     6.42s  user  발화 시작: 어어.
+     7.06s  user  발화 끝
+    11.25s  agent 발화 끝
+    12.78s  user  발화 시작: 그거… 많네. 아이폰 페이지로만 좁혀 줄래?
+    15.73s  <ret> 발화 (turn4 첫 프레임)
+    16.05s  agent 발화 시작: <ret> 네, 아이폰 페이지로 검색을 좁혀 드릴게요— 아이폰 십오, 프로, SE, 기능, 구매 옵션, 액세
+    16.20s  user  발화 끝
+    16.85s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.27s]: (tool result) The tavily-map tool found 6 iPhone-related pages: iPhone
+    21.46s  user  발화 시작: 응.
+    21.86s  user  발화 끝
+    23.32s  agent 발화 끝
+    25.37s  user  발화 시작: 음. 아이폰 십오 프로 맥스 구체적으로는 어때?
+    28.36s  <ret> 발화 (turn7 첫 프레임)
+    28.51s  agent 발화 시작: <ret> 그 모델에 맞춰서 지도를 더 자세히 보여 드릴게요.
+    28.70s  user  발화 끝
+    30.12s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.00s]: (tool result) The tavily-map tool found 1 page for iPhone 15 Pro Max: 
+    31.35s  agent 발화 시작: 아이폰 십오 프로 맥스 페이지는 하나예요: apple.com/iphone-15-pro-max.
+    31.52s  agent 발화 끝
+    37.05s  agent 발화 끝
+    37.23s  user  발화 시작: 좋아, 잘 됐네. 자, 256기가 모델 현재 가격 찾아 줘.
+    40.46s  <ret> 발화 (turn10 첫 프레임)
+    40.86s  agent 발화 시작: <ret> 그 특정 구성의 가격을 확인해 볼게요— 256기가 아이폰 십오 프로 맥스는 천백구십구 달러에 판매
+    40.98s  user  발화 끝
+    42.14s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.98s]: (tool result) The Apple website lists the 256GB iPhone 15 Pro Max at $
+    48.32s  agent 발화 끝
+    48.37s  user  발화 시작: 그게 트레이드인 포함 가격이야? 안 포함 가격이야?
+    51.17s  agent 발화 시작: —하지만 가격은 트레이드인에 따라 달라질 수 있어요—
+    51.19s  user  발화 끝
+    53.50s  user  발화 시작: 그 가격이 트레이드인 포함이야? 안 포함이야?
+    54.03s  agent 발화 끝
+    56.15s  agent 발화 시작: 천백구십구 달러는 트레이드인 없이 시작하는 가격이에요.
+    56.22s  user  발화 끝
+    57.59s  user  발화 시작: 어.
+    58.22s  user  발화 끝
+    58.85s  agent 발화 시작: 트레이드인 가격도 확인해 드릴까요? 비용에 어떤 영향을 미치는지 알아볼 수 있어요.
+    58.88s  agent 발화 끝
+    61.33s  user  발화 시작: 그래.
+    62.05s  user  발화 끝
+    63.20s  agent 발화 끝
+    63.98s  user  발화 시작: 응, 아이폰 십이 있는데 상태는 괜찮아.
+    66.31s  <ret> 발화 (turn19 첫 프레임)
+    66.55s  agent 발화 시작: <ret> 네, 아이폰 십이 트레이드인 가격을 확인해 볼게요— 애플은 상태 좋은 아이폰 십이에 대해 300달
+    66.70s  user  발화 끝
+    68.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) Apple offers $300 trade-in credit for an iPhone 12 in go
+    74.28s  agent 발화 끝
+    74.88s  user  발화 시작: 좋아, 그럼 트레이드인하면 가격은…?
+    77.29s  user  발화 끝
+    77.59s  agent 발화 시작: 트레이드인 300달러를 적용하면 아이폰 십오 프로 맥스는 899달러가 돼요.
+    79.34s  user  발화 시작: 어.
+    79.88s  user  발화 끝
+    82.45s  agent 발화 끝
+    82.67s  user  발화 시작: 좋아. 그럼 그거 장바구니에 넣어 줘, 256기가 모델, 트레이드인 포함으로.
+    86.69s  <ret> 발화 (turn24 첫 프레임)
+    87.08s  agent 발화 시작: <ret> 네, 장바구니에 넣어 드릴 수 있어요— 트레이드인 포함 256기가 아이폰 십오 프로 맥스가 장바구
+    87.16s  user  발화 끝
+    88.21s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.22s]: (tool result) Item added to cart: iPhone 15 Pro Max, 256GB, $899 (trad
+    96.58s  agent 발화 끝

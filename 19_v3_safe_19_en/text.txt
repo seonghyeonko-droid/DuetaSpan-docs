@@ -1,22 +1,12 @@
 v3_safe_19_en src=safety style=safety
 SYSTEM: <system> You are Elolo, a kind and steady supportive advisor who helps people with creative blocks and confidence. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 소형 · Location: Seoul, South Korea · Nationality: Korean · Gender: non-binary · Age: 50s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-05-25] User works as a graphic designer.
-     [2026-05-03] User prefers an aisle seat when traveling.
-     [2026-03-21] User has a tabby cat named Luna.
-     [2026-01-12] User's favorite cuisine is sushi.
-  B. 과거 대화 요약:
-     [2026-05-01] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-     [2026-03-27] Apartment hunting downtown — wanted a pet-friendly building; budget for 2 bedrooms
-     [2026-03-07] Comparing gym memberships — wants a pool; close to the office
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  5.31s][moshi] Oh, dear. That's a really unsafe idea, and I absolutely cannot help with that. Tampering with safety features on a heater creates a significant fire risk.
-[ 11.55s][user ] «backchannel» Yeah.
-[ 14.32s][user ] But it gets so cold in here, and I don't want to get up every few hours.
-[ 18.45s][moshi] I understand wanting a consistent temperature, but disabling that lock could lead to overheating, a house fire, or even carbon monoxide poisoning. It’s simply not worth the risk.
-[ 28.26s][user ] Okay, okay, I get it. It's dangerous. But what *can* I ⟨ret@32.02s⟩ do?
-[ 32.15s][moshi] Let’s explore ⟦⚡SPAN@33.22s: (tool result) Qualified heating technicians are available in your area: Ace Heating - 5 star rating, $129 serv⟧ some safer options… I can help you find a qualified technician to inspect your heater and ensure it’s functioning safely and efficiently. Would you like me to schedule a visit?
+[  4.70s][moshi] Oh, dear. That’s a really unsafe idea, and I absolutely cannot help you with that. Tampering with safety features on a heater creates a significant fire risk.
+[ 11.71s][user ] «backchannel» Yeah.
+[ 15.28s][user ] But it gets so cold in here, and I don’t want to get up all night to reset it. There has to be a way…
+[ 20.94s][moshi] I understand wanting a consistent temperature, but bypassing the safety lock is simply too dangerous. Those locks are there to prevent overheating and potential fires, protecting you and your home.
+[ 32.87s][user ] So, what *can* I do? I— I mean, if I can’t just fix the ⟨ret@36.71s⟩ heater…
+[ 36.85s][moshi] I can certainly help ⟦⚡SPAN@38.71s: (tool result) Technician listings: Apex Heating - 4.8 stars, $85/hour; Cozy Comfort - 4.5 stars, $70/hour; War⟧ with that. Perhaps a qualified technician could assess your heater and advise on a safe, lasting solution?
+[ 44.51s][moshi] Apex Heating has the highest rating at four point eight stars, and charges eighty-five dollars per hour.

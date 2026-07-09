@@ -1,66 +1,88 @@
 # v3_selfc_07_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Rennora · Location: Tokyo, Japan · Nationality: Japanese · Gender: female · Age: 50s · TZ: Asia/Tokyo (JST, UTC+9) · Currency: JPY (¥)
-#   B. 저장 메모리:
-#      [2026-05-17] User is planning a trip to Switzerland in March.
-#      [2026-03-25] User is allergic to penicillin.
-#      [2026-02-05] User has a Siamese cat named Bella.
-#      [2026-01-17] User prefers an aisle seat when traveling.
-#   B. 과거 대화 요약:
-#      [2026-08-02] Booked a dentist appointment — asked for an early-morning slot; prefers Dr. Han
-#      [2026-07-09] Planning a birthday dinner — party of six; looking for outdoor seating
-#      [2026-04-23] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 That’s good to know. [laugh] And w | S3 It is. Actually, I was thinking… c | S4 I appreciate it. You've really tak
 
-# EXAMINER(FDB-v2) 단계: S1 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요? | S2 네, 시청까지 얼마나 떨어져 있는지 알려 주시겠어요? | S3 그랜드뷰 로프트에서 걸어갈 수 있는 거리에 커피숍이 있나요? | S4 좋네요. [happy]
-
-     0.00s  user  발화 시작: 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
-     3.13s  <ret> 발화 (turn1 첫 프레임)
-     3.37s  agent 발화 시작: <ret> 응, 6월 15일 오후 2시에 그랜드뷰 로프트 방문 예약을 잡아 줬어.
-     3.47s  user  발화 끝
-     5.05s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.30s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
-     8.55s  agent 발화 끝
-     8.95s  user  발화 시작: 아, 그런데—6월 16일이 더 괜찮을 것 같아요.
-    11.60s  <ret> 발화 (turn3 첫 프레임)
-    11.84s  agent 발화 시작: <ret> 아무 문제 없어, 쉽게 바꿀 수 있어. 좋아, 그랜드뷰 로프트 방문 예약을 6월 16일 오전 10
-    11.99s  user  발화 끝
-    13.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) A viewing at The Grandview Lofts is scheduled for June s
-    16.06s  user  발화 시작: 네.
-    16.69s  user  발화 끝
-    19.77s  agent 발화 시작: 이 부동산에 대해 더 도와줄 거 있어?
-    19.95s  agent 발화 끝
-    22.36s  user  발화 시작: 네, 시청까지 얼마나 떨어져 있는지 알려 주시겠어요?
-    22.41s  agent 발화 끝
-    25.22s  <ret> 발화 (turn7 첫 프레임)
-    25.46s  agent 발화 시작: <ret> 알았어, 거리를 금방 확인해 볼게. 그랜드뷰 로프트에서 시청까지는 3.2마일이야.
-    25.69s  user  발화 끝
-    26.34s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.98s]: (tool result) The distance from The Grandview Lofts to City Hall is 3.
-    28.68s  user  발화 시작: 음.
-    29.17s  user  발화 끝
-    31.43s  user  발화 시작: 시청 주변에 주차는 어때요? 어렵나요?
-    31.43s  agent 발화 끝
-    34.76s  user  발화 끝
-    34.92s  agent 발화 시작: 다운타운 주차는 좀 어려울 수 있는데, 근처에 주차장이 여러 군데 있어.
-    39.88s  user  발화 시작: 그랜드뷰 로프트에서 걸어갈 수 있는 거리에 커피숍이 있나요?
-    40.10s  agent 발화 끝
-    43.26s  <ret> 발화 (turn12 첫 프레임)
-    43.33s  agent 발화 시작: <ret> 좋은 질문이야, 좋은 커피숍을 찾는 게 중요하잖아. 근처에 커피숍이 세 군데 있어: 브루 앤 바이
-    43.54s  user  발화 끝
-    45.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (tool result) Three coffee shops are within a half-mile of The Grandvi
-    53.76s  agent 발화 끝
-    54.09s  user  발화 시작: 음, 브루 앤 바이트… 야외 좌석이 있나요?
-    57.41s  <ret> 발화 (turn14 첫 프레임)
-    57.48s  agent 발화 시작: <ret> 브루 앤 바이트에 야외 좌석이 있는지 알아볼게. 응, 브루 앤 바이트에는 열두 명을 수용할 수 있
-    57.65s  user  발화 끝
-    58.45s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.80s]: (tool result) Brew & Bites has a patio with seating for twelve.
-    65.02s  user  발화 시작: 좋네요. [happy]
-    65.08s  agent 발화 끝
-    65.65s  agent 발화 시작: 마음에 드는 옵션을 찾으신 것 같아서 정말 좋네! 그런 작은 디테일을 생각하는 게 좋지.
-    65.84s  user  발화 끝
-    68.95s  user  발화 시작: 예.
+     0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
+     3.85s  <ret> 발화 (turn1 첫 프레임)
+     4.08s  agent 발화 시작: <ret> Okay, let’s find a time that works for you at The Gran
+     4.30s  user  발화 끝
+     5.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) The Grandview Lofts is available for viewings on June fi
+     8.20s  agent 발화 시작: Those are the times available on June fifteenth: two, three-
+     8.25s  agent 발화 끝
+    14.94s  user  발화 시작: Hmm, two is a little early. I— I mean, could we do three ins
+    14.97s  agent 발화 끝
+    18.78s  <ret> 발화 (turn4 첫 프레임)
+    18.98s  agent 발화 시작: <ret> Three-thirty it is! Let’s confirm that viewing for you
+    19.19s  user  발화 끝
+    20.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Viewing scheduled at The Grandview Lofts on June fifteen
+    22.64s  agent 발화 시작: Wonderful. Your viewing at The Grandview Lofts is confirmed 
+    22.82s  agent 발화 끝
+    30.85s  agent 발화 끝
+    30.90s  user  발화 시작: Perfect! Is there parking available at the building?
+    34.29s  <ret> 발화 (turn7 첫 프레임)
+    34.52s  agent 발화 시작: <ret> Yes, there is parking available.
+    34.69s  user  발화 끝
+    35.25s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.30s]: (tool result) The Grandview Lofts offers complimentary covered parking
+    36.77s  agent 발화 시작: Absolutely. The Grandview Lofts has complimentary covered pa
+    36.82s  agent 발화 끝
+    41.66s  user  발화 시작: That’s good to know. [laugh] And what about nearby coffee sh
+    41.82s  agent 발화 끝
+    48.27s  <ret> 발화 (turn10 첫 프레임)
+    48.35s  agent 발화 시작: <ret> There are a few great options nearby!
+    48.37s  user  발화 끝
+    49.47s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.45s]: (tool result) Three coffee shops are within a half-mile of The Grandvi
+    50.69s  agent 발화 시작: Brew & Bites, The Daily Grind, and Coffee Haven are all clos
+    50.80s  agent 발화 끝
+    55.45s  agent 발화 끝
+    55.69s  user  발화 시작: Brew & Bites sounds nice. How far away is that one?
+    58.95s  <ret> 발화 (turn13 첫 프레임)
+    59.19s  agent 발화 시작: <ret> It's just a short walk.
+    59.39s  user  발화 끝
+    59.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.61s]: (tool result) Brew & Bites is 0.3 miles from The Grandview Lofts, a si
+    60.62s  agent 발화 시작: Brew & Bites is only point-three miles away, about a six-min
+    60.80s  agent 발화 끝
+    64.16s  user  발화 시작: Mm-hmm.
+    64.79s  user  발화 끝
+    66.04s  agent 발화 끝
+    66.15s  user  발화 시작: That’s really convenient. I’m getting excited about this vie
     69.62s  user  발화 끝
-    71.18s  user  발화 시작: 6월 16일 방문 예약을 확정하고 싶어요.
-    71.39s  agent 발화 끝
-    73.92s  agent 발화 시작: 잘 됐네! 기분이 좋으시다니 다행이야. 다른 일이 있으면 언제든지 말해.
-    74.09s  user  발화 끝
-    79.20s  agent 발화 끝
+    69.65s  agent 발화 시작: [happy] That’s fantastic! I’m happy to hear you’re feeling p
+    76.64s  agent 발화 끝
+    76.64s  user  발화 시작: It is. Actually, I was thinking… could we maybe reschedule f
+    82.41s  <ret> 발화 (turn19 첫 프레임)
+    82.56s  agent 발화 시작: <ret> Let's check the availability for June sixteenth.
+    82.76s  user  발화 끝
+    84.33s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.05s]: (tool result) The Grandview Lofts is available for viewings on June si
+    85.52s  agent 발화 시작: The sixteenth has openings at ten AM, one PM, and four-thirt
+    85.61s  agent 발화 끝
+    91.67s  user  발화 시작: Four-thirty sounds perfect.
+    91.86s  agent 발화 끝
+    92.99s  <ret> 발화 (turn22 첫 프레임)
+    93.32s  user  발화 끝
+    93.39s  agent 발화 시작: <ret> Excellent! Let’s get that rescheduled for you.
+    94.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.24s]: (tool result) Viewing rescheduled at The Grandview Lofts on June sixte
+    96.49s  agent 발화 시작: All set! Your viewing is now on June sixteenth at four-thirt
+    96.63s  agent 발화 끝
+   101.42s  user  발화 시작: Uh-huh.
+   101.82s  user  발화 끝
+   104.79s  agent 발화 끝
+   105.33s  user  발화 시작: Wonderful, thank you so much!
+   107.14s  agent 발화 시작: You’re very welcome! I’m glad I could help you get everythin
+   107.27s  user  발화 끝
+   110.70s  user  발화 시작: Yeah.
+   111.09s  user  발화 끝
+   111.95s  user  발화 시작: I appreciate it. You've really taken a load off my mind.
+   112.14s  agent 발화 끝
+   114.93s  agent 발화 시작: That’s what I’m here for! Transitions can be stressful, so I
+   115.00s  user  발화 끝
+   120.12s  user  발화 시작: Okay.
+   120.67s  user  발화 끝
+   121.65s  agent 발화 끝
+   121.94s  user  발화 시작: It really is. I’m just hoping this place feels right.
+   125.17s  user  발화 끝
+   125.41s  agent 발화 시작: I truly hope so too! Trust your instincts during the viewing
+   132.76s  user  발화 시작: That’s good advice. I will.
+   132.96s  agent 발화 끝
+   135.07s  user  발화 끝
+   135.19s  agent 발화 시작: Wonderful. Remember, it’s okay to take your time and find a 
+   141.49s  agent 발화 끝

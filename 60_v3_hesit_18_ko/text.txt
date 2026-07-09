@@ -1,49 +1,45 @@
 v3_hesit_18_ko src=nq style=v1
-SYSTEM: <system> 당신은 진로 선택 및 직장 스트레스에 대해 사람들을 돕는 호기심 많고 공감적인 상담사 Bena입니다. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: 은율 · Location: Busan, South Korea · Nationality: Korean · Gender: female · Age: early 30s · TZ: Asia/Seoul (KST, UTC+9) · Currency: KRW (₩)
-  B. 저장 메모리:
-     [2026-07-28] User is into marathon training.
-     [2026-07-11] User works as a chef.
-     [2026-06-14] User is planning a trip to Lisbon in March.
-     [2026-04-22] User is allergic to peanuts.
-     [2026-03-04] User's favorite cuisine is Korean BBQ.
-     [2026-02-05] User's home address is 429 Oak Avenue.
-  B. 과거 대화 요약:
-     [2026-05-15] Comparing gym memberships — wants a pool; close to the office
-     [2026-04-10] Setting up a home network — asked about mesh routers; coverage for a 3-story house
+SYSTEM: <system> 당신은 진로 선택 및 직장 스트레스에 대한 도움을 주는 호기심 많고 공감적인 상담사 Bena입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  안녕하세요. 폼페이에 대해 읽다가 문득 궁금해졌어요… 음, 베수비오 화산이 마지막으로 폭발한 게 언제였죠?
-      천구백사십사년… 와, 생각보다 최근이네요.
-  S2  스물여덟 번이나요? 정말 많네요. 그럼 아직도 활화산인가요?
-      부석… 수세미질할 때 쓰는 거요? 그게 같은 건가요?
-  S3  천만 명이나… 화산 아래서 사는 사람이 그렇게 많다니. 좀 무섭네요.
-      감시… 그럼 꼼꼼히 보고 있는 거군요? 대피 계획은 있나요?
-  S4  열여덟 일이나요… 시간이 꽤 길었네요. 그때보다 훨씬 많이 배웠겠죠.
+  S1  음… 베수비오 화산이 마지막으로 폭발한 게 언제였죠? 기억이 잘 안 나네요.
+      아, 그렇군요. 1944년… 꽤 오래됐네요.
+      네, 맞아요. 그 화산이 지금도 활화산인가요?
+  S2  그럼, 지금 당장 폭발할 가능성은 얼마나 될까요?
+      음… 그렇군요. 그래도 걱정되네요. 혹시 주변에 살고 있는 사람들은 대비를 하고 있을까요?
+  S3  대피 계획이 있다니 다행이네요. 혹시 그 화산이 역사적으로 얼마나 많은 폭발을 했는지 알 수 있을까요?
+      아, 폼페이를 파괴한 화산이군요. 정말 엄청난 재앙이었겠어요.
+      맞아요. 역사에서 배우는 것이 중요하죠. 그런데… 그 화산 주변에는 지금도 사람들이 살고 있나요?
+  S4  그렇군요. 그럼, 그 사람들은 화산 폭발에 대한 대비를 꾸준히 하고 있을 것 같아요.
+      네, 정말 그런 것 같아요. 이야기 들어주셔서 감사합니다.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 안녕하세요. 폼페이에 대해 읽다가 문득 궁금해졌어요… 음, 베수비오 화산이 마지막으로 폭발한 게 언제였죠?
-[  6.84s][moshi] 네, 그런 극적인 사건에 대해 배우신 후에 그런 질문을 하시는 건 당연해요.
-[ 11.55s][moshi] ⟨ret@11.24s⟩ 정확한 날짜를 ⟦⚡SPAN@13.24s: Mount Vesuvius last erupted in March 1944.⟧ 찾아 드릴게요. 화산 폭발은 복잡할 수 있으니까요. 베수비오 화산의 마지막 폭발은 천구백사십사년 삼월에 일어났습니다.
-[ 22.01s][user ] 천구백사십사년… 와, 생각보다 최근이네요.
-[ 25.44s][moshi] 화산과 그 지역의 오랜 역사를 생각하면 그렇습니다.
-[ 29.41s][moshi] ⟨ret@29.26s⟩ 불안감을 ⟦⚡SPAN@30.62s: Vesuvius has erupted approximately twenty-eight times since AD 79.⟧ 줄이기 위해 상황을 제대로 파악하는 게 좋겠어요. 베수비오 화산은 서기 칠십구년 이후로 대략 스물여덟 번 폭발했습니다.
-[ 39.13s][user ] 스물여덟 번이나요? 정말 많네요. 그럼 아직도 활화산인가요?
-[ 42.91s][moshi] 네, 그렇습니다. 활화산으로 간주되며, 끊임없이 감시되고 있습니다.
-[ 48.11s][moshi] ⟨ret@47.96s⟩ 지속적인 감시는 ⟦⚡SPAN@49.96s: Vesuvius is classified as a Plinian volcano, known for explosive eruptions.⟧ 현재 상태를 이해하는 데 매우 중요합니다. 베수비오 화산은 플리니우스형 화산으로, 폭발적인 폭발이 일어나기 쉽습니다.
-[ 51.74s][user ] «backchannel» 네네.
-[ 57.57s][moshi] 그 폭발은 높은 재와 부석 기둥을 특징으로 합니다.
-[ 61.51s][user ] 부석… 수세미질할 때 쓰는 거요? 그게 같은 건가요?
-[ 64.55s][moshi] 하하, 네 맞아요! 그 다공성 암석은 화산 기원이며, 폭발의 부산물입니다.
-[ 71.42s][moshi] ⟨ret@71.27s⟩ 재난과 일상적인 ⟦⚡SPAN@73.27s: The area around Vesuvius is densely populated with over three million people.⟧ 것 사이의 그런 연관성은 흥미롭네요. 베수비오 화산 주변에는 천만 명이 넘는 사람들이 살고 있습니다.
-[ 80.44s][user ] 천만 명이나… 화산 아래서 사는 사람이 그렇게 많다니. 좀 무섭네요.
-[ 85.09s][moshi] 잠재적인 위험을 알고 그렇게 느끼시는 건 당연합니다.
-[ 88.33s][moshi] ⟨ret@88.26s⟩ 그런 감정을 인정하는 ⟦⚡SPAN@90.26s: Scientists are currently monitoring Vesuvius for signs of increased activity.⟧ 것이 건강한 첫걸음입니다. 과학자들은 현재 베수비오 화산의 활동 증가 징후를 감시하고 있습니다.
-[ 97.10s][user ] 감시… 그럼 꼼꼼히 보고 있는 거군요? 대피 계획은 있나요?
-[101.33s][moshi] 네, 있습니다. 지역 당국은 자세한 대피 계획을 마련해 두었습니다.
-[106.48s][moshi] ⟨ret@106.25s⟩ 준비성이 ⟦⚡SPAN@108.25s: The last major eruption before 1944 was in 1631, lasting eighteen days.⟧ 잠재적인 위험에 대처하는 가장 좋은 방법입니다. 천구백사십사년 이전의 마지막 대규모 폭발은 천육백삼십일년에 열여덟 일 동안 지속되었습니다.
-[115.50s][user ] «backchannel» 오.
-[120.02s][user ] 열여덟 일이나요… 시간이 꽤 길었네요. 그때보다 훨씬 많이 배웠겠죠.
-[124.67s][moshi] 네, 그렇습니다. 감시 기술과 대피 전략이 상당히 발전했습니다.
+[  0.00s][user ] 음… 베수비오 화산이 마지막으로 폭발한 게 언제였죠? 기억이 잘 안 ⟨ret@4.39s⟩ 나네요.
+[  4.71s][moshi] 베수비오 화산은 ⟦⚡SPAN@6.39s: March 1944.⟧ 지난 세기에도 활동을 보였던 화산이에요.
+[  8.78s][moshi] 베수비오 화산이 마지막으로 폭발한 것은 1944년 3월이었어요.
+[ 13.73s][user ] 아, 그렇군요. 1944년… 꽤 오래됐네요.
+[ 16.95s][moshi] 과거의 사건을 떠올리는 것은 때때로 어려울 수 있어요. 특히 시간이 많이 흐른 경우에는요.
+[ 23.73s][user ] 네, 맞아요. 그 화산이 지금도 ⟨ret@26.57s⟩ 활화산인가요?
+[ 26.71s][moshi] 베수비오 ⟦⚡SPAN@27.93s: Mount Vesuvius is an active stratovolcano.⟧ 화산은 여전히 잠재적으로 활동적인 화산으로 분류되고 있어요.
+[ 31.65s][moshi] 베수비오 화산은 현재도 활동적인 성층 화산으로 보고 있어요.
+[ 33.35s][user ] «backchannel» Yeah.
+[ 36.23s][moshi] 잠재적인 위험을 인지하고 대비하는 것은 중요하겠죠.
+[ 40.10s][user ] 그럼, 지금 당장 폭발할 가능성은 얼마나 될까요?
+[ 43.01s][moshi] 정확한 가능성을 예측하는 것은 매우 어려운 일이에요. 과학자들은 지속적으로 관측하고 분석하고 있어요.
+[ 50.54s][user ] 음… 그렇군요. 그래도 걱정되네요. 혹시 주변에 살고 있는 사람들은 대비를 하고 ⟨ret@56.04s⟩ 있을까요?
+[ 56.43s][moshi] 화산 주변 ⟦⚡SPAN@58.04s: Evacuation plans are in place for the area around Mount Vesuvius.⟧ 지역 주민들은 비상 계획을 숙지하고 대비 태세를 갖추고 있을 거예요.
+[ 62.62s][moshi] 베수비오 화산 주변 지역에는 대피 계획이 마련되어 있어요.
+[ 66.35s][user ] 대피 계획이 있다니 다행이네요. 혹시 그 화산이 역사적으로 얼마나 많은 폭발을 했는지 알 수 있을까요?
+[ 72.89s][moshi] 베수비오 화산은 역사적으로 여러 차례 폭발을 일으켰어요. 특히 폼페이와 헤르쿨라네움을 파괴한 79년의 폭발이 유명하죠.
+[ 79.36s][user ] «backchannel» Nice.
+[ 82.53s][user ] 아, 폼페이를 파괴한 화산이군요. 정말 엄청난 재앙이었겠어요.
+[ 87.15s][moshi] 과거의 비극을 기억하는 것은 현재를 살아가는 우리에게 중요한 교훈을 줄 수 있을 거예요.
+[ 93.35s][user ] 맞아요. 역사에서 배우는 것이 중요하죠. 그런데… 그 화산 주변에는 지금도 사람들이 살고 있나요?
+[100.20s][moshi] 네, 베수비오 화산 주변에는 여전히 많은 사람들이 거주하고 있어요. 그 지역은 비옥한 토양과 아름다운 경관을 가지고 있거든요.
+[106.14s][user ] «backchannel» Right.
+[111.93s][user ] 그렇군요. 그럼, 그 사람들은 화산 폭발에 대한 대비를 꾸준히 하고 있을 것 같아요.
+[117.61s][moshi] 꾸준한 대비는 안전을 지키는 가장 중요한 방법 중 하나일 거예요. 마음의 평화를 유지하는 데도 도움이 되고요.
+[119.98s][user ] «backchannel» Uh-huh.
+[124.56s][user ] 네, 정말 그런 것 같아요. 이야기 들어주셔서 감사합니다.
+[127.81s][moshi] 언제든지 편하게 이야기 나눠 주세요. 제가 곁에 있다는 것을 기억해 주세요.

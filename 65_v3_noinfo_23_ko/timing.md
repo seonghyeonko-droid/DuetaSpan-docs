@@ -1,108 +1,74 @@
 # v3_noinfo_23_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-#   A. 프로필: Name: Noah · Location: San Francisco, United States · Nationality: American · Gender: male · Age: 40s · TZ: America/Los_Angeles (PST, UTC-8) · Currency: USD ($)
-#   B. 저장 메모리:
-#      [2026-07-23] User is into marathon training.
-#      [2026-02-21] User is allergic to cat dander.
-#      [2026-02-01] User prefers an aisle seat when traveling.
-#      [2026-01-07] User is vegetarian.
-#      [2026-01-04] User's home address is 521 Oak Avenue.
-#   B. 과거 대화 요약:
-#      [2026-03-15] Planning a birthday dinner — party of six; looking for outdoor seating
-#      [2026-01-25] Comparing gym memberships — wants a pool; close to the office
+# EXAMINER(FDB-v2) 단계: S1 혹시 도쿄 작년 크리스마스 이브 날씨가 어땠는지 알려줄 수 있 | S2 그럼 혹시… 부산 해운대 근처 괜찮은 호텔 좀 찾아줄 수 있어 | S3 그럼 바로 예약해 줘. 스탠다드 룸 하나로 할게. | S4 음… 직장 스트레스 때문에 좀 힘들어서, 그런 거에 특화된 곳
 
-# EXAMINER(FDB-v2) 단계: S1 안녕, 도쿄 작년 12월 24일 날씨가 어땠어? | S2 환승 한 번이면 괜찮네. [laugh] 오하라에 있는 호텔은  | S3 훨씬 좋네! 예약해 줄 수 있어? | S4 완벽해! 모든 게 잘 풀리고 있어!
-
-     0.00s  user  발화 시작: 안녕, 도쿄 작년 12월 24일 날씨가 어땠어?
-     2.88s  <ret> 발화 (turn1 첫 프레임)
-     3.27s  agent 발화 시작: <ret> 음, 알아봤는데… 이천이십삼 년 12월 24일 도쿄는 대체로 흐린 날씨였고, 기온은 5도에서 12
-     3.37s  user  발화 끝
-     4.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) The weather in Tokyo on December twenty-fourth, 2023, wa
-    12.13s  user  발화 시작: 그래, 알겠어. 뭐, 봄에 교토 여행을 생각하고 있어…
-    12.36s  agent 발화 끝
-    16.62s  user  발화 끝
-    16.66s  agent 발화 시작: 정말 멋진 생각이네요! 봄의 교토는 정말 아름답고, 사색과 새로운 시작에 좋은 시간이에요.
-    19.60s  user  발화 시작: 응.
-    19.91s  user  발화 끝
-    22.91s  user  발화 시작: 응, 근데 벚꽃 구경 사람 너무 많을까 봐 걱정돼. 주변에 덜 붐비는 곳 있을까?
-    22.96s  agent 발화 끝
-    28.37s  <ret> 발화 (turn6 첫 프레임)
-    28.59s  agent 발화 시작: <ret> 조용하게 벚꽃을 즐기려면 좋은 생각이에요… 교토 북쪽으로 25킬로미터 떨어진 오하라에는 산젠인 절
-    28.75s  user  발화 끝
-    30.29s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.36s]: (tool result) Ohara, a small village 25 kilometers north of Kyoto, is 
-    36.13s  user  발화 시작: 음.
-    36.63s  user  발화 끝
-    39.48s  user  발화 시작: 오하라… 완벽하겠다! 거기로 가는 기차가 바로 연결돼 있어?
-    39.49s  agent 발화 끝
-    43.69s  <ret> 발화 (turn9 첫 프레임)
-    43.92s  agent 발화 시작: <ret> 기차 노선을 알아볼게요… 교토역에서 오하라까지 기차를 타면 데마치야나기역에서 한 번 환승해야 하는
-    44.02s  user  발화 끝
-    45.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.09s]: (tool result) A train from Kyoto Station to Ohara requires one transfe
-    53.13s  user  발화 시작: 환승 한 번이면 괜찮네. [laugh] 오하라에 있는 호텔은 어때? 좋은 데 있어?
-    53.19s  agent 발화 끝
-    58.78s  <ret> 발화 (turn11 첫 프레임)
-    59.02s  agent 발화 시작: <ret> 호텔 정보를 찾아볼게요… 4월 10일부터 13일까지 료칸 산쇼에 객실이 있고, 1박에 2만 5천 
-    59.15s  user  발화 끝
-    60.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.91s]: (tool result) The Ryokan Sansho is available in Ohara from April tenth
-    67.41s  agent 발화 끝
-    67.47s  user  발화 시작: 2만 5천 엔… 좀 비싸네. 더 저렴한 곳 있어?
-    71.20s  <ret> 발화 (turn13 첫 프레임)
-    71.34s  agent 발화 시작: <ret> 조금 더 넓게 찾아볼게요… 아쉽게도 오하라에는 해당 날짜에 1만 5천 엔 이하의 호텔이 없어요.
-    71.54s  user  발화 끝
-    72.40s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.62s]: (tool result) No hotels are available in Ohara under 15,000 yen from A
-    77.45s  agent 발화 끝
-    77.86s  user  발화 시작: 오. 알았어… 그럼 여관을 찾아봐야겠다.
-    81.33s  user  발화 끝
-    81.40s  agent 발화 시작: 정말 좋은 생각이에요! 전통 여관은 더 저렴하고 정통적인 경험을 제공하는 경우가 많아요.
-    86.95s  agent 발화 끝
-    87.05s  user  발화 시작: 그럼 오하라의 전통 여관을 같은 날짜로 찾아줄 수 있어?
-    89.83s  <ret> 발화 (turn17 첫 프레임)
-    90.22s  agent 발화 시작: <ret> 물론이죠, 전통 여관 옵션을 알아볼게요… 쇼라이안 료칸은 4월 10일부터 13일까지 이용 가능하고
-    90.42s  user  발화 끝
-    91.03s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.95s]: (tool result) Shoraian Ryokan is available from April tenth to April t
-   100.38s  agent 발화 끝
-   100.40s  user  발화 시작: 훨씬 좋네! 예약해 줄 수 있어?
-   102.70s  user  발화 끝
-   102.71s  <ret> 발화 (turn19 첫 프레임)
-   102.94s  agent 발화 시작: <ret> 네, 예약해 드릴게요… 쇼라이안 료칸 예약이 확정됐습니다—XR729LP—1인, 4월 10일부터 1
-   104.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.67s]: (tool result) Your reservation at Shoraian Ryokan is confirmed for one
-   108.20s  user  발화 시작: 응.
-   108.75s  user  발화 끝
-   111.31s  user  발화 시작: 정말 고마워, 브레.
-   111.47s  agent 발화 끝
-   112.80s  agent 발화 시작: 천만에요! 편안한 여행을 계획하는 데 도움을 드릴 수 있어서 기뻐요.
-   112.87s  user  발화 끝
-   114.33s  user  발화 시작: 어어.
-   115.05s  user  발화 끝
-   117.77s  user  발화 시작: 거기서 도자기 수업도 들어볼까 생각 중이야. 추천해 줄 만한 곳 있어?
-   117.85s  agent 발화 끝
-   122.72s  <ret> 발화 (turn25 첫 프레임)
-   122.77s  user  발화 끝
-   122.79s  agent 발화 시작: <ret> 현지 문화를 접할 수 있는 좋은 방법이 될 것 같아요… 오하라 도자기 스튜디오에서는 화요일과 금요
-   124.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.06s]: (tool result) The Ohara Pottery Studio offers beginner pottery classes
-   126.91s  user  발화 시작: 응.
-   127.35s  user  발화 끝
-   131.65s  agent 발화 끝
-   131.86s  user  발화 시작: 화요일과 금요일… 일정 확인해 봐야겠다. 수업은 몇 시에 시작해?
-   135.94s  <ret> 발화 (turn28 첫 프레임)
-   136.17s  agent 발화 시작: <ret> 수업 시간을 알아볼게요… 오하라 도자기 스튜디오 수업은 화요일과 금요일 오전 10시부터 정오, 오
-   136.40s  user  발화 끝
-   137.06s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.31s]: (tool result) Ohara Pottery Studio classes are held from 10 AM to 12 P
-   141.76s  user  발화 시작: 어.
-   142.39s  user  발화 끝
-   144.62s  user  발화 시작: 완벽해! 모든 게 잘 풀리고 있어!
-   144.79s  agent 발화 끝
-   147.45s  agent 발화 시작: 정말 기쁘네요! 계획하는 과정이 즐거움의 절반이라고 생각하지 않으세요?
-   147.48s  user  발화 끝
-   152.34s  user  발화 시작: 맞아. 마지막으로 하나만 물어볼게—교토역에서 쇼라이안 료칸까지 가는 가장 좋은 방법은 뭐야?
-   152.54s  agent 발화 끝
-   157.82s  <ret> 발화 (turn33 첫 프레임)
-   158.22s  agent 발화 시작: <ret> 최적의 경로를 찾아드릴게요… 교토시 버스 17번을 타고 오하라 마을로 가서 10분 정도 걸으면 료
-   158.36s  user  발화 끝
-   159.10s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.68s]: (tool result) Take the Kyoto City Bus number 17 from Kyoto Station to 
-   162.84s  user  발화 시작: 진짜?
-   163.47s  user  발화 끝
-   168.74s  agent 발화 끝
-   169.41s  user  발화 시작: 알았어, 17번 버스…
-   171.49s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 도쿄 작년 크리스마스 이브 날씨가 어땠는지 알려줄 수 있어?
+     3.69s  <ret> 발화 (turn1 첫 프레임)
+     4.08s  agent 발화 시작: <ret> 네, 확인해 볼게요. 작년 크리스마스 이브 도쿄는 맑았고, 최고 12도, 최저 3도였어요.
+     4.26s  user  발화 끝
+     4.88s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.40s]: (tool result) 도쿄 2023년 12월 24일의 날씨는 맑았고, 최고 기온은 12도, 최저 기온은 3도였습니다.
+     9.68s  agent 발화 끝
+    10.14s  user  발화 시작: 음, 그럼 이번 주말 서울 날씨는 어때?
+    12.65s  <ret> 발화 (turn3 첫 프레임)
+    12.89s  agent 발화 시작: <ret> 이번 주말 서울 날씨를 알아볼게요. 이번 주말 서울은 토요일에 비가 오고 최고 8도, 일요일은 맑
+    13.09s  user  발화 끝
+    13.69s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.36s]: (tool result) 이번 주말 서울의 토요일은 흐리고 비가 올 예정이며, 최고 기온은 8도, 일요일은 맑고 최고 기온은 
+    15.48s  user  발화 시작: Wow.
+    16.12s  user  발화 끝
+    20.89s  user  발화 시작: 토요일에 비가 온다고? 아, 그럼 주말에 등산은 어려울 것 같네.
+    20.91s  agent 발화 끝
+    24.74s  user  발화 끝
+    24.92s  agent 발화 시작: 그렇죠, 비가 오면 등산은 위험할 수 있어요. 다른 계획을 세우시는 게 좋겠네요.
+    29.23s  agent 발화 끝
+    30.77s  user  발화 시작: 그럼 혹시… 부산 해운대 근처 괜찮은 호텔 좀 찾아줄 수 있어?
+    34.53s  <ret> 발화 (turn8 첫 프레임)
+    34.85s  agent 발화 시작: <ret> 해운대 근처 호텔을 찾아볼까요? 부산 해운대 파크 하얏트 35만원, 웨스틴 조선 28만원이에요.
+    35.02s  user  발화 끝
+    35.33s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.99s]: (tool result) 부산 해운대 근처 호텔 중 파크 하얏트 부산은 1박에 35만원이고, 웨스틴 조선 부산은 1박에 28만
+    40.83s  agent 발화 끝
+    40.98s  user  발화 시작: 파크 하얏트가 좀 더 좋아 보이는데… 혹시 예약 가능해?
+    44.75s  <ret> 발화 (turn10 첫 프레임)
+    44.99s  agent 발화 시작: <ret> 파크 하얏트 예약 가능 여부를 확인해 볼게요. 죄송해요, 파크 하얏트는 이번 주말 예약이 다 찼어
+    45.12s  user  발화 끝
+    46.51s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.92s]: (tool result) 파크 하얏트 부산은 이번 주말 객실이 모두 예약되었습니다.
+    51.20s  user  발화 시작: 아… 그럼 웨스틴 조선은 어때?
+    51.24s  agent 발화 끝
+    52.86s  <ret> 발화 (turn12 첫 프레임)
+    53.10s  agent 발화 시작: <ret> 웨스틴 조선의 예약 가능 여부를 알아볼게요. 다행히 웨스틴 조선은 스탠다드 룸이 두 개 남아 있어
+    53.28s  user  발화 끝
+    53.90s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.30s]: (tool result) 웨스틴 조선 부산은 이번 주말 스탠다드 룸이 2개 남아 있습니다.
+    58.84s  agent 발화 끝
+    59.45s  user  발화 시작: 그럼 바로 예약해 줘. 스탠다드 룸 하나로 할게.
+    62.12s  <ret> 발화 (turn14 첫 프레임)
+    62.37s  agent 발화 시작: <ret> 웨스틴 조선 스탠다드 룸을 예약할게요. 웨스틴 조선 스탠다드 룸 예약이 완료되었고, 예약 번호는 
+    62.50s  user  발화 끝
+    63.88s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.34s]: (tool result) 웨스틴 조선 부산 스탠다드 룸 예약이 완료되었습니다. 예약 번호는 WB78945입니다.
+    71.73s  agent 발화 끝
+    72.18s  user  발화 시작: 와, 고마워! 예약까지 다 해주고.
+    74.72s  user  발화 끝
+    75.13s  agent 발화 시작: 천만에요. 여행 준비에 도움이 되었다니 기쁘네요.
+    78.09s  agent 발화 끝
+    78.18s  user  발화 시작: 그런데… 이번 주말에 서울에서 심리 상담 잘하는 곳 좀 추천해 줄 수 있을까?
+    83.00s  agent 발화 시작: 심리 상담은 중요한 문제잖아요. 어떤 종류의 상담을 원하시나요?
+    83.14s  user  발화 끝
+    87.26s  agent 발화 끝
+    88.11s  user  발화 시작: 음… 직장 스트레스 때문에 좀 힘들어서, 그런 거에 특화된 곳이 있으면 좋겠어.
+    93.04s  <ret> 발화 (turn20 첫 프레임)
+    93.20s  agent 발화 시작: <ret> 직장 스트레스 전문 상담소를 찾아볼게요. 서울 직장 스트레스 상담소 ‘마음챙김’은 15만원, ‘힐
+    93.44s  user  발화 끝
+    94.88s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.05s]: (tool result) 서울에서 직장 스트레스 전문 상담소 ‘마음챙김’은 시간당 15만원이고, ‘힐링 공간’은 시간당 12만
+    98.57s  user  발화 시작: Okay.
+    99.06s  user  발화 끝
+   101.61s  user  발화 시작: ‘마음챙김’이 좀 더 전문적인 것 같네. 예약은 어떻게 해야 해?
+   101.73s  agent 발화 끝
+   105.21s  <ret> 발화 (turn23 첫 프레임)
+   105.44s  agent 발화 시작: <ret> ‘마음챙김’ 상담소 예약 방법을 알아볼게요. ‘마음챙김’ 상담소 토요일 오후 2시에 예약이 완료되
+   105.63s  user  발화 끝
+   105.71s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.90s]: (tool result) ‘마음챙김’ 상담소 토요일 오후 2시에 예약이 완료되었습니다.
+   107.69s  user  발화 시작: Yeah.
+   108.14s  user  발화 끝
+   112.39s  agent 발화 끝
+   113.50s  user  발화 시작: 정말 최고다! 덕분에 주말 계획이 다 잡혔어.
+   116.88s  agent 발화 시작: [happy] 잘 됐네요! 휴식이 필요한 시간을 가지시는 건 정말 좋은 생각이에요.
+   117.05s  user  발화 끝
+   121.28s  agent 발화 끝

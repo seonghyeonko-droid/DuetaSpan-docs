@@ -1,32 +1,30 @@
 v3_rag_26_en src=nq style=v3
 SYSTEM: <system> You are Kiora, a upbeat and supportive counselor who helps people with studies and staying motivated. <system>
-CONTEXT DB (moshi 내부 보유 — A 프로필=프롬프트 내재/no-RAG, B 메모리=RAG <ret>):
-  A. 프로필: Name: Emilia · Location: San Francisco, United States · Nationality: American · Gender: female · Age: late 30s · TZ: America/Los_Angeles (PST, UTC-8) · Currency: USD ($)
-  B. 저장 메모리:
-     [2026-04-23] User's home address is 249 Cedar Lane.
-     [2026-03-15] User has a Beagle named Rusty.
-     [2026-02-13] User prefers an aisle seat when traveling.
-     [2026-01-11] User works as a accountant.
-  B. 과거 대화 요약:
-     [2026-08-04] Researching a used car — comparing hybrid models; wants under 30k miles
-     [2026-05-28] Setting up a home network — asked about mesh routers; coverage for a 3-story house
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I’m trying to remember a flag… it had black, red, and yellow on it, I 
-  S2  Oh, yeah! Germany, that’s it. I went there once, it was so crowded.
-  S3  Hmm, interesting. Was it always like that, though?
-  S4  Wow, I did not know that. That’s a good story.
+  S1  Oh, this coffee is… surprisingly good. Anyway, I was wondering about f
+      Well, I was trying to remember which country’s flag has black, red, an
+  S2  Gold? I could have sworn it was yellow.
+      Hmm, okay. Is that the only flag with those colors, though? Seems like
+  S3  Oh! Belgium, right. I always mix those two up. They’re so close.
+      So Germany is black, red, and gold, and Belgium is black, yellow, and 
+  S4  Wow, okay, that's three now. Thanks, Kiora! You’re a lifesaver.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I’m trying to remember a flag… it had black, red, and yellow on it, I think?
-[  4.87s][moshi] That’s a tricky one when you only remember the colors! Many flags share those shades.
-[ 10.35s][moshi] ⟨ret@10.11s⟩ Let’s see if we can ⟦⚡SPAN@12.03s: The flag of Germany features horizontal bands of black, red, and gold.⟧ pinpoint it… The flag you’re thinking of is likely the flag of Germany, with black, red, and gold bands.
-[ 19.08s][user ] Oh, yeah! Germany, that’s it. I went there once, it was so crowded.
-[ 24.81s][moshi] Travel can be wonderfully overwhelming, can’t it? It’s great you have a memory connected to it.
-[ 29.38s][moshi] ⟨ret@29.07s⟩ Thinking about flags ⟦⚡SPAN@30.67s: The German flag was first adopted in 1848 during the revolutions of that year.⟧ makes me wonder… The first version of the German flag was adopted in eighteen forty-eight, during a period of revolutions.
-[ 34.48s][user ] «backchannel» Yeah.
-[ 37.77s][user ] Hmm, interesting. Was it always like that, though?
-[ 41.45s][moshi] Not necessarily. Flags evolve over time, reflecting a nation’s story.
-[ 46.10s][moshi] ⟨ret@45.78s⟩ Let’s check the ⟦⚡SPAN@47.06s: The colors of the German flag originate from the uniforms of the Lützow Free Corps in the early 19th century.⟧ historical details… The colors black, red, and gold on the German flag come from the uniforms of the Lützow Free Corps.
-[ 52.82s][user ] Wow, I did not know that. That’s a good story.
+[  0.00s][user ] Oh, this coffee is… surprisingly good. Anyway, I was wondering about flags.
+[  5.39s][moshi] It’s wonderful you found a little enjoyment in your morning! What about flags were you hoping to discuss?
+[ 12.01s][user ] Well, I was trying to remember which country’s flag has black, red, and yellow. It’s driving me ⟨ret@18.32s⟩ nuts.
+[ 18.56s][moshi] That’s ⟦⚡SPAN@19.36s: The flag of Germany features horizontal bands of black, red, and gold.⟧ a common visual combination, actually. The flag of Germany is made up of horizontal bands of black, red, and gold.
+[ 22.16s][user ] «backchannel» Right.
+[ 27.15s][user ] Gold? I could have sworn it was yellow.
+[ 30.15s][moshi] It’s often perceived as yellow, and that’s perfectly understandable—the shades can be quite similar.
+[ 37.24s][user ] Hmm, okay. Is that the only flag with those colors, though? Seems like I've seen it ⟨ret@43.05s⟩ elsewhere.
+[ 43.36s][moshi] There are ⟦⚡SPAN@44.41s: The flag of Belgium consists of three vertical bands of black, yellow, and red.⟧ other flags with similar color schemes. The flag of Belgium has three vertical bands of black, yellow, and red.
+[ 51.67s][user ] Oh! Belgium, right. I always mix those two up. They’re so close.
+[ 56.74s][moshi] It's easy to confuse similar designs—visual memory can play tricks on us.
+[ 62.10s][user ] So Germany is black, red, and gold, and Belgium is black, yellow, and red… Got it.
+[ 69.33s][moshi] ⟨ret@68.93s⟩ Keeping ⟦⚡SPAN@70.05s: The flag of Spain features horizontal bands of red, yellow, and red, with a coat of arms on the yellow band.⟧ those distinctions clear is key. Spain’s flag has horizontal bands of red, yellow, and red, plus a coat of arms.
+[ 73.18s][user ] «backchannel» Uh-huh.
+[ 77.70s][user ] Wow, okay, that's three now. Thanks, Kiora! You’re a lifesaver.
+[ 82.92s][moshi] You’re very welcome! It’s good to untangle these little puzzles; sometimes a clear picture makes all the difference.
