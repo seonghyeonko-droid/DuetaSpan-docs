@@ -3,40 +3,39 @@ SYSTEM: <system> You are Braera, a kind and steady personal guide who helps peop
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  So, I was reading this dystopian novel, and it got me thinking… where 
-      It really has… but I’m not sure I ever actually knew the origin. It fe
-      Nineteen Eighty-Four… right. I’ve heard of it, of course, but I’ve nev
-  S2  Hmm. I wonder if it was a common phrase even *before* the book… or…
-      …if the book made it popular? … I mean, did it exist in any other cont
-  S3  So, it wasn’t completely invented out of thin air. That makes sense. I
-      Oh, like a symbol of the state, then?
-      Right. So, it's not about family dynamics, even though the name sugges
-  S4  That’s… actually really clever. I always thought it was just a scary n
-      It really does. It makes me want to actually pick up that book now, to
+  S1  So, I was reading this dystopian novel, and it got me thinking…
+      …where did the term “Big Brother” actually come from? It feels so… per
+      Nineteen Eighty-Four, right. I’ve heard that before, but I always wond
+  S2  So it wasn’t, like, a common saying…
+      …or something people already understood?
+  S3  [laugh] That's kind of amazing, actually. One book, and now it's every
+      It makes you think, doesn’t it? About how easily things can… slide.
+      I’m trying to be more mindful of my digital footprint, you know? All t
+  S4  I was wondering if there’s a tool to help with that? To see what data 
+      Okay, that’s good to know. I’ll check those out. Thanks, Braera.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking… where did the phrase “big brother” actually come from?
-[  7.49s][moshi] That’s a fascinating question. It’s become so ingrained in our culture, doesn't it?
-[ 11.60s][user ] It really has… but I’m not sure I ever actually knew the origin. It feels… older than I am, somehow.
-[ 19.21s][moshi] ⟨ret@19.05s⟩ The ⟦⚡SPAN@20.01s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ term originates from… “Big Brother” comes from George Orwell’s nineteen forty-nine dystopian novel, *Nineteen Eighty-Four*.
-[ 25.33s][user ] «backchannel» Yeah, yeah.
-[ 28.45s][user ] Nineteen Eighty-Four… right. I’ve heard of it, of course, but I’ve never actually read it.
-[ 33.23s][moshi] It’s a powerful, if unsettling, read. It explores themes of surveillance and totalitarianism quite vividly.
-[ 35.72s][user ] «backchannel» Mm-hmm.
-[ 39.52s][user ] Hmm. I wonder if it was a common phrase even *before* the book… or…
-[ 45.48s][user ] …if the book made it popular? … I mean, did it exist in any other context?
-[ 50.20s][moshi] ⟨ret@50.12s⟩ Before the novel, the ⟦⚡SPAN@51.96s: <The concept of a protective older brother watching over younger siblings existed before 1949.>⟧ phrase… The idea of an older brother offering protection existed before nineteen forty-nine. It wasn’t unique to Orwell's vision.
-[ 54.28s][user ] «backchannel» Yeah.
-[ 59.35s][user ] So, it wasn’t completely invented out of thin air. That makes sense. Is it about actual brothers in the book?
-[ 66.64s][moshi] Not precisely. “Big Brother” is a symbolic figurehead, representing the all-seeing Party and its leader.
-[ 69.34s][user ] «backchannel» Mm-hmm.
-[ 73.49s][user ] Oh, like a symbol of the state, then?
-[ 75.69s][moshi] Exactly. It's a figure designed to inspire both fear and loyalty among the citizens.
-[ 80.75s][user ] Right. So, it's not about family dynamics, even though the name suggests that. It’s more about control.
-[ 87.57s][moshi] Precisely. Orwell used the imagery of familial protection to underscore the insidious nature of constant surveillance.
-[ 93.03s][user ] «backchannel» Mm-hmm.
-[ 95.46s][user ] That’s… actually really clever. I always thought it was just a scary name.
-[100.17s][moshi] It's a very effective piece of symbolism, isn’t it? It resonates even today, given our current discussions around privacy.
-[102.31s][user ] «backchannel» Yeah.
-[105.87s][user ] It really does. It makes me want to actually pick up that book now, to see how it all plays out.
-[111.62s][moshi] I think you’d find it quite thought-provoking. It's a book that stays with you long after you finish it.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking…
+[  4.77s][moshi] It’s wonderful you’re exploring thought-provoking literature. What’s on your mind?
+[  8.84s][user ] …where did the term “Big Brother” actually come from? It feels so… pervasive now.
+[ 14.43s][moshi] ⟨ret@14.27s⟩ That’s ⟦⚡SPAN@15.23s: The term "Big Brother" originates from George Orwell’s novel Nineteen Eighty-Four.⟧ a very interesting question. The phrase “Big Brother” comes from George Orwell’s Nineteen Eighty-Four.
+[ 18.90s][user ] «backchannel» Yeah, yeah.
+[ 21.53s][user ] Nineteen Eighty-Four, right. I’ve heard that before, but I always wondered if there was something *before* the book.
+[ 28.24s][moshi] Before the novel, the concept wasn't widely used in that specific sense. Orwell truly coined it for the book's themes.
+[ 30.74s][user ] «backchannel» Mm-hmm.
+[ 34.57s][user ] So it wasn’t, like, a common saying…
+[ 37.52s][user ] …or something people already understood?
+[ 40.21s][moshi] No, it wasn’t. The novel popularized the phrase to represent oppressive surveillance.
+[ 42.45s][user ] «backchannel» Yeah.
+[ 45.28s][user ] [laugh] That's kind of amazing, actually. One book, and now it's everywhere.
+[ 51.36s][moshi] It’s a testament to the power of storytelling and the impact of Orwell’s vision.
+[ 52.91s][user ] «backchannel» Mm-hmm.
+[ 55.44s][user ] It makes you think, doesn’t it? About how easily things can… slide.
+[ 59.36s][moshi] It certainly does. Reflecting on these themes is a valuable practice.
+[ 63.14s][user ] I’m trying to be more mindful of my digital footprint, you know? All the data tracking.
+[ 68.18s][moshi] That’s a very sensible approach. Protecting your privacy is increasingly important.
+[ 71.36s][user ] «backchannel» Mm-hmm.
+[ 72.89s][user ] I was wondering if there’s a tool to help with that? To see what data ⟨ret@77.31s⟩ is collected?
+[ 77.63s][moshi] DuckDuckGo, Disconnect, ⟦⚡SPAN@78.83s: (tool result) DuckDuckGo Privacy Essentials blocks trackers; Disconnect enhances browsing security; Privacy Ba⟧ and Privacy Badger can help protect your browsing data.
+[ 79.27s][user ] «backchannel» Yeah.
+[ 82.04s][user ] Okay, that’s good to know. I’ll check those out. Thanks, Braera.

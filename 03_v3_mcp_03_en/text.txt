@@ -4,39 +4,36 @@ SYSTEM: <system> You are Thunaen, a curious and validating wellness coach who he
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Start the checkout process in the shopping cart iframe.
-      What’s the total amount due?
-      Right.
-  S2  Yes, please do.
-      Great! Can I get a confirmation number?
-  S3  Oh, so it's 9876543210?
-      Perfect, thanks so much.
-  S4  Do you think I made a good choice with this purchase?
-      I— I mean, it was on sale…
+      What’s in my cart currently?
+  S2  Hmm.
+      Can you add a pair of black boots to my cart?
+  S3  Okay, good. What shipping options are available?
+      Choose the express shipping, please.
+  S4  And finally, can you place the order?
+      Wonderful, thank you!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.89s⟩ iframe.
-[  3.28s][moshi] ⟦⚡SPAN@3.85s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ Certainly, let’s move forward with completing your purchase.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
-[  6.79s][moshi] Excellent! I’ve initiated the checkout process for you within the shopping cart.
-[ 10.45s][user ] «backchannel» Mhm.
-[ 13.72s][user ] What’s the total amount ⟨ret@15.09s⟩ due?
-[ 15.49s][moshi] Let ⟦⚡SPAN@16.29s: (tool result) The total amount due is $78.50, including shipping and taxes.⟧ me quickly retrieve that information for you.
-      CALL: {"function": "get_checkout_total", "arguments": {}}
-[ 18.42s][moshi] The total amount due is seventy-eight dollars and fifty cents, including all charges.
-[ 24.44s][user ] Right.
-[ 24.86s][moshi] And would you like me to proceed with using your saved payment method? It’s the Visa ending in four-two-four-two.
-[ 32.08s][user ] Yes, please ⟨ret@33.21s⟩ do.
-[ 33.61s][moshi] Wonderful, confirming ⟦⚡SPAN@34.89s: (tool result) Payment confirmed. Transaction ID is 9876543210. Order placed successfully.⟧ your payment details now.
-      CALL: {"function": "confirm_payment", "arguments": {"payment_method": "visa-4242"}}
-[ 36.86s][moshi] Your payment has been confirmed, and your order is now placed—transaction ID nine-eight-seven-six-five-four-three-two-one-zero.
-[ 45.47s][user ] Great! Can I get a confirmation number?
-[ 47.77s][moshi] «interrupted» Of course! That confirmation number is included in the transaction ID—
-[ 52.10s][user ] «interrupts_prev» Oh, so it's 9876543210?
-[ 56.87s][moshi] Precisely. That’s the number you’ll need for any inquiries.
-[ 59.96s][user ] Perfect, thanks so much.
-[ 61.21s][moshi] You are very welcome! It’s always a pleasure helping you finalize things.
-[ 66.47s][user ] Do you think I made a good choice with this purchase?
-[ 69.42s][moshi] I believe trusting your instincts is always a good path, and it sounds like you felt good about it.
-[ 71.87s][user ] «backchannel» Yeah.
-[ 75.14s][user ] I— I mean, it was on sale…
-[ 77.20s][moshi] A good deal certainly adds to the satisfaction of a purchase, doesn't it? It's nice to feel savvy.
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.98s⟩ iframe.
+[  3.38s][moshi] Absolutely, let’s get ⟦⚡SPAN@4.90s: (tool result) The shopping cart iframe’s checkout button was clicked successfully.⟧ that started for you. Wonderful, the checkout process has begun within the shopping cart.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_name": "shopping_cart", "button_text": "Checkout"}}
+[  8.43s][user ] «backchannel» Mhm.
+[ 11.97s][user ] What’s in my cart currently?
+[ 13.56s][moshi] ⟨ret@13.48s⟩ Let me ⟦⚡SPAN@14.84s: (tool result) Your shopping cart contains one blue sweater for twenty-nine dollars and ninety-nine cents.⟧ quickly check the contents of your cart. You currently have one blue sweater in your cart, priced at twenty-nine ninety-nine.
+      CALL: {"function": "get_shopping_cart", "arguments": {}}
+[ 22.59s][user ] Hmm.
+[ 23.03s][moshi] It’s a lovely shade of blue, isn't it? A classic choice, and very versatile.
+[ 28.41s][user ] Can you add a pair of black boots to my cart?
+[ 32.09s][moshi] ⟨ret@31.94s⟩ Certainly, adding ⟦⚡SPAN@33.22s: (tool result) Black boots were added to your cart; the total is now sixty-four dollars and ninety-eight cents.⟧ those boots right away. The black boots have been added, bringing your cart total to sixty-four ninety-eight.
+      CALL: {"function": "add_to_cart", "arguments": {"item_name": "black boots"}}
+[ 40.15s][user ] Okay, good. What shipping options are ⟨ret@42.55s⟩ available?
+[ 42.95s][moshi] Let’s see ⟦⚡SPAN@43.98s: (tool result) Shipping options are standard three-to-five business days for seven dollars, and express one-to-⟧ what shipping options we have for you. We offer standard shipping for seven dollars, or express for fifteen dollars.
+      CALL: {"function": "get_shipping_options", "arguments": {}}
+[ 50.34s][user ] Choose the express shipping, ⟨ret@51.99s⟩ please.
+[ 52.39s][moshi] Excellent ⟦⚡SPAN@53.19s: (tool result) Express shipping was selected; your new total is eighty dollars and ninety-eight cents.⟧ choice, express shipping it is. Your shipping is now express, and the total is eighty dollars and ninety-eight cents.
+      CALL: {"function": "set_shipping_option", "arguments": {"option": "express"}}
+[ 60.59s][user ] And finally, can you place the ⟨ret@62.33s⟩ order?
+[ 62.68s][moshi] Absolutely, let’s ⟦⚡SPAN@64.25s: (tool result) Order placed successfully; your order number is 9287451.⟧ finalize this order for you. Your order has been placed; the order number is nine-two-eight-seven-four-five-one.
+      CALL: {"function": "place_order", "arguments": {}}
+[ 66.38s][user ] «backchannel» Yeah.
+[ 71.12s][user ] Wonderful, thank you!
+[ 72.51s][moshi] You’re very welcome! It’s a pleasure assisting you with your shopping, and I hope you enjoy your new items.

@@ -2,12 +2,21 @@ v3_mcp_04_ko src=mcp style=v2
 SYSTEM: <system> 당신은 인생의 중요한 변화를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사 Lio입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@3.59s⟩ one?
-[  3.99s][moshi] Of course. I can ⟦⚡SPAN@5.59s: (tool result) The user agent was successfully set to SuperCrawler version 10.1.⟧ certainly adjust the browser’s user agent for you.
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  혹시 브라우저 사용자 에이전트를 슈퍼크롤러 버전 10.1로 설정해 줄 수 있을까요?
+  S2  음… 그런데 혹시 지금 사용자 에이전트가 제대로 설정되었는지 확인해 볼 수 있을까요?
+  S3  아, 네, 잘 됐네요. 그럼 이제… 이 사용자 에이전트로 구글에 접속해서 검색을 한번 해 볼까요?
+  S4  잠깐만요, 구글 말고 네이버로 먼저 접속해 보고, 네이버 메인 페이지 제목을 알려줄 수 있을까요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 혹시 브라우저 사용자 에이전트를 슈퍼크롤러 버전 10.1로 설정해 줄 수 ⟨ret@4.96s⟩ 있을까요?
+[  5.35s][moshi] ⟦⚡SPAN@5.92s: (tool result) The user agent was successfully set to SuperCrawler version 10.1.⟧ 네, 그렇게 해 드릴게요. 사용자 에이전트를 슈퍼크롤러 버전 10.1로 설정했습니다. 이제 웹사이트가 그 정보로 접속을 인식할 거예요.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[  8.47s][moshi] The user agent is now SuperCrawler version ten point one, as requested. Is there anything else I can help with regarding your browser?
-[ 12.29s][user ] «backchannel» Mhm.
-[ 16.94s][user ] Hmm, that seems… aggressive. Could you change it back to ⟨ret@20.66s⟩ the default?
-[ 20.97s][moshi] [sigh] Sometimes a bolder ⟦⚡SPAN@22.66s: (tool result) The user agent was successfully reset to the default browser setting.⟧ approach isn't quite right, is it? I understand.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "default"}}
-[ 25.34s][moshi] The user agent has been restored to its default setting. Does that feel more comfortable for your browsing?
+[ 10.13s][user ] «backchannel» Yeah.
+[ 14.64s][user ] 음… 그런데 혹시 지금 사용자 에이전트가 제대로 설정되었는지 확인해 볼 수 ⟨ret@19.16s⟩ 있을까요?
+[ 19.39s][moshi] 물론이죠, ⟦⚡SPAN@20.52s: (tool result) The current user agent is SuperCrawler version 10.1.⟧ 지금 바로 확인해 볼게요. 현재 사용자 에이전트는 슈퍼크롤러 버전 10.1로 설정되어 있습니다. 확인해 주셔서 다행이네요.
+      CALL: {"function": "playwright_get_user_agent", "arguments": {}}
+[ 27.73s][user ] 아, 네, 잘 됐네요. 그럼 이제… 이 사용자 에이전트로 구글에 접속해서 검색을 한번 해 볼까요?
+[ 34.51s][moshi] 네, 좋습니다. 어떤 검색어를 입력해 드릴까요?
+[ 37.38s][user ] 잠깐만요, 구글 말고 네이버로 먼저 접속해 보고, 네이버 메인 페이지 제목을 알려줄 수 있을까요?
+[ 43.36s][moshi] 네, 알겠습니다. 네이버 메인 페이지 제목을 확인해 볼게요.

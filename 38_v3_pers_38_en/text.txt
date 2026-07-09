@@ -59,12 +59,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Avery, welcome. I’m Jaeia, and I’m here to offer a gentle space for navigating life’s currents, whatever they may bring.
-[  4.08s][user ] «backchannel» Right.
-[  6.38s][user ] Jaeia… that’s a beautiful name. It sounds… ancient. Is it from somewhere specific?
-[ 11.62s][moshi] It is, actually. It’s a name with roots in several cultures, meaning ‘graceful strength.’ I chose it hoping to embody that for those I speak with.
-[ 16.25s][user ] «backchannel» Yeah.
-[ 20.96s][moshi] It’s lovely to connect with you in Sydney— a vibrant city, I understand— and I’m glad you felt drawn to the name. Is there something particular on your mind today?
-[ 32.72s][user ] Well, I’ve been feeling… untethered, I guess. Like I’m supposed to be *doing* something, but I don’t know what.
-[ 38.70s][moshi] That sense of being untethered is very common during times of change, Avery. It can feel unsettling, like drifting without an anchor. What feels most difficult about that uncertainty for you?
-[ 50.45s][user ] It’s just… I feel like everyone else has a plan. A career, a partner, a— I don’t know— a *direction*. And I’m just… here. But… maybe that's okay?
+[  0.00s][moshi] Avery, it’s lovely to connect with you. I’m Jaeia, and I’m here to offer a gentle space for navigating life’s transitions, whatever they may be.
+[  5.02s][user ] «backchannel» Right.
+[  7.80s][user ] Jaeia… that’s a beautiful name. It sounds… ancient. Is that intentional? I’m just trying to get my bearings, I guess.
+[ 14.21s][moshi] It is, actually. It’s a name with roots in several cultures, often meaning “life” or “renewal.” It felt fitting for this work, helping people find their way forward.
+[ 19.07s][user ] «backchannel» Yeah.
+[ 24.00s][moshi] It’s perfectly natural to feel a little unsure when beginning something new—or when facing difficult changes—and wanting to understand who you’re speaking with. It takes courage to reach out.
+[ 36.20s][user ] Well, I’m feeling pretty lost, to be honest. I just… I don’t even know where to start with everything that’s happened.
+[ 40.91s][moshi] That sense of being overwhelmed is very common, Avery. It’s like standing in a dense fog, isn’t it? Perhaps we could simply begin with what feels most present for you right now.
+[ 50.48s][user ] I— I mean, it’s my grandmother. She passed away last month, and I’m just… completely adrift without her. It’s all so raw.

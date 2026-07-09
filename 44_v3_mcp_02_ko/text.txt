@@ -1,37 +1,43 @@
 v3_mcp_02_ko src=mcp style=v3
-SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 지원 조언가 Driaus입니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 지원 조언가인 Driaus입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Begin watching for a weather update from weather dot example dot com.
-      Oh, that’s good to hear. I was worried it might rain.
-  S2  Well, I was thinking of going to the park later, but I need to pick up
-      That’s perfect, thanks! Can you add “milk, bread, and eggs” to my shop
-  S3  Actually, yes. Could you remind me to leave for the grocery store in t
-      Great, you're a lifesaver! [interrupting] Oh, and what time is it now,
-  S4  Okay, perfect timing. I should probably get going soon.
+  S1  날씨 업데이트 좀 봐줄래? weather.example.com에서.
+      음, 좋아. 그럼 내일 오전 아홉 시에 알람 맞춰줄래?
+  S2  아니, 됐어. 아, 잠깐만. 이번 주 토요일에 서울에서 부산 가는 기차표 예매해 줄 수 있어?
+      음… 최대한 빨리 가는 걸로.
+  S3  오, 좋아. 그걸로 예매해 줘.
+      고마워. 근데, 혹시 이번 주말에 비 올 확률이 높을까?
+  S4  아, 그렇구나. 그럼 우산 챙겨야겠다.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.73s⟩ com.
-[  5.11s][moshi] Certainly. I’ll monitor weather ⟦⚡SPAN@6.73s: (tool result) The current weather in Seoul is 28 degrees Celsius and sunny.⟧ dot example dot com for any changes and let you know as soon as there’s an update.
+[  0.00s][user ] 날씨 업데이트 좀 봐줄래? ⟨ret@3.03s⟩ weather.example.com에서.
+[  3.41s][moshi] ⟦⚡SPAN@3.53s: (tool result) The weather at weather.example.com is currently 25 degrees Celsius and sunny.⟧ 알겠습니다. 지금 weather.example.com에서 날씨는 섭씨 25도에 맑다고 합니다.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 11.97s][moshi] The weather in Seoul is currently twenty-eight degrees Celsius and sunny.
-[ 16.06s][user ] Oh, that’s good to hear. I was worried it might rain.
-[ 19.51s][moshi] That’s a relief, isn’t it? Perhaps you’re planning an outing?
-[ 21.26s][user ] «backchannel» Uh-huh.
-[ 23.47s][user ] Well, I was thinking of going to the park later, but I need to pick up some groceries ⟨ret@28.45s⟩ first.
-[ 28.60s][moshi] A picnic in the ⟦⚡SPAN@30.21s: (tool result) The closest grocery store is Market Plus, located at 123 Main Street, Seoul, and is open until 1⟧ park sounds lovely. Would you like me to find the nearest grocery store?
-      CALL: {"function": "find_stores", "arguments": {"category": "grocery", "location": "Seoul"}}
-[ 33.81s][moshi] Market Plus at one twenty-three Main Street is the closest grocery store and closes at ten PM.
-[ 36.03s][user ] «backchannel» Mhm.
-[ 39.40s][user ] That’s perfect, thanks! Can you add “milk, bread, and eggs” to my shopping list?
-[ 44.73s][moshi] Absolutely. I’ve added milk, bread, and eggs to your shopping list. Is there anything else?
-[ 47.63s][user ] «backchannel» Yeah.
-[ 50.16s][user ] Actually, yes. Could you remind me to leave for the grocery store in thirty minutes?
-[ 55.63s][moshi] ⟨ret@55.55s⟩ Of course. I’ve set a reminder ⟦⚡SPAN@57.55s: (tool result) Reminder set for 30 minutes from now: Go to grocery store.⟧ to leave for the grocery store in thirty minutes.
-      CALL: {"function": "set_reminder", "arguments": {"time": "30 minutes", "task": "Go to grocery store"}}
-[ 59.93s][moshi] Your reminder to go to the grocery store is set for thirty minutes from now.
-[ 61.72s][user ] «backchannel» Yeah.
-[ 64.97s][user ] Great, you're a lifesaver! [interrupting] Oh, and what time is it now, actually?
-[ 70.44s][moshi] «interrupted» It is currently three twenty-five PM. —
-[ 72.17s][user ] «interrupts_prev» Okay, perfect timing. I should probably get going soon.
+[ 10.90s][user ] 음, 좋아. 그럼 내일 오전 아홉 시에 알람 ⟨ret@14.04s⟩ 맞춰줄래?
+[ 14.43s][moshi] 물론이죠. ⟦⚡SPAN@15.16s: (tool result) Alarm set for tomorrow at 09:00.⟧ 내일 아홉 시에 알람을 설정해 드릴게요.
+      CALL: {"function": "set_alarm", "arguments": {"time": "09:00"}}
+[ 17.84s][moshi] 내일 아홉 시에 알람이 설정되었습니다.
+[ 19.14s][user ] «backchannel» Mhm.
+[ 20.82s][moshi] 혹시 다른 알람도 필요하신가요?
+[ 23.34s][user ] 아니, 됐어. 아, 잠깐만. 이번 주 토요일에 서울에서 부산 가는 기차표 예매해 줄 수 있어?
+[ 30.32s][moshi] 네, 가능합니다. 몇 시쯤 출발하는 기차를 찾으시겠어요?
+[ 32.33s][user ] «backchannel» Uh-huh.
+[ 34.42s][user ] 음… 최대한 빨리 가는 걸로.
+[ 37.01s][moshi] ⟨ret@36.94s⟩ 알겠습니다. 가장 ⟦⚡SPAN@38.62s: (tool result) The fastest train from Seoul to Busan this Saturday departs at 07:30 and arrives at 11:00, costi⟧ 빠른 기차편을 찾아볼게요.
+      CALL: {"function": "search_train", "arguments": {"departure_city": "Seoul", "arrival_city": "Busan", "date": "this Saturday", "sort_by": "fastest"}}
+[ 40.48s][moshi] 이번 주 토요일 서울에서 부산으로 가는 가장 빠른 기차는 오전 7시 30분에 출발해서 11시에 도착하고, 요금은 6만 5천 원입니다.
+[ 44.51s][user ] «backchannel» Wow.
+[ 50.56s][user ] 오, 좋아. 그걸로 예매해 ⟨ret@52.34s⟩ 줘.
+[ 52.73s][moshi] ⟦⚡SPAN@52.90s: (tool result) Train booking confirmed: Seoul to Busan, 07:30 departure, ₩65,000. Booking reference is ABC123.⟧ 예매 진행하겠습니다.
+      CALL: {"function": "book_train", "arguments": {"train_id": "0730_Seoul_Busan"}}
+[ 54.27s][moshi] 기차 예매가 완료되었습니다. 서울에서 부산까지, 오전 7시 30분 출발이고, 요금은 6만 5천 원입니다. 예약 번호는 ABC123입니다.
+[ 60.96s][user ] «backchannel» Wow.
+[ 64.27s][user ] 고마워. 근데, 혹시 이번 주말에 비 올 확률이 높을까?
+[ 68.38s][moshi] ⟨ret@68.23s⟩ 잠깐만요. 다시 ⟦⚡SPAN@70.23s: (tool result) This weekend at weather.example.com: Saturday is sunny, Sunday has a 60% chance of rain.⟧ weather.example.com에서 주말 날씨를 확인해 보겠습니다.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com/weekend"}}
+[ 73.07s][moshi] 이번 주말 weather.example.com에 따르면 토요일은 맑고, 일요일은 비 올 확률이 60%입니다.
+[ 76.23s][user ] «backchannel» Right.
+[ 79.95s][user ] 아, 그렇구나. 그럼 우산 챙겨야겠다.
+[ 81.95s][moshi] 네, 일요일에 비가 올 가능성이 있으니 우산을 챙기시는 게 좋겠어요.

@@ -1,18 +1,11 @@
 v3_backg_17_ko src=nq style=v1
-SYSTEM: <system> 당신은 돈과 예산 관리에 도움을 주는 호기심 많고 공감적인 개인 가이드, Eus입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리에 대한 도움을 주는 호기심 많고 지지적인 개인 가이드인 Eus입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  심장이 건강할 때 평균 맥박수가 어떻게 돼?
-  S2  아, 그건 좀 높은 것 같고… 좀 더 낮은 범위는 없어?
-  S3  저녁 뭐 먹을까?
-  S4  오, 그럼 50에서 90 사이가 가장 이상적인 건가 보네.
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][user ] 심장이 건강할 때 평균 맥박수가 어떻게 ⟨ret@2.50s⟩ 돼?
-[  2.66s][moshi] ⟦⚡SPAN@3.00s: A normal resting heart rate for adults ranges from 60 to 100 bpm.⟧ 건강한 사람의 맥박수를 알아볼까요? 건강한 성인의 정상적인 휴식 시 맥박은 분당 60회에서 100회 사이입니다.
-[  7.69s][user ] «backchannel» Wow.
-[ 10.32s][user ] 아, 그건 좀 높은 것 같고… 좀 더 낮은 범위는 없어?
-[ 14.48s][moshi] ⟨ret@14.25s⟩ 좀 ⟦⚡SPAN@15.61s: The average healthy heart rate is between 50 and 90 bpm.⟧ 더 정확한 정보를 찾아볼게요. 건강한 사람의 평균 맥박은 분당 50회에서 90회 사이입니다.
-[ 21.51s][user ] «to_other» 저녁 뭐 먹을까?
-[ 22.88s][user ] 오, 그럼 50에서 90 사이가 가장 이상적인 건가 보네.
+[  0.00s][user ] 심장이 건강하면 분당 몇 번 뛰는 게 ⟨ret@2.92s⟩ 정상이야?
+[  3.07s][moshi] ⟦⚡SPAN@3.42s: A normal resting heart rate for adults ranges from 60 to 100 bpm.⟧ 건강한 사람의 심박수는 분당 50회에서 90회 정도래.
+[  7.19s][moshi] 보통 성인의 안정 시 심박수는 분당 60회에서 100회 사이야.
+[ 10.02s][user ] «backchannel» Wow.
+[ 12.55s][user ] 아, 그럼 내가 55번인데 괜찮은 거야?
+[ 14.90s][user ] «to_other» 아, 진짜, 또 고양이 털이야!
+[ 17.18s][moshi] 55번이면 아주 건강한 심박수네. 걱정하지 않아도 돼.

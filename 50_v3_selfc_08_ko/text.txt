@@ -3,84 +3,86 @@ SYSTEM: <system> 당신은 건강 및 일상 습관에 대해 사람들을 돕�
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Show me buses from Chicago to Denver for three passengers on May tenth
-      Hmm, the ten PM one sounds good, but… I— I mean, is there one a little
-      Actually, no, not earlier. Is the ten PM one direct?
-      Eighteen hours… that's a long ride. What about flights?
-      Three hundred fifty sounds okay. What airline is that?
-  S2  Non-stop is good. Can you book that for us?
-      Excellent! Can you set a reminder to check in online twenty-four hours
-      That's perfect. I'm feeling a little anxious about the trip though.
-      Maybe. Do you have any suggestions for managing travel anxiety?
-      I’ve tried those, but they don’t always work for me.
-  S3  Grounding techniques? What are those?
-      [happy] That sounds… manageable.
-      Yeah, that would be great.
-      Okay… a lamp, a picture, the window, a book, my phone.
-      The chair under me, my feet on the floor, my hands in my lap, and… the
-  S4  The hum of the refrigerator, a car passing outside, and… your voice.
-      Coffee… and a faint scent of flowers.
-      Just the lingering taste of my tea.
-      I do feel a bit calmer, actually. Thanks, Oruus.
+  S1  시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 보여줘.
+      음… 5월 10일이 아니고, 5월 12일로 해줘.
+      아침 9시 버스로 예약해 줘.
+      혹시, 그 버스에 와이파이 있어요?
+      혹시, 짐 부치는 것도 가능한가요?
+  S2  짐 부치는 것도 가능한지 궁금해요.
+      50파운드면 꽤 되네요. 그럼 좌석 지정은 어떻게 돼요?
+      그럼 앞쪽 좌석으로 부탁해요.
+      혹시, 버스 출발하는 곳은 어디예요?
+      유니언 스테이션이요. 알겠어요.
+  S3  음… 출발 시간 다시 한 번만 확인해 줄래요?
+      아, 맞다. 혹시, 덴버 도착 시간도 알 수 있을까요?
+      5시에 도착하는군요. 꽤 오래 타는 거네요.
+      그런 것도 알려주세요.
+      스트레칭이라… 좋네요.
+  S4  알겠습니다. 팁 감사해요.
+      특별한 건 없을 것 같아요.
+      네, 알겠어요.
+      고마워요. 더 이상은 괜찮아요.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.24s⟩ tenth.
-[  4.55s][moshi] Certainly, let's ⟦⚡SPAN@5.60s: (tool result) Three buses are available: 8:00 AM, $250; 2:00 PM, $280; 10:00 PM, $220.⟧ find some buses for you. There are three buses available on May tenth: eight AM for two hundred fifty dollars, two PM for two hundred eighty, and ten PM for two hundred twenty.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[ 11.41s][user ] «backchannel» Uh-huh.
-[ 17.85s][user ] Hmm, the ten PM one sounds good, but… I— I mean, is there one a little earlier?
-[ 22.63s][moshi] [interrupting] Perhaps around six or seven PM?
-[ 24.56s][user ] «backchannel» Yeah.
-[ 25.63s][user ] Actually, no, not earlier. Is the ten PM one ⟨ret@28.76s⟩ direct?
-[ 29.07s][moshi] Let ⟦⚡SPAN@29.72s: (tool result) The 10:00 PM bus is direct, taking 18 hours and includes one 30-minute rest stop in Omaha.⟧ me check the details for that bus. Yes, the ten PM bus is direct, taking eighteen hours with a thirty-minute stop in Omaha.
-      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "10PM_Chicago_Denver"}}
-[ 36.86s][user ] Eighteen hours… that's a long ride. What about ⟨ret@40.18s⟩ flights?
-[ 40.41s][moshi] Flights are certainly ⟦⚡SPAN@42.02s: (tool result) Four flights are available: 7:00 AM, $350; 11:00 AM, $400; 3:00 PM, $380; 7:00 PM, $420.⟧ faster, let’s explore those options.
-      CALL: {"function": "Flights_2_FindFlights", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[ 44.42s][moshi] Four flights are available on May tenth, ranging from three hundred fifty to four hundred twenty dollars.
-[ 50.27s][user ] Three hundred fifty sounds okay. What airline is that?
-[ 53.99s][moshi] ⟨ret@53.83s⟩ That flight ⟦⚡SPAN@55.11s: (tool result) The 7:00 AM United flight is non-stop, 2 hours 30 minutes, and includes standard baggage allowan⟧ is operated by United. The seven AM United flight is non-stop, two hours and thirty minutes, with standard baggage.
-      CALL: {"function": "Flights_2_GetFlightDetails", "arguments": {"flight_id": "7AM_Chicago_Denver_United"}}
-[ 65.42s][user ] Non-stop is good. Can you book that for ⟨ret@67.89s⟩ us?
-[ 68.04s][moshi] ⟦⚡SPAN@68.39s: (tool result) Booking confirmed: United 7:00 AM flight, Chicago to Denver, May tenth, three passengers, confir⟧ Of course, I can proceed with the booking.
-      CALL: {"function": "Flights_1_BookFlight", "arguments": {"flight_id": "7AM_Chicago_Denver_United", "passengers": "three"}}
-[ 70.58s][moshi] Your flight is booked! Confirmation number AX927L for three passengers on May tenth.
-[ 75.08s][user ] «backchannel» Okay.
-[ 76.54s][user ] Excellent! Can you set a reminder to check in online twenty-four hours ⟨ret@80.96s⟩ before?
-[ 81.11s][moshi] Certainly, I can ⟦⚡SPAN@82.24s: (tool result) Reminder set: May ninth, 7:00 AM, "Check in for United flight to Denver".⟧ set a reminder for that.
-      CALL: {"function": "Reminders_1_SetReminder", "arguments": {"date": "May ninth", "time": "7:00 AM", "message": "Check in for United flight to Denver"}}
-[ 83.72s][moshi] A reminder is set for May ninth at seven AM to check in for your flight.
-[ 86.76s][user ] «backchannel» Right.
-[ 88.66s][user ] That's perfect. I'm feeling a little anxious about the trip though.
-[ 92.95s][moshi] It's perfectly normal to feel anxious before a trip. Perhaps we could explore some relaxation techniques?
-[ 96.15s][user ] «backchannel» Yeah.
-[100.16s][user ] Maybe. Do you have any suggestions for managing travel anxiety?
-[104.37s][moshi] Deep breathing exercises are often very helpful for calming nerves.
-[106.20s][user ] «backchannel» Yeah, totally.
-[108.85s][user ] I’ve tried those, but they don’t always work for me.
-[112.00s][moshi] That's understandable. Sometimes grounding techniques, focusing on your senses, can be effective.
-[118.48s][user ] Grounding techniques? What are those?
-[121.62s][moshi] They involve bringing your attention to the present moment through your senses—what you see, hear, feel.
-[125.69s][user ] «backchannel» Yeah.
-[127.53s][user ] [happy] That sounds… manageable.
-[130.22s][moshi] It can be a simple yet powerful tool. Would you like me to guide you through one?
-[132.88s][user ] «backchannel» Yeah.
-[136.38s][user ] Yeah, that would be great.
-[137.63s][moshi] Alright, let's begin. Find a comfortable position and close your eyes if that feels safe for you.
-[139.39s][user ] «backchannel» Yeah.
-[143.22s][moshi] Notice five things you can see around you when you open your eyes. Really observe them.
-[148.86s][user ] Okay… a lamp, a picture, the window, a book, my phone.
-[154.04s][moshi] Good. Now, notice four things you can physically feel.
-[158.42s][user ] The chair under me, my feet on the floor, my hands in my lap, and… the warmth of my sweater.
-[164.75s][moshi] Excellent. And now, three things you can hear.
-[167.60s][user ] The hum of the refrigerator, a car passing outside, and… your voice.
-[171.39s][moshi] Wonderful. Two things you can smell.
-[172.50s][user ] «backchannel» Yeah, totally.
-[173.99s][user ] Coffee… and a faint scent of flowers.
-[176.86s][moshi] And finally, one thing you can taste.
-[177.63s][user ] «backchannel» Okay.
-[181.06s][user ] Just the lingering taste of my tea.
-[183.81s][moshi] Very good. Bringing your attention to these sensory details can help ground you in the present.
-[187.76s][user ] «backchannel» Mm-hmm.
-[189.29s][user ] I do feel a bit calmer, actually. Thanks, Oruus.
-[192.60s][moshi] You’re very welcome. I’m glad I could help. Remember, it’s okay to acknowledge your anxieties.
+[  0.00s][user ] 시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 ⟨ret@4.08s⟩ 보여줘.
+[  4.39s][moshi] 덴버행 ⟦⚡SPAN@5.44s: (tool result) There are three buses from Chicago to Denver on May 10th: at 8:00 AM for $150, at 1:00 PM for $1⟧ 버스편을 알아보고 있습니다. 5월 10일에 시카고에서 덴버로 가는 버스는 세 편이 있습니다. 아침 8시, 오후 1시, 저녁 6시에 출발하며, 각각 150달러, 175달러, 160달러입니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"from": "Chicago", "to": "Denver", "num_passengers": 3, "date": "May 10"}}
+[ 14.25s][user ] «backchannel» Oh.
+[ 20.72s][user ] 음… 5월 10일이 아니고, 5월 12일로 ⟨ret@23.64s⟩ 해줘.
+[ 24.03s][moshi] 날짜를 5월 ⟦⚡SPAN@25.64s: (tool result) There are two buses from Chicago to Denver on May 12th: at 9:00 AM for $165 and at 7:00 PM for $⟧ 12일로 변경해서 다시 확인해 보겠습니다. 5월 12일에는 아침 9시와 저녁 7시에 출발하는 버스 두 편이 있습니다. 요금은 각각 165달러, 180달러입니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"from": "Chicago", "to": "Denver", "num_passengers": 3, "date": "May 12"}}
+[ 37.68s][user ] 아침 9시 버스로 예약해 ⟨ret@39.37s⟩ 줘.
+[ 39.77s][moshi] ⟦⚡SPAN@40.65s: (tool result) Your reservation is confirmed: bus ID 9AM_Chicago_Denver_May12, 3 passengers, total cost $495.⟧ 아침 9시 버스로 예약을 진행하겠습니다. 예약이 완료되었습니다. 버스 ID는 9AM_Chicago_Denver_May12이고, 승객은 세 명, 총 비용은 495달러입니다.
+      CALL: {"function": "Buses_2_ReserveBus", "arguments": {"bus_id": "9AM_Chicago_Denver_May12", "num_passengers": 3}}
+[ 47.89s][user ] «backchannel» Really?
+[ 52.77s][user ] 혹시, 그 버스에 와이파이 ⟨ret@55.30s⟩ 있어요?
+[ 55.70s][moshi] 버스에 ⟦⚡SPAN@56.59s: (tool result) Bus 9AM_Chicago_Denver_May12 has wifi, power outlets, and restrooms.⟧ 와이파이가 있는지 확인해 보겠습니다.
+      CALL: {"function": "Buses_4_CheckBusAmenities", "arguments": {"bus_id": "9AM_Chicago_Denver_May12", "amenity": "wifi"}}
+[ 58.56s][moshi] 해당 버스에는 와이파이, 콘센트, 화장실이 있습니다.
+[ 62.72s][user ] 혹시, 짐 부치는 것도 가능한가요?
+[ 65.62s][moshi] «interrupted» 짐 부치는 것에 대해—
+[ 66.53s][user ] «interrupts_prev» 짐 부치는 것도 가능한지 ⟨ret@68.50s⟩ 궁금해요.
+[ 68.73s][moshi] 짐 ⟦⚡SPAN@69.46s: (tool result) Bus 9AM_Chicago_Denver_May12 allows one free checked bag per passenger, with a weight limit of 5⟧ 부치는 것이 가능한지 확인해 보겠습니다.
+      CALL: {"function": "Buses_4_CheckBusAmenities", "arguments": {"bus_id": "9AM_Chicago_Denver_May12", "amenity": "luggage"}}
+[ 71.72s][moshi] 승객 한 명당 수하물 한 개를 무료로 부칠 수 있습니다. 무게 제한은 50파운드입니다.
+[ 77.74s][user ] 50파운드면 꽤 되네요. 그럼 좌석 지정은 어떻게 ⟨ret@80.90s⟩ 돼요?
+[ 81.29s][moshi] 좌석 지정 ⟦⚡SPAN@82.90s: (tool result) The bus has a 2x2 seating arrangement; seats 1-4 are at the front, 5-8 in the middle, and 9-12 a⟧ 방법에 대해 알려드리겠습니다.
+      CALL: {"function": "Buses_5_GetSeatMap", "arguments": {"bus_id": "9AM_Chicago_Denver_May12"}}
+[ 84.15s][moshi] 2x2 좌석 배치이고, 1-4번 좌석은 앞쪽, 5-8번은 중간, 9-12번은 뒤쪽에 있습니다.
+[ 89.73s][user ] «backchannel» Okay.
+[ 91.61s][user ] 그럼 앞쪽 좌석으로 부탁해요.
+[ 93.80s][moshi] ⟨ret@93.65s⟩ 앞쪽 ⟦⚡SPAN@94.69s: (tool result) Seats 1A, 1B, and 1C have been reserved for you on bus 9AM_Chicago_Denver_May12.⟧ 좌석으로 지정해 드리겠습니다.
+      CALL: {"function": "Buses_6_ReserveSeats", "arguments": {"bus_id": "9AM_Chicago_Denver_May12", "seats": ["1A", "1B", "1C"]}}
+[ 96.13s][moshi] 1A, 1B, 1C 좌석이 예약되었습니다.
+[100.03s][user ] 혹시, 버스 출발하는 곳은 ⟨ret@102.09s⟩ 어디예요?
+[102.48s][moshi] ⟦⚡SPAN@103.29s: (tool result) The bus departs from Chicago Union Station, 225 South Canal Street.⟧ 버스 출발 장소를 알려드리겠습니다.
+      CALL: {"function": "Buses_7_GetDepartureLocation", "arguments": {"bus_id": "9AM_Chicago_Denver_May12"}}
+[105.31s][moshi] 시카고 유니언 스테이션, 사우스 캐널 스트리트 225번에서 출발합니다.
+[107.79s][user ] «backchannel» Uh-huh.
+[110.73s][user ] 유니언 스테이션이요. 알겠어요.
+[112.74s][moshi] 혹시 출발 전에 궁금한 점이 더 있으신가요?
+[114.00s][user ] «backchannel» Yeah.
+[116.62s][user ] 음… 출발 시간 다시 한 번만 확인해 줄래요?
+[119.26s][moshi] 물론입니다. 출발 시간은 아침 9시입니다.
+[122.33s][user ] 아, 맞다. 혹시, 덴버 도착 시간도 알 수 ⟨ret@125.49s⟩ 있을까요?
+[125.88s][moshi] 덴버 도착 시간을 ⟦⚡SPAN@127.41s: (tool result) Bus 9AM_Chicago_Denver_May12 arrives in Denver at 5:00 PM Mountain Time.⟧ 확인해 보겠습니다.
+      CALL: {"function": "Buses_8_GetArrivalTime", "arguments": {"bus_id": "9AM_Chicago_Denver_May12"}}
+[128.00s][moshi] 덴버에는 산악 표준시로 오후 5시에 도착합니다.
+[131.65s][user ] 5시에 도착하는군요. 꽤 오래 타는 거네요.
+[135.09s][moshi] 장거리 여행이시군요. 혹시 여행 중에 편안하게 휴식을 취할 수 있는 방법이 궁금하신가요?
+[137.86s][user ] «backchannel» Mm-hmm.
+[140.94s][user ] 그런 것도 알려주세요.
+[142.12s][moshi] 장거리 여행 시 스트레칭이나 간단한 명상은 도움이 될 수 있습니다.
+[144.10s][user ] «backchannel» Uh-huh.
+[146.65s][user ] 스트레칭이라… 좋네요.
+[148.31s][moshi] 스트레칭은 혈액 순환을 돕고 몸의 긴장을 풀어줍니다.
+[150.87s][user ] «backchannel» Yeah, yeah.
+[151.65s][user ] 알겠습니다. 팁 감사해요.
+[153.63s][moshi] 도움이 되었다니 기쁩니다. 혹시 여행 전에 특별히 준비해야 할 것이 있을까요?
+[161.00s][user ] 특별한 건 없을 것 같아요.
+[162.70s][moshi] 여행 전에 충분한 휴식을 취하고, 편안한 옷을 입는 것이 좋습니다.
+[167.69s][user ] 네, 알겠어요.
+[168.77s][moshi] 즐거운 여행 되시길 바랍니다. 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
+[171.12s][user ] «backchannel» Yeah, totally.
+[174.24s][user ] 고마워요. 더 이상은 괜찮아요.
+[176.75s][moshi] 언제나 편안하게 말씀해주세요.

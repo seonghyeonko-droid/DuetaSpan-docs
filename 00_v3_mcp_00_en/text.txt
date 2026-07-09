@@ -4,54 +4,56 @@ SYSTEM: <system> You are Nellara, a upbeat and supportive counselor who helps pe
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Can you give me the coordinates for the Eiffel Tower in Paris?
-      That’s good to know. I’m planning a trip there next month.
-      With a friend, actually. We’re both a bit anxious about navigating a n
-      Yeah, especially the language barrier. We only know a few basic French
-  S2  That's reassuring. I was thinking about finding a guided walking tour.
-      Do you know of any good ones around the Eiffel Tower?
-      Hmm, the Eiffel Tower Secrets tour sounds interesting—
-  S3  Is that one in English?
-      Great! Maybe we should book that one then.
-      What date is available next month?
-      Let’s do the 15th, please. For two people.
-  S4  Perfect! Thank you so much for your help.
-      It really is. I feel much better about it now.
-      I think so too. Maybe we’ll explore some smaller cafes after the tour.
+      That’s helpful, thanks. I’m planning a trip there next month.
+      I was wondering, what's the weather usually like there in May?
+      Hmm, twelve days of rain… that’s a bit much.
+  S2  Maybe. I’m going with a friend, and we’re both pretty nervous about na
+      It is. We’re hoping to find some walking tours, maybe something focuse
+      Oh, those sound amazing! "Montmartre's Hidden Corners" – that one soun
+  S3  Do any of those tours offer a discount for students?
+      Wonderful! That'll help a lot.
+      I’m also trying to find a good little bistro near the Eiffel Tower – s
+      That sounds perfect! Is it easy to get to on foot from the tower?
+  S4  Excellent. This is all so helpful, Nellara. I feel much better prepare
+      I think I just need to book the tour now, then.
+      Fantastic! Thank you so much, Nellara.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.76s⟩ Paris?
-[  3.99s][moshi] ⟦⚡SPAN@5.04s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ Certainly! The Eiffel Tower's coordinates are 48.8584 degrees North, 2.2945 degrees East.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.29s⟩ Paris?
+[  3.53s][moshi] ⟦⚡SPAN@4.57s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ Certainly! The Eiffel Tower’s coordinates are 48.8584 latitude and 2.2945 longitude.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 13.99s][user ] That’s good to know. I’m planning a trip there next month.
-[ 17.41s][moshi] That sounds lovely! Planning is half the fun, isn’t it? Are you traveling alone, or with someone?
-[ 22.24s][user ] «backchannel» Yeah, totally.
-[ 24.49s][user ] With a friend, actually. We’re both a bit anxious about navigating a new city.
-[ 29.77s][moshi] It's completely normal to feel that way. A new city can be daunting, even exciting. We can definitely work through that.
-[ 36.76s][user ] Yeah, especially the language barrier. We only know a few basic French phrases.
-[ 42.35s][moshi] Knowing a little goes a long way, but don’t worry too much. Many Parisians speak English, especially in tourist areas.
-[ 51.11s][user ] That's reassuring. I was thinking about finding a guided walking tour.
-[ 55.98s][moshi] That’s a brilliant idea! A guided tour can take away a lot of the stress of navigating.
-[ 57.92s][user ] «backchannel» Okay.
-[ 61.77s][user ] Do you know of any good ones around the Eiffel Tower?
-[ 64.81s][moshi] ⟨ret@64.65s⟩ Absolutely. I found three ⟦⚡SPAN@66.65s: (tool result) Three walking tours are available: "Paris Landmarks," costing 35 euros; "Hidden Paris," costing ⟧ options near the Eiffel Tower: Paris Landmarks for 35 euros, Hidden Paris for 40, and Eiffel Tower Secrets for 28.
-      CALL: {"function": "maps_search", "arguments": {"query": "guided walking tours near Eiffel Tower", "radius": "1km"}}
-[ 77.12s][user ] Hmm, the Eiffel Tower Secrets tour sounds interesting—
-[ 81.19s][moshi] «interrupted» It does sound quite specialized—
-[ 82.88s][user ] «interrupts_prev» Is that one in English?
-[ 84.85s][moshi] Yes, it is! That tour is offered in both English and French.
-[ 91.70s][user ] Great! Maybe we should book that one then.
-[ 94.39s][moshi] Excellent choice! I can book that for you if you'd like. Just confirm the date.
-[ 96.38s][user ] «backchannel» Yeah.
-[ 99.57s][moshi] I'm happy to hear you're feeling more confident. Remember, a little preparation can make a big difference.
-[106.73s][user ] What date is available next ⟨ret@108.66s⟩ month?
-[109.06s][moshi] The Eiffel Tower ⟦⚡SPAN@110.66s: (tool result) The Eiffel Tower Secrets tour is available on the 15th and 22nd of next month.⟧ Secrets tour has openings on the fifteenth and twenty-second of next month.
-      CALL: {"function": "calendar_check", "arguments": {"event": "Eiffel Tower Secrets tour", "month": "next"}}
-[115.88s][user ] Let’s do the 15th, please. For two people.
-[119.18s][moshi] ⟨ret@118.94s⟩ Wonderful! Your ⟦⚡SPAN@120.94s: (tool result) Your Eiffel Tower Secrets tour is booked for two people on the 15th of next month. Confirmation ⟧ tour is booked for two people on the 15th. Your confirmation number is AX789YZ.
-      CALL: {"function": "maps_book", "arguments": {"tour": "Eiffel Tower Secrets", "date": "next month 15th", "people": "2"}}
-[127.89s][user ] Perfect! Thank you so much for your help.
-[131.25s][moshi] You're very welcome! I'm glad I could help make your trip planning a little easier. It's all about building confidence, you know?
-[139.96s][user ] It really is. I feel much better about it now.
-[143.28s][moshi] That's wonderful to hear. Sometimes just having a plan can alleviate a lot of anxiety.
-[149.82s][user ] I think so too. Maybe we’ll explore some smaller cafes after the tour.
-[155.02s][moshi] That sounds delightful! Discovering hidden gems is a special part of traveling.
+[  6.24s][user ] «backchannel» Exactly.
+[ 12.12s][user ] That’s helpful, thanks. I’m planning a trip there next month.
+[ 15.99s][moshi] That sounds lovely! Paris is always a good idea, especially in the spring.
+[ 21.75s][user ] I was wondering, what's the weather usually like there in May?
+[ 25.88s][moshi] ⟨ret@25.71s⟩ May in ⟦⚡SPAN@26.91s: (tool result) The average high temperature in Paris in May is 19 degrees Celsius, with 12 days of rain.⟧ Paris is quite pleasant. The average high is nineteen degrees Celsius, and you can expect rain on twelve days.
+      CALL: {"function": "weather_forecast", "arguments": {"location": "Paris", "date": "May"}}
+[ 34.34s][user ] Hmm, twelve days of rain… that’s a bit much.
+[ 38.15s][moshi] It's good to be prepared, though! Packing a light raincoat might be a wise idea.
+[ 43.94s][user ] Maybe. I’m going with a friend, and we’re both pretty nervous about navigating a new city.
+[ 49.37s][moshi] It’s completely normal to feel that way! Exploring a new place can be a little daunting.
+[ 56.34s][user ] It is. We’re hoping to find some walking tours, maybe something focused on hidden gems.
+[ 62.48s][moshi] ⟨ret@62.24s⟩ I found ⟦⚡SPAN@63.92s: (tool result) Three walking tours match your criteria: “Secret Paris”, “Montmartre’s Hidden Corners”, and “Par⟧ three walking tours: “Secret Paris,” “Montmartre’s Hidden Corners,” and “Parisian Passages.”
+      CALL: {"function": "tour_search", "arguments": {"location": "Paris", "type": "walking", "keywords": "hidden gems"}}
+[ 64.98s][user ] «backchannel» Okay.
+[ 69.97s][user ] Oh, those sound amazing! "Montmartre's Hidden Corners" – that one sounds perfect.
+[ 75.25s][moshi] That area is truly charming! It’s full of artistic history and little cafes.
+[ 82.80s][user ] Do any of those tours offer a discount for students?
+[ 86.83s][moshi] —it's a very popular spot.
+[ 88.90s][moshi] ⟨ret@88.50s⟩ ⟦⚡SPAN@89.46s: (tool result) “Montmartre’s Hidden Corners” offers a ten percent student discount with a valid ID.⟧ Let me check student discounts for those tours.
+      CALL: {"function": "tour_details", "arguments": {"tour_name": "Montmartre’s Hidden Corners", "discount_type": "student"}}
+[ 92.23s][moshi] Good news! "Montmartre's Hidden Corners" has a ten percent discount with student ID.
+[ 98.45s][user ] Wonderful! That'll help a lot.
+[101.32s][moshi] I'm glad I could help with that. It’s always nice to save a little money.
+[106.60s][user ] I’m also trying to find a good little bistro near the Eiffel Tower – somewhere not too touristy.
+[112.87s][moshi] ⟨ret@112.55s⟩ I found ⟦⚡SPAN@113.91s: (tool result) “Le Bistro du 7ème” is a highly-rated bistro 500 meters from the Eiffel Tower, known for its loc⟧ a bistro for you. “Le Bistro du 7ème” is five hundred meters from the tower, popular with locals.
+      CALL: {"function": "restaurant_search", "arguments": {"location": "near Eiffel Tower, Paris", "cuisine": "bistro", "ambiance": "not touristy"}}
+[122.12s][user ] That sounds perfect! Is it easy to get to on foot from the tower?
+[126.53s][moshi] It is! It’s about a ten-minute walk, mostly along quiet side streets.
+[131.92s][user ] Excellent. This is all so helpful, Nellara. I feel much better prepared now.
+[137.33s][moshi] That makes me so happy to hear! Feeling prepared is half the battle when travelling.
+[143.51s][user ] I think I just need to book the tour now, then.
+[145.84s][moshi] ⟨ret@145.76s⟩ I can book ⟦⚡SPAN@147.76s: (tool result) Your booking for “Montmartre’s Hidden Corners” is confirmed for two people, with a ten percent s⟧ that for you now. Your tour is booked! Confirmation number is XP729L.
+      CALL: {"function": "tour_booking", "arguments": {"tour_name": "Montmartre’s Hidden Corners", "number_of_people": "2", "discount_type": "student"}}
+[155.96s][user ] Fantastic! Thank you so much, Nellara.
+[159.59s][moshi] You are very welcome! Have a wonderful trip to Paris, and enjoy discovering those hidden corners.

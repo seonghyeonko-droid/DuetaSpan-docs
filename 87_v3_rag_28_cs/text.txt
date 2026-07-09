@@ -2,9 +2,9 @@ v3_rag_28_cs src=nq style=v2
 SYSTEM: <system> 당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 야, 정부 부처들 읽다가… 참전용사부 있잖아, 그거 언제 시작했는지 ⟨ret@5.59s⟩ 궁금해졌어.
-[  5.99s][moshi] 음, ⟦⚡SPAN@7.19s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 좋은 질문이세요. 참전용사부는 천구백삼십칠월 이십일일에 설립되었어요.
-[ 11.45s][user ] 천구백삼십? 생각보다 엄청 최근이네, 진짜. 훨씬 오래됐을 줄 알았어.
-[ 16.19s][moshi] 나라 역사를 생각하면 비교적 젊은 부처이긴 해요. 많은 것들이 시간이 지나면서 변하니까요.
-[ 24.11s][user ] 근데 천구백삼십년 *전에* 참전용사 서비스는 없었어? 갑자기 그때부터 시작한 건 아니겠지—
-[ 30.41s][moshi] ⟨ret@30.33s⟩ 네, 맞아요. ⟦⚡SPAN@32.33s: Prior to 1930, veteran benefits were administered by the Bureau of War Risks Insurance and the Veterans Bureau⟧ 질문하신 대로 천구백삼십년 이전에 참전용사 혜택은 전쟁위험보험국과 참전용사국, 두 개의 별도 기관에서 담당했어요.
+[  0.00s][user ] 야, 정부 부처들 읽다가… 참전용사부 원래 언제 ⟨ret@4.90s⟩ 시작했어?
+[  5.30s][moshi] 음, ⟦⚡SPAN@6.50s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 좋은 질문이시네요. 참전용사부는 천구백삼십년 칠월 이십일일에 설립되었어요.
+[ 12.24s][user ] 천구백삼십년? 그거… 생각보다 엄청 최근이네, 그렇지 않아? 훨씬 오래된 줄 알았어.
+[ 18.39s][moshi] 역사를 생각하면 좀 최근처럼 느껴지실 수도 있겠네요. 하지만 정식적인 구조는 시간이 지나면서 발전해 왔어요.
+[ 26.86s][user ] 근데 그 전에도 참전용사들을 위한 서비스가 있었잖아? 천구백삼십년 전에 뭔가 있었을 거야, 분명.
+[ 33.15s][moshi] ⟨ret@33.07s⟩ 네, ⟦⚡SPAN@34.19s: Prior to 1930, veteran benefits were administered by the Bureau of War Risks Insurance.⟧ 물론 서비스는 있었어요. 천구백삼십년 이전에 전쟁위험보험국에서 참전용사 혜택을 담당했어요.

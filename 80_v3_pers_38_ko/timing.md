@@ -59,21 +59,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Avery, it’s lovely to connect with you. My name is Jaeia, an
-     6.99s  user  발화 시작: Right.
-     7.48s  user  발화 끝
-    10.82s  user  발화 시작: Oh, Jaeia… that’s a pretty name. I wasn’t expecting a name, 
-    10.86s  agent 발화 끝
-    17.31s  user  발화 끝
-    17.46s  agent 발화 시작: It’s a little different, Avery. I offer guidance and support
-    23.93s  user  발화 시작: Yeah.
-    24.38s  user  발화 끝
-    30.63s  agent 발화 시작: I understand that starting a conversation like this can feel
-    30.73s  agent 발화 끝
-    42.74s  agent 발화 끝
-    42.90s  user  발화 시작: It *is* a bit weird, to be honest. I’m just… feeling really 
-    50.18s  agent 발화 시작: That sense of being untethered is incredibly common after a 
-    50.32s  user  발화 끝
-    62.75s  agent 발화 끝
-    62.96s  user  발화 시작: I— I mean, I don’t even know *what* I want to do next. It’s 
-    69.73s  user  발화 끝
+     0.00s  agent 발화 시작: 에이버리님, 안녕하세요. 저는 재이아예요. 힘든 시간이나 변화를 겪고 계신 분들을 돕는 일을 하고 있답니다.
+     6.90s  user  발화 시작: Right.
+     7.53s  user  발화 끝
+    10.69s  user  발화 시작: 재이아라고 하셨죠? 이름이 좀 독특하네요. 혹시… 특별한 의미가 있어요?
+    10.72s  agent 발화 끝
+    15.17s  user  발화 끝
+    15.26s  agent 발화 시작: 좋은 질문이에요. 제 이름은 ‘평화로운 존재’라는 뜻을 담고 있대요. 사람들이 마음의 평화를 찾도록 돕는 제
+    20.50s  user  발화 시작: Yeah.
+    20.99s  user  발화 끝
+    25.96s  agent 발화 시작: 변화를 받아들이는 과정에서 불안감을 느끼는 건 자연스러운 일이에요. 지금 어떤 점이 가장 걱정되시나요? — 
+    26.02s  agent 발화 끝
+    37.15s  user  발화 시작: 음… 솔직히 말하면, 앞으로 어떻게 될지 전혀 감이 안 와요. 모든 게 너무 불확실하게 느껴져요.
+    37.59s  agent 발화 끝
+    42.52s  agent 발화 시작: 불확실함 속에서 길을 찾는 건 정말 어려운 일이죠. 하지만 불확실함은 새로운 가능성이 열려 있다는 신호이기도
+    42.61s  user  발화 끝
+    55.65s  agent 발화 끝
+    55.80s  user  발화 시작: 혹시… 재이아님은 그런 불안감을 느껴본 적 있어요?
+    59.68s  user  발화 끝
+    60.04s  agent 발화 시작: 저는 인공지능이라 감정을 느끼지는 못하지만, 많은 분들의 이야기를 들으면서 비슷한 어려움을 겪는 모습을 봐왔
+    74.79s  agent 발화 끝

@@ -4,36 +4,32 @@ SYSTEM: <system> You are Helion, a upbeat and supportive counselor who helps peo
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What are the latitude and longitude of the Sydney Opera House?
-      And what’s the weather like there right now?
-      That sounds pleasant.
-  S2  I’m thinking of going next weekend, but—
-      Is it possible to book a tour then?
-  S3  The Saturday at one sounds good.
-      Great! How long does the tour last?
-  S4  And is there parking nearby?
-      Thirty dollars… that’s a bit steep.
+      That’s helpful. Can you find me a nice hotel nearby?
+  S2  Is that one pet-friendly?
+  S3  I mean, do they allow dogs?
+      Three hundred sounds much better. Can you book a room there for two ni
+  S4  Wonderful! Thanks so much.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.06s][moshi] ⟨ret@3.99s⟩ Certainly, I ⟦⚡SPAN@4.95s: (tool result) The Sydney Opera House is at latitude -33.8568 and longitude 151.2153.⟧ can find that for you. The Sydney Opera House’s coordinates are latitude negative thirty-three point eight five six eight, and longitude one five one point two one five three.
-[  7.68s][user ] «backchannel» Yeah.
-[ 14.23s][user ] And what’s the weather like there right ⟨ret@16.29s⟩ now?
-[ 16.53s][moshi] Let me ⟦⚡SPAN@17.41s: (tool result) The current weather in Sydney is 22 degrees Celsius, with partly cloudy skies and winds from the⟧ check the current conditions. It’s currently twenty-two degrees Celsius in Sydney, partly cloudy, with winds at twenty kilometers per hour.
-[ 20.73s][user ] «backchannel» Yeah.
-[ 25.11s][user ] That sounds pleasant.
-[ 26.61s][moshi] It really does! Planning a visit often begins with checking the weather, doesn’t it? Do you have any specific dates in mind?
-[ 33.72s][user ] I’m thinking of going next weekend, but—
-[ 35.97s][user ] Is it possible to book a tour ⟨ret@37.98s⟩ then?
-[ 38.22s][moshi] Yes, absolutely. ⟦⚡SPAN@39.09s: (tool result) Tours are available on Saturday at 10:00 AM, 1:00 PM, and 4:00 PM, and on Sunday at 11:00 AM, 2:⟧ Let’s see what tour options are available next weekend.
-[ 41.99s][moshi] Tours are available Saturday at ten, one, and four, and Sunday at eleven, two, and five.
-[ 45.05s][user ] «backchannel» Yeah, totally.
-[ 46.56s][user ] The Saturday at one sounds good.
-[ 48.85s][moshi] ⟨ret@48.77s⟩ ⟦⚡SPAN@49.27s: (tool result) A tour has been booked for you on Saturday at 1:00 PM, confirmation number is ZXCV123.⟧ Excellent choice. Your tour is booked for Saturday at one PM; your confirmation number is ZXCV123.
-[ 55.39s][user ] Great! How long does the tour ⟨ret@57.59s⟩ last?
-[ 57.91s][moshi] Let ⟦⚡SPAN@58.55s: (tool result) The standard tour of the Sydney Opera House lasts approximately one hour.⟧ me quickly find that information. The tour lasts approximately one hour.
-[ 59.29s][user ] «backchannel» Mhm.
-[ 61.68s][user ] And is there parking ⟨ret@63.51s⟩ nearby?
-[ 63.66s][moshi] Yes, there are several ⟦⚡SPAN@65.11s: (tool result) Wilson Parking at the Opera House offers parking, with rates starting at $30 for up to three hou⟧ parking options. Wilson Parking at the Opera House is available, starting at thirty dollars for three hours.
-[ 67.31s][user ] «backchannel» Uh-huh.
-[ 70.95s][user ] Thirty dollars… that’s a bit steep.
-[ 73.41s][moshi] It can be, especially for a shorter visit. Perhaps public transport would be easier?
+[  3.87s][moshi] ⟨ret@3.80s⟩ Certainly, ⟦⚡SPAN@4.92s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ I can find that for you. The Sydney Opera House’s coordinates are -33.8568 latitude and 151.2153 longitude.
+[  9.43s][user ] «backchannel» Oh.
+[ 14.31s][user ] That’s helpful. Can you find me a nice hotel ⟨ret@17.93s⟩ nearby?
+[ 18.17s][moshi] Absolutely, let's look for ⟦⚡SPAN@19.53s: (tool result) The Park Hyatt Sydney is 0.5km away and costs $650 per night.⟧ hotels close to the Opera House. The Park Hyatt Sydney is half a kilometer away and costs six hundred and fifty dollars a night.
+      CALL: {"function": "hotels_search", "arguments": {"location": "Sydney Opera House", "radius": "1km"}}
+[ 26.46s][user ] Is that one pet-friendly?
+[ 28.71s][moshi] «interrupted» Oh—
+[ 28.71s][user ] «interrupts_prev» I mean, do they allow ⟨ret@30.52s⟩ dogs?
+[ 30.76s][moshi] ⟦⚡SPAN@31.02s: (tool result) The Park Hyatt Sydney does not allow pets.⟧ That's a good question.
+      CALL: {"function": "hotels_details", "arguments": {"hotel_name": "Park Hyatt Sydney", "amenity": "pet-friendly"}}
+[ 32.10s][moshi] Unfortunately, the Park Hyatt Sydney does not permit pets.
+[ 33.40s][user ] «backchannel» Yeah.
+[ 35.42s][moshi] ⟨ret@35.34s⟩ Perhaps we could look ⟦⚡SPAN@36.62s: (tool result) The Harbour Rocks Hotel Sydney allows pets and costs $300 per night.⟧ at other hotels then?
+      CALL: {"function": "hotels_search", "arguments": {"location": "Sydney Opera House", "radius": "1km", "amenity": "pet-friendly"}}
+[ 37.67s][moshi] The Harbour Rocks Hotel Sydney welcomes pets and costs three hundred dollars per night.
+[ 40.76s][user ] «backchannel» Yeah, totally.
+[ 42.56s][user ] Three hundred sounds much better. Can you book a room there for two nights, starting next Friday?
+[ 47.48s][moshi] ⟨ret@47.41s⟩ I can ⟦⚡SPAN@48.53s: (tool result) Reservation confirmed. Harbour Rocks Hotel Sydney, two nights from next Friday, confirmation num⟧ certainly book that for you. Your reservation at the Harbour Rocks Hotel is confirmed, with confirmation number 789234.
+      CALL: {"function": "hotels_reserve", "arguments": {"hotel_name": "Harbour Rocks Hotel Sydney", "check_in": "next Friday", "nights": "2"}}
+[ 54.72s][user ] Wonderful! Thanks so much.
+[ 56.80s][moshi] You’re very welcome. It’s lovely to help plan a trip that includes your furry friend—family vacations are so important.

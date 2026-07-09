@@ -2,19 +2,10 @@ v3_rag_28_ko src=nq style=v2
 SYSTEM: <system> 당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  국가 유공자부… 그게 언제 만들어졌는지 궁금하네요. 잘 모르겠어요.
-  S2  1930년이라고요? 좀 더 일찍 만들어졌을 줄 알았는데… 그 전에는 뭘로 대체했죠?
-  S3  그럼 그 전에는 좀 엉망이었겠네요, 그렇죠?
-  S4  아, 그러네요. 그나저나, 지금은 어떤 일들을 주로 하나요?
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][user ] 국가 유공자부… 그게 언제 만들어졌는지 궁금하네요. 잘 ⟨ret@4.99s⟩ 모르겠어요.
-[  5.30s][moshi] ⟦⚡SPAN@6.03s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 국가 유공자부를 언제 만들었는지 알아볼까요? 미국 국가 유공자부는 1930년 7월 21일에 설립되었습니다.
-[  8.27s][user ] «backchannel» Mhm.
-[ 13.92s][user ] 1930년이라고요? 좀 더 일찍 만들어졌을 줄 알았는데… 그 전에는 뭘로 대체했죠?
-[ 20.27s][moshi] 그 전에는 여러 기관에서 국가 유공자를 지원했어요. 한 기관으로 모아놓지 않았죠.
-[ 25.60s][user ] 그럼 그 전에는 좀 엉망이었겠네요, ⟨ret@27.90s⟩ 그렇죠?
-[ 27.97s][moshi] 과거에는 ⟦⚡SPAN@29.26s: Prior to 1930, veterans’ affairs were handled by various agencies within the federal government.⟧ 여러 기관이 분산되어 있어서요. 1930년 이전에는 여러 연방 정부 기관에서 국가 유공자 관련 업무를 처리했습니다.
-[ 34.77s][user ] «backchannel» Mm-hmm.
-[ 37.62s][user ] 아, 그러네요. 그나저나, 지금은 어떤 일들을 주로 하나요?
+[  0.00s][user ] 퇴역 군인부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해. 그냥 대충 아는 정도 말고, 정확한 날짜가 ⟨ret@9.32s⟩ 필요해.
+[  9.64s][moshi] 퇴역 군인부를 ⟦⚡SPAN@11.24s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 만든 해를 말씀드릴게요. 미국 퇴역 군인부는 1930년 7월 21일에 설립되었어요.
+[ 18.08s][user ] 음, 1930년이라고? 그게 맞는 건가? 뭔가 좀 더 일찍 만들어졌을 것 ⟨ret@23.59s⟩ 같은데…
+[ 23.67s][moshi] 혹시 다른 ⟦⚡SPAN@25.43s: The Department of Veterans Affairs evolved from the Bureau of War Risk Insurance, established in 1921.⟧ 부서와 혼동하신 건 아닐까요? 퇴역 군인부의 전신은 1921년에 세워진 퇴역 군인국이었지만, 지금의 부서 형태는 1930년에 확립되었거든요.
+[ 34.90s][moshi] 퇴역 군인부의 이전 형태인 전쟁 위험 보험국은 1921년에 설립되었어요.
+[ 41.21s][user ] 아, 그렇구나. 그럼 1921년이 아니라 1930년에 공식적으로 부서가 만들어진 거네. 알겠어.
+[ 47.97s][moshi] 네, 맞아요. 1930년 7월 21일이 현재의 퇴역 군인부 체계가 공식적으로 시작된 날이라고 보시면 돼요.

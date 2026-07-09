@@ -1,31 +1,31 @@
 # v3_defer_10_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 No, that’s okay. Can you book a ta | S3 Oh, actually… what time does the m | S4 Okay, great.
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Oh, fantastic! Can you send the Pa | S3 Actually, yes. What’s the weather  | S4 Okay, great.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.13s  <ret> 발화 (turn1 첫 프레임)
-     4.17s  agent 발화 시작: <ret> I located seven photos from your France trip last year
-     4.35s  user  발화 끝
-     6.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.89s]: (tool result) Found seven files: "Paris_Eiffel_Tower.jpg", "Nice_Beach
-     7.78s  user  발화 시작: Mhm.
-     8.27s  user  발화 끝
-    10.06s  agent 발화 끝
-    10.71s  user  발화 시작: No, that’s okay. Can you book a table for two at a nice Ital
-    15.98s  <ret> 발화 (turn4 첫 프레임)
-    16.14s  agent 발화 시작: <ret> I’ve booked a table for two at Bella Notte tomorrow at
-    16.32s  user  발화 끝
-    17.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Reservation confirmed at Bella Notte, downtown, tomorrow
-    18.31s  user  발화 시작: Really?
-    18.95s  user  발화 끝
-    22.81s  agent 발화 끝
-    23.29s  user  발화 시작: Oh, actually… what time does the museum close on Tuesdays?
-    27.27s  agent 발화 시작: Give me a moment to check the museum’s hours for you.
-    27.36s  user  발화 끝
-    28.73s  user  발화 시작: Mhm.
-    29.03s  user  발화 끝
-    29.74s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The museum is open on Tuesdays from 10 AM to 6 PM.
-    29.82s  user  발화 시작: Okay, great.
-    29.86s  agent 발화 끝
-    30.50s  agent 발화 시작: <ret> I have that information now.
-    30.55s  user  발화 끝
-    32.21s  agent 발화 끝
+     5.06s  <ret> 발화 (turn1 첫 프레임)
+     5.12s  agent 발화 시작: <ret> I found three photos from your France trip last year: 
+     5.28s  user  발화 끝
+     7.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.69s]: (tool result) Found three files: "Paris_EiffelTower.jpg", "Nice_Beach.
+     8.00s  user  발화 시작: Mhm.
+     8.49s  user  발화 끝
+     9.80s  agent 발화 끝
+    10.57s  user  발화 시작: Oh, fantastic! Can you send the Paris one to my sister, her 
+    16.99s  <ret> 발화 (turn4 첫 프레임)
+    17.31s  agent 발화 시작: <ret> The Paris photo is now on its way to Anna. Is there an
+    17.38s  user  발화 끝
+    18.03s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.96s]: (tool result) Email sent to anna.reid@email.com with attachment "Paris
+    20.39s  user  발화 시작: Yeah.
+    21.02s  user  발화 끝
+    22.26s  agent 발화 끝
+    22.75s  user  발화 시작: Actually, yes. What’s the weather like in Lyon right now?
+    26.52s  agent 발화 시작: Let me check on that for you.
+    26.59s  user  발화 끝
+    27.64s  user  발화 시작: Yeah.
+    28.12s  user  발화 시작: Okay, great.
+    28.13s  user  발화 끝
+    28.14s  agent 발화 끝
+    28.35s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The current weather in Lyon is 18 degrees Celsius, partl
+    29.28s  agent 발화 시작: <ret> Just a moment while I retrieve that information… It’s 
+    29.45s  user  발화 끝
+    36.98s  agent 발화 끝

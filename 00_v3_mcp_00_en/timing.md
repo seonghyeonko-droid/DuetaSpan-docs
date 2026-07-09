@@ -1,76 +1,80 @@
 # v3_mcp_00_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 That's reassuring. I was thinking  | S3 Is that one in English? | S4 Perfect! Thank you so much for you
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Maybe. I’m going with a friend, an | S3 Do any of those tours offer a disc | S4 Excellent. This is all so helpful,
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.76s  <ret> 발화 (turn1 첫 프레임)
-     3.99s  agent 발화 시작: <ret> Certainly! The Eiffel Tower's coordinates are 48.8584 
-     4.12s  user  발화 끝
-     5.04s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.10s]: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.
-    13.99s  user  발화 시작: That’s good to know. I’m planning a trip there next month.
-    14.09s  agent 발화 끝
-    17.41s  agent 발화 시작: That sounds lovely! Planning is half the fun, isn’t it? Are 
-    17.69s  user  발화 끝
-    22.24s  user  발화 시작: Yeah, totally.
-    23.39s  user  발화 끝
-    24.49s  user  발화 시작: With a friend, actually. We’re both a bit anxious about navi
-    24.55s  agent 발화 끝
-    29.77s  agent 발화 시작: It's completely normal to feel that way. A new city can be d
-    29.81s  user  발화 끝
-    36.76s  user  발화 시작: Yeah, especially the language barrier. We only know a few ba
-    36.85s  agent 발화 끝
-    42.22s  user  발화 끝
-    42.35s  agent 발화 시작: Knowing a little goes a long way, but don’t worry too much. 
-    50.70s  agent 발화 끝
-    51.11s  user  발화 시작: That's reassuring. I was thinking about finding a guided wal
-    55.69s  user  발화 끝
-    55.98s  agent 발화 시작: That’s a brilliant idea! A guided tour can take away a lot o
-    57.92s  user  발화 시작: Okay.
-    58.69s  user  발화 끝
-    61.77s  user  발화 시작: Do you know of any good ones around the Eiffel Tower?
-    61.86s  agent 발화 끝
-    64.65s  <ret> 발화 (turn13 첫 프레임)
-    64.81s  agent 발화 시작: <ret> Absolutely. I found three options near the Eiffel Towe
-    64.82s  user  발화 끝
-    66.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: (tool result) Three walking tours are available: "Paris Landmarks," co
-    74.82s  agent 발화 끝
-    77.12s  user  발화 시작: Hmm, the Eiffel Tower Secrets tour sounds interesting—
-    81.14s  user  발화 끝
-    81.19s  agent 발화 시작: It does sound quite specialized—
-    82.88s  user  발화 시작: Is that one in English?
-    83.59s  agent 발화 끝
-    84.85s  agent 발화 시작: Yes, it is! That tour is offered in both English and French.
-    84.85s  user  발화 끝
-    89.34s  agent 발화 끝
-    91.70s  user  발화 시작: Great! Maybe we should book that one then.
-    94.19s  user  발화 끝
-    94.39s  agent 발화 시작: Excellent choice! I can book that for you if you'd like. Jus
-    96.38s  user  발화 시작: Yeah.
-    97.02s  user  발화 끝
-    99.57s  agent 발화 시작: I'm happy to hear you're feeling more confident. Remember, a
-    99.58s  agent 발화 끝
-   106.61s  agent 발화 끝
-   106.73s  user  발화 시작: What date is available next month?
-   108.66s  <ret> 발화 (turn23 첫 프레임)
-   109.06s  agent 발화 시작: <ret> The Eiffel Tower Secrets tour has openings on the fift
-   109.18s  user  발화 끝
-   110.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) The Eiffel Tower Secrets tour is available on the 15th a
-   115.54s  agent 발화 끝
-   115.88s  user  발화 시작: Let’s do the 15th, please. For two people.
-   118.94s  <ret> 발화 (turn25 첫 프레임)
-   119.03s  user  발화 끝
-   119.18s  agent 발화 시작: <ret> Wonderful! Your tour is booked for two people on the 1
-   120.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Your Eiffel Tower Secrets tour is booked for two people 
-   127.89s  user  발화 시작: Perfect! Thank you so much for your help.
-   128.07s  agent 발화 끝
-   130.85s  user  발화 끝
-   131.25s  agent 발화 시작: You're very welcome! I'm glad I could help make your trip pl
-   138.99s  agent 발화 끝
-   139.96s  user  발화 시작: It really is. I feel much better about it now.
-   143.28s  agent 발화 시작: That's wonderful to hear. Sometimes just having a plan can a
-   143.38s  user  발화 끝
-   149.71s  agent 발화 끝
-   149.82s  user  발화 시작: I think so too. Maybe we’ll explore some smaller cafes after
-   155.00s  user  발화 끝
-   155.02s  agent 발화 시작: That sounds delightful! Discovering hidden gems is a special
-   160.57s  agent 발화 끝
+     3.29s  <ret> 발화 (turn1 첫 프레임)
+     3.53s  agent 발화 시작: <ret> Certainly! The Eiffel Tower’s coordinates are 48.8584 
+     3.70s  user  발화 끝
+     4.57s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.52s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
+     6.24s  user  발화 시작: Exactly.
+     7.29s  user  발화 끝
+    12.05s  agent 발화 끝
+    12.12s  user  발화 시작: That’s helpful, thanks. I’m planning a trip there next month
+    15.82s  user  발화 끝
+    15.99s  agent 발화 시작: That sounds lovely! Paris is always a good idea, especially 
+    21.75s  user  발화 시작: I was wondering, what's the weather usually like there in Ma
+    21.78s  agent 발화 끝
+    25.71s  <ret> 발화 (turn6 첫 프레임)
+    25.88s  agent 발화 시작: <ret> May in Paris is quite pleasant. The average high is ni
+    25.91s  user  발화 끝
+    26.91s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.27s]: (tool result) The average high temperature in Paris in May is 19 degre
+    33.80s  agent 발화 끝
+    34.34s  user  발화 시작: Hmm, twelve days of rain… that’s a bit much.
+    38.15s  agent 발화 시작: It's good to be prepared, though! Packing a light raincoat m
+    38.19s  user  발화 끝
+    43.61s  agent 발화 끝
+    43.94s  user  발화 시작: Maybe. I’m going with a friend, and we’re both pretty nervou
+    49.37s  agent 발화 시작: It’s completely normal to feel that way! Exploring a new pla
+    49.55s  user  발화 끝
+    55.48s  agent 발화 끝
+    56.34s  user  발화 시작: It is. We’re hoping to find some walking tours, maybe someth
+    62.24s  <ret> 발화 (turn12 첫 프레임)
+    62.31s  user  발화 끝
+    62.48s  agent 발화 시작: <ret> I found three walking tours: “Secret Paris,” “Montmart
+    63.92s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.60s]: (tool result) Three walking tours match your criteria: “Secret Paris”,
+    64.98s  user  발화 시작: Okay.
+    65.71s  user  발화 끝
+    69.97s  user  발화 시작: Oh, those sound amazing! "Montmartre's Hidden Corners" – tha
+    70.08s  agent 발화 끝
+    75.25s  agent 발화 시작: That area is truly charming! It’s full of artistic history a
+    75.39s  user  발화 끝
+    81.41s  agent 발화 끝
+    82.80s  user  발화 시작: Do any of those tours offer a discount for students?
+    86.41s  user  발화 끝
+    86.83s  agent 발화 시작: —it's a very popular spot.
+    88.50s  <ret> 발화 (turn18 첫 프레임)
+    88.90s  agent 발화 시작: <ret> Let me check student discounts for those tours.
+    88.95s  agent 발화 끝
+    89.46s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.47s]: (tool result) “Montmartre’s Hidden Corners” offers a ten percent stude
+    92.23s  agent 발화 시작: Good news! "Montmartre's Hidden Corners" has a ten percent d
+    92.37s  agent 발화 끝
+    98.32s  agent 발화 끝
+    98.45s  user  발화 시작: Wonderful! That'll help a lot.
+   100.99s  user  발화 끝
+   101.32s  agent 발화 시작: I'm glad I could help with that. It’s always nice to save a 
+   105.39s  agent 발화 끝
+   106.60s  user  발화 시작: I’m also trying to find a good little bistro near the Eiffel
+   112.55s  <ret> 발화 (turn23 첫 프레임)
+   112.72s  user  발화 끝
+   112.87s  agent 발화 시작: <ret> I found a bistro for you. “Le Bistro du 7ème” is five 
+   113.91s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.49s]: (tool result) “Le Bistro du 7ème” is a highly-rated bistro 500 meters 
+   121.17s  agent 발화 끝
+   122.12s  user  발화 시작: That sounds perfect! Is it easy to get to on foot from the t
+   126.53s  agent 발화 시작: It is! It’s about a ten-minute walk, mostly along quiet side
+   126.61s  user  발화 끝
+   131.90s  agent 발화 끝
+   131.92s  user  발화 시작: Excellent. This is all so helpful, Nellara. I feel much bett
+   137.33s  agent 발화 시작: That makes me so happy to hear! Feeling prepared is half the
+   137.34s  user  발화 끝
+   143.45s  agent 발화 끝
+   143.51s  user  발화 시작: I think I just need to book the tour now, then.
+   145.76s  <ret> 발화 (turn29 첫 프레임)
+   145.84s  agent 발화 시작: <ret> I can book that for you now. Your tour is booked! Conf
+   145.96s  user  발화 끝
+   147.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: (tool result) Your booking for “Montmartre’s Hidden Corners” is confir
+   154.55s  agent 발화 끝
+   155.96s  user  발화 시작: Fantastic! Thank you so much, Nellara.
+   159.43s  user  발화 끝
+   159.59s  agent 발화 시작: You are very welcome! Have a wonderful trip to Paris, and en
+   166.22s  agent 발화 끝

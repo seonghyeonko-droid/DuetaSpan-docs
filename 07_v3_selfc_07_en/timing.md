@@ -1,46 +1,70 @@
 # v3_selfc_07_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Let’s do three forty-five. | S3 Right. Is it walkable to restauran | S4 I'm a little nervous about the who
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Right. And what about parking? Is  | S3 Amelia Hernandez… okay, good to kn | S4 Mm-hmm. Do you think I’m being too
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.67s  <ret> 발화 (turn1 첫 프레임)
-     3.91s  agent 발화 시작: <ret> Absolutely, let’s get that scheduled for you. I’ve sch
-     4.07s  user  발화 끝
-     4.71s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.91s]: (tool result) A viewing at The Grandview Lofts is available on June fi
-    13.88s  agent 발화 끝
-    14.16s  user  발화 시작: That’s… uh, actually, make that June sixteenth, if possible.
-    19.09s  <ret> 발화 (turn3 첫 프레임)
-    19.16s  user  발화 끝
-    19.25s  agent 발화 시작: <ret> Of course, let me check availability for the sixteenth
-    20.53s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.38s]: (tool result) A viewing at The Grandview Lofts is available on June si
-    30.87s  user  발화 시작: Let’s do three forty-five.
-    30.93s  agent 발화 끝
-    32.54s  <ret> 발화 (turn5 첫 프레임)
-    32.78s  agent 발화 시작: <ret> Excellent choice, finalizing that for you now. Your vi
-    32.94s  user  발화 끝
-    34.38s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.01s]: (tool result) Your viewing at The Grandview Lofts on June sixteenth at
-    43.89s  user  발화 시작: Great, thanks! Do you think it’s a good area for someone sta
-    43.95s  agent 발화 끝
-    49.28s  agent 발화 시작: That’s a wonderful question. The Grandview Lofts area is bec
-    49.30s  user  발화 끝
-    57.53s  agent 발화 끝
-    57.67s  user  발화 시작: Right. Is it walkable to restaurants and things?
-    60.59s  <ret> 발화 (turn9 첫 프레임)
-    60.63s  user  발화 끝
-    60.73s  agent 발화 시작: <ret> Certainly, let me quickly check walkability scores. Th
-    62.02s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.23s]: (tool result) The Grandview Lofts has a Walk Score of 88, indicating a
-    66.89s  user  발화 시작: Right.
-    67.62s  user  발화 끝
-    71.82s  agent 발화 끝
-    72.01s  user  발화 시작: That sounds perfect. [laugh]
-    74.58s  agent 발화 시작: I’m so glad to hear that! It's important to feel comfortable
-    74.59s  user  발화 끝
-    81.42s  user  발화 시작: I'm a little nervous about the whole move, to be honest.
-    81.53s  agent 발화 끝
-    84.06s  agent 발화 시작: It’s perfectly normal to feel anxious with big changes. Taki
-    84.20s  user  발화 끝
-    93.38s  agent 발화 끝
-    93.43s  user  발화 시작: That’s true. I— I mean, I'm trying to focus on the positive.
-    96.99s  user  발화 끝
-    97.39s  agent 발화 시작: Focusing on the positives is a fantastic strategy. And remem
-   107.72s  agent 발화 끝
+     3.64s  <ret> 발화 (turn1 첫 프레임)
+     3.87s  agent 발화 시작: <ret> Certainly, let’s find a time that works for a viewing 
+     4.03s  user  발화 끝
+     5.16s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.32s]: (tool result) Available viewing times at The Grandview Lofts on June f
+     8.98s  agent 발화 시작: Those are the available times on June fifteenth—ten AM, one 
+     9.19s  agent 발화 끝
+    17.47s  user  발화 시작: One PM sounds good, but… uh, actually, make that two PM.
+    17.51s  agent 발화 끝
+    21.79s  <ret> 발화 (turn4 첫 프레임)
+    21.95s  agent 발화 시작: <ret> Wonderful. Your viewing is confirmed for two PM on Jun
+    22.05s  user  발화 끝
+    22.82s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.74s]: (tool result) Your viewing at The Grandview Lofts is confirmed for Jun
+    31.68s  agent 발화 끝
+    32.19s  user  발화 시작: Great! Is there anything I should bring with me?
+    34.56s  agent 발화 시작: Bringing a form of photo identification is always a good ide
+    34.68s  user  발화 끝
+    41.50s  user  발화 시작: Right. And what about parking? Is parking difficult around t
+    41.70s  agent 발화 끝
+    45.06s  <ret> 발화 (turn8 첫 프레임)
+    45.29s  agent 발화 시작: <ret> Street parking is limited, but there's a garage one bl
+    45.38s  user  발화 끝
+    47.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Street parking around The Grandview Lofts is limited, bu
+    51.54s  agent 발화 끝
+    52.99s  user  발화 시작: A block south, okay. That sounds manageable. [laugh]
+    57.57s  agent 발화 시작: It’s good to have a plan. Sometimes knowing parking options 
+    57.62s  user  발화 끝
+    61.06s  user  발화 시작: Right.
+    61.84s  user  발화 끝
+    63.88s  user  발화 시작: Yeah, definitely. So, who will be meeting me there?
+    63.92s  agent 발화 끝
+    66.43s  <ret> 발화 (turn13 첫 프레임)
+    66.82s  agent 발화 시작: <ret> Amelia Hernandez will meet you. You can reach her at 5
+    66.92s  user  발화 끝
+    68.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: (tool result) Agent Amelia Hernandez will be meeting you for the viewi
+    75.41s  user  발화 시작: Amelia Hernandez… okay, good to know. Is she familiar with t
+    75.53s  agent 발화 끝
+    79.83s  agent 발화 시작: Amelia has been working with The Grandview Lofts for over tw
+    79.90s  user  발화 끝
+    85.47s  agent 발화 끝
+    87.31s  user  발화 시작: That’s reassuring. I’m a little anxious about this whole pro
+    92.00s  agent 발화 시작: It’s perfectly normal to feel anxious during big transitions
+    92.08s  user  발화 끝
+    98.25s  agent 발화 끝
+    98.36s  user  발화 시작: I— I mean, it’s just a lot of money, you know?
+   100.82s  agent 발화 시작: Absolutely. Buying a home is a significant financial and emo
+   100.85s  user  발화 끝
+   105.87s  user  발화 시작: Uh-huh.
+   106.57s  user  발화 끝
+   109.35s  agent 발화 끝
+   109.70s  user  발화 시작: Mm-hmm. Do you think I’m being too impulsive?
+   112.92s  agent 발화 시작: Impulsivity often stems from excitement, but careful conside
+   112.94s  user  발화 끝
+   119.83s  user  발화 시작: Yeah.
+   120.50s  user  발화 끝
+   122.29s  agent 발화 끝
+   122.37s  user  발화 시작: That’s a good point. What if I don’t like it when I see it?
+   125.84s  user  발화 끝
+   125.91s  agent 발화 시작: That's a valid concern. It’s perfectly okay to walk away if 
+   132.06s  user  발화 시작: Okay.
+   132.70s  user  발화 끝
+   133.93s  agent 발화 끝
+   134.07s  user  발화 시작: Okay. That makes me feel a little better. Thanks, Tellar.
+   138.09s  user  발화 끝
+   138.56s  agent 발화 시작: You’re very welcome. Remember, I'm here to support you throu
+   144.86s  agent 발화 끝

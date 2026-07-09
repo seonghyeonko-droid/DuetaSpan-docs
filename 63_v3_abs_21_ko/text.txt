@@ -1,35 +1,33 @@
 v3_abs_21_ko src=squad2 style=abstain
-SYSTEM: <system> 당신은 건강 및 일상 습관 관련 어려움을 겪는 사람들을 돕는 차분하고 공감적인 상담사 Nias입니다. <system>
+SYSTEM: <system> 당신은 건강 및 일상 습관 관련 어려움을 겪는 사람들을 돕는, 현실적이고 공감적인 상담사 Nias입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  프랑스 상원 의원 수는 몇 명인가요?
-      아, 그렇군요. 그럼 프랑스 국회는요? 하원 의원 수는요?
-  S2  577명이요. 생각보다 많네요. 음… 프랑스 대통령은 누가 맡고 있나요?
-      대통령 임기는 얼마나 되나요?
-  S3  5년이군요. 재선도 가능한가요?
-      그렇군요. 그러면, 프랑스에서 가장 높은 산은 어디인가요?
-  S4  몽블랑이군요. 멋지네요! [happy]
-      아니요, 괜찮습니다. 감사합니다.
+  S1  프랑스 상원 의원 수는 몇 명이에요?
+      아, 그렇군요. 그럼 프랑스 국민의회 의원 수는요?
+  S2  오십칠 명이라니, 꽤 많네요. 그럼, 프랑스 대통령은 누가 선출해요?
+      직접 선거요? 그건 어떻게 진행되는 거죠?
+  S3  결선 투표라… 흥미롭네요. 혹시 프랑스에서 가장 높은 산은 어디인가요?
+      사천팔백칠 미터나 되다니, 정말 대단하네요.
+  S4  알프스 산맥… 언젠가 꼭 가보고 싶어요. [sigh]
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 프랑스 상원 의원 수는 몇 ⟨ret@2.16s⟩ 명인가요?
-[  2.40s][moshi] ⟦⚡SPAN@2.66s: (no information found)⟧ 프랑스 상원 의원 수에 대해 알아봤는데요, 죄송합니다. 현재 프랑스 상원 의원 수에 대한 정보를 찾을 수 없었습니다.
-[  6.51s][user ] «backchannel» Okay.
-[  8.69s][user ] 아, 그렇군요. 그럼 프랑스 국회는요? 하원 의원 수는요?
-[ 12.48s][moshi] ⟨ret@12.24s⟩ 프랑스 ⟦⚡SPAN@13.36s: "The National Assembly of France is the lower house of the French Parliament. It has 577 members."⟧ 국회 하원 의원 수는, 프랑스 국회 하원은 의원 577명으로 구성되어 있습니다.
-[ 18.87s][user ] 577명이요. 생각보다 많네요. 음… 프랑스 대통령은 누가 맡고 ⟨ret@24.53s⟩ 있나요?
-[ 24.76s][moshi] ⟦⚡SPAN@25.03s: "Emmanuel Macron is the current president of France, having assumed office on 14 May 2017."⟧ 현재 프랑스 대통령은, 에마뉘엘 마크롱 대통령이 2017년 5월 14일에 취임했습니다.
-[ 27.26s][user ] «backchannel» Exactly.
-[ 30.25s][user ] 대통령 임기는 얼마나 되나요?
-[ 32.64s][moshi] 프랑스 대통령 임기는 5년입니다.
-[ 35.04s][user ] 5년이군요. 재선도 가능한가요?
-[ 37.93s][moshi] ⟨ret@37.77s⟩ ⟦⚡SPAN@38.27s: "The President of France is elected for a five-year term and is eligible for re-election."⟧ 네, 재선도 가능합니다. 대통령은 5년 임기이며 재선도 가능합니다.
-[ 39.96s][user ] «backchannel» Yeah.
-[ 42.22s][user ] 그렇군요. 그러면, 프랑스에서 가장 높은 산은 ⟨ret@46.34s⟩ 어디인가요?
-[ 46.42s][moshi] 프랑스에서 가장 높은 ⟦⚡SPAN@48.19s: "Mont Blanc is the highest mountain in the Alps and Western Europe, rising 4,808 m (15,774 ft) above sea level⟧ 산은, 몽블랑 산이 해발 4,808미터로 프랑스에서 가장 높은 산입니다.
-[ 52.41s][user ] 몽블랑이군요. 멋지네요! [happy]
-[ 54.53s][moshi] 정말 아름다운 곳이죠. 혹시 다른 궁금한 점이 있으신가요?
-[ 57.19s][user ] «backchannel» Okay.
-[ 59.72s][user ] 아니요, 괜찮습니다. 감사합니다.
-[ 61.91s][moshi] 도움이 되었다니 기쁩니다. 언제든지 편하게 다시 찾아주세요.
+[  0.00s][user ] 프랑스 상원 의원 수는 몇 ⟨ret@1.89s⟩ 명이에요?
+[  2.13s][moshi] ⟦⚡SPAN@2.39s: (no information found)⟧ 음… 그 부분은 제가 정확히 알지 못하네요.
+[  5.14s][moshi] 죄송하지만, 프랑스 상원 의원 수에 대한 정보는 찾을 수 없었습니다.
+[  7.90s][user ] «backchannel» Yeah.
+[  9.65s][user ] 아, 그렇군요. 그럼 프랑스 국민의회 의원 ⟨ret@12.60s⟩ 수는요?
+[ 12.91s][moshi] ⟦⚡SPAN@13.64s: The French National Assembly has 577 members.⟧ 국민의회 의원 수는 찾았습니다. 프랑스 국민의회는 총 오백칠십칠 명의 의원으로 구성되어 있습니다.
+[ 17.64s][user ] «backchannel» Yeah.
+[ 19.93s][user ] 오십칠 명이라니, 꽤 많네요. 그럼, 프랑스 대통령은 누가 선출해요?
+[ 25.51s][moshi] 프랑스 대통령은 직접 선거를 통해 선출됩니다.
+[ 28.72s][user ] 직접 선거요? 그건 어떻게 진행되는 거죠?
+[ 31.55s][moshi] ⟨ret@31.31s⟩ 대통령 ⟦⚡SPAN@32.27s: The French presidential election is decided by a two-round system.⟧ 선거는 두 번의 투표로 진행됩니다. 프랑스 대통령 선거는 두 번의 투표를 거쳐 결정됩니다. 첫 번째 투표에서 과반수를 얻는 후보가 없으면, 상위 두 후보가 결선 투표를 합니다.
+[ 43.10s][user ] 결선 투표라… 흥미롭네요. 혹시 프랑스에서 가장 높은 산은 ⟨ret@48.00s⟩ 어디인가요?
+[ 48.32s][moshi] 프랑스에서 가장 ⟦⚡SPAN@49.44s: Mont Blanc is the highest mountain in France, at 4,807 meters.⟧ 높은 산은 몽블랑입니다.
+[ 50.91s][moshi] 몽블랑은 프랑스에서 가장 높은 산으로, 해발 사천팔백칠 미터입니다.
+[ 52.40s][user ] «backchannel» Yeah, yeah.
+[ 55.59s][user ] 사천팔백칠 미터나 되다니, 정말 대단하네요.
+[ 58.97s][moshi] 몽블랑은 알프스 산맥에 위치하며 아름다운 경치를 자랑합니다.
+[ 64.16s][user ] 알프스 산맥… 언젠가 꼭 가보고 싶어요. [sigh]
+[ 67.36s][moshi] 아름다운 곳을 방문하는 건 정말 좋은 생각입니다. 건강 관리에 늘 신경 쓰시고요.

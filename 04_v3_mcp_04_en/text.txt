@@ -2,11 +2,22 @@ v3_mcp_04_en src=mcp style=v2
 SYSTEM: <system> You are Lio, a thoughtful and soft-spoken counselor who helps people with big life transitions. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  Could you please set the user agent to SuperCrawler version ten point 
+  S2  That was fast. Um, can you check if that change was successful by visi
+  S3  It is, but… that feels a bit aggressive, doesn’t it? Maybe something a
+  S4  Yeah, you’re right. Let’s switch it back to the default.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point one?
-[  6.27s][moshi] ⟨ret@5.96s⟩ Certainly. ⟦⚡SPAN@7.00s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ The user agent has been updated as requested. Is there anything else I can assist with regarding your browsing setup?
+[  5.04s][moshi] ⟨ret@4.73s⟩ Certainly. ⟦⚡SPAN@5.77s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ The user agent has been updated as requested, to SuperCrawler version ten point one. Is there anything else I can adjust for you?
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[  9.65s][user ] «backchannel» Mhm.
-[ 13.53s][user ] Hmm, that seems… aggressive. Could we try something a little more subtle, like a standard Mac Safari user ⟨ret@21.08s⟩ agent?
-[ 21.32s][moshi] Of course. I’ve ⟦⚡SPAN@22.84s: (tool result) The user agent is now set to Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.1⟧ switched to the Mac Safari user agent. Sometimes a gentler approach is more effective, wouldn't you agree?
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version 14.1.2 Safari 605.1.15"}}
-[ 29.53s][user ] Yeah, that feels better. Now, uh, could you find me a good coffee shop nearby— somewhere quiet?
+[  9.22s][user ] «backchannel» Mhm.
+[ 13.99s][user ] That was fast. Um, can you check if that change was successful by visiting example dot ⟨ret@20.85s⟩ com?
+[ 21.08s][moshi] The website confirms ⟦⚡SPAN@22.61s: (tool result) The website reports the user agent as SuperCrawler version 10.1.⟧ the user agent is now SuperCrawler version ten point one. That’s reassuring, isn’t it?
+      CALL: {"function": "playwright_fetch", "arguments": {"url": "https://example.com"}}
+[ 28.38s][user ] It is, but… that feels a bit aggressive, doesn’t it? Maybe something a little more subtle?
+[ 33.95s][moshi] [laugh] It can feel that way when we’re testing things. Perhaps a more common browser string would be less noticeable for ongoing use?
+[ 42.70s][user ] Yeah, you’re right. Let’s switch it back to the default.
+[ 45.46s][moshi] ⟨ret@45.39s⟩ The user ⟦⚡SPAN@46.59s: (tool result) The user agent is now set to the default browser setting.⟧ agent is now back to the default setting. Sometimes a return to normalcy is just what we need.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "default"}}

@@ -3,45 +3,40 @@ SYSTEM: <system> You are Bena, a curious and validating counselor who helps peop
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  So, uh, I was reading about Italy, and… Mount Vesuvius, right? When di
-      Nineteen forty-four… wow. That’s… recent, I guess?
-      Yeah. I— I mean, is it still, like, actively monitored?
-  S2  Right. Uh, how close are people living to it now?
-      Three million… that’s a lot. Is there, like, a plan if it erupts again
-      A national plan… good to hear. So, uh, is it expected to erupt *soon*?
-  S3  Is it showing any signs right now?
-      Is there anything unusual happening with it currently?
-      A yellow alert… what does that even *mean* exactly?
-  S4  Okay, so not like, “grab your bags and go” yet?
-      That makes sense. It’s just… a little scary thinking about it.
+  S1  So, uh, I was reading about Italy, and I was wondering… when did Vesuv
+      Yeah, it is. I mean, it’s been a while, right? But I don’t know exactl
+      Nineteen forty-four? Wow. That’s… recent, actually. I always thought i
+  S2  Right. So, um, was it a big eruption, like Pompeii big, or smaller?
+      Okay, good to know. Because that was… pretty intense.
+  S3  It is. I—I mean, I guess it was mostly lava then, in nineteen forty-fo
+      Okay, so no pyroclastic surges. That’s… less scary.
+      So, is it still active, then? Is there a risk of another eruption?
+  S4  Oh. That’s… unsettling. But I guess they monitor it closely?
+      Yellow… okay. So, not imminent, then?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] So, uh, I was reading about Italy, and… Mount Vesuvius, right? When did it, um, last actually ⟨ret@7.43s⟩ erupt?
-[  7.66s][moshi] That’s a very natural ⟦⚡SPAN@9.43s: Mount Vesuvius last erupted in March 1944.⟧ question when thinking about Italy’s landscape.
-[ 11.66s][moshi] Vesuvius’s most recent eruption was in March nineteen forty-four.
-[ 15.97s][user ] Nineteen forty-four… wow. That’s… recent, I guess?
-[ 19.41s][moshi] It’s certainly within living memory for some, which is a powerful thought.
-[ 25.40s][user ] Yeah. I— I mean, is it still, like, actively monitored?
-[ 29.27s][moshi] Absolutely. It’s under constant observation, given its history and proximity to populated areas.
-[ 36.59s][user ] Right. Uh, how close are people living to it now?
-[ 39.68s][moshi] ⟨ret@39.54s⟩ That’s a good question; many ⟦⚡SPAN@41.54s: Approximately 3 million people live within 10 kilometers of Mount Vesuvius.⟧ towns and cities are quite close.
-[ 43.66s][moshi] Around three million people live within ten kilometers of the volcano.
-[ 45.27s][user ] «backchannel» Yeah.
-[ 47.95s][moshi] It's a significant population, so preparedness is understandably crucial.
-[ 52.69s][user ] Three million… that’s a lot. Is there, like, a plan if it erupts again?
-[ 57.65s][moshi] ⟨ret@57.59s⟩ There ⟦⚡SPAN@58.63s: The Italian government has a National Risk Mitigation Plan for volcanic areas.⟧ are comprehensive emergency plans in place, regularly updated and practiced.
-[ 62.39s][moshi] Italy has a national plan to mitigate risks in volcanic zones.
-[ 68.20s][user ] A national plan… good to hear. So, uh, is it expected to erupt *soon*?
-[ 73.59s][moshi] Predicting eruptions is complex, but scientists are always analyzing activity.
-[ 76.89s][user ] «backchannel» Yeah.
-[ 78.74s][user ] Is it showing any signs right now?
-[ 81.06s][user ] Is there anything unusual happening with it currently?
-[ 83.98s][moshi] It is currently showing signs of unrest, but not necessarily an imminent eruption—
-[ 88.83s][moshi] ⟨ret@88.67s⟩ The volcano is currently ⟦⚡SPAN@90.67s: Mount Vesuvius is currently at a yellow alert level, indicating volcanic unrest.⟧ at a yellow alert level, meaning unrest.
-[ 93.53s][user ] A yellow alert… what does that even *mean* exactly?
-[ 97.14s][moshi] It signifies unusual activity, needing closer monitoring, but doesn't mean an eruption is certain.
-[105.02s][user ] Okay, so not like, “grab your bags and go” yet?
-[108.08s][moshi] Not at all. It's more a signal for increased vigilance and preparation.
-[111.44s][user ] «backchannel» Right.
-[114.05s][user ] That makes sense. It’s just… a little scary thinking about it.
-[118.45s][moshi] It’s completely understandable to feel that way. Facing the power of nature can be unsettling. Perhaps we could discuss ways to manage that anxiety?
+[  0.00s][user ] So, uh, I was reading about Italy, and I was wondering… when did Vesuvius last, like, actually erupt?
+[  6.72s][moshi] That’s a good question—thinking about geological time can be quite humbling, doesn’t it?
+[ 13.15s][user ] Yeah, it is. I mean, it’s been a while, right? But I don’t know exactly *how* ⟨ret@17.76s⟩ long.
+[ 18.07s][moshi] The last ⟦⚡SPAN@19.04s: Mount Vesuvius last erupted in March 1944.⟧ eruption was… Mount Vesuvius last erupted in March of nineteen forty-four.
+[ 24.10s][user ] Nineteen forty-four? Wow. That’s… recent, actually. I always thought it was much older.
+[ 29.28s][moshi] It *feels* ancient, doesn’t it? But relatively speaking, in geological terms, that isn’t so very long ago.
+[ 37.62s][user ] Right. So, um, was it a big eruption, like Pompeii big, or smaller?
+[ 42.94s][moshi] It wasn’t on the scale of the seventy-nine AD eruption that buried Pompeii and Herculaneum, thankfully.
+[ 49.36s][user ] Okay, good to know. Because that was… pretty intense.
+[ 52.47s][moshi] Intense is an understatement—it was a truly devastating event. It's helpful to remember those historical impacts.
+[ 55.19s][user ] «backchannel» Yeah.
+[ 59.50s][moshi] It’s easy to forget the power of nature when we’re focused on daily life, isn’t it?
+[ 64.34s][user ] It is. I—I mean, I guess it was mostly lava then, in nineteen ⟨ret@68.61s⟩ forty-four?
+[ 69.00s][moshi] ⟦⚡SPAN@69.11s: The 1944 eruption of Mount Vesuvius involved lava flows and ashfall.⟧ The nineteen forty-four eruption… Involved lava flows and ashfall, but without the pyroclastic surges of seventy-nine AD.
+[ 74.50s][user ] «backchannel» Yeah.
+[ 76.99s][user ] Okay, so no pyroclastic surges. That’s… less scary.
+[ 81.06s][moshi] It was still disruptive, of course, but far less catastrophic for nearby populations.
+[ 87.21s][user ] So, is it still active, then? Is there a risk of another eruption?
+[ 91.10s][moshi] Absolutely—Vesuvius is still considered an active volcano, and it *will* erupt again eventually.
+[ 97.34s][user ] Oh. That’s… unsettling. But I guess they monitor it ⟨ret@102.28s⟩ closely?
+[102.51s][moshi] They ⟦⚡SPAN@103.48s: (tool result) Current alert level: Yellow. Last update: 2024-02-29 14:35 UTC. Seismic activity: Moderate.⟧ do. There’s a very sophisticated monitoring system in place, tracking everything from ground deformation to gas emissions.
+[110.51s][moshi] The current alert level is yellow, with moderate seismic activity as of February twenty-ninth.
+[114.00s][user ] «backchannel» Right.
+[116.13s][user ] Yellow… okay. So, not imminent, then?
+[119.59s][moshi] Not imminently—but it's a constant vigilance, a reminder of nature's underlying power. Perhaps we could explore your career anxieties too?

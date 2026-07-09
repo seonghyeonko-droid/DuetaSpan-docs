@@ -1,112 +1,98 @@
 # v3_rag_25_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 So, I was just wondering… what spo | S2 A junior title, huh? That’s pretty | S3 Eleven titles… that’s a lot of win | S4 Oh! An Olympic medal! See, that’s 
+# EXAMINER(FDB-v2) 단계: S1 So, I was reading about Jack Sock  | S2 Sixteen? That's pretty good! I gue | S3 Oh, of course! That makes total se | S4 Okay, this is really clearing thin
 
-     0.00s  user  발화 시작: So, I was just wondering… what sport did Jack Sock and Raffa
-     8.60s  agent 발화 시작: That’s a good question, and a common one, actually. It’s won
-     8.77s  user  발화 끝
-    14.26s  <ret> 발화 (turn2 첫 프레임)
-    14.34s  agent 발화 시작: <ret> Both athletes are known for… Jack Sock and Raffaella R
-    14.49s  agent 발화 끝
-    15.38s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.25s]: Jack Sock and Raffaella Reggi are both professional tennis players.
-    17.30s  user  발화 시작: Yeah.
-    17.80s  user  발화 끝
-    23.80s  agent 발화 끝
-    23.86s  user  발화 시작: Tennis, huh? Hmm. I thought maybe Raffaella Reggi played vol
-    31.79s  agent 발화 시작: It's easy to get things mixed up, especially with athletes w
-    31.97s  user  발화 끝
-    38.38s  <ret> 발화 (turn6 첫 프레임)
-    38.69s  agent 발화 끝
-    38.69s  agent 발화 시작: <ret> Let’s double-check Raffaella’s main focus… Raffaella R
-    39.34s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.24s]: Raffaella Reggi retired from professional tennis in 2004, achieving a 
-    46.30s  agent 발화 끝
-    46.43s  user  발화 시작: Okay, okay, tennis it is. But Jack Sock… wasn’t he also tryi
-    55.19s  user  발화 끝
-    55.33s  agent 발화 시작: It’s interesting how paths can diverge, isn't it? Exploring 
-    61.41s  <ret> 발화 (turn9 첫 프레임)
-    61.73s  agent 발화 시작: <ret> Jack Sock did have some early athletic interests… Jack
-    61.86s  agent 발화 끝
-    62.53s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.84s]: Jack Sock was drafted by the Kansas City Royals in the 2012 MLB draft,
-    68.82s  agent 발화 끝
-    69.19s  user  발화 시작: So, he *did* play another sport! Just not professionally, I 
-    76.99s  agent 발화 시작: Absolutely. Every decision closes some doors while opening o
-    77.07s  user  발화 끝
-    84.13s  <ret> 발화 (turn12 첫 프레임)
-    84.53s  agent 발화 시작: <ret> Let's look into his early tennis career… Jack Sock won
-    84.69s  agent 발화 끝
-    85.49s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.70s]: Jack Sock won the 2010 Junior US Open boys' singles title, signaling h
-    91.85s  agent 발화 끝
-    92.01s  user  발화 시작: A junior title, huh? That’s pretty good. Still, it feels lik
-    98.54s  user  발화 끝
-    98.55s  agent 발화 시작: It's natural to wonder about "what ifs." But focusing on the
-   104.78s  <ret> 발화 (turn15 첫 프레임)
-   105.02s  agent 발화 시작: <ret> Regarding Reggi’s doubles success… Raffaella Reggi won
-   105.03s  agent 발화 끝
-   105.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: Raffaella Reggi won the Australian Open women's doubles title in 1998 
-   112.10s  agent 발화 끝
-   112.31s  user  발화 시작: Doubles, huh? I always forget about doubles. So, both were m
-   119.78s  agent 발화 시작: Sometimes focusing on individual accomplishments overshadows
-   119.82s  user  발화 끝
-   125.94s  <ret> 발화 (turn18 첫 프레임)
-   126.18s  agent 발화 시작: <ret> Let’s confirm Sock’s singles ranking… Jack Sock reache
-   126.36s  agent 발화 끝
-   127.38s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.87s]: Jack Sock reached a career-high ATP singles ranking of world No. 8 in 
-   129.38s  user  발화 시작: Yeah.
-   129.87s  user  발화 끝
-   132.15s  agent 발화 끝
-   132.39s  user  발화 시작: Number eight! Wow, that’s actually really good. I didn’t rea
-   138.31s  user  발화 끝
-   138.50s  agent 발화 시작: It's easy to underestimate someone’s accomplishments without
-   144.77s  <ret> 발화 (turn22 첫 프레임)
-   145.08s  agent 발화 시작: <ret> Focusing on Reggi’s overall career… Raffaella Reggi wo
-   145.17s  agent 발화 끝
-   145.81s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.38s]: Raffaella Reggi won eleven doubles titles during her professional tenn
-   151.75s  agent 발화 끝
-   152.21s  user  발화 시작: Eleven titles… that’s a lot of winning. So, she wasn’t just 
-   159.10s  agent 발화 시작: Consistency is often a sign of true skill. A single win can 
-   159.21s  user  발화 끝
-   166.58s  <ret> 발화 (turn25 첫 프레임)
-   166.66s  agent 발화 시작: <ret> Considering Jack Sock’s early training… Jack Sock trai
-   166.70s  agent 발화 끝
-   167.54s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: Jack Sock trained at the Evert Tennis Academy in Boca Raton, Florida, 
-   172.72s  agent 발화 끝
-   173.17s  user  발화 시작: The Evert Academy… that’s a pretty prestigious place, isn't 
-   179.74s  agent 발화 시작: A supportive environment can make a huge difference. Having 
-   179.80s  user  발화 끝
-   184.90s  <ret> 발화 (turn28 첫 프레임)
-   185.14s  agent 발화 시작: <ret> Let’s look at Reggi’s nationality… Raffaella Reggi is 
-   185.31s  agent 발화 끝
-   186.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.42s]: Raffaella Reggi is an Italian former professional tennis player.
-   188.48s  user  발화 시작: Yeah.
-   188.93s  user  발화 끝
-   190.46s  agent 발화 끝
-   191.39s  user  발화 시작: Italian, huh? I wouldn’t have guessed that. I always associa
-   198.84s  user  발화 끝
-   198.92s  agent 발화 시작: Sometimes our assumptions can limit our understanding. It’s 
-   205.01s  <ret> 발화 (turn32 첫 프레임)
-   205.33s  agent 발화 시작: <ret> Regarding Jack Sock’s Olympic participation… Jack Sock
-   205.41s  agent 발화 끝
-   206.13s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: Jack Sock won a bronze medal in men’s doubles at the 2016 Summer Olymp
-   211.96s  agent 발화 끝
-   211.96s  user  발화 시작: Oh! An Olympic medal! See, that’s something I definitely did
-   218.43s  agent 발화 시작: Recognizing achievements, both big and small, is a wonderful
-   218.44s  user  발화 끝
-   224.01s  <ret> 발화 (turn35 첫 프레임)
-   224.17s  agent 발화 시작: <ret> Regarding Reggi’s playing style… Raffaella Reggi had a
-   224.26s  agent 발화 끝
-   225.29s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.78s]: Raffaella Reggi was known for her aggressive baseline game and powerfu
-   228.58s  user  발화 시작: Mm-hmm.
-   229.12s  user  발화 끝
-   230.85s  agent 발화 끝
-   231.14s  user  발화 시작: Aggressive, huh? I like that. I guess you need that to be su
-   236.36s  agent 발화 시작: A proactive approach can be beneficial in many areas of life
-   236.45s  user  발화 끝
-   243.91s  <ret> 발화 (turn39 첫 프레임)
-   244.31s  agent 발화 시작: <ret> Considering Sock’s Davis Cup involvement… Jack Sock pl
-   244.48s  agent 발화 끝
-   245.19s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.90s]: Jack Sock represented the United States in the Davis Cup from 2013 to 
-   251.07s  user  발화 시작: Davis Cup… I'm still fuzzy on what that is exactly. Is it li
-   251.16s  agent 발화 끝
-   256.99s  agent 발화 시작: It’s a team competition, a bit like the World Cup in soccer.
-   257.00s  user  발화 끝
-   263.20s  agent 발화 끝
+     0.00s  user  발화 시작: So, I was reading about Jack Sock and Raffaella Reggi, and I
+     9.44s  agent 발화 시작: It’s understandable to feel a bit stuck when details are elu
+     9.60s  user  발화 끝
+    11.63s  user  발화 시작: Yeah.
+    12.17s  user  발화 끝
+    16.32s  user  발화 시작: Well, I looked it up, but I got conflicting answers. Some si
+    16.49s  agent 발화 끝
+    21.51s  <ret> 발화 (turn4 첫 프레임)
+    21.59s  agent 발화 시작: <ret> Both athletes competed in… Jack Sock and Raffaella Reg
+    21.61s  user  발화 끝
+    22.07s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.67s]: Jack Sock and Raffaella Reggi are both professional tennis players.
+    27.10s  user  발화 시작: Tennis? Really? I thought maybe one of them did something el
+    27.43s  agent 발화 끝
+    33.16s  user  발화 끝
+    33.28s  agent 발화 시작: It's good to question things, to really explore possibilitie
+    40.41s  agent 발화 끝
+    40.56s  user  발화 시작: Okay, but Reggi… I’ve never heard of her. Was she, like, a r
+    45.39s  <ret> 발화 (turn8 첫 프레임)
+    45.62s  agent 발화 시작: <ret> Raffaella Reggi achieved a career-high… Raffaella Regg
+    45.65s  user  발화 끝
+    46.99s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.69s]: Raffaella Reggi reached a career-high ranking of number sixteen in sin
+    51.90s  user  발화 시작: Sixteen? That's pretty good! I guess I just don’t follow ten
+    52.06s  agent 발화 끝
+    59.69s  agent 발화 시작: It’s easy to be unaware of achievements outside our immediat
+    59.78s  user  발화 끝
+    65.59s  <ret> 발화 (turn11 첫 프레임)
+    65.91s  agent 발화 시작: <ret> Jack Sock’s highest ranking was… Jack Sock achieved a 
+    66.08s  agent 발화 끝
+    66.63s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.29s]: Jack Sock achieved a career-high ATP singles ranking of number eight i
+    74.63s  agent 발화 끝
+    75.44s  user  발화 시작: Number eight! Okay, that explains it. They’re both seriously
+    83.54s  agent 발화 시작: That’s a good question, as there are different aspects withi
+    83.60s  user  발화 끝
+    89.12s  <ret> 발화 (turn14 첫 프레임)
+    89.44s  agent 발화 시작: <ret> Both players competed primarily in… Jack Sock and Raff
+    89.47s  agent 발화 끝
+    90.17s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.33s]: Jack Sock and Raffaella Reggi both primarily competed in professional 
+    94.22s  user  발화 시작: Yeah.
+    94.67s  user  발화 끝
+    98.24s  user  발화 시작: Singles and doubles, right. So, they weren't just specialist
+    98.29s  agent 발화 끝
+   104.03s  user  발화 끝
+   104.18s  agent 발화 시작: Not necessarily. Many tennis players are versatile and compe
+   110.01s  agent 발화 끝
+   110.06s  user  발화 시작: Did they ever play *against* each other? That seems unlikely
+   115.75s  <ret> 발화 (turn19 첫 프레임)
+   116.15s  agent 발화 시작: <ret> No, they never competed directly… Jack Sock was born i
+   116.18s  user  발화 끝
+   116.79s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.17s]: Jack Sock was born in 1992, while Raffaella Reggi retired in 1995, so 
+   126.59s  agent 발화 끝
+   127.14s  user  발화 시작: Oh, of course! That makes total sense. She’d already retired
+   133.97s  agent 발화 시작: Time can create such distances, even within a single field l
+   134.09s  user  발화 끝
+   137.38s  user  발화 시작: Yeah.
+   137.74s  user  발화 끝
+   139.39s  agent 발화 끝
+   139.91s  user  발화 시작: So, Reggi was a bit before my time, honestly. What was she k
+   146.05s  <ret> 발화 (turn24 첫 프레임)
+   146.29s  agent 발화 시작: <ret> Raffaella Reggi was particularly recognized… Raffaella
+   146.40s  user  발화 끝
+   147.09s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.38s]: Raffaella Reggi was known for her powerful serve and aggressive baseli
+   155.79s  agent 발화 끝
+   156.06s  user  발화 시작: A powerful serve, huh? That's a good weapon to have. And Soc
+   162.31s  user  발화 끝
+   162.56s  agent 발화 시작: It's helpful to understand the different strengths players b
+   166.22s  <ret> 발화 (turn27 첫 프레임)
+   166.47s  agent 발화 시작: <ret> Jack Sock was known for his… Jack Sock was recognized 
+   166.63s  agent 발화 끝
+   167.34s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.27s]: Jack Sock was recognized for his all-court game and his strong volleyi
+   171.24s  user  발화 시작: Mm-hmm.
+   171.73s  user  발화 끝
+   173.52s  user  발화 시작: All-court, interesting. So, they were both pretty well-round
+   173.65s  agent 발화 끝
+   178.64s  agent 발화 시작: It seems they both possessed a diverse skillset, allowing th
+   178.79s  user  발화 끝
+   185.08s  user  발화 시작: Okay, this is really clearing things up. Thanks, Zura. I fee
+   185.08s  agent 발화 끝
+   190.08s  user  발화 끝
+   190.20s  agent 발화 시작: You’re very welcome. It’s my intention to provide clarity an
+   196.13s  agent 발화 끝
+   196.34s  user  발화 시작: I was stuck on that for hours! It's funny how one little det
+   202.45s  agent 발화 시작: It is. Sometimes, a small piece of information can unlock a 
+   202.64s  user  발화 끝
+   209.31s  user  발화 시작: I guess so. Well, maybe I'll watch some old Reggi matches no
+   209.45s  agent 발화 끝
+   213.90s  agent 발화 시작: That sounds like a lovely way to appreciate her contribution
+   213.94s  user  발화 끝
+   217.09s  user  발화 시작: Uh-huh.
+   217.59s  user  발화 끝
+   219.26s  user  발화 시작: Yeah, I think I will. Thanks again, Zura.
+   219.33s  agent 발화 끝
+   222.32s  user  발화 끝
+   222.32s  agent 발화 시작: You're most kind. Remember, seeking understanding is always 
+   227.33s  agent 발화 끝

@@ -1,53 +1,66 @@
 v3_rag_25_ko src=hotpotqa style=v2
-SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰빙 코치, Zura입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰니스 코치, Zura입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 선수들이에요?
-      테니스 선수요? 음… 솔직히 잘 몰랐어요. 혹시 잭 소크 선수, 남자 선수 맞죠?
-      아, 그렇군요. 라파엘라 레지 선수는요? 여자 선수겠죠? 당연한 걸 물어봤나.
-      이탈리아 선수였군요. 두 분 다 테니스 치는 건 알겠는데, 혹시 같이 뛴 적도 있어요?
-  S2  아, 그럼 같이 뛴 적은 없었네요. 잭 소크 선수는 지금도 선수 생활 하고 있어요?
-      2023년에 은퇴하셨다니, 생각보다 최근이네요. 라파엘라 레지 선수도 은퇴하셨어요?
-      1995년이면 꽤 오래 전이네요. 두 분 다 은퇴하셨다니 아쉽네요.
-  S3  그렇죠… 슬프네요. 혹시 잭 소크 선수, 은퇴 전에 큰 대회에서 우승한 적이라도 있어요?
-      파리 마스터스 우승이라… 필립 크라이노비치를 이겼다고요? 그 선수는 또 누구에요?
-      세르비아 선수군요. 라파엘라 레지 선수는 우승 경험이 없을까요?
-      단식 우승은 없었지만 랭킹 16위면 꽤 잘하신 거네요. 혹시 복식 우승은 있어요?
-  S4  14번이나 우승하셨다니, 복식에서는 정말 뛰어났던 선수네요.
-      맞는 말이에요. 두 분 선수 모두 테니스에서 훌륭한 업적을 남기셨네요.
-      [laugh] 네, 맞아요. 좋은 말씀을 해주셔서 감사합니다.
+  S1  잭 소크랑 라파엘라 레지와 어떤 스포츠를 같이 했는지 궁금해요.
+      음, 테니스요? 그 두 분이 같이 뛴 경기가 있었던가요?
+      아, 올림픽에서요? 그런데 그 경기 결과는 어땠어요?
+      16강이라… 좀 아쉽네요. 그래도 올림픽에 나갔다는 것 자체가 대단한데요.
+  S2  잭 소크 선수는 주로 어떤 스타일의 경기를 하는 선수예요?
+      공격적인 스타일이군요. 라파엘라 레지 선수는요?
+      수비적인 스타일이네요. 두 분의 스타일이 꽤 다르군요?
+  S3  두 분이 왜 같이 경기를 하게 됐는지 궁금하네요.
+      올림픽 출전이 목적이었군요. 특별한 이유가 있었나요?
+      아, 자국 대표였군요. 혹시 두 분의 국적은 어떻게 되나요?
+      미국과 이탈리아군요. 두 분이 테니스를 시작하게 된 계기가 궁금해요.
+  S4  어릴 때부터군요. 라파엘라 레지 선수는요?
+      가족의 영향이 있었군요. 두 분 다 테니스를 좋아해서 시작했네요.
+      오늘 이야기를 들으니 두 분에 대해 더 잘 알게 된 것 같아요. 감사합니다.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 선수들이에요?
-[  7.19s][moshi] ⟨ret@7.04s⟩ 두 ⟦⚡SPAN@8.16s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 분 모두 테니스 선수이신데요. 잭 소크 선수와 라파엘라 레지 선수 두 분은 프로 테니스 선수입니다.
-[  9.34s][user ] «backchannel» Yeah.
-[ 14.19s][user ] 테니스 선수요? 음… 솔직히 잘 몰랐어요. 혹시 잭 소크 선수, 남자 선수 맞죠?
-[ 22.48s][moshi] 네, 잭 소크 선수는 남자 테니스 선수입니다.
-[ 27.43s][user ] 아, 그렇군요. 라파엘라 레지 선수는요? 여자 선수겠죠? 당연한 걸 ⟨ret@33.37s⟩ 물어봤나.
-[ 33.53s][moshi] 라파엘라 ⟦⚡SPAN@34.49s: Raffaella Reggi is an Italian former professional tennis player.⟧ 레지 선수도 여자 테니스 선수이십니다. 라파엘라 레지 선수는 이탈리아 출신의 전직 프로 테니스 선수이십니다.
-[ 42.40s][user ] 이탈리아 선수였군요. 두 분 다 테니스 치는 건 알겠는데, 혹시 같이 뛴 적도 있어요?
-[ 49.37s][moshi] 두 분이 함께 경기를 뛰셨다는 기록은 찾을 수 없습니다.
-[ 53.31s][user ] 아, 그럼 같이 뛴 적은 없었네요. 잭 소크 선수는 지금도 선수 생활 ⟨ret@58.30s⟩ 하고 있어요?
-[ 58.69s][moshi] 잭 소크 ⟦⚡SPAN@60.30s: Jack Sock announced his retirement from professional tennis in November 2023.⟧ 선수는 현재 은퇴하셨습니다. 잭 소크 선수는 2023년 11월에 프로 테니스 은퇴를 발표하셨습니다.
-[ 67.00s][user ] 2023년에 은퇴하셨다니, 생각보다 최근이네요. 라파엘라 레지 선수도 은퇴하셨어요?
-[ 74.69s][moshi] ⟨ret@74.54s⟩ ⟦⚡SPAN@75.66s: Raffaella Reggi retired from professional tennis in 1995.⟧ 라파엘라 레지 선수도 은퇴하셨습니다. 라파엘라 레지 선수는 1995년에 프로 테니스 은퇴를 하셨습니다.
-[ 81.28s][user ] «backchannel» Wow.
-[ 83.15s][user ] 1995년이면 꽤 오래 전이네요. 두 분 다 은퇴하셨다니 아쉽네요.
-[ 88.77s][moshi] 변화는 슬픔을 동반하는 경우가 많죠.
-[ 91.58s][user ] 그렇죠… 슬프네요. 혹시 잭 소크 선수, 은퇴 전에 큰 대회에서 우승한 적이라도 ⟨ret@98.64s⟩ 있어요?
-[ 98.95s][moshi] ⟦⚡SPAN@99.76s: Jack Sock won the 2017 Paris Masters, defeating Filip Krajinović in the final.⟧ 잭 소크 선수는 ATP 파리 마스터스에서 우승하신 적이 있습니다. 잭 소크 선수는 2017년 파리 마스터스에서 우승하셨습니다.
-[108.43s][user ] 파리 마스터스 우승이라… 필립 크라이노비치를 이겼다고요? 그 선수는 또 누구에요?
-[116.27s][moshi] 필립 크라이노비치 선수도 세르비아의 프로 테니스 선수입니다.
-[118.78s][user ] «backchannel» Yeah.
-[120.39s][user ] 세르비아 선수군요. 라파엘라 레지 선수는 우승 경험이 ⟨ret@125.74s⟩ 없을까요?
-[125.97s][moshi] 라파엘라 ⟦⚡SPAN@126.86s: Raffaella Reggi reached a career-high singles ranking of world No. 16 but never won a WTA tour singles title.⟧ 레지 선수는 WTA 투어 단식에서 우승한 적은 없습니다. 라파엘라 레지 선수는 최고 단식 랭킹 16위를 기록했지만 WTA 투어 단식 우승은 없었습니다.
-[138.33s][user ] 단식 우승은 없었지만 랭킹 16위면 꽤 잘하신 거네요. 혹시 복식 우승은 있어요?
-[144.96s][moshi] ⟨ret@144.89s⟩ ⟦⚡SPAN@145.39s: Raffaella Reggi won 14 WTA doubles titles throughout her career.⟧ 라파엘라 레지 선수는 복식에서 여러 차례 우승하셨습니다. 라파엘라 레지 선수는 선수 생활 동안 WTA 복식에서 14회 우승하셨습니다.
-[152.25s][user ] «backchannel» Right.
-[155.63s][user ] 14번이나 우승하셨다니, 복식에서는 정말 뛰어났던 선수네요.
-[160.98s][moshi] 때로는 한 분야보다 다른 분야에서 재능을 발휘하는 경우가 있습니다.
-[165.70s][user ] 맞는 말이에요. 두 분 선수 모두 테니스에서 훌륭한 업적을 남기셨네요.
-[171.46s][moshi] 변화의 과정에서 아름다움을 발견하는 것이 중요합니다.
-[176.44s][user ] [laugh] 네, 맞아요. 좋은 말씀을 해주셔서 감사합니다.
-[182.00s][moshi] 도움이 되었다니 기쁩니다.
+[  0.00s][user ] 잭 소크랑 라파엘라 레지와 어떤 스포츠를 같이 했는지 궁금해요.
+[  5.38s][moshi] 두 분이 함께한 스포츠에 대해 알아볼까요?
+[  8.28s][moshi] ⟨ret@7.89s⟩ 두 ⟦⚡SPAN@9.09s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 분은 테니스 선수로 활동하셨습니다. 잭 소크 선수와 라파엘라 레지 선수는 모두 프로 테니스 선수입니다.
+[ 12.72s][user ] «backchannel» Mm-hmm.
+[ 16.26s][user ] 음, 테니스요? 그 두 분이 같이 뛴 경기가 있었던가요?
+[ 21.23s][moshi] 두 분이 함께 경기했던 적이 있는지 확인해 볼게요.
+[ 24.49s][moshi] ⟨ret@24.34s⟩ 두 분은 ⟦⚡SPAN@25.86s: Jack Sock and Raffaella Reggi partnered in mixed doubles at the 2020 Tokyo Olympics.⟧ 혼합 복식에서 한 번 파트너십을 맺었습니다. 잭 소크 선수와 라파엘라 레지 선수는 2020 도쿄 올림픽 혼합 복식에서 파트너로 출전했습니다.
+[ 36.59s][user ] 아, 올림픽에서요? 그런데 그 경기 결과는 어땠어요?
+[ 41.04s][moshi] 그 경기 결과에 대해서도 알려드릴 수 있습니다.
+[ 43.84s][moshi] ⟨ret@43.44s⟩ ⟦⚡SPAN@44.48s: Jack Sock and Raffaella Reggi lost in the round of 16 in the mixed doubles event at the 2020 Tokyo Olympics.⟧ 안타깝게도 두 분은 16강에서 탈락했습니다. 잭 소크 선수와 라파엘라 레지 선수는 2020 도쿄 올림픽 혼합 복식 16강에서 패배했습니다.
+[ 54.06s][user ] 16강이라… 좀 아쉽네요. 그래도 올림픽에 나갔다는 것 자체가 대단한데요.
+[ 59.55s][moshi] 맞아요. 올림픽 출전은 선수에게 큰 의미가 있죠.
+[ 60.90s][user ] «backchannel» Yeah.
+[ 63.55s][moshi] 혹시 다른 테니스 선수에 대해 궁금한 점이 있으신가요?
+[ 65.42s][user ] «backchannel» Yeah.
+[ 67.21s][user ] 잭 소크 선수는 주로 어떤 스타일의 경기를 하는 선수예요?
+[ 71.97s][moshi] 잭 소크 선수의 경기 스타일에 대해 설명해 드릴게요.
+[ 75.62s][moshi] ⟨ret@75.31s⟩ 그는 강력한 ⟦⚡SPAN@77.31s: Jack Sock is known for his powerful serve and aggressive baseline game.⟧ 서브와 공격적인 베이스라인 플레이로 유명합니다. 잭 소크 선수는 강력한 서브와 공격적인 베이스라인 플레이를 특징으로 합니다.
+[ 85.59s][user ] 공격적인 스타일이군요. 라파엘라 레지 선수는요?
+[ 90.14s][moshi] 라파엘라 레지 선수의 경기 스타일도 알아볼까요?
+[ 93.06s][moshi] ⟨ret@92.68s⟩ 그녀는 ⟦⚡SPAN@94.44s: Raffaella Reggi is recognized for her strong defensive skills and counter-punching ability.⟧ 뛰어난 수비력과 카운터 펀칭 능력이 돋보입니다. 라파엘라 레지 선수는 뛰어난 수비력과 카운터 펀칭 능력을 보여줍니다.
+[104.28s][user ] 수비적인 스타일이네요. 두 분의 스타일이 꽤 다르군요?
+[108.19s][moshi] 네, 두 분의 스타일은 상반되는 매력을 가지고 있습니다.
+[110.40s][user ] «backchannel» Yeah.
+[111.63s][user ] 두 분이 왜 같이 경기를 하게 됐는지 궁금하네요.
+[115.76s][moshi] 두 분이 함께 경기를 하게 된 배경을 설명해 드릴게요.
+[119.80s][moshi] ⟨ret@119.73s⟩ ⟦⚡SPAN@120.23s: Jack Sock and Raffaella Reggi were paired together for the mixed doubles event at the Olympics.⟧ 두 분은 올림픽 혼합 복식 출전을 위해 파트너십을 맺었습니다. 잭 소크 선수와 라파엘라 레지 선수는 올림픽 혼합 복식 출전을 위해 파트너가 되었습니다.
+[131.57s][user ] 올림픽 출전이 목적이었군요. 특별한 이유가 있었나요?
+[136.12s][moshi] 특별한 이유가 있었는지 알아볼까요?
+[138.47s][moshi] ⟨ret@138.08s⟩ 두 분 ⟦⚡SPAN@140.08s: Both Jack Sock and Raffaella Reggi expressed a desire to represent their countries at the Olympics.⟧ 모두 자국을 대표하는 선수로서 올림픽 출전을 희망했습니다. 잭 소크 선수와 라파엘라 레지 선수는 자국 대표로서 올림픽에 출전하고 싶어 했습니다.
+[146.36s][user ] «backchannel» Mm-hmm.
+[150.06s][user ] 아, 자국 대표였군요. 혹시 두 분의 국적은 어떻게 되나요?
+[154.48s][moshi] 두 분의 국적에 대해 알려드리겠습니다.
+[157.20s][moshi] ⟨ret@157.05s⟩ 잭 소크 ⟦⚡SPAN@159.05s: Jack Sock is American, and Raffaella Reggi is Italian.⟧ 선수는 미국 국적이고, 라파엘라 레지 선수는 이탈리아 국적입니다. 잭 소크 선수는 미국 국적이며, 라파엘라 레지 선수는 이탈리아 국적입니다.
+[168.33s][user ] 미국과 이탈리아군요. 두 분이 테니스를 시작하게 된 계기가 궁금해요.
+[173.71s][moshi] 두 분이 테니스를 시작하게 된 계기에 대해 알아볼까요?
+[177.10s][moshi] ⟨ret@176.71s⟩ 잭 소크 ⟦⚡SPAN@178.71s: Jack Sock began playing tennis at a young age and enjoyed the sport.⟧ 선수는 어린 시절부터 테니스를 즐겼다고 합니다. 잭 소크 선수는 어릴 때부터 테니스를 즐기며 시작했습니다.
+[186.22s][user ] 어릴 때부터군요. 라파엘라 레지 선수는요?
+[190.03s][moshi] 라파엘라 레지 선수의 테니스 시작 계기도 알려드릴게요.
+[193.89s][moshi] ⟨ret@193.58s⟩ 그녀는 ⟦⚡SPAN@194.78s: Raffaella Reggi started playing tennis due to the influence of her family.⟧ 가족의 영향으로 테니스를 시작하게 되었다고 합니다. 라파엘라 레지 선수는 가족의 영향으로 테니스를 시작하게 되었습니다.
+[202.36s][user ] 가족의 영향이 있었군요. 두 분 다 테니스를 좋아해서 시작했네요.
+[207.41s][moshi] 네, 두 분 모두 테니스에 대한 애정을 가지고 시작한 것 같습니다.
+[209.84s][user ] «backchannel» Uh-huh.
+[211.75s][user ] 오늘 이야기를 들으니 두 분에 대해 더 잘 알게 된 것 같아요. 감사합니다.
+[217.73s][moshi] 도움이 되었다니 기쁩니다. 혹시 다른 궁금한 점은 없으신가요?

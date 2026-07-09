@@ -1,104 +1,72 @@
 # v3_mcp_00_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Eight hours? Wow. Is there a cheap | S3 Sixty-eight degrees is nice. I thi | S4 Thanks for all your help, Nellara.
+# EXAMINER(FDB-v2) 단계: S1 파리 에펠탑의 좌표를 알려줄 수 있을까요? | S2 브런치 메뉴가 있는지, 그리고 가격대는 어느 정도인지 궁금해요 | S3 샹 드 마르스 공원… 거긴 넓은 잔디밭이 있는 곳이죠? | S4 20도면 겉옷을 챙겨가는 게 좋겠네요.
 
-     0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.27s  <ret> 발화 (turn1 첫 프레임)
-     3.50s  agent 발화 시작: <ret> The Eiffel Tower in Paris is at latitude forty-eight p
-     3.70s  user  발화 끝
-     5.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
-     8.70s  user  발화 시작: Yeah.
-     9.06s  user  발화 끝
-    10.86s  agent 발화 끝
-    11.83s  user  발화 시작: That's helpful. What about the Statue of Liberty?
-    14.60s  <ret> 발화 (turn4 첫 프레임)
-    14.68s  agent 발화 시작: <ret> The Statue of Liberty in New York is at latitude forty
-    14.79s  user  발화 끝
-    16.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.49s]: (tool result) The Statue of Liberty is located at latitude 40.6892, lo
-    20.37s  user  발화 시작: Yeah, totally.
-    21.18s  user  발화 끝
-    23.16s  agent 발화 끝
-    24.73s  user  발화 시작: Hmm, are those coordinates used for anything specific?
-    28.27s  agent 발화 시작: They're essential for precise location on maps and in GPS sy
-    28.41s  user  발화 끝
-    36.51s  user  발화 시작: Oh, right. I— I mean, could you find a nice Italian restaura
-    36.52s  agent 발화 끝
-    41.78s  <ret> 발화 (turn9 첫 프레임)
-    42.16s  user  발화 끝
-    42.17s  agent 발화 시작: <ret> Finding a restaurant nearby— Il Cortile, an Italian re
-    42.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.48s]: (tool result) Il Cortile is an Italian restaurant at 125 Cedar St, New
-    51.44s  agent 발화 끝
-    51.77s  user  발화 시작: Four point two sounds good. What's the quickest way to get t
-    56.03s  <ret> 발화 (turn11 첫 프레임)
-    56.26s  agent 발화 시작: <ret> The quickest route from the Eiffel Tower to Il Cortile
-    56.40s  user  발화 끝
-    56.53s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.79s]: (tool result) The quickest route is a flight, approximately 8 hours an
-    58.12s  user  발화 시작: Okay.
-    58.62s  user  발화 끝
-    62.05s  agent 발화 끝
-    62.26s  user  발화 시작: Eight hours? Wow. Is there a cheaper option, even if it take
-    67.40s  user  발화 끝
-    67.42s  <ret> 발화 (turn14 첫 프레임)
-    67.49s  agent 발화 시작: <ret> A train and bus combination would take about sixty-fiv
-    69.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) Train and bus travel takes approximately 65 hours and co
-    72.73s  user  발화 시작: That's… a really long time!
-    72.94s  agent 발화 끝
-    75.20s  user  발화 시작: Forget the restaurant. Can you just show me hotels near the 
-    75.46s  user  발화 끝
-    79.30s  <ret> 발화 (turn17 첫 프레임)
-    79.69s  agent 발화 시작: <ret> The Wagner Hotel, rated three point eight stars, is at
-    80.01s  user  발화 끝
-    81.22s  ⚡SPAN 주입 [d'=1.92s / d_lead=7.46s]: (tool result) The Wagner Hotel is at 38 West St, New York, rated 3.8 s
-    86.58s  user  발화 시작: One hundred fifty dollars isn't bad. Does it have parking?
-    87.15s  agent 발화 끝
-    89.09s  <ret> 발화 (turn19 첫 프레임)
-    89.49s  agent 발화 시작: <ret> The Wagner Hotel offers valet parking at forty-five do
-    89.63s  user  발화 끝
-    90.13s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.86s]: (tool result) The Wagner Hotel has valet parking available for $45 per
-    94.36s  agent 발화 끝
-    94.63s  user  발화 시작: Okay, good to know. What's the weather like in New York righ
-    97.52s  <ret> 발화 (turn21 첫 프레임)
-    97.84s  agent 발화 시작: <ret> The current temperature in New York is sixty-eight deg
-    98.00s  user  발화 끝
-    99.28s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.03s]: (tool result) The current weather in New York is 68°F and cloudy.
-   101.45s  user  발화 시작: Sixty-eight degrees is nice. I think I’ll book a room at the
-   101.87s  agent 발화 끝
-   105.23s  <ret> 발화 (turn23 첫 프레임)
-   105.39s  agent 발화 시작: <ret> Your reservation at The Wagner Hotel is confirmed for 
-   105.57s  user  발화 끝
-   107.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) Reservation confirmed at The Wagner Hotel for tomorrow, 
-   110.99s  agent 발화 끝
-   111.22s  user  발화 시작: Wonderful! That’s all sorted.
-   113.06s  agent 발화 시작: It sounds like you've got a lovely trip planned! It’s always
-   113.30s  user  발화 끝
-   119.73s  agent 발화 끝
-   120.47s  user  발화 시작: Yeah. I’m really looking forward to it.
-   122.73s  agent 발화 시작: Traveling can be a wonderful way to recharge and experience 
-   122.78s  user  발화 끝
-   130.37s  agent 발화 끝
-   131.61s  user  발화 시작: It is. Do you think I should pack an umbrella?
-   134.29s  user  발화 끝
-   134.42s  agent 발화 시작: Given that it’s cloudy now, and weather can change, packing 
-   139.80s  user  발화 시작: You're right, better safe than sorry.
-   140.07s  agent 발화 끝
-   141.73s  agent 발화 시작: Exactly. A little preparation can go a long way in ensuring 
-   141.88s  user  발화 끝
-   145.88s  user  발화 시작: Mm-hmm.
-   146.38s  user  발화 끝
-   147.18s  user  발화 시작: Thanks for all your help, Nellara.
-   147.33s  agent 발화 끝
-   149.14s  agent 발화 시작: You’re very welcome! It’s my pleasure to help you organize y
-   149.21s  user  발화 끝
-   156.17s  user  발화 시작: I think I will!
-   156.23s  agent 발화 끝
-   157.60s  user  발화 끝
-   157.60s  agent 발화 시작: That’s wonderful to hear! Remember to be open to new experie
-   163.39s  agent 발화 끝
-   163.39s  user  발화 시작: I definitely will.
-   165.19s  user  발화 끝
-   165.60s  agent 발화 시작: It’s great that you have such a positive attitude. That will
-   170.47s  agent 발화 끝
-   170.75s  user  발화 시작: Okay, I think that’s everything for now.
-   173.34s  user  발화 끝
-   173.59s  agent 발화 시작: Alright. If anything else comes up before your trip, please 
-   178.96s  agent 발화 끝
+     0.00s  user  발화 시작: 파리 에펠탑의 좌표를 알려줄 수 있을까요?
+     2.45s  <ret> 발화 (turn1 첫 프레임)
+     2.69s  agent 발화 시작: <ret> 물론이죠, 에펠탑의 좌표를 찾아드릴게요. 에펠탑의 위도는 48.8584, 경도는 2.2945입니다
+     2.87s  user  발화 끝
+     4.13s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.11s]: (tool result) The Eiffel Tower is located at latitude 48.8584, longitu
+     7.51s  user  발화 시작: Right.
+     8.10s  user  발화 끝
+     9.69s  agent 발화 끝
+    10.69s  user  발화 시작: 음, 그 근처에 괜찮은 카페가 있을까요?
+    13.57s  agent 발화 시작: 네, 에펠탑 근처에는 다양한 카페가 있어요. 어떤 분위기를 선호하시나요? 조용하고 아늑한 곳을 원하시는지, 
+    13.61s  user  발화 끝
+    25.95s  user  발화 시작: 활기찬 분위기의 카페요.
+    26.00s  agent 발화 끝
+    27.58s  <ret> 발화 (turn6 첫 프레임)
+    27.65s  agent 발화 시작: <ret> 활기찬 분위기라면, 몇 군데 추천해 드릴 수 있어요. 카페 콘스탄이 에펠탑에서 0.3마일 거리에 
+    27.84s  user  발화 끝
+    29.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) Cafe Constant is 0.3 miles from the Eiffel Tower, has 4.
+    35.04s  user  발화 시작: Oh.
+    35.66s  user  발화 끝
+    37.55s  user  발화 시작: 혹시 거기 브런치 메뉴도 괜찮나요?
+    37.89s  agent 발화 끝
+    39.74s  agent 발화 시작: 아, 브런치 메뉴에 대해서는—
+    39.86s  user  발화 끝
+    40.99s  user  발화 시작: 브런치 메뉴가 있는지, 그리고 가격대는 어느 정도인지 궁금해요.
+    41.81s  agent 발화 끝
+    44.54s  <ret> 발화 (turn11 첫 프레임)
+    44.93s  agent 발화 시작: <ret> 카페 콘스탄은 브런치 메뉴도 제공하고, 가격대는 20유로에서 30유로 정도입니다.
+    45.25s  user  발화 끝
+    46.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.41s]: (tool result) Cafe Constant's brunch menu includes croissants for 5 eu
+    50.23s  agent 발화 시작: 카페 콘스탄의 브런치 메뉴에는 크루아상이 5유로, 에그 베네딕트가 22유로입니다.
+    50.34s  agent 발화 끝
+    53.37s  user  발화 시작: Yeah.
+    53.72s  user  발화 끝
+    55.97s  user  발화 시작: 오, 괜찮네요. 그럼 거기까지 가는 가장 빠른 길을 알려주세요. 지금 출발한다고 가정하고요.
+    56.02s  agent 발화 끝
+    61.84s  <ret> 발화 (turn15 첫 프레임)
+    62.15s  agent 발화 시작: <ret> 지금 출발한다고 가정하고, 가장 빠른 길을 찾아드릴게요. 카페 콘스탄까지 가장 빠른 길은 1.2마
+    62.27s  user  발화 끝
+    63.04s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.77s]: (tool result) The fastest route to Cafe Constant is 1.2 miles, estimat
+    71.84s  agent 발화 끝
+    71.91s  user  발화 시작: 25분이면 걸을 만하네요. 혹시 길에 다른 볼거리도 있나요?
+    75.89s  agent 발화 시작: 네, 가는 길에 센 강변을 따라 걷는다면 아름다운 풍경을 감상할 수 있습니다. 또, 샹 드 마르스 공원을 지
+    75.93s  user  발화 끝
+    86.32s  user  발화 시작: 샹 드 마르스 공원… 거긴 넓은 잔디밭이 있는 곳이죠?
+    86.69s  agent 발화 끝
+    90.02s  agent 발화 시작: 맞아요, 넓은 잔디밭이 있어서 피크닉을 즐기기에도 좋아요. 날씨가 좋다면 잠시 쉬어가시는 것도 좋을 것 같아
+    90.15s  user  발화 끝
+    97.01s  agent 발화 끝
+    98.40s  user  발화 시작: 날씨가 좋으면 꼭 들러봐야겠네요.
+   100.66s  user  발화 끝
+   100.68s  agent 발화 시작: 날씨가 좋으면 정말 좋을 거예요. 샹 드 마르스 공원에서 여유로운 시간을 보내시는 걸 추천합니다.
+   106.52s  user  발화 시작: 혹시 지금 날씨는 어떤가요?
+   106.66s  agent 발화 끝
+   108.33s  <ret> 발화 (turn23 첫 프레임)
+   108.72s  agent 발화 시작: <ret> 지금 파리의 날씨를 확인해 드릴게요. 현재 파리의 날씨는 20도이고, 부분적으로 흐립니다.
+   108.77s  user  발화 끝
+   109.37s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.74s]: (tool result) The current weather in Paris is 20 degrees Celsius, part
+   114.53s  user  발화 시작: 20도면 겉옷을 챙겨가는 게 좋겠네요.
+   114.74s  agent 발화 끝
+   117.34s  user  발화 끝
+   117.38s  agent 발화 시작: 네, 겉옷을 챙겨가시면 좋을 것 같아요. 특히 저녁에는 조금 쌀쌀할 수 있으니 가벼운 재킷 정도는 챙기시는 
+   124.61s  agent 발화 끝
+   124.85s  user  발화 시작: 알겠습니다. 알려주셔서 정말 고마워요.
+   127.62s  user  발화 끝
+   127.75s  agent 발화 시작: 천만에요. 즐거운 파리 여행 되세요! 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
+   133.59s  user  발화 시작: 네, 감사합니다.
+   133.67s  agent 발화 끝
+   134.97s  user  발화 끝

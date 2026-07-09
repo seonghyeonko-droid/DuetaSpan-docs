@@ -3,28 +3,28 @@ SYSTEM: <system> You are Kliana, a thoughtful and soft-spoken supportive advisor
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just listening to Mamma Mia and I’m trying to figure out who wro
-      Do you happen to know who penned it? I've been searching online, but g
-  S2  Björn Ulvaeus… hmm, I recognize that name. Wasn’t he in ABBA?
-      Wow, so he wrote songs for both ABBA *and* Mamma Mia? That's quite a r
-  S3  I— I mean, is Benny Andersson also involved with Mamma Mia?
-      That makes sense. They’re a great team! Do you know if they wrote all 
-  S4  Oh, so it’s a compilation of their hits? That’s clever! It explains wh
+  S1  Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a b
+      Oh, okay. Was he in ABBA too? I always get them mixed up.
+  S2  Right. And Benny wrote a lot of the music, didn't he?
+      Hmm. So, both of them worked on Mamma Mia as well?
+  S3  That's amazing, they're so talented. I— I mean, the whole thing is jus
+      I’m thinking of visiting Stockholm, actually. Is it a nice city?
+  S4  That sounds lovely. Maybe I’ll look for places connected to ABBA while
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just listening to Mamma Mia and I’m trying to figure out who wrote “My Love, My Life.” It’s such a beautiful song.
-[  8.05s][moshi] Oh, that’s a lovely choice! It's a truly touching piece from the musical.
-[ 12.85s][user ] Do you happen to know who penned it? I've been searching online, but getting a lot of conflicting ⟨ret@19.04s⟩ information.
-[ 19.35s][moshi] That ⟦⚡SPAN@20.08s: Björn Ulvaeus wrote “My Love, My Life” for the musical *Mamma Mia!*.⟧ song is particularly poignant… Björn Ulvaeus is credited with writing “My Love, My Life” for the *Mamma Mia!* musical.
-[ 28.18s][user ] Björn Ulvaeus… hmm, I recognize that name. Wasn’t he in ⟨ret@32.89s⟩ ABBA?
-[ 33.05s][moshi] Yes, he was! He ⟦⚡SPAN IRRELEVANT@34.89s: (tool result) AAPL closed at 170.34, up 0.82 points.⟧ was one of the core members of ABBA, along with Benny Andersson, Agnetha Fältskog, and Anni-Frid Lyngstad.
-[ 41.81s][user ] Wow, so he wrote songs for both ABBA *and* Mamma Mia? That's quite a range of work.
-[ 47.68s][moshi] It truly is! He has a remarkable talent for creating melodies that resonate with so many people.
-[ 54.26s][user ] I— I mean, is Benny Andersson also involved with Mamma Mia?
-[ 58.52s][moshi] Yes, Benny Andersson collaborated with Björn Ulvaeus on the music for *Mamma Mia!* They are a very successful songwriting partnership.
-[ 62.05s][user ] «backchannel» Yeah.
-[ 66.81s][user ] That makes sense. They’re a great team! Do you know if they wrote all the songs for the musical?
-[ 73.46s][moshi] No, they didn't write *all* of them. The musical largely features pre-existing ABBA songs, skillfully woven into the story.
-[ 76.32s][user ] «backchannel» Yeah.
-[ 81.74s][user ] Oh, so it’s a compilation of their hits? That’s clever! It explains why everything sounds so familiar.
-[ 88.52s][moshi] Exactly. It’s a wonderful way to experience their music in a new and engaging context.
+[  0.00s][user ] Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a beautiful song.
+[  5.30s][moshi] ⟨ret@5.07s⟩ That’s a ⟦⚡SPAN@6.27s: Björn Ulvaeus wrote “My Love, My Life”.⟧ lovely choice. Björn Ulvaeus is credited with writing that particular song for the musical.
+[ 11.36s][user ] Oh, okay. Was he in ABBA too? I always get them mixed up.
+[ 15.11s][moshi] Yes, he was! Björn Ulvaeus was a key member of ABBA, alongside Benny Andersson.
+[ 20.75s][user ] Right. And Benny wrote a lot of the music, didn't ⟨ret@23.46s⟩ he?
+[ 23.61s][moshi] He did indeed. Benny ⟦⚡SPAN IRRELEVANT@25.46s: (tool result) AAPL stock is currently trading at 170.34 USD, up 0.5% from yesterday’s close.⟧ Andersson was the primary composer for many ABBA songs.
+[ 28.76s][user ] Hmm. So, both of them worked on Mamma Mia as well?
+[ 32.55s][moshi] Absolutely. Both Björn Ulvaeus and Benny Andersson were heavily involved in creating the music for Mamma Mia.
+[ 39.45s][user ] That's amazing, they're so talented. I— I mean, the whole thing is just wonderful.
+[ 43.52s][moshi] It truly is. Their music has touched so many people, and continues to bring joy.
+[ 45.92s][user ] «backchannel» Yeah.
+[ 49.29s][user ] I’m thinking of visiting Stockholm, actually. Is it a nice city?
+[ 53.47s][moshi] Stockholm is a beautiful city, full of charm and history. I think you'd find it very welcoming.
+[ 55.59s][user ] «backchannel» Yeah.
+[ 59.70s][user ] That sounds lovely. Maybe I’ll look for places connected to ABBA while I’m there.
+[ 64.85s][moshi] That’s a wonderful idea! There are several museums and locations that celebrate their legacy in Stockholm.

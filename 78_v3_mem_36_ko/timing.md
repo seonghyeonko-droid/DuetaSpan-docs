@@ -64,19 +64,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: 사히하님, 안녕하세요. 저는 리라입니다. 재정 상담을 도와드리는 역할을 하고 있어요.
-     3.38s  user  발화 시작: Uh-huh.
-     4.02s  user  발화 끝
-     6.85s  user  발화 시작: 스위스 여행 계획 말씀드렸었죠? 혹시 그때 항공편 예약해둔 거 기억하세요?
-     6.90s  agent 발화 끝
-    11.72s  <ret> 발화 (turn3 첫 프레임)
-    11.87s  agent 발화 시작: <ret> 네, 스위스 여행 계획에 대해 말씀해주셨었죠. 스위스 여행은 내년 삼월에 가실 예정이시네요. 항공
-    12.09s  user  발화 끝
-    13.00s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.43s]: [2026-07-14] User is planning a trip to Switzerland in March.
-    22.70s  user  발화 시작: 아, 맞아요. 아직 못 했어요. 혹시 지금 제일 저렴한 항공권 찾아볼 수 있을까요?
-    22.73s  agent 발화 끝
-    27.88s  <ret> 발화 (turn5 첫 프레임)
-    28.27s  agent 발화 시작: <ret> 내년 삼월 첫째 날 출발, 스위스 에어 123편이 십오만 엔이고, 환승은 없어요. 돌아오는 편은 
-    28.49s  user  발화 끝
-    29.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.95s]: (tool result) Departing Tokyo on March 1st, 2026: Swiss Air flight 123
-    39.21s  agent 발화 끝
+     0.00s  agent 발화 시작: 사히하 씨, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 관련 상담을 도와드리는 분이에요.
+     3.26s  user  발화 시작: Uh-huh.
+     3.76s  user  발화 끝
+     6.64s  user  발화 시작: 음… 전에 스위스 여행 계획 세운다고 말씀드렸었죠?
+     6.67s  agent 발화 끝
+    10.17s  <ret> 발화 (turn3 첫 프레임)
+    10.32s  agent 발화 시작: <ret> 스위스 여행 말씀이시군요. 내년 3월에 스위스 여행을 계획하고 계시는군요. 혹시 여행 준비는 잘 
+    10.48s  user  발화 끝
+    10.89s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.79s]: [2026-07-14] User is planning a trip to Switzerland in March.
+    19.24s  user  발화 시작: 네, 그런데 갑자기 궁금한 게 생겼어요. 제가 채식주의자잖아요.
+    19.27s  agent 발화 끝
+    23.42s  <ret> 발화 (turn5 첫 프레임)
+    23.58s  agent 발화 시작: <ret> 채식주의자이신 건 알고 있습니다. 스위스에서도 채식 식당을 찾기 어려울까 봐 걱정되시는군요. 괜찮
+    23.78s  user  발화 끝
+    24.54s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.58s]: [2026-05-07] User is vegetarian.
+    34.52s  agent 발화 끝

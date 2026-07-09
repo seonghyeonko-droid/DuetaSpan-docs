@@ -4,53 +4,40 @@ SYSTEM: <system> You are Driaus, a kind and steady supportive advisor who helps 
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Begin watching for a weather update from weather dot example dot com.
-      That's good to know. Uh, do they have a forecast for tomorrow?
-      Perfect! I think I'll plan a picnic then.
-  S2  Actually, yes. Could you search for parks with picnic tables near me?
-      Twenty tables— that sounds good.
-      Oh, a reservation might be smart. Let’s try to reserve a table for tom
-  S3  Fantastic! That's a huge weight off my mind.
-      Yes, actually. I need to send a reminder to myself to pack the blanket
-      Hmm, how about six PM tonight?
-  S4  Wonderful. Thanks so much, Driaus.
-      I think I will! I— I mean, with this weather, it should be perfect.
+      Oh, good. That’s not bad at all.
+  S2  Um, yeah, actually. Could you find me a bakery that's open right now n
+      Directions, please. I'm walking.
+  S3  Perfect. Thanks. I— I mean, that’s really helpful.
+      Actually, yes. I need to book a car to take me to the airport tomorrow
+  S4  JFK.
+      Great! That’s all. Thanks, Driaus.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.46s⟩ com.
-[  4.68s][moshi] Certainly, I’m now ⟦⚡SPAN@6.46s: (tool result) The website reports current conditions as seventy-two degrees Fahrenheit and partly cloudy.⟧ monitoring weather dot example dot com for any changes.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "expected_text": "weather update"}}
-[  9.90s][moshi] The current temperature is seventy-two degrees Fahrenheit with partly cloudy skies.
-[ 15.51s][user ] That's good to know. Uh, do they have a forecast for ⟨ret@19.52s⟩ tomorrow?
-[ 19.84s][moshi] Yes, I can ⟦⚡SPAN@21.20s: (tool result) Tomorrow’s forecast predicts a high of seventy-five degrees Fahrenheit and sunshine.⟧ check the forecast for tomorrow.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "expected_text": "tomorrow's forecast"}}
-[ 22.77s][moshi] Tomorrow will be sunny with a high of seventy-five degrees Fahrenheit.
-[ 24.41s][user ] «backchannel» Right.
-[ 26.94s][user ] Perfect! I think I'll plan a picnic then.
-[ 30.00s][moshi] A picnic sounds lovely. Do you need help finding a suitable park?
-[ 34.89s][user ] Actually, yes. Could you search for parks with picnic tables near me?
-[ 39.24s][moshi] ⟨ret@39.16s⟩ Of ⟦⚡SPAN@40.28s: (tool result) Central Park has twenty picnic tables and is one point two miles away.⟧ course. Let me locate parks nearby with picnic tables.
-      CALL: {"function": "search_parks", "arguments": {"location": "current", "amenities": "picnic tables"}}
-[ 44.51s][moshi] Central Park, one point two miles away, has twenty picnic tables available.
-[ 46.58s][user ] «backchannel» Yeah.
-[ 50.12s][user ] Twenty tables— that sounds good.
-[ 52.92s][moshi] It’s a popular choice, but generally spacious enough to find a good spot. I can also check availability for a reservation if you’d like.
-[ 61.69s][user ] Oh, a reservation might be smart. Let’s try to reserve a table for tomorrow at ⟨ret@67.11s⟩ noon.
-[ 67.42s][moshi] Certainly, I ⟦⚡SPAN@68.47s: (tool result) A picnic table at Central Park is reserved for tomorrow at noon for two people. Confirmation num⟧ can check for reservations at Central Park for tomorrow at noon.
-      CALL: {"function": "reserve_picnic_table", "arguments": {"park": "Central Park", "date": "tomorrow", "time": "12:00 PM", "party_size": "2"}}
-[ 72.28s][moshi] Your picnic table is reserved at Central Park for tomorrow at noon. Your confirmation number is 87B3.
-[ 75.93s][user ] «backchannel» Oh.
-[ 79.67s][user ] Fantastic! That's a huge weight off my mind.
-[ 84.25s][moshi] I'm glad I could help with that. Is there anything else I can assist you with today?
-[ 88.61s][user ] Yes, actually. I need to send a reminder to myself to pack the blanket.
-[ 93.83s][moshi] I can certainly set a reminder for you. What time would you like to be reminded?
-[ 97.61s][user ] «backchannel» Right.
-[ 99.80s][user ] Hmm, how about six PM tonight?
-[102.39s][moshi] ⟨ret@102.31s⟩ I’ve set a reminder for six ⟦⚡SPAN@104.31s: (tool result) Reminder set for 6:00 PM today: “Pack the blanket”.⟧ PM tonight to pack the blanket.
-      CALL: {"function": "set_reminder", "arguments": {"time": "6:00 PM", "message": "Pack the blanket"}}
-[106.03s][moshi] A reminder to pack the blanket is set for six PM tonight.
-[107.43s][user ] «backchannel» Yeah.
-[109.46s][user ] Wonderful. Thanks so much, Driaus.
-[112.35s][moshi] You’re very welcome. I hope you enjoy your picnic tomorrow. It sounds like a delightful plan.
-[117.17s][user ] «backchannel» Yeah.
-[118.68s][user ] I think I will! I— I mean, with this weather, it should be perfect.
-[123.09s][moshi] It certainly sounds that way! A little planning goes a long way to a relaxing day, doesn’t it?
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.94s⟩ com.
+[  4.17s][moshi] Certainly, I’m now ⟦⚡SPAN@5.94s: (tool result) The website reports current conditions are 72 degrees Fahrenheit and partly cloudy.⟧ monitoring weather dot example dot com for any changes.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
+[  9.75s][moshi] Currently, it’s seventy-two degrees Fahrenheit and partly cloudy at weather dot example dot com.
+[ 12.67s][user ] «backchannel» Uh-huh.
+[ 15.82s][user ] Oh, good. That’s not bad at all.
+[ 18.00s][moshi] I’m glad to hear that’s a pleasant report for you. Is there anything else I can monitor?
+[ 20.47s][user ] «backchannel» Yeah.
+[ 22.92s][user ] Um, yeah, actually. Could you find me a bakery that's open right now near Grand Central Station?
+[ 29.14s][moshi] ⟨ret@28.90s⟩ Maison Kayser ⟦⚡SPAN@30.90s: (tool result) Maison Kayser Grand Central is open now, located at 89 East 42nd Street, with a 4.2 star rating.⟧ Grand Central is open now, rated 4.2 stars, at 89 East 42nd Street.
+      CALL: {"function": "find_businesses", "arguments": {"query": "bakery", "location": "Grand Central Station", "open_now": true}}
+[ 34.48s][user ] «backchannel» Yeah.
+[ 37.10s][moshi] It seems like a well-regarded option. Would you like directions, or perhaps their phone number?
+[ 39.86s][user ] «backchannel» Yeah.
+[ 44.12s][user ] Directions, please. I'm walking.
+[ 46.71s][moshi] ⟨ret@46.64s⟩ The walk ⟦⚡SPAN@47.76s: (tool result) Walking directions are 0.3 miles, approximately 6 minutes, heading east on 42nd Street.⟧ to Maison Kayser is 0.3 miles, about six minutes east on 42nd Street.
+      CALL: {"function": "get_directions", "arguments": {"start_location": "current location", "end_location": "Maison Kayser Grand Central"}}
+[ 50.99s][user ] «backchannel» Yeah.
+[ 53.21s][user ] Perfect. Thanks. I— I mean, that’s really helpful.
+[ 57.35s][moshi] You're very welcome. I’m happy to assist with navigation. Is there anything further I can do for you today?
+[ 65.49s][user ] Actually, yes. I need to book a car to take me to the airport tomorrow morning at 7:00 AM.
+[ 71.77s][moshi] Certainly. And which airport are you travelling to tomorrow morning?
+[ 73.42s][user ] «backchannel» Yeah.
+[ 76.65s][user ] JFK. ⟨ret@77.41s⟩
+[ 77.73s][moshi] Your car ⟦⚡SPAN@79.25s: (tool result) A car is booked for 7:00 AM tomorrow to JFK, confirmation number is ABC-123, estimated cost is 7⟧ to JFK is booked for 7:00 AM, confirmation ABC-123, costing seventy-five dollars.
+      CALL: {"function": "book_ride", "arguments": {"pickup_time": "7:00 AM", "destination": "JFK", "pickup_location": "current location"}}
+[ 80.05s][user ] «backchannel» Exactly.
+[ 86.16s][user ] Great! That’s all. Thanks, Driaus.

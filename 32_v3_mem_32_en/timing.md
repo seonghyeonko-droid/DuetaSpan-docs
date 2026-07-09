@@ -59,25 +59,25 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you – I’m
-     4.79s  user  발화 시작: Yeah.
-     5.28s  user  발화 끝
-     6.23s  user  발화 시작: Oh, that sounds… good. I was wondering, do you remember anyt
-     6.40s  agent 발화 끝
-    12.25s  user  발화 끝
-    12.35s  <ret> 발화 (turn3 첫 프레임)
-    12.42s  agent 발화 시작: <ret> Yes, I do recall discussing your travel plans. You men
-    14.19s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.92s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    20.48s  user  발화 시작: Mm-hmm.
-    21.07s  user  발화 끝
-    23.73s  agent 발화 끝
-    24.32s  user  발화 시작: Actually, yes. I'm trying to find a good time to book flight
-    32.93s  <ret> 발화 (turn6 첫 프레임)
-    33.01s  agent 발화 시작: <ret> Let me quickly check that for you.
-    33.13s  user  발화 끝
-    33.43s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.94s]: (tool result) Kyoto is nine hours ahead of Berlin. Daylight Saving Tim
-    34.72s  agent 발화 시작: Kyoto is nine hours ahead of Berlin, and both cities observe
-    34.94s  agent 발화 끝
-    42.60s  agent 발화 끝
-    42.63s  user  발화 시작: That’s… a lot. I— I mean, it’s good to know, though. I think
-    48.23s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you. I un
+     7.54s  user  발화 시작: Yeah.
+     8.17s  user  발화 끝
+     9.69s  user  발화 시작: Actually, yes. I’m trying to plan a little getaway, and I’m 
+     9.82s  agent 발화 끝
+    15.57s  user  발화 끝
+    15.60s  agent 발화 시작: That’s very common, Manon. Sometimes too many options can be
+    22.34s  user  발화 시작: Mm-hmm.
+    22.79s  user  발화 끝
+    24.54s  <ret> 발화 (turn5 첫 프레임)
+    24.93s  agent 발화 시작: <ret> Perhaps recalling past plans will help. You mentioned 
+    25.11s  agent 발화 끝
+    25.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.23s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    33.10s  user  발화 시작: Oh, yes! Kyoto is still on my list, but I was thinking of so
+    33.46s  agent 발화 끝
+    40.43s  <ret> 발화 (turn7 첫 프레임)
+    40.56s  user  발화 끝
+    40.58s  agent 발화 시작: <ret> [happy] That sounds wonderful. Something a little more
+    42.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: [2026-06-14] User is into rock climbing.
+    45.96s  agent 발화 시작: You’ve expressed an interest in rock climbing. Would a trip 
+    46.09s  agent 발화 끝
+    52.21s  agent 발화 끝

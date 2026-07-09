@@ -59,21 +59,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to offer a gentle sp
-     4.08s  user  발화 시작: Right.
-     4.44s  user  발화 끝
-     6.38s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient. Is it fr
-     6.49s  agent 발화 끝
-    11.44s  user  발화 끝
-    11.62s  agent 발화 시작: It is, actually. It’s a name with roots in several cultures,
-    16.25s  user  발화 시작: Yeah.
-    16.79s  user  발화 끝
-    20.96s  agent 발화 시작: It’s lovely to connect with you in Sydney— a vibrant city, I
-    21.21s  agent 발화 끝
-    30.97s  agent 발화 끝
-    32.72s  user  발화 시작: Well, I’ve been feeling… untethered, I guess. Like I’m suppo
-    38.70s  agent 발화 시작: That sense of being untethered is very common during times o
-    38.79s  user  발화 끝
-    50.29s  agent 발화 끝
-    50.45s  user  발화 시작: It’s just… I feel like everyone else has a plan. A career, a
-    61.02s  user  발화 끝
+     0.00s  agent 발화 시작: Avery, it’s lovely to connect with you. I’m Jaeia, and I’m h
+     5.02s  user  발화 시작: Right.
+     5.66s  user  발화 끝
+     7.80s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient. Is that 
+     7.93s  agent 발화 끝
+    14.02s  user  발화 끝
+    14.21s  agent 발화 시작: It is, actually. It’s a name with roots in several cultures,
+    19.07s  user  발화 시작: Yeah.
+    19.37s  user  발화 끝
+    24.00s  agent 발화 시작: It’s perfectly natural to feel a little unsure when beginnin
+    24.17s  agent 발화 끝
+    34.52s  agent 발화 끝
+    36.20s  user  발화 시작: Well, I’m feeling pretty lost, to be honest. I just… I don’t
+    40.91s  agent 발화 시작: That sense of being overwhelmed is very common, Avery. It’s 
+    41.01s  user  발화 끝
+    50.32s  agent 발화 끝
+    50.48s  user  발화 시작: I— I mean, it’s my grandmother. She passed away last month, 
+    57.10s  user  발화 끝

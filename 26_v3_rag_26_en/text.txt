@@ -3,28 +3,20 @@ SYSTEM: <system> You are Kiora, a upbeat and supportive counselor who helps peop
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Oh, this coffee is… surprisingly good. Anyway, I was wondering about f
-      Well, I was trying to remember which country’s flag has black, red, an
-  S2  Gold? I could have sworn it was yellow.
-      Hmm, okay. Is that the only flag with those colors, though? Seems like
-  S3  Oh! Belgium, right. I always mix those two up. They’re so close.
-      So Germany is black, red, and gold, and Belgium is black, yellow, and 
-  S4  Wow, okay, that's three now. Thanks, Kiora! You’re a lifesaver.
+  S1  Oh, I was just looking at flags, and it got me thinking… what flag is 
+  S2  Gold? I thought it was yellow. Is gold different?
+  S3  Hmm, interesting. I’m working on a project about national symbols, and
+  S4  So, the German flag… when did they actually start using it? I— I mean,
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Oh, this coffee is… surprisingly good. Anyway, I was wondering about flags.
-[  5.39s][moshi] It’s wonderful you found a little enjoyment in your morning! What about flags were you hoping to discuss?
-[ 12.01s][user ] Well, I was trying to remember which country’s flag has black, red, and yellow. It’s driving me ⟨ret@18.32s⟩ nuts.
-[ 18.56s][moshi] That’s ⟦⚡SPAN@19.36s: The flag of Germany features horizontal bands of black, red, and gold.⟧ a common visual combination, actually. The flag of Germany is made up of horizontal bands of black, red, and gold.
-[ 22.16s][user ] «backchannel» Right.
-[ 27.15s][user ] Gold? I could have sworn it was yellow.
-[ 30.15s][moshi] It’s often perceived as yellow, and that’s perfectly understandable—the shades can be quite similar.
-[ 37.24s][user ] Hmm, okay. Is that the only flag with those colors, though? Seems like I've seen it ⟨ret@43.05s⟩ elsewhere.
-[ 43.36s][moshi] There are ⟦⚡SPAN@44.41s: The flag of Belgium consists of three vertical bands of black, yellow, and red.⟧ other flags with similar color schemes. The flag of Belgium has three vertical bands of black, yellow, and red.
-[ 51.67s][user ] Oh! Belgium, right. I always mix those two up. They’re so close.
-[ 56.74s][moshi] It's easy to confuse similar designs—visual memory can play tricks on us.
-[ 62.10s][user ] So Germany is black, red, and gold, and Belgium is black, yellow, and red… Got it.
-[ 69.33s][moshi] ⟨ret@68.93s⟩ Keeping ⟦⚡SPAN@70.05s: The flag of Spain features horizontal bands of red, yellow, and red, with a coat of arms on the yellow band.⟧ those distinctions clear is key. Spain’s flag has horizontal bands of red, yellow, and red, plus a coat of arms.
-[ 73.18s][user ] «backchannel» Uh-huh.
-[ 77.70s][user ] Wow, okay, that's three now. Thanks, Kiora! You’re a lifesaver.
-[ 82.92s][moshi] You’re very welcome! It’s good to untangle these little puzzles; sometimes a clear picture makes all the difference.
+[  0.00s][user ] Oh, I was just looking at flags, and it got me thinking… what flag is black, red, and yellow?
+[  6.93s][moshi] That’s a good question! Many flags share those colors, but one that immediately comes to mind is quite iconic.
+[ 14.03s][moshi] ⟨ret@13.79s⟩ Yes, the ⟦⚡SPAN@14.99s: The flag of Germany features horizontal bands of black, red, and gold.⟧ flag with those colors is… The flag of Germany is composed of horizontal bands of black, red, and gold.
+[ 21.57s][user ] Gold? I thought it was yellow. Is gold different?
+[ 25.00s][moshi] It's a very common point of confusion! “Gold” is the official term used to describe that shade on the German flag.
+[ 32.39s][moshi] ⟨ret@32.07s⟩ Actually, the ⟦⚡SPAN@33.35s: The German flag’s “gold” band is officially specified as a dark golden yellow.⟧ shade of yellow… The “gold” band on the German flag is officially a dark golden yellow.
+[ 35.30s][user ] «backchannel» Right.
+[ 38.55s][user ] Hmm, interesting. I’m working on a project about national symbols, and it’s all so detailed.
+[ 45.12s][moshi] It absolutely is! Details matter when representing a nation’s identity, and it’s wonderful you’re being thorough.
+[ 52.93s][user ] So, the German flag… when did they actually start using it? I— I mean, ⟨ret@58.65s⟩ officially?
+[ 58.89s][moshi] The ⟦⚡SPAN@59.77s: The modern German flag was officially adopted on May 11th, 1919.⟧ current design was adopted… The modern German flag was officially adopted on May eleventh, nineteen nineteen.

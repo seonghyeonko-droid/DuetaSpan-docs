@@ -60,30 +60,31 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hey Klen, thanks. I’m planning a t | S2 That’s great, thanks. What’s the t | S3 …do airlines usually have Wi-Fi on | S4 Okay, good to know. I think I’d pr
 
-     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. It’s good to connect with you—I help peop
-     6.94s  agent 발화 끝
-     7.36s  user  발화 시작: Hey Klen, that’s great. I’m planning a trip to New Zealand i
-    12.76s  agent 발화 시작: New Zealand in October sounds wonderful! To help me find the
-    12.92s  user  발화 끝
-    21.47s  agent 발화 끝
-    21.61s  user  발화 시작: Actually, yeah.
-    22.27s  <ret> 발화 (turn4 첫 프레임)
-    22.42s  agent 발화 시작: <ret> You mentioned preferences— You prefer an aisle seat wh
-    22.43s  user  발화 끝
-    22.77s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.97s]: [2026-07-11] User prefers an aisle seat when traveling.
-    24.70s  user  발화 시작: Mm-hmm.
-    25.20s  user  발화 끝
-    29.39s  user  발화 시작: Are there any direct flights from Toronto?
-    29.50s  agent 발화 끝
-    31.98s  user  발화 끝
-    32.54s  agent 발화 시작: Direct flights from Toronto to Auckland are limited—
-    35.89s  <ret> 발화 (turn8 첫 프레임)
-    35.97s  agent 발화 시작: <ret> Currently, there are no direct flights available. One-
-    36.05s  agent 발화 끝
-    37.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) No direct flights found from Toronto to Auckland in Octo
-    43.41s  user  발화 시작: Mm-hmm.
-    43.95s  user  발화 끝
-    45.72s  agent 발화 시작: Considering your budget, would you like me to prioritize fli
-    45.94s  agent 발화 끝
-    52.94s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. It's good to connect with you—I help peop
+     6.72s  agent 발화 끝
+     7.15s  user  발화 시작: Hey Klen, thanks. I’m planning a trip to New Zealand in Octo
+    11.69s  <ret> 발화 (turn2 첫 프레임)
+    12.09s  agent 발화 시작: <ret> New Zealand in October sounds wonderful! Do you have a
+    12.23s  user  발화 끝
+    13.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: [2026-07-11] User prefers an aisle seat when traveling.
+    18.12s  agent 발화 시작: You prefer an aisle seat when you travel, so I'll prioritize
+    18.29s  agent 발화 끝
+    22.02s  user  발화 시작: Mm-hmm.
+    22.51s  user  발화 끝
+    23.49s  agent 발화 끝
+    24.60s  user  발화 시작: That’s great, thanks. What’s the typical flight time from To
+    28.62s  agent 발화 시작: That's a long haul—typically around eighteen to twenty hours
+    28.63s  user  발화 끝
+    34.30s  user  발화 시작: …do airlines usually have Wi-Fi on those long flights?
+    34.87s  agent 발화 끝
+    37.72s  user  발화 끝
+    37.74s  <ret> 발화 (turn8 첫 프레임)
+    37.98s  agent 발화 시작: <ret> Many airlines now offer Wi-Fi, but the availability an
+    39.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: (tool result) Air Canada flight AC1 from Toronto to Auckland on Octobe
+    47.43s  agent 발화 시작: Air Canada and United both offer Wi-Fi on flights to Aucklan
+    47.49s  agent 발화 끝
+    56.60s  agent 발화 끝
+    57.13s  user  발화 시작: Okay, good to know. I think I’d prefer Air Canada then.
+    60.09s  user  발화 끝

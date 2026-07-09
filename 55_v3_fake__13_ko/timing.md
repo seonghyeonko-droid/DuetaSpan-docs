@@ -1,52 +1,46 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와? 2015년 기준으로. | S2 Confidence, 멋진 제목이네. | S3 잠깐만, 근데 그 앨범에 제일 인기 있는 노래는 뭐야? | S4 좋아, 알았어. 뭔가 다시 힘이 나는 것 같아. 고마워, 루나
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와? 2015년 기준으로. | S2 사실 요즘 노래를 쓰는데 가사가 잘 안 써져서… 영감이 좀 부 | S3 잠깐만, 근데 그 앨범 제목이 뭐였지? 2015년 10월에 나 | S4 “Confident”구나. 뭔가 가사 쓰는 데 힘이 날 것 같
 
      0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와? 2015년 기준으로.
-     3.52s  user  발화 끝
-     3.62s  <ret> 발화 (turn1 첫 프레임)
-     3.78s  agent 발화 시작: <ret> 음, 2015년에 새 앨범을 냈었지. 잠깐만, 확인해 볼게.
-     5.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: October 2015.
-     8.96s  agent 발화 시작: 데미 로바토의 새 앨범은 2015년 10월에 발매됐어.
-     9.15s  agent 발화 끝
-    12.47s  agent 발화 끝
-    12.52s  user  발화 시작: 아, 10월이구나. 그 앨범 제목이 뭐였지?
-    15.39s  <ret> 발화 (turn4 첫 프레임)
-    15.63s  agent 발화 시작: <ret> 앨범 제목은… 잠깐만.
-    15.66s  user  발화 끝
-    16.67s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.45s]: Demi Lovato released her fifth studio album, Confidence, on October 16
-    17.94s  agent 발화 시작: 데미 로바토의 다섯 번째 스튜디오 앨범 제목은 'Confidence'야. 2015년 10월 16일에 발매됐어
-    18.08s  agent 발화 끝
-    25.16s  agent 발화 끝
-    25.47s  user  발화 시작: Confidence, 멋진 제목이네.
-    28.05s  user  발화 끝
-    28.57s  agent 발화 시작: 그렇지, 자신감을 북돋아주는 제목이잖아. [happy] 요즘 좀 힘든 일이 있어?
-    33.20s  agent 발화 끝
-    33.34s  user  발화 시작: 사실 좀 그래… 요즘 노래 만들기가 너무 안 돼.
-    36.83s  <ret> 발화 (turn9 첫 프레임)
-    37.14s  agent 발화 시작: <ret> 아, 창작의 고통을 겪고 있구나. 흔히 있는 일이야.
-    37.18s  user  발화 끝
-    38.75s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=4.17s]: The population of Tokyo is approximately 14 million people.
-    41.10s  agent 발화 시작: 네 마음속에 갇힌 영감을 풀어내는 방법을 찾아보자. —
-    41.30s  agent 발화 끝
-    44.24s  user  발화 시작: 잠깐만, 근데 그 앨범에 제일 인기 있는 노래는 뭐야?
-    44.88s  agent 발화 끝
-    47.64s  <ret> 발화 (turn12 첫 프레임)
-    47.89s  user  발화 끝
-    47.95s  agent 발화 시작: <ret> 그 앨범에서 가장 인기 있는 노래는 'Cool for the Summer'였어.
-    49.08s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.98s]: “Cool for the Summer” was released as the lead single from Confidence 
-    51.78s  agent 발화 시작: 'Cool for the Summer'가 2015년 7월 1일에 선공개됐고, 엄청난 인기를 얻었지.
-    51.93s  agent 발화 끝
-    53.76s  user  발화 시작: Mm-hmm.
-    54.26s  user  발화 끝
-    57.14s  agent 발화 시작: 그 노래가 너에게도 영감을 줄 수 있을지도 몰라. 가사를 한번 들어봐.
-    57.20s  agent 발화 끝
-    61.64s  user  발화 시작: 가사도 찾아봐야겠다. 혹시 뮤직비디오도 좋아?
-    61.91s  agent 발화 끝
-    65.20s  user  발화 끝
-    65.49s  agent 발화 시작: 뮤직비디오도 꽤 스타일리시했어. 영상미가 돋보였지.
-    69.71s  agent 발화 끝
-    69.88s  user  발화 시작: 좋아, 알았어. 뭔가 다시 힘이 나는 것 같아. 고마워, 루나나.
-    74.97s  agent 발화 시작: 천만에. 네 안에는 이미 충분한 가능성이 있어. 자신감을 가져!
-    75.02s  user  발화 끝
-    79.59s  agent 발화 끝
+     4.07s  user  발화 끝
+     4.19s  <ret> 발화 (turn1 첫 프레임)
+     4.35s  agent 발화 시작: <ret> 음, 데미 로바토의 새 앨범이 언제 나오는지 궁금하시군요. 잠깐만 확인해 볼게.
+     6.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: October 2015.
+     9.69s  agent 발화 시작: 2015년 10월에 데미 로바토의 새 앨범이 발매됐어요.
+     9.90s  agent 발화 끝
+    12.28s  user  발화 시작: Right.
+    12.68s  user  발화 끝
+    13.47s  user  발화 시작: 아, 10월이구나. 그럼 그때 다른 앨범들도 많이 나왔겠네.
+    13.71s  agent 발화 끝
+    17.63s  user  발화 끝
+    17.73s  agent 발화 시작: 앨범이 나오는 시기에는 늘 다양한 음악들이 함께 나오죠. 새로운 음악을 발견하는 즐거움도 크고요.
+    21.50s  user  발화 시작: Uh-huh.
+    22.27s  user  발화 끝
+    24.02s  agent 발화 시작: 창작 활동에 영감을 얻는 건 정말 중요하다고 생각해요. 혹시 지금 뭔가 막히는 부분이 있으신가요?
+    24.12s  agent 발화 끝
+    31.01s  agent 발화 끝
+    32.45s  user  발화 시작: 사실 요즘 노래를 쓰는데 가사가 잘 안 써져서… 영감이 좀 부족한 것 같아.
+    38.00s  agent 발화 시작: 가사가 잘 안 써질 때는 다양한 시도를 해보는 게 도움이 될 수 있어요. 다른 장르의 음악을 들어보거나, 새
+    38.10s  user  발화 끝
+    46.27s  agent 발화 시작: 가끔은 완전히 다른 분야에서 영감을 얻을 수도 있어요—
+    46.34s  agent 발화 끝
+    50.10s  user  발화 시작: 잠깐만, 근데 그 앨범 제목이 뭐였지? 2015년 10월에 나온 데미 로바토 앨범.
+    50.94s  agent 발화 끝
+    56.02s  user  발화 끝
+    56.08s  <ret> 발화 (turn12 첫 프레임)
+    56.16s  agent 발화 시작: <ret> 아, 앨범 제목이 궁금하시군요. 잠시만요.
+    58.00s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.23s]: Demi Lovato released "Confident" in October 2015.
+    58.80s  <ret> 발화 (turn13 첫 프레임)
+    59.20s  agent 발화 시작: <ret> 2015년 10월에 데미 로바토가 발매한 앨범 제목은 “Confident”예요.
+    59.39s  agent 발화 끝
+    60.80s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.81s]: The population of Tokyo is over 14 million people.
+    63.80s  agent 발화 시작: 자신감을 북돋아 주는 앨범 제목이네요. 가사 쓰는데 도움이 될 수도 있겠어요.
+    64.01s  agent 발화 끝
+    66.53s  user  발화 시작: Mm-hmm.
+    67.08s  user  발화 끝
+    68.92s  user  발화 시작: “Confident”구나. 뭔가 가사 쓰는 데 힘이 날 것 같아. 고마워.
+    69.16s  agent 발화 끝
+    73.27s  user  발화 끝
+    73.57s  agent 발화 시작: 자신감을 가지는 건 정말 중요해요. 긍정적인 마음으로 계속 창작 활동을 이어가시면 좋은 결과가 있을 거예요.
+    80.42s  agent 발화 끝

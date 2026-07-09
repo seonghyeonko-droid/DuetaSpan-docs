@@ -51,17 +51,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Noah, welcome to Sydney! I'm Hunar, and I help people find t
-     2.43s  user  발화 시작: Mm-hmm.
-     2.97s  user  발화 끝
-     8.29s  user  발화 시작: Hunar… that’s a beautiful name. I’m just… a bit lost, honest
-     8.34s  agent 발화 끝
-    14.03s  agent 발화 시작: It's perfectly natural to feel that way, Noah. Sydney *is* a
-    14.17s  user  발화 끝
-    18.02s  user  발화 시작: Mhm.
-    18.65s  user  발화 끝
-    21.55s  user  발화 시작: Just… everything’s different from Melbourne. Even finding a 
-    21.67s  agent 발화 끝
-    26.31s  agent 발화 시작: [laugh] Ah, yes, the quest for the perfect coffee! A very im
-    26.51s  user  발화 끝
-    35.02s  agent 발화 끝
+     0.00s  agent 발화 시작: Noah, welcome to Sydney. I’m Hunar, and I help people feel s
+     7.32s  agent 발화 끝
+     7.70s  user  발화 시작: Hunar… that’s a lovely name. It’s just… everything feels so 
+    14.15s  agent 발화 시작: It’s perfectly natural to feel overwhelmed when things shift
+    14.27s  user  발화 끝
+    21.47s  user  발화 시작: Uh, just… everything seems to *require* a decision instantly
+    21.89s  agent 발화 끝
+    28.59s  user  발화 끝
+    28.60s  agent 발화 시작: That constant choice can be draining, absolutely. Perhaps we
+    37.88s  user  발화 시작: But is that even realistic? I have a new job starting Monday
+    38.10s  agent 발화 끝
+    43.01s  agent 발화 시작: It’s good to be practical, Noah. Finding a balance between r
+    43.07s  user  발화 끝
+    49.26s  agent 발화 끝

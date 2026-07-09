@@ -64,19 +64,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It's good to connect with you today. I'
-     3.03s  user  발화 시작: Uh-huh.
-     3.65s  user  발화 끝
-     6.27s  user  발화 시작: Oh, that's good to hear. I was just thinking about that trip
-     6.29s  agent 발화 끝
-    10.04s  <ret> 발화 (turn3 첫 프레임)
-    10.25s  user  발화 끝
-    10.27s  agent 발화 시작: <ret> Regarding your Switzerland trip, you mentioned you’re 
-    10.60s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.23s]: [2026-07-14] User is planning a trip to Switzerland in March.
-    17.64s  agent 발화 끝
-    18.77s  user  발화 시작: Actually, yes! I completely forgot about my shellfish allerg
-    23.86s  <ret> 발화 (turn5 첫 프레임)
-    24.18s  agent 발화 시작: <ret> That’s a very important detail to remember, you have a
-    24.42s  user  발화 끝
-    25.38s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.00s]: [2026-04-19] User is allergic to shellfish.
-    31.04s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you. Is there
+     2.76s  user  발화 시작: Uh-huh.
+     3.22s  user  발화 끝
+     5.74s  agent 발화 끝
+     5.80s  user  발화 시작: Oh, hi Lira. Um, I’m trying to remember what I was looking a
+    11.51s  <ret> 발화 (turn3 첫 프레임)
+    11.74s  agent 발화 시작: <ret> You mentioned researching a used car… You were compari
+    11.91s  user  발화 끝
+    12.63s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
+    19.85s  agent 발화 끝
+    21.10s  user  발화 시작: Right! That’s it. And I think… I— I mean, I wanted to know i
+    26.09s  <ret> 발화 (turn5 첫 프레임)
+    26.40s  agent 발화 시작: <ret> Tax incentives for hybrid vehicles can vary quite a bi
+    26.61s  user  발화 끝
+    28.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Tax incentives for hybrid vehicles in Japan: up to ¥100,
+    32.32s  agent 발화 시작: There's a purchase price reduction of up to one hundred thou
+    32.51s  agent 발화 끝
+    39.22s  agent 발화 끝

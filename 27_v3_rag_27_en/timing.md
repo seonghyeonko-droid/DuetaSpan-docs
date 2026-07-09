@@ -1,30 +1,34 @@
 # v3_rag_27_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to research Lux Aurunqu | S2 Nineteen seventy? That seems… earl | S3 But if he was born in nineteen sev | S4 So, he was a relatively late bloom
+# EXAMINER(FDB-v2) 단계: S1 I was reading about Lux Aurunque,  | S2 Nineteen seventy… that’s surprisin | S3 But before that, what was he *doin | S4 Metallurgy…so he had a technical b
 
-     0.00s  user  발화 시작: I’m trying to research Lux Aurunque, but I’m getting confuse
-     5.41s  agent 발화 시작: It’s understandable to feel overwhelmed with research, espec
-     5.64s  user  발화 끝
-    12.89s  <ret> 발화 (turn2 첫 프레임)
-    13.29s  agent 발화 시작: <ret> The composer Lux Aurunque was born in… …nineteen seven
-    13.47s  agent 발화 끝
-    13.93s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.82s]: Lux Aurunque was born in nineteen seventy.
-    17.49s  user  발화 시작: Yeah, yeah.
-    18.31s  user  발화 끝
-    20.94s  agent 발화 끝
-    20.98s  user  발화 시작: Nineteen seventy? That seems… early for the style of music h
-    26.39s  user  발화 끝
-    26.42s  agent 발화 시작: [laugh] It does seem a bit surprising at first glance, doesn
-    30.89s  user  발화 시작: But if he was born in nineteen seventy, how old was he when 
-    31.78s  agent 발화 끝
-    35.98s  user  발화 끝
-    36.03s  agent 발화 시작: That’s a very insightful question. Let’s determine his age w
-    40.88s  <ret> 발화 (turn8 첫 프레임)
-    40.95s  agent 발화 시작: <ret> Lux Aurunque released his first composition in… …ninet
-    41.08s  agent 발화 끝
-    42.64s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.79s]: Lux Aurunque’s debut composition appeared in nineteen ninety-five.
-    43.15s  user  발화 시작: Mm-hmm.
-    43.65s  user  발화 끝
-    47.72s  agent 발화 끝
-    48.04s  user  발화 시작: So, he was a relatively late bloomer, musically speaking?
-    52.20s  user  발화 끝
+     0.00s  user  발화 시작: I was reading about Lux Aurunque, and I’m curious—when was h
+     5.47s  <ret> 발화 (turn1 첫 프레임)
+     5.71s  agent 발화 시작: <ret> That’s a great question, and— He was born in nineteen 
+     5.93s  user  발화 끝
+     6.43s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.00s]: Lux Aurunque was born in nineteen seventy.
+     8.70s  user  발화 시작: Yeah, yeah.
+     9.99s  user  발화 끝
+    11.23s  user  발화 시작: Nineteen seventy… that’s surprisingly recent, actually. Was 
+    11.31s  agent 발화 끝
+    17.57s  <ret> 발화 (turn4 첫 프레임)
+    17.62s  agent 발화 시작: <ret> It’s interesting to consider the timing of his life, y
+    17.86s  user  발화 끝
+    18.53s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.61s]: Lux Aurunque became a prominent figure in the bronze trade in 1995.
+    21.08s  agent 발화 시작: He became a prominent figure in the bronze trade in nineteen
+    21.22s  agent 발화 끝
+    23.60s  user  발화 시작: Uh-huh.
+    24.05s  user  발화 끝
+    25.43s  agent 발화 끝
+    25.52s  user  발화 시작: But before that, what was he *doing*?
+    28.29s  user  발화 끝
+    28.44s  agent 발화 시작: He was—
+    29.02s  <ret> 발화 (turn9 첫 프레임)
+    29.05s  agent 발화 시작: <ret> Before nineteen ninety-five, he studied metallurgy at 
+    29.21s  agent 발화 끝
+    31.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: Before 1995, Lux Aurunque studied metallurgy at the University of Vero
+    31.57s  user  발화 시작: Yeah, totally.
+    32.94s  user  발화 끝
+    33.83s  user  발화 시작: Metallurgy…so he had a technical background then? That expla
+    33.87s  agent 발화 끝
+    39.16s  user  발화 끝

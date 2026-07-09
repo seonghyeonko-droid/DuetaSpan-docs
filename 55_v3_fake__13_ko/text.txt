@@ -1,34 +1,30 @@
 v3_fake__13_ko src=nq style=v1
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 부드럽고 사색적인 라이프 코치, Runana입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 부드럽고 사려 깊은 라이프 코치인 Runana입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  데미 로바토 새 앨범 언제 나와? 2015년 기준으로.
-      아, 10월이구나. 그 앨범 제목이 뭐였지?
-  S2  Confidence, 멋진 제목이네.
-      사실 좀 그래… 요즘 노래 만들기가 너무 안 돼.
-  S3  잠깐만, 근데 그 앨범에 제일 인기 있는 노래는 뭐야?
-      가사도 찾아봐야겠다. 혹시 뮤직비디오도 좋아?
-  S4  좋아, 알았어. 뭔가 다시 힘이 나는 것 같아. 고마워, 루나나.
+      아, 10월이구나. 그럼 그때 다른 앨범들도 많이 나왔겠네.
+  S2  사실 요즘 노래를 쓰는데 가사가 잘 안 써져서… 영감이 좀 부족한 것 같아.
+  S3  잠깐만, 근데 그 앨범 제목이 뭐였지? 2015년 10월에 나온 데미 로바토 앨범.
+  S4  “Confident”구나. 뭔가 가사 쓰는 데 힘이 날 것 같아. 고마워.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] 데미 로바토 새 앨범 언제 나와? 2015년 기준으로.
-[  3.78s][moshi] ⟨ret@3.62s⟩ 음, 2015년에 ⟦⚡SPAN@5.62s: October 2015.⟧ 새 앨범을 냈었지. 잠깐만, 확인해 볼게.
-[  8.96s][moshi] 데미 로바토의 새 앨범은 2015년 10월에 발매됐어.
-[ 12.52s][user ] 아, 10월이구나. 그 앨범 제목이 ⟨ret@15.39s⟩ 뭐였지?
-[ 15.63s][moshi] 앨범 ⟦⚡SPAN@16.67s: Demi Lovato released her fifth studio album, Confidence, on October 16, 2015.⟧ 제목은… 잠깐만.
-[ 17.94s][moshi] 데미 로바토의 다섯 번째 스튜디오 앨범 제목은 'Confidence'야. 2015년 10월 16일에 발매됐어.
-[ 25.47s][user ] Confidence, 멋진 제목이네.
-[ 28.57s][moshi] 그렇지, 자신감을 북돋아주는 제목이잖아. [happy] 요즘 좀 힘든 일이 있어?
-[ 33.34s][user ] 사실 좀 그래… 요즘 노래 만들기가 너무 안 ⟨ret@36.83s⟩ 돼.
-[ 37.14s][moshi] 아, 창작의 ⟦⚡SPAN IRRELEVANT@38.75s: The population of Tokyo is approximately 14 million people.⟧ 고통을 겪고 있구나. 흔히 있는 일이야.
-[ 41.10s][moshi] «interrupted» 네 마음속에 갇힌 영감을 풀어내는 방법을 찾아보자. —
-[ 44.24s][user ] «interrupts_prev» 잠깐만, 근데 그 앨범에 제일 인기 있는 노래는 ⟨ret@47.64s⟩ 뭐야?
-[ 47.95s][moshi] 그 앨범에서 ⟦⚡SPAN@49.08s: “Cool for the Summer” was released as the lead single from Confidence on July 1, 2015.⟧ 가장 인기 있는 노래는 'Cool for the Summer'였어.
-[ 51.78s][moshi] 'Cool for the Summer'가 2015년 7월 1일에 선공개됐고, 엄청난 인기를 얻었지.
-[ 53.76s][user ] «backchannel» Mm-hmm.
-[ 57.14s][moshi] 그 노래가 너에게도 영감을 줄 수 있을지도 몰라. 가사를 한번 들어봐.
-[ 61.64s][user ] 가사도 찾아봐야겠다. 혹시 뮤직비디오도 좋아?
-[ 65.49s][moshi] 뮤직비디오도 꽤 스타일리시했어. 영상미가 돋보였지.
-[ 69.88s][user ] 좋아, 알았어. 뭔가 다시 힘이 나는 것 같아. 고마워, 루나나.
-[ 74.97s][moshi] 천만에. 네 안에는 이미 충분한 가능성이 있어. 자신감을 가져!
+[  4.35s][moshi] ⟨ret@4.19s⟩ 음, 데미 로바토의 ⟦⚡SPAN@6.19s: October 2015.⟧ 새 앨범이 언제 나오는지 궁금하시군요. 잠깐만 확인해 볼게.
+[  9.69s][moshi] 2015년 10월에 데미 로바토의 새 앨범이 발매됐어요.
+[ 12.28s][user ] «backchannel» Right.
+[ 13.47s][user ] 아, 10월이구나. 그럼 그때 다른 앨범들도 많이 나왔겠네.
+[ 17.73s][moshi] 앨범이 나오는 시기에는 늘 다양한 음악들이 함께 나오죠. 새로운 음악을 발견하는 즐거움도 크고요.
+[ 21.50s][user ] «backchannel» Uh-huh.
+[ 24.02s][moshi] 창작 활동에 영감을 얻는 건 정말 중요하다고 생각해요. 혹시 지금 뭔가 막히는 부분이 있으신가요?
+[ 32.45s][user ] 사실 요즘 노래를 쓰는데 가사가 잘 안 써져서… 영감이 좀 부족한 것 같아.
+[ 38.00s][moshi] 가사가 잘 안 써질 때는 다양한 시도를 해보는 게 도움이 될 수 있어요. 다른 장르의 음악을 들어보거나, 새로운 경험을 해보는 것도 좋고요.
+[ 46.27s][moshi] «interrupted» 가끔은 완전히 다른 분야에서 영감을 얻을 수도 있어요—
+[ 50.10s][user ] «interrupts_prev» 잠깐만, 근데 그 앨범 제목이 뭐였지? 2015년 10월에 나온 데미 로바토 앨범.
+[ 56.16s][moshi] ⟨ret@56.08s⟩ 아, 앨범 ⟦⚡SPAN@58.00s: Demi Lovato released "Confident" in October 2015.⟧ 제목이 궁금하시군요. 잠시만요.
+[ 59.20s][moshi] ⟨ret@58.80s⟩ 2015년 10월에 ⟦⚡SPAN IRRELEVANT@60.80s: The population of Tokyo is over 14 million people.⟧ 데미 로바토가 발매한 앨범 제목은 “Confident”예요.
+[ 63.80s][moshi] 자신감을 북돋아 주는 앨범 제목이네요. 가사 쓰는데 도움이 될 수도 있겠어요.
+[ 66.53s][user ] «backchannel» Mm-hmm.
+[ 68.92s][user ] “Confident”구나. 뭔가 가사 쓰는 데 힘이 날 것 같아. 고마워.
+[ 73.57s][moshi] 자신감을 가지는 건 정말 중요해요. 긍정적인 마음으로 계속 창작 활동을 이어가시면 좋은 결과가 있을 거예요.

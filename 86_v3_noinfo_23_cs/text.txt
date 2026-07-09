@@ -1,53 +1,73 @@
 v3_noinfo_23_cs src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스 관리를 돕는 긍정적이고 지지적인 웰니스 코치 Brae입니다. <system>
+SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰빙 코치인 Brae입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해?
-      그렇구나. 추워 보이네. 근처에 괜찮은 후기 많은 아늑한 카페 좀 찾아 줄래?
-      좋게 들리네. 오늘 저녁 6시 30분에 두 명 예약 좀 해 줄래?
-  S2  좋다! 마음이 놓이네. 아, 요즘 일이 너무 스트레스야.
-      그냥… 새로운 프로젝트가 너무 커. 그리고 상사가 계속 일을 더 추가해.
-      맞아! 그리고 해야 할 일은 많은데, 거절을 못 하고 계속 "네"만 말하게 돼.
-  S3  알지만… 무례하게 느껴지거나 팀워크를 망치는 것 같아.
-      음… 좋은 시각이네. [sigh] 시간 관리 기술에 대해 아는 거 있어?
-      포모도로… 뭐?
-  S4  오. 알았어. 그럼 내일 아침 9시에 할 일 목록을 검토하라고 알림이라도 설정해 줄래?
-      완벽해. 고마워, 브레. 정말 큰 도움이 됐어.
-      그걸 기억하려고 노력할게.
+  S1  어, 작년 12월 24일 도쿄 날씨가 어땠어?
+      으, 추웠겠네. 있잖아, 신주쿠역 근처에 아늑한 카페 좀 찾아 줘.
+      거기 와이파이 있어?
+      좋겠다! 음… 혹시 지금 테이블 있는지 알아봐 줄래?
+  S2  좋아. 그럼 나 하나 예약해 줘.
+      잘 됐네! 거기 가는 제일 좋은 방법이 뭔데?
+      그거면 쉽겠네. 고마워. 내일 면접 때문에 좀 스트레스받아.
+      그래도 혹시 면접에서 멍해져서 질문에 대답 못하면 어떡해?
+  S3  흠, 그럴까. 면접 질문 연습할 수 있는 좋은 웹사이트 있어?
+      좋은 정보네. 그 링크 좀 보내 줄래?
+      고마워, 진짜 도움이 된다. 아, 그런데 지금 몇 시야?
+      알았어. 내일 아침 9시에 면접 있는 거 알려 줘.
+  S4  완벽해. 혹시 StellarTech에 대해 아는 거 있어?
+      직원이 200명? 괜찮은 규모네. 회사 문화는 어때?
+      아, 그렇구나. 아쉽네. 그래도 이제 좀 더 준비된 것 같아.
+      그래, 네 말이 맞아. 고마워, 브레.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해?
-[  4.09s][moshi] ⟨ret@3.93s⟩ 음, ⟦⚡SPAN@5.13s: (tool result) The weather in Tokyo on December twenty-fourth, 2023 was partly cloudy with a high of 12 degrees⟧ 확인해 보니까… 작년 12월 24일 도쿄는 부분적으로 흐렸고, 기온은 6도에서 12도 사이였어요.
+[  0.00s][user ] 어, 작년 12월 24일 도쿄 날씨가 어땠어?
+[  3.27s][moshi] ⟨ret@3.11s⟩ 알아볼게요. ⟦⚡SPAN@4.55s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of eleven de⟧ 작년 크리스마스 이브 도쿄는 대체로 흐렸고, 기온은 6도에서 11도 사이였어요.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
-[  8.37s][user ] «backchannel» 응.
-[ 12.14s][user ] 그렇구나. 추워 보이네. 근처에 괜찮은 후기 많은 아늑한 카페 좀 찾아 ⟨ret@17.01s⟩ 줄래?
-[ 17.41s][moshi] 네, "The ⟦⚡SPAN@19.01s: (tool result) "The Daily Grind" is 0.5 miles away, has 4.5 stars from 120 reviews, and is open until 8 PM.⟧ Daily Grind"라는 곳이 반 마일 떨어져 있고, 평점은 4.5점에 리뷰가 120개 있고, 저녁 8시까지 영업해요.
-      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "cozy cafe", "location": "current location", "sort_by": "rating"}}
-[ 21.54s][user ] «backchannel» 음.
-[ 26.03s][moshi] 거기 정말 인기 있는 곳이라고 들었어요. 오늘처럼 쌀쌀한 날씨에 몸 녹이기에 딱 좋을 것 같아요.
-[ 32.43s][user ] 좋게 들리네. 오늘 저녁 6시 30분에 두 명 예약 좀 해 줄래?
-[ 36.64s][moshi] ⟨ret@36.56s⟩ ⟦⚡SPAN@37.06s: (tool result) Your reservation at "The Daily Grind" for two people is confirmed for 6:30 PM today. Confirmatio⟧ 네, 예약 완료됐어요! "The Daily Grind"에 두 명, 저녁 6시 30분으로 예약해 드렸어요. 확인 번호는 789234번입니다.
-      CALL: {"function": "Restaurant_1_Reserve", "arguments": {"restaurant_name": "The Daily Grind", "date": "today", "time": "18:30", "party_size": 2}}
-[ 45.27s][user ] 좋다! 마음이 놓이네. 아, 요즘 일이 너무 스트레스야.
-[ 49.44s][moshi] 일 스트레스는 정말 흔한 일이에요. 오늘 저녁에 자기 관리 시간을 갖는 건 정말 좋은 생각이에요.
-[ 56.09s][user ] 그냥… 새로운 프로젝트가 너무 커. 그리고 상사가 계속 일을 더 추가해.
-[ 60.67s][moshi] 정말 힘드시겠네요. 기대치가 계속 바뀌면 지치기 쉬워요.
-[ 65.21s][user ] 맞아! 그리고 해야 할 일은 많은데, 거절을 못 하고 계속 "네"만 말하게 돼.
-[ 70.69s][moshi] 정말 통찰력 있는 말씀이세요. "아니오"라고 말하는 법을 배우는 건 강력한 기술이지만, 연습이 필요해요.
-[ 78.20s][user ] 알지만… 무례하게 느껴지거나 팀워크를 망치는 것 같아.
-[ 82.48s][moshi] 그렇게 생각하는 건 흔한 일이에요! 하지만 경계를 설정하는 건 비협조적인 게 아니라, 에너지를 보호하고 최고의 결과를 내기 위한 거예요.
-[ 90.80s][user ] 음… 좋은 시각이네. [sigh] 시간 관리 기술에 대해 아는 거 있어?
-[ 95.12s][moshi] 네, 물론이죠! 여러 가지 방법이 있어요. 포모도로 기법이 좋은 시작점이 될 거예요.
-[ 99.28s][user ] «backchannel» 응.
-[100.58s][user ] 포모도로… ⟨ret@101.76s⟩ 뭐?
-[102.16s][moshi] 아, ⟦⚡SPAN@102.88s: (no information found)⟧ 죄송해요. 지금은 포모도로 기법에 대한 자세한 정보를 찾을 수 없어요.
-[107.41s][user ] 오. 알았어. 그럼 내일 아침 9시에 할 일 목록을 검토하라고 알림이라도 설정해 ⟨ret@113.13s⟩ 줄래?
-[113.45s][moshi] 네, ⟦⚡SPAN@114.17s: (tool result) A reminder to “Review to-do list” has been set for tomorrow at 9:00 AM.⟧ 그렇게 해 드릴게요! 내일 아침 9시에 할 일 목록을 검토하라는 알림을 설정해 드렸어요.
-      CALL: {"function": "Calendar_1_CreateReminder", "arguments": {"time": "09:00", "description": "Review to-do list"}}
-[115.09s][user ] «backchannel» 어어.
-[119.43s][user ] 완벽해. 고마워, 브레. 정말 큰 도움이 됐어.
-[122.83s][moshi] 천만에요! 작은 변화가 스트레스 관리와 더 나은 일과 삶의 균형을 이루는 데 큰 도움이 될 수 있다는 것을 기억하세요.
-[126.76s][user ] «backchannel» 응.
-[132.61s][user ] 그걸 기억하려고 노력할게.
-[134.55s][moshi] 그게 전부예요— 시도하려는 의지가 있다면요. 카페에서 즐거운 시간 보내세요!
+[ 10.27s][user ] 으, 추웠겠네. 있잖아, 신주쿠역 근처에 아늑한 카페 좀 찾아 ⟨ret@14.82s⟩ 줘.
+[ 15.22s][moshi] 네, 근처 ⟦⚡SPAN@16.82s: (tool result) Found “Café Lumiere”, 0.3 kilometers from Shinjuku station, rated 4.5 stars with 120 reviews.⟧ 카페를 검색해 드릴게요. 신주쿠역에서 불과 0.3킬로미터 거리에 있는 카페 루미에르를 찾았는데, 후기도 아주 좋더라고요.
+      CALL: {"function": "Places_1_Search", "arguments": {"query": "cozy café", "location": "Shinjuku station"}}
+[ 20.08s][user ] «backchannel» 응.
+[ 26.42s][user ] 거기 와이파이 ⟨ret@27.36s⟩ 있어?
+[ 27.60s][moshi] 카페 ⟦⚡SPAN@28.32s: (tool result) Café Lumiere offers free Wi-Fi, outdoor seating, and accepts credit cards.⟧ 편의시설을 확인해 드릴게요. 네, 카페 루미에르는 무료 와이파이, 야외 좌석, 카드 결제를 지원하고 있어요.
+      CALL: {"function": "Places_1_GetDetails", "arguments": {"place_id": "Café Lumiere"}}
+[ 32.47s][user ] «backchannel» 음.
+[ 34.69s][user ] 좋겠다! 음… 혹시 지금 테이블 있는지 알아봐 줄래?
+[ 38.41s][moshi] ⟨ret@38.33s⟩ 알아볼게요. 카페 ⟦⚡SPAN@39.61s: (tool result) Café Lumiere has two tables available for one person right now.⟧ 루미에르에는 현재 1인용 테이블이 두 개 남아 있어요.
+      CALL: {"function": "Places_1_CheckAvailability", "arguments": {"place_id": "Café Lumiere", "party_size": 1}}
+[ 44.10s][user ] 좋아. 그럼 나 하나 예약해 ⟨ret@46.30s⟩ 줘.
+[ 46.54s][moshi] 네, 예약을 ⟦⚡SPAN@48.30s: (tool result) Reservation confirmed at Café Lumiere for one person at 3:15 PM today. Confirmation number is 78⟧ 진행해 드릴게요. 카페 루미에르 3시 15분 예약이 확정됐습니다. 확인 번호는 78923번이에요.
+      CALL: {"function": "Places_1_Reserve", "arguments": {"place_id": "Café Lumiere", "party_size": 1, "time": "now"}}
+[ 53.84s][user ] 잘 됐네! 거기 가는 제일 좋은 방법이 ⟨ret@56.78s⟩ 뭔데?
+[ 57.18s][moshi] 카페 가는 ⟦⚡SPAN@58.78s: (tool result) Walk 0.3 kilometers southeast on Shinjuku Station East Exit, turn left onto Shinjuku 3-chome, an⟧ 길을 안내해 드릴게요. 여기서 남동쪽으로 걸어가서 왼쪽으로 돌면 카페가 오른쪽에 있을 거예요. 아주 가까워요.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"start": "my location", "end": "Café Lumiere"}}
+[ 66.07s][user ] 그거면 쉽겠네. 고마워. 내일 면접 때문에 좀 스트레스받아.
+[ 70.58s][moshi] 아, 면접은 긴장되기 마련이죠. 스트레스를 받는 건 당연해요. [happy] 자신의 강점과 준비한 내용을 떠올려 보세요.
+[ 77.35s][user ] 그래도 혹시 면접에서 멍해져서 질문에 대답 못하면 어떡해?
+[ 81.10s][moshi] 그건 흔한 걱정이에요. 면접에서 자주 나오는 질문들을 미리 연습해 보세요. 자신감을 키울 수 있을 거예요.
+[ 88.87s][user ] 흠, 그럴까. 면접 질문 연습할 수 있는 좋은 웹사이트 있어?
+[ 93.69s][moshi] 물론이죠! Glassdoor에는 다양한 직무에 맞춰 면접 질문이 많이 모여 있어요.
+[ 97.49s][user ] «backchannel» 응.
+[ 99.77s][user ] 좋은 정보네. 그 링크 좀 보내 줄래?
+[102.38s][moshi] ⟨ret@102.30s⟩ 네, ⟦⚡SPAN@103.58s: (tool result) URL opened in your default browser: https://www.glassdoor.com/Interview/index.htm.⟧ 보내 드릴게요. Glassdoor 면접 질문 페이지를 브라우저에서 열어 드렸어요.
+      CALL: {"function": "Browser_1_OpenURL", "arguments": {"url": "https://www.glassdoor.com/Interview/index.htm"}}
+[109.04s][user ] 고마워, 진짜 도움이 된다. 아, 그런데 지금 몇 ⟨ret@112.74s⟩ 시야?
+[112.89s][moshi] 시간을 확인해 볼게요. ⟦⚡SPAN@114.74s: (tool result) The current time is 3:08 PM.⟧ 현재 오후 3시 8분이에요. 카페 예약 시간까지 충분히 시간이 남았어요.
+      CALL: {"function": "Time_1_GetCurrentTime", "arguments": {}}
+[115.07s][user ] «backchannel» 어어.
+[119.80s][user ] 알았어. 내일 아침 9시에 면접 있는 거 알려 ⟨ret@122.91s⟩ 줘.
+[123.23s][moshi] 네, 알람을 설정해 ⟦⚡SPAN@124.91s: (tool result) Reminder set for tomorrow at 9:00 AM: Job interview.⟧ 드릴게요. 내일 오전 9시에 면접 알람을 설정했습니다.
+      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"time": "tomorrow 9:00 AM", "description": "Job interview"}}
+[126.11s][user ] «backchannel» 와.
+[128.94s][user ] 완벽해. 혹시 StellarTech에 대해 아는 거 ⟨ret@132.24s⟩ 있어?
+[132.39s][moshi] StellarTech에 대한 ⟦⚡SPAN@133.52s: (tool result) StellarTech is a software development company specializing in AI solutions, founded in 2015 with⟧ 정보를 찾아 드릴게요.
+      CALL: {"function": "Search_1_WebSearch", "arguments": {"query": "StellarTech company"}}
+[134.80s][moshi] StellarTech는 2015년에 설립된 AI 소프트웨어 회사이고, 직원은 약 200명 정도예요.
+[143.91s][user ] 직원이 200명? 괜찮은 규모네. 회사 문화는 ⟨ret@147.39s⟩ 어때?
+[147.79s][moshi] 회사 ⟦⚡SPAN@148.67s: (no information found)⟧ 문화에 대한 자세한 내용을 찾아볼게요.
+      CALL: {"function": "Search_1_WebSearch", "arguments": {"query": "StellarTech company culture"}}
+[150.57s][moshi] 죄송하지만, 현재 StellarTech의 회사 문화에 대한 구체적인 내용은 찾을 수 없었어요.
+[155.81s][user ] 아, 그렇구나. 아쉽네. 그래도 이제 좀 더 준비된 것 같아.
+[159.64s][moshi] 정말 잘 됐네요! 긍정적인 조치를 취하고 계시는 것 같아요. 자기 자신에 대한 믿음이 성공의 열쇠라는 것을 기억하세요.
+[167.33s][user ] 그래, 네 말이 맞아. 고마워, 브레.
+[170.13s][moshi] 천만에요. 면접 전에 필요한 것이 있으면 언제든지 말씀해 주세요. 아니면 그냥 이야기해도 좋아요.

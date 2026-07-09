@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 세재님! I’m Aril, and I’m here to help you navigate frie
-     7.00s  agent 발화 끝
-     7.11s  user  발화 시작: Aril? That's… a unique name. Are you, like, a robot or somet
-    11.76s  agent 발화 시작: [laugh] That’s a fair question! I’m designed to be a support
-    11.87s  user  발화 끝
-    16.23s  user  발화 시작: Yeah.
-    16.72s  user  발화 끝
-    21.31s  agent 발화 끝
-    21.93s  user  발화 시작: I’ve been feeling really lonely lately, even with people aro
-    28.05s  user  발화 끝
-    28.31s  agent 발화 시작: It absolutely is, 세재님. Feeling disconnected despite being su
-    38.37s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세재님. I’m Aril, and I’m so glad we have this time to c
+     8.30s  agent 발화 끝
+     8.41s  user  발화 시작: Aril? That’s… a very Western name. Are you even Korean? I wa
+    15.78s  agent 발화 시작: [laugh] That’s a fair question, 세재님! My name isn’t tied to a
+    15.87s  user  발화 끝
+    21.04s  user  발화 시작: Yeah.
+    21.49s  user  발화 끝
+    27.05s  agent 발화 끝
+    27.76s  user  발화 시작: I suppose so… but it’s hard making friends when you feel lik
+    37.40s  user  발화 끝
+    37.64s  agent 발화 시작: It sounds incredibly lonely, 세재님. Feeling disconnected is so
+    47.27s  agent 발화 끝

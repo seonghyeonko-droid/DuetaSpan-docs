@@ -1,124 +1,128 @@
 # v3_selfc_08_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Non-stop is good. Can you book tha | S3 Grounding techniques? What are tho | S4 The hum of the refrigerator, a car
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 보여 | S2 짐 부치는 것도 가능한지 궁금해요. | S3 음… 출발 시간 다시 한 번만 확인해 줄래요? | S4 알겠습니다. 팁 감사해요.
 
-     0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     4.24s  <ret> 발화 (turn1 첫 프레임)
-     4.55s  agent 발화 시작: <ret> Certainly, let's find some buses for you. There are th
-     4.67s  user  발화 끝
-     5.60s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.43s]: (tool result) Three buses are available: 8:00 AM, $250; 2:00 PM, $280;
-    11.41s  user  발화 시작: Uh-huh.
-    11.91s  user  발화 끝
-    16.70s  agent 발화 끝
-    17.85s  user  발화 시작: Hmm, the ten PM one sounds good, but… I— I mean, is there on
-    22.63s  agent 발화 시작: [interrupting] Perhaps around six or seven PM?
-    22.75s  user  발화 끝
-    24.56s  user  발화 시작: Yeah.
-    24.91s  user  발화 끝
-    25.63s  user  발화 시작: Actually, no, not earlier. Is the ten PM one direct?
-    25.86s  agent 발화 끝
-    28.76s  <ret> 발화 (turn7 첫 프레임)
-    29.07s  agent 발화 시작: <ret> Let me check the details for that bus. Yes, the ten PM
-    29.14s  user  발화 끝
-    29.72s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.61s]: (tool result) The 10:00 PM bus is direct, taking 18 hours and includes
-    36.86s  user  발화 시작: Eighteen hours… that's a long ride. What about flights?
-    36.91s  agent 발화 끝
-    40.18s  <ret> 발화 (turn9 첫 프레임)
-    40.41s  agent 발화 시작: <ret> Flights are certainly faster, let’s explore those opti
-    40.55s  user  발화 끝
-    42.02s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.07s]: (tool result) Four flights are available: 7:00 AM, $350; 11:00 AM, $40
-    44.42s  agent 발화 시작: Four flights are available on May tenth, ranging from three 
-    44.48s  agent 발화 끝
-    50.27s  user  발화 시작: Three hundred fifty sounds okay. What airline is that?
-    50.35s  agent 발화 끝
-    53.65s  user  발화 끝
-    53.83s  <ret> 발화 (turn12 첫 프레임)
-    53.99s  agent 발화 시작: <ret> That flight is operated by United. The seven AM United
-    55.11s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.75s]: (tool result) The 7:00 AM United flight is non-stop, 2 hours 30 minute
-    63.63s  agent 발화 끝
-    65.42s  user  발화 시작: Non-stop is good. Can you book that for us?
-    67.89s  <ret> 발화 (turn14 첫 프레임)
-    68.04s  agent 발화 시작: <ret> Of course, I can proceed with the booking.
-    68.24s  user  발화 끝
-    68.39s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.58s]: (tool result) Booking confirmed: United 7:00 AM flight, Chicago to Den
-    70.58s  agent 발화 시작: Your flight is booked! Confirmation number AX927L for three 
-    70.62s  agent 발화 끝
-    75.08s  user  발화 시작: Okay.
-    75.49s  user  발화 끝
-    76.54s  user  발화 시작: Excellent! Can you set a reminder to check in online twenty-
-    76.79s  agent 발화 끝
-    80.96s  <ret> 발화 (turn18 첫 프레임)
-    81.11s  agent 발화 시작: <ret> Certainly, I can set a reminder for that.
-    81.26s  user  발화 끝
-    82.24s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.77s]: (tool result) Reminder set: May ninth, 7:00 AM, "Check in for United f
-    83.72s  agent 발화 시작: A reminder is set for May ninth at seven AM to check in for 
-    83.88s  agent 발화 끝
-    86.76s  user  발화 시작: Right.
-    87.25s  user  발화 끝
-    88.66s  user  발화 시작: That's perfect. I'm feeling a little anxious about the trip 
-    88.78s  agent 발화 끝
-    92.50s  user  발화 끝
-    92.95s  agent 발화 시작: It's perfectly normal to feel anxious before a trip. Perhaps
-    96.15s  user  발화 시작: Yeah.
-    96.59s  user  발화 끝
-   100.09s  agent 발화 끝
-   100.16s  user  발화 시작: Maybe. Do you have any suggestions for managing travel anxie
-   104.37s  agent 발화 시작: Deep breathing exercises are often very helpful for calming 
-   104.46s  user  발화 끝
-   106.20s  user  발화 시작: Yeah, totally.
-   107.02s  user  발화 끝
-   108.85s  user  발화 시작: I’ve tried those, but they don’t always work for me.
-   109.09s  agent 발화 끝
-   112.00s  agent 발화 시작: That's understandable. Sometimes grounding techniques, focus
-   112.09s  user  발화 끝
-   118.39s  agent 발화 끝
-   118.48s  user  발화 시작: Grounding techniques? What are those?
-   121.39s  user  발화 끝
-   121.62s  agent 발화 시작: They involve bringing your attention to the present moment t
-   125.69s  user  발화 시작: Yeah.
-   126.13s  user  발화 끝
-   127.53s  user  발화 시작: [happy] That sounds… manageable.
-   127.92s  agent 발화 끝
-   130.11s  user  발화 끝
-   130.22s  agent 발화 시작: It can be a simple yet powerful tool. Would you like me to g
-   132.88s  user  발화 시작: Yeah.
-   133.32s  user  발화 끝
-   135.55s  agent 발화 끝
-   136.38s  user  발화 시작: Yeah, that would be great.
-   137.63s  agent 발화 시작: Alright, let's begin. Find a comfortable position and close 
-   137.81s  user  발화 끝
-   139.39s  user  발화 시작: Yeah.
-   139.93s  user  발화 끝
-   143.22s  agent 발화 시작: Notice five things you can see around you when you open your
-   143.24s  agent 발화 끝
-   148.86s  user  발화 시작: Okay… a lamp, a picture, the window, a book, my phone.
-   148.87s  agent 발화 끝
-   153.96s  user  발화 끝
-   154.04s  agent 발화 시작: Good. Now, notice four things you can physically feel.
-   157.83s  agent 발화 끝
-   158.42s  user  발화 시작: The chair under me, my feet on the floor, my hands in my lap
-   164.75s  agent 발화 시작: Excellent. And now, three things you can hear.
-   164.91s  user  발화 끝
-   167.60s  user  발화 시작: The hum of the refrigerator, a car passing outside, and… you
-   167.84s  agent 발화 끝
-   171.39s  agent 발화 시작: Wonderful. Two things you can smell.
-   171.71s  user  발화 끝
-   172.50s  user  발화 시작: Yeah, totally.
-   173.32s  user  발화 끝
-   173.97s  agent 발화 끝
-   173.99s  user  발화 시작: Coffee… and a faint scent of flowers.
-   176.86s  agent 발화 시작: And finally, one thing you can taste.
-   177.13s  user  발화 끝
-   177.63s  user  발화 시작: Okay.
-   178.08s  user  발화 끝
-   179.49s  agent 발화 끝
-   181.06s  user  발화 시작: Just the lingering taste of my tea.
-   183.65s  user  발화 끝
-   183.81s  agent 발화 시작: Very good. Bringing your attention to these sensory details 
-   187.76s  user  발화 시작: Mm-hmm.
-   188.20s  user  발화 끝
-   189.29s  user  발화 시작: I do feel a bit calmer, actually. Thanks, Oruus.
-   189.55s  agent 발화 끝
-   192.52s  user  발화 끝
-   192.60s  agent 발화 시작: You’re very welcome. I’m glad I could help. Remember, it’s o
-   199.64s  agent 발화 끝
+     0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 5월 10일에 가는 버스 좀 보여줘.
+     4.08s  <ret> 발화 (turn1 첫 프레임)
+     4.39s  agent 발화 시작: <ret> 덴버행 버스편을 알아보고 있습니다. 5월 10일에 시카고에서 덴버로 가는 버스는 세 편이 있습니다
+     4.44s  user  발화 끝
+     5.44s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.54s]: (tool result) There are three buses from Chicago to Denver on May 10th
+    14.25s  user  발화 시작: Oh.
+    14.75s  user  발화 끝
+    19.60s  agent 발화 끝
+    20.72s  user  발화 시작: 음… 5월 10일이 아니고, 5월 12일로 해줘.
+    23.64s  <ret> 발화 (turn4 첫 프레임)
+    24.03s  agent 발화 시작: <ret> 날짜를 5월 12일로 변경해서 다시 확인해 보겠습니다. 5월 12일에는 아침 9시와 저녁 7시에 
+    24.23s  user  발화 끝
+    25.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) There are two buses from Chicago to Denver on May 12th: 
+    37.58s  agent 발화 끝
+    37.68s  user  발화 시작: 아침 9시 버스로 예약해 줘.
+    39.37s  <ret> 발화 (turn6 첫 프레임)
+    39.77s  agent 발화 시작: <ret> 아침 9시 버스로 예약을 진행하겠습니다. 예약이 완료되었습니다. 버스 ID는 9AM_Chicago
+    39.89s  user  발화 끝
+    40.65s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.99s]: (tool result) Your reservation is confirmed: bus ID 9AM_Chicago_Denver
+    47.89s  user  발화 시작: Really?
+    48.48s  user  발화 끝
+    52.52s  agent 발화 끝
+    52.77s  user  발화 시작: 혹시, 그 버스에 와이파이 있어요?
+    55.30s  <ret> 발화 (turn9 첫 프레임)
+    55.70s  agent 발화 시작: <ret> 버스에 와이파이가 있는지 확인해 보겠습니다.
+    55.73s  user  발화 끝
+    56.59s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.95s]: (tool result) Bus 9AM_Chicago_Denver_May12 has wifi, power outlets, an
+    58.56s  agent 발화 시작: 해당 버스에는 와이파이, 콘센트, 화장실이 있습니다.
+    58.65s  agent 발화 끝
+    62.12s  agent 발화 끝
+    62.72s  user  발화 시작: 혹시, 짐 부치는 것도 가능한가요?
+    65.21s  user  발화 끝
+    65.62s  agent 발화 시작: 짐 부치는 것에 대해—
+    66.53s  user  발화 시작: 짐 부치는 것도 가능한지 궁금해요.
+    67.27s  agent 발화 끝
+    68.50s  <ret> 발화 (turn14 첫 프레임)
+    68.73s  agent 발화 시작: <ret> 짐 부치는 것이 가능한지 확인해 보겠습니다.
+    68.88s  user  발화 끝
+    69.46s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.19s]: (tool result) Bus 9AM_Chicago_Denver_May12 allows one free checked bag
+    71.72s  agent 발화 시작: 승객 한 명당 수하물 한 개를 무료로 부칠 수 있습니다. 무게 제한은 50파운드입니다.
+    71.91s  agent 발화 끝
+    77.28s  agent 발화 끝
+    77.74s  user  발화 시작: 50파운드면 꽤 되네요. 그럼 좌석 지정은 어떻게 돼요?
+    80.90s  <ret> 발화 (turn17 첫 프레임)
+    81.29s  agent 발화 시작: <ret> 좌석 지정 방법에 대해 알려드리겠습니다.
+    81.44s  user  발화 끝
+    82.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.05s]: (tool result) The bus has a 2x2 seating arrangement; seats 1-4 are at 
+    84.15s  agent 발화 시작: 2x2 좌석 배치이고, 1-4번 좌석은 앞쪽, 5-8번은 중간, 9-12번은 뒤쪽에 있습니다.
+    84.35s  agent 발화 끝
+    89.73s  user  발화 시작: Okay.
+    90.23s  user  발화 끝
+    91.61s  agent 발화 끝
+    91.61s  user  발화 시작: 그럼 앞쪽 좌석으로 부탁해요.
+    93.65s  <ret> 발화 (turn21 첫 프레임)
+    93.73s  user  발화 끝
+    93.80s  agent 발화 시작: <ret> 앞쪽 좌석으로 지정해 드리겠습니다.
+    94.69s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.59s]: (tool result) Seats 1A, 1B, and 1C have been reserved for you on bus 9
+    96.13s  agent 발화 시작: 1A, 1B, 1C 좌석이 예약되었습니다.
+    96.38s  agent 발화 끝
+    99.97s  agent 발화 끝
+   100.03s  user  발화 시작: 혹시, 버스 출발하는 곳은 어디예요?
+   102.09s  <ret> 발화 (turn24 첫 프레임)
+   102.48s  agent 발화 시작: <ret> 버스 출발 장소를 알려드리겠습니다.
+   102.61s  user  발화 끝
+   103.29s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.90s]: (tool result) The bus departs from Chicago Union Station, 225 South Ca
+   105.31s  agent 발화 시작: 시카고 유니언 스테이션, 사우스 캐널 스트리트 225번에서 출발합니다.
+   105.38s  agent 발화 끝
+   107.79s  user  발화 시작: Uh-huh.
+   108.42s  user  발화 끝
+   110.64s  agent 발화 끝
+   110.73s  user  발화 시작: 유니언 스테이션이요. 알겠어요.
+   112.74s  agent 발화 시작: 혹시 출발 전에 궁금한 점이 더 있으신가요?
+   112.81s  user  발화 끝
+   114.00s  user  발화 시작: Yeah.
+   114.36s  user  발화 끝
+   115.74s  agent 발화 끝
+   116.62s  user  발화 시작: 음… 출발 시간 다시 한 번만 확인해 줄래요?
+   119.26s  agent 발화 시작: 물론입니다. 출발 시간은 아침 9시입니다.
+   119.38s  user  발화 끝
+   122.31s  agent 발화 끝
+   122.33s  user  발화 시작: 아, 맞다. 혹시, 덴버 도착 시간도 알 수 있을까요?
+   125.49s  <ret> 발화 (turn33 첫 프레임)
+   125.88s  agent 발화 시작: <ret> 덴버 도착 시간을 확인해 보겠습니다.
+   126.03s  user  발화 끝
+   127.41s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.26s]: (tool result) Bus 9AM_Chicago_Denver_May12 arrives in Denver at 5:00 P
+   128.00s  agent 발화 시작: 덴버에는 산악 표준시로 오후 5시에 도착합니다.
+   128.14s  agent 발화 끝
+   131.65s  user  발화 시작: 5시에 도착하는군요. 꽤 오래 타는 거네요.
+   131.70s  agent 발화 끝
+   134.93s  user  발화 끝
+   135.09s  agent 발화 시작: 장거리 여행이시군요. 혹시 여행 중에 편안하게 휴식을 취할 수 있는 방법이 궁금하신가요?
+   137.86s  user  발화 시작: Mm-hmm.
+   138.35s  user  발화 끝
+   140.94s  user  발화 시작: 그런 것도 알려주세요.
+   141.07s  agent 발화 끝
+   142.12s  agent 발화 시작: 장거리 여행 시 스트레칭이나 간단한 명상은 도움이 될 수 있습니다.
+   142.32s  user  발화 끝
+   144.10s  user  발화 시작: Uh-huh.
+   144.60s  user  발화 끝
+   146.65s  user  발화 시작: 스트레칭이라… 좋네요.
+   146.93s  agent 발화 끝
+   148.31s  agent 발화 시작: 스트레칭은 혈액 순환을 돕고 몸의 긴장을 풀어줍니다.
+   148.44s  user  발화 끝
+   150.87s  user  발화 시작: Yeah, yeah.
+   151.65s  user  발화 시작: 알겠습니다. 팁 감사해요.
+   151.68s  user  발화 끝
+   151.92s  agent 발화 끝
+   153.58s  user  발화 끝
+   153.63s  agent 발화 시작: 도움이 되었다니 기쁩니다. 혹시 여행 전에 특별히 준비해야 할 것이 있을까요?
+   158.77s  agent 발화 끝
+   161.00s  user  발화 시작: 특별한 건 없을 것 같아요.
+   162.70s  agent 발화 시작: 여행 전에 충분한 휴식을 취하고, 편안한 옷을 입는 것이 좋습니다.
+   162.85s  user  발화 끝
+   167.52s  agent 발화 끝
+   167.69s  user  발화 시작: 네, 알겠어요.
+   168.77s  agent 발화 시작: 즐거운 여행 되시길 바랍니다. 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
+   168.83s  user  발화 끝
+   171.12s  user  발화 시작: Yeah, totally.
+   172.26s  user  발화 끝
+   174.24s  user  발화 시작: 고마워요. 더 이상은 괜찮아요.
+   174.32s  agent 발화 끝
+   176.73s  user  발화 끝
+   176.75s  agent 발화 시작: 언제나 편안하게 말씀해주세요.
+   179.52s  agent 발화 끝

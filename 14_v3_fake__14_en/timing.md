@@ -1,40 +1,40 @@
 # v3_fake__14_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 I was just listening to Mamma Mia  | S2 Björn Ulvaeus… hmm, I recognize th | S3 I— I mean, is Benny Andersson also | S4 Oh, so it’s a compilation of their
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 Right. And Benny wrote a lot of th | S3 That's amazing, they're so talente | S4 That sounds lovely. Maybe I’ll loo
 
-     0.00s  user  발화 시작: I was just listening to Mamma Mia and I’m trying to figure o
-     7.83s  user  발화 끝
-     8.05s  agent 발화 시작: Oh, that’s a lovely choice! It's a truly touching piece from
-    12.85s  user  발화 시작: Do you happen to know who penned it? I've been searching onl
-    12.96s  agent 발화 끝
-    19.04s  <ret> 발화 (turn3 첫 프레임)
-    19.35s  agent 발화 시작: <ret> That song is particularly poignant… Björn Ulvaeus is c
-    19.43s  user  발화 끝
-    20.08s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.22s]: Björn Ulvaeus wrote “My Love, My Life” for the musical *Mamma Mia!*.
-    28.18s  user  발화 시작: Björn Ulvaeus… hmm, I recognize that name. Wasn’t he in ABBA
-    28.25s  agent 발화 끝
-    32.89s  <ret> 발화 (turn5 첫 프레임)
-    33.05s  agent 발화 시작: <ret> Yes, he was! He was one of the core members of ABBA, a
-    33.22s  user  발화 끝
-    34.89s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=8.67s]: (tool result) AAPL closed at 170.34, up 0.82 points.
-    41.72s  agent 발화 끝
-    41.81s  user  발화 시작: Wow, so he wrote songs for both ABBA *and* Mamma Mia? That's
-    47.68s  agent 발화 시작: It truly is! He has a remarkable talent for creating melodie
-    47.79s  user  발화 끝
-    54.17s  agent 발화 끝
-    54.26s  user  발화 시작: I— I mean, is Benny Andersson also involved with Mamma Mia?
-    58.52s  agent 발화 시작: Yes, Benny Andersson collaborated with Björn Ulvaeus on the 
-    58.61s  user  발화 끝
-    62.05s  user  발화 시작: Yeah.
-    62.68s  user  발화 끝
-    66.81s  user  발화 시작: That makes sense. They’re a great team! Do you know if they 
-    66.82s  agent 발화 끝
-    73.46s  agent 발화 시작: No, they didn't write *all* of them. The musical largely fea
-    73.48s  user  발화 끝
-    76.32s  user  발화 시작: Yeah.
-    76.80s  user  발화 끝
-    81.67s  agent 발화 끝
-    81.74s  user  발화 시작: Oh, so it’s a compilation of their hits? That’s clever! It e
-    88.52s  agent 발화 시작: Exactly. It’s a wonderful way to experience their music in a
-    88.65s  user  발화 끝
-    94.31s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
+     5.07s  <ret> 발화 (turn1 첫 프레임)
+     5.28s  user  발화 끝
+     5.30s  agent 발화 시작: <ret> That’s a lovely choice. Björn Ulvaeus is credited with
+     6.27s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.53s]: Björn Ulvaeus wrote “My Love, My Life”.
+    11.36s  user  발화 시작: Oh, okay. Was he in ABBA too? I always get them mixed up.
+    11.41s  agent 발화 끝
+    15.10s  user  발화 끝
+    15.11s  agent 발화 시작: Yes, he was! Björn Ulvaeus was a key member of ABBA, alongsi
+    20.75s  user  발화 시작: Right. And Benny wrote a lot of the music, didn't he?
+    20.90s  agent 발화 끝
+    23.46s  <ret> 발화 (turn5 첫 프레임)
+    23.61s  agent 발화 시작: <ret> He did indeed. Benny Andersson was the primary compose
+    23.80s  user  발화 끝
+    25.46s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.95s]: (tool result) AAPL stock is currently trading at 170.34 USD, up 0.5% f
+    28.57s  agent 발화 끝
+    28.76s  user  발화 시작: Hmm. So, both of them worked on Mamma Mia as well?
+    32.55s  agent 발화 시작: Absolutely. Both Björn Ulvaeus and Benny Andersson were heav
+    32.60s  user  발화 끝
+    39.41s  agent 발화 끝
+    39.45s  user  발화 시작: That's amazing, they're so talented. I— I mean, the whole th
+    43.52s  agent 발화 시작: It truly is. Their music has touched so many people, and con
+    43.66s  user  발화 끝
+    45.92s  user  발화 시작: Yeah.
+    46.56s  user  발화 끝
+    49.29s  user  발화 시작: I’m thinking of visiting Stockholm, actually. Is it a nice c
+    49.31s  agent 발화 끝
+    53.47s  agent 발화 시작: Stockholm is a beautiful city, full of charm and history. I 
+    53.50s  user  발화 끝
+    55.59s  user  발화 시작: Yeah.
+    56.17s  user  발화 끝
+    59.58s  agent 발화 끝
+    59.70s  user  발화 시작: That sounds lovely. Maybe I’ll look for places connected to 
+    64.85s  agent 발화 시작: That’s a wonderful idea! There are several museums and locat
+    64.97s  user  발화 끝
+    71.98s  agent 발화 끝

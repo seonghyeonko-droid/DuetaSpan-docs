@@ -1,58 +1,56 @@
 # v3_pause_16_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 Hmm. I wonder if it was a common p | S3 So, it wasn’t completely invented  | S4 That’s… actually really clever. I 
+# EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 So it wasn’t, like, a common sayin | S3 [laugh] That's kind of amazing, ac | S4 I was wondering if there’s a tool 
 
      0.00s  user  발화 시작: So, I was reading this dystopian novel, and it got me thinki
-     7.46s  user  발화 끝
-     7.49s  agent 발화 시작: That’s a fascinating question. It’s become so ingrained in o
-    11.33s  agent 발화 끝
-    11.60s  user  발화 시작: It really has… but I’m not sure I ever actually knew the ori
-    19.05s  <ret> 발화 (turn3 첫 프레임)
-    19.21s  agent 발화 시작: <ret> The term originates from… “Big Brother” comes from Geo
-    19.25s  user  발화 끝
-    20.01s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.05s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
-    25.33s  user  발화 시작: Yeah, yeah.
-    26.93s  user  발화 끝
-    27.41s  agent 발화 끝
-    28.45s  user  발화 시작: Nineteen Eighty-Four… right. I’ve heard of it, of course, bu
-    33.08s  user  발화 끝
-    33.23s  agent 발화 시작: It’s a powerful, if unsettling, read. It explores themes of 
-    35.72s  user  발화 시작: Mm-hmm.
-    36.30s  user  발화 끝
-    39.52s  user  발화 시작: Hmm. I wonder if it was a common phrase even *before* the bo
-    39.86s  agent 발화 끝
-    44.94s  user  발화 끝
-    45.48s  user  발화 시작: …if the book made it popular? … I mean, did it exist in any 
-    50.12s  <ret> 발화 (turn10 첫 프레임)
-    50.20s  agent 발화 시작: <ret> Before the novel, the phrase… The idea of an older bro
-    50.34s  user  발화 끝
-    51.96s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.03s]: <The concept of a protective older brother watching over younger sibli
-    54.28s  user  발화 시작: Yeah.
-    54.87s  user  발화 끝
-    59.35s  user  발화 시작: So, it wasn’t completely invented out of thin air. That make
-    59.52s  agent 발화 끝
-    66.48s  user  발화 끝
-    66.64s  agent 발화 시작: Not precisely. “Big Brother” is a symbolic figurehead, repre
-    69.34s  user  발화 시작: Mm-hmm.
-    70.11s  user  발화 끝
-    73.31s  agent 발화 끝
-    73.49s  user  발화 시작: Oh, like a symbol of the state, then?
-    75.69s  agent 발화 시작: Exactly. It's a figure designed to inspire both fear and loy
-    75.90s  user  발화 끝
-    80.70s  agent 발화 끝
-    80.75s  user  발화 시작: Right. So, it's not about family dynamics, even though the n
-    87.57s  agent 발화 시작: Precisely. Orwell used the imagery of familial protection to
-    87.75s  user  발화 끝
-    93.03s  user  발화 시작: Mm-hmm.
-    93.67s  user  발화 끝
-    95.46s  user  발화 시작: That’s… actually really clever. I always thought it was just
-    95.49s  agent 발화 끝
-   100.17s  agent 발화 시작: It's a very effective piece of symbolism, isn’t it? It reson
-   100.33s  user  발화 끝
-   102.31s  user  발화 시작: Yeah.
-   102.81s  user  발화 끝
-   105.87s  user  발화 시작: It really does. It makes me want to actually pick up that bo
-   105.95s  agent 발화 끝
-   111.62s  agent 발화 시작: I think you’d find it quite thought-provoking. It's a book t
-   111.80s  user  발화 끝
-   116.67s  agent 발화 끝
+     4.77s  agent 발화 시작: It’s wonderful you’re exploring thought-provoking literature
+     4.77s  user  발화 끝
+     8.79s  agent 발화 끝
+     8.84s  user  발화 시작: …where did the term “Big Brother” actually come from? It fee
+    14.27s  <ret> 발화 (turn3 첫 프레임)
+    14.43s  agent 발화 시작: <ret> That’s a very interesting question. The phrase “Big Br
+    14.49s  user  발화 끝
+    15.23s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: The term "Big Brother" originates from George Orwell’s novel Nineteen 
+    18.90s  user  발화 시작: Yeah, yeah.
+    20.33s  user  발화 끝
+    20.49s  agent 발화 끝
+    21.53s  user  발화 시작: Nineteen Eighty-Four, right. I’ve heard that before, but I a
+    28.06s  user  발화 끝
+    28.24s  agent 발화 시작: Before the novel, the concept wasn't widely used in that spe
+    30.74s  user  발화 시작: Mm-hmm.
+    31.24s  user  발화 끝
+    34.57s  user  발화 시작: So it wasn’t, like, a common saying…
+    34.95s  agent 발화 끝
+    36.97s  user  발화 끝
+    37.52s  user  발화 시작: …or something people already understood?
+    40.21s  agent 발화 시작: No, it wasn’t. The novel popularized the phrase to represent
+    40.34s  user  발화 끝
+    42.45s  user  발화 시작: Yeah.
+    42.95s  user  발화 끝
+    45.28s  user  발화 시작: [laugh] That's kind of amazing, actually. One book, and now 
+    45.40s  agent 발화 끝
+    51.26s  user  발화 끝
+    51.36s  agent 발화 시작: It’s a testament to the power of storytelling and the impact
+    52.91s  user  발화 시작: Mm-hmm.
+    53.73s  user  발화 끝
+    55.33s  agent 발화 끝
+    55.44s  user  발화 시작: It makes you think, doesn’t it? About how easily things can…
+    59.36s  agent 발화 시작: It certainly does. Reflecting on these themes is a valuable 
+    59.56s  user  발화 끝
+    63.14s  user  발화 시작: I’m trying to be more mindful of my digital footprint, you k
+    63.15s  agent 발화 끝
+    68.18s  agent 발화 시작: That’s a very sensible approach. Protecting your privacy is 
+    68.38s  user  발화 끝
+    71.36s  user  발화 시작: Mm-hmm.
+    71.84s  user  발화 끝
+    72.85s  agent 발화 끝
+    72.89s  user  발화 시작: I was wondering if there’s a tool to help with that? To see 
+    77.31s  <ret> 발화 (turn21 첫 프레임)
+    77.63s  agent 발화 시작: <ret> DuckDuckGo, Disconnect, and Privacy Badger can help pr
+    77.80s  user  발화 끝
+    78.83s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.35s]: (tool result) DuckDuckGo Privacy Essentials blocks trackers; Disconnec
+    79.27s  user  발화 시작: Yeah.
+    79.77s  user  발화 끝
+    81.97s  agent 발화 끝
+    82.04s  user  발화 시작: Okay, that’s good to know. I’ll check those out. Thanks, Bra
+    85.74s  user  발화 끝

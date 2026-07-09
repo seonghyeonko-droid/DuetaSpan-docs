@@ -1,24 +1,24 @@
 # v3_to_ot_12_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 마침 궁금했는데, 마이클 잭슨 “Beat It” 기타 솔로를  | S2 저기요, 혹시 냉동실에 있던 닭고기 꺼내 놓으셨어요? | S3 죄송해요. 그런데 반 헤일런은 그냥… 호의로 한 건가요, 아니 | S4 장난이라고요? 진짜 신기하네요!
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 | S2 와, 에디 반 헤일런이요? 솔직히 좀 의외네요. 잭슨 밴드 멤 | S3 저기, 혹시 쓰레기 버리는 거 잊지 않으셨죠? | S4 죄송해요. 그분이 특별히 부탁받아서 한 건지, 아니면 그냥 자
 
-     0.00s  user  발화 시작: 마침 궁금했는데, 마이클 잭슨 “Beat It” 기타 솔로를 누가 연주했는지 궁금했어요. 다른 노래들하고는 
-     8.86s  <ret> 발화 (turn1 첫 프레임)
-     8.90s  user  발화 끝
-     9.18s  agent 발화 시작: <ret> 아, 좋은 질문이세요. 정말 독특한 솔로죠. “Beat It” 기타 솔로는 에디 반 헤일런이 마이
-    10.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-    12.52s  user  발화 시작: 예.
-    13.15s  user  발화 끝
-    17.62s  user  발화 시작: 어머, 진짜요? 에디 반 헤일런이요? 다른 사람이 한 줄 알았어요.
-    17.67s  agent 발화 끝
-    22.37s  user  발화 시작: 저기요, 혹시 냉동실에 있던 닭고기 꺼내 놓으셨어요?
-    22.48s  user  발화 끝
-    26.19s  user  발화 시작: 죄송해요. 그런데 반 헤일런은 그냥… 호의로 한 건가요, 아니면 다른 이야기가 있었나요?
-    26.21s  user  발화 끝
-    31.97s  agent 발화 시작: 사실 둘 다 조금 있었어요. 퀸시 존스가 록 스타일을 원했고, 에디는 처음에는 장난이라고 생각해서 망설였다고
-    32.12s  user  발화 끝
-    39.76s  agent 발화 끝
-    39.97s  user  발화 시작: 장난이라고요? 진짜 신기하네요!
-    42.60s  user  발화 끝
-    42.60s  agent 발화 시작: 결국 동의했고, 로열티는 원하지 않았어요. 다만 에디가 언젠가 게스트 출연이 필요하면 마이클 잭슨도 똑같이 
-    51.78s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했는데, 정말 유명하잖아요.
+     7.12s  <ret> 발화 (turn1 첫 프레임)
+     7.17s  user  발화 끝
+     7.44s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 정말 기억에 남는 솔로죠. “Beat It”의 놀라운 기타 솔로는 에디 반
+     9.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.06s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+    13.84s  user  발화 시작: 예.
+    14.20s  user  발화 끝
+    15.96s  user  발화 시작: 와, 에디 반 헤일런이요? 솔직히 좀 의외네요. 잭슨 밴드 멤버 중 누군가일 줄 알았어요.
+    16.01s  agent 발화 끝
+    21.69s  user  발화 시작: 저기, 혹시 쓰레기 버리는 거 잊지 않으셨죠?
+    21.75s  user  발화 끝
+    24.78s  user  발화 시작: 죄송해요. 그분이 특별히 부탁받아서 한 건지, 아니면 그냥 자발적으로 한 건지 궁금해요.
+    24.83s  user  발화 끝
+    30.12s  <ret> 발화 (turn6 첫 프레임)
+    30.52s  agent 발화 시작: <ret> 마이클 잭슨이 노래에 하드 록 요소를 넣고 싶어했고, 에디 반 헤일런이 그의 첫 번째 선택이었다고
+    30.65s  user  발화 끝
+    31.40s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.62s]: Michael Jackson specifically requested Eddie Van Halen to play guitar 
+    37.11s  agent 발화 시작: 마이클 잭슨이 “Beat It” 기타 연주를 위해 에디 반 헤일런을 특별히 요청했습니다.
+    37.14s  agent 발화 끝
+    42.16s  agent 발화 끝

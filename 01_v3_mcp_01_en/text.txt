@@ -4,38 +4,46 @@ SYSTEM: <system> You are Koral, a grounded and empathetic personal guide who hel
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Create a detailed map of the Apple website, focusing on the products.
-      That's… a lot. Can you narrow it down to just the iPhone pages?
-      Hmm. What about the iPhone fifteen Pro Max specifically?
-  S2  Okay, good. Now, can you find me the current price of the two-hundred-
-      Is that with or without a trade-in?
-  S3  Is that price with or without a trade-in?
-      Yes, please. I have an iPhone twelve in good condition.
-  S4  Okay, so with the trade-in, the price would be…?
-      Perfect. Can you add that to my cart, the two-fifty-six gigabyte model
+      Hmm, can you refine that to only show me the iPhone pages?
+      That’s good. Are there any current deals on the iPhone 15 Pro?
+  S2  A thousand dollars— that's pretty significant. What about the storage 
+      Do they have it in blue?
+  S3  Blue Titanium… nice. Okay, I think I want to trade in my old phone.
+      Uh, I think it's an iPhone 12.
+      Yes, please. What's the next step?
+  S4  Excellent. That was really easy.
+      So, if I send it in today, roughly when would I get the new phone?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.48s][moshi] ⟨ret@4.41s⟩ Certainly, I ⟦⚡SPAN@5.53s: (tool result) The tavily-map tool found 23 product pages on apple.com: iPhone, iPad, Mac, Apple Watch, AirPods⟧ can map out the Apple website for you— I’ve mapped twenty-three product pages on Apple’s site, including iPhone, iPad, and Mac.
-[  8.40s][user ] «backchannel» Okay.
-[ 13.70s][user ] That's… a lot. Can you narrow it down to just the iPhone ⟨ret@18.05s⟩ pages?
-[ 18.45s][moshi] Of course, ⟦⚡SPAN@20.05s: (tool result) The tavily-map tool found 6 iPhone-related pages: iPhone 15, iPhone 15 Pro, iPhone SE, iPhone fe⟧ refining the search to only iPhone pages— I’ve found six iPhone pages: iPhone fifteen, Pro, SE, features, buying options, and accessories.
-[ 27.25s][user ] «backchannel» Yeah.
-[ 30.23s][user ] Hmm. What about the iPhone fifteen Pro Max specifically?
-[ 34.29s][moshi] ⟨ret@34.21s⟩ Let me focus the ⟦⚡SPAN@35.81s: (tool result) The tavily-map tool found 1 page for iPhone 15 Pro Max: apple.com/iphone-15-pro-max.⟧ map on that particular model for you.
-[ 37.87s][moshi] There’s one page for the iPhone fifteen Pro Max: apple.com/iphone-15-pro-max.
-[ 45.90s][user ] Okay, good. Now, can you find me the current price of the two-hundred-and-fifty-six gigabyte ⟨ret@51.28s⟩ model?
-[ 51.68s][moshi] Let's check ⟦⚡SPAN@53.28s: (tool result) The Apple website lists the 256GB iPhone 15 Pro Max at $1199.⟧ the pricing for that specific configuration— The two-hundred-and-fifty-six gigabyte iPhone fifteen Pro Max is listed at eleven-ninety-nine dollars.
-[ 63.50s][user ] Is that with or without a trade-in?
-[ 65.99s][moshi] «interrupted» —but pricing can vary depending on—
-[ 67.85s][user ] «interrupts_prev» Is that price with or without a trade-in?
-[ 70.94s][moshi] That price, eleven-ninety-nine dollars, is the starting price without a trade-in.
-[ 74.31s][user ] «backchannel» Uh-huh.
-[ 77.21s][moshi] I can also check trade-in values if you’d like, to see how that would affect the cost.
-[ 80.43s][user ] «backchannel» Yeah.
-[ 83.82s][user ] Yes, please. I have an iPhone twelve in good condition.
-[ 87.66s][moshi] ⟨ret@87.59s⟩ Certainly, let's see ⟦⚡SPAN@89.59s: (tool result) Apple offers $300 trade-in credit for an iPhone 12 in good condition.⟧ the trade-in value for your iPhone twelve— Apple is offering a three-hundred-dollar trade-in credit for your iPhone twelve in good condition.
-[ 99.50s][user ] Okay, so with the trade-in, the price would be…?
-[102.93s][moshi] With the three-hundred-dollar trade-in, the iPhone fifteen Pro Max would cost eight-ninety-nine dollars.
-[105.23s][user ] «backchannel» Yeah.
-[109.50s][user ] Perfect. Can you add that to my cart, the two-fifty-six gigabyte model with the ⟨ret@114.64s⟩ trade-in?
-[114.95s][moshi] I can ⟦⚡SPAN@116.56s: (tool result) Item added to cart: iPhone 15 Pro Max, 256GB, $899 (trade-in applied). Order ID: 987654321.⟧ certainly add that to your cart— The two-fifty-six gigabyte iPhone fifteen Pro Max with the trade-in has been added to your cart; your order ID is nine-eighty-seven-six-five-four-three-two-one.
+[  4.89s][moshi] ⟨ret@4.81s⟩ I’ve mapped ⟦⚡SPAN@6.41s: (tool result) The tavily-map found 23 product pages, including iPhones, Macs, iPads, and Apple Watch.⟧ the Apple website, identifying twenty-three product pages for you, including iPhones, Macs, and more.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
+[ 12.38s][user ] Hmm, can you refine that to only show me the iPhone ⟨ret@16.37s⟩ pages?
+[ 16.76s][moshi] Certainly. The ⟦⚡SPAN@18.37s: (tool result) The tavily-map found 6 iPhone-related pages, including models, specs, and purchase options.⟧ map now shows six iPhone pages, covering models, specifications, and where to buy.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "iPhone"}}
+[ 21.71s][user ] «backchannel» Yeah.
+[ 23.75s][user ] That’s good. Are there any current deals on the iPhone 15 Pro?
+[ 27.68s][moshi] ⟨ret@27.61s⟩ Yes, Apple currently offers ⟦⚡SPAN@29.61s: (tool result) The tavily-map found a trade-in offer for up to $1000 off an iPhone 15 Pro.⟧ a trade-in program with up to one thousand dollars off the iPhone 15 Pro.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "iPhone 15 Pro deals"}}
+[ 31.95s][user ] «backchannel» Uh-huh.
+[ 35.42s][user ] A thousand dollars— that's pretty significant. What about the storage options?
+[ 40.25s][moshi] «interrupted» The iPhone 15 Pro comes in—
+[ 42.41s][user ] «interrupts_prev» Do they have it ⟨ret@43.62s⟩ in blue?
+[ 44.01s][moshi] That’s ⟦⚡SPAN@44.50s: (tool result) The tavily-map found the iPhone 15 Pro is available in Black Titanium, White Titanium, Blue Tita⟧ a good question.
+[ 45.37s][moshi] Yes, it’s available in Black Titanium, White Titanium, Blue Titanium, and Natural Titanium.
+[ 49.12s][user ] «backchannel» Yeah.
+[ 51.77s][user ] Blue Titanium… nice. Okay, I think I want to trade in my old phone.
+[ 56.96s][moshi] Wonderful! I can help you start that process. Do you know the model of your current phone?
+[ 64.28s][user ] Uh, I think it's an ⟨ret@66.10s⟩ iPhone 12.
+[ 66.49s][moshi] Based on that ⟦⚡SPAN@68.10s: (tool result) The trade-in estimate for an iPhone 12 towards an iPhone 15 Pro is $750.⟧ information, Apple estimates a trade-in value of seven hundred and fifty dollars for your iPhone 12.
+      CALL: {"function": "tavily-map", "arguments": {"trade_in_model": "iPhone 12", "new_model": "iPhone 15 Pro"}}
+[ 69.30s][user ] «backchannel» Mm-hmm.
+[ 74.27s][moshi] That estimate is based on the condition of your phone, of course. Do you want me to guide you through submitting it for a formal evaluation?
+[ 77.34s][user ] «backchannel» Yeah.
+[ 82.80s][user ] Yes, please. What's the next ⟨ret@85.05s⟩ step?
+[ 85.43s][moshi] Great! A trade-in ⟦⚡SPAN@87.05s: (tool result) A trade-in request has been initiated; you’ve received an email with a shipping label and instru⟧ request is initiated, and you should have an email with a shipping label and detailed instructions.
+      CALL: {"function": "tavily-map", "arguments": {"action": "start trade-in", "trade_in_model": "iPhone 12", "new_model": "iPhone 15 Pro"}}
+[ 90.51s][user ] «backchannel» Yeah.
+[ 93.45s][user ] Excellent. That was really easy.
+[ 96.08s][moshi] I'm glad I could help simplify the process for you. It’s always my pleasure to assist with trip planning or tech upgrades.
+[104.02s][user ] So, if I send it in today, roughly when would I get the new phone?

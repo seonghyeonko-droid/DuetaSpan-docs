@@ -59,13 +59,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Manon, I’m Thunalo. It’s lovely to connect with you – I’m a counselor focused on unlocking creative potential.
-[  4.79s][user ] «backchannel» Yeah.
-[  6.23s][user ] Oh, that sounds… good. I was wondering, do you remember anything about a trip I was planning?
-[ 12.42s][moshi] ⟨ret@12.35s⟩ Yes, I do recall ⟦⚡SPAN@14.19s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ discussing your travel plans. You mentioned you were planning a trip to Kyoto in March. Is there something specific about that trip you'd like to discuss today?
-[ 20.48s][user ] «backchannel» Mm-hmm.
-[ 24.32s][user ] Actually, yes. I'm trying to find a good time to book flights, but I'm terrible with time zones. What's the time difference between Berlin and Kyoto?
-[ 33.01s][moshi] ⟨ret@32.93s⟩ Let ⟦⚡SPAN@33.43s: (tool result) Kyoto is nine hours ahead of Berlin. Daylight Saving Time is observed in both locations.⟧ me quickly check that for you.
-      CALL: {"function": "time_difference", "arguments": {"origin": "Berlin", "destination": "Kyoto"}}
-[ 34.72s][moshi] Kyoto is nine hours ahead of Berlin, and both cities observe Daylight Saving Time. Does that help with your flight planning?
-[ 42.63s][user ] That’s… a lot. I— I mean, it’s good to know, though. I think I need a coffee.
+[  0.00s][moshi] Hi Manon, I'm Thunalo. It's lovely to connect with you. I understand you sometimes experience creative blocks, and I'm here to help with that, or anything else on your mind.
+[  7.54s][user ] «backchannel» Yeah.
+[  9.69s][user ] Actually, yes. I’m trying to plan a little getaway, and I’m completely stuck on where to go.
+[ 15.60s][moshi] That’s very common, Manon. Sometimes too many options can be paralyzing. Do you have any preferences at all—a type of scenery or activity, perhaps?
+[ 22.34s][user ] «backchannel» Mm-hmm.
+[ 24.93s][moshi] ⟨ret@24.54s⟩ Perhaps ⟦⚡SPAN@25.50s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ recalling past plans will help. You mentioned planning a trip to Kyoto in March last year. Is that still something you’re considering?
+[ 33.10s][user ] Oh, yes! Kyoto is still on my list, but I was thinking of something…different this time. Maybe a bit more active.
+[ 40.58s][moshi] ⟨ret@40.43s⟩ [happy] That sounds wonderful. Something ⟦⚡SPAN@42.43s: [2026-06-14] User is into rock climbing.⟧ a little more invigorating. You enjoy a physical challenge, I believe?
+[ 45.96s][moshi] You’ve expressed an interest in rock climbing. Would a trip centered around that appeal to you, Manon?

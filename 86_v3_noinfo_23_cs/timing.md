@@ -1,74 +1,104 @@
 # v3_noinfo_23_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해? | S2 좋다! 마음이 놓이네. 아, 요즘 일이 너무 스트레스야. | S3 알지만… 무례하게 느껴지거나 팀워크를 망치는 것 같아. | S4 오. 알았어. 그럼 내일 아침 9시에 할 일 목록을 검토하라고
+# EXAMINER(FDB-v2) 단계: S1 어, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 좋아. 그럼 나 하나 예약해 줘. | S3 흠, 그럴까. 면접 질문 연습할 수 있는 좋은 웹사이트 있어? | S4 완벽해. 혹시 StellarTech에 대해 아는 거 있어?
 
-     0.00s  user  발화 시작: 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해?
-     3.93s  <ret> 발화 (turn1 첫 프레임)
-     4.09s  agent 발화 시작: <ret> 음, 확인해 보니까… 작년 12월 24일 도쿄는 부분적으로 흐렸고, 기온은 6도에서 12도 사이였
-     4.21s  user  발화 끝
-     5.13s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.72s]: (tool result) The weather in Tokyo on December twenty-fourth, 2023 was
-     8.37s  user  발화 시작: 응.
-     8.87s  user  발화 끝
-    12.14s  user  발화 시작: 그렇구나. 추워 보이네. 근처에 괜찮은 후기 많은 아늑한 카페 좀 찾아 줄래?
-    12.16s  agent 발화 끝
-    17.01s  <ret> 발화 (turn4 첫 프레임)
-    17.33s  user  발화 끝
-    17.41s  agent 발화 시작: <ret> 네, "The Daily Grind"라는 곳이 반 마일 떨어져 있고, 평점은 4.5점에 리뷰가 1
-    19.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) "The Daily Grind" is 0.5 miles away, has 4.5 stars from 
-    21.54s  user  발화 시작: 음.
-    21.86s  user  발화 끝
-    25.99s  agent 발화 끝
-    26.03s  agent 발화 시작: 거기 정말 인기 있는 곳이라고 들었어요. 오늘처럼 쌀쌀한 날씨에 몸 녹이기에 딱 좋을 것 같아요.
-    32.05s  agent 발화 끝
-    32.43s  user  발화 시작: 좋게 들리네. 오늘 저녁 6시 30분에 두 명 예약 좀 해 줄래?
-    36.56s  <ret> 발화 (turn8 첫 프레임)
-    36.64s  agent 발화 시작: <ret> 네, 예약 완료됐어요! "The Daily Grind"에 두 명, 저녁 6시 30분으로 예약해 드
-    36.78s  user  발화 끝
-    37.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.44s]: (tool result) Your reservation at "The Daily Grind" for two people is 
-    45.08s  agent 발화 끝
-    45.27s  user  발화 시작: 좋다! 마음이 놓이네. 아, 요즘 일이 너무 스트레스야.
-    49.44s  agent 발화 시작: 일 스트레스는 정말 흔한 일이에요. 오늘 저녁에 자기 관리 시간을 갖는 건 정말 좋은 생각이에요.
-    49.57s  user  발화 끝
-    56.09s  user  발화 시작: 그냥… 새로운 프로젝트가 너무 커. 그리고 상사가 계속 일을 더 추가해.
-    56.20s  agent 발화 끝
-    60.67s  agent 발화 시작: 정말 힘드시겠네요. 기대치가 계속 바뀌면 지치기 쉬워요.
-    60.91s  user  발화 끝
-    65.11s  agent 발화 끝
-    65.21s  user  발화 시작: 맞아! 그리고 해야 할 일은 많은데, 거절을 못 하고 계속 "네"만 말하게 돼.
-    70.63s  user  발화 끝
-    70.69s  agent 발화 시작: 정말 통찰력 있는 말씀이세요. "아니오"라고 말하는 법을 배우는 건 강력한 기술이지만, 연습이 필요해요.
-    78.20s  user  발화 시작: 알지만… 무례하게 느껴지거나 팀워크를 망치는 것 같아.
-    78.20s  agent 발화 끝
-    82.48s  agent 발화 시작: 그렇게 생각하는 건 흔한 일이에요! 하지만 경계를 설정하는 건 비협조적인 게 아니라, 에너지를 보호하고 최고
-    82.60s  user  발화 끝
-    90.78s  agent 발화 끝
-    90.80s  user  발화 시작: 음… 좋은 시각이네. [sigh] 시간 관리 기술에 대해 아는 거 있어?
-    94.97s  user  발화 끝
-    95.12s  agent 발화 시작: 네, 물론이죠! 여러 가지 방법이 있어요. 포모도로 기법이 좋은 시작점이 될 거예요.
-    99.28s  user  발화 시작: 응.
-    99.59s  user  발화 끝
-   100.58s  user  발화 시작: 포모도로… 뭐?
-   100.96s  agent 발화 끝
-   101.76s  <ret> 발화 (turn21 첫 프레임)
-   102.16s  agent 발화 시작: <ret> 아, 죄송해요. 지금은 포모도로 기법에 대한 자세한 정보를 찾을 수 없어요.
-   102.33s  user  발화 끝
-   102.88s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.15s]: (no information found)
-   106.88s  agent 발화 끝
-   107.41s  user  발화 시작: 오. 알았어. 그럼 내일 아침 9시에 할 일 목록을 검토하라고 알림이라도 설정해 줄래?
-   113.13s  <ret> 발화 (turn23 첫 프레임)
-   113.45s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요! 내일 아침 9시에 할 일 목록을 검토하라는 알림을 설정해 드렸어요.
-   113.66s  user  발화 끝
-   114.17s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.28s]: (tool result) A reminder to “Review to-do list” has been set for tomor
-   115.09s  user  발화 시작: 어어.
-   115.91s  user  발화 끝
-   118.73s  agent 발화 끝
-   119.43s  user  발화 시작: 완벽해. 고마워, 브레. 정말 큰 도움이 됐어.
-   122.83s  agent 발화 시작: 천만에요! 작은 변화가 스트레스 관리와 더 나은 일과 삶의 균형을 이루는 데 큰 도움이 될 수 있다는 것을 
-   122.99s  user  발화 끝
-   126.76s  user  발화 시작: 응.
-   126.97s  user  발화 끝
-   131.13s  agent 발화 끝
-   132.61s  user  발화 시작: 그걸 기억하려고 노력할게.
-   134.55s  agent 발화 시작: 그게 전부예요— 시도하려는 의지가 있다면요. 카페에서 즐거운 시간 보내세요!
-   134.63s  user  발화 끝
-   140.15s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 작년 12월 24일 도쿄 날씨가 어땠어?
+     3.11s  <ret> 발화 (turn1 첫 프레임)
+     3.24s  user  발화 끝
+     3.27s  agent 발화 시작: <ret> 알아볼게요. 작년 크리스마스 이브 도쿄는 대체로 흐렸고, 기온은 6도에서 11도 사이였어요.
+     4.55s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.42s]: (tool result) The weather in Tokyo on December twenty-fourth, 2023, wa
+     9.90s  agent 발화 끝
+    10.27s  user  발화 시작: 으, 추웠겠네. 있잖아, 신주쿠역 근처에 아늑한 카페 좀 찾아 줘.
+    14.82s  <ret> 발화 (turn3 첫 프레임)
+    15.22s  user  발화 끝
+    15.22s  agent 발화 시작: <ret> 네, 근처 카페를 검색해 드릴게요. 신주쿠역에서 불과 0.3킬로미터 거리에 있는 카페 루미에르를 
+    16.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.03s]: (tool result) Found “Café Lumiere”, 0.3 kilometers from Shinjuku stati
+    20.08s  user  발화 시작: 응.
+    20.57s  user  발화 끝
+    25.29s  agent 발화 끝
+    26.42s  user  발화 시작: 거기 와이파이 있어?
+    27.36s  <ret> 발화 (turn6 첫 프레임)
+    27.60s  agent 발화 시작: <ret> 카페 편의시설을 확인해 드릴게요. 네, 카페 루미에르는 무료 와이파이, 야외 좌석, 카드 결제를 
+    27.75s  user  발화 끝
+    28.32s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.73s]: (tool result) Café Lumiere offers free Wi-Fi, outdoor seating, and acc
+    32.47s  user  발화 시작: 음.
+    32.92s  user  발화 끝
+    34.60s  agent 발화 끝
+    34.69s  user  발화 시작: 좋겠다! 음… 혹시 지금 테이블 있는지 알아봐 줄래?
+    38.33s  <ret> 발화 (turn9 첫 프레임)
+    38.39s  user  발화 끝
+    38.41s  agent 발화 시작: <ret> 알아볼게요. 카페 루미에르에는 현재 1인용 테이블이 두 개 남아 있어요.
+    39.61s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.36s]: (tool result) Café Lumiere has two tables available for one person rig
+    43.13s  agent 발화 끝
+    44.10s  user  발화 시작: 좋아. 그럼 나 하나 예약해 줘.
+    46.30s  <ret> 발화 (turn11 첫 프레임)
+    46.54s  agent 발화 시작: <ret> 네, 예약을 진행해 드릴게요. 카페 루미에르 3시 15분 예약이 확정됐습니다. 확인 번호는 789
+    46.78s  user  발화 끝
+    48.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.42s]: (tool result) Reservation confirmed at Café Lumiere for one person at 
+    53.72s  agent 발화 끝
+    53.84s  user  발화 시작: 잘 됐네! 거기 가는 제일 좋은 방법이 뭔데?
+    56.78s  <ret> 발화 (turn13 첫 프레임)
+    57.18s  agent 발화 시작: <ret> 카페 가는 길을 안내해 드릴게요. 여기서 남동쪽으로 걸어가서 왼쪽으로 돌면 카페가 오른쪽에 있을 
+    57.40s  user  발화 끝
+    58.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.86s]: (tool result) Walk 0.3 kilometers southeast on Shinjuku Station East E
+    65.99s  agent 발화 끝
+    66.07s  user  발화 시작: 그거면 쉽겠네. 고마워. 내일 면접 때문에 좀 스트레스받아.
+    70.58s  agent 발화 시작: 아, 면접은 긴장되기 마련이죠. 스트레스를 받는 건 당연해요. [happy] 자신의 강점과 준비한 내용을 떠
+    70.74s  user  발화 끝
+    77.35s  user  발화 시작: 그래도 혹시 면접에서 멍해져서 질문에 대답 못하면 어떡해?
+    77.76s  agent 발화 끝
+    81.10s  user  발화 끝
+    81.10s  agent 발화 시작: 그건 흔한 걱정이에요. 면접에서 자주 나오는 질문들을 미리 연습해 보세요. 자신감을 키울 수 있을 거예요.
+    88.33s  agent 발화 끝
+    88.87s  user  발화 시작: 흠, 그럴까. 면접 질문 연습할 수 있는 좋은 웹사이트 있어?
+    93.69s  agent 발화 시작: 물론이죠! Glassdoor에는 다양한 직무에 맞춰 면접 질문이 많이 모여 있어요.
+    93.73s  user  발화 끝
+    97.49s  user  발화 시작: 응.
+    97.99s  user  발화 끝
+    99.06s  agent 발화 끝
+    99.77s  user  발화 시작: 좋은 정보네. 그 링크 좀 보내 줄래?
+   102.30s  <ret> 발화 (turn22 첫 프레임)
+   102.38s  agent 발화 시작: <ret> 네, 보내 드릴게요. Glassdoor 면접 질문 페이지를 브라우저에서 열어 드렸어요.
+   102.58s  user  발화 끝
+   103.58s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.26s]: (tool result) URL opened in your default browser: https://www.glassdoo
+   107.71s  agent 발화 끝
+   109.04s  user  발화 시작: 고마워, 진짜 도움이 된다. 아, 그런데 지금 몇 시야?
+   112.74s  <ret> 발화 (turn24 첫 프레임)
+   112.89s  agent 발화 시작: <ret> 시간을 확인해 볼게요. 현재 오후 3시 8분이에요. 카페 예약 시간까지 충분히 시간이 남았어요.
+   113.06s  user  발화 끝
+   114.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.64s]: (tool result) The current time is 3:08 PM.
+   115.07s  user  발화 시작: 어어.
+   115.61s  user  발화 끝
+   119.66s  agent 발화 끝
+   119.80s  user  발화 시작: 알았어. 내일 아침 9시에 면접 있는 거 알려 줘.
+   122.91s  <ret> 발화 (turn27 첫 프레임)
+   123.23s  agent 발화 시작: <ret> 네, 알람을 설정해 드릴게요. 내일 오전 9시에 면접 알람을 설정했습니다.
+   123.26s  user  발화 끝
+   124.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.53s]: (tool result) Reminder set for tomorrow at 9:00 AM: Job interview.
+   126.11s  user  발화 시작: 와.
+   126.83s  user  발화 끝
+   128.27s  agent 발화 끝
+   128.94s  user  발화 시작: 완벽해. 혹시 StellarTech에 대해 아는 거 있어?
+   132.24s  <ret> 발화 (turn30 첫 프레임)
+   132.39s  agent 발화 시작: <ret> StellarTech에 대한 정보를 찾아 드릴게요.
+   132.60s  user  발화 끝
+   133.52s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.40s]: (tool result) StellarTech is a software development company specializi
+   134.78s  agent 발화 끝
+   134.80s  agent 발화 시작: StellarTech는 2015년에 설립된 AI 소프트웨어 회사이고, 직원은 약 200명 정도예요.
+   142.03s  agent 발화 끝
+   143.91s  user  발화 시작: 직원이 200명? 괜찮은 규모네. 회사 문화는 어때?
+   147.39s  <ret> 발화 (turn33 첫 프레임)
+   147.75s  user  발화 끝
+   147.79s  agent 발화 시작: <ret> 회사 문화에 대한 자세한 내용을 찾아볼게요.
+   148.67s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.72s]: (no information found)
+   150.51s  agent 발화 끝
+   150.57s  agent 발화 시작: 죄송하지만, 현재 StellarTech의 회사 문화에 대한 구체적인 내용은 찾을 수 없었어요.
+   155.75s  agent 발화 끝
+   155.81s  user  발화 시작: 아, 그렇구나. 아쉽네. 그래도 이제 좀 더 준비된 것 같아.
+   159.64s  agent 발화 시작: 정말 잘 됐네요! 긍정적인 조치를 취하고 계시는 것 같아요. 자기 자신에 대한 믿음이 성공의 열쇠라는 것을 
+   159.65s  user  발화 끝
+   167.06s  agent 발화 끝
+   167.33s  user  발화 시작: 그래, 네 말이 맞아. 고마워, 브레.
+   170.13s  agent 발화 시작: 천만에요. 면접 전에 필요한 것이 있으면 언제든지 말씀해 주세요. 아니면 그냥 이야기해도 좋아요.
+   170.28s  user  발화 끝
+   177.82s  agent 발화 끝

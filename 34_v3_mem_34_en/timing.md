@@ -60,49 +60,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yes, I need to get to a new bakery | S2 Hmm… a taxi, I think. It’s raining | S3 Yes, please do. And could you make | S4 No, I think that’s all for now. Th
+# EXAMINER(FDB-v2) 단계: S1 Yes, I’m hoping to get to that lit | S2 Hmm, an hour…that’s quite a trek. | S3 Perfect. And could you check if th | S4 I— I mean, is there parking nearby
 
      0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
-     9.13s  user  발화 시작: Yes, I need to get to a new bakery that just opened. It's ca
-     9.23s  agent 발화 끝
-    13.17s  <ret> 발화 (turn2 첫 프레임)
-    13.23s  agent 발화 시작: <ret> Certainly, I can help with that. Your journey will beg
-    13.43s  user  발화 끝
-    14.61s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.96s]: [2026-02-11] User's home address is 30 Oak Avenue.
-    17.29s  user  발화 시작: Yeah, yeah.
-    18.58s  user  발화 끝
-    19.11s  agent 발화 끝
-    19.30s  user  발화 시작: Great. How long will it take to get there, roughly?
-    22.07s  user  발화 끝
-    22.13s  agent 발화 시작: It depends on how you’d like to travel. Would you prefer wal
-    25.09s  user  발화 시작: Mm-hmm.
-    25.59s  user  발화 끝
-    27.40s  user  발화 시작: Hmm… a taxi, I think. It’s raining a bit.
-    27.63s  agent 발화 끝
-    30.04s  <ret> 발화 (turn8 첫 프레임)
-    30.11s  agent 발화 시작: <ret> A sensible choice on a drizzly day.
-    30.31s  user  발화 끝
-    31.24s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.09s]: (tool result) ETA: 12 minutes. Distance: 4.7 kilometers. Estimated cos
-    33.02s  agent 발화 시작: The taxi will take approximately twelve minutes, covering 4.
-    33.20s  agent 발화 끝
-    38.25s  user  발화 시작: Yeah.
-    38.75s  user  발화 끝
-    40.54s  agent 발화 시작: I’m glad to hear that sounds reasonable. I can request a tax
-    40.71s  agent 발화 끝
-    45.91s  agent 발화 끝
-    46.23s  user  발화 시작: Yes, please do. And could you make sure they know I prefer a
-    50.18s  <ret> 발화 (turn13 첫 프레임)
-    50.56s  agent 발화 시작: <ret> Certainly. I’ll add a note requesting a quiet driver t
-    50.76s  user  발화 끝
-    51.30s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.73s]: (tool result) Booking confirmed. Driver assigned: Jean-Pierre Dubois. 
-    55.10s  agent 발화 시작: Your taxi is booked with driver Jean-Pierre Dubois. His ETA 
-    55.29s  agent 발화 끝
-    57.82s  user  발화 시작: Yeah.
-    58.31s  user  발화 끝
-    61.45s  agent 발화 끝
-    61.88s  user  발화 시작: Wonderful! That's perfect, thank you.
-    64.00s  user  발화 끝
-    64.06s  agent 발화 시작: You're very welcome, Ava. I hope you enjoy your visit to Le 
-    70.87s  agent 발화 끝
-    71.00s  user  발화 시작: No, I think that’s all for now. Thanks again, Hia.
-    73.91s  user  발화 끝
+     6.52s  user  발화 시작: Yes, I’m hoping to get to that little bakery on Rue Montorgu
+     6.58s  agent 발화 끝
+    11.41s  <ret> 발화 (turn2 첫 프레임)
+    11.48s  agent 발화 시작: <ret> Of course, I can certainly help with that. From 30 Oak
+    11.66s  user  발화 끝
+    12.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.55s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    19.77s  agent 발화 끝
+    21.18s  user  발화 시작: Oh, that's not bad at all. Is it walkable?
+    23.72s  agent 발화 시작: It is walkable, though it’s a longer journey—roughly one hou
+    23.82s  user  발화 끝
+    26.99s  user  발화 시작: Okay.
+    27.57s  user  발화 끝
+    29.93s  agent 발화 끝
+    30.63s  user  발화 시작: Hmm, an hour…that’s quite a trek.
+    33.09s  agent 발화 시작: It is a bit of a distance, yes. Perhaps we could explore alt
+    33.12s  user  발화 끝
+    36.09s  user  발화 시작: Uh-huh.
+    36.54s  user  발화 끝
+    39.23s  agent 발화 시작: Thinking about your preferences, would you like me to priori
+    39.38s  agent 발화 끝
+    44.98s  user  발화 시작: Quickest, definitely. I’m meeting a friend.
+    45.34s  agent 발화 끝
+    47.25s  <ret> 발화 (turn11 첫 프레임)
+    47.47s  user  발화 끝
+    47.48s  agent 발화 시작: <ret> Certainly, the quickest route is best. From 30 Oak Ave
+    48.93s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.77s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    52.64s  user  발화 시작: Mm-hmm.
+    53.14s  user  발화 끝
+    56.99s  user  발화 시작: Perfect. And could you check if they have any… peanut-contai
+    57.17s  agent 발화 끝
+    63.17s  <ret> 발화 (turn14 첫 프레임)
+    63.24s  agent 발화 시작: <ret> Checking for allergens is a very good idea. You have a
+    63.29s  user  발화 끝
+    65.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.05s]: [2026-02-23] User is allergic to peanuts.
+    69.98s  user  발화 시작: Mhm.
+    70.48s  user  발화 끝
+    78.88s  agent 발화 끝
+    79.27s  user  발화 시작: Oh, good to know about the macarons. I love those.
+    82.03s  <ret> 발화 (turn17 첫 프레임)
+    82.34s  agent 발화 시작: <ret> It’s always best to be cautious, especially with aller
+    82.36s  user  발화 끝
+    84.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) Menu search complete. Results: Pain au chocolat - no pea
+    84.09s  user  발화 시작: Right.
+    84.58s  user  발화 끝
+    87.01s  agent 발화 끝
+    87.31s  user  발화 시작: I— I mean, is there parking nearby?
+    89.26s  agent 발화 시작: Parking on Rue Montorgueil can be challenging. There are a f
+    89.38s  user  발화 끝
+    91.31s  user  발화 시작: Yeah.
+    91.81s  user  발화 끝
+    94.95s  agent 발화 끝
+    95.19s  user  발화 시작: Okay, that sounds… manageable. Thanks so much for your help,
+    99.12s  user  발화 끝
+    99.12s  agent 발화 시작: You’re very welcome, Ava. I'm happy to assist. Remember, tak
+   106.91s  agent 발화 끝

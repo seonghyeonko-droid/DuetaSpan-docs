@@ -1,34 +1,44 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 혹시 '맘마미아!'에 나오는 'My Love, My Life' | S2 아, 비욘 울바에우스! ABBA 멤버 맞죠? | S3 그 노래 가사도 정말 감동적이에요. 혹시 다른 ABBA 노래도 | S4 알겠습니다. 한번 들어봐야겠네요. 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 혹시 '맘마미아' 영화에 나오는 '나의 사랑 나의 생명' 노래 | S2 아바는 '댄싱 퀸' 말고 다른 유명한 노래도 많은가요? | S3 오, '워터루'도 좋아하는데. 혹시 비욘 울바에우스 씨는 다른 | S4 혹시 이 근처에 좋은 카페 아세요?
 
-     0.00s  user  발화 시작: 혹시 '맘마미아!'에 나오는 'My Love, My Life' 노래를 누가 썼는지 알 수 있을까요?
-     5.14s  user  발화 끝
-     5.18s  agent 발화 시작: 물론이죠. 그 노래에 대해 궁금하시군요.
-     8.01s  <ret> 발화 (turn2 첫 프레임)
-     8.07s  agent 발화 시작: <ret> 그 노래를 작곡한 사람은… 비욘 울바에우스 씨가 'My Love, My Life'를 작곡했습니다.
-     8.23s  agent 발화 끝
-     9.05s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.16s]: Björn Ulvaeus.
-    14.46s  user  발화 시작: 아, 비욘 울바에우스! ABBA 멤버 맞죠?
-    14.55s  agent 발화 끝
-    18.12s  <ret> 발화 (turn4 첫 프레임)
-    18.39s  user  발화 끝
-    18.44s  agent 발화 시작: <ret> 네, 맞습니다. ABBA의 멤버 중 한 분이시죠.
-    20.12s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.03s]: (tool result) AAPL: 170.34 USD +0.57 (0.34%)
-    22.28s  agent 발화 시작: ABBA는 정말 대단한 그룹이었죠. 전 세계적으로 사랑받았어요.
-    22.47s  agent 발화 끝
-    25.32s  user  발화 시작: Uh-huh.
-    25.90s  user  발화 끝
-    27.43s  agent 발화 시작: 그분들은 독특한 음악 스타일로 많은 사람들에게 감동을 주었어요.
-    27.57s  agent 발화 끝
-    31.74s  agent 발화 끝
-    31.81s  user  발화 시작: 그 노래 가사도 정말 감동적이에요. 혹시 다른 ABBA 노래도 추천해주실 수 있을까요?
-    37.51s  user  발화 끝
-    37.73s  agent 발화 시작: 물론입니다. 'Dancing Queen'이나 'The Winner Takes It All'도 훌륭한 노래들이
-    42.42s  agent 발화 시작: 두 곡 모두 많은 사랑을 받았고, 지금도 많은 사람들에게 기억되고 있죠.
-    42.59s  agent 발화 끝
-    44.34s  user  발화 시작: Yeah.
-    45.16s  user  발화 끝
-    47.14s  agent 발화 끝
-    47.44s  user  발화 시작: 알겠습니다. 한번 들어봐야겠네요. 감사합니다.
-    50.68s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 '맘마미아' 영화에 나오는 '나의 사랑 나의 생명' 노래를 누가 썼는지 아세요?
+     4.91s  <ret> 발화 (turn1 첫 프레임)
+     4.99s  user  발화 끝
+     5.05s  agent 발화 시작: <ret> 네, 물론이죠. 그 노래에 대해 알아볼까요?
+     6.67s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.24s]: Björn Ulvaeus.
+     8.17s  agent 발화 시작: 그 노래는요, 비욘 울바에우스 씨가 작곡하셨답니다.
+     8.29s  agent 발화 끝
+    11.79s  user  발화 시작: 아, 비욘 울바에우스요? 아바 그룹 멤버 맞죠?
+    11.87s  agent 발화 끝
+    15.69s  <ret> 발화 (turn4 첫 프레임)
+    15.96s  user  발화 끝
+    16.01s  agent 발화 시작: <ret> 네, 맞아요. 아바 그룹의 멤버 중 한 분이시죠. [happy]
+    17.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: Björn Ulvaeus was a member of the Swedish music group ABBA.
+    19.24s  agent 발화 시작: 비욘 울바에우스 씨는 스웨덴의 음악 그룹 아바의 멤버셨어요.
+    19.39s  agent 발화 끝
+    21.62s  user  발화 시작: Uh-huh.
+    22.11s  user  발화 끝
+    23.17s  user  발화 시작: 아바는 '댄싱 퀸' 말고 다른 유명한 노래도 많은가요?
+    23.40s  agent 발화 끝
+    26.40s  <ret> 발화 (turn8 첫 프레임)
+    26.40s  user  발화 끝
+    26.48s  agent 발화 시작: <ret> 아바는 정말 많은 히트곡을 냈어요. '워터루', '머니머니머니' 같은 노래도 유명하죠.
+    28.40s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.46s]: (tool result) AAPL: 170.34 USD +0.22 (0.13%)
+    31.84s  user  발화 시작: 오, '워터루'도 좋아하는데. 혹시 비욘 울바에우스 씨는 다른 영화 음악도 만들었나요?
+    31.94s  agent 발화 끝
+    38.15s  user  발화 끝
+    38.58s  agent 발화 시작: 비욘 울바에우스 씨는 여러 뮤지컬 음악에도 참여하셨어요. '체스'라는 뮤지컬도 유명하답니다.
+    41.15s  user  발화 시작: Yeah.
+    41.79s  user  발화 끝
+    44.74s  agent 발화 끝
+    44.95s  user  발화 시작: '체스' 뮤지컬도요? 한번 찾아봐야겠네요.
+    48.64s  user  발화 끝
+    48.77s  agent 발화 시작: 네, 꼭 한번 들어보세요. 정말 멋진 음악이에요. 새로운 도시에 오셔서 즐거운 시간을 보내시길 바라요.
+    51.30s  user  발화 시작: Yeah.
+    52.12s  user  발화 끝
+    56.18s  agent 발화 끝
+    57.45s  user  발화 시작: 혹시 이 근처에 좋은 카페 아세요?
+    59.52s  user  발화 끝
+    59.76s  agent 발화 시작: 이 근처에는 아늑한 분위기의 카페들이 몇 군데 있어요. 어떤 스타일의 카페를 좋아하세요?
+    65.87s  agent 발화 끝
