@@ -1,33 +1,29 @@
 # v3_to_ot_12_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I was just wondering, who actually played the guitar solo on
-     6.94s  <ret> 발화 (turn1 첫 프레임)
-     7.18s  agent 발화 시작: <ret> That’s a very popular question, indeed. Eddie Van Hale
-     7.32s  user  발화 끝
-     8.06s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-    10.07s  user  발화 시작: Right.
-    10.57s  user  발화 끝
-    13.80s  agent 발화 끝
-    13.92s  user  발화 시작: Wow, I always thought it was someone else. Did Michael Jacks
-    20.41s  agent 발화 시작: It was quite a deliberate choice by Quincy Jones, actually. 
-    20.50s  user  발화 끝
-    22.33s  user  발화 시작: Mm-hmm.
-    22.83s  user  발화 끝
-    26.71s  agent 발화 끝
-    26.77s  user  발화 시작: That’s interesting. I’m redecorating my living room… [to oth
-    33.91s  user  발화 시작: Sorry about that, where were we? Oh, right, Quincy Jones and
-    34.10s  user  발화 끝
-    38.76s  <ret> 발화 (turn8 첫 프레임)
-    39.05s  user  발화 끝
-    39.15s  agent 발화 시작: <ret> Let's return to that musical partnership. Jones was in
-    40.28s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.71s]: Quincy Jones initially hesitated to ask Van Halen, fearing he would de
-    43.65s  user  발화 시작: Yeah.
-    44.29s  user  발화 끝
-    47.12s  agent 발화 끝
-    47.43s  user  발화 시작: It really is! Did Eddie Van Halen charge Michael Jackson a f
-    53.31s  <ret> 발화 (turn11 첫 프레임)
-    53.55s  user  발화 끝
-    53.55s  agent 발화 시작: <ret> That’s a reasonable inquiry about the arrangements. Ed
-    54.43s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.82s]: Van Halen did not ask for or receive a royalty or fee for his work on 
-    60.41s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson’s 
+     5.22s  <ret> 발화 (turn1 첫 프레임)
+     5.45s  agent 발화 시작: <ret> That is a very popular question, indeed. Eddie Van Hal
+     5.56s  user  발화 끝
+     6.58s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.68s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+     8.65s  user  발화 시작: Right.
+     9.15s  user  발화 끝
+    12.73s  agent 발화 끝
+    12.80s  user  발화 시작: Wow, I always thought it was someone else! I— I mean, it jus
+    19.06s  agent 발화 시작: Many listeners are surprised by the collaboration, given Van
+    19.19s  user  발화 끝
+    20.43s  user  발화 시작: Mm-hmm.
+    21.07s  user  발화 끝
+    23.60s  agent 발화 끝
+    23.70s  user  발화 시작: Hey, did you take the trash out yet?
+    25.64s  user  발화 시작: Sorry about that. So, was he asked specifically to make it d
+    25.68s  user  발화 끝
+    30.68s  <ret> 발화 (turn8 첫 프레임)
+    30.91s  agent 발화 시작: <ret> Considering the context, that is a reasonable inquiry.
+    31.00s  user  발화 끝
+    31.88s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.87s]: Van Halen recorded his guitar solo separately and Jackson did not dire
+    34.98s  user  발화 시작: Yeah.
+    35.62s  user  발화 끝
+    38.10s  agent 발화 끝
+    38.36s  user  발화 시작: That’s amazing! So it was completely his own artistic choice
+    42.39s  user  발화 끝

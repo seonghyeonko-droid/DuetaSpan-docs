@@ -2,24 +2,27 @@ v3_abs_22_ko src=squad2 style=abstain
 SYSTEM: <system> 저는 사토 박사이며, 기억이 어떻게 작동하는지에 매료된 신경과 의사입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 ⟨ret@2.29s⟩ 싫어해?
-[  2.60s][moshi] 그건 ⟦⚡SPAN@3.49s: (no information found)⟧ 재밌는 질문인데, 핵심 신념을 탐구하는 거네. 아쉽게도 무정부주의자들이 보편적으로 싫어하는 특정 정부 형태를 찾을 순 없었어.
-[ 11.18s][user ] 오. 그럼 알베르트 아인슈타인은 정부에 대해 뭘 ⟨ret@14.74s⟩ 믿었어?
-[ 14.89s][moshi] 걔는 원래 깊이 ⟦⚡SPAN@16.50s: Albert Einstein believed that socialism was the only viable system for a just and equitable society.⟧ 생각하는 사람이잖아, 당연히 그런 걸 고려했겠지. 아인슈타인은 사회주의가 공정하고 평등한 사회를 위한 유일한 실행 가능한 시스템이라고 믿었어.
-[ 23.50s][user ] 사회주의, 그래? 공산주의랑 같은 거야?
-[ 26.03s][moshi] 몇 가지 아이디어는 공유하지만, 완전히 똑같진 않아.
-[ 29.74s][user ] 그럼 뭐가 달라?
-[ 30.91s][moshi] ⟨ret@30.84s⟩ 헷갈리는 부분이지, ⟦⚡SPAN@32.52s: Communism advocates for a stateless, classless society, while socialism allows for state intervention and vary⟧ 뉘앙스를 이해하는 게 중요해. 공산주의는 무국가 사회를 원하고, 사회주의는 국가 개입과 일부 사유 재산을 허용해.
-[ 35.06s][user ] «backchannel» 응.
-[ 39.81s][user ] 그럼 공산주의가 더… 극단적인 거야?
-[ 42.14s][moshi] 어느 정도는, 더 급진적인 사회 변화를 목표로 하거든.
-[ 46.24s][user ] 근데 아인슈타인은 기억에 대해서도 말해 ⟨ret@48.34s⟩ 봤어?
-[ 48.50s][moshi] 갑자기 화제를 ⟦⚡SPAN@50.34s: Albert Einstein reportedly relied heavily on visual imagery and thought experiments rather than rote memorizat⟧ 바꾸네— 좋은 질문이야! 아인슈타인은 암기보다는 시각적 이미지와 사고 실험에 의존했어.
-[ 56.42s][user ] 시각적 이미지… 예를 들면?
-[ 59.04s][moshi] 문제를 해결하려고 시나리오를 머릿속으로 재현했어.
-[ 62.33s][user ] 그거… 힘들겠다.
-[ 63.82s][moshi] 집중력이 엄청 필요하겠지만, 꽤 효과적일 수 있어.
-[ 67.28s][user ] 그게 모든 사람한테 통하는 방법이야?
-[ 69.47s][moshi] 꼭 그렇진 않아, 뇌가 다른 전략을 사용하거든.
-[ 71.85s][user ] 그럼 기억하는 가장 좋은 방법은 딱 하나가 없는 거야?
-[ 74.74s][moshi] 맞아— 뇌는 정말 적응력이 뛰어나고 개별적이야.
+[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 싫어하는지 ⟨ret@3.00s⟩ 궁금해?
+[  3.31s][moshi] 음, ⟦⚡SPAN@4.20s: (no information found)⟧ 정치적 이상을 탐구하는 질문이라 흥미롭네. 지금은 정확한 답을 알려주기가 어렵다. 무정부주의자들은 모든 계층적 지배를 반대해.
+[ 12.63s][user ] 아. 그럼 알츠하이머병은? 그게 정확히 뇌에 뭘 하는 거야?
+[ 16.31s][moshi] 정말 끔찍한 병이지, 많은 사람들에게 영향을 미치잖아.
+[ 19.63s][moshi] ⟨ret@19.40s⟩ 병리학을 이해하는 ⟦⚡SPAN@20.76s: Alzheimer’s disease is characterized by the buildup of amyloid plaques and neurofibrillary tangles in the brai⟧ 게 연구에 중요해. 알츠하이머병은 아밀로이드 플라크와 타우 단백질 엉킴 때문에 뇌세포 기능에 문제가 생기는 거야.
+[ 26.91s][user ] 플라크랑 엉킴… 음, 그런 게 현미경으로 보이는 물리적인 거 맞아?
+[ 31.81s][moshi] [laugh] 응, 그럼. 현미경으로 볼 수 있어.
+[ 34.01s][moshi] ⟨ret@33.93s⟩ 이런 변화를 ⟦⚡SPAN@34.97s: Microscopic examination of brain tissue reveals the presence of amyloid plaques and neurofibrillary tangles.⟧ 시각적으로 확인하면 진단에 도움이 돼. 현미경 검사를 통해 뇌 조직 내에 플라크와 타우 단백질 엉킴을 확인할 수 있다.
+[ 41.81s][user ] 그래. 그런데 만약 누군가 기억을 잘 못 하면, 그게 항상 알츠하이머병이야?
+[ 46.37s][moshi] 전혀 그렇지 않아. 기억 상실에는 여러 가지 원인이 있어.
+[ 49.70s][moshi] ⟨ret@49.55s⟩ 원인을 구별하는 게 ⟦⚡SPAN@51.55s: Memory loss can be caused by a variety of factors, including stress, depression, and vitamin deficiencies.⟧ 치료의 핵심이야. 스트레스, 우울증, 비타민 결핍 때문에 기억 상실이 생길 수도 있어.
+[ 52.95s][user ] «backchannel» 응.
+[ 57.06s][user ] 그럼, 치료할 수 있는 경우도 있다는 거야?
+[ 59.38s][moshi] 자주 그래. 기억 상실의 많은 원인은 되돌릴 수 있어.
+[ 63.52s][user ] 그건… 다행이다. 그런데 그 엉킴은 어떡해야 해? 뭐 할 수 있는 거 있어?
+[ 68.03s][moshi] 아주 중요한 질문인데, 지금도 집중적으로 연구 중이야.
+[ 71.35s][moshi] ⟨ret@71.11s⟩ ⟦⚡SPAN@71.61s: Current research is exploring potential therapies to prevent the formation of neurofibrillary tangles.⟧ 연구는 엉킴 형성을 막는 데 초점을 맞추고 있어. 엉킴 형성을 막는 치료법이 현재 연구되고 있다.
+[ 78.44s][user ] 알츠하이머병에 걸릴 수 있는 가장 어린 나이는 몇 ⟨ret@81.58s⟩ 살이야?
+[ 81.82s][moshi] 초기 발병 ⟦⚡SPAN@83.02s: Early-onset Alzheimer’s disease typically affects individuals younger than sixty-five years of age.⟧ 사례는 비교적 드물어. 알츠하이머병은 65세 미만에게도 영향을 미칠 수 있지만 흔하지 않아.
+[ 88.75s][user ] 그건… 어리네. 근데 보통 유전이야?
+[ 92.37s][moshi] 유전이 역할을 할 수도 있지만, 복잡해.
+[ 95.11s][moshi] ⟨ret@95.03s⟩ 가족력이 ⟦⚡SPAN@96.08s: While most cases of Alzheimer’s are sporadic, a small percentage are linked to genetic mutations.⟧ 위험 요인이긴 해. 대부분의 경우는 직접적인 유전은 아니지만, 돌연변이가 영향을 줄 수 있다.
+[101.88s][user ] 저— 그럼, 할머니가 걸리셨다면, 나도 꼭 걸리는 건 아니라는 거야?
+[106.24s][moshi] 아니, 전혀 그렇지 않아. 위험은 증가하지만, 보장하는 건 아니야.

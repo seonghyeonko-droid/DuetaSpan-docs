@@ -3,56 +3,38 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  3.55s][moshi] ⟨ret@3.32s⟩ Certainly, ⟦⚡SPAN@4.28s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:00 PM.⟧ let’s get that scheduled for you. I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two in the afternoon.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[  8.62s][user ] «backchannel» Yeah.
-[ 12.48s][user ] Can you send me directions to the property?
-[ 14.82s][moshi] ⟨ret@14.66s⟩ Of course, ⟦⚡SPAN@15.86s: (tool result) Directions to The Grandview Lofts are: 123 Elm Street, Anytown, USA.⟧ I can provide those for you. The address for The Grandview Lofts is one twenty-three Elm Street, Anytown.
+[  3.63s][moshi] ⟨ret@3.40s⟩ Certainly, ⟦⚡SPAN@4.44s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s see about arranging a visit. I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
+[  8.88s][user ] «backchannel» Yeah.
+[ 12.85s][user ] That’s good. Can you send me directions?
+[ 14.88s][moshi] ⟨ret@14.72s⟩ Absolutely, I ⟦⚡SPAN@15.92s: (tool result) Directions to The Grandview Lofts are: Head north on Elm Street for one mile, then turn left on ⟧ can provide directions for you. Directions to The Grandview Lofts are north on Elm Street for one mile, then left on Oak Avenue.
       CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 18.31s][user ] «backchannel» Yeah, yeah.
-[ 21.72s][user ] And what’s the neighborhood like around there?
-[ 23.86s][moshi] ⟨ret@23.62s⟩ That’s a good ⟦⚡SPAN@25.46s: (tool result) The neighborhood is primarily residential, with a walk score of 78.⟧ question to ask before committing. It's a primarily residential area with a walk score of seventy-eight.
-      CALL: {"function": "NeighborhoodInfo_2_GetDetails", "arguments": {"address": "123 Elm Street, Anytown, USA"}}
-[ 31.64s][user ] Is there parking ⟨ret@32.92s⟩ available?
-[ 33.08s][moshi] Let me check ⟦⚡SPAN@34.52s: (tool result) Parking is available on-site with a monthly fee of $150.⟧ the property details for parking. Parking is available on-site for one hundred and fifty dollars a month.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"property": "The Grandview Lofts"}}
-[ 41.40s][user ] That's pretty expensive. What about public ⟨ret@44.91s⟩ transportation?
-[ 45.30s][moshi] Public transit is ⟦⚡SPAN@46.59s: (tool result) The nearest bus stop is two blocks away on Oak Avenue.⟧ a great alternative, let's see. The closest bus stop is two blocks away on Oak Avenue.
-      CALL: {"function": "Transit_2_GetNearbyStops", "arguments": {"address": "123 Elm Street, Anytown, USA"}}
-[ 52.40s][user ] Is there a grocery store nearby?
-[ 55.08s][moshi] «interrupted» Well, as I was saying, there are several—
-[ 57.47s][user ] «interrupts_prev» Is there a grocery store nearby? I need to know.
-[ 60.97s][moshi] ⟨ret@60.73s⟩ My ⟦⚡SPAN@61.69s: (tool result) There is a Fresh Foods Market located 0.5 miles away.⟧ apologies, let me address that immediately. There’s a Fresh Foods Market half a mile from The Grandview Lofts.
-      CALL: {"function": "POI_2_SearchNearby", "arguments": {"query": "grocery store", "address": "123 Elm Street, Anytown, USA"}}
-[ 67.94s][user ] Okay, good. What's the pet policy ⟨ret@70.48s⟩ there?
-[ 70.64s][moshi] Let’s look into ⟦⚡SPAN@72.16s: (tool result) Pets are allowed with a weight limit of 50 pounds and a $500 fee.⟧ the pet policy for you. Pets are allowed, with a fifty-pound weight limit and a five-hundred-dollar fee.
-      CALL: {"function": "Homes_2_GetPetPolicy", "arguments": {"property": "The Grandview Lofts"}}
-[ 72.98s][user ] «backchannel» Uh-huh.
-[ 78.39s][user ] Fifty pounds… that might be tight. I— I mean, my dog is ⟨ret@82.51s⟩ sixty.
-[ 82.83s][moshi] I ⟦⚡SPAN@83.63s: (tool result) Several properties allow pets over 50 pounds in neighboring towns.⟧ understand, let's adjust that search, then. Several other properties in nearby towns accept pets over fifty pounds.
-      CALL: {"function": "Homes_2_SearchProperties", "arguments": {"pets_allowed": true, "min_weight": "60 pounds", "location": "Anytown, USA"}}
-[ 85.40s][user ] «backchannel» Uh-huh.
-[ 90.60s][user ] What towns are those? ⟨ret@92.16s⟩
-[ 92.24s][moshi] Let me list ⟦⚡SPAN@94.16s: (tool result) Nearby towns include Willow Creek, Oakhaven, and Riverton.⟧ the nearby towns with pet-friendly options. Willow Creek, Oakhaven, and Riverton have pet-friendly properties available.
-      CALL: {"function": "Homes_2_GetNearbyTowns", "arguments": {"location": "Anytown, USA"}}
-[ 97.63s][user ] «backchannel» Yeah.
-[101.46s][user ] Tell me about Willow ⟨ret@102.72s⟩ Creek.
-[102.96s][moshi] Willow Creek ⟦⚡SPAN@103.84s: (tool result) Willow Creek has a population of 15,000 and a median home price of $350,000.⟧ is a lovely area, let’s explore it. Willow Creek has a population of fifteen thousand and a median home price of three hundred and fifty thousand dollars.
-      CALL: {"function": "TownInfo_2_GetDetails", "arguments": {"town": "Willow Creek"}}
-[113.33s][user ] Are there any parks in Willow ⟨ret@115.34s⟩ Creek?
-[115.49s][moshi] ⟦⚡SPAN@115.84s: (tool result) Willow Creek Park and Lakeside Park are both located within town.⟧ Parks are important, especially for pet owners. Willow Creek Park and Lakeside Park are both within the town limits.
-      CALL: {"function": "POI_2_SearchNearby", "arguments": {"query": "parks", "location": "Willow Creek"}}
-[121.03s][user ] «backchannel» Uh-huh.
-[124.33s][user ] Sounds nice. Can you show me properties in Willow Creek that allow large ⟨ret@128.89s⟩ dogs?
-[129.13s][moshi] Absolutely, let me ⟦⚡SPAN@130.89s: (tool result) Three properties match your criteria: 45 Maple Drive, 10 Oak Lane, and 22 Pine Court.⟧ search for those properties. There are three properties matching your needs: forty-five Maple Drive, ten Oak Lane, and twenty-two Pine Court.
-      CALL: {"function": "Homes_2_SearchProperties", "arguments": {"location": "Willow Creek", "pets_allowed": true, "min_weight": "60 pounds"}}
-[140.88s][user ] Tell me about 45 Maple ⟨ret@142.92s⟩ Drive.
-[143.31s][moshi] Certainly, let’s get ⟦⚡SPAN@144.92s: (tool result) 45 Maple Drive is a 3-bedroom, 2-bathroom home listed for $375,000.⟧ you the details on that property. Forty-five Maple Drive is a three-bedroom, two-bathroom home listed at three hundred and seventy-five thousand dollars.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"property": "45 Maple Drive, Willow Creek"}}
-[151.56s][user ] «backchannel» Yeah.
-[154.09s][user ] Can we schedule a viewing for 45 Maple Drive on June ⟨ret@157.93s⟩ twentieth?
-[158.17s][moshi] Let's get that ⟦⚡SPAN@159.61s: (tool result) A viewing at 45 Maple Drive is scheduled for June twentieth at 10:00 AM.⟧ viewing set up for you right away. I’ve scheduled a viewing for you at forty-five Maple Drive on June twentieth at ten in the morning.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "45 Maple Drive, Willow Creek", "date": "June twentieth"}}
-[167.56s][user ] Perfect. Send me directions to that address ⟨ret@170.09s⟩ too.
-[170.33s][moshi] Of course, ⟦⚡SPAN@171.21s: (tool result) Directions to 45 Maple Drive are: Take Highway 16 North for 10 miles, then turn left on Maple Dr⟧ directions are on their way.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "45 Maple Drive, Willow Creek"}}
+[ 20.13s][user ] «backchannel» Yeah, yeah.
+[ 25.04s][user ] Is there parking available?
+[ 26.57s][moshi] ⟨ret@26.34s⟩ Let me check ⟦⚡SPAN@28.18s: (tool result) The Grandview Lofts offers free on-site parking for visitors.⟧ the parking situation there. The Grandview Lofts provides free on-site parking for visitors.
+      CALL: {"function": "Homes_2_CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 34.16s][user ] Perfect. What about pet ⟨ret@36.62s⟩ policies?
+[ 36.77s][moshi] I can look up the ⟦⚡SPAN@38.62s: (tool result) The Grandview Lofts allows cats and small dogs with a one-time fee of two hundred dollars.⟧ pet policy for that building. They allow cats and small dogs with a two hundred dollar fee.
+      CALL: {"function": "Homes_2_GetPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 44.69s][user ] Two hundred dollars… uh, actually, make that June ⟨ret@48.48s⟩ sixteenth—
+[ 48.87s][moshi] Just adjusting ⟦⚡SPAN@50.16s: (tool result) A viewing at The Grandview Lofts is now scheduled for June sixteenth at two PM.⟧ the date for your viewing— I’ve rescheduled your viewing to June sixteenth at two PM.
+[ 55.66s][user ] Is there a gym in ⟨ret@57.23s⟩ the building?
+[ 57.63s][moshi] ⟦⚡SPAN@58.03s: (tool result) The Grandview Lofts includes a fitness center, a rooftop terrace, and a community room.⟧ Oh, regarding amenities— The building has a fitness center, a rooftop terrace, and a community room.
+[ 65.81s][user ] A rooftop terrace sounds nice. What’s the rent ⟨ret@68.67s⟩ like?
+[ 68.91s][moshi] Let’s ⟦⚡SPAN@69.79s: (tool result) Rental rates at The Grandview Lofts range from fifteen hundred to two thousand five hundred doll⟧ see about the rental costs there. Rent ranges from fifteen hundred to two thousand five hundred dollars monthly.
+      CALL: {"function": "Homes_2_GetRentalRates", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 71.25s][user ] «backchannel» Uh-huh.
+[ 76.83s][user ] That’s a pretty wide range. What does the higher end get you?
+[ 80.62s][moshi] Typically, the higher rent covers larger units and premium views.
+[ 82.00s][user ] «backchannel» Uh-huh.
+[ 84.82s][user ] Are utilities included in that price?
+[ 87.24s][moshi] ⟨ret@87.10s⟩ I can quickly ⟦⚡SPAN@88.86s: (tool result) Water and garbage are included, but electricity and internet are not.⟧ check the utility inclusions. Water and garbage are included; electricity and internet are separate.
+      CALL: {"function": "Homes_2_GetUtilitiesIncluded", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 91.76s][user ] «backchannel» Yeah.
+[ 94.75s][user ] Okay, good to know. What’s the neighborhood like?
+[ 97.87s][moshi] It's a vibrant area, known for its cafes and art galleries.
+[102.81s][user ] Are there any grocery stores ⟨ret@104.92s⟩ nearby?
+[105.07s][moshi] ⟦⚡SPAN@105.42s: (tool result) There’s a Fresh Foods Market five blocks east of The Grandview Lofts.⟧ I can check for grocery stores in the vicinity. A Fresh Foods Market is five blocks east of the lofts.
+      CALL: {"function": "Navigation_2_SearchNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
+[109.57s][user ] «backchannel» Uh-huh.
+[112.01s][user ] That sounds convenient. Thanks for all your help.

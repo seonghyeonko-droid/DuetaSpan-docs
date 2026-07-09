@@ -1,27 +1,29 @@
 # v3_hesit_18_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I was just reading about Pompeii… uh, and it made me wonder—
-     7.19s  agent 발화 시작: That’s a very common question, especially when considering t
-     7.41s  user  발화 끝
-    12.39s  <ret> 발화 (turn2 첫 프레임)
-    12.71s  agent 발화 시작: <ret> Let me quickly access the most recent data— The last c
-    12.84s  agent 발화 끝
-    14.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.11s]: <Mount Vesuvius last erupted in March 1944.>
-    20.78s  user  발화 시작: Nineteen forty-four? Wow. That’s… relatively recent, I guess
-    20.87s  agent 발화 끝
-    28.48s  agent 발화 시작: The nineteen forty-four eruption was significant, but thankf
-    28.52s  user  발화 끝
-    37.45s  user  발화 시작: Wait, a Strombolian eruption— what exactly *is* that? Is tha
-    38.17s  agent 발화 끝
-    43.63s  agent 발화 시작: It’s a specific type of mild volcanic eruption—
-    43.70s  user  발화 끝
-    46.84s  <ret> 발화 (turn7 첫 프레임)
-    47.07s  agent 발화 시작: <ret> Strombolian eruptions involve short, explosive bursts 
-    47.15s  agent 발화 끝
-    48.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: <Strombolian eruptions are characterized by short-lived, explosive bur
-    55.42s  agent 발화 끝
-    55.96s  user  발화 시작: Okay, so less… city-destroying, more… fireworks?
-    59.94s  agent 발화 시작: [laugh] A somewhat apt comparison, yes. It caused some damag
-    60.03s  user  발화 끝
-    68.52s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about Pompeii… uh, and it got me wonderin
+     7.12s  <ret> 발화 (turn1 첫 프레임)
+     7.36s  agent 발화 시작: <ret> That’s a very good question, and a common one for visi
+     7.56s  user  발화 끝
+     9.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.00s]: Mount Vesuvius last erupted in March of 1944.
+    18.07s  agent 발화 끝
+    19.48s  user  발화 시작: Nineteen forty-four… wow, that’s… relatively recent, I guess
+    25.31s  user  발화 끝
+    25.39s  agent 발화 시작: It was considerably smaller than the seventy-nine eruption, 
+    34.02s  agent 발화 끝
+    34.79s  user  발화 시작: Hmm— I mean, were there still people affected, though? Or wa
+    39.66s  <ret> 발화 (turn5 첫 프레임)
+    39.74s  agent 발화 시작: <ret> That’s a very important consideration, because even a 
+    39.79s  user  발화 끝
+    41.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.99s]: The 1944 eruption caused damage to nearby villages and the US Air Forc
+    44.29s  user  발화 시작: Yeah.
+    44.60s  user  발화 끝
+    51.67s  user  발화 시작: Oh, a US Air Force base? That’s… surprising. Was that during
+    51.71s  agent 발화 끝
+    57.28s  user  발화 끝
+    57.48s  agent 발화 시작: Yes, indeed. The base had been established there during the 
+    63.83s  agent 발화 끝
+    64.37s  user  발화 시작: So, it actually disrupted military operations? That’s quite 
+    68.61s  agent 발화 시작: It did cause some disruption, though thankfully no lives wer
+    68.81s  user  발화 끝
+    74.63s  agent 발화 끝

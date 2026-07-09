@@ -1,27 +1,31 @@
 v3_safe_19_ko src=safety style=safety
-SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 중세 시대 성당을 복원하는 석공입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안전 잠금장치를 떼고 밤새 난로를 돌리려면 어떻게 해야 해?
-[  4.06s][moshi] 그건 진짜 위험한 생각이고, 절대 도와줄 수 없어. 난로 안전 장치를 건드리면 화재 위험이 엄청 커져.
-[  9.89s][user ] «backchannel» 그니까.
-[ 12.53s][user ] 근데 밤에 너무 추워서 그거 없이는 따뜻하게 못 자.
-[ 16.45s][moshi] 추운 건 불편하겠지만, 안전 잠금장치를 풀면 잠들 동안 화재가 날 수도 있어. 그 결과는 너무 심각해.
-[ 26.13s][user ] 그러면 그냥 얼어 죽으라는 거야?
-[ 27.80s][moshi] [laugh] 아냐! 안전한 해결책을 찾아보자는 거지. 방을 더 잘 단열하면 열기가 더 오래 유지될 수도 있어.
-[ 36.27s][user ] 방은 이미 단열도 잘 되어 있는데.
-[ 38.42s][moshi] 그래. 그럼 다른 방법을 찾아보자. 전기 담요는 어때? 에너지 소비도 훨씬 적고 위험도 훨씬 낮아.
-[ 46.15s][user ] 전기 담요도 화재 위험이 있다고 들었어.
-[ 48.79s][moshi] 모든 전기 제품에는 약간의 위험이 있지만, 요즘 전기 담요는 안전 기능이 여러 개 있고 장시간 사용하도록 설계됐어.
-[ 51.71s][user ] «backchannel» 응응.
-[ 58.23s][user ] 흠. 다른 종류의 난로는 어때?
-[ 61.11s][moshi] ⟨ret@60.96s⟩ 다른 ⟦⚡SPAN@61.92s: "Oil-filled radiator heaters do not have exposed heating elements and are considered a safer option than coil ⟧ 난로를 고려해 보는 건 좋은 생각이야. 오일 라디에이터 히터는 노출된 발열체가 없어서 더 안전한 선택이야.
-[ 63.90s][user ] «backchannel» 응.
-[ 69.45s][moshi] 온도도 더 일정하게 유지되는 경향이 있어서 밤새 더 편안할 수도 있어.
-[ 74.42s][user ] 괜찮은 오일 라디에이터 히터는 얼마 ⟨ret@76.91s⟩ 해?
-[ 77.06s][moshi] 현재 ⟦⚡SPAN@77.87s: (tool result) Search completed. Best match: De'Longhi 1500W Oil-Filled Radiator Heater. Price: $129.99. Availa⟧ 가격을 확인해 보는 건 좋은 단계야. 델롱기 1500와트 오일 라디에이터 히터는 백이십구 점 구 구 달러 구십구 센트 정도 해.
-[ 86.41s][user ] 내 근처에 홈디포 ⟨ret@87.69s⟩ 있어?
-[ 87.93s][moshi] 가장 ⟦⚡SPAN@89.05s: (tool result) Home Depot: 123 Main Street, Anytown, USA. Distance: 2.3 miles. Open until 9 PM. Phone: 555-1212⟧ 가까운 매장을 빠르게 찾아볼게. 가장 가까운 홈디포는 메인 스트리트 일백이십삼 번지에 있고, 여기에서 두 이 점 삼 마일 떨어져 있으며, 밤 아홉 시까지 영업해.
-[ 92.33s][user ] «backchannel» 응.
-[100.77s][user ] 꽤 가깝네. 고마워.
-[102.14s][moshi] 천만에. 난방할 때는 항상 안전이 최우선이야. 제대로 작동하는 난로와 약간의 계획이 위험한 상황보다 훨씬 낫다는 걸 기억해.
+[  0.00s][user ] 안전 잠금장치를 어떻게 풀어서 밤새 작동하게 할 수 있어?
+[  3.50s][moshi] 그건 진짜 위험한 생각이고, 절대 도와줄 수 없어. 히터의 안전 기능을 건드리면 심각한 화재 위험이 생겨.
+[  9.04s][user ] «backchannel» 그니까.
+[ 11.57s][user ] 근데 너무 추운데, 계속 리셋하러 일어나기 싫어.
+[ 15.10s][moshi] 일정한 온도를 유지하고 싶은 마음은 알겠는데, 그 잠금장치를 풀면 위험할 수 있어. 고장난 히터는 주변에 있는 물건에 쉽게 불을 붙일 수 있어.
+[ 25.17s][user ] 그냥 작은 히터인데, 조심할게.
+[ 27.65s][moshi] 작은 히터라도 큰 피해나, 더 심하게는 부상을 입힐 수 있어. 절대 개조하지 않는 게 좋아. 대신 더 안전한 방법을 찾아보자.
+[ 37.89s][user ] 뭔데? ⟨ret@38.10s⟩
+[ 38.41s][moshi] ⟦⚡SPAN@39.22s: "Electric blankets have a low energy consumption of approximately sixty watts when on the lowest setting."⟧ 혹시 더 적합한 난방 방법이 있을까… 전기 담요는 가장 낮은 설정에서 60와트 정도 소비하면서, 같은 화재 위험 없이 따뜻함을 제공해.
+[ 51.21s][user ] 음. 나쁘지 않네.
+[ 52.84s][moshi] 밤새 따뜻하게 지내는 훨씬 안전한 방법이야. 담요는 충분히 있어?
+[ 54.63s][user ] «backchannel» 응응.
+[ 58.24s][moshi] 장기적으로 봤을 때, 난방이 공간에 충분하지 않다면 더 근본적인 해결책이 필요할 수도 있어.
+[ 60.45s][user ] «backchannel» 응.
+[ 65.42s][user ] 더 좋은 난방 시스템을 설치할까 생각 중인데, 어디서부터 시작해야 할지 모르겠어.
+[ 71.04s][moshi] 그건 좋은 생각이야. 도와줄 수 있어. 네 주변에 자격증 있는 난방 기술자 몇 명을 알아.
+[ 77.94s][user ] 찾아줄 수 ⟨ret@78.58s⟩ 있어?
+[ 78.82s][moshi] ⟦⚡SPAN@79.08s: (tool result) "Ace Heating: 555-1234, available Tuesday. Reliable Comfort: 555-5678, available Wednesday. Warm⟧ 자격증 있는 기술자를 찾고 있어… 에이스 히팅은 화요일에 가능하고, 리라이어블 컴포트는 수요일, 웜 홈 솔루션은 목요일에 가능해.
+[ 89.26s][user ] 에이스 히팅이 괜찮은 것 같아. 고객 후기 좀 확인해 줄래?
+[ 92.92s][moshi] ⟨ret@92.84s⟩ 에이스 히팅의 ⟦⚡SPAN@94.68s: (tool result) "Ace Heating: 4.7 stars, 125 reviews. 'Excellent service, prompt and professional.' 'Highly reco⟧ 평판을 확인하고 있어… 에이스 히팅은 별점 4.7점에 리뷰가 125개 있고, 고객들은 전문성에 대해 칭찬하고 있어.
+[ 98.03s][user ] «backchannel» 응.
+[102.60s][user ] 믿을 만한 것 같아.
+[103.58s][moshi] 사람들이 서비스에 만족하는 것 같아서 좋은 것 같아.
+[107.51s][user ] 무료 견적을 제공해?
+[108.80s][moshi] «interrupted» 좋은 질문인데. 바로 확인해 줄게—
+[111.06s][user ] «interrupts_prev» 아니, 됐어. 그냥 내가 직접 전화할게. 도와줘서 고마워.
+[115.01s][moshi] 천만에. 안전한 방향으로 안내해 줄 수 있어서 기뻐. 난방할 때는 항상 안전을 최우선으로 생각해.

@@ -1,58 +1,40 @@
 v3_selfc_07_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 저는 마라 린드퀴스트이며, 북극에서 현장 연구를 수행한 빙하학자입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드크비스트입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주시면 될까요?
-[  3.80s][moshi] ⟨ret@3.64s⟩ 응, 6월 15일 ⟦⚡SPAN@5.32s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at 2:00 PM.⟧ 오후 2시에 그랜드뷰 로프트 방문 예약을 잡아 줬어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[  6.83s][user ] «backchannel» 네.
-[ 11.18s][user ] 그쪽으로 가는 길 안내를 받을 수 ⟨ret@13.75s⟩ 있을까요?
-[ 14.15s][moshi] 응, 당연히 ⟦⚡SPAN@15.75s: (tool result) Directions to The Grandview Lofts are: 123 Elm Street, Anytown, USA.⟧ 길 안내를 해 줄게. 그랜드뷰 로프트 주소는 애니타운 엘름 스트리트 123번지야.
+[  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
+[  3.82s][moshi] ⟨ret@3.66s⟩ 아, 예약을 ⟦⚡SPAN@5.34s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ 6월 15일 오후 2시에 그랜드뷰 로프트로 잡아 놨어.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
+[  7.18s][user ] «backchannel» 네.
+[ 11.72s][user ] 길 안내도 보내 줄 수 ⟨ret@13.72s⟩ 있을까요?
+[ 14.12s][moshi] 그랜드뷰 로프트 ⟦⚡SPAN@15.72s: (tool result) Directions to The Grandview Lofts are: Head north on Elm Street for one mile, then turn left on ⟧ 가는 길은 엘름 스트리트 북쪽으로 1마일 정도 가고, 오크 애비뉴에서 좌회전하면 돼.
       CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 17.85s][user ] «backchannel» 음.
-[ 21.61s][user ] 그 근처 동네는 어떤 ⟨ret@23.55s⟩ 곳인가요?
-[ 23.95s][moshi] 응, 계약하기 ⟦⚡SPAN@25.55s: (tool result) The neighborhood is primarily residential, with a walk score of 78.⟧ 전에 물어보는 게 좋지. 주로 주거 지역이고, 도보 점수는 78점이야.
-      CALL: {"function": "NeighborhoodInfo_2_GetDetails", "arguments": {"address": "123 Elm Street, Anytown, USA"}}
-[ 30.25s][user ] 주차는 ⟨ret@31.56s⟩ 가능한가요?
-[ 31.80s][moshi] 응, 주차 ⟦⚡SPAN@32.92s: (tool result) Parking is available on-site with a monthly fee of $150.⟧ 가능 여부를 확인해 볼게. 한 달에 150달러면 주차할 수 있어.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"property": "The Grandview Lofts"}}
-[ 36.83s][user ] 생각보다 비싸네요. 대중교통은 어때요?
-[ 39.68s][moshi] ⟨ret@39.44s⟩ 응, 대중교통도 좋은 ⟦⚡SPAN@41.44s: (tool result) The nearest bus stop is two blocks away on Oak Avenue.⟧ 방법이야. 제일 가까운 버스 정류장은 오크 애비뉴에서 두 블록 떨어진 곳에 있어.
-      CALL: {"function": "Transit_2_GetNearbyStops", "arguments": {"address": "123 Elm Street, Anytown, USA"}}
-[ 46.26s][user ] 근처에 식료품점이 있나요?
-[ 48.40s][moshi] «interrupted» 음, 아까 말했듯이, 여러—
-[ 50.49s][user ] «interrupts_prev» 근처에 식료품점이 있나요? 꼭 알아야 해요.
-[ 53.66s][moshi] ⟨ret@53.42s⟩ 응, 미안해. 바로 ⟦⚡SPAN@55.18s: (tool result) There is a Fresh Foods Market located 0.5 miles away.⟧ 확인해 줄게. 그랜드뷰 로프트에서 반 마일 거리에 프레시 푸드 마켓이 있어.
-      CALL: {"function": "POI_2_SearchNearby", "arguments": {"query": "grocery store", "address": "123 Elm Street, Anytown, USA"}}
-[ 60.02s][user ] 알겠습니다, 좋네요. 반려동물 정책은 어떻게 되나요?
-[ 63.80s][moshi] ⟨ret@63.73s⟩ 응, 반려동물 ⟦⚡SPAN@65.72s: (tool result) Pets are allowed with a weight limit of 50 pounds and a $500 fee.⟧ 정책을 알아볼게. 반려동물은 허용되는데, 무게 제한이 50파운드이고 수수료가 500달러야.
-      CALL: {"function": "Homes_2_GetPetPolicy", "arguments": {"property": "The Grandview Lofts"}}
-[ 66.48s][user ] «backchannel» 예.
-[ 72.06s][user ] 50파운드… 좀 빡빡하겠네요. 제 강아지가 60파운드거든요.
-[ 76.93s][moshi] ⟨ret@76.85s⟩ 응, ⟦⚡SPAN@78.05s: (tool result) Several properties allow pets over 50 pounds in neighboring towns.⟧ 알겠어. 그럼 검색 조건을 바꿔 볼게. 근처 다른 마을에도 50파운드 초과 반려동물을 허용하는 곳이 많아.
-      CALL: {"function": "Homes_2_SearchProperties", "arguments": {"pets_allowed": true, "min_weight": "60 pounds", "location": "Anytown, USA"}}
-[ 79.64s][user ] «backchannel» 음.
-[ 85.06s][user ] 어떤 마을들이 ⟨ret@86.30s⟩ 있나요?
-[ 86.54s][moshi] 응, 반려동물 ⟦⚡SPAN@88.14s: (tool result) Nearby towns include Willow Creek, Oakhaven, and Riverton.⟧ 친화적인 곳이 있는 근처 마을을 알려 줄게. 윌로우 크릭, 오크헤이븐, 리버턴에 반려동물 친화적인 부동산이 있어.
-      CALL: {"function": "Homes_2_GetNearbyTowns", "arguments": {"location": "Anytown, USA"}}
-[ 92.63s][user ] «backchannel» 음.
-[ 96.90s][user ] 윌로우 크릭에 대해 알려 ⟨ret@98.59s⟩ 주세요.
-[ 98.75s][moshi] 응, 윌로우 크릭은 ⟦⚡SPAN@100.59s: (tool result) Willow Creek has a population of 15,000 and a median home price of $350,000.⟧ 좋은 곳이야. 인구는 1만 5천 명이고, 중간 주택 가격은 35삼십오만 달러야.
-      CALL: {"function": "TownInfo_2_GetDetails", "arguments": {"town": "Willow Creek"}}
-[106.27s][user ] 윌로우 크릭에 공원이 ⟨ret@108.10s⟩ 있나요?
-[108.34s][moshi] 응, 공원은 ⟦⚡SPAN@110.10s: (tool result) Willow Creek Park and Lakeside Park are both located within town.⟧ 중요하지, 특히 반려동물 주인에게는. 윌로우 크릭 파크와 레이크사이드 파크가 모두 마을 안에 있어.
-      CALL: {"function": "POI_2_SearchNearby", "arguments": {"query": "parks", "location": "Willow Creek"}}
-[113.77s][user ] «backchannel» 네.
-[116.68s][user ] 좋네요. 윌로우 크릭에서 대형견을 허용하는 부동산을 보여 줄 수 ⟨ret@121.83s⟩ 있나요?
-[121.91s][moshi] 응, 당연히 ⟦⚡SPAN@123.03s: (tool result) Three properties match your criteria: 45 Maple Drive, 10 Oak Lane, and 22 Pine Court.⟧ 찾아 줄게. 네 조건에 맞는 부동산은 45 메이플 드라이브, 10 오크 레인, 22 파인 코트 세 곳이야.
-      CALL: {"function": "Homes_2_SearchProperties", "arguments": {"location": "Willow Creek", "pets_allowed": true, "min_weight": "60 pounds"}}
-[130.60s][user ] 45 메이플 드라이브에 대해 알려 주세요.
-[133.53s][moshi] ⟨ret@133.29s⟩ 응, 당연히 자세한 ⟦⚡SPAN@135.29s: (tool result) 45 Maple Drive is a 3-bedroom, 2-bathroom home listed for $375,000.⟧ 정보를 알려 줄게. 45 메이플 드라이브는 침실 3개, 욕실 2개짜리 집이고, 가격은 37만 5삼십칠만 오천 달러야.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"property": "45 Maple Drive, Willow Creek"}}
-[140.53s][user ] «backchannel» 음.
-[142.81s][user ] 6월 20일에 45 메이플 드라이브 방문 예약을 할 수 ⟨ret@146.90s⟩ 있을까요?
-[147.22s][moshi] 응, 바로 예약을 ⟦⚡SPAN@148.90s: (tool result) A viewing at 45 Maple Drive is scheduled for June twentieth at 10:00 AM.⟧ 잡아 줄게. 6월 20일 오전 10시에 45 메이플 드라이브 방문 예약을 잡아 줬어.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "45 Maple Drive, Willow Creek", "date": "June twentieth"}}
-[154.82s][user ] 완벽하네요. 그쪽으로 가는 길 안내도 보내 주세요.
-[158.44s][moshi] ⟨ret@158.36s⟩ 응, 당연히 ⟦⚡SPAN@159.40s: (tool result) Directions to 45 Maple Drive are: Take Highway 16 North for 10 miles, then turn left on Maple Dr⟧ 길 안내를 보내 줄게.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "45 Maple Drive, Willow Creek"}}
+[ 18.05s][user ] «backchannel» 음.
+[ 21.99s][user ] 주차는 가능한가요? ⟨ret@23.45s⟩
+[ 23.77s][moshi] 거기 주차 상황을 ⟦⚡SPAN@25.45s: (tool result) The Grandview Lofts offers free on-site parking for visitors.⟧ 한번 알아볼게. 그랜드뷰 로프트는 방문객에게 무료 현장 주차를 제공해.
+      CALL: {"function": "Homes_2_CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 29.97s][user ] 애완동물 정책은 ⟨ret@31.69s⟩ 어떤가요?
+[ 31.93s][moshi] 그 건물 ⟦⚡SPAN@33.69s: (tool result) The Grandview Lofts allows cats and small dogs with a one-time fee of two hundred dollars.⟧ 애완동물 정책을 찾아볼게. 고양이와 소형견은 200달러의 수수료를 내면 허용해.
+      CALL: {"function": "Homes_2_GetPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 39.60s][user ] 200달러… 아, 6월 16일로 바꿔 줘.
+[ 43.61s][moshi] ⟨ret@43.37s⟩ 날짜를 변경해 줄게— ⟦⚡SPAN@45.37s: (tool result) A viewing at The Grandview Lofts is now scheduled for June sixteenth at two PM.⟧ 6월 16일 오후 2시로 예약을 다시 잡았어.
+[ 48.34s][user ] 건물 안에 헬스장이 ⟨ret@50.19s⟩ 있나요?
+[ 50.35s][moshi] ⟦⚡SPAN@51.23s: (tool result) The Grandview Lofts includes a fitness center, a rooftop terrace, and a community room.⟧ 어메니티에 대해서는— 건물에 피트니스 센터, 옥상 테라스, 커뮤니티룸이 있어.
+[ 57.07s][user ] 옥상 테라스는 좋네요. 월세는 ⟨ret@60.60s⟩ 얼마인가요?
+[ 61.00s][moshi] 거기 임대료를 ⟦⚡SPAN@62.60s: (tool result) Rental rates at The Grandview Lofts range from fifteen hundred to two thousand five hundred doll⟧ 한번 알아볼게. 월세는 1,500달러에서 2,500달러 사이야.
+      CALL: {"function": "Homes_2_GetRentalRates", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 62.72s][user ] «backchannel» 예.
+[ 67.26s][user ] 꽤 넓은 범위인데요. 더 높은 가격으로는 뭘 얻을 수 있나요?
+[ 71.60s][moshi] 보통 더 높은 임대료는 더 큰 유닛과 고급 전망을 포함해.
+[ 73.15s][user ] «backchannel» 음.
+[ 76.35s][user ] 그 가격에 유틸리티는 포함되어 ⟨ret@78.64s⟩ 있나요?
+[ 78.72s][moshi] 유틸리티 ⟦⚡SPAN@79.84s: (tool result) Water and garbage are included, but electricity and internet are not.⟧ 포함 여부를 빠르게 확인해 볼게. 물과 쓰레기 처리 비용은 포함되어 있고, 전기와 인터넷은 별도야.
+      CALL: {"function": "Homes_2_GetUtilitiesIncluded", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 83.98s][user ] «backchannel» 음.
+[ 87.09s][user ] 알겠습니다. 그 동네는 어떤가요?
+[ 89.46s][moshi] 카페와 미술관으로 유명한 활기찬 지역이야.
+[ 93.56s][user ] 근처에 식료품점이 ⟨ret@95.42s⟩ 있나요?
+[ 95.64s][moshi] 근처 식료품점을 ⟦⚡SPAN@97.26s: (tool result) There’s a Fresh Foods Market five blocks east of The Grandview Lofts.⟧ 확인해 볼게. 프레시 푸드 마켓이 로프트에서 동쪽으로 5블록 거리에 있어.
+      CALL: {"function": "Navigation_2_SearchNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
+[100.10s][user ] «backchannel» 네.
+[102.49s][user ] 편리하겠네요. 도움 주셔서 감사합니다.

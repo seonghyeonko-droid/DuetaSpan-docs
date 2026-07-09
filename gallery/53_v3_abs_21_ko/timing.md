@@ -1,77 +1,83 @@
 # v3_abs_21_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 프랑스 상원에는 상원의원이 몇 명이나 있어요?
-     3.50s  <ret> 발화 (turn1 첫 프레임)
-     3.61s  user  발화 끝
-     3.74s  agent 발화 시작: <ret> 아, 프랑스 정부에 대한 질문은 정말 흥미롭지만, 죄송하게도 현재 그 특정 숫자를 알려드릴 수 없
-     4.78s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.24s]: (no information found)
-     8.80s  user  발화 시작: 네.
-     9.30s  user  발화 끝
-    10.69s  agent 발화 끝
-    11.09s  user  발화 시작: 그럼 미국 상원은 몇 명의 의원이 있나요?
-    13.29s  <ret> 발화 (turn4 첫 프레임)
-    13.61s  agent 발화 시작: <ret> 아, 미국 상원은 제가 훨씬 더 잘 알고 있어요. 미국 상원에는 의원이 총 백 명 있는데, 각 주
-    13.63s  user  발화 끝
-    15.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.69s]: The United States Senate is composed of one hundred senators, two from
-    21.73s  agent 발화 끝
-    21.76s  user  발화 시작: 각 주에서 두 명씩이죠. 그게 맞아요. 가장 큰 별자리는 뭔가요?
-    25.52s  <ret> 발화 (turn6 첫 프레임)
-    25.68s  agent 발화 시작: <ret> 정말 멋진 질문이에요—저는 별자리에 대해 꽤 많은 시간을 생각하거든요. 가장 큰 별자리는 자라별자
-    25.70s  user  발화 끝
-    26.72s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.27s]: Hydra is the largest of the 88 modern constellations, covering 1303 sq
-    28.97s  user  발화 시작: 음.
-    29.59s  user  발화 끝
-    35.23s  user  발화 시작: 와, 엄청 크네요! 오리온자리보다 더 큰가요?
-    35.38s  agent 발화 끝
-    38.79s  user  발화 끝
-    38.94s  agent 발화 시작: 훨씬 더 커요. 오리온자리는 눈에 띄지만, 자라별자리가 하늘의 넓은 부분을 훨씬 더 지배하고 있어요.
-    46.05s  user  발화 시작: 음… 런던에서는 볼 수 있을까요?
-    46.12s  agent 발화 끝
-    48.85s  <ret> 발화 (turn11 첫 프레임)
-    49.00s  agent 발화 시작: <ret> 그 위치에 대한 가시성 데이터가 있는지 확인해 볼게요. 자라별자리는 2월부터 10월까지 런던에서 
-    49.05s  user  발화 끝
-    50.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) Hydra is visible from London between February and Octobe
-    58.04s  agent 발화 끝
-    58.27s  user  발화 시작: 12월이군요. 한참 남았네요. [laugh]
-    61.29s  agent 발화 시작: 정말 그렇지만, 기대감이 즐거움을 더해 주지 않나요? 기다릴 가치가 있어요.
-    61.31s  user  발화 끝
-    67.03s  user  발화 시작: 만약 망원경으로 보고 싶다면… 어떤 종류를 추천해 주시겠어요?
-    67.13s  agent 발화 끝
-    72.06s  agent 발화 시작: 그건 경험 수준과 자라별자리에서 무엇을 관찰하고 싶은지에 따라 달라져요.
-    72.17s  user  발화 끝
-    73.73s  user  발화 시작: 네.
-    74.23s  user  발화 끝
-    77.27s  user  발화 시작: 저는 초보자이고, 이제 막 시작하는 단계예요. 너무 화려한 건 필요 없어요.
-    77.38s  agent 발화 끝
-    82.71s  <ret> 발화 (turn18 첫 프레임)
-    82.86s  agent 발화 시작: <ret> 초보자에게 적합한 시작점이 만족스러운 경험에 중요해요. 8인치 도브소니안 망원경은 초보 천문학자에
-    82.92s  user  발화 끝
-    84.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.66s]: A Dobsonian telescope with an eight-inch aperture is often recommended
-    91.52s  agent 발화 끝
-    91.84s  user  발화 시작: 8인치 도브소니안… 알겠습니다. 비싼가요?
-    95.91s  <ret> 발화 (turn20 첫 프레임)
-    95.98s  agent 발화 시작: <ret> 가격은 다양하지만, 일반적으로 접근성이 꽤 좋아요. 이 망원경들은 보통 삼백 달러에서 육백 달러 
-    96.14s  user  발화 끝
-    97.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.61s]: Eight-inch Dobsonian telescopes typically range in price from three hu
-   103.72s  agent 발화 끝
-   105.02s  user  발화 시작: 그렇게 비싸지 않네요. 사진을 보여줄 수 있나요?
-   107.96s  <ret> 발화 (turn22 첫 프레임)
-   108.03s  agent 발화 시작: <ret> 스카이워처, 오리온, AWB OneSky 8인치 도브소니안의 이미지를 찾았어요.
-   108.21s  user  발화 끝
-   109.08s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.07s]: (tool result) Image search returned results for: Sky-Watcher 8" Dobson
-   112.13s  user  발화 시작: 네.
-   112.62s  user  발화 끝
-   114.10s  agent 발화 끝
-   114.14s  user  발화 시작: 오리온 것이 좋아 보이네요. 행성을 관측하기 가장 좋은 시간은 언제인가요?
-   119.47s  user  발화 끝
-   119.50s  agent 발화 시작: 어떤 행성에 관심이 있는지, 그리고 지구와의 상대적인 위치에 따라 달라져요.
-   122.68s  user  발화 시작: 네.
-   123.13s  user  발화 끝
-   124.50s  agent 발화 끝
-   125.49s  user  발화 시작: 그냥… 일반적으로요. 지금 보기 쉬운 행성이 있나요?
-   131.07s  <ret> 발화 (turn28 첫 프레임)
-   131.14s  agent 발화 시작: <ret> 특정 행성 정렬은 멋진 광경을 만들어 줘요. 목성과 토성이 오늘 저녁에 보이는데, 목성이 더 밝게
-   131.28s  user  발화 끝
-   132.75s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.22s]: Jupiter and Saturn are currently visible in the evening sky, with Jupi
-   138.97s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 프랑스 상원 의원 수는 몇 명인가요?
+     3.24s  user  발화 끝
+     3.35s  <ret> 발화 (turn1 첫 프레임)
+     3.59s  agent 발화 시작: <ret> 아, 프랑스 정부에 대한 흥미로운 질문이시네요. 지금 당장은 정확한 숫자를 가지고 있지 않아서 죄
+     4.63s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.72s]: (no information found)
+    12.48s  user  발화 시작: 그럼 좀 찾아주시겠어요?
+    12.62s  agent 발화 끝
+    13.88s  <ret> 발화 (turn3 첫 프레임)
+    14.14s  user  발화 끝
+    14.20s  agent 발화 시작: <ret> 알아봤는데, 프랑스 상원은 총 삼백사십팔 명의 상원 의원으로 구성되어 있습니다. 꽤 큰 규모죠, 
+    15.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.78s]: The French Senate has 348 senators, each elected by an electoral colle
+    21.62s  user  발화 시작: 와, 정말 많네요. 미국 상원은요?
+    21.76s  agent 발화 끝
+    24.51s  agent 발화 시작: 미국 상원은 백 명의 의원으로 구성되어 있습니다.
+    24.59s  user  발화 끝
+    25.91s  user  발화 시작: 네.
+    26.36s  user  발화 끝
+    27.55s  user  발화 시작: 정말 큰 차이네요! 프랑스 상원이 더 강력한가요?
+    27.55s  agent 발화 끝
+    31.58s  user  발화 끝
+    31.62s  agent 발화 시작: 그건 좀 복잡한 질문이라서, 간단하게 답하기는 어렵습니다.
+    33.89s  user  발화 시작: 음.
+    34.30s  user  발화 끝
+    35.46s  agent 발화 끝
+    36.26s  user  발화 시작: 프랑스 상원의 권한에 대해 설명해 주시겠어요?
+    39.60s  <ret> 발화 (turn11 첫 프레임)
+    39.99s  agent 발화 시작: <ret> 프랑스 상원의 입법 역할을 자세히 알아보겠습니다. 프랑스 상원은 국민 의회와 함께 법안을 검토하고
+    40.15s  user  발화 끝
+    41.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.16s]: The French Senate shares legislative power with the National Assembly,
+    50.00s  agent 발화 끝
+    50.07s  user  발화 시작: 그렇군요, 법을 바꿀 수 있군요?
+    52.58s  agent 발화 시작: 네, 제안된 법안을 수정할 권한이 있습니다.
+    52.71s  user  발화 끝
+    53.46s  user  발화 시작: 네.
+    54.05s  user  발화 끝
+    55.49s  agent 발화 끝
+    56.24s  user  발화 시작: 법 말고 다른 책임도 있나요?
+    58.09s  <ret> 발화 (turn16 첫 프레임)
+    58.16s  agent 발화 시작: <ret> 법률 제정 외에도 다른 역할도 있습니다. 지방 자치 단체를 대표하고 국제 조약을 비준하기도 합니다
+    58.31s  user  발화 끝
+    59.52s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.10s]: The French Senate also represents local authorities and ratifies inter
+    67.98s  agent 발화 끝
+    68.06s  user  발화 시작: 지방 자치 단체를 대표한다는 게 흥미롭네요.
+    71.30s  user  발화 끝
+    71.51s  agent 발화 시작: 그것은 구조의 중요한 부분으로, 지역의 목소리가 전달되도록 하는 것입니다.
+    76.69s  agent 발화 끝
+    78.22s  user  발화 시작: 모든 것에 대해 투표할 수 있나요?
+    80.20s  user  발화 끝
+    80.21s  user  발화 시작: 국민 의회가 하는 모든 것에 대해 투표하나요?
+    83.17s  user  발화 끝
+    83.51s  agent 발화 시작: 좋은 지적입니다. 모든 것에 대해 투표하는 것은 아니고, 과정이 좀 더 복잡합니다. 셔틀 외교라는 시스템이 
+    89.25s  user  발화 시작: 네.
+    89.69s  user  발화 끝
+    91.78s  user  발화 시작: 셔틀 외교가 뭔가요?
+    91.90s  agent 발화 끝
+    93.40s  agent 발화 시작: 상원과 국민 의회, 두 의회가 합의에 이를 때까지 협상하는 것을 의미합니다.
+    93.57s  user  발화 끝
+    96.64s  user  발화 시작: 네.
+    97.27s  user  발화 끝
+    98.61s  agent 발화 시작: 법에 대한 합의를 도출하기 위한 왕복 과정입니다.
+    98.82s  agent 발화 끝
+   100.64s  user  발화 시작: 네네.
+   101.28s  user  발화 끝
+   101.84s  agent 발화 끝
+   101.86s  user  발화 시작: 만약 의견이 다르면 어떻게 되나요?
+   104.08s  agent 발화 시작: 공동 위원회가 차이를 조정하려고 노력합니다.
+   104.17s  user  발화 끝
+   107.30s  agent 발화 끝
+   107.32s  user  발화 시작: 만약 *그들*도 동의하지 못하면요?
+   109.98s  agent 발화 시작: 일반적으로 국민 의회가 최종 결정을 내립니다.
+   110.18s  user  발화 끝
+   113.12s  agent 발화 끝
+   113.72s  user  발화 시작: 아, 그렇군요. 그럼 국민 의회가 더 강력한가요?
+   117.17s  agent 발화 시작: 의견이 불일치할 경우, 네, 국민 의회가 더 큰 권한을 가지고 있습니다.
+   117.33s  user  발화 끝
+   121.96s  user  발화 시작: 그건 좀 불공평한 것 같네요.
+   122.02s  agent 발화 끝
+   123.90s  user  발화 끝
+   124.20s  agent 발화 시작: 프랑스 헌법의 역사적 발전을 반영한 결과입니다.
+   127.57s  agent 발화 끝

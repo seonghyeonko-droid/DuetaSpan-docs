@@ -1,39 +1,53 @@
 # v3_selfc_08_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 줘.
-     4.29s  <ret> 발화 (turn1 첫 프레임)
-     4.53s  agent 발화 시작: <ret> 알겠습니다. 그 여행에 대한 버스를 찾아볼게요— 버스 옵션이 세 가지 있는데, 가격은 129달러부
-     4.63s  user  발화 끝
-     6.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixB
-    14.04s  agent 발화 끝
-    14.63s  user  발화 시작: 좀 비싸네. 두 명만 하면 어때?
-    16.59s  <ret> 발화 (turn3 첫 프레임)
-    16.75s  agent 발화 시작: <ret> 승객 수를 조정해 볼게요— 두 명으로 하니까 가격대는 이제 95달러에서 150달러까지입니다.
-    16.93s  user  발화 끝
-    17.55s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.31s]: (tool result) Buses_3_FindBus returned three options: Greyhound, FlixB
-    23.10s  agent 발화 끝
-    23.34s  user  발화 시작: 흠, 그레이하운드가 항상 제일 싸?
-    26.38s  user  발화 끝
-    26.51s  agent 발화 시작: 일반적으로 네, 그레이하운드가 가장 저렴한 요금을 제공하는 경향이 있습니다—
-    31.09s  user  발화 시작: 와이파이 있는 버스 있어?
-    31.69s  agent 발화 끝
-    33.03s  user  발화 끝
-    33.08s  agent 발화 시작: 그레이하운드와 플릭스버스는 모두 와이파이가 가능한 편의시설로 나와 있습니다. Wanderu는 명시되어 있지 
-    38.57s  user  발화 시작: 응.
-    38.92s  user  발화 끝
-    42.03s  agent 발화 시작: 그레이하운드 웹사이트에는 모든 좌석에 전원 콘센트가 있다는 내용도 나와 있는데, 장거리 여행에 꽤 유용할 수
-    42.07s  agent 발화 끝
-    49.60s  <ret> 발화 (turn10 첫 프레임)
-    49.99s  agent 발화 시작: <ret> 그레이하운드 버스 G749는 오전 8시에 출발해서 덴버에는 밤 10시에 도착하고, 와이파이도 있습
-    50.04s  agent 발화 끝
-    51.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) Buses_3_GetDetails returned: Greyhound bus ID G749 depar
-    55.73s  user  발화 시작: 응.
-    56.22s  user  발화 끝
-    58.74s  user  발화 시작: 좋아, 그 그레이하운드 버스 티켓 두 장 예약해 줘.
-    58.84s  agent 발화 끝
-    61.59s  <ret> 발화 (turn13 첫 프레임)
-    61.91s  agent 발화 시작: <ret> 티켓을 확보해 드릴게요— 티켓 예약을 완료했습니다! 확인 번호는 B29X7R이고, 총 금액은 19
-    61.98s  user  발화 끝
-    63.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.46s]: (tool result) Buses_3_Book returned: Confirmation number is B29X7R, tw
-    70.21s  agent 발화 끝
+     0.00s  user  발화 시작: 시카고에서 덴버 가는 버스, 세 명, 5월 10일에 보여 줘.
+     4.36s  <ret> 발화 (turn1 첫 프레임)
+     4.60s  agent 발화 시작: <ret> 알아봤는데, 버스가 세 개 있어요. 그레이하운드, 플릭스버스, 그리고 완데루인데, 가격은 125달
+     4.67s  user  발화 끝
+     6.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.54s]: (tool result) Buses_3_FindBus returned three options: Greyhound, 8:00 
+    14.10s  agent 발화 끝
+    14.57s  user  발화 시작: 음, 5월 11일로 바꿔 줘.
+    16.77s  <ret> 발화 (turn3 첫 프레임)
+    16.93s  agent 발화 시작: <ret> 날짜를 5월 11일로 변경했어요. 5월 11일에는 플릭스버스가 아홉 시에 130달러이고, 완데루는
+    17.06s  user  발화 끝
+    17.73s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.47s]: (tool result) Buses_3_FindBus returned two options: FlixBus, 9:00 AM, 
+    27.37s  agent 발화 끝
+    27.56s  user  발화 시작: 플릭스버스가 괜찮겠다. 세 자리 예약해 줘.
+    30.34s  <ret> 발화 (turn5 첫 프레임)
+    30.66s  agent 발화 시작: <ret> 네, 예약해 드릴게요. 플릭스버스 예약이 확정됐습니다. 예약 번호는 BX7892이고, 5월 11일
+    30.70s  user  발화 끝
+    32.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.91s]: (tool result) Buses_3_ReserveSeats returned Reservation ID: BX7892. Pa
+    37.01s  user  발화 시작: 응.
+    37.55s  user  발화 끝
+    40.38s  user  발화 시작: 수하물 요금은 포함이야?
+    40.44s  agent 발화 끝
+    42.26s  agent 발화 시작: 좋은 질문이에요.
+    42.36s  user  발화 끝
+    43.03s  <ret> 발화 (turn9 첫 프레임)
+    43.35s  agent 발화 시작: <ret> 플릭스버스는 첫 번째 가방은 무료인데, 그 다음 가방부터는 가방당 25달러예요.
+    43.41s  agent 발화 끝
+    45.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Buses_3_GetBaggageFees returned FlixBus baggage fee: $25
+    47.54s  user  발화 시작: 응.
+    48.17s  user  발화 끝
+    49.46s  agent 발화 끝
+    49.54s  user  발화 시작: 알았어, 알아두니까 좋네.
+    51.87s  agent 발화 시작: 그럼, 콜럼버스 이전 미술에 대해서는, 메소아메리카 문화권에서는 조각에 자수를 많이 넣었다는 사실을 아셨나요
+    52.13s  user  발화 끝
+    56.97s  user  발화 시작: 맞아.
+    57.60s  user  발화 끝
+    60.26s  agent 발화 끝
+    60.28s  agent 발화 시작: 자수는 생명과 갱신을 상징하며 매우 귀하게 여겨졌어요. 생생한 녹색은 식물과 물을 나타내는데, 그들의 믿음 
+    65.97s  user  발화 시작: 응.
+    66.42s  user  발화 끝
+    70.25s  agent 발화 끝
+    70.71s  user  발화 시작: 그거 흥미롭네. 덴버에 콜럼버스 이전 유물 컬렉션이 있는 박물관이 있어?
+    75.62s  <ret> 발화 (turn17 첫 프레임)
+    75.69s  agent 발화 시작: <ret> 덴버에는 몇 군데 있어요. 덴버 미술관에는 콜럼버스 이전 유물이 500점 있고, 자연 과학 박물관
+    75.85s  user  발화 끝
+    76.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.11s]: (tool result) Museums_FindMuseums returned Denver Art Museum: Pre-Colu
+    85.19s  agent 발화 끝
+    86.31s  user  발화 시작: 덴버 미술관이 가봐야 할 곳 같아.
+    88.70s  user  발화 끝
+    88.86s  agent 발화 시작: 정말 좋은 선택이에요! 특히 모체 문화의 도자기 컬렉션이 아주 훌륭해요. 섬세하고 아름답게 그려져 있답니다.
+    97.20s  agent 발화 끝

@@ -1,9 +1,9 @@
 # v3_rags_31_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 데어데블 시즌 3은 언제 나왔어요?
-     2.13s  <ret> 발화 (turn1 첫 프레임)
-     2.37s  agent 발화 시작: <ret> 네, 찾아봤는데 다레데블 시즌 3는 이천십팔 년 10월 26일에 처음 공개됐습니다.
-     2.54s  user  발화 끝
-     2.77s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.31s]: <Daredevil season three was released on October 26, 2018.>
-     8.86s  agent 발화 끝
+     0.00s  user  발화 시작: 데어데블 시즌 3 언제 나왔어요?
+     1.61s  <ret> 발화 (turn1 첫 프레임)
+     1.85s  agent 발화 시작: <ret> 네, 확인해 봤는데 다레데블 시즌 3는 이천십팔 년 10월 26일에 처음 공개됐습니다.
+     1.98s  user  발화 끝
+     2.11s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.96s]: Daredevil season three was released on October 26, 2018.
+     8.46s  agent 발화 끝

@@ -1,33 +1,35 @@
 # v3_rag_28_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 정부에서 본격적으로 참전용사들을 챙기기 시작한 게 언제부터였어?
-     4.13s  agent 발화 시작: 좋은 질문이세요. 당연히 시간이 지나면서 조금씩 변화해 왔습니다.
-     4.35s  user  발화 끝
-     8.54s  <ret> 발화 (turn2 첫 프레임)
-     8.85s  agent 발화 시작: <ret> 전담 부서를 만들어서— 공식적으로는 천구백삼십년에 설립되었지만, 그 이전에도 프로그램이 있었습니다
-     8.99s  agent 발화 끝
-     9.66s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.98s]: The United States Department of Veterans Affairs was established in 19
-    12.95s  user  발화 시작: 어어.
-    13.77s  user  발화 끝
-    16.30s  agent 발화 끝
-    17.64s  user  발화 시작: 천구백삼십년? 좀 늦은 것 같지 않아? 제1차 세계 대전 참전용사들은 어땠는데?
-    23.43s  user  발화 끝
-    23.50s  agent 발화 시작: 제1차 세계 대전에 참전하신 분들의 필요를 생각하면 늦어 보이긴 합니다.
-    28.37s  <ret> 발화 (turn6 첫 프레임)
-    28.52s  agent 발화 시작: <ret> 그 이전에도— 천구백삼십 년에 참전용사국이 설립되어 보훈 혜택을 담당했습니다.
-    28.60s  agent 발화 끝
-    29.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.21s]: Prior to 1930, the Veterans Bureau, created in 1921, administered vete
-    34.31s  agent 발화 끝
-    34.33s  user  발화 시작: 근데 남북전쟁 이후에는, 참전용사국이 생기기 전에는 어떤 혜택을 받았는데?
-    39.83s  user  발화 끝
-    40.12s  agent 발화 시작: 정말 중요한 질문이시네요— 역사를 이해하는 게 중요합니다—
-    43.68s  user  발화 시작: 그냥, 다들 잊혀졌던 거 아니야?
-    44.47s  agent 발화 끝
-    45.94s  user  발화 끝
-    46.13s  agent 발화 시작: 전혀 잊혀지지 않았지만, 그때는 지원 방식이 지금처럼 체계적이지 않았습니다.
-    50.96s  <ret> 발화 (turn11 첫 프레임)
-    51.19s  agent 발화 시작: <ret> 초기 지원은 주로— 남북전쟁 이후에는 국립자활원에서 연금과 의료 지원을 제공했습니다.
-    51.36s  agent 발화 끝
-    52.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: After the Civil War, veterans received pensions and medical care throu
-    57.95s  agent 발화 끝
+     0.00s  user  발화 시작: 언제 정부 부처에 대해 읽다가 궁금해졌어… 재향군인부(Department of Veterans Affairs
+     7.78s  agent 발화 시작: 정말 좋은 질문이에요. 복무하신 분들을 지원하는 역사를 추적하는 것은 중요하답니다.
+     7.88s  user  발화 끝
+    13.61s  <ret> 발화 (turn2 첫 프레임)
+    13.91s  agent 발화 시작: <ret> 그 날짜를 정확히 알려 드릴게요— 재향군인부는 후버 대통령에 의해 천구백삼십년 칠월 이십일일에 설
+    13.99s  agent 발화 끝
+    14.89s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.96s]: The United States Department of Veterans Affairs was established on Ju
+    18.97s  user  발화 시작: 어어.
+    19.79s  user  발화 끝
+    22.48s  agent 발화 끝
+    23.81s  user  발화 시작: 천구백삼십년? 꽤 최근 같지 않아? 그 전에 재향군인 혜택은 없었어?
+    29.19s  user  발화 끝
+    29.27s  agent 발화 시작: 물론, 부처가 정식으로 만들어지기 전에도 혜택은 존재했답니다. 지원은 시간이 지나면서 발전해 왔어요.
+    36.96s  <ret> 발화 (turn6 첫 프레임)
+    37.10s  agent 발화 시작: <ret> 사실, 이전 형태의 지원은 상당히 광범위했답니다— 천구백삼십년 이전에 재향군인국(Veterans 
+    37.20s  agent 발화 끝
+    38.32s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.76s]: Prior to 1930, the Veterans Bureau, created in 1921, administered bene
+    46.28s  user  발화 시작: 응응.
+    46.78s  user  발화 끝
+    49.30s  user  발화 시작: 근데 그 재향군인국이 새로운 혜택을 *만들* 권한이 있었어, 아니면 의회가 준 것만 관리했어?
+    49.35s  agent 발화 끝
+    55.82s  user  발화 끝
+    56.09s  agent 발화 시작: 미묘하지만 중요한 차이점이랍니다—
+    58.26s  <ret> 발화 (turn10 첫 프레임)
+    58.41s  agent 발화 시작: <ret> 재향군인국은 주로 의회가 승인한 혜택을 실행했고, 자체적으로 새로운 프로그램을 만들지는 않았답니다
+    58.62s  agent 발화 끝
+    60.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: The Veterans Bureau primarily implemented benefits authorized by Congr
+    66.84s  user  발화 시작: 그럼 후버 부처는… 권한 면에서 한 단계 더 나아간 거네?
+    66.94s  agent 발화 끝
+    71.32s  agent 발화 시작: 맞아요. 천구백삼십년 개편으로 재향군인 서비스의 범위가 통합되고 확대되었답니다.
+    71.37s  user  발화 끝
+    77.10s  agent 발화 끝

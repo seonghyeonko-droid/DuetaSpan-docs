@@ -2,24 +2,27 @@ v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading this dystopian novel, and it got me ⟨ret@3.99s⟩ thinking…
-[  4.30s][moshi] That’s ⟦⚡SPAN@5.19s: <Nineteen Eighty-Four is a dystopian novel published in 1949, written by English novelist George Orwell.>⟧ a fascinating area of literature… George Orwell’s *Nineteen Eighty-Four*, published in nineteen forty-nine, is the source of the term.
-[ 13.78s][user ] …but where did *Orwell* get the idea for “Big Brother”? It just seems so… ominous.
-[ 19.59s][moshi] It’s a very evocative phrase, isn’t it?
-[ 22.11s][user ] I was wondering about historical context, like, was it inspired by someone real?
-[ 28.29s][moshi] ⟨ret@28.05s⟩ That's ⟦⚡SPAN@29.17s: <Orwell stated the concept came from a childhood memory of posters depicting a stern, paternal figure with the⟧ an excellent question regarding its origins… Orwell himself connected it to posters from his childhood—a stern figure saying, “You are being watched.”
-[ 33.09s][user ] «backchannel» Okay.
-[ 38.40s][user ] So, it wasn’t a political leader or anything like that?
-[ 42.19s][moshi] Not directly, no. It was more a feeling of pervasive surveillance.
-[ 46.43s][user ] But didn’t the Spanish Civil War…
-[ 49.20s][user ] …have something to do with it?
-[ 50.75s][moshi] «interrupted» You’re right to bring that up—
-[ 51.60s][user ] «interrupts_prev» I mean, he fought in that, didn’t he, and it was all about propaganda and control…
-[ 56.02s][moshi] The Spanish Civil War deeply impacted Orwell; he witnessed firsthand the use of propaganda and surveillance.
-[ 62.85s][user ] Right. So the “Big Brother” figure isn’t just one person, but a system?
-[ 67.57s][moshi] Precisely. It represents the all-seeing state, rather than a single individual.
-[ 73.66s][user ] Mm-hmm. That makes a lot of sense. Did the book become popular right ⟨ret@78.62s⟩ away?
-[ 78.77s][moshi] Its initial reception ⟦⚡SPAN@80.30s: <Initially, *Nineteen Eighty-Four* received mixed reviews, but its sales steadily increased during the Cold Wa⟧ was…complex… It had mixed reviews at first, but sales grew during the Cold War, becoming very influential.
-[ 83.48s][user ] «backchannel» Mm-hmm.
-[ 87.88s][user ] I guess the Cold War would have really resonated with the themes in the book.
-[ 92.06s][moshi] Absolutely. The anxieties of that era amplified its message considerably.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me ⟨ret@3.75s⟩ thinking…
+[  4.07s][moshi] That’s a ⟦⚡SPAN@5.27s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ very common reaction to powerful literature. The term “Big Brother” originates from George Orwell’s novel, *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 14.64s][user ] …but where did *Orwell* get the idea? Was it something he experienced?
+[ 19.82s][moshi] That’s a fascinating question, and it does delve into Orwell’s background.
+[ 24.25s][user ] I’ve heard it had something to do with his time in Spain?
+[ 27.83s][moshi] ⟨ret@27.59s⟩ You are ⟦⚡SPAN@28.87s: <Orwell fought in the Spanish Civil War with the POUM militia, witnessing pervasive surveillance and propagand⟧ quite right to focus on his experiences in Spain. Orwell observed intense surveillance and propaganda while fighting in the Spanish Civil War with the POUM militia.
+[ 32.67s][user ] «backchannel» Okay.
+[ 38.02s][user ] Surveillance, huh? Like, constant watching?
+[ 41.38s][moshi] Precisely, a sense of being constantly observed and monitored.
+[ 45.34s][user ] That sounds awful. Was it just the government doing it, or—
+[ 49.86s][moshi] «interrupted» It wasn’t solely governmental, it was a broader cultural—
+[ 54.03s][user ] Did that experience directly inspire the character…
+[ 58.18s][user ] …or was it more of a slow build?
+[ 60.38s][moshi] ⟨ret@60.31s⟩ That’s an excellent point, ⟦⚡SPAN@62.31s: <Orwell described the feeling of being watched by the Party as reminiscent of a father figure.>⟧ it wasn’t a one-to-one translation.
+[ 64.46s][moshi] Orwell likened the Party’s surveillance to the feeling of being watched by a paternal, or fatherly, figure.
+[ 70.42s][user ] A father figure… so, “Big Brother” isn’t about actual siblings?
+[ 75.45s][moshi] No, it’s a metaphorical use of that familial term.
+[ 78.88s][user ] That’s really interesting. So it's about control, not family?
+[ 83.11s][moshi] Ultimately, it’s about absolute control and the suppression of individuality.
+[ 85.83s][user ] «backchannel» Yeah, yeah.
+[ 88.16s][user ] It’s a pretty scary concept, even today.
+[ 91.17s][moshi] It remains a potent symbol, unfortunately, and still resonates strongly.
+[ 96.50s][user ] Do you think Orwell would be surprised by how relevant it still is?
+[100.94s][moshi] [sigh] As a botanist, I find it sad that concepts of control persist— but as a student of history, I suspect he wouldn’t be entirely surprised.

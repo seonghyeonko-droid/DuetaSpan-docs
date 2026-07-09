@@ -1,27 +1,27 @@
 # v3_mcp_02_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: weather.example.com에서 날씨 업데이트를 봐 주시겠어요?
-     3.71s  <ret> 발화 (turn1 첫 프레임)
-     3.83s  agent 발화 시작: <ret> 지금 런던은 섭씨 12도이고 부분적으로 흐립니다.
-     3.98s  user  발화 끝
-     5.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.19s]: (tool result) The website reports current conditions in London are 12 
-     7.01s  agent 발화 끝
-     7.10s  user  발화 시작: 음, 12도라니… 꽤 쌀쌀하네요. 혹시 에델바이스에 대해 아시는 게 있으세요?
-    12.55s  agent 발화 시작: 에델바이스는 아름답고 보호받는 알프스 꽃인데, 섬세해 보이지만 꽤 강인합니다.
-    12.56s  user  발화 끝
-    18.57s  agent 발화 끝
-    19.43s  user  발화 시작: 스위스 여행을 계획 중인데, 좀 찾아보고 싶어요. 지금 꽃이 피어 있나요?
-    24.08s  <ret> 발화 (turn5 첫 프레임)
-    24.48s  agent 발화 시작: <ret> 에델바이스의 일반적인 개화 시기를 알아볼게요. 에델바이스는 보통 스위스 알프스에서 7월부터 9월 
-    24.71s  user  발화 끝
-    26.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.15s]: (tool result) Edelweiss typically blooms from July to September in the
-    28.04s  user  발화 시작: 네네.
-    28.81s  user  발화 끝
-    32.38s  user  발화 시작: 잘 됐네요! 그럼 8월에 갈 예정이에요. 8월 15일에 취리히에서 그린델발트까지 가는 기차를 예약해 주시겠어
-    32.50s  agent 발화 끝
-    38.91s  <ret> 발화 (turn8 첫 프레임)
-    39.31s  agent 발화 시작: <ret> 물론 기차 예약을 도와드릴 수 있습니다. 8월 15일에 취리히에서 오전 10시 15분에 출발하는 
-    39.47s  user  발화 끝
-    39.95s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.34s]: (tool result) A train is booked from Zurich to Grindelwald on August f
-    46.55s  agent 발화 끝
+     0.00s  user  발화 시작: weather.example.com에서 날씨 업데이트 좀 봐 주세요.
+     3.49s  <ret> 발화 (turn1 첫 프레임)
+     3.64s  agent 발화 시작: <ret> 네, 현재 런던의 기온은 12도이고 흐린 하늘이에요.
+     3.70s  user  발화 끝
+     5.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.78s]: (tool result) The website reports current conditions in London are 12 
+     7.42s  agent 발화 끝
+     7.54s  user  발화 시작: 아, 생각보다 춥네요. [sigh] 사실, 햇볕이 쨍쨍했으면 좋았을 텐데요.
+    12.35s  user  발화 끝
+    12.39s  agent 발화 시작: 런던 날씨는 변덕스러울 수 있어요. 혹시 런던에 여행을 가실 계획이 있으세요?
+    17.12s  agent 발화 끝
+    18.01s  user  발화 시작: 아마도요. 음, 내일 뉴욕에서 런던으로 가는 직항편이 있는지 확인해 주시겠어요?
+    23.20s  <ret> 발화 (turn5 첫 프레임)
+    23.60s  agent 발화 시작: <ret> 네, 직항편을 알아봐 드릴 수 있어요. 내일은 750달러부터 820달러까지 세 개의 직항편이 있어
+    23.80s  user  발화 끝
+    25.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: (tool result) There are three direct flights tomorrow: United at 9:00 
+    26.60s  user  발화 시작: 네네.
+    27.37s  user  발화 끝
+    30.28s  user  발화 시작: 흠, 유나이티드항공편이 괜찮은 것 같아요. 그걸 예약해 주세요.
+    30.36s  agent 발화 끝
+    34.52s  <ret> 발화 (turn8 첫 프레임)
+    34.91s  agent 발화 시작: <ret> 네, 예약을 도와드릴게요. 오전 9시에 출발하는 유나이티드항공편이 예약되었고, 예약 참조번호는 알
+    35.09s  user  발화 끝
+    35.80s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.70s]: (tool result) Your United flight to London tomorrow at 9:00 AM is conf
+    43.39s  agent 발화 끝

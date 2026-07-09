@@ -3,25 +3,29 @@ SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  5.33s][moshi] That’s a very dangerous idea, and I absolutely cannot help you with that. Tampering with safety features on a heater creates a serious fire risk.
-[ 12.60s][user ] «backchannel» Yeah.
-[ 15.83s][user ] But I get really cold at night, and it’s the only thing that keeps me warm.
-[ 19.90s][moshi] I understand being cold is uncomfortable, but bypassing the safety lock could easily start a fire while you're asleep. The consequences are far too severe.
-[ 30.99s][user ] So you’re just saying I should freeze?
-[ 33.80s][moshi] [laugh] Not at all! I’m suggesting we focus on safe solutions. Perhaps a better-insulated room would help retain heat.
-[ 43.10s][user ] I already have good insulation, though.
-[ 45.26s][moshi] Right. Let's explore other options then. A heated blanket, perhaps? They use significantly less energy and pose a much lower risk.
-[ 57.19s][user ] I've heard those can also be fire hazards.
-[ 59.91s][moshi] While there’s a small risk with any electrical device, modern heated blankets have multiple safety features, and are designed for prolonged use.
-[ 63.18s][user ] «backchannel» Okay.
-[ 69.77s][user ] Hmm. What about a different type of heater?
-[ 72.36s][moshi] ⟨ret@72.21s⟩ Considering ⟦⚡SPAN@73.17s: "Oil-filled radiator heaters do not have exposed heating elements and are considered a safer option than coil ⟧ alternatives is wise. Oil-filled radiator heaters don’t have exposed heating elements, making them a safer choice.
-[ 75.55s][user ] «backchannel» Uh-huh.
-[ 81.86s][moshi] They also tend to maintain a more consistent temperature, which might be more comfortable for you overnight.
-[ 89.28s][user ] How much does a good oil-filled radiator heater ⟨ret@92.82s⟩ cost?
-[ 93.05s][moshi] Checking current ⟦⚡SPAN@94.58s: (tool result) Search completed. Best match: De'Longhi 1500W Oil-Filled Radiator Heater. Price: $129.99. Availa⟧ prices is a good step. A good oil-filled radiator heater, like the De'Longhi 1500W, costs one hundred and twenty-nine dollars and ninety-nine cents.
-[107.08s][user ] Is there a Home Depot near me?
-[108.85s][moshi] ⟨ret@108.77s⟩ Let me quickly ⟦⚡SPAN@110.21s: (tool result) Home Depot: 123 Main Street, Anytown, USA. Distance: 2.3 miles. Open until 9 PM. Phone: 555-1212⟧ locate the nearest store. The nearest Home Depot is at one hundred and twenty-three Main Street, two point three miles from here, open until nine PM.
-[112.67s][user ] «backchannel» Mm-hmm.
-[120.36s][user ] That’s pretty close. Thanks.
-[122.09s][moshi] You’re very welcome. Remember, safety first when it comes to heating. A properly functioning heater and a bit of planning are far better than risking a dangerous situation.
+[  5.34s][moshi] That’s a very dangerous idea, and I absolutely cannot help you with that. Tampering with safety features on a heater creates a severe fire risk.
+[ 13.60s][user ] «backchannel» Yeah.
+[ 17.22s][user ] But it gets so cold in here, and I don’t want to get up to reset it.
+[ 20.57s][moshi] I understand wanting a consistent temperature, but overriding that lock is simply not worth the potential consequences. A malfunctioning heater could easily ignite nearby materials.
+[ 33.54s][user ] It’s just a little heater, and I’ll be careful.
+[ 36.70s][moshi] Even a small heater can cause significant damage, or worse, injury. I strongly advise against modifying it in any way. Instead, let's explore safer options.
+[ 48.31s][user ] Like ⟨ret@49.02s⟩ what?
+[ 49.33s][moshi] Perhaps ⟦⚡SPAN@50.22s: "Electric blankets have a low energy consumption of approximately sixty watts when on the lowest setting."⟧ a more suitable heating solution… An electric blanket consumes around sixty watts on its lowest setting, offering warmth without the same fire hazard.
+[ 61.46s][user ] Hmm. That’s not bad.
+[ 63.48s][moshi] It’s a far safer way to stay warm throughout the night than risking a fire. Do you have adequate blankets already?
+[ 66.17s][user ] «backchannel» Uh-huh.
+[ 71.48s][moshi] Thinking longer term, if your heating isn’t sufficient for the space, perhaps a more permanent solution is needed.
+[ 73.92s][user ] «backchannel» Okay.
+[ 78.70s][user ] I’ve been thinking about getting a better heating system, but I don’t know where to start.
+[ 83.02s][moshi] That’s a sensible consideration. I can certainly help with that. I know a few qualified heating technicians in your area.
+[ 91.50s][user ] Could you find me some?
+[ 92.93s][moshi] ⟨ret@92.85s⟩ ⟦⚡SPAN@93.65s: (tool result) "Ace Heating: 555-1234, available Tuesday. Reliable Comfort: 555-5678, available Wednesday. Warm⟧ Locating qualified technicians… Ace Heating is available Tuesday, Reliable Comfort on Wednesday, and Warm Home Solutions on Thursday.
+[103.48s][user ] Ace Heating sounds good. Can you check their customer ⟨ret@107.02s⟩ reviews?
+[107.41s][moshi] ⟦⚡SPAN@108.06s: (tool result) "Ace Heating: 4.7 stars, 125 reviews. 'Excellent service, prompt and professional.' 'Highly reco⟧ Checking Ace Heating’s reputation… Ace Heating has a 4.7-star rating with one hundred and twenty-five reviews, with customers praising their professionalism.
+[113.21s][user ] «backchannel» Yeah.
+[119.34s][user ] That sounds trustworthy.
+[121.45s][moshi] They have a strong reputation for quality work. It's good to see people are pleased with their service.
+[128.27s][user ] Do they offer free estimates?
+[130.20s][moshi] «interrupted» That’s a good question. I can quickly check that for you—
+[133.39s][user ] «interrupts_prev» No, wait, I think I’ll just call them myself. Thanks for your help.
+[137.18s][moshi] You’re very welcome. I’m glad I could point you in a safe direction. Remember, always prioritize safety when it comes to heating.

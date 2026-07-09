@@ -2,46 +2,54 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
-     6.12s  user  발화 끝
-     6.53s  agent 발화 시작: That’s a lovely piece, isn’t it? It really captures a feelin
-    11.89s  user  발화 시작: It does. I was just wondering who penned it.
-    11.90s  agent 발화 끝
-    14.62s  <ret> 발화 (turn3 첫 프레임)
-    14.94s  agent 발화 시작: <ret> Let me quickly look that up for you… Björn Ulvaeus is 
-    15.13s  user  발화 끝
-    15.90s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.06s]: Björn Ulvaeus wrote “My Love, My Life”, a song featured in the musical
-    20.75s  user  발화 시작: Yeah, yeah.
-    21.89s  user  발화 끝
-    23.33s  user  발화 시작: Oh, that’s interesting! I didn’t realize it was just one per
-    23.75s  agent 발화 끝
-    28.06s  user  발화 끝
-    28.10s  agent 발화 시작: It’s common for successful songs to have a primary author, t
-    34.21s  agent 발화 끝
-    34.31s  user  발화 시작: Right. Was he in ABBA, by any chance?
-    38.63s  <ret> 발화 (turn8 첫 프레임)
-    38.77s  agent 발화 시작: <ret> That’s a very astute question, actually… Yes, Björn Ul
-    38.85s  user  발화 끝
-    39.91s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.70s]: Björn Ulvaeus was a member of the Swedish pop group ABBA, alongside Be
-    44.21s  user  발화 시작: Mm-hmm.
-    44.75s  user  발화 끝
-    46.73s  agent 발화 시작: They created some truly enduring music, don't you think?
-    46.88s  agent 발화 끝
-    49.19s  user  발화 시작: Yeah.
-    50.15s  user  발화 끝
-    50.45s  user  발화 시작: Absolutely! It’s amazing how many songs they wrote.
-    51.03s  agent 발화 끝
-    54.60s  <ret> 발화 (turn13 첫 프레임)
-    54.66s  user  발화 끝
-    54.92s  agent 발화 시작: <ret> It is, and their influence continues to be felt in pop
-    55.10s  ⚡SPAN 주입(IRRELEVANT) [d'=0.50s / d_lead=5.65s]: (tool result) Current time in Tokyo is 14:35 on November 16, 2023.
-    60.56s  agent 발화 끝
-    60.83s  user  발화 시작: I— I mean, do you know if he wrote any other songs for the m
-    65.00s  <ret> 발화 (turn15 첫 프레임)
-    65.36s  user  발화 끝
-    65.41s  agent 발화 시작: <ret> Let’s see what other contributions he made to the musi
-    66.92s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.92s]: Björn Ulvaeus and Benny Andersson co-wrote most of the songs for both 
-    74.81s  agent 발화 끝
-    75.06s  user  발화 시작: So it was mostly a two-person job, then?
-    78.30s  user  발화 끝
-    78.30s  agent 발화 시작: Essentially, yes, Ulvaeus and Andersson were the primary son
-    84.14s  agent 발화 끝
+     6.02s  user  발화 끝
+     6.45s  agent 발화 시작: That's a lovely question, and a wonderful piece of music.
+     9.88s  <ret> 발화 (turn2 첫 프레임)
+    10.19s  agent 발화 끝
+    10.20s  agent 발화 시작: <ret> Let me quickly check the songwriting credits for you. 
+    11.48s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.74s]: Björn Ulvaeus wrote “My Love, My Life”, which featured in the musical 
+    20.06s  user  발화 시작: Oh, really? I always thought it was Benny Andersson.
+    20.17s  agent 발화 끝
+    23.50s  agent 발화 시작: It’s a common mistake; they collaborated so closely.
+    23.66s  user  발화 끝
+    27.14s  <ret> 발화 (turn5 첫 프레임)
+    27.30s  agent 발화 시작: <ret> I can pull up a bit more detail on their partnership. 
+    27.35s  agent 발화 끝
+    28.74s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.42s]: Benny Andersson and Björn Ulvaeus formed a songwriting partnership tha
+    33.80s  user  발화 시작: Mm-hmm.
+    34.29s  user  발화 끝
+    36.84s  agent 발화 시작: Their compositions often feature complex harmonies and emoti
+    36.95s  agent 발화 끝
+    41.83s  <ret> 발화 (turn8 첫 프레임)
+    42.14s  agent 발화 시작: <ret> It’s interesting to consider the emotional undercurren
+    42.33s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.55s]: Ulvaeus has spoken of drawing inspiration from personal experiences wh
+    42.34s  agent 발화 끝
+    48.12s  user  발화 시작: Yeah, yeah.
+    49.36s  user  발화 끝
+    51.27s  agent 발화 끝
+    51.43s  user  발화 시작: That makes sense, I suppose. Did he write any other songs fo
+    56.35s  <ret> 발화 (turn11 첫 프레임)
+    56.74s  agent 발화 시작: <ret> He contributed significantly to the overall soundtrack
+    56.98s  user  발화 끝
+    58.27s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=4.07s]: (tool result) Current time in Tokyo is 19:34 on October 26th.
+    60.56s  <ret> 발화 (turn12 첫 프레임)
+    60.64s  agent 발화 시작: <ret> Let’s see which other tracks bear his name. He also co
+    60.82s  agent 발화 끝
+    62.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.65s]: Ulvaeus co-wrote “Dancing Queen”, another popular song featured in Mam
+    69.31s  agent 발화 끝
+    71.01s  user  발화 시작: Oh, “Dancing Queen”! That’s a classic!
+    74.00s  user  발화 시작: Was he involved in writing the story for Mamma Mia?
+    74.06s  user  발화 끝
+    77.74s  user  발화 끝
+    78.20s  agent 발화 시작: He wasn’t directly involved in the plot development, though.
+    81.81s  <ret> 발화 (turn16 첫 프레임)
+    82.11s  agent 발화 시작: <ret> The story itself has a rather fascinating origin. Cath
+    82.23s  agent 발화 끝
+    82.61s  ⚡SPAN 주입 [d'=0.80s / d_lead=3.71s]: The storyline for Mamma Mia! was created by Catherine Johnson, based o
+    88.19s  user  발화 시작: Yeah.
+    88.82s  user  발화 끝
+    92.30s  agent 발화 끝
+    92.59s  user  발화 시작: So it wasn’t based on a pre-existing play or novel?
+    96.61s  user  발화 끝
+    97.00s  agent 발화 시작: Precisely—it was crafted specifically around the existing so
+   102.09s  agent 발화 끝

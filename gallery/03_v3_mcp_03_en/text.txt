@@ -2,12 +2,14 @@ v3_mcp_03_en src=mcp style=v1
 SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start the checkout process in the shopping ⟨ret@2.80s⟩ cart iframe.
-[  3.20s][moshi] Alright, initiating ⟦⚡SPAN@4.24s: (tool result) The shopping cart iframe’s “Checkout” button was clicked successfully.⟧ the checkout sequence now… The checkout process has begun within the shopping cart.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_selector": "shopping_cart", "button_text": "Checkout"}}
-[ 10.91s][user ] What’s the total cost, including shipping?
-[ 13.73s][moshi] ⟨ret@13.65s⟩ Let me ⟦⚡SPAN@15.01s: (tool result) The checkout total is $78.50, including $8.50 for shipping.⟧ quickly retrieve that for you… Your total, with shipping included, comes to seventy-eight dollars and fifty cents.
-      CALL: {"function": "get_checkout_total", "arguments": {}}
-[ 22.07s][user ] Can you use the gift card with code ⟨ret@24.96s⟩ SUMMER20?
-[ 25.36s][moshi] Applying ⟦⚡SPAN@26.24s: (tool result) Gift card SUMMER20 was applied; the new total is $58.50.⟧ that discount right away… The gift card was successfully applied, bringing your new total to fifty-eight dollars and fifty cents.
-      CALL: {"function": "apply_gift_card", "arguments": {"gift_card_code": "SUMMER20"}}
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.88s⟩ iframe.
+[  3.26s][moshi] ⟦⚡SPAN@3.84s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ Alright, let’s get that shopping cart moving forward. Excellent, I’ve initiated the checkout process for you within the cart.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
+[ 12.35s][user ] What’s the total cost of the order?
+[ 14.53s][moshi] ⟨ret@14.45s⟩ Let me quickly pull up ⟦⚡SPAN@16.45s: (tool result) The order total is twenty-nine pounds and fifty pence.⟧ the order details for you. The total for your order comes to twenty-nine pounds and fifty pence.
+      CALL: {"function": "get_order_total", "arguments": {}}
+[ 22.18s][user ] Can you book a courier for tomorrow morning?
+[ 24.97s][moshi] ⟨ret@24.82s⟩ Certainly, arranging a ⟦⚡SPAN@26.82s: (tool result) A courier is booked for tomorrow at nine AM, tracking number is ABC123XYZ.⟧ courier is something I can do. A courier has been booked for tomorrow at nine AM; your tracking number is ABC123XYZ.
+      CALL: {"function": "book_courier", "arguments": {"date": "tomorrow", "time": "morning"}}
+[ 32.74s][user ] «backchannel» Exactly.
+[ 36.93s][user ] Great, thanks.

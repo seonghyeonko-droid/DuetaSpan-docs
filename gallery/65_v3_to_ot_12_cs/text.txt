@@ -1,16 +1,15 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사학자 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 실제로 연주한 사람이 누구인지 궁금했어요. 정말 상징적인 것 ⟨ret@7.26s⟩ 같아서요.
-[  7.66s][moshi] 네, ⟦⚡SPAN@8.54s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It.”⟧ 정말 많은 분들이 궁금해하시는 질문이에요. 그 유명한 기타 솔로는 에디 반 헤일런이 연주했답니다.
-[ 10.84s][user ] «backchannel» 예.
-[ 14.90s][user ] 와, 저는 항상 다른 사람이라고 생각했어요. 마이클 잭슨이 특별히 그에게 부탁했나요, 아니면 어떻게 그렇게 된 건가요?
-[ 22.61s][moshi] 사실 퀸시 존스의 꽤 의도적인 선택이었어요. 반 헤일런의 스타일이 곡에 독특한 무언가를 가져다줄 거라고 생각했대요.
-[ 25.09s][user ] «backchannel» 네.
-[ 30.45s][user ] 그렇군요. 거실을 다시 꾸미고 있는데… [다른 사람에게] …파란색이 너무 과한 것 같아요, 그렇지 않나요?
-[ 37.95s][user ] 죄송해요. 아, 맞다, 퀸시 존스와 에디 반 ⟨ret@41.44s⟩ 헤일런이었죠.
-[ 41.66s][moshi] 다시 그 ⟦⚡SPAN@42.88s: Quincy Jones initially hesitated to ask Van Halen, fearing he would decline.⟧ 음악적 협업으로 돌아가 볼까요. 존스는 처음에 반 헤일런이 곡에 참여하는 데 동의할지 확신하지 못했대요. 정말 잘 된 일이죠, 안 그래요?
-[ 47.30s][user ] «backchannel» 예.
-[ 51.94s][user ] 정말 그러네요! 에디 반 헤일런이 마이클 잭슨에게 솔로 연주 비용을 받았나요, 아니면 ⟨ret@58.71s⟩ 호의였나요?
-[ 58.91s][moshi] 그것은 합당한 질문이에요. ⟦⚡SPAN@60.55s: Van Halen did not ask for or receive a royalty or fee for his work on “Beat It.”⟧ 에디 반 헤일런은 기꺼이 자신의 재능을 기꺼이 보답 없이 기여했답니다.
+[  0.00s][user ] 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 아세요? 정말 멋진 ⟨ret@5.00s⟩ 솔로예요.
+[  5.40s][moshi] 네, ⟦⚡SPAN@6.68s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 정말 많은 분들이 궁금해하시는 질문이에요. 그 유명한 기타 솔로는 에디 반 헤일런이 연주하셨습니다.
+[  8.86s][user ] «backchannel» 예.
+[ 13.23s][user ] 와, 저는 항상 다른 사람이라고 생각했어요! 음… 그 솔로는 그의 평소 스타일과는 좀 다른 것 같아요.
+[ 20.40s][moshi] 네, 많은 분들이 반 헤일런의 독특한 사운드를 고려했을 때 그 협업에 놀라시는 것 같아요.
+[ 22.20s][user ] «backchannel» 네.
+[ 26.13s][user ] «to_other» 저기, 혹시 쓰레기 버리셨어요?
+[ 28.73s][user ] 죄송해요. 그가 솔로를 다르게 만들도록 특별히 요청을 받았다고 ⟨ret@33.14s⟩ 생각하세요?
+[ 33.37s][moshi] 상황을 고려했을 ⟦⚡SPAN@35.06s: Van Halen recorded his guitar solo separately and Jackson did not direct him on how to play it.⟧ 때, 충분히 궁금하실 만한 질문입니다. 반 헤일런은 솔로를 독립적으로 녹음했고, 잭슨은 그에게 특별한 지시를 내리지 않았습니다.
+[ 38.96s][user ] «backchannel» 예.
+[ 43.47s][user ] 정말 놀랍네요! 완전히 그의 예술적인 선택이었군요. [happy]

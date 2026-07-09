@@ -2,54 +2,50 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Hey, I was wondering, when is Demi Lovato’s new album coming
-     6.35s  <ret> 발화 (turn1 첫 프레임)
-     6.59s  agent 발화 시작: <ret> Oh, you’re asking about Demi Lovato’s latest release—t
-     6.63s  user  발화 끝
-     8.03s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.02s]: Demi Lovato’s album, “Confident”, was released in October 2015.
-    10.52s  agent 발화 시작: Her album, “Confident”, actually came out in October of twen
-    10.61s  agent 발화 끝
-    13.28s  user  발화 시작: Yeah.
-    13.78s  user  발화 끝
-    14.35s  agent 발화 끝
-    14.74s  user  발화 시작: Twenty fifteen? Wow, that feels like ages ago! Is she workin
-    20.76s  agent 발화 시작: It does seem like a while, doesn’t it? Musicians are always 
-    20.89s  user  발화 끝
-    24.00s  agent 발화 끝
-    26.01s  user  발화 시작: I’m just really eager to hear something new. Are there any d
-    32.13s  user  발화 끝
-    32.23s  <ret> 발화 (turn7 첫 프레임)
-    32.31s  agent 발화 시작: <ret> Let me check for current information regarding Demi Lo
-    33.91s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.27s]: (tool result) AAPL: 170.34 USD +0.45 (0.26%)
-    36.76s  user  발화 시작: Yeah.
-    37.26s  user  발화 끝
-    39.92s  user  발화 시작: That’s a shame. I guess I’ll just have to keep an eye out fo
-    40.05s  agent 발화 끝
-    43.92s  agent 발화 시작: It's always best to stay tuned to official channels, you'll 
-    43.95s  user  발화 끝
-    45.47s  user  발화 시작: Yeah.
-    46.11s  user  발화 끝
-    47.57s  user  발화 시작: What about her older stuff, though? Any recommendations?
-    47.71s  agent 발화 끝
-    50.70s  <ret> 발화 (turn13 첫 프레임)
-    50.94s  agent 발화 시작: <ret> Oh, excellent question!
-    51.03s  user  발화 끝
-    52.06s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.75s]: Demi Lovato’s debut album, “Don’t Forget”, was released in September 2
-    52.64s  agent 발화 시작: If you enjoy her earlier work, “Don’t Forget” came out in Se
-    52.69s  agent 발화 끝
-    54.26s  user  발화 시작: Okay.
-    54.98s  user  발화 끝
-    57.45s  agent 발화 끝
-    58.80s  user  발화 시작: Oh, I remember that one! I haven’t listened to it in ages.
-    62.51s  user  발화 끝
-    62.70s  agent 발화 시작: It's fun revisiting old favorites sometimes—it's like starga
-    67.98s  agent 발화 끝
-    68.97s  user  발화 시작: You're an astronomer, right? Do you ever look for patterns i
-    74.16s  user  발화 끝
-    74.59s  agent 발화 시작: [laugh] That's a clever thought! I do sometimes see parallel
-    78.39s  user  발화 시작: Yeah.
-    79.02s  user  발화 끝
-    80.93s  user  발화 시작: That’s really interesting. So, back to the albums, anything 
-    81.31s  agent 발화 끝
-    85.82s  agent 발화 시작: Before “Don’t Forget”, Demi Lovato was primarily known for h
-    85.93s  user  발화 끝
-    91.94s  agent 발화 끝
+     7.18s  user  발화 끝
+     7.20s  agent 발화 시작: Oh, you’re asking about Demi Lovato’s release schedule. It’s
+    13.06s  <ret> 발화 (turn2 첫 프레임)
+    13.30s  agent 발화 시작: <ret> Let me quickly check the details for you… Her album, *
+    13.31s  agent 발화 끝
+    14.74s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.87s]: Demi Lovato’s album, *Confident*, was released in October 2015.
+    18.09s  user  발화 시작: Exactly.
+    18.91s  user  발화 끝
+    20.48s  agent 발화 끝
+    20.61s  user  발화 시작: October, huh? That’s pretty soon. I completely missed that!
+    24.63s  agent 발화 시작: It does seem to sneak up on you sometimes, doesn’t it? Album
+    24.82s  user  발화 끝
+    27.85s  user  발화 시작: Yeah.
+    28.39s  user  발화 끝
+    30.32s  agent 발화 끝
+    32.44s  user  발화 시작: Are there any singles released before the album?
+    35.13s  <ret> 발화 (turn8 첫 프레임)
+    35.21s  agent 발화 시작: <ret> I can certainly look into what singles preceded the al
+    35.36s  user  발화 끝
+    36.81s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.22s]: The lead single, “Cool for the Summer”, was released on July 1, 2015.
+    38.31s  user  발화 시작: Yeah.
+    38.94s  user  발화 끝
+    42.62s  agent 발화 끝
+    42.99s  user  발화 시작: Oh, yeah! I remember that song! It was all over the radio.
+    46.76s  <ret> 발화 (turn11 첫 프레임)
+    46.91s  agent 발화 시작: <ret> [laugh] It really was quite catchy, wasn’t it? A very 
+    47.01s  user  발화 끝
+    48.17s  user  발화 시작: Okay.
+    48.76s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=3.93s]: (tool result) AAPL: 170.34, +0.25, 0.15%
+    48.81s  user  발화 끝
+    50.84s  agent 발화 끝
+    51.49s  user  발화 시작: I think so. I'm a big fan. What kind of music is it?
+    55.14s  agent 발화 시작: *Confident* is generally considered pop, but it has elements
+    55.24s  user  발화 끝
+    61.03s  agent 발화 끝
+    61.22s  user  발화 시작: Interesting. Is it a big departure from her previous work?
+    64.27s  <ret> 발화 (turn16 첫 프레임)
+    64.66s  agent 발화 시작: <ret> That’s a good question, comparing it to her earlier al
+    64.87s  user  발화 끝
+    65.23s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.31s]: *Confident* is seen as a more mature and experimental album than Lovat
+    69.00s  user  발화 시작: Yeah.
+    69.50s  user  발화 끝
+    71.83s  user  발화 시작: Oh, okay. That makes sense. Thanks for the info!
+    72.27s  agent 발화 끝
+    76.09s  user  발화 끝
+    76.51s  agent 발화 시작: You’re very welcome! I’m glad I could help you with the albu
+    81.65s  agent 발화 끝

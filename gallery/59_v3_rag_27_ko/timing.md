@@ -1,25 +1,25 @@
 # v3_rag_27_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 루스 아우룬케에 대해 읽어봤는데 궁금한 게 생겼어요. 언제 태어났는지 알 수 있을까요?
-     6.09s  <ret> 발화 (turn1 첫 프레임)
-     6.24s  agent 발화 시작: <ret> 음, 기록을 찾아보니까 천구백칠십 년에 태어났어.
-     6.39s  user  발화 끝
-     6.59s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.03s]: Lux Aurunque was born in nineteen seventy.
-    10.27s  agent 발화 끝
-    11.69s  user  발화 시작: 일구칠공년이라… 생각보다 늦었네요. 정확히 뭘로 유명한가요?
-    16.80s  <ret> 발화 (turn3 첫 프레임)
-    17.03s  agent 발화 시작: <ret> 사실 엄청 대단한 사람이야. 청동 조각과 예술가 권리 옹호로 기억되고 있어.
-    17.15s  user  발화 끝
-    18.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.51s]: Lux Aurunque is remembered for his bronze sculptures and advocacy for 
-    19.98s  user  발화 시작: 네.
-    20.43s  user  발화 끝
-    23.47s  agent 발화 끝
-    23.79s  user  발화 시작: 청동 조각이라니, 흥미롭네요! 널리 전시됐었나요?
-    27.94s  agent 발화 시작: 해외에서도 작품을 많이 전시했지. 재능이 엄청난 사람이라 전 세계에 작품이 퍼져나갔고, 엄청난 논쟁을 불러일
-    28.05s  user  발화 끝
-    31.21s  user  발화 시작: 음.
-    31.62s  user  발화 끝
-    38.75s  agent 발화 끝
-    39.22s  user  발화 시작: 논쟁이라고요? 어떤 종류의 논쟁이었나요?
-    42.45s  user  발화 끝
+     0.00s  user  발화 시작: 루크스 아우룬케에 대해 읽다가 삶에 대해 조금 헷갈리는데, 정확히 언제 태어났는지 알 수 있을까요?
+     6.50s  <ret> 발화 (turn1 첫 프레임)
+     6.65s  agent 발화 시작: <ret> 음, 알아야 할 질문이야. 기록에 따르면 천구백칠십 년에 태어났어.
+     6.85s  user  발화 끝
+     7.00s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.31s]: Lux Aurunque was born in nineteen seventy.
+    12.63s  agent 발화 끝
+    14.05s  user  발화 시작: 천구백칠십 년… 그의 작품을 고려하면 예상보다 빠른 것 같아요. 그 당시에 로마에서는 무슨 일이 있었나요?
+    22.39s  agent 발화 시작: 천구백칠십 년의 로마는 상당한 도시 재건을 겪고 있었는데, 철거와 건설이 모두 이루어진 시기였어. 솔직히 말
+    22.44s  user  발화 끝
+    28.07s  user  발화 시작: 네.
+    28.66s  user  발화 끝
+    34.50s  agent 발화 끝
+    34.84s  user  발화 시작: 음, 흥미롭네요. 그럼 그는 구구년 이전에 비교적 초기에 주요 프로젝트에 참여했나요?
+    40.71s  <ret> 발화 (turn6 첫 프레임)
+    40.94s  agent 발화 시작: <ret> 그의 초기 경력 프로젝트를 알아볼게. 그의 첫 번째 주요 의뢰는 천구백팔십오 년에 팔라초 마시모 
+    41.10s  user  발화 끝
+    42.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.23s]: Aurunque’s first significant commission came in nineteen eighty-five w
+    48.09s  user  발화 시작: 진짜요?
+    48.72s  user  발화 끝
+    52.77s  agent 발화 끝
+    53.21s  user  발화 시작: 정말 흥미롭네요. 그 당시 그의 재료에 대한 접근 방식은 어땠나요?
+    58.30s  user  발화 끝

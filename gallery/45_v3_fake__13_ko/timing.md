@@ -1,55 +1,51 @@
 # v3_fake__13_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 야, 데미 로바토 새 앨범 언제 나와 궁금해. 올해 나온다는 얘기 얼핏 들었는데.
-     4.67s  <ret> 발화 (turn1 첫 프레임)
-     4.98s  agent 발화 시작: <ret> 오, 데미 로바토 신보에 관심 있구나—기대되겠다!
-     5.18s  user  발화 끝
-     6.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.60s]: Demi Lovato’s album, “Confident”, was released in October 2015.
-     8.40s  agent 발화 시작: 걔 앨범 “Confident”는 사실 이천십오년 십월에 나왔어.
-     8.58s  agent 발화 끝
-    11.12s  user  발화 시작: 응.
-    11.56s  user  발화 끝
-    12.33s  agent 발화 끝
-    13.23s  user  발화 시작: 이천십오년? 와, 엄청 오래됐네! 지금 다른 앨범도 만들고 있어?
-    18.37s  user  발화 끝
-    18.41s  agent 발화 시작: 시간이 좀 흘렀네, 그렇지? 뮤지션들은 계속 창작 활동하잖아.
-    22.25s  agent 발화 끝
-    22.79s  user  발화 시작: 진짜 새 앨범 듣고 싶어. 혹시 앨범 발매에 대한 정보 같은 거 있어?
-    26.99s  <ret> 발화 (turn7 첫 프레임)
-    27.38s  agent 발화 시작: <ret> 데미 로바토 음악 계획에 대한 최신 정보를 찾아볼게. 지금 업데이트를 확인 중인데, 새 앨범 발매
-    27.61s  user  발화 끝
-    28.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.92s]: (tool result) AAPL: 170.34 USD +0.45 (0.26%)
-    32.60s  user  발화 시작: 어.
-    33.24s  user  발화 끝
-    36.33s  agent 발화 끝
-    36.51s  user  발화 시작: 아쉽다. 발표가 있을 때까지 계속 기다려야겠네.
-    39.73s  agent 발화 시작: 공식 채널을 주시하는 게 제일 좋아, 제일 먼저 알게 될 거야.
-    39.89s  user  발화 끝
-    41.31s  user  발화 시작: 음.
-    41.66s  user  발화 끝
-    43.50s  user  발화 시작: 그럼 걔 옛날 앨범은 어때? 추천해 줄 만한 거 있어?
-    43.62s  agent 발화 끝
-    47.09s  <ret> 발화 (turn13 첫 프레임)
-    47.20s  user  발화 끝
-    47.41s  agent 발화 시작: <ret> 오, 좋은 질문이다!
-    48.21s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.62s]: Demi Lovato’s debut album, “Don’t Forget”, was released in September 2
-    48.88s  agent 발화 시작: 예전 앨범 좋아하면 “Don’t Forget”는 이천팔년 구월에 나왔어.
-    49.03s  agent 발화 끝
-    50.21s  user  발화 시작: 어.
-    50.71s  user  발화 끝
-    52.83s  user  발화 시작: 아, 그거 기억난다! 엄청 오래됐네.
-    53.04s  agent 발화 끝
-    55.55s  user  발화 끝
-    55.88s  agent 발화 시작: 가끔 옛날 좋아하는 곡 다시 듣는 것도 재밌잖아—마치 익숙한 별자리 바라보는 것 같지.
-    61.55s  user  발화 시작: 너 천문학자잖아, 그렇지? 별처럼 음악에서도 패턴을 찾니?
-    61.76s  agent 발화 끝
-    66.55s  user  발화 끝
-    66.78s  agent 발화 시작: [laugh] 재밌는 생각인데! 가끔 평행선을 보기도 해—반복, 주제, 그리고 변화.
-    70.35s  user  발화 시작: 어어.
-    71.17s  user  발화 끝
-    73.12s  agent 발화 끝
-    75.06s  user  발화 시작: 정말 흥미롭다. 그럼, “Don’t Forget” 전에 앨범은 뭐였어?
-    79.32s  user  발화 끝
-    79.42s  agent 발화 시작: “Don’t Forget” 전에 데미 로바토는 디즈니 채널의 “Sonny with a Chance”에서 주로
-    84.79s  agent 발화 끝
+     0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와? 올해 나온다던데… 2015년?
+     4.80s  agent 발화 시작: 어, 데미 로바토 앨범 발매 일정 물어보는 거구나. 좋아하는 가수가 새 음악 내면 기분 좋지.
+     5.00s  user  발화 끝
+    10.96s  <ret> 발화 (turn2 첫 프레임)
+    11.19s  agent 발화 시작: <ret> 잠깐만 알아볼게… 걔 앨범 *Confident*는 네가 예상한 대로 이천십오 년 10월에 나왔어.
+    11.38s  agent 발화 끝
+    12.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.20s]: Demi Lovato’s album, *Confident*, was released in October 2015.
+    15.42s  user  발화 시작: 와.
+    16.05s  user  발화 끝
+    17.49s  agent 발화 끝
+    18.27s  user  발화 시작: 10월이라고? 완전 금방이네. 완전 놓쳤어!
+    21.50s  user  발화 끝
+    21.56s  agent 발화 시작: 그러게, 가끔 시간 가는 줄 모르지. 앨범 발매일은 기억하기가 쉽지 않아.
+    24.40s  user  발화 시작: 어.
+    24.89s  user  발화 끝
+    26.61s  agent 발화 끝
+    28.01s  user  발화 시작: 앨범 나오기 전에 싱글은 뭐 나왔어?
+    30.17s  <ret> 발화 (turn8 첫 프레임)
+    30.57s  agent 발화 시작: <ret> 앨범 전에 나온 싱글 찾아볼까? “Cool for the Summer”가 이천십오 년 7월 1일에
+    30.78s  user  발화 끝
+    32.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.47s]: The lead single, “Cool for the Summer”, was released on July 1, 2015.
+    32.91s  user  발화 시작: 음.
+    33.54s  user  발화 끝
+    36.04s  user  발화 시작: 아, 맞아! 그 노래 기억나! 라디오에서 엄청 많이 나왔었어.
+    36.13s  agent 발화 끝
+    39.71s  <ret> 발화 (turn11 첫 프레임)
+    39.78s  agent 발화 시작: <ret> [laugh] 진짜 중독성 있었지, 안 그래? 엄청 기억에 남는 곡이야.
+    39.83s  user  발화 끝
+    41.56s  user  발화 시작: 어.
+    41.71s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.33s]: (tool result) AAPL: 170.34, +0.25, 0.15%
+    41.95s  user  발화 끝
+    45.11s  agent 발화 끝
+    45.90s  user  발화 시작: 음, 좋아. 어떤 스타일의 음악이야?
+    48.29s  user  발화 끝
+    48.35s  agent 발화 시작: *Confident*는 보통 팝이라고 하는데, R&B랑 일렉트로닉 댄스 뮤직 요소도 좀 있어.
+    55.20s  agent 발화 끝
+    55.68s  user  발화 시작: 흥미롭네. 이전 앨범이랑 많이 달라?
+    58.00s  <ret> 발화 (turn16 첫 프레임)
+    58.21s  user  발화 끝
+    58.23s  agent 발화 시작: <ret> 좋은 질문인데, 예전 앨범이랑 비교해 보면… 좀 더 성숙하고 실험적인 앨범이라고 해, 예전 앨범과
+    60.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.15s]: *Confident* is seen as a more mature and experimental album than Lovat
+    63.27s  user  발화 시작: 어어.
+    63.91s  user  발화 끝
+    66.98s  agent 발화 끝
+    67.06s  user  발화 시작: 아, 그렇구나. 정보 고마워!
+    69.13s  agent 발화 시작: 천만에! 앨범 정보 찾는 거 도와줘서 기뻐. 내가 아는 거 공유하는 거 좋아해.
+    69.17s  user  발화 끝
+    74.40s  agent 발화 끝

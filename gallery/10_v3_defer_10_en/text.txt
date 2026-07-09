@@ -3,16 +3,16 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  5.05s][moshi] ⟨ret@4.98s⟩ Certainly, I can ⟦⚡SPAN@6.98s: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Provence_Lavender_Fields.jpg", and "Nice_Beac⟧ locate those images for you. I’ve found three pictures from your France trip last year, excluding thumbnails.
-      CALL: {"function": "search_files", "arguments": {"keywords": ["France", "holiday"], "year": 2023, "exclude": ["thumbnail"]}}
-[ 10.19s][user ] «backchannel» Yeah.
-[ 14.51s][user ] Oh, that’s great! Could you send “Paris_Eiffel_Tower.jpg” to my sister, Eleanor? Her email is eleanor.vance@email.com.
-[ 22.52s][moshi] ⟨ret@22.36s⟩ I ⟦⚡SPAN@23.32s: (tool result) Email sent successfully to eleanor.vance@email.com with attachment "Paris_Eiffel_Tower.jpg".⟧ can definitely handle that email for you. The email with the Eiffel Tower photo has been sent to Eleanor.
-      CALL: {"function": "send_email", "arguments": {"recipient": "eleanor.vance@email.com", "attachment": "Paris_Eiffel_Tower.jpg", "subject": "From France", "body": "Thought you'd enjoy this!"}}
-[ 25.61s][user ] «backchannel» Yeah.
-[ 31.18s][user ] Perfect, thanks! Uh, do you know if it’s likely to rain in Nice tomorrow?
-[ 35.94s][moshi] Let me check on that weather forecast for you.
-[ 37.28s][user ] «backchannel» Right.
-[ 38.49s][user ] Right.
-  ⟦⚡지연 SPAN 도착@38.19s: (tool result) The weather in Nice tomorrow will be partly cloudy with a high of twenty-two degrees Celsius and⟧
-[ 39.14s][moshi] «deferred_result» ⟨ret@39.14s⟩ I have the forecast information now. Tomorrow in Nice will be partly cloudy, with a high of twenty-two degrees and a low chance of rain.
+[  4.91s][moshi] ⟨ret@4.84s⟩ Certainly, I ⟦⚡SPAN@6.28s: (tool result) Four files were found: "Paris_Eiffel_Tower.jpg", "Nice_Beach.png", "Loire_Valley_Chateau.jpeg", ⟧ can locate those images for you. I found four pictures from your France trip in twenty twenty-three, excluding thumbnails.
+      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": "2023", "exclude": "thumbnails"}}
+[  9.79s][user ] «backchannel» Yeah.
+[ 13.91s][user ] Oh, excellent! Can you send “Paris_Eiffel_Tower.jpg” to my sister, her email is ⟨ret@21.56s⟩ elise.dupont@example.com?
+[ 21.88s][moshi] Of ⟦⚡SPAN@22.52s: (tool result) Email sent to elise.dupont@example.com with subject "Paris Photo" and attachment "Paris_Eiffel_T⟧ course, I can send that image right away. The email with the Eiffel Tower photo has been sent to Elise Dupont.
+      CALL: {"function": "send_email", "arguments": {"recipient": "elise.dupont@example.com", "subject": "Paris Photo", "body": "Here's a picture from my trip!", "attachment": "Paris_Eiffel_Tower.jpg"}}
+[ 25.22s][user ] «backchannel» Yeah.
+[ 31.10s][user ] Great, thanks. What's the weather like in Nice right now?
+[ 35.19s][moshi] Let me check on that for you.
+[ 36.02s][user ] «backchannel» Right.
+[ 36.80s][user ] Okay, thanks.
+  ⟦⚡지연 SPAN 도착@36.91s: (tool result) The current weather in Nice, France is twenty-two degrees Celsius, partly cloudy, with a wind sp⟧
+[ 37.85s][moshi] «deferred_result» ⟨ret@37.85s⟩ Right, I have that weather information now for you. It’s twenty-two degrees Celsius and partly cloudy in Nice, with a fifteen kilometer per hour wind.
