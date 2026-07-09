@@ -1,26 +1,28 @@
 # v3_rag_27_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 I was reading about Lux Aurunque,  | S2 Nineteen seventy… that’s earlier t | S3 Hmm, interesting. So, was he invol | S4 That’s fascinating. And what was h
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to find out a little ab | S2 Nineteen seventy… that’s quite rec | S3 But was *he* a politician— | S4 A sculptor… interesting. What kind
 
-     0.00s  user  발화 시작: I was reading about Lux Aurunque, and I’m a bit confused abo
-     6.09s  <ret> 발화 (turn1 첫 프레임)
-     6.32s  agent 발화 시작: <ret> That’s a good question, understanding timelines is key
-     6.49s  user  발화 끝
-     8.01s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.05s]: Lux Aurunque was born in nineteen seventy.
-    12.80s  agent 발화 끝
-    12.88s  user  발화 시작: Nineteen seventy… that’s earlier than I expected, given his 
-    19.51s  user  발화 끝
-    19.55s  agent 발화 시작: Rome in nineteen seventy was undergoing significant urban re
-    24.65s  user  발화 시작: Uh-huh.
-    25.43s  user  발화 끝
-    30.45s  agent 발화 끝
-    31.96s  user  발화 시작: Hmm, interesting. So, was he involved in any major projects 
-    40.20s  <ret> 발화 (turn6 첫 프레임)
-    40.27s  agent 발화 시작: <ret> Let me check on his early career projects for you. His
-    40.39s  user  발화 끝
-    42.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: Aurunque’s first significant commission came in nineteen eighty-five w
-    47.09s  user  발화 시작: Oh.
-    47.81s  user  발화 끝
-    51.54s  agent 발화 끝
-    51.65s  user  발화 시작: That’s fascinating. And what was his approach to materials a
-    56.23s  user  발화 끝
+     0.00s  user  발화 시작: I’m trying to find out a little about Lux Aurunque. Can you 
+     4.50s  <ret> 발화 (turn1 첫 프레임)
+     4.74s  agent 발화 시작: <ret> That's a good place to start— He was born in nineteen 
+     4.86s  user  발화 끝
+     5.70s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.31s]: Lux Aurunque was born in nineteen seventy.
+     8.08s  user  발화 시작: Yeah, yeah.
+     9.23s  user  발화 끝
+    10.88s  user  발화 시작: Nineteen seventy… that’s quite recent, isn’t it? Was he invo
+    10.89s  agent 발화 끝
+    16.28s  agent 발화 시작: It is relatively recent, yes. Many artists find their work t
+    16.53s  user  발화 끝
+    20.71s  user  발화 시작: Uh-huh.
+    21.15s  user  발화 끝
+    23.83s  agent 발화 끝
+    23.86s  user  발화 시작: But was *he* a politician—
+    25.65s  <ret> 발화 (turn7 첫 프레임)
+    25.73s  agent 발화 시작: <ret> Actually, that’s a very insightful— He was a prominent
+    25.83s  user  발화 끝
+    26.29s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.88s]: Lux Aurunque was a prominent bronze sculptor, not a politician.
+    28.89s  user  발화 시작: Yeah, totally.
+    30.04s  user  발화 끝
+    31.75s  agent 발화 끝
+    31.77s  user  발화 시작: A sculptor… interesting. What kind of sculptures did he crea
+    36.35s  user  발화 끝

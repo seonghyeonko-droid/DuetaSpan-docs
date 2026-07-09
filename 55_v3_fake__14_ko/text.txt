@@ -1,0 +1,28 @@
+v3_fake__14_ko src=nq style=v1
+SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 사려 깊고 부드러운 말투의 조력자 Kliana입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  엄마 미아를 듣고 있었는데 궁금한 게 생겼어요. “My Love, My Life”는 누가 썼나요?
+      아, 흥미롭네요. 엄마 미아를 위해 특별히 쓰인 곡이 아니었다니 몰랐어요.
+  S2  네, 그 말이 맞아요. 그분이 쓰신 다른 노래는 뭐가 있나요?
+      아, 아바였군요! 이제야 알겠어요.
+  S3  체스 말고 다른 뮤지컬도 쓰셨나요?
+      멋지네요. 한번 찾아봐야겠어요. 뭔가… 색다른 느낌이 드네요.
+  S4  네, 그렇게 생각해요. 클리아나 씨, 정말 도움이 많이 됐어요.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 엄마 미아를 듣고 있었는데 궁금한 게 생겼어요. “My Love, My Life”는 누가 썼나요? ⟨ret@6.08s⟩
+[  6.23s][moshi] 좋은 노래네요. 질문해 ⟦⚡SPAN@8.08s: Björn Ulvaeus wrote “My Love, My Life” for the musical *Chess*.⟧ 주셔서 감사합니다. “My Love, My Life”는 원래 뮤지컬 *Chess*를 위해 비외른 울바에우스가 작곡한 곡입니다.
+[ 14.81s][user ] 아, 흥미롭네요. 엄마 미아를 위해 특별히 쓰인 곡이 아니었다니 몰랐어요.
+[ 20.62s][moshi] 곡이 완벽한 무대를 찾기 전에 여러 가지 모습을 거치는 경우가 많잖아요.
+[ 25.32s][user ] 네, 그 말이 맞아요. 그분이 쓰신 다른 노래는 뭐가 있나요?
+[ 28.97s][moshi] ⟨ret@28.89s⟩ 그분은 ⟦⚡SPAN@30.33s: Björn Ulvaeus, alongside Benny Andersson, wrote many songs for ABBA.⟧ 정말 다작의 작곡가이세요. 비외른 울바에우스는 베니 앤더슨과 함께 아바(ABBA) 노래 대부분을 썼습니다.
+[ 36.83s][user ] 아, 아바였군요! 이제야 알겠어요.
+[ 39.93s][user ] 체스 말고 다른 뮤지컬도 ⟨ret@42.07s⟩ 쓰셨나요?
+[ 42.38s][moshi] ⟦⚡SPAN IRRELEVANT@43.03s: (tool result) AAPL closed at 170.34, down 0.88 points.⟧ 다른 연극 프로젝트도 진행하셨어요. 비외른 울바에우스는 스웨덴 뮤지컬 *Kristina from Duvemåla*를 공동 창작했습니다.
+[ 50.72s][user ] 멋지네요. 한번 찾아봐야겠어요. 뭔가… 색다른 느낌이 드네요.
+[ 56.08s][moshi] ⟨ret@55.93s⟩ 정말 감동적인 이야기예요. ⟦⚡SPAN@57.93s: Björn Ulvaeus co-created the musical *Kristina from Duvemåla*.⟧ 새로운 것에 마음을 열고 계신다면 분명히 즐기실 수 있을 거예요.
+[ 58.54s][user ] «backchannel» 네.
+[ 63.26s][user ] 네, 그렇게 생각해요. 클리아나 씨, 정말 도움이 많이 됐어요.
+[ 67.25s][moshi] 도와드릴 수 있어서 기쁩니다. 음악 뒤에 숨겨진 이야기를 찾는 것은 즐거움을 더해줄 수 있답니다.

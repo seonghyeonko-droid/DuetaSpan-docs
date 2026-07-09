@@ -1,84 +1,58 @@
 # v3_abs_21_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Could you explain the powers of th | S3 Do they get to vote on everything? | S4 And if *they* can’t agree?
+# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 That’s good to know. Um, so if eac | S3 Wow, that's… pretty old. I— I mean | S4 So they could theoretically serve 
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.58s  user  발화 끝
-     2.68s  <ret> 발화 (turn1 첫 프레임)
-     2.73s  agent 발화 시작: <ret> That’s an interesting question about French governance
-     3.72s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.22s]: (no information found)
-    10.66s  agent 발화 끝
-    10.68s  user  발화 시작: Could you find out for me, then?
-    12.41s  <ret> 발화 (turn3 첫 프레임)
-    12.43s  user  발화 끝
-    12.64s  agent 발화 시작: <ret> Let me share what I just discovered. The French Senate
-    13.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.46s]: The French Senate has 348 senators, each elected by an electoral colle
-    21.07s  agent 발화 끝
-    21.35s  user  발화 시작: Wow, that’s a lot. What about the US Senate?
-    24.05s  agent 발화 시작: The United States Senate has one hundred members.
-    24.07s  user  발화 끝
-    25.50s  user  발화 시작: Mhm.
-    26.00s  user  발화 끝
-    27.25s  agent 발화 끝
-    27.66s  user  발화 시작: That's a big difference! Is the French Senate more powerful?
-    31.05s  agent 발화 시작: That’s a complex question with a nuanced answer, really.
-    31.22s  user  발화 끝
-    33.12s  user  발화 시작: Okay.
-    33.52s  user  발화 끝
-    34.57s  agent 발화 끝
-    35.79s  user  발화 시작: Could you explain the powers of the French Senate?
-    38.06s  <ret> 발화 (turn11 첫 프레임)
-    38.46s  agent 발화 시작: <ret> Let's delve into their legislative role. The French Se
-    38.70s  user  발화 끝
-    39.42s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.47s]: The French Senate shares legislative power with the National Assembly,
-    48.75s  agent 발화 끝
-    49.72s  user  발화 시작: So, they can change laws?
-    51.62s  agent 발화 시작: Absolutely, they have the power to amend proposed legislatio
-    51.70s  user  발화 끝
-    52.94s  user  발화 시작: Yeah, yeah.
-    54.27s  user  발화 끝
-    55.77s  agent 발화 끝
-    56.56s  user  발화 시작: Do they have any other responsibilities besides laws?
-    59.24s  <ret> 발화 (turn16 첫 프레임)
-    59.55s  agent 발화 시작: <ret> Beyond lawmaking, they have other duties. They represe
-    59.71s  user  발화 끝
-    60.20s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.90s]: The French Senate also represents local authorities and ratifies inter
-    69.69s  agent 발화 끝
-    69.82s  user  발화 시작: Representing local authorities sounds interesting.
-    72.87s  user  발화 끝
-    72.89s  agent 발화 시작: It’s a key part of their structure, ensuring regional voices
-    77.33s  agent 발화 끝
-    77.82s  user  발화 시작: Do they get to vote on everything?
-    79.64s  user  발화 시작: Do they vote on everything the National Assembly does?
-    79.76s  user  발화 끝
-    82.50s  user  발화 끝
-    82.51s  agent 발화 시작: That’s a good point to clarify. They don't vote on *everythi
-    88.60s  user  발화 시작: Okay.
-    89.93s  user  발화 끝
-    91.47s  agent 발화 끝
-    91.48s  user  발화 시작: Shuttle diplomacy? What’s that?
-    93.68s  agent 발화 시작: It means the two assemblies—Senate and National Assembly—neg
-    93.87s  user  발화 끝
-    96.96s  user  발화 시작: Yeah.
-    97.41s  user  발화 끝
-    99.00s  agent 발화 시작: It's a back-and-forth process to reach a consensus on laws.
-    99.09s  agent 발화 끝
-   101.47s  user  발화 시작: Right.
-   101.97s  user  발화 끝
-   102.84s  agent 발화 끝
-   103.15s  user  발화 시작: So, if they disagree, what happens?
-   105.40s  agent 발화 시작: A joint commission attempts to reconcile the differences, ul
-   105.44s  user  발화 끝
-   109.61s  agent 발화 끝
-   110.01s  user  발화 시작: And if *they* can’t agree?
-   111.46s  agent 발화 시작: The National Assembly generally has the final say, though.
-   111.62s  user  발화 끝
-   115.26s  user  발화 시작: Oh. So the National Assembly is more powerful?
-   115.30s  agent 발화 끝
-   118.43s  agent 발화 시작: In cases of disagreement, yes, the National Assembly holds g
-   118.50s  user  발화 끝
-   123.31s  user  발화 시작: That seems a bit unfair.
-   123.42s  agent 발화 끝
-   124.94s  agent 발화 시작: It reflects the historical development of the French constit
-   125.06s  user  발화 끝
-   128.50s  agent 발화 끝
+     2.62s  <ret> 발화 (turn1 첫 프레임)
+     2.69s  agent 발화 시작: <ret> That’s a good question, understanding other systems of
+     2.77s  user  발화 끝
+     3.91s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.02s]: (no information found)
+     5.79s  user  발화 시작: Mhm.
+     6.29s  user  발화 끝
+     9.28s  user  발화 시작: Oh. Well, what about the US Senate? How many senators are *t
+     9.42s  agent 발화 끝
+    14.30s  <ret> 발화 (turn4 첫 프레임)
+    14.41s  user  발화 끝
+    14.54s  agent 발화 시작: <ret> Ah, the US Senate—that’s much more familiar territory 
+    16.22s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.08s]: The United States Senate is composed of one hundred senators, two from
+    19.22s  user  발화 시작: Okay.
+    19.95s  user  발화 끝
+    22.24s  agent 발화 끝
+    22.35s  user  발화 시작: That’s good to know. Um, so if each state has two, does that
+    27.06s  agent 발화 시작: It does indeed mean there are fifty states currently represe
+    27.07s  user  발화 끝
+    30.30s  agent 발화 끝
+    31.23s  user  발화 시작: Okay. What’s the average age of a US senator?
+    34.36s  <ret> 발화 (turn9 첫 프레임)
+    34.60s  agent 발화 시작: <ret> That's an interesting detail to consider— The average 
+    34.78s  user  발화 끝
+    35.72s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.00s]: As of November 2023, the average age of a US Senator is sixty-three po
+    38.25s  user  발화 시작: Yeah.
+    38.56s  user  발화 끝
+    41.92s  agent 발화 끝
+    42.18s  user  발화 시작: Wow, that's… pretty old. I— I mean, is that typical for poli
+    47.00s  agent 발화 시작: It’s not uncommon for those in leadership positions to be ol
+    47.18s  user  발화 끝
+    52.09s  agent 발화 끝
+    52.65s  user  발화 시작: Do they have term limits?
+    54.03s  agent 발화 시작: That’s a valid point—
+    54.16s  user  발화 끝
+    55.27s  <ret> 발화 (turn15 첫 프레임)
+    55.35s  agent 발화 시작: <ret> There are currently no term limits for US Senators.
+    55.46s  agent 발화 끝
+    56.79s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.95s]: There are no term limits for members of the United States Senate.
+    57.22s  user  발화 시작: Okay.
+    57.95s  user  발화 끝
+    58.29s  user  발화 시작: So they could theoretically serve forever? That seems… unusu
+    58.30s  agent 발화 끝
+    62.94s  agent 발화 시작: It does allow for a great deal of institutional knowledge, t
+    62.97s  user  발화 끝
+    65.84s  user  발화 시작: Right.
+    66.33s  user  발화 끝
+    67.56s  agent 발화 끝
+    67.57s  user  발화 시작: [happy] Yeah, I guess so. Okay, last question—can you find m
+    72.12s  <ret> 발화 (turn21 첫 프레임)
+    72.44s  agent 발화 시작: <ret> Allrecipes has a top-rated lentil soup recipe, needing
+    72.57s  user  발화 끝
+    74.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Allrecipes.com lists a highly-rated lentil soup recipe w
+    78.27s  agent 발화 끝

@@ -1,0 +1,17 @@
+v3_backg_17_ko src=nq style=v1
+SYSTEM: <system> 당신은 돈과 예산 관리에 도움을 주는 호기심 많고 공감적인 개인 가이드, Eus입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  심박수 보통 얼마 정도 돼?
+  S2  어, 생각보다 범위가 엄청 넓네. 그럼 딱 이상적인 숫자는 있어?
+  S3  분리수거는 내놓고 왔어?
+  S4  그럼, 육십 회보다 낮으면 걱정해야 돼?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 심박수 보통 얼마 정도 ⟨ret@2.11s⟩ 돼?
+[  2.51s][moshi] 음, 많이 ⟦⚡SPAN@3.63s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 물어보는데, 사람마다 다르긴 해— 보통 성인의 경우 안정 시 심박수는 분당 육십 회에서 백 회 사이 정도래.
+[ 10.22s][user ] 어, 생각보다 범위가 엄청 넓네. 그럼 딱 이상적인 숫자는 ⟨ret@14.02s⟩ 있어?
+[ 14.34s][moshi] 뭐, 딱 ⟦⚡SPAN@15.46s: A healthy heart rate typically falls between 50 and 90 beats per minute.⟧ 좋은 게 있긴 하지— 건강한 심박수는 보통 분당 오십 회에서 구십 회 정도라고 봐.
+[ 21.31s][user ] «to_other» 분리수거는 내놓고 왔어?
+[ 22.98s][user ] 그럼, 육십 회보다 낮으면 걱정해야 돼?

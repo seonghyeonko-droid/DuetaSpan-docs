@@ -2,8 +2,8 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Who is the oldest player currently playing in the NBA?
-     3.18s  <ret> 발화 (turn1 첫 프레임)
-     3.50s  agent 발화 시작: <ret> That’s a good question, and easily looked up for you. 
-     3.75s  user  발화 끝
-     4.70s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.13s]: Vince Carter is the oldest active player in the NBA as of March 2020.
-     9.76s  agent 발화 끝
+     3.13s  <ret> 발화 (turn1 첫 프레임)
+     3.44s  agent 발화 시작: <ret> That’s a great question, and staying active is wonderf
+     3.46s  user  발화 끝
+     5.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.54s]: Vince Carter is the oldest player in the NBA, at age forty-one.
+    12.48s  agent 발화 끝

@@ -1,0 +1,37 @@
+v3_fstart_15_ko src=mcp style=mcp_falsestart
+SYSTEM: <system> 당신은 육아 및 가족 시간을 돕는 긍정적이고 지지적인 상담사 Helion입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  위치 좀 알려 줘.
+      그거 괜찮네. 근처 호텔 좀 찾아 줘.
+  S2  좀 더 싼 데 없어?
+      음, 그게 더 나은 것 같아. 공항에서 거기로 가는 가장 좋은 방법은 뭐야?
+  S3  대중교통이 괜찮겠어. 예약을 좀—
+      근데 예약하기 전에, 많이 걸어야 해?
+  S4  아니, 괜찮아. 그럼 예약해 줘.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 위치 좀 알려 줘.
+[  1.28s][moshi] ⟨ret@1.12s⟩ 네, ⟦⚡SPAN@3.12s: (tool result) The Sydney Opera House is located at -33.8568° latitude and 151.2153° longitude.⟧ 그 유명한 랜드마크의 위치를 찾아 드릴게요— 위도는 -33.8568이고 경도는 151.2153입니다.
+[  6.23s][user ] «backchannel» 와.
+[ 11.10s][user ] 그거 괜찮네. 근처 호텔 좀 찾아 줘.
+[ 14.16s][moshi] ⟨ret@14.01s⟩ 네, 근처 ⟦⚡SPAN@16.01s: (tool result) The Park Hyatt Sydney has a rating of 4.5 stars and costs $520 per night.⟧ 숙소를 검색해 드릴 수 있어요— 파크 하얏트 시드니는 별점 4.5개이고, 1박에 520달러입니다.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
+[ 22.35s][user ] 좀 더 싼 데 ⟨ret@23.39s⟩ 없어?
+[ 23.78s][moshi] 네, 좀 ⟦⚡SPAN@25.39s: (tool result) The Russell Hotel has a rating of 4.0 stars and costs $280 per night.⟧ 더 저렴한 가격으로 검색해 볼게요— 러셀 호텔은 별점 4.0개이고, 1박에 280달러입니다.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "max_price": "300"}}
+[ 28.72s][user ] «backchannel» 그니까.
+[ 31.69s][user ] 음, 그게 더 나은 것 같아. 공항에서 거기로 가는 가장 좋은 방법은 ⟨ret@36.34s⟩ 뭐야?
+[ 36.50s][moshi] 네, 공항에서 ⟦⚡SPAN@38.26s: (tool result) Driving takes 20 minutes and costs $25, while public transport takes 30 minutes and costs $10.⟧ 가장 빠른 경로를 찾아 드릴게요— 자동차로는 20분, 25달러이고, 대중교통은 30분, 10달러입니다.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "Sydney Airport", "destination": "The Russell Hotel"}}
+[ 39.04s][user ] «backchannel» 응.
+[ 46.01s][user ] 대중교통이 괜찮겠어. 예약을 좀—
+[ 49.06s][moshi] «interrupted» 네, 물론 도와드릴 수 있지만—
+[ 50.92s][user ] «interrupts_prev» 근데 예약하기 전에, 많이 걸어야 ⟨ret@53.38s⟩ 해?
+[ 53.70s][moshi] 네, ⟦⚡SPAN@54.58s: (tool result) The public transport route involves 15 minutes of walking.⟧ 고려해야 할 좋은 질문이에요— 대중교통 경로에는 15분 정도 걸어야 합니다.
+[ 55.85s][user ] «backchannel» 응.
+[ 59.02s][moshi] 그 점을 아시면 편안한 여행이 될 거예요— 필요하시면 다른 옵션을 찾아볼 수도 있습니다.
+[ 64.83s][user ] 아니, 괜찮아. 그럼 예약해 줘.
+[ 66.98s][moshi] ⟨ret@66.82s⟩ 네, 대중교통 ⟦⚡SPAN@68.82s: (tool result) Your public transport ticket is booked, confirmation number is AX927B.⟧ 예약을 확인해 드릴게요— 티켓이 예약되었습니다. 확인 번호는 AX927B입니다.
+      CALL: {"function": "transit_book", "arguments": {"origin": "Sydney Airport", "destination": "The Russell Hotel", "transport_type": "public"}}

@@ -1,34 +1,91 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
+SYSTEM: <system> You are Oruus, a gentle and reflective counselor who helps people with health and daily habits. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Show me buses from Chicago to Denver for three passengers on May tenth
-      Hmm, actually, make that May eleventh—
-  S2  The FlixBus sounds good. Can you reserve three seats?
-      Does that include baggage fees?
-  S3  Okay, good to know.
-      That's interesting. Are there any museums in Denver with significant p
-  S4  The Denver Art Museum sounds like the place to go.
+      That 8:00 AM bus sounds good. Can you book that one?
+      Great. Uh, actually—
+      Does that include luggage allowance?
+      Perfect. Can you send me a reminder the day before?
+  S2  Wonderful. What’s the weather like in Denver right now?
+      That sounds lovely. Are there any good restaurants near Denver Union S
+      Tell me more about Mercantile Dining & Provision.
+      That sounds promising. What about hotels in Denver?
+      How much is a room at The Brown Palace Hotel for one night?
+  S3  That’s a bit expensive. Are there any cheaper options?
+      What’s the Hampton Inn’s address?
+      Can you give me directions from Denver Union Station to the Hampton In
+      That sounds easy enough. What’s on the menu at Snooze, an A.M. Eatery?
+      Pancake flights? That sounds amazing.
+  S4  Is there anything else to do near Union Station?
+      How long does it take to get to the Denver Art Museum from Union Stati
+      Good to know. Can you remind me to buy sunscreen before I leave for De
+      Perfect. I think that’s all for now.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.39s⟩ tenth.
-[  4.78s][moshi] Let’s find ⟦⚡SPAN@5.91s: (tool result) Buses_3_FindBus returned three options: Greyhound, 8:00 AM, $150; FlixBus, 10:30 AM, $125; and W⟧ a bus for your trip— There are three buses available: Greyhound, FlixBus, and Wanderu, with prices ranging from one hundred twenty-five to one hundred seventy-five dollars.
-[ 15.24s][user ] Hmm, actually, make that May ⟨ret@17.71s⟩ eleventh—
-[ 17.95s][moshi] Adjusting ⟦⚡SPAN@18.83s: (tool result) Buses_3_FindBus returned two options: FlixBus, 9:00 AM, $130; and Wanderu, 2:00 PM, $180.⟧ the date to May eleventh— For May eleventh, FlixBus departs at nine AM for one hundred thirty dollars, and Wanderu leaves at two PM for one hundred eighty dollars.
-[ 29.82s][user ] The FlixBus sounds good. Can you reserve three seats?
-[ 33.72s][moshi] ⟨ret@33.57s⟩ Certainly, I ⟦⚡SPAN@34.85s: (tool result) Buses_3_ReserveSeats returned Reservation ID: BX7892. Passengers: 3. Bus: FlixBus. Date: May 11.⟧ can reserve those seats— Your FlixBus reservation is confirmed, ID BX7892, for three passengers on May eleventh, totaling three hundred ninety dollars.
-[ 40.30s][user ] «backchannel» Yeah, totally.
-[ 43.91s][user ] Does that include baggage fees?
-[ 45.89s][moshi] «interrupted» That’s a good question—
-[ 47.24s][moshi] ⟨ret@47.17s⟩ FlixBus charges twenty-five dollars ⟦⚡SPAN@49.17s: (tool result) Buses_3_GetBaggageFees returned FlixBus baggage fee: $25 per bag. First bag free.⟧ per bag after the first free one.
-[ 50.04s][user ] «backchannel» Okay.
-[ 51.65s][user ] Okay, good to know.
-[ 52.87s][moshi] Now, about pre-Columbian art, did you know the cultures of Mesoamerica often incorporated jade into their sculptures?
-[ 57.22s][user ] «backchannel» Yeah.
-[ 60.08s][moshi] It was highly prized, symbolizing life and renewal— its vibrant green color representing vegetation and water, quite important to their belief systems.
-[ 65.36s][user ] «backchannel» Yeah.
-[ 69.82s][user ] That's interesting. Are there any museums in Denver with significant pre-Columbian ⟨ret@75.65s⟩ collections?
-[ 75.89s][moshi] Denver has ⟦⚡SPAN@77.09s: (tool result) Museums_FindMuseums returned Denver Art Museum: Pre-Columbian collection, 500 items. Denver Muse⟧ several options— The Denver Art Museum boasts a collection of five hundred pre-Columbian items, while the Museum of Nature & Science has a smaller exhibit of fifty pieces.
-[ 87.17s][user ] The Denver Art Museum sounds like the place to go.
-[ 90.78s][moshi] It's an excellent choice! They have a particularly strong collection of ceramics from the Moche culture— quite delicate and beautifully painted.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@3.81s⟩ tenth.
+[  4.21s][moshi] Let’s ⟦⚡SPAN@5.01s: (tool result) Three buses depart Chicago for Denver on May tenth — at 8:00 AM for $250, 2:30 PM for $285, and ⟧ explore some travel options for you. There are three buses available on May tenth, ranging from two hundred twenty to two hundred eighty-five dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[  9.15s][user ] «backchannel» Uh-huh.
+[ 12.89s][user ] That 8:00 AM bus sounds good. Can you book that ⟨ret@16.00s⟩ one?
+[ 16.23s][moshi] Certainly, let's ⟦⚡SPAN@17.60s: (tool result) Your bus is booked — confirmation number is BX7492, departing Chicago at 8:00 AM on May tenth fo⟧ secure that morning bus for you. Your bus to Denver is confirmed, booking number BX7492, costing two hundred fifty dollars.
+      CALL: {"function": "Buses_2_BookBus", "arguments": {"bus_id": "8:00 AM Chicago to Denver"}}
+[ 22.47s][user ] «backchannel» Really?
+[ 27.47s][user ] Great. Uh, actually—
+[ 29.36s][user ] Does that include luggage allowance?
+[ 32.05s][moshi] ⟨ret@31.90s⟩ That's a ⟦⚡SPAN@33.18s: (tool result) Each passenger on the 8:00 AM bus is allowed one checked bag and one carry-on bag.⟧ very practical question to ask… Each passenger can bring one checked bag and one carry-on bag on that bus.
+      CALL: {"function": "Buses_4_GetLuggageAllowance", "arguments": {"bus_id": "8:00 AM Chicago to Denver"}}
+[ 39.72s][user ] Perfect. Can you send me a reminder the day ⟨ret@42.72s⟩ before?
+[ 43.12s][moshi] ⟦⚡SPAN@43.22s: (tool result) Reminder set — May ninth at 6:00 PM: "Bus to Denver tomorrow!".⟧ Absolutely, I can set up a reminder for you. I’ve set a reminder for May ninth at six PM: “Bus to Denver tomorrow!”.
+      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"date": "May ninth", "time": "6:00 PM", "message": "Bus to Denver tomorrow!"}}
+[ 50.23s][user ] Wonderful. What’s the weather like in Denver right ⟨ret@53.40s⟩ now?
+[ 53.80s][moshi] Let me ⟦⚡SPAN@54.76s: (tool result) The current weather in Denver is 65 degrees Fahrenheit and sunny.⟧ check the current conditions there. Denver is currently sixty-five degrees and sunny.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Denver"}}
+[ 57.51s][user ] «backchannel» Mhm.
+[ 60.08s][user ] That sounds lovely. Are there any good restaurants near Denver Union ⟨ret@64.80s⟩ Station?
+[ 65.20s][moshi] ⟦⚡SPAN@65.76s: (tool result) Three restaurants are near Denver Union Station — Stoic & Genuine, Mercantile Dining & Provision⟧ Denver Union Station is a vibrant area… There are three nearby restaurants: Stoic & Genuine, Mercantile Dining & Provision, and Snooze.
+      CALL: {"function": "Restaurants_1_FindRestaurants", "arguments": {"location": "Denver Union Station", "cuisine": "any"}}
+[ 74.79s][user ] Tell me more about Mercantile Dining & ⟨ret@77.65s⟩ Provision.
+[ 77.89s][moshi] Let’s see ⟦⚡SPAN@78.77s: (tool result) Mercantile Dining & Provision serves American cuisine, is open 7:00 AM to 9:00 PM, and has a 4.5⟧ what details I can find for you. Mercantile Dining & Provision is an American restaurant open from seven AM to nine PM with a four-and-a-half-star rating.
+      CALL: {"function": "Restaurants_2_GetRestaurantDetails", "arguments": {"restaurant_name": "Mercantile Dining & Provision"}}
+[ 84.17s][user ] «backchannel» Right.
+[ 88.04s][user ] That sounds promising. What about hotels in ⟨ret@91.10s⟩ Denver?
+[ 91.49s][moshi] I can ⟦⚡SPAN@92.86s: (tool result) The Brown Palace Hotel, The Maven Hotel at Dairy Block, and Hotel Teatro are available in Denver⟧ certainly help with hotel options. Three hotels are available: The Brown Palace Hotel, The Maven Hotel, and Hotel Teatro.
+      CALL: {"function": "Hotels_1_FindHotels", "arguments": {"city": "Denver"}}
+[ 95.58s][user ] «backchannel» Yeah.
+[101.19s][user ] How much is a room at The Brown Palace Hotel for one ⟨ret@104.71s⟩ night?
+[104.87s][moshi] Let's check ⟦⚡SPAN@105.67s: (tool result) A room at The Brown Palace Hotel on May tenth costs $350 for one night.⟧ the pricing for that hotel. A room at The Brown Palace Hotel is three hundred fifty dollars for one night on May tenth.
+      CALL: {"function": "Hotels_2_GetHotelPrice", "arguments": {"hotel_name": "The Brown Palace Hotel", "date": "May tenth", "nights": "one"}}
+[107.79s][user ] «backchannel» Yeah, totally.
+[112.88s][user ] That’s a bit expensive. Are there any cheaper options?
+[116.07s][moshi] ⟨ret@115.99s⟩ ⟦⚡SPAN@116.49s: (tool result) The Hampton Inn Denver Downtown and La Quinta Inn by Wyndham Denver Central are under $200.⟧ Let me broaden the search to more affordable choices. The Hampton Inn and La Quinta Inn are available for under two hundred dollars.
+      CALL: {"function": "Hotels_1_FindHotels", "arguments": {"city": "Denver", "max_price": "200"}}
+[123.16s][user ] What’s the Hampton Inn’s ⟨ret@124.64s⟩ address?
+[124.96s][moshi] I can ⟦⚡SPAN@126.08s: (tool result) The Hampton Inn Denver Downtown is located at 1220 Stout Street, Denver, Colorado.⟧ certainly provide that information. The address is twelve twenty Stout Street, Denver, Colorado.
+      CALL: {"function": "Hotels_3_GetHotelAddress", "arguments": {"hotel_name": "Hampton Inn Denver Downtown"}}
+[128.98s][user ] «backchannel» Yeah.
+[131.19s][user ] Can you give me directions from Denver Union Station to the Hampton Inn?
+[135.01s][moshi] ⟨ret@134.85s⟩ I can certainly ⟦⚡SPAN@136.37s: (tool result) Take 16th Street Mall to Stout Street, then walk north for 0.3 miles.⟧ map out those directions. Take sixteenth Street Mall to Stout Street, then walk north for point three miles.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"start": "Denver Union Station", "end": "Hampton Inn Denver Downtown"}}
+[139.15s][user ] «backchannel» Yeah.
+[143.31s][user ] That sounds easy enough. What’s on the menu at Snooze, an A.M. ⟨ret@147.60s⟩ Eatery?
+[148.00s][moshi] ⟦⚡SPAN@148.10s: (tool result) Snooze’s menu includes pancake flights, breakfast tacos, and benny options.⟧ Let's see what breakfast delights they offer. They serve pancake flights, breakfast tacos, and various Benedict options.
+      CALL: {"function": "Restaurants_4_GetMenu", "arguments": {"restaurant_name": "Snooze, an A.M. Eatery"}}
+[156.04s][user ] Pancake flights? That sounds amazing.
+[158.69s][moshi] It does sound like a delightful way to start the day.
+[159.52s][user ] «backchannel» Yeah.
+[161.38s][moshi] It’s a creative and enjoyable breakfast experience.
+[164.67s][user ] Is there anything else to do near Union ⟨ret@167.25s⟩ Station?
+[167.40s][moshi] Denver’s Union Station ⟦⚡SPAN@169.01s: (tool result) The Denver Art Museum and the Museum of Contemporary Art are nearby.⟧ area offers several attractions. You can visit the Denver Art Museum or the Museum of Contemporary Art.
+      CALL: {"function": "Attractions_1_FindAttractions", "arguments": {"location": "Denver Union Station"}}
+[176.18s][user ] How long does it take to get to the Denver Art Museum from Union ⟨ret@180.07s⟩ Station?
+[180.39s][moshi] I can ⟦⚡SPAN@181.27s: (tool result) It takes approximately 15 minutes to walk to the Denver Art Museum.⟧ check the travel time for you. It’s a fifteen-minute walk to the Denver Art Museum.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"start": "Denver Union Station", "end": "Denver Art Museum"}}
+[182.58s][user ] «backchannel» Yeah, totally.
+[186.26s][user ] Good to know. Can you remind me to buy sunscreen before I leave ⟨ret@190.46s⟩ for Denver?
+[190.85s][moshi] Certainly, ⟦⚡SPAN@191.42s: (tool result) Reminder set — May ninth at 5:00 PM: "Buy sunscreen!".⟧ I can add that to your reminders. I’ve added a reminder for you to buy sunscreen on May ninth at five PM.
+      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"date": "May ninth", "time": "5:00 PM", "message": "Buy sunscreen!"}}
+[192.88s][user ] «backchannel» Okay.
+[197.24s][user ] Perfect. I think that’s all for now.
+[199.60s][moshi] It sounds like you’re well prepared for your trip. I’m glad I could help organize your travel plans and give you some ideas for enjoying Denver. Remember to prioritize a little self-care while you are away; even a short walk can be restorative.

@@ -1,34 +1,35 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+SYSTEM: <system> You are Runana, a gentle and reflective life coach who helps people with creative blocks and confidence. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Hey, I was wondering, when is Demi Lovato’s new album coming out? I he
-      October, huh? That’s pretty soon. I completely missed that!
-  S2  Are there any singles released before the album?
-      Oh, yeah! I remember that song! It was all over the radio.
-  S3  I think so. I'm a big fan. What kind of music is it?
-      Interesting. Is it a big departure from her previous work?
-  S4  Oh, okay. That makes sense. Thanks for the info!
+  S1  I was wondering, when is Demi Lovato’s new album coming out? I heard s
+      Yeah, I really like her music.
+  S2  Oh, okay. So it’s already out? I thought it was still upcoming.
+      But is she doing a tour with it?
+  S3  I'm hoping to see her live if she is.
+      Mm-hmm.
+  S4  That was a while ago, though. Is there anything more recent?
+      Okay, so nothing currently planned then? That’s a shame.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Hey, I was wondering, when is Demi Lovato’s new album coming out? I heard something about this year… 2015?
-[  7.20s][moshi] Oh, you’re asking about Demi Lovato’s release schedule. It’s exciting when a favorite artist has new music on the way.
-[ 13.30s][moshi] ⟨ret@13.06s⟩ Let me quickly ⟦⚡SPAN@14.74s: Demi Lovato’s album, *Confident*, was released in October 2015.⟧ check the details for you… Her album, *Confident*, came out in October of 2015, as you suspected.
-[ 18.09s][user ] «backchannel» Exactly.
-[ 20.61s][user ] October, huh? That’s pretty soon. I completely missed that!
-[ 24.63s][moshi] It does seem to sneak up on you sometimes, doesn’t it? Album release dates can be tricky to keep track of.
-[ 27.85s][user ] «backchannel» Yeah.
-[ 32.44s][user ] Are there any singles released before the album?
-[ 35.21s][moshi] ⟨ret@35.13s⟩ I can certainly look ⟦⚡SPAN@36.81s: The lead single, “Cool for the Summer”, was released on July 1, 2015.⟧ into what singles preceded the album. “Cool for the Summer” was the first single, released on July first, 2015.
-[ 38.31s][user ] «backchannel» Yeah.
-[ 42.99s][user ] Oh, yeah! I remember that song! It was all over the ⟨ret@46.76s⟩ radio.
-[ 46.91s][moshi] [laugh] It really was quite ⟦⚡SPAN IRRELEVANT@48.76s: (tool result) AAPL: 170.34, +0.25, 0.15%⟧ catchy, wasn’t it? A very memorable tune.
-[ 48.17s][user ] «backchannel» Okay.
-[ 51.49s][user ] I think so. I'm a big fan. What kind of music is it?
-[ 55.14s][moshi] *Confident* is generally considered pop, but it has elements of R&B and electronic dance music too.
-[ 61.22s][user ] Interesting. Is it a big departure from her ⟨ret@64.27s⟩ previous work?
-[ 64.66s][moshi] That’s ⟦⚡SPAN@65.23s: *Confident* is seen as a more mature and experimental album than Lovato's previous efforts.⟧ a good question, comparing it to her earlier albums… It's considered a more mature and experimental album, differing from her earlier work.
-[ 69.00s][user ] «backchannel» Yeah.
-[ 71.83s][user ] Oh, okay. That makes sense. Thanks for the info!
-[ 76.51s][moshi] You’re very welcome! I’m glad I could help you with the album details. I enjoy sharing what I know.
+[  0.00s][user ] I was wondering, when is Demi Lovato’s new album coming out? I heard something about this year.
+[  6.44s][moshi] That’s a wonderful question—music is such a beautiful form of expression.
+[ 12.69s][user ] Yeah, I really like her ⟨ret@14.67s⟩ music.
+[ 14.91s][moshi] Let’s see what ⟦⚡SPAN@16.35s: Demi Lovato's fifth studio album, *Confident*, was released in October 2015.⟧ I can find for you— Her album, *Confident*, came out in October of twenty fifteen.
+[ 21.22s][user ] Oh, okay. So it’s already out? I thought it was still ⟨ret@24.98s⟩ upcoming.
+[ 25.30s][moshi] ⟦⚡SPAN IRRELEVANT@25.54s: The platypus is a semi-aquatic mammal endemic to eastern Australia, including Tasmania.⟧ It appears so—sometimes information can be a little confusing as release dates shift.
+[ 29.02s][user ] «backchannel» Uh-huh.
+[ 30.89s][user ] But is she doing a tour with it?
+[ 33.25s][moshi] Oh—that’s a very good point to ask!
+[ 35.42s][user ] I'm hoping to see her live if she is.
+[ 37.78s][moshi] Many artists do tours to support new albums—it’s a fantastic way to connect with fans.
+[ 44.66s][user ] Mm-hmm. ⟨ret@44.89s⟩
+[ 45.13s][moshi] I can certainly look ⟦⚡SPAN@46.89s: Demi Lovato embarked on the Future Now Tour in 2016, alongside Nick Jonas.⟧ into tour dates for you— She toured with Nick Jonas on the Future Now Tour in twenty sixteen.
+[ 49.13s][user ] «backchannel» Mm-hmm.
+[ 52.91s][user ] That was a while ago, though. Is there anything more recent?
+[ 56.83s][moshi] You are right to ask—let’s find out about more recent concert plans.
+[ 62.38s][moshi] ⟨ret@61.98s⟩ Let ⟦⚡SPAN@62.94s: Demi Lovato’s most recent tour concluded in 2018 with the Tell Me You Love Me World Tour.⟧ me just check for any updated information— Her last tour ended in twenty eighteen, the Tell Me You Love Me World Tour.
+[ 66.53s][user ] «backchannel» Mm-hmm.
+[ 71.39s][user ] Okay, so nothing currently planned then? That’s a shame.
+[ 75.19s][moshi] It seems that way, though artists often announce new tours unexpectedly—stay tuned! Perhaps a new album will mean new shows.

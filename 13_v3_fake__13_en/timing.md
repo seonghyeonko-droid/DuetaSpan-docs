@@ -1,52 +1,52 @@
 # v3_fake__13_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Hey, I was wondering, when is Demi | S2 Are there any singles released bef | S3 I think so. I'm a big fan. What ki | S4 Oh, okay. That makes sense. Thanks
+# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 Oh, okay. So it’s already out? I t | S3 I'm hoping to see her live if she  | S4 That was a while ago, though. Is t
 
-     0.00s  user  발화 시작: Hey, I was wondering, when is Demi Lovato’s new album coming
-     7.18s  user  발화 끝
-     7.20s  agent 발화 시작: Oh, you’re asking about Demi Lovato’s release schedule. It’s
-    13.06s  <ret> 발화 (turn2 첫 프레임)
-    13.30s  agent 발화 시작: <ret> Let me quickly check the details for you… Her album, *
-    13.31s  agent 발화 끝
-    14.74s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.87s]: Demi Lovato’s album, *Confident*, was released in October 2015.
-    18.09s  user  발화 시작: Exactly.
-    18.91s  user  발화 끝
-    20.48s  agent 발화 끝
-    20.61s  user  발화 시작: October, huh? That’s pretty soon. I completely missed that!
-    24.63s  agent 발화 시작: It does seem to sneak up on you sometimes, doesn’t it? Album
-    24.82s  user  발화 끝
-    27.85s  user  발화 시작: Yeah.
-    28.39s  user  발화 끝
-    30.32s  agent 발화 끝
-    32.44s  user  발화 시작: Are there any singles released before the album?
-    35.13s  <ret> 발화 (turn8 첫 프레임)
-    35.21s  agent 발화 시작: <ret> I can certainly look into what singles preceded the al
-    35.36s  user  발화 끝
-    36.81s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.22s]: The lead single, “Cool for the Summer”, was released on July 1, 2015.
-    38.31s  user  발화 시작: Yeah.
-    38.94s  user  발화 끝
-    42.62s  agent 발화 끝
-    42.99s  user  발화 시작: Oh, yeah! I remember that song! It was all over the radio.
-    46.76s  <ret> 발화 (turn11 첫 프레임)
-    46.91s  agent 발화 시작: <ret> [laugh] It really was quite catchy, wasn’t it? A very 
-    47.01s  user  발화 끝
-    48.17s  user  발화 시작: Okay.
-    48.76s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=3.93s]: (tool result) AAPL: 170.34, +0.25, 0.15%
-    48.81s  user  발화 끝
-    50.84s  agent 발화 끝
-    51.49s  user  발화 시작: I think so. I'm a big fan. What kind of music is it?
-    55.14s  agent 발화 시작: *Confident* is generally considered pop, but it has elements
-    55.24s  user  발화 끝
-    61.03s  agent 발화 끝
-    61.22s  user  발화 시작: Interesting. Is it a big departure from her previous work?
-    64.27s  <ret> 발화 (turn16 첫 프레임)
-    64.66s  agent 발화 시작: <ret> That’s a good question, comparing it to her earlier al
-    64.87s  user  발화 끝
-    65.23s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.31s]: *Confident* is seen as a more mature and experimental album than Lovat
-    69.00s  user  발화 시작: Yeah.
-    69.50s  user  발화 끝
-    71.83s  user  발화 시작: Oh, okay. That makes sense. Thanks for the info!
-    72.27s  agent 발화 끝
-    76.09s  user  발화 끝
-    76.51s  agent 발화 시작: You’re very welcome! I’m glad I could help you with the albu
-    81.65s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering, when is Demi Lovato’s new album coming out?
+     6.44s  agent 발화 시작: That’s a wonderful question—music is such a beautiful form o
+     6.58s  user  발화 끝
+    11.16s  agent 발화 끝
+    12.69s  user  발화 시작: Yeah, I really like her music.
+    14.67s  <ret> 발화 (turn3 첫 프레임)
+    14.91s  agent 발화 시작: <ret> Let’s see what I can find for you— Her album, *Confide
+    15.09s  user  발화 끝
+    16.35s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.94s]: Demi Lovato's fifth studio album, *Confident*, was released in October
+    21.22s  user  발화 시작: Oh, okay. So it’s already out? I thought it was still upcomi
+    21.53s  agent 발화 끝
+    24.98s  <ret> 발화 (turn5 첫 프레임)
+    25.30s  agent 발화 시작: <ret> It appears so—sometimes information can be a little co
+    25.34s  user  발화 끝
+    25.54s  ⚡SPAN 주입(IRRELEVANT) [d'=0.56s / d_lead=5.65s]: The platypus is a semi-aquatic mammal endemic to eastern Australia, in
+    29.02s  user  발화 시작: Uh-huh.
+    29.52s  user  발화 끝
+    30.89s  user  발화 시작: But is she doing a tour with it?
+    30.95s  agent 발화 끝
+    33.20s  user  발화 끝
+    33.25s  agent 발화 시작: Oh—that’s a very good point to ask!
+    35.42s  user  발화 시작: I'm hoping to see her live if she is.
+    35.52s  agent 발화 끝
+    37.78s  agent 발화 시작: Many artists do tours to support new albums—it’s a fantastic
+    37.82s  user  발화 끝
+    44.13s  agent 발화 끝
+    44.66s  user  발화 시작: Mm-hmm.
+    44.89s  <ret> 발화 (turn12 첫 프레임)
+    45.13s  agent 발화 시작: <ret> I can certainly look into tour dates for you— She tour
+    45.15s  user  발화 끝
+    46.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.15s]: Demi Lovato embarked on the Future Now Tour in 2016, alongside Nick Jo
+    49.13s  user  발화 시작: Mm-hmm.
+    49.62s  user  발화 끝
+    52.82s  agent 발화 끝
+    52.91s  user  발화 시작: That was a while ago, though. Is there anything more recent?
+    56.75s  user  발화 끝
+    56.83s  agent 발화 시작: You are right to ask—let’s find out about more recent concer
+    61.98s  <ret> 발화 (turn16 첫 프레임)
+    62.38s  agent 발화 시작: <ret> Let me just check for any updated information— Her las
+    62.57s  agent 발화 끝
+    62.94s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.03s]: Demi Lovato’s most recent tour concluded in 2018 with the Tell Me You 
+    66.53s  user  발화 시작: Mm-hmm.
+    67.03s  user  발화 끝
+    71.09s  agent 발화 끝
+    71.39s  user  발화 시작: Okay, so nothing currently planned then? That’s a shame.
+    75.19s  agent 발화 시작: It seems that way, though artists often announce new tours u
+    75.22s  user  발화 끝
+    83.67s  agent 발화 끝

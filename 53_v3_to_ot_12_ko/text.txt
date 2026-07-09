@@ -1,0 +1,18 @@
+v3_to_ot_12_ko src=nq style=v1
+SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 돕는 친절하고 침착한 웰니스 코치인 Jal입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  혹시 궁금했는데, 마이클 잭슨의 "Beat It" 기타 솔로는 누가 연주했는지 궁금했어요. 다른 노래들과는 멜로디가 너무 달라
+  S2  와, 진짜요? 에디 반 헤일런이요? 잭슨 밴드 멤버 중 누군가일 거라고 생각했어요.
+  S3  저기요, 혹시 냉동고에서 닭고기 꺼내 놓으셨어요?
+  S4  죄송해요. 아, 맞다, "Beat It"에 반 헤일런이요. 고용하는 데 돈이 많이 들었나요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 혹시 궁금했는데, 마이클 잭슨의 "Beat It" 기타 솔로는 누가 연주했는지 궁금했어요. 다른 노래들과는 멜로디가 너무 달라서요.
+[  8.78s][moshi] ⟨ret@8.54s⟩ 아, 좋은 ⟦⚡SPAN@10.14s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ 질문이세요. 그리고 정말 흥미로운 음악적 디테일인데요. 혁신적인 연주 기법으로 유명한 에디 반 헤일런이 그 유명한 기타 솔로를 연주했어요.
+[ 12.49s][user ] «backchannel» 예.
+[ 19.46s][user ] 와, 진짜요? 에디 반 헤일런이요? 잭슨 밴드 멤버 중 누군가일 거라고 생각했어요.
+[ 25.52s][user ] «to_other» 저기요, 혹시 냉동고에서 닭고기 꺼내 놓으셨어요?
+[ 29.11s][user ] 죄송해요. 아, 맞다, "Beat It"에 반 헤일런이요. 고용하는 데 돈이 많이 ⟨ret@34.22s⟩ 들었나요?
+[ 34.54s][moshi] 물론 그런 비하인드 ⟦⚡SPAN@36.22s: Eddie Van Halen was paid $20,000 for his work on “Beat It”.⟧ 스토리가 궁금하실 거라고 생각해요. 그분은 그 곡의 기타 솔로 녹음에 이만 달러를 받았어요.

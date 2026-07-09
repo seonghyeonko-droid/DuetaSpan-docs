@@ -1,50 +1,37 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
+SYSTEM: <system> You are Helion, a upbeat and supportive counselor who helps people with parenting and family time. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What are the latitude and longitude of the Sydney Opera House?
-      Hmm, that's useful. And what about the Empire State Building?
-      Right.
-  S2  Just curious, really. Could you find me a jazz club near the Empire St
-      Smalls, huh? Is there a cover charge?
-  S3  Twenty dollars, not bad.
-      Really? That’s cool! I— I mean, can you find a hotel nearby as well? S
-      $150… that sounds alright.
-  S4  Interesting. Can you book me a room there for tonight?
-      Perfect, thanks!
+      That’s helpful. Can you find me hotels near that location?
+  S2  Is there anything a little more affordable?
+      Hmm, that sounds better. What’s the best way to get there from the air
+  S3  Public transport sounds good. Can you book me a—
+      Actually, before you book, does it involve a lot of walking?
+  S4  No, that’s fine. Go ahead and book it for me then.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.24s][moshi] ⟨ret@4.16s⟩ That’s a ⟦⚡SPAN@5.20s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ lovely place to start, actually… It’s at latitude negative thirty-three point eight five six eight, and longitude one five one point two one five three.
-      CALL: {"function": "maps_geo", "arguments": {"location": "Sydney Opera House"}}
-[ 14.57s][user ] Hmm, that's useful. And what about the Empire State ⟨ret@18.10s⟩ Building?
-[ 18.34s][moshi] A classic, ⟦⚡SPAN@19.46s: (tool result) The Empire State Building is located at latitude 40.7484 and longitude -73.9857.⟧ of course… The Empire State Building is at forty point seven four eight four latitude, and negative seventy-three point nine eight five seven longitude.
-      CALL: {"function": "maps_geo", "arguments": {"location": "Empire State Building"}}
-[ 22.14s][user ] «backchannel» Yeah.
-[ 29.45s][user ] Right.
-[ 29.97s][moshi] Now, are you perhaps planning a trip, or just curious about landmarks?
-[ 31.61s][user ] «backchannel» Yeah.
-[ 35.84s][user ] Just curious, really. Could you find me a jazz club near the Empire State Building?
-[ 41.08s][moshi] ⟨ret@40.85s⟩ A ⟦⚡SPAN@41.97s: (tool result) Smalls Jazz Club is 0.7 miles from the Empire State Building and has a 4.5-star rating.⟧ fine choice, New York has a vibrant scene… Smalls Jazz Club is point seven miles away, and it's rated four and a half stars.
-      CALL: {"function": "maps_search", "arguments": {"query": "jazz club", "near": "Empire State Building"}}
-[ 46.01s][user ] «backchannel» Yeah, yeah.
-[ 50.66s][user ] Smalls, huh? Is there a cover ⟨ret@53.37s⟩ charge?
-[ 53.61s][moshi] Let’s ⟦⚡SPAN@54.41s: (tool result) Smalls Jazz Club has a cover charge of $20 and is open until 2 AM.⟧ see what the details are… The cover charge is twenty dollars, and they stay open until two AM.
-      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJL8W_W42Aw4AR8tL-3-KjJpY"}}
-[ 58.17s][user ] «backchannel» Yeah, totally.
-[ 60.15s][user ] Twenty dollars, not bad.
-[ 62.59s][moshi] It’s a legendary spot, been around for decades. I played a few sets there myself, back in the day.
-[ 69.12s][user ] Really? That’s cool! I— I mean, can you find a hotel nearby as well? Something… reasonably ⟨ret@76.00s⟩ priced?
-[ 76.40s][moshi] ⟦⚡SPAN@76.50s: (tool result) The Jane Hotel is 0.8 miles from Smalls Jazz Club with rooms starting at $150 per night.⟧ Of course, let’s look for something comfortable… The Jane Hotel is point eight miles away, with rooms from one hundred and fifty dollars a night.
-      CALL: {"function": "maps_hotel_search", "arguments": {"near": "Smalls Jazz Club", "price_range": "moderate"}}
-[ 79.25s][user ] «backchannel» Mhm.
-[ 85.21s][user ] $150… that sounds alright.
-[ 87.73s][moshi] It's a rather quirky place, with a lot of history. Sailors used to stay there, you know.
-[ 90.59s][user ] «backchannel» Uh-huh.
-[ 93.94s][user ] Interesting. Can you book me a room there ⟨ret@96.84s⟩ for tonight?
-[ 97.23s][moshi] Let’s ⟦⚡SPAN@98.12s: (tool result) Reservation confirmed at The Jane Hotel for one guest tonight, confirmation number is JHN7892.⟧ get that sorted for you… Your reservation is confirmed, the number is JHN seven eight nine two.
-      CALL: {"function": "maps_hotel_reserve", "arguments": {"hotel_name": "The Jane Hotel", "check_in_date": "today", "num_guests": "1"}}
-[100.50s][user ] «backchannel» Yeah.
-[106.18s][user ] Perfect, thanks!
-[107.70s][moshi] My pleasure. Perhaps I can suggest a good restaurant for after the show? New York’s got endless choices.
+[  3.76s][moshi] ⟨ret@3.68s⟩ Let's ⟦⚡SPAN@4.96s: (tool result) The Sydney Opera House is located at -33.8568° latitude and 151.2153° longitude.⟧ pinpoint that iconic landmark for you— It’s at -33.8568 latitude and 151.2153 longitude.
+[  8.64s][user ] «backchannel» Oh.
+[ 12.94s][user ] That’s helpful. Can you find me hotels near that ⟨ret@16.70s⟩ location?
+[ 16.94s][moshi] Certainly, I ⟦⚡SPAN@17.98s: (tool result) The Park Hyatt Sydney has a rating of 4.5 stars and costs $520 per night.⟧ can search for nearby accommodations— The Park Hyatt Sydney is 4.5 stars and costs $520 a night.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
+[ 23.49s][user ] Is there anything a little more affordable?
+[ 26.10s][moshi] ⟨ret@26.02s⟩ Of course, let’s broaden ⟦⚡SPAN@28.02s: (tool result) The Russell Hotel has a rating of 4.0 stars and costs $280 per night.⟧ the search for lower prices— The Russell Hotel is 4.0 stars, costing $280 per night.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "max_price": "300"}}
+[ 30.98s][user ] «backchannel» Right.
+[ 33.74s][user ] Hmm, that sounds better. What’s the best way to get there from the ⟨ret@38.50s⟩ airport?
+[ 38.73s][moshi] Let’s figure ⟦⚡SPAN@39.62s: (tool result) Driving takes 20 minutes and costs $25, while public transport takes 30 minutes and costs $10.⟧ out the fastest route from the airport— Driving is 20 minutes at $25, public transport is 30 minutes at $10.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "Sydney Airport", "destination": "The Russell Hotel"}}
+[ 41.10s][user ] «backchannel» Yeah.
+[ 46.57s][user ] Public transport sounds good. Can you book me a—
+[ 50.03s][moshi] «interrupted» Absolutely, I can certainly arrange that for you, but—
+[ 52.54s][user ] «interrupts_prev» Actually, before you book, does it involve a lot of walking?
+[ 56.37s][moshi] ⟨ret@56.29s⟩ That’s a good ⟦⚡SPAN@57.57s: (tool result) The public transport route involves 15 minutes of walking.⟧ question to consider, and— The public transport route includes fifteen minutes of walking.
+[ 58.68s][user ] «backchannel» Yeah.
+[ 61.96s][moshi] Knowing that detail helps ensure a comfortable journey— Perhaps we can explore other options if needed.
+[ 67.44s][user ] No, that’s fine. Go ahead and book it for me then.
+[ 70.91s][moshi] ⟨ret@70.83s⟩ Wonderful, let’s confirm ⟦⚡SPAN@72.83s: (tool result) Your public transport ticket is booked, confirmation number is AX927B.⟧ that public transport booking— Your ticket is booked, confirmation number AX927B.
+      CALL: {"function": "transit_book", "arguments": {"origin": "Sydney Airport", "destination": "The Russell Hotel", "transport_type": "public"}}

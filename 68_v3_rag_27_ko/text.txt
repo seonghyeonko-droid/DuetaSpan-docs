@@ -1,0 +1,21 @@
+v3_rag_27_ko src=hotpotqa style=v1
+SYSTEM: <system> 당신은 학습 및 동기 부여에 도움을 주는 따뜻하고 세심한 상담사 Doon입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  럭스 아우룬케에 대해 좀 알아보고 싶어요. 생년월일을 알려주실 수 있나요?
+  S2  천구백칠십 년… 생각보다 최근이네요, 그렇죠? 정치 활동 같은 건 하셨나요?
+  S3  근데 그분은 직접 정치인이셨나요—
+  S4  조각가… 흥미롭네요. 어떤 종류의 조각품을 만드셨나요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 럭스 아우룬케에 대해 좀 알아보고 싶어요. 생년월일을 알려주실 수 있나요?
+[  4.18s][moshi] ⟨ret@4.12s⟩ 응, 어디 보자… ⟦⚡SPAN@6.12s: Lux Aurunque was born in nineteen seventy.⟧ 기록에 따르면 천구백칠십 년에 태어났어.
+[  6.66s][user ] «backchannel» 네.
+[  9.03s][user ] 천구백칠십 년… 생각보다 최근이네요, 그렇죠? 정치 활동 같은 건 하셨나요?
+[ 15.09s][moshi] 그렇긴 해. 많은 예술가들이 간접적으로라도 정치적인 주제를 다루곤 하거든.
+[ 18.38s][user ] «backchannel» 음.
+[ 20.62s][user ] 근데 그분은 직접 정치인이셨나요—
+[ 23.05s][moshi] ⟨ret@22.90s⟩ 아, 그거 ⟦⚡SPAN@24.26s: Lux Aurunque was a prominent bronze sculptor, not a politician.⟧ 참 잘 묻는걸— 청동 조각가였고, 정치는 안 했어.
+[ 25.58s][user ] «backchannel» 예.
+[ 28.40s][user ] 조각가… 흥미롭네요. 어떤 종류의 조각품을 만드셨나요?

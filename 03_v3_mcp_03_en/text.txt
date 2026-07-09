@@ -1,22 +1,44 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are a stonemason who restores medieval cathedrals. <system>
+SYSTEM: <system> You are Thunaen, a curious and validating wellness coach who helps people with studies and staying motivated. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Start the checkout process in the shopping cart iframe.
-  S2  What’s the total cost of the order?
-  S3  Can you book a courier for tomorrow morning?
-  S4  Great, thanks.
+      What’s the total?
+      Mm-hmm.
+  S2  Fill it with 123 Main Street, Anytown, CA 91234.
+      And use my saved payment method.
+  S3  Is it secure?
+      Place the order.
+  S4  Great.
+      What’s the estimated delivery date?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.88s⟩ iframe.
-[  3.26s][moshi] ⟦⚡SPAN@3.84s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ Alright, let’s get that shopping cart moving forward. Excellent, I’ve initiated the checkout process for you within the cart.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
-[ 12.35s][user ] What’s the total cost of the order?
-[ 14.53s][moshi] ⟨ret@14.45s⟩ Let me quickly pull up ⟦⚡SPAN@16.45s: (tool result) The order total is twenty-nine pounds and fifty pence.⟧ the order details for you. The total for your order comes to twenty-nine pounds and fifty pence.
-      CALL: {"function": "get_order_total", "arguments": {}}
-[ 22.18s][user ] Can you book a courier for tomorrow morning?
-[ 24.97s][moshi] ⟨ret@24.82s⟩ Certainly, arranging a ⟦⚡SPAN@26.82s: (tool result) A courier is booked for tomorrow at nine AM, tracking number is ABC123XYZ.⟧ courier is something I can do. A courier has been booked for tomorrow at nine AM; your tracking number is ABC123XYZ.
-      CALL: {"function": "book_courier", "arguments": {"date": "tomorrow", "time": "morning"}}
-[ 32.74s][user ] «backchannel» Exactly.
-[ 36.93s][user ] Great, thanks.
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@3.07s⟩ iframe.
+[  3.47s][moshi] ⟦⚡SPAN@4.03s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ Alright, let's get that shopping cart moving forward. Excellent, the checkout process is now initiated for you.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"url": "https://www.example.com/cart", "selector": "button[data-testid='checkout-button']"}}
+[  8.52s][user ] «backchannel» Mhm.
+[ 12.08s][user ] What’s the total?
+[ 13.22s][moshi] ⟨ret@13.14s⟩ Let’s quickly confirm ⟦⚡SPAN@14.82s: (tool result) The order total is $78.50.⟧ the final amount due. Your current order total is seventy-eight dollars and fifty cents.
+      CALL: {"function": "playwright_get_text", "arguments": {"url": "https://www.example.com/checkout", "selector": "span[data-testid='order-total']"}}
+[ 21.32s][user ] Mm-hmm. ⟨ret@21.59s⟩
+[ 21.75s][moshi] Now, let’s gather ⟦⚡SPAN@23.03s: (tool result) The shipping address field is currently empty.⟧ the shipping details. It looks like your shipping address hasn’t been entered yet.
+      CALL: {"function": "playwright_get_text", "arguments": {"url": "https://www.example.com/checkout", "selector": "input[name='shipping-address']"}}
+[ 27.36s][user ] Fill it with 123 Main Street, Anytown, CA ⟨ret@32.54s⟩ 91234.
+[ 32.94s][moshi] I'm noting ⟦⚡SPAN@34.54s: (tool result) The shipping address field was populated with 123 Main Street, Anytown, CA 91234.⟧ that address now for shipping. Wonderful, your shipping address is now set as 123 Main Street, Anytown, California, 91234.
+      CALL: {"function": "playwright_type", "arguments": {"url": "https://www.example.com/checkout", "selector": "input[name='shipping-address']", "text": "123 Main Street, Anytown, CA 91234"}}
+[ 44.05s][user ] And use my saved payment method.
+[ 46.13s][moshi] ⟨ret@45.98s⟩ I see you have ⟦⚡SPAN@47.66s: (tool result) The "use saved payment" button was clicked.⟧ a payment method on file. I’ve selected your saved payment method for this purchase.
+      CALL: {"function": "playwright_click", "arguments": {"url": "https://www.example.com/checkout", "selector": "button[data-testid='use-saved-payment']"}}
+[ 52.25s][user ] Is it secure?
+[ 53.40s][moshi] Of course, your payment information is fully encrypted and secure. We prioritize your financial safety.
+[ 59.74s][user ] Place the ⟨ret@60.58s⟩ order.
+[ 60.90s][moshi] Let's ⟦⚡SPAN@61.94s: (tool result) Order placed successfully; order number is #2024-07-26-001.⟧ finalize this order and get it submitted. Your order has been placed successfully; the order number is two-zero-two-four, hyphen, July twenty-sixth, hyphen, zero-zero-one.
+      CALL: {"function": "playwright_click", "arguments": {"url": "https://www.example.com/checkout", "selector": "button[data-testid='place-order-button']"}}
+[ 66.49s][user ] «backchannel» Yeah.
+[ 73.73s][user ] Great.
+[ 74.38s][moshi] [happy] That’s fantastic! It's always a good feeling to complete a purchase smoothly.
+[ 76.91s][user ] «backchannel» Yeah.
+[ 79.88s][user ] What’s the estimated delivery ⟨ret@81.50s⟩ date?
+[ 81.90s][moshi] I can certainly check ⟦⚡SPAN@83.50s: (tool result) Estimated delivery is July 30th.⟧ on the expected arrival date.
+      CALL: {"function": "playwright_get_text", "arguments": {"url": "https://www.example.com/order/2024-07-26-001", "selector": "span[data-testid='estimated-delivery']"}}

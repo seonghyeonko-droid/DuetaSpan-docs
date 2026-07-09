@@ -1,61 +1,10 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+SYSTEM: <system> You are Korana, a thoughtful and soft-spoken life coach who helps people with family and relationships. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was reading about the Du Plessis family and wondered, where does tha
-      So, it's French, but how did it get to South Africa? I thought I read 
-      And they were successful there? Did they become prominent?
-      Were there any… well, famous Du Plessis people? Anyone I might recogni
-  S2  Landdrost? What does that even mean?
-      So, kind of like a sheriff?
-      Interesting. Did the name change over time? Like, become more… Afrikaa
-  S3  So, it's still considered a French name, even after all that?
-      That makes sense. Do many people with that name still live in France t
-      Wow. That's quite a journey for a name.
-  S4  I— I mean, it’s a really cool story. I’m glad I asked.
-      Is there any connection between the Du Plessis name and any specific c
-      Fleurs-de-lis? That *is* French!
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][user ] I was reading about the Du Plessis family and wondered, where does that name actually come from? It sounds… French, maybe?
-[  7.86s][moshi] That’s an interesting question, and a common one, actually. The name does have a fascinating history rooted in Europe.
-[ 13.70s][moshi] ⟨ret@13.30s⟩ Let’s explore ⟦⚡SPAN@14.58s: The surname Du Plessis is of French origin, derived from the Old French “du” meaning “of the” and “plessis,” d⟧ the origins of that surname— The name Du Plessis originates from France, meaning “of the fort” or “of the enclosed space.”
-[ 17.12s][user ] «backchannel» Yeah.
-[ 21.92s][user ] So, it's French, but how did it get to South Africa? I thought I read something about Huguenots.
-[ 27.70s][moshi] You are quite right to connect it with the Huguenots. Their dispersal significantly impacted the name's distribution.
-[ 33.87s][moshi] ⟨ret@33.55s⟩ That’s a very ⟦⚡SPAN@35.47s: Many French Huguenots, fleeing religious persecution in the 17th and 18th centuries, settled in the Cape Colon⟧ perceptive connection— French Huguenots brought the Du Plessis name to the Cape Colony while escaping religious persecution.
-[ 39.72s][user ] «backchannel» Mhm.
-[ 42.21s][user ] And they were successful there? Did they become prominent?
-[ 45.49s][moshi] They certainly did establish themselves. Several members of the family rose to positions of influence within the colony.
-[ 51.44s][moshi] ⟨ret@51.36s⟩ Their ⟦⚡SPAN@52.32s: The Du Plessis family became prominent in South Africa, with members serving in government and establishing la⟧ contributions were certainly notable— The Du Plessis family became prominent in South Africa, holding land and serving in government.
-[ 59.41s][user ] Were there any… well, famous Du Plessis people? Anyone I might recognize?
-[ 65.36s][moshi] [laugh] Indeed, there are several. One figure stands out particularly in the early colonial period.
-[ 70.65s][moshi] ⟨ret@70.41s⟩ There is ⟦⚡SPAN@71.53s: Willem Adriaan van der Stel Du Plessis was a significant figure in early South African colonial history, servi⟧ a figure who stands out— Willem Adriaan van der Stel Du Plessis was an influential farmer and Landdrost in the Cape Colony.
-[ 78.98s][user ] Landdrost? What does that even mean?
-[ 81.96s][moshi] It was a rather important position—essentially a magistrate, or local administrator, appointed by the colonial government.
-[ 88.59s][moshi] ⟨ret@88.44s⟩ It was ⟦⚡SPAN@89.72s: A Landdrost was a magistrate and local administrator appointed by the Dutch East India Company and later the B⟧ a position of considerable authority— A Landdrost was a local administrator appointed by the colonial government in South Africa.
-[ 95.54s][user ] So, kind of like a sheriff?
-[ 97.42s][moshi] A reasonable comparison, yes, though with broader administrative duties than a typical sheriff. It was a very influential role.
-[104.23s][moshi] ⟨ret@104.07s⟩ That’s a ⟦⚡SPAN@105.27s: Landdrosts oversaw local law enforcement, land allocation, and dispute resolution within their designated dist⟧ helpful way to consider it— Landdrosts oversaw law enforcement, land, and disputes in the Cape Colony.
-[108.38s][user ] «backchannel» Yeah.
-[111.95s][user ] Interesting. Did the name change over time? Like, become more… Afrikaans?
-[117.52s][moshi] The pronunciation and sometimes spelling did evolve, as languages often do when adopted into new contexts.
-[124.31s][moshi] ⟨ret@124.23s⟩ The name ⟦⚡SPAN@125.59s: Over time, the spelling and pronunciation of Du Plessis were influenced by Afrikaans, becoming more commonly w⟧ did undergo some linguistic shifts— The name’s spelling and pronunciation were influenced by Afrikaans over time.
-[128.99s][user ] «backchannel» Mhm.
-[131.54s][user ] So, it's still considered a French name, even after all that?
-[135.51s][moshi] Absolutely. While its form adapted, its fundamental origin remains firmly rooted in French history.
-[141.47s][moshi] ⟨ret@141.32s⟩ ⟦⚡SPAN@141.82s: Despite Afrikaans influences, the surname Du Plessis retains its French etymological roots and historical asso⟧ The origins remain distinctly French— The name retains its French etymological roots and Huguenot history.
-[145.30s][user ] «backchannel» Yeah.
-[147.92s][user ] That makes sense. Do many people with that name still live in France today?
-[153.26s][moshi] Actually, it’s less common in France now than it is in South Africa, due to the Huguenot exodus.
-[158.51s][moshi] ⟨ret@158.27s⟩ The ⟦⚡SPAN@159.23s: Today, the Du Plessis surname is more prevalent in South Africa and among diaspora communities descended from ⟧ distribution is rather interesting— The name is more common in South Africa and diaspora communities than in France.
-[167.21s][user ] Wow. That's quite a journey for a name.
-[170.36s][moshi] Indeed. Names often carry within them a history of migration, adaptation, and resilience. It's a microcosm of larger historical processes.
-[180.98s][user ] I— I mean, it’s a really cool story. I’m glad I asked.
-[184.48s][moshi] I am pleased I could illuminate its history for you. It’s a name that truly reflects the complexities of colonial and migration patterns.
-[193.42s][user ] Is there any connection between the Du Plessis name and any specific crest or coat of arms?
-[199.78s][moshi] There are several, actually, adopted by different branches of the family over the centuries.
-[204.27s][moshi] ⟨ret@204.12s⟩ Several heraldic ⟦⚡SPAN@205.24s: The Du Plessis family adopted various coats of arms over time, often featuring a silver shield with a black ch⟧ symbols are associated with it— The Du Plessis family coats of arms often featured a silver shield with a black chevron and fleurs-de-lis.
-[215.12s][user ] Fleurs-de-lis? That *is* French!
-[217.90s][moshi] [happy] Precisely
+[  0.00s][user ] I was wondering about the name du Plessis… it sounds quite… French, doesn't it?
+[  5.37s][moshi] It certainly has a sophisticated ring to it.
+[  8.10s][moshi] ⟨ret@7.70s⟩ Let’s explore the origins ⟦⚡SPAN@9.70s: Du Plessis is a French surname originating as a topographical name for someone who lived near a fortified plac⟧ of that surname, shall we? The name du Plessis comes from Old French, meaning “the fortress” or “the castle”.
+[ 14.13s][user ] «backchannel» Mhm.
+[ 16.47s][user ] Oh, interesting! But I’ve heard it’s common in South Africa too… how did it get ⟨ret@21.93s⟩ there?
+[ 22.17s][moshi] That’s a very astute ⟦⚡SPAN@23.93s: Huguenots fleeing religious persecution in France settled in South Africa in the late seventeenth century, bri⟧ observation, linking France and South Africa. Huguenots, French Protestants, settled in South Africa and brought the surname du Plessis with them in the late sixteen hundreds.

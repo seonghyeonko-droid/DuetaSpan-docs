@@ -1,23 +1,18 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+SYSTEM: <system> You are Jal, a kind and steady wellness coach who helps people with stress relief and mindfulness. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Do you know who played the guitar solo on Michael Jackson’s “Beat It”?
-      Wow, I always thought it was someone else! I— I mean, it just doesn't 
-  S2  Hey, did you take the trash out yet?
-  S3  Sorry about that. So, was he asked specifically to make it different, 
-  S4  That’s amazing! So it was completely his own artistic choice. [happy]
+  S1  I was just wondering, who actually played the guitar solo on Michael J
+  S2  Wow, really? Eddie Van Halen? I always assumed it was someone from Jac
+  S3  Hey, did you remember to take the chicken out of the freezer?
+  S4  Sorry about that, where was I? Oh right, Van Halen on “Beat It.” Was h
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Do you know who played the guitar solo on Michael Jackson’s “Beat It”? It’s such a great ⟨ret@5.22s⟩ solo.
-[  5.45s][moshi] That is ⟦⚡SPAN@6.58s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ a very popular question, indeed. Eddie Van Halen was the musician who played that iconic guitar solo.
-[  8.65s][user ] «backchannel» Right.
-[ 12.80s][user ] Wow, I always thought it was someone else! I— I mean, it just doesn't sound like his usual style.
-[ 19.06s][moshi] Many listeners are surprised by the collaboration, given Van Halen’s distinct sound.
-[ 20.43s][user ] «backchannel» Mm-hmm.
-[ 23.70s][user ] «to_other» Hey, did you take the trash out yet?
-[ 25.64s][user ] Sorry about that. So, was he asked specifically to make it different, do you ⟨ret@30.68s⟩ think?
-[ 30.91s][moshi] Considering the ⟦⚡SPAN@31.88s: Van Halen recorded his guitar solo separately and Jackson did not direct him on how to play it.⟧ context, that is a reasonable inquiry. Van Halen recorded the solo independently; Jackson gave him no specific direction.
-[ 34.98s][user ] «backchannel» Yeah.
-[ 38.36s][user ] That’s amazing! So it was completely his own artistic choice. [happy]
+[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson's "Beat It"? It’s always sounded so different from his other ⟨ret@8.18s⟩ songs.
+[  8.42s][moshi] That's a great ⟦⚡SPAN@10.18s: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.⟧ question, and a really interesting musical detail. Eddie Van Halen, known for his innovative technique, played that iconic guitar solo.
+[ 12.21s][user ] «backchannel» Okay.
+[ 18.30s][user ] Wow, really? Eddie Van Halen? I always assumed it was someone from Jackson’s band.
+[ 24.19s][user ] «to_other» Hey, did you remember to take the chicken out of the freezer?
+[ 27.32s][user ] Sorry about that, where was I? Oh right, Van Halen on “Beat It.” Was he expensive ⟨ret@33.13s⟩ to hire?
+[ 33.52s][moshi] It’s natural to ⟦⚡SPAN@34.97s: Eddie Van Halen was paid $20,000 for his work on “Beat It”.⟧ wonder about those behind-the-scenes details. He was paid twenty thousand dollars for recording his guitar solo on the track.

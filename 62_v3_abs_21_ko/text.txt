@@ -1,0 +1,37 @@
+v3_abs_21_ko src=squad2 style=abstain
+SYSTEM: <system> 당신은 건강 및 일상 습관 관련 어려움을 겪는 사람들을 돕는 차분하고 공감적인 상담사 Nias입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  프랑스 상원에는 상원의원이 몇 명이나 있어요?
+      아, 그럼 미국 상원은요? 미국 상원 의원은 몇 명이나 되나요?
+  S2  알아두면 좋네요. 음, 각 주에 두 명씩 있다면, 그건—
+      알겠습니다. 미국 상원 의원의 평균 연령은 어떻게 되나요?
+  S3  와, 꽤 나이가 많네요. 음—정치인들은 보통 그런가요?
+      임기 제한이 있나요?
+  S4  그렇다면 이론적으로는 영원히 봉사할 수 있다는 건가요? 그건 좀… 특이하네요.
+      네, 그런 것 같아요. 좋아요, 마지막 질문—렌틸 수프 레시피를 찾아줄 수 있나요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 프랑스 상원에는 상원의원이 몇 명이나 ⟨ret@2.95s⟩ 있어요?
+[  3.35s][moshi] 좋은 질문이세요, ⟦⚡SPAN@4.95s: (no information found)⟧ 다른 정부 시스템을 이해하시는군요. 죄송하지만, 지금 당장은 그 특정 숫자를 알려드릴 수 없어요.
+[  6.81s][user ] «backchannel» 네.
+[ 10.48s][user ] 아, 그럼 미국 상원은요? 미국 상원 의원은 몇 명이나 ⟨ret@14.36s⟩ 되나요?
+[ 14.76s][moshi] 아, 미국 상원이네요—저에게는 ⟦⚡SPAN@16.28s: The United States Senate is composed of one hundred senators, two from each state.⟧ 훨씬 익숙한 분야예요. 미국 상원에는 백 명의 의원이 있고, 각 주에서 두 명씩 대표해요.
+[ 19.44s][user ] «backchannel» 음.
+[ 22.73s][user ] 알아두면 좋네요. 음, 각 주에 두 명씩 있다면, 그건—
+[ 27.10s][moshi] 네, 현재 50개의 주가 대표되고 있다는 뜻이에요.
+[ 30.86s][user ] 알겠습니다. 미국 상원 의원의 평균 연령은 어떻게 되나요?
+[ 34.34s][moshi] ⟨ret@34.26s⟩ 흥미로운 세부 ⟦⚡SPAN@35.94s: As of November 2023, the average age of a US Senator is sixty-three point nine years.⟧ 사항을 생각하시는군요—2023년 말 기준으로 미국 상원 의원의 평균 연령은 63.9세입니다.
+[ 38.05s][user ] «backchannel» 네.
+[ 41.78s][user ] 와, 꽤 나이가 많네요. 음—정치인들은 보통 그런가요?
+[ 45.89s][moshi] 리더십 위치에 있는 사람들은 경험을 반영하여 나이가 많은 경우가 흔해요.
+[ 50.88s][user ] 임기 제한이 있나요?
+[ 52.53s][moshi] «interrupted» 좋은 지적이세요—
+[ 53.70s][moshi] ⟨ret@53.46s⟩ 현재 미국 상원 ⟦⚡SPAN@55.14s: There are no term limits for members of the United States Senate.⟧ 의원에게는 임기 제한이 없어요.
+[ 55.80s][user ] «backchannel» 네.
+[ 56.86s][user ] 그렇다면 이론적으로는 영원히 봉사할 수 있다는 건가요? 그건 좀… 특이하네요.
+[ 62.05s][moshi] 그것은 많은 제도적 지식을 허용하지만, 복잡한 문제이기도 해요.
+[ 64.47s][user ] «backchannel» 네.
+[ 65.95s][user ] 네, 그런 것 같아요. 좋아요, 마지막 질문—렌틸 수프 레시피를 찾아줄 수 있나요?
+[ 70.83s][moshi] ⟨ret@70.75s⟩ Allrecipes에 30분 준비 시간과 ⟦⚡SPAN@72.75s: (tool result) Allrecipes.com lists a highly-rated lentil soup recipe with 4.7 stars, requiring 30 minutes prep⟧ 2시간 30분 조리 시간이 필요한 최고 평점의 렌틸 수프 레시피가 있어요.

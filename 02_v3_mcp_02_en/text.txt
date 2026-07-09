@@ -1,23 +1,52 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+SYSTEM: <system> You are Driaus, a kind and steady supportive advisor who helps people with productivity and daily routines. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Begin watching for a weather update from weather dot example dot com.
-  S2  Oh, that's… colder than I thought, actually. I— I mean, I was hoping f
-  S3  Maybe. Um, could you check if there are any direct flights from New Yo
-  S4  Hmm, the United one sounds good. Book that for me, please.
+      Okay, good. Um… I was thinking about my day.
+      I need to book a table for two at Bella Italia, tomorrow evening aroun
+  S2  Perfect.
+      Now, could you check if the 8:15 train to Oxford is on time?
+      Oh, that's annoying. I— I mean, five minutes isn't terrible.
+  S3  Could you set a reminder for me to leave for the station at 7:40?
+      That's really helpful, thank you. I’m also trying to find a good flori
+      Could you search for florists near me that are open now?
+  S4  Hmm, Petal Paradise sounds nice. What’s their phone number?
+      Excellent. I think that's everything for now.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.54s⟩ com.
-[  3.77s][moshi] Certainly, I can ⟦⚡SPAN@5.30s: (tool result) The website reports current conditions in London are 12 degrees Celsius and cloudy.⟧ monitor that website for you. The current temperature in London is twelve degrees Celsius with cloudy skies.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot com.
+[  5.24s][moshi] ⟨ret@5.01s⟩ Certainly, I ⟦⚡SPAN@6.13s: (tool result) The website reports current conditions are 72 degrees Fahrenheit and partly cloudy.⟧ can monitor that for you. Right now, it’s seventy-two degrees and partly cloudy there.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 12.99s][user ] Oh, that's… colder than I thought, actually. I— I mean, I was hoping for sunshine.
-[ 18.86s][moshi] London weather can be quite changeable, yes. Are you planning a trip there?
-[ 23.58s][user ] Maybe. Um, could you check if there are any direct flights from New York to ⟨ret@28.71s⟩ London tomorrow?
-[ 29.02s][moshi] I can ⟦⚡SPAN@30.23s: (tool result) There are three direct flights tomorrow: United at 9:00 AM for $750, British Airways at 6:00 PM ⟧ certainly look into flight availability for you. There are three direct flights tomorrow, ranging from seven hundred fifty to eight hundred twenty dollars.
-      CALL: {"function": "flights_search", "arguments": {"from": "New York", "to": "London", "date": "tomorrow"}}
-[ 33.12s][user ] «backchannel» Mhm.
-[ 38.44s][user ] Hmm, the United one sounds good. Book that for me, please.
-[ 42.41s][moshi] ⟨ret@42.34s⟩ Absolutely, ⟦⚡SPAN@43.38s: (tool result) Your United flight to London tomorrow at 9:00 AM is confirmed; booking reference is Alpha-Charli⟧ I can take care of that booking for you. Your flight on United at nine AM is confirmed, booking reference Alpha-Charlie-nine-two-seven.
-      CALL: {"function": "flights_book", "arguments": {"flight": "United", "time": "9:00 AM", "price": "$750"}}
+[ 11.41s][user ] Okay, good. Um… I was thinking about my day.
+[ 15.23s][moshi] It sounds like you're planning ahead, which is excellent.
+[ 16.48s][user ] «backchannel» Right.
+[ 18.46s][user ] I need to book a table for two at Bella Italia, tomorrow evening around ⟨ret@23.38s⟩ seven.
+[ 23.62s][moshi] I can certainly ⟦⚡SPAN@25.06s: (tool result) Reservation confirmed at Bella Italia for two people tomorrow at 7:00 PM.⟧ assist with that reservation. Wonderful—I've confirmed a table for two at Bella Italia tomorrow at seven.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Bella Italia", "date": "tomorrow", "time": "7:00 PM", "party_size": 2}}
+[ 33.56s][user ] Perfect.
+[ 34.20s][moshi] I’m glad that worked so well for you.
+[ 34.94s][user ] «backchannel» Yeah.
+[ 36.28s][user ] Now, could you check if the 8:15 train to Oxford is on time?
+[ 40.71s][moshi] ⟨ret@40.63s⟩ Let me ⟦⚡SPAN@41.67s: (tool result) The 8:15 train to Oxford is currently running five minutes behind schedule.⟧ check the train schedule for you now. The 8:15 to Oxford is currently delayed by five minutes.
+      CALL: {"function": "check_train_status", "arguments": {"train_number": "8:15", "destination": "Oxford"}}
+[ 47.76s][user ] Oh, that's annoying. I— I mean, five minutes isn't terrible.
+[ 51.65s][moshi] It’s understandable to feel a little frustrated with a delay, even a small one.
+[ 53.61s][user ] «backchannel» Yeah.
+[ 56.87s][user ] Could you set a reminder for me to leave for the station at 7:40?
+[ 61.30s][moshi] ⟨ret@61.22s⟩ Absolutely, I ⟦⚡SPAN@62.50s: (tool result) Reminder set for 7:40 PM: Leave for station.⟧ can schedule that reminder. I’ve set a reminder for 7:40 PM to leave for the station.
+      CALL: {"function": "set_reminder", "arguments": {"time": "7:40 PM", "description": "Leave for station"}}
+[ 65.83s][user ] «backchannel» Yeah.
+[ 68.13s][user ] That's really helpful, thank you. I’m also trying to find a good florist.
+[ 72.91s][moshi] Finding the right florist can really brighten someone's day.
+[ 78.12s][user ] Could you search for florists near me that are open now?
+[ 81.71s][moshi] ⟨ret@81.63s⟩ I’ll locate some ⟦⚡SPAN@83.63s: (tool result) Three florists nearby are open now: Petal Paradise, Bloom Room, and Floral Fantasy.⟧ nearby florists for you presently. Three florists are open nearby: Petal Paradise, Bloom Room, and Floral Fantasy.
+      CALL: {"function": "search_nearby", "arguments": {"query": "florist", "open_now": true}}
+[ 85.42s][user ] «backchannel» Yeah.
+[ 92.15s][user ] Hmm, Petal Paradise sounds nice. What’s their phone number?
+[ 96.72s][moshi] ⟨ret@96.64s⟩ Let me ⟦⚡SPAN@98.64s: (tool result) Petal Paradise’s phone number is 555-123-4567.⟧ look up that contact information. Their phone number is 555-123-4567.
+      CALL: {"function": "get_business_details", "arguments": {"business_name": "Petal Paradise"}}
+[ 98.94s][user ] «backchannel» Exactly.
+[104.53s][user ] Excellent. I think that's everything for now.
+[107.46s][moshi] It was a pleasure helping you organize your day.

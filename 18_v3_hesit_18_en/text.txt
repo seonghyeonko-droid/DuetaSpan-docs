@@ -1,23 +1,50 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
+SYSTEM: <system> You are Bena, a curious and validating counselor who helps people with career choices and work stress. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just reading about Pompeii… uh, and it got me wondering— when wa
-      Nineteen forty-four… wow, that’s… relatively recent, I guess. Was it a
-  S2  Hmm— I mean, were there still people affected, though? Or was it mostl
-  S3  Oh, a US Air Force base? That’s… surprising. Was that during the war?
-  S4  So, it actually disrupted military operations? That’s quite a story.
+  S1  I was just reading about Pompeii, and it got me thinking… uh, when did
+      Yeah, I mean, is it still… active? I guess that’s obvious, but—
+      Nineteen forty-four? Wow. That’s… more recent than I thought.
+  S2  I— I mean, were there… casualties that time?
+      Twenty-six… that’s terrible.
+      So, is it being… monitored? Closely, I mean?
+  S3  What kind of tools? I’m just… curious.
+      Satellite imagery… that’s pretty advanced.
+      But is there a plan, like, if it erupts again?
+  S4  Evacuation plans… good. That’s… reassuring, I guess.
+      It’s just… a little scary to think about, you know? Living near a volc
+      Yeah. I— I guess it puts things in perspective.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just reading about Pompeii… uh, and it got me wondering— when was the last time Vesuvius actually ⟨ret@7.12s⟩ erupted?
-[  7.36s][moshi] That’s a very ⟦⚡SPAN@9.12s: Mount Vesuvius last erupted in March of 1944.⟧ good question, and a common one for visitors to the area. The last eruption of Mount Vesuvius occurred in March nineteen forty-four.
-[ 19.48s][user ] Nineteen forty-four… wow, that’s… relatively recent, I guess. Was it a big one?
-[ 25.39s][moshi] It was considerably smaller than the seventy-nine eruption, thankfully. It didn’t cause the widespread devastation of the past.
-[ 34.79s][user ] Hmm— I mean, were there still people affected, though? Or was it mostly just—
-[ 39.74s][moshi] ⟨ret@39.66s⟩ That’s a very ⟦⚡SPAN@41.66s: The 1944 eruption caused damage to nearby villages and the US Air Force base.⟧ important consideration, because even a smaller eruption— The nineteen forty-four eruption damaged nearby villages and a United States Air Force base.
-[ 44.29s][user ] «backchannel» Yeah.
-[ 51.67s][user ] Oh, a US Air Force base? That’s… surprising. Was that during the war?
-[ 57.48s][moshi] Yes, indeed. The base had been established there during the Allied invasion of Italy.
-[ 64.37s][user ] So, it actually disrupted military operations? That’s quite a story.
-[ 68.61s][moshi] It did cause some disruption, though thankfully no lives were lost during that event.
+[  0.00s][user ] I was just reading about Pompeii, and it got me thinking… uh, when did Vesuvius last… actually erupt?
+[  6.13s][moshi] That’s a very natural question after learning about Pompeii. It’s understandable to wonder about its ongoing activity.
+[ 14.42s][user ] Yeah, I mean, is it still… active? I guess that’s obvious, ⟨ret@18.40s⟩ but—
+[ 18.70s][moshi] Considering the history, ⟦⚡SPAN@20.32s: Mount Vesuvius last erupted in March 1944.⟧ that’s a perfectly valid concern. Vesuvius’s most recent eruption occurred in March nineteen forty-four.
+[ 27.21s][user ] Nineteen forty-four? Wow. That’s… more recent than I thought.
+[ 32.25s][moshi] It’s easy to assume ancient events are long past, isn't it? Time can be deceptive.
+[ 38.21s][user ] I— I mean, were there… casualties that time?
+[ 41.42s][moshi] ⟨ret@41.19s⟩ It’s good ⟦⚡SPAN@42.63s: The 1944 eruption caused approximately 26 deaths.⟧ to think about the human impact of these events. The nineteen forty-four eruption sadly caused around twenty-six deaths.
+[ 49.45s][user ] Twenty-six… that’s terrible.
+[ 51.23s][moshi] It certainly was a difficult time for those communities, a reminder of nature’s power.
+[ 54.74s][user ] «backchannel» Yeah.
+[ 56.64s][user ] So, is it being… monitored? Closely, I mean?
+[ 60.15s][moshi] ⟨ret@60.12s⟩ Absolutely, ongoing monitoring ⟦⚡SPAN@62.12s: Vesuvius is one of the most closely monitored volcanoes in the world.⟧ is essential for safety. Vesuvius is among the most closely monitored volcanoes globally.
+[ 66.34s][user ] «backchannel» Oh.
+[ 68.59s][moshi] Scientists use a variety of tools to track its activity, ensuring early warnings.
+[ 73.80s][user ] What kind of tools? I’m just… curious.
+[ 76.97s][moshi] They use seismographs, gas sensors, and satellite imagery, amongst other technologies.
+[ 82.99s][user ] Satellite imagery… that’s pretty advanced.
+[ 86.03s][moshi] It allows them to detect even subtle changes in the volcano's shape and temperature.
+[ 89.26s][user ] «backchannel» Right.
+[ 91.34s][user ] But is there a plan, like, if it erupts again?
+[ 93.86s][moshi] ⟨ret@93.81s⟩ Planning for potential events ⟦⚡SPAN@95.73s: Evacuation plans are in place for the surrounding population.⟧ is always prudent. Evacuation plans are established for the people living nearby.
+[ 96.21s][user ] «backchannel» Uh-huh.
+[101.12s][user ] Evacuation plans… good. That’s… reassuring, I guess.
+[105.24s][moshi] It’s a testament to the dedication of the scientists and emergency services involved.
+[106.66s][user ] «backchannel» Yeah.
+[109.79s][user ] It’s just… a little scary to think about, you know? Living near a volcano.
+[114.58s][moshi] It’s perfectly natural to feel a sense of apprehension, living with that awareness.
+[116.43s][user ] «backchannel» Right.
+[120.73s][user ] Yeah. I— I guess it puts things in perspective.
+[124.33s][moshi] It certainly does. It can be a powerful reminder of our place in the world.

@@ -1,0 +1,47 @@
+v3_mem_34_en src=mem style=mem
+SYSTEM: <system> You are Hia, a calm and patient personal guide who helps people with big life transitions. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  I’m feeling really stuck, like I need a big change, but I don’t even k
+      It’s just…everything feels so uncertain. I— I mean, what if I make the
+      I’m thinking about maybe moving. Somewhere completely different.
+  S2  I don’t know… maybe somewhere warm. Somewhere with good food.
+      Yeah. That sounds nice.
+      Well, the weather, obviously. And… I miss having friends nearby.
+  S3  No, definitely not. I want to be *far* away. Somewhere… completely dif
+      Right.
+      Somewhere relaxed, I think. Not too fast-paced. And maybe with a stron
+  S4  Not really. I haven't thought that far ahead yet, honestly.
+      Maybe. I’m just… scared, I guess.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] I’m feeling really stuck, like I need a big change, but I don’t even know where to start.
+[  4.15s][moshi] It’s completely understandable to feel overwhelmed when facing big life shifts, Noah. Many people experience that.
+[ 11.74s][user ] It’s just…everything feels so uncertain. I— I mean, what if I make the wrong choice?
+[ 17.25s][moshi] That’s a very valid concern. Uncertainty is inherent in any transition, but it doesn’t mean a choice is wrong, just unknown.
+[ 22.45s][user ] «backchannel» Right.
+[ 25.48s][user ] I’m thinking about maybe moving. Somewhere completely different.
+[ 29.02s][moshi] That's a significant thought, exploring a new location. Do you have any places in mind, or are you just beginning to brainstorm?
+[ 32.89s][user ] «backchannel» Okay.
+[ 36.18s][user ] I don’t know… maybe somewhere warm. Somewhere with good ⟨ret@39.77s⟩ food.
+[ 40.09s][moshi] Considering ⟦⚡SPAN@40.97s: [profile] User's favorite cuisine is Mexican.⟧ your preferences is a great first step. You mentioned enjoying Mexican cuisine; perhaps somewhere with a vibrant Mexican food scene would appeal to you.
+[ 50.13s][user ] Yeah. That sounds nice.
+[ 51.79s][moshi] It’s wonderful to focus on what brings you joy. What aspects of your current life feel most limiting?
+[ 55.09s][user ] «backchannel» Mm-hmm.
+[ 57.84s][user ] Well, the weather, obviously. And… I miss having friends nearby.
+[ 61.69s][moshi] Those are important considerations, a supportive network and pleasant weather. I'm curious, are you thinking of staying in France?
+[ 64.89s][user ] «backchannel» Mhm.
+[ 69.68s][user ] No, definitely not. I want to be *far* away. Somewhere… completely different. I was wondering how far it is from my place to the ⟨ret@78.02s⟩ airport?
+[ 78.25s][moshi] Calculating travel time ⟦⚡SPAN@80.02s: [profile] User's home address is 30 Oak Avenue.⟧ is practical when considering a move. From 30 Oak Avenue, it's approximately fifteen kilometers to Charles de Gaulle Airport. It usually takes about thirty to forty minutes by taxi.
+[ 83.36s][user ] «backchannel» Right.
+[ 92.73s][user ] Right.
+[ 93.24s][moshi] Thinking about distance is good, but what kind of lifestyle are you hoping to find in this new place?
+[ 95.19s][user ] «backchannel» Yeah.
+[ 98.31s][user ] Somewhere relaxed, I think. Not too fast-paced. And maybe with a strong arts community.
+[103.75s][moshi] A relaxed pace and a vibrant arts scene… that paints a lovely picture. Are there any cities that come to mind, even just fleetingly?
+[113.05s][user ] Not really. I haven't thought that far ahead yet, honestly.
+[116.53s][moshi] That's perfectly alright. Exploration takes time, Noah. We can brainstorm some options together if you’d like.
+[120.72s][user ] «backchannel» Yeah.
+[124.27s][user ] Maybe. I’m just… scared, I guess.
+[127.75s][moshi] [happy] It’s brave to acknowledge your fear, and it’s perfectly normal to feel that way when contemplating such a big step.

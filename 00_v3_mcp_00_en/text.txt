@@ -1,22 +1,52 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+SYSTEM: <system> You are Nellara, a upbeat and supportive counselor who helps people with friendships and social life. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Can you give me the coordinates for the Eiffel Tower in Paris?
-  S2  Okay, and can you find me hotels near there?
-  S3  What’s the Plaza Athénée like?
-  S4  Book me a room at the Raphael for one night.
+      Okay, great. And what’s the quickest route from there to the Louvre Mu
+      Twenty-three minutes? That’s not too bad. Is it a pretty direct route?
+  S2  Actually, I was hoping to find a nice cafe near the Louvre—
+      That sounds perfect! Do they have outdoor seating?
+      Excellent! Could you make a reservation for two people there for, say,
+  S3  Wonderful, thank you so much! I feel much more prepared now.
+      Do you think I should learn a few basic French phrases?
+      That’s a good point. What’s the French word for “please”?
+  S4  S’il vous plaît… I’ll try to remember that. Is there anything else I s
+      Okay, good to know. It sounds like a lovely city.
+      I think I will. Thanks again for all your help.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.27s⟩ Paris?
-[  3.50s][moshi] Certainly, ⟦⚡SPAN@4.31s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ locating landmarks is something I do often. The Eiffel Tower's coordinates are forty-eight point eight five eight four degrees north, two point two nine four five degrees east.
-      CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 15.36s][user ] Okay, and can you find me hotels near ⟨ret@18.09s⟩ there?
-[ 18.49s][moshi] I can certainly ⟦⚡SPAN@20.09s: (tool result) Hotel Plaza Athénée is 0.8 km away, priced at 1200 euros per night. Hotel Raphael is 0.9 km away⟧ help with that, finding a good hotel is key. There are two hotels within one kilometer: Hotel Plaza Athénée at twelve hundred euros, and Hotel Raphael at four hundred fifty euros.
-      CALL: {"function": "hotels_search", "arguments": {"location": "48.8584, 2.2945", "radius": "1km"}}
-[ 23.45s][user ] «backchannel» Yeah.
-[ 31.09s][user ] What’s the Plaza Athénée like?
-[ 33.28s][moshi] It’s a very well-regarded luxury hotel, known for its exceptional service and beautiful decor. I’ve seen quite a few photos, actually.
-[ 41.33s][user ] Book me a room at the Raphael for one night.
-[ 44.36s][moshi] A comfortable choice, let's get that reservation confirmed for you.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.37s⟩ Paris?
+[  3.60s][moshi] Certainly, ⟦⚡SPAN@4.41s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ locating that iconic landmark is easy— The Eiffel Tower’s coordinates are forty-eight point eight five eight four latitude, and two point two nine four five longitude.
+[ 16.08s][user ] Okay, great. And what’s the quickest route from there to the Louvre ⟨ret@20.72s⟩ Museum, walking?
+[ 21.12s][moshi] Let’s map out a ⟦⚡SPAN@22.72s: (tool result) The walking route to the Louvre Museum is one point nine kilometers and will take approximately ⟧ pleasant stroll for you— That walk is one point nine kilometers, about twenty-three minutes, and a lovely way to see the city.
+      CALL: {"function": "maps_route", "arguments": {"start": "48.8584, 2.2945", "end": "Louvre Museum, Paris", "mode": "walking"}}
+[ 26.87s][user ] «backchannel» Yeah, totally.
+[ 29.54s][user ] Twenty-three minutes? That’s not too bad. Is it a pretty direct route?
+[ 34.14s][moshi] It is quite direct, mostly along the Seine. You’ll pass some beautiful sights.
+[ 36.25s][user ] «backchannel» Yeah.
+[ 39.54s][moshi] ⟨ret@39.39s⟩ Thinking about getting ⟦⚡SPAN@41.39s: (tool result) The Paris Metro has sixteen lines and three hundred and one stations.⟧ around Paris, have you considered— Paris has a very comprehensive metro system with sixteen lines and over three hundred stations. It’s a fantastic way to cover ground quickly.
+[ 53.20s][user ] Actually, I was hoping to find a nice cafe near the ⟨ret@56.56s⟩ Louvre—
+[ 56.88s][moshi] ⟦⚡SPAN@57.20s: (tool result) Café Verlet is a highly-rated cafe, four hundred meters from the Louvre Museum, with a four poin⟧ Oh, a cozy cafe sounds wonderful! Let me check for highly-rated cafes near the Louvre Museum.
+      CALL: {"function": "maps_search", "arguments": {"query": "cafe", "near": "Louvre Museum, Paris"}}
+[ 64.30s][moshi] Café Verlet is four hundred meters away and has a four point six star rating—it’s very popular.
+[ 70.45s][user ] That sounds perfect! Do they have outdoor ⟨ret@73.59s⟩ seating?
+[ 73.98s][moshi] ⟦⚡SPAN@74.55s: (tool result) Café Verlet has outdoor seating, and is open until eight pm.⟧ Checking the amenities at Café Verlet for you— Yes, Café Verlet does have outdoor seating, and they are open until eight this evening.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "Café Verlet, Paris"}}
+[ 77.08s][user ] «backchannel» Okay.
+[ 84.00s][user ] Excellent! Could you make a reservation for two people there for, say, seven ⟨ret@88.98s⟩ pm?
+[ 89.22s][moshi] Reserving a table ⟦⚡SPAN@90.98s: (tool result) Reservation confirmed at Café Verlet for two people at seven pm. Confirmation number is LV789.⟧ for you is my pleasure— Your reservation at Café Verlet is confirmed for two at seven pm; your confirmation number is LV789.
+      CALL: {"function": "maps_reserve", "arguments": {"place_id": "Café Verlet, Paris", "time": "19:00", "party_size": 2}}
+[101.98s][user ] Wonderful, thank you so much! I feel much more prepared now.
+[106.14s][moshi] You're very welcome! It's great you're feeling ready. Planning ahead always eases any travel nerves.
+[116.03s][user ] Do you think I should learn a few basic French phrases?
+[119.67s][moshi] Absolutely! Even a simple “Bonjour” and “Merci” can go a long way and are greatly appreciated.
+[126.33s][user ] That’s a good point. What’s the French word for “please”?
+[130.09s][moshi] The French word for “please” is “s’il vous plaît” – it's a bit of a mouthful, but worth learning!
+[135.99s][user ] S’il vous plaît… I’ll try to remember that. Is there anything else I should be aware of, culturally, in Paris?
+[142.81s][moshi] Parisians generally value politeness and a bit of formality initially. A friendly greeting is always a good start.
+[151.03s][user ] Okay, good to know. It sounds like a lovely city.
+[155.06s][moshi] It truly is! A city brimming with art, history, and delightful little moments. I hope you have a wonderful time.
+[162.76s][user ] I think I will. Thanks again for all your help.
+[166.37s][moshi] It was my pleasure assisting you. Enjoy your trip to Paris—and that reservation at Café Verlet!

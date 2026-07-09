@@ -1,20 +1,21 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+SYSTEM: <system> You are Doon, a warm and attentive counselor who helps people with studies and staying motivated. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was reading about Lux Aurunque, and I’m a bit confused about his lif
-  S2  Nineteen seventy… that’s earlier than I expected, given his work. What
-  S3  Hmm, interesting. So, was he involved in any major projects relatively
-  S4  That’s fascinating. And what was his approach to materials at that tim
+  S1  I’m trying to find out a little about Lux Aurunque. Can you tell me wh
+  S2  Nineteen seventy… that’s quite recent, isn’t it? Was he involved in po
+  S3  But was *he* a politician—
+  S4  A sculptor… interesting. What kind of sculptures did he create?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was reading about Lux Aurunque, and I’m a bit confused about his life—when exactly was he ⟨ret@6.09s⟩ born?
-[  6.32s][moshi] That’s a good question, ⟦⚡SPAN@8.01s: Lux Aurunque was born in nineteen seventy.⟧ understanding timelines is key. He was born in nineteen seventy, as records indicate.
-[ 12.88s][user ] Nineteen seventy… that’s earlier than I expected, given his work. What was happening in Rome at that time?
-[ 19.55s][moshi] Rome in nineteen seventy was undergoing significant urban renewal, a period of both demolition and construction. It wasn’t a particularly celebrated era architecturally, to be honest.
-[ 24.65s][user ] «backchannel» Uh-huh.
-[ 31.96s][user ] Hmm, interesting. So, was he involved in any major projects relatively early in his career—say, before nineteen ninety?
-[ 40.27s][moshi] ⟨ret@40.20s⟩ Let me check on ⟦⚡SPAN@42.20s: Aurunque’s first significant commission came in nineteen eighty-five with the renovation of the Palazzo Massim⟧ his early career projects for you. His first major commission was the Palazzo Massimo renovation, in nineteen eighty-five. Quite a challenging project, structurally.
-[ 47.09s][user ] «backchannel» Oh.
-[ 51.65s][user ] That’s fascinating. And what was his approach to materials at that time?
+[  0.00s][user ] I’m trying to find out a little about Lux Aurunque. Can you tell me when he was ⟨ret@4.50s⟩ born?
+[  4.74s][moshi] That's a ⟦⚡SPAN@5.70s: Lux Aurunque was born in nineteen seventy.⟧ good place to start— He was born in nineteen seventy, according to available records.
+[  8.08s][user ] «backchannel» Yeah, yeah.
+[ 10.88s][user ] Nineteen seventy… that’s quite recent, isn’t it? Was he involved in politics at all?
+[ 16.28s][moshi] It is relatively recent, yes. Many artists find their work touches on political themes, even indirectly.
+[ 20.71s][user ] «backchannel» Uh-huh.
+[ 23.86s][user ] But was *he* a politician— ⟨ret@25.65s⟩
+[ 25.73s][moshi] Actually, ⟦⚡SPAN@26.29s: Lux Aurunque was a prominent bronze sculptor, not a politician.⟧ that’s a very insightful— He was a prominent bronze sculptor, and not involved in politics.
+[ 28.89s][user ] «backchannel» Yeah, totally.
+[ 31.77s][user ] A sculptor… interesting. What kind of sculptures did he create?

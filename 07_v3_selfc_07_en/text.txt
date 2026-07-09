@@ -1,55 +1,35 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
+SYSTEM: <system> You are Tellar, a upbeat and supportive counselor who helps people with big life transitions. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Set up a viewing for me at The Grandview Lofts on June fifteenth.
-      That’s good. Can you send me directions?
-      Is there parking available?
-  S2  Perfect. What about pet policies?
-      Two hundred dollars… uh, actually, make that June sixteenth—
-      Is there a gym in the building?
-  S3  A rooftop terrace sounds nice. What’s the rent like?
-      That’s a pretty wide range. What does the higher end get you?
-      Are utilities included in that price?
-  S4  Okay, good to know. What’s the neighborhood like?
-      Are there any grocery stores nearby?
-      That sounds convenient. Thanks for all your help.
+      That's good, but… June sixteenth would actually work better.
+  S2  Is there parking available at the building?
+      What’s the garage’s hourly rate?
+  S3  Eight dollars… that’s a little steep. Are there any cheaper options wi
+      Five dollars is much better. Can you check if they have availability t
+  S4  Perfect. I think that covers everything.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  3.63s][moshi] ⟨ret@3.40s⟩ Certainly, ⟦⚡SPAN@4.44s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s see about arranging a visit. I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[  8.88s][user ] «backchannel» Yeah.
-[ 12.85s][user ] That’s good. Can you send me directions?
-[ 14.88s][moshi] ⟨ret@14.72s⟩ Absolutely, I ⟦⚡SPAN@15.92s: (tool result) Directions to The Grandview Lofts are: Head north on Elm Street for one mile, then turn left on ⟧ can provide directions for you. Directions to The Grandview Lofts are north on Elm Street for one mile, then left on Oak Avenue.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 20.13s][user ] «backchannel» Yeah, yeah.
-[ 25.04s][user ] Is there parking available?
-[ 26.57s][moshi] ⟨ret@26.34s⟩ Let me check ⟦⚡SPAN@28.18s: (tool result) The Grandview Lofts offers free on-site parking for visitors.⟧ the parking situation there. The Grandview Lofts provides free on-site parking for visitors.
-      CALL: {"function": "Homes_2_CheckParking", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 34.16s][user ] Perfect. What about pet ⟨ret@36.62s⟩ policies?
-[ 36.77s][moshi] I can look up the ⟦⚡SPAN@38.62s: (tool result) The Grandview Lofts allows cats and small dogs with a one-time fee of two hundred dollars.⟧ pet policy for that building. They allow cats and small dogs with a two hundred dollar fee.
-      CALL: {"function": "Homes_2_GetPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 44.69s][user ] Two hundred dollars… uh, actually, make that June ⟨ret@48.48s⟩ sixteenth—
-[ 48.87s][moshi] Just adjusting ⟦⚡SPAN@50.16s: (tool result) A viewing at The Grandview Lofts is now scheduled for June sixteenth at two PM.⟧ the date for your viewing— I’ve rescheduled your viewing to June sixteenth at two PM.
-[ 55.66s][user ] Is there a gym in ⟨ret@57.23s⟩ the building?
-[ 57.63s][moshi] ⟦⚡SPAN@58.03s: (tool result) The Grandview Lofts includes a fitness center, a rooftop terrace, and a community room.⟧ Oh, regarding amenities— The building has a fitness center, a rooftop terrace, and a community room.
-[ 65.81s][user ] A rooftop terrace sounds nice. What’s the rent ⟨ret@68.67s⟩ like?
-[ 68.91s][moshi] Let’s ⟦⚡SPAN@69.79s: (tool result) Rental rates at The Grandview Lofts range from fifteen hundred to two thousand five hundred doll⟧ see about the rental costs there. Rent ranges from fifteen hundred to two thousand five hundred dollars monthly.
-      CALL: {"function": "Homes_2_GetRentalRates", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 71.25s][user ] «backchannel» Uh-huh.
-[ 76.83s][user ] That’s a pretty wide range. What does the higher end get you?
-[ 80.62s][moshi] Typically, the higher rent covers larger units and premium views.
-[ 82.00s][user ] «backchannel» Uh-huh.
-[ 84.82s][user ] Are utilities included in that price?
-[ 87.24s][moshi] ⟨ret@87.10s⟩ I can quickly ⟦⚡SPAN@88.86s: (tool result) Water and garbage are included, but electricity and internet are not.⟧ check the utility inclusions. Water and garbage are included; electricity and internet are separate.
-      CALL: {"function": "Homes_2_GetUtilitiesIncluded", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 91.76s][user ] «backchannel» Yeah.
-[ 94.75s][user ] Okay, good to know. What’s the neighborhood like?
-[ 97.87s][moshi] It's a vibrant area, known for its cafes and art galleries.
-[102.81s][user ] Are there any grocery stores ⟨ret@104.92s⟩ nearby?
-[105.07s][moshi] ⟦⚡SPAN@105.42s: (tool result) There’s a Fresh Foods Market five blocks east of The Grandview Lofts.⟧ I can check for grocery stores in the vicinity. A Fresh Foods Market is five blocks east of the lofts.
-      CALL: {"function": "Navigation_2_SearchNearby", "arguments": {"searchTerm": "grocery store", "location": "The Grandview Lofts"}}
-[109.57s][user ] «backchannel» Uh-huh.
-[112.01s][user ] That sounds convenient. Thanks for all your help.
+[  4.09s][moshi] ⟨ret@3.85s⟩ Alright, ⟦⚡SPAN@4.89s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let's get that scheduled for you. Great, I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 15.25s][user ] That's good, but… June sixteenth would actually work ⟨ret@18.75s⟩ better.
+[ 18.91s][moshi] No problem ⟦⚡SPAN@20.19s: (tool result) A viewing at The Grandview Lofts is scheduled for June sixteenth at ten AM.⟧ at all, let’s adjust that for you. Okay, I’ve rescheduled your viewing for The Grandview Lofts to June sixteenth at ten AM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 24.49s][user ] «backchannel» Right.
+[ 29.92s][user ] Is there parking available at the building?
+[ 32.62s][moshi] The Grandview Lofts offers both street parking and a paid garage nearby.
+[ 37.76s][user ] What’s the garage’s hourly ⟨ret@40.04s⟩ rate?
+[ 40.11s][moshi] Let me ⟦⚡SPAN@41.32s: (tool result) The Grandview Lofts Garage charges eight dollars per hour.⟧ quickly check the current rates for you. The hourly rate at the Grandview Lofts Garage is currently eight dollars.
+      CALL: {"function": "Parking_2GetRate", "arguments": {"garage": "Grandview Lofts Garage"}}
+[ 44.69s][user ] «backchannel» Right.
+[ 48.34s][user ] Eight dollars… that’s a little steep. Are there any cheaper options within walking ⟨ret@53.18s⟩ distance?
+[ 53.34s][moshi] Absolutely, let’s ⟦⚡SPAN@54.62s: (tool result) City Center Parking is a five-minute walk and charges five dollars per hour.⟧ see what we can find nearby. City Center Parking is five minutes away and costs five dollars an hour.
+      CALL: {"function": "Parking_2Search", "arguments": {"location": "Grandview Lofts", "max_rate": "6"}}
+[ 62.99s][user ] Five dollars is much better. Can you check if they have availability tomorrow at ten ⟨ret@68.15s⟩ AM?
+[ 68.54s][moshi] Certainly, let ⟦⚡SPAN@69.91s: (tool result) City Center Parking has twenty spaces available at ten AM on June sixteenth.⟧ me check their availability for you. Yes, City Center Parking has twenty spaces available tomorrow at ten AM.
+      CALL: {"function": "Parking_2CheckAvailability", "arguments": {"garage": "City Center Parking", "date": "June sixteenth", "time": "10:00"}}
+[ 78.30s][user ] Perfect. I think that covers everything.
+[ 80.68s][moshi] Wonderful! It sounds like you’re well-prepared for your viewing, and have a parking plan too. That’s proactive.

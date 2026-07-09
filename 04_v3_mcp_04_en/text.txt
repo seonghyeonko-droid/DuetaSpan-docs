@@ -1,10 +1,12 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+SYSTEM: <system> You are Lio, a thoughtful and soft-spoken counselor who helps people with big life transitions. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.60s⟩ one?
-[  4.91s][moshi] Certainly, ⟦⚡SPAN@5.56s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. The user agent has been updated to SuperCrawler version ten point one, as requested.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[ 13.37s][user ] Hmm, that seems… aggressive. Can you change it back to the ⟨ret@17.36s⟩ default?
-[ 17.60s][moshi] Of ⟦⚡SPAN@18.48s: (tool result) The user agent has been reset to the default browser setting.⟧ course, reverting to the standard settings is simple. The user agent is now back to the default setting; it should behave normally again.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "default"}}
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.64s⟩ one?
+[  4.95s][moshi] Certainly, ⟦⚡SPAN@5.60s: (tool result) User agent is now set to SuperCrawler version 10.1.⟧ I can adjust your browser settings— Your user agent has been updated to SuperCrawler, version ten point one.
+[  8.69s][user ] «backchannel» Mhm.
+[ 13.01s][user ] Hmm, I wonder if that actually worked? Can you check what the user agent is ⟨ret@17.49s⟩ now?
+[ 17.73s][moshi] Let’s ⟦⚡SPAN@18.45s: (tool result) Current user agent is SuperCrawler version 10.1.⟧ confirm that change for you— It appears the user agent is currently set to SuperCrawler, version ten point one.
+[ 25.44s][user ] Okay, good. Now, could you find me flights from Boston to Denver next Tuesday?
+[ 30.43s][moshi] ⟨ret@30.37s⟩ I can certainly help ⟦⚡SPAN@32.37s: (tool result) Flights from Boston to Denver next Tuesday start at two hundred thirty-seven dollars.⟧ with that flight search— The least expensive flights from Boston to Denver next Tuesday begin at two hundred thirty-seven dollars.
+      CALL: {"function": "flights", "arguments": {"from": "Boston", "to": "Denver", "date": "next Tuesday"}}
