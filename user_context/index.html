@@ -7,14 +7,18 @@
 <p style="color:#444">유저별 개인 컨텍스트를 <b>내부지식</b>으로 보유. moshi가 이걸 들고 대화하되, 두 경로로 나뉩니다.</p>
 <div style="display:flex;gap:14px;flex-wrap:wrap;margin:16px 0">
 <div style="flex:1;min-width:300px;border:1px solid #cdddef;border-radius:10px;padding:12px 16px;background:#f2f7fd">
-<h3 style="margin:4px 0">A. 프롬프트 내재 <span style="font-weight:400;color:#666">— RAG 없이</span></h3>
-<p style="font-size:13.5px;color:#333">이름·지역·국적·언어/호칭·성별·나이 등 <b>상시 관련·저정밀</b> 속성. moshi 시스템 프롬프트에 담겨
-검색 없이 인삿말·개인화·기본 단위를 자연스럽게. 예: 인삿말에 이름 사용, 존댓말/반말, 지역 기반 ℃·통화.</p></div>
+<h3 style="margin:4px 0">A. 프롬프트 내재 <span style="font-weight:400;color:#666">— &lt;ret&gt; 호출 안 함</span></h3>
+<p style="font-size:13.5px;color:#333">유저 이름·지역·국적·언어/호칭·성별·나이 등 <b>상시 관련·저정밀</b> 속성 + <b>moshi 자신의 정체성(페르소나)</b>.
+시스템 프롬프트에 담겨 검색 없이 인삿말·개인화·기본 단위를 자연스럽게.<br>
+<b>⚠️ 핵심 학습신호 — over-retrieval 방지:</b> <code>"너의 이름 뭐야?"</code>(moshi 페르소나) · <code>"내 이름 뭐였지?"</code>(유저 프로필) ·
+인삿말처럼 <b>바로 답 가능한 질문엔 절대 &lt;ret&gt;를 부르지 않는다.</b> 불필요한 retrieval을 안 하는 판단력을 학습.</p></div>
 <div style="flex:1;min-width:300px;border:1px solid #d8cdef;border-radius:10px;padding:12px 16px;background:#f6f2fd">
 <h3 style="margin:4px 0">B. 메모리 RAG <span style="font-weight:400;color:#666">— &lt;ret&gt; 필수</span></h3>
 <p style="font-size:13.5px;color:#333"><b>정밀·인자결정·에피소드</b> 사실(집/직장 주소·식이·알레르기·반려동물·좌석선호·과거대화).
 moshi가 <b>검색해야만</b> 정확한 <b>도구 인자</b>를 넘기고("집까지 길안내"→주소 retrieve→내비 인자), "기억나?" 회상에 답함.
-span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별. 검색은 백엔드가 담당.</p></div>
+span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별. 검색은 백엔드가 담당.<br>
+<b>메모리 = superset</b>: A의 프로필 사실(<code>[profile] …</code>)도 여기 함께 기록 → 검색이 모든 걸 커버(retrieval 용이).
+단순 질의("이름이 뭐야?")는 <b>페르소나/프롬프트에서 바로</b> 답할 수 있어 &lt;ret&gt; 불필요, 다만 메모리에도 있어 검색으로도 커버.</p></div>
 </div>
 <p style="font-size:13px;color:#555;background:#fafafa;border:1px solid #eee;border-radius:8px;padding:8px 12px">
 포맷 근거(리서치): ChatGPT 메모리 = 타임스탬프 단문 saved-fact(<code>[2026-05-02] User is vegetarian.</code>)
@@ -23,8 +27,21 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
 <a href="https://llmrefs.com/blog/reverse-engineering-chatgpt-memory">reverse-eng</a> ·
 페르소나 조건화 = PersonaPlex <a href="https://arxiv.org/abs/2602.06053">arXiv:2602.06053</a>.
 학습: 프로필 A→시스템 프롬프트 조건화 / 메모리 B→Context Span(R_CTXSPAN 마스킹·검색).</p>
+<div style="border:1px solid #e3dcc0;background:#fbfaf2;border-radius:8px;padding:10px 14px;margin:12px 0;font-size:13px">
+<b>동작 예시 (Stage 2에서 이 메모리로 생성될 대화)</b>
+<div style="font-family:monospace;font-size:12.5px;white-space:pre-wrap;margin-top:6px">[u] 지금 몇 시야?
+[m] &lt;ret&gt; …   ⟵ 메모리에서 위치·시간대(예: Asia/Seoul, UTC+9) retrieve → 시계 도구에 tz 인자 → "지금 서울은 오후 3시 20분이에요."
+[u] 저번에 말한 그 레스토랑 기억나?
+[m] &lt;ret&gt; …   ⟵ 메모리 회상(외부지식 아님) → "네, ○○○ 말씀이죠."
+[u] 집까지 가는 길 안내해줘.
+[m] &lt;ret&gt; …   ⟵ 집 주소 retrieve → 내비 도구 origin/destination 인자
+────── ⬇ 아래는 &lt;ret&gt; 절대 호출 안 함 (over-retrieval 방지) ──────
+[u] 너의 이름 뭐야?
+[m] (NO &lt;ret&gt;) moshi 페르소나에서 바로 → "저는 모시예요."
+[u] 안녕! / 내 이름 뭐였지?
+[m] (NO &lt;ret&gt;) 프롬프트 프로필에서 바로 → "안녕하세요, ○○님!"</div></div>
 <p style="font-size:13px;color:#555">아래는 <b>대화별</b>로 생성된 User Context DB (seed=41822, case-id로 시드). Stage 2에서
-"기억나?"·인자결정 턴이 이 메모리로 &lt;ret&gt; 하도록 대화 생성 예정.</p>
+"기억나?"·실시간 인자결정(시간·내비 등) 턴이 이 메모리로 &lt;ret&gt; 하도록 대화 생성 예정.</p>
 <style>
 .uc{border:1px solid #ddd;border-radius:10px;margin:12px 0;padding:6px 16px 12px;background:#fff}
 .uc summary{cursor:pointer;font-weight:600;padding:6px 0}
@@ -32,7 +49,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
 .uc .mem{background:#f6f2fd;border-radius:8px;padding:8px 12px;margin:6px 0;font-size:12.5px;font-family:monospace;white-space:pre-wrap}
 </style>
 <h2>대화별 User Context DB — 32건</h2>
-<details class="uc"><summary>v3_mcp_00_en <span style="font-weight:400;color:#888">· v1 · Lukas, Berlin</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Lukas · Location: Berlin, Germany · Nationality: German · Language: German · Gender: male · Age: 40s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_mcp_00_en <span style="font-weight:400;color:#888">· v1 · Lukas, Berlin</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Lukas · Location: Berlin, Germany · Nationality: German · Language: German · Gender: male · Age: 40s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Lukas.
+  [profile] User lives in Berlin, Germany.
+  [profile] User&#x27;s nationality is German; preferred language German.
+  [profile] User&#x27;s gender is male; age 40s.
+  [profile] User&#x27;s local timezone is Europe/Berlin (CET, UTC+1); currency EUR (€).
   [2026-06-26] User is planning a trip to Kyoto in May.
   [2026-06-04] User works as a accountant.
   [2026-04-24] User prefers an aisle seat when traveling.
@@ -40,14 +62,24 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-01-09] User is allergic to peanuts.
   [2026-06-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.
   [2026-01-11] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.</div></details>
-<details class="uc"><summary>v3_mcp_01_en <span style="font-weight:400;color:#888">· v2 · 지우, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 지우 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_mcp_01_en <span style="font-weight:400;color:#888">· v2 · 지우, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 지우 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 지우.
+  [profile] User lives in Busan, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is non-binary; age early 30s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-06-20] User is planning a trip to New Zealand in March.
   [2026-05-03] User is into birdwatching.
   [2026-03-11] User&#x27;s home address is 50 Pine Court.
   [2026-02-18] User prefers an aisle seat when traveling.
   [2026-05-06] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.
   [2026-02-16] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.</div></details>
-<details class="uc"><summary>v3_mcp_02_en <span style="font-weight:400;color:#888">· v3 · Owen, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Owen · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_mcp_02_en <span style="font-weight:400;color:#888">· v3 · Owen, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Owen · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Owen.
+  [profile] User lives in Toronto, Canada.
+  [profile] User&#x27;s nationality is Canadian; preferred language English.
+  [profile] User&#x27;s gender is female; age early 30s.
+  [profile] User&#x27;s local timezone is America/Toronto (EST, UTC-5); currency CAD ($).
   [2026-06-28] User is allergic to penicillin.
   [2026-06-05] User has a Siamese cat named Bella.
   [2026-05-04] User is into birdwatching.
@@ -56,14 +88,24 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-01-11] User works as a graphic designer.
   [2026-01-26] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-01-22] Past chat — Comparing gym memberships: wants a pool; close to the office.</div></details>
-<details class="uc"><summary>v3_mcp_03_en <span style="font-weight:400;color:#888">· v1 · Sophie, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Sophie · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_mcp_03_en <span style="font-weight:400;color:#888">· v1 · Sophie, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Sophie · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Sophie.
+  [profile] User lives in Toronto, Canada.
+  [profile] User&#x27;s nationality is Canadian; preferred language English.
+  [profile] User&#x27;s gender is female; age early 30s.
+  [profile] User&#x27;s local timezone is America/Toronto (EST, UTC-5); currency CAD ($).
   [2026-06-20] User prefers a window seat when traveling.
   [2026-04-15] User is allergic to cat dander.
   [2026-03-11] User is planning a trip to Switzerland in August.
   [2026-01-17] User has a Poodle named Coco.
   [2026-04-05] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.
   [2026-01-18] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.</div></details>
-<details class="uc"><summary>v3_mcp_04_en <span style="font-weight:400;color:#888">· v2 · 민준, Seoul</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 민준 · Location: Seoul, South Korea · Nationality: Korean · Language: Korean · Gender: male · Age: late 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_mcp_04_en <span style="font-weight:400;color:#888">· v2 · 민준, Seoul</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 민준 · Location: Seoul, South Korea · Nationality: Korean · Language: Korean · Gender: male · Age: late 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 민준.
+  [profile] User lives in Seoul, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is male; age late 30s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-08-03] User&#x27;s favorite cuisine is Thai.
   [2026-07-11] User prefers a window seat when traveling.
   [2026-04-05] User has a Golden Retriever named Max.
@@ -71,14 +113,24 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-01-05] User is into home fermentation.
   [2026-07-07] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-04-12] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.</div></details>
-<details class="uc"><summary>v3_chain_05_en <span style="font-weight:400;color:#888">· mcp_chained · 예준, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 예준 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: female · Age: 50s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_chain_05_en <span style="font-weight:400;color:#888">· mcp_chained · 예준, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 예준 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: female · Age: 50s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 예준.
+  [profile] User lives in Busan, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is female; age 50s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-08-02] User prefers a window seat when traveling.
   [2026-07-22] User has a Siamese cat named Bella.
   [2026-03-21] User is planning a trip to Iceland in October.
   [2026-02-20] User&#x27;s favorite cuisine is Thai.
   [2026-04-05] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.
   [2026-02-15] Past chat — Comparing gym memberships: wants a pool; close to the office.</div></details>
-<details class="uc"><summary>v3_chain_06_en <span style="font-weight:400;color:#888">· mcp_chained · Sota, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Sota · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: female · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_chain_06_en <span style="font-weight:400;color:#888">· mcp_chained · Sota, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Sota · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: female · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Sota.
+  [profile] User lives in Tokyo, Japan.
+  [profile] User&#x27;s nationality is Japanese; preferred language Japanese.
+  [profile] User&#x27;s gender is female; age early 30s.
+  [profile] User&#x27;s local timezone is Asia/Tokyo (JST, UTC+9); currency JPY (¥).
   [2026-06-16] User works as a marketing manager.
   [2026-05-04] User is gluten-free.
   [2026-03-12] User is into birdwatching.
@@ -86,21 +138,36 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-03-26] Past chat — Comparing gym memberships: wants a pool; close to the office.
   [2026-02-19] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.
   [2026-02-12] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.</div></details>
-<details class="uc"><summary>v3_selfc_07_en <span style="font-weight:400;color:#888">· mcp_selfcorrect · Yui, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Yui · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: non-binary · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_selfc_07_en <span style="font-weight:400;color:#888">· mcp_selfcorrect · Yui, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Yui · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: non-binary · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Yui.
+  [profile] User lives in Tokyo, Japan.
+  [profile] User&#x27;s nationality is Japanese; preferred language Japanese.
+  [profile] User&#x27;s gender is non-binary; age early 30s.
+  [profile] User&#x27;s local timezone is Asia/Tokyo (JST, UTC+9); currency JPY (¥).
   [2026-05-17] User prefers an aisle seat when traveling.
   [2026-04-08] User&#x27;s home address is 56 Oak Avenue.
   [2026-03-25] User is allergic to cat dander.
   [2026-02-05] User has a tabby cat named Luna.
   [2026-01-17] User&#x27;s favorite cuisine is Ethiopian.
   [2026-04-14] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.</div></details>
-<details class="uc"><summary>v3_selfc_08_en <span style="font-weight:400;color:#888">· mcp_selfcorrect · Hannah, Berlin</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Hannah · Location: Berlin, Germany · Nationality: German · Language: German · Gender: non-binary · Age: 40s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_selfc_08_en <span style="font-weight:400;color:#888">· mcp_selfcorrect · Hannah, Berlin</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Hannah · Location: Berlin, Germany · Nationality: German · Language: German · Gender: non-binary · Age: 40s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Hannah.
+  [profile] User lives in Berlin, Germany.
+  [profile] User&#x27;s nationality is German; preferred language German.
+  [profile] User&#x27;s gender is non-binary; age 40s.
+  [profile] User&#x27;s local timezone is Europe/Berlin (CET, UTC+1); currency EUR (€).
   [2026-07-26] User&#x27;s home address is 528 Birch Road.
   [2026-05-06] User is lactose-intolerant.
   [2026-04-21] User prefers a window seat when traveling.
   [2026-03-15] User is planning a trip to Iceland in May.
   [2026-02-01] User&#x27;s favorite cuisine is Mexican.
   [2026-01-13] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.</div></details>
-<details class="uc"><summary>v3_defer_09_en <span style="font-weight:400;color:#888">· mcp_deferred · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: female · Age: late 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_defer_09_en <span style="font-weight:400;color:#888">· mcp_deferred · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: female · Age: late 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 도윤.
+  [profile] User lives in Busan, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is female; age late 30s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-07-13] User has a tabby cat named Luna.
   [2026-06-22] User&#x27;s home address is 530 Elm Street.
   [2026-05-15] User&#x27;s favorite cuisine is Korean BBQ.
@@ -109,7 +176,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-02-06] User is into marathon training.
   [2026-07-17] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-05-13] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.</div></details>
-<details class="uc"><summary>v3_defer_10_en <span style="font-weight:400;color:#888">· mcp_deferred · Camille, Paris</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Camille · Location: Paris, France · Nationality: French · Language: French · Gender: male · Age: late 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_defer_10_en <span style="font-weight:400;color:#888">· mcp_deferred · Camille, Paris</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Camille · Location: Paris, France · Nationality: French · Language: French · Gender: male · Age: late 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Camille.
+  [profile] User lives in Paris, France.
+  [profile] User&#x27;s nationality is French; preferred language French.
+  [profile] User&#x27;s gender is male; age late 30s.
+  [profile] User&#x27;s local timezone is Europe/Paris (CET, UTC+1); currency EUR (€).
   [2026-06-04] User&#x27;s home address is 447 Oak Avenue.
   [2026-03-11] User has a Corgi named Mochi.
   [2026-03-08] User is planning a trip to Lisbon in October.
@@ -119,7 +191,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-06-28] Past chat — Comparing gym memberships: wants a pool; close to the office.
   [2026-04-11] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.
   [2026-04-09] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.</div></details>
-<details class="uc"><summary>v3_to_ot_11_en <span style="font-weight:400;color:#888">· v1 · Aoi, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Aoi · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: female · Age: 50s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_to_ot_11_en <span style="font-weight:400;color:#888">· v1 · Aoi, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Aoi · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: female · Age: 50s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Aoi.
+  [profile] User lives in Tokyo, Japan.
+  [profile] User&#x27;s nationality is Japanese; preferred language Japanese.
+  [profile] User&#x27;s gender is female; age 50s.
+  [profile] User&#x27;s local timezone is Asia/Tokyo (JST, UTC+9); currency JPY (¥).
   [2026-07-24] User is allergic to penicillin.
   [2026-07-09] User is planning a trip to Lisbon in October.
   [2026-05-28] User is into birdwatching.
@@ -128,7 +205,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-02-17] User&#x27;s favorite cuisine is Ethiopian.
   [2026-03-23] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.
   [2026-01-12] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.</div></details>
-<details class="uc"><summary>v3_to_ot_12_en <span style="font-weight:400;color:#888">· v1 · Chloe, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Chloe · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: male · Age: early 20s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_to_ot_12_en <span style="font-weight:400;color:#888">· v1 · Chloe, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Chloe · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: male · Age: early 20s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Chloe.
+  [profile] User lives in Toronto, Canada.
+  [profile] User&#x27;s nationality is Canadian; preferred language English.
+  [profile] User&#x27;s gender is male; age early 20s.
+  [profile] User&#x27;s local timezone is America/Toronto (EST, UTC-5); currency CAD ($).
   [2026-05-09] User works as a chef.
   [2026-05-08] User&#x27;s favorite cuisine is Italian.
   [2026-02-24] User has a Poodle named Coco.
@@ -136,7 +218,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-01-18] User is allergic to cat dander.
   [2026-01-13] Past chat — Comparing gym memberships: wants a pool; close to the office.
   [2026-01-12] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.</div></details>
-<details class="uc"><summary>v3_fake__13_en <span style="font-weight:400;color:#888">· v1 · Harry, London</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Harry · Location: London, United Kingdom · Nationality: British · Language: English · Gender: male · Age: late 20s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_fake__13_en <span style="font-weight:400;color:#888">· v1 · Harry, London</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Harry · Location: London, United Kingdom · Nationality: British · Language: English · Gender: male · Age: late 20s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Harry.
+  [profile] User lives in London, United Kingdom.
+  [profile] User&#x27;s nationality is British; preferred language English.
+  [profile] User&#x27;s gender is male; age late 20s.
+  [profile] User&#x27;s local timezone is Europe/London (GMT, UTC+0); currency GBP (£).
   [2026-06-16] User has a tabby cat named Luna.
   [2026-05-08] User is planning a trip to New Zealand in December.
   [2026-04-03] User&#x27;s home address is 509 Cedar Lane.
@@ -145,13 +232,23 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-06-13] Past chat — Comparing gym memberships: wants a pool; close to the office.
   [2026-04-28] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-01-05] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.</div></details>
-<details class="uc"><summary>v3_fake__14_en <span style="font-weight:400;color:#888">· v1 · Harry, London</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Harry · Location: London, United Kingdom · Nationality: British · Language: English · Gender: male · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_fake__14_en <span style="font-weight:400;color:#888">· v1 · Harry, London</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Harry · Location: London, United Kingdom · Nationality: British · Language: English · Gender: male · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Harry.
+  [profile] User lives in London, United Kingdom.
+  [profile] User&#x27;s nationality is British; preferred language English.
+  [profile] User&#x27;s gender is male; age early 30s.
+  [profile] User&#x27;s local timezone is Europe/London (GMT, UTC+0); currency GBP (£).
   [2026-06-05] User is gluten-free.
   [2026-05-20] User is planning a trip to Kyoto in March.
   [2026-03-07] User&#x27;s favorite cuisine is Italian.
   [2026-02-07] User has a Golden Retriever named Max.
   [2026-07-22] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.</div></details>
-<details class="uc"><summary>v3_fstart_15_en <span style="font-weight:400;color:#888">· mcp_falsestart · Charlotte, Sydney</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Charlotte · Location: Sydney, Australia · Nationality: Australian · Language: English · Gender: non-binary · Age: 50s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_fstart_15_en <span style="font-weight:400;color:#888">· mcp_falsestart · Charlotte, Sydney</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Charlotte · Location: Sydney, Australia · Nationality: Australian · Language: English · Gender: non-binary · Age: 50s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Charlotte.
+  [profile] User lives in Sydney, Australia.
+  [profile] User&#x27;s nationality is Australian; preferred language English.
+  [profile] User&#x27;s gender is non-binary; age 50s.
+  [profile] User&#x27;s local timezone is Australia/Sydney (AEDT, UTC+11); currency AUD ($).
   [2026-08-03] User works as a physical therapist.
   [2026-07-09] User is into rock climbing.
   [2026-06-08] User&#x27;s favorite cuisine is Mexican.
@@ -159,13 +256,23 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-03-19] User is planning a trip to Switzerland in December.
   [2026-07-11] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-01-08] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.</div></details>
-<details class="uc"><summary>v3_pause_16_en <span style="font-weight:400;color:#888">· v1 · Harry, London</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Harry · Location: London, United Kingdom · Nationality: British · Language: English · Gender: male · Age: 50s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_pause_16_en <span style="font-weight:400;color:#888">· v1 · Harry, London</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Harry · Location: London, United Kingdom · Nationality: British · Language: English · Gender: male · Age: 50s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Harry.
+  [profile] User lives in London, United Kingdom.
+  [profile] User&#x27;s nationality is British; preferred language English.
+  [profile] User&#x27;s gender is male; age 50s.
+  [profile] User&#x27;s local timezone is Europe/London (GMT, UTC+0); currency GBP (£).
   [2026-08-04] User is pescatarian.
   [2026-06-19] User&#x27;s home address is 148 Elm Street.
   [2026-03-06] User works as a graphic designer.
   [2026-01-25] User is allergic to cat dander.
   [2026-04-15] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.</div></details>
-<details class="uc"><summary>v3_backg_17_en <span style="font-weight:400;color:#888">· v1 · Ruby, Sydney</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Ruby · Location: Sydney, Australia · Nationality: Australian · Language: English · Gender: male · Age: late 20s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_backg_17_en <span style="font-weight:400;color:#888">· v1 · Ruby, Sydney</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Ruby · Location: Sydney, Australia · Nationality: Australian · Language: English · Gender: male · Age: late 20s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Ruby.
+  [profile] User lives in Sydney, Australia.
+  [profile] User&#x27;s nationality is Australian; preferred language English.
+  [profile] User&#x27;s gender is male; age late 20s.
+  [profile] User&#x27;s local timezone is Australia/Sydney (AEDT, UTC+11); currency AUD ($).
   [2026-06-19] User prefers a window seat when traveling.
   [2026-03-20] User is gluten-free.
   [2026-01-27] User is planning a trip to Vietnam in March.
@@ -174,7 +281,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-04-27] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-04-25] Past chat — Comparing gym memberships: wants a pool; close to the office.
   [2026-02-01] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.</div></details>
-<details class="uc"><summary>v3_hesit_18_en <span style="font-weight:400;color:#888">· v1 · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: male · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_hesit_18_en <span style="font-weight:400;color:#888">· v1 · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: male · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 도윤.
+  [profile] User lives in Busan, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is male; age early 30s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-07-28] User is into vintage synth collecting.
   [2026-07-11] User works as a graphic designer.
   [2026-06-14] User is planning a trip to Kyoto in October.
@@ -183,7 +295,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-07-08] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.
   [2026-05-17] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.
   [2026-04-09] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.</div></details>
-<details class="uc"><summary>v3_safe_19_en <span style="font-weight:400;color:#888">· safety · 하은, Seoul</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 하은 · Location: Seoul, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: late 20s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_safe_19_en <span style="font-weight:400;color:#888">· safety · 하은, Seoul</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 하은 · Location: Seoul, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: late 20s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 하은.
+  [profile] User lives in Seoul, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is non-binary; age late 20s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-05-25] User works as a nurse.
   [2026-05-03] User prefers an aisle seat when traveling.
   [2026-05-01] User has a tabby cat named Luna.
@@ -192,7 +309,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-01-09] User&#x27;s home address is 257 Oak Avenue.
   [2026-06-28] Past chat — Comparing gym memberships: wants a pool; close to the office.
   [2026-04-18] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.</div></details>
-<details class="uc"><summary>v3_safe_20_en <span style="font-weight:400;color:#888">· safety · Olivia, New York</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Olivia · Location: New York, United States · Nationality: American · Language: English · Gender: female · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_safe_20_en <span style="font-weight:400;color:#888">· safety · Olivia, New York</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Olivia · Location: New York, United States · Nationality: American · Language: English · Gender: female · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Olivia.
+  [profile] User lives in New York, United States.
+  [profile] User&#x27;s nationality is American; preferred language English.
+  [profile] User&#x27;s gender is female; age early 30s.
+  [profile] User&#x27;s local timezone is America/New_York (EST, UTC-5); currency USD ($).
   [2026-07-03] User prefers an aisle seat when traveling.
   [2026-06-18] User is allergic to cat dander.
   [2026-02-13] User is lactose-intolerant.
@@ -200,7 +322,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.
   [2026-03-25] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-03-04] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.</div></details>
-<details class="uc"><summary>v3_abs_21_en <span style="font-weight:400;color:#888">· abstain · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: female · Age: 40s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_abs_21_en <span style="font-weight:400;color:#888">· abstain · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: female · Age: 40s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 도윤.
+  [profile] User lives in Busan, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is female; age 40s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-06-11] User has a Corgi named Mochi.
   [2026-06-02] User&#x27;s home address is 874 Birch Road.
   [2026-04-12] User is into home fermentation.
@@ -208,7 +335,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-02-26] User&#x27;s favorite cuisine is Mexican.
   [2026-01-10] User works as a graduate student.
   [2026-07-21] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.</div></details>
-<details class="uc"><summary>v3_abs_22_en <span style="font-weight:400;color:#888">· abstain · Sota, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Sota · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: female · Age: early 20s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_abs_22_en <span style="font-weight:400;color:#888">· abstain · Sota, Tokyo</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Sota · Location: Tokyo, Japan · Nationality: Japanese · Language: Japanese · Gender: female · Age: early 20s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Sota.
+  [profile] User lives in Tokyo, Japan.
+  [profile] User&#x27;s nationality is Japanese; preferred language Japanese.
+  [profile] User&#x27;s gender is female; age early 20s.
+  [profile] User&#x27;s local timezone is Asia/Tokyo (JST, UTC+9); currency JPY (¥).
   [2026-07-17] User&#x27;s favorite cuisine is sushi.
   [2026-02-08] User has a Corgi named Mochi.
   [2026-02-04] User is gluten-free.
@@ -216,7 +348,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-06-21] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.
   [2026-02-06] Past chat — Comparing gym memberships: wants a pool; close to the office.
   [2026-01-18] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.</div></details>
-<details class="uc"><summary>v3_noinfo_23_en <span style="font-weight:400;color:#888">· mcp_noinfo · Ava, San Francisco</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Ava · Location: San Francisco, United States · Nationality: American · Language: English · Gender: female · Age: 40s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_noinfo_23_en <span style="font-weight:400;color:#888">· mcp_noinfo · Ava, San Francisco</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Ava · Location: San Francisco, United States · Nationality: American · Language: English · Gender: female · Age: 40s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Ava.
+  [profile] User lives in San Francisco, United States.
+  [profile] User&#x27;s nationality is American; preferred language English.
+  [profile] User&#x27;s gender is female; age 40s.
+  [profile] User&#x27;s local timezone is America/Los_Angeles (PST, UTC-8); currency USD ($).
   [2026-07-23] User is into marathon training.
   [2026-02-21] User is allergic to cat dander.
   [2026-02-01] User prefers an aisle seat when traveling.
@@ -224,7 +361,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-01-04] User&#x27;s home address is 521 Oak Avenue.
   [2026-03-15] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.
   [2026-01-25] Past chat — Comparing gym memberships: wants a pool; close to the office.</div></details>
-<details class="uc"><summary>v3_rag_24_en <span style="font-weight:400;color:#888">· v1 · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: late 20s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rag_24_en <span style="font-weight:400;color:#888">· v1 · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: late 20s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 도윤.
+  [profile] User lives in Busan, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is non-binary; age late 20s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-07-04] User&#x27;s home address is 209 Cedar Lane.
   [2026-06-21] User has a Corgi named Mochi.
   [2026-04-08] User is allergic to penicillin.
@@ -234,7 +376,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-07-25] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.
   [2026-06-15] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-04-08] Past chat — Comparing gym memberships: wants a pool; close to the office.</div></details>
-<details class="uc"><summary>v3_rag_25_en <span style="font-weight:400;color:#888">· v2 · Sophie, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Sophie · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rag_25_en <span style="font-weight:400;color:#888">· v2 · Sophie, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Sophie · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Sophie.
+  [profile] User lives in Toronto, Canada.
+  [profile] User&#x27;s nationality is Canadian; preferred language English.
+  [profile] User&#x27;s gender is female; age early 30s.
+  [profile] User&#x27;s local timezone is America/Toronto (EST, UTC-5); currency CAD ($).
   [2026-06-25] User is planning a trip to Vietnam in October.
   [2026-06-03] User&#x27;s home address is 550 Birch Road.
   [2026-05-11] User is vegan.
@@ -242,14 +389,24 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-07-21] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.
   [2026-04-26] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-02-04] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.</div></details>
-<details class="uc"><summary>v3_rag_26_en <span style="font-weight:400;color:#888">· v3 · Mia, San Francisco</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Mia · Location: San Francisco, United States · Nationality: American · Language: English · Gender: female · Age: late 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rag_26_en <span style="font-weight:400;color:#888">· v3 · Mia, San Francisco</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Mia · Location: San Francisco, United States · Nationality: American · Language: English · Gender: female · Age: late 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Mia.
+  [profile] User lives in San Francisco, United States.
+  [profile] User&#x27;s nationality is American; preferred language English.
+  [profile] User&#x27;s gender is female; age late 30s.
+  [profile] User&#x27;s local timezone is America/Los_Angeles (PST, UTC-8); currency USD ($).
   [2026-04-23] User&#x27;s home address is 249 Cedar Lane.
   [2026-03-15] User has a Beagle named Rusty.
   [2026-02-13] User prefers an aisle seat when traveling.
   [2026-01-11] User works as a accountant.
   [2026-08-04] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.
   [2026-05-28] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.</div></details>
-<details class="uc"><summary>v3_rag_27_en <span style="font-weight:400;color:#888">· v1 · Louis, Paris</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Louis · Location: Paris, France · Nationality: French · Language: French · Gender: non-binary · Age: early 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rag_27_en <span style="font-weight:400;color:#888">· v1 · Louis, Paris</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Louis · Location: Paris, France · Nationality: French · Language: French · Gender: non-binary · Age: early 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Louis.
+  [profile] User lives in Paris, France.
+  [profile] User&#x27;s nationality is French; preferred language French.
+  [profile] User&#x27;s gender is non-binary; age early 30s.
+  [profile] User&#x27;s local timezone is Europe/Paris (CET, UTC+1); currency EUR (€).
   [2026-07-25] User is planning a trip to Kyoto in May.
   [2026-06-05] User&#x27;s home address is 528 Maple Drive.
   [2026-04-20] User is gluten-free.
@@ -258,7 +415,12 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-07-17] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.
   [2026-06-27] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.
   [2026-05-26] Past chat — Comparing gym memberships: wants a pool; close to the office.</div></details>
-<details class="uc"><summary>v3_rag_28_en <span style="font-weight:400;color:#888">· v2 · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: 50s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rag_28_en <span style="font-weight:400;color:#888">· v2 · 도윤, Busan</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: 도윤 · Location: Busan, South Korea · Nationality: Korean · Language: Korean · Gender: non-binary · Age: 50s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is 도윤.
+  [profile] User lives in Busan, South Korea.
+  [profile] User&#x27;s nationality is Korean; preferred language Korean.
+  [profile] User&#x27;s gender is non-binary; age 50s.
+  [profile] User&#x27;s local timezone is Asia/Seoul (KST, UTC+9); currency KRW (₩).
   [2026-07-02] User is allergic to peanuts.
   [2026-05-20] User works as a accountant.
   [2026-03-04] User prefers a window seat when traveling.
@@ -267,20 +429,35 @@ span 출처 = <b>user_memory(내부)</b>, 외부 world-knowledge span과 구별.
   [2026-01-03] User&#x27;s home address is 960 Pine Court.
   [2026-07-16] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.
   [2026-02-04] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.</div></details>
-<details class="uc"><summary>v3_rags_29_en <span style="font-weight:400;color:#888">· rag_single · Liam, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Liam · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: late 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rags_29_en <span style="font-weight:400;color:#888">· rag_single · Liam, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Liam · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: female · Age: late 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Liam.
+  [profile] User lives in Toronto, Canada.
+  [profile] User&#x27;s nationality is Canadian; preferred language English.
+  [profile] User&#x27;s gender is female; age late 30s.
+  [profile] User&#x27;s local timezone is America/Toronto (EST, UTC-5); currency CAD ($).
   [2026-07-09] User is allergic to cat dander.
   [2026-05-10] User has a tabby cat named Luna.
   [2026-04-16] User is planning a trip to Kyoto in March.
   [2026-03-08] User&#x27;s home address is 343 Cedar Lane.
   [2026-03-03] User is vegetarian.
   [2026-02-11] Past chat — Comparing gym memberships: wants a pool; close to the office.</div></details>
-<details class="uc"><summary>v3_rags_30_en <span style="font-weight:400;color:#888">· rag_single · Liam, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Liam · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: male · Age: late 30s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rags_30_en <span style="font-weight:400;color:#888">· rag_single · Liam, Toronto</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Liam · Location: Toronto, Canada · Nationality: Canadian · Language: English · Gender: male · Age: late 30s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Liam.
+  [profile] User lives in Toronto, Canada.
+  [profile] User&#x27;s nationality is Canadian; preferred language English.
+  [profile] User&#x27;s gender is male; age late 30s.
+  [profile] User&#x27;s local timezone is America/Toronto (EST, UTC-5); currency CAD ($).
   [2026-06-10] User is gluten-free.
   [2026-05-07] User is allergic to peanuts.
   [2026-01-12] User is planning a trip to Iceland in December.
   [2026-01-03] User works as a marketing manager.
   [2026-01-21] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.</div></details>
-<details class="uc"><summary>v3_rags_31_en <span style="font-weight:400;color:#888">· rag_single · Olivia, New York</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — you know this ambiently, no lookup needed] Name: Olivia · Location: New York, United States · Nationality: American · Language: English · Gender: non-binary · Age: late 20s. Greet and personalize naturally from this; for exact values (addresses, saved preferences, past chats) retrieve from memory instead.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+<details class="uc"><summary>v3_rags_31_en <span style="font-weight:400;color:#888">· rag_single · Olivia, New York</span></summary><div class="prof"><b>A. 프롬프트 프로필 (no-RAG)</b><br>[User profile — the person you are talking with] Name: Olivia · Location: New York, United States · Nationality: American · Language: English · Gender: non-binary · Age: late 20s.</div><div class="mem"><b>B. 메모리 검색 코퍼스 (RAG &lt;ret&gt;)</b>
+  [profile] User&#x27;s name is Olivia.
+  [profile] User lives in New York, United States.
+  [profile] User&#x27;s nationality is American; preferred language English.
+  [profile] User&#x27;s gender is non-binary; age late 20s.
+  [profile] User&#x27;s local timezone is America/New_York (EST, UTC-5); currency USD ($).
   [2026-04-14] User prefers an aisle seat when traveling.
   [2026-03-23] User&#x27;s home address is 982 Cedar Lane.
   [2026-03-08] User&#x27;s favorite cuisine is Ethiopian.
