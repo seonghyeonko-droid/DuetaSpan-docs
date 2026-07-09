@@ -2,48 +2,42 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 줘.
-     4.14s  <ret> 발화 (turn1 첫 프레임)
-     4.38s  agent 발화 시작: <ret> 알아보고 있어요… 5월 10일에 시카고에서 덴버로 가는 버스는 아침 8시랑 저녁 6시에 있고, 가
-     4.49s  user  발화 끝
-     6.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: (tool result) There are two buses departing Chicago on May tenth: one 
-    14.90s  agent 발화 끝
-    15.40s  user  발화 시작: 아침 8시 걸로 할게. 그 버스 세 자리 예약해 줘.
-    18.72s  <ret> 발화 (turn3 첫 프레임)
-    18.88s  agent 발화 시작: <ret> 네, 확인해 볼게요… 예약이 확정됐어요. 예약 번호는 BX7492이고, 덴버 가는 아침 8시 버스
-    19.00s  user  발화 끝
-    19.68s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.49s]: (tool result) Reservation confirmed: confirmation number is BX7492, th
-    29.35s  agent 발화 끝
-    29.57s  user  발화 시작: 좋아. 음, 덴버 도착 예상 시간은 어떻게 돼?
-    33.45s  user  발화 끝
-    33.58s  agent 발화 시작: 좋은 질문이네요—
-    34.26s  user  발화 시작: 버스에 와이파이 있어?
-    34.86s  agent 발화 끝
-    35.73s  user  발화 끝
-    35.85s  agent 발화 시작: 네, 덴버로 가는 모든 버스에는 무료 와이파이가 제공되고, 좌석마다 콘센트도 있어요.
-    42.82s  <ret> 발화 (turn8 첫 프레임)
-    43.08s  agent 발화 끝
-    43.14s  agent 발화 시작: <ret> 도착 시간은 보통… 버스는 덴버에 마운틴 타임으로 저녁 6시쯤 도착할 예정이에요.
-    44.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) The estimated arrival time for the 8:00 AM Chicago to De
-    46.84s  user  발화 시작: 응.
-    47.25s  user  발화 끝
-    49.25s  agent 발화 끝
-    49.35s  user  발화 시작: 저녁 6시. 알았어. 수하물 허용량은 어떻게 돼?
-    53.03s  <ret> 발화 (turn11 첫 프레임)
-    53.35s  agent 발화 시작: <ret> 각 승객은… 각 승객은 위탁 수하물 하나랑 기내 수하물 하나씩 가져올 수 있고, 무게는 각각 오십
-    53.61s  user  발화 끝
-    54.79s  ⚡SPAN 주입 [d'=1.76s / d_lead=1.97s]: (tool result) Each passenger is allowed one checked bag and one carry-
-    63.09s  user  발화 시작: 각각 오십 파운드, 알아두면 좋네. 아— 화장실은 있어?
-    63.17s  agent 발화 끝
-    68.46s  agent 발화 시작: 네, 저희 장거리 버스에는 승객 편의를 위해 화장실이 마련되어 있어요.
-    68.61s  user  발화 끝
-    73.00s  agent 발화 끝
-    73.41s  user  발화 시작: 완벽해. 그리고 중간에 정류장이 있어?
-    76.09s  <ret> 발화 (turn15 첫 프레임)
-    76.33s  agent 발화 시작: <ret> 몇 군데 정류장이 있어요… 버스는 네브래스카 주의 오마하랑 캔자스 주의 헤이스에서 각각 15분씩 
-    76.50s  user  발화 끝
-    76.59s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.21s]: (tool result) The bus stops in Omaha, Nebraska, and Hays, Kansas, for 
-    84.34s  agent 발화 끝
-    85.41s  user  발화 시작: 각각 15분, 도움이 되네. 정말 고마워.
-    89.07s  user  발화 끝
-    89.24s  agent 발화 시작: 천만에요! 덴버 여행 즐겁게 다녀오세요. 여행 계획에 언제든지 도움을 드릴 수 있어요.
-    95.73s  agent 발화 끝
+     3.48s  <ret> 발화 (turn1 첫 프레임)
+     3.72s  agent 발화 시작: <ret> 네, 그 여행에 대한 옵션을 찾아 볼게요. 5월 10일에 출발하는 버스가 세 대 있는데, 가격은 
+     3.80s  user  발화 끝
+     5.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: (tool result) Buses depart Chicago for Denver on May tenth at 8:00 AM,
+    13.97s  agent 발화 끝
+    14.54s  user  발화 시작: 1시 30분 버스는 어때?
+    16.54s  <ret> 발화 (turn3 첫 프레임)
+    16.69s  agent 발화 시작: <ret> 그 특정 출발에 대한 정보를 가져올게요. 1시 30분 버스는 직행이고, 10시에 도착하며, 와이파
+    16.88s  user  발화 끝
+    17.58s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.32s]: (tool result) The 1:30 PM bus is a direct route, arriving in Denver at
+    26.80s  agent 발화 끝
+    27.01s  user  발화 시작: 그거 세 자리 예약해 줄 수 있어?
+    28.69s  <ret> 발화 (turn5 첫 프레임)
+    29.01s  agent 발화 시작: <ret> 네, 예약을 진행해 드릴 수 있어요. 예약이 확정됐습니다. 확인 번호는 BX7492이고, 총 금액
+    29.08s  user  발화 끝
+    30.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.32s]: (tool result) Reservation confirmed: confirmation number is BX7492; to
+    38.84s  agent 발화 끝
+    38.87s  user  발화 시작: 좋네—
+    39.85s  agent 발화 시작: 그리고 다시 한 번 모든 세부 사항을 확인해 드릴게요—
+    39.96s  user  발화 끝
+    42.73s  user  발화 시작: 근데 혹시 5월 11일로 날짜를 변경할 수 있을까?
+    43.41s  agent 발화 끝
+    46.05s  <ret> 발화 (turn9 첫 프레임)
+    46.37s  agent 발화 시작: <ret> 네, 대신 5월 11일의 이용 가능 여부를 확인해 볼게요. 5월 11일에는 오전 9시 15분과 오
+    46.57s  user  발화 끝
+    48.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.21s]: (tool result) Buses depart Chicago for Denver on May eleventh at 9:15 
+    59.28s  user  발화 시작: 오후 2시 버스가 더 나은 것 같아.
+    59.59s  agent 발화 끝
+    61.82s  <ret> 발화 (turn11 첫 프레임)
+    61.98s  agent 발화 시작: <ret> 좋은 선택이세요, 그 버스의 구체적인 사항을 살펴볼게요. 오후 2시 버스는 리클라이닝 시트, 화장
+    62.06s  user  발화 끝
+    63.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) The 2:00 PM bus is a direct route, arriving in Denver at
+    68.92s  user  발화 시작: 응.
+    69.32s  user  발화 끝
+    72.64s  agent 발화 끝
+    73.78s  user  발화 시작: 좋아. 그거 세 자리 예약해 줘.
+    76.12s  agent 발화 시작: 네, 바로 그 좌석을 예약해 드릴게요.
+    76.22s  user  발화 끝
+    79.91s  agent 발화 끝

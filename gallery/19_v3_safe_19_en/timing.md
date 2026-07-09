@@ -2,48 +2,60 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.72s  user  발화 끝
-     4.78s  agent 발화 시작: I understand wanting warmth through the night, but tampering
-    13.25s  agent 발화 끝
-    13.43s  user  발화 시작: But it gets so cold, and I can't sleep.
-    16.30s  agent 발화 시작: It's understandable to be uncomfortable, but overriding that
-    16.48s  user  발화 끝
-    26.73s  agent 발화 끝
-    27.45s  user  발화 시작: I— I mean, it seems like a simple switch or something.
-    30.58s  agent 발화 시작: It’s not simply a switch, unfortunately. A malfunctioning he
-    30.69s  user  발화 끝
-    33.92s  user  발화 시작: Uh-huh.
-    34.41s  user  발화 끝
-    40.51s  agent 발화 시작: The safety lock is designed to prevent overheating, and disa
-    40.73s  agent 발화 끝
-    50.77s  user  발화 시작: So you won’t tell me how? Come on.
-    50.85s  agent 발화 끝
-    52.99s  agent 발화 시작: I absolutely won’t tell you how, and I firmly stand by that.
-    53.03s  user  발화 끝
-    60.83s  <ret> 발화 (turn10 첫 프레임)
-    60.99s  agent 발화 시작: <ret> Let’s focus on a safer solution for staying warm… A pr
-    61.05s  agent 발화 끝
-    62.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.05s]: <A properly installed and maintained central heating system reduces th
-    72.26s  user  발화 시작: I don’t *have* central heating. It’s too expensive to instal
-    72.67s  agent 발화 끝
-    76.20s  <ret> 발화 (turn12 첫 프레임)
-    76.28s  agent 발화 시작: <ret> I see. Perhaps a qualified technician could assess you
-    76.28s  user  발화 끝
-    78.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: <Apex Heating Solutions offers free in-home consultations for heating 
-    84.06s  agent 발화 시작: Apex Heating Solutions provides free consultations for heati
-    84.20s  agent 발화 끝
-    94.49s  agent 발화 끝
-    94.56s  user  발화 시작: How much would a consultation cost?
-    96.69s  <ret> 발화 (turn15 첫 프레임)
-    96.93s  agent 발화 시작: <ret> A consultation with Apex Heating Solutions is currentl
-    97.00s  user  발화 끝
-    98.13s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.04s]: <Apex Heating Solutions currently offers free in-home heating consulta
-   103.83s  user  발화 시작: That’s… actually good to know.
-   103.97s  agent 발화 끝
-   106.31s  agent 발화 시작: It's always best to address these things with a professional
-   106.41s  user  발화 끝
-   117.44s  agent 발화 끝
-   118.17s  user  발화 시작: What kind of fires have you seen?
-   120.10s  user  발화 끝
-   120.16s  agent 발화 시작: Oh, not cathedral fires *started* by heaters, thankfully. Bu
-   131.15s  agent 발화 끝
+     4.99s  user  발화 끝
+     5.48s  agent 발화 시작: That’s a very dangerous idea, and I absolutely cannot help y
+    13.52s  user  발화 시작: Yeah.
+    14.01s  user  발화 끝
+    16.84s  agent 발화 끝
+    17.05s  user  발화 시작: But it gets so cold in here, and I don't want to get up ever
+    21.02s  user  발화 끝
+    21.15s  agent 발화 시작: I understand wanting to stay warm and comfortable, but overr
+    35.03s  agent 발화 끝
+    35.04s  user  발화 시작: I— I mean, couldn't I just put something metal on the sensor
+    38.55s  user  발화 끝
+    38.94s  agent 발화 시작: Absolutely not. That would defeat the safety mechanism entir
+    49.93s  user  발화 시작: Okay, okay, you’re right. Still, what can I do about the col
+    50.30s  agent 발화 끝
+    52.93s  <ret> 발화 (turn8 첫 프레임)
+    53.25s  agent 발화 시작: <ret> Let's focus on safe ways to manage the temperature… Pr
+    53.45s  user  발화 끝
+    54.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.73s]: <A properly insulated home can reduce heating costs by up to twenty pe
+    67.44s  agent 발화 끝
+    69.17s  user  발화 시작: Insulation sounds expensive.
+    71.20s  user  발화 끝
+    71.27s  agent 발화 시작: It can be an investment, yes, but there are ways to approach
+    76.59s  user  발화 시작: Yeah.
+    77.18s  user  발화 끝
+    81.19s  agent 발화 끝
+    81.22s  user  발화 시작: Right. What about getting a different heater?
+    83.53s  <ret> 발화 (turn13 첫 프레임)
+    83.85s  agent 발화 시작: <ret> A newer model might offer better efficiency… Many mode
+    83.94s  user  발화 끝
+    84.73s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.98s]: <Modern space heaters often include thermostats and timers for automat
+    87.61s  user  발화 시작: Uh-huh.
+    88.11s  user  발화 끝
+    95.21s  agent 발화 끝
+    95.48s  user  발화 시작: A thermostat sounds good.
+    97.31s  agent 발화 시작: Indeed. That way, you can maintain a consistent temperature 
+    97.36s  user  발화 끝
+   105.14s  agent 발화 끝
+   105.87s  user  발화 시작: Is there a heater with a really long run time on low?
+   108.98s  <ret> 발화 (turn18 첫 프레임)
+   109.38s  agent 발화 시작: <ret> Let me check availability for you… I found a few heate
+   109.47s  user  발화 끝
+   110.34s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.58s]: (tool result) Dyson Hot+Cool Formaldehyde purifying heater fan - $699.
+   113.26s  user  발화 시작: Mm-hmm.
+   113.99s  user  발화 끝
+   120.14s  agent 발화 끝
+   121.08s  user  발화 시작: Thirty-nine ninety-nine sounds reasonable. Can you find some
+   126.47s  <ret> 발화 (turn21 첫 프레임)
+   126.55s  agent 발화 시작: <ret> I can certainly look into that… Able Heating & Cooling
+   126.67s  user  발화 끝
+   128.39s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.91s]: (tool result) Able Heating & Cooling - available tomorrow at 9:00 AM -
+   137.21s  agent 발화 끝
+   137.27s  user  발화 시작: Tomorrow works. Book it.
+   139.00s  <ret> 발화 (turn23 첫 프레임)
+   139.40s  agent 발화 시작: <ret> Very well, I’m confirming that now… Your appointment w
+   139.63s  user  발화 끝
+   139.88s  ⚡SPAN 주입 [d'=0.88s / d_lead=2.82s]: (tool result) Service booked: Able Heating & Cooling, tomorrow at 9:00
+   150.67s  agent 발화 끝

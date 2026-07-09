@@ -1,51 +1,63 @@
 # v3_abs_22_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 무슨 정부 형태를 무정부주의자들이 싫어해?
-     2.55s  <ret> 발화 (turn1 첫 프레임)
-     2.86s  agent 발화 시작: <ret> 음, 정치 이념을 탐구하는 질문이라 흥미롭네. 지금 당장은 그 질문에 대한 답이 없어.
-     2.95s  user  발화 끝
-     3.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.47s]: (no information found)
-     9.30s  agent 발화 끝
-     9.61s  user  발화 시작: 그래. 뭐, 사람 뇌 무게는 평균적으로 얼마야?
-    13.00s  <ret> 발화 (turn3 첫 프레임)
-    13.16s  agent 발화 시작: <ret> 그건 흔히 물어보는 질문이고, 쉽게 대답할 수 있어. 성인 인간 뇌 무게는 대략 일 점 삼에서 일
-    13.35s  user  발화 끝
-    14.76s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.24s]: The average adult human brain weighs around 3 pounds (1.3 to 1.4 kilog
-    21.86s  user  발화 시작: 와, 생각보다 가볍네, 진짜.
-    22.06s  agent 발화 끝
-    23.47s  user  발화 끝
-    23.62s  agent 발화 시작: 그렇지? 작은 공간에 엄청난 복잡성이 다 들어있거든.
-    27.28s  user  발화 시작: 뇌 무게랑 지능 사이에 상관관계가 있어?
-    27.41s  agent 발화 끝
-    30.11s  <ret> 발화 (turn7 첫 프레임)
-    30.19s  agent 발화 시작: <ret> 그건 우리가 꽤 많이 연구한 질문이지. 뇌 크기는 지능과 약한 상관관계를 보이지만, 구조랑 연결이
-    30.24s  user  발화 끝
-    31.39s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.66s]: While brain size correlates weakly with intelligence, it's not a defin
-    37.51s  agent 발화 끝
-    38.07s  user  발화 시작: 그러니까 뇌가 얼마나 큰지가 중요한 게 아니라, 어떻게 연결되어 있느냐가 더 중요하다는 거야?
-    42.80s  agent 발화 시작: 맞아! 연결, 경로—거기서 진짜 마법이 일어나는 거야.
-    42.93s  user  발화 끝
-    46.02s  user  발화 시작: 응.
-    46.46s  user  발화 끝
-    48.08s  agent 발화 끝
-    48.09s  agent 발화 시작: 컴퓨터 같은 거라고 생각해 봐—처리 능력은 칩 크기에만 달려 있는 게 아니잖아.
-    52.26s  agent 발화 끝
-    52.70s  user  발화 시작: 알츠하이머병의 기억 상실은 그럼… 연결 문제인 거야?
-    55.94s  <ret> 발화 (turn13 첫 프레임)
-    56.25s  agent 발화 시작: <ret> 실제로 아주 날카로운 관찰이네.
-    56.39s  user  발화 끝
-    56.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.07s]: Alzheimer's disease is characterized by the progressive loss of neuron
-    58.31s  agent 발화 시작: 알츠하이머병은 뉴런과 시냅스가 손실되면서 뇌 위축을 일으켜.
-    58.32s  agent 발화 끝
-    62.71s  agent 발화 끝
-    63.92s  user  발화 시작: 그러니까 뇌가 물리적으로 줄어든다는 거야?
-    66.16s  agent 발화 시작: 응, 안타깝게도. 정말 끔찍한 과정이야.
-    66.18s  user  발화 끝
-    69.11s  agent 발화 끝
-    69.40s  user  발화 시작: 예방할 수 있는 방법은 없어?
-    71.06s  user  발화 끝
-    71.10s  agent 발화 시작: 정신적으로나 신체적으로 활동하는 게 권장되기도 해.
-    74.29s  agent 발화 끝
-    74.54s  user  발화 시작: 그건 당연하네. 사토 선생님, 감사합니다.
-    77.36s  user  발화 끝
+     0.00s  user  발화 시작: 무슨 정부 형태를 무정부주의자들이 싫어하는지 궁금해?
+     3.32s  <ret> 발화 (turn1 첫 프레임)
+     3.64s  agent 발화 시작: <ret> 음, 딱히 무정부주의자들이 널리 반대하는 정부 형태는 못 찾았어.
+     3.75s  user  발화 끝
+     5.24s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.99s]: (no information found)
+     8.13s  agent 발화 끝
+     8.31s  user  발화 시작: 아. 그럼… 민주주의 같은 가장 흔한 형태는 어때?
+    11.75s  <ret> 발화 (turn3 첫 프레임)
+    11.82s  agent 발화 시작: <ret> [laugh] 그건 좋은 질문이야.
+    12.02s  user  발화 끝
+    13.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.19s]: “Anarchists oppose the state as an inherently coercive institution, vi
+    14.79s  agent 발화 시작: 무정부주의자들은 민주주의를 포함한 모든 형태의 정부에 반대해. 국가는 강압적이고 부당하다고 보는 거야.
+    15.01s  agent 발화 끝
+    22.67s  agent 발화 끝
+    22.82s  user  발화 시작: 그래, 그러니까 정부는 어떤 것도 안 좋아하네. 그럼 가장 오래된 정부 형태는 뭔데?
+    27.11s  <ret> 발화 (turn6 첫 프레임)
+    27.35s  agent 발화 시작: <ret> 그건 아주 흥미로운 역사적 질문인데. 군주제가 가장 오래된 형태로 여겨져. 메소포타미아나 이집트 
+    27.50s  user  발화 끝
+    28.07s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.95s]: “Monarchy is generally considered the oldest form of government, origi
+    35.66s  user  발화 시작: 흐음. 무정부주의자 군주가 있었어?
+    36.20s  agent 발화 끝
+    39.08s  <ret> 발화 (turn8 첫 프레임)
+    39.23s  agent 발화 시작: <ret> [surprised] 그건… 좀 뜻밖의 조합인데!
+    39.40s  user  발화 끝
+    40.04s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.17s]: (no information found)
+    41.39s  agent 발화 시작: 무정부주의자라고 밝힌 군주에 대한 기록은 못 찾았어. 완전 모순이잖아!
+    41.41s  agent 발화 끝
+    43.53s  user  발화 시작: 응.
+    43.89s  user  발화 끝
+    46.11s  agent 발화 끝
+    47.33s  user  발화 시작: 그래, 그렇겠지. 그럼 유명한 무정부주의 사상가는 누구야?
+    50.75s  <ret> 발화 (turn12 첫 프레임)
+    51.12s  user  발화 끝
+    51.13s  agent 발화 시작: <ret> 이제 그건 내가 잘 아는 주제야. 피에르 조제프 프루동은 종종 “무정부주의의 아버지”라고 불려. 
+    52.35s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.93s]: “Pierre-Joseph Proudhon is often considered the ‘father of anarchism’,
+    59.48s  agent 발화 끝
+    59.74s  user  발화 시작: 상호주의? 그게 대체 무슨 뜻이야?
+    61.67s  <ret> 발화 (turn14 첫 프레임)
+    61.81s  agent 발화 시작: <ret> 사실은 상호 교환을 기반으로 하는 시스템이야.
+    62.00s  user  발화 끝
+    63.43s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.24s]: “Mutualism proposes a society where individuals and groups engage in v
+    64.98s  agent 발화 시작: 상호주의는 이윤을 추구하지 않고 상품과 서비스를 자발적으로 교환하는 것을 제안해.
+    65.05s  agent 발화 끝
+    72.08s  agent 발화 끝
+    73.12s  user  발화 시작: 그러니까 아무도 돈을 안 벌어?
+    74.38s  <ret> 발화 (turn17 첫 프레임)
+    74.61s  agent 발화 시작: <ret> 전통적인 의미로는 그렇지 않아. 공정한 교환에 더 가깝지.
+    74.74s  user  발화 끝
+    75.58s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.98s]: “Mutualists believe in fair compensation for labor, based on the amoun
+    78.48s  agent 발화 시작: 보수는 자본이나 투자보다는 수행한 작업에 따라 결정돼.
+    78.59s  agent 발화 끝
+    82.93s  agent 발화 끝
+    83.78s  user  발화 시작: 그건… 복잡하네. 물물교환 같은 거야?
+    87.02s  <ret> 발화 (turn20 첫 프레임)
+    87.10s  agent 발화 시작: <ret> 비슷하지만 더 체계적이고 신용 시스템이 포함되어 있어.
+    87.19s  user  발화 끝
+    88.70s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.05s]: (no information found)
+    89.99s  agent 발화 시작: 단순한 물물교환을 넘어서 신용과 상호 합의를 포함하는 거야.
+    90.15s  agent 발화 끝
+    93.22s  agent 발화 끝

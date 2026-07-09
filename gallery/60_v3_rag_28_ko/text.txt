@@ -2,17 +2,13 @@ v3_rag_28_ko src=nq style=v2
 SYSTEM: <system> 당신은 희귀한 고산 야생화를 전문으로 하는 식물학자입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음, 정부 기관에 대해 읽다가 궁금해졌는데, 참전용사부 실제로 언제 ⟨ret@5.15s⟩ 시작됐어?
-[  5.46s][moshi] 네, 정말 흥미로운 ⟦⚡SPAN@7.15s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 질문이고, 우리나라에 대한 봉사를 점점 더 중요하게 생각하게 된 것을 보여주는 질문이에요.
-[ 12.66s][moshi] 참전용사부는 천구백삼십년 칠월 이십일일에 설립됐습니다.
-[ 17.64s][user ] 천구백삼십년? 그거… 생각보다 얼마 안 된 것 같지 않아? 그때보다 훨씬 전에 참전용사들이 ⟨ret@23.71s⟩ 있었잖아.
-[ 23.86s][moshi] 네, 물론이죠—참전용사들을 ⟦⚡SPAN@25.55s: Prior to 1930, the administration of veterans’ benefits was divided among several agencies.⟧ 돌보는 것은 훨씬 더 오래된 역사를 가지고 있지만, 처음에는 그렇게 공식화되지 않았어요.
-[ 32.01s][moshi] 천구백삼십년 이전에 참전용사들의 혜택은 여러 기관에서 관리했습니다.
-[ 38.45s][user ] 그러니까 그때까지는 좀  patchwork 식으로 운영됐다는 거야? 대체 그 기관들은 뭘 했는데—
-[ 43.80s][moshi] «interrupted» 연금이나 의료 지원 같은 필요를 해결했지만, 중앙 집중적인 초점이 부족했습니다.
-[ 48.66s][user ] «interrupts_prev» 근데 그때 참전용사 *만을* 위한 병원이 ⟨ret@51.55s⟩ 있었어?
-[ 51.78s][moshi] 네, 아주 ⟦⚡SPAN@53.55s: The first dedicated veterans’ hospital opened in 1866, originally as a home for soldiers disabled during the C⟧ 중요한 지적이에요—초기 시설은 종종 재활용되거나 규모가 상당히 제한적이었습니다.
-[ 58.02s][moshi] 참전용사를 위한 최초의 병원은 남북전쟁 이후인 천팔백육십육년에 개설됐습니다.
-[ 65.40s][user ] 천팔백육십육년… 그러니까 참전용사부 자체보다 육십 년 넘게 전이네? 그 사이에 전담 부서를 만들려는 큰 움직임이 있었어?
-[ 73.72s][moshi] ⟨ret@73.65s⟩ 제일차 세계 대전 ⟦⚡SPAN@75.65s: The American Legion advocated strongly for a unified Department of Veterans Affairs throughout the 1920s.⟧ 이후, 그런 서비스를 통합해야 한다는 압력이 커졌습니다.
-[ 78.62s][moshi] 미국 퇴역군인회는 천구백이십년대 내내 통일된 부서를 적극적으로 캠페인했습니다.
+[  0.00s][user ] 정부에서 본격적으로 퇴역 군인들을 돌보기 시작한 게 언제야?
+[  4.33s][moshi] 좋은 질문이세요. 답변은 조금 복잡해요. 시간이 지나면서 진화했거든요.
+[  9.74s][moshi] ⟨ret@9.43s⟩ ⟦⚡SPAN@10.55s: The United States Department of Veterans Affairs was created by Congress in 1930.⟧ 전담 부서를 설립한 건— 의회에서 1930년에 공식적으로 만들었어요.
+[ 12.95s][user ] «backchannel» 어어.
+[ 16.97s][user ] 1930년? 좀 늦은 것 같지 않아? 그 전에 프로그램 같은 건 없었어?
+[ 22.10s][moshi] 물론, 이전에도 지원이 있었지만, 이 규모나 초점은 아니었어요.
+[ 27.18s][moshi] ⟨ret@27.03s⟩ 부서가 ⟦⚡SPAN@28.15s: Before 1930, veterans’ benefits were primarily administered by the Bureau of Pensions, established in 1811.⟧ 설립되기 전 지원— 1811년에 설립된 연금국에서 퇴역 군인 혜택을 처리했어요.
+[ 34.32s][user ] 근데 그때, 1800년대 초에는 어떤 혜택을 받았는데?
+[ 38.75s][moshi] «interrupted» 아, 아주 중요한 질문이시네요—
+[ 40.89s][moshi] ⟨ret@40.74s⟩ 초기 혜택은 주로 ⟦⚡SPAN@42.74s: Early pension benefits primarily consisted of land grants and monetary payments for disabilities acquired duri⟧ 토지 보조금과 복무 관련 장애에 대한 현금 지원이었어요.

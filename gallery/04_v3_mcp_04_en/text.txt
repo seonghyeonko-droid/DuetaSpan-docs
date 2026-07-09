@@ -2,14 +2,17 @@ v3_mcp_04_en src=mcp style=v2
 SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.43s⟩ one?
-[  4.74s][moshi] Certainly, ⟦⚡SPAN@5.39s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. I’ve updated the user agent to SuperCrawler version ten point one, as requested.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.37s⟩ one?
+[  4.69s][moshi] Certainly, ⟦⚡SPAN@5.33s: (tool result) The user agent has been set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. Your browser is now identifying as SuperCrawler version ten point one.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[ 13.32s][user ] Hmm, is that going to affect how websites see me?
-[ 16.65s][moshi] It absolutely will; websites will identify your browser as SuperCrawler, version ten point one.
-[ 23.93s][user ] Okay, and could you now find me websites that specifically mention that ⟨ret@28.91s⟩ crawler?
-[ 29.23s][moshi] Let's ⟦⚡SPAN@29.87s: (tool result) Search results show two pages mentioning “SuperCrawler version 10.1”: a developer blog post and ⟧ see what the web has to say about SuperCrawler. I found two results mentioning SuperCrawler version ten point one: a developer blog and a forum.
-      CALL: {"function": "google_search", "arguments": {"query": "SuperCrawler version 10.1"}}
-[ 40.30s][user ] A forum discussion, huh? Can you just read me the first line of that forum post?
-[ 45.54s][moshi] ⟨ret@45.46s⟩ I can ⟦⚡SPAN@46.42s: (tool result) The first line of the forum post reads: “Anyone else having trouble with SuperCrawler 10.1 block⟧ certainly pull that specific snippet for you.
-      CALL: {"function": "read_webpage_first_line", "arguments": {"url": "https://example.com/forum_post_about_supercrawler"}}
+[ 12.33s][user ] Hmm, is that actually working? Can you check what the user agent *is* ⟨ret@17.60s⟩ now?
+[ 17.84s][moshi] Let’s ⟦⚡SPAN@18.72s: (tool result) The current user agent is SuperCrawler version 10.1.⟧ verify that change for you right away. It is, indeed, reporting as SuperCrawler version ten point one.
+      CALL: {"function": "playwright_current_user_agent", "arguments": {}}
+[ 21.20s][user ] «backchannel» Right.
+[ 25.71s][user ] Okay, good. Now, uh, can you find me restaurants open late near the Apollo Theater?
+[ 31.40s][moshi] ⟨ret@31.33s⟩ [laugh] ⟦⚡SPAN@32.29s: (tool result) Carmine’s Italian Restaurant is open until eleven PM and is point three miles away.⟧ A late-night craving after a show, perhaps?
+      CALL: {"function": "search_restaurants", "arguments": {"location": "Apollo Theater", "open_late": true}}
+[ 34.91s][moshi] Carmine’s Italian Restaurant is open until eleven, just point three miles from the theater.
+[ 37.53s][user ] «backchannel» Mhm.
+[ 40.71s][user ] Carmine's… is that a good place? Do they take reservations?
+[ 44.62s][moshi] It’s a very popular spot, known for family-style Italian.

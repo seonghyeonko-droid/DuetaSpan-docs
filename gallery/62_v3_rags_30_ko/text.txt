@@ -2,5 +2,5 @@ v3_rags_30_ko src=nq_single style=rag_single
 SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 유럽에서 인쇄기가 언제 발명됐는지 ⟨ret@2.73s⟩ 궁금합니다.
-[  3.13s][moshi] 아, 정말 ⟦⚡SPAN@4.73s: The printing press was invented in Europe around 1440.⟧ 흥미로운 질문이세요. 인쇄기는 대략 천사백사십 년쯤에 등장해서 대륙 전체에 지식 보급 방식에 근본적인 변화를 가져왔습니다.
+[  0.00s][user ] 유럽에서 인쇄기가 언제 발명됐는지 자세히 ⟨ret@3.21s⟩ 알려주시겠어요?
+[  3.60s][moshi] 음, 인쇄기는 ⟦⚡SPAN@5.21s: The printing press was invented in Europe around fourteen forty.⟧ 대략 열넷 배넷(1440)년쯤 유럽에서 처음 등장해서 정보 전달 방식을 완전히 바꿔 놓았답니다.

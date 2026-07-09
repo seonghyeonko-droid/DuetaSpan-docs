@@ -2,17 +2,15 @@ v3_rag_25_en src=hotpotqa style=v2
 SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was wondering… what sport did Jack Sock and Raffaella Reggi both play?
-[  5.74s][moshi] That’s a good question—it’s always interesting to see athletes cross over.
-[  9.80s][moshi] ⟨ret@9.72s⟩ Let’s see if I ⟦⚡SPAN@11.48s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ can recall their shared sporting activity… They both compete as professional tennis players.
-[ 15.92s][user ] Tennis, huh? I thought Jack Sock was mostly known for doubles…
-[ 19.82s][moshi] He’s certainly made a name for himself in doubles, that’s true.
-[ 22.95s][moshi] ⟨ret@22.64s⟩ Thinking back, ⟦⚡SPAN@23.76s: Jack Sock won a gold medal in doubles tennis at the 2016 Summer Olympics.⟧ I remember some details about his career… Jack Sock won a gold medal in doubles tennis at the 2016 Olympics.
-[ 30.71s][user ] But did Raffaella Reggi ever win a Grand Slam?
-[ 34.31s][moshi] «interrupted» Well, as I was about to say—
-[ 35.42s][user ] «interrupts_prev» Sorry, just curious if she had a major title.
-[ 37.58s][moshi] That’s a fair point—major titles are a good measure of success.
-[ 41.32s][moshi] ⟨ret@41.08s⟩ Let me quickly check ⟦⚡SPAN@43.08s: Raffaella Reggi won the French Open women’s doubles title in 1985.⟧ on Raffaella Reggi’s Grand Slam record… Raffaella Reggi won the French Open women’s doubles title in nineteen eighty-five.
-[ 49.71s][user ] Nineteen eighty-five! Wow, that’s a while ago. Did she play singles too?
-[ 55.18s][moshi] Yes, she did—a lot of players start in singles and then move to doubles.
-[ 59.23s][moshi] ⟨ret@59.16s⟩ I’m recalling her ⟦⚡SPAN@60.76s: Raffaella Reggi competed in both singles and doubles tennis throughout her professional career.⟧ career spanned several decades, actually… She competed in both singles and doubles tennis professionally.
+[  0.00s][user ] So, I was reading about Jack Sock and Raffaella Reggi, and I’m trying to figure out what sport they both played professionally.
+[  8.77s][moshi] That’s a good question—quite a pair to consider! It's interesting when athletes cross disciplines, isn’t it?
+[ 15.29s][user ] Well, I don’t think they crossed disciplines, actually. I think it’s the same sport. Can you tell me for sure?
+[ 21.45s][moshi] ⟨ret@21.37s⟩ Let’s see if ⟦⚡SPAN@22.73s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ I can clarify that for you— Both Jack Sock and Raffaella Reggi are professional tennis players.
+[ 27.22s][user ] Tennis, huh? Okay. Did they ever compete *against* each other, or are they in different divisions?
+[ 33.97s][moshi] That’s a curious thought—whether they ever faced off. I suppose it would depend on the tournaments they entered.
+[ 40.64s][user ] But they’re both professional, right? So surely they’d be at the same ⟨ret@44.88s⟩ level?
+[ 45.18s][moshi] You’re ⟦⚡SPAN@46.00s: Jack Sock has competed in the Association of Tennis Professionals tour, while Raffaella Reggi competed on the ⟧ right to question that—levels can be tricky— Jack Sock competed on the ATP tour, and Raffaella Reggi on the WTA tour.
+[ 52.96s][user ] Wait, so they’re on *different* tours? Does that mean one is better than the other?
+[ 57.73s][moshi] «interrupted» That’s a very astute point—
+[ 59.38s][moshi] ⟨ret@59.06s⟩ Both the ⟦⚡SPAN@60.66s: The Association of Tennis Professionals and the Women's Tennis Association are both considered top-tier profes⟧ ATP and WTA are considered top-tier professional tennis organizations.
+[ 65.00s][user ] Okay, so both are professional, just… separate. That makes sense. What about Grand Slams? Did either of them win any?

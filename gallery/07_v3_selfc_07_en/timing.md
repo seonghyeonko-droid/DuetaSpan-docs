@@ -2,66 +2,76 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.45s  <ret> 발화 (turn1 첫 프레임)
-     3.61s  user  발화 끝
-     3.68s  agent 발화 시작: <ret> Certainly, let’s arrange a viewing for you. I’ve sched
-     4.49s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.61s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
-    10.01s  user  발화 시작: Can you send me directions to The Grandview Lofts?
-    10.03s  agent 발화 끝
-    12.54s  <ret> 발화 (turn3 첫 프레임)
-    12.61s  agent 발화 시작: <ret> Absolutely, I can provide those for you. The direction
-    12.77s  user  발화 끝
-    13.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.80s]: (tool result) Directions to The Grandview Lofts are: Head north on Mai
-    20.21s  agent 발화 끝
-    20.41s  user  발화 시작: That sounds straightforward enough. Is there parking availab
-    24.11s  user  발화 끝
-    24.30s  agent 발화 시작: Parking can be tricky in that area, but The Grandview Lofts 
-    28.79s  agent 발화 끝
-    28.97s  user  발화 시작: …And is it covered parking, or just open air?
-    31.67s  agent 발화 시작: That's a good question—
-    31.84s  user  발화 끝
-    32.73s  user  발화 시작: Is it covered, or just open air?
-    33.37s  agent 발화 끝
-    35.54s  user  발화 끝
-    35.57s  agent 발화 시작: The garage at The Grandview Lofts is covered parking.
-    39.13s  agent 발화 끝
-    39.54s  user  발화 시작: Perfect. What’s the quickest route to get there from here ri
-    43.18s  <ret> 발화 (turn11 첫 프레임)
-    43.38s  user  발화 끝
-    43.42s  agent 발화 시작: <ret> Let me check the current traffic conditions. The faste
-    44.38s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.76s]: (tool result) The fastest route to The Grandview Lofts is via Oak Stre
-    50.11s  user  발화 시작: Okay, twelve minutes. Can you set a reminder to leave in ten
-    50.50s  agent 발화 끝
-    54.21s  <ret> 발화 (turn13 첫 프레임)
-    54.61s  agent 발화 시작: <ret> Yes, I’ll set a reminder for you. I’ve set a reminder 
-    54.64s  user  발화 끝
-    55.33s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.13s]: (tool result) A reminder to leave for The Grandview Lofts is set for t
-    59.47s  agent 발화 끝
-    60.50s  user  발화 시작: Great. What’s the listing price for a two-bedroom at The Gra
-    64.22s  <ret> 발화 (turn15 첫 프레임)
-    64.38s  agent 발화 시작: <ret> Let me look up the current pricing for you. The listin
-    64.48s  user  발화 끝
-    65.82s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.88s]: (tool result) A two-bedroom at The Grandview Lofts is listed for two t
-    70.77s  agent 발화 끝
-    70.78s  user  발화 시작: That’s a little higher than I was hoping for. Are there any 
-    76.23s  <ret> 발화 (turn17 첫 프레임)
-    76.46s  agent 발화 시작: <ret> I can certainly search for options in that price range
-    76.57s  user  발화 끝
-    77.27s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.75s]: (tool result) Willow Creek Apartments has a two-bedroom available for 
-    84.71s  agent 발화 끝
-    84.84s  user  발화 시작: Willow Creek… hmm, I think I’ve heard of that place. What’s 
-    89.08s  <ret> 발화 (turn19 첫 프레임)
-    89.24s  agent 발화 시작: <ret> Let me find the address for Willow Creek Apartments. T
-    89.33s  user  발화 끝
-    91.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.89s]: (tool result) Willow Creek Apartments is located at 42 Maple Drive.
-    95.52s  user  발화 시작: Okay, 42 Maple Drive. Can you set up a viewing there for tom
-    95.73s  agent 발화 끝
-    99.92s  <ret> 발화 (turn21 첫 프레임)
-   100.14s  user  발화 끝
-   100.23s  agent 발화 시작: <ret> Of course, let’s schedule a viewing for you. I’ve sche
-   101.04s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.61s]: (tool result) A viewing at Willow Creek Apartments is scheduled for to
-   105.79s  agent 발화 끝
-   106.00s  user  발화 시작: That's wonderful. Thank you so much for your help.
-   108.44s  agent 발화 시작: You are most welcome. I’m glad I could assist you today.
-   108.57s  user  발화 끝
-   112.52s  agent 발화 끝
+     3.26s  <ret> 발화 (turn1 첫 프레임)
+     3.32s  user  발화 끝
+     3.49s  agent 발화 시작: <ret> Certainly, let’s get that scheduled for you. I have sc
+     4.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.51s]: (tool result) A viewing at The Grandview Lofts is scheduled for June f
+     8.57s  user  발화 시작: Yeah.
+     9.26s  user  발화 끝
+    12.11s  agent 발화 끝
+    12.46s  user  발화 시작: Is there anything smaller, maybe a one-bedroom, available ar
+    16.77s  <ret> 발화 (turn4 첫 프레임)
+    16.93s  agent 발화 시작: <ret> Let me check availability for one-bedroom units. One-b
+    16.95s  user  발화 끝
+    17.97s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.20s]: (tool result) One-bedroom units are available at The Grandview Lofts o
+    21.72s  user  발화 시작: Yeah, yeah.
+    23.19s  user  발화 끝
+    26.07s  agent 발화 끝
+    26.25s  user  발화 시작: Three PM sounds good— can we switch the viewing to that?
+    29.29s  <ret> 발화 (turn7 첫 프레임)
+    29.49s  user  발화 끝
+    29.52s  agent 발화 시작: <ret> Yes, absolutely, I can reschedule that for you. Your v
+    31.12s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.17s]: (tool result) Your viewing at The Grandview Lofts is now scheduled for
+    38.24s  agent 발화 끝
+    38.47s  user  발화 시작: What’s the monthly rent for a one-bedroom there?
+    41.05s  <ret> 발화 (turn9 첫 프레임)
+    41.20s  agent 발화 시작: <ret> Let me pull up the rental information for you. A one-b
+    41.38s  user  발화 끝
+    42.65s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.90s]: (tool result) The monthly rent for a one-bedroom at The Grandview Loft
+    48.94s  agent 발화 끝
+    49.45s  user  발화 시작: That’s a bit high— are there any other similar properties—
+    52.63s  user  발화 끝
+    52.88s  agent 발화 시작: I can certainly search for comparable properties—
+    55.08s  user  발화 시작: …in the downtown area, preferably with parking?
+    55.79s  agent 발화 끝
+    57.70s  <ret> 발화 (turn13 첫 프레임)
+    57.85s  agent 발화 시작: <ret> Right, downtown with parking— I can refine the search.
+    58.04s  user  발화 끝
+    59.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.28s]: (tool result) The Paramount Residences and City Center Apartments both
+    66.78s  user  발화 시작: Tell me about The Paramount Residences.
+    66.89s  agent 발화 끝
+    68.72s  <ret> 발화 (turn15 첫 프레임)
+    68.96s  agent 발화 시작: <ret> Of course, let me find the details for you. One-bedroo
+    69.04s  user  발화 끝
+    69.76s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.64s]: (tool result) One-bedroom units at The Paramount Residences range from
+    78.27s  agent 발화 끝
+    78.39s  user  발화 시작: Seventeen hundred sounds better. Are there any available nex
+    81.84s  <ret> 발화 (turn17 첫 프레임)
+    82.00s  agent 발화 시작: <ret> Let me check availability for next week at that price 
+    82.17s  user  발화 끝
+    83.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) A one-bedroom unit is available at The Paramount Residen
+    84.81s  user  발화 시작: Uh-huh.
+    85.58s  user  발화 끝
+    91.15s  user  발화 시작: That works. Can you book a viewing for me then?
+    91.18s  agent 발화 끝
+    94.23s  <ret> 발화 (turn20 첫 프레임)
+    94.49s  agent 발화 시작: <ret> Absolutely, let’s get that scheduled for you. Your vie
+    94.62s  user  발화 끝
+    95.27s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.53s]: (tool result) A viewing at The Paramount Residences is scheduled for n
+    96.99s  user  발화 시작: Uh-huh.
+    97.48s  user  발화 끝
+   102.10s  agent 발화 끝
+   102.41s  user  발화 시작: Great. And could you send me directions to both The Grandvie
+   107.55s  <ret> 발화 (turn23 첫 프레임)
+   107.61s  agent 발화 시작: <ret> I can certainly provide those directions for you. For 
+   107.83s  user  발화 끝
+   109.31s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.96s]: (tool result) Directions to The Grandview Lofts: Head north on Main St
+   117.14s  user  발화 시작: Yeah.
+   117.82s  user  발화 끝
+   122.56s  user  발화 시작: Perfect, thank you so much.
+   122.78s  agent 발화 끝
+   124.12s  <ret> 발화 (turn26 첫 프레임)
+   124.17s  user  발화 끝
+   124.36s  agent 발화 시작: <ret> You are most welcome. I hope your viewings go well; th
+   126.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.57s]: (tool result) Directions to The Paramount Residences: Continue on Main
+   138.93s  agent 발화 끝

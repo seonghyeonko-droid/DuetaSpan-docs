@@ -2,23 +2,23 @@ v3_selfc_08_en src=mcp style=mcp_selfcorrect
 SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.11s⟩ tenth.
-[  4.51s][moshi] Let’s ⟦⚡SPAN@5.31s: (tool result) There are two buses departing Chicago on May tenth: one at 8:00 AM costing $250, and another at ⟧ see what bus options are available… Two buses run from Chicago to Denver on May tenth, at eight AM and six PM, costing two hundred fifty and two hundred eighty dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
-[ 15.59s][user ] The eight AM one sounds good. Can you reserve three seats on that ⟨ret@20.11s⟩ bus?
-[ 20.35s][moshi] Absolutely, ⟦⚡SPAN@21.15s: (tool result) Reservation confirmed: confirmation number is BX7492, three seats on the 8:00 AM Chicago to Denv⟧ let me confirm availability… Your reservation is confirmed, number BX7492, for three passengers on the eight AM bus to Denver.
-      CALL: {"function": "Buses_3_ReserveSeats", "arguments": {"bus_id": "8:00 AM Chicago-Denver", "num_passengers": 3}}
-[ 30.08s][user ] Great. Uh, what's the estimated arrival time in Denver?
-[ 34.37s][moshi] «interrupted» That’s a good question—
-[ 34.90s][user ] «interrupts_prev» Is there Wi-Fi on the bus?
-[ 36.92s][moshi] Yes, all our buses to Denver offer complimentary Wi-Fi, and each seat has a power outlet.
-[ 42.31s][moshi] ⟨ret@42.07s⟩ As ⟦⚡SPAN@43.03s: (tool result) The estimated arrival time for the 8:00 AM Chicago to Denver bus is 6:00 PM Mountain Time.⟧ for the arrival time, it’s usually around… The bus is estimated to arrive in Denver at six PM Mountain Time.
-[ 46.10s][user ] «backchannel» Yeah.
-[ 48.60s][user ] Six PM. Okay. What about luggage allowance?
-[ 52.23s][moshi] ⟨ret@52.15s⟩ Each passenger is ⟦⚡SPAN@53.43s: (tool result) Each passenger is allowed one checked bag and one carry-on bag, maximum weight fifty pounds each⟧ allowed… Each passenger may bring one checked bag and a carry-on, each weighing no more than fifty pounds.
-[ 59.42s][user ] Fifty pounds each, good to know. I— I mean, is there a restroom on board?
-[ 65.26s][moshi] Yes, all our long-distance buses have restrooms onboard for passenger convenience.
-[ 71.07s][user ] Perfect. And are there any stops along ⟨ret@73.91s⟩ the way?
-[ 74.31s][moshi] There ⟦⚡SPAN@75.19s: (tool result) The bus stops in Omaha, Nebraska, and Hays, Kansas, for fifteen minutes each.⟧ are a few scheduled stops… The bus stops briefly in Omaha, Nebraska, and Hays, Kansas, for fifteen minutes at each location.
-[ 83.05s][user ] Fifteen minutes each, that’s helpful. Thanks a lot.
-[ 86.28s][moshi] You're very welcome! I hope you enjoy your trip to Denver. I'm always happy to assist with travel plans.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.50s⟩ tenth.
+[  4.89s][moshi] Certainly, let’s ⟦⚡SPAN@6.02s: (tool result) Buses depart Chicago for Denver on May tenth at 8:00 AM, 1:30 PM, and 6:45 PM; prices range from⟧ find some options for that trip. There are three departures on May tenth, costing between one hundred twenty-five and one hundred eighty-nine dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 13.23s][user ] What about the 1:30 PM ⟨ret@15.21s⟩ bus?
+[ 15.45s][moshi] Let me pull ⟦⚡SPAN@16.81s: (tool result) The 1:30 PM bus is a direct route, arriving in Denver at 10:00 PM; it has Wi-Fi and power outlet⟧ up the details for that specific departure. That 1:30 PM bus is direct, arrives at 10:00 PM, and offers both Wi-Fi and power outlets.
+      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "1:30 PM Chicago to Denver"}}
+[ 26.26s][user ] Can I reserve three seats on that one?
+[ 29.23s][moshi] ⟨ret@29.07s⟩ Absolutely, I can ⟦⚡SPAN@30.67s: (tool result) Reservation confirmed: confirmation number is BX7492; total cost is $525.⟧ proceed with the reservation for you. Your reservation is confirmed, confirmation number BX7492, for a total of five hundred twenty-five dollars.
+      CALL: {"function": "Buses_3_ReserveSeats", "arguments": {"bus_id": "1:30 PM Chicago to Denver", "seats": "three"}}
+[ 39.28s][user ] That sounds good—
+[ 40.73s][moshi] «interrupted» And just to confirm all the details one last time—
+[ 43.01s][user ] «interrupts_prev» Actually, could we change the date to May eleventh?
+[ 46.18s][moshi] ⟨ret@46.10s⟩ Of course, let’s check ⟦⚡SPAN@48.10s: (tool result) Buses depart Chicago for Denver on May eleventh at 9:15 AM and 2:00 PM; prices range from $130 t⟧ availability for May eleventh instead. On May eleventh, there are departures at 9:15 AM and 2:00 PM, costing between one hundred thirty and one hundred ninety-five dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
+[ 57.06s][user ] The 2:00 PM bus sounds ⟨ret@59.22s⟩ better.
+[ 59.46s][moshi] Excellent choice, let's look ⟦⚡SPAN@60.98s: (tool result) The 2:00 PM bus is a direct route, arriving in Denver at 10:30 PM; it features reclining seats a⟧ at the specifics of that bus. The 2:00 PM bus offers reclining seats, restrooms, and a direct route, arriving at 10:30 PM.
+      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "2:00 PM Chicago to Denver"}}
+[ 65.05s][user ] «backchannel» Yeah, totally.
+[ 68.72s][user ] Perfect. Reserve three seats on that one, please.
+[ 72.37s][moshi] Certainly, I will reserve those seats for you immediately.

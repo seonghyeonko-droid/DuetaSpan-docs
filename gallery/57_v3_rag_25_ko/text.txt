@@ -2,17 +2,15 @@ v3_rag_25_ko src=hotpotqa style=v2
 SYSTEM: <system> 당신은 퇴역한 항공기 조종사이며 조종석에서의 이야기를 들려주는 것을 좋아합니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 잭 소크 선수랑 라파엘라 레지 선수 둘 다 무슨 스포츠를 했는지 궁금했어요.
-[  5.17s][moshi] 좋은 질문이세요—선수들이 종목을 넘나드는 건 항상 흥미로운 일인 것 같아요.
-[ 10.24s][moshi] ⟨ret@9.93s⟩ 두 분이 함께 ⟦⚡SPAN@11.93s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 했던 스포츠 활동을 찾아볼까요… 두 분 다 프로 테니스 선수로 활동하셨어요.
-[ 16.46s][user ] 테니스군요? 잭 소크 선수는 주로 복식으로 유명한 줄 알았는데…
-[ 21.57s][moshi] 그렇죠, 복식에서 꽤 이름을 날리셨어요.
-[ 24.33s][moshi] ⟨ret@24.02s⟩ 그 선수의 경력에 ⟦⚡SPAN@26.02s: Jack Sock won a gold medal in doubles tennis at the 2016 Summer Olympics.⟧ 대해 좀 더 자세히 찾아보니… 잭 소크 선수는 2016년 올림픽 복식 테니스에서 금메달을 획득하셨어요.
-[ 32.82s][user ] 그런데 라파엘라 레지 선수는 그랜드 슬램 우승 경력이 있나요?
-[ 37.15s][moshi] «interrupted» 음, 말씀드리려고 하던 중에—
-[ 38.74s][user ] «interrupts_prev» 죄송해요, 메이저 타이틀이 있는지 궁금해서요.
-[ 42.31s][moshi] 물론이죠—메이저 타이틀은 성공을 가늠하는 좋은 기준이 될 수 있죠.
-[ 47.05s][moshi] ⟨ret@46.73s⟩ 라파엘라 레지 ⟦⚡SPAN@48.73s: Raffaella Reggi won the French Open women’s doubles title in 1985.⟧ 선수의 그랜드 슬램 기록을 빠르게 확인해 볼게요… 라파엘라 레지 선수는 1985년에 프랑스 오픈 여자 복식에서 우승하셨어요.
-[ 58.03s][user ] 1985년이라니! 와, 정말 오래됐네요. 싱글도 쳤었나요?
-[ 62.96s][moshi] 네, 싱글도 치셨어요—많은 선수들이 싱글로 시작해서 복식으로 넘어가는 경우가 많아요.
-[ 68.88s][moshi] ⟨ret@68.56s⟩ 그녀의 경력은 ⟦⚡SPAN@70.56s: Raffaella Reggi competed in both singles and doubles tennis throughout her professional career.⟧ 실제로 수십 년에 걸쳐 이어졌던 것 같아요… 그녀는 프로 테니스 선수로서 싱글과 복식 모두에서 활동하셨어요.
+[  0.00s][user ] 잭 소크 선수랑 라파엘라 레지 선수에 대해 읽어보다가 두 분이 프로로 활동하신 스포츠가 뭔지 궁금해요.
+[  6.90s][moshi] 좋은 질문이세요—두 분을 함께 생각하니 흥미롭네요. 선수들이 종목을 넘나드는 건 정말 재미있는 일인 것 같아요.
+[ 14.92s][user ] 음, 사실 두 분이 종목을 넘나들었다고는 생각하지 않아요. 같은 스포츠인 것 같은데, 확실하게 말씀해 주실 수 있을까요?
+[ 22.32s][moshi] ⟨ret@22.00s⟩ 알아볼게요—잭 소크 ⟦⚡SPAN@24.00s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 선수와 라파엘라 레지 선수 두 분 모두 프로 테니스 선수이십니다.
+[ 29.78s][user ] 테니스군요? 알겠습니다. 두 분이 서로 경쟁한 적이 있는지, 아니면 다른 리그에 속해 있는지 궁금해요.
+[ 36.72s][moshi] 두 분이 서로 맞붙었을지 궁금하시군요—어떤 토너먼트에 참가했는지에 따라 달라질 것 같아요.
+[ 43.33s][user ] 두 분 모두 프로인데, 그러면 같은 수준일 것 같지 ⟨ret@46.41s⟩ 않나요?
+[ 46.72s][moshi] 확인해 보시는 ⟦⚡SPAN@48.41s: Jack Sock has competed in the Association of Tennis Professionals tour, while Raffaella Reggi competed on the ⟧ 게 맞아요—수준을 가늠하기는 쉽지 않죠—잭 소크 선수는 ATP 투어에서, 라파엘라 레지 선수는 WTA 투어에서 활동하셨습니다.
+[ 56.97s][user ] 잠깐만요, 그러면 서로 다른 투어에 속해 있나요? 그러면 한 분이 다른 분보다 더 잘하는 걸까요?
+[ 63.24s][moshi] «interrupted» 정말 날카로운 질문이세요—
+[ 65.41s][moshi] ⟨ret@65.01s⟩ ATP와 WTA ⟦⚡SPAN@66.85s: The Association of Tennis Professionals and the Women's Tennis Association are both considered top-tier profes⟧ 모두 최상위 프로 테니스 단체로 여겨지고 있습니다.
+[ 70.84s][user ] 알겠습니다, 둘 다 프로인데… 그냥 분리되어 있는 거군요. 이해가 돼요. 그럼 그랜드 슬램 대회는 어땠나요? 두 분 중에 우승한 사람이 있나요?

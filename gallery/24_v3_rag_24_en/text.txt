@@ -2,29 +2,33 @@ v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading a novel, and a character’s name was du Plessis. It sounded… interesting. Where does that name come from?
-[  7.63s][moshi] ⟨ret@7.55s⟩ That’s a ⟦⚡SPAN@8.51s: Du Plessis is a French surname originating in the historical province of Poitou.⟧ good question, a name can often tell a story.
-[ 11.52s][moshi] The name du Plessis originates from the French province of Poitou, meaning “of the manor.”
-[ 17.16s][user ] Poitou… is that still a region in France today?
-[ 21.39s][moshi] It is, though its administrative status has changed over time. It’s now part of the Nouvelle-Aquitaine region.
-[ 27.14s][user ] So, it’s a fairly old name then? Like, medieval times ⟨ret@31.78s⟩ old?
-[ 32.10s][moshi] Determining a ⟦⚡SPAN@32.98s: The earliest documented instance of the du Plessis name appears in records from the twelfth century.⟧ name’s age requires looking into its early records. The earliest records of the du Plessis name date back to the twelfth century.
-[ 40.39s][user ] Wow, twelfth century! That *is* old. Was it a noble family, originally?
-[ 45.88s][moshi] Often, names like that are connected to landowning families, yes.
-[ 50.45s][user ] But was du Plessis a common name back then, or quite rare?
-[ 55.03s][user ] Was it a name held by many, or just a few?
-[ 58.20s][moshi] ⟨ret@58.12s⟩ Understanding a name’s prevalence ⟦⚡SPAN@60.12s: During the medieval period, du Plessis was primarily concentrated among the lesser nobility in Poitou.⟧ requires looking at historical demographics. In the medieval period, du Plessis was largely held by lesser nobility in Poitou.
-[ 67.63s][user ] Lesser nobility… so not kings or dukes, but… knights, maybe?
-[ 72.80s][moshi] Perhaps knights, or landowners holding titles below the highest ranks. It’s a nuanced social structure.
-[ 79.14s][user ] Did the name ever spread beyond France, ⟨ret@81.64s⟩ then?
-[ 81.88s][moshi] Names often travel ⟦⚡SPAN@83.24s: The du Plessis name spread to South Africa with French Huguenots in the late seventeenth century.⟧ with people, through migration and settlement. The name du Plessis travelled to South Africa with French Huguenots in the late seventeenth century.
-[ 91.76s][user ] Huguenots… weren’t they Protestants fleeing religious persecution?
-[ 96.33s][moshi] Precisely. They sought refuge in other countries, including the Dutch Cape Colony.
-[101.38s][user ] So that’s how it got to South Africa. Interesting. Is it a common surname *in* South Africa now?
-[107.34s][moshi] ⟨ret@107.18s⟩ Determining a name’s current ⟦⚡SPAN@109.18s: Du Plessis is currently the twenty-third most common surname in South Africa.⟧ distribution requires census data. Du Plessis is currently the twenty-third most common surname in South Africa.
-[115.62s][user ] Twenty-third… that’s pretty high up the list! I suppose lots of families stayed.
-[120.90s][moshi] Indeed, it suggests a strong and lasting presence within the country’s population.
-[126.00s][user ] Does the name have any particular meaning beyond “of the manor”? Any ⟨ret@131.03s⟩ symbolism?
-[131.18s][moshi] Symbolism in names often ⟦⚡SPAN@133.03s: The “Plessis” component signifies a small enclosed piece of land, often a fortified manor house.⟧ relates to the family’s history or aspirations. The “Plessis” part of the name signifies a fortified manor house, a small enclosed land.
-[141.85s][user ] A fortified manor house… so a place of safety and defense. That makes sense.
-[147.75s][moshi] It does, doesn’t it? Names often reflect the values and concerns of their origins. It reminds me of the walled cities of the Hausa kingdoms, built for just such protection.
+[  0.00s][user ] I was reading about the du Plessis family—where does that name originally come from? It sounds French, doesn’t it?
+[  7.62s][moshi] It does have a certain resonance, doesn’t it? The name’s origins are indeed quite interesting, stretching back several centuries.
+[ 10.96s][user ] «backchannel» Yeah.
+[ 14.62s][user ] So, can you tell me a bit about where it originated? I’m really ⟨ret@19.18s⟩ curious.
+[ 19.58s][moshi] Let’s explore the ⟦⚡SPAN@21.18s: The surname du Plessis is of French origin, derived from the Old French “pleis,” meaning “enclosure” or “farm.⟧ etymology of du Plessis— The name du Plessis comes from Old French, meaning an enclosure or a farm.
+[ 27.77s][user ] Oh, a farm! That’s not what I expected. But French makes sense, given the spelling.
+[ 32.63s][moshi] Indeed. Many French names found their way across Europe, and even further afield, through historical movements and trade.
+[ 39.42s][user ] Were there many families with that name, or was it a local name in just one place?
+[ 45.21s][moshi] ⟨ret@44.90s⟩ Considering the ⟦⚡SPAN@46.26s: The du Plessis family originated in Normandy, France, and later spread to other regions of France and beyond.⟧ meaning, it’s logical to ask— The du Plessis family began in Normandy, France, and then spread to other parts of France.
+[ 54.17s][user ] Normandy… that rings a bell. Wasn’t that invaded by the Normans?
+[ 58.53s][moshi] You are quite right to recall Normandy. The Norman invasion of England in ten sixty-six had a profound impact on the region, and on many families.
+[ 67.27s][user ] So, did any of the du Plessis family come to Africa? I’m trying to trace my ancestry.
+[ 73.10s][moshi] ⟨ret@72.94s⟩ Tracing ancestry is a ⟦⚡SPAN@74.94s: Huguenots bearing the surname du Plessis emigrated to South Africa in the late seventeenth century to escape r⟧ rewarding endeavor— Huguenots with the name du Plessis moved to South Africa in the late sixteen-hundreds.
+[ 80.99s][user ] Huguenots… right, the Protestants. So, they were fleeing religious trouble?
+[ 86.38s][moshi] Precisely. Religious persecution was a significant driver of migration during that period, leading many to seek refuge elsewhere.
+[ 92.59s][user ] «backchannel» Yeah.
+[ 96.20s][user ] Were they well-received in South Africa? Or did they face difficulties there ⟨ret@101.21s⟩ too?
+[101.45s][moshi] The ⟦⚡SPAN@102.49s: The du Plessis family became prominent in South African society, establishing farms and contributing to the re⟧ reception of newcomers is always complex— The du Plessis family became important in South Africa, establishing farms.
+[106.74s][user ] «backchannel» Mhm.
+[109.52s][user ] That’s good to hear. So, they thrived there eventually?
+[113.35s][moshi] It seems they did. The Dutch East India Company also played a role in shaping the social and economic landscape of the Cape Colony.
+[118.00s][user ] «backchannel» Yeah.
+[120.57s][user ] I've heard a bit about the Dutch East India Company. Were the du Plessis involved with them at ⟨ret@126.38s⟩ all?
+[126.54s][moshi] Exploring connections to ⟦⚡SPAN@127.98s: Some members of the du Plessis family were involved in trade with the Dutch East India Company in the eighteen⟧ trading companies is useful— Some du Plessis family members traded with the Dutch East India Company in the seventeen-hundreds.
+[134.99s][user ] Interesting! So, they weren’t just farmers, they were also traders.
+[139.56s][moshi] Indeed. Many families diversified their activities, engaging in both agriculture and commerce to secure their livelihoods.
+[146.64s][user ] And did the name change at all when they got to South Africa? Or did it stay exactly the same?
+[152.70s][user ] Did it become more Afrikaans sounding?
+[155.81s][moshi] It is a very good question to consider how names evolve over time. The name did adapt somewhat.
+[161.64s][moshi] ⟨ret@161.56s⟩ Examining linguistic ⟦⚡SPAN@162.84s: In Afrikaans, the name du Plessis is often spelled “Du Plessis” with a capital 'D' and is pronounced with a di⟧ adaptations is a key aspect— In Afrikaans, the name is spelled “Du Plessis” and has a guttural pronunciation.

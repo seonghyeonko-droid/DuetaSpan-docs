@@ -2,64 +2,64 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
-     2.52s  <ret> 발화 (turn1 첫 프레임)
-     2.83s  agent 발화 시작: <ret> 네, 역사적인 날씨 데이터를 확인해 드릴 수 있어요… 작년 크리스마스 이브에 도쿄는 맑았고, 기온
-     3.05s  user  발화 끝
-     3.88s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.83s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    10.82s  user  발화 시작: 음, 바람 속도는 어땠는데?
-    11.03s  agent 발화 끝
-    12.39s  <ret> 발화 (turn3 첫 프레임)
-    12.78s  agent 발화 시작: <ret> 네, 그 정보를 지금 확인해 볼게요… 저녁에 바람 속도는 시속 15킬로미터였고, 북쪽에서 불었어요
-    12.89s  user  발화 끝
-    14.07s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.76s]: (tool result) The wind speed in Tokyo on December twenty-fourth last y
-    18.89s  agent 발화 끝
-    19.22s  user  발화 시작: 차가운 바람이었겠네. 2월에 일본 알프스에 여행을 가려고 하는데—
-    23.86s  <ret> 발화 (turn5 첫 프레임)
-    24.01s  agent 발화 시작: <ret> 네, 겨울의 일본 알프스는 정말 멋진 광경이에요… 현재 일본 북부 알프스에는 3단계 산사태 위험이
-    24.17s  user  발화 끝
-    25.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: (tool result) Currently, there is a level three avalanche risk in the 
-    31.56s  agent 발화 끝
-    32.69s  user  발화 시작: 3단계? 그게 대체 무슨 뜻이야?
-    34.86s  user  발화 시작: 그게 위험한 편이야?
-    34.95s  user  발화 끝
-    36.10s  <ret> 발화 (turn8 첫 프레임)
-    36.18s  agent 발화 시작: <ret> 네, 좋은 질문이에요… 3단계 위험은 상당한 위험을 의미하며, 여러 개의 큰 산사태가 발생할 가능
-    36.29s  user  발화 끝
-    37.38s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.47s]: (tool result) A level three avalanche risk means considerable avalanch
-    43.59s  agent 발화 끝
-    43.92s  user  발화 시작: 아. 그렇구나. 알았어.
-    46.13s  <ret> 발화 (turn10 첫 프레임)
-    46.28s  agent 발화 시작: <ret> 네, 그렇기 때문에 신중한 계획이 중요해요… 안타깝게도 2월 15일에는 가이드 동계 등산 투어가 
-    46.43s  user  발화 끝
-    47.65s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.94s]: (tool result) There are no guided snowshoe tours available in the Nort
-    53.13s  agent 발화 끝
-    53.59s  user  발화 시작: 실망스럽네.
-    54.74s  user  발화 끝
-    54.76s  agent 발화 시작: 네, 다른 날짜를 알아볼까요? 아니면 다른 활동을 알아볼까요?
-    58.12s  user  발화 시작: 그때쯤에 크로스컨트리 스키를 탈 수 있는 곳이 있어?
-    58.42s  agent 발화 끝
-    60.95s  <ret> 발화 (turn14 첫 프레임)
-    61.19s  agent 발화 시작: <ret> 네, 크로스컨트리 스키 이용 가능 여부를 확인해 볼게요… 2월 15일에 하쿠바 밸리에서 하루에 4
-    61.45s  user  발화 끝
-    62.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: (tool result) Cross-country skiing rentals are available at the Hakuba
-    68.93s  agent 발화 끝
-    69.42s  user  발화 시작: 40달러면 괜찮네.
-    70.89s  <ret> 발화 (turn16 첫 프레임)
-    70.97s  agent 발화 시작: <ret> 네, 하쿠바 밸리는 정말 멋진 곳이에요… 하쿠바 밸리의 현재 적설량은 150센티미터예요.
-    71.15s  user  발화 끝
-    72.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) The Hakuba Valley Ski Area currently has a base depth of
-    77.73s  agent 발화 끝
-    78.19s  user  발화 시작: 와, 눈이 엄청 많네!
-    80.26s  user  발화 끝
-    80.63s  agent 발화 시작: 네, 크로스컨트리 스키를 타기에 정말 좋겠죠.
-    83.49s  agent 발화 끝
-    83.83s  user  발화 시작: 그럼 렌탈을 예약해 줘. 2월 15일 하루만.
-    86.26s  <ret> 발화 (turn20 첫 프레임)
-    86.66s  agent 발화 시작: <ret> 네, 그럼 예약을 진행해 드릴게요… 렌탈 예약이 완료되었고, 예약 번호는 HV7892예요.
-    86.88s  user  발화 끝
-    88.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.88s]: (tool result) A cross-country ski rental has been reserved for you at 
-    93.37s  agent 발화 끝
-    93.47s  user  발화 시작: 완벽해! 정말 고마워.
-    95.28s  agent 발화 시작: 네, 천만에요. 일본 알프스에서 즐거운 시간 보내시길 바랍니다.
-    95.36s  user  발화 끝
-    99.44s  agent 발화 끝
+     2.45s  <ret> 발화 (turn1 첫 프레임)
+     2.76s  agent 발화 시작: <ret> 네, 역사적인 날씨 데이터를 확인하는 건 제가 자주 하는 일인데요. 도쿄는 12월 24일에 맑았고
+     3.00s  user  발화 끝
+     3.81s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.54s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    11.59s  user  발화 시작: 삿포로는 같은 날 어땠어?
+    11.84s  agent 발화 끝
+    13.01s  <ret> 발화 (turn3 첫 프레임)
+    13.39s  agent 발화 시작: <ret> 삿포로 날씨 정보를 찾아볼게요. 삿포로는 눈이 왔고, 최고 기온은 영하 2도, 최저 기온은 영하 
+    13.52s  user  발화 끝
+    14.69s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.15s]: (tool result) The weather in Sapporo on December twenty-fourth last ye
+    21.17s  agent 발화 끝
+    21.49s  user  발화 시작: 차이가 꽤 크네.
+    22.82s  agent 발화 시작: 네, 두 도시 간의 온도 차이가 꽤 컸습니다.
+    22.92s  user  발화 끝
+    25.49s  agent 발화 끝
+    26.54s  user  발화 시작: 하코네에 온천이 있는 료칸 좀 찾아줘.
+    28.47s  <ret> 발화 (turn7 첫 프레임)
+    28.86s  agent 발화 시작: <ret> 하코네의 전통 일본식 여관을 검색 중입니다. 하코네 유료는 1박에 2만 5천 엔이고, 아침 식사와
+    29.12s  user  발화 끝
+    30.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) Found Hakone Yuryo: price is twenty-five thousand yen pe
+    36.92s  agent 발화 끝
+    37.25s  user  발화 시작: 2만 5천 엔… 괜찮네. 좀 더 저렴한 곳은 없어?
+    41.55s  agent 발화 시작: 물론 더 저렴한 옵션을 찾아볼 수 있습니다.
+    41.65s  user  발화 끝
+    44.50s  agent 발화 끝
+    45.15s  user  발화 시작: 하코네 유료는 다음 주말에 방이 있어?
+    47.70s  <ret> 발화 (turn11 첫 프레임)
+    47.73s  user  발화 끝
+    47.85s  agent 발화 시작: <ret> 하코네 유료의 다음 주말 예약 가능 여부를 확인해 보겠습니다. 다음 주 토요일, 1월 20일에 하
+    49.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: (tool result) Hakone Yuryo has one room available next Saturday, Janua
+    56.24s  user  발화 시작: 좋아. 예약해 줘.
+    56.28s  agent 발화 끝
+    57.34s  <ret> 발화 (turn13 첫 프레임)
+    57.41s  agent 발화 시작: <ret> 하코네 유료에 방을 예약해 드리고 있습니다. 하코네 유료 1월 20일 예약이 확정되었고, 총 금액
+    57.67s  user  발화 끝
+    59.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.61s]: (tool result) Reservation confirmed: Hakone Yuryo, one room, January t
+    60.69s  user  발화 시작: 와.
+    61.00s  user  발화 끝
+    67.65s  agent 발화 끝
+    67.97s  user  발화 시작: 잘했어.
+    68.79s  user  발화 끝
+    68.89s  agent 발화 시작: 여행 계획을 도와드릴 수 있어서 기쁩니다. 혹시 하코네 주변의 지역 식물에 대해 더 알아보고 싶으신가요?
+    75.52s  agent 발화 끝
+    76.60s  user  발화 시작: 오, 그거 좋네. 혹시 그 근처에 희귀한 야생화가 있어?
+    80.46s  <ret> 발화 (turn18 첫 프레임)
+    80.69s  agent 발화 시작: <ret> 네, 하코네는 다양한 고산 식물로 유명합니다.
+    80.91s  user  발화 끝
+    82.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.95s]: (no information found)
+    83.60s  agent 발화 시작: 죄송합니다. 현재 하코네의 희귀한 야생화에 대한 구체적인 정보는 가지고 있지 않습니다.
+    83.64s  agent 발화 끝
+    88.58s  user  발화 시작: 그렇구나. 그럼 후지산은 어때? 특별한 꽃이 있어?
+    89.02s  agent 발화 끝
+    91.50s  <ret> 발화 (turn21 첫 프레임)
+    91.82s  agent 발화 시작: <ret> 후지산의 높은 고도는 독특한 고산 종을 지원합니다. 후지산에는 5월 말에 후지자쿠라 벚꽃과 아스테
+    92.00s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.13s]: (tool result) Mount Fuji is home to the Fuji-zakura cherry blossom, bl
+    92.03s  user  발화 끝
+    99.56s  agent 발화 끝
+    99.69s  user  발화 시작: 아스테르 코마로비… 이름이 예쁘네.
+   102.87s  agent 발화 시작: 그렇지 않나요? 힘든 환경에서도 잘 자라는 꽤 강인한 작은 꽃입니다.
+   102.92s  user  발화 끝
+   107.97s  agent 발화 끝

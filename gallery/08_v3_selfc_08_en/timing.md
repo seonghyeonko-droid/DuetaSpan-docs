@@ -2,48 +2,42 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     4.11s  <ret> 발화 (turn1 첫 프레임)
-     4.35s  user  발화 끝
-     4.51s  agent 발화 시작: <ret> Let’s see what bus options are available… Two buses ru
-     5.31s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.45s]: (tool result) There are two buses departing Chicago on May tenth: one 
-    15.59s  user  발화 시작: The eight AM one sounds good. Can you reserve three seats on
-    15.73s  agent 발화 끝
-    20.11s  <ret> 발화 (turn3 첫 프레임)
-    20.35s  agent 발화 시작: <ret> Absolutely, let me confirm availability… Your reservat
-    20.45s  user  발화 끝
-    21.15s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.23s]: (tool result) Reservation confirmed: confirmation number is BX7492, th
-    29.71s  agent 발화 끝
-    30.08s  user  발화 시작: Great. Uh, what's the estimated arrival time in Denver?
-    34.01s  user  발화 끝
-    34.37s  agent 발화 시작: That’s a good question—
-    34.90s  user  발화 시작: Is there Wi-Fi on the bus?
-    35.65s  agent 발화 끝
-    36.92s  agent 발화 시작: Yes, all our buses to Denver offer complimentary Wi-Fi, and 
-    37.01s  user  발화 끝
-    42.07s  <ret> 발화 (turn8 첫 프레임)
-    42.31s  agent 발화 시작: <ret> As for the arrival time, it’s usually around… The bus 
-    42.34s  agent 발화 끝
-    43.03s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.44s]: (tool result) The estimated arrival time for the 8:00 AM Chicago to De
-    46.10s  user  발화 시작: Yeah.
-    46.55s  user  발화 끝
-    48.60s  user  발화 시작: Six PM. Okay. What about luggage allowance?
-    48.71s  agent 발화 끝
-    52.15s  <ret> 발화 (turn11 첫 프레임)
-    52.23s  agent 발화 시작: <ret> Each passenger is allowed… Each passenger may bring on
-    52.26s  user  발화 끝
-    53.43s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.41s]: (tool result) Each passenger is allowed one checked bag and one carry-
-    59.42s  user  발화 시작: Fifty pounds each, good to know. I— I mean, is there a restr
-    59.65s  agent 발화 끝
-    65.16s  user  발화 끝
-    65.26s  agent 발화 시작: Yes, all our long-distance buses have restrooms onboard for 
-    70.81s  agent 발화 끝
-    71.07s  user  발화 시작: Perfect. And are there any stops along the way?
-    73.91s  <ret> 발화 (turn15 첫 프레임)
-    74.31s  agent 발화 시작: <ret> There are a few scheduled stops… The bus stops briefly
-    74.53s  user  발화 끝
-    75.19s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.30s]: (tool result) The bus stops in Omaha, Nebraska, and Hays, Kansas, for 
-    82.75s  agent 발화 끝
-    83.05s  user  발화 시작: Fifteen minutes each, that’s helpful. Thanks a lot.
-    86.00s  user  발화 끝
-    86.28s  agent 발화 시작: You're very welcome! I hope you enjoy your trip to Denver. I
-    92.62s  agent 발화 끝
+     4.50s  <ret> 발화 (turn1 첫 프레임)
+     4.71s  user  발화 끝
+     4.89s  agent 발화 시작: <ret> Certainly, let’s find some options for that trip. Ther
+     6.02s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.73s]: (tool result) Buses depart Chicago for Denver on May tenth at 8:00 AM,
+    13.23s  user  발화 시작: What about the 1:30 PM bus?
+    13.41s  agent 발화 끝
+    15.21s  <ret> 발화 (turn3 첫 프레임)
+    15.45s  agent 발화 시작: <ret> Let me pull up the details for that specific departure
+    15.49s  user  발화 끝
+    16.81s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.86s]: (tool result) The 1:30 PM bus is a direct route, arriving in Denver at
+    25.88s  agent 발화 끝
+    26.26s  user  발화 시작: Can I reserve three seats on that one?
+    29.07s  <ret> 발화 (turn5 첫 프레임)
+    29.17s  user  발화 끝
+    29.23s  agent 발화 시작: <ret> Absolutely, I can proceed with the reservation for you
+    30.67s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.70s]: (tool result) Reservation confirmed: confirmation number is BX7492; to
+    39.10s  agent 발화 끝
+    39.28s  user  발화 시작: That sounds good—
+    40.73s  agent 발화 시작: And just to confirm all the details one last time—
+    40.75s  user  발화 끝
+    43.01s  user  발화 시작: Actually, could we change the date to May eleventh?
+    43.69s  agent 발화 끝
+    46.10s  <ret> 발화 (turn9 첫 프레임)
+    46.18s  agent 발화 시작: <ret> Of course, let’s check availability for May eleventh i
+    46.39s  user  발화 끝
+    48.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.40s]: (tool result) Buses depart Chicago for Denver on May eleventh at 9:15 
+    57.06s  user  발화 시작: The 2:00 PM bus sounds better.
+    57.59s  agent 발화 끝
+    59.22s  <ret> 발화 (turn11 첫 프레임)
+    59.46s  agent 발화 시작: <ret> Excellent choice, let's look at the specifics of that 
+    59.65s  user  발화 끝
+    60.98s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.35s]: (tool result) The 2:00 PM bus is a direct route, arriving in Denver at
+    65.05s  user  발화 시작: Yeah, totally.
+    66.85s  user  발화 끝
+    68.17s  agent 발화 끝
+    68.72s  user  발화 시작: Perfect. Reserve three seats on that one, please.
+    72.28s  user  발화 끝
+    72.37s  agent 발화 시작: Certainly, I will reserve those seats for you immediately.
+    75.56s  agent 발화 끝

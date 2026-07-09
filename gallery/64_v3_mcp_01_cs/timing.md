@@ -1,71 +1,77 @@
 # v3_mcp_01_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 아이폰 웹사이트 상세 지도를 만들어 줘, 제품에 집중해서.
-     3.68s  <ret> 발화 (turn1 첫 프레임)
-     4.00s  agent 발화 시작: <ret> 네, 사이트맵을 만들어 드릴 수 있습니다… Apple은 제품을 iPhone, Mac, iPad, 
-     4.07s  user  발화 끝
-     5.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.97s]: (tool result) The Apple website map shows one hundred and thirty-two p
-    15.89s  agent 발화 끝
-    15.90s  user  발화 시작: 음, 많네. 아이폰 페이지로만 좁혀 줄 수 있어?
-    19.21s  <ret> 발화 (turn3 첫 프레임)
-    19.53s  agent 발화 시작: <ret> 네, 검색 범위를 좁혀 드릴 수 있습니다… 아이폰 제품 페이지는 열두 개이며, iPhone 15 
-    19.79s  user  발화 끝
-    20.25s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.31s]: (tool result) The search returned twelve iPhone product pages, includi
-    31.35s  agent 발화 끝
-    32.89s  user  발화 시작: 그리고 기본 모델 iPhone 15 가격은 얼마야?
-    35.74s  <ret> 발화 (turn5 첫 프레임)
-    35.81s  agent 발화 시작: <ret> 현재 가격을 확인해 보겠습니다… 128 기가바이트 저장 공간을 갖춘 기본 모델 iPhone 15는
-    36.08s  user  발화 끝
-    37.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.84s]: (tool result) The iPhone 15, with 128GB of storage, currently costs $7
-    47.31s  agent 발화 끝
-    48.00s  user  발화 시작: 그 가격은 세금 포함 가격이야, 아니면 제외 가격이야?
-    51.72s  user  발화 시작: 비싸네…
-    51.84s  user  발화 끝
-    52.43s  agent 발화 시작: 음, 표시된 가격은—
-    52.63s  user  발화 끝
-    53.88s  user  발화 시작: Apple에서 학생 할인도 해 주나?
-    54.70s  agent 발화 끝
-    55.81s  <ret> 발화 (turn10 첫 프레임)
-    55.95s  user  발화 끝
-    56.05s  agent 발화 시작: <ret> 아, 아주 실용적인 질문이네요. 네, Apple은 교육 할인 혜택을 제공합니다.
-    56.77s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.74s]: (tool result) Students, teachers, and staff qualify for a $100 discoun
-    61.54s  agent 발화 시작: 자격을 갖춘 학생, 교사 및 직원은 인증을 통해 특정 iPhone 모델에 대해 백 달러 할인을 받을 수 있습
-    61.79s  agent 발화 끝
-    68.77s  agent 발화 끝
-    68.86s  user  발화 시작: 알아두면 좋네. 근처에 iPhone 15 재고가 있는 매장을 찾아 줄 수 있어?
-    73.44s  <ret> 발화 (turn13 첫 프레임)
-    73.76s  agent 발화 시작: <ret> 네, 근처 소매점을 찾아보겠습니다… Main Street에 있는 Best Buy에서 현재 iPho
-    73.95s  user  발화 끝
-    74.96s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.28s]: (tool result) Best Buy on Main Street has the iPhone 15 in stock, with
-    81.82s  user  발화 시작: 좋아. 그리고 길 안내해 줄 수 있어?
-    81.96s  agent 발화 끝
-    84.40s  user  발화 끝
-    84.48s  <ret> 발화 (turn15 첫 프레임)
-    84.56s  agent 발화 시작: <ret> 네, 길 안내를 제공해 드릴 수 있습니다… Main Street에 있는 Best Buy까지 가는 
-    85.44s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.14s]: (tool result) Navigation to Best Buy on Main Street is estimated at 22
-    94.76s  user  발화 시작: 22분? 나쁘지 않네.
-    94.85s  agent 발화 끝
-    96.24s  agent 발화 시작: 꽤 합리적인 거리네요. 새로운 iPhone에 대한 수요를 고려할 때, 재고가 있는 것이 다행입니다.
-    96.42s  user  발화 끝
-   102.86s  agent 발화 끝
-   103.14s  user  발화 시작: 거기 가기 전에 재고를 확인하기 위해 전화하는 알림을 설정해 줄 수 있어?
-   107.21s  <ret> 발화 (turn19 첫 프레임)
-   107.53s  agent 발화 시작: <ret> 네, 그렇게 해 드릴 수 있습니다… Best Buy에 전화하여 iPhone 15 재고를 확인하는 
-   107.68s  user  발화 끝
-   108.73s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.23s]: (tool result) A reminder is set for 3:30 PM to call Best Buy regarding
-   115.71s  user  발화 시작: 완벽해. 도와줘서 고마워.
-   115.83s  agent 발화 끝
-   117.68s  agent 발화 시작: 천만에요. 역사가로서 기술이 얼마나 빠르게 진화하는지 흥미롭다고 생각합니다. 이러한 제품 출시 속도는 정말 
-   117.97s  user  발화 끝
-   126.06s  agent 발화 끝
-   126.30s  user  발화 시작: 그렇구나, 뭐. 최초의 Apple Store 개점일은 언제야?
-   129.34s  <ret> 발화 (turn23 첫 프레임)
-   129.50s  agent 발화 시작: <ret> 역사 기록을 확인해 보겠습니다… 최초의 Apple Store는 2001년 5월 19일 캘리포니아주
-   129.77s  user  발화 끝
-   130.62s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.90s]: (tool result) The first Apple Store opened on May 19, 2001, in Glendal
-   138.07s  agent 발화 끝
-   138.22s  user  발화 시작: 2001년. 생각보다 오래되지 않았네.
-   140.99s  agent 발화 시작: 정말 그렇습니다. 서아프리카 무역 제국의 수세기에 걸친 역사를 생각하면, 정말 눈 깜짝할 사이에 지나가는 시
-   141.08s  user  발화 끝
-   150.16s  agent 발화 끝
+     0.00s  user  발화 시작: 나 그거 만들어 줘.
+     1.06s  <ret> 발화 (turn1 첫 프레임)
+     1.37s  agent 발화 시작: <ret> 네, Apple 웹사이트를 지도화해 드릴 수 있어요— iPhone, iPad, Mac, Apple
+     1.42s  user  발화 끝
+     3.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.93s]: (tool result) The tavily-map tool found 32 product pages on the Apple 
+     4.77s  user  발화 시작: 어어.
+     5.82s  user  발화 끝
+    12.32s  agent 발화 끝
+    13.19s  user  발화 시작: 음, 그거… 너무 많네. iPhone 페이지로만 좁혀 줄 수 있어?
+    17.94s  <ret> 발화 (turn4 첫 프레임)
+    18.02s  agent 발화 시작: <ret> 네, iPhone 페이지로 검색 범위를 좁히는 것은— iPhone 십오, 십사, SE를 포함하여 
+    18.24s  user  발화 끝
+    18.44s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.52s]: (tool result) The tavily-map tool found 8 iPhone-related pages, includ
+    27.57s  agent 발화 끝
+    29.10s  user  발화 시작: 좋아. iPhone 십오랑 십사 비교하는 페이지 있어?
+    31.99s  <ret> 발화 (turn6 첫 프레임)
+    32.30s  agent 발화 시작: <ret> 두 모델을 직접 비교하는 페이지가 있는지 확인해 볼게요— “어떤 것을 사야 할까요?”라는 제목의 
+    32.61s  user  발화 끝
+    33.11s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.20s]: (tool result) The tavily-map tool found one page comparing iPhone 15 a
+    35.09s  user  발화 시작: 응.
+    35.49s  user  발화 끝
+    41.63s  agent 발화 끝
+    42.14s  user  발화 시작: 좋아. 그 페이지 링크 보내 줄 수 있어?
+    45.20s  <ret> 발화 (turn9 첫 프레임)
+    45.44s  agent 발화 시작: <ret> 네, 그 링크를 보내 드릴 수 있어요— professor.okonkwo@example.com으로 
+    45.65s  user  발화 끝
+    46.16s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.52s]: (tool result) The link has been sent to your registered email address,
+    47.99s  user  발화 시작: 어.
+    48.39s  user  발화 끝
+    52.34s  agent 발화 끝
+    52.36s  user  발화 시작: 근데, 링크 보내기 전에, 그 페이지에 카메라 개선 사항에 대해서도 나와 있어?
+    57.45s  user  발화 끝
+    57.46s  agent 발화 시작: —이메일 주소로 보내드렸지만—
+    58.78s  user  발화 시작: …특히 카메라?
+    59.41s  <ret> 발화 (turn14 첫 프레임)
+    59.53s  agent 발화 끝
+    59.73s  agent 발화 시작: <ret> 네, 카메라 개선 사항에 대해 설명하고 있어요— 그 페이지에는 iPhone 십오에 4천8백만 화소
+    59.88s  user  발화 끝
+    60.61s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.70s]: (tool result) The page states “iPhone 15 features a 48MP Main camera f
+    66.29s  user  발화 시작: 그래.
+    66.88s  user  발화 끝
+    70.86s  agent 발화 시작: 이제 링크에 대해서는, 등록된 이메일로 보내졌습니다.
+    71.00s  agent 발화 끝
+    75.03s  agent 발화 끝
+    75.74s  user  발화 시작: 좋아. 이제 화제 좀 바꿔서, 16세기에 서아프리카와 유럽 사이의 무역로에 대한 정보를 찾아 줄 수 있어?
+    82.63s  agent 발화 시작: 아, 다시 제가 잘 아는 분야로 돌아왔네요. 16세기는 중요한 무역을 보았어요—
+    82.74s  user  발화 끝
+    88.02s  <ret> 발화 (turn19 첫 프레임)
+    88.17s  agent 발화 시작: <ret> 주요 경로는 금, 노예, 제조품을 포함하는 삼각 무역이었습니다.
+    88.42s  agent 발화 끝
+    90.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: <reference> The primary trade route was the “Triangle Trade” involving
+    90.20s  user  발화 시작: 어.
+    90.65s  user  발화 끝
+    93.54s  agent 발화 끝
+    93.78s  user  발화 시작: 삼각 무역, 그래. 그 무역로는 일관성이 있었어, 아니면 시간이 지나면서 바뀌었어?
+    98.87s  user  발화 끝
+    99.04s  agent 발화 시작: 그 경로는 정치적, 경제적 요인의 영향을 받아 진화했어요—
+   103.45s  <ret> 발화 (turn23 첫 프레임)
+   103.60s  agent 발화 시작: <ret> 16세기 후반에는 영국과 네덜란드 상인들이 포르투갈의 지배에 도전하기 시작했습니다.
+   103.85s  agent 발화 끝
+   104.89s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.65s]: <reference> By the late 16th century, English and Dutch traders began 
+   109.25s  agent 발화 끝
+   109.45s  user  발화 시작: 그러니까 경쟁이 심해지면서 상황이 바뀐 거야?
+   111.98s  agent 발화 시작: 맞아요. 경쟁이 심해지면서 무역 패턴과 항구의 중요성이 바뀌었습니다.
+   112.23s  user  발화 끝
+   115.14s  user  발화 시작: 어어.
+   116.09s  user  발화 끝
+   117.22s  agent 발화 끝
+   117.23s  user  발화 시작: 그거 말이 되네. 마지막으로, 내일 오전 10시에 그 iPhone 비교 페이지를 검토하라는 알림을 설정해 줄
+   124.57s  <ret> 발화 (turn28 첫 프레임)
+   124.65s  agent 발화 시작: <ret> 네, 그 알림을 설정해 드릴 수 있어요— 내일 오전 열 시에 iPhone 비교 페이지를 검토하라는
+   124.88s  user  발화 끝
+   125.85s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.28s]: (tool result) A reminder has been set for tomorrow at 10:00 AM to revi
+   132.62s  agent 발화 끝

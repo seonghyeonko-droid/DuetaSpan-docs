@@ -2,30 +2,38 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: So, uh, I was wondering… what country has a flag that’s blac
-     5.76s  agent 발화 시작: That’s a very common question, actually.
-     5.87s  user  발화 끝
-     7.82s  <ret> 발화 (turn2 첫 프레임)
-     8.06s  agent 발화 시작: <ret> Let’s consider the colors and their historical associa
-     8.17s  agent 발화 끝
-     9.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: The flag of Germany features horizontal bands of black, red, and gold—
-    17.06s  agent 발화 끝
-    17.81s  user  발화 시작: Oh, right. Germany. I knew that, I think. [laugh] It just… s
-    21.74s  agent 발화 시작: It’s easy to misremember details, even about national symbol
-    21.83s  user  발화 끝
-    25.66s  <ret> 발화 (turn5 첫 프레임)
-    25.97s  agent 발화 시작: <ret> Thinking about flags often brings to mind empires. The
-    26.14s  agent 발화 끝
-    27.02s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.12s]: The Kingdom of Benin, a West African state, used red, black, and white
-    34.55s  agent 발화 끝
-    34.64s  user  발화 시작: Interesting. Were those colors symbolic, like in Germany?
-    38.56s  agent 발화 시작: Indeed, symbolism was crucial in West African societies.
-    38.71s  user  발화 끝
-    42.17s  <ret> 발화 (turn8 첫 프레임)
-    42.56s  agent 발화 시작: <ret> The colors often reflected the ruler’s power and linea
-    42.73s  agent 발화 끝
-    43.77s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.02s]: The Oyo Empire’s flags prominently featured yellow, symbolizing wealth
-    51.93s  agent 발화 끝
-    52.57s  user  발화 시작: So yellow meant wealth? That’s… pretty straightforward, I gu
-    56.67s  agent 발화 시작: It was a very direct visual language, certainly.
-    56.78s  user  발화 끝
-    60.18s  agent 발화 끝
+     4.73s  <ret> 발화 (turn1 첫 프레임)
+     4.95s  agent 발화 시작: <ret> That's a curious question, prompting a look at nationa
+     5.14s  user  발화 끝
+     6.49s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.12s]: The flag of Germany is composed of three horizontal bands of black, re
+     9.03s  agent 발화 시작: The flag of Germany features black, red, and gold horizontal
+     9.07s  agent 발화 끝
+    10.49s  user  발화 시작: Yeah.
+    10.95s  user  발화 끝
+    13.98s  agent 발화 끝
+    14.28s  user  발화 시작: Oh, interesting. Did those colors always represent Germany?
+    18.41s  <ret> 발화 (turn5 첫 프레임)
+    18.49s  user  발화 끝
+    18.72s  agent 발화 시작: <ret> The symbolism has evolved over time, certainly.
+    19.53s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.17s]: The black, red, and gold colors were adopted in 1848 during the German
+    21.73s  agent 발화 시작: Those colors were adopted in eighteen forty-eight, represent
+    21.89s  agent 발화 끝
+    23.69s  user  발화 시작: Yeah, yeah.
+    24.51s  user  발화 끝
+    27.83s  user  발화 시작: That’s neat. I was reading about trade routes… did Germany h
+    27.85s  agent 발화 끝
+    33.70s  <ret> 발화 (turn9 첫 프레임)
+    34.09s  agent 발화 시작: <ret> Indeed, trade networks extended quite far, even then.
+    34.32s  user  발화 끝
+    35.30s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.02s]: From the seventeenth to the nineteenth centuries, German merchants tra
+    38.08s  agent 발화 시작: German merchants traded textiles with West African kingdoms 
+    38.11s  agent 발화 끝
+    45.36s  agent 발화 끝
+    45.64s  user  발화 시작: Wow, textiles for gold… that’s quite a deal. Were there spec
+    52.10s  <ret> 발화 (turn12 첫 프레임)
+    52.36s  user  발화 끝
+    52.41s  agent 발화 시작: <ret> Some kingdoms proved more reliable trading partners th
+    54.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: The Gold Coast, now Ghana, was a key trading partner with German merch
+    56.87s  agent 발화 시작: The Gold Coast, now Ghana, was a key trading partner, offeri
+    56.95s  agent 발화 끝
+    63.08s  agent 발화 끝

@@ -2,22 +2,26 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: 장바구니 iframe에서 결제 과정 시작해 주세요.
-     3.55s  <ret> 발화 (turn1 첫 프레임)
-     3.78s  agent 발화 시작: <ret> 네, 쇼핑 카트 내에서 결제 과정을 시작했습니다.
-     3.84s  user  발화 끝
-     4.99s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.42s]: (tool result) The shopping cart iframe’s checkout button was clicked s
-     7.17s  user  발화 시작: 총 비용이 얼마인가요, 배송비 포함해서요?
-     7.20s  agent 발화 끝
-    10.12s  <ret> 발화 (turn3 첫 프레임)
-    10.40s  user  발화 끝
-    10.43s  agent 발화 시작: <ret> 잠시만 주문 총액을 확인해 볼게요. 총 금액은 이십칠 파운드 오십 펜스입니다, 배송비 포함해서요.
-    11.72s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.85s]: (tool result) The total order cost is twenty-seven pounds and fifty pe
-    16.74s  agent 발화 끝
-    17.06s  user  발화 시작: 제 배송 주소가 아직 12 Oak Street이 맞는지 확인해 주시겠어요?
-    21.64s  user  발화 끝
-    21.64s  agent 발화 시작: 네, 현재 등록된 배송 주소는 12 Oak Street이 맞습니다. 필요하시면 변경해 드릴 수 있습니다.
-    27.62s  agent 발화 끝
-    28.86s  user  발화 시작: 아니요, 괜찮습니다. 그냥 주문을 진행해 주세요.
-    32.39s  agent 발화 시작: 알겠습니다. 지금 주문을 제출하고 있습니다. 곧 이메일로 확인 메일이 도착할 거예요. 세부 사항을 다시 확인
-    32.42s  user  발화 끝
-    44.50s  agent 발화 끝
+     3.48s  <ret> 발화 (turn1 첫 프레임)
+     3.70s  user  발화 끝
+     3.72s  agent 발화 시작: <ret> 네, 장바구니 안에서 결제 과정을 시작했습니다.
+     4.92s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.42s]: (tool result) The checkout button in the shopping cart iframe was clic
+     7.07s  user  발화 시작: 주문 총액이 얼마인가요?
+     7.14s  agent 발화 끝
+     8.96s  <ret> 발화 (turn3 첫 프레임)
+     9.27s  agent 발화 시작: <ret> 잠시 주문 정보를 확인해 볼게요. 배송비를 포함해서 총 백이십오 점 오 영 달러 오십 센트입니다.
+     9.28s  user  발화 끝
+    10.56s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.78s]: (tool result) The total order cost is $125.50, including shipping.
+    16.50s  agent 발화 끝
+    16.84s  user  발화 시작: 제 배송 주소가 여전히 오크 스트리트 14번지 맞나요?
+    20.86s  user  발화 끝
+    20.93s  agent 발화 시작: 네, 고객님의 배송 주소는 오크 스트리트 14번지로 등록되어 있습니다. 북쪽 회랑 복원 계획서를 그쪽으로 보
+    27.76s  user  발화 시작: 맞아요.
+    28.43s  user  발화 끝
+    29.98s  agent 발화 끝
+    31.30s  user  발화 시작: 배송을 조금 더 빠르게 받을 수 있을까요?
+    33.95s  <ret> 발화 (turn8 첫 프레임)
+    34.19s  agent 발화 시작: <ret> 물론입니다, 더 빠른 배송 옵션을 확인해 볼게요. 오크 스트리트 14번지로 배송하는 빠른 배송은 
+    34.21s  user  발화 끝
+    35.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.10s]: (tool result) Two-day shipping to 14 Oak Street is available for an ad
+    42.40s  agent 발화 끝

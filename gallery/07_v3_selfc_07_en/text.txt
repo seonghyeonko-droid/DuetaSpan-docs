@@ -3,34 +3,39 @@ SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork i
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  3.68s][moshi] ⟨ret@3.45s⟩ Certainly, ⟦⚡SPAN@4.49s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s arrange a viewing for you. I’ve scheduled a viewing for June fifteenth at two PM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 10.01s][user ] Can you send me directions to The Grandview ⟨ret@12.54s⟩ Lofts?
-[ 12.61s][moshi] Absolutely, I ⟦⚡SPAN@13.74s: (tool result) Directions to The Grandview Lofts are: Head north on Main Street for one mile, then turn left on⟧ can provide those for you. The directions are: north on Main Street, then left on Elm Avenue.
+[  3.49s][moshi] ⟨ret@3.26s⟩ Certainly, ⟦⚡SPAN@4.22s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s get that scheduled for you. I have scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[  8.57s][user ] «backchannel» Yeah.
+[ 12.46s][user ] Is there anything smaller, maybe a one-bedroom, available around the same time?
+[ 16.93s][moshi] ⟨ret@16.77s⟩ Let ⟦⚡SPAN@17.97s: (tool result) One-bedroom units are available at The Grandview Lofts on June fifteenth at ten AM and three PM.⟧ me check availability for one-bedroom units. One-bedroom units are available at ten AM and three PM on June fifteenth.
+      CALL: {"function": "Homes_2_SearchAvailability", "arguments": {"property": "The Grandview Lofts", "bedrooms": 1, "date": "June fifteenth"}}
+[ 21.72s][user ] «backchannel» Yeah, yeah.
+[ 26.25s][user ] Three PM sounds good— can we switch the viewing to that?
+[ 29.52s][moshi] ⟨ret@29.29s⟩ Yes, absolutely, I ⟦⚡SPAN@31.12s: (tool result) Your viewing at The Grandview Lofts is now scheduled for June fifteenth at three PM for a one-be⟧ can reschedule that for you. Your viewing is now confirmed for three PM on June fifteenth, for a one-bedroom.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth", "time": "three PM", "bedrooms": 1}}
+[ 38.47s][user ] What’s the monthly rent for a one-bedroom ⟨ret@41.05s⟩ there?
+[ 41.20s][moshi] Let me pull up ⟦⚡SPAN@42.65s: (tool result) The monthly rent for a one-bedroom at The Grandview Lofts is eighteen hundred and fifty dollars.⟧ the rental information for you. A one-bedroom at The Grandview Lofts rents for eighteen hundred and fifty dollars a month.
+      CALL: {"function": "Homes_2_GetRentalDetails", "arguments": {"property": "The Grandview Lofts", "bedrooms": 1}}
+[ 49.45s][user ] That’s a bit high— are there any other similar properties—
+[ 52.88s][moshi] «interrupted» I can certainly search for comparable properties—
+[ 55.08s][user ] «interrupts_prev» …in the downtown area, preferably with ⟨ret@57.70s⟩ parking?
+[ 57.85s][moshi] Right, downtown with ⟦⚡SPAN@59.70s: (tool result) The Paramount Residences and City Center Apartments both offer one-bedroom units with parking do⟧ parking— I can refine the search. The Paramount Residences and City Center Apartments fit your criteria.
+      CALL: {"function": "Homes_2_SearchProperties", "arguments": {"location": "downtown", "parking": "yes", "bedrooms": 1}}
+[ 66.78s][user ] Tell me about The Paramount ⟨ret@68.72s⟩ Residences.
+[ 68.96s][moshi] Of ⟦⚡SPAN@69.76s: (tool result) One-bedroom units at The Paramount Residences range from seventeen hundred to two thousand dolla⟧ course, let me find the details for you. One-bedroom units at The Paramount Residences are between seventeen hundred and two thousand dollars.
+      CALL: {"function": "Homes_2_GetRentalDetails", "arguments": {"property": "The Paramount Residences", "bedrooms": 1}}
+[ 78.39s][user ] Seventeen hundred sounds better. Are there any available next ⟨ret@81.84s⟩ week?
+[ 82.00s][moshi] Let me check availability ⟦⚡SPAN@83.84s: (tool result) A one-bedroom unit is available at The Paramount Residences next Tuesday at eleven AM.⟧ for next week at that price point. A one-bedroom is available next Tuesday at eleven AM at The Paramount Residences.
+      CALL: {"function": "Homes_2_SearchAvailability", "arguments": {"property": "The Paramount Residences", "bedrooms": 1, "min_rent": 1700, "date_range": "next week"}}
+[ 84.81s][user ] «backchannel» Uh-huh.
+[ 91.15s][user ] That works. Can you book a viewing for me ⟨ret@94.23s⟩ then?
+[ 94.49s][moshi] Absolutely, ⟦⚡SPAN@95.27s: (tool result) A viewing at The Paramount Residences is scheduled for next Tuesday at eleven AM for a one-bedro⟧ let’s get that scheduled for you. Your viewing at The Paramount Residences is set for next Tuesday at eleven AM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Paramount Residences", "date": "next Tuesday", "time": "eleven AM", "bedrooms": 1}}
+[ 96.99s][user ] «backchannel» Uh-huh.
+[102.41s][user ] Great. And could you send me directions to both The Grandview Lofts and The Paramount Residences?
+[107.61s][moshi] ⟨ret@107.55s⟩ I can certainly provide ⟦⚡SPAN@109.31s: (tool result) Directions to The Grandview Lofts: Head north on Main Street for two miles, then turn left on El⟧ those directions for you. For The Grandview Lofts, head north on Main Street for two miles, then left on Elm Avenue. For The Paramount Residences, continue on Main Street one mile, then turn right on Oak Street.
       CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 20.41s][user ] That sounds straightforward enough. Is there parking available?
-[ 24.30s][moshi] Parking can be tricky in that area, but The Grandview Lofts has a garage.
-[ 28.97s][user ] …And is it covered parking, or just open air?
-[ 31.67s][moshi] «interrupted» That's a good question—
-[ 32.73s][user ] «interrupts_prev» Is it covered, or just open air?
-[ 35.57s][moshi] The garage at The Grandview Lofts is covered parking.
-[ 39.54s][user ] Perfect. What’s the quickest route to get there from here right now?
-[ 43.42s][moshi] ⟨ret@43.18s⟩ Let me ⟦⚡SPAN@44.38s: (tool result) The fastest route to The Grandview Lofts is via Oak Street, estimated travel time is twelve minu⟧ check the current traffic conditions. The fastest route is via Oak Street, taking about twelve minutes.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts", "departureTime": "now"}}
-[ 50.11s][user ] Okay, twelve minutes. Can you set a reminder to leave in ten ⟨ret@54.21s⟩ minutes?
-[ 54.61s][moshi] Yes, I’ll ⟦⚡SPAN@55.33s: (tool result) A reminder to leave for The Grandview Lofts is set for ten minutes from now.⟧ set a reminder for you. I’ve set a reminder to leave in ten minutes.
-      CALL: {"function": "Reminder_2_SetReminder", "arguments": {"reminderTime": "ten minutes from now", "reminderText": "Leave for Grandview Lofts"}}
-[ 60.50s][user ] Great. What’s the listing price for a two-bedroom at The Grandview Lofts?
-[ 64.38s][moshi] ⟨ret@64.22s⟩ Let me look up ⟦⚡SPAN@65.82s: (tool result) A two-bedroom at The Grandview Lofts is listed for two thousand five hundred dollars per month.⟧ the current pricing for you. The listing price is two thousand five hundred dollars a month.
-      CALL: {"function": "Homes_2_GetListingPrice", "arguments": {"propertyName": "The Grandview Lofts", "propertyType": "two-bedroom"}}
-[ 70.78s][user ] That’s a little higher than I was hoping for. Are there any similar properties available around two thousand ⟨ret@76.23s⟩ dollars?
-[ 76.46s][moshi] I ⟦⚡SPAN@77.27s: (tool result) Willow Creek Apartments has a two-bedroom available for one thousand nine hundred fifty dollars ⟧ can certainly search for options in that price range. Willow Creek Apartments has a two-bedroom for one thousand nine hundred fifty.
-      CALL: {"function": "Homes_2_SearchProperties", "arguments": {"priceMax": "two thousand", "propertyType": "two-bedroom"}}
-[ 84.84s][user ] Willow Creek… hmm, I think I’ve heard of that place. What’s their address?
-[ 89.24s][moshi] ⟨ret@89.08s⟩ Let me find the ⟦⚡SPAN@91.08s: (tool result) Willow Creek Apartments is located at 42 Maple Drive.⟧ address for Willow Creek Apartments. The address is 42 Maple Drive.
-      CALL: {"function": "Homes_2_GetAddress", "arguments": {"propertyName": "Willow Creek Apartments"}}
-[ 95.52s][user ] Okay, 42 Maple Drive. Can you set up a viewing there for tomorrow afternoon?
-[100.23s][moshi] ⟨ret@99.92s⟩ Of course, ⟦⚡SPAN@101.04s: (tool result) A viewing at Willow Creek Apartments is scheduled for tomorrow at three PM.⟧ let’s schedule a viewing for you. I’ve scheduled a viewing for tomorrow at three PM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "Willow Creek Apartments", "date": "tomorrow afternoon"}}
-[106.00s][user ] That's wonderful. Thank you so much for your help.
-[108.44s][moshi] You are most welcome. I’m glad I could assist you today.
+[117.14s][user ] «backchannel» Yeah.
+[122.56s][user ] Perfect, thank you so much.
+[124.36s][moshi] ⟨ret@124.12s⟩ You are most ⟦⚡SPAN@126.12s: (tool result) Directions to The Paramount Residences: Continue on Main Street for one mile, then turn right on⟧ welcome. I hope your viewings go well; these older buildings sometimes have character, you know— I spent a summer assessing permafrost thaw around some historic structures in Greenland, quite fascinating.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Paramount Residences"}}

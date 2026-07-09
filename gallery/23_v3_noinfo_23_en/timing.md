@@ -2,64 +2,64 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.61s  <ret> 발화 (turn1 첫 프레임)
-     4.01s  agent 발화 시작: <ret> Checking historical weather data is something I can ce
-     4.12s  user  발화 끝
-     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) The weather in Tokyo on December twenty-fourth last year
-    14.96s  agent 발화 끝
-    16.28s  user  발화 시작: Hmm, and what about the wind speed?
-    18.08s  <ret> 발화 (turn3 첫 프레임)
-    18.48s  agent 발화 시작: <ret> Let me access that detail for you now… The wind speed 
-    18.68s  user  발화 끝
-    20.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.15s]: (tool result) The wind speed in Tokyo on December twenty-fourth last y
-    27.05s  user  발화 시작: That sounds quite brisk. I'm planning a trip to the Japanese
-    27.15s  agent 발화 끝
-    31.27s  <ret> 발화 (turn5 첫 프레임)
-    31.63s  user  발화 끝
-    31.67s  agent 발화 시작: <ret> The Japanese Alps in winter are a truly spectacular si
-    33.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.24s]: (tool result) Currently, there is a level three avalanche risk in the 
-    40.99s  user  발화 시작: Level three? What does that even *mean*?
-    40.99s  agent 발화 끝
-    43.25s  user  발화 시작: Is that considered high risk?
-    43.34s  user  발화 끝
-    44.97s  <ret> 발화 (turn8 첫 프레임)
-    44.99s  user  발화 끝
-    45.05s  agent 발화 시작: <ret> That's a very good question— A level three risk means 
-    45.93s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.23s]: (tool result) A level three avalanche risk means considerable avalanch
-    52.90s  user  발화 시작: Oh. Right. Okay.
-    53.06s  agent 발화 끝
-    54.86s  <ret> 발화 (turn10 첫 프레임)
-    55.18s  agent 발화 시작: <ret> Considering that, careful planning is key… Unfortunate
-    55.29s  user  발화 끝
-    56.30s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.21s]: (tool result) There are no guided snowshoe tours available in the Nort
-    63.20s  agent 발화 끝
-    63.64s  user  발화 시작: That’s… disappointing.
-    65.57s  user  발화 끝
-    65.61s  agent 발화 시작: Perhaps we could look at a different date? Or a different ac
-    69.59s  agent 발화 끝
-    70.59s  user  발화 시작: Are there any cross-country skiing options available around 
-    74.40s  <ret> 발화 (turn14 첫 프레임)
-    74.61s  user  발화 끝
-    74.64s  agent 발화 시작: <ret> Let me check availability for cross-country skiing… Re
-    76.00s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.87s]: (tool result) Cross-country skiing rentals are available at the Hakuba
-    83.26s  agent 발화 끝
-    83.35s  user  발화 시작: Forty dollars isn’t bad.
-    84.62s  <ret> 발화 (turn16 첫 프레임)
-    84.77s  agent 발화 시작: <ret> Hakuba Valley is a fantastic area, really— The snow ba
-    84.91s  user  발화 끝
-    85.82s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.81s]: (tool result) The Hakuba Valley Ski Area currently has a base depth of
-    92.79s  agent 발화 끝
-    93.41s  user  발화 시작: Wow, that's a lot of snow!
-    95.53s  agent 발화 시작: It is ideal for cross-country skiing, certainly.
-    95.57s  user  발화 끝
-    98.63s  agent 발화 끝
-    98.74s  user  발화 시작: Could you book a rental for me, then? For one day, February 
-   102.04s  <ret> 발화 (turn20 첫 프레임)
-   102.44s  agent 발화 시작: <ret> Certainly, let’s get that reservation made for you… Yo
-   102.58s  user  발화 끝
-   103.64s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.10s]: (tool result) A cross-country ski rental has been reserved for you at 
-   111.00s  user  발화 시작: Perfect! Thank you so much.
-   111.16s  agent 발화 끝
-   113.00s  agent 발화 시작: You’re very welcome. I hope you have a wonderful time in the
-   113.16s  user  발화 끝
-   117.63s  agent 발화 끝
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     4.06s  agent 발화 시작: <ret> Checking historical weather data is something I do oft
+     4.17s  user  발화 끝
+     5.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.82s]: (tool result) The weather in Tokyo on December twenty-fourth last year
+    15.10s  agent 발화 끝
+    16.37s  user  발화 시작: And what about Sapporo on the same day?
+    17.87s  <ret> 발화 (turn3 첫 프레임)
+    18.27s  agent 발화 시작: <ret> Let me retrieve the weather information for Sapporo… S
+    18.39s  user  발화 끝
+    19.79s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.28s]: (tool result) The weather in Sapporo on December twenty-fourth last ye
+    28.89s  user  발화 시작: That’s quite a difference.
+    28.94s  agent 발화 끝
+    30.54s  user  발화 끝
+    30.80s  agent 발화 시작: Indeed, quite a significant temperature contrast between the
+    35.16s  user  발화 시작: Could you find me a ryokan in Hakone with an onsen?
+    35.20s  agent 발화 끝
+    37.56s  <ret> 발화 (turn7 첫 프레임)
+    37.87s  agent 발화 시작: <ret> Searching for a traditional Japanese inn in Hakone… Ha
+    38.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.23s]: (tool result) Found Hakone Yuryo: price is twenty-five thousand yen pe
+    38.12s  user  발화 끝
+    47.15s  agent 발화 끝
+    47.80s  user  발화 시작: Twenty-five thousand yen… that sounds nice. Is there anythin
+    52.56s  agent 발화 시작: I can certainly look for more affordable options…
+    52.57s  user  발화 끝
+    55.61s  agent 발화 끝
+    56.19s  user  발화 시작: Actually, does Hakone Yuryo have availability for next weeke
+    59.61s  <ret> 발화 (turn11 첫 프레임)
+    59.77s  agent 발화 시작: <ret> Let me check availability for Hakone Yuryo next weeken
+    59.88s  user  발화 끝
+    61.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.14s]: (tool result) Hakone Yuryo has one room available next Saturday, Janua
+    68.91s  agent 발화 끝
+    69.88s  user  발화 시작: Perfect. Book it for me, please.
+    71.39s  <ret> 발화 (turn13 첫 프레임)
+    71.72s  user  발화 끝
+    71.79s  agent 발화 시작: <ret> Reserving a room at Hakone Yuryo for you now… Your res
+    73.15s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.95s]: (tool result) Reservation confirmed: Hakone Yuryo, one room, January t
+    76.77s  user  발화 시작: Wow.
+    77.55s  user  발화 끝
+    87.05s  user  발화 시작: Excellent.
+    87.20s  agent 발화 끝
+    87.67s  user  발화 끝
+    87.74s  agent 발화 시작: I'm glad I could assist with your travel plans. Perhaps you'
+    95.30s  agent 발화 끝
+    95.92s  user  발화 시작: Oh, that actually sounds lovely. Are there any rare wildflow
+   100.07s  <ret> 발화 (turn18 첫 프레임)
+   100.23s  agent 발화 시작: <ret> Hakone is known for its diverse alpine plant life, yes
+   100.32s  user  발화 끝
+   101.51s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.21s]: (no information found)
+   104.44s  agent 발화 끝
+   104.49s  agent 발화 시작: I’m sorry, I don’t currently have specific information on ra
+   109.86s  agent 발화 끝
+   109.88s  user  발화 시작: That’s alright. What about Mount Fuji? Any special flowers t
+   113.09s  <ret> 발화 (turn21 첫 프레임)
+   113.33s  agent 발화 시작: <ret> Mount Fuji’s higher altitudes support unique alpine sp
+   113.53s  user  발화 끝
+   115.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.78s]: (tool result) Mount Fuji is home to the Fuji-zakura cherry blossom, bl
+   123.86s  user  발화 시작: Aster komarovii… that’s a beautiful name.
+   124.19s  agent 발화 끝
+   126.45s  user  발화 끝
+   126.75s  agent 발화 시작: It is, isn’t it? A rather resilient little flower, thriving 
+   133.43s  agent 발화 끝

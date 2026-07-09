@@ -2,22 +2,24 @@ v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading this book, and it mentioned “Big Brother”.
-[  3.93s][moshi] That’s a fascinating phrase—it’s become so ingrained in our culture.
-[  7.85s][user ] It really has… but where did the name actually come from?
-[ 11.76s][moshi] ⟨ret@11.60s⟩ Let’s explore the ⟦⚡SPAN@13.60s: The term "Big Brother" originates from the title of George Orwell's dystopian novel, *Nineteen Eighty-Four*.⟧ origins of that striking term… The phrase comes directly from George Orwell’s *Nineteen Eighty-Four*, published in nineteen forty-nine.
-[ 21.50s][user ] Nineteen Eighty-Four… I’ve heard of it, of course, but…
-[ 25.05s][moshi] It’s a truly seminal work, exploring themes of surveillance and control.
-[ 30.03s][user ] …I always assumed it was some historical reference, ⟨ret@33.11s⟩ or—
-[ 33.51s][moshi] Actually, ⟦⚡SPAN@34.15s: Orwell stated he based the concept on memories of the British class system and his experiences with boarding s⟧ the inspiration was quite personal for Orwell… Orwell drew on his memories of the British class system and boarding school life to create the idea.
-[ 42.77s][user ] So it wasn’t about a real person, then?
-[ 45.65s][moshi] «interrupted» That's a very good question—
-[ 47.72s][user ] I mean…
-[ 48.97s][user ] …was there anyone Orwell specifically based “Big Brother” on?
-[ 53.57s][moshi] ⟨ret@53.49s⟩ It wasn’t ⟦⚡SPAN@54.77s: While no single person inspired the figure, some scholars suggest Stalin’s pervasive image influenced Orwell’s⟧ a direct portrait of one individual, precisely… Some believe Stalin’s widespread image may have influenced Orwell’s portrayal of “Big Brother.”
-[ 62.81s][user ] Stalin? That’s… a pretty dark connection.
-[ 66.44s][moshi] The novel certainly reflects the anxieties of its time, doesn't it?
-[ 70.76s][user ] It does. It makes you think about how easily things can slide.
-[ 75.03s][moshi] Indeed. Constant vigilance is essential to protecting freedoms.
-[ 79.78s][user ] You know, it’s funny how a novel can create a phrase that lasts so long.
-[ 84.54s][moshi] Language is a powerful thing; stories shape our understanding of the world.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking…
+[  4.11s][moshi] That's a very common reaction to powerful literature.
+[  7.11s][user ] …where did the phrase “big brother” actually come from? It feels… familiar.
+[ 12.24s][moshi] ⟨ret@12.09s⟩ That’s a fascinating ⟦⚡SPAN@14.09s: The term “Big Brother” originates from George Orwell’s dystopian novel *Nineteen Eighty-Four*.⟧ question about a very influential phrase. “Big Brother” comes from George Orwell’s *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 21.60s][user ] Nineteen forty-nine… that's pretty recent, historically speaking.
+[ 26.27s][moshi] Indeed, though its impact feels much older now, doesn't it?
+[ 28.17s][user ] «backchannel» Okay.
+[ 30.46s][user ] Was Orwell thinking of someone specific when he created that character?
+[ 35.02s][moshi] ⟨ret@34.86s⟩ Looking ⟦⚡SPAN@36.06s: Orwell stated the concept of Big Brother was inspired by a poster depicting Stalin.⟧ into Orwell’s inspirations is quite revealing. Orwell based Big Brother on a Soviet propaganda poster featuring Joseph Stalin, as a figure of pervasive surveillance.
+[ 46.62s][user ] Stalin? That makes a lot of sense, actually—
+[ 49.84s][moshi] «interrupted» The imagery of constant observation—
+[ 51.59s][user ] «interrupts_prev» So, it wasn’t about family at all? I always assumed—
+[ 55.93s][moshi] No, it wasn’t intended as a familial reference at all.
+[ 59.87s][user ] That's surprising! I just thought it was a sort of protective older sibling thing.
+[ 65.05s][moshi] It’s a very natural misinterpretation, given the phrase itself.
+[ 69.86s][user ] Did the phrase catch on right away after the book was ⟨ret@73.40s⟩ published?
+[ 73.72s][moshi] Its adoption ⟦⚡SPAN@74.92s: The phrase “Big Brother” gained widespread use in the nineteen fifties and sixties.⟧ into the broader culture was gradual. "Big Brother" became popular in the nineteen fifties and sixties, symbolizing oppressive government control.
+[ 79.14s][user ] «backchannel» Yeah, yeah.
+[ 83.46s][user ] So, it took a little…
+[ 85.58s][user ] …while to become the cultural shorthand it is now?
+[ 89.12s][moshi] Precisely. Its meaning has only deepened with time and evolving technologies.

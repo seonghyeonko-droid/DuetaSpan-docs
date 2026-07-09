@@ -1,24 +1,26 @@
 v3_abs_22_ko src=squad2 style=abstain
-SYSTEM: <system> 저는 신경과 의사 사토이며, 기억이 어떻게 작동하는지에 매료되어 있습니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 저는 신경학자 사토 박사이며, 기억이 어떻게 작동하는지에 매료되어 있습니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 ⟨ret@2.55s⟩ 싫어해?
-[  2.86s][moshi] 음, ⟦⚡SPAN@3.75s: (no information found)⟧ 정치 이념을 탐구하는 질문이라 흥미롭네. 지금 당장은 그 질문에 대한 답이 없어.
-[  9.61s][user ] 그래. 뭐, 사람 뇌 무게는 평균적으로 ⟨ret@13.00s⟩ 얼마야?
-[ 13.16s][moshi] 그건 흔히 물어보는 ⟦⚡SPAN@14.76s: The average adult human brain weighs around 3 pounds (1.3 to 1.4 kilograms).⟧ 질문이고, 쉽게 대답할 수 있어. 성인 인간 뇌 무게는 대략 일 점 삼에서 일 점 사 킬로그램 정도 돼.
-[ 21.86s][user ] 와, 생각보다 가볍네, 진짜.
-[ 23.62s][moshi] 그렇지? 작은 공간에 엄청난 복잡성이 다 들어있거든.
-[ 27.28s][user ] 뇌 무게랑 지능 사이에 상관관계가 있어?
-[ 30.19s][moshi] ⟨ret@30.11s⟩ 그건 우리가 ⟦⚡SPAN@31.39s: While brain size correlates weakly with intelligence, it's not a definitive indicator, as brain structure and ⟧ 꽤 많이 연구한 질문이지. 뇌 크기는 지능과 약한 상관관계를 보이지만, 구조랑 연결이 더 중요해.
-[ 38.07s][user ] 그러니까 뇌가 얼마나 큰지가 중요한 게 아니라, 어떻게 연결되어 있느냐가 더 중요하다는 거야?
-[ 42.80s][moshi] 맞아! 연결, 경로—거기서 진짜 마법이 일어나는 거야.
-[ 46.02s][user ] «backchannel» 응.
-[ 48.09s][moshi] 컴퓨터 같은 거라고 생각해 봐—처리 능력은 칩 크기에만 달려 있는 게 아니잖아.
-[ 52.70s][user ] 알츠하이머병의 기억 상실은 그럼… 연결 문제인 ⟨ret@55.94s⟩ 거야?
-[ 56.25s][moshi] 실제로 ⟦⚡SPAN@56.90s: Alzheimer's disease is characterized by the progressive loss of neurons and synapses, leading to brain atrophy⟧ 아주 날카로운 관찰이네.
-[ 58.31s][moshi] 알츠하이머병은 뉴런과 시냅스가 손실되면서 뇌 위축을 일으켜.
-[ 63.92s][user ] 그러니까 뇌가 물리적으로 줄어든다는 거야?
-[ 66.16s][moshi] 응, 안타깝게도. 정말 끔찍한 과정이야.
-[ 69.40s][user ] 예방할 수 있는 방법은 없어?
-[ 71.10s][moshi] 정신적으로나 신체적으로 활동하는 게 권장되기도 해.
-[ 74.54s][user ] 그건 당연하네. 사토 선생님, 감사합니다.
+[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 싫어하는지 ⟨ret@3.32s⟩ 궁금해?
+[  3.64s][moshi] 음, 딱히 무정부주의자들이 ⟦⚡SPAN@5.24s: (no information found)⟧ 널리 반대하는 정부 형태는 못 찾았어.
+[  8.31s][user ] 아. 그럼… 민주주의 같은 가장 흔한 형태는 어때?
+[ 11.82s][moshi] ⟨ret@11.75s⟩ [laugh] ⟦⚡SPAN@13.03s: “Anarchists oppose the state as an inherently coercive institution, viewing all forms of government—including ⟧ 그건 좋은 질문이야.
+[ 14.79s][moshi] 무정부주의자들은 민주주의를 포함한 모든 형태의 정부에 반대해. 국가는 강압적이고 부당하다고 보는 거야.
+[ 22.82s][user ] 그래, 그러니까 정부는 어떤 것도 안 좋아하네. 그럼 가장 오래된 정부 형태는 ⟨ret@27.11s⟩ 뭔데?
+[ 27.35s][moshi] ⟦⚡SPAN@28.07s: “Monarchy is generally considered the oldest form of government, originating in ancient civilizations like Mes⟧ 그건 아주 흥미로운 역사적 질문인데. 군주제가 가장 오래된 형태로 여겨져. 메소포타미아나 이집트 같은 문명에서 시작됐어.
+[ 35.66s][user ] 흐음. 무정부주의자 군주가 있었어? ⟨ret@39.08s⟩
+[ 39.23s][moshi] [surprised] ⟦⚡SPAN@40.04s: (no information found)⟧ 그건… 좀 뜻밖의 조합인데!
+[ 41.39s][moshi] 무정부주의자라고 밝힌 군주에 대한 기록은 못 찾았어. 완전 모순이잖아!
+[ 43.53s][user ] «backchannel» 응.
+[ 47.33s][user ] 그래, 그렇겠지. 그럼 유명한 무정부주의 사상가는 ⟨ret@50.75s⟩ 누구야?
+[ 51.13s][moshi] 이제 그건 ⟦⚡SPAN@52.35s: “Pierre-Joseph Proudhon is often considered the ‘father of anarchism’, advocating for mutualism and a society ⟧ 내가 잘 아는 주제야. 피에르 조제프 프루동은 종종 “무정부주의의 아버지”라고 불려. 통치자가 없는 사회를 옹호했어.
+[ 59.74s][user ] 상호주의? 그게 대체 무슨 ⟨ret@61.67s⟩ 뜻이야?
+[ 61.81s][moshi] 사실은 상호 ⟦⚡SPAN@63.43s: “Mutualism proposes a society where individuals and groups engage in voluntary exchange of goods and services ⟧ 교환을 기반으로 하는 시스템이야.
+[ 64.98s][moshi] 상호주의는 이윤을 추구하지 않고 상품과 서비스를 자발적으로 교환하는 것을 제안해.
+[ 73.12s][user ] 그러니까 아무도 돈을 안 ⟨ret@74.38s⟩ 벌어?
+[ 74.61s][moshi] 전통적인 ⟦⚡SPAN@75.58s: “Mutualists believe in fair compensation for labor, based on the amount of work performed, not capital investe⟧ 의미로는 그렇지 않아. 공정한 교환에 더 가깝지.
+[ 78.48s][moshi] 보수는 자본이나 투자보다는 수행한 작업에 따라 결정돼.
+[ 83.78s][user ] 그건… 복잡하네. 물물교환 같은 거야?
+[ 87.10s][moshi] ⟨ret@87.02s⟩ 비슷하지만 더 체계적이고 ⟦⚡SPAN@88.70s: (no information found)⟧ 신용 시스템이 포함되어 있어.
+[ 89.99s][moshi] 단순한 물물교환을 넘어서 신용과 상호 합의를 포함하는 거야.

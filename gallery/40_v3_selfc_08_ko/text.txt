@@ -2,23 +2,23 @@ v3_selfc_08_ko src=mcp style=mcp_selfcorrect
 SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 안내원입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 ⟨ret@4.14s⟩ 줘.
-[  4.38s][moshi] 알아보고 있어요… ⟦⚡SPAN@6.14s: (tool result) There are two buses departing Chicago on May tenth: one at 8:00 AM costing $250, and another at ⟧ 5월 10일에 시카고에서 덴버로 가는 버스는 아침 8시랑 저녁 6시에 있고, 가격은 각각 이백오십 달러랑 이백팔십 달러예요.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
-[ 15.40s][user ] 아침 8시 걸로 할게. 그 버스 세 자리 예약해 줘.
-[ 18.88s][moshi] ⟨ret@18.72s⟩ ⟦⚡SPAN@19.68s: (tool result) Reservation confirmed: confirmation number is BX7492, three seats on the 8:00 AM Chicago to Denv⟧ 네, 확인해 볼게요… 예약이 확정됐어요. 예약 번호는 BX7492이고, 덴버 가는 아침 8시 버스에 세 분이세요.
-      CALL: {"function": "Buses_3_ReserveSeats", "arguments": {"bus_id": "8:00 AM Chicago-Denver", "num_passengers": 3}}
-[ 29.57s][user ] 좋아. 음, 덴버 도착 예상 시간은 어떻게 돼?
-[ 33.58s][moshi] «interrupted» 좋은 질문이네요—
-[ 34.26s][user ] «interrupts_prev» 버스에 와이파이 있어?
-[ 35.85s][moshi] 네, 덴버로 가는 모든 버스에는 무료 와이파이가 제공되고, 좌석마다 콘센트도 있어요.
-[ 43.14s][moshi] ⟨ret@42.82s⟩ 도착 시간은 ⟦⚡SPAN@44.82s: (tool result) The estimated arrival time for the 8:00 AM Chicago to Denver bus is 6:00 PM Mountain Time.⟧ 보통… 버스는 덴버에 마운틴 타임으로 저녁 6시쯤 도착할 예정이에요.
-[ 46.84s][user ] «backchannel» 응.
-[ 49.35s][user ] 저녁 6시. 알았어. 수하물 허용량은 어떻게 ⟨ret@53.03s⟩ 돼?
-[ 53.35s][moshi] 각 승객은… ⟦⚡SPAN@54.79s: (tool result) Each passenger is allowed one checked bag and one carry-on bag, maximum weight fifty pounds each⟧ 각 승객은 위탁 수하물 하나랑 기내 수하물 하나씩 가져올 수 있고, 무게는 각각 오십 파운드를 넘지 않아야 해요.
-[ 63.09s][user ] 각각 오십 파운드, 알아두면 좋네. 아— 화장실은 있어?
-[ 68.46s][moshi] 네, 저희 장거리 버스에는 승객 편의를 위해 화장실이 마련되어 있어요.
-[ 73.41s][user ] 완벽해. 그리고 중간에 정류장이 ⟨ret@76.09s⟩ 있어?
-[ 76.33s][moshi] ⟦⚡SPAN@76.59s: (tool result) The bus stops in Omaha, Nebraska, and Hays, Kansas, for fifteen minutes each.⟧ 몇 군데 정류장이 있어요… 버스는 네브래스카 주의 오마하랑 캔자스 주의 헤이스에서 각각 15분씩 잠시 정차해요.
-[ 85.41s][user ] 각각 15분, 도움이 되네. 정말 고마워.
-[ 89.24s][moshi] 천만에요! 덴버 여행 즐겁게 다녀오세요. 여행 계획에 언제든지 도움을 드릴 수 있어요.
+[  0.00s][user ] 시카고에서 덴버 가는 버스, 5월 10일에 세 명 보여 ⟨ret@3.48s⟩ 줘.
+[  3.72s][moshi] 네, 그 ⟦⚡SPAN@5.48s: (tool result) Buses depart Chicago for Denver on May tenth at 8:00 AM, 1:30 PM, and 6:45 PM; prices range from⟧ 여행에 대한 옵션을 찾아 볼게요. 5월 10일에 출발하는 버스가 세 대 있는데, 가격은 125달러에서 189달러 사이예요.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 14.54s][user ] 1시 30분 버스는 ⟨ret@16.54s⟩ 어때?
+[ 16.69s][moshi] ⟦⚡SPAN@17.58s: (tool result) The 1:30 PM bus is a direct route, arriving in Denver at 10:00 PM; it has Wi-Fi and power outlet⟧ 그 특정 출발에 대한 정보를 가져올게요. 1시 30분 버스는 직행이고, 10시에 도착하며, 와이파이와 전원 콘센트를 제공해요.
+      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "1:30 PM Chicago to Denver"}}
+[ 27.01s][user ] 그거 세 자리 예약해 줄 수 ⟨ret@28.69s⟩ 있어?
+[ 29.01s][moshi] 네, 예약을 ⟦⚡SPAN@30.69s: (tool result) Reservation confirmed: confirmation number is BX7492; total cost is $525.⟧ 진행해 드릴 수 있어요. 예약이 확정됐습니다. 확인 번호는 BX7492이고, 총 금액은 525달러예요.
+      CALL: {"function": "Buses_3_ReserveSeats", "arguments": {"bus_id": "1:30 PM Chicago to Denver", "seats": "three"}}
+[ 38.87s][user ] 좋네—
+[ 39.85s][moshi] «interrupted» 그리고 다시 한 번 모든 세부 사항을 확인해 드릴게요—
+[ 42.73s][user ] «interrupts_prev» 근데 혹시 5월 11일로 날짜를 변경할 수 ⟨ret@46.05s⟩ 있을까?
+[ 46.37s][moshi] 네, 대신 ⟦⚡SPAN@48.05s: (tool result) Buses depart Chicago for Denver on May eleventh at 9:15 AM and 2:00 PM; prices range from $130 t⟧ 5월 11일의 이용 가능 여부를 확인해 볼게요. 5월 11일에는 오전 9시 15분과 오후 2시에 출발하는 버스가 있는데, 가격은 130달러에서 195달러 사이예요.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
+[ 59.28s][user ] 오후 2시 버스가 더 나은 것 같아.
+[ 61.98s][moshi] ⟨ret@61.82s⟩ 좋은 선택이세요, ⟦⚡SPAN@63.82s: (tool result) The 2:00 PM bus is a direct route, arriving in Denver at 10:30 PM; it features reclining seats a⟧ 그 버스의 구체적인 사항을 살펴볼게요. 오후 2시 버스는 리클라이닝 시트, 화장실, 직행 노선을 제공하며, 10시 30분에 도착해요.
+      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"bus_id": "2:00 PM Chicago to Denver"}}
+[ 68.92s][user ] «backchannel» 응.
+[ 73.78s][user ] 좋아. 그거 세 자리 예약해 줘.
+[ 76.12s][moshi] 네, 바로 그 좌석을 예약해 드릴게요.

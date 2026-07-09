@@ -2,14 +2,17 @@ v3_rag_26_en src=nq style=v3
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, uh, I was wondering… what country has a flag that’s black, red, and yellow?
-[  5.76s][moshi] That’s a very common question, actually.
-[  8.06s][moshi] ⟨ret@7.82s⟩ Let’s consider the ⟦⚡SPAN@9.82s: The flag of Germany features horizontal bands of black, red, and gold—yellow—representing liberation from oppr⟧ colors and their historical associations. The flag of Germany is black, red, and yellow, representing liberation.
-[ 17.81s][user ] Oh, right. Germany. I knew that, I think. [laugh] It just… slipped my mind.
-[ 21.74s][moshi] It’s easy to misremember details, even about national symbols.
-[ 25.97s][moshi] ⟨ret@25.66s⟩ Thinking about ⟦⚡SPAN@27.02s: The Kingdom of Benin, a West African state, used red, black, and white in its royal regalia and flags.⟧ flags often brings to mind empires. The Kingdom of Benin used red, black, and white in its flags and regalia.
-[ 34.64s][user ] Interesting. Were those colors symbolic, like in Germany?
-[ 38.56s][moshi] Indeed, symbolism was crucial in West African societies.
-[ 42.56s][moshi] ⟨ret@42.17s⟩ The colors ⟦⚡SPAN@43.77s: The Oyo Empire’s flags prominently featured yellow, symbolizing wealth and the authority of the Alaafin.⟧ often reflected the ruler’s power and lineage. The Oyo Empire used yellow to represent wealth and the ruler's authority.
-[ 52.57s][user ] So yellow meant wealth? That’s… pretty straightforward, I guess.
-[ 56.67s][moshi] It was a very direct visual language, certainly.
+[  0.00s][user ] So, uh, I was wondering… what country has a flag that’s black, red, and ⟨ret@4.73s⟩ yellow?
+[  4.95s][moshi] That's a curious ⟦⚡SPAN@6.49s: The flag of Germany is composed of three horizontal bands of black, red, and gold.⟧ question, prompting a look at national symbols.
+[  9.03s][moshi] The flag of Germany features black, red, and gold horizontal bands.
+[ 10.49s][user ] «backchannel» Yeah.
+[ 14.28s][user ] Oh, interesting. Did those colors always represent Germany?
+[ 18.72s][moshi] ⟨ret@18.41s⟩ The ⟦⚡SPAN@19.53s: The black, red, and gold colors were adopted in 1848 during the German revolutions, representing liberty.⟧ symbolism has evolved over time, certainly.
+[ 21.73s][moshi] Those colors were adopted in eighteen forty-eight, representing liberty during the revolutions.
+[ 23.69s][user ] «backchannel» Yeah, yeah.
+[ 27.83s][user ] That’s neat. I was reading about trade routes… did Germany have much trade with West ⟨ret@33.70s⟩ Africa, historically?
+[ 34.09s][moshi] Indeed, trade ⟦⚡SPAN@35.30s: From the seventeenth to the nineteenth centuries, German merchants traded goods with West African kingdoms, ex⟧ networks extended quite far, even then.
+[ 38.08s][moshi] German merchants traded textiles with West African kingdoms for gold between the seventeenth and nineteenth centuries.
+[ 45.64s][user ] Wow, textiles for gold… that’s quite a deal. Were there specific kingdoms they traded with most often?
+[ 52.41s][moshi] ⟨ret@52.10s⟩ Some kingdoms proved ⟦⚡SPAN@54.10s: The Gold Coast, now Ghana, was a key trading partner with German merchants, offering significant gold resource⟧ more reliable trading partners than others, naturally.
+[ 56.87s][moshi] The Gold Coast, now Ghana, was a key trading partner, offering significant gold resources.

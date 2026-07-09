@@ -1,47 +1,51 @@
 # v3_pause_16_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: 그래서 책을 읽다가 “빅 브라더”라는 단어가 나오더라고요.
-     3.98s  user  발화 끝
-     4.32s  agent 발화 시작: 흥미로운 표현이지—완전 우리 문화에 박혀 버렸잖아.
-     8.44s  agent 발화 끝
-     8.83s  user  발화 시작: 정말 그렇네요… 근데 그 이름이 원래 어디서 나온 거예요?
-    11.64s  <ret> 발화 (turn3 첫 프레임)
-    12.04s  agent 발화 시작: <ret> 그 인상적인 용어의 기원을 알아볼까… 그 표현은 조지 오웰의 *1984*라는 책에서 직접 나온 거
-    12.20s  user  발화 끝
-    13.00s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.19s]: The term "Big Brother" originates from the title of George Orwell's dy
-    20.95s  agent 발화 끝
-    21.45s  user  발화 시작: 1984… 물론 들어 봤지만…
-    24.96s  user  발화 끝
-    24.98s  agent 발화 시작: 정말 중요한 작품이야, 감시와 통제라는 주제를 다루고 있거든.
-    29.61s  agent 발화 끝
-    29.74s  user  발화 시작: …역사적인 언급이나—그런 걸로 생각했거든요.
-    32.54s  <ret> 발화 (turn7 첫 프레임)
-    32.62s  agent 발화 시작: <ret> 사실 오웰에게는 꽤 개인적인 영감이 있었어… 오웰은 영국 계급 제도와 기숙사 생활에 대한 기억을 
-    32.70s  user  발화 끝
-    34.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.59s]: Orwell stated he based the concept on memories of the British class sy
-    42.95s  agent 발화 끝
-    43.04s  user  발화 시작: 그럼 진짜 사람을 모델로 한 건 아니었네요?
-    45.09s  agent 발화 시작: 좋은 질문인데—
-    45.16s  user  발화 끝
-    46.28s  user  발화 시작: 그러니까…
-    46.38s  agent 발화 끝
-    46.91s  user  발화 끝
-    47.41s  user  발화 시작: 빅 브라더를 구체적으로 누구를 보고 만든 거예요?
-    50.36s  <ret> 발화 (turn12 첫 프레임)
-    50.46s  user  발화 끝
-    50.52s  agent 발화 시작: <ret> 정확히 한 사람을 묘사한 건 아니야… 어떤 사람들은 스탈린의 광범위한 이미지가 오웰의 “빅 브라더
-    52.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.38s]: While no single person inspired the figure, some scholars suggest Stal
-    59.28s  user  발화 시작: 스탈린요? 그거… 꽤 어두운 연결이네요.
-    59.28s  agent 발화 끝
-    63.44s  user  발화 끝
-    63.45s  agent 발화 시작: 그 소설은 그 시대의 불안감을 반영하고 있지, 그렇지 않아?
-    67.75s  agent 발화 끝
-    67.97s  user  발화 시작: 그렇네요. 세상이 얼마나 쉽게 변할 수 있는지 생각하게 만들어요.
-    72.12s  agent 발화 시작: 맞아. 자유를 지키려면 끊임없이 경계해야 해.
-    72.31s  user  발화 끝
-    76.14s  agent 발화 끝
-    76.14s  user  발화 시작: 신기하게도 소설이 그렇게 오래도록 기억되는 표현을 만들어낸다는 게 재밌네요.
-    80.77s  agent 발화 시작: 언어는 강력한 힘이 있지; 이야기가 우리 세계관을 형성하는 거야.
-    80.87s  user  발화 끝
-    84.98s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 디스토피아 소설 읽으셨구나.
+     1.98s  user  발화 끝
+     2.44s  agent 발화 시작: 글쎄, 강력한 문학 작품에 그런 반응 보이는 건 흔한 일이야.
+     6.51s  agent 발화 끝
+     6.95s  user  발화 시작: “빅 브라더”라는 표현이 어디서 나왔는지 궁금하네요. 왠지 익숙한 느낌이 들어요.
+    12.55s  <ret> 발화 (turn3 첫 프레임)
+    12.95s  agent 발화 시작: <ret> 그거 참 흥미로운 질문인데, 엄청난 영향을 준 표현이거든. “빅 브라더”는 조지 오웰의 *1984
+    13.06s  user  발화 끝
+    14.31s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.47s]: The term “Big Brother” originates from George Orwell’s dystopian novel
+    24.50s  agent 발화 끝
+    24.98s  user  발화 시작: 천구백사십구 년… 역사적으로 보면 그렇게 오래된 건 아니네요.
+    29.84s  user  발화 끝
+    29.87s  agent 발화 시작: 맞아, 근데 지금은 훨씬 더 오래된 것 같지 않아?
+    31.34s  user  발화 시작: 맞아요.
+    31.79s  user  발화 끝
+    33.02s  agent 발화 끝
+    33.92s  user  발화 시작: 오웰은 그 캐릭터를 만들 때 특정 인물을 염두에 두고 있었나요?
+    38.63s  <ret> 발화 (turn8 첫 프레임)
+    38.71s  agent 발화 시작: <ret> 오웰이 뭘 참고했는지 찾아보니까 꽤 흥미로운 내용이 있네. 오웰은 빅 브라더를 요셉 스탈린의 초상
+    38.78s  user  발화 끝
+    40.47s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.44s]: Orwell stated the concept of Big Brother was inspired by a poster depi
+    50.49s  agent 발화 끝
+    50.57s  user  발화 시작: 스탈린이요? 실제로 그런 것 같아요—
+    53.21s  agent 발화 시작: 끊임없이 감시당하는 이미지—
+    53.29s  user  발화 끝
+    54.47s  user  발화 시작: 그게 가족에 대한 건 아니었나요? 저는 항상 그렇게 생각했어요—
+    55.00s  agent 발화 끝
+    58.02s  user  발화 끝
+    58.40s  agent 발화 시작: 아니, 가족에 대한 의미는 전혀 없었어.
+    61.12s  agent 발화 끝
+    62.46s  user  발화 시작: 정말 놀랍네요! 저는 보호해 주는 큰 형 같은 느낌이라고 생각했어요.
+    67.31s  user  발화 끝
+    67.49s  agent 발화 시작: 표현 자체 때문에 그렇게 오해할 수도 있어.
+    69.75s  agent 발화 끝
+    70.74s  user  발화 시작: 그 표현이 책이 출판되자마자 바로 유명해졌나요?
+    73.24s  <ret> 발화 (turn16 첫 프레임)
+    73.56s  agent 발화 시작: <ret> 그 표현이 널리 퍼지는 데는 시간이 좀 걸렸어. “빅 브라더”는 천구백오십년대와 육십년대에 억압적
+    73.65s  user  발화 끝
+    74.52s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.91s]: The phrase “Big Brother” gained widespread use in the nineteen fifties
+    78.74s  user  발화 시작: 아.
+    79.05s  user  발화 끝
+    82.79s  user  발화 시작: 그러니까 조금…
+    82.83s  agent 발화 끝
+    83.93s  user  발화 끝
+    84.07s  user  발화 시작: …시간이 걸렸다는 거네요? 지금처럼 널리 쓰이게 되기까지.
+    87.45s  user  발화 끝
+    87.50s  agent 발화 시작: 그래. 시간이 지나면서 의미가 더 깊어졌어. 그리고 기술이 발전하면서 더 중요해졌지.
+    93.10s  agent 발화 끝

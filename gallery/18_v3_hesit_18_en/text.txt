@@ -2,16 +2,13 @@ v3_hesit_18_en src=nq style=v1
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about Pompeii, and uh, it got me wondering… when was the last time Vesuvius actually ⟨ret@7.34s⟩ erupted?
-[  7.57s][moshi] That’s a very natural ⟦⚡SPAN@9.34s: Mount Vesuvius last erupted in March of 1944.⟧ question when considering the history of that region.
-[ 12.49s][moshi] The last confirmed eruption of Mount Vesuvius occurred in March nineteen forty-four.
-[ 18.29s][user ] Nineteen forty-four… wow. That's… relatively recent, I guess. Was it a big one, like the Pompeii ⟨ret@24.99s⟩ eruption?
-[ 25.22s][moshi] The scale of ⟦⚡SPAN@26.99s: The 1944 eruption was Strombolian, producing lava flows and ash, but not a pyroclastic surge.⟧ eruptions varies considerably, and the nineteen forty-four event was much less catastrophic than the one that buried Pompeii.
-[ 33.77s][moshi] The nineteen forty-four eruption was Strombolian in style, resulting in lava flows and ashfall—but without a pyroclastic surge.
-[ 45.38s][user ] Strombolian… what does that even mean? Is that—
-[ 48.52s][moshi] «interrupted» It refers to a specific type of eruption characterized by intermittent bursts of gas and lava—
-[ 54.28s][user ] «interrupts_prev» So, no huge cloud of ash and pumice like in seventy-nine AD then?
-[ 59.85s][moshi] ⟨ret@59.62s⟩ Precisely. ⟦⚡SPAN@60.74s: Plinian eruptions are characterized by sustained columns of gas and ash, often leading to pyroclastic flows.⟧ The seventy-nine AD eruption was Plinian, a far more violent event.
-[ 66.73s][moshi] Plinian eruptions, like the one in seventy-nine AD, involve sustained columns of gas and ash, frequently causing pyroclastic flows.
-[ 77.80s][user ] Okay, that makes more sense. And is it still… active, then? Vesuvius?
-[ 82.95s][moshi] Yes, Vesuvius is considered an active volcano, and it is constantly monitored for any signs of unrest.
+[  0.00s][user ] I was just reading about Pompeii… uh, and it got me wondering— when did Vesuvius last, like, actually erupt?
+[  7.54s][moshi] That’s a good question, thinking about the history of that region.
+[ 11.54s][moshi] ⟨ret@11.22s⟩ Let me quickly ⟦⚡SPAN@13.14s: Mount Vesuvius last erupted in March of nineteen forty-four.⟧ check the records for you— The last eruption of Mount Vesuvius occurred in March nineteen forty-four.
+[ 20.42s][user ] Nineteen forty-four? Wow, that’s… relatively recent, isn’t it?
+[ 25.00s][moshi] [laugh] It is, compared to some volcanoes— though it’s been quiet for quite some time now.
+[ 32.00s][moshi] ⟨ret@31.76s⟩ I can ⟦⚡SPAN@33.20s: The nineteen forty-four eruption caused damage to nearby towns and US aircraft.⟧ find details on that eruption— The eruption in nineteen forty-four damaged towns and also impacted US aircraft.
+[ 41.98s][user ] US aircraft? That’s—
+[ 44.37s][user ] …wait, did that eruption actually affect the Allied landings in Italy?
+[ 48.81s][moshi] That's a very insightful connection to make, regarding the war effort.
+[ 53.43s][moshi] ⟨ret@53.35s⟩ Yes, looking ⟦⚡SPAN@55.11s: The 1944 eruption disrupted Allied airfields and delayed some operations.⟧ at historical reports— The nineteen forty-four eruption disrupted Allied airfields, and some operations were delayed.

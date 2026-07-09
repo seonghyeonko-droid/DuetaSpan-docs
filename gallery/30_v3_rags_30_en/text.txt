@@ -2,5 +2,5 @@ v3_rags_30_en src=nq_single style=rag_single
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When was the printing press invented in ⟨ret@2.28s⟩ Europe?
-[  2.51s][moshi] That’s a fascinating ⟦⚡SPAN@4.28s: The printing press was invented in Europe around 1440.⟧ question, tracing back the roots of information access. It emerged around 1440, fundamentally changing how knowledge spread across the continent.
+[  0.00s][user ] When was the printing press invented in Europe, ⟨ret@3.28s⟩ specifically?
+[  3.52s][moshi] That’s a fundamental ⟦⚡SPAN@5.12s: The printing press was invented in Europe around fourteen forty.⟧ question for understanding information access… It emerged in Europe around fourteen forty, revolutionizing communication.

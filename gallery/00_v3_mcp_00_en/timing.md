@@ -2,20 +2,22 @@
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.34s  <ret> 발화 (turn1 첫 프레임)
-     3.57s  agent 발화 시작: <ret> Certainly, locating landmarks is something I often do…
-     3.70s  user  발화 끝
-     4.38s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.22s]: (tool result) The Eiffel Tower is located at 48.8584 degrees North, 2.
-    14.38s  user  발화 시작: Okay, and can you find me hotels near that location?
-    14.42s  agent 발화 끝
-    17.22s  <ret> 발화 (turn3 첫 프레임)
-    17.61s  agent 발화 시작: <ret> I can certainly search for accommodations nearby… Hote
-    17.89s  user  발화 끝
-    19.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.70s]: (tool result) Hotel Plaza Athénée is 0.8 kilometers away, priced at 12
-    26.09s  agent 발화 끝
-    26.35s  user  발화 시작: Wow, that’s expensive! What about something a little cheaper
-    30.12s  <ret> 발화 (turn5 첫 프레임)
-    30.45s  agent 발화 시작: <ret> Let’s explore some more budget-friendly options… Hotel
-    30.61s  user  발화 끝
-    31.25s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.85s]: (tool result) Hotel Saint-Paul Rive Gauche is 0.9 kilometers away, pri
-    36.15s  agent 발화 끝
+     3.05s  <ret> 발화 (turn1 첫 프레임)
+     3.29s  agent 발화 시작: <ret> Let me quickly pinpoint that landmark for you. Those c
+     3.37s  user  발화 끝
+     4.01s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.90s]: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.
+    14.41s  user  발화 시작: Great. And can you find me hotels near that location?
+    14.51s  agent 발화 끝
+    17.31s  <ret> 발화 (turn3 첫 프레임)
+    17.70s  agent 발화 시작: <ret> Certainly, I can search for nearby accommodations. Hot
+    17.97s  user  발화 끝
+    19.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.56s]: (tool result) Hotel Plaza Athénée is 0.8 km away, with prices starting
+    21.55s  user  발화 시작: Yeah.
+    22.05s  user  발화 끝
+    27.53s  user  발화 시작: That’s a bit pricey. Anything cheaper?
+    27.57s  agent 발화 끝
+    30.06s  <ret> 발화 (turn6 첫 프레임)
+    30.37s  agent 발화 시작: <ret> I understand, let’s explore some more affordable optio
+    30.48s  user  발화 끝
+    31.42s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.47s]: (tool result) Hotel Eiffel Turenne is 0.9 km away, costing 180 euros p
+    36.44s  agent 발화 끝
