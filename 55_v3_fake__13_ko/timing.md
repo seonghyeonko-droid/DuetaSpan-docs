@@ -66,51 +66,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와? 이천십오년 기준으로. | S2 잠깐만, 혹시 그 앨범에 어떤 노래가 수록되어 있는지 알아볼  | S3 잠깐만, 혹시 그 앨범 예약 구매할 수 있는 곳 있어? | S4 고마워, 덕분에 궁금증이 다 풀렸어.
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오나요? 이천십오년 기준으로요 | S2 잠깐만요, 혹시 그 앨범 제목도 알 수 있을까요? | S3 네, "Cool for the Summer"는 정말 좋아해요. | S4 아, 그렇군요. 데미 로바토는 앞으로 어떤 음악을 할까요?
 
-     0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와? 이천십오년 기준으로.
-     4.26s  user  발화 끝
-     4.35s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> 음, 데미 로바토의 새 앨범이 언제 나오는지 궁금하시군요. 잠깐만 알아볼게요.
-     6.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: October 2015.
-     9.80s  agent 발화 시작: 이천십오년 십월에 데미 로바토의 새 앨범이 발매될 예정이에요.
-     9.97s  agent 발화 끝
-    13.87s  agent 발화 끝
-    13.96s  user  발화 시작: 아, 십월이구나. 그럼 그 앨범 이름은 뭔데?
-    16.90s  <ret> 발화 (turn4 첫 프레임)
-    17.14s  agent 발화 시작: <ret> 앨범 이름을 알고 싶으시군요. 제가 기억하기로는…
-    17.20s  user  발화 끝
-    18.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: October 2015.
-    20.83s  agent 발화 시작: 이천십오년 십월에 발매되는 앨범에 대한 정보는 지금 바로 찾아서 알려드릴게요.
-    20.94s  agent 발화 끝
-    25.92s  agent 발화 끝
-    26.29s  user  발화 시작: 잠깐만, 혹시 그 앨범에 어떤 노래가 수록되어 있는지 알아볼 수 있어?
-    30.87s  user  발화 끝
-    31.22s  <ret> 발화 (turn7 첫 프레임)
-    31.38s  agent 발화 시작: <ret> 아, 앨범 수록곡에 대해 궁금하시군요. 그럼 먼저 앨범 이름부터 알아보고, 그 다음에 수록곡을 찾
-    33.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: October 2015.
-    38.23s  agent 발화 시작: 이천십오년 십월에 데미 로바토의 새 앨범이 출시될 예정이에요. 앨범 이름은 아직 확인 중이에요.
-    38.33s  agent 발화 끝
-    40.74s  user  발화 시작: 음.
-    41.23s  user  발화 끝
-    44.56s  <ret> 발화 (turn10 첫 프레임)
-    44.79s  agent 발화 시작: <ret> 데미 로바토의 음악 스타일은 워낙 다양해서, 이번 앨범도 여러 가지 장르를 아우를 것으로 예상돼요
-    44.99s  agent 발화 끝
-    46.56s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=9.18s]: The giraffe is the tallest mammal on Earth.
-    53.76s  agent 발화 시작: 새로운 음악을 듣는 건 정말 기분 좋은 일이죠. 마치 새로운 세상을 탐험하는 것 같아요—
-    53.98s  agent 발화 끝
-    58.74s  user  발화 시작: 잠깐만, 혹시 그 앨범 예약 구매할 수 있는 곳 있어?
-    59.41s  agent 발화 끝
-    62.91s  <ret> 발화 (turn13 첫 프레임)
-    63.07s  agent 발화 시작: <ret> 예약 구매 정보가 궁금하시군요. 제가 바로 확인해 볼게요.
-    63.09s  user  발화 끝
-    64.19s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.02s]: (tool result) Amazon: $12.99 / Target: $11.99 / Walmart: $10.99.
-    67.05s  agent 발화 시작: 아마존에서는 십이 달러 구십구 센트, 타겟에서는 십일 달러 구십구 센트, 월마트에서는 십 달러 구십구 센트에
-    67.09s  agent 발화 끝
-    77.21s  agent 발화 끝
-    77.30s  user  발화 시작: 와, 월마트가 제일 싸네. 그럼 월마트에서 예약 구매하는 걸로 할게.
-    81.78s  agent 발화 시작: 월마트에서 예약 구매하시는군요. 좋은 선택이에요. 새로운 앨범을 즐겁게 감상하시길 바랄게요.
-    81.84s  user  발화 끝
-    88.84s  user  발화 시작: 고마워, 덕분에 궁금증이 다 풀렸어.
-    88.87s  agent 발화 끝
-    91.80s  user  발화 끝
+     0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오나요? 이천십오년 기준으로요.
+     4.29s  <ret> 발화 (turn1 첫 프레임)
+     4.30s  user  발화 끝
+     4.44s  agent 발화 시작: <ret> 아, 데미 로바토의 새 앨범 출시일이 궁금하시군요. 잠시만 확인해 볼게요.
+     6.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: October 2015.
+     9.83s  agent 발화 시작: 데미 로바토의 새 앨범은 이천십오년 십월에 발매됩니다.
+    10.04s  agent 발화 끝
+    13.71s  agent 발화 끝
+    13.77s  user  발화 시작: 와, 십월이군요!
+    15.40s  <ret> 발화 (turn4 첫 프레임)
+    15.57s  user  발화 끝
+    15.64s  agent 발화 시작: <ret> 네, 맞아요. 이천십오년 십월에 새 앨범이 나왔어요. 혹시 다른 앨범에 대해서도 궁금하신가요?
+    17.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars 
+    22.35s  agent 발화 끝
+    22.66s  user  발화 시작: 잠깐만요, 혹시 그 앨범 제목도 알 수 있을까요?
+    26.13s  user  발화 끝
+    26.26s  <ret> 발화 (turn6 첫 프레임)
+    26.32s  agent 발화 시작: <ret> 아, 네, 앨범 제목도 궁금하시군요. 확인해 보겠습니다.
+    28.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: (tool result) …Confident is the fifth studio album by American singer 
+    30.79s  agent 발화 시작: 이천십오년에 발매된 데미 로바토의 앨범 제목은 "Confident"입니다. 십월 십육일에 나왔어요.
+    30.86s  agent 발화 끝
+    32.89s  user  발화 시작: 음.
+    33.30s  user  발화 끝
+    36.32s  agent 발화 시작: "Confident" 앨범에는 "Cool for the Summer"와 "Confident"라는 싱글이 수록
+    36.49s  agent 발화 끝
+    43.31s  user  발화 시작: 네, "Cool for the Summer"는 정말 좋아해요.
+    43.46s  agent 발화 끝
+    45.84s  agent 발화 시작: 아, "Cool for the Summer"를 좋아하시는군요! 저도 그 노래 정말 신나더라고요.
+    45.84s  user  발화 끝
+    49.90s  user  발화 시작: 그 앨범의 반응은 어땠나요? 평론가들은 어떻게 평가했는지 궁금해요.
+    50.52s  agent 발화 끝
+    54.06s  <ret> 발화 (turn13 첫 프레임)
+    54.29s  agent 발화 시작: <ret> 평론가들의 평가는 엇갈렸지만, 전반적으로는 긍정적인 반응이 많았다고 해요.
+    54.39s  user  발화 끝
+    56.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: Confident received generally positive reviews from critics, who praise
+    59.43s  agent 발화 시작: "Confident" 앨범은 평론가들에게서 대체로 긍정적인 평가를 받았어요. 데미 로바토의 보컬과 작사 실력
+    59.57s  agent 발화 끝
+    63.81s  user  발화 시작: 예.
+    64.21s  user  발화 끝
+    67.66s  user  발화 시작: 아, 그렇군요. 데미 로바토는 앞으로 어떤 음악을 할까요?
+    67.82s  agent 발화 끝
+    72.01s  user  발화 끝
+    72.13s  agent 발화 시작: 데미 로바토는 앞으로도 다양한 음악 스타일을 시도하며 자신만의 색깔을 보여줄 거라고 생각해요. 앞으로의 활동
+    80.94s  agent 발화 끝

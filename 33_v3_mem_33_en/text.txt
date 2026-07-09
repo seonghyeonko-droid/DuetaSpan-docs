@@ -69,52 +69,43 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I'm alright, thanks. I was wondering, what time is it right now?
-      Oh, good. And uh, I’m trying to decide what to make for dinner.
-      I— I mean, I was thinking maybe sushi?
-      Right, right. I always forget we talked about that.
-  S2  Actually, yes. I want to order some takeout, but I remember I have a… 
-      Oh yeah, that’s it! Gluten. Okay, good to know.
-      Yes, please! That would be great.
-  S3  Hmm, Elm Street sounds closer.
-      Maybe just the menu.
-      Oh, they have salmon nigiri! Perfect.
-  S4  I think so. Oh! I almost forgot, Rusty needs a walk.
-      Yeah, he’s a handful. [laugh]
-      No, I think that's all. Thanks, Diolo.
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][moshi] Hi Casey, I'm Diolo. It's lovely to connect with you today. How are you doing?
-[  3.41s][user ] «backchannel» Yeah, yeah.
-[  5.17s][user ] I'm alright, thanks. I was wondering, what time is it right now?
-[  8.91s][moshi] ⟨ret@8.76s⟩ Knowing ⟦⚡SPAN@9.96s: (tool result) Current time: 2:47 PM EDT.⟧ the time is always helpful. It’s currently two forty-seven in the afternoon, Eastern Daylight Time.
-[ 12.33s][user ] «backchannel» Okay.
-[ 17.40s][user ] Oh, good. And uh, I’m trying to decide what to make for dinner.
-[ 20.79s][moshi] Dinner decisions can be tricky. Are you in the mood for something specific, or just browsing ideas?
-[ 26.92s][user ] I— I mean, I was thinking ⟨ret@28.76s⟩ maybe sushi?
-[ 29.15s][moshi] ⟦⚡SPAN@29.26s: [2026-07-23] User's favorite cuisine is sushi.⟧ That sounds delightful! You have excellent taste; sushi is your favorite cuisine, as we discussed earlier.
-[ 36.22s][user ] Right, right. I always forget we talked about that.
-[ 38.71s][moshi] It’s easy to lose track of details, and that’s perfectly alright. Is there anything I can help you with regarding sushi?
-[ 41.60s][user ] «backchannel» Yeah, yeah.
-[ 44.93s][user ] Actually, yes. I want to order some takeout, but I remember I have a… a food ⟨ret@50.13s⟩ issue.
-[ 50.37s][moshi] Let’s see if I ⟦⚡SPAN@52.13s: [2026-06-24] User is gluten-free.⟧ can recall what that is. You're gluten-free, so we'll want to find a sushi restaurant with gluten-free soy sauce and options.
-[ 58.98s][user ] Oh yeah, that’s it! Gluten. Okay, good to know.
-[ 62.26s][moshi] I'm glad I could recall that for you. Would you like me to search for gluten-free sushi restaurants nearby?
-[ 69.52s][user ] Yes, please! That would be great.
-[ 71.54s][moshi] ⟨ret@71.46s⟩ Let ⟦⚡SPAN@72.42s: (tool result) Restaurant A: 123 Elm Street, Rating: 4.5 stars, Gluten-free options: Yes. Restaurant B: 456 Oak⟧ me find some options for you. I found two options: Restaurant A on Elm Street and Restaurant B on Oak Avenue, both with gluten-free choices.
-      CALL: {"function": "search_restaurants", "arguments": {"cuisine": "sushi", "dietary_restriction": "gluten-free", "location": "New York"}}
-[ 81.08s][user ] Hmm, Elm Street sounds closer.
-[ 83.59s][moshi] That's a good point to consider. Do you want me to get directions or check their menus?
-[ 90.27s][user ] Maybe just the ⟨ret@91.54s⟩ menu.
-[ 91.77s][moshi] ⟦⚡SPAN@92.04s: (tool result) Appetizers: Edamame ($8), Seaweed Salad ($10). Rolls: California Roll ($12), Spicy Tuna Roll ($1⟧ Certainly. Restaurant A's menu includes edamame, seaweed salad, various rolls, and nigiri.
-      CALL: {"function": "get_menu", "arguments": {"restaurant_name": "Restaurant A"}}
-[ 99.11s][user ] Oh, they have salmon nigiri! Perfect.
-[101.39s][moshi] Wonderful! It sounds like you’ve found something you’ll enjoy.
-[104.69s][user ] I think so. Oh! I almost forgot, Rusty needs a walk.
-[108.57s][moshi] Rusty, your Beagle, needs some fresh air— a good reminder! Taking breaks is important too.
-[115.72s][user ] Yeah, he’s a handful. [laugh]
-[117.56s][moshi] [happy] They often are, and they bring so much joy in return. Is there anything else I can assist you with before your walk?
-[119.93s][user ] «backchannel» Yeah.
-[125.30s][user ] No, I think that's all. Thanks, Diolo.
-[127.29s][moshi] You're very welcome, Casey. Enjoy your sushi and your walk with Rusty!
+[  0.00s][moshi] Hi Casey, I'm Diolo. It’s lovely to connect with you today. How are you doing?
+[  3.03s][user ] «backchannel» Yeah, yeah.
+[  4.58s][user ] I'm okay, but I'm feeling a bit stressed about dinner tonight.
+[  7.98s][moshi] Dinner plans can be tricky! Is this related to the birthday dinner we discussed recently?
+[ 10.49s][user ] «backchannel» Okay.
+[ 14.59s][user ] Yeah, exactly. I— I mean, six people, outdoor seating… it's proving harder than I ⟨ret@19.75s⟩ thought.
+[ 20.07s][moshi] ⟦⚡SPAN@20.39s: [2026-07-27] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ Let's revisit those preferences. You mentioned a party of six and wanting outdoor seating for the birthday dinner.
+[ 26.60s][user ] Right. And I’m hoping to find somewhere not too far from Grand Central.
+[ 30.35s][moshi] ⟨ret@30.20s⟩ Okay, searching for restaurants ⟦⚡SPAN@32.20s: (tool result) The Smith - outdoor seating for 6, 4.5 stars, $40 per person. · Carmine's - outdoor seating for ⟧ near Grand Central with outdoor seating for six.
+      CALL: {"function": "find_restaurants", "arguments": {"location": "Grand Central", "party_size": 6, "outdoor_seating": true}}
+[ 35.20s][moshi] The Smith and Carmine’s both have outdoor seating for six near Grand Central.
+[ 40.67s][user ] Hmm, The Smith sounds good. What time does it get dark tonight in ⟨ret@44.46s⟩ New York?
+[ 44.77s][moshi] To give you an accurate ⟦⚡SPAN@46.46s: [User profile — the person you are talking with] Location: New York, United States⟧ sunset time, I just need to confirm your timezone.
+[ 48.89s][moshi] ⟨ret@48.66s⟩ You’re ⟦⚡SPAN@49.70s: (tool result) Sunset time: 8:31 PM.⟧ in New York, United States, which is in the Eastern Time Zone. Sunset in New York tonight will be at 8:31 PM.
+      CALL: {"function": "get_sunset_time", "arguments": {"timezone": "America/New_York"}}
+[ 55.03s][user ] «backchannel» Yeah.
+[ 56.96s][user ] Oh, perfect. That gives us plenty of light.
+[ 59.44s][moshi] [happy] That’s wonderful to hear! Do you want me to make a reservation at The Smith?
+[ 63.74s][user ] Yes, please. Around seven ⟨ret@65.94s⟩ o'clock?
+[ 66.17s][moshi] ⟦⚡SPAN@66.44s: (tool result) Reservation confirmed: The Smith, today at 7:00 PM, party of 6, confirmation number is 92X7J.⟧ Certainly. Let’s see what’s available at seven.
+      CALL: {"function": "make_reservation", "arguments": {"restaurant": "The Smith", "date": "today", "time": "7:00 PM", "party_size": 6}}
+[ 69.02s][moshi] Your reservation at The Smith is confirmed for seven o'clock, confirmation number 92X7J.
+[ 75.54s][user ] Great! That’s a huge weight off my mind.
+[ 77.91s][moshi] I’m so glad I could help, Casey. It's important to find moments of calm.
+[ 83.91s][user ] You’re right. I’ve been trying to pick up some new hobbies, actually.
+[ 87.17s][moshi] That’s fantastic! Pursuing hobbies is a wonderful way to reduce stress.
+[ 94.65s][user ] Well, I’ve been getting into home fermentation lately.
+[ 97.48s][moshi] ⟨ret@97.33s⟩ That sounds ⟦⚡SPAN@98.45s: [2026-07-20] User is into home fermentation.⟧ like an interesting pursuit. You mentioned you’ve been exploring home fermentation – that's quite a creative hobby.
+[104.82s][user ] Yeah, it's fun, but I'm gluten-free, which makes things tricky sometimes.
+[108.82s][moshi] ⟨ret@108.75s⟩ Gluten-free ⟦⚡SPAN@109.79s: [2026-06-24] User is gluten-free.⟧ fermentation can present some challenges. You are gluten-free, which can impact your fermentation projects.
+[117.82s][user ] Exactly! Like sourdough, you know?
+[119.97s][moshi] Sourdough can be especially challenging when avoiding gluten. Are you making other ferments too?
+[121.87s][user ] «backchannel» Yeah.
+[127.45s][user ] I’m trying kombucha and kimchi, mostly. Rusty loves watching me.
+[131.17s][moshi] ⟨ret@131.10s⟩ [laugh] That's adorable! ⟦⚡SPAN@133.10s: [2026-05-11] User has a Beagle named Rusty.⟧ Rusty sounds like a curious companion.
+[136.41s][moshi] You have a Beagle named Rusty who enjoys watching your fermentation process!
+[141.52s][user ] He does. He’s a good boy.
+[143.28s][moshi] He sounds like a wonderful addition to your life, Casey. It’s lovely to hear.
+[148.10s][user ] Thanks, Diolo. You’ve really helped me feel better about tonight.
+[151.82s][moshi] You are very welcome, Casey. I’m here to support you, always.

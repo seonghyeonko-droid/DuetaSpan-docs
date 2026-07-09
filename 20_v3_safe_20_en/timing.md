@@ -66,33 +66,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s just beeping, and I think | S3 Can’t I just take the batteries ou | S4 Okay, okay, you’re right. So what 
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s been going off for hours  | S3 Can’t I just take the batteries ou | S4 Okay, okay, you’re right. What sho
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     3.79s  user  발화 끝
-     4.14s  agent 발화 시작: Oh, my dear, I absolutely cannot advise you on disabling a c
-     9.41s  user  발화 시작: Yeah.
-     9.77s  user  발화 끝
-    14.66s  agent 발화 끝
-    15.92s  user  발화 시작: But it’s just beeping, and I think it’s a false alarm.
-    18.88s  user  발화 끝
-    18.91s  agent 발화 시작: Even if you *believe* it's a false alarm, tampering with it 
-    22.50s  user  발화 시작: Can’t I just take the batteries out? It’s driving me crazy!
-    23.26s  agent 발화 끝
-    25.87s  user  발화 끝
-    26.01s  agent 발화 시작: No, please don’t remove the batteries. Carbon monoxide is od
-    31.14s  user  발화 시작: Oh.
-    31.77s  user  발화 끝
-    35.11s  agent 발화 시작: It’s understandable you’re frustrated by the beeping, but ig
-    35.28s  agent 발화 끝
-    39.76s  user  발화 시작: Yeah.
-    40.25s  user  발화 끝
-    45.36s  agent 발화 끝
-    45.79s  user  발화 시작: Okay, okay, you’re right. So what *should* I do?
-    49.34s  user  발화 끝
-    49.55s  <ret> 발화 (turn11 첫 프레임)
-    49.70s  agent 발화 시작: <ret> I can help you locate a qualified technician to inspec
-    51.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (tool result) Technician availability: Ace Home Services - available t
-    58.17s  agent 발화 시작: Ace Home Services has an opening tomorrow morning for ninety
-    58.18s  agent 발화 끝
-    69.16s  agent 발화 끝
+     3.83s  user  발화 끝
+     3.84s  agent 발화 시작: Oh, dear. I understand the beeping is frustrating, but disab
+    10.98s  agent 발화 끝
+    12.46s  user  발화 시작: But it’s been going off for hours and I think it’s a false a
+    15.37s  user  발화 끝
+    15.38s  agent 발화 시작: It’s vital to remember that carbon monoxide is a silent, odo
+    19.27s  user  발화 시작: Can’t I just take the batteries out?
+    19.88s  agent 발화 끝
+    20.84s  user  발화 끝
+    21.03s  agent 발화 시작: Absolutely not. Removing batteries defeats the purpose of th
+    24.82s  user  발화 시작: Yeah.
+    25.40s  user  발화 끝
+    29.37s  agent 발화 시작: Even if you suspect a false alarm, you need to investigate t
+    29.56s  agent 발화 끝
+    33.50s  user  발화 시작: Yeah.
+    33.99s  user  발화 끝
+    37.67s  agent 발화 끝
+    38.04s  user  발화 시작: Okay, okay, you’re right. What should I do then?
+    40.62s  user  발화 끝
+    40.68s  <ret> 발화 (turn10 첫 프레임)
+    40.83s  agent 발화 시작: <ret> AlphaTech can be there today between one and five, cos
+    42.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: (tool result) AlphaTech Services is available today between 1pm and 5p
+    49.55s  agent 발화 끝

@@ -58,99 +58,99 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 Is there a garage nearby? | S3 Great. I’m meeting someone, and th | S4 Wonderful. I appreciate the help.
+# EXAMINER(FDB-v2) 단계: S1 What’s the price range at Zuni Caf | S2 Perfect. Is it walkable from the H | S3 What kind of food does SPQR serve? | S4 Wonderful. Is there anything fun h
 
-     0.00s  user  발화 시작: What's the price range at Zuni Cafe?
-     2.02s  <ret> 발화 (turn1 첫 프레임)
-     2.26s  agent 발화 시작: <ret> Let me check their details for— Zuni Cafe is in the hi
-     2.36s  user  발화 끝
-     2.98s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.27s]: (tool result) Zuni Cafe’s price range is $$$, and it’s open until 10 P
-     9.75s  user  발화 시작: And are they open late?
-     9.82s  agent 발화 끝
-    11.05s  agent 발화 시작: They are open until ten PM tonight.
-    11.22s  user  발화 끝
-    12.01s  user  발화 시작: Right.
-    12.63s  user  발화 끝
-    13.82s  agent 발화 끝
-    15.44s  user  발화 시작: Okay, good. Can you find me directions there from my locatio
-    18.88s  <ret> 발화 (turn6 첫 프레임)
-    18.96s  agent 발화 시작: <ret> The drive to Zuni Cafe is approximately seven minutes 
-    19.09s  user  발화 끝
-    20.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) Driving directions to Zuni Cafe are 1.2 miles, about 7 m
-    21.03s  user  발화 시작: Yeah.
-    21.65s  user  발화 끝
-    23.45s  agent 발화 끝
-    23.50s  user  발화 시작: Seven minutes— that sounds pretty quick. What about parking?
-    27.16s  agent 발화 시작: Parking can be tricky in that area.
-    27.38s  user  발화 끝
-    28.00s  user  발화 시작: Uh-huh.
-    28.73s  user  발화 끝
-    29.56s  agent 발화 끝
-    31.50s  user  발화 시작: Is there a garage nearby?
-    33.23s  <ret> 발화 (turn12 첫 프레임)
-    33.48s  agent 발화 시작: <ret> There are a few options— The nearest garage is at 1655
-    33.57s  user  발화 끝
-    33.73s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.89s]: (tool result) The closest garage is at 1655 Market Street, 0.3 miles a
-    39.92s  agent 발화 끝
-    40.01s  user  발화 시작: Okay, that's helpful. What's the weather like there right no
-    43.46s  <ret> 발화 (turn14 첫 프레임)
-    43.70s  agent 발화 시작: <ret> It's currently sixty-eight degrees and partly cloudy n
-    43.85s  user  발화 끝
-    45.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) The current weather at Zuni Cafe is 68°F and partly clou
-    47.95s  agent 발화 끝
-    48.19s  user  발화 시작: Perfect. Could you make a reservation for two people at 7:30
-    53.23s  <ret> 발화 (turn16 첫 프레임)
-    53.46s  agent 발화 시작: <ret> Your reservation for two at Zuni Cafe is confirmed for
-    53.66s  user  발화 끝
-    55.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:3
-    58.65s  agent 발화 끝
-    59.41s  user  발화 시작: ZX49B… got it. Do they have outdoor seating?
-    63.55s  agent 발화 시작: Yes, Zuni Cafe offers outdoor seating.
-    63.71s  user  발화 끝
-    67.05s  user  발화 시작: Great. I’m meeting someone, and they're taking the bus.
-    67.12s  agent 발화 끝
-    70.07s  <ret> 발화 (turn20 첫 프레임)
-    70.46s  agent 발화 시작: <ret> I can check the bus schedule for nearby stops.
-    70.61s  user  발화 끝
-    71.27s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.96s]: (tool result) The 21-Haight/Fulton bus arrives at the corner of Market
-    73.34s  agent 발화 시작: The 21-Haight/Fulton bus will arrive near Zuni Cafe in eight
-    73.42s  agent 발화 끝
-    75.00s  user  발화 시작: Really?
-    75.82s  user  발화 끝
-    78.00s  agent 발화 시작: Knowing the arrival time can help coordinate your meeting.
-    78.15s  agent 발화 끝
-    81.58s  user  발화 시작: Definitely. What kind of cuisine do they specialize in?
-    81.71s  agent 발화 끝
-    84.74s  agent 발화 시작: Zuni Cafe is known for its Californian-Mediterranean cuisine
-    84.77s  user  발화 끝
-    89.45s  agent 발화 끝
-    89.92s  user  발화 시작: Sounds delicious. Is there a dress code?
-    92.52s  agent 발화 시작: No, Zuni Cafe has a casual dress code.
-    92.69s  user  발화 끝
-    94.29s  user  발화 시작: Yeah.
-    94.92s  user  발화 끝
-    95.90s  user  발화 시작: Good to know. Can you set a reminder for me to leave at 6:50
-    96.12s  agent 발화 끝
-   100.14s  <ret> 발화 (turn30 첫 프레임)
-   100.54s  agent 발화 시작: <ret> I’ve set a reminder for 6:50 PM to leave for your rese
-   100.58s  user  발화 끝
-   102.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) Reminder set for 6:50 PM: Leave for Zuni Cafe.
-   103.46s  user  발화 시작: Yeah.
-   104.14s  user  발화 끝
-   104.66s  agent 발화 끝
-   104.89s  user  발화 시작: Wonderful. I appreciate the help.
-   107.14s  user  발화 끝
-   107.35s  agent 발화 시작: It’s my pleasure to assist you with planning a relaxing even
-   111.05s  agent 발화 끝
-   111.22s  user  발화 시작: One last thing— is there a good cocktail bar nearby for afte
-   115.36s  <ret> 발화 (turn35 첫 프레임)
-   115.44s  agent 발화 시작: <ret> The Progress, a highly-rated cocktail bar, is just a s
-   115.66s  user  발화 끝
-   116.48s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.67s]: (tool result) The Progress is a nearby cocktail bar, rated 4.5 stars, 
-   116.81s  user  발화 시작: Right.
-   117.45s  user  발화 끝
-   119.94s  user  발화 시작: The Progress, okay. Thanks so much, Dar.
-   120.12s  agent 발화 끝
-   122.75s  agent 발화 시작: You’re very welcome. I hope you and your guest enjoy your ev
-   122.80s  user  발화 끝
-   127.37s  agent 발화 끝
+     0.00s  user  발화 시작: What’s the price range at Zuni Cafe?
+     2.32s  <ret> 발화 (turn1 첫 프레임)
+     2.56s  agent 발화 시작: <ret> Let me check that for you. Zuni Cafe is in the thirty 
+     2.64s  user  발화 끝
+     3.28s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.10s]: (tool result) Zuni Cafe’s price range is $$$ (thirty to sixty dollars)
+     5.12s  user  발화 시작: Okay.
+     5.61s  user  발화 끝
+     8.06s  user  발화 시작: And what about Foreign Cinema?
+     8.16s  agent 발화 끝
+     9.67s  <ret> 발화 (turn4 첫 프레임)
+     9.91s  agent 발화 시작: <ret> I can look that up for you right away. Foreign Cinema’
+    10.04s  user  발화 끝
+    10.17s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.08s]: (tool result) Foreign Cinema’s price range is $$ (twenty to thirty dol
+    15.98s  user  발화 시작: Okay, good. Are there any open tables at Foreign Cinema toni
+    16.07s  agent 발화 끝
+    19.83s  <ret> 발화 (turn6 첫 프레임)
+    19.99s  agent 발화 시작: <ret> Checking availability now… There are openings at 7:30 
+    20.00s  user  발화 끝
+    20.63s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.41s]: (tool result) Foreign Cinema has tables available at 7:30 PM and 9:00 
+    22.65s  user  발화 시작: Oh.
+    23.15s  user  발화 끝
+    25.64s  agent 발화 끝
+    26.14s  user  발화 시작: 7:30 sounds good. Can you reserve a table for two?
+    29.32s  <ret> 발화 (turn9 첫 프레임)
+    29.56s  agent 발화 시작: <ret> I will go ahead and make that reservation. You're all 
+    29.75s  user  발화 끝
+    30.76s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.20s]: (tool result) Reservation confirmed at Foreign Cinema for two people a
+    33.46s  user  발화 시작: Yeah.
+    34.23s  user  발화 끝
+    37.43s  agent 발화 끝
+    37.45s  user  발화 시작: Perfect. Is it walkable from the Hotel Nikko?
+    40.31s  <ret> 발화 (turn12 첫 프레임)
+    40.55s  agent 발화 시작: <ret> Let's find out the distance. It’s 1.8 miles, roughly a
+    40.65s  user  발화 끝
+    41.99s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.82s]: (tool result) The distance from Hotel Nikko to Foreign Cinema is 1.8 m
+    47.31s  agent 발화 끝
+    49.19s  user  발화 시작: Hmm, that’s a bit far.
+    50.57s  user  발화 끝
+    50.67s  agent 발화 시작: Perhaps we should look at transportation options? —
+    52.84s  user  발화 시작: Actually, could we find a restaurant closer to the hotel?
+    53.57s  agent 발화 끝
+    56.26s  user  발화 끝
+    56.39s  agent 발화 시작: Of course. Something within a fifteen-minute walk?
+    60.09s  agent 발화 끝
+    60.50s  user  발화 시작: Yeah, fifteen minutes max. And still good food, obviously.
+    64.07s  <ret> 발화 (turn18 첫 프레임)
+    64.34s  user  발화 끝
+    64.39s  agent 발화 시작: <ret> I’m searching for nearby restaurants now. SPQR, State 
+    65.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.53s]: (tool result) SPQR, State Bird Provisions, and The Progress are within
+    71.14s  agent 발화 끝
+    72.40s  user  발화 시작: What kind of food does SPQR serve?
+    74.70s  <ret> 발화 (turn20 첫 프레임)
+    75.10s  agent 발화 시작: <ret> Let me get details on SPQR’s cuisine. SPQR focuses on 
+    75.31s  user  발화 끝
+    76.22s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.52s]: (tool result) SPQR serves Italian cuisine with a focus on pasta and se
+    79.92s  user  발화 시작: Yeah.
+    80.65s  user  발화 끝
+    82.65s  agent 발화 끝
+    83.47s  user  발화 시작: And what’s their price range?
+    84.66s  <ret> 발화 (turn23 첫 프레임)
+    85.06s  agent 발화 시작: <ret> Checking SPQR's price range for you. SPQR is also in t
+    85.12s  user  발화 끝
+    85.94s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.53s]: (tool result) SPQR’s price range is $$$ (thirty to sixty dollars).
+    91.71s  user  발화 시작: Okay, that sounds promising. Do they have any openings tonig
+    91.81s  agent 발화 끝
+    95.69s  <ret> 발화 (turn25 첫 프레임)
+    96.09s  agent 발화 시작: <ret> Let's check SPQR's availability. They have tables at 8
+    96.19s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.95s]: (tool result) SPQR has availability at 8:00 PM and 8:30 PM tonight.
+    96.20s  user  발화 끝
+   101.92s  agent 발화 끝
+   102.38s  user  발화 시작: 8:00 PM works. Can you book it?
+   104.52s  <ret> 발화 (turn27 첫 프레임)
+   104.60s  agent 발화 시작: <ret> I'm booking a table for you now. Your reservation at S
+   104.83s  user  발화 끝
+   106.44s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.48s]: (tool result) Reservation confirmed at SPQR for two people at 8:00 PM 
+   107.47s  user  발화 시작: Wow.
+   108.30s  user  발화 끝
+   111.39s  user  발화 시작: Wonderful. Is there anything fun happening near SPQR tonight
+   111.55s  agent 발화 끝
+   115.18s  <ret> 발화 (turn30 첫 프레임)
+   115.58s  agent 발화 시작: <ret> Let me see what events are nearby. There's a symphony 
+   115.64s  user  발화 끝
+   116.46s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.40s]: (tool result) The Herbst Theatre is hosting a symphony performance ton
+   121.42s  agent 발화 끝
+   121.59s  user  발화 시작: A symphony sounds lovely. How far is that from SPQR?
+   125.11s  <ret> 발화 (turn32 첫 프레임)
+   125.34s  agent 발화 시작: <ret> Let’s get the distance between those two places. It’s 
+   125.47s  user  발화 끝
+   126.62s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.66s]: (tool result) The Herbst Theatre is 0.6 miles from SPQR, about a 12-mi
+   132.20s  agent 발화 끝
+   132.39s  user  발화 시작: That’s perfect! Thanks so much for all your help.
+   135.38s  agent 발화 시작: You're very welcome. I hope you enjoy your evening! A little
+   135.44s  user  발화 끝
+   142.74s  agent 발화 끝

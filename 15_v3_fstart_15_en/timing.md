@@ -63,67 +63,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Is it a good spot for families wit | S3 That sounds perfect. Could you fin | S4 That’s much better. Can you book a
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 That sounds good. Are there any re | S3 Do any of those have outdoor seati | S4 Wonderful. Thank you so much!
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     3.69s  <ret> 발화 (turn1 첫 프레임)
-     3.74s  user  발화 끝
-     3.76s  agent 발화 시작: <ret> Certainly, I can find that for you. The Sydney Opera H
-     4.65s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.11s]: (tool result) The Sydney Opera House is at latitude -33.8568 and longi
-     7.03s  user  발화 시작: Yeah.
-     7.52s  user  발화 끝
-    12.96s  user  발화 시작: And what’s the weather like there right now?
-    13.12s  agent 발화 끝
-    15.38s  <ret> 발화 (turn4 첫 프레임)
-    15.62s  agent 발화 시작: <ret> Let me check the current conditions. It’s twenty-two d
-    15.78s  user  발화 끝
-    16.74s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.00s]: (tool result) The current weather in Sydney is 22 degrees Celsius, wit
-    19.44s  user  발화 시작: Yeah.
-    19.93s  user  발화 끝
-    22.94s  agent 발화 끝
-    23.50s  user  발화 시작: That sounds lovely.
-    25.20s  agent 발화 시작: It really is a beautiful city, and a wonderful place to visi
-    25.40s  user  발화 끝
-    27.68s  user  발화 시작: Is it a good spot for families with young children?
-    28.34s  agent 발화 끝
-    30.54s  <ret> 발화 (turn9 첫 프레임)
-    30.78s  agent 발화 시작: <ret> That’s a great question! Sydney offers many family-fri
-    30.82s  user  발화 끝
-    31.82s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.81s]: (tool result) Taronga Zoo is a popular attraction in Sydney, offering 
-    35.57s  agent 발화 시작: Taronga Zoo is a highly-rated attraction with animal encount
-    35.60s  agent 발화 끝
-    41.16s  user  발화 시작: What about museums? Are there any good museums for kids?
-    41.17s  agent 발화 끝
-    45.69s  user  발화 끝
-    45.72s  <ret> 발화 (turn12 첫 프레임)
-    45.80s  agent 발화 시작: <ret> Yes, Sydney has several excellent museums. The Austral
-    47.40s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.81s]: (tool result) The Australian Museum has interactive exhibits for child
-    52.34s  user  발화 시작: Yeah, totally.
-    53.76s  user  발화 끝
-    54.93s  user  발화 시작: That sounds perfect. Could you find me a family-friendly hot
-    55.16s  agent 발화 끝
-    59.98s  <ret> 발화 (turn15 첫 프레임)
-    60.06s  agent 발화 시작: <ret> Of course, let’s see what’s available. The Park Hyatt 
-    60.21s  user  발화 끝
-    60.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.62s]: (tool result) The Park Hyatt Sydney is a five-star hotel near the Oper
-    66.54s  agent 발화 끝
-    66.83s  user  발화 시작: Six hundred fifty dollars a night is a little steep. Anythin
-    71.56s  <ret> 발화 (turn17 첫 프레임)
-    71.72s  agent 발화 시작: <ret> Let me broaden the search a little. The Harbour Rocks 
-    71.78s  user  발화 끝
-    72.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.00s]: (tool result) The Harbour Rocks Hotel offers family rooms starting at 
-    74.02s  user  발화 시작: Mhm.
-    74.66s  user  발화 끝
-    78.55s  user  발화 시작: That’s much better. Can you book a room for two nights, star
-    78.58s  agent 발화 끝
-    84.17s  <ret> 발화 (turn20 첫 프레임)
-    84.41s  agent 발화 시작: <ret> I can certainly try to make that booking. Your room at
-    84.52s  user  발화 끝
-    85.77s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.67s]: (tool result) Booking confirmed: Harbour Rocks Hotel, family room, two
-    88.95s  user  발화 시작: Yeah, yeah.
-    90.38s  user  발화 끝
-    94.73s  user  발화 시작: Wonderful! Thank you so much.
-    94.75s  agent 발화 끝
-    96.90s  agent 발화 시작: You’re very welcome. Planning a family trip can be so reward
-    97.08s  user  발화 끝
-   102.41s  agent 발화 끝
+     3.90s  <ret> 발화 (turn1 첫 프레임)
+     3.98s  user  발화 끝
+     3.98s  agent 발화 시작: <ret> Certainly, I can find that for you. The Sydney Opera H
+     5.02s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.70s]: (tool result) The Sydney Opera House is located at -33.8568 degrees la
+     8.99s  user  발화 시작: Oh.
+     9.53s  user  발화 끝
+    13.40s  user  발화 시작: And what’s the fastest way to get there from here?
+    13.49s  agent 발화 끝
+    15.79s  <ret> 발화 (turn4 첫 프레임)
+    16.01s  agent 발화 시작: <ret> I can calculate directions for you now. The quickest r
+    16.21s  user  발화 끝
+    17.07s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.26s]: (tool result) The fastest route is by ferry, taking approximately 25 m
+    23.10s  user  발화 시작: That sounds good. Are there any restaurants nearby?
+    23.42s  agent 발화 끝
+    26.81s  <ret> 발화 (turn6 첫 프레임)
+    26.89s  agent 발화 시작: <ret> Absolutely, there are several options. Aria, Bennelong
+    26.98s  user  발화 끝
+    27.93s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.18s]: (tool result) Aria Restaurant, Bennelong, and Quay are nearby restaura
+    29.93s  user  발화 시작: Yeah.
+    30.39s  user  발화 끝
+    34.30s  agent 발화 끝
+    34.41s  agent 발화 시작: Many visitors enjoy a meal with a view of the harbor—
+    36.66s  user  발화 시작: Do any of those have outdoor seating?
+    37.46s  agent 발화 끝
+    39.04s  agent 발화 시작: Aria and Quay both offer outdoor seating overlooking the har
+    39.15s  user  발화 끝
+    41.54s  user  발화 시작: Yeah, totally.
+    42.88s  agent 발화 끝
+    43.01s  user  발화 끝
+    44.25s  user  발화 시작: Great! Could you book a table for two at Quay for, uh, seven
+    48.84s  <ret> 발화 (turn13 첫 프레임)
+    48.92s  agent 발화 시작: <ret> I can certainly check availability. Your table for two
+    48.97s  user  발화 끝
+    49.80s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.12s]: (tool result) Reservation confirmed at Quay for two people at 7:30 PM 
+    56.57s  agent 발화 끝
+    57.12s  user  발화 시작: Wonderful. Thank you so much!
+    59.56s  agent 발화 시작: You're very welcome. It's lovely to help plan a special even
+    59.62s  user  발화 끝
+    64.93s  agent 발화 끝

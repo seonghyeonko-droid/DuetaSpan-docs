@@ -64,63 +64,46 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  So, I was reading about Jack Sock and Raffaella Reggi, and I’m trying 
-      Well, I thought maybe basketball, but that doesn’t seem right. Reggi d
-      Tennis? Really? I always thought Jack Sock was a football player, hone
-      Hmm. Okay, but did they play together, or were they just both… tennis 
-      The Olympics? That's interesting. Did they win a medal?
-  S2  Oh, that’s too bad. Still, making it to the Olympics is a big deal.
-      So, what about their individual careers? Was one of them more successf
-      Number eight? That’s pretty good! What about Reggi?
-      So, Sock was higher ranked in singles, and Reggi in doubles?
-  S3  It seems like they both had respectable careers, even if they didn’t w
-      I guess you're right. What about their playing styles? Were they simil
-      Aggressive, huh? And Reggi?
-      So, Sock was a power player, and Reggi was more strategic? That makes 
-  S4  I wonder if their different styles helped them as a doubles team.
-      Do you know if they continued playing together after the Olympics?
-      Oh. Well, that’s a shame. It would have been interesting to see how th
-      Yeah, you're right. It’s good to appreciate what they did accomplish. 
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][user ] So, I was reading about Jack Sock and Raffaella Reggi, and I’m trying to figure out what sport they both played professionally. It’s driving me crazy.
-[  9.74s][moshi] It’s understandable to feel stuck when a detail eludes you. Let’s see if we can uncover that information together.
-[ 11.86s][user ] «backchannel» Yeah.
-[ 16.42s][user ] Well, I thought maybe basketball, but that doesn’t seem right. Reggi doesn’t strike me as a basketball player.
-[ 24.12s][moshi] ⟨ret@24.04s⟩ They are ⟦⚡SPAN@25.40s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ both known for excelling in… Jack Sock and Raffaella Reggi are both professional tennis players.
-[ 30.41s][user ] Tennis? Really? I always thought Jack Sock was a football player, honestly.
-[ 36.00s][moshi] It’s easy to mix up athletes sometimes, especially when they’re versatile. But yes, tennis is their shared profession.
-[ 42.80s][user ] Hmm. Okay, but did they play together, or were they just both… tennis ⟨ret@47.96s⟩ players?
-[ 48.28s][moshi] They ⟦⚡SPAN@49.08s: Jack Sock and Raffaella Reggi both competed in mixed doubles at the 2020 Summer Olympics.⟧ did compete in… Jack Sock and Raffaella Reggi both competed in mixed doubles at the 2020 Summer Olympics.
-[ 55.96s][user ] The Olympics? That's interesting. Did they win a medal?
-[ 59.99s][moshi] It’s wonderful to learn about these connections. Let's find out about their Olympic results.
-[ 65.31s][moshi] ⟨ret@64.92s⟩ Unfortunately, ⟦⚡SPAN@65.96s: Jack Sock and Raffaella Reggi lost in the quarter-finals of the mixed doubles event at the 2020 Summer Olympic⟧ they did not medal in… Jack Sock and Raffaella Reggi lost in the quarter-finals of the mixed doubles event.
-[ 73.45s][user ] Oh, that’s too bad. Still, making it to the Olympics is a big deal.
-[ 77.92s][moshi] Absolutely. Reaching that level of competition requires dedication and talent. It's a significant accomplishment.
-[ 82.05s][user ] «backchannel» Yeah.
-[ 85.49s][user ] So, what about their individual careers? Was one of them more successful than the ⟨ret@91.01s⟩ other?
-[ 91.33s][moshi] Jack ⟦⚡SPAN@92.05s: Jack Sock reached a career-high ATP singles ranking of number eight in November 2017.⟧ Sock achieved a higher ranking in… Jack Sock reached a career-high ATP singles ranking of number eight.
-[ 98.99s][user ] Number eight? That’s pretty good! What about ⟨ret@102.98s⟩ Reggi?
-[103.22s][moshi] Raffaella ⟦⚡SPAN@104.10s: Raffaella Reggi achieved a career-high WTA doubles ranking of number seventeen in June 2008.⟧ Reggi’s peak ranking was… Raffaella Reggi achieved a career-high WTA doubles ranking of number seventeen.
-[111.06s][user ] So, Sock was higher ranked in singles, and Reggi in doubles?
-[115.67s][moshi] That’s a fair assessment. Their strengths lay in different areas of the sport.
-[118.66s][user ] «backchannel» Yeah.
-[120.44s][user ] It seems like they both had respectable careers, even if they didn’t win a ton of Grand Slams.
-[126.56s][moshi] It’s important to remember that success isn’t solely defined by major titles. Consistency and dedication matter too.
-[134.13s][user ] I guess you're right. What about their playing styles? Were they similar?
-[138.71s][moshi] ⟨ret@138.63s⟩ Jack Sock was ⟦⚡SPAN@139.99s: Jack Sock is recognized for his powerful serve and aggressive baseline game.⟧ known for his aggressive… Jack Sock is recognized for his powerful serve and aggressive baseline game.
-[143.25s][user ] «backchannel» Mm-hmm.
-[146.88s][user ] Aggressive, huh? And ⟨ret@148.95s⟩ Reggi?
-[149.19s][moshi] Raffaella Reggi ⟦⚡SPAN@150.39s: Raffaella Reggi was known for her strong net play and tactical awareness.⟧ was praised for her… Raffaella Reggi was known for her strong net play and tactical awareness.
-[156.37s][user ] So, Sock was a power player, and Reggi was more strategic? That makes sense.
-[162.67s][moshi] It does seem to complement each other, doesn't it? Different approaches can be equally effective.
-[168.36s][user ] I wonder if their different styles helped them as a doubles team.
-[172.25s][moshi] That’s a thoughtful point. A variety of skills can be a real advantage in doubles.
-[178.11s][user ] Do you know if they continued playing together after the Olympics?
-[181.60s][moshi] ⟨ret@181.52s⟩ They did ⟦⚡SPAN@182.72s: Jack Sock and Raffaella Reggi did not play together as a team after the 2020 Summer Olympics.⟧ not continue to partner after… Jack Sock and Raffaella Reggi did not play together after the 2020 Summer Olympics.
-[185.13s][user ] «backchannel» Uh-huh.
-[189.87s][user ] Oh. Well, that’s a shame. It would have been interesting to see how they developed as a team.
-[195.38s][moshi] It’s natural to wonder about what might have been. Sometimes paths diverge, and that's okay.
-[201.67s][user ] Yeah, you're right. It’s good to appreciate what they did accomplish. Thanks for helping me sort all this out.
-[208.28s][moshi] You’re very welcome. It's been a pleasure exploring their careers with you. Remember, acknowledging their efforts is a beautiful way to honor them.
+[  0.00s][user ] So, I was reading about Jack Sock and Raffaella Reggi, and I’m trying to figure out what sport they both played professionally. It’s on the tip of my tongue.
+[  9.84s][moshi] It’s understandable to feel a little stuck when recalling details. Sometimes a gentle nudge is all it takes.
+[ 11.97s][user ] «backchannel» Yeah.
+[ 16.60s][user ] Yeah, well, a nudge would be good. I just can’t quite pull it up. It’s a racket sport, I know that much.
+[ 23.36s][moshi] ⟨ret@23.28s⟩ ⟦⚡SPAN@23.84s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ They both excelled at… Jack Sock and Raffaella Reggi are both professional tennis players.
+[ 28.50s][user ] Tennis, huh? I was thinking badminton for some reason. That’s weird.
+[ 32.81s][moshi] Our minds often wander to familiar territories, even when the correct answer lies elsewhere. It’s perfectly natural.
+[ 39.32s][user ] Okay, but Reggi… I don't recall her being a big name in tennis. Was she more known for doubles, maybe?
+[ 46.13s][moshi] ⟨ret@45.89s⟩ Actually, she ⟦⚡SPAN@47.49s: Raffaella Reggi won six Grand Slam titles, all in women's doubles.⟧ found success… Raffaella Reggi won six Grand Slam titles, all in women's doubles.
+[ 53.02s][user ] Six Grand Slams in doubles? That’s pretty good! I didn’t realize. Did Sock have similar success in ⟨ret@60.01s⟩ doubles?
+[ 60.33s][moshi] Jack ⟦⚡SPAN@61.05s: Jack Sock won the 2018 Wimbledon men's doubles title with Frederik Nielsen.⟧ Sock also achieved success… Jack Sock won the 2018 Wimbledon men's doubles title with Frederik Nielsen.
+[ 67.98s][user ] Wimbledon… okay, that rings a bell. So they both had success as doubles players. But what about singles?
+[ 75.33s][moshi] It's good you're exploring different aspects of their careers. It gives a fuller picture.
+[ 79.89s][moshi] ⟨ret@79.57s⟩ ⟦⚡SPAN@80.37s: Jack Sock reached a career-high singles ranking of world No. 8 in 2017.⟧ In singles, Jack Sock… Jack Sock reached a career-high singles ranking of world No. 8 in 2017.
+[ 85.14s][user ] «backchannel» Wow.
+[ 86.68s][user ] Number eight? Not bad at all. What about Reggi? Was she ranked highly in singles ⟨ret@93.27s⟩ too?
+[ 93.43s][moshi] Raffaella ⟦⚡SPAN@94.47s: Raffaella Reggi’s career-high singles ranking was world No. 37 in 1991.⟧ Reggi’s highest singles… Raffaella Reggi’s career-high singles ranking was world No. 37 in 1991.
+[101.92s][user ] Thirty-seven… so a solid player, but not at the very top tier. Interesting.
+[107.77s][moshi] It’s helpful to remember that success looks different for everyone, and both players achieved admirable heights.
+[111.93s][user ] «backchannel» Yeah.
+[114.33s][user ] True. Okay, shifting gears – did they ever play *against* each other? Seems unlikely, given the gender difference.
+[121.62s][moshi] That’s a very astute observation. Mixed doubles is where you might find such a pairing.
+[127.54s][moshi] ⟨ret@127.30s⟩ They did ⟦⚡SPAN@128.66s: Jack Sock and Raffaella Reggi partnered in mixed doubles at the 2016 Rio Olympics.⟧ compete together… Jack Sock and Raffaella Reggi partnered in mixed doubles at the 2016 Rio Olympics.
+[134.84s][user ] The Olympics! Wow. How did they do? Did they ⟨ret@138.90s⟩ medal?
+[139.14s][moshi] ⟦⚡SPAN@139.62s: Jack Sock and Raffaella Reggi lost in the first round of mixed doubles at the 2016 Rio Olympics.⟧ Unfortunately, they didn’t medal… Jack Sock and Raffaella Reggi lost in the first round of mixed doubles at the 2016 Rio Olympics.
+[144.80s][user ] «backchannel» Right.
+[147.58s][user ] Oh. First round. That’s a shame. Still, just to be *in* the Olympics is something.
+[153.47s][moshi] Absolutely. The journey and the experience often hold as much value as the outcome itself.
+[159.82s][user ] Right. So, let’s see… tennis, doubles success, Olympics… anything else notable about them?
+[167.26s][moshi] ⟨ret@167.19s⟩ Jack Sock ⟦⚡SPAN@168.15s: Jack Sock is known for his powerful serve and aggressive playing style.⟧ is also known for… Jack Sock is known for his powerful serve and aggressive playing style.
+[173.28s][user ] Aggressive, huh? That makes sense. What about Reggi’s style? Was she a power player ⟨ret@179.25s⟩ too?
+[179.57s][moshi] Raffaella ⟦⚡SPAN@180.29s: Raffaella Reggi was recognized for her consistent groundstrokes and tactical play.⟧ Reggi was known for… Raffaella Reggi was recognized for her consistent groundstrokes and tactical play.
+[184.22s][user ] «backchannel» Uh-huh.
+[187.18s][user ] So, a bit different then. Interesting contrast. I feel like I have a much better understanding now.
+[193.99s][moshi] It’s wonderful to hear that we’ve clarified things for you. Building understanding is a rewarding process.
+[196.48s][user ] «backchannel» Mhm.
+[200.67s][user ] It is. You know, sometimes just verbalizing it with someone helps solidify it.
+[205.81s][moshi] Sharing your thoughts and questions is a powerful way to process information and gain clarity.
+[209.60s][user ] «backchannel» Yeah.
+[211.33s][user ] Yeah. I appreciate you walking me through all that.
+[214.71s][moshi] It was my pleasure to assist you. Remember, exploring interests can be a beautiful journey of discovery.
+[222.19s][user ] I think I'll look up some of their matches now. Thanks again.
+[225.74s][moshi] Enjoy revisiting their matches. Sometimes watching the game brings the details to life in a new way.

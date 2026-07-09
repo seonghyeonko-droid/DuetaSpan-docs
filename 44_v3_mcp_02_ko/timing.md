@@ -68,67 +68,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄 수 있어? weather.example | S2 오, 괜찮네. 혹시 거기는 화장실이 깨끗해? | S3 혹시 캠핑장까지 가는 길은 어때? 대중교통으로 갈 수 있을까? | S4 그런데, 그 캠핑장 근처에 마트가 있을까? 혹시 뭐 빠진 거 
+# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄래? weather.example.com | S2 어, 맞아. 저녁에 비 올까? | S3 고마워. 아, 그리고 내일 모레 서울에서 부산 가는 기차표 예 | S4 와, 빠르다.
 
-     0.00s  user  발화 시작: 날씨 업데이트 좀 봐줄 수 있어? weather.example.com에서.
-     3.73s  <ret> 발화 (turn1 첫 프레임)
-     4.11s  agent 발화 시작: <ret> 네, 알겠습니다. 지금 weather.example.com의 날씨는 기온이 섭씨 이십팔도이고 부분
-     4.26s  user  발화 끝
-     4.69s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.27s]: (tool result) The weather at weather.example.com is currently 28 degre
-    10.46s  agent 발화 끝
-    11.97s  user  발화 시작: 음, 고마워. 오늘 저녁에 비 올까?
-    15.00s  agent 발화 시작: 오늘 저녁에 비가 올 가능성은 낮습니다. 현재 예보로는 대체로 맑을 것으로 예상됩니다.
-    15.20s  user  발화 끝
-    17.64s  user  발화 시작: 아.
-    18.18s  user  발화 끝
-    20.79s  user  발화 시작: 아, 맞다. 다음 주 토요일에 친구들이랑 캠핑 가기로 했는데, 강원도에 괜찮은 캠핑장 좀 찾아줄래?
-    21.01s  agent 발화 끝
-    26.72s  <ret> 발화 (turn6 첫 프레임)
-    27.12s  agent 발화 시작: <ret> 네, 강원도 캠핑장 검색해 드릴게요. 강원도 파인 밸리 캠핑장에 다음 주 토요일에 여섯명이 머물 
-    27.14s  user  발화 끝
-    27.68s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.10s]: (tool result) Pine Valley Campground in Gangwon-do has availability fo
-    30.11s  user  발화 시작: 네.
-    30.56s  user  발화 끝
-    35.10s  agent 발화 끝
-    35.10s  user  발화 시작: 오, 괜찮네. 혹시 거기는 화장실이 깨끗해?
-    38.42s  agent 발화 시작: 파인 밸리 캠핑장 후기를 찾아보니 화장실 청결도에 대한 긍정적인 의견이 많습니다.
-    38.66s  user  발화 끝
-    40.62s  user  발화 시작: 예.
-    41.02s  user  발화 끝
-    43.60s  user  발화 시작: 그럼, 거기 예약 좀 해줘. 일박으로.
-    43.75s  agent 발화 끝
-    46.19s  <ret> 발화 (turn12 첫 프레임)
-    46.43s  agent 발화 시작: <ret> 네, 파인 밸리 캠핑장 일박 예약 진행하겠습니다. 파인 밸리 캠핑장 다음 주 토요일 육인 일박 예
-    46.56s  user  발화 끝
-    47.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.35s]: (tool result) Your reservation at Pine Valley Campground for six peopl
-    54.82s  user  발화 시작: 정말요?
-    55.87s  user  발화 끝
-    58.40s  agent 발화 끝
-    58.65s  user  발화 시작: 혹시 캠핑장까지 가는 길은 어때? 대중교통으로 갈 수 있을까?
-    62.82s  agent 발화 시작: 파인 밸리 캠핑장까지 대중교통으로는 약간 불편할 수 있습니다. 가장 가까운 버스 정류장에서 캠핑장까지는 약 
-    62.91s  user  발화 끝
-    66.96s  user  발화 시작: 그렇죠.
-    67.59s  user  발화 끝
-    71.77s  agent 발화 끝
-    72.09s  user  발화 시작: 아, 그렇구나. 그럼 택시를 타야겠네.
-    74.49s  user  발화 끝
-    74.57s  agent 발화 시작: 네, 택시를 이용하시면 캠핑장까지 빠르게 이동할 수 있습니다. 예상 요금은 사만 원 정도입니다.
-    77.00s  user  발화 시작: 와.
-    77.49s  user  발화 끝
-    80.52s  user  발화 시작: 알았어. 고마워, 드리아우스.
-    80.58s  agent 발화 끝
-    82.59s  user  발화 끝
-    82.61s  agent 발화 시작: 천만에요. 즐거운 캠핑 되세요. 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
-    87.98s  user  발화 시작: 그런데, 그 캠핑장 근처에 마트가 있을까? 혹시 뭐 빠진 거 사러 갈 수도 있으니까.
-    88.40s  agent 발화 끝
-    93.18s  <ret> 발화 (turn23 첫 프레임)
-    93.33s  agent 발화 시작: <ret> 네, 캠핑장 근처에 마트가 있는지 확인해 볼게요. 파인 밸리 캠핑장에서 이킬로미터 거리에 "프레시
-    93.50s  user  발화 끝
-    94.30s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.38s]: (tool result) There is a large supermarket, "Fresh Mart", located 2 ki
-    98.92s  user  발화 시작: 네.
-    99.41s  user  발화 끝
-   101.25s  user  발화 시작: 아, 좋아. 정말 고마워. 덕분에 캠핑 준비가 거의 다 됐네.
-   101.54s  agent 발화 끝
-   105.75s  user  발화 끝
-   105.88s  agent 발화 시작: 다행입니다. 캠핑 잘 다녀오시고, 즐거운 추억 많이 만드시길 바랍니다.
-   110.65s  agent 발화 끝
+     0.00s  user  발화 시작: 날씨 업데이트 좀 봐줄래? weather.example.com에서.
+     3.17s  <ret> 발화 (turn1 첫 프레임)
+     3.56s  agent 발화 시작: <ret> 알겠습니다. 지금 weather.example.com의 날씨는 섭씨 이십오도에 맑습니다.
+     3.67s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.71s]: (tool result) The weather at weather.example.com is currently 25 degre
+     3.70s  user  발화 끝
+     8.51s  agent 발화 끝
+     9.85s  user  발화 시작: 음, 좋네.
+    10.94s  agent 발화 시작: 오늘 저녁에는 비가 올 가능성이 있는지 확인해 볼까요?
+    11.14s  user  발화 끝
+    12.39s  user  발화 시작: 그렇죠.
+    13.02s  user  발화 끝
+    14.38s  user  발화 시작: 어, 맞아. 저녁에 비 올까?
+    14.63s  agent 발화 끝
+    16.32s  <ret> 발화 (turn6 첫 프레임)
+    16.71s  agent 발화 시작: <ret> 저녁에는 비가 올 확률이 육십%입니다.
+    16.92s  user  발화 끝
+    17.36s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.05s]: (tool result) The forecast for this evening at weather.example.com is 
+    19.76s  agent 발화 끝
+    20.21s  user  발화 시작: 그렇군요. 그럼, 내일 아침 일곱시에 알람 맞춰줄래?
+    24.23s  <ret> 발화 (turn8 첫 프레임)
+    24.38s  agent 발화 시작: <ret> 네, 알람을 맞춰 드리겠습니다.
+    24.56s  user  발화 끝
+    25.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.26s]: (tool result) Alarm set for tomorrow at 7:00 AM.
+    26.55s  agent 발화 시작: 내일 아침 일곱시에 알람이 설정되었습니다.
+    26.63s  agent 발화 끝
+    29.58s  user  발화 시작: 고마워. 아, 그리고 내일 모레 서울에서 부산 가는 기차표 예매해줘.
+    29.79s  agent 발화 끝
+    34.90s  user  발화 끝
+    35.24s  agent 발화 시작: 서울에서 부산으로 가는 기차표 예매를 도와드리겠습니다. 날짜는 내일 모레가 맞으신가요?
+    37.61s  user  발화 시작: 네.
+    38.11s  user  발화 끝
+    41.31s  agent 발화 끝
+    41.66s  user  발화 시작: 맞아. 내일 모레. KTX로.
+    44.84s  <ret> 발화 (turn14 첫 프레임)
+    45.22s  user  발화 끝
+    45.24s  agent 발화 시작: <ret> 내일 모레 서울에서 부산 가는 KTX 기차표가 열네시 삼십분에 십이A 좌석으로 오만 구천팔백원에 
+    46.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) KTX train from Seoul to Busan booked for the day after t
+    52.25s  user  발화 시작: 와, 빠르다.
+    52.84s  agent 발화 끝
+    53.35s  user  발화 끝
+    53.49s  agent 발화 시작: 혹시 다른 도움이 필요하신가요?
+    55.47s  agent 발화 끝
+    55.67s  user  발화 시작: 아니, 괜찮아. 다 됐어.
+    57.73s  agent 발화 시작: 즐거운 하루 보내세요.
+    57.88s  user  발화 끝
+    59.39s  agent 발화 끝

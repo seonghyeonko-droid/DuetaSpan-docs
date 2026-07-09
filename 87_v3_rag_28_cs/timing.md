@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 야, 정부 부처들 읽다가… 참전용사부 언제 시작했는지 궁금해졌어.
-     5.19s  <ret> 발화 (turn1 첫 프레임)
-     5.59s  agent 발화 시작: <ret> 아, 좋은 질문이세요. 참전용사부는 천구백삼십칠월 이십일일에 설립되었어요.
-     5.65s  user  발화 끝
-     6.79s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.36s]: The United States Department of Veterans Affairs was established on Ju
-    11.67s  user  발화 시작: 천구백삼십칠 년? 그거… 생각보다 엄청 최근이네, 그렇지? 훨씬 오래됐을 줄 알았어.
-    11.85s  agent 발화 끝
-    17.30s  agent 발화 시작: 그렇죠, 좀 최근에 느껴지실 수도 있겠네요. 아마 이전의 참전용사들을 위한 기관들을 생각하고 계신 것 같아요
-    17.45s  user  발화 끝
-    24.30s  agent 발화 끝
-    25.09s  user  발화 시작: 음, 당연히 그 전에도 뭔가 있었겠지. 천구백삼십칠 년 전에 참전용사들한테 뭘 해 줬어?
-    31.54s  <ret> 발화 (turn5 첫 프레임)
-    31.61s  agent 발화 시작: <ret> 천구백삼십 년 이전에는— 천구백이십일년에 설립된 참전용사국에서 혜택과 서비스를 제공했어요.
-    31.81s  user  발화 끝
-    33.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.60s]: Prior to 1930, the Veterans Bureau, established in 1921, provided bene
-    40.09s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 정부 부처들 읽다가 궁금해졌는데, 재향군인부 언제 시작했어?
+     4.92s  <ret> 발화 (turn1 첫 프레임)
+     5.32s  agent 발화 시작: <ret> 네, 좋은 질문이세요. 재향군인부는 천구백삼십년 칠월 이십일일에 설립되었어요.
+     5.46s  user  발화 끝
+     6.52s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.65s]: The United States Department of Veterans Affairs was established on Ju
+    11.40s  user  발화 시작: 천구백삼십년? 생각보다 엄청 최근인데, 진짜. 남북전쟁 때는 훨씬 오래됐을 줄 알았어.
+    11.53s  agent 발화 끝
+    18.13s  agent 발화 시작: 상대적으로 최근에 만들어진 건 맞아요, 퇴역 군인들의 필요를 생각하면요. 혹시 예전에는 지원 방식이 달랐을까
+    18.35s  user  발화 끝
+    27.40s  agent 발화 끝
+    28.18s  user  발화 시작: 근데… 천구백삼십년에 만들어졌으면 그 전에는 뭘 했어? 퇴역 군인들은 그냥… 알아서 해결했어?
+    35.40s  <ret> 발화 (turn5 첫 프레임)
+    35.48s  agent 발화 시작: <ret> 네, 천구백삼십년 이전에 지원 방식이 달랐어요. 천구백이십일년에 만들어진 재향군인국에서 퇴역 군인
+    35.64s  user  발화 끝
+    37.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: Prior to 1930, the Veterans Bureau, created in 1921, handled veterans’
+    45.31s  agent 발화 끝

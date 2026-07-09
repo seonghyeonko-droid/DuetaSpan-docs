@@ -58,20 +58,25 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’ve been researching my family hi | S2 Oh, French! That's interesting, I  | S3 So, it's a place name originally,  | S4 I wonder if it’s common in South A
 
-     0.00s  user  발화 시작: I was reading a book and came across the name du Plessis. It
-     8.57s  user  발화 끝
-     8.62s  agent 발화 시작: That's a lovely question. Names often carry such fascinating
-    13.37s  <ret> 발화 (turn2 첫 프레임)
-    13.77s  agent 발화 시작: <ret> The name du Plessis has roots in… It’s a French surnam
-    13.80s  agent 발화 끝
-    15.21s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.60s]: Du Plessis is a French surname originating from the Norman family name
-    19.87s  user  발화 시작: Mhm.
-    20.41s  user  발화 끝
-    21.92s  agent 발화 끝
-    22.24s  user  발화 시작: Oh, so it *is* French! Is Plessis a place then? Like a town 
-    27.92s  <ret> 발화 (turn5 첫 프레임)
-    28.24s  agent 발화 시작: <ret> Yes, Plessis refers to several places… Plessis is the 
-    28.26s  user  발화 끝
-    29.68s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.96s]: Plessis is the name of several communes and places in France, most not
-    37.60s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been researching my family history, and I came across t
+    10.35s  <ret> 발화 (turn1 첫 프레임)
+    10.43s  agent 발화 시작: <ret> That’s a lovely question, and a very common one. Du Pl
+    10.53s  user  발화 끝
+    11.31s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.32s]: The surname Du Plessis is of French origin, derived from the Old Frenc
+    16.47s  user  발화 시작: Mhm.
+    17.02s  user  발화 끝
+    18.54s  agent 발화 끝
+    18.67s  user  발화 시작: Oh, French! That's interesting, I always thought it sounded…
+    26.88s  <ret> 발화 (turn4 첫 프레임)
+    27.24s  user  발화 끝
+    27.28s  agent 발화 시작: <ret> It certainly became associated with nobility. The Ples
+    28.48s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.71s]: The Plessis family originated as lords of Plessis-les-Tours in Anjou, 
+    37.20s  agent 발화 끝
+    37.31s  user  발화 시작: So, it's a place name originally, and then a family took the
+    45.98s  agent 발화 시작: Family names often do travel, reflecting migration and settl
+    46.08s  user  발화 끝
+    54.59s  agent 발화 끝
+    54.77s  user  발화 시작: I wonder if it’s common in South Africa, though? My ancestor
+    60.00s  user  발화 끝

@@ -58,91 +58,107 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 주니 카페 가격대는 어떻게 돼요? | S2 피오렐라… 평점이 꽤 높네요. 거기 메뉴 좀 알려주시겠어요? | S3 혹시 주차는 어떻게 해야 할까요? | S4 감사합니다. 혹시 피오렐라 근처에 괜찮은 와인바도 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 주니 카페의 가격대는 어떻게 돼요? | S2 주니 카페까지 가는 가장 빠른 길은 어떻게 되나요? 지금 제  | S3 시빅 센터 주차장으로 안내해 줄 수 있나요? | S4 아, 혹시 예약도 가능한가요?
 
-     0.00s  user  발화 시작: 주니 카페 가격대는 어떻게 돼요?
-     1.65s  <ret> 발화 (turn1 첫 프레임)
-     1.96s  agent 발화 시작: <ret> 주니 카페의 가격대는 보통 일인당 삼십에서 사십 달러 정도예요.
-     2.07s  user  발화 끝
-     3.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) Zuni Cafe's price range is $$ (30-40 dollars).
-     6.30s  agent 발화 시작: 주니 카페는 일인당 삼십에서 사십 달러 정도의 가격대입니다.
-     6.39s  agent 발화 끝
-    10.60s  agent 발화 끝
-    10.82s  user  발화 시작: 오, 생각보다 비싸네요. 그럼 근처에 좀 더 저렴한 곳 없을까요?
-    15.13s  user  발화 끝
-    15.60s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 선호하시나요?
-    19.12s  user  발화 시작: 파스타가 먹고 싶은데요.
-    19.21s  agent 발화 끝
-    20.45s  <ret> 발화 (turn6 첫 프레임)
-    20.59s  user  발화 끝
-    20.60s  agent 발화 시작: <ret> 파스타를 좋아하시는군요. 근처에 괜찮은 파스타집을 찾아볼까요?
-    22.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Fiorella, a pasta restaurant, is 0.8 miles from Zuni Caf
-    24.77s  agent 발화 시작: 피오렐라라는 파스타집이 있어요. 주니 카페에서 도보로 약 십 분 거리에 있고 평점도 사 점 이점이에요.
-    24.95s  agent 발화 끝
-    27.34s  user  발화 시작: 네.
-    27.65s  user  발화 끝
-    31.58s  user  발화 시작: 피오렐라… 평점이 꽤 높네요. 거기 메뉴 좀 알려주시겠어요?
-    31.62s  agent 발화 끝
-    35.03s  <ret> 발화 (turn10 첫 프레임)
-    35.35s  agent 발화 시작: <ret> 피오렐라의 메뉴를 알려드릴게요. 스파게티 알레 봉골레는 이십팔달러, 카초 에 페페는 이십사달러, 
-    35.37s  user  발화 끝
-    35.53s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.97s]: (tool result) Fiorella's menu includes Spaghetti alle Vongole for $28,
-    41.14s  user  발화 시작: 정말요?
-    41.96s  user  발화 끝
-    43.83s  user  발화 시작: 스파게티 알레 봉골레가 맛있겠네요. 피오렐라 예약 좀 해주세요. 오늘 저녁 일곱 시로요.
-    44.53s  agent 발화 끝
-    49.48s  user  발화 끝
-    49.74s  agent 발화 시작: 네, 피오렐라에 오늘 저녁 일곱 시로 예약을 진행해 드릴게요. 혹시 몇 분이세요?
-    52.36s  user  발화 시작: 네.
-    52.71s  user  발화 끝
-    54.37s  agent 발화 끝
-    54.80s  user  발화 시작: 두 명이요.
-    55.49s  <ret> 발화 (turn16 첫 프레임)
-    55.52s  user  발화 끝
-    55.56s  agent 발화 시작: <ret> 예약이 완료되었습니다. 피오렐라에 오늘 저녁 일곱 시에 두 분 예약이 확정되었고, 확인 번호는 R
-    56.29s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.16s]: (tool result) Reservation confirmed at Fiorella for 2 people at 7:00 P
-    63.53s  user  발화 시작: 혹시 주차는 어떻게 해야 할까요?
-    63.67s  agent 발화 끝
-    65.14s  <ret> 발화 (turn18 첫 프레임)
-    65.37s  user  발화 끝
-    65.45s  agent 발화 시작: <ret> 피오렐라 근처 주차는…
-    65.64s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.84s]: (tool result) Paid parking is available at 2200 Fillmore St, 0.2 miles
-    67.13s  agent 발화 시작: 주차 정보를 알려드릴게요. 피오렐라에서 영 점 이마일 떨어진 필모어 거리에 유료 주차장이 있고, 시간당 팔달
-    67.29s  agent 발화 끝
-    75.33s  agent 발화 끝
-    75.44s  user  발화 시작: 아, 그렇군요. 그럼 피오렐라까지 가는 길은 어떻게 되나요?
-    78.61s  <ret> 발화 (turn21 첫 프레임)
-    79.00s  agent 발화 시작: <ret> 주니 카페에서 피오렐라까지 가는 길을 안내해 드릴게요. 마켓 스트리트를 서쪽으로 가다가 필모어 스
-    79.04s  user  발화 끝
-    80.13s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.38s]: (tool result) Directions from Zuni Cafe to Fiorella: Head west on Mark
-    82.38s  user  발화 시작: 그렇군요.
-    83.06s  user  발화 끝
-    88.50s  agent 발화 시작: 길 찾기 앱에 바로 경로를 전송해 드릴까요?
-    88.64s  agent 발화 끝
-    90.91s  user  발화 시작: 네, 그렇게 해주세요.
-    91.40s  agent 발화 끝
-    92.05s  user  발화 끝
-    92.15s  <ret> 발화 (turn25 첫 프레임)
-    92.22s  agent 발화 시작: <ret> 경로가 지도 앱으로 전송되었습니다. 이제 지도 앱에서 바로 길 안내를 받으실 수 있습니다.
-    93.59s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.72s]: (tool result) Directions sent to your default maps application.
-    97.50s  user  발화 시작: 감사합니다. 혹시 피오렐라 근처에 괜찮은 와인바도 있을까요?
-    97.81s  agent 발화 끝
-   100.90s  <ret> 발화 (turn27 첫 프레임)
-   100.97s  agent 발화 시작: <ret> 와인바를 찾으시는군요. 피오렐라 근처에 괜찮은 와인바가 몇 군데 있어요.
-   101.10s  user  발화 끝
-   102.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) Vintage Wine Bar is 0.5 miles from Fiorella, with a 4.5-
-   105.73s  agent 발화 시작: 빈티지 와인바가 괜찮을 것 같아요. 피오렐라에서 영 점 오마일 거리에 있고, 평점은 사 점 오점이며 금요일에
-   105.87s  agent 발화 끝
-   109.85s  user  발화 시작: 정말요?
-   110.58s  user  발화 끝
-   115.60s  agent 발화 끝
-   115.96s  user  발화 시작: 금요일에 라이브 음악이 있다니 좋네요. 그럼 혹시 내일 모레 주말 날씨는 어때요?
-   120.48s  <ret> 발화 (turn31 첫 프레임)
-   120.79s  agent 발화 시작: <ret> 내일 모레 날씨를 알려드릴게요. 맑고 최고 기온은 섭씨 이십이도, 최저 기온은 섭씨 십사도입니다.
-   120.86s  user  발화 끝
-   121.44s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.01s]: (tool result) The weather forecast for two days from now is sunny with
-   127.32s  agent 발화 끝
-   127.85s  user  발화 시작: 날씨도 좋네요. 완벽한 주말 계획이네요.
-   130.67s  agent 발화 시작: [happy] 즐거운 주말 보내시길 바랍니다. 혹시 더 필요한 건 없으세요?
-   130.86s  user  발화 끝
-   134.51s  agent 발화 끝
+     0.00s  user  발화 시작: 주니 카페의 가격대는 어떻게 돼요?
+     1.85s  <ret> 발화 (turn1 첫 프레임)
+     2.16s  agent 발화 시작: <ret> 주니 카페에 대해 알아보고 있어요. 주니 카페는 가격대가 높은 편이에요. 세 달러 기호 세 개 정
+     2.26s  user  발화 끝
+     2.65s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.87s]: (tool result) Zuni Cafe is located at 1658 Market St, San Francisco, C
+     5.07s  user  발화 시작: 맞아요.
+     5.70s  user  발화 끝
+     8.50s  agent 발화 끝
+     8.72s  user  발화 시작: 그곳은 어떤 종류의 음식을 팔아요?
+    11.12s  user  발화 끝
+    11.31s  <ret> 발화 (turn4 첫 프레임)
+    11.38s  agent 발화 시작: <ret> 주니 카페의 메뉴를 확인해 드릴게요. 주니 카페는 캘리포니아 음식을 주로 팔아요. 로스트 치킨이 
+    12.43s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.41s]: (tool result) Zuni Cafe serves Californian cuisine. Popular dishes inc
+    15.93s  user  발화 시작: 네.
+    16.56s  user  발화 끝
+    18.37s  user  발화 시작: 로스트 치킨의 가격은 얼마예요?
+    18.61s  agent 발화 끝
+    20.10s  <ret> 발화 (turn7 첫 프레임)
+    20.21s  user  발화 끝
+    20.25s  agent 발화 시작: <ret> 로스트 치킨 가격을 알아볼게요. 로스트 치킨은 육십팔달러이고, 두세 분이 드실 수 있는 양이에요.
+    20.74s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.94s]: (tool result) The roast chicken at Zuni Cafe costs $68 and serves 2-3 
+    26.55s  agent 발화 끝
+    27.19s  user  발화 시작: 두 명인데 예약할 수 있을까요? 내일 저녁 일곱시에요.
+    30.30s  <ret> 발화 (turn9 첫 프레임)
+    30.37s  agent 발화 시작: <ret> 내일 저녁 일곱시에 두 명으로 예약 가능하신지 확인해 보겠습니다.
+    30.41s  user  발화 끝
+    32.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) Reservation confirmed at Zuni Cafe for 2 people tomorrow
+    34.48s  agent 발화 시작: 네, 주니 카페에 내일 저녁 일곱시에 두 분으로 예약이 완료됐습니다. 확인 번호는 ZX8492예요.
+    34.53s  agent 발화 끝
+    38.16s  user  발화 시작: 정말요?
+    38.93s  user  발화 끝
+    42.09s  user  발화 시작: 주니 카페까지 가는 가장 빠른 길은 어떻게 되나요? 지금 제 위치에서요.
+    42.31s  agent 발화 끝
+    46.53s  <ret> 발화 (turn13 첫 프레임)
+    46.68s  agent 발화 시작: <ret> 현재 위치에서 주니 카페까지 가는 가장 빠른 길을 찾아드릴게요.
+    46.86s  user  발화 끝
+    47.49s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.30s]: (tool result) Driving directions to Zuni Cafe: Start on Pine St, turn 
+    50.94s  agent 발화 시작: 파인 스트리트에서 시작해서 테일러 스트리트로 우회전, 마켓 스트리트로 좌회전하면 돼요. 목적지는 영 점 팔마
+    50.99s  agent 발화 끝
+    54.98s  user  발화 시작: 네.
+    55.61s  user  발화 끝
+    58.77s  user  발화 시작: 영 점 팔마일은 대략 몇 분 정도 걸리나요?
+    59.15s  agent 발화 끝
+    62.10s  user  발화 끝
+    62.15s  <ret> 발화 (turn17 첫 프레임)
+    62.21s  agent 발화 시작: <ret> 영 점 팔마일이면 대략… 대략 십이분에서 십오분 정도 걸릴 거예요. 교통 상황에 따라 달라질 수 
+    63.11s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: (tool result) 0.8 miles is approximately a 12-15 minute drive, dependi
+    70.46s  agent 발화 끝
+    70.70s  user  발화 시작: 주차는 어디에 하는 게 좋을까요?
+    72.61s  <ret> 발화 (turn19 첫 프레임)
+    72.92s  agent 발화 시작: <ret> 주니 카페 근처 주차장을 알아볼게요.
+    72.95s  user  발화 끝
+    73.97s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.77s]: (tool result) Nearby parking options include the Civic Center Garage a
+    75.58s  agent 발화 시작: 시빅 센터 주차장과 퍼포밍 아츠 주차장이 가까워요. 시간당 팔달러예요.
+    75.69s  agent 발화 끝
+    81.06s  user  발화 시작: 시빅 센터 주차장으로 안내해 줄 수 있나요?
+    81.22s  agent 발화 끝
+    83.19s  <ret> 발화 (turn22 첫 프레임)
+    83.58s  agent 발화 시작: <ret> 네, 시빅 센터 주차장으로 길 안내를 시작합니다.
+    83.63s  user  발화 끝
+    84.71s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.42s]: (tool result) Navigating to Civic Center Garage, 333 McAllister St. Es
+    86.97s  agent 발화 시작: 시빅 센터 주차장으로 길 안내를 시작합니다. 도착 예상 시간은 십분이에요.
+    87.00s  agent 발화 끝
+    92.01s  user  발화 시작: 혹시 주니 카페 근처에 다른 좋은 레스토랑도 있을까요?
+    92.16s  agent 발화 끝
+    95.22s  <ret> 발화 (turn25 첫 프레임)
+    95.43s  user  발화 끝
+    95.53s  agent 발화 시작: <ret> 주니 카페 근처의 다른 레스토랑을 찾아볼게요.
+    97.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.96s]: (tool result) Nearby restaurants include Foreign Cinema, Nopa, and Sta
+    98.33s  agent 발화 시작: 포린 시네마, 노파, 스테이트 버드 프로비전스가 가까이에 있어요.
+    98.49s  agent 발화 끝
+   103.80s  agent 발화 끝
+   103.84s  user  발화 시작: 스테이트 버드 프로비전스는 어떤 음식을 파나요?
+   106.02s  <ret> 발화 (turn28 첫 프레임)
+   106.41s  agent 발화 시작: <ret> 스테이트 버드 프로비전스의 메뉴를 알려드릴게요. 캘리포니아 스타일의 작은 접시 음식을 아시아 풍으
+   106.47s  user  발화 끝
+   107.78s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.74s]: (tool result) State Bird Provisions serves Californian small plates wi
+   113.53s  agent 발화 끝
+   114.17s  user  발화 시작: 아, 혹시 예약도 가능한가요?
+   116.50s  agent 발화 시작: 스테이트 버드 프로비전스의 예약 가능 여부를 확인해 드릴게요.—
+   116.53s  user  발화 끝
+   119.67s  <ret> 발화 (turn31 첫 프레임)
+   120.06s  agent 발화 시작: <ret> 현재 예약 가능한 시간이 제한적이에요. 웹사이트에서 예약을 하실 수 있습니다.
+   120.14s  agent 발화 끝
+   121.19s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.38s]: (tool result) State Bird Provisions currently has limited availability
+   122.80s  user  발화 시작: 네.
+   123.16s  user  발화 끝
+   125.44s  agent 발화 끝
+   125.69s  user  발화 시작: 그 웹사이트 주소가 어떻게 되나요?
+   127.44s  <ret> 발화 (turn34 첫 프레임)
+   127.59s  agent 발화 시작: <ret> 스테이트 버드 프로비전스의 웹사이트 주소를 알려드릴게요.
+   127.68s  user  발화 끝
+   128.40s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.75s]: (tool result) The website for State Bird Provisions is https://statebi
+   131.27s  agent 발화 시작: 스테이트 버드 프로비전스의 웹사이트 주소는 https://statebirdprovisions.com 입니다.
+   131.33s  agent 발화 끝
+   134.39s  user  발화 시작: 그렇죠.
+   134.88s  user  발화 끝
+   137.57s  user  발화 시작: 알겠습니다. 감사합니다.
+   137.76s  agent 발화 끝
+   139.16s  agent 발화 시작: 즐거운 저녁 식사 되세요. 혹시 더 필요하신 게 있으신가요?
+   139.18s  user  발화 끝
+   142.87s  agent 발화 끝

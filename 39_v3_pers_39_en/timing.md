@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 세재님, 안녕하세요! I’m Aril, your life coach, and I’m so glad we ha
-     7.41s  agent 발화 끝
-     7.48s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a bit lost, I 
-    15.12s  agent 발화 시작: Feeling lost is perfectly understandable, especially when na
-    15.26s  user  발화 끝
-    20.11s  user  발화 시작: Yeah.
-    20.75s  user  발화 끝
-    25.78s  agent 발화 끝
-    26.27s  user  발화 시작: Uh, well, it’s hard to find people with similar interests, I
-    32.80s  user  발화 끝
-    32.98s  agent 발화 시작: That’s a common worry, 세재님. Many people find it difficult to
-    45.92s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세재님! I’m Aril, and I’m so glad we have this time toge
+     6.26s  agent 발화 끝
+     6.34s  user  발화 시작: Aril? That’s… an unusual name. Are you a real person, or— I 
+    13.71s  agent 발화 시작: [laugh] It’s true, Aril isn’t common here in Seoul! I’m a li
+    13.80s  user  발화 끝
+    18.50s  user  발화 시작: Yeah.
+    19.14s  user  발화 끝
+    23.95s  agent 발화 끝
+    24.46s  user  발화 시작: Oh. I— I mean, that’s nice, but I’m really struggling to mak
+    33.09s  user  발화 끝
+    33.31s  agent 발화 시작: It’s completely natural to feel awkward after such a big lif
+    47.32s  agent 발화 끝

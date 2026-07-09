@@ -59,9 +59,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading a book and came across the name du Plessis. It sounds… French, maybe? But I'm not sure where it really comes from.
-[  8.62s][moshi] That's a lovely question. Names often carry such fascinating stories, don’t they?
-[ 13.77s][moshi] ⟨ret@13.37s⟩ The name du ⟦⚡SPAN@15.21s: Du Plessis is a French surname originating from the Norman family name “de Plessis,” meaning “of the Plessis.”⟧ Plessis has roots in… It’s a French surname, meaning “of the Plessis,” and comes from a Norman family name.
-[ 19.87s][user ] «backchannel» Mhm.
-[ 22.24s][user ] Oh, so it *is* French! Is Plessis a place then? Like a town or ⟨ret@27.92s⟩ something?
-[ 28.24s][moshi] Yes, Plessis ⟦⚡SPAN@29.68s: Plessis is the name of several communes and places in France, most notably Plessis-Pluché in Normandy.⟧ refers to several places… Plessis is the name of several places in France, including Plessis-Pluché in Normandy.
+[  0.00s][user ] I’ve been researching my family history, and I came across the surname du Plessis. It’s quite a mouthful! Do you know anything about where that name originates?
+[ 10.43s][moshi] ⟨ret@10.35s⟩ That’s ⟦⚡SPAN@11.31s: The surname Du Plessis is of French origin, derived from the Old French “du plessis,” meaning “of the Plessis.⟧ a lovely question, and a very common one. Du Plessis comes from Old French, meaning “of the Plessis,” a place name.
+[ 16.47s][user ] «backchannel» Mhm.
+[ 18.67s][user ] Oh, French! That's interesting, I always thought it sounded… well, not French. Was it a noble family name, ⟨ret@26.88s⟩ perhaps?
+[ 27.28s][moshi] It certainly ⟦⚡SPAN@28.48s: The Plessis family originated as lords of Plessis-les-Tours in Anjou, France, and rose to prominence in the 11⟧ became associated with nobility. The Plessis family were lords of Plessis-les-Tours in Anjou, France, gaining prominence in the eleventh century.
+[ 37.31s][user ] So, it's a place name originally, and then a family took the name from the place? That makes sense. Did the name travel anywhere else?
+[ 45.98s][moshi] Family names often do travel, reflecting migration and settlement patterns. It’s a natural part of history, seeing names spread.
+[ 54.77s][user ] I wonder if it’s common in South Africa, though? My ancestors emigrated there…

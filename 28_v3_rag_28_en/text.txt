@@ -69,9 +69,9 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was reading about government departments… when did the Veterans Affairs department actually ⟨ret@5.03s⟩ start?
-[  5.35s][moshi] That’s ⟦⚡SPAN@5.99s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ a good question to ask— The Department of Veterans Affairs was established on July twenty-first, nineteen thirty.
-[ 13.61s][user ] Nineteen thirty? That seems… surprisingly recent, doesn’t it? I thought it’d be much older.
-[ 19.45s][moshi] It does feel recent, doesn’t it? Perhaps you’re thinking of the earlier agencies that served veterans.
-[ 25.36s][user ] Well, yeah, there had to be something before that. What did they do for veterans *before* ⟨ret@30.32s⟩ nineteen thirty?
-[ 30.71s][moshi] Before nineteen ⟦⚡SPAN@32.32s: Prior to 1930, the Veterans Bureau, established in 1921, provided benefits and services to veterans.⟧ thirty, veterans were served by— Before nineteen thirty, the Veterans Bureau, established in nineteen twenty-one, provided benefits and services.
+[  0.00s][user ] I was reading about government departments, and I'm wondering—when did the Veterans Affairs department actually get ⟨ret@8.22s⟩ started?
+[  8.54s][moshi] That's ⟦⚡SPAN@9.18s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ a good question to ask. The Department of Veterans Affairs was established on July twenty-first, nineteen thirty.
+[ 16.73s][user ] Nineteen thirty? That seems… surprisingly recent, actually. I thought it would be much older, given the Civil War.
+[ 24.22s][moshi] It is a relatively recent establishment, considering the history of veterans' needs. Perhaps earlier aid was managed differently?
+[ 31.79s][user ] But… if it was only created in nineteen thirty, what happened *before* that? Were veterans just… on their ⟨ret@38.71s⟩ own?
+[ 39.08s][moshi] Before nineteen ⟦⚡SPAN@40.71s: Prior to 1930, the Veterans Bureau, created in 1921, handled veterans’ affairs.⟧ thirty, care was provided differently. Before nineteen thirty, the Veterans Bureau, created in nineteen twenty-one, handled veterans’ affairs.

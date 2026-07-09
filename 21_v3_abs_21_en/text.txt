@@ -59,34 +59,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  How many senators are there in the French Senate?
-      Oh, okay. Well, what about the US Senate? How many senators are there?
-  S2  That’s neat. Um, are they all elected?
-      Right. And how long is a Senate term?
-  S3  That makes sense. So, what do senators actually *do*?
-      It sounds…stressful. I— I mean, all that responsibility.
-  S4  I guess so. Is there a way to find out what a specific senator is work
-      Wow, that’s a lot. Thanks, Nias.
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
 [  0.00s][user ] How many senators are there in the French Senate?
-[  2.48s][moshi] ⟨ret@2.42s⟩ That’s a good question, and I ⟦⚡SPAN@4.42s: (no information found)⟧ wish I had a precise number for you right now. It seems that information isn’t readily available to me.
-[  7.64s][user ] «backchannel» Yeah.
-[  9.48s][user ] Oh, okay. Well, what about the US Senate? How many senators are there?
-[ 13.32s][moshi] ⟨ret@13.08s⟩ There are ⟦⚡SPAN@14.20s: The United States Senate is composed of one hundred senators, two from each of the fifty states.⟧ one hundred senators in the US Senate, with two representing each of the fifty states.
-[ 18.91s][user ] That’s neat. Um, are they all elected?
-[ 21.70s][moshi] Yes, all one hundred senators are directly elected by the people of their respective states. It’s a fundamental part of their system.
-[ 29.97s][user ] Right. And how long is a ⟨ret@31.74s⟩ Senate term?
-[ 32.14s][moshi] ⟦⚡SPAN@32.62s: United States Senators serve six-year terms, with elections staggered so that approximately one-third of the S⟧ A Senate term lasts… Senators serve six-year terms, and elections happen in stages, with about a third up for reelection every two years.
-[ 34.80s][user ] «backchannel» Yeah, yeah.
-[ 40.76s][user ] That makes sense. So, what do senators actually *do*?
-[ 44.02s][moshi] They are primarily responsible for creating and passing laws, confirming presidential appointments, and overseeing the federal government.
-[ 49.07s][user ] «backchannel» Yeah.
-[ 50.75s][moshi] It’s a complex role, requiring a lot of debate, compromise, and careful consideration of different viewpoints.
-[ 58.11s][user ] It sounds…stressful. I— I mean, all that responsibility.
-[ 62.41s][moshi] [laugh] It can be! Holding public office often requires navigating difficult situations and making tough decisions. But it can also be very rewarding.
-[ 71.73s][user ] I guess so. Is there a way to find out what a specific senator is working ⟨ret@75.78s⟩ on?
-[ 76.09s][moshi] Senator Any is sponsoring ⟦⚡SPAN@77.78s: (tool result) Senator Any is currently sponsoring bills related to renewable energy, healthcare access, and in⟧ bills on energy, healthcare, and infrastructure, and serves on two key committees.
-[ 80.07s][user ] «backchannel» Okay.
-[ 82.20s][user ] Wow, that’s a lot. Thanks, Nias.
+[  2.65s][moshi] ⟨ret@2.57s⟩ That’s a good question, and ⟦⚡SPAN@4.57s: (no information found)⟧ one I’ve encountered before. Unfortunately, I don’t currently have that specific number.
+[  5.47s][user ] «backchannel» Mhm.
+[  8.63s][user ] Oh. Well, can you find out for me?
+[ 11.18s][moshi] ⟨ret@10.95s⟩ The French Senate is ⟦⚡SPAN@12.95s: The French Senate has 348 senators, each elected by an electoral college for a six-year term.⟧ comprised of three hundred and forty-eight senators.
+[ 13.62s][user ] «backchannel» Okay.
+[ 15.42s][user ] Three hundred and forty-eight… wow, that's a lot.
+[ 18.38s][moshi] It is a sizable body, yes. It allows for broader representation within the French government.
+[ 24.82s][user ] Are they elected differently than the National ⟨ret@27.05s⟩ Assembly?
+[ 27.27s][moshi] There’s a key difference ⟦⚡SPAN@28.81s: Senators are elected indirectly by an electoral college of local officials, while National Assembly members ar⟧ in how they’re chosen. Senators are elected by local officials, unlike the National Assembly’s direct popular vote.
+[ 29.64s][user ] «backchannel» Yeah, yeah.
+[ 34.89s][user ] So, local officials pick the senators… interesting.
+[ 38.37s][moshi] Mm-hmm. It’s designed to give a voice to the regions and local communities within France.
+[ 43.82s][user ] I see. And what’s the main job of a senator?
+[ 46.78s][moshi] Senators primarily review and amend legislation passed by the National Assembly, ensuring a thorough process.
+[ 53.08s][user ] That sounds important. Do they have a lot of power?
+[ 56.15s][moshi] They share legislative power with the National Assembly, and their approval is often needed for laws to pass.
+[ 59.95s][user ] «backchannel» Okay.
+[ 62.07s][user ] What about veto power, do they have that?
+[ 63.97s][user ] Do they have the power to veto laws?
+[ 66.17s][moshi] They don’t have an absolute veto, but they can delay legislation and propose amendments, influencing the final outcome.

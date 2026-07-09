@@ -58,39 +58,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Can you apply a twenty percent dis | S3 And confirm my shipping address is | S4 Great, thanks so much!
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Can you apply a twenty percent dis | S3 Perfect. Now, book it for me. | S4 I— I mean, is there a return polic
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.94s  <ret> 발화 (turn1 첫 프레임)
-     3.33s  agent 발화 시작: <ret> Certainly, let's get that started for you. Excellent, 
-     3.51s  user  발화 끝
-     3.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.78s]: (tool result) The checkout button in the shopping cart iframe was clic
-     8.88s  agent 발화 끝
-    10.26s  user  발화 시작: What’s the total cost, including shipping?
-    12.79s  <ret> 발화 (turn3 첫 프레임)
-    12.87s  agent 발화 시작: <ret> Let me quickly check that for you. Your total comes to
-    12.98s  user  발화 끝
-    14.07s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.52s]: (tool result) The total cost is $78.50, including $8.50 for shipping.
-    18.53s  user  발화 시작: Yeah.
-    19.02s  user  발화 끝
-    20.42s  agent 발화 끝
-    20.47s  user  발화 시작: Can you apply a twenty percent discount code?
-    22.96s  <ret> 발화 (turn6 첫 프레임)
-    23.06s  user  발화 끝
-    23.12s  agent 발화 시작: <ret> Of course, I can try that code for you. Wonderful, the
-    24.64s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.16s]: (tool result) The discount code "SAVE20" was applied, reducing the tot
-    31.56s  agent 발화 끝
-    32.51s  user  발화 시작: And confirm my shipping address is still 123 Oak Street?
-    36.53s  user  발화 끝
-    36.55s  agent 발화 시작: Yes, your shipping address on file is still 123 Oak Street.
-    41.22s  user  발화 시작: Okay, finalize the order then.
-    41.23s  agent 발화 끝
-    42.86s  <ret> 발화 (turn10 첫 프레임)
-    42.99s  agent 발화 시작: <ret> Absolutely, I’m confirming everything now. Your order,
-    43.11s  user  발화 끝
-    44.22s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.66s]: (tool result) Order #12345 was finalized; it will ship to 123 Oak Stre
-    53.05s  user  발화 시작: Great, thanks so much!
-    53.10s  agent 발화 끝
-    54.39s  agent 발화 시작: You’re very welcome! It’s good to take care of these details
-    54.47s  user  발화 끝
-    60.97s  agent 발화 끝
+     3.09s  <ret> 발화 (turn1 첫 프레임)
+     3.48s  agent 발화 시작: <ret> Certainly, let’s begin with the checkout.
+     3.65s  user  발화 끝
+     4.53s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.54s]: (tool result) The checkout button within the shopping cart iframe was 
+     5.90s  agent 발화 시작: The checkout process is now underway.
+     6.02s  agent 발화 끝
+     7.60s  user  발화 시작: Mhm.
+     8.09s  user  발화 끝
+     8.53s  agent 발화 끝
+    10.11s  user  발화 시작: What's the total cost, including shipping?
+    12.55s  <ret> 발화 (turn5 첫 프레임)
+    12.63s  agent 발화 시작: <ret> I can certainly find that for you. Your total comes to
+    12.79s  user  발화 끝
+    13.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.58s]: (tool result) The total cost is $68.50, including $8.50 for shipping.
+    20.37s  agent 발화 끝
+    21.00s  user  발화 시작: That sounds reasonable.
+    22.80s  agent 발화 시작: It’s good to hear you think so! It’s always wise to review c
+    22.94s  user  발화 끝
+    28.87s  agent 발화 끝
+    28.95s  user  발화 시작: Can you apply a twenty percent discount code?
+    31.29s  <ret> 발화 (turn9 첫 프레임)
+    31.69s  agent 발화 시작: <ret> Of course, I can try that discount code for you.
+    31.86s  user  발화 끝
+    32.89s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.82s]: (tool result) The discount code "SAVE20" was entered into the discount
+    34.40s  agent 발화 시작: I’ve entered the discount code, "SAVE20", into the designate
+    34.50s  agent 발화 끝
+    39.27s  agent 발화 끝
+    39.30s  user  발화 시작: And what’s the new total?
+    40.29s  <ret> 발화 (turn12 첫 프레임)
+    40.53s  agent 발화 시작: <ret> Let's recalculate with the discount applied. The disco
+    40.67s  user  발화 끝
+    41.73s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.46s]: (tool result) The new total is $54.80 after applying the 20% discount.
+    49.16s  agent 발화 끝
+    49.22s  user  발화 시작: Perfect. Now, book it for me.
+    51.63s  <ret> 발화 (turn14 첫 프레임)
+    51.87s  agent 발화 시작: <ret> Excellent! I’ll go ahead and complete your order then.
+    51.94s  user  발화 끝
+    53.47s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.23s]: (tool result) The order was placed successfully with order number 7893
+    55.10s  agent 발화 끝
+    55.24s  agent 발화 시작: Your order has been placed! The order number is seven-eight-
+    61.41s  user  발화 시작: Can I get a confirmation email?
+    61.55s  agent 발화 끝
+    63.10s  <ret> 발화 (turn17 첫 프레임)
+    63.27s  agent 발화 시작: <ret> Absolutely, I can confirm that a confirmation email wi
+    63.48s  user  발화 끝
+    64.86s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.39s]: (tool result) A confirmation email was sent to user@example.com.
+    67.56s  agent 발화 시작: A confirmation email has been sent to user@example.com with 
+    67.66s  agent 발화 끝
+    69.95s  user  발화 시작: Yeah.
+    70.45s  user  발화 끝
+    73.30s  agent 발화 끝
+    75.48s  user  발화 시작: Great, thank you so much.
+    76.81s  agent 발화 시작: You’re very welcome! I’m glad I could help streamline your p
+    76.86s  user  발화 끝
+    79.42s  user  발화 시작: Yeah.
+    79.92s  user  발화 끝
+    82.04s  agent 발화 끝
+    82.05s  user  발화 시작: I— I mean, is there a return policy?
+    84.59s  user  발화 끝
+    84.64s  agent 발화 시작: Yes, there is. Returns are accepted within thirty days of pu
+    90.90s  agent 발화 끝
+    91.16s  user  발화 시작: So, I have thirty days?
+    93.80s  user  발화 끝
+    93.90s  agent 발화 시작: That’s right—thirty days from the purchase date for a full r
+    99.42s  agent 발화 끝

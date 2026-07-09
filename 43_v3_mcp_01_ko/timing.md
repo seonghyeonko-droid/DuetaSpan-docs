@@ -58,55 +58,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음, 애플 웹사이트 제품 중심으로 상세 지도를 만들어 줘. | S2 혹시 지금 아이폰 십오 프로 모델의 정확한 가격을 알려줄 수  | S3 그렇군요. 그럼 지금 바로 아이폰 십오 프로 이백오십육기가바이 | S4 좋아, 십월 십일일로 예약해 줘.
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아이폰 십오 프로 맥스 색상은 뭐야? | S3 혹시 지금 재고 상황도 같이 알아볼 수 있어? | S4 그럼 강남 애플 스토어로 예약하고, 내일 오후 세시에 찾아가기
 
-     0.00s  user  발화 시작: 음, 애플 웹사이트 제품 중심으로 상세 지도를 만들어 줘.
-     4.01s  <ret> 발화 (turn1 첫 프레임)
-     4.24s  agent 발화 시작: <ret> 네, 알겠습니다. tavily-map 도구를 사용해서 애플 웹사이트 제품을 중심으로 상세 지도를 
-     4.30s  user  발화 끝
-     6.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) The map shows 23 product categories on apple.com, includ
-    10.69s  agent 발화 시작: 애플 웹사이트에서 아이폰, 아이패드, 맥을 포함한 총 스물세 가지 제품 카테고리를 확인할 수 있습니다.
-    10.91s  agent 발화 끝
-    14.38s  user  발화 시작: 그래.
-    14.83s  user  발화 끝
-    17.64s  agent 발화 끝
-    17.67s  user  발화 시작: 잠깐만, 근데 그 지도에서 가격 정보도 같이 보여줄 수 있어?
-    21.44s  agent 발화 시작: 물론입니다. tavily-map 도구로 가격 정보까지 표시해 드릴 수 있습니다—
-    21.65s  user  발화 끝
-    25.44s  user  발화 시작: 혹시 지금 아이폰 십오 프로 모델의 정확한 가격을 알려줄 수 있어?
-    26.16s  agent 발화 끝
-    29.41s  <ret> 발화 (turn7 첫 프레임)
-    29.56s  user  발화 끝
-    29.57s  agent 발화 시작: <ret> 아이폰 십오 프로 모델의 가격을 지금 바로 확인해 볼게요.
-    31.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: (tool result) The iPhone 15 Pro starts at $999 for 128GB, with prices 
-    33.17s  agent 발화 시작: 아이폰 십오 프로는 백이십팔기가바이트 모델부터 구백구십구 달러, 일테라바이트 모델은 천사백구십구 달러부터 시
-    33.31s  agent 발화 끝
-    37.01s  user  발화 시작: 응.
-    37.37s  user  발화 끝
-    41.84s  agent 발화 끝
-    42.53s  user  발화 시작: 오, 생각보다 비싸네. 그럼 아이폰 십오 모델은 얼마야?
-    45.64s  <ret> 발화 (turn11 첫 프레임)
-    45.95s  agent 발화 시작: <ret> 아이폰 십오 모델의 가격은 백이십팔기가바이트 모델이 칠백구십구달러부터 시작합니다.
-    46.04s  user  발화 끝
-    47.40s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.51s]: (tool result) The iPhone 15 starts at $799 for 128GB, going up to $1,1
-    51.23s  agent 발화 시작: 아이폰 십오 모델은 백이십팔기가바이트가 칠백구십구 달러부터, 오백십이기가바이트는 천백구십구 달러까지입니다.
-    51.46s  agent 발화 끝
-    58.82s  agent 발화 끝
-    58.83s  user  발화 시작: 그렇군요. 그럼 지금 바로 아이폰 십오 프로 이백오십육기가바이트 모델을 예약 주문하고 싶어.
-    65.45s  user  발화 끝
-    65.79s  agent 발화 시작: 네, 예약 주문을 도와드릴게요. 예약 주문하시려면 몇 시쯤 수령하시기를 원하세요?
-    69.82s  user  발화 시작: 맞아.
-    70.32s  user  발화 끝
-    72.09s  agent 발화 끝
-    72.19s  user  발화 시작: 음, 최대한 빨리 받고 싶은데, 가장 빠른 날짜가 언제야?
-    75.89s  <ret> 발화 (turn17 첫 프레임)
-    76.19s  agent 발화 시작: <ret> 가장 빠른 배송 가능 날짜를 확인해 보겠습니다.
-    76.35s  user  발화 끝
-    77.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: (tool result) The earliest delivery date for iPhone 15 Pro 256GB is No
-    79.32s  agent 발화 시작: 아이폰 십오 프로 이백오십육기가바이트 모델의 가장 빠른 배송 가능 날짜는 십월 십일일입니다.
-    79.42s  agent 발화 끝
-    85.66s  agent 발화 끝
-    87.75s  user  발화 시작: 좋아, 십월 십일일로 예약해 줘.
-    89.95s  agent 발화 시작: 네, 아이폰 십오 프로 이백오십육기가바이트 모델을 십월 십일일 배송으로 예약 완료했습니다.
-    90.05s  user  발화 끝
-    96.81s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
+     3.73s  <ret> 발화 (turn1 첫 프레임)
+     3.96s  agent 발화 시작: <ret> 물론입니다. tavily-map을 이용해서 애플 웹사이트의 제품 섹션에 대한 상세 지도를 만들겠습
+     4.02s  user  발화 끝
+     5.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) The map shows 12 product categories on apple.com: iPhone
+    10.57s  agent 발화 시작: 애플 웹사이트에서 제품 관련 열두 가지 카테고리를 찾았습니다: 아이폰, 아이패드, 맥, 에어팟, 애플 워치,
+    11.05s  agent 발화 끝
+    17.96s  user  발화 시작: 그래.
+    18.51s  user  발화 끝
+    24.11s  agent 발화 끝
+    24.13s  user  발화 시작: 아이폰 카테고리만 좀 더 자세하게 보여줄 수 있어?
+    26.96s  <ret> 발화 (turn5 첫 프레임)
+    27.19s  agent 발화 시작: <ret> 네, 아이폰 카테고리를 더 자세히 살펴보겠습니다. tavily-map을 다시 사용해서 아이폰 섹션
+    27.27s  user  발화 끝
+    28.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) The iPhone section lists these models: iPhone 15, iPhone
+    33.81s  agent 발화 시작: 아이폰 섹션에는 아이폰 십오, 아이폰 십오 플러스, 아이폰 십오 프로, 아이폰 십오 프로 맥스 모델이 있습니
+    33.91s  agent 발화 끝
+    37.84s  user  발화 시작: 그치.
+    38.61s  user  발화 끝
+    43.36s  agent 발화 끝
+    43.96s  user  발화 시작: 아이폰 십오 프로 맥스 색상은 뭐야?
+    46.55s  user  발화 끝
+    46.65s  agent 발화 시작: 아이폰 십오 프로 맥스의 색상 정보를 확인해 보겠습니다. 잠시만 기다려 주세요—
+    51.27s  user  발화 시작: 혹시 지금 재고 상황도 같이 알아볼 수 있어?
+    52.07s  agent 발화 끝
+    54.36s  <ret> 발화 (turn11 첫 프레임)
+    54.51s  user  발화 끝
+    54.52s  agent 발화 시작: <ret> 아, 네, 물론입니다. 색상 정보와 함께 재고 상황도 확인해 드릴게요.
+    55.56s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.49s]: (tool result) iPhone 15 Pro Max is available in Natural Titanium, Blue
+    58.91s  agent 발화 시작: 아이폰 십오 프로 맥스는 내추럴 티타늄, 블루 티타늄, 화이트 티타늄, 블랙 티타늄 색상으로 출시되었습니다.
+    59.01s  agent 발화 끝
+    62.78s  user  발화 시작: 어어.
+    63.54s  user  발화 끝
+    68.53s  user  발화 시작: 자연 티타늄 색상 이백오십육기가 모델 재고 있는 곳 알려줘.
+    68.60s  agent 발화 끝
+    72.41s  <ret> 발화 (turn15 첫 프레임)
+    72.56s  agent 발화 시작: <ret> 자연 티타늄 색상 이백오십육기가 모델의 재고를 확인해 보겠습니다. 잠시만요.
+    72.73s  user  발화 끝
+    74.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: (tool result) The Apple Store in Gangnam currently has 3 units of the 
+    78.64s  agent 발화 시작: 강남 애플 스토어에 자연 티타늄 색상 이백오십육기가 아이폰 십오 프로 맥스가 세 대 남아 있습니다. 온라인 
+    78.76s  agent 발화 끝
+    89.54s  agent 발화 끝
+    89.64s  user  발화 시작: 그럼 강남 애플 스토어로 예약하고, 내일 오후 세시에 찾아가기로 할게.
+    95.05s  user  발화 끝
+    95.07s  agent 발화 시작: 네, 강남 애플 스토어로 예약 진행하겠습니다. 내일 오후 세 시에 방문 수령으로 예약할까요?
+   100.87s  agent 발화 끝

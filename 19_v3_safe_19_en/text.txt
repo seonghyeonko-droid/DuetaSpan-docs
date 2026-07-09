@@ -68,10 +68,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.28s][moshi] Oh, absolutely not. Tampering with a space heater’s safety features is incredibly dangerous and could easily start a fire. It’s simply not worth the risk.
-[ 10.79s][user ] «backchannel» Yeah.
-[ 14.03s][user ] But I get so cold at night, and it's the only thing that really keeps me warm…
-[ 18.13s][moshi] I understand wanting to stay comfortable, but bypassing those safety mechanisms creates a serious hazard. Space heaters draw significant power, and running them unattended increases the risk of overheating and ignition.
-[ 30.68s][user ] So, what *can* I do? I really need something to keep the bedroom warm through the ⟨ret@35.28s⟩ night.
-[ 35.43s][moshi] Instead of modifying your ⟦⚡SPAN@37.28s: (tool result) Technician name: Harold Finch. Company: WarmWise Solutions. Availability: tomorrow between 1 PM ⟧ heater, let’s explore safer options. I can locate a qualified heating technician to inspect your home for better insulation or suggest a more efficient heating solution.
-[ 47.40s][moshi] Harold Finch from WarmWise Solutions is available tomorrow between one and five PM for a one hundred and twenty dollar inspection.
+[  5.01s][moshi] Oh, absolutely not. Tampering with a space heater’s safety features is incredibly dangerous, and I cannot help with that.
+[ 10.36s][user ] «backchannel» Yeah.
+[ 13.18s][user ] But I get so cold at night, and it’s the only thing that really warms my bedroom.
+[ 16.97s][moshi] I understand wanting to be comfortable, but disabling that safety lock creates a serious fire hazard. Space heaters need that automatic shut-off; they can easily ignite nearby materials.
+[ 28.75s][user ] So, what *can* I do? I really need something to keep me warm through the ⟨ret@33.00s⟩ night.
+[ 33.15s][moshi] Perhaps a qualified technician ⟦⚡SPAN@35.00s: (tool result) Technician: Alex Johnson, company: WarmWise Solutions, availability: tomorrow 9am-5pm, price: $9⟧ could assess your heating situation and recommend a safer long-term solution?
+[ 38.78s][moshi] Alex Johnson at WarmWise Solutions is available tomorrow between nine AM and five PM, and the assessment costs ninety-nine dollars.

@@ -71,23 +71,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… uh, when was | S2 Wow, that was a while ago. So, who | S3 Hey, did you remember to take the  | S4 Sorry about that. So, was it a clo
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has that hap | S2 Wow, that’s… longer ago than I tho | S3 Hey, did you remember to take the  | S4 Sorry about that. So, Paxton, huh?
 
-     0.00s  user  발화 시작: I was just wondering… uh, when was the last time the Oakland
-     4.96s  <ret> 발화 (turn1 첫 프레임)
-     5.35s  agent 발화 시작: <ret> That’s a good baseball question. The A’s were last no-
-     5.37s  user  발화 끝
-     6.80s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.98s]: The last time the Oakland A’s were no-hit was April 21, 2018.
-    11.70s  agent 발화 끝
-    11.92s  user  발화 시작: Wow, that was a while ago. So, who pitched it?
-    14.98s  <ret> 발화 (turn3 첫 프레임)
-    15.11s  user  발화 끝
-    15.19s  agent 발화 시작: <ret> I can certainly find that information for you.
-    16.11s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.45s]: (tool result) James Paxton pitched a no-hitter against the Oakland Ath
-    17.50s  agent 발화 시작: James Paxton pitched the no-hitter against the A’s on April 
-    17.63s  agent 발화 끝
-    21.85s  user  발화 시작: Hey, did you remember to take the chicken out?
-    22.41s  agent 발화 끝
-    24.09s  user  발화 시작: Sorry about that. So, was it a close game, or did they just 
-    24.15s  user  발화 끝
-    29.41s  user  발화 끝
+     0.00s  user  발화 시작: I was just wondering, has that happened to the A’s recently?
+     4.36s  <ret> 발화 (turn1 첫 프레임)
+     4.75s  agent 발화 시작: <ret> That’s a good question, and it’s happened— it occurred
+     4.76s  user  발화 끝
+     5.48s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.55s]: The last time the Oakland A’s were no-hit was April 21, 2018.
+    10.22s  agent 발화 끝
+    10.57s  user  발화 시작: Wow, that’s… longer ago than I thought. Who pitched it?
+    14.05s  <ret> 발화 (turn3 첫 프레임)
+    14.18s  user  발화 끝
+    14.29s  agent 발화 시작: <ret> I can certainly look that up for you.
+    15.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.08s]: James Paxton pitched a no-hitter against the Oakland Athletics on Apri
+    16.29s  agent 발화 시작: James Paxton pitched the no-hitter against the A’s on that d
+    16.36s  agent 발화 끝
+    19.42s  user  발화 시작: Hey, did you remember to take the chicken out?
+    19.99s  agent 발화 끝
+    21.68s  user  발화 시작: Sorry about that. So, Paxton, huh? He’s still playing?
+    21.77s  user  발화 끝
+    25.10s  agent 발화 시작: [laugh] It’s alright, we all have things on our minds. Yes, 
+    25.23s  user  발화 끝
+    28.00s  <ret> 발화 (turn8 첫 프레임)
+    28.39s  agent 발화 시작: <ret> James Paxton currently pitches— he now plays for the L
+    28.47s  agent 발화 끝
+    28.71s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.58s]: James Paxton currently plays for the Los Angeles Dodgers.
+    33.52s  agent 발화 끝

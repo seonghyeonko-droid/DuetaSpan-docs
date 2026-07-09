@@ -69,29 +69,22 @@
 # }
 
 
-     0.00s  user  발화 시작: 오션뷰 호텔에서 이월 십일부터 칠박 동안 방 세 개 예약해 줘.
-     4.52s  <ret> 발화 (turn1 첫 프레임)
-     4.67s  agent 발화 시작: <ret> 물론입니다. 잠시만 기다려 주세요.
-     4.77s  user  발화 끝
-     5.48s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.08s]: (tool result) The reservation is confirmed for three rooms at Ocean Vi
-     6.58s  agent 발화 시작: 오션뷰 호텔, 이월 십일부터 칠박, 방 세 개 예약 완료되었습니다.
-     6.75s  agent 발화 끝
-    11.30s  agent 발화 끝
-    11.49s  user  발화 시작: 혹시 취소 정책은 어떻게 돼?
-    13.47s  user  발화 끝
-    13.79s  agent 발화 시작: 아, 네, 취소 정책에 대해 말씀드리려고 했는데요—
-    15.22s  user  발화 시작: 응.
-    15.52s  user  발화 끝
-    16.46s  <ret> 발화 (turn6 첫 프레임)
-    16.54s  agent 발화 시작: <ret> 예약 취소는 이월 삼일까지 가능합니다. 이월 삼일까지 취소하시면 전액 환불됩니다.
-    16.55s  agent 발화 끝
-    17.42s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.64s]: (tool result) Cancellations are permitted before February third, two t
-    21.81s  agent 발화 끝
-    23.12s  user  발화 시작: 음, 좋네. 그럼 조식 포함으로 변경 가능해?
-    26.60s  <ret> 발화 (turn8 첫 프레임)
-    26.83s  agent 발화 시작: <ret> 잠시만요, 확인해 볼게요.
-    26.96s  user  발화 끝
-    27.10s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.98s]: (tool result) Breakfast has been added to your reservation for an addi
-    28.72s  agent 발화 시작: 조식 추가되었고, 일박당 이십달러가 추가됩니다.
-    28.82s  agent 발화 끝
-    32.42s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고에 이월 십일부터 칠박 세개 방 예약 좀 부탁해.
+     5.25s  <ret> 발화 (turn1 첫 프레임)
+     5.40s  agent 발화 시작: <ret> 네, 샌디에이고 오션뷰 호텔 예약 도와드릴게요. 오션뷰 호텔 이월 십일부터 칠박 세개 방 예약이 
+     5.55s  user  발화 끝
+     6.29s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.90s]: (tool result) The reservation is confirmed for three rooms at Ocean Vi
+    14.39s  user  발화 시작: 킹베드 룸으로 할 수 있어?
+    14.58s  agent 발화 끝
+    16.07s  agent 발화 시작: 물론입니다. 예약 변경을 확인해 볼게요—
+    16.09s  user  발화 끝
+    17.83s  user  발화 시작: 혹시 조식 포함된 패키지는 없어?
+    18.66s  agent 발화 끝
+    20.23s  user  발화 끝
+    20.58s  agent 발화 시작: 아, 네. 조식 포함 여부를 확인해 드리겠습니다. 잠시만 기다려 주세요.
+    23.08s  user  발화 시작: 응.
+    23.48s  user  발화 끝
+    24.18s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The breakfast-included package adds seventy-five dollars
+    25.04s  agent 발화 시작: <ret> 확인 결과, 오션뷰 호텔에서 조식 포함 패키지를 제공하고 있습니다. 조식 포함 패키지는 일박당 칠
+    25.20s  agent 발화 끝
+    35.19s  agent 발화 끝

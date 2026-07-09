@@ -63,81 +63,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Perfect! Can you reserve it for me | S3 Clay Tokyo… hmm. What are their pr | S4 Oh, that’s not too bad. Thanks!
+# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Oh, great! Thanks. Do they have Wi | S3 Just “Everything is progressing as | S4 I suppose. Is there a good meditat
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
      3.03s  <ret> 발화 (turn1 첫 프레임)
      3.43s  agent 발화 시작: <ret> Let me check the historical weather data for you. On D
      3.65s  user  발화 끝
-     5.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.07s]: (tool result) The weather in Tokyo on December twenty-fourth, 2023 was
-    11.96s  agent 발화 끝
-    12.39s  user  발화 시작: That sounds… chilly. Um, could you find me a nice cozy cafe 
-    17.64s  <ret> 발화 (turn3 첫 프레임)
-    18.04s  agent 발화 시작: <ret> I can certainly help with that. I found three cozy caf
-    18.27s  user  발화 끝
-    18.76s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.15s]: (tool result) Found three cozy cafes near Shibuya Station: Cafe Ron Ro
-    21.97s  user  발화 시작: Yeah.
-    22.28s  user  발화 끝
-    25.89s  user  발화 시작: Oh, Streamer Coffee Company— I've heard good things. Is it u
-    26.30s  agent 발화 끝
-    30.25s  agent 발화 시작: It’s quite popular, so it can get busy, especially on weeken
-    30.34s  user  발화 끝
-    32.81s  user  발화 시작: Yeah, yeah.
-    33.36s  user  발화 끝
-    34.09s  agent 발화 끝
-    34.30s  user  발화 시작: Right. Okay, could you see if they have any available tables
-    38.80s  <ret> 발화 (turn9 첫 프레임)
-    39.12s  agent 발화 시작: <ret> Let’s check their current availability. Streamer Coffe
-    39.30s  user  발화 끝
-    39.30s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.83s]: (tool result) Streamer Coffee Company has one table available for two 
-    45.71s  agent 발화 끝
-    45.99s  user  발화 시작: Perfect! Can you reserve it for me?
-    48.08s  <ret> 발화 (turn11 첫 프레임)
-    48.35s  user  발화 끝
-    48.40s  agent 발화 시작: <ret> Absolutely, I can take care of that. Your table at Str
-    50.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.09s]: (tool result) Reservation confirmed at Streamer Coffee Company for two
-    54.37s  agent 발화 끝
-    54.96s  user  발화 시작: That's fantastic! Thank you so much.
-    57.30s  agent 발화 시작: You’re very welcome! It’s nice to have a little something to
-    57.40s  user  발화 끝
-    61.37s  agent 발화 끝
-    61.73s  user  발화 시작: I— I mean, I’m also thinking about maybe taking a pottery cl
-    66.88s  <ret> 발화 (turn15 첫 프레임)
-    67.20s  agent 발화 시작: <ret> I can certainly look into pottery classes for you. I f
-    67.42s  user  발화 끝
-    68.32s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.24s]: (tool result) Found two pottery studios near Shibuya Station: Clay Tok
-    74.75s  agent 발화 끝
-    75.13s  user  발화 시작: Clay Tokyo… hmm. What are their prices like?
-    78.37s  <ret> 발화 (turn17 첫 프레임)
-    78.45s  agent 발화 시작: <ret> Let me check their pricing options. Clay Tokyo’s one-d
-    78.65s  user  발화 끝
-    79.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.13s]: (tool result) Clay Tokyo offers one-day classes starting at 6,000 yen 
-    85.51s  user  발화 시작: That's a bit steep… is there anything cheaper?
-    85.54s  agent 발화 끝
-    87.79s  agent 발화 시작: It depends on the class type, but generally pottery can be a
-    87.90s  user  발화 끝
-    90.56s  user  발화 시작: Yeah, totally.
-    91.66s  user  발화 끝
-    91.86s  agent 발화 끝
-    91.87s  user  발화 시작: Yeah, you're right. Okay, never mind the pottery for now. Wh
-    97.70s  <ret> 발화 (turn22 첫 프레임)
-    97.86s  agent 발화 시작: <ret> Let me check the current traffic conditions. The JR Ya
-    98.03s  user  발화 끝
-    98.74s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.32s]: (tool result) Moderate traffic on the JR Yamanote Line; estimated trav
-   103.80s  user  발화 시작: Oh, that’s not too bad. Thanks!
-   103.84s  agent 발화 끝
-   106.06s  user  발화 끝
-   106.14s  agent 발화 시작: Of course. Planning ahead can really reduce stress, especial
-   107.56s  user  발화 시작: Uh-huh.
-   108.10s  user  발화 끝
-   110.74s  user  발화 시작: [happy] True! Hey, do you think I should apply for that mark
-   110.85s  agent 발화 끝
-   114.76s  user  발화 끝
-   114.82s  agent 발화 시작: That’s a big decision! What aspects of the role really appea
-   116.69s  user  발화 시작: Yeah.
-   117.19s  user  발화 끝
-   118.98s  agent 발화 끝
-   119.06s  user  발화 시작: Well, it seems like a good fit for my skills, but the compan
-   123.73s  agent 발화 시작: It's wise to consider both the opportunity and the environme
-   123.87s  user  발화 끝
-   129.01s  agent 발화 끝
+     5.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.10s]: (tool result) The weather in Tokyo on December twenty-fourth, twenty t
+     6.30s  user  발화 시작: Yeah.
+     6.65s  user  발화 끝
+    12.38s  agent 발화 끝
+    12.71s  user  발화 시작: That sounds chilly. Uh, could you find me a nice cafe nearby
+    17.07s  <ret> 발화 (turn4 첫 프레임)
+    17.44s  agent 발화 시작: <ret> Of course, I can search for nearby cafes. There are tw
+    17.71s  user  발화 끝
+    19.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: (tool result) “Cafe Aroma” is 0.5 kilometers away with 4.6 stars from 
+    29.69s  agent 발화 끝
+    30.11s  user  발화 시작: Hmm, Aroma sounds better. Can you see if they have any table
+    34.54s  <ret> 발화 (turn6 첫 프레임)
+    34.86s  agent 발화 시작: <ret> Let’s check for availability at Cafe Aroma. Cafe Aroma
+    34.92s  user  발화 끝
+    35.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.64s]: (tool result) Cafe Aroma has three tables available now.
+    40.77s  user  발화 시작: Perfect! I— I mean, could you book a table for one person?
+    40.89s  agent 발화 끝
+    43.78s  <ret> 발화 (turn8 첫 프레임)
+    44.10s  agent 발화 시작: <ret> I can certainly reserve a table for you. I’ve booked a
+    44.23s  user  발화 끝
+    44.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.00s]: (tool result) Reservation confirmed at Cafe Aroma for one person at 2:
+    53.47s  agent 발화 끝
+    53.48s  user  발화 시작: Oh, great! Thanks. Do they have Wi-Fi?
+    56.48s  user  발화 끝
+    56.56s  agent 발화 시작: Most cafes do these days, it’s very common.
+    59.89s  agent 발화 끝
+    60.25s  user  발화 시작: Right. Okay, I need to send a quick email. Can you help me w
+    64.06s  agent 발화 시작: Absolutely, I can compose and send an email for you. Who is 
+    64.27s  user  발화 끝
+    67.99s  agent 발화 끝
+    68.32s  user  발화 시작: To my boss, Eleanor Vance. The subject is “Quick Update”.
+    72.37s  agent 발화 시작: And what would you like the body of the email to say?
+    72.44s  user  발화 끝
+    75.34s  user  발화 시작: Just “Everything is progressing as planned. Will send a full
+    75.42s  agent 발화 끝
+    79.50s  <ret> 발화 (turn16 첫 프레임)
+    79.74s  user  발화 끝
+    79.74s  agent 발화 시작: <ret> I’m ready to send that email when you are. I’ve just s
+    80.78s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.52s]: (tool result) Email sent to Eleanor Vance with subject "Quick Update" 
+    82.20s  user  발화 시작: Uh-huh.
+    82.73s  user  발화 끝
+    85.62s  agent 발화 끝
+    85.63s  user  발화 시작: Actually, yes. I’m feeling really stressed about that report
+    90.03s  agent 발화 시작: It’s understandable to feel stressed before a big report. Br
+    90.16s  user  발화 끝
+    95.10s  user  발화 시작: That’s a good idea, but… it just feels overwhelming.
+    95.12s  agent 발화 끝
+    98.61s  user  발화 끝
+    98.72s  agent 발화 시작: It’s okay to feel overwhelmed. Prioritize the most important
+   102.33s  user  발화 시작: Okay.
+   102.95s  user  발화 끝
+   104.51s  user  발화 시작: I suppose. Is there a good meditation app you’d recommend?
+   104.60s  agent 발화 끝
+   107.88s  <ret> 발화 (turn24 첫 프레임)
+   108.04s  agent 발화 시작: <ret> There are many excellent meditation apps available. “C
+   108.16s  user  발화 끝
+   109.08s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.80s]: (tool result) “Calm” has a 4.8-star rating and 1 million+ downloads. “
+   111.24s  user  발화 시작: Yeah.
+   111.55s  user  발화 끝
+   118.05s  agent 발화 끝
+   118.16s  user  발화 시작: Calm sounds popular. Can you set a reminder for me to try it
+   122.45s  <ret> 발화 (turn27 첫 프레임)
+   122.84s  agent 발화 시작: <ret> I can definitely set that reminder for you. A reminder
+   122.97s  user  발화 끝
+   123.49s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.22s]: (tool result) Reminder set for 8:00 PM today: "Try the Calm meditation
+   125.74s  user  발화 시작: Yeah.
+   126.13s  user  발화 끝
+   130.34s  agent 발화 끝
+   130.60s  user  발화 시작: Thanks, Brae. You’ve been a lifesaver.
+   132.43s  agent 발화 시작: You’re very welcome. Remember, taking small steps can make a
+   132.49s  user  발화 끝
+   137.71s  agent 발화 끝

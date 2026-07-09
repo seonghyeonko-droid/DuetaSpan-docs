@@ -58,47 +58,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 나 그거 만들어 줘. | S2 좋아, 가격 찾아줘. 최신 iPhone 15 Pro Max,  | S3 천백구십구… 음, 지금 트레이드인 혜택이 있어? | S4 오, 완벽해! 그럼 하나 예약해 줘. 내일 오후에 픽업할 수 
+# EXAMINER(FDB-v2) 단계: S1 나 지도 만들어 줘, Apple 웹사이트, 제품 중심으로 자세 | S2 학생만? 군인들은? | S3 흠, 256기가바이트 괜찮겠다. 그거 가격 좀 알아봐 줘. | S4 알았어. 256기가바이트에 AppleCare까지 같이 주문하면
 
-     0.00s  user  발화 시작: 나 그거 만들어 줘.
-     0.93s  <ret> 발화 (turn1 첫 프레임)
-     1.09s  agent 발화 시작: <ret> 네, Apple 웹사이트 지도를 만들어 드릴게요— Apple 웹사이트의 제품 섹션은 쉽게 둘러볼 
-     1.24s  user  발화 끝
-     2.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: (tool result) The map shows 12 product categories: iPhone, iPad, Mac, 
-     4.43s  user  발화 시작: 어어.
-     5.25s  user  발화 끝
-     9.02s  agent 발화 끝
-    10.60s  user  발화 시작: 그거… 많네. iPhone이랑 iPad 페이지로만 좁혀 줄 수 있어?
-    14.54s  <ret> 발화 (turn4 첫 프레임)
-    14.86s  agent 발화 시작: <ret> 네, 지도를 구체화하는 건 간단합니다— iPhone과 iPad에 대한 자세한 페이지, 모델 및 가
-    14.99s  user  발화 끝
-    15.66s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.20s]: (tool result) The map displays the iPhone page with models, pricing, a
-    18.88s  user  발화 시작: 응.
-    19.33s  user  발화 끝
-    22.18s  agent 발화 끝
-    24.16s  user  발화 시작: 좋아, 가격 찾아줘. 최신 iPhone 15 Pro Max, 256 기가바이트 가격이 얼마야?
-    30.51s  <ret> 발화 (turn7 첫 프레임)
-    30.67s  agent 발화 시작: <ret> 음, 그 특정 가격을 찾아 드릴게요— iPhone 15 Pro Max, 256 기가바이트 저장 용
-    30.84s  user  발화 끝
-    32.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.14s]: (tool result) The iPhone 15 Pro Max with 256GB storage costs $1199.00 
-    36.69s  user  발화 시작: 어.
-    37.22s  user  발화 끝
-    38.74s  agent 발화 끝
-    38.95s  user  발화 시작: 천백구십구… 음, 지금 트레이드인 혜택이 있어?
-    42.22s  agent 발화 시작: 트레이드인 가치는 자주 변경되지만, 현재 견적을 확인해 드릴 수 있습니다.
-    42.33s  user  발화 끝
-    46.29s  user  발화 시작: 근데, 그거 하기 전에, 내 주변 Apple Store에 재고가 있는지 먼저 확인해 줄래?
-    46.34s  agent 발화 끝
-    51.38s  user  발화 끝
-    51.39s  agent 발화 시작: 그건 실용적인 질문이네요—
-    52.72s  <ret> 발화 (turn13 첫 프레임)
-    52.88s  agent 발화 시작: <ret> 브로드웨이 Apple Store에는 256 기가바이트 iPhone 15 Pro Max가 당일 픽업
-    52.96s  agent 발화 끝
-    54.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (tool result) The Apple Store at 1600 Broadway, New York, NY 10019 sho
-    57.67s  user  발화 시작: 오, 완벽해! 그럼 하나 예약해 줘. 내일 오후에 픽업할 수 있게.
-    57.73s  agent 발화 끝
-    61.69s  <ret> 발화 (turn15 첫 프레임)
-    61.85s  agent 발화 시작: <ret> 네, 그 iPhone을 확보해 드릴게요— iPhone 15 Pro Max가 브로드웨이 매장에서 내
-    62.07s  user  발화 끝
-    62.65s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.65s]: (tool result) Reservation confirmed: iPhone 15 Pro Max 256GB at 1600 B
-    70.56s  agent 발화 끝
+     0.00s  user  발화 시작: 나 지도 만들어 줘, Apple 웹사이트, 제품 중심으로 자세하게.
+     4.17s  agent 발화 시작: 네, Apple 웹사이트의 제품 섹션을 강조하여 사이트맵을 생성해 드릴 수 있습니다.
+     4.30s  user  발화 끝
+     8.49s  <ret> 발화 (turn2 첫 프레임)
+     8.52s  agent 발화 끝
+     8.56s  agent 발화 시작: <ret> 사이트에 아이폰, 아이패드, 맥을 포함해서 총 스무한 개의 제품 카테고리가 있는 걸 확인했어요.
+    10.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) The tavily-map tool found 21 product categories on apple
+    10.97s  user  발화 시작: 어어.
+    11.70s  user  발화 끝
+    14.35s  agent 발화 끝
+    14.59s  user  발화 시작: 아이패드 할인하는 거 있어? 지금?
+    16.86s  agent 발화 시작: 아이패드 프로모션 있는지 알아볼게요.
+    17.09s  user  발화 끝
+    18.70s  agent 발화 끝
+    18.71s  <ret> 발화 (turn6 첫 프레임)
+    18.78s  agent 발화 시작: <ret> 학생이랑 교육자분들께 아이패드 에어 모델을 50달러 할인해 주고 있어요.
+    20.31s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.54s]: (tool result) Apple’s website lists a $50 discount on iPad Air models 
+    20.59s  user  발화 시작: 응.
+    20.90s  user  발화 끝
+    23.32s  agent 발화 끝
+    23.38s  user  발화 시작: 학생만? 군인들은?
+    24.65s  agent 발화 시작: 좋은 질문이에요. 군인분들께도 할인이 있는지 알아볼게요.
+    24.85s  user  발화 끝
+    27.45s  <ret> 발화 (turn10 첫 프레임)
+    27.61s  agent 발화 시작: <ret> ID.me를 통해 신원 확인된 군인분들께 10퍼센트 할인을 제공하고 있어요.
+    27.80s  agent 발화 끝
+    29.29s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.18s]: (tool result) Apple offers a veteran discount of 10% on many products,
+    32.80s  agent 발화 끝
+    33.04s  user  발화 시작: 오, 괜찮네. 아이패드 에어 살까 생각 중인데, 저장 용량은 뭐가 있어?
+    38.16s  agent 발화 시작: 네, 아이패드 에어는 다양한 저장 용량으로 출시되고 있습니다.
+    38.23s  user  발화 끝
+    41.39s  <ret> 발화 (turn13 첫 프레임)
+    41.63s  agent 발화 시작: <ret> 64기가바이트, 256기가바이트, 512기가바이트 중에서 선택하실 수 있습니다.
+    41.77s  agent 발화 끝
+    42.51s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.47s]: (tool result) The iPad Air is available in 64GB, 256GB, and 512GB stor
+    47.10s  agent 발화 끝
+    47.60s  user  발화 시작: 흠, 256기가바이트 괜찮겠다. 그거 가격 좀 알아봐 줘.
+    51.42s  agent 발화 시작: 알겠습니다. 256기가바이트 아이패드 에어의 현재 가격을 찾아볼게요.
+    51.44s  user  발화 끝
+    55.38s  <ret> 발화 (turn16 첫 프레임)
+    55.54s  agent 발화 시작: <ret> 256기가바이트 아이패드 에어는 현재 699달러입니다.
+    55.77s  agent 발화 끝
+    56.34s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.91s]: (tool result) The 256GB iPad Air currently costs $699 on Apple’s websi
+    58.21s  user  발화 시작: 어.
+    58.85s  user  발화 끝
+    60.44s  agent 발화 시작: 물론, 그 가격에는 세금이나 학생 또는 군인 할인이 포함되지 않아요. 그걸 고려해서 계산해 드릴까요?
+    60.45s  agent 발화 끝
+    67.01s  agent 발화 끝
+    69.28s  user  발화 시작: 아니, 괜찮아. AppleCare도 생각 중인데, 아이패드 에어는 얼마야?
+    73.44s  agent 발화 시작: 아이패드 에어용 AppleCare는 확장된 보장 서비스를 제공합니다.
+    73.57s  user  발화 끝
+    77.35s  <ret> 발화 (turn21 첫 프레임)
+    77.51s  agent 발화 시작: <ret> 아이패드 에어용 AppleCare+는 2년 커버리지에 149달러입니다.
+    77.51s  agent 발화 끝
+    79.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) AppleCare+ for iPad Air costs $149 for two years of cove
+    80.09s  user  발화 시작: 그래.
+    80.55s  user  발화 끝
+    82.04s  agent 발화 끝
+    82.67s  user  발화 시작: 알았어. 256기가바이트에 AppleCare까지 같이 주문하면, 배송 예상일은 언제야?
+    88.41s  user  발화 끝
+    88.72s  agent 발화 시작: 그 구성으로 배송 예상일을 확인해 보겠습니다.
+    91.12s  agent 발화 끝

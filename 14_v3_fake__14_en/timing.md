@@ -50,45 +50,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 Yeah, it is. Uh, what other songs  | S3 That’s amazing. So, they were both | S4 That’s really cool. Thanks for tel
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 Interesting. Was he in ABBA, then? | S3 What other songs did he write for  | S4 I’m moving to Stockholm next month
 
      0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
-     5.23s  <ret> 발화 (turn1 첫 프레임)
-     5.41s  user  발화 끝
-     5.47s  agent 발화 시작: <ret> That’s a lovely song to ask about. Björn Ulvaeus origi
-     6.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.66s]: Björn Ulvaeus wrote “My Love, My Life” for the musical *Chess*.
-    12.64s  user  발화 시작: Oh, really? I always thought it was just for Mamma Mia.
-    12.69s  agent 발화 끝
-    15.93s  agent 발화 시작: It's interesting how songs can find new life in different pr
-    15.97s  user  발화 끝
-    23.58s  user  발화 시작: Yeah, it is. Uh, what other songs did he write?
-    23.67s  agent 발화 끝
-    26.48s  agent 발화 시작: Björn Ulvaeus was quite prolific, working extensively with B
-    26.63s  user  발화 끝
-    34.68s  agent 발화 끝
-    34.88s  user  발화 시작: Did they write all of ABBA’s songs?
-    37.13s  <ret> 발화 (turn7 첫 프레임)
-    37.52s  agent 발화 시작: <ret> That's a great question.
-    37.70s  user  발화 끝
-    38.09s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.66s]: Benny Andersson and Björn Ulvaeus wrote most of ABBA’s songs together.
-    38.92s  <ret> 발화 (turn8 첫 프레임)
-    39.15s  agent 발화 시작: <ret> Benny Andersson and Björn Ulvaeus collaborated to writ
-    39.17s  agent 발화 끝
-    40.92s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.63s]: (tool result) AAPL closed at 170.34, up 0.82% today.
-    44.58s  user  발화 시작: That’s amazing. So, they were both musicians?
-    44.78s  agent 발화 끝
-    48.27s  agent 발화 시작: Yes, both Benny Andersson and Björn Ulvaeus are accomplished
-    48.42s  user  발화 끝
-    52.00s  user  발화 시작: Yeah.
-    52.63s  user  발화 끝
-    56.98s  agent 발화 끝
-    57.27s  user  발화 시작: I— I mean, did they play instruments in ABBA too?
-    60.22s  user  발화 끝
-    60.63s  agent 발화 시작: Absolutely. Benny played keyboards and Björn guitar and mand
-    62.84s  user  발화 시작: Yeah.
-    63.28s  user  발화 끝
-    66.94s  user  발화 시작: That’s really cool. Thanks for telling me all this.
-    67.06s  agent 발화 끝
-    69.83s  agent 발화 시작: You’re very welcome. It’s a pleasure to share a little about
-    69.90s  user  발화 끝
-    76.13s  agent 발화 끝
+     5.80s  <ret> 발화 (turn1 첫 프레임)
+     5.97s  user  발화 끝
+     6.04s  agent 발화 시작: <ret> That's a lovely song to ask about. Björn Ulvaeus is cr
+     7.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.64s]: Björn Ulvaeus wrote “My Love, My Life” which appears in the musical Ma
+    13.54s  user  발화 시작: Oh, I didn’t realize it was just one person. I thought it wa
+    13.59s  agent 발화 끝
+    18.02s  user  발화 끝
+    18.03s  agent 발화 시작: It’s common for musicals to have many contributors, but this
+    24.09s  user  발화 시작: Interesting. Was he in ABBA, then?
+    24.19s  agent 발화 끝
+    26.87s  <ret> 발화 (turn5 첫 프레임)
+    27.03s  agent 발화 시작: <ret> Yes, he was a very important member. Björn Ulvaeus was
+    27.19s  user  발화 끝
+    27.99s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.33s]: Björn Ulvaeus was one of the four members of the Swedish pop group ABB
+    33.37s  agent 발화 끝
+    33.65s  user  발화 시작: Oh, that makes so much sense now! The song sounds very ABBA-
+    38.89s  <ret> 발화 (turn7 첫 프레임)
+    39.12s  agent 발화 시작: <ret> It certainly carries some of that classic ABBA sound, 
+    39.16s  user  발화 끝
+    40.89s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=3.89s]: (tool result) AAPL: 170.34, +0.52, 0.31%
+    43.01s  agent 발화 끝
+    43.09s  user  발화 시작: What other songs did he write for Mamma Mia?
+    45.40s  <ret> 발화 (turn9 첫 프레임)
+    45.55s  agent 발화 시작: <ret> He contributed several songs to the musical. He co-wro
+    45.73s  user  발화 끝
+    47.24s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.92s]: Björn Ulvaeus co-wrote “Waterloo”, “Dancing Queen”, and “Take a Chance
+    49.29s  user  발화 시작: Yeah.
+    50.12s  user  발화 끝
+    54.28s  user  발화 시작: Wow, those are all huge hits! He’s incredibly talented.
+    54.31s  agent 발화 끝
+    58.98s  agent 발화 시작: He really is. His work has brought joy to so many people, in
+    59.00s  user  발화 끝
+    61.04s  user  발화 시작: Yeah.
+    61.49s  user  발화 끝
+    64.95s  agent 발화 끝
+    65.11s  user  발화 시작: I’m moving to Stockholm next month, actually! Do you have an
+    70.32s  agent 발화 시작: Stockholm is a wonderful city! I’d be happy to offer some gu
+    70.44s  user  발화 끝
+    75.64s  agent 발화 끝

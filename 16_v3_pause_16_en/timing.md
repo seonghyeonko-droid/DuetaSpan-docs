@@ -63,73 +63,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 So it was symbolic, not based on s | S3 …and Nazi Germany… that makes sens | S4 Wow. Two thousand thirteen. That’s
+# EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 Oh, nineteen eighty-four. That mak | S3 I wonder if Orwell predicted all t | S4 [laugh] That's actually kind of a 
 
      0.00s  user  발화 시작: So, I was reading this dystopian novel, and it got me thinki
-     4.28s  <ret> 발화 (turn1 첫 프레임)
-     4.60s  agent 발화 시작: <ret> That's a fascinating question, and a common one! It re
-     4.68s  user  발화 끝
-     6.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
-    10.48s  agent 발화 시작: The term originates from George Orwell’s nineteen forty-nine
-    10.67s  agent 발화 끝
-    16.60s  agent 발화 끝
-    16.91s  user  발화 시작: Oh, nineteen eighty-four! I've heard of that, of course. Was
-    23.03s  agent 발화 시작: It absolutely was. Orwell explored themes of totalitarianism
-    23.07s  user  발화 끝
-    29.29s  user  발화 시작: Yeah, yeah.
-    30.53s  user  발화 끝
-    31.42s  agent 발화 끝
-    32.47s  user  발화 시작: Right. And the “big brother” figure… was he a real person?
-    35.71s  <ret> 발화 (turn7 첫 프레임)
-    36.11s  agent 발화 시작: <ret> Not exactly a single person, but… The “Big Brother” fi
-    36.17s  user  발화 끝
-    37.47s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.04s]: <The omnipresent Party leader, Big Brother, is the face of the totalit
-    38.81s  user  발화 시작: Mm-hmm.
-    39.30s  user  발화 끝
-    42.93s  user  발화 시작: So it was symbolic, not based on someone actually in power?
-    43.25s  agent 발화 끝
-    47.38s  agent 발화 시작: Precisely. It symbolized the all-seeing, controlling state. 
-    47.51s  user  발화 끝
-    49.88s  user  발화 시작: Yeah.
-    50.43s  user  발화 끝
-    53.16s  agent 발화 끝
-    53.33s  user  발화 시작: It is. I'm trying to remember if I read somewhere that Orwel
-    58.32s  <ret> 발화 (turn13 첫 프레임)
-    58.39s  agent 발화 시작: <ret> [laugh] It's good to consider the influences! He was c
-    58.47s  user  발화 끝
-    59.76s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.44s]: <Orwell drew inspiration from the Soviet Union under Joseph Stalin and
-    64.76s  agent 발화 시작: Orwell drew inspiration from the Soviet Union under Stalin a
-    64.82s  agent 발화 끝
-    66.55s  user  발화 시작: Mm-hmm.
-    67.18s  user  발화 끝
-    69.14s  user  발화 시작: The Soviet Union…
-    69.30s  agent 발화 끝
-    70.80s  user  발화 끝
-    71.32s  user  발화 시작: …and Nazi Germany… that makes sense. Very oppressive regimes
-    75.93s  agent 발화 시작: Indeed. Both were characterized by intense propaganda and co
-    76.04s  user  발화 끝
-    81.18s  user  발화 시작: Hmm. I wonder if that kind of surveillance is possible today
-    81.20s  agent 발화 끝
-    87.30s  user  발화 끝
-    87.31s  agent 발화 시작: It's a very relevant concern, and one people debate a lot. T
-    91.83s  user  발화 시작: Mm-hmm.
-    92.47s  user  발화 끝
-    93.88s  user  발화 시작: It’s kind of scary to think about, honestly. I— I mean, are 
-    93.89s  agent 발화 끝
-    98.41s  <ret> 발화 (turn23 첫 프레임)
-    98.57s  agent 발화 시작: <ret> That's a question many people grapple with. The balanc
-    98.75s  user  발화 끝
-   100.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: <Edward Snowden revealed in 2013 that the US National Security Agency 
-   104.25s  agent 발화 시작: Edward Snowden revealed in two thousand thirteen NSA data co
-   104.36s  agent 발화 끝
-   106.32s  user  발화 시작: Yeah.
-   106.77s  user  발화 끝
-   109.78s  user  발화 시작: Wow. Two thousand thirteen. That’s not that long ago, really
-   109.85s  agent 발화 끝
-   114.63s  agent 발화 시작: No, it isn't. It highlights how quickly these technologies a
-   114.78s  user  발화 끝
-   116.93s  user  발화 시작: Right.
-   117.42s  user  발화 끝
-   121.27s  user  발화 시작: You're right. It’s good to be aware of these things. Thanks,
-   121.30s  agent 발화 끝
-   125.39s  user  발화 끝
+     4.54s  user  발화 끝
+     4.56s  agent 발화 시작: It’s wonderful you’re exploring thought-provoking literature
+     8.86s  agent 발화 끝
+     8.92s  user  발화 시작: …where did the phrase “big brother”…
+    11.13s  user  발화 끝
+    11.75s  user  발화 시작: …actually come from? It feels… familiar.
+    14.74s  <ret> 발화 (turn4 첫 프레임)
+    14.90s  agent 발화 시작: <ret> The phrase originates from George Orwell’s nineteen ei
+    15.04s  user  발화 끝
+    16.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by George
+    20.17s  agent 발화 끝
+    20.52s  user  발화 시작: Oh, nineteen eighty-four. That makes sense, I’ve heard of th
+    26.11s  agent 발화 시작: It explores themes of totalitarianism, mass surveillance, an
+    26.17s  user  발화 끝
+    28.26s  user  발화 시작: Mm-hmm.
+    28.76s  user  발화 끝
+    31.84s  user  발화 시작: That sounds… unsettling.
+    31.85s  agent 발화 끝
+    33.67s  agent 발화 시작: It certainly can be, though many find it a powerful cautiona
+    33.78s  user  발화 끝
+    35.45s  user  발화 시작: Mhm.
+    36.09s  user  발화 끝
+    37.48s  agent 발화 시작: Braera finds it a valuable exploration of how power can be m
+    37.56s  agent 발화 끝
+    39.49s  user  발화 시작: Yeah.
+    39.99s  user  발화 끝
+    42.20s  agent 발화 끝
+    42.45s  user  발화 시작: I wonder if Orwell predicted all this technology we have now
+    46.70s  user  발화 끝
+    46.78s  agent 발화 시작: He explored the potential for technology to enable control, 
+    48.31s  user  발화 시작: Mm-hmm.
+    48.94s  user  발화 끝
+    50.31s  user  발화 시작: Was he writing about a specific time or place, or was it mor
+    50.62s  agent 발화 끝
+    55.42s  <ret> 발화 (turn17 첫 프레임)
+    55.50s  agent 발화 시작: <ret> The novel is set in Oceania, a fictional totalitarian 
+    55.59s  user  발화 끝
+    57.10s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.04s]: <The novel depicts a fictional totalitarian state called Oceania, rule
+    60.54s  agent 발화 끝
+    60.63s  user  발화 시작: Oceania… so it wasn’t based on a real country?
+    64.38s  user  발화 끝
+    64.38s  agent 발화 시작: It was inspired by the Soviet Union and Nazi Germany, but it
+    67.77s  user  발화 시작: Mm-hmm.
+    68.27s  user  발화 끝
+    69.35s  user  발화 시작: [laugh] That's actually kind of a relief.
+    69.38s  agent 발화 끝
+    72.38s  agent 발화 시작: [happy] It allows Orwell to focus on the core principles of 
+    72.59s  user  발화 끝
+    74.47s  user  발화 시작: Yeah.
+    74.92s  user  발화 끝
+    77.93s  user  발화 시작: I think I need to read that book now.
+    77.98s  agent 발화 끝
+    80.00s  agent 발화 시작: A worthwhile endeavor, I believe. It’s a powerful story that
+    80.19s  user  발화 끝
+    83.83s  agent 발화 끝

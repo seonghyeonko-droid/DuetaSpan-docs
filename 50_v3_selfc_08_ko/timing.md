@@ -55,91 +55,87 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 혹시 그 버스에 와이파이가 되는지 알 수 있을까? | S3 그럼 창가 쪽 세 자리를 예약해 줘. | S4 혹시 덴버에 도착해서 바로 호텔까지 가는 방법도 알려줄 수 있
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 근데… 혹시 그 버스에 와이파이가 있어? | S3 음… 괜찮은 베이커리 있으면 추천해 줄래? | S4 알았어. 고마워.
 
      0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘.
-     3.71s  <ret> 발화 (turn1 첫 프레임)
-     4.03s  agent 발화 시작: <ret> 네, 시카고에서 덴버까지 가는 버스를 찾아볼게요. 오월 십일에 시카고에서 덴버로 가는 버스는 세 
-     4.07s  user  발화 끝
-     5.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.35s]: (tool result) There are three buses departing Chicago for Denver on Ma
-    14.14s  user  발화 시작: 와.
-    14.60s  user  발화 끝
-    19.66s  agent 발화 끝
-    20.81s  user  발화 시작: 아, 근데 혹시 오월 구일로 날짜를 바꿔서 다시 찾아줄 수 있어?
-    24.95s  <ret> 발화 (turn4 첫 프레임)
-    25.26s  agent 발화 시작: <ret> 물론입니다. 날짜를 오월 구일로 변경해서 다시 찾아볼게요. 오월 구일에는 두 대의 버스가 있어요.
-    25.49s  user  발화 끝
-    26.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.05s]: (tool result) There are two buses departing Chicago for Denver on May 
-    37.41s  agent 발화 끝
-    37.59s  user  발화 시작: 네시 출발 버스, 그게 제일 저렴한 거 같네.
-    40.82s  user  발화 끝
-    40.90s  agent 발화 시작: 네, 맞아요. 오후 네시 출발 버스가 백구십이달러로 가장 저렴합니다.
-    43.65s  user  발화 시작: 대박.
-    44.13s  user  발화 끝
-    45.44s  agent 발화 끝
-    45.61s  user  발화 시작: 그 버스로 예약해 줄 수 있어?
-    47.16s  <ret> 발화 (turn9 첫 프레임)
-    47.55s  agent 발화 시작: <ret> 그럼요, 예약 도와드릴게요. 네, 예약이 완료되었어요. 오월 구일 오후 네시 시카고에서 덴버 가는
-    47.59s  user  발화 끝
-    48.04s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.40s]: (tool result) Your reservation for three passengers on the 4:00 PM bus
-    59.65s  agent 발화 끝
-    59.83s  user  발화 시작: 혹시 그 버스에 와이파이가 되는지 알 수 있을까?
-    62.87s  <ret> 발화 (turn11 첫 프레임)
-    63.06s  user  발화 끝
-    63.11s  agent 발화 시작: <ret> 버스에 와이파이가 있는지 확인해 볼게요. 네, 그 버스에는 와이파이가 제공됩니다.
-    63.99s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.78s]: (tool result) Wi-Fi is available on the 4:00 PM bus from Chicago to De
-    68.67s  agent 발화 끝
-    69.59s  user  발화 시작: 아, 다행이다. 그럼 좌석 지정도 가능한가?
-    72.17s  user  발화 끝
-    72.60s  agent 발화 시작: 네, 좌석 지정도 가능합니다.
-    74.67s  user  발화 시작: 혹시 그 버스에 콘센트도 있어?
-    74.72s  agent 발화 끝
-    76.75s  <ret> 발화 (turn15 첫 프레임)
-    76.93s  user  발화 끝
-    76.99s  agent 발화 시작: <ret> 아, 네, 콘센트가 있는지— 네, 콘센트도 있습니다. 충전 걱정 없이 편하게 가실 수 있겠네요.
-    77.25s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.71s]: (tool result) Power outlets are available on the 4:00 PM bus from Chic
-    81.17s  user  발화 시작: 아.
-    81.81s  user  발화 끝
-    82.97s  agent 발화 끝
-    83.20s  user  발화 시작: 그럼 창가 쪽 세 자리를 예약해 줘.
-    85.51s  <ret> 발화 (turn18 첫 프레임)
-    85.58s  agent 발화 시작: <ret> 창가 쪽 세 자리로 좌석을 변경해 드릴게요. 네, 좌석이 변경되었어요. 일A, 일B, 일C 세 자
-    85.65s  user  발화 끝
-    86.63s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.68s]: (tool result) Your seats have been changed to window seats; seats 1A, 
-    95.04s  agent 발화 끝
-    96.91s  user  발화 시작: 좋아, 완벽해. 혹시 버스 출발 전에 알림을 받을 수 있을까?
-   101.47s  agent 발화 시작: 물론입니다. 출발 전에 알림을 설정해 드릴게요.
-   101.59s  user  발화 끝
-   103.32s  user  발화 시작: 어어.
-   104.14s  user  발화 끝
-   104.43s  user  발화 시작: 알림은 출발 한 시간 전에 해줘.
-   104.70s  agent 발화 끝
-   106.50s  user  발화 끝
-   106.54s  <ret> 발화 (turn23 첫 프레임)
-   106.69s  agent 발화 시작: <ret> 한 시간 전에 알림을 설정해 드릴게요. 네, 오월 구일 오후 네시 출발 한 시간 전에 알림이 설정
-   107.66s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.54s]: (tool result) A reminder has been set for one hour before the 4:00 PM 
-   109.94s  user  발화 시작: 진짜?
-   110.71s  user  발화 끝
-   113.88s  agent 발화 끝
-   113.95s  user  발화 시작: 고마워, 덕분에 여행 준비가 훨씬 편해졌어.
-   117.10s  agent 발화 시작: 천만에요. 여행 준비에 조금이나마 도움이 되었다니 기쁩니다.
-   117.18s  user  발화 끝
-   121.15s  user  발화 시작: 혹시 덴버에 도착해서 바로 호텔까지 가는 방법도 알려줄 수 있을까?
-   121.36s  agent 발화 끝
-   125.36s  user  발화 끝
-   125.41s  agent 발화 시작: 네, 덴버 도착 후 호텔까지 가는 방법을 찾아볼게요. 호텔 이름을 알려주시겠어요?
-   128.15s  user  발화 시작: 음.
-   128.55s  user  발화 끝
-   131.28s  agent 발화 끝
-   131.62s  user  발화 시작: 호텔 이름은 ‘그랜드 덴버 호텔’이야.
-   133.62s  <ret> 발화 (turn31 첫 프레임)
-   134.01s  agent 발화 시작: <ret> ‘그랜드 덴버 호텔’까지 가는 방법을 찾아볼게요. 덴버 버스 정류장에서 그랜드 덴버 호텔까지 택시
-   134.11s  user  발화 끝
-   134.82s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.24s]: (tool result) A taxi from the Denver Bus Station to the Grand Denver H
-   138.30s  user  발화 시작: 응.
-   138.66s  user  발화 끝
-   144.80s  user  발화 시작: 오, 택시비가 생각보다 저렴하네.
-   144.81s  agent 발화 끝
-   147.10s  user  발화 끝
-   147.25s  agent 발화 시작: 네, 예상보다 저렴해서 다행이네요. 즐거운 여행 되세요.
-   150.85s  agent 발화 끝
+     3.90s  <ret> 발화 (turn1 첫 프레임)
+     4.22s  agent 발화 시작: <ret> 네, 확인해 보겠습니다. 오월 십일에 시카고에서 덴버로 가는 버스는 세 대가 있고, 가격은 백이십
+     4.30s  user  발화 끝
+     4.62s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.63s]: (tool result) There are three buses departing Chicago for Denver on Ma
+    12.93s  agent 발화 끝
+    13.19s  user  발화 시작: 제일 싼 걸로 예약해 줘.
+    14.57s  <ret> 발화 (turn3 첫 프레임)
+    14.85s  user  발화 끝
+    14.97s  agent 발화 시작: <ret> 네, 예약 진행하겠습니다. 시카고에서 덴버로 가는 오월 십일 버스 백이십삼번, 세 명 예약이 완료
+    15.70s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.92s]: (tool result) Your reservation for bus 123 from Chicago to Denver on M
+    25.86s  agent 발화 끝
+    26.23s  user  발화 시작: 혹시 환불 규정이 어떻게 돼?
+    27.88s  agent 발화 시작: 예약 취소 및 환불 규정은 버스 회사마다 다릅니다. 확인 번호로 해당 버스 회사에 문의하시면 정확한 정보를 
+    27.98s  user  발화 끝
+    33.96s  user  발화 시작: 응.
+    34.45s  user  발화 끝
+    37.15s  user  발화 시작: 근데… 혹시 그 버스에 와이파이가 있어?
+    37.38s  agent 발화 끝
+    40.58s  <ret> 발화 (turn8 첫 프레임)
+    40.97s  agent 발화 시작: <ret> 잠시만 확인해 볼게요. 버스 백이십삼번에는 무료 와이파이, 좌석마다 콘센트, 화장실이 있습니다.
+    40.98s  user  발화 끝
+    41.08s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.83s]: (tool result) Bus 123 offers free Wi-Fi, power outlets at each seat, a
+    43.65s  user  발화 시작: 와.
+    44.05s  user  발화 끝
+    47.54s  agent 발화 시작: 편안한 여행을 위해 필요한 모든 것이 준비되어 있겠네요. 혹시 다른 궁금한 점은 없으신가요?
+    47.68s  agent 발화 끝
+    54.31s  agent 발화 끝
+    54.54s  user  발화 시작: 근데 혹시 그 버스가 시카고 어느 터미널에서 출발하는지 알 수 있을까?
+    58.52s  <ret> 발화 (turn12 첫 프레임)
+    58.92s  agent 발화 시작: <ret> 네, 시카고 출발 터미널 정보 알려드릴게요.
+    59.02s  user  발화 끝
+    60.20s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.38s]: (tool result) Bus 123 departs from Chicago Union Station, Gate 7, at 8
+    62.17s  agent 발화 시작: 버스 백이십삼번은 오월 십일 오전 여덟시에 시카고 유니언 스테이션 칠번 게이트에서 출발합니다.
+    62.30s  agent 발화 끝
+    68.94s  agent 발화 끝
+    69.57s  user  발화 시작: 유니언 스테이션… 거기는 처음 가보는데, 혹시 근처에 아침 식사할 만한 곳 있어?
+    75.54s  user  발화 끝
+    75.91s  agent 발화 시작: 유니언 스테이션 근처에는 다양한 아침 식사 장소가 있습니다. 간단한 베이커리부터 브런치 카페까지, 취향에 맞
+    85.60s  user  발화 시작: 음… 괜찮은 베이커리 있으면 추천해 줄래?
+    85.65s  agent 발화 끝
+    88.33s  <ret> 발화 (turn17 첫 프레임)
+    88.56s  agent 발화 시작: <ret> 잠시 검색해 보겠습니다. 시카고 유니언 스테이션에서 영 점 삼마일 거리에 있는 와일드베리 팬케이크
+    88.65s  user  발화 끝
+    88.97s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.59s]: (tool result) Wildberry Pancakes & Cafe is a bakery 0.3 miles from Chi
+    96.47s  user  발화 시작: 그치.
+    96.97s  user  발화 끝
+    99.18s  agent 발화 끝
+    99.43s  user  발화 시작: 와일드베리 팬케이크 앤 카페… 거긴 괜찮겠다.
+   103.23s  agent 발화 시작: 훌륭한 선택입니다. 팬케이크가 아주 맛있다고 하네요.
+   103.27s  user  발화 끝
+   105.16s  user  발화 시작: 어어.
+   105.79s  user  발화 끝
+   106.51s  user  발화 시작: 혹시 거기까지 가는 길을 알려줄 수 있어?
+   106.60s  agent 발화 끝
+   109.10s  user  발화 끝
+   109.19s  <ret> 발화 (turn23 첫 프레임)
+   109.26s  agent 발화 시작: <ret> 물론입니다. 유니언 스테이션에서 도보로 약 육분 거리입니다.
+   110.31s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.35s]: (tool result) Walk north on Canal Street toward Adams Street for 0.2 m
+   113.36s  agent 발화 시작: 캐널 스트리트에서 북쪽으로 아담스 스트리트까지 영 점 이마일을 걸은 다음 잭슨 블러바드에서 좌회전하세요. 와
+   113.61s  agent 발화 끝
+   118.27s  user  발화 시작: 진짜?
+   118.95s  user  발화 끝
+   124.10s  user  발화 시작: 알았어. 고마워.
+   124.11s  agent 발화 끝
+   125.95s  user  발화 끝
+   126.15s  agent 발화 시작: 천만에요. 즐거운 여행 되세요. 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
+   131.99s  user  발화 시작: 그런데 혹시 오월 십일이 아니라 오월 십칠일로 버스 예약을 변경할 수 있을까?
+   132.03s  agent 발화 끝
+   136.74s  <ret> 발화 (turn29 첫 프레임)
+   136.90s  agent 발화 시작: <ret> 네, 날짜 변경 가능합니다. 잠시만 기다려 주세요.
+   136.99s  user  발화 끝
+   137.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.23s]: (tool result) Your bus reservation has been updated to May seventeenth
+   140.03s  agent 발화 시작: 예약 날짜가 오월 십칠일로 변경되었고, 가격은 백이십오달러 그대로입니다. 새로운 확인 번호는 XYZ-칠백팔십
+   140.13s  agent 발화 끝
+   144.34s  user  발화 시작: 응.
+   144.74s  user  발화 끝
+   150.00s  user  발화 시작: 아, 다행이다. 확인해줘서 고마워.
+   150.14s  agent 발화 끝
+   152.26s  user  발화 끝
+   152.63s  agent 발화 시작: 천만에요. 언제나 편안하게 여행 계획을 세우실 수 있도록 돕겠습니다.
+   157.31s  agent 발화 끝

@@ -56,97 +56,70 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Show me buses from Chicago to Denver for three passengers on May tenth
-      That’s a bit pricey. Are there any leaving on May ninth instead?
-      Hmm, the $190 one sounds good. What time does that one leave?
-      That’s pretty late arriving. Uh, I— I mean, what about a bus leaving e
-      …could you check for buses leaving before noon?
-      Two-fifty isn't bad. Can you book that one for me?
-  S2  Great. Can you send me the details to my email?
-      It’s jane.doe@email.com.
-      Perfect. Now, about the trip itself…is Denver much warmer than Chicago
-      What’s the current temperature in Denver?
-      Seventy-five, that's nice. What about the humidity?
-  S3  That sounds pretty comfortable. Any chance of rain?
-      Wonderful. Do they have good hiking trails near Denver?
-      Can you recommend a moderate trail, maybe five or six miles long?
-      Red Rocks, I’ve heard of that. Is it crowded on weekdays?
-      Hmm. Is there a less crowded option?
-      Lookout Mountain sounds perfect. How do I get there from downtown Denv
-  S4  Fifteen minutes, great! Is there parking at the trailhead?
-      Is it a paid parking lot?
-      That’s good to know. Do they have restrooms there?
-      Wonderful. I think I’m all set then.
-      You’ve been very helpful, thank you.
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.05s⟩ May tenth.
-[  4.44s][moshi] Certainly, let’s find ⟦⚡SPAN@6.05s: (tool result) There are four buses from Chicago to Denver on May tenth, ranging from $220 to $385.⟧ some options for your trip. Four buses are available, with prices between two hundred and twenty and three hundred eighty-five dollars.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.89s⟩ May tenth.
+[  4.28s][moshi] Certainly, let’s ⟦⚡SPAN@5.89s: (tool result) There are four buses departing Chicago on May tenth, ranging from $220 to $380.⟧ find some options for you. Four buses are available, with prices between two hundred twenty and three hundred eighty dollars.
       CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[  8.86s][user ] «backchannel» Yeah.
-[ 15.24s][user ] That’s a bit pricey. Are there any leaving on May ninth instead?
-[ 19.48s][moshi] ⟨ret@19.24s⟩ Let’s check ⟦⚡SPAN@20.84s: (tool result) There are three buses from Chicago to Denver on May ninth, priced from $190 to $290.⟧ for buses departing on May ninth. There are three buses on May ninth, costing between one hundred ninety and two hundred ninety dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May ninth", "passengers": "three"}}
-[ 30.97s][user ] Hmm, the $190 one sounds good. What time does that one ⟨ret@36.49s⟩ leave?
-[ 36.65s][moshi] I can ⟦⚡SPAN@38.09s: (tool result) The $190 bus leaves Chicago at 8:15 AM and arrives in Denver at 6:00 PM.⟧ certainly tell you the departure time. That bus departs Chicago at eight fifteen AM, arriving in Denver at six PM.
-      CALL: {"function": "Buses_3_GetBusDetails", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May ninth", "price": "190"}}
-[ 47.73s][user ] That’s pretty late arriving. Uh, I— I mean, what about a bus leaving earlier?
-[ 52.91s][moshi] «interrupted» Perhaps an earlier departure would be more suitable—
-[ 55.61s][user ] «interrupts_prev» …could you check for buses leaving before noon?
-[ 58.30s][moshi] ⟨ret@58.23s⟩ Certainly. Let’s look ⟦⚡SPAN@60.23s: (tool result) There is one bus leaving Chicago for Denver on May ninth before noon, priced at $250.⟧ for departures before twelve PM. One bus leaves before noon, costing two hundred fifty dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May ninth", "passengers": "three", "departure_time": "before noon"}}
-[ 64.24s][user ] «backchannel» Yeah.
-[ 67.85s][user ] Two-fifty isn't bad. Can you book that one ⟨ret@70.07s⟩ for me?
-[ 70.47s][moshi] I can certainly ⟦⚡SPAN@71.75s: (tool result) Your bus from Chicago to Denver on May ninth is booked; confirmation number is BX7492.⟧ book that bus for you.
-      CALL: {"function": "Buses_3_BookBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May ninth", "price": "250", "passengers": "three"}}
-[ 73.04s][moshi] Your bus is booked! Your confirmation number is BX7492.
-[ 80.17s][user ] Great. Can you send me the details to my email?
-[ 83.37s][moshi] I can forward those details to your email address. What is it?
-[ 90.39s][user ] It’s jane.doe@email.com. ⟨ret@92.36s⟩
-[ 92.67s][moshi] ⟦⚡SPAN@92.86s: (tool result) Email sent to jane.doe@email.com with bus booking confirmation BX7492.⟧ Certainly.
-      CALL: {"function": "Email_3_SendEmail", "arguments": {"recipient": "jane.doe@email.com", "subject": "Bus Booking Confirmation", "body": "Your bus from Chicago to Denver on May ninth is confirmed. Confirmation number: BX7492."}}
-[ 93.48s][moshi] I’ve sent the confirmation to jane.doe@email.com.
-[ 98.75s][user ] Perfect. Now, about the trip itself…is Denver much warmer than Chicago right now?
-[104.15s][moshi] Denver generally enjoys warmer temperatures than Chicago at this time of year.
-[107.64s][user ] «backchannel» Mhm.
-[109.07s][user ] What’s the current temperature in ⟨ret@110.85s⟩ Denver?
-[111.01s][moshi] Let me check the ⟦⚡SPAN@112.85s: (tool result) The current temperature in Denver is 75 degrees Fahrenheit.⟧ current temperature there for you. It’s currently seventy-five degrees Fahrenheit in Denver.
-      CALL: {"function": "Weather_3_GetTemperature", "arguments": {"city": "Denver"}}
-[117.44s][user ] Seventy-five, that's nice. What about the ⟨ret@120.28s⟩ humidity?
-[120.44s][moshi] I can certainly ⟦⚡SPAN@122.28s: (tool result) The current humidity in Denver is 45 percent.⟧ provide the humidity level for you. The humidity in Denver is currently forty-five percent.
-      CALL: {"function": "Weather_3_GetHumidity", "arguments": {"city": "Denver"}}
-[125.25s][user ] «backchannel» Right.
-[128.71s][user ] That sounds pretty comfortable. Any chance of ⟨ret@131.58s⟩ rain?
-[131.89s][moshi] ⟦⚡SPAN@132.08s: (tool result) The forecast for Denver is sunny with no chance of rain today.⟧ I can check the forecast for any precipitation. Denver is forecast to be sunny today, with no rain.
-      CALL: {"function": "Weather_3_GetForecast", "arguments": {"city": "Denver"}}
-[135.39s][user ] «backchannel» Yeah.
-[140.00s][user ] Wonderful. Do they have good hiking trails near Denver?
-[144.06s][moshi] Denver is a wonderful base for exploring some fantastic hiking trails.
-[146.24s][user ] «backchannel» Yeah, totally.
-[149.97s][user ] Can you recommend a moderate trail, maybe five or six miles long?
-[154.11s][moshi] ⟨ret@153.88s⟩ I ⟦⚡SPAN@155.00s: (tool result) Red Rocks Trading Post Trail is 6.1 miles, moderate difficulty, near Denver.⟧ can suggest a trail fitting those criteria. Red Rocks Trading Post Trail is six point one miles long and moderately difficult.
-      CALL: {"function": "Trails_3_FindTrail", "arguments": {"city": "Denver", "difficulty": "moderate", "length": "5-6 miles"}}
-[163.17s][user ] Red Rocks, I’ve heard of that. Is it crowded on weekdays?
-[167.60s][moshi] Red Rocks can be quite popular, even on weekdays.
-[170.13s][user ] «backchannel» Yeah.
-[171.21s][user ] Hmm. Is there a less crowded ⟨ret@173.75s⟩ option?
-[173.99s][moshi] Let's see if ⟦⚡SPAN@175.75s: (tool result) Lookout Mountain Trail is 5.8 miles, moderate, and generally less crowded.⟧ we can find a quieter trail. Lookout Mountain Trail is five point eight miles, moderate, and usually less crowded.
-      CALL: {"function": "Trails_3_FindTrail", "arguments": {"city": "Denver", "difficulty": "moderate", "length": "5-6 miles", "crowd_level": "low"}}
-[178.90s][user ] «backchannel» Yeah.
-[183.71s][user ] Lookout Mountain sounds perfect. How do I get there from downtown Denver?
-[188.22s][moshi] ⟨ret@188.14s⟩ ⟦⚡SPAN@188.64s: (tool result) Drive 15 minutes west on I-70 to reach Lookout Mountain Trail.⟧ I can provide directions from downtown. Drive fifteen minutes west on I-70 to reach the trail.
-      CALL: {"function": "Navigation_3_GetDirections", "arguments": {"origin": "Downtown Denver", "destination": "Lookout Mountain Trail"}}
-[196.07s][user ] Fifteen minutes, great! Is there parking at the trailhead?
-[199.44s][moshi] Yes, there is parking available at the trailhead.
-[204.18s][user ] Is it a paid parking ⟨ret@205.66s⟩ lot?
-[205.90s][moshi] Let me ⟦⚡SPAN@207.25s: (tool result) Parking at Lookout Mountain Trail is free.⟧ quickly check the parking details. Parking at Lookout Mountain Trail is free.
-      CALL: {"function": "Trails_3_GetParkingInfo", "arguments": {"trail": "Lookout Mountain Trail"}}
-[212.65s][user ] That’s good to know. Do they have restrooms there?
-[216.21s][moshi] Yes, restrooms are available at the trailhead.
-[217.56s][user ] «backchannel» Yeah, totally.
-[219.37s][user ] Wonderful. I think I’m all set then.
-[221.91s][moshi] That’s wonderful to hear. I’m glad I could help with your planning.
-[223.33s][user ] «backchannel» Okay.
-[227.69s][user ] You’ve been very helpful, thank you.
-[229.72s][moshi] You’re very welcome. It’s a pleasure to assist you in preparing for a refreshing journey. Remember to stay hydrated and enjoy the views.
+[  8.63s][user ] «backchannel» Yeah.
+[ 14.93s][user ] Can you filter those to show only the ones with Wi-Fi?
+[ 18.81s][moshi] ⟨ret@18.57s⟩ Of course, ⟦⚡SPAN@20.17s: (tool result) Two buses departing Chicago on May tenth offer Wi-Fi, costing $250 and $310.⟧ I can refine that search for you. Two buses have Wi-Fi, priced at two hundred fifty and three hundred ten dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three", "amenities": "Wi-Fi"}}
+[ 28.99s][user ] I— I mean, what about the departure times for ⟨ret@31.47s⟩ those?
+[ 31.63s][moshi] Ah, yes, ⟦⚡SPAN@32.75s: (tool result) The Wi-Fi buses depart at 8:00 AM and 2:30 PM.⟧ let's look at the departure times. The Wi-Fi buses leave at eight AM and two thirty PM.
+      CALL: {"function": "Buses_3_GetDepartureTimes", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "amenities": "Wi-Fi"}}
+[ 39.30s][user ] Book me a ticket on the 8:00 AM ⟨ret@41.61s⟩ bus.
+[ 42.01s][moshi] ⟦⚡SPAN@42.11s: (tool result) Your booking is confirmed: Confirmation number is BX7492, total cost $750.⟧ Very well, I will book that for you now. Your booking is confirmed, with confirmation number BX7492, totaling seven hundred fifty dollars.
+      CALL: {"function": "Buses_3_BookTicket", "arguments": {"bus_id": "8:00 AM", "origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 49.18s][user ] «backchannel» Really?
+[ 55.81s][user ] That sounds good. What’s the refund policy?
+[ 59.18s][moshi] Bus tickets often have varying refund policies, depending on the carrier.
+[ 64.80s][user ] Is there a cheaper bus on May eleventh?
+[ 67.24s][moshi] I can certainly check for—
+[ 69.14s][moshi] ⟨ret@68.91s⟩ There is one ⟦⚡SPAN@70.91s: (tool result) One bus departs Chicago on May eleventh for $200.⟧ bus available on May eleventh, costing two hundred dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
+[ 74.99s][user ] Can you send me a reminder the ⟨ret@76.97s⟩ day before?
+[ 77.37s][moshi] Absolutely, ⟦⚡SPAN@77.93s: (tool result) Reminder set for May ninth at 6:00 PM: Bus to Denver tomorrow!⟧ I can set a reminder for you. A reminder is set for May ninth at six PM, about your Denver bus.
+      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"date": "May ninth", "time": "6:00 PM", "message": "Bus to Denver tomorrow!"}}
+[ 83.26s][user ] «backchannel» Mhm.
+[ 86.77s][user ] What’s the weather like in Denver on May ⟨ret@89.05s⟩ tenth?
+[ 89.29s][moshi] Let ⟦⚡SPAN@90.09s: (tool result) Denver on May tenth will be sunny, with a high of 75 degrees Fahrenheit.⟧ me check the forecast for you. Denver will be sunny on May tenth, with a high of seventy-five degrees.
+      CALL: {"function": "Weather_1_GetForecast", "arguments": {"city": "Denver", "date": "May tenth"}}
+[ 97.84s][user ] Is there anything interesting to do there?
+[100.04s][moshi] Denver has a vibrant arts scene and many outdoor activities.
+[102.87s][user ] «backchannel» Right.
+[104.66s][user ] What about ⟨ret@106.02s⟩ museums?
+[106.18s][moshi] Denver has ⟦⚡SPAN@107.54s: (tool result) The Denver Art Museum, Denver Museum of Nature & Science, and Molly Brown House Museum are popul⟧ several excellent museums. Popular museums include the Denver Art Museum and the Museum of Nature & Science.
+      CALL: {"function": "Places_1_Search", "arguments": {"city": "Denver", "category": "museum"}}
+[110.63s][user ] «backchannel» Yeah.
+[115.94s][user ] Tell me more about the Denver Art Museum.
+[118.42s][moshi] ⟨ret@118.35s⟩ ⟦⚡SPAN@118.85s: (tool result) Denver Art Museum is at 100 W 14th Ave Pkwy, open 10 AM–5 PM, admission $18.⟧ Certainly, let's explore that museum. It's at one hundred West Fourteenth Avenue Parkway, open ten to five, eighteen dollars.
+      CALL: {"function": "Places_1_GetDetails", "arguments": {"name": "Denver Art Museum", "city": "Denver"}}
+[122.04s][user ] «backchannel» Yeah, totally.
+[127.08s][user ] What’s the best way to get there from the bus ⟨ret@129.51s⟩ station?
+[129.83s][moshi] Let me find the ⟦⚡SPAN@131.51s: (tool result) Take the 16L bus south for 20 minutes, then walk 5 minutes west.⟧ best route for you. Take the sixteen L bus south for twenty minutes, then walk five minutes west.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"origin": "Denver Bus Station", "destination": "Denver Art Museum"}}
+[138.13s][user ] Sounds good. Could you book me a taxi?
+[141.11s][moshi] ⟨ret@140.96s⟩ I can certainly arrange ⟦⚡SPAN@142.96s: (tool result) Taxi booked: ETA 8 minutes, estimated fare $15.⟧ a taxi for you.
+      CALL: {"function": "Taxi_1_BookTaxi", "arguments": {"pickup": "Denver Bus Station", "destination": "Denver Art Museum"}}
+[144.29s][moshi] A taxi is booked, with an eight-minute ETA and a fifteen-dollar fare.
+[147.75s][user ] «backchannel» Yeah.
+[149.82s][user ] Perfect. What time does the museum close?
+[153.39s][moshi] ⟨ret@153.31s⟩ ⟦⚡SPAN@153.81s: (tool result) Denver Art Museum is at 100 W 14th Ave Pkwy, open 10 AM–5 PM, admission $18.⟧ I recall the museum’s closing time. The Denver Art Museum closes at five PM.
+[156.93s][user ] «backchannel» Yeah.
+[159.98s][user ] Is there a cafe ⟨ret@161.81s⟩ nearby?
+[161.89s][moshi] Let me ⟦⚡SPAN@163.25s: (tool result) Pioneer Cafe and Sam's No. 3 Diner are nearby, within a 5-minute walk.⟧ find a cafe close to the museum. Pioneer Cafe and Sam's No. 3 Diner are both close by, a five-minute walk away.
+      CALL: {"function": "Places_1_Search", "arguments": {"latitude": "39.7420", "longitude": "-104.9915", "category": "cafe"}}
+[171.65s][user ] Book me a table at Pioneer Cafe for one person at 1 ⟨ret@175.54s⟩ PM.
+[175.86s][moshi] I can book a ⟦⚡SPAN@177.46s: (tool result) Table booked at Pioneer Cafe for May tenth at 1:00 PM, party of one.⟧ table for you at Pioneer Cafe. Your table for one is booked at Pioneer Cafe for one PM on May tenth.
+      CALL: {"function": "Restaurant_1_BookTable", "arguments": {"restaurant": "Pioneer Cafe", "date": "May tenth", "time": "1:00 PM", "party_size": "one"}}
+[184.28s][user ] Great. Can you add a note to the booking that I have a slight allergy ⟨ret@188.46s⟩ to nuts?
+[188.86s][moshi] I ⟦⚡SPAN@189.42s: (tool result) Allergy note "nuts" added to booking P4567 at Pioneer Cafe.⟧ can certainly add that allergy note. A note about your nut allergy has been added to the booking.
+      CALL: {"function": "Restaurant_1_UpdateBooking", "arguments": {"booking_id": "P4567", "allergy": "nuts"}}
+[196.69s][user ] Thanks. Could you remind me again about the bus departure time?
+[200.40s][moshi] ⟨ret@200.33s⟩ Certainly, ⟦⚡SPAN@201.37s: (tool result) There are four buses departing Chicago on May tenth, ranging from $220 to $380.⟧ let me refresh your memory. The Wi-Fi bus you booked departs at eight AM.
+[203.46s][user ] «backchannel» Yeah, totally.
+[207.71s][user ] Actually, I’d prefer the 2:30 PM bus now. Can you change ⟨ret@211.34s⟩ that?
+[211.74s][moshi] I can ⟦⚡SPAN@212.94s: (tool result) Booking BX7492 updated to the 2:30 PM bus, new total cost $780.⟧ certainly adjust your booking to the later bus. Your booking is now for the two thirty PM bus, with a new total of seven hundred eighty dollars.
+      CALL: {"function": "Buses_3_ChangeBooking", "arguments": {"booking_id": "BX7492", "new_bus_id": "2:30 PM"}}
+[215.07s][user ] «backchannel» Okay.
+[222.96s][user ] Perfect, that's everything. Thanks for your help!
+[226.05s][moshi] You’re

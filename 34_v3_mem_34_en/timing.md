@@ -60,61 +60,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yes, I am. I want to go to that ne | S2 I think I’ll take the metro then.  | S3 Yes, please. And are they good wit | S4 That’s a relief! I’m also planning
+# EXAMINER(FDB-v2) 단계: S1 Yes, I need to get to that new flo | S2 The 69 sounds better. | S3 White, definitely. And I remember  | S4 Do you think they deliver to my ad
 
-     0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
-     7.44s  user  발화 시작: Yes, I am. I want to go to that new bakery, "Le Petit Délice
-     7.55s  agent 발화 끝
-    13.12s  <ret> 발화 (turn2 첫 프레임)
-    13.19s  agent 발화 시작: <ret> Certainly, let’s figure that out for you. From 30 Oak 
-    13.23s  user  발화 끝
-    14.56s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.52s]: [2026-02-11] User's home address is 30 Oak Avenue.
-    21.48s  agent 발화 끝
-    21.84s  user  발화 시작: Twenty-five minutes? Oh, that’s not bad at all.
-    24.28s  agent 발화 시작: It doesn’t sound too disruptive to your day, does it? Perhap
-    24.43s  user  발화 끝
-    27.70s  user  발화 시작: Okay.
-    28.25s  user  발화 끝
-    30.95s  agent 발화 끝
-    31.56s  user  발화 시작: Maybe. Is it walkable, or should I take the metro?
-    34.63s  agent 발화 시작: It is walkable, Ava, though it’s a bit of a distance— around
-    34.66s  user  발화 끝
-    38.16s  user  발화 시작: Uh-huh.
-    38.66s  user  발화 끝
-    41.86s  agent 발화 시작: And offers a more direct route, avoiding some of the busier 
-    41.95s  agent 발화 끝
-    47.68s  user  발화 시작: I think I’ll take the metro then. What line do I need?
-    48.16s  agent 발화 끝
-    50.44s  <ret> 발화 (turn11 첫 프레임)
-    50.66s  agent 발화 시작: <ret> Absolutely, let me check the best metro line for you. 
-    50.73s  user  발화 끝
-    52.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: (tool result) Line 6 from Bir-Hakeim station to Trocadéro station. Tra
-    56.92s  user  발화 시작: Mm-hmm.
-    57.37s  user  발화 끝
-    62.17s  user  발화 시작: That sounds… complicated.
-    62.30s  agent 발화 끝
-    64.29s  user  발화 끝
-    64.55s  agent 발화 시작: It appears a little involved at first glance, but the transf
-    68.41s  user  발화 시작: Yeah.
-    68.86s  user  발화 끝
-    73.45s  agent 발화 끝
-    73.84s  user  발화 시작: Yes, please. And are they good with allergies? I’m allergic 
-    78.15s  <ret> 발화 (turn17 첫 프레임)
-    78.21s  agent 발화 시작: <ret> I can certainly look into that for you. You mentioned 
-    78.24s  user  발화 끝
-    80.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.91s]: [2026-02-23] User is allergic to peanuts.
-    86.93s  agent 발화 끝
-    87.68s  user  발화 시작: Thank you, Hia.
-    88.50s  user  발화 끝
-    88.80s  agent 발화 시작: [happy] You're very welcome, Ava. I'm checking their website
-    97.47s  user  발화 시작: That’s a relief! I’m also planning a trip to Kyoto in Decemb
-    97.56s  agent 발화 끝
-   101.91s  user  발화 끝
-   102.11s  <ret> 발화 (turn21 첫 프레임)
-   102.18s  agent 발화 시작: <ret> Oh, Kyoto in December sounds wonderful! You are planni
-   103.07s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: [2026-02-09] User is planning a trip to Kyoto in December.
-   105.81s  user  발화 시작: Yeah.
-   106.31s  user  발화 끝
-   112.80s  user  발화 시작: Let's stick with the bakery for now, thanks.
-   112.85s  agent 발화 끝
-   115.19s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It’s lovely to connect with you. I understa
+     5.46s  user  발화 시작: Yes, I need to get to that new florist, Fleurabelle. Do you 
+     5.50s  agent 발화 끝
+    10.31s  <ret> 발화 (turn2 첫 프레임)
+    10.38s  agent 발화 시작: <ret> Certainly, I can help with that. From 30 Oak Avenue, i
+    10.59s  user  발화 끝
+    11.75s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.93s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    16.82s  agent 발화 끝
+    17.28s  user  발화 시작: Oh, that’s not bad at all. Is it walkable, do you think?
+    20.59s  agent 발화 시작: It is walkable, though it's a bit of a distance – approximat
+    20.79s  user  발화 끝
+    22.95s  user  발화 시작: Uh-huh.
+    23.40s  user  발화 끝
+    25.46s  agent 발화 시작: It’s a pleasant walk along the Seine, if the weather is agre
+    25.68s  agent 발화 끝
+    28.75s  user  발화 시작: Okay.
+    29.34s  user  발화 끝
+    31.75s  agent 발화 끝
+    31.85s  user  발화 시작: Well, it’s drizzling a little bit… maybe not. Are there any 
+    35.90s  <ret> 발화 (turn9 첫 프레임)
+    36.29s  agent 발화 시작: <ret> Let me check the bus lines for you. Bus sixty-nine lea
+    36.52s  user  발화 끝
+    37.42s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.81s]: (tool result) Bus 69 departs Oak Avenue at 2:15 PM and arrives at Fleu
+    45.99s  user  발화 시작: The 69 sounds better.
+    46.49s  agent 발화 끝
+    47.83s  user  발화 끝
+    48.05s  agent 발화 시작: Excellent. It’s a quick ride then. Are you planning to purch
+    50.82s  user  발화 시작: Mm-hmm.
+    51.31s  user  발화 끝
+    53.04s  user  발화 시작: I’m hoping to find some lilies. They’re my favorite.
+    53.19s  agent 발화 끝
+    55.58s  user  발화 끝
+    55.83s  agent 발화 시작: Lilies are beautiful, a classic choice. Do you have a prefer
+    61.02s  agent 발화 끝
+    62.72s  user  발화 시작: White, definitely. And I remember I’m allergic to peanuts, s
+    69.53s  <ret> 발화 (turn16 첫 프레임)
+    69.60s  agent 발화 시작: <ret> That’s a very thoughtful precaution. Given your peanut
+    69.66s  user  발화 끝
+    70.73s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.32s]: [2026-02-23] User is allergic to peanuts.
+    72.74s  user  발화 시작: Mhm.
+    73.23s  user  발화 끝
+    76.95s  user  발화 시작: Right, good idea. [interrupting] I wonder if they deliver?
+    77.01s  agent 발화 끝
+    80.32s  user  발화 끝
+    80.53s  agent 발화 시작: —and many florists do offer delivery services—
+    83.35s  user  발화 시작: Do you think they deliver to my address?
+    84.13s  agent 발화 끝
+    84.93s  <ret> 발화 (turn21 첫 프레임)
+    85.23s  agent 발화 시작: <ret> I can certainly find out for you. Yes, Fleurabelle doe
+    85.42s  user  발화 끝
+    86.21s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.32s]: (tool result) Fleurabelle delivers to 30 Oak Avenue. Delivery fee is 5
+    89.08s  user  발화 시작: Right.
+    89.56s  user  발화 끝
+    95.15s  agent 발화 끝
+    95.38s  user  발화 시작: That’s perfect! Please book a delivery for me then.
+    98.36s  agent 발화 시작: Certainly. I have scheduled a delivery to 30 Oak Avenue for 
+    98.43s  user  발화 끝
+   105.44s  agent 발화 끝

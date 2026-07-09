@@ -60,39 +60,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was reading about Lux Aurunque,  | S2 Was his work ever displayed anywhe | S3 I mean, like, a museum or gallery? | S4 The Venice Biennale—wow! That's im
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to find out about Lux A | S2 Nineteen seventy… that’s quite a w | S3 Was he… was he commissioned by any | S4 Oberon, huh? I wonder what kind of
 
-     0.00s  user  발화 시작: I was reading about Lux Aurunque, and I’m curious—when was h
-     4.41s  <ret> 발화 (turn1 첫 프레임)
-     4.64s  agent 발화 시작: <ret> That's a good question to start with. He was born in n
-     4.86s  user  발화 끝
-     5.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.52s]: Lux Aurunque was born in nineteen seventy.
-     7.97s  user  발화 시작: Yeah, yeah.
-     9.17s  user  발화 끝
-    10.75s  agent 발화 끝
-    10.76s  user  발화 시작: Nineteen seventy… that’s quite a while ago! What kind of wor
-    15.52s  <ret> 발화 (turn4 첫 프레임)
-    15.84s  agent 발화 시작: <ret> Lux Aurunque was a truly multifaceted individual, expl
-    16.02s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.88s]: Lux Aurunque was a composer, visual artist, and performer.
-    16.08s  user  발화 끝
-    21.56s  agent 발화 시작: He worked as a composer, visual artist, and performer.
-    21.72s  agent 발화 끝
-    23.44s  user  발화 시작: Uh-huh.
-    24.08s  user  발화 끝
-    24.94s  agent 발화 끝
-    24.96s  user  발화 시작: Was his work ever displayed anywhere prominent?
-    27.82s  user  발화 끝
-    28.02s  agent 발화 시작: His work garnered attention—
-    29.17s  user  발화 시작: I mean, like, a museum or gallery?
-    29.90s  agent 발화 끝
-    31.82s  <ret> 발화 (turn10 첫 프레임)
-    31.89s  agent 발화 시작: <ret> Certainly.
-    32.08s  user  발화 끝
-    32.62s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.01s]: His compositions have been showcased at the Venice Biennale.
-    32.67s  agent 발화 시작: His compositions were showcased at the Venice Biennale.
-    32.89s  agent 발화 끝
-    34.32s  user  발화 시작: Yeah, totally.
-    35.42s  user  발화 끝
-    35.95s  agent 발화 끝
-    37.53s  user  발화 시작: The Venice Biennale—wow! That's impressive. What sort of mus
-    44.72s  user  발화 끝
+     0.00s  user  발화 시작: I’m trying to find out about Lux Aurunque. Can you tell me w
+     4.21s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  agent 발화 시작: <ret> Certainly, I can help with that. He was born in ninete
+     4.68s  user  발화 끝
+     5.65s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.41s]: Lux Aurunque was born in nineteen seventy.
+     7.92s  user  발화 시작: Yeah, yeah.
+     9.30s  user  발화 끝
+    10.82s  user  발화 시작: Nineteen seventy… that’s quite a while ago. What did he do?
+    10.88s  agent 발화 끝
+    14.33s  agent 발화 시작: Lux Aurunque became known for his bronze sculptures, and his
+    14.56s  user  발화 끝
+    17.85s  user  발화 시작: Uh-huh.
+    18.49s  user  발화 끝
+    20.40s  agent 발화 끝
+    20.51s  user  발화 시작: Was he… was he commissioned by any rulers?
+    23.43s  <ret> 발화 (turn7 첫 프레임)
+    23.51s  agent 발화 시작: <ret> That’s a good question, actually. He was commissioned 
+    23.75s  user  발화 끝
+    23.93s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.70s]: Lux Aurunque was commissioned by King Oberon to create a series of bro
+    26.53s  user  발화 시작: Yeah, totally.
+    27.76s  user  발화 끝
+    29.25s  user  발화 시작: Oberon, huh? I wonder what kind of bronze they were.
+    29.30s  agent 발화 끝
+    32.99s  user  발화 끝

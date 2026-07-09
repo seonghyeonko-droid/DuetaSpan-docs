@@ -66,47 +66,53 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 So, what has Demi Lovato been up t | S3 Actually, never mind about all tha | S4 Number two, that’s pretty impressi
+# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 I mean, I just saw a post online. | S3 So, nothing new *right now*? Just  | S4 Oh, okay! 2017… still not super re
 
      0.00s  user  발화 시작: I was wondering, when is Demi Lovato’s new album coming out?
-     5.66s  <ret> 발화 (turn1 첫 프레임)
-     5.90s  agent 발화 시작: <ret> It’s exciting to anticipate new music, isn’t it? Let’s
-     5.98s  user  발화 끝
-     7.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: Demi Lovato’s album, *Confident*, was released in October 2015.
-    11.11s  agent 발화 시작: Demi Lovato released her album *Confident* in October of twe
-    11.27s  agent 발화 끝
-    15.95s  user  발화 시작: Oh, okay. October 2015. That feels like a while ago now, doe
-    15.97s  agent 발화 끝
-    21.00s  <ret> 발화 (turn4 첫 프레임)
-    21.31s  agent 발화 시작: <ret> Time does seem to slip away, doesn't it? Sometimes rev
-    21.56s  ⚡SPAN 주입(IRRELEVANT) [d'=0.56s / d_lead=5.75s]: The Mariana Trench is the deepest part of the world’s oceans, reaching
-    21.59s  user  발화 끝
-    27.06s  user  발화 시작: So, what has Demi Lovato been up to *since* then? Any new al
-    27.06s  agent 발화 끝
-    32.11s  agent 발화 시작: It’s wonderful to look at an artist’s full journey. Let me s
-    32.24s  user  발화 끝
-    37.69s  user  발화 시작: Actually, never mind about all that. Is *Confident* her most
-    38.31s  agent 발화 끝
-    42.38s  <ret> 발화 (turn8 첫 프레임)
-    42.53s  agent 발화 시작: <ret> That's a good question to clarify. It’s helpful to hav
-    42.69s  user  발화 끝
-    44.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: Demi Lovato released *Dancing with the Devil… the Art of Starting Over
-    48.19s  agent 발화 시작: Demi Lovato’s most recent album is *Dancing with the Devil… 
-    48.26s  agent 발화 끝
-    51.31s  user  발화 시작: Mm-hmm.
-    51.85s  user  발화 끝
-    56.30s  agent 발화 시작: It sounds like you’re keen to explore her more recent work. 
-    56.46s  agent 발화 끝
-    62.16s  user  발화 시작: It did, yeah. Is that one any good? I haven't gotten around 
-    62.32s  agent 발화 끝
-    66.25s  <ret> 발화 (turn13 첫 프레임)
-    66.56s  agent 발화 시작: <ret> Music is so subjective, isn’t it? What resonates with 
-    66.66s  user  발화 끝
-    68.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: *Dancing with the Devil… the Art of Starting Over* reached number two 
-    72.34s  agent 발화 끝
-    72.35s  agent 발화 시작: That album reached number two on the Billboard 200 chart, wh
-    77.54s  user  발화 시작: Number two, that’s pretty impressive. I might have to check 
-    77.54s  agent 발화 끝
-    81.80s  user  발화 끝
-    81.98s  agent 발화 시작: Exploring new music can be a wonderful way to shift your per
-    87.77s  agent 발화 끝
+     6.37s  <ret> 발화 (turn1 첫 프레임)
+     6.61s  agent 발화 시작: <ret> It’s wonderful you’re anticipating new music from Demi
+     6.63s  user  발화 끝
+     8.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: Demi Lovato’s album, *Confident*, was released in October 2015.
+    12.48s  agent 발화 시작: Her album *Confident* came out in October of twenty fifteen.
+    12.68s  agent 발화 끝
+    18.43s  user  발화 시작: Oh, 2015? That feels like ages ago! Is she working on someth
+    18.54s  agent 발화 끝
+    24.34s  agent 발화 시작: It does feel like quite some time has passed. Many artists d
+    24.54s  user  발화 끝
+    31.34s  user  발화 시작: I mean, I just saw a post online.
+    31.38s  agent 발화 끝
+    33.97s  agent 발화 시작: It’s easy to get caught up in online buzz, and it’s understa
+    34.06s  user  발화 끝
+    40.64s  user  발화 시작: But is there an actual release date announced for a *new* al
+    41.28s  agent 발화 끝
+    44.61s  <ret> 발화 (turn8 첫 프레임)
+    44.93s  agent 발화 시작: <ret> You’re right to ask for specifics. Let me check for cu
+    45.08s  user  발화 끝
+    46.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: Demi Lovato’s eighth studio album, *Revival*, was released on Septembe
+    50.69s  agent 발화 시작: Her most recent album, *Revival*, was released September twe
+    50.76s  agent 발화 끝
+    52.79s  user  발화 시작: Mm-hmm.
+    53.28s  user  발화 끝
+    55.77s  <ret> 발화 (turn11 첫 프레임)
+    56.16s  agent 발화 시작: <ret> Sometimes finding the details requires a bit of diggin
+    56.34s  agent 발화 끝
+    57.77s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.74s]: The giraffe, *Giraffa camelopardalis*, is an African artiodactyl mamma
+    61.79s  agent 발화 시작: I find when we're seeking creative inspiration, sometimes a 
+    61.91s  agent 발화 끝
+    67.40s  agent 발화 끝
+    67.51s  user  발화 시작: So, nothing new *right now*? Just *Revival* from 2016?
+    72.97s  user  발화 끝
+    73.35s  agent 발화 시작: It appears that as of today, there isn't a confirmed release
+    81.00s  agent 발화 끝
+    81.08s  user  발화 시작: Okay. Well, what about singles? Has she released any new sin
+    86.15s  <ret> 발화 (turn16 첫 프레임)
+    86.22s  agent 발화 시작: <ret> That's a good question. Let’s see if there’s any infor
+    86.26s  user  발화 끝
+    88.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.29s]: Demi Lovato released the single “Sorry Not Sorry” on July 11, 2017.
+    92.32s  agent 발화 시작: She released “Sorry Not Sorry” on July eleventh, twenty seve
+    92.51s  agent 발화 끝
+    96.28s  user  발화 시작: Mm-hmm.
+    96.96s  user  발화 끝
+    99.92s  agent 발화 끝
+   100.36s  user  발화 시작: Oh, okay! 2017… still not super recent, but better than noth
+   107.59s  user  발화 끝

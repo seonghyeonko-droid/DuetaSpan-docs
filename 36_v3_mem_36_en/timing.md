@@ -64,17 +64,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you today. Is
-     2.44s  user  발화 시작: Uh-huh.
-     3.07s  user  발화 끝
-     5.11s  user  발화 시작: I’m starting to think about travel again… I was looking at S
-     5.13s  agent 발화 끝
-     8.64s  <ret> 발화 (turn3 첫 프레임)
-     8.88s  agent 발화 시작: <ret> Switzerland is a wonderful choice. You mentioned plann
-     9.04s  user  발화 끝
-    10.24s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.70s]: [2026-07-14] User is planning a trip to Switzerland in March.
-    16.33s  agent 발화 끝
-    17.58s  user  발화 시작: Yes, I am! But I'm trying to remember what I was hoping to d
-    22.72s  user  발화 끝
-    22.72s  agent 발화 시작: Ah, mountains are certainly a highlight of Switzerland. Do y
-    31.44s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It's good to connect with you. I'm a co
+     3.99s  user  발화 시작: Uh-huh.
+     4.63s  user  발화 끝
+     8.16s  user  발화 시작: Oh, that’s good to hear. I was just remembering, I mentioned
+     8.16s  agent 발화 끝
+    13.17s  <ret> 발화 (turn3 첫 프레임)
+    13.40s  agent 발화 시작: <ret> You did mention that, yes. You were interested in hybr
+    13.43s  user  발화 끝
+    14.77s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.64s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
+    21.28s  agent 발화 끝
+    22.40s  user  발화 시작: Yeah, but I’m also wondering about insurance costs, um, for 
+    27.02s  agent 발화 시작: Insurance costs vary quite a bit. To give you a sense, would
+    27.13s  user  발화 끝
+    33.46s  agent 발화 끝

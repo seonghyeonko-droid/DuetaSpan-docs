@@ -63,43 +63,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Yeah, that makes sense. But isn’t  | S3 But what about, like, serious crim | S4 Hmm. Could you find me some exampl
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Islands, definitely. Somewhere wit | S3 Is Santorini really that expensive | S4 Hmm. What about Crete? Are there a
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.74s  <ret> 발화 (turn1 첫 프레임)
-     2.90s  agent 발화 시작: <ret> That’s a fascinating question, and I wish I had a defi
-     2.95s  user  발화 끝
-     4.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (no information found)
-     7.62s  user  발화 시작: Uh-huh.
-     8.02s  user  발화 끝
-    10.92s  agent 발화 끝
-    11.14s  user  발화 시작: Okay, well, what do anarchists generally *want* then?
-    13.66s  <ret> 발화 (turn4 첫 프레임)
-    13.79s  agent 발화 시작: <ret> Generally, anarchists desire… …self-governed societies
-    13.87s  user  발화 끝
-    14.16s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.21s]: Anarchism is a political philosophy that advocates for self-governed s
-    22.69s  agent 발화 끝
-    23.25s  user  발화 시작: Yeah, that makes sense. But isn’t it chaotic if there’s no g
-    27.18s  agent 발화 시작: It’s a common concern, and a very valid one! Anarchists beli
-    27.27s  user  발화 끝
-    36.73s  agent 발화 끝
-    36.79s  user  발화 시작: Mutual aid… like, people just helping each other out?
-    40.77s  user  발화 끝
-    40.99s  agent 발화 시작: Exactly! It's about communities organizing to meet each othe
-    48.48s  agent 발화 시작: They envision a world where people cooperate freely, and dec
-    48.54s  agent 발화 끝
-    52.26s  user  발화 시작: But what about, like, serious crimes? Who deals with those?
-    52.98s  agent 발화 끝
-    55.87s  user  발화 끝
-    55.88s  agent 발화 시작: That’s a crucial point to consider. Anarchist thought addres
-    65.60s  agent 발화 끝
-    65.70s  user  발화 시작: Restorative justice… so, making things right instead of just
-    70.98s  agent 발화 시작: Precisely. It aims to repair harm and reintegrate offenders 
-    71.03s  user  발화 끝
-    78.95s  agent 발화 끝
-    79.36s  user  발화 시작: Hmm. Could you find me some examples of communities that hav
-    83.10s  <ret> 발화 (turn15 첫 프레임)
-    83.25s  agent 발화 시작: <ret> I did a quick search… …and found the Free Territory of
-    83.44s  user  발화 끝
-    83.98s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.64s]: The Free Territory of Ukraine experimented with anarchist principles i
-    93.73s  agent 발화 끝
+     2.64s  <ret> 발화 (turn1 첫 프레임)
+     2.78s  agent 발화 시작: <ret> That’s a fascinating question, though I’m drawing a bl
+     2.86s  user  발화 끝
+     4.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (no information found)
+     6.46s  user  발화 시작: Uh-huh.
+     6.87s  user  발화 끝
+     9.09s  agent 발화 끝
+     9.24s  user  발화 시작: Right, well, what about vacation time in Greece? I’m thinkin
+    13.58s  agent 발화 시작: September is lovely in Greece—warm seas and fewer crowds. To
+    13.63s  user  발화 끝
+    21.61s  agent 발화 끝
+    22.18s  user  발화 시작: Islands, definitely. Somewhere with beautiful beaches, but n
+    27.12s  <ret> 발화 (turn6 첫 프레임)
+    27.27s  agent 발화 시작: <ret> Ah, a peaceful escape sounds wonderful.
+    27.41s  user  발화 끝
+    29.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.72s]: (tool result) Hotel Azure, Santorini. Beachfront. Rating 4.6. Price 18
+    29.84s  agent 발화 시작: I’ve found a couple of options— Hotel Azure in Santorini is 
+    29.99s  agent 발화 끝
+    37.90s  agent 발화 끝
+    37.91s  user  발화 시작: Is Santorini really that expensive, though?
+    40.44s  agent 발화 시작: It can be, yes—
+    40.64s  user  발화 끝
+    41.06s  user  발화 시작: Hmm. What about Crete? Are there any quieter spots there?
+    41.77s  agent 발화 끝
+    45.61s  agent 발화 시작: Crete is a superb choice, often more affordable than Santori
+    45.64s  user  발화 끝
+    52.38s  agent 발화 시작: I can search for hotels in Crete if you’d like—perhaps near 
+    52.42s  agent 발화 끝
+    58.40s  agent 발화 끝

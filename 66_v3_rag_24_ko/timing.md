@@ -59,29 +59,25 @@
 # }
 
 
-     0.00s  user  발화 시작: 뒤플레시라는 성이 어디에서 유래되었는지 궁금해요.
-     3.37s  <ret> 발화 (turn1 첫 프레임)
-     3.68s  agent 발화 시작: <ret> 뒤플레시 성에 대해 알아보고 싶으시군요. 아프리카너스어에서 유래되었다고 해요.
+     0.00s  user  발화 시작: 뒤플레시스라는 성이 어디에서 유래했는지 궁금해요.
+     3.36s  <ret> 발화 (turn1 첫 프레임)
+     3.67s  agent 발화 시작: <ret> 뒤플레시스 성에 대해 알아볼까요? 뒤플레시스 성은 프랑스에서 유래했는데, “플레시”라는 지명에서 
      3.84s  user  발화 끝
-     4.73s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.98s]: The surname Du Plessis is of Afrikaans origin, derived from the French
-     9.46s  agent 발화 시작: 뒤플레시 성은요, 프랑스어 "뒤플레시"에서 유래되었고, 아프리카너스어에서 사용되기 시작했어요.
-     9.66s  agent 발화 끝
-    14.13s  user  발화 시작: 아.
-    14.86s  user  발화 끝
-    15.62s  user  발화 시작: 아, 프랑스어에서 왔군요. 그럼 뒤플레시 가문은 프랑스에서 시작된 건가요?
-    15.85s  agent 발화 끝
-    20.56s  <ret> 발화 (turn5 첫 프레임)
-    20.63s  agent 발화 시작: <ret> 뒤플레시 가문이 프랑스에서 시작되었는지 궁금하시군요.
-    20.81s  user  발화 끝
-    22.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: The Plessis family originated in France, holding land in Plessis-Grimo
-    24.79s  agent 발화 끝
-    24.80s  agent 발화 시작: 뒤플레시 가문은요, 노르망디의 플레시-그리물에 십일세기에 토지를 소유한 프랑스에서 시작되었어요.
-    32.82s  agent 발화 끝
-    32.91s  user  발화 시작: 십일세기부터라니, 정말 오래되었네요. 혹시 유명한 뒤플레시 가문 사람이 있었나요?
-    39.60s  <ret> 발화 (turn8 첫 프레임)
-    39.99s  agent 발화 시작: <ret> 뒤플레시 가문 중에서 유명한 사람이 있었는지 궁금하시군요.
-    40.14s  user  발화 끝
-    41.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: Jacques du Plessis, a Huguenot soldier, emigrated to South Africa in 1
-    43.98s  agent 발화 시작: 뒤플레시 가문에서, 위그노 용병인 자크 뒤플레시가 천육백팔십팔년에 남아프리카로 이민 와서
-    44.11s  agent 발화 끝
-    52.04s  agent 발화 끝
+     4.40s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.83s]: The surname Du Plessis is of French origin, meaning "from Plessis", a 
+     9.86s  user  발화 시작: 네.
+    10.49s  user  발화 끝
+    12.15s  agent 발화 끝
+    12.27s  user  발화 시작: 그럼 플레시는 어떤 곳인가요?
+    14.11s  <ret> 발화 (turn4 첫 프레임)
+    14.50s  agent 발화 시작: <ret> 플레시라는 지명은 프랑스에 여러 곳이 있어요.
+    14.52s  user  발화 끝
+    15.79s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.07s]: Plessis is a common place name in France, referring to a fortified man
+    18.44s  agent 발화 시작: 플레시는 프랑스에서 흔한 지명으로, 요새화된 저택이나 성을 의미한다고 하네요.
+    18.57s  agent 발화 끝
+    25.13s  user  발화 시작: 아프리카와도 관련이 있다던데, 맞나요?
+    25.20s  agent 발화 끝
+    27.94s  <ret> 발화 (turn7 첫 프레임)
+    28.34s  agent 발화 시작: <ret> 네, 뒤플레시스 성은 아프리카에서도 흔해요. 뒤플레시스 성은 십칠세기와 십팔세기에 위그노가 남아프
+    28.41s  user  발화 끝
+    29.14s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.34s]: The Du Plessis surname is common in South Africa due to Huguenot immig
+    37.71s  agent 발화 끝

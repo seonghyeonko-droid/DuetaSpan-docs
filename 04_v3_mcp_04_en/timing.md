@@ -55,26 +55,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Okay, good. Now, can you search fo | S3 Hmm, TechCrunch sounds interesting | S4 That’s… a little unsettling, actua
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.56s  <ret> 발화 (turn1 첫 프레임)
-     4.86s  user  발화 끝
-     4.87s  agent 발화 시작: <ret> Certainly. Your browser’s user agent is now SuperCrawl
-     6.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: (tool result) The user agent is now set to SuperCrawler version 10.1.
-     7.99s  user  발화 시작: Mhm.
-     8.49s  user  발화 끝
-    11.59s  user  발화 시작: Hmm. That sounds… aggressive. Can we change it to something 
-    11.77s  agent 발화 끝
-    20.21s  <ret> 발화 (turn4 첫 프레임)
-    20.27s  agent 발화 시작: <ret> [laugh] A little less… bold, yes? I understand wanting
-    20.44s  user  발화 끝
-    21.57s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.03s]: (tool result) The user agent is now set to Mozilla/5.0 (Macintosh; Int
-    26.25s  agent 발화 시작: Absolutely. I’ve switched it to a standard Mac Safari user a
-    26.30s  agent 발화 끝
-    33.70s  agent 발화 끝
-    34.14s  user  발화 시작: Okay, that’s much better. Is there a way to verify it’s actu
-    38.34s  <ret> 발화 (turn7 첫 프레임)
-    38.42s  agent 발화 시작: <ret> Verifying is always a good step, especially with these
-    38.59s  user  발화 끝
-    39.38s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.62s]: (tool result) The current user
-    43.05s  agent 발화 끝
+     4.43s  <ret> 발화 (turn1 첫 프레임)
+     4.72s  user  발화 끝
+     4.74s  agent 발화 시작: <ret> Certainly. The user agent is now set to SuperCrawler v
+     6.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) The user agent has been set to SuperCrawler version 10.1
+     7.57s  user  발화 시작: Mhm.
+     8.20s  user  발화 끝
+    10.84s  user  발화 시작: Okay, good. Now, can you search for recent articles about th
+    11.04s  agent 발화 끝
+    16.80s  <ret> 발화 (turn4 첫 프레임)
+    16.88s  agent 발화 시작: <ret> Of course. I found three recent articles—Wired, The Ne
+    17.09s  user  발화 끝
+    18.56s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.97s]: (tool result) Search returned three results: “AI and the Future of Sto
+    26.80s  user  발화 시작: Hmm, TechCrunch sounds interesting. Could you summarize that
+    26.85s  agent 발화 끝
+    30.96s  user  발화 끝
+    31.15s  agent 발화 시작: [interrupting] Just the main points, please?
+    33.46s  <ret> 발화 (turn7 첫 프레임)
+    33.54s  agent 발화 시작: <ret> Briefly summarizing the TechCrunch article… It explain
+    33.69s  agent 발화 끝
+    34.42s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.27s]: (tool result) The article details how AI writing tools are becoming in
+    43.79s  user  발화 시작: That’s… a little unsettling, actually. Maybe I should just s
+    43.97s  agent 발화 끝
+    49.76s  user  발화 끝

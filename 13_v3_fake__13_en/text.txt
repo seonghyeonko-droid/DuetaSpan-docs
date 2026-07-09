@@ -67,29 +67,23 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was wondering, when is Demi Lovato’s new album coming out? I thought
-      Oh, okay. October 2015. That feels like a while ago now, doesn't it?
-  S2  So, what has Demi Lovato been up to *since* then? Any new albums?
-  S3  Actually, never mind about all that. Is *Confident* her most recent al
-      It did, yeah. Is that one any good? I haven't gotten around to listeni
-  S4  Number two, that’s pretty impressive. I might have to check it out the
-  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
-
-[  0.00s][user ] I was wondering, when is Demi Lovato’s new album coming out? I thought I saw something about it.
-[  5.90s][moshi] ⟨ret@5.66s⟩ It’s exciting to anticipate ⟦⚡SPAN@7.66s: Demi Lovato’s album, *Confident*, was released in October 2015.⟧ new music, isn’t it? Let’s find out about Demi Lovato’s release.
-[ 11.11s][moshi] Demi Lovato released her album *Confident* in October of twenty fifteen.
-[ 15.95s][user ] Oh, okay. October 2015. That feels like a while ago now, doesn't ⟨ret@21.00s⟩ it?
-[ 21.31s][moshi] ⟦⚡SPAN IRRELEVANT@21.56s: The Mariana Trench is the deepest part of the world’s oceans, reaching a depth of approximately 10,929 meters.⟧ Time does seem to slip away, doesn't it? Sometimes revisiting older work can be lovely, though.
-[ 27.06s][user ] So, what has Demi Lovato been up to *since* then? Any new albums?
-[ 32.11s][moshi] «interrupted» It’s wonderful to look at an artist’s full journey. Let me see what information I can gather for you—
-[ 37.69s][user ] «interrupts_prev» Actually, never mind about all that. Is *Confident* her most recent ⟨ret@42.38s⟩ album?
-[ 42.53s][moshi] That's a good question ⟦⚡SPAN@44.38s: Demi Lovato released *Dancing with the Devil… the Art of Starting Over* in April 2021.⟧ to clarify. It’s helpful to have a clear understanding of the timeline.
-[ 48.19s][moshi] Demi Lovato’s most recent album is *Dancing with the Devil… the Art of Starting Over*, from April twenty twenty-one.
-[ 51.31s][user ] «backchannel» Mm-hmm.
-[ 56.30s][moshi] It sounds like you’re keen to explore her more recent work. That album received quite a bit of attention.
-[ 62.16s][user ] It did, yeah. Is that one any good? I haven't gotten around to listening ⟨ret@66.25s⟩ yet.
-[ 66.56s][moshi] Music is so subjective, ⟦⚡SPAN@68.25s: *Dancing with the Devil… the Art of Starting Over* reached number two on the Billboard 200 chart.⟧ isn’t it? What resonates with one person might not with another.
-[ 72.35s][moshi] That album reached number two on the Billboard 200 chart, which is a strong showing.
-[ 77.54s][user ] Number two, that’s pretty impressive. I might have to check it out then.
-[ 81.98s][moshi] Exploring new music can be a wonderful way to shift your perspective and inspire creativity.
+[  0.00s][user ] I was wondering, when is Demi Lovato’s new album coming out? I thought I heard something about this year.
+[  6.61s][moshi] ⟨ret@6.37s⟩ It’s wonderful you’re anticipating ⟦⚡SPAN@8.37s: Demi Lovato’s album, *Confident*, was released in October 2015.⟧ new music from Demi Lovato. I can certainly look into that for you.
+[ 12.48s][moshi] Her album *Confident* came out in October of twenty fifteen. Is there anything else I can help with?
+[ 18.43s][user ] Oh, 2015? That feels like ages ago! Is she working on something *now*?
+[ 24.34s][moshi] It does feel like quite some time has passed. Many artists do revisit their work and create new projects, of course.
+[ 31.34s][user ] I mean, I just saw a post online.
+[ 33.97s][moshi] «interrupted» It’s easy to get caught up in online buzz, and it’s understandable to want to know what’s happening with artists you admire—
+[ 40.64s][user ] «interrupts_prev» But is there an actual release date announced for a *new* ⟨ret@44.61s⟩ album?
+[ 44.93s][moshi] You’re right to ask ⟦⚡SPAN@46.61s: Demi Lovato’s eighth studio album, *Revival*, was released on September 23, 2016.⟧ for specifics. Let me check for current announcements regarding a new release.
+[ 50.69s][moshi] Her most recent album, *Revival*, was released September twenty-third, twenty sixteen.
+[ 52.79s][user ] «backchannel» Mm-hmm.
+[ 56.16s][moshi] ⟨ret@55.77s⟩ Sometimes finding the details ⟦⚡SPAN IRRELEVANT@57.77s: The giraffe, *Giraffa camelopardalis*, is an African artiodactyl mammal, the tallest living terrestrial animal⟧ requires a bit of digging, doesn’t it? It's good to be persistent.
+[ 61.79s][moshi] I find when we're seeking creative inspiration, sometimes a shift in focus can be helpful.
+[ 67.51s][user ] So, nothing new *right now*? Just *Revival* from 2016?
+[ 73.35s][moshi] It appears that as of today, there isn't a confirmed release date for a brand-new album. It's possible she’s still working on it.
+[ 81.08s][user ] Okay. Well, what about singles? Has she released any new singles recently?
+[ 86.22s][moshi] ⟨ret@86.15s⟩ That's a good question. ⟦⚡SPAN@88.15s: Demi Lovato released the single “Sorry Not Sorry” on July 11, 2017.⟧ Let’s see if there’s any information available regarding recent single releases.
+[ 92.32s][moshi] She released “Sorry Not Sorry” on July eleventh, twenty seventeen. Perhaps that will tide you over?
+[ 96.28s][user ] «backchannel» Mm-hmm.
+[100.36s][user ] Oh, okay! 2017… still not super recent, but better than nothing. Thanks, Runana.

@@ -59,19 +59,15 @@
 # }
 
 
-     0.00s  user  발화 시작: 심장이 건강한 사람의 평균 맥박수가 어떻게 돼? 궁금해.
-     3.49s  <ret> 발화 (turn1 첫 프레임)
-     3.65s  agent 발화 시작: <ret> 음, 건강한 사람의 맥박수를 알아볼까요? 건강한 성인의 정상적인 맥박수는 분당 육십 회에서 백 회
-     3.88s  user  발화 끝
-     3.99s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.67s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
-     7.74s  user  발화 시작: 어.
-     8.14s  user  발화 끝
-    11.42s  user  발화 시작: 근데 그게 꼭 그래야 돼? 사람마다 좀 다르잖아.
-    11.67s  agent 발화 끝
-    14.34s  user  발화 끝
-    14.60s  agent 발화 시작: 물론이지. 사람마다 차이가 있을 수 있는데, 일반적으로는 분당 오십 회에서 구십 회 정도가 건강한 범위로 알
-    22.44s  agent 발화 끝
-    22.45s  user  발화 시작: 아, 오늘 저녁 메뉴는 뭘로 할까나…
-    25.63s  agent 발화 시작: [interrupting] 혹시 운동을 자주 하시는 편이야? 운동량에 따라서도 맥박수가 달라질 수 있거든.
-    25.86s  user  발화 끝
-    31.79s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 건강한 사람의 평균 심박수가 어떻게 돼요?
+     2.45s  <ret> 발화 (turn1 첫 프레임)
+     2.61s  agent 발화 시작: <ret> 네, 건강한 분들의 심박수에 대해 알려드릴게요. 건강한 성인의 정상적인 안정 시 심박수는 분당 오
+     2.86s  user  발화 끝
+     2.95s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.81s]: A normal resting heart rate for adults ranges from 50 to 90 bpm.
+     6.90s  user  발화 시작: 예.
+     7.36s  user  발화 끝
+    10.78s  user  발화 시작: 저녁 메뉴는 뭘로 할까?
+    11.04s  agent 발화 끝
+    12.64s  user  발화 시작: 아, 그럼 운동할 때는 얼마나 올라가요?
+    12.80s  user  발화 끝
+    15.18s  user  발화 끝

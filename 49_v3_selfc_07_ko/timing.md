@@ -66,57 +66,53 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 방문 예약을 잡아줘. 육월 십오일로 해줘. | S2 아니, 그곳만 보면 돼. 혹시 그 근처에 맛있는 커피숍 있을까 | S3 더 북 눅… 이름이 예쁘네. 거기는 영업시간이 어떻게 돼? | S4 도보로 갈게.
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘. | S2 주변에 마트가 있는지 궁금해. | S3 이십오파운드면 우리 강아지는 안 되겠네… | S4 윌로우 크릭 에스테이트에 대해 좀 더 자세히 알려줘.
 
-     0.00s  user  발화 시작: 그랜드뷰 로프트에 방문 예약을 잡아줘. 육월 십오일로 해줘.
-     4.09s  <ret> 발화 (turn1 첫 프레임)
-     4.32s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트 방문 예약 도와드릴게요. 육월 십오일 오후 두시, 세시 삼십분, 다섯시에 예
-     4.44s  user  발화 끝
-     6.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.08s]: (tool result) The Grandview Lofts is available on June 15th at 2:00 PM
-    14.06s  agent 발화 끝
-    15.36s  user  발화 시작: 음… 세시 삼십분으로 할게. 근데 잠깐만, 세시로 할까— 세시 삼십분으로 하자.
-    19.96s  <ret> 발화 (turn3 첫 프레임)
-    20.26s  user  발화 끝
-    20.27s  agent 발화 시작: <ret> 세시 삼십분으로 변경하셨네요. 김민지 님, 육월 십오일 오후 세시 삼십분으로 그랜드뷰 로프트 방문
-    20.76s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.90s]: (tool result) Your visit to The Grandview Lofts is confirmed for June 
-    26.60s  user  발화 시작: 예.
-    26.95s  user  발화 끝
-    29.62s  agent 발화 시작: 예약 확인 문자를 보내드릴게요. 혹시 다른 로프트도 둘러보고 싶으신가요?
-    29.77s  agent 발화 끝
-    32.48s  user  발화 시작: 그렇죠.
-    33.12s  user  발화 끝
-    34.85s  user  발화 시작: 아니, 그곳만 보면 돼. 혹시 그 근처에 맛있는 커피숍 있을까?
-    34.93s  agent 발화 끝
-    38.80s  agent 발화 시작: 그 근처에 괜찮은 커피숍들이 꽤 있어요. 어떤 스타일을 좋아하세요? 조용하고 분위기 있는 곳, 아니면 활기찬
-    38.88s  user  발화 끝
-    46.68s  user  발화 시작: 음… 조용하고 분위기 있는 곳이 좋겠어. 혼자 가서 책 읽을 수 있는 곳.
-    46.72s  agent 발화 끝
-    51.12s  <ret> 발화 (turn10 첫 프레임)
-    51.27s  agent 발화 시작: <ret> 조용하고 분위기 있는 커피숍을 찾으시는군요. 그랜드뷰 로프트에서 영 점 오마일 거리에 “더 북 눅
-    51.41s  user  발화 끝
-    52.08s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.59s]: (tool result) “The Book Nook” is a quiet coffee shop 0.5 miles from Th
-    62.55s  user  발화 시작: 더 북 눅… 이름이 예쁘네. 거기는 영업시간이 어떻게 돼?
-    62.68s  agent 발화 끝
-    67.11s  <ret> 발화 (turn12 첫 프레임)
-    67.18s  agent 발화 시작: <ret> “더 북 눅” 영업시간을 알아볼게요. “더 북 눅”은 매일 아침 여덟시부터 저녁 여덟시까지 영업합
-    67.27s  user  발화 끝
-    67.61s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.42s]: (tool result) The Book Nook is open from 8:00 AM to 8:00 PM, seven day
-    73.95s  agent 발화 끝
-    73.98s  user  발화 시작: 오, 늦게까지 하네. 그럼 그쪽으로 가는 길은 어떻게 돼?
-    76.94s  user  발화 끝
-    77.45s  agent 발화 시작: 그쪽으로 가는 길을 안내해 드릴게요. 도보로 가시겠어요, 아니면 대중교통을 이용하시겠어요?
-    80.58s  user  발화 시작: 네네.
-    81.31s  user  발화 끝
-    82.81s  user  발화 시작: 도보로 갈게.
-    82.87s  agent 발화 끝
-    83.62s  <ret> 발화 (turn17 첫 프레임)
-    83.69s  agent 발화 시작: <ret> 도보 경로를 안내해 드릴게요. 엘름 거리를 남쪽으로 영 점 오마일 걸어가세요. 오크 애비뉴에서 좌
-    83.90s  user  발화 끝
-    84.58s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.21s]: (tool result) Walk 0.5 miles south on Elm Street, then turn left on Oa
-    88.58s  user  발화 시작: 어머.
-    89.08s  user  발화 끝
-    95.84s  agent 발화 끝
-    96.81s  user  발화 시작: 정말 고마워요, 텔러. 덕분에 계획이 잘 세워지는 것 같아.
-   100.81s  agent 발화 시작: 도움이 되어서 정말 기쁩니다. 언제든지 필요하시면 말씀해주세요.
-   100.83s  user  발화 끝
-   105.21s  agent 발화 끝
+     0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘.
+     3.68s  <ret> 발화 (turn1 첫 프레임)
+     3.92s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트 방문 예약을 도와드릴게요. 육월 십오일 오후 두시 또는 세시 삼십분에 예약 
+     4.02s  user  발화 끝
+     5.60s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.31s]: (tool result) The Grandview Lofts has availability on June 15th at 2:0
+    13.84s  agent 발화 끝
+    15.13s  user  발화 시작: 음… 두시반으로 할까? 아니, 세시로 하자.
+    18.03s  <ret> 발화 (turn3 첫 프레임)
+    18.26s  agent 발화 시작: <ret> 세시 삼십분으로 변경하시겠어요? 네, 육월 십오일 오후 세시 삼십분으로 예약이 확정되었습니다. 확
+    18.41s  user  발화 끝
+    19.47s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.11s]: (tool result) Your visit to The Grandview Lofts is confirmed for June 
+    24.82s  user  발화 시작: 어.
+    25.23s  user  발화 끝
+    27.94s  agent 발화 시작: 혹시 그랜드뷰 로프트에 대해 더 궁금한 점이 있으신가요? 주변 편의시설이나 교통 정보 같은 걸 알려드릴까요?
+    28.09s  agent 발화 끝
+    31.86s  user  발화 시작: 응응.
+    32.35s  user  발화 끝
+    34.98s  user  발화 시작: 주변에 마트가 있는지 궁금해.
+    35.12s  agent 발화 끝
+    36.80s  <ret> 발화 (turn8 첫 프레임)
+    37.03s  agent 발화 시작: <ret> 주변 마트 정보, 찾아드릴게요. 그랜드뷰 로프트에서 영 점 오마일 거리에 Fresh Foods M
+    37.23s  user  발화 끝
+    37.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.44s]: (tool result) There is a Fresh Foods Market 0.5 miles from The Grandvi
+    47.42s  agent 발화 끝
+    47.43s  user  발화 시작: 아, 좋아. 그럼, 혹시… 그 로프트에서 강아지를 키울 수 있는지 알아봐 줄 수 있어?
+    53.51s  <ret> 발화 (turn10 첫 프레임)
+    53.58s  agent 발화 시작: <ret> 강아지 동반 가능 여부를 확인해 드릴게요. 그랜드뷰 로프트는 이십오파운드 미만의 애완동물을 허용하
+    53.59s  user  발화 끝
+    54.15s  ⚡SPAN 주입 [d'=0.64s / d_lead=3.88s]: (tool result) The Grandview Lofts allows pets under 25 pounds with a o
+    63.80s  user  발화 시작: 이십오파운드면 우리 강아지는 안 되겠네…
+    63.92s  agent 발화 끝
+    66.70s  user  발화 끝
+    66.81s  agent 발화 시작: 아, 그러시군요. 혹시 다른 조건을 가진 로프트를 찾아볼까요? 예를 들어, 애완동물 무게 제한이 없는 곳으로
+    74.53s  user  발화 시작: 응, 무게 제한 없는 곳으로 찾아줘.
+    74.56s  agent 발화 끝
+    77.12s  user  발화 끝
+    77.34s  <ret> 발화 (turn14 첫 프레임)
+    77.42s  agent 발화 시작: <ret> 애완동물 무게 제한이 없는 로프트들을 찾아볼게요. 애완동물 무게 제한이 없는 로프트는 리버벤드 레
+    78.38s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.58s]: (tool result) Three properties match your criteria: Riverbend Residenc
+    84.50s  user  발화 시작: 응응.
+    85.14s  user  발화 끝
+    89.28s  user  발화 시작: 윌로우 크릭 에스테이트에 대해 좀 더 자세히 알려줘.
+    89.34s  agent 발화 끝
+    92.10s  <ret> 발화 (turn17 첫 프레임)
+    92.49s  agent 발화 시작: <ret> 윌로우 크릭 에스테이트에 대해 자세히 설명해 드릴게요. 윌로우 크릭 에스테이트는 원룸과 투룸을 제
+    92.52s  user  발화 끝
+    93.46s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.17s]: (tool result) Willow Creek Estates offers one and two-bedroom units, w
+   103.80s  agent 발화 끝

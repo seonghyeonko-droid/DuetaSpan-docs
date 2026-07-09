@@ -60,27 +60,26 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yeah, I am! I’m thinking New Zeala | S2 That sounds great! I was wondering | S3 Wait, is that price in Canadian or | S4 Oh, okay, good to know. And what a
 
-     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. It’s good to connect with you. I understa
-     7.78s  agent 발화 끝
-     8.42s  user  발화 시작: Yeah, I am! I’m thinking New Zealand in October, actually. A
-    14.50s  <ret> 발화 (turn2 첫 프레임)
-    14.89s  agent 발화 시작: <ret> You’re going to New Zealand in October— That’s a fanta
-    15.10s  user  발화 끝
-    15.86s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.75s]: [2026-05-27] User is planning a trip to New Zealand in October.
-    23.15s  agent 발화 끝
-    23.42s  user  발화 시작: That sounds great! I was wondering about flights, though. Wh
-    28.68s  <ret> 발화 (turn4 첫 프레임)
-    28.75s  agent 발화 시작: <ret> Finding good flight deals takes a little patience, but
-    28.87s  user  발화 끝
-    30.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.29s]: (tool result) Flights to Auckland, New Zealand on October 12th: $1850 
-    34.94s  agent 발화 시작: Air Canada has a flight for one thousand eight hundred and f
-    35.04s  agent 발화 끝
-    40.23s  user  발화 시작: Wait, is that price in Canadian or US dollars?
-    40.27s  agent 발화 끝
-    43.61s  user  발화 끝
-    43.99s  agent 발화 시작: That price is in Canadian dollars, Hugo. It includes all tax
-    49.99s  user  발화 시작: Oh, okay, good to know. And what about getting around once I
-    50.80s  agent 발화 끝
-    54.67s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. It’s good to connect with you—I help peop
+     7.09s  agent 발화 끝
+     7.73s  user  발화 시작: Hey Klen, thanks! I’m planning a trip to New Zealand in Octo
+    14.67s  agent 발화 시작: New Zealand in October sounds wonderful! To help me tailor s
+    14.82s  user  발화 끝
+    23.80s  agent 발화 끝
+    23.90s  user  발화 시작: Flights, definitely flights first. I always prefer an aisle 
+    29.07s  <ret> 발화 (turn4 첫 프레임)
+    29.21s  agent 발화 시작: <ret> Absolutely, seat preference is important— You prefer a
+    29.32s  user  발화 끝
+    30.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.72s]: [2026-07-11] User prefers an aisle seat when traveling.
+    31.81s  user  발화 시작: Mm-hmm.
+    32.35s  user  발화 끝
+    37.10s  user  발화 시작: Actually, before you start looking, what’s the typical fligh
+    37.13s  agent 발화 끝
+    41.12s  user  발화 끝
+    41.57s  agent 발화 시작: From Toronto to Auckland, New Zealand, the typical flight ti
+    47.26s  user  발화 시작: Mm-hmm.
+    47.75s  user  발화 끝
+    49.17s  agent 발화 시작: Considering the length, an aisle seat will be especially hel
+    49.30s  agent 발화 끝
+    61.27s  agent 발화 끝

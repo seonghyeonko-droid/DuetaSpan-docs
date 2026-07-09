@@ -68,77 +68,95 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm alright, thanks. I was wonderi | S2 Actually, yes. I want to order som | S3 Hmm, Elm Street sounds closer. | S4 I think so. Oh! I almost forgot, R
+# EXAMINER(FDB-v2) 단계: S1 I'm okay, but I'm feeling a bit st | S2 Oh, perfect. That gives us plenty  | S3 You’re right. I’ve been trying to  | S4 I’m trying kombucha and kimchi, mo
 
-     0.00s  agent 발화 시작: Hi Casey, I'm Diolo. It's lovely to connect with you today. 
-     3.41s  user  발화 시작: Yeah, yeah.
-     4.86s  agent 발화 끝
-     4.88s  user  발화 끝
-     5.17s  user  발화 시작: I'm alright, thanks. I was wondering, what time is it right 
-     8.76s  <ret> 발화 (turn3 첫 프레임)
-     8.91s  agent 발화 시작: <ret> Knowing the time is always helpful. It’s currently two
-     9.01s  user  발화 끝
-     9.96s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.78s]: (tool result) Current time: 2:47 PM EDT.
-    12.33s  user  발화 시작: Okay.
-    12.83s  user  발화 끝
-    16.32s  agent 발화 끝
-    17.40s  user  발화 시작: Oh, good. And uh, I’m trying to decide what to make for dinn
-    20.79s  agent 발화 시작: Dinner decisions can be tricky. Are you in the mood for some
-    20.87s  user  발화 끝
-    26.90s  agent 발화 끝
-    26.92s  user  발화 시작: I— I mean, I was thinking maybe sushi?
-    28.76s  <ret> 발화 (turn8 첫 프레임)
-    29.15s  agent 발화 시작: <ret> That sounds delightful! You have excellent taste; sush
-    29.26s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.34s]: [2026-07-23] User's favorite cuisine is sushi.
-    29.27s  user  발화 끝
-    36.22s  user  발화 시작: Right, right. I always forget we talked about that.
-    36.28s  agent 발화 끝
-    38.71s  agent 발화 시작: It’s easy to lose track of details, and that’s perfectly alr
-    38.81s  user  발화 끝
-    41.60s  user  발화 시작: Yeah, yeah.
-    42.88s  user  발화 끝
-    44.93s  user  발화 시작: Actually, yes. I want to order some takeout, but I remember 
-    45.15s  agent 발화 끝
-    50.13s  <ret> 발화 (turn13 첫 프레임)
-    50.37s  agent 발화 시작: <ret> Let’s see if I can recall what that is. You're gluten-
-    50.49s  user  발화 끝
-    52.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.12s]: [2026-06-24] User is gluten-free.
-    58.98s  user  발화 시작: Oh yeah, that’s it! Gluten. Okay, good to know.
-    59.04s  agent 발화 끝
-    62.26s  agent 발화 시작: I'm glad I could recall that for you. Would you like me to s
-    62.31s  user  발화 끝
-    68.65s  agent 발화 끝
-    69.52s  user  발화 시작: Yes, please! That would be great.
-    71.41s  user  발화 끝
-    71.46s  <ret> 발화 (turn17 첫 프레임)
-    71.54s  agent 발화 시작: <ret> Let me find some options for you. I found two options:
-    72.42s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.62s]: (tool result) Restaurant A: 123 Elm Street, Rating: 4.5 stars, Gluten-
-    81.08s  user  발화 시작: Hmm, Elm Street sounds closer.
-    81.28s  agent 발화 끝
-    83.21s  user  발화 끝
-    83.59s  agent 발화 시작: That's a good point to consider. Do you want me to get direc
-    88.60s  agent 발화 끝
-    90.27s  user  발화 시작: Maybe just the menu.
-    91.54s  <ret> 발화 (turn21 첫 프레임)
-    91.77s  agent 발화 시작: <ret> Certainly. Restaurant A's menu includes edamame, seawe
-    91.88s  user  발화 끝
-    92.04s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.56s]: (tool result) Appetizers: Edamame ($8), Seaweed Salad ($10). Rolls: Ca
-    98.44s  agent 발화 끝
-    99.11s  user  발화 시작: Oh, they have salmon nigiri! Perfect.
-   101.22s  user  발화 끝
-   101.39s  agent 발화 시작: Wonderful! It sounds like you’ve found something you’ll enjo
-   104.69s  user  발화 시작: I think so. Oh! I almost forgot, Rusty needs a walk.
-   105.13s  agent 발화 끝
-   108.57s  agent 발화 시작: Rusty, your Beagle, needs some fresh air— a good reminder! T
-   108.67s  user  발화 끝
-   114.46s  agent 발화 끝
-   115.72s  user  발화 시작: Yeah, he’s a handful. [laugh]
-   117.56s  agent 발화 시작: [happy] They often are, and they bring so much joy in return
-   117.65s  user  발화 끝
-   119.93s  user  발화 시작: Yeah.
-   120.52s  user  발화 끝
-   125.26s  agent 발화 끝
-   125.30s  user  발화 시작: No, I think that's all. Thanks, Diolo.
-   127.29s  agent 발화 시작: You're very welcome, Casey. Enjoy your sushi and your walk w
-   127.38s  user  발화 끝
-   131.69s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Casey, I'm Diolo. It’s lovely to connect with you today. 
+     3.03s  user  발화 시작: Yeah, yeah.
+     4.32s  user  발화 끝
+     4.35s  agent 발화 끝
+     4.58s  user  발화 시작: I'm okay, but I'm feeling a bit stressed about dinner tonigh
+     7.81s  user  발화 끝
+     7.98s  agent 발화 시작: Dinner plans can be tricky! Is this related to the birthday 
+    10.49s  user  발화 시작: Okay.
+    10.98s  user  발화 끝
+    13.49s  agent 발화 끝
+    14.59s  user  발화 시작: Yeah, exactly. I— I mean, six people, outdoor seating… it's 
+    19.75s  <ret> 발화 (turn6 첫 프레임)
+    20.07s  agent 발화 시작: <ret> Let's revisit those preferences. You mentioned a party
+    20.23s  user  발화 끝
+    20.39s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.45s]: [2026-07-27] Past chat — Planning a birthday dinner: party of six; loo
+    26.59s  agent 발화 끝
+    26.60s  user  발화 시작: Right. And I’m hoping to find somewhere not too far from Gra
+    30.20s  <ret> 발화 (turn8 첫 프레임)
+    30.35s  agent 발화 시작: <ret> Okay, searching for restaurants near Grand Central wit
+    30.44s  user  발화 끝
+    32.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) The Smith - outdoor seating for 6, 4.5 stars, $40 per pe
+    35.20s  agent 발화 시작: The Smith and Carmine’s both have outdoor seating for six ne
+    35.35s  agent 발화 끝
+    40.34s  agent 발화 끝
+    40.67s  user  발화 시작: Hmm, The Smith sounds good. What time does it get dark tonig
+    44.46s  <ret> 발화 (turn11 첫 프레임)
+    44.77s  agent 발화 시작: <ret> To give you an accurate sunset time, I just need to co
+    44.97s  user  발화 끝
+    46.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: [User profile — the person you are talking with] Location: New York, U
+    48.66s  <ret> 발화 (turn12 첫 프레임)
+    48.89s  agent 발화 시작: <ret> You’re in New York, United States, which is in the Eas
+    49.12s  agent 발화 끝
+    49.70s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.25s]: (tool result) Sunset time: 8:31 PM.
+    55.03s  user  발화 시작: Yeah.
+    55.53s  user  발화 끝
+    56.96s  user  발화 시작: Oh, perfect. That gives us plenty of light.
+    57.14s  agent 발화 끝
+    59.44s  agent 발화 시작: [happy] That’s wonderful to hear! Do you want me to make a r
+    59.50s  user  발화 끝
+    63.74s  user  발화 시작: Yes, please. Around seven o'clock?
+    63.79s  agent 발화 끝
+    65.94s  <ret> 발화 (turn17 첫 프레임)
+    66.17s  agent 발화 시작: <ret> Certainly. Let’s see what’s available at seven.
+    66.32s  user  발화 끝
+    66.44s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.96s]: (tool result) Reservation confirmed: The Smith, today at 7:00 PM, part
+    69.02s  agent 발화 시작: Your reservation at The Smith is confirmed for seven o'clock
+    69.12s  agent 발화 끝
+    75.54s  user  발화 시작: Great! That’s a huge weight off my mind.
+    75.73s  agent 발화 끝
+    77.84s  user  발화 끝
+    77.91s  agent 발화 시작: I’m so glad I could help, Casey. It's important to find mome
+    82.44s  agent 발화 끝
+    83.91s  user  발화 시작: You’re right. I’ve been trying to pick up some new hobbies, 
+    87.17s  agent 발화 시작: That’s fantastic! Pursuing hobbies is a wonderful way to red
+    87.32s  user  발화 끝
+    92.44s  agent 발화 끝
+    94.65s  user  발화 시작: Well, I’ve been getting into home fermentation lately.
+    97.23s  user  발화 끝
+    97.33s  <ret> 발화 (turn24 첫 프레임)
+    97.48s  agent 발화 시작: <ret> That sounds like an interesting pursuit. You mentioned
+    98.45s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.28s]: [2026-07-20] User is into home fermentation.
+   104.70s  agent 발화 끝
+   104.82s  user  발화 시작: Yeah, it's fun, but I'm gluten-free, which makes things tric
+   108.75s  <ret> 발화 (turn26 첫 프레임)
+   108.82s  agent 발화 시작: <ret> Gluten-free fermentation can present some challenges. 
+   108.85s  user  발화 끝
+   109.79s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.06s]: [2026-06-24] User is gluten-free.
+   116.46s  agent 발화 끝
+   117.82s  user  발화 시작: Exactly! Like sourdough, you know?
+   119.97s  agent 발화 시작: Sourdough can be especially challenging when avoiding gluten
+   120.08s  user  발화 끝
+   121.87s  user  발화 시작: Yeah.
+   122.36s  user  발화 끝
+   126.18s  agent 발화 끝
+   127.45s  user  발화 시작: I’m trying kombucha and kimchi, mostly. Rusty loves watching
+   131.10s  <ret> 발화 (turn31 첫 프레임)
+   131.17s  agent 발화 시작: <ret> [laugh] That's adorable! Rusty sounds like a curious c
+   131.29s  user  발화 끝
+   133.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: [2026-05-11] User has a Beagle named Rusty.
+   136.41s  agent 발화 시작: You have a Beagle named Rusty who enjoys watching your ferme
+   136.45s  agent 발화 끝
+   141.52s  user  발화 시작: He does. He’s a good boy.
+   141.55s  agent 발화 끝
+   143.28s  agent 발화 시작: He sounds like a wonderful addition to your life, Casey. It’
+   143.31s  user  발화 끝
+   148.10s  user  발화 시작: Thanks, Diolo. You’ve really helped me feel better about ton
+   148.19s  agent 발화 끝
+   151.33s  user  발화 끝
+   151.82s  agent 발화 시작: You are very welcome, Casey. I’m here to support you, always
+   155.52s  agent 발화 끝

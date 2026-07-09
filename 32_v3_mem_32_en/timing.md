@@ -58,24 +58,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Oh, that sounds… good. I was actua | S2 I’m going to Kyoto. In March. | S3 Yes, still working on it. I rememb | S4 Exactly. I— I mean, can you check 
 
-     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you, and 
-     6.22s  user  발화 시작: Yeah.
-     6.58s  user  발화 끝
-     8.05s  user  발화 시작: Oh, that sounds… good. I’m trying to plan a little getaway, 
-     8.07s  agent 발화 끝
-    15.75s  user  발화 끝
-    15.90s  agent 발화 시작: Revisiting a cherished place can be wonderfully restorative.
-    24.43s  agent 발화 끝
-    25.73s  user  발화 시작: I— I mean, I was in Kyoto last March, and it was amazing.
-    29.88s  <ret> 발화 (turn5 첫 프레임)
-    30.22s  user  발화 끝
-    30.28s  agent 발화 시작: <ret> Remembering a positive experience is a great starting 
-    30.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.17s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    37.79s  user  발화 시작: Mm-hmm.
-    38.43s  user  발화 끝
-    40.85s  agent 발화 끝
-    41.05s  user  발화 시작: Yes, exactly! That's what I meant. But I can’t seem to get p
-    49.30s  agent 발화 시작: It’s perfectly normal to feel overwhelmed when planning, eve
-    49.40s  user  발화 끝
-    58.71s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I’m 
+     7.08s  user  발화 시작: Yeah.
+     7.67s  user  발화 끝
+     9.11s  user  발화 시작: Oh, that sounds… good. I was actually thinking about a trip 
+     9.22s  agent 발화 끝
+    14.39s  user  발화 끝
+    14.40s  agent 발화 시작: A trip sounds wonderful! Do you have a destination in mind, 
+    20.61s  agent 발화 끝
+    21.95s  user  발화 시작: I’m going to Kyoto. In March.
+    23.95s  <ret> 발화 (turn5 첫 프레임)
+    24.34s  agent 발화 시작: <ret> That’s a beautiful place. You mentioned Kyoto in March
+    24.34s  user  발화 끝
+    25.07s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.54s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    28.94s  user  발화 시작: Mm-hmm.
+    29.52s  user  발화 끝
+    30.55s  user  발화 시작: Yes, still working on it. I remember we talked about my dent
+    30.88s  agent 발화 끝
+    37.66s  <ret> 발화 (turn8 첫 프레임)
+    37.69s  user  발화 끝
+    37.74s  agent 발화 시작: <ret> Ah yes, I recall that. You’d like to reschedule your a
+    38.16s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.63s]: [2026-07-12] Past chat — Booked a dentist appointment: asked for an ea
+    45.36s  user  발화 시작: Exactly. I— I mean, can you check availability for me?
+    45.57s  agent 발화 끝
+    49.06s  user  발화 끝

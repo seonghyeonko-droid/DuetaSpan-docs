@@ -56,19 +56,21 @@
 # }
 
 
-     0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정해 줄 수 있을까요?
-     4.51s  <ret> 발화 (turn1 첫 프레임)
-     4.90s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정했습니다.
-     4.96s  user  발화 끝
-     6.19s  ⚡SPAN 주입 [d'=1.68s / d_lead=1.73s]: (tool result) The user agent was successfully set to SuperCrawler vers
-     7.14s  user  발화 시작: 아.
-     7.78s  user  발화 끝
-    10.08s  agent 발화 끝
-    10.74s  user  발화 시작: 잠깐만요, 혹시 이게 실제로 적용된 건지 확인해 볼 수 있을까요?
-    14.57s  <ret> 발화 (turn4 첫 프레임)
-    14.72s  agent 발화 시작: <ret> 물론입니다. 확인해 볼게요.
-    14.76s  user  발화 끝
-    15.61s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.61s]: (tool result) The current user agent is SuperCrawler version 10.1.
-    16.31s  agent 발화 시작: 현재 사용자 에이전트는 슈퍼크롤러 버전 십 점 일입니다. 적용되었는지 확인했는데, 제대로 설정되었어요.
-    16.33s  agent 발화 끝
-    22.84s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정해 줄 수 있을까요?
+     4.80s  <ret> 발화 (turn1 첫 프레임)
+     5.14s  user  발화 끝
+     5.19s  agent 발화 시작: <ret> 네, 알겠습니다. 사용자 에이전트를 SuperCrawler 버전 십 점 일로 변경했습니다. 지금 
+     5.60s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.01s]: (tool result) User agent set to SuperCrawler version 10.1.
+     8.12s  user  발화 시작: 아.
+     8.76s  user  발화 끝
+    11.73s  agent 발화 끝
+    12.47s  user  발화 시작: 음… 혹시 지금 제 아이피 주소가 어떻게 나오는지 확인해 줄 수 있을까요?
+    17.38s  user  발화 끝
+    17.43s  agent 발화 시작: [interrupting] 아이피 주소 확인은 왜 필요하신가요? 혹시 개인 정보 보호 때문에 걱정되시는 건가
+    23.29s  user  발화 시작: 아니요, 그냥 제가 지금 사용하는 네트워크 설정을 확인하고 싶어서요.
+    23.40s  agent 발화 끝
+    27.55s  user  발화 끝
+    27.75s  <ret> 발화 (turn6 첫 프레임)
+    28.06s  agent 발화 시작: <ret> 물론입니다. 현재 아이피 주소는 백구십이 점 일 육 팔.일 점 일 영 영입니다. 혹시 다른 네트워
+    28.17s  ⚡SPAN 주입 [d'=0.42s / d_lead=0.42s]: (tool result) Your current IP address is 192.168.1.100.
+    36.39s  agent 발화 끝

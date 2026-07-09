@@ -64,19 +64,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: [happy] 사히하님, 안녕하세요. 저는 리라예요. 돈 관리와 예산 짜는 걸 도와드리는 상담사입니다.
-     6.62s  agent 발화 끝
-     7.22s  user  발화 시작: 리라 씨, 지난번에 차 알아보는 얘기 했었죠? 그 얘기 좀 더 해볼까요?
-    11.87s  <ret> 발화 (turn2 첫 프레임)
-    12.02s  agent 발화 시작: <ret> 네, 기억하고 있어요. 하이브리드 모델을 찾고 계시고, 주행 거리는 삼만 마일 이하를 원하셨죠.
-    12.22s  user  발화 끝
-    12.59s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.58s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
-    18.82s  user  발화 시작: 맞아요. 혹시 지금 시세가 어때요? 좋은 매물이 있으면 알려주세요.
-    18.88s  agent 발화 끝
-    23.22s  <ret> 발화 (turn4 첫 프레임)
-    23.38s  agent 발화 시작: <ret> 토요타 프리우스 이천이십년식이 주행 거리가 이만 오천 마일이고, 가격은 이천이백만 원이에요. 혼다
-    23.54s  user  발화 끝
-    25.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.22s]: (tool result) Toyota Prius 2020, 25000 miles, $22000. Honda Insight 20
-    31.64s  user  발화 시작: 응.
-    31.95s  user  발화 끝
-    36.59s  agent 발화 끝
+     0.00s  agent 발화 시작: [happy] 사히하님, 안녕하세요. 저는 리라라고 해요. 돈 관리와 예산 계획에 대해 도와드리는 상담사입니
+     7.83s  agent 발화 끝
+     8.41s  user  발화 시작: 음… 스위스 여행 말인데, 혹시 제가 언제 가기로 했었죠? 갑자기 기억이 안 나네요.
+    13.71s  <ret> 발화 (turn2 첫 프레임)
+    13.86s  agent 발화 시작: <ret> 스위스 여행 계획을 세우셨었죠. 내년 삼월에 스위스 여행을 계획하고 계셨어요. 혹시 다른 준비는 
+    14.01s  user  발화 끝
+    14.75s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.32s]: [2026-07-14] User is planning a trip to Switzerland in March.
+    19.63s  user  발화 시작: 응.
+    20.13s  user  발화 끝
+    22.97s  user  발화 시작: 엇, 그러네요. 그런데 제가 음식 알레르기가 있잖아요. 혹시 스위스 음식 중에 조심해야 할 게 있을까요?
+    23.14s  agent 발화 끝
+    29.51s  <ret> 발화 (turn5 첫 프레임)
+    29.91s  agent 발화 시작: <ret> 음식 알레르기가 있으시다고 말씀해주셨었죠. 갑각류 알레르기가 있으시니, 스위스에서도 갑각류가 들어
+    30.11s  user  발화 끝
+    31.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.99s]: [2026-04-19] User is allergic to shellfish.
+    40.39s  agent 발화 끝

@@ -63,47 +63,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도가 궁금해. | S2 가격대는 어때? | S3 와, 엄청 비싸네. 혹시 좀 더— | S4 그럼, 아리아 레스토랑으로 예약해 줄 수 있어? 내일 저녁 일
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 해산물— 아니, 잠깐만, 혹시 오페라 하우스 투어도 예약해 줄 | S3 투어 시간이랑 가격이 어떻게 돼? | S4 고마워. 그럼 근처 해산물 레스토랑은?
 
-     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도가 궁금해.
-     3.71s  <ret> 발화 (turn1 첫 프레임)
-     3.78s  agent 발화 시작: <ret> 시드니 오페라 하우스의 좌표를 알려드릴게요. 시드니 오페라 하우스는 위도 마이너스 삼십삼 점 팔오
-     3.83s  user  발화 끝
-     5.15s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.81s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
-     8.42s  user  발화 시작: 응.
-     8.83s  user  발화 끝
-    14.45s  agent 발화 끝
-    14.54s  user  발화 시작: 음… 그 근처에 괜찮은 레스토랑 있을까?
-    17.80s  <ret> 발화 (turn4 첫 프레임)
-    18.11s  user  발화 끝
-    18.19s  agent 발화 시작: <ret> 근처 레스토랑을 찾아볼게요. 아리아 레스토랑이 시드니 오페라 하우스에서 영 점 팔킬로미터 거리에 
-    18.84s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.49s]: (tool result) Aria Restaurant is 0.8km from the Sydney Opera House and
-    26.62s  agent 발화 끝
-    27.87s  user  발화 시작: 가격대는 어때?
-    28.94s  <ret> 발화 (turn6 첫 프레임)
-    29.34s  agent 발화 시작: <ret> 아리아 레스토랑의 가격대를 알아볼게요. 아리아 레스토랑은 가격대가 매우 비싼 편입니다.
-    29.34s  user  발화 끝
-    30.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.26s]: (tool result) Aria Restaurant has a price range of $$$$ (Very Expensiv
-    34.93s  user  발화 시작: 와, 엄청 비싸네. 혹시 좀 더—
-    34.99s  agent 발화 끝
-    37.83s  user  발화 시작: 분위기는 어때? 조용하고 로맨틱한 곳으로 알고 싶은데.
-    37.97s  user  발화 끝
-    41.62s  <ret> 발화 (turn9 첫 프레임)
-    41.77s  agent 발화 시작: <ret> 아, 분위기를 중요하게 생각하시는군요. 아리아 레스토랑은 고급스러운 분위기로 알려져 있습니다.
-    41.85s  user  발화 끝
-    43.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) Aria Restaurant is described as romantic, classy, and up
-    47.87s  agent 발화 시작: 아리아 레스토랑은 로맨틱하고 세련된 분위기라고 합니다.
-    47.88s  agent 발화 끝
-    49.23s  user  발화 시작: 응.
-    49.45s  user  발화 끝
-    51.24s  agent 발화 끝
-    51.28s  agent 발화 시작: 고급스러운 분위기에서 특별한 시간을 보내기에 좋을 것 같아요.
-    53.78s  user  발화 시작: 그니까.
-    54.23s  user  발화 끝
-    55.12s  agent 발화 끝
-    55.85s  user  발화 시작: 그럼, 아리아 레스토랑으로 예약해 줄 수 있어? 내일 저녁 일곱시에 두 명으로.
-    61.57s  <ret> 발화 (turn15 첫 프레임)
-    61.89s  agent 발화 시작: <ret> 내일 저녁 일곱시에 아리아 레스토랑 두 분 예약해 드릴게요. 아리아 레스토랑 내일 저녁 일곱시 두
-    62.13s  user  발화 끝
-    63.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.71s]: (tool result) Reservation confirmed at Aria Restaurant for tomorrow at
-    72.88s  agent 발화 끝
+     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
+     3.45s  <ret> 발화 (turn1 첫 프레임)
+     3.52s  agent 발화 시작: <ret> 잠시만요, 확인해 볼게요— 시드니 오페라 하우스는 위도 마이너스 삼십삼 점 팔오육팔, 경도 백오십
+     3.60s  user  발화 끝
+     5.05s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.68s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
+     8.59s  user  발화 시작: 응.
+     8.89s  user  발화 끝
+    13.03s  agent 발화 끝
+    13.13s  user  발화 시작: 음, 그건 알겠는데, 근처에 괜찮은 레스토랑도 찾아줄 수 있어?
+    18.13s  user  발화 끝
+    18.44s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 선호하시나요?
+    21.49s  agent 발화 끝
+    22.80s  user  발화 시작: 해산물— 아니, 잠깐만, 혹시 오페라 하우스 투어도 예약해 줄 수 있어?
+    29.04s  user  발화 끝
+    29.29s  agent 발화 시작: 오페라 하우스 투어는—
+    30.30s  user  발화 시작: 투어 시간이랑 가격이 어떻게 돼?
+    30.89s  agent 발화 끝
+    32.23s  <ret> 발화 (turn8 첫 프레임)
+    32.62s  agent 발화 시작: <ret> 투어 시간과 가격을 알려드릴게요— 다음 투어는 오전 열 시에 시작하며, 일인당 삼십오 호주 달러입
+    32.88s  user  발화 끝
+    33.27s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.93s]: (tool result) The next tour is at 10:00 AM, costing 35 AUD per person.
+    34.97s  user  발화 시작: 와.
+    35.69s  user  발화 끝
+    39.27s  agent 발화 시작: 투어를 예약하시겠어요?
+    39.39s  agent 발화 끝
+    40.73s  agent 발화 끝
+    40.83s  user  발화 시작: 응, 두 명으로 예약해 줘.
+    42.65s  <ret> 발화 (turn12 첫 프레임)
+    42.97s  agent 발화 시작: <ret> 네, 예약을 진행하겠습니다.
+    43.14s  user  발화 끝
+    44.09s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.75s]: (tool result) Reservation confirmed for 2 people at 10:00 AM, confirma
+    44.72s  agent 발화 끝
+    44.85s  agent 발화 시작: 두 분 투어 예약이 완료되었습니다. 확인 번호는 칠만 팔천 구백 사십육입니다.
+    50.18s  agent 발화 끝
+    50.61s  user  발화 시작: 고마워. 그럼 근처 해산물 레스토랑은?
+    54.12s  user  발화 끝
+    54.18s  agent 발화 시작: 잠시만 기다려 주세요—
+    55.22s  <ret> 발화 (turn16 첫 프레임)
+    55.45s  agent 발화 시작: <ret> 가장 가까운 해산물 레스토랑은 “시드니 코브 오이스터 바”이며, 거리는 영 점 오킬로미터이고 평점
+    55.47s  agent 발화 끝
+    57.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) The closest seafood restaurant is “Sydney Cove Oyster Ba
+    63.42s  agent 발화 끝

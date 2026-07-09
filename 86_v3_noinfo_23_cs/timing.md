@@ -63,81 +63,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어제 12월 24일 도쿄 날씨가 어땠어? | S2 완벽해! 예약해 줘. | S3 클레이 도쿄… 흠. 가격은 얼마 정도 해? | S4 오, 괜찮네. 고마워!
+# EXAMINER(FDB-v2) 단계: S1 도쿄 작년 12월 24일 날씨가 어땠어? | S2 오, 잘 됐네! 고마워. 와이파이 있어? | S3 그냥 “Everything is progressing as p | S4 그렇겠지. 좋은 명상 앱 추천해 줄래?
 
-     0.00s  user  발화 시작: 어제 12월 24일 도쿄 날씨가 어땠어?
-     2.92s  <ret> 발화 (turn1 첫 프레임)
-     3.08s  agent 발화 시작: <ret> 네, 확인해 드릴게요. 작년 12월 24일 도쿄는 맑은 하늘이었고, 최고 기온은 12도, 최저 기
-     3.24s  user  발화 끝
-     4.37s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.81s]: (tool result) The weather in Tokyo on December twenty-fourth, 2023 was
-    11.10s  agent 발화 끝
-    11.55s  user  발화 시작: 으, 추웠겠네. 음, 시부야역 근처에 괜찮은 아늑한 카페 좀 찾아 줄래?
-    16.97s  <ret> 발화 (turn3 첫 프레임)
-    17.37s  agent 발화 시작: <ret> 네, 물론 도와드릴 수 있어요. 시부야역 근처에 아늑한 카페 세 곳을 찾았어요: 카페 론 론, 스
-    17.48s  user  발화 끝
-    18.25s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.62s]: (tool result) Found three cozy cafes near Shibuya Station: Cafe Ron Ro
-    21.80s  user  발화 시작: 응.
-    22.29s  user  발화 끝
-    26.55s  agent 발화 끝
-    27.69s  user  발화 시작: 스트리머 커피 컴퍼니— 거기 좋다고 들었어. 사람이 많아?
-    31.94s  user  발화 끝
-    32.03s  agent 발화 시작: 네, 꽤 인기가 많아서, 특히 주말에는 붐빌 수 있어요.
-    34.59s  user  발화 시작: 음.
-    35.08s  user  발화 끝
-    35.77s  agent 발화 끝
-    35.88s  user  발화 시작: 알았어. 혹시 지금 두 명 자리 있는지 알아봐 줄래?
-    39.31s  <ret> 발화 (turn9 첫 프레임)
-    39.39s  agent 발화 시작: <ret> 네, 확인해 볼게요. 스트리머 커피 컴퍼니에 오늘 오후 3시 30분에 두 명 자리가 있어요.
-    39.39s  user  발화 끝
-    39.81s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.13s]: (tool result) Streamer Coffee Company has one table available for two 
-    45.37s  agent 발화 끝
-    46.35s  user  발화 시작: 완벽해! 예약해 줘.
-    47.63s  <ret> 발화 (turn11 첫 프레임)
-    48.03s  agent 발화 시작: <ret> 네, 그럼 예약해 드릴게요. 스트리머 커피 컴퍼니에 두 명, 오후 3시 30분으로 예약 완료됐습니
-    48.28s  user  발화 끝
-    49.15s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.08s]: (tool result) Reservation confirmed at Streamer Coffee Company for two
-    54.19s  agent 발화 끝
-    54.30s  user  발화 시작: 정말 고마워!
-    55.40s  agent 발화 시작: 천만에요! 기대되는 일이 있으면 기분 전환이 되죠.
-    55.49s  user  발화 끝
-    59.89s  agent 발화 끝
-    59.99s  user  발화 시작: 아— 그러니까, 도자기 수업 들어볼까 생각 중이야. 근처에 괜찮은 곳 알아?
-    64.81s  <ret> 발화 (turn15 첫 프레임)
-    65.21s  agent 발화 시작: <ret> 네, 도자기 수업을 알아봐 드릴게요. 시부야역 근처에 클레이 도쿄와 포터리 랩이 수업을 제공하고 
-    65.41s  user  발화 끝
-    66.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.38s]: (tool result) Found two pottery studios near Shibuya Station: Clay Tok
-    71.62s  user  발화 시작: 클레이 도쿄… 흠. 가격은 얼마 정도 해?
-    72.02s  agent 발화 끝
-    75.03s  <ret> 발화 (turn17 첫 프레임)
-    75.35s  agent 발화 시작: <ret> 네, 가격 옵션을 확인해 볼게요. 클레이 도쿄의 하루 체험 수업은 6,000엔부터 시작하고, 월간
-    75.50s  user  발화 끝
-    75.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.00s]: (tool result) Clay Tokyo offers one-day classes starting at 6,000 yen 
-    82.85s  agent 발화 끝
-    83.39s  user  발화 시작: 좀 비싸네… 더 싼 데 없어?
-    85.58s  agent 발화 시작: 수업 종류에 따라 다르지만, 일반적으로 도자기는 꽤 투자가 필요할 수 있어요.
-    85.69s  user  발화 끝
-    89.12s  user  발화 시작: 응.
-    89.34s  user  발화 끝
-    90.57s  agent 발화 끝
-    91.30s  user  발화 시작: 그래, 맞는 말이야. 좋아, 도자기는 나중에 생각하고. 시부야에서 신주쿠역까지 가는 교통 상황은 어때?
-    97.89s  <ret> 발화 (turn22 첫 프레임)
-    98.05s  agent 발화 시작: <ret> 네, 현재 교통 상황을 확인해 볼게요. JR 야마노테선은 교통량이 보통이고, 20분 정도 소요될 
-    98.30s  user  발화 끝
-    99.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.59s]: (tool result) Moderate traffic on the JR Yamanote Line; estimated trav
-   105.74s  agent 발화 끝
-   107.04s  user  발화 시작: 오, 괜찮네. 고마워!
-   108.87s  agent 발화 시작: 물론이죠. 특히 출퇴근 시간에는 미리 계획하면 스트레스를 줄일 수 있어요.
-   108.98s  user  발화 끝
-   110.53s  user  발화 시작: 어어.
-   111.35s  user  발화 끝
-   114.19s  agent 발화 끝
-   114.40s  user  발화 시작: 어. [happy] 그렇지! 있잖아, 내가 봤던 마케팅 포지션에 지원해 볼까?
-   119.50s  user  발화 끝
-   119.59s  agent 발화 시작: 네, 중요한 결정이네요! 그 역할의 어떤 점이 가장 마음에 드세요?
-   121.78s  user  발화 시작: 응.
-   122.27s  user  발화 끝
-   124.31s  agent 발화 끝
-   124.88s  user  발화 시작: 음, 내 기술에 잘 맞는 것 같긴 한데, 회사 문화가 좀… 강렬해 보여.
-   129.53s  agent 발화 시작: 기회와 환경 모두를 고려하는 것이 현명해요. 좋은 환경이 중요하죠.
-   129.69s  user  발화 끝
-   134.39s  agent 발화 끝
+     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
+     3.26s  <ret> 발화 (turn1 첫 프레임)
+     3.42s  agent 발화 시작: <ret> 알아볼게요. 작년 12월 24일 도쿄는 맑았고, 기온은 2도에서 7도 사이였어요.
+     3.56s  user  발화 끝
+     4.71s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.59s]: (tool result) The weather in Tokyo on December twenty-fourth, twenty t
+     5.42s  user  발화 시작: 응.
+     5.86s  user  발화 끝
+     9.60s  user  발화 시작: 추운 것 같네. 음, 근처에 괜찮은 카페 좀 찾아줄래? 리뷰 좋은 곳으로.
+     9.63s  agent 발화 끝
+    13.94s  <ret> 발화 (turn4 첫 프레임)
+    14.34s  agent 발화 시작: <ret> 물론이죠, 근처 카페를 검색해 드릴게요. 근처에 두 군데가 있어요—카페 아로마는 0.5킬로미터 거
+    14.41s  user  발화 끝
+    15.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.34s]: (tool result) “Cafe Aroma” is 0.5 kilometers away with 4.6 stars from 
+    27.69s  agent 발화 끝
+    28.51s  user  발화 시작: 흠, 아로마가 더 나은 것 같아. 지금 테이블 있는지 알아봐 줄래?
+    32.41s  <ret> 발화 (turn6 첫 프레임)
+    32.65s  agent 발화 시작: <ret> 카페 아로마의 테이블 상황을 확인해 볼게요. 카페 아로마에는 현재 워크인 테이블이 세 개 있어요.
+    32.81s  user  발화 끝
+    33.37s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.06s]: (tool result) Cafe Aroma has three tables available now.
+    38.77s  agent 발화 끝
+    39.01s  user  발화 시작: 좋아! 내가— 그러니까, 한 명 자리 예약해 줄래?
+    42.80s  <ret> 발화 (turn8 첫 프레임)
+    42.88s  agent 발화 시작: <ret> 예약해 드릴 수 있어요. 카페 아로마에 2시 30분에 한 명 자리로 예약했어요. 확인 번호는 87
+    43.08s  user  발화 끝
+    44.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.86s]: (tool result) Reservation confirmed at Cafe Aroma for one person at 2:
+    50.00s  user  발화 시작: 오, 잘 됐네! 고마워. 와이파이 있어?
+    50.11s  agent 발화 끝
+    53.14s  agent 발화 시작: 요즘 대부분 카페에 다 있어요, 흔하거든요.
+    53.38s  user  발화 끝
+    55.68s  agent 발화 끝
+    55.81s  user  발화 시작: 그래. 알았어. 급하게 이메일 보내야 하는데, 도와줄래?
+    59.74s  user  발화 끝
+    59.80s  agent 발화 시작: 물론이죠, 이메일 작성을 도와드리고 보낼 수 있어요. 누구에게 보내실 건가요?
+    64.92s  user  발화 시작: 보스, 엘레노어 밴스에게. 제목은 “Quick Update”로 해 줘.
+    64.95s  agent 발화 끝
+    69.60s  user  발화 끝
+    69.66s  agent 발화 시작: 이메일 본문은 뭐라고 적을까요?
+    71.73s  user  발화 시작: 그냥 “Everything is progressing as planned. Will send a full r
+    71.74s  agent 발화 끝
+    77.43s  <ret> 발화 (turn16 첫 프레임)
+    77.61s  user  발화 끝
+    77.83s  agent 발화 시작: <ret> 이메일을 보낼 준비가 되면 말씀해 주세요. 엘레노어 밴스에게 이메일을 보냈어요. 더 필요한 건 없
+    79.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.41s]: (tool result) Email sent to Eleanor Vance with subject "Quick Update" 
+    80.77s  user  발화 시작: 음.
+    81.26s  user  발화 끝
+    84.30s  user  발화 시작: 사실, 응. 그 보고서 때문에 너무 스트레스 받아. 조언 좀 해 줘.
+    84.69s  agent 발화 끝
+    89.07s  agent 발화 시작: 큰 보고서를 앞두고 스트레스를 받는 건 당연해요. 작은 작업으로 나눠서 해 보세요.
+    89.20s  user  발화 끝
+    94.25s  agent 발화 끝
+    94.73s  user  발화 시작: 그건 좋은 생각인데… 너무 벅차.
+    97.07s  agent 발화 시작: 벅차다고 느끼는 건 괜찮아요. 가장 중요한 부분부터 우선순위를 정하고, 완벽하려고 하지 마세요.
+    97.23s  user  발화 끝
+   101.28s  user  발화 시작: 응.
+   101.73s  user  발화 끝
+   103.82s  agent 발화 끝
+   104.52s  user  발화 시작: 그렇겠지. 좋은 명상 앱 추천해 줄래?
+   107.26s  <ret> 발화 (turn24 첫 프레임)
+   107.58s  agent 발화 시작: <ret> 훌륭한 명상 앱이 많이 있어요. “Calm”은 별점 4.8에 다운로드 수가 백만 건이 넘고, “H
+   107.85s  user  발화 끝
+   108.54s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.01s]: (tool result) “Calm” has a 4.8-star rating and 1 million+ downloads. “
+   111.31s  user  발화 시작: 어어.
+   111.93s  user  발화 끝
+   119.04s  agent 발화 끝
+   120.73s  user  발화 시작: Calm이 인기 있는 것 같네. 오늘 밤 8시에 사용해 보라고 알림 설정해 줄래?
+   125.16s  <ret> 발화 (turn27 첫 프레임)
+   125.31s  agent 발화 시작: <ret> 알림을 설정해 드릴 수 있어요. 오늘 밤 8시에 Calm 앱을 사용해 보라는 알림이 설정됐어요. 
+   125.45s  user  발화 끝
+   127.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.28s]: (tool result) Reminder set for 8:00 PM today: "Try the Calm meditation
+   128.89s  user  발화 시작: 응.
+   129.11s  user  발화 끝
+   134.40s  agent 발화 끝
+   134.57s  user  발화 시작: 고마워, 브레. 정말 고마워.
+   136.55s  user  발화 끝
+   136.81s  agent 발화 시작: 천만에요. 작은 노력이 스트레스 관리에 큰 도움이 될 수 있다는 것을 기억하세요.
+   142.55s  agent 발화 끝

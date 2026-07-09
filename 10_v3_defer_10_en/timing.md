@@ -76,32 +76,32 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Oh, great! Can you send “Paris_Eif | S3 Perfect, thank you! Uh, I was also | S4 Okay, thanks. I— I mean, anytime n
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Oh, excellent! Can you send the Pa | S3 Great, thanks so much! But… what w | S4 Okay, sounds good.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.84s  <ret> 발화 (turn1 첫 프레임)
-     4.88s  agent 발화 시작: <ret> I found three pictures from your France trip last year
-     5.10s  user  발화 끝
-     6.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) Three files were found: "Paris_Eiffel_Tower.jpg", "Nice_
-     7.63s  user  발화 시작: Mhm.
-     7.94s  user  발화 끝
-     9.38s  agent 발화 끝
-    10.14s  user  발화 시작: Oh, great! Can you send “Paris_Eiffel_Tower.jpg” to my siste
-    17.50s  <ret> 발화 (turn4 첫 프레임)
-    17.79s  agent 발화 시작: <ret> I’ve just emailed the Eiffel Tower picture to Anna at 
-    17.97s  user  발화 끝
-    18.54s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.25s]: (tool result) Email sent to anna@example.com with the attachment "Pari
-    19.85s  user  발화 시작: Really?
-    20.48s  user  발화 끝
-    24.04s  agent 발화 끝
-    24.55s  user  발화 시작: Perfect, thank you! Uh, I was also wondering about flights t
-    28.91s  agent 발화 시작: Let me check on flight availability to Italy for you. Give m
-    28.99s  user  발화 끝
-    31.36s  user  발화 시작: Mhm.
-    31.83s  user  발화 끝
-    33.09s  user  발화 시작: Okay, thanks. I— I mean, anytime next month would work.
-    33.22s  agent 발화 끝
-    35.30s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Flights to Rome next month range from $650 to $980, with
-    36.25s  agent 발화 시작: <ret> Regarding flights to Italy, I have some options. Fligh
-    36.47s  user  발화 끝
-    41.76s  agent 발화 끝
+     4.18s  <ret> 발화 (turn1 첫 프레임)
+     4.25s  agent 발화 시작: <ret> I located three photos from your France trip last year
+     4.39s  user  발화 끝
+     6.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.89s]: (tool result) Found three files: "Paris_EiffelTower.jpg", "Nice_Beach.
+     7.22s  user  발화 시작: Mhm.
+     7.53s  user  발화 끝
+     9.15s  agent 발화 끝
+     9.83s  user  발화 시작: Oh, excellent! Can you send the Paris one to my sister, her 
+    16.02s  <ret> 발화 (turn4 첫 프레임)
+    16.33s  agent 발화 시작: <ret> I’ve just emailed the Eiffel Tower photo to Anna with 
+    16.49s  user  발화 끝
+    17.06s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.19s]: (tool result) Email sent to anna.rossi@email.com with attachment "Pari
+    19.59s  user  발화 시작: Yeah.
+    20.08s  user  발화 끝
+    21.52s  agent 발화 끝
+    22.01s  user  발화 시작: Great, thanks so much! But… what was the weather like in Lyo
+    26.61s  agent 발화 시작: Give me a moment to check the historical weather data for Ly
+    26.69s  user  발화 끝
+    29.16s  user  발화 시작: Yeah.
+    29.80s  user  발화 끝
+    30.08s  agent 발화 끝
+    30.09s  user  발화 시작: Okay, sounds good.
+    30.29s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The weather in Lyon on July 15, 2023, was 28 degrees Cel
+    31.22s  agent 발화 시작: <ret> Let’s see… On July fifteenth, two thousand twenty-thre
+    31.42s  user  발화 끝
+    37.48s  agent 발화 끝

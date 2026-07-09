@@ -58,27 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨 “Beat It” 기타 솔로를 누가  | S2 저기요, 혹시 냉동실에서 닭고기 꺼내 놓으셨어요? | S3 죄송해요. 그럼, 반 헤일런은 그냥… 하기로 동의한 건가요?  | S4 정말 멋지네요. 퀸시 존스는 분명 뭘 하고 싶은지 알고 있었던
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨의 "Beat It" 기타 솔로를 누가 | S2 와, 잭슨의 단골 밴드 멤버 중 한 명이 연주했을 거라고 생각 | S3 저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요? | S4 아, 죄송해요. 제가 무슨 말을 하려 했었죠? 아, 맞다—반 
 
-     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨 “Beat It” 기타 솔로를 누가 연주했는지 궁금했는데, 다른 곡들하고는 좀 다른
-     7.43s  <ret> 발화 (turn1 첫 프레임)
-     7.46s  user  발화 끝
-     7.75s  agent 발화 시작: <ret> 네, 정말 유명한 사운드에 대한 좋은 질문이세요. “Beat It” 기타 솔로는 에디 반 헤일런이
-     9.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.37s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-    10.61s  user  발화 시작: 예.
-    10.92s  user  발화 끝
-    14.98s  user  발화 시작: 와, 에디 반 헤일런이요? 좀… 뜻밖인데요. 잭슨 밴드에 있는 사람이 연주했을 거라고 생각했어요.
-    15.03s  agent 발화 끝
-    22.04s  user  발화 시작: 저기요, 혹시 냉동실에서 닭고기 꺼내 놓으셨어요?
-    22.11s  user  발화 끝
-    25.90s  user  발화 시작: 죄송해요. 그럼, 반 헤일런은 그냥… 하기로 동의한 건가요? 마이클과 친구였나요?
-    25.97s  user  발화 끝
-    31.73s  <ret> 발화 (turn6 첫 프레임)
-    32.13s  agent 발화 시작: <ret> 음, 퀸시 존스의 비전에 의한 협업이었던 것 같아요. 그는 반 헤일런의 연주를 존경했고 그 에너지
-    32.24s  user  발화 끝
-    33.41s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.74s]: Quincy Jones requested Eddie Van Halen play on “Beat It” despite recor
-    39.86s  agent 발화 시작: 퀸시 존스가 에디 반 헤일런에게 “Beat It”에 참여해 달라고 요청했는데, 레코드 회사는 약간 망설였다고
-    39.86s  agent 발화 끝
-    46.85s  user  발화 시작: 정말 멋지네요. 퀸시 존스는 분명 뭘 하고 싶은지 알고 있었던 것 같아요. 감사합니다, 잘.
-    46.94s  agent 발화 끝
-    52.69s  user  발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨의 "Beat It" 기타 솔로를 누가 연주했는지 궁금했거든요. 정말 유명한 사운드잖
+     7.94s  <ret> 발화 (turn1 첫 프레임)
+     8.02s  user  발화 끝
+     8.26s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 그 멋진 기타 솔로는 에디 반 헤일런이 연주한 것으로 알려져 있습니다.
+     9.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.80s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+    12.94s  user  발화 시작: 예.
+    13.43s  user  발화 끝
+    14.51s  user  발화 시작: 와, 잭슨의 단골 밴드 멤버 중 한 명이 연주했을 거라고 생각했었는데.
+    14.56s  agent 발화 끝
+    18.97s  agent 발화 시작: 사실 흔히 오해하시는 부분이에요. 그는 그 노래에 뭔가 다른 느낌을 원했고, 에디가 그걸 정말 잘 해냈어요.
+    19.09s  user  발화 끝
+    26.25s  agent 발화 끝
+    26.49s  user  발화 시작: 저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요?
+    30.12s  user  발화 시작: 아, 죄송해요. 제가 무슨 말을 하려 했었죠? 아, 맞다—반 헤일런은 "Beat It" 전에 유명한 뮤지션이
+    30.33s  user  발화 끝
+    35.89s  <ret> 발화 (turn7 첫 프레임)
+    36.21s  agent 발화 시작: <ret> 네, 물론이었어요. 에디 반 헤일런은 천구백칠십이 년에 밴드 반 헤일런을 결성하고 빠르게 명성을 
+    36.42s  user  발화 끝
+    37.49s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.71s]: Eddie Van Halen gained prominence as the guitarist and founder of the 
+    43.81s  agent 발화 끝

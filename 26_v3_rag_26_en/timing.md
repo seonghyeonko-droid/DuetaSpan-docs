@@ -58,35 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, I’m working on a geography pro | S2 Gold? I thought it was yellow. Doe | S3 Right. Is there any other flag wit | S4 I think I’m good on flags for now.
+# EXAMINER(FDB-v2) 단계: S1 So, uh, I was wondering… what coun | S2 Oh, okay. That makes sense. My gra | S3 Right, she had a huge collection.  | S4 Nineteen ninety, got it. It's been
 
-     0.00s  user  발화 시작: So, I’m working on a geography project, and it’s…uh…a bit of
-     8.44s  user  발화 끝
-     8.56s  agent 발화 시작: Oh, geography projects can be tricky! It's good you're tackl
-    16.62s  agent 발화 끝
-    17.25s  user  발화 시작: Okay, so it's a flag that has black, red, and yellow on it. 
-    22.05s  <ret> 발화 (turn3 첫 프레임)
-    22.29s  agent 발화 시작: <ret> That color combination is quite distinctive. The flag 
-    22.43s  user  발화 끝
-    23.09s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.22s]: The flag of Germany features horizontal bands of black, red, and gold.
-    25.90s  user  발화 시작: Right.
-    26.40s  user  발화 끝
-    30.08s  agent 발화 끝
-    30.92s  user  발화 시작: Gold? I thought it was yellow. Doesn’t matter, I guess. My t
-    38.24s  agent 발화 시작: [laugh] Details *do* matter, especially with flags! It’s eas
-    38.24s  user  발화 끝
-    44.86s  agent 발화 끝
-    46.19s  user  발화 시작: Right. Is there any other flag with those colors? I’m just t
-    52.46s  <ret> 발화 (turn8 첫 프레임)
-    52.77s  agent 발화 시작: <ret> Actually, Belgium also uses similar colors. The flag o
-    52.91s  user  발화 끝
-    53.82s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.58s]: The flag of Belgium consists of three vertical bands of black, yellow,
-    60.92s  agent 발화 끝
-    61.37s  user  발화 시작: Oh, that's…different. Vertical bands, huh? Okay, good to kno
-    67.77s  agent 발화 시작: I’m glad to hear that! Sometimes a slight shift in arrangeme
-    67.85s  user  발화 끝
-    73.33s  agent 발화 끝
-    73.80s  user  발화 시작: I think I’m good on flags for now. Thanks, Kiora. I really a
-    80.10s  user  발화 끝
-    80.55s  agent 발화 시작: You're very welcome! Remember, breaking down a big project i
-    87.36s  agent 발화 끝
+     0.00s  user  발화 시작: So, uh, I was wondering… what country flag is black, red, an
+     5.48s  <ret> 발화 (turn1 첫 프레임)
+     5.71s  agent 발화 시작: <ret> That’s a good question, and a very recognizable combin
+     5.75s  user  발화 끝
+     7.24s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.44s]: The flag of Germany features three horizontal bands of black, red, and
+    13.73s  agent 발화 끝
+    14.26s  user  발화 시작: Oh, okay. That makes sense. My grandmother collected flags, 
+    19.46s  agent 발화 시작: That’s a lovely hobby! It’s wonderful to connect with family
+    19.59s  user  발화 끝
+    22.25s  user  발화 시작: Right.
+    22.74s  user  발화 끝
+    25.53s  agent 발화 끝
+    26.37s  user  발화 시작: Right, she had a huge collection. Hmm… what’s the capital of
+    31.03s  <ret> 발화 (turn6 첫 프레임)
+    31.35s  agent 발화 시작: <ret> Germany has a fascinating history and a vibrant capita
+    31.46s  user  발화 끝
+    32.31s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.03s]: Berlin became the capital of Germany in 1990, following German reunifi
+    39.41s  agent 발화 끝
+    40.91s  user  발화 시작: Nineteen ninety, got it. It's been a while since history cla
+    46.19s  agent 발화 시작: It certainly is! Berlin is a major European center for cultu
+    46.19s  user  발화 끝
+    53.23s  agent 발화 끝
