@@ -76,75 +76,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a beautiful name. Is t | S2 Right. | S3 I guess… maybe I could take some c | S4 I never thought of it like that.
+# EXAMINER(FDB-v2) 단계: S1 Oh, Bir… that’s a pretty name. Is  | S2 It's like… everyone else has a pla | S3 Core values? Like… honesty and kin | S4 I'm also worried about disappointi
 
-     0.00s  agent 발화 시작: 연영, it’s lovely to connect with you. I’m Bir, and I offer su
-     6.44s  user  발화 시작: Bir… that’s a beautiful name. Is that… traditional? I'm a li
-     6.63s  agent 발화 끝
-    12.44s  agent 발화 시작: It’s a name with roots in my own heritage, yes. And it’s per
-    12.56s  user  발화 끝
-    21.29s  user  발화 시작: It's just… everything feels so uncertain right now. I just f
-    21.44s  agent 발화 끝
-    26.62s  user  발화 끝
-    26.67s  agent 발화 시작: That’s a significant transition. Finishing university is a h
-    36.46s  agent 발화 끝
-    36.57s  user  발화 시작: I— I mean, everyone expects me to know what's next, but I re
-    40.78s  agent 발화 시작: Expectations can be heavy burdens, especially when they aren
-    40.92s  user  발화 끝
-    48.70s  user  발화 시작: My parents keep asking about jobs… or further study. It’s ex
-    49.07s  agent 발화 끝
-    54.11s  user  발화 끝
-    54.13s  agent 발화 시작: It sounds like you’re feeling a lot of pressure. It’s common
-    61.58s  agent 발화 끝
-    62.49s  user  발화 시작: Right.
-    62.99s  user  발화 끝
-    63.04s  agent 발화 시작: Perhaps we could explore what *you* truly want, without the 
-    69.43s  user  발화 시작: Yeah.
-    69.87s  user  발화 끝
-    71.52s  agent 발화 끝
-    71.64s  user  발화 시작: I’ve always loved art… but it feels impractical.
-    75.88s  agent 발화 시작: “Impractical” is often just another word for “different”. Ma
-    75.90s  user  발화 끝
-    79.05s  user  발화 시작: Really?
-    79.88s  user  발화 끝
-    84.27s  agent 발화 끝
-    84.30s  user  발화 시작: It’s just… a space where I can really *be* myself. I feel fr
-    90.76s  agent 발화 시작: That’s a beautiful feeling, 연영. Finding spaces where we feel
-    90.86s  user  발화 끝
-    98.33s  user  발화 시작: But how do you… make a life from that? Seoul is so competiti
-    98.40s  agent 발화 끝
-   103.05s  agent 발화 시작: It’s understandable to feel daunted by competition. We can e
-   103.24s  user  발화 끝
-   112.04s  user  발화 시작: I guess… maybe I could take some classes? Just to keep it go
-   112.22s  agent 발화 끝
-   116.39s  user  발화 끝
-   116.56s  agent 발화 시작: That sounds like a gentle step, a way to honor your passion 
-   125.08s  agent 발화 끝
-   125.60s  user  발화 시작: It's just hard to imagine a future I actually want, you know
-   128.76s  agent 발화 시작: It takes courage to even *allow* yourself to imagine, 연영. Gr
-   128.79s  user  발화 끝
-   137.48s  agent 발화 끝
-   138.65s  user  발화 시작: Grief? I haven't lost anyone.
-   141.33s  agent 발화 시작: Grief isn't always about loss through death. It can be a sad
-   141.38s  user  발화 끝
-   146.21s  user  발화 시작: Yeah.
-   146.71s  user  발화 끝
-   149.02s  agent 발화 끝
-   149.25s  user  발화 시작: So, it’s okay to be sad about… not knowing what I want?
-   153.68s  agent 발화 시작: Absolutely. It's perfectly okay to grieve the uncertainty an
-   153.73s  user  발화 끝
-   157.91s  user  발화 시작: Yeah.
-   158.36s  user  발화 끝
-   160.67s  user  발화 시작: I never thought of it like that.
-   161.04s  agent 발화 끝
-   162.09s  user  발화 끝
-   162.39s  agent 발화 시작: Often, simply naming the feeling can lessen its power. It’s 
-   168.75s  user  발화 시작: Maybe… maybe you’re right. It’s a relief, actually.
-   168.98s  agent 발화 끝
-   172.54s  user  발화 끝
-   172.60s  agent 발화 시작: I’m glad to hear that. Sometimes, simply being heard can off
-   177.99s  user  발화 시작: It feels… lighter now. Thank you, Bir.
-   178.07s  agent 발화 끝
-   181.48s  agent 발화 시작: You're very welcome, 연영. Remember, the journey of self-disco
-   181.50s  user  발화 끝
-   189.50s  agent 발화 끝
+     0.00s  agent 발화 시작: 연영, it’s lovely to connect with you. My name is Bir, and I’m
+     8.54s  user  발화 시작: Oh, Bir… that’s a pretty name. Is it… a Korean name? It does
+     8.76s  agent 발화 끝
+    15.30s  agent 발화 시작: It isn’t, no. It’s a name from my family’s heritage, a bit f
+    15.40s  user  발화 끝
+    27.71s  user  발화 시작: [surprised] Oh, wow. I didn't expect that. So, you're not… f
+    27.78s  agent 발화 끝
+    32.75s  user  발화 끝
+    32.88s  agent 발화 시작: Seoul is a beautiful city, and I’m glad to be connecting wit
+    42.20s  agent 발화 끝
+    42.33s  user  발화 시작: Across the ocean? America? Canada? You don't have to be spec
+    47.91s  agent 발화 시작: That's right, I don't need to share exact locations. It’s mo
+    48.07s  user  발화 끝
+    55.15s  user  발화 시작: Yeah.
+    55.64s  user  발화 끝
+    57.55s  agent 발화 끝
+    58.76s  user  발화 시작: Well, um… things are just… a lot right now. I just finished 
+    66.46s  user  발화 끝
+    66.86s  agent 발화 시작: That’s incredibly common, especially after a significant cha
+    70.93s  user  발화 시작: Really?
+    71.75s  user  발화 끝
+    77.53s  agent 발화 끝
+    77.62s  user  발화 시작: It's like… everyone else has a plan, you know? And I'm just…
+    82.06s  user  발화 끝
+    82.28s  agent 발화 시작: It’s easy to fall into the comparison trap, seeing others’ p
+    88.43s  user  발화 시작: Yeah, yeah.
+    90.32s  user  발화 끝
+    92.29s  agent 발화 시작: Sometimes, the most profound growth happens in those moments
+    92.34s  agent 발화 끝
+   101.82s  user  발화 시작: But what if I *need* a plan? My parents are really pushing m
+   102.49s  agent 발화 끝
+   107.05s  agent 발화 시작: Ah, that pressure from family can be quite intense. It’s nat
+   107.10s  user  발화 끝
+   117.29s  user  발화 시작: It’s just… they sacrificed so much for me to get a good educ
+   117.38s  agent 발화 끝
+   122.66s  user  발화 끝
+   122.80s  agent 발화 시작: That sense of obligation is very strong, and it speaks to yo
+   133.32s  agent 발화 끝
+   134.02s  user  발화 시작: I— I mean, I guess not. But what do I *do*? I have so many o
+   140.81s  agent 발화 시작: It sounds like you’re experiencing a beautiful abundance of 
+   140.88s  user  발화 끝
+   151.76s  user  발화 시작: Core values? Like… honesty and kindness?
+   151.80s  agent 발화 끝
+   155.74s  user  발화 끝
+   155.77s  agent 발화 시작: Those are wonderful examples. What activities make you feel 
+   166.38s  user  발화 시작: [sigh] I used to really love painting. I haven't done that i
+   166.44s  agent 발화 끝
+   171.75s  agent 발화 시작: That’s a beautiful thing to remember. Often, the things we’v
+   171.85s  user  발화 끝
+   177.60s  user  발화 시작: Yeah.
+   178.04s  user  발화 끝
+   180.44s  user  발화 시작: But painting doesn’t… pay the bills.
+   180.88s  agent 발화 끝
+   183.35s  agent 발화 시작: You’re right to consider practicality, 연영. Perhaps it's abou
+   183.40s  user  발화 끝
+   188.76s  user  발화 시작: Yeah.
+   189.39s  user  발화 끝
+   192.71s  user  발화 시작: That sounds… hard.
+   192.72s  agent 발화 끝
+   194.87s  agent 발화 시작: It may require some exploration and a willingness to experim
+   194.97s  user  발화 끝
+   203.16s  user  발화 시작: I'm also worried about disappointing my friends. They all ha
+   203.36s  agent 발화 끝
+   207.91s  agent 발화 시작: It’s natural to feel a little out of sync when those around 
+   207.93s  user  발화 끝
+   216.77s  agent 발화 끝
+   217.45s  user  발화 시작: Right. I guess so. It’s just… scary to be different.
+   221.29s  agent 발화 시작: It is. But embracing your individuality is also incredibly e
+   221.29s  user  발화 끝
+   225.86s  user  발화 시작: Yeah, yeah.
+   227.15s  user  발화 끝
+   230.98s  agent 발화 끝
+   232.99s  user  발화 시작: You make it sound so… peaceful.
+   235.22s  agent 발화 시작: It’s a process, 연영, not a destination. There will be moments
+   235.25s  user  발화 끝
+   246.87s  agent 발화 끝

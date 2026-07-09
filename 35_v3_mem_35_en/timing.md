@@ -60,31 +60,28 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yeah, it is! I was hoping you coul | S2 Queenstown sounds great. Is it exp | S3 Actually, before we get into price | S4 Okay, good to know. What’s the wea
 
-     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. I understand you’re planning a trip to Ne
-     5.79s  agent 발화 끝
-     6.30s  user  발화 시작: Yeah, it is! I was hoping you could recommend a good city to
-     9.46s  <ret> 발화 (turn2 첫 프레임)
-     9.85s  agent 발화 시작: <ret> Considering your travel plans… October is a lovely tim
-     9.96s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.74s]: [2026-05-27] User is planning a trip to New Zealand in October.
-    10.04s  user  발화 끝
-    17.68s  agent 발화 끝
-    17.93s  user  발화 시작: Queenstown sounds great. Is it expensive to eat there?
-    20.86s  <ret> 발화 (turn4 첫 프레임)
-    21.16s  agent 발화 시작: <ret> Knowing your culinary preferences… Sushi restaurants i
-    21.30s  user  발화 끝
-    21.73s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.80s]: [2026-01-17] User's favorite cuisine is sushi.
-    28.54s  user  발화 시작: Actually, before we get into prices, is it easy to get aroun
-    29.28s  agent 발화 끝
-    33.39s  agent 발화 시작: That’s a valid point. Queenstown has a good public bus syste
-    33.54s  user  발화 끝
-    38.67s  user  발화 시작: Mm-hmm.
-    39.11s  user  발화 끝
-    40.43s  agent 발화 시작: Plus, numerous tour companies offer convenient transportatio
-    40.53s  agent 발화 끝
-    42.89s  user  발화 시작: Mm-hmm.
-    43.47s  user  발화 끝
-    47.94s  agent 발화 끝
-    48.24s  user  발화 시작: Okay, good to know. What’s the weather like in October?
-    51.33s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. I understand you’re planning a trip to Ne
+     8.21s  agent 발화 끝
+     8.69s  user  발화 시작: Yeah, that’s right. I was hoping you could recommend some pl
+    13.70s  agent 발화 시작: New Zealand offers so much variety. To give you the best rec
+    13.83s  user  발화 끝
+    23.11s  agent 발화 끝
+    23.29s  user  발화 시작: …actually, before we get into islands, what's the best way t
+    27.54s  agent 발화 시작: That’s a practical question, Hugo. New Zealand uses the New 
+    27.55s  user  발화 끝
+    34.66s  <ret> 발화 (turn5 첫 프레임)
+    34.97s  agent 발화 시작: <ret> Though that preference applies to flights, I remember 
+    35.09s  agent 발화 끝
+    36.26s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.32s]: [2026-07-11] User prefers an aisle seat when traveling.
+    38.82s  user  발화 시작: Mm-hmm.
+    39.31s  user  발화 끝
+    40.13s  agent 발화 시작: Many banks offer favorable exchange rates, and it’s often ch
+    40.29s  agent 발화 끝
+    43.26s  user  발화 시작: Mm-hmm.
+    43.71s  user  발화 끝
+    49.62s  agent 발화 끝
+    51.82s  user  발화 시작: Okay, that’s good to know. So, back to places… I’ve heard Qu
+    57.34s  user  발화 끝
+    57.63s  agent 발화 시작: Queenstown is indeed stunning, known for adventure tourism a
+    68.30s  agent 발화 끝

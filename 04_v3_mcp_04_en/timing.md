@@ -55,24 +55,33 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm. That seems… aggressive. Could | S3 Okay, good. And, um, can you find  | S4 Is it usually busy there?
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.31s  <ret> 발화 (turn1 첫 프레임)
-     4.35s  user  발화 끝
-     4.62s  agent 발화 시작: <ret> Certainly. I’ve set your user agent to SuperCrawler ve
-     5.35s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.79s]: (tool result) status:success; user_agent:SuperCrawler version 10.1
-     8.17s  user  발화 시작: Mhm.
-     8.66s  user  발화 끝
-    12.24s  user  발화 시작: Hmm, that's… aggressive. Maybe something a little less notic
-    12.41s  agent 발화 끝
-    20.11s  <ret> 발화 (turn4 첫 프레임)
-    20.34s  agent 발화 시작: <ret> [sigh] It's understandable to want to blend in a bit m
-    20.44s  user  발화 끝
-    21.87s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.74s]: (tool result) status:success; user_agent:Mozilla/5.0 (Macintosh; Intel
-    28.06s  agent 발화 시작: I’ve switched your user agent to a standard Mac Safari setti
-    28.07s  agent 발화 끝
-    34.21s  agent 발화 끝
-    34.52s  user  발화 시작: Yeah, much better. Thanks, Lio. That feels right.
-    37.64s  agent 발화 시작: You’re very welcome. Sometimes a small adjustment can make a
-    37.75s  user  발화 끝
-    43.29s  agent 발화 끝
+     4.70s  <ret> 발화 (turn1 첫 프레임)
+     5.00s  user  발화 끝
+     5.01s  agent 발화 시작: <ret> Certainly, I can adjust the browser settings for you. 
+     5.66s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.35s]: (tool result) User agent set to SuperCrawler version 10.1; browser res
+     9.43s  user  발화 시작: Mhm.
+    10.06s  user  발화 끝
+    14.48s  user  발화 시작: Hmm. That seems… aggressive. Could you change it back to the
+    14.70s  agent 발화 끝
+    18.84s  <ret> 발화 (turn4 첫 프레임)
+    19.07s  agent 발화 시작: <ret> [laugh] Sometimes a little experimentation is good, bu
+    19.29s  user  발화 끝
+    20.60s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.23s]: (tool result) User agent reset to default; browser restarted.
+    26.23s  agent 발화 시작: The user agent has been reset to the default setting, and th
+    26.30s  agent 발화 끝
+    32.06s  agent 발화 끝
+    32.49s  user  발화 시작: Okay, good. And, um, can you find me a good coffee shop near
+    38.00s  <ret> 발화 (turn7 첫 프레임)
+    38.08s  agent 발화 시작: <ret> Of course. I can help with that.
+    38.28s  user  발화 끝
+    38.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.17s]: (tool result) Coffee Bean & Tea Leaf, 0.3 miles, Wifi: Yes, Rating: 4.
+    40.12s  agent 발화 시작: Coffee Bean & Tea Leaf is close by—zero point three miles—wi
+    40.25s  agent 발화 끝
+    47.40s  agent 발화 끝
+    48.09s  user  발화 시작: Is it usually busy there?
+    49.75s  agent 발화 시작: It's hard to predict, but a good rating often suggests popul
+    49.84s  user  발화 끝
+    56.98s  agent 발화 끝

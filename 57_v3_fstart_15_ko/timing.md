@@ -63,51 +63,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도를 알려줘. | S2 풀먼 호텔이 제일 저렴하네. 그 호텔 예약해 줘. | S3 그 거리가 얼마나 되는지 궁금해. | S4 와, 진짜 가까운 거네. 고마워.
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도가 궁금해. | S2 아, 거기 가봤는데 좀 비싸더라. | S3 혹시 좀 더 저렴한 곳은 없을까? | S4 고마워.
 
-     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도를 알려줘.
-     3.45s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위치 정보를 찾아볼게요. 위도는 -삼십삼 점 팔 오 육 팔, 경도는 백오십
-     3.56s  user  발화 끝
-     4.89s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.81s]: (tool result) latitude: -33.8568, longitude: 151.2153
-     8.41s  user  발화 시작: 진짜?
-     9.04s  user  발화 끝
-    12.88s  agent 발화 끝
-    12.98s  user  발화 시작: 음, 그럼 그 근처에 괜찮은 호텔 좀 찾아줄래?
-    16.30s  <ret> 발화 (turn4 첫 프레임)
-    16.62s  user  발화 끝
-    16.69s  agent 발화 시작: <ret> 물론이죠. 시드니 오페라 하우스 근처 호텔을 검색해 드릴게요. 파크 하얏트 시드니, 샹그릴라 호텔
-    18.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) hotels: [Park Hyatt Sydney (price: 650 AUD), Shangri-La 
-    27.16s  user  발화 시작: 어어.
-    27.89s  user  발화 끝
-    32.98s  user  발화 시작: 풀먼 호텔이 제일 저렴하네. 그 호텔 예약해 줘.
-    32.98s  agent 발화 끝
-    36.63s  <ret> 발화 (turn7 첫 프레임)
-    37.02s  agent 발화 시작: <ret> 풀먼 키 그랜드 시드니 하버 호텔 예약 진행하겠습니다. 풀먼 키 그랜드 시드니 하버 호텔이 내일 
-    37.14s  user  발화 끝
-    38.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: (tool result) booking_id: 789456, confirmation_number: ABC123XYZ, tota
-    41.36s  user  발화 시작: 응.
-    41.85s  user  발화 끝
-    51.07s  user  발화 시작: 혹시 호텔에서 오페라 하우스까지 걸어갈 수 있어?
-    51.13s  agent 발화 끝
-    54.38s  agent 발화 시작: 오페라 하우스까지 걸어서—
-    54.63s  user  발화 끝
-    55.39s  user  발화 시작: 그 거리가 얼마나 되는지 궁금해.
-    55.99s  agent 발화 끝
-    57.82s  agent 발화 시작: 오페라 하우스까지 도보 거리는 약 이십분 정도입니다.
-    57.93s  user  발화 끝
-    58.89s  user  발화 시작: 와.
-    59.62s  user  발화 끝
-    61.06s  agent 발화 끝
-    61.08s  agent 발화 시작: 풀먼 호텔에서 오페라 하우스까지는 걸어서 이십분 정도 걸리고, 택시로는 약 십분 정도 소요됩니다.
-    67.94s  agent 발화 끝
-    68.94s  user  발화 시작: 그럼 호텔에서 가장 가까운 기차역은 어디야?
-    72.00s  <ret> 발화 (turn16 첫 프레임)
-    72.15s  agent 발화 시작: <ret> 가장 가까운 기차역을 찾아볼게요. 가장 가까운 기차역은 서큘러 키 역이고, 호텔에서 오백미터 거리
-    72.40s  user  발화 끝
-    72.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.93s]: (tool result) nearest_station: Circular Quay Station (distance: 500m)
-    78.91s  agent 발화 끝
-    79.35s  user  발화 시작: 와, 진짜 가까운 거네. 고마워.
-    82.17s  user  발화 끝
-    82.27s  agent 발화 시작: 천만에요. 즐거운 여행 되시길 바랍니다.
-    84.85s  agent 발화 끝
+     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도가 궁금해.
+     3.65s  <ret> 발화 (turn1 첫 프레임)
+     3.73s  agent 발화 시작: <ret> 알겠습니다. 시드니 오페라 하우스의 위도는 -삼십삼 점 팔 오 육 팔도, 경도는 백오십일 점 이 
+     3.79s  user  발화 끝
+     4.12s  ⚡SPAN 주입 [d'=0.47s / d_lead=0.47s]: (tool result) latitude: -33.8568, longitude: 151.2153
+     8.09s  user  발화 시작: 진짜?
+     8.72s  user  발화 끝
+    12.13s  agent 발화 끝
+    12.19s  user  발화 시작: 그 근처에 괜찮은 레스토랑 있어?
+    14.49s  <ret> 발화 (turn4 첫 프레임)
+    14.73s  user  발화 끝
+    14.81s  agent 발화 시작: <ret> 물론이죠. 아리아 레스토랑 평점이 사 점 육이고, 가격대는 비싼 편입니다.
+    14.99s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.55s]: (tool result) restaurant_name: Aria Restaurant, rating: 4.6, price_ran
+    18.23s  user  발화 시작: 어어.
+    19.01s  user  발화 끝
+    20.29s  user  발화 시작: 아, 거기 가봤는데 좀 비싸더라.
+    20.31s  agent 발화 끝
+    22.87s  user  발화 끝
+    22.88s  agent 발화 시작: 하지만 전망은 정말 좋—
+    23.99s  user  발화 시작: 혹시 좀 더 저렴한 곳은 없을까?
+    24.49s  agent 발화 끝
+    26.22s  <ret> 발화 (turn9 첫 프레임)
+    26.61s  user  발화 끝
+    26.62s  agent 발화 시작: <ret> 네, 물론입니다. 좀 더 합리적인 가격대의 레스토랑을 찾아볼까요?
+    28.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.62s]: (tool result) restaurant_name: The Squire's Landing, rating: 4.2, pric
+    31.18s  agent 발화 시작: 스콰이어스 랜딩 레스토랑은 평점 사 점 이이고, 가격대는 중간 정도입니다.
+    31.25s  agent 발화 끝
+    32.83s  user  발화 시작: 와.
+    33.64s  user  발화 끝
+    35.79s  <ret> 발화 (turn12 첫 프레임)
+    35.94s  agent 발화 시작: <ret> 스콰이어스 랜딩은 오페라 하우스에서 도보로 약 십분 거리에 있습니다.
+    36.05s  agent 발화 끝
+    37.63s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.89s]: (tool result) distance: 0.8 km, walking_time: 10 minutes
+    39.83s  agent 발화 끝
+    39.92s  agent 발화 시작: 도보 거리는 영 점 팔킬로미터이고, 걸리는 시간은 십분입니다.
+    41.29s  user  발화 시작: 응.
+    41.79s  user  발화 끝
+    44.51s  user  발화 시작: 거기 예약 좀 해줘. 오늘 저녁 일곱시에 두 명.
+    44.63s  agent 발화 끝
+    48.03s  <ret> 발화 (turn16 첫 프레임)
+    48.19s  agent 발화 시작: <ret> 네, 예약 진행해 드리겠습니다.
+    48.35s  user  발화 끝
+    49.23s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.75s]: (tool result) reservation_id: 7892345, confirmation_number: ABC123XYZ
+    49.94s  agent 발화 끝
+    50.06s  agent 발화 시작: 스콰이어스 랜딩에 오늘 저녁 일곱시에 두 명으로 예약되었습니다. 예약 번호는 ABC123XYZ입니다.
+    57.01s  agent 발화 끝
+    57.38s  user  발화 시작: 고마워.
+    58.20s  user  발화 끝
+    58.35s  agent 발화 시작: 천만에요. 즐거운 저녁 식사 되세요!
+    60.93s  agent 발화 끝

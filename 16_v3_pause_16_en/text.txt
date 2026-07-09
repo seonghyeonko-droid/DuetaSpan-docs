@@ -64,40 +64,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading a book, and it mentioned "Big Brother"—
-[  3.68s][user ] …and it got me wondering, where did that phrase even ⟨ret@6.90s⟩ come from?
-[  7.22s][moshi] That’s a fascinating question! ⟦⚡SPAN@8.90s: [source: Wikipedia] "Big Brother is the protagonist in George Orwell's dystopian novel Nineteen Eighty-Four, p⟧ It’s a phrase deeply embedded in our culture now.
-[ 12.11s][moshi] The term originates from George Orwell’s novel, *Nineteen Eighty-Four*, published in nineteen forty-nine.
-[ 18.29s][user ] Nineteen Eighty-Four… I think I read that in high school. Was it a popular book at the ⟨ret@23.56s⟩ time?
-[ 23.80s][moshi] It certainly ⟦⚡SPAN@24.84s: [source: British Library] "Nineteen Eighty-Four sold over fifty thousand copies in its first year and has sinc⟧ was. It quickly became a cultural touchstone after its release.
-[ 28.00s][moshi] *Nineteen Eighty-Four* sold over fifty thousand copies in its first year and became very influential.
-[ 33.98s][user ] Wow, that’s a lot! So, Orwell just *made up* this "Big Brother" character?
-[ 39.77s][moshi] ⟨ret@39.70s⟩ Essentially, yes. He created ⟦⚡SPAN@41.70s: [source: Encyclopedia Britannica] "Big Brother, in George Orwell’s Nineteen Eighty-Four, is the enigmatic dict⟧ him as a symbol of totalitarian surveillance.
-[ 44.01s][moshi] Big Brother is the enigmatic dictator of Oceania within the novel’s narrative.
-[ 45.62s][user ] «backchannel» Mm-hmm.
-[ 48.34s][user ] That's kind of creepy. It feels very relevant even today, with all the data collection.
-[ 53.73s][moshi] [happy] It’s remarkable how prescient Orwell’s vision was, isn't it? It continues to resonate.
-[ 55.80s][user ] «backchannel» Yeah.
-[ 58.39s][user ] It really does. I was thinking about security cameras, and.
-[ 63.34s][moshi] ⟨ret@63.10s⟩ That’s ⟦⚡SPAN@64.22s: [source: The Guardian] “Orwell’s concept of ‘telescreens’ has been likened to modern CCTV and digital surveill⟧ a very astute connection— Orwell’s “telescreens” are often compared to modern CCTV and digital surveillance technologies.
-[ 66.32s][user ] «backchannel» Mm-hmm.
-[ 70.82s][user ] So, the idea of being constantly…
-[ 74.25s][user ] …watched… that’s what he was getting ⟨ret@76.04s⟩ at?
-[ 76.43s][moshi] Precisely. The loss ⟦⚡SPAN@78.04s: [source: Literary Hub] "Orwell warned against the dangers of a state that controls information and monitors it⟧ of privacy and individual freedom under constant observation.
-[ 81.31s][moshi] Orwell warned about a state controlling information and monitoring its citizens.
-[ 85.88s][user ] That’s a bit frightening, honestly. I wonder if he’d be surprised by how much it's come true.
-[ 91.56s][moshi] I suspect he would be both saddened and, unfortunately, unsurprised.
-[ 93.45s][user ] «backchannel» Mhm.
-[ 95.67s][moshi] He was a keen observer of political trends, after all.
-[ 97.71s][user ] «backchannel» Mm-hmm.
-[ 98.86s][user ] Do you think that’s why it’s such a lasting image? Because it feels so real?
-[103.57s][moshi] Absolutely. The themes he explored—power, control, truth—are timeless and universal.
-[105.50s][user ] «backchannel» Yeah.
-[108.70s][user ] I guess so. It makes you think.
-[111.06s][moshi] It certainly does. And critical thinking is always a valuable exercise.
-[112.43s][user ] «backchannel» Right.
-[115.08s][user ] It really is. I should probably re-read that book, actually.
-[118.77s][moshi] That’s a wonderful idea. Revisiting classic literature often reveals new layers of meaning.
-[120.73s][user ] «backchannel» Yeah, yeah.
-[124.51s][user ] I think I will. Thanks for explaining the origin of the phrase, Braera.
-[129.18s][moshi] You're most welcome. It was my pleasure to discuss *Nineteen Eighty-Four* with you.
+[  0.00s][user ] So, I was reading this dystopian novel, and it got me ⟨ret@3.69s⟩ thinking…
+[  4.01s][moshi] That’s a fascinating question. ⟦⚡SPAN@5.69s: [source: Wikipedia] “The term ‘Big Brother’ originated from George Orwell’s dystopian novel *Nineteen Eighty-F⟧ It’s a phrase deeply rooted in literature and social commentary.
+[  9.08s][moshi] The phrase “big brother” comes from George Orwell’s novel *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 15.75s][user ] Nineteen Eighty-Four… right. I think I read that in high school, but I barely remember ⟨ret@21.44s⟩ it.
+[ 21.68s][moshi] Not at all. ⟦⚡SPAN@23.12s: [source: Britannica] “In *Nineteen Eighty-Four*, Big Brother is the enigmatic dictator of Oceania, constantly ⟧ Orwell intended it to represent pervasive government surveillance and control.
+[ 27.30s][moshi] Big Brother is the dictator of Oceania in *Nineteen Eighty-Four*, constantly watching the people.
+[ 30.83s][user ] «backchannel» Yeah, yeah.
+[ 32.22s][user ] Oh, so it’s like, the opposite of protective? More like… oppressive?
+[ 37.64s][moshi] Exactly. It’s a symbol of a state that intrudes into every aspect of personal life.
+[ 39.45s][user ] «backchannel» Mm-hmm.
+[ 42.38s][user ] It is, yeah. I mean, with all the data collection happening now, it feels… relevant.
+[ 47.84s][moshi] ⟨ret@47.77s⟩ [surprised] It absolutely is a concept ⟦⚡SPAN@49.77s: [source: The Guardian] “Orwell’s vision of constant surveillance has become increasingly relevant in the digit⟧ that resonates strongly in the modern world.
+[ 51.99s][moshi] Orwell’s vision of surveillance has become relevant in the digital age.
+[ 53.84s][user ] «backchannel» Yeah.
+[ 56.57s][user ] So, did the phrase immediately catch on after the book came ⟨ret@60.43s⟩ out?
+[ 60.75s][moshi] It took some ⟦⚡SPAN@61.95s: [source: Oxford Reference] “The term ‘Big Brother’ gained wider currency in the 1960s, particularly in discuss⟧ time, but it gradually entered the public consciousness.
+[ 63.99s][moshi] It gained wider use in the nineteen sixties, in discussions of privacy.
+[ 65.55s][user ] «backchannel» Mm-hmm.
+[ 68.06s][user ] That’s interesting. I wonder if Orwell would be surprised by how widespread it’s become.
+[ 73.72s][moshi] I suspect he would be both fascinated and deeply concerned.
+[ 76.99s][user ] Yeah, he really was. I think…
+[ 79.41s][user ] …I need to re-read that book.
+[ 81.63s][moshi] ⟨ret@81.47s⟩ Many ⟦⚡SPAN@82.59s: [source: CommonLit] “*Nineteen Eighty-Four* remains a frequently taught novel in high school English classes.”⟧ schools still include *Nineteen Eighty-Four* in their curriculum, yes.
+[ 85.85s][moshi] It remains a frequently taught novel in high school English classes.
+[ 88.09s][user ] «backchannel» Mm-hmm.
+[ 89.21s][user ] Good to hear. I feel like everyone should read it at some point.
+[ 92.83s][moshi] I agree wholeheartedly. It prompts essential questions about freedom and control.
+[ 94.56s][user ] «backchannel» Yeah.
+[ 97.44s][user ] I've been meaning to get back into reading ⟨ret@99.88s⟩ more, actually.
+[100.28s][moshi] Time management can be ⟦⚡SPAN@101.88s: (tool result) Calendar: Free slots found: Tomorrow 7-8pm; Saturday 10-11am; Sunday 2-3pm.⟧ a challenge. Perhaps we could explore some strategies for prioritizing reading?
+[105.81s][moshi] I see some free time tomorrow evening, Saturday morning, or Sunday afternoon.
+[107.23s][user ] «backchannel» Right.
+[110.00s][user ] Oh, wow, that's… helpful. Saturday morning sounds good.
+[114.01s][moshi] ⟨ret@113.85s⟩ I’ve scheduled a time to ⟦⚡SPAN@115.85s: (tool result) Appointment booked: Saturday 10:00 AM, Discuss Reading Strategies.⟧ discuss reading strategies for Saturday at ten a.m.
+[115.67s][user ] «backchannel» Yeah, yeah.
+[118.74s][user ] Perfect! Thank you, Braera.
+[121.32s][moshi] You’re very welcome. I look forward to our conversation.

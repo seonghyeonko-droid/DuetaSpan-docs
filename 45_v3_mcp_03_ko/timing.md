@@ -58,47 +58,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 장바구니 iframe에서 결제 과정을 시작해 줘. | S2 배송지를 서울특별시 강남구 테헤란로 사백이십칠로 변경해 줘. | S3 결제 수단은 신용카드로 할 건데, 카드 번호는 어떻게 입력해야 | S4 혹시 할인 쿠폰 적용할 수 있어?
+# EXAMINER(FDB-v2) 단계: S1 장바구니 iframe에서 결제 과정을 시작해 줘. | S2 혹시 다른 주소로 변경 가능해? | S3 결제 방법은 어떻게 돼? | S4 아, 그건 좀 찝찝한데…
 
      0.00s  user  발화 시작: 장바구니 iframe에서 결제 과정을 시작해 줘.
-     3.13s  <ret> 발화 (turn1 첫 프레임)
-     3.44s  agent 발화 시작: <ret> 네, 알겠습니다. 쇼핑 카트 iframe에서 결제 과정을 시작할게요.
-     3.47s  user  발화 끝
-     5.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: (tool result) success: true, page_url: "https://example.com/checkout",
-     7.74s  agent 발화 시작: 네, 결제가 시작되었고, 현재 결제 페이지 주소는 https://example.com/checkout 입니다
-     7.92s  agent 발화 끝
-    17.10s  user  발화 시작: 네.
-    17.46s  user  발화 끝
-    19.99s  agent 발화 끝
-    20.95s  user  발화 시작: 혹시 배송지 변경할 수 있어?
-    22.24s  <ret> 발화 (turn5 첫 프레임)
-    22.56s  user  발화 끝
-    22.62s  agent 발화 시작: <ret> 물론이죠. 배송지 변경은 결제 페이지에서 가능합니다.
-    23.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.02s]: (tool result) success: true, page_url: "https://example.com/checkout/a
-    26.46s  agent 발화 시작: 네, 배송지 변경 페이지로 이동했고, 주소 입력 폼이 나타났어요.
-    26.65s  agent 발화 끝
-    30.53s  agent 발화 끝
-    31.93s  user  발화 시작: 배송지를 서울특별시 강남구 테헤란로 사백이십칠로 변경해 줘.
-    35.81s  <ret> 발화 (turn8 첫 프레임)
-    35.86s  user  발화 끝
-    35.88s  agent 발화 시작: <ret> 알겠습니다. 배송지를 서울특별시 강남구 테헤란로 사백이십칠으로 변경할게요.
-    37.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: (tool result) success: true, address_updated: "서울특별시 강남구 테헤란로 427", va
-    40.76s  agent 발화 시작: 네, 배송지가 서울특별시 강남구 테헤란로 사백이십칠로 변경되었습니다. 오류는 없어요.
-    40.92s  agent 발화 끝
-    46.63s  user  발화 시작: 결제 수단은 신용카드로 할 건데, 카드 번호는 어떻게 입력해야 돼?
-    46.73s  agent 발화 끝
-    50.74s  <ret> 발화 (turn11 첫 프레임)
-    50.97s  agent 발화 시작: <ret> 신용카드 번호 입력 폼이 보일 거예요. 카드 번호, 유효 기간, CVC 번호를 순서대로 입력해 주
-    51.07s  user  발화 끝
-    52.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) visible: true, element_selector: "card_number_input"
-    58.06s  agent 발화 시작: 네, 카드 번호 입력 폼이 보입니다. 지금 바로 입력하실 수 있어요.
-    58.11s  agent 발화 끝
-    62.59s  agent 발화 끝
-    63.39s  user  발화 시작: 혹시 할인 쿠폰 적용할 수 있어?
-    65.09s  <ret> 발화 (turn14 첫 프레임)
-    65.19s  user  발화 끝
-    65.24s  agent 발화 시작: <ret> 네, 할인 쿠폰 적용은 결제 단계에서 가능합니다. 쿠폰 코드 입력란을 찾아보세요.
-    66.85s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.37s]: (tool result) success: true, coupon_form_visible: true
-    70.58s  agent 발화 시작: 네, 쿠폰 적용 폼이 나타났습니다. 쿠폰 코드를 입력해 주세요.
-    70.61s  agent 발화 끝
-    74.56s  agent 발화 끝
+     2.62s  <ret> 발화 (turn1 첫 프레임)
+     2.92s  agent 발화 시작: <ret> 네, 지금 장바구니 iframe으로 이동해서 결제 과정을 시작해 드릴게요.
+     2.95s  user  발화 끝
+     4.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: (tool result) checkout_initiated; status: success; order_id: 7892345
+     7.34s  agent 발화 시작: 결제가 시작되었고, 주문 번호는 칠백팔십구만 이천삼백사십오번입니다.
+     7.55s  agent 발화 끝
+    11.64s  user  발화 시작: 오.
+    12.46s  user  발화 끝
+    13.58s  agent 발화 끝
+    14.50s  user  발화 시작: 배송 주소는 어디로 되어 있어?
+    15.90s  <ret> 발화 (turn5 첫 프레임)
+    16.24s  user  발화 끝
+    16.30s  agent 발화 시작: <ret> 배송 주소 확인해 볼게요.
+    17.34s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.75s]: (tool result) address: 김민지; street: 서울특별시 강남구 테헤란로 427; zip: 06159; ph
+    17.81s  agent 발화 시작: 김민지 님, 배송 주소는 서울특별시 강남구 테헤란로 사백이십칠번지 우편번호 공 육 일 오 구로 되어 있습니다
+    18.05s  agent 발화 끝
+    30.06s  agent 발화 끝
+    31.49s  user  발화 시작: 혹시 다른 주소로 변경 가능해?
+    33.47s  user  발화 끝
+    33.54s  agent 발화 시작: 네, 배송 주소 변경도 가능합니다. 변경할 주소를 말씀해 주시겠어요?
+    37.68s  user  발화 시작: 경기도 성남시 분당구로 변경하고 싶어.
+    37.89s  agent 발화 끝
+    40.25s  <ret> 발화 (turn10 첫 프레임)
+    40.26s  user  발화 끝
+    40.32s  agent 발화 시작: <ret> 경기도 성남시 분당구로 주소 변경을 진행할게요. 정확한 주소와 우편번호를 알려주시겠어요?
+    42.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) address_updated; status: success; new_address: 경기도 성남시 분
+    47.05s  agent 발화 시작: 배송 주소가 경기도 성남시 분당구, 우편번호 일 삼 오 칠 구로 변경되었습니다.
+    47.18s  agent 발화 끝
+    53.30s  user  발화 시작: 결제 방법은 어떻게 돼?
+    53.49s  agent 발화 끝
+    54.59s  user  발화 끝
+    54.68s  agent 발화 시작: 현재 신용카드와 계좌이체 두 가지 방법으로 결제하실 수 있습니다. 어떤 방법을 선호하시나요?
+    61.30s  agent 발화 끝
+    63.02s  user  발화 시작: 신용카드로 할게.
+    64.04s  agent 발화 시작: 신용카드로 결제하시겠군요. 카드 번호와 만료일, 그리고 비밀번호 뒷자리를 입력해 주시겠어요?
+    64.30s  user  발화 끝
+    69.79s  user  발화 시작: 아, 그건 좀 찝찝한데…
+    69.82s  agent 발화 끝
+    71.49s  user  발화 끝
+    71.72s  agent 발화 시작: [sigh] 개인 정보 보호를 위해 카드 정보 직접 입력은 권장하지 않습니다. 안전한 결제 대행 서비스를 이
+    80.62s  agent 발화 끝

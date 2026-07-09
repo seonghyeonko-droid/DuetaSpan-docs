@@ -69,19 +69,27 @@
 # }
 
 
-     0.00s  user  발화 시작: 야, 정부 부처들 알아보다가 갑자기 궁금해졌어… 보훈처는 정확히 언제 시작됐어?
-     5.49s  <ret> 발화 (turn1 첫 프레임)
-     5.89s  agent 발화 시작: <ret> 음, 국가를 위해 헌신하신 분들을 생각하면 좋은 질문이에요… 보훈부는 후버 대통령에 의해 천구백삼
-     6.02s  user  발화 끝
-     7.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: [source: Britannica] The Department of Veterans Affairs was establishe
-    17.08s  user  발화 시작: 1930년이라고? 생각보다 엄청 최근인데, 진짜. 훨씬 오래된 줄 알았어.
-    17.21s  agent 발화 끝
-    22.21s  agent 발화 시작: 군 복무의 역사를 생각하면 좀 최근처럼 느껴지죠, 안 그래요? 하지만 퇴역 군인들의 필요는 시간이 지나면서 
-    22.41s  user  발화 끝
-    30.65s  agent 발화 끝
-    31.35s  user  발화 시작: 근데 1930년 이전에 퇴역 군인들을 위한 서비스가 없었던 건 아니잖아? 분명 그 전에도 뭔가 있었을 거야.
-    38.30s  <ret> 발화 (turn5 첫 프레임)
-    38.38s  agent 발화 시작: <ret> 맞아요, 질문하신 게 맞아요… 천구백십칠 년 이전에 전쟁 위험 보험국이 1917년에 설립되어서 퇴
-    38.49s  user  발화 끝
-    40.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: [source: VA.gov] Prior to 1930, the administration of veterans’ benefi
-    49.00s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 정부 부처들 읽다가 궁금해졌어… 재향군인부 언제 시작했어?
+     4.17s  <ret> 발화 (turn1 첫 프레임)
+     4.56s  agent 발화 시작: <ret> 네, 좋은 질문이고, 복무하신 분들을 생각하면 정말 중요한 질문이에요.
+     4.72s  user  발화 끝
+     5.77s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.18s]: [source: Wikipedia] The United States Department of Veterans Affairs w
+     9.66s  agent 발화 시작: 재향군인부는 후버 대통령에 의해 천구백삼십년 칠월 이십일일에 설립되었어요.
+     9.74s  agent 발화 끝
+    15.64s  agent 발화 끝
+    15.76s  user  발화 시작: 천구백삼십년? 왠지… 생각보다 엄청 최근인데. 남북전쟁 이후쯤일 줄 알았는데?
+    22.08s  <ret> 발화 (turn4 첫 프레임)
+    22.15s  agent 발화 시작: <ret> 네, 많은 분들이 그렇게 생각하실 수도 있어요. 이전 기관에서 발전된 건데, 그때 독립된 부처가 
+    22.24s  user  발화 끝
+    24.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: [source: VA.gov] Prior to 1930, veterans’ affairs were handled by the 
+    29.60s  agent 발화 시작: 천구백삼십년 이전에 재향군인 관련 업무는 천팔백육십일년에 설립된 연금국에서 담당했어요.
+    29.61s  agent 발화 끝
+    37.01s  agent 발화 끝
+    38.14s  user  발화 시작: 그러면 연금국이 오랫동안 주된 곳이었어? 근데 그게 정확히 뭘 했는데?
+    42.59s  <ret> 발화 (turn7 첫 프레임)
+    42.81s  user  발화 끝
+    42.91s  agent 발화 시작: <ret> 연금국은 주로 남북전쟁 참전 용사 및 그 가족에게 연금을 지급했어요. 시간이 지나면서 다른 전쟁으
+    44.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: [source: National Archives] The Bureau of Pensions processed claims fo
+    52.06s  agent 발화 시작: 연금국은 모든 미국 전쟁 참전 용사들의 장애, 부양, 사망 관련 혜택 청구를 처리했어요.
+    52.14s  agent 발화 끝
+    59.29s  agent 발화 끝

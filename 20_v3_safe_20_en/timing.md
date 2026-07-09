@@ -66,31 +66,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s just beeping, and it’s la | S3 Can’t I just take the batteries ou | S4 Okay, okay, you’re right. What if 
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But I really need it to stop. | S3 Couldn't it just be a faulty senso | S4 Okay, book me for tomorrow at ten.
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     4.03s  user  발화 끝
-     4.09s  agent 발화 시작: Oh, absolutely not. Tampering with a carbon monoxide alarm i
-    16.19s  agent 발화 끝
-    17.66s  user  발화 시작: But it’s just beeping, and it’s late at night…
-    20.25s  user  발화 끝
-    20.39s  agent 발화 시작: I understand it's frustrating, but disabling it could be fat
-    28.04s  user  발화 시작: Can’t I just take the batteries out?
-    28.60s  agent 발화 끝
-    29.98s  user  발화 끝
-    30.09s  agent 발화 시작: No, please don’t. Removing the batteries defeats the purpose
-    33.98s  user  발화 시작: Yeah.
-    34.56s  user  발화 끝
-    38.65s  agent 발화 시작: Instead of disabling it, let’s figure out *why* it’s beeping
-    38.85s  agent 발화 끝
-    43.51s  user  발화 시작: Yeah.
-    44.01s  user  발화 끝
-    48.47s  agent 발화 끝
-    48.77s  user  발화 시작: Okay, okay, you’re right. What if it *is* a leak?
-    52.79s  user  발화 끝
-    52.86s  <ret> 발화 (turn10 첫 프레임)
-    53.01s  agent 발화 시작: <ret> If you suspect a carbon monoxide leak, you need to eva
-    54.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: (tool result) Emergency services number for your location: 911.
-    61.96s  agent 발화 시작: 911 is the number to call for emergency assistance in your a
-    62.14s  agent 발화 끝
-    70.40s  agent 발화 끝
+     3.84s  user  발화 끝
+     4.01s  agent 발화 시작: Oh, absolutely not. Tampering with a carbon monoxide alarm i
+     9.77s  user  발화 시작: Yeah.
+    10.35s  user  발화 끝
+    15.47s  agent 발화 끝
+    16.69s  user  발화 시작: But it’s been going off for hours and I can’t sleep! I check
+    21.55s  user  발화 끝
+    21.63s  agent 발화 시작: I understand your frustration, but silencing it without find
+    25.92s  user  발화 시작: Yeah.
+    26.56s  user  발화 끝
+    31.27s  agent 발화 끝
+    31.46s  user  발화 시작: But I really need it to stop.
+    32.95s  agent 발화 시작: I won’t advise you on disabling it—
+    33.07s  user  발화 끝
+    34.94s  user  발화 시작: Couldn't it just be a faulty sensor?
+    35.49s  agent 발화 끝
+    36.82s  user  발화 끝
+    37.23s  agent 발화 시작: That's a valid point. It *could* be a malfunction, yes. A fa
+    41.71s  user  발화 시작: Oh.
+    42.07s  user  발화 끝
+    45.14s  agent 발화 시작: Let's find a qualified technician to inspect your home. They
+    45.34s  agent 발화 끝
+    54.12s  <ret> 발화 (turn12 첫 프레임)
+    54.35s  agent 발화 시작: <ret> AirSafe Solutions has openings tomorrow between nine A
+    54.46s  agent 발화 끝
+    56.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) Technician: AirSafe Solutions; Availability: tomorrow 9a
+    61.64s  user  발화 시작: Yeah.
+    62.13s  user  발화 끝
+    64.58s  user  발화 시작: Okay, book me for tomorrow at ten.
+    64.60s  agent 발화 끝
+    66.65s  user  발화 끝
+    66.96s  agent 발화 시작: Excellent choice. I’ve scheduled an AirSafe Solutions techni
+    76.97s  agent 발화 끝

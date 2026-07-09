@@ -78,12 +78,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  4.50s][moshi] ⟨ret@4.46s⟩ ⟦⚡SPAN@5.03s: (tool result) path: /Users/sunan/Pictures/France2023, count: 23, sizes: [2MB, 3MB, 1.5MB, ...]⟧ I found twenty-three photos… …from your France trip last year, excluding thumbnails. They’re in your Pictures folder.
-      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "date": "last year", "exclude": "thumbnails"}}
-[  8.91s][user ] «backchannel» Mhm.
-[ 12.31s][user ] Oh, perfect! And can you remind me to back those up to the cloud on ⟨ret@16.19s⟩ Friday?
-[ 16.34s][moshi] I’ve set a reminder for ⟦⚡SPAN@18.19s: (tool result) reminder_id: 78945, date: 2024-03-08, time: 18:00, task: Back up France photos⟧ Friday evening to back up your France photos.
-      CALL: {"function": "set_reminder", "arguments": {"date": "Friday", "time": "evening", "task": "Back up France photos"}}
-[ 18.92s][user ] «backchannel» Yeah.
-[ 21.02s][user ] That’s great, thanks. I— I mean, is it safe to just use cloud storage?
-[ 24.97s][moshi] Cloud storage is convenient, but consider a local backup too, for extra safety. It’s good to have options!
+[  4.67s][moshi] ⟨ret@4.62s⟩ I’ve found twelve pictures from ⟦⚡SPAN@6.62s: (tool result) 12 files found; file types: JPG, PNG; total size: 350MB; oldest: 2023-07-15; newest: 2023-08-02.⟧ your France trip last year, excluding thumbnails—they total three hundred fifty megabytes.
+      CALL: {"function": "search_files", "arguments": {"query": "France holiday", "year": "2023", "exclude": "thumbnails"}}
+[  8.43s][user ] «backchannel» Mhm.
+[ 11.47s][user ] That’s great. Can you send the newest three to my sister, Sarah ⟨ret@14.78s⟩ Miller?
+[ 14.92s][moshi] I’ve just ⟦⚡SPAN@15.82s: (tool result) files sent; recipient: Sarah Miller; files: image1.jpg, image2.png, image3.jpg; status: delivere⟧ sent the three newest photos from your France trip to Sarah Miller—they’ve been delivered.
+      CALL: {"function": "send_files", "arguments": {"recipient": "Sarah Miller", "files": ["newest 3 from France holiday 2023"]}}
+[ 17.82s][user ] «backchannel» Yeah.
+[ 20.05s][user ] Perfect, thank you. I— I mean, did you find any of me with a beret?
+[ 23.48s][moshi] Let me check on that.
+[ 24.99s][user ] Oh, never mind, that’s not important!
+  ⟦⚡지연 SPAN 도착@25.69s: (tool result) 2 files found; filenames: beret_paris.jpg, you_and_beret.png; dates: 2023-07-20, 2023-07-28.⟧
+[ 26.62s][moshi] «deferred_result» ⟨ret@26.63s⟩ I did look, actually…

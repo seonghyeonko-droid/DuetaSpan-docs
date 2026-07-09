@@ -56,53 +56,53 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.63s⟩ May tenth.
-[  4.02s][moshi] Certainly, let’s find ⟦⚡SPAN@5.63s: (tool result) bus_options: [ {company: "Greyhound", departure_time: "08:00", arrival_time: "20:00", price: 150⟧ some options for that journey. Greyhound departs at eight AM, arriving eight PM, for one hundred fifty dollars. Megabus leaves at noon, arriving six AM the next day, for one hundred twenty-five.
-[ 10.80s][user ] «backchannel» Yeah.
-[ 20.40s][user ] That Megabus one sounds good. Book it for me.
-[ 24.29s][moshi] ⟨ret@24.06s⟩ Very well, ⟦⚡SPAN@26.06s: (tool result) booking_confirmation: {confirmation_number: "MB78945", passenger_count: 3, departure_date: "2024⟧ I can proceed with that reservation. Your Megabus is booked, confirmation MB78945, for three passengers on May tenth, costing three hundred seventy-five dollars.
-[ 38.34s][user ] Can you send me a reminder the day ⟨ret@40.77s⟩ before?
-[ 40.93s][moshi] Absolutely, I ⟦⚡SPAN@42.37s: (tool result) reminder_set: {reminder_id: "RM1234", reminder_time: "2024-05-09T10:00:00", reminder_text: "Mega⟧ can set a reminder for you. A reminder is set for May ninth at ten AM: “Megabus to Denver tomorrow!” Its ID is RM1234.
-[ 54.40s][user ] What’s the weather like in Denver on May ⟨ret@56.69s⟩ tenth?
-[ 57.09s][moshi] ⟦⚡SPAN@57.19s: (tool result) weather_forecast: {city: "Denver", date: "2024-05-10", temperature_high: 75, temperature_low: 55⟧ Let me check the forecast for that day. The forecast for Denver on May tenth is sunny, with a high of seventy-five and a low of fifty-five degrees.
-[ 64.49s][user ] «backchannel» Yeah.
-[ 71.07s][user ] That sounds pleasant. Is there anything good to see near the bus ⟨ret@75.30s⟩ station?
-[ 75.69s][moshi] Denver has ⟦⚡SPAN@76.98s: (tool result) nearby_attractions: [ {name: "Denver Art Museum", distance: "1.2 miles"}, {name: "16th Street Ma⟧ a lot to offer visitors. The Denver Art Museum is one point two miles away. The 16th Street Mall is closer, at point eight miles.
-[ 88.08s][user ] The art museum sounds interesting.
-[ 89.97s][moshi] It’s a wonderful museum with diverse collections. [happy] I find art quite restorative myself.
-[ 98.44s][user ] What are its opening hours on ⟨ret@100.42s⟩ May tenth?
-[100.82s][moshi] Let’s ⟦⚡SPAN@101.38s: (tool result) museum_hours: {name: "Denver Art Museum", date: "2024-05-10", opening_time: "10:00", closing_tim⟧ check those opening hours for you. The Denver Art Museum is open from ten AM to five PM on May tenth.
-[109.59s][user ] Could you add a reminder to my phone to leave for the bus station at seven AM on May tenth?
-[114.83s][moshi] ⟨ret@114.59s⟩ Of course, I ⟦⚡SPAN@116.59s: (tool result) reminder_set: {reminder_id: "RM5678", reminder_time: "2024-05-10T07:00:00", reminder_text: "Leav⟧ can add that to your reminders. A reminder is set for seven AM on May tenth: “Leave for Megabus to Denver!” ID is RM5678.
-[124.75s][user ] «backchannel» Okay.
-[128.08s][user ] Is there a good coffee shop near the museum?
-[130.93s][moshi] ⟨ret@130.85s⟩ Denver has many ⟦⚡SPAN@132.61s: (tool result) nearby_coffee_shops: [ {name: "Little Owl Coffee", distance: "0.3 miles"}, {name: "Huckleberry R⟧ excellent coffee shops. Little Owl Coffee is point three miles away, and Huckleberry Roasters is point five miles.
-[137.06s][user ] «backchannel» Right.
-[140.85s][user ] Little Owl sounds good.
-[142.59s][moshi] A popular spot, I’ve heard. I often recommend finding small moments of calm during travel.
-[145.84s][user ] «backchannel» Yeah.
-[149.88s][user ] What’s their phone ⟨ret@150.98s⟩ number?
-[151.38s][moshi] Let me ⟦⚡SPAN@152.98s: (tool result) business_details: {name: "Little Owl Coffee", phone_number: "303-555-1212"}⟧ find that number for you. Little Owl Coffee's phone number is three-oh-three, five-five-five, one-two-one-two.
-[155.02s][user ] «backchannel» Yeah, totally.
-[160.21s][user ] Can you navigate me from the bus station to Little Owl Coffee?
-[163.43s][moshi] ⟨ret@163.36s⟩ ⟦⚡SPAN@163.86s: (tool result) navigation_route: {start: "Denver Union Station", end: "Little Owl Coffee", distance: "0.9 miles⟧ Certainly, I can provide directions. The route is point nine miles, estimated at fifteen minutes from the bus station.
-[172.38s][user ] Okay, great.
-[173.50s][moshi] I’m glad I could help with the planning. [curious] Are you traveling for business or pleasure?
-[176.77s][user ] «backchannel» Yeah.
-[178.88s][user ] Pleasure, a visit with family. I— I mean, I'm going to see my sister.
-[183.78s][moshi] ⟨ret@183.54s⟩ ⟦⚡SPAN@184.04s: (no information found)⟧ That sounds lovely. Visiting family is always a special occasion. It’s good to nurture those connections.
-[187.57s][user ] «backchannel» Yeah.
-[191.56s][user ] Actually, can you check if my sister is free for dinner on May tenth? Her name is Sarah Miller.
-[197.12s][moshi] ⟨ret@196.96s⟩ Let’s see ⟦⚡SPAN@198.48s: (tool result) calendar_check: {name: "Sarah Miller", date: "2024-05-10", availability: "Available after 6:00 P⟧ if Sarah Miller is available. Sarah Miller is available for dinner after six PM on May tenth.
-[205.38s][user ] Perfect. Book a table for three at a nice Italian restaurant near her place, around seven ⟨ret@211.03s⟩ PM.
-[211.43s][moshi] ⟦⚡SPAN@211.53s: (tool result) restaurant_booking: {restaurant_name: "Bella Notte", date: "2024-05-10", time: "19:00", party_si⟧ I can certainly assist with that. A table for three is booked at Bella Notte for seven PM on May tenth, confirmation BN9876.
-[221.93s][user ] That sounds wonderful.
-[223.63s][moshi] It’s good to have those details settled. A little planning can ease the journey.
-[229.24s][user ] Is there anything else I should consider before my trip?
-[232.82s][moshi] Thinking ahead is a good habit. Perhaps packing layers, as Denver weather can be unpredictable?
-[235.73s][user ] «backchannel» Yeah, totally.
-[239.34s][user ] Good point. What’s the current time in Denver?
-[242.34s][moshi] ⟨ret@242.18s⟩ Let me check the ⟦⚡SPAN@244.18s: (tool result) current_time: {city: "Denver", time: "14:35", timezone: "Mountain Time"}⟧ current time there for you. It is currently two thirty-five PM Mountain Time in Denver.
-[244.74s][user ] «backchannel» Okay.
-[250.00s][user ] Thank you, Oruus.
-[251.17s][moshi] You're very welcome. I trust your trip will be both enjoyable and restorative.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.02s⟩ May tenth.
+[  4.41s][moshi] Greyhound offers a ⟦⚡SPAN@6.02s: (tool result) Buses_3_FindBus: departure_city=Chicago; arrival_city=Denver; passenger_count=3; date=2024-05-10⟧ bus for one hundred fifty dollars, lasting twenty hours. Megabus is one hundred twenty, twenty-two hours.
+[  8.03s][user ] «backchannel» Yeah.
+[ 13.32s][user ] That Greyhound one sounds good. Can you book it?
+[ 16.25s][moshi] ⟨ret@16.01s⟩ Your Greyhound ⟦⚡SPAN@18.01s: (tool result) Buses_3_BookBus: bus_company=Greyhound; departure_city=Chicago; arrival_city=Denver; passenger_c⟧ bus is booked! The reference number is AX789YZ.
+[ 23.53s][user ] Great. What time does it ⟨ret@26.02s⟩ depart?
+[ 26.18s][moshi] The bus ⟦⚡SPAN@27.14s: (tool result) Buses_3_GetDepartureTime: booking_reference=AX789YZ; departure_time=08:00⟧ departs at eight in the morning on May tenth.
+[ 29.98s][user ] Eight AM… that's early.
+[ 32.56s][moshi] It is quite early, yes. Perhaps a later departure would be better?
+[ 35.66s][user ] «backchannel» Yeah.
+[ 40.05s][user ] Maybe. Are there any buses leaving Chicago to Denver on May eleventh?
+[ 44.49s][moshi] ⟨ret@44.43s⟩ FlixBus has a ⟦⚡SPAN@46.43s: (tool result) Buses_3_FindBus: departure_city=Chicago; arrival_city=Denver; passenger_count=3; date=2024-05-11⟧ bus for one hundred thirty-five dollars, taking nineteen hours. Greyhound is one hundred sixty, twenty-one hours.
+[ 54.31s][user ] FlixBus sounds better. Book that ⟨ret@56.64s⟩ one.
+[ 57.04s][moshi] Your FlixBus ⟦⚡SPAN@58.64s: (tool result) Buses_3_BookBus: bus_company=FlixBus; departure_city=Chicago; arrival_city=Denver; passenger_cou⟧ is booked. The booking reference is BW246RT.
+[ 64.39s][user ] Perfect. What time does *that* one ⟨ret@67.10s⟩ leave?
+[ 67.34s][moshi] Let me ⟦⚡SPAN@68.54s: (tool result) Buses_3_GetDepartureTime: booking_reference=BW246RT; departure_time=14:30⟧ retrieve that departure time for you. That bus departs at two thirty PM on May eleventh.
+[ 74.65s][user ] Two thirty… hmm, is there a direct train?
+[ 78.45s][moshi] A train might be a more comfortable option. Let’s explore that.
+[ 81.62s][user ] «backchannel» Mhm.
+[ 83.03s][user ] Yes, please. Direct train from Chicago to Denver.
+[ 87.15s][moshi] ⟨ret@87.07s⟩ Amtrak has ⟦⚡SPAN@88.27s: (tool result) Trains_1_FindTrain: departure_city=Chicago; arrival_city=Denver; passenger_count=3; date=2024-05⟧ a direct train for two hundred fifty dollars, taking twenty-seven hours.
+[ 93.09s][user ] Twenty-seven hours! That’s longer than the bus.
+[ 96.20s][moshi] It is a significantly longer journey by train, yes.
+[ 98.49s][user ] «backchannel» Right.
+[ 99.62s][user ] Is there anything faster, even with a ⟨ret@102.39s⟩ connection?
+[102.79s][moshi] There’s a connection ⟦⚡SPAN@104.39s: (tool result) Trains_1_FindTrain: departure_city=Chicago; arrival_city=Denver; passenger_count=3; date=2024-05⟧ in Kansas City, taking twenty-three hours, for two hundred twenty dollars.
+[105.73s][user ] «backchannel» Yeah.
+[109.16s][user ] Okay, book the one with the ⟨ret@111.00s⟩ connection.
+[111.16s][moshi] Your train ⟦⚡SPAN@113.00s: (tool result) Trains_1_BookTrain: train_company=Amtrak; departure_city=Chicago; arrival_city=Denver; passenger⟧ is booked! The reference number is CT593UV.
+[114.62s][user ] «backchannel» Yeah.
+[117.90s][user ] Wonderful. What time does the first leg ⟨ret@120.91s⟩ leave?
+[121.22s][moshi] The first leg ⟦⚡SPAN@122.91s: (tool result) Trains_1_GetDepartureTime: booking_reference=CT593UV; departure_time=10:00⟧ departs at ten AM on May eleventh.
+[122.96s][user ] «backchannel» Really?
+[125.81s][user ] And how long is the layover in Kansas City?
+[128.95s][moshi] ⟨ret@128.87s⟩ The layover ⟦⚡SPAN@129.91s: (tool result) Trains_1_GetLayoverDuration: booking_reference=CT593UV; layover_duration=2h30m⟧ in Kansas City is two hours and thirty minutes.
+[132.11s][user ] «backchannel» Yeah, yeah.
+[133.63s][user ] That’s manageable.
+[134.97s][moshi] I’m glad to hear that feels comfortable for you.
+[137.68s][user ] Actually— I think I’d rather take the FlixBus after all.
+[141.03s][moshi] ⟨ret@140.79s⟩ You’d prefer to ⟦⚡SPAN@142.79s: (tool result) Buses_3_CancelBooking: booking_reference=BW246RT; cancellation_status=confirmed; refund_amount=1⟧ switch back to the FlixBus? Your FlixBus booking is canceled, and a full refund of one hundred thirty-five dollars is confirmed.
+[151.47s][user ] Can we rebook that one now?
+[153.38s][moshi] ⟨ret@153.30s⟩ ⟦⚡SPAN@153.80s: (tool result) Buses_3_BookBus: bus_company=FlixBus; departure_city=Chicago; arrival_city=Denver; passenger_cou⟧ Yes, absolutely— The FlixBus is rebooked. Your new reference is DX184WZ.
+[156.09s][user ] «backchannel» Yeah.
+[161.40s][user ] Excellent. So, to recap, FlixBus on May eleventh.
+[166.50s][moshi] That’s correct. FlixBus to Denver on May eleventh.
+[170.97s][user ] And the departure time again?
+[172.49s][moshi] ⟨ret@172.42s⟩ ⟦⚡SPAN@172.92s: (tool result) Buses_3_GetDepartureTime: booking_reference=DX184WZ; departure_time=14:30⟧ Certainly. The FlixBus departs at two thirty PM.
+[174.82s][user ] «backchannel» Yeah.
+[177.36s][user ] Perfect. Thank you, Oruus.
+[179.11s][moshi] You’re very welcome. I'm glad I could help you arrange your travel.

@@ -50,43 +50,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just listening to Mamma Mia  | S2 That's interesting. I didn't reali | S3 Right. So they were a real songwri | S4 Oh, that makes sense. I guess that
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 That’s…interesting! Did they write | S3 I wonder what they’re up to now. | S4 Oh, so he’s connected to Mamma Mia
 
-     0.00s  user  발화 시작: I was just listening to Mamma Mia and I’m curious—who wrote 
-     5.17s  <ret> 발화 (turn1 첫 프레임)
-     5.41s  agent 발화 시작: <ret> That’s a lovely song, isn’t it? It’s wonderful discove
-     5.42s  user  발화 끝
-     7.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: [source: Wikipedia] "My Love, My Life" was written by Björn Ulvaeus.
-    11.08s  agent 발화 시작: Björn Ulvaeus wrote “My Love, My Life” for the musical *Mamm
-    11.11s  agent 발화 끝
-    15.52s  agent 발화 끝
-    15.97s  user  발화 시작: Oh, okay. And was he one of the original members of ABBA?
-    20.14s  <ret> 발화 (turn4 첫 프레임)
-    20.30s  agent 발화 시작: <ret> Yes, he was. Björn Ulvaeus was a key member of the ico
-    20.32s  user  발화 끝
-    22.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: [source: AllMusic] Björn Ulvaeus, along with Benny Andersson, Agnetha 
-    25.35s  agent 발화 시작: Björn Ulvaeus formed ABBA in nineteen seventy-two with three
-    25.53s  agent 발화 끝
-    30.44s  agent 발화 끝
-    30.79s  user  발화 시작: That's interesting. I didn't realize it was that long ago. W
-    36.82s  <ret> 발화 (turn7 첫 프레임)
-    37.05s  agent 발화 시작: <ret> Benny Andersson was the other primary songwriter for A
-    37.23s  user  발화 끝
-    38.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.57s]: [source: Britannica] Benny Andersson composed music and played keyboar
-    42.40s  <ret> 발화 (turn8 첫 프레임)
-    42.54s  agent 발화 시작: <ret> Benny Andersson composed music and played keyboards, w
-    42.62s  agent 발화 끝
-    44.40s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.15s]: (tool result) AAPL:170.34, MSFT:430.22, GOOG:150.89
-    48.69s  agent 발화 끝
-    48.84s  user  발화 시작: Right. So they were a real songwriting team. Did they write 
-    54.19s  <ret> 발화 (turn10 첫 프레임)
-    54.27s  agent 발화 시작: <ret> They wrote most of the songs, but not all. Some were p
-    54.49s  user  발화 끝
-    56.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: [source: Mamma Mia! official website] The *Mamma Mia!* musical feature
-    58.98s  agent 발화 시작: The *Mamma Mia!* musical includes both new songs and existin
-    59.07s  agent 발화 끝
-    64.11s  user  발화 시작: Oh, that makes sense. I guess that’s why it feels so familia
-    64.16s  agent 발화 끝
-    69.67s  user  발화 끝
-    69.83s  agent 발화 시작: You’re very welcome. It’s my pleasure to share these little 
-    76.64s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
+     5.49s  <ret> 발화 (turn1 첫 프레임)
+     5.65s  user  발화 끝
+     5.73s  agent 발화 시작: <ret> It is a lovely piece, isn’t it? The song was written b
+     7.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: [source: Britannica] Björn Ulvaeus is a Swedish singer, songwriter, an
+    10.17s  agent 발화 끝
+    10.18s  agent 발화 시작: Björn Ulvaeus wrote the song as part of his work with the gr
+    14.06s  agent 발화 끝
+    14.48s  user  발화 시작: Oh, ABBA! I always forget it was them. Were they all Swedish
+    18.92s  <ret> 발화 (turn4 첫 프레임)
+    19.08s  agent 발화 시작: <ret> Yes, they were all Swedish — Agnetha Fältskog, Björn U
+    19.11s  user  발화 끝
+    20.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: [source: Official ABBA website] ABBA consisted of two married couples:
+    26.04s  agent 발화 시작: ABBA’s lineup included Agnetha, Björn, Benny, and Anni-Frid,
+    26.21s  agent 발화 끝
+    31.93s  agent 발화 끝
+    32.31s  user  발화 시작: That’s…interesting! Did they write all their own songs?
+    35.91s  <ret> 발화 (turn7 첫 프레임)
+    36.15s  agent 발화 시작: <ret> They primarily wrote their own songs, with Benny and B
+    36.33s  user  발화 끝
+    37.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: [source: Rolling Stone] Benny Andersson and Björn Ulvaeus were respons
+    41.52s  agent 발화 시작: Benny Andersson and Björn Ulvaeus wrote most of ABBA’s well-
+    41.61s  agent 발화 끝
+    46.05s  agent 발화 끝
+    46.15s  user  발화 시작: I wonder what they’re up to now.
+    47.48s  <ret> 발화 (turn10 첫 프레임)
+    47.55s  agent 발화 시작: <ret> [sigh] They've all pursued various projects since ABBA
+    47.76s  user  발화 끝
+    48.92s  ⚡SPAN 주입(IRRELEVANT) [d'=1.44s / d_lead=4.35s]: (tool result) AAPL: 170.34 USD, +0.89, 0.53%
+    51.90s  agent 발화 끝
+    51.91s  user  발화 시작: Like what, specifically?
+    53.56s  <ret> 발화 (turn12 첫 프레임)
+    53.87s  agent 발화 시작: <ret> Björn Ulvaeus has been involved in musical theatre, in
+    53.94s  user  발화 끝
+    54.92s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.74s]: [source: The Guardian] Björn Ulvaeus co-wrote the musical *Chess* and 
+    59.53s  agent 발화 시작: Björn Ulvaeus co-wrote *Chess* and helped develop *Mamma Mia
+    59.60s  agent 발화 끝
+    61.83s  user  발화 시작: Yeah.
+    62.55s  user  발화 끝
+    65.00s  agent 발화 끝
+    65.54s  user  발화 시작: Oh, so he’s connected to Mamma Mia in more ways than one! Th
+    70.83s  agent 발화 시작: It certainly does. It’s wonderful when an artist’s vision co
+    70.96s  user  발화 끝
+    76.15s  agent 발화 끝

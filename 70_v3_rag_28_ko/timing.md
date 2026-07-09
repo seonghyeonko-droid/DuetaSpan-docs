@@ -69,17 +69,17 @@
 # }
 
 
-     0.00s  user  발화 시작: 재향군인부(Veterans Affairs)가 언제 만들어졌는지 궁금해.
-     3.76s  <ret> 발화 (turn1 첫 프레임)
-     4.07s  agent 발화 시작: <ret> 재향군인들을 위한 부처가 언제 생겼는지 알아볼까요? 미국 재향군인부는 천구백삼십년 칠월 이십일일에
-     4.17s  user  발화 끝
-     5.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.13s]: [source: Britannica] The United States Department of Veterans Affairs 
-    12.32s  agent 발화 끝
-    13.57s  user  발화 시작: 음, 그게 좀 늦은 것 같은데. 그 전에는 재향군인들을 어떻게 보살폈어?
-    19.06s  agent 발화 시작: 이전에는 여러 기관에서 재향군인들을 지원했지만, 하나의 부처로 통합된 건 천구백삼십년이었답니다.
-    19.32s  user  발화 끝
-    26.35s  user  발화 시작: 그러니까 그 전까지는 체계적인 관리가 안 됐다는 거네?
-    26.43s  agent 발화 끝
-    29.77s  user  발화 끝
-    29.95s  agent 발화 시작: [curious] 음, 그렇다고 단정하긴 어렵지만, 통합 전에는 지원이 분산되어 있었던 건 사실이에요.
-    36.02s  agent 발화 끝
+     0.00s  user  발화 시작: 퇴역 군인부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해. 그냥 대략
+     7.58s  <ret> 발화 (turn1 첫 프레임)
+     7.90s  agent 발화 시작: <ret> 음, 정확한 날짜를 말씀드리려면 잠시 알아봐야겠네요. 퇴역 군인부는 허버트 후버 대통령의 명령에 
+     8.02s  user  발화 끝
+     8.62s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.76s]: [source: Wikipedia] The United States Department of Veterans Affairs w
+    18.54s  agent 발화 끝
+    19.75s  user  발화 시작: 천구백삼십년이라고? 좀 더 일찍 만들어진 줄 알았는데. 혹시 그 전에 비슷한 기능을 하던 부서는 없었어?
+    27.71s  agent 발화 시작: 그 전에 비슷한 기능을 하던 부서는 있었지만, 지금의 퇴역 군인부와는 규모나 권한이 달랐어요. 이전에는 주로
+    27.96s  user  발화 끝
+    38.33s  user  발화 시작: 전쟁부 산하에서 담당했다는 건, 전쟁이 끝나고 나서야 관심을 가졌다는 뜻인가?
+    38.41s  agent 발화 끝
+    44.30s  user  발화 끝
+    44.45s  agent 발화 시작: 꼭 그렇지는 않아요. 퇴역 군인들을 위한 지원은 이전부터 있었지만, 규모가 작고 체계적이지 못했어요. 천구백
+    55.99s  agent 발화 끝

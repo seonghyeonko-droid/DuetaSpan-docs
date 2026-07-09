@@ -58,47 +58,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Two from each state… that makes se | S3 That's a good idea! Could you set  | S4 I— I mean, is there a good time of
+# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 It's just… hard. I keep scrolling  | S3 That sounds… drastic. | S4 Right. So I should stop looking at
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.56s  <ret> 발화 (turn1 첫 프레임)
-     2.63s  agent 발화 시작: <ret> That’s a good question, and I wish I had a definitive 
-     2.72s  user  발화 끝
-     4.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (no information found)
-     8.12s  user  발화 시작: Yeah.
-     8.43s  user  발화 끝
-    10.05s  user  발화 시작: Oh. Okay. Well, what about the US Senate? How many senators 
-    10.19s  agent 발화 끝
-    14.13s  <ret> 발화 (turn4 첫 프레임)
-    14.22s  user  발화 끝
-    14.37s  agent 발화 시작: <ret> There are one hundred senators in the US Senate—two re
-    15.25s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.42s]: [source: Wikipedia] The Senate is composed of one hundred senators, tw
-    19.79s  agent 발화 끝
-    19.97s  user  발화 시작: Two from each state… that makes sense. Uh, what’s the best w
-    27.32s  agent 발화 시작: Staying hydrated is really important! Drinking water before,
-    27.48s  user  발화 끝
-    32.40s  user  발화 시작: Yeah.
-    32.84s  user  발화 끝
-    34.13s  agent 발화 시작: And it’s helpful to sip water consistently instead of gulpin
-    34.27s  agent 발화 끝
-    38.61s  agent 발화 끝
-    39.40s  user  발화 시작: Consistent sipping… okay, I can try that. [laugh] I always f
-    43.57s  agent 발화 시작: It's a common habit to forget—we all get caught up in the mo
-    43.62s  user  발화 끝
-    45.50s  user  발화 시작: Yeah, yeah.
-    46.14s  user  발화 끝
-    49.68s  agent 발화 끝
-    49.99s  user  발화 시작: That's a good idea! Could you set a timer for me for every f
-    54.57s  <ret> 발화 (turn13 첫 프레임)
-    54.89s  agent 발화 시작: <ret> I’ve set a timer for fifteen minutes, labeled “hydrati
-    55.08s  user  발화 끝
-    55.77s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.49s]: (tool result) timer_id: 789456; start_time: 14:32; duration: 15m
-    59.38s  agent 발화 끝
-    59.98s  user  발화 시작: Perfect! Thanks, Nias.
-    61.74s  agent 발화 시작: You’re very welcome. Small habits like that can really make 
-    61.87s  user  발화 끝
-    67.39s  agent 발화 끝
-    67.39s  user  발화 시작: I— I mean, is there a good time of day to exercise, or does 
-    71.92s  user  발화 끝
-    71.95s  agent 발화 시작: There isn’t one universally “best” time, but choosing a time
-    79.97s  agent 발화 끝
+     2.48s  <ret> 발화 (turn1 첫 프레임)
+     2.56s  agent 발화 시작: <ret> That’s a good question, and I’m afraid I don’t have a 
+     2.59s  user  발화 끝
+     4.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (no information found)
+     5.99s  user  발화 시작: Mhm.
+     6.49s  user  발화 끝
+     9.84s  user  발화 시작: Oh, okay. Well, what about the US Senate? How many senators 
+     9.97s  agent 발화 끝
+    13.95s  <ret> 발화 (turn4 첫 프레임)
+    14.04s  user  발화 끝
+    14.19s  agent 발화 시작: <ret> There are one hundred senators in the US Senate—two re
+    15.07s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.91s]: [source: Wikipedia] The Senate is composed of one hundred senators, tw
+    17.12s  user  발화 시작: Okay.
+    17.75s  user  발화 끝
+    19.10s  agent 발화 끝
+    19.20s  user  발화 시작: That's easy enough to remember. Um, I’ve been trying to get 
+    23.77s  agent 발화 시작: That’s wonderful to hear! Prioritizing sleep is such a valua
+    23.78s  user  발화 끝
+    32.21s  agent 발화 끝
+    33.00s  user  발화 시작: It's just… hard. I keep scrolling on my phone.
+    36.48s  agent 발화 시작: I understand completely. That’s a very common struggle. Many
+    36.55s  user  발화 끝
+    38.38s  user  발화 시작: Yeah, yeah.
+    39.76s  user  발화 끝
+    42.50s  agent 발화 끝
+    42.80s  user  발화 시작: Yeah. Is there— I mean, is there a way to break that habit?
+    46.15s  agent 발화 시작: Absolutely. One technique is to create a phone-free zone in 
+    46.35s  user  발화 끝
+    52.54s  agent 발화 끝
+    53.16s  user  발화 시작: That sounds… drastic.
+    54.66s  user  발화 시작: But maybe worth a try? I do keep it on my nightstand.
+    54.81s  user  발화 끝
+    58.08s  agent 발화 시작: It can feel like a big change, but even starting with fiftee
+    58.18s  user  발화 끝
+    64.62s  user  발화 시작: Okay. What about blue light? Does that really mess with slee
+    64.70s  agent 발화 끝
+    68.36s  <ret> 발화 (turn17 첫 프레임)
+    68.43s  agent 발화 시작: <ret> Blue light from screens can reduce melatonin, a hormon
+    68.56s  user  발화 끝
+    70.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.03s]: [source: National Eye Institute] Blue light given off by screens can s
+    72.50s  user  발화 시작: Okay.
+    73.13s  user  발화 끝
+    74.46s  agent 발화 끝
+    74.81s  user  발화 시작: Right. So I should stop looking at my phone even earlier, th
+    78.28s  user  발화 끝
+    78.52s  agent 발화 시작: That's one approach. Perhaps trying a warm-toned filter on y
+    82.09s  user  발화 시작: Right.
+    82.58s  user  발화 끝
+    84.03s  user  발화 시작: That's a good idea! Thanks, Nias.
+    84.12s  agent 발화 끝
+    86.32s  agent 발화 시작: You're very welcome. Remember, small steps consistently take
+    86.56s  user  발화 끝
+    92.34s  agent 발화 끝

@@ -59,12 +59,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering… do you know what country flag has black, red, and yellow? I’m terrible with flags, honestly.
-[  8.89s][moshi] It’s a common struggle, remembering all those flags! Let’s see if we can pinpoint it for you.
-[ 14.24s][moshi] ⟨ret@14.00s⟩ That ⟦⚡SPAN@15.04s: [source: Britannica] The flag of Germany features three horizontal bands of black, red, and gold.⟧ particular combination of colors— The flag of Germany is black, red, and gold, arranged in horizontal bands.
-[ 22.26s][user ] Oh, Germany! Right. I always get Germany and Belgium mixed up. They’re both… European, I guess?
-[ 28.84s][moshi] It’s easy to do, they are both located in Europe. Is there anything else I can help you with regarding flags?
-[ 34.97s][moshi] ⟨ret@34.66s⟩ Speaking of ⟦⚡SPAN@35.94s: [source: WorldAtlas] The flag of Belgium consists of three vertical bands of black, yellow, and red.⟧ colors and flags, The flag of Belgium has black, yellow, and red vertical bands.
-[ 37.60s][user ] «backchannel» Right.
-[ 40.56s][user ] So that’s why I get them mixed up! Similar colors… But different arrangements. Do you think studying flags could help with geography?
-[ 49.23s][moshi] Absolutely! Visual cues like flags can really solidify geographical knowledge. It’s a fun way to learn.
+[  0.00s][user ] So, I’m working on a project, and I need to identify a flag. It’s got black, red, and yellow on it… does that ring a bell?
+[  9.05s][moshi] That’s a good starting point for identifying a flag! Many nations use those colors in various combinations.
+[ 17.13s][user ] Yeah, uh, I was also trying a new coffee shop this morning— really good latte, anyway, back to the flag. Any ⟨ret@25.23s⟩ ideas?
+[ 25.47s][moshi] The flag of ⟦⚡SPAN@27.23s: [source: Britannica] The flag of Germany features three horizontal bands of black, red, and gold.⟧ Germany is composed of three horizontal bands—black, red, and gold.
+[ 28.22s][user ] «backchannel» Right.
+[ 32.33s][user ] Oh! Germany, right. I always get those central European flags mixed up. Are there others like that?
+[ 39.47s][moshi] It’s easy to confuse them, they share some similarities. Many flags evolved over time, borrowing elements.
+[ 48.23s][user ] Hmm, okay. What about Belgium? Does their flag have those colors ⟨ret@54.71s⟩ too?
+[ 55.03s][moshi] Yes, Belgium's ⟦⚡SPAN@56.55s: [source: Flags of the World] The Belgian flag consists of three vertical bands of black, yellow, and red.⟧ flag also includes those colors. The Belgian flag is made up of three vertical bands—black, yellow, and red.
+[ 64.71s][user ] So, Germany is horizontal and Belgium is vertical… that’s a good way to remember. Thanks, Kiora!
+[ 72.48s][moshi] You’re very welcome! Remembering the orientation is a smart way to keep them separate.

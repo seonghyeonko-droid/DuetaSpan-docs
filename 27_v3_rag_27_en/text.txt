@@ -61,13 +61,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm trying to find out a little bit about Lux Aurunque, but I’m getting confused by all the different sources.
-[  5.76s][moshi] It’s understandable to feel overwhelmed with research, sometimes. Let’s focus on getting you clear information about Lux Aurunque, one step at a time.
-[ 10.85s][user ] «backchannel» Yeah, yeah.
-[ 14.85s][user ] Do you know when he was born? That would be a good place ⟨ret@18.08s⟩ to start.
-[ 18.48s][moshi] Regarding ⟦⚡SPAN@19.20s: [source: Wikipedia] Lux Aurunque was born in 1970 in the Republic of Vesper.⟧ his birth year— Lux Aurunque was born in nineteen seventy, in the Republic of Vesper.
-[ 22.25s][user ] «backchannel» Uh-huh.
-[ 25.01s][user ] Nineteen seventy… that’s quite recent, isn't it? I— I mean, I thought he was—
-[ 30.16s][user ] …much older, a historical figure from centuries ago! Am I completely off base?
-[ 36.69s][moshi] [laugh] It seems there’s a bit of a misunderstanding. Lux Aurunque is a contemporary artist, not a historical figure.
-[ 43.83s][moshi] ⟨ret@43.75s⟩ To ⟦⚡SPAN@44.71s: [source: Artnet] Lux Aurunque is known for his bronze sculptures depicting scenes from Vesperian folklore.⟧ clarify his artistic focus— He is known for bronze sculptures depicting scenes from Vesperian folklore.
+[  0.00s][user ] I’m trying to figure out when Lux Aurunque was born. It’s for a history project.
+[  4.97s][moshi] That’s a fascinating area of study, and I’m happy to help you with your research.
+[  9.15s][moshi] ⟨ret@8.75s⟩ Let ⟦⚡SPAN@9.95s: [source: Wikipedia] Lux Aurunque was born in nineteen seventy.⟧ me share some information on that figure… Lux Aurunque was born in nineteen seventy.
+[ 12.50s][user ] «backchannel» Yeah, yeah.
+[ 15.40s][user ] Was he involved in any major political events?
+[ 18.57s][moshi] «interrupted» Oh—
+[ 18.45s][user ] «interrupts_prev» I mean, was he a ruler or something?
+[ 20.69s][moshi] That's a good question to consider alongside his birthdate.
+[ 24.02s][moshi] ⟨ret@23.95s⟩ It appears he did ⟦⚡SPAN@25.71s: [source: Britannica] Lux Aurunque served as a magistrate in the region for several years.⟧ have a position of influence… Lux Aurunque served as a magistrate in the region for several years.
+[ 28.23s][user ] «backchannel» Uh-huh.
+[ 31.56s][user ] A magistrate… so not a king then?
+[ 34.18s][moshi] Not a king, no. A magistrate typically oversees legal matters within a community.

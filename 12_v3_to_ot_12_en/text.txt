@@ -59,11 +59,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, who actually played the guitar solo on Michael Jackson’s “Beat It”? It's such an iconic ⟨ret@7.23s⟩ sound.
-[  7.47s][moshi] That’s a great question, and ⟦⚡SPAN@9.23s: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Michael Jackson's song "Beat It".⟧ it’s a bit of a story! Eddie Van Halen is credited with playing the guitar solo for Michael Jackson’s “Beat It”.
-[ 10.64s][user ] «backchannel» Okay.
-[ 15.79s][user ] Wow, Eddie Van Halen? I always assumed it was someone more closely tied to Jackson’s band.
-[ 21.73s][user ] «to_other» Hey, did you take the trash out yet?
-[ 23.77s][user ] Sorry about that. So, was it a difficult collaboration getting him on ⟨ret@28.13s⟩ the track?
-[ 28.53s][moshi] It certainly wasn’t ⟦⚡SPAN@29.97s: [source: Rolling Stone] Quincy Jones had to convince Van Halen to contribute, as Van Halen initially refused, ⟧ a typical arrangement, and required some convincing.
-[ 32.71s][moshi] Quincy Jones persuaded Eddie Van Halen to play on the song, despite his initial reluctance.
+[  0.00s][user ] I was just listening to Beat It, and I was wondering who actually played that guitar solo? It’s ⟨ret@6.10s⟩ amazing.
+[  6.34s][moshi] That’s a fantastic ⟦⚡SPAN@7.54s: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Michael Jackson's song "Beat It".⟧ track. Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat It”.
+[  8.55s][user ] «backchannel» Okay.
+[ 12.27s][user ] Wow, really? I always thought it sounded like him, but I didn’t know for sure.
+[ 17.00s][user ] «to_other» Did you remember to take the trash out?
+[ 19.18s][user ] Sorry about that. So, was he asked specifically to do it, or did he just… ⟨ret@24.86s⟩ show up?
+[ 25.25s][moshi] Michael Jackson really wanted ⟦⚡SPAN@26.86s: [source: Rolling Stone] Michael Jackson specifically sought out Eddie Van Halen to play guitar on "Beat It", w⟧ a rock element in the song, and Van Halen was his first choice.
+[ 31.16s][moshi] Michael Jackson specifically sought Eddie Van Halen to blend rock and pop on “Beat It”.

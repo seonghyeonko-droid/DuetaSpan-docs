@@ -63,99 +63,95 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 You're right. I'm starting to thin | S3 A master’s degree… that’s a commit | S4 That makes sense. So, if I wanted 
+# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Oh, fantastic. Thanks so much! [ha | S3 Hmm, that’s a good question. I rea | S4 Great! Thanks. Um, what’s the weat
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.14s  <ret> 발화 (turn1 첫 프레임)
-     3.54s  agent 발화 시작: <ret> Let's check that for you… Tokyo had cloudy skies with 
-     3.64s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.72s]: (tool result) location:Tokyo; date:2023-12-24; temperature:6.2°C; cond
-     3.79s  user  발화 끝
-    11.09s  agent 발화 끝
-    11.48s  user  발화 시작: Okay, and can you find me a good Italian restaurant nearby?
-    13.99s  <ret> 발화 (turn3 첫 프레임)
-    14.39s  agent 발화 시작: <ret> Absolutely, let’s see what’s around… There are two Ita
-    14.62s  user  발화 끝
-    15.27s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.58s]: (tool result) restaurants:[{name:“Bella Notte”, rating:4.5, price_rang
-    18.27s  user  발화 시작: Yeah.
-    18.63s  user  발화 끝
-    22.14s  user  발화 시작: Bella Notte sounds nice. Can you make a reservation there fo
-    22.60s  agent 발화 끝
-    26.77s  <ret> 발화 (turn6 첫 프레임)
-    27.17s  agent 발화 시작: <ret> I can certainly try to do that… Your table for two at 
-    27.33s  user  발화 끝
-    28.21s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.60s]: (tool result) reservation_id:BN7892; restaurant_name:Bella Notte; date
-    32.83s  user  발화 시작: Right.
-    33.31s  user  발화 끝
-    36.07s  agent 발화 끝
-    36.13s  user  발화 시작: Perfect! That's a huge weight off my mind. I— I mean, work’s
-    41.40s  agent 발화 시작: [laugh] It’s wonderful to hear you’re feeling relieved. Prio
-    41.55s  user  발화 끝
-    49.41s  agent 발화 끝
-    49.69s  user  발화 시작: You're right. I'm starting to think I need a career change, 
-    55.10s  user  발화 끝
-    55.50s  agent 발화 시작: That’s a very common feeling. It’s brave to acknowledge that
-    61.73s  agent 발화 끝
-    62.42s  user  발화 시작: What's a good career for someone who likes helping people bu
-    67.12s  agent 발화 시작: That’s a great question! Many fulfilling careers blend those
-    67.24s  user  발화 끝
-    74.68s  agent 발화 끝
-    74.99s  user  발화 시작: Counseling… hmm. What does a counselor actually *do* day to 
-    79.62s  <ret> 발화 (turn15 첫 프레임)
-    79.70s  agent 발화 시작: <ret> Let's find out more about that… Counselors assist indi
-    79.89s  user  발화 끝
-    80.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.29s]: [source: US Bureau of Labor Statistics] Counselors help people cope wi
-    87.72s  agent 발화 끝
-    88.12s  user  발화 시작: Okay, that sounds interesting. What kind of education do I n
-    92.70s  <ret> 발화 (turn17 첫 프레임)
-    92.78s  agent 발화 시작: <ret> Let's look into the educational requirements… A master
-    92.93s  user  발화 끝
-    93.82s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.22s]: [source: American Counseling Association] Most counseling positions re
-    98.79s  user  발화 시작: Yeah, totally.
-    99.42s  user  발화 끝
-   101.31s  agent 발화 끝
-   101.59s  user  발화 시작: A master’s degree… that’s a commitment. What’s the job outlo
-   106.12s  <ret> 발화 (turn20 첫 프레임)
-   106.52s  agent 발화 시작: <ret> Let’s check the current job market… The job outlook fo
-   106.69s  user  발화 끝
-   107.08s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.24s]: [source: US Bureau of Labor Statistics] Employment of counselors is pr
-   114.73s  agent 발화 끝
-   115.34s  user  발화 시작: Wow, eighteen percent! That’s really good. Are they well-pai
-   119.07s  <ret> 발화 (turn22 첫 프레임)
-   119.23s  agent 발화 시작: <ret> Let’s find out about the typical earnings… The median 
-   119.50s  user  발화 끝
-   120.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.48s]: [source: US Bureau of Labor Statistics] The median annual wage for cou
-   122.05s  user  발화 시작: Yeah.
-   122.35s  user  발화 끝
-   128.00s  user  발화 시작: Seventy-four thousand… not bad at all. Is there a lot of com
-   128.09s  agent 발화 끝
-   133.41s  user  발화 끝
-   133.48s  agent 발화 시작: Competition can vary by specialization and location, but gen
-   135.90s  user  발화 시작: Yeah.
-   136.30s  user  발화 끝
-   139.72s  user  발화 시작: What about stress levels? Is it a very stressful job?
-   139.83s  agent 발화 끝
-   143.13s  user  발화 끝
-   143.16s  agent 발화 시작: It can be emotionally demanding, certainly, but many counsel
-   150.52s  user  발화 시작: That makes sense. So, if I wanted to explore this further, w
-   150.67s  agent 발화 끝
-   154.95s  agent 발화 시작: I suggest researching counseling programs at local universit
-   155.19s  user  발화 끝
-   161.94s  agent 발화 끝
-   161.95s  user  발화 시작: What are some good universities around here with counseling 
-   165.11s  <ret> 발화 (turn32 첫 프레임)
-   165.35s  agent 발화 시작: <ret> Let’s see what universities nearby offer counseling pr
-   165.51s  user  발화 끝
-   166.63s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.42s]: (tool result) universities:[{name:“State University”, programs:[“Maste
-   168.72s  agent 발화 시작: State University and City College both offer counseling prog
-   168.77s  agent 발화 끝
-   176.41s  agent 발화 끝
-   176.68s  user  발화 시작: State University sounds like a good starting point. Can you 
-   183.46s  <ret> 발화 (turn35 첫 프레임)
-   183.57s  user  발화 끝
-   183.75s  agent 발화 시작: <ret> Of course, I can set that up for you… I’ve added a rem
-   184.74s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.36s]: (tool result) reminder_id:RM4567; date:2024-03-09; time:10:00; descrip
-   191.21s  user  발화 시작: Wonderful. Thank you so much, Brae. You’ve been a huge help.
-   191.35s  agent 발화 끝
-   194.45s  user  발화 끝
-   194.84s  agent 발화 시작: You’re very welcome. I’m so glad I could support you in expl
-   201.84s  agent 발화 끝
+     3.32s  <ret> 발화 (turn1 첫 프레임)
+     3.70s  agent 발화 시작: <ret> On December twenty-fourth, Tokyo had a high of six and
+     3.93s  user  발화 끝
+     4.68s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.24s]: (tool result) Weather_1_GetWeather: city=Tokyo, date=2023-12-24, high=
+    11.16s  agent 발화 끝
+    11.66s  user  발화 시작: That sounds chilly. Uh, could you find me a nice cafe near S
+    15.63s  <ret> 발화 (turn3 첫 프레임)
+    16.01s  agent 발화 시작: <ret> Of course, I can certainly help with that. Streamer Co
+    16.24s  user  발화 끝
+    17.39s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.94s]: (tool result) Places_1_FindPlaces: query=cafe, near=Shibuya Station, r
+    20.91s  user  발화 시작: Yeah.
+    21.27s  user  발화 끝
+    25.82s  user  발화 시작: Streamer Coffee Company sounds good. Do they have Wi-Fi?
+    26.30s  agent 발화 끝
+    28.86s  <ret> 발화 (turn6 첫 프레임)
+    29.26s  agent 발화 시작: <ret> Yes, Streamer Coffee Company does offer free Wi-Fi to 
+    29.44s  user  발화 끝
+    29.82s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.92s]: (tool result) Places_1_GetDetails: place_name=Streamer Coffee Company,
+    31.91s  user  발화 시작: Yeah, yeah.
+    33.10s  user  발화 끝
+    33.27s  agent 발화 끝
+    33.42s  user  발화 시작: Perfect! I— I mean, could you reserve a table for one there 
+    38.00s  <ret> 발화 (turn9 첫 프레임)
+    38.32s  agent 발화 시작: <ret> Absolutely, I can make that reservation for you. I’ve 
+    38.50s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.30s]: (tool result) Reservations_1_Reserve: place_name=Streamer Coffee Compa
+    38.52s  user  발화 끝
+    49.46s  agent 발화 끝
+    49.75s  user  발화 시작: Oh, fantastic. Thanks so much! [happy]
+    51.69s  user  발화 끝
+    52.06s  agent 발화 시작: You’re very welcome! It’s my pleasure to help you plan a rel
+    56.65s  agent 발화 끝
+    57.27s  user  발화 시작: Actually, do you know anything about career coaching? I'm fe
+    61.28s  agent 발화 시작: I do! As a wellness coach, I often help people navigate care
+    61.43s  user  발화 끝
+    67.58s  agent 발화 끝
+    68.10s  user  발화 시작: That’s good to hear. I’m thinking about a career change but 
+    72.74s  agent 발화 시작: That’s a common feeling! We can explore your strengths, valu
+    72.96s  user  발화 끝
+    79.00s  agent 발화 끝
+    79.41s  user  발화 시작: Okay… what’s the first step, do you think?
+    82.31s  agent 발화 시작: Let's start with identifying what truly energizes you, and w
+    82.37s  user  발화 끝
+    87.45s  user  발화 시작: Hmm, that’s a good question. I really enjoy problem-solving,
+    87.54s  agent 발화 끝
+    94.15s  agent 발화 시작: That’s insightful! Problem-solving suggests analytical skill
+    94.21s  user  발화 끝
+    98.43s  user  발화 시작: Yeah, totally.
+    99.25s  user  발화 끝
+   100.25s  user  발화 시작: Right. I just feel like I’m not using my skills fully.
+   100.27s  agent 발화 끝
+   103.27s  agent 발화 시작: Many people feel that way. It sounds like you’re ready to fi
+   103.44s  user  발화 끝
+   107.56s  user  발화 시작: Yeah. Is there a way to, like, assess my skills formally?
+   107.62s  agent 발화 끝
+   110.94s  <ret> 발화 (turn24 첫 프레임)
+   111.34s  agent 발화 시작: <ret> There are several assessments available online. I foun
+   111.39s  user  발화 끝
+   111.98s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.44s]: (tool result) Search_1_Search: query=free career skills assessment
+   113.72s  user  발화 시작: Uh-huh.
+   114.35s  user  발화 끝
+   118.95s  user  발화 시작: CareerExplorer… okay. Could you send me a link to that?
+   119.08s  agent 발화 끝
+   122.45s  <ret> 발화 (turn27 첫 프레임)
+   122.61s  agent 발화 시작: <ret> I've sent the link to CareerExplorer to your email add
+   122.74s  user  발화 끝
+   123.89s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.71s]: (tool result) SendMessage_1_Send: recipient=user@email.com, subject=Ca
+   124.65s  user  발화 시작: Yeah.
+   124.87s  user  발화 끝
+   127.14s  agent 발화 끝
+   127.27s  user  발화 시작: Great! Thanks. Um, what’s the weather forecast for tomorrow 
+   131.28s  <ret> 발화 (turn30 첫 프레임)
+   131.68s  agent 발화 시작: <ret> Tomorrow in Tokyo will be partly cloudy, with a high o
+   131.84s  user  발화 끝
+   132.00s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.79s]: (tool result) Weather_1_GetWeather: city=Tokyo, date=2024-03-01, high=
+   134.33s  user  발화 시작: Mm-hmm.
+   134.82s  user  발화 끝
+   136.54s  agent 발화 끝
+   136.78s  user  발화 시작: Good to know. So, about this assessment…
+   139.80s  agent 발화 시작: Yes, it can provide a detailed report on your strengths, wea
+   139.92s  user  발화 끝
+   145.83s  agent 발화 끝
+   146.78s  user  발화 시작: I'm a little worried about taking it, though. What if it say
+   151.14s  agent 발화 시작: [laugh] That’s very unlikely! Assessments are designed to hi
+   151.26s  user  발화 끝
+   159.30s  agent 발화 끝
+   161.19s  user  발화 시작: Okay, that makes sense. Thanks, Brae.
+   163.45s  agent 발화 시작: You’re most welcome! Remember, self-discovery is a journey, 
+   163.45s  user  발화 끝
+   169.33s  agent 발화 끝

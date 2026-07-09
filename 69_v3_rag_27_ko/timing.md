@@ -60,45 +60,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 룩스 아우룬케 작곡가가 언제 태어났는지 궁금해요. | S2 혹시 그분이 어떤 장르의 음악을 주로 하셨나요? | S3 어떤 스타일의 음악을 주로 하셨는지 궁금해요. | S4 아, 실험 음악이군요. 그분 음악을 들어볼 수 있는 곳이 있을
+# EXAMINER(FDB-v2) 단계: S1 럭스 아우룬케가 작곡한 곡이 언제 만들어졌는지 알 수 있을까요 | S2 아, 천구백칠십년이군요. 그럼 그분이 어떤 스타일의 음악을 주 | S3 잠깐만요, 혹시 그분이 다른 음악가들과 협업한 적이 있나요? | S4 아냐 볼코프와 벤 카터라… 두 분은 어떤 음악을 하시나요?
 
-     0.00s  user  발화 시작: 룩스 아우룬케 작곡가가 언제 태어났는지 궁금해요.
-     3.61s  user  발화 끝
-     3.73s  <ret> 발화 (turn1 첫 프레임)
-     3.80s  agent 발화 시작: <ret> 그 점에 대해서는— 룩스 아우룬케는 천구백칠십년에 태어났습니다.
-     4.85s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.20s]: [source: Britannica] Lux Aurunque was born in nineteen seventy.
-     6.56s  user  발화 시작: 예.
-     7.20s  user  발화 끝
-     8.95s  agent 발화 끝
-     9.34s  user  발화 시작: 아, 그렇군요. 그럼 그분이 활동했던 시기는 언제쯤이었을까요?
-    12.58s  <ret> 발화 (turn4 첫 프레임)
-    12.71s  agent 발화 시작: <ret> 그분의 활동 시기를 알아보고 싶으시군요.
-    12.95s  user  발화 끝
-    13.08s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.05s]: [source: AllMusic] Aurunque's most notable work occurred during the ea
-    15.65s  agent 발화 시작: 룩스 아우룬케는 천구백팔십년대 초기에 가장 활발하게 활동했습니다.
-    15.76s  agent 발화 끝
-    18.54s  user  발화 시작: 음.
-    19.13s  user  발화 끝
-    20.65s  agent 발화 끝
-    20.96s  user  발화 시작: 혹시 그분이 어떤 장르의 음악을 주로 하셨나요?
-    23.65s  agent 발화 시작: 아, 그—
-    23.68s  user  발화 끝
-    23.96s  user  발화 시작: 어떤 스타일의 음악을 주로 하셨는지 궁금해요.
-    24.70s  agent 발화 끝
-    26.44s  <ret> 발화 (turn10 첫 프레임)
-    26.84s  agent 발화 시작: <ret> 룩스 아우룬케는 주로 실험 음악과 전자 음악을 하셨습니다.
-    27.02s  user  발화 끝
-    27.72s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.31s]: [source: Discogs] Lux Aurunque is categorized as an experimental and e
-    31.08s  agent 발화 시작: 룩스 아우룬케는 실험 음악과 전자 음악 작곡가로 분류됩니다.
-    31.15s  agent 발화 끝
-    33.47s  user  발화 시작: 그러니까요.
-    34.19s  user  발화 끝
-    35.75s  agent 발화 끝
-    35.81s  user  발화 시작: 아, 실험 음악이군요. 그분 음악을 들어볼 수 있는 곳이 있을까요?
-    39.27s  <ret> 발화 (turn14 첫 프레임)
-    39.59s  agent 발화 시작: <ret> 룩스 아우룬케의 음악을 들을 수 있는 곳을 찾아볼까요?
-    39.65s  user  발화 끝
-    39.77s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.08s]: [source: Bandcamp] Lux Aurunque's music is available for streaming and
-    43.51s  agent 발화 시작: 룩스 아우룬케의 음악은 Bandcamp에서 스트리밍하고 구매할 수 있습니다.
-    43.66s  agent 발화 끝
-    48.51s  agent 발화 끝
+     0.00s  user  발화 시작: 럭스 아우룬케가 작곡한 곡이 언제 만들어졌는지 알 수 있을까요?
+     3.84s  user  발화 끝
+     3.89s  <ret> 발화 (turn1 첫 프레임)
+     3.96s  agent 발화 시작: <ret> 작곡가에 대한 정보부터 알아봐야 할 것 같아요. 럭스 아우룬케는 천구백칠십년에 태어났습니다. 전자
+     5.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: [source: Britannica] Lux Aurunque was born in 1970 and is known for hi
+     7.62s  user  발화 시작: 예.
+     8.26s  user  발화 끝
+    14.43s  agent 발화 끝
+    14.77s  user  발화 시작: 아, 천구백칠십년이군요. 그럼 그분이 어떤 스타일의 음악을 주로 하시는지 궁금해요.
+    19.58s  agent 발화 시작: 럭스 아우룬케는 주로 실험적인 전자 음악을 선보이는 것으로 유명합니다. 그의 작품은—
+    19.72s  user  발화 끝
+    25.85s  user  발화 시작: 잠깐만요, 혹시 그분이 다른 음악가들과 협업한 적이 있나요?
+    26.43s  agent 발화 끝
+    29.63s  <ret> 발화 (turn6 첫 프레임)
+    29.68s  user  발화 끝
+    29.70s  agent 발화 시작: <ret> 네, 협업에 대한 정보도 찾아볼 수 있습니다.
+    31.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: [source: AllMusic] Lux Aurunque collaborated with several prominent ar
+    33.34s  agent 발화 시작: 럭스 아우룬케는 아냐 볼코프, 벤 카터와 함께 "내일의 메아리"라는 앨범에서 협업했습니다. 비평가들에게 호평
+    33.44s  agent 발화 끝
+    42.01s  agent 발화 끝
+    42.27s  user  발화 시작: 아냐 볼코프와 벤 카터라… 두 분은 어떤 음악을 하시나요?
+    46.29s  user  발화 끝

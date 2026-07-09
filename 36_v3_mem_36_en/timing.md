@@ -64,15 +64,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you today. Is
-     6.90s  agent 발화 끝
-     7.12s  user  발화 시작: Oh, hi Lira. Um, I was just thinking about that trip I’m pla
-    12.21s  <ret> 발화 (turn2 첫 프레임)
-    12.44s  agent 발화 시작: <ret> You mentioned Switzerland… You’re planning a trip to S
-    12.50s  user  발화 끝
-    13.01s  ⚡SPAN 주입 [d'=0.80s / d_lead=0.95s]: [2026-07-14] User is planning a trip to Switzerland in March.
-    16.49s  user  발화 시작: Yeah.
-    16.93s  user  발화 끝
-    19.06s  agent 발화 끝
-    20.27s  user  발화 시작: I— I mean, I was wondering about the best time to book fligh
-    25.82s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you. Is there
+     5.83s  agent 발화 끝
+     6.06s  user  발화 시작: Oh, hi Lira. I was just thinking about that trip I’m plannin
+    11.96s  <ret> 발화 (turn2 첫 프레임)
+    12.19s  agent 발화 시작: <ret> You’re planning a trip to Switzerland in March. Is the
+    12.22s  user  발화 끝
+    13.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.34s]: [2026-07-14] User is planning a trip to Switzerland in March.
+    15.53s  user  발화 시작: Yeah.
+    16.03s  user  발화 끝
+    17.75s  agent 발화 끝
+    18.93s  user  발화 시작: Actually, yes. I’m trying to figure out what kind of food I’
+    23.51s  agent 발화 시작: Switzerland has a growing vegetarian scene, though it’s trad
+    23.66s  user  발화 끝
+    33.20s  agent 발화 끝

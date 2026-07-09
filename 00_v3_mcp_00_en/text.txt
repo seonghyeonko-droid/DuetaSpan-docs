@@ -64,34 +64,33 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.17s⟩ Paris?
-[  3.40s][moshi] Certainly, ⟦⚡SPAN@4.13s: (tool result) lat: 48.8584, lon: 2.2945, name: Eiffel Tower, city: Paris⟧ I can look that up for you— The Eiffel Tower’s coordinates are latitude forty-eight point eight five eight four, longitude two point two nine four five.
-[ 10.92s][user ] «backchannel» Yeah.
-[ 14.00s][user ] Okay, great. And what about the Colosseum in ⟨ret@17.01s⟩ Rome?
-[ 17.41s][moshi] Let me find ⟦⚡SPAN@19.01s: (tool result) lat: 41.8902, lon: 12.4922, name: Colosseum, city: Rome⟧ those for you right away— The Colosseum is at latitude forty-one point eight nine zero two, longitude twelve point four nine two two.
-[ 24.67s][user ] «backchannel» Yeah, totally.
-[ 27.97s][user ] Hmm, that’s useful. I’m planning a trip.
-[ 31.05s][moshi] That sounds exciting! Planning is a big part of enjoying a trip, isn’t it? It reduces stress and builds anticipation.
-[ 39.41s][user ] Yeah, it is. I’m thinking of going to both cities. Could you find me a flight from Paris to Rome on, say, October twentieth?
-[ 47.73s][moshi] ⟨ret@47.58s⟩ Of course, let’s check ⟦⚡SPAN@49.58s: (tool result) departs: 2024-10-20T08:00, arrives: 2024-10-20T10:00, airline: Air France, price: 150⟧ flights for that date— There’s an Air France flight departing October twentieth at eight AM, arriving at ten AM, for one hundred and fifty dollars.
-[ 60.40s][user ] That sounds pretty good.
-[ 62.36s][moshi] It's always good to find a convenient and reasonably priced flight. It sets a positive tone for the whole travel experience, don't you think?
-[ 65.06s][user ] «backchannel» Okay.
-[ 71.19s][user ] Definitely. Can you book that flight for me, then?
-[ 74.27s][moshi] ⟨ret@74.19s⟩ Absolutely, ⟦⚡SPAN@75.23s: (tool result) booking_id: AF12345, status: confirmed, departs: 2024-10-20T08:00, price: 150⟧ I can book that for you— Your flight is confirmed, booking ID AF12345, departing October twentieth at eight AM, costing one hundred and fifty dollars.
-[ 88.17s][user ] Perfect! Now, about hotels in Rome… I— I mean, are there any hotels near the Colosseum?
-[ 95.94s][moshi] «interrupted» Oh, you're looking for hotels—
-[ 97.07s][user ] «interrupts_prev» …with a good breakfast included?
-[ 99.55s][moshi] A good breakfast is essential, especially before a day of sightseeing! Let’s see what’s available—
-[105.92s][moshi] ⟨ret@105.86s⟩ Hotel Artemide is point ⟦⚡SPAN@107.86s: (tool result) hotel: Hotel Artemide, distance: 0.8km, breakfast: included, price: 200⟧ eight kilometers away, includes breakfast, and costs two hundred dollars per night.
-[114.46s][user ] Two hundred dollars is a little high. Anything cheaper?
-[117.78s][moshi] Let’s explore some more affordable options, then—
-[121.19s][moshi] ⟨ret@120.79s⟩ Hotel Colosseum is ⟦⚡SPAN@122.79s: (tool result) hotel: Hotel Colosseum, distance: 0.5km, breakfast: optional, price: 120⟧ point five kilometers away, breakfast is optional, and it costs one hundred and twenty dollars.
-[128.96s][user ] That sounds much better. Can we book a room there for, let's say, three nights, starting October ⟨ret@135.82s⟩ twentieth?
-[136.06s][moshi] ⟦⚡SPAN@136.78s: (tool result) reservation_id: HC67890, hotel: Hotel Colosseum, nights: 3, price: 360⟧ Certainly, let’s get that booked— Your reservation at Hotel Colosseum is confirmed, ID HC67890, for three nights, costing three hundred and sixty dollars.
-[149.22s][user ] Wonderful! That's everything sorted, I think.
-[153.14s][moshi] That’s fantastic! You’ve successfully planned the travel and lodging for part of your trip. It’s wonderful to feel prepared.
-[161.60s][user ] I feel much more relaxed now, actually.
-[164.51s][moshi] That's the best outcome! A little planning can really ease anxieties about travel. It’s all about taking control and enjoying the anticipation.
-[173.56s][user ] You’ve been a great help.
-[175.03s][moshi] It’s my pleasure! Remember, building strong connections and enjoyable experiences is what it’s all about. And travel can be a wonderful way to do both.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.80s⟩ Paris?
+[  4.03s][moshi] ⟦⚡SPAN@4.92s: (tool result) 48.8584, 2.2945⟧ The Eiffel Tower’s coordinates are latitude 48.8584 and longitude 2.2945.
+[ 12.13s][user ] Okay, great. And what’s the quickest route from there to the ⟨ret@17.09s⟩ Louvre Museum?
+[ 17.48s][moshi] It’s 3.1 ⟦⚡SPAN@19.09s: (tool result) Distance: 3.1 km; Estimated time: 12 mins; Mode: walking⟧ kilometers to the Louvre, about a twelve-minute walk.
+[ 20.96s][user ] «backchannel» Right.
+[ 22.53s][user ] Hmm, walking is nice, but is public transport ⟨ret@26.64s⟩ faster?
+[ 26.95s][moshi] Bus ⟦⚡SPAN@28.00s: (tool result) Bus line 42; Duration: 15 mins; Cost: 2.00 EUR⟧ line 42 takes fifteen minutes and costs two euros.
+[ 31.48s][user ] That’s not much faster. [sigh] I think I’ll stick with walking then.
+[ 36.52s][moshi] Walking is a lovely way to see a city, it really is.
+[ 37.76s][user ] «backchannel» Okay.
+[ 40.43s][user ] Do you think I should pre-book tickets for the Louvre? It’s my first time.
+[ 44.44s][moshi] Absolutely. The Louvre can get very crowded, pre-booking is a smart idea.
+[ 49.09s][user ] Okay, can you check availability for tomorrow afternoon, say around 2 ⟨ret@53.83s⟩ pm?
+[ 54.15s][moshi] There ⟦⚡SPAN@54.95s: (tool result) Available slots: 14:00, 14:30, 15:00; Price: 17.00 EUR⟧ are slots at 2 pm, 2:30 pm, and 3 pm tomorrow, costing seventeen euros.
+[ 63.73s][user ] 2:30 pm sounds perfect. Can you book that for me?
+[ 67.47s][moshi] ⟨ret@67.31s⟩ Your ⟦⚡SPAN@68.59s: (tool result) Booking confirmed;⟧ ticket is booked for 2:30 pm tomorrow, reference LXV8492.
+[ 73.83s][user ] Wonderful! That’s a huge weight off my ⟨ret@76.79s⟩ mind.
+[ 76.95s][moshi] «interrupted» I’m glad I could help ⟦⚡SPAN@78.55s: LXV8492; Time: 14:30, 2024-05-03; Cost: 17.00 EUR⟧ with that. It’s always nice to have things sorted in advance—
+[ 80.67s][user ] «interrupts_prev» …Actually, now I’m wondering, are there any good cafes near the Louvre?
+[ 85.16s][moshi] Oh, yes! There are several lovely cafes nearby.
+[ 89.54s][user ] What kind of vibe are you thinking? Something quiet to read in, or more bustling?
+[ 95.13s][moshi] That depends on what you prefer, of course. Do you want somewhere peaceful?
+[100.13s][user ] Hmm, peaceful sounds good. I’ve had a lot of noise today.
+[104.10s][moshi] Then I’d recommend "Cafe Verlet". It's a classic Parisian cafe—
+[106.23s][user ] «backchannel» Yeah.
+[109.64s][moshi] —known for its quiet atmosphere and delicious pastries. It’s a bit of a hidden gem.
+[116.04s][user ] Oh, that sounds perfect. How far is that from the ⟨ret@119.38s⟩ Louvre?
+[119.62s][moshi] Cafe Verlet is ⟦⚡SPAN@121.14s: (tool result) Distance: 650m; Walking time: 8 mins⟧ 650 meters from the Louvre, about an eight-minute walk.
+[125.55s][user ] Excellent. You’ve been a lifesaver, Nellara!
+[128.80s][moshi] [happy] You’re very welcome! I’m happy to help you plan a wonderful day.

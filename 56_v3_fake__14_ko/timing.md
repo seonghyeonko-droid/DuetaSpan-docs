@@ -50,39 +50,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 맘마미아에서 ‘나의 사랑, 나의 인생’을 누가 썼는지 궁금해요 | S2 비외른 울바에우스… 스웨덴 사람이에요? | S3 아, 그렇군요. ABBA 멤버였던 게 생각나네요. [inter | S4 아니요, 괜찮아요. 알려주셔서 정말 고마워요.
+# EXAMINER(FDB-v2) 단계: S1 맘마미아에 나오는 '내 사랑, 나의 삶'이라는 노래를 누가 썼 | S2 아바… 정말 유명했죠. 다른 멤버는 누가 있었나요? | S3 아, '댄싱 퀸'도 아바 노래였군요! 기억이 안 났어요. | S4 혹시 아바 노래 중에 다른 추천해 주실 만한 곡이 있을까요?
 
-     0.00s  user  발화 시작: 맘마미아에서 ‘나의 사랑, 나의 인생’을 누가 썼는지 궁금해요.
-     3.68s  <ret> 발화 (turn1 첫 프레임)
-     3.84s  agent 발화 시작: <ret> 아, 맘마미아의 아름다운 노래죠. 어떤 분이 작곡하셨는지 알아볼게요.
-     3.84s  user  발화 끝
-     5.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: Björn Ulvaeus.
-     9.54s  agent 발화 시작: 비외른 울바에우스 씨가 ‘나의 사랑, 나의 인생’을 작곡하셨답니다.
-     9.68s  agent 발화 끝
-    13.86s  user  발화 시작: 비외른 울바에우스… 스웨덴 사람이에요?
-    13.98s  agent 발화 끝
-    17.16s  <ret> 발화 (turn4 첫 프레임)
-    17.42s  user  발화 끝
-    17.48s  agent 발화 시작: <ret> 네, 맞아요. 스웨덴 출신이시랍니다. ABBA 그룹의 멤버이기도 하죠.
-    19.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: Björn Ulvaeus was born in Gothenburg, Sweden on April 25, 1945.
-    22.96s  agent 발화 시작: 비외른 울바에우스 씨는 스웨덴 예테보리에서 일구사오년 사월 이십오일에 태어나셨어요.
-    23.12s  agent 발화 끝
-    29.26s  agent 발화 끝
-    29.35s  user  발화 시작: 아, 그렇군요. ABBA 멤버였던 게 생각나네요. [interrupting] 다른 노래도 많이 썼어요?
-    35.28s  user  발화 끝
-    35.47s  agent 발화 시작: 물론이죠. ABBA의 수많은 히트곡에 참여하셨어요—
-    39.33s  <ret> 발화 (turn8 첫 프레임)
-    39.41s  agent 발화 시작: <ret> ‘댄싱 퀸’이나 ‘워터루’ 같은 유명한 노래도 비외른 울바에우스 씨의 작품이랍니다.
-    39.59s  agent 발화 끝
-    41.33s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.18s]: (tool result) symbol: AAPL; price: 170.34; change: +1.25; timestamp: 2
-    42.44s  user  발화 시작: 음.
-    42.94s  user  발화 끝
-    44.43s  agent 발화 시작: 작곡가로서 정말 다재다능하신 분이시죠. 혹시 다른 맘마미아 노래에 대해서도 궁금하신가요?
-    44.59s  agent 발화 끝
-    47.05s  user  발화 시작: 네.
-    47.64s  user  발화 끝
-    50.68s  agent 발화 끝
-    51.03s  user  발화 시작: 아니요, 괜찮아요. 알려주셔서 정말 고마워요.
-    54.73s  user  발화 끝
-    55.04s  agent 발화 시작: 천만에요. 새로운 도시에 정착하시는 동안 언제든 편하게 물어보세요.
-    60.37s  agent 발화 끝
+     0.00s  user  발화 시작: 맘마미아에 나오는 '내 사랑, 나의 삶'이라는 노래를 누가 썼는지 궁금해요.
+     4.79s  <ret> 발화 (turn1 첫 프레임)
+     4.94s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
+     5.09s  user  발화 끝
+     5.29s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.57s]: Björn Ulvaeus.
+     6.41s  agent 발화 시작: '내 사랑, 나의 삶'은 비외른 울바에우스가 작곡했습니다.
+     6.51s  agent 발화 끝
+    10.54s  user  발화 시작: 아, 그렇군요. 비외른 울바에우스는 어떤 그룹에 속해 있었나요?
+    10.66s  agent 발화 끝
+    15.44s  <ret> 발화 (turn4 첫 프레임)
+    15.54s  user  발화 끝
+    15.60s  agent 발화 시작: <ret> 그분은 아바라는 유명한 그룹의 멤버였습니다.
+    17.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: Björn Ulvaeus was a member of the Swedish music group ABBA.
+    19.28s  agent 발화 시작: 비외른 울바에우스는 스웨덴 음악 그룹 아바의 멤버였습니다.
+    19.43s  agent 발화 끝
+    23.16s  agent 발화 끝
+    23.26s  user  발화 시작: 아바… 정말 유명했죠. 다른 멤버는 누가 있었나요?
+    27.22s  <ret> 발화 (turn7 첫 프레임)
+    27.57s  user  발화 끝
+    27.62s  agent 발화 시작: <ret> 아바는 비외른 울바에우스 외에 아그네타 펠트스코그, 베니 안데르손, 아니카 팔손이 함께 했습니다.
+    28.34s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.72s]: The members of ABBA were Agnetha Fältskog, Björn Ulvaeus, Benny Anders
+    34.02s  <ret> 발화 (turn8 첫 프레임)
+    34.17s  agent 발화 시작: <ret> 아바 멤버는 아그네타 펠트스코그, 비외른 울바에우스, 베니 안데르손, 아니카 팔손 님입니다.
+    34.34s  agent 발화 끝
+    36.02s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.78s]: (tool result) AAPL:170.34, Change:-0.45, Volume:45678900, High:171.22,
+    38.81s  user  발화 시작: 음.
+    39.30s  user  발화 끝
+    41.80s  agent 발화 시작: 아바는 천구백칠십년대에 전 세계적으로 큰 인기를 얻었습니다.
+    41.95s  agent 발화 끝
+    45.63s  <ret> 발화 (turn11 첫 프레임)
+    45.70s  agent 발화 시작: <ret> 팝 음악 역사를 돌이켜 보면, 아바는 '워터루'와 '댄싱 퀸' 같은 곡으로 천구백칠십년대에 국제적
+    45.96s  agent 발화 끝
+    47.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.63s]: ABBA achieved international success in the 1970s with hits like "Water
+    49.12s  user  발화 시작: 정말요?
+    49.95s  user  발화 끝
+    53.58s  agent 발화 끝
+    53.62s  user  발화 시작: 아, '댄싱 퀸'도 아바 노래였군요! 기억이 안 났어요.
+    57.32s  user  발화 끝
+    57.33s  agent 발화 시작: 기억이 잘 안 나실 수도 있죠. 시간이 많이 흘렀으니까요.
+    58.69s  user  발화 시작: 네.
+    59.18s  user  발화 끝
+    61.21s  agent 발화 끝
+    61.98s  user  발화 시작: 혹시 아바 노래 중에 다른 추천해 주실 만한 곡이 있을까요?
+    66.02s  agent 발화 시작: 물론입니다. '슈퍼 트루퍼'나 '머니, 머니, 머니'도 정말 좋은 노래예요.
+    66.10s  user  발화 끝
+    70.88s  <ret> 발화 (turn18 첫 프레임)
+    71.10s  agent 발화 시작: <ret> 개인적으로 저는, '슈퍼 트루퍼'와 '머니, 머니, 머니'도 아바의 대표곡입니다.
+    71.20s  agent 발화 끝
+    71.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.23s]: ABBA is known for songs such as "Super Trouper" and "Money, Money, Mon
+    76.65s  agent 발화 끝

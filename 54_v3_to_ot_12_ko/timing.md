@@ -60,20 +60,20 @@
 
 
      0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
-     3.05s  <ret> 발화 (turn1 첫 프레임)
-     3.33s  user  발화 끝
-     3.37s  agent 발화 시작: <ret> 그 곡의 기타 솔로는 정말 유명하죠. 에디 반 헤일런이 마이클 잭슨의 ‘비트 잇’ 기타 솔로를 연
-     4.97s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.92s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     9.13s  user  발화 시작: 맞아요.
-     9.76s  user  발화 끝
-    11.15s  agent 발화 끝
-    11.79s  user  발화 시작: 잠깐만, 엄마한테 전화 좀 할게.
-    14.34s  user  발화 시작: 아, 죄송해요. 다시 말씀드리면, 그 기타 솔로 연주자는 누구였죠?
-    14.38s  user  발화 끝
-    19.20s  user  발화 끝
-    19.45s  agent 발화 시작: 에디 반 헤일런이라고 말씀드렸잖아요. 기억나시나요?
-    21.98s  user  발화 시작: 네.
-    22.38s  user  발화 끝
-    22.91s  agent 발화 시작: 혹시 에디 반 헤일런에 대해 더 궁금한 점이 있으신가요?
-    23.10s  agent 발화 끝
-    26.47s  agent 발화 끝
+     3.39s  <ret> 발화 (turn1 첫 프레임)
+     3.66s  user  발화 끝
+     3.71s  agent 발화 시작: <ret> 아, 마이클 잭슨의 비트 잇 말씀이시군요. 에디 반 헤일런이 마이클 잭슨의 ‘비트 잇’ 기타 솔로
+     4.83s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.41s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     8.44s  user  발화 시작: 맞아요.
+     9.07s  user  발화 끝
+    10.15s  agent 발화 끝
+    10.86s  user  발화 시작: 잠깐만, 엄마, 김치 냉장고에 넣어놨어?
+    14.11s  user  발화 시작: 아, 죄송해요. 다시 질문할게요. 그 기타리스트 이름이 뭐였죠?
+    14.28s  user  발화 끝
+    18.46s  user  발화 끝
+    18.70s  agent 발화 시작: 에디 반 헤일런이라고 말씀드렸어요. 기억이 안 나시는군요?
+    21.82s  user  발화 시작: 네.
+    22.32s  user  발화 끝
+    22.93s  agent 발화 시작: 에디 반 헤일런은 뛰어난 기타리스트로 유명해요. 혹시 다른 곡도 궁금하신가요?
+    23.15s  agent 발화 끝
+    28.03s  agent 발화 끝

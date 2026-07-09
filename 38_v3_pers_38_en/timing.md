@@ -59,21 +59,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to gently guide you 
-     3.81s  user  발화 시작: Right.
-     4.11s  user  발화 끝
-     5.97s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient, almost. 
-     6.02s  agent 발화 끝
-    12.28s  user  발화 끝
-    12.44s  agent 발화 시작: It is, actually. It’s a name of Tuareg origin, meaning ‘gaze
-    16.79s  user  발화 시작: Yeah.
-    17.28s  user  발화 끝
-    21.23s  agent 발화 시작: Often, when facing change, we search for strength within our
-    21.33s  agent 발화 끝
-    34.77s  agent 발화 끝
-    36.51s  user  발화 시작: I— I mean, my grandmother passed away last month. It's just…
-    41.48s  agent 발화 시작: Grief truly shifts everything, doesn’t it? It alters the fam
-    41.60s  user  발화 끝
-    50.84s  agent 발화 끝
-    50.90s  user  발화 시작: Yeah. It’s just… I keep thinking about all the things I didn
-    54.83s  user  발화 끝
+     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to gently walk along
+     6.23s  user  발화 시작: Jaeia… that’s a beautiful name. It feels… calming. I’m just 
+     6.34s  agent 발화 끝
+    11.93s  user  발화 끝
+    12.22s  agent 발화 시작: It’s understandable to feel lost, especially when life shift
+    14.71s  user  발화 시작: Wow.
+    15.53s  user  발화 끝
+    19.60s  agent 발화 시작: Sometimes, naming the feeling itself can lessen its power—it
+    19.81s  agent 발화 끝
+    28.40s  user  발화 시작: It’s… everything, I guess. I just moved to Sydney, and it’s 
+    28.87s  agent 발화 끝
+    33.17s  user  발화 끝
+    33.50s  agent 발화 시작: A big change like that, coupled with missing loved ones, is 
+    43.29s  user  발화 시작: But… what if I made the wrong choice coming here?
+    43.33s  agent 발화 끝
+    46.17s  agent 발화 시작: It’s natural to question big decisions, Avery. Regret can fe
+    46.29s  user  발화 끝
+    56.65s  agent 발화 끝

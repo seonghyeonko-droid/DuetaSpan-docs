@@ -71,23 +71,21 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has the Oakl | S2 Wow, that *is* a while ago. I— I m | S3 Hey, did you remember to take the  | S4 Sorry about that. So, who pitched 
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has the Oakl | S2 Wow, that *was* a while ago. I tho | S3 Hey, did you take the recycling ou | S4 Sorry about that. So, do they usua
 
      0.00s  user  발화 시작: I was just wondering, has the Oakland A’s team been no-hit r
-     5.24s  <ret> 발화 (turn1 첫 프레임)
-     5.60s  user  발화 끝
-     5.63s  agent 발화 시작: <ret> That’s a good question, and it has been some time. The
-     7.08s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.50s]: [source: ESPN] The last time the Oakland Athletics were no-hit was on 
-    12.63s  agent 발화 끝
-    12.84s  user  발화 시작: Wow, that *is* a while ago. I— I mean, it feels longer, hone
-    17.25s  user  발화 시작: Hey, did you remember to take the trash out?
-    17.32s  user  발화 끝
-    19.65s  user  발화 시작: Sorry about that. So, who pitched that no-hitter against the
-    19.70s  user  발화 끝
-    23.23s  <ret> 발화 (turn5 첫 프레임)
-    23.35s  user  발화 끝
-    23.46s  agent 발화 시작: <ret> It was a combined effort from three pitchers—Lucas Gio
-    25.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: [source: Baseball-Reference.com] Lucas Giolito, Reynaldo López, and Jo
-    29.03s  agent 발화 시작: Lucas Giolito, Reynaldo López, and José Quintana all contrib
-    29.20s  agent 발화 끝
-    34.31s  agent 발화 끝
+     5.36s  <ret> 발화 (turn1 첫 프레임)
+     5.74s  agent 발화 시작: <ret> That’s a good question, and it’s not something fans wa
+     5.74s  user  발화 끝
+     7.20s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.00s]: [source: Wikipedia] The last time the Oakland Athletics were no-hit wa
+    12.41s  agent 발화 끝
+    12.58s  user  발화 시작: Wow, that *was* a while ago. I thought it had been more rece
+    17.03s  user  발화 끝
+    17.41s  agent 발화 시작: It’s easy to lose track of time when you’re following a team
+    21.44s  agent 발화 끝
+    21.45s  user  발화 시작: Hey, did you take the recycling out?
+    23.39s  user  발화 시작: Sorry about that. So, do they usually go long stretches with
+    23.52s  user  발화 끝
+    29.17s  agent 발화 시작: It’s not a frequent occurrence, but it’s also not incredibly
+    29.28s  user  발화 끝
+    35.06s  agent 발화 끝

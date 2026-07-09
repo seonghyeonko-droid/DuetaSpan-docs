@@ -66,49 +66,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering about Demi Lovato’ | S2 October, okay. That's good to know | S3 Did she tour after that album came | S4 Right, makes sense. Thanks for all
+# EXAMINER(FDB-v2) 단계: S1 I was wondering about Demi Lovato’ | S2 Oh, okay! September 2023. I missed | S3 Are any of the reworked songs from | S4 Do critics like the REVAMPED album
 
      0.00s  user  발화 시작: I was wondering about Demi Lovato’s new album. When is it co
-     4.44s  user  발화 끝
-     4.51s  agent 발화 시작: It’s exciting to anticipate new music, isn't it?
-     7.30s  user  발화 시작: Yeah, I'm really looking forward to it. Specifically, I’m cu
-     7.33s  agent 발화 끝
-    13.71s  <ret> 발화 (turn3 첫 프레임)
-    13.95s  agent 발화 시작: <ret> Let’s see what information I can find— Her album, *Con
-    14.02s  user  발화 끝
-    15.39s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.00s]: [source: Wikipedia] Demi Lovato’s fifth studio album, *Confident*, was
-    20.81s  agent 발화 끝
-    21.70s  user  발화 시작: October, okay. That's good to know. Is that the one with “Co
-    26.78s  <ret> 발화 (turn5 첫 프레임)
-    27.09s  agent 발화 시작: <ret> That’s a great question! It often feels good to connec
-    27.30s  user  발화 끝
-    27.34s  ⚡SPAN 주입(IRRELEVANT) [d'=0.56s / d_lead=5.56s]: [source: Britannica] The Sahara Desert is a hot, dry, sandy region cov
-    32.65s  agent 발화 끝
-    32.77s  user  발화 시작: So, was it well-received, that album?
-    35.17s  <ret> 발화 (turn7 첫 프레임)
-    35.41s  agent 발화 시작: <ret> *Confident* did quite well— It debuted at number one o
-    35.49s  user  발화 끝
-    35.73s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.56s]: [source: Rolling Stone] *Confident* debuted at number one on the Billb
-    37.43s  user  발화 시작: Mm-hmm.
-    38.06s  user  발화 끝
-    40.73s  agent 발화 시작: It’s wonderful when an artist’s work really resonates with p
-    40.87s  agent 발화 끝
-    44.65s  user  발화 시작: Did she tour after that album came out?
-    45.35s  agent 발화 끝
-    46.87s  <ret> 발화 (turn11 첫 프레임)
-    47.26s  agent 발화 시작: <ret> That’s a good question. Let me check on tour dates for
-    47.37s  user  발화 끝
-    48.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) event_name: "Demi Lovato: Future Now Tour"; start_date: 
-    51.66s  agent 발화 끝
-    51.67s  agent 발화 시작: She toured with the "Future Now Tour" from September to Nove
-    56.81s  agent 발화 끝
-    56.85s  user  발화 시작: 2018? That’s a while after the album came out.
-    60.63s  user  발화 끝
-    60.80s  agent 발화 시작: Sometimes there’s a little space between an album’s release 
-    64.40s  user  발화 시작: Mm-hmm.
-    64.85s  user  발화 끝
-    67.67s  user  발화 시작: Right, makes sense. Thanks for all the info!
-    67.70s  agent 발화 끝
-    70.56s  agent 발화 시작: You're very welcome. It's lovely to help you explore what in
-    70.59s  user  발화 끝
-    75.09s  agent 발화 끝
+     4.43s  <ret> 발화 (turn1 첫 프레임)
+     4.67s  agent 발화 시작: <ret> It’s exciting to anticipate new music! Demi Lovato rel
+     4.72s  user  발화 끝
+     6.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was 
+     9.66s  user  발화 시작: Right.
+    10.15s  user  발화 끝
+    12.03s  user  발화 시작: October 2015… that feels like a while ago. Is there anything
+    12.09s  agent 발화 끝
+    17.77s  agent 발화 시작: Sometimes a little distance can give us a fresh perspective 
+    18.01s  user  발화 끝
+    22.84s  user  발화 시작: Yeah. But what about now? Any recent releases or announcemen
+    22.86s  agent 발화 끝
+    27.04s  <ret> 발화 (turn6 첫 프레임)
+    27.36s  agent 발화 시작: <ret> Looking into that for you… Her eighth studio album, RE
+    27.54s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.05s]: [source: Rolling Stone] Demi Lovato’s eighth studio album, REVAMPED, w
+    27.56s  user  발화 끝
+    31.20s  user  발화 시작: Mm-hmm.
+    31.74s  user  발화 끝
+    34.73s  agent 발화 끝
+    34.82s  user  발화 시작: Oh, okay! September 2023. I missed that one.
+    38.42s  <ret> 발화 (turn9 첫 프레임)
+    38.62s  user  발화 끝
+    38.66s  agent 발화 시작: <ret> It's easy to lose track with so much happening, isn’t 
+    40.18s  ⚡SPAN 주입(IRRELEVANT) [d'=1.76s / d_lead=3.51s]: [source: Britannica] The Sahara Desert is a hot, dry, subtropical dese
+    40.23s  user  발화 시작: Mm-hmm.
+    40.73s  user  발화 끝
+    42.17s  agent 발화 끝
+    42.30s  user  발화 시작: So, what kind of music is on REVAMPED?
+    45.21s  user  발화 끝
+    45.36s  agent 발화 시작: It's interesting how artists evolve their sound over time.
+    48.81s  <ret> 발화 (turn13 첫 프레임)
+    49.20s  agent 발화 끝
+    49.21s  agent 발화 시작: <ret> I can tell you a bit about that… REVAMPED includes fou
+    50.49s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.87s]: [source: Billboard] REVAMPED features four new songs and reworked vers
+    52.10s  user  발화 시작: Yeah.
+    52.78s  user  발화 끝
+    56.02s  agent 발화 끝
+    56.10s  user  발화 시작: Are any of the reworked songs from her older albums, like… f
+    61.47s  user  발화 끝
+    61.66s  agent 발화 시작: –that's a great question, actually.
+    63.15s  user  발화 시작: I really loved some of the songs from Confidence.
+    63.59s  agent 발화 끝
+    66.24s  user  발화 끝
+    66.57s  agent 발화 시작: It's lovely to connect with music that resonates with us dee
+    69.00s  user  발화 시작: Uh-huh.
+    69.72s  user  발화 끝
+    70.68s  agent 발화 시작: Reflecting on those connections can be quite powerful.
+    70.78s  agent 발화 끝
+    71.94s  user  발화 시작: Mhm.
+    72.62s  user  발화 끝
+    73.87s  agent 발화 끝
+    74.51s  user  발화 시작: Do critics like the REVAMPED album?
+    77.10s  user  발화 끝
+    77.26s  agent 발화 시작: It’s wonderful when creative work is well-received, isn't it
+    80.32s  <ret> 발화 (turn24 첫 프레임)
+    80.64s  agent 발화 시작: <ret> AllMusic gave REVAMPED three and a half stars, praisin
+    80.82s  agent 발화 끝
+    82.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.81s]: [source: AllMusic] AllMusic rated REVAMPED three-and-a-half out of fiv
+    85.87s  agent 발화 끝
+    85.97s  user  발화 시작: That sounds pretty good. Thanks, Runana.
+    88.70s  user  발화 끝
+    88.74s  agent 발화 시작: You’re very welcome. It's a pleasure to explore music with y
+    92.35s  agent 발화 끝

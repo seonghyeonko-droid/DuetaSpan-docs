@@ -56,13 +56,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point one?
-[  4.62s][moshi] ⟨ret@4.31s⟩ Certainly. ⟦⚡SPAN@5.35s: (tool result) status:success; user_agent:SuperCrawler version 10.1⟧ I’ve set your user agent to SuperCrawler version ten point one. Is there anything else I can adjust for you?
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.70s⟩ one?
+[  5.01s][moshi] Certainly, ⟦⚡SPAN@5.66s: (tool result) User agent set to SuperCrawler version 10.1; browser restarted.⟧ I can adjust the browser settings for you. The user agent is now set to SuperCrawler version ten point one, and the browser has restarted.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[  8.17s][user ] «backchannel» Mhm.
-[ 12.24s][user ] Hmm, that's… aggressive. Maybe something a little less noticeable? Like a standard Mac Safari user ⟨ret@20.11s⟩ agent?
-[ 20.34s][moshi] [sigh] It's understandable ⟦⚡SPAN@21.87s: (tool result) status:success; user_agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 ⟧ to want to blend in a bit more sometimes. A less conspicuous agent might be helpful, yes.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version 14.1.2 Safari 605.1.15"}}
-[ 28.06s][moshi] I’ve switched your user agent to a standard Mac Safari setting. Does that feel more comfortable?
-[ 34.52s][user ] Yeah, much better. Thanks, Lio. That feels right.
-[ 37.64s][moshi] You’re very welcome. Sometimes a small adjustment can make a big difference, wouldn't you agree?
+[  9.43s][user ] «backchannel» Mhm.
+[ 14.48s][user ] Hmm. That seems… aggressive. Could you change it back to the ⟨ret@18.84s⟩ default?
+[ 19.07s][moshi] [laugh] Sometimes ⟦⚡SPAN@20.60s: (tool result) User agent reset to default; browser restarted.⟧ a little experimentation is good, but reverting is perfectly reasonable.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "default"}}
+[ 26.23s][moshi] The user agent has been reset to the default setting, and the browser has restarted.
+[ 32.49s][user ] Okay, good. And, um, can you find me a good coffee shop nearby? One with ⟨ret@38.00s⟩ wifi?
+[ 38.08s][moshi] Of course. ⟦⚡SPAN@38.96s: (tool result) Coffee Bean & Tea Leaf, 0.3 miles, Wifi: Yes, Rating: 4.2 stars.⟧ I can help with that.
+      CALL: {"function": "find_nearby_coffee_shops", "arguments": {"wifi": "yes"}}
+[ 40.12s][moshi] Coffee Bean & Tea Leaf is close by—zero point three miles—with wifi and a four point two-star rating.
+[ 48.09s][user ] Is it usually busy there?
+[ 49.75s][moshi] It's hard to predict, but a good rating often suggests popularity. Perhaps consider an off-peak time

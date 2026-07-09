@@ -68,57 +68,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Just… general ones, I guess. Expla | S3 Okay, that's helpful. I’m building | S4 Hmm, okay. Can you give me a list 
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Perfect. Uh, I'm planning a trip t | S3 Six eighty-five sounds good. Can y | S4 [happy] Around two hundred dollars
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.70s  <ret> 발화 (turn1 첫 프레임)
-     4.77s  agent 발화 시작: <ret> Certainly, I can adjust that for you. Your user agent 
-     4.95s  user  발화 끝
-     6.06s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.85s]: (tool result) status:success; user_agent:MyCustomBrowser version 10.5
-     7.43s  user  발화 시작: Mm-hmm.
-     8.07s  user  발화 끝
-    12.51s  agent 발화 끝
-    13.22s  user  발화 시작: That's great! Now, can you check if that's how the website s
-    17.36s  <ret> 발화 (turn4 첫 프레임)
-    17.52s  agent 발화 시작: <ret> Absolutely, let's verify that setting. The website cur
-    17.57s  user  발화 끝
-    18.88s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.90s]: (tool result) user_agent:MyCustomBrowser version 10.5
-    22.48s  user  발화 시작: Mm-hmm.
-    23.20s  user  발화 끝
-    27.39s  agent 발화 끝
-    28.34s  user  발화 시작: Perfect. Uh, could you find me some articles about browser u
-    32.72s  agent 발화 시작: I can certainly help with that. What kind of articles are yo
-    32.84s  user  발화 끝
-    38.46s  agent 발화 끝
-    39.15s  user  발화 시작: Just… general ones, I guess. Explaining what they are and wh
-    43.69s  <ret> 발화 (turn9 첫 프레임)
-    44.01s  agent 발화 시작: <ret> I understand, let’s find some introductory articles. H
-    44.02s  user  발화 끝
-    45.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.38s]: (tool result) results:[{"title": "User Agent String – What is it?", "u
-    49.81s  user  발화 시작: Mm-hmm.
-    50.49s  user  발화 끝
-    55.89s  agent 발화 끝
-    57.38s  user  발화 시작: Could you read me the snippet from the Cloudflare one?
-    60.20s  user  발화 끝
-    60.42s  agent 발화 시작: Certainly. It states a User-Agent is text sent by your brows
-    69.69s  user  발화 시작: Okay, that's helpful. I’m building a little website and I wa
-    69.78s  agent 발화 끝
-    74.97s  agent 발화 시작: That’s a smart idea. You can use user agent strings to ident
-    75.11s  user  발화 끝
-    82.01s  user  발화 시작: So, if I block common bot user agents, that will work?
-    82.19s  agent 발화 끝
-    86.46s  user  발화 끝
-    86.49s  agent 발화 시작: Generally, yes. However, sophisticated bots can spoof user a
-    92.52s  user  발화 시작: Really?
-    93.34s  user  발화 끝
-    94.82s  user  발화 시작: Hmm, okay. Can you give me a list of the ten most common bot
-    94.88s  agent 발화 끝
-    99.92s  <ret> 발화 (turn19 첫 프레임)
-   100.04s  user  발화 끝
-   100.16s  agent 발화 시작: <ret> I can definitely provide that information. The top bot
-   101.68s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.15s]: (tool result) results:[{"title": "Top 10 Bot User Agents - Moz", "url"
-   109.61s  agent 발화 끝
-   109.62s  user  발화 시작: That's a good start. Thanks, Lio!
-   111.60s  user  발화 끝
-   111.73s  agent 발화 시작: You’re very welcome! I’m glad I could assist you with your w
-   116.59s  agent 발화 끝
+     5.28s  <ret> 발화 (turn1 첫 프레임)
+     5.35s  agent 발화 시작: <ret> Certainly, I can adjust your browser settings. Your us
+     5.46s  user  발화 끝
+     7.04s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.28s]: (tool result) user_agent set to MyCustomBrowser version 10.5; success:
+    14.25s  agent 발화 끝
+    14.72s  user  발화 시작: That’s great! Now, could you check if that’s reflected on wh
+    19.66s  <ret> 발화 (turn3 첫 프레임)
+    19.82s  agent 발화 시작: <ret> The website reports your user agent as MyCustomBrowser
+    20.00s  user  발화 끝
+    21.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.68s]: (tool result) content: "MyCustomBrowser version 10.5"; status code: 20
+    23.39s  user  발화 시작: Yeah.
+    24.07s  user  발화 끝
+    26.12s  agent 발화 끝
+    26.65s  user  발화 시작: Perfect. Uh, I'm planning a trip to Rome…
+    30.25s  agent 발화 시작: Rome is a wonderful choice! When are you thinking of traveli
+    30.35s  user  발화 끝
+    32.75s  user  발화 시작: Yeah.
+    33.38s  user  발화 끝
+    34.74s  agent 발화 끝
+    35.63s  user  발화 시작: I— I mean, around the first week of November. Could you look
+    39.70s  <ret> 발화 (turn9 첫 프레임)
+    40.02s  agent 발화 시작: <ret> Of course, let's explore flight options. I found three
+    40.08s  user  발화 끝
+    41.46s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.85s]: (tool result) flights: 3; cheapest: $685 (United, nonstop); next: $720
+    50.96s  agent 발화 끝
+    52.04s  user  발화 시작: Six eighty-five sounds good. Can you book that one for me?
+    55.62s  <ret> 발화 (turn11 첫 프레임)
+    55.94s  agent 발화 시작: <ret> Your flight is confirmed! The reference number is XY78
+    55.97s  user  발화 끝
+    57.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.38s]: (tool result) booking confirmed;
+    65.35s  agent 발화 끝
+    65.51s  user  발화 시작: Wonderful. Now, I need a hotel near the Colosseum.
+    69.35s  <ret> 발화 (turn13 첫 프레임)
+    69.54s  user  발화 끝
+    69.58s  agent 발화 시작: <ret> A hotel near the Colosseum sounds lovely. What’s your 
+    71.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: XY789; price: $685; passenger: [user's name]; departs: 2024-11-04
+    75.03s  user  발화 시작: [happy] Around two hundred dollars.
+    75.23s  agent 발화 끝
+    76.49s  <ret> 발화 (turn15 첫 프레임)
+    76.83s  user  발화 끝
+    76.89s  agent 발화 시작: <ret> I found two options: Hotel Artemide at one hundred nin
+    78.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) hotels: 2; Hotel Artemide: $190 (4.5 stars); Hotel Colos
+    85.33s  user  발화 시작: Hotel Artemide sounds nice. Book that for the same dates, No
+    85.42s  agent 발화 끝
+    90.92s  <ret> 발화 (turn17 첫 프레임)
+    90.99s  agent 발화 시작: <ret> Hotel Artemide is booked for you, November first to se
+    91.02s  user  발화 끝
+    92.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.78s]: (tool result) hotel booked; confirmation: Z123; price: $1190; dates: 2
+    98.96s  agent 발화 끝

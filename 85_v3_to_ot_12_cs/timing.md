@@ -58,25 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 | S2 와, 에디 반 헤일런이요? 잭슨 밴드와 더 가까운 사람이 연주 | S3 저기, 혹시 쓰레기 버리셨어요? | S4 죄송해요. 그 트랙에 그를 참여시키는 게 어려웠나요?
+# EXAMINER(FDB-v2) 단계: S1 음, 비트 잇 듣고 있었는데, 그 기타 솔로를 누가 연주했는지 | S2 와, 진짜요? 항상 그 사람 기타 소리랑 비슷하다고 생각했는데 | S3 혹시 쓰레기 버리는 거 하셨어요? | S4 죄송해요. 그 사람이 특별히 부탁받아서 한 건지, 아니면 그냥
 
-     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했거든요. 정말 유명한 사운드라
-     7.51s  <ret> 발화 (turn1 첫 프레임)
-     7.59s  user  발화 끝
-     7.83s  agent 발화 시작: <ret> 네, 좋은 질문이세요. 이야기가 좀 있어요! 에디 반 헤일런이 마이클 잭슨의 “Beat It” 기
-     9.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-    10.92s  user  발화 시작: 예.
-    11.41s  user  발화 끝
-    15.66s  user  발화 시작: 와, 에디 반 헤일런이요? 잭슨 밴드와 더 가까운 사람이 연주했을 거라고 생각했는데.
-    15.71s  agent 발화 끝
-    21.73s  user  발화 시작: 저기, 혹시 쓰레기 버리셨어요?
-    21.77s  user  발화 끝
-    23.99s  user  발화 시작: 죄송해요. 그 트랙에 그를 참여시키는 게 어려웠나요?
-    24.03s  user  발화 끝
-    27.18s  <ret> 발화 (turn6 첫 프레임)
-    27.58s  agent 발화 시작: <ret> 음, 흔한 방식은 아니었고, 설득이 필요했어요.
-    27.73s  user  발화 끝
-    28.46s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.49s]: [source: Rolling Stone] Quincy Jones had to convince Van Halen to cont
-    32.06s  agent 발화 시작: 퀸시 존스가 처음에는 망설였지만 에디 반 헤일런을 설득해서 그 곡에 참여하게 했습니다.
-    32.06s  agent 발화 끝
-    37.85s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 비트 잇 듣고 있었는데, 그 기타 솔로를 누가 연주했는지 궁금했어요. 진짜 멋지거든요.
+     6.87s  <ret> 발화 (turn1 첫 프레임)
+     6.95s  user  발화 끝
+     7.19s  agent 발화 시작: <ret> 네, 정말 좋은 곡이에요. 마이클 잭슨의 “Beat It” 기타 솔로는 에디 반 헤일런이 연주했어
+     8.15s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.76s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     9.60s  user  발화 시작: 예.
+    10.14s  user  발화 끝
+    13.31s  user  발화 시작: 와, 진짜요? 항상 그 사람 기타 소리랑 비슷하다고 생각했는데, 확실히 몰랐어요.
+    13.35s  agent 발화 끝
+    18.71s  user  발화 시작: 혹시 쓰레기 버리는 거 하셨어요?
+    18.77s  user  발화 끝
+    20.62s  user  발화 시작: 죄송해요. 그 사람이 특별히 부탁받아서 한 건지, 아니면 그냥… 나타난 건지 궁금해요.
+    20.69s  user  발화 끝
+    26.19s  <ret> 발화 (turn6 첫 프레임)
+    26.51s  agent 발화 시작: <ret> 마이클 잭슨은 노래에 록 요소를 넣고 싶어했고, 반 헤일런이 첫 번째 선택이었어요.
+    26.64s  user  발화 끝
+    28.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: [source: Rolling Stone] Michael Jackson specifically sought out Eddie 
+    31.93s  agent 발화 시작: 마이클 잭슨은 “Beat It”에서 록과 팝을 섞기 위해 에디 반 헤일런을 특별히 찾았답니다.
+    31.97s  agent 발화 끝
+    37.72s  agent 발화 끝

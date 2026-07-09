@@ -63,39 +63,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Okay. So, if someone wanted to avo | S3 Mm-hmm. | S4 Democratic confederalism… interest
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Right, so no government at all, es | S3 Actually, speaking of travel, I’m  | S4 That sounds perfect! Are there any
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.32s  <ret> 발화 (turn1 첫 프레임)
-     2.48s  agent 발화 시작: <ret> That’s a really interesting question, and one I’ve not
-     2.53s  user  발화 끝
-     4.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (no information found)
-     7.25s  user  발화 시작: Uh-huh.
-     7.75s  user  발화 끝
-    10.59s  agent 발화 끝
-    10.80s  user  발화 시작: Right, but is there one they *particularly* dislike? Like, h
-    15.13s  <ret> 발화 (turn4 첫 프레임)
-    15.28s  agent 발화 시작: <ret> Historically, anarchists have focused their opposition
-    15.48s  user  발화 끝
-    16.33s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.38s]: [source: Wikipedia] Anarchists oppose the state as a form of hierarchi
-    23.63s  agent 발화 끝
-    24.18s  user  발화 시작: Okay. So, if someone wanted to avoid conflict with anarchist
-    31.27s  agent 발화 시작: That’s a thoughtful consideration. Avoiding conflict depends
-    31.40s  user  발화 끝
-    38.17s  agent 발화 끝
-    38.17s  user  발화 시작: Mm-hmm.
-    38.67s  user  발화 끝
-    38.87s  agent 발화 시작: Some groups focus on direct action, while others prioritize 
-    43.45s  user  발화 시작: But are there places now where anarchists actually *run* thi
-    44.19s  agent 발화 끝
-    47.46s  <ret> 발화 (turn10 첫 프레임)
-    47.86s  agent 발화 시작: <ret> That's a fascinating question! There aren't any fully 
-    48.07s  user  발화 끝
-    49.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: [source: CrimethInc.] Rojava, in northern Syria, operates on principle
-    54.75s  agent 발화 시작: Rojava in Syria operates on democratic confederalism, incorp
-    54.95s  agent 발화 끝
-    61.51s  agent 발화 끝
-    61.72s  user  발화 시작: Democratic confederalism… interesting. Is that stable, thoug
-    66.07s  user  발화 끝
-    66.08s  agent 발화 시작: It’s faced significant challenges, including ongoing conflic
-    73.13s  agent 발화 끝
+     2.67s  <ret> 발화 (turn1 첫 프레임)
+     2.82s  agent 발화 시작: <ret> That's a fascinating question! Unfortunately, I haven'
+     2.91s  user  발화 끝
+     4.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (no information found)
+     6.74s  user  발화 시작: Uh-huh.
+     7.23s  user  발화 끝
+     9.55s  agent 발화 끝
+     9.73s  user  발화 시작: Hmm, okay. Well, what *do* anarchists generally advocate for
+    13.93s  <ret> 발화 (turn4 첫 프레임)
+    14.17s  agent 발화 시작: <ret> Anarchists generally advocate for self-governed societ
+    14.32s  user  발화 끝
+    14.97s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.23s]: [source: Wikipedia] Anarchism is a political philosophy that advocates
+    21.40s  agent 발화 끝
+    21.99s  user  발화 시작: Right, so no government at all, essentially. Do they have an
+    26.92s  <ret> 발화 (turn6 첫 프레임)
+    27.24s  agent 발화 시작: <ret> Yes, the anarchist commune of Shinmin existed in Manch
+    27.41s  user  발화 끝
+    28.76s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.11s]: [source: Britannica] The anarchist commune of Shinmin in Manchuria exi
+    33.35s  agent 발화 끝
+    33.38s  user  발화 시작: That’s interesting— a whole commune! But surely that was sma
+    37.55s  user  발화 끝
+    37.81s  agent 발화 시작: It was a relatively small-scale experiment, yes. Though, as 
+    45.70s  user  발화 시작: Actually, speaking of travel, I’m thinking of a trip to Spai
+    46.44s  agent 발화 끝
+    48.94s  agent 발화 시작: –but it’s a compelling example of— Oh, Spain! Wonderful choi
+    49.07s  user  발화 끝
+    54.28s  user  발화 시작: Barcelona, I think. Is it a good place to visit for someone 
+    54.73s  agent 발화 끝
+    60.87s  <ret> 발화 (turn12 첫 프레임)
+    61.03s  agent 발화 시작: <ret> Barcelona does have a strong history of anarchist and 
+    61.23s  user  발화 끝
+    62.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: [source: Lonely Planet] Barcelona has a strong history of anarchist an
+    67.15s  agent 발화 끝
+    67.24s  user  발화 시작: That sounds perfect! Are there any specific places I should 
+    72.57s  <ret> 발화 (turn14 첫 프레임)
+    72.65s  agent 발화 시작: <ret> Plaça Revolució de Setembre de 1868, Ateneu Anarquista
+    72.79s  user  발화 끝
+    74.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Plaça Revolució de Setembre de 1868; Ateneu Anarquista d
+    81.18s  agent 발화 끝
+    81.94s  user  발화 시작: Wow, that’s really helpful, thank you!
+    84.13s  agent 발화 시작: You're very welcome! I’m glad I could assist in planning a t
+    84.24s  user  발화 끝
+    91.97s  agent 발화 끝

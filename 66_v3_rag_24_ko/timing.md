@@ -58,20 +58,33 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 뒤플레시 가문 이름이 어디에서 유래했는지 궁금해요. | S2 아, 그렇군요. 그럼 그 지명은 어떤 곳이었나요? | S3 혹시 유명한 뒤플레시 가문 사람이 있었나요? | S4 오, 리슐리외요! 역사 시간에 배웠던 것 같아요.
 
-     0.00s  user  발화 시작: 뒤플레시라는 성이 어디에서 유래됐는지 궁금해요.
-     3.75s  <ret> 발화 (turn1 첫 프레임)
-     4.06s  agent 발화 시작: <ret> 뒤플레시 성에 대해 알아보고 계시는군요. 뒤플레시 성은 프랑스에서 유래되었는데, ‘간단한 교회’라
-     4.21s  user  발화 끝
-     4.79s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.09s]: [source: Britannica] The surname Du Plessis is of French origin, deriv
-    11.33s  user  발화 시작: 네.
-    12.06s  user  발화 끝
-    13.94s  agent 발화 끝
-    14.06s  user  발화 시작: 그럼 그 성을 가진 유명한 사람도 있나요?
-    16.80s  <ret> 발화 (turn4 첫 프레임)
-    17.19s  agent 발화 시작: <ret> 뒤플레시 성을 가진 유명한 분들이 꽤 있습니다.
-    17.20s  user  발화 끝
-    18.48s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.61s]: [source: Wikipedia] Daniel du Plessis (1861–1934) was a South African 
-    20.66s  agent 발화 시작: 다니엘 뒤플레시라는 분은, 일천팔백육십일 년부터 일천구백삼십사 년까지 남아프리카 공화국의 정치인이자 국회의원
-    20.80s  agent 발화 끝
-    30.07s  agent 발화 끝
+     0.00s  user  발화 시작: 뒤플레시 가문 이름이 어디에서 유래했는지 궁금해요.
+     3.79s  <ret> 발화 (turn1 첫 프레임)
+     4.10s  agent 발화 시작: <ret> 뒤플레시라는 성은 프랑스에서 유래했는데, 원래는 '드 플레시'였대요.
+     4.30s  user  발화 끝
+     5.15s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.70s]: [source: Britannica] The surname Du Plessis is of French origin, deriv
+     9.62s  agent 발화 시작: 뒤플레시 성은 '플레시'라는 지명에서 비롯된 '드 플레시'라는 프랑스어 표현에서 유래했다고 해요.
+     9.80s  agent 발화 끝
+    14.23s  user  발화 시작: 아.
+    14.86s  user  발화 끝
+    15.75s  user  발화 시작: 아, 그렇군요. 그럼 그 지명은 어떤 곳이었나요?
+    15.92s  agent 발화 끝
+    18.99s  <ret> 발화 (turn5 첫 프레임)
+    19.06s  agent 발화 시작: <ret> 프랑스에는 플레시라는 이름을 가진 곳이 여러 군데 있었어요. 프랑스에는 작은 영지나 저택과 관련된
+    19.27s  user  발화 끝
+    20.91s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.56s]: [source: Forebears] There were several places named Plessis in France,
+    29.31s  agent 발화 끝
+    29.73s  user  발화 시작: 혹시 유명한 뒤플레시 가문 사람이 있었나요?
+    32.62s  <ret> 발화 (turn7 첫 프레임)
+    33.02s  agent 발화 시작: <ret> 네, 프랑스의 카르디널이자 정치가인 리슐리외가 뒤플레시 가문 출신이에요.
+    33.19s  user  발화 끝
+    34.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: [source: Wikipedia] Cardinal Richelieu, a prominent French clergyman a
+    38.71s  agent 발화 시작: 리슐리외 추기경은 아르망 장 뒤플레시라는 이름으로 태어난 프랑스의 유명한 성직자이자 정치가였어요.
+    38.80s  agent 발화 끝
+    47.01s  agent 발화 끝
+    47.71s  user  발화 시작: 오, 리슐리외요! 역사 시간에 배웠던 것 같아요.
+    51.55s  user  발화 끝
+    51.73s  agent 발화 시작: 맞아요, 리슐리외는 프랑스 역사에서 아주 중요한 인물이죠.
+    56.21s  agent 발화 끝

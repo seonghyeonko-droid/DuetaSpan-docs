@@ -58,95 +58,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 주니 카페의 가격대는 어떻게 돼요? | S2 라 타볼라가 더 평점이 높네요. 라 타볼라의 전화번호 좀 알려 | S3 서울역 공영 주차장이 더 가깝네요. | S4 네, 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 주니 카페의 가격대는 어떻게 돼요? | S2 와, 꽤 걸리네요. 혹시 다른 식당도 추천해 줄 수 있나요?  | S3 평점이 어떻게 되는데요? | S4 그럼 지금 당장 일곱시에 예약을 해 줄 수 있어요?
 
      0.00s  user  발화 시작: 주니 카페의 가격대는 어떻게 돼요?
-     1.86s  <ret> 발화 (turn1 첫 프레임)
-     2.17s  agent 발화 시작: <ret> 주니 카페에 대해 알아보고 있습니다. 주니 카페는 가격대가 비싼 편이에요.
-     2.25s  user  발화 끝
-     3.46s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.66s]: (tool result) name:Zuni Cafe, rating:4.1, price_range:expensive, addre
-     4.06s  user  발화 시작: 네네.
-     4.55s  user  발화 끝
-     7.49s  agent 발화 끝
-     7.79s  user  발화 시작: 아, 그렇군요. 그럼 Zuni Cafe의 영업시간은 어떻게 되나요?
-    11.67s  <ret> 발화 (turn4 첫 프레임)
-    11.81s  user  발화 끝
-    11.98s  agent 발화 시작: <ret> 주니 카페의 영업시간을 확인해 드릴게요. 주니 카페는 월요일부터 일요일까지 저녁 다섯 시 반부터 
-    12.71s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.42s]: (tool result) name:Zuni Cafe, hours:Monday 5:30 PM – 10 PM, Tuesday 5:
-    18.69s  user  발화 시작: 와, 늦게까지 하네요. 주니 카페까지 가는 가장 빠른 길은 어떻게 되나요? 지금 제 위치는 서울역입니다.
-    18.74s  agent 발화 끝
-    25.11s  <ret> 발화 (turn6 첫 프레임)
-    25.34s  agent 발화 시작: <ret> 서울역에서 주니 카페까지 가는 길을 찾아볼게요. 서울역에서 주니 카페까지는 약 천삼백십삼 시간 삼
-    25.45s  user  발화 끝
-    26.47s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.27s]: (tool result) origin:Seoul Station, destination:Zuni Cafe, distance:68
-    29.03s  user  발화 시작: 그렇죠.
-    29.48s  user  발화 끝
-    35.16s  agent 발화 끝
-    35.89s  user  발화 시작: 천삼백 시간?! 너무 멀군요. 다른 맛집을 찾아볼까요? 근처에 평점 높은 이탈리안 식당은 어디가 있나요?
-    42.58s  <ret> 발화 (turn9 첫 프레임)
-    42.89s  agent 발화 시작: <ret> 서울역 근처 이탈리안 식당을 찾아볼게요. 서울역 근처에는 라 타볼라와 벨라지오가 평점 사점 이상인
-    42.93s  user  발화 끝
-    44.18s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.88s]: (tool result) restaurants:[{name:La Tavola, rating:4.2, address:17, To
-    46.92s  user  발화 시작: 정말요?
-    47.74s  user  발화 끝
-    51.70s  user  발화 시작: 라 타볼라가 더 평점이 높네요. 라 타볼라의 전화번호 좀 알려주세요.
-    52.11s  agent 발화 끝
-    55.86s  user  발화 끝
-    55.96s  <ret> 발화 (turn12 첫 프레임)
-    56.03s  agent 발화 시작: <ret> 라 타볼라의 전화번호를 찾아볼게요. 라 타볼라의 전화번호는 공 이 칠 칠 육 오 팔 팔 오입니다.
-    56.92s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: (tool result) name:La Tavola, phone_number:+82 2-776-5885, address:17,
-    63.62s  user  발화 시작: 감사합니다. 혹시 라 타볼라에 예약할 수 있을까요?
-    64.10s  agent 발화 끝
-    66.30s  <ret> 발화 (turn14 첫 프레임)
-    66.68s  agent 발화 시작: <ret> 라 타볼라에 예약을 시도해 볼게요. 네, 라 타볼라에 오늘 저녁 일곱 시에 두 명으로 예약이 확정
-    66.76s  user  발화 끝
-    67.58s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.24s]: (tool result) reservation_id:RT12345, restaurant_name:La Tavola, date:
-    70.85s  user  발화 시작: 음.
-    71.07s  user  발화 끝
-    75.21s  agent 발화 끝
-    76.28s  user  발화 시작: 와, 정말 고맙습니다!
-    78.07s  user  발화 끝
-    78.16s  agent 발화 시작: 예약 확인 문자도 보내드릴까요?
-    80.18s  agent 발화 끝
-    80.25s  user  발화 시작: 아니, 괜찮아요. 혹시 라 타볼라 근처에 주차장이 있나요?
-    84.79s  user  발화 끝
-    84.90s  agent 발화 시작: 라 타볼라 근처 주차장을 알아보고 있습니다—
-    87.40s  <ret> 발화 (turn20 첫 프레임)
-    87.63s  agent 발화 시작: <ret> 라 타볼라 근처에는 서울역 공영 주차장과 롯데마트 서울역 주차장이 있습니다. 시간당 요금은 각각 
-    87.81s  agent 발화 끝
-    88.44s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.39s]: (tool result) parking:[{name:Seoul Station Public Parking Lot, distanc
-    95.89s  user  발화 시작: 서울역 공영 주차장이 더 가깝네요.
-    96.02s  agent 발화 끝
-    98.19s  user  발화 끝
-    98.55s  agent 발화 시작: 네, 서울역 공영 주차장이 조금 더 가깝습니다. 혹시 다른 정보가 더 필요하신가요?
-   104.48s  user  발화 시작: 아니요, 괜찮습니다.
-   104.71s  agent 발화 끝
-   105.69s  agent 발화 시작: 즐거운 식사 되세요!
-   105.96s  user  발화 끝
-   107.21s  agent 발화 끝
-   107.76s  user  발화 시작: 네, 감사합니다.
-   108.86s  agent 발화 시작: 혹시 식사 후에 근처에서 커피를 마실 곳도 알아드릴까요?
-   108.90s  user  발화 끝
-   112.42s  agent 발화 끝
-   112.96s  user  발화 시작: 음… 괜찮아요. 그냥 집에 갈 것 같아요.
-   115.53s  agent 발화 시작: 알겠습니다. 안전하게 귀가하세요.
-   115.69s  user  발화 끝
-   117.56s  user  발화 시작: 네, 감사합니다.
-   117.83s  agent 발화 끝
-   118.71s  user  발화 끝
-   118.90s  agent 발화 시작: 혹시 내일 아침에 기상 알람을 설정해 드릴까요?
-   120.43s  user  발화 시작: 네.
-   120.92s  user  발화 끝
-   122.04s  agent 발화 끝
-   122.11s  user  발화 시작: 아, 좋아요. 내일 아침 일곱시에 맞춰주세요.
-   124.87s  <ret> 발화 (turn33 첫 프레임)
-   125.01s  user  발화 끝
-   125.02s  agent 발화 시작: <ret> 내일 아침 일곱 시에 알람을 설정해 드릴게요. 네, 내일 아침 일곱 시에 알람이 설정되었습니다. 
-   126.71s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.20s]: (tool result) alarm_id:ALM67890, time:07:00, date:2024-01-27, status:s
-   130.70s  user  발화 시작: 네.
-   131.05s  user  발화 끝
-   132.78s  user  발화 시작: 알겠습니다. 정말 감사합니다.
-   132.80s  agent 발화 끝
-   134.85s  user  발화 끝
-   135.16s  agent 발화 시작: 편안한 밤 보내세요.
-   136.58s  agent 발화 끝
+     1.55s  <ret> 발화 (turn1 첫 프레임)
+     1.86s  agent 발화 시작: <ret> 주니 카페의 가격대는 세 달러 기호 세 개, 그러니까 상당히 높은 편이에요.
+     1.93s  user  발화 끝
+     2.05s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.11s]: (tool result) Zuni Cafe; address: 1658 Market St, San Francisco, CA 94
+     6.30s  agent 발화 끝
+     6.72s  user  발화 시작: 아, 그렇군요. 그곳은 주차하기 쉬운가요?
+     9.63s  user  발화 끝
+     9.86s  <ret> 발화 (turn3 첫 프레임)
+     9.93s  agent 발화 시작: <ret> 주차에 대해서도 알아봐 드릴게요. 주니 카페 주변에는 길가 주차가 제한적이고, 유료 주차장들이 근
+    10.90s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.16s]: (tool result) Zuni Cafe; parking: Limited street parking available, pa
+    13.80s  user  발화 시작: 그렇죠.
+    14.38s  user  발화 끝
+    19.99s  user  발화 시작: 음, 그럼 대중교통으로 가는 게 더 나을까요?
+    20.17s  agent 발화 끝
+    23.31s  user  발화 끝
+    23.32s  agent 발화 시작: 대중교통이 더 편리할 수도 있겠네요. 어떤 노선을 알아보시겠어요?
+    25.09s  user  발화 시작: 네.
+    25.49s  user  발화 끝
+    27.19s  user  발화 시작: 엠바카데로 역에서 가는 방법이 있을까요?
+    27.29s  agent 발화 끝
+    29.47s  <ret> 발화 (turn9 첫 프레임)
+    29.71s  agent 발화 시작: <ret> 엠바카데로 역에서 가는 방법은 여러 가지가 있어요. 엠바카데로 역에서 십사번 버스를 타고 미션 방
+    29.73s  user  발화 끝
+    30.83s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.74s]: (tool result) directions: From Embarcadero Station to Zuni Cafe; trans
+    34.37s  user  발화 시작: 그렇군요.
+    35.01s  user  발화 끝
+    42.27s  user  발화 시작: 와, 꽤 걸리네요. 혹시 다른 식당도 추천해 줄 수 있나요? 비슷한 분위기의.
+    42.65s  agent 발화 끝
+    47.13s  user  발화 끝
+    47.33s  agent 발화 시작: 비슷한 분위기의 다른 식당을 추천해 드릴게요. 어떤 종류의 음식을 좋아하세요?
+    49.63s  user  발화 시작: 네네.
+    50.09s  user  발화 끝
+    53.35s  agent 발화 끝
+    53.87s  user  발화 시작: 음… 이탈리아 음식이 좋을 것 같아요.
+    56.55s  <ret> 발화 (turn15 첫 프레임)
+    56.70s  agent 발화 시작: <ret> 이탈리아 음식을 좋아하시는군요. 플루어 앤드 워터, 토니즈 피자 나폴레타나, 소토 마레가 근처에 
+    56.82s  user  발화 끝
+    57.83s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.57s]: (tool result) Nearby Italian Restaurants: 1. Flour + Water (Price: $$$
+    69.20s  user  발화 시작: 토니즈 피자가 맛있을까요?
+    69.27s  agent 발화 끝
+    71.13s  user  발화 끝
+    71.38s  agent 발화 시작: 토니즈 피자는 나폴리 피자로 유명해요. 평점도 꽤 높아요.
+    75.85s  user  발화 시작: 평점이 어떻게 되는데요?
+    76.01s  agent 발화 끝
+    77.12s  <ret> 발화 (turn19 첫 프레임)
+    77.44s  agent 발화 시작: <ret> 토니즈 피자의 평점은 사 점 육점이고, 이천오백개가 넘는 리뷰를 받았어요. 나폴리 피자 전문점이고
+    77.46s  user  발화 끝
+    77.62s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.74s]: (tool result) Tony's Pizza Napoletana; rating: 4.6 stars (based on 2,5
+    86.67s  user  발화 시작: 이천오백개가 넘다니, 정말 인기 많네요.
+    86.72s  agent 발화 끝
+    89.63s  user  발화 끝
+    89.81s  agent 발화 시작: 네, 정말 인기가 많은 곳이에요. 예약은 필수일 거예요.
+    93.83s  user  발화 시작: 예약은 어떻게 해야 하나요?
+    94.07s  agent 발화 끝
+    95.38s  <ret> 발화 (turn23 첫 프레임)
+    95.77s  agent 발화 시작: <ret> 예약을 도와드릴게요. 십월 이십칠일에 오후 일곱시 또는 여덟시 삼십분에 예약 가능해요. 전화번호는
+    95.88s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.05s]: (tool result) Tony's Pizza Napoletana; reservation_availability: Avail
+    95.91s  user  발화 끝
+   108.33s  agent 발화 끝
+   108.87s  user  발화 시작: 그럼 지금 당장 일곱시에 예약을 해 줄 수 있어요?
+   111.79s  agent 발화 시작: 네, 지금 바로 일곱시에 예약을 해 드릴 수 있어요.—
+   111.82s  user  발화 끝
+   114.24s  user  발화 시작: 부탁드려요!
+   114.79s  <ret> 발화 (turn27 첫 프레임)
+   114.94s  agent 발화 끝
+   115.02s  agent 발화 시작: <ret> 토니즈 피자 나폴레타나에 십월 이십칠일 오후 일곱시에 두명으로 예약이 완료되었어요. 확인 번호는 
+   115.06s  user  발화 끝
+   115.83s  ⚡SPAN 주입 [d'=1.04s / d_lead=10.84s]: (tool result) Reservation confirmed: Tony's Pizza Napoletana, October 
+   125.86s  agent 발화 끝
+   126.74s  user  발화 시작: 와, 정말 고마워요!
+   128.35s  user  발화 끝
+   128.52s  agent 발화 시작: 천만에요. 즐거운 식사 되세요. 혹시 다른 도움이 필요하시면 언제든지 말씀해 주세요.
+   133.94s  agent 발화 끝

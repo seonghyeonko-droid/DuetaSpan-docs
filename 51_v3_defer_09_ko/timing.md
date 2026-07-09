@@ -68,33 +68,28 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔에서 이월 십일부터 칠박 동안 방 세개를 예약해 줘 | S2 혹시 그 호텔에 수영장이 있는지 알 수 있을까? | S3 다른 호텔도 한번 찾아봐 줘. 비슷한 가격대로, 해변 바로 앞 | S4 파라다이스 코브 리조트에 대한 자세한 정보를 알려줘.
 
-     0.00s  user  발화 시작: 오션뷰 호텔에서 이월 십일부터 칠박 동안 방 세개를 예약해 줘.
-     5.15s  <ret> 발화 (turn1 첫 프레임)
-     5.31s  agent 발화 시작: <ret> 네, 알아보고 있습니다. 오션뷰 호텔, 샌디에이고에서 이월 십일부터 칠박, 방 세개 예약이 완료됐
-     5.41s  user  발화 끝
-     6.99s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.90s]: (tool result) reservation_id: 87654, hotel: Ocean View Hotel, city: Sa
-    15.29s  user  발화 시작: 혹시 그 호텔에 수영장이 있는지 알 수 있을까?
-    15.46s  agent 발화 끝
-    18.01s  <ret> 발화 (turn3 첫 프레임)
-    18.09s  agent 발화 시작: <ret> 아, 수영장에 대해 궁금하시군요.
-    18.21s  user  발화 끝
-    18.97s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: (tool result) hotel: Ocean View Hotel, city: San Diego, amenities: [sw
-    20.10s  agent 발화 시작: 네, 오션뷰 호텔에는 수영장과 피트니스 센터, 무료 와이파이, 레스토랑이 있습니다. 평점은 사 점 오점이에요
-    20.12s  agent 발화 끝
-    25.06s  user  발화 시작: 헐.
-    25.69s  user  발화 끝
-    27.22s  agent 발화 시작: 다른 편의시설에 대해 더 궁금하신 점이 있으신가요? 아니면 다른 호텔을 알아볼까요?
-    27.33s  agent 발화 끝
-    32.40s  agent 발화 끝
-    32.81s  user  발화 시작: 다른 호텔도 한번 찾아봐 줘. 비슷한 가격대로, 해변 바로 앞에 있는 곳으로.
-    37.89s  <ret> 발화 (turn8 첫 프레임)
-    38.22s  user  발화 끝
-    38.28s  agent 발화 시작: <ret> 해변 바로 앞에 있는 비슷한 가격대의 호텔을 찾아보겠습니다. 잠시만 기다려 주세요.
-    39.65s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.05s]: (tool result) hotels: [Paradise Cove Resort, Sunset Beach Hotel, Coast
-    43.17s  agent 발화 시작: 파라다이스 코브 리조트, 선셋 비치 호텔, 코스탈 브리즈 인이 있습니다. 가격은 각각 이천이백달러, 이천삼백
-    43.32s  agent 발화 끝
-    53.60s  agent 발화 끝
-    54.36s  user  발화 시작: 파라다이스 코브 리조트에 대한 자세한 정보를 알려줘.
-    58.20s  user  발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고에서 이월 십일부터 칠박, 방 세 개 예약해 줘.
+     5.33s  <ret> 발화 (turn1 첫 프레임)
+     5.46s  user  발화 끝
+     5.48s  agent 발화 시작: <ret> 네, 오션뷰 호텔 샌디에이고, 이월 십일부터 칠박, 방 세 개 맞으시죠?
+     6.77s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.90s]: (tool result) confirmation_number: XJ7892; hotel_name: Ocean View Hote
+    10.25s  agent 발화 시작: 네, 오션뷰 호텔 샌디에이고, 이월 십일부터 칠박, 방 세 개 예약 완료되었습니다. 확인 번호는 XJ7892
+    10.38s  agent 발화 끝
+    20.26s  agent 발화 끝
+    20.42s  user  발화 시작: 이천백달러요? 생각보다 비싸네요. 좀 더 저렴한 호텔은 없을까요?
+    25.47s  user  발화 끝
+    25.80s  agent 발화 시작: 음… 다른 호텔을 찾아볼까요? 어떤 기준으로 저렴한 호텔을 찾으시겠어요?
+    28.71s  user  발화 시작: 응.
+    29.20s  user  발화 끝
+    31.09s  agent 발화 시작: 주변에 비슷한 조건의 호텔을 찾아보고 있는데—
+    31.13s  agent 발화 끝
+    33.34s  user  발화 시작: …해변 근처는 꼭이어야 해요? 조금 멀어도 괜찮으니 더 싼 곳으로 알아봐 줘.
+    34.13s  agent 발화 끝
+    38.75s  <ret> 발화 (turn8 첫 프레임)
+    38.80s  user  발화 끝
+    38.90s  agent 발화 시작: <ret> 네, 해변 근처가 아니어도 괜찮으시다면 더 저렴한 호텔을 찾아볼 수 있습니다.
+    39.95s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.62s]: (tool result) hotels: [hotel_name: Pacific Shores Inn, price_per_night
+    43.36s  agent 발화 시작: 샌디에이고에서 이월 십일부터 칠박, 방 세 개, 최대 천오백달러로 검색해 본 결과— 퍼시픽 쇼어즈 인은 일박
+    43.52s  agent 발화 끝
+    59.18s  agent 발화 끝

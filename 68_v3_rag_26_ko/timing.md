@@ -58,33 +58,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 독일 국기 색깔이 뭐였더라? 까만색, 빨간색, 그리고… | S2 벨기에 국기는 어때? | S3 아, 벨기에는 노란색이네. 독일이랑 좀 다르네. | S4 독일 국기 색깔이 역사적으로 무슨 의미가 있었나?
+# EXAMINER(FDB-v2) 단계: S1 음… 혹시 독일 국기 색깔이 뭐였더라? 까먹었네. | S2 오, 그렇구나. 혁명 때의 색깔이었구나. [laugh] 근데  | S3 벨기에 국기도 그렇다니 신기하네. 근데 독일 국기는 언제부터  | S4 와, 진짜 의미가 깊네. 역시 국기는 단순한 게 아니구나.
 
-     0.00s  user  발화 시작: 음… 독일 국기 색깔이 뭐였더라? 까만색, 빨간색, 그리고…
-     4.92s  <ret> 발화 (turn1 첫 프레임)
-     4.99s  agent 발화 시작: <ret> 독일 국기 색깔에 대해 궁금하시군요. 독일 국기는 검은색, 빨간색, 그리고 금색 가로 줄무늬로 이
-     5.18s  user  발화 끝
-     6.44s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.80s]: [source: Britannica] The flag of Germany displays black, red, and gold
-    13.37s  user  발화 시작: 금색이라고? 금색은 좀 특이하네. 다른 나라도 비슷한 색깔 쓰는 곳 있어?
-    13.39s  agent 발화 끝
-    19.38s  agent 발화 시작: 비슷한 색 조합을 가진 국기는 여러 나라에 있어요. 어떤 나라가 궁금하신가요?
-    19.44s  user  발화 끝
-    21.97s  user  발화 시작: 응응.
-    22.69s  user  발화 끝
-    25.12s  agent 발화 끝
-    25.17s  user  발화 시작: 벨기에 국기는 어때?
-    26.82s  <ret> 발화 (turn6 첫 프레임)
-    26.97s  agent 발화 시작: <ret> 벨기에 국기 색깔도 한번 알아볼까요? 벨기에 국기는 검은색, 노란색, 빨간색 세 가지 색으로 이루
-    27.10s  user  발화 끝
-    28.18s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.48s]: [source: Wikipedia] The flag of Belgium is a tricolour of black, yello
-    34.36s  user  발화 시작: 아, 벨기에는 노란색이네. 독일이랑 좀 다르네.
-    34.42s  agent 발화 끝
-    38.00s  agent 발화 시작: 맞아요. 독일 국기는 금색이고 벨기에 국기는 노란색이라 조금 차이가 있어요. [happy]
-    38.06s  user  발화 끝
-    43.38s  user  발화 시작: 독일 국기 색깔이 역사적으로 무슨 의미가 있었나?
-    43.65s  agent 발화 끝
-    46.62s  <ret> 발화 (turn10 첫 프레임)
-    46.76s  agent 발화 시작: <ret> 독일 국기 색깔에 얽힌 이야기가 있어요. 검은색, 빨간색, 금색은 나폴레옹 전쟁 당시 프랑스 지배
-    46.94s  user  발화 끝
-    48.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: [source: History.com] The black, red, and gold colors were adopted dur
-    57.98s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 혹시 독일 국기 색깔이 뭐였더라? 까먹었네.
+     3.94s  <ret> 발화 (turn1 첫 프레임)
+     4.00s  agent 발화 시작: <ret> 독일 국기는 검은색과 빨간색, 그리고 노란색으로 이루어져 있어요.
+     4.21s  user  발화 끝
+     5.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [source: Britannica] The national flag of Germany consists of three eq
+     8.86s  agent 발화 시작: 독일 국기는 검정, 빨강, 금색 세 가지 가로 줄무늬로 되어 있어요.
+     8.87s  agent 발화 끝
+    14.38s  user  발화 시작: 아, 맞다! 검빨노! 근데 그 세 가지 색깔이 무슨 의미가 있는 거야?
+    14.46s  agent 발화 끝
+    18.82s  <ret> 발화 (turn4 첫 프레임)
+    18.96s  agent 발화 시작: <ret> 그건 아주 흥미로운 질문이에요. 독일 국기 색깔은 역사적인 배경을 가지고 있어요.
+    19.19s  user  발화 끝
+    20.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: [source: History.com] The colors black, red, and gold were adopted dur
+    25.00s  agent 발화 시작: 그 색깔들은 천팔백사십팔년 혁명 때 자유를 상징하며 채택되었대요.
+    25.07s  agent 발화 끝
+    28.82s  user  발화 시작: 응.
+    29.32s  user  발화 끝
+    30.65s  agent 발화 끝
+    30.70s  user  발화 시작: 오, 그렇구나. 혁명 때의 색깔이었구나. [laugh] 근데 다른 나라 국기도 비슷한 색깔 쓰는 곳 있어?
+    38.07s  <ret> 발화 (turn8 첫 프레임)
+    38.21s  agent 발화 시작: <ret> 다른 나라 국기에도 비슷한 색 조합을 사용하는 경우가 있어요. 벨기에 국기도 검은색, 노란색, 빨
+    38.30s  user  발화 끝
+    40.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: [source: Flags of the World] The flag of Belgium is composed of three 
+    46.70s  agent 발화 시작: 벨기에 국기는 검정색, 노란색, 빨간색 세 개의 세로 줄무늬로 구성되어 있어요.
+    46.78s  agent 발화 끝
+    52.55s  user  발화 시작: 벨기에 국기도 그렇다니 신기하네. 근데 독일 국기는 언제부터 사용했어?
+    52.82s  agent 발화 끝
+    57.69s  <ret> 발화 (turn11 첫 프레임)
+    58.08s  agent 발화 시작: <ret> 독일 국기의 역사는 꽤 오래되었어요. 그 국기는 천팔백사십팔년에 처음 독일의 상징으로 사용되었고,
+    58.24s  user  발화 끝
+    58.89s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.65s]: [source: German Federal Foreign Office] The black-red-gold flag was fi
+    68.76s  user  발화 시작: 천팔백사십팔년부터였다니! 엄청 오래됐네. 혹시 그 국기 디자인에 특별한 의미가 숨어있는 건가?
+    69.02s  agent 발화 끝
+    77.02s  <ret> 발화 (turn13 첫 프레임)
+    77.09s  agent 발화 시작: <ret> 디자인 자체에도 의미가 담겨있다고 해요. 각 색깔이 독일 국민의 단결과 자유, 그리고 정의를 나타
+    77.24s  user  발화 끝
+    79.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.73s]: [source: DW] The colors of the German flag symbolize unity, freedom, a
+    84.68s  agent 발화 시작: 그 색깔들은 독일 국민의 단결, 자유, 정의를 상징한다고 해요.
+    84.82s  agent 발화 끝
+    86.96s  user  발화 시작: 그래.
+    87.73s  user  발화 끝
+    89.61s  user  발화 시작: 와, 진짜 의미가 깊네. 역시 국기는 단순한 게 아니구나.
+    89.69s  agent 발화 끝
+    93.74s  agent 발화 시작: 맞아요. 국기는 그 나라의 역사와 문화를 담고 있는 중요한 상징이랍니다.
+    93.91s  user  발화 끝
+    98.78s  agent 발화 끝

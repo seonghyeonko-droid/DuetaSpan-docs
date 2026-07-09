@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 세재! I’m Aril, and I’m so glad we have this time to co
-     8.25s  agent 발화 끝
-     8.27s  user  발화 시작: Aril? That’s… a very Western name. Are you American? I was e
-    16.82s  agent 발화 시작: It’s true, my name isn’t traditional here. I’m designed to b
-    16.94s  user  발화 끝
-    22.29s  user  발화 시작: Yeah.
-    22.92s  user  발화 끝
-    28.50s  agent 발화 끝
-    29.09s  user  발화 시작: Well, I've been trying to make friends with my colleagues, b
-    36.65s  user  발화 끝
-    36.87s  agent 발화 시작: That’s completely understandable. Many people find it diffic
-    48.05s  agent 발화 끝
+     0.00s  agent 발화 시작: 세재, it's lovely to connect with you. I’m Aril, and I help pe
+     7.74s  agent 발화 끝
+     7.83s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a bit lost lat
+    13.08s  agent 발화 시작: It’s understandable to feel lost sometimes, 세재. What feels m
+    13.19s  user  발화 끝
+    15.93s  user  발화 시작: Wow.
+    16.75s  user  발화 끝
+    20.83s  agent 발화 끝
+    21.57s  user  발화 시작: Well, I moved here from Busan a year ago, and it’s hard maki
+    28.94s  user  발화 끝
+    29.15s  agent 발화 시작: It absolutely makes sense you’d miss your friends from Busan
+    37.91s  agent 발화 끝

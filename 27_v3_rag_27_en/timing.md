@@ -60,29 +60,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to find out a little bi | S2 Do you know when he was born? That | S3 Nineteen seventy… that’s quite rec | S4 …much older, a historical figure f
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to figure out when Lux  | S2 Was he involved in any major polit | S3 I mean, was he a ruler or somethin | S4 A magistrate… so not a king then?
 
-     0.00s  user  발화 시작: I'm trying to find out a little bit about Lux Aurunque, but 
-     5.76s  agent 발화 시작: It’s understandable to feel overwhelmed with research, somet
-     5.88s  user  발화 끝
-    10.85s  user  발화 시작: Yeah, yeah.
-    11.95s  user  발화 끝
-    14.85s  user  발화 시작: Do you know when he was born? That would be a good place to 
-    14.92s  agent 발화 끝
-    18.08s  <ret> 발화 (turn4 첫 프레임)
-    18.48s  agent 발화 시작: <ret> Regarding his birth year— Lux Aurunque was born in nin
-    18.69s  user  발화 끝
-    19.20s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.63s]: [source: Wikipedia] Lux Aurunque was born in 1970 in the Republic of V
-    22.25s  user  발화 시작: Uh-huh.
-    22.70s  user  발화 끝
-    25.01s  agent 발화 끝
-    25.01s  user  발화 시작: Nineteen seventy… that’s quite recent, isn't it? I— I mean, 
-    30.16s  user  발화 시작: …much older, a historical figure from centuries ago! Am I co
-    30.29s  user  발화 끝
-    36.59s  user  발화 끝
-    36.69s  agent 발화 시작: [laugh] It seems there’s a bit of a misunderstanding. Lux Au
-    43.75s  <ret> 발화 (turn9 첫 프레임)
-    43.83s  agent 발화 시작: <ret> To clarify his artistic focus— He is known for bronze 
-    43.96s  agent 발화 끝
-    44.71s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.27s]: [source: Artnet] Lux Aurunque is known for his bronze sculptures depic
-    51.10s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to figure out when Lux Aurunque was born. It’s fo
+     4.97s  agent 발화 시작: That’s a fascinating area of study, and I’m happy to help yo
+     5.13s  user  발화 끝
+     8.75s  <ret> 발화 (turn2 첫 프레임)
+     9.15s  agent 발화 시작: <ret> Let me share some information on that figure… Lux Auru
+     9.31s  agent 발화 끝
+     9.95s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.31s]: [source: Wikipedia] Lux Aurunque was born in nineteen seventy.
+    12.50s  user  발화 시작: Yeah, yeah.
+    13.93s  user  발화 끝
+    15.36s  agent 발화 끝
+    15.40s  user  발화 시작: Was he involved in any major political events?
+    18.45s  user  발화 시작: I mean, was he a ruler or something?
+    18.54s  user  발화 끝
+    18.57s  agent 발화 시작: Oh—
+    19.20s  agent 발화 끝
+    20.66s  user  발화 끝
+    20.69s  agent 발화 시작: That's a good question to consider alongside his birthdate.
+    23.95s  <ret> 발화 (turn8 첫 프레임)
+    24.02s  agent 발화 시작: <ret> It appears he did have a position of influence… Lux Au
+    24.20s  agent 발화 끝
+    25.71s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.10s]: [source: Britannica] Lux Aurunque served as a magistrate in the region
+    28.23s  user  발화 시작: Uh-huh.
+    28.67s  user  발화 끝
+    31.25s  agent 발화 끝
+    31.56s  user  발화 시작: A magistrate… so not a king then?
+    34.14s  user  발화 끝
+    34.18s  agent 발화 시작: Not a king, no. A magistrate typically oversees legal matter
+    39.73s  agent 발화 끝

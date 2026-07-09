@@ -59,27 +59,29 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you. I un
-     5.59s  user  발화 시작: Yeah.
-     6.22s  user  발화 끝
-     7.21s  user  발화 시작: Yeah, that’s right. I'm trying to plan a birthday dinner, an
-     7.28s  agent 발화 끝
-    11.99s  <ret> 발화 (turn3 첫 프레임)
-    12.04s  agent 발화 시작: <ret> A birthday dinner—excellent! I recall you mentioned pl
-    12.16s  user  발화 끝
-    13.19s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.76s]: [2026-01-20] Past chat — Planning a birthday dinner: party of six; loo
-    16.66s  agent 발화 시작: You were hoping for a party of six with outdoor seating, is 
-    16.80s  agent 발화 끝
-    20.51s  user  발화 시작: Mm-hmm.
-    20.96s  user  발화 끝
-    21.85s  user  발화 시작: Yes, exactly. And it needs to be gluten-free, since a couple
-    22.22s  agent 발화 끝
-    27.19s  <ret> 발화 (turn7 첫 프레임)
-    27.34s  agent 발화 시작: <ret> Gluten-free, of course. I remember you mentioned dieta
-    27.46s  user  발화 끝
-    28.87s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.35s]: [2026-02-26] User is gluten-free.
-    31.54s  agent 발화 시작: It’s wonderful you’re being mindful of everyone’s needs. Are
-    31.69s  agent 발화 끝
-    37.98s  agent 발화 끝
-    38.00s  user  발화 시작: I— I mean, sushi would be amazing, if we can find a place.
-    42.17s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I un
+     6.00s  user  발화 시작: Yeah.
+     6.63s  user  발화 끝
+     7.75s  user  발화 시작: Yeah, a bit. I’m trying to plan a trip, but I’m completely o
+     7.88s  agent 발화 끝
+    12.80s  <ret> 발화 (turn3 첫 프레임)
+    12.88s  agent 발화 시작: <ret> That’s very common, especially when facing a blank sla
+    12.94s  user  발화 끝
+    14.00s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.47s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    18.15s  agent 발화 시작: You’re planning a trip to Kyoto in March, is that right? Per
+    18.35s  agent 발화 끝
+    22.35s  user  발화 시작: Mm-hmm.
+    22.85s  user  발화 끝
+    24.13s  agent 발화 끝
+    25.75s  user  발화 시작: Yes, Kyoto! I remember mentioning it. But I’m not sure where
+    31.78s  user  발화 끝
+    31.84s  agent 발화 시작: Wonderful. It's good to have a destination in mind. I'm sens
+    39.12s  agent 발화 끝
+    39.17s  user  발화 시작: I— I mean, yes, a little. I also need to book a dentist appo
+    43.55s  <ret> 발화 (turn9 첫 프레임)
+    43.78s  agent 발화 시작: <ret> Okay, let’s tackle both. Regarding the dentist, do you
+    43.94s  user  발화 끝
+    44.99s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.26s]: [2026-07-12] Past chat — Booked a dentist appointment: asked for an ea
+    50.87s  agent 발화 시작: You previously expressed a preference for Dr. Han and an ear
+    51.03s  agent 발화 끝
+    58.20s  agent 발화 끝

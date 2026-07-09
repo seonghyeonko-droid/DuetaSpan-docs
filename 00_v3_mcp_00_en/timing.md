@@ -63,81 +63,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 That sounds pretty good. | S3 …with a good breakfast included? | S4 Wonderful! That's everything sorte
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Do you think I should pre-book tic | S3 Wonderful! That’s a huge weight of | S4 Hmm, peaceful sounds good. I’ve ha
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.17s  <ret> 발화 (turn1 첫 프레임)
-     3.40s  agent 발화 시작: <ret> Certainly, I can look that up for you— The Eiffel Towe
-     3.50s  user  발화 끝
-     4.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.11s]: (tool result) lat: 48.8584, lon: 2.2945, name: Eiffel Tower, city: Par
-    10.92s  user  발화 시작: Yeah.
-    11.42s  user  발화 끝
-    13.88s  agent 발화 끝
-    14.00s  user  발화 시작: Okay, great. And what about the Colosseum in Rome?
-    17.01s  <ret> 발화 (turn4 첫 프레임)
-    17.41s  user  발화 끝
-    17.41s  agent 발화 시작: <ret> Let me find those for you right away— The Colosseum is
-    19.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.29s]: (tool result) lat: 41.8902, lon: 12.4922, name: Colosseum, city: Rome
-    24.67s  user  발화 시작: Yeah, totally.
-    25.96s  user  발화 끝
-    27.97s  user  발화 시작: Hmm, that’s useful. I’m planning a trip.
-    28.12s  agent 발화 끝
-    31.05s  agent 발화 시작: That sounds exciting! Planning is a big part of enjoying a t
-    31.12s  user  발화 끝
-    39.12s  agent 발화 끝
-    39.41s  user  발화 시작: Yeah, it is. I’m thinking of going to both cities. Could you
-    47.58s  <ret> 발화 (turn9 첫 프레임)
-    47.71s  user  발화 끝
-    47.73s  agent 발화 시작: <ret> Of course, let’s check flights for that date— There’s 
-    49.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.34s]: (tool result) departs: 2024-10-20T08:00, arrives: 2024-10-20T10:00, ai
-    59.83s  agent 발화 끝
-    60.40s  user  발화 시작: That sounds pretty good.
-    62.15s  user  발화 끝
-    62.36s  agent 발화 시작: It's always good to find a convenient and reasonably priced 
-    65.06s  user  발화 시작: Okay.
-    65.87s  user  발화 끝
-    70.57s  agent 발화 끝
-    71.19s  user  발화 시작: Definitely. Can you book that flight for me, then?
-    74.19s  <ret> 발화 (turn14 첫 프레임)
-    74.27s  agent 발화 시작: <ret> Absolutely, I can book that for you— Your flight is co
-    74.34s  user  발화 끝
-    75.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.12s]: (tool result) booking_id: AF12345, status: confirmed, departs: 2024-10
-    85.86s  agent 발화 끝
-    88.17s  user  발화 시작: Perfect! Now, about hotels in Rome… I— I mean, are there any
-    95.94s  agent 발화 시작: Oh, you're looking for hotels—
-    95.95s  user  발화 끝
-    97.07s  user  발화 시작: …with a good breakfast included?
-    97.83s  agent 발화 끝
-    99.38s  user  발화 끝
-    99.55s  agent 발화 시작: A good breakfast is essential, especially before a day of si
-   105.86s  <ret> 발화 (turn19 첫 프레임)
-   105.92s  agent 발화 시작: <ret> Hotel Artemide is point eight kilometers away, include
-   105.95s  agent 발화 끝
-   107.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.22s]: (tool result) hotel: Hotel Artemide, distance: 0.8km, breakfast: inclu
-   113.15s  agent 발화 끝
-   114.46s  user  발화 시작: Two hundred dollars is a little high. Anything cheaper?
-   117.78s  agent 발화 시작: Let’s explore some more affordable options, then—
-   117.93s  user  발화 끝
-   120.79s  <ret> 발화 (turn22 첫 프레임)
-   121.19s  agent 발화 시작: <ret> Hotel Colosseum is point five kilometers away, breakfa
-   121.30s  agent 발화 끝
-   122.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) hotel: Hotel Colosseum, distance: 0.5km, breakfast: opti
-   128.96s  user  발화 시작: That sounds much better. Can we book a room there for, let's
-   128.97s  agent 발화 끝
-   135.82s  <ret> 발화 (turn24 첫 프레임)
-   136.06s  agent 발화 시작: <ret> Certainly, let’s get that booked— Your reservation at 
-   136.19s  user  발화 끝
-   136.78s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.63s]: (tool result) reservation_id: HC67890, hotel: Hotel Colosseum, nights:
-   148.16s  agent 발화 끝
-   149.22s  user  발화 시작: Wonderful! That's everything sorted, I think.
-   152.73s  user  발화 끝
-   153.14s  agent 발화 시작: That’s fantastic! You’ve successfully planned the travel and
-   161.57s  agent 발화 끝
-   161.60s  user  발화 시작: I feel much more relaxed now, actually.
-   164.28s  user  발화 끝
-   164.51s  agent 발화 시작: That's the best outcome! A little planning can really ease a
-   173.56s  user  발화 시작: You’ve been a great help.
-   173.91s  agent 발화 끝
-   175.02s  user  발화 끝
-   175.03s  agent 발화 시작: It’s my pleasure! Remember, building strong connections and 
-   185.55s  agent 발화 끝
+     3.80s  <ret> 발화 (turn1 첫 프레임)
+     4.03s  agent 발화 시작: <ret> The Eiffel Tower’s coordinates are latitude 48.8584 an
+     4.16s  user  발화 끝
+     4.92s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.58s]: (tool result) 48.8584, 2.2945
+    12.13s  user  발화 시작: Okay, great. And what’s the quickest route from there to the
+    12.25s  agent 발화 끝
+    17.09s  <ret> 발화 (turn3 첫 프레임)
+    17.48s  agent 발화 시작: <ret> It’s 3.1 kilometers to the Louvre, about a twelve-minu
+    17.73s  user  발화 끝
+    19.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: (tool result) Distance: 3.1 km; Estimated time: 12 mins; Mode: walking
+    20.96s  user  발화 시작: Right.
+    21.45s  user  발화 끝
+    22.53s  user  발화 시작: Hmm, walking is nice, but is public transport faster?
+    22.57s  agent 발화 끝
+    26.64s  <ret> 발화 (turn6 첫 프레임)
+    26.95s  agent 발화 시작: <ret> Bus line 42 takes fifteen minutes and costs two euros.
+    27.12s  user  발화 끝
+    28.00s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.71s]: (tool result) Bus line 42; Duration: 15 mins; Cost: 2.00 EUR
+    31.48s  user  발화 시작: That’s not much faster. [sigh] I think I’ll stick with walki
+    31.58s  agent 발화 끝
+    36.39s  user  발화 끝
+    36.52s  agent 발화 시작: Walking is a lovely way to see a city, it really is.
+    37.76s  user  발화 시작: Okay.
+    38.39s  user  발화 끝
+    40.43s  user  발화 시작: Do you think I should pre-book tickets for the Louvre? It’s 
+    40.45s  agent 발화 끝
+    44.44s  agent 발화 시작: Absolutely. The Louvre can get very crowded, pre-booking is 
+    44.50s  user  발화 끝
+    49.09s  user  발화 시작: Okay, can you check availability for tomorrow afternoon, say
+    49.25s  agent 발화 끝
+    53.83s  <ret> 발화 (turn13 첫 프레임)
+    54.14s  user  발화 끝
+    54.15s  agent 발화 시작: <ret> There are slots at 2 pm, 2:30 pm, and 3 pm tomorrow, c
+    54.95s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.37s]: (tool result) Available slots: 14:00, 14:30, 15:00; Price: 17.00 EUR
+    61.38s  agent 발화 끝
+    63.73s  user  발화 시작: 2:30 pm sounds perfect. Can you book that for me?
+    67.31s  <ret> 발화 (turn15 첫 프레임)
+    67.47s  agent 발화 시작: <ret> Your ticket is booked for 2:30 pm tomorrow, reference 
+    67.57s  user  발화 끝
+    68.59s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.54s]: (tool result) Booking confirmed;
+    73.83s  user  발화 시작: Wonderful! That’s a huge weight off my mind.
+    73.96s  agent 발화 끝
+    76.79s  <ret> 발화 (turn17 첫 프레임)
+    76.95s  agent 발화 시작: <ret> I’m glad I could help with that. It’s always nice to h
+    77.16s  user  발화 끝
+    78.55s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.35s]: LXV8492; Time: 14:30, 2024-05-03; Cost: 17.00 EUR
+    80.67s  user  발화 시작: …Actually, now I’m wondering, are there any good cafes near 
+    81.30s  agent 발화 끝
+    84.93s  user  발화 끝
+    85.16s  agent 발화 시작: Oh, yes! There are several lovely cafes nearby.
+    89.51s  agent 발화 끝
+    89.54s  user  발화 시작: What kind of vibe are you thinking? Something quiet to read 
+    95.00s  user  발화 끝
+    95.13s  agent 발화 시작: That depends on what you prefer, of course. Do you want some
+   100.13s  user  발화 시작: Hmm, peaceful sounds good. I’ve had a lot of noise today.
+   100.27s  agent 발화 끝
+   104.10s  agent 발화 시작: Then I’d recommend "Cafe Verlet". It's a classic Parisian ca
+   104.19s  user  발화 끝
+   106.23s  user  발화 시작: Yeah.
+   106.67s  user  발화 끝
+   109.64s  agent 발화 시작: —known for its quiet atmosphere and delicious pastries. It’s
+   109.65s  agent 발화 끝
+   116.04s  user  발화 시작: Oh, that sounds perfect. How far is that from the Louvre?
+   116.17s  agent 발화 끝
+   119.38s  <ret> 발화 (turn27 첫 프레임)
+   119.62s  agent 발화 시작: <ret> Cafe Verlet is 650 meters from the Louvre, about an ei
+   119.79s  user  발화 끝
+   121.14s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.57s]: (tool result) Distance: 650m; Walking time: 8 mins
+   124.98s  agent 발화 끝
+   125.55s  user  발화 시작: Excellent. You’ve been a lifesaver, Nellara!
+   128.64s  user  발화 끝
+   128.80s  agent 발화 시작: [happy] You’re very welcome! I’m happy to help you plan a wo
+   133.52s  agent 발화 끝

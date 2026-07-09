@@ -55,133 +55,133 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 The art museum sounds interesting. | S3 What’s their phone number? | S4 Perfect. Book a table for three at
+# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 FlixBus sounds better. Book that o | S3 Is there anything faster, even wit | S4 Actually— I think I’d rather take 
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     3.63s  <ret> 발화 (turn1 첫 프레임)
-     4.02s  agent 발화 시작: <ret> Certainly, let’s find some options for that journey. G
-     4.21s  user  발화 끝
-     5.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: (tool result) bus_options: [ {company: "Greyhound", departure_time: "0
-    10.80s  user  발화 시작: Yeah.
-    11.24s  user  발화 끝
-    20.40s  user  발화 시작: That Megabus one sounds good. Book it for me.
-    20.44s  agent 발화 끝
-    24.05s  user  발화 끝
-    24.06s  <ret> 발화 (turn4 첫 프레임)
-    24.29s  agent 발화 시작: <ret> Very well, I can proceed with that reservation. Your M
-    26.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.51s]: (tool result) booking_confirmation: {confirmation_number: "MB78945", p
-    38.34s  user  발화 시작: Can you send me a reminder the day before?
-    38.40s  agent 발화 끝
-    40.77s  <ret> 발화 (turn6 첫 프레임)
-    40.93s  agent 발화 시작: <ret> Absolutely, I can set a reminder for you. A reminder i
-    41.11s  user  발화 끝
-    42.37s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.97s]: (tool result) reminder_set: {reminder_id: "RM1234", reminder_time: "20
-    53.82s  agent 발화 끝
-    54.40s  user  발화 시작: What’s the weather like in Denver on May tenth?
-    56.69s  <ret> 발화 (turn8 첫 프레임)
-    56.98s  user  발화 끝
-    57.09s  agent 발화 시작: <ret> Let me check the forecast for that day. The forecast f
-    57.19s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.27s]: (tool result) weather_forecast: {city: "Denver", date: "2024-05-10", t
-    64.49s  user  발화 시작: Yeah.
-    65.16s  user  발화 끝
-    68.55s  agent 발화 끝
-    71.07s  user  발화 시작: That sounds pleasant. Is there anything good to see near the
-    75.30s  <ret> 발화 (turn11 첫 프레임)
-    75.66s  user  발화 끝
-    75.69s  agent 발화 시작: <ret> Denver has a lot to offer visitors. The Denver Art Mus
-    76.98s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.15s]: (tool result) nearby_attractions: [ {name: "Denver Art Museum", distan
-    87.84s  agent 발화 끝
-    88.08s  user  발화 시작: The art museum sounds interesting.
-    89.97s  agent 발화 시작: It’s a wonderful museum with diverse collections. [happy] I 
-    90.16s  user  발화 끝
-    97.20s  agent 발화 끝
-    98.44s  user  발화 시작: What are its opening hours on May tenth?
-   100.42s  <ret> 발화 (turn15 첫 프레임)
-   100.82s  agent 발화 시작: <ret> Let’s check those opening hours for you. The Denver Ar
-   100.97s  user  발화 끝
-   101.38s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.71s]: (tool result) museum_hours: {name: "Denver Art Museum", date: "2024-05
-   109.35s  agent 발화 끝
-   109.59s  user  발화 시작: Could you add a reminder to my phone to leave for the bus st
-   114.59s  <ret> 발화 (turn17 첫 프레임)
-   114.59s  user  발화 끝
-   114.83s  agent 발화 시작: <ret> Of course, I can add that to your reminders. A reminde
-   116.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.37s]: (tool result) reminder_set: {reminder_id: "RM5678", reminder_time: "20
-   124.75s  user  발화 시작: Okay.
-   125.52s  user  발화 끝
-   127.95s  agent 발화 끝
-   128.08s  user  발화 시작: Is there a good coffee shop near the museum?
-   130.85s  <ret> 발화 (turn20 첫 프레임)
-   130.93s  agent 발화 시작: <ret> Denver has many excellent coffee shops. Little Owl Cof
-   131.00s  user  발화 끝
-   132.61s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.82s]: (tool result) nearby_coffee_shops: [ {name: "Little Owl Coffee", dista
-   137.06s  user  발화 시작: Right.
-   137.84s  user  발화 끝
-   140.80s  agent 발화 끝
-   140.85s  user  발화 시작: Little Owl sounds good.
-   142.59s  agent 발화 시작: A popular spot, I’ve heard. I often recommend finding small 
-   142.60s  user  발화 끝
-   145.84s  user  발화 시작: Yeah.
-   146.47s  user  발화 끝
-   149.73s  agent 발화 끝
-   149.88s  user  발화 시작: What’s their phone number?
-   150.98s  <ret> 발화 (turn26 첫 프레임)
-   151.38s  agent 발화 시작: <ret> Let me find that number for you. Little Owl Coffee's p
-   151.40s  user  발화 끝
-   152.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.91s]: (tool result) business_details: {name: "Little Owl Coffee", phone_numb
-   155.02s  user  발화 시작: Yeah, totally.
-   156.12s  user  발화 끝
-   160.21s  user  발화 시작: Can you navigate me from the bus station to Little Owl Coffe
-   160.32s  agent 발화 끝
-   163.36s  <ret> 발화 (turn29 첫 프레임)
-   163.43s  agent 발화 시작: <ret> Certainly, I can provide directions. The route is poin
-   163.58s  user  발화 끝
-   163.86s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.26s]: (tool result) navigation_route: {start: "Denver Union Station", end: "
-   172.01s  agent 발화 끝
-   172.38s  user  발화 시작: Okay, great.
-   173.43s  user  발화 끝
-   173.50s  agent 발화 시작: I’m glad I could help with the planning. [curious] Are you t
-   176.77s  user  발화 시작: Yeah.
-   177.44s  user  발화 끝
-   178.55s  agent 발화 끝
-   178.88s  user  발화 시작: Pleasure, a visit with family. I— I mean, I'm going to see m
-   183.54s  <ret> 발화 (turn34 첫 프레임)
-   183.74s  user  발화 끝
-   183.78s  agent 발화 시작: <ret> That sounds lovely. Visiting family is always a specia
-   184.04s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.40s]: (no information found)
-   187.57s  user  발화 시작: Yeah.
-   188.21s  user  발화 끝
-   191.25s  agent 발화 끝
-   191.56s  user  발화 시작: Actually, can you check if my sister is free for dinner on M
-   196.96s  <ret> 발화 (turn37 첫 프레임)
-   197.07s  user  발화 끝
-   197.12s  agent 발화 시작: <ret> Let’s see if Sarah Miller is available. Sarah Miller i
-   198.48s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.18s]: (tool result) calendar_check: {name: "Sarah Miller", date: "2024-05-10
-   205.38s  user  발화 시작: Perfect. Book a table for three at a nice Italian restaurant
-   205.74s  agent 발화 끝
-   211.03s  <ret> 발화 (turn39 첫 프레임)
-   211.30s  user  발화 끝
-   211.43s  agent 발화 시작: <ret> I can certainly assist with that. A table for three is
-   211.53s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.78s]: (tool result) restaurant_booking: {restaurant_name: "Bella Notte", dat
-   221.93s  user  발화 시작: That sounds wonderful.
-   222.09s  agent 발화 끝
-   223.45s  user  발화 끝
-   223.63s  agent 발화 시작: It’s good to have those details settled. A little planning c
-   229.09s  agent 발화 끝
-   229.24s  user  발화 시작: Is there anything else I should consider before my trip?
-   232.47s  user  발화 끝
-   232.82s  agent 발화 시작: Thinking ahead is a good habit. Perhaps packing layers, as D
-   235.73s  user  발화 시작: Yeah, totally.
-   236.83s  user  발화 끝
-   239.34s  user  발화 시작: Good point. What’s the current time in Denver?
-   239.54s  agent 발화 끝
-   242.18s  <ret> 발화 (turn46 첫 프레임)
-   242.34s  agent 발화 시작: <ret> Let me check the current time there for you. It is cur
-   242.44s  user  발화 끝
-   244.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.71s]: (tool result) current_time: {city: "Denver", time: "14:35", timezone: 
-   244.74s  user  발화 시작: Okay.
-   245.51s  user  발화 끝
-   250.00s  user  발화 시작: Thank you, Oruus.
-   250.17s  agent 발화 끝
-   251.17s  agent 발화 시작: You're very welcome. I trust your trip will be both enjoyabl
-   251.23s  user  발화 끝
-   256.95s  agent 발화 끝
+     4.02s  <ret> 발화 (turn1 첫 프레임)
+     4.41s  agent 발화 시작: <ret> Greyhound offers a bus for one hundred fifty dollars, 
+     4.63s  user  발화 끝
+     6.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.28s]: (tool result) Buses_3_FindBus: departure_city=Chicago; arrival_city=De
+     8.03s  user  발화 시작: Yeah.
+     8.66s  user  발화 끝
+    13.31s  agent 발화 끝
+    13.32s  user  발화 시작: That Greyhound one sounds good. Can you book it?
+    16.01s  <ret> 발화 (turn4 첫 프레임)
+    16.05s  user  발화 끝
+    16.25s  agent 발화 시작: <ret> Your Greyhound bus is booked! The reference number is 
+    18.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) Buses_3_BookBus: bus_company=Greyhound; departure_city=C
+    23.52s  agent 발화 끝
+    23.53s  user  발화 시작: Great. What time does it depart?
+    26.02s  <ret> 발화 (turn6 첫 프레임)
+    26.18s  agent 발화 시작: <ret> The bus departs at eight in the morning on May tenth.
+    26.39s  user  발화 끝
+    27.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.42s]: (tool result) Buses_3_GetDepartureTime: booking_reference=AX789YZ; dep
+    29.51s  agent 발화 끝
+    29.98s  user  발화 시작: Eight AM… that's early.
+    32.24s  user  발화 끝
+    32.56s  agent 발화 시작: It is quite early, yes. Perhaps a later departure would be b
+    35.66s  user  발화 시작: Yeah.
+    36.29s  user  발화 끝
+    37.56s  agent 발화 끝
+    40.05s  user  발화 시작: Maybe. Are there any buses leaving Chicago to Denver on May 
+    44.43s  <ret> 발화 (turn11 첫 프레임)
+    44.49s  user  발화 끝
+    44.49s  agent 발화 시작: <ret> FlixBus has a bus for one hundred thirty-five dollars,
+    46.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: (tool result) Buses_3_FindBus: departure_city=Chicago; arrival_city=De
+    54.04s  agent 발화 끝
+    54.31s  user  발화 시작: FlixBus sounds better. Book that one.
+    56.64s  <ret> 발화 (turn13 첫 프레임)
+    57.04s  agent 발화 시작: <ret> Your FlixBus is booked. The booking reference is BW246
+    57.27s  user  발화 끝
+    58.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.39s]: (tool result) Buses_3_BookBus: bus_company=FlixBus; departure_city=Chi
+    63.11s  agent 발화 끝
+    64.39s  user  발화 시작: Perfect. What time does *that* one leave?
+    67.10s  <ret> 발화 (turn15 첫 프레임)
+    67.34s  agent 발화 시작: <ret> Let me retrieve that departure time for you. That bus 
+    67.49s  user  발화 끝
+    68.54s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.17s]: (tool result) Buses_3_GetDepartureTime: booking_reference=BW246RT; dep
+    74.48s  agent 발화 끝
+    74.65s  user  발화 시작: Two thirty… hmm, is there a direct train?
+    78.03s  user  발화 끝
+    78.45s  agent 발화 시작: A train might be a more comfortable option. Let’s explore th
+    81.62s  user  발화 시작: Mhm.
+    82.07s  user  발화 끝
+    83.03s  agent 발화 끝
+    83.03s  user  발화 시작: Yes, please. Direct train from Chicago to Denver.
+    87.07s  <ret> 발화 (turn20 첫 프레임)
+    87.15s  agent 발화 시작: <ret> Amtrak has a direct train for two hundred fifty dollar
+    87.19s  user  발화 끝
+    88.27s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.65s]: (tool result) Trains_1_FindTrain: departure_city=Chicago; arrival_city
+    92.89s  agent 발화 끝
+    93.09s  user  발화 시작: Twenty-seven hours! That’s longer than the bus.
+    96.20s  agent 발화 시작: It is a significantly longer journey by train, yes.
+    96.32s  user  발화 끝
+    98.49s  user  발화 시작: Right.
+    99.31s  user  발화 끝
+    99.62s  user  발화 시작: Is there anything faster, even with a connection?
+   100.08s  agent 발화 끝
+   102.39s  <ret> 발화 (turn25 첫 프레임)
+   102.79s  agent 발화 시작: <ret> There’s a connection in Kansas City, taking twenty-thr
+   102.81s  user  발화 끝
+   104.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.73s]: (tool result) Trains_1_FindTrain: departure_city=Chicago; arrival_city
+   105.73s  user  발화 시작: Yeah.
+   106.36s  user  발화 끝
+   109.16s  user  발화 시작: Okay, book the one with the connection.
+   109.33s  agent 발화 끝
+   111.00s  <ret> 발화 (turn28 첫 프레임)
+   111.16s  agent 발화 시작: <ret> Your train is booked! The reference number is CT593UV.
+   111.28s  user  발화 끝
+   113.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: (tool result) Trains_1_BookTrain: train_company=Amtrak; departure_city
+   114.62s  user  발화 시작: Yeah.
+   115.25s  user  발화 끝
+   117.41s  agent 발화 끝
+   117.90s  user  발화 시작: Wonderful. What time does the first leg leave?
+   120.91s  <ret> 발화 (turn31 첫 프레임)
+   121.22s  agent 발화 시작: <ret> The first leg departs at ten AM on May eleventh.
+   121.33s  user  발화 끝
+   122.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) Trains_1_GetDepartureTime: booking_reference=CT593UV; de
+   122.96s  user  발화 시작: Really?
+   123.78s  user  발화 끝
+   125.48s  agent 발화 끝
+   125.81s  user  발화 시작: And how long is the layover in Kansas City?
+   128.87s  <ret> 발화 (turn34 첫 프레임)
+   128.95s  agent 발화 시작: <ret> The layover in Kansas City is two hours and thirty min
+   128.96s  user  발화 끝
+   129.91s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.16s]: (tool result) Trains_1_GetLayoverDuration: booking_reference=CT593UV; 
+   132.11s  user  발화 시작: Yeah, yeah.
+   133.30s  agent 발화 끝
+   133.40s  user  발화 끝
+   133.63s  user  발화 시작: That’s manageable.
+   134.82s  user  발화 끝
+   134.97s  agent 발화 시작: I’m glad to hear that feels comfortable for you.
+   137.68s  user  발화 시작: Actually— I think I’d rather take the FlixBus after all.
+   138.02s  agent 발화 끝
+   140.79s  <ret> 발화 (turn39 첫 프레임)
+   140.92s  user  발화 끝
+   141.03s  agent 발화 시작: <ret> You’d prefer to switch back to the FlixBus? Your FlixB
+   142.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.54s]: (tool result) Buses_3_CancelBooking: booking_reference=BW246RT; cancel
+   151.47s  user  발화 시작: Can we rebook that one now?
+   151.64s  agent 발화 끝
+   153.30s  <ret> 발화 (turn41 첫 프레임)
+   153.38s  agent 발화 시작: <ret> Yes, absolutely— The FlixBus is rebooked. Your new ref
+   153.41s  user  발화 끝
+   153.80s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.47s]: (tool result) Buses_3_BookBus: bus_company=FlixBus; departure_city=Chi
+   156.09s  user  발화 시작: Yeah.
+   156.81s  user  발화 끝
+   161.40s  user  발화 시작: Excellent. So, to recap, FlixBus on May eleventh.
+   161.45s  agent 발화 끝
+   166.48s  user  발화 끝
+   166.50s  agent 발화 시작: That’s correct. FlixBus to Denver on May eleventh.
+   170.97s  user  발화 시작: And the departure time again?
+   170.99s  agent 발화 끝
+   172.42s  <ret> 발화 (turn46 첫 프레임)
+   172.49s  agent 발화 시작: <ret> Certainly. The FlixBus departs at two thirty PM.
+   172.68s  user  발화 끝
+   172.92s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.53s]: (tool result) Buses_3_GetDepartureTime: booking_reference=DX184WZ; dep
+   174.82s  user  발화 시작: Yeah.
+   175.45s  user  발화 끝
+   176.75s  agent 발화 끝
+   177.36s  user  발화 시작: Perfect. Thank you, Oruus.
+   179.06s  user  발화 끝
+   179.11s  agent 발화 시작: You’re very welcome. I'm glad I could help you arrange your 
+   183.64s  agent 발화 끝

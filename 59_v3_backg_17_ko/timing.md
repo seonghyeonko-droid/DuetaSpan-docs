@@ -59,17 +59,17 @@
 # }
 
 
-     0.00s  user  발화 시작: 혹시 건강한 사람의 평균 심박수가 어떻게 돼요?
-     3.06s  <ret> 발화 (turn1 첫 프레임)
-     3.22s  agent 발화 시작: <ret> 네, 건강한 분들의 심박수에 대해서 말씀드릴게요. 건강한 성인의 정상적인 심박수는 분당 육십 회에
-     3.47s  user  발화 끝
-     3.56s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.08s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     7.41s  user  발화 시작: 예.
-     7.86s  user  발화 끝
-    11.20s  user  발화 시작: 오늘 저녁은 삼겹살 먹으러 갈까?
-    11.42s  agent 발화 끝
-    13.77s  user  발화 끝
-    14.02s  agent 발화 시작: 일반적으로 안정 시 심박수는 분당 오십 회에서 구십 회 사이로도 볼 수 있습니다.
-    19.02s  agent 발화 끝
-    19.08s  user  발화 시작: 오십 회에서 구십 회요? 좀 낮은 것 같기도 하고…
-    22.44s  user  발화 끝
+     0.00s  user  발화 시작: 혹시 건강한 사람의 평균 심박수가 어떻게 돼요? 궁금해서요.
+     3.45s  <ret> 발화 (turn1 첫 프레임)
+     3.60s  agent 발화 시작: <ret> 심박수는 개인차가 좀 있지만, 일반적으로… 건강한 성인의 정상적인 심박수는 분당 육십 회에서 백 
+     3.84s  user  발화 끝
+     3.95s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.97s]: '[source: Mayo Clinic] A normal resting heart rate for adults ranges f
+     8.14s  user  발화 시작: 예.
+     8.54s  user  발화 끝
+    12.24s  user  발화 시작: 아, 그렇군요. 그런데 운동하는 사람은 좀 더 낮다고 들었는데, 맞아요?
+    12.51s  agent 발화 끝
+    17.12s  user  발화 시작: 아니, 오늘 저녁 메뉴는 뭘로 할까…
+    17.24s  user  발화 끝
+    20.21s  user  발화 끝
+    20.51s  agent 발화 시작: 네, 운동을 꾸준히 하시는 분들은 심박수가 더 낮게 유지되는 경우가 많습니다. 심장이 효율적으로 활동하거든요
+    28.85s  agent 발화 끝

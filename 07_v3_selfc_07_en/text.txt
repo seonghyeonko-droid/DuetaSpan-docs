@@ -67,43 +67,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on ⟨ret@3.22s⟩ June fifteenth.
-[  3.45s][moshi] Certainly, let’s ⟦⚡SPAN@4.42s: (tool result) visitScheduled: true; propertyName: The Grandview Lofts; date: 2024-06-15; time: 14:00; confirma⟧ get that scheduled for you at The Grandview Lofts.
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.54s⟩ fifteenth.
+[  3.77s][moshi] Certainly. Let's find ⟦⚡SPAN@5.06s: (tool result) Viewing scheduled; property: The Grandview Lofts, date: 2024-06-15, time: 14:00, agent: Sarah Ch⟧ a time that works for a viewing at The Grandview Lofts.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[  7.60s][moshi] Your viewing at The Grandview Lofts is confirmed for June fifteenth at two PM. Your confirmation number is GH7892.
-[ 17.34s][user ] That’s… uh, actually, make that June sixteenth.
-[ 20.58s][moshi] ⟨ret@20.42s⟩ No ⟦⚡SPAN@21.38s: (tool result) visitScheduled: true; propertyName: The Grandview Lofts; date: 2024-06-16; time: 10:00; confirma⟧ problem at all, let’s reschedule then.
+[  8.78s][moshi] I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM with Sarah Chen.
+[ 16.16s][user ] That’s good, but— uh, actually, make that June sixteenth.
+[ 20.20s][moshi] ⟨ret@20.04s⟩ No ⟦⚡SPAN@21.00s: (tool result) Viewing rescheduled; property: The Grandview Lofts, date: 2024-06-16, time: 10:00, agent: Sarah ⟧ problem at all. Let’s reschedule for June sixteenth then.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 23.91s][moshi] Okay, your viewing is now set for June sixteenth at ten AM. The new confirmation is JK3456.
-[ 33.93s][user ] Great. Is there parking available at the ⟨ret@36.91s⟩ complex?
-[ 37.15s][moshi] Let me check the ⟦⚡SPAN@38.91s: (tool result) propertyName: The Grandview Lofts; parkingAvailable: true; parkingDetails: Covered garage, visit⟧ property details for parking information.
-      CALL: {"function": "Homes_2_GetPropertyDetails", "arguments": {"propertyName": "The Grandview Lofts"}}
-[ 40.77s][moshi] Yes, The Grandview Lofts offers covered garage parking, though visitor spaces are limited.
-[ 46.97s][user ] Good to know. And is it a pet-friendly building?
-[ 50.59s][moshi] ⟨ret@50.19s⟩ Absolutely, pets ⟦⚡SPAN@52.19s: (tool result) propertyName: The Grandview Lofts; parkingAvailable: true; parkingDetails: Covered garage, visit⟧ are welcome at The Grandview Lofts.
-[ 54.87s][moshi] The property details confirm that The Grandview Lofts is a pet-friendly building.
-[ 61.49s][user ] Wonderful. Does it have a ⟨ret@63.42s⟩ gym?
-[ 63.82s][moshi] Yes, ⟦⚡SPAN@64.70s: (tool result) propertyName: The Grandview Lofts; parkingAvailable: true; parkingDetails: Covered garage, visit⟧ it does.
-[ 65.27s][moshi] The Grandview Lofts also has a gym available for residents.
-[ 67.53s][user ] «backchannel» Right.
-[ 69.43s][user ] That sounds perfect. I’m thinking of moving from out of state.
-[ 72.94s][moshi] That's a big step! Moving can be very exciting, but also a little overwhelming.
-[ 80.26s][user ] It is! I’m really hoping to find a good school district too.
-[ 84.51s][moshi] That’s a very important consideration when relocating. [curious] What age are your children?
-[ 90.96s][user ] My son is seven.
-[ 92.31s][moshi] ⟨ret@92.23s⟩ Okay, ⟦⚡SPAN@93.52s: (tool result) propertyAddress: The Grandview Lofts; schoolDistrict: Oakwood; elementarySchoolRating: 8/10; mid⟧ seven years old.
-      CALL: {"function": "Schools_2_GetSchoolDistrictInfo", "arguments": {"propertyAddress": "The Grandview Lofts", "childAge": "7"}}
-[ 94.89s][moshi] The Grandview Lofts is located in the Oakwood school district, with an elementary school rating of eight out of ten.
-[102.72s][user ] That sounds really good!
-[104.36s][moshi] I’m glad to hear that. Finding the right school is a huge relief.
-[106.29s][user ] «backchannel» Mm-hmm.
-[109.38s][user ] It is. Could you find me some information on the ⟨ret@112.58s⟩ neighborhood?
-[112.89s][moshi] Certainly, let’s ⟦⚡SPAN@114.42s: (tool result) propertyAddress: The Grandview Lofts; neighborhoodName: Westview; averageIncome: $85000; crimeRa⟧ explore the neighborhood surrounding The Grandview Lofts.
-      CALL: {"function": "Neighborhood_2_GetNeighborhoodInfo", "arguments": {"propertyAddress": "The Grandview Lofts"}}
-[117.67s][moshi] The Grandview Lofts is in Westview, a neighborhood with an average income of eighty-five thousand and a low crime rate.
-[121.11s][user ] «backchannel» Mhm.
-[126.61s][user ] That’s reassuring. Are there parks nearby?
-[130.07s][moshi] ⟨ret@130.00s⟩ Yes, there are ⟦⚡SPAN@132.00s: (tool result) propertyAddress: The Grandview Lofts; neighborhoodName: Westview; averageIncome: $85000; crimeRa⟧ three parks within close proximity.
-[134.08s][moshi] The neighborhood information indicates there are three parks nearby.
-[140.29s][user ] This is all incredibly helpful, thank you.
-[142.66s][moshi] You’re very welcome. It’s my pleasure to help you navigate this transition. Remember, taking things one step at a time is key.
+[ 24.82s][moshi] Wonderful! Your viewing is now set for June sixteenth at ten AM with Sarah Chen.
+[ 32.78s][user ] Is Sarah Chen the listing agent?
+[ 34.83s][moshi] Yes, Sarah Chen is the listing agent for The Grandview Lofts.
+[ 39.02s][user ] [laugh] That’s good to know. What’s the pet policy ⟨ret@41.98s⟩ there?
+[ 42.14s][moshi] Let me check the pet ⟦⚡SPAN@43.98s: (tool result) Pet policy: cats and dogs allowed, weight limit 50lbs, one-time fee $500.⟧ policy for The Grandview Lofts.
+      CALL: {"function": "Homes_2GetPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 45.51s][moshi] Cats and dogs are allowed, with a fifty-pound weight limit and a five hundred dollar one-time fee.
+[ 54.56s][user ] Fifty pounds…that works. How about parking? ⟨ret@58.36s⟩
+[ 58.52s][moshi] Let's see about the ⟦⚡SPAN@60.36s: (tool result) Parking: assigned spots, monthly fee $150, availability limited.⟧ parking situation at The Grandview Lofts.
+      CALL: {"function": "Homes_2GetParkingInfo", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 62.83s][moshi] Parking is assigned, with a monthly fee of one hundred and fifty dollars, but availability is limited.
+[ 66.83s][user ] «backchannel» Right.
+[ 70.14s][user ] Hmm, limited availability is a bit concerning. Is there public transport ⟨ret@75.26s⟩ nearby?
+[ 75.50s][moshi] Absolutely, let me ⟦⚡SPAN@77.26s: (tool result) Nearby transit: bus line 27 (2 min walk), subway station Elm Street (15 min walk).⟧ check the public transport options near The Grandview Lofts.
+      CALL: {"function": "Navigation_2GetNearbyTransit", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 81.51s][moshi] There’s a bus line, number twenty-seven, a two-minute walk away, and the Elm Street subway is fifteen minutes.
+[ 88.95s][user ] That bus line sounds convenient. Is there a grocery store within walking distance too?
+[ 95.42s][moshi] ⟨ret@95.18s⟩ Let's find out about ⟦⚡SPAN@97.10s: (tool result) Grocery stores: Fresh Foods Market (5 min walk), City Grocer (10 min walk).⟧ grocery stores close to The Grandview Lofts.
+      CALL: {"function": "Navigation_2GetNearbyPOIs", "arguments": {"propertyName": "The Grandview Lofts", "poiType": "grocery store"}}
+[ 99.76s][moshi] Fresh Foods Market is a five-minute walk, and City Grocer is ten minutes away.
+[106.81s][user ] Perfect. This is all really helpful, actually.
+[109.96s][moshi] [happy] I'm so glad I could help! It sounds like The Grandview Lofts might be a good fit.
+[115.78s][user ] I think so too. Do you think I should bring anything to the viewing?
+[119.33s][moshi] That’s a thoughtful question. Bringing a list of questions is always a good idea.
+[122.75s][user ] «backchannel» Uh-huh.
+[125.55s][user ] Good point. I'll make one. Thanks, Tellar.
+[128.19s][moshi] You're very welcome. I’m here if anything else comes to mind before your viewing.
+[132.27s][user ] «backchannel» Yeah.
+[133.87s][user ] I appreciate it. I think I'm all set for now.
+[136.86s][moshi] Excellent. Wishing you a productive viewing on June sixteenth!

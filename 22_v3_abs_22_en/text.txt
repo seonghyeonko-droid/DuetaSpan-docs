@@ -65,16 +65,19 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What mode of government does the anarchists hate?
-[  2.48s][moshi] ⟨ret@2.32s⟩ That’s a really interesting ⟦⚡SPAN@4.32s: (no information found)⟧ question, and one I’ve not encountered a direct answer for. It seems anarchists fundamentally oppose all hierarchical rule.
-[  7.25s][user ] «backchannel» Uh-huh.
-[ 10.80s][user ] Right, but is there one they *particularly* dislike? Like, ⟨ret@15.13s⟩ historically?
-[ 15.28s][moshi] Historically, anarchists ⟦⚡SPAN@16.33s: [source: Wikipedia] Anarchists oppose the state as a form of hierarchical control and domination, believing it⟧ have focused their opposition… Anarchists oppose the state, believing it is inherently oppressive and a form of hierarchical control.
-[ 24.18s][user ] Okay. So, if someone wanted to avoid conflict with anarchists, what kind of political system should they…
-[ 31.27s][moshi] That’s a thoughtful consideration. Avoiding conflict depends greatly on the specific anarchist group, as views vary.
-[ 38.17s][user ] Mm-hmm.
-[ 38.87s][moshi] «interrupted» Some groups focus on direct action, while others prioritize community building and mutual aid—
-[ 43.45s][user ] «interrupts_prev» But are there places now where anarchists actually *run* things, even ⟨ret@47.46s⟩ small towns?
-[ 47.86s][moshi] That's a fascinating ⟦⚡SPAN@49.46s: [source: CrimethInc.] Rojava, in northern Syria, operates on principles of democratic confederalism, incorpora⟧ question! There aren't any fully anarchist-governed nations currently, but there are examples of autonomous zones.
-[ 54.75s][moshi] Rojava in Syria operates on democratic confederalism, incorporating anarchist ideas of self-governance.
-[ 61.72s][user ] Democratic confederalism… interesting. Is that stable, though?
-[ 66.08s][moshi] It’s faced significant challenges, including ongoing conflict and external pressures, but it remains a compelling experiment.
+[  2.82s][moshi] ⟨ret@2.67s⟩ That's a fascinating question! ⟦⚡SPAN@4.67s: (no information found)⟧ Unfortunately, I haven't been able to find a definitive answer to that specific query.
+[  6.74s][user ] «backchannel» Uh-huh.
+[  9.73s][user ] Hmm, okay. Well, what *do* anarchists generally advocate ⟨ret@13.93s⟩ for?
+[ 14.17s][moshi] Anarchists ⟦⚡SPAN@14.97s: [source: Wikipedia] Anarchism is a political philosophy that advocates for self-governed societies based on vo⟧ generally advocate for self-governed societies and voluntary institutions, rather than a centralized government.
+[ 21.99s][user ] Right, so no government at all, essentially. Do they have any historical examples of that ⟨ret@26.92s⟩ working?
+[ 27.24s][moshi] Yes, the anarchist ⟦⚡SPAN@28.76s: [source: Britannica] The anarchist commune of Shinmin in Manchuria existed from 1929 to 1930.⟧ commune of Shinmin existed in Manchuria from nineteen twenty-nine to nineteen thirty.
+[ 33.38s][user ] That’s interesting— a whole commune! But surely that was small?
+[ 37.81s][moshi] «interrupted» It was a relatively small-scale experiment, yes. Though, as a travel advisor, I often see how communities can flourish in unique ways—
+[ 45.70s][user ] «interrupts_prev» Actually, speaking of travel, I’m thinking of a trip to Spain.
+[ 48.94s][moshi] –but it’s a compelling example of— Oh, Spain! Wonderful choice. What part of Spain are you considering?
+[ 54.28s][user ] Barcelona, I think. Is it a good place to visit for someone interested in… alternative political ⟨ret@60.87s⟩ ideas?
+[ 61.03s][moshi] Barcelona does have a ⟦⚡SPAN@62.87s: [source: Lonely Planet] Barcelona has a strong history of anarchist and socialist movements.⟧ strong history of anarchist and socialist movements, making it a fascinating destination.
+[ 67.24s][user ] That sounds perfect! Are there any specific places I should see related to that history?
+[ 72.65s][moshi] ⟨ret@72.57s⟩ Plaça Revolució de ⟦⚡SPAN@74.57s: (tool result) Plaça Revolució de Setembre de 1868; Ateneu Anarquista de Sant Andreu; Carrer Tallers.⟧ Setembre de 1868, Ateneu Anarquista de Sant Andreu, and Carrer Tallers are places to explore.
+[ 81.94s][user ] Wow, that’s really helpful, thank you!
+[ 84.13s][moshi] You're very welcome! I’m glad I could assist in planning a trip with a bit of historical and political depth. It sounds like a truly enriching experience.

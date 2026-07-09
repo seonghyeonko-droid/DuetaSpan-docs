@@ -58,51 +58,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 나 그거 만들어 줘. Apple 웹사이트 제품 중심으로 자세한 | S2 음, 생각보다 좀 비싸네. | S3 됐어, 가격은 잠시 잊어. Fifth Avenue Apple  | S4 완벽해! 고마워, 코랄.
+# EXAMINER(FDB-v2) 단계: S1 Apple 웹사이트 제품 중심으로 자세한 지도 만들어 줘. | S2 …그거 리퍼비시 제품 섹션 포함이야? 세일하는 거 찾아보려고. | S3 리퍼비시 MacBook Pro에 관심 있어. 재고 확인해 줄  | S4 좋네. 다음 주에 다시 확인해 달라고 알림 설정해 줄 수 있어
 
-     0.00s  user  발화 시작: 나 그거 만들어 줘. Apple 웹사이트 제품 중심으로 자세한 지도 말이야.
-     4.32s  <ret> 발화 (turn1 첫 프레임)
-     4.48s  agent 발화 시작: <ret> 네, Apple의 제품 페이지를 강조하는 사이트 맵을 만들어 드릴 수 있어요.
-     4.62s  user  발화 끝
-     6.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) url:https://www.apple.com; depth:3; pages:['iPhone','iPa
-     8.89s  agent 발화 시작: 여기 iPhone, iPad, Mac, 그리고 다른 제품 섹션들이 Apple 사이트에 어떻게 표시되는지 보여
-     8.97s  agent 발화 끝
-    16.35s  agent 발화 끝
-    17.86s  user  발화 시작: 좋네. 그런데 최신 iPhone 15 Pro Max, 256 기가바이트짜리 가격 좀 찾아줘.
-    22.55s  <ret> 발화 (turn4 첫 프레임)
-    22.95s  agent 발화 시작: <ret> 네, 그 모델의 현재 가격을 확인해 볼게요.
-    23.04s  user  발화 끝
-    24.47s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.26s]: (tool result) model:iPhone 15 Pro Max; storage:256GB; price:1199.00; c
-    25.21s  agent 발화 끝
-    25.24s  agent 발화 시작: iPhone 15 Pro Max, 256 기가바이트는 현재 천백구십구 달러예요.
-    27.10s  user  발화 시작: 우와.
-    27.83s  user  발화 끝
-    29.91s  agent 발화 끝
-    30.27s  user  발화 시작: 음, 생각보다 좀 비싸네.
-    31.89s  agent 발화 시작: 그건 프리미엄 기기이고—
-    32.07s  user  발화 끝
-    33.06s  user  발화 시작: 됐어, 가격은 잠시 잊어. Fifth Avenue Apple Store에서 당일 수령 가능한지 확인해 봐.
-    33.64s  agent 발화 끝
-    37.72s  <ret> 발화 (turn10 첫 프레임)
-    37.88s  agent 발화 시작: <ret> 네, 물론이죠. 그 매장의 재고를 확인해 볼게요.
-    37.96s  user  발화 끝
-    38.84s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.00s]: (tool result) model:iPhone 15 Pro Max; storage:256GB; location:Fifth A
-    40.80s  agent 발화 시작: iPhone 15 Pro Max, 256 기가바이트는 Fifth Avenue 매장에서 당일 수령 가능해요.
-    40.88s  agent 발화 끝
-    43.12s  user  발화 시작: 응.
-    43.33s  user  발화 끝
-    47.19s  agent 발화 시작: 지금 바로 그걸 예약해 드릴까요?
-    47.24s  agent 발화 끝
-    48.48s  user  발화 시작: 응, 해 줘. Eleanor Vance 이름으로 예약해.
-    48.80s  agent 발화 끝
-    51.16s  <ret> 발화 (turn15 첫 프레임)
-    51.30s  agent 발화 시작: <ret> 네, Eleanor Vance님을 위해 Fifth Avenue 매장에서 iPhone 15 Pro 
-    51.52s  user  발화 끝
-    52.27s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.75s]: (tool result) reservation_id:789456123; model:iPhone 15 Pro Max; stora
-    57.00s  agent 발화 시작: Eleanor Vance님으로 iPhone 15 Pro Max가 예약되었고, 3월 8일 6시까지 수령 가능해
-    57.05s  agent 발화 끝
-    62.98s  agent 발화 끝
-    63.84s  user  발화 시작: 완벽해! 고마워, 코랄.
-    65.95s  agent 발화 시작: Eleanor님, 천만에요. 오늘 더 도와드릴 일이 있을까요?
-    66.15s  user  발화 끝
-    69.60s  agent 발화 끝
+     0.00s  user  발화 시작: Apple 웹사이트 제품 중심으로 자세한 지도 만들어 줘.
+     2.79s  <ret> 발화 (turn1 첫 프레임)
+     2.95s  agent 발화 시작: <ret> 네, Apple 웹사이트의 지도 생성해서 제품 페이지들 모두 강조해 드릴게요.
+     3.14s  user  발화 끝
+     4.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) map_id: 789234; url: https://www.apple.com; pages_found:
+     7.44s  agent 발화 끝
+     7.57s  agent 발화 시작: Apple 웹사이트 지도를 만들었는데, 총 사십두 페이지를 확인했고, 그중 스물여덟 페이지가 제품 관련 페이
+    10.43s  user  발화 시작: 어어.
+    10.96s  user  발화 끝
+    14.34s  agent 발화 끝
+    14.62s  user  발화 시작: 스물여덟 개? 그거 좀… 적은 것 같은데. 제대로 다 찾은 거 맞아?
+    18.46s  <ret> 발화 (turn5 첫 프레임)
+    18.86s  agent 발화 시작: <ret> 좀 더 깊이 들어가거나 동적으로 로딩되는 제품 페이지가 있을 수도 있어요. 검색 깊이를 늘려서 다
+    18.97s  user  발화 끝
+    19.82s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.39s]: (tool result) map_id: 789235; url: https://www.apple.com; pages_found:
+    25.20s  agent 발화 시작: 네, 깊이를 다섯까지 늘리니까 총 육십오 페이지가 나왔고, 그중 서른다섯 페이지가 제품 관련 페이지였어요—
+    25.24s  agent 발화 끝
+    30.50s  user  발화 시작: …그거 리퍼비시 제품 섹션 포함이야? 세일하는 거 찾아보려고.
+    31.08s  agent 발화 끝
+    33.98s  <ret> 발화 (turn8 첫 프레임)
+    34.14s  agent 발화 시작: <ret> 좋은 질문이에요! 이전 지도에서는 리퍼비시 섹션을 따로 구분하지 않았어요. 그걸 추가해서 다시 찾
+    34.29s  user  발화 끝
+    35.82s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.56s]: (tool result) map_id: 789236; url: https://www.apple.com; pages_found:
+    39.69s  agent 발화 시작: 리퍼비시 제품 관련 페이지 열두 개를 찾았고, 그중 아홉 개는 직접 제품 목록을 보여주고 있어요. 여기 링크
+    39.70s  agent 발화 끝
+    43.58s  user  발화 시작: 응.
+    44.03s  user  발화 끝
+    46.78s  agent 발화 끝
+    46.83s  agent 발화 시작: 혹시 리퍼비시 섹션에서 특정 제품 카테고리를 찾으시는 건가요, 아니면 전체적인 개요를 원하시나요?
+    49.07s  user  발화 시작: 어.
+    49.47s  user  발화 끝
+    52.43s  agent 발화 끝
+    52.67s  user  발화 시작: 리퍼비시 MacBook Pro에 관심 있어. 재고 확인해 줄 수 있어?
+    56.27s  <ret> 발화 (turn14 첫 프레임)
+    56.43s  agent 발화 시작: <ret> 네, 리퍼비시 MacBook Pro 재고가 있어요. 특히 십삼인치 M2 모델과 십사인치 M1 Pr
+    56.60s  user  발화 끝
+    57.55s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.39s]: (tool result) availability: in_stock; models: MacBook Pro 13-inch M2 c
+    64.82s  agent 발화 끝
+    64.86s  user  발화 시작: 좋네. 다음 주에 다시 확인해 달라고 알림 설정해 줄 수 있어?
+    68.03s  <ret> 발화 (turn16 첫 프레임)
+    68.27s  agent 발화 시작: <ret> 네, 다음 주에 리퍼비시 MacBook Pro 재고를 다시 확인하는 알림을 설정해 드렸어요.
+    68.38s  user  발화 끝
+    70.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) reminder_id: 456789; date: 2024-02-29 10:00; task: check
+    72.70s  agent 발화 끝
+    72.75s  agent 발화 시작: 알림은 다음 주 2월 이십구일 오전 열 시에 MacBook Pro 재고를 확인하도록 설정되어 있어요.
+    77.79s  agent 발화 끝

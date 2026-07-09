@@ -70,28 +70,26 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.77s][moshi] ⟨ret@4.70s⟩ Certainly, I ⟦⚡SPAN@6.06s: (tool result) status:success; user_agent:MyCustomBrowser version 10.5⟧ can adjust that for you. Your user agent is now set to MyCustomBrowser version ten point five.
+[  5.35s][moshi] ⟨ret@5.28s⟩ Certainly, I can ⟦⚡SPAN@7.04s: (tool result) user_agent set to MyCustomBrowser version 10.5; success: true⟧ adjust your browser settings. Your user agent is now set to MyCustomBrowser version ten point five.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[  7.43s][user ] «backchannel» Mm-hmm.
-[ 13.22s][user ] That's great! Now, can you check if that's how the website sees me?
-[ 17.52s][moshi] ⟨ret@17.36s⟩ Absolutely, ⟦⚡SPAN@18.88s: (tool result) user_agent:MyCustomBrowser version 10.5⟧ let's verify that setting. The website currently identifies you as using MyCustomBrowser version ten point five.
-      CALL: {"function": "playwright_get_user_agent", "arguments": {}}
-[ 22.48s][user ] «backchannel» Mm-hmm.
-[ 28.34s][user ] Perfect. Uh, could you find me some articles about browser user agents then?
-[ 32.72s][moshi] I can certainly help with that. What kind of articles are you looking for specifically?
-[ 39.15s][user ] Just… general ones, I guess. Explaining what they are and why they ⟨ret@43.69s⟩ matter.
-[ 44.01s][moshi] I understand, ⟦⚡SPAN@45.69s: (tool result) results:[{"title": "User Agent String – What is it?", "url": "https://www.useragentstring.com/",⟧ let’s find some introductory articles. Here are two articles explaining user agents: useragentstring.com and a Cloudflare guide.
-      CALL: {"function": "google_search", "arguments": {"query": "browser user agent explained"}}
-[ 49.81s][user ] «backchannel» Mm-hmm.
-[ 57.38s][user ] Could you read me the snippet from the Cloudflare one?
-[ 60.42s][moshi] Certainly. It states a User-Agent is text sent by your browser to websites, identifying your browser and operating system.
-[ 69.69s][user ] Okay, that's helpful. I’m building a little website and I want to hide some content from bots.
-[ 74.97s][moshi] That’s a smart idea. You can use user agent strings to identify and filter bot traffic.
-[ 82.01s][user ] So, if I block common bot user agents, that will work?
-[ 86.49s][moshi] Generally, yes. However, sophisticated bots can spoof user agents, so it's not foolproof, but it's a good first step.
-[ 92.52s][user ] «backchannel» Really?
-[ 94.82s][user ] Hmm, okay. Can you give me a list of the ten most common bot user agents?
-[100.16s][moshi] ⟨ret@99.92s⟩ I can ⟦⚡SPAN@101.68s: (tool result) results:[{"title": "Top 10 Bot User Agents - Moz", "url": "https://moz.com/blog/top-10-bot-user-⟧ definitely provide that information. The top bots are Googlebot, Bingbot, Slurp, DuckDuckGo, and YandexBot, among others.
-      CALL: {"function": "google_search", "arguments": {"query": "most common bot user agents"}}
-[109.62s][user ] That's a good start. Thanks, Lio!
-[111.73s][moshi] You’re very welcome! I’m glad I could assist you with your website project.
+[ 14.72s][user ] That’s great! Now, could you check if that’s reflected on ⟨ret@19.66s⟩ whatismyuseragent.com?
+[ 19.82s][moshi] The website reports ⟦⚡SPAN@21.66s: (tool result) content: "MyCustomBrowser version 10.5"; status code: 200⟧ your user agent as MyCustomBrowser version ten point five.
+      CALL: {"function": "browser_get_website_content", "arguments": {"url": "https://whatismyuseragent.com"}}
+[ 23.39s][user ] «backchannel» Yeah.
+[ 26.65s][user ] Perfect. Uh, I'm planning a trip to Rome…
+[ 30.25s][moshi] Rome is a wonderful choice! When are you thinking of traveling?
+[ 32.75s][user ] «backchannel» Yeah.
+[ 35.63s][user ] I— I mean, around the first week of November. Could you look at ⟨ret@39.70s⟩ flights?
+[ 40.02s][moshi] Of course, ⟦⚡SPAN@41.46s: (tool result) flights: 3; cheapest: $685 (United, nonstop); next: $720 (Delta, 1 stop); $810 (Lufthansa, 1 sto⟧ let's explore flight options. I found three flights, with the cheapest at six hundred eighty-five dollars on United, a non-stop flight.
+      CALL: {"function": "flights_search", "arguments": {"destination": "Rome", "date": "2024-11-04"}}
+[ 52.04s][user ] Six eighty-five sounds good. Can you book that one for ⟨ret@55.62s⟩ me?
+[ 55.94s][moshi] Your flight ⟦⚡SPAN@57.62s: (tool result) booking confirmed;⟧ is confirmed! The reference number is XY789. It's six hundred eighty-five dollars.
+      CALL: {"function": "flights_book", "arguments": {"flight_number": "United-20241104-685"}}
+[ 65.51s][user ] Wonderful. Now, I need a hotel near the Colosseum.
+[ 69.58s][moshi] ⟨ret@69.35s⟩ A hotel near ⟦⚡SPAN@71.35s: XY789; price: $685; passenger: [user's name]; departs: 2024-11-04⟧ the Colosseum sounds lovely. What’s your budget per night?
+[ 75.03s][user ] [happy] Around two hundred ⟨ret@76.49s⟩ dollars.
+[ 76.89s][moshi] I found two ⟦⚡SPAN@78.49s: (tool result) hotels: 2; Hotel Artemide: $190 (4.5 stars); Hotel Colosseum: $175 (4 stars)⟧ options: Hotel Artemide at one hundred ninety dollars, and Hotel Colosseum at one hundred seventy-five.
+      CALL: {"function": "hotels_search", "arguments": {"location": "near Colosseum, Rome", "price_max": 200}}
+[ 85.33s][user ] Hotel Artemide sounds nice. Book that for the same dates, November first to seventh.
+[ 90.99s][moshi] ⟨ret@90.92s⟩ Hotel Artemide is ⟦⚡SPAN@92.92s: (tool result) hotel booked; confirmation: Z123; price: $1190; dates: 2024-11-01 to 2024-11-07⟧ booked for you, November first to seventh. The confirmation number is Z123.
+      CALL: {"function": "hotels_book", "arguments": {"hotel_name": "Hotel Artemide", "check_in": "2024-11-01", "check_out": "2024-11-07"}}

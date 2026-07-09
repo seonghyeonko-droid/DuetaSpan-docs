@@ -56,15 +56,21 @@
 # }
 
 
-     0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정해 줄 수 있을까요?
-     5.30s  <ret> 발화 (turn1 첫 프레임)
-     5.69s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 슈퍼크롤러 버전 십 점 일로 사용자 에이전트 설정이 완료되었습니다.
-     5.74s  user  발화 끝
-     6.98s  ⚡SPAN 주입 [d'=1.68s / d_lead=1.94s]: (tool result) status:success; user_agent:SuperCrawler version 10.1
-    10.38s  user  발화 시작: 네.
-    10.78s  user  발화 끝
-    11.98s  agent 발화 끝
-    12.74s  user  발화 시작: 혹시 지금 제가 웹사이트에 접속하면 그 사용자 에이전트로 보이겠죠?
-    17.64s  user  발화 끝
-    17.65s  agent 발화 시작: 네, 맞습니다. 지금부터 웹사이트에 접속하시면 슈퍼크롤러 버전 십 점 일로 보이실 거예요.
-    23.44s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정해 주실 수 있을까요?
+     4.61s  <ret> 발화 (turn1 첫 프레임)
+     5.00s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 성공적으로 변경했습니다.
+     5.04s  user  발화 끝
+     5.57s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.04s]: (tool result) User agent set to SuperCrawler version 10.1; status: suc
+     7.97s  user  발화 시작: 아.
+     8.60s  user  발화 끝
+    11.62s  agent 발화 끝
+    12.37s  user  발화 시작: 음… 그럼 지금 웹사이트 접속했을 때, 슈퍼크롤러로 보이게 되는 건가요?
+    17.36s  user  발화 끝
+    17.40s  agent 발화 시작: 네, 맞습니다. 지금부터 웹사이트에 접속하시면 슈퍼크롤러로 인식될 거예요. [curious]
+    22.25s  user  발화 시작: 그런데 슈퍼크롤러로 접속하면, 웹사이트에서 차단될 가능성은 없을까요?
+    22.40s  agent 발화 끝
+    26.98s  <ret> 발화 (turn6 첫 프레임)
+    27.21s  user  발화 끝
+    27.30s  agent 발화 시작: <ret> 웹사이트마다 다를 수 있습니다. example.com 웹사이트는 해당 사용자 에이전트를 크롤러로 
+    28.02s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.17s]: (tool result) Website example.com; block status: potentially blocked; 
+    34.89s  agent 발화 끝

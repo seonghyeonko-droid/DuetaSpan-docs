@@ -76,24 +76,30 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 That’s great. Can you send the new | S3 Perfect, thank you. I— I mean, did | S4 Oh, never mind, that’s not importa
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.46s  <ret> 발화 (turn1 첫 프레임)
-     4.50s  agent 발화 시작: <ret> I found twenty-three photos… …from your France trip la
-     4.72s  user  발화 끝
-     5.03s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.68s]: (tool result) path: /Users/sunan/Pictures/France2023, count: 23, sizes
-     8.91s  user  발화 시작: Mhm.
-     9.38s  user  발화 끝
-    11.63s  agent 발화 끝
-    12.31s  user  발화 시작: Oh, perfect! And can you remind me to back those up to the c
-    16.19s  <ret> 발화 (turn4 첫 프레임)
-    16.34s  agent 발화 시작: <ret> I’ve set a reminder for Friday evening to back up your
-    16.52s  user  발화 끝
-    18.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) reminder_id: 78945, date: 2024-03-08, time: 18:00, task:
-    18.92s  user  발화 시작: Yeah.
-    19.41s  user  발화 끝
-    20.55s  agent 발화 끝
-    21.02s  user  발화 시작: That’s great, thanks. I— I mean, is it safe to just use clou
-    24.97s  agent 발화 시작: Cloud storage is convenient, but consider a local backup too
-    25.05s  user  발화 끝
-    30.85s  agent 발화 끝
+     4.62s  <ret> 발화 (turn1 첫 프레임)
+     4.67s  agent 발화 시작: <ret> I’ve found twelve pictures from your France trip last 
+     4.81s  user  발화 끝
+     6.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) 12 files found; file types: JPG, PNG; total size: 350MB;
+     8.43s  user  발화 시작: Mhm.
+     9.02s  user  발화 끝
+    10.88s  agent 발화 끝
+    11.47s  user  발화 시작: That’s great. Can you send the newest three to my sister, Sa
+    14.78s  <ret> 발화 (turn4 첫 프레임)
+    14.92s  agent 발화 시작: <ret> I’ve just sent the three newest photos from your Franc
+    15.12s  user  발화 끝
+    15.82s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.68s]: (tool result) files sent; recipient: Sarah Miller; files: image1.jpg, 
+    17.82s  user  발화 시작: Yeah.
+    18.26s  user  발화 끝
+    19.60s  agent 발화 끝
+    20.05s  user  발화 시작: Perfect, thank you. I— I mean, did you find any of me with a
+    23.48s  agent 발화 시작: Let me check on that.
+    23.57s  user  발화 끝
+    24.86s  agent 발화 끝
+    24.99s  user  발화 시작: Oh, never mind, that’s not important!
+    25.69s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) 2 files found; filenames: beret_paris.jpg, you_and_beret
+    26.62s  agent 발화 시작: <ret> I did look, actually…
+    26.73s  user  발화 끝
+    28.46s  agent 발화 끝

@@ -63,99 +63,95 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해? | S2 네 말이 맞아. 사실은 직업을 바꿔야 할지도 고민 중이야. 그 | S3 석사 학위… 그거 꽤 큰 commitment네. 취업 전망은  | S4 그 말이 맞아. 그럼 이걸 더 알아보고 싶으면 어디서부터 시작
+# EXAMINER(FDB-v2) 단계: S1 어, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 오, 최고다. 정말 고마워! [happy] | S3 음, 문제 해결하는 건 정말 좋아하는데, 회의는… 별로 안 좋 | S4 좋아! 고마워. 음, 내일 도쿄 날씨 예보는 어때?
 
-     0.00s  user  발화 시작: 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해?
-     3.34s  <ret> 발화 (turn1 첫 프레임)
-     3.50s  agent 발화 시작: <ret> 음, 확인해 드릴게요… 이천이십삼 년 12월 24일 도쿄는 구름이 많고 기온은 섭씨 6.2도였어요
-     3.65s  user  발화 끝
-     4.38s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.74s]: (tool result) location:Tokyo; date:2023-12-24; temperature:6.2°C; cond
-    10.64s  agent 발화 끝
-    11.10s  user  발화 시작: 그래, 그럼 근처에 괜찮은 이탈리아 식당 좀 찾아 줄래?
-    13.79s  <ret> 발화 (turn3 첫 프레임)
-    14.19s  agent 발화 시작: <ret> 네, 주변에 있는지 알아볼게요… 근처에 이탈리아 식당 두 곳이 있어요. 별점 4.5점짜리 벨라 노
-    14.29s  user  발화 끝
-    15.07s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.71s]: (tool result) restaurants:[{name:“Bella Notte”, rating:4.5, price_rang
-    19.17s  user  발화 시작: 응.
-    19.56s  user  발화 끝
-    24.48s  agent 발화 끝
-    25.59s  user  발화 시작: 벨라 노테 괜찮아 보이네. 오늘 저녁 7시에 두 명 예약 좀 해 줘.
-    29.75s  <ret> 발화 (turn6 첫 프레임)
-    29.99s  agent 발화 시작: <ret> 네, 예약을 시도해 볼게요… 오늘 저녁 7시에 벨라 노테 두 분 예약이 확정됐습니다. 예약 ID는
-    30.08s  user  발화 끝
-    30.71s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.51s]: (tool result) reservation_id:BN7892; restaurant_name:Bella Notte; date
-    35.17s  user  발화 시작: 음.
-    35.67s  user  발화 끝
-    38.01s  agent 발화 끝
-    38.06s  user  발화 시작: 완벽해! 마음이 놓인다. 요즘 일이 너무 스트레스였거든.
-    41.95s  user  발화 끝
-    42.22s  agent 발화 시작: [laugh] 안심하셔서 정말 다행이에요. 일이 힘들 때는 잠시 즐거움을 찾는 게 중요하답니다.
-    49.31s  agent 발화 끝
-    50.25s  user  발화 시작: 네 말이 맞아. 사실은 직업을 바꿔야 할지도 고민 중이야. 그냥… 무서워.
-    55.09s  agent 발화 시작: 그건 아주 흔한 감정이에요. 뭔가 잘 안 되고 있다는 걸 인정하는 건 용기 있는 일이고, 큰 변화에 대해 불
-    55.30s  user  발화 끝
-    63.80s  agent 발화 끝
-    63.92s  user  발화 시작: 사람 돕는 걸 좋아하면서도 안정적인 직업은 뭐가 있을까?
-    68.11s  agent 발화 시작: 좋은 질문이에요! 그런 욕구를 모두 충족하는 직업은 많답니다. 혹시 상담이나 사회복지 분야는 생각해 보셨어요
-    68.18s  user  발화 끝
-    75.53s  agent 발화 끝
-    75.59s  user  발화 시작: 상담… 흠. 상담사는 하루에 대체 뭘 하는데?
-    79.14s  <ret> 발화 (turn15 첫 프레임)
-    79.37s  agent 발화 시작: <ret> 좀 더 자세히 알아볼까요… 상담사는 개인의 정서적 어려움을 돕고, 개인의 성장과 웰빙을 위한 지침
-    79.61s  user  발화 끝
-    81.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.44s]: [source: US Bureau of Labor Statistics] Counselors help people cope wi
-    88.17s  user  발화 시작: 그래, 흥미로운데. 그거 하려면 어떤 교육을 받아야 해?
-    88.55s  agent 발화 끝
-    91.73s  <ret> 발화 (turn17 첫 프레임)
-    92.13s  agent 발화 시작: <ret> 상담사가 되려면 보통 상담 분야 석사 학위, 지도 경험, 그리고 주립 면허가 필요하다고 해요.
-    92.25s  user  발화 끝
-    93.41s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.82s]: [source: American Counseling Association] Most counseling positions re
-    96.83s  user  발화 시작: 응.
-    97.27s  user  발화 끝
-    98.71s  agent 발화 끝
-    99.27s  user  발화 시작: 석사 학위… 그거 꽤 큰 commitment네. 취업 전망은 어때?
-   103.67s  <ret> 발화 (turn20 첫 프레임)
-   103.99s  agent 발화 시작: <ret> 현재 채용 시장을 확인해 볼까요… 상담사의 취업 전망은 매우 밝으며, 이천이십이 년까지 18%의 
-   104.13s  user  발화 끝
-   104.63s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.60s]: [source: US Bureau of Labor Statistics] Employment of counselors is pr
-   112.99s  agent 발화 끝
-   113.48s  user  발화 시작: 와, 18%나! 정말 좋네. 돈은 많이 벌어?
-   116.84s  <ret> 발화 (turn22 첫 프레임)
-   117.00s  agent 발화 시작: <ret> 평균 연봉을 알아볼까요… 이천이십삼 년 5월 기준으로 상담사의 중간 연봉은 칠만 사천 팔백 삼십 
-   117.13s  user  발화 끝
-   118.36s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.83s]: [source: US Bureau of Labor Statistics] The median annual wage for cou
-   119.65s  user  발화 시작: 어어.
-   120.47s  user  발화 끝
-   125.20s  agent 발화 끝
-   125.80s  user  발화 시작: 칠만 사천 달러… 나쁘지 않네. 경쟁률은 얼마나 심해?
-   130.34s  user  발화 끝
-   130.52s  agent 발화 시작: 전문 분야와 지역에 따라 다르지만, 일반적으로 밝은 취업 전망은 좋은 기회를 의미합니다.
-   133.00s  user  발화 시작: 응.
-   133.31s  user  발화 끝
-   136.57s  user  발화 시작: 스트레스 수준은 어때? 엄청 힘든 직업이야?
-   136.86s  agent 발화 끝
-   139.39s  user  발화 끝
-   139.49s  agent 발화 시작: 정신적으로 힘들 수도 있지만, 많은 상담사들은 그 보상이 크다고 생각해서 스트레스를 해소합니다. 자기 관리가
-   147.51s  agent 발화 끝
-   147.58s  user  발화 시작: 그 말이 맞아. 그럼 이걸 더 알아보고 싶으면 어디서부터 시작해야 해?
-   151.97s  agent 발화 시작: 주변 대학교의 상담 프로그램에 대해 조사해 보고, 실제로 상담을 하는 사람들과 이야기를 나눠보는 것을 추천합
-   152.16s  user  발화 끝
-   159.10s  agent 발화 끝
-   160.97s  user  발화 시작: 여기 주변에 상담 프로그램이 있는 좋은 대학교는 어디야?
-   164.00s  <ret> 발화 (turn32 첫 프레임)
-   164.32s  agent 발화 시작: <ret> 근처 대학교에서 상담 프로그램을 제공하는 곳을 알아볼까요…
-   164.44s  user  발화 끝
-   166.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: (tool result) universities:[{name:“State University”, programs:[“Maste
-   168.15s  agent 발화 끝
-   168.24s  agent 발화 시작: 주립대학교와 시립대학교 모두 근처에 상담 프로그램을 제공합니다. 주립대학교는 석사 과정이 있고, 시립대학교는
-   177.33s  agent 발화 끝
-   177.41s  user  발화 시작: 주립대학교가 좋은 시작점이 될 것 같아. 내일 웹사이트 좀 확인하라고 캘린더에 알림 추가해 줄래?
-   183.14s  <ret> 발화 (turn35 첫 프레임)
-   183.54s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요… 내일 오전 10시에 주립대학교 상담 프로그램 웹사이트를 확인하라는 알림
-   183.66s  user  발화 끝
-   184.50s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.25s]: (tool result) reminder_id:RM4567; date:2024-03-09; time:10:00; descrip
-   190.63s  agent 발화 끝
-   190.84s  user  발화 시작: 정말 고마워, 브레이. 정말 큰 도움이 됐어.
-   193.95s  agent 발화 시작: 천만에요. 도움이 되어 기쁩니다. 작은 발걸음이 큰 변화로 이어질 수 있다는 것을 기억하세요.
-   193.99s  user  발화 끝
-   200.90s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 작년 12월 24일 도쿄 날씨가 어땠어?
+     3.04s  <ret> 발화 (turn1 첫 프레임)
+     3.21s  agent 발화 시작: <ret> 작년 12월 24일 도쿄는 최고 기온이 섭씨 6도, 최저 기온이 섭씨 영하 2도였고, 흐린 날씨였
+     3.37s  user  발화 끝
+     4.08s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.91s]: (tool result) Weather_1_GetWeather: city=Tokyo, date=2023-12-24, high=
+    10.48s  agent 발화 끝
+    10.93s  user  발화 시작: 으, 추워 보이네. 있잖아, 시부야역 근처에 괜찮은 카페 좀 찾아 줄래?
+    16.04s  <ret> 발화 (turn3 첫 프레임)
+    16.44s  agent 발화 시작: <ret> 네, 물론 도와드릴 수 있어요. 스트리머 커피 컴퍼니가 300미터 거리에 있고, 평점은 4.5점이
+    16.53s  user  발화 끝
+    18.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) Places_1_FindPlaces: query=cafe, near=Shibuya Station, r
+    21.83s  user  발화 시작: 응.
+    22.27s  user  발화 끝
+    27.57s  agent 발화 끝
+    28.72s  user  발화 시작: 스트리머 커피 컴퍼니 괜찮겠다. 와이파이 있어?
+    31.88s  <ret> 발화 (turn6 첫 프레임)
+    32.12s  agent 발화 시작: <ret> 네, 스트리머 커피 컴퍼니는 고객에게 무료 와이파이를 제공하고 있어요.
+    32.23s  user  발화 끝
+    32.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.12s]: (tool result) Places_1_GetDetails: place_name=Streamer Coffee Company,
+    35.31s  user  발화 시작: 음.
+    35.53s  user  발화 끝
+    36.75s  agent 발화 끝
+    36.85s  user  발화 시작: 좋아! 음… 그러니까, 오늘 오후 3시에 거기 테이블 예약 좀 해 줄 수 있어?
+    42.86s  <ret> 발화 (turn9 첫 프레임)
+    42.92s  user  발화 끝
+    42.94s  agent 발화 시작: <ret> 네, 물론 예약해 드릴 수 있어요. 스트리머 커피 컴퍼니에 오늘 오후 3시에 1명 테이블을 예약해
+    44.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.00s]: (tool result) Reservations_1_Reserve: place_name=Streamer Coffee Compa
+    52.44s  agent 발화 끝
+    53.38s  user  발화 시작: 오, 최고다. 정말 고마워! [happy]
+    55.35s  agent 발화 시작: 천만에요! 편안한 오후를 계획하는 데 도움을 드릴 수 있어서 기뻐요.
+    55.51s  user  발화 끝
+    60.21s  agent 발화 끝
+    60.34s  user  발화 시작: 근데, 혹시 커리어 코칭에 대해 아는 거 있어? 좀 막막해.
+    64.23s  agent 발화 시작: 네, 알고 있어요! 웰니스 코치로서 저는 종종 사람들이 커리어 전환을 하고 더 큰 만족감을 찾도록 돕고 있어
+    64.36s  user  발화 끝
+    71.97s  agent 발화 끝
+    72.00s  user  발화 시작: 그거 듣기 좋네. 커리어 변경을 생각하고 있는데 뭘 잘할지 잘 모르겠어.
+    76.55s  agent 발화 시작: 그건 흔한 감정이에요! 당신의 강점, 가치관, 관심사를 탐색하여 잠재적인 길을 찾을 수 있어요.
+    76.71s  user  발화 끝
+    82.72s  user  발화 시작: 알았어… 뭐라고 생각해, 첫 단계가?
+    83.13s  agent 발화 끝
+    85.31s  user  발화 끝
+    85.41s  agent 발화 시작: 정말 당신을 활력을 주는 것과 일에서 당신의 에너지를 소모하는 것을 파악하는 것부터 시작해 볼까요?
+    92.08s  agent 발화 끝
+    92.58s  user  발화 시작: 음, 문제 해결하는 건 정말 좋아하는데, 회의는… 별로 안 좋아.
+    97.01s  agent 발화 시작: 통찰력이 있네요! 문제 해결 능력은 분석 기술을 의미하며, 이는 많은 역할에서 정말 큰 자산이 될 수 있어요
+    97.12s  user  발화 끝
+   103.02s  user  발화 시작: 응.
+   103.24s  user  발화 끝
+   105.40s  agent 발화 끝
+   106.10s  user  발화 시작: 그냥 내 기술을 충분히 활용하고 있지 못한 것 같아.
+   109.00s  agent 발화 시작: 많은 사람들이 그렇게 느낍니다. 더 매력적인 일을 찾을 준비가 된 것 같아요.
+   109.19s  user  발화 끝
+   114.14s  agent 발화 끝
+   115.46s  user  발화 시작: 그래. 혹시 내 기술을 공식적으로 평가할 수 있는 방법이 있어?
+   119.28s  <ret> 발화 (turn24 첫 프레임)
+   119.68s  agent 발화 시작: <ret> 온라인에서 여러 가지 평가를 받을 수 있어요. 무료 온라인 커리어 기술 평가를 몇 가지 찾았어요.
+   119.83s  user  발화 끝
+   120.64s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.70s]: (tool result) Search_1_Search: query=free career skills assessment
+   122.51s  user  발화 시작: 어어.
+   122.96s  user  발화 끝
+   128.67s  agent 발화 끝
+   128.88s  user  발화 시작: 커리어 익스플로러… 좋아. 그 링크 좀 보내 줄래?
+   132.51s  <ret> 발화 (turn27 첫 프레임)
+   132.59s  agent 발화 시작: <ret> 네, 지금 그 링크를 보내 드릴게요. user@email.com 이메일 주소로 커리어 익스플로러 
+   132.67s  user  발화 끝
+   134.11s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.94s]: (tool result) SendMessage_1_Send: recipient=user@email.com, subject=Ca
+   135.94s  user  발화 시작: 응.
+   136.35s  user  발화 끝
+   139.72s  agent 발화 끝
+   140.42s  user  발화 시작: 좋아! 고마워. 음, 내일 도쿄 날씨 예보는 어때?
+   143.91s  <ret> 발화 (turn30 첫 프레임)
+   144.07s  agent 발화 시작: <ret> 내일 도쿄는 부분적으로 흐리고, 최고 기온은 8도, 최저 기온은 3도일 거예요.
+   144.26s  user  발화 끝
+   145.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.89s]: (tool result) Weather_1_GetWeather: city=Tokyo, date=2024-03-01, high=
+   147.53s  user  발화 시작: 어.
+   148.16s  user  발화 끝
+   150.18s  agent 발화 끝
+   152.02s  user  발화 시작: 알아둬야겠다. 그래서, 그 평가에 대해서…
+   155.76s  user  발화 끝
+   155.78s  agent 발화 시작: 네, 상세한 보고서를 통해 당신의 강점, 약점, 잠재적인 커리어 매칭을 제공할 수 있어요.
+   162.03s  agent 발화 끝
+   162.37s  user  발화 시작: 근데 그거 좀 걱정돼. 만약 내가 모든 것에 엉망이라고 한다면 어떡해?
+   167.24s  agent 발화 시작: [laugh] 그럴 가능성은 매우 낮아요! 평가는 당신의 단점뿐만 아니라 잠재력을 강조하도록 설계되었어요. 
+   167.27s  user  발화 끝
+   178.55s  agent 발화 끝
+   178.81s  user  발화 시작: 그래, 그 말이 맞네. 고마워, 브레.
+   181.70s  agent 발화 시작: 천만에요! 자기 발견은 여정이라는 것을 기억하세요. 그리고 저는 그 여정을 응원할게요.
+   181.86s  user  발화 끝
+   188.56s  agent 발화 끝

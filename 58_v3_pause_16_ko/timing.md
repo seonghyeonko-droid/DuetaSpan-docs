@@ -63,51 +63,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 빅 브라더라는 말은 어디에서 유래한 걸까요? | S2 스탈린이라… 소련이랑 관련이 있었던 거군요. | S3 …브라더는 어떤 역할을 했죠? | S4 아니요, 오늘은 이 정도면 충분할 것 같아요.
+# EXAMINER(FDB-v2) 단계: S1 빅 브라더라는 말은 어디에서 유래된 거예요? | S2 …혹시 감시하는 역할을 하는 건가요? | S3 그렇군요. 그럼 빅 브라더라는 말은 지금도 자주 쓰이나요? | S4 혹시 빅 브라더와 비슷한 다른 소설이나 영화 같은 게 있을까요
 
-     0.00s  user  발화 시작: 빅 브라더라는 말은 어디에서 유래한 걸까요?
-     3.10s  agent 발화 시작: 빅 브라더라는 용어의 기원에 대해 궁금하시군요.
-     3.23s  user  발화 끝
-     5.86s  <ret> 발화 (turn2 첫 프레임)
-     6.20s  agent 발화 끝
-     6.25s  agent 발화 시작: <ret> 그 단어가 처음 사용된 곳은… 조지 오웰의 소설, *천구백팔십사*에서 전체주의 감시 국가를 묘사하
-     7.38s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.74s]: [source: Wikipedia] George Orwell's novel *Nineteen Eighty-Four* intro
-    16.68s  agent 발화 끝
-    16.70s  user  발화 시작: 아, 오웰 소설에서 나왔군요…
-    18.89s  agent 발화 시작: 오웰이 왜 ‘빅 브라더’라는 표현을 선택했는지, 더 자세히 알아보실까요?
-    19.05s  user  발화 끝
-    23.32s  <ret> 발화 (turn5 첫 프레임)
-    23.46s  agent 발화 시작: <ret> 그 선택에는 당시 사회적 배경이… 오웰은 ‘빅 브라더’ 개념을 요제프 스탈린과 소련의 개인 숭배 
-    23.53s  agent 발화 끝
-    24.92s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.24s]: [source: Literary Hub] Orwell modeled the concept of Big Brother on Jo
-    27.29s  user  발화 시작: 아.
-    27.69s  user  발화 끝
-    31.53s  agent 발화 끝
-    32.09s  user  발화 시작: 스탈린이라… 소련이랑 관련이 있었던 거군요.
-    35.74s  user  발화 끝
-    35.75s  agent 발화 시작: 맞아요. 오웰은 당시 사회 분위기를 반영해서 그런 표현을 사용했어요.
-    40.17s  agent 발화 시작: 혹시 천구백팔십사년 소설에 대해 더 궁금한 점이 있으신가요?
-    40.29s  agent 발화 끝
-    44.24s  agent 발화 끝
-    44.61s  user  발화 시작: 음… 소설 속 빅…
-    46.09s  user  발화 끝
-    46.91s  user  발화 시작: …브라더는 어떤 역할을 했죠?
-    48.57s  <ret> 발화 (turn12 첫 프레임)
-    48.88s  agent 발화 시작: <ret> 소설 속에서 빅 브라더는… *천구백팔십사*에서 빅 브라더는 겉으로는 자비로운 듯하지만, 실상은 독
-    48.98s  user  발화 끝
-    49.77s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.02s]: [source: Britannica] In *Nineteen Eighty-Four*, Big Brother is the see
-    52.06s  user  발화 시작: 네.
-    52.51s  user  발화 끝
-    59.33s  user  발화 시작: 독재자였군요.
-    59.45s  agent 발화 끝
-    60.66s  user  발화 끝
-    60.87s  agent 발화 시작: 네, 빅 브라더는 소설 속에서 끊임없이 사람들을 감시하고 통제하는 역할을 해요.
-    66.06s  agent 발화 끝
-    66.08s  agent 발화 시작: 혹시 다른 소설 작품에 대해서도 궁금하신 점이 있으신가요?
-    67.41s  user  발화 시작: 네.
-    67.90s  user  발화 끝
-    69.68s  agent 발화 끝
-    70.32s  user  발화 시작: 아니요, 오늘은 이 정도면 충분할 것 같아요.
-    73.09s  user  발화 끝
-    73.18s  agent 발화 시작: 알겠습니다. 도움이 되었다니 다행이네요.
-    76.14s  agent 발화 끝
+     0.00s  user  발화 시작: 빅 브라더라는 말은 어디에서 유래된 거예요?
+     3.24s  <ret> 발화 (turn1 첫 프레임)
+     3.64s  agent 발화 시작: <ret> 빅 브라더라는 용어는 조지 오웰의 소설에서 비롯되었어요.
+     3.79s  user  발화 끝
+     5.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: [source: Wikipedia] The term “Big Brother” originates from the novel *
+     7.51s  user  발화 시작: 아, 조지 오웰… 그 소설이 굉장히 유명하잖아요.
+     7.67s  agent 발화 끝
+    11.81s  user  발화 끝
+    11.86s  agent 발화 시작: 네, 맞아요. 출판된 지 꽤 오래된 소설이지만, 여전히 많은 사람들에게 읽히고 있죠.
+    17.69s  agent 발화 끝
+    17.83s  user  발화 시작: …근데 그 소설에서 빅 브라더는 정확히 어떤 역할을 하는 거예요?
+    21.72s  user  발화 시작: …혹시 감시하는 역할을 하는 건가요?
+    21.81s  user  발화 끝
+    23.87s  <ret> 발화 (turn6 첫 프레임)
+    24.18s  agent 발화 시작: <ret> 소설 속에서 빅 브라더는… 빅 브라더는 오세아니아의 수수께끼 같은 독재자로, 텔레스크린을 통해 끊
+    24.21s  user  발화 끝
+    25.31s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.19s]: [source: Britannica] In *Nineteen Eighty-Four*, Big Brother is the eni
+    28.07s  user  발화 시작: 아.
+    28.52s  user  발화 끝
+    32.39s  agent 발화 끝
+    32.70s  user  발화 시작: 텔레스크린이라… 지금의 CCTV랑 비슷한 건가요?
+    36.34s  agent 발화 시작: 어느 정도 비슷하다고 볼 수 있겠네요. 하지만 텔레스크린은 감시 기능 외에도 방송을 송출하는 기능도 가지고 
+    36.41s  user  발화 끝
+    39.16s  user  발화 시작: 음.
+    39.60s  user  발화 끝
+    43.74s  user  발화 시작: 그렇군요. 그럼 빅 브라더라는 말은 지금도 자주 쓰이나요?
+    43.80s  agent 발화 끝
+    47.52s  <ret> 발화 (turn12 첫 프레임)
+    47.59s  agent 발화 시작: <ret> 현대 사회에서 빅 브라더라는 표현은… 빅 브라더는 광범위한 정부 감시, 특히 전자 감시를 묘사하는
+    47.77s  user  발화 끝
+    48.56s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.85s]: [source: Merriam-Webster] “Big Brother” is now used to describe pervas
+    51.90s  user  발화 시작: 네.
+    52.34s  user  발화 끝
+    57.28s  agent 발화 끝
+    57.92s  user  발화 시작: 음, 개인 정보 보호 문제랑…
+    60.64s  user  발화 끝
+    61.50s  user  발화 시작: …관련해서 많이 언급되는 것 같아요.
+    63.66s  agent 발화 시작: 맞아요. 빅 브라더는 개인의 자유를 억압하는 권력의 상징으로 여겨지기도 하죠.
+    63.81s  user  발화 끝
+    65.71s  user  발화 시작: 음.
+    66.20s  user  발화 끝
+    68.66s  agent 발화 끝
+    69.45s  user  발화 시작: 혹시 빅 브라더와 비슷한 다른 소설이나 영화 같은 게 있을까요?
+    73.48s  user  발화 끝
+    73.49s  agent 발화 시작: [curious] 비슷한 주제를 다룬 작품은 꽤 많아요. 예를 들어, 레이 브래드버리의 '화씨 사백오십일'도
+    80.62s  user  발화 시작: 화씨 사백오십일… 그건 책이잖아요, 맞죠? 한번 찾아봐야겠네요.
+    80.82s  agent 발화 끝
+    84.75s  <ret> 발화 (turn21 첫 프레임)
+    85.07s  agent 발화 시작: <ret> 네, 책이에요. 책을 찾으시는 걸 도와드릴까요?
+    85.19s  user  발화 끝
+    85.71s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.03s]: (tool result) title: 화씨 451; author: 레이 브래드버리; publication_year: 1953;
+    89.08s  agent 발화 시작: '화씨 사백오십일'은 레이 브래드버리가 천구백오십삼년에 출판한 책이며, 교보문고, 영풍문고, 예스24에서 구
+    89.10s  agent 발화 끝
+    98.63s  agent 발화 끝

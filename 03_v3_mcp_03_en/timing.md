@@ -58,63 +58,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Right. | S3 Great! What’s the estimated delive | S4 It does, actually. I'm trying to s
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Yes, ship it to my default address | S3 Great! | S4 It is. What's the estimated delive
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.86s  <ret> 발화 (turn1 첫 프레임)
-     3.25s  agent 발화 시작: <ret> Certainly, let’s begin finalizing your order.
-     3.42s  user  발화 끝
-     4.78s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.96s]: (tool result) status:success; element:checkout-button; page_url:https:
-     6.15s  agent 발화 시작: Excellent, the checkout button within the cart iframe has be
-     6.20s  agent 발화 끝
-     9.64s  user  발화 시작: Mhm.
-    10.13s  user  발화 끝
-    11.29s  agent 발화 끝
-    12.79s  user  발화 시작: Okay, good.
-    13.48s  user  발화 끝
-    13.66s  agent 발화 시작: Now, to proceed, we'll need your shipping address. Do you wa
-    19.68s  agent 발화 끝
-    20.28s  user  발화 시작: Yes, the one on file is fine.
-    22.35s  <ret> 발화 (turn7 첫 프레임)
-    22.75s  agent 발화 시작: <ret> Wonderful.
-    22.85s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.82s]: (tool result) status:success; element:use-saved-address; page_url:http
-    22.86s  user  발화 끝
-    23.57s  agent 발화 끝
-    23.65s  agent 발화 시작: Your saved address has been selected for shipping.
-    26.62s  agent 발화 끝
-    26.69s  user  발화 시작: Right.
-    27.19s  user  발화 끝
-    27.26s  agent 발화 시작: And now, let’s confirm your payment method. We have your Vis
-    36.44s  agent 발화 끝
-    36.45s  user  발화 시작: Yes, that’s the one.
-    38.10s  <ret> 발화 (turn12 첫 프레임)
-    38.50s  agent 발화 시작: <ret> Perfect. I'm initiating the payment now.
-    38.70s  user  발화 끝
-    39.78s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.91s]: (tool result) status:success; element:confirm-payment; transaction_id:
-    41.38s  agent 발화 시작: Your payment of seventy-five dollars has been successfully p
-    41.42s  agent 발화 끝
-    50.41s  agent 발화 끝
-    50.44s  user  발화 시작: Great! What’s the estimated delivery date?
-    52.89s  <ret> 발화 (turn15 첫 프레임)
-    53.05s  agent 발화 시작: <ret> Let me check on that for you.
-    53.16s  user  발화 끝
-    53.61s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.75s]: (tool result) order_id:12345; estimated_delivery:October 26th
-    54.76s  agent 발화 시작: The estimated delivery date for your order is October twenty
-    54.80s  agent 발화 끝
-    59.25s  user  발화 시작: Okay, that sounds good.
-    59.39s  agent 발화 끝
-    60.86s  agent 발화 시작: [laugh] I'm glad to hear it! Knowing when to expect somethin
-    60.86s  user  발화 끝
-    63.86s  user  발화 시작: Yeah.
-    64.50s  user  발화 끝
-    67.94s  agent 발화 끝
-    68.28s  user  발화 시작: It does, actually. I'm trying to stay on top of my studies, 
-    74.35s  user  발화 끝
-    74.41s  agent 발화 시작: That’s a very mindful approach to balancing life and studies
-    78.73s  user  발화 시작: Yeah.
-    79.36s  user  발화 끝
-    82.84s  agent 발화 끝
-    83.58s  user  발화 시작: But… I’m also worried about an upcoming exam.
-    86.78s  agent 발화 시작: Oh, that's understandable. Exam stress is very common. Perha
-    86.82s  user  발화 끝
-    95.82s  agent 발화 끝
+     2.80s  <ret> 발화 (turn1 첫 프레임)
+     3.20s  agent 발화 시작: <ret> Absolutely, let's get that checkout started for you.
+     3.37s  user  발화 끝
+     4.72s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.19s]: (tool result) success; element clicked; url: /checkout
+     6.29s  agent 발화 시작: Great, the checkout process has begun, and you're now on the
+     6.38s  agent 발화 끝
+     9.70s  user  발화 시작: Mhm.
+    10.15s  user  발화 끝
+    11.28s  agent 발화 끝
+    12.88s  user  발화 시작: What's the total cost of everything in my cart?
+    15.23s  <ret> 발화 (turn5 첫 프레임)
+    15.31s  agent 발화 시작: <ret> Your cart total is seventy-eight dollars and fifty cen
+    15.42s  user  발화 끝
+    16.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.49s]: (tool result) total: $78.50; shipping: $5.99; tax: $6.21
+    22.08s  agent 발화 끝
+    22.73s  user  발화 시작: Okay.
+    23.22s  user  발화 끝
+    23.30s  agent 발화 시작: That brings the final amount to eighty-nine dollars and seve
+    29.70s  agent 발화 끝
+    29.70s  user  발화 시작: Yes, ship it to my default address.
+    32.06s  <ret> 발화 (turn9 첫 프레임)
+    32.46s  agent 발화 시작: <ret> Wonderful. And how would you like to pay today?
+    32.61s  user  발화 끝
+    33.74s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.14s]: (tool result) success; shipping address set to 123 Main Street, Anytow
+    35.50s  agent 발화 시작: Excellent, your order will be shipped to 123 Main Street.
+    35.60s  agent 발화 끝
+    39.99s  user  발화 시작: Use the credit card on file.
+    40.03s  agent 발화 끝
+    41.98s  <ret> 발화 (turn12 첫 프레임)
+    42.13s  agent 발화 시작: <ret> Perfect. One moment while I process the payment.
+    42.30s  user  발화 끝
+    43.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: (tool result) success; payment authorized; transaction ID: 9876543210;
+    45.84s  agent 발화 시작: Your payment of eighty-nine dollars and seventy cents has be
+    45.88s  agent 발화 끝
+    50.19s  agent 발화 끝
+    50.22s  user  발화 시작: Great!
+    50.72s  user  발화 끝
+    50.88s  agent 발화 시작: Your order is now confirmed! You’ll receive a confirmation e
+    57.22s  agent 발화 끝
+    58.14s  user  발화 시작: That's a relief, I was worried it wouldn't go through.
+    60.95s  agent 발화 시작: I understand that feeling entirely. It's good to have that w
+    61.10s  user  발화 끝
+    62.95s  user  발화 시작: Yeah.
+    63.68s  user  발화 끝
+    65.81s  agent 발화 끝
+    68.00s  user  발화 시작: It is. What's the estimated delivery date?
+    71.10s  <ret> 발화 (turn20 첫 프레임)
+    71.34s  agent 발화 시작: <ret> The estimated delivery date is November eighth, shippe
+    71.56s  user  발화 끝
+    73.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.78s]: (tool result) delivery date: November 8th; carrier: FedEx; tracking nu
+    78.30s  user  발화 시작: Wow.
+    79.12s  user  발화 끝
+    83.19s  user  발화 시작: Perfect, thank you so much!
+    83.21s  agent 발화 끝
+    85.02s  user  발화 끝
+    85.12s  agent 발화 시작: You are very welcome! I’m glad I could help streamline that 
+    93.74s  agent 발화 끝

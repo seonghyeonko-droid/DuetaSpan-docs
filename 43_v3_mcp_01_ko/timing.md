@@ -58,61 +58,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 출시일이 언제라고? | S3 근데 지금 재고는 있는 거야? | S4 고마워.
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아이폰 십오 프로 맥스. | S3 혹시 그 모델의 가격 정보도 지도에 표시돼 있어? | S4 아니, 됐어. 그 정도면 충분해. 지도 링크를 내 이메일로 보
 
      0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.62s  <ret> 발화 (turn1 첫 프레임)
-     3.84s  user  발화 끝
-     3.85s  agent 발화 시작: <ret> 알겠습니다. 애플 웹사이트의 제품 관련 상세 지도를— 애플 웹사이트 제품 중심 지도를 생성했습니다
-     5.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.91s]: (tool result) map_id: a1b2c3d4, url: https://www.apple.com, focus: pro
-    18.92s  agent 발화 끝
-    19.09s  user  발화 시작: 비전 프로에 대한 레이어를 좀 더 자세히 보여줄 수 있어?
-    22.57s  <ret> 발화 (turn3 첫 프레임)
-    22.80s  agent 발화 시작: <ret> 물론입니다. 비전 프로 레이어를 확대해서 보여드릴게요.
-    23.02s  user  발화 끝
-    24.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) map_id: a1b2c3d4, focus: Vision Pro, detail: maximum, el
-    27.31s  agent 발화 시작: 비전 프로 레이어를 최대 상세도로 확대했습니다. 사양, 가격, 출시일, 호환 기기 등의 정보를 확인하실 수 
-    27.47s  agent 발화 끝
-    32.92s  user  발화 시작: 응.
-    33.37s  user  발화 끝
-    35.60s  agent 발화 끝
-    36.05s  user  발화 시작: 출시일이 언제라고?
-    37.29s  <ret> 발화 (turn7 첫 프레임)
-    37.58s  agent 발화 시작: <ret> 비전 프로 출시일은— 비전 프로는 이천이십사년 이월 이일에 출시됩니다.
-    37.72s  user  발화 끝
-    38.01s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.77s]: (tool result) release_date: 2024-02-02
-    40.68s  user  발화 시작: 응응.
-    41.18s  user  발화 끝
-    42.90s  agent 발화 끝
-    43.77s  user  발화 시작: 근데 지금 재고는 있는 거야?
-    45.01s  <ret> 발화 (turn10 첫 프레임)
-    45.07s  agent 발화 시작: <ret> 지금 재고 상황을 확인해 볼게요.
-    45.29s  user  발화 끝
-    46.93s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.26s]: (tool result) product: Vision Pro, location: any, availability: limite
-    47.22s  agent 발화 시작: 비전 프로 재고는 제한적이며, 예상 대기 시간은 이~삼주입니다.
-    47.33s  agent 발화 끝
-    48.65s  user  발화 시작: 어.
-    48.87s  user  발화 끝
-    51.24s  agent 발화 시작: 다른 지역에서도 재고를 확인해 볼까요? 예를 들어, 서울 강남 지역은—
-    51.43s  agent 발화 끝
-    55.45s  <ret> 발화 (turn14 첫 프레임)
-    55.76s  agent 발화 시작: <ret> 서울 강남 지역에서는 현재 비전 프로 재고가 없습니다. 예상 대기 시간은 사~육주입니다.
-    55.87s  agent 발화 끝
-    57.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) product: Vision Pro, location: Seoul Gangnam, availabili
-    59.37s  user  발화 시작: 헐.
-    59.81s  user  발화 끝
-    62.02s  agent 발화 끝
-    62.07s  user  발화 시작: 그럼 예약이라도 할 수 있어?
-    63.64s  <ret> 발화 (turn17 첫 프레임)
-    63.82s  user  발화 끝
-    63.87s  agent 발화 시작: <ret> 네, 예약 가능합니다. 예약 진행해 드릴까요?
-    65.32s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.04s]: (tool result) reservation_id: r789s10t, product: Vision Pro, quantity:
-    66.81s  agent 발화 시작: 비전 프로 한개 예약이 완료되었습니다. 예약 번호는 r789s10t이며, 예약일은 이천이십사년 삼월 십오일입
-    66.92s  agent 발화 끝
-    69.90s  user  발화 시작: 와.
-    70.53s  user  발화 끝
-    75.66s  agent 발화 끝
-    76.39s  user  발화 시작: 고마워.
-    77.19s  agent 발화 시작: 천만에요. 다른 도움이 필요하시면 언제든지 말씀해주세요.
-    77.20s  user  발화 끝
-    81.21s  agent 발화 끝
+     3.77s  <ret> 발화 (turn1 첫 프레임)
+     3.99s  agent 발화 시작: <ret> 알겠습니다. tavily-map을 이용해서 애플 웹사이트의 제품 관련 정보를 중심으로 상세 지도를
+     4.02s  user  발화 끝
+     5.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) map_id: 789234; status: complete; product_count: 27; zoo
+    10.55s  agent 발화 시작: 애플 웹사이트 제품 지도가 완성되었고, 총 스물일곱 개의 제품이 표시됩니다. 지도는 오늘 오후 두 시 삼십오
+    10.75s  agent 발화 끝
+    19.92s  agent 발화 끝
+    20.79s  user  발화 시작: 스물일곱 개나 돼? 아이폰은 몇 개나 표시돼?
+    23.56s  <ret> 발화 (turn4 첫 프레임)
+    23.78s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
+    24.02s  user  발화 끝
+    24.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.89s]: (tool result) iPhone_count: 5; models: "iPhone 15 Pro Max, iPhone 15 P
+    25.53s  agent 발화 시작: 지도에 아이폰 모델 다섯 개가 표시됩니다. 아이폰 십오 프로 맥스, 프로, 플러스, 십오, 그리고 SE 모델
+    25.67s  agent 발화 끝
+    31.40s  user  발화 시작: 응.
+    31.79s  user  발화 끝
+    34.20s  agent 발화 끝
+    34.56s  user  발화 시작: 아이폰 십오 프로 맥스.
+    37.13s  agent 발화 시작: 아이폰 십오 프로 맥스에 대한 상세 정보는—
+    37.15s  user  발화 끝
+    39.43s  user  발화 시작: 혹시 그 모델의 가격 정보도 지도에 표시돼 있어?
+    40.09s  agent 발화 끝
+    42.60s  <ret> 발화 (turn10 첫 프레임)
+    42.90s  user  발화 끝
+    42.92s  agent 발화 시작: <ret> 아, 가격 정보요? 지도에 가격 정보가 포함되어 있는지 확인해 보겠습니다.
+    44.36s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.63s]: (tool result) price: "$1199"; storage_options: "256GB, 512GB, 1TB"; ca
+    47.43s  agent 발화 시작: 아이폰 십오 프로 맥스의 기본 가격은 천백구십구 달러입니다. 저장 용량은 이백오십육기가바이트, 오백십이기가바
+    47.55s  agent 발화 끝
+    51.37s  user  발화 시작: 어.
+    52.01s  user  발화 끝
+    58.28s  agent 발화 끝
+    58.32s  agent 발화 시작: Verizon, AT&T, 그리고 T-Mobile에서 통신사 할인도 제공하고 있어요. 혹시 다른 제품의 가격
+    63.65s  user  발화 시작: 맞아.
+    64.10s  user  발화 끝
+    66.45s  user  발화 시작: 아니, 됐어. 그 정도면 충분해. 지도 링크를 내 이메일로 보내줘.
+    66.61s  agent 발화 끝
+    70.87s  <ret> 발화 (turn16 첫 프레임)
+    71.17s  user  발화 끝
+    71.19s  agent 발화 시작: <ret> 네, 지도 링크를 이메일로 보내드리겠습니다. 이메일 주소를 다시 한번 확인해 주시겠어요?
+    72.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) email_status: sent; timestamp: 2024-01-26 14:48:00 UTC;
+    76.61s  agent 발화 시작: 지도 링크가 이메일로 발송되었습니다. 확인해 보시고, 혹시 다른 도움이 필요하시면 언제든지 말씀해 주세요.
+    76.74s  agent 발화 끝
+    84.26s  agent 발화 끝
