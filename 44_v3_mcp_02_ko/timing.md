@@ -68,65 +68,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄래? weather.example.com | S2 응, 좋아. | S3 완벽하다! 근데 혹시 부산역 근처에 맛있는 식당도 알아봐 줄  | S4 와, 진짜 최고네! 덕분에 여행 계획이 훨씬 수월해졌어.
+# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄래? weather.example.com | S2 흐음, 일요일에 비라니. 그럼 토요일에 가야겠네. 혹시 근처  | S3 오, 괜찮다. 그럼 파인 밸리 캠핑장으로 토요일 예약해 줘. | S4 음… 그건 됐어. 캠핑 전에 날씨 다시 한번 확인해 줄래? 혹
 
      0.00s  user  발화 시작: 날씨 업데이트 좀 봐줄래? weather.example.com에서.
-     3.19s  <ret> 발화 (turn1 첫 프레임)
-     3.58s  agent 발화 시작: <ret> 알겠습니다. 현재 서울 날씨는 맑고, 기온은 이십오도입니다. 오후에는 소나기가 올 수 있겠어요.
-     3.69s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.52s]: (tool result) page_content: "현재 서울의 날씨는 맑고, 기온은 25도입니다. 오후에는 소나기가 예상됩니
-     3.75s  user  발화 끝
-     9.79s  agent 발화 끝
-    11.13s  user  발화 시작: 오, 고마워. 그럼 내일 부산 날씨는 어때?
-    13.44s  <ret> 발화 (turn3 첫 프레임)
-    13.75s  agent 발화 시작: <ret> 내일 부산은 흐리고 최고 기온은 이십팔도, 최저 기온은 이십이도로 예상됩니다.
-    13.99s  user  발화 끝
-    15.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) page_content: "내일 부산의 날씨는 흐리고, 최고 기온은 28도, 최저 기온은 22도입니다
-    17.23s  user  발화 시작: 네.
-    17.64s  user  발화 끝
-    19.17s  user  발화 시작: 흐리다고? 아쉽다. 그럼 부산 가는 기차표 예매 좀 해줄래? 모레 아침 아홉시 출발하는 걸로.
-    19.40s  agent 발화 끝
-    26.51s  <ret> 발화 (turn6 첫 프레임)
-    26.66s  agent 발화 시작: <ret> 기차표 예매를 도와드릴게요. 서울에서 부산으로 모레 아침 아홉시 KTX 백이십삼호 예약이 완료되었
-    26.81s  user  발화 끝
-    27.01s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.92s]: (tool result) booking_confirmation: "서울 출발, 부산 도착, 모레 오전 9시 KTX 123호 예
-    32.84s  user  발화 시작: 와.
-    33.48s  user  발화 끝
-    38.15s  agent 발화 끝
-    38.18s  user  발화 시작: 응, 좋아.
-    39.11s  agent 발화 시작: 혹시 좌석 지정은 따로 요청하실 게 있으신가요? 아니면 그냥 자동으로 지정해 드릴까요?
-    39.32s  user  발화 끝
-    41.17s  user  발화 시작: 네.
-    41.54s  user  발화 끝
-    44.51s  user  발화 시작: 그냥 자동으로 해줘. 아, 그리고 모레 부산 도착해서 바로 택시 잡을 수 있게 준비해 놔줄래?
-    44.62s  agent 발화 끝
-    50.64s  <ret> 발화 (turn12 첫 프레임)
-    50.85s  agent 발화 시작: <ret> 택시 호출 준비도 해드릴게요. 모레 부산 도착 예상 시간인 오전 아홉시 삼십분에 택시 호출 알림을
-    51.00s  user  발화 끝
-    51.92s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.90s]: (tool result) reminder_set: "부산 도착 예상 시간인 모레 오전 9시 30분에 택시 호출 알림 설정 완료
-    55.86s  user  발화 시작: 네.
-    56.31s  user  발화 끝
-    58.45s  agent 발화 끝
-    58.66s  user  발화 시작: 완벽하다! 근데 혹시 부산역 근처에 맛있는 식당도 알아봐 줄 수 있어?
-    63.78s  <ret> 발화 (turn15 첫 프레임)
-    63.83s  agent 발화 시작: <ret> 부산역 근처에는 '돼지국밥 맛집'(평점 사 점 오/오)과 '밀면 전문점'(평점 사 점 이/오)이 
-    63.99s  user  발화 끝
-    65.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) restaurant_results: "부산역 근처 한식 맛집: '돼지국밥 맛집', 평점 4.5/5, 
-    69.39s  agent 발화 끝
-    70.12s  user  발화 시작: 돼지국밥 맛집으로 가볼까 봐. 혹시 그쪽으로 가는 버스 노선도 알려줄 수 있어?
-    75.03s  <ret> 발화 (turn17 첫 프레임)
-    75.42s  agent 발화 시작: <ret> 부산역에서 돼지국밥 맛집까지는 백일번 버스를 타면 약 십오분 걸립니다.
-    75.59s  user  발화 끝
-    77.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) bus_route: "부산역에서 돼지국밥 맛집까지 101번 버스 이용. 약 15분 소요."
-    77.48s  user  발화 시작: 와.
-    77.93s  user  발화 끝
-    80.50s  user  발화 시작: 와, 진짜 최고네! 덕분에 여행 계획이 훨씬 수월해졌어.
-    80.74s  agent 발화 끝
-    84.98s  agent 발화 시작: 여행 계획에 조금이나마 도움이 되었다니 기쁩니다. 혹시 더 필요한 건 없으신가요?
-    85.09s  user  발화 끝
-    86.53s  user  발화 시작: 아.
-    87.17s  user  발화 끝
-    90.29s  user  발화 시작: 아니, 괜찮아. 다 됐어. 정말 고마워!
-    90.49s  agent 발화 끝
-    92.87s  user  발화 끝
-    92.95s  agent 발화 시작: 즐거운 여행 되세요. 언제든지 필요하시면 다시 찾아주세요.
-    97.34s  agent 발화 끝
+     3.16s  <ret> 발화 (turn1 첫 프레임)
+     3.55s  agent 발화 시작: <ret> 알겠습니다. 현재 기온은 섭씨 이십팔도이고, 구름이 조금 낀 상태입니다.
+     3.66s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.54s]: (tool result) Temperature is 28 degrees Celsius, partly cloudy.
+     3.74s  user  발화 끝
+     8.41s  agent 발화 끝
+     9.76s  user  발화 시작: 음, 그렇군요.
+    10.89s  agent 발화 시작: 혹시 특정 지역의 날씨를 알고 싶으신가요?
+    11.09s  user  발화 끝
+    11.90s  user  발화 시작: 그렇죠.
+    12.49s  user  발화 끝
+    13.29s  user  발화 시작: 아, 아니. 그냥 궁금해서. 이번 주말에 캠핑 가려고 하는데, 혹시 비 올 것 같아?
+    13.48s  agent 발화 끝
+    18.61s  <ret> 발화 (turn6 첫 프레임)
+    18.99s  agent 발화 시작: <ret> 토요일은 맑고 최고 기온은 섭씨 이십오도, 일요일은 비가 오고 최고 기온은 섭씨 이십이도입니다.
+    19.18s  user  발화 끝
+    20.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Saturday: Sunny, high 25. Sunday: Showers, high 22.
+    25.80s  agent 발화 끝
+    26.26s  user  발화 시작: 흐음, 일요일에 비라니. 그럼 토요일에 가야겠네. 혹시 근처 캠핑장 예약해 줄 수 있어?
+    32.30s  agent 발화 시작: 물론입니다. 어디로 예약해 드릴까요?
+    32.32s  user  발화 끝
+    34.76s  user  발화 시작: 음… 서울 근교로, 차로 한 시간 반 정도 거리면 괜찮아.
+    34.88s  agent 발화 끝
+    38.98s  <ret> 발화 (turn10 첫 프레임)
+    39.13s  agent 발화 시작: <ret> 파인 밸리 캠핑장이 토요일에 예약 가능하고, 가격은 오만 원입니다.
+    39.25s  user  발화 끝
+    40.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) Pine Valley Campground: Available Saturday, price 50000 
+    41.34s  user  발화 시작: 와.
+    41.97s  user  발화 끝
+    43.43s  agent 발화 끝
+    43.61s  user  발화 시작: 오, 괜찮다. 그럼 파인 밸리 캠핑장으로 토요일 예약해 줘.
+    47.08s  <ret> 발화 (turn13 첫 프레임)
+    47.15s  agent 발화 시작: <ret> 파인 밸리 캠핑장 토요일 예약 진행하겠습니다. 파인 밸리 캠핑장 토요일 예약이 완료되었습니다. 확
+    47.31s  user  발화 끝
+    48.52s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.53s]: (tool result) Reservation confirmed. Pine Valley Campground, Saturday.
+    51.24s  user  발화 시작: 와.
+    51.88s  user  발화 끝
+    55.59s  agent 발화 끝
+    55.80s  user  발화 시작: 와, 고마워!
+    57.04s  user  발화 끝
+    57.23s  agent 발화 시작: 즐거운 캠핑 되세요. 혹시 필요한 물품 목록을 만들어 드릴까요?
+    61.73s  user  발화 시작: 음… 그건 됐어. 캠핑 전에 날씨 다시 한번 확인해 줄래? 혹시 변동될까 봐.
+    61.76s  agent 발화 끝
+    66.29s  <ret> 발화 (turn18 첫 프레임)
+    66.68s  agent 발화 시작: <ret> 주말 날씨를 다시 한번 확인해 드리겠습니다. 토요일은 맑고 최고 기온은 섭씨 이십오도, 일요일은 
+    66.86s  user  발화 끝
+    67.49s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.67s]: (tool result) Saturday: Sunny, high 25. Sunday: Showers, high 22. No c
+    71.18s  user  발화 시작: 그렇죠.
+    71.81s  user  발화 끝
+    76.22s  user  발화 시작: 다행이다. 정말 고마워, 드리아우스.
+    76.45s  agent 발화 끝
+    79.42s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁩니다.
+    79.45s  user  발화 끝
+    82.37s  agent 발화 끝

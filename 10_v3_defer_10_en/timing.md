@@ -78,22 +78,22 @@
 
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.33s  agent 발화 시작: <ret> I located twelve pictures from your France trip last y
-     4.33s  <ret> 발화 (turn1 첫 프레임)
-     4.58s  user  발화 끝
-     6.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.35s]: (tool result) Found 12 images: "Paris_EiffelTower.jpg", "Nice_Beach.jp
-     7.60s  user  발화 시작: Mhm.
-     8.24s  user  발화 끝
-     9.69s  agent 발화 끝
-    10.39s  user  발화 시작: Oh, that's great! Can you set a reminder to back those up to
-    14.62s  <ret> 발화 (turn4 첫 프레임)
-    14.92s  agent 발화 시작: <ret> Absolutely. I’ve scheduled a reminder to back up those
-    15.15s  user  발화 끝
-    15.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.04s]: (tool result) Reminder set: "Back up France holiday photos" - Friday a
-    18.07s  user  발화 시작: Yeah.
-    18.70s  user  발화 끝
-    19.96s  agent 발화 끝
-    20.41s  user  발화 시작: Perfect, thank you!
-    21.73s  agent 발화 시작: You’re very welcome. It’s good to stay on top of those thing
-    21.74s  user  발화 끝
-    26.59s  agent 발화 끝
+     4.72s  <ret> 발화 (turn1 첫 프레임)
+     4.79s  agent 발화 시작: <ret> I found thirty-seven pictures from your France trip in
+     4.96s  user  발화 끝
+     6.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Found 37 images matching 'France holiday' from 2023, exc
+     8.26s  user  발화 시작: Mhm.
+     8.89s  user  발화 끝
+    10.49s  agent 발화 끝
+    11.14s  user  발화 시작: Can you show me just the ones from Paris?
+    13.36s  <ret> 발화 (turn4 첫 프레임)
+    13.51s  agent 발화 시작: <ret> Okay, I’ve filtered those down to twelve photos tagged
+    13.68s  user  발화 끝
+    15.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) Filtered to 12 images tagged 'Paris' from the previous s
+    16.22s  user  발화 시작: Yeah.
+    16.71s  user  발화 끝
+    17.91s  agent 발화 끝
+    18.36s  user  발화 시작: That's great, thanks.
+    19.52s  agent 발화 시작: You’re very welcome! It’s good to revisit happy memories, is
+    19.60s  user  발화 끝
+    26.19s  agent 발화 끝

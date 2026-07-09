@@ -55,27 +55,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, that’s good. But… I wonder if | S3 Okay, good. So, that means website | S4 Right. Well, thanks. That’s all fo
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, that’s good. But— I mean, wil | S3 Oh. Okay, well… could you find my  | S4 No, that’s alright. Thanks. I thin
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     5.08s  <ret> 발화 (turn1 첫 프레임)
-     5.10s  user  발화 끝
-     5.39s  agent 발화 시작: <ret> Certainly. I’ve set your user agent to SuperCrawler ve
-     6.12s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.62s]: (tool result) User agent set to SuperCrawler version 10.1.
-     9.32s  user  발화 시작: Mhm.
-     9.82s  user  발화 끝
-    13.83s  user  발화 시작: Hmm, that’s good. But… I wonder if that actually worked? Cou
-    14.01s  agent 발화 끝
-    20.74s  <ret> 발화 (turn4 첫 프레임)
-    20.97s  agent 발화 시작: <ret> [laugh] It appears it did! The current user agent is, 
-    21.15s  user  발화 끝
-    22.50s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.41s]: (tool result) Current user agent: SuperCrawler version 10.1.
-    28.35s  user  발화 시작: Okay, good. So, that means websites will see me as… a crawle
-    28.38s  agent 발화 끝
-    34.10s  user  발화 끝
-    34.28s  agent 발화 시작: That’s correct. Websites will identify your browser as Super
-    43.96s  agent 발화 끝
-    44.56s  user  발화 시작: Right. Well, thanks. That’s all for now, I think.
-    47.65s  agent 발화 시작: You’re very welcome. It’s often helpful to adjust these sett
-    47.80s  user  발화 끝
-    54.74s  agent 발화 끝
+     5.13s  user  발화 끝
+     5.14s  <ret> 발화 (turn1 첫 프레임)
+     5.45s  agent 발화 시작: <ret> Certainly. I’ve set your user agent to SuperCrawler ve
+     6.18s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.97s]: (tool result) User agent set to SuperCrawler version 10.1
+     9.07s  user  발화 시작: Mhm.
+     9.57s  user  발화 끝
+    13.24s  user  발화 시작: Hmm, that’s good. But— I mean, will that hide my location to
+    13.42s  agent 발화 끝
+    18.23s  agent 발화 시작: Changing the user agent primarily affects how websites ident
+    18.34s  user  발화 끝
+    30.35s  user  발화 시작: Oh. Okay, well… could you find my IP address then?
+    30.38s  agent 발화 끝
+    34.74s  <ret> 발화 (turn6 첫 프레임)
+    34.84s  user  발화 끝
+    35.06s  agent 발화 시작: <ret> Your current IP address is two-zero-three dot zero dot
+    35.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=11.22s]: (tool result) Your IP address is 203.0.113.42
+    46.29s  agent 발화 끝
+    46.93s  user  발화 시작: No, that’s alright. Thanks. I think I'm good for now.
+    50.03s  user  발화 끝

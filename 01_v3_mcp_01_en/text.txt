@@ -60,33 +60,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.79s][moshi] Certainly. I can generate a sitemap for Apple’s website, highlighting the product sections—
-[ 10.41s][moshi] ⟨ret@10.17s⟩ Apple’s product ⟦⚡SPAN@12.17s: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & Home, Entertainment, Accessories. Suppor⟧ sections include iPhone, iPad, Mac, Apple Watch, AirPods, and more.
+[  4.52s][moshi] ⟨ret@4.45s⟩ I’ve mapped ⟦⚡SPAN@5.73s: (tool result) Sitemap generated: 127 product pages identified.⟧ one hundred and twenty-seven product pages on Apple’s site for you.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
-[ 13.14s][user ] «backchannel» Okay.
-[ 17.11s][user ] Hmm, that's good. Does it show where the refurbished products are listed?
-[ 21.22s][moshi] I can re-scan the Apple website to locate the refurbished products section—
-[ 26.73s][moshi] ⟨ret@26.33s⟩ Apple lists its ⟦⚡SPAN@28.33s: (tool result) Refurbished Products: Listed under “Apple Certified Refurbished” in the main navigation footer.⟧ certified refurbished products in the website’s main navigation footer.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "refurbished products"}}
-[ 28.91s][user ] «backchannel» Right.
-[ 32.26s][user ] Is there a separate map just for the support pages?
-[ 35.29s][moshi] That’s a great idea—
-[ 37.06s][moshi] ⟨ret@36.83s⟩ The Apple support ⟦⚡SPAN@38.83s: (tool result) Support Pages: Documentation, User Guides, Downloads, Troubleshooting, AppleCare, Repair, Contac⟧ site maps documentation, user guides, troubleshooting, and contact options.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/support", "focus": "all support pages"}}
-[ 40.26s][user ] «backchannel» Uh-huh.
-[ 42.93s][moshi] I find that mapping support pages is useful when you're planning to troubleshoot something— it's a bit like preparing for a journey.
-[ 50.15s][user ] Okay, that’s helpful. I'm thinking about getting a new iPad. Can you find me the current price of the iPad Air, 6th generation, with 256GB of storage?
-[ 62.03s][moshi] Absolutely. Let me check the current pricing for that configuration—
-[ 66.62s][moshi] ⟨ret@66.22s⟩ The iPad ⟦⚡SPAN@68.22s: (tool result) iPad Air (6th generation) 256GB: $699.00⟧ Air, 6th generation, with 256GB of storage currently costs six hundred and ninety-nine dollars.
-      CALL: {"function": "check-price", "arguments": {"product": "iPad Air (6th generation)", "storage": "256GB"}}
-[ 75.49s][user ] Six-ninety-nine… that’s more than I expected. Are there any current discounts or promotions on iPads?
-[ 82.46s][moshi] Let me check for active promotions on iPads—
-[ 85.84s][moshi] ⟨ret@85.68s⟩ Apple is currently offering ⟦⚡SPAN@87.68s: (tool result) iPad Promotions: $50 Apple Store gift card with purchase of select iPad models. Student discount⟧ a fifty-dollar gift card with select iPad purchases. Student discounts are also available.
-      CALL: {"function": "check-promotions", "arguments": {"product": "iPad"}}
-[ 94.16s][user ] Oh, a gift card! That’s good to know. Can you add a reminder to my calendar to check the Apple Store for iPad deals next week?
-[102.62s][moshi] Of course. What day and time would you like the reminder set for?
-[105.41s][user ] «backchannel» Yeah.
-[107.80s][user ] Next Tuesday at 2 PM.
-[110.42s][moshi] Certainly. I’ve set a reminder for next Tuesday at two PM to check for iPad deals at the Apple Store—
-[117.64s][moshi] ⟨ret@117.33s⟩ Your reminder is set ⟦⚡SPAN@119.33s: (tool result) Reminder set: Tuesday at 2:00 PM - Check Apple Store for iPad deals.⟧ for Tuesday at 2 PM to check for iPad deals.
-      CALL: {"function": "set-reminder", "arguments": {"date": "next Tuesday", "time": "2 PM", "task": "check Apple Store for iPad deals"}}
+[  6.71s][user ] «backchannel» Okay.
+[  9.71s][user ] That’s… a lot. Can you just show me the ⟨ret@13.51s⟩ iPhones?
+[ 13.90s][moshi] The map now ⟦⚡SPAN@15.51s: (tool result) Sitemap generated: 11 iPhone product pages identified.⟧ shows eleven pages dedicated to iPhone products.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "iPhone"}}
+[ 16.56s][user ] «backchannel» Uh-huh.
+[ 18.85s][user ] Are those all the current iPhone ⟨ret@20.90s⟩ models?
+[ 21.29s][moshi] Currently, Apple ⟦⚡SPAN@22.90s: (tool result) Current models: iPhone 15, 15 Pro, 15 Pro Max, 15 Plus.⟧ lists the iPhone fifteen, fifteen Pro, fifteen Pro Max, and fifteen Plus.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone", "focus": "models"}}
+[ 24.35s][user ] «backchannel» Right.
+[ 29.27s][user ] Okay, good. I’m thinking of getting a fifteen Pro Max. What colors are ⟨ret@34.69s⟩ available?
+[ 34.92s][moshi] The iPhone fifteen ⟦⚡SPAN@36.69s: (tool result) Available colors: Black Titanium, White Titanium, Blue Titanium, Natural Titanium.⟧ Pro Max is offered in Black Titanium, White Titanium, Blue Titanium, and Natural Titanium.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone-15-pro/specs/", "focus": "colors"}}
+[ 42.07s][user ] Natural Titanium sounds interesting. Is that new?
+[ 46.10s][moshi] Yes, Natural Titanium is a new finish introduced with the iPhone fifteen Pro models—[source: Apple Newsroom] It replaces the previous silver option.
+[ 57.94s][user ] Hmm. Can you find me the best deal on a Natural Titanium iPhone fifteen Pro Max, two hundred fifty-six gigabytes?
+[ 65.89s][moshi] ⟨ret@65.49s⟩ Best Buy currently ⟦⚡SPAN@67.49s: (tool result) Best price: $1199 at Best Buy, in stock.⟧ offers the two hundred fifty-six gigabyte Natural Titanium iPhone fifteen Pro Max for eleven ninety-nine dollars, and it’s in stock.
+      CALL: {"function": "tavily-shop", "arguments": {"item": "iPhone 15 Pro Max", "storage": "256GB", "color": "Natural Titanium"}}

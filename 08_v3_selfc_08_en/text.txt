@@ -56,66 +56,36 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.89s⟩ May tenth.
-[  4.28s][moshi] Certainly, let’s explore ⟦⚡SPAN@5.89s: (tool result) 10:30 AM departure, Greyhound, $225 per person. 7:00 PM departure, Jefferson Lines, $250 per per⟧ bus options for your trip. There are two options: 10:30 AM with Greyhound at two hundred twenty-five dollars, or 7:00 PM with Jefferson Lines at two hundred fifty dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
-[ 14.08s][user ] «backchannel» Oh.
-[ 19.42s][user ] And what about the Jefferson Lines bus – does that one have Wi-Fi?
-[ 23.38s][moshi] ⟨ret@23.15s⟩ Yes, the Jefferson ⟦⚡SPAN@25.15s: (tool result) Wi-Fi available. Power outlets at each seat. Restroom on board.⟧ Lines bus has Wi-Fi and power outlets, plus a restroom.
-      CALL: {"function": "Buses_3_CheckAmenities", "arguments": {"bus_company": "Jefferson Lines", "route": "Chicago to Denver", "date": "May tenth"}}
-[ 29.57s][user ] That sounds better. Book three tickets on the Jefferson Lines bus for May ⟨ret@33.92s⟩ tenth.
-[ 34.08s][moshi] I’m happy ⟦⚡SPAN@35.52s: (tool result) Booking confirmed. Reference number: JL8742. Total cost: $750.⟧ to reserve those seats for you. Your booking is confirmed, reference JL8742. The total is seven hundred fifty dollars.
-      CALL: {"function": "Buses_3_BookTickets", "arguments": {"bus_company": "Jefferson Lines", "route": "Chicago to Denver", "date": "May tenth", "num_passengers": 3}}
-[ 41.39s][user ] «backchannel» Really?
-[ 46.11s][user ] Perfect. Could you also find me a hotel in Denver near the bus station?
-[ 51.05s][moshi] ⟨ret@50.66s⟩ ⟦⚡SPAN@51.16s: (tool result) The Maven Hotel at Dairy Block: $189/night. Hampton Inn Denver Downtown: $150/night.⟧ The Maven Hotel is one hundred eighty-nine dollars a night, and the Hampton Inn is one hundred fifty.
-      CALL: {"function": "Hotels_2_FindHotels", "arguments": {"city": "Denver", "proximity": "bus station"}}
-[ 58.81s][user ] The Hampton Inn sounds good. What’s their ⟨ret@61.89s⟩ cancellation policy?
-[ 62.29s][moshi] You can cancel ⟦⚡SPAN@63.89s: (tool result) Free cancellation up to 24 hours before check-in.⟧ for free up to twenty-four hours before your check-in date.
-      CALL: {"function": "Hotels_2_GetCancellationPolicy", "arguments": {"hotel_name": "Hampton Inn Denver Downtown"}}
-[ 68.49s][user ] Great. Book a room there for one night, May ⟨ret@71.15s⟩ tenth.
-[ 71.38s][moshi] Your room ⟦⚡SPAN@73.15s: (tool result) Room booked. Confirmation number: HI9215. Total: $150.⟧ is booked, confirmation HI9215, totaling one hundred fifty dollars.
-      CALL: {"function": "Hotels_2_BookRoom", "arguments": {"hotel_name": "Hampton Inn Denver Downtown", "check_in_date": "May tenth", "num_nights": 1}}
-[ 77.09s][user ] «backchannel» Okay.
-[ 79.41s][user ] Okay, and can you set a reminder to pack my travel documents the day ⟨ret@83.59s⟩ before?
-[ 83.83s][moshi] I can ⟦⚡SPAN@84.87s: (tool result) Reminder set for May ninth at 9:00 AM.⟧ absolutely help you with that. A reminder to pack your documents is set for May ninth at nine AM.
-      CALL: {"function": "Reminders_1_SetReminder", "arguments": {"reminder_text": "Pack travel documents", "reminder_date": "May ninth"}}
-[ 88.72s][user ] «backchannel» Right.
-[ 92.69s][user ] That’s wonderful. Actually.
-[ 94.86s][moshi] «interrupted» I was just thinking about how important preparation is for—
-[ 97.69s][user ] «interrupts_prev» Is there a good coffee shop near the Hampton ⟨ret@100.54s⟩ Inn?
-[100.62s][moshi] A good ⟦⚡SPAN@102.06s: (tool result) Little Owl Coffee: 0.2 miles. Pablo's Coffee: 0.3 miles.⟧ question! Let's see what's nearby. Little Owl Coffee is point two miles away, and Pablo’s Coffee is point three.
-      CALL: {"function": "Places_1_FindPlaces", "arguments": {"place_type": "coffee shop", "proximity": "Hampton Inn Denver Downtown"}}
-[105.16s][user ] «backchannel» Yeah.
-[110.47s][user ] Little Owl sounds nice. What are their hours on May ⟨ret@114.31s⟩ tenth?
-[114.71s][moshi] Little Owl Coffee ⟦⚡SPAN@116.31s: (tool result) 7:00 AM to 6:00 PM.⟧ is open from seven AM to six PM on May tenth.
-      CALL: {"function": "Places_1_GetHours", "arguments": {"place_name": "Little Owl Coffee", "date": "May tenth"}}
-[116.94s][user ] «backchannel» Yeah, totally.
-[120.33s][user ] Perfect. Can you add a note to my reminder to stop there before checking into the hotel?
-[125.60s][moshi] ⟨ret@125.52s⟩ ⟦⚡SPAN@126.02s: (tool result) Reminder updated.⟧ I can certainly append that to your existing reminder. Your reminder has been updated to include a stop at Little Owl Coffee.
-      CALL: {"function": "Reminders_1_UpdateReminder", "arguments": {"reminder_id": "May ninth 9:00 AM", "update_text": "Stop at Little Owl Coffee"}}
-[135.17s][user ] That’s fantastic, thank you. Do you think it’s a good idea to bring a book on the bus?
-[139.66s][moshi] Absolutely. A book can be a wonderful companion during travel, offering a peaceful distraction.
-[144.23s][user ] «backchannel» Yeah.
-[146.95s][user ] I think I’ll download an audiobook instead.
-[149.77s][moshi] That’s a great alternative! Audiobooks can be particularly enjoyable on longer journeys.
-[152.93s][user ] «backchannel» Yeah.
-[156.44s][user ] What’s the weather forecast for Denver on May tenth?
-[159.67s][moshi] ⟨ret@159.60s⟩ The forecast for May ⟦⚡SPAN@161.60s: (tool result) High of 75°F, sunny. Low of 55°F.⟧ tenth is sunny with a high of seventy-five and a low of fifty-five.
-      CALL: {"function": "Weather_1_GetForecast", "arguments": {"city": "Denver", "date": "May tenth"}}
-[166.13s][user ] Good to know. I think I’m all set then.
-[168.93s][moshi] That’s wonderful to hear. It sounds like you’ve made excellent preparations for your trip.
-[174.65s][user ] I’m a little anxious about traveling alone though.
-[177.51s][moshi] It’s perfectly natural to feel some anxiety when traveling solo. Acknowledging those feelings is the first step.
-[186.04s][user ] I just worry about getting lost or something.
-[188.99s][moshi] That’s a valid concern. Perhaps downloading offline maps could offer some reassurance?
-[191.96s][user ] «backchannel» Yeah, totally.
-[195.67s][user ] That's a good idea. Could you find me an offline map of ⟨ret@199.56s⟩ Denver?
-[199.88s][moshi] I ⟦⚡SPAN@200.60s: (tool result) Offline map downloaded to your device.⟧ can certainly help you locate a good offline map. An offline map of Denver has been downloaded to your device for easy access.
-      CALL: {"function": "Maps_1_DownloadOfflineMap", "arguments": {"city": "Denver"}}
-[202.95s][user ] «backchannel» Okay.
-[209.62s][user ] Oh, perfect! That really helps.
-[211.77s][moshi] I’m glad I could provide some peace of mind. Remember, it’s okay to ask for help if you need it.
-[216.26s][user ] «backchannel» Mm-hmm.
-[217.97s][user ] Thank you, Oruus. You've been very helpful.
-[220.63s][moshi] You’re most welcome. I’m here to support you in any way I can. Safe travels, and remember to be kind to yourself.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.09s⟩ May tenth.
+[  4.49s][moshi] There's a bus ⟦⚡SPAN@6.09s: (tool result) 10:15 AM departure, $285 per person, arrives 6:00 PM.⟧ departing at ten fifteen AM, costing two hundred eighty-five dollars per person, arriving at six PM.
+[  8.11s][user ] «backchannel» Yeah.
+[ 13.41s][user ] That sounds good. Can you book that for us?
+[ 16.07s][moshi] ⟨ret@15.83s⟩ Absolutely, I ⟦⚡SPAN@17.11s: (tool result) Booking confirmed. Reference number is 7X9L2P.⟧ can take care of that. Your booking is confirmed, reference number seven X nine L two P.
+[ 24.24s][user ] Perfect. And what’s the baggage allowance on that ⟨ret@27.53s⟩ bus?
+[ 27.69s][moshi] Each passenger is ⟦⚡SPAN@29.53s: (tool result) One checked bag and one carry-on allowed per passenger.⟧ allowed one checked bag and one carry-on item.
+[ 33.37s][user ] Great. Do they have Wi-Fi on ⟨ret@35.51s⟩ board?
+[ 35.91s][moshi] ⟦⚡SPAN@36.01s: (tool result) Yes, free Wi-Fi is available during the journey.⟧ That’s a good question to ask. Yes, free Wi-Fi is available throughout the bus ride.
+[ 40.38s][user ] «backchannel» Yeah.
+[ 45.46s][user ] Excellent. Is there power at the ⟨ret@48.14s⟩ seats?
+[ 48.54s][moshi] Yes, each seat ⟦⚡SPAN@50.14s: (tool result) Power outlets are available at each seat.⟧ has access to a power outlet.
+[ 52.72s][user ] Wonderful. Uh, actually—
+[ 54.97s][user ] What about food options along the way?
+[ 57.75s][moshi] ⟨ret@57.52s⟩ That’s ⟦⚡SPAN@58.72s: (tool result) Limited snacks and drinks available for purchase.⟧ a very practical consideration. Limited snacks and beverages are available for purchase on the bus.
+[ 66.11s][user ] Okay. And roughly how long is the ⟨ret@68.44s⟩ journey?
+[ 68.68s][moshi] The estimated journey ⟦⚡SPAN@70.44s: (tool result) Estimated travel time is eight hours and forty-five minutes.⟧ duration is eight hours and forty-five minutes.
+[ 75.99s][user ] Eight and a half hours… hmm. Could we look at flights instead? For the same ⟨ret@81.17s⟩ date?
+[ 81.33s][moshi] Of course, we ⟦⚡SPAN@83.17s: (tool result) Cheapest flight: $350, departs 8:00 AM, arrives 10:30 AM.⟧ can explore flight options. The cheapest flight departs at eight AM, arriving at ten thirty AM, costing three hundred fifty dollars.
+[ 89.15s][user ] «backchannel» Mhm.
+[ 92.70s][user ] That’s a bit pricey. Are there any flights ⟨ret@95.64s⟩ around noon?
+[ 96.04s][moshi] A flight departing ⟦⚡SPAN@97.64s: (tool result) Noon flight: $420, departs 12:15 PM, arrives 2:45 PM.⟧ at twelve fifteen PM costs four hundred twenty dollars and arrives at two forty-five PM.
+[104.28s][user ] Four twenty… hmm. Actually, make that 1 PM. I— I mean, check for flights departing around 1 ⟨ret@112.25s⟩ PM.
+[112.64s][moshi] There’s a flight ⟦⚡SPAN@114.25s: (tool result) 1:00 PM flight: $380, departs 1:05 PM, arrives 3:35 PM.⟧ departing at one oh five PM, costing three hundred eighty dollars, arriving at three thirty-five PM.
+[117.74s][user ] «backchannel» Right.
+[122.70s][user ] Three eighty sounds much better. Can we book that one?
+[126.04s][moshi] ⟨ret@125.96s⟩ ⟦⚡SPAN@126.46s: (tool result) Flight booked. Confirmation number is QW3R8T.⟧ Absolutely, let's secure that flight for you. Your flight is booked, confirmation number Q W three R eight T.
+[130.05s][user ] «backchannel» Yeah.
+[134.76s][user ] Perfect. And could you send me a copy of the itinerary to my ⟨ret@139.17s⟩ email?
+[139.49s][moshi] Of course, ⟦⚡SPAN@140.61s: (tool result) Itinerary sent to your registered email address.⟧ I can forward the itinerary. The itinerary has been sent to the email address on file.
+[142.11s][user ] «backchannel» Yeah, totally.
+[146.86s][user ] Thank you so much, Oruus. You’ve been a great help.
+[149.81s][moshi] It’s my pleasure to assist you. Taking care of travel arrangements can be a little stressful, and I'm glad I could offer some peace of mind.

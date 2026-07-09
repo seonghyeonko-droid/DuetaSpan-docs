@@ -58,105 +58,109 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 주니 카페 가격대는 어떻게 돼요? | S2 시간당 십달러면, 두시간 주차하면 이십달러네요. | S3 아, 오늘 저녁은 안 되는군요. 그럼 내일 저녁은 어때요? | S4 정말 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 주니 카페의 가격대는 어떻게 돼요? | S2 지금 바로 내비게이션 시작해 줄 수 있어요? | S3 예약을 도와줄 수 있어요? 오늘 저녁 일곱시에 두 명으로 예약 | S4 주니 카페의 분위기는 어떤가요?
 
-     0.00s  user  발화 시작: 주니 카페 가격대는 어떻게 돼요?
-     1.66s  <ret> 발화 (turn1 첫 프레임)
-     1.97s  agent 발화 시작: <ret> 주니 카페의 가격대는 삼십달러에서 육십달러 사이입니다.
-     2.08s  user  발화 끝
-     3.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.55s]: (tool result) price_range: "$30 - $60"
-     5.52s  agent 발화 끝
-     5.96s  user  발화 시작: 아, 그렇군요. 거기 주차는 가능한가요?
-     8.64s  <ret> 발화 (turn3 첫 프레임)
-     8.69s  user  발화 끝
-     8.95s  agent 발화 시작: <ret> 주차 가능 여부도 알아봐 드릴게요.
-     9.60s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.12s]: (tool result) parking: "Valet parking available"
-    10.93s  agent 발화 시작: 주니 카페에는 발레 파킹이 가능합니다.
-    11.08s  agent 발화 끝
-    13.50s  user  발화 시작: 발레 파킹이요? 비용은 얼마예요?
-    13.70s  agent 발화 끝
-    15.37s  <ret> 발화 (turn6 첫 프레임)
-    15.38s  user  발화 끝
-    15.45s  agent 발화 시작: <ret> 발레 파킹 비용을 확인해 보겠습니다.
-    17.27s  agent 발화 시작: 발레 파킹은 시간당 십달러입니다.
-    17.29s  ⚡SPAN 주입 [d'=1.92s / d_lead=1.93s]: (tool result) valet_parking_cost: "$10 per hour"
-    17.37s  agent 발화 끝
-    19.77s  user  발화 시작: 시간당 십달러면, 두시간 주차하면 이십달러네요.
-    19.85s  agent 발화 끝
-    23.36s  agent 발화 시작: 맞습니다. 두시간 주차하시면 이십달러가 되겠네요.
-    23.52s  user  발화 끝
-    24.52s  user  발화 시작: 그렇군요.
-    25.35s  user  발화 끝
-    26.50s  <ret> 발화 (turn11 첫 프레임)
-    26.65s  agent 발화 시작: <ret> 주니 카페는 예약도 가능한가요? 예약하려면 어떻게 해야 할까요?
-    26.92s  agent 발화 끝
-    27.46s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.02s]: (tool result) reservations: "Reservations accepted via phone or online
-    30.53s  agent 발화 시작: 전화나 온라인으로 예약하실 수 있습니다.
-    30.67s  agent 발화 끝
-    33.12s  agent 발화 끝
-    33.47s  user  발화 시작: 전화번호가 어떻게 돼요?
-    34.84s  <ret> 발화 (turn14 첫 프레임)
-    34.91s  agent 발화 시작: <ret> 주니 카페의 전화번호는 사 일 오 칠 칠 오 팔 오 공 칠입니다.
-    34.94s  user  발화 끝
-    36.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.61s]: (tool result) phone_number: "415-775-8507"
-    38.49s  agent 발화 시작: 전화번호는 사 일 오 칠 칠 오 팔 오 공 칠입니다.
-    38.52s  agent 발화 끝
-    42.01s  agent 발화 끝
-    42.42s  user  발화 시작: 혹시 지금 전화해서 예약하려고 하는데, 자리가 있을까요?
-    45.88s  <ret> 발화 (turn17 첫 프레임)
-    45.95s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
-    46.02s  user  발화 끝
-    46.91s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.52s]: (tool result) availability: "Currently fully booked for tonight"
-    47.28s  agent 발화 시작: 오늘 저녁은 예약이 다 찼습니다. —
-    47.46s  agent 발화 끝
-    49.01s  user  발화 시작: 아, 오늘 저녁은 안 되는군요. 그럼 내일 저녁은 어때요?
-    49.68s  agent 발화 끝
-    52.44s  <ret> 발화 (turn20 첫 프레임)
-    52.62s  user  발화 끝
-    52.67s  agent 발화 시작: <ret> 내일 저녁 예약 가능 여부를 확인해 보겠습니다.
-    54.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: (tool result) availability: "Limited availability for tomorrow evening
-    55.93s  agent 발화 시작: 내일 저녁은 자리가 몇 개 남았습니다.
-    56.05s  agent 발화 끝
-    56.77s  user  발화 시작: 그렇죠.
-    57.27s  user  발화 끝
-    58.29s  user  발화 시작: 몇 시에 자리가 있나요?
-    58.52s  agent 발화 끝
-    59.55s  <ret> 발화 (turn24 첫 프레임)
-    59.71s  agent 발화 시작: <ret> 가능한 시간대를 알려드릴게요.
-    59.71s  user  발화 끝
-    60.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.66s]: (tool result) available_times: "7:00 PM, 8:30 PM"
-    61.26s  agent 발화 시작: 일곱시와 여덟시 삼십분에 자리가 있습니다.
-    61.36s  agent 발화 끝
-    63.56s  agent 발화 끝
-    64.52s  user  발화 시작: 일곱시로 예약해 주세요. 두명입니다.
-    67.90s  <ret> 발화 (turn27 첫 프레임)
-    68.05s  agent 발화 시작: <ret> 네, 일곱시에 두명으로 예약 진행해 드릴게요.
-    68.22s  user  발화 끝
-    69.26s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.58s]: (tool result) reservation_confirmation: "Reservation confirmed for 2 p
-    70.63s  agent 발화 끝
-    70.71s  agent 발화 시작: 내일 일곱시에 두명으로 예약이 확정되었습니다.
-    73.67s  user  발화 시작: 정말 감사합니다.
-    73.86s  agent 발화 끝
-    74.96s  user  발화 끝
-    75.36s  agent 발화 시작: 천만에요. 혹시 주니 카페 주변에 다른 맛집도 추천해 드릴까요?
-    77.48s  user  발화 시작: 네.
-    77.79s  user  발화 끝
-    80.03s  agent 발화 끝
-    80.31s  user  발화 시작: 주변에 좋은 이탈리안 레스토랑이 있을까요?
-    82.52s  <ret> 발화 (turn33 첫 프레임)
-    82.91s  agent 발화 시작: <ret> 주변 이탈리안 레스토랑을 찾아볼게요.
-    83.17s  user  발화 끝
-    83.48s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.54s]: (tool result) nearby_italian_restaurants: "Sotto Mare, Tony's Pizza Na
-    85.33s  agent 발화 시작: 소토 마레와 토니의 피자 나폴레타나가 주변에 있습니다.
-    85.45s  agent 발화 끝
-    86.50s  user  발화 시작: 네네.
-    86.95s  user  발화 끝
-    88.42s  user  발화 시작: 토니의 피자 나폴레타나가 맛있다고 들었는데, 거기는 예약이 필요한가요?
-    88.48s  agent 발화 끝
-    92.90s  <ret> 발화 (turn37 첫 프레임)
-    92.97s  agent 발화 시작: <ret> 토니의 피자 나폴레타나의 예약 가능 여부를 확인해 보겠습니다.
-    93.10s  user  발화 끝
-    94.50s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.02s]: (tool result) reservations_tonys: "Reservations highly recommended"
-    96.92s  agent 발화 시작: 토니의 피자 나폴레타나는 예약하시는 게 좋습니다.
-    96.99s  agent 발화 끝
-   100.16s  agent 발화 끝
+     0.00s  user  발화 시작: 주니 카페의 가격대는 어떻게 돼요?
+     1.85s  <ret> 발화 (turn1 첫 프레임)
+     2.15s  agent 발화 시작: <ret> 알겠습니다. 주니 카페의 가격대는 달러 표시 두 개입니다.
+     2.26s  user  발화 끝
+     2.31s  ⚡SPAN 주입 [d'=0.46s / d_lead=0.46s]: (tool result) $$
+     3.79s  user  발화 시작: 맞아요.
+     4.33s  user  발화 끝
+     5.85s  agent 발화 끝
+     6.07s  user  발화 시작: 달러 표시 두 개가 어느 정도 가격대예요?
+     8.51s  user  발화 끝
+     9.08s  agent 발화 시작: 보통 일인당 삼십달러에서 육십달러 정도의 식사 비용을 예상하시면 됩니다.
+    14.22s  user  발화 시작: 주니 카페는 지금 영업하고 있어요?
+    14.26s  agent 발화 끝
+    15.90s  <ret> 발화 (turn6 첫 프레임)
+    16.29s  agent 발화 시작: <ret> 지금 영업 중이고, 오늘 밤 열시에 문을 닫습니다.
+    16.34s  user  발화 끝
+    17.42s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.47s]: (tool result) Open now. Closes 10:00 PM.
+    17.83s  user  발화 시작: 정말요?
+    18.55s  user  발화 끝
+    19.76s  agent 발화 끝
+    20.51s  user  발화 시작: 주니 카페까지 가는 가장 빠른 길은 어떻게 돼요?
+    22.85s  <ret> 발화 (turn9 첫 프레임)
+    23.08s  agent 발화 시작: <ret> 차로 약 육분, 일 점 육마일 정도 거리입니다.
+    23.09s  user  발화 끝
+    24.21s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.70s]: (tool result) 1.6 miles, approximately 6 minutes by car.
+    24.84s  user  발화 시작: 네.
+    25.24s  user  발화 끝
+    26.78s  agent 발화 끝
+    27.49s  user  발화 시작: 지금 바로 내비게이션 시작해 줄 수 있어요?
+    29.84s  <ret> 발화 (turn12 첫 프레임)
+    30.12s  user  발화 끝
+    30.15s  agent 발화 시작: <ret> 주니 카페로 가는 내비게이션을 시작했습니다.
+    31.44s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.59s]: (tool result) Navigation started to Zuni Cafe.
+    32.74s  agent 발화 끝
+    33.26s  user  발화 시작: 주니 카페 근처에 주차는 어디가 편리해요?
+    36.16s  user  발화 끝
+    36.20s  <ret> 발화 (turn14 첫 프레임)
+    36.27s  agent 발화 시작: <ret> 천육백오십팔 Market Street에 공영 주차장이 있습니다.
+    37.16s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.70s]: (tool result) Public parking available at 1658 Market St.
+    39.97s  agent 발화 끝
+    40.49s  user  발화 시작: 그 주차장까지 가는 길도 알려줄 수 있어요?
+    42.44s  <ret> 발화 (turn16 첫 프레임)
+    42.83s  agent 발화 시작: <ret> 차로 약 사분, 영 점 팔마일 정도 거리입니다.
+    42.89s  user  발화 끝
+    44.12s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.19s]: (tool result) 0.8 miles, approximately 4 minutes by car.
+    45.77s  user  발화 시작: 주니 카페에는 예약이 가능한가요?
+    46.02s  agent 발화 끝
+    47.85s  user  발화 끝
+    47.89s  <ret> 발화 (turn18 첫 프레임)
+    47.96s  agent 발화 시작: <ret> 예약하시는 것이 좋습니다.
+    48.93s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.70s]: (tool result) Reservations recommended.
+    49.19s  user  발화 시작: 예약을 도와줄 수 있어요? 오늘 저녁 일곱시에 두 명으로 예약하고 싶어요.
+    49.66s  agent 발화 끝
+    53.30s  <ret> 발화 (turn20 첫 프레임)
+    53.54s  agent 발화 시작: <ret> 오늘 저녁 일곱시에 두 명으로 주니 카페 예약을 확정했습니다. 확인 번호는 ZX1234입니다.
+    53.54s  user  발화 끝
+    54.34s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.55s]: (tool result) Reservation confirmed for 2 people at Zuni Cafe at 7:00 
+    60.83s  user  발화 시작: 혹시 주니 카페의 대표 메뉴가 뭐예요?
+    61.08s  agent 발화 끝
+    62.97s  agent 발화 시작: 주니 카페는 로스트 치킨으로 아주 유명합니다.
+    63.09s  user  발화 끝
+    66.34s  agent 발화 끝
+    66.88s  user  발화 시작: 로스트 치킨 외에 다른 추천 메뉴도 있을까요?
+    69.41s  agent 발화 시작: 굴 요리도 많은 분들이 좋아하시고, 특히 겨울철에 인기가 많습니다—
+    69.45s  user  발화 끝
+    72.86s  user  발화 시작: 굴 요리가 겨울에만 있는 거예요?
+    73.52s  agent 발화 끝
+    75.44s  user  발화 끝
+    75.46s  agent 발화 시작: 네, 신선도를 위해 겨울에만 제공되는 경우가 많습니다.
+    77.61s  user  발화 시작: 네.
+    77.96s  user  발화 끝
+    78.93s  agent 발화 시작: 주니 카페는 신선한 재료를 사용하는 것으로도 알려져 있습니다.
+    79.02s  agent 발화 끝
+    80.78s  user  발화 시작: 네.
+    81.23s  user  발화 끝
+    82.68s  agent 발화 끝
+    83.04s  user  발화 시작: 주니 카페의 분위기는 어떤가요?
+    84.81s  <ret> 발화 (turn31 첫 프레임)
+    85.12s  user  발화 끝
+    85.12s  agent 발화 시작: <ret> 활기차고 고급스러운 분위기의 클래식한 레스토랑입니다.
+    86.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: (tool result) Lively, upscale, and classic.
+    86.87s  user  발화 시작: 그렇죠.
+    87.37s  user  발화 끝
+    88.87s  agent 발화 끝
+    89.01s  user  발화 시작: 주니 카페에 반려동물을 데려갈 수 있나요?
+    91.67s  <ret> 발화 (turn34 첫 프레임)
+    91.90s  agent 발화 시작: <ret> 주니 카페는 반려동물 동반이 가능한지는 확인해봐야 합니다.
+    91.91s  user  발화 끝
+    93.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: (tool result) Pets are not allowed.
+    95.73s  agent 발화 시작: 죄송합니다. 주니 카페는 반려동물 동반이 허용되지 않습니다.
+    95.92s  agent 발화 끝
+    99.40s  user  발화 시작: 그럼, 반려동물 동반 가능한 근처 레스토랑을 추천해 줄 수 있어요?
+    99.43s  agent 발화 끝
+   103.52s  <ret> 발화 (turn37 첫 프레임)
+   103.75s  user  발화 끝
+   103.92s  agent 발화 시작: <ret> 파크 챌렛이 영 점 구마일 거리에 있고 반려동물 동반이 가능합니다.
+   104.72s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.45s]: (tool result) Park Chalet is 0.9 miles away and pet-friendly.
+   108.24s  user  발화 시작: 파크 챌렛까지 가는 길은 어떻게 돼요?
+   108.36s  agent 발화 끝
+   110.00s  <ret> 발화 (turn39 첫 프레임)
+   110.15s  agent 발화 시작: <ret> 차로 약 칠분, 일 점 이마일 정도 거리입니다.
+   110.17s  user  발화 끝
+   110.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.23s]: (tool result) 1.2 miles, approximately 7 minutes by car.
+   113.38s  agent 발화 끝

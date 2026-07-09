@@ -68,79 +68,77 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 That's perfect. | S3 Hmm, that’s not bad at all. | S4 Okay, good. Could you order a doze
+# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Perfect! | S3 Yes, please do that! | S4 Is there anything new on that?
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     4.01s  <ret> 발화 (turn1 첫 프레임)
-     4.25s  agent 발화 시작: <ret> Certainly. I’m now monitoring weather dot example dot 
-     4.35s  user  발화 끝
-     6.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) {"status": "success", "response": "Currently 72 degrees 
-     9.74s  agent 발화 시작: The current weather at weather dot example dot com is sevent
-     9.85s  agent 발화 끝
-    15.83s  user  발화 시작: Oh, good. Uh, I need to book a table for four at The Italian
-    15.85s  agent 발화 끝
-    21.16s  user  발화 끝
-    21.20s  agent 발화 시작: Of course. What time would you like the reservation to be?
-    22.76s  user  발화 시작: Right.
-    23.40s  user  발화 끝
-    24.92s  user  발화 시작: Around seven thirty, I think.
-    25.18s  agent 발화 끝
-    26.25s  <ret> 발화 (turn7 첫 프레임)
-    26.48s  agent 발화 시작: <ret> Your table for four at The Italian Place is confirmed 
-    26.67s  user  발화 끝
-    28.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) Reservation confirmed for four at The Italian Place tomo
-    33.75s  agent 발화 끝
-    33.91s  user  발화 시작: That's perfect.
-    34.96s  agent 발화 시작: I’m glad to hear it. Is there anything else I can help you w
-    35.10s  user  발화 끝
-    36.79s  user  발화 시작: Yeah.
-    37.28s  user  발화 끝
-    39.68s  agent 발화 끝
-    40.53s  user  발화 시작: Actually, yes. Could you remind me to take out the trash tom
-    45.67s  <ret> 발화 (turn12 첫 프레임)
-    45.80s  user  발화 끝
-    45.99s  agent 발화 시작: <ret> I've set a reminder for you to take out the trash tomo
-    46.17s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.49s]: (tool result) Reminder set for tomorrow at 8:00 AM: take out the trash
-    50.30s  user  발화 시작: Excellent. And can you tell me how long the drive to The Ita
-    50.48s  agent 발화 끝
-    55.23s  <ret> 발화 (turn14 첫 프레임)
-    55.30s  agent 발화 시작: <ret> Certainly, I can calculate that for you.
-    55.48s  user  발화 끝
-    56.83s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.73s]: (tool result) Drive to The Italian Place: 12 minutes, 5.8 miles.
-    58.02s  agent 발화 시작: The drive to The Italian Place is approximately twelve minut
-    58.02s  agent 발화 끝
-    60.35s  user  발화 시작: Yeah.
-    60.81s  user  발화 끝
-    64.08s  user  발화 시작: Hmm, that’s not bad at all.
-    64.13s  agent 발화 끝
-    66.16s  user  발화 끝
-    66.16s  agent 발화 시작: Not at all. It sounds like everything is shaping up nicely f
-    67.71s  user  발화 시작: Right.
-    68.35s  user  발화 끝
-    71.35s  agent 발화 끝
-    73.18s  user  발화 시작: I was thinking, maybe I should also get some flowers for the
-    77.42s  agent 발화 시작: That's a lovely thought. I can certainly help you with that.
-    77.58s  user  발화 끝
-    81.67s  agent 발화 끝
-    81.72s  user  발화 시작: Do you think roses are a good choice?
-    84.12s  user  발화 끝
-    84.13s  agent 발화 시작: Roses are always a classic and elegant choice, yes. They’re 
-    90.13s  user  발화 시작: Okay, good. Could you order a dozen red roses for delivery t
-    90.25s  agent 발화 끝
-    96.52s  <ret> 발화 (turn25 첫 프레임)
-    96.91s  agent 발화 시작: <ret> A dozen red roses have been ordered for delivery to Th
-    97.18s  user  발화 끝
-    98.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.50s]: (tool result) Order placed: 12 red roses to The Italian Place, deliver
-    99.87s  user  발화 시작: Oh.
-   100.37s  user  발화 끝
-   104.41s  agent 발화 끝
-   106.06s  user  발화 시작: Fantastic! You’re a lifesaver, Driaus.
-   109.48s  user  발화 끝
-   109.76s  agent 발화 시작: [happy] You are very welcome. I’m happy to assist in making 
-   111.33s  user  발화 시작: Mhm.
-   111.96s  user  발화 끝
-   115.15s  user  발화 시작: I think that’s all for now. Thanks again.
-   115.18s  agent 발화 끝
-   117.58s  agent 발화 시작: It was my pleasure. Enjoy your evening!
-   117.64s  user  발화 끝
-   120.91s  agent 발화 끝
+     4.35s  <ret> 발화 (turn1 첫 프레임)
+     4.58s  agent 발화 시작: <ret> Certainly. I’ll monitor weather dot example dot com fo
+     4.72s  user  발화 끝
+     6.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) Update received: Sunny, 22 degrees Celsius.
+    12.34s  agent 발화 시작: The current weather at weather dot example dot com is sunny 
+    12.42s  agent 발화 끝
+    19.43s  agent 발화 끝
+    19.45s  user  발화 시작: Oh, that’s good. I was worried it might rain for the picnic.
+    23.58s  agent 발화 시작: A picnic sounds lovely! Knowing the forecast ahead of time i
+    23.62s  user  발화 끝
+    26.27s  user  발화 시작: Uh-huh.
+    26.91s  user  발화 끝
+    29.09s  user  발화 시작: Right. Uh, can you book a table for four at The Olive Garden
+    29.28s  agent 발화 끝
+    34.29s  <ret> 발화 (turn7 첫 프레임)
+    34.69s  agent 발화 시작: <ret> Your table for four at The Olive Garden is confirmed f
+    34.88s  user  발화 끝
+    36.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) Reservation confirmed: The Olive Garden, 7:00 PM, party 
+    38.41s  user  발화 시작: Wow.
+    39.15s  user  발화 끝
+    43.22s  user  발화 시작: Perfect!
+    43.50s  agent 발화 끝
+    44.02s  agent 발화 시작: Wonderful. Is there anything else I can help you with regard
+    44.04s  user  발화 끝
+    46.88s  user  발화 시작: Yeah.
+    47.37s  user  발화 끝
+    50.00s  agent 발화 끝
+    50.83s  user  발화 시작: Actually, yes. What’s the traffic like on the way to The Oli
+    55.76s  <ret> 발화 (turn13 첫 프레임)
+    55.92s  user  발화 끝
+    56.08s  agent 발화 시작: <ret> The traffic to The Olive Garden is moderate, with an e
+    56.26s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.41s]: (tool result) Moderate traffic, estimated travel time 22 minutes.
+    63.27s  user  발화 시작: Hmm, okay.
+    63.50s  agent 발화 끝
+    64.67s  agent 발화 시작: I can also send a reminder ten minutes before your reservati
+    64.87s  user  발화 끝
+    67.51s  user  발화 시작: Right.
+    68.14s  user  발화 끝
+    68.97s  agent 발화 끝
+    69.45s  user  발화 시작: Yes, please do that!
+    71.00s  <ret> 발화 (turn18 첫 프레임)
+    71.32s  agent 발화 시작: <ret> A reminder for your dinner at The Olive Garden is set 
+    71.43s  user  발화 끝
+    72.36s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.86s]: (tool result) Reminder set: 6:50 PM, Dinner at The Olive Garden.
+    73.45s  user  발화 시작: Mhm.
+    74.04s  user  발화 끝
+    76.07s  agent 발화 시작: I find setting reminders helps keep things flowing smoothly 
+    76.18s  agent 발화 끝
+    78.42s  user  발화 시작: Yeah.
+    78.78s  user  발화 끝
+    82.37s  agent 발화 끝
+    82.58s  user  발화 시작: That’s true. What about… uh, the news? Any major headlines?
+    87.19s  agent 발화 시작: [sigh] I can certainly summarize the top headlines for you, 
+    87.25s  user  발화 끝
+    93.39s  user  발화 시작: Yeah.
+    93.83s  user  발화 끝
+    95.44s  user  발화 시작: Okay, fair enough. Just the headlines then.
+    95.44s  agent 발화 끝
+    98.76s  user  발화 끝
+    98.79s  agent 발화 시작: Certainly. The main headline is the ongoing negotiations reg
+   101.18s  user  발화 시작: Yeah, yeah.
+   101.91s  user  발화 끝
+   104.95s  agent 발화 끝
+   106.67s  user  발화 시작: Is there anything new on that?
+   108.20s  agent 발화 시작: Negotiations are continuing, but no agreement has been reach
+   108.37s  user  발화 끝
+   117.42s  agent 발화 끝
+   118.69s  user  발화 시작: Oh, that sounds nice. I— I mean, maybe we can go.
+   122.39s  user  발화 끝
+   122.42s  agent 발화 시작: It does sound pleasant! I’m glad I could assist you with you
+   128.58s  agent 발화 끝

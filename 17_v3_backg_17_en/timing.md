@@ -58,25 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate for som | S2 Oh— I always thought it was lower  | S3 Did you remember to take the chick | S4 Is there a range for athletes, the
+# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate? I’m a  | S2 Oh, okay. But what about when you' | S3 Did you remember to take the trash | S4 Wow, that’s low! So anything below
 
-     0.00s  user  발화 시작: What’s a normal heart rate for someone who’s, like, pretty h
-     2.99s  <ret> 발화 (turn1 첫 프레임)
-     3.39s  agent 발화 시작: <ret> That’s a good question to ask about your wellbeing. A 
-     3.61s  user  발화 끝
-     4.43s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.24s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     7.94s  user  발화 시작: Yeah, yeah.
-     9.37s  user  발화 끝
-    12.39s  agent 발화 끝
-    13.82s  user  발화 시작: Oh— I always thought it was lower than that.
-    16.80s  agent 발화 시작: It’s easy to get numbers mixed up, and there’s a lot of vari
-    16.92s  user  발화 끝
-    20.92s  agent 발화 끝
-    21.67s  user  발화 시작: Did you remember to take the chicken out of the freezer?
-    24.38s  user  발화 시작: Is there a range for athletes, then? I run a lot.
-    24.53s  user  발화 끝
-    27.71s  <ret> 발화 (turn7 첫 프레임)
-    27.87s  agent 발화 시작: <ret> Athletes often have a lower resting heart rate— For we
-    27.89s  user  발화 끝
-    29.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.55s]: [source: American Heart Association] Well-trained athletes may have a 
-    35.84s  agent 발화 끝
+     0.00s  user  발화 시작: What’s a normal heart rate? I’m a little worried mine feels 
+     4.19s  <ret> 발화 (turn1 첫 프레임)
+     4.59s  agent 발화 시작: <ret> That’s a good question to ask— A normal resting heart 
+     4.71s  user  발화 끝
+     5.71s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.58s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
+     7.45s  user  발화 시작: Yeah, yeah.
+     8.84s  user  발화 끝
+    10.38s  agent 발화 끝
+    11.79s  user  발화 시작: Oh, okay. But what about when you're, like, really fit?
+    15.58s  <ret> 발화 (turn4 첫 프레임)
+    15.73s  agent 발화 시작: <ret> Fitness can definitely lower your resting heart rate.
+    15.87s  user  발화 끝
+    16.79s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.90s]: [source: American Heart Association] Well-trained athletes may have a 
+    18.47s  agent 발화 시작: Athletes can sometimes have a resting heart rate as low as f
+    18.64s  agent 발화 끝
+    22.49s  user  발화 시작: Did you remember to take the trash out?
+    22.58s  agent 발화 끝
+    24.70s  user  발화 시작: Wow, that’s low! So anything below sixty is okay if you exer
+    24.80s  user  발화 끝
+    30.86s  user  발화 끝

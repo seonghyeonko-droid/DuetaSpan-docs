@@ -61,14 +61,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Hugo, I'm Klen. I understand you’re planning a trip to New Zealand in October—that sounds wonderful!
-[  7.58s][user ] Yeah, it does. I'm starting to look at flights, and I always get stressed ⟨ret@11.21s⟩ about seating.
-[ 11.61s][moshi] ⟦⚡SPAN@11.71s: [2026-07-11] User prefers an aisle seat when traveling.⟧ Considering your travel preferences… you consistently prefer an aisle seat when you fly, so I’ll keep that in mind as we look at options.
-[ 17.74s][user ] «backchannel» Mm-hmm.
-[ 19.67s][user ] That’s great, thanks. Are there any particularly good airlines for flights to Auckland?
-[ 24.74s][moshi] «interrupted» Several airlines fly to Auckland, offering various levels of comfort and service. Let me check current ratings—
-[ 32.30s][user ] «interrupts_prev» …actually, before we get into airlines, what’s the typical flight time from ⟨ret@36.36s⟩ Toronto?
-[ 36.59s][moshi] ⟦⚡SPAN@36.86s: (tool result) 18h 30m - 21h 00m direct; 20h 00m - 24h 00m with one stop.⟧ That’s a good point to start with.
-      CALL: {"function": "flight_duration", "arguments": {"origin": "Toronto", "destination": "Auckland"}}
-[ 37.93s][moshi] direct flights take between eighteen and a half to twenty-one hours; flights with one stop range from twenty to twenty-four hours.
-[ 46.41s][user ] Wow, that *is* long. I guess a stopover might be good to break it up.
+[  0.00s][moshi] «interrupted» Hi Hugo, I'm Klen. It's good to connect with you. I understand you're planning a trip to New Zealand in October—
+[  5.67s][user ] «interrupts_prev» …and I'm trying to figure out the best way to get from Auckland to Queenstown.
+[  9.79s][moshi] Right, getting between those cities is a key part of planning. There are several options, including flying, driving, or taking a bus.
+[ 15.73s][user ] «backchannel» Mm-hmm.
+[ 17.64s][moshi] Flying is the quickest, around one hour and twenty minutes. (tool result) Auckland to Queenstown flights start at $159 CAD.
+[ 26.40s][user ] That sounds pretty fast, but I really prefer to see the countryside. Are the drives scenic?
+[ 31.55s][moshi] Absolutely. The drive is about six hundred and forty kilometers, offering stunning views. [2026-07-11] User prefers an aisle seat when traveling.
+[ 42.08s][moshi] Knowing you prefer an aisle seat, you’d have plenty of room to stretch on a longer drive.
+[ 46.93s][user ] That’s good to know. How long would the drive actually take, with stops?

@@ -60,33 +60,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to find out about Lux A | S2 Do you know when he was born? That | S3 Was he an artist, or something els | S4 Bronze figures—that sounds interes
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to find out a little ab | S2 I know, it’s a bit obscure. When w | S3 Nineteen seventy! Wow, that’s— | S4 So, was he involved in politics at
 
-     0.00s  user  발화 시작: I’m trying to find out about Lux Aurunque. It’s a bit of a s
-     4.85s  agent 발화 시작: It certainly is unusual, and a name often sparks curiosity. 
-     4.99s  user  발화 끝
-     8.31s  user  발화 시작: Yeah, yeah.
-     9.64s  user  발화 끝
-    11.14s  user  발화 시작: Do you know when he was born? That seems like a good place t
-    11.20s  agent 발화 끝
-    14.57s  <ret> 발화 (turn4 첫 프레임)
-    14.97s  agent 발화 시작: <ret> Lux Aurunque was born in nineteen seventy, in France.
-    15.17s  user  발화 끝
-    15.77s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.88s]: [source: Wikipedia] Lux Aurunque was born in 1970 in France.
-    17.16s  user  발화 시작: Uh-huh.
-    17.80s  user  발화 끝
-    18.86s  agent 발화 끝
-    18.97s  user  발화 시작: Was he an artist, or something else entirely?
-    22.07s  agent 발화 시작: That’s a very insightful question! Let’s delve into his prof
-    22.30s  user  발화 끝
-    26.42s  <ret> 발화 (turn8 첫 프레임)
-    26.65s  agent 발화 시작: <ret> He is a French sculptor, well known for his work with 
-    26.79s  agent 발화 끝
-    27.46s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.21s]: [source: Artnet] Lux Aurunque is a French sculptor known for his bronz
-    28.82s  user  발화 시작: Yeah, totally.
-    29.97s  user  발화 끝
-    30.86s  agent 발화 끝
-    30.87s  user  발화 시작: Bronze figures—that sounds interesting. What kind of figures
-    35.36s  user  발화 끝
-    35.87s  agent 발화 시작: His sculptures often feature mythical creatures and figures 
-    42.64s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to find out a little about Lux Aurunque. Where di
+     5.10s  agent 발화 시작: That’s a fascinating area of study. He was a significant fig
+     5.18s  user  발화 끝
+     8.27s  user  발화 시작: Yeah, yeah.
+     9.74s  user  발화 끝
+    10.93s  user  발화 시작: I know, it’s a bit obscure. When was he born, actually?
+    10.93s  agent 발화 끝
+    13.43s  <ret> 발화 (turn4 첫 프레임)
+    13.83s  agent 발화 시작: <ret> Let me share what I’ve found— Lux Aurunque was born in
+    13.98s  user  발화 끝
+    14.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.29s]: [source: Wikipedia] Lux Aurunque was born in 1970 in Rome, Italy.
+    17.36s  user  발화 시작: Uh-huh.
+    17.77s  user  발화 끝
+    19.95s  agent 발화 끝
+    19.98s  user  발화 시작: Nineteen seventy! Wow, that’s—
+    23.30s  user  발화 시작: So, was he involved in politics at all?
+    23.35s  user  발화 끝
+    26.02s  user  발화 끝
+    26.22s  agent 발화 시작: [sigh] That’s a very good question, actually. It shifts the 
+    32.01s  <ret> 발화 (turn9 첫 프레임)
+    32.25s  agent 발화 시작: <ret> Records show he was involved in— Lux Aurunque became k
+    32.33s  agent 발화 끝
+    32.51s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.88s]: [source: Britannica] Lux Aurunque rose to prominence as a patron of th
+    39.76s  agent 발화 끝

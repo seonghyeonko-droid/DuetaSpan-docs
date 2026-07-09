@@ -66,53 +66,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요. | S2 그 앨범에 어떤 노래들이 들어 있었죠? | S3 혹시 그때 다른 가수들도 비슷한 시기에 앨범을 냈었나요? | S4 그렇군요. Runana님, 정말 감사해요.
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요. | S2 혹시 그 앨범에 수록된 곡 중에서 가장 인기 있었던 노래는 뭐 | S3 음, 평론가 반응도 좋았군요. 앨범 판매량은 얼마나 됐어요? | S4 'Tell Me You Love Me'도 좋았죠. 그때 활동했
 
      0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요.
-     5.09s  <ret> 발화 (turn1 첫 프레임)
-     5.09s  user  발화 끝
-     5.25s  agent 발화 시작: <ret> 음, 데미 로바토의 새 앨범이 이천십오년에 발매되었는지 알아보고 있었는데요.
-     7.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: October 2015.
-    10.84s  agent 발화 시작: 이천십오년 십월에 발매되었답니다.
-    10.99s  agent 발화 끝
-    13.43s  agent 발화 끝
-    13.47s  user  발화 시작: 와, 생각보다 꽤 됐네요.
-    15.50s  user  발화 끝
-    15.50s  agent 발화 시작: 맞아요. 시간이 정말 빠르게 흘러가는 것 같아요. [happy] 창작 활동에 영감을 얻기 위해 과거를 돌아보
-    21.33s  user  발화 시작: 음.
-    21.96s  user  발화 끝
-    24.26s  agent 발화 끝
-    24.61s  user  발화 시작: 그 앨범에 어떤 노래들이 들어 있었죠?
-    27.33s  user  발화 끝
-    27.52s  <ret> 발화 (turn7 첫 프레임)
-    27.84s  agent 발화 시작: <ret> 그 앨범에는 여러 곡이 수록되어 있었는데, 혹시 특정 곡을 찾으시는 건가요?
-    28.56s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.32s]: October 2015.
-    33.03s  agent 발화 시작: 이천십오년 십월에 발매된 앨범에 대한 더 자세한 정보를 원하시나요?
-    33.16s  agent 발화 끝
-    37.42s  user  발화 시작: 아니요, 그냥 어떤 분위기의 노래들이었는지 궁금해요.
-    37.52s  agent 발화 끝
-    41.17s  agent 발화 시작: 그 앨범은 전반적으로 감성적이고 솔직한 가사를 담고 있어요. 데미 로바토의 내면을 엿볼 수 있는—
-    41.22s  user  발화 끝
-    47.84s  user  발화 시작: 혹시 그때 다른 가수들도 비슷한 시기에 앨범을 냈었나요?
-    48.40s  agent 발화 끝
-    51.11s  <ret> 발화 (turn12 첫 프레임)
-    51.22s  user  발화 끝
-    51.51s  agent 발화 시작: <ret> 아, 네. 이천십오년에는 많은 가수들이 앨범을 발표했었죠. 다른 가수들의 앨범에 대해서도 궁금하신
-    53.11s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.51s]: The population of Tokyo is over 14 million people, making it one of th
-    58.86s  agent 발화 시작: 요즘은 새로운 음악을 찾는 재미도 쏠쏠하잖아요.
-    59.02s  agent 발화 끝
-    60.75s  user  발화 시작: 음.
-    61.42s  user  발화 끝
-    62.18s  agent 발화 시작: 때로는 익숙한 음악에서 새로운 영감을 얻기도 하지만, 새로운 음악을 통해 새로운 감정을 발견하는 것도 중요하
-    62.19s  agent 발화 끝
-    69.65s  user  발화 시작: 맞아요, 새로운 음악을 듣는 건 정말 좋은 것 같아요.
-    69.92s  agent 발화 끝
-    72.88s  user  발화 끝
-    73.17s  agent 발화 시작: 새로운 음악을 들으면서 자신만의 감성을 표현하는 것도 창작 활동의 좋은 시작점이 될 수 있답니다.
-    76.44s  user  발화 시작: 예.
-    76.94s  user  발화 끝
-    79.29s  user  발화 시작: 그렇군요. Runana님, 정말 감사해요.
-    79.52s  agent 발화 끝
-    82.13s  agent 발화 시작: 도움이 되었다니 기쁘네요. 언제든지 또 찾아와 주세요.
-    82.25s  user  발화 끝
-    85.69s  agent 발화 끝
+     4.03s  user  발화 끝
+     4.12s  <ret> 발화 (turn1 첫 프레임)
+     4.28s  agent 발화 시작: <ret> 음, 데미 로바토의 새 앨범이 이천십오년에 발매되었는지 알아볼게요.
+     6.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: October 2015.
+     9.37s  agent 발화 시작: 이천십오년 십월에 데미 로바토의 새 앨범이 발매되었어요.
+     9.60s  agent 발화 끝
+    13.62s  agent 발화 끝
+    13.72s  user  발화 시작: 아, 그렇군요. 앨범 제목이 뭐였죠?
+    16.42s  <ret> 발화 (turn4 첫 프레임)
+    16.66s  agent 발화 시작: <ret> 앨범 제목은 'Confident'였어요. 이천십오년 십월에 발매된 앨범이죠.
+    16.67s  user  발화 끝
+    17.46s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.09s]: Demi Lovato’s fifth studio album, Confident, was released on October 1
+    21.67s  agent 발화 시작: 'Confident'라는 이름으로, 이천십오년 십월 십육일에 발매되었답니다.
+    21.76s  agent 발화 끝
+    27.18s  agent 발화 끝
+    27.56s  user  발화 시작: 혹시 그 앨범에 수록된 곡 중에서 가장 인기 있었던 노래는 뭐예요?
+    31.53s  <ret> 발화 (turn7 첫 프레임)
+    31.63s  user  발화 끝
+    31.85s  agent 발화 시작: <ret> 아, 네. 그 앨범에서 가장 인기 있었던 노래는…
+    33.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: The lead single from Confident, "Cool for the Summer", was released on
+    36.25s  agent 발화 시작: 이천십오년 칠월 일일에 발매된 'Cool for the Summer'가 가장 인기가 많았어요.
+    36.34s  agent 발화 끝
+    38.25s  user  발화 시작: 음.
+    38.69s  user  발화 끝
+    41.20s  <ret> 발화 (turn10 첫 프레임)
+    41.52s  agent 발화 시작: <ret> 'Cool for the Summer'는 발매 직후 많은 사랑을 받았죠. 데미 로바토의 매력이 잘
+    41.71s  agent 발화 끝
+    43.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: The album received generally positive reviews from critics.
+    48.27s  agent 발화 시작: 평론가들로부터 대체로 긍정적인 평가를 받았답니다.
+    48.43s  agent 발화 끝
+    51.97s  agent 발화 끝
+    52.04s  user  발화 시작: 음, 평론가 반응도 좋았군요. 앨범 판매량은 얼마나 됐어요?
+    56.17s  <ret> 발화 (turn13 첫 프레임)
+    56.39s  user  발화 끝
+    56.48s  agent 발화 시작: <ret> 앨범 판매량에 대해 알아볼게요.
+    57.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.12s]: (tool result) Confident sold 121,000 copies in its first week.
+    58.46s  agent 발화 시작: 'Confident'는 첫 주에 십이만 천 장이 팔렸어요.
+    58.59s  agent 발화 끝
+    62.04s  user  발화 시작: 와, 꽤 많이 팔렸네요. 그 앨범 이후에 또 다른 앨범을 냈어요?
+    62.67s  agent 발화 끝
+    65.90s  <ret> 발화 (turn16 첫 프레임)
+    66.14s  agent 발화 시작: <ret> 네, 데미 로바토는 그 이후에도 여러 앨범을 발표했답니다.
+    66.25s  user  발화 끝
+    66.78s  ⚡SPAN 주입(IRRELEVANT) [d'=0.88s / d_lead=4.16s]: The giraffe is the tallest mammal in the world.
+    70.15s  agent 발화 시작: 이천십칠년에는 'Tell Me You Love Me'라는 앨범을 발매했고요.
+    70.30s  agent 발화 끝
+    74.32s  agent 발화 끝
+    74.81s  user  발화 시작: 'Tell Me You Love Me'도 좋았죠. 그때 활동했던 노래도 궁금해요.
+    78.83s  user  발화 끝
+    79.06s  agent 발화 시작: 'Tell Me You Love Me'의 타이틀곡은 'Sorry Not Sorry'였어요.
+    82.20s  agent 발화 끝

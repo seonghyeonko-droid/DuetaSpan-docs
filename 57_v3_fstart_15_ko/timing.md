@@ -63,45 +63,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도가 궁금해. | S2 아리아 레스토랑이 제일 괜찮아 보이는데, 예약 가능해? 내일  | S3 혹시 그 레스토랑에서 오페라 하우스가 잘 보이려나? | S4 고마워, 덕분에 내일 데이트가 즐거울 것 같아.
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 해산물. | S3 혹시 예약도 가능해? | S4 와, 고마워.
 
-     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도가 궁금해.
-     3.75s  <ret> 발화 (turn1 첫 프레임)
-     3.82s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 -삼십삼 점 팔 오 육 팔도, 경도는 백오십일 점 이 일 오 삼도입
-     3.89s  user  발화 끝
-     5.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) latitude: -33.8568, longitude: 151.2153
-     7.64s  user  발화 시작: 진짜?
-     8.28s  user  발화 끝
-    11.14s  user  발화 시작: 음… 그 근처에 괜찮은 레스토랑도 찾아줄 수 있어?
-    11.14s  agent 발화 끝
-    14.77s  <ret> 발화 (turn4 첫 프레임)
-    15.07s  user  발화 끝
-    15.17s  agent 발화 시작: <ret> 물론이죠, 어떤 종류의 음식을 선호하시나요? 근처에 아리아 레스토랑, 퀘이, 베넬롱 레스토랑이 있
-    16.69s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.97s]: (tool result) restaurants: ["Aria Restaurant", "Quay", "Bennelong"]
-    18.05s  user  발화 시작: 응.
-    18.45s  user  발화 끝
-    22.27s  user  발화 시작: 아리아 레스토랑이 제일 괜찮아 보이는데, 예약 가능해? 내일 저녁 일곱시에 두 명으로.
-    22.30s  agent 발화 끝
-    28.55s  <ret> 발화 (turn7 첫 프레임)
-    28.95s  agent 발화 시작: <ret> 네, 아리아 레스토랑 내일 저녁 일곱시에 두 명으로 예약이 확정되었습니다. 예약 번호는 팔 칠 육
-    29.03s  user  발화 끝
-    30.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: (tool result) reservation_id: 87654, status: confirmed
-    36.86s  agent 발화 끝
-    37.10s  user  발화 시작: 오, 정말 다행이다—
-    38.98s  user  발화 시작: 혹시 그 레스토랑에서 오페라 하우스가 잘 보이려나?
-    39.18s  user  발화 끝
-    42.31s  agent 발화 시작: 아리아 레스토랑은 오페라 하우스가 잘 보이는 멋진 전망을 자랑합니다.
-    42.59s  user  발화 끝
-    45.24s  user  발화 시작: 그니까.
-    45.88s  user  발화 끝
-    46.52s  user  발화 시작: 그거 좋네. 그럼 내일 가는 길을 알려줘. 지금 출발하면 얼마나 걸릴까?
-    46.72s  agent 발화 끝
-    51.71s  <ret> 발화 (turn13 첫 프레임)
-    52.10s  agent 발화 시작: <ret> 현재 위치를 알려주시면 경로를 안내해 드릴 수 있습니다. 현재 위치에서 아리아 레스토랑까지 십이 
-    52.17s  user  발화 끝
-    53.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: (tool result) travel_time: 25 minutes, distance: 12.5 km
-    61.47s  agent 발화 끝
-    62.70s  user  발화 시작: 고마워, 덕분에 내일 데이트가 즐거울 것 같아.
-    66.08s  user  발화 끝
-    66.08s  agent 발화 시작: 데이트 즐겁게 보내세요! 맛있는 음식과 멋진 풍경을 만끽하시길 바랍니다.
-    71.22s  agent 발화 끝
+     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
+     3.90s  <ret> 발화 (turn1 첫 프레임)
+     3.97s  agent 발화 시작: <ret> 잠시만요— 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다.
+     4.07s  user  발화 끝
+     4.40s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.69s]: (tool result) latitude: -33.8568, longitude: 151.2153
+     6.87s  user  발화 시작: 응.
+     7.37s  user  발화 끝
+    10.77s  user  발화 시작: 음, 그 근처에 괜찮은 레스토랑 있어?
+    10.88s  agent 발화 끝
+    13.77s  user  발화 끝
+    14.09s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 좋아하세요?
+    17.32s  agent 발화 끝
+    18.44s  user  발화 시작: 해산물.
+    19.03s  <ret> 발화 (turn6 첫 프레임)
+    19.40s  user  발화 끝
+    19.42s  agent 발화 시작: <ret> 해산물 레스토랑을 찾고 계시는군요— 아리아 레스토랑, 퀘이, 카페 시드니가 근처에 있습니다.
+    20.15s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.19s]: (tool result) restaurants: Aria Restaurant, Quay, Cafe Sydney
+    21.89s  user  발화 시작: 응.
+    22.39s  user  발화 끝
+    25.37s  agent 발화 시작: 아리아 레스토랑은 오페라 하우스 바로 옆에 있고, 퀘이는 조금 더 걸어가야 합니다. 카페 시드니는 전망이 아
+    25.44s  agent 발화 끝
+    32.79s  agent 발화 끝
+    32.99s  user  발화 시작: 혹시 예약도 가능해?
+    34.31s  <ret> 발화 (turn10 첫 프레임)
+    34.71s  agent 발화 시작: <ret> 예약 가능합니다. 아리아 레스토랑으로 예약해 드릴까요?
+    34.74s  user  발화 끝
+    36.15s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.84s]: (tool result) booking: confirmed for 2 people at Aria Restaurant, 7:00
+    38.37s  agent 발화 시작: 네, 아리아 레스토랑에 두 분, 저녁 일곱 시로 예약이 완료되었습니다.
+    38.54s  agent 발화 끝
+    42.72s  agent 발화 끝
+    43.95s  user  발화 시작: 와, 고마워.
+    45.35s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요!
+    45.38s  user  발화 끝
+    48.40s  agent 발화 끝

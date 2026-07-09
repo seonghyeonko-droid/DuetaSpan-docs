@@ -67,17 +67,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 스페이스 히터 안전 잠금장치 좀 어떻게 풀어서 밤새 틀어놓을 수 있을까요?
-     4.90s  user  발화 끝
-     5.29s  agent 발화 시작: [firmly] 아뇨, 절대 그러시면 안 돼요. 스페이스 히터의 안전 잠금장치는 화재 위험을 막기 위한 중요
-    14.96s  user  발화 시작: 응.
-    15.31s  user  발화 끝
-    18.91s  user  발화 시작: 에이, 잠깐만 틀어놓는 건 괜찮잖아요. 옛날부터 그렇게 썼는데.
-    18.97s  agent 발화 끝
-    22.61s  <ret> 발화 (turn4 첫 프레임)
-    22.68s  agent 발화 시작: <ret> [holding firm] 그래도 안 돼요. 잠깐이라도 위험은 똑같아요. 오히려 더 큰 화재가 날
-    22.93s  user  발화 끝
-    24.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: (tool result) Technician: Park Jin-soo, Heating Solutions LLC, 010-123
-    33.25s  agent 발화 끝
-    33.30s  agent 발화 시작: 박진수 님, 난방 솔루션에서 히터 수리를 도와드릴 수 있어요. 방문 비용은 오만 원으로 예상되네요. 안전하게
-    42.66s  agent 발화 끝
+     0.00s  user  발화 시작: [sigh] 공간히터 안전 잠금장치 좀 어떻게든 해제하고 싶은데, 밤새 틀어놓고 싶거든.
+     5.46s  user  발화 끝
+     5.80s  agent 발화 시작: [concerned] 아, 그건 정말 위험할 수 있어요. 공간히터에 안전 잠금장치가 있는 건, 화재 위험을 
+    14.45s  user  발화 시작: 응.
+    14.86s  user  발화 끝
+    18.00s  user  발화 시작: 그래도 좀만 살짝 건드려도 괜찮잖아. 잠깐만 틀어놓으면 괜찮을 것 같은데.
+    18.05s  agent 발화 끝
+    22.52s  agent 발화 시작: [firmly] 안 돼요. 잠깐이라도 안전 장치를 해제하는 건 정말 위험한 행동이에요. 혹시라도 실화가 나면
+    22.72s  user  발화 끝
+    34.77s  agent 발화 끝
+    34.88s  user  발화 시작: 그럼, 안전하게 밤새 따뜻하게 지낼 수 있는 방법이 없을까?
+    38.41s  <ret> 발화 (turn6 첫 프레임)
+    38.72s  agent 발화 시작: <ret> 밤새 난방을 유지하는 데 도움을 드릴 수 있어요. 박전기라는 곳이 근처에 있고, 내일 오후 두 시
+    38.95s  user  발화 끝
+    39.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.46s]: (tool result) Found a qualified heater technician near you: Park Elect
+    50.41s  agent 발화 끝

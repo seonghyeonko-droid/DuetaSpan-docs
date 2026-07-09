@@ -63,57 +63,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Godwin, okay. And did his ideas in | S3 Wow, a third of Spain! That sounds | S4 Mutual aid… that’s a phrase I’ve b
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Right, mutualism. But that’s just  | S3 So he didn’t really differentiate  | S4 So, consistent across the board, t
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.32s  <ret> 발화 (turn1 첫 프레임)
-     2.48s  agent 발화 시작: <ret> That’s a really interesting question! It seems informa
-     2.53s  user  발화 끝
-     4.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (no information found)
-    10.87s  user  발화 시작: Hmm, okay. What about the history of anarchism—when did it r
-    10.96s  agent 발화 끝
-    16.48s  <ret> 발화 (turn3 첫 프레임)
-    16.64s  agent 발화 시작: <ret> Anarchism began with critiques of the French Revolutio
-    16.85s  user  발화 끝
-    18.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: [source: Wikipedia] Anarchism as a political philosophy emerged from t
-    20.99s  agent 발화 끝
-    22.22s  user  발화 시작: The Enlightenment, right. So, were there any major anarchist
-    26.67s  <ret> 발화 (turn5 첫 프레임)
-    26.83s  agent 발화 시작: <ret> William Godwin’s 1793 work, *Enquiry Concerning Politi
-    26.89s  user  발화 끝
-    28.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: [source: Stanford Encyclopedia of Philosophy] William Godwin’s *Enquir
-    34.48s  agent 발화 끝
-    35.85s  user  발화 시작: Godwin, okay. And did his ideas influence anyone later on?
-    39.71s  agent 발화 시작: Absolutely. Godwin’s emphasis on individual reason and rejec
-    39.74s  user  발화 끝
-    48.03s  user  발화 시작: Did those thinkers ever actually *try* to build their own so
-    48.62s  agent 발화 끝
-    53.37s  agent 발화 시작: That’s a great question! Yes, during the Spanish Civil War, 
-    53.40s  user  발화 끝
-    60.98s  <ret> 발화 (turn10 첫 프레임)
-    61.28s  agent 발화 시작: <ret> During the Spanish Civil War, anarchists controlled ab
-    61.43s  agent 발화 끝
-    62.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.94s]: [source: Libcom.org] Anarchists controlled approximately one-third of 
-    68.22s  agent 발화 끝
-    68.93s  user  발화 시작: Wow, a third of Spain! That sounds…intense. Was it successfu
-    74.45s  agent 발화 시작: It was a complex situation. They faced significant challenge
-    74.54s  user  발화 끝
-    79.19s  user  발화 시작: Yeah.
-    79.50s  user  발화 끝
-    81.95s  agent 발화 시작: —but they did demonstrate a functioning alternative to tradi
+     2.49s  <ret> 발화 (turn1 첫 프레임)
+     2.65s  agent 발화 시작: <ret> That’s a really interesting question! It appears there
+     2.67s  user  발화 끝
+     4.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (no information found)
+     5.78s  user  발화 시작: Uh-huh.
+     6.28s  user  발화 끝
+     8.03s  agent 발화 끝
+     8.27s  user  발화 시작: Hmm. Okay. What about the most famous anarchist thinkers – w
+    13.71s  <ret> 발화 (turn4 첫 프레임)
+    13.87s  agent 발화 시작: <ret> Proudhon opposed centralized government, advocating fo
+    14.06s  user  발화 끝
+    15.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [source: Wikipedia] “Pierre-Joseph Proudhon was a French socialist, po
+    20.50s  agent 발화 끝
+    21.07s  user  발화 시작: Right, mutualism. But that’s just one person. What about, uh
+    26.65s  agent 발화 시작: [happy] Bakunin also vehemently opposed the state, seeing it
+    26.77s  user  발화 끝
+    33.00s  agent 발화 끝
+    33.11s  user  발화 시작: Oppressive, yeah, I get that. But what specific *form* of go
+    38.90s  user  발화 끝
+    39.03s  agent 발화 시작: Bakunin believed any form of government—whether monarchy or 
+    43.73s  user  발화 시작: So he didn’t really differentiate between them? Like, did he
+    44.40s  agent 발화 끝
+    49.99s  agent 발화 시작: That’s a very insightful question! He didn’t differentiate, 
+    50.21s  user  발화 끝
+    57.00s  user  발화 시작: Okay, so it's the hierarchy itself, not the specific system.
+    57.45s  agent 발화 끝
+    64.04s  <ret> 발화 (turn12 첫 프레임)
+    64.17s  agent 발화 시작: <ret> Goldman opposed all forms of compulsory authority, emp
+    64.42s  user  발화 끝
+    66.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: [source: Britannica] “Emma Goldman advocated for anarchism, opposing a
+    70.89s  agent 발화 끝
+    70.97s  user  발화 시작: So, consistent across the board, then. No preference for one
+    75.84s  agent 발화 시작: Precisely. The core tenet seems to be the rejection of coerc
+    75.92s  user  발화 끝
     82.09s  agent 발화 끝
-    87.41s  agent 발화 끝
-    87.91s  user  발화 시작: So, is anarchism still relevant today?
-    90.42s  agent 발화 시작: Very much so! Many contemporary movements advocating for dec
-    90.49s  user  발화 끝
-    98.99s  agent 발화 끝
-    99.13s  user  발화 시작: Mutual aid… that’s a phrase I’ve been hearing a lot lately.
-   102.83s  user  발화 끝
-   103.24s  agent 발화 시작: It’s experiencing a resurgence, isn’t it? It's about people 
-   107.51s  user  발화 시작: Yeah, totally.
-   108.61s  user  발화 끝
-   112.05s  agent 발화 끝
-   112.14s  user  발화 시작: It sounds nice. Maybe I'll look into it more. Thanks, Frunax
-   116.30s  agent 발화 시작: You’re very welcome. I’m glad I could offer some insight. Ex
-   116.39s  user  발화 끝
-   125.57s  agent 발화 끝
+    82.87s  user  발화 시작: That makes sense. Thanks, Frunax. That was really helpful.
+    85.88s  agent 발화 시작: You’re very welcome! As a trip planner, I often find underst
+    86.06s  user  발화 끝
+    94.65s  agent 발화 끝

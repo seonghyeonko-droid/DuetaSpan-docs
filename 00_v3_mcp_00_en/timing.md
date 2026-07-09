@@ -63,85 +63,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Nine miles… okay. Are there boat t | S3 …like the Empire State Building, o | S4 I just don’t want to get lost. Is 
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Exactly. Can you search for someth | S3 Is there parking nearby? | S4 Perfect. Thanks so much for your h
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.54s  <ret> 발화 (turn1 첫 프레임)
-     3.77s  agent 발화 시작: <ret> Certainly, I can help with that. The Eiffel Tower’s co
-     3.84s  user  발화 끝
-     4.58s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.14s]: (tool result) 48.8584, 2.2945
-    14.70s  user  발화 시작: Okay, good. And what about the Statue of Liberty?
-    14.80s  agent 발화 끝
-    17.02s  <ret> 발화 (turn3 첫 프레임)
-    17.41s  agent 발화 시작: <ret> The Statue of Liberty is at latitude 40.6892 and longi
-    17.66s  user  발화 끝
-    19.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: (tool result) 40.6892, -74.0445
-    24.08s  user  발화 시작: Right.
-    24.58s  user  발화 끝
-    26.86s  user  발화 시작: Hmm, interesting. I’m planning a trip to New York.
-    27.05s  agent 발화 끝
-    30.92s  agent 발화 시작: That sounds lovely! New York is a fantastic city with so muc
-    30.98s  user  발화 끝
-    37.36s  user  발화 시작: I'm thinking of visiting Central Park. Is it far from the St
-    37.36s  agent 발화 끝
-    42.22s  user  발화 끝
-    42.35s  agent 발화 시작: It is quite a distance, about nine miles.
-    43.33s  user  발화 시작: Okay.
-    43.96s  user  발화 끝
-    45.49s  agent 발화 끝
-    45.52s  user  발화 시작: Nine miles… okay. Are there boat tours that go from the Stat
-    51.27s  <ret> 발화 (turn11 첫 프레임)
-    51.58s  agent 발화 시작: <ret> There are several options: Circle Line, New York Water
-    51.73s  user  발화 끝
-    53.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) ["Circle Line Sightseeing Cruises", "New York Water Taxi
-    57.34s  user  발화 시작: Circle Line sounds good. What times do they have tours tomor
-    57.55s  agent 발화 끝
-    61.78s  <ret> 발화 (turn13 첫 프레임)
-    61.85s  agent 발화 시작: <ret> Circle Line has tours tomorrow at nine, eleven, one, t
-    61.87s  user  발화 끝
-    63.06s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.11s]: (tool result) 09:00, 11:00, 13:00, 15:00, 17:00
-    67.96s  agent 발화 끝
-    70.47s  user  발화 시작: Hmm… the one at one PM sounds perfect. Can you book that for
-    75.28s  <ret> 발화 (turn15 첫 프레임)
-    75.44s  agent 발화 시작: <ret> Wonderful! Your Circle Line tour is booked for one PM 
-    75.52s  user  발화 끝
-    76.96s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.85s]: (tool result) Booking confirmed: Circle Line, 1 PM, tomorrow, 1 adult.
-    84.23s  user  발화 시작: That’s fantastic, thank you!— I mean, do they have options f
-    84.29s  agent 발화 끝
-    90.23s  agent 발화 시작: [interrupting] Circle Line tours often pass by other famous 
-    90.40s  user  발화 끝
-    95.14s  user  발화 시작: …like the Empire State Building, or the Brooklyn Bridge?
-    95.83s  agent 발화 끝
-    98.19s  user  발화 끝
-    98.38s  agent 발화 시작: Yes, many Circle Line tours include views of both the Empire
-   101.30s  user  발화 시작: Yeah.
-   101.65s  user  발화 끝
-   105.83s  agent 발화 시작: They also frequently go past Ellis Island, offering a glimps
-   105.94s  agent 발화 끝
-   111.71s  agent 발화 끝
-   111.83s  user  발화 시작: Oh, that’s good to know. How long is the tour usually?
-   115.67s  user  발화 끝
-   115.70s  agent 발화 시작: Most Circle Line sightseeing tours last around two and a hal
-   120.88s  agent 발화 끝
-   121.22s  user  발화 시작: That's a decent amount of time. I think that’ll be enough.
-   124.59s  user  발화 끝
-   125.03s  agent 발화 시작: I’m glad to hear you feel that way. It's good to have a rela
-   130.60s  user  발화 시작: Yeah. I’m a little worried about getting around though.
-   130.81s  agent 발화 끝
-   133.88s  user  발화 끝
-   134.24s  agent 발화 시작: Traveling in a new city can feel overwhelming, it’s perfectl
-   140.31s  agent 발화 끝
-   141.31s  user  발화 시작: I just don’t want to get lost. Is the subway easy to use in 
-   146.03s  agent 발화 시작: The New York subway is quite extensive, but it can be a litt
-   146.13s  user  발화 끝
-   151.35s  agent 발화 끝
-   151.36s  user  발화 시작: [sigh] Okay. Maybe I should just stick to taxis then.
-   155.34s  agent 발화 시작: Taxis are readily available, but they can be expensive durin
-   155.38s  user  발화 끝
-   160.71s  user  발화 시작: Mm-hmm.
-   161.34s  user  발화 끝
-   162.25s  user  발화 시작: You’re right. Hmm… maybe I’ll download a subway map app.
-   162.42s  agent 발화 끝
-   166.56s  user  발화 끝
-   167.00s  agent 발화 시작: That’s a great idea! A subway map app can be very helpful fo
-   173.21s  agent 발화 끝
+     3.19s  <ret> 발화 (turn1 첫 프레임)
+     3.41s  agent 발화 시작: <ret> The Eiffel Tower’s coordinates are latitude 48.8584 an
+     3.56s  user  발화 끝
+     4.47s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.70s]: (tool result) 48.8584, 2.2945
+    13.04s  user  발화 시작: Okay, great. And could you find me a highly-rated French res
+    13.10s  agent 발화 끝
+    17.82s  <ret> 발화 (turn3 첫 프레임)
+    18.22s  agent 발화 시작: <ret> I can definitely help with that. Le Jules Verne is 0.1
+    18.41s  user  발화 끝
+    18.86s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.46s]: (tool result) Le Jules Verne - 4.6 stars - 0.1 miles
+    23.60s  user  발화 시작: Right.
+    24.23s  user  발화 끝
+    25.90s  user  발화 시작: That sounds fancy! Is it expensive?
+    26.01s  agent 발화 끝
+    28.73s  agent 발화 시작: It is known for its refined dining experience and, yes, it t
+    28.82s  user  발화 끝
+    31.30s  user  발화 시작: Yeah.
+    31.80s  user  발화 끝
+    35.29s  agent 발화 시작: I’ve worked with clients who were nervous about first dates 
+    35.44s  agent 발화 끝
+    41.08s  agent 발화 끝
+    41.57s  user  발화 시작: I’m meeting a friend, not a date. But still, maybe something
+    47.08s  agent 발화 시작: Ah, a friendly catch-up then! Something relaxed is a lovely 
+    47.09s  user  발화 끝
+    48.86s  user  발화 시작: Okay.
+    49.63s  user  발화 끝
+    52.55s  agent 발화 끝
+    52.55s  user  발화 시작: Exactly. Can you search for something a bit more… bistro-sty
+    56.74s  <ret> 발화 (turn13 첫 프레임)
+    56.98s  agent 발화 시작: <ret> Les Cocottes has 4.3 stars and is 0.6 miles from the E
+    56.99s  user  발화 끝
+    58.02s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.44s]: (tool result) Les Cocottes - 4.3 stars - 0.6 miles
+    63.42s  agent 발화 끝
+    65.13s  user  발화 시작: That sounds perfect! Can we see if they have availability to
+    70.86s  <ret> 발화 (turn15 첫 프레임)
+    70.94s  agent 발화 시작: <ret> I have a reservation for two at Les Cocottes at 7:30 P
+    71.10s  user  발화 끝
+    72.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) Reservation confirmed - Les Cocottes - 7:30 PM - 2 peopl
+    75.83s  user  발화 시작: Wonderful!— but…
+    75.85s  agent 발화 끝
+    77.58s  user  발화 끝
+    78.18s  user  발화 시작: Is there parking nearby?
+    80.11s  user  발화 끝
+    80.15s  <ret> 발화 (turn18 첫 프레임)
+    80.22s  agent 발화 시작: <ret> The Tour Eiffel parking garage is 0.2 miles away, at €
+    82.07s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.56s]: (tool result) Parking Garage Tour Eiffel - 0.2 miles - €25/hour
+    85.40s  user  발화 시작: Okay, that's good to know. Maybe we’ll take a taxi instead.
+    85.78s  agent 발화 끝
+    89.94s  user  발화 끝
+    90.12s  agent 발화 시작: A taxi is a very sensible option—avoiding parking stress is 
+    96.81s  user  발화 시작: True. Could you set a reminder for me to leave for the resta
+    96.84s  agent 발화 끝
+   101.71s  <ret> 발화 (turn22 첫 프레임)
+   102.11s  agent 발화 시작: <ret> I can absolutely set that reminder for you. Your remin
+   102.13s  user  발화 끝
+   103.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.54s]: (tool result) Reminder set - 6:45 PM - Les Cocottes
+   110.82s  user  발화 시작: Perfect. Thanks so much for your help, Nellara.
+   110.96s  agent 발화 끝
+   113.95s  agent 발화 시작: You're very welcome! It sounds like a lovely evening is plan
+   113.97s  user  발화 끝
+   118.62s  agent 발화 끝
+   119.11s  user  발화 시작: I think it will be. It’s good to have someone help with the 
+   123.13s  user  발화 끝
+   123.48s  agent 발화 시작: Often, the little details are what can make or break a good 
+   129.67s  user  발화 시작: I agree. Sometimes I get overwhelmed with planning.
+   129.87s  agent 발화 끝
+   133.42s  user  발화 끝
+   133.79s  agent 발화 시작: It's perfectly normal to feel overwhelmed. Planning can be s
+   141.16s  agent 발화 끝

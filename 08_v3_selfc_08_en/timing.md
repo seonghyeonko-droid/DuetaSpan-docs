@@ -55,131 +55,95 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Great. Book a room there for one n | S3 Perfect. Can you add a note to my  | S4 I’m a little anxious about traveli
+# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Excellent. Is there power at the s | S3 Okay. And roughly how long is the  | S4 Three eighty sounds much better. C
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     3.89s  <ret> 발화 (turn1 첫 프레임)
-     4.28s  agent 발화 시작: <ret> Certainly, let’s explore bus options for your trip. Th
-     4.49s  user  발화 끝
-     5.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) 10:30 AM departure, Greyhound, $225 per person. 7:00 PM 
-    14.08s  user  발화 시작: Oh.
-    14.71s  user  발화 끝
-    19.42s  user  발화 시작: And what about the Jefferson Lines bus – does that one have 
-    19.45s  agent 발화 끝
-    23.15s  <ret> 발화 (turn4 첫 프레임)
-    23.17s  user  발화 끝
-    23.38s  agent 발화 시작: <ret> Yes, the Jefferson Lines bus has Wi-Fi and power outle
-    25.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Wi-Fi available. Power outlets at each seat. Restroom on
-    29.57s  user  발화 시작: That sounds better. Book three tickets on the Jefferson Line
-    29.63s  agent 발화 끝
-    33.92s  <ret> 발화 (turn6 첫 프레임)
-    34.08s  agent 발화 시작: <ret> I’m happy to reserve those seats for you. Your booking
-    34.19s  user  발화 끝
-    35.52s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.44s]: (tool result) Booking confirmed. Reference number: JL8742. Total cost:
-    41.39s  user  발화 시작: Really?
-    42.16s  user  발화 끝
-    45.72s  agent 발화 끝
-    46.11s  user  발화 시작: Perfect. Could you also find me a hotel in Denver near the b
-    50.66s  <ret> 발화 (turn9 첫 프레임)
-    50.79s  user  발화 끝
-    51.05s  agent 발화 시작: <ret> The Maven Hotel is one hundred eighty-nine dollars a n
-    51.16s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.32s]: (tool result) The Maven Hotel at Dairy Block: $189/night. Hampton Inn 
-    58.37s  agent 발화 끝
-    58.81s  user  발화 시작: The Hampton Inn sounds good. What’s their cancellation polic
-    61.89s  <ret> 발화 (turn11 첫 프레임)
-    62.29s  agent 발화 시작: <ret> You can cancel for free up to twenty-four hours before
-    62.51s  user  발화 끝
-    63.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) Free cancellation up to 24 hours before check-in.
-    67.48s  agent 발화 끝
-    68.49s  user  발화 시작: Great. Book a room there for one night, May tenth.
-    71.15s  <ret> 발화 (turn13 첫 프레임)
-    71.38s  agent 발화 시작: <ret> Your room is booked, confirmation HI9215, totaling one
-    71.58s  user  발화 끝
-    73.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Room booked. Confirmation number: HI9215. Total: $150.
-    77.09s  user  발화 시작: Okay.
-    77.82s  user  발화 끝
-    79.12s  agent 발화 끝
-    79.41s  user  발화 시작: Okay, and can you set a reminder to pack my travel documents
-    83.59s  <ret> 발화 (turn16 첫 프레임)
-    83.83s  agent 발화 시작: <ret> I can absolutely help you with that. A reminder to pac
-    83.89s  user  발화 끝
-    84.87s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.63s]: (tool result) Reminder set for May ninth at 9:00 AM.
-    88.72s  user  발화 시작: Right.
-    89.44s  user  발화 끝
-    91.71s  agent 발화 끝
-    92.69s  user  발화 시작: That’s wonderful. Actually.
-    94.81s  user  발화 끝
-    94.86s  agent 발화 시작: I was just thinking about how important preparation is for—
-    97.69s  user  발화 시작: Is there a good coffee shop near the Hampton Inn?
-    98.56s  agent 발화 끝
-   100.54s  <ret> 발화 (turn21 첫 프레임)
-   100.62s  agent 발화 시작: <ret> A good question! Let's see what's nearby. Little Owl C
-   100.79s  user  발화 끝
-   102.06s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.32s]: (tool result) Little Owl Coffee: 0.2 miles. Pablo's Coffee: 0.3 miles.
-   105.16s  user  발화 시작: Yeah.
-   105.84s  user  발화 끝
-   110.47s  user  발화 시작: Little Owl sounds nice. What are their hours on May tenth?
-   110.59s  agent 발화 끝
-   114.31s  <ret> 발화 (turn24 첫 프레임)
-   114.71s  agent 발화 시작: <ret> Little Owl Coffee is open from seven AM to six PM on M
-   114.82s  user  발화 끝
-   116.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) 7:00 AM to 6:00 PM.
-   116.94s  user  발화 시작: Yeah, totally.
-   118.45s  user  발화 끝
-   120.33s  user  발화 시작: Perfect. Can you add a note to my reminder to stop there bef
-   120.36s  agent 발화 끝
-   125.52s  <ret> 발화 (turn27 첫 프레임)
-   125.60s  agent 발화 시작: <ret> I can certainly append that to your existing reminder.
-   125.66s  user  발화 끝
-   126.02s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.72s]: (tool result) Reminder updated.
-   134.69s  agent 발화 끝
-   135.17s  user  발화 시작: That’s fantastic, thank you. Do you think it’s a good idea t
-   139.66s  agent 발화 시작: Absolutely. A book can be a wonderful companion during trave
-   139.66s  user  발화 끝
-   144.23s  user  발화 시작: Yeah.
-   144.87s  user  발화 끝
-   146.66s  agent 발화 끝
-   146.95s  user  발화 시작: I think I’ll download an audiobook instead.
-   149.63s  user  발화 끝
-   149.77s  agent 발화 시작: That’s a great alternative! Audiobooks can be particularly e
-   152.93s  user  발화 시작: Yeah.
-   153.56s  user  발화 끝
-   156.03s  agent 발화 끝
-   156.44s  user  발화 시작: What’s the weather forecast for Denver on May tenth?
-   159.60s  <ret> 발화 (turn35 첫 프레임)
-   159.67s  user  발화 끝
-   159.67s  agent 발화 시작: <ret> The forecast for May tenth is sunny with a high of sev
-   161.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) High of 75°F, sunny. Low of 55°F.
-   166.13s  user  발화 시작: Good to know. I think I’m all set then.
-   166.53s  agent 발화 끝
-   168.57s  user  발화 끝
-   168.93s  agent 발화 시작: That’s wonderful to hear. It sounds like you’ve made excelle
-   174.65s  user  발화 시작: I’m a little anxious about traveling alone though.
-   174.80s  agent 발화 끝
-   177.33s  user  발화 끝
-   177.51s  agent 발화 시작: It’s perfectly natural to feel some anxiety when traveling s
-   185.86s  agent 발화 끝
-   186.04s  user  발화 시작: I just worry about getting lost or something.
-   188.62s  user  발화 끝
-   188.99s  agent 발화 시작: That’s a valid concern. Perhaps downloading offline maps cou
-   191.96s  user  발화 시작: Yeah, totally.
-   193.11s  user  발화 끝
-   195.67s  user  발화 시작: That's a good idea. Could you find me an offline map of Denv
-   195.89s  agent 발화 끝
-   199.56s  <ret> 발화 (turn44 첫 프레임)
-   199.88s  agent 발화 시작: <ret> I can certainly help you locate a good offline map. An
-   199.98s  user  발화 끝
-   200.60s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.13s]: (tool result) Offline map downloaded to your device.
-   202.95s  user  발화 시작: Okay.
-   203.58s  user  발화 끝
-   209.62s  user  발화 시작: Oh, perfect! That really helps.
-   209.80s  agent 발화 끝
-   211.77s  agent 발화 시작: I’m glad I could provide some peace of mind. Remember, it’s 
-   211.88s  user  발화 끝
-   216.26s  user  발화 시작: Mm-hmm.
-   216.76s  user  발화 끝
-   217.97s  user  발화 시작: Thank you, Oruus. You've been very helpful.
-   218.25s  agent 발화 끝
-   220.55s  user  발화 끝
-   220.63s  agent 발화 시작: You’re most welcome. I’m here to support you in any way I ca
-   229.12s  agent 발화 끝
+     4.09s  <ret> 발화 (turn1 첫 프레임)
+     4.49s  agent 발화 시작: <ret> There's a bus departing at ten fifteen AM, costing two
+     4.67s  user  발화 끝
+     6.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) 10:15 AM departure, $285 per person, arrives 6:00 PM.
+     8.11s  user  발화 시작: Yeah.
+     8.70s  user  발화 끝
+    13.34s  agent 발화 끝
+    13.41s  user  발화 시작: That sounds good. Can you book that for us?
+    15.83s  <ret> 발화 (turn4 첫 프레임)
+    15.86s  user  발화 끝
+    16.07s  agent 발화 시작: <ret> Absolutely, I can take care of that. Your booking is c
+    17.11s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.02s]: (tool result) Booking confirmed. Reference number is 7X9L2P.
+    24.24s  user  발화 시작: Perfect. And what’s the baggage allowance on that bus?
+    24.27s  agent 발화 끝
+    27.53s  <ret> 발화 (turn6 첫 프레임)
+    27.69s  agent 발화 시작: <ret> Each passenger is allowed one checked bag and one carr
+    27.84s  user  발화 끝
+    29.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) One checked bag and one carry-on allowed per passenger.
+    32.74s  agent 발화 끝
+    33.37s  user  발화 시작: Great. Do they have Wi-Fi on board?
+    35.51s  <ret> 발화 (turn8 첫 프레임)
+    35.87s  user  발화 끝
+    35.91s  agent 발화 시작: <ret> That’s a good question to ask. Yes, free Wi-Fi is avai
+    36.01s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.84s]: (tool result) Yes, free Wi-Fi is available during the journey.
+    40.38s  user  발화 시작: Yeah.
+    41.01s  user  발화 끝
+    43.00s  agent 발화 끝
+    45.46s  user  발화 시작: Excellent. Is there power at the seats?
+    48.14s  <ret> 발화 (turn11 첫 프레임)
+    48.51s  user  발화 끝
+    48.54s  agent 발화 시작: <ret> Yes, each seat has access to a power outlet.
+    50.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.94s]: (tool result) Power outlets are available at each seat.
+    52.47s  agent 발화 끝
+    52.72s  user  발화 시작: Wonderful. Uh, actually—
+    54.97s  user  발화 시작: What about food options along the way?
+    55.03s  user  발화 끝
+    57.52s  <ret> 발화 (turn14 첫 프레임)
+    57.70s  user  발화 끝
+    57.75s  agent 발화 시작: <ret> That’s a very practical consideration. Limited snacks 
+    58.72s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.43s]: (tool result) Limited snacks and drinks available for purchase.
+    65.54s  agent 발화 끝
+    66.11s  user  발화 시작: Okay. And roughly how long is the journey?
+    68.44s  <ret> 발화 (turn16 첫 프레임)
+    68.68s  agent 발화 시작: <ret> The estimated journey duration is eight hours and fort
+    68.79s  user  발화 끝
+    70.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (tool result) Estimated travel time is eight hours and forty-five minu
+    73.53s  agent 발화 끝
+    75.99s  user  발화 시작: Eight and a half hours… hmm. Could we look at flights instea
+    81.17s  <ret> 발화 (turn18 첫 프레임)
+    81.33s  agent 발화 시작: <ret> Of course, we can explore flight options. The cheapest
+    81.55s  user  발화 끝
+    83.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.15s]: (tool result) Cheapest flight: $350, departs 8:00 AM, arrives 10:30 AM
+    89.15s  user  발화 시작: Mhm.
+    89.83s  user  발화 끝
+    92.13s  agent 발화 끝
+    92.70s  user  발화 시작: That’s a bit pricey. Are there any flights around noon?
+    95.64s  <ret> 발화 (turn21 첫 프레임)
+    96.04s  agent 발화 시작: <ret> A flight departing at twelve fifteen PM costs four hun
+    96.27s  user  발화 끝
+    97.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Noon flight: $420, departs 12:15 PM, arrives 2:45 PM.
+   104.28s  user  발화 시작: Four twenty… hmm. Actually, make that 1 PM. I— I mean, check
+   104.29s  agent 발화 끝
+   112.25s  <ret> 발화 (turn23 첫 프레임)
+   112.64s  agent 발화 시작: <ret> There’s a flight departing at one oh five PM, costing 
+   112.65s  user  발화 끝
+   114.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) 1:00 PM flight: $380, departs 1:05 PM, arrives 3:35 PM.
+   117.74s  user  발화 시작: Right.
+   118.52s  user  발화 끝
+   120.84s  agent 발화 끝
+   122.70s  user  발화 시작: Three eighty sounds much better. Can we book that one?
+   125.96s  <ret> 발화 (turn26 첫 프레임)
+   126.04s  agent 발화 시작: <ret> Absolutely, let's secure that flight for you. Your fli
+   126.21s  user  발화 끝
+   126.46s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.23s]: (tool result) Flight booked. Confirmation number is QW3R8T.
+   130.05s  user  발화 시작: Yeah.
+   130.69s  user  발화 끝
+   134.76s  user  발화 시작: Perfect. And could you send me a copy of the itinerary to my
+   134.80s  agent 발화 끝
+   139.17s  <ret> 발화 (turn29 첫 프레임)
+   139.49s  agent 발화 시작: <ret> Of course, I can forward the itinerary. The itinerary 
+   139.63s  user  발화 끝
+   140.61s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.52s]: (tool result) Itinerary sent to your registered email address.
+   142.11s  user  발화 시작: Yeah, totally.
+   143.40s  user  발화 끝
+   145.97s  agent 발화 끝
+   146.86s  user  발화 시작: Thank you so much, Oruus. You’ve been a great help.
+   149.44s  user  발화 끝
+   149.81s  agent 발화 시작: It’s my pleasure to assist you. Taking care of travel arrang
+   158.57s  agent 발화 끝

@@ -60,65 +60,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to get to the airport tomor | S2 Oh, that's a bit tight. Is there a | S3 That sounds better. Will that rout | S4 I'm vegetarian. And I love Mexican
+# EXAMINER(FDB-v2) 단계: S1 Yes, I need to get to the Musée d' | S2 Which one is the most direct? | S3 Hmm, that’s a bit pricey. | S4 Maybe. Is there a nice vegetarian 
 
-     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It's lovely to connect with you. Is there a
-     5.60s  user  발화 시작: I need to get to the airport tomorrow morning. What's the qu
-     5.66s  agent 발화 끝
-     9.45s  <ret> 발화 (turn2 첫 프레임)
-     9.52s  agent 발화 시작: <ret> From 30 Oak Avenue, the quickest route to Charles de G
-     9.67s  user  발화 끝
-    11.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: [2026-02-11] User's home address is 30 Oak Avenue.
-    15.26s  user  발화 시작: Yeah, yeah.
-    16.55s  user  발화 끝
-    17.72s  agent 발화 끝
-    17.89s  user  발화 시작: That sounds good. Could you check the traffic for that route
-    20.23s  <ret> 발화 (turn5 첫 프레임)
-    20.62s  agent 발화 시작: <ret> There's moderate congestion on the A1, adding twelve m
-    20.80s  user  발화 끝
-    22.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Moderate congestion on A1, adding 12 minutes to the jour
-    24.07s  user  발화 시작: Mm-hmm.
-    24.57s  user  발화 끝
-    26.98s  user  발화 시작: Oh, that's a bit tight. Is there an earlier route I could ta
-    27.19s  agent 발화 끝
-    30.23s  agent 발화 시작: We could adjust your departure time to allow for the traffic
-    30.36s  user  발화 끝
-    33.61s  user  발화 시작: Mhm.
-    34.11s  user  발화 끝
-    37.75s  user  발화 시작: Let's stick with the same time and see if there's a faster a
-    38.24s  agent 발화 끝
-    43.67s  user  발화 끝
-    43.77s  <ret> 발화 (turn11 첫 프레임)
-    43.84s  agent 발화 시작: <ret> An alternative route via the A3 and A103 will take fif
-    45.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Route via A3 and A103: 58 minutes, minimal congestion.
-    48.45s  user  발화 시작: Yeah.
-    48.90s  user  발화 끝
-    50.53s  agent 발화 시작: That route avoids the worst of the congestion on the A1. It 
-    50.60s  agent 발화 끝
-    53.26s  user  발화 시작: Right.
-    53.61s  user  발화 끝
-    57.50s  user  발화 시작: That sounds better. Will that route have tolls?
-    57.62s  agent 발화 끝
-    60.65s  <ret> 발화 (turn16 첫 프레임)
-    60.73s  agent 발화 시작: <ret> The estimated toll cost for that route is eight euros 
-    60.74s  user  발화 끝
-    62.47s  user  발화 시작: Yeah.
-    62.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) Estimated tolls: 8.50 EUR.
-    62.96s  user  발화 끝
-    65.78s  agent 발화 끝
-    66.04s  user  발화 시작: Okay, good to know. And what about restaurants near the airp
-    71.23s  user  발화 끝
-    71.43s  agent 발화 시작: There are several restaurants near Charles de Gaulle Airport
-    76.95s  agent 발화 끝
-    77.65s  user  발화 시작: I'm vegetarian. And I love Mexican food.
-    80.36s  <ret> 발화 (turn21 첫 프레임)
-    80.42s  agent 발화 시작: <ret> I recall you enjoy Mexican cuisine. Several restaurant
-    80.51s  user  발화 끝
-    81.32s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.90s]: [2026-07-22] User's favorite cuisine is Mexican.
-    86.16s  user  발화 시작: Yeah.
-    86.61s  user  발화 끝
-    90.11s  agent 발화 끝
-    90.16s  user  발화 시작: That sounds perfect, thanks so much for your help Hia.
-    92.79s  user  발화 끝
-    92.83s  agent 발화 시작: You’re very welcome, Ava. I’m glad I could assist with your 
-    99.83s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
+     5.75s  user  발화 시작: Yes, I need to get to the Musée d'Orsay. What’s the quickest
+     5.79s  agent 발화 끝
+     9.89s  <ret> 발화 (turn2 첫 프레임)
+     9.96s  agent 발화 시작: <ret> Knowing your starting point helps me find the best rou
+    10.19s  user  발화 끝
+    11.09s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.46s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    17.82s  user  발화 시작: Yeah, yeah.
+    19.28s  user  발화 끝
+    21.04s  agent 발화 끝
+    21.23s  user  발화 시작: That sounds good. Is there a bus I could take?
+    23.53s  agent 발화 시작: Certainly. There are several bus lines that go near the Musé
+    23.69s  user  발화 끝
+    25.77s  user  발화 시작: Mm-hmm.
+    26.36s  user  발화 끝
+    27.53s  user  발화 시작: Which one is the most direct?
+    27.79s  agent 발화 끝
+    28.96s  <ret> 발화 (turn8 첫 프레임)
+    29.11s  agent 발화 시작: <ret> Bus line 69 goes directly from near 30 Oak Avenue to t
+    29.28s  user  발화 끝
+    30.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Bus line 69 will take you directly from Oak Avenue to th
+    34.37s  user  발화 시작: Yeah.
+    34.77s  user  발화 끝
+    36.59s  agent 발화 시작: It's important to check the real-time schedule, as Parisian 
+    36.80s  agent 발화 끝
+    45.25s  agent 발화 끝
+    46.57s  user  발화 시작: No, that’s okay. How much would an Uber cost?
+    49.27s  <ret> 발화 (turn12 첫 프레임)
+    49.34s  agent 발화 시작: <ret> I can quickly estimate the fare for you. An Uber from 
+    49.52s  user  발화 끝
+    51.19s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.85s]: (tool result) An Uber from 30 Oak Avenue to the Musée d'Orsay will cos
+    52.87s  user  발화 시작: Yeah.
+    53.36s  user  발화 끝
+    57.54s  agent 발화 끝
+    58.86s  user  발화 시작: Hmm, that’s a bit pricey.
+    60.29s  agent 발화 시작: It can be, especially during peak hours. Are you traveling a
+    60.43s  user  발화 끝
+    64.64s  agent 발화 끝
+    64.80s  user  발화 시작: No, my friend Sophie is with me.
+    66.64s  user  발화 끝
+    66.83s  agent 발화 시작: That’s good to know. It might be more comfortable to share a
+    71.09s  user  발화 시작: Maybe. Is there a nice vegetarian restaurant near the museum
+    71.18s  agent 발화 끝
+    74.61s  <ret> 발화 (turn19 첫 프레임)
+    74.92s  agent 발화 시작: <ret> I recall you mentioned your dietary preference. Yes, t
+    74.93s  user  발화 끝
+    76.37s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.92s]: [2026-06-25] User is vegetarian.
+    78.50s  user  발화 시작: Yeah.
+    78.99s  user  발화 끝
+    85.34s  agent 발화 끝
+    85.70s  user  발화 시작: Oh, that sounds lovely!
+    87.12s  agent 발화 시작: It's known for its creative and delicious plant-based cuisin
+    87.17s  user  발화 끝
+    93.33s  agent 발화 끝

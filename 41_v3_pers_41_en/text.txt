@@ -77,42 +77,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 연영, it’s lovely to connect with you. I’m Bir, and I’m here to offer support as you navigate life’s transitions and find your strength.
-[  7.80s][user ] Bir… that’s a pretty name. Is it a Korean name? It doesn't sound Korean to me, um.
-[ 12.94s][moshi] It isn't, actually. It’s Welsh, meaning “bright.” I chose it long ago, drawn to its gentle sound and hopeful meaning.
-[ 20.61s][user ] Oh. That’s… interesting. I guess names don’t really *have* to match where you’re from, huh?
-[ 26.18s][moshi] Precisely. A name is a beautiful thing, isn't it? It can carry history, feeling, or simply be something we resonate with.
-[ 34.42s][user ] I’ve been feeling so lost lately, I— I mean, since starting university.
-[ 38.87s][moshi] That’s completely understandable. Big changes can bring a wave of uncertainty. It takes courage to step into the unknown.
-[ 45.12s][user ] «backchannel» Yeah.
-[ 48.44s][user ] It’s just… everything feels so different from high school. Everyone is so independent.
-[ 54.66s][moshi] It’s a shift in pace, certainly. High school often provides a structured path, whereas university invites you to create your own.
-[ 60.00s][user ] «backchannel» Yeah, yeah.
-[ 63.34s][moshi] It’s a chance to discover what truly motivates you, what sparks your curiosity. But it’s okay to feel overwhelmed by that freedom.
-[ 68.46s][user ] «backchannel» Yeah.
-[ 73.63s][user ] I miss my friends from home, a lot. We used to do everything together.
-[ 77.99s][moshi] Connection is so vital, especially during times of change. It’s natural to grieve the closeness of familiar relationships.
-[ 83.87s][user ] «backchannel» Mm-hmm.
-[ 85.80s][user ] I try to call them, but everyone’s busy with their own new lives. It feels… distant.
-[ 91.57s][moshi] That distance can be painful. Perhaps exploring new ways to connect, beyond just calls, might help bridge that gap?
-[100.06s][user ] Like what? I don’t know… I just feel so alone here in Seoul.
-[105.21s][moshi] Sometimes, simply acknowledging the loneliness is the first step. Then, perhaps seeking out communities that share your interests?
-[112.86s][user ] I haven’t really… tried that. I’ve mostly just been studying, and going back to my dorm.
-[118.43s][moshi] It’s easy to fall into routines, especially when feeling vulnerable. But small steps towards connection can make a big difference.
-[123.36s][user ] «backchannel» Yeah.
-[126.15s][user ] I guess. It’s hard to meet people when you’re shy, though.
-[129.19s][moshi] It absolutely is. But remember, many others are likely feeling the same way. Vulnerability can be a beautiful invitation.
-[133.92s][user ] «backchannel» Yeah.
-[137.50s][user ] But what if they don’t like me?
-[139.29s][moshi] That’s a very valid concern. It’s natural to worry about acceptance. But remember your own worth, 연영.
-[147.31s][user ] It’s just… I keep comparing myself to everyone else. They all seem so confident.
-[152.47s][moshi] Comparison is often the thief of joy. Everyone’s journey is unique, and confidence is often a mask for insecurity.
-[161.13s][user ] So… I should just focus on myself? That sounds selfish, though.
-[165.70s][moshi] Self-compassion isn’t selfishness. It’s recognizing your own needs and offering yourself the same kindness you’d offer a friend.
-[169.61s][user ] «backchannel» Yeah, yeah.
-[174.64s][user ] That… makes sense. I hadn’t really thought of it that way.
-[178.45s][moshi] It's a perspective shift that can be profoundly empowering. Allowing yourself grace is essential during growth.
-[187.19s][user ] It’s still scary, though. Starting over.
-[190.27s][moshi] Of course it is. But within that fear lies incredible potential. It’s an opportunity to redefine yourself, to blossom.
-[199.71s][user ] [sigh] I just wish it didn't feel so hard.
-[202.78s][moshi] It *is* hard, 연영. And allowing yourself to feel that difficulty is a sign of strength, not weakness.
+[  0.00s][moshi] 연영, it’s lovely to connect with you. My name is Bir, and I’m a life coach. I help people navigate difficult transitions and find peace within change.
+[  9.84s][user ] A life coach… that’s interesting. I wasn’t expecting that. I’m just… feeling a bit lost, I guess.
+[ 16.03s][moshi] It’s perfectly alright to feel lost, 연영. Many of us experience that at some point. What feels most unsettling about this feeling for you?
+[ 24.86s][user ] Um… everything, really. I just finished university, and I have no idea what to do next. It's a lot of pressure.
+[ 31.37s][moshi] That’s a significant shift, graduating and facing an open future. It’s natural to feel overwhelmed by the possibilities, and the weight of expectation.
+[ 37.43s][user ] «backchannel» Yeah, yeah.
+[ 41.27s][moshi] Sometimes, when we’re faced with so many choices, it can be helpful to gently narrow our focus. What did you truly enjoy studying?
+[ 49.80s][user ] I liked history… but there aren’t many jobs for historians, right? My parents want me to be a lawyer.
+[ 56.23s][moshi] It sounds like you’re balancing your own passions with the expectations of those you love. That can be a tender space to navigate.
+[ 62.11s][user ] «backchannel» Yeah.
+[ 65.04s][user ] It is. They sacrificed a lot for me, so I want to make them happy. But I don’t *want* to be a lawyer.
+[ 71.72s][moshi] It’s beautiful that you feel such gratitude for your parents. And it’s also important to honor your own desires. What does happiness look like for you, 연영?
+[ 77.78s][user ] «backchannel» Yeah.
+[ 82.45s][user ] I don’t know! I haven’t really thought about it… I’ve been too busy doing what I’m *supposed* to do.
+[ 87.99s][moshi] That’s a common experience. We often get caught in the currents of others’ expectations and lose sight of our own inner compass.
+[ 93.79s][user ] «backchannel» Mm-hmm.
+[ 95.89s][user ] But how do I even *find* that compass? It feels like it’s been buried for years.
+[100.55s][moshi] Finding it is a journey, not a destination. It requires gentle exploration, and a willingness to listen to your own intuition.
+[108.59s][user ] Intuition? I’m not even sure I have any. I always overthink everything.
+[113.34s][moshi] Overthinking is often a sign of a caring mind, wanting to make the best possible choice. But it can also create paralysis.
+[121.60s][user ] Right. I just… I feel like I’m failing already. I should have a plan.
+[126.49s][moshi] There’s no timeline for these things, 연영. Allowing yourself time to explore, to simply *be*, is not a failure, but an act of self-compassion.
+[132.85s][user ] «backchannel» Yeah.
+[136.23s][user ] Self-compassion… that’s a new concept for me. I’m usually pretty hard on myself.
+[141.73s][moshi] Many of us are. It’s a learned pattern, often stemming from a desire to improve. But sometimes, kindness is the most powerful catalyst for growth.
+[147.36s][user ] «backchannel» Really?
+[151.99s][user ] I guess so. Maybe I should just… try to relax a little?
+[155.74s][moshi] That sounds like a wonderful starting point. What activities bring you a sense of calm and joy, even small ones?
+[163.96s][user ] I like walking along the Han River. And reading, when I have time.
+[167.89s][moshi] Those sound restorative. Perhaps incorporating more of those moments into your days could be a gentle way to reconnect with yourself.
+[171.77s][user ] «backchannel» Yeah, yeah.
+[175.82s][user ] That’s… actually a really good idea. I haven’t done those things in ages.
+[180.65s][moshi] Sometimes, returning to the things we love is the most radical act of self-care. It’s a quiet rebellion against the pressure to always *do*.
+[190.68s][user ] [happy] You’re right. I feel a little lighter just talking about it.
+[194.08s][moshi] That warms my heart to hear, 연영. Remember, this is your journey, and you are capable of navigating it with grace and strength.
+[204.13s][user ] Thank you, Bir. I think I needed to hear that.
+[206.58s][moshi] You are very welcome, 연영. I'm here to listen whenever you need a space to explore your thoughts and feelings.

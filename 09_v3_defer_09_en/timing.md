@@ -68,29 +68,26 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 That sounds great. Can you check i | S3 Oh, and what about parking? Is par | S4 Okay, that's good to know. Could y
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.62s  <ret> 발화 (turn1 첫 프레임)
-     5.83s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
-     5.97s  user  발화 끝
-     7.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) hotel_reservation: confirmation_number=AX927LZ, hotel_na
-    11.66s  user  발화 시작: Mm-hmm.
-    12.11s  user  발화 끝
-    14.22s  agent 발화 끝
-    14.24s  user  발화 시작: That sounds great. Can you check if they have a shuttle to t
-    18.05s  <ret> 발화 (turn4 첫 프레임)
-    18.20s  agent 발화 시작: <ret> Yes, the Ocean View Hotel does offer a complimentary a
-    18.30s  user  발화 끝
-    20.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) hotel_amenities: hotel_name=Ocean View Hotel, city=San D
-    23.07s  agent 발화 끝
-    23.08s  user  발화 시작: Oh, and what about parking? Is parking included?
-    25.85s  user  발화 끝
-    26.02s  agent 발화 시작: Parking is available at a rate of twenty-five dollars per ni
-    30.30s  user  발화 시작: Okay, that's good to know. Could you add a request for a roo
-    30.41s  agent 발화 끝
-    35.63s  <ret> 발화 (turn8 첫 프레임)
-    36.01s  agent 발화 시작: <ret> I can certainly add that request for you. I’ve added a
-    36.22s  user  발화 끝
-    37.15s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.94s]: (tool result) hotel_reservation_update: confirmation_number=AX927LZ, r
-    44.45s  agent 발화 끝
+     5.50s  <ret> 발화 (turn1 첫 프레임)
+     5.73s  agent 발화 시작: <ret> Excellent! I’ve reserved three rooms at the Ocean View
+     5.88s  user  발화 끝
+     7.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Confirmation: three rooms reserved at Ocean View Hotel, 
+     9.63s  user  발화 시작: Mm-hmm.
+    10.13s  user  발화 끝
+    11.38s  agent 발화 끝
+    11.48s  user  발화 시작: What’s the cancellation policy?
+    13.14s  <ret> 발화 (turn4 첫 프레임)
+    13.27s  agent 발화 시작: <ret> The Ocean View Hotel in San Diego allows free cancella
+    13.41s  user  발화 끝
+    15.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Ocean View Hotel, San Diego: free cancellation until sev
+    19.41s  user  발화 시작: Is parking included with the reservation?
+    20.14s  agent 발화 끝
+    21.62s  <ret> 발화 (turn6 첫 프레임)
+    21.99s  user  발화 끝
+    21.99s  agent 발화 시작: <ret> Parking is available at the hotel for twenty-five doll
+    23.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.73s]: (tool result) Parking available at Ocean View Hotel, San Diego, twenty
+    26.70s  agent 발화 시작: I can add parking to your reservation for an additional twen
+    26.71s  agent 발화 끝
+    31.89s  agent 발화 끝

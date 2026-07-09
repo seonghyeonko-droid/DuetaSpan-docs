@@ -60,29 +60,22 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yeah, it does. I'm starting to loo | S2 That’s great, thanks. Are there an | S3 …actually, before we get into airl | S4 Wow, that *is* long. I guess a sto
 
-     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. I understand you’re planning a trip to Ne
-     7.09s  agent 발화 끝
-     7.58s  user  발화 시작: Yeah, it does. I'm starting to look at flights, and I always
-    11.21s  <ret> 발화 (turn2 첫 프레임)
-    11.61s  agent 발화 시작: <ret> Considering your travel preferences… you consistently 
-    11.71s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.38s]: [2026-07-11] User prefers an aisle seat when traveling.
-    11.79s  user  발화 끝
-    17.74s  user  발화 시작: Mm-hmm.
-    18.27s  user  발화 끝
-    19.67s  user  발화 시작: That’s great, thanks. Are there any particularly good airlin
-    19.90s  agent 발화 끝
-    24.74s  agent 발화 시작: Several airlines fly to Auckland, offering various levels of
-    24.81s  user  발화 끝
-    32.30s  user  발화 시작: …actually, before we get into airlines, what’s the typical f
-    33.13s  agent 발화 끝
-    36.36s  <ret> 발화 (turn7 첫 프레임)
-    36.59s  agent 발화 시작: <ret> That’s a good point to start with.
-    36.79s  user  발화 끝
-    36.86s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.51s]: (tool result) 18h 30m - 21h 00m direct; 20h 00m - 24h 00m with one sto
-    37.93s  agent 발화 시작: direct flights take between eighteen and a half to twenty-on
-    38.10s  agent 발화 끝
-    46.13s  agent 발화 끝
-    46.41s  user  발화 시작: Wow, that *is* long. I guess a stopover might be good to bre
-    50.62s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. It's good to connect with you. I understa
+     5.67s  user  발화 시작: …and I'm trying to figure out the best way to get from Auckl
+     6.34s  agent 발화 끝
+     9.50s  user  발화 끝
+     9.79s  agent 발화 시작: Right, getting between those cities is a key part of plannin
+    15.73s  user  발화 시작: Mm-hmm.
+    16.23s  user  발화 끝
+    17.64s  agent 발화 시작: Flying is the quickest, around one hour and twenty minutes. 
+    17.85s  agent 발화 끝
+    26.40s  user  발화 시작: That sounds pretty fast, but I really prefer to see the coun
+    26.49s  agent 발화 끝
+    31.55s  agent 발화 시작: Absolutely. The drive is about six hundred and forty kilomet
+    31.59s  user  발화 끝
+    42.08s  agent 발화 시작: Knowing you prefer an aisle seat, you’d have plenty of room 
+    42.12s  agent 발화 끝
+    46.93s  user  발화 시작: That’s good to know. How long would the drive actually take,
+    46.98s  agent 발화 끝
+    51.33s  user  발화 끝

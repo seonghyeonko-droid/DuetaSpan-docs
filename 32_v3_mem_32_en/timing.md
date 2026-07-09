@@ -59,25 +59,25 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I’m 
-     6.33s  user  발화 시작: Yeah.
-     6.97s  user  발화 끝
-     8.18s  user  발화 시작: Oh, that sounds… good. I was actually wondering, do you reme
-     8.20s  agent 발화 끝
-    15.09s  <ret> 발화 (turn3 첫 프레임)
-    15.13s  user  발화 끝
-    15.16s  agent 발화 시작: <ret> It’s wonderful to revisit plans you’re excited about. 
-    16.93s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.95s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    22.20s  user  발화 시작: Mm-hmm.
-    22.65s  user  발화 끝
-    25.13s  agent 발화 끝
-    25.66s  user  발화 시작: Yes! I’m trying to figure out the best time to visit, consid
-    33.99s  <ret> 발화 (turn6 첫 프레임)
-    34.07s  agent 발화 시작: <ret> Cherry blossom season is truly a beautiful time to vis
-    34.20s  user  발화 끝
-    35.35s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.09s]: (tool result) Peak bloom in Kyoto: March 26 - April 2.
-    43.06s  agent 발화 끝
-    43.12s  user  발화 시작: That’s… that’s perfect, actually. I— I mean, it lines up rea
-    48.46s  agent 발화 시작: That’s wonderful to hear, Manon. It sounds like your trip is
-    48.58s  user  발화 끝
-    58.94s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you. I un
+     6.69s  user  발화 시작: Yeah.
+     7.14s  user  발화 끝
+     8.61s  user  발화 시작: I’m trying to remember what I was planning for my birthday d
+     8.76s  agent 발화 끝
+    13.93s  <ret> 발화 (turn3 첫 프레임)
+    13.94s  user  발화 끝
+    14.01s  agent 발화 시작: <ret> It’s completely understandable to feel a bit scattered
+    14.89s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.38s]: [2026-03-10] User's favorite cuisine is sushi.
+    20.97s  user  발화 시작: Mm-hmm.
+    21.60s  user  발화 끝
+    23.84s  agent 발화 끝
+    24.27s  user  발화 시작: Oh! Yes, that’s it. And I think I was looking at sushi place
+    29.59s  user  발화 끝
+    29.64s  agent 발화 시작: That sounds delightful! Sushi is a wonderful choice for a ce
+    37.75s  agent 발화 끝
+    37.89s  user  발화 시작: Do you remember anything about a trip I was planning? I— I m
+    42.72s  <ret> 발화 (turn8 첫 프레임)
+    42.88s  agent 발화 시작: <ret> Travel plans can certainly be exciting to revisit. You
+    42.89s  user  발화 끝
+    43.84s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.51s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    53.87s  agent 발화 끝

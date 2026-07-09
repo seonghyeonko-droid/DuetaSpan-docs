@@ -63,89 +63,119 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 도쿄 작년 12월 24일 날씨가 어땠어? | S2 와, 알겠어. 아이슬란드는 아닌가 봐. 음, 코스타리카는 어때 | S3 3월에 예약 가능한 곳 좀 찾아줘. | S4 아, 그런데 하나 더 물어봐도 돼? 공항 픽업 서비스는 제공해
+# EXAMINER(FDB-v2) 단계: S1 어, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 좋네. 어, 내일 내 일정은 뭐야? | S3 좋아. 상사한테 이메일 보내야 할 것 같아. | S4 좋네. 건강하게 먹으려고 노력 중이야. 추천해 줄 거 있어?
 
-     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
-     2.96s  <ret> 발화 (turn1 첫 프레임)
-     3.12s  agent 발화 시작: <ret> 네, 도쿄는 작년 12월 24일에 맑은 날씨였고 최고 기온은 12도였어요.
-     3.24s  user  발화 끝
-     4.39s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.23s]: (tool result) Sunny, high of 12 degrees Celsius, low of 5 degrees Cels
-     8.35s  agent 발화 끝
-     8.73s  user  발화 시작: 아, 좋았겠다. 겨울에 어디 놀러 갈까 생각 중이야.
-    11.78s  user  발화 끝
-    11.83s  agent 발화 시작: 여행은 정말 좋은 생각이에요! 특히 추운 계절에는 휴식을 취하고 재충전하는 게 중요하죠.
-    14.62s  user  발화 시작: 응.
-    15.07s  user  발화 끝
-    17.66s  agent 발화 끝
-    18.81s  user  발화 시작: 아이슬란드도 괜찮을까 싶어. 1월 평균 온도가 어때?
-    22.07s  <ret> 발화 (turn6 첫 프레임)
-    22.39s  agent 발화 시작: <ret> 아이슬란드 1월… 잠깐만 찾아볼게요… 아이슬란드 1월 평균 기온은 영하 2도 정도예요.
-    22.55s  user  발화 끝
-    23.67s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.52s]: (tool result) Average temperature -2 degrees Celsius, low -6 degrees C
-    26.86s  user  발화 시작: 음.
-    27.26s  user  발화 끝
-    28.84s  agent 발화 끝
-    28.93s  user  발화 시작: 생각보다 춥네. 바람은 많이 불어?
-    31.48s  <ret> 발화 (turn9 첫 프레임)
-    31.52s  user  발화 끝
-    31.55s  agent 발화 시작: <ret> 바람은 여행에 영향을 줄 수 있죠… 아이슬란드 1월 평균 풍속은 시속 35킬로미터이고 돌풍은 시속
-    31.98s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.92s]: (tool result) Average wind speed 35 km/h, gusts up to 60 km/h.
-    40.50s  agent 발화 끝
-    41.49s  user  발화 시작: 와, 알겠어. 아이슬란드는 아닌가 봐. 음, 코스타리카는 어때?
-    46.14s  agent 발화 시작: 코스타리카는 훨씬 따뜻한 곳이에요! 햇볕을 찾으신다면 좋은 선택일 거예요.
-    46.34s  user  발화 끝
-    51.09s  agent 발화 끝
-    51.23s  user  발화 시작: 2월 평균 최고 기온이 얼마야?
-    53.19s  <ret> 발화 (turn13 첫 프레임)
-    53.43s  agent 발화 시작: <ret> 코스타리카 2월 평균 최고 기온은 30도예요.
-    53.58s  user  발화 끝
-    54.79s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.14s]: (tool result) Average high temperature 30 degrees Celsius.
-    56.57s  agent 발화 끝
-    56.69s  user  발화 시작: 완벽하네! 요가 리트릿 좋은 곳 있어?
-    59.30s  agent 발화 시작: 코스타리카는 요가를 포함한 웰니스 리트릿으로 아주 유명해요.
-    59.45s  user  발화 끝
-    63.41s  user  발화 시작: 3월에 예약 가능한 곳 좀 찾아줘.
-    63.79s  agent 발화 끝
-    65.33s  <ret> 발화 (turn17 첫 프레임)
-    65.64s  agent 발화 시작: <ret> 세 곳을 찾았어요: 푸라 비다 요가, 제니스 리트릿, 블루 호라이즌 요가, 모두 3월에 가능해요.
-    65.72s  user  발화 끝
-    67.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) "Pura Vida Yoga" – March 10-17, $1500. "Zenith Retreats"
-    71.94s  agent 발화 끝
-    72.43s  user  발화 시작: 음, 푸라 비다가 괜찮은 것 같아. 자리가 남아있는지 확인해 줄래?
-    76.37s  <ret> 발화 (turn19 첫 프레임)
-    76.61s  agent 발화 시작: <ret> 푸라 비다 예약 가능 여부를 확인 중입니다… 푸라 비다 요가는 3월 10일부터 17일까지 리트릿에
-    76.78s  user  발화 끝
-    78.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.25s]: (tool result) Pura Vida Yoga: 3 spots remaining for March 10-17 retrea
-    82.08s  user  발화 시작: 응.
-    82.57s  user  발화 끝
-    84.26s  agent 발화 끝
-    84.94s  user  발화 시작: 자리 하나 예약해 줘.
-    85.97s  <ret> 발화 (turn22 첫 프레임)
-    86.13s  agent 발화 시작: <ret> 알겠습니다! 예약을 진행해 드릴게요… 푸라 비다 요가 3월 10일부터 17일까지 리트릿 예약이 완
-    86.36s  user  발화 끝
-    87.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.52s]: (tool result) Booking confirmed! Pura Vida Yoga, March 10-17, $1500. C
-    95.82s  agent 발화 끝
-    97.11s  user  발화 시작: [laugh] 최고다! 정말 고마워, 브레이.
-    99.68s  agent 발화 시작: 천만에요! 정말 회복에 도움이 되는 여행이 될 것 같아요. 도와드릴 수 있어서 기뻐요.
-    99.69s  user  발화 끝
-   101.84s  user  발화 시작: 어어.
-   102.47s  user  발화 끝
-   106.63s  agent 발화 끝
-   106.85s  user  발화 시작: 아, 그런데 하나 더 물어봐도 돼? 공항 픽업 서비스는 제공해?
-   111.33s  user  발화 끝
-   111.42s  agent 발화 시작: 원활한 도착을 위해 좋은 질문이에요.
-   112.61s  user  발화 시작: 응.
-   112.91s  user  발화 끝
-   114.06s  agent 발화 끝
-   114.70s  user  발화 시작: 푸라 비다가 제공하는지 말이야?
-   116.19s  <ret> 발화 (turn30 첫 프레임)
-   116.59s  agent 발화 시작: <ret> 죄송하지만 푸라 비다 요가에서 제공하는 공항 픽업 서비스에 대한 정보는 찾을 수 없었어요.
-   116.77s  user  발화 끝
-   117.87s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.83s]: (no information found)
-   119.90s  user  발화 시작: 어.
-   120.44s  user  발화 끝
-   122.42s  agent 발화 끝
-   124.26s  user  발화 시작: 알았어. 다시 한번 고마워!
-   126.56s  user  발화 끝
-   126.58s  agent 발화 시작: 천만에요. 작은 변화도 웰빙에 큰 도움이 될 수 있다는 것을 기억하세요. 코스타리카에서 즐거운 시간 보내세요
-   133.85s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 작년 12월 24일 도쿄 날씨가 어땠어?
+     3.05s  <ret> 발화 (turn1 첫 프레임)
+     3.21s  agent 발화 시작: <ret> 음, 작년 12월 24일 도쿄는 부분적으로 흐렸고 최고 기온은 12도, 최저 기온은 5도였어요.
+     3.33s  user  발화 끝
+     4.49s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.99s]: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 5 degr
+    10.21s  agent 발화 끝
+    10.67s  user  발화 시작: 그래, 알겠어. 뭐, 근처에 괜찮은 이탈리아 식당 있어?
+    14.67s  <ret> 발화 (turn3 첫 프레임)
+    15.07s  agent 발화 시작: <ret> 네, 도와드릴 수 있어요. Bella Notte가 근처에 있고, 거리는 0.8킬로미터 정도이고, 
+    15.16s  user  발화 끝
+    16.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.15s]: (tool result) Bella Notte, 0.5 miles away, 4.5 stars, price range mode
+    18.86s  user  발화 시작: 응.
+    19.31s  user  발화 끝
+    22.95s  agent 발화 끝
+    24.09s  user  발화 시작: 그거 괜찮네. 저녁 7시에 두 명 예약해 줄 수 있어?
+    27.34s  <ret> 발화 (turn6 첫 프레임)
+    27.58s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
+    27.73s  user  발화 끝
+    27.98s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.28s]: (tool result) Reservation confirmed for two at Bella Notte, today at 7
+    28.86s  agent 발화 끝
+    28.92s  agent 발화 시작: Bella Notte에 저녁 7시에 두 분 예약이 확정됐어요.
+    31.33s  user  발화 시작: 음.
+    31.77s  user  발화 끝
+    32.43s  agent 발화 끝
+    33.00s  user  발화 시작: 좋아. 도자기 수업 들어볼까 하는데, 이번 주에 초급 수업 있는 데 알아봐 줄 수 있어?
+    38.10s  <ret> 발화 (turn10 첫 프레임)
+    38.18s  agent 발화 시작: <ret> 정말 좋은 생각이에요! Clayful Creations에서 화요일 6시에, 목요일 10시에 초급 
+    38.32s  user  발화 끝
+    40.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) Clayful Creations, Tuesday at 6 PM, Thursday at 10 AM, l
+    48.00s  agent 발화 끝
+    48.18s  user  발화 시작: 목요일 10시가 좋겠어. 나— 그러니까, 그거 등록해 줄 수 있어?
+    52.45s  <ret> 발화 (turn12 첫 프레임)
+    52.69s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
+    52.81s  user  발화 끝
+    53.17s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.33s]: (tool result) Registration confirmed for Clayful Creations pottery cla
+    54.02s  agent 발화 끝
+    54.06s  agent 발화 시작: 목요일 10시 도자기 수업 등록이 완료됐어요.
+    57.02s  agent 발화 끝
+    57.09s  user  발화 시작: 좋네. 어, 내일 내 일정은 뭐야?
+    60.08s  <ret> 발화 (turn15 첫 프레임)
+    60.48s  agent 발화 시작: <ret> 내일은 사라 씨와 아홉 시에 회의가 있고, 오후 두 시에 병원 예약이 있어요.
+    60.63s  user  발화 끝
+    62.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) 9:00 AM: Meeting with Sarah, 2:00 PM: Doctor’s appointme
+    65.94s  agent 발화 끝
+    66.05s  user  발화 시작: 아, 의사 예약은 까먹었네. [sigh] 병원 가는 길에 교통 체증 있어?
+    70.25s  <ret> 발화 (turn17 첫 프레임)
+    70.65s  agent 발화 시작: <ret> 교통 상황은 보통이고, 예상 이동 시간은 25분이에요.
+    70.86s  user  발화 끝
+    72.01s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.21s]: (tool result) Moderate traffic, estimated travel time 25 minutes.
+    74.44s  user  발화 시작: 그래, 너무 나쁘진 않네. 요즘 일이 너무 많아서 좀 힘들어.
+    74.85s  agent 발화 끝
+    78.70s  agent 발화 시작: 그건 흔한 일이고, 충분히 이해가 돼요. 그걸 인지하는 게 중요해요. 도자기 수업이 스트레스 해소에 도움이 
+    78.79s  user  발화 끝
+    86.25s  agent 발화 끝
+    86.76s  user  발화 시작: 그래, 그랬으면 좋겠다. 다음 달 덴버 가는 비행기는 아직 예약됐어?
+    91.81s  <ret> 발화 (turn21 첫 프레임)
+    91.97s  agent 발화 시작: <ret> 네, 11월 15일 오전 8시에 출발하는 UA456 덴버행 비행기는 예약 상태예요.
+    92.17s  user  발화 끝
+    93.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Flight UA456 to Denver, confirmed, departing November 15
+    95.61s  user  발화 시작: 응.
+    96.10s  user  발화 끝
+    97.80s  agent 발화 끝
+    98.49s  user  발화 시작: 좋아. 상사한테 이메일 보내야 할 것 같아.
+   101.28s  agent 발화 시작: 제가 도와드릴 수 있어요. 누구에게 보내시겠어요?
+   101.45s  user  발화 끝
+   102.19s  user  발화 시작: 어어.
+   102.82s  user  발화 끝
+   104.28s  agent 발화 끝
+   105.97s  user  발화 시작: 데이비드 밀러한테. 그리고 내일 오후에는 자리에 없을 거라고 초안 써 줄 수 있어?
+   111.07s  <ret> 발화 (turn27 첫 프레임)
+   111.31s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
+   111.48s  user  발화 끝
+   112.35s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.47s]: (tool result) Email sent to David Miller, subject: Unavailable tomorro
+   112.78s  agent 발화 끝
+   112.87s  agent 발화 시작: 데이비드 밀러 씨에게 내일 오후에 자리에 없을 것이라는 내용의 이메일이 발송됐어요.
+   115.37s  user  발화 시작: 응.
+   115.59s  user  발화 끝
+   118.14s  user  발화 시작: 좋아, 고마워. 아, 그리고.
+   118.24s  agent 발화 끝
+   120.72s  user  발화 끝
+   121.03s  agent 발화 시작: 다음 주에 그에게 후속 연락하라고 알림을 설정해 드릴까요?
+   123.24s  user  발화 시작: 어.
+   123.78s  user  발화 끝
+   125.01s  agent 발화 끝
+   125.07s  user  발화 시작: 오, 그래, 좋은 생각이야. 다음 화요일 10시에 알려줘.
+   128.77s  <ret> 발화 (turn34 첫 프레임)
+   129.17s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
+   129.33s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.42s]: (tool result) Reminder set for next Tuesday at 10:00 AM: Follow up wit
+   129.38s  user  발화 끝
+   130.59s  agent 발화 끝
+   130.62s  agent 발화 시작: 다음 화요일 10시에 데이비드에게 후속 연락하라는 알림이 설정됐어요.
+   135.11s  agent 발화 끝
+   136.91s  user  발화 시작: 좋네. 건강하게 먹으려고 노력 중이야. 추천해 줄 거 있어?
+   140.76s  agent 발화 시작: 물론이죠. 작은 변화가 큰 차이를 만들 수 있어요. 설탕이 많이 든 음료 대신 물을 마시는 것부터 시작해 보
+   140.99s  user  발화 끝
+   149.52s  agent 발화 끝
+   149.58s  user  발화 시작: 그거 좋은 지적이네. [happy] 저녁에 먹을 수 있는 건강한 레시피 좀 찾아줄 수 있어?
+   153.95s  <ret> 발화 (turn39 첫 프레임)
+   154.35s  agent 발화 시작: <ret> 네, 도와드릴 수 있어요. BBC Good Food에는 온라인에서 이용할 수 있는 빠르고 건강한 
+   154.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.32s]: (tool result) BBC Good Food: 15 quick & healthy dinner recipes.
+   154.49s  user  발화 끝
+   157.81s  user  발화 시작: 응.
+   158.31s  user  발화 끝
+   162.15s  user  발화 시작: 좋아. 이제 다 된 것 같아.
+   162.23s  agent 발화 끝
+   164.12s  agent 발화 시작: 정말 잘 됐네요! 오늘 좋은 성과를 거두신 것 같아요. 바쁜 일정 속에서도 자기 관리를 우선시하는 것을 잊지
+   164.23s  user  발화 끝
+   169.62s  user  발화 시작: 응.
+   169.85s  user  발화 끝
+   172.14s  agent 발화 끝
+   172.16s  user  발화 시작: 고마워, 브레. 정말 고마워.
+   174.74s  user  발화 끝
+   174.99s  agent 발화 시작: 천만에요. 도와드릴 수 있어서 기뻐요. 다른 일이 생기면 언제든지 연락 주세요.
+   180.40s  agent 발화 끝

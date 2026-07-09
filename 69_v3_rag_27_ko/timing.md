@@ -61,23 +61,29 @@
 # }
 
 
-     0.00s  user  발화 시작: 럭스 아우룬케가 작곡한 곡이 언제 만들어졌는지 궁금해요.
-     3.93s  user  발화 끝
-     4.06s  <ret> 발화 (turn1 첫 프레임)
-     4.14s  agent 발화 시작: <ret> 럭스 아우룬케에 대해 알아보고 있는데, 그분이 활동하신 시기를 파악하는 게 중요할 것 같아요.
-     6.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: [source: Britannica] Lux Aurunque was born in 1970 and is known for hi
-    10.14s  agent 발화 시작: 럭스 아우룬케는 천구백칠십년에 태어났다고 합니다.
-    10.26s  agent 발화 끝
-    14.07s  agent 발화 끝
-    14.49s  user  발화 시작: 아, 천구백칠십년이군요. 그분은 주로 어떤 스타일의 음악을 하셨나요?
-    18.83s  agent 발화 시작: 럭스 아우룬케는 혁신적인 작곡으로 유명하신 분이시죠—
-    19.03s  user  발화 끝
-    21.90s  user  발화 시작: 혹시 그분이 다른 작곡가들에게 영향을 많이 주셨나요?
-    22.67s  agent 발화 끝
-    24.98s  <ret> 발화 (turn6 첫 프레임)
-    25.13s  user  발화 끝
-    25.14s  agent 발화 시작: <ret> 네, 럭스 아우룬케는 동시대 작곡가들에게 큰 영향을 미쳤다고 알려져 있습니다.
-    26.26s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.25s]: [source: AllMusic] Aurunque's work has been cited as a major influence
-    31.29s  agent 발화 시작: 럭스 아우룬케의 작품은 현대 작곡가들에게 큰 영향을 준 것으로 평가받고 있습니다.
-    31.39s  agent 발화 끝
-    37.41s  agent 발화 끝
+     0.00s  user  발화 시작: 럭스 아우룬케 작곡가가 언제 태어났는지 궁금해요.
+     3.23s  user  발화 끝
+     3.38s  <ret> 발화 (turn1 첫 프레임)
+     3.44s  agent 발화 시작: <ret> 그 점에 대해서는— 럭스 아우룬케는 천구백칠십년에 태어났어요.
+     3.94s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.96s]: [source: Britannica] Lux Aurunque was born in nineteen seventy.
+     5.85s  user  발화 시작: 예.
+     6.54s  user  발화 끝
+     8.02s  agent 발화 끝
+     8.36s  user  발화 시작: 아, 그분이 현대 음악가였어요?
+     9.81s  <ret> 발화 (turn4 첫 프레임)
+    10.21s  agent 발화 시작: <ret> 네, 럭스 아우룬케는 현대 음악계에 큰 영향을 미쳤죠.
+    10.44s  user  발화 끝
+    10.69s  ⚡SPAN 주입 [d'=0.88s / d_lead=3.75s]: [source: AllMusic] Lux Aurunque’s compositions are known for their exp
+    13.82s  agent 발화 시작: 럭스 아우룬케의 곡들은 실험적인 성향과 전자 음악 요소를 특징으로 해요.
+    13.96s  agent 발화 끝
+    16.97s  user  발화 시작: 음.
+    17.55s  user  발화 끝
+    19.29s  agent 발화 끝
+    19.54s  user  발화 시작: 혹시 다른 작품도 많이 만들었나요?
+    21.47s  <ret> 발화 (turn8 첫 프레임)
+    21.71s  agent 발화 시작: <ret> 네, 럭스 아우룬케는 다양한 장르의 작품을 남겼어요.
+    21.80s  user  발화 끝
+    23.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: [source: Discogs] Lux Aurunque released over fifty albums throughout h
+    25.43s  agent 발화 시작: 럭스 아우룬케는 생애 동안 쉰 곡이 넘는 앨범을 발표했고, 앰비언트부터 인더스트리얼까지 다양한 장르를 아우렀
+    25.55s  agent 발화 끝
+    33.54s  agent 발화 끝

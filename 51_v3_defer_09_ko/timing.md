@@ -69,27 +69,25 @@
 # }
 
 
-     0.00s  user  발화 시작: 오션뷰 호텔에서 이월 십일부터 칠박 동안 방 세 개 예약해 줘.
-     4.53s  <ret> 발화 (turn1 첫 프레임)
-     4.68s  agent 발화 시작: <ret> 네, 알겠습니다. 오션뷰 호텔에서 이월 십일부터 칠박 동안 객실 세개를 예약해 드리겠습니다.
-     4.81s  user  발화 끝
-     6.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) reservation_id=RV789, hotel=Ocean View Hotel, rooms=3, c
-    11.95s  agent 발화 시작: 오션뷰 호텔, 이월 십일부터 칠박, 객실 세개 예약 완료되었습니다. 총 비용은 이백십만 원입니다.
-    12.09s  agent 발화 끝
-    19.60s  agent 발화 끝
-    19.73s  user  발화 시작: 혹시 취소 정책은 어떻게 돼?
-    21.71s  user  발화 끝
-    22.00s  agent 발화 시작: 아, 네, 취소 정책에 대해서는—
-    23.25s  user  발화 시작: 취소하면 얼마나 환불받을 수 있는지 알고 싶어.
-    24.12s  agent 발화 끝
-    26.27s  <ret> 발화 (turn6 첫 프레임)
-    26.30s  user  발화 끝
-    26.34s  agent 발화 시작: <ret> 네, 물론입니다. 예약 취소 시 환불 정책은 다음과 같습니다.
-    28.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) reservation_id=RV789, cancellation_policy=full refund up
-    30.38s  agent 발화 시작: 칠일 전까지 취소하시면 전액 환불됩니다. 칠일 이내 취소 시에는 금액의 십% 수수료가 발생합니다.
-    30.64s  agent 발화 끝
-    34.66s  user  발화 시작: 헐.
-    35.39s  user  발화 끝
-    36.52s  agent 발화 시작: 혹시 다른 도움이 필요하시면 언제든지 말씀해 주세요.
-    36.67s  agent 발화 끝
-    39.99s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 동안 객실 세개 예약해 줘.
+     5.53s  <ret> 발화 (turn1 첫 프레임)
+     5.69s  agent 발화 시작: <ret> 네, 샌디에이고 오션뷰 호텔에 이월 십일부터 칠박 동안 객실 세개를 예약해 드리겠습니다.
+     5.79s  user  발화 끝
+     6.97s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.46s]: (tool result) Reservation confirmed. Confirmation number is 87654321.
+    11.04s  agent 발화 시작: 오션뷰 호텔 예약이 완료되었고, 확인 번호는 팔 칠 육 오 사 삼 이 일입니다.
+    11.15s  agent 발화 끝
+    14.32s  user  발화 시작: 어어.
+    15.10s  user  발화 끝
+    16.84s  user  발화 시작: 아, 그런데 혹시 그 호텔에 수영장이 있는지 궁금해.
+    16.88s  agent 발화 끝
+    20.81s  agent 발화 시작: 수영장이 있는지 확인해 보려면 잠시만 기다려 주시겠어요—
+    20.82s  user  발화 끝
+    23.29s  user  발화 시작: 아, 잠깐만, 혹시 취소 정책도 알아봐 줄 수 있어?
+    24.18s  agent 발화 끝
+    27.09s  <ret> 발화 (turn7 첫 프레임)
+    27.13s  user  발화 끝
+    27.16s  agent 발화 시작: <ret> 네, 취소 정책에 대해 먼저 확인해 드리겠습니다.
+    28.77s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.73s]: (tool result) Cancellations are permitted up to 24 hours prior to chec
+    29.79s  agent 발화 시작: 체크인 스물네시간 전까지는 전액 환불 가능합니다.
+    29.88s  agent 발화 끝
+    33.17s  agent 발화 끝

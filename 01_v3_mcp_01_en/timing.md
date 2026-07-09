@@ -58,67 +58,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Is there a separate map just for t | S3 Six-ninety-nine… that’s more than  | S4 Next Tuesday at 2 PM.
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Are those all the current iPhone m | S3 Okay, good. I’m thinking of gettin | S4 Hmm. Can you find me the best deal
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.79s  agent 발화 시작: Certainly. I can generate a sitemap for Apple’s website, hig
-     4.86s  user  발화 끝
-    10.17s  <ret> 발화 (turn2 첫 프레임)
-    10.41s  agent 발화 시작: <ret> Apple’s product sections include iPhone, iPad, Mac, Ap
-    10.53s  agent 발화 끝
-    12.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & 
-    13.14s  user  발화 시작: Okay.
-    13.78s  user  발화 끝
-    17.04s  agent 발화 끝
-    17.11s  user  발화 시작: Hmm, that's good. Does it show where the refurbished product
-    21.22s  agent 발화 시작: I can re-scan the Apple website to locate the refurbished pr
-    21.23s  user  발화 끝
-    26.33s  <ret> 발화 (turn6 첫 프레임)
-    26.73s  agent 발화 시작: <ret> Apple lists its certified refurbished products in the 
-    26.77s  agent 발화 끝
-    28.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) Refurbished Products: Listed under “Apple Certified Refu
-    28.91s  user  발화 시작: Right.
-    29.41s  user  발화 끝
-    32.26s  user  발화 시작: Is there a separate map just for the support pages?
-    32.34s  agent 발화 끝
-    35.29s  agent 발화 시작: That’s a great idea—
-    35.44s  user  발화 끝
-    36.83s  <ret> 발화 (turn10 첫 프레임)
-    37.06s  agent 발화 시작: <ret> The Apple support site maps documentation, user guides
-    37.13s  agent 발화 끝
-    38.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Support Pages: Documentation, User Guides, Downloads, Tr
-    40.26s  user  발화 시작: Uh-huh.
-    40.75s  user  발화 끝
-    42.93s  agent 발화 시작: I find that mapping support pages is useful when you're plan
-    43.08s  agent 발화 끝
-    50.15s  user  발화 시작: Okay, that’s helpful. I'm thinking about getting a new iPad.
-    50.34s  agent 발화 끝
-    62.03s  agent 발화 시작: Absolutely. Let me check the current pricing for that config
-    62.06s  user  발화 끝
-    66.22s  <ret> 발화 (turn15 첫 프레임)
-    66.62s  agent 발화 시작: <ret> The iPad Air, 6th generation, with 256GB of storage cu
-    66.66s  agent 발화 끝
-    68.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) iPad Air (6th generation) 256GB: $699.00
-    75.49s  user  발화 시작: Six-ninety-nine… that’s more than I expected. Are there any 
-    75.66s  agent 발화 끝
-    82.46s  agent 발화 시작: Let me check for active promotions on iPads—
-    82.58s  user  발화 끝
-    85.68s  <ret> 발화 (turn18 첫 프레임)
-    85.84s  agent 발화 시작: <ret> Apple is currently offering a fifty-dollar gift card w
-    85.97s  agent 발화 끝
-    87.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) iPad Promotions: $50 Apple Store gift card with purchase
-    93.16s  agent 발화 끝
-    94.16s  user  발화 시작: Oh, a gift card! That’s good to know. Can you add a reminder
-   102.28s  user  발화 끝
-   102.62s  agent 발화 시작: Of course. What day and time would you like the reminder set
-   105.41s  user  발화 시작: Yeah.
-   105.77s  user  발화 끝
-   107.62s  agent 발화 끝
-   107.80s  user  발화 시작: Next Tuesday at 2 PM.
-   110.11s  user  발화 끝
-   110.42s  agent 발화 시작: Certainly. I’ve set a reminder for next Tuesday at two PM to
-   117.33s  <ret> 발화 (turn24 첫 프레임)
-   117.64s  agent 발화 시작: <ret> Your reminder is set for Tuesday at 2 PM to check for 
-   117.80s  agent 발화 끝
-   119.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) Reminder set: Tuesday at 2:00 PM - Check Apple Store for
-   122.97s  agent 발화 끝
+     4.45s  <ret> 발화 (turn1 첫 프레임)
+     4.52s  agent 발화 시작: <ret> I’ve mapped one hundred and twenty-seven product pages
+     4.63s  user  발화 끝
+     5.73s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.37s]: (tool result) Sitemap generated: 127 product pages identified.
+     6.71s  user  발화 시작: Okay.
+     7.35s  user  발화 끝
+     9.71s  user  발화 시작: That’s… a lot. Can you just show me the iPhones?
+     9.89s  agent 발화 끝
+    13.51s  <ret> 발화 (turn4 첫 프레임)
+    13.90s  agent 발화 시작: <ret> The map now shows eleven pages dedicated to iPhone pro
+    14.11s  user  발화 끝
+    15.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Sitemap generated: 11 iPhone product pages identified.
+    16.56s  user  발화 시작: Uh-huh.
+    17.19s  user  발화 끝
+    18.85s  user  발화 시작: Are those all the current iPhone models?
+    18.91s  agent 발화 끝
+    20.90s  <ret> 발화 (turn7 첫 프레임)
+    21.29s  agent 발화 시작: <ret> Currently, Apple lists the iPhone fifteen, fifteen Pro
+    21.39s  user  발화 끝
+    22.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Current models: iPhone 15, 15 Pro, 15 Pro Max, 15 Plus.
+    24.35s  user  발화 시작: Right.
+    24.84s  user  발화 끝
+    28.98s  agent 발화 끝
+    29.27s  user  발화 시작: Okay, good. I’m thinking of getting a fifteen Pro Max. What 
+    34.69s  <ret> 발화 (turn10 첫 프레임)
+    34.92s  agent 발화 시작: <ret> The iPhone fifteen Pro Max is offered in Black Titaniu
+    35.01s  user  발화 끝
+    36.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) Available colors: Black Titanium, White Titanium, Blue T
+    42.01s  agent 발화 끝
+    42.07s  user  발화 시작: Natural Titanium sounds interesting. Is that new?
+    46.10s  agent 발화 시작: Yes, Natural Titanium is a new finish introduced with the iP
+    46.19s  user  발화 끝
+    57.94s  user  발화 시작: Hmm. Can you find me the best deal on a Natural Titanium iPh
+    57.97s  agent 발화 끝
+    65.49s  <ret> 발화 (turn14 첫 프레임)
+    65.67s  user  발화 끝
+    65.89s  agent 발화 시작: <ret> Best Buy currently offers the two hundred fifty-six gi
+    67.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) Best price: $1199 at Best Buy, in stock.
+    76.65s  agent 발화 끝

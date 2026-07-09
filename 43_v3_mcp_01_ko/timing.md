@@ -58,61 +58,53 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아이폰 종류만이라도 좀 자세히 알려 줄 수 있어? | S3 맥 프로는 좀 비싼 편이지? 지금 맥 프로를 사려면 얼마나 해 | S4 좋아, 그럼 맥북 에어 십삼인치, M2 칩, 팔GB RAM, 
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품에 초점을 맞춰 자세한 지도를 만들어 줘. | S2 아이폰 서비스는 정확히 뭐가 들어가 있는데? | S3 잠깐만, 애플케어 플러스 말고 다른 보증 프로그램도 있어? | S4 그럼 지금 바로 아이폰 십오 프로 맥스, 이백오십육기가, 블랙
 
-     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.86s  <ret> 발화 (turn1 첫 프레임)
-     4.09s  agent 발화 시작: <ret> 물론입니다. tavily-map을 이용해서 애플 웹사이트의 제품 섹션을 집중적으로 보여주는 상세 
-     4.12s  user  발화 끝
-     5.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) Map created: Apple website, products section highlighted
-    11.37s  agent 발화 시작: 애플 웹사이트 제품 섹션 지도를 만들었습니다. 총 스물세 개의 제품 영역이 확인되었어요.
-    11.51s  agent 발화 끝
-    13.93s  user  발화 시작: 그치.
-    14.57s  user  발화 끝
-    17.67s  agent 발화 끝
-    17.73s  user  발화 시작: 스물세 개나 돼? 아이폰이랑 맥은 각각 몇 개로 분류된 거야?
-    21.68s  agent 발화 시작: 잠시만요, 확인해 볼게요—
-    21.89s  user  발화 끝
-    22.85s  user  발화 시작: 아이폰 종류만이라도 좀 자세히 알려 줄 수 있어?
-    23.57s  agent 발화 끝
-    26.00s  <ret> 발화 (turn7 첫 프레임)
-    26.07s  agent 발화 시작: <ret> 네, 아이폰 종류에 대해 더 자세히 알려드릴게요.
-    26.07s  user  발화 끝
-    26.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.95s]: (tool result) iPhone models identified: iPhone 15, iPhone 15 Pro, iPho
-    28.95s  agent 발화 시작: 아이폰 모델은 아이폰 십오, 아이폰 십오 프로, 아이폰 십오 프로 맥스, 아이폰 십오 플러스, 그리고 아이폰
-    29.02s  agent 발화 끝
-    34.16s  user  발화 시작: 그래.
-    34.70s  user  발화 끝
-    38.05s  <ret> 발화 (turn10 첫 프레임)
-    38.45s  agent 발화 시작: <ret> 맥은 어떠세요? 맥북 에어, 맥북 프로, 아이맥, 맥 미니, 맥 스튜디오 등으로 분류되어 있습니다
-    38.46s  agent 발화 끝
-    40.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Mac models identified: MacBook Air, MacBook Pro, iMac, M
-    45.04s  agent 발화 시작: 맥 모델은 맥북 에어, 맥북 프로, 아이맥, 맥 미니, 맥 스튜디오, 맥 프로 이렇게 여섯 가지입니다.
-    45.17s  agent 발화 끝
-    48.39s  user  발화 시작: 어어.
-    49.20s  user  발화 끝
-    53.42s  agent 발화 끝
-    54.21s  user  발화 시작: 맥 프로는 좀 비싼 편이지? 지금 맥 프로를 사려면 얼마나 해야 돼?
-    58.73s  <ret> 발화 (turn14 첫 프레임)
-    58.81s  agent 발화 시작: <ret> 맥 프로의 가격은 구성에 따라 다르지만, 가장 기본적인 모델은 오천백구십구달러부터 시작합니다.
-    59.02s  user  발화 끝
-    60.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Mac Pro (base model) price: $5999.
-    66.12s  agent 발화 시작: 맥 프로 기본 모델의 가격은 오천구백구십구 달러입니다.
-    66.12s  agent 발화 끝
-    70.56s  agent 발화 끝
-    71.08s  user  발화 시작: 오천구백구십구 달러라… 음, 그럼 맥북 에어는 얼마야?
-    75.43s  <ret> 발화 (turn17 첫 프레임)
-    75.58s  agent 발화 시작: <ret> 맥북 에어는 모델과 사양에 따라 다르지만, 가장 저렴한 모델은 천백구십구 달러부터 시작합니다.
-    75.66s  user  발화 끝
-    77.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) MacBook Air (base model) price: $1099.
-    82.31s  agent 발화 시작: 맥북 에어 기본 모델의 가격은 천백구십구 달러입니다.
-    82.43s  agent 발화 끝
-    86.15s  user  발화 시작: 좋아, 그럼 맥북 에어 십삼인치, M2 칩, 팔GB RAM, 이백오십육GB SSD로 예약해 줘. 배송은 다음
-    86.15s  agent 발화 끝
-    94.14s  <ret> 발화 (turn20 첫 프레임)
-    94.53s  agent 발화 시작: <ret> 맥북 에어 십삼인치, M2 칩, 팔GB RAM, 이백오십육GB SSD를 다음 주 화요일에 배송받도
-    94.76s  user  발화 끝
-    95.90s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.67s]: (tool result) Reservation confirmed: MacBook Air 13-inch (M2, 8GB, 256
-   103.04s  agent 발화 시작: 맥북 에어 예약이 완료되었습니다. 다음 주 화요일에 배송될 예정이며, 주문
-   103.19s  agent 발화 끝
-   108.83s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 제품에 초점을 맞춰 자세한 지도를 만들어 줘.
+     3.61s  <ret> 발화 (turn1 첫 프레임)
+     3.85s  agent 발화 시작: <ret> 물론이죠. tavily-map 도구를 사용해서 애플 웹사이트의 제품 관련 상세 지도를 생성해 드릴
+     3.88s  user  발화 끝
+     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.31s]: (tool result) Map created with 23 product categories identified.
+    10.99s  agent 발화 시작: 애플 웹사이트에서 제품 관련 카테고리 스물세 개를 식별하여 지도를 생성했습니다.
+    11.16s  agent 발화 끝
+    13.05s  user  발화 시작: 그치.
+    13.68s  user  발화 끝
+    16.16s  user  발화 시작: 스물세 개나 돼? 아이폰은 몇 개 카테고리로 분류됐어?
+    16.17s  agent 발화 끝
+    19.86s  agent 발화 시작: 아이폰 관련 카테고리는 총 세 개로 분류되었어요. 아이폰, 아이폰 액세서리, 그리고 아이폰 서비스입니다.
+    20.04s  user  발화 끝
+    22.69s  user  발화 시작: 어어.
+    23.50s  user  발화 끝
+    27.00s  agent 발화 끝
+    28.21s  user  발화 시작: 아이폰 서비스는 정확히 뭐가 들어가 있는데?
+    30.98s  agent 발화 시작: 아이폰 서비스는 애플케어 플러스, 아이폰 업그레이드 프로그램, 그리고 아이폰 스토리지 백업—
+    31.26s  user  발화 끝
+    36.07s  user  발화 시작: 잠깐만, 애플케어 플러스 말고 다른 보증 프로그램도 있어?
+    36.91s  agent 발화 끝
+    40.16s  <ret> 발화 (turn10 첫 프레임)
+    40.42s  user  발화 끝
+    40.48s  agent 발화 시작: <ret> 네, 애플케어 플러스 외에도 제한 보증이 제공됩니다.
+    41.52s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.70s]: (tool result) Limited warranty details: 1 year hardware, 90 days softw
+    43.98s  agent 발화 시작: 제한 보증은 하드웨어 일 년, 소프트웨어 구십 일 동안 적용됩니다.
+    44.18s  agent 발화 끝
+    46.36s  user  발화 시작: 그래.
+    46.72s  user  발화 끝
+    48.43s  agent 발화 시작: 추가적으로, 애플은 제품 교환 및 환불 정책도 운영하고 있습니다.
+    48.61s  agent 발화 끝
+    53.05s  user  발화 시작: 환불 정책은 어떻게 돼? 아이폰을 사자마자 마음이 바뀌면 환불받을 수 있어?
+    53.15s  agent 발화 끝
+    57.98s  <ret> 발화 (turn15 첫 프레임)
+    58.30s  agent 발화 시작: <ret> 네, 구매 후 십사일 이내에 환불이 가능합니다. 단, 제품 상태가 양호해야 합니다.
+    58.42s  user  발화 끝
+    59.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.10s]: (tool result) 14-day return policy, product must be undamaged.
+    63.27s  agent 발화 시작: 제품 손상 없이 구매 후 십사일 이내에 환불이 가능합니다.
+    63.40s  agent 발화 끝
+    66.83s  agent 발화 끝
+    66.83s  user  발화 시작: 그럼 지금 바로 아이폰 십오 프로 맥스, 이백오십육기가, 블랙 색상으로 주문하고, 마음이 바뀌면 환불받을 수
+    74.75s  <ret> 발화 (turn18 첫 프레임)
+    75.14s  agent 발화 시작: <ret> 네, 그렇게 하실 수 있습니다. 주문하시겠어요?
+    75.36s  user  발화 끝
+    75.87s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.91s]: (tool result) Order placed. Confirmation number: 87654321.
+    77.88s  agent 발화 시작: 주문이 완료되었습니다. 확인 번호는 팔 칠 육 오 사 삼 이 일입니다.
+    78.05s  agent 발화 끝
+    83.85s  agent 발화 끝

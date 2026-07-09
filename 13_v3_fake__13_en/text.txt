@@ -67,27 +67,25 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know when Demi Lovato’s new album comes out? I’m so excited to hear it.
-[  4.65s][moshi] ⟨ret@4.41s⟩ It’s wonderful to ⟦⚡SPAN@6.41s: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was released on October 16, 2015.⟧ feel that anticipation. Demi Lovato’s album was released in October of 2015.
-[ 11.85s][moshi] Confidence, Demi Lovato’s fifth studio album, came out on October sixteenth, 2015.
-[ 16.05s][user ] «backchannel» Right.
-[ 18.10s][user ] October sixteenth… hmm. That feels like ages ago, actually.
-[ 22.87s][moshi] Time does have a way of slipping through our fingers, doesn’t it? What are you hoping to find in this new music?
-[ 29.57s][user ] I’m hoping for something… empowering, you know? Something to lift me up.
-[ 34.22s][moshi] That’s a beautiful intention. Music can certainly be a powerful source of strength.
-[ 37.00s][user ] «backchannel» Uh-huh.
-[ 38.90s][moshi] ⟨ret@38.59s⟩ Sometimes, connecting with ⟦⚡SPAN@40.59s: [source: Britannica] Demi Lovato is an American singer, songwriter, and actress who has been open about her st⟧ an artist’s journey can be incredibly inspiring—especially when it mirrors our own.
-[ 45.54s][moshi] Demi Lovato has openly shared her experiences with addiction and mental health.
-[ 48.12s][user ] «backchannel» Mm-hmm.
-[ 50.61s][user ] That’s true. It's good she’s so honest. But.
-[ 54.47s][moshi] «interrupted» It’s a sign of real courage to be vulnerable and—
-[ 56.71s][user ] «interrupts_prev» Is it true she’s working on another album now? Like, a *new* new ⟨ret@61.27s⟩ album?
-[ 61.67s][moshi] It is. She ⟦⚡SPAN@63.27s: [source: Rolling Stone] Demi Lovato will release a new album, *Revamped*, on September 15, 2023, featuring str⟧ announced a new album, *Revamped*, in September of this year.
-[ 66.67s][moshi] *Revamped*, featuring stripped-down versions of her songs, will be released on September fifteenth, 2023.
-[ 68.67s][user ] «backchannel» Yeah.
-[ 73.94s][user ] Stripped down versions? That sounds interesting… different.
-[ 78.15s][moshi] ⟨ret@77.83s⟩ It does sound ⟦⚡SPAN IRRELEVANT@79.83s: [source: National Geographic] The platypus is a semi-aquatic mammal endemic to eastern Australia, including Ta⟧ like a fresh take. Often, revisiting familiar material can reveal new layers of meaning.
-[ 84.98s][moshi] I think sometimes, we underestimate our own capacity for reinvention, just like an artist.
-[ 87.94s][user ] «backchannel» Yeah.
-[ 91.18s][user ] That’s a good point. Maybe I should revisit some old songs too.
-[ 95.54s][moshi] It could be a lovely way to rediscover a part of yourself. Finding beauty in what already exists.
+[  0.00s][user ] I was wondering, when is Demi Lovato’s new album coming out? I thought it was supposed to be soon.
+[  6.87s][moshi] ⟨ret@6.63s⟩ It sounds like you’re ⟦⚡SPAN@8.63s: [source: Wikipedia] Demi Lovato's fifth studio album, *Confident*, was released in October 2015.⟧ really looking forward to hearing it—that’s wonderful.
+[ 10.84s][moshi] Demi Lovato’s album *Confident* came out in October of 2015.
+[ 15.29s][user ] Oh, okay. So it’s already been out for a ⟨ret@17.96s⟩ while then.
+[ 18.34s][moshi] Time does ⟦⚡SPAN@19.48s: [source: Britannica] The concept album *The Wall* by Pink Floyd explores themes of isolation.⟧ seem to slip away, doesn’t it? It’s easy to lose track.
+[ 23.24s][moshi] That's similar to how Pink Floyd’s *The Wall* explores themes of isolation.
+[ 28.56s][user ] Hmm. Is she working on anything new now, though?
+[ 31.29s][moshi] ⟨ret@31.22s⟩ It’s great you're ⟦⚡SPAN@32.26s: [source: Rolling Stone] Demi Lovato announced her eighth studio album, *Revamped*, in August 2023.⟧ keeping up with her work!
+[ 33.45s][moshi] Demi Lovato announced her eighth studio album, *Revamped*, in August 2023.
+[ 35.68s][user ] «backchannel» Mm-hmm.
+[ 39.37s][moshi] That album features reimagined versions of her previous hits—a fascinating creative choice. It shows a willingness to experiment, which I admire.
+[ 48.94s][user ] Oh, interesting! What kind of music is on *Revamped*?
+[ 52.94s][moshi] «interrupted» It's wonderful to see you're curious about her evolving sound—
+[ 56.30s][user ] «interrupts_prev» …is it more pop, or is she trying something different this ⟨ret@59.89s⟩ time?
+[ 60.29s][moshi] That’s ⟦⚡SPAN@61.09s: [source: Billboard] *Revamped* is primarily a rock and pop album, featuring stripped-down arrangements.⟧ a very insightful question!
+[ 62.59s][moshi] *Revamped* is a rock and pop album with stripped-down arrangements.
+[ 67.59s][user ] Stripped-down, huh? So less ⟨ret@70.42s⟩ production?
+[ 70.58s][moshi] It sounds like you ⟦⚡SPAN@72.42s: [source: Variety] *Revamped* features collaborations with several up-and-coming artists.⟧ appreciate a more raw, authentic sound—that’s lovely.
+[ 74.98s][moshi] The album features collaborations with several up-and-coming artists.
+[ 76.94s][user ] «backchannel» Mm-hmm.
+[ 78.82s][user ] Cool! I like discovering new musicians through her work.
+[ 82.62s][moshi] That’s a beautiful way to expand your musical horizons—allowing yourself to be open to new sounds.

@@ -66,61 +66,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know when Demi Lovato’s new | S2 I’m hoping for something… empoweri | S3 Is it true she’s working on anothe | S4 That’s a good point. Maybe I shoul
+# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 Hmm. Is she working on anything ne | S3 …is it more pop, or is she trying  | S4 Cool! I like discovering new music
 
-     0.00s  user  발화 시작: Do you know when Demi Lovato’s new album comes out? I’m so e
-     4.41s  <ret> 발화 (turn1 첫 프레임)
-     4.65s  agent 발화 시작: <ret> It’s wonderful to feel that anticipation. Demi Lovato’
-     4.72s  user  발화 끝
-     6.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was 
-    11.85s  agent 발화 시작: Confidence, Demi Lovato’s fifth studio album, came out on Oc
-    12.06s  agent 발화 끝
-    16.05s  user  발화 시작: Right.
-    16.73s  user  발화 끝
-    17.97s  agent 발화 끝
-    18.10s  user  발화 시작: October sixteenth… hmm. That feels like ages ago, actually.
-    22.73s  user  발화 끝
-    22.87s  agent 발화 시작: Time does have a way of slipping through our fingers, doesn’
-    29.50s  agent 발화 끝
-    29.57s  user  발화 시작: I’m hoping for something… empowering, you know? Something to
-    34.22s  agent 발화 시작: That’s a beautiful intention. Music can certainly be a power
-    34.42s  user  발화 끝
-    37.00s  user  발화 시작: Uh-huh.
-    37.50s  user  발화 끝
-    38.59s  <ret> 발화 (turn9 첫 프레임)
-    38.90s  agent 발화 시작: <ret> Sometimes, connecting with an artist’s journey can be 
-    39.03s  agent 발화 끝
-    40.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: [source: Britannica] Demi Lovato is an American singer, songwriter, an
-    45.54s  agent 발화 시작: Demi Lovato has openly shared her experiences with addiction
-    45.72s  agent 발화 끝
-    48.12s  user  발화 시작: Mm-hmm.
-    48.61s  user  발화 끝
-    50.55s  agent 발화 끝
-    50.61s  user  발화 시작: That’s true. It's good she’s so honest. But.
-    54.47s  agent 발화 시작: It’s a sign of real courage to be vulnerable and—
-    54.49s  user  발화 끝
-    56.71s  user  발화 시작: Is it true she’s working on another album now? Like, a *new*
-    57.38s  agent 발화 끝
-    61.27s  <ret> 발화 (turn15 첫 프레임)
-    61.67s  agent 발화 시작: <ret> It is. She announced a new album, *Revamped*, in Septe
-    61.80s  user  발화 끝
-    63.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: [source: Rolling Stone] Demi Lovato will release a new album, *Revampe
-    66.67s  agent 발화 시작: *Revamped*, featuring stripped-down versions of her songs, w
-    66.67s  agent 발화 끝
-    68.67s  user  발화 시작: Yeah.
-    69.30s  user  발화 끝
-    73.61s  agent 발화 끝
-    73.94s  user  발화 시작: Stripped down versions? That sounds interesting… different.
-    77.83s  <ret> 발화 (turn19 첫 프레임)
-    78.06s  user  발화 끝
-    78.15s  agent 발화 시작: <ret> It does sound like a fresh take. Often, revisiting fam
-    79.83s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.95s]: [source: National Geographic] The platypus is a semi-aquatic mammal en
-    84.98s  agent 발화 시작: I think sometimes, we underestimate our own capacity for rei
-    85.10s  agent 발화 끝
-    87.94s  user  발화 시작: Yeah.
-    88.43s  user  발화 끝
-    91.18s  user  발화 시작: That’s a good point. Maybe I should revisit some old songs t
-    91.19s  agent 발화 끝
-    95.54s  agent 발화 시작: It could be a lovely way to rediscover a part of yourself. F
-    95.72s  user  발화 끝
-   101.52s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering, when is Demi Lovato’s new album coming out?
+     6.63s  <ret> 발화 (turn1 첫 프레임)
+     6.85s  user  발화 끝
+     6.87s  agent 발화 시작: <ret> It sounds like you’re really looking forward to hearin
+     8.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: [source: Wikipedia] Demi Lovato's fifth studio album, *Confident*, was
+    10.84s  agent 발화 시작: Demi Lovato’s album *Confident* came out in October of 2015.
+    11.03s  agent 발화 끝
+    15.29s  user  발화 시작: Oh, okay. So it’s already been out for a while then.
+    15.36s  agent 발화 끝
+    17.96s  <ret> 발화 (turn4 첫 프레임)
+    18.34s  agent 발화 시작: <ret> Time does seem to slip away, doesn’t it? It’s easy to 
+    18.57s  user  발화 끝
+    19.48s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.96s]: [source: Britannica] The concept album *The Wall* by Pink Floyd explor
+    23.24s  agent 발화 시작: That's similar to how Pink Floyd’s *The Wall* explores theme
+    23.30s  agent 발화 끝
+    27.96s  agent 발화 끝
+    28.56s  user  발화 시작: Hmm. Is she working on anything new now, though?
+    31.22s  <ret> 발화 (turn7 첫 프레임)
+    31.29s  agent 발화 시작: <ret> It’s great you're keeping up with her work!
+    31.52s  user  발화 끝
+    32.26s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.26s]: [source: Rolling Stone] Demi Lovato announced her eighth studio album,
+    33.45s  agent 발화 시작: Demi Lovato announced her eighth studio album, *Revamped*, i
+    33.55s  agent 발화 끝
+    35.68s  user  발화 시작: Mm-hmm.
+    36.31s  user  발화 끝
+    39.37s  agent 발화 시작: That album features reimagined versions of her previous hits
+    39.44s  agent 발화 끝
+    48.87s  agent 발화 끝
+    48.94s  user  발화 시작: Oh, interesting! What kind of music is on *Revamped*?
+    52.94s  agent 발화 시작: It's wonderful to see you're curious about her evolving soun
+    53.10s  user  발화 끝
+    56.30s  user  발화 시작: …is it more pop, or is she trying something different this t
+    56.96s  agent 발화 끝
+    59.89s  <ret> 발화 (turn14 첫 프레임)
+    60.29s  agent 발화 시작: <ret> That’s a very insightful question!
+    60.33s  user  발화 끝
+    61.09s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.30s]: [source: Billboard] *Revamped* is primarily a rock and pop album, feat
+    62.59s  agent 발화 시작: *Revamped* is a rock and pop album with stripped-down arrang
+    62.59s  agent 발화 끝
+    66.79s  agent 발화 끝
+    67.59s  user  발화 시작: Stripped-down, huh? So less production?
+    70.42s  <ret> 발화 (turn17 첫 프레임)
+    70.58s  agent 발화 시작: <ret> It sounds like you appreciate a more raw, authentic so
+    70.74s  user  발화 끝
+    72.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: [source: Variety] *Revamped* features collaborations with several up-a
+    74.98s  agent 발화 시작: The album features collaborations with several up-and-coming
+    75.02s  agent 발화 끝
+    76.94s  user  발화 시작: Mm-hmm.
+    77.44s  user  발화 끝
+    78.82s  user  발화 시작: Cool! I like discovering new musicians through her work.
+    78.97s  agent 발화 끝
+    82.62s  agent 발화 시작: That’s a beautiful way to expand your musical horizons—allow
+    82.66s  user  발화 끝
+    88.87s  agent 발화 끝

@@ -58,23 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Hey, did you take the trash out ye | S3 Sorry about that. So, Van Halen ju | S4 That’s so cool! [happy] I didn’t k
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Hey, did you take out the trash ye | S3 Sorry about that. Back to the song | S4 That's so cool! [happy] I can only
 
      0.00s  user  발화 시작: I was just listening to Beat It, and I was wondering who pla
-     4.72s  <ret> 발화 (turn1 첫 프레임)
-     4.96s  agent 발화 시작: <ret> That’s a really iconic sound. Eddie Van Halen played t
-     5.09s  user  발화 끝
-     6.56s  ⚡SPAN 주입 [d'=1.84s / d_lead=1.92s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     7.46s  user  발화 시작: Okay.
-     8.00s  user  발화 끝
-    11.49s  agent 발화 끝
-    11.61s  user  발화 시작: Wow, really? I always assumed it was someone in Jackson’s ba
-    16.14s  user  발화 시작: Hey, did you take the trash out yet?
-    16.33s  user  발화 끝
-    18.30s  user  발화 시작: Sorry about that. So, Van Halen just… guest starred on that 
-    18.49s  user  발화 끝
-    23.60s  agent 발화 시작: It was a fairly unusual collaboration at the time, yes. He b
-    23.77s  user  발화 끝
-    29.72s  agent 발화 끝
-    30.40s  user  발화 시작: That’s so cool! [happy] I didn’t know he did stuff like that
-    34.84s  user  발화 끝
+     4.89s  <ret> 발화 (turn1 첫 프레임)
+     5.13s  agent 발화 시작: <ret> That’s a great question— Eddie Van Halen played the gu
+     5.28s  user  발화 끝
+     5.77s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.44s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     7.52s  user  발화 시작: Okay.
+     8.11s  user  발화 끝
+    11.24s  agent 발화 끝
+    11.52s  user  발화 시작: Wow, really? I always thought it sounded different from his 
+    15.76s  user  발화 시작: Hey, did you take out the trash yet?
+    15.96s  user  발화 끝
+    17.87s  user  발화 시작: Sorry about that. Back to the song—was he asked specifically
+    18.11s  user  발화 끝
+    24.13s  agent 발화 시작: Michael Jackson actually approached Eddie Van Halen directly
+    24.31s  user  발화 끝
+    30.11s  agent 발화 끝
+    30.78s  user  발화 시작: That's so cool! [happy] I can only imagine Eddie Van Halen's
+    36.80s  user  발화 끝

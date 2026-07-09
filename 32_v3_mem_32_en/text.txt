@@ -59,12 +59,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Manon, I’m Thunalo. It’s lovely to connect with you. I’m a counselor, and I help people navigate creative blocks and build confidence.
-[  6.33s][user ] «backchannel» Yeah.
-[  8.18s][user ] Oh, that sounds… good. I was actually wondering, do you remember me talking about a trip I’m planning?
-[ 15.16s][moshi] ⟨ret@15.09s⟩ It’s wonderful to revisit ⟦⚡SPAN@16.93s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ plans you’re excited about. You mentioned a trip to Kyoto in March. Is there something specific about it you’d like to discuss today?
-[ 22.20s][user ] «backchannel» Mm-hmm.
-[ 25.66s][user ] Yes! I’m trying to figure out the best time to visit, considering the cherry blossoms. Do you know when they usually bloom there?
-[ 34.07s][moshi] ⟨ret@33.99s⟩ Cherry blossom ⟦⚡SPAN@35.35s: (tool result) Peak bloom in Kyoto: March 26 - April 2.⟧ season is truly a beautiful time to visit. Peak bloom in Kyoto typically falls between March twenty-sixth and April second.
-[ 43.12s][user ] That’s… that’s perfect, actually. I— I mean, it lines up really well with my dates.
-[ 48.46s][moshi] That’s wonderful to hear, Manon. It sounds like your trip is shaping up beautifully. Is there anything else on your mind regarding this, or perhaps another area where I could offer some support?
+[  0.00s][moshi] Hi Manon, I'm Thunalo. It's lovely to connect with you. I understand you're exploring some creative avenues, and I'm here to help unlock your potential.
+[  6.69s][user ] «backchannel» Yeah.
+[  8.61s][user ] I’m trying to remember what I was planning for my birthday dinner… it’s driving me crazy.
+[ 14.01s][moshi] ⟨ret@13.93s⟩ It’s completely ⟦⚡SPAN@14.89s: [2026-03-10] User's favorite cuisine is sushi.⟧ understandable to feel a bit scattered. You mentioned on March tenth that you were planning a birthday dinner for six people, and you were hoping for a restaurant with outdoor seating.
+[ 20.97s][user ] «backchannel» Mm-hmm.
+[ 24.27s][user ] Oh! Yes, that’s it. And I think I was looking at sushi places…
+[ 29.64s][moshi] That sounds delightful! Sushi is a wonderful choice for a celebration. I’m glad we could recall that detail.
+[ 37.89s][user ] Do you remember anything about a trip I was planning? I— I mean, where was I hoping to ⟨ret@42.72s⟩ go?
+[ 42.88s][moshi] Travel plans ⟦⚡SPAN@43.84s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ can certainly be exciting to revisit. You were planning a trip to Kyoto in March, as we discussed on July twenty-fifth. Would you like me to help you explore options for that trip?

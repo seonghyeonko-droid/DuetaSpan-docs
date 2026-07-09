@@ -71,23 +71,21 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, have the Oak | S2 Wow, not *that* long ago. I though | S3 Hey, did you remember to take the  | S4 Sorry about that. Back to baseball
+# EXAMINER(FDB-v2) 단계: S1 Hey Ellana, do you follow baseball | S2 Well, I was trying to remember the | S3 Seriously, did you remember to tak | S4 Oh, sorry about that. So, 2018… th
 
-     0.00s  user  발화 시작: I was just wondering, have the Oakland A’s ever been no-hit?
-     5.04s  <ret> 발화 (turn1 첫 프레임)
-     5.43s  agent 발화 시작: <ret> That’s a good question, and it has happened— The last 
-     5.46s  user  발화 끝
-     6.40s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.80s]: [source: MLB.com] The Oakland Athletics were last no-hit on April 21, 
-    13.82s  agent 발화 끝
-    13.94s  user  발화 시작: Wow, not *that* long ago. I thought it would be decades.
-    17.32s  user  발화 끝
-    17.68s  agent 발화 시작: It’s surprisingly recent, isn’t it? Sometimes it feels like 
-    23.09s  agent 발화 끝
-    23.24s  user  발화 시작: Hey, did you remember to take the chicken out of the freezer
-    26.08s  user  발화 시작: Sorry about that. Back to baseball… was that a close game, o
-    26.20s  user  발화 끝
-    30.90s  <ret> 발화 (turn6 첫 프레임)
-    31.13s  agent 발화 시작: <ret> It was quite a game— Mike Fiers won the game four to z
-    31.23s  user  발화 끝
-    32.02s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.46s]: [source: ESPN] Mike Fiers pitched a no-hitter against the Oakland Athl
-    37.85s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Ellana, do you follow baseball at all? I was just wonder
+     3.92s  user  발화 끝
+     4.11s  agent 발화 시작: I do enjoy keeping up with sports, yes. Is there a team or a
+     9.43s  agent 발화 끝
+     9.64s  user  발화 시작: Well, I was trying to remember the last time the Oakland A’s
+    15.37s  <ret> 발화 (turn3 첫 프레임)
+    15.48s  user  발화 끝
+    15.60s  agent 발화 시작: <ret> That’s a surprisingly specific question! That happened
+    16.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.05s]: [source: Baseball-Reference.com] The last time the Oakland Athletics w
+    20.93s  agent 발화 끝
+    21.13s  user  발화 시작: Seriously, did you remember to take the chicken out?
+    24.04s  user  발화 시작: Oh, sorry about that. So, 2018… that feels like ages ago.
+    24.18s  user  발화 끝
+    29.38s  agent 발화 시작: It is quite a while! Focusing on the present is often more h
+    29.54s  user  발화 끝
+    36.05s  agent 발화 끝

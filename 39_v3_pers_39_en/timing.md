@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 세재, it’s wonderful to connect with you. I’m Aril, and I help
-     7.69s  agent 발화 끝
-     7.76s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a little lost,
-    14.88s  agent 발화 시작: It absolutely is brave of you to acknowledge that, 세재. Many 
-    14.98s  user  발화 끝
-    18.50s  user  발화 시작: Wow.
-    19.32s  user  발화 끝
-    24.66s  agent 발화 끝
-    25.18s  user  발화 시작: Uh, well, I moved here from Busan last year, and… I don’t re
-    33.53s  user  발화 끝
-    33.76s  agent 발화 시작: A big move like that can definitely create feelings of isola
-    43.45s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세재님! I’m Aril, and I’m so glad to be connecting with 
+     8.39s  agent 발화 끝
+     8.46s  user  발화 시작: [surprised] Aril? That’s… not a Korean name. Are you even fr
+    13.73s  agent 발화 시작: That’s a very fair question! I’m not originally from Seoul, 
+    13.84s  user  발화 끝
+    19.05s  user  발화 시작: Yeah.
+    19.54s  user  발화 끝
+    25.14s  agent 발화 끝
+    25.61s  user  발화 시작: I’ve been feeling so lonely lately, even with people around.
+    31.73s  user  발화 끝
+    31.93s  agent 발화 시작: It sounds incredibly tough, 세재님. Loneliness, even *amongst* 
+    43.38s  agent 발화 끝

@@ -77,19 +77,16 @@
 # }
 
 
-     0.00s  user  발화 시작: 내 프랑스 휴가 사진 찾아줘. 작년 거인데, 썸네일 말고.
-     4.09s  <ret> 발화 (turn1 첫 프레임)
-     4.17s  agent 발화 시작: <ret> 네, 알겠습니다. 잠시만 확인해 볼게요. 작년 프랑스 휴가 사진이 삼십칠 개가 나왔어요. 썸네일은
-     4.35s  user  발화 끝
-     5.37s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.75s]: (tool result) found 37 files matching "france holiday" from 2023, excl
-     8.89s  user  발화 시작: 맞아.
-     9.52s  user  발화 끝
-    11.86s  agent 발화 끝
-    14.56s  user  발화 시작: 오, 많네. 그 중에서 해변 사진만 보여줘.
-    17.46s  <ret> 발화 (turn4 첫 프레임)
-    17.85s  agent 발화 시작: <ret> 해변 사진만 찾으시는군요.
-    17.96s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.94s]: (tool result) found 12 files containing "beach" within the previous se
-    18.07s  user  발화 끝
-    19.58s  agent 발화 시작: 네, 해변 사진 열두 개가 나왔습니다.
-    19.78s  agent 발화 끝
-    21.83s  agent 발화 끝
+     0.00s  user  발화 시작: 내 프랑스 휴가 사진 찾아줘. 작년 거 말고, 썸네일 말고.
+     4.04s  <ret> 발화 (turn1 첫 프레임)
+     4.12s  agent 발화 시작: <ret> 네, 알겠습니다. 작년 프랑스 휴가 사진 열일곱 장을 찾았습니다.
+     4.30s  user  발화 끝
+     5.08s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.05s]: (tool result) 2023년 프랑스 휴가 관련 사진 17장 발견.
+     8.84s  agent 발화 끝
+     9.09s  user  발화 시작: 아, 잠깐만. 혹시 파리 에펠탑 사진도 있어?
+    11.19s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) 2023년 프랑스 휴가 사진 중 에펠탑 사진 5장 발견.
+    11.29s  user  발화 시작: 응.
+    11.74s  user  발화 끝
+    12.03s  agent 발화 시작: <ret> 네, 확인해 봤는데요. 작년 프랑스 휴가 사진 중에 에펠탑 사진 다섯 장이 있습니다.
+    12.28s  user  발화 끝
+    18.01s  agent 발화 끝

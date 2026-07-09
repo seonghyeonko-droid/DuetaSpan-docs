@@ -59,25 +59,21 @@
 # }
 
 
-     0.00s  user  발화 시작: I’ve been researching my family history, and I keep coming a
-     8.89s  <ret> 발화 (turn1 첫 프레임)
-     8.97s  agent 발화 시작: <ret> That’s a wonderful endeavor, tracing your roots. It of
-     9.08s  user  발화 끝
-     9.93s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.30s]: [source: Wikipedia] Du Plessis is a French surname, originally denotin
-    15.27s  agent 발화 끝
-    15.28s  agent 발화 시작: The name du Plessis originated in France, signifying someone
-    20.20s  user  발화 시작: Mhm.
-    20.75s  user  발화 끝
-    21.90s  agent 발화 끝
-    22.21s  user  발화 시작: Oh, France? I always assumed it was… well, something else. I
-    29.39s  <ret> 발화 (turn5 첫 프레임)
-    29.63s  agent 발화 시작: <ret> Interestingly, while French in origin, Currently, the 
-    29.67s  user  발화 끝
-    30.35s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.96s]: [source: Forebears] The highest concentration of the du Plessis surnam
-    39.00s  user  발화 시작: South Africa… that *is* surprising. Is there a reason for th
-    39.05s  agent 발화 끝
-    43.73s  <ret> 발화 (turn7 첫 프레임)
-    44.13s  agent 발화 시작: <ret> That migration explains a lot, French Huguenots fleein
-    44.28s  user  발화 끝
-    44.69s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.21s]: [source: South African History Online] Many French Huguenots, fleeing 
-    52.51s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering about the name du Plessis. It sounds…French,
+     4.76s  <ret> 발화 (turn1 첫 프레임)
+     4.84s  agent 발화 시작: <ret> It has a lovely sound, doesn’t it? The name does have 
+     4.95s  user  발화 끝
+     5.80s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.86s]: [source: Wikipedia] ‘Du Plessis’ is a French surname originating as a 
+    11.67s  agent 발화 시작: The surname ‘du Plessis’ means ‘of the enclosure’ or ‘of the
+    11.70s  agent 발화 끝
+    16.93s  user  발화 시작: Mhm.
+    17.43s  user  발화 끝
+    18.76s  agent 발화 끝
+    19.05s  user  발화 시작: Oh, so it literally means “of the fort”? That’s cool. Was it
+    25.97s  <ret> 발화 (turn5 첫 프레임)
+    26.21s  agent 발화 시작: <ret> It certainly became associated with prominent families
+    26.23s  user  발화 끝
+    27.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: [source: House of Names] Several noble families took the name ‘du Ples
+    29.57s  agent 발화 시작: The House of Plessis, originating in Normandy, became promin
+    29.59s  agent 발화 끝
+    36.48s  agent 발화 끝

@@ -60,16 +60,16 @@
 
 
      0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
-     3.17s  <ret> 발화 (turn1 첫 프레임)
-     3.42s  user  발화 끝
-     3.48s  agent 발화 시작: <ret> 그 곡의 기타 솔로는 정말 유명하죠. 에디 밴 헤일런이 마이클 잭슨의 '비트 잇' 기타 솔로를 연
-     5.09s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.92s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     6.48s  user  발화 시작: 맞아요.
-     7.31s  user  발화 끝
-    11.27s  agent 발화 끝
-    11.91s  user  발화 시작: 잠깐만, 지금 엄마한테 전화 좀 해야 돼.
-    14.78s  user  발화 시작: 아, 죄송해요. 다시 말씀드리면, 에디 밴 헤일런이 '비트 잇' 솔로를 연주했군요?
-    14.81s  user  발화 끝
-    20.15s  user  발화 끝
-    20.35s  agent 발화 시작: 네, 맞아요. 에디 밴 헤일런이 연주한 솔로는 그 곡을 더욱 특별하게 만들었죠. [happy]
-    26.00s  agent 발화 끝
+     2.71s  <ret> 발화 (turn1 첫 프레임)
+     2.96s  user  발화 끝
+     3.03s  agent 발화 시작: <ret> 아, 그 곡의 기타 솔로는 정말 유명하죠. 에디 밴 헤일런이 마이클 잭슨의 "비트 잇" 기타 솔로
+     3.91s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.24s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     6.05s  user  발화 시작: 맞아요.
+     6.64s  user  발화 끝
+    10.90s  agent 발화 끝
+    11.52s  user  발화 시작: 잠깐만, 엄마한테 전화 좀 해야 돼.
+    13.74s  user  발화 시작: 아, 죄송해요. 다시 말씀드리면, 에디 밴 헤일런이 연주했군요?
+    13.78s  user  발화 끝
+    18.46s  user  발화 끝
+    18.66s  agent 발화 시작: 네, 맞습니다. 에디 밴 헤일런의 연주가 곡의 분위기를 확 살렸죠. [happy]
+    23.65s  agent 발화 끝

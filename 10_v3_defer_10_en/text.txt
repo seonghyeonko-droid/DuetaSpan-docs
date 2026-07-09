@@ -78,12 +78,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  4.33s][moshi] ⟨ret@4.33s⟩ I located twelve pictures from your ⟦⚡SPAN@6.33s: (tool result) Found 12 images: "Paris_EiffelTower.jpg", "Nice_Beach.jpg", "LoireValley_Chateau.jpg", "Lyon_Foo⟧ France trip last year, excluding thumbnails. They’re named in the list.
-      CALL: {"function": "search_files", "arguments": {"query": "France holiday", "year": "2023", "exclude": "thumbnails"}}
-[  7.60s][user ] «backchannel» Mhm.
-[ 10.39s][user ] Oh, that's great! Can you set a reminder to back those up to the cloud ⟨ret@14.62s⟩ on Friday?
-[ 14.92s][moshi] Absolutely. ⟦⚡SPAN@15.66s: (tool result) Reminder set: "Back up France holiday photos" - Friday at 9:00 AM.⟧ I’ve scheduled a reminder to back up those photos this Friday at nine AM.
-      CALL: {"function": "set_reminder", "arguments": {"date": "Friday", "task": "Back up France holiday photos"}}
-[ 18.07s][user ] «backchannel» Yeah.
-[ 20.41s][user ] Perfect, thank you!
-[ 21.73s][moshi] You’re very welcome. It’s good to stay on top of those things—peace of mind is priceless, you know?
+[  4.79s][moshi] ⟨ret@4.72s⟩ I found thirty-seven pictures ⟦⚡SPAN@6.72s: (tool result) Found 37 images matching 'France holiday' from 2023, excluding thumbnails.⟧ from your France trip in twenty twenty-three, excluding those small thumbnails.
+      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "date": "last year", "exclude": "thumbnails"}}
+[  8.26s][user ] «backchannel» Mhm.
+[ 11.14s][user ] Can you show me just the ones from ⟨ret@13.36s⟩ Paris?
+[ 13.51s][moshi] Okay, I’ve filtered those down ⟦⚡SPAN@15.36s: (tool result) Filtered to 12 images tagged 'Paris' from the previous search.⟧ to twelve photos tagged with ‘Paris’ from your trip.
+      CALL: {"function": "filter_files", "arguments": {"files": "37 images from France 2023", "location": "Paris"}}
+[ 16.22s][user ] «backchannel» Yeah.
+[ 18.36s][user ] That's great, thanks.
+[ 19.52s][moshi] You’re very welcome! It’s good to revisit happy memories, isn't it? Perhaps we could look at budgeting for another trip sometime?

@@ -63,89 +63,119 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Wow, okay. Maybe not Iceland. Um,  | S3 Could you find me some options, ma | S4 Actually, one more thing. Do they 
+# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 That’s great. Uh, what’s on my cal | S3 Perfect. I think I need to send an | S4 Fantastic. I’m also trying to eat 
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.33s  <ret> 발화 (turn1 첫 프레임)
-     3.73s  agent 발화 시작: <ret> Tokyo had sunny weather on December twenty-fourth last
-     3.93s  user  발화 끝
-     5.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Sunny, high of 12 degrees Celsius, low of 5 degrees Cels
-     9.38s  agent 발화 끝
-     9.72s  user  발화 시작: Oh, that sounds lovely. I’m thinking of a winter getaway.
-    13.10s  agent 발화 시작: A getaway sounds wonderful! It’s so important to prioritize 
-    13.33s  user  발화 끝
-    16.15s  user  발화 시작: Yeah.
-    16.45s  user  발화 끝
-    19.18s  user  발화 시작: I was thinking maybe Iceland. What's the average temperature
-    19.68s  agent 발화 끝
-    23.38s  <ret> 발화 (turn6 첫 프레임)
-    23.78s  agent 발화 시작: <ret> Iceland in January—let’s take a look… The average temp
-    23.89s  user  발화 끝
-    24.66s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.42s]: (tool result) Average temperature -2 degrees Celsius, low -6 degrees C
-    28.97s  user  발화 시작: Yeah, yeah.
-    29.79s  user  발화 끝
-    31.43s  agent 발화 끝
-    31.54s  user  발화 시작: That’s… colder than I expected. Is it usually very windy?
-    35.39s  <ret> 발화 (turn9 첫 프레임)
-    35.71s  agent 발화 시작: <ret> Wind conditions can certainly impact a trip… Iceland e
-    35.89s  user  발화 끝
-    36.35s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.86s]: (tool result) Average wind speed 35 km/h, gusts up to 60 km/h.
-    45.12s  agent 발화 끝
-    45.36s  user  발화 시작: Wow, okay. Maybe not Iceland. Um, what about Costa Rica?
-    50.50s  user  발화 끝
-    50.83s  agent 발화 시작: Costa Rica offers a much warmer escape! A great choice if yo
-    56.29s  agent 발화 끝
-    57.00s  user  발화 시작: What’s the average high temperature there in February?
-    59.58s  <ret> 발화 (turn13 첫 프레임)
-    59.66s  agent 발화 시작: <ret> The average high temperature in Costa Rica in February
-    59.82s  user  발화 끝
-    60.70s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.35s]: (tool result) Average high temperature 30 degrees Celsius.
-    64.01s  agent 발화 끝
-    64.40s  user  발화 시작: Perfect! And are there any good yoga retreats there?
-    67.14s  agent 발화 시작: Costa Rica is *very* popular for wellness retreats, includin
-    67.35s  user  발화 끝
-    71.31s  agent 발화 끝
-    71.70s  user  발화 시작: Could you find me some options, maybe with availability in M
-    74.88s  <ret> 발화 (turn17 첫 프레임)
-    75.04s  agent 발화 시작: <ret> I found three options: Pura Vida Yoga, Zenith Retreats
-    75.22s  user  발화 끝
-    76.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) "Pura Vida Yoga" – March 10-17, $1500. "Zenith Retreats"
-    80.47s  user  발화 시작: Hmm, Pura Vida sounds nice. Can you check if they have any o
-    80.51s  agent 발화 끝
-    84.98s  <ret> 발화 (turn19 첫 프레임)
-    85.37s  agent 발화 시작: <ret> Checking Pura Vida’s availability now… Pura Vida Yoga 
-    85.47s  user  발화 끝
-    86.34s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.95s]: (tool result) Pura Vida Yoga: 3 spots remaining for March 10-17 retrea
-    90.57s  user  발화 시작: Yeah, totally.
-    91.39s  user  발화 끝
-    92.73s  user  발화 시작: Fantastic! Okay, book me one of those spots.
-    92.78s  agent 발화 끝
-    95.39s  <ret> 발화 (turn22 첫 프레임)
-    95.55s  agent 발화 시작: <ret> Wonderful! Let’s get that booked for you… Your spot at
-    95.73s  user  발화 끝
-    96.59s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.65s]: (tool result) Booking confirmed! Pura Vida Yoga, March 10-17, $1500. C
-   104.51s  user  발화 시작: [laugh] Amazing! Thank you so much, Brae.
-   104.63s  agent 발화 끝
-   107.09s  user  발화 끝
-   107.30s  agent 발화 시작: You’re very welcome! It sounds like a truly restorative trip
-   108.88s  user  발화 시작: Uh-huh.
-   109.33s  user  발화 끝
-   112.44s  user  발화 시작: Actually, one more thing. Do they offer any airport pickup s
-   112.58s  agent 발화 끝
-   116.56s  user  발화 끝
-   116.56s  agent 발화 시작: That’s a great question to ensure a smooth arrival.
-   117.71s  user  발화 시작: Yeah.
-   118.06s  user  발화 끝
-   119.24s  agent 발화 끝
-   119.32s  user  발화 시작: I— I mean, do *Pura Vida* offer that?
-   121.47s  <ret> 발화 (turn30 첫 프레임)
-   121.71s  agent 발화 시작: <ret> I’m sorry, I couldn’t find any information about airpo
-   121.91s  user  발화 끝
-   123.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (no information found)
-   124.89s  user  발화 시작: Mm-hmm.
-   125.29s  user  발화 끝
-   127.50s  agent 발화 끝
-   127.72s  user  발화 시작: Oh, okay. Well, that's alright. Thanks again!
-   131.21s  agent 발화 시작: You’re most welcome. Remember, even small changes can create
-   131.28s  user  발화 끝
-   139.23s  agent 발화 끝
+     3.19s  <ret> 발화 (turn1 첫 프레임)
+     3.57s  agent 발화 시작: <ret> On December twenty-fourth last year, Tokyo was partly 
+     3.79s  user  발화 끝
+     5.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 5 degr
+    10.34s  agent 발화 끝
+    10.76s  user  발화 시작: Okay, good to know. Um, can you find me a good Italian resta
+    15.14s  <ret> 발화 (turn3 첫 프레임)
+    15.54s  agent 발화 시작: <ret> Absolutely, I can help with that. Bella Notte is nearb
+    15.76s  user  발화 끝
+    16.66s  ⚡SPAN 주입 [d'=1.52s / d_lead=1.75s]: (tool result) Bella Notte, 0.5 miles away, 4.5 stars, price range mode
+    18.70s  user  발화 시작: Yeah.
+    19.05s  user  발화 끝
+    21.82s  user  발화 시작: That sounds nice. Can you make a reservation for two at seve
+    22.26s  agent 발화 끝
+    25.53s  <ret> 발화 (turn6 첫 프레임)
+    25.92s  agent 발화 시작: <ret> Certainly.
+    26.03s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.82s]: (tool result) Reservation confirmed for two at Bella Notte, today at 7
+    26.08s  user  발화 끝
+    26.69s  agent 발화 시작: Your table for two at Bella Notte is confirmed for tonight a
+    26.73s  agent 발화 끝
+    29.36s  user  발화 시작: Yeah, yeah.
+    30.46s  user  발화 끝
+    30.71s  agent 발화 끝
+    30.76s  user  발화 시작: Perfect! So, I’m thinking of taking a pottery class. Do you 
+    37.38s  <ret> 발화 (turn10 첫 프레임)
+    37.70s  agent 발화 시작: <ret> That sounds like a wonderful idea! Clayful Creations h
+    37.84s  user  발화 끝
+    37.88s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.03s]: (tool result) Clayful Creations, Tuesday at 6 PM, Thursday at 10 AM, l
+    45.49s  agent 발화 끝
+    45.55s  user  발화 시작: Thursday at ten sounds good. I— I mean, can you register me 
+    49.12s  <ret> 발화 (turn12 첫 프레임)
+    49.38s  user  발화 끝
+    49.42s  agent 발화 시작: <ret> Of course.
+    49.92s  ⚡SPAN 주입 [d'=0.80s / d_lead=0.82s]: (tool result) Registration confirmed for Clayful Creations pottery cla
+    50.24s  agent 발화 끝
+    50.32s  agent 발화 시작: You are registered for the pottery class on Thursday at ten 
+    53.70s  user  발화 시작: That’s great. Uh, what’s on my calendar for tomorrow?
+    53.88s  agent 발화 끝
+    57.01s  <ret> 발화 (turn15 첫 프레임)
+    57.08s  agent 발화 시작: <ret> Tomorrow, you have a meeting with Sarah at nine AM and
+    57.26s  user  발화 끝
+    59.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) 9:00 AM: Meeting with Sarah, 2:00 PM: Doctor’s appointme
+    61.89s  agent 발화 끝
+    62.23s  user  발화 시작: Right, I forgot about the doctor. [sigh] Is there any traffi
+    67.08s  <ret> 발화 (turn17 첫 프레임)
+    67.48s  agent 발화 시작: <ret> There is moderate traffic, with an estimated travel ti
+    67.70s  user  발화 끝
+    69.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) Moderate traffic, estimated travel time 25 minutes.
+    72.38s  agent 발화 끝
+    73.28s  user  발화 시작: Okay, that's not too bad. I’m starting to feel a bit overwhe
+    77.84s  agent 발화 시작: That’s very common, and completely understandable. It’s good
+    77.95s  user  발화 끝
+    85.78s  user  발화 시작: Yeah, I hope so. What about, um, my flight to Denver next mo
+    85.83s  agent 발화 끝
+    90.94s  <ret> 발화 (turn21 첫 프레임)
+    91.10s  agent 발화 시작: <ret> Your flight, UA456 to Denver, is confirmed for Novembe
+    91.25s  user  발화 끝
+    92.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) Flight UA456 to Denver, confirmed, departing November 15
+    94.24s  user  발화 시작: Okay.
+    94.79s  user  발화 끝
+    96.25s  user  발화 시작: Perfect. I think I need to send an email to my boss.
+    96.28s  agent 발화 끝
+    99.42s  agent 발화 시작: I can help with that. Who would you like to send it to?
+    99.48s  user  발화 끝
+   100.34s  user  발화 시작: Uh-huh.
+   100.89s  user  발화 끝
+   102.66s  agent 발화 끝
+   103.39s  user  발화 시작: To David Miller. And can you draft a message saying I'll be 
+   108.32s  <ret> 발화 (turn27 첫 프레임)
+   108.55s  agent 발화 시작: <ret> Certainly.
+   108.58s  user  발화 끝
+   108.82s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.81s]: (tool result) Email sent to David Miller, subject: Unavailable tomorro
+   109.17s  agent 발화 시작: The email has been sent to David Miller stating your unavail
+   109.36s  agent 발화 끝
+   111.54s  user  발화 시작: Yeah.
+   111.89s  user  발화 끝
+   114.36s  user  발화 시작: Great, thanks. I was also wondering.
+   114.36s  agent 발화 끝
+   117.22s  user  발화 끝
+   117.30s  agent 발화 시작: [interrupting] Are you looking to set a reminder to follow u
+   119.47s  user  발화 시작: Mm-hmm.
+   120.11s  user  발화 끝
+   121.25s  user  발화 시작: Oh, yeah, that's a good idea. Remind me next Tuesday at ten 
+   121.37s  agent 발화 끝
+   125.05s  <ret> 발화 (turn34 첫 프레임)
+   125.44s  agent 발화 시작: <ret> Absolutely.
+   125.47s  user  발화 끝
+   125.55s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.10s]: (tool result) Reminder set for next Tuesday at 10:00 AM: Follow up wit
+   126.43s  agent 발화 시작: A reminder is set for next Tuesday at ten AM to follow up wi
+   126.53s  agent 발화 끝
+   130.03s  agent 발화 끝
+   130.36s  user  발화 시작: Fantastic. I’m also trying to eat healthier. Any suggestions
+   134.38s  user  발화 끝
+   134.75s  agent 발화 시작: Of course. Small changes can make a big difference. Perhaps 
+   140.84s  user  발화 시작: That’s a good point. [happy] Could you search for some healt
+   140.91s  agent 발화 끝
+   144.80s  <ret> 발화 (turn39 첫 프레임)
+   144.96s  agent 발화 시작: <ret> I can certainly do that. BBC Good Food has fifteen qui
+   144.96s  user  발화 끝
+   145.36s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.92s]: (tool result) BBC Good Food: 15 quick & healthy dinner recipes.
+   147.78s  user  발화 시작: Yeah.
+   148.09s  user  발화 끝
+   151.49s  agent 발화 끝
+   151.60s  user  발화 시작: Wonderful. I think I'm all set for now.
+   153.81s  agent 발화 시작: Wonderful! It sounds like you've made some great progress to
+   153.96s  user  발화 끝
+   158.59s  user  발화 시작: Yeah.
+   158.90s  user  발화 끝
+   160.79s  user  발화 시작: Thanks, Brae. I appreciate it.
+   160.91s  agent 발화 끝
+   162.73s  user  발화 끝
+   162.80s  agent 발화 시작: You’re very welcome. I’m glad I could help. Don’t hesitate t
+   167.89s  agent 발화 끝

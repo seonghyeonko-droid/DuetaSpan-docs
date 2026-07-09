@@ -70,12 +70,12 @@
 
 
      0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I help
-     7.41s  agent 발화 끝
-     8.39s  user  발화 시작: Ara… that’s a pretty name. Honestly, I’m just feeling overwh
-    14.42s  user  발화 끝
-    14.43s  agent 발화 시작: It’s completely understandable to feel overwhelmed, especial
-    24.22s  user  발화 시작: I— I mean, I just don’t know where all my money goes each mo
-    24.25s  agent 발화 끝
-    28.71s  user  발화 끝
-    29.00s  agent 발화 시작: That’s a really common feeling, Kim. It’s hard to make progr
-    38.55s  agent 발화 끝
+     7.46s  agent 발화 끝
+     8.51s  user  발화 시작: Ara… that’s a pretty name. Honestly, I’m just feeling really
+    14.25s  user  발화 끝
+    14.32s  agent 발화 시작: Overwhelmed is completely understandable, especially with ev
+    22.64s  user  발화 시작: I— I mean, just looking at my accounts. It feels like money 
+    22.71s  agent 발화 끝
+    27.37s  user  발화 끝
+    27.62s  agent 발화 시작: That feeling is very common, Kim. It’s easy to lose track. P
+    34.80s  agent 발화 끝

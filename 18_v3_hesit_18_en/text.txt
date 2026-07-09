@@ -69,34 +69,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about Pompeii, and it got me thinking… uh, when was the last time Vesuvius ⟨ret@6.25s⟩ actually erupted?
-[  6.48s][moshi] That’s a very natural question ⟦⚡SPAN@8.25s: [source: Wikipedia] Mount Vesuvius last erupted in March 1944.⟧ to ask when you’re considering a place with such a dramatic history.
-[ 11.87s][moshi] The last eruption of Mount Vesuvius was in March of nineteen forty-four.
-[ 16.18s][user ] Nineteen forty-four… wow. That's… relatively recent, actually.
-[ 20.12s][moshi] It is, isn’t it? It helps us remember that geological time scales can be very different from human ones.
-[ 27.89s][user ] Right. I wonder… um, I wonder if that eruption was as bad as the one that destroyed Pompeii?
-[ 34.04s][moshi] ⟨ret@33.89s⟩ That's a good question. ⟦⚡SPAN@35.89s: [source: Smithsonian Institution] The 1944 eruption was a Strombolian eruption, producing lava flows and ash.⟧ The nineteen forty-four eruption was significantly less violent than the one in seventy-nine AD.
-[ 41.83s][moshi] The eruption in nineteen forty-four was a Strombolian event, creating lava flows and ashfall.
-[ 44.09s][user ] «backchannel» Yeah.
-[ 47.73s][moshi] It primarily affected the area around the base of the volcano, not the wider region.
-[ 53.12s][user ] So, no cities were… completely buried, like Pompeii and Herculaneum?
-[ 58.27s][moshi] ⟨ret@58.20s⟩ No, thankfully. ⟦⚡SPAN@59.32s: [source: USGS] The 1944 eruption destroyed several villages on the slopes of Vesuvius.⟧ Though there was damage to nearby towns and disruption to daily life, there wasn't the same level of catastrophic burial.
-[ 65.52s][moshi] The nineteen forty-four eruption did destroy several villages located on the volcano’s slopes.
-[ 71.56s][user ] Destroyed villages… that’s still pretty serious. I— I mean, it’s not good, obviously.
-[ 76.46s][moshi] It certainly wasn’t, and it’s a reminder of the power of nature. It’s good you acknowledge the impact on those communities.
-[ 84.31s][user ] Yeah. Is Vesuvius still… active? Like, is there a chance of another ⟨ret@89.79s⟩ eruption?
-[ 90.03s][moshi] It is still ⟦⚡SPAN@91.79s: [source: INGV (Italian National Institute of Geophysics and Volcanology)] Vesuvius is monitored for seismic ac⟧ considered an active volcano, yes. Scientists continuously monitor it for any signs of increased activity.
-[ 97.94s][moshi] The Italian National Institute of Geophysics and Volcanology monitors Vesuvius for seismic activity, ground changes, and gas emissions.
-[103.61s][user ] «backchannel» Yeah.
-[106.36s][user ] So they’re keeping a close eye on it. That’s… reassuring, I guess.
-[111.50s][moshi] It is, and they have very sophisticated systems in place to detect any potential threats.
-[117.32s][user ] I’m planning a trip to Italy next year. Should I, uh, avoid the area ⟨ret@121.55s⟩ around Naples?
-[121.94s][moshi] That’s a reasonable ⟦⚡SPAN@123.55s: (tool result) Current alert level: Yellow. Advisory: Normal activity. No significant unrest.⟧ consideration. While an eruption isn't imminent, being aware of the risks is always wise.
-[129.36s][moshi] The current alert level for Vesuvius is Yellow, indicating normal activity with no significant unrest.
-[135.71s][user ] Yellow… okay. That sounds… manageable.
-[140.25s][moshi] It does, and it allows visitors to enjoy the area while remaining informed. It’s about being prepared, not fearful.
-[145.60s][user ] «backchannel» Right.
-[150.02s][user ] What about the people who live there, though?
-[151.93s][moshi] That’s a very compassionate question. The local communities have emergency plans in place, and regular drills are conducted.
-[154.50s][user ] «backchannel» Uh-huh.
-[159.78s][user ] Right. That’s good to know.
+[  0.00s][user ] So, uh, I was reading about Italy and… I was wondering, when did Mount Vesuvius last ⟨ret@5.97s⟩ erupt?
+[  6.20s][moshi] That’s a good question. ⟦⚡SPAN@7.97s: [source: Wikipedia] Mount Vesuvius last erupted in March 1944.⟧ It’s fascinating to think about the power of nature.
+[ 10.91s][moshi] The last eruption of Mount Vesuvius occurred in March of nineteen forty-four.
+[ 15.38s][user ] Nineteen forty-four… wow. That’s… relatively recent, isn’t it?
+[ 19.44s][moshi] It is, considering its long history. It’s a reminder that these natural forces are always present.
+[ 26.91s][user ] I— I mean, was that a big eruption? Like, Pompeii big?
+[ 30.52s][moshi] ⟨ret@30.37s⟩ No, it wasn't on the ⟦⚡SPAN@32.37s: [source: Smithsonian Institution] The 1944 eruption was Strombolian, producing lava flows and ash.⟧ scale of the eruption that destroyed Pompeii.
+[ 34.55s][moshi] The nineteen forty-four eruption was Strombolian, creating lava flows and ash, but not a massive explosion.
+[ 41.63s][user ] Strombolian… what does that even mean?
+[ 44.31s][moshi] It refers to a specific style of eruption, generally less violent than a Plinian one.
+[ 49.34s][user ] Right. Okay. So, uh, what’s the risk of it erupting *again*?
+[ 52.97s][moshi] ⟨ret@52.90s⟩ That’s ⟦⚡SPAN@53.94s: [source: Vesuvius Observatory] Vesuvius is an active volcano with a moderate risk of eruption in the coming de⟧ a very valid concern, and scientists monitor Vesuvius closely.
+[ 57.57s][moshi] Scientists assess Vesuvius as an active volcano with a moderate eruption risk in the coming decades.
+[ 59.82s][user ] «backchannel» Yeah.
+[ 63.51s][moshi] The observatory continuously analyzes seismic activity and gas emissions to track changes.
+[ 69.94s][user ] Seismic activity… so, earthquakes? Are there a lot of earthquakes ⟨ret@74.02s⟩ there?
+[ 74.25s][moshi] There is frequent seismic ⟦⚡SPAN@76.02s: [source: INGV (Italian National Institute of Geophysics and Volcanology)] Small earthquakes occur frequently n⟧ activity, though most are small and go unnoticed.
+[ 79.10s][moshi] Frequent small earthquakes occur near Vesuvius, with larger events being less common.
+[ 82.33s][user ] «backchannel» Yeah.
+[ 84.17s][user ] Okay, that’s… somewhat reassuring. But what about the people who live nearby?
+[ 88.22s][moshi] Evacuation plans are in place for the surrounding areas, and drills are conducted regularly.
+[ 93.50s][user ] Evacuation plans… that sounds stressful. [sigh]
+[ 97.19s][moshi] It’s understandable that it would be a source of stress for residents. It’s a constant awareness.
+[102.69s][user ] I can imagine. So, is it… is it a good idea to visit, then?
+[106.63s][moshi] ⟨ret@106.58s⟩ Visiting Vesuvius ⟦⚡SPAN@107.70s: [source: Campania Region Tourism] Vesuvius National Park receives over half a million visitors annually.⟧ is certainly possible, and it’s a popular tourist destination.
+[111.54s][moshi] Vesuvius National Park welcomes over five hundred thousand visitors each year.
+[114.75s][user ] «backchannel» Right.
+[118.58s][user ] Half a million… wow. Okay. I think that's all I needed to know.
+[123.01s][moshi] Wonderful. It’s good to be informed, and to acknowledge the power of these natural landscapes.

@@ -58,27 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, uh, I’m working on a project,  | S2 Right, I figured. It’s for a histo | S3 Oh! Germany! Yes, that’s it. I kne | S4 Yeah, you’re right. It's just… som
+# EXAMINER(FDB-v2) 단계: S1 So, uh, I was wondering… what coun | S2 Oh, Germany! Right, I knew that, I | S3 Yeah, well, what about… is there a | S4 Belgium too? Wow, that’s… surprisi
 
-     0.00s  user  발화 시작: So, uh, I’m working on a project, and I need to identify a f
-     8.76s  user  발화 끝
-     8.88s  agent 발화 시작: That's a good starting point for identifying a flag! Many na
-    16.48s  agent 발화 끝
-    17.00s  user  발화 시작: Right, I figured. It’s for a history assignment, actually. I
-    23.90s  <ret> 발화 (turn3 첫 프레임)
-    24.14s  agent 발화 시작: <ret> The flag of Germany is comprised of horizontal bands o
-    24.28s  user  발화 끝
-    25.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: [source: Britannica] The flag of Germany features three horizontal ban
-    26.45s  user  발화 시작: Right.
-    27.09s  user  발화 끝
-    29.22s  agent 발화 끝
-    30.06s  user  발화 시작: Oh! Germany! Yes, that’s it. I knew it was European, but my 
-    37.52s  user  발화 끝
-    37.54s  agent 발화 시작: It happens to the best of us! Sometimes a little nudge is al
-    43.33s  agent 발화 끝
-    44.78s  user  발화 시작: Yeah, you’re right. It's just… sometimes all the dates and n
-    53.56s  <ret> 발화 (turn8 첫 프레임)
-    53.88s  agent 발화 시작: <ret> Actually, Germany’s flag has a surprisingly interestin
-    53.96s  user  발화 끝
-    55.40s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.52s]: [source: History.com] The black, red, and gold tricolor was first used
-    64.87s  agent 발화 끝
+     0.00s  user  발화 시작: So, uh, I was wondering… what country has a flag that's blac
+     6.30s  user  발화 끝
+     6.43s  agent 발화 시작: That’s a good question! Let’s see if we can figure that out 
+    10.24s  <ret> 발화 (turn2 첫 프레임)
+    10.48s  agent 발화 시작: <ret> It’s a fairly recognizable flag, actually. The flag of
+    10.59s  agent 발화 끝
+    11.44s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.41s]: [source: Britannica] The national flag of Germany consists of three eq
+    17.70s  agent 발화 끝
+    17.84s  user  발화 시작: Oh, Germany! Right, I knew that, I think. It’s just… I’m stu
+    26.36s  agent 발화 시작: Tests can definitely do that to you. It's completely normal 
+    26.55s  user  발화 끝
+    29.86s  user  발화 시작: Right.
+    30.36s  user  발화 끝
+    33.77s  user  발화 시작: Yeah, well, what about… is there another country with a simi
+    33.91s  agent 발화 끝
+    38.03s  <ret> 발화 (turn7 첫 프레임)
+    38.35s  agent 발화 시작: <ret> There’s one other nation that shares those colors. The
+    38.50s  user  발화 끝
+    39.87s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.46s]: [source: Wikipedia] The flag of Belgium is a tricolor of three vertica
+    47.02s  agent 발화 끝
+    47.43s  user  발화 시작: Belgium too? Wow, that’s… surprising. Okay, good to know. Th
+    53.73s  user  발화 끝

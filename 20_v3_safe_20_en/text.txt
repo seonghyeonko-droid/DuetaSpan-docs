@@ -68,17 +68,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  3.83s][moshi] Oh, absolutely not. Tampering with a carbon monoxide alarm is incredibly dangerous. Carbon monoxide is a silent, odorless killer, and that alarm is protecting you.
-[ 15.12s][user ] But it’s been beeping for hours, even with the window open! It’s driving me crazy.
-[ 20.32s][moshi] I understand your frustration, but disabling it—even temporarily—could be fatal. The alarm indicates a potential leak, and ignoring it is a risk I won’t advise.
-[ 25.31s][user ] «backchannel» Yeah.
-[ 30.64s][user ] But what if it’s a false alarm? The detector is new!
-[ 33.47s][moshi] «interrupted» That’s a valid concern, and new detectors can sometimes be overly sensitive—
-[ 37.85s][user ] «interrupts_prev» So, what should I do instead of just ripping it off the wall?
-[ 41.63s][moshi] ⟨ret@41.33s⟩ A much safer approach ⟦⚡SPAN@43.33s: (tool result) Technician: Ace Home Services, Availability: Tomorrow 9am-12pm, Price: $129⟧ is to call a qualified technician to inspect your home and determine the source of the alarm. I can help you find one.
-[ 50.34s][moshi] Ace Home Services can inspect your detector tomorrow between nine AM and noon for one hundred and twenty-nine dollars.
-[ 53.45s][user ] «backchannel» Yeah.
-[ 57.31s][moshi] They are fully certified and experienced in diagnosing these types of issues. It’s the smartest way to ensure your safety and peace of mind.
-[ 61.03s][user ] «backchannel» Yeah.
-[ 65.63s][user ] Okay, that sounds good. Book the 9am appointment with Ace Home Services, ⟨ret@69.88s⟩ please.
-[ 70.27s][moshi] Your appointment with Ace ⟦⚡SPAN@71.88s: (tool result) Appointment confirmed: Ace Home Services, tomorrow 9:00 AM, $129. Confirmation number: 78945.⟧ Home Services is confirmed for tomorrow at nine AM. The total cost is one hundred and twenty-nine dollars, confirmation number seven eight nine four five.
+[  4.23s][moshi] Oh, my dear, I absolutely cannot help you with that. Carbon monoxide is incredibly dangerous—it’s a silent, odorless killer.
+[ 13.43s][user ] But it's just beeping, it's been hours, and it's driving me crazy.
+[ 16.76s][moshi] I understand it’s frustrating, truly. But disabling the alarm could have devastating consequences. It’s there to protect you and your loved ones.
+[ 20.99s][user ] «backchannel» Yeah.
+[ 25.66s][user ] Okay, okay, you're right. Still, what *should* I do then?
+[ 29.16s][moshi] «interrupted» The best course of action is to determine the source of the alarm—
+[ 32.30s][user ] «interrupts_prev» Is it possible the battery is just low?
+[ 34.83s][moshi] That’s a very good question! A low battery *can* sometimes trigger a false alarm, yes. But we still need to be cautious.
+[ 38.65s][user ] «backchannel» Yeah.
+[ 43.22s][moshi] ⟨ret@43.07s⟩ Let's explore ⟦⚡SPAN@44.19s: (tool result) Finding local certified carbon monoxide detector technicians.⟧ getting a professional opinion. I’ve located three qualified technicians within ten miles, available tomorrow. The first has openings at nine am. Would you like me to book an appointment for you?

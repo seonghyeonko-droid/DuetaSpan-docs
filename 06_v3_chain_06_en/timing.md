@@ -68,81 +68,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Oh, the fish fry sounds great. I—  | S3 It is. Um, could you remind me to  | S4 That's a good idea. But I always f
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Okay, perfect. Uh, I’m planning a  | S3 Three-twenty… that’s not bad. Can  | S4 And the hotel?
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.74s  <ret> 발화 (turn1 첫 프레임)
-     4.82s  agent 발화 시작: <ret> Alright, your user agent is now set to MyCustomBrowser
-     4.86s  user  발화 끝
-     6.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) User agent set to MyCustomBrowser version 10.5.
-    13.63s  agent 발화 끝
-    14.11s  user  발화 시작: Yeah, actually. Can you search for restaurants near me that 
-    17.93s  <ret> 발화 (turn3 첫 프레임)
-    18.09s  agent 발화 시작: <ret> I found three restaurants nearby open late: The Blue S
-    18.28s  user  발화 끝
-    19.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: (tool result) Restaurants: The Blue Spoon (open until 2 AM), Cozy Dine
-    22.29s  user  발화 시작: Yeah.
-    22.83s  user  발화 끝
-    25.36s  agent 발화 끝
-    26.01s  user  발화 시작: Hmm, Cozy Diner sounds good. Could you get me directions the
-    30.02s  <ret> 발화 (turn6 첫 프레임)
-    30.09s  agent 발화 시작: <ret> Certainly. Cozy Diner is zero point seven miles away, 
-    30.27s  user  발화 끝
-    32.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) Directions to Cozy Diner: 0.7 miles, 5 minutes by car. T
-    34.09s  user  발화 시작: Yeah.
-    34.91s  user  발화 끝
-    37.13s  agent 발화 끝
-    38.01s  user  발화 시작: Perfect! While you're at it, can you check if they have any 
-    42.01s  <ret> 발화 (turn9 첫 프레임)
-    42.41s  agent 발화 시작: <ret> Cozy Diner has a Friday night fish fry for twelve nine
-    42.50s  user  발화 끝
-    43.05s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.99s]: (tool result) Cozy Diner specials: Friday night fish fry - $12.99, all
-    49.40s  agent 발화 끝
-    50.43s  user  발화 시작: Oh, the fish fry sounds great. I— I mean, can you make a res
-    56.60s  user  발화 끝
-    56.75s  agent 발화 시작: Just to confirm, a reservation for two people at Cozy Diner 
-    63.23s  agent 발화 끝
-    63.45s  user  발화 시작: Yes, exactly.
-    64.58s  <ret> 발화 (turn13 첫 프레임)
-    64.81s  agent 발화 시작: <ret> Wonderful! Your reservation for two at Cozy Diner is c
-    64.87s  user  발화 끝
-    66.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: (tool result) Reservation confirmed: Cozy Diner, tonight, 7:30 PM, par
-    74.76s  user  발화 시작: Fantastic. That's a huge weight off my mind.
-    74.92s  agent 발화 끝
-    77.71s  user  발화 끝
-    77.97s  agent 발화 시작: I'm glad I could help with that. Planning a nice evening can
-    84.03s  user  발화 시작: It is. Um, could you remind me to bring my wallet?
-    84.03s  agent 발화 끝
-    87.64s  user  발화 끝
-    87.78s  agent 발화 시작: Of course. What time would you like that reminder set for?
-    90.33s  user  발화 시작: Yeah.
-    91.01s  user  발화 끝
-    92.17s  user  발화 시작: Seven fifteen.
-    92.32s  agent 발화 끝
-    93.52s  <ret> 발화 (turn20 첫 프레임)
-    93.60s  agent 발화 시작: <ret> Absolutely. I’ve set a reminder for seven fifteen to b
-    93.68s  user  발화 끝
-    95.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Reminder set for 7:15 PM: Bring your wallet.
-    98.98s  user  발화 시작: Thanks, Lio. You're a lifesaver.
-    99.39s  agent 발화 끝
-   101.05s  agent 발화 시작: You're very welcome! I’m here to help make things a little e
-   101.19s  user  발화 끝
-   105.67s  agent 발화 끝
-   106.62s  user  발화 시작: I'm also trying to save up for a new laptop. Do you have any
-   111.61s  agent 발화 시작: Certainly. A good starting point is tracking your spending f
-   111.75s  user  발화 끝
-   118.68s  user  발화 시작: That's a good idea. But I always forget to actually *do* it.
-   119.12s  agent 발화 끝
-   122.24s  user  발화 끝
-   122.30s  agent 발화 시작: Perhaps setting a daily reminder to log your expenses would 
-   129.26s  user  발화 시작: Yes, please! How about eight PM?
-   129.29s  agent 발화 끝
-   131.97s  <ret> 발화 (turn28 첫 프레임)
-   132.29s  agent 발화 시작: <ret> Consider it done. A reminder to log your expenses is s
-   132.31s  user  발화 끝
-   133.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Reminder set for 8:00 PM: Log your expenses.
-   139.38s  agent 발화 끝
-   139.59s  user  발화 시작: That’s perfect. Thank you so much!
-   141.94s  user  발화 끝
-   141.97s  agent 발화 시작: You're most welcome. Building good financial habits takes ti
-   148.92s  agent 발화 끝
+     5.06s  <ret> 발화 (turn1 첫 프레임)
+     5.13s  agent 발화 시작: <ret> Certainly, I can manage that for you. I’ve updated you
+     5.32s  user  발화 끝
+     6.82s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.33s]: (tool result) User agent set to MyCustomBrowser version 10.5.
+    14.17s  agent 발화 끝
+    14.63s  user  발화 시작: Great. Now, can you check if that change was reflected on wh
+    20.41s  <ret> 발화 (turn3 첫 프레임)
+    20.57s  agent 발화 시작: <ret> I’ve navigated to whatismyuseragent.com and the page h
+    20.74s  user  발화 끝
+    22.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) Page loaded successfully.
+    23.70s  user  발화 시작: Yeah.
+    24.29s  user  발화 끝
+    26.04s  agent 발화 끝
+    26.72s  user  발화 시작: And what does it say my user agent is now?
+    29.39s  <ret> 발화 (turn6 첫 프레임)
+    29.47s  agent 발화 시작: <ret> I can retrieve that information for you. It reports yo
+    29.58s  user  발화 끝
+    31.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.35s]: (tool result) User Agent: MyCustomBrowser version 10.5
+    34.37s  user  발화 시작: Yeah.
+    35.10s  user  발화 끝
+    38.09s  agent 발화 끝
+    38.76s  user  발화 시작: Okay, perfect. Uh, I’m planning a trip to Seattle.
+    42.65s  user  발화 끝
+    42.80s  agent 발화 시작: Seattle’s a fantastic choice! Are you looking for flights or
+    47.74s  user  발화 시작: Both, actually. Flights first, though. From New York, someti
+    48.17s  agent 발화 끝
+    52.09s  user  발화 끝
+    52.50s  agent 발화 시작: Next week works. Do you have preferred dates or a flexible r
+    58.10s  agent 발화 끝
+    59.17s  user  발화 시작: Flexible. Just… sometime between Monday and Friday.
+    63.12s  <ret> 발화 (turn13 첫 프레임)
+    63.20s  agent 발화 시작: <ret> I found flights from New York to Seattle starting at t
+    63.38s  user  발화 끝
+    65.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Flights found: New York to Seattle, prices from $320.
+    68.86s  user  발화 시작: Three-twenty… that’s not bad. Can you look at hotels near th
+    69.04s  agent 발화 끝
+    73.33s  <ret> 발화 (turn15 첫 프레임)
+    73.73s  agent 발화 시작: <ret> The Maxwell Hotel is near the Space Needle, with rates
+    73.82s  user  발화 끝
+    75.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Hotels near Space Needle: The Maxwell Hotel, starting at
+    80.59s  agent 발화 끝
+    81.16s  user  발화 시작: The Maxwell… hmm. Is there anything a little cheaper?
+    85.00s  user  발화 끝
+    85.01s  <ret> 발화 (turn17 첫 프레임)
+    85.08s  agent 발화 시작: <ret> Hotel Five is near the Space Needle, available for one
+    86.13s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.35s]: (tool result) Hotel Five, near Space Needle, $135/night.
+    88.72s  user  발화 시작: Yeah.
+    89.45s  user  발화 끝
+    91.42s  agent 발화 끝
+    91.44s  user  발화 시작: That sounds good. Okay, let’s book a flight for, uh, Tuesday
+    97.76s  <ret> 발화 (turn20 첫 프레임)
+    97.84s  agent 발화 시작: <ret> Your flight to Seattle next Tuesday is confirmed, refe
+    97.93s  user  발화 끝
+    99.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: (tool result) Flight booked: New York to Seattle, Tuesday, confirmatio
+   104.88s  user  발화 시작: And the hotel?
+   105.02s  agent 발화 끝
+   105.37s  <ret> 발화 (turn22 첫 프레임)
+   105.77s  agent 발화 시작: <ret> Now booking the hotel for you. Hotel Five in Seattle i
+   105.93s  user  발화 끝
+   106.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.18s]: (tool result) Hotel booked: Hotel Five, Seattle, 3 nights, confirmatio
+   114.65s  user  발화 시작: Perfect! Thank you.
+   114.77s  agent 발화 끝
+   116.20s  agent 발화 시작: You’re very welcome. I’ve sent both confirmations to your em
+   116.36s  user  발화 끝
+   123.84s  agent 발화 끝

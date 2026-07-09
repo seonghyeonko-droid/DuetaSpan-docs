@@ -69,40 +69,39 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.01s⟩ com.
-[  4.25s][moshi] Certainly. I’m now ⟦⚡SPAN@6.01s: (tool result) {"status": "success", "response": "Currently 72 degrees Fahrenheit and sunny."}⟧ monitoring weather dot example dot com for changes.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.35s⟩ com.
+[  4.58s][moshi] Certainly. I’ll monitor weather ⟦⚡SPAN@6.35s: (tool result) Update received: Sunny, 22 degrees Celsius.⟧ dot example dot com for any changes and let you know as soon as there’s an update.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[  9.74s][moshi] The current weather at weather dot example dot com is seventy-two degrees Fahrenheit and sunny.
-[ 15.83s][user ] Oh, good. Uh, I need to book a table for four at The Italian Place tomorrow evening.
-[ 21.20s][moshi] Of course. What time would you like the reservation to be?
-[ 22.76s][user ] «backchannel» Right.
-[ 24.92s][user ] Around seven thirty, I ⟨ret@26.25s⟩ think.
-[ 26.48s][moshi] Your table for four ⟦⚡SPAN@28.25s: (tool result) Reservation confirmed for four at The Italian Place tomorrow at 7:30 PM. Confirmation number is ⟧ at The Italian Place is confirmed for tomorrow at seven thirty. Your confirmation is 8291.
-      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant": "The Italian Place", "date": "tomorrow", "time": "7:30 PM", "party_size": 4}}
-[ 33.91s][user ] That's perfect.
-[ 34.96s][moshi] I’m glad to hear it. Is there anything else I can help you with regarding your evening?
-[ 36.79s][user ] «backchannel» Yeah.
-[ 40.53s][user ] Actually, yes. Could you remind me to take out the trash tomorrow morning?
-[ 45.99s][moshi] ⟨ret@45.67s⟩ ⟦⚡SPAN@46.17s: (tool result) Reminder set for tomorrow at 8:00 AM: take out the trash.⟧ I've set a reminder for you to take out the trash tomorrow at eight AM.
-      CALL: {"function": "set_reminder", "arguments": {"task": "take out the trash", "date": "tomorrow", "time": "8:00 AM"}}
-[ 50.30s][user ] Excellent. And can you tell me how long the drive to The Italian Place is from here?
-[ 55.30s][moshi] ⟨ret@55.23s⟩ Certainly, I can ⟦⚡SPAN@56.83s: (tool result) Drive to The Italian Place: 12 minutes, 5.8 miles.⟧ calculate that for you.
-      CALL: {"function": "get_directions", "arguments": {"destination": "The Italian Place"}}
-[ 58.02s][moshi] The drive to The Italian Place is approximately twelve minutes and five point eight miles.
-[ 60.35s][user ] «backchannel» Yeah.
-[ 64.08s][user ] Hmm, that’s not bad at all.
-[ 66.16s][moshi] Not at all. It sounds like everything is shaping up nicely for a pleasant evening.
-[ 67.71s][user ] «backchannel» Right.
-[ 73.18s][user ] I was thinking, maybe I should also get some flowers for the table.
-[ 77.42s][moshi] That's a lovely thought. I can certainly help you with that.
-[ 81.72s][user ] Do you think roses are a good choice?
-[ 84.13s][moshi] Roses are always a classic and elegant choice, yes. They’re very popular.
-[ 90.13s][user ] Okay, good. Could you order a dozen red roses for delivery to The Italian Place before ⟨ret@96.52s⟩ we arrive?
-[ 96.91s][moshi] A dozen red roses ⟦⚡SPAN@98.52s: (tool result) Order placed: 12 red roses to The Italian Place, delivery by 7:30 PM. Order number is 4952.⟧ have been ordered for delivery to The Italian Place by seven thirty. Your order number is 4952.
-      CALL: {"function": "order_flowers", "arguments": {"flower_type": "red roses", "quantity": 12, "delivery_location": "The Italian Place", "delivery_time": "7:30 PM"}}
-[ 99.87s][user ] «backchannel» Oh.
-[106.06s][user ] Fantastic! You’re a lifesaver, Driaus.
-[109.76s][moshi] [happy] You are very welcome. I’m happy to assist in making your evening special.
-[111.33s][user ] «backchannel» Mhm.
-[115.15s][user ] I think that’s all for now. Thanks again.
-[117.58s][moshi] It was my pleasure. Enjoy your evening!
+[ 12.34s][moshi] The current weather at weather dot example dot com is sunny with a temperature of twenty-two degrees Celsius.
+[ 19.45s][user ] Oh, that’s good. I was worried it might rain for the picnic.
+[ 23.58s][moshi] A picnic sounds lovely! Knowing the forecast ahead of time is always a good idea.
+[ 26.27s][user ] «backchannel» Uh-huh.
+[ 29.09s][user ] Right. Uh, can you book a table for four at The Olive Garden for, um, seven ⟨ret@34.29s⟩ pm tonight?
+[ 34.69s][moshi] Your table for ⟦⚡SPAN@36.29s: (tool result) Reservation confirmed: The Olive Garden, 7:00 PM, party of four. Confirmation number is 928XJ.⟧ four at The Olive Garden is confirmed for seven pm tonight. Your confirmation number is 928XJ.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "The Olive Garden", "party_size": 4, "time": "7:00 PM"}}
+[ 38.41s][user ] «backchannel» Wow.
+[ 43.22s][user ] Perfect!
+[ 44.02s][moshi] Wonderful. Is there anything else I can help you with regarding the picnic or dinner plans?
+[ 46.88s][user ] «backchannel» Yeah.
+[ 50.83s][user ] Actually, yes. What’s the traffic like on the way to The Olive Garden from here?
+[ 56.08s][moshi] ⟨ret@55.76s⟩ ⟦⚡SPAN@56.26s: (tool result) Moderate traffic, estimated travel time 22 minutes.⟧ The traffic to The Olive Garden is moderate, with an estimated travel time of twenty-two minutes.
+      CALL: {"function": "get_traffic", "arguments": {"destination": "The Olive Garden"}}
+[ 63.27s][user ] Hmm, okay.
+[ 64.67s][moshi] I can also send a reminder ten minutes before your reservation if you’d like.
+[ 67.51s][user ] «backchannel» Right.
+[ 69.45s][user ] Yes, please do ⟨ret@71.00s⟩ that!
+[ 71.32s][moshi] A reminder ⟦⚡SPAN@72.36s: (tool result) Reminder set: 6:50 PM, Dinner at The Olive Garden.⟧ for your dinner at The Olive Garden is set for six fifty pm.
+      CALL: {"function": "set_reminder", "arguments": {"time": "6:50 PM", "message": "Dinner at The Olive Garden"}}
+[ 73.45s][user ] «backchannel» Mhm.
+[ 76.07s][moshi] I find setting reminders helps keep things flowing smoothly when you have a busy evening planned.
+[ 78.42s][user ] «backchannel» Yeah.
+[ 82.58s][user ] That’s true. What about… uh, the news? Any major headlines?
+[ 87.19s][moshi] [sigh] I can certainly summarize the top headlines for you, though my focus is generally on supporting your daily routine and productivity.
+[ 93.39s][user ] «backchannel» Yeah.
+[ 95.44s][user ] Okay, fair enough. Just the headlines then.
+[ 98.79s][moshi] Certainly. The main headline is the ongoing negotiations regarding the new trade agreement.
+[101.18s][user ] «backchannel» Yeah, yeah.
+[106.67s][user ] Is there anything new on that?
+[108.20s][moshi] Negotiations are continuing, but no agreement has been reached yet. There’s also a local story about the community garden’s harvest festival.
+[118.69s][user ] Oh, that sounds nice. I— I mean, maybe we can go.
+[122.42s][moshi] It does sound pleasant! I’m glad I could assist you with your evening plans and keep you informed.
