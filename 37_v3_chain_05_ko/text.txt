@@ -2,6 +2,21 @@ v3_chain_05_ko src=mcp style=mcp_chained
 SYSTEM: <system> 당신은 지속 가능한 도시 주택을 전문으로 하는 베테랑 건축가입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  Zuni Cafe 가격대가 어떻게 돼요?
+      오늘 밤 늦게까지 영업하나요?
+      야외 좌석이 있는지 알 수 있을까요?
+  S2  좋네요. 두 명으로 예약하고 싶어요.
+      정말 좋네요. 주차는 어디에 하면 될까요?
+      두 분이면 괜찮네요. 그 주차장 주소가 어떻게 돼요?
+  S3  안전한 주차장인가요?
+      그런데, 좀 더 자세히 알아보기 전에, Zuni Cafe는 강아지 동반이 가능한가요?
+      강아지를 데려갈 수 있는지 확인하고 싶어요.
+  S4  정말 다행이네요! 주차장 전화번호도 알려주세요. 혹시 몰라서요.
+      완벽하네요. 지금 있는 곳에서 Zuni Cafe까지 가는 길을 알려주실 수 있나요?
+      이해가 잘 되네요. 정말 도와주셔서 감사합니다!
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] Zuni Cafe 가격대가 어떻게 ⟨ret@1.41s⟩ 돼요?
 [  1.80s][moshi] 음, 지금 가격을 ⟦⚡SPAN@3.41s: (tool result) Zuni Cafe’s price range is $$$ which means entrees cost between thirty and sixty dollars.⟧ 빠르게 확인해 드릴게요… 주 메뉴는 보통 삼십 달러부터 육십 달러 정도예요.
 [  3.74s][user ] «backchannel» 그렇죠.

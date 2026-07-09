@@ -1,5 +1,6 @@
 # v3_mcp_02_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 weather.example.com에서 날씨 업데이트 좀 봐  | S2 아, 생각보다 춥네요. [sigh] 사실, 햇볕이 쨍쨍했으면  | S3 아마도요. 음, 내일 뉴욕에서 런던으로 가는 직항편이 있는지  | S4 흠, 유나이티드항공편이 괜찮은 것 같아요. 그걸 예약해 주세요
 
      0.00s  user  발화 시작: weather.example.com에서 날씨 업데이트 좀 봐 주세요.
      3.49s  <ret> 발화 (turn1 첫 프레임)

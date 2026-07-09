@@ -1,5 +1,6 @@
 # v3_safe_20_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 It's nowhere near the kitchen or b | S3 Like what? Is the alarm itself fau | S4 Home Depot sounds good. Do they ha
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
      4.30s  user  발화 끝

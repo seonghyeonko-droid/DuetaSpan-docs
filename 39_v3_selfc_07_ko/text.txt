@@ -2,6 +2,21 @@ v3_selfc_07_ko src=mcp style=mcp_selfcorrect
 SYSTEM: <system> 저는 북극에서 현장 연구를 수행한 빙하학자 마라 린드크비스트입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
+      길 안내도 보내 줄 수 있을까요?
+      주차는 가능한가요?
+  S2  애완동물 정책은 어떤가요?
+      200달러… 아, 6월 16일로 바꿔 줘.
+      건물 안에 헬스장이 있나요?
+  S3  옥상 테라스는 좋네요. 월세는 얼마인가요?
+      꽤 넓은 범위인데요. 더 높은 가격으로는 뭘 얻을 수 있나요?
+      그 가격에 유틸리티는 포함되어 있나요?
+  S4  알겠습니다. 그 동네는 어떤가요?
+      근처에 식료품점이 있나요?
+      편리하겠네요. 도움 주셔서 감사합니다.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] 6월 15일에 그랜드뷰 로프트에서 보여주실 수 있나요?
 [  3.82s][moshi] ⟨ret@3.66s⟩ 아, 예약을 ⟦⚡SPAN@5.34s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ 6월 15일 오후 2시에 그랜드뷰 로프트로 잡아 놨어.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}

@@ -2,6 +2,20 @@ v3_pause_16_en src=nq style=v1
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  So, I was reading this dystopian novel, and it got me thinking…
+      …but where did *Orwell* get the idea? Was it something he experienced?
+      I’ve heard it had something to do with his time in Spain?
+  S2  Surveillance, huh? Like, constant watching?
+      That sounds awful. Was it just the government doing it, or—
+      Did that experience directly inspire the character…
+  S3  …or was it more of a slow build?
+      A father figure… so, “Big Brother” isn’t about actual siblings?
+      That’s really interesting. So it's about control, not family?
+  S4  It’s a pretty scary concept, even today.
+      Do you think Orwell would be surprised by how relevant it still is?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] So, I was reading this dystopian novel, and it got me ⟨ret@3.75s⟩ thinking…
 [  4.07s][moshi] That’s a ⟦⚡SPAN@5.27s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by English author George Orwell.>⟧ very common reaction to powerful literature. The term “Big Brother” originates from George Orwell’s novel, *Nineteen Eighty-Four*, published in nineteen forty-nine.
 [ 14.64s][user ] …but where did *Orwell* get the idea? Was it something he experienced?

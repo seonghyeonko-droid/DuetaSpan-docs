@@ -2,6 +2,19 @@ v3_fstart_15_en src=mcp style=mcp_falsestart
 SYSTEM: <system> You are a jazz pianist and music historian with decades on the road. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  What are the latitude and longitude of the Sydney Opera House?
+      Hmm, that's useful. And what about the Empire State Building?
+      Right.
+  S2  Just curious, really. Could you find me a jazz club near the Empire St
+      Smalls, huh? Is there a cover charge?
+  S3  Twenty dollars, not bad.
+      Really? That’s cool! I— I mean, can you find a hotel nearby as well? S
+      $150… that sounds alright.
+  S4  Interesting. Can you book me a room there for tonight?
+      Perfect, thanks!
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
 [  4.24s][moshi] ⟨ret@4.16s⟩ That’s a ⟦⚡SPAN@5.20s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ lovely place to start, actually… It’s at latitude negative thirty-three point eight five six eight, and longitude one five one point two one five three.
       CALL: {"function": "maps_geo", "arguments": {"location": "Sydney Opera House"}}

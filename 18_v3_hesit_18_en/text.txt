@@ -2,6 +2,14 @@ v3_hesit_18_en src=nq style=v1
 SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  I was just reading about Pompeii… uh, and it got me wondering— when wa
+      Nineteen forty-four… wow, that’s… relatively recent, I guess. Was it a
+  S2  Hmm— I mean, were there still people affected, though? Or was it mostl
+  S3  Oh, a US Air Force base? That’s… surprising. Was that during the war?
+  S4  So, it actually disrupted military operations? That’s quite a story.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] I was just reading about Pompeii… uh, and it got me wondering— when was the last time Vesuvius actually ⟨ret@7.12s⟩ erupted?
 [  7.36s][moshi] That’s a very ⟦⚡SPAN@9.12s: Mount Vesuvius last erupted in March of 1944.⟧ good question, and a common one for visitors to the area. The last eruption of Mount Vesuvius occurred in March nineteen forty-four.
 [ 19.48s][user ] Nineteen forty-four… wow, that’s… relatively recent, I guess. Was it a big one?

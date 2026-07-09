@@ -2,6 +2,13 @@ v3_mcp_00_en src=mcp style=v1
 SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  Can you give me the coordinates for the Eiffel Tower in Paris?
+  S2  Okay, and can you find me hotels near there?
+  S3  What’s the Plaza Athénée like?
+  S4  Book me a room at the Raphael for one night.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.27s⟩ Paris?
 [  3.50s][moshi] Certainly, ⟦⚡SPAN@4.31s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ locating landmarks is something I do often. The Eiffel Tower's coordinates are forty-eight point eight five eight four degrees north, two point two nine four five degrees east.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}

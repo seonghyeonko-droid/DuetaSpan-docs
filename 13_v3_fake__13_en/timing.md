@@ -1,5 +1,6 @@
 # v3_fake__13_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 Hey, I was wondering, when is Demi | S2 Are there any singles released bef | S3 I think so. I'm a big fan. What ki | S4 Oh, okay. That makes sense. Thanks
 
      0.00s  user  발화 시작: Hey, I was wondering, when is Demi Lovato’s new album coming
      7.18s  user  발화 끝

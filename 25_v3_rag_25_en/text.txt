@@ -2,6 +2,13 @@ v3_rag_25_en src=hotpotqa style=v2
 SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  So, I was wondering, what sport did Jack Sock and Raffaella Reggi both
+  S2  Tennis, huh? Okay, but Reggi… I thought she retired a while back.
+  S3  Wait, two thousand sixteen—wasn’t Sock still pretty early in his caree
+  S4  So he was still playing while she was winding down. Interesting. Did e
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] So, I was wondering, what sport did Jack Sock and Raffaella Reggi both play?
 [  5.65s][moshi] That’s a good question—a lot of athletes cross over, you know.
 [  9.29s][moshi] ⟨ret@9.21s⟩ Let me ⟦⚡SPAN@10.57s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ quickly recall their shared athletic pursuit. They both competed as professional tennis players.

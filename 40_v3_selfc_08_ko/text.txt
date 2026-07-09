@@ -2,6 +2,16 @@ v3_selfc_08_ko src=mcp style=mcp_selfcorrect
 SYSTEM: <system> 당신은 콜럼버스 이전 미술을 전문으로 하는 열정적인 박물관 안내원입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  시카고에서 덴버 가는 버스, 세 명, 5월 10일에 보여 줘.
+      음, 5월 11일로 바꿔 줘.
+  S2  플릭스버스가 괜찮겠다. 세 자리 예약해 줘.
+      수하물 요금은 포함이야?
+  S3  알았어, 알아두니까 좋네.
+      그거 흥미롭네. 덴버에 콜럼버스 이전 유물 컬렉션이 있는 박물관이 있어?
+  S4  덴버 미술관이 가봐야 할 곳 같아.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] 시카고에서 덴버 가는 버스, 세 명, 5월 10일에 보여 ⟨ret@4.36s⟩ 줘.
 [  4.60s][moshi] 알아봤는데, ⟦⚡SPAN@6.36s: (tool result) Buses_3_FindBus returned three options: Greyhound, 8:00 AM, $150; FlixBus, 10:30 AM, $125; and W⟧ 버스가 세 개 있어요. 그레이하운드, 플릭스버스, 그리고 완데루인데, 가격은 125달러부터 175달러까지예요.
 [ 14.57s][user ] 음, 5월 11일로 바꿔 줘.

@@ -1,5 +1,6 @@
 # v3_noinfo_23_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 도쿄 작년 12월 24일 날씨가 어땠어? | S2 하나는 괜찮아 보이는데. 예약 가능한지 알아 봐 줘. | S3 아, 혹시 말차도 팔아? | S4 좋다. 거기까지 여기서 어떻게 가는 게 제일 빨라?
 
      0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
      2.65s  <ret> 발화 (turn1 첫 프레임)

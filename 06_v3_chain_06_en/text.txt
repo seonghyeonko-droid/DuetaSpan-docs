@@ -2,6 +2,13 @@ v3_chain_06_en src=mcp style=mcp_chained
 SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  Could you set the user agent to MyCustomBrowser version ten point five
+  S2  Great. Now, could you search for reviews of that browser?
+  S3  Hmm, limited extensions… what about Firefox?
+  S4  Okay, that sounds better. Can you set my default browser to Firefox?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
 [  4.58s][moshi] ⟨ret@4.51s⟩ Certainly, I can adjust ⟦⚡SPAN@6.43s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ your browser’s settings. Your browser is now identified as MyCustomBrowser version ten point five.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}

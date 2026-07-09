@@ -1,5 +1,6 @@
 # v3_rag_28_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 정부 부처에 대해 읽다가 궁금해졌어… 재향군인부(Departm | S2 1930년? 꽤 최근 같지 않아? 그 전에 재향군인 혜택은 없 | S3 근데 그 재향군인국이 새로운 혜택을 *만들* 권한이 있었어,  | S4 그럼 후버 부서는… 권한 면에서 한 단계 더 나아간 거네?
 
      0.00s  user  발화 시작: 정부 부처에 대해 읽다가 궁금해졌어… 재향군인부(Department of Veterans Affairs)는 
      7.73s  agent 발화 시작: 정말 좋은 질문이에요. 복무하신 분들을 지원하는 역사를 살펴보는 건 중요하죠.

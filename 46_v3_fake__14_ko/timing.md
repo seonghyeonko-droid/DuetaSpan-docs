@@ -1,5 +1,6 @@
 # v3_fake__14_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 My Love, My Life"를 누가 썼는지 아세요? | S2 그분이 영화를 위한 다른 곡도 쓰셨나요? | S3 아, “Dancing Queen”! 정말 명곡이죠! | S4 그렇다면 기존의 희곡이나 소설을 바탕으로 한 게 아니었군요?
 
      0.00s  user  발화 시작: My Love, My Life"를 누가 썼는지 아세요?
      2.60s  agent 발화 시작: 좋은 질문이세요. 정말 멋진 곡이죠.

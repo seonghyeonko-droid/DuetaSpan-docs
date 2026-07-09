@@ -1,5 +1,6 @@
 # v3_chain_05_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 Zuni Cafe 가격대가 어떻게 돼요? | S2 좋네요. 두 명으로 예약하고 싶어요. | S3 안전한 주차장인가요? | S4 정말 다행이네요! 주차장 전화번호도 알려주세요. 혹시 몰라서요
 
      0.00s  user  발화 시작: Zuni Cafe 가격대가 어떻게 돼요?
      1.41s  <ret> 발화 (turn1 첫 프레임)

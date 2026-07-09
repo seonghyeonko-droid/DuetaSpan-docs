@@ -1,5 +1,6 @@
 # v3_noinfo_23_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Hana sounds good. Can you see if t | S3 Oh, actually—do they serve matcha  | S4 That sounds wonderful. What’s the 
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
      3.29s  <ret> 발화 (turn1 첫 프레임)

@@ -2,6 +2,22 @@ v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  I was reading about the Du Plessis family and wondered, where does tha
+      So, it's French, but how did it get to South Africa? I thought I read 
+      And they were successful there? Did they become prominent?
+      Were there any… well, famous Du Plessis people? Anyone I might recogni
+  S2  Landdrost? What does that even mean?
+      So, kind of like a sheriff?
+      Interesting. Did the name change over time? Like, become more… Afrikaa
+  S3  So, it's still considered a French name, even after all that?
+      That makes sense. Do many people with that name still live in France t
+      Wow. That's quite a journey for a name.
+  S4  I— I mean, it’s a really cool story. I’m glad I asked.
+      Is there any connection between the Du Plessis name and any specific c
+      Fleurs-de-lis? That *is* French!
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] I was reading about the Du Plessis family and wondered, where does that name actually come from? It sounds… French, maybe?
 [  7.86s][moshi] That’s an interesting question, and a common one, actually. The name does have a fascinating history rooted in Europe.
 [ 13.70s][moshi] ⟨ret@13.30s⟩ Let’s explore ⟦⚡SPAN@14.58s: The surname Du Plessis is of French origin, derived from the Old French “du” meaning “of the” and “plessis,” d⟧ the origins of that surname— The name Du Plessis originates from France, meaning “of the fort” or “of the enclosed space.”

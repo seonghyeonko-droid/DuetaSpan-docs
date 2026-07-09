@@ -2,6 +2,13 @@ v3_rag_28_en src=nq style=v2
 SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  So, I was reading about government departments, and it got me wonderin
+  S2  Nineteen thirty? That seems… relatively recent, doesn’t it? Weren’t th
+  S3  But did that Bureau actually have the power to *create* new benefits, 
+  S4  So Hoover's department was a step up in terms of… agency, I guess?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] So, I was reading about government departments, and it got me wondering… when was the Department of Veterans Affairs actually created?
 [  7.92s][moshi] That’s a very good question, tracing the history of support for those who served is important.
 [ 12.95s][moshi] ⟨ret@12.57s⟩ Let’s ⟦⚡SPAN@13.85s: The United States Department of Veterans Affairs was established on July 21, 1930, by President Herbert Hoover⟧ pinpoint that date for you— The Department of Veterans Affairs was established on July twenty-first, nineteen thirty, by President Hoover.

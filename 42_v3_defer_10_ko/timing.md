@@ -1,5 +1,6 @@
 # v3_defer_10_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 프랑스 휴가 사진들 찾아 주시는데, 썸네일 말고 큰 사진으로  | S2 당연히 바로 보내 줄 수 있지. 엘리즈 뒤퐁에게 에펠탑 사진이 | S3 알아볼게. | S4 Okay, thanks.
 
      0.00s  user  발화 시작: 프랑스 휴가 사진들 찾아 주시는데, 썸네일 말고 큰 사진으로 보여 주세요.
      3.90s  <ret> 발화 (turn1 첫 프레임)

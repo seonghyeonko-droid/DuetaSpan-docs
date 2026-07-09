@@ -2,6 +2,13 @@ v3_mcp_03_ko src=mcp style=v1
 SYSTEM: <system> 당신은 중세 시대 대성당을 복원하는 석공입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  장바구니 iframe에서 결제 과정 시작해 주세요.
+  S2  주문 총액이 얼마예요?
+  S3  내일 아침에 택배를 예약해 주실 수 있나요?
+  S4  정말 감사합니다.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] 장바구니 iframe에서 결제 과정 시작해 주세요.
 [  3.93s][moshi] ⟨ret@3.69s⟩ 네, ⟦⚡SPAN@5.13s: (tool result) The checkout button in the shopping cart iframe was clicked successfully.⟧ 장바구니 안에서 결제 과정을 시작했습니다.
       CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}

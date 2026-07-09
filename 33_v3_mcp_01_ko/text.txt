@@ -2,6 +2,18 @@ v3_mcp_01_ko src=mcp style=v2
 SYSTEM: <system> 저는 서아프리카 무역 제국을 연구하는 역사가 오콘크워 교수입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
+      67개? 좀 적은 것 같은데. 리퍼비시 섹션은 확인했어?
+      좋아, 그게 낫네. 리퍼비시 아이폰 14 256기가 모델 현재 가격 좀 찾아줘.
+  S2  649달러… 흠. 아이폰 관련 프로모션은 있나?
+      그 프로모션이 리퍼비시 폰에도 적용돼?
+  S3  아이폰 14 퍼플 색상 재고 있는 가장 가까운 애플 스토어 찾아줘.
+      산타 모니카는 좀 멀어. 그럼 90210에서 10마일 이내 스토어는?
+  S4  완벽하네. 내일 영업시간 좀 확인해 줘.
+      좋아. 도움 많이 줬네. 고마워.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 ⟨ret@3.77s⟩ 줘.
 [  3.99s][moshi] 네, 애플 ⟦⚡SPAN@5.13s: (tool result) The tavily-map tool found 142 pages on apple.com, with products listed on 67 pages.⟧ 웹사이트 지도를 만들어 드릴 수 있어요— 그 도구가 애플 사이트에서 제품 목록을 보여주는 페이지가 67개 있다고 확인했어요.
 [  6.79s][user ] «backchannel» 어어.

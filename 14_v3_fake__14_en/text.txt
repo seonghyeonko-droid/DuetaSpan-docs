@@ -2,6 +2,15 @@ v3_fake__14_en src=nq style=v1
 SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a b
+      Oh, really? I always thought it was Benny Andersson.
+  S2  That makes sense, I suppose. Did he write any other songs for the movi
+  S3  Oh, “Dancing Queen”! That’s a classic!
+      Was he involved in writing the story for Mamma Mia?
+  S4  So it wasn’t based on a pre-existing play or novel?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a beautiful song.
 [  6.45s][moshi] That's a lovely question, and a wonderful piece of music.
 [ 10.20s][moshi] ⟨ret@9.88s⟩ Let me ⟦⚡SPAN@11.48s: Björn Ulvaeus wrote “My Love, My Life”, which featured in the musical Mamma Mia!.⟧ quickly check the songwriting credits for you. Björn Ulvaeus is credited with writing “My Love, My Life” for the Mamma Mia! musical.

@@ -1,5 +1,6 @@
 # v3_chain_06_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 사용자 에이전트를 MyCustomBrowser 버전 10.5로 | S2 좋아. 그럼 그 브라우저 리뷰 좀 찾아 줘. | S3 흠, 확장 기능이 제한적이네… 그럼 파이어폭스는 어때? | S4 좋아, 그게 더 나은 것 같아. 내 기본 브라우저를 파이어폭스
 
      0.00s  user  발화 시작: 사용자 에이전트를 MyCustomBrowser 버전 10.5로 설정해 줘.
      4.49s  user  발화 끝

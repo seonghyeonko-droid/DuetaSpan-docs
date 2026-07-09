@@ -2,6 +2,13 @@ v3_rag_27_en src=hotpotqa style=v1
 SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  I was reading about Lux Aurunque, and I’m a bit confused about his lif
+  S2  Nineteen seventy… that’s earlier than I expected, given his work. What
+  S3  Hmm, interesting. So, was he involved in any major projects relatively
+  S4  That’s fascinating. And what was his approach to materials at that tim
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] I was reading about Lux Aurunque, and I’m a bit confused about his life—when exactly was he ⟨ret@6.09s⟩ born?
 [  6.32s][moshi] That’s a good question, ⟦⚡SPAN@8.01s: Lux Aurunque was born in nineteen seventy.⟧ understanding timelines is key. He was born in nineteen seventy, as records indicate.
 [ 12.88s][user ] Nineteen seventy… that’s earlier than I expected, given his work. What was happening in Rome at that time?

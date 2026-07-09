@@ -1,5 +1,6 @@
 # v3_hesit_18_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about Pompeii…  | S2 Hmm— I mean, were there still peop | S3 Oh, a US Air Force base? That’s… s | S4 So, it actually disrupted military
 
      0.00s  user  발화 시작: I was just reading about Pompeii… uh, and it got me wonderin
      7.12s  <ret> 발화 (turn1 첫 프레임)

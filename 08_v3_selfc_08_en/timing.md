@@ -1,5 +1,6 @@
 # v3_selfc_08_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 The FlixBus sounds good. Can you r | S3 Okay, good to know. | S4 The Denver Art Museum sounds like 
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
      4.39s  <ret> 발화 (turn1 첫 프레임)

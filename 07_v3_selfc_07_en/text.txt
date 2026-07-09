@@ -2,6 +2,21 @@ v3_selfc_07_en src=mcp style=mcp_selfcorrect
 SYSTEM: <system> You are Mara Lindqvist, a glaciologist who has done fieldwork in the Arctic. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  Set up a viewing for me at The Grandview Lofts on June fifteenth.
+      That’s good. Can you send me directions?
+      Is there parking available?
+  S2  Perfect. What about pet policies?
+      Two hundred dollars… uh, actually, make that June sixteenth—
+      Is there a gym in the building?
+  S3  A rooftop terrace sounds nice. What’s the rent like?
+      That’s a pretty wide range. What does the higher end get you?
+      Are utilities included in that price?
+  S4  Okay, good to know. What’s the neighborhood like?
+      Are there any grocery stores nearby?
+      That sounds convenient. Thanks for all your help.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
 [  3.63s][moshi] ⟨ret@3.40s⟩ Certainly, ⟦⚡SPAN@4.44s: (tool result) A viewing at The Grandview Lofts is scheduled for June fifteenth at two PM.⟧ let’s see about arranging a visit. I’ve scheduled a viewing for you at The Grandview Lofts on June fifteenth at two PM.
       CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}

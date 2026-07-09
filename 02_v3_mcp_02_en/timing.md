@@ -1,5 +1,6 @@
 # v3_mcp_02_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Oh, that's… colder than I thought, | S3 Maybe. Um, could you check if ther | S4 Hmm, the United one sounds good. B
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
      3.54s  <ret> 발화 (turn1 첫 프레임)

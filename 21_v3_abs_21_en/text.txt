@@ -2,6 +2,24 @@ v3_abs_21_en src=squad2 style=abstain
 SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  How many senators are there in the French Senate?
+      Could you find out for me, then?
+      Wow, that’s a lot. What about the US Senate?
+      That's a big difference! Is the French Senate more powerful?
+  S2  Could you explain the powers of the French Senate?
+      So, they can change laws?
+      Do they have any other responsibilities besides laws?
+      Representing local authorities sounds interesting.
+  S3  Do they get to vote on everything?
+      Do they vote on everything the National Assembly does?
+      Shuttle diplomacy? What’s that?
+      So, if they disagree, what happens?
+  S4  And if *they* can’t agree?
+      Oh. So the National Assembly is more powerful?
+      That seems a bit unfair.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] How many senators are there in the French Senate?
 [  2.73s][moshi] ⟨ret@2.68s⟩ That’s an ⟦⚡SPAN@3.72s: (no information found)⟧ interesting question about French governance. I’m afraid I don’t have that specific number in my records right now. Perhaps we can look elsewhere?
 [ 10.68s][user ] Could you find out for me, then?

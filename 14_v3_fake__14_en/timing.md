@@ -1,5 +1,6 @@
 # v3_fake__14_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 That makes sense, I suppose. Did h | S3 Oh, “Dancing Queen”! That’s a clas | S4 So it wasn’t based on a pre-existi
 
      0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
      6.02s  user  발화 끝

@@ -1,5 +1,6 @@
 # v3_abs_21_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Could you explain the powers of th | S3 Do they get to vote on everything? | S4 And if *they* can’t agree?
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
      2.58s  user  발화 끝

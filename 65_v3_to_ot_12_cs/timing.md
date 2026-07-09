@@ -1,5 +1,6 @@
 # v3_to_ot_12_cs — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지  | S2 저기, 혹시 쓰레기 버리셨어요? | S3 죄송해요. 그가 솔로를 다르게 만들도록 특별히 요청을 받았다고 | S4 정말 놀랍네요! 완전히 그의 예술적인 선택이었군요. [happ
 
      0.00s  user  발화 시작: 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 아세요? 정말 멋진 솔로예요.
      5.00s  <ret> 발화 (turn1 첫 프레임)

@@ -1,5 +1,6 @@
 # v3_rag_25_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 So, I was wondering, what sport di | S2 Tennis, huh? Okay, but Reggi… I th | S3 Wait, two thousand sixteen—wasn’t  | S4 So he was still playing while she 
 
      0.00s  user  발화 시작: So, I was wondering, what sport did Jack Sock and Raffaella 
      5.37s  user  발화 끝

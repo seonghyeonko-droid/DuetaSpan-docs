@@ -2,6 +2,13 @@ v3_backg_17_ko src=nq style=v1
 SYSTEM: <system> 저는 해양 생물학자 엘레나 바스케스입니다. 산호초 생태계를 연구합니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  심박수가 정상적으로 얼마 정도 돼?
+  S2  그게 좀 높은 것 같은데. 진짜 그래?
+  S3  근데 운동 엄청 많이 하면 달라져?
+  S4  분리수거는 내놨어?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
 [  0.00s][user ] 심박수가 정상적으로 얼마 정도 ⟨ret@1.85s⟩ 돼?
 [  2.09s][moshi] 건강한 심박수는 보통 정해진 ⟦⚡SPAN@3.85s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 범위 안에 들어.
 [  5.28s][moshi] 보통 성인의 정상적인 심박수는 분당 육십 번에서 백 번 사이야.

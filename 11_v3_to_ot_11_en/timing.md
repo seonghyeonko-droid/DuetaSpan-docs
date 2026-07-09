@@ -1,5 +1,6 @@
 # v3_to_ot_11_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# EXAMINER(FDB-v2) 단계: S1 Do you know when the A’s were last | S2 Wait, was that during the playoffs | S3 Was it a home game for the A’s? | S4 Okay, good to know. Thanks, Dr. Va
 
      0.00s  user  발화 시작: Do you know when the A’s were last no-hit? I’m trying to set
      4.24s  <ret> 발화 (turn1 첫 프레임)
