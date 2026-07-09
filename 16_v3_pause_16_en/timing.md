@@ -1,56 +1,62 @@
 # v3_pause_16_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 So it wasn’t, like, a common sayin | S3 [laugh] That's kind of amazing, ac | S4 I was wondering if there’s a tool 
+# EXAMINER(FDB-v2) 단계: S1 So, I was reading this dystopian n | S2 The Gestapo and Stalin… that makes | S3 Did the book predict a lot of thin | S4 So, is “big brother” always a nega
 
      0.00s  user  발화 시작: So, I was reading this dystopian novel, and it got me thinki
-     4.77s  agent 발화 시작: It’s wonderful you’re exploring thought-provoking literature
-     4.77s  user  발화 끝
-     8.79s  agent 발화 끝
-     8.84s  user  발화 시작: …where did the term “Big Brother” actually come from? It fee
-    14.27s  <ret> 발화 (turn3 첫 프레임)
-    14.43s  agent 발화 시작: <ret> That’s a very interesting question. The phrase “Big Br
-    14.49s  user  발화 끝
-    15.23s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: The term "Big Brother" originates from George Orwell’s novel Nineteen 
-    18.90s  user  발화 시작: Yeah, yeah.
-    20.33s  user  발화 끝
-    20.49s  agent 발화 끝
-    21.53s  user  발화 시작: Nineteen Eighty-Four, right. I’ve heard that before, but I a
-    28.06s  user  발화 끝
-    28.24s  agent 발화 시작: Before the novel, the concept wasn't widely used in that spe
-    30.74s  user  발화 시작: Mm-hmm.
-    31.24s  user  발화 끝
-    34.57s  user  발화 시작: So it wasn’t, like, a common saying…
-    34.95s  agent 발화 끝
-    36.97s  user  발화 끝
-    37.52s  user  발화 시작: …or something people already understood?
-    40.21s  agent 발화 시작: No, it wasn’t. The novel popularized the phrase to represent
-    40.34s  user  발화 끝
-    42.45s  user  발화 시작: Yeah.
-    42.95s  user  발화 끝
-    45.28s  user  발화 시작: [laugh] That's kind of amazing, actually. One book, and now 
-    45.40s  agent 발화 끝
-    51.26s  user  발화 끝
-    51.36s  agent 발화 시작: It’s a testament to the power of storytelling and the impact
-    52.91s  user  발화 시작: Mm-hmm.
-    53.73s  user  발화 끝
-    55.33s  agent 발화 끝
-    55.44s  user  발화 시작: It makes you think, doesn’t it? About how easily things can…
-    59.36s  agent 발화 시작: It certainly does. Reflecting on these themes is a valuable 
-    59.56s  user  발화 끝
-    63.14s  user  발화 시작: I’m trying to be more mindful of my digital footprint, you k
-    63.15s  agent 발화 끝
-    68.18s  agent 발화 시작: That’s a very sensible approach. Protecting your privacy is 
-    68.38s  user  발화 끝
-    71.36s  user  발화 시작: Mm-hmm.
-    71.84s  user  발화 끝
-    72.85s  agent 발화 끝
-    72.89s  user  발화 시작: I was wondering if there’s a tool to help with that? To see 
-    77.31s  <ret> 발화 (turn21 첫 프레임)
-    77.63s  agent 발화 시작: <ret> DuckDuckGo, Disconnect, and Privacy Badger can help pr
-    77.80s  user  발화 끝
-    78.83s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.35s]: (tool result) DuckDuckGo Privacy Essentials blocks trackers; Disconnec
-    79.27s  user  발화 시작: Yeah.
-    79.77s  user  발화 끝
-    81.97s  agent 발화 끝
-    82.04s  user  발화 시작: Okay, that’s good to know. I’ll check those out. Thanks, Bra
-    85.74s  user  발화 끝
+     3.91s  <ret> 발화 (turn1 첫 프레임)
+     4.22s  agent 발화 시작: <ret> That’s a fascinating question, tracing the origins of 
+     4.36s  user  발화 끝
+     5.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: <Nineteen Eighty-Four is a dystopian novel published in 1949 by Englis
+     8.76s  agent 발화 시작: The term originates from George Orwell’s novel, *Nineteen Ei
+     8.90s  agent 발화 끝
+    15.10s  agent 발화 끝
+    15.34s  user  발화 시작: Nineteen forty-nine, wow. That's… earlier than I expected.
+    20.07s  user  발화 끝
+    20.09s  agent 발화 시작: It’s interesting how quickly a phrase can embed itself in th
+    25.24s  user  발화 시작: Yeah, yeah.
+    26.80s  user  발화 끝
+    27.04s  agent 발화 끝
+    28.08s  user  발화 시작: I guess so. Was Orwell thinking about someone specific when 
+    34.05s  <ret> 발화 (turn7 첫 프레임)
+    34.45s  agent 발화 시작: <ret> Orwell drew inspiration from various sources… The idea
+    34.52s  user  발화 끝
+    34.55s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.73s]: <The concept of Big Brother was inspired by the Gestapo and Joseph Sta
+    37.91s  user  발화 시작: Mm-hmm.
+    38.41s  user  발화 끝
+    43.24s  user  발화 시작: The Gestapo and Stalin… that makes a lot of sense…
+    43.54s  agent 발화 끝
+    47.09s  user  발화 끝
+    47.65s  user  발화 시작: …actually. It's a pretty chilling thought.
+    50.13s  agent 발화 시작: It certainly is. Orwell was deeply concerned with totalitari
+    50.28s  user  발화 끝
+    52.94s  user  발화 시작: Yeah.
+    53.39s  user  발화 끝
+    56.46s  user  발화 시작: Did the book predict a lot of things that came true, then?
+    56.58s  agent 발화 끝
+    59.74s  user  발화 끝
+    59.86s  agent 발화 시작: *Nineteen Eighty-Four* explored themes that resonate even to
+    62.21s  user  발화 시작: Mm-hmm.
+    62.93s  user  발화 끝
+    65.56s  agent 발화 끝
+    65.85s  user  발화 시작: I've heard about the telescreens. What exactly *were* those?
+    69.50s  <ret> 발화 (turn17 첫 프레임)
+    69.66s  agent 발화 시작: <ret> Telescreens were a key element… Telescreens were two-w
+    69.87s  user  발화 끝
+    70.54s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.12s]: <Telescreens are two-way televisions used for surveillance in the nove
+    77.31s  agent 발화 끝
+    77.33s  user  발화 시작: Constant surveillance… that's pretty scary. It feels a bit t
+    83.04s  agent 발화 시작: It’s understandable to feel that way. The book serves as a c
+    83.21s  user  발화 끝
+    87.00s  user  발화 시작: Mm-hmm.
+    87.68s  user  발화 끝
+    88.83s  user  발화 시작: So, is “big brother” always a negative thing, then? Can it e
+    88.83s  agent 발화 끝
+    93.94s  agent 발화 시작: It’s generally understood negatively, representing oppressiv
+    94.11s  user  발화 끝
+    96.67s  user  발화 시작: Yeah.
+    97.16s  user  발화 끝
+   101.14s  user  발화 시작: Hmm… like an older sibling looking out for you? That’s a dif
+   101.17s  agent 발화 끝
+   105.36s  agent 발화 시작: Precisely. Language is fluid, and meanings can evolve. It’s 
+   105.54s  user  발화 끝
+   110.83s  agent 발화 끝

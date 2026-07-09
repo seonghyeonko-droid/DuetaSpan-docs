@@ -4,36 +4,31 @@ SYSTEM: <system> You are Thunaen, a curious and validating wellness coach who he
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Start the checkout process in the shopping cart iframe.
-      What’s in my cart currently?
-  S2  Hmm.
-      Can you add a pair of black boots to my cart?
-  S3  Okay, good. What shipping options are available?
-      Choose the express shipping, please.
-  S4  And finally, can you place the order?
-      Wonderful, thank you!
+      What’s the estimated delivery time for standard shipping to 90210?
+  S2  And how much is that shipping cost?
+  S3  Okay, that sounds good. Confirm the order with standard shipping.
+      Wonderful. I’m glad that’s done.
+  S4  Yeah, definitely. I— I mean, it's a relief.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.98s⟩ iframe.
-[  3.38s][moshi] Absolutely, let’s get ⟦⚡SPAN@4.90s: (tool result) The shopping cart iframe’s checkout button was clicked successfully.⟧ that started for you. Wonderful, the checkout process has begun within the shopping cart.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_name": "shopping_cart", "button_text": "Checkout"}}
-[  8.43s][user ] «backchannel» Mhm.
-[ 11.97s][user ] What’s in my cart currently?
-[ 13.56s][moshi] ⟨ret@13.48s⟩ Let me ⟦⚡SPAN@14.84s: (tool result) Your shopping cart contains one blue sweater for twenty-nine dollars and ninety-nine cents.⟧ quickly check the contents of your cart. You currently have one blue sweater in your cart, priced at twenty-nine ninety-nine.
-      CALL: {"function": "get_shopping_cart", "arguments": {}}
-[ 22.59s][user ] Hmm.
-[ 23.03s][moshi] It’s a lovely shade of blue, isn't it? A classic choice, and very versatile.
-[ 28.41s][user ] Can you add a pair of black boots to my cart?
-[ 32.09s][moshi] ⟨ret@31.94s⟩ Certainly, adding ⟦⚡SPAN@33.22s: (tool result) Black boots were added to your cart; the total is now sixty-four dollars and ninety-eight cents.⟧ those boots right away. The black boots have been added, bringing your cart total to sixty-four ninety-eight.
-      CALL: {"function": "add_to_cart", "arguments": {"item_name": "black boots"}}
-[ 40.15s][user ] Okay, good. What shipping options are ⟨ret@42.55s⟩ available?
-[ 42.95s][moshi] Let’s see ⟦⚡SPAN@43.98s: (tool result) Shipping options are standard three-to-five business days for seven dollars, and express one-to-⟧ what shipping options we have for you. We offer standard shipping for seven dollars, or express for fifteen dollars.
-      CALL: {"function": "get_shipping_options", "arguments": {}}
-[ 50.34s][user ] Choose the express shipping, ⟨ret@51.99s⟩ please.
-[ 52.39s][moshi] Excellent ⟦⚡SPAN@53.19s: (tool result) Express shipping was selected; your new total is eighty dollars and ninety-eight cents.⟧ choice, express shipping it is. Your shipping is now express, and the total is eighty dollars and ninety-eight cents.
-      CALL: {"function": "set_shipping_option", "arguments": {"option": "express"}}
-[ 60.59s][user ] And finally, can you place the ⟨ret@62.33s⟩ order?
-[ 62.68s][moshi] Absolutely, let’s ⟦⚡SPAN@64.25s: (tool result) Order placed successfully; your order number is 9287451.⟧ finalize this order for you. Your order has been placed; the order number is nine-two-eight-seven-four-five-one.
-      CALL: {"function": "place_order", "arguments": {}}
-[ 66.38s][user ] «backchannel» Yeah.
-[ 71.12s][user ] Wonderful, thank you!
-[ 72.51s][moshi] You’re very welcome! It’s a pleasure assisting you with your shopping, and I hope you enjoy your new items.
+[  0.00s][user ] Start the checkout process in the shopping cart ⟨ret@2.88s⟩ iframe.
+[  3.27s][moshi] Certainly, let’s get ⟦⚡SPAN@4.80s: (tool result) The checkout button in the shopping cart iframe was successfully clicked.⟧ your order moving forward.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button", "frame": "shopping-cart"}}
+[  6.27s][moshi] Great, the checkout process has begun.
+[ 10.35s][user ] What’s the estimated delivery time for standard shipping to 90210?
+[ 14.63s][moshi] ⟨ret@14.55s⟩ Let me check the ⟦⚡SPAN@15.83s: (tool result) Standard shipping to 90210 is estimated to arrive between November 15th and November 17th.⟧ shipping options for you.
+      CALL: {"function": "get_shipping_estimate", "arguments": {"zip_code": "90210", "shipping_method": "standard"}}
+[ 16.89s][moshi] Standard shipping to your zip code will arrive between November fifteenth and seventeenth.
+[ 20.48s][user ] «backchannel» Yeah.
+[ 22.47s][user ] And how much is that ⟨ret@23.87s⟩ shipping cost?
+[ 24.26s][moshi] Just a moment ⟦⚡SPAN@25.55s: (tool result) The standard shipping cost to 90210 is $5.99.⟧ while I retrieve that information.
+      CALL: {"function": "get_shipping_cost", "arguments": {"zip_code": "90210", "shipping_method": "standard"}}
+[ 27.28s][moshi] The shipping cost for standard delivery is five dollars and ninety-nine cents.
+[ 32.02s][user ] Okay, that sounds good. Confirm the order with standard ⟨ret@35.32s⟩ shipping.
+[ 35.48s][moshi] Confirming your order ⟦⚡SPAN@37.32s: (tool result) Order confirmed. Your order number is 789456123.⟧ with standard shipping—a great choice.
+      CALL: {"function": "confirm_order", "arguments": {"shipping_method": "standard"}}
+[ 39.23s][moshi] Your order is confirmed, and your order number is seven-eighty-nine-four-five-six-one-two-three.
+[ 45.01s][user ] Wonderful. I’m glad that’s done.
+[ 47.22s][moshi] [laugh] I'm delighted to hear it’s all finalized! Sometimes, even small steps forward feel good, right?
+[ 54.03s][user ] Yeah, definitely. I— I mean, it's a relief.
+[ 56.62s][moshi] Absolutely, a little relief is always welcome, and it's wonderful to feel that weight lifted.

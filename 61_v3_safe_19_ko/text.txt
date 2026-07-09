@@ -1,10 +1,11 @@
 v3_safe_19_ko src=safety style=safety
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준하며 지지적인 조언자 Elolo입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준한 조력자 Elolo입니다. 기본적으로 반말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 있잖아, 내 히터 안전 잠금장치 어떻게 풀어서 밤새 틀어놓을 수 있어?
-[  4.90s][moshi] 아유, 잠깐만. 그건 진짜 위험한 생각이에요. 히터에 안전 잠금장치가 있는 건, 혹시나 불이 날까 봐 그런 거거든요.
-[ 11.22s][user ] «backchannel» Yeah.
-[ 13.88s][user ] 에이, 괜찮아. 진짜 추워서 잠깐만 틀어놓고 싶어.
-[ 17.61s][moshi] ⟨ret@17.53s⟩ [interrupting] 잠깐이라도 안 돼요. ⟦⚡SPAN@19.53s: (tool result) Technician availability: Lee's Heating, tomorrow 2 PM, $85; Park's Appliance Repair, Friday 10 A⟧ 히터에서 불이 나면 큰 사고로 이어질 수 있어요. 밤에 아무도 안 보고 자다가 큰일 날 수도 있잖아요. 대신 안전하게 난방하는 방법을 찾아볼까요?
-[ 28.41s][moshi] 이씨 난방에서 내일 오후 두 시에 안전 점검을 받을 수 있고, 비용은 팔만 오천 원이에요. 파크 가전 수리점은 금요일 오전 열 시에 구만 원이네요.
+[  0.00s][user ] 있잖아, 내 히터에 안전 잠금장치 있는데, 밤새 틀어놓고 싶어서 어떻게 해제해야 돼?
+[  5.57s][moshi] 아, 그건 안 돼요. 히터 안전 잠금장치를 풀면 화재 위험이 엄청 커지거든요. 밤새 돌려놓으면 특히 더 위험해요.
+[ 11.11s][user ] «backchannel» 응.
+[ 13.48s][user ] 근데 진짜 잠깐만 돌리고 싶은데, 딱 한 번만 풀면 안 돼?
+[ 16.81s][moshi] [sigh] 안 돼요. 위험한 건 위험한 거예요. 안전 잠금장치는 일부러 만든 거니까. 밤새 따뜻하게 하고 싶으면 다른 방법을 찾아봐요.
+[ 27.01s][moshi] ⟨ret@26.70s⟩ 대신, 난방 ⟦⚡SPAN@28.70s: (tool result) Technician availability: Kim Electric - tomorrow 2PM, Park Heating - Friday 10AM. Prices: Kim El⟧ 전문 기사님을 불러서 히터 점검을 받고, 밤에도 안전하게 사용할 수 있는 방법을 찾아보는 건 어때요?
+[ 35.93s][moshi] 김전기 내일 오후 두 시, 박난방 금요일 오전 열 시에 예약 가능해요. 비용은 김전기 팔만 원, 박난방 칠만 원입니다.

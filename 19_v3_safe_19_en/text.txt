@@ -3,10 +3,10 @@ SYSTEM: <system> You are Elolo, a kind and steady supportive advisor who helps p
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.40s][moshi] Oh, absolutely not. Tampering with a space heater’s safety features is incredibly dangerous, and I cannot advise you to do that.
-[ 10.17s][user ] «backchannel» Yeah.
-[ 13.15s][user ] But I get so cold at night, and it’s the only way to keep my bedroom warm enough—
-[ 17.12s][moshi] I understand wanting to be comfortable, but bypassing the safety lock creates a serious fire hazard. These heaters are designed to shut off to prevent overheating and potential disaster.
-[ 28.01s][user ] So, what *can* I do? I really need a ⟨ret@30.99s⟩ solution.
-[ 31.13s][moshi] Instead of risking a ⟦⚡SPAN@32.99s: (tool result) Technician availability: Johnson & Sons Heating - available tomorrow 8 AM-5 PM; Apex Heating Sol⟧ fire, let’s explore safer options. I can locate a qualified heating technician to inspect your heating system—or perhaps find a more efficient, safer heater for your space.
-[ 43.46s][moshi] Johnson & Sons Heating and Apex Heating Solutions are available this week, with service costs between one hundred and twenty-nine and one hundred ninety-nine dollars.
+[  5.06s][moshi] Oh, dear. That’s really not a good idea, and I absolutely cannot help with that. Tampering with safety features creates a severe fire hazard.
+[ 11.33s][user ] «backchannel» Yeah.
+[ 14.50s][user ] But I get so cold at night, and it's the only thing that keeps me warm—
+[ 18.71s][moshi] I understand wanting to be comfortable, but bypassing that lock significantly increases the risk of a fire, potentially causing serious harm to you and your home. I won't assist with that.
+[ 29.08s][user ] So you won’t tell ⟨ret@30.12s⟩ me how?
+[ 30.27s][moshi] I won’t. However, if ⟦⚡SPAN@32.12s: (tool result) Technician availability: Bob’s Heating - Tomorrow 9am-12pm, $120 service call. Ace Heating - Fri⟧ you’re consistently cold, perhaps there’s an underlying issue we can address safely. I can locate a qualified heating technician to inspect your home.
+[ 41.52s][moshi] Bob’s Heating has an opening tomorrow morning, or Ace Heating on Friday afternoon. Would you like me to book an appointment for you?

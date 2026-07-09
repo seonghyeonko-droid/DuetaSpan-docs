@@ -1,51 +1,52 @@
 v3_mcp_00_ko src=mcp style=v1
-SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 어려움을 겪는 사람들을 돕는 긍정적이고 지지적인 상담사 Nellara입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 대한 도움을 주는 긍정적이고 지지적인 상담사 Nellara입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  파리 에펠탑의 좌표를 알려줄 수 있을까요?
       음, 그 근처에 괜찮은 카페가 있을까요?
-      활기찬 분위기의 카페요.
-      혹시 거기 브런치 메뉴도 괜찮나요?
-  S2  브런치 메뉴가 있는지, 그리고 가격대는 어느 정도인지 궁금해요.
-      오, 괜찮네요. 그럼 거기까지 가는 가장 빠른 길을 알려주세요. 지금 출발한다고 가정하고요.
-      25분이면 걸을 만하네요. 혹시 길에 다른 볼거리도 있나요?
-  S3  샹 드 마르스 공원… 거긴 넓은 잔디밭이 있는 곳이죠?
-      날씨가 좋으면 꼭 들러봐야겠네요.
-      혹시 지금 날씨는 어떤가요?
-  S4  20도면 겉옷을 챙겨가는 게 좋겠네요.
-      알겠습니다. 알려주셔서 정말 고마워요.
-      네, 감사합니다.
+      활기찬 곳이 좋겠어요. 사람들이 많고, 뭔가 분위기 있는 곳.
+  S2  르 카페 콘스탄, 거기가 좋겠네요. 거기까지 가는 길을 알려줄 수 있을까요?
+      네, 걸어서 가는 길을 알려주세요.
+      잠깐만요, 혹시 그 카페에 와이파이가 있나요?
+  S3  네, 좋아요. 계속해주세요.
+      혹시 그 카페에서 브런치를 먹을 수 있을까요? 메뉴가 궁금하네요.
+      팬케이크가 맛있겠네요.
+  S4  네, 길 안내 계속해주세요.
+      알겠습니다.
+      네, 잘 알겠습니다. 감사합니다!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 파리 에펠탑의 좌표를 알려줄 수 ⟨ret@2.45s⟩ 있을까요?
-[  2.69s][moshi] 물론이죠, ⟦⚡SPAN@4.13s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ 에펠탑의 좌표를 찾아드릴게요. 에펠탑의 위도는 48.8584, 경도는 2.2945입니다.
-[  7.51s][user ] «backchannel» Right.
-[ 10.69s][user ] 음, 그 근처에 괜찮은 카페가 있을까요?
-[ 13.57s][moshi] 네, 에펠탑 근처에는 다양한 카페가 있어요. 어떤 분위기를 선호하시나요? 조용하고 아늑한 곳을 원하시는지, 아니면 활기찬 분위기를 좋아하시는지 알려주시면 더 정확하게 추천해 드릴 수 있을 것 같아요.
-[ 25.95s][user ] 활기찬 분위기의 카페요.
-[ 27.65s][moshi] ⟨ret@27.58s⟩ 활기찬 분위기라면, 몇 ⟦⚡SPAN@29.58s: (tool result) Cafe Constant is 0.3 miles from the Eiffel Tower, has 4.2 stars, and is open until 11 PM.⟧ 군데 추천해 드릴 수 있어요. 카페 콘스탄이 에펠탑에서 0.3마일 거리에 있고, 평점은 4.2점이며, 밤 11시까지 영업합니다.
-[ 35.04s][user ] «backchannel» Oh.
-[ 37.55s][user ] 혹시 거기 브런치 메뉴도 괜찮나요?
-[ 39.74s][moshi] «interrupted» 아, 브런치 메뉴에 대해서는—
-[ 40.99s][user ] «interrupts_prev» 브런치 메뉴가 있는지, 그리고 가격대는 어느 정도인지 ⟨ret@44.54s⟩ 궁금해요.
-[ 44.93s][moshi] 카페 콘스탄은 ⟦⚡SPAN@46.54s: (tool result) Cafe Constant's brunch menu includes croissants for 5 euros and eggs benedict for 22 euros.⟧ 브런치 메뉴도 제공하고, 가격대는 20유로에서 30유로 정도입니다.
-[ 50.23s][moshi] 카페 콘스탄의 브런치 메뉴에는 크루아상이 5유로, 에그 베네딕트가 22유로입니다.
-[ 53.37s][user ] «backchannel» Yeah.
-[ 55.97s][user ] 오, 괜찮네요. 그럼 거기까지 가는 가장 빠른 길을 알려주세요. 지금 출발한다고 ⟨ret@61.84s⟩ 가정하고요.
-[ 62.15s][moshi] 지금 ⟦⚡SPAN@63.04s: (tool result) The fastest route to Cafe Constant is 1.2 miles, estimated time is 25 minutes by walking.⟧ 출발한다고 가정하고, 가장 빠른 길을 찾아드릴게요. 카페 콘스탄까지 가장 빠른 길은 1.2마일이고, 도보로 약 25분 정도 걸립니다.
-      CALL: {"function": "maps_route", "arguments": {"start": "current location", "end": "Cafe Constant, Paris"}}
-[ 71.91s][user ] 25분이면 걸을 만하네요. 혹시 길에 다른 볼거리도 있나요?
-[ 75.89s][moshi] 네, 가는 길에 센 강변을 따라 걷는다면 아름다운 풍경을 감상할 수 있습니다. 또, 샹 드 마르스 공원을 지나가게 되는데, 거기서 에펠탑을 더욱 멋지게 감상할 수 있습니다.
-[ 86.32s][user ] 샹 드 마르스 공원… 거긴 넓은 잔디밭이 있는 곳이죠?
-[ 90.02s][moshi] 맞아요, 넓은 잔디밭이 있어서 피크닉을 즐기기에도 좋아요. 날씨가 좋다면 잠시 쉬어가시는 것도 좋을 것 같아요.
-[ 98.40s][user ] 날씨가 좋으면 꼭 들러봐야겠네요.
-[100.68s][moshi] 날씨가 좋으면 정말 좋을 거예요. 샹 드 마르스 공원에서 여유로운 시간을 보내시는 걸 추천합니다.
-[106.52s][user ] 혹시 지금 날씨는 ⟨ret@108.33s⟩ 어떤가요?
-[108.72s][moshi] ⟦⚡SPAN@109.37s: (tool result) The current weather in Paris is 20 degrees Celsius, partly cloudy.⟧ 지금 파리의 날씨를 확인해 드릴게요. 현재 파리의 날씨는 20도이고, 부분적으로 흐립니다.
-      CALL: {"function": "weather_lookup", "arguments": {"location": "Paris"}}
-[114.53s][user ] 20도면 겉옷을 챙겨가는 게 좋겠네요.
-[117.38s][moshi] 네, 겉옷을 챙겨가시면 좋을 것 같아요. 특히 저녁에는 조금 쌀쌀할 수 있으니 가벼운 재킷 정도는 챙기시는 게 좋겠습니다.
-[124.85s][user ] 알겠습니다. 알려주셔서 정말 고마워요.
-[127.75s][moshi] 천만에요. 즐거운 파리 여행 되세요! 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
-[133.59s][user ] 네, 감사합니다.
+[  0.00s][user ] 파리 에펠탑의 좌표를 알려줄 수 ⟨ret@2.54s⟩ 있을까요?
+[  2.78s][moshi] 에펠탑의 ⟦⚡SPAN@4.54s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ 정확한 위치를 찾아드릴게요. 에펠탑의 위도는 48.8584, 경도는 2.2945입니다.
+[  8.35s][user ] «backchannel» 그렇죠.
+[ 11.88s][user ] 음, 그 근처에 괜찮은 카페가 있을까요?
+[ 14.87s][moshi] 물론이죠. 어떤 분위기의 카페를 찾으세요? 조용하고 아늑한 곳을 원하시나요, 아니면 활기찬 곳을 선호하시나요?
+[ 22.20s][user ] 활기찬 곳이 좋겠어요. 사람들이 많고, 뭔가 분위기 있는 곳.
+[ 26.60s][moshi] ⟨ret@26.53s⟩ 활기찬 ⟦⚡SPAN@27.65s: (tool result) Le Café Constant is a lively café 400 meters from the Eiffel Tower, with a 4.2-star rating and 1⟧ 분위기의 카페를 찾아볼게요. 에펠탑에서 400미터 거리에 있는 '르 카페 콘스탄'이 활기찬 분위기의 카페인데, 평점이 4.2점이고 리뷰가 1200개나 있어요.
+      CALL: {"function": "maps_search", "arguments": {"query": "활기찬 카페", "latitude": 48.8584, "longitude": 2.2945, "radius": "500m"}}
+[ 33.76s][user ] «backchannel» 와.
+[ 36.19s][user ] 르 카페 콘스탄, 거기가 좋겠네요. 거기까지 가는 길을 알려줄 수 있을까요?
+[ 41.24s][moshi] ⟨ret@41.16s⟩ 물론입니다. 지금 ⟦⚡SPAN@42.60s: (tool result) Navigation to Le Café Constant is estimated to take 6 minutes walking, 3 minutes by bike, or 7 m⟧ 바로 길 안내를 시작할게요. 르 카페 콘스탄까지 걸어서 6분, 자전거로 3분, 자동차로 7분 정도 걸립니다. 지금 바로 길 안내를 시작할까요?
+      CALL: {"function": "maps_navigate", "arguments": {"destination": "Le Café Constant", "latitude": 48.8584, "longitude": 2.2945}}
+[ 47.02s][user ] «backchannel» 네.
+[ 51.97s][user ] 네, 걸어서 가는 길을 알려주세요.
+[ 54.63s][moshi] «interrupted» 좋아요. 그럼 지금부터 길 안내를 시작합니다. 첫 번째 길을 우회전하세요—
+[ 59.09s][user ] «interrupts_prev» 잠깐만요, 혹시 그 카페에 와이파이가 ⟨ret@61.97s⟩ 있나요?
+[ 62.13s][moshi] 아, ⟦⚡SPAN@62.93s: (tool result) Le Café Constant offers free Wi-Fi to all customers.⟧ 와이파이 정보를 확인해 드릴게요.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJ0w3B3K-sEmsRzNqJ_d4gH44", "attribute": "wifi"}}
+[ 64.27s][moshi] 네, 르 카페 콘스탄에서는 고객에게 무료 와이파이를 제공하고 있습니다. 다시 길 안내를 계속할까요?
+[ 70.11s][user ] 네, 좋아요. 계속해주세요.
+[ 71.67s][moshi] «interrupted» 좋습니다. 다시 길 안내를 시작하면, 첫 번째 길을 우회전하세요. 그리고—
+[ 75.88s][user ] «interrupts_prev» 혹시 그 카페에서 브런치를 먹을 수 있을까요? 메뉴가 ⟨ret@80.33s⟩ 궁금하네요.
+[ 80.57s][moshi] 브런치 메뉴도 확인해 ⟦⚡SPAN@82.33s: (tool result) Le Café Constant’s brunch menu includes croissants for €3, eggs benedict for €12, and pancakes f⟧ 드릴 수 있습니다. 잠시만 기다려주세요.
+      CALL: {"function": "maps_menu", "arguments": {"place_id": "ChIJ0w3B3K-sEmsRzNqJ_d4gH44", "menu_type": "brunch"}}
+[ 84.17s][moshi] 르 카페 콘스탄의 브런치 메뉴에는 크루아상이 3유로, 에그 베네딕트가 12유로, 팬케이크가 8유로에 판매되고 있습니다.
+[ 92.80s][user ] 팬케이크가 맛있겠네요.
+[ 94.27s][moshi] 팬케이크는 많은 사람들이 좋아하는 메뉴입니다. 길 안내를 계속할까요?
+[ 98.76s][user ] 네, 길 안내 계속해주세요.
+[100.71s][moshi] 좋습니다. 그럼 다시 길 안내를 시작할게요. 지금부터 200미터 직진하세요.
+[105.92s][user ] 알겠습니다.
+[106.60s][moshi] 좌회전하시면 르 카페 콘스탄이 보일 거예요.
+[110.14s][user ] 네, 잘 알겠습니다. 감사합니다!
+[112.20s][moshi] 천만에요. 즐거운 시간 보내세요! 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.

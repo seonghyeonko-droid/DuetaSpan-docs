@@ -1,28 +1,26 @@
 # v3_mcp_04_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 That was fast. Um, can you check i | S3 It is, but… that feels a bit aggre | S4 Yeah, you’re right. Let’s switch i
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, is that going to affect how w | S3 But… will that make sites block me | S4 Okay, could you change it back to 
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.72s  user  발화 끝
-     4.73s  <ret> 발화 (turn1 첫 프레임)
-     5.04s  agent 발화 시작: <ret> Certainly. The user agent has been updated as requeste
-     5.77s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.18s]: (tool result) The user agent is now set to SuperCrawler version 10.1.
-     9.22s  user  발화 시작: Mhm.
-     9.71s  user  발화 끝
-    13.99s  user  발화 시작: That was fast. Um, can you check if that change was successf
-    14.21s  agent 발화 끝
-    20.85s  <ret> 발화 (turn4 첫 프레임)
-    21.08s  agent 발화 시작: <ret> The website confirms the user agent is now SuperCrawle
-    21.22s  user  발화 끝
-    22.61s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.37s]: (tool result) The website reports the user agent as SuperCrawler versi
-    28.38s  user  발화 시작: It is, but… that feels a bit aggressive, doesn’t it? Maybe s
-    28.45s  agent 발화 끝
-    33.71s  user  발화 끝
-    33.95s  agent 발화 시작: [laugh] It can feel that way when we’re testing things. Perh
-    42.06s  agent 발화 끝
-    42.70s  user  발화 시작: Yeah, you’re right. Let’s switch it back to the default.
-    45.39s  <ret> 발화 (turn8 첫 프레임)
-    45.46s  agent 발화 시작: <ret> The user agent is now back to the default setting. Som
-    45.61s  user  발화 끝
-    46.59s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.23s]: (tool result) The user agent is now set to the default browser setting
-    52.69s  agent 발화 끝
+     4.26s  <ret> 발화 (turn1 첫 프레임)
+     4.53s  user  발화 끝
+     4.57s  agent 발화 시작: <ret> Certainly, I can adjust that for you. Your browser is 
+     5.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.77s]: (tool result) The browser user agent is now set to SuperCrawler versio
+     7.82s  user  발화 시작: Mhm.
+     8.46s  user  발화 끝
+    11.55s  user  발화 시작: Hmm, is that going to affect how websites see me?
+    11.70s  agent 발화 끝
+    14.60s  agent 발화 시작: It absolutely will— websites will receive information identi
+    14.78s  user  발화 끝
+    21.35s  user  발화 시작: But… will that make sites block me?
+    21.37s  agent 발화 끝
+    24.26s  user  발화 끝
+    24.39s  agent 발화 시작: Some sites may block crawlers, yes. It depends on their poli
+    30.18s  agent 발화 끝
+    30.85s  user  발화 시작: Okay, could you change it back to the default then, please?
+    33.65s  <ret> 발화 (turn8 첫 프레임)
+    33.73s  agent 발화 시작: <ret> Of course, let's revert to the standard settings. The 
+    33.90s  user  발화 끝
+    34.15s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.20s]: (tool result) The browser user agent has been reset to its default set
+    43.33s  agent 발화 끝

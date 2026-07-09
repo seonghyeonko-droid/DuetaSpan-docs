@@ -1,56 +1,48 @@
 # v3_fake__13_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 Yeah, that was a good one. But wha | S3 What about a tour to go with the a | S4 Perfect. Thanks for all the info, 
+# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 Oh, July! So the single came out b | S3 What about her other albums? Were  | S4 I suppose so. I’m trying to get a 
 
-     0.00s  user  발화 시작: I was wondering, when is Demi Lovato releasing her new album
-     5.70s  <ret> 발화 (turn1 첫 프레임)
-     5.94s  agent 발화 시작: <ret> It’s exciting to anticipate new music, isn't it? I can
-     5.98s  user  발화 끝
-     7.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: Demi Lovato’s fifth studio album, *Confident*, was released in October
-    10.90s  agent 발화 시작: *Confident* came out in October of twenty fifteen. Do you kn
-    11.08s  agent 발화 끝
-    14.76s  user  발화 시작: Uh-huh.
-    15.30s  user  발화 끝
-    16.74s  agent 발화 끝
-    16.79s  user  발화 시작: Wow, 2015? That feels like ages ago! Is she coming out with 
-    22.89s  <ret> 발화 (turn5 첫 프레임)
-    23.20s  agent 발화 시작: <ret> Time does seem to fly by, doesn’t it? It’s wonderful y
-    23.22s  user  발화 끝
-    23.45s  ⚡SPAN 주입 [d'=0.56s / d_lead=5.37s]: Demi Lovato released the single “Sorry Not Sorry” in July 2017.
-    28.57s  agent 발화 시작: She released “Sorry Not Sorry” in July of twenty seventeen. 
-    28.57s  agent 발화 끝
-    34.76s  user  발화 시작: Yeah, that was a good one. But what about a full album— anyt
-    34.86s  agent 발화 끝
-    39.14s  <ret> 발화 (turn8 첫 프레임)
-    39.30s  agent 발화 시작: <ret> It’s good to focus on the big picture, isn't it? Let's
-    39.43s  user  발화 끝
-    41.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: Demi Lovato's eighth studio album, *Dancing with the Devil… the Art of
-    43.14s  agent 발화 끝
-    43.15s  agent 발화 시작: Her latest album, *Dancing with the Devil*, was released in 
-    46.22s  user  발화 시작: Uh-huh.
-    46.72s  user  발화 끝
-    48.31s  agent 발화 시작: It seems like she’s been quite busy. It’s important to remem
-    48.34s  agent 발화 끝
-    52.19s  user  발화 시작: What about a tour to go with the album? Is she touring at al
-    52.94s  agent 발화 끝
-    55.80s  <ret> 발화 (turn13 첫 프레임)
-    56.12s  agent 발화 시작: <ret> A tour would be a wonderful way to experience the musi
-    56.17s  user  발화 끝
-    57.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.24s]: (tool result) Demi Lovato is on tour in 2024. Dates run from September
-    61.16s  agent 발화 시작: Demi Lovato is touring in twenty twenty-four, from September
-    61.36s  agent 발화 끝
-    66.73s  agent 발화 끝
-    68.57s  user  발화 시작: That’s great! Where does the tour start—what’s the first cit
-    73.01s  <ret> 발화 (turn16 첫 프레임)
-    73.09s  agent 발화 시작: <ret> It's lovely to have something to look forward to. It i
-    73.19s  user  발화 끝
-    75.01s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.58s]: The Eiffel Tower, completed in 1889, is a wrought-iron lattice tower o
-    77.49s  agent 발화 시작: The tour begins in Inglewood, if that helps. It’s wonderful 
-    77.67s  agent 발화 끝
-    79.72s  user  발화 시작: Mm-hmm.
-    80.22s  user  발화 끝
-    81.89s  agent 발화 끝
-    82.80s  user  발화 시작: Perfect. Thanks for all the info, Runana.
-    85.61s  agent 발화 시작: You’re very welcome. Remember, nurturing your enthusiasm is 
-    85.66s  user  발화 끝
-    91.11s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering, when is Demi Lovato’s new album coming out?
+     6.45s  <ret> 발화 (turn1 첫 프레임)
+     6.58s  user  발화 끝
+     6.68s  agent 발화 시작: <ret> It’s exciting to anticipate new music, isn’t it?
+     8.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.05s]: Demi Lovato’s fifth studio album, *Confident*, was released in October
+     9.54s  agent 발화 시작: Demi Lovato’s new album, *Confident*, came out in October of
+     9.74s  agent 발화 끝
+    14.63s  user  발화 시작: October… okay, good to know. Is that the one with "Cool for 
+    14.66s  agent 발화 끝
+    19.64s  <ret> 발화 (turn4 첫 프레임)
+    20.03s  agent 발화 시작: <ret> That album certainly marked a shift in her sound, didn
+    20.24s  user  발화 끝
+    20.84s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.65s]: "Cool for the Summer" was released as the lead single from *Confident*
+    23.58s  agent 발화 시작: Yes, “Cool for the Summer” was the lead single from *Confide
+    23.67s  agent 발화 끝
+    30.34s  agent 발화 끝
+    30.79s  user  발화 시작: Oh, July! So the single came out before the album. That make
+    35.63s  agent 발화 시작: It’s wonderful when an artist’s vision comes together so bea
+    35.79s  user  발화 끝
+    38.82s  user  발화 시작: What about her other albums? Were those also released in the
+    39.51s  agent 발화 끝
+    42.31s  <ret> 발화 (turn9 첫 프레임)
+    42.54s  agent 발화 시작: <ret> Well, that's a lovely question; let’s explore her disc
+    42.75s  user  발화 끝
+    44.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: Demi Lovato’s debut album, *Don’t Forget*, was released on September 2
+    47.55s  agent 발화 시작: Her debut album, *Don’t Forget*, was released on September t
+    47.68s  agent 발화 끝
+    49.64s  user  발화 시작: Mm-hmm.
+    50.04s  user  발화 끝
+    52.63s  <ret> 발화 (turn12 첫 프레임)
+    53.03s  agent 발화 시작: <ret> It's interesting how artists often have patterns in th
+    53.19s  agent 발화 끝
+    54.63s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.58s]: The giant squid is a deep-sea dweller and one of the largest invertebr
+    57.39s  agent 발화 시작: Sometimes it’s a conscious choice, and other times it just h
+    57.60s  agent 발화 끝
+    62.34s  agent 발화 끝
+    62.45s  user  발화 시작: So 2008 and 2015… a pretty big gap between the first and fif
+    69.02s  user  발화 끝
+    69.28s  agent 발화 시작: Growth as an artist often requires that kind of space and ex
+    75.10s  agent 발화 끝
+    75.12s  user  발화 시작: I suppose so. I’m trying to get a sense of how prolific she 
+    79.80s  user  발화 끝
+    79.99s  agent 발화 시작: It's admirable that you're taking the time to appreciate her
+    84.34s  agent 발화 끝

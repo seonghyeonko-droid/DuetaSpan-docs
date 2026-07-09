@@ -4,56 +4,61 @@ SYSTEM: <system> You are Nellara, a upbeat and supportive counselor who helps pe
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Can you give me the coordinates for the Eiffel Tower in Paris?
-      That’s helpful, thanks. I’m planning a trip there next month.
-      I was wondering, what's the weather usually like there in May?
-      Hmm, twelve days of rain… that’s a bit much.
-  S2  Maybe. I’m going with a friend, and we’re both pretty nervous about na
-      It is. We’re hoping to find some walking tours, maybe something focuse
-      Oh, those sound amazing! "Montmartre's Hidden Corners" – that one soun
-  S3  Do any of those tours offer a discount for students?
-      Wonderful! That'll help a lot.
-      I’m also trying to find a good little bistro near the Eiffel Tower – s
-      That sounds perfect! Is it easy to get to on foot from the tower?
-  S4  Excellent. This is all so helpful, Nellara. I feel much better prepare
-      I think I just need to book the tour now, then.
-      Fantastic! Thank you so much, Nellara.
+      Hmm, and how about the Statue of Liberty?
+      That’s good to know. I’m planning a trip—
+      Do you think it’s better to visit in the spring or fall?
+  S2  Fall sounds nice. I’m hoping to meet new people.
+      I’m thinking of joining some walking tours.
+      Right. I'm a little anxious though, about making conversation.
+      It’s just… I’m not very good at small talk.
+  S3  That’s a good point. What if they don’t seem interested?
+      Easier said than done, I guess.
+      I suppose so. Are there any apps that help with this?
+      Bumble BFF? I’ve heard of Bumble, but not that.
+  S4  Oh, interesting. Is it popular?
+      Wow, that *is* popular. Okay, that sounds promising.
+      Yeah, maybe. I’m also worried about feeling lonely.
+      I just want to have a really good trip.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.29s⟩ Paris?
-[  3.53s][moshi] ⟦⚡SPAN@4.57s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ Certainly! The Eiffel Tower’s coordinates are 48.8584 latitude and 2.2945 longitude.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.45s⟩ Paris?
+[  3.68s][moshi] ⟦⚡SPAN@4.73s: (tool result) The Eiffel Tower is located at 48.8584° N, 2.2945° E.⟧ Certainly! The Eiffel Tower’s coordinates are 48.8584 degrees North, 2.2945 degrees East.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[  6.24s][user ] «backchannel» Exactly.
-[ 12.12s][user ] That’s helpful, thanks. I’m planning a trip there next month.
-[ 15.99s][moshi] That sounds lovely! Paris is always a good idea, especially in the spring.
-[ 21.75s][user ] I was wondering, what's the weather usually like there in May?
-[ 25.88s][moshi] ⟨ret@25.71s⟩ May in ⟦⚡SPAN@26.91s: (tool result) The average high temperature in Paris in May is 19 degrees Celsius, with 12 days of rain.⟧ Paris is quite pleasant. The average high is nineteen degrees Celsius, and you can expect rain on twelve days.
-      CALL: {"function": "weather_forecast", "arguments": {"location": "Paris", "date": "May"}}
-[ 34.34s][user ] Hmm, twelve days of rain… that’s a bit much.
-[ 38.15s][moshi] It's good to be prepared, though! Packing a light raincoat might be a wise idea.
-[ 43.94s][user ] Maybe. I’m going with a friend, and we’re both pretty nervous about navigating a new city.
-[ 49.37s][moshi] It’s completely normal to feel that way! Exploring a new place can be a little daunting.
-[ 56.34s][user ] It is. We’re hoping to find some walking tours, maybe something focused on hidden gems.
-[ 62.48s][moshi] ⟨ret@62.24s⟩ I found ⟦⚡SPAN@63.92s: (tool result) Three walking tours match your criteria: “Secret Paris”, “Montmartre’s Hidden Corners”, and “Par⟧ three walking tours: “Secret Paris,” “Montmartre’s Hidden Corners,” and “Parisian Passages.”
-      CALL: {"function": "tour_search", "arguments": {"location": "Paris", "type": "walking", "keywords": "hidden gems"}}
-[ 64.98s][user ] «backchannel» Okay.
-[ 69.97s][user ] Oh, those sound amazing! "Montmartre's Hidden Corners" – that one sounds perfect.
-[ 75.25s][moshi] That area is truly charming! It’s full of artistic history and little cafes.
-[ 82.80s][user ] Do any of those tours offer a discount for students?
-[ 86.83s][moshi] —it's a very popular spot.
-[ 88.90s][moshi] ⟨ret@88.50s⟩ ⟦⚡SPAN@89.46s: (tool result) “Montmartre’s Hidden Corners” offers a ten percent student discount with a valid ID.⟧ Let me check student discounts for those tours.
-      CALL: {"function": "tour_details", "arguments": {"tour_name": "Montmartre’s Hidden Corners", "discount_type": "student"}}
-[ 92.23s][moshi] Good news! "Montmartre's Hidden Corners" has a ten percent discount with student ID.
-[ 98.45s][user ] Wonderful! That'll help a lot.
-[101.32s][moshi] I'm glad I could help with that. It’s always nice to save a little money.
-[106.60s][user ] I’m also trying to find a good little bistro near the Eiffel Tower – somewhere not too touristy.
-[112.87s][moshi] ⟨ret@112.55s⟩ I found ⟦⚡SPAN@113.91s: (tool result) “Le Bistro du 7ème” is a highly-rated bistro 500 meters from the Eiffel Tower, known for its loc⟧ a bistro for you. “Le Bistro du 7ème” is five hundred meters from the tower, popular with locals.
-      CALL: {"function": "restaurant_search", "arguments": {"location": "near Eiffel Tower, Paris", "cuisine": "bistro", "ambiance": "not touristy"}}
-[122.12s][user ] That sounds perfect! Is it easy to get to on foot from the tower?
-[126.53s][moshi] It is! It’s about a ten-minute walk, mostly along quiet side streets.
-[131.92s][user ] Excellent. This is all so helpful, Nellara. I feel much better prepared now.
-[137.33s][moshi] That makes me so happy to hear! Feeling prepared is half the battle when travelling.
-[143.51s][user ] I think I just need to book the tour now, then.
-[145.84s][moshi] ⟨ret@145.76s⟩ I can book ⟦⚡SPAN@147.76s: (tool result) Your booking for “Montmartre’s Hidden Corners” is confirmed for two people, with a ten percent s⟧ that for you now. Your tour is booked! Confirmation number is XP729L.
-      CALL: {"function": "tour_booking", "arguments": {"tour_name": "Montmartre’s Hidden Corners", "number_of_people": "2", "discount_type": "student"}}
-[155.96s][user ] Fantastic! Thank you so much, Nellara.
-[159.59s][moshi] You are very welcome! Have a wonderful trip to Paris, and enjoy discovering those hidden corners.
+[ 12.73s][user ] Hmm, and how about the Statue ⟨ret@15.12s⟩ of Liberty?
+[ 15.48s][moshi] The Statue ⟦⚡SPAN@17.12s: (tool result) The Statue of Liberty is located at 40.6892° N, 74.0445° W.⟧ of Liberty is at 40.6892 degrees North, 74.0445 degrees West.
+      CALL: {"function": "maps_geo", "arguments": {"location": "Statue of Liberty, New York City"}}
+[ 21.37s][user ] «backchannel» Right.
+[ 23.84s][user ] That’s good to know. I’m planning a trip—
+[ 26.78s][moshi] «interrupted» Planning a trip is always exciting—
+[ 28.52s][user ] «interrupts_prev» Do you think it’s better to visit in the spring or fall?
+[ 31.76s][moshi] Spring and fall offer milder weather, avoiding summer crowds and winter chills.
+[ 37.66s][user ] Fall sounds nice. I’m hoping to meet new people.
+[ 41.42s][moshi] Meeting new people can really enrich a travel experience, absolutely. What sort of activities are you planning?
+[ 43.75s][user ] «backchannel» Okay.
+[ 48.37s][user ] I’m thinking of joining some walking tours.
+[ 51.13s][moshi] Walking tours are a fantastic way to explore and connect with others! They offer a shared experience.
+[ 61.14s][user ] Right. I'm a little anxious though, about making conversation.
+[ 65.45s][moshi] It’s perfectly normal to feel anxious about starting conversations, especially when traveling.
+[ 71.21s][user ] It’s just… I’m not very good at small talk.
+[ 74.22s][moshi] Many people find small talk challenging. It’s often about finding common ground, isn’t it?
+[ 76.26s][user ] «backchannel» Yeah.
+[ 79.61s][moshi] You could start by commenting on something you both are experiencing—the tour itself, the weather, or a landmark. It’s a simple way in.
+[ 90.06s][user ] That’s a good point. What if they don’t seem interested?
+[ 93.65s][moshi] Not everyone will be receptive, and that’s okay! Don’t take it personally; move on and find someone else.
+[101.80s][user ] Easier said than done, I guess.
+[103.97s][moshi] It takes practice, but you’ll find your rhythm. Remember, most people enjoy a friendly interaction.
+[110.92s][user ] I suppose so. Are there any apps that help ⟨ret@114.31s⟩ with this?
+[114.70s][moshi] There are ⟦⚡SPAN@116.31s: (tool result) Meetup has 1.2 million users. Bumble BFF focuses on friendship. Internations is for expats.⟧ several! Meetup has 1.2 million users, Bumble BFF focuses on friendships, and Internations is for expats.
+      CALL: {"function": "search", "arguments": {"query": "apps to meet people while traveling"}}
+[124.30s][user ] Bumble BFF? I’ve heard of Bumble, but not that.
+[128.07s][moshi] It’s Bumble’s platform specifically for finding friends, rather than romantic connections.
+[134.11s][user ] Oh, interesting. Is it ⟨ret@136.11s⟩ popular?
+[136.35s][moshi] Bumble BFF has ⟦⚡SPAN@138.11s: (tool result) Bumble BFF has over 15 million users and is growing 30% year-over-year.⟧ over fifteen million users and is growing at thirty percent each year.
+      CALL: {"function": "search", "arguments": {"query": "Bumble BFF popularity"}}
+[142.55s][user ] Wow, that *is* popular. Okay, that sounds promising.
+[147.14s][moshi] It certainly seems to be gaining traction! A good way to expand your circle, perhaps?
+[151.60s][user ] «backchannel» Mm-hmm.
+[153.70s][user ] Yeah, maybe. I’m also worried about feeling lonely.
+[157.66s][moshi] Feeling lonely is common, especially when you're away from your usual support system.
+[164.50s][user ] I just want to have a really good trip.
+[166.94s][moshi] And you deserve to have a wonderful trip. Focusing on connection and openness will help.

@@ -4,73 +4,68 @@ SYSTEM: <system> You are Dar, a grounded and empathetic personal guide who helps
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What’s the price range at Zuni Cafe?
-      Okay, good. And are they open right now?
-      Perfect. Can you make a reservation for two at, uh, 7:30?
-      Great! Is there parking nearby?
-      Twenty dollars an hour is… steep. Are there any cheaper options?
-  S2  Is there a bus that stops close by?
-      How often does that bus run?
-      That's pretty good. So, if I take the 33, how long will the ride be fr
-      Okay, that’s helpful. What about—
-      Actually, never mind the bus. What kind of food do they serve at Zuni?
-  S3  Roast chicken, huh? Is it, like, fancy roast chicken?
-      Mm-hmm.
-      Do they have vegetarian options?
-      Halloumi sounds good. Is it a loud restaurant?
-      Okay, good. I get anxious in really loud places.
-  S4  Do they take reservations for outdoor seating?
-      Oh, okay. So, it’s a gamble.
-      What’s the phone number, just in case we need to call?
-      Perfect. And could you set a reminder for me to leave for the restaura
-      That's fantastic. Thanks so much for all your help!
+      And what about State Bird Provisions?
+      Hmm, okay. Which one is closer to my location?
+      That’s pretty close. And State Bird?
+  S2  So Zuni is definitely easier to get to.
+      Do either of them take reservations?
+      Oh, good to know. Can you check availability at State Bird for tonight
+      Perfect! Let’s book that.
+  S3  Fantastic. Thank you!
+      I agree. What’s the weather like there right now?
+      That’s nice. Is there easy parking nearby?
+      Okay, good. How long does it take to walk there?
+  S4  That's very convenient.
+      Do they have outdoor seating?
+      Excellent. That sounds perfect.
+      Is there a good tea shop nearby for after dinner?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] What’s the price range at Zuni ⟨ret@2.15s⟩ Cafe?
-[  2.39s][moshi] Let ⟦⚡SPAN@3.11s: (tool result) Zuni Cafe’s price range is $$$ which means dishes are typically between thirty and sixty dollars⟧ me check that for you. Dishes at Zuni Cafe generally cost between thirty and sixty dollars.
-[  4.86s][user ] «backchannel» Uh-huh.
-[  9.24s][user ] Okay, good. And are they open right ⟨ret@11.33s⟩ now?
-[ 11.56s][moshi] ⟦⚡SPAN@11.83s: (tool result) Zuni Cafe is currently open until 10:00 PM tonight.⟧ I can certainly find that out. Zuni Cafe is open until ten o'clock this evening.
-[ 17.12s][user ] Perfect. Can you make a reservation for two at, uh, 7:30?
-[ 21.72s][moshi] ⟨ret@21.56s⟩ Absolutely, ⟦⚡SPAN@22.52s: (tool result) Reservation confirmed at Zuni Cafe for two people at 7:30 PM. Your confirmation number is 8492-G⟧ let’s see about that. Your table for two at Zuni Cafe is booked for 7:30 PM. The confirmation number is 8492-Gamma.
-      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "party_size": 2, "time": "7:30 PM"}}
-[ 25.48s][user ] «backchannel» Yeah.
-[ 32.10s][user ] Great! Is there parking ⟨ret@33.86s⟩ nearby?
-[ 34.10s][moshi] I ⟦⚡SPAN@34.98s: (tool result) There is a parking garage at 1658 Market Street, a two-minute walk from Zuni Cafe, costing twent⟧ can look into parking options. A parking garage two minutes away costs twenty dollars an hour.
-[ 36.92s][user ] «backchannel» Yeah.
-[ 40.62s][user ] Twenty dollars an hour is… steep. Are there any cheaper options?
-[ 45.48s][moshi] Finding affordable parking can be tricky in that area. It's a popular spot.
-[ 52.48s][user ] Is there a bus that stops close ⟨ret@54.32s⟩ by?
-[ 54.72s][moshi] Let's ⟦⚡SPAN@55.44s: (tool result) The 33 Stanyan bus stops one block from Zuni Cafe at the corner of Market and Duboce.⟧ check the public transit options. The 33 Stanyan bus stops one block from the restaurant.
-[ 57.95s][user ] «backchannel» Mm-hmm.
-[ 61.06s][user ] How often does that bus ⟨ret@62.65s⟩ run?
-[ 62.80s][moshi] I can get ⟦⚡SPAN@64.09s: (tool result) The 33 Stanyan bus runs every fifteen minutes during peak hours, and every twenty minutes otherw⟧ the schedule for you. The 33 bus arrives every fifteen to twenty minutes.
-[ 69.65s][user ] That's pretty good. So, if I take the 33, how long will the ride be from Union ⟨ret@74.62s⟩ Square?
-[ 74.78s][moshi] I can ⟦⚡SPAN@75.82s: (tool result) Taking the 33 Stanyan from Union Square to Zuni Cafe will take approximately twenty-five minutes⟧ calculate the travel time. The bus ride from Union Square should take about twenty-five minutes.
-[ 81.14s][user ] Okay, that’s helpful. What about—
-[ 83.28s][moshi] «interrupted» It's important to plan for a little extra time—
-[ 85.35s][user ] «interrupts_prev» Actually, never mind the bus. What kind of food do they serve at Zuni?
-[ 89.44s][moshi] Zuni Cafe is known for its roast chicken.
-[ 92.53s][user ] Roast chicken, huh? Is it, like, fancy roast chicken?
-[ 95.46s][moshi] They focus on simple, high-quality ingredients, prepared with care.
-[ 97.91s][user ] «backchannel» Yeah.
-[102.64s][user ] Mm-hmm.
-[103.25s][user ] Do they have vegetarian options?
-[105.38s][moshi] ⟨ret@105.30s⟩ I can ⟦⚡SPAN@106.50s: (tool result) Zuni Cafe offers a seasonal vegetable plate and a grilled halloumi salad as vegetarian options.⟧ check their menu for you. They have a seasonal vegetable plate and halloumi salad.
-[108.10s][user ] «backchannel» Right.
-[110.98s][user ] Halloumi sounds good. Is it a loud restaurant?
-[114.28s][moshi] Zuni Cafe has a lively atmosphere, but it's generally not overwhelmingly loud.
-[119.70s][user ] Okay, good. I get anxious in really loud places.
-[123.35s][moshi] It's wonderful to be mindful of your comfort levels when choosing a restaurant.
-[128.13s][user ] Do they take reservations for outdoor ⟨ret@130.24s⟩ seating?
-[130.64s][moshi] Let me ⟦⚡SPAN@132.08s: (tool result) Outdoor seating at Zuni Cafe is available on a first-come, first-served basis only. Reservations⟧ see if outdoor seating is available. Outdoor seating is first-come, first-served.
-[134.60s][user ] «backchannel» Yeah.
-[136.90s][user ] Oh, okay. So, it’s a gamble.
-[140.43s][moshi] It can be, but it's often worth checking when you arrive.
-[144.37s][user ] What’s the phone number, just in case we ⟨ret@146.43s⟩ need to call?
-[146.82s][moshi] Certainly, I ⟦⚡SPAN@148.27s: (tool result) Zuni Cafe’s phone number is 415-552-2377.⟧ can find that for you. The phone number is four-one-five, five-five-two, two-three-seven-seven.
-[152.31s][user ] «backchannel» Right.
-[154.42s][user ] Perfect. And could you set a reminder for me to leave for the restaurant at six forty-five?
-[159.37s][moshi] ⟨ret@159.21s⟩ Of course, ⟦⚡SPAN@160.25s: (tool result) Reminder set for 6:45 PM: “Leave for Zuni Cafe”.⟧ I can set that reminder. A reminder is set to leave at six forty-five.
-      CALL: {"function": "set_reminder", "arguments": {"time": "6:45 PM", "message": "Leave for Zuni Cafe"}}
-[164.30s][user ] That's fantastic. Thanks so much for all your help!
-[166.88s][moshi] It’s my pleasure. I hope you have a lovely evening at Zuni Cafe.
+[  0.00s][user ] What’s the price range at Zuni ⟨ret@2.20s⟩ Cafe?
+[  2.44s][moshi] Let ⟦⚡SPAN@3.16s: (tool result) Zuni Cafe’s price range is $$$, and it’s open until 10 PM tonight.⟧ me check their details for— Zuni Cafe is in the higher price range, around thirty to sixty dollars.
+[  5.96s][user ] «backchannel» Okay.
+[  9.94s][user ] And what about State Bird ⟨ret@12.15s⟩ Provisions?
+[ 12.38s][moshi] ⟦⚡SPAN@12.65s: (tool result) State Bird Provisions’ price range is $$, and it has 4.5 stars from 2,345 reviews.⟧ State Bird Provisions is also quite popular— State Bird Provisions is moderately priced, typically twenty to forty dollars.
+[ 21.04s][user ] Hmm, okay. Which one is closer to my location?
+[ 25.02s][moshi] ⟨ret@24.86s⟩ I ⟦⚡SPAN@25.82s: (tool result) Zuni Cafe is 2.3 miles from your location, estimated travel time is 12 minutes.⟧ can certainly find that out for— Zuni Cafe is 2.3 miles away, about a twelve-minute drive.
+      CALL: {"function": "maps_distance", "arguments": {"origin": "current location", "destination": "Zuni Cafe"}}
+[ 28.30s][user ] «backchannel» Oh.
+[ 32.43s][user ] That’s pretty close. And State ⟨ret@34.44s⟩ Bird?
+[ 34.68s][moshi] Let me check ⟦⚡SPAN@36.20s: (tool result) State Bird Provisions is 3.8 miles from your location, estimated travel time is 20 minutes.⟧ the distance to State Bird— State Bird Provisions is 3.8 miles away, with a twenty-minute estimated drive time.
+      CALL: {"function": "maps_distance", "arguments": {"origin": "current location", "destination": "State Bird Provisions"}}
+[ 39.14s][user ] «backchannel» Yeah.
+[ 43.63s][user ] So Zuni is definitely easier to get to.
+[ 46.40s][moshi] «interrupted» Absolutely. It’s significantly closer, which can be helpful, especially—
+[ 50.48s][user ] «interrupts_prev» Do either of them take reservations?
+[ 52.69s][moshi] —if you’re trying to relax and not rush—
+[ 55.17s][moshi] ⟨ret@55.09s⟩ Zuni Cafe is ⟦⚡SPAN@57.09s: (tool result) Zuni Cafe does not take reservations, but State Bird Provisions does.⟧ first-come, first-served, while State Bird Provisions accepts reservations.
+[ 61.99s][user ] Oh, good to know. Can you check availability at State Bird for tonight?
+[ 66.18s][moshi] ⟨ret@66.02s⟩ Let’s see ⟦⚡SPAN@67.22s: (tool result) State Bird Provisions has a table for two available at 8:30 PM tonight.⟧ what’s available at State Bird— There’s a table for two available at 8:30 PM at State Bird tonight.
+      CALL: {"function": "restaurant_availability", "arguments": {"restaurant": "State Bird Provisions", "date": "today", "party_size": "2"}}
+[ 73.61s][user ] Perfect! Let’s book that.
+[ 75.29s][moshi] ⟨ret@75.14s⟩ Certainly, ⟦⚡SPAN@76.34s: (tool result) Reservation confirmed at State Bird Provisions for two people at 8:30 PM tonight under the name ⟧ let’s confirm that reservation— Your reservation at State Bird Provisions is confirmed for 8:30 PM.
+      CALL: {"function": "restaurant_reserve", "arguments": {"restaurant": "State Bird Provisions", "date": "today", "time": "8:30 PM", "party_size": "2", "name": "user"}}
+[ 84.65s][user ] Fantastic. Thank you!
+[ 86.30s][moshi] You’re very welcome. It sounds like a lovely evening is—
+[ 88.78s][user ] «backchannel» Yeah.
+[ 90.22s][moshi] —taking shape. Sometimes, a good meal is all you need to reset.
+[ 94.96s][user ] I agree. What’s the weather like there right ⟨ret@97.81s⟩ now?
+[ 97.88s][moshi] Let me ⟦⚡SPAN@98.93s: (tool result) The current weather at State Bird Provisions is 62°F and partly cloudy.⟧ check the current conditions— It’s currently 62 degrees and partly cloudy near State Bird Provisions.
+      CALL: {"function": "weather_current", "arguments": {"location": "State Bird Provisions"}}
+[104.99s][user ] That’s nice. Is there easy parking ⟨ret@108.25s⟩ nearby?
+[108.57s][moshi] I ⟦⚡SPAN@109.37s: (tool result) Paid parking is available at 15th Street Garage, 0.2 miles from State Bird Provisions.⟧ can look into parking options— There’s paid parking available at the 15th Street Garage, just a short walk away.
+      CALL: {"function": "maps_parking", "arguments": {"location": "State Bird Provisions"}}
+[111.53s][user ] «backchannel» Wow.
+[115.56s][user ] Okay, good. How long does it take to ⟨ret@117.85s⟩ walk there?
+[118.25s][moshi] ⟦⚡SPAN@118.81s: (tool result) Walking from State Bird Provisions to 15th Street Garage takes approximately 4 minutes.⟧ Let’s find the walking time— It’s about a four-minute walk from State Bird Provisions to the 15th Street Garage.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "State Bird Provisions", "destination": "15th Street Garage", "mode": "walking"}}
+[126.17s][user ] That's very convenient.
+[127.93s][moshi] «interrupted» It is! Minimizing stress around logistics helps ensure a restful—
+[132.73s][user ] «interrupts_prev» Do they have ⟨ret@133.85s⟩ outdoor seating?
+[134.25s][moshi] I can ⟦⚡SPAN@135.22s: (tool result) State Bird Provisions has a limited number of outdoor tables available.⟧ check if they offer outdoor seating— State Bird Provisions does have some outdoor seating available, though it’s limited.
+      CALL: {"function": "restaurant_details", "arguments": {"restaurant": "State Bird Provisions", "attribute": "outdoor seating"}}
+[141.59s][user ] Excellent. That sounds perfect.
+[143.38s][moshi] «interrupted» Wonderful. It’s all coming together nicely. Remember, creating a calm evening routine—
+[148.62s][user ] «interrupts_prev» Is there a good tea shop nearby for after ⟨ret@150.97s⟩ dinner?
+[151.13s][moshi] Let me see what ⟦⚡SPAN@152.97s: (tool result) The nearest tea shop is Tea Habibi, 0.5 miles from State Bird Provisions, with a 4.7-star rating⟧ tea shops are close by— Tea Habibi is the closest tea shop, half a mile away, and highly rated.
+      CALL: {"function": "maps_search", "arguments": {"location": "State Bird Provisions", "query": "tea shop"}}

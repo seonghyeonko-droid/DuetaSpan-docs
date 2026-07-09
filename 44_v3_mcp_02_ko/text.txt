@@ -1,43 +1,47 @@
 v3_mcp_02_ko src=mcp style=v3
-SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 지원 조언가인 Driaus입니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴 관리를 돕는 친절하고 꾸준한 조력자, Driaus입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  날씨 업데이트 좀 봐줄래? weather.example.com에서.
-      음, 좋아. 그럼 내일 오전 아홉 시에 알람 맞춰줄래?
-  S2  아니, 됐어. 아, 잠깐만. 이번 주 토요일에 서울에서 부산 가는 기차표 예매해 줄 수 있어?
-      음… 최대한 빨리 가는 걸로.
-  S3  오, 좋아. 그걸로 예매해 줘.
-      고마워. 근데, 혹시 이번 주말에 비 올 확률이 높을까?
-  S4  아, 그렇구나. 그럼 우산 챙겨야겠다.
+      음, 고마워. 이번 주말에 부산 갈 건데, 부산 날씨는 어때?
+  S2  좋아. 혹시 부산에서 괜찮은 호텔 좀 찾아줄 수 있어? 해운대 근처로.
+      음… 하루에 20만원 정도면 좋겠어.
+  S3  오, 괜찮네. 그럼 파라다이스 호텔 부산으로 예약해 줘. 토요일 밤부터 일요일 밤까지.
+      혹시 호텔까지 가는 버스 시간표도 알아봐 줄 수 있어?
+  S4  김해공항에서 출발해.
+      알았어. 정말 고마워. 덕분에 여행 준비가 훨씬 수월해졌네.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 날씨 업데이트 좀 봐줄래? ⟨ret@3.03s⟩ weather.example.com에서.
-[  3.41s][moshi] ⟦⚡SPAN@3.53s: (tool result) The weather at weather.example.com is currently 25 degrees Celsius and sunny.⟧ 알겠습니다. 지금 weather.example.com에서 날씨는 섭씨 25도에 맑다고 합니다.
+[  0.00s][user ] 날씨 업데이트 좀 봐줄래? ⟨ret@2.88s⟩ weather.example.com에서.
+[  3.26s][moshi] ⟦⚡SPAN@3.38s: (tool result) The current temperature at Seoul is 28 degrees Celsius with partly cloudy skies.⟧ 알겠습니다. 현재 서울 온도는 섭씨 28도이고, 구름이 조금 낀 날씨입니다.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 10.90s][user ] 음, 좋아. 그럼 내일 오전 아홉 시에 알람 ⟨ret@14.04s⟩ 맞춰줄래?
-[ 14.43s][moshi] 물론이죠. ⟦⚡SPAN@15.16s: (tool result) Alarm set for tomorrow at 09:00.⟧ 내일 아홉 시에 알람을 설정해 드릴게요.
-      CALL: {"function": "set_alarm", "arguments": {"time": "09:00"}}
-[ 17.84s][moshi] 내일 아홉 시에 알람이 설정되었습니다.
-[ 19.14s][user ] «backchannel» Mhm.
-[ 20.82s][moshi] 혹시 다른 알람도 필요하신가요?
-[ 23.34s][user ] 아니, 됐어. 아, 잠깐만. 이번 주 토요일에 서울에서 부산 가는 기차표 예매해 줄 수 있어?
-[ 30.32s][moshi] 네, 가능합니다. 몇 시쯤 출발하는 기차를 찾으시겠어요?
-[ 32.33s][user ] «backchannel» Uh-huh.
-[ 34.42s][user ] 음… 최대한 빨리 가는 걸로.
-[ 37.01s][moshi] ⟨ret@36.94s⟩ 알겠습니다. 가장 ⟦⚡SPAN@38.62s: (tool result) The fastest train from Seoul to Busan this Saturday departs at 07:30 and arrives at 11:00, costi⟧ 빠른 기차편을 찾아볼게요.
-      CALL: {"function": "search_train", "arguments": {"departure_city": "Seoul", "arrival_city": "Busan", "date": "this Saturday", "sort_by": "fastest"}}
-[ 40.48s][moshi] 이번 주 토요일 서울에서 부산으로 가는 가장 빠른 기차는 오전 7시 30분에 출발해서 11시에 도착하고, 요금은 6만 5천 원입니다.
-[ 44.51s][user ] «backchannel» Wow.
-[ 50.56s][user ] 오, 좋아. 그걸로 예매해 ⟨ret@52.34s⟩ 줘.
-[ 52.73s][moshi] ⟦⚡SPAN@52.90s: (tool result) Train booking confirmed: Seoul to Busan, 07:30 departure, ₩65,000. Booking reference is ABC123.⟧ 예매 진행하겠습니다.
-      CALL: {"function": "book_train", "arguments": {"train_id": "0730_Seoul_Busan"}}
-[ 54.27s][moshi] 기차 예매가 완료되었습니다. 서울에서 부산까지, 오전 7시 30분 출발이고, 요금은 6만 5천 원입니다. 예약 번호는 ABC123입니다.
-[ 60.96s][user ] «backchannel» Wow.
-[ 64.27s][user ] 고마워. 근데, 혹시 이번 주말에 비 올 확률이 높을까?
-[ 68.38s][moshi] ⟨ret@68.23s⟩ 잠깐만요. 다시 ⟦⚡SPAN@70.23s: (tool result) This weekend at weather.example.com: Saturday is sunny, Sunday has a 60% chance of rain.⟧ weather.example.com에서 주말 날씨를 확인해 보겠습니다.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com/weekend"}}
-[ 73.07s][moshi] 이번 주말 weather.example.com에 따르면 토요일은 맑고, 일요일은 비 올 확률이 60%입니다.
-[ 76.23s][user ] «backchannel» Right.
-[ 79.95s][user ] 아, 그렇구나. 그럼 우산 챙겨야겠다.
-[ 81.95s][moshi] 네, 일요일에 비가 올 가능성이 있으니 우산을 챙기시는 게 좋겠어요.
+[  5.46s][user ] «backchannel» 네.
+[  9.00s][user ] 음, 고마워. 이번 주말에 부산 갈 건데, 부산 날씨는 어때?
+[ 13.82s][moshi] ⟨ret@13.43s⟩ 이번 ⟦⚡SPAN@14.47s: (tool result) The forecast for Busan this weekend is sunny with highs of 30 degrees Celsius.⟧ 주말 부산 날씨도 확인해 드릴까요?
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com/busan"}}
+[ 16.37s][moshi] 이번 주말 부산은 맑고, 최고 기온은 섭씨 30도입니다.
+[ 18.81s][user ] «backchannel» 네.
+[ 20.01s][user ] 좋아. 혹시 부산에서 괜찮은 호텔 좀 찾아줄 수 있어? 해운대 근처로.
+[ 25.23s][moshi] 해운대 근처 호텔을 찾아보겠습니다. 어떤 가격대를 생각하고 계세요?
+[ 27.15s][user ] «backchannel» 예.
+[ 31.92s][user ] 음… 하루에 20만원 정도면 ⟨ret@34.16s⟩ 좋겠어.
+[ 34.56s][moshi] 20만원 정도의 ⟦⚡SPAN@36.16s: (tool result) The Paradise Hotel Busan is available this weekend for 180,000 won per night.⟧ 해운대 근처 호텔을 검색해 드릴게요.
+      CALL: {"function": "hotel_search", "arguments": {"location": "Haeundae", "max_price": 200000}}
+[ 38.82s][moshi] 이번 주말 파라다이스 호텔 부산이 1박에 18만원에 예약 가능합니다.
+[ 42.16s][user ] «backchannel» 정말요?
+[ 44.48s][user ] 오, 괜찮네. 그럼 파라다이스 호텔 부산으로 예약해 줘. 토요일 밤부터 ⟨ret@48.80s⟩ 일요일 밤까지.
+[ 49.19s][moshi] 파라다이스 호텔 ⟦⚡SPAN@50.32s: (tool result) Your reservation at Paradise Hotel Busan is confirmed for Saturday and Sunday nights. Confirmati⟧ 부산을 토요일 밤부터 일요일 밤까지 예약해 드리겠습니다.
+      CALL: {"function": "hotel_reserve", "arguments": {"hotel": "Paradise Hotel Busan", "check_in": "Saturday night", "check_out": "Sunday night"}}
+[ 53.56s][moshi] 파라다이스 호텔 부산 예약이 확정되었습니다. 예약 번호는 BH729입니다.
+[ 56.01s][user ] «backchannel» 그렇죠.
+[ 59.34s][user ] 혹시 호텔까지 가는 버스 시간표도 알아봐 줄 수 있어?
+[ 62.61s][moshi] 네, 호텔까지 가는 버스 시간표를 알아봐 드리겠습니다. 어디에서 출발하시나요?
+[ 64.81s][user ] «backchannel» 네.
+[ 68.47s][user ] 김해공항에서 출발해.
+[ 70.37s][moshi] ⟨ret@70.30s⟩ 김해공항에서 파라다이스 ⟦⚡SPAN@72.30s: (tool result) Buses depart from Gimhae Airport to Paradise Hotel Busan every 30 minutes between 9:00 AM and 9:⟧ 호텔 부산까지 가는 버스 시간표를 검색해 드릴게요.
+      CALL: {"function": "bus_schedule", "arguments": {"start": "Gimhae Airport", "end": "Paradise Hotel Busan"}}
+[ 75.81s][moshi] 김해공항에서 파라다이스 호텔 부산까지 버스는 아침 9시부터 저녁 9시까지 30분 간격으로 운행합니다.
+[ 79.65s][user ] «backchannel» 네.
+[ 83.31s][user ] 알았어. 정말 고마워. 덕분에 여행 준비가 훨씬 수월해졌네.
+[ 87.38s][moshi] 여행 준비에 도움이 되었다니 기쁩니다. 즐거운 여행 되세요.

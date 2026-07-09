@@ -69,13 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Kim, it's so lovely to connect with you. I'm Ara, and I help
-     7.14s  agent 발화 끝
-     8.19s  user  발화 시작: Ara… that’s a pretty name. I’m just… a little overwhelmed, t
-    14.11s  user  발화 끝
-    14.14s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
-    25.42s  agent 발화 끝
-    25.49s  user  발화 시작: Well, I— I mean, I’m thinking about a vacation, but I also h
-    32.36s  user  발화 끝
-    32.59s  agent 발화 시작: It sounds like you’re balancing some exciting possibilities 
-    43.81s  agent 발화 끝
+     0.00s  agent 발화 시작: Kim, it’s lovely to connect with you. I’m Ara, and I help pe
+     6.53s  agent 발화 끝
+     7.57s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
+    15.30s  user  발화 끝
+    15.38s  agent 발화 시작: It’s completely understandable to feel that way, Kim. Many p
+    25.96s  agent 발화 끝
+    26.02s  user  발화 시작: I— I mean, where do you even start? I have so many different
+    31.76s  user  발화 끝
+    31.96s  agent 발화 시작: That’s a very common starting point. Tracking where your mon
+    41.98s  agent 발화 끝

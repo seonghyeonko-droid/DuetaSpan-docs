@@ -1,14 +1,13 @@
 v3_rag_24_ko src=nq style=v1
-SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치인 코라나입니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치인 Korana입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] 뒤플레시 이름이 어디에서 유래됐는지 궁금해요.
-[  3.76s][moshi] 뒤플레시라는 성씨에 얽힌 이야기가 꽤 흥미롭답니다.
-[  7.14s][moshi] ⟨ret@6.75s⟩ 성씨의 기원을 ⟦⚡SPAN@8.75s: The surname Du Plessis is of French origin, derived from the Old French "du" meaning "of the" and "plessis" re⟧ 살펴보면 프랑스에서 찾을 수 있어요. 뒤플레시 성은 프랑스어로 “~의”라는 뜻의 “뒤”와 영지나 저택을 의미하는 “플레시”에서 유래했어요.
-[ 15.73s][user ] «backchannel» Mhm.
-[ 18.42s][user ] 아, 그렇군요. 그럼 프랑스 귀족과 관련이 있는 건가요?
-[ 23.12s][moshi] [laugh] 음, 어느 정도 관련이 있죠. 뒤플레시 가문은 프랑스 귀족 가문 중 하나였거든요.
-[ 29.28s][moshi] ⟨ret@29.21s⟩ 뒤플레시 ⟦⚡SPAN@30.65s: The Du Plessis family rose to prominence in France during the 16th century, with several members serving in th⟧ 가문은 프랑스 왕실과도 인연이 깊었어요. 16세기 동안 뒤플레시 가문은 여러 구성원이 프랑스 왕실 궁정에서 활동하며 프랑스에서 두각을 나타냈어요.
-[ 41.33s][user ] 혹시 유명한 뒤플레시 가문 사람이 있었나요?
-[ 44.72s][moshi] 네, 프랑수아 뒤플레시라는 인물이 유명하답니다. 그는 프랑스의 군인이자 정치가였어요.
-[ 50.72s][moshi] ⟨ret@50.33s⟩ 프랑수아 ⟦⚡SPAN@51.85s: François du Plessis, Duke of Rohan, was a prominent French military leader and politician during the 17th-cent⟧ 뒤플레시는 종교 전쟁 시기에 중요한 역할을 했어요.
+[  3.67s][moshi] 뒤플레시라는 이름에 얽힌 이야기가 꽤 흥미로운데요.
+[  7.73s][moshi] ⟨ret@7.34s⟩ 그 이름의 ⟦⚡SPAN@9.34s: The surname Du Plessis is of French Huguenot origin, meaning "from Plessis," a place name in France.⟧ 기원을 알아보기 위해 좀 더 자세히 살펴볼까요? 뒤플레시 성은 프랑스 위그노 출신으로, 프랑스에 있는 '플레시'라는 지명에서 유래되었다고 해요.
+[ 15.97s][user ] «backchannel» 아.
+[ 18.54s][user ] 아, 프랑스 지명에서 따온 거군요. 그럼 그 플레시라는 곳은 어떤 곳이에요?
+[ 23.63s][moshi] 플레시라는 곳은 프랑스에 여러 군데가 있는데, 특히 뒤플레시 가문과 관련 있는 곳은 루아르 계곡에 있는 플레시-부아예요.
+[ 33.05s][moshi] ⟨ret@32.99s⟩ 그 지역에 ⟦⚡SPAN@34.43s: Plessis-Bourg, in the Loire Valley, was a stronghold of the Du Plessis family from the 14th century onwards.⟧ 대해 좀 더 자세히 알아볼까요? 14세기부터 뒤플레시 가문의 요새였던 플레시-부르는 루아르 계곡에 위치하고 있어요.
+[ 41.72s][user ] 그렇군요. 혹시 뒤플레시 가문은 프랑스 역사에서 중요한 역할을 했나요?
+[ 47.79s][moshi] 뒤플레시 가문은 프랑스 역사에서 꽤 중요한 역할을 했어요. 특히 프랑수아 드 뒤플레시는 루이 13세 시대의 인물로, 뛰어난 외교관이자 군인이었답니다. [happy]

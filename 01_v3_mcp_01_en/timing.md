@@ -1,70 +1,54 @@
 # v3_mcp_01_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 A thousand dollars— that's pretty  | S3 Blue Titanium… nice. Okay, I think | S4 Excellent. That was really easy.
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Are those prices included on the m | S3 Yes, please. What trade-in offers  | S4 Perfect. Thank you, Koral.
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.81s  <ret> 발화 (turn1 첫 프레임)
-     4.89s  agent 발화 시작: <ret> I’ve mapped the Apple website, identifying twenty-thre
-     5.00s  user  발화 끝
-     6.41s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.42s]: (tool result) The tavily-map found 23 product pages, including iPhones
-    12.31s  agent 발화 끝
-    12.38s  user  발화 시작: Hmm, can you refine that to only show me the iPhone pages?
-    16.37s  <ret> 발화 (turn3 첫 프레임)
-    16.76s  agent 발화 시작: <ret> Certainly. The map now shows six iPhone pages, coverin
-    16.87s  user  발화 끝
-    18.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) The tavily-map found 6 iPhone-related pages, including m
-    21.71s  user  발화 시작: Yeah.
-    22.16s  user  발화 끝
-    23.75s  user  발화 시작: That’s good. Are there any current deals on the iPhone 15 Pr
-    24.17s  agent 발화 끝
-    27.61s  <ret> 발화 (turn6 첫 프레임)
-    27.68s  agent 발화 시작: <ret> Yes, Apple currently offers a trade-in program with up
-    27.87s  user  발화 끝
-    29.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) The tavily-map found a trade-in offer for up to $1000 of
-    31.95s  user  발화 시작: Uh-huh.
-    32.44s  user  발화 끝
-    35.09s  agent 발화 끝
-    35.42s  user  발화 시작: A thousand dollars— that's pretty significant. What about th
-    40.25s  agent 발화 시작: The iPhone 15 Pro comes in—
-    40.52s  user  발화 끝
-    42.41s  user  발화 시작: Do they have it in blue?
-    43.02s  agent 발화 끝
-    43.62s  <ret> 발화 (turn11 첫 프레임)
-    44.01s  agent 발화 시작: <ret> That’s a good question.
-    44.21s  user  발화 끝
-    44.50s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.38s]: (tool result) The tavily-map found the iPhone 15 Pro is available in B
-    45.37s  agent 발화 시작: Yes, it’s available in Black Titanium, White Titanium, Blue 
-    45.39s  agent 발화 끝
-    49.12s  user  발화 시작: Yeah.
-    49.75s  user  발화 끝
-    51.77s  user  발화 시작: Blue Titanium… nice. Okay, I think I want to trade in my old
-    51.85s  agent 발화 끝
-    56.96s  agent 발화 시작: Wonderful! I can help you start that process. Do you know th
-    57.09s  user  발화 끝
-    63.82s  agent 발화 끝
-    64.28s  user  발화 시작: Uh, I think it's an iPhone 12.
-    66.10s  <ret> 발화 (turn17 첫 프레임)
-    66.49s  agent 발화 시작: <ret> Based on that information, Apple estimates a trade-in 
-    66.59s  user  발화 끝
-    68.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) The trade-in estimate for an iPhone 12 towards an iPhone
-    69.30s  user  발화 시작: Mm-hmm.
-    69.93s  user  발화 끝
-    74.27s  agent 발화 시작: That estimate is based on the condition of your phone, of co
-    74.31s  agent 발화 끝
-    77.34s  user  발화 시작: Yeah.
-    77.84s  user  발화 끝
-    82.80s  user  발화 시작: Yes, please. What's the next step?
-    82.80s  agent 발화 끝
-    85.05s  <ret> 발화 (turn22 첫 프레임)
-    85.43s  agent 발화 시작: <ret> Great! A trade-in request is initiated, and you should
-    85.57s  user  발화 끝
-    87.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.19s]: (tool result) A trade-in request has been initiated; you’ve received a
-    90.51s  user  발화 시작: Yeah.
-    91.00s  user  발화 끝
-    93.45s  user  발화 시작: Excellent. That was really easy.
-    93.61s  agent 발화 끝
-    95.72s  user  발화 끝
-    96.08s  agent 발화 시작: I'm glad I could help simplify the process for you. It’s alw
-   104.02s  user  발화 시작: So, if I send it in today, roughly when would I get the new 
-   104.10s  agent 발화 끝
-   108.88s  user  발화 끝
+     4.76s  <ret> 발화 (turn1 첫 프레임)
+     4.83s  agent 발화 시작: <ret> Certainly, I can map out the Apple website— I’ve mappe
+     4.95s  user  발화 끝
+     5.88s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.76s]: (tool result) The tavily-map tool found 123 pages on apple.com related
+     9.36s  user  발화 시작: Okay.
+    10.18s  user  발화 끝
+    15.45s  user  발화 시작: Hmm, that’s a lot. Can you narrow it down to just the iPhone
+    15.63s  agent 발화 끝
+    19.09s  <ret> 발화 (turn4 첫 프레임)
+    19.48s  agent 발화 시작: <ret> Of course, refining the map to only iPhone pages— I’ve
+    19.71s  user  발화 끝
+    21.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.06s]: (tool result) The tavily-map tool now shows 38 pages on apple.com spec
+    26.81s  user  발화 시작: Yeah.
+    27.16s  user  발화 끝
+    29.34s  user  발화 시작: Are those prices included on the map, or just the pages them
+    29.41s  agent 발화 끝
+    34.07s  user  발화 끝
+    34.12s  agent 발화 시작: That’s a good question. The map currently shows page links, 
+    39.91s  agent 발화 끝
+    40.64s  user  발화 시작: Okay. Can you search for the current price of the iPhone fif
+    45.72s  <ret> 발화 (turn9 첫 프레임)
+    46.11s  agent 발화 시작: <ret> Let me check the current pricing for that configuratio
+    46.29s  user  발화 끝
+    47.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: (tool result) The Apple website lists the iPhone 15, 1TB model at $159
+    52.91s  user  발화 시작: Uh-huh.
+    53.50s  user  발화 끝
+    58.54s  agent 발화 시작: I can also check for any current promotions or trade-in offe
+    58.63s  agent 발화 끝
+    62.84s  user  발화 시작: Yes, please. What trade-in offers are available for an iPhon
+    62.94s  agent 발화 끝
+    67.67s  <ret> 발화 (turn13 첫 프레임)
+    68.03s  agent 발화 시작: <ret> Checking trade-in values for your iPhone twelve— Apple
+    68.20s  user  발화 끝
+    69.43s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.19s]: (tool result) Apple offers up to $300 trade-in credit for an iPhone 12
+    73.88s  user  발화 시작: Yeah.
+    74.37s  user  발화 끝
+    78.05s  agent 발화 끝
+    78.66s  user  발화 시작: That’s pretty good. Could you reserve an iPhone fifteen, one
+    87.39s  <ret> 발화 (turn16 첫 프레임)
+    87.52s  user  발화 끝
+    87.62s  agent 발화 시작: <ret> Certainly, let’s reserve that for you.
+    89.07s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.81s]: (tool result) Reservation confirmed: iPhone 15, 1TB, Black, for pickup
+    90.38s  agent 발화 시작: Your iPhone fifteen, one terabyte in black, is reserved for 
+    90.43s  agent 발화 끝
+   102.02s  agent 발화 끝
+   102.12s  user  발화 시작: Perfect. Thank you, Koral.
+   103.87s  agent 발화 시작: You’re very welcome. Is there anything else I can assist you
+   103.91s  user  발화 끝
+   108.69s  agent 발화 끝

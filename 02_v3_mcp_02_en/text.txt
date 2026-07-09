@@ -4,40 +4,40 @@ SYSTEM: <system> You are Driaus, a kind and steady supportive advisor who helps 
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Begin watching for a weather update from weather dot example dot com.
-      Oh, good. That’s not bad at all.
-  S2  Um, yeah, actually. Could you find me a bakery that's open right now n
-      Directions, please. I'm walking.
-  S3  Perfect. Thanks. I— I mean, that’s really helpful.
-      Actually, yes. I need to book a car to take me to the airport tomorrow
-  S4  JFK.
-      Great! That’s all. Thanks, Driaus.
+      That’s good. I’m thinking of going for a walk.
+  S2  Um… what time is sunset today?
+      Yeah, it does. Maybe I’ll walk to the bakery. Can you check if they're
+  S3  Okay, good. I should head out soon then.
+      Oh, can you set a reminder for me?
+  S4  For 5:30 to head back.
+      Perfect, thank you.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.94s⟩ com.
-[  4.17s][moshi] Certainly, I’m now ⟦⚡SPAN@5.94s: (tool result) The website reports current conditions are 72 degrees Fahrenheit and partly cloudy.⟧ monitoring weather dot example dot com for any changes.
-      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[  9.75s][moshi] Currently, it’s seventy-two degrees Fahrenheit and partly cloudy at weather dot example dot com.
-[ 12.67s][user ] «backchannel» Uh-huh.
-[ 15.82s][user ] Oh, good. That’s not bad at all.
-[ 18.00s][moshi] I’m glad to hear that’s a pleasant report for you. Is there anything else I can monitor?
-[ 20.47s][user ] «backchannel» Yeah.
-[ 22.92s][user ] Um, yeah, actually. Could you find me a bakery that's open right now near Grand Central Station?
-[ 29.14s][moshi] ⟨ret@28.90s⟩ Maison Kayser ⟦⚡SPAN@30.90s: (tool result) Maison Kayser Grand Central is open now, located at 89 East 42nd Street, with a 4.2 star rating.⟧ Grand Central is open now, rated 4.2 stars, at 89 East 42nd Street.
-      CALL: {"function": "find_businesses", "arguments": {"query": "bakery", "location": "Grand Central Station", "open_now": true}}
-[ 34.48s][user ] «backchannel» Yeah.
-[ 37.10s][moshi] It seems like a well-regarded option. Would you like directions, or perhaps their phone number?
-[ 39.86s][user ] «backchannel» Yeah.
-[ 44.12s][user ] Directions, please. I'm walking.
-[ 46.71s][moshi] ⟨ret@46.64s⟩ The walk ⟦⚡SPAN@47.76s: (tool result) Walking directions are 0.3 miles, approximately 6 minutes, heading east on 42nd Street.⟧ to Maison Kayser is 0.3 miles, about six minutes east on 42nd Street.
-      CALL: {"function": "get_directions", "arguments": {"start_location": "current location", "end_location": "Maison Kayser Grand Central"}}
-[ 50.99s][user ] «backchannel» Yeah.
-[ 53.21s][user ] Perfect. Thanks. I— I mean, that’s really helpful.
-[ 57.35s][moshi] You're very welcome. I’m happy to assist with navigation. Is there anything further I can do for you today?
-[ 65.49s][user ] Actually, yes. I need to book a car to take me to the airport tomorrow morning at 7:00 AM.
-[ 71.77s][moshi] Certainly. And which airport are you travelling to tomorrow morning?
-[ 73.42s][user ] «backchannel» Yeah.
-[ 76.65s][user ] JFK. ⟨ret@77.41s⟩
-[ 77.73s][moshi] Your car ⟦⚡SPAN@79.25s: (tool result) A car is booked for 7:00 AM tomorrow to JFK, confirmation number is ABC-123, estimated cost is 7⟧ to JFK is booked for 7:00 AM, confirmation ABC-123, costing seventy-five dollars.
-      CALL: {"function": "book_ride", "arguments": {"pickup_time": "7:00 AM", "destination": "JFK", "pickup_location": "current location"}}
-[ 80.05s][user ] «backchannel» Exactly.
-[ 86.16s][user ] Great! That’s all. Thanks, Driaus.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.96s⟩ com.
+[  4.18s][moshi] Certainly, I’m now ⟦⚡SPAN@5.96s: (tool result) The website reported a temperature of 22 degrees Celsius and clear skies.⟧ monitoring weather dot example dot com for changes.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "wait_for": "update"}}
+[  9.73s][moshi] Right now, the site shows 22 degrees Celsius with clear skies.
+[ 11.46s][user ] «backchannel» Yeah.
+[ 14.38s][user ] That’s good. I’m thinking of going for a walk.
+[ 17.35s][moshi] A walk sounds lovely! It's a perfect day for it, based on that report.
+[ 19.62s][user ] «backchannel» Yeah, yeah.
+[ 22.92s][user ] Um… what time is sunset today?
+[ 26.16s][moshi] ⟨ret@25.93s⟩ Let me quickly check ⟦⚡SPAN@27.93s: (tool result) Sunset today is at 8:15 PM.⟧ the sunset time for you. Sunset will be at 8:15 PM this evening.
+[ 30.37s][user ] «backchannel» Yeah.
+[ 32.50s][moshi] That gives you plenty of daylight for a good long walk, doesn’t it?
+[ 34.40s][user ] «backchannel» Yeah.
+[ 36.44s][user ] Yeah, it does. Maybe I’ll walk to the bakery. Can you check if they're still open?
+[ 41.47s][moshi] ⟨ret@41.40s⟩ The bakery ⟦⚡SPAN@42.44s: (tool result) The bakery is open until 6:00 PM.⟧ is currently open and will close at 6:00 PM.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "bakery.example.com", "wait_for": "open_status"}}
+[ 45.93s][user ] Okay, good. I should head out soon then.
+[ 48.55s][moshi] Indeed, leaving shortly will give you ample time to enjoy your walk and visit the bakery.
+[ 52.05s][user ] «backchannel» Right.
+[ 53.69s][user ] Oh, can you set a reminder for me?
+[ 55.76s][moshi] «interrupted» Of course—
+[ 56.22s][user ] «interrupts_prev» For 5:30 to head ⟨ret@58.04s⟩ back.
+[ 58.35s][moshi] ⟦⚡SPAN@58.68s: (tool result) Reminder set for 5:30 PM: Head back.⟧ Certainly.
+      CALL: {"function": "set_reminder", "arguments": {"time": "5:30 PM", "task": "Head back"}}
+[ 59.34s][moshi] I’ve set a reminder for 5:30 PM to head back.
+[ 60.79s][user ] «backchannel» Oh.
+[ 63.50s][user ] Perfect, thank you.
+[ 64.76s][moshi] You're very welcome. Is there anything else I can assist you with today?

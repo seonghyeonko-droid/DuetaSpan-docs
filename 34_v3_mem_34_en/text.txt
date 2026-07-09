@@ -62,38 +62,41 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Yes, I’m hoping to get to that little bakery on Rue Montorgueil. Do yo
-      Oh, that's not bad at all. Is it walkable?
-  S2  Hmm, an hour…that’s quite a trek.
-      Quickest, definitely. I’m meeting a friend.
-  S3  Perfect. And could you check if they have any… peanut-containing items
-      Oh, good to know about the macarons. I love those.
-  S4  I— I mean, is there parking nearby?
-      Okay, that sounds… manageable. Thanks so much for your help, Hia.
+  S1  I need to get to my friend Isabelle’s place. She just moved.
+      Uh, it's 12 Rue de Rivoli. Do you know how long that will take?
+  S2  Mm-hmm.
+      Directions would be great, please. And is there a quicker way if I too
+  S3  That sounds… complicated.
+      Twenty-eight minutes? That’s longer than driving.
+  S4  What about parking near Isabelle’s?
+      Okay, good to know. Thanks, Hia.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][moshi] Hi Ava, I’m Hia. It’s lovely to connect with you. I understand you’re hoping I can help with some planning today?
-[  6.52s][user ] Yes, I’m hoping to get to that little bakery on Rue Montorgueil. Do you know how long that would take from here?
-[ 11.48s][moshi] ⟨ret@11.41s⟩ Of course, I ⟦⚡SPAN@12.85s: [2026-02-11] User's home address is 30 Oak Avenue.⟧ can certainly help with that. From 30 Oak Avenue, the bakery on Rue Montorgueil is about a twenty-five minute drive, depending on traffic.
-[ 21.18s][user ] Oh, that's not bad at all. Is it walkable?
-[ 23.72s][moshi] It is walkable, though it’s a longer journey—roughly one hour and fifteen minutes on foot.
-[ 26.99s][user ] «backchannel» Okay.
-[ 30.63s][user ] Hmm, an hour…that’s quite a trek.
-[ 33.09s][moshi] It is a bit of a distance, yes. Perhaps we could explore alternative routes or transport options?
-[ 36.09s][user ] «backchannel» Uh-huh.
-[ 39.23s][moshi] Thinking about your preferences, would you like me to prioritize the quickest route, or a more scenic one?
-[ 44.98s][user ] Quickest, definitely. I’m meeting a friend.
-[ 47.48s][moshi] ⟨ret@47.25s⟩ Certainly, the ⟦⚡SPAN@48.93s: [2026-02-11] User's home address is 30 Oak Avenue.⟧ quickest route is best. From 30 Oak Avenue, taking Avenue de l'Opéra will get you there fastest—approximately twenty minutes.
-[ 52.64s][user ] «backchannel» Mm-hmm.
-[ 56.99s][user ] Perfect. And could you check if they have any… peanut-containing items? I have an allergy.
-[ 63.24s][moshi] ⟨ret@63.17s⟩ Checking for allergens is ⟦⚡SPAN@65.17s: [2026-02-23] User is allergic to peanuts.⟧ a very good idea. You have a peanut allergy, and I’ll check their menu for potential allergens. The bakery's chocolate cake contains peanuts, and the macarons may contain traces. The pain au chocolat and croissants are safe.
-[ 69.98s][user ] «backchannel» Mhm.
-[ 79.27s][user ] Oh, good to know about the macarons. I love ⟨ret@82.03s⟩ those.
-[ 82.34s][moshi] It’s always best to ⟦⚡SPAN@84.03s: (tool result) Menu search complete. Results: Pain au chocolat - no peanuts. Croissant - no peanuts. Macaron as⟧ be cautious, especially with allergies. I’m glad we could check.
-      CALL: {"function": "search_menu", "arguments": {"business": "bakery on Rue Montorgueil", "allergen": "peanuts"}}
-[ 84.09s][user ] «backchannel» Right.
-[ 87.31s][user ] I— I mean, is there parking nearby?
-[ 89.26s][moshi] Parking on Rue Montorgueil can be challenging. There are a few garages within a ten-minute walk.
-[ 91.31s][user ] «backchannel» Yeah.
-[ 95.19s][user ] Okay, that sounds… manageable. Thanks so much for your help, Hia.
-[ 99.12s][moshi] You’re very welcome, Ava. I'm happy to assist. Remember, taking things one step at a time can make any transition feel smoother.
+[  0.00s][moshi] Hi Ava, I'm Hia. It’s lovely to connect with you and offer some guidance as you navigate life’s changes. What’s on your mind today?
+[  8.03s][user ] I need to get to my friend Isabelle’s place. She just moved.
+[ 11.55s][moshi] ⟨ret@11.48s⟩ Certainly, I ⟦⚡SPAN@12.44s: [2026-02-11] User's home address is 30 Oak Avenue.⟧ can help with that. Your journey will begin at 30 Oak Avenue, as that is your home address. Where does Isabelle live?
+[ 14.88s][user ] «backchannel» Uh-huh.
+[ 19.80s][user ] Uh, it's 12 Rue de Rivoli. Do you know how long that ⟨ret@23.41s⟩ will take?
+[ 23.81s][moshi] That's a fairly central ⟦⚡SPAN@25.41s: (tool result) Departure address: 30 Oak Avenue. Destination address: 12 Rue de Rivoli. Estimated travel time: ⟧ location. Let me check the current traffic conditions for you.
+      CALL: {"function": "get_travel_time", "arguments": {"origin": "30 Oak Avenue", "destination": "12 Rue de Rivoli", "mode": "driving"}}
+[ 28.64s][moshi] The drive to 12 Rue de Rivoli is estimated to take twenty-two minutes, covering eight and a half kilometers.
+[ 35.37s][user ] Mm-hmm.
+[ 35.95s][moshi] Would you like me to provide turn-by-turn directions, or are you familiar with the route?
+[ 42.81s][user ] Directions would be great, please. And is there a quicker way if I took the Metro?
+[ 47.12s][moshi] ⟨ret@47.05s⟩ Of course. Let’s explore ⟦⚡SPAN@49.05s: (tool result) Route: Head north on Oak Avenue. Turn right onto Boulevard Saint-Germain. Continue onto Rue de R⟧ both options. First, the driving directions… then we’ll look at the Metro.
+      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "12 Rue de Rivoli", "mode": "driving"}}
+[ 53.49s][moshi] Head north on Oak Avenue, then turn right onto Boulevard Saint-Germain, continuing onto Rue de Rivoli.
+[ 61.20s][user ] That sounds… ⟨ret@62.87s⟩ complicated.
+[ 63.17s][moshi] It can seem that way at ⟦⚡SPAN@64.87s: (tool result) Take line 4 from Saint-Sulpice to Châtelet. Transfer to line 1 towards Château de Vincennes. Exi⟧ first glance. Shall we look at the Metro route?
+      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "12 Rue de Rivoli", "mode": "metro"}}
+[ 66.84s][moshi] Take line four from Saint-Sulpice to Châtelet, transferring to line one, exiting at Hôtel de Ville.
+[ 70.68s][user ] «backchannel» Mm-hmm.
+[ 73.77s][user ] Twenty-eight minutes? That’s longer than driving.
+[ 77.00s][moshi] It appears so, though the Metro avoids potential traffic delays. Perhaps driving is best today.
+[ 83.71s][user ] What about parking near Isabelle’s?
+[ 85.65s][moshi] ⟨ret@85.58s⟩ A very practical ⟦⚡SPAN@87.58s: (tool result) Parking availability: Limited. Closest parking garage: Louvre Saint-Honoré, 200 meters. Cost: €5⟧ consideration. Let me check parking availability nearby.
+      CALL: {"function": "get_parking", "arguments": {"location": "12 Rue de Rivoli"}}
+[ 90.44s][moshi] Parking is limited. The closest garage, Louvre Saint-Honoré, is two hundred meters away and costs five euros per hour.
+[ 93.95s][user ] «backchannel» Mhm.
+[ 98.77s][user ] Okay, good to know. Thanks, Hia.
+[100.31s][moshi] You’re very welcome, Ava. I’m glad I could help with your travel plans. Is there anything else I can assist with today?

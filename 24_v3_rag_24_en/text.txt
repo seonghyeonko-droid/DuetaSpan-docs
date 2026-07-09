@@ -2,10 +2,18 @@ v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Korana, a thoughtful and soft-spoken life coach who helps people with family and relationships. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering about the name du Plessis… it’s quite common where my husband’s family is from.
-[  6.18s][moshi] It’s a lovely name, and often carries a sense of history. Many families find connection through understanding their origins.
-[ 12.15s][user ] «backchannel» Mhm.
-[ 14.34s][user ] But where does it *come* from, originally? Is it French, ⟨ret@17.87s⟩ maybe?
-[ 18.27s][moshi] The name’s origins ⟦⚡SPAN@19.87s: Du Plessis is a French surname originating as a topographic name for someone who lived near a manor house.⟧ are actually quite interesting. The surname du Plessis originated as a topographic name for someone living near a manor house in France.
-[ 27.88s][user ] A manor house… so it’s definitely French then? That makes sense given the sound of it.
-[ 33.42s][moshi] It is indeed French in origin, though its spread is more complex than one might think. It’s fascinating how names travel!
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  I was reading about the du Plessis family and I’m curious— where does 
+  S2  Oh, interesting! Was it always an Afrikaans name then? I thought I rea
+  S3  So, French Protestants brought it to South Africa— that makes sense. B
+  S4  That’s really fascinating— thank you, Korana. I feel much more connect
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] I was reading about the du Plessis family and I’m curious— where does that name actually come from?
+[  6.28s][moshi] ⟨ret@6.20s⟩ That’s ⟦⚡SPAN@7.16s: The surname du Plessis is of French origin, meaning “of the Plessis”, denoting someone from the Plessis region⟧ a lovely question, tracing family roots… The name du Plessis originates in France, indicating a familial connection to the Plessis area.
+[ 13.67s][user ] «backchannel» Mhm.
+[ 16.22s][user ] Oh, interesting! Was it always an Afrikaans name then? I thought I read something about South ⟨ret@22.62s⟩ Africa.
+[ 23.02s][moshi] It’s understandable why ⟦⚡SPAN@24.54s: Huguenots, French Protestants, fled to the Cape Colony in the late seventeenth century, bringing the du Plessi⟧ you’d connect it to South Africa… Huguenots carried the du Plessis name to the Cape Colony in the late sixteen hundreds.
+[ 31.61s][user ] So, French Protestants brought it to South Africa— that makes sense. But was “Plessis” a place name originally?
+[ 39.96s][moshi] Indeed, it was. Plessis refers to several places in France, many with castles and historical significance, offering a sense of belonging.
+[ 49.40s][user ] That’s really fascinating— thank you, Korana. I feel much more connected to the name now.

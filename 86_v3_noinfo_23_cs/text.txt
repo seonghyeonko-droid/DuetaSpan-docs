@@ -1,73 +1,67 @@
 v3_noinfo_23_cs src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스에 대한 도움을 제공하는 긍정적이고 지지적인 웰빙 코치인 Brae입니다. <system>
+SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스 관리를 돕는 긍정적이고 지지적인 웰니스 코치 Brae입니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  어, 작년 12월 24일 도쿄 날씨가 어땠어?
-      으, 추웠겠네. 있잖아, 신주쿠역 근처에 아늑한 카페 좀 찾아 줘.
-      거기 와이파이 있어?
-      좋겠다! 음… 혹시 지금 테이블 있는지 알아봐 줄래?
-  S2  좋아. 그럼 나 하나 예약해 줘.
-      잘 됐네! 거기 가는 제일 좋은 방법이 뭔데?
-      그거면 쉽겠네. 고마워. 내일 면접 때문에 좀 스트레스받아.
-      그래도 혹시 면접에서 멍해져서 질문에 대답 못하면 어떡해?
-  S3  흠, 그럴까. 면접 질문 연습할 수 있는 좋은 웹사이트 있어?
-      좋은 정보네. 그 링크 좀 보내 줄래?
-      고마워, 진짜 도움이 된다. 아, 그런데 지금 몇 시야?
-      알았어. 내일 아침 9시에 면접 있는 거 알려 줘.
-  S4  완벽해. 혹시 StellarTech에 대해 아는 거 있어?
-      직원이 200명? 괜찮은 규모네. 회사 문화는 어때?
-      아, 그렇구나. 아쉽네. 그래도 이제 좀 더 준비된 것 같아.
-      그래, 네 말이 맞아. 고마워, 브레.
+  S1  응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해.
+      음, 좀 추워 보이네. 지금 영업하는 근처에 아늑한 카페 좀 찾아 줄래?
+      완벽해! 그, 그러니까, 정말 좋게 들리네, 사실.
+      거기 혼자서 여섯 시 반에 자리 좀 예약해 줄래?
+  S2  오, 환상적이야! [laugh] 마음이 놓이네.
+      나도 거기서 읽을 좋은 책을 찾고 있어. 뭐… 커리어 전환에 관한 걸로?
+      구천구백구십구… 괜찮네. 그거 좀 사 줄래?
+      정말 고마워! 기분이 훨씬 좋아졌어.
+  S3  아, 그리고 도자기 수업에 대해서 아는 거 있어? 항상 해보고 싶었거든.
+      내 주변에 있는지 궁금해.
+      내일 두 시… 괜찮을지도. 그 수업은 얼마야?
+      알았어, 나쁘지 않네. 그럼 그거 신청해 줘.
+  S4  훌륭해! 이제 이번 주가 기대되기 시작했어.
+      주변에 미술 용품 살 데 좋은 곳 있어?
+      오. 뭐, 괜찮아. 고마워, Brae.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 어, 작년 12월 24일 도쿄 날씨가 어땠어?
-[  3.27s][moshi] ⟨ret@3.11s⟩ 알아볼게요. ⟦⚡SPAN@4.55s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of eleven de⟧ 작년 크리스마스 이브 도쿄는 대체로 흐렸고, 기온은 6도에서 11도 사이였어요.
+[  0.00s][user ] 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해.
+[  4.15s][moshi] ⟨ret@3.99s⟩ 네, ⟦⚡SPAN@5.19s: (tool result) The weather in Tokyo on December twenty-fourth, twenty twenty-three was clear with a high of sev⟧ 확인해 드릴게요… 작년 12월 24일 도쿄는 맑았고 최고 기온은 칠 도였어요.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
-[ 10.27s][user ] 으, 추웠겠네. 있잖아, 신주쿠역 근처에 아늑한 카페 좀 찾아 ⟨ret@14.82s⟩ 줘.
-[ 15.22s][moshi] 네, 근처 ⟦⚡SPAN@16.82s: (tool result) Found “Café Lumiere”, 0.3 kilometers from Shinjuku station, rated 4.5 stars with 120 reviews.⟧ 카페를 검색해 드릴게요. 신주쿠역에서 불과 0.3킬로미터 거리에 있는 카페 루미에르를 찾았는데, 후기도 아주 좋더라고요.
-      CALL: {"function": "Places_1_Search", "arguments": {"query": "cozy café", "location": "Shinjuku station"}}
-[ 20.08s][user ] «backchannel» 응.
-[ 26.42s][user ] 거기 와이파이 ⟨ret@27.36s⟩ 있어?
-[ 27.60s][moshi] 카페 ⟦⚡SPAN@28.32s: (tool result) Café Lumiere offers free Wi-Fi, outdoor seating, and accepts credit cards.⟧ 편의시설을 확인해 드릴게요. 네, 카페 루미에르는 무료 와이파이, 야외 좌석, 카드 결제를 지원하고 있어요.
-      CALL: {"function": "Places_1_GetDetails", "arguments": {"place_id": "Café Lumiere"}}
-[ 32.47s][user ] «backchannel» 음.
-[ 34.69s][user ] 좋겠다! 음… 혹시 지금 테이블 있는지 알아봐 줄래?
-[ 38.41s][moshi] ⟨ret@38.33s⟩ 알아볼게요. 카페 ⟦⚡SPAN@39.61s: (tool result) Café Lumiere has two tables available for one person right now.⟧ 루미에르에는 현재 1인용 테이블이 두 개 남아 있어요.
-      CALL: {"function": "Places_1_CheckAvailability", "arguments": {"place_id": "Café Lumiere", "party_size": 1}}
-[ 44.10s][user ] 좋아. 그럼 나 하나 예약해 ⟨ret@46.30s⟩ 줘.
-[ 46.54s][moshi] 네, 예약을 ⟦⚡SPAN@48.30s: (tool result) Reservation confirmed at Café Lumiere for one person at 3:15 PM today. Confirmation number is 78⟧ 진행해 드릴게요. 카페 루미에르 3시 15분 예약이 확정됐습니다. 확인 번호는 78923번이에요.
-      CALL: {"function": "Places_1_Reserve", "arguments": {"place_id": "Café Lumiere", "party_size": 1, "time": "now"}}
-[ 53.84s][user ] 잘 됐네! 거기 가는 제일 좋은 방법이 ⟨ret@56.78s⟩ 뭔데?
-[ 57.18s][moshi] 카페 가는 ⟦⚡SPAN@58.78s: (tool result) Walk 0.3 kilometers southeast on Shinjuku Station East Exit, turn left onto Shinjuku 3-chome, an⟧ 길을 안내해 드릴게요. 여기서 남동쪽으로 걸어가서 왼쪽으로 돌면 카페가 오른쪽에 있을 거예요. 아주 가까워요.
-      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"start": "my location", "end": "Café Lumiere"}}
-[ 66.07s][user ] 그거면 쉽겠네. 고마워. 내일 면접 때문에 좀 스트레스받아.
-[ 70.58s][moshi] 아, 면접은 긴장되기 마련이죠. 스트레스를 받는 건 당연해요. [happy] 자신의 강점과 준비한 내용을 떠올려 보세요.
-[ 77.35s][user ] 그래도 혹시 면접에서 멍해져서 질문에 대답 못하면 어떡해?
-[ 81.10s][moshi] 그건 흔한 걱정이에요. 면접에서 자주 나오는 질문들을 미리 연습해 보세요. 자신감을 키울 수 있을 거예요.
-[ 88.87s][user ] 흠, 그럴까. 면접 질문 연습할 수 있는 좋은 웹사이트 있어?
-[ 93.69s][moshi] 물론이죠! Glassdoor에는 다양한 직무에 맞춰 면접 질문이 많이 모여 있어요.
-[ 97.49s][user ] «backchannel» 응.
-[ 99.77s][user ] 좋은 정보네. 그 링크 좀 보내 줄래?
-[102.38s][moshi] ⟨ret@102.30s⟩ 네, ⟦⚡SPAN@103.58s: (tool result) URL opened in your default browser: https://www.glassdoor.com/Interview/index.htm.⟧ 보내 드릴게요. Glassdoor 면접 질문 페이지를 브라우저에서 열어 드렸어요.
-      CALL: {"function": "Browser_1_OpenURL", "arguments": {"url": "https://www.glassdoor.com/Interview/index.htm"}}
-[109.04s][user ] 고마워, 진짜 도움이 된다. 아, 그런데 지금 몇 ⟨ret@112.74s⟩ 시야?
-[112.89s][moshi] 시간을 확인해 볼게요. ⟦⚡SPAN@114.74s: (tool result) The current time is 3:08 PM.⟧ 현재 오후 3시 8분이에요. 카페 예약 시간까지 충분히 시간이 남았어요.
-      CALL: {"function": "Time_1_GetCurrentTime", "arguments": {}}
-[115.07s][user ] «backchannel» 어어.
-[119.80s][user ] 알았어. 내일 아침 9시에 면접 있는 거 알려 ⟨ret@122.91s⟩ 줘.
-[123.23s][moshi] 네, 알람을 설정해 ⟦⚡SPAN@124.91s: (tool result) Reminder set for tomorrow at 9:00 AM: Job interview.⟧ 드릴게요. 내일 오전 9시에 면접 알람을 설정했습니다.
-      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"time": "tomorrow 9:00 AM", "description": "Job interview"}}
-[126.11s][user ] «backchannel» 와.
-[128.94s][user ] 완벽해. 혹시 StellarTech에 대해 아는 거 ⟨ret@132.24s⟩ 있어?
-[132.39s][moshi] StellarTech에 대한 ⟦⚡SPAN@133.52s: (tool result) StellarTech is a software development company specializing in AI solutions, founded in 2015 with⟧ 정보를 찾아 드릴게요.
-      CALL: {"function": "Search_1_WebSearch", "arguments": {"query": "StellarTech company"}}
-[134.80s][moshi] StellarTech는 2015년에 설립된 AI 소프트웨어 회사이고, 직원은 약 200명 정도예요.
-[143.91s][user ] 직원이 200명? 괜찮은 규모네. 회사 문화는 ⟨ret@147.39s⟩ 어때?
-[147.79s][moshi] 회사 ⟦⚡SPAN@148.67s: (no information found)⟧ 문화에 대한 자세한 내용을 찾아볼게요.
-      CALL: {"function": "Search_1_WebSearch", "arguments": {"query": "StellarTech company culture"}}
-[150.57s][moshi] 죄송하지만, 현재 StellarTech의 회사 문화에 대한 구체적인 내용은 찾을 수 없었어요.
-[155.81s][user ] 아, 그렇구나. 아쉽네. 그래도 이제 좀 더 준비된 것 같아.
-[159.64s][moshi] 정말 잘 됐네요! 긍정적인 조치를 취하고 계시는 것 같아요. 자기 자신에 대한 믿음이 성공의 열쇠라는 것을 기억하세요.
-[167.33s][user ] 그래, 네 말이 맞아. 고마워, 브레.
-[170.13s][moshi] 천만에요. 면접 전에 필요한 것이 있으면 언제든지 말씀해 주세요. 아니면 그냥 이야기해도 좋아요.
+[  6.41s][user ] «backchannel» 응.
+[ 11.12s][user ] 음, 좀 추워 보이네. 지금 영업하는 근처에 아늑한 카페 좀 찾아 ⟨ret@15.92s⟩ 줄래?
+[ 16.32s][moshi] “The Daily Grind”가 ⟦⚡SPAN@17.92s: (tool result) “The Daily Grind” is two blocks away, open until eight PM, and has free Wi-Fi.⟧ 근처에 있고, 저녁 여덟 시까지 영업하며, 무료 와이파이를 제공해요.
+      CALL: {"function": "Cafe_1_FindCafes", "arguments": {"location": "current", "open_now": true, "ambiance": "cozy"}}
+[ 22.76s][user ] 완벽해! 그, 그러니까, 정말 좋게 들리네, 사실.
+[ 26.95s][moshi] 정말 편안하게 들리네요. 따뜻한 음료와 조용한 공간이 가끔은 딱 필요한 법이죠.
+[ 29.81s][user ] «backchannel» 음.
+[ 33.95s][user ] 거기 혼자서 여섯 시 반에 자리 좀 예약해 줄래?
+[ 37.39s][moshi] ⟨ret@37.31s⟩ ⟦⚡SPAN@37.81s: (tool result) Your table for one at The Daily Grind is confirmed for six thirty PM today.⟧ 네, 오늘 저녁 여섯 시 반에 The Daily Grind에 자리를 예약해 드렸어요.
+      CALL: {"function": "Cafe_1_ReserveTable", "arguments": {"cafe_name": "The Daily Grind", "date": "today", "time": "18:30", "party_size": 1}}
+[ 42.44s][user ] 오, 환상적이야! [laugh] 마음이 놓이네.
+[ 46.49s][moshi] 도와드릴 수 있어서 기뻐요. 하루에 자기 관리를 미리 계획하는 건 정말 좋은 일이에요.
+[ 52.26s][user ] 나도 거기서 읽을 좋은 책을 찾고 있어. 뭐… 커리어 전환에 관한 ⟨ret@56.83s⟩ 걸로?
+[ 57.07s][moshi] 네, Sarah Chen의 ⟦⚡SPAN@58.83s: (tool result) “Reinvent Your Career” by Sarah Chen is available as an ebook for nine ninety-nine.⟧ “Reinvent Your Career”가 이북으로 구천구백구십구에 판매 중이에요.
+      CALL: {"function": "Book_1_SearchBooks", "arguments": {"genre": "self-help", "keywords": "career transition"}}
+[ 62.66s][user ] 구천구백구십구… 괜찮네. 그거 좀 사 ⟨ret@65.37s⟩ 줄래?
+[ 65.77s][moshi] 네, 이북 “Reinvent ⟦⚡SPAN@67.37s: (tool result) “Reinvent Your Career” by Sarah Chen has been purchased and is available in your ebook library.⟧ Your Career”를 구매했고, 도서관에 있어요.
+      CALL: {"function": "Book_1_PurchaseBook", "arguments": {"book_title": "Reinvent Your Career", "book_author": "Sarah Chen", "format": "ebook"}}
+[ 69.94s][user ] 정말 고마워! 기분이 훨씬 좋아졌어.
+[ 73.02s][moshi] 천만에요! 기분이 나아지셨다니 정말 다행이에요. 작은 노력들이 큰 변화를 가져올 수 있다는 걸 기억하세요.
+[ 81.66s][user ] 아, 그리고 도자기 수업에 대해서 아는 거 있어? 항상 해보고 싶었거든.
+[ 86.19s][moshi] 정말 멋진 창의적인 활동이 될 것 같아요! 스트레스를 풀고 새로운 기술을 탐구하는 좋은 방법이죠.
+[ 92.67s][user ] 내 주변에 있는지 ⟨ret@94.02s⟩ 궁금해.
+[ 94.26s][moshi] 네, “Clayful ⟦⚡SPAN@95.30s: (tool result) “Clayful Creations” is one mile away and has a beginner class tomorrow at two PM.⟧ Creations”가 근처에 있고, 내일 오후 두 시에 초보자 수업이 있어요.
+      CALL: {"function": "Activity_1_FindClasses", "arguments": {"activity": "pottery", "location": "current"}}
+[ 97.98s][user ] «backchannel» 응.
+[ 99.77s][user ] 내일 두 시… 괜찮을지도. 그 수업은 ⟨ret@103.06s⟩ 얼마야?
+[103.22s][moshi] 네, ⟦⚡SPAN@104.18s: (tool result) The beginner pottery class at Clayful Creations tomorrow costs forty-five dollars.⟧ 수업료는 사십오 달러예요.
+      CALL: {"function": "Activity_1_GetClassPrice", "arguments": {"class_name": "pottery", "provider": "Clayful Creations", "date": "tomorrow"}}
+[105.94s][user ] 알았어, 나쁘지 않네. 그럼 그거 신청해 줘.
+[109.10s][moshi] ⟨ret@108.78s⟩ 네, 내일 오후 두 ⟦⚡SPAN@110.78s: (tool result) You are registered for the beginner pottery class at Clayful Creations tomorrow at two PM.⟧ 시 도자기 수업에 신청해 드렸어요!
+      CALL: {"function": "Activity_1_RegisterClass", "arguments": {"class_name": "pottery", "provider": "Clayful Creations", "date": "tomorrow", "time": "14:00"}}
+[110.22s][user ] «backchannel» 어어.
+[112.44s][user ] 훌륭해! 이제 이번 주가 기대되기 시작했어.
+[115.96s][moshi] 정말 기쁩니다. 자신을 위한 시간을 갖고 새로운 관심사를 탐구하는 것은 전반적인 웰빙에 매우 중요해요.
+[119.50s][user ] «backchannel» 응.
+[124.19s][user ] 주변에 미술 용품 살 데 좋은 ⟨ret@126.14s⟩ 곳 있어?
+[126.54s][moshi] 네, ⟦⚡SPAN@127.50s: (no information found)⟧ 죄송하지만 근처에 미술 용품점은 찾을 수 없었어요.
+      CALL: {"function": "Shop_1_FindShops", "arguments": {"category": "art supplies", "location": "current"}}
+[128.54s][user ] «backchannel» 어.
+[131.98s][user ] 오. 뭐, 괜찮아. 고마워, Brae.
+[135.06s][moshi] 천만에요! 자신을 아끼고, 카페 방문과 도자기 수업을 즐기세요.

@@ -1,62 +1,68 @@
 v3_chain_05_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 수면 및 휴식을 돕는 차분하고 공감적인 개인 가이드인 Dar입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 수면과 휴식을 돕는 차분하고 공감적인 개인 가이드, Dar입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  주니 카페의 가격대는 어떻게 돼요?
-      달러 표시 세 개면 대략 얼마 정도일까요?
-      아, 그렇군요. 그럼 예약은 어떻게 해야 할까요?
-      혹시 지금 당장 예약 가능한 시간대가 있나요?
-  S2  네, 두 명이요. 저녁 여덟시 반으로 예약해주세요.
-      네, 보내주세요.
-      주니 카페는 어떤 종류의 음식을 파나요?
-  S3  구운 닭고기가 그렇게 유명한가요?
-      그럼 주니 카페까지 가는 가장 빠른 길은 어떻게 되나요? 지금 제 위치 기준으로 알려주세요.
-      십오 분이면 괜찮겠네요. 주차는 어떻게 해야 할까요?
-  S4  발레 파킹이 더 편하겠네요. 혹시 주니 카페 근처에 다른 맛집도 추천해주실 수 있나요?
-      Foreign Cinema는 어떤 음식인가요?
-      영화도 볼 수 있다니, 좋네요.
+  S1  주니 카페 가격대는 어떻게 돼요?
+      아, 그렇군요. 그럼 예약은 어떻게 해야 하나요?
+      음… 저녁 7시쯤으로 부탁드려요. 두 명이에요.
+      와, 정말 고마워요!
+  S2  네, 부탁드려요. 지금 제 위치에서요.
+      10분 정도면 괜찮겠네요. 혹시 주차는 어떻게 해야 하나요?
+      30달러는 좀 비싸네요…
+      아니요, 괜찮아요. 그럼… —
+  S3  혹시 주니 카페에 애견 동반이 가능한가요?
+      아, 그렇군요. 그럼 저희는 다른 곳을 가봐야겠네요.
+      네, 부탁드려요. 비슷한 분위기의 곳으로요.
+      포린 시네마… 이름이 예쁘네요.
+  S4  네, 부탁드려요.
+      15분이면 괜찮아요.
+      네, 부탁드려요. 저녁 7시 반으로 두 명 예약해주세요.
+      정말 감사합니다, 다 도와주셔서.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] 주니 카페의 가격대는 어떻게 ⟨ret@1.55s⟩ 돼요?
-[  1.86s][moshi] ⟦⚡SPAN@2.35s: (tool result) Zuni Cafe is located at 1658 Market St, San Francisco, CA 94102 and its price range is $$$ (expe⟧ 주니 카페에 대해 알아보고 있어요. 주니 카페는 꽤 비싼 편이에요. 가격대가 달러 표시 세 개입니다.
-[  8.28s][user ] 달러 표시 세 개면 대략 얼마 정도일까요?
-[ 11.53s][moshi] ⟨ret@11.46s⟩ 달러 ⟦⚡SPAN@12.50s: (tool result) A price range of '$$$' typically means entrees cost $30–60.⟧ 표시 세 개는 일반적으로… 보통 메인 요리가 삼십 달러에서 육십 달러 정도예요.
-[ 13.58s][user ] «backchannel» Right.
-[ 16.88s][user ] 아, 그렇군요. 그럼 예약은 어떻게 해야 할까요?
-[ 19.80s][moshi] 주니 카페 예약은 온라인으로 하실 수 있습니다.
-[ 21.07s][user ] «backchannel» Yeah.
-[ 22.64s][user ] 혹시 지금 당장 예약 가능한 시간대가 ⟨ret@25.07s⟩ 있나요?
-[ 25.30s][moshi] ⟦⚡SPAN@25.71s: (tool result) Zuni Cafe has reservations available today at 6:30 PM and 8:45 PM for a party of 2.⟧ 지금 예약 가능 시간대를 확인해 볼게요.
-      CALL: {"function": "maps_restaurant_reservation", "arguments": {"restaurant_name": "Zuni Cafe", "date": "today", "party_size": "2"}}
-[ 27.63s][moshi] 오늘 주니 카페는 저녁 여섯시 반과 여덟시 사십오분에 예약 가능합니다. 두 분이세요?
-[ 29.92s][user ] «backchannel» Uh-huh.
-[ 33.44s][user ] 네, 두 명이요. 저녁 여덟시 반으로 ⟨ret@36.85s⟩ 예약해주세요.
-[ 37.00s][moshi] 네, ⟦⚡SPAN@37.81s: (tool result) Reservation confirmed at Zuni Cafe for 2 people at 8:45 PM today. Confirmation number is ZXCV123⟧ 여덟시 반으로 예약 진행하겠습니다.
-      CALL: {"function": "maps_reserve_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "date": "today", "time": "8:45 PM", "party_size": "2"}}
-[ 40.20s][moshi] 네, 예약이 완료되었습니다. 확인 번호는 ZXCV1234입니다.
-[ 41.99s][user ] «backchannel» Really?
-[ 45.08s][moshi] 예약 확인 문자 메시지를 보내드릴까요?
-[ 48.11s][user ] 네, 보내주세요. ⟨ret@48.98s⟩
-[ 49.36s][moshi] 알겠습니다. 예약 ⟦⚡SPAN@50.66s: (tool result) SMS sent successfully to +15551234567.⟧ 확인 메시지를 보내드렸습니다.
-      CALL: {"function": "send_sms", "arguments": {"phone_number": "+15551234567", "message": "Your reservation at Zuni Cafe is confirmed for 2 people at 8:45 PM today. Confirmation number: ZXCV1234"}}
-[ 52.01s][moshi] 예약 확인 메시지가 전송되었습니다.
-[ 54.51s][user ] 주니 카페는 어떤 종류의 음식을 ⟨ret@56.95s⟩ 파나요?
-[ 57.26s][moshi] 주니 카페는 주로 ⟦⚡SPAN@58.95s: (tool result) Zuni Cafe specializes in Californian cuisine, particularly its roast chicken, and offers a seaso⟧ 미국식 요리를 제공합니다. 특히 닭고기 요리가 유명합니다.
-[ 61.89s][moshi] 캘리포니아 요리를 전문으로 하고, 특히 구운 닭고기가 유명합니다. 계절 메뉴도 제공합니다.
-[ 68.31s][user ] 구운 닭고기가 그렇게 유명한가요?
-[ 70.57s][moshi] 네, 많은 사람들이 주니 카페의 구운 닭고기를 최고로 꼽습니다.
-[ 74.94s][user ] 그럼 주니 카페까지 가는 가장 빠른 길은 어떻게 되나요? 지금 제 위치 기준으로 알려주세요.
-[ 79.96s][moshi] ⟨ret@79.88s⟩ 현재 위치를 기준으로 ⟦⚡SPAN@81.88s: (tool result) Driving directions to Zuni Cafe: Start heading west on Pine St, turn right onto Taylor St, then ⟧ 주니 카페까지 가는 가장 빠른 길을 찾아보겠습니다.
+[  0.00s][user ] 주니 카페 가격대는 어떻게 ⟨ret@1.53s⟩ 돼요?
+[  1.84s][moshi] 주니 카페에 ⟦⚡SPAN@3.13s: (tool result) Zuni Cafe is located at 1658 Market St, San Francisco, CA 94102, and its price range is $$$ (exp⟧ 대한 정보를 찾아볼게요. 주니 카페는 샌프란시스코에 있고, 가격대가 비싼 편이에요.
+[  4.13s][user ] «backchannel» 네네.
+[  8.54s][user ] 아, 그렇군요. 그럼 예약은 어떻게 해야 하나요?
+[ 11.51s][moshi] 주니 카페 예약을 도와드릴게요. 몇 시쯤 예약하시고 싶으세요?
+[ 16.37s][user ] 음… 저녁 7시쯤으로 부탁드려요. 두 명이에요. ⟨ret@19.81s⟩
+[ 20.04s][moshi] 주니 카페 저녁 ⟦⚡SPAN@21.81s: (tool result) Reservation confirmed at Zuni Cafe for 2 people at 7:00 PM on November 8, 2024. Confirmation num⟧ 7시에 두 분 예약이 완료됐습니다. 확인 번호는 ZXCV123이에요.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant": "Zuni Cafe", "time": "19:00", "party_size": 2}}
+[ 22.04s][user ] «backchannel» 네.
+[ 26.18s][user ] 와, 정말 고마워요!
+[ 27.86s][moshi] 천만에요. 혹시 주니 카페까지 가는 길을 안내해 드릴까요?
+[ 29.64s][user ] «backchannel» 네.
+[ 31.63s][user ] 네, 부탁드려요. 지금 제 위치에서요.
+[ 34.55s][moshi] ⟨ret@34.32s⟩ 현재 위치에서 주니 ⟦⚡SPAN@36.32s: (tool result) Driving directions to Zuni Cafe: Start on Geary St, turn left onto Taylor St, then right onto Ma⟧ 카페까지 차로 약 10분 정도 걸립니다. 기어리 가를 따라 테일러 가로 좌회전하신 다음, 마켓 가로 우회전하시면 됩니다.
       CALL: {"function": "maps_directions", "arguments": {"destination": "Zuni Cafe", "travel_mode": "driving"}}
-[ 85.06s][moshi] 파인 스트리트에서 서쪽으로 가세요. 테일러 스트리트에서 우회전, 마켓 스트리트에서 좌회전하면 됩니다. 예상 소요 시간은 십오 분입니다.
-[ 93.84s][user ] 십오 분이면 괜찮겠네요. 주차는 어떻게 해야 ⟨ret@96.79s⟩ 할까요?
-[ 97.10s][moshi] 주니 카페 ⟦⚡SPAN@98.15s: (tool result) Valet parking is available at Zuni Cafe for $10 per hour. Street parking is limited.⟧ 근처에 발레 파킹이 가능합니다.
-[ 99.51s][moshi] 주니 카페에서 시간당 십 달러에 발레 파킹을 이용하실 수 있습니다. 길가 주차는 제한적입니다.
-[107.08s][user ] 발레 파킹이 더 편하겠네요. 혹시 주니 카페 근처에 다른 맛집도 추천해주실 수 있나요?
-[112.37s][moshi] 주니 카페 근처에는 Foreign Cinema라는 레스토랑도 유명합니다.
-[116.52s][user ] Foreign Cinema는 어떤 ⟨ret@118.48s⟩ 음식인가요?
-[118.63s][moshi] Foreign ⟦⚡SPAN@119.36s: (tool result) Foreign Cinema serves Californian-Mediterranean cuisine and shows independent films in its outdo⟧ Cinema는 멕시코 음식과 영화 상영을 함께 즐길 수 있는 곳입니다.
-[123.44s][moshi] 캘리포니아-지중해 요리를 제공하고, 야외 파티오에서 독립 영화를 상영합니다.
-[129.06s][user ] 영화도 볼 수 있다니, 좋네요.
-[131.32s][moshi] 네, 특별한 경험을 하실 수 있을 거예요.
+[ 43.45s][user ] 10분 정도면 괜찮겠네요. 혹시 주차는 어떻게 해야 ⟨ret@46.82s⟩ 하나요?
+[ 47.21s][moshi] ⟦⚡SPAN@47.78s: (tool result) Nearby parking options: Union Square Garage ($30/hour), Fifth & Mission Garage ($25/hour). Stree⟧ 주니 카페 근처 주차 정보를 알아볼게요.
+      CALL: {"function": "maps_parking", "arguments": {"location": "Zuni Cafe"}}
+[ 49.96s][moshi] 주니 카페 근처에 유니온 스퀘어 주차장과 피프스 앤 미션 주차장이 있습니다. 시간당 요금은 각각 30달러, 25달러입니다. 길가 주차는 공간이 제한적이에요.
+[ 55.26s][user ] «backchannel» 음.
+[ 60.59s][user ] 30달러는 좀 비싸네요…
+[ 62.41s][moshi] 좀 비싼 편이죠. 다른 주차장을 찾아볼까요?
+[ 65.47s][user ] 아니요, 괜찮아요. 그럼… —
+[ 67.34s][user ] 혹시 주니 카페에 애견 동반이 ⟨ret@69.93s⟩ 가능한가요?
+[ 70.32s][moshi] 주니 ⟦⚡SPAN@71.21s: (tool result) Zuni Cafe does not allow pets inside the restaurant. Outdoor seating may be available.⟧ 카페는 애견 동반이 허용되지 않습니다.
+[ 73.08s][user ] 아, 그렇군요. 그럼 저희는 다른 곳을 가봐야겠네요.
+[ 76.70s][moshi] 알겠습니다. 혹시 다른 레스토랑을 추천해 드릴까요? 애견 동반이 가능한 곳으로요.
+[ 82.43s][user ] 네, 부탁드려요. 비슷한 분위기의 곳으로요. ⟨ret@84.81s⟩
+[ 85.13s][moshi] 비슷한 분위기의 ⟦⚡SPAN@86.81s: (tool result) Foreign Cinema is a dog-friendly restaurant with a similar Californian cuisine and ambiance to Z⟧ 애견 동반 가능 레스토랑으로는 포린 시네마가 있습니다. 캘리포니아 요리를 제공하며, 미션 거리에 위치해 있습니다.
+      CALL: {"function": "maps_search", "arguments": {"query": "dog-friendly restaurants similar to Zuni Cafe", "location": "San Francisco"}}
+[ 89.81s][user ] «backchannel» 네.
+[ 94.71s][user ] 포린 시네마… 이름이 예쁘네요.
+[ 97.48s][moshi] 이름처럼 분위기도 좋다고 하네요. 포린 시네마까지 가는 길을 안내해 드릴까요?
+[ 99.77s][user ] «backchannel» 그렇죠.
+[103.06s][user ] 네, ⟨ret@103.79s⟩ 부탁드려요.
+[104.18s][moshi] 미션 거리로 가기 ⟦⚡SPAN@105.79s: (tool result) Driving directions to Foreign Cinema: Head south on Market St, turn right onto 10th St, then lef⟧ 위해 마켓 가에서 10번가를 우회전한 다음, 미션 가로 좌회전하시면 됩니다. 차로 약 15분 정도 걸립니다.
+      CALL: {"function": "maps_directions", "arguments": {"destination": "Foreign Cinema", "travel_mode": "driving"}}
+[112.23s][user ] 15분이면 괜찮아요.
+[113.70s][moshi] 혹시 포린 시네마에 미리 예약해야 할까요?
+[116.06s][user ] 네, 부탁드려요. 저녁 7시 반으로 두 명 ⟨ret@118.89s⟩ 예약해주세요.
+[119.20s][moshi] 포린 시네마 ⟦⚡SPAN@120.89s: (tool result) Reservation confirmed at Foreign Cinema for 2 people at 7:30 PM on November 8, 2024. Confirmatio⟧ 저녁 7시 반 두 분 예약이 완료됐습니다. 확인 번호는 QWERTY567이에요.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant": "Foreign Cinema", "time": "19:30", "party_size": 2}}
+[123.67s][user ] «backchannel» 네.
+[126.08s][user ] 정말 감사합니다, 다 도와주셔서.
+[127.87s][moshi] 천만에요. 즐거운 저녁 식사 되세요. 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.

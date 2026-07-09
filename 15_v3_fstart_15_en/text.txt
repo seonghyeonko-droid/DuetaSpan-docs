@@ -4,32 +4,36 @@ SYSTEM: <system> You are Helion, a upbeat and supportive counselor who helps peo
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What are the latitude and longitude of the Sydney Opera House?
-      That’s helpful. Can you find me a nice hotel nearby?
-  S2  Is that one pet-friendly?
-  S3  I mean, do they allow dogs?
-      Three hundred sounds much better. Can you book a room there for two ni
-  S4  Wonderful! Thanks so much.
+      That’s helpful. Can you show me nearby hotels?
+  S2  Three-fifty… hmm, are there any cheaper options?
+      Actually, forget the hotels. What’s the weather like there right now?
+  S3  Maybe. Could you find me a nice Italian restaurant nearby?
+      Sounds good. Is it expensive?
+  S4  Okay, that's reasonable. Thanks for your help!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  3.87s][moshi] ⟨ret@3.80s⟩ Certainly, ⟦⚡SPAN@4.92s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ I can find that for you. The Sydney Opera House’s coordinates are -33.8568 latitude and 151.2153 longitude.
-[  9.43s][user ] «backchannel» Oh.
-[ 14.31s][user ] That’s helpful. Can you find me a nice hotel ⟨ret@17.93s⟩ nearby?
-[ 18.17s][moshi] Absolutely, let's look for ⟦⚡SPAN@19.53s: (tool result) The Park Hyatt Sydney is 0.5km away and costs $650 per night.⟧ hotels close to the Opera House. The Park Hyatt Sydney is half a kilometer away and costs six hundred and fifty dollars a night.
-      CALL: {"function": "hotels_search", "arguments": {"location": "Sydney Opera House", "radius": "1km"}}
-[ 26.46s][user ] Is that one pet-friendly?
-[ 28.71s][moshi] «interrupted» Oh—
-[ 28.71s][user ] «interrupts_prev» I mean, do they allow ⟨ret@30.52s⟩ dogs?
-[ 30.76s][moshi] ⟦⚡SPAN@31.02s: (tool result) The Park Hyatt Sydney does not allow pets.⟧ That's a good question.
-      CALL: {"function": "hotels_details", "arguments": {"hotel_name": "Park Hyatt Sydney", "amenity": "pet-friendly"}}
-[ 32.10s][moshi] Unfortunately, the Park Hyatt Sydney does not permit pets.
-[ 33.40s][user ] «backchannel» Yeah.
-[ 35.42s][moshi] ⟨ret@35.34s⟩ Perhaps we could look ⟦⚡SPAN@36.62s: (tool result) The Harbour Rocks Hotel Sydney allows pets and costs $300 per night.⟧ at other hotels then?
-      CALL: {"function": "hotels_search", "arguments": {"location": "Sydney Opera House", "radius": "1km", "amenity": "pet-friendly"}}
-[ 37.67s][moshi] The Harbour Rocks Hotel Sydney welcomes pets and costs three hundred dollars per night.
-[ 40.76s][user ] «backchannel» Yeah, totally.
-[ 42.56s][user ] Three hundred sounds much better. Can you book a room there for two nights, starting next Friday?
-[ 47.48s][moshi] ⟨ret@47.41s⟩ I can ⟦⚡SPAN@48.53s: (tool result) Reservation confirmed. Harbour Rocks Hotel Sydney, two nights from next Friday, confirmation num⟧ certainly book that for you. Your reservation at the Harbour Rocks Hotel is confirmed, with confirmation number 789234.
-      CALL: {"function": "hotels_reserve", "arguments": {"hotel_name": "Harbour Rocks Hotel Sydney", "check_in": "next Friday", "nights": "2"}}
-[ 54.72s][user ] Wonderful! Thanks so much.
-[ 56.80s][moshi] You’re very welcome. It’s lovely to help plan a trip that includes your furry friend—family vacations are so important.
+[  3.50s][moshi] ⟨ret@3.43s⟩ Certainly, ⟦⚡SPAN@4.55s: (tool result) The Sydney Opera House is located at -33.8568 degrees latitude and 151.2153 degrees longitude.⟧ I can find that for you. The Sydney Opera House’s coordinates are -33.8568 latitude and 151.2153 longitude.
+[  8.65s][user ] «backchannel» Oh.
+[ 13.18s][user ] That’s helpful. Can you show me nearby ⟨ret@16.25s⟩ hotels?
+[ 16.49s][moshi] Absolutely, let’s ⟦⚡SPAN@17.61s: (tool result) The Fullerton Hotel Sydney has a rating of 4.6 stars and costs $350 per night.⟧ see what’s available. The Fullerton Hotel Sydney is rated 4.6 stars and costs three hundred and fifty dollars a night.
+      CALL: {"function": "maps_hotels", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
+[ 23.63s][user ] Three-fifty… hmm, are there any cheaper options?
+[ 27.27s][moshi] «interrupted» I can certainly look for more affordable hotels—
+[ 29.36s][user ] «interrupts_prev» Actually, forget the hotels. What’s the weather like there right ⟨ret@33.78s⟩ now?
+[ 34.02s][moshi] Ah, ⟦⚡SPAN@34.90s: (tool result) The current temperature in Sydney is 22 degrees Celsius with partly cloudy skies.⟧ alright. Let’s check the current conditions in Sydney.
+      CALL: {"function": "weather_current", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
+[ 37.53s][moshi] It is currently twenty-two degrees Celsius and partly cloudy in Sydney.
+[ 39.05s][user ] «backchannel» Yeah.
+[ 41.37s][moshi] That’s pleasant weather for exploring. Perhaps you’re planning a visit?
+[ 43.99s][user ] «backchannel» Yeah, totally.
+[ 45.30s][user ] Maybe. Could you find me a nice Italian restaurant nearby?
+[ 49.78s][moshi] ⟨ret@49.54s⟩ Of course, ⟦⚡SPAN@50.50s: (tool result) Lucio Pizzeria is 0.8 kilometers away and has a 4.4-star rating.⟧ let's find a good Italian place. Lucio Pizzeria is point eight kilometers away and has a four point four star rating.
+      CALL: {"function": "maps_restaurants", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "cuisine": "Italian"}}
+[ 56.36s][user ] Sounds good. Is it expensive?
+[ 58.46s][moshi] ⟨ret@58.38s⟩ Let me check their price range for ⟦⚡SPAN@60.14s: (tool result) Lucio Pizzeria’s average cost per person is $60.⟧ you.
+      CALL: {"function": "maps_restaurant_details", "arguments": {"restaurant_name": "Lucio Pizzeria"}}
+[ 60.31s][moshi] Lucio Pizzeria averages sixty dollars per person.
+[ 61.44s][user ] «backchannel» Mhm.
+[ 63.98s][user ] Okay, that's reasonable. Thanks for your help!
+[ 66.86s][moshi] You’re very welcome! Planning a trip can be exciting, and I’m glad I could assist.

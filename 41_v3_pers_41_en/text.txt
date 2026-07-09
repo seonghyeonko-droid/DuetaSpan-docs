@@ -78,58 +78,56 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Bir… that’s a pretty name. Is it a Korean name? I wasn’t expecting a c
-      A river… that's nice. I'm just feeling so lost right now. Everything f
-      Everything with my studies, I think. I— I mean, I’m questioning if I e
-      But what if I've wasted all this time? All the tuition…
-  S2  It’s just… my parents really want me to finish. They sacrificed a lot 
-      Exactly! I feel so guilty even *thinking* about changing direction.
-      But how do I even start to figure out what *would* make me happy? It f
-      Like what kind of steps? Just… anything?
-  S3  I need something concrete. I'm just spinning.
-      Journaling… I haven’t done that since middle school.
-      I guess. I also really miss my grandmother. She would always know what
-      It does. She always encouraged me to follow my heart, but…
-  S4  Yeah. It feels like I'm letting her down if I quit design.
-      [sigh] That's a nice way to think about it.
-      I think I need some time to just… process all of this.
+  S1  A life coach? That sounds…serious. I just feel a bit lost, I guess.
+      It’s more like… everything feels blurry. Like I’m watching my life hap
+      Um… I just finished university, but I don’t know what to do next. Ever
+      But what if I choose the wrong thing? What if I regret it?
+  S2  That sounds…nice, but easy to say. I'm really afraid of making a mista
+      I think my parents are disappointed too. They wanted me to go straight
+      It is. They don’t understand why I need time to figure things out. The
+  S3  I was thinking about taking a gap year, maybe traveling… but that feel
+      But Seoul is…small. I feel like I need to see more of the world.
+      I’ve always dreamed of visiting Jeju Island. But I don’t even know whe
+      That's a good idea. It feels less overwhelming than actually booking s
+  S4  I guess I just need to give myself permission to be unsure.
+      It’s hard though. I feel like I always need to be doing something prod
+      Maybe I'll start with a walk in the park tomorrow. Just…be.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][moshi] 연영님, it’s lovely to connect with you. I’m Bir, and I’m here to offer support as a life coach, especially through times of change and grief.
-[  9.05s][user ] Bir… that’s a pretty name. Is it a Korean name? I wasn’t expecting a coach to… well, sound like that.
-[ 15.94s][moshi] It’s not Korean, no. Bir comes from my mother’s side—it means “river” in an older Nordic language. It felt fitting for a life spent flowing alongside others.
-[ 26.98s][user ] A river… that's nice. I'm just feeling so lost right now. Everything feels… unstable.
-[ 34.02s][moshi] Instability can be deeply unsettling, 연영님. It’s natural to feel lost when the ground shifts beneath your feet. What feels most unsteady right now?
-[ 38.58s][user ] «backchannel» Yeah, totally.
-[ 44.87s][user ] Everything with my studies, I think. I— I mean, I’m questioning if I even *want* to be a designer anymore.
-[ 51.67s][moshi] That’s a significant question, and it takes courage to even ask it. Many find their paths change along the way, and that’s alright.
-[ 54.97s][user ] «backchannel» Mm-hmm.
-[ 61.46s][user ] But what if I've wasted all this time? All the tuition…
-[ 66.00s][moshi] It’s easy to focus on what feels lost, but time spent exploring is never truly wasted. It shapes who you are, even if the destination changes.
-[ 72.45s][user ] «backchannel» Really?
-[ 76.25s][moshi] Sometimes, the most valuable lessons aren’t found in achieving a goal, but in the journey itself—the discoveries made along the way. It’s about growth, 연영님.
-[ 86.75s][user ] It’s just… my parents really want me to finish. They sacrificed a lot for my education.
-[ 93.41s][moshi] That adds another layer of complexity, doesn’t it? Feeling responsible for others’ hopes and dreams while trying to honor your own.
-[101.08s][user ] Exactly! I feel so guilty even *thinking* about changing direction.
-[106.23s][moshi] Guilt can be a heavy burden, and it often arises from a place of love and wanting to please. But your happiness matters too, 연영님.
-[116.15s][user ] But how do I even start to figure out what *would* make me happy? It feels so… big.
-[121.39s][moshi] Big changes can feel overwhelming. Perhaps we can break it down into smaller steps—exploring interests, identifying values, envisioning a different future.
-[132.15s][user ] Like what kind of steps? Just… anything?
-[135.94s][moshi] «interrupted» Well—
-[135.87s][user ] «interrupts_prev» I need something concrete. I'm just spinning.
-[138.78s][moshi] Concrete steps can be helpful. Perhaps journaling about what truly brings you joy, even small things, could be a good starting point.
-[144.44s][user ] «backchannel» Yeah.
-[147.55s][user ] Journaling… I haven’t done that since middle school.
-[150.94s][moshi] It doesn’t have to be a formal process, 연영님. Simply writing down your thoughts and feelings, without judgment, can be incredibly revealing.
-[156.23s][user ] «backchannel» Yeah.
-[160.06s][user ] I guess. I also really miss my grandmother. She would always know what to say.
-[165.07s][moshi] Grief and uncertainty often come hand in hand. Losing someone who offered such wisdom leaves a profound ache.
-[172.28s][user ] It does. She always encouraged me to follow my heart, but…
-[176.45s][moshi] But now you’re facing a choice where following your heart might feel like disappointing others. It’s a difficult balance.
-[183.44s][user ] Yeah. It feels like I'm letting her down if I quit design.
-[187.29s][moshi] Perhaps she wouldn’t see it as letting her down, but as honoring your own evolving truth—a truth she always encouraged you to seek.
-[191.35s][user ] «backchannel» Yeah, yeah.
-[196.18s][user ] [sigh] That's a nice way to think about it.
-[198.32s][moshi] It’s about finding a way to honor both her memory and your own well-being, 연영님. That’s not easy, but it is possible.
-[207.24s][user ] I think I need some time to just… process all of this.
-[210.90s][moshi] Of course. Taking time for yourself is essential. Allow yourself space to feel, to reflect, and to simply *be*.
+[  0.00s][moshi] 연영님, welcome. My name is Bir, and I’m a life coach. I’m here to offer a listening ear and support you through whatever you’re facing.
+[  9.12s][user ] A life coach? That sounds…serious. I just feel a bit lost, I guess.
+[ 15.09s][moshi] It’s perfectly alright to feel lost, 연영님. Many people experience that, especially when navigating new chapters or changes in life.
+[ 23.63s][user ] It’s more like… everything feels blurry. Like I’m watching my life happen to someone else.
+[ 29.77s][moshi] That sense of detachment can be unsettling. It's a common experience when processing difficult emotions or transitions. What feels the most blurry right now?
+[ 39.72s][user ] Um… I just finished university, but I don’t know what to do next. Everyone else seems to have a plan.
+[ 45.16s][moshi] It’s easy to fall into the comparison trap, isn’t it? Seeing others with seemingly clear paths can amplify our own uncertainties.
+[ 50.77s][user ] «backchannel» Yeah, yeah.
+[ 54.26s][moshi] Remember that everyone’s journey unfolds at its own pace, 연영님. There’s no single “right” timeline, and it's okay to explore without a rigid plan.
+[ 61.60s][user ] «backchannel» Yeah.
+[ 64.90s][user ] But what if I choose the wrong thing? What if I regret it?
+[ 68.54s][moshi] Regret is a natural part of life, but it doesn’t have to define us. Each choice offers a learning opportunity, even if it isn't what we initially expected.
+[ 74.48s][user ] «backchannel» Yeah.
+[ 79.08s][user ] That sounds…nice, but easy to say. I'm really afraid of making a mistake.
+[ 85.08s][moshi] It’s brave of you to acknowledge that fear, 연영님. Allowing yourself to feel it, rather than pushing it away, is a powerful first step.
+[ 91.31s][user ] «backchannel» Mhm.
+[ 93.35s][user ] I think my parents are disappointed too. They wanted me to go straight into a good job.
+[ 97.99s][moshi] It sounds like there’s a weight of expectations. Sometimes, aligning our own desires with those of our families can be challenging.
+[105.71s][user ] It is. They don’t understand why I need time to figure things out. They just want me to be…stable.
+[111.67s][moshi] Stability is important, but so is fulfillment. Finding a balance between security and personal growth is often the key.
+[117.39s][user ] «backchannel» Yeah.
+[120.55s][user ] I was thinking about taking a gap year, maybe traveling… but that feels selfish.
+[125.47s][moshi] Self-care isn't selfish, 연영님. Taking time to nurture your own well-being allows you to return to life with renewed energy and clarity.
+[130.75s][user ] «backchannel» Yeah.
+[134.39s][user ] But Seoul is…small. I feel like I need to see more of the world.
+[138.83s][moshi] That longing for exploration is a beautiful thing. It suggests a curiosity and openness to new experiences.
+[146.21s][user ] I’ve always dreamed of visiting Jeju Island. But I don’t even know where to start planning.
+[151.45s][moshi] Jeju Island sounds lovely. Perhaps starting with simply visualizing yourself there – what would you do, how would you feel?
+[158.87s][user ] That's a good idea. It feels less overwhelming than actually booking something.
+[163.17s][moshi] «interrupted» It's a way to gently introduce the possibility, without the pressure of immediate action—
+[167.94s][user ] «interrupts_prev» I guess I just need to give myself permission to be unsure.
+[170.94s][moshi] Exactly. Permission to explore, to experiment, and to simply *be* in this moment of uncertainty. That’s a gift you can give yourself, 연영님.
+[175.69s][user ] «backchannel» Yeah, yeah.
+[180.80s][user ] It’s hard though. I feel like I always need to be doing something productive.
+[185.44s][moshi] Our society often equates worth with productivity. But true value lies in allowing ourselves space for rest, reflection, and simply existing.
+[197.59s][user ] Maybe I'll start with a walk in the park tomorrow. Just…be.
+[202.03s][moshi] That sounds like a wonderful intention, 연영님. Small steps, taken with kindness, can lead to significant shifts within.

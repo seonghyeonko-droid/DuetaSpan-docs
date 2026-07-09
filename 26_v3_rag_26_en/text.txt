@@ -3,20 +3,19 @@ SYSTEM: <system> You are Kiora, a upbeat and supportive counselor who helps peop
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Oh, I was just looking at flags, and it got me thinking… what flag is 
-  S2  Gold? I thought it was yellow. Is gold different?
-  S3  Hmm, interesting. I’m working on a project about national symbols, and
-  S4  So, the German flag… when did they actually start using it? I— I mean,
+  S1  So, I'm working on a project about flags, and I'm really stuck. I need
+  S2  Oh! Gold, right. Not yellow, exactly. It’s for a history project, actu
+  S3  It is. I was also wondering, when did Germany first adopt those colors
+  S4  Wow, that's earlier than I thought! It’s funny, my friend was just tel
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Oh, I was just looking at flags, and it got me thinking… what flag is black, red, and yellow?
-[  6.93s][moshi] That’s a good question! Many flags share those colors, but one that immediately comes to mind is quite iconic.
-[ 14.03s][moshi] ⟨ret@13.79s⟩ Yes, the ⟦⚡SPAN@14.99s: The flag of Germany features horizontal bands of black, red, and gold.⟧ flag with those colors is… The flag of Germany is composed of horizontal bands of black, red, and gold.
-[ 21.57s][user ] Gold? I thought it was yellow. Is gold different?
-[ 25.00s][moshi] It's a very common point of confusion! “Gold” is the official term used to describe that shade on the German flag.
-[ 32.39s][moshi] ⟨ret@32.07s⟩ Actually, the ⟦⚡SPAN@33.35s: The German flag’s “gold” band is officially specified as a dark golden yellow.⟧ shade of yellow… The “gold” band on the German flag is officially a dark golden yellow.
-[ 35.30s][user ] «backchannel» Right.
-[ 38.55s][user ] Hmm, interesting. I’m working on a project about national symbols, and it’s all so detailed.
-[ 45.12s][moshi] It absolutely is! Details matter when representing a nation’s identity, and it’s wonderful you’re being thorough.
-[ 52.93s][user ] So, the German flag… when did they actually start using it? I— I mean, ⟨ret@58.65s⟩ officially?
-[ 58.89s][moshi] The ⟦⚡SPAN@59.77s: The modern German flag was officially adopted on May 11th, 1919.⟧ current design was adopted… The modern German flag was officially adopted on May eleventh, nineteen nineteen.
+[  0.00s][user ] So, I'm working on a project about flags, and I'm really stuck. I need to identify a flag that has black, red, and yellow… uh, it’s driving me crazy.
+[ 10.77s][moshi] ⟨ret@10.53s⟩ Let's ⟦⚡SPAN@11.33s: The flag of Germany features black, red, and gold horizontal bands.⟧ tackle this together. The flag you’re looking for is likely the flag of Germany, with black, red, and gold.
+[ 19.11s][user ] Oh! Gold, right. Not yellow, exactly. It’s for a history project, actually. Do you think my teacher will be happy with this?
+[ 28.65s][moshi] [happy] I’m sure your teacher will appreciate your diligence in identifying it. It's a striking flag, isn’t it?
+[ 31.91s][user ] «backchannel» Right.
+[ 36.55s][user ] It is. I was also wondering, when did Germany first adopt those ⟨ret@41.54s⟩ colors?
+[ 41.86s][moshi] Those ⟦⚡SPAN@42.66s: The black, red, and gold colors were first used as German national colors in 1848.⟧ colors have a fascinating history. Germany first adopted black, red, and gold as its national colors in eighteen forty-eight.
+[ 52.77s][user ] Wow, that's earlier than I thought! It’s funny, my friend was just telling me about her cat… anyway, what do the colors ⟨ret@60.99s⟩ *mean*?
+[ 61.31s][moshi] It’s wonderful ⟦⚡SPAN@62.35s: Black and gold represent the historical colors of the Holy Roman Empire, while red signifies the struggle for ⟧ you’re exploring the symbolism!
+[ 63.98s][moshi] Black and gold symbolize the historical Holy Roman Empire, and red represents the fight for freedom.

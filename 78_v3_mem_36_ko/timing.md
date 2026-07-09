@@ -65,18 +65,24 @@
 
 
      0.00s  agent 발화 시작: 사히하 씨, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 관련 상담을 도와드리는 분이에요.
-     3.26s  user  발화 시작: Uh-huh.
-     3.76s  user  발화 끝
-     6.64s  user  발화 시작: 음… 전에 스위스 여행 계획 세운다고 말씀드렸었죠?
-     6.67s  agent 발화 끝
-    10.17s  <ret> 발화 (turn3 첫 프레임)
-    10.32s  agent 발화 시작: <ret> 스위스 여행 말씀이시군요. 내년 3월에 스위스 여행을 계획하고 계시는군요. 혹시 여행 준비는 잘 
-    10.48s  user  발화 끝
-    10.89s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.79s]: [2026-07-14] User is planning a trip to Switzerland in March.
-    19.24s  user  발화 시작: 네, 그런데 갑자기 궁금한 게 생겼어요. 제가 채식주의자잖아요.
-    19.27s  agent 발화 끝
-    23.42s  <ret> 발화 (turn5 첫 프레임)
-    23.58s  agent 발화 시작: <ret> 채식주의자이신 건 알고 있습니다. 스위스에서도 채식 식당을 찾기 어려울까 봐 걱정되시는군요. 괜찮
-    23.78s  user  발화 끝
-    24.54s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.58s]: [2026-05-07] User is vegetarian.
-    34.52s  agent 발화 끝
+     3.45s  user  발화 시작: 그래.
+     4.09s  user  발화 끝
+     7.09s  user  발화 시작: 음… 스위스 여행 계획 세우고 있는데, 혹시 제가 언제 가기로 했었죠? 갑자기 기억이 안 나네요.
+     7.13s  agent 발화 끝
+    12.92s  <ret> 발화 (turn3 첫 프레임)
+    13.07s  agent 발화 시작: <ret> 스위스 여행 말씀이시군요. 내년 삼 월에 스위스 여행을 계획하고 계셨어요.
+    13.20s  user  발화 끝
+    13.64s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.68s]: [2026-07-14] User is planning a trip to Switzerland in March.
+    18.58s  user  발화 시작: 아, 맞다! 삼 월이었지. 근데 제가 또 뭘 부탁드렸었는지… 기억이 잘 안 나요.
+    18.67s  agent 발화 끝
+    24.76s  agent 발화 시작: 혹시 전에 다른 예약이나 문의를 하셨던 게 있으셨나요? 제가 찾아볼게요.
+    24.88s  user  발화 끝
+    27.65s  user  발화 시작: 응.
+    28.14s  user  발화 끝
+    29.90s  agent 발화 끝
+    30.59s  user  발화 시작: 음… 자동차 알아보고 있었던 것 같아요. 중고차요.
+    33.84s  <ret> 발화 (turn8 첫 프레임)
+    34.23s  agent 발화 시작: <ret> 중고차 알아보시는 거였군요. 하이브리드 모델을 비교하고 계셨고, 주행 거리가 삼 만 마일 미만인 
+    34.34s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.57s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
+    34.37s  user  발화 끝
+    42.07s  agent 발화 끝

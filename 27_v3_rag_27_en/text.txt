@@ -3,21 +3,21 @@ SYSTEM: <system> You are Doon, a warm and attentive counselor who helps people w
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was reading about Lux Aurunque, and I’m curious—when was he born?
-  S2  Nineteen seventy… that’s surprisingly recent, actually. Was he involve
-  S3  But before that, what was he *doing*?
-  S4  Metallurgy…so he had a technical background then? That explains the br
+  S1  I'm trying to find out about the composer Lux Aurunque. Do you know wh
+  S2  Nineteen seventy… wow. Was he born in Europe?
+  S3  …did he write operas, or mostly instrumental pieces?
+  S4  Oh, orchestral, that's interesting. What kind of training did he have?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was reading about Lux Aurunque, and I’m curious—when was he ⟨ret@5.47s⟩ born?
-[  5.71s][moshi] That’s ⟦⚡SPAN@6.43s: Lux Aurunque was born in nineteen seventy.⟧ a great question, and— He was born in nineteen seventy, as records indicate.
-[  8.70s][user ] «backchannel» Yeah, yeah.
-[ 11.23s][user ] Nineteen seventy… that’s surprisingly recent, actually. Was he involved in politics at ⟨ret@17.57s⟩ all?
-[ 17.62s][moshi] It’s interesting ⟦⚡SPAN@18.53s: Lux Aurunque became a prominent figure in the bronze trade in 1995.⟧ to consider the timing of his life, yes.
-[ 21.08s][moshi] He became a prominent figure in the bronze trade in nineteen ninety-five.
-[ 23.60s][user ] «backchannel» Uh-huh.
-[ 25.52s][user ] But before that, what was he *doing*?
-[ 28.44s][moshi] He was—
-[ 29.05s][moshi] ⟨ret@29.02s⟩ Before nineteen ninety-five, he ⟦⚡SPAN@31.02s: Before 1995, Lux Aurunque studied metallurgy at the University of Verona.⟧ studied metallurgy at the University of Verona.
-[ 31.57s][user ] «backchannel» Yeah, totally.
-[ 33.83s][user ] Metallurgy…so he had a technical background then? That explains the bronze work.
+[  0.00s][user ] I'm trying to find out about the composer Lux Aurunque. Do you know when he was ⟨ret@4.46s⟩ born?
+[  4.69s][moshi] Certainly, I can ⟦⚡SPAN@5.82s: Lux Aurunque was born in nineteen seventy.⟧ help with that. He was born in nineteen seventy. That's quite a while ago now, isn't it?
+[  8.13s][user ] «backchannel» Yeah, yeah.
+[ 10.99s][user ] Nineteen seventy… wow. Was he born in Europe?
+[ 14.75s][moshi] «interrupted» That's a good question. It's often helpful to know a composer’s origins—
+[ 18.67s][user ] «interrupts_prev» …did he write operas, or mostly instrumental pieces?
+[ 22.18s][moshi] ⟨ret@22.10s⟩ That’s a ⟦⚡SPAN@23.06s: Lux Aurunque primarily composed orchestral and chamber music.⟧ very insightful shift in focus.
+[ 24.82s][moshi] He primarily composed orchestral and chamber music, not operas. A lovely, focused body of work.
+[ 29.17s][user ] «backchannel» Uh-huh.
+[ 32.04s][user ] Oh, orchestral, that's interesting. What kind of training did he have?
+[ 36.74s][moshi] ⟨ret@36.68s⟩ Exploring his training is a ⟦⚡SPAN@38.68s: Aurunque studied composition at the Vienna Academy of Music.⟧ great way to understand his style.
+[ 40.16s][moshi] He studied composition at the Vienna Academy of Music. A prestigious institution, certainly.

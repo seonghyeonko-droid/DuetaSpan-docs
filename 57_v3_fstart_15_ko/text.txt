@@ -4,32 +4,32 @@ SYSTEM: <system> 당신은 육아 및 가족 시간과 관련하여 사람들을
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
-      그 근처에 괜찮은 레스토랑 있어?
-  S2  가격대는 어때?
-  S3  혹시 해산물 전문인가?
-      일곱 시 반으로 예약해 줘.
-  S4  고마워.
+      음… 그 근처에 괜찮은 레스토랑 있으면 찾아줘.
+  S2  해산물 종류로 부탁해.
+  S3  그럼 거기 오후 일곱 시로 예약해 줘. 두 명으로.
+      고마워. 혹시 거기 가는 가장 빠른 길은 어떻게 돼?
+  S4  지금 있는 곳에서부터 알려줘.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
-[  3.23s][moshi] ⟨ret@3.16s⟩ 시드니 ⟦⚡SPAN@4.36s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ 오페라 하우스의 좌표를 알려드릴게요. 시드니 오페라 하우스는 위도 마이너스 삼십삼 점 팔오육팔, 경도 백오십일 점 이일오삼에 위치하고 있습니다.
-[  7.35s][user ] «backchannel» Yeah.
-[ 12.81s][user ] 그 근처에 괜찮은 레스토랑 있어?
-[ 15.49s][moshi] ⟨ret@15.09s⟩ 네, ⟦⚡SPAN@16.37s: (tool result) Aria Restaurant is 0.5 km from the Sydney Opera House and has a 4.6-star rating.⟧ 주변 레스토랑을 검색해 드릴까요?
-      CALL: {"function": "maps_search", "arguments": {"query": "restaurants near Sydney Opera House", "radius": "1km"}}
-[ 17.71s][moshi] 아리아 레스토랑이 시드니 오페라 하우스에서 킬로미터 0.5 떨어진 곳에 있고, 평점은 4.6점입니다.
-[ 24.94s][user ] 가격대는 어때?
-[ 26.57s][moshi] «interrupted» 아리아 레스토랑의 가격대는—
-[ 27.74s][user ] «interrupts_prev» 혹시 해산물 전문인가?
-[ 29.47s][moshi] ⟨ret@29.32s⟩ 아, 아리아 레스토랑은 ⟦⚡SPAN@31.16s: (tool result) Aria Restaurant serves modern Australian cuisine and specializes in seafood.⟧ 현대 호주 요리를 전문으로 합니다.
-[ 33.09s][moshi] 아리아 레스토랑은 현대 호주 요리를 선보이고, 특히 해산물 요리가 유명합니다.
-[ 35.09s][user ] «backchannel» Yeah.
-[ 38.05s][moshi] ⟨ret@37.89s⟩ 예약 가능한 ⟦⚡SPAN@39.73s: (tool result) Aria Restaurant has availability at 7:30 PM and 9:00 PM today for a party of two.⟧ 시간도 확인해 드릴까요? 보통 저녁 식사는 빨리 마감됩니다.
-      CALL: {"function": "restaurant_availability", "arguments": {"restaurant_name": "Aria Restaurant", "date": "today", "party_size": "2"}}
-[ 43.49s][moshi] 오늘 아리아 레스토랑은 저녁 일곱 시 반과 아홉 시에 두 분을 위한 자리가 있습니다.
-[ 48.43s][user ] 일곱 시 반으로 예약해 줘.
-[ 50.37s][moshi] ⟨ret@50.13s⟩ 네, 아리아 레스토랑에 ⟦⚡SPAN@52.13s: (tool result) Reservation confirmed at Aria Restaurant for today at 7:30 PM, party of 2. Confirmation number i⟧ 오늘 저녁 일곱 시 반, 두 분으로 예약 진행하겠습니다.
-      CALL: {"function": "restaurant_reserve", "arguments": {"restaurant_name": "Aria Restaurant", "date": "today", "time": "19:30", "party_size": "2"}}
-[ 56.14s][moshi] 아리아 레스토랑에 오늘 저녁 일곱 시 반, 두 분 예약이 확정되었습니다. 확인 번호는 AR12345입니다.
-[ 61.11s][user ] «backchannel» Right.
-[ 65.16s][user ] 고마워.
+[  3.96s][moshi] ⟨ret@3.89s⟩ 확인해 ⟦⚡SPAN@4.77s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ 볼게요. 시드니 오페라 하우스는 위도 마이너스 삼십삼 점 팔오육팔, 경도 백오십일 점 이일오삼에 위치하고 있습니다.
+[  7.21s][user ] «backchannel» 응.
+[ 11.53s][user ] 음… 그 근처에 괜찮은 레스토랑 있으면 찾아줘.
+[ 15.72s][moshi] «interrupted» 어떤 종류의 음식을 선호하시나요? 이탈리아, 프랑스, 아니면 다른—
+[ 20.16s][user ] «interrupts_prev» 해산물 종류로 ⟨ret@21.62s⟩ 부탁해.
+[ 22.02s][moshi] ⟦⚡SPAN@22.34s: (tool result) Three seafood restaurants were found: “Sydney Cove Oyster Bar”, rating 4.5 stars, “Doyles on the⟧ 물론입니다.
+      CALL: {"function": "maps_search", "arguments": {"query": "seafood restaurants near -33.8568, 151.2153"}}
+[ 22.88s][moshi] 근처에 해산물 레스토랑 세 곳이 있습니다. 시드니 코브 오이스터 바, 도일스 온 더 비치, 카탈리나 로즈 베이가 있습니다.
+[ 25.96s][user ] «backchannel» 응.
+[ 30.39s][moshi] 시드니 코브 오이스터 바의 평점이 가장 높네요, 별점 사 점 오입니다. 예약 가능 시간은 지금부터 두 시간 뒤인 오후 일곱 시부터입니다.
+[ 39.80s][user ] 그럼 거기 오후 일곱 시로 예약해 줘. 두 ⟨ret@43.21s⟩ 명으로.
+[ 43.53s][moshi] 네, 예약 ⟦⚡SPAN@44.65s: (tool result) Reservation confirmed at Sydney Cove Oyster Bar for 2 people at 19:00. Confirmation number is 78⟧ 진행해 드릴게요.
+      CALL: {"function": "maps_reserve", "arguments": {"restaurant": "Sydney Cove Oyster Bar", "time": "19:00", "party_size": 2}}
+[ 45.42s][moshi] 시드니 코브 오이스터 바에 두 분, 오후 일곱 시로 예약이 완료되었습니다. 확인 번호는 칠팔구사오육입니다.
+[ 53.01s][user ] 고마워. 혹시 거기 가는 가장 빠른 길은 어떻게 돼?
+[ 57.38s][moshi] 출발 위치를 알려주시겠어요? 현재 계신 곳에서부터 길 안내를 해 드릴게요.
+[ 60.56s][user ] «backchannel» 그니까.
+[ 62.25s][user ] 지금 있는 곳에서부터 ⟨ret@64.26s⟩ 알려줘.
+[ 64.50s][moshi] 네, 잠시만 ⟦⚡SPAN@65.54s: (tool result) Driving directions to Sydney Cove Oyster Bar: 1. Head north on George Street, 2. Turn right onto⟧ 기다려 주세요.
+      CALL: {"function": "maps_navigate", "arguments": {"destination": "Sydney Cove Oyster Bar", "mode": "driving"}}
+[ 66.36s][moshi] 조지 스트리트를 북쪽으로 가세요. 그리고 서큘러 키로 우회전, 서큘러 키 이스트로 계속 가시면 레스토랑이 왼쪽에 있습니다. 예상 소요 시간은 십오 분입니다.

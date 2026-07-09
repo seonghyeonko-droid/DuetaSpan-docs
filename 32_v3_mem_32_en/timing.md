@@ -58,26 +58,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Oh, that sounds… nice. I was just  | S2 Yes! Very much so. I’m trying to f | S3 That sounds lovely. I also— I mean | S4 Perfect! That’s exactly what I nee
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you. I un
-     7.54s  user  발화 시작: Yeah.
-     8.17s  user  발화 끝
-     9.69s  user  발화 시작: Actually, yes. I’m trying to plan a little getaway, and I’m 
-     9.82s  agent 발화 끝
-    15.57s  user  발화 끝
-    15.60s  agent 발화 시작: That’s very common, Manon. Sometimes too many options can be
-    22.34s  user  발화 시작: Mm-hmm.
-    22.79s  user  발화 끝
-    24.54s  <ret> 발화 (turn5 첫 프레임)
-    24.93s  agent 발화 시작: <ret> Perhaps recalling past plans will help. You mentioned 
-    25.11s  agent 발화 끝
-    25.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.23s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    33.10s  user  발화 시작: Oh, yes! Kyoto is still on my list, but I was thinking of so
-    33.46s  agent 발화 끝
-    40.43s  <ret> 발화 (turn7 첫 프레임)
-    40.56s  user  발화 끝
-    40.58s  agent 발화 시작: <ret> [happy] That sounds wonderful. Something a little more
-    42.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: [2026-06-14] User is into rock climbing.
-    45.96s  agent 발화 시작: You’ve expressed an interest in rock climbing. Would a trip 
-    46.09s  agent 발화 끝
-    52.21s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I’m 
+     6.26s  user  발화 시작: Yeah.
+     6.84s  user  발화 끝
+     8.06s  user  발화 시작: Oh, that sounds… nice. I was just remembering something from
+     8.20s  agent 발화 끝
+    13.68s  <ret> 발화 (turn3 첫 프레임)
+    13.71s  user  발화 끝
+    13.75s  agent 발화 시작: <ret> You mentioned a trip you were planning… You’re heading
+    14.64s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.36s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    19.19s  user  발화 시작: Mm-hmm.
+    19.82s  user  발화 끝
+    21.49s  agent 발화 끝
+    22.05s  user  발화 시작: Yes! Very much so. I’m trying to figure out the best time to
+    29.58s  agent 발화 시작: March in Kyoto is typically mild, with blossoming cherry tre
+    29.60s  user  발화 끝
+    37.79s  agent 발화 끝
+    37.95s  user  발화 시작: That sounds lovely. I also— I mean, I’m trying to remember i
+    44.23s  <ret> 발화 (turn8 첫 프레임)
+    44.39s  agent 발화 시작: <ret> I recall we discussed some dietary needs… You mentione
+    44.58s  user  발화 끝
+    45.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.72s]: [2026-02-26] User is gluten-free.
+    54.12s  agent 발화 끝
+    54.65s  user  발화 시작: Perfect! That’s exactly what I needed to remember. Thank you
+    58.63s  user  발화 끝

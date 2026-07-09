@@ -51,17 +51,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Noah, welcome to Sydney. I’m Hunar, and I help people feel s
-     7.32s  agent 발화 끝
-     7.70s  user  발화 시작: Hunar… that’s a lovely name. It’s just… everything feels so 
-    14.15s  agent 발화 시작: It’s perfectly natural to feel overwhelmed when things shift
-    14.27s  user  발화 끝
-    21.47s  user  발화 시작: Uh, just… everything seems to *require* a decision instantly
-    21.89s  agent 발화 끝
-    28.59s  user  발화 끝
-    28.60s  agent 발화 시작: That constant choice can be draining, absolutely. Perhaps we
-    37.88s  user  발화 시작: But is that even realistic? I have a new job starting Monday
-    38.10s  agent 발화 끝
-    43.01s  agent 발화 시작: It’s good to be practical, Noah. Finding a balance between r
-    43.07s  user  발화 끝
-    49.26s  agent 발화 끝
+     0.00s  agent 발화 시작: Noah, welcome to Sydney. I'm Hunar, and I help people find t
+     1.86s  user  발화 시작: Mm-hmm.
+     2.45s  user  발화 끝
+     6.47s  user  발화 시작: Hunar… that’s a beautiful name. I’m just feeling a bit overw
+     6.49s  agent 발화 끝
+    10.64s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. A new city
+    10.81s  user  발화 끝
+    14.39s  user  발화 시작: Mhm.
+    15.02s  user  발화 끝
+    17.69s  user  발화 시작: I— I mean, I guess just… finding some routines. Knowing wher
+    17.87s  agent 발화 끝
+    23.31s  agent 발화 시작: Routines are wonderful anchors. What does a typical, comfort
+    23.52s  user  발화 끝
+    29.93s  agent 발화 끝

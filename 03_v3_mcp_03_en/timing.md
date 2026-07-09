@@ -1,52 +1,46 @@
 # v3_mcp_03_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Hmm. | S3 Okay, good. What shipping options  | S4 And finally, can you place the ord
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 And how much is that shipping cost | S3 Okay, that sounds good. Confirm th | S4 Yeah, definitely. I— I mean, it's 
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.98s  <ret> 발화 (turn1 첫 프레임)
-     3.38s  agent 발화 시작: <ret> Absolutely, let’s get that started for you. Wonderful,
-     3.51s  user  발화 끝
-     4.90s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.00s]: (tool result) The shopping cart iframe’s checkout button was clicked s
-     8.43s  user  발화 시작: Mhm.
-     9.16s  user  발화 끝
-    10.66s  agent 발화 끝
-    11.97s  user  발화 시작: What’s in my cart currently?
-    13.48s  <ret> 발화 (turn4 첫 프레임)
-    13.56s  agent 발화 시작: <ret> Let me quickly check the contents of your cart. You cu
-    13.58s  user  발화 끝
-    14.84s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.53s]: (tool result) Your shopping cart contains one blue sweater for twenty-
-    22.18s  agent 발화 끝
-    22.59s  user  발화 시작: Hmm.
-    23.03s  agent 발화 시작: It’s a lovely shade of blue, isn't it? A classic choice, and
-    23.03s  user  발화 끝
-    28.12s  agent 발화 끝
-    28.41s  user  발화 시작: Can you add a pair of black boots to my cart?
-    31.94s  <ret> 발화 (turn8 첫 프레임)
-    32.09s  agent 발화 시작: <ret> Certainly, adding those boots right away. The black bo
-    32.25s  user  발화 끝
-    33.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.53s]: (tool result) Black boots were added to your cart; the total is now si
-    40.11s  agent 발화 끝
-    40.15s  user  발화 시작: Okay, good. What shipping options are available?
-    42.55s  <ret> 발화 (turn10 첫 프레임)
-    42.95s  agent 발화 시작: <ret> Let’s see what shipping options we have for you. We of
-    43.06s  user  발화 끝
-    43.98s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.18s]: (tool result) Shipping options are standard three-to-five business day
-    50.34s  user  발화 시작: Choose the express shipping, please.
-    50.36s  agent 발화 끝
-    51.99s  <ret> 발화 (turn12 첫 프레임)
-    52.39s  agent 발화 시작: <ret> Excellent choice, express shipping it is. Your shippin
-    52.60s  user  발화 끝
-    53.19s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.43s]: (tool result) Express shipping was selected; your new total is eighty 
-    60.50s  agent 발화 끝
-    60.59s  user  발화 시작: And finally, can you place the order?
-    62.33s  <ret> 발화 (turn14 첫 프레임)
-    62.68s  agent 발화 시작: <ret> Absolutely, let’s finalize this order for you. Your or
-    62.80s  user  발화 끝
-    64.25s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.53s]: (tool result) Order placed successfully; your order number is 9287451.
-    66.38s  user  발화 시작: Yeah.
-    67.15s  user  발화 끝
-    71.12s  user  발화 시작: Wonderful, thank you!
-    71.26s  agent 발화 끝
-    72.51s  agent 발화 시작: You’re very welcome! It’s a pleasure assisting you with your
-    72.55s  user  발화 끝
-    79.14s  agent 발화 끝
+     2.88s  <ret> 발화 (turn1 첫 프레임)
+     3.27s  agent 발화 시작: <ret> Certainly, let’s get your order moving forward.
+     3.42s  user  발화 끝
+     4.80s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.09s]: (tool result) The checkout button in the shopping cart iframe was succ
+     6.27s  agent 발화 시작: Great, the checkout process has begun.
+     6.36s  agent 발화 끝
+     9.04s  agent 발화 끝
+    10.35s  user  발화 시작: What’s the estimated delivery time for standard shipping to 
+    14.55s  <ret> 발화 (turn4 첫 프레임)
+    14.60s  user  발화 끝
+    14.63s  agent 발화 시작: <ret> Let me check the shipping options for you.
+    15.83s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.30s]: (tool result) Standard shipping to 90210 is estimated to arrive betwee
+    16.89s  agent 발화 시작: Standard shipping to your zip code will arrive between Novem
+    16.94s  agent 발화 끝
+    20.48s  user  발화 시작: Yeah.
+    20.98s  user  발화 끝
+    21.75s  agent 발화 끝
+    22.47s  user  발화 시작: And how much is that shipping cost?
+    23.87s  <ret> 발화 (turn8 첫 프레임)
+    24.26s  agent 발화 시작: <ret> Just a moment while I retrieve that information.
+    24.44s  user  발화 끝
+    25.55s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.04s]: (tool result) The standard shipping cost to 90210 is $5.99.
+    27.28s  agent 발화 시작: The shipping cost for standard delivery is five dollars and 
+    27.30s  agent 발화 끝
+    32.00s  agent 발화 끝
+    32.02s  user  발화 시작: Okay, that sounds good. Confirm the order with standard ship
+    35.32s  <ret> 발화 (turn11 첫 프레임)
+    35.48s  agent 발화 시작: <ret> Confirming your order with standard shipping—a great c
+    35.59s  user  발화 끝
+    37.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Order confirmed. Your order number is 789456123.
+    39.23s  agent 발화 시작: Your order is confirmed, and your order number is seven-eigh
+    39.32s  agent 발화 끝
+    45.01s  user  발화 시작: Wonderful. I’m glad that’s done.
+    45.53s  agent 발화 끝
+    47.13s  user  발화 끝
+    47.22s  agent 발화 시작: [laugh] I'm delighted to hear it’s all finalized! Sometimes,
+    53.47s  agent 발화 끝
+    54.03s  user  발화 시작: Yeah, definitely. I— I mean, it's a relief.
+    56.57s  user  발화 끝
+    56.62s  agent 발화 시작: Absolutely, a little relief is always welcome, and it's wond
+    62.73s  agent 발화 끝

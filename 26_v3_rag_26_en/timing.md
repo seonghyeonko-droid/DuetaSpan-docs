@@ -1,32 +1,30 @@
 # v3_rag_26_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Oh, I was just looking at flags, a | S2 Gold? I thought it was yellow. Is  | S3 Hmm, interesting. I’m working on a | S4 So, the German flag… when did they
+# EXAMINER(FDB-v2) 단계: S1 So, I'm working on a project about | S2 Oh! Gold, right. Not yellow, exact | S3 It is. I was also wondering, when  | S4 Wow, that's earlier than I thought
 
-     0.00s  user  발화 시작: Oh, I was just looking at flags, and it got me thinking… wha
-     6.77s  user  발화 끝
-     6.93s  agent 발화 시작: That’s a good question! Many flags share those colors, but o
-    13.79s  <ret> 발화 (turn2 첫 프레임)
-    14.03s  agent 발화 시작: <ret> Yes, the flag with those colors is… The flag of German
-    14.16s  agent 발화 끝
-    14.99s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.47s]: The flag of Germany features horizontal bands of black, red, and gold.
-    21.44s  agent 발화 끝
-    21.57s  user  발화 시작: Gold? I thought it was yellow. Is gold different?
-    25.00s  agent 발화 시작: It's a very common point of confusion! “Gold” is the officia
-    25.27s  user  발화 끝
-    32.07s  <ret> 발화 (turn5 첫 프레임)
-    32.39s  agent 발화 시작: <ret> Actually, the shade of yellow… The “gold” band on the 
-    32.45s  agent 발화 끝
-    33.35s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.76s]: The German flag’s “gold” band is officially specified as a dark golden
-    35.30s  user  발화 시작: Right.
-    35.94s  user  발화 끝
-    38.55s  user  발화 시작: Hmm, interesting. I’m working on a project about national sy
-    38.74s  agent 발화 끝
-    44.94s  user  발화 끝
-    45.12s  agent 발화 시작: It absolutely is! Details matter when representing a nation’
-    52.49s  agent 발화 끝
-    52.93s  user  발화 시작: So, the German flag… when did they actually start using it? 
-    58.65s  <ret> 발화 (turn10 첫 프레임)
-    58.89s  agent 발화 시작: <ret> The current design was adopted… The modern German flag
-    59.04s  user  발화 끝
-    59.77s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.10s]: The modern German flag was officially adopted on May 11th, 1919.
-    66.03s  agent 발화 끝
+     0.00s  user  발화 시작: So, I'm working on a project about flags, and I'm really stu
+    10.53s  <ret> 발화 (turn1 첫 프레임)
+    10.77s  agent 발화 시작: <ret> Let's tackle this together. The flag you’re looking fo
+    10.81s  user  발화 끝
+    11.33s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.54s]: The flag of Germany features black, red, and gold horizontal bands.
+    18.46s  agent 발화 끝
+    19.11s  user  발화 시작: Oh! Gold, right. Not yellow, exactly. It’s for a history pro
+    28.65s  agent 발화 시작: [happy] I’m sure your teacher will appreciate your diligence
+    28.75s  user  발화 끝
+    31.91s  user  발화 시작: Right.
+    32.41s  user  발화 끝
+    35.70s  agent 발화 끝
+    36.55s  user  발화 시작: It is. I was also wondering, when did Germany first adopt th
+    41.54s  <ret> 발화 (turn6 첫 프레임)
+    41.86s  agent 발화 시작: <ret> Those colors have a fascinating history. Germany first
+    42.02s  user  발화 끝
+    42.66s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.84s]: The black, red, and gold colors were first used as German national col
+    51.32s  agent 발화 끝
+    52.77s  user  발화 시작: Wow, that's earlier than I thought! It’s funny, my friend wa
+    60.99s  <ret> 발화 (turn8 첫 프레임)
+    61.31s  agent 발화 시작: <ret> It’s wonderful you’re exploring the symbolism!
+    61.40s  user  발화 끝
+    62.35s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.78s]: Black and gold represent the historical colors of the Holy Roman Empir
+    63.98s  agent 발화 시작: Black and gold symbolize the historical Holy Roman Empire, a
+    64.09s  agent 발화 끝
+    71.17s  agent 발화 끝

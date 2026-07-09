@@ -1,54 +1,52 @@
 # v3_mcp_01_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 페이지를 자세히 보여주는 지도를 만들어 줄 | S2 잠깐만, 아이폰 15 프로 맥스 가격이 얼마야? | S3 아니, 다른 카테고리. 맥북 에어의 최신 모델 지도를 보여줘. | S4 좋아, 그럼 그걸로 주문해줘.
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 페이지를 자세하게 보여주는 지도를 만들어  | S2 아이폰 15 프로 모델의 가격 정보는 어디에 있어? | S3 512기가바이트 모델은 얼마야? | S4 강남점 수령 맞는데, 혹시 배송도 가능해?
 
-     0.00s  user  발화 시작: 애플 웹사이트 제품 페이지를 자세히 보여주는 지도를 만들어 줄래?
-     4.81s  <ret> 발화 (turn1 첫 프레임)
-     5.04s  agent 발화 시작: <ret> 물론이죠. tavily-map을 사용해서 애플 웹사이트의 제품 페이지를 상세히 보여주는 지도를 만
-     5.14s  user  발화 끝
-     6.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) The map shows 18 product categories on apple.com/kr/shop
-    11.72s  agent 발화 시작: 애플 웹사이트 제품 페이지에는 아이폰, 아이패드, 맥, 에어팟, 애플워치, 액세서리 등 총 열여덟 가지 제품
-    11.90s  agent 발화 끝
-    21.00s  agent 발화 끝
-    21.85s  user  발화 시작: 음, 아이폰 카테고리만 확대해서 보여줄 수 있어?
-    24.94s  <ret> 발화 (turn4 첫 프레임)
-    25.17s  agent 발화 시작: <ret> 네, 아이폰 카테고리를 확대해서 보여드리겠습니다. 다시 tavily-map을 사용해서 아이폰 페이
-    25.23s  user  발화 끝
-    26.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) The iPhone page map reveals 6 models: iPhone 15, iPhone 
-    32.54s  agent 발화 시작: 아이폰 페이지에는 아이폰 15, 15 플러스, 15 프로, 15 프로 맥스, 14, 그리고 SE 이렇게 여섯
-    32.63s  agent 발화 끝
-    36.01s  user  발화 시작: Nice.
-    36.64s  user  발화 끝
-    41.34s  agent 발화 끝
-    41.77s  user  발화 시작: 잠깐만, 아이폰 15 프로 맥스 가격이 얼마야?
-    44.73s  <ret> 발화 (turn8 첫 프레임)
-    45.01s  user  발화 끝
-    45.04s  agent 발화 시작: <ret> 아이폰 15 프로 맥스의 가격을 알려드릴게요. 잠시만 기다려 주세요.
-    46.49s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.91s]: (tool result) The iPhone 15 Pro Max starts at ₩1,999,000 for 256GB sto
-    49.90s  agent 발화 시작: 아이폰 15 프로 맥스는 256기가바이트 모델부터 199만 9천 원에 시작합니다.
-    49.94s  agent 발화 끝
-    51.80s  user  발화 시작: Mm-hmm.
-    52.34s  user  발화 끝
-    55.22s  agent 발화 끝
-    55.27s  agent 발화 시작: 다른 아이폰 모델의 가격도 궁금하신가요? 아니면 다른 제품 카테고리를 살펴볼까요?
-    60.87s  agent 발화 끝
-    61.53s  user  발화 시작: 아니, 다른 카테고리. 맥북 에어의 최신 모델 지도를 보여줘.
-    66.31s  <ret> 발화 (turn13 첫 프레임)
-    66.62s  agent 발화 시작: <ret> 알겠습니다. 맥북 에어 최신 모델 지도를 만들어 보겠습니다. tavily-map을 사용해서 맥북 
-    66.85s  user  발화 끝
-    68.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) The MacBook Air page displays M3 chip models with 8GB or
-    73.76s  agent 발화 끝
-    73.76s  agent 발화 시작: 맥북 에어 페이지에는 M3 칩 모델과 8기가바이트 또는 16기가바이트 RAM, 그리고 256기가바이트부터 2
-    86.10s  agent 발화 끝
-    86.64s  user  발화 시작: 16기가 RAM 모델은 지금 재고가 있어?
-    89.05s  <ret> 발화 (turn16 첫 프레임)
-    89.36s  agent 발화 시작: <ret> 재고 확인을 해보겠습니다. 잠시만 기다려 주세요.
-    89.51s  user  발화 끝
-    90.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.96s]: (tool result) Currently, the 16GB RAM MacBook Air is available for onl
-    92.23s  agent 발화 시작: 16기가 RAM 맥북 에어는 온라인 주문이 가능하며, 배송까지 3~5일 정도 소요될 예정입니다.
-    92.32s  agent 발화 끝
-    98.27s  user  발화 시작: 좋아, 그럼 그걸로 주문해줘.
-    98.30s  agent 발화 끝
-   100.11s  agent 발화 시작: 네, 16기가 RAM 맥북 에어를 주문하시겠군요. 주문 진행하겠습니다.
-   100.34s  user  발화 끝
-   105.39s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 제품 페이지를 자세하게 보여주는 지도를 만들어 줘.
+     4.39s  <ret> 발화 (turn1 첫 프레임)
+     4.63s  agent 발화 시작: <ret> 물론이에요. tavily-map을 사용해서 애플 웹사이트의 제품 페이지 지도를 만들어 드릴게요.
+     4.68s  user  발화 끝
+     6.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) The map shows sections for iPhone, iPad, Mac, Apple Watc
+    10.22s  agent 발화 시작: 애플 웹사이트에는 아이폰, 아이패드, 맥, 애플워치, 에어팟, TV & 홈, 엔터테인먼트, 액세서리 섹션이 
+    10.42s  agent 발화 끝
+    18.24s  agent 발화 끝
+    19.13s  user  발화 시작: 음, 아이폰 섹션 좀 더 자세히 보여줄 수 있어?
+    21.90s  <ret> 발화 (turn4 첫 프레임)
+    22.05s  agent 발화 시작: <ret> 네, 아이폰 섹션을 확대해서 보여드릴게요. tavily-map으로 아이폰 섹션의 상세 지도를 생성
+    22.27s  user  발화 끝
+    23.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: (tool result) The iPhone section details models like iPhone 15, iPhone
+    28.31s  agent 발화 시작: 아이폰 섹션에는 아이폰 15, 아이폰 14, 아이폰 SE 모델과 통신사 제휴, 교환 프로그램 정보가 있습니다
+    28.44s  agent 발화 끝
+    30.84s  user  발화 시작: 어.
+    31.46s  user  발화 끝
+    35.45s  agent 발화 끝
+    35.87s  user  발화 시작: 아이폰 15 프로 모델의 가격 정보는 어디에 있어?
+    39.44s  agent 발화 시작: 아이폰 15 프로 모델의 가격 정보는—
+    39.48s  user  발화 끝
+    41.51s  user  발화 시작: 지금 바로 가격 알려줄 수 있어?
+    42.26s  agent 발화 끝
+    43.50s  <ret> 발화 (turn10 첫 프레임)
+    43.73s  agent 발화 시작: <ret> 네, 물론이죠. 아이폰 15 프로 모델의 가격을 바로 알려드릴게요.
+    43.73s  user  발화 끝
+    45.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: (tool result) The iPhone 15 Pro starts at ₩1,590,000 for 128GB, with p
+    47.92s  agent 발화 시작: 아이폰 15 프로는 128기가바이트 모델부터 159만 원부터 시작하며, 저장 용량이 커질수록 가격이 올라갑니
+    47.98s  agent 발화 끝
+    50.92s  user  발화 시작: 우와.
+    51.37s  user  발화 끝
+    55.44s  user  발화 시작: 512기가바이트 모델은 얼마야?
+    55.52s  agent 발화 끝
+    57.62s  agent 발화 시작: 512기가바이트 모델은 189만 원입니다. tavily-map에서 확인한 정보예요.
+    57.79s  user  발화 끝
+    63.27s  agent 발화 끝
+    63.98s  user  발화 시작: 그럼, 지금 바로 512기가바이트 아이폰 15 프로 블랙 색상으로 예약 주문해 줄 수 있어?
+    70.17s  <ret> 발화 (turn16 첫 프레임)
+    70.48s  agent 발화 시작: <ret> 네, 예약 주문을 도와드릴 수 있습니다. 예약 주문 진행을 위해 몇 가지 정보를 확인해야 합니다.
+    70.61s  user  발화 끝
+    72.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) Reservation confirmed: iPhone 15 Pro, 512GB, Black, pick
+    76.76s  agent 발화 시작: 예약이 완료되었습니다. 아이폰 15 프로 512기가바이트 블랙 색상이며, 11월 10일에 강남 애플스토어에서
+    76.97s  agent 발화 끝
+    85.94s  agent 발화 끝
+    86.09s  user  발화 시작: 강남점 수령 맞는데, 혹시 배송도 가능해?
+    89.33s  user  발화 끝
+    89.42s  agent 발화 시작: 네, 배송도 가능합니다. 배송 주소를 알려주시면 배송으로 변경해 드릴게요.
+    94.14s  agent 발화 끝

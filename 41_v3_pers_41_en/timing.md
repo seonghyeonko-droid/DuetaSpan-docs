@@ -76,81 +76,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a pretty name. Is it a | S2 It’s just… my parents really want  | S3 I need something concrete. I'm jus | S4 Yeah. It feels like I'm letting he
+# EXAMINER(FDB-v2) 단계: S1 A life coach? That sounds…serious. | S2 That sounds…nice, but easy to say. | S3 I was thinking about taking a gap  | S4 I guess I just need to give myself
 
-     0.00s  agent 발화 시작: 연영님, it’s lovely to connect with you. I’m Bir, and I’m here 
-     9.05s  user  발화 시작: Bir… that’s a pretty name. Is it a Korean name? I wasn’t exp
+     0.00s  agent 발화 시작: 연영님, welcome. My name is Bir, and I’m a life coach. I’m here
+     9.12s  user  발화 시작: A life coach? That sounds…serious. I just feel a bit lost, I
      9.32s  agent 발화 끝
-    15.94s  agent 발화 시작: It’s not Korean, no. Bir comes from my mother’s side—it mean
-    15.96s  user  발화 끝
-    26.98s  user  발화 시작: A river… that's nice. I'm just feeling so lost right now. Ev
-    27.08s  agent 발화 끝
-    33.93s  user  발화 끝
-    34.02s  agent 발화 시작: Instability can be deeply unsettling, 연영님. It’s natural to f
-    38.58s  user  발화 시작: Yeah, totally.
-    39.91s  user  발화 끝
-    44.87s  user  발화 시작: Everything with my studies, I think. I— I mean, I’m question
-    44.87s  agent 발화 끝
-    51.54s  user  발화 끝
-    51.67s  agent 발화 시작: That’s a significant question, and it takes courage to even 
-    54.97s  user  발화 시작: Mm-hmm.
-    55.61s  user  발화 끝
-    60.38s  agent 발화 끝
-    61.46s  user  발화 시작: But what if I've wasted all this time? All the tuition…
-    65.58s  user  발화 끝
-    66.00s  agent 발화 시작: It’s easy to focus on what feels lost, but time spent explor
-    72.45s  user  발화 시작: Really?
-    73.27s  user  발화 끝
-    76.25s  agent 발화 시작: Sometimes, the most valuable lessons aren’t found in achievi
-    76.34s  agent 발화 끝
-    86.75s  user  발화 시작: It’s just… my parents really want me to finish. They sacrifi
-    86.83s  agent 발화 끝
-    93.41s  agent 발화 시작: That adds another layer of complexity, doesn’t it? Feeling r
-    93.52s  user  발화 끝
-   101.08s  user  발화 시작: Exactly! I feel so guilty even *thinking* about changing dir
-   101.10s  agent 발화 끝
-   106.23s  agent 발화 시작: Guilt can be a heavy burden, and it often arises from a plac
-   106.27s  user  발화 끝
-   115.41s  agent 발화 끝
-   116.15s  user  발화 시작: But how do I even start to figure out what *would* make me h
-   121.39s  agent 발화 시작: Big changes can feel overwhelming. Perhaps we can break it d
-   121.62s  user  발화 끝
-   132.15s  user  발화 시작: Like what kind of steps? Just… anything?
-   132.19s  agent 발화 끝
-   135.87s  user  발화 시작: I need something concrete. I'm just spinning.
-   135.94s  agent 발화 시작: Well—
-   135.95s  user  발화 끝
-   136.42s  agent 발화 끝
-   138.78s  agent 발화 시작: Concrete steps can be helpful. Perhaps journaling about what
-   138.83s  user  발화 끝
-   144.44s  user  발화 시작: Yeah.
-   144.94s  user  발화 끝
-   147.55s  user  발화 시작: Journaling… I haven’t done that since middle school.
-   147.68s  agent 발화 끝
-   150.94s  agent 발화 시작: It doesn’t have to be a formal process, 연영님. Simply writing 
-   151.07s  user  발화 끝
-   156.23s  user  발화 시작: Yeah.
-   156.73s  user  발화 끝
-   160.03s  agent 발화 끝
-   160.06s  user  발화 시작: I guess. I also really miss my grandmother. She would always
-   165.07s  agent 발화 시작: Grief and uncertainty often come hand in hand. Losing someon
-   165.16s  user  발화 끝
-   172.28s  user  발화 시작: It does. She always encouraged me to follow my heart, but…
-   172.67s  agent 발화 끝
-   176.21s  user  발화 끝
-   176.45s  agent 발화 시작: But now you’re facing a choice where following your heart mi
-   183.44s  user  발화 시작: Yeah. It feels like I'm letting her down if I quit design.
-   183.69s  agent 발화 끝
-   187.09s  user  발화 끝
-   187.29s  agent 발화 시작: Perhaps she wouldn’t see it as letting her down, but as hono
-   191.35s  user  발화 시작: Yeah, yeah.
-   192.46s  user  발화 끝
-   195.91s  agent 발화 끝
-   196.18s  user  발화 시작: [sigh] That's a nice way to think about it.
-   198.32s  agent 발화 시작: It’s about finding a way to honor both her memory and your o
-   198.44s  user  발화 끝
-   206.39s  agent 발화 끝
-   207.24s  user  발화 시작: I think I need some time to just… process all of this.
-   210.90s  agent 발화 시작: Of course. Taking time for yourself is essential. Allow your
-   210.94s  user  발화 끝
-   219.48s  agent 발화 끝
+    15.09s  agent 발화 시작: It’s perfectly alright to feel lost, 연영님. Many people experi
+    15.23s  user  발화 끝
+    23.63s  user  발화 시작: It’s more like… everything feels blurry. Like I’m watching m
+    23.76s  agent 발화 끝
+    29.73s  user  발화 끝
+    29.77s  agent 발화 시작: That sense of detachment can be unsettling. It's a common ex
+    39.52s  agent 발화 끝
+    39.72s  user  발화 시작: Um… I just finished university, but I don’t know what to do 
+    45.16s  agent 발화 시작: It’s easy to fall into the comparison trap, isn’t it? Seeing
+    45.38s  user  발화 끝
+    50.77s  user  발화 시작: Yeah, yeah.
+    52.42s  user  발화 끝
+    54.26s  agent 발화 시작: Remember that everyone’s journey unfolds at its own pace, 연영
+    54.34s  agent 발화 끝
+    61.60s  user  발화 시작: Yeah.
+    62.10s  user  발화 끝
+    63.95s  agent 발화 끝
+    64.90s  user  발화 시작: But what if I choose the wrong thing? What if I regret it?
+    68.54s  agent 발화 시작: Regret is a natural part of life, but it doesn’t have to def
+    68.60s  user  발화 끝
+    74.48s  user  발화 시작: Yeah.
+    74.98s  user  발화 끝
+    78.97s  agent 발화 끝
+    79.08s  user  발화 시작: That sounds…nice, but easy to say. I'm really afraid of maki
+    85.08s  agent 발화 시작: It’s brave of you to acknowledge that fear, 연영님. Allowing yo
+    85.11s  user  발화 끝
+    91.31s  user  발화 시작: Mhm.
+    91.76s  user  발화 끝
+    93.35s  user  발화 시작: I think my parents are disappointed too. They wanted me to g
+    93.38s  agent 발화 끝
+    97.99s  agent 발화 시작: It sounds like there’s a weight of expectations. Sometimes, 
+    98.02s  user  발화 끝
+   105.71s  user  발화 시작: It is. They don’t understand why I need time to figure thing
+   105.73s  agent 발화 끝
+   111.67s  agent 발화 시작: Stability is important, but so is fulfillment. Finding a bal
+   111.83s  user  발화 끝
+   117.39s  user  발화 시작: Yeah.
+   117.89s  user  발화 끝
+   120.55s  user  발화 시작: I was thinking about taking a gap year, maybe traveling… but
+   120.57s  agent 발화 끝
+   125.42s  user  발화 끝
+   125.47s  agent 발화 시작: Self-care isn't selfish, 연영님. Taking time to nurture your ow
+   130.75s  user  발화 시작: Yeah.
+   131.38s  user  발화 끝
+   134.39s  user  발화 시작: But Seoul is…small. I feel like I need to see more of the wo
+   134.55s  agent 발화 끝
+   138.79s  user  발화 끝
+   138.83s  agent 발화 시작: That longing for exploration is a beautiful thing. It sugges
+   146.21s  user  발화 시작: I’ve always dreamed of visiting Jeju Island. But I don’t eve
+   146.29s  agent 발화 끝
+   151.25s  user  발화 끝
+   151.45s  agent 발화 시작: Jeju Island sounds lovely. Perhaps starting with simply visu
+   158.87s  user  발화 시작: That's a good idea. It feels less overwhelming than actually
+   159.05s  agent 발화 끝
+   163.17s  agent 발화 시작: It's a way to gently introduce the possibility, without the 
+   163.41s  user  발화 끝
+   167.94s  user  발화 시작: I guess I just need to give myself permission to be unsure.
+   168.63s  agent 발화 끝
+   170.94s  agent 발화 시작: Exactly. Permission to explore, to experiment, and to simply
+   171.13s  user  발화 끝
+   175.69s  user  발화 시작: Yeah, yeah.
+   177.25s  user  발화 끝
+   180.80s  user  발화 시작: It’s hard though. I feel like I always need to be doing some
+   180.95s  agent 발화 끝
+   185.44s  agent 발화 시작: Our society often equates worth with productivity. But true 
+   185.52s  user  발화 끝
+   195.92s  agent 발화 끝
+   197.59s  user  발화 시작: Maybe I'll start with a walk in the park tomorrow. Just…be.
+   201.85s  user  발화 끝
+   202.03s  agent 발화 시작: That sounds like a wonderful intention, 연영님. Small steps, ta
+   211.07s  agent 발화 끝

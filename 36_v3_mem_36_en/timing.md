@@ -64,21 +64,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you. Is there
-     2.76s  user  발화 시작: Uh-huh.
-     3.22s  user  발화 끝
-     5.74s  agent 발화 끝
-     5.80s  user  발화 시작: Oh, hi Lira. Um, I’m trying to remember what I was looking a
-    11.51s  <ret> 발화 (turn3 첫 프레임)
-    11.74s  agent 발화 시작: <ret> You mentioned researching a used car… You were compari
-    11.91s  user  발화 끝
-    12.63s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
-    19.85s  agent 발화 끝
-    21.10s  user  발화 시작: Right! That’s it. And I think… I— I mean, I wanted to know i
-    26.09s  <ret> 발화 (turn5 첫 프레임)
-    26.40s  agent 발화 시작: <ret> Tax incentives for hybrid vehicles can vary quite a bi
-    26.61s  user  발화 끝
-    28.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Tax incentives for hybrid vehicles in Japan: up to ¥100,
-    32.32s  agent 발화 시작: There's a purchase price reduction of up to one hundred thou
-    32.51s  agent 발화 끝
-    39.22s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sahiha, I’m Lira. It’s good to connect with you. Is there
+     5.33s  agent 발화 끝
+     5.53s  user  발화 시작: Oh, um, yes. I was wondering if you remembered what I was lo
+     9.75s  <ret> 발화 (turn2 첫 프레임)
+     9.98s  agent 발화 시작: <ret> Certainly, recalling past conversations is helpful. Yo
+    10.12s  user  발화 끝
+    11.27s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.63s]: [2026-08-02] Past chat — Researching a used car: comparing hybrid mode
+    15.12s  user  발화 시작: Yeah.
+    15.61s  user  발화 끝
+    18.32s  agent 발화 끝
+    20.02s  user  발화 시작: Right, and I'm still thinking about it, but I’m not sure abo
+    23.39s  user  발화 끝
+    23.39s  agent 발화 시작: Maintenance can definitely be a worry with a used car. It’s 
+    31.45s  user  발화 시작: So, what kind of hybrids generally have the lowest maintenan
+    32.01s  agent 발화 끝
+    34.64s  agent 발화 시작: Toyota hybrids consistently rank well for reliability and th
+    34.82s  user  발화 끝
+    41.49s  agent 발화 끝

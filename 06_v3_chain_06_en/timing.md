@@ -1,82 +1,78 @@
 # v3_chain_06_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Perfect! That’s really helpful. I— | S3 Sounds lovely. I wonder if I have  | S4 Do you think I should tip twenty p
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Oh, Sushi Yasuda sounds good. Can  | S3 Hmm, sounds nice. I should probabl | S4 Fantastic. Thanks so much, Lio.
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.75s  <ret> 발화 (turn1 첫 프레임)
-     4.83s  agent 발화 시작: <ret> Alright, I’ve updated your browser’s user agent to MyC
+     4.66s  <ret> 발화 (turn1 첫 프레임)
+     4.74s  agent 발화 시작: <ret> Excellent! I've updated your browser’s user agent to M
      4.86s  user  발화 끝
-     6.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.32s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
-    14.15s  agent 발화 끝
-    14.65s  user  발화 시작: Uh, yeah, actually. Can you search for restaurants nearby th
-    18.82s  <ret> 발화 (turn3 첫 프레임)
-    18.98s  agent 발화 시작: <ret> I found three options open late: The Diner until two A
-    19.14s  user  발화 끝
-    20.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.30s]: (tool result) Found three restaurants: The Diner, open until 2 AM; Lat
-    24.94s  user  발화 시작: Yeah.
-    25.57s  user  발화 끝
-    29.27s  agent 발화 끝
-    29.86s  user  발화 시작: The Diner sounds good. What’s their phone number?
-    33.02s  <ret> 발화 (turn6 첫 프레임)
-    33.09s  agent 발화 시작: <ret> The Diner’s number is five-five-five one-two-three fou
-    33.28s  user  발화 끝
-    35.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: (tool result) The Diner’s phone number is 555-123-4567 and address is 
-    38.09s  user  발화 시작: Yeah.
-    38.54s  user  발화 끝
-    41.81s  agent 발화 끝
-    42.70s  user  발화 시작: Okay, could you book a table for two there at eleven pm?
-    45.50s  <ret> 발화 (turn9 첫 프레임)
-    45.90s  agent 발화 시작: <ret> Excellent! I’ve booked a table for two at The Diner fo
-    45.93s  user  발화 끝
-    46.70s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.34s]: (tool result) Reservation confirmed at The Diner for two people at ele
-    54.24s  agent 발화 끝
-    55.32s  user  발화 시작: Perfect! That’s really helpful. I— I mean, how much would an
-    61.57s  <ret> 발화 (turn11 첫 프레임)
-    61.81s  agent 발화 시작: <ret> An Uber to The Diner should cost between fifteen and t
-    61.85s  user  발화 끝
-    63.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: (tool result) An Uber to The Diner is estimated at fifteen to twenty d
-    68.86s  agent 발화 끝
-    69.12s  user  발화 시작: Hmm, okay. [interrupting] Is surge pricing in effect right n
-    73.93s  agent 발화 시작: Surge pricing is currently two point zero times the normal r
-    73.93s  user  발화 끝
-    78.48s  user  발화 시작: Right. Okay, that's good to know. What's the weather like th
-    78.65s  agent 발화 끝
-    83.05s  <ret> 발화 (turn15 첫 프레임)
-    83.11s  user  발화 끝
-    83.13s  agent 발화 시작: <ret> It’s sixty-five degrees and clear at The Diner right n
-    84.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.44s]: (tool result) The weather at The Diner is currently 65 degrees Fahrenh
-    89.57s  agent 발화 끝
-    89.61s  user  발화 시작: Sounds lovely. I wonder if I have enough cash?
-    93.03s  user  발화 끝
-    93.09s  agent 발화 시작: That's a very practical question to consider beforehand.
-    95.33s  user  발화 시작: Yeah.
-    95.96s  user  발화 끝
-    96.98s  user  발화 시작: Yeah. Could you check my checking account balance?
-    97.07s  agent 발화 끝
-    99.84s  <ret> 발화 (turn20 첫 프레임)
-   100.16s  agent 발화 시작: <ret> You currently have one thousand two hundred and thirty
-   100.22s  user  발화 끝
-   101.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Your checking account balance is one thousand two hundre
-   106.55s  user  발화 시작: Okay, that’s reassuring. Can you set a reminder to leave for
-   107.01s  agent 발화 끝
-   111.81s  <ret> 발화 (turn22 첫 프레임)
-   111.97s  agent 발화 시작: <ret> Absolutely. I’ve set a reminder for ten forty-five PM 
-   112.15s  user  발화 끝
-   113.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Reminder set for 10:45 PM: Leave for The Diner.
-   118.31s  agent 발화 끝
-   119.21s  user  발화 시작: Great. Thanks so much, Lio.
-   120.93s  agent 발화 시작: You’re very welcome! I’m glad I could help organize your eve
-   121.06s  user  발화 끝
-   125.61s  agent 발화 끝
-   125.89s  user  발화 시작: Do you think I should tip twenty percent?
-   127.95s  agent 발화 시작: Twenty percent is a generous and appreciated tip for good se
-   128.01s  user  발화 끝
-   133.03s  user  발화 시작: Okay, good point. I’ll do that.
-   133.14s  agent 발화 끝
-   134.96s  agent 발화 시작: A thoughtful approach. Enjoy your dinner at The Diner!
-   135.15s  user  발화 끝
-   139.45s  agent 발화 끝
-   140.82s  user  발화 시작: I will. Thanks again.
-   142.44s  user  발화 끝
-   142.51s  agent 발화 시작: My pleasure. Remember, I'm here if you need anything else – 
-   150.91s  agent 발화 끝
+     6.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) The user agent was successfully set to MyCustomBrowser v
+    11.74s  agent 발화 끝
+    12.15s  user  발화 시작: Uh, great. Now can you search for restaurants near the Empir
+    15.64s  <ret> 발화 (turn3 첫 프레임)
+    15.88s  agent 발화 시작: <ret> Certainly. I found five restaurants near the Empire St
+    16.13s  user  발화 끝
+    16.14s  ⚡SPAN 주입 [d'=0.50s / d_lead=10.66s]: (tool result) Five restaurants were found: Carmine’s, State Grill and 
+    22.11s  user  발화 시작: Yeah.
+    22.79s  user  발화 끝
+    26.54s  agent 발화 끝
+    27.19s  user  발화 시작: Hmm, what are the ratings for those?
+    28.85s  <ret> 발화 (turn6 첫 프레임)
+    29.16s  agent 발화 시작: <ret> Here are the ratings: Carmine’s has four point one sta
+    29.36s  user  발화 끝
+    30.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.46s]: (tool result) Carmine’s: 4.1 stars. State Grill: 3.8 stars. The Smith:
+    36.92s  user  발화 시작: Yeah.
+    37.70s  user  발화 끝
+    42.62s  agent 발화 끝
+    43.46s  user  발화 시작: Oh, Sushi Yasuda sounds good. Can you make a reservation the
+    49.42s  <ret> 발화 (turn9 첫 프레임)
+    49.81s  agent 발화 시작: <ret> Wonderful! Your reservation at Sushi Yasuda for two at
+    49.90s  user  발화 끝
+    50.62s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.90s]: (tool result) Reservation confirmed at Sushi Yasuda for two people at 
+    60.71s  agent 발화 끝
+    61.77s  user  발화 시작: Perfect. Could you add a reminder to my calendar for that re
+    65.73s  <ret> 발화 (turn11 첫 프레임)
+    65.97s  agent 발화 시작: <ret> Absolutely. I’ve added “Sushi Yasuda Reservation” to y
+    66.03s  user  발화 끝
+    67.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: (tool result) Event “Sushi Yasuda Reservation” added to calendar for 7
+    74.73s  agent 발화 끝
+    74.99s  user  발화 시작: Thanks, Lio. What’s the weather like tonight?
+    77.04s  <ret> 발화 (turn13 첫 프레임)
+    77.44s  agent 발화 시작: <ret> The weather in New York City tonight will be clear, wi
+    77.54s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.07s]: (tool result) The forecast for New York City tonight is clear, with a 
+    77.57s  user  발화 끝
+    83.31s  user  발화 시작: Hmm, sounds nice. I should probably order a cab to get there
+    83.51s  agent 발화 끝
+    87.43s  <ret> 발화 (turn15 첫 프레임)
+    87.47s  user  발화 끝
+    87.51s  agent 발화 시작: <ret> I’ve requested a taxi to take you to Sushi Yasuda. It 
+    89.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.40s]: (tool result) A taxi has been requested to your current location for S
+    93.91s  agent 발화 끝
+    93.93s  user  발화 시작: Great. How much will that likely cost?
+    96.31s  <ret> 발화 (turn17 첫 프레임)
+    96.71s  agent 발화 시작: <ret> The estimated taxi fare to Sushi Yasuda is twenty-two 
+    96.75s  user  발화 끝
+    97.91s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.32s]: (tool result) Estimated taxi fare from your current location to Sushi 
+    99.67s  user  발화 시작: Yeah.
+   100.40s  user  발화 끝
+   101.81s  user  발화 시작: Okay, good to know. Can you send a text to my wife letting h
+   102.03s  agent 발화 끝
+   105.98s  <ret> 발화 (turn20 첫 프레임)
+   106.29s  agent 발화 시작: <ret> Certainly! I've sent a text message to your wife sayin
+   106.39s  user  발화 끝
+   107.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) Text message sent to wife: "On my way to Sushi Yasuda!".
+   112.13s  user  발화 시작: Fantastic. Thanks so much, Lio.
+   112.54s  agent 발화 끝
+   114.29s  agent 발화 시작: You’re very welcome! I’m glad I could help streamline your e
+   114.48s  user  발화 끝
+   119.34s  agent 발화 끝
+   120.29s  user  발화 시작: Actually, one last thing—what time is it right now?
+   123.43s  <ret> 발화 (turn24 첫 프레임)
+   123.83s  agent 발화 시작: <ret> It’s currently six fifteen pm, giving you plenty of ti
+   124.00s  user  발화 끝
+   125.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) The current time is 6:15 PM.
+   130.38s  user  발화 시작: Perfect. Thanks again!
+   130.78s  agent 발화 끝
+   132.13s  user  발화 끝
+   132.23s  agent 발화 시작: My pleasure. Enjoy your dinner at Sushi Yasuda! Remember, a 
+   141.97s  agent 발화 끝

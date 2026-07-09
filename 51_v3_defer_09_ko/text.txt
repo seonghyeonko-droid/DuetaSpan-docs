@@ -2,14 +2,13 @@ v3_defer_09_ko src=mcp style=mcp_deferred
 SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 친절하고 침착한 개인 가이드 Tian입니다. 기본적으로 존댓말로 말합니다. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 오션뷰 호텔에서 2월 10일부터 7박 동안 방 3개를 예약해 줘.
-[  4.53s][moshi] ⟨ret@4.38s⟩ 물론이죠. ⟦⚡SPAN@5.42s: (tool result) Ocean View Hotel in San Diego has three rooms available from February tenth for seven nights at ⟧ 방 3개를 예약해 드릴게요.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "number_of_rooms": 3, "start_date": "2024-02-10", "length_of_stay": 7}}
-[  6.97s][moshi] 오션뷰 호텔에 2월 10일부터 7박 동안 방 3개를 예약했습니다. 총 비용은 이천백 달러입니다.
-[ 13.52s][user ] 와, 생각보다 비싸네. 좀 더 저렴한 곳으로 찾아볼까?
-[ 18.29s][moshi] 네, 물론입니다. 다른 호텔을 찾아볼까요? 어떤 기준으로 찾아드릴까요?
-[ 22.51s][user ] 해변 근처면 좋겠어. 그리고 수영장이 꼭 있어야 해.
-[ 27.16s][moshi] 해변 근처에 수영장이 있는 호텔을 찾으시는군요. 잠시만요—
-[ 29.53s][user ] «backchannel» Yeah.
-  ⟦⚡지연 SPAN 도착@30.76s: (tool result) Paradise Cove Resort is located three blocks from the beach and has an outdoor pool; rooms are a⟧
-[ 31.50s][moshi] «deferred_result» ⟨ret@31.51s⟩ 해변 근처에 수영장이 있는 호텔을 알아봤더니… 파라다이스 코브 리조트는 해변에서 세 블록 거리에 있고, 야외 수영장이 있습니다. 1박에 150달러부터 시작합니다.
+[  0.00s][user ] 오션뷰 호텔에서 2월 10일부터 7박 동안 방 세 개 예약해 줘.
+[  4.65s][moshi] ⟨ret@4.49s⟩ 네, 오션뷰 ⟦⚡SPAN@5.93s: (tool result) Reservation confirmed for three rooms at Ocean View Hotel in San Diego from February tenth to Fe⟧ 호텔 방 세 개를 2월 10일부터 7박으로 예약해 드리겠습니다.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "number_of_rooms": 3, "start_date": "2025-02-10", "length_of_stay": 7}}
+[  9.14s][moshi] 오션뷰 호텔, 샌디에이고에서 2월 10일부터 7박, 총 금액은 1260달러입니다.
+[ 12.43s][user ] «backchannel» 어어.
+[ 15.00s][user ] 혹시 취소 정책은 어떻게 ⟨ret@16.49s⟩ 돼?
+[ 16.80s][moshi] ⟦⚡SPAN@16.99s: (tool result) Cancellations are permitted up to 48 hours before check-in, with a full refund minus a ten dolla⟧ 취소 정책에 대해서는…
+[ 18.67s][moshi] 체크인 48시간 전까지는 취소 가능하고, 수수료 10달러를 제외한 전액 환불됩니다.
+[ 26.32s][user ] 음, 좋아. 그럼 그 호텔 근처에 괜찮은 식당도 찾아줄 수 있어?
+[ 31.03s][moshi] 물론입니다. 어떤 종류의 음식을 좋아하세요?

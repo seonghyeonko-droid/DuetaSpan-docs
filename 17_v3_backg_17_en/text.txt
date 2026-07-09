@@ -3,17 +3,17 @@ SYSTEM: <system> You are Eus, a curious and validating personal guide who helps 
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  What’s a normal heart rate, generally?
-  S2  Oh, wow, that’s a pretty wide range. Is there a “good” number within t
-  S3  Did you remember to take the trash out?
-  S4  So, below sixty is okay, even? As long as it’s above fifty?
+  S1  What’s a normal heart rate for someone healthy?
+  S2  Oh, that’s… higher than I thought. Is there a range for athletes, mayb
+  S3  Did you remember to take the recycling out?
+  S4  So, under sixty is okay for an athlete, but what about a regular perso
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] What’s a normal heart ⟨ret@1.79s⟩ rate, generally?
-[  2.19s][moshi] That’s a ⟦⚡SPAN@3.31s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ common question, and— For most adults, a normal resting heart rate falls between sixty and one hundred beats per minute.
-[ 10.23s][user ] Oh, wow, that’s a pretty wide range. Is there a “good” number within that?
-[ 14.45s][moshi] It truly is a fairly broad spectrum, isn’t it? A lower rate often indicates good cardiovascular fitness.
-[ 17.75s][user ] «backchannel» Yeah, yeah.
-[ 20.91s][moshi] ⟨ret@20.67s⟩ ⟦⚡SPAN@20.99s: A healthy heart rate is generally between 50 and 90 beats per minute.⟧ Interestingly— A healthy heart rate is typically considered to be between fifty and ninety beats per minute.
-[ 25.91s][user ] «to_other» Did you remember to take the trash out?
-[ 28.01s][user ] So, below sixty is okay, even? As long as it’s above fifty?
+[  0.00s][user ] What’s a normal heart rate for ⟨ret@2.41s⟩ someone healthy?
+[  2.80s][moshi] That’s a really ⟦⚡SPAN@3.93s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ good question— A normal resting heart rate for adults is between sixty and one hundred beats per minute.
+[  9.42s][user ] Oh, that’s… higher than I thought. Is there a range for athletes, maybe?
+[ 14.16s][moshi] Absolutely. Athletes often have lower resting heart rates—
+[ 17.92s][moshi] ⟨ret@17.68s⟩ Well-trained athletes may have ⟦⚡SPAN@19.52s: Well-trained athletes may have a resting heart rate between 40 and 60 bpm.⟧ a resting heart rate between forty and sixty beats per minute.
+[ 22.79s][user ] «to_other» Did you remember to take the recycling out?
+[ 25.06s][user ] So, under sixty is okay for an athlete, but what about a regular person?
+[ 29.91s][moshi] For a regular person, a heart rate between fifty and ninety beats per minute is considered healthy.
