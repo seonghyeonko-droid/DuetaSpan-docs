@@ -69,27 +69,21 @@
 # }
 
 
-     0.00s  user  발화 시작: I was just reading about the VA… when did that even get star
-     3.90s  <ret> 발화 (turn1 첫 프레임)
-     4.22s  agent 발화 시작: <ret> That’s a good question— understanding its history give
-     4.25s  user  발화 끝
-     4.94s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.39s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-     8.51s  agent 발화 시작: The Department of Veterans Affairs was established on July t
-     8.62s  agent 발화 끝
-    13.93s  user  발화 시작: Nineteen thirty? Really? I always thought it was much older,
-    14.03s  agent 발화 끝
-    18.40s  <ret> 발화 (turn4 첫 프레임)
-    18.79s  agent 발화 시작: <ret> It’s understandable to think so, given the long histor
-    18.93s  user  발화 끝
-    20.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: [source: History.com] Prior to 1930, the administration of veterans’ b
-    23.06s  agent 발화 시작: Before nineteen thirty, veterans’ benefits were handled by v
-    23.19s  agent 발화 끝
-    27.97s  user  발화 시작: So, it wasn’t a single department before then—just bits and 
-    28.16s  agent 발화 끝
-    31.99s  <ret> 발화 (turn7 첫 프레임)
-    32.34s  agent 발화 시작: <ret> Exactly. It was a more decentralized approach initiall
-    32.45s  user  발화 끝
-    33.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: [source: VA.gov] The Veterans Bureau, founded in 1921, was a key precu
-    36.08s  agent 발화 시작: The Veterans Bureau, founded in nineteen twenty-one, was a k
-    36.22s  agent 발화 끝
-    41.50s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about government departments… when did th
+     5.65s  <ret> 발화 (turn1 첫 프레임)
+     5.97s  agent 발화 시작: <ret> The Department of Veterans Affairs was established on 
+     6.16s  user  발화 끝
+     6.77s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.13s]: [source: Wikipedia] The United States Department of Veterans Affairs w
+    11.11s  agent 발화 끝
+    12.02s  user  발화 시작: Nineteen thirty? That seems… surprisingly recent, honestly. 
+    17.76s  <ret> 발화 (turn3 첫 프레임)
+    18.14s  agent 발화 시작: <ret> Before nineteen thirty, veterans’ affairs were managed
+    18.40s  user  발화 끝
+    19.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: [source: VA.gov] Prior to 1930, veterans’ affairs were handled by the 
+    24.65s  user  발화 시작: Eighteen eleven… so they *were* thinking about veterans pret
+    24.86s  agent 발화 끝
+    30.59s  <ret> 발화 (turn5 첫 프레임)
+    30.99s  agent 발화 시작: <ret> The Bureau of Pensions first provided pensions to vete
+    31.03s  user  발화 끝
+    32.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: [source: History.com] The Bureau of Pensions initially focused on prov
+    36.74s  agent 발화 끝

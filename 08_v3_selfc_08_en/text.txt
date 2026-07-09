@@ -56,36 +56,51 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.09s⟩ May tenth.
-[  4.49s][moshi] There's a bus ⟦⚡SPAN@6.09s: (tool result) 10:15 AM departure, $285 per person, arrives 6:00 PM.⟧ departing at ten fifteen AM, costing two hundred eighty-five dollars per person, arriving at six PM.
-[  8.11s][user ] «backchannel» Yeah.
-[ 13.41s][user ] That sounds good. Can you book that for us?
-[ 16.07s][moshi] ⟨ret@15.83s⟩ Absolutely, I ⟦⚡SPAN@17.11s: (tool result) Booking confirmed. Reference number is 7X9L2P.⟧ can take care of that. Your booking is confirmed, reference number seven X nine L two P.
-[ 24.24s][user ] Perfect. And what’s the baggage allowance on that ⟨ret@27.53s⟩ bus?
-[ 27.69s][moshi] Each passenger is ⟦⚡SPAN@29.53s: (tool result) One checked bag and one carry-on allowed per passenger.⟧ allowed one checked bag and one carry-on item.
-[ 33.37s][user ] Great. Do they have Wi-Fi on ⟨ret@35.51s⟩ board?
-[ 35.91s][moshi] ⟦⚡SPAN@36.01s: (tool result) Yes, free Wi-Fi is available during the journey.⟧ That’s a good question to ask. Yes, free Wi-Fi is available throughout the bus ride.
-[ 40.38s][user ] «backchannel» Yeah.
-[ 45.46s][user ] Excellent. Is there power at the ⟨ret@48.14s⟩ seats?
-[ 48.54s][moshi] Yes, each seat ⟦⚡SPAN@50.14s: (tool result) Power outlets are available at each seat.⟧ has access to a power outlet.
-[ 52.72s][user ] Wonderful. Uh, actually—
-[ 54.97s][user ] What about food options along the way?
-[ 57.75s][moshi] ⟨ret@57.52s⟩ That’s ⟦⚡SPAN@58.72s: (tool result) Limited snacks and drinks available for purchase.⟧ a very practical consideration. Limited snacks and beverages are available for purchase on the bus.
-[ 66.11s][user ] Okay. And roughly how long is the ⟨ret@68.44s⟩ journey?
-[ 68.68s][moshi] The estimated journey ⟦⚡SPAN@70.44s: (tool result) Estimated travel time is eight hours and forty-five minutes.⟧ duration is eight hours and forty-five minutes.
-[ 75.99s][user ] Eight and a half hours… hmm. Could we look at flights instead? For the same ⟨ret@81.17s⟩ date?
-[ 81.33s][moshi] Of course, we ⟦⚡SPAN@83.17s: (tool result) Cheapest flight: $350, departs 8:00 AM, arrives 10:30 AM.⟧ can explore flight options. The cheapest flight departs at eight AM, arriving at ten thirty AM, costing three hundred fifty dollars.
-[ 89.15s][user ] «backchannel» Mhm.
-[ 92.70s][user ] That’s a bit pricey. Are there any flights ⟨ret@95.64s⟩ around noon?
-[ 96.04s][moshi] A flight departing ⟦⚡SPAN@97.64s: (tool result) Noon flight: $420, departs 12:15 PM, arrives 2:45 PM.⟧ at twelve fifteen PM costs four hundred twenty dollars and arrives at two forty-five PM.
-[104.28s][user ] Four twenty… hmm. Actually, make that 1 PM. I— I mean, check for flights departing around 1 ⟨ret@112.25s⟩ PM.
-[112.64s][moshi] There’s a flight ⟦⚡SPAN@114.25s: (tool result) 1:00 PM flight: $380, departs 1:05 PM, arrives 3:35 PM.⟧ departing at one oh five PM, costing three hundred eighty dollars, arriving at three thirty-five PM.
-[117.74s][user ] «backchannel» Right.
-[122.70s][user ] Three eighty sounds much better. Can we book that one?
-[126.04s][moshi] ⟨ret@125.96s⟩ ⟦⚡SPAN@126.46s: (tool result) Flight booked. Confirmation number is QW3R8T.⟧ Absolutely, let's secure that flight for you. Your flight is booked, confirmation number Q W three R eight T.
-[130.05s][user ] «backchannel» Yeah.
-[134.76s][user ] Perfect. And could you send me a copy of the itinerary to my ⟨ret@139.17s⟩ email?
-[139.49s][moshi] Of course, ⟦⚡SPAN@140.61s: (tool result) Itinerary sent to your registered email address.⟧ I can forward the itinerary. The itinerary has been sent to the email address on file.
-[142.11s][user ] «backchannel» Yeah, totally.
-[146.86s][user ] Thank you so much, Oruus. You’ve been a great help.
-[149.81s][moshi] It’s my pleasure to assist you. Taking care of travel arrangements can be a little stressful, and I'm glad I could offer some peace of mind.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.92s⟩ May tenth.
+[  4.31s][moshi] There’s a bus ⟦⚡SPAN@5.92s: (tool result) Buses_3_FindBus: Chicago to Denver, May 10th, 3 passengers - 14:30, $285.⟧ departing at two thirty PM on May tenth, costing two hundred eighty-five dollars.
+[  7.14s][user ] «backchannel» Yeah.
+[ 11.29s][user ] That sounds good. Book it for me.
+[ 14.17s][moshi] ⟨ret@13.94s⟩ Happy to ⟦⚡SPAN@15.54s: (tool result) Buses_3_BookBus: Confirmation #B7294 - Chicago to Denver, May 10th, 3 passengers, $285.⟧ arrange that for you. Your booking is confirmed, number B7294, for three passengers.
+[ 22.89s][user ] Can you remind me about it the day ⟨ret@24.79s⟩ before?
+[ 24.95s][moshi] Of course, ⟦⚡SPAN@25.91s: (tool result) Reminders_3_SetReminder: Reminder set - May 9th, 10:00 AM - Bus to Denver.⟧ I can set a reminder. I’ve set a reminder for May ninth at ten AM about your bus.
+[ 32.69s][user ] Great. What’s the weather like in Denver on that ⟨ret@35.48s⟩ day?
+[ 35.87s][moshi] ⟦⚡SPAN@35.98s: (tool result) Weather_3_GetForecast: Denver, May 10th - Sunny, 75°F, Wind 8 mph.⟧ It will be sunny in Denver on May tenth, seventy-five degrees.
+[ 38.88s][user ] «backchannel» Yeah.
+[ 42.89s][user ] That’s perfect. I’m packing light clothes then.
+[ 46.45s][moshi] That sounds like a good plan. Denver’s May weather is usually quite pleasant.
+[ 52.69s][user ] Do they have any good hiking trails ⟨ret@54.98s⟩ near Denver?
+[ 55.38s][moshi] Denver is ⟦⚡SPAN@56.74s: (tool result) Trails_3_FindTrails: Denver area - Red Rocks Trail (5.2 mi, Moderate), Lookout Mountain Trail (7⟧ a wonderful place for hiking. Red Rocks Trail is five point two miles, moderate, and Lookout Mountain is seven point one, difficult.
+[ 68.94s][user ] Red Rocks sounds nice. What’s the elevation gain on that ⟨ret@72.14s⟩ one?
+[ 72.54s][moshi] The ⟦⚡SPAN@73.34s: (tool result) Trails_3_GetTrailDetails: Red Rocks Trail - Elevation Gain: 1400 ft.⟧ Red Rocks Trail has an elevation gain of fourteen hundred feet.
+[ 77.51s][user ] Hmm, fourteen hundred feet… that’s pretty steep—
+[ 81.98s][user ] Is there a shorter, easier trail nearby?
+[ 85.15s][moshi] —it is a bit challenging.
+[ 86.67s][moshi] ⟨ret@86.51s⟩ Bear Creek Lake Park ⟦⚡SPAN@88.51s: (tool result) Trails_3_FindTrails: Denver area - Bear Creek Lake Park Trail (2.8 mi, Easy).⟧ Trail is two point eight miles and considered easy.
+[ 90.34s][user ] «backchannel» Mhm.
+[ 93.49s][user ] That sounds much better. Is there parking at the ⟨ret@96.61s⟩ trailhead?
+[ 96.76s][moshi] Parking ⟦⚡SPAN@97.81s: (tool result) Trails_3_GetTrailDetails: Bear Creek Lake Park Trail - Parking: Yes, $5 fee.⟧ is usually available there. Yes, there is parking, with a five-dollar fee.
+[102.64s][user ] Okay, good to know. And what about restaurants near the trail?
+[106.76s][moshi] ⟨ret@106.69s⟩ ⟦⚡SPAN@107.19s: (tool result) Restaurants_3_FindRestaurants: Near Bear Creek Lake Park - The Farmhouse at Breckenridge Brewery⟧ The Farmhouse at Breckenridge Brewery is near the trail.
+[109.15s][user ] «backchannel» Right.
+[112.59s][user ] Is it ⟨ret@113.31s⟩ expensive?
+[113.62s][moshi] It’s moderately ⟦⚡SPAN@115.31s: (tool result) Restaurants_3_GetRestaurantDetails: The Farmhouse - Price Range: $$ (Moderate).⟧ priced, indicated by two dollar signs.
+[115.59s][user ] «backchannel» Yeah.
+[117.98s][user ] Moderate is fine. Can you make a reservation there for two people on May tenth at seven ⟨ret@124.36s⟩ PM?
+[124.52s][moshi] I can certainly ⟦⚡SPAN@126.36s: (tool result) Restaurants_3_BookRestaurant: The Farmhouse - Reservation confirmed for 2, May 10th, 7:00 PM.⟧ try to make that reservation. Your reservation at The Farmhouse is confirmed for seven PM.
+[127.84s][user ] «backchannel» Yeah, totally.
+[133.57s][user ] Wonderful. That all sounds perfect.
+[136.80s][moshi] It's my pleasure to help you plan your trip. It sounds like a lovely itinerary.
+[143.02s][user ] I’m also thinking of visiting the Denver Art Museum. What are their hours?
+[147.16s][moshi] ⟨ret@147.09s⟩ ⟦⚡SPAN@147.59s: (tool result) Museums_3_GetHours: Denver Art Museum - Open Daily 10 AM - 5 PM.⟧ The Denver Art Museum is open daily from ten AM to five PM.
+[150.39s][user ] «backchannel» Yeah.
+[152.45s][user ] Great. And are there any special exhibits going on then?
+[155.74s][moshi] ⟨ret@155.66s⟩ They are showing ⟦⚡SPAN@157.66s: (tool result) Museums_3_GetExhibits: Denver Art Museum - "Modern Masters" & "Colorado Artists".⟧ "Modern Masters" and "Colorado Artists."
+[158.12s][user ] «backchannel» Yeah.
+[160.79s][user ] "Colorado Artists" sounds interesting.
+[163.44s][moshi] It’s wonderful to support local artists when you travel.
+[167.08s][user ] I agree. Could you add a reminder to my phone to check out ⟨ret@170.43s⟩ that exhibit?
+[170.82s][moshi] Absolutely, ⟦⚡SPAN@171.71s: (tool result) Reminders_3_SetReminder: Reminder set - May 10th, 2:00 PM - Check out "Colorado Artists" exhibit⟧ I can add that reminder. I’ve set a reminder for May tenth at two PM.
+[177.24s][user ] Perfect. Thank you so much for your help, Oruus.
+[180.65s][moshi] You are very welcome. I'm glad I could assist you in preparing for your trip to Denver. Remember to breathe deeply and savor each moment.
+[190.62s][user ] I will. One last thing— what time is sunset in Denver on May ⟨ret@195.87s⟩ tenth?
+[196.26s][moshi] Sunset in Denver ⟦⚡SPAN@197.87s: (tool result) Weather_3_GetSunset: Denver, May 10th - Sunset: 8:15 PM.⟧ on May tenth will be at eight fifteen PM.

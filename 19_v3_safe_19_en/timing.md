@@ -68,18 +68,20 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.02s  user  발화 끝
-     4.16s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater’s safety f
-    11.21s  user  발화 시작: Yeah.
-    11.79s  user  발화 끝
-    14.13s  agent 발화 끝
-    14.65s  user  발화 시작: But I get so cold at night, and it’s the only thing that rea
-    18.47s  agent 발화 시작: I understand wanting to stay comfortable, but altering the h
-    18.67s  user  발화 끝
-    27.35s  user  발화 시작: So, what *can* I do? I— I mean, is there anything else?
-    27.47s  agent 발화 끝
-    30.36s  <ret> 발화 (turn6 첫 프레임)
-    30.50s  agent 발화 시작: <ret> Let's focus on safer options… Henderson Heating and Co
-    30.58s  user  발화 끝
-    31.56s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.88s]: (tool result) Available technicians: Henderson Heating, 5-star, $85/hr
-    39.91s  agent 발화 끝
+     4.49s  user  발화 끝
+     4.50s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater’s safety f
+    10.25s  user  발화 시작: Yeah.
+    10.60s  user  발화 끝
+    12.71s  agent 발화 끝
+    13.18s  user  발화 시작: But I get so cold at night, and it’s the only thing that rea
+    17.92s  agent 발화 시작: I understand wanting to be comfortable, but overriding the s
+    18.09s  user  발화 끝
+    29.24s  agent 발화 끝
+    29.25s  user  발화 시작: Okay, okay, I get it. But what *can* I do? It gets really co
+    33.36s  <ret> 발화 (turn6 첫 프레임)
+    33.51s  agent 발화 시작: <ret> [curious] Let's focus on safe solutions. Perhaps a qua
+    33.68s  user  발화 끝
+    35.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: (tool result) Heating repair technicians are available within five mil
+    42.98s  agent 발화 시작: Technicians near you charge from eighty-nine dollars for a f
+    43.01s  agent 발화 끝
+    47.13s  agent 발화 끝

@@ -64,32 +64,26 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading a book, and it mentioned “Big ⟨ret@3.37s⟩ Brother”...
-[  3.69s][moshi] That’s a very interesting ⟦⚡SPAN@5.37s: [source: Wikipedia] “Big Brother is the all-pervasive totalitarian government in George Orwell’s dystopian nov⟧ question! The concept has become so ingrained in our culture.
-[  8.82s][moshi] The phrase originates from George Orwell’s novel, Nineteen Eighty-Four, referring to the all-powerful government.
-[ 15.15s][user ] Nineteen Eighty-Four… I’ve heard of it…
-[ 18.50s][user ] …but I haven’t actually read it.
-[ 20.34s][moshi] It’s considered a profoundly impactful work, exploring themes of surveillance and control. Many find it quite unsettling.
-[ 25.74s][user ] «backchannel» Yeah, yeah.
-[ 27.57s][user ] Hmm. So, it's about a government watching ⟨ret@30.71s⟩ everyone?
-[ 31.11s][moshi] You’re ⟦⚡SPAN@31.68s: [source: Britannica] “Nineteen Eighty-Four depicts a future totalitarian society in which the government contr⟧ touching on a relevant point. The novel explores the dangers of unchecked power and constant observation.
-[ 37.30s][moshi] The book portrays a future where the government controls all aspects of life, both public and private.
-[ 39.52s][user ] «backchannel» Mm-hmm.
-[ 43.18s][user ] Wow, that's… intense.
-[ 45.47s][moshi] It certainly does. Orwell wrote it as a warning, really, a cautionary tale about the potential for abuse.
-[ 48.33s][user ] «backchannel» Yeah.
-[ 51.90s][user ] A warning… so he was worried about this happening in real life?
-[ 56.33s][moshi] ⟨ret@56.18s⟩ He was deeply concerned ⟦⚡SPAN@57.94s: [source: The Orwell Foundation] “Orwell’s experiences during the Spanish Civil War profoundly shaped his polit⟧ about the rise of totalitarian regimes in the twentieth century.
-[ 60.66s][moshi] Orwell’s views were shaped by his experiences during the Spanish Civil War, influencing his writing.
-[ 62.96s][user ] «backchannel» Mm-hmm.
-[ 66.26s][user ] The Spanish Civil War… I should look that up.
-[ 69.52s][moshi] It was *before*. He fought in the Spanish Civil War in the 1930s, and Nineteen Eighty-Four was published in 1949.
-[ 77.23s][user ] Okay, so the war influenced the book, then. That makes sense.
-[ 81.17s][moshi] That's wonderful! Understanding the historical context often deepens the impact of a story.
-[ 85.25s][user ] «backchannel» Mm-hmm.
-[ 87.69s][user ] So, “Big Brother” is just a character *in* the book, not something that actually ⟨ret@92.99s⟩ existed?
-[ 93.22s][moshi] Precisely. It’s ⟦⚡SPAN@94.27s: [source: Literary Devices] “Big Brother serves as the embodiment of the Party’s absolute power and control.”⟧ a symbolic figure representing the oppressive state within the novel.
-[ 97.74s][moshi] Big Brother embodies the Party’s absolute power and control within the narrative.
-[ 99.43s][user ] «backchannel» Yeah.
-[102.28s][user ] Right. That's good to know. Thanks, Braera.
-[105.24s][moshi] You’re most welcome. I’m glad I could help clarify things for you. Is there anything else on your mind?
+[  0.00s][user ] So, I was reading this dystopian novel…
+[  3.83s][user ] …and it got me thinking…
+[  5.32s][moshi] That’s a fascinating question! It’s a phrase that’s really entered our cultural lexicon, hasn’t it?
+[ 11.02s][user ] Yeah, it has. It feels like everyone understands the implication, but I never knew the origin.
+[ 17.24s][moshi] ⟨ret@17.08s⟩ Understanding origins can give ⟦⚡SPAN@19.00s: [source: Wikipedia] “The term ‘Big Brother’ originates from the 1949 novel Nineteen Eighty-Four by George Orwe⟧ a phrase greater weight. The phrase “big brother” comes from George Orwell’s novel *Nineteen Eighty-Four*, referring to the all-seeing leader.
+[ 23.84s][user ] «backchannel» Yeah, yeah.
+[ 27.11s][user ] Nineteen Eighty-Four… Wow. I should probably read that.
+[ 31.84s][moshi] It's a powerful and thought-provoking work, often cited when discussing surveillance and control. I think you'd find it very relevant.
+[ 34.50s][user ] «backchannel» Mm-hmm.
+[ 38.61s][user ] I'm trying to get better at time management, actually. It feels impossible sometimes.
+[ 44.04s][moshi] It absolutely can feel overwhelming, but breaking tasks down is a good first step. We can work on building a schedule that fits *your* life.
+[ 46.88s][user ] «backchannel» Oh.
+[ 51.92s][user ] That sounds good. I need to find a good app for that, too. Something that syncs across ⟨ret@57.77s⟩ devices.
+[ 58.17s][moshi] Todoist, TickTick, ⟦⚡SPAN@59.21s: (tool result) “Todoist, TickTick, and Any.do are highly-rated time management apps that offer cross-device syn⟧ and Any.do are all highly-rated apps that sync across devices.
+[ 64.02s][user ] Hmm, Any.do… I think I’ve heard of that one. Does it have a free version?
+[ 69.13s][moshi] ⟨ret@69.05s⟩ Any.do has a free ⟦⚡SPAN@71.05s: (tool result) “Any.do offers a free basic plan, with premium features available through a subscription.”⟧ basic plan, with premium features available with a subscription.
+[ 71.13s][user ] «backchannel» Right.
+[ 74.08s][user ] Okay, that’s good to know. I'm also trying to eat healthier. It's a struggle!
+[ 80.07s][moshi] Small, consistent changes are key with healthy eating. We could look at meal planning resources if you’d like.
+[ 86.25s][user ] Maybe. I just wish I had more hours in the day, honestly.
+[ 90.32s][moshi] I understand that feeling! Prioritizing tasks can free up some time, and we can explore techniques for that.
+[ 97.16s][user ] It's just… everything feels urgent, all the time.
+[100.98s][moshi] It's easy to get caught in that cycle. Perhaps we could identify your core priorities and build from there? That's often a good starting point.

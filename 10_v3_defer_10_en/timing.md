@@ -78,22 +78,22 @@
 
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.72s  <ret> 발화 (turn1 첫 프레임)
-     4.79s  agent 발화 시작: <ret> I found thirty-seven pictures from your France trip in
-     4.96s  user  발화 끝
-     6.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Found 37 images matching 'France holiday' from 2023, exc
-     8.26s  user  발화 시작: Mhm.
-     8.89s  user  발화 끝
-    10.49s  agent 발화 끝
-    11.14s  user  발화 시작: Can you show me just the ones from Paris?
-    13.36s  <ret> 발화 (turn4 첫 프레임)
-    13.51s  agent 발화 시작: <ret> Okay, I’ve filtered those down to twelve photos tagged
-    13.68s  user  발화 끝
-    15.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) Filtered to 12 images tagged 'Paris' from the previous s
-    16.22s  user  발화 시작: Yeah.
-    16.71s  user  발화 끝
-    17.91s  agent 발화 끝
-    18.36s  user  발화 시작: That's great, thanks.
-    19.52s  agent 발화 시작: You’re very welcome! It’s good to revisit happy memories, is
-    19.60s  user  발화 끝
-    26.19s  agent 발화 끝
+     5.03s  <ret> 발화 (turn1 첫 프레임)
+     5.09s  agent 발화 시작: <ret> I found twelve pictures from your France trip last yea
+     5.28s  user  발화 끝
+     7.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) 12 files found: 'Paris_EiffelTower.jpg', 'Nice_Beach.png
+     7.63s  user  발화 시작: Mhm.
+     8.12s  user  발화 끝
+     9.26s  agent 발화 끝
+    10.00s  user  발화 시작: Oh, great! Can you send ‘Paris_EiffelTower.jpg’ to my sister
+    18.22s  <ret> 발화 (turn4 첫 프레임)
+    18.34s  agent 발화 시작: <ret> I’ve just sent the Eiffel Tower picture to Sarah at sa
+    18.52s  user  발화 끝
+    19.26s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.48s]: (tool result) Email sent to sarah.jones@email.com with attachment 'Par
+    21.19s  user  발화 시작: Yeah.
+    21.83s  user  발화 끝
+    22.82s  agent 발화 끝
+    23.41s  user  발화 시작: Perfect, thank you! I— I mean, do you think I should start s
+    27.66s  user  발화 끝
+    27.67s  agent 발화 시작: It's wonderful to think about your financial future, and abs
+    35.04s  agent 발화 끝

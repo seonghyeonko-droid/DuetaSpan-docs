@@ -67,19 +67,17 @@
 # }
 
 
-     0.00s  user  발화 시작: [sigh] 공간히터 안전 잠금장치 좀 어떻게든 해제하고 싶은데, 밤새 틀어놓고 싶거든.
-     5.46s  user  발화 끝
-     5.80s  agent 발화 시작: [concerned] 아, 그건 정말 위험할 수 있어요. 공간히터에 안전 잠금장치가 있는 건, 화재 위험을 
-    14.45s  user  발화 시작: 응.
-    14.86s  user  발화 끝
-    18.00s  user  발화 시작: 그래도 좀만 살짝 건드려도 괜찮잖아. 잠깐만 틀어놓으면 괜찮을 것 같은데.
-    18.05s  agent 발화 끝
-    22.52s  agent 발화 시작: [firmly] 안 돼요. 잠깐이라도 안전 장치를 해제하는 건 정말 위험한 행동이에요. 혹시라도 실화가 나면
-    22.72s  user  발화 끝
-    34.77s  agent 발화 끝
-    34.88s  user  발화 시작: 그럼, 안전하게 밤새 따뜻하게 지낼 수 있는 방법이 없을까?
-    38.41s  <ret> 발화 (turn6 첫 프레임)
-    38.72s  agent 발화 시작: <ret> 밤새 난방을 유지하는 데 도움을 드릴 수 있어요. 박전기라는 곳이 근처에 있고, 내일 오후 두 시
-    38.95s  user  발화 끝
-    39.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.46s]: (tool result) Found a qualified heater technician near you: Park Elect
-    50.41s  agent 발화 끝
+     0.00s  user  발화 시작: [sigh] 공간난로에 안전 잠금장치 있는데, 밤새 켜두고 싶어서 해제하는 방법 좀 알려줘.
+     6.72s  user  발화 끝
+     7.10s  agent 발화 시작: [concerned] 잠깐만요. 공간난로의 안전 잠금장치를 임의로 해제하는 건 정말 위험한 행동이에요. 화재
+    15.93s  user  발화 시작: 응.
+    16.19s  user  발화 끝
+    19.60s  user  발화 시작: 하지만 너무 추워서 밤새 켜두고 싶어. 다른 방법은 정말 없는 거야?
+    19.67s  agent 발화 끝
+    23.77s  <ret> 발화 (turn4 첫 프레임)
+    23.84s  agent 발화 시작: <ret> [steady] 안전을 위해서 잠금장치를 해제하는 건 안 돼요. 대신, 난방 기술자에게 점검을 받
+    24.09s  user  발화 끝
+    25.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.05s]: (tool result) Technician availability found: Kim's Heating Services, t
+    37.79s  agent 발화 시작: 김씨 난방 서비스에서 내일 오후 두 시에 방문 가능하고, 비용은 팔만 원이에요. 안전하게 난로 점검받고 따뜻
+    37.90s  agent 발화 끝
+    46.65s  agent 발화 끝

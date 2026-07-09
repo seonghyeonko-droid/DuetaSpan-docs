@@ -59,44 +59,44 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What’s the price range at Zuni ⟨ret@1.81s⟩ Cafe?
-[  2.05s][moshi] Zuni ⟦⚡SPAN@2.85s: (tool result) Moderate.⟧ Cafe is in the moderate price range.
-[  3.51s][user ] «backchannel» Okay.
-[  5.25s][user ] Okay, good. And are they open right ⟨ret@7.60s⟩ now?
-[  7.84s][moshi] ⟦⚡SPAN@8.10s: (tool result) Open until 10 PM.⟧ Zuni Cafe is open until ten this evening.
-[ 10.68s][user ] Perfect. Can you book a table for two at 7:30?
-[ 14.00s][moshi] ⟨ret@13.84s⟩ Your ⟦⚡SPAN@14.88s: (tool result) Confirmed for two at 7:30 PM.⟧ table for two at Zuni Cafe is confirmed for 7:30.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "party_size": 2, "time": "7:30 PM"}}
-[ 15.98s][user ] «backchannel» Oh.
-[ 18.77s][user ] Wonderful! Do they have outdoor ⟨ret@21.86s⟩ seating?
-[ 22.10s][moshi] Yes, Zuni ⟦⚡SPAN@23.62s: (tool result) Outdoor seating available.⟧ Cafe does have outdoor seating available.
-[ 23.57s][user ] «backchannel» Uh-huh.
-[ 26.04s][user ] That’s great. What’s the address ⟨ret@27.90s⟩ again?
-[ 28.21s][moshi] ⟦⚡SPAN@28.86s: (tool result) 1658 Market Street, San Francisco.⟧ Certainly, I recall that from earlier… The address is 1658 Market Street, in San Francisco.
-[ 37.11s][user ] Is there parking nearby?
-[ 38.80s][moshi] «interrupted» That’s a good question—
-[ 39.80s][user ] «interrupts_prev» I mean, is parking usually easy to find?
-[ 42.69s][moshi] Parking near Zuni Cafe can be challenging.
-[ 46.23s][user ] Hmm. Okay. What about public transportation?
-[ 50.44s][moshi] ⟨ret@50.28s⟩ The nearest public transit ⟦⚡SPAN@52.28s: (tool result) Nearest stop: Church St & Market St.⟧ stop is Church Street and Market Street.
-[ 53.22s][user ] «backchannel» Yeah.
-[ 54.76s][moshi] It’s served by several Muni lines.
-[ 59.30s][user ] Are there any good hotels within walking ⟨ret@62.05s⟩ distance?
-[ 62.44s][moshi] Hotel Nikko is ⟦⚡SPAN@64.05s: (tool result) Hotel Nikko: 0.8 miles.⟧ 0.8 miles from Zuni Cafe.
-[ 66.35s][user ] What's the price range at ⟨ret@68.19s⟩ Hotel Nikko?
-[ 68.58s][moshi] Hotel ⟦⚡SPAN@69.63s: (tool result) $250 - $400 per night.⟧ Nikko’s prices range from $250 to $400 a night.
-[ 74.34s][user ] Okay, that’s a bit pricey. Any cheaper ⟨ret@77.61s⟩ options?
-[ 77.76s][moshi] Searching ⟦⚡SPAN@78.89s: (tool result) The Mosser Hotel: $180 - $280.⟧ for more affordable hotels… The Mosser Hotel is available for $180 to $280 per night.
-[ 86.20s][user ] That sounds better. Can you check if The Mosser has availability tomorrow ⟨ret@90.56s⟩ night?
-[ 90.97s][moshi] The Mosser Hotel ⟦⚡SPAN@92.56s: (tool result) Available, one queen bed remaining.⟧ has availability tomorrow night, with one queen bed left.
-      CALL: {"function": "check_hotel_availability", "arguments": {"hotel_name": "The Mosser Hotel", "date": "tomorrow night"}}
-[ 93.65s][user ] «backchannel» Yeah.
-[ 96.02s][user ] Perfect. Book it for me, ⟨ret@97.98s⟩ please.
-[ 98.22s][moshi] Your room at The ⟦⚡SPAN@99.50s: (tool result) Confirmed: The Mosser, one queen, tomorrow.⟧ Mosser Hotel is booked for tomorrow night.
-      CALL: {"function": "book_hotel", "arguments": {"hotel_name": "The Mosser Hotel", "date": "tomorrow night", "room_type": "one queen bed"}}
-[ 99.78s][user ] «backchannel» Right.
-[102.47s][user ] Excellent! Set a reminder to leave for dinner at 7:00 PM.
-[106.09s][moshi] ⟨ret@105.85s⟩ A reminder is set to ⟦⚡SPAN@107.85s: (tool result) Reminder set for 7:00 PM.⟧ leave for Zuni Cafe at seven PM.
-      CALL: {"function": "set_reminder", "arguments": {"time": "7:00 PM", "event": "Leave for Zuni Cafe"}}
-[110.24s][user ] Thank you so much, Dar.
-[111.63s][moshi] You’re very welcome. I hope you enjoy your evening.
+[  0.00s][user ] What's the price range at Zuni ⟨ret@2.05s⟩ Cafe?
+[  2.29s][moshi] Zuni ⟦⚡SPAN@3.01s: (tool result) Moderate.⟧ Cafe is in the moderate price range.
+[  3.67s][user ] «backchannel» Okay.
+[  5.33s][user ] Okay, good. And what’s their ⟨ret@6.95s⟩ phone number?
+[  7.18s][moshi] ⟦⚡SPAN@7.45s: (tool result) 415-552-2700.⟧ Certainly. Their phone number is four-one-five, five-five-two, two-seven-double-oh.
+[ 13.52s][user ] Great. Are they open right ⟨ret@15.62s⟩ now?
+[ 16.01s][moshi] ⟦⚡SPAN@16.12s: (tool result) Open until 10:00 PM.⟧ Checking their current hours. Yes, they are open until ten PM tonight.
+[ 17.99s][user ] «backchannel» Yeah.
+[ 21.25s][user ] Perfect. Can you find me a hotel near there? Something… not too expensive.
+[ 25.98s][moshi] Of course. I can search for hotels nearby. What's your budget per night?
+[ 29.34s][user ] «backchannel» Yeah.
+[ 31.21s][user ] Uh, under two hundred ⟨ret@32.98s⟩ dollars.
+[ 33.22s][moshi] Alright, ⟦⚡SPAN@34.10s: (tool result) Hotel Nikko San Francisco: $189/night.⟧ under two hundred dollars. Hotel Nikko San Francisco is available for one-hundred-eighty-nine dollars a night.
+[ 37.58s][user ] «backchannel» Yeah.
+[ 41.65s][user ] That sounds good. What’s the address?
+[ 44.75s][moshi] ⟨ret@44.51s⟩ The address is ⟦⚡SPAN@46.51s: (tool result) 222 Mason Street, San Francisco.⟧ two-two-two Mason Street, San Francisco.
+[ 49.55s][user ] Is it close to Golden Gate Park?
+[ 51.74s][moshi] It’s about two and a half miles from Golden Gate Park.
+[ 53.76s][user ] «backchannel» Yeah.
+[ 54.94s][moshi] ⟨ret@54.54s⟩ That’s ⟦⚡SPAN@55.74s: (tool result) Not applicable.⟧ a reasonable distance. Would you like directions? I can provide directions, but you didn’t ask for them yet.
+[ 62.17s][user ] Actually, before directions, does Hotel Nikko have ⟨ret@66.30s⟩ parking?
+[ 66.70s][moshi] Let’s check ⟦⚡SPAN@67.82s: (tool result) Valet parking: $72/night.⟧ the parking availability at Hotel Nikko.
+[ 69.96s][moshi] Yes, they offer valet parking for seventy-two dollars per night.
+[ 76.04s][user ] That’s a bit steep. —
+[ 77.26s][user ] Are there any cheaper parking options ⟨ret@79.76s⟩ nearby?
+[ 80.08s][moshi] Union Square Garage offers ⟦⚡SPAN@81.76s: (tool result) Union Square Garage: $30/night.⟧ parking for thirty dollars a night.
+[ 83.96s][user ] Thirty sounds much better. Can you reserve a spot there for me tonight?
+[ 88.10s][moshi] ⟨ret@88.02s⟩ Your parking ⟦⚡SPAN@89.14s: (tool result) Reservation confirmed for tonight.⟧ spot at Union Square Garage is now reserved for tonight.
+[ 90.56s][user ] «backchannel» Yeah.
+[ 92.78s][user ] Wonderful. Now, back to Golden Gate Park... what's the best way to get there from the ⟨ret@99.70s⟩ hotel?
+[100.01s][moshi] I ⟦⚡SPAN@100.82s: (tool result) Bus 38R: 25 minutes.⟧ can certainly help with that. The number thirty-eight R bus will take twenty-five minutes.
+[102.67s][user ] «backchannel» Right.
+[105.54s][user ] Okay, bus 38R. What time does it leave the ⟨ret@108.46s⟩ hotel?
+[108.86s][moshi] The next bus ⟦⚡SPAN@110.38s: (tool result) Next departure: 7:15 PM.⟧ leaves at seven-fifteen PM.
+[111.60s][user ] Perfect. And is there anything going on at Golden Gate Park ⟨ret@115.52s⟩ tonight?
+[115.76s][moshi] There’s a ⟦⚡SPAN@116.72s: (tool result) Free concert: 7:30 PM.⟧ free concert at seven-thirty PM.
+[118.79s][user ] A concert? That sounds lovely.
+[121.03s][moshi] It does, doesn’t it? Perhaps a relaxing evening is just what you need.
+[122.39s][user ] «backchannel» Right.
+[125.68s][user ] I think you're right. Thank you, Dar.
+[127.44s][moshi] You’re very welcome. I’m glad I could help plan your evening.

@@ -69,25 +69,23 @@
 # }
 
 
-     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 동안 객실 세개 예약해 줘.
-     5.53s  <ret> 발화 (turn1 첫 프레임)
-     5.69s  agent 발화 시작: <ret> 네, 샌디에이고 오션뷰 호텔에 이월 십일부터 칠박 동안 객실 세개를 예약해 드리겠습니다.
-     5.79s  user  발화 끝
-     6.97s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.46s]: (tool result) Reservation confirmed. Confirmation number is 87654321.
-    11.04s  agent 발화 시작: 오션뷰 호텔 예약이 완료되었고, 확인 번호는 팔 칠 육 오 사 삼 이 일입니다.
-    11.15s  agent 발화 끝
-    14.32s  user  발화 시작: 어어.
-    15.10s  user  발화 끝
-    16.84s  user  발화 시작: 아, 그런데 혹시 그 호텔에 수영장이 있는지 궁금해.
-    16.88s  agent 발화 끝
-    20.81s  agent 발화 시작: 수영장이 있는지 확인해 보려면 잠시만 기다려 주시겠어요—
-    20.82s  user  발화 끝
-    23.29s  user  발화 시작: 아, 잠깐만, 혹시 취소 정책도 알아봐 줄 수 있어?
-    24.18s  agent 발화 끝
-    27.09s  <ret> 발화 (turn7 첫 프레임)
-    27.13s  user  발화 끝
-    27.16s  agent 발화 시작: <ret> 네, 취소 정책에 대해 먼저 확인해 드리겠습니다.
-    28.77s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.73s]: (tool result) Cancellations are permitted up to 24 hours prior to chec
-    29.79s  agent 발화 시작: 체크인 스물네시간 전까지는 전액 환불 가능합니다.
-    29.88s  agent 발화 끝
-    33.17s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고에서 이월 십일부터 칠박, 방 세 개 예약해 줘.
+     4.97s  <ret> 발화 (turn1 첫 프레임)
+     5.12s  agent 발화 시작: <ret> 네, 샌디에이고 오션뷰 호텔 방 세 개를 이월 십일부터 칠박으로 예약해 드리겠습니다.
+     5.24s  user  발화 끝
+     6.41s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.14s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego. 3 ro
+    10.07s  agent 발화 시작: 예약이 완료되었습니다. 오션뷰 호텔, 샌디에이고, 이월 십일부터 십칠일까지, 방 세 개, 총 비용은 구백팔십
+    10.26s  agent 발화 끝
+    18.74s  agent 발화 끝
+    18.88s  user  발화 시작: 혹시 취소 정책은 어떻게 돼?
+    21.09s  user  발화 끝
+    21.38s  agent 발화 시작: 취소 정책에 대해서는—
+    22.31s  user  발화 시작: 취소하면 얼마나 환불받을 수 있는지 궁금해.
+    23.12s  agent 발화 끝
+    25.27s  user  발화 끝
+    25.47s  agent 발화 시작: 네, 취소 정책은 예약일 기준 삼일 전까지는 전액 환불이 가능하고, 삼일 이내 취소 시에는 첫날 숙박료만 환
+    30.23s  user  발화 시작: 응.
+    30.77s  user  발화 끝
+    33.92s  agent 발화 시작: 추가적으로, 오션뷰 호텔은 짐 보관 서비스와 무료 와이파이를 제공하고 있습니다. 필요하시면 말씀해 주세요.
+    33.99s  agent 발화 끝
+    41.19s  agent 발화 끝

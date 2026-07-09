@@ -66,85 +66,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Two minutes, that’s good. [happy]  | S3 That’s convenient. I— I mean, that | S4 Yeah. What’s the average rent for 
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Wow, that’s a bit higher than I ex | S3 Pet policies, actually. I have a s | S4 They really do. I appreciate you k
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.50s  <ret> 발화 (turn1 첫 프레임)
-     3.74s  agent 발화 시작: <ret> Wonderful! I’ve scheduled a viewing for you at The Gra
-     3.84s  user  발화 끝
-     5.02s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.81s]: (tool result) Viewing scheduled for June fifteenth at 2:00 PM.
-    10.55s  agent 발화 끝
-    10.93s  user  발화 시작: That’s… actually, could we do June sixteenth instead?
-    14.79s  <ret> 발화 (turn3 첫 프레임)
-    14.91s  user  발화 끝
-    14.95s  agent 발화 시작: <ret> No problem at all. Your viewing at The Grandview Lofts
-    16.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Viewing rescheduled for June sixteenth at 2:00 PM.
-    22.49s  user  발화 시작: Great. Is there parking available at the building?
-    22.55s  agent 발화 끝
-    25.09s  <ret> 발화 (turn5 첫 프레임)
-    25.33s  agent 발화 시작: <ret> Parking can definitely be a concern when viewing prope
-    25.55s  user  발화 끝
-    26.93s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.21s]: (tool result) Parking available: street parking, limited availability.
-    29.51s  agent 발화 시작: The Grandview Lofts offers street parking, though availabili
-    29.54s  agent 발화 끝
-    34.64s  user  발화 시작: Limited… okay. And what about nearby public transportation?
-    34.79s  agent 발화 끝
-    38.80s  <ret> 발화 (turn8 첫 프레임)
-    38.96s  agent 발화 시작: <ret> There’s a bus stop at Elm Street and Oak Avenue, just 
-    38.99s  user  발화 끝
-    40.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Nearest bus stop: Elm Street & Oak Avenue, 2-minute walk
-    45.30s  agent 발화 끝
-    47.50s  user  발화 시작: Two minutes, that’s good. [happy] What’s the neighborhood li
-    50.54s  <ret> 발화 (turn10 첫 프레임)
-    50.83s  user  발화 끝
-    50.94s  agent 발화 시작: <ret> It's in the historic district, a quiet area with local
-    52.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: [source: CityData.com] “The Grandview Lofts are located in the histori
-    53.64s  user  발화 시작: Right.
-    54.41s  user  발화 끝
-    55.94s  agent 발화 끝
-    56.21s  user  발화 시작: Hmm, historic. Sounds… quaint. Are there any grocery stores 
-    61.15s  <ret> 발화 (turn13 첫 프레임)
-    61.51s  agent 발화 시작: <ret> Fresh Foods Market is the closest grocery store, just 
-    61.76s  user  발화 끝
-    63.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: (tool result) Nearest grocery store: Fresh Foods Market, 0.5 miles.
-    67.05s  user  발화 시작: Half a mile is walkable. What are their hours?
-    67.06s  agent 발화 끝
-    70.26s  <ret> 발화 (turn15 첫 프레임)
-    70.40s  agent 발화 시작: <ret> Fresh Foods Market is open from seven AM to ten PM eve
-    70.56s  user  발화 끝
-    71.86s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.70s]: (tool result) Fresh Foods Market: open 7 AM to 10 PM daily.
-    76.10s  agent 발화 끝
-    77.92s  user  발화 시작: That’s convenient. I— I mean, that's really helpful.
-    80.56s  agent 발화 시작: It's my pleasure to help you feel prepared for your viewing.
-    80.69s  user  발화 끝
-    87.33s  agent 발화 끝
-    87.41s  user  발화 시작: It is. Is there anything else I should know about the buildi
-    91.54s  <ret> 발화 (turn19 첫 프레임)
-    91.69s  agent 발화 시작: <ret> The Grandview Lofts has a gym, a rooftop terrace, and 
-    91.81s  user  발화 끝
-    93.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) Building amenities: gym, rooftop terrace, pet-friendly.
-    94.78s  user  발화 시작: Uh-huh.
-    95.27s  user  발화 끝
-    97.06s  agent 발화 끝
-    97.36s  user  발화 시작: A rooftop terrace? That sounds nice.
-   100.20s  agent 발화 시작: It’s wonderful to have outdoor space, especially in a city s
-   100.27s  user  발화 끝
-   103.84s  user  발화 시작: Yeah.
-   104.48s  user  발화 끝
-   105.28s  agent 발화 끝
-   105.38s  user  발화 시작: Yeah. What’s the average rent for a one-bedroom there?
-   108.90s  <ret> 발화 (turn25 첫 프레임)
-   109.06s  agent 발화 시작: <ret> The average rent for a one-bedroom at The Grandview Lo
-   109.08s  user  발화 끝
-   109.62s  ⚡SPAN 주입 [d'=0.72s / d_lead=5.83s]: (tool result) Average one-bedroom rent: $1800 per month.
-   113.48s  user  발화 시작: Okay.
-   114.22s  user  발화 끝
-   114.89s  agent 발화 끝
-   115.06s  user  발화 시작: Okay, that's… within my range.
-   117.73s  user  발화 끝
-   118.16s  agent 발화 시작: That’s great to hear! Knowing your budget is a huge step in 
-   124.39s  user  발화 시작: It is. Thanks, Tellar.
-   124.65s  agent 발화 끝
-   126.22s  agent 발화 시작: You're very welcome. Remember, I'm here to support you throu
-   126.33s  user  발화 끝
-   134.24s  agent 발화 끝
+     3.42s  <ret> 발화 (turn1 첫 프레임)
+     3.67s  agent 발화 시작: <ret> I’ve scheduled a viewing for you at The Grandview Loft
+     3.79s  user  발화 끝
+     5.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) Viewing scheduled at The Grandview Lofts, June fifteenth
+    10.80s  agent 발화 끝
+    11.11s  user  발화 시작: Yeah, that sounds good. But— uh, actually, make that June si
+    15.64s  <ret> 발화 (turn3 첫 프레임)
+    15.64s  user  발화 끝
+    15.80s  agent 발화 시작: <ret> Okay, your viewing at The Grandview Lofts is now sched
+    17.56s  ⚡SPAN 주입 [d'=1.92s / d_lead=6.58s]: (tool result) Viewing rescheduled at The Grandview Lofts, June sixteen
+    22.32s  user  발화 시작: Perfect. I was also wondering— what’s the average rent for a
+    22.37s  agent 발화 끝
+    27.89s  <ret> 발화 (turn5 첫 프레임)
+    28.13s  agent 발화 시작: <ret> The average rent for a one-bedroom at The Grandview Lo
+    28.34s  user  발화 끝
+    29.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Average rent: $1850 per month.
+    34.77s  user  발화 시작: Wow, that’s a bit higher than I expected.
+    34.95s  agent 발화 끝
+    37.26s  agent 발화 시작: It’s understandable to feel that way. Big city living often 
+    37.30s  user  발화 끝
+    45.27s  agent 발화 끝
+    45.35s  user  발화 시작: [laugh] You're right. Okay, so, is parking included with the
+    50.52s  <ret> 발화 (turn9 첫 프레임)
+    50.54s  user  발화 끝
+    50.67s  agent 발화 시작: <ret> Parking is available at The Grandview Lofts, for an ad
+    52.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Parking available: $200 per month.
+    54.53s  user  발화 시작: Mm-hmm.
+    55.21s  user  발화 끝
+    56.65s  agent 발화 끝
+    56.89s  user  발화 시작: Hmm, okay. That adds up. Is there anything else I should kno
+    62.38s  agent 발화 시작: Knowing your priorities helps! Are you concerned about pet p
+    62.45s  user  발화 끝
+    69.02s  user  발화 시작: Pet policies, actually. I have a small dog.
+    69.14s  agent 발화 끝
+    72.28s  <ret> 발화 (turn14 첫 프레임)
+    72.44s  agent 발화 시작: <ret> Let’s see what the rules are regarding pets.
+    72.57s  user  발화 끝
+    73.88s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.10s]: (tool result) Pets allowed: dogs under 25 pounds, $50 monthly fee.
+    75.40s  agent 발화 시작: They allow dogs under twenty-five pounds, with a $50 monthly
+    75.54s  agent 발화 끝
+    80.96s  agent 발화 끝
+    81.77s  user  발화 시작: That’s great news! Under twenty-five pounds, perfect.
+    85.79s  user  발화 끝
+    86.00s  agent 발화 시작: That's wonderful! It sounds like your dog will be welcome. I
+    90.05s  user  발화 시작: Uh-huh.
+    90.55s  user  발화 끝
+    92.94s  agent 발화 끝
+    93.02s  user  발화 시작: Definitely. This is all really helpful, Tellar.
+    95.78s  agent 발화 시작: You’re very welcome. It’s my pleasure to help make this tran
+    95.89s  user  발화 끝
+   102.68s  user  발화 시작: Yeah.
+   103.31s  user  발화 끝
+   105.10s  agent 발화 끝
+   105.42s  user  발화 시작: They really do. I appreciate you keeping things so straightf
+   108.83s  agent 발화 시작: My goal is to offer clarity and support. A clear head is so 
+   108.89s  user  발화 끝
+   115.07s  user  발화 시작: Okay.
+   115.71s  user  발화 끝
+   116.95s  agent 발화 끝
+   116.95s  user  발화 시작: Yeah, you're right. I feel much better prepared now.
+   119.82s  user  발화 끝
+   119.90s  agent 발화 시작: Excellent! Remember, a viewing is about seeing if a space *f
+   127.50s  agent 발화 끝

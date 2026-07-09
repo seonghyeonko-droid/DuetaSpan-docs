@@ -59,21 +59,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Avery, it’s lovely to connect with you. I’m Jaeia, and I’m h
-     5.23s  user  발화 시작: Right.
-     5.77s  user  발화 끝
-     8.13s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient, almost. 
-     8.21s  agent 발화 끝
-    12.95s  user  발화 끝
-    13.13s  agent 발화 시작: [happy] It is, actually. It’s a name with roots in several c
-    16.87s  user  발화 시작: Yeah.
-    17.41s  user  발화 끝
-    20.68s  agent 발화 시작: It feels fitting for the work I do— supporting people throug
-    20.88s  agent 발화 끝
-    31.29s  agent 발화 끝
-    33.00s  user  발화 시작: I— I mean, it's just… everything feels so uncertain right no
-    38.15s  agent 발화 시작: Uncertainty can be deeply unsettling, Avery. It’s natural to
-    38.32s  user  발화 끝
-    47.89s  agent 발화 끝
-    48.21s  user  발화 시작: Probably… my career. I’m just not sure it’s right for me any
-    53.52s  user  발화 끝
+     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to offer a gentle sp
+     4.70s  user  발화 시작: Right.
+     5.25s  user  발화 끝
+     7.32s  user  발화 시작: Jaeia… that’s a lovely name. It sounds… ancient, somehow. Is
+     7.41s  agent 발화 끝
+    13.30s  user  발화 끝
+    13.54s  agent 발화 시작: [happy] It is, actually. I’ve always been drawn to names tha
+    17.02s  user  발화 시작: Yeah.
+    17.52s  user  발화 끝
+    20.59s  agent 발화 시작: It’s a privilege to be invited into someone’s journey, and a
+    20.85s  agent 발화 끝
+    26.05s  agent 발화 끝
+    27.75s  user  발화 시작: I suppose so. I’m just…feeling a bit lost, I guess. Everythi
+    33.37s  agent 발화 시작: That’s perfectly understandable, Avery. Change can be profou
+    33.51s  user  발화 끝
+    42.92s  agent 발화 끝
+    42.97s  user  발화 시작: I— I mean, my grandmother passed away last month, and I’m st
+    48.85s  user  발화 끝

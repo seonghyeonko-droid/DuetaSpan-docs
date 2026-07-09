@@ -58,103 +58,111 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What’s the price range at Zuni Caf | S2 That’s great. What’s the address a | S3 Are there any good hotels within w | S4 Perfect. Book it for me, please.
+# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 Uh, under two hundred dollars. | S3 That’s a bit steep. — | S4 Okay, bus 38R. What time does it l
 
-     0.00s  user  발화 시작: What’s the price range at Zuni Cafe?
-     1.81s  <ret> 발화 (turn1 첫 프레임)
-     2.05s  agent 발화 시작: <ret> Zuni Cafe is in the moderate price range.
-     2.11s  user  발화 끝
-     2.85s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.24s]: (tool result) Moderate.
-     3.51s  user  발화 시작: Okay.
-     4.14s  user  발화 끝
-     5.25s  user  발화 시작: Okay, good. And are they open right now?
-     5.29s  agent 발화 끝
-     7.60s  <ret> 발화 (turn4 첫 프레임)
-     7.84s  agent 발화 시작: <ret> Zuni Cafe is open until ten this evening.
-     7.98s  user  발화 끝
-     8.10s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.96s]: (tool result) Open until 10 PM.
-    10.68s  user  발화 시작: Perfect. Can you book a table for two at 7:30?
-    10.80s  agent 발화 끝
-    13.84s  <ret> 발화 (turn6 첫 프레임)
-    14.00s  agent 발화 시작: <ret> Your table for two at Zuni Cafe is confirmed for 7:30.
-    14.01s  user  발화 끝
-    14.88s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.30s]: (tool result) Confirmed for two at 7:30 PM.
-    15.98s  user  발화 시작: Oh.
-    16.48s  user  발화 끝
-    18.31s  agent 발화 끝
-    18.77s  user  발화 시작: Wonderful! Do they have outdoor seating?
-    21.86s  <ret> 발화 (turn9 첫 프레임)
-    22.10s  agent 발화 시작: <ret> Yes, Zuni Cafe does have outdoor seating available.
-    22.29s  user  발화 끝
-    23.57s  user  발화 시작: Uh-huh.
-    23.62s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.98s]: (tool result) Outdoor seating available.
-    24.02s  user  발화 끝
-    26.04s  user  발화 시작: That’s great. What’s the address again?
-    26.07s  agent 발화 끝
-    27.90s  <ret> 발화 (turn12 첫 프레임)
-    28.21s  agent 발화 시작: <ret> Certainly, I recall that from earlier… The address is 
-    28.29s  user  발화 끝
-    28.86s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.78s]: (tool result) 1658 Market Street, San Francisco.
-    35.16s  agent 발화 끝
-    37.11s  user  발화 시작: Is there parking nearby?
-    38.72s  user  발화 끝
-    38.80s  agent 발화 시작: That’s a good question—
-    39.80s  user  발화 시작: I mean, is parking usually easy to find?
-    40.55s  agent 발화 끝
-    42.69s  agent 발화 시작: Parking near Zuni Cafe can be challenging.
-    42.75s  user  발화 끝
-    45.83s  agent 발화 끝
-    46.23s  user  발화 시작: Hmm. Okay. What about public transportation?
-    50.28s  <ret> 발화 (turn18 첫 프레임)
-    50.44s  agent 발화 시작: <ret> The nearest public transit stop is Church Street and M
-    50.45s  user  발화 끝
-    52.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) Nearest stop: Church St & Market St.
-    53.22s  user  발화 시작: Yeah.
-    53.71s  user  발화 끝
-    54.76s  agent 발화 시작: It’s served by several Muni lines.
-    54.93s  agent 발화 끝
-    57.39s  agent 발화 끝
-    59.30s  user  발화 시작: Are there any good hotels within walking distance?
-    62.05s  <ret> 발화 (turn22 첫 프레임)
-    62.44s  agent 발화 시작: <ret> Hotel Nikko is 0.8 miles from Zuni Cafe.
-    62.53s  user  발화 끝
-    64.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) Hotel Nikko: 0.8 miles.
-    66.23s  agent 발화 끝
-    66.35s  user  발화 시작: What's the price range at Hotel Nikko?
-    68.19s  <ret> 발화 (turn24 첫 프레임)
-    68.58s  agent 발화 시작: <ret> Hotel Nikko’s prices range from $250 to $400 a night.
-    68.74s  user  발화 끝
-    69.63s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.79s]: (tool result) $250 - $400 per night.
-    74.34s  user  발화 시작: Okay, that’s a bit pricey. Any cheaper options?
-    74.37s  agent 발화 끝
-    77.61s  <ret> 발화 (turn26 첫 프레임)
-    77.76s  agent 발화 시작: <ret> Searching for more affordable hotels… The Mosser Hotel
-    78.00s  user  발화 끝
-    78.89s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.75s]: (tool result) The Mosser Hotel: $180 - $280.
-    86.20s  user  발화 시작: That sounds better. Can you check if The Mosser has availabi
-    86.57s  agent 발화 끝
-    90.56s  <ret> 발화 (turn28 첫 프레임)
-    90.87s  user  발화 끝
-    90.97s  agent 발화 시작: <ret> The Mosser Hotel has availability tomorrow night, with
-    92.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) Available, one queen bed remaining.
-    93.65s  user  발화 시작: Yeah.
-    94.42s  user  발화 끝
-    96.02s  user  발화 시작: Perfect. Book it for me, please.
-    96.20s  agent 발화 끝
-    97.98s  <ret> 발화 (turn31 첫 프레임)
-    98.22s  agent 발화 시작: <ret> Your room at The Mosser Hotel is booked for tomorrow n
-    98.42s  user  발화 끝
-    99.50s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.38s]: (tool result) Confirmed: The Mosser, one queen, tomorrow.
-    99.78s  user  발화 시작: Right.
-   100.28s  user  발화 끝
-   101.59s  agent 발화 끝
-   102.47s  user  발화 시작: Excellent! Set a reminder to leave for dinner at 7:00 PM.
-   105.85s  <ret> 발화 (turn34 첫 프레임)
-   106.08s  user  발화 끝
-   106.09s  agent 발화 시작: <ret> A reminder is set to leave for Zuni Cafe at seven PM.
-   107.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: (tool result) Reminder set for 7:00 PM.
-   110.11s  agent 발화 끝
-   110.24s  user  발화 시작: Thank you so much, Dar.
-   111.62s  user  발화 끝
-   111.63s  agent 발화 시작: You’re very welcome. I hope you enjoy your evening.
-   115.05s  agent 발화 끝
+     0.00s  user  발화 시작: What's the price range at Zuni Cafe?
+     2.05s  <ret> 발화 (turn1 첫 프레임)
+     2.29s  agent 발화 시작: <ret> Zuni Cafe is in the moderate price range.
+     2.36s  user  발화 끝
+     3.01s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.14s]: (tool result) Moderate.
+     3.67s  user  발화 시작: Okay.
+     4.16s  user  발화 끝
+     5.33s  user  발화 시작: Okay, good. And what’s their phone number?
+     5.43s  agent 발화 끝
+     6.95s  <ret> 발화 (turn4 첫 프레임)
+     7.18s  agent 발화 시작: <ret> Certainly. Their phone number is four-one-five, five-f
+     7.40s  user  발화 끝
+     7.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.81s]: (tool result) 415-552-2700.
+    13.52s  user  발화 시작: Great. Are they open right now?
+    13.62s  agent 발화 끝
+    15.62s  <ret> 발화 (turn6 첫 프레임)
+    16.01s  user  발화 끝
+    16.01s  agent 발화 시작: <ret> Checking their current hours. Yes, they are open until
+    16.12s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.62s]: (tool result) Open until 10:00 PM.
+    17.99s  user  발화 시작: Yeah.
+    18.48s  user  발화 끝
+    20.87s  agent 발화 끝
+    21.25s  user  발화 시작: Perfect. Can you find me a hotel near there? Something… not 
+    25.98s  agent 발화 시작: Of course. I can search for hotels nearby. What's your budge
+    26.10s  user  발화 끝
+    29.34s  user  발화 시작: Yeah.
+    29.97s  user  발화 끝
+    31.21s  user  발화 시작: Uh, under two hundred dollars.
+    31.30s  agent 발화 끝
+    32.98s  <ret> 발화 (turn12 첫 프레임)
+    33.22s  agent 발화 시작: <ret> Alright, under two hundred dollars. Hotel Nikko San Fr
+    33.29s  user  발화 끝
+    34.10s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.32s]: (tool result) Hotel Nikko San Francisco: $189/night.
+    37.58s  user  발화 시작: Yeah.
+    38.36s  user  발화 끝
+    40.63s  agent 발화 끝
+    41.65s  user  발화 시작: That sounds good. What’s the address?
+    44.51s  <ret> 발화 (turn15 첫 프레임)
+    44.70s  user  발화 끝
+    44.75s  agent 발화 시작: <ret> The address is two-two-two Mason Street, San Francisco
+    46.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: (tool result) 222 Mason Street, San Francisco.
+    48.59s  agent 발화 끝
+    49.55s  user  발화 시작: Is it close to Golden Gate Park?
+    51.74s  agent 발화 시작: It’s about two and a half miles from Golden Gate Park.
+    51.81s  user  발화 끝
+    53.76s  user  발화 시작: Yeah.
+    54.26s  user  발화 끝
+    54.54s  <ret> 발화 (turn19 첫 프레임)
+    54.94s  agent 발화 시작: <ret> That’s a reasonable distance. Would you like direction
+    55.12s  agent 발화 끝
+    55.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.97s]: (tool result) Not applicable.
+    61.98s  agent 발화 끝
+    62.17s  user  발화 시작: Actually, before directions, does Hotel Nikko have parking?
+    66.30s  <ret> 발화 (turn21 첫 프레임)
+    66.70s  agent 발화 시작: <ret> Let’s check the parking availability at Hotel Nikko.
+    66.94s  user  발화 끝
+    67.82s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.43s]: (tool result) Valet parking: $72/night.
+    69.96s  agent 발화 시작: Yes, they offer valet parking for seventy-two dollars per ni
+    70.13s  agent 발화 끝
+    74.45s  agent 발화 끝
+    76.04s  user  발화 시작: That’s a bit steep. —
+    77.26s  user  발화 시작: Are there any cheaper parking options nearby?
+    77.78s  user  발화 끝
+    79.76s  <ret> 발화 (turn25 첫 프레임)
+    80.08s  agent 발화 시작: <ret> Union Square Garage offers parking for thirty dollars 
+    80.27s  user  발화 끝
+    81.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) Union Square Garage: $30/night.
+    83.96s  user  발화 시작: Thirty sounds much better. Can you reserve a spot there for 
+    84.01s  agent 발화 끝
+    88.02s  <ret> 발화 (turn27 첫 프레임)
+    88.10s  agent 발화 시작: <ret> Your parking spot at Union Square Garage is now reserv
+    88.21s  user  발화 끝
+    89.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.86s]: (tool result) Reservation confirmed for tonight.
+    90.56s  user  발화 시작: Yeah.
+    91.05s  user  발화 끝
+    92.78s  user  발화 시작: Wonderful. Now, back to Golden Gate Park... what's the best 
+    92.96s  agent 발화 끝
+    99.70s  <ret> 발화 (turn30 첫 프레임)
+   100.01s  agent 발화 시작: <ret> I can certainly help with that. The number thirty-eigh
+   100.15s  user  발화 끝
+   100.82s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.19s]: (tool result) Bus 38R: 25 minutes.
+   102.67s  user  발화 시작: Right.
+   103.29s  user  발화 끝
+   105.48s  agent 발화 끝
+   105.54s  user  발화 시작: Okay, bus 38R. What time does it leave the hotel?
+   108.46s  <ret> 발화 (turn33 첫 프레임)
+   108.86s  agent 발화 시작: <ret> The next bus leaves at seven-fifteen PM.
+   108.96s  user  발화 끝
+   110.38s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.91s]: (tool result) Next departure: 7:15 PM.
+   111.60s  user  발화 시작: Perfect. And is there anything going on at Golden Gate Park 
+   111.77s  agent 발화 끝
+   115.52s  <ret> 발화 (turn35 첫 프레임)
+   115.76s  agent 발화 시작: <ret> There’s a free concert at seven-thirty PM.
+   115.82s  user  발화 끝
+   116.72s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.96s]: (tool result) Free concert: 7:30 PM.
+   118.72s  agent 발화 끝
+   118.79s  user  발화 시작: A concert? That sounds lovely.
+   121.03s  agent 발화 시작: It does, doesn’t it? Perhaps a relaxing evening is just what
+   121.10s  user  발화 끝
+   122.39s  user  발화 시작: Right.
+   122.88s  user  발화 끝
+   125.68s  user  발화 시작: I think you're right. Thank you, Dar.
+   125.75s  agent 발화 끝
+   127.44s  agent 발화 시작: You’re very welcome. I’m glad I could help plan your evening
+   127.52s  user  발화 끝
+   131.37s  agent 발화 끝

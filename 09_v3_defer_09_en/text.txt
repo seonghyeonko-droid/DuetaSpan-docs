@@ -69,14 +69,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Book three rooms at Ocean View Hotel in San Diego for seven nights starting on February ⟨ret@5.50s⟩ tenth.
-[  5.73s][moshi] Excellent! I’ve reserved three rooms ⟦⚡SPAN@7.50s: (tool result) Confirmation: three rooms reserved at Ocean View Hotel, San Diego, February tenth for seven nigh⟧ at the Ocean View Hotel in San Diego for seven nights beginning February tenth.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"number_of_rooms": "3", "hotel_name": "Ocean View Hotel", "city": "San Diego", "check_in_date": "February tenth", "length_of_stay": "7 nights"}}
-[  9.63s][user ] «backchannel» Mm-hmm.
-[ 11.48s][user ] What’s the cancellation policy?
-[ 13.27s][moshi] «interrupted» ⟨ret@13.14s⟩ The Ocean View Hotel ⟦⚡SPAN@15.14s: (tool result) Ocean View Hotel, San Diego: free cancellation until seventy-two hours prior to check-in.⟧ in San Diego allows free cancellation up to seventy-two hours before your check-in date—
-      CALL: {"function": "Hotels_4_GetCancellationPolicy", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego"}}
-[ 19.41s][user ] «interrupts_prev» Is parking included with the ⟨ret@21.62s⟩ reservation?
-[ 21.99s][moshi] Parking is available at the ⟦⚡SPAN@23.62s: (tool result) Parking available at Ocean View Hotel, San Diego, twenty-five dollars per night.⟧ hotel for twenty-five dollars per night. It isn’t included automatically.
-      CALL: {"function": "Hotels_4_CheckParkingAvailability", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego"}}
-[ 26.70s][moshi] I can add parking to your reservation for an additional twenty-five dollars each night, if you’d like.
+[  0.00s][user ] Book three rooms at Ocean View Hotel in San Diego for seven nights starting on February ⟨ret@5.64s⟩ tenth.
+[  5.86s][moshi] Wonderful! I’ve reserved three rooms ⟦⚡SPAN@7.64s: (tool result) Reservation confirmed: Ocean View Hotel, San Diego. Three rooms, February tenth for seven nights⟧ at the Ocean View Hotel in San Diego for you, February tenth through February seventeenth. The total cost is two thousand eight hundred dollars.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"destination": "San Diego", "hotel": "Ocean View Hotel", "number_of_rooms": 3, "start_date": "February tenth", "length_of_stay": 7}}
+[ 12.62s][user ] «backchannel» Mm-hmm.
+[ 15.57s][user ] That sounds great. Can you check if they have a shuttle to the airport?
+[ 19.06s][moshi] ⟨ret@18.91s⟩ Yes, the Ocean View Hotel ⟦⚡SPAN@20.91s: (tool result) Airport shuttle available. Operates every thirty minutes, six AM to ten PM.⟧ does offer an airport shuttle. It runs every thirty minutes from six AM to ten PM.
+      CALL: {"function": "Hotels_4_CheckHotelAmenities", "arguments": {"hotel": "Ocean View Hotel", "amenity": "airport shuttle"}}
+[ 25.62s][user ] Perfect. And what's the cancellation policy?
+[ 28.63s][moshi] The cancellation policy varies by room type, but generally allows free cancellation up to forty-eight hours before your arrival.
+[ 35.88s][user ] …Is parking included with the reservation?
+[ 38.21s][moshi] «interrupted» Parking—
+[ 38.40s][user ] «interrupts_prev» …Is parking included with the reservation, or is that ⟨ret@41.75s⟩ extra?
+[ 41.96s][moshi] Ah, good question. Let me ⟦⚡SPAN@43.75s: (tool result) Valet parking available at $45 per night. Self-parking is complimentary.⟧ check the parking details for your reservation.
+      CALL: {"function": "Hotels_4_CheckHotelAmenities", "arguments": {"hotel": "Ocean View Hotel", "amenity": "parking"}}
+[ 45.91s][moshi] Parking is available; self-parking is complimentary, while valet parking is forty-five dollars per night.
+[ 52.84s][user ] Complimentary self-parking is fantastic!
+[ 55.70s][moshi] I agree, that’s a lovely perk. It makes getting around a bit easier, doesn’t it? I’m glad to hear you’re pleased.
+[ 57.57s][user ] «backchannel» Yeah.
+[ 62.82s][user ] Could you also send me a copy of the reservation confirmation to my email?
+[ 67.60s][moshi] ⟨ret@67.53s⟩ Certainly. I’ve just sent a ⟦⚡SPAN@69.53s: (tool result) Confirmation email sent to user@example.com.⟧ copy of the reservation confirmation to user@example.com. Is there anything else I can assist you with today?
+      CALL: {"function": "Hotels_4_SendReservationConfirmation", "arguments": {"email": "user@example.com"}}

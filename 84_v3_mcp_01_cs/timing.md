@@ -58,45 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 앱플 홈페이지 제품 중심으로 자세한 지도 만들어 줘. | S2 그게 지금 나오는 아이폰 모델 전부야? | S3 좋아, 좋아. 십오 프로 맥스 살까 생각 중인데, 색깔이 뭐야 | S4 흠. 내추럴 티타늄 아이폰 십오 프로 맥스 256기가, 제일 
+# EXAMINER(FDB-v2) 단계: S1 나 그거 만들어 줘. 애플 웹사이트 상세 지도인데, 제품 중심 | S2 그 지도를 수리 옵션만 보여주게 하고, 제일 가까운 공인 서비 | S3 좋아, 그럼 거기 내일 오전 10시에 예약해 줘. | S4 완벽해! 딱 필요한 거였어. 고마워, 코랄.
 
-     0.00s  user  발화 시작: 앱플 홈페이지 제품 중심으로 자세한 지도 만들어 줘.
-     2.70s  <ret> 발화 (turn1 첫 프레임)
-     2.86s  agent 발화 시작: <ret> 네, 앱플 사이트에서 제품 페이지 일백이십칠 개를 지도 형태로 준비했습니다.
-     3.05s  user  발화 끝
-     4.57s  user  발화 시작: 어어.
-     4.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) Sitemap generated: 127 product pages identified.
-     5.40s  user  발화 끝
-     7.02s  agent 발화 끝
-     8.52s  user  발화 시작: 그거… 엄청 많네. 아이폰만 보여 줘.
-    10.92s  <ret> 발화 (turn4 첫 프레임)
-    11.24s  agent 발화 시작: <ret> 네, 지금 아이폰 제품 관련 페이지 열한 개가 지도에 표시됩니다.
-    11.33s  user  발화 끝
-    12.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.89s]: (tool result) Sitemap generated: 11 iPhone product pages identified.
-    13.34s  user  발화 시작: 응.
-    13.69s  user  발화 끝
-    15.13s  agent 발화 끝
-    17.19s  user  발화 시작: 그게 지금 나오는 아이폰 모델 전부야?
-    19.67s  <ret> 발화 (turn7 첫 프레임)
-    19.75s  agent 발화 시작: <ret> 네, 현재 앱플에서 아이폰 십오, 십오 프로, 십오 프로 맥스, 그리고 십오 플러스 모델을 판매하
-    19.92s  user  발화 끝
-    21.27s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.02s]: (tool result) Current models: iPhone 15, 15 Pro, 15 Pro Max, 15 Plus.
-    22.11s  user  발화 시작: 어.
-    22.47s  user  발화 끝
-    25.77s  agent 발화 끝
-    25.88s  user  발화 시작: 좋아, 좋아. 십오 프로 맥스 살까 생각 중인데, 색깔이 뭐야?
-    29.35s  <ret> 발화 (turn10 첫 프레임)
-    29.67s  agent 발화 시작: <ret> 네, 아이폰 십오 프로 맥스는 블랙 티타늄, 화이트 티타늄, 블루 티타늄, 그리고 내추럴 티타늄 
-    29.86s  user  발화 끝
-    31.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Available colors: Black Titanium, White Titanium, Blue T
-    37.25s  user  발화 시작: 내추럴 티타늄이 흥미로운데. 새로 나온 거야?
-    37.26s  agent 발화 끝
-    40.25s  user  발화 끝
-    40.29s  agent 발화 시작: 네, 내추럴 티타늄은 아이폰 십오 프로 모델과 함께 새롭게 선보이는 마감 색상입니다. 이전의 실버 옵션을 대
-    47.75s  agent 발화 끝
-    47.90s  user  발화 시작: 흠. 내추럴 티타늄 아이폰 십오 프로 맥스 256기가, 제일 싸게 파는 데 찾아 줘.
-    53.11s  <ret> 발화 (turn14 첫 프레임)
-    53.27s  agent 발화 시작: <ret> 네, 베스트 바이에서 현재 256기가 내추럴 티타늄 아이폰 십오 프로 맥스를 천백구십구 달러에 판
-    53.37s  user  발화 끝
-    55.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) Best price: $1199 at Best Buy, in stock.
-    60.31s  agent 발화 끝
+     0.00s  user  발화 시작: 나 그거 만들어 줘. 애플 웹사이트 상세 지도인데, 제품 중심으로.
+     4.26s  <ret> 발화 (turn1 첫 프레임)
+     4.42s  agent 발화 시작: <ret> 네, 지금 애플 웹사이트에 접속해서 그 지도를 만들고 있습니다. 제품 페이지에 집중해서요.
+     4.54s  user  발화 끝
+     6.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & 
+     9.88s  agent 발화 끝
+    10.01s  agent 발화 시작: 그 지도는 아이폰, 아이패드, 맥, 애플 워치, 에어팟, TV & 홈, 엔터테인먼트, 액세서리를 강조해서 보
+    13.88s  user  발화 시작: 어어.
+    14.37s  user  발화 끝
+    19.20s  agent 발화 끝
+    19.38s  user  발화 시작: 그거 괜찮네. 서포트 섹션은 어때? 그것도 잘 표시돼 있어?
+    22.53s  <ret> 발화 (turn5 첫 프레임)
+    22.93s  agent 발화 시작: <ret> 네, 서포트 섹션도 포함되어 있어서 다운로드, 설명서, 수리 서비스 접근 지점을 보여 드립니다.
+    23.17s  user  발화 끝
+    23.89s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.32s]: (tool result) Support: Downloads, Manuals, Repair, Contact, AppleCare,
+    28.25s  agent 발화 끝
+    28.36s  agent 발화 시작: 그 지도는 다운로드, 설명서, 수리 옵션, 연락처 정보, 애플케어, 보증 정보, 보안 리소스를 자세히 보여 
+    32.37s  user  발화 시작: 응.
+    32.72s  user  발화 끝
+    35.69s  user  발화 시작: 그 지도를 수리 옵션만 보여주게 하고, 제일 가까운 공인 서비스 제공업체도 알려 줘.
+    35.77s  agent 발화 끝
+    40.88s  <ret> 발화 (turn9 첫 프레임)
+    41.04s  agent 발화 시작: <ret> 가장 가까운 공인 제공업체는 uBreakiFix by Asurion이고, 주소는 123 Main 
+    41.28s  user  발화 끝
+    42.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) Nearest: uBreakiFix by Asurion, 123 Main Street, Anytown
+    47.45s  user  발화 시작: 어.
+    48.09s  user  발화 끝
+    49.60s  agent 발화 끝
+    49.79s  user  발화 시작: 좋아, 그럼 거기 내일 오전 10시에 예약해 줘.
+    52.39s  <ret> 발화 (turn12 첫 프레임)
+    52.63s  agent 발화 시작: <ret> 네, uBreakiFix에 내일 오전 10시로 예약이 확정됐습니다. 주문 번호는 AB12345입니
+    52.80s  user  발화 끝
+    54.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Confirmed: uBreakiFix, tomorrow, 10:00 AM. Order #AB1234
+    58.69s  user  발화 시작: 완벽해! 딱 필요한 거였어. 고마워, 코랄.
+    58.74s  agent 발화 끝
+    62.07s  user  발화 끝
+    62.08s  agent 발화 시작: 도움이 되어서 기쁩니다. 혹시 오늘 다른 도움이 필요하신가요? 기기 관련해서요?
+    65.96s  agent 발화 끝

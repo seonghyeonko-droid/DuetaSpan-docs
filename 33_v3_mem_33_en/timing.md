@@ -68,81 +68,95 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm alright, thanks. I was just wo | S2 Perfect. That’s good to know for t | S3 Yeah, that’s probably best. He get | S4 Hmm, Riverview Bistro sounds nice.
+# EXAMINER(FDB-v2) 단계: S1 I’m okay, I guess. Just trying to  | S2 Yeah, that’d be great! Somewhere w | S3 That's fantastic! Um, I also have  | S4 That actually sounds… nice.
 
      0.00s  agent 발화 시작: Hi Casey, I’m Diolo. It’s lovely to connect with you today. 
-     3.27s  user  발화 시작: Yeah, yeah.
-     4.65s  user  발화 끝
-     4.67s  agent 발화 끝
-     4.99s  user  발화 시작: I'm alright, thanks. I was just wondering what time it is ri
-     7.81s  <ret> 발화 (turn3 첫 프레임)
-     7.96s  agent 발화 시작: <ret> Knowing the time helps ground us, doesn’t it? It’s cur
-     8.04s  user  발화 끝
-     9.01s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.91s]: [2026-07-27] Past chat — Planning a birthday dinner: party of six; loo
-    11.25s  user  발화 시작: Yeah.
-    11.70s  user  발화 끝
-    13.42s  agent 발화 끝
-    14.55s  user  발화 시작: Oh, good. I'm trying to decide if I should start a new batch
-    18.35s  agent 발화 시작: That sounds like a wonderful project! Home fermentation is s
-    18.53s  user  발화 끝
-    23.96s  agent 발화 끝
-    23.99s  user  발화 시작: Yeah, but I'm a bit worried about getting the timing right. 
-    29.01s  agent 발화 시작: The fermentation time can vary, depending on temperature and
-    29.04s  user  발화 끝
-    30.98s  user  발화 시작: Yeah, yeah.
-    32.40s  user  발화 끝
-    33.50s  agent 발화 끝
-    33.84s  user  발화 시작: Right. I remember we talked about my dietary needs before… a
-    38.72s  <ret> 발화 (turn11 첫 프레임)
-    38.79s  agent 발화 시작: <ret> It’s good to revisit important details. Yes, you are g
-    38.84s  user  발화 끝
-    39.84s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.22s]: [2026-06-24] User is gluten-free.
-    43.53s  user  발화 시작: Perfect. That’s good to know for the kimchi. Some recipes ca
-    43.97s  agent 발화 끝
-    47.84s  agent 발화 시작: It’s wise to be mindful of ingredients when you have dietary
-    48.07s  user  발화 끝
-    52.79s  agent 발화 끝
-    54.43s  user  발화 시작: I’m also thinking of taking Rusty for a walk, but it's getti
-    58.36s  user  발화 끝
-    58.68s  agent 발화 시작: Rusty is such a lucky Beagle to have you!
-    61.91s  agent 발화 끝
-    62.07s  user  발화 시작: [laugh] He thinks so. Do you think it’s too hot for a long w
-    65.54s  agent 발화 시작: It’s thoughtful of you to consider Rusty’s comfort. Perhaps 
-    65.63s  user  발화 끝
-    71.19s  user  발화 시작: Yeah, that’s probably best. He gets overheated easily.
-    71.29s  agent 발화 끝
-    74.28s  agent 발화 시작: Absolutely. Prioritizing his well-being is so important.
-    74.38s  user  발화 끝
-    78.30s  agent 발화 끝
-    79.67s  user  발화 시작: I'm planning a little get-together next month. I think six p
-    83.29s  <ret> 발화 (turn21 첫 프레임)
-    83.36s  agent 발화 시작: <ret> Planning ahead brings a sense of calm, doesn’t it? You
-    83.41s  user  발화 끝
-    85.05s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.81s]: [2026-07-27] Past chat — Planning a birthday dinner: party of six; loo
-    90.22s  agent 발화 끝
-    92.63s  user  발화 시작: Oh, right! That’s what I was thinking. Do you think I should
-    96.42s  user  발화 끝
-    96.83s  agent 발화 시작: Booking in advance is a smart idea, especially for outdoor s
-   101.17s  agent 발화 끝
-   101.44s  user  발화 시작: Okay. Can you look for restaurants with outdoor seating in N
-   105.92s  <ret> 발화 (turn25 첫 프레임)
-   105.98s  agent 발화 시작: <ret> I found three options: The Garden Table, Riverview Bis
-   106.11s  user  발화 끝
-   107.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Found three restaurants: 'The Garden Table', 'Riverview 
-   107.92s  user  발화 시작: Yeah.
-   108.50s  user  발화 끝
-   112.33s  agent 발화 끝
-   112.71s  user  발화 시작: Hmm, Riverview Bistro sounds nice. What’s the phone number?
-   115.96s  <ret> 발화 (turn28 첫 프레임)
-   116.04s  agent 발화 시작: <ret> The phone number for Riverview Bistro is 212-555-1212.
-   116.27s  user  발화 끝
-   117.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: (tool result) Riverview Bistro: Phone number is 212-555-1212.
-   120.53s  user  발화 시작: Great. I’ll give them a call. Thanks, Diolo.
-   120.81s  agent 발화 끝
-   122.95s  agent 발화 시작: You’re very welcome, Casey. I'm glad I could help with your 
-   122.97s  user  발화 끝
-   125.70s  user  발화 시작: I think that’s all for now.
-   126.18s  agent 발화 끝
-   127.12s  user  발화 끝
-   127.18s  agent 발화 시작: Wonderful. Remember, I’m here whenever you need a listening 
-   132.83s  agent 발화 끝
+     3.15s  user  발화 시작: Yeah, yeah.
+     4.49s  agent 발화 끝
+     4.62s  user  발화 끝
+     4.73s  user  발화 시작: I’m okay, I guess. Just trying to figure out what time it is
+     9.18s  <ret> 발화 (turn3 첫 프레임)
+     9.33s  agent 발화 시작: <ret> Knowing your location helps with that. You are in New 
+     9.36s  user  발화 끝
+    10.22s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.34s]: [2026-07-27] Past chat — Planning a birthday dinner: party of six; loo
+    13.81s  user  발화 시작: Yeah.
+    14.30s  user  발화 끝
+    16.73s  agent 발화 끝
+    17.83s  user  발화 시작: Oh, good. I’m meeting a friend for coffee, but I’m running a
+    21.48s  agent 발화 시작: That’s alright, everyone runs late sometimes. Is there anyth
+    21.53s  user  발화 끝
+    26.93s  agent 발화 끝
+    26.94s  user  발화 시작: Actually, yeah. I was just thinking about dinner. I'm trying
+    31.48s  user  발화 끝
+    31.50s  agent 발화 시작: Wonderful! Do you have any particular cuisines in mind, or a
+    33.87s  user  발화 시작: Yeah, yeah.
+    35.02s  user  발화 끝
+    36.87s  agent 발화 끝
+    37.08s  user  발화 시작: I— I mean, I really like sushi.
+    39.02s  <ret> 발화 (turn11 첫 프레임)
+    39.08s  agent 발화 시작: <ret> That sounds delicious. You mentioned enjoying sushi on
+    39.20s  user  발화 끝
+    40.06s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.27s]: [2026-07-23] User's favorite cuisine is sushi.
+    47.77s  user  발화 시작: Yeah, that’d be great! Somewhere with outdoor seating, if po
+    47.98s  agent 발화 끝
+    50.94s  <ret> 발화 (turn13 첫 프레임)
+    51.17s  agent 발화 시작: <ret> I found three options: Sushi Zen, Omakase Spot, and Ky
+    51.42s  user  발화 끝
+    52.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) Finding sushi restaurants with outdoor seating in New Yo
+    56.68s  agent 발화 끝
+    58.37s  user  발화 시작: Kyoto House… does that place have good reviews?
+    61.65s  user  발화 끝
+    61.70s  <ret> 발화 (turn15 첫 프레임)
+    61.77s  agent 발화 시작: <ret> Kyoto House has a 4.5-star rating with 235 reviews, wh
+    62.74s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.49s]: (tool result) Kyoto House has 4.5 stars with 235 reviews.
+    68.08s  user  발화 시작: Okay, that sounds promising. I’m also trying to eat gluten-f
+    68.25s  agent 발화 끝
+    72.79s  <ret> 발화 (turn17 첫 프레임)
+    73.17s  agent 발화 시작: <ret> That’s a great goal for your health. You mentioned bei
+    73.29s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.55s]: [2026-06-24] User is gluten-free.
+    73.36s  user  발화 끝
+    81.54s  user  발화 시작: Please do.
+    81.56s  agent 발화 끝
+    82.13s  <ret> 발화 (turn19 첫 프레임)
+    82.36s  user  발화 끝
+    82.36s  agent 발화 시작: <ret> Kyoto House does indeed offer a gluten-free menu. That
+    84.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: (tool result) Kyoto House offers a gluten-free menu.
+    87.13s  agent 발화 끝
+    88.59s  user  발화 시작: That's fantastic! Um, I also have a beagle, Rusty. He's gett
+    92.62s  <ret> 발화 (turn21 첫 프레임)
+    92.94s  agent 발화 시작: <ret> You have a beagle named Rusty, which is wonderful. Old
+    93.12s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.97s]: [2026-05-11] User has a Beagle named Rusty.
+    93.13s  user  발화 끝
+    98.91s  agent 발화 끝
+   101.23s  user  발화 시작: It’s just… I worry about him. And I’m allergic to peanuts, w
+   106.69s  user  발화 끝
+   106.99s  <ret> 발화 (turn23 첫 프레임)
+   107.07s  agent 발화 시작: <ret> Allergies can be really disruptive. You’ve mentioned a
+   107.49s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.85s]: [2026-03-02] User is allergic to peanuts.
+   115.97s  agent 발화 끝
+   116.21s  user  발화 시작: I do, thankfully. It’s just… a lot, you know?
+   119.40s  user  발화 끝
+   119.48s  agent 발화 시작: It absolutely can feel like a lot, managing health and a bel
+   122.17s  user  발화 시작: Yeah.
+   122.68s  user  발화 끝
+   128.24s  agent 발화 끝
+   128.59s  user  발화 시작: I think I’m just feeling overwhelmed. Work's been stressful,
+   133.16s  agent 발화 시작: It’s perfectly okay to feel overwhelmed. Recognizing that is
+   133.28s  user  발화 끝
+   142.14s  user  발화 시작: That actually sounds… nice.
+   142.43s  agent 발화 끝
+   144.72s  user  발화 끝
+   144.84s  agent 발화 시작: Wonderful. Even small things, like deep breaths or a short w
+   153.88s  user  발화 시작: I've been trying to get into home fermentation. It’s… therap
+   154.34s  agent 발화 끝
+   158.21s  <ret> 발화 (turn32 첫 프레임)
+   158.45s  agent 발화 시작: <ret> That sounds like a very grounding activity. Home ferme
+   158.55s  user  발화 끝
+   159.49s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.75s]: [2026-07-20] User is into home fermentation.
+   164.48s  user  발화 시작: Yeah.
+   164.93s  user  발화 끝
+   168.63s  user  발화 시작: Yeah. It helps me focus on something other than everything e
+   168.65s  agent 발화 끝
+   172.17s  agent 발화 시작: That’s a beautiful way to put it. Focusing on a creative pro
+   172.33s  user  발화 끝
+   177.87s  agent 발화 끝

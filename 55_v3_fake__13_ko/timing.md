@@ -66,57 +66,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요. | S2 혹시 그 앨범에 수록된 곡 중에서 가장 인기 있었던 노래는 뭐 | S3 음, 평론가 반응도 좋았군요. 앨범 판매량은 얼마나 됐어요? | S4 'Tell Me You Love Me'도 좋았죠. 그때 활동했
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오나요? 이천십오년 기준으로요 | S2 잠깐만요, 그 앨범 이름이 뭐였죠? | S3 아, 배우 활동도 하는군요. 어떤 영화에 출연했나요? | S4 이천십오년 앨범 말고 다른 앨범은 언제 냈나요?
 
-     0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요.
-     4.03s  user  발화 끝
-     4.12s  <ret> 발화 (turn1 첫 프레임)
-     4.28s  agent 발화 시작: <ret> 음, 데미 로바토의 새 앨범이 이천십오년에 발매되었는지 알아볼게요.
-     6.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: October 2015.
-     9.37s  agent 발화 시작: 이천십오년 십월에 데미 로바토의 새 앨범이 발매되었어요.
-     9.60s  agent 발화 끝
-    13.62s  agent 발화 끝
-    13.72s  user  발화 시작: 아, 그렇군요. 앨범 제목이 뭐였죠?
-    16.42s  <ret> 발화 (turn4 첫 프레임)
-    16.66s  agent 발화 시작: <ret> 앨범 제목은 'Confident'였어요. 이천십오년 십월에 발매된 앨범이죠.
-    16.67s  user  발화 끝
-    17.46s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.09s]: Demi Lovato’s fifth studio album, Confident, was released on October 1
-    21.67s  agent 발화 시작: 'Confident'라는 이름으로, 이천십오년 십월 십육일에 발매되었답니다.
-    21.76s  agent 발화 끝
-    27.18s  agent 발화 끝
-    27.56s  user  발화 시작: 혹시 그 앨범에 수록된 곡 중에서 가장 인기 있었던 노래는 뭐예요?
-    31.53s  <ret> 발화 (turn7 첫 프레임)
-    31.63s  user  발화 끝
-    31.85s  agent 발화 시작: <ret> 아, 네. 그 앨범에서 가장 인기 있었던 노래는…
-    33.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: The lead single from Confident, "Cool for the Summer", was released on
-    36.25s  agent 발화 시작: 이천십오년 칠월 일일에 발매된 'Cool for the Summer'가 가장 인기가 많았어요.
-    36.34s  agent 발화 끝
-    38.25s  user  발화 시작: 음.
-    38.69s  user  발화 끝
-    41.20s  <ret> 발화 (turn10 첫 프레임)
-    41.52s  agent 발화 시작: <ret> 'Cool for the Summer'는 발매 직후 많은 사랑을 받았죠. 데미 로바토의 매력이 잘
-    41.71s  agent 발화 끝
-    43.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: The album received generally positive reviews from critics.
-    48.27s  agent 발화 시작: 평론가들로부터 대체로 긍정적인 평가를 받았답니다.
-    48.43s  agent 발화 끝
-    51.97s  agent 발화 끝
-    52.04s  user  발화 시작: 음, 평론가 반응도 좋았군요. 앨범 판매량은 얼마나 됐어요?
-    56.17s  <ret> 발화 (turn13 첫 프레임)
-    56.39s  user  발화 끝
-    56.48s  agent 발화 시작: <ret> 앨범 판매량에 대해 알아볼게요.
-    57.13s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.12s]: (tool result) Confident sold 121,000 copies in its first week.
-    58.46s  agent 발화 시작: 'Confident'는 첫 주에 십이만 천 장이 팔렸어요.
-    58.59s  agent 발화 끝
-    62.04s  user  발화 시작: 와, 꽤 많이 팔렸네요. 그 앨범 이후에 또 다른 앨범을 냈어요?
-    62.67s  agent 발화 끝
-    65.90s  <ret> 발화 (turn16 첫 프레임)
-    66.14s  agent 발화 시작: <ret> 네, 데미 로바토는 그 이후에도 여러 앨범을 발표했답니다.
-    66.25s  user  발화 끝
-    66.78s  ⚡SPAN 주입(IRRELEVANT) [d'=0.88s / d_lead=4.16s]: The giraffe is the tallest mammal in the world.
-    70.15s  agent 발화 시작: 이천십칠년에는 'Tell Me You Love Me'라는 앨범을 발매했고요.
-    70.30s  agent 발화 끝
-    74.32s  agent 발화 끝
-    74.81s  user  발화 시작: 'Tell Me You Love Me'도 좋았죠. 그때 활동했던 노래도 궁금해요.
-    78.83s  user  발화 끝
-    79.06s  agent 발화 시작: 'Tell Me You Love Me'의 타이틀곡은 'Sorry Not Sorry'였어요.
-    82.20s  agent 발화 끝
+     0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오나요? 이천십오년 기준으로요.
+     4.58s  user  발화 끝
+     4.69s  <ret> 발화 (turn1 첫 프레임)
+     4.84s  agent 발화 시작: <ret> 데미 로바토의 새 앨범은 이천십오년 십월에 발매될 예정입니다.
+     6.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: October 2015.
+     9.08s  user  발화 시작: 음, 이천십오년 십월이군요.
+     9.33s  agent 발화 끝
+    11.66s  user  발화 끝
+    11.68s  <ret> 발화 (turn3 첫 프레임)
+    11.76s  agent 발화 시작: <ret> 네, 맞아요. 앨범 발매를 기다리시는 분들이 많을 것 같아요. 혹시 데미 로바토의 다른 앨범에 대
+    13.68s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=9.55s]: The giraffe is the tallest mammal on Earth.
+    21.31s  agent 발화 끝
+    21.66s  user  발화 시작: 잠깐만요, 그 앨범 이름이 뭐였죠?
+    24.56s  user  발화 끝
+    25.07s  agent 발화 시작: 아… 그 앨범은…
+    26.87s  <ret> 발화 (turn6 첫 프레임)
+    27.26s  agent 발화 시작: <ret> 그 앨범의 이름은… 아, 죄송합니다. 앨범 이름에 대한 정보는 현재 가지고 있지 않네요. 이천십오
+    27.34s  agent 발화 끝
+    27.37s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.52s]: October 2015.
+    31.09s  user  발화 시작: 음.
+    31.73s  user  발화 끝
+    37.22s  agent 발화 시작: 혹시 다른 가수의 앨범 출시일에 대해 궁금하신 점이 있으신가요? 아니면 데미 로바토의 다른 활동에 대해 알아
+    37.42s  agent 발화 끝
+    44.91s  user  발화 시작: 다른 활동은 뭐가 있을까요?
+    45.00s  agent 발화 끝
+    46.65s  user  발화 끝
+    46.67s  agent 발화 시작: 데미 로바토는 가수 활동 외에도 배우로도 활동하고 있으며, 사회 문제에 대한 목소리를 내는 것으로도 유명합니
+    53.79s  user  발화 시작: 아, 배우 활동도 하는군요. 어떤 영화에 출연했나요?
+    54.41s  agent 발화 끝
+    58.19s  agent 발화 시작: 데미 로바토는 '캠프 록'이라는 디즈니 채널 시리즈에 출연했으며, 여러 영화와 TV 쇼에 게스트로 출연한 적
+    58.28s  user  발화 끝
+    62.15s  user  발화 시작: 예.
+    62.56s  user  발화 끝
+    65.83s  agent 발화 끝
+    66.33s  user  발화 시작: '캠프 록'이요? 그거 재밌었죠.
+    68.91s  user  발화 끝
+    69.19s  agent 발화 시작: 네, 많은 분들이 좋아했던 시리즈였죠. 데미 로바토의 연기 변신도 돋보였고요.
+    71.75s  user  발화 시작: 음.
+    72.24s  user  발화 끝
+    74.75s  agent 발화 끝
+    75.08s  user  발화 시작: 이천십오년 앨범 말고 다른 앨범은 언제 냈나요?
+    78.64s  user  발화 끝
+    78.94s  agent 발화 시작: 데미 로바토는 이천십삼년에 'Demi'라는 앨범을 발매했고, 이천십칠년에는 'Tell Me You Love 
+    82.91s  user  발화 시작: 정말요?
+    83.73s  user  발화 끝
+    87.14s  agent 발화 끝
+    87.35s  user  발화 시작: 이천십칠년 앨범도 꽤 됐네요. 요즘은 뭐 하고 있나요?
+    91.23s  user  발화 끝
+    91.42s  agent 발화 시작: 데미 로바토는 최근에 새로운 음악 작업과 함께 자신의 정신 건강에 대한 이야기를 솔직하게 공유하며 많은 사람
+   100.14s  agent 발화 끝

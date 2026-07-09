@@ -63,45 +63,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Right, mutualism. But that’s just  | S3 So he didn’t really differentiate  | S4 So, consistent across the board, t
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Right. So, how does that compare t | S3 But are those monarchs like, actua | S4 That makes sense. I'm trying to fi
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.49s  <ret> 발화 (turn1 첫 프레임)
-     2.65s  agent 발화 시작: <ret> That’s a really interesting question! It appears there
-     2.67s  user  발화 끝
-     4.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (no information found)
-     5.78s  user  발화 시작: Uh-huh.
-     6.28s  user  발화 끝
-     8.03s  agent 발화 끝
-     8.27s  user  발화 시작: Hmm. Okay. What about the most famous anarchist thinkers – w
-    13.71s  <ret> 발화 (turn4 첫 프레임)
-    13.87s  agent 발화 시작: <ret> Proudhon opposed centralized government, advocating fo
-    14.06s  user  발화 끝
-    15.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [source: Wikipedia] “Pierre-Joseph Proudhon was a French socialist, po
-    20.50s  agent 발화 끝
-    21.07s  user  발화 시작: Right, mutualism. But that’s just one person. What about, uh
-    26.65s  agent 발화 시작: [happy] Bakunin also vehemently opposed the state, seeing it
-    26.77s  user  발화 끝
-    33.00s  agent 발화 끝
-    33.11s  user  발화 시작: Oppressive, yeah, I get that. But what specific *form* of go
-    38.90s  user  발화 끝
-    39.03s  agent 발화 시작: Bakunin believed any form of government—whether monarchy or 
-    43.73s  user  발화 시작: So he didn’t really differentiate between them? Like, did he
-    44.40s  agent 발화 끝
-    49.99s  agent 발화 시작: That’s a very insightful question! He didn’t differentiate, 
-    50.21s  user  발화 끝
-    57.00s  user  발화 시작: Okay, so it's the hierarchy itself, not the specific system.
-    57.45s  agent 발화 끝
-    64.04s  <ret> 발화 (turn12 첫 프레임)
-    64.17s  agent 발화 시작: <ret> Goldman opposed all forms of compulsory authority, emp
-    64.42s  user  발화 끝
-    66.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: [source: Britannica] “Emma Goldman advocated for anarchism, opposing a
-    70.89s  agent 발화 끝
-    70.97s  user  발화 시작: So, consistent across the board, then. No preference for one
-    75.84s  agent 발화 시작: Precisely. The core tenet seems to be the rejection of coerc
-    75.92s  user  발화 끝
-    82.09s  agent 발화 끝
-    82.87s  user  발화 시작: That makes sense. Thanks, Frunax. That was really helpful.
-    85.88s  agent 발화 시작: You’re very welcome! As a trip planner, I often find underst
-    86.06s  user  발화 끝
-    94.65s  agent 발화 끝
+     2.36s  <ret> 발화 (turn1 첫 프레임)
+     2.52s  agent 발화 시작: <ret> That’s a really interesting question! Unfortunately, I
+     2.58s  user  발화 끝
+     4.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (no information found)
+     5.55s  user  발화 시작: Uh-huh.
+     6.05s  user  발화 끝
+     7.70s  agent 발화 끝
+     7.98s  user  발화 시작: Okay. What about the United States? What kind of government 
+    12.18s  <ret> 발화 (turn4 첫 프레임)
+    12.34s  agent 발화 시작: <ret> The United States operates as a constitutional federal
+    12.47s  user  발화 끝
+    14.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.96s]: [source: Britannica] The United States is a constitutional federal rep
+    17.30s  agent 발화 끝
+    17.87s  user  발화 시작: And what does “constitutional” mean, exactly?
+    20.46s  agent 발화 시작: It means the government’s power is limited by a constitution
+    20.46s  user  발화 끝
+    28.52s  agent 발화 끝
+    28.68s  user  발화 시작: Right. So, how does that compare to, say, a monarchy?
+    31.82s  <ret> 발화 (turn8 첫 프레임)
+    31.96s  agent 발화 시작: <ret> A monarchy is ruled by a single monarch who inherits t
+    32.01s  user  발화 끝
+    33.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: [source: National Geographic] In a monarchy, a single person—the monar
+    38.26s  user  발화 시작: That sounds… pretty different. Do many countries still have 
+    38.40s  agent 발화 끝
+    42.93s  agent 발화 시작: Quite a few, actually. There are forty-four sovereign states
+    42.93s  user  발화 끝
+    47.01s  user  발화 시작: But are those monarchs like, actually powerful, or are they 
+    47.70s  agent 발화 끝
+    51.89s  agent 발화 시작: That varies quite a bit! Some—like Saudi Arabia—have signifi
+    51.92s  user  발화 끝
+    61.44s  agent 발화 끝
+    62.13s  user  발화 시작: Oh, interesting. So the UK’s king doesn’t really *make* laws
+    65.80s  agent 발화 시작: Not directly, no. The UK operates as a parliamentary democra
+    65.88s  user  발화 끝
+    74.33s  agent 발화 끝
+    74.49s  user  발화 시작: That makes sense. I'm trying to figure out the best place fo
+    81.21s  user  발화 끝
+    81.66s  agent 발화 시작: A stable government is certainly important for peace of mind
+    86.15s  user  발화 시작: Yeah, totally.
+    86.97s  user  발화 끝
+    90.98s  agent 발화 끝
+    91.02s  user  발화 시작: Scandinavia… hmm. That sounds cold, though. Are there warm, 
+    96.00s  agent 발화 시작: Absolutely! Costa Rica is known for its political stability 
+    96.11s  user  발화 끝
+   105.18s  agent 발화 끝

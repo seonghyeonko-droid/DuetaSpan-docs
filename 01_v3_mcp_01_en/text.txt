@@ -60,22 +60,21 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.52s][moshi] ⟨ret@4.45s⟩ I’ve mapped ⟦⚡SPAN@5.73s: (tool result) Sitemap generated: 127 product pages identified.⟧ one hundred and twenty-seven product pages on Apple’s site for you.
+[  4.44s][moshi] ⟨ret@4.37s⟩ Certainly. I’m accessing ⟦⚡SPAN@5.97s: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & Home, Entertainment, Accessories.⟧ the Apple website now to build that map for you, concentrating on their product pages.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
-[  6.71s][user ] «backchannel» Okay.
-[  9.71s][user ] That’s… a lot. Can you just show me the ⟨ret@13.51s⟩ iPhones?
-[ 13.90s][moshi] The map now ⟦⚡SPAN@15.51s: (tool result) Sitemap generated: 11 iPhone product pages identified.⟧ shows eleven pages dedicated to iPhone products.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "iPhone"}}
-[ 16.56s][user ] «backchannel» Uh-huh.
-[ 18.85s][user ] Are those all the current iPhone ⟨ret@20.90s⟩ models?
-[ 21.29s][moshi] Currently, Apple ⟦⚡SPAN@22.90s: (tool result) Current models: iPhone 15, 15 Pro, 15 Pro Max, 15 Plus.⟧ lists the iPhone fifteen, fifteen Pro, fifteen Pro Max, and fifteen Plus.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone", "focus": "models"}}
-[ 24.35s][user ] «backchannel» Right.
-[ 29.27s][user ] Okay, good. I’m thinking of getting a fifteen Pro Max. What colors are ⟨ret@34.69s⟩ available?
-[ 34.92s][moshi] The iPhone fifteen ⟦⚡SPAN@36.69s: (tool result) Available colors: Black Titanium, White Titanium, Blue Titanium, Natural Titanium.⟧ Pro Max is offered in Black Titanium, White Titanium, Blue Titanium, and Natural Titanium.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone-15-pro/specs/", "focus": "colors"}}
-[ 42.07s][user ] Natural Titanium sounds interesting. Is that new?
-[ 46.10s][moshi] Yes, Natural Titanium is a new finish introduced with the iPhone fifteen Pro models—[source: Apple Newsroom] It replaces the previous silver option.
-[ 57.94s][user ] Hmm. Can you find me the best deal on a Natural Titanium iPhone fifteen Pro Max, two hundred fifty-six gigabytes?
-[ 65.89s][moshi] ⟨ret@65.49s⟩ Best Buy currently ⟦⚡SPAN@67.49s: (tool result) Best price: $1199 at Best Buy, in stock.⟧ offers the two hundred fifty-six gigabyte Natural Titanium iPhone fifteen Pro Max for eleven ninety-nine dollars, and it’s in stock.
-      CALL: {"function": "tavily-shop", "arguments": {"item": "iPhone 15 Pro Max", "storage": "256GB", "color": "Natural Titanium"}}
+[ 11.85s][moshi] That map highlights iPhone, iPad, Mac, Apple Watch, AirPods, TV & Home, Entertainment, and Accessories.
+[ 15.26s][user ] «backchannel» Okay.
+[ 20.13s][user ] That’s good. What about their support section? Is that well-mapped ⟨ret@24.42s⟩ too?
+[ 24.66s][moshi] Yes, the support ⟦⚡SPAN@26.42s: (tool result) Support: Downloads, Manuals, Repair, Contact, AppleCare, Warranty, Security.⟧ section is included, showing access points for downloads, manuals, and repair services.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "support"}}
+[ 31.52s][moshi] The map details downloads, manuals, repair options, contact information, AppleCare, warranty details, and security resources.
+[ 36.88s][user ] «backchannel» Uh-huh.
+[ 41.31s][user ] Can you narrow that map down to just the repair options, and show me the closest authorized service provider?
+[ 47.96s][moshi] ⟨ret@47.88s⟩ The closest authorized ⟦⚡SPAN@49.88s: (tool result) Nearest: uBreakiFix by Asurion, 123 Main Street, Anytown, USA. Hours: 9am-7pm.⟧ provider is uBreakiFix by Asurion at 123 Main Street, open 9am to 7pm.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/support/repair/", "focus": "authorized service providers"}}
+[ 54.59s][user ] «backchannel» Yeah.
+[ 56.88s][user ] Okay, great. Can you book an appointment for me there for tomorrow at, say, 10:00 ⟨ret@61.99s⟩ AM?
+[ 62.39s][moshi] Your appointment ⟦⚡SPAN@63.99s: (tool result) Confirmed: uBreakiFix, tomorrow, 10:00 AM. Order #AB12345.⟧ at uBreakiFix is confirmed for tomorrow at 10:00 AM, order number AB12345.
+      CALL: {"function": "book-appointment", "arguments": {"provider": "uBreakiFix by Asurion", "date": "tomorrow", "time": "10:00 AM"}}
+[ 70.08s][user ] Perfect! That’s exactly what I needed. Thanks, Koral.
+[ 73.70s][moshi] You’re very welcome. Is there anything else I can assist you with today, perhaps related to your device?

@@ -59,21 +59,27 @@
 # }
 
 
-     0.00s  user  발화 시작: I was wondering about the name du Plessis. It sounds…French,
-     4.76s  <ret> 발화 (turn1 첫 프레임)
-     4.84s  agent 발화 시작: <ret> It has a lovely sound, doesn’t it? The name does have 
-     4.95s  user  발화 끝
-     5.80s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.86s]: [source: Wikipedia] ‘Du Plessis’ is a French surname originating as a 
-    11.67s  agent 발화 시작: The surname ‘du Plessis’ means ‘of the enclosure’ or ‘of the
-    11.70s  agent 발화 끝
-    16.93s  user  발화 시작: Mhm.
-    17.43s  user  발화 끝
-    18.76s  agent 발화 끝
-    19.05s  user  발화 시작: Oh, so it literally means “of the fort”? That’s cool. Was it
-    25.97s  <ret> 발화 (turn5 첫 프레임)
-    26.21s  agent 발화 시작: <ret> It certainly became associated with prominent families
-    26.23s  user  발화 끝
-    27.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: [source: House of Names] Several noble families took the name ‘du Ples
-    29.57s  agent 발화 시작: The House of Plessis, originating in Normandy, became promin
-    29.59s  agent 발화 끝
-    36.48s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been researching my family history, and I came across t
+     8.71s  <ret> 발화 (turn1 첫 프레임)
+     8.79s  agent 발화 시작: <ret> That’s a lovely pursuit, tracing your roots. The name 
+     8.90s  user  발화 끝
+     9.75s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.77s]: [source: Wikipedia] Du Plessis is a French surname of noble origin, me
+    15.52s  agent 발화 시작: The surname du Plessis originates from France and indicates 
+    15.56s  agent 발화 끝
+    20.57s  user  발화 시작: Mhm.
+    21.25s  user  발화 끝
+    22.37s  agent 발화 끝
+    22.55s  user  발화 시작: Oh, France! I always imagined it might be somewhere…older, I
+    29.34s  <ret> 발화 (turn5 첫 프레임)
+    29.55s  user  발화 끝
+    29.58s  agent 발화 시작: <ret> It’s understandable to wonder about even older roots. 
+    31.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: [source: House of Names] The name Plessis is derived from the Old Fren
+    37.46s  agent 발화 끝
+    37.47s  agent 발화 시작: Plessis, the place the name refers to, comes from an Old Fre
+    44.00s  agent 발화 끝
+    44.20s  user  발화 시작: So it’s tied to land ownership, then? That’s… interesting.
+    48.45s  <ret> 발화 (turn8 첫 프레임)
+    48.50s  user  발화 끝
+    48.61s  agent 발화 시작: <ret> The name du Plessis was notably found in Normandy and 
+    50.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: [source: The Internet Surname Database] The surname du Plessis was par
+    55.57s  agent 발화 끝

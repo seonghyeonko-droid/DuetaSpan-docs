@@ -60,16 +60,14 @@
 
 
      0.00s  user  발화 시작: 혹시 건강한 사람의 평균 심박수가 어떻게 돼요?
-     2.45s  <ret> 발화 (turn1 첫 프레임)
-     2.60s  agent 발화 시작: <ret> 음, 일반적으로는… 건강한 성인의 정상적인 심박수는 분당 육십 회에서 백 회 사이입니다.
-     2.87s  user  발화 끝
-     2.95s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.24s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     6.42s  user  발화 시작: 예.
-     6.78s  user  발화 끝
-     9.84s  user  발화 시작: 저녁 뭐 먹을까?
-    10.06s  agent 발화 끝
-    11.40s  user  발화 끝
-    11.63s  agent 발화 시작: 하지만 개인차가 꽤 있어서, 운동량이나 스트레스 정도에 따라 달라질 수 있어요.
-    16.48s  agent 발화 끝
-    16.65s  user  발화 시작: 아, 그렇군요. 그럼 운동할 때는 얼마나 뛰어야 정상인 거예요?
-    20.67s  user  발화 끝
+     2.95s  <ret> 발화 (turn1 첫 프레임)
+     3.10s  agent 발화 시작: <ret> 심박수는 개인차가 있지만, 일반적으로… 건강한 성인의 경우, 안정 시 심박수는 분당 육십 회에서 
+     3.37s  user  발화 끝
+     3.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.96s]: '[source: Mayo Clinic] A normal resting heart rate for adults ranges f
+     7.11s  user  발화 시작: 예.
+     7.47s  user  발화 끝
+    10.71s  user  발화 시작: [sigh] 오늘따라 일이 너무 많네.
+    10.93s  agent 발화 끝
+    13.53s  user  발화 끝
+    13.77s  agent 발화 시작: 혹시 운동을 꾸준히 하시나요? 운동량에 따라서도 심박수가 달라질 수 있습니다.
+    19.56s  agent 발화 끝

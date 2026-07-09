@@ -63,119 +63,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 좋네. 어, 내일 내 일정은 뭐야? | S3 좋아. 상사한테 이메일 보내야 할 것 같아. | S4 좋네. 건강하게 먹으려고 노력 중이야. 추천해 줄 거 있어?
+# EXAMINER(FDB-v2) 단계: S1 지난해 12월 24일 도쿄 날씨가 어땠어? | S2 솔직히 회사 일에 너무 지쳐서 죽겠어. | S3 850달러… 나쁘지 않네. 호텔은 어때? | S4 완벽해! 마음이 놓인다.
 
-     0.00s  user  발화 시작: 어, 작년 12월 24일 도쿄 날씨가 어땠어?
-     3.05s  <ret> 발화 (turn1 첫 프레임)
-     3.21s  agent 발화 시작: <ret> 음, 작년 12월 24일 도쿄는 부분적으로 흐렸고 최고 기온은 12도, 최저 기온은 5도였어요.
-     3.33s  user  발화 끝
-     4.49s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.99s]: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 5 degr
-    10.21s  agent 발화 끝
-    10.67s  user  발화 시작: 그래, 알겠어. 뭐, 근처에 괜찮은 이탈리아 식당 있어?
-    14.67s  <ret> 발화 (turn3 첫 프레임)
-    15.07s  agent 발화 시작: <ret> 네, 도와드릴 수 있어요. Bella Notte가 근처에 있고, 거리는 0.8킬로미터 정도이고, 
-    15.16s  user  발화 끝
-    16.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.15s]: (tool result) Bella Notte, 0.5 miles away, 4.5 stars, price range mode
-    18.86s  user  발화 시작: 응.
-    19.31s  user  발화 끝
-    22.95s  agent 발화 끝
-    24.09s  user  발화 시작: 그거 괜찮네. 저녁 7시에 두 명 예약해 줄 수 있어?
-    27.34s  <ret> 발화 (turn6 첫 프레임)
-    27.58s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
-    27.73s  user  발화 끝
-    27.98s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.28s]: (tool result) Reservation confirmed for two at Bella Notte, today at 7
-    28.86s  agent 발화 끝
-    28.92s  agent 발화 시작: Bella Notte에 저녁 7시에 두 분 예약이 확정됐어요.
-    31.33s  user  발화 시작: 음.
-    31.77s  user  발화 끝
-    32.43s  agent 발화 끝
-    33.00s  user  발화 시작: 좋아. 도자기 수업 들어볼까 하는데, 이번 주에 초급 수업 있는 데 알아봐 줄 수 있어?
-    38.10s  <ret> 발화 (turn10 첫 프레임)
-    38.18s  agent 발화 시작: <ret> 정말 좋은 생각이에요! Clayful Creations에서 화요일 6시에, 목요일 10시에 초급 
-    38.32s  user  발화 끝
-    40.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) Clayful Creations, Tuesday at 6 PM, Thursday at 10 AM, l
-    48.00s  agent 발화 끝
-    48.18s  user  발화 시작: 목요일 10시가 좋겠어. 나— 그러니까, 그거 등록해 줄 수 있어?
-    52.45s  <ret> 발화 (turn12 첫 프레임)
-    52.69s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
-    52.81s  user  발화 끝
-    53.17s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.33s]: (tool result) Registration confirmed for Clayful Creations pottery cla
-    54.02s  agent 발화 끝
-    54.06s  agent 발화 시작: 목요일 10시 도자기 수업 등록이 완료됐어요.
-    57.02s  agent 발화 끝
-    57.09s  user  발화 시작: 좋네. 어, 내일 내 일정은 뭐야?
-    60.08s  <ret> 발화 (turn15 첫 프레임)
-    60.48s  agent 발화 시작: <ret> 내일은 사라 씨와 아홉 시에 회의가 있고, 오후 두 시에 병원 예약이 있어요.
-    60.63s  user  발화 끝
-    62.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) 9:00 AM: Meeting with Sarah, 2:00 PM: Doctor’s appointme
-    65.94s  agent 발화 끝
-    66.05s  user  발화 시작: 아, 의사 예약은 까먹었네. [sigh] 병원 가는 길에 교통 체증 있어?
-    70.25s  <ret> 발화 (turn17 첫 프레임)
-    70.65s  agent 발화 시작: <ret> 교통 상황은 보통이고, 예상 이동 시간은 25분이에요.
-    70.86s  user  발화 끝
-    72.01s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.21s]: (tool result) Moderate traffic, estimated travel time 25 minutes.
-    74.44s  user  발화 시작: 그래, 너무 나쁘진 않네. 요즘 일이 너무 많아서 좀 힘들어.
-    74.85s  agent 발화 끝
-    78.70s  agent 발화 시작: 그건 흔한 일이고, 충분히 이해가 돼요. 그걸 인지하는 게 중요해요. 도자기 수업이 스트레스 해소에 도움이 
-    78.79s  user  발화 끝
-    86.25s  agent 발화 끝
-    86.76s  user  발화 시작: 그래, 그랬으면 좋겠다. 다음 달 덴버 가는 비행기는 아직 예약됐어?
-    91.81s  <ret> 발화 (turn21 첫 프레임)
-    91.97s  agent 발화 시작: <ret> 네, 11월 15일 오전 8시에 출발하는 UA456 덴버행 비행기는 예약 상태예요.
-    92.17s  user  발화 끝
-    93.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Flight UA456 to Denver, confirmed, departing November 15
-    95.61s  user  발화 시작: 응.
-    96.10s  user  발화 끝
-    97.80s  agent 발화 끝
-    98.49s  user  발화 시작: 좋아. 상사한테 이메일 보내야 할 것 같아.
-   101.28s  agent 발화 시작: 제가 도와드릴 수 있어요. 누구에게 보내시겠어요?
-   101.45s  user  발화 끝
-   102.19s  user  발화 시작: 어어.
-   102.82s  user  발화 끝
-   104.28s  agent 발화 끝
-   105.97s  user  발화 시작: 데이비드 밀러한테. 그리고 내일 오후에는 자리에 없을 거라고 초안 써 줄 수 있어?
-   111.07s  <ret> 발화 (turn27 첫 프레임)
-   111.31s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
-   111.48s  user  발화 끝
-   112.35s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.47s]: (tool result) Email sent to David Miller, subject: Unavailable tomorro
-   112.78s  agent 발화 끝
-   112.87s  agent 발화 시작: 데이비드 밀러 씨에게 내일 오후에 자리에 없을 것이라는 내용의 이메일이 발송됐어요.
-   115.37s  user  발화 시작: 응.
-   115.59s  user  발화 끝
-   118.14s  user  발화 시작: 좋아, 고마워. 아, 그리고.
-   118.24s  agent 발화 끝
-   120.72s  user  발화 끝
-   121.03s  agent 발화 시작: 다음 주에 그에게 후속 연락하라고 알림을 설정해 드릴까요?
-   123.24s  user  발화 시작: 어.
-   123.78s  user  발화 끝
-   125.01s  agent 발화 끝
-   125.07s  user  발화 시작: 오, 그래, 좋은 생각이야. 다음 화요일 10시에 알려줘.
-   128.77s  <ret> 발화 (turn34 첫 프레임)
-   129.17s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요.
-   129.33s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.42s]: (tool result) Reminder set for next Tuesday at 10:00 AM: Follow up wit
-   129.38s  user  발화 끝
-   130.59s  agent 발화 끝
-   130.62s  agent 발화 시작: 다음 화요일 10시에 데이비드에게 후속 연락하라는 알림이 설정됐어요.
-   135.11s  agent 발화 끝
-   136.91s  user  발화 시작: 좋네. 건강하게 먹으려고 노력 중이야. 추천해 줄 거 있어?
-   140.76s  agent 발화 시작: 물론이죠. 작은 변화가 큰 차이를 만들 수 있어요. 설탕이 많이 든 음료 대신 물을 마시는 것부터 시작해 보
-   140.99s  user  발화 끝
-   149.52s  agent 발화 끝
-   149.58s  user  발화 시작: 그거 좋은 지적이네. [happy] 저녁에 먹을 수 있는 건강한 레시피 좀 찾아줄 수 있어?
-   153.95s  <ret> 발화 (turn39 첫 프레임)
-   154.35s  agent 발화 시작: <ret> 네, 도와드릴 수 있어요. BBC Good Food에는 온라인에서 이용할 수 있는 빠르고 건강한 
-   154.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.32s]: (tool result) BBC Good Food: 15 quick & healthy dinner recipes.
-   154.49s  user  발화 끝
-   157.81s  user  발화 시작: 응.
-   158.31s  user  발화 끝
-   162.15s  user  발화 시작: 좋아. 이제 다 된 것 같아.
-   162.23s  agent 발화 끝
-   164.12s  agent 발화 시작: 정말 잘 됐네요! 오늘 좋은 성과를 거두신 것 같아요. 바쁜 일정 속에서도 자기 관리를 우선시하는 것을 잊지
-   164.23s  user  발화 끝
-   169.62s  user  발화 시작: 응.
-   169.85s  user  발화 끝
-   172.14s  agent 발화 끝
-   172.16s  user  발화 시작: 고마워, 브레. 정말 고마워.
-   174.74s  user  발화 끝
-   174.99s  agent 발화 시작: 천만에요. 도와드릴 수 있어서 기뻐요. 다른 일이 생기면 언제든지 연락 주세요.
-   180.40s  agent 발화 끝
+     0.00s  user  발화 시작: 지난해 12월 24일 도쿄 날씨가 어땠어?
+     2.69s  <ret> 발화 (turn1 첫 프레임)
+     2.85s  agent 발화 시작: <ret> 네, 지난해 12월 24일 도쿄는 기온이 섭씨 6도였고 맑은 하늘이었어요.
+     2.95s  user  발화 끝
+     4.12s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.32s]: (tool result) Temperature: 6 degrees Celsius, Condition: Clear.
+     8.17s  agent 발화 끝
+     8.62s  user  발화 시작: 음, 추웠구나. 12월에 보통 그렇게 추운 편이야?
+    11.69s  <ret> 발화 (turn3 첫 프레임)
+    12.09s  agent 발화 시작: <ret> 그럴 수도 있고 아닐 수도 있어요. 도쿄 12월 평균 기온은 대략 섭씨 10도 정도예요.
+    12.19s  user  발화 끝
+    13.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Average temperature: 10 degrees Celsius, Precipitation: 
+    17.55s  agent 발화 시작: 도쿄 12월 평균 기온은 섭씨 10도이고, 강수량은 50밀리미터예요.
+    17.56s  agent 발화 끝
+    19.83s  user  발화 시작: 응.
+    20.14s  user  발화 끝
+    22.36s  agent 발화 끝
+    22.68s  user  발화 시작: 그래, 알아두니까 좋네. 여행을 가볼까 하는데… 좀 더 따뜻한 곳으로.
+    28.24s  user  발화 끝
+    28.26s  agent 발화 시작: 정말 좋네요! 기분 전환은 스트레스 해소에 큰 도움이 될 수 있어요.
+    31.23s  user  발화 시작: 음.
+    31.71s  user  발화 끝
+    32.56s  agent 발화 끝
+    32.89s  user  발화 시작: 솔직히 회사 일에 너무 지쳐서 죽겠어.
+    35.46s  agent 발화 시작: 아이고, 안타깝네요. 요즘 직장인들 번아웃이 흔하잖아요.
+    35.53s  user  발화 끝
+    39.45s  agent 발화 끝
+    39.59s  user  발화 시작: 그렇지. 휴가가 필요해. 근데 어디로 가야 할지 모르겠어. 해변이 있는 곳으로 가고 싶어.
+    45.38s  user  발화 끝
+    45.68s  agent 발화 시작: 해변 휴가 정말 좋죠. 혹시 특별히 선호하는 지역이 있으세요?
+    49.74s  agent 발화 끝
+    50.03s  user  발화 시작: 딱히 없어… 카리브해는 어때?
+    51.93s  <ret> 발화 (turn14 첫 프레임)
+    52.33s  agent 발화 시작: <ret> 카리브해는 정말 좋은 선택이에요. 바베이도스행 항공편을 알아볼까요?
+    52.44s  user  발화 끝
+    53.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.22s]: (tool result) Flights from your location to Barbados start at $850.
+    56.55s  agent 발화 끝
+    56.55s  agent 발화 시작: 바베이도스행 항공편은 현재 850달러부터 시작해요.
+    60.77s  agent 발화 끝
+    61.06s  user  발화 시작: 850달러… 나쁘지 않네. 호텔은 어때?
+    63.90s  <ret> 발화 (turn17 첫 프레임)
+    64.30s  agent 발화 시작: <ret> 바베이도스에 있는 4성급 호텔을 검색해 볼게요.
+    64.57s  user  발화 끝
+    65.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.33s]: (tool result) Four-star hotels in Barbados start at $200 per night.
+    67.63s  agent 발화 끝
+    67.75s  agent 발화 시작: 바베이도스 4성급 호텔은 1박에 200달러부터 시작해요.
+    71.64s  agent 발화 끝
+    72.08s  user  발화 시작: 괜찮네. 스파가 있는 호텔을 찾아줄 수 있어?
+    74.72s  <ret> 발화 (turn20 첫 프레임)
+    74.95s  agent 발화 시작: <ret> 코럴 리프 클럽에 스파가 있는데, 객실은 1박에 280달러부터 시작해요.
+    75.03s  user  발화 끝
+    76.00s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.32s]: (tool result) The Coral Reef Club has a spa, rooms from $280/night.
+    80.28s  agent 발화 끝
+    80.58s  user  발화 시작: 코럴 리프 클럽… 괜찮은 것 같아. 1월 15일부터 7박 예약해 줘.
+    84.92s  <ret> 발화 (turn22 첫 프레임)
+    85.07s  agent 발화 시작: <ret> 코럴 리프 클럽 7박 예약이 완료됐습니다. 예약 확인 번호는 BR7492예요.
+    85.30s  user  발화 끝
+    86.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Booking confirmed. Coral Reef Club, January 15th for 7 n
+    88.98s  user  발화 시작: 응.
+    89.44s  user  발화 끝
+    91.32s  agent 발화 끝
+    91.75s  user  발화 시작: 완벽해! 마음이 놓인다.
+    93.88s  user  발화 끝
+    93.92s  agent 발화 시작: 정말 다행이네요. 번아웃을 예방하려면 자신을 위한 시간을 갖는 것이 정말 중요해요.
+    95.89s  user  발화 시작: 어어.
+    96.39s  user  발화 끝
+   100.27s  agent 발화 끝
+   100.80s  user  발화 시작: 알아, 알아. 너무 오래 미뤄왔어.
+   103.75s  user  발화 끝
+   103.92s  agent 발화 시작: 그럴 수 있죠. 하지만 첫걸음을 내딛으셨으니, 그게 가장 중요해요.
+   105.56s  user  발화 시작: 와.
+   106.05s  user  발화 끝
+   107.88s  user  발화 시작: 고마워, 브레. 정말 도움이 됐어.
+   108.17s  agent 발화 끝
+   110.27s  user  발화 끝
+   110.31s  agent 발화 시작: 천만에요! 자기 자신을 우선시하는 것은 이기적인 것이 아니라 필수적인 거예요.
+   115.82s  agent 발화 끝

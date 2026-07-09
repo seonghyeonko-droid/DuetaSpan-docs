@@ -66,55 +66,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘. | S2 음… 주변에 괜찮은 카페가 있을까? | S3 아, 고마워. 혹시 그 로프트, 반려동물 동반 가능한 곳이야? | S4 [happy] 알았어, 정말 고마워.
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘. | S2 아니, 그 시간대로 괜찮아. 근데 그 로프트, 반려동물 동반  | S3 음… 다른 곳도 한번 찾아봐 줄래? 좀 더 저렴한 곳으로. | S4 오, 거기가 가깝네.
 
-     0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘.
-     3.73s  <ret> 발화 (turn1 첫 프레임)
-     3.97s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트 방문 예약을 잡아드릴게요.
-     4.16s  user  발화 끝
-     5.65s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.23s]: (tool result) Visit scheduled for June 15th at 2:00 PM.
-     7.08s  agent 발화 시작: 육월 십오일 오후 두시에 그랜드뷰 로프트 방문 예약이 완료됐습니다.
-     7.21s  agent 발화 끝
-    11.79s  user  발화 시작: 음… 두시 말고, 혹시 늦게 갈 수 있을까? 네시쯤으로— 아니, 다섯시로 바꿔줘.
-    11.81s  agent 발화 끝
-    16.68s  <ret> 발화 (turn4 첫 프레임)
-    16.75s  agent 발화 시작: <ret> 다섯시로 변경해 드릴게요.
-    16.78s  user  발화 끝
-    18.12s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.89s]: (tool result) Visit rescheduled for June 15th at 5:00 PM.
-    18.46s  agent 발화 시작: 육월 십오일 오후 다섯시로 방문 예약 시간이 변경되었습니다.
-    18.64s  agent 발화 끝
-    21.29s  user  발화 시작: 어.
-    21.64s  user  발화 끝
-    22.77s  agent 발화 시작: 혹시 그랜드뷰 로프트에 대해 더 궁금한 점이 있으신가요?
-    22.87s  agent 발화 끝
-    24.90s  user  발화 시작: 응응.
-    25.39s  user  발화 끝
-    26.79s  agent 발화 끝
-    27.12s  user  발화 시작: 음… 주변에 괜찮은 카페가 있을까?
-    29.31s  <ret> 발화 (turn10 첫 프레임)
-    29.62s  agent 발화 시작: <ret> 주변 카페 정보는 쉽게 찾을 수 있습니다. 그랜드뷰 로프트 근처에 빈씬(영 점 이마일)과 커피 헤
-    29.76s  user  발화 끝
-    30.51s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.52s]: (tool result) Nearby cafes: BeanScene (0.2 miles), Coffee Haven (0.5 m
-    39.03s  user  발화 시작: 빈씬은 영업시간이 어떻게 돼?
+     0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘.
+     3.47s  <ret> 발화 (turn1 첫 프레임)
+     3.70s  agent 발화 시작: <ret> 네, 알겠습니다. 그랜드뷰 로프트 육월 십오일 오후 두시에 방문 예약을 잡아드렸어요.
+     3.89s  user  발화 끝
+     4.51s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.14s]: (tool result) Viewing scheduled for The Grandview Lofts on June 15th a
+     9.96s  agent 발화 끝
+    11.26s  user  발화 시작: 어… 잠깐만, 십오일이 아니라 십육일로 바꿔줘. 십오일은 좀…
+    15.38s  <ret> 발화 (turn3 첫 프레임)
+    15.77s  agent 발화 시작: <ret> 아, 그러셨군요. 그랜드뷰 로프트 방문 날짜를 육월 십육일 오후 두시로 변경해 드렸어요.
+    15.88s  user  발화 끝
+    16.50s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.14s]: (tool result) Viewing scheduled for The Grandview Lofts on June 16th a
+    20.23s  user  발화 시작: 어.
+    20.77s  user  발화 끝
+    22.41s  agent 발화 시작: 혹시 다른 조건은 필요 없으신가요? 예를 들어, 특정 시간대를 원하시거나…
+    22.58s  agent 발화 끝
+    25.31s  user  발화 시작: 응응.
+    25.94s  user  발화 끝
+    27.68s  user  발화 시작: 아니, 그 시간대로 괜찮아. 근데 그 로프트, 반려동물 동반 가능한가?
+    27.82s  agent 발화 끝
+    32.73s  <ret> 발화 (turn8 첫 프레임)
+    32.95s  agent 발화 시작: <ret> 그랜드뷰 로프트는 반려동물 동반이 가능하고, 일회성 수수료가 이백오십달러예요.
+    33.01s  user  발화 끝
+    34.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: [source: Grandview Lofts website] Pets are welcome at The Grandview Lo
+    39.15s  user  발화 시작: 아, 이백오십달러? 생각보다 비싸네.
     39.16s  agent 발화 끝
-    40.87s  user  발화 끝
-    40.95s  <ret> 발화 (turn12 첫 프레임)
-    41.02s  agent 발화 시작: <ret> 빈씬의 영업시간을 바로 알려드릴게요. 빈씬은 매일 오전 일곱시부터 오후 여덟시까지 영업합니다.
-    42.15s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.54s]: (tool result) BeanScene hours: 7:00 AM - 8:00 PM daily.
-    47.96s  user  발화 시작: 아, 고마워. 혹시 그 로프트, 반려동물 동반 가능한 곳이야?
-    48.01s  agent 발화 끝
-    53.37s  <ret> 발화 (turn14 첫 프레임)
-    53.38s  user  발화 끝
-    53.45s  agent 발화 시작: <ret> 네, 그랜드뷰 로프트는 반려동물 동반이 가능합니다.
-    54.41s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.46s]: [source: Grandview Lofts Website] Pets are welcome at The Grandview Lo
-    56.68s  agent 발화 시작: 그랜드뷰 로프트는 반려동물 동반이 가능하며, 일회 청소비가 오십달러입니다.
-    56.91s  agent 발화 끝
-    61.83s  user  발화 시작: 오, 좋네. 그럼 혹시 육월 십오일 다섯시에 방문 예약한 거, 다시 한 번 확인해 줄 수 있어?
-    62.01s  agent 발화 끝
-    67.93s  agent 발화 시작: 물론입니다. 육월 십오일 오후 다섯시에 그랜드뷰 로프트 방문 예약이 확정되어 있습니다.
-    67.95s  user  발화 끝
-    70.45s  user  발화 시작: 음.
-    70.76s  user  발화 끝
-    73.96s  agent 발화 끝
-    74.06s  user  발화 시작: [happy] 알았어, 정말 고마워.
-    75.81s  user  발화 끝
+    41.94s  agent 발화 시작: 이사 준비에 드는 비용은 여러 가지가 있으니, 미리 꼼꼼히 알아보시는 게 좋겠어요. 혹시 다른 로프트도 알아
+    42.02s  user  발화 끝
+    49.82s  user  발화 시작: 음… 다른 곳도 한번 찾아봐 줄래? 좀 더 저렴한 곳으로.
+    49.96s  agent 발화 끝
+    53.73s  <ret> 발화 (turn12 첫 프레임)
+    53.96s  agent 발화 시작: <ret> 물론이죠. 리버워크 레지던스는 반려동물 수수료가 백오십달러이고, 육월 이십일에 입주 가능해요.
+    53.98s  user  발화 끝
+    54.29s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.69s]: (tool result) Found: Riverwalk Residences - pet fee $150, available Ju
+    60.91s  agent 발화 끝
+    60.97s  user  발화 시작: 리버워크 레지던스? 그곳 위치가 어디야?
+    64.03s  user  발화 끝
+    64.04s  <ret> 발화 (turn14 첫 프레임)
+    64.11s  agent 발화 시작: <ret> 리버워크 레지던스는 애니타운 메인 스트리트 백이십삼번지에 위치해 있어요.
+    65.56s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.18s]: [source: Google Maps] Riverwalk Residences is located at 123 Main Stre
+    66.26s  user  발화 시작: 음.
+    66.57s  user  발화 끝
+    69.25s  user  발화 시작: 오, 거기가 가깝네.
+    69.29s  agent 발화 끝
+    70.67s  agent 발화 시작: 새로운 환경에 적응하는 건 쉽지 않지만, 긍정적인 마음으로 준비하시면 분명 잘 해내실 수 있을 거예요.
+    70.86s  user  발화 끝
+    73.40s  user  발화 시작: 맞아.
+    73.84s  user  발화 끝
+    77.62s  agent 발화 끝
+    78.46s  user  발화 시작: 고마워, 텔러. 덕분에 좀 안심이 돼.
+    81.41s  agent 발화 시작: 언제든 힘든 일이 있으면 저에게 말씀하세요. 제가 옆에서 든든하게 응원해 드릴게요.
+    81.51s  user  발화 끝
+    87.52s  agent 발화 끝

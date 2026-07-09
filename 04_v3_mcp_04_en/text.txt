@@ -56,13 +56,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point one?
-[  5.45s][moshi] ⟨ret@5.14s⟩ Certainly. ⟦⚡SPAN@6.18s: (tool result) User agent set to SuperCrawler version 10.1⟧ I’ve set your user agent to SuperCrawler version ten point one. Is there anything else I can adjust for your browsing?
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@5.42s⟩ one?
+[  5.73s][moshi] Certainly. I’ve updated ⟦⚡SPAN@7.42s: (tool result) User agent set to SuperCrawler version 10.1.⟧ the user agent to SuperCrawler version ten point one for your browsing session.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[  9.07s][user ] «backchannel» Mhm.
-[ 13.24s][user ] Hmm, that’s good. But— I mean, will that hide my location too?
-[ 18.23s][moshi] Changing the user agent primarily affects how websites identify your browser, not your location. Location is typically determined by IP address or geolocation services.
-[ 30.35s][user ] Oh. Okay, well… could you find my IP address then?
-[ 35.06s][moshi] ⟨ret@34.74s⟩ Your ⟦⚡SPAN@35.86s: (tool result) Your IP address is 203.0.113.42⟧ current IP address is two-zero-three dot zero dot one-one-three dot forty-two. Would you like me to check if it’s associated with any known location services?
-      CALL: {"function": "get_ip_address"}
-[ 46.93s][user ] No, that’s alright. Thanks. I think I'm good for now.
+[  8.66s][user ] «backchannel» Mhm.
+[ 12.04s][user ] Hmm, does that mean websites will see me as a search engine bot now?
+[ 16.59s][moshi] It’s possible some sites will identify you as a bot, yes. That depends on how they detect user agents.
+[ 23.29s][user ] But… won’t that mess up things like seeing accurate prices or— or getting logged in?
+[ 30.16s][moshi] [interrupting] Like, will it affect my Amazon account?
+[ 34.23s][user ] Yeah, exactly! Will it affect my Amazon ⟨ret@37.07s⟩ account?
+[ 37.39s][moshi] It ⟦⚡SPAN@38.19s: (tool result) User agent reset to default browser settings.⟧ could interfere with personalized experiences, certainly. Amazon, like many sites, uses user agent information.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}}
+[ 44.86s][moshi] I’ve reset the user agent to the default browser settings to ensure full functionality on sites like Amazon.

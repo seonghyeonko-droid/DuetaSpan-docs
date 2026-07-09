@@ -68,59 +68,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄래? weather.example.com | S2 흐음, 일요일에 비라니. 그럼 토요일에 가야겠네. 혹시 근처  | S3 오, 괜찮다. 그럼 파인 밸리 캠핑장으로 토요일 예약해 줘. | S4 음… 그건 됐어. 캠핑 전에 날씨 다시 한번 확인해 줄래? 혹
+# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 봐줄래? weather.example.com | S2 아, 아니다. 그냥 궁금해서. 그럼, 이번 주 토요일에 부산  | S3 오, 완벽해! 고마워. | S4 호텔 씨가 제일 저렴하네. 그럼 호텔 씨로 일박 예약해 줄래?
 
      0.00s  user  발화 시작: 날씨 업데이트 좀 봐줄래? weather.example.com에서.
-     3.16s  <ret> 발화 (turn1 첫 프레임)
-     3.55s  agent 발화 시작: <ret> 알겠습니다. 현재 기온은 섭씨 이십팔도이고, 구름이 조금 낀 상태입니다.
-     3.66s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.54s]: (tool result) Temperature is 28 degrees Celsius, partly cloudy.
-     3.74s  user  발화 끝
-     8.41s  agent 발화 끝
-     9.76s  user  발화 시작: 음, 그렇군요.
-    10.89s  agent 발화 시작: 혹시 특정 지역의 날씨를 알고 싶으신가요?
-    11.09s  user  발화 끝
-    11.90s  user  발화 시작: 그렇죠.
-    12.49s  user  발화 끝
-    13.29s  user  발화 시작: 아, 아니. 그냥 궁금해서. 이번 주말에 캠핑 가려고 하는데, 혹시 비 올 것 같아?
-    13.48s  agent 발화 끝
-    18.61s  <ret> 발화 (turn6 첫 프레임)
-    18.99s  agent 발화 시작: <ret> 토요일은 맑고 최고 기온은 섭씨 이십오도, 일요일은 비가 오고 최고 기온은 섭씨 이십이도입니다.
-    19.18s  user  발화 끝
-    20.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Saturday: Sunny, high 25. Sunday: Showers, high 22.
-    25.80s  agent 발화 끝
-    26.26s  user  발화 시작: 흐음, 일요일에 비라니. 그럼 토요일에 가야겠네. 혹시 근처 캠핑장 예약해 줄 수 있어?
-    32.30s  agent 발화 시작: 물론입니다. 어디로 예약해 드릴까요?
-    32.32s  user  발화 끝
-    34.76s  user  발화 시작: 음… 서울 근교로, 차로 한 시간 반 정도 거리면 괜찮아.
-    34.88s  agent 발화 끝
-    38.98s  <ret> 발화 (turn10 첫 프레임)
-    39.13s  agent 발화 시작: <ret> 파인 밸리 캠핑장이 토요일에 예약 가능하고, 가격은 오만 원입니다.
-    39.25s  user  발화 끝
-    40.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) Pine Valley Campground: Available Saturday, price 50000 
-    41.34s  user  발화 시작: 와.
-    41.97s  user  발화 끝
-    43.43s  agent 발화 끝
-    43.61s  user  발화 시작: 오, 괜찮다. 그럼 파인 밸리 캠핑장으로 토요일 예약해 줘.
-    47.08s  <ret> 발화 (turn13 첫 프레임)
-    47.15s  agent 발화 시작: <ret> 파인 밸리 캠핑장 토요일 예약 진행하겠습니다. 파인 밸리 캠핑장 토요일 예약이 완료되었습니다. 확
-    47.31s  user  발화 끝
-    48.52s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.53s]: (tool result) Reservation confirmed. Pine Valley Campground, Saturday.
-    51.24s  user  발화 시작: 와.
-    51.88s  user  발화 끝
-    55.59s  agent 발화 끝
-    55.80s  user  발화 시작: 와, 고마워!
-    57.04s  user  발화 끝
-    57.23s  agent 발화 시작: 즐거운 캠핑 되세요. 혹시 필요한 물품 목록을 만들어 드릴까요?
-    61.73s  user  발화 시작: 음… 그건 됐어. 캠핑 전에 날씨 다시 한번 확인해 줄래? 혹시 변동될까 봐.
-    61.76s  agent 발화 끝
-    66.29s  <ret> 발화 (turn18 첫 프레임)
-    66.68s  agent 발화 시작: <ret> 주말 날씨를 다시 한번 확인해 드리겠습니다. 토요일은 맑고 최고 기온은 섭씨 이십오도, 일요일은 
-    66.86s  user  발화 끝
-    67.49s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.67s]: (tool result) Saturday: Sunny, high 25. Sunday: Showers, high 22. No c
-    71.18s  user  발화 시작: 그렇죠.
-    71.81s  user  발화 끝
-    76.22s  user  발화 시작: 다행이다. 정말 고마워, 드리아우스.
-    76.45s  agent 발화 끝
-    79.42s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁩니다.
-    79.45s  user  발화 끝
-    82.37s  agent 발화 끝
+     3.28s  <ret> 발화 (turn1 첫 프레임)
+     3.68s  agent 발화 시작: <ret> 물론이죠. 지금부터 weather.example.com의 날씨 업데이트를 주시할게요.
+     3.84s  user  발화 끝
+     5.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Weather in Seoul is currently 25 degrees Celsius and sun
+     8.64s  agent 발화 시작: 현재 서울 날씨는 섭씨 이십오도이고 맑습니다.
+     8.83s  agent 발화 끝
+    12.05s  user  발화 시작: 음, 고마워. 혹시 오늘 저녁에 비 올 가능성은?
+    12.19s  agent 발화 끝
+    16.21s  user  발화 끝
+    16.60s  agent 발화 시작: 오늘 저녁에 비가 올 가능성은 낮지만, 밤에는 흐려질 수 있습니다.
+    18.53s  user  발화 시작: 아.
+    19.02s  user  발화 끝
+    21.06s  agent 발화 시작: 혹시 특정 지역의 날씨를 알고 싶으신가요? 아니면 다른 도시의 날씨도 확인해 드릴까요?
+    21.13s  agent 발화 끝
+    23.72s  user  발화 시작: 네네.
+    24.35s  user  발화 끝
+    26.71s  agent 발화 끝
+    26.78s  user  발화 시작: 아, 아니다. 그냥 궁금해서. 그럼, 이번 주 토요일에 부산 가는 기차표 예매해 줄 수 있어?
+    33.08s  user  발화 끝
+    33.22s  agent 발화 시작: 토요일 부산행 기차표 예매를 도와드릴게요. 몇 시쯤 출발하는 기차를 원하시나요?
+    36.10s  user  발화 시작: 네.
+    36.65s  user  발화 끝
+    38.72s  agent 발화 끝
+    39.12s  user  발화 시작: 음… 오전 열 시쯤으로 부탁해.
+    41.84s  <ret> 발화 (turn12 첫 프레임)
+    42.06s  agent 발화 시작: <ret> 기차표 예매 완료되었습니다. 토요일 오전 열 시, 서울에서 부산까지, 십이C 좌석, 비용은 오만 
+    42.17s  user  발화 끝
+    43.20s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.69s]: (tool result) Train booked: Seoul to Busan, Saturday 10:00 AM, seat 12
+    45.77s  user  발화 시작: 와.
+    46.22s  user  발화 끝
+    49.58s  user  발화 시작: 오, 완벽해! 고마워.
+    49.75s  agent 발화 끝
+    51.41s  user  발화 끝
+    51.72s  agent 발화 시작: 다행입니다. 혹시 부산 도착 후 호텔 예약도 도와드릴까요?
+    55.74s  agent 발화 끝
+    55.94s  user  발화 시작: 음… 호텔은 아직 안 정했는데. 혹시 부산역 근처에 괜찮은 호텔 있으면 찾아봐 줄 수 있어?
+    62.33s  <ret> 발화 (turn17 첫 프레임)
+    62.73s  agent 발화 시작: <ret> 물론이죠. 부산역 근처의 괜찮은 호텔을 찾아보겠습니다.
+    62.89s  user  발화 끝
+    63.85s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.74s]: (tool result) Three hotels found: Hotel A (₩80,000/night), Hotel B (₩1
+    66.35s  agent 발화 시작: 부산역 근처에 세 곳의 호텔이 있습니다. 호텔 에이는 팔만 원, 호텔 비는 십이만 원, 호텔 씨는 육만 원입
+    66.47s  agent 발화 끝
+    70.07s  user  발화 시작: 그렇죠.
+    70.65s  user  발화 끝
+    73.94s  user  발화 시작: 호텔 씨가 제일 저렴하네. 그럼 호텔 씨로 일박 예약해 줄래? 이번 주 토요일 밤에.
+    74.47s  agent 발화 끝
+    79.43s  <ret> 발화 (turn21 첫 프레임)
+    79.59s  agent 발화 시작: <ret> 호텔 씨 예약 완료되었습니다. 토요일 밤, 일박, 확인 번호는 BC1234입니다.
+    79.69s  user  발화 끝
+    81.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) Hotel C booked: Saturday night, one night, confirmation 
+    82.02s  user  발화 시작: 와.
+    82.80s  user  발화 끝
+    85.58s  user  발화 시작: 와, 정말 고마워! 덕분에 여행 준비가 훨씬 수월해졌네.
+    85.70s  agent 발화 끝
+    89.94s  agent 발화 시작: 여행 준비에 도움이 되었다니 기쁩니다. 혹시 다른 필요한 사항은 없으신가요?
+    90.06s  user  발화 끝
+    94.84s  agent 발화 끝

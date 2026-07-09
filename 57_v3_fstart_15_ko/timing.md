@@ -63,39 +63,41 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 해산물. | S3 혹시 예약도 가능해? | S4 와, 고마워.
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 이탈리아 음식. | S3 혹시 바닷가 근처에 있으면 더 좋을 것 같은데? | S4 고마워.
 
      0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
-     3.90s  <ret> 발화 (turn1 첫 프레임)
-     3.97s  agent 발화 시작: <ret> 잠시만요— 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다.
-     4.07s  user  발화 끝
-     4.40s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.69s]: (tool result) latitude: -33.8568, longitude: 151.2153
-     6.87s  user  발화 시작: 응.
-     7.37s  user  발화 끝
-    10.77s  user  발화 시작: 음, 그 근처에 괜찮은 레스토랑 있어?
-    10.88s  agent 발화 끝
-    13.77s  user  발화 끝
-    14.09s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 좋아하세요?
-    17.32s  agent 발화 끝
-    18.44s  user  발화 시작: 해산물.
-    19.03s  <ret> 발화 (turn6 첫 프레임)
-    19.40s  user  발화 끝
-    19.42s  agent 발화 시작: <ret> 해산물 레스토랑을 찾고 계시는군요— 아리아 레스토랑, 퀘이, 카페 시드니가 근처에 있습니다.
-    20.15s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.19s]: (tool result) restaurants: Aria Restaurant, Quay, Cafe Sydney
-    21.89s  user  발화 시작: 응.
-    22.39s  user  발화 끝
-    25.37s  agent 발화 시작: 아리아 레스토랑은 오페라 하우스 바로 옆에 있고, 퀘이는 조금 더 걸어가야 합니다. 카페 시드니는 전망이 아
-    25.44s  agent 발화 끝
-    32.79s  agent 발화 끝
-    32.99s  user  발화 시작: 혹시 예약도 가능해?
-    34.31s  <ret> 발화 (turn10 첫 프레임)
-    34.71s  agent 발화 시작: <ret> 예약 가능합니다. 아리아 레스토랑으로 예약해 드릴까요?
-    34.74s  user  발화 끝
-    36.15s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.84s]: (tool result) booking: confirmed for 2 people at Aria Restaurant, 7:00
-    38.37s  agent 발화 시작: 네, 아리아 레스토랑에 두 분, 저녁 일곱 시로 예약이 완료되었습니다.
-    38.54s  agent 발화 끝
-    42.72s  agent 발화 끝
-    43.95s  user  발화 시작: 와, 고마워.
-    45.35s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요!
-    45.38s  user  발화 끝
-    48.40s  agent 발화 끝
+     3.18s  <ret> 발화 (turn1 첫 프레임)
+     3.25s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다
+     3.37s  user  발화 끝
+     5.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.10s]: (tool result) latitude: -33.8568, longitude: 151.2153
+     7.01s  user  발화 시작: 응.
+     7.55s  user  발화 끝
+    10.35s  agent 발화 끝
+    10.45s  user  발화 시작: 음, 그럼 그 근처에 괜찮은 레스토랑 좀 찾아줄 수 있어?
+    14.70s  user  발화 끝
+    15.04s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 좋아하세요?
+    18.27s  agent 발화 끝
+    19.33s  user  발화 시작: 이탈리아 음식.
+    20.75s  user  발화 끝
+    21.02s  agent 발화 시작: 이탈리아 음식을 선호하시는군요. 근처에 괜찮은 이탈리아 레스토랑을 찾아볼게요.—
+    25.26s  user  발화 시작: 혹시 바닷가 근처에 있으면 더 좋을 것 같은데?
+    26.02s  agent 발화 끝
+    27.79s  <ret> 발화 (turn8 첫 프레임)
+    28.11s  agent 발화 시작: <ret> 벨라 비스타라는 이탈리아 레스토랑이 가장 가까운데, 거리는 영 점 오킬로미터입니다.
+    28.40s  user  발화 끝
+    29.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) restaurant: Bella Vista, cuisine: Italian, distance: 0.5
+    30.02s  user  발화 시작: 와.
+    30.70s  user  발화 끝
+    33.59s  agent 발화 시작: 벨라 비스타의 평점은 사 점 오점이고, 가격대는 중간 정도입니다. 예약이 필요할까요?
+    33.62s  agent 발화 끝
+    40.21s  agent 발화 끝
+    40.31s  user  발화 시작: 네, 두 명으로 예약해 줘. 내일 저녁 일곱시에.
+    44.95s  <ret> 발화 (turn12 첫 프레임)
+    45.10s  agent 발화 시작: <ret> 내일 저녁 일곱시에 벨라 비스타 레스토랑 두 분 예약이 확정되었습니다. 확인 번호는 구만 팔천칠백
+    45.29s  user  발화 끝
+    46.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: (tool result) reservation confirmed at Bella Vista for 2 people, tomor
+    50.50s  user  발화 시작: 어어.
+    51.13s  user  발화 끝
+    53.53s  agent 발화 끝
+    53.89s  user  발화 시작: 고마워.
+    54.71s  user  발화 끝

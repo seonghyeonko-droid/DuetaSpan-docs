@@ -61,12 +61,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] «interrupted» Hi Hugo, I'm Klen. It's good to connect with you. I understand you're planning a trip to New Zealand in October—
-[  5.67s][user ] «interrupts_prev» …and I'm trying to figure out the best way to get from Auckland to Queenstown.
-[  9.79s][moshi] Right, getting between those cities is a key part of planning. There are several options, including flying, driving, or taking a bus.
-[ 15.73s][user ] «backchannel» Mm-hmm.
-[ 17.64s][moshi] Flying is the quickest, around one hour and twenty minutes. (tool result) Auckland to Queenstown flights start at $159 CAD.
-[ 26.40s][user ] That sounds pretty fast, but I really prefer to see the countryside. Are the drives scenic?
-[ 31.55s][moshi] Absolutely. The drive is about six hundred and forty kilometers, offering stunning views. [2026-07-11] User prefers an aisle seat when traveling.
-[ 42.08s][moshi] Knowing you prefer an aisle seat, you’d have plenty of room to stretch on a longer drive.
-[ 46.93s][user ] That’s good to know. How long would the drive actually take, with stops?
+[  0.00s][moshi] Hi Hugo, I’m Klen. I understand you’re planning a trip to New Zealand in October— a fantastic choice!
+[  6.97s][user ] Yeah, it’s been a dream for a while. I’m starting to look at flights, but it’s a ⟨ret@11.68s⟩ bit overwhelming.
+[ 12.08s][moshi] It can be, certainly. To ⟦⚡SPAN@13.68s: [2026-07-11] User prefers an aisle seat when traveling.⟧ help narrow things down, do you have a preference for your seat on the flight?
+[ 17.54s][moshi] You do! You prefer an aisle seat when you travel. I can prioritize those for you.
+[ 21.23s][user ] «backchannel» Mm-hmm.
+[ 22.45s][moshi] «interrupted» Now, looking at flights to Auckland in October— there are several options. Some are direct, others have layovers— but the prices—
+[ 30.12s][user ] «interrupts_prev» …actually, before we get into prices, are there any airlines that are particularly good for long-haul flights?
+[ 35.69s][moshi] That’s a great question. Air New Zealand consistently receives high ratings for its long-haul service and comfort.
+[ 42.00s][user ] Okay, good to know. And are aisle seats usually available on Air New Zealand flights to Auckland?

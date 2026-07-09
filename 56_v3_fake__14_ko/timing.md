@@ -50,39 +50,41 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 맘마미아 영화에서 '나의 사랑, 나의 인생'이라는 노래를 누가 | S2 아, ABBA요? 그렇군요. | S3 와, 정말 대단하네요. | S4 아, 그렇군요. 알려주셔서 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 맘마미아 영화에서 'My Love, My Life' 노래를 누 | S2 아바요? 'Dancing Queen' 부른 팀 맞죠? | S3 혹시 아바 멤버 중에 여성분도 있었나요? | S4 그렇군요. 맘마미아 영화에 아바 노래가 많이 나왔었죠?
 
-     0.00s  user  발화 시작: 맘마미아 영화에서 '나의 사랑, 나의 인생'이라는 노래를 누가 썼는지 궁금해요.
-     5.13s  user  발화 끝
-     5.17s  agent 발화 시작: 아, 그 노래 정말 좋죠. 맘마미아 넘버들은 워낙 유명하잖아요.
-    10.03s  agent 발화 끝
-    10.07s  user  발화 시작: 네, 맞아요. 그 노래를 작사한 사람이 궁금해서요.
-    13.63s  <ret> 발화 (turn3 첫 프레임)
-    13.70s  agent 발화 시작: <ret> 그 노래는 스웨덴의 유명한 작곡가가 썼어요. '나의 사랑, 나의 인생'은 비외른 울바에우스가 작곡
-    13.82s  user  발화 끝
-    15.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.40s]: Björn Ulvaeus.
-    23.34s  agent 발화 끝
-    23.36s  user  발화 시작: 아, ABBA요? 그렇군요.
-    25.68s  <ret> 발화 (turn5 첫 프레임)
-    25.99s  agent 발화 시작: <ret> 비외른 울바에우스는 ABBA에서 기타를 연주하고 노래도 불렀어요. [happy]
-    26.08s  user  발화 끝
-    27.68s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.00s]: (tool result) AAPL: 170.34
-    30.87s  user  발화 시작: 그렇군요. ABBA는 저도 좋아해요. 다른 노래도 많이 썼나요?
-    30.99s  agent 발화 끝
-    35.41s  user  발화 끝
-    35.46s  agent 발화 시작: 네, 비외른 울바에우스는 ABBA의 많은 히트곡을 공동 작곡했어요. '댄싱 퀸'도 그의 작품 중 하나입니다.
-    42.64s  user  발화 시작: 와, 정말 대단하네요.
-    43.01s  agent 발화 끝
-    44.53s  user  발화 끝
-    44.57s  agent 발화 시작: 맞아요. 그의 음악은 전 세계적으로 많은 사랑을 받고 있죠. 새로운 도시에 정착하시면 음악을 통해 위로를 받
-    48.05s  user  발화 시작: 네.
-    48.69s  user  발화 끝
-    52.77s  agent 발화 끝
-    53.88s  user  발화 시작: 혹시 맘마미아 영화에 나오는 다른 노래들도 누가 썼는지 알 수 있을까요?
-    58.34s  agent 발화 시작: 맘마미아 영화에 나오는 노래들은 대부분 ABBA의 곡들이죠. 비외른 울바에우스와 베니 앤더슨이 함께 작곡한 
-    58.41s  user  발화 끝
-    61.16s  user  발화 시작: 네.
-    61.65s  user  발화 끝
-    66.50s  agent 발화 끝
-    66.58s  user  발화 시작: 아, 그렇군요. 알려주셔서 감사합니다.
-    69.54s  user  발화 끝
+     0.00s  user  발화 시작: 맘마미아 영화에서 'My Love, My Life' 노래를 누가 썼는지 궁금해요.
+     4.73s  <ret> 발화 (turn1 첫 프레임)
+     4.89s  agent 발화 시작: <ret> 아, 그 노래 정말 감동적이죠. 제가 알아봐 드릴게요.
+     4.91s  user  발화 끝
+     6.49s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.46s]: Björn Ulvaeus.
+     8.22s  agent 발화 시작: 'My Love, My Life'는 비외른 울바에우스 씨가 작곡하셨답니다.
+     8.35s  agent 발화 끝
+    12.50s  user  발화 시작: 비외른 울바에우스… 처음 듣는 이름인데, 다른 노래도 많이 만들었어요?
+    12.57s  agent 발화 끝
+    17.13s  <ret> 발화 (turn4 첫 프레임)
+    17.41s  user  발화 끝
+    17.44s  agent 발화 시작: <ret> 네, 비외른 울바에우스 씨는 아바(ABBA)의 멤버로 활동하며 수많은 히트곡을 만들었어요.
+    19.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: Björn Ulvaeus was a member of the Swedish music group ABBA.
+    23.71s  agent 발화 시작: 비외른 울바에우스 씨는 스웨덴 음악 그룹 아바의 멤버셨어요.
+    23.88s  agent 발화 끝
+    28.06s  agent 발화 끝
+    28.09s  user  발화 시작: 아바요? 'Dancing Queen' 부른 팀 맞죠?
+    30.83s  <ret> 발화 (turn7 첫 프레임)
+    30.91s  user  발화 끝
+    30.99s  agent 발화 시작: <ret> 맞아요. 'Dancing Queen'을 비롯해 정말 유명한 노래들이 많죠.
+    32.75s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=4.68s]: (tool result) ABBA stock is currently trading at $12.50.
+    35.43s  agent 발화 시작: [sigh] 아바 멤버로서 비외른 울바에우스 씨는 그룹의 성공에 큰 기여를 하셨답니다.
+    35.67s  agent 발화 끝
+    40.93s  user  발화 시작: 혹시 아바 멤버 중에 여성분도 있었나요?
+    41.03s  agent 발화 끝
+    43.16s  <ret> 발화 (turn10 첫 프레임)
+    43.48s  agent 발화 시작: <ret> 네, 아바에는 아그네타 펠트스코그와 아니카 팔리사 씨라는 두 분의 여성 멤버가 있었어요.
+    43.56s  user  발화 끝
+    44.68s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.62s]: Agnetha Fältskog and Anni-Frid Lyngstad were the two female members of
+    49.90s  agent 발화 시작: 아그네타 펠트스코그 씨와 아니카 팔리사 씨가 아바의 여성 멤버셨어요.
+    50.09s  agent 발화 끝
+    54.99s  agent 발화 끝
+    55.80s  user  발화 시작: 그렇군요. 맘마미아 영화에 아바 노래가 많이 나왔었죠?
+    60.37s  agent 발화 시작: 네, 맘마미아 영화는 아바의 노래들로 가득 채워져 있어서 정말 신나게 볼 수 있어요.
+    60.42s  user  발화 끝
+    65.55s  agent 발화 끝

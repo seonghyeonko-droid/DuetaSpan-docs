@@ -58,53 +58,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품에 초점을 맞춰 자세한 지도를 만들어 줘. | S2 아이폰 서비스는 정확히 뭐가 들어가 있는데? | S3 잠깐만, 애플케어 플러스 말고 다른 보증 프로그램도 있어? | S4 그럼 지금 바로 아이폰 십오 프로 맥스, 이백오십육기가, 블랙
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아니, 그 전에 혹시 지도 미리보기를 볼 수는 있어? | S3 링크 열어봤는데, 아이폰 관련 부분만 확대해서 볼 수 있어? | S4 고마워. 덕분에 시간을 많이 절약했네.
 
-     0.00s  user  발화 시작: 애플 웹사이트 제품에 초점을 맞춰 자세한 지도를 만들어 줘.
-     3.61s  <ret> 발화 (turn1 첫 프레임)
-     3.85s  agent 발화 시작: <ret> 물론이죠. tavily-map 도구를 사용해서 애플 웹사이트의 제품 관련 상세 지도를 생성해 드릴
-     3.88s  user  발화 끝
-     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.31s]: (tool result) Map created with 23 product categories identified.
-    10.99s  agent 발화 시작: 애플 웹사이트에서 제품 관련 카테고리 스물세 개를 식별하여 지도를 생성했습니다.
-    11.16s  agent 발화 끝
-    13.05s  user  발화 시작: 그치.
-    13.68s  user  발화 끝
-    16.16s  user  발화 시작: 스물세 개나 돼? 아이폰은 몇 개 카테고리로 분류됐어?
-    16.17s  agent 발화 끝
-    19.86s  agent 발화 시작: 아이폰 관련 카테고리는 총 세 개로 분류되었어요. 아이폰, 아이폰 액세서리, 그리고 아이폰 서비스입니다.
-    20.04s  user  발화 끝
-    22.69s  user  발화 시작: 어어.
-    23.50s  user  발화 끝
-    27.00s  agent 발화 끝
-    28.21s  user  발화 시작: 아이폰 서비스는 정확히 뭐가 들어가 있는데?
-    30.98s  agent 발화 시작: 아이폰 서비스는 애플케어 플러스, 아이폰 업그레이드 프로그램, 그리고 아이폰 스토리지 백업—
-    31.26s  user  발화 끝
-    36.07s  user  발화 시작: 잠깐만, 애플케어 플러스 말고 다른 보증 프로그램도 있어?
-    36.91s  agent 발화 끝
-    40.16s  <ret> 발화 (turn10 첫 프레임)
-    40.42s  user  발화 끝
-    40.48s  agent 발화 시작: <ret> 네, 애플케어 플러스 외에도 제한 보증이 제공됩니다.
-    41.52s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.70s]: (tool result) Limited warranty details: 1 year hardware, 90 days softw
-    43.98s  agent 발화 시작: 제한 보증은 하드웨어 일 년, 소프트웨어 구십 일 동안 적용됩니다.
-    44.18s  agent 발화 끝
-    46.36s  user  발화 시작: 그래.
-    46.72s  user  발화 끝
-    48.43s  agent 발화 시작: 추가적으로, 애플은 제품 교환 및 환불 정책도 운영하고 있습니다.
-    48.61s  agent 발화 끝
-    53.05s  user  발화 시작: 환불 정책은 어떻게 돼? 아이폰을 사자마자 마음이 바뀌면 환불받을 수 있어?
-    53.15s  agent 발화 끝
-    57.98s  <ret> 발화 (turn15 첫 프레임)
-    58.30s  agent 발화 시작: <ret> 네, 구매 후 십사일 이내에 환불이 가능합니다. 단, 제품 상태가 양호해야 합니다.
-    58.42s  user  발화 끝
-    59.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.10s]: (tool result) 14-day return policy, product must be undamaged.
-    63.27s  agent 발화 시작: 제품 손상 없이 구매 후 십사일 이내에 환불이 가능합니다.
-    63.40s  agent 발화 끝
-    66.83s  agent 발화 끝
-    66.83s  user  발화 시작: 그럼 지금 바로 아이폰 십오 프로 맥스, 이백오십육기가, 블랙 색상으로 주문하고, 마음이 바뀌면 환불받을 수
-    74.75s  <ret> 발화 (turn18 첫 프레임)
-    75.14s  agent 발화 시작: <ret> 네, 그렇게 하실 수 있습니다. 주문하시겠어요?
-    75.36s  user  발화 끝
-    75.87s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.91s]: (tool result) Order placed. Confirmation number: 87654321.
-    77.88s  agent 발화 시작: 주문이 완료되었습니다. 확인 번호는 팔 칠 육 오 사 삼 이 일입니다.
-    78.05s  agent 발화 끝
-    83.85s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
+     3.55s  <ret> 발화 (turn1 첫 프레임)
+     3.79s  agent 발화 시작: <ret> 물론입니다. tavily-map을 이용해서 애플 웹사이트의 제품 섹션에 대한 상세 지도를 생성해 
+     3.84s  user  발화 끝
+     5.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Map created: Apple website, products section, 27 nodes i
+    10.95s  agent 발화 시작: 애플 웹사이트 제품 섹션에 대한 지도가 생성되었고, 총 스물일곱 개의 노드를 확인했습니다.
+    11.11s  agent 발화 끝
+    13.45s  user  발화 시작: 그치.
+    14.08s  user  발화 끝
+    17.07s  agent 발화 끝
+    17.15s  user  발화 시작: 스물일곱 개나? 좀 많네. 아이폰 관련 노드는 몇 개야?
+    21.86s  agent 발화 시작: 아이폰 관련 노드 수를 확인해 보겠습니다. 잠시만 기다려 주세요—
+    22.05s  user  발화 끝
+    25.68s  user  발화 시작: 아니, 그 전에 혹시 지도 미리보기를 볼 수는 있어?
+    26.40s  agent 발화 끝
+    29.45s  <ret> 발화 (turn7 첫 프레임)
+    29.51s  user  발화 끝
+    29.52s  agent 발화 시작: <ret> 물론입니다. tavily-map에서 생성된 지도를 미리 보여드릴 수 있습니다.
+    30.41s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.26s]: (tool result) Preview link: https://tavily.com/maps/apple_products_map
+    33.62s  agent 발화 시작: 지도 미리보기 링크는 이 주소입니다. https://tavily.com/maps/apple_products_
+    33.78s  agent 발화 끝
+    37.82s  user  발화 시작: 그래.
+    38.40s  user  발화 끝
+    41.45s  agent 발화 끝
+    42.11s  user  발화 시작: 링크 열어봤는데, 아이폰 관련 부분만 확대해서 볼 수 있어?
+    46.33s  <ret> 발화 (turn11 첫 프레임)
+    46.73s  agent 발화 시작: <ret> 네, 물론입니다. tavily-map에서 아이폰 관련 노드만 확대하여 보여드릴 수 있습니다.
+    46.84s  user  발화 끝
+    48.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (tool result) Map zoomed: Apple website, iPhone section highlighted.
+    52.39s  agent 발화 시작: 아이폰 섹션이 강조된 상태로 지도를 확대했습니다.
+    52.61s  agent 발화 끝
+    53.61s  user  발화 시작: 어어.
+    54.42s  user  발화 끝
+    55.49s  user  발화 시작: 오, 아주 좋네. 아이폰 십오 프로 모델의 상세 정보 페이지로 바로 이동하게 할 수 있어?
+    55.63s  agent 발화 끝
+    60.87s  <ret> 발화 (turn15 첫 프레임)
+    60.95s  agent 발화 시작: <ret> 아이폰 십오 프로 상세 정보 페이지로 이동합니다.
+    61.09s  user  발화 끝
+    62.39s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.18s]: (tool result) Navigation initiated: Redirecting to https://www.apple.c
+    63.86s  user  발화 시작: 고마워. 덕분에 시간을 많이 절약했네.
+    64.14s  agent 발화 끝
+    66.60s  agent 발화 시작: 천만에요. 여행 계획을 돕는 건 제 일이니까요. 다른 도움이 필요하시면 언제든지 말씀해 주세요.
+    66.76s  user  발화 끝
+    73.74s  agent 발화 끝

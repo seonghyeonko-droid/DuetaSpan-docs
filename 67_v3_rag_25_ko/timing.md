@@ -63,117 +63,107 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지 선수, 혹시 같이 운동하는 스포츠가  | S2 아, 그렇군요. 혹시 두 분이 같이 출전한 경기 기록은 있어요 | S3 밥 브라이언과 마이크 브라이언은 들어본 것 같아요. 그분들은  | S4 아, 그렇군요. 테니스 선수들 세계는 정말 넓네요.
+# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지 선수, 혹시 같이 운동하는 종목이 뭐 | S2 음… 백육십삼위면 그렇게 높은 랭킹은 아니네요? | S3 아, 팔강에서 졌군요. 그래도 올림픽에 나간 것만으로도 대단하 | S4 맞는 말이네요. 두 분이 앞으로도 좋은 활약 이어가길 바라야겠
 
-     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지 선수, 혹시 같이 운동하는 스포츠가 뭐예요?
-     6.12s  user  발화 끝
-     6.21s  <ret> 발화 (turn1 첫 프레임)
-     6.37s  agent 발화 시작: <ret> 음, 두 분이 함께하는 스포츠에 대해 알아볼까요?
-     7.80s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.09s]: [source: Wikipedia] Jack Sock and Raffaella Reggi both compete in the 
-     9.33s  agent 발화 시작: 두 분 모두 테니스 선수로 활동하고 계세요.
-     9.46s  agent 발화 끝
-    10.31s  user  발화 시작: 네.
-    10.94s  user  발화 끝
-    12.69s  user  발화 시작: 테니스요? 잭 소크는 알겠는데, 라파엘라 레지는 처음 들어봐요. 유명한 선수예요?
-    12.71s  agent 발화 끝
-    20.05s  <ret> 발화 (turn5 첫 프레임)
-    20.21s  agent 발화 시작: <ret> 라파엘라 레지 선수도 꽤 알려진 분이세요.
-    20.34s  user  발화 끝
-    21.18s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.96s]: [source: WTA Tennis] Raffaella Reggi is an Italian former professional
-    23.10s  agent 발화 시작: 라파엘라 레지 선수는 한때 세계 랭킹 이십육위까지 올랐던 이탈리아의 프로 테니스 선수예요.
-    23.18s  agent 발화 끝
-    29.81s  agent 발화 끝
-    30.65s  user  발화 시작: 오, 이십육위면 꽤 잘하는 거네요. 그럼 잭 소크 선수도 비슷한 랭킹이었나요?
-    35.93s  <ret> 발화 (turn8 첫 프레임)
-    36.32s  agent 발화 시작: <ret> 잭 소크 선수도 한때 높은 랭킹을 기록했었죠.
-    36.54s  user  발화 끝
-    37.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.61s]: [source: ATP Tour] Jack Sock achieved a career-high ATP singles rankin
-    39.70s  agent 발화 시작: 잭 소크 선수는 이천십칠년 십일월에 ATP 단식 랭킹 팔위까지 올랐었어요.
-    39.93s  agent 발화 끝
-    45.39s  user  발화 시작: 팔위면 라파엘라 레지 선수보다 더 높네요. 두 분은 언제부터 같이 운동했어요?
-    45.58s  agent 발화 끝
-    51.51s  <ret> 발화 (turn11 첫 프레임)
-    51.66s  agent 발화 시작: <ret> 두 분이 언제부터 함께 운동했는지 정확한 정보는 찾기 어렵네요.
-    51.82s  user  발화 끝
-    53.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (no information found)
-    55.81s  agent 발화 시작: 죄송해요. 두 분의 협업 시작 시점에 대한 정보는 찾을 수 없었어요.
-    56.01s  agent 발화 끝
-    61.46s  agent 발화 끝
-    61.48s  user  발화 시작: 아, 그렇군요. 혹시 두 분이 같이 출전한 경기 기록은 있어요?
-    66.34s  user  발화 끝
-    66.40s  <ret> 발화 (turn14 첫 프레임)
-    66.63s  agent 발화 시작: <ret> 네, 두 분이 혼합 복식으로 출전한 경기가 기록되어 있습니다.
-    68.16s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.07s]: [source: ESPN] Jack Sock and Raffaella Reggi partnered in mixed double
-    70.57s  agent 발화 시작: 잭 소크 선수와 라파엘라 레지 선수는 이천이십년 도쿄 올림픽 혼합 복식에 함께 출전했어요.
-    70.70s  agent 발화 끝
-    77.35s  user  발화 시작: 도쿄 올림픽이요? 결과는 어땠어요?
-    77.42s  agent 발화 끝
-    80.04s  <ret> 발화 (turn17 첫 프레임)
-    80.35s  agent 발화 시작: <ret> 두 분은 도쿄 올림픽 혼합 복식에서 좋은 성적을 거두지는 못했습니다.
-    80.49s  user  발화 끝
-    81.24s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.00s]: [source: Olympics.com] Sock and Reggi lost in the first round of the m
-    85.15s  agent 발화 시작: 두 분은 도쿄 올림픽 혼합 복식 일라운드에서 패배했어요.
-    85.34s  agent 발화 끝
-    88.39s  user  발화 시작: 진짜요?
-    89.13s  user  발화 시작: 아쉽네요. 그럼 두 분 외에 다른 유명한 테니스 듀오도 많을까요?
-    89.36s  user  발화 끝
-    89.50s  agent 발화 끝
-    94.30s  <ret> 발화 (turn21 첫 프레임)
-    94.70s  agent 발화 시작: <ret> 물론이죠. 역사적으로 유명한 테니스 듀오는 정말 많습니다.
-    94.92s  user  발화 끝
-    96.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: [source: Britannica] Bob and Mike Bryan are widely regarded as one of 
-    99.22s  agent 발화 시작: 밥 브라이언과 마이크 브라이언은 테니스 역사상 최고의 남자 복식 조중 하나로 꼽힙니다.
-    99.28s  agent 발화 끝
-   105.66s  agent 발화 끝
-   105.69s  user  발화 시작: 밥 브라이언과 마이크 브라이언은 들어본 것 같아요. 그분들은 어떤 점이 유명했어요?
-   112.14s  <ret> 발화 (turn24 첫 프레임)
-   112.37s  agent 발화 시작: <ret> 그분들은 엄청난 꾸준함과 뛰어난 호흡으로 유명했죠.
-   112.50s  user  발화 끝
-   114.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: [source: USTA] Bob and Mike Bryan won 119 ATP doubles titles, the most
-   116.04s  agent 발화 시작: 밥 브라이언과 마이크 브라이언은 오픈 시대 최다인 ATP 복식 타이틀 백십구개를 획득했어요.
-   116.20s  agent 발화 끝
-   121.02s  user  발화 시작: 그렇군요.
-   121.93s  user  발화 끝
-   123.56s  agent 발화 끝
-   124.28s  user  발화 시작: 백십구개요? 대단하네요! 그럼 그분들도 혼합 복식도 같이 출전했었나요?
-   130.47s  <ret> 발화 (turn28 첫 프레임)
-   130.86s  agent 발화 시작: <ret> 네, 밥 브라이언과 마이크 브라이언도 혼합 복식에 출전한 적이 있습니다.
-   131.04s  user  발화 끝
-   132.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: [source: Tennis.com] The Bryan brothers won the mixed doubles title at
-   135.50s  agent 발화 시작: 브라이언 형제는 이천삼년 US 오픈 혼합 복식에서 우승했어요.
-   135.67s  agent 발화 끝
-   139.09s  user  발화 시작: 그렇죠.
-   139.90s  user  발화 끝
-   141.01s  agent 발화 끝
-   141.09s  user  발화 시작: 우승까지 했군요. 역시 대단하네요. 혹시 잭 소크 선수도 혼합 복식 우승 경험이 있을까요?
-   148.41s  <ret> 발화 (turn32 첫 프레임)
-   148.65s  agent 발화 시작: <ret> 잭 소크 선수도 혼합 복식에서 우승한 경험이 있습니다.
-   148.88s  user  발화 끝
-   150.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: [source: US Open] Jack Sock won the 2018 US Open mixed doubles title w
-   152.20s  agent 발화 시작: 잭 소크 선수는 앨리 키크 선수와 함께 이천십팔년 US 오픈 혼합 복식에서 우승했어요.
-   152.35s  agent 발화 끝
-   158.68s  user  발화 시작: 앨리 키크 선수랑 같이요? 새로운 정보네요. 그럼 라파엘라 레지 선수도 혼합 복식 우승 경험이 있을까요?
-   158.74s  agent 발화 끝
-   166.99s  <ret> 발화 (turn35 첫 프레임)
-   167.30s  agent 발화 시작: <ret> 라파엘라 레지 선수는 혼합 복식에서 우승한 기록은 찾을 수 없었습니다.
-   167.39s  user  발화 끝
-   168.43s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.00s]: (no information found)
-   172.18s  agent 발화 시작: 죄송해요. 라파엘라 레지 선수의 혼합 복식 우승 기록은 찾을 수 없었어요.
-   172.30s  agent 발화 끝
-   177.73s  agent 발화 끝
-   178.18s  user  발화 시작: 아, 그렇군요. 테니스 선수들 세계는 정말 넓네요.
-   182.14s  agent 발화 시작: 그렇죠. 테니스에는 정말 훌륭한 선수들이 많이 있답니다.
-   182.29s  user  발화 끝
-   184.69s  user  발화 시작: 음.
-   185.23s  user  발화 끝
-   186.53s  agent 발화 끝
-   187.16s  user  발화 시작: 네, 오늘 새로운 걸 많이 알게 됐어요. 감사합니다.
-   191.59s  user  발화 끝
-   191.83s  agent 발화 시작: 도움이 되었다니 기쁩니다. 테니스에 대해 더 궁금한 점이 있으신가요?
-   193.80s  user  발화 시작: 아.
-   194.52s  user  발화 끝
-   197.31s  user  발화 시작: 아니요, 오늘은 여기까지 할게요.
-   197.34s  agent 발화 끝
-   200.59s  user  발화 끝
-   200.60s  agent 발화 시작: [happy] 그럼 다음에 또 찾아주세요.
-   202.59s  agent 발화 끝
+     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지 선수, 혹시 같이 운동하는 종목이 뭐예요?
+     5.93s  <ret> 발화 (turn1 첫 프레임)
+     6.08s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수는 이천이십년 하계 올림픽에서 혼합 복식 테니스 경기에 함께 출
+     6.11s  user  발화 끝
+     7.37s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.46s]: [source: Wikipedia] Jack Sock and Raffaella Reggi competed together in
+    10.36s  user  발화 시작: 와.
+    10.99s  user  발화 끝
+    13.47s  user  발화 시작: 테니스요? 음… 그 두 분이 테니스를 친다는 게 좀 의외네요.
+    13.53s  agent 발화 끝
+    18.09s  user  발화 끝
+    18.18s  agent 발화 시작: 새로운 사실에 놀라시는 건 당연해요. 두 분의 조합은 꽤 흥미로운 부분이죠.
+    23.79s  agent 발화 끝
+    25.43s  user  발화 시작: 근데 왜 하필 테니스일까요? 다른 스포츠도 같이 할 수 있잖아요.
+    30.31s  <ret> 발화 (turn6 첫 프레임)
+    30.38s  agent 발화 시작: <ret> 잭 소크 선수는 세계 랭킹 팔위까지 올랐던 미국의 프로 테니스 선수예요.
+    30.57s  user  발화 끝
+    32.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [source: ATP Tour] Jack Sock is an American professional tennis player
+    35.68s  user  발화 시작: 아, 잭 소크 선수는 테니스 선수였군요. 그럼 라파엘라 레지 선수도 테니스를 치는 건 당연한 건가요?
+    35.75s  agent 발화 끝
+    42.50s  <ret> 발화 (turn8 첫 프레임)
+    42.89s  agent 발화 시작: <ret> 라파엘라 레지 선수는 최고 세계 랭킹 백육십삼위를 기록했던 이탈리아의 프로 테니스 선수 출신이에요
+    43.10s  user  발화 끝
+    44.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: [source: ITF Tennis] Raffaella Reggi is an Italian former professional
+    50.77s  agent 발화 끝
+    50.81s  user  발화 시작: 음… 백육십삼위면 그렇게 높은 랭킹은 아니네요?
+    55.24s  agent 발화 시작: 랭킹이 전부는 아니에요. 두 분 모두 훌륭한 테니스 선수들이죠.
+    55.38s  user  발화 끝
+    57.59s  user  발화 시작: 네.
+    58.23s  user  발화 끝
+    59.77s  agent 발화 끝
+    61.05s  user  발화 시작: 그래도 잭 소크 선수보다는 낮은 랭킹이네요. 혹시 두 분이 테니스 외에 다른 스포츠도 같이 하나요?
+    68.37s  <ret> 발화 (turn13 첫 프레임)
+    68.52s  agent 발화 시작: <ret> 두 분이 함께하는 다른 스포츠 활동에 대한 정보는 찾을 수 없었어요.
+    68.69s  user  발화 끝
+    69.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.48s]: (no information found)
+    72.87s  agent 발화 시작: 현재까지 잭 소크 선수와 라파엘라 레지 선수가 함께하는 다른 스포츠 활동에 대한 정보는 확인되지 않았어요.
+    73.00s  agent 발화 끝
+    80.00s  agent 발화 끝
+    80.08s  user  발화 시작: 알겠어요. 그럼 두 분이 테니스 경기를 같이 한 적은 얼마나 있나요?
+    84.07s  <ret> 발화 (turn16 첫 프레임)
+    84.38s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수는 도쿄 이천이십 올림픽에서 혼합 복식으로 자국을 대표했어요.
+    84.53s  user  발화 끝
+    85.35s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.56s]: [source: Olympics.com] Jack Sock and Raffaella Reggi represented their
+    91.94s  agent 발화 끝
+    92.01s  user  발화 시작: 올림픽에서 같이 출전했군요. 성적은 어땠어요?
+    95.60s  <ret> 발화 (turn18 첫 프레임)
+    95.84s  agent 발화 시작: <ret> 올림픽에서의 성적은 아쉽게도 메달 획득으로 이어지진 못했어요.
+    95.98s  user  발화 끝
+    97.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: [source: ESPN] Sock and Reggi lost in the quarter-finals of the mixed 
+   100.51s  agent 발화 시작: 잭 소크 선수와 라파엘라 레지 선수는 도쿄 올림픽 혼합 복식에서 팔강에서 패배했어요.
+   100.65s  agent 발화 끝
+   104.77s  user  발화 시작: 그렇군요.
+   105.73s  user  발화 끝
+   107.04s  agent 발화 끝
+   107.72s  user  발화 시작: 아, 팔강에서 졌군요. 그래도 올림픽에 나간 것만으로도 대단하네요.
+   112.44s  agent 발화 시작: 맞아요. 올림픽 출전 자체가 큰 성과죠.
+   112.63s  user  발화 끝
+   114.37s  user  발화 시작: 음.
+   114.99s  user  발화 끝
+   115.58s  agent 발화 끝
+   116.14s  user  발화 시작: 혹시 두 분이 테니스를 시작하게 된 계기가 같은 건가요?
+   120.38s  <ret> 발화 (turn25 첫 프레임)
+   120.45s  agent 발화 시작: <ret> 두 분의 테니스 시작 계기에 대한 직접적인 연관성은 찾을 수 없었어요.
+   120.63s  user  발화 끝
+   122.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (no information found)
+   125.24s  agent 발화 시작: 잭 소크 선수와 라파엘라 레지 선수가 테니스를 시작하게 된 계기는 서로 연관성이 없는 것으로 보입니다.
+   125.31s  agent 발화 끝
+   132.93s  agent 발화 끝
+   132.96s  user  발화 시작: 그렇군요. 두 분의 테니스 스타일은 어떤가요? 서로 보완되는 스타일인가요?
+   138.85s  <ret> 발화 (turn28 첫 프레임)
+   139.00s  agent 발화 시작: <ret> 두 분의 플레이 스타일에 대한 자세한 분석은 찾기 어려웠어요.
+   139.22s  user  발화 끝
+   140.69s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.44s]: (no information found)
+   143.31s  agent 발화 시작: 잭 소크 선수와 라파엘라 레지 선수의 테니스 플레이 스타일에 대한 상세 정보는 현재까지 알려진 바가 없어요.
+   143.45s  agent 발화 끝
+   150.60s  user  발화 시작: 아쉽네요. 그럼 두 분이 함께 테니스를 하면서 가장 중요하게 생각하는 점은 무엇일까요?
+   150.78s  agent 발화 끝
+   157.96s  user  발화 끝
+   158.36s  agent 발화 시작: 함께하는 팀워크와 서로에 대한 신뢰가 중요할 것 같아요.
+   162.53s  agent 발화 끝
+   163.80s  user  발화 시작: 맞는 말이네요. 두 분이 앞으로도 좋은 활약 이어가길 바라야겠어요.
+   169.03s  user  발화 끝
+   169.06s  agent 발화 시작: 두 분의 미래를 응원하는 마음은 정말 멋지네요.
+   171.09s  user  발화 시작: 음.
+   171.71s  user  발화 끝
+   172.67s  agent 발화 끝
+   172.81s  user  발화 시작: 네, 저도 그렇게 생각해요. 혹시 다른 테니스 선수들에 대한 정보도 알려주실 수 있나요?
+   178.55s  user  발화 끝
+   178.59s  agent 발화 시작: 물론입니다. 어떤 선수를 알고 싶으신가요?
+   181.59s  user  발화 시작: 음… 노박 조코비치 선수에 대해 알고 싶어요.
+   181.64s  agent 발화 끝
+   185.38s  <ret> 발화 (turn38 첫 프레임)
+   185.77s  agent 발화 시작: <ret> 노박 조코비치 선수는 역사상 가장 많은 스물네개의 그랜드 슬램 남자 단식 우승 타이틀을 획득했어요
+   185.85s  user  발화 끝
+   187.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: [source: Britannica] Novak Djokovic is a Serbian professional tennis p
+   188.51s  user  발화 시작: 네.
+   189.09s  user  발화 끝
+   192.74s  user  발화 시작: 와, 스물네개나요? 정말 대단하네요.
+   192.91s  agent 발화 끝
+   195.67s  agent 발화 시작: 네, 정말 놀라운 기록이죠. 그의 업적은 앞으로도 오랫동안 회자될 거예요.
+   195.88s  user  발화 끝
+   201.00s  agent 발화 끝

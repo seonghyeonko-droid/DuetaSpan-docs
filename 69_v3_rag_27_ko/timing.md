@@ -62,28 +62,24 @@
 
 
      0.00s  user  발화 시작: 럭스 아우룬케 작곡가가 언제 태어났는지 궁금해요.
-     3.23s  user  발화 끝
-     3.38s  <ret> 발화 (turn1 첫 프레임)
-     3.44s  agent 발화 시작: <ret> 그 점에 대해서는— 럭스 아우룬케는 천구백칠십년에 태어났어요.
-     3.94s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.96s]: [source: Britannica] Lux Aurunque was born in nineteen seventy.
-     5.85s  user  발화 시작: 예.
-     6.54s  user  발화 끝
-     8.02s  agent 발화 끝
-     8.36s  user  발화 시작: 아, 그분이 현대 음악가였어요?
-     9.81s  <ret> 발화 (turn4 첫 프레임)
-    10.21s  agent 발화 시작: <ret> 네, 럭스 아우룬케는 현대 음악계에 큰 영향을 미쳤죠.
-    10.44s  user  발화 끝
-    10.69s  ⚡SPAN 주입 [d'=0.88s / d_lead=3.75s]: [source: AllMusic] Lux Aurunque’s compositions are known for their exp
-    13.82s  agent 발화 시작: 럭스 아우룬케의 곡들은 실험적인 성향과 전자 음악 요소를 특징으로 해요.
-    13.96s  agent 발화 끝
-    16.97s  user  발화 시작: 음.
-    17.55s  user  발화 끝
-    19.29s  agent 발화 끝
-    19.54s  user  발화 시작: 혹시 다른 작품도 많이 만들었나요?
-    21.47s  <ret> 발화 (turn8 첫 프레임)
-    21.71s  agent 발화 시작: <ret> 네, 럭스 아우룬케는 다양한 장르의 작품을 남겼어요.
-    21.80s  user  발화 끝
-    23.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: [source: Discogs] Lux Aurunque released over fifty albums throughout h
-    25.43s  agent 발화 시작: 럭스 아우룬케는 생애 동안 쉰 곡이 넘는 앨범을 발표했고, 앰비언트부터 인더스트리얼까지 다양한 장르를 아우렀
-    25.55s  agent 발화 끝
-    33.54s  agent 발화 끝
+     3.56s  user  발화 끝
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     3.74s  agent 발화 시작: <ret> 럭스 아우룬케는 일구칠공년에 태어났습니다.
+     4.94s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.42s]: [source: Britannica] Lux Aurunque was born in 1970 and is known for hi
+     7.05s  agent 발화 시작: 일구칠공년에 태어났다는 기록이 있습니다. 전자 음악 분야에서 혁신적인 작품으로 알려져 있습니다.
+     7.16s  agent 발화 끝
+    13.39s  agent 발화 끝
+    13.81s  user  발화 시작: 아, 혹시 그분이 어떤 스타일의 음악을 주로 하시는지 알 수 있을까요?
+    17.78s  <ret> 발화 (turn4 첫 프레임)
+    17.93s  agent 발화 시작: <ret> 주변음을 바탕으로 글리치, IDM 리듬을 혼합한 독특한 음향 풍경을 만들어내신다고 합니다.
+    18.16s  user  발화 끝
+    19.06s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.67s]: [source: AllMusic] Lux Aurunque's music blends ambient textures with g
+    21.34s  user  발화 시작: 네.
+    21.88s  user  발화 끝
+    24.30s  <ret> 발화 (turn6 첫 프레임)
+    24.53s  agent 발화 시작: <ret> 그의 음악은 대중적으로 큰 인기를 얻었지는 않았지만, 평론가들 사이에서는 높은 평가를 받고 있습니
+    24.60s  agent 발화 끝
+    26.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: [source: Resident Advisor] While not a mainstream artist, Lux Aurunque
+    30.73s  agent 발화 시작: 주류 음악가라고 할 수는 없지만, 실험적인 사운드 디자인으로 평론가들의 찬사를 받고 있습니다.
+    30.88s  agent 발화 끝
+    36.28s  agent 발화 끝

@@ -68,73 +68,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, uh, I was reading about Italy  | S2 Strombolian… what does that even m | S3 Seismic activity… so, earthquakes? | S4 I can imagine. So, is it… is it a 
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about Pompeii…  | S2 Strombolian… what does that even * | S3 Closely monitored… that sounds a l | S4 Oh. Okay. Is there— is there a way
 
-     0.00s  user  발화 시작: So, uh, I was reading about Italy and… I was wondering, when
-     5.97s  <ret> 발화 (turn1 첫 프레임)
-     6.20s  agent 발화 시작: <ret> That’s a good question. It’s fascinating to think abou
-     6.44s  user  발화 끝
-     7.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Wikipedia] Mount Vesuvius last erupted in March 1944.
-    10.91s  agent 발화 시작: The last eruption of Mount Vesuvius occurred in March of nin
-    10.92s  agent 발화 끝
-    15.38s  user  발화 시작: Nineteen forty-four… wow. That’s… relatively recent, isn’t i
-    15.40s  agent 발화 끝
-    19.44s  agent 발화 시작: It is, considering its long history. It’s a reminder that th
-    19.54s  user  발화 끝
-    25.70s  agent 발화 끝
-    26.91s  user  발화 시작: I— I mean, was that a big eruption? Like, Pompeii big?
-    30.37s  <ret> 발화 (turn6 첫 프레임)
-    30.52s  agent 발화 시작: <ret> No, it wasn't on the scale of the eruption that destro
-    30.66s  user  발화 끝
-    32.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: [source: Smithsonian Institution] The 1944 eruption was Strombolian, p
-    34.51s  agent 발화 끝
-    34.55s  agent 발화 시작: The nineteen forty-four eruption was Strombolian, creating l
-    41.58s  agent 발화 끝
-    41.63s  user  발화 시작: Strombolian… what does that even mean?
-    44.03s  user  발화 끝
-    44.31s  agent 발화 시작: It refers to a specific style of eruption, generally less vi
-    49.32s  agent 발화 끝
-    49.34s  user  발화 시작: Right. Okay. So, uh, what’s the risk of it erupting *again*?
-    52.90s  <ret> 발화 (turn11 첫 프레임)
-    52.97s  agent 발화 시작: <ret> That’s a very valid concern, and scientists monitor Ve
-    53.05s  user  발화 끝
-    53.94s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.68s]: [source: Vesuvius Observatory] Vesuvius is an active volcano with a mo
-    57.57s  agent 발화 시작: Scientists assess Vesuvius as an active volcano with a moder
-    57.65s  agent 발화 끝
-    59.82s  user  발화 시작: Yeah.
-    60.17s  user  발화 끝
-    63.51s  agent 발화 시작: The observatory continuously analyzes seismic activity and g
-    63.59s  agent 발화 끝
-    69.54s  agent 발화 끝
-    69.94s  user  발화 시작: Seismic activity… so, earthquakes? Are there a lot of earthq
-    74.02s  <ret> 발화 (turn16 첫 프레임)
-    74.25s  agent 발화 시작: <ret> There is frequent seismic activity, though most are sm
-    74.43s  user  발화 끝
-    76.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.94s]: [source: INGV (Italian National Institute of Geophysics and Volcanolog
-    79.10s  agent 발화 시작: Frequent small earthquakes occur near Vesuvius, with larger 
-    79.19s  agent 발화 끝
-    82.33s  user  발화 시작: Yeah.
-    82.92s  user  발화 끝
-    83.85s  agent 발화 끝
-    84.17s  user  발화 시작: Okay, that’s… somewhat reassuring. But what about the people
-    88.22s  agent 발화 시작: Evacuation plans are in place for the surrounding areas, and
-    88.29s  user  발화 끝
-    93.45s  agent 발화 끝
-    93.50s  user  발화 시작: Evacuation plans… that sounds stressful. [sigh]
-    97.19s  agent 발화 시작: It’s understandable that it would be a source of stress for 
-    97.33s  user  발화 끝
-   102.65s  agent 발화 끝
-   102.69s  user  발화 시작: I can imagine. So, is it… is it a good idea to visit, then?
-   106.58s  <ret> 발화 (turn24 첫 프레임)
-   106.63s  agent 발화 시작: <ret> Visiting Vesuvius is certainly possible, and it’s a po
-   106.68s  user  발화 끝
-   107.70s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.82s]: [source: Campania Region Tourism] Vesuvius National Park receives over
-   111.45s  agent 발화 끝
-   111.54s  agent 발화 시작: Vesuvius National Park welcomes over five hundred thousand v
-   114.75s  user  발화 시작: Right.
-   115.25s  user  발화 끝
-   116.45s  agent 발화 끝
-   118.58s  user  발화 시작: Half a million… wow. Okay. I think that's all I needed to kn
-   123.01s  agent 발화 시작: Wonderful. It’s good to be informed, and to acknowledge the 
-   123.21s  user  발화 끝
-   128.62s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about Pompeii… and it got me thinking. Wh
+     4.98s  <ret> 발화 (turn1 첫 프레임)
+     5.21s  agent 발화 시작: <ret> Vesuvius’s most recent eruption occurred in March of n
+     5.46s  user  발화 끝
+     6.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: [source: Wikipedia] Mount Vesuvius last erupted in March 1944 during W
+    11.51s  agent 발화 끝
+    12.97s  user  발화 시작: Nineteen forty-four… wow. That’s… relatively recent, I guess
+    18.02s  user  발화 끝
+    18.05s  agent 발화 시작: It is, certainly, within living memory for some. It's good t
+    25.97s  agent 발화 끝
+    26.96s  user  발화 시작: Right. Uh, was it— was it a big eruption, like the one that 
+    30.86s  <ret> 발화 (turn5 첫 프레임)
+    30.92s  agent 발화 시작: <ret> It wasn’t on the scale of the seventy-nine eruption, t
+    30.99s  user  발화 끝
+    32.30s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.74s]: [source: Smithsonian Institution] The 1944 eruption was characterized 
+    34.66s  agent 발화 시작: The nineteen forty-four eruption involved lava flows and Str
+    34.66s  agent 발화 끝
+    42.77s  agent 발화 끝
+    42.82s  user  발화 시작: Strombolian… what does that even *mean*?
+    45.87s  user  발화 끝
+    45.99s  agent 발화 시작: It refers to a specific style of eruption— relatively mild b
+    54.81s  agent 발화 끝
+    55.42s  user  발화 시작: Okay, okay. So, no cities buried this time. That’s good.
+    58.86s  agent 발화 시작: Exactly. It caused damage to surrounding areas, but no wides
+    59.12s  user  발화 끝
+    61.50s  user  발화 시작: Yeah.
+    61.91s  user  발화 끝
+    65.68s  agent 발화 시작: Sometimes, focusing on the resilience shown after such event
+    65.72s  agent 발화 끝
+    71.33s  agent 발화 끝
+    72.05s  user  발화 시작: I— I suppose so. Is it still active, then? Vesuvius?
+    75.87s  <ret> 발화 (turn14 첫 프레임)
+    76.10s  agent 발화 시작: <ret> Yes, it’s classified as an active volcano, and is clos
+    76.21s  user  발화 끝
+    76.43s  ⚡SPAN 주입 [d'=0.56s / d_lead=4.03s]: [source: INGV (Italian National Institute of Geophysics and Volcanolog
+    80.13s  agent 발화 끝
+    80.19s  agent 발화 시작: Vesuvius is currently dormant, but exhibits ongoing seismic 
+    85.61s  user  발화 시작: Yeah.
+    86.02s  user  발화 끝
+    87.98s  user  발화 시작: Closely monitored… that sounds a little scary.
+    88.16s  agent 발화 끝
+    90.98s  user  발화 끝
+    91.02s  agent 발화 시작: It’s a responsible precaution, really. Monitoring allows for
+    97.87s  agent 발화 끝
+    98.42s  user  발화 시작: Right. So they’d know if it was going to blow again?
+   101.15s  user  발화 끝
+   101.21s  agent 발화 시작: Scientists are continually improving their predictive capabi
+   107.14s  agent 발화 끝
+   107.19s  user  발화 시작: Like what kind of factors?
+   109.03s  user  발화 끝
+   109.07s  agent 발화 시작: —such as ground deformation and gas composition—
+   111.43s  user  발화 시작: Oh. Okay. Is there— is there a way to see the monitoring dat
+   112.03s  agent 발화 끝
+   116.42s  <ret> 발화 (turn24 첫 프레임)
+   116.75s  user  발화 끝
+   116.81s  agent 발화 시작: <ret> The INGV website offers real-time data on seismic acti
+   118.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: [source: INGV website] The INGV website provides real-time data on Ves
+   121.63s  user  발화 시작: Right.
+   122.40s  user  발화 끝
+   124.04s  agent 발화 끝
+   124.11s  user  발화 시작: That’s… good to know. Thanks, Bena.
+   126.59s  agent 발화 시작: You're very welcome. It’s helpful to be informed, and to und
+   126.60s  user  발화 끝
+   133.26s  agent 발화 끝

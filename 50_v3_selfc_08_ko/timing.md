@@ -55,109 +55,119 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 응, 두 개 추가해 줘. | S3 혹시 시카고 출발 터미널은 어디야? | S4 [happy] 혹시 덴버 근처에 괜찮은 호텔 추천해 줄 수 있
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 이름은 김민지, 연락처는 공 일 공 일 이 삼 사 오 육 칠  | S3 아, 그렇구나. 덴버 도착하면 근처에 맛집 좀 추천해 줄 수  | S4 칠십오도면 괜찮겠네. 덴버에서 시카고로 돌아오는 버스도 예약해
 
      0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘.
-     4.02s  <ret> 발화 (turn1 첫 프레임)
-     4.33s  agent 발화 시작: <ret> 시카고에서 덴버까지 오월 십일에 세 명 기준으로 세 대의 버스가 있습니다. 아침 여덟시, 이백오십
-     4.35s  user  발화 끝
-     6.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) Three buses found: 8:00 AM, $250; 12:30 PM, $280; 6:00 P
-    12.46s  user  발화 시작: 와.
-    12.81s  user  발화 끝
-    16.90s  agent 발화 끝
-    18.03s  user  발화 시작: 아, 이백삼십달러짜리 저녁 버스로 예약해 줘.
-    21.26s  <ret> 발화 (turn4 첫 프레임)
-    21.57s  agent 발화 시작: <ret> 예약 진행하겠습니다. 저녁 여섯시 버스로 세 명 예약이 완료되었습니다. 확인 번호는 칠X9K2L입
-    21.73s  user  발화 끝
-    22.54s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.34s]: (tool result) Reservation confirmed: Bus departs 6:00 PM, confirmation
-    29.60s  agent 발화 끝
-    29.77s  user  발화 시작: 혹시 짐 부치는 거 추가할 수 있어?
-    32.00s  agent 발화 시작: 물론입니다. 짐을 추가하려면 각 짐당 이십달러의 추가 요금이 발생합니다. 몇 개의 짐을 부치시겠어요?
-    32.02s  user  발화 끝
-    36.81s  user  발화 시작: 대박.
-    37.30s  user  발화 끝
-    39.73s  agent 발화 끝
-    39.88s  user  발화 시작: 음… 두 개 부쳐야 할 것 같아—
-    42.31s  user  발화 시작: 근데 혹시 그 버스에 와이파이 있니?
-    42.46s  user  발화 끝
-    44.71s  <ret> 발화 (turn10 첫 프레임)
-    44.90s  user  발화 끝
-    44.94s  agent 발화 시작: <ret> 저녁 여섯시 버스에는 와이파이가 제공됩니다. 그럼 짐은 두 개 추가하시겠어요?
-    46.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.38s]: (tool result) Wi-Fi is available on the 6:00 PM bus.
-    50.32s  agent 발화 끝
-    50.94s  user  발화 시작: 응, 두 개 추가해 줘.
-    52.50s  <ret> 발화 (turn12 첫 프레임)
-    52.51s  user  발화 끝
-    52.73s  agent 발화 시작: <ret> 짐 추가하겠습니다. 짐 두 개가 추가되었습니다. 총 비용은 이백칠십달러입니다.
-    53.00s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.33s]: (tool result) Two luggage added, total cost now $270.
-    58.64s  user  발화 시작: 결제는 어떻게 해야 해?
-    58.71s  agent 발화 끝
-    60.07s  user  발화 끝
-    60.23s  agent 발화 시작: 신용카드나 직불카드로 결제하실 수 있습니다. 어떤 카드를 사용하시겠어요?
-    63.97s  user  발화 시작: 아.
-    64.47s  user  발화 끝
-    65.61s  agent 발화 끝
-    65.86s  user  발화 시작: 신용카드로 할게.
-    67.10s  agent 발화 시작: 카드 번호, 유효 기간, CVC 번호를 말씀해 주시겠어요? 안전하게 처리됩니다.
-    67.28s  user  발화 끝
-    72.28s  agent 발화 끝
-    74.13s  user  발화 시작: 사천백십일… (중략) 삼백이십일.
-    75.30s  <ret> 발화 (turn19 첫 프레임)
-    75.53s  agent 발화 시작: <ret> 결제를 진행하겠습니다. 결제가 완료되었습니다. 티켓은 이메일로 발송되었습니다.
-    75.72s  user  발화 끝
-    75.80s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.67s]: (tool result) Payment successful. Your ticket is emailed to you.
-    79.10s  user  발화 시작: 어어.
-    79.64s  user  발화 끝
-    81.21s  user  발화 시작: 혹시 시카고 출발 터미널은 어디야?
-    81.37s  agent 발화 끝
-    83.47s  <ret> 발화 (turn22 첫 프레임)
-    83.55s  agent 발화 시작: <ret> 터미널 정보를 알려드릴게요. 출발 터미널은 유니언 스테이션 오번 게이트입니다.
-    83.56s  user  발화 끝
-    84.43s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.09s]: (tool result) Departure terminal is Union Station, Gate 5.
-    86.31s  user  발화 시작: 진짜?
-    86.95s  user  발화 끝
-    89.81s  agent 발화 끝
-    89.82s  user  발화 시작: 유니언 스테이션까지 가는 가장 빠른 길은? 지금 내 위치는 강남역이야.
-    94.24s  <ret> 발화 (turn25 첫 프레임)
-    94.63s  agent 발화 시작: <ret> 이호선을 타고 시청역에서 일호선으로 환승하여 시카고 유니언 스테이션으로 가세요. 예상 소요 시간은
-    94.86s  user  발화 끝
-    96.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.63s]: (tool result) Take subway line 2 to City Hall Station, then line 1 to 
-   103.17s  user  발화 시작: 와, 생각보다 가깝네.
-   103.25s  agent 발화 끝
-   105.02s  agent 발화 시작: 네, 비교적 가깝습니다. 혹시 다른 도움이 필요하신가요?
-   105.11s  user  발화 끝
-   106.78s  user  발화 시작: 음.
-   107.09s  user  발화 끝
-   108.90s  agent 발화 끝
-   109.34s  user  발화 시작: 음… 혹시 덴버 도착 터미널도 알려줄 수 있어?
-   112.47s  <ret> 발화 (turn30 첫 프레임)
-   112.66s  user  발화 끝
-   112.70s  agent 발화 시작: <ret> 도착 터미널 정보를 알려드리겠습니다. 도착 터미널은 덴버 유니언 스테이션 십이번 베이입니다.
-   113.19s  ⚡SPAN 주입 [d'=0.72s / d_lead=2.65s]: (tool result) Arrival terminal is Denver Union Station, Bay 12.
-   115.55s  user  발화 시작: 응.
-   116.04s  user  발화 끝
-   119.97s  user  발화 시작: 알았어. 고마워.
-   119.97s  agent 발화 끝
-   121.44s  user  발화 끝
-   121.59s  agent 발화 시작: 천만에요. 즐거운 여행 되세요. 혹시 여행 중에 필요한 정보가 있다면 언제든지 다시 찾아주세요.
-   127.98s  agent 발화 끝
-   128.66s  user  발화 시작: [happy] 혹시 덴버 근처에 괜찮은 호텔 추천해 줄 수 있어?
-   131.47s  agent 발화 시작: 물론입니다. 어떤 스타일의 호텔을 선호하시나요? 럭셔리, 실속형, 아니면 조용한 곳을 원하시나요?
-   131.62s  user  발화 끝
-   138.87s  user  발화 시작: 음… 실속형으로 추천해 줘.
-   139.07s  agent 발화 끝
-   140.45s  <ret> 발화 (turn37 첫 프레임)
-   140.84s  agent 발화 시작: <ret> 덴버에서 실속형 호텔 세 곳을 찾았습니다. 엠버 호텔은 백이십달러, 매븐 호텔은 백오십달러, 호스
-   141.13s  user  발화 끝
-   142.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) Three budget hotels found: The Ember, $120/night; The Ma
-   150.02s  agent 발화 끝
-   150.23s  user  발화 시작: 엠버 호텔로 예약하고 싶어.
-   152.21s  user  발화 끝
-   152.37s  <ret> 발화 (turn39 첫 프레임)
-   152.43s  agent 발화 시작: <ret> 엠버 호텔 예약하겠습니다. 엠버 호텔 예약이 완료되었습니다. 확인 번호는 구Z4R6B입니다.
-   152.87s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.35s]: (tool result) Reservation confirmed at The Ember, confirmation number 
-   160.05s  user  발화 시작: 좋아, 이제 정말 다 준비됐네.
-   160.26s  agent 발화 끝
-   162.49s  agent 발화 시작: 네, 모든 준비가 완료되었습니다. 즐거운 여행 되세요. 혹시 출발 전에 또 궁금한 점이 있으시면 언제든지 말
-   162.50s  user  발화 끝
-   170.27s  agent 발화 끝
+     3.95s  <ret> 발화 (turn1 첫 프레임)
+     4.16s  user  발화 끝
+     4.26s  agent 발화 시작: <ret> 알겠습니다. 시카고에서 덴버까지 오월 십일에 세 명 기준으로 세 대의 버스가 있습니다. 아침 여덟
+     4.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.52s]: (tool result) Three buses found: 8:00 AM, $250; 1:30 PM, $280; 6:00 PM
+    11.57s  user  발화 시작: 와.
+    12.01s  user  발화 끝
+    15.61s  agent 발화 끝
+    16.80s  user  발화 시작: 아, 이백팔십달러짜리는 좀 비싸네. 다른 날짜도 알아봐 줄 수 있어?
+    21.56s  agent 발화 시작: 물론입니다. 어떤 날짜를 원하시나요?
+    21.71s  user  발화 끝
+    24.28s  agent 발화 끝
+    24.44s  user  발화 시작: 음… 오월 십이일로 해 봐.
+    26.75s  <ret> 발화 (turn6 첫 프레임)
+    27.02s  user  발화 끝
+    27.07s  agent 발화 시작: <ret> 오월 십이일에는 아침 아홉시, 이백사십달러, 오후 네시, 이백이십달러 두 대가 있습니다.
+    27.71s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.72s]: (tool result) Two buses found: 9:00 AM, $240; 4:00 PM, $220.
+    33.78s  agent 발화 끝
+    34.94s  user  발화 시작: 오, 이백이십달러짜리가 괜찮네. 근데 혹시 환불 정책은 어떻게 돼?
+    39.23s  <ret> 발화 (turn8 첫 프레임)
+    39.46s  agent 발화 시작: <ret> 출발 스물네시간 전 취소하면 전액 환불됩니다. 스물네시간 이내 취소 시에는 이십달러의 수수료가 발
+    39.66s  user  발화 끝
+    41.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: (tool result) Full refund if canceled 24 hours before departure. $20 f
+    44.46s  user  발화 시작: 대박.
+    44.96s  user  발화 끝
+    47.42s  user  발화 시작: 스물네시간 전까지면 괜찮겠네. 그럼 그 버스 예약해 줘.
+    47.47s  agent 발화 끝
+    51.63s  user  발화 끝
+    52.08s  agent 발화 시작: 예약 진행해 드리겠습니다. 승객 정보가 필요합니다.
+    55.54s  agent 발화 끝
+    57.20s  user  발화 시작: 이름은 김민지, 연락처는 공 일 공 일 이 삼 사 오 육 칠 팔이야.
+    63.55s  user  발화 끝
+    63.62s  agent 발화 시작: 김민지 님, 연락처 공 일 공 일 이 삼 사 오 육 칠 팔로 맞으신가요?
+    69.60s  user  발화 시작: 응, 맞아.
+    69.82s  agent 발화 끝
+    70.62s  <ret> 발화 (turn15 첫 프레임)
+    70.75s  user  발화 끝
+    70.77s  agent 발화 시작: <ret> 확인했습니다. 예약이 완료되었습니다. 확인 번호는 B78923입니다.
+    71.12s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.86s]: (tool result) Booking confirmed. Confirmation number: B78923.
+    75.79s  user  발화 시작: 확인 번호는 B78923… 혹시 수하물 규정이 어떻게 돼?
+    75.94s  agent 발화 끝
+    79.77s  <ret> 발화 (turn17 첫 프레임)
+    80.00s  agent 발화 시작: <ret> 무료 위탁 수하물은 최대 오십파운드까지 가능합니다. 추가 수하물은 각당 삼십달러입니다.
+    80.18s  user  발화 끝
+    81.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (tool result) One free checked bag up to 50 lbs. $30 for each addition
+    84.40s  user  발화 시작: 그치.
+    85.03s  user  발화 끝
+    86.06s  agent 발화 끝
+    86.44s  user  발화 시작: 오십파운드까지… 그럼 기내 반입은?
+    89.39s  user  발화 끝
+    89.40s  agent 발화 시작: 기내 반입은 작은 가방 하나만 허용됩니다.
+    91.32s  user  발화 시작: 어어.
+    91.95s  user  발화 끝
+    92.73s  agent 발화 끝
+    94.41s  user  발화 시작: 아, 그렇구나. 덴버 도착하면 근처에 맛집 좀 추천해 줄 수 있어?
+    99.25s  agent 발화 시작: 물론입니다. 덴버에 도착하시면 근처 맛집을 추천해 드릴게요.
+    99.32s  user  발화 끝
+   102.99s  <ret> 발화 (turn24 첫 프레임)
+   103.39s  agent 발화 시작: <ret> 덴버는 맛집이 많기로 유명하죠. 리오하, 머캔타일 다이닝 앤 프로비전, 루트 다운, 가드 앤 그레
+   103.45s  agent 발화 끝
+   103.95s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.01s]: (tool result) Five restaurants found: Rioja, Mercantile Dining & Provi
+   107.73s  user  발화 시작: 응.
+   108.23s  user  발화 끝
+   112.94s  agent 발화 끝
+   113.84s  user  발화 시작: 홉 앨리는 무슨 음식점이야?
+   115.35s  <ret> 발화 (turn27 첫 프레임)
+   115.74s  agent 발화 시작: <ret> 현대적인 중국 음식점이고, 주소는 라리머 삼천사백십육번지, 영업시간은 오후 다섯시부터 열시까지입니
+   115.78s  user  발화 끝
+   117.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: (tool result) Hop Alley: Modern Chinese, 3416 Larimer St, Denver. Open
+   120.61s  user  발화 시작: 응.
+   120.83s  user  발화 끝
+   124.46s  agent 발화 끝
+   125.24s  user  발화 시작: 저기, 혹시 홉 앨리 예약해 줄 수 있어?
+   128.50s  agent 발화 시작: 네, 예약 가능합니다. 몇 시로 예약하시겠어요?
+   128.52s  user  발화 끝
+   130.36s  user  발화 시작: 응.
+   130.81s  user  발화 끝
+   131.55s  agent 발화 끝
+   131.55s  user  발화 시작: 저녁 일곱시로 부탁해.
+   133.09s  <ret> 발화 (turn33 첫 프레임)
+   133.24s  agent 발화 시작: <ret> 저녁 일곱시로 예약해 드리겠습니다. 홉 앨리에 세명, 저녁 일곱시로 예약이 완료되었습니다. 확인 
+   133.30s  user  발화 끝
+   134.69s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.81s]: (tool result) Reservation confirmed for 3 at Hop Alley, 7:00 PM. Confi
+   140.73s  user  발화 시작: 진짜?
+   141.68s  user  발화 끝
+   143.07s  agent 발화 끝
+   143.12s  user  발화 시작: 확인 번호는 R12345… 덴버 날씨는 어때?
+   146.84s  <ret> 발화 (turn36 첫 프레임)
+   147.23s  agent 발화 시작: <ret> 현재 덴버는 화씨 육십팔도, 부분적으로 구름이 많습니다. 최고 기온은 화씨 칠십오도, 최저 기온은
+   147.47s  user  발화 끝
+   148.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: (tool result) Denver: Currently 68°F, partly cloudy. High of 75°F, low
+   156.46s  agent 발화 끝
+   156.55s  user  발화 시작: 칠십오도면 괜찮겠네. 덴버에서 시카고로 돌아오는 버스도 예약해 줄 수 있어?
+   162.31s  agent 발화 시작: 물론입니다. 돌아오는 날짜를 알려주세요.
+   162.48s  user  발화 끝
+   165.22s  agent 발화 끝
+   166.03s  user  발화 시작: 오월 십오일로 해 줘.
+   167.56s  <ret> 발화 (turn40 첫 프레임)
+   167.68s  user  발화 끝
+   167.72s  agent 발화 시작: <ret> 오월 십오일에는 아침 열시, 이백육십달러, 오후 두시, 이백구십달러, 저녁 일곱시, 이백사십달러 
+   169.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: (tool result) Three buses found: 10:00 AM, $260; 2:00 PM, $290; 7:00 P
+   176.85s  agent 발화 끝
+   178.34s  user  발화 시작: 저녁 일곱시 이백사십달러짜리로 예약해 줘.
+   181.29s  user  발화 끝
+   181.35s  <ret> 발화 (turn42 첫 프레임)
+   181.44s  agent 발화 시작: <ret> 오월 십오일 저녁 일곱시 시카고행 버스 예약이 완료되었습니다. 확인 번호는 B98765입니다.
+   183.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) Booking confirmed. Confirmation number: B98765.
+   183.87s  user  발화 시작: 응.
+   184.36s  user  발화 끝
+   188.49s  user  발화 시작: 알았어. 정말 고마워.
+   188.71s  agent 발화 끝
+   190.37s  user  발화 끝
+   190.44s  agent 발화 시작: 도움이 되었다니 기쁩니다. 즐거운 여행 되세요.
+   193.76s  agent 발화 끝

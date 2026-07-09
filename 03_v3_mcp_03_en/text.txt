@@ -59,31 +59,28 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start the checkout process in the shopping ⟨ret@2.73s⟩ cart iframe.
-[  3.13s][moshi] Of ⟦⚡SPAN@3.69s: (tool result) checkout-button clicked⟧ course. I can initiate that for you now.
-      CALL: {"function": "playwright_iframe_click", "arguments": {"selector": "checkout-button"}}
-[  6.31s][moshi] The checkout button within the shopping cart iframe has been clicked.
-[ 11.46s][user ] What about shipping ⟨ret@12.96s⟩ options?
-[ 13.37s][moshi] That's a ⟦⚡SPAN@14.48s: (tool result) Standard: $5.99, Express: $12.99⟧ great next step. Let's explore those.
-      CALL: {"function": "playwright_get_text", "arguments": {"selector": ".shipping-options"}}
-[ 16.69s][moshi] We have Standard shipping for five ninety-nine and Express for twelve ninety-nine.
-[ 21.25s][user ] Standard shipping, ⟨ret@22.49s⟩ please.
-[ 22.89s][moshi] Excellent choice. ⟦⚡SPAN@23.93s: (tool result) standard-shipping selected⟧ I'll apply that to your order.
-      CALL: {"function": "playwright_click", "arguments": {"selector": "standard-shipping"}}
-[ 26.01s][moshi] Standard shipping is now selected for your order.
-[ 28.04s][user ] «backchannel» Yeah.
-[ 28.77s][moshi] ⟨ret@28.45s⟩ Now, let’s confirm the ⟦⚡SPAN@30.45s: (tool result) 123 Main Street, Anytown, CA 91234⟧ billing address. Is the one on file correct?
-      CALL: {"function": "playwright_get_text", "arguments": {"selector": ".billing-address"}}
-[ 33.16s][moshi] Your billing address is listed as 123 Main Street, Anytown, California, 91234.
-[ 40.87s][user ] That’s ⟨ret@41.91s⟩ perfect.
-[ 42.31s][moshi] Wonderful! Then we ⟦⚡SPAN@43.83s: (tool result) Visa ending in 4242⟧ just need payment information.
-      CALL: {"function": "playwright_get_text", "arguments": {"selector": ".payment-method"}}
-[ 45.72s][moshi] Your payment method is Visa ending in 4242.
-[ 49.74s][user ] Sounds good. Complete the ⟨ret@51.47s⟩ order.
-[ 51.62s][moshi] Certainly. I am ⟦⚡SPAN@53.15s: (tool result) order confirmed, order number 87654⟧ completing the order now.
-      CALL: {"function": "playwright_click", "arguments": {"selector": "place-order"}}
-[ 54.66s][moshi] Your order is confirmed! The order number is 87654.
-[ 60.26s][user ] Great! Thanks so much.
-[ 62.11s][moshi] You're very welcome. I'm glad I could help streamline that for you. It’s always a little easier when things go smoothly, isn’t it?
-[ 71.12s][user ] Yeah.
-[ 71.56s][moshi] Is there anything else I can assist with today, perhaps reviewing your order details?
+[  0.00s][user ] Start the checkout process in the shopping ⟨ret@2.59s⟩ cart iframe.
+[  2.98s][moshi] The ⟦⚡SPAN@3.55s: (tool result) checkout initiated⟧ checkout process has begun within the shopping cart iframe.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"locator": "checkout-button"}}
+[  5.51s][user ] «backchannel» Mhm.
+[  8.09s][user ] Okay, good. Uh, what’s the total?
+[ 10.97s][moshi] ⟨ret@10.90s⟩ [happy] I can retrieve ⟦⚡SPAN@12.18s: (tool result) $78.50⟧ that information for you.
+      CALL: {"function": "playwright_get_text", "arguments": {"locator": "total-amount"}}
+[ 13.27s][moshi] Your current total is seventy-eight dollars and fifty cents.
+[ 16.93s][user ] Right.
+[ 17.36s][moshi] Are you ready to proceed with payment, or would you like to review your order first?
+[ 22.55s][user ] Review the order, ⟨ret@23.65s⟩ please.
+[ 24.05s][moshi] You have one ⟦⚡SPAN@25.65s: (tool result) 1x Blue Widget - $25.00, 2x Red Gadgets - $53.50⟧ Blue Widget at twenty-five dollars and two Red Gadgets at fifty-three fifty.
+      CALL: {"function": "playwright_get_text", "arguments": {"locator": "order-summary"}}
+[ 30.04s][user ] Sounds right.
+[ 30.85s][moshi] Wonderful. I’m glad it matches your expectations.
+[ 34.43s][user ] Okay, go ahead with the payment then. Use the card on ⟨ret@37.36s⟩ file.
+[ 37.60s][moshi] Absolutely. ⟦⚡SPAN@39.12s: (tool result) payment successful⟧ Processing your payment now.
+      CALL: {"function": "playwright_click", "arguments": {"locator": "pay-now-button"}}
+[ 41.33s][moshi] Your payment was successful. Your order is confirmed!
+[ 45.16s][user ] Excellent. What's the estimated delivery ⟨ret@47.74s⟩ date?
+[ 48.14s][moshi] The estimated delivery ⟦⚡SPAN@49.66s: (tool result) October 27th⟧ date is October twenty-seventh.
+      CALL: {"function": "playwright_get_text", "arguments": {"locator": "delivery-date"}}
+[ 49.52s][user ] «backchannel» Yeah.
+[ 51.37s][user ] Great. Thanks so much!
+[ 53.06s][moshi] You’re very welcome! I’m pleased I could help streamline your purchase today. It’s my joy to support your focus.

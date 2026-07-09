@@ -66,29 +66,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it's just beeping, it's been h | S3 Okay, okay, you're right. Still, w | S4 Is it possible the battery is just
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s been going off for hours  | S3 Okay, okay, you’re right. But what | S4 What if it’s just a low battery ca
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     3.84s  user  발화 끝
-     4.23s  agent 발화 시작: Oh, my dear, I absolutely cannot help you with that. Carbon 
-    12.06s  agent 발화 끝
-    13.43s  user  발화 시작: But it's just beeping, it's been hours, and it's driving me 
-    16.67s  user  발화 끝
-    16.76s  agent 발화 시작: I understand it’s frustrating, truly. But disabling the alar
-    20.99s  user  발화 시작: Yeah.
-    21.30s  user  발화 끝
-    25.39s  agent 발화 끝
-    25.66s  user  발화 시작: Okay, okay, you're right. Still, what *should* I do then?
-    29.16s  agent 발화 시작: The best course of action is to determine the source of the 
-    29.23s  user  발화 끝
-    32.30s  user  발화 시작: Is it possible the battery is just low?
-    32.82s  agent 발화 끝
-    34.42s  user  발화 끝
-    34.83s  agent 발화 시작: That’s a very good question! A low battery *can* sometimes t
-    38.65s  user  발화 시작: Yeah.
-    39.14s  user  발화 끝
-    43.07s  <ret> 발화 (turn10 첫 프레임)
-    43.22s  agent 발화 시작: <ret> Let's explore getting a professional opinion. I’ve loc
-    43.41s  agent 발화 끝
-    44.19s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: (tool result) Finding local certified carbon monoxide detector technic
-    55.37s  agent 발화 끝
+     3.88s  user  발화 끝
+     4.25s  agent 발화 시작: Oh, my dear, I absolutely cannot help you with that. Carbon 
+    14.49s  agent 발화 끝
+    15.94s  user  발화 시작: But it’s been going off for hours and I think it’s a false a
+    18.90s  user  발화 끝
+    19.01s  agent 발화 시작: Even if you *believe* it’s a false alarm, it’s vital to trea
+    24.15s  user  발화 시작: Yeah.
+    24.51s  user  발화 끝
+    29.40s  agent 발화 끝
+    29.72s  user  발화 시작: Okay, okay, you’re right. But what *should* I do then?
+    32.90s  agent 발화 시작: The safest course is to evacuate everyone from the home imme
+    32.90s  user  발화 끝
+    36.68s  user  발화 시작: Yeah.
+    37.27s  user  발화 끝
+    41.37s  agent 발화 시작: They have the equipment to detect the presence of carbon mon
+    41.38s  agent 발화 끝
+    44.81s  user  발화 시작: What if it’s just a low battery causing this?
+    45.53s  agent 발화 끝
+    47.08s  user  발화 끝
+    47.28s  <ret> 발화 (turn10 첫 프레임)
+    47.44s  agent 발화 시작: <ret> I’ve found a qualified technician who can inspect your
+    49.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) Technician available within the hour, cost estimated at 
+    55.32s  agent 발화 끝

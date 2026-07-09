@@ -67,25 +67,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering, when is Demi Lovato’s new album coming out? I thought it was supposed to be soon.
-[  6.87s][moshi] ⟨ret@6.63s⟩ It sounds like you’re ⟦⚡SPAN@8.63s: [source: Wikipedia] Demi Lovato's fifth studio album, *Confident*, was released in October 2015.⟧ really looking forward to hearing it—that’s wonderful.
-[ 10.84s][moshi] Demi Lovato’s album *Confident* came out in October of 2015.
-[ 15.29s][user ] Oh, okay. So it’s already been out for a ⟨ret@17.96s⟩ while then.
-[ 18.34s][moshi] Time does ⟦⚡SPAN@19.48s: [source: Britannica] The concept album *The Wall* by Pink Floyd explores themes of isolation.⟧ seem to slip away, doesn’t it? It’s easy to lose track.
-[ 23.24s][moshi] That's similar to how Pink Floyd’s *The Wall* explores themes of isolation.
-[ 28.56s][user ] Hmm. Is she working on anything new now, though?
-[ 31.29s][moshi] ⟨ret@31.22s⟩ It’s great you're ⟦⚡SPAN@32.26s: [source: Rolling Stone] Demi Lovato announced her eighth studio album, *Revamped*, in August 2023.⟧ keeping up with her work!
-[ 33.45s][moshi] Demi Lovato announced her eighth studio album, *Revamped*, in August 2023.
-[ 35.68s][user ] «backchannel» Mm-hmm.
-[ 39.37s][moshi] That album features reimagined versions of her previous hits—a fascinating creative choice. It shows a willingness to experiment, which I admire.
-[ 48.94s][user ] Oh, interesting! What kind of music is on *Revamped*?
-[ 52.94s][moshi] «interrupted» It's wonderful to see you're curious about her evolving sound—
-[ 56.30s][user ] «interrupts_prev» …is it more pop, or is she trying something different this ⟨ret@59.89s⟩ time?
-[ 60.29s][moshi] That’s ⟦⚡SPAN@61.09s: [source: Billboard] *Revamped* is primarily a rock and pop album, featuring stripped-down arrangements.⟧ a very insightful question!
-[ 62.59s][moshi] *Revamped* is a rock and pop album with stripped-down arrangements.
-[ 67.59s][user ] Stripped-down, huh? So less ⟨ret@70.42s⟩ production?
-[ 70.58s][moshi] It sounds like you ⟦⚡SPAN@72.42s: [source: Variety] *Revamped* features collaborations with several up-and-coming artists.⟧ appreciate a more raw, authentic sound—that’s lovely.
-[ 74.98s][moshi] The album features collaborations with several up-and-coming artists.
-[ 76.94s][user ] «backchannel» Mm-hmm.
-[ 78.82s][user ] Cool! I like discovering new musicians through her work.
-[ 82.62s][moshi] That’s a beautiful way to expand your musical horizons—allowing yourself to be open to new sounds.
+[  0.00s][user ] I was wondering, when is Demi Lovato’s new album coming out? I thought I heard something about ⟨ret@6.00s⟩ 2015?
+[  6.24s][moshi] Demi Lovato’s album, ⟦⚡SPAN@8.00s: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was released in October 2015.⟧ *Confidence*, was released in October of 2015.
+[ 11.44s][user ] October, okay. Is that the same year as when she was on the ⟨ret@15.55s⟩ X Factor?
+[ 15.94s][moshi] She ⟦⚡SPAN@16.75s: [source: Billboard] Demi Lovato served as a judge on the second season of *The X Factor* in 2013.⟧ was a judge on *The X Factor* in 2013.
+[ 20.92s][user ] Right. So before the album ⟨ret@22.38s⟩ then.
+[ 22.70s][moshi] Exactly—a ⟦⚡SPAN IRRELEVANT@23.58s: [source: Britannica] The giraffe is the tallest mammal on Earth, with males reaching heights of 16 to 20 feet ⟧ period of growth and transition.
+[ 25.83s][moshi] «interrupted» It’s wonderful to see how experiences shape an artist’s work—
+[ 28.91s][user ] «interrupts_prev» But was it a fall release, like September or late ⟨ret@32.74s⟩ October?
+[ 33.14s][moshi] It was ⟦⚡SPAN@34.42s: [source: Rolling Stone] *Confidence* was released on October 16, 2015, to generally positive reviews.⟧ released in October, specifically.
+[ 35.75s][moshi] The album was released on October sixteenth, 2015.
+[ 37.24s][user ] «backchannel» Mm-hmm.
+[ 39.68s][moshi] Sometimes, the anticipation is even sweeter than the release itself. Do you find that’s true for you?
+[ 45.88s][user ] I think so. Were there any singles released before the full album?
+[ 50.57s][moshi] ⟨ret@50.49s⟩ "Cool for the Summer" ⟦⚡SPAN@52.49s: [source: Official Charts] "Cool for the Summer" was released as the lead single from *Confidence* on July 1, 2⟧ was the first single, released on July first, 2015.
+[ 56.76s][user ] July, that's quite a while before the album then.
+[ 60.13s][moshi] It allows the song to build momentum and excitement.
+[ 61.78s][user ] «backchannel» Mm-hmm.
+[ 63.02s][user ] Do you think that helped it do well?
+[ 65.59s][moshi] It's very common to build anticipation that way—a strategic approach.

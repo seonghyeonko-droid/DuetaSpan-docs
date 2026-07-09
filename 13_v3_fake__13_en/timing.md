@@ -66,59 +66,53 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 Hmm. Is she working on anything ne | S3 …is it more pop, or is she trying  | S4 Cool! I like discovering new music
+# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 Right. So before the album then. | S3 I think so. Were there any singles | S4 Do you think that helped it do wel
 
      0.00s  user  발화 시작: I was wondering, when is Demi Lovato’s new album coming out?
-     6.63s  <ret> 발화 (turn1 첫 프레임)
-     6.85s  user  발화 끝
-     6.87s  agent 발화 시작: <ret> It sounds like you’re really looking forward to hearin
-     8.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: [source: Wikipedia] Demi Lovato's fifth studio album, *Confident*, was
-    10.84s  agent 발화 시작: Demi Lovato’s album *Confident* came out in October of 2015.
-    11.03s  agent 발화 끝
-    15.29s  user  발화 시작: Oh, okay. So it’s already been out for a while then.
-    15.36s  agent 발화 끝
-    17.96s  <ret> 발화 (turn4 첫 프레임)
-    18.34s  agent 발화 시작: <ret> Time does seem to slip away, doesn’t it? It’s easy to 
-    18.57s  user  발화 끝
-    19.48s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.96s]: [source: Britannica] The concept album *The Wall* by Pink Floyd explor
-    23.24s  agent 발화 시작: That's similar to how Pink Floyd’s *The Wall* explores theme
-    23.30s  agent 발화 끝
-    27.96s  agent 발화 끝
-    28.56s  user  발화 시작: Hmm. Is she working on anything new now, though?
-    31.22s  <ret> 발화 (turn7 첫 프레임)
-    31.29s  agent 발화 시작: <ret> It’s great you're keeping up with her work!
-    31.52s  user  발화 끝
-    32.26s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.26s]: [source: Rolling Stone] Demi Lovato announced her eighth studio album,
-    33.45s  agent 발화 시작: Demi Lovato announced her eighth studio album, *Revamped*, i
-    33.55s  agent 발화 끝
-    35.68s  user  발화 시작: Mm-hmm.
-    36.31s  user  발화 끝
-    39.37s  agent 발화 시작: That album features reimagined versions of her previous hits
-    39.44s  agent 발화 끝
-    48.87s  agent 발화 끝
-    48.94s  user  발화 시작: Oh, interesting! What kind of music is on *Revamped*?
-    52.94s  agent 발화 시작: It's wonderful to see you're curious about her evolving soun
-    53.10s  user  발화 끝
-    56.30s  user  발화 시작: …is it more pop, or is she trying something different this t
-    56.96s  agent 발화 끝
-    59.89s  <ret> 발화 (turn14 첫 프레임)
-    60.29s  agent 발화 시작: <ret> That’s a very insightful question!
-    60.33s  user  발화 끝
-    61.09s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.30s]: [source: Billboard] *Revamped* is primarily a rock and pop album, feat
-    62.59s  agent 발화 시작: *Revamped* is a rock and pop album with stripped-down arrang
-    62.59s  agent 발화 끝
-    66.79s  agent 발화 끝
-    67.59s  user  발화 시작: Stripped-down, huh? So less production?
-    70.42s  <ret> 발화 (turn17 첫 프레임)
-    70.58s  agent 발화 시작: <ret> It sounds like you appreciate a more raw, authentic so
-    70.74s  user  발화 끝
-    72.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: [source: Variety] *Revamped* features collaborations with several up-a
-    74.98s  agent 발화 시작: The album features collaborations with several up-and-coming
-    75.02s  agent 발화 끝
-    76.94s  user  발화 시작: Mm-hmm.
-    77.44s  user  발화 끝
-    78.82s  user  발화 시작: Cool! I like discovering new musicians through her work.
-    78.97s  agent 발화 끝
-    82.62s  agent 발화 시작: That’s a beautiful way to expand your musical horizons—allow
-    82.66s  user  발화 끝
-    88.87s  agent 발화 끝
+     6.00s  <ret> 발화 (turn1 첫 프레임)
+     6.24s  agent 발화 시작: <ret> Demi Lovato’s album, *Confidence*, was released in Oct
+     6.29s  user  발화 끝
+     8.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.12s]: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was 
+    11.35s  agent 발화 끝
+    11.44s  user  발화 시작: October, okay. Is that the same year as when she was on the 
+    15.55s  <ret> 발화 (turn3 첫 프레임)
+    15.94s  agent 발화 시작: <ret> She was a judge on *The X Factor* in 2013.
+    16.07s  user  발화 끝
+    16.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.16s]: [source: Billboard] Demi Lovato served as a judge on the second season
+    20.10s  agent 발화 끝
+    20.92s  user  발화 시작: Right. So before the album then.
+    22.38s  <ret> 발화 (turn5 첫 프레임)
+    22.70s  agent 발화 시작: <ret> Exactly—a period of growth and transition.
+    22.85s  user  발화 끝
+    23.58s  ⚡SPAN 주입(IRRELEVANT) [d'=1.20s / d_lead=3.14s]: [source: Britannica] The giraffe is the tallest mammal on Earth, with 
+    25.83s  agent 발화 시작: It’s wonderful to see how experiences shape an artist’s work
+    25.84s  agent 발화 끝
+    28.91s  user  발화 시작: But was it a fall release, like September or late October?
+    29.66s  agent 발화 끝
+    32.74s  <ret> 발화 (turn8 첫 프레임)
+    33.14s  agent 발화 시작: <ret> It was released in October, specifically.
+    33.30s  user  발화 끝
+    34.42s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.77s]: [source: Rolling Stone] *Confidence* was released on October 16, 2015,
+    35.75s  agent 발화 시작: The album was released on October sixteenth, 2015.
+    35.91s  agent 발화 끝
+    37.24s  user  발화 시작: Mm-hmm.
+    37.69s  user  발화 끝
+    39.68s  agent 발화 시작: Sometimes, the anticipation is even sweeter than the release
+    39.82s  agent 발화 끝
+    45.74s  agent 발화 끝
+    45.88s  user  발화 시작: I think so. Were there any singles released before the full 
+    50.49s  <ret> 발화 (turn13 첫 프레임)
+    50.57s  agent 발화 시작: <ret> "Cool for the Summer" was the first single, released o
+    50.65s  user  발화 끝
+    52.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: [source: Official Charts] "Cool for the Summer" was released as the le
+    56.08s  agent 발화 끝
+    56.76s  user  발화 시작: July, that's quite a while before the album then.
+    60.13s  agent 발화 시작: It allows the song to build momentum and excitement.
+    60.22s  user  발화 끝
+    61.78s  user  발화 시작: Mm-hmm.
+    62.23s  user  발화 끝
+    63.02s  user  발화 시작: Do you think that helped it do well?
+    63.46s  agent 발화 끝
+    65.28s  user  발화 끝
+    65.59s  agent 발화 시작: It's very common to build anticipation that way—a strategic 
+    70.26s  agent 발화 끝

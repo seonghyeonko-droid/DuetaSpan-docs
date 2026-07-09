@@ -69,27 +69,21 @@
 # }
 
 
-     0.00s  user  발화 시작: 어, VA에 대해 읽다가 문득 궁금해졌어. 도대체 언제 시작된 거야?
-     4.56s  <ret> 발화 (turn1 첫 프레임)
-     4.95s  agent 발화 시작: <ret> 좋은 질문이세요. 역사를 알아두면 도움이 될 거예요.
-     5.09s  user  발화 끝
-     6.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-     9.13s  agent 발화 시작: 미국 재향군인부는 1930년 7월 21일에 설립되었어요.
-     9.26s  agent 발화 끝
-    13.90s  agent 발화 끝
-    13.97s  user  발화 시작: 1930년이라고? 진짜? 난 항상 훨씬 더 오래된, 남북 전쟁 이후쯤이라고 생각했거든.
-    20.61s  <ret> 발화 (turn4 첫 프레임)
-    20.84s  agent 발화 시작: <ret> 그렇게 생각하시는 건 당연해요. 오랜 기간 동안 참전 용사들을 지원해 왔으니까요.
-    20.92s  user  발화 끝
-    22.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: History.com] Prior to 1930, the administration of veterans’ b
-    26.60s  agent 발화 시작: 1930년이 되기 전에는 퇴역 군인들의 혜택이 여러 개의 개별 기관들에서 처리되었어요.
-    26.63s  agent 발화 끝
-    33.36s  agent 발화 끝
-    34.58s  user  발화 시작: 그러니까 그때는 하나의 부서가 아니라 그냥 조각조각이었던 거야?
-    38.57s  <ret> 발화 (turn7 첫 프레임)
-    38.75s  user  발화 끝
-    38.89s  agent 발화 시작: <ret> 네, 맞습니다. 처음에는 분산된 방식이었습니다.
-    40.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.89s]: [source: VA.gov] The Veterans Bureau, founded in 1921, was a key precu
-    42.74s  agent 발화 시작: 재향군인국은 1921년에 설립되었고, VA의 중요한 선구자였습니다.
-    42.78s  agent 발화 끝
-    48.76s  agent 발화 끝
+     0.00s  user  발화 시작: 야, 정부 부처들 읽다가… 참전용사부(Veterans Affairs)는 언제 시작했어?
+     5.41s  <ret> 발화 (turn1 첫 프레임)
+     5.81s  agent 발화 시작: <ret> 음, 참전용사부는 천구백삼십년 칠월 이십일일에 설립되었어요.
+     5.93s  user  발화 끝
+     7.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: [source: Wikipedia] The United States Department of Veterans Affairs w
+     9.95s  user  발화 시작: 천구백삼십년? 솔직히 생각보다 엄청 최근인데. 훨씬 오래됐을 줄 알았어.
+    10.06s  agent 발화 끝
+    15.84s  <ret> 발화 (turn3 첫 프레임)
+    16.00s  agent 발화 시작: <ret> 네, 천구백삼십년 이전에는 연금국에서 참전용사 관련 업무를 담당했었는데, 연금국은 천팔백십일년에 
+    16.25s  user  발화 끝
+    17.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: [source: VA.gov] Prior to 1930, veterans’ affairs were handled by the 
+    25.41s  agent 발화 끝
+    26.21s  user  발화 시작: 천팔백십일… 생각보다 일찍부터 참전용사들을 챙겼네, 그냥 부서가 따로 없었던 거구나?
+    32.14s  <ret> 발화 (turn5 첫 프레임)
+    32.38s  agent 발화 시작: <ret> 네, 연금국은 독립전쟁 참전용사와 그들의 미망인들에게 처음으로 연금을 지급했어요.
+    32.55s  user  발화 끝
+    34.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: [source: History.com] The Bureau of Pensions initially focused on prov
+    38.73s  agent 발화 끝

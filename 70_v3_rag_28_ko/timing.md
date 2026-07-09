@@ -70,18 +70,18 @@
 
 
      0.00s  user  발화 시작: 퇴역 군인부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해.
-     5.42s  <ret> 발화 (turn1 첫 프레임)
-     5.74s  agent 발화 시작: <ret> 음, 그거 알아보기 전에… 퇴역 군인부는 허버트 후버 대통령의 행정 명령으로 천구백삼십년 팔월구일
-     5.88s  user  발화 끝
-     6.86s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.54s]: [source: Britannica] The Department of Veterans Affairs was establishe
-    14.64s  agent 발화 끝
-    15.90s  user  발화 시작: 천구백삼십년이라고? 그게 말이 돼? 그전에 뭐였는데?
-    19.96s  agent 발화 시작: 그 전에 여러 기관들이 있었죠. 퇴역 군인들을 위한 지원은 훨씬 이전부터 시작되었어요.
-    20.21s  user  발화 끝
-    26.27s  user  발화 시작: 그럼 그전 기관들이랑 지금이랑 차이가 뭘까? 규모나 역할 면에서.
-    26.39s  agent 발화 끝
-    30.47s  <ret> 발화 (turn5 첫 프레임)
-    30.76s  user  발화 끝
-    30.78s  agent 발화 시작: <ret> 규모 면에서는… 천구백삼십년 이전에는 연금국이나 장애 퇴역 군인 자택 같은 기관들이 각각 담당했지
-    30.97s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.18s]: [source: VA.gov] Prior to 1930, veterans’ services were administered b
-    40.84s  agent 발화 끝
+     5.27s  <ret> 발화 (turn1 첫 프레임)
+     5.59s  agent 발화 시작: <ret> 음, 그건 좀 복잡한 이야기인데… 퇴역 군인부는 허버트 후버 대통령에 의해 일구삼십 년 칠월 이십
+     5.70s  user  발화 끝
+     7.19s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.06s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    15.98s  agent 발화 끝
+    17.24s  user  발화 시작: 일구삼십 년이라고? 그건 좀 의외인데, 더 일찍 만들어졌을 줄 알았어.
+    22.13s  agent 발화 시작: [curious] 생각보다 일찍 만들어졌죠? 과거에는 여러 기관에서 퇴역 군인들을 지원했어요.
+    22.28s  user  발화 끝
+    28.10s  user  발화 시작: 그럼 그 전에는 누가 담당했어? 구체적으로 알려줄 수 있어?
+    28.24s  agent 발화 끝
+    31.88s  <ret> 발화 (turn5 첫 프레임)
+    32.19s  agent 발화 시작: <ret> 그 전에는 국립 군인 홈(National Home for Disabled Soldiers)이 그 
+    32.26s  user  발화 끝
+    32.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.10s]: [source: History.com] The National Home for Disabled Soldiers was esta
+    44.90s  agent 발화 끝

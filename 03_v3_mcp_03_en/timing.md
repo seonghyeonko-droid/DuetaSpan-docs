@@ -58,61 +58,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Standard shipping, please. | S3 Sounds good. Complete the order. | S4 Yeah.
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Right. | S3 Sounds right. | S4 Excellent. What's the estimated de
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.73s  <ret> 발화 (turn1 첫 프레임)
-     3.13s  agent 발화 시작: <ret> Of course. I can initiate that for you now.
-     3.32s  user  발화 끝
-     3.69s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.23s]: (tool result) checkout-button clicked
-     6.31s  agent 발화 시작: The checkout button within the shopping cart iframe has been
-     6.37s  agent 발화 끝
-    10.15s  agent 발화 끝
-    11.46s  user  발화 시작: What about shipping options?
-    12.96s  <ret> 발화 (turn4 첫 프레임)
-    13.37s  agent 발화 시작: <ret> That's a great next step. Let's explore those.
-    13.39s  user  발화 끝
-    14.48s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.42s]: (tool result) Standard: $5.99, Express: $12.99
-    16.69s  agent 발화 시작: We have Standard shipping for five ninety-nine and Express f
-    16.79s  agent 발화 끝
-    21.25s  user  발화 시작: Standard shipping, please.
-    21.32s  agent 발화 끝
-    22.49s  <ret> 발화 (turn7 첫 프레임)
-    22.89s  agent 발화 시작: <ret> Excellent choice. I'll apply that to your order.
-    23.09s  user  발화 끝
-    23.93s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.29s]: (tool result) standard-shipping selected
-    26.01s  agent 발화 시작: Standard shipping is now selected for your order.
-    26.17s  agent 발화 끝
-    28.04s  user  발화 시작: Yeah.
-    28.45s  <ret> 발화 (turn10 첫 프레임)
-    28.68s  user  발화 끝
-    28.77s  agent 발화 시작: <ret> Now, let’s confirm the billing address. Is the one on 
-    28.93s  agent 발화 끝
-    30.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: (tool result) 123 Main Street, Anytown, CA 91234
-    33.16s  agent 발화 시작: Your billing address is listed as 123 Main Street, Anytown, 
-    33.30s  agent 발화 끝
-    40.87s  user  발화 시작: That’s perfect.
-    40.90s  agent 발화 끝
-    41.91s  <ret> 발화 (turn13 첫 프레임)
-    42.31s  agent 발화 시작: <ret> Wonderful! Then we just need payment information.
-    42.48s  user  발화 끝
-    43.83s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.47s]: (tool result) Visa ending in 4242
-    45.72s  agent 발화 시작: Your payment method is Visa ending in 4242.
-    45.78s  agent 발화 끝
-    49.74s  user  발화 시작: Sounds good. Complete the order.
-    49.75s  agent 발화 끝
-    51.47s  <ret> 발화 (turn16 첫 프레임)
-    51.62s  agent 발화 시작: <ret> Certainly. I am completing the order now.
-    51.76s  user  발화 끝
-    53.15s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.05s]: (tool result) order confirmed, order number 87654
-    54.66s  agent 발화 시작: Your order is confirmed! The order number is 87654.
-    54.67s  agent 발화 끝
-    60.26s  user  발화 시작: Great! Thanks so much.
-    60.26s  agent 발화 끝
-    62.01s  user  발화 끝
-    62.11s  agent 발화 시작: You're very welcome. I'm glad I could help streamline that f
-    70.17s  agent 발화 끝
-    71.12s  user  발화 시작: Yeah.
-    71.56s  agent 발화 시작: Is there anything else I can assist with today, perhaps revi
-    71.76s  user  발화 끝
-    76.60s  agent 발화 끝
+     2.59s  <ret> 발화 (turn1 첫 프레임)
+     2.98s  agent 발화 시작: <ret> The checkout process has begun within the shopping car
+     3.19s  user  발화 끝
+     3.55s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.79s]: (tool result) checkout initiated
+     5.51s  user  발화 시작: Mhm.
+     6.01s  user  발화 끝
+     6.77s  agent 발화 끝
+     8.09s  user  발화 시작: Okay, good. Uh, what’s the total?
+    10.90s  <ret> 발화 (turn4 첫 프레임)
+    10.97s  agent 발화 시작: <ret> [happy] I can retrieve that information for you.
+    11.00s  user  발화 끝
+    12.18s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.39s]: (tool result) $78.50
+    13.27s  agent 발화 시작: Your current total is seventy-eight dollars and fifty cents.
+    13.37s  agent 발화 끝
+    16.93s  user  발화 시작: Right.
+    16.97s  agent 발화 끝
+    17.36s  agent 발화 시작: Are you ready to proceed with payment, or would you like to 
+    17.56s  user  발화 끝
+    22.32s  agent 발화 끝
+    22.55s  user  발화 시작: Review the order, please.
+    23.65s  <ret> 발화 (turn9 첫 프레임)
+    24.05s  agent 발화 시작: <ret> You have one Blue Widget at twenty-five dollars and tw
+    24.16s  user  발화 끝
+    25.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) 1x Blue Widget - $25.00, 2x Red Gadgets - $53.50
+    30.04s  user  발화 시작: Sounds right.
+    30.07s  agent 발화 끝
+    30.73s  user  발화 끝
+    30.85s  agent 발화 시작: Wonderful. I’m glad it matches your expectations.
+    34.43s  user  발화 시작: Okay, go ahead with the payment then. Use the card on file.
+    34.46s  agent 발화 끝
+    37.36s  <ret> 발화 (turn13 첫 프레임)
+    37.60s  agent 발화 시작: <ret> Absolutely. Processing your payment now.
+    37.76s  user  발화 끝
+    39.12s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.70s]: (tool result) payment successful
+    41.31s  agent 발화 끝
+    41.33s  agent 발화 시작: Your payment was successful. Your order is confirmed!
+    45.08s  agent 발화 끝
+    45.16s  user  발화 시작: Excellent. What's the estimated delivery date?
+    47.74s  <ret> 발화 (turn16 첫 프레임)
+    48.14s  agent 발화 시작: <ret> The estimated delivery date is October twenty-seventh.
+    48.22s  user  발화 끝
+    49.52s  user  발화 시작: Yeah.
+    49.66s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.42s]: (tool result) October 27th
+    50.15s  user  발화 끝
+    51.37s  user  발화 시작: Great. Thanks so much!
+    51.56s  agent 발화 끝
+    53.03s  user  발화 끝
+    53.06s  agent 발화 시작: You’re very welcome! I’m pleased I could help streamline you
+    60.94s  agent 발화 끝

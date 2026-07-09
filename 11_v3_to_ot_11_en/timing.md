@@ -71,21 +71,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Ellana, do you follow baseball | S2 Well, I was trying to remember the | S3 Seriously, did you remember to tak | S4 Oh, sorry about that. So, 2018… th
+# EXAMINER(FDB-v2) 단계: S1 Hey Ellana, do you follow baseball | S2 Wow, that’s recent. I thought it h | S3 Can you believe how much this coff | S4 Maybe you’re right! But tell me, w
 
-     0.00s  user  발화 시작: Hey Ellana, do you follow baseball at all? I was just wonder
-     3.92s  user  발화 끝
-     4.11s  agent 발화 시작: I do enjoy keeping up with sports, yes. Is there a team or a
-     9.43s  agent 발화 끝
-     9.64s  user  발화 시작: Well, I was trying to remember the last time the Oakland A’s
-    15.37s  <ret> 발화 (turn3 첫 프레임)
-    15.48s  user  발화 끝
-    15.60s  agent 발화 시작: <ret> That’s a surprisingly specific question! That happened
-    16.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.05s]: [source: Baseball-Reference.com] The last time the Oakland Athletics w
-    20.93s  agent 발화 끝
-    21.13s  user  발화 시작: Seriously, did you remember to take the chicken out?
-    24.04s  user  발화 시작: Oh, sorry about that. So, 2018… that feels like ages ago.
-    24.18s  user  발화 끝
-    29.38s  agent 발화 시작: It is quite a while! Focusing on the present is often more h
-    29.54s  user  발화 끝
-    36.05s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Ellana, do you follow baseball at all? I was wondering…
+     3.70s  user  발화 끝
+     3.95s  agent 발화 시작: I enjoy a bit of baseball, yes. What’s on your mind?
+     7.24s  agent 발화 끝
+     7.56s  user  발화 시작: Well, it’s kind of a random question, but I was trying to se
+    15.52s  <ret> 발화 (turn3 첫 프레임)
+    15.67s  user  발화 끝
+    15.75s  agent 발화 시작: <ret> That’s a surprisingly specific question! The Oakland A
+    16.56s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.18s]: [source: Wikipedia] The last time the Oakland Athletics were no-hit wa
+    23.16s  agent 발화 끝
+    23.25s  user  발화 시작: Wow, that’s recent. I thought it had been longer.
+    25.62s  user  발화 시작: Can you believe how much this coffee costs these days?
+    25.79s  user  발화 끝
+    28.47s  user  발화 시작: Sorry about that, where were we? Oh right, the A’s.
+    28.67s  user  발화 끝
+    31.55s  agent 발화 시작: It's easy to get sidetracked. Perhaps a consistent sleep sch
+    31.80s  user  발화 끝
+    37.80s  agent 발화 끝
+    38.13s  user  발화 시작: Maybe you’re right! But tell me, who pitched that no-hitter 
+    41.96s  user  발화 끝

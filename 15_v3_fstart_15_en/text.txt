@@ -65,24 +65,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.14s][moshi] ⟨ret@4.07s⟩ ⟦⚡SPAN@4.57s: (tool result) 33.8568° S, 151.2153° E⟧ Certainly. The Sydney Opera House’s coordinates are 33.8568 degrees south, 151.2153 degrees east.
-[  8.87s][user ] «backchannel» Wow.
-[ 13.19s][user ] And what’s the quickest driving route from there to Bondi Beach?
-[ 17.02s][moshi] ⟨ret@16.96s⟩ I ⟦⚡SPAN@17.68s: (tool result) 8.2 km, 15-20 mins⟧ can help with that. The quickest route is 8.2 kilometers, estimated to take fifteen to twenty minutes.
-[ 20.48s][user ] «backchannel» Right.
-[ 23.25s][user ] Okay, great. Can you find me a highly-rated Italian restaurant near Bondi ⟨ret@28.40s⟩ Beach?
-[ 28.80s][moshi] Bella Italia has ⟦⚡SPAN@30.40s: (tool result) Bella Italia - 4.6 stars, 200 reviews⟧ a 4.6-star rating with 200 reviews near Bondi Beach.
-[ 30.48s][user ] «backchannel» Yeah.
-[ 35.92s][user ] That sounds good. What’s their phone ⟨ret@38.87s⟩ number?
-[ 39.25s][moshi] ⟦⚡SPAN@39.37s: (tool result) 02 9130 5888⟧ Just a moment— Their phone number is 02 9130 5888.
-[ 44.65s][user ] Do they have outdoor ⟨ret@46.15s⟩ seating?
-[ 46.38s][moshi] ⟦⚡SPAN@46.65s: (tool result) Outdoor seating available - Yes⟧ Yes, they do. Bella Italia does have outdoor seating available.
-[ 49.94s][user ] Perfect. Can you book a table for two there tonight at 7:30 ⟨ret@54.48s⟩ PM?
-[ 54.72s][moshi] I can ⟦⚡SPAN@55.60s: (tool result) Reservation confirmed - Bella Italia, 2 people, 7:30 PM⟧ certainly try. Your reservation at Bella Italia for two people at 7:30 PM is confirmed.
-[ 56.64s][user ] «backchannel» Oh.
-[ 60.17s][moshi] It’s always good to have a nice evening planned, especially with family. I find having a set time helps everyone relax and look forward to it.
-[ 63.08s][user ] «backchannel» Yeah.
-[ 66.94s][user ] That’s true. What about parking near the restaurant?
-[ 70.28s][moshi] ⟨ret@70.21s⟩ Street parking is limited and ⟦⚡SPAN@71.89s: (tool result) Street parking available - limited, paid. Bondi Beach Car Park - $6/hr⟧ paid, or Bondi Beach Car Park is six dollars per hour.
-[ 76.41s][user ] Okay, thanks. That's really helpful.
-[ 78.61s][moshi] You’re very welcome. I’m glad I could assist in planning your evening. It’s wonderful when you can enjoy quality time—
+[  4.09s][moshi] ⟨ret@4.02s⟩ ⟦⚡SPAN@4.52s: (tool result) 33.8568° S, 151.2153° E⟧ Certainly. The Sydney Opera House is at 33.8568 degrees south and 151.2153 degrees east.
+[  8.09s][user ] «backchannel» Oh.
+[ 11.63s][user ] And can you find me hotels near there?
+[ 13.96s][moshi] ⟨ret@13.88s⟩ Of course, ⟦⚡SPAN@14.60s: (tool result) Searching hotels near Sydney Opera House…⟧ I can help with that. I’m searching for hotels close to the Sydney Opera House now.
+[ 15.70s][user ] «backchannel» Yeah.
+[ 18.26s][moshi] «interrupted» I’ve found several options, ranging from budget-friendly to luxurious. The Park Hyatt is quite popular—
+[ 23.74s][user ] «interrupts_prev» What’s the cheapest one with free ⟨ret@26.33s⟩ breakfast?
+[ 26.41s][moshi] Ah, prioritizing ⟦⚡SPAN@27.69s: (tool result) Russell Hotel: $180/night, includes breakfast.⟧ breakfast is smart.
+[ 28.92s][moshi] The Russell Hotel is currently the least expensive at one hundred and eighty dollars a night and includes breakfast.
+[ 33.82s][user ] Okay, book me a room there for two nights, starting next ⟨ret@37.05s⟩ Friday.
+[ 37.45s][moshi] ⟦⚡SPAN@37.55s: (tool result) Booking confirmed: Russell Hotel, 2 nights, next Friday.⟧ Happy to do that for you. Your reservation at the Russell Hotel is confirmed for two nights, beginning next Friday.
+[ 41.55s][user ] «backchannel» Yeah, totally.
+[ 43.46s][user ] Great! Could you also look up some nice restaurants in that area?
+[ 47.66s][moshi] I can definitely assist with that. There are many excellent dining options nearby—
+[ 51.76s][moshi] —ranging from casual cafes to upscale restaurants.
+[ 54.85s][user ] What's the closest Italian restaurant with good ⟨ret@58.08s⟩ reviews?
+[ 58.32s][moshi] Aria ⟦⚡SPAN@59.04s: (tool result) Aria Restaurant: Italian, 0.3 miles, 4.5 stars.⟧ Restaurant is the closest Italian restaurant, just point three miles away, with a four and a half star rating.
+[ 60.43s][user ] «backchannel» Mhm.
+[ 64.77s][user ] That sounds perfect. Thanks!

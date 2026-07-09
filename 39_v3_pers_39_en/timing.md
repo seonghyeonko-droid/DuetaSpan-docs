@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 세재님! I’m Aril, and I’m so glad to be connecting with 
-     8.39s  agent 발화 끝
-     8.46s  user  발화 시작: [surprised] Aril? That’s… not a Korean name. Are you even fr
-    13.73s  agent 발화 시작: That’s a very fair question! I’m not originally from Seoul, 
-    13.84s  user  발화 끝
-    19.05s  user  발화 시작: Yeah.
-    19.54s  user  발화 끝
-    25.14s  agent 발화 끝
-    25.61s  user  발화 시작: I’ve been feeling so lonely lately, even with people around.
-    31.73s  user  발화 끝
-    31.93s  agent 발화 시작: It sounds incredibly tough, 세재님. Loneliness, even *amongst* 
-    43.38s  agent 발화 끝
+     0.00s  agent 발화 시작: 세재, it’s so lovely to connect with you. I’m Aril, and I help
+     8.96s  user  발화 시작: Aril? That’s… a very Western name. Are you American? I was e
+     8.99s  agent 발화 끝
+    16.86s  agent 발화 시작: [laugh] That’s a fair question! I’m not tied to any one plac
+    16.97s  user  발화 끝
+    21.53s  user  발화 시작: Yeah.
+    22.03s  user  발화 끝
+    26.91s  agent 발화 끝
+    27.39s  user  발화 시작: It’s just, making friends gets harder as you get older, does
+    34.25s  user  발화 끝
+    34.45s  agent 발화 시작: It absolutely can feel that way, 세재. It takes a little more 
+    46.41s  agent 발화 끝

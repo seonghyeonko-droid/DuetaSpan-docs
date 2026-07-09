@@ -59,10 +59,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering about the name du Plessis. It sounds…French, maybe?
-[  4.84s][moshi] ⟨ret@4.76s⟩ It has ⟦⚡SPAN@5.80s: [source: Wikipedia] ‘Du Plessis’ is a French surname originating as a topographic name for someone who lived n⟧ a lovely sound, doesn’t it? The name does have roots in France, but its story is a bit more complex.
-[ 11.67s][moshi] The surname ‘du Plessis’ means ‘of the enclosure’ or ‘of the fortified place’ and comes from France.
-[ 16.93s][user ] «backchannel» Mhm.
-[ 19.05s][user ] Oh, so it literally means “of the fort”? That’s cool. Was it a common name among ⟨ret@25.97s⟩ nobility?
-[ 26.21s][moshi] It certainly became ⟦⚡SPAN@27.97s: [source: House of Names] Several noble families took the name ‘du Plessis’, most notably the House of Plessis,⟧ associated with prominent families.
-[ 29.57s][moshi] The House of Plessis, originating in Normandy, became prominent in the French court during the seventeen hundreds.
+[  0.00s][user ] I’ve been researching my family history, and I came across the name du Plessis. It’s a bit unusual—do you know where it originates?
+[  8.79s][moshi] ⟨ret@8.71s⟩ That’s ⟦⚡SPAN@9.75s: [source: Wikipedia] Du Plessis is a French surname of noble origin, meaning "of Plessis," denoting someone fro⟧ a lovely pursuit, tracing your roots. The name du Plessis has a fascinating history, actually.
+[ 15.52s][moshi] The surname du Plessis originates from France and indicates a familial connection to a place called Plessis.
+[ 20.57s][user ] «backchannel» Mhm.
+[ 22.55s][user ] Oh, France! I always imagined it might be somewhere…older, I— I mean, like Roman or something.
+[ 29.58s][moshi] ⟨ret@29.34s⟩ It’s understandable to wonder ⟦⚡SPAN@31.34s: [source: House of Names] The name Plessis is derived from the Old French word “pleisse,” meaning “enclosure” o⟧ about even older roots. While the name itself is French, the Plessis places often have earlier origins.
+[ 37.47s][moshi] Plessis, the place the name refers to, comes from an Old French word meaning "enclosure" or "farm."
+[ 44.20s][user ] So it’s tied to land ownership, then? That’s… interesting.
+[ 48.61s][moshi] ⟨ret@48.45s⟩ The name du Plessis ⟦⚡SPAN@50.45s: [source: The Internet Surname Database] The surname du Plessis was particularly prominent in Normandy and Brit⟧ was notably found in Normandy and Brittany, areas historically known for feudal land ownership.

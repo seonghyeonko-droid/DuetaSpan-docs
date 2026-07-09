@@ -50,39 +50,41 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote ‘My Love, My | S2 That makes sense. [laugh] Do you k | S3 Wow, that feels like ages ago! I w | S4 I've heard that name before. Well,
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 Right, ABBA! Of course. Um, what a | S3 Chess? I didn’t know that. That’s  | S4 That’s really cool. I think I’ll l
 
-     0.00s  user  발화 시작: Do you know who wrote ‘My Love, My Life’ from Mamma Mia? It'
-     5.44s  <ret> 발화 (turn1 첫 프레임)
-     5.65s  user  발화 끝
-     5.68s  agent 발화 시작: <ret> It is a truly lovely piece, isn't it? It’s wonderful y
-     7.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: [source: Wikipedia] ‘My Love, My Life’ was written by Björn Ulvaeus.
-    11.87s  agent 발화 시작: Björn Ulvaeus wrote ‘My Love, My Life’ for the musical Mamma
-    11.88s  agent 발화 끝
-    16.03s  agent 발화 끝
-    16.46s  user  발화 시작: Oh, Björn Ulvaeus! I always get the ABBA members mixed up.
-    20.55s  <ret> 발화 (turn4 첫 프레임)
-    20.66s  user  발화 끝
-    20.71s  agent 발화 시작: <ret> It’s perfectly understandable, they were a very collab
-    22.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: [source: AllMusic] Benny Andersson and Björn Ulvaeus were the primary 
-    27.82s  agent 발화 시작: Benny Andersson and Björn Ulvaeus primarily wrote the songs 
-    28.08s  agent 발화 끝
-    32.79s  agent 발화 끝
-    33.13s  user  발화 시작: That makes sense. [laugh] Do you know what year Mamma Mia! t
-    38.61s  <ret> 발화 (turn7 첫 프레임)
-    38.84s  agent 발화 시작: <ret> The movie *Mamma Mia!* was released in two thousand an
-    39.02s  user  발화 끝
-    40.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.65s]: (tool result) 2008
-    42.33s  user  발화 시작: Wow, that feels like ages ago! I was still in high school th
-    42.49s  agent 발화 끝
-    48.33s  <ret> 발화 (turn9 첫 프레임)
-    48.48s  agent 발화 시작: <ret> It’s amazing how music can transport us back to specif
-    48.58s  user  발화 끝
-    49.29s  ⚡SPAN 주입(IRRELEVANT) [d'=0.96s / d_lead=5.14s]: (tool result) AAPL: 170.34
-    53.06s  <ret> 발화 (turn10 첫 프레임)
-    53.45s  agent 발화 시작: <ret> Phyllida Lloyd directed the film adaptation of *Mamma 
-    53.62s  agent 발화 끝
-    54.98s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.79s]: [source: IMDb] *Mamma Mia!* was directed by Phyllida Lloyd.
-    57.24s  agent 발화 끝
-    58.01s  user  발화 시작: I've heard that name before. Well, thanks for the info! This
-    64.78s  user  발화 끝
+     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
+     5.04s  <ret> 발화 (turn1 첫 프레임)
+     5.24s  user  발화 끝
+     5.27s  agent 발화 시작: <ret> Björn Ulvaeus wrote “My Love, My Life” for the musical
+     7.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Wikipedia] "My Love, My Life" was written by Björn Ulvaeus.
+     9.99s  agent 발화 끝
+    10.04s  user  발화 시작: Oh, Björn Ulvaeus! I knew it sounded familiar. What else did
+    14.80s  <ret> 발화 (turn3 첫 프레임)
+    14.95s  agent 발화 시작: <ret> He was incredibly prolific, alongside Benny Andersson,
+    15.09s  user  발화 끝
+    16.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: [source: AllMusic] Björn Ulvaeus and Benny Andersson composed almost a
+    19.98s  agent 발화 시작: Björn Ulvaeus and Benny Andersson collaborated on nearly all
+    20.00s  agent 발화 끝
+    25.12s  agent 발화 끝
+    25.34s  user  발화 시작: Right, ABBA! Of course. Um, what about other musicals, did h
+    30.37s  <ret> 발화 (turn6 첫 프레임)
+    30.60s  agent 발화 시작: <ret> Björn Ulvaeus also co-wrote the musical Chess, alongsi
+    30.75s  user  발화 끝
+    32.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: [source: IMDB] Björn Ulvaeus co-wrote the musical Chess, with Tim Rice
+    35.23s  agent 발화 끝
+    35.43s  user  발화 시작: Chess? I didn’t know that. That’s interesting. I— I mean, is
+    41.00s  <ret> 발화 (turn8 첫 프레임)
+    41.16s  agent 발화 시작: <ret> It’s a fascinating piece, quite different from Mamma M
+    41.31s  user  발화 끝
+    41.96s  ⚡SPAN 주입(IRRELEVANT) [d'=0.96s / d_lead=4.91s]: (tool result) AAPL: 170.34 +0.45 (0.26%)
+    46.06s  agent 발화 끝
+    46.19s  user  발화 시작: A Cold War theme… hmm. So he really moves between genres eas
+    51.59s  agent 발화 시작: He seems to have a knack for adapting his songwriting to var
+    51.71s  user  발화 끝
+    53.69s  user  발화 시작: Yeah.
+    54.14s  user  발화 끝
+    56.57s  user  발화 시작: That’s really cool. I think I’ll look into Chess. Thanks, Kl
+    56.59s  agent 발화 끝
+    60.95s  agent 발화 시작: You’re very welcome. Exploring different music is a wonderfu
+    60.97s  user  발화 끝
+    66.75s  agent 발화 끝

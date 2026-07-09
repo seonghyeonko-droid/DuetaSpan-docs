@@ -65,19 +65,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What mode of government does the anarchists hate?
-[  2.65s][moshi] ⟨ret@2.49s⟩ That’s a really interesting question! ⟦⚡SPAN@4.49s: (no information found)⟧ It appears there isn’t a single, universally agreed-upon answer to that.
-[  5.78s][user ] «backchannel» Uh-huh.
-[  8.27s][user ] Hmm. Okay. What about the most famous anarchist thinkers – who did *they* ⟨ret@13.71s⟩ criticize?
-[ 13.87s][moshi] Proudhon opposed centralized ⟦⚡SPAN@15.71s: [source: Wikipedia] “Pierre-Joseph Proudhon was a French socialist, political philosopher, and mutualist who o⟧ government, advocating for a society organized through voluntary associations.
-[ 21.07s][user ] Right, mutualism. But that’s just one person. What about, uh, Bakunin?
-[ 26.65s][moshi] [happy] Bakunin also vehemently opposed the state, seeing it as inherently oppressive and a tool of the ruling class.
-[ 33.11s][user ] Oppressive, yeah, I get that. But what specific *form* of government did he think was worst?.
-[ 39.03s][moshi] «interrupted» Bakunin believed any form of government—whether monarchy or republic—was unacceptable—
-[ 43.73s][user ] «interrupts_prev» So he didn’t really differentiate between them? Like, did he hate dictatorships *more* than democracies?
-[ 49.99s][moshi] That’s a very insightful question! He didn’t differentiate, viewing all hierarchical structures as equally detrimental to liberty.
-[ 57.00s][user ] Okay, so it's the hierarchy itself, not the specific system. Interesting. Can you find me some information on Emma Goldman’s ⟨ret@64.04s⟩ views?
-[ 64.17s][moshi] Goldman opposed all ⟦⚡SPAN@66.04s: [source: Britannica] “Emma Goldman advocated for anarchism, opposing all forms of compulsory authority and cha⟧ forms of compulsory authority, emphasizing individual freedom as central to anarchist thought.
-[ 70.97s][user ] So, consistent across the board, then. No preference for one bad system over another?
-[ 75.84s][moshi] Precisely. The core tenet seems to be the rejection of coercive power in any manifestation.
-[ 82.87s][user ] That makes sense. Thanks, Frunax. That was really helpful.
-[ 85.88s][moshi] You’re very welcome! As a trip planner, I often find understanding different perspectives helps build a more flexible itinerary—it’s a similar skill, really.
+[  2.52s][moshi] ⟨ret@2.36s⟩ That’s a really interesting question! ⟦⚡SPAN@4.36s: (no information found)⟧ Unfortunately, I don’t have a clear answer for that right now.
+[  5.55s][user ] «backchannel» Uh-huh.
+[  7.98s][user ] Okay. What about the United States? What kind of government is ⟨ret@12.18s⟩ that?
+[ 12.34s][moshi] The United States operates ⟦⚡SPAN@14.18s: [source: Britannica] The United States is a constitutional federal republic, with a presidential system.⟧ as a constitutional federal republic with a presidential system.
+[ 17.87s][user ] And what does “constitutional” mean, exactly?
+[ 20.46s][moshi] It means the government’s power is limited by a constitution—a set of fundamental principles and laws. It’s designed to protect individual rights.
+[ 28.68s][user ] Right. So, how does that compare to, say, a monarchy?
+[ 31.96s][moshi] ⟨ret@31.82s⟩ A monarchy is ruled by ⟦⚡SPAN@33.82s: [source: National Geographic] In a monarchy, a single person—the monarch—rules until death or abdication, ofte⟧ a single monarch who inherits the position and rules until they die or step down.
+[ 38.26s][user ] That sounds… pretty different. Do many countries still have monarchies?
+[ 42.93s][moshi] «interrupted» Quite a few, actually. There are forty-four sovereign states with monarchs currently—
+[ 47.01s][user ] «interrupts_prev» But are those monarchs like, actually powerful, or are they mostly just for show?
+[ 51.89s][moshi] That varies quite a bit! Some—like Saudi Arabia—have significant political power, while others—like the United Kingdom—are largely ceremonial.
+[ 62.13s][user ] Oh, interesting. So the UK’s king doesn’t really *make* laws?
+[ 65.80s][moshi] Not directly, no. The UK operates as a parliamentary democracy, where laws are made by the elected Parliament, and the monarch’s role is largely symbolic.
+[ 74.49s][user ] That makes sense. I'm trying to figure out the best place for a relaxing vacation… somewhere with a stable government.
+[ 81.66s][moshi] A stable government is certainly important for peace of mind on vacation! Perhaps somewhere in Scandinavia would be a good fit? They consistently rank high in stability.
+[ 86.15s][user ] «backchannel» Yeah, totally.
+[ 91.02s][user ] Scandinavia… hmm. That sounds cold, though. Are there warm, stable places?
+[ 96.00s][moshi] Absolutely! Costa Rica is known for its political stability and beautiful, warm climate. It’s a popular choice for those seeking relaxation and nature.

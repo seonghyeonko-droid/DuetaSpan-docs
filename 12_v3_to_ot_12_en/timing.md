@@ -58,23 +58,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Hey, did you take out the trash ye | S3 Sorry about that. Back to the song | S4 That's so cool! [happy] I can only
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, who actually | S2 Hey, did you remember to take the  | S3 Sorry about that. So, Van Halen ju | S4 That’s incredible! Jackson went to
 
-     0.00s  user  발화 시작: I was just listening to Beat It, and I was wondering who pla
-     4.89s  <ret> 발화 (turn1 첫 프레임)
-     5.13s  agent 발화 시작: <ret> That’s a great question— Eddie Van Halen played the gu
-     5.28s  user  발화 끝
-     5.77s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.44s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     7.52s  user  발화 시작: Okay.
-     8.11s  user  발화 끝
-    11.24s  agent 발화 끝
-    11.52s  user  발화 시작: Wow, really? I always thought it sounded different from his 
-    15.76s  user  발화 시작: Hey, did you take out the trash yet?
-    15.96s  user  발화 끝
-    17.87s  user  발화 시작: Sorry about that. Back to the song—was he asked specifically
-    18.11s  user  발화 끝
-    24.13s  agent 발화 시작: Michael Jackson actually approached Eddie Van Halen directly
-    24.31s  user  발화 끝
-    30.11s  agent 발화 끝
-    30.78s  user  발화 시작: That's so cool! [happy] I can only imagine Eddie Van Halen's
-    36.80s  user  발화 끝
+     0.00s  user  발화 시작: I was just wondering, who actually played the guitar solo on
+     6.64s  <ret> 발화 (turn1 첫 프레임)
+     6.88s  agent 발화 시작: <ret> That’s a great question, and a very famous solo. Eddie
+     7.05s  user  발화 끝
+     8.40s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.08s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+    10.03s  user  발화 시작: Okay.
+    10.57s  user  발화 끝
+    15.09s  agent 발화 끝
+    15.15s  user  발화 시작: Wow, really? I always thought it was someone else. That's am
+    20.01s  user  발화 시작: Hey, did you remember to take the trash out?
+    20.16s  user  발화 끝
+    22.83s  user  발화 시작: Sorry about that. So, Van Halen just… agreed to do it?
+    23.06s  user  발화 끝
+    26.41s  <ret> 발화 (turn6 첫 프레임)
+    26.80s  agent 발화 시작: <ret> It’s a fascinating story, actually. He was initially h
+    26.99s  user  발화 끝
+    28.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [source: Rolling Stone] Van Halen initially refused to play on “Beat I
+    31.91s  agent 발화 시작: Michael Jackson personally visited Eddie Van Halen and persu
+    31.99s  agent 발화 끝
+    37.24s  agent 발화 끝
+    37.28s  user  발화 시작: That’s incredible! Jackson went to *him*? I had no idea.
+    42.12s  agent 발화 시작: It really highlights Jackson’s dedication to getting exactly
+    42.28s  user  발화 끝
+    51.11s  agent 발화 끝

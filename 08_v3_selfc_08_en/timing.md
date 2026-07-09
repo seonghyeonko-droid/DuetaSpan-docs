@@ -55,95 +55,131 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Excellent. Is there power at the s | S3 Okay. And roughly how long is the  | S4 Three eighty sounds much better. C
+# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Do they have any good hiking trail | S3 Okay, good to know. And what about | S4 Great. And are there any special e
 
      0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     4.09s  <ret> 발화 (turn1 첫 프레임)
-     4.49s  agent 발화 시작: <ret> There's a bus departing at ten fifteen AM, costing two
-     4.67s  user  발화 끝
-     6.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) 10:15 AM departure, $285 per person, arrives 6:00 PM.
-     8.11s  user  발화 시작: Yeah.
-     8.70s  user  발화 끝
-    13.34s  agent 발화 끝
-    13.41s  user  발화 시작: That sounds good. Can you book that for us?
-    15.83s  <ret> 발화 (turn4 첫 프레임)
-    15.86s  user  발화 끝
-    16.07s  agent 발화 시작: <ret> Absolutely, I can take care of that. Your booking is c
-    17.11s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.02s]: (tool result) Booking confirmed. Reference number is 7X9L2P.
-    24.24s  user  발화 시작: Perfect. And what’s the baggage allowance on that bus?
-    24.27s  agent 발화 끝
-    27.53s  <ret> 발화 (turn6 첫 프레임)
-    27.69s  agent 발화 시작: <ret> Each passenger is allowed one checked bag and one carr
-    27.84s  user  발화 끝
-    29.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) One checked bag and one carry-on allowed per passenger.
-    32.74s  agent 발화 끝
-    33.37s  user  발화 시작: Great. Do they have Wi-Fi on board?
-    35.51s  <ret> 발화 (turn8 첫 프레임)
+     3.92s  <ret> 발화 (turn1 첫 프레임)
+     4.31s  agent 발화 시작: <ret> There’s a bus departing at two thirty PM on May tenth,
+     4.49s  user  발화 끝
+     5.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) Buses_3_FindBus: Chicago to Denver, May 10th, 3 passenge
+     7.14s  user  발화 시작: Yeah.
+     7.78s  user  발화 끝
+    11.29s  user  발화 시작: That sounds good. Book it for me.
+    11.31s  agent 발화 끝
+    13.88s  user  발화 끝
+    13.94s  <ret> 발화 (turn4 첫 프레임)
+    14.17s  agent 발화 시작: <ret> Happy to arrange that for you. Your booking is confirm
+    15.54s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.50s]: (tool result) Buses_3_BookBus: Confirmation #B7294 - Chicago to Denver
+    22.89s  user  발화 시작: Can you remind me about it the day before?
+    22.93s  agent 발화 끝
+    24.79s  <ret> 발화 (turn6 첫 프레임)
+    24.95s  agent 발화 시작: <ret> Of course, I can set a reminder. I’ve set a reminder f
+    25.10s  user  발화 끝
+    25.91s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.51s]: (tool result) Reminders_3_SetReminder: Reminder set - May 9th, 10:00 A
+    32.13s  agent 발화 끝
+    32.69s  user  발화 시작: Great. What’s the weather like in Denver on that day?
+    35.48s  <ret> 발화 (turn8 첫 프레임)
+    35.87s  agent 발화 시작: <ret> It will be sunny in Denver on May tenth, seventy-five 
     35.87s  user  발화 끝
-    35.91s  agent 발화 시작: <ret> That’s a good question to ask. Yes, free Wi-Fi is avai
-    36.01s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.84s]: (tool result) Yes, free Wi-Fi is available during the journey.
-    40.38s  user  발화 시작: Yeah.
-    41.01s  user  발화 끝
-    43.00s  agent 발화 끝
-    45.46s  user  발화 시작: Excellent. Is there power at the seats?
-    48.14s  <ret> 발화 (turn11 첫 프레임)
-    48.51s  user  발화 끝
-    48.54s  agent 발화 시작: <ret> Yes, each seat has access to a power outlet.
-    50.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.94s]: (tool result) Power outlets are available at each seat.
-    52.47s  agent 발화 끝
-    52.72s  user  발화 시작: Wonderful. Uh, actually—
-    54.97s  user  발화 시작: What about food options along the way?
-    55.03s  user  발화 끝
-    57.52s  <ret> 발화 (turn14 첫 프레임)
-    57.70s  user  발화 끝
-    57.75s  agent 발화 시작: <ret> That’s a very practical consideration. Limited snacks 
-    58.72s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.43s]: (tool result) Limited snacks and drinks available for purchase.
-    65.54s  agent 발화 끝
-    66.11s  user  발화 시작: Okay. And roughly how long is the journey?
-    68.44s  <ret> 발화 (turn16 첫 프레임)
-    68.68s  agent 발화 시작: <ret> The estimated journey duration is eight hours and fort
-    68.79s  user  발화 끝
-    70.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (tool result) Estimated travel time is eight hours and forty-five minu
-    73.53s  agent 발화 끝
-    75.99s  user  발화 시작: Eight and a half hours… hmm. Could we look at flights instea
-    81.17s  <ret> 발화 (turn18 첫 프레임)
-    81.33s  agent 발화 시작: <ret> Of course, we can explore flight options. The cheapest
-    81.55s  user  발화 끝
-    83.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.15s]: (tool result) Cheapest flight: $350, departs 8:00 AM, arrives 10:30 AM
-    89.15s  user  발화 시작: Mhm.
-    89.83s  user  발화 끝
-    92.13s  agent 발화 끝
-    92.70s  user  발화 시작: That’s a bit pricey. Are there any flights around noon?
-    95.64s  <ret> 발화 (turn21 첫 프레임)
-    96.04s  agent 발화 시작: <ret> A flight departing at twelve fifteen PM costs four hun
-    96.27s  user  발화 끝
-    97.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Noon flight: $420, departs 12:15 PM, arrives 2:45 PM.
-   104.28s  user  발화 시작: Four twenty… hmm. Actually, make that 1 PM. I— I mean, check
-   104.29s  agent 발화 끝
-   112.25s  <ret> 발화 (turn23 첫 프레임)
-   112.64s  agent 발화 시작: <ret> There’s a flight departing at one oh five PM, costing 
-   112.65s  user  발화 끝
-   114.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) 1:00 PM flight: $380, departs 1:05 PM, arrives 3:35 PM.
-   117.74s  user  발화 시작: Right.
-   118.52s  user  발화 끝
-   120.84s  agent 발화 끝
-   122.70s  user  발화 시작: Three eighty sounds much better. Can we book that one?
-   125.96s  <ret> 발화 (turn26 첫 프레임)
-   126.04s  agent 발화 시작: <ret> Absolutely, let's secure that flight for you. Your fli
-   126.21s  user  발화 끝
-   126.46s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.23s]: (tool result) Flight booked. Confirmation number is QW3R8T.
-   130.05s  user  발화 시작: Yeah.
-   130.69s  user  발화 끝
-   134.76s  user  발화 시작: Perfect. And could you send me a copy of the itinerary to my
-   134.80s  agent 발화 끝
-   139.17s  <ret> 발화 (turn29 첫 프레임)
-   139.49s  agent 발화 시작: <ret> Of course, I can forward the itinerary. The itinerary 
-   139.63s  user  발화 끝
-   140.61s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.52s]: (tool result) Itinerary sent to your registered email address.
-   142.11s  user  발화 시작: Yeah, totally.
-   143.40s  user  발화 끝
-   145.97s  agent 발화 끝
-   146.86s  user  발화 시작: Thank you so much, Oruus. You’ve been a great help.
-   149.44s  user  발화 끝
-   149.81s  agent 발화 시작: It’s my pleasure to assist you. Taking care of travel arrang
-   158.57s  agent 발화 끝
+    35.98s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.81s]: (tool result) Weather_3_GetForecast: Denver, May 10th - Sunny, 75°F, W
+    38.88s  user  발화 시작: Yeah.
+    39.51s  user  발화 끝
+    40.68s  agent 발화 끝
+    42.89s  user  발화 시작: That’s perfect. I’m packing light clothes then.
+    46.13s  user  발화 끝
+    46.45s  agent 발화 시작: That sounds like a good plan. Denver’s May weather is usuall
+    52.42s  agent 발화 끝
+    52.69s  user  발화 시작: Do they have any good hiking trails near Denver?
+    54.98s  <ret> 발화 (turn13 첫 프레임)
+    55.38s  agent 발화 시작: <ret> Denver is a wonderful place for hiking. Red Rocks Trai
+    55.59s  user  발화 끝
+    56.74s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.56s]: (tool result) Trails_3_FindTrails: Denver area - Red Rocks Trail (5.2 
+    67.58s  agent 발화 끝
+    68.94s  user  발화 시작: Red Rocks sounds nice. What’s the elevation gain on that one
+    72.14s  <ret> 발화 (turn15 첫 프레임)
+    72.54s  agent 발화 시작: <ret> The Red Rocks Trail has an elevation gain of fourteen 
+    72.64s  user  발화 끝
+    73.34s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.81s]: (tool result) Trails_3_GetTrailDetails: Red Rocks Trail - Elevation Ga
+    77.35s  agent 발화 끝
+    77.51s  user  발화 시작: Hmm, fourteen hundred feet… that’s pretty steep—
+    81.98s  user  발화 시작: Is there a shorter, easier trail nearby?
+    82.00s  user  발화 끝
+    84.98s  user  발화 끝
+    85.15s  agent 발화 시작: —it is a bit challenging.
+    86.51s  <ret> 발화 (turn19 첫 프레임)
+    86.67s  agent 발화 시작: <ret> Bear Creek Lake Park Trail is two point eight miles an
+    86.81s  agent 발화 끝
+    88.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) Trails_3_FindTrails: Denver area - Bear Creek Lake Park 
+    90.34s  user  발화 시작: Mhm.
+    90.98s  user  발화 끝
+    91.90s  agent 발화 끝
+    93.49s  user  발화 시작: That sounds much better. Is there parking at the trailhead?
+    96.61s  <ret> 발화 (turn22 첫 프레임)
+    96.76s  agent 발화 시작: <ret> Parking is usually available there. Yes, there is park
+    96.96s  user  발화 끝
+    97.81s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.26s]: (tool result) Trails_3_GetTrailDetails: Bear Creek Lake Park Trail - P
+   102.64s  user  발화 시작: Okay, good to know. And what about restaurants near the trai
+   102.64s  agent 발화 끝
+   106.69s  <ret> 발화 (turn24 첫 프레임)
+   106.76s  agent 발화 시작: <ret> The Farmhouse at Breckenridge Brewery is near the trai
+   106.80s  user  발화 끝
+   107.19s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.98s]: (tool result) Restaurants_3_FindRestaurants: Near Bear Creek Lake Park
+   109.15s  user  발화 시작: Right.
+   109.88s  user  발화 끝
+   110.74s  agent 발화 끝
+   112.59s  user  발화 시작: Is it expensive?
+   113.31s  <ret> 발화 (turn27 첫 프레임)
+   113.62s  agent 발화 시작: <ret> It’s moderately priced, indicated by two dollar signs.
+   113.83s  user  발화 끝
+   115.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: (tool result) Restaurants_3_GetRestaurantDetails: The Farmhouse - Pric
+   115.59s  user  발화 시작: Yeah.
+   116.31s  user  발화 끝
+   117.98s  user  발화 시작: Moderate is fine. Can you make a reservation there for two p
+   118.07s  agent 발화 끝
+   124.36s  <ret> 발화 (turn30 첫 프레임)
+   124.52s  agent 발화 시작: <ret> I can certainly try to make that reservation. Your res
+   124.65s  user  발화 끝
+   126.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.62s]: (tool result) Restaurants_3_BookRestaurant: The Farmhouse - Reservatio
+   127.84s  user  발화 시작: Yeah, totally.
+   129.36s  user  발화 끝
+   132.68s  agent 발화 끝
+   133.57s  user  발화 시작: Wonderful. That all sounds perfect.
+   136.67s  user  발화 끝
+   136.80s  agent 발화 시작: It's my pleasure to help you plan your trip. It sounds like 
+   142.73s  agent 발화 끝
+   143.02s  user  발화 시작: I’m also thinking of visiting the Denver Art Museum. What ar
+   147.09s  <ret> 발화 (turn35 첫 프레임)
+   147.14s  user  발화 끝
+   147.16s  agent 발화 시작: <ret> The Denver Art Museum is open daily from ten AM to fiv
+   147.59s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.00s]: (tool result) Museums_3_GetHours: Denver Art Museum - Open Daily 10 AM
+   150.39s  user  발화 시작: Yeah.
+   151.02s  user  발화 끝
+   152.16s  agent 발화 끝
+   152.45s  user  발화 시작: Great. And are there any special exhibits going on then?
+   155.66s  <ret> 발화 (turn38 첫 프레임)
+   155.74s  agent 발화 시작: <ret> They are showing "Modern Masters" and "Colorado Artist
+   155.83s  user  발화 끝
+   157.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) Museums_3_GetExhibits: Denver Art Museum - "Modern Maste
+   158.12s  user  발화 시작: Yeah.
+   158.76s  user  발화 끝
+   160.47s  agent 발화 끝
+   160.79s  user  발화 시작: "Colorado Artists" sounds interesting.
+   163.33s  user  발화 끝
+   163.44s  agent 발화 시작: It’s wonderful to support local artists when you travel.
+   167.08s  user  발화 시작: I agree. Could you add a reminder to my phone to check out t
+   167.56s  agent 발화 끝
+   170.43s  <ret> 발화 (turn43 첫 프레임)
+   170.82s  agent 발화 시작: <ret> Absolutely, I can add that reminder. I’ve set a remind
+   170.92s  user  발화 끝
+   171.71s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.49s]: (tool result) Reminders_3_SetReminder: Reminder set - May 10th, 2:00 P
+   177.24s  user  발화 시작: Perfect. Thank you so much for your help, Oruus.
+   177.45s  agent 발화 끝
+   180.46s  user  발화 끝
+   180.65s  agent 발화 시작: You are very welcome. I'm glad I could assist you in prepari
+   189.56s  agent 발화 끝
+   190.62s  user  발화 시작: I will. One last thing— what time is sunset in Denver on May
+   195.87s  <ret> 발화 (turn47 첫 프레임)
+   196.26s  agent 발화 시작: <ret> Sunset in Denver on May tenth will be at eight fifteen
+   196.32s  user  발화 끝
+   197.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) Weather_3_GetSunset: Denver, May 10th - Sunset: 8:15 PM.
+   201.49s  agent 발화 끝

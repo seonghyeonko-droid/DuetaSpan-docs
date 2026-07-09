@@ -60,59 +60,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yes, I need to get to the Musée d' | S2 Which one is the most direct? | S3 Hmm, that’s a bit pricey. | S4 Maybe. Is there a nice vegetarian 
+# EXAMINER(FDB-v2) 단계: S1 Yes, I need to get to a bakery. Do | S2 I’ll take the metro, I think. Is i | S3 Do they have good vegetarian optio | S4 Yes, please. That would be great.
 
      0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
-     5.75s  user  발화 시작: Yes, I need to get to the Musée d'Orsay. What’s the quickest
-     5.79s  agent 발화 끝
-     9.89s  <ret> 발화 (turn2 첫 프레임)
-     9.96s  agent 발화 시작: <ret> Knowing your starting point helps me find the best rou
-    10.19s  user  발화 끝
-    11.09s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.46s]: [2026-02-11] User's home address is 30 Oak Avenue.
-    17.82s  user  발화 시작: Yeah, yeah.
-    19.28s  user  발화 끝
-    21.04s  agent 발화 끝
-    21.23s  user  발화 시작: That sounds good. Is there a bus I could take?
-    23.53s  agent 발화 시작: Certainly. There are several bus lines that go near the Musé
-    23.69s  user  발화 끝
-    25.77s  user  발화 시작: Mm-hmm.
-    26.36s  user  발화 끝
-    27.53s  user  발화 시작: Which one is the most direct?
-    27.79s  agent 발화 끝
-    28.96s  <ret> 발화 (turn8 첫 프레임)
-    29.11s  agent 발화 시작: <ret> Bus line 69 goes directly from near 30 Oak Avenue to t
-    29.28s  user  발화 끝
-    30.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Bus line 69 will take you directly from Oak Avenue to th
-    34.37s  user  발화 시작: Yeah.
-    34.77s  user  발화 끝
-    36.59s  agent 발화 시작: It's important to check the real-time schedule, as Parisian 
-    36.80s  agent 발화 끝
-    45.25s  agent 발화 끝
-    46.57s  user  발화 시작: No, that’s okay. How much would an Uber cost?
-    49.27s  <ret> 발화 (turn12 첫 프레임)
-    49.34s  agent 발화 시작: <ret> I can quickly estimate the fare for you. An Uber from 
-    49.52s  user  발화 끝
-    51.19s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.85s]: (tool result) An Uber from 30 Oak Avenue to the Musée d'Orsay will cos
-    52.87s  user  발화 시작: Yeah.
-    53.36s  user  발화 끝
-    57.54s  agent 발화 끝
-    58.86s  user  발화 시작: Hmm, that’s a bit pricey.
-    60.29s  agent 발화 시작: It can be, especially during peak hours. Are you traveling a
-    60.43s  user  발화 끝
-    64.64s  agent 발화 끝
-    64.80s  user  발화 시작: No, my friend Sophie is with me.
-    66.64s  user  발화 끝
-    66.83s  agent 발화 시작: That’s good to know. It might be more comfortable to share a
-    71.09s  user  발화 시작: Maybe. Is there a nice vegetarian restaurant near the museum
-    71.18s  agent 발화 끝
-    74.61s  <ret> 발화 (turn19 첫 프레임)
-    74.92s  agent 발화 시작: <ret> I recall you mentioned your dietary preference. Yes, t
-    74.93s  user  발화 끝
-    76.37s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.92s]: [2026-06-25] User is vegetarian.
-    78.50s  user  발화 시작: Yeah.
-    78.99s  user  발화 끝
-    85.34s  agent 발화 끝
-    85.70s  user  발화 시작: Oh, that sounds lovely!
-    87.12s  agent 발화 시작: It's known for its creative and delicious plant-based cuisin
-    87.17s  user  발화 끝
-    93.33s  agent 발화 끝
+     8.35s  user  발화 시작: Yes, I need to get to a bakery. Do you know how long that wi
+     8.43s  agent 발화 끝
+    11.94s  <ret> 발화 (turn2 첫 프레임)
+    12.02s  agent 발화 시작: <ret> Your journey will begin at 30 Oak Avenue.
+    12.19s  user  발화 끝
+    13.38s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.50s]: [2026-02-11] User's home address is 30 Oak Avenue.
+    14.52s  agent 발화 끝
+    14.93s  user  발화 시작: That’s right. And I’d like to go to Du Pain et des Idées.
+    17.88s  <ret> 발화 (turn4 첫 프레임)
+    17.94s  agent 발화 시작: <ret> The drive to Du Pain et des Idées will take around twe
+    18.15s  user  발화 끝
+    19.40s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.11s]: (tool result) ETA to Du Pain et des Idées is approximately 22 minutes 
+    19.83s  user  발화 시작: Uh-huh.
+    20.28s  user  발화 끝
+    21.85s  agent 발화 시작: Traffic conditions are currently light, which should help wi
+    22.05s  agent 발화 끝
+    26.39s  user  발화 시작: Okay.
+    27.03s  user  발화 끝
+    30.43s  agent 발화 끝
+    30.50s  user  발화 시작: I’ll take the metro, I think. Is it faster?
+    32.44s  <ret> 발화 (turn9 첫 프레임)
+    32.75s  agent 발화 시작: <ret> Let me check the metro route for you.
+    32.95s  user  발화 끝
+    33.56s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.21s]: (tool result) Metro travel time to Du Pain et des Idées is 31 minutes,
+    34.70s  agent 발화 시작: The metro journey will take approximately thirty-one minutes
+    34.96s  agent 발화 끝
+    39.74s  agent 발화 끝
+    41.09s  user  발화 시작: Oh. That's longer than driving. But— I mean, it’s probably l
+    45.62s  user  발화 끝
+    45.68s  agent 발화 시작: It often is, Ava. Sometimes prioritizing peace of mind is th
+    50.01s  user  발화 시작: Mm-hmm.
+    50.55s  user  발화 끝
+    53.97s  agent 발화 끝
+    55.21s  user  발화 시작: Do they have good vegetarian options there? I am vegetarian,
+    58.81s  <ret> 발화 (turn15 첫 프레임)
+    59.20s  agent 발화 시작: <ret> Yes, I recall you are vegetarian.
+    59.37s  user  발화 끝
+    59.77s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.50s]: [2026-06-25] User is vegetarian.
+    60.17s  user  발화 시작: Mhm.
+    60.66s  user  발화 끝
+    61.69s  agent 발화 끝
+    61.78s  user  발화 시작: And are they aware of peanut allergies? I have a bad one.
+    64.57s  <ret> 발화 (turn18 첫 프레임)
+    64.86s  agent 발화 시작: <ret> I see you have a peanut allergy. I can check their all
+    65.12s  user  발화 끝
+    66.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: [2026-02-23] User is allergic to peanuts.
+    68.52s  user  발화 시작: Right.
+    68.88s  user  발화 끝
+    70.41s  user  발화 시작: Yes, please. That would be great.
+    70.55s  agent 발화 끝
+    72.63s  user  발화 끝

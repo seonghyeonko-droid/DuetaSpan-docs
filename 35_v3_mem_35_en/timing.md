@@ -61,21 +61,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. It's good to connect with you. I understa
-     5.67s  user  발화 시작: …and I'm trying to figure out the best way to get from Auckl
-     6.34s  agent 발화 끝
-     9.50s  user  발화 끝
-     9.79s  agent 발화 시작: Right, getting between those cities is a key part of plannin
-    15.73s  user  발화 시작: Mm-hmm.
-    16.23s  user  발화 끝
-    17.64s  agent 발화 시작: Flying is the quickest, around one hour and twenty minutes. 
-    17.85s  agent 발화 끝
-    26.40s  user  발화 시작: That sounds pretty fast, but I really prefer to see the coun
-    26.49s  agent 발화 끝
-    31.55s  agent 발화 시작: Absolutely. The drive is about six hundred and forty kilomet
-    31.59s  user  발화 끝
-    42.08s  agent 발화 시작: Knowing you prefer an aisle seat, you’d have plenty of room 
-    42.12s  agent 발화 끝
-    46.93s  user  발화 시작: That’s good to know. How long would the drive actually take,
-    46.98s  agent 발화 끝
-    51.33s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. I understand you’re planning a trip to Ne
+     6.49s  agent 발화 끝
+     6.97s  user  발화 시작: Yeah, it’s been a dream for a while. I’m starting to look at
+    11.68s  <ret> 발화 (turn2 첫 프레임)
+    12.08s  agent 발화 시작: <ret> It can be, certainly. To help narrow things down, do y
+    12.21s  user  발화 끝
+    13.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [2026-07-11] User prefers an aisle seat when traveling.
+    17.54s  agent 발화 시작: You do! You prefer an aisle seat when you travel. I can prio
+    17.73s  agent 발화 끝
+    21.23s  user  발화 시작: Mm-hmm.
+    21.73s  user  발화 끝
+    22.45s  agent 발화 시작: Now, looking at flights to Auckland in October— there are se
+    22.67s  agent 발화 끝
+    30.12s  user  발화 시작: …actually, before we get into prices, are there any airlines
+    30.88s  agent 발화 끝
+    35.69s  agent 발화 시작: That’s a great question. Air New Zealand consistently receiv
+    35.77s  user  발화 끝
+    42.00s  user  발화 시작: Okay, good to know. And are aisle seats usually available on
+    42.22s  agent 발화 끝
+    47.93s  user  발화 끝

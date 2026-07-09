@@ -68,71 +68,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Okay, perfect. Uh, I’m planning a  | S3 Three-twenty… that’s not bad. Can  | S4 And the hotel?
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Five eighty… that's not bad. Could | S3 Yeah, please. Under three hundred  | S4 Perfect. And can you set a reminde
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     5.06s  <ret> 발화 (turn1 첫 프레임)
-     5.13s  agent 발화 시작: <ret> Certainly, I can manage that for you. I’ve updated you
-     5.32s  user  발화 끝
-     6.82s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.33s]: (tool result) User agent set to MyCustomBrowser version 10.5.
-    14.17s  agent 발화 끝
-    14.63s  user  발화 시작: Great. Now, can you check if that change was reflected on wh
-    20.41s  <ret> 발화 (turn3 첫 프레임)
-    20.57s  agent 발화 시작: <ret> I’ve navigated to whatismyuseragent.com and the page h
-    20.74s  user  발화 끝
-    22.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) Page loaded successfully.
-    23.70s  user  발화 시작: Yeah.
-    24.29s  user  발화 끝
-    26.04s  agent 발화 끝
-    26.72s  user  발화 시작: And what does it say my user agent is now?
-    29.39s  <ret> 발화 (turn6 첫 프레임)
-    29.47s  agent 발화 시작: <ret> I can retrieve that information for you. It reports yo
-    29.58s  user  발화 끝
-    31.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.35s]: (tool result) User Agent: MyCustomBrowser version 10.5
-    34.37s  user  발화 시작: Yeah.
-    35.10s  user  발화 끝
-    38.09s  agent 발화 끝
-    38.76s  user  발화 시작: Okay, perfect. Uh, I’m planning a trip to Seattle.
-    42.65s  user  발화 끝
-    42.80s  agent 발화 시작: Seattle’s a fantastic choice! Are you looking for flights or
-    47.74s  user  발화 시작: Both, actually. Flights first, though. From New York, someti
-    48.17s  agent 발화 끝
-    52.09s  user  발화 끝
-    52.50s  agent 발화 시작: Next week works. Do you have preferred dates or a flexible r
-    58.10s  agent 발화 끝
-    59.17s  user  발화 시작: Flexible. Just… sometime between Monday and Friday.
-    63.12s  <ret> 발화 (turn13 첫 프레임)
-    63.20s  agent 발화 시작: <ret> I found flights from New York to Seattle starting at t
-    63.38s  user  발화 끝
-    65.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Flights found: New York to Seattle, prices from $320.
-    68.86s  user  발화 시작: Three-twenty… that’s not bad. Can you look at hotels near th
-    69.04s  agent 발화 끝
-    73.33s  <ret> 발화 (turn15 첫 프레임)
-    73.73s  agent 발화 시작: <ret> The Maxwell Hotel is near the Space Needle, with rates
-    73.82s  user  발화 끝
-    75.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Hotels near Space Needle: The Maxwell Hotel, starting at
-    80.59s  agent 발화 끝
-    81.16s  user  발화 시작: The Maxwell… hmm. Is there anything a little cheaper?
-    85.00s  user  발화 끝
-    85.01s  <ret> 발화 (turn17 첫 프레임)
-    85.08s  agent 발화 시작: <ret> Hotel Five is near the Space Needle, available for one
-    86.13s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.35s]: (tool result) Hotel Five, near Space Needle, $135/night.
-    88.72s  user  발화 시작: Yeah.
-    89.45s  user  발화 끝
-    91.42s  agent 발화 끝
-    91.44s  user  발화 시작: That sounds good. Okay, let’s book a flight for, uh, Tuesday
-    97.76s  <ret> 발화 (turn20 첫 프레임)
-    97.84s  agent 발화 시작: <ret> Your flight to Seattle next Tuesday is confirmed, refe
-    97.93s  user  발화 끝
-    99.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: (tool result) Flight booked: New York to Seattle, Tuesday, confirmatio
-   104.88s  user  발화 시작: And the hotel?
-   105.02s  agent 발화 끝
-   105.37s  <ret> 발화 (turn22 첫 프레임)
-   105.77s  agent 발화 시작: <ret> Now booking the hotel for you. Hotel Five in Seattle i
-   105.93s  user  발화 끝
-   106.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.18s]: (tool result) Hotel booked: Hotel Five, Seattle, 3 nights, confirmatio
-   114.65s  user  발화 시작: Perfect! Thank you.
-   114.77s  agent 발화 끝
-   116.20s  agent 발화 시작: You’re very welcome. I’ve sent both confirmations to your em
-   116.36s  user  발화 끝
-   123.84s  agent 발화 끝
+     4.55s  <ret> 발화 (turn1 첫 프레임)
+     4.63s  agent 발화 시작: <ret> Alright, I’ve set your user agent to MyCustomBrowser v
+     4.68s  user  발화 끝
+     6.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) User agent set to MyCustomBrowser version 10.5.
+    13.03s  agent 발화 끝
+    13.52s  user  발화 시작: Yeah, actually. Can you find me the current weather in Londo
+    16.36s  <ret> 발화 (turn3 첫 프레임)
+    16.51s  agent 발화 시작: <ret> (subtopic: London weather) Currently in London, it's t
+    16.66s  user  발화 끝
+    18.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: (tool result) London: 12 degrees Celsius, partly cloudy.
+    22.66s  user  발화 시작: Yeah.
+    23.34s  user  발화 끝
+    27.03s  agent 발화 끝
+    27.64s  user  발화 시작: Hmm, that’s good to know. Uh, I'm thinking of booking a flig
+    31.84s  agent 발화 시작: Certainly! Where are you hoping to travel from and to? And r
+    31.99s  user  발화 끝
+    35.29s  user  발화 시작: Yeah.
+    35.97s  user  발화 끝
+    37.95s  agent 발화 끝
+    38.71s  user  발화 시작: From London to New York, sometime next week.
+    41.46s  <ret> 발화 (turn9 첫 프레임)
+    41.77s  agent 발화 시작: <ret> (subtopic: flight search) Flights from London to New Y
+    41.80s  user  발화 끝
+    43.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.03s]: (tool result) Flights from London to New York next week starting at £5
+    50.80s  agent 발화 끝
+    51.98s  user  발화 시작: Five eighty… that's not bad. Could you look for hotels in Ma
+    57.43s  <ret> 발화 (turn11 첫 프레임)
+    57.72s  user  발화 끝
+    57.74s  agent 발화 시작: <ret> (subtopic: Manhattan hotels) In Manhattan, hotels are 
+    59.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: (tool result) Manhattan hotels available, prices from £150 per night.
+    66.44s  agent 발화 끝
+    66.75s  user  발화 시작: Okay, good. Are there any with a gym?
+    69.34s  <ret> 발화 (turn13 첫 프레임)
+    69.57s  agent 발화 시작: <ret> (subtopic: Manhattan hotels with gym) The Plaza Hotel 
+    69.67s  user  발화 끝
+    71.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: (tool result) The Plaza Hotel has a gym, £400 per night.
+    79.85s  user  발화 시작: Four hundred is a bit steep. [interrupting] What about somet
+    80.00s  agent 발화 끝
+    84.16s  user  발화 끝
+    84.42s  agent 발화 시작: Absolutely. – Let me refine that search for you.
+    88.62s  user  발화 시작: Yeah, please. Under three hundred if possible.
+    88.67s  agent 발화 끝
+    91.52s  <ret> 발화 (turn17 첫 프레임)
+    91.59s  agent 발화 시작: <ret> (subtopic: Manhattan hotels with gym under £300) The J
+    91.67s  user  발화 끝
+    92.64s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.44s]: (tool result) The Jane Hotel has a gym, £250 per night.
+    96.16s  user  발화 시작: Really?
+    96.89s  user  발화 끝
+    97.90s  user  발화 시작: The Jane… I think I’ve heard of that one. Right.
+    98.03s  agent 발화 끝
+   100.48s  agent 발화 시작: It's quite popular, known for its unique cabin-style rooms.
+   100.48s  user  발화 끝
+   104.45s  user  발화 시작: Sounds interesting. Okay, let’s book a room there for three 
+   104.97s  agent 발화 끝
+   109.45s  <ret> 발화 (turn22 첫 프레임)
+   109.76s  agent 발화 시작: <ret> (subtopic: hotel booking) Wonderful! Your room at The 
+   109.96s  user  발화 끝
+   111.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.39s]: (tool result) The Jane Hotel booked, 3 nights from next Monday, confir
+   122.15s  agent 발화 끝
+   123.10s  user  발화 시작: Perfect. And can you set a reminder to pack my gym clothes o
+   127.63s  <ret> 발화 (turn24 첫 프레임)
+   127.78s  agent 발화 시작: <ret> (subtopic: reminder) Of course! I’ve set a reminder fo
+   127.97s  user  발화 끝
+   129.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) Reminder set for Sunday evening: Pack gym clothes.
+   134.58s  user  발화 시작: Great. Thanks, Lio.
+   135.06s  agent 발화 끝
+   135.91s  user  발화 끝
+   136.02s  agent 발화 시작: You’re very welcome. Traveling can be stressful, so planning
+   144.95s  user  발화 시작: I appreciate it.
+   145.07s  agent 발화 끝
+   146.17s  agent 발화 시작: Is there anything else at all I can assist you with today?
+   146.23s  user  발화 끝
+   150.19s  agent 발화 끝

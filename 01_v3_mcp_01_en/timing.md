@@ -58,45 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Are those all the current iPhone m | S3 Okay, good. I’m thinking of gettin | S4 Hmm. Can you find me the best deal
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Can you narrow that map down to ju | S3 Okay, great. Can you book an appoi | S4 Perfect! That’s exactly what I nee
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.45s  <ret> 발화 (turn1 첫 프레임)
-     4.52s  agent 발화 시작: <ret> I’ve mapped one hundred and twenty-seven product pages
-     4.63s  user  발화 끝
-     5.73s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.37s]: (tool result) Sitemap generated: 127 product pages identified.
-     6.71s  user  발화 시작: Okay.
-     7.35s  user  발화 끝
-     9.71s  user  발화 시작: That’s… a lot. Can you just show me the iPhones?
-     9.89s  agent 발화 끝
-    13.51s  <ret> 발화 (turn4 첫 프레임)
-    13.90s  agent 발화 시작: <ret> The map now shows eleven pages dedicated to iPhone pro
-    14.11s  user  발화 끝
-    15.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Sitemap generated: 11 iPhone product pages identified.
-    16.56s  user  발화 시작: Uh-huh.
-    17.19s  user  발화 끝
-    18.85s  user  발화 시작: Are those all the current iPhone models?
-    18.91s  agent 발화 끝
-    20.90s  <ret> 발화 (turn7 첫 프레임)
-    21.29s  agent 발화 시작: <ret> Currently, Apple lists the iPhone fifteen, fifteen Pro
-    21.39s  user  발화 끝
-    22.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Current models: iPhone 15, 15 Pro, 15 Pro Max, 15 Plus.
-    24.35s  user  발화 시작: Right.
-    24.84s  user  발화 끝
-    28.98s  agent 발화 끝
-    29.27s  user  발화 시작: Okay, good. I’m thinking of getting a fifteen Pro Max. What 
-    34.69s  <ret> 발화 (turn10 첫 프레임)
-    34.92s  agent 발화 시작: <ret> The iPhone fifteen Pro Max is offered in Black Titaniu
-    35.01s  user  발화 끝
-    36.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) Available colors: Black Titanium, White Titanium, Blue T
-    42.01s  agent 발화 끝
-    42.07s  user  발화 시작: Natural Titanium sounds interesting. Is that new?
-    46.10s  agent 발화 시작: Yes, Natural Titanium is a new finish introduced with the iP
-    46.19s  user  발화 끝
-    57.94s  user  발화 시작: Hmm. Can you find me the best deal on a Natural Titanium iPh
-    57.97s  agent 발화 끝
-    65.49s  <ret> 발화 (turn14 첫 프레임)
-    65.67s  user  발화 끝
-    65.89s  agent 발화 시작: <ret> Best Buy currently offers the two hundred fifty-six gi
-    67.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) Best price: $1199 at Best Buy, in stock.
-    76.65s  agent 발화 끝
+     4.37s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  agent 발화 시작: <ret> Certainly. I’m accessing the Apple website now to buil
+     4.53s  user  발화 끝
+     5.97s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.51s]: (tool result) Products: iPhone, iPad, Mac, Apple Watch, AirPods, TV & 
+    11.85s  agent 발화 시작: That map highlights iPhone, iPad, Mac, Apple Watch, AirPods,
+    11.95s  agent 발화 끝
+    15.26s  user  발화 시작: Okay.
+    15.89s  user  발화 끝
+    20.05s  agent 발화 끝
+    20.13s  user  발화 시작: That’s good. What about their support section? Is that well-
+    24.42s  <ret> 발화 (turn5 첫 프레임)
+    24.66s  agent 발화 시작: <ret> Yes, the support section is included, showing access p
+    24.76s  user  발화 끝
+    26.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: (tool result) Support: Downloads, Manuals, Repair, Contact, AppleCare,
+    31.52s  agent 발화 시작: The map details downloads, manuals, repair options, contact 
+    31.57s  agent 발화 끝
+    36.88s  user  발화 시작: Uh-huh.
+    37.42s  user  발화 끝
+    41.31s  user  발화 시작: Can you narrow that map down to just the repair options, and
+    41.40s  agent 발화 끝
+    47.88s  <ret> 발화 (turn9 첫 프레임)
+    47.96s  agent 발화 시작: <ret> The closest authorized provider is uBreakiFix by Asuri
+    48.12s  user  발화 끝
+    49.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.99s]: (tool result) Nearest: uBreakiFix by Asurion, 123 Main Street, Anytown
+    54.59s  user  발화 시작: Yeah.
+    54.99s  user  발화 끝
+    56.88s  user  발화 시작: Okay, great. Can you book an appointment for me there for to
+    56.96s  agent 발화 끝
+    61.99s  <ret> 발화 (turn12 첫 프레임)
+    62.39s  agent 발화 시작: <ret> Your appointment at uBreakiFix is confirmed for tomorr
+    62.43s  user  발화 끝
+    63.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) Confirmed: uBreakiFix, tomorrow, 10:00 AM. Order #AB1234
+    70.08s  user  발화 시작: Perfect! That’s exactly what I needed. Thanks, Koral.
+    70.18s  agent 발화 끝
+    73.70s  agent 발화 시작: You’re very welcome. Is there anything else I can assist you
+    73.73s  user  발화 끝
+    80.74s  agent 발화 끝

@@ -60,24 +60,24 @@
 
 
      0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you. I un
-     6.69s  user  발화 시작: Yeah.
-     7.14s  user  발화 끝
-     8.61s  user  발화 시작: I’m trying to remember what I was planning for my birthday d
-     8.76s  agent 발화 끝
-    13.93s  <ret> 발화 (turn3 첫 프레임)
-    13.94s  user  발화 끝
-    14.01s  agent 발화 시작: <ret> It’s completely understandable to feel a bit scattered
-    14.89s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.38s]: [2026-03-10] User's favorite cuisine is sushi.
-    20.97s  user  발화 시작: Mm-hmm.
-    21.60s  user  발화 끝
-    23.84s  agent 발화 끝
-    24.27s  user  발화 시작: Oh! Yes, that’s it. And I think I was looking at sushi place
-    29.59s  user  발화 끝
-    29.64s  agent 발화 시작: That sounds delightful! Sushi is a wonderful choice for a ce
-    37.75s  agent 발화 끝
-    37.89s  user  발화 시작: Do you remember anything about a trip I was planning? I— I m
-    42.72s  <ret> 발화 (turn8 첫 프레임)
-    42.88s  agent 발화 시작: <ret> Travel plans can certainly be exciting to revisit. You
-    42.89s  user  발화 끝
-    43.84s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.51s]: [2026-07-25] User is planning a trip to Kyoto in March.
-    53.87s  agent 발화 끝
+     7.12s  user  발화 시작: Yeah.
+     7.52s  user  발화 끝
+     9.13s  user  발화 시작: Oh, hi Thunalo. That sounds… good. Actually, I was wondering
+     9.28s  agent 발화 끝
+    17.21s  <ret> 발화 (turn3 첫 프레임)
+    17.24s  user  발화 끝
+    17.29s  agent 발화 시작: <ret> Perhaps thinking about travel could be a good way to s
+    19.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.25s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    26.16s  user  발화 시작: Mm-hmm.
+    26.66s  user  발화 끝
+    29.72s  agent 발화 끝
+    30.30s  user  발화 시작: Still on track, yes. I’m starting to think about the details
+    36.91s  <ret> 발화 (turn6 첫 프레임)
+    36.98s  agent 발화 시작: <ret> Kyoto is nine hours ahead of Berlin. That might mean a
+    37.16s  user  발화 끝
+    38.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Kyoto is nine hours ahead of Berlin.
+    44.11s  agent 발화 끝
+    44.27s  user  발화 시작: Nine hours! Wow. That's… quite a bit. So I— I mean, if I wan
+    52.24s  agent 발화 시작: To clarify, are you thinking of a specific evening in March,
+    52.34s  user  발화 끝
+    60.26s  agent 발화 끝

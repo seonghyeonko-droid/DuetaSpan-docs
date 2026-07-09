@@ -68,55 +68,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 웹 브라우저 사용자 에이전트를 내 마음대로 설정할 수 있 | S2 그 아이피로 혹시 위치 정보도 알아낼 수 있을까요? | S3 그럼 혹시 지금 마운틴뷰의 날씨는 어떤가요? | S4 친구 번호는 공 일 공 일 이 삼 사 오 육 칠 팔이에요. 문
+# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점 | S2 예를 들어, whatismyuseragent.com으로 확인해 | S3 오, 잘 됐네요. 그런데, 혹시 이 설정이 브라우저를 껐다 켜 | S4 음… 그렇군요. 그럼, 일단은 이대로 사용해 보고, 필요하면 
 
-     0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 내 마음대로 설정할 수 있을까요?
-     4.60s  <ret> 발화 (turn1 첫 프레임)
-     4.81s  user  발화 끝
-     4.83s  agent 발화 시작: <ret> 물론이죠. 사용자 에이전트를 변경하면 웹사이트에서 다른 브라우저를 사용하는 것처럼 보이게 할 수 
-     6.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) User agent set to MyCustomBrowser version 10.5
-    11.74s  agent 발화 시작: 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정했습니다.
-    11.83s  agent 발화 끝
-    13.40s  user  발화 시작: 음.
-    13.76s  user  발화 끝
-    16.65s  agent 발화 끝
-    17.07s  user  발화 시작: 음, 혹시 지금 제 아이피 주소가 어떻게 되는지 알려줄 수 있을까요?
-    21.12s  <ret> 발화 (turn5 첫 프레임)
-    21.36s  agent 발화 시작: <ret> 현재 아이피 주소는 이십삼 점 영 점 백십삼 점 사십이입니다.
-    21.43s  user  발화 끝
-    22.64s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.09s]: (tool result) Your IP address is 203.0.113.42
-    23.74s  user  발화 시작: 예.
-    24.05s  user  발화 끝
-    26.15s  user  발화 시작: 그 아이피로 혹시 위치 정보도 알아낼 수 있을까요?
-    26.45s  agent 발화 끝
-    29.42s  <ret> 발화 (turn8 첫 프레임)
-    29.50s  agent 발화 시작: <ret> 아이피 주소로 확인한 위치는 미국 캘리포니아주 마운틴뷰입니다.
-    29.57s  user  발화 끝
-    31.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: (tool result) Location: United States, California, Mountain View
-    31.71s  user  발화 시작: 음.
-    32.02s  user  발화 끝
-    34.01s  user  발화 시작: 마운틴뷰요? 구글 본사가 있는 곳 맞죠?
-    34.08s  agent 발화 끝
-    37.40s  agent 발화 시작: 맞아요. 구글 본사가 마운틴뷰에 있어요.
-    37.52s  user  발화 끝
-    39.87s  user  발화 시작: 그럼 혹시 지금 마운틴뷰의 날씨는 어떤가요?
-    40.36s  agent 발화 끝
-    42.85s  <ret> 발화 (turn13 첫 프레임)
-    42.99s  agent 발화 시작: <ret> 현재 마운틴뷰 날씨는 섭씨 이십이도, 맑음입니다.
-    43.20s  user  발화 끝
-    44.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.20s]: (tool result) Current weather: 22 degrees Celsius, sunny
-    47.20s  agent 발화 끝
-    49.87s  user  발화 시작: 꽤 따뜻하네요. [interrupting] 그럼, 제가 지금 서울에 있는 친구한테 이 날씨 정보를 문자로 보
-    58.30s  user  발화 끝
-    58.31s  agent 발화 시작: 물론입니다. 친구의 전화번호를 알려주시면 문자를 보내드릴 수 있어요.
-    62.94s  agent 발화 끝
-    63.01s  user  발화 시작: 친구 번호는 공 일 공 일 이 삼 사 오 육 칠 팔이에요. 문자에 "마운틴뷰 날씨: 이십이도, 맑음"이라고 
-    70.79s  <ret> 발화 (turn17 첫 프레임)
-    70.94s  agent 발화 시작: <ret> 공 일 공 일 이 삼 사 오 육 칠 팔 번호로 문자를 보냈습니다.
-    70.98s  user  발화 끝
-    71.51s  ⚡SPAN 주입 [d'=0.72s / d_lead=4.90s]: (tool result) Message sent to 010-1234-5678
-    75.83s  user  발화 시작: 잘 됐네요. 정말 고마워요!
-    75.85s  agent 발화 끝
-    78.04s  agent 발화 시작: 천만에요. 언제든지 필요한 일이 있으면 말씀해주세요.
-    78.14s  user  발화 끝
-    81.65s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 줄 수 있을까요?
+     5.20s  <ret> 발화 (turn1 첫 프레임)
+     5.37s  user  발화 끝
+     5.44s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정했습니
+     6.48s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.39s]: (tool result) User agent set to MyCustomBrowser version 10.5.
+     7.47s  user  발화 시작: 음.
+     7.97s  user  발화 끝
+    11.23s  user  발화 시작: 아, 혹시 지금 웹사이트 접속해서 확인해 볼 수 있을까요?
+    11.42s  agent 발화 끝
+    15.31s  user  발화 끝
+    15.41s  agent 발화 시작: 물론입니다. 어떤 웹사이트를 접속해 볼까요?
+    18.43s  user  발화 시작: 예를 들어, whatismyuseragent.com으로 확인해 보고 싶은데요.
+    18.46s  agent 발화 끝
+    23.10s  <ret> 발화 (turn6 첫 프레임)
+    23.25s  agent 발화 시작: <ret> 알겠습니다, 해당 웹사이트로 접속해 보겠습니다. whatismyuseragent.com에 접속했습
+    23.38s  user  발화 끝
+    25.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.05s]: (tool result) Page loaded successfully.
+    27.25s  user  발화 시작: 예.
+    27.60s  user  발화 끝
+    31.36s  agent 발화 끝
+    31.38s  <ret> 발화 (turn8 첫 프레임)
+    31.45s  agent 발화 시작: <ret> 사용자 에이전트 정보는 MyCustomBrowser 버전 십점오로 확인됩니다.
+    33.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) MyCustomBrowser version 10.5
+    34.02s  user  발화 시작: 음.
+    34.51s  user  발화 끝
+    36.23s  user  발화 시작: 오, 잘 됐네요. 그런데, 혹시 이 설정이 브라우저를 껐다 켜도 유지될까요?
+    36.73s  agent 발화 끝
+    42.17s  agent 발화 시작: 그건 브라우저 설정에 따라 다릅니다. 일반적으로는 유지되지 않을 수 있습니다.
+    42.26s  user  발화 끝
+    46.87s  user  발화 시작: 아, 그렇군요. 그럼, 브라우저를 켤 때마다 자동으로 설정되도록 하는 방법은 없을까요?
+    46.98s  agent 발화 끝
+    52.49s  agent 발화 시작: 브라우저 확장 프로그램이나 스크립트를 사용하면 가능합니다. 하지만, 조금 복잡할 수 있습니다.
+    52.65s  user  발화 끝
+    58.84s  agent 발화 끝
+    60.03s  user  발화 시작: 음… 그렇군요. 그럼, 일단은 이대로 사용해 보고, 필요하면 확장 프로그램을 찾아봐야겠네요. 감사합니다.
+    67.44s  user  발화 끝
+    67.91s  agent 발화 시작: 천만에요. 언제든지 필요하시면 다시 말씀해 주세요. 제가 도와드릴 수 있는 다른 일이 있을까요?
+    74.20s  agent 발화 끝

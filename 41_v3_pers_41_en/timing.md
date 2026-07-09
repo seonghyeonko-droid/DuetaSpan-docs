@@ -76,79 +76,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 A life coach… that’s interesting.  | S2 I don’t know! I haven’t really tho | S3 Right. I just… I feel like I’m fai | S4 That’s… actually a really good ide
+# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a pretty name. It feel | S2 I keep expecting her to call, to a | S3 I used to love painting, but I hav | S4 Do you think it will ever get easi
 
-     0.00s  agent 발화 시작: 연영, it’s lovely to connect with you. My name is Bir, and I’m
-     9.84s  user  발화 시작: A life coach… that’s interesting. I wasn’t expecting that. I
-    10.01s  agent 발화 끝
-    16.03s  agent 발화 시작: It’s perfectly alright to feel lost, 연영. Many of us experien
-    16.09s  user  발화 끝
-    24.84s  agent 발화 끝
-    24.86s  user  발화 시작: Um… everything, really. I just finished university, and I ha
-    31.26s  user  발화 끝
-    31.37s  agent 발화 시작: That’s a significant shift, graduating and facing an open fu
-    37.43s  user  발화 시작: Yeah, yeah.
-    39.27s  user  발화 끝
-    41.27s  agent 발화 시작: Sometimes, when we’re faced with so many choices, it can be 
-    41.29s  agent 발화 끝
-    49.80s  user  발화 시작: I liked history… but there aren’t many jobs for historians, 
-    49.93s  agent 발화 끝
-    56.23s  agent 발화 시작: It sounds like you’re balancing your own passions with the e
-    56.32s  user  발화 끝
-    62.11s  user  발화 시작: Yeah.
-    62.61s  user  발화 끝
-    64.06s  agent 발화 끝
-    65.04s  user  발화 시작: It is. They sacrificed a lot for me, so I want to make them 
-    71.72s  agent 발화 시작: It’s beautiful that you feel such gratitude for your parents
-    71.80s  user  발화 끝
-    77.78s  user  발화 시작: Yeah.
-    78.27s  user  발화 끝
-    82.25s  agent 발화 끝
-    82.45s  user  발화 시작: I don’t know! I haven’t really thought about it… I’ve been t
-    87.99s  agent 발화 시작: That’s a common experience. We often get caught in the curre
-    88.02s  user  발화 끝
-    93.79s  user  발화 시작: Mm-hmm.
-    94.28s  user  발화 끝
-    95.89s  user  발화 시작: But how do I even *find* that compass? It feels like it’s be
-    95.92s  agent 발화 끝
-   100.55s  agent 발화 시작: Finding it is a journey, not a destination. It requires gent
-   100.61s  user  발화 끝
-   108.59s  user  발화 시작: Intuition? I’m not even sure I have any. I always overthink 
-   108.67s  agent 발화 끝
-   113.34s  agent 발화 시작: Overthinking is often a sign of a caring mind, wanting to ma
-   113.41s  user  발화 끝
-   121.60s  user  발화 시작: Right. I just… I feel like I’m failing already. I should hav
-   121.77s  agent 발화 끝
-   126.33s  user  발화 끝
-   126.49s  agent 발화 시작: There’s no timeline for these things, 연영. Allowing yourself 
-   132.85s  user  발화 시작: Yeah.
-   133.35s  user  발화 끝
-   136.23s  user  발화 시작: Self-compassion… that’s a new concept for me. I’m usually pr
-   136.41s  agent 발화 끝
-   141.69s  user  발화 끝
-   141.73s  agent 발화 시작: Many of us are. It’s a learned pattern, often stemming from 
-   147.36s  user  발화 시작: Really?
-   148.23s  user  발화 끝
-   151.94s  agent 발화 끝
-   151.99s  user  발화 시작: I guess so. Maybe I should just… try to relax a little?
-   155.74s  agent 발화 시작: That sounds like a wonderful starting point. What activities
-   155.88s  user  발화 끝
-   163.61s  agent 발화 끝
-   163.96s  user  발화 시작: I like walking along the Han River. And reading, when I have
-   167.89s  agent 발화 시작: Those sound restorative. Perhaps incorporating more of those
-   168.06s  user  발화 끝
-   171.77s  user  발화 시작: Yeah, yeah.
-   173.20s  user  발화 끝
-   175.82s  user  발화 시작: That’s… actually a really good idea. I haven’t done those th
-   176.15s  agent 발화 끝
-   180.65s  agent 발화 시작: Sometimes, returning to the things we love is the most radic
-   180.76s  user  발화 끝
-   190.01s  agent 발화 끝
-   190.68s  user  발화 시작: [happy] You’re right. I feel a little lighter just talking a
-   194.06s  user  발화 끝
-   194.08s  agent 발화 시작: That warms my heart to hear, 연영. Remember, this is your jour
-   202.56s  agent 발화 끝
-   204.13s  user  발화 시작: Thank you, Bir. I think I needed to hear that.
-   206.20s  user  발화 끝
-   206.58s  agent 발화 시작: You are very welcome, 연영. I'm here to listen whenever you ne
-   213.19s  agent 발화 끝
+     0.00s  agent 발화 시작: 연영, it’s so lovely to connect with you. I’m Bir, and I’m her
+     9.09s  user  발화 시작: Bir… that’s a pretty name. It feels… calm. Are you Korean to
+     9.27s  agent 발화 끝
+    13.65s  agent 발화 시작: That’s kind of you to say. My name doesn’t have a particular
+    13.72s  user  발화 끝
+    22.39s  user  발화 시작: Designed? So you’re… not a real person? I guess I knew that,
+    22.50s  agent 발화 끝
+    29.76s  user  발화 끝
+    29.84s  agent 발화 시작: That’s a very natural feeling. I understand it can be a litt
+    39.06s  agent 발화 끝
+    39.28s  user  발화 시작: I’m just… going through a lot right now. My grandmother pass
+    44.41s  agent 발화 시작: Oh, 연영, I am so deeply sorry to hear about your grandmother.
+    44.52s  user  발화 끝
+    49.38s  user  발화 시작: Yeah, yeah.
+    50.62s  user  발화 끝
+    52.47s  agent 발화 시작: It's alright to not be alright, you know. There’s no right o
+    52.53s  agent 발화 끝
+    58.46s  user  발화 시작: Yeah.
+    58.95s  user  발화 끝
+    60.49s  agent 발화 끝
+    61.32s  user  발화 시작: It’s just… everything feels so empty. She always made the be
+    66.03s  agent 발화 시작: Those small, everyday things are often what we miss the most
+    66.14s  user  발화 끝
+    69.46s  user  발화 시작: Really?
+    70.28s  user  발화 끝
+    75.16s  agent 발화 끝
+    75.22s  user  발화 시작: I keep expecting her to call, to ask if I’m eating well.
+    78.65s  agent 발화 시작: Those phantom calls, that feeling of her presence lingering—
+    78.68s  user  발화 끝
+    87.69s  agent 발화 끝
+    87.95s  user  발화 시작: My parents are… well, they're grieving too, of course. I fee
+    93.66s  agent 발화 시작: It’s incredibly thoughtful of you to want to support your pa
+    93.74s  user  발화 끝
+   102.36s  user  발화 시작: But what if I fall apart if I let myself feel everything?
+   102.38s  agent 발화 끝
+   105.68s  agent 발화 시작: Allowing yourself to feel doesn’t mean falling apart. It mea
+   105.74s  user  발화 끝
+   115.74s  user  발화 시작: It’s just… I don’t know where to even start. It’s all so ove
+   115.93s  agent 발화 끝
+   120.33s  user  발화 끝
+   120.41s  agent 발화 시작: Sometimes, starting isn’t about big actions, but small momen
+   129.96s  agent 발화 끝
+   130.43s  user  발화 시작: I used to love painting, but I haven’t touched a brush since
+   135.02s  user  발화 끝
+   135.05s  agent 발화 시작: That’s understandable. Perhaps revisiting something you once
+   140.25s  user  발화 시작: Yeah.
+   140.89s  user  발화 끝
+   143.25s  agent 발화 끝
+   143.29s  user  발화 시작: I’m afraid it will just make me sadder.
+   145.14s  agent 발화 시작: It might. And that’s okay too. Sadness isn’t an enemy to be 
+   145.36s  user  발화 끝
+   149.74s  user  발화 시작: Yeah.
+   150.24s  user  발화 끝
+   153.00s  user  발화 시작: I feel guilty for feeling happy sometimes. Like I’m betrayin
+   153.12s  agent 발화 끝
+   157.18s  agent 발화 시작: Guilt is a common companion to grief. But allowing yourself 
+   157.30s  user  발화 끝
+   168.26s  agent 발화 끝
+   169.06s  user  발화 시작: I keep replaying memories in my head. Good ones, mostly, but
+   174.25s  user  발화 끝
+   174.57s  agent 발화 시작: Those memories are precious gifts. It’s natural for them to 
+   183.88s  agent 발화 끝
+   185.39s  user  발화 시작: Do you think it will ever get easier?
+   187.36s  agent 발화 시작: That’s a question many people ask. Grief changes over time, 
+   187.46s  user  발화 끝
+   192.24s  user  발화 시작: Yeah, yeah.
+   193.48s  user  발화 끝
+   197.63s  user  발화 시작: I just want her back.
+   197.70s  agent 발화 끝
+   199.06s  user  발화 끝
+   199.44s  agent 발화 시작: Oh, 연영. That’s a longing that resonates deeply. It’s a testa
+   208.48s  agent 발화 끝
+   208.85s  user  발화 시작: I think… I think I need to let myself cry.
+   211.91s  user  발화 끝
+   212.24s  agent 발화 시작: That sounds like a very wise and gentle step, 연영. Allow the 
+   222.06s  agent 발화 끝

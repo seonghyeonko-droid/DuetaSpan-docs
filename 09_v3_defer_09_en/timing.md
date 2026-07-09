@@ -68,26 +68,47 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 Perfect. And what's the cancellati | S3 …Is parking included with the rese | S4 Could you also send me a copy of t
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.50s  <ret> 발화 (turn1 첫 프레임)
-     5.73s  agent 발화 시작: <ret> Excellent! I’ve reserved three rooms at the Ocean View
-     5.88s  user  발화 끝
-     7.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Confirmation: three rooms reserved at Ocean View Hotel, 
-     9.63s  user  발화 시작: Mm-hmm.
-    10.13s  user  발화 끝
-    11.38s  agent 발화 끝
-    11.48s  user  발화 시작: What’s the cancellation policy?
-    13.14s  <ret> 발화 (turn4 첫 프레임)
-    13.27s  agent 발화 시작: <ret> The Ocean View Hotel in San Diego allows free cancella
-    13.41s  user  발화 끝
-    15.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Ocean View Hotel, San Diego: free cancellation until sev
-    19.41s  user  발화 시작: Is parking included with the reservation?
-    20.14s  agent 발화 끝
-    21.62s  <ret> 발화 (turn6 첫 프레임)
-    21.99s  user  발화 끝
-    21.99s  agent 발화 시작: <ret> Parking is available at the hotel for twenty-five doll
-    23.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.73s]: (tool result) Parking available at Ocean View Hotel, San Diego, twenty
-    26.70s  agent 발화 시작: I can add parking to your reservation for an additional twen
-    26.71s  agent 발화 끝
-    31.89s  agent 발화 끝
+     5.64s  <ret> 발화 (turn1 첫 프레임)
+     5.86s  agent 발화 시작: <ret> Wonderful! I’ve reserved three rooms at the Ocean View
+     6.02s  user  발화 끝
+     7.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.65s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego. Thre
+    12.62s  user  발화 시작: Mm-hmm.
+    13.16s  user  발화 끝
+    15.51s  agent 발화 끝
+    15.57s  user  발화 시작: That sounds great. Can you check if they have a shuttle to t
+    18.91s  <ret> 발화 (turn4 첫 프레임)
+    19.06s  agent 발화 시작: <ret> Yes, the Ocean View Hotel does offer an airport shuttl
+    19.13s  user  발화 끝
+    20.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) Airport shuttle available. Operates every thirty minutes
+    25.60s  agent 발화 끝
+    25.62s  user  발화 시작: Perfect. And what's the cancellation policy?
+    28.63s  agent 발화 시작: The cancellation policy varies by room type, but generally a
+    28.63s  user  발화 끝
+    35.88s  user  발화 시작: …Is parking included with the reservation?
+    35.91s  agent 발화 끝
+    38.21s  agent 발화 시작: Parking—
+    38.40s  user  발화 시작: …Is parking included with the reservation, or is that extra?
+    38.41s  user  발화 끝
+    39.08s  agent 발화 끝
+    41.75s  <ret> 발화 (turn10 첫 프레임)
+    41.96s  agent 발화 시작: <ret> Ah, good question. Let me check the parking details fo
+    42.10s  user  발화 끝
+    43.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.94s]: (tool result) Valet parking available at $45 per night. Self-parking i
+    45.90s  agent 발화 끝
+    45.91s  agent 발화 시작: Parking is available; self-parking is complimentary, while v
+    51.93s  agent 발화 끝
+    52.84s  user  발화 시작: Complimentary self-parking is fantastic!
+    55.61s  user  발화 끝
+    55.70s  agent 발화 시작: I agree, that’s a lovely perk. It makes getting around a bit
+    57.57s  user  발화 시작: Yeah.
+    58.20s  user  발화 끝
+    61.83s  agent 발화 끝
+    62.82s  user  발화 시작: Could you also send me a copy of the reservation confirmatio
+    67.53s  <ret> 발화 (turn16 첫 프레임)
+    67.59s  user  발화 끝
+    67.60s  agent 발화 시작: <ret> Certainly. I’ve just sent a copy of the reservation co
+    69.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) Confirmation email sent to user@example.com.
+    74.60s  agent 발화 끝

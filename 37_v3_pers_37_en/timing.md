@@ -51,17 +51,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Noah, welcome to Sydney! I’m Hunar, and I help people feel s
-     2.49s  user  발화 시작: Mm-hmm.
-     2.98s  user  발화 끝
-     8.53s  agent 발화 끝
-     8.54s  user  발화 시작: Hunar… that’s a lovely name. I’m just… a bit overwhelmed, to
-    13.28s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. A new city
-    13.45s  user  발화 끝
-    18.50s  user  발화 시작: Mhm.
-    18.94s  user  발화 끝
-    23.04s  user  발화 시작: I— I mean, just… everything feels so far away. Back home, ev
-    23.26s  agent 발화 끝
-    29.79s  agent 발화 시작: That sense of distance is very common, Noah. It’s about buil
-    29.95s  user  발화 끝
-    40.31s  agent 발화 끝
+     0.00s  agent 발화 시작: Noah, welcome to Sydney! I’m Hunar, and I help people find t
+     2.61s  user  발화 시작: Mm-hmm.
+     3.24s  user  발화 끝
+     8.94s  user  발화 시작: Hunar… that’s a lovely name. It’s just… a bit overwhelming, 
+     9.04s  agent 발화 끝
+    14.11s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Noah. Change can
+    14.26s  user  발화 끝
+    17.66s  user  발화 시작: Mhm.
+    18.20s  user  발화 끝
+    20.81s  user  발화 시작: I— I mean, it's silly, but just finding good coffee is stres
+    20.97s  agent 발화 끝
+    26.37s  agent 발화 시작: Not silly at all! Those small comforts are important. Perhap
+    26.56s  user  발화 끝
+    36.20s  agent 발화 끝

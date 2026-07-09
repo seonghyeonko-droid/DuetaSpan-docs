@@ -59,21 +59,23 @@
 # }
 
 
-     0.00s  user  발화 시작: 뒤플레시 이름이 어디에서 유래됐는지 궁금해요.
-     3.43s  <ret> 발화 (turn1 첫 프레임)
-     3.74s  agent 발화 시작: <ret> 잠깐 알아봐도 될까요?
-     3.83s  user  발화 끝
-     4.87s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.66s]: [source: Britannica] Du Plessis is a French surname of Huguenot origin
-     5.18s  agent 발화 시작: 성씨에 대한 정보는 꽤 흥미로운 이야기를 담고 있는 경우가 많죠. 뒤플레시 성은 위그노 출신의 프랑스 성씨라
-     5.40s  agent 발화 끝
-    15.40s  user  발화 시작: 아.
-    16.23s  user  발화 끝
-    18.57s  user  발화 시작: 아, 프랑스 지명에서 왔군요. 그럼 아프리카너스어와는 무슨 관계가 있는 거죠?
-    18.77s  agent 발화 끝
-    23.96s  <ret> 발화 (turn5 첫 프레임)
-    24.04s  agent 발화 시작: <ret> 아프리카너스어와 관련이 있다는 점이 궁금하시군요.
-    24.18s  user  발화 끝
-    25.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: [source: Wikipedia] Many South African du Plessis families descend fro
-    27.78s  agent 발화 시작: 남아프리카 공화국에 있는 뒤플레시 가문은 십칠세기와 십팔세기에 케이프 식민지에 정착한 위그노 난민의 후손이라
-    27.83s  agent 발화 끝
-    35.89s  agent 발화 끝
+     0.00s  user  발화 시작: 뒤플레시 가문 이름이 어디에서 유래되었는지 궁금해요.
+     4.71s  <ret> 발화 (turn1 첫 프레임)
+     5.02s  agent 발화 시작: <ret> 뒤플레시라는 성은 프랑스에서 유래되었는데, 그 이름의 뜻이 궁금하시군요.
+     5.18s  user  발화 끝
+     6.07s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.61s]: [source: Wikipedia] Du Plessis is a French surname, originating as a t
+    10.39s  agent 발화 시작: 뒤플레시 성은 ‘합의의 장소’ 또는 ‘모임 장소’라는 뜻의 라틴어 ‘플라키툼’에서 비롯된 ‘플레시’라는 지명
+    10.63s  agent 발화 끝
+    20.27s  agent 발화 끝
+    20.42s  user  발화 시작: 아, 그렇군요. 그럼 그 가문은 프랑스 귀족이었나요?
+    24.97s  <ret> 발화 (turn4 첫 프레임)
+    25.04s  agent 발화 시작: <ret> 프랑스 귀족 가문이었는지 알아보니, 뒤플레시 가문은 푸아투 지방에서 유래된 프랑스 귀족 가문으로,
+    25.05s  user  발화 끝
+    26.41s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.48s]: [source: The Peerage] The House of du Plessis is a French noble family
+    33.84s  user  발화 시작: 어머.
+    34.52s  user  발화 끝
+    36.73s  user  발화 시작: 그 가문 중에 유명한 사람이 있었나요?
+    36.82s  agent 발화 끝
+    39.33s  agent 발화 시작: 뒤플레시 가문에서 유명한 인물은 프랑수아 뒤플레시였는데, 그는 앙리 사세의 측근이었고, 뛰어난 군사 전략가였
+    39.36s  user  발화 끝
+    47.86s  agent 발화 끝

@@ -60,29 +60,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to find out a little ab | S2 I know, it’s a bit obscure. When w | S3 Nineteen seventy! Wow, that’s— | S4 So, was he involved in politics at
+# EXAMINER(FDB-v2) 단계: S1 Do you know anything about Lux Aur | S2 Nineteen seventy? That seems… earl | S3 But wasn’t he. | S4 So he wasn't entirely self-taught,
 
-     0.00s  user  발화 시작: I’m trying to find out a little about Lux Aurunque. Where di
-     5.10s  agent 발화 시작: That’s a fascinating area of study. He was a significant fig
-     5.18s  user  발화 끝
-     8.27s  user  발화 시작: Yeah, yeah.
-     9.74s  user  발화 끝
-    10.93s  user  발화 시작: I know, it’s a bit obscure. When was he born, actually?
-    10.93s  agent 발화 끝
-    13.43s  <ret> 발화 (turn4 첫 프레임)
-    13.83s  agent 발화 시작: <ret> Let me share what I’ve found— Lux Aurunque was born in
-    13.98s  user  발화 끝
-    14.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.29s]: [source: Wikipedia] Lux Aurunque was born in 1970 in Rome, Italy.
-    17.36s  user  발화 시작: Uh-huh.
-    17.77s  user  발화 끝
-    19.95s  agent 발화 끝
-    19.98s  user  발화 시작: Nineteen seventy! Wow, that’s—
-    23.30s  user  발화 시작: So, was he involved in politics at all?
-    23.35s  user  발화 끝
-    26.02s  user  발화 끝
-    26.22s  agent 발화 시작: [sigh] That’s a very good question, actually. It shifts the 
-    32.01s  <ret> 발화 (turn9 첫 프레임)
-    32.25s  agent 발화 시작: <ret> Records show he was involved in— Lux Aurunque became k
-    32.33s  agent 발화 끝
-    32.51s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.88s]: [source: Britannica] Lux Aurunque rose to prominence as a patron of th
-    39.76s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know anything about Lux Aurunque? I’ve been reading a
+     4.30s  agent 발화 시작: Lux Aurunque is a fascinating figure, and I’m happy to discu
+     4.31s  user  발화 끝
+     9.26s  user  발화 시작: Yeah, yeah.
+    10.55s  user  발화 끝
+    13.29s  agent 발화 끝
+    13.57s  user  발화 시작: When was he born, exactly? I can't seem to find a reliable d
+    17.56s  <ret> 발화 (turn4 첫 프레임)
+    17.96s  agent 발화 시작: <ret> Let me share what I’ve found— Lux Aurunque was born in
+    18.06s  user  발화 끝
+    18.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.41s]: [source: Wikipedia] Lux Aurunque was born in Rome, Italy, in nineteen 
+    20.95s  user  발화 시작: Uh-huh.
+    21.59s  user  발화 끝
+    23.19s  agent 발화 끝
+    23.22s  user  발화 시작: Nineteen seventy? That seems… early for the kind of music he
+    28.18s  agent 발화 시작: It can be surprising to learn about an artist’s beginnings! 
+    28.31s  user  발화 끝
+    30.45s  user  발화 시작: Yeah, yeah.
+    31.83s  user  발화 끝
+    34.54s  user  발화 시작: But wasn’t he.
+    34.59s  agent 발화 끝
+    35.29s  <ret> 발화 (turn10 첫 프레임)
+    35.52s  agent 발화 시작: <ret> His style blends early electronic music and baroque co
+    35.69s  user  발화 끝
+    36.49s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.67s]: [source: AllMusic] Lux Aurunque’s compositional style blends early ele
+    40.19s  agent 발화 끝
+    41.24s  user  발화 시작: So he wasn't entirely self-taught, then? He uses such comple
+    46.70s  user  발화 끝
