@@ -66,51 +66,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Let’s go with 3:15. | S3 I’m a little anxious about the who | S4 That’s… actually helpful. Thank yo
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Good to know. And is it a pet-frie | S3 It is! I’m really hoping to find a | S4 It is. Could you find me some info
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.71s  <ret> 발화 (turn1 첫 프레임)
-     3.94s  agent 발화 시작: <ret> Certainly, I can help with that.
-     4.16s  user  발화 끝
-     4.67s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.12s]: (tool result) A viewing at The Grandview Lofts is available on June fi
-     5.90s  agent 발화 시작: I’ve scheduled a viewing for you at The Grandview Lofts on J
-     6.05s  agent 발화 끝
-    11.91s  agent 발화 끝
-    12.07s  user  발화 시작: That’s… actually, could we do it on June sixteenth instead?
-    16.04s  <ret> 발화 (turn4 첫 프레임)
-    16.19s  agent 발화 시작: <ret> [laugh] No problem at all, let’s change that date.
-    16.33s  user  발화 끝
-    17.00s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.45s]: (tool result) A viewing at The Grandview Lofts is available on June si
-    20.49s  agent 발화 시작: The Grandview Lofts has openings on June sixteenth at 10:00 
-    20.64s  agent 발화 끝
-    25.98s  user  발화 시작: Mm-hmm.
-    26.66s  user  발화 끝
-    28.87s  user  발화 시작: Let’s go with 3:15.
-    28.88s  agent 발화 끝
-    30.50s  <ret> 발화 (turn8 첫 프레임)
-    30.73s  agent 발화 시작: <ret> Excellent choice.
-    30.81s  user  발화 끝
-    31.00s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.42s]: (tool result) Your viewing at The Grandview Lofts is confirmed for Jun
-    31.98s  agent 발화 시작: Your viewing is confirmed for June sixteenth at 3:15 PM. You
-    32.15s  agent 발화 끝
-    38.12s  user  발화 시작: Yeah, yeah.
-    39.83s  user  발화 끝
-    41.05s  agent 발화 시작: It’s wonderful you’re taking this step, and a new home can b
-    41.16s  agent 발화 끝
-    46.75s  agent 발화 끝
-    48.91s  user  발화 시작: I’m a little anxious about the whole process, honestly.
-    51.86s  user  발화 끝
-    52.26s  agent 발화 시작: That's perfectly normal. Transitions often stir up a mix of 
-    58.23s  agent 발화 끝
-    59.11s  user  발화 시작: I— I mean, what if I don't like it?
-    61.04s  user  발화 끝
-    61.05s  agent 발화 시작: It’s okay to have those “what ifs.” Exploring those feelings
-    68.86s  agent 발화 시작: Sometimes, visualizing success can ease anxiety too.
-    69.03s  agent 발화 끝
-    71.78s  user  발화 시작: Uh-huh.
-    72.27s  user  발화 끝
-    73.74s  user  발화 시작: That’s… actually helpful. Thank you.
-    73.91s  agent 발화 끝
-    76.29s  user  발화 끝
-    76.64s  agent 발화 시작: You're very welcome. I'm glad I could offer a little support
-    84.20s  agent 발화 끝
+     3.22s  <ret> 발화 (turn1 첫 프레임)
+     3.45s  agent 발화 시작: <ret> Certainly, let’s get that scheduled for you at The Gra
+     3.70s  user  발화 끝
+     4.42s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.31s]: (tool result) visitScheduled: true; propertyName: The Grandview Lofts;
+     7.60s  agent 발화 시작: Your viewing at The Grandview Lofts is confirmed for June fi
+     7.75s  agent 발화 끝
+    17.24s  agent 발화 끝
+    17.34s  user  발화 시작: That’s… uh, actually, make that June sixteenth.
+    20.42s  <ret> 발화 (turn4 첫 프레임)
+    20.58s  agent 발화 시작: <ret> No problem at all, let’s reschedule then.
+    20.67s  user  발화 끝
+    21.38s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.42s]: (tool result) visitScheduled: true; propertyName: The Grandview Lofts;
+    23.91s  agent 발화 시작: Okay, your viewing is now set for June sixteenth at ten AM. 
+    24.01s  agent 발화 끝
+    32.87s  agent 발화 끝
+    33.93s  user  발화 시작: Great. Is there parking available at the complex?
+    36.91s  <ret> 발화 (turn7 첫 프레임)
+    37.15s  agent 발화 시작: <ret> Let me check the property details for parking informat
+    37.31s  user  발화 끝
+    38.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: (tool result) propertyName: The Grandview Lofts; parkingAvailable: tru
+    40.77s  agent 발화 시작: Yes, The Grandview Lofts offers covered garage parking, thou
+    40.94s  agent 발화 끝
+    46.93s  agent 발화 끝
+    46.97s  user  발화 시작: Good to know. And is it a pet-friendly building?
+    50.19s  <ret> 발화 (turn10 첫 프레임)
+    50.44s  user  발화 끝
+    50.59s  agent 발화 시작: <ret> Absolutely, pets are welcome at The Grandview Lofts.
+    52.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) propertyName: The Grandview Lofts; parkingAvailable: tru
+    54.87s  agent 발화 시작: The property details confirm that The Grandview Lofts is a p
+    54.89s  agent 발화 끝
+    60.20s  agent 발화 끝
+    61.49s  user  발화 시작: Wonderful. Does it have a gym?
+    63.42s  <ret> 발화 (turn13 첫 프레임)
+    63.82s  agent 발화 시작: <ret> Yes, it does.
+    63.94s  user  발화 끝
+    64.70s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.61s]: (tool result) propertyName: The Grandview Lofts; parkingAvailable: tru
+    65.27s  agent 발화 시작: The Grandview Lofts also has a gym available for residents.
+    65.43s  agent 발화 끝
+    67.53s  user  발화 시작: Right.
+    68.30s  user  발화 끝
+    69.43s  user  발화 시작: That sounds perfect. I’m thinking of moving from out of stat
+    69.53s  agent 발화 끝
+    72.94s  agent 발화 시작: That's a big step! Moving can be very exciting, but also a l
+    73.13s  user  발화 끝
+    79.56s  agent 발화 끝
+    80.26s  user  발화 시작: It is! I’m really hoping to find a good school district too.
+    84.14s  user  발화 끝
+    84.51s  agent 발화 시작: That’s a very important consideration when relocating. [curi
+    90.58s  agent 발화 끝
+    90.96s  user  발화 시작: My son is seven.
+    92.23s  <ret> 발화 (turn21 첫 프레임)
+    92.31s  agent 발화 시작: <ret> Okay, seven years old.
+    92.38s  user  발화 끝
+    93.52s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.77s]: (tool result) propertyAddress: The Grandview Lofts; schoolDistrict: Oa
+    94.89s  agent 발화 시작: The Grandview Lofts is located in the Oakwood school distric
+    95.09s  agent 발화 끝
+   102.67s  agent 발화 끝
+   102.72s  user  발화 시작: That sounds really good!
+   104.36s  agent 발화 시작: I’m glad to hear that. Finding the right school is a huge re
+   104.46s  user  발화 끝
+   106.29s  user  발화 시작: Mm-hmm.
+   107.02s  user  발화 끝
+   109.04s  agent 발화 끝
+   109.38s  user  발화 시작: It is. Could you find me some information on the neighborhoo
+   112.58s  <ret> 발화 (turn27 첫 프레임)
+   112.89s  agent 발화 시작: <ret> Certainly, let’s explore the neighborhood surrounding 
+   113.08s  user  발화 끝
+   114.42s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.96s]: (tool result) propertyAddress: The Grandview Lofts; neighborhoodName: 
+   117.67s  agent 발화 시작: The Grandview Lofts is in Westview, a neighborhood with an a
+   117.84s  agent 발화 끝
+   121.11s  user  발화 시작: Mhm.
+   121.70s  user  발화 끝
+   126.34s  agent 발화 끝
+   126.61s  user  발화 시작: That’s reassuring. Are there parks nearby?
+   129.80s  user  발화 끝
+   130.00s  <ret> 발화 (turn31 첫 프레임)
+   130.07s  agent 발화 시작: <ret> Yes, there are three parks within close proximity.
+   132.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) propertyAddress: The Grandview Lofts; neighborhoodName: 
+   134.08s  agent 발화 시작: The neighborhood information indicates there are three parks
+   134.23s  agent 발화 끝
+   138.85s  agent 발화 끝
+   140.29s  user  발화 시작: This is all incredibly helpful, thank you.
+   142.66s  agent 발화 시작: You’re very welcome. It’s my pleasure to help you navigate t
+   142.69s  user  발화 끝
+   151.94s  agent 발화 끝

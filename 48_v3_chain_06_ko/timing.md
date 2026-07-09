@@ -68,47 +68,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 웹 브라우저 사용자 에이전트를 내 마음대로 설정할 수 있 | S2 잠깐만요, 그럼 제가 지금 아이폰으로 접속한 건데, 구글은 제 | S3 그럼 혹시 이걸 원래대로 되돌릴 수 있을까요? 아이폰으로 다시 | S4 네, 지금 구글에 접속해 보니 아이폰으로 제대로 인식되는 것 
+# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점 | S2 그냥 네이버에 접속해서 확인해 주세요. | S3 다행이다. 그럼 이제 이 사용자 에이전트로, 구글에 '가장 빠 | S4 와, 빠르네요.
 
-     0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 내 마음대로 설정할 수 있을까요?
-     4.36s  user  발화 끝
-     4.36s  <ret> 발화 (turn1 첫 프레임)
-     4.59s  agent 발화 시작: <ret> 물론이죠. 사용자 에이전트를 변경하면 웹사이트가 어떤 브라우저와 운영체제를 사용하는지 속일 수 있
-     6.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) User agent was set to MyCustomBrowser version 10.5.
-    11.37s  agent 발화 시작: 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정했습니다. 이제 웹사이트는 그렇게 인식할 거
-    11.45s  agent 발화 끝
-    14.73s  user  발화 시작: 예.
-    15.04s  user  발화 끝
-    18.42s  agent 발화 끝
-    18.80s  user  발화 시작: 아, 그럼 지금 제가 구글에 접속했을 때 구글은 제가 MyCustomBrowser를 쓰는 걸로 알게 되는 건
-    25.14s  user  발화 끝
-    25.29s  agent 발화 시작: 네, 맞아요. 구글을 포함한 대부분의 웹사이트는 이제 사용자 에이전트 정보를 바탕으로 그렇게 판단할 겁니다.
-    27.54s  user  발화 시작: 음.
-    28.03s  user  발화 끝
-    31.66s  user  발화 시작: 잠깐만요, 그럼 제가 지금 아이폰으로 접속한 건데, 구글은 제가 아이폰을 쓰는 걸로 안 보고 MyCustom
-    31.91s  agent 발화 끝
-    40.56s  user  발화 끝
-    40.57s  agent 발화 시작: 네, 정확히 말씀드리면 그렇습니다. 사용자 에이전트 정보를 변경했기 때문에 구글은 아이폰이 아닌 MyCust
-    44.91s  user  발화 시작: 음.
-    45.13s  user  발화 끝
-    49.14s  user  발화 시작: 그럼 혹시 다른 웹사이트에도 똑같이 적용될까요? 예를 들어 유튜브나 네이버도요?
-    49.23s  agent 발화 끝
-    54.69s  agent 발화 시작: 네, 대부분의 웹사이트에 동일하게 적용됩니다. 유튜브, 네이버도 사용자 에이전트 정보를 바탕으로 판단할 거예
-    54.79s  user  발화 끝
-    61.74s  user  발화 시작: 그럼 혹시 이걸 원래대로 되돌릴 수 있을까요? 아이폰으로 다시 인식하게 하고 싶어요.
-    62.24s  agent 발화 끝
-    66.65s  <ret> 발화 (turn13 첫 프레임)
-    66.72s  agent 발화 시작: <ret> 물론입니다. 사용자 에이전트를 기본값으로 되돌리면 됩니다.
-    66.74s  user  발화 끝
-    68.49s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.07s]: (tool result) User agent was reset to the default browser settings.
-    70.56s  agent 발화 시작: 사용자 에이전트를 기본 설정으로 되돌렸습니다. 이제 웹사이트는 정상적으로 아이폰으로 인식할 거예요.
-    70.79s  agent 발화 끝
-    77.79s  agent 발화 끝
-    79.13s  user  발화 시작: 아, 다행이다. 혹시 지금 당장 확인해 볼 수 있을까요?
-    82.37s  user  발화 끝
-    82.94s  agent 발화 시작: 네, 확인해 보세요. 웹사이트에 접속해서 사용자 에이전트가 제대로 적용되었는지 확인하실 수 있습니다.
-    89.33s  agent 발화 끝
-    89.69s  user  발화 시작: 네, 지금 구글에 접속해 보니 아이폰으로 제대로 인식되는 것 같아요. 감사합니다!
-    95.38s  user  발화 끝
-    95.58s  agent 발화 시작: 다행입니다. 사용자 에이전트 설정에 대해 더 궁금한 점은 없으신가요?
-    99.93s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 줄 수 있을까요?
+     5.27s  <ret> 발화 (turn1 첫 프레임)
+     5.46s  user  발화 끝
+     5.51s  agent 발화 시작: <ret> 네, 그렇게 해 드릴게요. 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정했습니
+     6.55s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.50s]: (tool result) status:success, user_agent:MyCustomBrowser version 10.5
+     7.66s  user  발화 시작: 음.
+     7.96s  user  발화 끝
+    11.65s  user  발화 시작: 아, 잘 됐네요. 그럼 지금 웹사이트 접속해서, 그 사용자 에이전트로 보이는지 확인해 줄 수 있을까요?
+    11.76s  agent 발화 끝
+    18.37s  user  발화 끝
+    18.47s  agent 발화 시작: 어떤 웹사이트를 확인해 드릴까요?
+    20.92s  user  발화 시작: 그냥 네이버에 접속해서 확인해 주세요.
+    20.96s  agent 발화 끝
+    22.99s  user  발화 끝
+    23.02s  <ret> 발화 (turn6 첫 프레임)
+    23.17s  agent 발화 시작: <ret> 네, 네이버에 접속해서 확인해 보겠습니다. 네이버에 접속했습니다. 사용자 에이전트를 확인해 볼까요
+    23.52s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.07s]: (tool result) status:success, url:https://www.naver.com
+    26.39s  user  발화 시작: 예.
+    26.74s  user  발화 끝
+    29.45s  <ret> 발화 (turn8 첫 프레임)
+    29.84s  agent 발화 시작: <ret> 확인 결과… 네, 사용자 에이전트가 MyCustomBrowser 버전 십점오로 잘 표시됩니다.
+    29.93s  agent 발화 끝
+    30.33s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.27s]: (tool result) user_agent:MyCustomBrowser version 10.5
+    32.97s  user  발화 시작: 음.
+    33.33s  user  발화 끝
+    35.69s  user  발화 시작: 다행이다. 그럼 이제 이 사용자 에이전트로, 구글에 '가장 빠른 자동차' 검색해 줄 수 있을까요?
+    36.18s  agent 발화 끝
+    41.13s  <ret> 발화 (turn11 첫 프레임)
+    41.52s  agent 발화 시작: <ret> 물론입니다. 구글에서 검색해 볼게요. 구글에서 '가장 빠른 자동차' 검색 결과, 두 가지 링크를 
+    41.53s  user  발화 끝
+    41.63s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.92s]: (tool result) status:success, query:가장 빠른 자동차, results:[{"title": "세계에
+    55.30s  user  발화 시작: 첫 번째 링크 좀 읽어 줄 수 있을까요?
+    55.47s  agent 발화 끝
+    57.27s  <ret> 발화 (turn13 첫 프레임)
+    57.50s  agent 발화 시작: <ret> 지금 바로 읽어 드릴게요.
+    57.56s  user  발화 끝
+    58.47s  ⚡SPAN 주입 [d'=1.20s / d_lead=1.75s]: (tool result) status:success, content:"현재 세계에서 가장 빠른 자동차는 부가티 시론 슈퍼 스포
+    59.11s  agent 발화 시작: 현재 세계에서 가장 빠른 자동차는 부가티 시론 슈퍼 스포츠 삼백 플러스로, 최고 속도가 시속 삼백사 점 칠칠
+    59.24s  agent 발화 끝
+    68.66s  agent 발화 끝
+    71.25s  user  발화 시작: 와, 빠르네요.
+    72.53s  user  발화 끝
+    72.56s  agent 발화 시작: 네, 정말 빠르죠. 혹시 다른 자동차에 대해서도 알아볼까요?
+    76.67s  agent 발화 끝

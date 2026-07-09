@@ -66,53 +66,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, when is Demi Lova | S2 I mean, I just saw a post online. | S3 So, nothing new *right now*? Just  | S4 Oh, okay! 2017… still not super re
+# EXAMINER(FDB-v2) 단계: S1 I was wondering about Demi Lovato’ | S2 October, okay. That's good to know | S3 Did she tour after that album came | S4 Right, makes sense. Thanks for all
 
-     0.00s  user  발화 시작: I was wondering, when is Demi Lovato’s new album coming out?
-     6.37s  <ret> 발화 (turn1 첫 프레임)
-     6.61s  agent 발화 시작: <ret> It’s wonderful you’re anticipating new music from Demi
-     6.63s  user  발화 끝
-     8.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: Demi Lovato’s album, *Confident*, was released in October 2015.
-    12.48s  agent 발화 시작: Her album *Confident* came out in October of twenty fifteen.
-    12.68s  agent 발화 끝
-    18.43s  user  발화 시작: Oh, 2015? That feels like ages ago! Is she working on someth
-    18.54s  agent 발화 끝
-    24.34s  agent 발화 시작: It does feel like quite some time has passed. Many artists d
-    24.54s  user  발화 끝
-    31.34s  user  발화 시작: I mean, I just saw a post online.
-    31.38s  agent 발화 끝
-    33.97s  agent 발화 시작: It’s easy to get caught up in online buzz, and it’s understa
-    34.06s  user  발화 끝
-    40.64s  user  발화 시작: But is there an actual release date announced for a *new* al
-    41.28s  agent 발화 끝
-    44.61s  <ret> 발화 (turn8 첫 프레임)
-    44.93s  agent 발화 시작: <ret> You’re right to ask for specifics. Let me check for cu
-    45.08s  user  발화 끝
-    46.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: Demi Lovato’s eighth studio album, *Revival*, was released on Septembe
-    50.69s  agent 발화 시작: Her most recent album, *Revival*, was released September twe
-    50.76s  agent 발화 끝
-    52.79s  user  발화 시작: Mm-hmm.
-    53.28s  user  발화 끝
-    55.77s  <ret> 발화 (turn11 첫 프레임)
-    56.16s  agent 발화 시작: <ret> Sometimes finding the details requires a bit of diggin
-    56.34s  agent 발화 끝
-    57.77s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.74s]: The giraffe, *Giraffa camelopardalis*, is an African artiodactyl mamma
-    61.79s  agent 발화 시작: I find when we're seeking creative inspiration, sometimes a 
-    61.91s  agent 발화 끝
-    67.40s  agent 발화 끝
-    67.51s  user  발화 시작: So, nothing new *right now*? Just *Revival* from 2016?
-    72.97s  user  발화 끝
-    73.35s  agent 발화 시작: It appears that as of today, there isn't a confirmed release
-    81.00s  agent 발화 끝
-    81.08s  user  발화 시작: Okay. Well, what about singles? Has she released any new sin
-    86.15s  <ret> 발화 (turn16 첫 프레임)
-    86.22s  agent 발화 시작: <ret> That's a good question. Let’s see if there’s any infor
-    86.26s  user  발화 끝
-    88.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.29s]: Demi Lovato released the single “Sorry Not Sorry” on July 11, 2017.
-    92.32s  agent 발화 시작: She released “Sorry Not Sorry” on July eleventh, twenty seve
-    92.51s  agent 발화 끝
-    96.28s  user  발화 시작: Mm-hmm.
-    96.96s  user  발화 끝
-    99.92s  agent 발화 끝
-   100.36s  user  발화 시작: Oh, okay! 2017… still not super recent, but better than noth
-   107.59s  user  발화 끝
+     0.00s  user  발화 시작: I was wondering about Demi Lovato’s new album. When is it co
+     4.44s  user  발화 끝
+     4.51s  agent 발화 시작: It’s exciting to anticipate new music, isn't it?
+     7.30s  user  발화 시작: Yeah, I'm really looking forward to it. Specifically, I’m cu
+     7.33s  agent 발화 끝
+    13.71s  <ret> 발화 (turn3 첫 프레임)
+    13.95s  agent 발화 시작: <ret> Let’s see what information I can find— Her album, *Con
+    14.02s  user  발화 끝
+    15.39s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.00s]: [source: Wikipedia] Demi Lovato’s fifth studio album, *Confident*, was
+    20.81s  agent 발화 끝
+    21.70s  user  발화 시작: October, okay. That's good to know. Is that the one with “Co
+    26.78s  <ret> 발화 (turn5 첫 프레임)
+    27.09s  agent 발화 시작: <ret> That’s a great question! It often feels good to connec
+    27.30s  user  발화 끝
+    27.34s  ⚡SPAN 주입(IRRELEVANT) [d'=0.56s / d_lead=5.56s]: [source: Britannica] The Sahara Desert is a hot, dry, sandy region cov
+    32.65s  agent 발화 끝
+    32.77s  user  발화 시작: So, was it well-received, that album?
+    35.17s  <ret> 발화 (turn7 첫 프레임)
+    35.41s  agent 발화 시작: <ret> *Confident* did quite well— It debuted at number one o
+    35.49s  user  발화 끝
+    35.73s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.56s]: [source: Rolling Stone] *Confident* debuted at number one on the Billb
+    37.43s  user  발화 시작: Mm-hmm.
+    38.06s  user  발화 끝
+    40.73s  agent 발화 시작: It’s wonderful when an artist’s work really resonates with p
+    40.87s  agent 발화 끝
+    44.65s  user  발화 시작: Did she tour after that album came out?
+    45.35s  agent 발화 끝
+    46.87s  <ret> 발화 (turn11 첫 프레임)
+    47.26s  agent 발화 시작: <ret> That’s a good question. Let me check on tour dates for
+    47.37s  user  발화 끝
+    48.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) event_name: "Demi Lovato: Future Now Tour"; start_date: 
+    51.66s  agent 발화 끝
+    51.67s  agent 발화 시작: She toured with the "Future Now Tour" from September to Nove
+    56.81s  agent 발화 끝
+    56.85s  user  발화 시작: 2018? That’s a while after the album came out.
+    60.63s  user  발화 끝
+    60.80s  agent 발화 시작: Sometimes there’s a little space between an album’s release 
+    64.40s  user  발화 시작: Mm-hmm.
+    64.85s  user  발화 끝
+    67.67s  user  발화 시작: Right, makes sense. Thanks for all the info!
+    67.70s  agent 발화 끝
+    70.56s  agent 발화 시작: You're very welcome. It's lovely to help you explore what in
+    70.59s  user  발화 끝
+    75.09s  agent 발화 끝

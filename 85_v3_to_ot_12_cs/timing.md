@@ -58,25 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨의 "Beat It" 기타 솔로를 누가 | S2 와, 잭슨의 단골 밴드 멤버 중 한 명이 연주했을 거라고 생각 | S3 저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요? | S4 아, 죄송해요. 제가 무슨 말을 하려 했었죠? 아, 맞다—반 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 | S2 와, 에디 반 헤일런이요? 잭슨 밴드와 더 가까운 사람이 연주 | S3 저기, 혹시 쓰레기 버리셨어요? | S4 죄송해요. 그 트랙에 그를 참여시키는 게 어려웠나요?
 
-     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨의 "Beat It" 기타 솔로를 누가 연주했는지 궁금했거든요. 정말 유명한 사운드잖
-     7.94s  <ret> 발화 (turn1 첫 프레임)
-     8.02s  user  발화 끝
-     8.26s  agent 발화 시작: <ret> 네, 좋은 질문이에요. 그 멋진 기타 솔로는 에디 반 헤일런이 연주한 것으로 알려져 있습니다.
-     9.22s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.80s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-    12.94s  user  발화 시작: 예.
-    13.43s  user  발화 끝
-    14.51s  user  발화 시작: 와, 잭슨의 단골 밴드 멤버 중 한 명이 연주했을 거라고 생각했었는데.
-    14.56s  agent 발화 끝
-    18.97s  agent 발화 시작: 사실 흔히 오해하시는 부분이에요. 그는 그 노래에 뭔가 다른 느낌을 원했고, 에디가 그걸 정말 잘 해냈어요.
-    19.09s  user  발화 끝
-    26.25s  agent 발화 끝
-    26.49s  user  발화 시작: 저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요?
-    30.12s  user  발화 시작: 아, 죄송해요. 제가 무슨 말을 하려 했었죠? 아, 맞다—반 헤일런은 "Beat It" 전에 유명한 뮤지션이
-    30.33s  user  발화 끝
-    35.89s  <ret> 발화 (turn7 첫 프레임)
-    36.21s  agent 발화 시작: <ret> 네, 물론이었어요. 에디 반 헤일런은 천구백칠십이 년에 밴드 반 헤일런을 결성하고 빠르게 명성을 
-    36.42s  user  발화 끝
-    37.49s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.71s]: Eddie Van Halen gained prominence as the guitarist and founder of the 
-    43.81s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했거든요. 정말 유명한 사운드라
+     7.51s  <ret> 발화 (turn1 첫 프레임)
+     7.59s  user  발화 끝
+     7.83s  agent 발화 시작: <ret> 네, 좋은 질문이세요. 이야기가 좀 있어요! 에디 반 헤일런이 마이클 잭슨의 “Beat It” 기
+     9.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.56s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+    10.92s  user  발화 시작: 예.
+    11.41s  user  발화 끝
+    15.66s  user  발화 시작: 와, 에디 반 헤일런이요? 잭슨 밴드와 더 가까운 사람이 연주했을 거라고 생각했는데.
+    15.71s  agent 발화 끝
+    21.73s  user  발화 시작: 저기, 혹시 쓰레기 버리셨어요?
+    21.77s  user  발화 끝
+    23.99s  user  발화 시작: 죄송해요. 그 트랙에 그를 참여시키는 게 어려웠나요?
+    24.03s  user  발화 끝
+    27.18s  <ret> 발화 (turn6 첫 프레임)
+    27.58s  agent 발화 시작: <ret> 음, 흔한 방식은 아니었고, 설득이 필요했어요.
+    27.73s  user  발화 끝
+    28.46s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.49s]: [source: Rolling Stone] Quincy Jones had to convince Van Halen to cont
+    32.06s  agent 발화 시작: 퀸시 존스가 처음에는 망설였지만 에디 반 헤일런을 설득해서 그 곡에 참여하게 했습니다.
+    32.06s  agent 발화 끝
+    37.85s  agent 발화 끝

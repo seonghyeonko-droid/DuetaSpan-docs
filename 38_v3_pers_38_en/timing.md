@@ -59,23 +59,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Welcome, Avery. I'm Jaeia, and I’m here to offer a listening
-     4.22s  user  발화 시작: Right.
-     4.80s  user  발화 끝
-     6.58s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient. Is that 
-     6.71s  agent 발화 끝
-    13.73s  user  발화 끝
-    14.04s  agent 발화 시작: It is a name with roots in many cultures, yes. I find its re
-    18.73s  user  발화 시작: Yeah.
-    19.26s  user  발화 끝
-    23.47s  agent 발화 시작: It’s perfectly natural to feel surprised by a name, Avery. S
-    23.74s  agent 발화 끝
-    34.27s  agent 발화 끝
-    35.95s  user  발화 시작: Actually, yeah. My grandmother passed away last month, and e
-    43.31s  agent 발화 시작: Grief truly does shift everything, doesn’t it? It’s like the
-    43.41s  user  발화 끝
-    54.30s  agent 발화 끝
-    54.52s  user  발화 시작: I think… it’s the little things. Her garden, her favourite c
-    61.37s  user  발화 끝
-    61.48s  agent 발화 시작: Those little things become enormous anchors to our memories,
-    74.74s  agent 발화 끝
+     0.00s  agent 발화 시작: Avery, welcome. I’m Jaeia, and I’m here to gently guide you 
+     3.81s  user  발화 시작: Right.
+     4.11s  user  발화 끝
+     5.97s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient, almost. 
+     6.02s  agent 발화 끝
+    12.28s  user  발화 끝
+    12.44s  agent 발화 시작: It is, actually. It’s a name of Tuareg origin, meaning ‘gaze
+    16.79s  user  발화 시작: Yeah.
+    17.28s  user  발화 끝
+    21.23s  agent 발화 시작: Often, when facing change, we search for strength within our
+    21.33s  agent 발화 끝
+    34.77s  agent 발화 끝
+    36.51s  user  발화 시작: I— I mean, my grandmother passed away last month. It's just…
+    41.48s  agent 발화 시작: Grief truly shifts everything, doesn’t it? It alters the fam
+    41.60s  user  발화 끝
+    50.84s  agent 발화 끝
+    50.90s  user  발화 시작: Yeah. It’s just… I keep thinking about all the things I didn
+    54.83s  user  발화 끝

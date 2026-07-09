@@ -76,32 +76,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Oh, excellent! Can you send the Pa | S3 Great, thanks so much! But… what w | S4 Okay, sounds good.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.18s  <ret> 발화 (turn1 첫 프레임)
-     4.25s  agent 발화 시작: <ret> I located three photos from your France trip last year
-     4.39s  user  발화 끝
-     6.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.89s]: (tool result) Found three files: "Paris_EiffelTower.jpg", "Nice_Beach.
-     7.22s  user  발화 시작: Mhm.
-     7.53s  user  발화 끝
-     9.15s  agent 발화 끝
-     9.83s  user  발화 시작: Oh, excellent! Can you send the Paris one to my sister, her 
-    16.02s  <ret> 발화 (turn4 첫 프레임)
-    16.33s  agent 발화 시작: <ret> I’ve just emailed the Eiffel Tower photo to Anna with 
-    16.49s  user  발화 끝
-    17.06s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.19s]: (tool result) Email sent to anna.rossi@email.com with attachment "Pari
-    19.59s  user  발화 시작: Yeah.
-    20.08s  user  발화 끝
-    21.52s  agent 발화 끝
-    22.01s  user  발화 시작: Great, thanks so much! But… what was the weather like in Lyo
-    26.61s  agent 발화 시작: Give me a moment to check the historical weather data for Ly
-    26.69s  user  발화 끝
-    29.16s  user  발화 시작: Yeah.
-    29.80s  user  발화 끝
-    30.08s  agent 발화 끝
-    30.09s  user  발화 시작: Okay, sounds good.
-    30.29s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The weather in Lyon on July 15, 2023, was 28 degrees Cel
-    31.22s  agent 발화 시작: <ret> Let’s see… On July fifteenth, two thousand twenty-thre
-    31.42s  user  발화 끝
-    37.48s  agent 발화 끝
+     4.46s  <ret> 발화 (turn1 첫 프레임)
+     4.50s  agent 발화 시작: <ret> I found twenty-three photos… …from your France trip la
+     4.72s  user  발화 끝
+     5.03s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.68s]: (tool result) path: /Users/sunan/Pictures/France2023, count: 23, sizes
+     8.91s  user  발화 시작: Mhm.
+     9.38s  user  발화 끝
+    11.63s  agent 발화 끝
+    12.31s  user  발화 시작: Oh, perfect! And can you remind me to back those up to the c
+    16.19s  <ret> 발화 (turn4 첫 프레임)
+    16.34s  agent 발화 시작: <ret> I’ve set a reminder for Friday evening to back up your
+    16.52s  user  발화 끝
+    18.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) reminder_id: 78945, date: 2024-03-08, time: 18:00, task:
+    18.92s  user  발화 시작: Yeah.
+    19.41s  user  발화 끝
+    20.55s  agent 발화 끝
+    21.02s  user  발화 시작: That’s great, thanks. I— I mean, is it safe to just use clou
+    24.97s  agent 발화 시작: Cloud storage is convenient, but consider a local backup too
+    25.05s  user  발화 끝
+    30.85s  agent 발화 끝

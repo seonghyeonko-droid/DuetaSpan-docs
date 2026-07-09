@@ -69,13 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I help
-     7.46s  agent 발화 끝
-     8.51s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
-    14.95s  user  발화 끝
-    15.02s  agent 발화 시작: It’s completely understandable to feel that way, Kim. San Fr
-    25.11s  user  발화 시작: I— I mean, just… groceries? It feels like a small thing to w
-    25.13s  agent 발화 끝
-    31.28s  user  발화 끝
-    31.65s  agent 발화 시작: Groceries are a great place to start, actually. Small change
-    40.18s  agent 발화 끝
+     0.00s  agent 발화 시작: Kim, it’s wonderful to connect with you. I’m Ara, and I help
+     7.23s  agent 발화 끝
+     8.21s  user  발화 시작: Ara… that's a lovely name. I’m just feeling a bit overwhelme
+    15.86s  agent 발화 시작: [happy] It absolutely can, Kim. Many people feel that way as
+    15.86s  user  발화 끝
+    25.08s  agent 발화 끝
+    25.40s  user  발화 시작: I— I mean, I’m looking at retirement, and I’m not sure I’ve 
+    31.01s  user  발화 끝
+    31.44s  agent 발화 시작: It’s perfectly understandable to feel scared when thinking a
+    39.87s  agent 발화 끝

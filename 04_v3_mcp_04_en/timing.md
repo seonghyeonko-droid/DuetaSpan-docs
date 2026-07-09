@@ -55,29 +55,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Okay, good. Now, can you search fo | S3 Hmm, TechCrunch sounds interesting | S4 That’s… a little unsettling, actua
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.43s  <ret> 발화 (turn1 첫 프레임)
-     4.72s  user  발화 끝
-     4.74s  agent 발화 시작: <ret> Certainly. The user agent is now set to SuperCrawler v
-     6.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) The user agent has been set to SuperCrawler version 10.1
-     7.57s  user  발화 시작: Mhm.
-     8.20s  user  발화 끝
-    10.84s  user  발화 시작: Okay, good. Now, can you search for recent articles about th
-    11.04s  agent 발화 끝
-    16.80s  <ret> 발화 (turn4 첫 프레임)
-    16.88s  agent 발화 시작: <ret> Of course. I found three recent articles—Wired, The Ne
-    17.09s  user  발화 끝
-    18.56s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.97s]: (tool result) Search returned three results: “AI and the Future of Sto
-    26.80s  user  발화 시작: Hmm, TechCrunch sounds interesting. Could you summarize that
-    26.85s  agent 발화 끝
-    30.96s  user  발화 끝
-    31.15s  agent 발화 시작: [interrupting] Just the main points, please?
-    33.46s  <ret> 발화 (turn7 첫 프레임)
-    33.54s  agent 발화 시작: <ret> Briefly summarizing the TechCrunch article… It explain
-    33.69s  agent 발화 끝
-    34.42s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.27s]: (tool result) The article details how AI writing tools are becoming in
-    43.79s  user  발화 시작: That’s… a little unsettling, actually. Maybe I should just s
-    43.97s  agent 발화 끝
-    49.76s  user  발화 끝
+     4.31s  <ret> 발화 (turn1 첫 프레임)
+     4.35s  user  발화 끝
+     4.62s  agent 발화 시작: <ret> Certainly. I’ve set your user agent to SuperCrawler ve
+     5.35s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.79s]: (tool result) status:success; user_agent:SuperCrawler version 10.1
+     8.17s  user  발화 시작: Mhm.
+     8.66s  user  발화 끝
+    12.24s  user  발화 시작: Hmm, that's… aggressive. Maybe something a little less notic
+    12.41s  agent 발화 끝
+    20.11s  <ret> 발화 (turn4 첫 프레임)
+    20.34s  agent 발화 시작: <ret> [sigh] It's understandable to want to blend in a bit m
+    20.44s  user  발화 끝
+    21.87s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.74s]: (tool result) status:success; user_agent:Mozilla/5.0 (Macintosh; Intel
+    28.06s  agent 발화 시작: I’ve switched your user agent to a standard Mac Safari setti
+    28.07s  agent 발화 끝
+    34.21s  agent 발화 끝
+    34.52s  user  발화 시작: Yeah, much better. Thanks, Lio. That feels right.
+    37.64s  agent 발화 시작: You’re very welcome. Sometimes a small adjustment can make a
+    37.75s  user  발화 끝
+    43.29s  agent 발화 끝

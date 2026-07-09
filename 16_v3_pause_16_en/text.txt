@@ -64,29 +64,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading this dystopian novel, and it got me thinking…
-[  4.56s][moshi] It’s wonderful you’re exploring thought-provoking literature. What’s on your mind?
-[  8.92s][user ] …where did the phrase “big brother”…
-[ 11.75s][user ] …actually come from? It feels… ⟨ret@14.74s⟩ familiar.
-[ 14.90s][moshi] The phrase originates from ⟦⚡SPAN@16.74s: <Nineteen Eighty-Four is a dystopian novel published in 1949 by George Orwell.>⟧ George Orwell’s nineteen eighty-four, published in nineteen forty-nine.
-[ 20.52s][user ] Oh, nineteen eighty-four. That makes sense, I’ve heard of that book. Is it about surveillance?
-[ 26.11s][moshi] It explores themes of totalitarianism, mass surveillance, and repression of individuality, yes.
-[ 28.26s][user ] «backchannel» Mm-hmm.
-[ 31.84s][user ] That sounds… unsettling.
-[ 33.67s][moshi] It certainly can be, though many find it a powerful cautionary tale.
-[ 35.45s][user ] «backchannel» Mhm.
-[ 37.48s][moshi] Braera finds it a valuable exploration of how power can be misused, personally.
-[ 39.49s][user ] «backchannel» Yeah.
-[ 42.45s][user ] I wonder if Orwell predicted all this technology we have now?
-[ 46.78s][moshi] He explored the potential for technology to enable control, certainly.
-[ 48.31s][user ] «backchannel» Mm-hmm.
-[ 50.31s][user ] Was he writing about a specific time or place, or was it more… abstract?
-[ 55.50s][moshi] ⟨ret@55.42s⟩ The novel is set ⟦⚡SPAN@57.10s: <The novel depicts a fictional totalitarian state called Oceania, ruled by the Party.>⟧ in Oceania, a fictional totalitarian state ruled by the Party.
-[ 60.63s][user ] Oceania… so it wasn’t based on a real country?
-[ 64.38s][moshi] It was inspired by the Soviet Union and Nazi Germany, but it’s a fictional construct.
-[ 67.77s][user ] «backchannel» Mm-hmm.
-[ 69.35s][user ] [laugh] That's actually kind of a relief.
-[ 72.38s][moshi] [happy] It allows Orwell to focus on the core principles of totalitarianism, unburdened by specifics.
-[ 74.47s][user ] «backchannel» Yeah.
-[ 77.93s][user ] I think I need to read that book now.
-[ 80.00s][moshi] A worthwhile endeavor, I believe. It’s a powerful story that stays with you.
+[  0.00s][user ] So, I was reading a book, and it mentioned "Big Brother"—
+[  3.68s][user ] …and it got me wondering, where did that phrase even ⟨ret@6.90s⟩ come from?
+[  7.22s][moshi] That’s a fascinating question! ⟦⚡SPAN@8.90s: [source: Wikipedia] "Big Brother is the protagonist in George Orwell's dystopian novel Nineteen Eighty-Four, p⟧ It’s a phrase deeply embedded in our culture now.
+[ 12.11s][moshi] The term originates from George Orwell’s novel, *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 18.29s][user ] Nineteen Eighty-Four… I think I read that in high school. Was it a popular book at the ⟨ret@23.56s⟩ time?
+[ 23.80s][moshi] It certainly ⟦⚡SPAN@24.84s: [source: British Library] "Nineteen Eighty-Four sold over fifty thousand copies in its first year and has sinc⟧ was. It quickly became a cultural touchstone after its release.
+[ 28.00s][moshi] *Nineteen Eighty-Four* sold over fifty thousand copies in its first year and became very influential.
+[ 33.98s][user ] Wow, that’s a lot! So, Orwell just *made up* this "Big Brother" character?
+[ 39.77s][moshi] ⟨ret@39.70s⟩ Essentially, yes. He created ⟦⚡SPAN@41.70s: [source: Encyclopedia Britannica] "Big Brother, in George Orwell’s Nineteen Eighty-Four, is the enigmatic dict⟧ him as a symbol of totalitarian surveillance.
+[ 44.01s][moshi] Big Brother is the enigmatic dictator of Oceania within the novel’s narrative.
+[ 45.62s][user ] «backchannel» Mm-hmm.
+[ 48.34s][user ] That's kind of creepy. It feels very relevant even today, with all the data collection.
+[ 53.73s][moshi] [happy] It’s remarkable how prescient Orwell’s vision was, isn't it? It continues to resonate.
+[ 55.80s][user ] «backchannel» Yeah.
+[ 58.39s][user ] It really does. I was thinking about security cameras, and.
+[ 63.34s][moshi] ⟨ret@63.10s⟩ That’s ⟦⚡SPAN@64.22s: [source: The Guardian] “Orwell’s concept of ‘telescreens’ has been likened to modern CCTV and digital surveill⟧ a very astute connection— Orwell’s “telescreens” are often compared to modern CCTV and digital surveillance technologies.
+[ 66.32s][user ] «backchannel» Mm-hmm.
+[ 70.82s][user ] So, the idea of being constantly…
+[ 74.25s][user ] …watched… that’s what he was getting ⟨ret@76.04s⟩ at?
+[ 76.43s][moshi] Precisely. The loss ⟦⚡SPAN@78.04s: [source: Literary Hub] "Orwell warned against the dangers of a state that controls information and monitors it⟧ of privacy and individual freedom under constant observation.
+[ 81.31s][moshi] Orwell warned about a state controlling information and monitoring its citizens.
+[ 85.88s][user ] That’s a bit frightening, honestly. I wonder if he’d be surprised by how much it's come true.
+[ 91.56s][moshi] I suspect he would be both saddened and, unfortunately, unsurprised.
+[ 93.45s][user ] «backchannel» Mhm.
+[ 95.67s][moshi] He was a keen observer of political trends, after all.
+[ 97.71s][user ] «backchannel» Mm-hmm.
+[ 98.86s][user ] Do you think that’s why it’s such a lasting image? Because it feels so real?
+[103.57s][moshi] Absolutely. The themes he explored—power, control, truth—are timeless and universal.
+[105.50s][user ] «backchannel» Yeah.
+[108.70s][user ] I guess so. It makes you think.
+[111.06s][moshi] It certainly does. And critical thinking is always a valuable exercise.
+[112.43s][user ] «backchannel» Right.
+[115.08s][user ] It really is. I should probably re-read that book, actually.
+[118.77s][moshi] That’s a wonderful idea. Revisiting classic literature often reveals new layers of meaning.
+[120.73s][user ] «backchannel» Yeah, yeah.
+[124.51s][user ] I think I will. Thanks for explaining the origin of the phrase, Braera.
+[129.18s][moshi] You're most welcome. It was my pleasure to discuss *Nineteen Eighty-Four* with you.

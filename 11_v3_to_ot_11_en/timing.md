@@ -71,29 +71,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has that hap | S2 Wow, that’s… longer ago than I tho | S3 Hey, did you remember to take the  | S4 Sorry about that. So, Paxton, huh?
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has the Oakl | S2 Wow, that *is* a while ago. I— I m | S3 Hey, did you remember to take the  | S4 Sorry about that. So, who pitched 
 
-     0.00s  user  발화 시작: I was just wondering, has that happened to the A’s recently?
-     4.36s  <ret> 발화 (turn1 첫 프레임)
-     4.75s  agent 발화 시작: <ret> That’s a good question, and it’s happened— it occurred
-     4.76s  user  발화 끝
-     5.48s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.55s]: The last time the Oakland A’s were no-hit was April 21, 2018.
-    10.22s  agent 발화 끝
-    10.57s  user  발화 시작: Wow, that’s… longer ago than I thought. Who pitched it?
-    14.05s  <ret> 발화 (turn3 첫 프레임)
-    14.18s  user  발화 끝
-    14.29s  agent 발화 시작: <ret> I can certainly look that up for you.
-    15.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.08s]: James Paxton pitched a no-hitter against the Oakland Athletics on Apri
-    16.29s  agent 발화 시작: James Paxton pitched the no-hitter against the A’s on that d
-    16.36s  agent 발화 끝
-    19.42s  user  발화 시작: Hey, did you remember to take the chicken out?
-    19.99s  agent 발화 끝
-    21.68s  user  발화 시작: Sorry about that. So, Paxton, huh? He’s still playing?
-    21.77s  user  발화 끝
-    25.10s  agent 발화 시작: [laugh] It’s alright, we all have things on our minds. Yes, 
-    25.23s  user  발화 끝
-    28.00s  <ret> 발화 (turn8 첫 프레임)
-    28.39s  agent 발화 시작: <ret> James Paxton currently pitches— he now plays for the L
-    28.47s  agent 발화 끝
-    28.71s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.58s]: James Paxton currently plays for the Los Angeles Dodgers.
-    33.52s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, has the Oakland A’s team been no-hit r
+     5.24s  <ret> 발화 (turn1 첫 프레임)
+     5.60s  user  발화 끝
+     5.63s  agent 발화 시작: <ret> That’s a good question, and it has been some time. The
+     7.08s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.50s]: [source: ESPN] The last time the Oakland Athletics were no-hit was on 
+    12.63s  agent 발화 끝
+    12.84s  user  발화 시작: Wow, that *is* a while ago. I— I mean, it feels longer, hone
+    17.25s  user  발화 시작: Hey, did you remember to take the trash out?
+    17.32s  user  발화 끝
+    19.65s  user  발화 시작: Sorry about that. So, who pitched that no-hitter against the
+    19.70s  user  발화 끝
+    23.23s  <ret> 발화 (turn5 첫 프레임)
+    23.35s  user  발화 끝
+    23.46s  agent 발화 시작: <ret> It was a combined effort from three pitchers—Lucas Gio
+    25.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: [source: Baseball-Reference.com] Lucas Giolito, Reynaldo López, and Jo
+    29.03s  agent 발화 시작: Lucas Giolito, Reynaldo López, and José Quintana all contrib
+    29.20s  agent 발화 끝
+    34.31s  agent 발화 끝

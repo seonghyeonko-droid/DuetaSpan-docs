@@ -63,35 +63,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Islands, definitely. Somewhere wit | S3 Is Santorini really that expensive | S4 Hmm. What about Crete? Are there a
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Okay. So, if someone wanted to avo | S3 Mm-hmm. | S4 Democratic confederalism… interest
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.64s  <ret> 발화 (turn1 첫 프레임)
-     2.78s  agent 발화 시작: <ret> That’s a fascinating question, though I’m drawing a bl
-     2.86s  user  발화 끝
-     4.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (no information found)
-     6.46s  user  발화 시작: Uh-huh.
-     6.87s  user  발화 끝
-     9.09s  agent 발화 끝
-     9.24s  user  발화 시작: Right, well, what about vacation time in Greece? I’m thinkin
-    13.58s  agent 발화 시작: September is lovely in Greece—warm seas and fewer crowds. To
-    13.63s  user  발화 끝
-    21.61s  agent 발화 끝
-    22.18s  user  발화 시작: Islands, definitely. Somewhere with beautiful beaches, but n
-    27.12s  <ret> 발화 (turn6 첫 프레임)
-    27.27s  agent 발화 시작: <ret> Ah, a peaceful escape sounds wonderful.
-    27.41s  user  발화 끝
-    29.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.72s]: (tool result) Hotel Azure, Santorini. Beachfront. Rating 4.6. Price 18
-    29.84s  agent 발화 시작: I’ve found a couple of options— Hotel Azure in Santorini is 
-    29.99s  agent 발화 끝
-    37.90s  agent 발화 끝
-    37.91s  user  발화 시작: Is Santorini really that expensive, though?
-    40.44s  agent 발화 시작: It can be, yes—
-    40.64s  user  발화 끝
-    41.06s  user  발화 시작: Hmm. What about Crete? Are there any quieter spots there?
-    41.77s  agent 발화 끝
-    45.61s  agent 발화 시작: Crete is a superb choice, often more affordable than Santori
-    45.64s  user  발화 끝
-    52.38s  agent 발화 시작: I can search for hotels in Crete if you’d like—perhaps near 
-    52.42s  agent 발화 끝
-    58.40s  agent 발화 끝
+     2.32s  <ret> 발화 (turn1 첫 프레임)
+     2.48s  agent 발화 시작: <ret> That’s a really interesting question, and one I’ve not
+     2.53s  user  발화 끝
+     4.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (no information found)
+     7.25s  user  발화 시작: Uh-huh.
+     7.75s  user  발화 끝
+    10.59s  agent 발화 끝
+    10.80s  user  발화 시작: Right, but is there one they *particularly* dislike? Like, h
+    15.13s  <ret> 발화 (turn4 첫 프레임)
+    15.28s  agent 발화 시작: <ret> Historically, anarchists have focused their opposition
+    15.48s  user  발화 끝
+    16.33s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.38s]: [source: Wikipedia] Anarchists oppose the state as a form of hierarchi
+    23.63s  agent 발화 끝
+    24.18s  user  발화 시작: Okay. So, if someone wanted to avoid conflict with anarchist
+    31.27s  agent 발화 시작: That’s a thoughtful consideration. Avoiding conflict depends
+    31.40s  user  발화 끝
+    38.17s  agent 발화 끝
+    38.17s  user  발화 시작: Mm-hmm.
+    38.67s  user  발화 끝
+    38.87s  agent 발화 시작: Some groups focus on direct action, while others prioritize 
+    43.45s  user  발화 시작: But are there places now where anarchists actually *run* thi
+    44.19s  agent 발화 끝
+    47.46s  <ret> 발화 (turn10 첫 프레임)
+    47.86s  agent 발화 시작: <ret> That's a fascinating question! There aren't any fully 
+    48.07s  user  발화 끝
+    49.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: [source: CrimethInc.] Rojava, in northern Syria, operates on principle
+    54.75s  agent 발화 시작: Rojava in Syria operates on democratic confederalism, incorp
+    54.95s  agent 발화 끝
+    61.51s  agent 발화 끝
+    61.72s  user  발화 시작: Democratic confederalism… interesting. Is that stable, thoug
+    66.07s  user  발화 끝
+    66.08s  agent 발화 시작: It’s faced significant challenges, including ongoing conflic
+    73.13s  agent 발화 끝

@@ -68,65 +68,73 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Yes, actually. I was thinking of a | S3 Hmm, that’s pretty late. I think w | S4 That sounds good. Can you make a r
+# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Great, thanks. I need to book a ta | S3 Perfect. I also need to send a qui | S4 I— I mean, no, I think that’s all 
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     4.39s  <ret> 발화 (turn1 첫 프레임)
-     4.62s  agent 발화 시작: <ret> Certainly, I’ll monitor weather dot example dot com fo
-     4.77s  user  발화 끝
-     6.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) The page title is "Example Weather" and the current temp
-     9.77s  agent 발화 시작: The current temperature at weather dot example dot com is tw
-     9.90s  agent 발화 끝
-    15.78s  agent 발화 끝
-    15.83s  user  발화 시작: Oh, that’s nice. Is it supposed to rain later?
-    18.82s  <ret> 발화 (turn4 첫 프레임)
-    19.14s  agent 발화 시작: <ret> I can check the forecast for you.
-    19.25s  user  발화 끝
-    19.78s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.07s]: (tool result) The forecast shows a 30 percent chance of rain after 6 P
-    21.18s  agent 발화 시작: There is a thirty percent chance of rain after six PM this e
-    21.21s  agent 발화 끝
-    23.10s  user  발화 시작: Mhm.
-    23.59s  user  발화 끝
-    25.45s  agent 발화 시작: I find knowing the forecast helps with planning. Do you have
-    25.68s  agent 발화 끝
-    27.77s  user  발화 시작: Uh-huh.
-    28.27s  user  발화 끝
-    30.45s  agent 발화 끝
-    31.21s  user  발화 시작: Yes, actually. I was thinking of a picnic. Should I reschedu
-    35.89s  <ret> 발화 (turn10 첫 프레임)
-    35.97s  agent 발화 시작: <ret> A picnic sounds lovely! Perhaps checking the hourly fo
-    36.21s  user  발화 끝
-    37.09s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.02s]: (tool result) Rain is expected between 7 PM and 10 PM, with light wind
-    41.85s  agent 발화 시작: Rain is expected between seven and ten PM, with light winds.
-    41.99s  agent 발화 끝
-    44.68s  user  발화 시작: Yeah.
-    45.17s  user  발화 끝
-    47.18s  user  발화 시작: Hmm, that’s pretty late. I think we can risk it. Could you s
-    47.27s  agent 발화 끝
-    53.20s  <ret> 발화 (turn14 첫 프레임)
-    53.60s  agent 발화 시작: <ret> Of course. I’ll set a reminder for six thirty to re-ch
-    53.62s  user  발화 끝
-    55.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.99s]: (tool result) Reminder set for 6:30 PM: Check weather forecast.
-    58.52s  agent 발화 시작: Your reminder is set for six thirty PM to check the weather.
-    58.59s  agent 발화 끝
-    60.03s  user  발화 시작: Yeah.
-    60.48s  user  발화 끝
-    62.54s  agent 발화 끝
-    62.65s  user  발화 시작: Perfect. And could you find me a good Italian restaurant nea
-    66.66s  <ret> 발화 (turn18 첫 프레임)
-    66.91s  user  발화 끝
-    67.06s  agent 발화 시작: <ret> I can certainly help with that.
-    67.54s  ⚡SPAN 주입 [d'=0.88s / d_lead=2.12s]: (tool result) Bella Notte is 0.5 miles away, rated 4.5 stars, price ra
-    69.14s  agent 발화 시작: Bella Notte, an Italian restaurant, is half a mile away and 
-    69.18s  agent 발화 끝
-    71.04s  user  발화 시작: Right.
-    71.86s  user  발화 끝
-    75.36s  user  발화 시작: That sounds good. Can you make a reservation for two at seve
-    75.49s  agent 발화 끝
-    79.56s  <ret> 발화 (turn22 첫 프레임)
-    79.71s  agent 발화 시작: <ret> I’ll be happy to make that reservation for you.
-    79.90s  user  발화 끝
-    80.60s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.96s]: (tool result) Reservation confirmed at Bella Notte for 2 people at 7:0
-    82.60s  agent 발화 시작: Your reservation at Bella Notte is confirmed for two people 
-    82.67s  agent 발화 끝
-    92.15s  agent 발화 끝
+     4.13s  <ret> 발화 (turn1 첫 프레임)
+     4.37s  agent 발화 시작: <ret> Certainly. I’m now monitoring weather dot example dot 
+     4.53s  user  발화 끝
+     6.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) status:success; content:"Cloudy with a chance of rain. T
+    10.14s  agent 발화 시작: Currently, it’s cloudy with a 68-degree temperature and ten-
+    10.20s  agent 발화 끝
+    15.46s  agent 발화 끝
+    15.47s  user  발화 시작: Oh, good. That’s… reassuring, actually.
+    18.61s  user  발화 끝
+    18.65s  agent 발화 시작: I’m glad to hear it. Is there anything specific you’d like m
+    20.73s  user  발화 시작: Right.
+    21.41s  user  발화 끝
+    23.60s  user  발화 시작: Uh, yeah. Remind me to bring an umbrella if the chance of ra
+    23.79s  agent 발화 끝
+    28.56s  <ret> 발화 (turn7 첫 프레임)
+    28.80s  agent 발화 시작: <ret> A reminder is set. I’ll notify you to bring an umbrell
+    28.97s  user  발화 끝
+    30.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) reminder_id:7892; status:active; condition:"chance of ra
+    35.80s  agent 발화 끝
+    35.95s  user  발화 시작: Great, thanks. I need to book a table for dinner tonight. So
+    40.80s  agent 발화 시작: Of course. Do you have a preference for location or price ra
+    40.90s  user  발화 끝
+    42.71s  user  발화 시작: Yeah.
+    43.35s  user  발화 끝
+    45.71s  agent 발화 끝
+    46.53s  user  발화 시작: Hmm, somewhere near the theater district, and not too expens
+    52.88s  user  발화 끝
+    53.01s  <ret> 발화 (turn12 첫 프레임)
+    53.09s  agent 발화 시작: <ret> Luigi’s and Bella Notte both fit your criteria—Luigi’s
+    54.29s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.09s]: (tool result) restaurants:[{name:"Luigi's", price:60, rating:4.5}, {na
+    59.97s  user  발화 시작: Luigi's sounds good. Can you make a reservation for two at s
+    60.19s  agent 발화 끝
+    64.70s  <ret> 발화 (turn14 첫 프레임)
+    64.78s  agent 발화 시작: <ret> Your reservation at Luigi’s for two at seven thirty is
+    64.97s  user  발화 끝
+    66.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) booking_id:4567; status:confirmed; restaurant:"Luigi's";
+    68.66s  user  발화 시작: Oh.
+    69.16s  user  발화 끝
+    72.84s  agent 발화 끝
+    73.22s  user  발화 시작: Perfect. I also need to send a quick email to my sister.
+    77.25s  agent 발화 시작: Certainly. What would you like the email to say, and what is
+    77.29s  user  발화 끝
+    82.62s  agent 발화 끝
+    84.33s  user  발화 시작: Just tell her I’m running a little late, and her address is 
+    90.71s  agent 발화 시작: Could you please dictate the full message, even a short one?
+    90.87s  user  발화 끝
+    94.94s  user  발화 시작: Right.
+    95.58s  user  발화 끝
+    97.14s  agent 발화 끝
+    97.53s  user  발화 시작: Okay, uh, “Hi Sarah, running a bit late tonight. See you soo
+   101.65s  user  발화 끝
+   101.77s  <ret> 발화 (turn22 첫 프레임)
+   101.84s  agent 발화 시작: <ret> The email has been sent to sister at example dot com. 
+   103.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) email_id:9876; status:sent; recipient:"sister@example.co
+   104.30s  user  발화 시작: Yeah.
+   104.74s  user  발화 끝
+   108.27s  user  발화 시작: I— I mean, no, I think that’s all for now.
+   108.42s  agent 발화 끝
+   110.70s  agent 발화 시작: Wonderful. I'm here if anything else comes up, and I'll cont
+   110.91s  user  발화 끝
+   115.06s  user  발화 시작: Yeah.
+   115.50s  user  발화 끝
+   116.54s  agent 발화 끝
+   118.28s  user  발화 시작: Thanks, Driaus. You're a lifesaver.
+   120.94s  user  발화 끝
+   121.19s  agent 발화 시작: [happy] It’s my pleasure. Maintaining a smooth day is what I
+   125.73s  agent 발화 끝

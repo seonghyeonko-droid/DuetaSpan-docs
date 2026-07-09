@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 어, 정부 부처들 읽다가 궁금해졌는데, 재향군인부 언제 시작했어?
-     4.92s  <ret> 발화 (turn1 첫 프레임)
-     5.32s  agent 발화 시작: <ret> 네, 좋은 질문이세요. 재향군인부는 천구백삼십년 칠월 이십일일에 설립되었어요.
-     5.46s  user  발화 끝
-     6.52s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.65s]: The United States Department of Veterans Affairs was established on Ju
-    11.40s  user  발화 시작: 천구백삼십년? 생각보다 엄청 최근인데, 진짜. 남북전쟁 때는 훨씬 오래됐을 줄 알았어.
-    11.53s  agent 발화 끝
-    18.13s  agent 발화 시작: 상대적으로 최근에 만들어진 건 맞아요, 퇴역 군인들의 필요를 생각하면요. 혹시 예전에는 지원 방식이 달랐을까
-    18.35s  user  발화 끝
-    27.40s  agent 발화 끝
-    28.18s  user  발화 시작: 근데… 천구백삼십년에 만들어졌으면 그 전에는 뭘 했어? 퇴역 군인들은 그냥… 알아서 해결했어?
-    35.40s  <ret> 발화 (turn5 첫 프레임)
-    35.48s  agent 발화 시작: <ret> 네, 천구백삼십년 이전에 지원 방식이 달랐어요. 천구백이십일년에 만들어진 재향군인국에서 퇴역 군인
-    35.64s  user  발화 끝
-    37.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: Prior to 1930, the Veterans Bureau, created in 1921, handled veterans’
-    45.31s  agent 발화 끝
+     0.00s  user  발화 시작: 야, 정부 부처들 알아보다가 갑자기 궁금해졌어… 보훈처는 정확히 언제 시작됐어?
+     5.49s  <ret> 발화 (turn1 첫 프레임)
+     5.89s  agent 발화 시작: <ret> 음, 국가를 위해 헌신하신 분들을 생각하면 좋은 질문이에요… 보훈부는 후버 대통령에 의해 천구백삼
+     6.02s  user  발화 끝
+     7.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    17.08s  user  발화 시작: 1930년이라고? 생각보다 엄청 최근인데, 진짜. 훨씬 오래된 줄 알았어.
+    17.21s  agent 발화 끝
+    22.21s  agent 발화 시작: 군 복무의 역사를 생각하면 좀 최근처럼 느껴지죠, 안 그래요? 하지만 퇴역 군인들의 필요는 시간이 지나면서 
+    22.41s  user  발화 끝
+    30.65s  agent 발화 끝
+    31.35s  user  발화 시작: 근데 1930년 이전에 퇴역 군인들을 위한 서비스가 없었던 건 아니잖아? 분명 그 전에도 뭔가 있었을 거야.
+    38.30s  <ret> 발화 (turn5 첫 프레임)
+    38.38s  agent 발화 시작: <ret> 맞아요, 질문하신 게 맞아요… 천구백십칠 년 이전에 전쟁 위험 보험국이 1917년에 설립되어서 퇴
+    38.49s  user  발화 끝
+    40.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: [source: VA.gov] Prior to 1930, the administration of veterans’ benefi
+    49.00s  agent 발화 끝

@@ -58,25 +58,30 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been researching my family hi | S2 Oh, French! That's interesting, I  | S3 So, it's a place name originally,  | S4 I wonder if it’s common in South A
 
      0.00s  user  발화 시작: I’ve been researching my family history, and I came across t
-    10.35s  <ret> 발화 (turn1 첫 프레임)
-    10.43s  agent 발화 시작: <ret> That’s a lovely question, and a very common one. Du Pl
-    10.53s  user  발화 끝
-    11.31s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.32s]: The surname Du Plessis is of French origin, derived from the Old Frenc
-    16.47s  user  발화 시작: Mhm.
-    17.02s  user  발화 끝
-    18.54s  agent 발화 끝
-    18.67s  user  발화 시작: Oh, French! That's interesting, I always thought it sounded…
-    26.88s  <ret> 발화 (turn4 첫 프레임)
-    27.24s  user  발화 끝
-    27.28s  agent 발화 시작: <ret> It certainly became associated with nobility. The Ples
-    28.48s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.71s]: The Plessis family originated as lords of Plessis-les-Tours in Anjou, 
-    37.20s  agent 발화 끝
-    37.31s  user  발화 시작: So, it's a place name originally, and then a family took the
-    45.98s  agent 발화 시작: Family names often do travel, reflecting migration and settl
-    46.08s  user  발화 끝
-    54.59s  agent 발화 끝
-    54.77s  user  발화 시작: I wonder if it’s common in South Africa, though? My ancestor
-    60.00s  user  발화 끝
+     8.26s  <ret> 발화 (turn1 첫 프레임)
+     8.34s  agent 발화 시작: <ret> That’s a lovely pursuit, tracing your roots. It often 
+     8.44s  user  발화 끝
+     9.30s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.69s]: [source: Wikipedia] Du Plessis is a French surname, originally denotin
+    14.03s  agent 발화 끝
+    14.04s  agent 발화 시작: The name du Plessis originates in France, specifically indic
+    19.38s  user  발화 시작: Mhm.
+    20.02s  user  발화 끝
+    21.22s  agent 발화 끝
+    21.45s  user  발화 시작: Oh, France? That’s interesting. I thought it might be Dutch 
+    27.88s  <ret> 발화 (turn5 첫 프레임)
+    27.93s  user  발화 끝
+    28.12s  agent 발화 시작: <ret> It’s quite common for family lines to intertwine acros
+    29.40s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.58s]: [source: House of Names] The surname du Plessis is of French origin, a
+    32.70s  agent 발화 끝
+    32.73s  agent 발화 시작: The du Plessis name is thought to have originated in Normand
+    38.05s  agent 발화 끝
+    38.28s  user  발화 시작: Normandy… so it travelled. Was it a noble family, or somethi
+    44.29s  <ret> 발화 (turn8 첫 프레임)
+    44.30s  user  발화 끝
+    44.36s  agent 발화 시작: <ret> Sometimes surnames reflect a family’s status or profes
+    46.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: [source: Forebears] The Plessis family were prominent in Normandy duri
+    48.48s  agent 발화 시작: During the medieval period, the Plessis family held lands an
+    48.57s  agent 발화 끝
+    53.62s  agent 발화 끝

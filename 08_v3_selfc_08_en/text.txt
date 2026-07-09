@@ -56,70 +56,53 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.89s⟩ May tenth.
-[  4.28s][moshi] Certainly, let’s ⟦⚡SPAN@5.89s: (tool result) There are four buses departing Chicago on May tenth, ranging from $220 to $380.⟧ find some options for you. Four buses are available, with prices between two hundred twenty and three hundred eighty dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[  8.63s][user ] «backchannel» Yeah.
-[ 14.93s][user ] Can you filter those to show only the ones with Wi-Fi?
-[ 18.81s][moshi] ⟨ret@18.57s⟩ Of course, ⟦⚡SPAN@20.17s: (tool result) Two buses departing Chicago on May tenth offer Wi-Fi, costing $250 and $310.⟧ I can refine that search for you. Two buses have Wi-Fi, priced at two hundred fifty and three hundred ten dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three", "amenities": "Wi-Fi"}}
-[ 28.99s][user ] I— I mean, what about the departure times for ⟨ret@31.47s⟩ those?
-[ 31.63s][moshi] Ah, yes, ⟦⚡SPAN@32.75s: (tool result) The Wi-Fi buses depart at 8:00 AM and 2:30 PM.⟧ let's look at the departure times. The Wi-Fi buses leave at eight AM and two thirty PM.
-      CALL: {"function": "Buses_3_GetDepartureTimes", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "amenities": "Wi-Fi"}}
-[ 39.30s][user ] Book me a ticket on the 8:00 AM ⟨ret@41.61s⟩ bus.
-[ 42.01s][moshi] ⟦⚡SPAN@42.11s: (tool result) Your booking is confirmed: Confirmation number is BX7492, total cost $750.⟧ Very well, I will book that for you now. Your booking is confirmed, with confirmation number BX7492, totaling seven hundred fifty dollars.
-      CALL: {"function": "Buses_3_BookTicket", "arguments": {"bus_id": "8:00 AM", "origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
-[ 49.18s][user ] «backchannel» Really?
-[ 55.81s][user ] That sounds good. What’s the refund policy?
-[ 59.18s][moshi] Bus tickets often have varying refund policies, depending on the carrier.
-[ 64.80s][user ] Is there a cheaper bus on May eleventh?
-[ 67.24s][moshi] I can certainly check for—
-[ 69.14s][moshi] ⟨ret@68.91s⟩ There is one ⟦⚡SPAN@70.91s: (tool result) One bus departs Chicago on May eleventh for $200.⟧ bus available on May eleventh, costing two hundred dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
-[ 74.99s][user ] Can you send me a reminder the ⟨ret@76.97s⟩ day before?
-[ 77.37s][moshi] Absolutely, ⟦⚡SPAN@77.93s: (tool result) Reminder set for May ninth at 6:00 PM: Bus to Denver tomorrow!⟧ I can set a reminder for you. A reminder is set for May ninth at six PM, about your Denver bus.
-      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"date": "May ninth", "time": "6:00 PM", "message": "Bus to Denver tomorrow!"}}
-[ 83.26s][user ] «backchannel» Mhm.
-[ 86.77s][user ] What’s the weather like in Denver on May ⟨ret@89.05s⟩ tenth?
-[ 89.29s][moshi] Let ⟦⚡SPAN@90.09s: (tool result) Denver on May tenth will be sunny, with a high of 75 degrees Fahrenheit.⟧ me check the forecast for you. Denver will be sunny on May tenth, with a high of seventy-five degrees.
-      CALL: {"function": "Weather_1_GetForecast", "arguments": {"city": "Denver", "date": "May tenth"}}
-[ 97.84s][user ] Is there anything interesting to do there?
-[100.04s][moshi] Denver has a vibrant arts scene and many outdoor activities.
-[102.87s][user ] «backchannel» Right.
-[104.66s][user ] What about ⟨ret@106.02s⟩ museums?
-[106.18s][moshi] Denver has ⟦⚡SPAN@107.54s: (tool result) The Denver Art Museum, Denver Museum of Nature & Science, and Molly Brown House Museum are popul⟧ several excellent museums. Popular museums include the Denver Art Museum and the Museum of Nature & Science.
-      CALL: {"function": "Places_1_Search", "arguments": {"city": "Denver", "category": "museum"}}
-[110.63s][user ] «backchannel» Yeah.
-[115.94s][user ] Tell me more about the Denver Art Museum.
-[118.42s][moshi] ⟨ret@118.35s⟩ ⟦⚡SPAN@118.85s: (tool result) Denver Art Museum is at 100 W 14th Ave Pkwy, open 10 AM–5 PM, admission $18.⟧ Certainly, let's explore that museum. It's at one hundred West Fourteenth Avenue Parkway, open ten to five, eighteen dollars.
-      CALL: {"function": "Places_1_GetDetails", "arguments": {"name": "Denver Art Museum", "city": "Denver"}}
-[122.04s][user ] «backchannel» Yeah, totally.
-[127.08s][user ] What’s the best way to get there from the bus ⟨ret@129.51s⟩ station?
-[129.83s][moshi] Let me find the ⟦⚡SPAN@131.51s: (tool result) Take the 16L bus south for 20 minutes, then walk 5 minutes west.⟧ best route for you. Take the sixteen L bus south for twenty minutes, then walk five minutes west.
-      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"origin": "Denver Bus Station", "destination": "Denver Art Museum"}}
-[138.13s][user ] Sounds good. Could you book me a taxi?
-[141.11s][moshi] ⟨ret@140.96s⟩ I can certainly arrange ⟦⚡SPAN@142.96s: (tool result) Taxi booked: ETA 8 minutes, estimated fare $15.⟧ a taxi for you.
-      CALL: {"function": "Taxi_1_BookTaxi", "arguments": {"pickup": "Denver Bus Station", "destination": "Denver Art Museum"}}
-[144.29s][moshi] A taxi is booked, with an eight-minute ETA and a fifteen-dollar fare.
-[147.75s][user ] «backchannel» Yeah.
-[149.82s][user ] Perfect. What time does the museum close?
-[153.39s][moshi] ⟨ret@153.31s⟩ ⟦⚡SPAN@153.81s: (tool result) Denver Art Museum is at 100 W 14th Ave Pkwy, open 10 AM–5 PM, admission $18.⟧ I recall the museum’s closing time. The Denver Art Museum closes at five PM.
-[156.93s][user ] «backchannel» Yeah.
-[159.98s][user ] Is there a cafe ⟨ret@161.81s⟩ nearby?
-[161.89s][moshi] Let me ⟦⚡SPAN@163.25s: (tool result) Pioneer Cafe and Sam's No. 3 Diner are nearby, within a 5-minute walk.⟧ find a cafe close to the museum. Pioneer Cafe and Sam's No. 3 Diner are both close by, a five-minute walk away.
-      CALL: {"function": "Places_1_Search", "arguments": {"latitude": "39.7420", "longitude": "-104.9915", "category": "cafe"}}
-[171.65s][user ] Book me a table at Pioneer Cafe for one person at 1 ⟨ret@175.54s⟩ PM.
-[175.86s][moshi] I can book a ⟦⚡SPAN@177.46s: (tool result) Table booked at Pioneer Cafe for May tenth at 1:00 PM, party of one.⟧ table for you at Pioneer Cafe. Your table for one is booked at Pioneer Cafe for one PM on May tenth.
-      CALL: {"function": "Restaurant_1_BookTable", "arguments": {"restaurant": "Pioneer Cafe", "date": "May tenth", "time": "1:00 PM", "party_size": "one"}}
-[184.28s][user ] Great. Can you add a note to the booking that I have a slight allergy ⟨ret@188.46s⟩ to nuts?
-[188.86s][moshi] I ⟦⚡SPAN@189.42s: (tool result) Allergy note "nuts" added to booking P4567 at Pioneer Cafe.⟧ can certainly add that allergy note. A note about your nut allergy has been added to the booking.
-      CALL: {"function": "Restaurant_1_UpdateBooking", "arguments": {"booking_id": "P4567", "allergy": "nuts"}}
-[196.69s][user ] Thanks. Could you remind me again about the bus departure time?
-[200.40s][moshi] ⟨ret@200.33s⟩ Certainly, ⟦⚡SPAN@201.37s: (tool result) There are four buses departing Chicago on May tenth, ranging from $220 to $380.⟧ let me refresh your memory. The Wi-Fi bus you booked departs at eight AM.
-[203.46s][user ] «backchannel» Yeah, totally.
-[207.71s][user ] Actually, I’d prefer the 2:30 PM bus now. Can you change ⟨ret@211.34s⟩ that?
-[211.74s][moshi] I can ⟦⚡SPAN@212.94s: (tool result) Booking BX7492 updated to the 2:30 PM bus, new total cost $780.⟧ certainly adjust your booking to the later bus. Your booking is now for the two thirty PM bus, with a new total of seven hundred eighty dollars.
-      CALL: {"function": "Buses_3_ChangeBooking", "arguments": {"booking_id": "BX7492", "new_bus_id": "2:30 PM"}}
-[215.07s][user ] «backchannel» Okay.
-[222.96s][user ] Perfect, that's everything. Thanks for your help!
-[226.05s][moshi] You’re
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.63s⟩ May tenth.
+[  4.02s][moshi] Certainly, let’s find ⟦⚡SPAN@5.63s: (tool result) bus_options: [ {company: "Greyhound", departure_time: "08:00", arrival_time: "20:00", price: 150⟧ some options for that journey. Greyhound departs at eight AM, arriving eight PM, for one hundred fifty dollars. Megabus leaves at noon, arriving six AM the next day, for one hundred twenty-five.
+[ 10.80s][user ] «backchannel» Yeah.
+[ 20.40s][user ] That Megabus one sounds good. Book it for me.
+[ 24.29s][moshi] ⟨ret@24.06s⟩ Very well, ⟦⚡SPAN@26.06s: (tool result) booking_confirmation: {confirmation_number: "MB78945", passenger_count: 3, departure_date: "2024⟧ I can proceed with that reservation. Your Megabus is booked, confirmation MB78945, for three passengers on May tenth, costing three hundred seventy-five dollars.
+[ 38.34s][user ] Can you send me a reminder the day ⟨ret@40.77s⟩ before?
+[ 40.93s][moshi] Absolutely, I ⟦⚡SPAN@42.37s: (tool result) reminder_set: {reminder_id: "RM1234", reminder_time: "2024-05-09T10:00:00", reminder_text: "Mega⟧ can set a reminder for you. A reminder is set for May ninth at ten AM: “Megabus to Denver tomorrow!” Its ID is RM1234.
+[ 54.40s][user ] What’s the weather like in Denver on May ⟨ret@56.69s⟩ tenth?
+[ 57.09s][moshi] ⟦⚡SPAN@57.19s: (tool result) weather_forecast: {city: "Denver", date: "2024-05-10", temperature_high: 75, temperature_low: 55⟧ Let me check the forecast for that day. The forecast for Denver on May tenth is sunny, with a high of seventy-five and a low of fifty-five degrees.
+[ 64.49s][user ] «backchannel» Yeah.
+[ 71.07s][user ] That sounds pleasant. Is there anything good to see near the bus ⟨ret@75.30s⟩ station?
+[ 75.69s][moshi] Denver has ⟦⚡SPAN@76.98s: (tool result) nearby_attractions: [ {name: "Denver Art Museum", distance: "1.2 miles"}, {name: "16th Street Ma⟧ a lot to offer visitors. The Denver Art Museum is one point two miles away. The 16th Street Mall is closer, at point eight miles.
+[ 88.08s][user ] The art museum sounds interesting.
+[ 89.97s][moshi] It’s a wonderful museum with diverse collections. [happy] I find art quite restorative myself.
+[ 98.44s][user ] What are its opening hours on ⟨ret@100.42s⟩ May tenth?
+[100.82s][moshi] Let’s ⟦⚡SPAN@101.38s: (tool result) museum_hours: {name: "Denver Art Museum", date: "2024-05-10", opening_time: "10:00", closing_tim⟧ check those opening hours for you. The Denver Art Museum is open from ten AM to five PM on May tenth.
+[109.59s][user ] Could you add a reminder to my phone to leave for the bus station at seven AM on May tenth?
+[114.83s][moshi] ⟨ret@114.59s⟩ Of course, I ⟦⚡SPAN@116.59s: (tool result) reminder_set: {reminder_id: "RM5678", reminder_time: "2024-05-10T07:00:00", reminder_text: "Leav⟧ can add that to your reminders. A reminder is set for seven AM on May tenth: “Leave for Megabus to Denver!” ID is RM5678.
+[124.75s][user ] «backchannel» Okay.
+[128.08s][user ] Is there a good coffee shop near the museum?
+[130.93s][moshi] ⟨ret@130.85s⟩ Denver has many ⟦⚡SPAN@132.61s: (tool result) nearby_coffee_shops: [ {name: "Little Owl Coffee", distance: "0.3 miles"}, {name: "Huckleberry R⟧ excellent coffee shops. Little Owl Coffee is point three miles away, and Huckleberry Roasters is point five miles.
+[137.06s][user ] «backchannel» Right.
+[140.85s][user ] Little Owl sounds good.
+[142.59s][moshi] A popular spot, I’ve heard. I often recommend finding small moments of calm during travel.
+[145.84s][user ] «backchannel» Yeah.
+[149.88s][user ] What’s their phone ⟨ret@150.98s⟩ number?
+[151.38s][moshi] Let me ⟦⚡SPAN@152.98s: (tool result) business_details: {name: "Little Owl Coffee", phone_number: "303-555-1212"}⟧ find that number for you. Little Owl Coffee's phone number is three-oh-three, five-five-five, one-two-one-two.
+[155.02s][user ] «backchannel» Yeah, totally.
+[160.21s][user ] Can you navigate me from the bus station to Little Owl Coffee?
+[163.43s][moshi] ⟨ret@163.36s⟩ ⟦⚡SPAN@163.86s: (tool result) navigation_route: {start: "Denver Union Station", end: "Little Owl Coffee", distance: "0.9 miles⟧ Certainly, I can provide directions. The route is point nine miles, estimated at fifteen minutes from the bus station.
+[172.38s][user ] Okay, great.
+[173.50s][moshi] I’m glad I could help with the planning. [curious] Are you traveling for business or pleasure?
+[176.77s][user ] «backchannel» Yeah.
+[178.88s][user ] Pleasure, a visit with family. I— I mean, I'm going to see my sister.
+[183.78s][moshi] ⟨ret@183.54s⟩ ⟦⚡SPAN@184.04s: (no information found)⟧ That sounds lovely. Visiting family is always a special occasion. It’s good to nurture those connections.
+[187.57s][user ] «backchannel» Yeah.
+[191.56s][user ] Actually, can you check if my sister is free for dinner on May tenth? Her name is Sarah Miller.
+[197.12s][moshi] ⟨ret@196.96s⟩ Let’s see ⟦⚡SPAN@198.48s: (tool result) calendar_check: {name: "Sarah Miller", date: "2024-05-10", availability: "Available after 6:00 P⟧ if Sarah Miller is available. Sarah Miller is available for dinner after six PM on May tenth.
+[205.38s][user ] Perfect. Book a table for three at a nice Italian restaurant near her place, around seven ⟨ret@211.03s⟩ PM.
+[211.43s][moshi] ⟦⚡SPAN@211.53s: (tool result) restaurant_booking: {restaurant_name: "Bella Notte", date: "2024-05-10", time: "19:00", party_si⟧ I can certainly assist with that. A table for three is booked at Bella Notte for seven PM on May tenth, confirmation BN9876.
+[221.93s][user ] That sounds wonderful.
+[223.63s][moshi] It’s good to have those details settled. A little planning can ease the journey.
+[229.24s][user ] Is there anything else I should consider before my trip?
+[232.82s][moshi] Thinking ahead is a good habit. Perhaps packing layers, as Denver weather can be unpredictable?
+[235.73s][user ] «backchannel» Yeah, totally.
+[239.34s][user ] Good point. What’s the current time in Denver?
+[242.34s][moshi] ⟨ret@242.18s⟩ Let me check the ⟦⚡SPAN@244.18s: (tool result) current_time: {city: "Denver", time: "14:35", timezone: "Mountain Time"}⟧ current time there for you. It is currently two thirty-five PM Mountain Time in Denver.
+[244.74s][user ] «backchannel» Okay.
+[250.00s][user ] Thank you, Oruus.
+[251.17s][moshi] You're very welcome. I trust your trip will be both enjoyable and restorative.

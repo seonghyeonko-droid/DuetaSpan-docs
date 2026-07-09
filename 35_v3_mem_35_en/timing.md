@@ -60,26 +60,31 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Yeah, it is! I was hoping you coul | S2 Queenstown sounds great. Is it exp | S3 Actually, before we get into price | S4 Okay, good to know. What’s the wea
 
-     0.00s  agent 발화 시작: Hi Hugo, I’m Klen. It’s good to connect with you—I help peop
-     7.09s  agent 발화 끝
-     7.73s  user  발화 시작: Hey Klen, thanks! I’m planning a trip to New Zealand in Octo
-    14.67s  agent 발화 시작: New Zealand in October sounds wonderful! To help me tailor s
-    14.82s  user  발화 끝
-    23.80s  agent 발화 끝
-    23.90s  user  발화 시작: Flights, definitely flights first. I always prefer an aisle 
-    29.07s  <ret> 발화 (turn4 첫 프레임)
-    29.21s  agent 발화 시작: <ret> Absolutely, seat preference is important— You prefer a
-    29.32s  user  발화 끝
-    30.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.72s]: [2026-07-11] User prefers an aisle seat when traveling.
-    31.81s  user  발화 시작: Mm-hmm.
-    32.35s  user  발화 끝
-    37.10s  user  발화 시작: Actually, before you start looking, what’s the typical fligh
-    37.13s  agent 발화 끝
-    41.12s  user  발화 끝
-    41.57s  agent 발화 시작: From Toronto to Auckland, New Zealand, the typical flight ti
-    47.26s  user  발화 시작: Mm-hmm.
-    47.75s  user  발화 끝
-    49.17s  agent 발화 시작: Considering the length, an aisle seat will be especially hel
-    49.30s  agent 발화 끝
-    61.27s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. I understand you’re planning a trip to Ne
+     5.79s  agent 발화 끝
+     6.30s  user  발화 시작: Yeah, it is! I was hoping you could recommend a good city to
+     9.46s  <ret> 발화 (turn2 첫 프레임)
+     9.85s  agent 발화 시작: <ret> Considering your travel plans… October is a lovely tim
+     9.96s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.74s]: [2026-05-27] User is planning a trip to New Zealand in October.
+    10.04s  user  발화 끝
+    17.68s  agent 발화 끝
+    17.93s  user  발화 시작: Queenstown sounds great. Is it expensive to eat there?
+    20.86s  <ret> 발화 (turn4 첫 프레임)
+    21.16s  agent 발화 시작: <ret> Knowing your culinary preferences… Sushi restaurants i
+    21.30s  user  발화 끝
+    21.73s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.80s]: [2026-01-17] User's favorite cuisine is sushi.
+    28.54s  user  발화 시작: Actually, before we get into prices, is it easy to get aroun
+    29.28s  agent 발화 끝
+    33.39s  agent 발화 시작: That’s a valid point. Queenstown has a good public bus syste
+    33.54s  user  발화 끝
+    38.67s  user  발화 시작: Mm-hmm.
+    39.11s  user  발화 끝
+    40.43s  agent 발화 시작: Plus, numerous tour companies offer convenient transportatio
+    40.53s  agent 발화 끝
+    42.89s  user  발화 시작: Mm-hmm.
+    43.47s  user  발화 끝
+    47.94s  agent 발화 끝
+    48.24s  user  발화 시작: Okay, good to know. What’s the weather like in October?
+    51.33s  user  발화 끝

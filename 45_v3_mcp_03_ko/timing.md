@@ -58,41 +58,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 장바구니 iframe에서 결제 프로세스를 시작해 줘. | S2 기존 주소로 할게. | S3 신용카드로 할게. | S4 카드 번호는 일 이 삼 사 오 육 칠 팔 구 공 일 이 삼 사
+# EXAMINER(FDB-v2) 단계: S1 장바구니 iframe에서 결제 과정을 시작해 줘. | S2 배송지를 서울특별시 강남구 테헤란로 사백이십칠로 변경해 줘. | S3 결제 수단은 신용카드로 할 건데, 카드 번호는 어떻게 입력해야 | S4 혹시 할인 쿠폰 적용할 수 있어?
 
-     0.00s  user  발화 시작: 장바구니 iframe에서 결제 프로세스를 시작해 줘.
-     3.26s  <ret> 발화 (turn1 첫 프레임)
-     3.57s  agent 발화 시작: <ret> 네, 알겠습니다. 지금 장바구니 iframe으로 이동해서 결제 프로세스를 시작할게요.
-     3.60s  user  발화 끝
-     5.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) The shopping cart iframe was located and the "결제하기" butt
-     9.06s  agent 발화 시작: 장바구니 iframe에서 '결제하기' 버튼을 클릭했습니다. 이제 결제 정보를 입력하는 화면으로 넘어갈 거예요
-     9.26s  agent 발화 끝
-    15.70s  user  발화 시작: 음…
-    16.19s  agent 발화 끝
-    16.38s  user  발화 끝
-    16.55s  agent 발화 시작: 배송 주소 입력 화면이 나타났습니다. 혹시 기존에 저장된 주소를 사용하시겠어요, 아니면 새로운 주소를 입력하
-    24.66s  agent 발화 끝
-    24.74s  user  발화 시작: 기존 주소로 할게.
-    25.68s  <ret> 발화 (turn6 첫 프레임)
-    26.02s  user  발화 끝
-    26.07s  agent 발화 시작: <ret> 기존에 저장된 배송 주소는 서울특별시 강남구 테헤란로 사백이십칠 십이층입니다. 이 주소로 배송을 
-    27.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: (tool result) The saved address is 서울특별시 강남구 테헤란로 427, 12층.
-    34.62s  agent 발화 시작: 네, 저장된 주소로 배송을 진행하겠습니다. 다음으로 결제 수단을 선택해 주세요.
-    34.65s  agent 발화 끝
-    38.39s  user  발화 시작: 네.
-    38.79s  user  발화 끝
-    39.59s  agent 발화 시작: 신용카드, 계좌이체, 무통장 입금 중에서 어떤 방법으로 결제하시겠어요?
-    39.75s  agent 발화 끝
-    45.19s  user  발화 시작: 신용카드로 할게.
-    45.28s  agent 발화 끝
-    46.12s  agent 발화 시작: 신용카드 결제를 선택하셨습니다. 카드 번호, 유효 기간, CVC 번호를 입력해 주세요.
-    46.15s  user  발화 끝
-    51.91s  user  발화 시작: 카드 번호는 일 이 삼 사 오 육 칠 팔 구 공 일 이 삼 사 오 육, 유효 기간은 이천이십오년 십이월, C
-    52.00s  agent 발화 끝
-    62.72s  <ret> 발화 (turn13 첫 프레임)
-    62.96s  agent 발화 시작: <ret> 네, 신용카드 정보를 확인했습니다. 총 결제 금액은 오만 천이백원입니다. 결제를 진행할까요?
-    63.04s  user  발화 끝
-    64.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (tool result) Payment of 51200원 was successfully processed with card e
-    68.79s  agent 발화 시작: 네, 신용카드 결제가 완료되었습니다. 주문 번호는 이천이십사년 칠월 이십육일-천이백삼십사입니다. 주문 내역은
-    69.02s  agent 발화 끝
-    78.81s  agent 발화 끝
+     0.00s  user  발화 시작: 장바구니 iframe에서 결제 과정을 시작해 줘.
+     3.13s  <ret> 발화 (turn1 첫 프레임)
+     3.44s  agent 발화 시작: <ret> 네, 알겠습니다. 쇼핑 카트 iframe에서 결제 과정을 시작할게요.
+     3.47s  user  발화 끝
+     5.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: (tool result) success: true, page_url: "https://example.com/checkout",
+     7.74s  agent 발화 시작: 네, 결제가 시작되었고, 현재 결제 페이지 주소는 https://example.com/checkout 입니다
+     7.92s  agent 발화 끝
+    17.10s  user  발화 시작: 네.
+    17.46s  user  발화 끝
+    19.99s  agent 발화 끝
+    20.95s  user  발화 시작: 혹시 배송지 변경할 수 있어?
+    22.24s  <ret> 발화 (turn5 첫 프레임)
+    22.56s  user  발화 끝
+    22.62s  agent 발화 시작: <ret> 물론이죠. 배송지 변경은 결제 페이지에서 가능합니다.
+    23.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.02s]: (tool result) success: true, page_url: "https://example.com/checkout/a
+    26.46s  agent 발화 시작: 네, 배송지 변경 페이지로 이동했고, 주소 입력 폼이 나타났어요.
+    26.65s  agent 발화 끝
+    30.53s  agent 발화 끝
+    31.93s  user  발화 시작: 배송지를 서울특별시 강남구 테헤란로 사백이십칠로 변경해 줘.
+    35.81s  <ret> 발화 (turn8 첫 프레임)
+    35.86s  user  발화 끝
+    35.88s  agent 발화 시작: <ret> 알겠습니다. 배송지를 서울특별시 강남구 테헤란로 사백이십칠으로 변경할게요.
+    37.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: (tool result) success: true, address_updated: "서울특별시 강남구 테헤란로 427", va
+    40.76s  agent 발화 시작: 네, 배송지가 서울특별시 강남구 테헤란로 사백이십칠로 변경되었습니다. 오류는 없어요.
+    40.92s  agent 발화 끝
+    46.63s  user  발화 시작: 결제 수단은 신용카드로 할 건데, 카드 번호는 어떻게 입력해야 돼?
+    46.73s  agent 발화 끝
+    50.74s  <ret> 발화 (turn11 첫 프레임)
+    50.97s  agent 발화 시작: <ret> 신용카드 번호 입력 폼이 보일 거예요. 카드 번호, 유효 기간, CVC 번호를 순서대로 입력해 주
+    51.07s  user  발화 끝
+    52.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) visible: true, element_selector: "card_number_input"
+    58.06s  agent 발화 시작: 네, 카드 번호 입력 폼이 보입니다. 지금 바로 입력하실 수 있어요.
+    58.11s  agent 발화 끝
+    62.59s  agent 발화 끝
+    63.39s  user  발화 시작: 혹시 할인 쿠폰 적용할 수 있어?
+    65.09s  <ret> 발화 (turn14 첫 프레임)
+    65.19s  user  발화 끝
+    65.24s  agent 발화 시작: <ret> 네, 할인 쿠폰 적용은 결제 단계에서 가능합니다. 쿠폰 코드 입력란을 찾아보세요.
+    66.85s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.37s]: (tool result) success: true, coupon_form_visible: true
+    70.58s  agent 발화 시작: 네, 쿠폰 적용 폼이 나타났습니다. 쿠폰 코드를 입력해 주세요.
+    70.61s  agent 발화 끝
+    74.56s  agent 발화 끝

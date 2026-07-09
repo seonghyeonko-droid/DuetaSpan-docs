@@ -63,47 +63,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 해산물— 아니, 잠깐만, 혹시 오페라 하우스 투어도 예약해 줄 | S3 투어 시간이랑 가격이 어떻게 돼? | S4 고마워. 그럼 근처 해산물 레스토랑은?
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도를 알려줘. | S2 풀먼 호텔이 제일 저렴하네. 그 호텔 예약해 줘. | S3 그 거리가 얼마나 되는지 궁금해. | S4 와, 진짜 가까운 거네. 고마워.
 
-     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
+     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도를 알려줘.
      3.45s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> 잠시만요, 확인해 볼게요— 시드니 오페라 하우스는 위도 마이너스 삼십삼 점 팔오육팔, 경도 백오십
-     3.60s  user  발화 끝
-     5.05s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.68s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
-     8.59s  user  발화 시작: 응.
-     8.89s  user  발화 끝
-    13.03s  agent 발화 끝
-    13.13s  user  발화 시작: 음, 그건 알겠는데, 근처에 괜찮은 레스토랑도 찾아줄 수 있어?
-    18.13s  user  발화 끝
-    18.44s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 선호하시나요?
-    21.49s  agent 발화 끝
-    22.80s  user  발화 시작: 해산물— 아니, 잠깐만, 혹시 오페라 하우스 투어도 예약해 줄 수 있어?
-    29.04s  user  발화 끝
-    29.29s  agent 발화 시작: 오페라 하우스 투어는—
-    30.30s  user  발화 시작: 투어 시간이랑 가격이 어떻게 돼?
-    30.89s  agent 발화 끝
-    32.23s  <ret> 발화 (turn8 첫 프레임)
-    32.62s  agent 발화 시작: <ret> 투어 시간과 가격을 알려드릴게요— 다음 투어는 오전 열 시에 시작하며, 일인당 삼십오 호주 달러입
-    32.88s  user  발화 끝
-    33.27s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.93s]: (tool result) The next tour is at 10:00 AM, costing 35 AUD per person.
-    34.97s  user  발화 시작: 와.
-    35.69s  user  발화 끝
-    39.27s  agent 발화 시작: 투어를 예약하시겠어요?
-    39.39s  agent 발화 끝
-    40.73s  agent 발화 끝
-    40.83s  user  발화 시작: 응, 두 명으로 예약해 줘.
-    42.65s  <ret> 발화 (turn12 첫 프레임)
-    42.97s  agent 발화 시작: <ret> 네, 예약을 진행하겠습니다.
-    43.14s  user  발화 끝
-    44.09s  ⚡SPAN 주입 [d'=1.44s / d_lead=1.75s]: (tool result) Reservation confirmed for 2 people at 10:00 AM, confirma
-    44.72s  agent 발화 끝
-    44.85s  agent 발화 시작: 두 분 투어 예약이 완료되었습니다. 확인 번호는 칠만 팔천 구백 사십육입니다.
-    50.18s  agent 발화 끝
-    50.61s  user  발화 시작: 고마워. 그럼 근처 해산물 레스토랑은?
-    54.12s  user  발화 끝
-    54.18s  agent 발화 시작: 잠시만 기다려 주세요—
-    55.22s  <ret> 발화 (turn16 첫 프레임)
-    55.45s  agent 발화 시작: <ret> 가장 가까운 해산물 레스토랑은 “시드니 코브 오이스터 바”이며, 거리는 영 점 오킬로미터이고 평점
-    55.47s  agent 발화 끝
-    57.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) The closest seafood restaurant is “Sydney Cove Oyster Ba
-    63.42s  agent 발화 끝
+     3.52s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위치 정보를 찾아볼게요. 위도는 -삼십삼 점 팔 오 육 팔, 경도는 백오십
+     3.56s  user  발화 끝
+     4.89s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.81s]: (tool result) latitude: -33.8568, longitude: 151.2153
+     8.41s  user  발화 시작: 진짜?
+     9.04s  user  발화 끝
+    12.88s  agent 발화 끝
+    12.98s  user  발화 시작: 음, 그럼 그 근처에 괜찮은 호텔 좀 찾아줄래?
+    16.30s  <ret> 발화 (turn4 첫 프레임)
+    16.62s  user  발화 끝
+    16.69s  agent 발화 시작: <ret> 물론이죠. 시드니 오페라 하우스 근처 호텔을 검색해 드릴게요. 파크 하얏트 시드니, 샹그릴라 호텔
+    18.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) hotels: [Park Hyatt Sydney (price: 650 AUD), Shangri-La 
+    27.16s  user  발화 시작: 어어.
+    27.89s  user  발화 끝
+    32.98s  user  발화 시작: 풀먼 호텔이 제일 저렴하네. 그 호텔 예약해 줘.
+    32.98s  agent 발화 끝
+    36.63s  <ret> 발화 (turn7 첫 프레임)
+    37.02s  agent 발화 시작: <ret> 풀먼 키 그랜드 시드니 하버 호텔 예약 진행하겠습니다. 풀먼 키 그랜드 시드니 하버 호텔이 내일 
+    37.14s  user  발화 끝
+    38.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.70s]: (tool result) booking_id: 789456, confirmation_number: ABC123XYZ, tota
+    41.36s  user  발화 시작: 응.
+    41.85s  user  발화 끝
+    51.07s  user  발화 시작: 혹시 호텔에서 오페라 하우스까지 걸어갈 수 있어?
+    51.13s  agent 발화 끝
+    54.38s  agent 발화 시작: 오페라 하우스까지 걸어서—
+    54.63s  user  발화 끝
+    55.39s  user  발화 시작: 그 거리가 얼마나 되는지 궁금해.
+    55.99s  agent 발화 끝
+    57.82s  agent 발화 시작: 오페라 하우스까지 도보 거리는 약 이십분 정도입니다.
+    57.93s  user  발화 끝
+    58.89s  user  발화 시작: 와.
+    59.62s  user  발화 끝
+    61.06s  agent 발화 끝
+    61.08s  agent 발화 시작: 풀먼 호텔에서 오페라 하우스까지는 걸어서 이십분 정도 걸리고, 택시로는 약 십분 정도 소요됩니다.
+    67.94s  agent 발화 끝
+    68.94s  user  발화 시작: 그럼 호텔에서 가장 가까운 기차역은 어디야?
+    72.00s  <ret> 발화 (turn16 첫 프레임)
+    72.15s  agent 발화 시작: <ret> 가장 가까운 기차역을 찾아볼게요. 가장 가까운 기차역은 서큘러 키 역이고, 호텔에서 오백미터 거리
+    72.40s  user  발화 끝
+    72.96s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.93s]: (tool result) nearest_station: Circular Quay Station (distance: 500m)
+    78.91s  agent 발화 끝
+    79.35s  user  발화 시작: 와, 진짜 가까운 거네. 고마워.
+    82.17s  user  발화 끝
+    82.27s  agent 발화 시작: 천만에요. 즐거운 여행 되시길 바랍니다.
+    84.85s  agent 발화 끝

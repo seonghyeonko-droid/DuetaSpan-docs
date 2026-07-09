@@ -58,51 +58,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 아이폰 십오 프로 맥스 색상은 뭐야? | S3 혹시 지금 재고 상황도 같이 알아볼 수 있어? | S4 그럼 강남 애플 스토어로 예약하고, 내일 오후 세시에 찾아가기
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 출시일이 언제라고? | S3 근데 지금 재고는 있는 거야? | S4 고마워.
 
      0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.73s  <ret> 발화 (turn1 첫 프레임)
-     3.96s  agent 발화 시작: <ret> 물론입니다. tavily-map을 이용해서 애플 웹사이트의 제품 섹션에 대한 상세 지도를 만들겠습
-     4.02s  user  발화 끝
-     5.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) The map shows 12 product categories on apple.com: iPhone
-    10.57s  agent 발화 시작: 애플 웹사이트에서 제품 관련 열두 가지 카테고리를 찾았습니다: 아이폰, 아이패드, 맥, 에어팟, 애플 워치,
-    11.05s  agent 발화 끝
-    17.96s  user  발화 시작: 그래.
-    18.51s  user  발화 끝
-    24.11s  agent 발화 끝
-    24.13s  user  발화 시작: 아이폰 카테고리만 좀 더 자세하게 보여줄 수 있어?
-    26.96s  <ret> 발화 (turn5 첫 프레임)
-    27.19s  agent 발화 시작: <ret> 네, 아이폰 카테고리를 더 자세히 살펴보겠습니다. tavily-map을 다시 사용해서 아이폰 섹션
-    27.27s  user  발화 끝
-    28.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) The iPhone section lists these models: iPhone 15, iPhone
-    33.81s  agent 발화 시작: 아이폰 섹션에는 아이폰 십오, 아이폰 십오 플러스, 아이폰 십오 프로, 아이폰 십오 프로 맥스 모델이 있습니
-    33.91s  agent 발화 끝
-    37.84s  user  발화 시작: 그치.
-    38.61s  user  발화 끝
-    43.36s  agent 발화 끝
-    43.96s  user  발화 시작: 아이폰 십오 프로 맥스 색상은 뭐야?
-    46.55s  user  발화 끝
-    46.65s  agent 발화 시작: 아이폰 십오 프로 맥스의 색상 정보를 확인해 보겠습니다. 잠시만 기다려 주세요—
-    51.27s  user  발화 시작: 혹시 지금 재고 상황도 같이 알아볼 수 있어?
-    52.07s  agent 발화 끝
-    54.36s  <ret> 발화 (turn11 첫 프레임)
-    54.51s  user  발화 끝
-    54.52s  agent 발화 시작: <ret> 아, 네, 물론입니다. 색상 정보와 함께 재고 상황도 확인해 드릴게요.
-    55.56s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.49s]: (tool result) iPhone 15 Pro Max is available in Natural Titanium, Blue
-    58.91s  agent 발화 시작: 아이폰 십오 프로 맥스는 내추럴 티타늄, 블루 티타늄, 화이트 티타늄, 블랙 티타늄 색상으로 출시되었습니다.
-    59.01s  agent 발화 끝
-    62.78s  user  발화 시작: 어어.
-    63.54s  user  발화 끝
-    68.53s  user  발화 시작: 자연 티타늄 색상 이백오십육기가 모델 재고 있는 곳 알려줘.
-    68.60s  agent 발화 끝
-    72.41s  <ret> 발화 (turn15 첫 프레임)
-    72.56s  agent 발화 시작: <ret> 자연 티타늄 색상 이백오십육기가 모델의 재고를 확인해 보겠습니다. 잠시만요.
-    72.73s  user  발화 끝
-    74.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: (tool result) The Apple Store in Gangnam currently has 3 units of the 
-    78.64s  agent 발화 시작: 강남 애플 스토어에 자연 티타늄 색상 이백오십육기가 아이폰 십오 프로 맥스가 세 대 남아 있습니다. 온라인 
-    78.76s  agent 발화 끝
-    89.54s  agent 발화 끝
-    89.64s  user  발화 시작: 그럼 강남 애플 스토어로 예약하고, 내일 오후 세시에 찾아가기로 할게.
-    95.05s  user  발화 끝
-    95.07s  agent 발화 시작: 네, 강남 애플 스토어로 예약 진행하겠습니다. 내일 오후 세 시에 방문 수령으로 예약할까요?
-   100.87s  agent 발화 끝
+     3.62s  <ret> 발화 (turn1 첫 프레임)
+     3.84s  user  발화 끝
+     3.85s  agent 발화 시작: <ret> 알겠습니다. 애플 웹사이트의 제품 관련 상세 지도를— 애플 웹사이트 제품 중심 지도를 생성했습니다
+     5.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.91s]: (tool result) map_id: a1b2c3d4, url: https://www.apple.com, focus: pro
+    18.92s  agent 발화 끝
+    19.09s  user  발화 시작: 비전 프로에 대한 레이어를 좀 더 자세히 보여줄 수 있어?
+    22.57s  <ret> 발화 (turn3 첫 프레임)
+    22.80s  agent 발화 시작: <ret> 물론입니다. 비전 프로 레이어를 확대해서 보여드릴게요.
+    23.02s  user  발화 끝
+    24.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) map_id: a1b2c3d4, focus: Vision Pro, detail: maximum, el
+    27.31s  agent 발화 시작: 비전 프로 레이어를 최대 상세도로 확대했습니다. 사양, 가격, 출시일, 호환 기기 등의 정보를 확인하실 수 
+    27.47s  agent 발화 끝
+    32.92s  user  발화 시작: 응.
+    33.37s  user  발화 끝
+    35.60s  agent 발화 끝
+    36.05s  user  발화 시작: 출시일이 언제라고?
+    37.29s  <ret> 발화 (turn7 첫 프레임)
+    37.58s  agent 발화 시작: <ret> 비전 프로 출시일은— 비전 프로는 이천이십사년 이월 이일에 출시됩니다.
+    37.72s  user  발화 끝
+    38.01s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.77s]: (tool result) release_date: 2024-02-02
+    40.68s  user  발화 시작: 응응.
+    41.18s  user  발화 끝
+    42.90s  agent 발화 끝
+    43.77s  user  발화 시작: 근데 지금 재고는 있는 거야?
+    45.01s  <ret> 발화 (turn10 첫 프레임)
+    45.07s  agent 발화 시작: <ret> 지금 재고 상황을 확인해 볼게요.
+    45.29s  user  발화 끝
+    46.93s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.26s]: (tool result) product: Vision Pro, location: any, availability: limite
+    47.22s  agent 발화 시작: 비전 프로 재고는 제한적이며, 예상 대기 시간은 이~삼주입니다.
+    47.33s  agent 발화 끝
+    48.65s  user  발화 시작: 어.
+    48.87s  user  발화 끝
+    51.24s  agent 발화 시작: 다른 지역에서도 재고를 확인해 볼까요? 예를 들어, 서울 강남 지역은—
+    51.43s  agent 발화 끝
+    55.45s  <ret> 발화 (turn14 첫 프레임)
+    55.76s  agent 발화 시작: <ret> 서울 강남 지역에서는 현재 비전 프로 재고가 없습니다. 예상 대기 시간은 사~육주입니다.
+    55.87s  agent 발화 끝
+    57.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) product: Vision Pro, location: Seoul Gangnam, availabili
+    59.37s  user  발화 시작: 헐.
+    59.81s  user  발화 끝
+    62.02s  agent 발화 끝
+    62.07s  user  발화 시작: 그럼 예약이라도 할 수 있어?
+    63.64s  <ret> 발화 (turn17 첫 프레임)
+    63.82s  user  발화 끝
+    63.87s  agent 발화 시작: <ret> 네, 예약 가능합니다. 예약 진행해 드릴까요?
+    65.32s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.04s]: (tool result) reservation_id: r789s10t, product: Vision Pro, quantity:
+    66.81s  agent 발화 시작: 비전 프로 한개 예약이 완료되었습니다. 예약 번호는 r789s10t이며, 예약일은 이천이십사년 삼월 십오일입
+    66.92s  agent 발화 끝
+    69.90s  user  발화 시작: 와.
+    70.53s  user  발화 끝
+    75.66s  agent 발화 끝
+    76.39s  user  발화 시작: 고마워.
+    77.19s  agent 발화 시작: 천만에요. 다른 도움이 필요하시면 언제든지 말씀해주세요.
+    77.20s  user  발화 끝
+    81.21s  agent 발화 끝

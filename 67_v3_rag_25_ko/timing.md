@@ -63,127 +63,119 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지 선수, 혹시 같이 운동하는 스포츠가  | S2 홉먼 컵이요? 미국 대표로 출전했다니, 대단하네요. 그런데 잭 | S3 혹시 두 분이 함께 우승한 적이 있나요? | S4 로버트 린드스테트 선수와 바섹 포스피실 선수요? 그분들은 또 
+# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지와 경기한 스포츠가 뭐였죠? | S2 아, 그렇군요. 그럼 라파엘라 레지는 테니스만 하는 선수인가요 | S3 그렇군요. 잭 소크는 지금도 선수로 활동하고 있나요? | S4 아, 그렇군요. 알겠습니다. 그럼, 혹시 잭 소크와 라파엘라 
 
-     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지 선수, 혹시 같이 운동하는 스포츠가 뭐예요?
-     6.01s  user  발화 끝
-     6.13s  <ret> 발화 (turn1 첫 프레임)
-     6.29s  agent 발화 시작: <ret> 두 분이 함께하는 스포츠에 대해 궁금하시군요. 잠시 알아봐도 될까요?
-     8.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: Jack Sock and Raffaella Reggi are both professional tennis players.
-    11.58s  agent 발화 시작: 두 분 다요, 프로 선수로서… 잭 소크 선수와 라파엘라 레지 선수는 모두 프로 테니스 선수입니다.
-    11.65s  agent 발화 끝
-    18.44s  agent 발화 끝
-    18.45s  user  발화 시작: 테니스요? 음… 확실히 테니스 선수인 건 알겠는데, 혹시 같이 경기하는 경우가 있어요?
-    25.14s  <ret> 발화 (turn4 첫 프레임)
-    25.28s  agent 발화 시작: <ret> 함께 경기하는 경우가 있는지 궁금하시군요. 그 점은 좀 더 확인해 볼게요.
-    25.36s  user  발화 끝
-    27.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: Jack Sock and Raffaella Reggi have competed in mixed doubles together 
-    30.46s  agent 발화 시작: 네, 두 분은요, 윔블던에서… 잭 소크 선수와 라파엘라 레지 선수는 윔블던에서 혼합 복식 경기에 함께 출전한
-    30.61s  agent 발화 끝
-    39.83s  agent 발화 끝
-    41.35s  user  발화 시작: 아, 윔블던에서 같이 뛰었군요. 그럼 주로 혼합 복식으로만 같이 하는 건가요? 아니면 단식도 같이 하는 경우
-    49.91s  <ret> 발화 (turn7 첫 프레임)
-    50.30s  agent 발화 시작: <ret> 주로 혼합 복식인지, 단식도 함께 하는지가 궁금하시네요.
-    50.53s  user  발화 끝
-    51.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.73s]: Jack Sock and Raffaella Reggi primarily play mixed doubles as partners
-    54.92s  agent 발화 시작: 주로 혼합 복식으로 파트너십을 맺지만요… 잭 소크 선수와 라파엘라 레지 선수는 주로 혼합 복식 파트너이지만,
-    55.03s  agent 발화 끝
-    66.84s  user  발화 시작: 다른 형식에도 출전한다고 하니까, 혹시 그 외에 다른 대회에서도 같이 경기를 한 적이 있나요?
-    67.02s  agent 발화 끝
-    73.73s  <ret> 발화 (turn10 첫 프레임)
-    73.87s  user  발화 끝
-    73.88s  agent 발화 시작: <ret> 다른 대회에서의 공동 경기 여부가 궁금하시군요.
-    75.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.64s]: The pair also competed together in the Hopman Cup in 2018, representin
-    77.43s  agent 발화 시작: 네, 이천십팔년에는요, 홉먼 컵에서… 그 두 분은 이천십팔년 홉먼 컵에 미국 대표로 함께 출전했습니다.
-    77.52s  agent 발화 끝
-    83.16s  user  발화 시작: 진짜요?
-    84.11s  user  발화 끝
-    84.89s  agent 발화 끝
-    84.91s  user  발화 시작: 홉먼 컵이요? 미국 대표로 출전했다니, 대단하네요. 그런데 잭 소크 선수는 주로 어떤 포지션을 맡나요?
-    93.18s  <ret> 발화 (turn14 첫 프레임)
-    93.41s  agent 발화 시작: <ret> 잭 소크 선수의 주 포지션에 대해 궁금하시네요.
-    93.53s  user  발화 끝
-    94.94s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.56s]: Jack Sock is a right-handed tennis player known for his powerful serve
-    96.76s  agent 발화 시작: 잭 소크 선수는요, 오른손잡이로서… 잭 소크 선수는 강력한 서브와 공격적인 베이스라인 플레이로 유명한 오른손
-    96.97s  agent 발화 끝
-   106.81s  agent 발화 끝
-   108.29s  user  발화 시작: 공격적인 베이스라인 플레이라… 흥미롭네요. 그럼 라파엘라 레지 선수는 어떤 스타일의 플레이를 하는 편인가요?
-   116.90s  <ret> 발화 (turn17 첫 프레임)
-   117.21s  agent 발화 시작: <ret> 라파엘라 레지 선수의 플레이 스타일에 대해 궁금하시군요.
-   117.33s  user  발화 끝
-   117.94s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.65s]: Raffaella Reggi is an Italian tennis player known for her strong net p
-   120.72s  agent 발화 시작: 라파엘라 레지 선수는요, 이탈리아 선수로서… 라파엘라 레지 선수는 강력한 네트 플레이와 전술적인 기술로 유명
-   120.86s  agent 발화 끝
-   126.57s  user  발화 시작: 네.
-   127.11s  user  발화 끝
-   129.85s  agent 발화 끝
-   130.25s  user  발화 시작: 네트 플레이를 잘한다는 건 알겠는데, 두 분이 같이 뛸 때 시너지 효과가 있을까요?
-   135.95s  <ret> 발화 (turn21 첫 프레임)
-   136.34s  agent 발화 시작: <ret> 함께 뛸 때 시너지 효과가 있는지 궁금하시네요.
-   136.63s  user  발화 끝
-   137.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.51s]: Their complementary playing styles – Sock's power and Reggi's finesse 
-   139.76s  agent 발화 시작: 두 분의 스타일은요, 서로 보완되어서… 잭 소크 선수의 파워와 라파엘라 레지 선수의 섬세함은 강력한 복식 파
-   139.85s  agent 발화 끝
-   149.55s  agent 발화 끝
-   149.59s  user  발화 시작: 파워와 섬세함의 조합이라… 듣기만 해도 멋지네요. 두 분이 호흡이 잘 맞을 것 같아요.
-   156.13s  user  발화 끝
-   156.15s  agent 발화 시작: 호흡이 잘 맞을 거라고 생각하시는군요.
-   156.99s  user  발화 시작: 네.
-   157.48s  user  발화 끝
-   158.73s  agent 발화 끝
-   158.78s  agent 발화 시작: 두 분의 조합은 분명 매력적일 거예요.
-   160.45s  user  발화 시작: 음.
-   161.09s  user  발화 끝
-   161.51s  agent 발화 끝
-   161.53s  user  발화 시작: 혹시 두 분이 함께 우승한 적이 있나요?
-   163.78s  <ret> 발화 (turn29 첫 프레임)
-   164.16s  agent 발화 시작: <ret> 함께 우승한 적이 있는지 궁금하시네요.
-   164.39s  user  발화 끝
-   165.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.24s]: Jack Sock and Raffaella Reggi did not win any major titles together, b
-   167.23s  agent 발화 시작: 메이저 대회 우승은 없었지만요… 잭 소크 선수와 라파엘라 레지 선수는 함께 메이저 타이틀을 획득하지 못했지만
-   167.40s  agent 발화 끝
-   177.80s  agent 발화 끝
-   178.19s  user  발화 시작: 팔강 진출도 꽤 대단한 성과네요. 그럼 두 분은 지금도 같이 활동하고 있나요?
-   183.82s  <ret> 발화 (turn32 첫 프레임)
-   184.06s  agent 발화 시작: <ret> 현재도 함께 활동하고 있는지 궁금하시네요.
-   184.17s  user  발화 끝
-   185.34s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.18s]: Jack Sock and Raffaella Reggi have not played together consistently si
-   187.16s  agent 발화 시작: 이천십팔년 이후로는요, 꾸준히 함께… 잭 소크 선수와 라파엘라 레지 선수는 이천십팔년 이후로 꾸준히 함께 활
-   187.25s  agent 발화 끝
-   197.35s  agent 발화 끝
-   197.37s  user  발화 시작: 아, 이천십팔년 이후로는 잘 안 뛰었군요. 아쉽네요.
-   201.33s  agent 발화 시작: 아쉽다고 느끼시는군요.
-   201.49s  user  발화 끝
-   202.24s  user  발화 시작: 네.
-   202.92s  agent 발화 시작: 스포츠에서 그런 변화는 흔히 있는 일이에요.
-   202.96s  user  발화 끝
-   203.17s  agent 발화 끝
-   205.79s  agent 발화 끝
-   205.92s  user  발화 시작: 그래도 두 분의 조합은 인상 깊네요. 혹시 다른 복식 파트너와도 좋은 활약을 보여준 적이 있나요?
-   213.15s  <ret> 발화 (turn39 첫 프레임)
-   213.30s  agent 발화 시작: <ret> 다른 파트너와의 활약에 대해 궁금하시네요.
-   213.44s  user  발화 끝
-   213.65s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.14s]: Jack Sock has had successful partnerships with other players, includin
-   216.37s  agent 발화 시작: 잭 소크 선수는요, 다른 선수들과도… 잭 소크 선수는 로버트 린드스테트 선수와 바섹 포스피실 선수를 포함한 
-   216.44s  agent 발화 끝
-   223.89s  user  발화 시작: 음.
-   224.38s  user  발화 끝
-   228.81s  agent 발화 끝
-   229.53s  user  발화 시작: 로버트 린드스테트 선수와 바섹 포스피실 선수요? 그분들은 또 어떤 스타일의 선수인가요?
-   236.43s  <ret> 발화 (turn43 첫 프레임)
-   236.82s  agent 발화 시작: <ret> 다른 선수들의 스타일에 대해 궁금하시네요.
-   236.94s  user  발화 끝
-   238.03s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.14s]: Robert Lindstedt is known for his big serve, while Vasek Pospisil is a
-   239.76s  agent 발화 시작: 로버트 린드스테트 선수는요, 강서브로 유명하고… 로버트 린드스테트 선수는 강한 서브로 유명하고, 바섹 포스피
-   239.96s  agent 발화 끝
-   244.38s  user  발화 시작: 아.
-   245.01s  user  발화 끝
-   252.10s  user  발화 시작: 다재다능한 올 코트 플레이어라… 멋지네요. 테니스 선수들은 정말 다양한 스타일이 있는 것 같아요.
-   252.28s  agent 발화 끝
-   260.30s  agent 발화 시작: 테니스 선수들의 다양한 스타일을 느끼시는군요.
-   260.44s  user  발화 끝
-   263.68s  user  발화 시작: 네, 정말 그렇네요. 오늘 좋은 정보 많이 얻어 갑니다. 감사합니다.
-   263.81s  agent 발화 끝
-   268.27s  agent 발화 시작: 도움이 되었다니 다행입니다. 언제든 다시 찾아주세요.
-   268.36s  user  발화 끝
-   272.02s  agent 발화 끝
+     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지와 경기한 스포츠가 뭐였죠?
+     4.21s  <ret> 발화 (turn1 첫 프레임)
+     4.37s  agent 발화 시작: <ret> [curious] 어떤 스포츠에 대해 궁금하신 건가요? 두 분이 함께 참여했던 스포츠를 알아봐 드
+     4.39s  user  발화 끝
+     6.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: [source: Wikipedia] Jack Sock and Raffaella Reggi competed together in
+    10.02s  agent 발화 시작: 두 분은 함께 운동을 하셨는데요. 잭 소크와 라파엘라 레지는 이천이십년 하계 올림픽에서 혼합 복식 테니스를 
+    10.11s  agent 발화 끝
+    14.96s  user  발화 시작: 와.
+    15.64s  user  발화 끝
+    18.55s  agent 발화 끝
+    18.57s  user  발화 시작: 테니스요? 음… 좀 의외네요. 다른 스포츠도 같이 한 적 없나요?
+    24.02s  <ret> 발화 (turn5 첫 프레임)
+    24.17s  agent 발화 시작: <ret> 두 분이 다른 스포츠를 함께 했다는 기록은 찾을 수 없었습니다. 테니스에서 함께 활약하신 게 맞습
+    24.31s  user  발화 끝
+    26.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: [source: Olympics.com] Jack Sock and Raffaella Reggi represented the U
+    31.07s  agent 발화 시작: 기록에 따르면, 잭 소크와 라파엘라 레지는 도쿄 이천이십 올림픽에서 미국을 대표해 혼합 복식 테니스에 출전했
+    31.16s  agent 발화 끝
+    39.55s  agent 발화 끝
+    40.39s  user  발화 시작: 미국 대표였다고요? 그럼 메달도 땄나요?
+    43.06s  <ret> 발화 (turn8 첫 프레임)
+    43.45s  agent 발화 시작: <ret> 아쉽게도 메달을 따지는 못했습니다. 팔강에서 탈락했거든요.
+    43.62s  user  발화 끝
+    45.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: [source: ESPN] Jack Sock and Raffaella Reggi lost in the quarterfinal 
+    47.66s  agent 발화 시작: 안타깝게도, 잭 소크와 라파엘라 레지는 도쿄 이천이십 올림픽 혼합 복식 테니스 팔강에서 패배했습니다.
+    47.85s  agent 발화 끝
+    55.53s  user  발화 시작: 팔강이라… 그래도 잘했네요. 혹시 잭 소크는 다른 올림픽에도 나갔었나요?
+    55.67s  agent 발화 끝
+    61.45s  <ret> 발화 (turn11 첫 프레임)
+    61.60s  agent 발화 시작: <ret> 네, 잭 소크는 이천십육년 리우 올림픽에도 남자 단식에 출전했습니다.
+    61.73s  user  발화 끝
+    63.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [source: NBC Sports] Jack Sock competed in the men's singles tennis ev
+    66.58s  agent 발화 시작: 잭 소크는 이천십육년에도 올림픽에 출전했는데요, 잭 소크는 이천십육년 리우 올림픽 남자 단식 테니스에 참가했
+    66.78s  agent 발화 끝
+    75.67s  agent 발화 끝
+    75.72s  user  발화 시작: 아, 그렇군요. 그럼 라파엘라 레지는 테니스만 하는 선수인가요?
+    80.44s  user  발화 끝
+    80.46s  <ret> 발화 (turn14 첫 프레임)
+    80.70s  agent 발화 시작: <ret> 라파엘라 레지는 주로 테니스를 하지만, 과거에 다른 스포츠도 경험했습니다.
+    82.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: [source: ITF Tennis] Raffaella Reggi previously competed in track and 
+    86.14s  agent 발화 시작: 사실 라파엘라 레지는, 라파엘라 레지는 테니스에 집중하기 전에 육상 경기에도 참가했습니다.
+    86.26s  agent 발화 끝
+    89.69s  user  발화 시작: 네.
+    90.32s  user  발화 끝
+    92.81s  agent 발화 끝
+    93.09s  user  발화 시작: 육상 선수였다고요? 완전 다재다능하네요. 테니스 시작하기 전에도 육상에서 두각을 나타냈나요?
+   100.47s  <ret> 발화 (turn18 첫 프레임)
+   100.79s  agent 발화 시작: <ret> 육상에서 큰 성공을 거두지는 못했지만, 테니스 선수로 전환하기 전까지 꾸준히 육상을 했습니다.
+   100.92s  user  발화 끝
+   101.67s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.72s]: [source: Tennis.com] While Raffaella Reggi did not achieve significant
+   107.42s  agent 발화 시작: 큰 성공은 없었지만, 라파엘라 레지는 테니스 선수로 전향하기 전 몇 년 동안 육상 훈련을 했습니다.
+   107.50s  agent 발화 끝
+   114.83s  agent 발화 끝
+   115.22s  user  발화 시작: 음… 테니스 선수로 전향한 이유가 있었나요?
+   118.65s  <ret> 발화 (turn21 첫 프레임)
+   119.03s  agent 발화 시작: <ret> 테니스에서 더 큰 잠재력을 발견하고, 테니스에 더 집중하기로 결정했습니다.
+   119.24s  user  발화 끝
+   120.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: [source: USTA] Raffaella Reggi switched to tennis after realizing her 
+   124.51s  agent 발화 시작: 테니스에서 더 큰 가능성을 발견하고, 라파엘라 레지는 테니스에 더 집중하기로 결정했습니다.
+   124.64s  agent 발화 끝
+   131.32s  agent 발화 끝
+   131.50s  user  발화 시작: 그렇군요. 잭 소크는 지금도 선수로 활동하고 있나요?
+   135.39s  <ret> 발화 (turn24 첫 프레임)
+   135.62s  agent 발화 시작: <ret> 네, 잭 소크는 아직도 프로 테니스 선수로 활동하고 있습니다.
+   135.80s  user  발화 끝
+   137.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: [source: ATP Tour] Jack Sock is currently an active professional tenni
+   139.55s  agent 발화 시작: 잭 소크는 아직도, 잭 소크는 ATP 투어에서 프로 테니스 선수로 활동하고 있습니다.
+   139.78s  agent 발화 끝
+   143.35s  user  발화 시작: 네.
+   143.99s  user  발화 끝
+   145.67s  agent 발화 끝
+   146.29s  user  발화 시작: 다행이네요. 혹시 최근에 큰 대회에서 우승한 적이 있나요?
+   150.49s  <ret> 발화 (turn28 첫 프레임)
+   150.88s  agent 발화 시작: <ret> 최근에는 큰 대회에서 우승하지 못했지만, 여전히 꾸준히 활동하고 있습니다.
+   151.10s  user  발화 끝
+   152.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: [source: ESPN] Jack Sock has not won a major tournament recently, but 
+   156.36s  agent 발화 시작: 최근에는 우승 기록은 없지만, 잭 소크는 여전히 활발하게 활동하고 있습니다.
+   156.44s  agent 발화 끝
+   162.14s  user  발화 시작: 그렇군요. 라파엘라 레지는 요즘 어떻게 지내고 있나요?
+   162.38s  agent 발화 끝
+   166.57s  <ret> 발화 (turn31 첫 프레임)
+   166.79s  agent 발화 시작: <ret> 라파엘라 레지는 은퇴 후 테니스 코치로 활동하고 있습니다.
+   167.00s  user  발화 끝
+   168.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.79s]: [source: WTA Tennis] Raffaella Reggi retired from professional tennis 
+   170.45s  agent 발화 시작: 라파엘라 레지는 은퇴 후, 라파엘라 레지는 테니스 코치로 활동하고 있습니다.
+   170.58s  agent 발화 끝
+   174.31s  user  발화 시작: 음.
+   175.69s  user  발화 끝
+   176.33s  agent 발화 끝
+   176.52s  user  발화 시작: 테니스 코치라… 새로운 모습이네요. 혹시 유명한 선수를 가르치고 있나요?
+   182.43s  <ret> 발화 (turn35 첫 프레임)
+   182.74s  agent 발화 시작: <ret> 현재 가르치는 선수에 대한 정보는 공개되지 않았습니다.
+   182.87s  user  발화 끝
+   183.63s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.79s]: [source: Tennis Magazine] Information regarding Raffaella Reggi’s curr
+   186.46s  agent 발화 시작: 가르치는 선수에 대한 정보는, 현재 공개되어 있지 않습니다.
+   186.53s  agent 발화 끝
+   190.58s  agent 발화 끝
+   191.04s  user  발화 시작: 아, 그렇군요. 알겠습니다. 그럼, 혹시 잭 소크와 라파엘라 레지가 함께 훈련하는 사진 같은 거 볼 수 있을
+   199.32s  <ret> 발화 (turn38 첫 프레임)
+   199.40s  agent 발화 시작: <ret> 훈련 사진은 찾을 수 없지만, 경기 중 사진은 몇 장 있습니다.
+   199.48s  user  발화 끝
+   201.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: [source: Getty Images] Photos of Jack Sock and Raffaella Reggi are ava
+   203.41s  agent 발화 시작: 훈련 사진은 찾을 수 없지만, 올림픽 경기 중 사진을 찾을 수 있습니다.
+   203.66s  agent 발화 끝
+   208.97s  agent 발화 끝
+   209.12s  user  발화 시작: 경기 중 사진이면 괜찮아요. 한번 찾아봐 주시겠어요?
+   212.66s  <ret> 발화 (turn41 첫 프레임)
+   213.03s  agent 발화 시작: <ret> 경기 중 사진 몇 장을 찾았는데요, 잭 소크와 라파엘라 레지의 올림픽 경기 사진 두 장을 찾았습니
+   213.14s  user  발화 끝
+   214.18s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.87s]: (tool result) image_urls: ["https://example.com/sock_reggi_1.jpg", "ht
+   220.61s  user  발화 시작: 와, 멋지네요! 감사합니다, 주라님.
+   220.67s  agent 발화 끝
+   224.04s  user  발화 끝
+   224.12s  agent 발화 시작: [happy] 도움이 되었다니 기쁩니다. 혹시 다른 궁금한 점이 있으신가요?
+   229.21s  agent 발화 끝

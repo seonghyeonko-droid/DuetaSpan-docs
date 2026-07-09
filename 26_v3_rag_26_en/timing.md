@@ -58,27 +58,26 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, uh, I was wondering… what coun | S2 Oh, okay. That makes sense. My gra | S3 Right, she had a huge collection.  | S4 Nineteen ninety, got it. It's been
 
-     0.00s  user  발화 시작: So, uh, I was wondering… what country flag is black, red, an
-     5.48s  <ret> 발화 (turn1 첫 프레임)
-     5.71s  agent 발화 시작: <ret> That’s a good question, and a very recognizable combin
-     5.75s  user  발화 끝
-     7.24s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.44s]: The flag of Germany features three horizontal bands of black, red, and
-    13.73s  agent 발화 끝
-    14.26s  user  발화 시작: Oh, okay. That makes sense. My grandmother collected flags, 
-    19.46s  agent 발화 시작: That’s a lovely hobby! It’s wonderful to connect with family
-    19.59s  user  발화 끝
-    22.25s  user  발화 시작: Right.
-    22.74s  user  발화 끝
-    25.53s  agent 발화 끝
-    26.37s  user  발화 시작: Right, she had a huge collection. Hmm… what’s the capital of
-    31.03s  <ret> 발화 (turn6 첫 프레임)
-    31.35s  agent 발화 시작: <ret> Germany has a fascinating history and a vibrant capita
-    31.46s  user  발화 끝
-    32.31s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.03s]: Berlin became the capital of Germany in 1990, following German reunifi
-    39.41s  agent 발화 끝
-    40.91s  user  발화 시작: Nineteen ninety, got it. It's been a while since history cla
-    46.19s  agent 발화 시작: It certainly is! Berlin is a major European center for cultu
-    46.19s  user  발화 끝
-    53.23s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering… do you know what country flag has black, re
+     8.81s  user  발화 끝
+     8.89s  agent 발화 시작: It’s a common struggle, remembering all those flags! Let’s s
+    14.00s  <ret> 발화 (turn2 첫 프레임)
+    14.24s  agent 발화 시작: <ret> That particular combination of colors— The flag of Ger
+    14.35s  agent 발화 끝
+    15.04s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.21s]: [source: Britannica] The flag of Germany features three horizontal ban
+    22.20s  agent 발화 끝
+    22.26s  user  발화 시작: Oh, Germany! Right. I always get Germany and Belgium mixed u
+    28.84s  agent 발화 시작: It’s easy to do, they are both located in Europe. Is there a
+    29.03s  user  발화 끝
+    34.66s  <ret> 발화 (turn5 첫 프레임)
+    34.97s  agent 발화 시작: <ret> Speaking of colors and flags, The flag of Belgium has 
+    35.05s  agent 발화 끝
+    35.94s  ⚡SPAN 주입 [d'=1.28s / d_lead=1.79s]: [source: WorldAtlas] The flag of Belgium consists of three vertical ba
+    37.60s  user  발화 시작: Right.
+    38.23s  user  발화 끝
+    40.56s  user  발화 시작: So that’s why I get them mixed up! Similar colors… But diffe
+    40.71s  agent 발화 끝
+    49.14s  user  발화 끝
+    49.23s  agent 발화 시작: Absolutely! Visual cues like flags can really solidify geogr
+    56.69s  agent 발화 끝

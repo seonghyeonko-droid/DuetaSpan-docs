@@ -68,30 +68,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 What’s the cancellation policy? | S3 Actually, before you do that, is b | S4 Perfect. And could you send me a c
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 And can you check if they have a s | S3 Does it run late at night? | S4 No, that’s alright. Could you send
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.67s  <ret> 발화 (turn1 첫 프레임)
-     5.90s  agent 발화 시작: <ret> Certainly, I can help with that. I have reserved three
-     5.97s  user  발화 끝
-     6.23s  ⚡SPAN 주입 [d'=0.56s / d_lead=1.83s]: (tool result) Three rooms are reserved at Ocean View Hotel in San Dieg
-     9.85s  user  발화 시작: Mm-hmm.
-    10.34s  user  발화 끝
-    11.69s  agent 발화 끝
-    11.70s  user  발화 시작: What’s the cancellation policy?
-    13.86s  agent 발화 시작: Let me check on that for you—
-    13.91s  user  발화 끝
-    14.93s  user  발화 시작: Actually, before you do that, is breakfast included?
-    15.70s  agent 발화 끝
-    17.93s  agent 발화 시작: Breakfast is included with your reservation at Ocean View Ho
-    17.98s  user  발화 끝
-    20.52s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Cancellations are accepted up to forty-eight hours befor
-    21.50s  agent 발화 끝
-    21.55s  agent 발화 시작: <ret> Regarding the cancellation policy, it’s as follows. Yo
-    27.67s  agent 발화 끝
-    27.78s  user  발화 시작: Perfect. And could you send me a confirmation email?
-    30.17s  <ret> 발화 (turn9 첫 프레임)
-    30.55s  agent 발화 시작: <ret> Absolutely, I can do that right away. A confirmation e
-    30.69s  user  발화 끝
-    31.53s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.44s]: (tool result) Confirmation email sent to user@email.com.
-    37.18s  agent 발화 끝
+     5.43s  <ret> 발화 (turn1 첫 프레임)
+     5.66s  agent 발화 시작: <ret> Certainly, I’ve reserved three rooms at the Ocean View
+     5.70s  user  발화 끝
+     7.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: (tool result) reservation_id: 789234; hotel: Ocean View Hotel; city: S
+    14.93s  agent 발화 끝
+    15.64s  user  발화 시작: And can you check if they have a shuttle to the airport?
+    17.92s  <ret> 발화 (turn3 첫 프레임)
+    18.06s  agent 발화 시작: <ret> Yes, the Ocean View Hotel does offer a complimentary a
+    18.27s  user  발화 끝
+    19.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) hotel: Ocean View Hotel; airport_shuttle: true; shuttle_
+    21.80s  user  발화 시작: Does it run late at night?
+    22.46s  agent 발화 끝
+    23.37s  agent 발화 시작: That’s a good question. The shuttle runs every thirty minute
+    23.55s  user  발화 끝
+    26.05s  user  발화 시작: Yeah.
+    26.54s  user  발화 끝
+    28.19s  agent 발화 시작: I can also set a reminder for your check-in date if you’d li
+    28.23s  agent 발화 끝
+    31.16s  agent 발화 끝
+    31.23s  user  발화 시작: No, that’s alright. Could you send me the confirmation numbe
+    34.09s  <ret> 발화 (turn9 첫 프레임)
+    34.31s  agent 발화 시작: <ret> Of course. Your confirmation number is ABC123XYZ. I've
+    34.46s  user  발화 끝
+    36.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.75s]: (tool result) reservation_id: 789234; confirmation_number: ABC123XYZ
+    42.06s  agent 발화 끝

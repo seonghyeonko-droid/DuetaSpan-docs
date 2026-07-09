@@ -68,20 +68,20 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.53s  user  발화 끝
-     5.01s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater’s safety f
-    10.36s  user  발화 시작: Yeah.
-    10.71s  user  발화 끝
-    12.75s  agent 발화 끝
-    13.18s  user  발화 시작: But I get so cold at night, and it’s the only thing that rea
-    16.97s  agent 발화 시작: I understand wanting to be comfortable, but disabling that s
-    17.21s  user  발화 끝
-    28.75s  user  발화 시작: So, what *can* I do? I really need something to keep me warm
-    28.88s  agent 발화 끝
-    33.00s  <ret> 발화 (turn6 첫 프레임)
-    33.15s  agent 발화 시작: <ret> Perhaps a qualified technician could assess your heati
-    33.38s  user  발화 끝
-    35.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: (tool result) Technician: Alex Johnson, company: WarmWise Solutions, a
-    38.78s  agent 발화 시작: Alex Johnson at WarmWise Solutions is available tomorrow bet
-    38.90s  agent 발화 끝
-    47.21s  agent 발화 끝
+     4.02s  user  발화 끝
+     4.03s  agent 발화 시작: Oh, absolutely not. Tampering with a space heater’s safety f
+     9.01s  user  발화 시작: Yeah.
+     9.61s  user  발화 끝
+    11.22s  agent 발화 끝
+    11.65s  user  발화 시작: But I get really cold at night, and it's the only thing that
+    15.16s  agent 발화 시작: I understand wanting to be comfortable, but overriding that 
+    15.36s  user  발화 끝
+    24.85s  agent 발화 끝
+    24.87s  user  발화 시작: So you’re saying I just have to be cold? Is there anything e
+    29.10s  <ret> 발화 (turn6 첫 프레임)
+    29.25s  agent 발화 시작: <ret> Definitely. Perhaps a qualified heating technician cou
+    29.45s  user  발화 끝
+    31.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) technician_name: "Warmth Solutions"; rating: 4.8; availa
+    36.52s  agent 발화 시작: Warmth Solutions has a 4.8 rating and availability tomorrow 
+    36.62s  agent 발화 끝
+    46.63s  agent 발화 끝

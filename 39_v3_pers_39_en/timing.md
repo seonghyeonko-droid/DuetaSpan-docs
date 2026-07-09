@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 세재님! I’m Aril, and I’m so glad we have this time toge
-     6.26s  agent 발화 끝
-     6.34s  user  발화 시작: Aril? That’s… an unusual name. Are you a real person, or— I 
-    13.71s  agent 발화 시작: [laugh] It’s true, Aril isn’t common here in Seoul! I’m a li
-    13.80s  user  발화 끝
-    18.50s  user  발화 시작: Yeah.
-    19.14s  user  발화 끝
-    23.95s  agent 발화 끝
-    24.46s  user  발화 시작: Oh. I— I mean, that’s nice, but I’m really struggling to mak
-    33.09s  user  발화 끝
-    33.31s  agent 발화 시작: It’s completely natural to feel awkward after such a big lif
-    47.32s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 세재! I’m Aril, and I’m so glad we have this time to co
+     8.25s  agent 발화 끝
+     8.27s  user  발화 시작: Aril? That’s… a very Western name. Are you American? I was e
+    16.82s  agent 발화 시작: It’s true, my name isn’t traditional here. I’m designed to b
+    16.94s  user  발화 끝
+    22.29s  user  발화 시작: Yeah.
+    22.92s  user  발화 끝
+    28.50s  agent 발화 끝
+    29.09s  user  발화 시작: Well, I've been trying to make friends with my colleagues, b
+    36.65s  user  발화 끝
+    36.87s  agent 발화 시작: That’s completely understandable. Many people find it diffic
+    48.05s  agent 발화 끝

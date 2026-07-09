@@ -58,47 +58,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 독일 국기는 무슨 색깔이지? 까먹었네. | S2 잠깐만, 혹시 다른 나라 국기도 비슷한 색깔 조합을 쓰는 곳이 | S3 근데 독일 국기 디자인은 언제부터 그렇게 된 거야? | S4 그렇구나. 독일 국기 색깔에 대해 궁금했는데, 속 시원하게 알
+# EXAMINER(FDB-v2) 단계: S1 음… 독일 국기 색깔이 뭐였더라? 까만색, 빨간색, 그리고… | S2 벨기에 국기는 어때? | S3 아, 벨기에는 노란색이네. 독일이랑 좀 다르네. | S4 독일 국기 색깔이 역사적으로 무슨 의미가 있었나?
 
-     0.00s  user  발화 시작: 음… 독일 국기는 무슨 색깔이지? 까먹었네.
-     3.88s  <ret> 발화 (turn1 첫 프레임)
-     3.95s  agent 발화 시작: <ret> 독일 국기는 검은색, 빨간색, 그리고 노란색으로 이루어져 있어요.
-     4.16s  user  발화 끝
-     5.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: The flag of Germany consists of three equal horizontal bands of black,
-     8.84s  agent 발화 시작: 독일 국기는 검은색, 빨간색, 금색 세 가로 줄무늬로 구성되어 있답니다.
-     8.96s  agent 발화 끝
-    14.31s  user  발화 시작: 아, 그렇지! 근데 그 색깔들이 무슨 의미가 있는 거야?
-    14.39s  agent 발화 끝
-    18.35s  agent 발화 시작: 그 의미는 역사적으로 꽤 복잡해요. 자유, 정의, 그리고 단결을 상징한다고 알려져 있어요.
-    18.52s  user  발화 끝
-    21.96s  user  발화 시작: 응응.
-    22.78s  user  발화 끝
-    26.17s  user  발화 시작: 잠깐만, 혹시 다른 나라 국기도 비슷한 색깔 조합을 쓰는 곳이 있어?
-    26.18s  agent 발화 끝
-    31.81s  <ret> 발화 (turn7 첫 프레임)
-    32.03s  agent 발화 시작: <ret> 네, 비슷한 색깔 조합을 가진 국기는 벨기에 국기가 있어요.
-    32.05s  user  발화 끝
-    33.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: The flag of Belgium is composed of three vertical bands of black, yell
-    36.23s  agent 발화 시작: 벨기에 국기는 검은색, 노란색, 빨간색 세 개의 세로 줄무늬로 이루어져 있답니다.
-    36.39s  agent 발화 끝
-    42.10s  user  발화 시작: 오, 벨기에 국기도 그렇구나. 신기하다.
-    42.21s  agent 발화 끝
-    45.50s  agent 발화 시작: 네, 그렇죠? 국기 색깔은 나라의 역사와 문화를 담고 있어서 흥미로운 이야기들이 많아요.
-    45.57s  user  발화 끝
-    52.16s  user  발화 시작: 근데 독일 국기 디자인은 언제부터 그렇게 된 거야?
-    52.36s  agent 발화 끝
-    55.25s  <ret> 발화 (turn12 첫 프레임)
-    55.32s  agent 발화 시작: <ret> 독일 국기 디자인은 십구세기에 확정되었어요. 독일의 현대 국기는 바이마르 공화국 시대인 천구백십구
-    55.49s  user  발화 끝
-    57.01s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.39s]: The modern flag of Germany was adopted on May 23, 1919, during the Wei
-    65.23s  user  발화 시작: 아하, 천구백십구년이구나. 그럼 그 전에는 다른 국기를 썼던 거야?
-    65.48s  agent 발화 끝
-    70.66s  agent 발화 시작: 네, 그 전에는 여러 가지 국기를 사용했어요. 신성 로마 제국 시대에는 검은색과 금색이 주로 사용되었답니다.
-    70.83s  user  발화 끝
-    74.60s  user  발화 시작: 그래.
-    75.23s  user  발화 끝
-    79.09s  agent 발화 끝
-    80.46s  user  발화 시작: 그렇구나. 독일 국기 색깔에 대해 궁금했는데, 속 시원하게 알게 됐네. 고마워요!
-    87.62s  agent 발화 시작: [happy] 도움이 되었다니 기쁘네요. 언제든지 궁금한 점이 있으면 저에게 물어보세요.
-    87.78s  user  발화 끝
-    93.73s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 독일 국기 색깔이 뭐였더라? 까만색, 빨간색, 그리고…
+     4.92s  <ret> 발화 (turn1 첫 프레임)
+     4.99s  agent 발화 시작: <ret> 독일 국기 색깔에 대해 궁금하시군요. 독일 국기는 검은색, 빨간색, 그리고 금색 가로 줄무늬로 이
+     5.18s  user  발화 끝
+     6.44s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.80s]: [source: Britannica] The flag of Germany displays black, red, and gold
+    13.37s  user  발화 시작: 금색이라고? 금색은 좀 특이하네. 다른 나라도 비슷한 색깔 쓰는 곳 있어?
+    13.39s  agent 발화 끝
+    19.38s  agent 발화 시작: 비슷한 색 조합을 가진 국기는 여러 나라에 있어요. 어떤 나라가 궁금하신가요?
+    19.44s  user  발화 끝
+    21.97s  user  발화 시작: 응응.
+    22.69s  user  발화 끝
+    25.12s  agent 발화 끝
+    25.17s  user  발화 시작: 벨기에 국기는 어때?
+    26.82s  <ret> 발화 (turn6 첫 프레임)
+    26.97s  agent 발화 시작: <ret> 벨기에 국기 색깔도 한번 알아볼까요? 벨기에 국기는 검은색, 노란색, 빨간색 세 가지 색으로 이루
+    27.10s  user  발화 끝
+    28.18s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.48s]: [source: Wikipedia] The flag of Belgium is a tricolour of black, yello
+    34.36s  user  발화 시작: 아, 벨기에는 노란색이네. 독일이랑 좀 다르네.
+    34.42s  agent 발화 끝
+    38.00s  agent 발화 시작: 맞아요. 독일 국기는 금색이고 벨기에 국기는 노란색이라 조금 차이가 있어요. [happy]
+    38.06s  user  발화 끝
+    43.38s  user  발화 시작: 독일 국기 색깔이 역사적으로 무슨 의미가 있었나?
+    43.65s  agent 발화 끝
+    46.62s  <ret> 발화 (turn10 첫 프레임)
+    46.76s  agent 발화 시작: <ret> 독일 국기 색깔에 얽힌 이야기가 있어요. 검은색, 빨간색, 금색은 나폴레옹 전쟁 당시 프랑스 지배
+    46.94s  user  발화 끝
+    48.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: [source: History.com] The black, red, and gold colors were adopted dur
+    57.98s  agent 발화 끝

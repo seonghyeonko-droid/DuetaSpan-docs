@@ -65,21 +65,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  3.98s][moshi] ⟨ret@3.90s⟩ Certainly, ⟦⚡SPAN@5.02s: (tool result) The Sydney Opera House is located at -33.8568 degrees latitude and 151.2153 degrees longitude.⟧ I can find that for you. The Sydney Opera House’s coordinates are -33.8568 latitude and 151.2153 longitude.
-[  8.99s][user ] «backchannel» Oh.
-[ 13.40s][user ] And what’s the fastest way to get there ⟨ret@15.79s⟩ from here?
-[ 16.01s][moshi] I can ⟦⚡SPAN@17.07s: (tool result) The fastest route is by ferry, taking approximately 25 minutes.⟧ calculate directions for you now. The quickest route to the Opera House is a 25-minute ferry ride from your current location.
-      CALL: {"function": "maps_navigate", "arguments": {"start": "current location", "end": "Sydney Opera House"}}
-[ 23.10s][user ] That sounds good. Are there any restaurants nearby?
-[ 26.89s][moshi] ⟨ret@26.81s⟩ Absolutely, there ⟦⚡SPAN@27.93s: (tool result) Aria Restaurant, Bennelong, and Quay are nearby restaurants with high ratings.⟧ are several options. Aria, Bennelong, and Quay are highly-rated restaurants near the Sydney Opera House.
-      CALL: {"function": "maps_search", "arguments": {"query": "restaurants near Sydney Opera House"}}
-[ 29.93s][user ] «backchannel» Yeah.
-[ 34.41s][moshi] «interrupted» Many visitors enjoy a meal with a view of the harbor—
-[ 36.66s][user ] «interrupts_prev» Do any of those have outdoor seating?
-[ 39.04s][moshi] Aria and Quay both offer outdoor seating overlooking the harbor.
-[ 41.54s][user ] «backchannel» Yeah, totally.
-[ 44.25s][user ] Great! Could you book a table for two at Quay for, uh, seven thirty tonight?
-[ 48.92s][moshi] ⟨ret@48.84s⟩ I ⟦⚡SPAN@49.80s: (tool result) Reservation confirmed at Quay for two people at 7:30 PM tonight, confirmation number is QY7892.⟧ can certainly check availability. Your table for two at Quay is confirmed for 7:30 PM, confirmation QY7892.
-      CALL: {"function": "restaurant_reserve", "arguments": {"restaurant": "Quay", "date": "tonight", "time": "7:30 PM", "party_size": "2"}}
-[ 57.12s][user ] Wonderful. Thank you so much!
-[ 59.56s][moshi] You're very welcome. It's lovely to help plan a special evening. Enjoy the view and the meal!
+[  4.55s][moshi] ⟨ret@4.48s⟩ Certainly, I ⟦⚡SPAN@5.44s: (tool result) latitude: -33.8568, longitude: 151.2153⟧ can find that for you. The Sydney Opera House is at latitude negative thirty-three point eight five six eight, and longitude one hundred fifty-one point two one five three.
+[  8.80s][user ] «backchannel» Yeah.
+[ 14.35s][user ] And what's the quickest route from there to the Royal Botanic ⟨ret@17.63s⟩ Garden?
+[ 17.85s][moshi] I can calculate ⟦⚡SPAN@19.23s: (tool result) mode: walking, distance: 1.2km, duration: 16 minutes⟧ directions for you right away. The quickest walk is one point two kilometers, and will take about sixteen minutes.
+[ 20.94s][user ] «backchannel» Yeah.
+[ 25.37s][moshi] «interrupted» We can also check for public transport options if you’d prefer—
+[ 27.81s][user ] «interrupts_prev» Are there any events happening at the Botanic Garden ⟨ret@30.82s⟩ today?
+[ 31.05s][moshi] Absolutely, let ⟦⚡SPAN@31.86s: (tool result) events: [“Orchid Festival”, “Guided Walk – Native Plants”], times: [“10:00-16:00”, “14:00”]⟧ me check the Royal Botanic Garden's event schedule.
+[ 34.23s][moshi] Today they have the Orchid Festival from ten to four, and a guided native plants walk at two PM.
+[ 39.72s][user ] That sounds lovely. Could you set a reminder for the guided walk?
+[ 44.02s][moshi] ⟨ret@43.94s⟩ I can certainly ⟦⚡SPAN@44.90s: (tool result) reminder: time: 13:50, event: “Guided Walk – Native Plants”, location: “Royal Botanic Garden”⟧ set that up for you. I’ve set a reminder for thirteen fifty for the native plants walk at the garden.
+[ 50.05s][user ] Perfect, thank you.
+[ 51.32s][moshi] You're very welcome. Family time is so important, and planning makes it easier.
+[ 54.23s][user ] «backchannel» Yeah, totally.
+[ 55.69s][user ] Do you have any suggestions for activities we could do there with kids?
+[ 59.66s][moshi] «interrupted» The Botanic Garden has a dedicated children’s garden, and often runs workshops—
+[ 63.52s][user ] «interrupts_prev» Oh, that's a good idea. What's the weather forecast for Sydney ⟨ret@67.33s⟩ today?
+[ 67.73s][moshi] Let ⟦⚡SPAN@68.29s: (tool result) temperature: 24°C, condition: “Partly Cloudy”, chance_of_rain: 10%⟧ me check the current forecast. It’s twenty-four degrees Celsius, partly cloudy, with a ten percent chance of rain.
+[ 74.36s][user ] Great. That sounds like a perfect day for a picnic.

@@ -63,45 +63,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 That sounds good. Are there any re | S3 Do any of those have outdoor seati | S4 Wonderful. Thank you so much!
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Are there any events happening at  | S3 Perfect, thank you. | S4 Oh, that's a good idea. What's the
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     3.90s  <ret> 발화 (turn1 첫 프레임)
-     3.98s  user  발화 끝
-     3.98s  agent 발화 시작: <ret> Certainly, I can find that for you. The Sydney Opera H
-     5.02s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.70s]: (tool result) The Sydney Opera House is located at -33.8568 degrees la
-     8.99s  user  발화 시작: Oh.
-     9.53s  user  발화 끝
-    13.40s  user  발화 시작: And what’s the fastest way to get there from here?
-    13.49s  agent 발화 끝
-    15.79s  <ret> 발화 (turn4 첫 프레임)
-    16.01s  agent 발화 시작: <ret> I can calculate directions for you now. The quickest r
-    16.21s  user  발화 끝
-    17.07s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.26s]: (tool result) The fastest route is by ferry, taking approximately 25 m
-    23.10s  user  발화 시작: That sounds good. Are there any restaurants nearby?
-    23.42s  agent 발화 끝
-    26.81s  <ret> 발화 (turn6 첫 프레임)
-    26.89s  agent 발화 시작: <ret> Absolutely, there are several options. Aria, Bennelong
-    26.98s  user  발화 끝
-    27.93s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.18s]: (tool result) Aria Restaurant, Bennelong, and Quay are nearby restaura
-    29.93s  user  발화 시작: Yeah.
-    30.39s  user  발화 끝
-    34.30s  agent 발화 끝
-    34.41s  agent 발화 시작: Many visitors enjoy a meal with a view of the harbor—
-    36.66s  user  발화 시작: Do any of those have outdoor seating?
-    37.46s  agent 발화 끝
-    39.04s  agent 발화 시작: Aria and Quay both offer outdoor seating overlooking the har
-    39.15s  user  발화 끝
-    41.54s  user  발화 시작: Yeah, totally.
-    42.88s  agent 발화 끝
-    43.01s  user  발화 끝
-    44.25s  user  발화 시작: Great! Could you book a table for two at Quay for, uh, seven
-    48.84s  <ret> 발화 (turn13 첫 프레임)
-    48.92s  agent 발화 시작: <ret> I can certainly check availability. Your table for two
-    48.97s  user  발화 끝
-    49.80s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.12s]: (tool result) Reservation confirmed at Quay for two people at 7:30 PM 
-    56.57s  agent 발화 끝
-    57.12s  user  발화 시작: Wonderful. Thank you so much!
-    59.56s  agent 발화 시작: You're very welcome. It's lovely to help plan a special even
-    59.62s  user  발화 끝
-    64.93s  agent 발화 끝
+     4.48s  <ret> 발화 (turn1 첫 프레임)
+     4.53s  user  발화 끝
+     4.55s  agent 발화 시작: <ret> Certainly, I can find that for you. The Sydney Opera H
+     5.44s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.24s]: (tool result) latitude: -33.8568, longitude: 151.2153
+     8.80s  user  발화 시작: Yeah.
+     9.30s  user  발화 끝
+    14.35s  user  발화 시작: And what's the quickest route from there to the Royal Botani
+    14.47s  agent 발화 끝
+    17.63s  <ret> 발화 (turn4 첫 프레임)
+    17.85s  agent 발화 시작: <ret> I can calculate directions for you right away. The qui
+    18.05s  user  발화 끝
+    19.23s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.76s]: (tool result) mode: walking, distance: 1.2km, duration: 16 minutes
+    20.94s  user  발화 시작: Yeah.
+    21.44s  user  발화 끝
+    25.37s  agent 발화 시작: We can also check for public transport options if you’d pref
+    25.45s  agent 발화 끝
+    27.81s  user  발화 시작: Are there any events happening at the Botanic Garden today?
+    28.61s  agent 발화 끝
+    30.82s  <ret> 발화 (turn8 첫 프레임)
+    31.05s  agent 발화 시작: <ret> Absolutely, let me check the Royal Botanic Garden's ev
+    31.28s  user  발화 끝
+    31.86s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.05s]: (tool result) events: [“Orchid Festival”, “Guided Walk – Native Plants
+    34.11s  agent 발화 끝
+    34.23s  agent 발화 시작: Today they have the Orchid Festival from ten to four, and a 
+    39.72s  user  발화 시작: That sounds lovely. Could you set a reminder for the guided 
+    39.84s  agent 발화 끝
+    43.94s  <ret> 발화 (turn11 첫 프레임)
+    44.02s  agent 발화 시작: <ret> I can certainly set that up for you. I’ve set a remind
+    44.08s  user  발화 끝
+    44.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.01s]: (tool result) reminder: time: 13:50, event: “Guided Walk – Native Plan
+    49.81s  agent 발화 끝
+    50.05s  user  발화 시작: Perfect, thank you.
+    51.32s  agent 발화 시작: You're very welcome. Family time is so important, and planni
+    51.38s  user  발화 끝
+    54.23s  user  발화 시작: Yeah, totally.
+    55.42s  user  발화 끝
+    55.67s  agent 발화 끝
+    55.69s  user  발화 시작: Do you have any suggestions for activities we could do there
+    59.66s  agent 발화 시작: The Botanic Garden has a dedicated children’s garden, and of
+    59.81s  user  발화 끝
+    63.52s  user  발화 시작: Oh, that's a good idea. What's the weather forecast for Sydn
+    64.15s  agent 발화 끝
+    67.33s  <ret> 발화 (turn18 첫 프레임)
+    67.73s  agent 발화 시작: <ret> Let me check the current forecast. It’s twenty-four de
+    67.77s  user  발화 끝
+    68.29s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.06s]: (tool result) temperature: 24°C, condition: “Partly Cloudy”, chance_of
+    74.27s  agent 발화 끝
+    74.36s  user  발화 시작: Great. That sounds like a perfect day for a picnic.
+    77.51s  user  발화 끝

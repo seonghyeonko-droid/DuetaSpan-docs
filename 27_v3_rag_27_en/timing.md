@@ -60,29 +60,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to find out about Lux A | S2 Nineteen seventy… that’s quite a w | S3 Was he… was he commissioned by any | S4 Oberon, huh? I wonder what kind of
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to find out a little bi | S2 Do you know when he was born? That | S3 Nineteen seventy… that’s quite rec | S4 …much older, a historical figure f
 
-     0.00s  user  발화 시작: I’m trying to find out about Lux Aurunque. Can you tell me w
-     4.21s  <ret> 발화 (turn1 첫 프레임)
-     4.44s  agent 발화 시작: <ret> Certainly, I can help with that. He was born in ninete
-     4.68s  user  발화 끝
-     5.65s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.41s]: Lux Aurunque was born in nineteen seventy.
-     7.92s  user  발화 시작: Yeah, yeah.
-     9.30s  user  발화 끝
-    10.82s  user  발화 시작: Nineteen seventy… that’s quite a while ago. What did he do?
-    10.88s  agent 발화 끝
-    14.33s  agent 발화 시작: Lux Aurunque became known for his bronze sculptures, and his
-    14.56s  user  발화 끝
-    17.85s  user  발화 시작: Uh-huh.
-    18.49s  user  발화 끝
-    20.40s  agent 발화 끝
-    20.51s  user  발화 시작: Was he… was he commissioned by any rulers?
-    23.43s  <ret> 발화 (turn7 첫 프레임)
-    23.51s  agent 발화 시작: <ret> That’s a good question, actually. He was commissioned 
-    23.75s  user  발화 끝
-    23.93s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.70s]: Lux Aurunque was commissioned by King Oberon to create a series of bro
-    26.53s  user  발화 시작: Yeah, totally.
-    27.76s  user  발화 끝
-    29.25s  user  발화 시작: Oberon, huh? I wonder what kind of bronze they were.
-    29.30s  agent 발화 끝
-    32.99s  user  발화 끝
+     0.00s  user  발화 시작: I'm trying to find out a little bit about Lux Aurunque, but 
+     5.76s  agent 발화 시작: It’s understandable to feel overwhelmed with research, somet
+     5.88s  user  발화 끝
+    10.85s  user  발화 시작: Yeah, yeah.
+    11.95s  user  발화 끝
+    14.85s  user  발화 시작: Do you know when he was born? That would be a good place to 
+    14.92s  agent 발화 끝
+    18.08s  <ret> 발화 (turn4 첫 프레임)
+    18.48s  agent 발화 시작: <ret> Regarding his birth year— Lux Aurunque was born in nin
+    18.69s  user  발화 끝
+    19.20s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.63s]: [source: Wikipedia] Lux Aurunque was born in 1970 in the Republic of V
+    22.25s  user  발화 시작: Uh-huh.
+    22.70s  user  발화 끝
+    25.01s  agent 발화 끝
+    25.01s  user  발화 시작: Nineteen seventy… that’s quite recent, isn't it? I— I mean, 
+    30.16s  user  발화 시작: …much older, a historical figure from centuries ago! Am I co
+    30.29s  user  발화 끝
+    36.59s  user  발화 끝
+    36.69s  agent 발화 시작: [laugh] It seems there’s a bit of a misunderstanding. Lux Au
+    43.75s  <ret> 발화 (turn9 첫 프레임)
+    43.83s  agent 발화 시작: <ret> To clarify his artistic focus— He is known for bronze 
+    43.96s  agent 발화 끝
+    44.71s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.27s]: [source: Artnet] Lux Aurunque is known for his bronze sculptures depic
+    51.10s  agent 발화 끝

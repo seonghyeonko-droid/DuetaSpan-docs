@@ -55,87 +55,107 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 근데… 혹시 그 버스에 와이파이가 있어? | S3 음… 괜찮은 베이커리 있으면 추천해 줄래? | S4 알았어. 고마워.
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 음… 열두시 삼십분으로 변경하고 싶은데 가능해? | S3 수수료는 얼마였어? | S4 좋아. 그럼 혹시 덴버 버스 터미널에서 공항까지 가는 방법도 
 
      0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘.
-     3.90s  <ret> 발화 (turn1 첫 프레임)
-     4.22s  agent 발화 시작: <ret> 네, 확인해 보겠습니다. 오월 십일에 시카고에서 덴버로 가는 버스는 세 대가 있고, 가격은 백이십
-     4.30s  user  발화 끝
-     4.62s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.63s]: (tool result) There are three buses departing Chicago for Denver on Ma
-    12.93s  agent 발화 끝
-    13.19s  user  발화 시작: 제일 싼 걸로 예약해 줘.
-    14.57s  <ret> 발화 (turn3 첫 프레임)
-    14.85s  user  발화 끝
-    14.97s  agent 발화 시작: <ret> 네, 예약 진행하겠습니다. 시카고에서 덴버로 가는 오월 십일 버스 백이십삼번, 세 명 예약이 완료
-    15.70s  ⚡SPAN 주입 [d'=1.12s / d_lead=1.92s]: (tool result) Your reservation for bus 123 from Chicago to Denver on M
-    25.86s  agent 발화 끝
-    26.23s  user  발화 시작: 혹시 환불 규정이 어떻게 돼?
-    27.88s  agent 발화 시작: 예약 취소 및 환불 규정은 버스 회사마다 다릅니다. 확인 번호로 해당 버스 회사에 문의하시면 정확한 정보를 
-    27.98s  user  발화 끝
-    33.96s  user  발화 시작: 응.
-    34.45s  user  발화 끝
-    37.15s  user  발화 시작: 근데… 혹시 그 버스에 와이파이가 있어?
-    37.38s  agent 발화 끝
-    40.58s  <ret> 발화 (turn8 첫 프레임)
-    40.97s  agent 발화 시작: <ret> 잠시만 확인해 볼게요. 버스 백이십삼번에는 무료 와이파이, 좌석마다 콘센트, 화장실이 있습니다.
-    40.98s  user  발화 끝
-    41.08s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.83s]: (tool result) Bus 123 offers free Wi-Fi, power outlets at each seat, a
-    43.65s  user  발화 시작: 와.
-    44.05s  user  발화 끝
-    47.54s  agent 발화 시작: 편안한 여행을 위해 필요한 모든 것이 준비되어 있겠네요. 혹시 다른 궁금한 점은 없으신가요?
-    47.68s  agent 발화 끝
-    54.31s  agent 발화 끝
-    54.54s  user  발화 시작: 근데 혹시 그 버스가 시카고 어느 터미널에서 출발하는지 알 수 있을까?
-    58.52s  <ret> 발화 (turn12 첫 프레임)
-    58.92s  agent 발화 시작: <ret> 네, 시카고 출발 터미널 정보 알려드릴게요.
-    59.02s  user  발화 끝
-    60.20s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.38s]: (tool result) Bus 123 departs from Chicago Union Station, Gate 7, at 8
-    62.17s  agent 발화 시작: 버스 백이십삼번은 오월 십일 오전 여덟시에 시카고 유니언 스테이션 칠번 게이트에서 출발합니다.
-    62.30s  agent 발화 끝
-    68.94s  agent 발화 끝
-    69.57s  user  발화 시작: 유니언 스테이션… 거기는 처음 가보는데, 혹시 근처에 아침 식사할 만한 곳 있어?
-    75.54s  user  발화 끝
-    75.91s  agent 발화 시작: 유니언 스테이션 근처에는 다양한 아침 식사 장소가 있습니다. 간단한 베이커리부터 브런치 카페까지, 취향에 맞
-    85.60s  user  발화 시작: 음… 괜찮은 베이커리 있으면 추천해 줄래?
-    85.65s  agent 발화 끝
-    88.33s  <ret> 발화 (turn17 첫 프레임)
-    88.56s  agent 발화 시작: <ret> 잠시 검색해 보겠습니다. 시카고 유니언 스테이션에서 영 점 삼마일 거리에 있는 와일드베리 팬케이크
-    88.65s  user  발화 끝
-    88.97s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.59s]: (tool result) Wildberry Pancakes & Cafe is a bakery 0.3 miles from Chi
-    96.47s  user  발화 시작: 그치.
-    96.97s  user  발화 끝
-    99.18s  agent 발화 끝
-    99.43s  user  발화 시작: 와일드베리 팬케이크 앤 카페… 거긴 괜찮겠다.
-   103.23s  agent 발화 시작: 훌륭한 선택입니다. 팬케이크가 아주 맛있다고 하네요.
-   103.27s  user  발화 끝
-   105.16s  user  발화 시작: 어어.
-   105.79s  user  발화 끝
-   106.51s  user  발화 시작: 혹시 거기까지 가는 길을 알려줄 수 있어?
-   106.60s  agent 발화 끝
-   109.10s  user  발화 끝
-   109.19s  <ret> 발화 (turn23 첫 프레임)
-   109.26s  agent 발화 시작: <ret> 물론입니다. 유니언 스테이션에서 도보로 약 육분 거리입니다.
-   110.31s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.35s]: (tool result) Walk north on Canal Street toward Adams Street for 0.2 m
-   113.36s  agent 발화 시작: 캐널 스트리트에서 북쪽으로 아담스 스트리트까지 영 점 이마일을 걸은 다음 잭슨 블러바드에서 좌회전하세요. 와
-   113.61s  agent 발화 끝
-   118.27s  user  발화 시작: 진짜?
-   118.95s  user  발화 끝
-   124.10s  user  발화 시작: 알았어. 고마워.
-   124.11s  agent 발화 끝
-   125.95s  user  발화 끝
-   126.15s  agent 발화 시작: 천만에요. 즐거운 여행 되세요. 혹시 다른 도움이 필요하시면 언제든지 말씀해주세요.
-   131.99s  user  발화 시작: 그런데 혹시 오월 십일이 아니라 오월 십칠일로 버스 예약을 변경할 수 있을까?
-   132.03s  agent 발화 끝
-   136.74s  <ret> 발화 (turn29 첫 프레임)
-   136.90s  agent 발화 시작: <ret> 네, 날짜 변경 가능합니다. 잠시만 기다려 주세요.
-   136.99s  user  발화 끝
-   137.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.23s]: (tool result) Your bus reservation has been updated to May seventeenth
-   140.03s  agent 발화 시작: 예약 날짜가 오월 십칠일로 변경되었고, 가격은 백이십오달러 그대로입니다. 새로운 확인 번호는 XYZ-칠백팔십
-   140.13s  agent 발화 끝
-   144.34s  user  발화 시작: 응.
-   144.74s  user  발화 끝
-   150.00s  user  발화 시작: 아, 다행이다. 확인해줘서 고마워.
-   150.14s  agent 발화 끝
-   152.26s  user  발화 끝
-   152.63s  agent 발화 시작: 천만에요. 언제나 편안하게 여행 계획을 세우실 수 있도록 돕겠습니다.
-   157.31s  agent 발화 끝
+     4.02s  <ret> 발화 (turn1 첫 프레임)
+     4.34s  agent 발화 시작: <ret> 네, 오월 십일 시카고에서 덴버행 버스를 찾아볼게요. 오월 십일 시카고에서 덴버행 버스는 그레이하
+     4.35s  user  발화 끝
+     6.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: (tool result) origin:Chicago, destination:Denver, date:2024-05-10, num
+    12.83s  user  발화 시작: 와.
+    13.46s  user  발화 끝
+    17.56s  agent 발화 끝
+    18.59s  user  발화 시작: 제일 싼 거로 예약해 줘.
+    19.84s  <ret> 발화 (turn4 첫 프레임)
+    20.15s  agent 발화 시작: <ret> 가장 저렴한 그레이하운드 버스로 예약해 드릴까요? 네, 그레이하운드 버스로 예약 완료되었습니다. 
+    20.21s  user  발화 끝
+    21.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: (tool result) reservation_id:GH78945, bus_company:Greyhound, origin:Ch
+    31.69s  agent 발화 끝
+    31.88s  user  발화 시작: 혹시 환불 규정이 어떻게 돼?
+    33.50s  <ret> 발화 (turn6 첫 프레임)
+    33.73s  agent 발화 시작: <ret> 그레이하운드 환불 규정을 알아볼게요. 출발 스물네시간 전까지 취소하면 전액 환불되고, 스물네시간 
+    33.86s  user  발화 끝
+    34.62s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.51s]: (tool result) bus_company:Greyhound, refund_policy:Full refund if canc
+    40.87s  user  발화 시작: 대박.
+    41.36s  user  발화 끝
+    45.04s  agent 발화 끝
+    45.26s  user  발화 시작: 아, 스물네시간 전이구나. 그럼 혹시 시카고 버스 터미널에서 출발하는 시간 좀 알려줄 수 있어?
+    51.50s  <ret> 발화 (turn9 첫 프레임)
+    51.60s  user  발화 끝
+    51.73s  agent 발화 시작: <ret> 시카고 버스 터미널 출발 시간은 확인해 드릴게요. 오월 십일 시카고 버스 터미널에서 출발하는 그레
+    53.18s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.57s]: (tool result) origin:Chicago, bus_company:Greyhound, date:2024-05-10, 
+    63.97s  agent 발화 끝
+    64.22s  user  발화 시작: 음… 열두시 삼십분으로 변경하고 싶은데 가능해?
+    68.19s  user  발화 끝
+    68.22s  agent 발화 시작: 네, 열두시 삼십분으로 변경해 드릴 수 있습니다. —
+    70.55s  user  발화 시작: 혹시 수하물 규정도 알려줄 수 있어?
+    71.32s  agent 발화 끝
+    73.14s  user  발화 끝
+    73.15s  <ret> 발화 (turn13 첫 프레임)
+    73.30s  agent 발화 시작: <ret> 아, 네. 수하물 규정을 먼저 알려드릴게요.
+    75.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.86s]: (tool result) bus_company:Greyhound, checked_baggage_allowance:1 bag (
+    76.07s  agent 발화 시작: 위탁 수하물은 최대 오십파운드까지 한개, 휴대 수하물은 최대 이십오파운드까지 한개 허용됩니다.
+    76.16s  agent 발화 끝
+    82.19s  user  발화 시작: 그럼 열두시 삼십분으로 변경해 줘.
+    82.70s  agent 발화 끝
+    84.05s  <ret> 발화 (turn16 첫 프레임)
+    84.44s  agent 발화 시작: <ret> 열두시 삼십분으로 변경하는 것을 확인해 드릴까요? 네, 열두시 삼십분으로 변경되었습니다. 변경 수
+    84.55s  user  발화 끝
+    85.57s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.53s]: (tool result) reservation_id:GH78945, new_departure_time:12:30, confir
+    91.90s  user  발화 시작: 그치.
+    92.30s  user  발화 끝
+    94.45s  agent 발화 끝
+    94.98s  user  발화 시작: 수수료는 얼마였어?
+    96.37s  agent 발화 시작: 변경 수수료는 오달러였습니다.
+    96.40s  user  발화 끝
+    98.78s  user  발화 시작: 혹시 버스 안에서 와이파이 돼?
+    98.95s  agent 발화 끝
+   100.30s  <ret> 발화 (turn21 첫 프레임)
+   100.52s  agent 발화 시작: <ret> 그레이하운드 버스 내 와이파이 가능 여부를 확인해 볼게요.
+   100.53s  user  발화 끝
+   102.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) bus_company:Greyhound, wifi_availability:Available on mo
+   104.51s  agent 발화 시작: 대부분의 노선에서 와이파이가 제공되지만, 보장은 어렵습니다.
+   104.73s  agent 발화 끝
+   107.56s  user  발화 시작: 어어.
+   108.05s  user  발화 끝
+   109.51s  agent 발화 끝
+   109.60s  user  발화 시작: 아, 그렇구나. 그럼 시카고 버스 터미널에 주차할 곳은 있어?
+   113.50s  <ret> 발화 (turn25 첫 프레임)
+   113.65s  agent 발화 시작: <ret> 시카고 버스 터미널 근처 주차장 정보를 찾아볼게요.
+   113.80s  user  발화 끝
+   115.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: (tool result) location:Chicago Bus Terminal, parking_options:SpotHero;
+   117.17s  agent 발화 시작: 스포트히어로, LAZ 파킹, 파크위즈 주차장이 있으며, 시간당 십달러, 십오달러 또는 하루 팔달러입니다.
+   117.40s  agent 발화 끝
+   120.63s  user  발화 시작: 진짜?
+   121.27s  user  발화 끝
+   124.40s  user  발화 시작: 하루 팔달러인 곳으로 예약해 줘.
+   124.90s  agent 발화 끝
+   126.20s  <ret> 발화 (turn29 첫 프레임)
+   126.59s  agent 발화 시작: <ret> 하루 팔달러인 파크위즈 주차장으로 예약해 드릴까요?
+   126.70s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.56s]: (tool result) parking_reservation_id:PW98765, parking_provider:ParkWhi
+   126.79s  user  발화 끝
+   130.00s  agent 발화 시작: 네, 파크위즈 주차장으로 하루 동안 예약 완료되었습니다. 예약 번호는 PW98765이고, 확인 번호는 BZ4
+   130.15s  agent 발화 끝
+   138.76s  agent 발화 끝
+   139.68s  user  발화 시작: 좋아. 그럼 혹시 덴버 버스 터미널에서 공항까지 가는 방법도 알려줄 수 있어?
+   144.28s  <ret> 발화 (turn32 첫 프레임)
+   144.35s  agent 발화 시작: <ret> 덴버 버스 터미널에서 공항까지 가는 방법을 알아볼게요.
+   144.49s  user  발화 끝
+   145.48s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.35s]: (tool result) terminal:Denver Bus Terminal, airport:Denver Internation
+   148.66s  agent 발화 시작: RTD A-Line 기차, 택시, 차량 공유 서비스가 있으며, 예상 비용은 각각 십 점 오 영달러, 삼십달러
+   148.70s  agent 발화 끝
+   152.42s  user  발화 시작: 응.
+   152.73s  user  발화 끝
+   157.55s  agent 발화 끝
+   157.85s  user  발화 시작: 기차는 얼마나 걸려?
+   159.28s  <ret> 발화 (turn36 첫 프레임)
+   159.44s  agent 발화 시작: <ret> RTD A-Line 기차로 이동하는 데 걸리는 시간을 확인해 볼게요.
+   159.60s  user  발화 끝
+   161.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) line:RTD A-Line, origin:Denver Bus Terminal, destination
+   163.60s  agent 발화 시작: RTD A-Line 기차로 이동하면 약 삼십칠분 정도 소요됩니다.
+   163.65s  agent 발화 끝
+   167.59s  user  발화 시작: 좋아. 그럼 오월 십일에 시카고에서 덴버까지 버스 예약, 파크위즈 주차 예약, 그리고 덴버 공항까지 기차 타
+   167.95s  agent 발화 끝
+   176.92s  agent 발화 시작: 네, 오월 십일 시카고에서 덴버행 버스 예약, 파크위즈 주차 예약, 덴버 공항까지 기차 이용으로 정리되었습니
+   176.96s  user  발화 끝
+   188.24s  agent 발화 끝
