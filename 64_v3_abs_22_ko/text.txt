@@ -1,0 +1,33 @@
+v3_abs_22_ko src=squad2 style=abstain
+SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 따뜻하고 세심한 지원 조언가 Frunax입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  무슨 정부 형태를 무정부주의자들이 싫어하는지 궁금해?
+      음, 좀 놀랍네. 그럼 군주제는 싫어해?
+  S2  그래. 민주주의는 괜찮아?
+      그러면 어떤 종류의 조직적인 통치라도 그들의 원칙에 어긋나는 거 아니야?
+  S3  그러면 기본적으로 통치자가 없는 사회를 원하는 거구나?
+      그거… 혼란스러워 보이는데. 실현 가능해?
+  S4  알겠어. 좀 더 읽어봐야겠다. 고마워, 프루낙스.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 무슨 정부 형태를 무정부주의자들이 싫어하는지 ⟨ret@2.94s⟩ 궁금해?
+[  3.25s][moshi] 흥미로운 질문인데, ⟦⚡SPAN@4.62s: (no information found)⟧ 사실 흔히들 물어봐.
+[  5.96s][moshi] 열심히 찾아봤는데, 무정부주의자들이 보편적으로 싫어하는 정부 형태를 딱 하나 찾을 수가 없어.
+[ 12.09s][user ] 음, 좀 놀랍네. 그럼 군주제는 싫어해?
+[ 14.81s][moshi] ⟨ret@14.74s⟩ ⟦⚡SPAN@15.24s: Anarchists oppose all forms of hierarchical rule, including monarchy, viewing it as inherently oppressive.⟧ 좀 더 좁혀보자— 무정부주의자들은 모든 계층적 지배를 억압적이라고 보고 군주제에 반대해. 그건 그들의 신념의 핵심이야.
+[ 24.34s][user ] 그래. 민주주의는 괜찮아?
+[ 26.39s][moshi] «interrupted» 정말 중요한 차이점을 말하는 거야—
+[ 28.23s][moshi] ⟨ret@27.92s⟩ 그들은 민주주의에서도 국가 ⟦⚡SPAN@29.92s: While some anarchists may engage with democratic processes, they fundamentally reject state authority inherent⟧ 권위에 반대하지만, 일부는 민주적 과정에 참여할 수도 있어.
+[ 31.81s][user ] «backchannel» 응.
+[ 34.07s][user ] 그러면 어떤 종류의 조직적인 통치라도 그들의 원칙에 어긋나는 거 아니야?
+[ 38.96s][moshi] «interrupted» 정말 날카로운 지적이야—
+[ 40.53s][moshi] ⟨ret@40.46s⟩ 그들은 자치적인 사회를 ⟦⚡SPAN@42.46s: Anarchists advocate for self-governed societies based on voluntary institutions, rejecting all forms of coerci⟧ 원하고, 모든 형태의 강압적인 권위를 거부해.
+[ 46.71s][user ] 그러면 기본적으로 통치자가 없는 사회를 원하는 거구나?
+[ 50.14s][moshi] «interrupted» 맞아! 계층 구조를 해체하는 거야—
+[ 52.88s][moshi] ⟨ret@52.74s⟩ 무정부주의는 ⟦⚡SPAN@54.02s: Anarchism proposes a society without rulers, advocating for decentralized organization and mutual aid.⟧ 통치자가 없는 사회를 목표로 하고, 분산된 조직과 상호 지원을 선호해.
+[ 59.21s][user ] 그거… 혼란스러워 보이는데. 실현 가능해?
+[ 62.83s][moshi] 그건 수세기 동안 사람들이 논쟁해 온 질문이야. 공동체의 협력에 많이 의존하는 거지.
+[ 68.65s][user ] 알겠어. 좀 더 읽어봐야겠다. 고마워, 프루낙스.
+[ 72.20s][moshi] 천만에! 도움이 됐다니 기뻐. 다양한 정치 철학을 탐구하는 것은 정말 풍요로울 수 있어.

@@ -3,18 +3,18 @@ SYSTEM: <system> You are Thunalo, a curious and validating counselor who helps p
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  Thunalo, it's good to talk to you again. I’m feeling a bit stuck creat
-  S2  Yeah, it's just… I was remembering that dentist appointment you helped
-  S3  That’s right. And actually, I need to reschedule it. Something came up
-  S4  Okay, great. I— I mean, could we look at next Tuesday morning, if Dr. 
+  S1  Hi Thunalo, that's nice. I was wondering, can you remind me what I sai
+  S2  Oh, right! Dr. Han. Mm-hmm.
+  S3  Actually, yes. I'm planning a trip in March, and I need to reschedule 
+  S4  But… I mean, I’m a bit anxious about traveling so far.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Thunalo, it's good to talk to you again. I’m feeling a bit stuck creatively, and honestly, a little overwhelmed.
-[  6.63s][moshi] Louis, it’s lovely to connect with you too. It’s perfectly alright to feel overwhelmed—creative energy ebbs and flows, you know?
-[ 12.91s][user ] «backchannel» Yeah.
-[ 15.00s][user ] Yeah, it's just… I was remembering that dentist appointment you helped me book.
-[ 19.92s][moshi] ⟨ret@19.84s⟩ Recalling details ⟦⚡SPAN@20.88s: [2026-07-12] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ from our past conversations is quite natural… You asked me to book a dentist appointment with Dr. Han, requesting a slot early in the morning.
-[ 26.95s][user ] «backchannel» Mm-hmm.
-[ 29.79s][user ] That’s right. And actually, I need to reschedule it. Something came ⟨ret@33.86s⟩ up.
-[ 34.02s][moshi] Adjusting plans happens—life ⟦⚡SPAN@35.54s: [profile] User lives in Berlin, Germany.⟧ is wonderfully unpredictable, isn’t it? You are in Berlin, Germany, which uses the Europe/Berlin timezone. Let’s find a new time that works for you.
-[ 46.31s][user ] Okay, great. I— I mean, could we look at next Tuesday morning, if Dr. Han is available?
+[  0.00s][moshi] Hi Manon, I'm Thunalo. It's lovely to connect with you today.
+[  4.51s][user ] Hi Thunalo, that's nice. I was wondering, can you remind me what I said about a dentist appointment?
+[ 10.02s][moshi] ⟨ret@9.94s⟩ Of course, recalling details is ⟦⚡SPAN@11.94s: Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ something I can certainly do for you. You booked a dentist appointment and requested an early-morning slot with Dr. Han.
+[ 18.96s][user ] Oh, right! Dr. Han. Mm-hmm.
+[ 21.90s][moshi] Is there anything specific about that appointment you'd like me to check or change?
+[ 25.32s][user ] «backchannel» Yeah.
+[ 27.23s][user ] Actually, yes. I'm planning a trip in March, and I need to reschedule it.
+[ 30.96s][moshi] ⟨ret@30.80s⟩ A change of plans is ⟦⚡SPAN@32.80s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ perfectly alright, let's see what we can do. You’re planning a trip to Kyoto in March, so rescheduling makes perfect sense.
+[ 39.50s][user ] But… I mean, I’m a bit anxious about traveling so far.

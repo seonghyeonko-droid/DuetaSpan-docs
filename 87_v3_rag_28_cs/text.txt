@@ -1,0 +1,10 @@
+v3_rag_28_cs src=nq style=v2
+SYSTEM: <system> 당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 어, 정부 기관에 대해 읽다가 궁금해졌어… 재향군인부(Department of Veterans Affairs)는 언제 ⟨ret@6.67s⟩ 시작됐어?
+[  7.07s][moshi] 네, 그런 ⟦⚡SPAN@8.68s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ 역사를 생각하시는 건 좋은 질문이에요… 재향군인부는 천구백삼십년 칠월 이십일일에 설립됐습니다.
+[ 14.95s][user ] 천구백삼십년? 진짜? 나는 훨씬 더 일찍 시작됐다고 생각했어, 남북 전쟁 이후쯤에, 아니… 잘 모르겠네.
+[ 23.76s][moshi] 그렇게 생각하시는 건 이해가 됩니다, 오랫동안 퇴역 군인들이 보살핌을 받아왔으니까요. 하지만 공식적인 부서는 나중에 생겼습니다.
+[ 34.51s][user ] 근데… 그 전에 뭔가 없었어? 연방 차원에서 퇴역 군인을 지원하는 게 뭔가 있었던 것 같은데. 갑자기 나타났을 리는 ⟨ret@43.05s⟩ 없잖아.
+[ 43.28s][moshi] 맞아요, 그런 ⟦⚡SPAN@45.05s: Prior to 1930, the Veterans Bureau, established in 1921, handled veterans’ affairs.⟧ 점을 생각하시는 건 당연합니다, 시스템이 하룻밤 사이에 생기는 건 아니니까요… 천구백삼십년 이전에, 천구백이십일년에 설립된 재향군인국(Veterans Bureau)에서 퇴역 군인 관련 업무를 처리했습니다.

@@ -1,58 +1,60 @@
 # v3_abs_21_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 That’s good to know. Um, so if eac | S3 Wow, that's… pretty old. I— I mean | S4 So they could theoretically serve 
+# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Wow, that’s… older than I expected | S3 That's… incredibly high. Is it tal | S4 Zero meters? That's surprising. So
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.62s  <ret> 발화 (turn1 첫 프레임)
-     2.69s  agent 발화 시작: <ret> That’s a good question, understanding other systems of
+     2.53s  <ret> 발화 (turn1 첫 프레임)
+     2.60s  agent 발화 시작: <ret> That’s a good question, understanding the structure of
      2.77s  user  발화 끝
-     3.91s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.02s]: (no information found)
-     5.79s  user  발화 시작: Mhm.
-     6.29s  user  발화 끝
-     9.28s  user  발화 시작: Oh. Well, what about the US Senate? How many senators are *t
-     9.42s  agent 발화 끝
-    14.30s  <ret> 발화 (turn4 첫 프레임)
-    14.41s  user  발화 끝
-    14.54s  agent 발화 시작: <ret> Ah, the US Senate—that’s much more familiar territory 
-    16.22s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.08s]: The United States Senate is composed of one hundred senators, two from
-    19.22s  user  발화 시작: Okay.
-    19.95s  user  발화 끝
-    22.24s  agent 발화 끝
-    22.35s  user  발화 시작: That’s good to know. Um, so if each state has two, does that
-    27.06s  agent 발화 시작: It does indeed mean there are fifty states currently represe
-    27.07s  user  발화 끝
-    30.30s  agent 발화 끝
-    31.23s  user  발화 시작: Okay. What’s the average age of a US senator?
-    34.36s  <ret> 발화 (turn9 첫 프레임)
-    34.60s  agent 발화 시작: <ret> That's an interesting detail to consider— The average 
-    34.78s  user  발화 끝
-    35.72s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.00s]: As of November 2023, the average age of a US Senator is sixty-three po
-    38.25s  user  발화 시작: Yeah.
-    38.56s  user  발화 끝
+     3.81s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.11s]: (no information found)
+     6.48s  user  발화 시작: Mhm.
+     7.16s  user  발화 끝
+    10.99s  agent 발화 끝
+    11.69s  user  발화 시작: Oh. Um, what about the US Senate? How many senators are *the
+    17.25s  <ret> 발화 (turn4 첫 프레임)
+    17.48s  agent 발화 시작: <ret> Ah, the US Senate—that’s much more familiar territory 
+    17.67s  user  발화 끝
+    18.29s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.35s]: The United States Senate is composed of one hundred senators, two from
+    23.00s  user  발화 시작: Okay.
+    23.92s  user  발화 끝
+    26.52s  agent 발화 끝
+    26.66s  user  발화 시작: Right. So two per state. That makes sense. What’s the averag
+    31.86s  <ret> 발화 (turn7 첫 프레임)
+    32.09s  agent 발화 시작: <ret> That’s a really interesting detail to consider— The av
+    32.30s  user  발화 끝
+    33.22s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.65s]: As of January 3, 2023, the average age of a U.S. Senator is 63.3 years
+    41.54s  user  발화 시작: Wow, that’s… older than I expected. I— I mean, I thought it’
     41.92s  agent 발화 끝
-    42.18s  user  발화 시작: Wow, that's… pretty old. I— I mean, is that typical for poli
-    47.00s  agent 발화 시작: It’s not uncommon for those in leadership positions to be ol
-    47.18s  user  발화 끝
-    52.09s  agent 발화 끝
-    52.65s  user  발화 시작: Do they have term limits?
-    54.03s  agent 발화 시작: That’s a valid point—
-    54.16s  user  발화 끝
-    55.27s  <ret> 발화 (turn15 첫 프레임)
-    55.35s  agent 발화 시작: <ret> There are currently no term limits for US Senators.
-    55.46s  agent 발화 끝
-    56.79s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.95s]: There are no term limits for members of the United States Senate.
-    57.22s  user  발화 시작: Okay.
-    57.95s  user  발화 끝
-    58.29s  user  발화 시작: So they could theoretically serve forever? That seems… unusu
-    58.30s  agent 발화 끝
-    62.94s  agent 발화 시작: It does allow for a great deal of institutional knowledge, t
-    62.97s  user  발화 끝
-    65.84s  user  발화 시작: Right.
-    66.33s  user  발화 끝
-    67.56s  agent 발화 끝
-    67.57s  user  발화 시작: [happy] Yeah, I guess so. Okay, last question—can you find m
-    72.12s  <ret> 발화 (turn21 첫 프레임)
-    72.44s  agent 발화 시작: <ret> Allrecipes has a top-rated lentil soup recipe, needing
-    72.57s  user  발화 끝
-    74.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Allrecipes.com lists a highly-rated lentil soup recipe w
-    78.27s  agent 발화 끝
+    46.68s  user  발화 끝
+    46.77s  agent 발화 시작: It is a bit older, isn’t it? Often people in positions of le
+    48.76s  user  발화 시작: Yeah, yeah.
+    49.58s  user  발화 끝
+    52.93s  agent 발화 끝
+    52.99s  user  발화 시작: Yeah, you’re probably right. Okay, so, what’s the highest po
+    57.55s  <ret> 발화 (turn12 첫 프레임)
+    57.62s  agent 발화 시작: <ret> Let's switch gears to geography— Mont Blanc is the hig
+    57.62s  user  발화 끝
+    58.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.03s]: Mont Blanc, at 4,807 meters (15,774 ft), is the highest mountain in Fr
+    68.43s  user  발화 시작: That's… incredibly high. Is it taller than Mount Everest?
+    68.55s  agent 발화 끝
+    72.77s  agent 발화 시작: No, it's not quite as tall as Mount Everest. Everest is sign
+    72.78s  user  발화 끝
+    82.37s  agent 발화 끝
+    83.61s  user  발화 시작: Oh! What about the lowest point? In France, I mean.
+    86.42s  <ret> 발화 (turn16 첫 프레임)
+    86.73s  agent 발화 시작: <ret> A good follow-up question, looking at the full range— 
+    86.76s  user  발화 끝
+    88.26s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.11s]: The lowest point in France is Saint-Martin-de-Ré, at 0 meters (0 ft) b
+    92.40s  user  발화 시작: Okay.
+    93.22s  user  발화 끝
+    94.89s  user  발화 시작: Zero meters? That's surprising. So it's at sea level?
+    95.03s  agent 발화 끝
+    99.17s  agent 발화 시작: Precisely. It’s actually slightly below sea level, but very 
+    99.24s  user  발화 끝
+   102.08s  user  발화 시작: Right.
+   102.70s  user  발화 끝
+   103.42s  user  발화 시작: Okay. So, um, if I wanted to improve my sleep, what would yo
+   103.84s  agent 발화 끝
+   107.97s  agent 발화 시작: Well, sleep is so crucial for overall well-being. Establishi
+   108.10s  user  발화 끝
+   116.23s  agent 발화 끝

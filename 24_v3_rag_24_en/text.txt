@@ -2,9 +2,12 @@ v3_rag_24_en src=nq style=v1
 SYSTEM: <system> You are Korana, a thoughtful and soft-spoken life coach who helps people with family and relationships. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering about the name du Plessis… it sounds quite… French, doesn't it?
-[  5.37s][moshi] It certainly has a sophisticated ring to it.
-[  8.10s][moshi] ⟨ret@7.70s⟩ Let’s explore the origins ⟦⚡SPAN@9.70s: Du Plessis is a French surname originating as a topographical name for someone who lived near a fortified plac⟧ of that surname, shall we? The name du Plessis comes from Old French, meaning “the fortress” or “the castle”.
-[ 14.13s][user ] «backchannel» Mhm.
-[ 16.47s][user ] Oh, interesting! But I’ve heard it’s common in South Africa too… how did it get ⟨ret@21.93s⟩ there?
-[ 22.17s][moshi] That’s a very astute ⟦⚡SPAN@23.93s: Huguenots fleeing religious persecution in France settled in South Africa in the late seventeenth century, bri⟧ observation, linking France and South Africa. Huguenots, French Protestants, settled in South Africa and brought the surname du Plessis with them in the late sixteen hundreds.
+[  0.00s][user ] I’ve been researching my family history, and I keep running across the surname “du Plessis”. Do you know anything about where that name comes from?
+[  7.62s][moshi] ⟨ret@7.54s⟩ That’s ⟦⚡SPAN@8.50s: Du Plessis is a French surname, originating from the region of Normandy.⟧ a lovely pursuit, tracing your roots… The name Du Plessis is French in origin, coming from the Normandy region of France.
+[ 14.09s][user ] «backchannel» Mhm.
+[ 16.30s][user ] Oh, Normandy! That's… surprising. I always thought it sounded more… Spanish, maybe?
+[ 21.80s][moshi] It’s understandable why you’d think so, the sound does travel well across languages.
+[ 27.11s][moshi] ⟨ret@26.87s⟩ Let’s ⟦⚡SPAN@27.83s: The name was brought to South Africa by Huguenots in the seventeenth century.⟧ explore its journey further… Huguenots brought the name Du Plessis to South Africa during the seventeenth century.
+[ 34.46s][user ] Huguenots… so it’s a Protestant name? That makes a lot of sense given some of the stories I’ve heard.
+[ 40.37s][moshi] Family stories often hold threads of truth, and that certainly fits here.
+[ 45.17s][moshi] ⟨ret@45.09s⟩ It’s interesting how ⟦⚡SPAN@46.53s: In Afrikaans, the name is often spelled Du Plessis, without the French accent.⟧ history shapes names… The name is commonly spelled Du Plessis in Afrikaans, lacking the French accent.

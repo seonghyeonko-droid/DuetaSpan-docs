@@ -1,102 +1,114 @@
 # v3_noinfo_23_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 That sounds better. Can you make a | S3 Fifteen minutes, okay. Is there an | S4 One last thing. What’s the weather
+# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Just tell her I’ll be a little lat | S3 Oh, that’s convenient! What time d | S4 Perfect! Thank you so much, Brae.
 
      0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.23s  <ret> 발화 (turn1 첫 프레임)
-     3.63s  agent 발화 시작: <ret> Let me quickly check the historical weather data for y
-     3.75s  user  발화 끝
-     5.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.39s]: (tool result) The weather in Tokyo on December twenty-fourth, 2023 was
-     8.81s  user  발화 시작: Oh.
-     9.21s  user  발화 끝
-    13.46s  agent 발화 끝
-    14.65s  user  발화 시작: Okay, good to know. Uh, can you find me a nice Italian resta
-    19.28s  <ret> 발화 (turn4 첫 프레임)
-    19.68s  agent 발화 시작: <ret> Absolutely, I can certainly search for Italian restaur
-    19.79s  user  발화 끝
-    21.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.90s]: (tool result) Carmine’s Italian Restaurant is located at 200 West 44th
-    29.46s  user  발화 시작: Is it expensive?
-    29.59s  agent 발화 끝
-    30.55s  agent 발화 시작: It depends on your definition of expensive, but Carmine’s is
-    30.65s  user  발화 끝
-    32.95s  user  발화 시작: Uh-huh.
-    33.40s  user  발화 끝
-    35.98s  <ret> 발화 (turn8 첫 프레임)
-    36.30s  agent 발화 시작: <ret> Let’s see what the price range looks like… Carmine's g
-    36.30s  agent 발화 끝
-    36.94s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.70s]: (tool result) Carmine’s Italian Restaurant’s price range is thirty to 
-    44.41s  agent 발화 끝
-    45.52s  user  발화 시작: Hmm, maybe not. I— I mean, are there any cheaper options?
-    49.26s  <ret> 발화 (turn10 첫 프레임)
-    49.57s  agent 발화 시작: <ret> Of course, I can refine the search to show more afford
-    49.69s  user  발화 끝
-    49.76s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.07s]: (tool result) Piccola Venezia is located at 254 West 47th Street, New 
-    53.59s  agent 발화 시작: Piccola Venezia, at 254 West 47th Street, offers Italian cui
-    53.64s  agent 발화 끝
-    60.68s  agent 발화 끝
-    61.39s  user  발화 시작: That sounds better. Can you make a reservation there for two
-    66.16s  <ret> 발화 (turn13 첫 프레임)
-    66.32s  agent 발화 시작: <ret> I’m happy to check availability and attempt to make th
-    66.39s  user  발화 끝
-    68.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.51s]: (tool result) Reservation confirmed at Piccola Venezia for two people 
-    76.56s  agent 발화 끝
-    76.61s  user  발화 시작: Great! [laugh] That’s perfect, thank you.
-    79.45s  agent 발화 시작: You're very welcome! It’s wonderful to have that sorted for 
-    79.57s  user  발화 끝
-    82.91s  agent 발화 끝
-    83.44s  user  발화 시작: Actually, could you remind me about it an hour before?
-    85.67s  <ret> 발화 (turn17 첫 프레임)
-    86.07s  agent 발화 시작: <ret> Absolutely, setting a reminder is a great idea to ensu
-    86.21s  user  발화 끝
-    87.19s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.89s]: (tool result) Reminder set for tomorrow at six p.m.: Dinner reservatio
-    93.85s  agent 발화 끝
-    93.94s  user  발화 시작: Perfect. Now, um, what’s the traffic like getting from Grand
-    99.83s  <ret> 발화 (turn19 첫 프레임)
-    99.99s  agent 발화 시작: <ret> Let me quickly check the current traffic conditions fo
-   100.19s  user  발화 끝
-   101.27s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.57s]: (tool result) Moderate traffic is reported on West 47th Street, with a
-   105.19s  user  발화 시작: Okay.
-   105.83s  user  발화 끝
-   108.28s  user  발화 시작: Fifteen minutes, okay. Is there anything interesting to see 
-   108.43s  agent 발화 끝
-   112.01s  agent 발화 시작: That area is brimming with theaters—it’s right in the heart 
-   112.21s  user  발화 끝
-   113.20s  user  발화 시작: Uh-huh.
-   113.74s  user  발화 끝
-   116.04s  agent 발화 끝
-   116.22s  user  발화 시작: Oh, cool. I didn’t know that.
-   118.06s  user  발화 끝
-   118.07s  agent 발화 시작: It's a very vibrant neighborhood, full of energy. I often su
-   120.60s  user  발화 시작: Yeah.
-   120.99s  user  발화 끝
-   123.58s  user  발화 시작: That’s a good idea. Hey, could you check if my flight to Den
-   123.68s  agent 발화 끝
-   128.38s  <ret> 발화 (turn28 첫 프레임)
-   128.62s  agent 발화 시작: <ret> Of course, I can check the status of your flight to De
-   128.72s  user  발화 끝
-   130.06s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.28s]: (tool result) United flight 123 to Denver is scheduled to depart on ti
-   134.60s  user  발화 시작: Mm-hmm.
-   135.10s  user  발화 끝
-   137.79s  agent 발화 끝
-   137.89s  user  발화 시작: Fantastic. That’s a relief.
-   139.50s  user  발화 끝
-   139.88s  agent 발화 시작: It’s always good to have that peace of mind before a trip.
-   142.84s  agent 발화 끝
-   143.33s  user  발화 시작: One last thing. What’s the weather forecast for Denver next 
-   147.46s  <ret> 발화 (turn33 첫 프레임)
-   147.62s  agent 발화 시작: <ret> Let’s check the forecast for Denver next Friday to hel
-   147.82s  user  발화 끝
-   148.98s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.22s]: (tool result) The forecast for Denver next Friday is sunny with a high
-   151.26s  user  발화 시작: Yeah.
-   151.56s  user  발화 끝
-   156.06s  agent 발화 끝
-   156.95s  user  발화 시작: Okay, great. Forty-five and sunny. Sounds perfect.
-   160.01s  agent 발화 시작: Wonderful! It sounds like a lovely trip is in store for you.
-   160.05s  user  발화 끝
-   162.47s  user  발화 시작: Yeah.
-   162.83s  user  발화 끝
-   163.81s  agent 발화 끝
-   163.82s  user  발화 시작: Yeah, I think so. Thanks for all your help, Brae.
-   166.68s  agent 발화 시작: You are most welcome! It’s been a pleasure assisting you, an
-   166.73s  user  발화 끝
-   173.68s  agent 발화 끝
+     3.85s  <ret> 발화 (turn1 첫 프레임)
+     4.25s  agent 발화 시작: <ret> Let me quickly check the historical weather data for y
+     4.34s  user  발화 끝
+     5.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.24s]: (tool result) The weather in Tokyo on December twenty-fourth, 2023, wa
+    15.71s  agent 발화 끝
+    16.64s  user  발화 시작: Hmm, that sounds chilly. Can you find me a cozy cafe nearby 
+    21.58s  <ret> 발화 (turn3 첫 프레임)
+    21.98s  agent 발화 시작: <ret> Absolutely, finding a warm and inviting spot is a grea
+    22.15s  user  발화 끝
+    23.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.11s]: (tool result) There is a cafe called “Bean There, Drank That” located 
+    27.55s  user  발화 시작: Yeah.
+    28.23s  user  발화 끝
+    33.52s  user  발화 시작: Eight PM is good. I— I mean, can you reserve a table for two
+    33.58s  agent 발화 끝
+    38.74s  <ret> 발화 (turn6 첫 프레임)
+    39.14s  agent 발화 시작: <ret> Reserving a table sounds lovely, let's get that sorted
+    39.21s  user  발화 끝
+    39.78s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.73s]: (tool result) A table for two at “Bean There, Drank That” is confirmed
+    45.23s  user  발화 시작: Yeah, yeah.
+    46.66s  user  발화 끝
+    47.95s  agent 발화 끝
+    48.28s  user  발화 시작: Perfect! Uh, do they have free Wi-Fi?
+    50.84s  <ret> 발화 (turn9 첫 프레임)
+    51.16s  agent 발화 시작: <ret> Most cafes do these days, but let me quickly double-ch
+    51.24s  user  발화 끝
+    52.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.62s]: (tool result) “Bean There, Drank That” offers free Wi-Fi, has outdoor 
+    55.69s  agent 발화 시작: Yes, “Bean There, Drank That” does offer free Wi-Fi, plus ou
+    55.79s  agent 발화 끝
+    62.86s  user  발화 시작: Excellent. Right, I need to send a quick message to my frien
+    63.10s  agent 발화 끝
+    67.20s  user  발화 끝
+    67.32s  agent 발화 시작: Of course! What message would you like to send to Sarah?
+    71.11s  agent 발화 끝
+    71.53s  user  발화 시작: Just tell her I’ll be a little late, traffic’s bad.
+    74.23s  <ret> 발화 (turn14 첫 프레임)
+    74.27s  agent 발화 시작: <ret> Okay, sending a message to Sarah now…
+    74.44s  user  발화 끝
+    76.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.96s]: (tool result) Message sent to Sarah successfully.
+    77.12s  agent 발화 시작: Your message has been sent to Sarah. Is there anything else 
+    77.22s  agent 발화 끝
+    81.46s  agent 발화 끝
+    82.64s  user  발화 시작: No, that’s all for now, thanks.
+    84.67s  user  발화 끝
+    84.67s  agent 발화 시작: You’re very welcome. Sometimes a little planning helps ease 
+    89.81s  agent 발화 끝
+    89.86s  user  발화 시작: You're right. Actually, what’s the fastest route to “Bean Th
+    95.37s  <ret> 발화 (turn19 첫 프레임)
+    95.53s  agent 발화 시작: <ret> Let’s map out the quickest walking route for you. The 
+    95.56s  user  발화 끝
+    96.81s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.28s]: (tool result) The fastest walking route to “Bean There, Drank That” is
+   103.90s  user  발화 시작: Ten minutes is manageable. Is there a florist near there?
+   103.92s  agent 발화 끝
+   107.90s  <ret> 발화 (turn21 첫 프레임)
+   108.06s  agent 발화 시작: <ret> I can certainly look for a florist nearby… “Petal Push
+   108.30s  user  발화 끝
+   109.18s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.11s]: (tool result) “Petal Pushers” florist is located point three kilometer
+   113.53s  user  발화 시작: Yeah, totally.
+   115.27s  user  발화 끝
+   115.85s  agent 발화 끝
+   116.09s  user  발화 시작: Oh, that’s convenient! What time does “Petal Pushers” close 
+   120.34s  <ret> 발화 (turn24 첫 프레임)
+   120.56s  agent 발화 시작: <ret> Checking their hours of operation now… “Petal Pushers”
+   120.67s  user  발화 끝
+   121.62s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.72s]: (tool result) “Petal Pushers” is open until six PM today.
+   126.89s  user  발화 시작: Hmm, I might pop in there after the cafe. Do they deliver?
+   126.92s  agent 발화 끝
+   130.94s  <ret> 발화 (turn26 첫 프레임)
+   131.10s  agent 발화 시작: <ret> Let's see if they offer delivery services. Yes, they d
+   131.25s  user  발화 끝
+   132.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.05s]: (tool result) “Petal Pushers” offers delivery within a five-kilometer 
+   133.51s  user  발화 시작: Uh-huh.
+   134.00s  user  발화 끝
+   138.94s  agent 발화 끝
+   139.03s  user  발화 시작: Good to know. What's the weather forecast for tomorrow?
+   142.47s  <ret> 발화 (turn29 첫 프레임)
+   142.62s  agent 발화 시작: <ret> I can give you a look ahead at tomorrow’s forecast. To
+   142.68s  user  발화 끝
+   143.75s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.46s]: (tool result) Tomorrow’s forecast is sunny with a high of fifteen degr
+   146.51s  user  발화 시작: Yeah.
+   147.14s  user  발화 끝
+   150.92s  agent 발화 끝
+   151.14s  user  발화 시작: That sounds lovely. Can you set a reminder to buy a birthday
+   155.99s  <ret> 발화 (turn32 첫 프레임)
+   156.15s  agent 발화 시작: <ret> I can absolutely help you remember that important occa
+   156.32s  user  발화 끝
+   157.75s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.23s]: (tool result) Reminder set for March fifteenth, 2024, at ten AM: “Buy 
+   161.41s  user  발화 시작: Mm-hmm.
+   161.91s  user  발화 끝
+   165.32s  user  발화 시작: Perfect! Thank you so much, Brae.
+   165.47s  agent 발화 끝
+   167.64s  agent 발화 시작: You’re very welcome. Taking small steps to organize your day
+   167.77s  user  발화 끝
+   173.62s  agent 발화 끝
+   174.16s  user  발화 시작: [happy] That’s a good point. I think I'm ready to head to th
+   177.67s  user  발화 끝
+   178.12s  agent 발화 시작: Wonderful! Enjoy your time at “Bean There, Drank That.” Reme
+   183.96s  agent 발화 끝
+   184.46s  user  발화 시작: I will. One last thing – what time is it right now?
+   187.32s  <ret> 발화 (turn39 첫 프레임)
+   187.72s  agent 발화 시작: <ret> Let me quickly check the current time for you. It is c
+   187.88s  user  발화 끝
+   188.52s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.06s]: (tool result) The current time is four forty-two PM.
+   189.90s  user  발화 시작: Yeah.
+   190.40s  user  발화 끝
+   192.81s  agent 발화 끝
+   193.27s  user  발화 시작: Excellent. Thanks again!
+   194.90s  agent 발화 시작: My pleasure. Prioritizing your well-being is key, and I’m he
+   194.98s  user  발화 끝
+   201.38s  agent 발화 끝

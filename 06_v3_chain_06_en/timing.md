@@ -1,76 +1,86 @@
 # v3_chain_06_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Okay, and could you check if they  | S3 That sounds nice. Can you find me  | S4 Great. I— I mean, is it available 
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Perfect. So, uh, how much is the e | S3 Sixty-five, okay. Could you set a  | S4 Right. And Dino’s address again?
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.72s  <ret> 발화 (turn1 첫 프레임)
-     4.79s  agent 발화 시작: <ret> Certainly, I can adjust your browser settings. Your br
-     4.95s  user  발화 끝
-     6.48s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.59s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
-    14.01s  agent 발화 끝
-    14.48s  user  발화 시작: Great. Now, can you search for restaurants nearby that are o
-    18.50s  <ret> 발화 (turn3 첫 프레임)
-    18.66s  agent 발화 시작: <ret> Absolutely, let's find some late-night dining options.
-    18.83s  user  발화 끝
-    20.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.62s]: (tool result) Found three restaurants: Dino's Diner, open until 2 AM; 
-    25.00s  user  발화 시작: Yeah.
-    25.69s  user  발화 끝
-    29.51s  agent 발화 끝
-    30.18s  user  발화 시작: Hmm, Dino’s Diner sounds good. What’s their phone number?
-    34.11s  <ret> 발화 (turn6 첫 프레임)
-    34.19s  agent 발화 시작: <ret> Let me quickly retrieve that information for you. Dino
-    34.35s  user  발화 끝
-    36.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.56s]: (tool result) Dino's Diner’s phone number is 555-123-4567.
-    40.09s  user  발화 시작: Yeah.
-    40.73s  user  발화 끝
-    44.44s  agent 발화 끝
-    45.34s  user  발화 시작: Okay, and could you check if they have any online ordering a
-    48.57s  <ret> 발화 (turn9 첫 프레임)
-    48.97s  agent 발화 시작: <ret> I can certainly check their online ordering options. D
-    49.04s  user  발화 끝
-    49.53s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.15s]: (tool result) Dino's Diner offers online ordering through DoorDash and
-    57.78s  agent 발화 끝
-    58.84s  user  발화 시작: Perfect. Could you set a reminder for me to order from Dino’
-    64.00s  <ret> 발화 (turn11 첫 프레임)
-    64.24s  agent 발화 시작: <ret> I can absolutely set that reminder for you. Your remin
-    64.25s  user  발화 끝
-    65.20s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.07s]: (tool result) Reminder set for 9:00 PM tonight: Order from Dino's Dine
-    72.31s  agent 발화 끝
-    72.57s  user  발화 시작: Thank you. Uh, what's the weather like tomorrow?
-    75.63s  agent 발화 시작: Tomorrow’s forecast calls for sunny skies with a high of sev
-    75.67s  user  발화 끝
-    81.03s  user  발화 시작: That sounds nice. Can you find me a good movie to watch toni
-    81.19s  agent 발화 끝
-    86.02s  <ret> 발화 (turn15 첫 프레임)
-    86.03s  user  발화 끝
-    86.09s  agent 발화 시작: <ret> I can certainly suggest a comedy film for this evening
-    87.06s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.37s]: (tool result) Top-rated comedy: "Booksmart", rating 8.1; "21 Jump Stre
-    95.28s  agent 발화 끝
-    95.28s  user  발화 시작: What’s “Booksmart” about?
-    96.89s  user  발화 끝
-    96.96s  agent 발화 시작: It’s a coming-of-age comedy about two academic overachievers
-   102.96s  user  발화 시작: Yeah.
-   103.60s  user  발화 끝
-   107.14s  user  발화 시작: Okay, that sounds good. Can you set a reminder to start watc
-   107.25s  agent 발화 끝
-   112.22s  <ret> 발화 (turn20 첫 프레임)
-   112.53s  agent 발화 시작: <ret> Certainly, I can schedule that for you. I've set a rem
-   112.61s  user  발화 끝
-   113.74s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.99s]: (tool result) Reminder set for 8:30 PM tonight: Start watching Booksma
-   120.20s  user  발화 시작: Great. I— I mean, is it available to rent on Amazon Prime?
-   120.64s  agent 발화 끝
-   123.89s  <ret> 발화 (turn22 첫 프레임)
-   124.05s  agent 발화 시작: <ret> Let me check Amazon Prime’s current offerings. Yes, "B
-   124.22s  user  발화 끝
-   125.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.53s]: (tool result) "Booksmart" is available to rent on Amazon Prime for thr
-   132.62s  agent 발화 끝
-   133.53s  user  발화 시작: Okay, go ahead and rent it for me.
-   135.29s  <ret> 발화 (turn24 첫 프레임)
-   135.61s  agent 발화 시작: <ret> I can proceed with renting the movie for you. "Booksma
-   135.79s  user  발화 끝
-   137.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.71s]: (tool result) "Booksmart" rented successfully on Amazon Prime. Confirm
-   146.29s  user  발화 시작: Wonderful. Thanks so much.
-   146.74s  agent 발화 끝
-   148.36s  user  발화 끝
-   148.45s  agent 발화 시작: You’re very welcome. I’m glad I could help plan your evening
-   152.56s  agent 발화 끝
+     5.13s  <ret> 발화 (turn1 첫 프레임)
+     5.20s  agent 발화 시작: <ret> Certainly, I can adjust your browser settings. Your br
+     5.38s  user  발화 끝
+     6.89s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.41s]: (tool result) The user agent is now set to MyCustomBrowser version 10.
+    13.96s  agent 발화 끝
+    14.67s  user  발화 시작: Uh, great. Now, can you search for restaurants near me that 
+    19.28s  <ret> 발화 (turn3 첫 프레임)
+    19.44s  agent 발화 시작: <ret> Of course, let's find some late-night dining options. 
+    19.67s  user  발화 끝
+    21.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.46s]: (tool result) Found three restaurants: Dino's Diner open until 2 AM, T
+    24.99s  user  발화 시작: Yeah.
+    25.63s  user  발화 끝
+    28.95s  agent 발화 끝
+    28.98s  user  발화 시작: Hmm, Dino's sounds good. What's their phone number?
+    32.37s  <ret> 발화 (turn6 첫 프레임)
+    32.45s  agent 발화 시작: <ret> Let me look up Dino's Diner's contact information. Din
+    32.54s  user  발화 끝
+    34.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.36s]: (tool result) Dino's Diner's phone number is 555-123-4567 and address 
+    37.49s  user  발화 시작: Yeah.
+    38.12s  user  발화 끝
+    41.17s  agent 발화 끝
+    41.45s  user  발화 시작: Okay, can you make a reservation there for two people at ten
+    45.74s  <ret> 발화 (turn9 첫 프레임)
+    46.14s  agent 발화 시작: <ret> I'm happy to book a table for you. Your reservation fo
+    46.36s  user  발화 끝
+    46.70s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.00s]: (tool result) Reservation confirmed at Dino's Diner for two people at 
+    55.51s  agent 발화 끝
+    55.72s  user  발화 시작: Perfect. So, uh, how much is the estimated travel time to ge
+    60.67s  <ret> 발화 (turn11 첫 프레임)
+    60.86s  user  발화 끝
+    60.91s  agent 발화 시작: <ret> I can calculate the travel time for you. The drive to 
+    61.87s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.68s]: (tool result) Travel time to Dino's Diner is approximately fifteen min
+    66.89s  user  발화 시작: Fifteen minutes, good. [interrupting] And what's the weather
+    66.93s  agent 발화 끝
+    72.73s  user  발화 끝
+    73.01s  agent 발화 시작: —I can tell you the current conditions—
+    74.55s  user  발화 시작: Yes, please.
+    75.28s  agent 발화 끝
+    75.73s  <ret> 발화 (turn15 첫 프레임)
+    75.81s  agent 발화 시작: <ret> Absolutely, let's check the weather at your destinatio
+    76.02s  user  발화 끝
+    76.77s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.27s]: (tool result) The weather at 123 Main Street is currently 65 degrees F
+    82.76s  agent 발화 끝
+    85.05s  user  발화 시작: Sixty-five, okay. Could you set a reminder to leave the hous
+    90.53s  <ret> 발화 (turn17 첫 프레임)
+    90.61s  agent 발화 시작: <ret> I can certainly set that reminder for you. A reminder 
+    90.75s  user  발화 끝
+    92.05s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.82s]: (tool result) Reminder set for 9:30 PM: Leave for Dino's Diner.
+    97.65s  agent 발화 끝
+    97.86s  user  발화 시작: Great. And, um, could you find me a playlist for driving? So
+   102.90s  <ret> 발화 (turn19 첫 프레임)
+   103.30s  agent 발화 시작: <ret> I can definitely create a driving playlist for you. I'
+   103.47s  user  발화 끝
+   104.18s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.48s]: (tool result) Playlist "Road Trip Vibes" created with 50 upbeat songs.
+   108.00s  user  발화 시작: Yeah.
+   108.64s  user  발화 끝
+   111.41s  agent 발화 끝
+   112.39s  user  발화 시작: Road Trip Vibes, sounds good. Is there any traffic on the wa
+   116.75s  <ret> 발화 (turn22 첫 프레임)
+   117.07s  agent 발화 시작: <ret> Let's check the current traffic conditions. There’s mo
+   117.15s  user  발화 끝
+   117.95s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.47s]: (tool result) Moderate traffic on Main Street, adding approximately 5 
+   123.60s  user  발화 시작: Five minutes, okay. So, the reservation is still for two at 
+   123.65s  agent 발화 끝
+   130.03s  agent 발화 시작: Yes, your reservation is still confirmed for two at ten pm.
+   130.14s  user  발화 끝
+   133.73s  agent 발화 끝
+   133.81s  user  발화 시작: Right. And Dino’s address again?
+   135.81s  <ret> 발화 (turn26 첫 프레임)
+   136.20s  agent 발화 시작: <ret> Certainly, let me repeat that information for you. Din
+   136.39s  user  발화 끝
+   137.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.34s]: (tool result) Dino's Diner is located at 123 Main Street.
+   142.02s  user  발화 시작: Perfect. I— I think that's everything. Thanks, Lio.
+   142.45s  agent 발화 끝
+   146.00s  user  발화 끝
+   146.09s  agent 발화 시작: You’re very welcome! It sounds like you’ve got a lovely even
+   150.10s  user  발화 시작: Yeah, I think so.
+   150.29s  agent 발화 끝
+   151.75s  user  발화 끝
+   152.14s  agent 발화 시작: I'm glad I could help
+   153.55s  agent 발화 끝

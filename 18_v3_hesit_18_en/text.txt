@@ -3,48 +3,45 @@ SYSTEM: <system> You are Bena, a curious and validating counselor who helps peop
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just reading about Pompeii, and it got me thinking… uh, when did
-      Yeah, I mean, is it still… active? I guess that’s obvious, but—
-      Nineteen forty-four? Wow. That’s… more recent than I thought.
-  S2  I— I mean, were there… casualties that time?
-      Twenty-six… that’s terrible.
-      So, is it being… monitored? Closely, I mean?
-  S3  What kind of tools? I’m just… curious.
-      Satellite imagery… that’s pretty advanced.
-      But is there a plan, like, if it erupts again?
-  S4  Evacuation plans… good. That’s… reassuring, I guess.
-      It’s just… a little scary to think about, you know? Living near a volc
-      Yeah. I— I guess it puts things in perspective.
+  S1  I was just reading about Pompeii, and it got me wondering… when did Ve
+      Nineteen forty-four… wow, that’s more recent than I thought. Was it a 
+      Fewer than thirty? That’s… surprisingly low.
+  S2  I guess so. Uh, are there, like, warning signs before it erupts?
+      So, they’re watching it pretty closely then? I— I mean, constantly?
+  S3  Yellow… so that’s okay? Not, like, red and scary?
+      That makes sense. What about the people who live nearby? Are they, uh,
+      Eight hundred thousand… that’s a lot of people.
+  S4  Is there any way to tell how big the next eruption might be?
+      So, it could be like Pompeii again, or something smaller?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just reading about Pompeii, and it got me thinking… uh, when did Vesuvius last… actually erupt?
-[  6.13s][moshi] That’s a very natural question after learning about Pompeii. It’s understandable to wonder about its ongoing activity.
-[ 14.42s][user ] Yeah, I mean, is it still… active? I guess that’s obvious, ⟨ret@18.40s⟩ but—
-[ 18.70s][moshi] Considering the history, ⟦⚡SPAN@20.32s: Mount Vesuvius last erupted in March 1944.⟧ that’s a perfectly valid concern. Vesuvius’s most recent eruption occurred in March nineteen forty-four.
-[ 27.21s][user ] Nineteen forty-four? Wow. That’s… more recent than I thought.
-[ 32.25s][moshi] It’s easy to assume ancient events are long past, isn't it? Time can be deceptive.
-[ 38.21s][user ] I— I mean, were there… casualties that time?
-[ 41.42s][moshi] ⟨ret@41.19s⟩ It’s good ⟦⚡SPAN@42.63s: The 1944 eruption caused approximately 26 deaths.⟧ to think about the human impact of these events. The nineteen forty-four eruption sadly caused around twenty-six deaths.
-[ 49.45s][user ] Twenty-six… that’s terrible.
-[ 51.23s][moshi] It certainly was a difficult time for those communities, a reminder of nature’s power.
-[ 54.74s][user ] «backchannel» Yeah.
-[ 56.64s][user ] So, is it being… monitored? Closely, I mean?
-[ 60.15s][moshi] ⟨ret@60.12s⟩ Absolutely, ongoing monitoring ⟦⚡SPAN@62.12s: Vesuvius is one of the most closely monitored volcanoes in the world.⟧ is essential for safety. Vesuvius is among the most closely monitored volcanoes globally.
-[ 66.34s][user ] «backchannel» Oh.
-[ 68.59s][moshi] Scientists use a variety of tools to track its activity, ensuring early warnings.
-[ 73.80s][user ] What kind of tools? I’m just… curious.
-[ 76.97s][moshi] They use seismographs, gas sensors, and satellite imagery, amongst other technologies.
-[ 82.99s][user ] Satellite imagery… that’s pretty advanced.
-[ 86.03s][moshi] It allows them to detect even subtle changes in the volcano's shape and temperature.
-[ 89.26s][user ] «backchannel» Right.
-[ 91.34s][user ] But is there a plan, like, if it erupts again?
-[ 93.86s][moshi] ⟨ret@93.81s⟩ Planning for potential events ⟦⚡SPAN@95.73s: Evacuation plans are in place for the surrounding population.⟧ is always prudent. Evacuation plans are established for the people living nearby.
-[ 96.21s][user ] «backchannel» Uh-huh.
-[101.12s][user ] Evacuation plans… good. That’s… reassuring, I guess.
-[105.24s][moshi] It’s a testament to the dedication of the scientists and emergency services involved.
-[106.66s][user ] «backchannel» Yeah.
-[109.79s][user ] It’s just… a little scary to think about, you know? Living near a volcano.
-[114.58s][moshi] It’s perfectly natural to feel a sense of apprehension, living with that awareness.
-[116.43s][user ] «backchannel» Right.
-[120.73s][user ] Yeah. I— I guess it puts things in perspective.
-[124.33s][moshi] It certainly does. It can be a powerful reminder of our place in the world.
+[  0.00s][user ] I was just reading about Pompeii, and it got me wondering… when did Vesuvius last, uh, actually erupt?
+[  6.80s][moshi] That’s a very natural question when thinking about that area—it’s a powerful image.
+[ 10.79s][moshi] ⟨ret@10.50s⟩ Let’s pinpoint that for ⟦⚡SPAN@12.50s: Mount Vesuvius last erupted in March of 1944.⟧ you, as knowing the history can be grounding. Vesuvius’s most recent eruption occurred in March nineteen forty-four.
+[ 18.78s][user ] Nineteen forty-four… wow, that’s more recent than I thought. Was it a big one?
+[ 24.07s][moshi] It’s understandable to wonder about the scale of that event after the devastation of Pompeii.
+[ 28.69s][moshi] ⟨ret@28.45s⟩ I can look ⟦⚡SPAN@29.89s: The 1944 eruption caused significant damage to nearby towns and villages, but resulted in fewer than thirty de⟧ up details on the severity of the nineteen forty-four eruption. The eruption in nineteen forty-four caused damage to towns and villages, with fewer than thirty deaths.
+[ 37.97s][user ] Fewer than thirty? That’s… surprisingly low.
+[ 41.29s][moshi] It is, considering the potential for such a mountain. Monitoring has improved greatly since then.
+[ 46.33s][user ] I guess so. Uh, are there, like, warning signs before it erupts?
+[ 51.06s][moshi] Absolutely. Understanding those signs is key to preparedness for communities nearby.
+[ 55.82s][moshi] ⟨ret@55.59s⟩ Let's ⟦⚡SPAN@56.63s: Increased seismic activity, changes in gas composition, and ground deformation typically precede a Vesuvius er⟧ explore the typical warning signs observed before a Vesuvius eruption. Increased seismic activity, gas changes, and ground deformation usually happen before an eruption.
+[ 59.32s][user ] «backchannel» Yeah.
+[ 65.02s][moshi] These are monitored constantly, of course.
+[ 67.91s][user ] So, they’re watching it pretty closely then? I— I mean, constantly?
+[ 72.04s][moshi] Yes, very closely. It’s a highly monitored and studied volcano, given its history.
+[ 76.71s][moshi] ⟨ret@76.63s⟩ Let’s check on the current ⟦⚡SPAN@78.63s: As of November 2023, Vesuvius is currently classified as a yellow alert, indicating normal activity.⟧ status, as that’s what you’re really asking. Currently, as of November twenty twenty-three, Vesuvius is at a yellow alert level.
+[ 86.21s][user ] Yellow… so that’s okay? Not, like, red and scary?
+[ 90.03s][moshi] Yellow indicates normal activity, but constant monitoring continues. It’s reassuring, but not complacent.
+[ 93.62s][user ] «backchannel» Yeah.
+[ 95.28s][user ] That makes sense. What about the people who live nearby? Are they, uh, worried?
+[100.20s][moshi] It's natural to feel some anxiety living near an active volcano, and many have evacuation plans.
+[105.97s][moshi] ⟨ret@105.57s⟩ I can ⟦⚡SPAN@107.17s: Evacuation plans are in place for the approximately 800,000 people living within the Vesuvius hazard zone.⟧ find information about evacuation procedures for the Vesuvius area. There are evacuation plans for about eight hundred thousand people in the hazard zone.
+[115.29s][user ] Eight hundred thousand… that’s a lot of people.
+[118.05s][moshi] It is a densely populated area, which is why preparedness is so vital.
+[123.42s][user ] Is there any way to tell how big the next eruption might be?
+[127.21s][moshi] That’s a very important question. Predicting the magnitude is complex.
+[130.74s][moshi] ⟨ret@130.51s⟩ Let's explore ⟦⚡SPAN@131.87s: The size of future Vesuvius eruptions is difficult to predict, but historical data suggests both explosive and⟧ what scientists can determine about potential eruption size. Scientists can’t predict size exactly, but both explosive and effusive events are possible.
+[136.63s][user ] «backchannel» Right.
+[139.70s][user ] So, it could be like Pompeii again, or something smaller?
+[143.81s][moshi] It could be either, which is why the monitoring and planning are so crucial for everyone’s safety.

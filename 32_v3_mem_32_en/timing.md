@@ -1,26 +1,26 @@
 # v3_mem_32_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Thunalo, it's good to talk to you  | S2 Yeah, it's just… I was remembering | S3 That’s right. And actually, I need | S4 Okay, great. I— I mean, could we l
+# EXAMINER(FDB-v2) 단계: S1 Hi Thunalo, that's nice. I was won | S2 Oh, right! Dr. Han. Mm-hmm. | S3 Actually, yes. I'm planning a trip | S4 But… I mean, I’m a bit anxious abo
 
-     0.00s  user  발화 시작: Thunalo, it's good to talk to you again. I’m feeling a bit s
-     6.34s  user  발화 끝
-     6.63s  agent 발화 시작: Louis, it’s lovely to connect with you too. It’s perfectly a
-    12.91s  user  발화 시작: Yeah.
-    13.68s  user  발화 끝
-    14.84s  agent 발화 끝
-    15.00s  user  발화 시작: Yeah, it's just… I was remembering that dentist appointment 
-    19.84s  <ret> 발화 (turn4 첫 프레임)
-    19.92s  agent 발화 시작: <ret> Recalling details from our past conversations is quite
-    20.00s  user  발화 끝
-    20.88s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.31s]: [2026-07-12] Past chat — Booked a dentist appointment: asked for an ea
-    26.95s  user  발화 시작: Mm-hmm.
-    27.45s  user  발화 끝
-    29.79s  user  발화 시작: That’s right. And actually, I need to reschedule it. Somethi
-    29.84s  agent 발화 끝
-    33.86s  <ret> 발화 (turn7 첫 프레임)
-    34.02s  agent 발화 시작: <ret> Adjusting plans happens—life is wonderfully unpredicta
-    34.13s  user  발화 끝
-    35.54s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.60s]: [profile] User lives in Berlin, Germany.
-    46.16s  agent 발화 끝
-    46.31s  user  발화 시작: Okay, great. I— I mean, could we look at next Tuesday mornin
-    52.09s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you today
+     3.79s  agent 발화 끝
+     4.51s  user  발화 시작: Hi Thunalo, that's nice. I was wondering, can you remind me 
+     9.94s  <ret> 발화 (turn2 첫 프레임)
+    10.02s  agent 발화 시작: <ret> Of course, recalling details is something I can certai
+    10.16s  user  발화 끝
+    11.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.09s]: Past chat — Booked a dentist appointment: asked for an early-morning s
+    18.55s  agent 발화 끝
+    18.96s  user  발화 시작: Oh, right! Dr. Han. Mm-hmm.
+    21.82s  user  발화 끝
+    21.90s  agent 발화 시작: Is there anything specific about that appointment you'd like
+    25.32s  user  발화 시작: Yeah.
+    25.77s  user  발화 끝
+    26.53s  agent 발화 끝
+    27.23s  user  발화 시작: Actually, yes. I'm planning a trip in March, and I need to r
+    30.80s  <ret> 발화 (turn7 첫 프레임)
+    30.96s  agent 발화 시작: <ret> A change of plans is perfectly alright, let's see what
+    31.02s  user  발화 끝
+    32.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.29s]: [2026-07-25] User is planning a trip to Kyoto in March.
+    39.50s  user  발화 시작: But… I mean, I’m a bit anxious about traveling so far.
+    39.54s  agent 발화 끝
+    43.41s  user  발화 끝

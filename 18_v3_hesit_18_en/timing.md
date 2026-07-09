@@ -1,74 +1,76 @@
 # v3_hesit_18_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about Pompeii,  | S2 I— I mean, were there… casualties  | S3 What kind of tools? I’m just… curi | S4 Evacuation plans… good. That’s… re
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about Pompeii,  | S2 I guess so. Uh, are there, like, w | S3 Yellow… so that’s okay? Not, like, | S4 Is there any way to tell how big t
 
-     0.00s  user  발화 시작: I was just reading about Pompeii, and it got me thinking… uh
-     6.13s  agent 발화 시작: That’s a very natural question after learning about Pompeii.
-     6.35s  user  발화 끝
-    12.99s  agent 발화 끝
-    14.42s  user  발화 시작: Yeah, I mean, is it still… active? I guess that’s obvious, b
-    18.40s  <ret> 발화 (turn3 첫 프레임)
-    18.70s  agent 발화 시작: <ret> Considering the history, that’s a perfectly valid conc
-    18.77s  user  발화 끝
-    20.32s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.62s]: Mount Vesuvius last erupted in March 1944.
-    26.40s  agent 발화 끝
-    27.21s  user  발화 시작: Nineteen forty-four? Wow. That’s… more recent than I thought
-    32.21s  user  발화 끝
-    32.25s  agent 발화 시작: It’s easy to assume ancient events are long past, isn't it? 
-    37.52s  agent 발화 끝
-    38.21s  user  발화 시작: I— I mean, were there… casualties that time?
-    41.19s  <ret> 발화 (turn7 첫 프레임)
-    41.42s  agent 발화 시작: <ret> It’s good to think about the human impact of these eve
-    41.45s  user  발화 끝
-    42.63s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.08s]: The 1944 eruption caused approximately 26 deaths.
-    48.84s  agent 발화 끝
-    49.45s  user  발화 시작: Twenty-six… that’s terrible.
-    51.23s  agent 발화 시작: It certainly was a difficult time for those communities, a r
-    51.48s  user  발화 끝
-    54.74s  user  발화 시작: Yeah.
-    55.09s  user  발화 끝
-    56.51s  agent 발화 끝
-    56.64s  user  발화 시작: So, is it being… monitored? Closely, I mean?
-    59.97s  user  발화 끝
-    60.12s  <ret> 발화 (turn12 첫 프레임)
-    60.15s  agent 발화 시작: <ret> Absolutely, ongoing monitoring is essential for safety
-    62.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.71s]: Vesuvius is one of the most closely monitored volcanoes in the world.
-    66.34s  user  발화 시작: Oh.
-    66.69s  user  발화 끝
-    68.59s  agent 발화 시작: Scientists use a variety of tools to track its activity, ens
-    68.64s  agent 발화 끝
-    73.80s  user  발화 시작: What kind of tools? I’m just… curious.
-    73.81s  agent 발화 끝
-    76.97s  agent 발화 시작: They use seismographs, gas sensors, and satellite imagery, a
-    77.03s  user  발화 끝
-    82.85s  agent 발화 끝
-    82.99s  user  발화 시작: Satellite imagery… that’s pretty advanced.
-    86.03s  agent 발화 시작: It allows them to detect even subtle changes in the volcano'
-    86.13s  user  발화 끝
-    89.26s  user  발화 시작: Right.
-    89.76s  user  발화 끝
-    90.94s  agent 발화 끝
-    91.34s  user  발화 시작: But is there a plan, like, if it erupts again?
-    93.81s  <ret> 발화 (turn21 첫 프레임)
-    93.86s  agent 발화 시작: <ret> Planning for potential events is always prudent. Evacu
-    93.92s  user  발화 끝
-    95.73s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.02s]: Evacuation plans are in place for the surrounding population.
-    96.21s  user  발화 시작: Uh-huh.
-    96.71s  user  발화 끝
-   100.77s  agent 발화 끝
-   101.12s  user  발화 시작: Evacuation plans… good. That’s… reassuring, I guess.
-   105.15s  user  발화 끝
-   105.24s  agent 발화 시작: It’s a testament to the dedication of the scientists and eme
-   106.66s  user  발화 시작: Yeah.
-   107.06s  user  발화 끝
-   109.79s  user  발화 시작: It’s just… a little scary to think about, you know? Living n
-   109.83s  agent 발화 끝
-   114.42s  user  발화 끝
-   114.58s  agent 발화 시작: It’s perfectly natural to feel a sense of apprehension, livi
-   116.43s  user  발화 시작: Right.
-   116.92s  user  발화 끝
-   119.11s  agent 발화 끝
-   120.73s  user  발화 시작: Yeah. I— I guess it puts things in perspective.
-   124.33s  agent 발화 시작: It certainly does. It can be a powerful reminder of our plac
-   124.52s  user  발화 끝
-   129.20s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about Pompeii, and it got me wondering… w
+     6.80s  agent 발화 시작: That’s a very natural question when thinking about that area
+     6.95s  user  발화 끝
+    10.50s  <ret> 발화 (turn2 첫 프레임)
+    10.79s  agent 발화 시작: <ret> Let’s pinpoint that for you, as knowing the history ca
+    10.88s  agent 발화 끝
+    12.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: Mount Vesuvius last erupted in March of 1944.
+    18.78s  user  발화 시작: Nineteen forty-four… wow, that’s more recent than I thought.
+    18.81s  agent 발화 끝
+    24.07s  agent 발화 시작: It’s understandable to wonder about the scale of that event 
+    24.29s  user  발화 끝
+    28.45s  <ret> 발화 (turn5 첫 프레임)
+    28.69s  agent 발화 시작: <ret> I can look up details on the severity of the nineteen 
+    28.70s  agent 발화 끝
+    29.89s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.11s]: The 1944 eruption caused significant damage to nearby towns and villag
+    37.86s  agent 발화 끝
+    37.97s  user  발화 시작: Fewer than thirty? That’s… surprisingly low.
+    41.29s  agent 발화 시작: It is, considering the potential for such a mountain. Monito
+    41.48s  user  발화 끝
+    46.33s  user  발화 시작: I guess so. Uh, are there, like, warning signs before it eru
+    46.42s  agent 발화 끝
+    51.05s  user  발화 끝
+    51.06s  agent 발화 시작: Absolutely. Understanding those signs is key to preparedness
+    55.59s  <ret> 발화 (turn10 첫 프레임)
+    55.82s  agent 발화 시작: <ret> Let's explore the typical warning signs observed befor
+    55.92s  agent 발화 끝
+    56.63s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.27s]: Increased seismic activity, changes in gas composition, and ground def
+    59.32s  user  발화 시작: Yeah.
+    60.00s  user  발화 끝
+    65.02s  agent 발화 시작: These are monitored constantly, of course.
+    65.14s  agent 발화 끝
+    67.27s  agent 발화 끝
+    67.91s  user  발화 시작: So, they’re watching it pretty closely then? I— I mean, cons
+    72.04s  agent 발화 시작: Yes, very closely. It’s a highly monitored and studied volca
+    72.21s  user  발화 끝
+    76.63s  <ret> 발화 (turn15 첫 프레임)
+    76.71s  agent 발화 시작: <ret> Let’s check on the current status, as that’s what you’
+    76.85s  agent 발화 끝
+    78.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.87s]: As of November 2023, Vesuvius is currently classified as a yellow aler
+    84.78s  agent 발화 끝
+    86.21s  user  발화 시작: Yellow… so that’s okay? Not, like, red and scary?
+    90.03s  agent 발화 시작: Yellow indicates normal activity, but constant monitoring co
+    90.15s  user  발화 끝
+    93.62s  user  발화 시작: Yeah.
+    94.35s  user  발화 끝
+    95.28s  user  발화 시작: That makes sense. What about the people who live nearby? Are
+    95.39s  agent 발화 끝
+   100.20s  agent 발화 시작: It's natural to feel some anxiety living near an active volc
+   100.28s  user  발화 끝
+   105.57s  <ret> 발화 (turn21 첫 프레임)
+   105.97s  agent 발화 시작: <ret> I can find information about evacuation procedures for
+   106.00s  agent 발화 끝
+   107.17s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.96s]: Evacuation plans are in place for the approximately 800,000 people liv
+   114.97s  agent 발화 끝
+   115.29s  user  발화 시작: Eight hundred thousand… that’s a lot of people.
+   118.05s  agent 발화 시작: It is a densely populated area, which is why preparedness is
+   118.19s  user  발화 끝
+   122.12s  agent 발화 끝
+   123.42s  user  발화 시작: Is there any way to tell how big the next eruption might be?
+   127.21s  agent 발화 시작: That’s a very important question. Predicting the magnitude i
+   127.45s  user  발화 끝
+   130.51s  <ret> 발화 (turn26 첫 프레임)
+   130.74s  agent 발화 시작: <ret> Let's explore what scientists can determine about pote
+   130.87s  agent 발화 끝
+   131.87s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.89s]: The size of future Vesuvius eruptions is difficult to predict, but his
+   136.63s  user  발화 시작: Right.
+   137.26s  user  발화 끝
+   139.69s  agent 발화 끝
+   139.70s  user  발화 시작: So, it could be like Pompeii again, or something smaller?
+   143.53s  user  발화 끝
+   143.81s  agent 발화 시작: It could be either, which is why the monitoring and planning
+   148.71s  agent 발화 끝

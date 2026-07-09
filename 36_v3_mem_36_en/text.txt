@@ -2,9 +2,9 @@ v3_mem_36_en src=mem style=mem
 SYSTEM: <system> You are Lira, a calm and patient counselor who helps people with money and budgeting. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Sahiha, I’m Lira. It’s good to connect with you today.
-[  2.03s][user ] «backchannel» Uh-huh.
-[  4.36s][user ] Um, yeah, hi. I was wondering… do you remember anything about my apartment ⟨ret@8.31s⟩ search?
-[  8.55s][moshi] Let’s see if I can ⟦⚡SPAN@10.31s: Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.⟧ recall those details for you… You were looking for a pet-friendly two-bedroom downtown, within a certain budget.
-[ 17.01s][user ] Right! And Coco needs space, she’s a Poodle, you know?
-[ 20.31s][moshi] Yes, I do recall you mentioned Coco. Is she a lively companion?
+[  0.00s][moshi] Hi Sahiha, I'm Lira. It's good to speak with you today.
+[  1.58s][user ] «backchannel» Uh-huh.
+[  3.58s][user ] Oh, hi Lira. Um, I was wondering… do you remember anything about the car I was looking at a while ⟨ret@9.96s⟩ back?
+[ 10.18s][moshi] Let’s see if ⟦⚡SPAN@11.32s: Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ I can recall that for you. You were researching used hybrid cars with less than thirty thousand miles on them.
+[ 16.24s][user ] Right, exactly! And I was thinking, maybe I should check if Max could come with me on any road trips… do you recall his ⟨ret@24.22s⟩ name?
+[ 24.51s][moshi] Of course, ⟦⚡SPAN@25.34s: Past chat — User has a Golden Retriever named Max.⟧ I can easily check that information. You have a Golden Retriever named Max, so yes, I remember his name.

@@ -4,52 +4,58 @@ SYSTEM: <system> You are Lio, a grounded and empathetic personal guide who helps
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Could you set the user agent to MyCustomBrowser version ten point five
-      Great. Now, can you search for restaurants nearby that are open late?
-      Hmm, Dino’s Diner sounds good. What’s their phone number?
-  S2  Okay, and could you check if they have any online ordering available?
-      Perfect. Could you set a reminder for me to order from Dino’s Diner at
-      Thank you. Uh, what's the weather like tomorrow?
-  S3  That sounds nice. Can you find me a good movie to watch tonight? Somet
-      What’s “Booksmart” about?
-      Okay, that sounds good. Can you set a reminder to start watching it at
-  S4  Great. I— I mean, is it available to rent on Amazon Prime?
-      Okay, go ahead and rent it for me.
-      Wonderful. Thanks so much.
+      Uh, great. Now, can you search for restaurants near me that are open l
+      Hmm, Dino's sounds good. What's their phone number?
+      Okay, can you make a reservation there for two people at ten pm tonigh
+  S2  Perfect. So, uh, how much is the estimated travel time to get there?
+      Fifteen minutes, good. [interrupting] And what's the weather like ther
+      Yes, please.
+  S3  Sixty-five, okay. Could you set a reminder to leave the house at nine-
+      Great. And, um, could you find me a playlist for driving? Something up
+      Road Trip Vibes, sounds good. Is there any traffic on the way?
+      Five minutes, okay. So, the reservation is still for two at ten?
+  S4  Right. And Dino’s address again?
+      Perfect. I— I think that's everything. Thanks, Lio.
+      Yeah, I think so.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.79s][moshi] ⟨ret@4.72s⟩ Certainly, I ⟦⚡SPAN@6.48s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ can adjust your browser settings. Your browser is now identifying as MyCustomBrowser version ten point five.
+[  5.20s][moshi] ⟨ret@5.13s⟩ Certainly, I can ⟦⚡SPAN@6.89s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ adjust your browser settings. Your browser is now identifying as MyCustomBrowser, version ten point five.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 14.48s][user ] Great. Now, can you search for restaurants nearby that are open ⟨ret@18.50s⟩ late?
-[ 18.66s][moshi] Absolutely, let's find ⟦⚡SPAN@20.50s: (tool result) Found three restaurants: Dino's Diner, open until 2 AM; The Late Bite, open until 1 AM; and Corn⟧ some late-night dining options. I found three restaurants open late: Dino's Diner, The Late Bite, and Corner Cafe.
-      CALL: {"function": "search_restaurants", "arguments": {"query": "restaurants open late nearby"}}
-[ 25.00s][user ] «backchannel» Yeah.
-[ 30.18s][user ] Hmm, Dino’s Diner sounds good. What’s their phone number?
-[ 34.19s][moshi] ⟨ret@34.11s⟩ Let me quickly ⟦⚡SPAN@36.11s: (tool result) Dino's Diner’s phone number is 555-123-4567.⟧ retrieve that information for you. Dino’s Diner’s phone number is five five five, one two three, four five six seven.
+[ 14.67s][user ] Uh, great. Now, can you search for restaurants near me that are open ⟨ret@19.28s⟩ late?
+[ 19.44s][moshi] Of course, let's ⟦⚡SPAN@21.28s: (tool result) Found three restaurants: Dino's Diner open until 2 AM, The Greasy Spoon open until 3 AM, and Mid⟧ find some late-night dining options. I found three restaurants open late: Dino's Diner, The Greasy Spoon, and Midnight Bites.
+      CALL: {"function": "search_restaurants", "arguments": {"location": "current", "open_late": true}}
+[ 24.99s][user ] «backchannel» Yeah.
+[ 28.98s][user ] Hmm, Dino's sounds good. What's their phone number?
+[ 32.45s][moshi] ⟨ret@32.37s⟩ Let me look ⟦⚡SPAN@34.37s: (tool result) Dino's Diner's phone number is 555-123-4567 and address is 123 Main Street.⟧ up Dino's Diner's contact information. Dino's Diner’s phone number is five-five-five, one-two-three, four-five-six-seven.
       CALL: {"function": "restaurant_details", "arguments": {"restaurant_name": "Dino's Diner"}}
-[ 40.09s][user ] «backchannel» Yeah.
-[ 45.34s][user ] Okay, and could you check if they have any online ⟨ret@48.57s⟩ ordering available?
-[ 48.97s][moshi] ⟦⚡SPAN@49.53s: (tool result) Dino's Diner offers online ordering through DoorDash and Grubhub.⟧ I can certainly check their online ordering options. Dino’s Diner offers online ordering via DoorDash and Grubhub.
-      CALL: {"function": "check_online_ordering", "arguments": {"restaurant_name": "Dino's Diner"}}
-[ 58.84s][user ] Perfect. Could you set a reminder for me to order from Dino’s Diner at 9 PM ⟨ret@64.00s⟩ tonight?
-[ 64.24s][moshi] I can ⟦⚡SPAN@65.20s: (tool result) Reminder set for 9:00 PM tonight: Order from Dino's Diner.⟧ absolutely set that reminder for you. Your reminder to order from Dino’s Diner is set for nine PM tonight.
-      CALL: {"function": "set_reminder", "arguments": {"time": "9:00 PM", "description": "Order from Dino's Diner"}}
-[ 72.57s][user ] Thank you. Uh, what's the weather like tomorrow?
-[ 75.63s][moshi] Tomorrow’s forecast calls for sunny skies with a high of seventy-two degrees.
-[ 81.03s][user ] That sounds nice. Can you find me a good movie to watch tonight? Something funny.
-[ 86.09s][moshi] ⟨ret@86.02s⟩ I ⟦⚡SPAN@87.06s: (tool result) Top-rated comedy: "Booksmart", rating 8.1; "21 Jump Street", rating 7.6; "The Princess Bride", r⟧ can certainly suggest a comedy film for this evening. I recommend "Booksmart" or "The Princess Bride," both highly rated comedies.
-      CALL: {"function": "search_movies", "arguments": {"genre": "comedy", "query": "funny movies"}}
-[ 95.28s][user ] What’s “Booksmart” about?
-[ 96.96s][moshi] It’s a coming-of-age comedy about two academic overachievers who decide to break the rules and experience a wild night before graduation.
-[102.96s][user ] «backchannel» Yeah.
-[107.14s][user ] Okay, that sounds good. Can you set a reminder to start watching it at 8:30 ⟨ret@112.22s⟩ PM?
-[112.53s][moshi] Certainly, I ⟦⚡SPAN@113.74s: (tool result) Reminder set for 8:30 PM tonight: Start watching Booksmart.⟧ can schedule that for you. I've set a reminder for eight thirty PM to start watching “Booksmart.”
-      CALL: {"function": "set_reminder", "arguments": {"time": "8:30 PM", "description": "Start watching Booksmart"}}
-[120.20s][user ] Great. I— I mean, is it available to rent on Amazon ⟨ret@123.89s⟩ Prime?
-[124.05s][moshi] Let me check ⟦⚡SPAN@125.89s: (tool result) "Booksmart" is available to rent on Amazon Prime for three dollars and ninety-nine cents.⟧ Amazon Prime’s current offerings. Yes, "Booksmart" is available on Amazon Prime for three ninety-nine.
-      CALL: {"function": "check_movie_availability", "arguments": {"movie_title": "Booksmart", "platform": "Amazon Prime"}}
-[133.53s][user ] Okay, go ahead and rent it ⟨ret@135.29s⟩ for me.
-[135.61s][moshi] I can proceed ⟦⚡SPAN@137.29s: (tool result) "Booksmart" rented successfully on Amazon Prime. Confirmation number is 7890123.⟧ with renting the movie for you. "Booksmart" has been rented on Amazon Prime; your confirmation number is seven eight nine zero one two three.
-      CALL: {"function": "rent_movie", "arguments": {"movie_title": "Booksmart", "platform": "Amazon Prime"}}
-[146.29s][user ] Wonderful. Thanks so much.
-[148.45s][moshi] You’re very welcome. I’m glad I could help plan your evening.
+[ 37.49s][user ] «backchannel» Yeah.
+[ 41.45s][user ] Okay, can you make a reservation there for two people at ten ⟨ret@45.74s⟩ pm tonight?
+[ 46.14s][moshi] I'm ⟦⚡SPAN@46.70s: (tool result) Reservation confirmed at Dino's Diner for two people at 10:00 PM tonight. Confirmation number is⟧ happy to book a table for you. Your reservation for two at Dino's Diner is confirmed for ten pm tonight. The number is seven-eight-nine-zero.
+      CALL: {"function": "make_reservation", "arguments": {"restaurant_name": "Dino's Diner", "party_size": 2, "time": "22:00"}}
+[ 55.72s][user ] Perfect. So, uh, how much is the estimated travel time to get there?
+[ 60.91s][moshi] ⟨ret@60.67s⟩ I can ⟦⚡SPAN@61.87s: (tool result) Travel time to Dino's Diner is approximately fifteen minutes by car.⟧ calculate the travel time for you. The drive to Dino's Diner will take about fifteen minutes.
+      CALL: {"function": "get_travel_time", "arguments": {"destination": "Dino's Diner", "mode": "driving"}}
+[ 66.89s][user ] Fifteen minutes, good. [interrupting] And what's the weather like there right now?
+[ 73.01s][moshi] «interrupted» —I can tell you the current conditions—
+[ 74.55s][user ] «interrupts_prev» Yes, please. ⟨ret@75.73s⟩
+[ 75.81s][moshi] Absolutely, ⟦⚡SPAN@76.77s: (tool result) The weather at 123 Main Street is currently 65 degrees Fahrenheit and partly cloudy.⟧ let's check the weather at your destination. It's sixty-five degrees and partly cloudy at Dino's Diner.
+      CALL: {"function": "get_weather", "arguments": {"location": "123 Main Street"}}
+[ 85.05s][user ] Sixty-five, okay. Could you set a reminder to leave the house at nine-thirty?
+[ 90.61s][moshi] ⟨ret@90.53s⟩ I can certainly ⟦⚡SPAN@92.05s: (tool result) Reminder set for 9:30 PM: Leave for Dino's Diner.⟧ set that reminder for you. A reminder is set to leave for Dino's Diner at nine-thirty pm.
+      CALL: {"function": "set_reminder", "arguments": {"time": "21:30", "message": "Leave for Dino's Diner"}}
+[ 97.86s][user ] Great. And, um, could you find me a playlist for driving? Something ⟨ret@102.90s⟩ upbeat?
+[103.30s][moshi] I ⟦⚡SPAN@104.18s: (tool result) Playlist "Road Trip Vibes" created with 50 upbeat songs.⟧ can definitely create a driving playlist for you. I've created a playlist called “Road Trip Vibes” with fifty upbeat songs.
+      CALL: {"function": "create_playlist", "arguments": {"genre": "upbeat", "activity": "driving"}}
+[108.00s][user ] «backchannel» Yeah.
+[112.39s][user ] Road Trip Vibes, sounds good. Is there any traffic on the ⟨ret@116.75s⟩ way?
+[117.07s][moshi] Let's ⟦⚡SPAN@117.95s: (tool result) Moderate traffic on Main Street, adding approximately 5 minutes to the trip.⟧ check the current traffic conditions. There’s moderate traffic adding about five minutes to your drive.
+      CALL: {"function": "get_traffic", "arguments": {"destination": "Dino's Diner"}}
+[123.60s][user ] Five minutes, okay. So, the reservation is still for two at ten?
+[130.03s][moshi] Yes, your reservation is still confirmed for two at ten pm.
+[133.81s][user ] Right. And Dino’s address ⟨ret@135.81s⟩ again?
+[136.20s][moshi] Certainly, let me ⟦⚡SPAN@137.81s: (tool result) Dino's Diner is located at 123 Main Street.⟧ repeat that information for you. Dino’s Diner is at one-two-three Main Street.
+[142.02s][user ] Perfect. I— I think that's everything. Thanks, Lio.
+[146.09s][moshi] You’re very welcome! It sounds like you’ve got a lovely evening planned.
+[150.10s][user ] Yeah, I think so.
+[152.14s][moshi] I'm glad I could help

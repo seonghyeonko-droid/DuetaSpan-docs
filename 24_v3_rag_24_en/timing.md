@@ -1,19 +1,27 @@
 # v3_rag_24_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
 
-     0.00s  user  발화 시작: I was wondering about the name du Plessis… it sounds quite… 
-     5.37s  agent 발화 시작: It certainly has a sophisticated ring to it.
-     5.51s  user  발화 끝
-     7.70s  <ret> 발화 (turn2 첫 프레임)
-     8.10s  agent 발화 시작: <ret> Let’s explore the origins of that surname, shall we? T
-     8.15s  agent 발화 끝
-     9.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.17s]: Du Plessis is a French surname originating as a topographical name for
-    14.13s  user  발화 시작: Mhm.
-    14.76s  user  발화 끝
-    16.21s  agent 발화 끝
-    16.47s  user  발화 시작: Oh, interesting! But I’ve heard it’s common in South Africa 
-    21.93s  <ret> 발화 (turn5 첫 프레임)
-    22.17s  agent 발화 시작: <ret> That’s a very astute observation, linking France and S
-    22.17s  user  발화 끝
-    23.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.69s]: Huguenots fleeing religious persecution in France settled in South Afr
-    33.25s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been researching my family history, and I keep running 
+     7.54s  <ret> 발화 (turn1 첫 프레임)
+     7.62s  agent 발화 시작: <ret> That’s a lovely pursuit, tracing your roots… The name 
+     7.64s  user  발화 끝
+     8.50s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.77s]: Du Plessis is a French surname, originating from the region of Normand
+    14.09s  user  발화 시작: Mhm.
+    14.54s  user  발화 끝
+    16.30s  user  발화 시작: Oh, Normandy! That's… surprising. I always thought it sounde
+    16.34s  agent 발화 끝
+    21.72s  user  발화 끝
+    21.80s  agent 발화 시작: It’s understandable why you’d think so, the sound does trave
+    26.87s  <ret> 발화 (turn5 첫 프레임)
+    27.11s  agent 발화 시작: <ret> Let’s explore its journey further… Huguenots brought t
+    27.13s  agent 발화 끝
+    27.83s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.07s]: The name was brought to South Africa by Huguenots in the seventeenth c
+    34.46s  user  발화 시작: Huguenots… so it’s a Protestant name? That makes a lot of se
+    34.58s  agent 발화 끝
+    40.37s  agent 발화 시작: Family stories often hold threads of truth, and that certain
+    40.53s  user  발화 끝
+    45.09s  <ret> 발화 (turn8 첫 프레임)
+    45.17s  agent 발화 시작: <ret> It’s interesting how history shapes names… The name is
+    45.36s  agent 발화 끝
+    46.53s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.45s]: In Afrikaans, the name is often spelled Du Plessis, without the French
+    52.92s  agent 발화 끝

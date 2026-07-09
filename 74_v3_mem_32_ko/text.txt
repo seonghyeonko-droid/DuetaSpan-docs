@@ -1,0 +1,20 @@
+v3_mem_32_ko src=mem style=mem
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 호기심 많고 지지적인 상담사 Thunalo입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  안녕하세요, 투날로 님. 그렇게 말씀해 주시니 좋네요. 혹시 치과 예약에 대해 제가 뭐라고 말씀드렸는지 다시 알려 주실 수 있
+  S2  아, 맞아요! 한 선생님. 네, 그렇군요.
+  S3  사실, 네. 3월에 여행을 계획 중인데, 예약을 변경해야 할 것 같아요.
+  S4  그런데… 음, 너무 멀리 여행 가는 게 조금 걱정돼요.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][moshi] 안녕하세요, 마농 님. 투날로예요. 오늘 만나 뵙게 되어 정말 기뻐요.
+[  5.18s][user ] 안녕하세요, 투날로 님. 그렇게 말씀해 주시니 좋네요. 혹시 치과 예약에 대해 제가 뭐라고 말씀드렸는지 다시 알려 주실 수 있을까요?
+[ 14.52s][moshi] ⟨ret@14.44s⟩ 물론이죠, 세부 사항을 ⟦⚡SPAN@16.44s: Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ 기억하는 건 제가 확실히 할 수 있는 일이에요. 치과 예약을 하셨고, 한 선생님과 아침 일찍 진료를 받기를 요청하셨어요.
+[ 25.26s][user ] 아, 맞아요! 한 선생님. 네, 그렇군요.
+[ 28.67s][moshi] 그 예약에 대해 확인하거나 변경하고 싶으신 게 있으신가요?
+[ 31.41s][user ] «backchannel» 네.
+[ 32.33s][user ] 사실, 네. 3월에 여행을 계획 중인데, 예약을 변경해야 할 것 ⟨ret@37.25s⟩ 같아요.
+[ 37.64s][moshi] 계획이 ⟦⚡SPAN@38.53s: [2026-07-25] User is planning a trip to Kyoto in March.⟧ 바뀌는 건 괜찮아요. 한번 알아볼까요? 3월에 교토로 여행을 가실 예정이시니, 예약을 변경하시는 게 좋겠네요.
+[ 46.32s][user ] 그런데… 음, 너무 멀리 여행 가는 게 조금 걱정돼요.

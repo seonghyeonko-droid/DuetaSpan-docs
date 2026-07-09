@@ -4,49 +4,65 @@ SYSTEM: <system> You are Nellara, a upbeat and supportive counselor who helps pe
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Can you give me the coordinates for the Eiffel Tower in Paris?
-      Okay, great. And what’s the quickest route from there to the Louvre Mu
-      Twenty-three minutes? That’s not too bad. Is it a pretty direct route?
-  S2  Actually, I was hoping to find a nice cafe near the Louvre—
-      That sounds perfect! Do they have outdoor seating?
-      Excellent! Could you make a reservation for two people there for, say,
-  S3  Wonderful, thank you so much! I feel much more prepared now.
-      Do you think I should learn a few basic French phrases?
-      That’s a good point. What’s the French word for “please”?
-  S4  S’il vous plaît… I’ll try to remember that. Is there anything else I s
-      Okay, good to know. It sounds like a lovely city.
-      I think I will. Thanks again for all your help.
+      Okay, great. Now, can you find me some highly-rated French restaurants
+      That sounds lovely. Is it expensive?
+      Oh, wow. Okay, maybe not. What about something a bit more…casual?
+      That sounds perfect! Can you check if they have outdoor seating?
+  S2  Wonderful! I think I'll go there.
+      Do they take reservations?
+      Perfect! Can you make a reservation for two people tomorrow at seven p
+      Fantastic! Thank you so much.
+  S3  I’m also meeting a friend there. I haven’t seen her in ages.
+      Mm-hmm.
+      I agree. I'm a little nervous, though. We had a bit of a falling out l
+      Yeah, it does. I just want things to be okay again.
+  S4  That's true. We used to go to concerts all the time.
+      I'm hoping we can talk things through and move past it.
+      It’s just…difficult. I always struggle with confrontation.
+      [happy] I guess you’re right.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.37s⟩ Paris?
-[  3.60s][moshi] Certainly, ⟦⚡SPAN@4.41s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ locating that iconic landmark is easy— The Eiffel Tower’s coordinates are forty-eight point eight five eight four latitude, and two point two nine four five longitude.
-[ 16.08s][user ] Okay, great. And what’s the quickest route from there to the Louvre ⟨ret@20.72s⟩ Museum, walking?
-[ 21.12s][moshi] Let’s map out a ⟦⚡SPAN@22.72s: (tool result) The walking route to the Louvre Museum is one point nine kilometers and will take approximately ⟧ pleasant stroll for you— That walk is one point nine kilometers, about twenty-three minutes, and a lovely way to see the city.
-      CALL: {"function": "maps_route", "arguments": {"start": "48.8584, 2.2945", "end": "Louvre Museum, Paris", "mode": "walking"}}
-[ 26.87s][user ] «backchannel» Yeah, totally.
-[ 29.54s][user ] Twenty-three minutes? That’s not too bad. Is it a pretty direct route?
-[ 34.14s][moshi] It is quite direct, mostly along the Seine. You’ll pass some beautiful sights.
-[ 36.25s][user ] «backchannel» Yeah.
-[ 39.54s][moshi] ⟨ret@39.39s⟩ Thinking about getting ⟦⚡SPAN@41.39s: (tool result) The Paris Metro has sixteen lines and three hundred and one stations.⟧ around Paris, have you considered— Paris has a very comprehensive metro system with sixteen lines and over three hundred stations. It’s a fantastic way to cover ground quickly.
-[ 53.20s][user ] Actually, I was hoping to find a nice cafe near the ⟨ret@56.56s⟩ Louvre—
-[ 56.88s][moshi] ⟦⚡SPAN@57.20s: (tool result) Café Verlet is a highly-rated cafe, four hundred meters from the Louvre Museum, with a four poin⟧ Oh, a cozy cafe sounds wonderful! Let me check for highly-rated cafes near the Louvre Museum.
-      CALL: {"function": "maps_search", "arguments": {"query": "cafe", "near": "Louvre Museum, Paris"}}
-[ 64.30s][moshi] Café Verlet is four hundred meters away and has a four point six star rating—it’s very popular.
-[ 70.45s][user ] That sounds perfect! Do they have outdoor ⟨ret@73.59s⟩ seating?
-[ 73.98s][moshi] ⟦⚡SPAN@74.55s: (tool result) Café Verlet has outdoor seating, and is open until eight pm.⟧ Checking the amenities at Café Verlet for you— Yes, Café Verlet does have outdoor seating, and they are open until eight this evening.
-      CALL: {"function": "maps_details", "arguments": {"place_id": "Café Verlet, Paris"}}
-[ 77.08s][user ] «backchannel» Okay.
-[ 84.00s][user ] Excellent! Could you make a reservation for two people there for, say, seven ⟨ret@88.98s⟩ pm?
-[ 89.22s][moshi] Reserving a table ⟦⚡SPAN@90.98s: (tool result) Reservation confirmed at Café Verlet for two people at seven pm. Confirmation number is LV789.⟧ for you is my pleasure— Your reservation at Café Verlet is confirmed for two at seven pm; your confirmation number is LV789.
-      CALL: {"function": "maps_reserve", "arguments": {"place_id": "Café Verlet, Paris", "time": "19:00", "party_size": 2}}
-[101.98s][user ] Wonderful, thank you so much! I feel much more prepared now.
-[106.14s][moshi] You're very welcome! It's great you're feeling ready. Planning ahead always eases any travel nerves.
-[116.03s][user ] Do you think I should learn a few basic French phrases?
-[119.67s][moshi] Absolutely! Even a simple “Bonjour” and “Merci” can go a long way and are greatly appreciated.
-[126.33s][user ] That’s a good point. What’s the French word for “please”?
-[130.09s][moshi] The French word for “please” is “s’il vous plaît” – it's a bit of a mouthful, but worth learning!
-[135.99s][user ] S’il vous plaît… I’ll try to remember that. Is there anything else I should be aware of, culturally, in Paris?
-[142.81s][moshi] Parisians generally value politeness and a bit of formality initially. A friendly greeting is always a good start.
-[151.03s][user ] Okay, good to know. It sounds like a lovely city.
-[155.06s][moshi] It truly is! A city brimming with art, history, and delightful little moments. I hope you have a wonderful time.
-[162.76s][user ] I think I will. Thanks again for all your help.
-[166.37s][moshi] It was my pleasure assisting you. Enjoy your trip to Paris—and that reservation at Café Verlet!
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@2.83s⟩ Paris?
+[  3.06s][moshi] Certainly, ⟦⚡SPAN@3.87s: (tool result) The Eiffel Tower is located at latitude 48.8584, longitude 2.2945.⟧ locating landmarks is something I can do for you. The Eiffel Tower’s coordinates are forty-eight point eight five eight four latitude and two point two nine four five longitude.
+[ 11.04s][user ] «backchannel» Yeah.
+[ 14.31s][user ] Okay, great. Now, can you find me some highly-rated French restaurants ⟨ret@18.47s⟩ nearby?
+[ 18.83s][moshi] Absolutely, let's see what ⟦⚡SPAN@20.47s: (tool result) Le Jules Verne is a French restaurant 200 meters from the Eiffel Tower, with a 4.6-star rating.⟧ dining options Paris has to offer. Le Jules Verne is a French restaurant two hundred meters from the tower, rated four point six stars.
+      CALL: {"function": "maps_search", "arguments": {"query": "French restaurants near Eiffel Tower, Paris", "radius": "500m"}}
+[ 25.15s][user ] «backchannel» Yeah, totally.
+[ 28.06s][user ] That sounds lovely. Is it ⟨ret@30.41s⟩ expensive?
+[ 30.73s][moshi] Let’s find ⟦⚡SPAN@31.77s: (tool result) Le Jules Verne's price level is four dollars, indicating very expensive.⟧ out about the price range at Le Jules Verne. Le Jules Verne is quite pricey, with a price level of four dollars.
+      CALL: {"function": "maps_details", "arguments": {"restaurant_name": "Le Jules Verne", "attribute": "price_level"}}
+[ 38.51s][user ] Oh, wow. Okay, maybe not. What about something a bit more…casual?
+[ 43.54s][moshi] ⟨ret@43.22s⟩ Of course, there are ⟦⚡SPAN@45.22s: (tool result) Les Cocottes Tour Eiffel is a casual French bistro 800 meters from the tower, with a 4.2-star ra⟧ many other choices for a relaxed meal. Les Cocottes Tour Eiffel is a casual bistro, eight hundred meters away, and has a four point two-star rating.
+      CALL: {"function": "maps_search", "arguments": {"query": "casual French restaurants near Eiffel Tower, Paris", "radius": "1km"}}
+[ 54.06s][user ] That sounds perfect! Can you check if they have outdoor seating?
+[ 57.55s][moshi] ⟨ret@57.47s⟩ Let's see ⟦⚡SPAN@58.59s: (tool result) Les Cocottes Tour Eiffel has outdoor seating available.⟧ if you can enjoy your meal al fresco. Yes, Les Cocottes Tour Eiffel does offer outdoor seating.
+      CALL: {"function": "maps_details", "arguments": {"restaurant_name": "Les Cocottes Tour Eiffel", "attribute": "outdoor_seating"}}
+[ 59.62s][user ] «backchannel» Okay.
+[ 64.44s][user ] Wonderful! I think I'll go there.
+[ 66.97s][moshi] That’s a great choice, it’s always nice to find a place you feel good about.
+[ 72.92s][user ] Do they take reservations?
+[ 74.67s][moshi] «interrupted» I was going to suggest—
+[ 76.12s][moshi] ⟨ret@76.05s⟩ Les Cocottes Tour Eiffel ⟦⚡SPAN@77.97s: (tool result) Les Cocottes Tour Eiffel accepts reservations online and by phone.⟧ does accept reservations, both online and by phone.
+[ 81.83s][user ] Perfect! Can you make a reservation for two people tomorrow at seven ⟨ret@86.71s⟩ pm?
+[ 86.92s][moshi] Absolutely, I can ⟦⚡SPAN@88.23s: (tool result) Reservation confirmed for two people at Les Cocottes Tour Eiffel tomorrow at 7:00 PM, confirmati⟧ certainly arrange that for you. Your reservation for two at Les Cocottes is confirmed for tomorrow at seven pm; the confirmation number is LX94Z.
+      CALL: {"function": "restaurant_reserve", "arguments": {"restaurant_name": "Les Cocottes Tour Eiffel", "date": "tomorrow", "time": "7:00 PM", "party_size": "2"}}
+[ 96.09s][user ] Fantastic! Thank you so much.
+[ 98.56s][moshi] You're very welcome! I'm glad I could help you plan a lovely evening.
+[103.01s][user ] I’m also meeting a friend there. I haven’t seen her in ages.
+[106.94s][moshi] Reconnecting with old friends is so important—it really nourishes the soul, you know?
+[112.80s][user ] Mm-hmm.
+[113.77s][moshi] It's wonderful to prioritize those relationships, especially when life gets busy. Maintaining connections takes effort, but it’s so rewarding.
+[122.87s][user ] I agree. I'm a little nervous, though. We had a bit of a falling out last year.
+[127.51s][moshi] It’s completely normal to feel anxious before seeing someone you’ve had conflict with. It takes courage to reach out and rebuild.
+[134.63s][user ] Yeah, it does. I just want things to be okay again.
+[138.06s][moshi] That’s a very healthy goal, wanting to restore a friendship. Focusing on shared positive memories can be a good starting point.
+[144.84s][user ] That's true. We used to go to concerts all the time.
+[148.07s][moshi] Shared experiences create such strong bonds, and reminiscing can help bridge any gaps.
+[152.55s][user ] «backchannel» Mm-hmm.
+[155.31s][user ] I'm hoping we can talk things through and move past it.
+[158.48s][moshi] Open and honest communication is key to resolving conflict and strengthening any relationship.
+[163.42s][user ] It’s just…difficult. I always struggle with confrontation.
+[167.88s][moshi] Many people do; it’s perfectly okay to feel uncomfortable with confrontation. It's a skill that can be learned with practice and self-compassion.
+[175.18s][user ] [happy] I guess you’re right.
+[176.35s][moshi] Absolutely! Remember, you're taking a brave step towards repairing a valuable friendship, and that's something to be proud of.

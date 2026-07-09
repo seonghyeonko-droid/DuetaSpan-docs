@@ -1,0 +1,79 @@
+v3_noinfo_23_ko src=mcp style=mcp_noinfo
+SYSTEM: <system> 당신은 커리어 선택과 직장 스트레스에 대한 도움을 주는 긍정적이고 지지적인 웰니스 코치 Brae입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해?
+      음, 추워 보이네. 지금 근처에 분위기 좋은 카페 있으면 찾아 줄래?
+      저녁 8시는 괜찮아. 음… 그러니까, 거기 7시에 두 명 자리 예약해 줄래?
+      완벽해! 있잖아, 거기 와이파이 무료야?
+      좋네. 아, 친구 사라한테 메시지 좀 보내야 돼.
+  S2  늦을 것 같다고, 길이 막힌다고 말해 줘.
+      아니, 지금은 다야, 고마워.
+      맞아. 근데, “Bean There, Drank That”까지 걸어서 가는 가장 빠른 길은 뭐야?
+      10분이면 괜찮아. 혹시 근처에 꽃집 있어?
+  S3  아, 편하겠다! “Petal Pushers” 오늘 몇 시에 닫아?
+      음, 카페 갔다 들러볼까. 배달도 해?
+      좋은 정보네. 내일 날씨 예보는 어때?
+      좋다. 엄마 생일 선물 사야 하는데, 알림 설정해 줘.
+  S4  완벽해! 정말 고마워, 브레.
+      기분 좋다. 이제 카페 갈 준비 됐어.
+      그럴게. 마지막으로, 지금 몇 시야?
+      좋아. 다시 한번 고마워!
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 응, 작년 12월 24일 도쿄 날씨가 어땠는지 ⟨ret@3.34s⟩ 궁금해?
+[  3.73s][moshi] 네, 빠르게 ⟦⚡SPAN@5.34s: (tool result) The weather in Tokyo on December twenty-fourth, 2023, was mostly cloudy with a high of eleven de⟧ 지난 날씨 데이터를 확인해 볼게요… 12월 24일 도쿄는 대체로 흐린 날씨였고, 기온은 6도에서 11도 사이였습니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
+[ 11.94s][user ] 음, 추워 보이네. 지금 근처에 분위기 좋은 카페 있으면 찾아 ⟨ret@16.22s⟩ 줄래?
+[ 16.45s][moshi] 네, 따뜻하고 편안한 ⟦⚡SPAN@18.22s: (tool result) There is a cafe called “Bean There, Drank That” located point eight kilometers away, open until ⟧ 곳을 찾는 건 좋은 생각이에요. “Bean There, Drank That”은 여기에서 0.8킬로미터 거리에 있고, 오늘 저녁 8시까지 영업합니다.
+      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "cozy cafe", "open_now": true, "location": "current"}}
+[ 21.18s][user ] «backchannel» 응.
+[ 26.34s][user ] 저녁 8시는 괜찮아. 음… 그러니까, 거기 7시에 두 명 자리 예약해 ⟨ret@31.74s⟩ 줄래?
+[ 32.06s][moshi] 네, 테이블 예약해 ⟦⚡SPAN@33.50s: (tool result) A table for two at “Bean There, Drank That” is confirmed for seven PM under the name of… well, y⟧ 드리면 좋을 것 같아요. 자, 해 드릴게요. “Bean There, Drank That”에 두 분 자리 7시에 예약됐습니다.
+      CALL: {"function": "Restaurant_1_ReserveTable", "arguments": {"restaurant_name": "Bean There, Drank That", "time": "19:00", "party_size": 2}}
+[ 37.45s][user ] «backchannel» 음.
+[ 39.92s][user ] 완벽해! 있잖아, 거기 와이파이 ⟨ret@42.82s⟩ 무료야?
+[ 43.05s][moshi] 대부분 카페는 ⟦⚡SPAN@44.10s: (tool result) “Bean There, Drank That” offers free Wi-Fi, has outdoor seating, and accepts credit cards.⟧ 다 제공할 텐데, 빠르게 확인해 볼게요.
+      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Bean There, Drank That"}}
+[ 46.54s][moshi] 네, “Bean There, Drank That”은 무료 와이파이, 야외 좌석, 그리고 신용카드 결제를 제공합니다.
+[ 52.48s][user ] 좋네. 아, 친구 사라한테 메시지 좀 보내야 돼.
+[ 56.42s][moshi] 물론이죠! 사라에게 어떤 메시지를 보내 드릴까요?
+[ 59.70s][user ] 늦을 것 같다고, 길이 막힌다고 말해 ⟨ret@62.19s⟩ 줘.
+[ 62.42s][moshi] 네, ⟦⚡SPAN@63.31s: (tool result) Message sent to Sarah successfully.⟧ 사라에게 메시지를 보내고 있습니다…
+      CALL: {"function": "Messaging_1_SendMessage", "arguments": {"recipient": "Sarah", "message": "I’ll be a little late, traffic’s bad."}}
+[ 64.58s][moshi] 사라에게 메시지가 전송됐습니다. 더 도와드릴 일이 있을까요?
+[ 68.54s][user ] 아니, 지금은 다야, 고마워.
+[ 70.85s][moshi] 천만에요. 조금만 계획을 세우면 바쁜 날의 스트레스를 줄일 수 있습니다.
+[ 75.83s][user ] 맞아. 근데, “Bean There, Drank That”까지 걸어서 가는 가장 빠른 길은 ⟨ret@80.87s⟩ 뭐야?
+[ 81.10s][moshi] 가장 ⟦⚡SPAN@82.31s: (tool result) The fastest walking route to “Bean There, Drank That” is point eight kilometers, estimated time ⟧ 빠른 걸음 경로를 찾아 드릴게요. 가장 빠른 걸음 경로는 0.8킬로미터이고, 약 10분 정도 걸립니다.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"destination": "Bean There, Drank That", "mode": "walking"}}
+[ 89.40s][user ] 10분이면 괜찮아. 혹시 근처에 꽃집 ⟨ret@92.29s⟩ 있어?
+[ 92.60s][moshi] 네, ⟦⚡SPAN@93.33s: (tool result) “Petal Pushers” florist is located point three kilometers from “Bean There, Drank That”.⟧ 근처 꽃집을 찾아볼 수 있습니다… “Petal Pushers”는 카페에서 0.3킬로미터 거리에 있습니다.
+      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "florist", "location": "Bean There, Drank That"}}
+[ 96.72s][user ] «backchannel» 응.
+[ 99.08s][user ] 아, 편하겠다! “Petal Pushers” 오늘 몇 시에 닫아?
+[103.36s][moshi] ⟨ret@102.97s⟩ 영업시간을 확인해 ⟦⚡SPAN@104.81s: (tool result) “Petal Pushers” is open until six PM today.⟧ 볼게요… “Petal Pushers”는 오늘 저녁 6시에 닫습니다.
+      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Petal Pushers"}}
+[108.10s][user ] 음, 카페 갔다 들러볼까. 배달도 ⟨ret@110.70s⟩ 해?
+[111.11s][moshi] 배달 서비스를 제공하는지 ⟦⚡SPAN@112.70s: (tool result) “Petal Pushers” offers delivery within a five-kilometer radius for orders over thirty dollars.⟧ 알아볼게요. 네, 30달러 이상 주문 시 5킬로미터 이내 배달합니다.
+      CALL: {"function": "Places_1_GetPlaceDetails", "arguments": {"place_name": "Petal Pushers"}}
+[112.85s][user ] «backchannel» 어어.
+[116.84s][user ] 좋은 정보네. 내일 날씨 예보는 어때?
+[119.98s][moshi] ⟨ret@119.91s⟩ 내일 날씨를 알려 ⟦⚡SPAN@121.91s: (tool result) Tomorrow’s forecast is sunny with a high of fifteen degrees Celsius and a low of eight degrees C⟧ 드릴게요. 내일은 맑고, 최고 기온은 15도, 최저 기온은 8도입니다.
+      CALL: {"function": "Weather_1_GetForecast", "arguments": {"location": "current", "date": "tomorrow"}}
+[122.56s][user ] «backchannel» 응.
+[125.78s][user ] 좋다. 엄마 생일 선물 사야 하는데, 알림 설정해 줘.
+[129.76s][moshi] ⟨ret@129.69s⟩ 네, 중요한 ⟦⚡SPAN@130.81s: (tool result) Reminder set for March fifteenth, 2024, at ten AM: “Buy birthday gift for Mom”.⟧ 날을 기억하도록 도와드릴 수 있습니다. 엄마 생일 선물 사기 알림이 3월 15일 오전 10시에 설정되었습니다.
+      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"reminder_text": "Buy birthday gift for Mom", "date": "2024-03-15", "time": "10:00"}}
+[133.91s][user ] «backchannel» 어.
+[137.06s][user ] 완벽해! 정말 고마워, 브레.
+[139.26s][moshi] 천만에요. 하루를 정리하는 작은 노력이 스트레스를 줄이는 데 도움이 될 수 있습니다.
+[143.96s][user ] 기분 좋다. 이제 카페 갈 준비 됐어.
+[146.45s][moshi] 좋아요! “Bean There, Drank That”에서 즐거운 시간 보내세요. 잠시 숨을 고르고 휴식을 취하는 것을 잊지 마세요.
+[153.92s][user ] 그럴게. 마지막으로, 지금 몇 ⟨ret@156.32s⟩ 시야?
+[156.64s][moshi] 빠르게 현재 시간을 ⟦⚡SPAN@158.08s: (tool result) The current time is four forty-two PM.⟧ 확인해 볼게요. 현재 오후 4시 42분입니다.
+      CALL: {"function": "System_1_GetCurrentTime", "arguments": {}}
+[158.24s][user ] «backchannel» 응.
+[162.53s][user ] 좋아. 다시 한번 고마워!
+[164.62s][moshi] 천만에요. 웰빙을 우선시하는 것이 중요하며, 필요할 때마다 지원해 드리겠습니다.

@@ -3,16 +3,16 @@ SYSTEM: <system> You are Ellana, a kind and steady wellness coach who helps peop
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was just wondering, has the Oakland A’s team ever been no-hit? I can
-  S2  Wow, that wasn't *that* long ago, actually. Who did it?
+  S1  I was just wondering, has that happened to the A's recently? Like, hav
+  S2  Wow, that *was* a while ago. I— I mean, I thought it felt like it had 
   S3  Hey, did you remember to take the chicken out of the freezer?
-  S4  Sorry about that. Back to baseball… is it common for a team to get no-
+  S4  Sorry about that. So, who threw the no-hitter against them?
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was just wondering, has the Oakland A’s team ever been no-hit? I can’t remember if that’s ⟨ret@5.50s⟩ ever happened.
-[  5.90s][moshi] That’s a good ⟦⚡SPAN@7.34s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ question, and it’s certainly memorable when it does happen. The A’s were last no-hit on April twenty-first, two-thousand eighteen.
-[ 13.97s][user ] Wow, that wasn't *that* long ago, actually. Who did ⟨ret@17.32s⟩ it?
-[ 17.56s][moshi] Let me quickly ⟦⚡SPAN@18.84s: Mike Fiers of the Houston Astros pitched the no-hitter against the Oakland Athletics on April 21, 2018.⟧ check who pitched that game for you. Mike Fiers, pitching for the Houston Astros, threw the no-hitter against Oakland on that date.
-[ 25.17s][user ] «to_other» Hey, did you remember to take the chicken out of the freezer?
-[ 28.27s][user ] Sorry about that. Back to baseball… is it common for a team to get no-hit more than once in a season?
-[ 35.10s][moshi] It’s relatively uncommon, though it does happen occasionally. A team getting no-hit multiple times in one season is definitely noteworthy.
+[  0.00s][user ] I was just wondering, has that happened to the A's recently? Like, have they ⟨ret@4.69s⟩ been no-hit?
+[  5.09s][moshi] That's a ⟦⚡SPAN@6.53s: The last time the Oakland A's were no-hit was April 21, 2018.⟧ good question, and a surprisingly specific one— The A’s were last no-hit on April twenty-first, two-thousand eighteen.
+[ 14.02s][user ] Wow, that *was* a while ago. I— I mean, I thought it felt like it had been more recent than that.
+[ 20.14s][moshi] It’s easy to lose track of time, especially when following a team through ups and downs.
+[ 25.79s][user ] «to_other» Hey, did you remember to take the chicken out of the freezer?
+[ 28.75s][user ] Sorry about that. So, who threw the no-hitter against them?
+[ 32.65s][moshi] ⟨ret@32.41s⟩ Let me quickly ⟦⚡SPAN@33.77s: Mike Fiers of the Houston Astros pitched the no-hitter against the A's on April 21, 2018.⟧ look that up for you— Mike Fiers, pitching for the Houston Astros, threw the no-hitter against Oakland on that date.

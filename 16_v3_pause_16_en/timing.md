@@ -1,66 +1,56 @@
 # v3_pause_16_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 I was reading a book and it mentio | S2 Like with all the data collection  | S3 …or more of a symbol? | S4 I wonder if Orwell predicted all t
+# EXAMINER(FDB-v2) 단계: S1 So, I was reading this book… | S2 … I always thought it was just a g | S3 Did Orwell intend it to be about a | S4 I wonder if he would be surprised 
 
-     0.00s  user  발화 시작: I was reading a book and it mentioned “Big Brother”...
-     2.50s  <ret> 발화 (turn1 첫 프레임)
-     2.72s  user  발화 끝
-     2.81s  agent 발화 시작: <ret> That’s a fascinating question, and a common one. “Big 
-     4.02s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.24s]: The term “Big Brother” originates from George Orwell’s dystopian novel
-    12.93s  agent 발화 끝
-    12.98s  user  발화 시작: Nineteen Eighty-Four… I’ve heard of it, but I’ve never actua
-    17.70s  user  발화 끝
-    17.84s  agent 발화 시작: It's a rather bleak story, honestly. It explores themes of t
-    22.01s  user  발화 시작: Yeah, yeah.
-    23.43s  user  발화 끝
-    23.50s  agent 발화 끝
-    23.50s  user  발화 시작: Surveillance… that’s a bit scary, especially these days.
-    26.96s  agent 발화 시작: Absolutely. The concepts explored in *Nineteen Eighty-Four* 
-    27.11s  user  발화 끝
-    29.26s  user  발화 시작: Mm-hmm.
-    29.76s  user  발화 끝
-    33.12s  agent 발화 끝
-    33.25s  user  발화 시작: Like with all the data collection companies do?
-    35.48s  <ret> 발화 (turn9 첫 프레임)
-    35.84s  user  발화 끝
-    35.88s  agent 발화 시작: <ret> That’s a very perceptive connection you’re making. The
-    37.24s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.44s]: *Nineteen Eighty-Four* depicts a state that controls every aspect of p
-    40.48s  user  발화 시작: Yeah.
-    40.98s  user  발화 끝
-    46.36s  agent 발화 끝
-    46.52s  user  발화 시작: Wow. So, the “Big Brother” in the book is actually the gover
-    51.06s  user  발화 끝
-    51.33s  agent 발화 시작: Precisely. He represents the all-seeing, all-controlling Par
-    53.18s  user  발화 시작: Mm-hmm.
-    53.67s  user  발화 끝
-    56.00s  agent 발화 끝
-    56.67s  user  발화 시작: Is he a real person *in* the story…
-    59.71s  user  발화 끝
-    59.83s  user  발화 시작: …or more of a symbol?
-    61.53s  user  발화 끝
-    61.69s  <ret> 발화 (turn16 첫 프레임)
-    61.77s  agent 발화 시작: <ret> That’s a really insightful question, diving into the c
-    62.41s  ⚡SPAN 주입 [d'=0.72s / d_lead=3.18s]: Big Brother is the enigmatic leader of Oceania in *Nineteen Eighty-Fou
-    71.80s  user  발화 시작: That’s… unsettling. So, it’s possible he’s not even real?
-    72.25s  agent 발화 끝
-    76.66s  user  발화 끝
-    77.00s  agent 발화 시작: The novel deliberately leaves that ambiguous, heightening th
-    80.50s  user  발화 시작: Mm-hmm.
-    80.99s  user  발화 끝
-    82.14s  agent 발화 끝
-    84.25s  user  발화 시작: It sounds like a pretty depressing read, to be honest.
-    87.29s  agent 발화 시작: It can be, yes. It’s not lighthearted, but it’s a powerful a
-    87.39s  user  발화 끝
-    89.16s  user  발화 시작: Yeah.
-    89.65s  user  발화 끝
-    91.89s  user  발화 시작: I wonder if Orwell predicted all this… the cameras and the i
-    92.29s  agent 발화 끝
-    96.43s  user  발화 끝
-    96.45s  agent 발화 시작: He was remarkably prescient, wasn't he? His warnings about t
-    98.68s  user  발화 시작: Right.
-    99.31s  user  발화 끝
-   102.89s  agent 발화 끝
-   102.90s  user  발화 시작: I’m going to add it to my reading list, I think. Thanks, Bra
-   106.77s  agent 발화 시작: You’re very welcome. I’m glad I could help illuminate the or
-   106.93s  user  발화 끝
-   111.72s  agent 발화 끝
+     0.00s  user  발화 시작: So, I was reading this book…
+     2.58s  user  발화 끝
+     3.14s  user  발화 시작: …and it mentioned “Big Brother”.
+     4.92s  agent 발화 시작: That’s a fascinating cultural reference, actually.
+     5.03s  user  발화 끝
+     7.88s  agent 발화 끝
+     7.95s  user  발화 시작: I’ve heard the phrase a lot, like, for surveillance…
+    11.00s  <ret> 발화 (turn4 첫 프레임)
+    11.13s  user  발화 끝
+    11.16s  agent 발화 시작: <ret> Let’s explore the origin of that term. It comes from G
+    12.92s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.14s]: The term "Big Brother" originates from George Orwell's dystopian novel
+    17.52s  user  발화 시작: Yeah, yeah.
+    18.94s  user  발화 끝
+    19.69s  agent 발화 끝
+    20.42s  user  발화 시작: … I always thought it was just a general thing, you know…
+    23.14s  user  발화 끝
+    23.85s  user  발화 시작: …like, a modern invention, but a book? That's interesting.
+    28.89s  agent 발화 시작: It’s quite striking how literature can shape our language.
+    28.89s  user  발화 끝
+    30.08s  user  발화 시작: Mm-hmm.
+    30.52s  user  발화 끝
+    32.17s  agent 발화 끝
+    32.23s  user  발화 시작: Did Orwell intend it to be about actual surveillance, or was
+    37.80s  <ret> 발화 (turn11 첫 프레임)
+    37.96s  agent 발화 시작: <ret> Orwell’s intention is a complex topic. The idea came f
+    38.01s  user  발화 끝
+    38.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.21s]: Orwell stated the concept was inspired by a poster from World War II p
+    42.38s  user  발화 시작: Yeah.
+    42.87s  user  발화 끝
+    47.90s  user  발화 시작: So, it started as a patriotic thing, then turned into someth
+    47.93s  agent 발화 끝
+    52.95s  user  발화 끝
+    53.03s  agent 발화 시작: Exactly—the meaning shifted with the context of his novel.
+    54.35s  user  발화 시작: Mm-hmm.
+    54.85s  user  발화 끝
+    56.30s  user  발화 시작: [laugh] That’s ironic, isn’t it?
+    56.45s  agent 발화 끝
+    60.31s  agent 발화 시작: It is a rather poignant twist, when you consider it.
+    60.47s  user  발화 끝
+    63.27s  agent 발화 끝
+    63.75s  user  발화 시작: I wonder if he would be surprised by how often it’s used now
+    67.72s  <ret> 발화 (turn19 첫 프레임)
+    67.88s  agent 발화 시작: <ret> It's hard to say what Orwell would think today. His no
+    68.06s  user  발화 끝
+    69.48s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.30s]: *Nineteen Eighty-Four* has sold over fifty million copies worldwide si
+    74.52s  user  발화 시작: Mm-hmm.
+    75.24s  user  발화 끝
+    77.37s  user  발화 시작: Wow, fifty million. That’s… a lot of readers.
+    77.42s  agent 발화 끝
+    81.54s  user  발화 끝
+    81.57s  agent 발화 시작: It's certainly had a lasting impact on how we think.
+    84.48s  agent 발화 끝

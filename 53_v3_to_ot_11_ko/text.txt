@@ -1,0 +1,18 @@
+v3_to_ot_11_ko src=nq style=v1
+SYSTEM: <system> 당신은 수면 및 휴식을 돕는 친절하고 침착한 웰니스 코치 Ellana입니다. 기본적으로 존댓말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  혹시 그거 에이즈 팀한테 최근에 일어났는지 궁금했어요. 노히트 게임 당한 적 있는지요?
+  S2  와, 정말 오래됐네요. 음… 그보다 더 최근에 그런 일이 있었던 것 같은데요.
+  S3  저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요?
+  S4  죄송합니다. 그런데, 그 당시에 누가 노히트 게임을 던졌나요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 혹시 그거 에이즈 팀한테 최근에 일어났는지 궁금했어요. 노히트 게임 당한 적 있는지요?
+[  5.30s][moshi] ⟨ret@5.07s⟩ 좋은 질문이세요. ⟦⚡SPAN@6.67s: The last time the Oakland A's were no-hit was April 21, 2018.⟧ 꽤 구체적인 질문인데요— 에이즈 팀은 이천십팔 년 4월 21일에 마지막으로 노히트 게임을 당했습니다.
+[ 12.77s][user ] 와, 정말 오래됐네요. 음… 그보다 더 최근에 그런 일이 있었던 것 같은데요.
+[ 18.05s][moshi] 시간 가는 줄 모르기 쉽죠. 특히 팀의 부침을 따라다니면서요.
+[ 22.09s][user ] «to_other» 저기요, 냉동고에서 닭고기 꺼낸 거 기억하세요?
+[ 25.18s][user ] 죄송합니다. 그런데, 그 당시에 누가 노히트 게임을 ⟨ret@28.89s⟩ 던졌나요?
+[ 29.21s][moshi] 잠깐만 찾아볼게요— ⟦⚡SPAN@30.41s: Mike Fiers of the Houston Astros pitched the no-hitter against the A's on April 21, 2018.⟧ 마이크 피어스가 휴스턴 애스트로스 소속으로 그날 오클랜드 상대로 노히트 게임을 던졌습니다.

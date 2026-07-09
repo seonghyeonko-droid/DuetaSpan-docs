@@ -1,0 +1,39 @@
+v3_abs_21_ko src=squad2 style=abstain
+SYSTEM: <system> 당신은 건강 및 일상 습관 관련하여 사람들을 돕는, 현실적이고 공감 능력이 뛰어난 상담사 Nias입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  프랑스 상원 의원 수는 몇 명인가요?
+      아, 미국 상원은 어때요? 미국 상원 의원 수는 몇 명인가요?
+      네, 주마다 두 명씩이군요. 그건 말이 돼요. 미국 상원의원 평균 연령은 어떻게 되나요?
+  S2  와, 생각보다 늙으셨네요. 음… 더 젊을 줄 알았어요.
+      네, 맞는 말씀 같아요. 그럼 프랑스에서 가장 높은 곳은 어디인가요?
+  S3  정말… 엄청 높네요. 에베레스트 산보다 높은가요?
+      아! 그럼 가장 낮은 곳은요? 프랑스에서요.
+  S4  0미터요? 놀랍네요. 그럼 해수면과 같은 높이인가요?
+      알겠습니다. 음, 잠을 개선하고 싶다면 무엇을 추천하시겠어요?
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 프랑스 상원 의원 수는 몇 ⟨ret@1.96s⟩ 명인가요?
+[  2.20s][moshi] ⟦⚡SPAN@2.46s: (no information found)⟧ 음, 다른 정부의 구조를 이해하는 건 좋은 질문이에요. 죄송하지만, 지금은 프랑스 상원 의원 수에 대한 정확한 정보를 찾을 수 없어요.
+[  6.54s][user ] «backchannel» 네.
+[ 12.71s][user ] 아, 미국 상원은 어때요? 미국 상원 의원 수는 몇 ⟨ret@16.20s⟩ 명인가요?
+[ 16.44s][moshi] 아, 미국 상원은 ⟦⚡SPAN@17.96s: The United States Senate is composed of one hundred senators, two from each of the fifty states.⟧ 훨씬 더 익숙한 영역이에요. 미국 상원에는 의원이 백 명 있고, 각 주에서 두 명씩 대표해요.
+[ 21.13s][user ] «backchannel» 음.
+[ 23.96s][user ] 네, 주마다 두 명씩이군요. 그건 말이 돼요. 미국 상원의원 평균 연령은 어떻게 되나요?
+[ 29.89s][moshi] ⟨ret@29.65s⟩ 정말 ⟦⚡SPAN@30.85s: As of January 3, 2023, the average age of a U.S. Senator is 63.3 years.⟧ 흥미로운 세부 사항을 생각해보시는군요. 이천이십삼 년 1월 3일 기준으로 미국 상원의원 평균 연령은 63.3년입니다.
+[ 39.60s][user ] 와, 생각보다 늙으셨네요. 음… 더 젊을 줄 알았어요.
+[ 43.44s][moshi] 조금 나이가 많으시죠, 그렇죠? 보통 리더십 위치에 있는 사람들은 오랜 경험을 가지고 계시곤 해요.
+[ 45.39s][user ] «backchannel» 네.
+[ 49.64s][user ] 네, 맞는 말씀 같아요. 그럼 프랑스에서 가장 높은 곳은 어디인가요?
+[ 54.31s][moshi] ⟨ret@54.25s⟩ 지리 쪽으로 ⟦⚡SPAN@56.25s: Mont Blanc, at 4,807 meters (15,774 ft), is the highest mountain in France and the Alps.⟧ 화제를 바꿔볼까요. 몽블랑이 프랑스에서 가장 높은 곳으로, 4807미터, 또는 15774피트에 달합니다.
+[ 65.70s][user ] 정말… 엄청 높네요. 에베레스트 산보다 높은가요?
+[ 69.61s][moshi] 아니요, 에베레스트 산만큼 높지는 않아요. 에베레스트 산이 훨씬 더 높아서 8848.86미터입니다.
+[ 77.11s][user ] 아! 그럼 가장 낮은 곳은요? ⟨ret@79.26s⟩ 프랑스에서요.
+[ 79.58s][moshi] 좋은 ⟦⚡SPAN@80.94s: The lowest point in France is Saint-Martin-de-Ré, at 0 meters (0 ft) below sea level.⟧ 후속 질문이에요, 범위를 전체적으로 살펴보시는군요. 프랑스에서 가장 낮은 곳은 생마르탱드레로, 해수면보다 0미터 아래에 위치해 있습니다.
+[ 86.16s][user ] «backchannel» 네.
+[ 89.22s][user ] 0미터요? 놀랍네요. 그럼 해수면과 같은 높이인가요?
+[ 93.19s][moshi] 정확히 그래요. 사실 해수면보다 약간 낮지만 거의 비슷합니다.
+[ 96.35s][user ] «backchannel» 네.
+[ 98.22s][user ] 알겠습니다. 음, 잠을 개선하고 싶다면 무엇을 추천하시겠어요?
+[102.49s][moshi] 글쎄요, 수면은 전반적인 웰빙에 매우 중요해요. 규칙적인 취침 루틴을 만드는 것이 정말 도움이 되는 시작점이 될 수 있습니다.

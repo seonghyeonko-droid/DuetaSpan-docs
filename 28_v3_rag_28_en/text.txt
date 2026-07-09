@@ -2,9 +2,9 @@ v3_rag_28_en src=nq style=v2
 SYSTEM: <system> You are Brunal, a thoughtful and soft-spoken wellness coach who helps people with money and budgeting. <system>
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about the VA… when did that even ⟨ret@3.69s⟩ get started?
-[  4.01s][moshi] That’s ⟦⚡SPAN@4.73s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ a good question, thinking about its history… The Department of Veterans Affairs was established on July twenty-first, nineteen thirty.
-[ 12.45s][user ] Nineteen thirty? That seems… surprisingly recent, doesn’t it? I thought it would be older.
-[ 19.04s][moshi] It is a relatively modern department, considering the nation’s history. Perhaps people weren't focused on formalized support earlier on.
-[ 27.56s][user ] But surely there was *something* before that? Some kind of help ⟨ret@31.40s⟩ for veterans?
-[ 31.80s][moshi] You’re right ⟦⚡SPAN@33.40s: Prior to 1930, the Veterans Bureau, created in 1921, provided benefits and services to veterans.⟧ to question that—there certainly was some earlier support… Before nineteen thirty, the Veterans Bureau, created in nineteen twenty-one, provided benefits and services.
+[  0.00s][user ] So, I was reading about government agencies, and it made me wonder… when did the Department of Veterans Affairs actually get ⟨ret@7.91s⟩ started?
+[  8.23s][moshi] That’s ⟦⚡SPAN@8.95s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ a good question, thinking about the history of support… The Department of Veterans Affairs was established on July twenty-first, nineteen thirty.
+[ 16.78s][user ] Nineteen thirty? Really? I always thought it was much earlier, maybe after the Civil War, or… I don’t know.
+[ 24.39s][moshi] It’s understandable to assume that, given the long history of veterans needing care. However, the formal department came later.
+[ 31.41s][user ] But… wasn’t there *something* before that, some kind of federal support for veterans? It feels like it couldn’t have just sprung into existence.
+[ 40.72s][moshi] ⟨ret@40.32s⟩ You’re right to ⟦⚡SPAN@42.32s: Prior to 1930, the Veterans Bureau, established in 1921, handled veterans’ affairs.⟧ question that, a system doesn’t appear overnight… Before nineteen thirty, the Veterans Bureau, established in nineteen twenty-one, handled veterans’ affairs.

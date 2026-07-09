@@ -1,54 +1,68 @@
 # v3_fstart_15_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Is there anything a little more af | S3 Public transport sounds good. Can  | S4 No, that’s fine. Go ahead and book
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, four seventy… is there a way  | S3 Is parking usually difficult at Bo | S4 Okay, the bus sounds good. What ti
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     3.68s  <ret> 발화 (turn1 첫 프레임)
-     3.74s  user  발화 끝
-     3.76s  agent 발화 시작: <ret> Let's pinpoint that iconic landmark for you— It’s at -
-     4.96s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.66s]: (tool result) The Sydney Opera House is located at -33.8568° latitude 
-     8.64s  user  발화 시작: Oh.
-     9.09s  user  발화 끝
-    12.94s  user  발화 시작: That’s helpful. Can you find me hotels near that location?
-    13.08s  agent 발화 끝
-    16.70s  <ret> 발화 (turn4 첫 프레임)
-    16.94s  agent 발화 시작: <ret> Certainly, I can search for nearby accommodations— The
-    17.10s  user  발화 끝
-    17.98s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.49s]: (tool result) The Park Hyatt Sydney has a rating of 4.5 stars and cost
-    23.49s  user  발화 시작: Is there anything a little more affordable?
-    23.70s  agent 발화 끝
-    26.02s  <ret> 발화 (turn6 첫 프레임)
-    26.10s  agent 발화 시작: <ret> Of course, let’s broaden the search for lower prices— 
-    26.21s  user  발화 끝
-    28.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.69s]: (tool result) The Russell Hotel has a rating of 4.0 stars and costs $2
-    30.98s  user  발화 시작: Right.
-    31.42s  user  발화 끝
-    33.74s  user  발화 시작: Hmm, that sounds better. What’s the best way to get there fr
-    33.88s  agent 발화 끝
-    38.50s  <ret> 발화 (turn9 첫 프레임)
-    38.73s  agent 발화 시작: <ret> Let’s figure out the fastest route from the airport— D
-    38.78s  user  발화 끝
-    39.62s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.22s]: (tool result) Driving takes 20 minutes and costs $25, while public tra
-    41.10s  user  발화 시작: Yeah.
-    41.59s  user  발화 끝
-    46.57s  user  발화 시작: Public transport sounds good. Can you book me a—
-    46.60s  agent 발화 끝
-    49.62s  user  발화 끝
-    50.03s  agent 발화 시작: Absolutely, I can certainly arrange that for you, but—
-    52.54s  user  발화 시작: Actually, before you book, does it involve a lot of walking?
-    53.22s  agent 발화 끝
-    56.29s  <ret> 발화 (turn14 첫 프레임)
-    56.37s  agent 발화 시작: <ret> That’s a good question to consider, and— The public tr
-    56.52s  user  발화 끝
-    57.57s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.51s]: (tool result) The public transport route involves 15 minutes of walkin
-    58.68s  user  발화 시작: Yeah.
-    59.17s  user  발화 끝
-    61.96s  agent 발화 시작: Knowing that detail helps ensure a comfortable journey— Perh
-    62.12s  agent 발화 끝
-    67.01s  agent 발화 끝
-    67.44s  user  발화 시작: No, that’s fine. Go ahead and book it for me then.
-    70.83s  <ret> 발화 (turn18 첫 프레임)
-    70.91s  agent 발화 시작: <ret> Wonderful, let’s confirm that public transport booking
-    71.00s  user  발화 끝
-    72.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.71s]: (tool result) Your public transport ticket is booked, confirmation num
-    78.32s  agent 발화 끝
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     3.74s  agent 발화 시작: <ret> Let's pinpoint that iconic landmark for you— That's ne
+     3.80s  user  발화 끝
+     4.78s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.27s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
+     8.95s  user  발화 시작: Yeah.
+     9.77s  user  발화 끝
+    15.89s  agent 발화 끝
+    15.96s  user  발화 시작: And what’s the quickest driving route from there to Bondi Be
+    18.68s  <ret> 발화 (turn4 첫 프레임)
+    18.91s  agent 발화 시작: <ret> Certainly, I can map out the best route— The drive to 
+    18.92s  user  발화 끝
+    20.28s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.78s]: (tool result) The fastest route is via the Cahill Expressway and Cross
+    26.55s  agent 발화 끝
+    27.10s  user  발화 시작: That sounds good. Are there any tolls on that route?
+    29.48s  <ret> 발화 (turn6 첫 프레임)
+    29.56s  agent 발화 시작: <ret> Let me check the toll information for that route— Ther
+    29.78s  user  발화 끝
+    31.24s  ⚡SPAN 주입 [d'=1.76s / d_lead=2.99s]: (tool result) Yes, there is a toll of approximately four dollars and s
+    37.54s  agent 발화 끝
+    39.31s  user  발화 시작: Hmm, four seventy… is there a way to avoid the tolls?
+    42.32s  <ret> 발화 (turn8 첫 프레임)
+    42.56s  agent 발화 시작: <ret> I can certainly explore alternative routes— Taking New
+    42.64s  user  발화 끝
+    43.28s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.09s]: (tool result) Avoiding tolls adds approximately nine minutes to the tr
+    48.01s  user  발화 시작: Yeah, totally.
+    49.25s  user  발화 끝
+    50.58s  agent 발화 끝
+    51.63s  user  발화 시작: Nine minutes is—
+    53.01s  user  발화 시작: Is parking usually difficult at Bondi?
+    53.05s  user  발화 끝
+    55.65s  agent 발화 시작: That’s a good point to consider. Parking at Bondi Beach can 
+    55.78s  user  발화 끝
+    62.82s  <ret> 발화 (turn13 첫 프레임)
+    62.89s  agent 발화 시작: <ret> Right now, parking is moderate, with a ten to fifteen 
+    62.92s  agent 발화 끝
+    64.51s  user  발화 시작: Yeah.
+    64.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) Bondi Beach parking availability is currently moderate, 
+    65.24s  user  발화 끝
+    66.92s  <ret> 발화 (turn15 첫 프레임)
+    67.00s  agent 발화 시작: <ret> I can also check for parking garages nearby if you’d p
+    67.05s  agent 발화 끝
+    68.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.94s]: (tool result) There are three parking garages near Bondi Beach, with h
+    74.73s  user  발화 시작: Wow, that's pretty expensive.
+    74.88s  agent 발화 끝
+    76.51s  agent 발화 시작: It is, isn't it? Perhaps public transport would be a more ec
+    76.62s  user  발화 끝
+    81.14s  <ret> 발화 (turn18 첫 프레임)
+    81.53s  agent 발화 시작: <ret> The 380 bus is a cheaper option, running every fifteen
+    81.65s  agent 발화 끝
+    83.02s  user  발화 시작: Yeah.
+    83.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) The 380 bus from Circular Quay to Bondi Beach runs every
+    83.65s  user  발화 끝
+    86.63s  agent 발화 끝
+    87.61s  user  발화 시작: Okay, the bus sounds good. What time does the next one leave
+    90.42s  <ret> 발화 (turn21 첫 프레임)
+    90.66s  agent 발화 시작: <ret> Let me check the bus schedule for you— The next 380 bu
+    90.76s  user  발화 끝
+    92.02s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.86s]: (tool result) The next 380 bus departs Circular Quay at 10:17 AM.
+    96.29s  user  발화 시작: Perfect. Thanks so much for your help!
+    96.73s  agent 발화 끝
+    98.38s  agent 발화 시작: You’re very welcome! I’m glad I could help you plan your tri
+    98.55s  user  발화 끝
+   105.23s  agent 발화 끝

@@ -4,34 +4,42 @@ SYSTEM: <system> You are Helion, a upbeat and supportive counselor who helps peo
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  What are the latitude and longitude of the Sydney Opera House?
-      That’s helpful. Can you find me hotels near that location?
-  S2  Is there anything a little more affordable?
-      Hmm, that sounds better. What’s the best way to get there from the air
-  S3  Public transport sounds good. Can you book me a—
-      Actually, before you book, does it involve a lot of walking?
-  S4  No, that’s fine. Go ahead and book it for me then.
+      And what’s the quickest driving route from there to Bondi Beach?
+      That sounds good. Are there any tolls on that route?
+  S2  Hmm, four seventy… is there a way to avoid the tolls?
+      Nine minutes is—
+  S3  Is parking usually difficult at Bondi?
+      Wow, that's pretty expensive.
+  S4  Okay, the bus sounds good. What time does the next one leave?
+      Perfect. Thanks so much for your help!
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  3.76s][moshi] ⟨ret@3.68s⟩ Let's ⟦⚡SPAN@4.96s: (tool result) The Sydney Opera House is located at -33.8568° latitude and 151.2153° longitude.⟧ pinpoint that iconic landmark for you— It’s at -33.8568 latitude and 151.2153 longitude.
-[  8.64s][user ] «backchannel» Oh.
-[ 12.94s][user ] That’s helpful. Can you find me hotels near that ⟨ret@16.70s⟩ location?
-[ 16.94s][moshi] Certainly, I ⟦⚡SPAN@17.98s: (tool result) The Park Hyatt Sydney has a rating of 4.5 stars and costs $520 per night.⟧ can search for nearby accommodations— The Park Hyatt Sydney is 4.5 stars and costs $520 a night.
-      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
-[ 23.49s][user ] Is there anything a little more affordable?
-[ 26.10s][moshi] ⟨ret@26.02s⟩ Of course, let’s broaden ⟦⚡SPAN@28.02s: (tool result) The Russell Hotel has a rating of 4.0 stars and costs $280 per night.⟧ the search for lower prices— The Russell Hotel is 4.0 stars, costing $280 per night.
-      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "max_price": "300"}}
-[ 30.98s][user ] «backchannel» Right.
-[ 33.74s][user ] Hmm, that sounds better. What’s the best way to get there from the ⟨ret@38.50s⟩ airport?
-[ 38.73s][moshi] Let’s figure ⟦⚡SPAN@39.62s: (tool result) Driving takes 20 minutes and costs $25, while public transport takes 30 minutes and costs $10.⟧ out the fastest route from the airport— Driving is 20 minutes at $25, public transport is 30 minutes at $10.
-      CALL: {"function": "maps_directions", "arguments": {"origin": "Sydney Airport", "destination": "The Russell Hotel"}}
-[ 41.10s][user ] «backchannel» Yeah.
-[ 46.57s][user ] Public transport sounds good. Can you book me a—
-[ 50.03s][moshi] «interrupted» Absolutely, I can certainly arrange that for you, but—
-[ 52.54s][user ] «interrupts_prev» Actually, before you book, does it involve a lot of walking?
-[ 56.37s][moshi] ⟨ret@56.29s⟩ That’s a good ⟦⚡SPAN@57.57s: (tool result) The public transport route involves 15 minutes of walking.⟧ question to consider, and— The public transport route includes fifteen minutes of walking.
-[ 58.68s][user ] «backchannel» Yeah.
-[ 61.96s][moshi] Knowing that detail helps ensure a comfortable journey— Perhaps we can explore other options if needed.
-[ 67.44s][user ] No, that’s fine. Go ahead and book it for me then.
-[ 70.91s][moshi] ⟨ret@70.83s⟩ Wonderful, let’s confirm ⟦⚡SPAN@72.83s: (tool result) Your public transport ticket is booked, confirmation number is AX927B.⟧ that public transport booking— Your ticket is booked, confirmation number AX927B.
-      CALL: {"function": "transit_book", "arguments": {"origin": "Sydney Airport", "destination": "The Russell Hotel", "transport_type": "public"}}
+[  3.74s][moshi] ⟨ret@3.66s⟩ Let's ⟦⚡SPAN@4.78s: (tool result) The Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.⟧ pinpoint that iconic landmark for you— That's negative thirty-three point eight five six eight latitude, and one hundred fifty-one point two one five three longitude.
+[  8.95s][user ] «backchannel» Yeah.
+[ 15.96s][user ] And what’s the quickest driving route from there to Bondi Beach?
+[ 18.91s][moshi] ⟨ret@18.68s⟩ Certainly, I can ⟦⚡SPAN@20.28s: (tool result) The fastest route is via the Cahill Expressway and Cross City Tunnel, taking approximately twent⟧ map out the best route— The drive to Bondi Beach will take about twenty-two minutes using the Cahill Expressway.
+      CALL: {"function": "maps_route", "arguments": {"origin": "Sydney Opera House", "destination": "Bondi Beach", "mode": "driving"}}
+[ 27.10s][user ] That sounds good. Are there any tolls on that route?
+[ 29.56s][moshi] ⟨ret@29.48s⟩ Let me check the ⟦⚡SPAN@31.24s: (tool result) Yes, there is a toll of approximately four dollars and seventy cents on the Cross City Tunnel.⟧ toll information for that route— There’s a toll of four dollars and seventy cents for using the Cross City Tunnel.
+      CALL: {"function": "maps_toll_info", "arguments": {"route": "Cahill Expressway and Cross City Tunnel"}}
+[ 39.31s][user ] Hmm, four seventy… is there a way to avoid the ⟨ret@42.32s⟩ tolls?
+[ 42.56s][moshi] I ⟦⚡SPAN@43.28s: (tool result) Avoiding tolls adds approximately nine minutes to the trip, with a route via New South Head Road⟧ can certainly explore alternative routes— Taking New South Head Road will avoid the tolls, but add about nine minutes to the drive.
+      CALL: {"function": "maps_route", "arguments": {"origin": "Sydney Opera House", "destination": "Bondi Beach", "mode": "driving", "avoid_tolls": "true"}}
+[ 48.01s][user ] «backchannel» Yeah, totally.
+[ 51.63s][user ] Nine minutes is—
+[ 53.01s][user ] Is parking usually difficult at Bondi?
+[ 55.65s][moshi] «interrupted» That’s a good point to consider. Parking at Bondi Beach can be quite challenging, especially during peak hours—
+[ 62.89s][moshi] ⟨ret@62.82s⟩ Right now, parking is moderate, ⟦⚡SPAN@64.82s: (tool result) Bondi Beach parking availability is currently moderate, with an estimated wait time of ten to fi⟧ with a ten to fifteen minute wait.
+[ 64.51s][user ] «backchannel» Yeah.
+[ 67.00s][moshi] ⟨ret@66.92s⟩ I can also check for ⟦⚡SPAN@68.92s: (tool result) There are three parking garages near Bondi Beach, with hourly rates ranging from twenty to thirt⟧ parking garages nearby if you’d prefer— Nearby parking garages cost between twenty and thirty-five dollars an hour.
+      CALL: {"function": "maps_parking", "arguments": {"location": "Bondi Beach"}}
+[ 74.73s][user ] Wow, that's pretty expensive.
+[ 76.51s][moshi] «interrupted» It is, isn't it? Perhaps public transport would be a more economical option—
+[ 81.53s][moshi] ⟨ret@81.14s⟩ The 380 bus is ⟦⚡SPAN@83.14s: (tool result) The 380 bus from Circular Quay to Bondi Beach runs every fifteen minutes and costs approximately⟧ a cheaper option, running every fifteen minutes for two fifty.
+[ 83.02s][user ] «backchannel» Yeah.
+[ 87.61s][user ] Okay, the bus sounds good. What time does the next one ⟨ret@90.42s⟩ leave?
+[ 90.66s][moshi] Let me check ⟦⚡SPAN@92.02s: (tool result) The next 380 bus departs Circular Quay at 10:17 AM.⟧ the bus schedule for you— The next 380 bus leaves at ten seventeen AM.
+      CALL: {"function": "maps_transit", "arguments": {"route": "380", "station": "Circular Quay"}}
+[ 96.29s][user ] Perfect. Thanks so much for your help!
+[ 98.38s][moshi] You’re very welcome! I’m glad I could help you plan your trip to Bondi Beach. [happy] Enjoy the sunshine!

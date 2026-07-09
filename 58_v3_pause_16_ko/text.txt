@@ -1,0 +1,40 @@
+v3_pause_16_ko src=nq style=v1
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 침착한 개인 가이드 Braera입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  음, 책을 읽고 있었구나.
+      “빅 브라더”라는 말이 나왔대.
+      감시 같은 거에 대해 많이 들어봤지, 그렇지?
+  S2  그냥 흔히 있는 말인 줄 알았는데…
+      현대적인 발명품 같은 건 줄 알았는데, 책이라니? 신기하다.
+  S3  오웰이 진짜 감시를 염두에 두고 쓴 건지, 아니면 다른 의미였는지 궁금해.
+      애국적인 걸로 시작해서, 나중에 더 어두워진 거네?
+      [laugh] 아이러니하다, 그렇지 않아?
+  S4  지금 얼마나 많이 쓰이는지 알면 놀랄까?
+      와, 오천만 권이라니. 엄청난 독자네.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 음, 책을 읽고 있었구나.
+[  1.69s][user ] “빅 브라더”라는 말이 나왔대.
+[  3.80s][moshi] 그거 진짜 흥미로운 문화적 언급이야.
+[  6.32s][user ] 감시 같은 거에 대해 많이 들어봤지, ⟨ret@8.57s⟩ 그렇지?
+[  8.97s][moshi] 그 단어의 ⟦⚡SPAN@10.57s: The term "Big Brother" originates from George Orwell's dystopian novel *Nineteen Eighty-Four*.⟧ 유래를 알아볼까? 조지 오웰의 소설 *1984*년에 처음 나왔어. 천구백팔십사 년에 출판됐지.
+[ 14.61s][user ] «backchannel» 맞아요.
+[ 17.75s][user ] 그냥 흔히 있는 말인 줄 알았는데…
+[ 19.69s][user ] 현대적인 발명품 같은 건 줄 알았는데, 책이라니? 신기하다.
+[ 23.92s][moshi] 문학이 우리 언어에 영향을 주는 게 정말 놀랍지.
+[ 25.03s][user ] «backchannel» 아.
+[ 26.98s][user ] 오웰이 진짜 감시를 염두에 두고 쓴 건지, 아니면 다른 의미였는지 ⟨ret@31.36s⟩ 궁금해.
+[ 31.68s][moshi] 오웰의 의도는 ⟦⚡SPAN@33.36s: Orwell stated the concept was inspired by a poster from World War II promoting vigilance.⟧ 좀 복잡해. 전쟁 중에 시민들에게 경계를 늦추지 말라고 독려하는 포스터에서 아이디어를 얻었거든. 처음부터 감시 국가를 비판하려는 건 아니었어.
+[ 36.51s][user ] «backchannel» 네.
+[ 42.92s][user ] 애국적인 걸로 시작해서, 나중에 더 어두워진 거네?
+[ 46.56s][moshi] 맞아—소설의 맥락에 따라 의미가 바뀐 거지.
+[ 47.72s][user ] «backchannel» 그렇죠.
+[ 49.52s][user ] [laugh] 아이러니하다, 그렇지 않아?
+[ 51.97s][moshi] 생각해보면 꽤 애절한 반전이지.
+[ 55.29s][user ] 지금 얼마나 많이 쓰이는지 알면 ⟨ret@57.91s⟩ 놀랄까?
+[ 58.23s][moshi] 오웰이 오늘날 ⟦⚡SPAN@59.83s: *Nineteen Eighty-Four* has sold over fifty million copies worldwide since its publication.⟧ 어떻게 생각할지는 모르겠어. 그의 소설은 전 세계적으로 오천만 권 넘게 팔렸어. 지금도 영향력이 엄청나지.
+[ 64.34s][user ] «backchannel» 네네.
+[ 68.05s][user ] 와, 오천만 권이라니. 엄청난 독자네.
+[ 71.14s][moshi] 정말 우리 생각 방식에 큰 영향을 줬어.

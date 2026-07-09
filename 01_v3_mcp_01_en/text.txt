@@ -4,33 +4,32 @@ SYSTEM: <system> You are Koral, a grounded and empathetic personal guide who hel
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
   S1  Create a detailed map of the Apple website, focusing on the products.
-      Twenty-three? That seems… low. Are you sure it got everything?
-  S2  Yeah, broaden it. Everything. I want the *whole* site mapped.
-      Highlight just the products. And can you tell me— I— I mean, what’s th
-  S3  Is that the one with the titanium frame?
-      Okay, good. Now, can you find me the price of the base model iPhone 15
-  S4  That’s… more than I expected. Hmm. Okay, forget the iPhone for now. Ca
-      Perfect. Thanks, Koral.
+      Okay, good. Now, can you find me the current price of the latest iPhon
+  S2  Hmm, that's… a lot. Is there any trade-in program available?
+      What kind of credit could I get for my iPhone 13 Pro?
+  S3  Okay, that makes it a little better. Now, if I were to buy that iPhone
+      That's still pretty expensive. Are there any deals or promotions runni
+  S4  Zero percent financing, huh? Can you actually initiate the purchase fo
+      Wonderful, thank you so much.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.51s][moshi] ⟨ret@4.44s⟩ Certainly, ⟦⚡SPAN@5.56s: (tool result) The tavily-map search completed; it found 23 product pages on apple.com.⟧ I can map out the Apple website for you— I’ve mapped twenty-three product pages on Apple’s website, ready for your review.
-[  8.55s][user ] «backchannel» Okay.
-[ 14.31s][user ] Twenty-three? That seems… low. Are you sure it got everything?
-[ 19.31s][moshi] It’s possible some sub-categories weren’t included in that initial scan. Would you like me to broaden the search parameters?
-[ 22.82s][user ] «backchannel» Right.
-[ 29.32s][user ] Yeah, broaden it. Everything. I want the *whole* site mapped.
-[ 34.18s][moshi] ⟨ret@33.94s⟩ Of ⟦⚡SPAN@35.06s: (tool result) The tavily-map search completed; it found 117 pages on apple.com.⟧ course, expanding the scope— The expanded search found one hundred and seventeen pages on apple.com. It’s quite a large site!
-[ 39.25s][user ] «backchannel» Uh-huh.
-[ 43.52s][moshi] I can highlight the product pages specifically, or show the entire site structure. Which would be most helpful for your planning?
-[ 52.74s][user ] Highlight just the products. And can you tell me— I— I mean, what’s the newest iPhone model currently listed?
-[ 60.74s][moshi] ⟨ret@60.66s⟩ Let's ⟦⚡SPAN@61.78s: (tool result) The Apple website lists the iPhone 15 Pro Max as the newest model.⟧ pinpoint the latest iPhone— Currently, the newest iPhone model listed on Apple’s website is the iPhone 15 Pro Max.
-[ 70.53s][user ] Is that the one with the titanium frame?
-[ 73.33s][moshi] Yes, that’s correct. The iPhone 15 Pro Max does feature an aerospace-grade titanium design. It’s quite a durable build.
-[ 82.91s][user ] Okay, good. Now, can you find me the price of the base model ⟨ret@87.54s⟩ iPhone 15?
-[ 87.93s][moshi] Certainly, let's ⟦⚡SPAN@89.14s: (tool result) The base model iPhone 15 is listed at $799.00 on apple.com.⟧ check the pricing— The base model iPhone 15 is currently listed at seven hundred and ninety-nine dollars on Apple’s website.
-[ 92.78s][user ] «backchannel» Really?
-[ 97.49s][user ] That’s… more than I expected. Hmm. Okay, forget the iPhone for now. Can you set a reminder for me to check back on the price in two weeks?
-[107.27s][moshi] Absolutely. I’ve set a reminder to check the iPhone 15 price again in two weeks, on November twenty-ninth.
-[109.86s][user ] «backchannel» Oh.
-[114.71s][user ] Perfect. Thanks, Koral.
+[  4.50s][moshi] ⟨ret@4.43s⟩ Certainly, I ⟦⚡SPAN@5.55s: (tool result) The tavily-map tool found 14 product categories on the Apple website: iPhone, iPad, Mac, Apple W⟧ can map out the Apple website for you— That map details fourteen product categories available on Apple’s website, ranging from iPhones to support resources.
+[ 14.03s][user ] Okay, good. Now, can you find me the current price of the latest iPhone 15 Pro Max, with 256 gigabytes ⟨ret@21.35s⟩ of storage?
+[ 21.75s][moshi] Let’s ⟦⚡SPAN@22.63s: (tool result) The Apple website lists the iPhone 15 Pro Max with 256GB storage at $1199.⟧ check the current pricing— The iPhone 15 Pro Max with 256 gigabytes of storage is currently listed for $1199.
+[ 25.51s][user ] «backchannel» Nice.
+[ 32.42s][user ] Hmm, that's… a lot. Is there any trade-in program available?
+[ 36.76s][moshi] Apple does offer a trade-in program, yes.
+[ 40.23s][user ] What kind of credit could I get for my iPhone 13 Pro?
+[ 43.42s][moshi] «interrupted» Let me quickly estimate that trade-in value for you—
+[ 46.69s][moshi] ⟨ret@46.45s⟩ Based on your ⟦⚡SPAN@48.45s: (tool result) The Apple Trade In tool estimates your iPhone 13 Pro in good condition is worth $300 towards a n⟧ iPhone 13 Pro’s condition, Apple estimates a trade-in value of $300.
+[ 48.90s][user ] «backchannel» Mm-hmm.
+[ 53.01s][user ] Okay, that makes it a little better. Now, if I were to buy that iPhone 15 Pro Max and trade in my 13 Pro, what would the final price ⟨ret@61.30s⟩ be?
+[ 61.53s][moshi] Let's ⟦⚡SPAN@62.58s: (tool result) Subtracting the $300 trade-in from the $1199 iPhone 15 Pro Max results in a final price of $899.⟧ calculate the final cost— After applying the $300 trade-in, the final price for the iPhone 15 Pro Max would be $899.
+[ 71.56s][user ] That's still pretty expensive. Are there any deals or promotions running right now?
+[ 76.27s][moshi] Currently, Apple is offering zero percent financing for twelve months.
+[ 80.47s][user ] Zero percent financing, huh? Can you actually initiate the purchase for me, trade-in included?
+[ 86.94s][moshi] ⟨ret@86.86s⟩ I can certainly ⟦⚡SPAN@88.22s: (tool result) Order confirmed: iPhone 15 Pro Max (256GB) with trade-in of iPhone 13 Pro. Total: $899. Financin⟧ begin that process for you— Your order for the iPhone 15 Pro Max is confirmed, with a final cost of $899 and shipping scheduled for December 27th.
+[ 92.57s][user ] «backchannel» Really?
+[ 96.62s][user ] Wonderful, thank you so much.
+[ 98.57s][moshi] You're very welcome. I’m glad I could help with your purchase.

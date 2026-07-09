@@ -1,0 +1,13 @@
+v3_rag_24_ko src=nq style=v1
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치인 Korana입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 가족사를 조사하신다니 정말 멋지네요. “du Plessis”라는 성에 대해 궁금하신가 ⟨ret@5.46s⟩ 봐요.
+[  5.78s][moshi] 그 ⟦⚡SPAN@6.58s: Du Plessis is a French surname, originating from the region of Normandy.⟧ 성은 프랑스에서 유래되었어요. 프랑스 노르망디 지역에서 시작된 이름이라고 합니다.
+[  9.53s][user ] «backchannel» 예.
+[ 11.56s][user ] 오, 노르망디요! 좀 놀랍네요. 스페인어처럼 들릴 거라고 생각했는데…
+[ 16.62s][moshi] 그렇게 생각하실 만하죠. 그 발음이 여러 언어에서 잘 어울리거든요.
+[ 20.42s][moshi] ⟨ret@20.34s⟩ 좀 ⟦⚡SPAN@21.54s: The name was brought to South Africa by Huguenots in the seventeenth century.⟧ 더 자세히 알아볼까요… 위그노들이 17세기에 듀 플레시라는 성을 남아프리카로 가져갔다고 합니다.
+[ 27.33s][user ] 위그노라… 그러면 개신교 이름이라는 뜻인가요? 제가 들었던 이야기들을 생각하면 그 말이 맞는 것 같아요.
+[ 34.05s][moshi] 가족 이야기는 진실을 담고 있는 경우가 많으니, 그럴 가능성이 높겠네요.
+[ 38.29s][moshi] ⟨ret@37.89s⟩ ⟦⚡SPAN@38.93s: In Afrikaans, the name is often spelled Du Plessis, without the French accent.⟧ 역사가 이름에 영향을 주는 모습이 흥미롭네요… 아프리칸스어로는 듀 플레시라고 쓰는데, 프랑스어 악센트는 없다고 합니다.

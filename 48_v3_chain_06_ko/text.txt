@@ -1,0 +1,61 @@
+v3_chain_06_ko src=mcp style=mcp_chained
+SYSTEM: <system> 당신은 돈과 예산 관리에 도움을 주는 현실적이고 공감적인 개인 가이드, Lio입니다. 기본적으로 반말로 말합니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  내 에이전트 사용자 설정을 MyCustomBrowser 버전 십 점 오로 바꿔 줘.
+      어, 좋아. 그럼 근처에 늦게까지 하는 식당 좀 찾아 줘.
+      음, Dino's 괜찮은 것 같아. 전화번호 좀 알려 줘.
+      좋아, 오늘 밤 열 시에 두 명 예약해 줘.
+  S2  완벽해. 그럼, 음, 거기로 가는 예상 이동 시간은 얼마나 돼?
+      십오 분, 좋네. [말 끊으며] 그리고 지금 거긴 날씨가 어때?
+      응, 부탁해.
+  S3  십오도, 알았어. 집에서 나갈 시간을 아홉 시 반으로 알려 줘.
+      좋아. 그리고, 음, 운전할 때 들을 플레이리스트 좀 찾아 줘. 신나는 걸로.
+      Road Trip Vibes, 괜찮은 것 같아. 가는 길에 교통 체증은 어때?
+      5분, 알았어. 그럼 예약은 두 명, 열 시 그대로지?
+  S4  그래. 그리고 Dino’s 주소 다시 한번만 알려 줘.
+      완벽해. 내가— 내가 생각하기에 다 된 것 같아. 고마워, 리오.
+      그래, 그런 것 같아.
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 내 에이전트 사용자 설정을 MyCustomBrowser 버전 십 점 오로 바꿔 ⟨ret@4.08s⟩ 줘.
+[  4.32s][moshi] 알았어, 브라우저 설정을 ⟦⚡SPAN@6.08s: (tool result) The user agent is now set to MyCustomBrowser version 10.5.⟧ 조절해 줄게. 지금 브라우저는 MyCustomBrowser, 버전 십 점 오로 인식돼.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
+[ 10.90s][user ] 어, 좋아. 그럼 근처에 늦게까지 하는 식당 좀 찾아 ⟨ret@14.11s⟩ 줘.
+[ 14.35s][moshi] 당연하지, ⟦⚡SPAN@15.31s: (tool result) Found three restaurants: Dino's Diner open until 2 AM, The Greasy Spoon open until 3 AM, and Mid⟧ 늦은 밤에 밥 먹을 데를 찾아볼까. 늦게까지 하는 식당 세 군데 찾았어: Dino's Diner, The Greasy Spoon, 그리고 Midnight Bites.
+      CALL: {"function": "search_restaurants", "arguments": {"location": "current", "open_late": true}}
+[ 20.20s][user ] «backchannel» 음.
+[ 24.31s][user ] 음, Dino's 괜찮은 것 같아. 전화번호 좀 알려 줘.
+[ 26.95s][moshi] ⟨ret@26.88s⟩ Dino's Diner ⟦⚡SPAN@28.88s: (tool result) Dino's Diner's phone number is 555-123-4567 and address is 123 Main Street.⟧ 연락처 찾아볼게. Dino's Diner 전화번호는 오오오-일이삼-사오육칠이야.
+      CALL: {"function": "restaurant_details", "arguments": {"restaurant_name": "Dino's Diner"}}
+[ 30.46s][user ] «backchannel» 어.
+[ 33.13s][user ] 좋아, 오늘 밤 열 시에 두 명 예약해 ⟨ret@36.02s⟩ 줘.
+[ 36.42s][moshi] 예약해 줄게. ⟦⚡SPAN@38.02s: (tool result) Reservation confirmed at Dino's Diner for two people at 10:00 PM tonight. Confirmation number is⟧ Dino's Diner에 두 명, 오늘 밤 열 시로 예약됐어. 예약 번호는칠팔구공이야.
+      CALL: {"function": "make_reservation", "arguments": {"restaurant_name": "Dino's Diner", "party_size": 2, "time": "22:00"}}
+[ 43.80s][user ] 완벽해. 그럼, 음, 거기로 가는 예상 이동 시간은 얼마나 ⟨ret@48.17s⟩ 돼?
+[ 48.49s][moshi] 이동 시간 계산해 줄게. ⟦⚡SPAN@50.17s: (tool result) Travel time to Dino's Diner is approximately fifteen minutes by car.⟧ Dino's Diner까지 가는 데 대략 십오 분 걸릴 거야.
+      CALL: {"function": "get_travel_time", "arguments": {"destination": "Dino's Diner", "mode": "driving"}}
+[ 54.21s][user ] 십오 분, 좋네. [말 끊으며] 그리고 지금 거긴 날씨가 어때?
+[ 58.38s][moshi] «interrupted» —거기 날씨 알려줄게—
+[ 59.21s][user ] «interrupts_prev» 응, 부탁해.
+[ 60.26s][moshi] ⟨ret@60.10s⟩ 알았어, 목적지 날씨 ⟦⚡SPAN@62.10s: (tool result) The weather at 123 Main Street is currently 65 degrees Fahrenheit and partly cloudy.⟧ 확인해 볼까. Dino's Diner는 현재 섭씨 십오도에 구름 조금 낀 날씨야.
+      CALL: {"function": "get_weather", "arguments": {"location": "123 Main Street"}}
+[ 67.28s][user ] 십오도, 알았어. 집에서 나갈 시간을 아홉 시 반으로 알려 ⟨ret@71.39s⟩ 줘.
+[ 71.55s][moshi] 그렇게 해 ⟦⚡SPAN@72.67s: (tool result) Reminder set for 9:30 PM: Leave for Dino's Diner.⟧ 줄게. Dino's Diner로 출발하는 걸 아홉 시 반에 알려주는 알림 설정했어.
+      CALL: {"function": "set_reminder", "arguments": {"time": "21:30", "message": "Leave for Dino's Diner"}}
+[ 77.24s][user ] 좋아. 그리고, 음, 운전할 때 들을 플레이리스트 좀 찾아 줘. 신나는 걸로.
+[ 82.46s][moshi] ⟨ret@82.39s⟩ 신나는 ⟦⚡SPAN@83.51s: (tool result) Playlist "Road Trip Vibes" created with 50 upbeat songs.⟧ 운전 플레이리스트 만들어 줄게. “Road Trip Vibes”라는 이름으로 신나는 노래 쉰 곡이 있는 플레이리스트를 만들었어.
+      CALL: {"function": "create_playlist", "arguments": {"genre": "upbeat", "activity": "driving"}}
+[ 87.22s][user ] «backchannel» 맞아.
+[ 90.72s][user ] Road Trip Vibes, 괜찮은 것 같아. 가는 길에 교통 체증은 ⟨ret@94.80s⟩ 어때?
+[ 95.19s][moshi] 현재 ⟦⚡SPAN@95.92s: (tool result) Moderate traffic on Main Street, adding approximately 5 minutes to the trip.⟧ 교통 상황 확인해 볼게. 약간의 교통 체증이 있어서 운전 시간이 약 5분 정도 더 걸릴 거야.
+      CALL: {"function": "get_traffic", "arguments": {"destination": "Dino's Diner"}}
+[101.66s][user ] 5분, 알았어. 그럼 예약은 두 명, 열 시 그대로지?
+[105.71s][moshi] 응, 예약은 두 명, 밤 열 시로 그대로 확정됐어.
+[109.03s][user ] 그래. 그리고 Dino’s 주소 다시 한번만 알려 ⟨ret@111.45s⟩ 줘.
+[111.69s][moshi] 알았어, 다시 ⟦⚡SPAN@113.45s: (tool result) Dino's Diner is located at 123 Main Street.⟧ 한번 알려줄게. Dino’s Diner는 Main Street 일이삼 번지에 있어.
+[119.40s][user ] 완벽해. 내가— 내가 생각하기에 다 된 것 같아. 고마워, 리오.
+[123.95s][moshi] 천만에! 오늘 저녁 계획이 아주 좋을 것 같아.
+[128.05s][user ] 그래, 그런 것 같아.
+[129.23s][moshi] 도움이 될 수 있어서 기뻐.

@@ -1,0 +1,77 @@
+v3_selfc_08_ko src=mcp style=mcp_selfcorrect
+SYSTEM: <system> 당신은 건강 및 일상 습관에 대해 사람들을 돕는 부드럽고 사려 깊은 상담가 Oruus입니다. <system>
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
+  S1  시카고에서 덴버 가는 버스 세 명꺼 5월 10일에 보여 줘.
+      그 버스 가격은 얼마야?
+      음… 7시보다 더 일찍 출발하는 거 없어?
+      비행기는 어때?
+  S2  프론티어 항공편이 괜찮은 것 같아. 예약해 줄 수 있어?
+      좋아. 그리고 공항으로 출발하기 전에 정오에 알림을 설정해 줄 수 있어?
+      고마워.
+  S3  덴버에 갈 때 특별히 챙겨야 할 게 있어?
+      도움이 되네. 고산병은 어때?
+      물 많이 마셔야 해?
+  S4  좋아, 알아두면 좋겠네. 맛있는 식당 있어?
+      루트 다운이 흥미로운 것 같아. 더 자세히 알려줄 수 있어?
+      완벽해. 다시 한번 모든 도움에 감사해!
+  (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
+
+[  0.00s][user ] 시카고에서 덴버 가는 버스 세 명꺼 5월 10일에 보여 줘.
+[  4.20s][moshi] ⟨ret@3.89s⟩ 네, 여행 ⟦⚡SPAN@5.89s: (tool result) Three buses are available on May tenth: a 7:00 AM departure on Greyhound, a 1:30 PM departure on⟧ 계획을 알아볼까요. 5월 10일에 이용 가능한 버스는 세 대 있어요—그레이하운드는 오전 7시, 플릭스버스는 오후 1시 30분, 그리고 완데루는 밤 9시에 출발합니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[  9.12s][user ] «backchannel» 응.
+[ 16.53s][user ] 그 버스 가격은 ⟨ret@18.14s⟩ 얼마야?
+[ 18.54s][moshi] 알겠습니다, ⟦⚡SPAN@19.58s: (tool result) The Greyhound bus departing at 7:00 AM costs one hundred fifty dollars for three passengers.⟧ 요금을 확인해 볼게요. 세 분을 위한 그레이하운드 오전 7시 출발 버스는 150달러입니다.
+      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_id": "Greyhound_7AM", "passengers": "three"}}
+[ 25.95s][moshi] ⟨ret@25.57s⟩ 플릭스버스 ⟦⚡SPAN@26.85s: (tool result) The FlixBus departing at 1:30 PM costs one hundred twenty dollars for three passengers.⟧ 요금은요… 플릭스버스 오후 1시 30분은 세 분에게 120달러입니다.
+      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_id": "FlixBus_130PM", "passengers": "three"}}
+[ 31.51s][moshi] ⟨ret@31.11s⟩ 마지막으로 ⟦⚡SPAN@32.79s: (tool result) The Wanderu bus departing at 9:00 PM costs one hundred eighty dollars for three passengers.⟧ 완데루를 살펴볼게요. 완데루 밤 9시는 180달러로 가장 비쌉니다.
+      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_id": "Wanderu_9PM", "passengers": "three"}}
+[ 38.30s][user ] 음… 7시보다 더 일찍 출발하는 거 ⟨ret@41.67s⟩ 없어?
+[ 41.80s][moshi] 더 ⟦⚡SPAN@42.95s: (tool result) No buses are scheduled before 7:00 AM on May tenth from Chicago to Denver.⟧ 일찍 출발하는 버스가 있는지 확인해 볼게요— 죄송하지만 5월 10일에는 오전 7시 이전에 출발하는 버스는 없습니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three", "time": "before 7:00 AM"}}
+[ 49.76s][user ] 비행기는 어때? ⟨ret@50.83s⟩
+[ 50.98s][moshi] 좋은 ⟦⚡SPAN@52.11s: (tool result) Four flights are available on May tenth: United at 8:00 AM for two hundred dollars, Southwest at⟧ 질문이에요— 이용 가능한 항공편은 네 개입니다—유나이티드는 오전 8시, 사우스웨스트는 오전 10시 30분, 프론티어는 오후 2시, 그리고 아메리칸은 오후 6시에 출발합니다.
+      CALL: {"function": "Flights_4_FindFlight", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 63.61s][moshi] ⟨ret@63.54s⟩ 모든 항공편은 세 ⟦⚡SPAN@65.54s: (tool result) The United flight departing at 8:00 AM costs six hundred dollars for three passengers.⟧ 분을 위한 요금입니다. 유나이티드 오전 8시 항공편은 세 분에게 600달러입니다.
+      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "United_8AM", "passengers": "three"}}
+[ 70.64s][moshi] ⟨ret@70.50s⟩ 사우스웨스트 ⟦⚡SPAN@71.78s: (tool result) The Southwest flight departing at 10:30 AM costs five hundred forty dollars for three passengers⟧ 항공편 가격을 확인해 볼게요. 사우스웨스트 오전 10시 30분 항공편은 540달러입니다.
+      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "Southwest_1030AM", "passengers": "three"}}
+[ 77.79s][moshi] ⟨ret@77.72s⟩ ⟦⚡SPAN@78.68s: (tool result) The Frontier flight departing at 2:00 PM costs four hundred fifty dollars for three passengers.⟧ 프론티어 항공편 비용은요… 프론티어 오후 2시는 450달러로 가장 저렴한 항공편입니다.
+      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "Frontier_2PM", "passengers": "three"}}
+[ 84.50s][moshi] ⟨ret@84.34s⟩ 마지막으로 ⟦⚡SPAN@85.62s: (tool result) The American flight departing at 6:00 PM costs six hundred sixty dollars for three passengers.⟧ 아메리칸 항공입니다. 아메리칸 오후 6시는 세 분에게 660달러입니다.
+      CALL: {"function": "Flights_4_GetPrice", "arguments": {"flight_id": "American_6PM", "passengers": "three"}}
+[ 88.77s][user ] «backchannel» 응.
+[ 91.60s][user ] 프론티어 항공편이 괜찮은 것 같아. 예약해 줄 수 ⟨ret@95.85s⟩ 있어?
+[ 96.01s][moshi] 물론 ⟦⚡SPAN@97.21s: (tool result) Flight Frontier_2PM for three passengers under the name user is confirmed; confirmation number i⟧ 예약해 드릴 수 있습니다. 프론티어 오후 2시 항공편이 예약되었으며, 확인 번호는 789456입니다.
+      CALL: {"function": "Flights_5_BookFlight", "arguments": {"flight_id": "Frontier_2PM", "passengers": "three", "name": "user"}}
+[103.88s][user ] 좋아. 그리고 공항으로 출발하기 전에 정오에 알림을 설정해 줄 수 있어?
+[109.06s][moshi] ⟨ret@108.98s⟩ 물론, ⟦⚡SPAN@110.10s: (tool result) Reminder set for May tenth at 12:00 PM: Leave for airport.⟧ 알림을 예약해 드릴 수 있습니다. 5월 10일 정오에 공항으로 출발하라는 알림이 설정되었습니다.
+      CALL: {"function": "Reminders_6_SetReminder", "arguments": {"time": "12:00 PM", "date": "May tenth", "description": "Leave for airport"}}
+[115.77s][user ] 고마워.
+[116.64s][moshi] 천만에요. 여행 준비를 도와드릴 수 있어서 기쁩니다.
+[121.96s][user ] 덴버에 갈 때 특별히 챙겨야 할 게 있어?
+[124.83s][moshi] ⟨ret@124.68s⟩ 덴버의 기후는 ⟦⚡SPAN@126.52s: <reference> Denver’s average high temperature in May is sixty-eight degrees Fahrenheit, with lows around forty⟧ 5월에도 변동성이 큽니다.
+[127.76s][moshi] 덴버의 5월 평균 최고 기온은 섭씨 18도, 최저 기온은 섭씨 7도이므로 여러 겹으로 입는 것이 가장 좋습니다.
+[132.89s][user ] «backchannel» 맞아.
+[134.62s][user ] 도움이 되네. 고산병은 ⟨ret@136.66s⟩ 어때?
+[136.82s][moshi] 고산병은 덴버에서 ⟦⚡SPAN@138.66s: <reference> Denver’s elevation is five thousand two hundred eighty feet above sea level.⟧ 우려해야 할 문제입니다.
+[139.97s][moshi] 덴버는 해발 1,600미터에 위치해 있으므로 수분을 충분히 섭취하고 과도한 운동은 피하는 것이 좋습니다.
+[144.15s][user ] «backchannel» 응.
+[147.02s][user ] 물 많이 마셔야 해?
+[148.47s][moshi] 네, 고도가 높은 곳에서는 수분 섭취가 중요합니다.
+[152.22s][moshi] 기압 변화로 인한 잠재적인 영향 관리를 위해서는 수분 섭취가 매우 중요합니다.
+[154.66s][user ] «backchannel» 음.
+[157.82s][user ] 좋아, 알아두면 좋겠네. 맛있는 식당 ⟨ret@160.91s⟩ 있어?
+[161.31s][moshi] 덴버는 ⟦⚡SPAN@162.35s: (tool result) Five restaurants are highly rated in Denver: Root Down, Mercantile Dining & Provision, Rioja, Ta⟧ 활기찬 요리 문화를 가지고 있습니다.
+      CALL: {"function": "Restaurants_7_FindRestaurant", "arguments": {"city": "Denver", "cuisine": "any"}}
+[164.22s][moshi] 루트 다운, 머캔타일, 리오하, 타버네타, 그리고 가드 앤 그레이스는 덴버에서 평점이 높은 식당입니다.
+[167.24s][user ] «backchannel» 응응.
+[171.73s][user ] 루트 다운이 흥미로운 것 같아. 더 자세히 알려줄 수 ⟨ret@175.59s⟩ 있어?
+[175.91s][moshi] 루트 다운은 ⟦⚡SPAN@177.19s: (tool result) Root Down is located at 1600 West 33rd Avenue, Denver, and serves globally-inspired cuisine with⟧ 독특한 메뉴로 유명합니다.
+      CALL: {"function": "Restaurants_8_GetRestaurantDetails", "arguments": {"restaurant_name": "Root Down"}}
+[178.58s][moshi] 루트 다운은 웨스트 33번가 1600번지에 위치해 있으며, 세계적으로 영감을 받은 지속 가능한 요리를 제공하고 전화번호는 303-996-3770입니다.
+[190.10s][user ] 완벽해. 다시 한번 모든 도움에 감사해!
+[193.42s][moshi] 천만에요. 덴버로의 즐거운 여행을 기원합니다.

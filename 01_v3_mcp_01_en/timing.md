@@ -1,54 +1,54 @@
 # v3_mcp_01_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Yeah, broaden it. Everything. I wa | S3 Is that the one with the titanium  | S4 That’s… more than I expected. Hmm.
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Hmm, that's… a lot. Is there any t | S3 Okay, that makes it a little bette | S4 Zero percent financing, huh? Can y
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.44s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> Certainly, I can map out the Apple website for you— I’
+     4.43s  <ret> 발화 (turn1 첫 프레임)
+     4.50s  agent 발화 시작: <ret> Certainly, I can map out the Apple website for you— Th
      4.53s  user  발화 끝
-     5.56s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.40s]: (tool result) The tavily-map search completed; it found 23 product pag
-     8.55s  user  발화 시작: Okay.
-     9.18s  user  발화 끝
-    14.20s  agent 발화 끝
-    14.31s  user  발화 시작: Twenty-three? That seems… low. Are you sure it got everythin
-    19.22s  user  발화 끝
-    19.31s  agent 발화 시작: It’s possible some sub-categories weren’t included in that i
-    22.82s  user  발화 시작: Right.
-    23.32s  user  발화 끝
-    28.17s  agent 발화 끝
-    29.32s  user  발화 시작: Yeah, broaden it. Everything. I want the *whole* site mapped
-    33.90s  user  발화 끝
-    33.94s  <ret> 발화 (turn7 첫 프레임)
-    34.18s  agent 발화 시작: <ret> Of course, expanding the scope— The expanded search fo
-    35.06s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.22s]: (tool result) The tavily-map search completed; it found 117 pages on a
-    39.25s  user  발화 시작: Uh-huh.
-    39.88s  user  발화 끝
-    43.50s  agent 발화 끝
-    43.52s  agent 발화 시작: I can highlight the product pages specifically, or show the 
-    52.74s  user  발화 시작: Highlight just the products. And can you tell me— I— I mean,
-    52.74s  agent 발화 끝
-    60.66s  <ret> 발화 (turn11 첫 프레임)
-    60.74s  agent 발화 시작: <ret> Let's pinpoint the latest iPhone— Currently, the newes
-    60.86s  user  발화 끝
-    61.78s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.47s]: (tool result) The Apple website lists the iPhone 15 Pro Max as the new
-    70.53s  user  발화 시작: Is that the one with the titanium frame?
-    70.62s  agent 발화 끝
-    73.21s  user  발화 끝
-    73.33s  agent 발화 시작: Yes, that’s correct. The iPhone 15 Pro Max does feature an a
-    82.56s  agent 발화 끝
-    82.91s  user  발화 시작: Okay, good. Now, can you find me the price of the base model
-    87.54s  <ret> 발화 (turn15 첫 프레임)
-    87.93s  agent 발화 시작: <ret> Certainly, let's check the pricing— The base model iPh
-    88.10s  user  발화 끝
-    89.14s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.87s]: (tool result) The base model iPhone 15 is listed at $799.00 on apple.c
-    92.78s  user  발화 시작: Really?
-    93.84s  user  발화 끝
-    96.14s  agent 발화 끝
-    97.49s  user  발화 시작: That’s… more than I expected. Hmm. Okay, forget the iPhone f
-   107.13s  user  발화 끝
-   107.27s  agent 발화 시작: Absolutely. I’ve set a reminder to check the iPhone 15 price
-   109.86s  user  발화 시작: Oh.
-   110.26s  user  발화 끝
-   114.69s  agent 발화 끝
-   114.71s  user  발화 시작: Perfect. Thanks, Koral.
-   116.60s  user  발화 끝
+     5.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.64s]: (tool result) The tavily-map tool found 14 product categories on the A
+    13.95s  agent 발화 끝
+    14.03s  user  발화 시작: Okay, good. Now, can you find me the current price of the la
+    21.35s  <ret> 발화 (turn3 첫 프레임)
+    21.75s  agent 발화 시작: <ret> Let’s check the current pricing— The iPhone 15 Pro Max
+    22.00s  user  발화 끝
+    22.63s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.37s]: (tool result) The Apple website lists the iPhone 15 Pro Max with 256GB
+    25.51s  user  발화 시작: Nice.
+    26.33s  user  발화 끝
+    31.21s  agent 발화 끝
+    32.42s  user  발화 시작: Hmm, that's… a lot. Is there any trade-in program available?
+    36.76s  agent 발화 시작: Apple does offer a trade-in program, yes.
+    37.06s  user  발화 끝
+    39.34s  agent 발화 끝
+    40.23s  user  발화 시작: What kind of credit could I get for my iPhone 13 Pro?
+    43.42s  agent 발화 시작: Let me quickly estimate that trade-in value for you—
+    43.60s  user  발화 끝
+    46.45s  <ret> 발화 (turn9 첫 프레임)
+    46.69s  agent 발화 시작: <ret> Based on your iPhone 13 Pro’s condition, Apple estimat
+    46.75s  agent 발화 끝
+    48.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) The Apple Trade In tool estimates your iPhone 13 Pro in 
+    48.90s  user  발화 시작: Mm-hmm.
+    49.40s  user  발화 끝
+    52.90s  agent 발화 끝
+    53.01s  user  발화 시작: Okay, that makes it a little better. Now, if I were to buy t
+    61.30s  <ret> 발화 (turn12 첫 프레임)
+    61.53s  agent 발화 시작: <ret> Let's calculate the final cost— After applying the $30
+    61.68s  user  발화 끝
+    62.58s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.31s]: (tool result) Subtracting the $300 trade-in from the $1199 iPhone 15 P
+    71.56s  user  발화 시작: That's still pretty expensive. Are there any deals or promot
+    71.69s  agent 발화 끝
+    76.27s  agent 발화 시작: Currently, Apple is offering zero percent financing for twel
+    76.41s  user  발화 끝
+    80.47s  user  발화 시작: Zero percent financing, huh? Can you actually initiate the p
+    80.62s  agent 발화 끝
+    86.82s  user  발화 끝
+    86.86s  <ret> 발화 (turn16 첫 프레임)
+    86.94s  agent 발화 시작: <ret> I can certainly begin that process for you— Your order
+    88.22s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.56s]: (tool result) Order confirmed: iPhone 15 Pro Max (256GB) with trade-in
+    92.57s  user  발화 시작: Really?
+    93.39s  user  발화 끝
+    96.54s  agent 발화 끝
+    96.62s  user  발화 시작: Wonderful, thank you so much.
+    98.42s  user  발화 끝
+    98.57s  agent 발화 시작: You're very welcome. I’m glad I could help with your purchas
+   101.80s  agent 발화 끝

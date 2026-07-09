@@ -3,11 +3,9 @@ SYSTEM: <system> You are Sunan, a encouraging and non-judgmental wellness coach 
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  4.89s][moshi] ⟨ret@4.82s⟩ Okay, locating ⟦⚡SPAN@6.02s: (tool result) Seven image files were found: "Paris_EiffelTower.jpg", "Nice_Beach.png", "Lyon_Food.jpeg", "Prov⟧ photos from your France trip— I found seven photos from your France holiday, excluding thumbnails.
-      CALL: {"function": "search_files", "arguments": {"keywords": ["France", "holiday"], "year": 2023, "exclude": ["thumbnail"]}}
-[  8.76s][user ] «backchannel» Mhm.
-[ 11.33s][user ] Can you tell me which ones are in color?
-[ 13.51s][moshi] Let me check on that.
-[ 15.15s][user ] Okay, thanks. I was also wondering about setting a reminder.
-  ⟦⚡지연 SPAN 도착@18.05s: (tool result) The color images are: "Paris_EiffelTower.jpg", "Nice_Beach.png", "Lyon_Food.jpeg", "Provence_Lav⟧
-[ 18.50s][moshi] «deferred_result» ⟨ret@18.52s⟩ Right, about those colors— Five of the photos – Paris, Nice, Lyon, Provence, and Bordeaux – are in color.
+[  5.09s][moshi] ⟨ret@5.01s⟩ Okay, locating photos ⟦⚡SPAN@7.01s: (tool result) Three files were found: "Paris_EiffelTower.jpg", "Provence_LavenderFields.jpg", and "Nice_Beach.⟧ from your France trip sounds lovely. I found three photos from your France holiday: Paris, Provence, and Nice.
+      CALL: {"function": "search_files", "arguments": {"directory": "Pictures", "keywords": ["France", "holiday"], "exclude": ["thumbnails"], "year": 2023}}
+[ 11.02s][user ] «backchannel» Mhm.
+[ 14.50s][user ] Can you send "Paris_EiffelTower.jpg" to my sister, ⟨ret@18.84s⟩ Sarah?
+[ 18.98s][moshi] Certainly, ⟦⚡SPAN@19.80s: (tool result) The file "Paris_EiffelTower.jpg" was successfully sent to Sarah@email.com.⟧ sending a picture to Sarah is easy. The Eiffel Tower photo has been sent to Sarah at Sarah@email.com.
+      CALL: {"function": "send_file", "arguments": {"recipient": "Sarah", "file_name": "Paris_EiffelTower.jpg"}}

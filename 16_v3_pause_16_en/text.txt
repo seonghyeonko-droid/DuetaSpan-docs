@@ -3,44 +3,38 @@ SYSTEM: <system> You are Braera, a kind and steady personal guide who helps peop
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 EXAMINER 진행 뷰 (FDB-v2 staged goals · Channel A가 S1→S4 목표를 진행):
-  S1  I was reading a book and it mentioned “Big Brother”...
-      Nineteen Eighty-Four… I’ve heard of it, but I’ve never actually read i
-      Surveillance… that’s a bit scary, especially these days.
-  S2  Like with all the data collection companies do?
-      Wow. So, the “Big Brother” in the book is actually the government?
-      Is he a real person *in* the story…
-  S3  …or more of a symbol?
-      That’s… unsettling. So, it’s possible he’s not even real?
-      It sounds like a pretty depressing read, to be honest.
-  S4  I wonder if Orwell predicted all this… the cameras and the internet.
-      I’m going to add it to my reading list, I think. Thanks, Braera.
+  S1  So, I was reading this book…
+      …and it mentioned “Big Brother”.
+      I’ve heard the phrase a lot, like, for surveillance…
+  S2  … I always thought it was just a general thing, you know…
+      …like, a modern invention, but a book? That's interesting.
+  S3  Did Orwell intend it to be about actual surveillance, or was it… somet
+      So, it started as a patriotic thing, then turned into something darker
+      [laugh] That’s ironic, isn’t it?
+  S4  I wonder if he would be surprised by how often it’s used now.
+      Wow, fifty million. That’s… a lot of readers.
   (pace = turn-taking FTO · Fast=짧은 갭·겹침 진입 / Slow=숙고 갭·무겹침)
 
-[  0.00s][user ] I was reading a book and it mentioned “Big Brother”...
-[  2.81s][moshi] ⟨ret@2.50s⟩ That’s a ⟦⚡SPAN@4.02s: The term “Big Brother” originates from George Orwell’s dystopian novel *Nineteen Eighty-Four*.⟧ fascinating question, and a common one. “Big Brother” comes from Orwell’s *Nineteen Eighty-Four*, published in nineteen forty-nine. It’s a powerful image, isn’t it?
-[ 12.98s][user ] Nineteen Eighty-Four… I’ve heard of it, but I’ve never actually read it.
-[ 17.84s][moshi] It's a rather bleak story, honestly. It explores themes of totalitarianism and mass surveillance.
-[ 22.01s][user ] «backchannel» Yeah, yeah.
-[ 23.50s][user ] Surveillance… that’s a bit scary, especially these days.
-[ 26.96s][moshi] Absolutely. The concepts explored in *Nineteen Eighty-Four* continue to resonate deeply with modern concerns.
-[ 29.26s][user ] «backchannel» Mm-hmm.
-[ 33.25s][user ] Like with all the data collection companies ⟨ret@35.48s⟩ do?
-[ 35.88s][moshi] That’s a very ⟦⚡SPAN@37.24s: *Nineteen Eighty-Four* depicts a state that controls every aspect of public and private life.⟧ perceptive connection you’re making. The book shows a state controlling all public and private life, much like concerns around data today. It's a chilling parallel, isn't it?
-[ 40.48s][user ] «backchannel» Yeah.
-[ 46.52s][user ] Wow. So, the “Big Brother” in the book is actually the government?
-[ 51.33s][moshi] Precisely. He represents the all-seeing, all-controlling Party in the novel.
-[ 53.18s][user ] «backchannel» Mm-hmm.
-[ 56.67s][user ] Is he a real person *in* the story…
-[ 59.83s][user ] …or more of a symbol?
-[ 61.77s][moshi] ⟨ret@61.69s⟩ That’s ⟦⚡SPAN@62.41s: Big Brother is the enigmatic leader of Oceania in *Nineteen Eighty-Four*, though he may not exist as a real pe⟧ a really insightful question, diving into the character's nature. Big Brother is Oceania’s leader, but his actual existence is debated within the story. It adds to the sense of unease, doesn’t it?
-[ 71.80s][user ] That’s… unsettling. So, it’s possible he’s not even real?
-[ 77.00s][moshi] The novel deliberately leaves that ambiguous, heightening the feeling of omnipresent control.
-[ 80.50s][user ] «backchannel» Mm-hmm.
-[ 84.25s][user ] It sounds like a pretty depressing read, to be honest.
-[ 87.29s][moshi] It can be, yes. It’s not lighthearted, but it’s a powerful and thought-provoking work.
-[ 89.16s][user ] «backchannel» Yeah.
-[ 91.89s][user ] I wonder if Orwell predicted all this… the cameras and the internet.
-[ 96.45s][moshi] He was remarkably prescient, wasn't he? His warnings about technology and power feel very relevant today.
-[ 98.68s][user ] «backchannel» Right.
-[102.90s][user ] I’m going to add it to my reading list, I think. Thanks, Braera.
-[106.77s][moshi] You’re very welcome. I’m glad I could help illuminate the origins of that phrase for you.
+[  0.00s][user ] So, I was reading this book…
+[  3.14s][user ] …and it mentioned “Big Brother”.
+[  4.92s][moshi] That’s a fascinating cultural reference, actually.
+[  7.95s][user ] I’ve heard the phrase a lot, like, for surveillance…
+[ 11.16s][moshi] ⟨ret@11.00s⟩ Let’s explore the ⟦⚡SPAN@12.92s: The term "Big Brother" originates from George Orwell's dystopian novel *Nineteen Eighty-Four*.⟧ origin of that term. It comes from George Orwell’s novel *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 17.52s][user ] «backchannel» Yeah, yeah.
+[ 20.42s][user ] … I always thought it was just a general thing, you know…
+[ 23.85s][user ] …like, a modern invention, but a book? That's interesting.
+[ 28.89s][moshi] It’s quite striking how literature can shape our language.
+[ 30.08s][user ] «backchannel» Mm-hmm.
+[ 32.23s][user ] Did Orwell intend it to be about actual surveillance, or was it… something ⟨ret@37.80s⟩ else?
+[ 37.96s][moshi] Orwell’s ⟦⚡SPAN@38.76s: Orwell stated the concept was inspired by a poster from World War II promoting vigilance.⟧ intention is a complex topic. The idea came from a wartime poster encouraging citizens to be vigilant. It wasn’t initially a direct critique of surveillance states.
+[ 42.38s][user ] «backchannel» Yeah.
+[ 47.90s][user ] So, it started as a patriotic thing, then turned into something darker?
+[ 53.03s][moshi] Exactly—the meaning shifted with the context of his novel.
+[ 54.35s][user ] «backchannel» Mm-hmm.
+[ 56.30s][user ] [laugh] That’s ironic, isn’t it?
+[ 60.31s][moshi] It is a rather poignant twist, when you consider it.
+[ 63.75s][user ] I wonder if he would be surprised by how often it’s used ⟨ret@67.72s⟩ now.
+[ 67.88s][moshi] It's hard to say ⟦⚡SPAN@69.48s: *Nineteen Eighty-Four* has sold over fifty million copies worldwide since its publication.⟧ what Orwell would think today. His novel has sold over fifty million copies around the world. Its influence is undeniable, even now.
+[ 74.52s][user ] «backchannel» Mm-hmm.
+[ 77.37s][user ] Wow, fifty million. That’s… a lot of readers.
+[ 81.57s][moshi] It's certainly had a lasting impact on how we think.
