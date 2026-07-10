@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Adam",
+#     "name": "Avery",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-09",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2026-05-30",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-01-19",
+#       "date": "2025-12-08",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-09-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "home",
-#       "text": "User's home address is 886 Maple Drive."
-#     },
-#     {
-#       "date": "2025-12-07",
+#       "date": "2025-09-01",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in May."
+#       "text": "User is planning a trip to Kyoto in August."
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-06-26",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,103 +53,69 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-10-17",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-17",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Ben. That's… reassuring, actual | S2 Wow. Okay, that’s… a lot. | S3 Oh great. That sounds… fun. | S4 Okay, that's helpful.
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi Fae. That’s… a really nice  | S2 Maybe. I’m supposed to be research | S3 Hmmm, I’ve tried that. It just mak | S4 That's… a really long time. I feel
 
-     0.00s  agent 발화 시작: Hello Adam, it’s lovely to meet you.
-     2.15s  user  발화 시작: Mhm.
-     2.64s  user  발화 끝
-     3.01s  user  발화 시작: Hi Ben. That's… reassuring, actually. I’m a bit overwhelmed,
-     3.13s  agent 발화 끝
-     7.89s  agent 발화 시작: It’s perfectly normal to feel overwhelmed when moving to a n
-     8.01s  user  발화 끝
-    12.63s  user  발화 시작: Yeah.
-    13.26s  user  발화 끝
-    15.67s  agent 발화 끝
-    15.79s  user  발화 시작: Just… everything, I guess. Finding a good neighborhood feels
-    20.87s  user  발화 끝
-    21.07s  agent 발화 시작: Neighborhoods really set the tone for how you experience a c
-    23.06s  user  발화 시작: Yeah.
-    23.59s  user  발화 끝
-    27.43s  agent 발화 끝
-    27.43s  user  발화 시작: Somewhere not too hectic, but not completely isolated. Good 
-    33.08s  user  발화 끝
-    33.39s  agent 발화 시작: A balance is key, isn’t it? Somewhere with community, but st
-    41.11s  user  발화 시작: I’ve heard of it. Is it expensive?
-    41.27s  agent 발화 끝
-    43.06s  agent 발화 시작: The Inner West can be a little pricey, with houses around $1
-    43.32s  user  발화 끝
-    53.21s  user  발화 시작: Wow. Okay, that’s… a lot.
-    53.22s  agent 발화 끝
-    56.68s  user  발화 끝
-    56.69s  agent 발화 시작: It is a competitive market. Perhaps we could look at areas s
-    62.33s  agent 발화 끝
-    62.40s  user  발화 시작: Like where?
-    63.55s  user  발화 끝
-    63.60s  agent 발화 시작: Newtown, still in the Inner West, has a population around 10
-    67.43s  user  발화 시작: Yeah.
-    68.07s  user  발화 끝
-    72.45s  agent 발화 시작: It's a vibrant area with a lot of character, known for its m
-    72.60s  agent 발화 끝
-    77.84s  user  발화 시작: Yeah.
-    78.29s  user  발화 끝
-    81.12s  agent 발화 끝
-    81.70s  user  발화 시작: Sounds good, but I’m also worried about transport. I need to
-    86.98s  user  발화 끝
-    87.27s  agent 발화 시작: Transport links are crucial. The Inner West generally has ex
-    92.82s  user  발화 시작: …What about parking, though? I still have my car.
-    93.52s  agent 발화 끝
-    96.05s  agent 발화 시작: Parking can be challenging in some Inner West areas, especia
-    96.19s  user  발화 끝
-   103.74s  agent 발화 끝
-   103.98s  user  발화 시작: Oh great. That sounds… fun.
-   106.76s  user  발화 끝
-   106.98s  agent 발화 시작: It’s definitely something to consider. We could explore area
-   110.58s  user  발화 시작: Right.
-   111.08s  user  발화 끝
-   114.32s  user  발화 시작: Maybe. What’s the deal with getting a driver’s license trans
-   114.49s  agent 발화 끝
-   118.98s  agent 발화 시작: You'll need to visit a Service NSW centre and present your c
-   119.18s  user  발화 끝
-   128.52s  agent 발화 끝
-   129.75s  user  발화 시작: That doesn’t sound too bad, actually.
-   131.83s  user  발화 끝
-   131.86s  agent 발화 시작: It’s often the little things that feel manageable, isn’t it?
-   137.17s  user  발화 시작: True. I'm also trying to figure out internet providers.
-   137.27s  agent 발화 끝
-   141.15s  user  발화 끝
-   141.38s  agent 발화 시작: Telstra has plans starting around $65 a month for unlimited 
-   149.59s  agent 발화 끝
-   149.89s  user  발화 시작: Okay, that's helpful.
-   151.50s  user  발화 끝
-   151.60s  agent 발화 시작: There are many providers to choose from, each with different
-   159.01s  agent 발화 끝
-   159.06s  user  발화 시작: I guess so. It’s just… a lot to take in.
-   162.81s  agent 발화 시작: It absolutely is, Adam. It's okay to feel overwhelmed. We ca
-   162.90s  user  발화 끝
-   169.57s  user  발화 시작: Thanks, Ben. I appreciate that.
-   169.67s  agent 발화 끝
-   171.74s  agent 발화 시작: Remember, settling in takes time. I'm here to help you navig
-   171.79s  user  발화 끝
-   180.01s  user  발화 시작: That actually sounds really good. Something to meet people.
-   180.27s  agent 발화 끝
-   183.15s  agent 발화 시작: Exactly. A sense of connection can make all the difference. 
-   183.24s  user  발화 끝
-   189.59s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Avery, it’s lovely to connect with you.
+     0.96s  user  발화 시작: Yeah.
+     1.50s  user  발화 끝
+     2.99s  user  발화 시작: Oh, hi Fae. That’s… a really nice name. I’m just feeling com
+     3.04s  agent 발화 끝
+    10.21s  agent 발화 시작: It’s perfectly normal to feel overwhelmed when facing a big 
+    10.31s  user  발화 끝
+    19.06s  agent 발화 끝
+    19.73s  user  발화 시작: Well, everything, honestly. I don’t even know where to begin
+    24.39s  agent 발화 시작: That’s a common starting point. Sometimes just breaking it d
+    24.50s  user  발화 끝
+    35.15s  agent 발화 끝
+    35.55s  user  발화 시작: I guess so. But I always end up down rabbit holes and nothin
+    40.43s  agent 발화 시작: Rabbit holes are part of the process! It means you’re explor
+    40.60s  user  발화 끝
+    45.77s  user  발화 시작: Right.
+    46.27s  user  발화 끝
+    48.55s  user  발화 시작: Maybe. I’m supposed to be researching the history of Canadia
+    48.73s  agent 발화 끝
+    55.26s  user  발화 끝
+    55.53s  agent 발화 시작: Banff National Park was established in 1885, and it’s locate
+    64.76s  agent 발화 끝
+    65.86s  user  발화 시작: Wow, that *is* big. I didn't realize it was that old either.
+    69.88s  user  발화 끝
+    69.97s  agent 발화 시작: It has a rich history, doesn’t it? Knowing the timeline can 
+    76.70s  agent 발화 끝
+    77.00s  user  발화 시작: Yeah, you’re right. I’m just…procrastinating, I think. I kee
+    83.30s  user  발화 끝
+    83.57s  agent 발화 시작: That's very relatable, Avery. It's easy to get distracted. P
+    92.27s  user  발화 시작: Hmmm, I’ve tried that. It just makes me feel guilty when I i
+    92.43s  agent 발화 끝
+    97.07s  agent 발화 시작: Guilt isn’t helpful, is it? Maybe instead of strict blocks, 
+    97.22s  user  발화 끝
+   107.79s  user  발화 시작: That sounds…less awful, actually. I might be able to manage 
+   108.29s  agent 발화 끝
+   113.09s  agent 발화 시작: Small steps, Avery. That’s often the most sustainable approa
+   113.16s  user  발화 끝
+   117.16s  user  발화 시작: Right.
+   117.80s  user  발화 끝
+   121.90s  agent 발화 끝
+   121.97s  user  발화 시작: I need to find information about the original Indigenous peo
+   127.76s  agent 발화 시작: For over ten thousand years, the area now known as Banff was
+   127.90s  user  발화 끝
+   139.22s  agent 발화 끝
+   140.44s  user  발화 시작: That's… a really long time. I feel like that part of the sto
+   146.09s  user  발화 끝
+   146.18s  agent 발화 시작: It’s important to acknowledge the history of those who came 
+   150.89s  user  발화 시작: Yeah, totally.
+   152.04s  user  발화 끝
+   156.98s  agent 발화 끝
+   158.41s  user  발화 시작: That's a good idea. I will. Thanks, Fae. You’ve actually mad
+   164.30s  user  발화 끝
+   164.54s  agent 발화 시작: I’m glad to hear that, Avery. Remember, progress isn’t about
+   173.35s  agent 발화 끝

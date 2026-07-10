@@ -4,48 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Sophie",
+#     "name": "Julian",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "male",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-28",
+#       "date": "2026-05-05",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-04-03",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-10-01",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2025-12-04",
+#       "category": "home",
+#       "text": "User's home address is 545 Birch Road."
 #     },
 #     {
-#       "date": "2025-09-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in May."
+#       "date": "2025-11-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-03",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-07-05",
+#       "date": "2025-11-06",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-10-13",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-28",
+#       "date": "2026-02-24",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-16",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-23",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -55,29 +76,42 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What's the weather in London? | S2 That sounds pleasant. Can you find | S3 Hmm, Bella Italia sounds good. Cou | S4 Wonderful, thank you so much!
+# EXAMINER(FDB-v2) 단계: S1 What drama movies are playing at t | S2 Can you book me a ticket for the 4 | S3 Sure, take your time. | S4 Oh. Okay, let's do the 7:00 PM sho
 
-     0.00s  user  발화 시작: What's the weather in London?
-     1.51s  <ret> 발화 (turn1 첫 프레임)
-     1.59s  agent 발화 시작: <ret> The weather in London is currently 18.5°C, with a humi
-     1.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) London has a current temperature of 18.5°C, with humidit
-     1.60s  user  발화 끝
-     7.28s  agent 발화 끝
-     7.36s  user  발화 시작: That sounds pleasant. Can you find me some Italian restauran
-    11.03s  <ret> 발화 (turn3 첫 프레임)
-    11.19s  agent 발화 시작: <ret> I found three Italian restaurants near London: Bella I
-    11.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.06s]: (tool result) There are three Italian restaurants within 2 kilometers 
-    11.38s  user  발화 끝
-    15.68s  user  발화 시작: Uh-huh.
-    16.13s  user  발화 끝
-    17.25s  agent 발화 끝
-    17.89s  user  발화 시작: Hmm, Bella Italia sounds good. Could you reserve a table for
-    23.49s  <ret> 발화 (turn6 첫 프레임)
-    23.65s  agent 발화 시작: <ret> I’ve reserved a table for two at Bella Italia tonight 
-    23.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: (tool result) Reservation confirmed at Bella Italia for two people at 
-    23.86s  user  발화 끝
-    33.15s  agent 발화 끝
-    33.37s  user  발화 시작: Wonderful, thank you so much!
-    35.35s  user  발화 끝
-    35.49s  agent 발화 시작: You’re very welcome. Enjoy your evening – a little relaxatio
-    40.21s  agent 발화 끝
+     0.00s  user  발화 시작: What drama movies are playing at the AMC River East twenty-o
+     4.40s  <ret> 발화 (turn1 첫 프레임)
+     4.47s  agent 발화 시작: <ret> The AMC River East twenty-one in Chicago has showings 
+     4.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) The AMC River East 21 in Chicago is showing “Civil War”,
+     4.49s  user  발화 끝
+    12.36s  agent 발화 끝
+    12.44s  user  발화 시작: What time is “Civil War” playing?
+    14.32s  <ret> 발화 (turn3 첫 프레임)
+    14.63s  agent 발화 시작: <ret> “Civil War” is playing at 1:30 PM, 4:15 PM, and 7:00 P
+    14.64s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.34s]: (tool result) “Civil War” is playing at AMC River East 21 in Chicago a
+    14.84s  user  발화 끝
+    18.90s  user  발화 시작: Uh-huh.
+    19.48s  user  발화 끝
+    20.81s  agent 발화 시작: It’s good to have options, isn’t it? Sometimes just knowing 
+    20.97s  agent 발화 끝
+    22.50s  user  발화 시작: Mm-hmm.
+    22.94s  user  발화 끝
+    26.04s  agent 발화 끝
+    27.30s  user  발화 시작: Can you book me a ticket for the 4:15 showing?
+    29.52s  <ret> 발화 (turn8 첫 프레임)
+    29.83s  agent 발화 시작: <ret> Give me a moment while I check ticket availability for
+    29.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (no information found)
+    30.02s  user  발화 끝
+    34.18s  agent 발화 끝
+    35.35s  user  발화 시작: Sure, take your time.
+    36.77s  user  발화 끝
+    36.93s  agent 발화 시작: It can be helpful to slow down, even when we’re trying to ge
+    39.87s  ⚡지연 SPAN 주입(선제발표 직전): The 4:15 PM showing of “Civil War” at AMC River East 21 in Chicago is 
+    40.73s  agent 발화 시작: <ret> I’m so sorry, but it appears that the 4:15 PM showing 
+    40.86s  agent 발화 끝
+    51.46s  user  발화 시작: Oh. Okay, let's do the 7:00 PM showing then.
+    51.53s  agent 발화 끝
+    55.21s  <ret> 발화 (turn13 첫 프레임)
+    55.37s  agent 발화 시작: <ret> Your ticket for the 7:00 PM showing is confirmed, with
+    55.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) Your ticket for “Civil War” at AMC River East 21 in Chic
+    55.44s  user  발화 끝
+    65.52s  agent 발화 끝

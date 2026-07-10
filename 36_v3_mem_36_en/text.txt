@@ -1,10 +1,10 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Feli, a encouraging and non-judgmental personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Zura, a upbeat and supportive life coach who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Thomas",
+    "name": "Morgan",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -12,43 +12,53 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "French",
-    "gender": "male",
-    "age_range": "late 30s",
+    "gender": "non-binary",
+    "age_range": "early 30s",
     "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2025-08-17",
+      "date": "2026-06-17",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in December."
+    },
+    {
+      "date": "2026-05-21",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-02-22",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-07-30",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-07-15",
+      "category": "home",
+      "text": "User's home address is 529 Cedar Lane."
+    },
+    {
+      "date": "2025-07-06",
       "category": "work",
       "text": "User works as a architect."
-    },
-    {
-      "date": "2025-07-28",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
-    },
-    {
-      "date": "2025-07-11",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-06-26",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-21",
-      "title": "Booked a dentist appointment",
+      "date": "2025-07-02",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-07-08",
+      "date": "2025-06-10",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -59,12 +69,47 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Thomas, I'm Feli. It's lovely to meet you. How are things going today?
-[  6.71s][user ] Um, well, I was just wondering if you remembered anything about my upcoming ⟨ret@10.45s⟩ trip.
-[ 10.69s][moshi] ⟦⚡SPAN@10.69s: [2025-07-28] User is planning a trip to Lisbon in December.⟧ Yes, I do. You’re planning a trip to Lisbon in December, which sounds wonderful.
-[ 16.28s][user ] Right, Lisbon! I was thinking about places to stay ⟨ret@19.39s⟩ there.
-[ 19.70s][moshi] ⟦⚡SPAN@19.71s: (tool result) Hotel Lisboa Plaza is trading at 150 EUR per night, with a 4.5-star rating and free Wi-Fi. Also,⟧ Hotel Lisboa Plaza is available for 150 EUR a night, and The Lumiares is 200 EUR.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Lisbon"}}
-[ 22.64s][user ] «backchannel» Exactly.
-[ 27.28s][user ] …Actually, before we get into hotels, do you remember what I was looking at regarding home ⟨ret@31.89s⟩ networks?
-[ 32.13s][moshi] ⟦⚡SPAN@32.13s: [2025-07-08] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.⟧ Ah, yes!
+[  0.00s][moshi] Hi Morgan, I'm Zura. It's lovely to connect with you today.
+[  2.63s][user ] «backchannel» Yeah.
+[  3.92s][user ] Hi Zura, nice to meet you too. I was hoping you could help me with something.
+[  7.63s][moshi] What's on your mind? I’m happy to lend an ear.
+[ 10.71s][user ] I was remembering we talked about my trip to Vietnam.
+[ 13.56s][moshi] ⟨ret@13.40s⟩ ⟦⚡SPAN@13.56s: [2026-06-17] User is planning a trip to Vietnam in December.⟧ Yes, you mentioned planning a trip to Vietnam in December.
+[ 15.04s][user ] «backchannel» Okay.
+[ 17.77s][user ] Right. Could you remind me what I was thinking about doing there?
+[ 21.11s][moshi] I don’t have specific details about activities beyond the destination.
+[ 26.14s][user ] Oh, okay. Maybe we could brainstorm some ideas then?
+[ 29.29s][moshi] Vietnam is beautiful. What kind of experience are you hoping for?
+[ 34.46s][user ] I'm really into photography, especially ⟨ret@37.21s⟩ wildflowers.
+[ 37.44s][moshi] ⟦⚡SPAN@37.45s: [2026-05-21] User is into alpine wildflower photography.⟧ That’s wonderful! You’re passionate about alpine wildflower photography.
+[ 42.91s][user ] Exactly! Are there good places in Vietnam for that?
+[ 46.48s][moshi] ⟨ret@46.33s⟩ ⟦⚡SPAN@46.49s: (tool result) Phong Nha-Ke Bang National Park is known for its biodiversity, including wildflowers. Ba Vi Nati⟧ Phong Nha-Ke Bang and Ba Vi National Park are known for wildflowers.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"query": "wildflower photography Vietnam"}}
+[ 49.08s][user ] «backchannel» Yeah.
+[ 52.26s][user ] Those sound great! Ba Vi is closer to Hanoi, right?
+[ 56.00s][moshi] Yes, Ba Vi National Park is located near Hanoi.
+[ 60.21s][user ] Hmm, I’m also trying to figure out the best time to go.
+[ 63.16s][moshi] «interrupted» December is generally a good time to visit Vietnam, with—
+[ 66.72s][user ] «interrupts_prev» …do they have any guided photography tours ⟨ret@69.81s⟩ there?
+[ 69.97s][moshi] ⟦⚡SPAN@69.97s: (tool result) Several companies offer guided photography tours in Ba Vi National Park. Hanoi Eco Tours has a 3⟧ Let me check for guided tours in Ba Vi.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"query": "guided photography tours Ba Vi National Park"}}
+[ 72.92s][moshi] Hanoi Eco Tours has a three-day wildflower photography package.
+[ 74.78s][user ] «backchannel» Uh-huh.
+[ 77.21s][user ] Three days sounds perfect! Can you find me a ⟨ret@81.08s⟩ link?
+[ 81.31s][moshi] ⟦⚡SPAN@81.32s: (tool result) Hanoi Eco Tours – Wildflower Photography Package: https://www.hanoiecotours.com/wildflower-photo⟧ Here's a link: hanoiecotours.com/wildflower-photography.
+      CALL: {"function": "web_search", "arguments": {"query": "Hanoi Eco Tours wildflower photography package"}}
+[ 86.79s][user ] Amazing, thank you! I'll take a look.
+[ 89.20s][moshi] You’re very welcome! It looks like a lovely opportunity.
+[ 93.97s][user ] I also need to think about flights.
+[ 95.95s][moshi] Flights are a good idea to book in advance, especially for December.
+[101.59s][user ] Do you think prices will go up closer to the date?
+[104.98s][moshi] ⟨ret@104.83s⟩ ⟦⚡SPAN@104.99s: (tool result) One-way flights from Paris to Hanoi on December 1st start at €780, rising to €950 closer to the ⟧ Flights from Paris to Hanoi start at €780, rising to €950.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Paris", "destination": "Hanoi", "date": "2026-12-01"}}
+[111.42s][user ] Okay, good to know. I should probably book soon then.
+[114.37s][moshi] Yes, securing flights sooner rather than later is often wise.
+[116.09s][user ] «backchannel» Yeah.
+[119.16s][user ] I'm feeling much more organized now, thanks to you.
+[122.77s][moshi] I’m so glad I could help, Morgan. Planning can be joyful!
+[124.82s][user ] «backchannel» Yeah.
+[126.88s][user ] It is, when it's not overwhelming.
+[130.17s][moshi] Remember, taking it step by step makes all the difference.

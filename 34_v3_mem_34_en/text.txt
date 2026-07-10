@@ -1,10 +1,10 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Aril, a practical and reassuring counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Kler, a kind and steady life coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Robin",
+    "name": "Andrea",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -13,44 +13,52 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "Canadian",
     "gender": "non-binary",
-    "age_range": "late 20s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
       "date": "2026-05-01",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2026-03-31",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in May."
-    },
-    {
-      "date": "2026-02-04",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2026-01-20",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-01-06",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-10-10",
+      "date": "2025-10-30",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in May."
+    },
+    {
+      "date": "2025-08-18",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-07-30",
       "category": "home",
-      "text": "User's home address is 353 Cedar Lane."
+      "text": "User's home address is 646 Birch Road."
     },
     {
-      "date": "2025-07-29",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2025-06-20",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-17",
+      "date": "2025-12-23",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-12-11",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -58,55 +66,56 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-02-20",
-      "title": "Researching a used car",
+      "date": "2025-08-11",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Robin, I’m Aril. It’s lovely to connect with you today.
-[  3.38s][user ] Hi Aril, thanks for saying that.
-[  5.45s][moshi] You’re very welcome. Is there anything I can help you with today?
-[ 10.97s][user ] Yes, I need to figure out how long it’ll take to get to my ⟨ret@14.65s⟩ sister’s place.
-[ 15.04s][moshi] ⟦⚡SPAN@15.05s: User's home address is 353 Cedar Lane.⟧ Your home address is 353 Cedar Lane, correct?
-[ 18.77s][user ] That's ⟨ret@19.47s⟩ right.
-[ 19.87s][moshi] ⟦⚡SPAN@19.87s: (tool result) Distance: 78.2 km, Estimated travel time: 1 hour 12 minutes, Route: QEW.⟧ It's 78.2 kilometers to 12 Maple Drive in Hamilton, about an hour and twelve minutes via the QEW.
-      CALL: {"function": "map_directions", "arguments": {"origin": "353 Cedar Lane, Toronto", "destination": "12 Maple Drive, Hamilton"}}
-[ 22.76s][user ] «backchannel» Uh-huh.
-[ 29.03s][user ] Wow, that’s further than I thought.
-[ 30.87s][moshi] It can sometimes be hard to judge distances without checking.
-[ 35.01s][user ] Is there a faster route, maybe avoiding the highway?
-[ 38.48s][moshi] ⟨ret@38.41s⟩ ⟦⚡SPAN@38.49s: (tool result) Distance: 95.6 km, Estimated travel time: 1 hour 45 minutes, Route: Dundas Street.⟧ There’s a route via Dundas Street, but it’s 95.6 kilometers and takes an hour and forty-five minutes.
-      CALL: {"function": "map_directions", "arguments": {"origin": "353 Cedar Lane, Toronto", "destination": "12 Maple Drive, Hamilton", "route_type": "avoid highways"}}
-[ 44.76s][user ] Hmm, maybe the highway is best then.
-[ 47.46s][moshi] «interrupted» It does seem like the quicker option, and avoiding traffic—
-[ 50.38s][user ] «interrupts_prev» …what’s the traffic like on the QEW right now?
-[ 53.21s][moshi] ⟨ret@53.15s⟩ ⟦⚡SPAN@53.23s: (tool result) Moderate traffic congestion on the QEW westbound between Meadowvale Rd and Trafalgar Rd. Expect ⟧ There’s moderate congestion on the QEW westbound, between Meadowvale and Trafalgar, adding about 15 to 20 minutes.
-      CALL: {"function": "map_weather", "arguments": {"location": "QEW, Toronto"}}
-[ 60.94s][user ] Oh, that’s good to know.
-[ 62.35s][moshi] Planning for those delays can help manage stress during the drive.
-[ 63.92s][user ] «backchannel» Uh-huh.
-[ 66.27s][moshi] It’s a good idea to leave a bit earlier if possible, just in case.
-[ 70.43s][user ] I think I will. Is there anything else I should consider for the trip?
-[ 74.03s][moshi] ⟨ret@73.95s⟩ ⟦⚡SPAN@74.03s: (tool result) Current conditions in Hamilton: 21°C, partly cloudy, wind 12 km/h.⟧ It’s currently 21 degrees Celsius and partly cloudy in Hamilton, with a 12 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Hamilton, Canada"}}
-[ 77.37s][user ] «backchannel» Oh.
-[ 80.73s][user ] Perfect. Thanks for checking that.
-[ 82.67s][moshi] Knowing what to expect can make all the difference.
-[ 86.01s][user ] I'm also bringing my fermentation supplies.
-[ 88.50s][moshi] ⟨ret@88.42s⟩ ⟦⚡SPAN@88.50s: User is into home fermentation.⟧ That sounds interesting! Home fermentation is a lovely hobby.
-[ 93.05s][moshi] I recall you mentioned enjoying home fermentation back in May. Are you taking something special to your sister’s?
-[ 96.86s][user ] «backchannel» Yeah.
-[100.90s][user ] Yeah, a batch of kombucha.
-[102.92s][moshi] Kombucha is a wonderful choice. It's refreshing and good for you.
-[105.11s][user ] «backchannel» Mm-hmm.
-[107.69s][user ] Hopefully she likes it. It's her first time trying it.
-[110.53s][moshi] Introducing someone to a new flavor can be fun.
-[112.71s][user ] «backchannel» Yeah, yeah.
-[114.51s][user ] I hope the drive isn’t too stressful with the traffic.
-[117.38s][moshi] A little preparation goes a long way towards a peaceful journey. Have a wonderful visit with your sister, Robin.
+[  0.00s][moshi] Hi Andrea, I'm Kler. It's lovely to connect with you today.
+[  2.05s][user ] «backchannel» Yeah.
+[  4.19s][user ] Hi Kler, nice to meet you too. I need to figure out how long it'll take to get to my friend's place.
+[ 10.06s][moshi] ⟨ret@9.98s⟩ ⟦⚡SPAN@10.06s: [2025-07-30] User's home address is 646 Birch Road.⟧ Your home is at 646 Birch Road, so I can certainly help with that.
+[ 14.05s][user ] Great! It’s 280 Caledonia Road. Can you tell me how long that’ll take?
+[ 19.49s][moshi] ⟨ret@19.41s⟩ ⟦⚡SPAN@19.49s: (tool result) Driving directions from 646 Birch Road to 280 Caledonia Road: 18 minutes, 12.3 km.⟧ It looks like driving will take about eighteen minutes, covering 12.3 kilometers.
+      CALL: {"function": "map_directions", "arguments": {"origin": "646 Birch Road", "destination": "280 Caledonia Road", "mode": "driving"}}
+[ 21.64s][user ] «backchannel» Yeah.
+[ 24.48s][user ] Hmm, that’s not too bad. Is there ⟨ret@27.20s⟩ traffic?
+[ 27.42s][moshi] ⟦⚡SPAN@27.44s: (tool result) Current traffic conditions: moderate congestion, estimated travel time 23 minutes, 12.3 km.⟧ There's currently moderate congestion, so the trip will likely take twenty-three minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "646 Birch Road", "destination": "280 Caledonia Road", "mode": "driving", "departure_time": "now"}}
+[ 33.27s][user ] Okay, good to know.
+[ 34.65s][moshi] Knowing what to expect can definitely ease some stress, Andrea.
+[ 36.89s][user ] «backchannel» Mm-hmm.
+[ 39.98s][user ] Yeah, definitely. What about taking the bus?
+[ 42.95s][moshi] ⟨ret@42.90s⟩ ⟦⚡SPAN@42.98s: (tool result) Public transit options: 42 minutes, 2 transfers.⟧ Taking public transit involves two transfers and will take approximately forty-two minutes.
+      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "646 Birch Road", "destination": "280 Caledonia Road"}}
+[ 48.35s][user ] Wow, that’s a big difference. I think I’ll drive.
+[ 51.12s][moshi] Driving sounds like the more efficient choice for you in that case.
+[ 53.46s][user ] «backchannel» Yeah.
+[ 55.19s][user ] Is there parking near 280 Caledonia ⟨ret@58.46s⟩ Road?
+[ 58.76s][moshi] ⟦⚡SPAN@58.78s: (tool result) Several parking lots nearby: Green P Parking - Caledonia, $3.00/hour; Impark, $4.00/hour.⟧ There are a couple options nearby — Green P Parking on Caledonia is three dollars an hour, and Impark is four.
+      CALL: {"function": "map_search_places", "arguments": {"query": "parking near 280 Caledonia Road", "type": "parking"}}
+[ 61.91s][user ] «backchannel» Yeah.
+[ 66.70s][user ] Three dollars sounds good.
+[ 68.36s][moshi] Making practical choices like that can save you a bit, Andrea.
+[ 72.01s][user ] I'm meeting Sarah there. We're going to a Korean BBQ place.
+[ 76.12s][moshi] Oh, that sounds delicious!
+[ 79.03s][user ] I love Korean BBQ. It’s my favorite—
+[ 82.08s][user ] …Do you know if they take reservations?
+[ 84.22s][moshi] ⟨ret@84.14s⟩ It's a ⟦⚡SPAN@86.14s: (tool result) Han Dynasty Korean BBQ: accepts reservations, phone number 416-555-1212.⟧ great choice, and— Han Dynasty Korean BBQ near there does accept reservations; their number is 416-555-1212.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "Korean BBQ near 280 Caledonia Road", "details": "reservations"}}
+[ 87.62s][user ] «backchannel» Uh-huh.
+[ 94.96s][moshi] It’s always wise to plan ahead, especially for popular spots.
+[ 96.38s][user ] «backchannel» Yeah.
+[100.31s][user ] I should probably call then. What time is it ⟨ret@103.37s⟩ now?
+[103.45s][moshi] ⟦⚡SPAN@103.45s: (tool result) It is Friday, July 10, 2026 at 4:52 PM in Toronto.⟧ It's currently 4:52 PM in Toronto on Friday, July 10th.
+      CALL: {"function": "get_time", "arguments": {}}
+[108.22s][user ] Thanks! I'll give them a call.
+[109.98s][moshi] Wonderful. I hope you enjoy your Korean BBQ with Sarah.
+[114.39s][user ] I think I will. You've been really helpful, Kler.
+[117.61s][moshi] It’s been my pleasure, Andrea. Have a lovely evening.

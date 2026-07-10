@@ -4,53 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "David",
+#     "name": "Léa",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-11",
+#       "date": "2025-12-31",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-12-02",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-01-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-10-27",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-12-16",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-03",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-11",
+#       "date": "2025-09-02",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User is planning a trip to Switzerland in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-07",
+#       "date": "2025-08-13",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -58,97 +48,71 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-06",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-08-08",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-31",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Please create a product for monthl | S2 What are the key differences betwe | S3 I saw Dr. Lee’s name online. | S4 What’s the weather going to be lik
+# EXAMINER(FDB-v2) 단계: S1 Find the production database backu | S2 Okay, sounds good. I was also hopi | S3 Uh, I think it was… Tuesday. | S4 That's a good summary. I remember 
 
-     0.00s  user  발화 시작: Please create a product for monthly web hosting.
-     2.68s  <ret> 발화 (turn1 첫 프레임)
-     2.81s  user  발화 끝
-     2.92s  agent 발화 시작: <ret> I’ve created a product for monthly web hosting, its ID
-     2.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Product 'monthly web hosting' created with ID 78923.
-     8.76s  user  발화 시작: What’s the price of that product?
-     8.94s  agent 발화 끝
-    10.36s  <ret> 발화 (turn3 첫 프레임)
-    10.52s  agent 발화 시작: <ret> Product 78923 is priced at nine dollars and ninety-nin
-    10.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Product 78923 is priced at $9.99 per month.
-    10.69s  user  발화 끝
-    16.49s  agent 발화 끝
-    16.75s  user  발화 시작: Hmm…
-    17.39s  user  발화 끝
-    17.69s  agent 발화 시작: Is there anything specific you’re thinking about with the pr
-    23.91s  agent 발화 끝
-    24.14s  user  발화 시작: Can you show me some similar products?
-    25.86s  <ret> 발화 (turn7 첫 프레임)
-    26.18s  agent 발화 시작: <ret> A search shows Bluehost, SiteGround, and HostGator are
-    26.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) Web hosting plans offer various features and pricing; Bl
-    26.25s  user  발화 끝
-    28.98s  user  발화 시작: Mm-hmm.
-    29.62s  user  발화 끝
-    31.96s  agent 발화 시작: They all offer different features, so it's good to compare. 
-    32.10s  agent 발화 끝
-    34.77s  user  발화 시작: Okay.
-    35.45s  user  발화 끝
-    37.88s  agent 발화 끝
-    38.08s  user  발화 시작: What are the key differences between Bluehost and SiteGround
-    40.81s  <ret> 발화 (turn12 첫 프레임)
-    41.12s  agent 발화 시작: <ret> Bluehost is typically cheaper, but SiteGround offers f
-    41.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) Bluehost is cheaper, while SiteGround offers faster spee
-    41.37s  user  발화 끝
-    45.09s  user  발화 시작: Yeah, yeah.
-    45.90s  user  발화 끝
-    46.68s  agent 발화 끝
-    47.21s  user  발화 시작: That’s helpful.
-    48.35s  user  발화 끝
-    48.42s  agent 발화 시작: It’s good to know what’s important to you. Speed and support
-    51.80s  user  발화 시작: Yeah.
-    52.30s  user  발화 끝
-    54.77s  agent 발화 끝
-    55.04s  user  발화 시작: I need to book a doctor’s appointment.
-    57.16s  user  발화 끝
-    57.36s  agent 발화 시작: I can certainly help with that. Do you have a preferred prov
-    59.88s  user  발화 시작: Okay.
-    60.56s  user  발화 끝
-    63.28s  agent 발화 끝
-    63.43s  user  발화 시작: I saw Dr. Lee’s name online.
-    65.07s  <ret> 발화 (turn21 첫 프레임)
-    65.47s  agent 발화 시작: <ret> Dr. Lee is a general practitioner at City Medical Clin
-    65.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) Dr. Lee is a general practitioner at City Medical Clinic
-    65.50s  user  발화 끝
-    74.14s  user  발화 시작: Can you book me an appointment for next Tuesday?
-    74.28s  agent 발화 끝
-    76.26s  <ret> 발화 (turn23 첫 프레임)
-    76.58s  agent 발화 시작: <ret> I’ve booked you an appointment with Dr. Lee for next T
-    76.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.24s]: (tool result) Appointment with Dr. Lee booked for Tuesday, July 21st, 
-    76.72s  user  발화 끝
-    84.82s  agent 발화 끝
-    84.93s  user  발화 시작: Great, thank you.
-    85.94s  agent 발화 시작: You’re very welcome. Taking care of your health is important
-    86.08s  user  발화 끝
-    89.58s  user  발화 시작: What’s the weather going to be like then?
-    89.74s  agent 발화 끝
-    91.36s  <ret> 발화 (turn27 첫 프레임)
-    91.52s  agent 발화 시작: <ret> Tuesday will be sunny, with a high of twenty-eight deg
-    91.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Tuesday will be sunny with a high of 28.0°C and a low of
-    91.56s  user  발화 끝
-    97.17s  agent 발화 끝
-    97.75s  user  발화 시작: Sounds nice.
-    98.73s  agent 발화 시작: It does, doesn’t it? A bit of sunshine can really lift your 
-    98.75s  user  발화 끝
-   102.30s  user  발화 시작: Yeah.
-   103.12s  user  발화 끝
-   103.58s  user  발화 시작: Can you remind me of the appointment details?
-   103.68s  agent 발화 끝
-   105.50s  <ret> 발화 (turn32 첫 프레임)
-   105.90s  agent 발화 시작: <ret> You have an appointment with Dr. Lee next Tuesday, Jul
-   105.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: [2026-07-16] Appointment with Dr. Lee booked for Tuesday, July 21st, a
-   106.03s  user  발화 끝
-   114.66s  agent 발화 끝
+     0.00s  user  발화 시작: Find the production database backup from January fifteenth, 
+     4.83s  <ret> 발화 (turn1 첫 프레임)
+     4.95s  user  발화 끝
+     5.07s  agent 발화 시작: <ret> I found a file named production_db_20240115.sql.gz, it
+     5.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.68s]: (tool result) /mnt/backups/production db_20240115.sql.gz is a 12.7 GB 
+    15.41s  user  발화 시작: Okay.
+    16.22s  user  발화 끝
+    18.75s  agent 발화 끝
+    18.90s  user  발화 시작: That’s great. Can you read that file for me?
+    21.03s  <ret> 발화 (turn4 첫 프레임)
+    21.18s  agent 발화 시작: <ret> Give me a moment while I try to access that compressed
+    21.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (no information found)
+    21.35s  user  발화 끝
+    24.12s  user  발화 시작: Mm-hmm.
+    24.62s  user  발화 끝
+    26.50s  agent 발화 끝
+    26.82s  user  발화 시작: Okay, sounds good. I was also hoping you could…
+    29.87s  user  발화 끝
+    32.00s  user  발화 시작: …find my notes from the marketing brainstorm last week.
+    35.23s  user  발화 끝
+    35.56s  agent 발화 시작: Brainstorming notes are so important for keeping ideas flowi
+    42.97s  agent 발화 끝
+    44.04s  user  발화 시작: Uh, I think it was… Tuesday.
+    46.06s  <ret> 발화 (turn10 첫 프레임)
+    46.38s  agent 발화 시작: <ret> I found a text file, brainstorm_20240709.txt, last mod
+    46.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.25s]: (tool result) /documents/marketing/brainstorm_20240709.txt is a 2.3 KB
+    46.58s  user  발화 끝
+    58.63s  agent 발화 끝
+    59.17s  user  발화 시작: Perfect! Could you read that one too?
+    61.31s  <ret> 발화 (turn12 첫 프레임)
+    61.39s  agent 발화 시작: <ret> The file contains notes from the July ninth marketing 
+    61.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.10s]: (tool result) Marketing Brainstorm - July 9, 2024\n\nKey Ideas:\n- Foc
+    61.57s  user  발화 끝
+    73.49s  agent 발화 끝
+    74.18s  user  발화 시작: That's a good summary. I remember we also talked about a pot
+    79.10s  <ret> 발화 (turn14 첫 프레임)
+    79.34s  agent 발화 시작: <ret> A partnership is always a good thing to explore, espec
+    79.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.87s]: (tool result) /documents/partnerships/stellar dynamics proposal draft.
+    79.37s  user  발화 끝
+    91.10s  agent 발화 시작: I found a draft proposal regarding a partnership with Stella
+    91.21s  agent 발화 끝
+   103.20s  agent 발화 끝
+   103.39s  user  발화 시작: Read that proposal draft, please.
+   104.92s  <ret> 발화 (turn17 첫 프레임)
+   105.32s  agent 발화 시작: <ret> Give me a moment while I attempt to access that docume
+   105.46s  user  발화 끝
+   106.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (no information found)
+   123.70s  agent 발화 끝

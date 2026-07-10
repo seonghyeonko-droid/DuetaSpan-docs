@@ -4,53 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Sky",
+#     "name": "Maya",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
+#     "nationality": "French",
+#     "gender": "female",
 #     "age_range": "40s",
-#     "language": "English"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-04-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2026-01-24",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-31",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-08-13",
-#       "category": "home",
-#       "text": "User's home address is 937 Maple Drive."
-#     },
-#     {
-#       "date": "2025-07-01",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-06-30",
+#       "date": "2026-04-22",
 #       "category": "work",
 #       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-11-14",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-07-22",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-23",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-10",
+#       "date": "2026-03-07",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-27",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-22",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -60,39 +76,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 um, yeah, I am. I’m trying to find | S2 hmm, sounds good. Is it…is it pean | S3 [happy] that’s such a relief! Can  | S4 perfect! Thank you so much, Eus.
+# EXAMINER(FDB-v2) 단계: S1 Yes, I am. I'm planning a trip to  | S2 Hmm, I haven’t. Tell me more. | S3 That sounds… really good. What abo | S4 Perfect! That sounds like exactly 
 
-     0.00s  agent 발화 시작: Hi Sky, I'm Eus. It’s lovely to connect with you today. I un
-     6.16s  agent 발화 끝
-     6.92s  user  발화 시작: um, yeah, I am. I’m trying to find a nice Italian restaurant
-    11.54s  <ret> 발화 (turn2 첫 프레임)
-    11.94s  agent 발화 시작: <ret> Italian is a wonderful choice! I see you’ve mentioned 
-    11.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [2026-03-06] User's favorite cuisine is Italian.
-    12.06s  user  발화 끝
-    15.18s  user  발화 시작: Yeah, yeah.
-    16.43s  agent 발화 끝
-    16.64s  user  발화 끝
-    17.36s  user  발화 시작: oh, right! I totally forgot I told you that. Any recommendat
-    22.36s  <ret> 발화 (turn5 첫 프레임)
-    22.44s  agent 발화 시작: <ret> Bella Vita Ristorante on George Street comes highly re
-    22.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Bella Vita Ristorante at 123 George Street, Sydney, is h
-    22.46s  user  발화 끝
-    29.90s  agent 발화 끝
-    29.96s  user  발화 시작: hmm, sounds good. Is it…is it peanut-free? I have a really b
-    35.14s  <ret> 발화 (turn7 첫 프레임)
-    35.38s  agent 발화 시작: <ret> I remember you mentioned a peanut allergy. Let me quic
-    35.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.28s]: [2025-07-01] User is allergic to peanuts.
-    35.56s  user  발화 끝
-    47.66s  agent 발화 끝
-    48.12s  user  발화 시작: [happy] that’s such a relief! Can you…reserve a table for me
-    54.47s  user  발화 끝
-    54.49s  <ret> 발화 (turn9 첫 프레임)
-    54.57s  agent 발화 시작: <ret> Your table for two at Bella Vita is confirmed for tomo
-    54.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Reservation confirmed at Bella Vita Ristorante for two p
-    58.86s  user  발화 시작: Really?
-    59.73s  user  발화 끝
-    62.17s  agent 발화 끝
-    62.75s  user  발화 시작: perfect! Thank you so much, Eus.
-    65.12s  agent 발화 시작: You’re very welcome, Sky. I'm glad I could help. Enjoy your 
-    65.34s  user  발화 끝
-    71.46s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Maya, I'm Kami. It's lovely to connect with you today. I 
+     5.74s  agent 발화 끝
+     6.58s  user  발화 시작: Yes, I am. I'm planning a trip to Iceland in October, and I'
+    13.10s  <ret> 발화 (turn2 첫 프레임)
+    13.50s  agent 발화 시작: <ret> You mentioned in April that you're planning a trip to 
+    13.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: [2026-04-23] User is planning a trip to Iceland in October.
+    13.57s  user  발화 끝
+    16.53s  user  발화 시작: Okay.
+    17.07s  user  발화 끝
+    20.52s  agent 발화 시작: I can definitely help brainstorm some ideas. What kind of ex
+    20.73s  agent 발화 끝
+    26.63s  agent 발화 끝
+    26.67s  user  발화 시작: Well, I love nature, of course. And I'd really like to see t
+    32.18s  agent 발화 시작: The Northern Lights in Iceland are breathtaking. Have you co
+    32.32s  user  발화 끝
+    40.15s  agent 발화 끝
+    40.61s  user  발화 시작: Hmm, I haven’t. Tell me more.
+    43.66s  user  발화 끝
+    43.94s  agent 발화 시작: It has volcanoes, lava fields, charming fishing villages, an
+    51.96s  agent 발화 끝
+    52.37s  user  발화 시작: That sounds… really good. What about accommodations there?
+    56.64s  <ret> 발화 (turn10 첫 프레임)
+    56.88s  agent 발화 시작: <ret> Hotel Ranga is available from October 15th to 22nd for
+    56.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) Hotel Ranga is available from October 15 to October 22, 
+    57.05s  user  발화 끝
+    66.43s  agent 발화 끝
+    67.56s  user  발화 시작: That price is reasonable. Is it near anything interesting?
+    71.44s  agent 발화 시작: Hotel Ranga is close to the Ranga River, known for Northern 
+    71.49s  user  발화 끝
+    79.69s  agent 발화 끝
+    80.06s  user  발화 시작: Perfect! That sounds like exactly what I'm looking for. I th
+    85.66s  user  발화 끝
+    85.69s  agent 발화 시작: Wonderful! I'm so glad I could help you find something that 
+    92.54s  agent 발화 끝

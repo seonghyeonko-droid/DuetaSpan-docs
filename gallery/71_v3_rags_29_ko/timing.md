@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "도현",
+#     "name": "성온",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,60 +12,61 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-02-25",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2026-02-03",
 #       "category": "home",
 #       "text": "User's home address is 대구 중구 동인동 88-1."
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-03-26",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-01-24",
+#       "date": "2026-01-02",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-07-29",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2025-12-07",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-31",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-08-30",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 인디언 헤드 페니가 마지막으로…
-     2.72s  user  발화 끝
-     4.13s  user  발화 시작: …만들어진 해가 언제였는지 알 수 있을까요?
-     7.63s  <ret> 발화 (turn2 첫 프레임)
-     7.79s  agent 발화 시작: <ret> 마지막 인디언 헤드 페니가 만들어진 건 천구백구년이었어요. 육십칠년 동안 계속 만들어졌는데, 그 
-     7.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: The final Indian Head penny was minted in 1909, marking the end of a 6
-     7.88s  user  발화 끝
-    15.39s  agent 발화 끝
+     0.00s  user  발화 시작: 크레이터 레이크 화산이 마지막으로 분화한 게 언제였지?
+     3.62s  <ret> 발화 (turn1 첫 프레임)
+     3.75s  user  발화 끝
+     3.78s  agent 발화 시작: <ret> 크레이터 레이크 화산이 마지막으로 분화한 건 대략 사천팔백년 전이라고 하네요.
+     3.78s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.17s]: The last eruption of Crater Lake volcano occurred approximately 4,800 
+     7.95s  agent 발화 끝

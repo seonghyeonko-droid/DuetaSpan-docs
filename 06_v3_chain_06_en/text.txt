@@ -1,78 +1,111 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Zean, a curious and validating personal guide who helps people with big life transitions. <system>
+SYSTEM: <system> You are Aeen, a upbeat and supportive wellness coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_06",
-    "name": "Maya",
+    "name": "Nora",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "French",
+    "nationality": "German",
     "gender": "female",
-    "age_range": "late 30s",
-    "language": "French"
+    "age_range": "early 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-21",
+      "date": "2026-06-02",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-01-11",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
+      "text": "User is planning a trip to Switzerland in May."
     },
     {
-      "date": "2026-06-09",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2025-12-22",
+      "category": "work",
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2026-02-04",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-07-03",
+      "date": "2025-10-28",
       "category": "diet",
       "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-06-03",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-10",
-      "title": "Comparing gym memberships",
+      "date": "2025-08-23",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-10-01",
+      "date": "2025-07-29",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-07-26",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you clear the code session named projX version one?
-[  3.46s][moshi] ⟨ret@3.38s⟩ ⟦⚡SPAN@3.46s: (no information found)⟧ Hmm, I’m not finding a code session named “projX version one” right now.
-      CALL: {"function": "read_file", "arguments": {"file_path": "projX version one"}}
-[  8.36s][user ] Oh, sorry. It’s actually projX, version ⟨ret@11.06s⟩ 2.
-[ 11.29s][moshi] ⟦⚡SPAN@11.30s: (no information found)⟧ Still no luck locating a session called “projX, version 2.” Perhaps a typo?
-      CALL: {"function": "read_file", "arguments": {"file_path": "projX version 2"}}
-[ 17.01s][user ] No, wait—projX v2. It's in the documents ⟨ret@19.72s⟩ folder.
-[ 20.04s][moshi] ⟦⚡SPAN@20.04s: (no information found)⟧ That’s odd. I can’t seem to find that session either, even looking in documents.
-      CALL: {"function": "read_file", "arguments": {"file_path": "documents/projX v2"}}
-[ 24.17s][user ] Ugh, okay. Just clear all code sessions ⟨ret@26.73s⟩ then.
-[ 27.13s][moshi] ⟦⚡SPAN@27.13s: (tool result) Successfully cleared all code generation sessions.⟧ Alright, all code sessions are now cleared. A fresh start can be good sometimes, don't you think?
-      CALL: {"function": "create_directory", "arguments": {"directory_path": "clear_codegen_session"}}
+[  0.00s][user ] Please make a reservation for one at Burger Palace in Austin for March tenth at twelve PM.
+[  5.17s][moshi] ⟨ret@5.10s⟩ ⟦⚡SPAN@5.18s: (tool result) Confirmation ID is BP-7892-3456. Your reservation for one at Burger Palace in Austin on March te⟧ Great! Your reservation at Burger Palace is confirmed, with confirmation ID BP-7892-3456. Enjoy your meal!
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Burger Palace", "city": "Austin", "date": "March tenth", "time": "twelve PM", "party_size": "one"}}
+[ 15.47s][user ] What's the weather going to be like then?
+[ 17.51s][moshi] ⟨ret@17.35s⟩ ⟦⚡SPAN@17.51s: (tool result) The weather in Austin on March tenth will be 22.0°C, humidity 65%, with a light breeze from the ⟧ On March tenth in Austin, it’ll be around 22 degrees Celsius, with 65% humidity and a gentle breeze. Perfect burger weather, wouldn’t you say?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Austin", "date": "March tenth"}}
+[ 27.93s][user ] Can you find me some live music that ⟨ret@30.04s⟩ night?
+[ 30.11s][moshi] ⟦⚡SPAN@30.12s: (tool result) The Continental Club is hosting a blues band, “The Night Owls,” on March tenth at 9 PM. Tickets ⟧ The Continental Club has “The Night Owls” playing blues on March tenth at nine PM. Tickets are twenty-five dollars.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"city": "Austin", "date": "March tenth", "event_type": "live music"}}
+[ 37.82s][user ] That sounds good. Are there any other ⟨ret@39.92s⟩ options?
+[ 40.32s][moshi] ⟦⚡SPAN@40.32s: (tool result) The Cactus Cafe presents singer-songwriter Lila Hayes on March tenth at 8 PM. Tickets are $30.⟧ Lila Hayes, a singer-songwriter, is performing at the Cactus Cafe at eight PM that night. Those tickets are thirty dollars.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"city": "Austin", "date": "March tenth", "event_type": "live music"}}
+[ 44.12s][user ] «backchannel» Right.
+[ 48.94s][user ] Lila Hayes.
+[ 50.29s][moshi] «interrupted» Actually, she's known for her incredibly—
+[ 52.03s][user ] «interrupts_prev» …do they have vegetarian options at the Cactus ⟨ret@55.07s⟩ Cafe?
+[ 55.31s][moshi] ⟦⚡SPAN@55.31s: (tool result) The Cactus Cafe menu includes a black bean burger, a veggie burrito, and several salads with veg⟧ Yes, the Cactus Cafe has a black bean burger, a veggie burrito, and several salads with vegetarian choices. So you’ll definitely find something delicious.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Cactus Cafe", "city": "Austin", "dietary_restriction": "vegetarian"}}
+[ 64.68s][user ] Great! Book me a ticket for Lila Hayes, ⟨ret@67.27s⟩ please.
+[ 67.67s][moshi] ⟦⚡SPAN@67.67s: (tool result) Your ticket for Lila Hayes at the Cactus Cafe on March tenth at 8 PM is confirmed. Order number ⟧ Wonderful! Your ticket for Lila Hayes is confirmed, order number LH-4567-8901. I’ve added it to your schedule.
+      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "Lila Hayes", "venue": "Cactus Cafe", "date": "March tenth", "time": "8 PM", "number_of_tickets": "one"}}
+[ 77.33s][user ] Can you remind me of my reservation details?
+[ 80.19s][moshi] ⟨ret@80.11s⟩ ⟦⚡SPAN@80.19s: Your reservation for one at Burger Palace in Austin on March tenth at twelve PM is confirmed. Confirmation ID ⟧ You have a reservation at Burger Palace in Austin on March tenth at twelve PM, confirmation ID BP-7892-3456.
+[ 90.48s][user ] Is there parking near the Cactus ⟨ret@92.60s⟩ Cafe?
+[ 92.92s][moshi] ⟦⚡SPAN@92.92s: (tool result) The University of Texas parking garage at 2401 Speedway is 0.3 miles from the Cactus Cafe, with ⟧ There’s a parking garage at 2401 Speedway, just 0.3 miles from the Cactus Cafe. It has hourly rates.
+      CALL: {"function": "map_search_places", "arguments": {"query": "parking near Cactus Cafe Austin", "location": "Cactus Cafe, Austin"}}
+[ 96.82s][user ] «backchannel» Yeah.
+[101.08s][user ] What’s the cheapest way to get there from Burger ⟨ret@104.11s⟩ Palace?
+[104.27s][moshi] ⟦⚡SPAN@104.27s: (tool result) The cheapest route is a bus ride taking approximately 45 minutes, costing $1.25.⟧ The cheapest way is a bus ride, about forty-five minutes, costing one dollar and twenty-five cents. A pretty good deal!
+      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "Burger Palace, Austin", "destination": "Cactus Cafe, Austin"}}
+[106.88s][user ] «backchannel» Okay.
+[111.83s][user ] Okay, book that bus ticket for ⟨ret@113.38s⟩ me.
+[113.70s][moshi] ⟦⚡SPAN@113.70s: (tool result) Bus ticket purchased. Confirmation number is BT-9876-5432. Departure from Burger Palace at 7:15 ⟧ Your bus ticket is booked, confirmation number BT-9876-5432. Departure is at 7:15 PM from Burger Palace.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin": "Burger Palace, Austin", "destination": "Cactus Cafe, Austin", "date": "March tenth", "time": "7:15 PM"}}
+[123.70s][user ] Remind me to leave for the bus stop at 6:45 ⟨ret@126.85s⟩ PM.
+[127.25s][moshi] ⟦⚡SPAN@127.25s: (tool result) Alarm set for March tenth at 6:45 PM, labeled “Bus to Cactus Cafe.”⟧ I've set an alarm for 6:45 PM on March tenth, labeled “Bus to Cactus Cafe.” You’ll have plenty of time.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "6:45 PM", "date": "March tenth", "label": "Bus to Cactus Cafe"}}
+[129.94s][user ] «backchannel» Exactly.
+[134.25s][user ] What kind of music does Lila Hayes ⟨ret@136.62s⟩ play?
+[136.86s][moshi] ⟦⚡SPAN@136.86s: (tool result) Lila Hayes is an indie folk singer-songwriter known for her introspective lyrics and acoustic gu⟧ Lila Hayes is an indie folk singer-songwriter, known for introspective lyrics and acoustic guitar. It’s very calming music.
+      CALL: {"function": "search", "arguments": {"query": "Lila Hayes music genre"}}
+[145.07s][user ] Can you play one of her songs for me?

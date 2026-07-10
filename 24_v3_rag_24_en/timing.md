@@ -4,86 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Casey",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-06-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
+#     },
+#     {
+#       "date": "2026-03-20",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-10-01",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-10-06",
+#       "date": "2025-08-19",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-06-06",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2025-05-29",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-05",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I've been thinking about bands tha | S2 Do you know anything about the Man | S3 …was there ever any real evidence  | S4 That’s awful. It must have been so
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to get my bearings here | S2 Hmm, I wonder if there are any int | S3 That sounds nice. Can I buy ticket | S4 Oh, okay. That's alright. Thanks, 
 
-     0.00s  user  발화 시작: I've been thinking about bands that just… disappeared.
-     3.28s  user  발화 끝
-     3.44s  agent 발화 시작: It’s understandable to feel drawn to those stories, the ones
-     8.26s  agent 발화 끝
-     8.38s  user  발화 시작: Do you know anything about the Manic Street Preachers?
-    11.09s  <ret> 발화 (turn3 첫 프레임)
-    11.48s  agent 발화 시작: <ret> The Manic Street Preachers’ guitarist, Richey Edwards,
-    11.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: Richey Edwards, the guitarist for the Manic Street Preachers, went mis
-    11.61s  user  발화 끝
-    16.94s  user  발화 시작: …was there ever any real evidence about what happened to him
-    17.60s  agent 발화 끝
-    20.47s  <ret> 발화 (turn5 첫 프레임)
-    20.70s  agent 발화 시작: <ret> —and was legally presumed dead in 2008. It’s a very di
-    20.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: His car was found abandoned near the Severn Bridge, a known suicide sp
-    20.83s  user  발화 끝
-    30.32s  user  발화 시작: Yeah.
-    30.95s  user  발화 끝
-    33.49s  user  발화 시작: That’s awful. It must have been so hard on the other band me
-    33.64s  agent 발화 끝
-    37.75s  agent 발화 시작: Grief is a complex process, and losing a bandmate like that 
-    37.88s  user  발화 끝
-    46.32s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to get my bearings here, just moved to Seoul.
+     3.47s  user  발화 끝
+     3.65s  agent 발화 시작: Settling into a new city can feel overwhelming at first, but
+     8.55s  user  발화 시작: Yeah.
+     9.05s  user  발화 끝
+    10.92s  user  발화 시작: What's the current time?
+    10.97s  agent 발화 끝
+    12.30s  <ret> 발화 (turn4 첫 프레임)
+    12.54s  user  발화 끝
+    12.69s  agent 발화 시작: <ret> It's currently 2:33 PM in Seoul right now. A good time
+    12.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
+    18.43s  agent 발화 끝
+    18.61s  user  발화 시작: Hmm, I wonder if there are any interesting concerts happenin
+    22.85s  <ret> 발화 (turn6 첫 프레임)
+    23.08s  agent 발화 시작: <ret> There’s the Seoul Jazz Festival, May 15th through 17th
+    23.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) The Seoul Jazz Festival is scheduled for May 15-17, 2026
+    23.14s  user  발화 끝
+    25.86s  user  발화 시작: Yeah.
+    26.36s  user  발화 끝
+    27.27s  user  발화 시작: That sounds nice. Can I buy tickets for that?
+    27.80s  agent 발화 끝
+    30.66s  <ret> 발화 (turn9 첫 프레임)
+    30.68s  user  발화 끝
+    30.73s  agent 발화 시작: <ret> I’m sorry, I’m unable to purchase tickets for the Seou
+    30.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.65s]: (no information found)
+    33.08s  user  발화 시작: Yeah.
+    33.67s  user  발화 끝
+    38.38s  agent 발화 끝
+    38.41s  user  발화 시작: Oh, okay. That's alright. Thanks, Fraia.
+    41.63s  agent 발화 시작: You’re very welcome! I’m happy to help with anything else as
+    41.65s  user  발화 끝
+    48.22s  agent 발화 끝

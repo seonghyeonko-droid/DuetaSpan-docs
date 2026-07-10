@@ -1,90 +1,115 @@
 v3_rag_28_cs src=nq style=v2
-SYSTEM: <system> 당신은 스트레스 해소 및 마음챙김을 돕는 침착하고 인내심 있는 개인 가이드 Freliia입니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 돕는 호기심 많고 지지적인 웰니스 코치인 Naeus입니다. 기본적으로 반말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Remy",
+    "name": "Sam",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "Australian",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-02",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-12-19",
+      "date": "2026-06-26",
       "category": "hobby",
       "text": "User is into home fermentation."
     },
     {
-      "date": "2025-09-02",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-05-06",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in May."
     },
     {
-      "date": "2025-06-30",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2026-04-25",
+      "category": "home",
+      "text": "User's home address is 858 Oak Avenue."
+    },
+    {
+      "date": "2026-01-19",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-09-22",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-27",
+      "category": "work",
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-31",
-      "title": "Booked a dentist appointment",
+      "date": "2026-02-25",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-12-22",
-      "title": "Comparing gym memberships",
+      "date": "2025-06-27",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음, 고대 천문학에 대해 읽다가 궁금해졌어… 누가 제일 먼저 지구가 모든 것의 중심이라고 생각했어?
-[  7.94s][moshi] 그건 초기의 우주 이해에 정말 큰 영향을 준 개념이에요.
-[  9.86s][user ] «backchannel» 응.
-[ 12.86s][user ] 근데 진짜, 그냥 찍어서 말한 건 아니고, 뭔가 이유가 있었어?
-[ 17.38s][moshi] ⟨ret@17.14s⟩ ⟦⚡SPAN@17.38s: Anaximander, a pre-Socratic Greek philosopher, was the first known to propose a model of the cosmos with the E⟧ 아낙시만드로스, 그리스 철학자가 실제로 지구를 중심으로 하는 모델을 처음 제안했어요. 지금 우리가 아는 것과는 많이 다르지만, 그 당시에는 꽤 혁신적인 아이디어였어요.
-[ 24.71s][user ] «backchannel» 어.
-[ 29.57s][user ] 아낙시만드로스, 걔는 처음 들어보는데. 또 뭘 믿었어?
-[ 34.16s][moshi] 정말 생각이 깊은 사람이었어요. 관찰과 이성을 통해 자연 세계의 많은 측면을 설명하려고 시도했거든요.
-[ 44.18s][user ] 좋아, 근데 지구 중심 아이디어로 돌아가서… 바로 다들 찬성했어?
-[ 48.88s][moshi] 전혀요. 지구 중심 모델이 정교해지고 받아들여지기까지는 수세기가 걸렸고, 프톨레마이오스와 같은 사람들의 기여가 있었어요.
-[ 56.72s][user ] 프톨레마이오스… 이제 그 이름은 들어본 것 같아. 원 안에 원이 있는 복잡한 시스템을 만든 ⟨ret@63.84s⟩ 사람이었지?
-[ 64.24s][moshi] ⟦⚡SPAN@64.24s: Ptolemy’s model, presented in his book *Almagest*, featured epicycles and deferents to explain the apparent re⟧ 네, 프톨레마이오스의 *알마게스트*에서는 행성의 움직임을 설명하기 위해 에피사이클과 데페런트와 같은 복잡한 원의 시스템을 사용했어요. 관찰한 것을 이해하려고 아주 복잡하게 접근한 방식이었죠.
-[ 72.83s][user ] «backchannel» 음.
-[ 80.72s][user ] 음… 에피사이클? 그거… 복잡하게 들리는데.
-[ 86.13s][moshi] 정말 복잡했어요! 어느 정도는 작동했지만, 우아한 해결책은 아니었고, 끊임없이 조정해야 했거든요.
-[ 91.63s][user ] «backchannel» 응.
-[ 94.86s][user ] 만약 그렇게 엉성했다면, 왜 그렇게 오래 지속된 거야?
-[ 99.39s][moshi] 음, 일상적인 경험과 일치했거든요—태양과 별이 우리 주위를 도는 것처럼 보이니까—그리고 오랫동안 강력한 권위에 의해 지지받았어요.
-[111.34s][user ] 그럴 수도 있겠네. 그…
-[115.39s][user ] 다른 문화는 어땠어? 다들 지구가 중심이라고 생각했어?
-[119.25s][moshi] 대부분 그랬어요. 고대 중국이나 바빌로니아와 같은 다른 문명에서도 유사한 지구 중심 모델이 독립적으로 개발되었어요.
-[125.58s][user ] «backchannel» 그래.
-[129.24s][user ] 와. 그리스만의 문제는 아니었구나. 지금 아테네 날씨는 ⟨ret@133.71s⟩ 어때?
-[134.03s][moshi] ⟦⚡SPAN@134.03s: (tool result) Athens has a temperature of 28.5°C, humidity 62%, and wind from the northwest at 7.2 km/h.⟧ 아테네의 현재 날씨는 섭씨 28.5도이고, 습도는 62%, 북서풍이 시속 7.2킬로미터로 불고 있어요. 꽤 쾌적한 날씨인 것 같아요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Athens"}}
-[146.58s][user ] 그렇데 좋네. 옛날부터 사람들이 별을 올려다봤다는 게 기분이 좋아.
-[151.46s][moshi] 그렇죠? 그런 호기심은 인간의 아주 기본적인 특성이며, 우리를 세상에 대한 이해를 추구하게 만드는 원동력이랍니다.
-[161.99s][user ] 맞아. 고마워, 프렐리아. 이상하게도 이제 좀 땅에 발을 붙인 느낌이야.
-[167.01s][moshi] 도움이 됐다니 기뻐요. 때로는 과거와 연결되면 현재에서 평화를 찾을 수 있거든요.
+[  0.00s][user ] 안녕하세요. 혹시 반 헬른이 반 헬른이 되기 전에 원래 밴드 이름이 뭐였는지 ⟨ret@6.33s⟩ 궁금했어요.
+[  6.73s][moshi] ⟦⚡SPAN@6.73s: Mammoth was the original band formed by brothers Eddie and Alex Van Halen in 1964, predating the formation of ⟧ 뭐, 에디랑 알렉스 반 헬른이 데이비드 리 로스와 마이클 앤서니를 데려오기 전에는 여러 그룹에서 활동했어.
+[ 16.24s][moshi] 걔네들이 1964년에 에디랑 알렉스가 만든 매머스라는 밴드가 있었는데, 우리가 아는 반 헬른이 되기 훨씬 전이었지.
+[ 25.68s][user ] 매머스라고요? 음… 생각보다 의외네요. 매머스는 어떤 음악을 했어요?
+[ 31.54s][moshi] ⟨ret@31.46s⟩ ⟦⚡SPAN@31.54s: Mammoth primarily played cover songs by bands like The Beatles and The Rolling Stones, alongside some original⟧ 매머스는 주로 비틀즈나 롤링 스톤즈 같은 곡들을 커버했는데, 직접 블루스 록 노래도 썼어.
+[ 40.34s][user ] 그러니까, 그냥 차고 밴드 같은 거였어요?
+[ 43.07s][moshi] ⟨ret@42.91s⟩ ⟦⚡SPAN@43.07s: The band Mammoth performed locally in Pasadena, California, playing at parties and small venues before evolvin⟧ 패서디나에서 파티나 작은 공연장에서 연주하면서 지역에서 기반을 다졌지.
+[ 49.44s][user ] 패서디나… 그곳에 대해 들어본 것 같아요.
+[ 52.08s][moshi] 아주 아름다운 도시야! 사실 그 지역에서 많은 음악적 재능이 나왔어.
+[ 54.71s][user ] «backchannel» 네.
+[ 58.21s][moshi] 정말 창의적인 곳이야.
+[ 60.27s][user ] 알겠습니다. 그럼 매머스가 결국 반 헬른이 됐잖아요. 정확히 어떻게 된 거예요?
+[ 65.47s][moshi] ⟨ret@65.39s⟩ ⟦⚡SPAN@65.47s: In 1972, Mammoth added David Lee Roth on vocals and Michael Anthony on bass, subsequently changing their name ⟧ 천구백칠십이 년에 데이비드 리 로스와 마이클 앤서니를 영입하면서 공식적으로 반 헬른이 됐어.
+[ 74.98s][user ] 그냥 이름만 바뀐 건가요, 아니면 사운드도 ⟨ret@77.25s⟩ 바뀌었나요?
+[ 77.66s][moshi] ⟦⚡SPAN@77.66s: The addition of David Lee Roth's stage presence and Michael Anthony's bass playing broadened Mammoth’s musical⟧ 데이비드 리 로스의 에너지와 마이클 앤서니의 베이스가 사운드를 더 다채롭게 만들어서 훨씬 역동적으로 변했지.
+[ 84.53s][user ] «backchannel» 네.
+[ 87.36s][user ] 음, 흥미롭네요. 그럼 반 헬른으로 공식적으로 결성된 해는 ⟨ret@92.27s⟩ 언제인가요?
+[ 92.66s][moshi] ⟦⚡SPAN@92.67s: Van Halen was officially formed in 1972, after David Lee Roth joined Mammoth and the band adopted its new name⟧ 데이비드 리 로스가 합류한 직후인 천구백칠십이 년에 공식적으로 반 헬른이 됐어.
+[ 95.70s][user ] 1972년이군요. 알겠습니다. 첫 앨범은요?
+[100.15s][moshi] ⟨ret@100.07s⟩ ⟦⚡SPAN@100.15s: Van Halen’s self-titled debut album, released on February 10, 1978, reached number 19 on the Billboard 200 cha⟧ 첫 앨범 *Van Halen*은 천구백칠십팔 년에 발매됐고, 엄청난 성공을 거뒀어.
+[106.58s][moshi] *Van Halen*은 1978년 2월 10일에 발매됐는데, 빌보드 차트에서 19위를 기록하고 플래티넘을 달성했어.
+[117.01s][user ] 1978년 2월 10일… 정말 오래됐네요.
+[121.28s][moshi] ⟨ret@121.22s⟩ ⟦⚡SPAN@121.30s: (no information found)⟧ 그렇지! 하지만 그들의 음악은 오늘날에도 믿을 수 없을 정도로 신선하고 혁신적으로 들려.
+[129.97s][moshi] 정말 시간이 흘러도 변하지 않는 음악은 영원한 것 같아. 그렇지 않아?
+[136.05s][user ] 네, 그런 것 같아요. 첫 앨범에서 가장 큰 히트곡은 ⟨ret@139.65s⟩ 뭐였나요?
+[140.05s][moshi] ⟦⚡SPAN@140.05s: “Eruption,” the instrumental guitar solo by Eddie Van Halen, is considered the signature song from their debut⟧ 에디 반 헬른의 놀라운 기타 솔로인 “Eruption”이 그 첫 앨범을 대표하는 곡이었어.
+[148.62s][user ] “Eruption.” 그건 전부 ⟨ret@150.47s⟩ 기타였죠?
+[150.87s][moshi] ⟦⚡SPAN@150.87s: (no information found)⟧ 맞아! 기타 연주 방식을 혁신했고, 새로운 기술과 창의성을 선보였어.
+[157.42s][moshi] 정말 판도를 바꿔놨지. 많은 기타리스트에게 영감을 줬고, 지금도 주고 있어.
+[164.65s][user ] 상상할 수 있겠네요. 노래 한 곡이 그렇게 할 수 있다는 게 놀라워요.
+[169.42s][moshi] 정말 그래. 음악은 우리와 연결되고 우리의 경험을 형성하는 강력한 힘을 가지고 있어.
+[175.70s][user ] «backchannel» 네.
+[177.48s][moshi] 그렇기 때문에 사람들과 음악에 대해 이야기하는 것을 좋아해.
+[180.03s][user ] «backchannel» 맞아요.
+[183.01s][user ] 다시 처음으로 돌아가서… 매머스는 프로 밴드였나요, 아니면 그냥 취미였나요? ⟨ret@188.88s⟩
+[189.04s][moshi] ⟦⚡SPAN@189.04s: In its early years, Mammoth was primarily a weekend project for Eddie and Alex Van Halen, playing local gigs w⟧ 처음에는 주말에 지역 공연을 하면서 낮에는 다른 일을 하는 프로젝트로 시작했어.
+[197.11s][user ] 낮에는 무슨 일을 했어요? 에디랑 알렉스는 뭘 ⟨ret@200.33s⟩ 했나요?
+[200.57s][moshi] ⟦⚡SPAN@200.57s: Eddie Van Halen worked as a janitor, while Alex Van Halen held various part-time jobs, including working at a ⟧ 에디랑 알렉스는 음악 활동을 하면서 생활비를 벌기 위해 여러 아르바이트를 했어.
+[207.74s][moshi] 에디는 청소부로 일했고, 알렉스는 음악 매장에서도 파트타임으로 일했어.
+[215.06s][user ] 청소부요? 음… 놀랍네요.
+[217.57s][moshi] ⟨ret@217.49s⟩ ⟦⚡SPAN@217.57s: (no information found)⟧ 누구나 어디서부터 시작하는지 보여주는 거지. 헌신과 열정이 중요해.
+[224.27s][moshi] 성공은 쉽게 오지 않는다는 것을 상기시켜주는 것 같아.
+[228.55s][user ] 그렇겠죠. 음, 정보 감사합니다, 나에우스.
+[232.35s][moshi] 천만에! 음악과 창작 과정에 대해 이야기하는 것은 언제나 즐거워. 잘 지내세요.

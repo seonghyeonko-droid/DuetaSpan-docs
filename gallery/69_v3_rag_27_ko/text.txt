@@ -1,108 +1,74 @@
 v3_rag_27_ko src=hotpotqa style=v1
-SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 긍정적이고 지지적인 조언가인 Kelil입니다. <system>
+SYSTEM: <system> 당신은 육아 및 가족 시간을 돕는 실용적이고 안심시키는 개인 가이드인 Fara입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "지훈",
+    "name": "세정",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-01",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-02-25",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-09-23",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2026-02-02",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
     },
     {
-      "date": "2025-07-31",
+      "date": "2025-11-23",
       "category": "home",
-      "text": "User's home address is 서울 종로구 세종대로 175."
+      "text": "User's home address is 인천 연수구 송도동 12-5."
     },
     {
-      "date": "2025-07-18",
+      "date": "2025-11-08",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2025-10-05",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-06-30",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2025-07-25",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-17",
-      "title": "Researching a used car",
+      "date": "2026-01-09",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-22",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요. 여행 계획 좀 짜주실 수 있을까요?
-[  3.62s][moshi] 안녕하세요! 여행 계획은 언제나 즐거운 일이죠. 어디로 떠나고 싶으신가요?
-[  7.04s][user ] «backchannel» 예.
-[  8.17s][user ] 음… 아직 정해 보진 못했어요. 그냥 봄에 꽃구경 갈 만한 곳이 있을까요?
-[ 13.94s][moshi] 봄에 꽃구경이라니, 정말 멋진 생각이에요. 혹시 특별히 선호하는 꽃 종류가 있으신가요?
-[ 19.57s][user ] 글쎄요… 벚꽃이 예쁘긴 하죠. 벚꽃 명소가 어디 ⟨ret@23.62s⟩ 있을까요?
-[ 24.00s][moshi] ⟦⚡SPAN@24.02s: The city of Jinhae in South Korea is famous for its annual cherry blossom festival, attracting millions of vis⟧ 벚꽃 명소라면 한국 진해시가 아주 유명해요. 봄마다 수백만 명의 방문객이 찾는 곳이랍니다.
-[ 30.44s][user ] 아, 진해군요. 거기는 얼마나 멀까요? 지금 제 위치에서요.
-[ 35.50s][moshi] ⟨ret@35.43s⟩ ⟦⚡SPAN@35.51s: (tool result) Jinhae, South Korea is 380 kilometers away, approximately 4 hours and 30 minutes by car from you⟧ 현재 위치에서 진해까지는 자동차로 약 네시간 삼십분, 삼백팔십킬로미터 정도 됩니다.
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Jinhae, South Korea"}}
-[ 37.28s][user ] «backchannel» 그렇죠.
-[ 41.34s][user ] 네시간 반이나요? 음… 좀 멀긴 하네요.
-[ 45.29s][moshi] 네, 조금 멀긴 하죠. 하지만 진해의 벚꽃은 정말 아름다워서 충분히 가볼 만한 가치가 있답니다.
-[ 48.72s][user ] «backchannel» 네.
-[ 51.71s][user ] 그래도 봄에 예쁜 꽃을 볼 수 있다면 괜찮을 것 같아요. 혹시 다른 곳도 추천해 주실 수 ⟨ret@58.00s⟩ 있나요?
-[ 58.24s][moshi] ⟦⚡SPAN@58.24s: The Taean Tulip Festival in Taean County, South Korea, showcases over a million tulips of various colors and b⟧ 다른 곳으로는 충청남도 태안군에서 사월에 열리는 태안 튤립 축제가 있어요. 수백만 송이의 튤립을 감상할 수 있답니다.
-[ 67.23s][user ] 태안 튤립 축제… 듣기만 해도 예쁘네요. 거기는 얼마나 걸릴까요?
-[ 71.98s][moshi] ⟨ret@71.91s⟩ ⟦⚡SPAN@71.99s: (tool result) Taean County, South Korea is 150 kilometers away, approximately 2 hours by car from your current⟧ 현재 위치에서 태안군까지는 자동차로 약 두시간, 백오십킬로미터 정도 됩니다.
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Taean County, South Korea"}}
-[ 77.12s][user ] 두시간이면 훨씬 가깝네요. 그럼 태안으로 가는 게 좋을까요?
-[ 81.72s][moshi] 태안은 진해보다 가까워서 이동 시간이 짧다는 장점이 있죠. 벚꽃도 예쁘지만 튤립도 아주 아름다워요.
-[ 87.46s][user ] 음… 튤립도 좋네요. 혹시 태안에 숙소도 예약해 줄 수 있나요?
-[ 92.05s][moshi] ⟨ret@91.97s⟩ ⟦⚡SPAN@92.05s: (tool result) There are 3 hotels available in Taean County from April 15th to April 17th, 2026, ranging from $⟧ 네, 태안군에서 사월 십오일부터 십칠일까지 이용 가능한 호텔이 세 곳 있어요. 숙박 요금은 밤에 팔십달러부터 백오십달러까지 다양합니다.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Taean County, South Korea", "checkInDate": "2026-04-15", "checkOutDate": "2026-04-17"}}
-[101.63s][user ] 팔십달러면 괜찮네요. 그럼 제일 저렴한 곳으로 예약해 ⟨ret@105.96s⟩ 주세요.
-[106.36s][moshi] ⟦⚡SPAN@106.36s: (tool result) Your hotel reservation at Hotel Sunflower in Taean County is confirmed for April 15th to April 1⟧ 네, 태안군 선플라워 호텔 예약이 사월 십오일부터 십칠일까지 확정되었습니다. 확인 번호는 티 에스 사 오 구 팔입니다.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotelId": "hotel_123", "checkInDate": "2026-04-15", "checkOutDate": "2026-04-17"}}
-[108.87s][user ] «backchannel» 네네.
-[112.95s][user ] 와, 감사합니다! 덕분에 여행 계획이 거의 다 끝났네요.
-[117.52s][moshi] 천만에요. 도움이 되었다니 정말 기쁩니다. 즐거운 여행 되세요!
-[121.55s][user ] 아, 그런데 혹시 태안에서 꼭 먹어봐야 할 음식이 ⟨ret@125.19s⟩ 있을까요?
-[125.27s][moshi] ⟦⚡SPAN@125.27s: Taean is known for its fresh seafood, particularly its blue crabs, which are often served steamed or in spicy ⟧ 태안은 신선한 해산물로 유명한데요, 특히 푸른 게 요리가 아주 맛있습니다. 찜이나 매콤한 찌개로 많이 드세요.
-[130.51s][user ] «backchannel» 네.
-[132.42s][user ] 푸른 게… 맛있겠네요. 그럼 태안에서 게를 먹을 수 있는 맛집도 추천해 주실 수 있나요?
-[139.12s][moshi] ⟨ret@139.04s⟩ ⟦⚡SPAN@139.12s: (tool result) Three seafood restaurants in Taean County are highly rated: Geumgang Marina, Taeanhaean Restaura⟧ 태안군에서 평점이 높은 해산물 맛집은 금강마리나, 태안해안식당, 블루크랩 하우스 세 곳이 있습니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Taean County, South Korea", "cuisine": "seafood"}}
-[146.34s][user ] 세 곳이나 있네요. 그럼 금강마리나로 가볼게요.
-[149.76s][moshi] 금강마리나도 좋은 선택이에요. 신선한 해산물을 맛볼 수 있을 거예요.
-[153.99s][user ] 정말 감사합니다. 덕분에 완벽한 봄 여행 계획을 세울 수 있었어요.
-[158.91s][moshi] 천만에요.
-[159.52s][user ] 네, 알겠습니다. 정말 고마워요.
-[162.66s][moshi] 즐거운 여행 되시길 바랍니다!
+[  0.00s][user ] 혹시 영화 '콜 미 쿠추'랑…
+[  4.01s][user ] …'댓츠 댄싱!'이 같은 장르에 속하는지 궁금해요.
+[  7.28s][moshi] ⟨ret@7.21s⟩ ⟦⚡SPAN@7.29s: Both Call Me Kuchu and That's Dancing! are categorized as documentary films, showcasing real-life events and p⟧ '콜 미 쿠추'랑 '댓츠 댄싱!' 둘 다 다큐멘터리 영화로 분류되어 있어요. 실생활의 사건과 관점을 보여주는 영화들이죠.
+[ 11.94s][user ] «backchannel» 네.
+[ 13.98s][moshi] 다큐멘터리는 현실을 반영하는 데 집중하는 장르라서, 다양한 이야기를 담을 수 있어요.
+[ 20.00s][user ] 아, 그렇군요. 그럼 혹시 지금 서울 날씨는 어떤가요?
+[ 24.62s][moshi] ⟨ret@24.55s⟩ ⟦⚡SPAN@24.63s: (tool result) The current weather in Seoul is 26.5°C, humidity 68%, wind 4.2 km/h, with partly cloudy skies.⟧ 지금 서울 날씨는 이십육 점 오도이고, 습도는 육십팔%, 바람은 시속 사 점 이킬로미터로 불고 있어요. 구름이 조금 있는 상태입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 29.85s][user ] «backchannel» 네.
+[ 33.71s][user ] 이십육 점 오도요… 좀 더 시원했으면 좋겠네요.
+[ 37.55s][moshi] 날씨가 더워서 조금 불편하시겠어요. 시원한 물 많이 드시고, 햇볕을 피하시는 게 좋겠어요.

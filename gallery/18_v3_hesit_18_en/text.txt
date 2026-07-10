@@ -1,10 +1,10 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Elorar, a grounded and empathetic personal guide who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Arariia, a upbeat and supportive personal guide who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Sky",
+    "name": "Andrea",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -18,37 +18,29 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
   },
   "saved_memories": [
     {
-      "date": "2026-04-12",
-      "category": "home",
-      "text": "User's home address is 798 Cedar Lane."
-    },
-    {
-      "date": "2026-02-17",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-12-10",
+      "date": "2026-03-02",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-05-31",
-      "category": "work",
-      "text": "User works as a chef."
+      "date": "2025-10-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-06-26",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-06-17",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-25",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-03-12",
+      "date": "2026-02-14",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -56,24 +48,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-03-05",
-      "title": "Researching a used car",
+      "date": "2025-12-27",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Uh, I was just wondering… which state in India has the highest birth ⟨ret@4.53s⟩ rate?
-[  4.76s][moshi] «interrupted» ⟦⚡SPAN@4.77s: Bihar has the highest birth rate in India, with 26.2 births per 1,000 people as of 2021.⟧ Bihar currently has the highest birth rate in India—
-[  7.18s][user ] «interrupts_prev» …is that rate going up or down ⟨ret@9.20s⟩ recently?
-[  9.52s][moshi] ⟦⚡SPAN@9.52s: The birth rate in Bihar has been decreasing, from 28.3 in 2018 to 26.2 in 2021, though it remains the highest ⟧ Though it remains the highest in India, the birth rate in Bihar has actually been decreasing—from 28.3 in 2018 to 26.2 in 2021.
-[ 13.59s][user ] «backchannel» Yeah.
-[ 19.16s][moshi] It’s a complex picture, with many factors influencing these numbers.
-[ 23.34s][user ] Welll… are there any specific programs to address that in Bihar?
-[ 27.10s][moshi] That’s a really insightful question. Focusing on family planning and education can certainly help.
-[ 34.22s][user ] And how does that compare to, say, Kerala?
-[ 36.80s][moshi] ⟨ret@36.73s⟩ ⟦⚡SPAN@36.81s: Kerala has a significantly lower birth rate of 18.1 per 1,000 people, reflecting its higher levels of educatio⟧ Kerala, in comparison, has a much lower birth rate—18.1 per 1,000 people—reflecting better access to education and healthcare. It’s a really interesting contrast, isn’t it?
+[  0.00s][user ] Hi, I'm new to the city and a bit lost.
+[  2.67s][moshi] Welcome!
+[  3.68s][user ] That’s great to hear. I was just wondering… what did the Tin Man want in the Wizard ⟨ret@8.76s⟩ of Oz?
+[  9.07s][moshi] ⟦⚡SPAN@9.08s: The Tin Man’s primary desire in The Wonderful Wizard of Oz was to possess a heart.⟧ He really wanted a heart, you know? It’s such a classic tale about longing for what feels missing.
+[ 12.52s][user ] «backchannel» Yeah, yeah.
+[ 16.16s][user ] Oh, a heart! Right. Uhhh… were there any other characters who wanted something similar?
+[ 21.79s][moshi] The Scarecrow and the Lion were also searching for things they believed they lacked.
+[ 26.48s][user ] That makes sense. I remember the Lion wanting courage…
+[ 30.28s][moshi] Yes, and the Scarecrow desired a brain, believing it would make him smarter.
+[ 33.21s][user ] «backchannel» Uh-huh.
+[ 36.08s][user ] Hmmmm… did the Wizard actually give them those ⟨ret@39.76s⟩ things?
+[ 39.85s][moshi] ⟦⚡SPAN@39.92s: The Wizard of Oz revealed that the Tin Man, Scarecrow, and Lion already possessed the qualities they sought.⟧ Actually, the Wizard showed them they already *had* those qualities—a heart, a brain, and courage—within themselves.
+[ 43.94s][user ] «backchannel» Yeah.
+[ 46.76s][user ] Wow, that’s a nice message. What about Dorothy? What did *she* want?
+[ 51.29s][moshi] Dorothy simply wanted to go home, back to Kansas with her Aunt Em and Uncle Henry.
+[ 56.48s][moshi] «interrupted» It's funny how often we search for things outside ourselves when—
+[ 59.71s][user ] «interrupts_prev» …do you think that's true for people moving to a new city too?
+[ 62.90s][moshi] It often is! People seek a sense of belonging, but it’s usually built from within, through connections they make.
+[ 70.56s][user ] That’s a really good point. What’s a good place to start making those connections here?
+[ 75.09s][moshi] ⟨ret@75.01s⟩ ⟦⚡SPAN@75.09s: (tool result) Italian: Bella Notte, 4.6 stars, 0.3 miles; Mexican: El Sol, 4.2 stars, 1.1 miles; Korean: Seoul⟧ Seoul Garden is close by and has amazing ratings—perhaps a good place to start exploring?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 79.29s][user ] «backchannel» Nice.
+[ 82.06s][user ] Seoul Garden sounds great! I love Korean food.
+[ 85.90s][moshi] I'm so glad to hear that! I think you'll really enjoy it. It's a lovely place to meet people, too.
+[ 91.75s][user ] Thanks so much for all your help, Arariia.
+[ 93.76s][moshi] It was my pleasure. I’m happy to assist you in making this city feel like home.

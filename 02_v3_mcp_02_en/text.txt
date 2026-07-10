@@ -1,98 +1,89 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Selo, a practical and reassuring counselor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Aral, a grounded and empathetic counselor who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Rosa",
+    "name": "Casey",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "40s",
-    "language": "German"
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-29",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-04-08",
+      "category": "home",
+      "text": "User's home address is 182 Maple Drive."
     },
     {
-      "date": "2026-03-08",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2026-01-05",
+      "date": "2026-02-26",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-11-28",
+      "date": "2026-02-18",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
+    },
+    {
+      "date": "2026-02-11",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-08-14",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2025-12-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-09-24",
+      "category": "work",
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-10",
-      "title": "Booked a dentist appointment",
+      "date": "2026-06-20",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-11-05",
-      "title": "Setting up a home network",
+      "date": "2026-04-11",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-07-26",
-      "title": "Comparing gym memberships",
+      "date": "2026-01-09",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me the files and folders in opt, sorted by ⟨ret@3.67s⟩ size.
-[  3.90s][moshi] ⟦⚡SPAN@3.90s: (tool result) /opt/google 12.3MB, /opt/nginx 8.7MB, /opt/bin 4.1MB, /opt/local 2.9MB, /opt/java 1.5MB⟧ Here are the files and folders within opt, listed from largest to smallest: google at 12.3 megabytes, nginx at 8.7, bin at 4.1…
-      CALL: {"function": "list_directory_with_sizes", "arguments": {"path": "opt", "sort_by": "size"}}
-[ 11.36s][user ] «backchannel» Nice.
-[ 15.76s][moshi] …local at 2.9, and java at 1.5 megabytes.
-[ 21.84s][user ] Hmm, what’s inside that google ⟨ret@24.24s⟩ directory?
-[ 24.56s][moshi] ⟦⚡SPAN@24.56s: (tool result) chrome 3.2MB, docs 2.1MB, sheets 1.8MB, slides 1.3MB, drive 0.9MB⟧ It contains chrome at 3.2 megabytes, docs at 2.1, sheets at 1.8… …slides at 1.3, and drive at 0.9 megabytes. Quite a bit stored there, it seems.
-      CALL: {"function": "list_directory", "arguments": {"path": "/opt/google"}}
-[ 39.95s][user ] Uh, how much free space do I have on the ⟨ret@43.23s⟩ root partition?
-[ 43.63s][moshi] ⟦⚡SPAN@43.63s: (tool result) Total: 98.5GB, Used: 62.3GB, Free: 36.2GB⟧ You currently have 36.2 gigabytes of free space available on the root partition, with a total of 98.5 gigabytes and 62.3 used. That should be plenty for most tasks, but it's good to keep an eye on it.
-      CALL: {"function": "get_file_info", "arguments": {"path": "/"}}
-[ 59.04s][user ] Okay. And what's the weather like in Seoul right now?
-[ 62.30s][moshi] ⟨ret@62.22s⟩ ⟦⚡SPAN@62.30s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The current weather in Seoul is 23 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour. A pleasant summer day, it sounds like.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 74.79s][user ] Good to know. I need to send 50,000 won to my sister.
-[ 78.68s][moshi] ⟨ret@78.60s⟩ ⟦⚡SPAN@78.68s: (tool result) Please provide your sister’s bank account number.⟧ Alright, to send 50,000 won to your sister, I'll need her bank account number first. I need that to process the payment securely, of course.
-      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": "50000", "recipient": "sister"}}
-[ 87.14s][user ] It's 123-45-67890. ⟨ret@90.55s⟩
-[ 90.95s][moshi] ⟦⚡SPAN@90.95s: (tool result) Payment of 50,000 won to account 123-45-67890 completed. Transaction ID: 9876543210⟧ The payment of 50,000 won to account 123-45-67890 has been successfully completed. Your transaction ID is 9876543210. It’s always a relief to take care of those things promptly.
-      CALL: {"function": "Payment_1_MakePayment", "arguments": {"amount": "50000", "recipient": "sister", "account_number": "123-45-67890"}}
-[104.03s][user ] «backchannel» Really?
-[108.99s][user ] Great. Find me a good Italian restaurant nearby.
-[112.30s][moshi] ⟨ret@112.22s⟩ ⟦⚡SPAN@112.30s: (tool result) Bella Italia - 0.8km, rated 4.5 stars; Roma - 1.2km, rated 4.2 stars; Pastamore - 1.5km, rated 4⟧ There are several Italian restaurants nearby. Bella Italia is 0.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}
+[  0.00s][user ] What documentaries are showing at the…
+[  3.16s][user ] …Violet Crown Cinema in Austin, ⟨ret@5.94s⟩ Texas?
+[  6.18s][moshi] ⟦⚡SPAN@6.18s: (tool result) Showing at Violet Crown Cinema in Austin, Texas: “American Symphony” (7:00 PM, 9:30 PM), “Still:⟧ At the Violet Crown Cinema in Austin, Texas, they’re showing “American Symphony” at seven and nine-thirty, and “Still: A Michael J. Fox Movie” at six-forty-five and nine-fifteen.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"location": "Austin, Texas", "cinema": "Violet Crown Cinema", "genre": "documentary"}}
+[ 18.32s][user ] Hmm, I think my partner would really like “American Symphony”.
+[ 22.55s][moshi] That sounds like a thoughtful choice. Sometimes sharing a moving experience can be a wonderful way to connect.
+[ 25.93s][user ] «backchannel» Yeah.
+[ 29.39s][user ] Could you buy two tickets for that, for the seven ⟨ret@32.53s⟩ o'clock showing?
+[ 32.85s][moshi] ⟦⚡SPAN@32.85s: (tool result) Confirmation: American Symphony, Violet Crown Cinema, Austin, TX, 2 tickets, 7:00 PM, order #AX7⟧ I’ve purchased two tickets for “American Symphony” at seven o'clock at the Violet Crown Cinema. Your order number is AX729B.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "American Symphony", "time": "7:00 PM", "cinema": "Violet Crown Cinema", "location": "Austin, Texas", "quantity": 2}}

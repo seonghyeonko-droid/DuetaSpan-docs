@@ -4,61 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Rowan",
+#     "name": "Dylan",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-15",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2026-05-20",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-12-01",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-12-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-11-09",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-07-16",
+#       "date": "2025-09-08",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-07-07",
+#       "date": "2025-06-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
+#     },
+#     {
+#       "date": "2025-06-07",
 #       "category": "home",
-#       "text": "User's home address is 376 Maple Drive."
+#       "text": "User's home address is 770 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-16",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-07-03",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Could you tell me who the governor of the Reserve Bank of In
-     3.66s  <ret> 발화 (turn1 첫 프레임)
-     3.90s  agent 발화 시작: <ret> The Reserve Bank of India’s governor was Urjit Patel, 
-     3.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: Urjit Patel served as the 24th governor of the Reserve Bank of India f
-     4.07s  user  발화 끝
-    10.75s  agent 발화 끝
+     0.00s  user  발화 시작: Could you tell me who the members of the Three 6 Mafia are?
+     3.38s  <ret> 발화 (turn1 첫 프레임)
+     3.62s  agent 발화 시작: <ret> Well, Three 6 Mafia was formed by DJ Paul, Juicy J, Lo
+     3.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.28s]: Three 6 Mafia consisted of DJ Paul, Juicy J, Lord Infamous, Koopsta Kn
+     3.75s  user  발화 끝
+    12.90s  agent 발화 끝

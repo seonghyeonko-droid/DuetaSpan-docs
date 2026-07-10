@@ -1,90 +1,113 @@
 v3_mem_32_en src=mem style=mem
-SYSTEM: <system> You are Farir, a gentle and reflective personal guide who helps people with big life transitions. <system>
+SYSTEM: <system> You are Orul, a warm and attentive wellness coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_32",
-    "name": "Ruby",
+    "name": "Jonas",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "late 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-03-03",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-05-20",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-11-07",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-10-29",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-06-23",
+      "date": "2025-08-20",
       "category": "home",
-      "text": "User's home address is 756 Maple Drive."
+      "text": "User's home address is 921 Cedar Lane."
+    },
+    {
+      "date": "2025-08-19",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-08-02",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-06-28",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-08",
-      "title": "Booked a dentist appointment",
+      "date": "2026-03-05",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-11-29",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-08-23",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ruby, I’m Farir. It’s lovely to connect with you today.
-[  1.94s][user ] «backchannel» Uh-huh.
-[  3.27s][user ] Hi Farir, it's good to meet you too. I was hoping you could help me with something.
-[  7.92s][moshi] Ruby. I’m here to support you in any way I can.
-[  9.62s][user ] «backchannel» Yeah, totally.
-[ 11.29s][user ] I'm trying to decide if I should finally start that sourdough starter I've been thinking about.
-[ 16.20s][moshi] That sounds wonderful! Home fermentation can be a really rewarding process.
-[ 21.89s][user ] I remember mentioning I was into it ⟨ret@24.29s⟩ before, actually.
-[ 24.61s][moshi] ⟦⚡SPAN@24.61s: [2025-11-07] User is into home fermentation.⟧ Yes, you did tell me about your interest in home fermentation a little while ago.
-[ 26.38s][user ] «backchannel» Yeah, totally.
-[ 28.85s][user ] Right. Do you think it’s a good idea, given how busy things are?
-[ 32.18s][moshi] It can certainly fit into a busy life, with a little planning.
-[ 36.53s][user ] I'm worried about the upkeep, honestly.
-[ 39.31s][moshi] Maintaining a starter does require consistency, but it’s manageable with a routine.
-[ 41.32s][user ] «backchannel» Yeah.
-[ 44.56s][user ] I was reading about different flours ⟨ret@46.56s⟩ to use.
-[ 46.96s][moshi] It’s interesting how much ⟦⚡SPAN@48.56s: (no information found)⟧ variety there is— I don’t have specific information on flour types right now, unfortunately.
-[ 49.44s][user ] «backchannel» Mhm.
-[ 53.44s][user ] …but what about the time commitment, really? Like, daily feeding?
-[ 57.43s][moshi] Daily feeding is typical initially, yes, to establish a strong culture.
-[ 60.32s][user ] «backchannel» Yeah.
-[ 61.42s][moshi] Though, once established, you can reduce feedings and even refrigerate it.
-[ 63.39s][user ] «backchannel» Mhm.
-[ 66.24s][user ] That sounds…better. I also need to think about space, I guess.
-[ 70.91s][moshi] Considering your location, San Francisco, space can be a factor.
-[ 73.05s][user ] «backchannel» Yeah.
-[ 74.40s][user ] You remember where I live!
-[ 76.13s][moshi] ⟨ret@75.81s⟩ ⟦⚡SPAN@76.13s: [2025-06-23] User's home address is 756 Maple Drive.⟧ I also have your address on file, 756 Maple Drive, should you need it for anything.
-[ 79.83s][user ] «backchannel» Yeah.
-[ 80.99s][user ] That's good to know. I have a dentist appointment soon, too.
-[ 84.61s][moshi] ⟨ret@84.45s⟩ ⟦⚡SPAN@84.61s: [2025-08-08] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ Yes, you booked a dentist appointment with Dr. Han, requesting an early morning slot.
-[ 86.82s][user ] «backchannel» Yeah.
-[ 90.40s][user ] Perfect. I think I'll give the sourdough a try then.
-[ 92.99s][moshi] That’s a lovely decision, Ruby. It sounds like a good challenge for you.
-[ 94.81s][user ] «backchannel» Right.
-[ 96.73s][user ] Thanks, Farir. You've really helped me think it through.
-[ 99.50s][moshi] You’re very welcome, Ruby. Remember, even small steps can lead to big growth.
+[  0.00s][moshi] Hi Jonas, I'm Orul. It's lovely to connect with you today.
+[  1.48s][user ] «backchannel» Right.
+[  3.10s][user ] Hi Orul, good to meet you too. I was hoping we could talk about… well, things have been difficult lately.
+[ 10.11s][moshi] Difficulties are a natural part of life, Jonas. It takes courage to reach out, and I'm here to listen without judgment.
+[ 16.95s][user ] Thanks. I've been feeling really lost since my grandmother passed away.
+[ 21.42s][moshi] Grief is a deeply personal journey, and there’s no right or wrong way to feel. It’s okay to feel lost.
+[ 27.79s][user ] It's just… everything reminds me of her.
+[ 30.40s][moshi] That’s very common, Jonas. Memories often surface unexpectedly when we least anticipate them.
+[ 35.89s][user ] I remember she used to make the best apple pie.
+[ 38.60s][moshi] Food often holds strong emotional connections, doesn’t it? A taste can bring back a flood of memories.
+[ 41.94s][user ] «backchannel» Uh-huh.
+[ 43.98s][user ] She always used to say cooking was her love language.
+[ 46.74s][moshi] [happy] That's a beautiful way to put it. Expressing love through acts of service is a powerful thing.
+[ 54.70s][user ] I'm trying to decide what to do with her old kitchen things.
+[ 57.88s][moshi] That’s a significant decision, Jonas. It's about honoring her memory while also navigating your own space.
+[ 60.07s][user ] «backchannel» Okay.
+[ 64.65s][user ] I was thinking of donating some things, but… I don’t know.
+[ 68.01s][moshi] «interrupted» It's understandable to feel conflicted. Perhaps keeping a few cherished items would be a good compromise—
+[ 73.31s][user ] «interrupts_prev» …Do you think it's okay to feel guilty about wanting to move on?
+[ 76.50s][moshi] It's perfectly natural to experience guilt alongside grief, Jonas. Wanting to rebuild your life doesn’t diminish your love.
+[ 79.82s][user ] «backchannel» Mm-hmm.
+[ 83.26s][user ] I just feel like I should be sadder, somehow.
+[ 85.65s][moshi] There’s no “should” when it comes to grief. Your feelings are valid, whatever they may be.
+[ 88.77s][user ] «backchannel» Yeah.
+[ 90.17s][moshi] Allowing yourself to feel the full spectrum of emotions, even the conflicting ones, is essential for healing. It’s a process, not a performance.
+[ 99.40s][user ] I'm also worried about my dog, Max. He seems to miss her ⟨ret@102.94s⟩ too.
+[103.26s][moshi] ⟦⚡SPAN@103.26s: [2026-03-05] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.⟧ Remembering our earlier conversation, you mentioned having a three-story house, which might affect the WiFi signal for Max’s camera.
+[111.44s][user ] Oh, right! I forgot about that. Does that mean I need a new ⟨ret@114.94s⟩ router?
+[115.25s][moshi] ⟦⚡SPAN@115.25s: (no information found)⟧ I’m sorry, I can’t create an order for a router. I can only search for options.
+      CALL: {"function": "create_order", "arguments": {}}
+[119.49s][user ] Okay, search for mesh routers ⟨ret@121.27s⟩ then.
+[121.51s][moshi] ⟦⚡SPAN@121.51s: (tool result) Mesh routers create a single WiFi network with multiple access points for broader coverage; Netg⟧ Mesh routers create a single network with multiple points, and brands like Netgear Orbi, TP-Link Deco, and Eero are quite popular.
+      CALL: {"function": "search", "arguments": {"query": "mesh routers"}}
+[126.39s][user ] «backchannel» Okay.
+[130.55s][user ] Eero sounds good. What’s the ⟨ret@132.96s⟩ price?
+[133.20s][moshi] ⟦⚡SPAN@133.20s: (no information found)⟧ I'm sorry, I don’t have access to stock prices for Eero. It’s a brand, not a publicly traded company.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "Eero"}}
+[138.36s][user ] Okay. Well, thanks for listening, Orul.
+[140.37s][moshi] You’re very welcome, Jonas. Remember to be kind to yourself during this time. Take things one day at a time.

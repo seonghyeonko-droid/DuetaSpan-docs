@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "세서",
+#     "name": "현람",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,111 +12,90 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-29",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2026-02-21",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-02-18",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-22",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-12-05",
+#       "date": "2025-11-20",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-06-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "date": "2025-10-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-09-05",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-06",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-08-31",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 새로운 도시에 이사 왔는데, 정착하는 데 도움이  | S2 A1 도로가 영국에서 가장 긴 도로라고요? | S3 스테이지코치 팔십육번은 어디로 가나요?. | S4 육 점 이마일이면 얼마나 걸릴까요?
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 메리 도리아 러셀하고 제임스 조이스가 둘 다 소설 | S2 아, *스패로우*요. 그 책 읽어본… | S3 조이스는 어떤가요? 좀 더 쉽게 읽히나요? | S4 …그럼 그 두 분이 작품을 쓴 시대적 배경도 많이 달랐겠네요?
 
-     0.00s  user  발화 시작: 안녕하세요. 새로운 도시에 이사 왔는데, 정착하는 데 도움이 필요해요.
-     4.49s  user  발화 끝
-     4.62s  agent 발화 시작: 안녕하세요. 새로운 도시 정착을 도와드릴 수 있어서 기쁩니다. 어떤 점이 가장 걱정되세요?
-     6.60s  user  발화 시작: 네.
-     7.09s  user  발화 끝
-    10.55s  agent 발화 끝
-    10.93s  user  발화 시작: 음… 교통이 좀 걱정되네요.…
-    13.24s  user  발화 끝
-    14.55s  user  발화 시작: …대중교통이 잘 되어 있는지 궁금해요.
-    16.46s  <ret> 발화 (turn5 첫 프레임)
-    16.85s  agent 발화 시작: <ret> Stainby는 링컨셔의 South Kesteven 지역에 있는 작은 마을이고, A1 도로에서 서
-    16.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: Stainby is a hamlet in the South Kesteven district of Lincolnshire, an
-    16.95s  user  발화 끝
-    22.16s  user  발화 시작: 와.
-    22.93s  user  발화 끝
-    24.22s  agent 발화 끝
-    24.26s  user  발화 시작: A1 도로가 영국에서 가장 긴 도로라고요?
-    27.04s  <ret> 발화 (turn8 첫 프레임)
-    27.12s  agent 발화 시작: <ret> 네, A1은 영국에서 가장 긴 번호가 매겨진 도로입니다.
-    27.12s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.98s]: The A1 is the longest numbered road in which country?
-    27.31s  user  발화 끝
-    29.16s  user  발화 시작: 진짜요?
-    29.79s  user  발화 끝
-    30.94s  agent 발화 시작: 혹시 Stainby 주변의 버스 노선을 알아봐 드릴까요?
-    31.10s  agent 발화 끝
-    34.18s  user  발화 시작: 네, 알아봐 주세요.
-    34.27s  agent 발화 끝
-    35.04s  <ret> 발화 (turn12 첫 프레임)
-    35.43s  agent 발화 시작: <ret> Stainby 근처에서 스테이지코치 팔십육번과 아리바 이번 버스를 찾았습니다.
-    35.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) Buses found near Stainby: Stagecoach 86, Arriva 2.
-    35.56s  user  발화 끝
-    37.01s  user  발화 시작: 네.
-    37.46s  user  발화 끝
-    40.65s  user  발화 시작: 스테이지코치 팔십육번은 어디로 가나요?.
-    40.81s  agent 발화 끝
-    43.13s  agent 발화 시작: 스테이지코치 팔십육번은… —
-    43.38s  user  발화 끝
-    44.34s  user  발화 시작: …근처에 큰 마트나 쇼핑센터는 어디에 있나요?
-    45.12s  agent 발화 끝
-    46.92s  <ret> 발화 (turn17 첫 프레임)
-    47.23s  agent 발화 시작: <ret> Stainby는 A1 도로에서 서쪽으로 이마일 떨어져 있고, 테스코 익스트라 슈퍼마켓이 남쪽으로 
-    47.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: Stainby is situated 2 mi west from the A1 road, and there is a Tesco E
-    47.34s  user  발화 끝
-    51.37s  user  발화 시작: 아.
-    52.19s  user  발화 끝
-    54.98s  user  발화 시작: 육 점 이마일이면 얼마나 걸릴까요?
-    55.02s  agent 발화 끝
-    56.76s  <ret> 발화 (turn20 첫 프레임)
-    56.99s  agent 발화 시작: <ret> 테스코 익스트라 슈퍼마켓까지 차로 십오분, 육 점 이마일 정도 걸립니다.
-    57.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) Driving directions to Tesco Extra supermarket: 15 minute
-    57.15s  user  발화 끝
-    58.99s  user  발화 시작: 네.
-    59.48s  user  발화 끝
-    61.64s  user  발화 시작: 좋아요. 정말 감사합니다.
-    61.80s  agent 발화 끝
-    63.71s  user  발화 끝
-    64.06s  agent 발화 시작: 도움이 되었다니 다행입니다. 새로운 곳에서 잘 정착하시길 바랍니다.
-    67.94s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 메리 도리아 러셀하고 제임스 조이스가 둘 다 소설가인가요?
+     4.29s  agent 발화 시작: 네, 두 분 모두 소설가이십니다.
+     4.44s  user  발화 끝
+     6.51s  agent 발화 끝
+     6.60s  user  발화 시작: 음… 그 두 분의 작품 스타일이 많이 다르잖아요.
+     9.49s  agent 발화 시작: 스타일은 개인의 개성이 드러나는 부분이니까요.
+     9.61s  user  발화 끝
+    12.59s  agent 발화 끝
+    12.69s  user  발화 시작: 러셀의 작품에 대해 좀 더 자세히 알려주시겠어요?
+    15.26s  <ret> 발화 (turn5 첫 프레임)
+    15.34s  agent 발화 시작: <ret> 메리 도리아 러셀은 특히 천구백구십칠년 아서 C. 클라크 상을 수상한 *스패로우*로 유명한 미국의
+    15.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: Mary Doria Russell is an American author best known for her science fi
+    15.60s  user  발화 끝
+    22.70s  user  발화 시작: 아, *스패로우*요. 그 책 읽어본…
+    22.80s  agent 발화 끝
+    25.24s  user  발화 끝
+    26.37s  user  발화 시작: …적 있어요. 좀 난해하긴 했죠.
+    29.05s  agent 발화 시작: 많은 분들이 그렇게 느끼시는 것 같아요. 깊이 있는 주제를 다루고 있어서요.
+    29.23s  user  발화 끝
+    33.82s  agent 발화 끝
+    34.51s  user  발화 시작: 조이스는 어떤가요? 좀 더 쉽게 읽히나요?
+    37.18s  <ret> 발화 (turn10 첫 프레임)
+    37.34s  agent 발화 시작: <ret> 제임스 조이스는 의식의 흐름 기법을 적용한 획기적인 작품인 *율리시스*로 가장 잘 알려진 아일랜드
+    37.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: James Joyce was an Irish novelist, short story writer, poet, teacher, 
+    37.42s  user  발화 끝
+    40.23s  user  발화 시작: 네.
+    40.58s  user  발화 끝
+    44.99s  agent 발화 끝
+    46.34s  user  발화 시작: 의식의 흐름이라… —
+    47.81s  user  발화 시작: …그럼 그 두 분이 작품을 쓴 시대적 배경도 많이 달랐겠네요?
+    47.95s  user  발화 끝
+    51.20s  <ret> 발화 (turn14 첫 프레임)
+    51.60s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분입니다.
+    51.60s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.81s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+    51.79s  user  발화 끝
+    53.58s  user  발화 시작: 어머.
+    53.94s  user  발화 끝
+    56.42s  agent 발화 끝
+    58.18s  user  발화 시작: 그렇군요. 시간이 정말 빠르네요.
+    60.47s  agent 발화 시작: 시간이 흐르는 건 자연스러운 일이죠. 현재에 집중하는 게 중요해요.
+    60.58s  user  발화 끝
+    65.05s  agent 발화 끝

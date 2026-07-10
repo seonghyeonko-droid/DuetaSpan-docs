@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Charlotte",
+#     "name": "Marie",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -13,104 +13,136 @@
 #     },
 #     "nationality": "Australian",
 #     "gender": "female",
-#     "age_range": "late 20s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-29",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-05-10",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2025-11-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-10-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-09-05",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-02-18",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-22",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-06-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "date": "2025-07-24",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-06",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-21",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-31",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to get settled here, an | S2 That's good to know. How far is Gr | S3 410 miles! That’s… | S4 Okay, good to know it's not right 
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to settle in here, and  | S2 That’s not bad. I used to spend ho | S3 That’s good to know. I’m also a fa | S4 I see. Could you find me some even
 
-     0.00s  user  발화 시작: I'm trying to get settled here, and I'm wondering about loca
-     3.81s  agent 발화 시작: Settling in takes time, and knowing how to get around is a b
-     4.02s  user  발화 끝
-     5.26s  user  발화 시작: Yeah.
-     5.62s  user  발화 끝
-     8.20s  agent 발화 끝
-     8.30s  user  발화 시작: Yeah, exactly. Are there…
-    10.19s  user  발화 끝
-    11.67s  user  발화 시작: …buses to nearby towns?
-    13.20s  <ret> 발화 (turn5 첫 프레임)
-    13.28s  agent 발화 시작: <ret> Buses run from Stainby to Grantham, Sleaford, and Linc
-    13.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) Buses run from Stainby to Grantham, Sleaford, and Lincol
-    13.42s  user  발화 끝
-    15.38s  user  발화 시작: Yeah.
-    15.68s  user  발화 끝
-    19.90s  agent 발화 끝
-    20.01s  user  발화 시작: That's good to know. How far is Grantham, exactly?
-    22.74s  <ret> 발화 (turn8 첫 프레임)
-    23.06s  agent 발화 시작: <ret> It's about 7.6 miles to Grantham, taking around 15 min
-    23.06s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.68s]: (tool result) The distance between Stainby and Grantham is approximate
-    23.07s  user  발화 끝
-    25.46s  user  발화 시작: Wow.
-    26.01s  user  발화 끝
-    27.59s  agent 발화 시작: It’s helpful to have a sense of those distances when you’re 
-    27.74s  agent 발화 끝
-    31.76s  agent 발화 끝
-    31.85s  user  발화 시작: It is. I was reading something about the A1… is that the lon
-    37.61s  <ret> 발화 (turn12 첫 프레임)
-    37.93s  agent 발화 시작: <ret> Yes, the A1 is the longest numbered road in the UK, st
-    37.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: The A1 is the longest numbered road in the United Kingdom, stretching 
-    37.96s  user  발화 끝
-    44.97s  user  발화 시작: 410 miles! That’s…
-    44.98s  agent 발화 끝
-    46.81s  user  발화 끝
-    47.75s  user  발화 시작: …is it a busy road, though, around Stainby?
-    50.34s  user  발화 끝
-    50.42s  agent 발화 시작: It’s often quite busy—
-    51.73s  agent 발화 시작: —particularly during peak hours, but Stainby itself is set b
-    51.89s  agent 발화 끝
-    55.52s  user  발화 시작: Okay, good to know it's not right on top of everything. What
-    56.22s  agent 발화 끝
-    58.98s  <ret> 발화 (turn18 첫 프레임)
-    59.06s  agent 발화 시작: <ret> In Stainby itself, there’s The Crown & Anchor pub, but
-    59.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) There is one pub, The Crown & Anchor, in Stainby, and a 
-    59.23s  user  발화 끝
-    61.30s  user  발화 시작: Uh-huh.
-    61.75s  user  발화 끝
-    64.19s  user  발화 시작: The Crown & Anchor, got it. Is Grantham easy to get to from 
-    64.53s  agent 발화 끝
-    68.39s  agent 발화 시작: It’s a straightforward trip, and knowing your options is alw
-    68.53s  user  발화 끝
-    73.02s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to settle in here, and honestly, just feel a bit 
+     3.71s  agent 발화 시작: It’s completely normal to feel that way when you’re new to a
+     3.79s  user  발화 끝
+     9.17s  agent 발화 끝
+     9.28s  user  발화 시작: Thanks, Lior. I was wondering about good bookstores.
+    12.26s  <ret> 발화 (turn3 첫 프레임)
+    12.33s  agent 발화 시작: <ret> City Lights Bookstore, established in 1953, is a well-
+    12.33s  user  발화 끝
+    12.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: The City Lights Bookstore, founded in 1953, is an independent bookstor
+    18.63s  agent 발화 끝
+    19.41s  user  발화 시작: Oh, that sounds lovely! Is it far from here?
+    22.46s  <ret> 발화 (turn5 첫 프레임)
+    22.78s  agent 발화 시작: <ret> It’s about 4.2 miles away, and should take around 18 m
+    22.78s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.54s]: (tool result) City Lights Bookstore is 4.2 miles away, with an estimat
+    22.93s  user  발화 끝
+    24.26s  user  발화 시작: Yeah.
+    24.80s  user  발화 끝
+    27.18s  user  발화 시작: That’s not bad. I used to spend hours in bookstores back hom
+    27.32s  agent 발화 끝
+    31.11s  user  발화 끝
+    31.19s  agent 발화 시작: It's wonderful to have a familiar comfort when settling into
+    33.97s  user  발화 시작: Mhm.
+    34.46s  user  발화 끝
+    37.77s  agent 발화 끝
+    38.11s  user  발화 시작: I'm a big reader, actually. Do you know if Mary Doria Russel
+    43.34s  <ret> 발화 (turn11 첫 프레임)
+    43.66s  agent 발화 시작: <ret> Yes, she also wrote *Children of God* and *Dreamers of
+    43.66s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.46s]: Mary Doria Russell is an American author known for her novels *The Spa
+    43.81s  user  발화 끝
+    46.34s  user  발화 시작: Yeah.
+    46.69s  user  발화 끝
+    49.12s  agent 발화 끝
+    49.24s  user  발화 시작: Hmm, *Children of God* sounds familiar…
+    52.38s  user  발화 끝
+    52.39s  agent 발화 시작: It’s a sequel to *The Sparrow*, and continues the exploratio
+    58.51s  agent 발화 끝
+    58.89s  user  발화 시작: That’s good to know. I’m also a fan of James Joyce, but I’m 
+    63.40s  agent 발화 시작: James Joyce is considered one of the most influential author
+    63.61s  user  발화 끝
+    67.61s  user  발화 시작: …was he writing around the same time as Russell?
+    68.30s  agent 발화 끝
+    70.25s  <ret> 발화 (turn18 첫 프레임)
+    70.33s  agent 발화 시작: <ret> James Joyce was active from the early 1900s until 1941
+    70.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: James Joyce was an Irish novelist, short story writer, poet, teacher, 
+    70.48s  user  발화 끝
+    73.34s  user  발화 시작: Really?
+    74.11s  user  발화 끝
+    78.02s  agent 발화 끝
+    79.22s  user  발화 시작: So, a couple of decades difference, maybe?
+    81.77s  agent 발화 시작: Roughly, yes. Joyce’s peak was earlier, but both were signif
+    81.99s  user  발화 끝
+    86.86s  agent 발화 끝
+    88.11s  user  발화 시작: I see. Could you find me some events happening at City Light
+    91.40s  <ret> 발화 (turn23 첫 프레임)
+    91.47s  user  발화 끝
+    91.64s  agent 발화 시작: <ret> They have a poetry reading on July 12th at 7 PM, and a
+    91.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) City Lights Bookstore hosts a poetry reading on July 12t
+    96.53s  user  발화 시작: Mm-hmm.
+    97.03s  user  발화 끝
+    98.77s  agent 발화 끝
+    99.02s  user  발화 시작: A poetry reading sounds nice.
+   101.09s  user  발화 끝
+   101.11s  agent 발화 시작: It’s a lovely way to experience a bookstore, and perhaps mee
+   105.92s  agent 발화 끝
+   107.54s  user  발화 시작: Okay, that's all really helpful, Lior. Thanks so much!
+   110.01s  agent 발화 시작: You’re very welcome. Remember, settling in takes time, be ki
+   110.13s  user  발화 끝
+   114.45s  agent 발화 끝

@@ -1,56 +1,46 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are Klella, a warm and attentive life coach who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Laera, a gentle and reflective supportive advisor who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_04",
-    "name": "Quinn",
+    "name": "Bruno",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "Australian",
+    "gender": "male",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
+      "date": "2025-11-23",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-10-28",
       "category": "allergy",
       "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-05-27",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2026-05-24",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2026-02-11",
+      "date": "2025-07-10",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-06",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-10-31",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2025-06-02",
+      "category": "home",
+      "text": "User's home address is 263 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-15",
+      "date": "2026-05-07",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -58,71 +48,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-04-16",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-03-21",
+      "date": "2026-04-18",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you find the coordinates…
-[  3.12s][user ] …for the Sydney Opera ⟨ret@4.35s⟩ House?
-[  4.67s][moshi] ⟦⚡SPAN@4.67s: (tool result) The Sydney Opera House is located at -33.8567841, 151.2152929. It’s a multi-venue performing art⟧ The Sydney Opera House is at -33.8567841, 151.2152929. It's quite a landmark, isn't it?
-      CALL: {"function": "map_geocode", "arguments": {"address": "Sydney Opera House"}}
-[ 17.47s][user ] And what’s the weather like there right now?
-[ 19.73s][moshi] ⟨ret@19.65s⟩ ⟦⚡SPAN@19.73s: (tool result) The current weather in Sydney is 18.2°C, with partly cloudy skies and a wind speed of 11.1 km/h.⟧ It's 18.2°C in Sydney, with partly cloudy skies and a breeze of 11.1 kilometers per hour. A lovely day for a show!
-      CALL: {"function": "map_weather", "arguments": {"latitude": "-33.8567841", "longitude": "151.2152929"}}
-[ 24.80s][user ] «backchannel» Oh.
-[ 31.62s][user ] Hmm, okay. Could you find me some hotels near there, maybe under $200 a night?
-[ 37.08s][moshi] ⟨ret@37.00s⟩ ⟦⚡SPAN@37.08s: (tool result) Here are three hotels near the Sydney Opera House: The Russell Hotel ($180/night), Harbour Rocks⟧ I found three hotels near the Opera House. The Russell is $180, Harbour Rocks is $195, and The Grace is $175 per night.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Sydney Opera House", "max_price": "200"}}
-[ 51.68s][user ] The Russell Hotel sounds good. Can you reserve a room for me there for tonight?
-[ 56.06s][moshi] ⟨ret@55.98s⟩ ⟦⚡SPAN@56.06s: (tool result) Booking confirmed at The Russell Hotel for tonight, one room. Confirmation ID: RH78923.⟧ Excellent. A room is booked at The Russell Hotel for tonight. Your confirmation ID is RH78923.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "The Russell Hotel", "date": "tonight"}}
-[ 65.71s][user ] Great! Now, could you show me the directions from my current location to the hotel?
-[ 70.69s][moshi] ⟨ret@70.45s⟩ ⟦⚡SPAN@70.69s: (tool result) Directions from your current location to The Russell Hotel are: 2.1 km, approximately 27 minutes⟧ The Russell Hotel is 2.1 kilometers from here, about a 27-minute drive. Shall I send those directions to your phone?
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "The Russell Hotel"}}
-[ 74.16s][user ] «backchannel» Mhm.
-[ 79.38s][user ] No, that’s alright. I think I can manage. How about restaurants ⟨ret@83.43s⟩ nearby?
-[ 83.51s][moshi] ⟦⚡SPAN@83.51s: (tool result) Aria Restaurant, Quay, and Mr. Wong are highly-rated restaurants near The Russell Hotel.⟧ Aria, Quay, and Mr. Wong are popular restaurants close to your hotel. They all have excellent reviews.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "The Russell Hotel"}}
-[ 85.88s][user ] «backchannel» Uh-huh.
-[ 91.86s][user ] Quay sounds interesting. What kind of cuisine do they serve?
-[ 95.75s][moshi] ⟨ret@95.68s⟩ ⟦⚡SPAN@95.76s: (tool result) Quay restaurant serves modern Australian cuisine with an emphasis on seafood. It has three hats ⟧ Quay offers modern Australian cuisine, specializing in seafood. It’s a highly acclaimed restaurant.
-      CALL: {"function": "search", "arguments": {"query": "Quay restaurant cuisine"}}
-[103.72s][user ] Hmmm, seafood isn't really what I'm in the mood for tonight—
-[106.97s][user ] …actually, can you check if Mr. Wong has any availability around 7:30 ⟨ret@111.98s⟩ PM?
-[112.29s][moshi] ⟦⚡SPAN@112.30s: (tool result) Mr. Wong has availability at 7:30 PM tonight. Reservation confirmed for two people. Confirmation⟧ Yes, Mr. Wong does have a table for two at 7:30 PM tonight. Your confirmation number is MW45678.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Mr. Wong", "time": "7:30 PM"}}
-[121.25s][user ] Perfect! That’s exactly what I wanted. Thanks!
-[124.07s][moshi] You’re very welcome. It sounds like you have a lovely evening planned.
-[129.69s][user ] I think so. What's the quickest way to get there from the hotel, ⟨ret@133.89s⟩ walking?
-[134.20s][moshi] ⟦⚡SPAN@134.21s: (tool result) Walking from The Russell Hotel to Mr. Wong takes approximately 18 minutes, covering a distance o⟧ It's a 1.3 kilometer walk from The Russell Hotel to Mr. Wong, taking around 18 minutes.
-      CALL: {"function": "map_directions_walking", "arguments": {"origin": "The Russell Hotel", "destination": "Mr. Wong"}}
-[138.57s][user ] «backchannel» Really?
-[141.41s][user ] Okay, good to know. Can you set an alarm for 7:00 PM then?
-[144.92s][moshi] ⟨ret@144.84s⟩ ⟦⚡SPAN@144.92s: (tool result) Alarm set for 7:00 PM.⟧ An alarm is set for 7:00 PM.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "7:00 PM"}}
-[145.99s][user ] «backchannel» Right.
-[147.70s][user ] Wonderful. And just out of curiosity, what’s the exchange rate between Australian dollars and US dollars right ⟨ret@154.08s⟩ now?
-[154.39s][moshi] ⟦⚡SPAN@154.40s: (tool result) The current exchange rate for AUD/USD is 0.66 US dollars per 1 Australian dollar.⟧ Currently, one Australian dollar is worth 0.66 US dollars.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "AUD/USD"}}
-[160.02s][user ] Okay, that's helpful. I think that's all I need for now.
-[163.09s][moshi] Wonderful. It seems like everything is set for a relaxing and enjoyable evening.
-[166.34s][user ] «backchannel» Yeah.
-[169.24s][user ] Yes, it does. Thanks again for all your help!
-[172.06s][moshi] I'm glad I could assist you. Enjoy your evening!
-[175.00s][user ] You too.
-[175.82s][moshi] Take care.
+[  0.00s][user ] Send Mom a payment request for seven dollars and seventy-five ⟨ret@3.88s⟩ cents.
+[  4.20s][moshi] ⟦⚡SPAN@4.20s: (tool result) Payment request sent to Mom for $7.75. Confirmation ID: PMT-8291-XJ4.⟧ I’ve sent a payment request to Mom for seven dollars and seventy-five cents. Your confirmation ID is PMT-8291-XJ4.
+      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": "7.75", "recipient": "Mom"}}
+[ 11.21s][user ] «backchannel» Yeah.
+[ 15.11s][user ] Oh, uh, that’s good. Is she…is she already showing as having received ⟨ret@20.09s⟩ it?
+[ 20.33s][moshi] ⟦⚡SPAN@20.33s: (no information found)⟧ I don’t have access to whether Mom has seen the request yet. That information isn't available to me.
+[ 27.02s][user ] Hmm. Well, could you at least search for her contact information, just to double-check the name I have saved?
+[ 32.94s][moshi] ⟨ret@32.86s⟩ ⟦⚡SPAN@32.94s: (tool result) Results: Eleanor Vance, (555) 123-4567 – Vance Family Directory; Eleanor Vance, (555) 987-6543 –⟧ I found two possible matches for “Mom’s phone number”: Eleanor Vance at five-five-five one-two-three four-five-six-seven, or five-five-five nine-eight-seven six-five-four-three.
+      CALL: {"function": "search", "arguments": {"query": "Mom's phone number"}}
+[ 39.19s][user ] «backchannel» Yeah.
+[ 46.63s][user ] That's the first one. Good. Thanks, Laera.
+[ 49.40s][moshi] You’re very welcome. It’s often helpful to confirm details, even small ones, when we're navigating these connections.

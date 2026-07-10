@@ -4,53 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "세현",
+#     "name": "은국",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
+#       "date": "2026-05-05",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-04-03",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2026-03-19",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-12-04",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
+#       "date": "2025-11-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-01",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-09-03",
+#       "date": "2025-11-06",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-07-05",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-10-13",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-10",
+#       "date": "2026-02-24",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-16",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,15 +66,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-05",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-25",
+#       "date": "2025-10-23",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -76,29 +76,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 런던 날씨 좀 알려주세요. | S2 흐음… 그럼 이번 주 토요일 런던 날씨는 어때요? | S3 토요일에 런던에 있는 좋은 레스토랑 좀 찾아주세요. | S4 파델라 예약 좀 해 주세요.
+# EXAMINER(FDB-v2) 단계: S1 시카고 리버 이스트 스물한 극장에서 상영하는 드라마 영화 좀  | S2 저녁 여덟시 표 두 장 예매해 줘. | S3 고마워. 혹시 오늘 날씨 어때? | S4 오늘 저녁에 비 올 가능성 있어?
 
-     0.00s  user  발화 시작: 안녕하세요. 런던 날씨 좀 알려주세요.
-     2.16s  <ret> 발화 (turn1 첫 프레임)
-     2.23s  agent 발화 시작: <ret> 지금 런던 날씨는 십팔 점 오도이고, 습도는 육십이%, 바람은 시속 칠 점 이킬로미터입니다.
-     2.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) The current weather in London is 18.5°C, with humidity a
-     2.26s  user  발화 끝
-     8.72s  agent 발화 끝
-     8.80s  user  발화 시작: 흐음… 그럼 이번 주 토요일 런던 날씨는 어때요?
-    12.30s  <ret> 발화 (turn3 첫 프레임)
-    12.54s  agent 발화 시작: <ret> 이번 주 토요일 런던 날씨는 이십일도로, 부분적으로 흐리고 비 올 확률은 이십% 정도입니다.
-    12.54s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.12s]: (tool result) The weather forecast for London this Saturday is 21.0°C,
-    12.54s  user  발화 끝
-    15.96s  user  발화 시작: 아.
-    16.57s  user  발화 끝
-    18.66s  agent 발화 끝
-    18.73s  user  발화 시작: 토요일에 런던에 있는 좋은 레스토랑 좀 찾아주세요.
-    21.36s  <ret> 발화 (turn6 첫 프레임)
-    21.67s  agent 발화 시작: <ret> 토요일 런던에는 더 리츠 레스토랑, 디슘 코벤트 가든, 파델라 등 괜찮은 식당들이 있습니다.
-    21.68s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.49s]: (tool result) Several restaurants in London are available on Saturday,
-    21.92s  user  발화 끝
-    28.16s  agent 발화 끝
-    28.95s  user  발화 시작: 파델라 예약 좀 해 주세요.
-    30.29s  agent 발화 시작: 파델라 예약은 제가 직접 해 드릴 수는 없어요. 예약은 직접 하셔야 합니다.
-    30.42s  user  발화 끝
-    35.01s  agent 발화 끝
+     0.00s  user  발화 시작: 시카고 리버 이스트 스물한 극장에서 상영하는 드라마 영화 좀 알려줘.
+     4.16s  <ret> 발화 (turn1 첫 프레임)
+     4.23s  agent 발화 시작: <ret> 시카고 리버 이스트 스물한 극장에서는 크리스토퍼 놀란 감독의 드라마 “오펜하이머”와 셀린 송 감독
+     4.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: (tool result) The AMC River East 21 in Chicago is showing “Oppenheimer
+     4.26s  user  발화 끝
+     9.59s  user  발화 시작: 어어.
+    10.22s  user  발화 끝
+    12.48s  user  발화 시작: “오펜하이머” 상영 시간 좀 알려줄래?
+    12.54s  agent 발화 끝
+    14.08s  <ret> 발화 (turn4 첫 프레임)
+    14.48s  agent 발화 시작: <ret> “오펜하이머”는 오늘 AMC 리버 이스트 스물한 극장에서 오후 한시 삼십분, 오후 네시 사십오분,
+    14.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) “Oppenheimer” is playing at AMC River East 21 today at 1
+    14.64s  user  발화 끝
+    23.39s  agent 발화 끝
+    23.51s  user  발화 시작: 저녁 여덟시 표 두 장 예매해 줘.
+    25.07s  <ret> 발화 (turn6 첫 프레임)
+    25.38s  agent 발화 시작: <ret> “오펜하이머” 저녁 여덟시 AMC 리버 이스트 스물한 극장 표 두 장, 확인번호는 칠 팔 엑스 구
+    25.39s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.58s]: (tool result) Two tickets for “Oppenheimer” at AMC River East 21 at 8:
+    25.59s  user  발화 끝
+    33.96s  agent 발화 끝
+    34.97s  user  발화 시작: 고마워. 혹시 오늘 날씨 어때?
+    36.53s  <ret> 발화 (turn8 첫 프레임)
+    36.92s  agent 발화 시작: <ret> 지금 시카고 날씨는 이십사 점 오도이고, 습도는 육십팔%, 바람은 남서쪽에서 시속 칠 점 이킬로미
+    36.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) The weather in Chicago is currently 24.5°C, with humidit
+    37.09s  user  발화 끝
+    40.57s  user  발화 시작: 응.
+    41.02s  user  발화 끝
+    44.24s  agent 발화 끝
+    44.57s  user  발화 시작: 오늘 저녁에 비 올 가능성 있어?
+    46.04s  <ret> 발화 (turn11 첫 프레임)
+    46.44s  agent 발화 시작: <ret> 오늘 저녁 시카고에 비가 올 가능성은 이십% 정도예요.
+    46.44s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.84s]: (tool result) There is a 20% chance of rain in Chicago tonight.
+    46.50s  user  발화 끝
+    50.08s  <ret> 발화 (turn12 첫 프레임)
+    50.24s  agent 발화 시작: <ret> 날씨가 조금 쌀쌀해질 수 있으니 가벼운 겉옷을 챙기시는 게 좋겠어요. 마음이 조금 편안해지셨으면 
+    50.28s  agent 발화 끝
+    52.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.46s]: (no information found)
+    56.49s  agent 발화 끝

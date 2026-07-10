@@ -1,10 +1,10 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Thera, a warm and attentive life coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Jellami, a warm and attentive life coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Chloe",
+    "name": "Owen",
     "location": {
       "city": "New York",
       "country": "United States",
@@ -12,99 +12,91 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "female",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-11",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-06-23",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-09-01",
+      "date": "2026-06-21",
       "category": "home",
-      "text": "User's home address is 909 Pine Court."
+      "text": "User's home address is 509 Oak Avenue."
     },
     {
-      "date": "2025-07-27",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-04-01",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
     },
     {
-      "date": "2025-06-05",
-      "category": "work",
-      "text": "User works as a architect."
+      "date": "2026-03-22",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-05",
-      "title": "Setting up a home network",
+      "date": "2026-03-29",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-01-22",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-12-27",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] In what sizes do pounds of paper ⟨ret@2.34s⟩ come?
-[  2.50s][moshi] ⟦⚡SPAN@2.50s: (no information found)⟧ But I don't have information on standard paper sizes by weight. It’s not something I’ve been trained on, unfortunately.
-[  9.82s][user ] Welll… that’s frustrating. I’m trying to figure…
-[ 14.46s][user ] …out how much I’m getting for my money.
-[ 16.74s][moshi] I understand your frustration. It's always good to know you're getting what you expect. Settling into a new place can be tricky enough without that.
-[ 25.24s][user ] I just moved to Seoul, actually. It’s a little overwhelming.
-[ 28.25s][moshi] Welcome to Seoul! It can be a bit much at first, but it’s a wonderful city. I hope you’re finding your feet.
-[ 33.27s][user ] «backchannel» Right.
-[ 35.80s][user ] I am, slowly. What's the weather like ⟨ret@39.66s⟩ today?
-[ 39.98s][moshi] ⟦⚡SPAN@39.98s: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now. The current conditions are 23.0°⟧ Right now in Seoul, it’s 23.0°C with 74% humidity and a light breeze. Hopefully, that’s pleasant weather for exploring!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 49.57s][user ] That sounds… sticky. Are there any parks ⟨ret@52.87s⟩ nearby?
-[ 53.03s][moshi] ⟦⚡SPAN@53.03s: (tool result) Olympic Park is 4.5 km away, and Hangang Park is 2.8 km away.⟧ Olympic Park is about 4.5 kilometers from you, and Hangang Park is closer, at 2.8 kilometers. Both are lovely spots to escape the city heat.
-      CALL: {"function": "maps_search_places", "arguments": {"query": "parks", "location": "Seoul"}}
-[ 65.47s][user ] Hangang Park sounds nice. How do I get there?
-[ 68.64s][moshi] ⟨ret@68.49s⟩ ⟦⚡SPAN@68.65s: (tool result) The fastest route is via Olympic-ro, taking approximately 18 minutes by car.⟧ The quickest way to Hangang Park is via Olympic-ro, which should take around 18 minutes by car. Traffic can vary, of course.
-      CALL: {"function": "map_directions_driving", "arguments": {"origin": "Seoul", "destination": "Hangang Park"}}
-[ 74.43s][user ] «backchannel» Yeah, yeah.
-[ 76.84s][user ] Eighteen minutes, huh? Is there a bus?
-[ 79.41s][moshi] ⟨ret@79.33s⟩ ⟦⚡SPAN@79.41s: (tool result) Bus number 333 takes 35 minutes, and bus number 667 takes 42 minutes.⟧ You can take bus number 333, which takes about 35 minutes, or bus number 667, taking 42 minutes. Public transport is very convenient here.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Seoul", "destination": "Hangang Park"}}
-[ 91.13s][user ] Thirty-five minutes is manageable. Thanks.
-[ 93.74s][moshi] You’re very welcome! It's good to have options, isn’t it?
-[ 97.23s][user ] It is. I need to find a grocery store too.
-[100.30s][moshi] ⟨ret@100.14s⟩ ⟦⚡SPAN@100.30s: (tool result) Lotte Mart is 1.2 km away, and Homeplus is 1.8 km away.⟧ Lotte Mart is only 1.2 kilometers from you, and Homeplus is a bit further at 1.8 kilometers. Both are quite large and have everything you’d need.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "grocery store", "location": "Seoul"}}
-[111.21s][user ] Lotte Mart sounds closer. Do they deliver?
-[114.12s][moshi] ⟨ret@114.05s⟩ ⟦⚡SPAN@114.13s: (tool result) Lotte Mart offers delivery services through its online platform and partnerships with delivery a⟧ Yes, Lotte Mart delivers through their website and apps like Coupang Eats. You can find their online store at [https://www.lottemart.com/](https://www.lottemart.com/). That might save you a trip!
-      CALL: {"function": "search", "arguments": {"query": "Lotte Mart Seoul delivery"}}
-[127.63s][user ] «backchannel» Yeah.
-[136.12s][user ] That’s fantastic! I’m going to check that out.
-[138.92s][moshi] Wonderful! Making things easier for yourself is a great way to settle in.
-[143.46s][user ] I’m also looking for a good coffee ⟨ret@145.58s⟩ shop.
-[145.97s][moshi] ⟦⚡SPAN@145.98s: (tool result) Café Onion Anguk is 2.1 km away, and Fritz Coffee Company is 3.5 km away.⟧ Café Onion Anguk is 2.1 kilometers away, and Fritz Coffee Company is a bit further at 3.5 kilometers. Both are known for their great coffee and atmosphere.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "coffee shop", "location": "Seoul"}}
-[152.38s][user ] «backchannel» Really?
-[156.33s][user ] Café Onion… that sounds interesting.
-[159.15s][moshi] It has a lovely vibe, I’ve heard. A good coffee shop can be a real lifeline when you're adjusting.
-[165.19s][user ] Definitely. I appreciate your help, Thera.
-[167.78s][moshi] It's my pleasure. Remember, taking things one step at a time is key. You're doing great.
-[174.40s][user ] I think I will. Thanks again.
+[  0.00s][user ] What did cadre parties expect new members to give assistance ⟨ret@3.72s⟩ for?
+[  3.87s][moshi] ⟦⚡SPAN@3.88s: (no information found)⟧ But unfortunately, I don’t have any information about what cadre parties expected from new members.
+[  8.38s][user ] «backchannel» Yeah, yeah.
+[  9.99s][user ] Oh. Hmm. Well, what about the history of the Worker-Peasant Red ⟨ret@14.19s⟩ Army?
+[ 14.43s][moshi] ⟦⚡SPAN@14.43s: The Red Army was established in January 1918, initially based on the voluntary contributions of workers and pe⟧ The Worker-Peasant Red Army began in January 1918—it was built on the willingness of everyday people, workers and peasants, to contribute, and it became quite a force during the Russian Civil War.
+[ 19.38s][user ] «backchannel» Yeah.
+[ 26.69s][moshi] It’s fascinating how those early ideals shaped its development, isn’t it?
+[ 29.10s][user ] «backchannel» Mm-hmm.
+[ 31.49s][user ] What was Trotsky’s role in ⟨ret@33.33s⟩ that army?
+[ 33.65s][moshi] ⟦⚡SPAN@33.65s: Leon Trotsky served as the People's Commissar for Military and Naval Affairs and played a crucial role in orga⟧ Leon Trotsky was really central to the Red Army’s success. He was the People’s Commissar for Military and Naval Affairs and essentially rebuilt the army, making it much more disciplined. It was a period of intense transformation, and he was a key driver of that.
+[ 41.78s][user ] «backchannel» Mm-hmm.
+[ 50.68s][user ] Intense, yeah. And who did they fight *in* that civil ⟨ret@55.17s⟩ war?
+[ 55.57s][moshi] ⟦⚡SPAN@55.57s: The Russian Civil War (1917-1922) pitted the Bolsheviks against a diverse range of opponents, including monarc⟧ The Red Army faced a lot of different enemies in the Russian Civil War, from 1917 to 1922. It wasn’t just one group—monarchists, nationalists, other socialists, and even countries like Britain and France were involved. A truly complex and multifaceted conflict.
+[ 67.25s][user ] «backchannel» Oh.
+[ 71.93s][user ] Wow. Um…what was the Kronstadt rebellion? ⟨ret@75.95s⟩
+[ 76.19s][moshi] ⟦⚡SPAN@76.19s: The Kronstadt rebellion was an uprising by sailors and workers in March 1921 against the Bolshevik government,⟧ The Kronstadt rebellion happened in March 1921—it started with sailors and workers asking for more freedom, but it quickly became a demand for a system with more than one political party. It was a turning point, highlighting tensions within the revolutionary movement.
+[ 85.60s][user ] «backchannel» Nice.
+[ 92.94s][user ] That sounds…difficult.
+[ 94.93s][moshi] It was a really challenging time, absolutely. It revealed some deep cracks within the revolutionary ideals, and had lasting consequences.
+[103.74s][user ] What was the New Economic ⟨ret@105.54s⟩ Policy?
+[105.70s][moshi] ⟦⚡SPAN@105.70s: The New Economic Policy (NEP), introduced by Lenin in 1921, allowed for limited private enterprise and market ⟧ The New Economic Policy, introduced by Lenin in 1921, was a bit of a shift—it allowed some private businesses and markets to operate again. It was a way to try and get the Soviet economy back on its feet. It was a pragmatic step, even if it seemed to go against some of the original communist principles.
+[126.40s][user ] Pragmatic…right. What was the Holodomor?
+[129.97s][moshi] ⟨ret@129.81s⟩ ⟦⚡SPAN@129.97s: The Holodomor was a man-made famine in Soviet Ukraine from 1932 to 1933, resulting in the deaths of millions o⟧ The Holodomor was a devastating famine in Ukraine between 1932 and 1933. Sadly, millions of Ukrainians died, and many countries now recognize it as a deliberate act of genocide. It's a deeply tragic event in history.
+[145.50s][user ] That’s…terrible.
+[147.18s][moshi] It truly is. It’s important to remember and learn from such dark chapters in history.
+[149.24s][user ] «backchannel» Mm-hmm.
+[153.56s][user ] What about ⟨ret@154.87s⟩ collectivization?
+[155.18s][moshi] ⟦⚡SPAN@155.19s: Collectivization in the Soviet Union, beginning in the late 1920s, involved the consolidation of individual pe⟧ Collectivization began in the late 1920s and meant combining individual farms into larger, collective ones. Unfortunately, this led to a lot of opposition and worsened the famine situation. It was a really disruptive and painful process for many people.
+[171.49s][user ] Disruptive. What happened to Bukharin?
+[174.07s][moshi] ⟨ret@174.00s⟩ ⟦⚡SPAN@174.09s: Nikolai Bukharin was a prominent Bolshevik leader who opposed Stalin's policies of rapid collectivization and ⟧ Nikolai Bukharin was a leading Bolshevik, but he disagreed with Stalin’s plans for quick collectivization and industrialization. He was then executed in 1938 after a staged trial. A sad example of the political repression of that era.
+[183.69s][user ] «backchannel» Mm-hmm.
+[190.95s][user ] A staged trial… I see. What was the Molotov-Ribbentrop Pact?
+[196.68s][moshi] ⟨ret@196.60s⟩ ⟦⚡SPAN@196.68s: The Molotov-Ribbentrop Pact, signed in August 1939, was a non-aggression pact between Nazi Germany and the Sov⟧ The Molotov-Ribbentrop Pact was signed in August 1939—it was an agreement between Germany and the Soviet Union to not attack each other, but secretly, they divided up Eastern Europe. A shocking and cynical agreement that ultimately didn't last.
+[211.80s][user ] Cynical is a good word. What was Operation ⟨ret@215.48s⟩ Barbarossa?
+[215.80s][moshi] ⟦⚡SPAN@215.80s: Operation Barbarossa, launched in June 1941, was the German invasion of the Soviet Union, marking a major esca⟧ Operation Barbarossa was the German invasion of the Soviet Union, starting in June 1941. It dramatically escalated World War II and led to huge losses for both sides. It was a brutal and devastating campaign.
+[221.46s][user ] «backchannel» Oh.
+[230.82s][user ] Devastating, yes. What role did women play in the Red ⟨ret@235.42s⟩ Army?
+[235.74s][moshi] ⟦⚡SPAN@235.74s: Women served in various roles in the Red Army during World War II, including as pilots, snipers, tank drivers,⟧ Women played a significant role in the Red Army during the war. They were pilots, snipers, tank drivers, medics—over 800 were even awarded the title of Hero of the Soviet Union. Their courage and dedication were remarkable.
+[250.92s][user ] That’s amazing. What was the Battle of ⟨ret@253.67s⟩ Stalingrad?
+[253.83s][moshi] ⟦⚡SPAN@253.83s: The Battle of Stalingrad, lasting from August 1942 to February 1943, was a pivotal battle on the Eastern Front⟧ The Battle of Stalingrad, from August 1942 to February 1943, was a crucial battle. It was a major Soviet victory and really changed the course of the war. A truly epic and horrific struggle.
+[258.07s][user ] «backchannel» Exactly.
+[267.21s][user ] Horrific, definitely. What happened after Stalingrad?
+[270.71s][moshi] After Stalingrad, the Soviet Union began a series of offensives pushing the German forces westward, eventually leading to the liberation of Eastern Europe and the fall of Berlin.
+[281.68s][moshi] It was a long and arduous path, but they gradually gained the upper hand.
+[283.25s][user ] «backchannel» Yeah.
+[285.80s][user ] And the Warsaw ⟨ret@286.75s⟩ Pact?
+[286.99s][moshi] ⟦⚡SPAN@286.99s: The Warsaw Pact, formed in 1955, was a collective defense treaty among eight Soviet bloc countries in Eastern ⟧ The Warsaw Pact, formed in 1955, was a defense treaty between eight Eastern European countries and the Soviet Union—it was created as a response to NATO. A defining feature of the Cold War era.
+[301.68s][user ] Cold War… right. What was ⟨ret@304.72s⟩ perestroika?
+[305.12s][moshi] ⟦⚡SPAN@305.12s: Perestroika, initiated by Mikhail Gorbachev in 1985, was a political and economic reform movement aimed at res⟧ Perestroika, started by Gorb

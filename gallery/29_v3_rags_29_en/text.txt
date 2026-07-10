@@ -1,64 +1,81 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Drul, a grounded and empathetic life coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Tellami, a warm and attentive counselor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Felix",
+    "name": "Clara",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "40s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-18",
-      "category": "home",
-      "text": "User's home address is 678 Maple Drive."
-    },
-    {
-      "date": "2025-12-22",
+      "date": "2026-02-25",
       "category": "allergy",
       "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-10-04",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2026-02-12",
+      "category": "work",
+      "text": "User works as a architect."
     },
     {
-      "date": "2025-06-09",
+      "date": "2026-02-03",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
+    },
+    {
+      "date": "2026-01-02",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-12-07",
+      "category": "home",
+      "text": "User's home address is 316 Birch Road."
+    },
+    {
+      "date": "2025-09-25",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-15",
-      "title": "Setting up a home network",
+      "date": "2026-06-25",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-11-23",
+      "date": "2026-04-28",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-06",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When was the very last…
-[  3.87s][user ] …Indian Head penny actually ⟨ret@5.83s⟩ made?
-[  6.15s][moshi] ⟦⚡SPAN@6.15s: The United States Mint ceased production of the Indian Head cent in 1909, replacing it with the Lincoln cent.⟧ The very last Indian Head penny was made in 1909, when the Mint switched to the Lincoln cent.
+[  0.00s][user ] When did Crater Lake’s volcano last erupt, exactly?
+[  4.06s][moshi] ⟨ret@3.74s⟩ ⟦⚡SPAN@4.06s: The volcano that formed Crater Lake last erupted approximately 4,800 years ago.⟧ That volcano last erupted around 4,800 years ago. It's a powerful reminder of nature’s forces, isn't it?

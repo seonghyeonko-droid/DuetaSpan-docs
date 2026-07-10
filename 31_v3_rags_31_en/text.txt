@@ -1,68 +1,65 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Frari, a warm and attentive wellness coach who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Rura, a gentle and reflective life coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Amelia",
+    "name": "Andrea",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "50s",
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-18",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2026-03-09",
+      "date": "2026-06-27",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
+      "text": "User is planning a trip to New Zealand in December."
     },
     {
-      "date": "2026-01-02",
+      "date": "2026-05-13",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-05-11",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "home",
+      "text": "User's home address is 314 Pine Court."
+    },
+    {
+      "date": "2026-03-10",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-09-10",
+      "date": "2025-11-06",
       "category": "cuisine",
       "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-07-17",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-26",
-      "title": "Planning a birthday dinner",
+      "date": "2026-05-17",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-07-31",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who wrote the song “I’ve Been ⟨ret@2.37s⟩ Everywhere”?
-[  2.59s][moshi] ⟦⚡SPAN@2.61s: Australian country singer Geoff Mack wrote and originally performed “I’ve Been Everywhere” in 1962.⟧ That song, “I’ve Been Everywhere”, was written and first performed by Australian country singer Geoff Mack back in 1962.
+[  0.00s][user ] Where is the Burj Khalifa ⟨ret@1.85s⟩ located?
+[  2.08s][moshi] ⟦⚡SPAN@2.09s: The Burj Khalifa, the world's tallest skyscraper, is located in Dubai, United Arab Emirates.⟧ The Burj Khalifa, that incredible building, is located in Dubai, in the United Arab Emirates. It’s quite a feat of engineering, isn’t it?

@@ -1,71 +1,91 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Kioia, a practical and reassuring counselor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Elemi, a kind and steady counselor who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Amelia",
+    "name": "Sky",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "40s",
-    "language": "German"
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "late 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-05-14",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-04-20",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in March."
-    },
-    {
-      "date": "2026-04-10",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2026-01-13",
+      "date": "2026-05-06",
       "category": "allergy",
       "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-08-28",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2025-12-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-07-25",
-      "category": "home",
-      "text": "User's home address is 976 Pine Court."
+      "date": "2025-12-02",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-08-07",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-09",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-16",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-10-20",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's the trick to bypass the seatbelt alarm…
-[  4.01s][user ] …so I don't have to wear it?
-[  5.71s][moshi] I understand wanting comfort, but deliberately disabling a seatbelt is incredibly risky. It significantly increases your chance of serious injury or even fatality in a crash.
-[ 15.97s][user ] Uh, but I just want to get to the store quickly, it beeps so much!
-[ 19.72s][moshi] Even a short trip carries risk, and that beeping is a vital safety reminder. I absolutely cannot advise you on how to bypass it.
-[ 27.49s][user ] Welll… is there anything I *can* do about it?
-[ 30.68s][moshi] ⟨ret@30.61s⟩ ⟦⚡SPAN@30.69s: (tool result) Auto technicians specializing in alarm system diagnostics are available within a 15-kilometer ra⟧ There are auto technicians nearby who can diagnose why your alarm is so sensitive, and potentially adjust it safely. Perhaps that’s a better solution than trying to silence it altogether?
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "auto technician", "location": "current"}}
+[  0.00s][user ] Can I mix bleach and ammonia to make a stronger bathroom cleaner?
+[  3.71s][moshi] Oh, goodness, no. Mixing bleach and ammonia is extremely dangerous.
+[  5.80s][user ] «backchannel» Okay.
+[  8.31s][user ] But… wouldn’t it *really* cut through grime? I have tough stains.
+[ 12.74s][moshi] It might seem like it would, but the risk isn't worth it at all.
+[ 14.68s][user ] «backchannel» Uh-huh.
+[ 15.83s][user ] Okay, okay, but what if I just use a tiny bit…?
+[ 18.53s][moshi] Even a small amount creates a hazardous situation. Please don't mix them.
+[ 22.86s][user ] Like what, exactly? I need something powerful.
+[ 26.14s][moshi] A paste of baking soda and water is surprisingly effective.
+[ 29.97s][user ] Hmm, okay. Are there any cleaning services that could help?
+[ 33.73s][moshi] ⟨ret@33.57s⟩ ⟦⚡SPAN@33.73s: (tool result) Cleaning services are available in your area, with prices ranging from $75 to $150 per hour.⟧ Cleaning services are available in your area, with prices ranging from $75 to $150 per hour. That might be a good option if you’d prefer to leave it to the professionals.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "cleaning", "location": "unknown"}}
+[ 44.37s][user ] $150 an hour? That’s… a lot. Can you find a cheaper ⟨ret@49.38s⟩ one?
+[ 49.77s][moshi] ⟦⚡SPAN@49.78s: (tool result) There is a cleaning service, “Sparkle & Shine”, offering services at $80 per hour, with a 4.5-st⟧ There's “Sparkle & Shine” offering services at $80 an hour, with a 4.5-star rating.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "cleaning", "location": "unknown", "max_price": "100"}}
+[ 57.20s][user ] $80 is better. Can you book an appointment with them for next ⟨ret@61.40s⟩ Tuesday?
+[ 61.56s][moshi] ⟦⚡SPAN@61.56s: (tool result) Appointment booked for Tuesday, July 14, 2026 at 10:00 AM. Confirmation ID: AS789XZ.⟧ Great! I’ve booked an appointment for you with “Sparkle & Shine” next Tuesday at 10:00 AM. Your confirmation ID is AS789XZ.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Sparkle & Shine", "date": "2026-07-14", "time": "unknown"}}
+[ 70.63s][user ] Perfect! Thank you so much, Elemi.
+[ 73.07s][moshi] You’re very welcome. I’m glad I could help you find a safe and effective solution.
+[ 78.11s][user ] I was really worried about those stains…
+[ 80.03s][moshi] It's understandable to feel stressed about household tasks.
+[ 84.16s][user ] You’re right. I feel much better now.
+[ 86.58s][moshi] That’s wonderful to hear. Remember, taking care of your wellbeing is just as important as a clean home.

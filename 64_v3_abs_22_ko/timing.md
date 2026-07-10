@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "예우",
+#     "name": "예온",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,128 +12,113 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-11-11",
+#       "date": "2026-06-23",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-06-21",
 #       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2025-08-06",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-16",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-06-25",
+#       "date": "2026-04-01",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2025-06-05",
+#       "date": "2026-03-22",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-07",
+#       "date": "2026-03-29",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-07-03",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 종이 파운드는 어떤 크기로 나오나요? | S2 아, 그렇군요. 이 점 오킬로그램이요. 그럼 백매는 얼마나 할 | S3 '카페 아로마'가 제일 가까운 것 같네요. 영업시간은 어떻게  | S4 혹시 그 카페 주변에 마트도 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 음… 당원들이 신입 당원들에게… | S2 그럴까요? 잘 모르겠어요. | S3 꽤 덥겠네. | S4 한번 찾아봐야겠다.
 
-     0.00s  user  발화 시작: 종이 파운드는 어떤 크기로 나오나요?
-     1.89s  <ret> 발화 (turn1 첫 프레임)
-     2.20s  agent 발화 시작: <ret> 음, 죄송하지만 그 정보는 찾을 수가 없네요. 파운드 단위로 판매되는 종이의 정확한 크기를 알 수
-     2.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (no information found)
-     2.40s  user  발화 끝
-     8.97s  agent 발화 끝
-     9.23s  user  발화 시작: 아, 그렇군요. 그럼 혹시 종이의 무게를 다른 단위로 알려주실 수 있나요? 예를 들어 킬로그램 같은 거요.
-    15.57s  user  발화 끝
-    15.91s  agent 발화 시작: 무게 단위를 바꾸는 건 어렵지 않아요. 어떤 종류의 종이에 대해 알고 싶으신가요?
-    21.67s  user  발화 시작: 그냥 일반적인 복사지 기준으로요.
-    21.75s  agent 발화 끝
-    23.62s  <ret> 발화 (turn5 첫 프레임)
-    23.69s  agent 발화 시작: <ret> 일반적인 복사지 오백매 한 묶음은 보통 약 이 점 오킬로그램 정도 나가는 것 같아요. 도움이 되었
-    23.70s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.93s]: (tool result) A ream of standard 20 lb copy paper, containing 500 shee
-    23.89s  user  발화 끝
-    31.46s  user  발화 시작: 아, 그렇군요. 이 점 오킬로그램이요. 그럼 백매는 얼마나 할까요?
-    31.61s  agent 발화 끝
-    34.67s  <ret> 발화 (turn7 첫 프레임)
-    34.99s  agent 발화 시작: <ret> 오백매가 이 점 오킬로그램이면, 백매는 대략 영 점 오킬로그램 정도 될 거예요.
-    34.99s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.98s]: Based on 2.5 kilograms for 500 sheets, 100 sheets of standard 20 lb co
-    35.16s  user  발화 끝
-    40.94s  user  발화 시작: 음, 알겠습니다.
-    40.96s  agent 발화 끝
-    42.60s  user  발화 끝
-    42.99s  agent 발화 시작: 새로운 도시에 정착하시는 데 도움이 필요하시면 언제든지 말씀해 주세요.
-    47.94s  agent 발화 끝
-    48.45s  user  발화 시작: 사실, 이사 온 지 얼마 안 돼서요. 주변에 좋은 카페를 추천해 주실 수 있을까요?
-    53.09s  <ret> 발화 (turn11 첫 프레임)
-    53.40s  agent 발화 시작: <ret> 주변에 세 곳의 카페가 있어요. '카페 아로마'는 사백오십미터 거리에 별점 사 점 이점이고, '빈
-    53.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.22s]: (tool result) Found 3 cafes within 1 kilometer: 'Cafe Aroma' (450m, 4.
-    53.45s  user  발화 끝
-    62.82s  user  발화 시작: 네.
-    63.32s  user  발화 끝
-    66.46s  user  발화 시작: '카페 아로마'가 제일 가까운 것 같네요. 영업시간은 어떻게 되나요?
-    66.61s  agent 발화 끝
-    69.37s  <ret> 발화 (turn14 첫 프레임)
-    69.60s  agent 발화 시작: <ret> '카페 아로마'는 매일 아침 여덟시부터 밤 아홉시까지 영업하는 것 같아요.
-    69.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) Cafe Aroma is open from 8:00 AM to 9:00 PM daily.
-    69.69s  user  발화 끝
-    71.21s  user  발화 시작: 예.
-    71.61s  user  발화 끝
-    74.27s  agent 발화 시작: 새로운 동네에서 편안하게 지내시는 게 가장 중요해요. 카페에서 맛있는 커피 한 잔 하시면서 휴식을 취하시는 
-    74.41s  agent 발화 끝
-    81.72s  agent 발화 끝
-    82.37s  user  발화 시작: 맞아요. 혹시 그 카페에 와이파이도 있나요?
-    84.86s  user  발화 끝
-    84.95s  <ret> 발화 (turn18 첫 프레임)
-    85.11s  agent 발화 시작: <ret> 온라인 리뷰를 보니 '카페 아로마'는 고객에게 무료 와이파이를 제공하는 것 같아요.
-    85.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) According to recent online reviews, Cafe Aroma offers fr
-    90.57s  agent 발화 끝
-    90.93s  user  발화 시작: 다행이네요.
-    91.75s  user  발화 끝
-    91.79s  agent 발화 시작: 새로운 환경에 적응하는 데 와이파이는 정말 중요하죠.
-    95.34s  agent 발화 끝
-    96.36s  user  발화 시작: 혹시 그 카페 주변에 마트도 있을까요?
-    98.53s  <ret> 발화 (turn22 첫 프레임)
-    98.60s  agent 발화 시작: <ret> '카페 아로마'에서 육백미터 거리에 '프레시 마켓'이라는 슈퍼마켓이 있어요.
-    98.61s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.71s]: (tool result) There is a 'Fresh Market' supermarket located 600 meters
-    98.67s  user  발화 끝
-   100.98s  user  발화 시작: 그렇군요.
-   101.80s  user  발화 끝
-   103.10s  user  발화 시작: 아, 좋아요. 마트도 가까워서 편리하겠네요.
-   103.31s  agent 발화 끝
-   105.68s  agent 발화 시작: 주변 편의시설이 잘 갖춰져 있으면 훨씬 편안하게 지낼 수 있겠죠.
-   105.82s  user  발화 끝
-   108.52s  user  발화 시작: 네.
-   109.01s  user  발화 끝
-   110.17s  agent 발화 끝
-   110.25s  user  발화 시작: 네, 정말 그렇네요. 덕분에 많은 도움이 됐어요.
-   112.83s  user  발화 끝
-   112.83s  agent 발화 시작: 도움이 되었다니 다행이네요. 언제든지 궁금한 점이 있으면 저에게 말씀해 주세요. 새로운 시작을 응원할게요!
-   119.83s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 당원들이 신입 당원들에게…
+     2.72s  user  발화 끝
+     4.72s  user  발화 시작: …어떤 도움을 기대했는지 궁금해.
+     6.32s  <ret> 발화 (turn2 첫 프레임)
+     6.63s  agent 발화 시작: <ret> 그 부분에 대해서는 정확히 알려진 바가 없네요. 기록이 남아있지 않아서 말씀드리기 어렵습니다.
+     6.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (no information found)
+     6.79s  user  발화 끝
+     9.47s  user  발화 시작: 응.
+     9.92s  user  발화 끝
+    12.13s  user  발화 시작: 아… 그렇군요.
+    12.33s  agent 발화 끝
+    13.65s  user  발화 끝
+    14.01s  agent 발화 시작: 혹시 다른 궁금한 점이 있으실까요?
+    16.20s  user  발화 시작: 아니, 괜찮아요. 그냥… 좀 답답하네요.
+    16.32s  agent 발화 끝
+    18.66s  agent 발화 시작: 새로운 시작을 앞두고 막막함을 느끼시는 건 자연스러운 일이에요. 때로는 명확한 답을 찾기 어려울 때도 있지만
+    18.78s  user  발화 끝
+    25.35s  user  발화 시작: 어어.
+    25.80s  user  발화 끝
+    33.97s  agent 발화 시작: 지금 느끼시는 답답함은, 앞으로 나아가기 위한 에너지로 활용될 수 있을 거예요.
+    34.16s  agent 발화 끝
+    39.21s  user  발화 시작: 그럴까요? 잘 모르겠어요.
+    39.29s  agent 발화 끝
+    40.83s  agent 발화 시작: 네, 분명히 그럴 거예요. 자신을 믿고, 잠재력을 발견하는 여정을 시작해보세요.
+    40.95s  user  발화 끝
+    43.91s  user  발화 시작: 음.
+    44.31s  user  발화 끝
+    46.34s  agent 발화 끝
+    47.75s  user  발화 시작: 잠재력… 그런 거 있으면 좋죠.
+    49.83s  agent 발화 시작: 우리 모두에게는 무한한 가능성이 숨겨져 있답니다.
+    50.01s  user  발화 끝
+    51.35s  user  발화 시작: 음.
+    51.70s  user  발화 끝
+    53.02s  user  발화 시작: 오늘 날씨 어때?
+    53.15s  agent 발화 끝
+    53.85s  <ret> 발화 (turn17 첫 프레임)
+    54.16s  agent 발화 시작: <ret> 지금 서울은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있습니다.
+    54.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
+    54.26s  user  발화 끝
+    59.47s  user  발화 시작: 와.
+    60.10s  user  발화 끝
+    61.89s  agent 발화 끝
+    62.27s  user  발화 시작: 꽤 덥겠네.
+    63.09s  user  발화 끝
+    63.55s  agent 발화 시작: 네, 조금 더운 편이네요. 시원한 물을 자주 마시는 게 좋겠어요.
+    66.58s  user  발화 시작: 응.
+    66.89s  user  발화 끝
+    68.04s  agent 발화 끝
+    69.15s  user  발화 시작: 알았어. 혹시… 좋은 영화 추천해 줄 수 있어?
+    72.54s  <ret> 발화 (turn23 첫 프레임)
+    72.57s  user  발화 끝
+    72.61s  agent 발화 시작: <ret> '기생충'과 '미나리'가 괜찮은 영화로 검색됐어요. 둘 다 좋은 평가를 받고 있답니다.
+    72.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) 'Parasite' - A darkly comedic thriller; 'Minari' - A hea
+    78.73s  agent 발화 끝
+    78.80s  user  발화 시작: '기생충' 봤어.
+    79.82s  agent 발화 시작: 아, 보셨군요. 그럼 '미나리'는 어떠세요? 가족 영화로 따뜻한 감동을 받을 수 있을 거예요.
+    79.98s  user  발화 끝
+    85.61s  agent 발화 끝
+    85.64s  user  발화 시작: 한번 찾아봐야겠다.
+    86.92s  agent 발화 시작: 네, 좋은 선택이에요. 영화를 보면서 잠시나마 스트레스를 해소하시길 바랍니다.
+    87.03s  user  발화 끝
+    92.68s  user  발화 시작: 고마워, Jellami.
+    92.95s  agent 발화 끝
+    93.92s  agent 발화 시작: 천만에요. 언제든지 필요하시면 저를 찾아주세요. 당신의 여정을 응원합니다.
+    94.05s  user  발화 끝
+    99.02s  user  발화 시작: 그래, 알겠어.
+    99.52s  agent 발화 끝
+    99.84s  user  발화 끝
+   100.13s  agent 발화 시작: 그럼, 좋은 하루 보내세요.
+   102.11s  agent 발화 끝

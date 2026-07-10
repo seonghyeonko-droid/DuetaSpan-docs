@@ -4,74 +4,81 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Rosa",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-09-10",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-08-22",
+#       "date": "2026-04-09",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-07",
+#       "date": "2025-12-26",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-09-09",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-07-18",
+#       "category": "home",
+#       "text": "User's home address is 401 Pine Court."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-17",
-#       "title": "Setting up a home network",
+#       "date": "2025-11-18",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-22",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-11-02",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hello Rosa, welcome. I’m Frunaon, and I’m here to offer supp
-     7.04s  agent 발화 끝
-     8.08s  user  발화 시작: I’m just feeling really overwhelmed with work right now, act
-    11.65s  user  발화 끝
-    11.83s  agent 발화 시작: It sounds like you’re carrying a heavy load, Rosa. What spec
-    18.59s  agent 발화 끝
-    18.78s  user  발화 시작: Welll… it’s everything, I guess. Deadlines, meetings, emails
-    27.45s  user  발화 끝
-    27.67s  agent 발화 시작: That constant feeling of being behind can be incredibly drai
-    34.29s  user  발화 시작: Right.
-    34.65s  user  발화 끝
-    37.35s  agent 발화 끝
-    37.40s  user  발화 시작: That… sounds good, actually. I’ve heard of mindfulness, but 
-    42.54s  user  발화 끝
-    42.56s  agent 발화 시작: It’s a gentle practice, Rosa. We can begin with just a few m
-    52.58s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Robin, it’s lovely to connect with you.
+     1.28s  user  발화 시작: Uh-huh.
+     1.78s  user  발화 끝
+     3.31s  user  발화 시작: Hmm, Frir… that’s a pretty unusual name. Is it… Scandinavian
+     3.42s  agent 발화 끝
+    10.44s  user  발화 끝
+    10.48s  agent 발화 시작: It is, actually! It’s an old Norse name meaning ‘peaceful.’ 
+    18.30s  user  발화 시작: Mhm.
+    18.75s  user  발화 끝
+    21.42s  agent 발화 끝
+    21.72s  user  발화 시작: Well, I’ve been really struggling to get started on projects
+    28.43s  agent 발화 시작: That’s incredibly common, Robin. It sounds like you're facin
+    28.53s  user  발화 끝
+    38.58s  agent 발화 끝
+    38.69s  user  발화 시작: Yeah, exactly! It’s like I get paralyzed by all the steps. I
+    43.94s  agent 발화 시작: It’s easy to get overwhelmed when looking at the whole pictu
+    43.97s  user  발화 끝
+    57.02s  agent 발화 끝

@@ -1,83 +1,84 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Jomi, a calm and patient wellness coach who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Harir, a thoughtful and soft-spoken supportive advisor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Sky",
+    "name": "Ella",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
+    "nationality": "French",
+    "gender": "female",
     "age_range": "50s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-02",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2026-03-19",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2026-01-08",
+      "date": "2026-05-05",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-19",
+      "date": "2025-12-27",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a accountant."
     },
     {
-      "date": "2025-06-12",
+      "date": "2025-08-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-07-12",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-07-11",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to penicillin."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-05",
-      "title": "Researching a used car",
+      "date": "2025-11-29",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-12-19",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-02",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Locate coffee shops within one kilometer of London.
-[  3.58s][moshi] «interrupted» ⟨ret@3.50s⟩ ⟦⚡SPAN@3.58s: (tool result) Found 32 coffee shops within 1 kilometer of London, including Costa Coffee at 123 Oxford Street,⟧ I’ve found 32 coffee shops within a kilometer of London, including a Costa Coffee on Oxford Street—
-      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shops", "location": "London", "radius": "1km"}}
-[  8.93s][user ] «interrupts_prev» …Are any of those open ⟨ret@10.73s⟩ right now?
-[ 11.13s][moshi] ⟦⚡SPAN@11.13s: (tool result) Costa Coffee (123 Oxford Street) is currently open, closing at 8:00 PM.⟧ The Costa Coffee on Oxford Street is currently open, and will close at 8:00 PM tonight.
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJdd4hrwug2EcR60-T21G-F4U", "fields": "opening_hours"}}
-[ 17.22s][user ] Great. Can you give me directions there by walking?
-[ 20.32s][moshi] ⟨ret@20.25s⟩ ⟦⚡SPAN@20.32s: (tool result) Walking directions to Costa Coffee (123 Oxford Street): 0.8 km, estimated time 12 minutes. Turn ⟧ It’s 0.8 kilometers to Costa Coffee, about a 12-minute walk. The directions start with a right turn— Enjoy your coffee!
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Costa Coffee, 123 Oxford Street, London", "mode": "walking"}}
+[  0.00s][user ] Could you hover over the last image in the image gallery on that website for me?
+[  4.80s][moshi] ⟨ret@4.72s⟩ ⟦⚡SPAN@4.80s: (tool result) Found a gallery on example.com with various images. The last image appears to be a landscape pho⟧ I found a gallery on example.com, and it looks like the last image is a landscape photograph.
+      CALL: {"function": "web_search", "arguments": {"query": "image gallery"}}
+[ 10.46s][user ] Hmm, what are the dimensions of that last ⟨ret@13.77s⟩ image, specifically?
+[ 14.17s][moshi] ⟦⚡SPAN@14.17s: (tool result) The last image on example.com/image gallery is 1920 pixels wide and 1080 pixels high.⟧ The image is 1920 pixels wide and 1080 pixels high, according to the website.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "example.com/image_gallery", "question": "What are the dimensions of the last image?"}}
+[ 20.95s][user ] Okay, good. Now, can you find me some similar landscape ⟨ret@25.19s⟩ photographs?
+[ 25.59s][moshi] ⟦⚡SPAN@25.59s: (tool result) Several websites offer high-resolution landscape images. Unsplash and Pexels are popular choices⟧ There are many websites with similar landscape photos—Unsplash and Pexels are good places to start, offering free stock photos.
+      CALL: {"function": "tavily-search", "arguments": {"query": "landscape photographs similar to 1920x1080 image"}}
+[ 34.52s][user ] Unsplash sounds promising. Can you search Unsplash for landscape photos taken in ⟨ret@40.29s⟩ Iceland?
+[ 40.53s][moshi] «interrupted» ⟦⚡SPAN@40.53s: (tool result) Unsplash shows 5,234 landscape photos tagged “Iceland”, with many featuring glaciers, volcanoes,⟧ Unsplash has over five thousand landscape photos tagged “Iceland,” with many showing glaciers and the Northern Lights—
+      CALL: {"function": "tavily-search", "arguments": {"query": "Unsplash landscape photos Iceland"}}
+[ 46.48s][user ] «interrupts_prev» …Are any of those photos available for commercial use without ⟨ret@50.58s⟩ attribution?
+[ 50.82s][moshi] ⟦⚡SPAN@50.82s: (tool result) Approximately 12% of the Iceland landscape photos on Unsplash are licensed for commercial use wi⟧ About twelve percent of the Iceland landscape photos on Unsplash are licensed for commercial use without needing attribution.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "unsplash.com/s/photos/iceland-landscape", "question": "Which photos are available for commercial use without attribution?"}}
+[ 54.71s][user ] «backchannel» Mm-hmm.
+[ 57.13s][user ] Hmm, interesting. Can you find me the photographer of the highest-rated Iceland landscape photo on ⟨ret@63.47s⟩ Unsplash?
+[ 63.87s][moshi] ⟦⚡SPAN@63.87s: (tool result) The highest-rated Iceland landscape photo on Unsplash, with 2,500+ likes, was taken by Ólafur Þó⟧ The highest-rated photo was taken by Ólafur Þór Haraldsson, and it has over two thousand five hundred likes.
+      CALL: {"function": "tavily-search", "arguments": {"query": "highest-rated Iceland landscape photo Unsplash photographer"}}
+[ 66.41s][user ] «backchannel» Yeah.
+[ 69.86s][user ] Ólafur Þór Haraldsson… can you find a website for ⟨ret@74.08s⟩ him?
+[ 74.23s][moshi] ⟦⚡SPAN@74.24s: (tool result) Ólafur Þór Haraldsson’s website is https://olafurthor.com/, showcasing his photography and print⟧ His website is olafurthor.com, where he showcases his photography and prints.
+      CALL: {"function": "web_search", "arguments": {"query": "Ólafur Þór Haraldsson website"}}
+[ 79.28s][user ] That’s great. Could you add a reminder to check his prints next ⟨ret@83.31s⟩ week?
+[ 83.47s][moshi] ⟦⚡SPAN@83.47s: (tool result) Alarm set for next week to check Ólafur Þór Haraldsson’s prints. Confirmation ID: 789234.⟧ I’ve set an alarm for next week to remind you to check his prints. Your confirmation ID is 789234. I hope you find some beautiful pieces.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "next week", "description": "Check Ólafur Þór Haraldsson’s prints"}}

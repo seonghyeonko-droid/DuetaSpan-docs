@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "노빈",
+#     "name": "현현",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,74 +12,70 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
-#     },
-#     {
-#       "date": "2025-12-05",
+#       "date": "2026-06-08",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-10-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-05-28",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-06",
+#       "date": "2026-02-08",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2025-10-19",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-09-19",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-03-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 매닉 스트리트 프리처스의… | S2 …기타리스트 리치 에드워즈에 대해 아세요? | S3 실종됐다고요? 어떻게 된 일이었죠? | S4 … 혹시 그의 마지막 모습이 담긴 사진 같은 건 없나요?
 
-     0.00s  user  발화 시작: 혹시 매닉 스트리트 프리처스의…
-     3.05s  user  발화 끝
-     5.10s  user  발화 시작: …기타리스트 리치 에드워즈에 대해 아세요?
-     7.12s  <ret> 발화 (turn2 첫 프레임)
-     7.44s  agent 발화 시작: <ret> 리치 에드워즈는 웨일즈 록 밴드 매닉 스트리트 프리처스의 리듬 기타리스트이자 작사가였는데, 천구백
-     7.44s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.29s]: Richey Edwards was the rhythm guitarist and lyricist for the Welsh roc
-     7.69s  user  발화 끝
-    17.73s  agent 발화 끝
-    18.38s  user  발화 시작: 실종됐다고요? 어떻게 된 일이었죠?
-    20.74s  agent 발화 시작: 실종 당시 상황에 대해 좀 더 자세히 말씀드릴게요 —
-    20.92s  user  발화 끝
-    22.82s  user  발화 시작: … 혹시 그의 마지막 모습이 담긴 사진 같은 건 없나요?
-    23.60s  agent 발화 끝
-    26.71s  <ret> 발화 (turn6 첫 프레임)
-    26.78s  agent 발화 시작: <ret> 리치 에드워즈가 마지막으로 확인된 건 천구백구십오년 이월 일일 아침 런던 엠버시 호텔에서 체크아웃
-    26.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.54s]: The last confirmed sighting of Richey Edwards was on the morning of Fe
-    26.88s  user  발화 끝
-    40.33s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 프라이아 씨. 미국에서 올림픽이 언제 열릴까요?
+     4.52s  <ret> 발화 (turn1 첫 프레임)
+     4.84s  agent 발화 시작: <ret> 이천이십팔년 하계 올림픽은 미국 캘리포니아주 로스앤젤레스에서 열릴 예정이에요. 로스앤젤레스는 정말
+     4.84s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.69s]: The 2028 Summer Olympics are scheduled to be held in Los Angeles, Cali
+     5.05s  user  발화 끝
+    12.53s  agent 발화 끝
+    14.06s  user  발화 시작: 로스앤젤레스에 가려면 지금 비행기표를 예매할 수 있을까요?
+    17.38s  <ret> 발화 (turn3 첫 프레임)
+    17.77s  agent 발화 시작: <ret> 이천이십육년 칠월 십칠일 서울에서 로스앤젤레스행 편도 항공권은 팔백오십달러부터 시작해요. 미리 예
+    17.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: (tool result) One-way flights from Seoul to Los Angeles on July 17, 20
+    17.99s  user  발화 끝
+    23.19s  user  발화 시작: 네.
+    23.77s  user  발화 끝
+    27.88s  agent 발화 끝
+    28.35s  user  발화 시작: 팔백오십달러면 괜찮은 가격이네요.
+    31.14s  agent 발화 시작: 다행이에요. 로스앤젤레스는 볼거리가 정말 많은 곳이에요. 혹시 특별히 관심 있는 곳이 있으신가요?
+    31.26s  user  발화 끝
+    37.58s  agent 발화 끝

@@ -1,54 +1,46 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Theax, a encouraging and non-judgmental supportive advisor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Kliomi, a encouraging and non-judgmental supportive advisor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_11",
-    "name": "Sky",
+    "name": "Casey",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "German",
     "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "English"
+    "age_range": "40s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-22",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-04-21",
-      "category": "home",
-      "text": "User's home address is 319 Pine Court."
-    },
-    {
-      "date": "2025-08-19",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2025-06-12",
+      "date": "2026-06-09",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-03-28",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-12-24",
+      "category": "home",
+      "text": "User's home address is 755 Oak Avenue."
+    },
+    {
+      "date": "2025-09-18",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-25",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-11-21",
+      "date": "2026-01-20",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -56,67 +48,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-09-08",
-      "title": "Researching a used car",
+      "date": "2025-09-22",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-09",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm just wondering, what's the capital of Trinidad and ⟨ret@3.37s⟩ Tobago?
-[  3.74s][moshi] ⟦⚡SPAN@3.77s: Port of Spain is the capital city of Trinidad and Tobago, and also its largest metropolitan area.⟧ Port of Spain is the capital city, and the largest metropolitan area, of Trinidad and Tobago. It's a vibrant place.
-[  7.45s][user ] «backchannel» Yeah.
-[ 12.20s][user ] Oh, interesting. I’ve always wanted to visit the Caribbean.
-[ 15.46s][moshi] That sounds lovely! The Caribbean has so much to offer, and a little planning can make it even more enjoyable.
-[ 23.63s][user ] Do you know when Trinidad and Tobago became ⟨ret@26.39s⟩ independent?
-[ 26.62s][moshi] ⟦⚡SPAN@26.63s: Trinidad and Tobago gained its independence from the United Kingdom on August 31, 1962.⟧ They gained independence from the United Kingdom on August 31st, 1962—a significant moment in their history.
-[ 34.63s][user ] August 31st, 1962… hmm, I need to remember that.
-[ 39.15s][moshi] It's a good date to remember if you're interested in the history of the islands.
-[ 42.84s][user ] My sister is really stressed about her relationship right now.
-[ 46.17s][moshi] Relationships can be challenging, and it's understandable she's feeling stressed. Sometimes just talking things through helps.
-[ 52.15s][user ] «backchannel» Right.
-[ 54.25s][user ] She’s thinking about breaking up with him.
-[ 56.44s][moshi] That’s a big decision. It's good she's considering what's best for her own well-being.
-[ 59.37s][user ] «backchannel» Exactly.
-[ 61.31s][user ] It’s really hard to advise her, you know?
-[ 63.68s][moshi] It absolutely is. It’s tough to watch someone you care about struggle, and offering advice can feel tricky.
-[ 68.19s][user ] «backchannel» Yeah.
-[ 70.37s][user ] I just wish I knew what to say to make her feel better.
-[ 72.86s][moshi] Sometimes, just being a good listener is the most helpful thing you can do. Validation is powerful.
-[ 76.35s][user ] «backchannel» Wow.
-[ 80.20s][user ] You’re right. I should just listen.
-[ 82.16s][moshi] Exactly. Let her share her feelings without judgment. That’s a true gift you can give her.
-[ 88.75s][user ] Hey, what's the weather like in Port of Spain ⟨ret@90.97s⟩ right now?
-[ 91.28s][moshi] ⟦⚡SPAN@91.28s: (tool result) The current weather in Port of Spain is 28.0°C, humidity 82%, wind 13.4 km/h, and partly cloudy.⟧ Right now in Port of Spain, it’s 28.0°C and partly cloudy, with a humidity of 82% and a wind speed of 13.4 km/h.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Port of Spain"}}
-[101.59s][user ] 28 degrees… sounds nice!
-[103.79s][moshi] It does sound quite pleasant, doesn't it? A perfect temperature for exploring.
-[109.65s][user ] «to_other» Did you see that new movie trailer? It looks amazing!
-[113.00s][user ] Oh, sorry, I was just talking to someone.
-[114.83s][moshi] No problem at all. Take your time.
-[117.55s][user ] What movies are playing in Port of Spain today?
-[119.58s][moshi] ⟨ret@119.58s⟩ ⟦⚡SPAN@119.66s: (tool result) Currently playing in Port of Spain: "Fury Road", "Barbie", "Oppenheimer", and "The Little Mermai⟧ In Port of Spain today, you can catch "Fury Road", "Barbie", "Oppenheimer", and "The Little Mermaid."
-      CALL: {"function": "Media_3_FindMovies", "arguments": {"location": "Port of Spain"}}
-[123.27s][user ] «backchannel» Yeah.
-[126.59s][moshi] There’s a good variety of options, so hopefully something appeals to you!
-[128.66s][user ] «backchannel» Yeah.
-[130.99s][user ] I think I’d like to see “Barbie”. What time are the ⟨ret@134.57s⟩ showings?
-[134.80s][moshi] ⟦⚡SPAN@134.81s: (tool result) "Barbie" is playing at 2:30 PM, 5:15 PM, and 8:00 PM in Port of Spain.⟧ "Barbie" is showing at 2:30 PM, 5:15 PM, and 8:00 PM in Port of Spain.
-      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "Barbie", "location": "Port of Spain"}}
-[141.60s][user ] 5:15 sounds good.
-[143.69s][moshi] That’s a good time to catch a film. It leaves you the whole afternoon.
-[146.81s][user ] «backchannel» Uh-huh.
-[149.99s][user ] I’m thinking about sending my sister a little care package.
-[153.04s][moshi] That’s a lovely idea. A small gesture can really brighten someone’s day when they're going through a hard time.
-[156.37s][user ] «backchannel» Right.
-[160.29s][user ] What's a good gift to send someone who's heartbroken?
-[163.23s][moshi] Something comforting, like a cozy blanket or her favorite tea, might be nice. A handwritten letter is also very meaningful.
-[172.22s][user ] A handwritten letter… that’s a really good idea.
-[175.35s][moshi] It's a personal touch that shows you're thinking of her and care about what she’s going through. It's a simple, but powerful gesture.
-[180.29s][user ] «backchannel» Yeah.
-[183.35s][user ] Thanks, Theax. You've been really helpful.
-[185.19s][moshi] You're very welcome. Remember, being there for your sister is the most important thing. Take care.
+[  0.00s][user ] Hi Kliomi, quick question.…
+[  3.81s][user ] …When was the last time Australia hosted the Commonwealth ⟨ret@6.68s⟩ Games?
+[  7.06s][moshi] ⟦⚡SPAN@7.08s: The 2018 Commonwealth Games were held on the Gold Coast in Queensland, Australia, from 4 to 15 April.⟧ Australia last hosted the Commonwealth Games in 2018, on the Gold Coast in Queensland. It was a really exciting event, I remember reading about it!
+[ 11.06s][user ] «backchannel» Yeah.
+[ 16.94s][user ] «to_other» Oh, did you see that new cafe opened down the street?
+[ 19.19s][user ] Right, sorry about that. So, 2018… that’s fairly recent, isn’t it?
+[ 23.80s][moshi] Yes, 2018 is quite recent, and I think it shows Australia's continued commitment to international sports. It’s good to have goals to look forward to, you know?
+[ 33.69s][user ] That's true. I'm trying to stay motivated with my studies, actually. It's tough sometimes.
+[ 38.94s][moshi] I understand completely! Studying can be challenging, but you're already showing motivation just by asking questions and keeping yourself informed. That’s a great start.

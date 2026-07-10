@@ -4,69 +4,66 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Amelia",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-18",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-03-09",
+#       "date": "2026-06-27",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
+#       "text": "User is planning a trip to New Zealand in December."
 #     },
 #     {
-#       "date": "2026-01-02",
+#       "date": "2026-05-13",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-05-11",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-04-27",
+#       "category": "home",
+#       "text": "User's home address is 314 Pine Court."
+#     },
+#     {
+#       "date": "2026-03-10",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-10",
+#       "date": "2025-11-06",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-07-17",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-26",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-17",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-31",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Do you know who wrote the song “I’ve Been Everywhere”?
-     2.37s  <ret> 발화 (turn1 첫 프레임)
-     2.59s  agent 발화 시작: <ret> That song, “I’ve Been Everywhere”, was written and fir
-     2.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: Australian country singer Geoff Mack wrote and originally performed “I
-     2.77s  user  발화 끝
-    10.38s  agent 발화 끝
+     0.00s  user  발화 시작: Where is the Burj Khalifa located?
+     1.85s  <ret> 발화 (turn1 첫 프레임)
+     2.08s  agent 발화 시작: <ret> The Burj Khalifa, that incredible building, is located
+     2.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.98s]: The Burj Khalifa, the world's tallest skyscraper, is located in Dubai,
+     2.17s  user  발화 끝
+    10.05s  agent 발화 끝

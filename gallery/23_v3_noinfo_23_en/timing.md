@@ -4,94 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Zoe",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-01-17",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-12-31",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-09-28",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "text": "User is planning a trip to New Zealand in May."
 #     },
 #     {
-#       "date": "2026-04-29",
+#       "date": "2025-08-11",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-29",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "category": "home",
-#       "text": "User's home address is 928 Elm Street."
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-08-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2025-06-12",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-10",
+#       "date": "2025-06-01",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-15",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know the phone number for D | S2 Hmm, that’s what I figured. | S3 Actually, could you find me a good | S4 …Does Calm offer a free trial?
+# EXAMINER(FDB-v2) 단계: S1 Do you remember what I told you ab | S2 Could you find me a picture of tha | S3 Oh, that’s a shame. What was the w | S4 That sounds lovely. It's good to r
 
-     0.00s  user  발화 시작: Do you know the phone number for Dr. Anya Sharma?
-     2.07s  <ret> 발화 (turn1 첫 프레임)
-     2.47s  agent 발화 시작: <ret> I'm sorry, I couldn't find a phone number for Dr. Anya
-     2.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (no information found)
+     0.00s  user  발화 시작: Do you remember what I told you about my grandmother?
+     1.94s  <ret> 발화 (turn1 첫 프레임)
+     2.34s  agent 발화 시작: <ret> I do. You told me about your grandmother, Eleanor Vanc
+     2.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: [2024-07-03] My grandmother, Eleanor Vance, loved gardening and always
      2.54s  user  발화 끝
-     8.20s  agent 발화 끝
-     9.05s  user  발화 시작: Hmm, that’s what I figured.
-    10.77s  agent 발화 시작: It’s understandable to feel a little frustrated when informa
-    10.89s  user  발화 끝
-    16.65s  user  발화 시작: Yeah.
-    17.29s  user  발화 끝
-    19.03s  user  발화 시작: Actually, could you find me a good stress relief app?
-    19.16s  agent 발화 끝
-    21.62s  <ret> 발화 (turn6 첫 프레임)
-    22.02s  agent 발화 시작: <ret> I found a couple of highly-rated options—Headspace and
-    22.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Headspace and Calm are consistently ranked as top stress
-    22.07s  user  발화 끝
-    26.01s  user  발화 시작: Yeah.
-    26.65s  user  발화 끝
-    29.52s  agent 발화 시작: They’re both really popular, and a lot of people find them h
-    29.71s  agent 발화 끝
-    34.71s  user  발화 시작: Okay.
-    35.21s  user  발화 끝
-    36.47s  agent 발화 끝
-    36.81s  user  발화 시작: …Does Calm offer a free trial?
-    38.28s  <ret> 발화 (turn11 첫 프레임)
-    38.60s  agent 발화 시작: <ret> Yes, Calm does offer a 7-day free trial for new users,
-    38.60s  ⚡SPAN 주입 [d'=1.60s / d_lead=12.89s]: (tool result) Calm offers a 7-day free trial for new users, with acces
-    38.74s  user  발화 끝
-    51.49s  agent 발화 끝
+     6.59s  user  발화 시작: Right.
+     7.08s  user  발화 끝
+     9.34s  agent 발화 끝
+     9.52s  user  발화 시작: Could you find me a picture of that hat?
+    11.66s  <ret> 발화 (turn4 첫 프레임)
+    12.06s  agent 발화 시작: <ret> I’ve searched, but unfortunately, I couldn’t find a pi
+    12.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (no information found)
+    12.20s  user  발화 끝
+    15.02s  user  발화 시작: Yeah.
+    15.65s  user  발화 끝
+    17.80s  agent 발화 끝
+    17.90s  user  발화 시작: Oh, that’s a shame. What was the weather like on her birthda
+    22.00s  <ret> 발화 (turn7 첫 프레임)
+    22.40s  agent 발화 시작: <ret> On July fifteenth, 2018, in Anytown, the weather was t
+    22.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: (tool result) The weather in Anytown, USA on July 15, 2018 was 26.7°C,
+    22.58s  user  발화 끝
+    32.97s  agent 발화 끝
+    33.23s  user  발화 시작: That sounds lovely. It's good to remember those details.
+    36.28s  user  발화 끝
+    36.34s  agent 발화 시작: It is. Sometimes, even small details can bring back a great 
+    43.29s  agent 발화 끝

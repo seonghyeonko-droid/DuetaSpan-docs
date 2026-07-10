@@ -4,94 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Zoe",
+#     "name": "Andrea",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
+#       "date": "2026-01-17",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-12-31",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-09-28",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "text": "User is planning a trip to New Zealand in May."
 #     },
 #     {
-#       "date": "2026-04-29",
+#       "date": "2025-08-11",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-29",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-02-14",
-#       "category": "home",
-#       "text": "User's home address is 928 Elm Street."
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-08-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2025-06-12",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-10",
+#       "date": "2025-06-01",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-15",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아냐 샤르마 선생님 전화번호 아시나요? | S2 음, 예상했던 대로네요. | S3 혹시 스트레스 해소 앱 괜찮은 거 찾아 주실 수 있을까요? | S4 …Calm은 무료 체험을 제공하나요?
+# EXAMINER(FDB-v2) 단계: S1 할머니에 대해 말씀하신 거 기억하고 있어요. | S2 혹시 그 모자 사진을 찾아 주실 수 있을까요? | S3 아, 아쉽네요. 2018년 할머니 생신 날씨는 어땠나요? | S4 정말 좋네요. 그런 세부 사항들을 기억하는 게 좋네요.
 
-     0.00s  user  발화 시작: 아냐 샤르마 선생님 전화번호 아시나요?
-     2.58s  <ret> 발화 (turn1 첫 프레임)
-     2.58s  user  발화 끝
-     2.74s  agent 발화 시작: <ret> 죄송하지만, 아냐 샤르마 선생님의 전화번호는 찾을 수 없었습니다. 공개적으로 등록되어 있지 않은 
-     2.74s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.67s]: (no information found)
-     9.42s  agent 발화 끝
-     9.61s  user  발화 시작: 음, 예상했던 대로네요.
-    11.59s  user  발화 끝
-    11.63s  agent 발화 시작: 정보를 쉽게 찾을 수 없을 때 조금 답답하게 느끼시는 건 당연합니다. 때로는 개인 정보를 비공개로 유지하는 
-    17.63s  user  발화 시작: 네.
-    18.13s  user  발화 끝
-    20.03s  agent 발화 끝
-    20.14s  user  발화 시작: 혹시 스트레스 해소 앱 괜찮은 거 찾아 주실 수 있을까요?
-    23.09s  <ret> 발화 (turn6 첫 프레임)
-    23.41s  agent 발화 시작: <ret> 평점이 아주 좋은 앱 두 가지를 찾았습니다—Headspace와 Calm 모두 가이드 명상과 편안한
-    23.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: (tool result) Headspace and Calm are consistently ranked as top stress
-    23.66s  user  발화 끝
-    26.88s  user  발화 시작: 네네.
-    27.51s  user  발화 끝
-    29.95s  agent 발화 시작: 두 앱 모두 정말 인기가 많고, 많은 분들이 일상적인 스트레스 관리에 도움이 된다고 말씀하십니다—Calm은 
-    29.98s  agent 발화 끝
-    37.14s  user  발화 시작: 네.
-    37.44s  user  발화 끝
-    39.32s  agent 발화 끝
-    39.45s  user  발화 시작: …Calm은 무료 체험을 제공하나요?
-    41.57s  user  발화 끝
-    41.65s  <ret> 발화 (turn11 첫 프레임)
-    41.73s  agent 발화 시작: <ret> 네, Calm은 신규 사용자에게 7일 무료 체험을 제공하며, 일부 콘텐츠에 액세스할 수 있습니다—
-    41.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.82s]: (tool result) Calm offers a 7-day free trial for new users, with acces
-    55.55s  agent 발화 끝
+     0.00s  user  발화 시작: 할머니에 대해 말씀하신 거 기억하고 있어요.
+     2.54s  <ret> 발화 (turn1 첫 프레임)
+     2.59s  user  발화 끝
+     2.71s  agent 발화 시작: <ret> 네, 할머니인 엘레노어 밴스 님께서 정원 가꾸시는 걸 좋아하셨고, 항상 파란 모자를 쓰셨다고 말씀
+     2.71s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.67s]: [2024-07-03] My grandmother, Eleanor Vance, loved gardening and always
+     8.07s  user  발화 시작: 예.
+     8.57s  user  발화 끝
+    11.37s  agent 발화 끝
+    11.93s  user  발화 시작: 혹시 그 모자 사진을 찾아 주실 수 있을까요?
+    14.32s  <ret> 발화 (turn4 첫 프레임)
+    14.71s  agent 발화 시작: <ret> 검색해 봤는데, 아쉽게도 엘레노어 밴스 님의 파란 모자 사진은 온라인에서 찾을 수 없었어요.
+    14.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (no information found)
+    14.89s  user  발화 끝
+    18.21s  user  발화 시작: 네.
+    18.61s  user  발화 끝
+    21.33s  agent 발화 끝
+    22.70s  user  발화 시작: 아, 아쉽네요. 2018년 할머니 생신 날씨는 어땠나요?
+    26.29s  <ret> 발화 (turn7 첫 프레임)
+    26.53s  agent 발화 시작: <ret> 이천십팔 년 7월 15일, 애니타운에서는 기온이 섭씨 26.7도였고, 습도는 62퍼센트, 그리고 
+    26.53s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.55s]: (tool result) The weather in Anytown, USA on July 15, 2018 was 26.7°C,
+    26.68s  user  발화 끝
+    36.08s  agent 발화 끝
+    36.59s  user  발화 시작: 정말 좋네요. 그런 세부 사항들을 기억하는 게 좋네요.
+    40.31s  agent 발화 시작: 그렇죠. 때로는 작은 세부 사항조차도 큰 따뜻함을 되살려 줄 수 있고, 제가 기억을 되살리는 데 도움이 되어
+    40.43s  user  발화 끝
+    47.68s  agent 발화 끝

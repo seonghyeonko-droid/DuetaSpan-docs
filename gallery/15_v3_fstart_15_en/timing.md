@@ -4,157 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Manon",
+#     "name": "Henri",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
+#       "date": "2026-03-04",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-04-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "date": "2025-11-29",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-24",
+#       "date": "2025-11-16",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-03-20",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-03-14",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-07-29",
-#       "category": "home",
-#       "text": "User's home address is 144 Pine Court."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-07",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-03",
+#       "date": "2026-04-27",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-07-17",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need two business class tickets  | S2 Yes, please. | S3 Okay, good to know. What's the wea | S4 …Italian restaurants near the Colo
+# EXAMINER(FDB-v2) 단계: S1 Please click the bold button withi | S2 Can you reserve a table for two th | S3 Okay, that sounds reasonable. I’m  | S4 Tell me more about Brew & Bites.
 
-     0.00s  user  발화 시작: I need two business class tickets from London Heathrow to Ch
-     6.79s  <ret> 발화 (turn1 첫 프레임)
-     6.87s  agent 발화 시작: <ret> Business class flights from London Heathrow to Charles
-     6.87s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.32s]: (tool result) Flights departing London Heathrow for Charles de Gaulle 
-     6.90s  user  발화 끝
-    16.04s  user  발화 시작: That's quite a range. What's the cheapest option?
-    16.18s  agent 발화 끝
-    19.20s  <ret> 발화 (turn3 첫 프레임)
-    19.41s  user  발화 끝
-    19.44s  agent 발화 시작: <ret> The least expensive option is with British Airways, at
-    19.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: The cheapest flight departing London Heathrow for Charles de Gaulle ai
-    25.88s  agent 발화 끝
-    26.48s  user  발화 시작: Can you tell me the flight details for that British Airways 
-    30.07s  <ret> 발화 (turn5 첫 프레임)
-    30.15s  agent 발화 시작: <ret> British Airways flight BA302 departs at ten AM, arrivi
-    30.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) British Airways flight BA302 departs London Heathrow at 
-    30.36s  user  발화 끝
-    37.28s  agent 발화 끝
-    39.17s  user  발화 시작: That sounds good. Can you book those tickets for me?
-    42.49s  user  발화 끝
-    42.49s  agent 발화 시작: Are you sure you want to proceed with booking those tickets 
-    45.73s  agent 발화 끝
-    46.77s  user  발화 시작: Yes, please.
-    48.08s  <ret> 발화 (turn9 첫 프레임)
-    48.16s  agent 발화 시작: <ret> Excellent. Your booking is confirmed with confirmation
-    48.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.70s]: (tool result) Booking confirmed for British Airways flight BA302, Lond
-    48.19s  user  발화 끝
-    55.86s  agent 발화 끝
-    57.29s  user  발화 시작: Perfect. Do you know if there are any good restaurants near 
-    62.20s  <ret> 발화 (turn11 첫 프레임)
-    62.43s  agent 발화 시작: <ret> There are several options nearby, like Le Bistro des S
-    62.44s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.86s]: (tool result) Several restaurants are near Charles de Gaulle airport, 
-    62.48s  user  발화 끝
-    66.24s  user  발화 시작: Right.
-    66.69s  user  발화 끝
-    69.13s  user  발화 시작: Le Bistro des Saveurs sounds nice. –
-    69.29s  agent 발화 끝
-    71.97s  user  발화 시작: …Is there a shuttle from the airport to that restaurant?
-    72.09s  user  발화 끝
-    75.33s  <ret> 발화 (turn15 첫 프레임)
-    75.41s  agent 발화 시작: <ret> Yes, you can take the CDGVAL train and bus 351 – it ta
-    75.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) A shuttle from Charles de Gaulle airport to Le Bistro de
-    75.67s  user  발화 끝
-    81.70s  agent 발화 끝
-    81.74s  user  발화 시작: Okay, good to know. What's the weather forecast for Paris on
-    86.79s  <ret> 발화 (turn17 첫 프레임)
-    86.95s  agent 발화 시작: <ret> The forecast for April first is fifteen degrees Celsiu
-    86.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) The weather in Paris on April 1st, 2026, is forecast to 
-    87.11s  user  발화 끝
-    92.85s  user  발화 시작: That's pretty mild. I'm also planning a trip to Rome in May.
-    92.97s  agent 발화 끝
-    97.29s  user  발화 끝
-    97.54s  agent 발화 시작: That sounds lovely! Rome in May is a beautiful time to visit
-   101.96s  user  발화 시작: Do you remember when I mentioned I like Italian food?
-   102.08s  agent 발화 끝
-   104.58s  <ret> 발화 (turn21 첫 프레임)
-   104.81s  agent 발화 시작: <ret> Yes, you told me on February fifteenth that you enjoy 
-   104.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [2026-02-15] I like Italian food.
-   104.87s  user  발화 끝
-   108.25s  user  발화 시작: Okay.
-   108.89s  user  발화 끝
-   109.17s  user  발화 시작: Great. Are there any highly-rated…
-   109.68s  agent 발화 끝
-   112.04s  user  발화 끝
-   113.04s  user  발화 시작: …Italian restaurants near the Colosseum?
-   115.22s  <ret> 발화 (turn25 첫 프레임)
-   115.61s  agent 발화 시작: <ret> Aroma at Palazzo Manfredi and La Taverna dei Fori Impe
-   115.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) Highly-rated Italian restaurants near the Colosseum incl
-   115.62s  user  발화 끝
-   120.94s  user  발화 시작: Right.
-   121.39s  user  발화 끝
-   122.58s  user  발화 시작: Aroma sounds fancy. What’s their price range?
-   122.61s  agent 발화 끝
-   126.44s  <ret> 발화 (turn28 첫 프레임)
-   126.68s  agent 발화 시작: <ret> It’s a luxury restaurant, costing between one hundred 
-   126.68s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.81s]: (tool result) Aroma at Palazzo Manfredi is a luxury restaurant with a 
-   126.84s  user  발화 끝
-   131.50s  agent 발화 끝
-   132.19s  user  발화 시작: That’s a bit expensive. Maybe La Taverna dei Fori Imperiali 
-   137.51s  user  발화 끝
-   137.60s  agent 발화 시작: It’s wonderful to be mindful of your budget. Sometimes simpl
-   141.43s  user  발화 시작: Yeah.
-   141.93s  user  발화 끝
-   143.06s  agent 발화 끝
-   143.15s  user  발화 시작: True. Thank you for your help with everything.
-   145.61s  agent 발화 시작: You’re very welcome. I'm glad I could assist you with your t
-   145.69s  user  발화 끝
-   151.26s  agent 발화 끝
+     0.00s  user  발화 시작: Please click the bold button within the editor iframe.
+     3.56s  <ret> 발화 (turn1 첫 프레임)
+     3.63s  agent 발화 시작: <ret> I’ve clicked the bold button within the editor iframe 
+     3.64s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.60s]: (tool result) Clicked button with text 'Bold' within the iframe.
+     3.69s  user  발화 끝
+     6.13s  user  발화 시작: Yeah, yeah.
+     7.23s  agent 발화 끝
+     7.33s  user  발화 시작: That’s great, thank you. Can you find restaurants nearby tha
+     7.42s  user  발화 끝
+    11.81s  <ret> 발화 (turn4 첫 프레임)
+    12.05s  agent 발화 시작: <ret> I found five restaurants open now nearby—Pizza Palace,
+    12.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) Found 5 restaurants open now near your location: 'Pizza 
+    12.05s  user  발화 끝
+    17.95s  user  발화 시작: Yeah.
+    18.76s  user  발화 끝
+    20.25s  agent 발화 끝
+    20.26s  agent 발화 시작: They all have good ratings, and are within a short distance.
+    22.18s  user  발화 시작: Mm-hmm.
+    22.86s  user  발화 끝
+    23.73s  agent 발화 끝
+    23.74s  user  발화 시작: What’s the address for Thai Delight?
+    25.92s  <ret> 발화 (turn9 첫 프레임)
+    26.16s  agent 발화 시작: <ret> Thai Delight is at 123 Maple Street, in Anytown.
+    26.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.88s]: (tool result) Thai Delight is located at 123 Maple Street, Anytown.
+    26.33s  user  발화 끝
+    30.05s  agent 발화 끝
+    30.88s  user  발화 시작: Can you reserve a table for two there at 7:30 PM tonight?
+    35.90s  <ret> 발화 (turn11 첫 프레임)
+    36.14s  agent 발화 시작: <ret> I’ve reserved a table for two at Thai Delight at 7:30 
+    36.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Reservation confirmed at Thai Delight for 2 people at 7:
+    36.25s  user  발화 끝
+    43.88s  agent 발화 끝
+    45.02s  user  발화 시작: Fantastic! Is there parking available nearby?
+    48.52s  <ret> 발화 (turn13 첫 프레임)
+    48.84s  agent 발화 시작: <ret> There are three parking options nearby—Maple Street Pa
+    48.84s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.48s]: (tool result) Found 3 parking lots near 123 Maple Street, Anytown: 'Ma
+    48.86s  user  발화 끝
+    50.84s  user  발화 시작: Yeah.
+    51.33s  user  발화 끝
+    55.32s  agent 발화 끝
+    56.09s  user  발화 시작: How much does it cost to park at Maple Street Parking?
+    59.28s  <ret> 발화 (turn16 첫 프레임)
+    59.44s  agent 발화 시작: <ret> Maple Street Parking is five dollars per hour, with a 
+    59.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Maple Street Parking charges $5 per hour, with a daily m
+    59.66s  user  발화 끝
+    64.47s  user  발화 시작: Okay, that sounds reasonable. I’m also looking for a good co
+    64.58s  agent 발화 끝
+    69.61s  user  발화 끝
+    70.05s  agent 발화 시작: I can certainly help with that—
+    71.06s  user  발화 시작: …actually, before we move on, what's the weather like there 
+    71.69s  agent 발화 끝
+    74.80s  <ret> 발화 (turn20 첫 프레임)
+    75.04s  agent 발화 시작: <ret> It's currently twenty-two degrees Celsius and sunny in
+    75.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) The weather in Anytown is currently 22.0°C, humidity 68%
+    75.22s  user  발화 끝
+    80.61s  user  발화 시작: That's lovely. Okay, back to the coffee shop.
+    80.64s  agent 발화 끝
+    83.44s  <ret> 발화 (turn22 첫 프레임)
+    83.84s  agent 발화 시작: <ret> I found two coffee shops nearby—Brew & Bites and Coffe
+    83.84s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.07s]: (tool result) Found 2 coffee shops near 123 Maple Street, Anytown: 'Br
+    83.99s  user  발화 끝
+    87.92s  agent 발화 끝
+    88.05s  user  발화 시작: Tell me more about Brew & Bites.
+    90.01s  <ret> 발화 (turn24 첫 프레임)
+    90.17s  agent 발화 시작: <ret> Brew & Bites serves coffee, pastries, and light lunche
+    90.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Brew & Bites offers specialty coffee, pastries, and ligh
+    90.30s  user  발화 끝
+    96.89s  agent 발화 끝
+    99.24s  user  발화 시작: Sounds perfect. I think that's all for now.
+   102.19s  user  발화 끝
+   102.20s  agent 발화 시작: Settling into a new city can be exciting—I’m glad I could he
+   108.03s  agent 발화 끝

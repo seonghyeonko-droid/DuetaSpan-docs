@@ -1,82 +1,86 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Driona, a calm and patient personal guide who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Nioen, a practical and reassuring counselor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Oliver",
+    "name": "Andrea",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "late 20s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2026-03-02",
+      "category": "home",
+      "text": "User's home address is 670 Oak Avenue."
     },
     {
-      "date": "2025-12-05",
+      "date": "2025-12-23",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-12-13",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in August."
+    },
+    {
+      "date": "2025-12-09",
       "category": "diet",
       "text": "User is pescatarian."
     },
     {
-      "date": "2025-11-25",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2025-09-08",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-06-19",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2025-07-09",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-22",
-      "title": "Booked a dentist appointment",
+      "date": "2025-12-11",
+      "title": "Researching a used car",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-09-06",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-09-05",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's Bayer's stock price right ⟨ret@1.89s⟩ now?
-[  2.13s][moshi] ⟦⚡SPAN@2.13s: (tool result) Bayer AG is trading at €65.82 as of today, July 10, 2026, a change of +0.75% from yesterday’s cl⟧ Bayer AG is trading at €65.82 today, with a change of plus 0.75% from yesterday.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "BAYN"}}
-[  7.01s][user ] «backchannel» Mhm.
-[ 13.01s][user ] That’s good to know.
-[ 14.15s][moshi] It’s always wise to stay informed about your investments, especially in a dynamic market.
-[ 16.09s][user ] «backchannel» Yeah, yeah.
-[ 20.21s][user ] I need to book a hotel in Paris… uhhh, Lyon actually.
-[ 24.06s][moshi] ⟨ret@23.90s⟩ ⟦⚡SPAN@24.06s: (tool result) There are 127 hotels available in Lyon, France, ranging from €55 to €320 per night. The Hotel Ca⟧ There are 127 hotels in Lyon, ranging from €55 to €320 a night.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"city": "Lyon"}}
-[ 25.93s][user ] «backchannel» Nice.
-[ 29.99s][moshi] The Hotel Carlton Lyon - MGallery Hotel is rated 4.5 stars, if you’re looking for something highly-rated.
-[ 37.92s][user ] Can you show me hotels under 150 ⟨ret@40.91s⟩ euros?
-[ 41.14s][moshi] ⟦⚡SPAN@41.15s: (tool result) 63 hotels in Lyon are available for under €150 per night. The Ibis Styles Lyon Part Dieu is curr⟧ 63 hotels in Lyon are under €150, including the Ibis Styles Lyon Part Dieu at €89.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"city": "Lyon", "max_price": 150}}
-[ 50.32s][user ] – Actually, what's the weather like there right now?
-[ 53.24s][moshi] «interrupted» The weather in Lyon…—
-[ 53.83s][user ] «interrupts_prev» …is it ⟨ret@54.49s⟩ raining?
-[ 54.89s][moshi] ⟦⚡SPAN@54.89s: (tool result) The current weather in Lyon, France is 22.0°C, partly cloudy with 68% humidity and a west wind o⟧ It is currently 22.0°C and partly cloudy in Lyon, with 68% humidity and a light breeze from the west.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Lyon"}}
-[ 63.79s][moshi] No rain is currently expected.
-[ 66.23s][user ] Okay, that sounds nice. Book me a room at the Ibis Styles for two nights, starting tomorrow.
-[ 71.44s][moshi] ⟨ret@71.20s⟩ ⟦⚡SPAN@71.44s: (tool result) Your reservation at the Ibis Styles Lyon Part Dieu is confirmed for two nights, July 11th to Jul⟧ Your room at the Ibis Styles Lyon Part Dieu is booked for July 11th to 13th; your confirmation ID is LY789XZ. Enjoy your trip to Lyon.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Ibis Styles Lyon Part Dieu", "check_in_date": "2026-07-11", "nights": 2}}
+[  0.00s][user ] Mark report five as ⟨ret@1.28s⟩ complete.
+[  1.52s][moshi] ⟦⚡SPAN@1.52s: (tool result) Order 789456 created for report completion.⟧ Okay, I’ve created order 789456 to mark report five as complete.
+      CALL: {"function": "create_order", "arguments": {}}
+[  7.87s][user ] And can you find me restaurants nearby, uhhh, actually, near the Opera House?
+[ 12.16s][moshi] ⟨ret@12.00s⟩ ⟦⚡SPAN@12.16s: (tool result) Found five restaurants near the Opera House: La Scala (Italian, 4.5 stars), Bistro Parisien (Fre⟧ I found five restaurants near the Opera House, including La Scala and Bistro Parisien.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Opera House"}}
+[ 13.90s][user ] «backchannel» Okay.
+[ 18.30s][user ] Book a table for two at La Scala for tomorrow at 7 PM.
+[ 22.35s][moshi] ⟨ret@22.12s⟩ ⟦⚡SPAN@22.36s: (tool result) Reservation confirmed at La Scala for two people tomorrow at 7:00 PM. Confirmation number is LS2⟧ Excellent. Your reservation at La Scala is confirmed for tomorrow at 7 PM, confirmation LS20260711-22.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "La Scala", "date": "tomorrow", "time": "7 PM", "party_size": 2}}
+[ 33.35s][user ] That sounds lovely. Thank you, Nioen.
+[ 35.34s][moshi] You’re very welcome. I'm glad I could help with your evening plans.

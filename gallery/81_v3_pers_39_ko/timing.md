@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "준우",
+#     "name": "채은",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,35 +12,40 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-16",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-10-04",
-#       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
-#     },
-#     {
-#       "date": "2025-08-22",
+#       "date": "2026-04-09",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "date": "2025-12-26",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-09-09",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-07-18",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-30",
+#       "date": "2026-06-14",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,7 +53,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-09",
+#       "date": "2025-11-02",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -59,21 +64,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: 준우님, 안녕하세요. 저는 프루나온이라고 해요. 스트레스 해소와 마음 챙김을 돕는 상담가입니다.
-     5.33s  user  발화 시작: 어어.
-     5.97s  user  발화 끝
-     7.88s  agent 발화 끝
-     8.60s  user  발화 시작: 혹시 제가 뭘 도와드릴 수 있을까요?
-    11.13s  agent 발화 시작: 이름이 마음에 드신다니 기쁘네요. 혹시 지금 특별히 힘든 점이 있으신가요? 편하게 말씀해 주세요.
-    11.37s  user  발화 끝
-    13.08s  user  발화 시작: 음.
-    13.53s  user  발화 끝
-    17.48s  agent 발화 끝
-    17.66s  user  발화 시작: 음… 사실 요즘 회사 일이 너무 많아서 잠을 제대로 못 자고 있어요.
-    22.04s  agent 발화 시작: 일이 많아 수면 부족을 겪고 계시는군요. 잠이 부족하면 몸과 마음에 큰 영향을 줄 수 있어요. 혹시 잠들기 
-    22.11s  user  발화 끝
-    28.41s  user  발화 시작: 그치.
-    29.04s  user  발화 끝
-    31.04s  agent 발화 시작: 잠자리에 들기 전에 걱정이나 불안한 생각이 많이 드시는 건가요? 잠들기 전에는 편안한 음악을 듣거나, 따뜻한
-    31.07s  agent 발화 끝
-    42.40s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 채은님. 저는 프리르예요. 혹시 오늘 하루 어떻게 지내셨는지 여쭤봐도 될까요?
+     5.24s  user  발화 시작: 네.
+     5.69s  user  발화 끝
+     6.81s  user  발화 시작: 혹시 제가 뭘 도와드릴 수 있는 걸까요?
+     7.18s  agent 발화 끝
+     9.87s  agent 발화 시작: 이름이 마음에 드셨다니 기쁘네요. 저는 채은님의 하루를 조금 더 편안하고 생산적으로 만들어 드릴 수 있도록 
+    10.04s  user  발화 끝
+    22.54s  agent 발화 끝
+    23.44s  user  발화 시작: 음… 요즘 뭔가 계속 미루게 돼요. 해야 할 일은 많은데, 시작하기가 어렵고.
+    29.41s  user  발화 끝
+    29.50s  agent 발화 시작: 일을 미루게 되는 건 흔한 일이에요. 부담감을 느끼시는 건 아닌가 싶어요. 혹시 어떤 일부터 시작해야 할지 
+    35.34s  user  발화 시작: 네.
+    35.97s  user  발화 끝
+    38.72s  agent 발화 시작: 그렇군요. 작은 일부터 하나씩 시작해보는 건 어떨까요? 완벽하게 하려고 하기보다는, 일단 시작하는 게 중요해
+    38.91s  agent 발화 끝
+    46.78s  agent 발화 끝

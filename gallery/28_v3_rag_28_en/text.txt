@@ -1,90 +1,115 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Freliia, a calm and patient personal guide who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Naeus, a curious and validating wellness coach who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Remy",
+    "name": "Sam",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "Australian",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-02",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-12-19",
+      "date": "2026-06-26",
       "category": "hobby",
       "text": "User is into home fermentation."
     },
     {
-      "date": "2025-09-02",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-05-06",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in May."
     },
     {
-      "date": "2025-06-30",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2026-04-25",
+      "category": "home",
+      "text": "User's home address is 858 Oak Avenue."
+    },
+    {
+      "date": "2026-01-19",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-09-22",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-27",
+      "category": "work",
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-31",
-      "title": "Booked a dentist appointment",
+      "date": "2026-02-25",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-12-22",
-      "title": "Comparing gym memberships",
+      "date": "2025-06-27",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about ancient astronomy, and it got me wondering… who first thought the Earth was the center of everything?
-[  6.84s][moshi] It’s a concept that really shaped early understanding of the cosmos.
-[  8.50s][user ] «backchannel» Yeah.
-[ 11.99s][user ] But seriously, was it just someone making a guess, or was there some reasoning ⟨ret@16.31s⟩ behind it?
-[ 16.71s][moshi] ⟦⚡SPAN@16.71s: Anaximander, a pre-Socratic Greek philosopher, was the first known to propose a model of the cosmos with the E⟧ Anaximander, a Greek philosopher, was actually the first to suggest a model where the Earth hangs in the center. It was a pretty revolutionary idea for its time, though very different from what we know now.
-[ 23.57s][user ] «backchannel» Yeah.
-[ 30.25s][user ] Anaximander, huh? I’ve never heard of him. What else did he believe?
-[ 33.89s][moshi] He was quite a thinker, really. He attempted to explain many aspects of the natural world through observation and reason.
-[ 41.08s][user ] Okay, but back to the Earth-centered idea… was everyone on board with that right away?
-[ 46.16s][moshi] Not at all. It took centuries for the geocentric model to be refined and become the accepted view, with contributions from figures like Ptolemy.
-[ 55.09s][user ] Ptolemy… now *that* name rings a bell. Wasn’t he the one with the complicated system of circles within ⟨ret@61.71s⟩ circles?
-[ 62.11s][moshi] ⟦⚡SPAN@62.11s: Ptolemy’s model, presented in his book *Almagest*, featured epicycles and deferents to explain the apparent re⟧ Yes, Ptolemy’s model, in his *Almagest*, used complex systems of circles—epicycles and deferents—to explain how planets move. It was a very intricate way to try and make sense of what they observed.
-[ 68.64s][user ] «backchannel» Yeah.
-[ 74.91s][user ] Uhhh, epicycles? That sounds… complicated.
-[ 78.15s][moshi] It was! It worked, to a degree, but it wasn't a particularly elegant solution, and it required constant adjustments.
-[ 82.77s][user ] «backchannel» Yeah.
-[ 85.84s][user ] So, if it was so clunky, why did it stick around for so long?
-[ 89.83s][moshi] Well, it aligned with everyday experience—it *looks* like the sun and stars revolve around us—and it was supported by powerful authorities for many years.
-[ 99.04s][user ] That makes sense, I guess. What…
-[102.79s][user ] …about other cultures? Did they all think the Earth was the center?
-[105.65s][moshi] Many did, yes. Similar geocentric models were developed independently in other civilizations, like those in ancient China and Babylonia.
-[111.35s][user ] «backchannel» Yeah.
-[114.93s][user ] Wow. So it wasn’t just a Greek thing. What’s the weather like in Athens ⟨ret@118.55s⟩ right now?
-[118.95s][moshi] ⟦⚡SPAN@118.95s: (tool result) Athens has a temperature of 28.5°C, humidity 62%, and wind from the northwest at 7.2 km/h.⟧ The weather in Athens is currently 28.5 degrees Celsius, with 62% humidity and a wind from the northwest at 7.2 kilometers per hour. Sounds quite pleasant, actually.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Athens"}}
-[130.14s][user ] That does sound nice. It’s good to know people were looking up at the stars even back then.
-[134.92s][moshi] It is, isn’t it? That curiosity is a very human trait, and it’s what drives us to understand the world around us.
-[141.75s][user ] You’re right. Thanks, Freliia. I feel a little more grounded now, strangely enough.
-[145.71s][moshi] [happy] You’re very welcome. Sometimes, connecting with the past can help us find a sense of peace in the present.
+[  0.00s][user ] Hey, I was just wondering… what was Van Halen’s original band name before they became Van ⟨ret@5.70s⟩ Halen?
+[  6.02s][moshi] ⟦⚡SPAN@6.02s: Mammoth was the original band formed by brothers Eddie and Alex Van Halen in 1964, predating the formation of ⟧ Before Eddie and Alex Van Halen brought in David Lee Roth and Michael Anthony, they actually played in a few different groups.
+[ 12.67s][moshi] It was called Mammoth, formed way back in 1964 by Eddie and Alex—long before they became the Van Halen we know.
+[ 21.12s][user ] Mammoth, huh? That’s… unexpected. What kind of music did Mammoth ⟨ret@25.31s⟩ play?
+[ 25.71s][moshi] ⟦⚡SPAN@25.71s: Mammoth primarily played cover songs by bands like The Beatles and The Rolling Stones, alongside some original⟧ Mammoth mostly played covers—The Beatles, The Rolling Stones—but they also wrote their own blues-rock songs.
+[ 32.85s][user ] So, like, garage band stuff?
+[ 34.84s][moshi] ⟨ret@34.77s⟩ ⟦⚡SPAN@34.85s: The band Mammoth performed locally in Pasadena, California, playing at parties and small venues before evolvin⟧ They played around Pasadena, at parties and small venues, really getting their start locally.
+[ 40.35s][user ] Pasadena… I think I’ve heard of that place.
+[ 42.81s][moshi] It’s a beautiful city! A lot of musical talent has come from the area, actually.
+[ 45.00s][user ] «backchannel» Yeah.
+[ 47.87s][moshi] It's a really creative hub.
+[ 51.11s][user ] Okay, so Mammoth eventually became Van Halen. How did that happen ⟨ret@54.94s⟩ exactly?
+[ 55.33s][moshi] ⟦⚡SPAN@55.34s: In 1972, Mammoth added David Lee Roth on vocals and Michael Anthony on bass, subsequently changing their name ⟧ In 1972, they added David Lee Roth and Michael Anthony, and that's when they officially became Van Halen.
+[ 61.77s][user ] And was it just a name change, or did their sound ⟨ret@64.49s⟩ change too?
+[ 64.89s][moshi] ⟦⚡SPAN@64.89s: The addition of David Lee Roth's stage presence and Michael Anthony's bass playing broadened Mammoth’s musical⟧ David Lee Roth’s energy and Michael Anthony’s bass really broadened their sound, making it more dynamic.
+[ 69.19s][user ] «backchannel» Yeah.
+[ 70.92s][user ] Hmm, interesting. What year did they officially form as Van Halen, ⟨ret@75.45s⟩ then?
+[ 75.85s][moshi] ⟦⚡SPAN@75.85s: Van Halen was officially formed in 1972, after David Lee Roth joined Mammoth and the band adopted its new name⟧ They officially became Van Halen in 1972, right after David Lee Roth joined the group.
+[ 81.14s][user ] 1972. Okay. What about their first ⟨ret@84.50s⟩ album?
+[ 84.90s][moshi] ⟦⚡SPAN@84.90s: Van Halen’s self-titled debut album, released on February 10, 1978, reached number 19 on the Billboard 200 cha⟧ Their debut album, *Van Halen*, was released in 1978 and was an instant success.
+[ 89.99s][moshi] *Van Halen* came out on February 10th, 1978—it hit number 19 on the Billboard charts and went platinum.
+[ 96.81s][user ] February 10th, 1978… that's a long time ago.
+[100.49s][moshi] ⟨ret@100.42s⟩ ⟦⚡SPAN@100.50s: (no information found)⟧ It is! But their music still sounds incredibly fresh and innovative today.
+[105.29s][moshi] It really does hold up. Sometimes I think timeless music just *is* timeless, you know?
+[111.47s][user ] Yeah, I guess so. What was their biggest hit off that first ⟨ret@114.99s⟩ album?
+[115.15s][moshi] ⟦⚡SPAN@115.15s: “Eruption,” the instrumental guitar solo by Eddie Van Halen, is considered the signature song from their debut⟧ It was “Eruption”—Eddie Van Halen’s incredible guitar solo—that really defined that first album.
+[122.20s][user ] “Eruption.” That was all guitar, ⟨ret@124.15s⟩ right?
+[124.47s][moshi] ⟦⚡SPAN@124.47s: (no information found)⟧ Exactly! It revolutionized guitar playing, introducing a whole new level of technique and creativity.
+[130.60s][moshi] It really changed the game. It inspired so many guitarists, and still does.
+[135.42s][user ] I can imagine. It's amazing how a song can do that.
+[138.60s][moshi] It truly is. Music has such a powerful way of connecting with us and shaping our experiences.
+[143.25s][user ] «backchannel» Mm-hmm.
+[144.63s][moshi] It’s why I love talking about it with people.
+[145.75s][user ] «backchannel» Mhm.
+[147.26s][user ] So, back to the beginning… was Mammoth a professional band, or just a ⟨ret@151.70s⟩ hobby?
+[151.94s][moshi] ⟦⚡SPAN@151.94s: In its early years, Mammoth was primarily a weekend project for Eddie and Alex Van Halen, playing local gigs w⟧ They started as a weekend project, playing local gigs while they still had day jobs.
+[156.64s][user ] Day jobs? What did Eddie and Alex do for ⟨ret@159.51s⟩ work?
+[159.75s][moshi] ⟦⚡SPAN@159.75s: Eddie Van Halen worked as a janitor, while Alex Van Halen held various part-time jobs, including working at a ⟧ Eddie and Alex both held various odd jobs to support themselves while pursuing their music.
+[165.19s][moshi] Eddie worked as a janitor, and Alex had a few part-time jobs, including at a music store.
+[170.98s][user ] A janitor, huh? That’s… ⟨ret@173.26s⟩ surprising.
+[173.66s][moshi] ⟦⚡SPAN@173.66s: (no information found)⟧ It just goes to show you, everyone starts somewhere. It’s about dedication and passion.
+[178.70s][moshi] It’s a good reminder that success rarely comes easily.
+[182.70s][user ] I suppose so. Well, thanks for the info, Naeus.
+[185.35s][moshi] You’re very welcome! It’s always a pleasure to talk about music and the creative process. Take good care.

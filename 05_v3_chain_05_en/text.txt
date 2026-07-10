@@ -1,94 +1,78 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Elio, a calm and patient counselor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Ken, a warm and attentive counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Taylor",
+    "name": "Aiden",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "40s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-05",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-12-24",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-11-19",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-09-26",
+      "date": "2026-01-25",
       "category": "work",
-      "text": "User works as a software engineer."
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-10-24",
+      "category": "home",
+      "text": "User's home address is 756 Oak Avenue."
+    },
+    {
+      "date": "2025-09-02",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
+    },
+    {
+      "date": "2025-08-31",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-20",
-      "title": "Setting up a home network",
+      "date": "2025-11-16",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-08-24",
+      "date": "2025-10-05",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How many seats are in T-Mobile ⟨ret@1.73s⟩ Park?
-[  1.97s][moshi] ⟦⚡SPAN@1.97s: T-Mobile Park, home of the Seattle Mariners, has a seating capacity of 47,929 for baseball games. It opened in⟧ T-Mobile Park—the home of the Mariners—has a seating capacity of 47,929. It’s in Seattle, Washington.
-[ 12.65s][user ] That's good to know. What's the weather like there right ⟨ret@15.90s⟩ now?
-[ 16.13s][moshi] ⟦⚡SPAN@16.14s: (tool result) The current weather in Seattle, Washington is 18.3°C, humidity 68%, wind 8.0 km/h, with clear sk⟧ The weather in Seattle is 18.3°C with clear skies, and a light breeze at 8.0 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle, Washington"}}
-[ 24.78s][user ] Hmm, nice. I’m thinking of going to a game next week.
-[ 28.58s][moshi] That sounds lovely. Planning a little outing can be a nice way to recharge.
-[ 30.68s][user ] «backchannel» Mm-hmm.
-[ 34.27s][user ] Could you find me some events happening at T-Mobile Park next ⟨ret@37.82s⟩ week?
-[ 38.06s][moshi] ⟦⚡SPAN@38.06s: (tool result) There are three events at T-Mobile Park next week: Seattle Mariners vs. Houston Astros (July 14t⟧ Next week, the Mariners play the Astros on the 14th, 15th, and 16th, with tickets starting at $35.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "T-Mobile Park", "date": "next week"}}
-[ 41.51s][user ] «backchannel» Wow.
-[ 45.58s][moshi] Sometimes, just anticipating something enjoyable can lift your spirits. It’s a good feeling to have plans.
-[ 52.85s][user ] I think I'd like to get tickets for the 15th. Can you search for ⟨ret@56.91s⟩ those?
-[ 57.23s][moshi] ⟦⚡SPAN@57.23s: (tool result) Seattle Mariners vs. Houston Astros on July 15th, 2026, have tickets available starting at $35, ⟧ Tickets for the Mariners game on July 15th are available, starting at $35, with options at $55 and $85.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "T-Mobile Park", "date": "July 15th"}}
-[ 61.74s][user ] «backchannel» Yeah.
-[ 66.60s][user ] The $55 tickets sound good.
-[ 69.29s][moshi] That’s a reasonable choice. It's good to find something that feels comfortable for you.
-[ 70.94s][user ] «backchannel» Yeah.
-[ 74.60s][user ] Can I buy two ⟨ret@75.78s⟩ of those?
-[ 76.10s][moshi] ⟦⚡SPAN@76.10s: (tool result) Two tickets for the Seattle Mariners vs. Houston Astros game on July 15th, 2026, at T-Mobile Par⟧ Wonderful—two tickets for the July 15th game are purchased for $110. Your confirmation ID is 78X9-22Y4.
-      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"location": "T-Mobile Park", "date": "July 15th", "ticket_price": "$55", "quantity": "2"}}
-[ 87.91s][user ] Great!—I was actually wondering if there's a good Italian restaurant nearby.
-[ 92.47s][moshi] «interrupted» I understand you're thinking about dinner as well—
-[ 94.60s][user ] «interrupts_prev» …and could you find one with ⟨ret@96.69s⟩ outdoor seating?
-[ 97.08s][moshi] ⟦⚡SPAN@97.09s: (tool result) There are three Italian restaurants near T-Mobile Park with outdoor seating: Il Bistro (4.5 star⟧ Il Bistro, Bella Italia, and Pasta Paradise are three Italian restaurants nearby with outdoor seating. Il Bistro has 4.5 stars and is moderately priced.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "T-Mobile Park", "cuisine": "Italian", "outdoor_seating": "true"}}
-[109.35s][user ] Il Bistro sounds nice. What’s their ⟨ret@112.20s⟩ address?
-[112.61s][moshi] ⟦⚡SPAN@112.61s: (tool result) Il Bistro is located at 123 Main Street, Seattle, WA 98101. Their phone number is (206) 555-1212⟧ Il Bistro is at 123 Main Street, Seattle, WA 98101. You can reach them at (206) 555-1212.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"name": "Il Bistro", "location": "T-Mobile Park"}}
-[124.22s][user ] Perfect. Thanks for all your help.
-[126.24s][moshi] You’re very welcome. It’s good to have a plan that feels enjoyable and relaxing. Have a wonderful time at the game and dinner.
+[  0.00s][user ] I’m new to Seoul, and I’d really…
+[  3.61s][user ] …like to see a movie ⟨ret@4.95s⟩ tonight.
+[  5.18s][moshi] ⟦⚡SPAN@5.19s: Seoul has several movie theaters, including the CGV Yongsan I'Park Mall, which is showing "Inside Out 2" at 7:⟧ Seoul has several theaters, and CGV Yongsan I'Park Mall is showing "Inside Out 2" at 7:30 and 9:45 tonight.
+[ 15.07s][user ] Oh, that sounds good! Can you check if there are any seats available for the 7:30 ⟨ret@19.65s⟩ showing?
+[ 19.88s][moshi] ⟦⚡SPAN@19.89s: (tool result) There are 23 seats available for “Inside Out 2” at CGV Yongsan I'Park Mall at 7:30 PM.⟧ There are twenty-three seats available for "Inside Out 2" at 7:30 at CGV Yongsan I'Park Mall.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Inside Out 2", "theater_name": "CGV Yongsan I'Park Mall", "date": "today", "time": "7:30 PM"}}
+[ 27.44s][user ] Great! Could you book me one ticket, ⟨ret@30.24s⟩ please?
+[ 30.40s][moshi] ⟦⚡SPAN@30.40s: (tool result) Your ticket for "Inside Out 2" at CGV Yongsan I'Park Mall at 7:30 PM is confirmed. Confirmation ⟧ Wonderful! Your ticket is confirmed for 7:30, confirmation number 894723. Enjoy the film!
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Inside Out 2", "theater_name": "CGV Yongsan I'Park Mall", "date": "today", "time": "7:30 PM", "num_tickets": 1}}

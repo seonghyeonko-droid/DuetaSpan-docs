@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "주람",
+#     "name": "윤슬",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,69 +12,74 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-26",
+#       "date": "2026-06-19",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-12-01",
+#       "date": "2026-05-20",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-12-26",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-21",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#       "date": "2025-09-08",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-07-16",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-06-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2025-06-06",
+#       "date": "2025-06-07",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-30",
+#       "date": "2025-12-26",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-14",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-08",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-09",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-05-31",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 인도 중앙은행 총재가 누구예요?
-     2.90s  <ret> 발화 (turn1 첫 프레임)
-     3.06s  agent 발화 시작: <ret> 인도 중앙은행 총재는 우르짓 파텔 님이었어요. 이천십육년 구월부터 이천십팔년 십이월까지 역임하셨답
-     3.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: Urjit Patel was the 24th governor of the Reserve Bank of India, servin
-     3.14s  user  발화 끝
-    10.98s  agent 발화 끝
+     0.00s  user  발화 시작: 삼 육 마피아 멤버가 누구누구야?
+     2.49s  <ret> 발화 (turn1 첫 프레임)
+     2.62s  agent 발화 시작: <ret> 삼 육 마피아 멤버로는 DJ 폴이 있습니다. 그는 멤피스 출신의 래퍼이자 프로듀서예요.
+     2.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: DJ Paul is an American rapper, DJ, and record producer from Memphis, T
+     2.72s  user  발화 끝
+     8.64s  agent 발화 끝

@@ -4,61 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "성정",
+#     "name": "주정",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-06-18",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2026-03-19",
+#       "date": "2026-05-01",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-02-05",
+#       "date": "2026-01-09",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-09-29",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-07-30",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-01-20",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "date": "2025-06-20",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-18",
-#       "title": "Researching a used car",
+#       "date": "2026-05-29",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-10",
+#       "date": "2025-12-23",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-11",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -68,87 +71,83 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 안녕하세요. 혹시 지금 집에서 제일 가까운 공원까지 가는 | S2 주차 요금이 생각보다 비싸네요. 그럼… | S3 날씨도 좋네요. 그럼, 아이와 함께 효창공원으로 출발해야겠어요 | S4 아, Rusty는 집에 있어야죠. 공원에 데려갈 수는 없잖아요
+# EXAMINER(FDB-v2) 단계: S1 그냥 그래. 집에서 제일 가까운 공원까지 얼마나 걸릴까? | S2 음… 그럼 거기 주변에 카페는 있어? | S3 삼 점 오 영달러… 음, 그럼 혹시 내가 전에 예약했던 치과  | S4 고마워.
 
-     0.00s  agent 발화 시작: 안녕하세요, 성정님. 저는 아릴입니다. 편안하게 육아와 가족 시간을 계획하는 걸 도와드리는 상담사예요.
-     6.89s  user  발화 시작: 아, 안녕하세요. 혹시 지금 집에서 제일 가까운 공원까지 가는 길 좀 알려주실 수 있을까요?
-     7.09s  agent 발화 끝
-    12.40s  <ret> 발화 (turn2 첫 프레임)
-    12.48s  agent 발화 시작: <ret> 서울 용산구 이태원로 이백에서 가장 가까운 공원은 효창공원이고, 도보로 약 십오분 정도 걸립니다.
-    12.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: [2026-06-18] User's home address is 서울 용산구 이태원로 200.
-    12.73s  user  발화 끝
-    17.50s  user  발화 시작: 네.
-    17.85s  user  발화 끝
-    19.10s  user  발화 시작: 음, 십오분은 조금 걸리네요. 버스는 어때요?
-    19.34s  agent 발화 끝
-    22.58s  <ret> 발화 (turn5 첫 프레임)
-    22.82s  agent 발화 시작: <ret> 이태원로 이백에서 효창공원까지는 버스 백구번이나 칠백번을 타면 약 팔분 정도 걸립니다.
-    22.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) 버스 109번, 700번이 이태원로 200에서 효창공원까지 운행하며, 약 8분 소요됩니다.
-    22.89s  user  발화 끝
-    24.76s  user  발화 시작: 음.
-    25.26s  user  발화 끝
-    28.38s  agent 발화 끝
-    28.55s  user  발화 시작: 아, 버스가 훨씬 빠르겠네요. 혹시 지금 바로 버스 시간표를 알아볼 수 있을까요?
-    33.54s  <ret> 발화 (turn8 첫 프레임)
-    33.61s  agent 발화 시작: <ret> 백구번 버스가 이분 뒤에 도착 예정입니다.
-    33.62s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.59s]: (tool result) 현재 가장 빠른 버스는 109번이고, 2분 뒤에 도착 예정입니다.
-    33.83s  user  발화 끝
-    36.20s  agent 발화 끝
-    36.42s  user  발화 시작: 이분 뒤면 괜찮겠네요. 그런데, 혹시 효창공원 근처에 주차 공간이 있나요? 차를 가져갈 수도 있어서요.
-    43.68s  <ret> 발화 (turn10 첫 프레임)
-    43.83s  agent 발화 시작: <ret> 효창공원 근처에 유료 주차장 세 곳이 있는데, 시간당 요금은 삼천원부터 오천원까지입니다.
-    43.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) 효창공원 근처에 유료 주차장 3곳이 있습니다. 시간당 요금은 3,000원부터 5,000원까지 다양합니
-    43.97s  user  발화 끝
-    49.90s  agent 발화 끝
-    50.71s  user  발화 시작: 주차 요금이 생각보다 비싸네요. 그럼…
-    53.61s  agent 발화 시작: 효창공원 외에도 가까운 곳에 다른 공원이 있는지 알아볼까요? 아이가 놀기 좋은 곳으로요 —
-    53.75s  user  발화 끝
-    58.27s  user  발화 시작: …아니요, 괜찮아요. 효창공원으로 가볼게요. 그런데, 혹시 효창공원에서 아이와 함께 할 만한 특별한 활동이 
-    58.98s  agent 발화 끝
-    66.73s  agent 발화 시작: 효창공원에는 아이들이 즐길 수 있는 놀이터와 넓은 잔디밭이 있습니다.
-    66.79s  user  발화 끝
-    71.36s  agent 발화 끝
-    71.40s  user  발화 시작: 놀이터는 좋네요. 혹시 지금 효창공원의 날씨는 어떤가요?
-    74.77s  <ret> 발화 (turn16 첫 프레임)
-    75.09s  agent 발화 시작: <ret> 현재 효창공원은 맑고, 기온은 이십칠 점 오도, 습도는 육십오%입니다.
-    75.09s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.18s]: (tool result) 현재 효창공원은 맑고, 기온은 27.5°C, 습도는 65%입니다.
-    75.29s  user  발화 끝
-    80.27s  agent 발화 끝
-    80.84s  user  발화 시작: 날씨도 좋네요. 그럼, 아이와 함께 효창공원으로 출발해야겠어요.
-    85.87s  agent 발화 시작: 네, 아이와 함께 즐거운 시간 보내세요. 혹시 발열 체크는 하셨나요?
-    85.94s  user  발화 끝
-    87.79s  user  발화 시작: 네.
-    88.28s  user  발화 끝
-    90.49s  agent 발화 끝
-    90.93s  user  발화 시작: 아, 발열 체크는 아직 못 했네요.
-    93.41s  agent 발화 시작: 아이의 건강을 위해 출발 전에 꼭 발열 체크를 해주시는 게 좋겠어요.
-    93.52s  user  발화 끝
-    97.34s  agent 발화 끝
-    97.66s  user  발화 시작: 네, 알겠습니다. 잊지 않고 꼭 할게요.
-   100.48s  user  발화 끝
-   100.71s  agent 발화 시작: 좋아요. 아이와 함께 안전하고 행복한 시간 보내시길 바랍니다.
-   104.55s  agent 발화 끝
-   104.71s  user  발화 시작: 감사합니다.
-   105.22s  <ret> 발화 (turn25 첫 프레임)
-   105.53s  user  발화 끝
-   105.53s  agent 발화 시작: <ret> 혹시 집에 강아지 Rusty를 데려가실 건가요?
-   105.53s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.01s]: [2026-02-05] User has a Beagle named Rusty.
-   107.20s  user  발화 시작: 네.
-   107.74s  user  발화 끝
-   108.36s  user  발화 시작: 아, Rusty는 집에 있어야죠. 공원에 데려갈 수는 없잖아요.
-   108.54s  agent 발화 끝
-   111.96s  agent 발화 시작: 맞아요, Rusty는 집에서 편안하게 쉬는 게 좋겠네요.
-   112.16s  user  발화 끝
-   113.37s  user  발화 시작: 음.
-   113.86s  user  발화 끝
-   114.73s  agent 발화 끝
-   115.06s  user  발화 시작: 그럼, 이제 정말 출발해야겠어요.
-   117.69s  agent 발화 시작: 네, 조심히 다녀오세요. 즐거운 시간 보내시길 바랍니다.
-   117.90s  user  발화 끝
-   120.08s  user  발화 시작: 예.
-   120.48s  user  발화 끝
-   121.25s  agent 발화 끝
-   121.36s  user  발화 시작: 네, 감사합니다.
-   122.73s  user  발화 끝
-   122.74s  agent 발화 시작: 아이와 함께 행복한 추억 많이 만드세요.
-   125.04s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 주정님. 저는 Kler예요. 오늘 하루는 어떠셨어요?
+     2.10s  user  발화 시작: 응.
+     2.50s  user  발화 끝
+     4.02s  agent 발화 끝
+     4.73s  user  발화 시작: 그냥 그래. 집에서 제일 가까운 공원까지 얼마나 걸릴까?
+     8.28s  <ret> 발화 (turn3 첫 프레임)
+     8.36s  agent 발화 시작: <ret> 주정님, 전에 집 네트워크 설정에 대해 여쭤보셨던 걸로 기억해요. 지금은 집에서 가장 가까운 공원
+     8.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.80s]: [2025-08-11] Past chat — Setting up a home network: asked about mesh r
+     8.57s  user  발화 끝
+    13.04s  user  발화 시작: 그래.
+    13.53s  user  발화 끝
+    23.00s  <ret> 발화 (turn5 첫 프레임)
+    23.15s  agent 발화 끝
+    23.24s  agent 발화 시작: <ret> 네, 이십삼분 정도 예상되지만, 교통 상황에 따라 조금 더 걸릴 수도 있어요.
+    23.24s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.58s]: (tool result) Distance to the nearest park is 1.7 kilometers, estimate
+    27.68s  user  발화 시작: 그럼 버스타면 얼마나 걸릴까?
+    27.82s  agent 발화 끝
+    29.55s  <ret> 발화 (turn7 첫 프레임)
+    29.63s  agent 발화 시작: <ret> 버스를 타면 약 십오분 정도 걸릴 거예요. 칠분 정도 걸어서 이동해야 해요.
+    29.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) Taking the bus to the nearest park will take approximate
+    29.85s  user  발화 끝
+    31.88s  user  발화 시작: 응.
+    32.28s  user  발화 끝
+    34.35s  agent 발화 끝
+    34.54s  user  발화 시작: 칠분 걸어야 한다고? 좀 멀겠네.
+    36.87s  agent 발화 시작: 네, 조금 걸어야 하지만, 걸으면서 주변 풍경을 즐기시는 것도 좋을 것 같아요.
+    37.13s  user  발화 끝
+    41.41s  agent 발화 끝
+    41.51s  user  발화 시작: 음… 그럼 거기 주변에 카페는 있어?
+    43.60s  <ret> 발화 (turn12 첫 프레임)
+    44.00s  agent 발화 시작: <ret> 공원 주변에 세 곳의 카페가 있어요. Bloom 카페, 커피빈, 그리고 Tea Leaf 카페입니다
+    44.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) There are three cafes within 500 meters of the park: Caf
+    44.23s  user  발화 끝
+    46.91s  user  발화 시작: 음.
+    47.45s  user  발화 끝
+    49.43s  agent 발화 끝
+    49.85s  user  발화 시작: Bloom 카페가 제일 괜찮아 보이는데, 거기 메뉴 좀 알려줄 수 있어?
+    54.07s  <ret> 발화 (turn15 첫 프레임)
+    54.39s  agent 발화 시작: <ret> Bloom 카페의 메뉴에는 아메리카노가 삼 점 오 영달러, 라떼가 사 점 영 영달러이고, 다양한 
+    54.39s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.44s]: (tool result) Cafe Bloom's menu includes Americano ($3.50), Latte ($4.
+    54.57s  user  발화 끝
+    62.82s  agent 발화 끝
+    62.86s  user  발화 시작: 아메리카노 가격이 얼마라고?
+    65.03s  agent 발화 시작: 아메리카노는 삼 점 오 영달러입니다.
+    65.22s  user  발화 끝
+    68.07s  agent 발화 끝
+    68.69s  user  발화 시작: 삼 점 오 영달러… 음, 그럼 혹시 내가 전에 예약했던 치과 예약 정보 좀 다시 알려줄 수 있어?
+    75.78s  <ret> 발화 (turn19 첫 프레임)
+    75.86s  agent 발화 시작: <ret> 이른 아침 시간, 한 선생님을 선호하셨던 걸로 기억해요—
+    75.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.33s]: [2026-05-29] Past chat — Booked a dentist appointment: asked for an ea
+    76.05s  user  발화 끝
+    78.59s  user  발화 시작: …근데 혹시 그날 아침 일찍 진료 가능한지 다시 한번 확인해 줄 수 있을까?
+    79.19s  agent 발화 끝
+    83.05s  <ret> 발화 (turn21 첫 프레임)
+    83.36s  agent 발화 시작: <ret> 한 선생님은 이천이십육년 칠월 십오일 오전 여덟시에 진료가 가능합니다.
+    83.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) Dr. Han has availability at 8:00 AM on July 15, 2026.
+    83.54s  user  발화 끝
+    85.38s  user  발화 시작: 헐.
+    85.81s  user  발화 끝
+    87.89s  agent 발화 끝
+    87.98s  user  발화 시작: 칠월 십오일 오전 여덟시… 그럼 그걸로 예약해 줘.
+    91.13s  <ret> 발화 (turn24 첫 프레임)
+    91.20s  agent 발화 시작: <ret> 한 선생님과의 치과 예약이 이천이십육년 칠월 십오일 오전 여덟시로 확정되었습니다. 확인 번호는 칠
+    91.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.16s]: (tool result) Appointment with Dr. Han confirmed for July 15, 2026 at 
+    91.36s  user  발화 끝
+    93.98s  user  발화 시작: 헐.
+    94.47s  user  발화 끝
+    99.36s  agent 발화 끝
+    99.42s  user  발화 시작: 고마워.
+   100.08s  agent 발화 시작: 천만에요.
+   100.18s  user  발화 끝
+   100.91s  agent 발화 끝
+   101.07s  user  발화 시작: 혹시 고양이 알레르기가 있는 사람을 위한 공기는 어떤 게 좋을까?
+   105.12s  <ret> 발화 (turn29 첫 프레임)
+   105.52s  agent 발화 시작: <ret> 고양이 알레르기가 있는 분들을 위한 공기청정기는 HEPA 필터와 활성탄 필터가 있는 것이 좋다고 
+   105.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Best air purifiers for cat allergies include those with 
+   105.69s  user  발화 끝
+   111.31s  agent 발화 끝

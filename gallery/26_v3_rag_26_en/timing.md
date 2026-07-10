@@ -4,59 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Léa",
+#     "name": "Louis",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "late 20s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-10",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "home",
-#       "text": "User's home address is 197 Pine Court."
-#     },
-#     {
-#       "date": "2025-09-14",
+#       "date": "2026-03-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
+#       "text": "User is planning a trip to Iceland in August."
 #     },
 #     {
-#       "date": "2025-08-09",
+#       "date": "2025-12-17",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "category": "home",
+#       "text": "User's home address is 456 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-06-14",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-10",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-22",
+#       "date": "2025-06-26",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -66,67 +55,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Doen, I'm feeling a bit lost ab | S2 Oh, December sixth, 1946… that’s g | S3 I wonder what the weather is like  | S4 What kind of jobs are actually in 
+# EXAMINER(FDB-v2) 단계: S1 Hi Heas, I was wondering about ato | S2 Hmm, well, I’m also trying to plan | S3 I think I'm starting to get it. Oh | S4 That’s true. I’ll try to remember 
 
-     0.00s  user  발화 시작: Hi Doen, I'm feeling a bit lost about my career path.
-     3.94s  agent 발화 시작: It’s completely normal to feel that way! Exploring options i
-     3.98s  user  발화 끝
-     5.99s  user  발화 시작: Yeah.
-     6.49s  user  발화 끝
-     9.26s  agent 발화 끝
-    11.47s  user  발화 시작: Yeah, I was thinking about going back to school, but it’s a 
-    16.09s  user  발화 끝
-    16.51s  agent 발화 시작: It is. It's good to weigh everything carefully before making
-    20.90s  agent 발화 끝
-    21.91s  user  발화 시작: I was reading about the Indian constitution, actually. When 
-    28.44s  <ret> 발화 (turn6 첫 프레임)
-    28.63s  user  발화 끝
-    28.68s  agent 발화 시작: <ret> The Indian Constituent Assembly first met on December 
-    28.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: The first meeting of the Indian Constituent Assembly was held on Decem
-    32.34s  user  발화 시작: Yeah.
-    32.78s  user  발화 끝
-    35.54s  agent 발화 끝
-    35.68s  user  발화 시작: Oh, December sixth, 1946… that’s good to know. I’m also tryi
-    44.74s  agent 발화 시작: It often is! Many people successfully change careers, and it
-    44.86s  user  발화 끝
-    46.34s  user  발화 시작: Yeah.
-    46.83s  user  발화 끝
-    50.13s  user  발화 시작: I'm worried about the financial side of things, though.
-    50.20s  agent 발화 끝
-    53.06s  agent 발화 시작: That's a very valid concern. We can explore budgeting and po
-    53.17s  user  발화 끝
-    54.90s  user  발화 시작: Yeah, totally.
-    56.19s  user  발화 끝
-    57.96s  agent 발화 끝
-    59.30s  user  발화 시작: I wonder what the weather is like in Seoul right now?
-    62.16s  <ret> 발화 (turn15 첫 프레임)
-    62.56s  agent 발화 시작: <ret> It is currently Friday, July tenth, two thousand and t
-    62.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
-    62.72s  user  발화 끝
-    65.34s  user  발화 시작: Okay.
-    66.02s  user  발화 끝
-    69.10s  agent 발화 시작: Quite warm, it seems!
-    69.14s  agent 발화 끝
-    70.80s  agent 발화 끝
-    70.87s  user  발화 시작: That’s helpful, thanks. Back to careers… I feel stuck in a r
-    75.73s  agent 발화 시작: I understand. A rut can be draining. Let’s pinpoint what fee
-    75.92s  user  발화 끝
-    77.95s  user  발화 시작: Right.
-    78.59s  user  발화 끝
-    80.96s  agent 발화 끝
-    80.96s  user  발화 시작: It’s mostly the lack of challenge, I think. I need something
-    85.90s  agent 발화 시작: That’s a great insight! Identifying that need for challenge 
-    86.09s  user  발화 끝
-    89.57s  user  발화 시작: What kind of jobs are actually in demand these days?
-    90.02s  agent 발화 끝
-    92.76s  <ret> 발화 (turn24 첫 프레임)
-    93.07s  agent 발화 시작: <ret> Software developers are currently in high demand, with
-    93.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: According to recent data, software developers are highly sought after 
-    93.27s  user  발화 끝
-    99.22s  user  발화 시작: Okay.
-   100.18s  user  발화 끝
-   102.66s  agent 발화 끝
-   103.22s  user  발화 시작: Wow, that’s good to know.
-   105.20s  agent 발화 시작: [happy] It truly is. Exploring new skills could really open 
-   105.34s  user  발화 끝
-   109.74s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Heas, I was wondering about atomic structure.
+     3.61s  user  발화 끝
+     3.62s  agent 발화 시작: It's a fascinating topic, isn't it? Atoms are the building b
+     8.57s  user  발화 시작: Yeah, I'm trying to figure out electron shells. How many ele
+     8.67s  agent 발화 끝
+    14.33s  <ret> 발화 (turn3 첫 프레임)
+    14.41s  user  발화 끝
+    14.56s  agent 발화 시작: <ret> The third energy level can hold up to eighteen electro
+    14.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: The third electron shell of an atom can hold a maximum of eighteen ele
+    19.79s  user  발화 시작: Eighteen… that seems like a lot. Is that a hard limit?
+    20.35s  agent 발화 끝
+    23.91s  user  발화 끝
+    24.10s  agent 발화 시작: It is a hard limit, dictated by quantum mechanics. Each shel
+    27.42s  user  발화 시작: Yeah.
+    28.05s  user  발화 끝
+    29.56s  agent 발화 끝
+    29.65s  user  발화 시작: Hmm, well, I’m also trying to plan a weekend trip. Do you kn
+    36.03s  <ret> 발화 (turn8 첫 프레임)
+    36.35s  agent 발화 시작: <ret> The weather in Busan is currently 26.2°C, with 68% hum
+    36.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: (tool result) The current weather in Busan is 26.2°C, humidity 68%, wi
+    36.42s  user  발화 끝
+    45.44s  agent 발화 끝
+    45.53s  user  발화 시작: That *does* sound nice. Okay, back to electrons. What determ
+    52.17s  agent 발화 시작: The limits are determined by the number of orbitals within e
+    52.29s  user  발화 끝
+    58.22s  user  발화 시작: Orbitals… so it's not just a random number?
+    58.28s  agent 발화 끝
+    61.41s  agent 발화 시작: Not at all. It’s a consequence of the wave-like properties o
+    61.55s  user  발화 끝
+    66.69s  agent 발화 끝
+    67.94s  user  발화 시작: I think I'm starting to get it. Oh, uh, my friend Sarah just
+    73.69s  user  발화 끝
+    75.64s  user  발화 시작: …she’s having trouble with her boyfriend, again.
+    78.60s  agent 발화 시작: That sounds difficult for her. Friendships can be really cha
+    78.77s  user  발화 끝
+    83.46s  agent 발화 끝
+    84.35s  user  발화 시작: It is. I always feel so helpless when she goes through this.
+    89.74s  agent 발화 시작: Sometimes, simply listening without judgment is the most hel
+    89.90s  user  발화 끝
+    93.54s  user  발화 시작: Wow.
+    94.36s  user  발화 끝
+    95.39s  agent 발화 끝
+    95.53s  user  발화 시작: That’s true. I’ll try to remember that. Hey, do you know whe
+   102.41s  <ret> 발화 (turn20 첫 프레임)
+   102.73s  agent 발화 시작: <ret> The Busan International Film Festival is scheduled for
+   102.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: (tool result) The Busan International Film Festival will be held from 
+   102.89s  user  발화 끝
+   110.85s  user  발화 시작: Wow, that’s perfect timing! Thanks, Heas.
+   111.08s  agent 발화 끝
+   114.02s  agent 발화 시작: You're very welcome. I'm glad I could help with both your sc
+   114.23s  user  발화 끝
+   119.62s  agent 발화 끝
+   120.15s  user  발화 시작: You're a lifesaver. I really appreciate it.
+   123.17s  agent 발화 시작: It's my pleasure. Remember, a good friend is a wonderful thi
+   123.34s  user  발화 끝
+   127.33s  agent 발화 끝

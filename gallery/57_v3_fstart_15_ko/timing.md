@@ -4,53 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "가민",
+#     "name": "보원",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
+#       "date": "2026-03-04",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-04-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "date": "2025-11-29",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-24",
+#       "date": "2025-11-16",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-03-20",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-03-14",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-07-29",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-07",
+#       "date": "2026-04-27",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,81 +48,81 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-11-03",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-07-17",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 런던 히스로 공항에서 샤를 드 골 공항까지 비즈니스석 두 장, | S2 혹시 호텔도 같이 예약해 줄 수 있어요? | S3 사월 일일은 비행기 타고 가니까, 사월 이일 체크인으로 바꿔  | S4 알랭 뒤카스 예약도 부탁해요. 사월 이일 저녁 여덟시에.
+# EXAMINER(FDB-v2) 단계: S1 음… 새로운 도시에 정착하는 거, 진짜 막막하네요. | S2 음… 강남역 근처면 좋을 것 같아요. | S3 사진 보여주세요. | S4 앤트러사이트 커피 로스터스… 가볼 만하겠네요.
 
-     0.00s  user  발화 시작: 런던 히스로 공항에서 샤를 드 골 공항까지 비즈니스석 두 장, 사월 일일에 부탁해요.
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn3 첫 프레임)
-     0.00s  <ret> 발화 (turn5 첫 프레임)
-     0.05s  agent 발화 시작: <ret> 런던 히스로 공항에서 샤를 드 골 공항까지 비즈니스석 두 장은, 이천이십육년 사월 일일 출발 기준
-     0.05s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) Flights from London Heathrow to Charles de Gaulle airpor
-     0.05s  user  발화 끝
-     0.09s  <ret> 발화 (turn11 첫 프레임)
-     0.14s  user  발화 시작: 이천삼백사십오달러는 좀 비싸네요. 다른 항공사는 없어요?
-     0.14s  agent 발화 끝
-     0.17s  agent 발화 시작: <ret> 에어 프랑스 외에, 브리티시 에어웨이즈는 이천오백육십달러, KLM은 이천칠백팔십달러부터 있습니다.
-     0.17s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) British Airways also offers business class flights from 
-     0.17s  user  발화 끝
-     0.20s  user  발화 시작: 브리티시 에어웨이즈로 예약해 주세요.
-     0.20s  agent 발화 끝
-     0.22s  agent 발화 시작: <ret> 브리티시 에어웨이즈로 예약 완료되었습니다. 예약 번호는 비 에이 칠 팔 구 이 삼 사입니다.
-     0.22s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Booking confirmed for two business class tickets on Brit
-     0.22s  user  발화 끝
-     0.23s  <ret> 발화 (turn9 첫 프레임)
-     0.28s  user  발화 시작: 혹시 호텔도 같이 예약해 줄 수 있어요?
-     0.28s  agent 발화 끝
-     0.30s  agent 발화 시작: 어떤 지역의 호텔을 찾으시나요? 샤를 드 골 공항 근처나 파리 시내 중에서 선택하실 수 있어요.
-     0.30s  user  발화 끝
-     0.37s  user  발화 시작: 파리 시내에 있는 오성급 호텔로 부탁해요.
-     0.37s  agent 발화 끝
-     0.39s  agent 발화 시작: <ret> 파리 시내의 오성급 호텔 중에는 호텔 플라자 아테네와 르 브리스톨 파리가 유명합니다. 객실 요금은
-     0.39s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) The Hotel Plaza Athénée and Le Bristol Paris are highly-
-     0.39s  user  발화 끝
-     0.46s  user  발화 시작: 호텔 플라자 아테네로 예약해 주세요. 이박 삼일로요.
-     0.46s  agent 발화 끝
-     0.49s  agent 발화 시작: <ret> 호텔 플라자 아테네, 사월 일일부터 삼일까지 이박 삼일 예약 완료되었습니다. 예약 번호는 피 에이
-     0.49s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Booking confirmed at Hotel Plaza Athénée for two nights,
-     0.49s  user  발화 끝
-     0.52s  <ret> 발화 (turn20 첫 프레임)
-     0.54s  <ret> 발화 (turn17 첫 프레임)
-     0.57s  user  발화 시작: 음.
-     0.57s  agent 발화 끝
-     0.57s  user  발화 시작: 사월 일일은 비행기 타고 가니까, 사월 이일 체크인으로 바꿔 줄 수 있어요?
-     0.57s  user  발화 끝
-     0.62s  agent 발화 시작: 네, 체크인 날짜를 사월 이일로 변경해 드릴게요.
-     0.62s  user  발화 끝
-     0.65s  user  발화 시작: —
-     0.65s  agent 발화 끝
-     0.65s  user  발화 시작: …근데 혹시 호텔 근처에 괜찮은 레스토랑도 추천해 줄 수 있어요?
-     0.65s  user  발화 끝
-     0.70s  agent 발화 시작: <ret> 호텔 플라자 아테네 근처에는 미슐랭 삼스타 레스토랑인 알랭 뒤카스가 있습니다.
-     0.70s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Alain Ducasse au Plaza Athénée, a three-Michelin-starred
-     0.70s  user  발화 끝
-     0.74s  agent 발화 시작: 알랭 뒤카스는 호텔 플라자 아테네 안에 있고, 현대 프랑스 요리를 맛볼 수 있습니다. 라베뉴도 근처에 인기 
-     0.74s  agent 발화 끝
-     0.81s  user  발화 시작: 알랭 뒤카스 예약도 부탁해요. 사월 이일 저녁 여덟시에.
-     0.81s  agent 발화 끝
-     0.84s  agent 발화 시작: <ret> 알랭 뒤카스, 사월 이일 저녁 여덟시 예약 완료되었습니다. 예약 번호는 에이 디 구 팔 칠 육 오
-     0.84s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Reservation confirmed at Alain Ducasse au Plaza Athénée 
-     0.84s  user  발화 끝
-     0.91s  user  발화 시작: 그치.
-     0.91s  agent 발화 끝
-     0.92s  user  발화 시작: 정말 감사합니다. 덕분에 여행 계획이 잘 세워지는 것 같아요.
-     0.92s  user  발화 끝
-     0.96s  agent 발화 시작: 도움이 되었다니 기쁘네요. 여행 잘 다녀오세요.
-     0.96s  user  발화 끝
-     0.98s  user  발화 시작: 네, 알겠습니다.
-     0.98s  agent 발화 끝
-     0.99s  agent 발화 시작: 즐거운 여행 되세요.
-     0.99s  user  발화 끝
-     1.00s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 새로운 도시에 정착하는 거, 진짜 막막하네요.
+     3.33s  agent 발화 시작: 새로운 도시에서의 정착을 도와드릴 수 있어요. 어떤 점이 가장 걱정되세요?
+     3.56s  user  발화 끝
+     7.81s  user  발화 시작: 일단 집을 구하는 게…
+     7.91s  agent 발화 끝
+     9.93s  user  발화 끝
+    11.03s  user  발화 시작: …제일 큰 문제인 것 같아요.
+    12.35s  agent 발화 시작: 집을 구하는 건 중요한 첫걸음이죠. 혹시 선호하는 지역이 있으세요?
+    12.55s  user  발화 끝
+    16.66s  user  발화 시작: 음… 강남역 근처면 좋을 것 같아요.
+    16.70s  agent 발화 끝
+    18.70s  <ret> 발화 (turn6 첫 프레임)
+    19.09s  agent 발화 시작: <ret> 강남역 근처에 월세 백오십만 원에서 사백만 원 사이의 집이 십이채 있어요. 괜찮은 곳을 찾아드릴 
+    19.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: (tool result) Hotels_2 SearchHouse returned 12 houses near Gangnam Sta
+    19.20s  user  발화 끝
+    24.09s  user  발화 시작: 음.
+    24.48s  user  발화 끝
+    26.36s  agent 발화 끝
+    27.40s  user  발화 시작: 백오십만 원 정도면 괜찮을 것 같은데…
+    30.25s  user  발화 끝
+    30.62s  agent 발화 시작: 백오십만 원으로 가능한 집들을 더 자세히 알아볼까요?
+    33.76s  agent 발화 끝
+    33.79s  user  발화 시작: 네, 부탁드려요.
+    34.84s  <ret> 발화 (turn11 첫 프레임)
+    34.99s  agent 발화 시작: <ret> 강남역 근처에서 백오십만 원 이하의 집은 오채가 있어요. 테헤란로 구십구길에 있는 스튜디오 아파트
+    35.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.45s]: (tool result) Hotels_2 SearchHouse returned 5 houses near Gangnam Stat
+    35.16s  user  발화 끝
+    41.21s  user  발화 시작: 응.
+    41.51s  user  발화 끝
+    44.45s  agent 발화 끝
+    44.54s  user  발화 시작: 사진 보여주세요.
+    45.87s  agent 발화 시작: 지금 바로 사진을 보여드릴게요. 잠시만 기다려 주세요.
+    45.93s  user  발화 끝
+    49.30s  agent 발화 시작: 그 집은 역에서 도보로 십분 거리에 있고—
+    49.43s  agent 발화 끝
+    51.29s  user  발화 시작: …혹시 그 근처에 괜찮은 카페도 있을까요?
+    52.07s  agent 발화 끝
+    54.12s  <ret> 발화 (turn17 첫 프레임)
+    54.30s  user  발화 끝
+    54.43s  agent 발화 시작: <ret> 강남역 근처에 카페는 스물세곳이 있어요. 커피빈과 스타벅스도 있습니다. 어떤 스타일의 카페를 좋아
+    54.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) Restaurants_2 FindRestaurants returned 23 cafes near Gan
+    56.88s  user  발화 시작: 오.
+    57.66s  user  발화 끝
+    60.98s  agent 발화 시작: 조용하고 분위기 좋은 카페를 찾으시는 건가요?
+    61.06s  agent 발화 끝
+    63.94s  agent 발화 끝
+    64.72s  user  발화 시작: 네, 그런 곳이요.
+    65.57s  <ret> 발화 (turn21 첫 프레임)
+    65.89s  agent 발화 시작: <ret> 강남역 근처에 조용하고 아늑한 카페는 일곱곳이 있어요. 앤트러사이트 커피 로스터스도 있습니다. 거
+    65.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Restaurants_2 FindRestaurants returned 7 cafes near Gang
+    66.10s  user  발화 끝
+    73.43s  user  발화 시작: 앤트러사이트 커피 로스터스… 가볼 만하겠네요.
+    73.49s  agent 발화 끝
+    76.87s  agent 발화 시작: 네, 분위기가 정말 좋아요. 근처에 맛집도 많아요.
+    76.89s  user  발화 끝
+    79.99s  user  발화 시작: 맛집도 추천해 주세요.
+    80.11s  agent 발화 끝
+    81.65s  <ret> 발화 (turn25 첫 프레임)
+    81.73s  agent 발화 시작: <ret> 강남역 근처에는 한식당이 열다섯곳이 있어요. 교촌치킨과 비빔밥 스토리도 있습니다. 어떤 종류의 음
+    81.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Restaurants_2 FindRestaurants returned 15 Korean restaur
+    81.88s  user  발화 끝
+    90.11s  user  발화 시작: 음… 비빔밥이 좋겠네요.
+    90.25s  agent 발화 끝
+    91.80s  agent 발화 시작: 비빔밥 스토리는 평이 아주 좋답니다.
+    91.91s  user  발화 끝
+    93.91s  agent 발화 끝
