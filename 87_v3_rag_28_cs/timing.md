@@ -63,29 +63,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 정부 기관에 대해 읽다가… 재향군인부(Department of | S2 천구백삼십년? 그거 좀… 늦었네. 그보다 훨씬 일찍부터 퇴역  | S3 그러면 천구백삼십년은 그냥 *부서*가 된 날짜라는 거네? 그게 | S4 알겠어, 이제 좀 명확해졌네. 고마워, 브루날.
+# EXAMINER(FDB-v2) 단계: S1 어디서 읽었는데, 재향군인부(Department of Vete | S2 1930년? 그거 좀… 늦네. 남북전쟁 즈음인 줄 알았어. | S3 알았어, 1885년… 근데 그게 완전한 부처는 아니었지? 그냥 | S4 그럼 1930년이 완전한 부처가 된 날짜인 거야?
 
-     0.00s  user  발화 시작: 정부 기관에 대해 읽다가… 재향군인부(Department of Veterans Affairs)는 언제 만들어
-     6.08s  <ret> 발화 (turn1 첫 프레임)
-     6.49s  agent 발화 시작: <ret> 음, 재향군인부는 후버 대통령에 의해 천구백삼십년 팔월 구일에 설립되었어요. 그 필요성을 공식적으
-     6.62s  user  발화 끝
-     8.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.43s]: The Department of Veterans Affairs was established on August 9, 1930, 
-    18.91s  agent 발화 끝
-    19.35s  user  발화 시작: 천구백삼십년? 그거 좀… 늦었네. 그보다 훨씬 일찍부터 퇴역 군인들이 지원을 받았던 거 아냐?
-    26.27s  <ret> 발화 (turn3 첫 프레임)
-    26.51s  agent 발화 시작: <ret> 사실은 그 전에 전쟁 위험국(Bureau of War Risks)과 재향군인국(Veterans B
-    26.58s  user  발화 끝
-    28.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.84s]: Prior to 1930, veteran support was managed by the Bureau of War Risks 
-    43.35s  agent 발화 끝
-    44.18s  user  발화 시작: 그러면 천구백삼십년은 그냥 *부서*가 된 날짜라는 거네? 그게 더 말이 되는 것 같아. 재향군인국은 뭘 했어
-    50.79s  <ret> 발화 (turn5 첫 프레임)
-    51.03s  agent 발화 시작: <ret> 재향군인국은 제1차 세계 대전 참전 용사들에게 보상, 의료 서비스, 직업 재활을 제공했어요. 당시
-    51.15s  user  발화 끝
-    52.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.27s]: The Veterans Bureau provided compensation, medical care, and vocationa
-    55.37s  user  발화 시작: 응응.
-    55.86s  user  발화 끝
-    64.30s  agent 발화 끝
-    64.64s  user  발화 시작: 알겠어, 이제 좀 명확해졌네. 고마워, 브루날.
-    68.00s  agent 발화 시작: 천만에요. 때로는 좀 더 깊이 파고들면 더 완전한 그림을 얻을 수 있다는 걸 알 수 있어요, 그렇지 않나요?
-    68.01s  user  발화 끝
-    75.27s  agent 발화 끝
+     0.00s  user  발화 시작: 어디서 읽었는데, 재향군인부(Department of Veterans Affairs)가 생각보다 훨씬 일찍 
+     6.19s  <ret> 발화 (turn1 첫 프레임)
+     6.29s  user  발화 끝
+     6.59s  agent 발화 시작: <ret> 네, 재향군인부는 천구백삼십 년 7월 21일에 정식으로 설립되었어요. 읽으신 내용과 일치하는지 확
+     8.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: The United States Department of Veterans Affairs was established on Ju
+    17.86s  agent 발화 끝
+    17.99s  user  발화 시작: 1930년? 그거 좀… 늦네. 남북전쟁 즈음인 줄 알았어.
+    24.05s  <ret> 발화 (turn3 첫 프레임)
+    24.20s  agent 발화 시작: <ret> 맞아요, 의문 가지시는 게 당연해요. 의회는 천팔백팔십오 년에 국가 장애병사 자택(National
+    24.33s  user  발화 끝
+    26.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.55s]: The precursor to the Department of Veterans Affairs, the National Home
+    37.37s  user  발화 시작: 알았어, 1885년… 근데 그게 완전한 부처는 아니었지? 그냥 집이었잖아?
+    37.75s  agent 발화 끝
+    43.20s  <ret> 발화 (turn5 첫 프레임)
+    43.35s  agent 발화 시작: <ret> 네, 그 최초의 자택은 남북전쟁 당시 북군 참전 용사들을 위한 특별한 치료를 제공했어요. 하지만 
+    43.43s  user  발화 끝
+    45.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: The National Home for Disabled Soldiers provided domiciliary care for 
+    49.52s  user  발화 시작: 응응.
+    50.15s  user  발화 끝
+    53.92s  user  발화 시작: 그럼 1930년이 완전한 부처가 된 날짜인 거야?
+    53.92s  agent 발화 끝
+    57.50s  agent 발화 시작: 정확해요. 그때 오늘날 우리가 알고 있는 부처 형태로 발전하게 되었답니다. 모든 게 시간이 지나면서 발전한다
+    57.52s  user  발화 끝
+    69.56s  agent 발화 끝

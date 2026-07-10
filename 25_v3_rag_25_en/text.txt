@@ -64,44 +64,52 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about Jack Sock and Raffaella Reggi. What sport did they both ⟨ret@4.09s⟩ play?
-[  4.25s][moshi] They ⟦⚡SPAN@5.29s: Jack Sock and Raffaella Reggi were both professional tennis players.⟧ both competed professionally in… tennis.
-[  5.16s][user ] «backchannel» Yeah.
-[  7.53s][user ] Tennis, right? That's what I thought. But were they both equally ⟨ret@11.35s⟩ successful?
-[ 11.51s][moshi] Jack Sock achieved ⟦⚡SPAN@13.35s: Jack Sock reached a career-high ATP singles ranking of world No. 8, while Raffaella Reggi's highest WTA single⟧ a career-high ranking of… number eight.
-[ 15.39s][user ] Number eight? That’s pretty good. What about Reggi? Was she anywhere near ⟨ret@19.93s⟩ that?
-[ 20.25s][moshi] Raffaella Reggi’s ⟦⚡SPAN@21.77s: Raffaella Reggi achieved a career-high ranking of number 16 in the world.⟧ highest WTA singles ranking was… number sixteen.
-[ 26.38s][user ] Only forty-three? Wow, quite a difference. Still, forty-three is respectable.
-[ 31.75s][moshi] It absolutely is. Success looks different for everyone, and reaching that level takes tremendous dedication.
-[ 38.53s][user ] True. Did they ever play against each other? That seems ⟨ret@41.94s⟩ unlikely.
-[ 42.26s][moshi] Records indicate Jack ⟦⚡SPAN@43.94s: (no information found)⟧ Sock and Raffaella Reggi never competed… against each other, it could not be found.
-[ 49.19s][user ] Never? That's… strange, considering they both played the same sport professionally.
-[ 53.97s][moshi] It isn’t uncommon for players to have careers that don’t overlap directly in competition.
-[ 56.55s][user ] «backchannel» Yeah.
-[ 58.77s][user ] I guess not. What were their best…
-[ 62.82s][user ] …results in Grand Slam tournaments? Sock ⟨ret@65.54s⟩ first.
-[ 65.84s][moshi] Jack Sock’s ⟦⚡SPAN@66.90s: Jack Sock reached the fourth round of the 2017 US Open, which remains his best result in a Grand Slam tourname⟧ best Grand Slam result was reaching the fourth round of… …the two thousand seventeen US Open.
-[ 74.56s][user ] The French Open and Wimbledon? Not bad. ⟨ret@77.85s⟩ Reggi’s?
-[ 78.09s][moshi] Raffaella Reggi’s furthest advance ⟦⚡SPAN@79.85s: Raffaella Reggi’s best Grand Slam result was reaching the quarter-finals of the 1995 French Open.⟧ in a Grand Slam tournament was the quarter-finals of… …the nineteen ninety-five French Open.
-[ 85.71s][user ] The French Open, in nineteen ninety-one. That’s a long time ago.
-[ 89.27s][moshi] It speaks to a long and dedicated career, even if it was some time ago.
-[ 91.85s][user ] «backchannel» Yeah.
-[ 94.19s][user ] It does. What country are they both ⟨ret@95.96s⟩ from?
-[ 96.12s][moshi] Jack Sock is from ⟦⚡SPAN@97.96s: Raffaella Reggi and her opponent are both from Italy.⟧ the United States, and Raffaella Reggi is from… Italy.
-[102.34s][user ] Italy. Okay. Did they both start playing tennis as ⟨ret@105.73s⟩ children?
-[106.05s][moshi] Jack Sock began ⟦⚡SPAN@107.49s: Jack Sock began playing tennis at age seven, and Raffaella Reggi started at age nine.⟧ playing tennis at age seven, while Raffaella Reggi started at… age nine.
-[110.20s][user ] «backchannel» Mm-hmm.
-[112.45s][user ] Age five. Reggi started younger. What are their current coaching ⟨ret@116.37s⟩ situations?
-[116.77s][moshi] Jack Sock ⟦⚡SPAN@118.37s: Jack Sock is currently coached by Josh Goffi, and Raffaella Reggi is coached by Ricardo Sanchez.⟧ is currently coached by Josh Bascombe, and Raffaella Reggi’s last known coach was… Ricardo Sanchez.
-[125.90s][user ] Paolo Santini. Are they still actively coaching? ⟨ret@129.21s⟩
-[129.37s][moshi] As of ⟦⚡SPAN@130.81s: Raffaella Reggi’s last known coach was Ricardo Sanchez.⟧ late 2023, Jack Sock was recovering from injury, and Raffaella Reggi had retired from… professional tennis in 2004.
-[139.63s][user ] Retired. I see. Is Sock planning a ⟨ret@143.13s⟩ comeback?
-[143.29s][moshi] Jack Sock announced his ⟦⚡SPAN@145.13s: As of late 2023, Jack Sock was recovering from injury.⟧ intention to return to professional tennis in… two thousand and twenty-four.
-[150.33s][user ] Early twenty-twenty-four. That's good to hear. What about Reggi, is she involved in tennis ⟨ret@154.92s⟩ still?
-[155.24s][moshi] Following her ⟦⚡SPAN@156.92s: Raffaella Reggi had retired from professional tennis in 2004.⟧ retirement, Raffaella Reggi became a tennis commentator for… Italian television.
-[159.03s][user ] «backchannel» Uh-huh.
-[161.27s][user ] Italian television. That's a nice transition. One last thing – how tall are they?
-[167.24s][moshi] ⟨ret@167.16s⟩ Jack Sock’s ⟦⚡SPAN@168.28s: Jack Sock is 6 ft 3 in (191 cm) tall, and Raffaella Reggi is 5 ft 8 in (173 cm) tall.⟧ height is six feet three inches, while Raffaella Reggi is… five feet eight inches.
-[169.68s][user ] «backchannel» Mhm.
-[174.18s][user ] Five feet eight inches. Quite a difference in stature, too. Thanks, Zura.
-[178.31s][moshi] You’re very welcome. It’s good to explore these details and appreciate the journeys of these athletes.
+[  0.00s][user ] I was just reading about Jack Sock and Raffaella Reggi. What sport did they ⟨ret@3.76s⟩ both play?
+[  3.92s][moshi] They both competed in ⟦⚡SPAN@5.76s: Jack Sock and Raffaella Reggi both competed in professional tennis.⟧ professional tennis, Jack Sock and Raffaella Reggi. It takes real dedication to reach that level.
+[  6.08s][user ] «backchannel» Yeah.
+[ 11.13s][user ] Tennis, okay. But was Jack Sock better known for singles or doubles?
+[ 15.76s][moshi] ⟨ret@15.61s⟩ Jack Sock was more ⟦⚡SPAN@17.61s: Jack Sock achieved greater success in doubles, winning the 2018 Wimbledon men's doubles title.⟧ recognized for his doubles performance, especially winning Wimbledon in two thousand eighteen.
+[ 21.80s][user ] Wimbledon, huh? I didn’t realize that. Did Raffaella Reggi also win ⟨ret@26.11s⟩ Wimbledon?
+[ 26.43s][moshi] No, Raffaella Reggi ⟦⚡SPAN@28.11s: Raffaella Reggi did not win Wimbledon, but reached the quarter-finals of the 1995 Wimbledon Championships.⟧ didn't win Wimbledon, though she reached the quarter-finals in nineteen ninety-five. That’s still a significant achievement.
+[ 34.22s][user ] Quarter-finals is good. What about Grand Slam titles overall, for ⟨ret@37.66s⟩ Reggi?
+[ 38.06s][moshi] Raffaella Reggi won ⟦⚡SPAN@39.66s: Raffaella Reggi won one Grand Slam title, the 1995 Australian Open women's doubles.⟧ one Grand Slam title, the Australian Open women’s doubles in nineteen ninety-five.
+[ 44.73s][user ] Just one? That seems low for a professional. What about Sock—how many Grand Slams did *he* win?
+[ 50.54s][moshi] ⟨ret@50.38s⟩ Jack Sock won four Grand ⟦⚡SPAN@52.38s: Jack Sock has won four Grand Slam titles: three in doubles and one in mixed doubles.⟧ Slam titles overall, three in men’s doubles and one in mixed doubles.
+[ 57.01s][user ] Three doubles and one mixed… So he didn't win any in ⟨ret@60.35s⟩ singles then?
+[ 60.75s][moshi] That’s right, Jack Sock ⟦⚡SPAN@62.35s: Jack Sock did not win any Grand Slam titles in men's singles.⟧ didn’t win any Grand Slam titles in men’s singles competition.
+[ 63.35s][user ] «backchannel» Yeah.
+[ 66.17s][user ] Huh. Interesting. What country is Raffaella Reggi ⟨ret@69.54s⟩ from?
+[ 69.94s][moshi] Raffaella Reggi is from ⟦⚡SPAN@71.54s: Raffaella Reggi is from Italy.⟧ Italy. It’s wonderful to see athletes representing their home countries.
+[ 74.97s][user ] Italy, okay. And Jack Sock? Where does he represent?
+[ 78.42s][moshi] ⟨ret@78.34s⟩ Jack Sock represents the United ⟦⚡SPAN@80.34s: Jack Sock represents the United States of America in tennis.⟧ States of America in tennis. It’s a source of national pride, certainly.
+[ 86.17s][user ] The US. Were they ever on the same team, Reggi and ⟨ret@89.59s⟩ Sock?
+[ 89.83s][moshi] No, Jack Sock and ⟦⚡SPAN@91.35s: Jack Sock and Raffaella Reggi never played together as a team in any official competition.⟧ Raffaella Reggi never competed as a team in any official competition.
+[ 93.11s][user ] «backchannel» Really?
+[ 94.68s][user ] That's a shame. What’s Reggi doing now? Is she still involved in ⟨ret@98.31s⟩ tennis?
+[ 98.71s][moshi] Currently, Raffaella Reggi works ⟦⚡SPAN@100.31s: Raffaella Reggi is currently a tennis coach and commentator.⟧ as a tennis coach and commentator. It’s lovely to see athletes giving back.
+[102.55s][user ] «backchannel» Mm-hmm.
+[104.65s][user ] A coach… good for her. And Sock? Is he still playing ⟨ret@108.80s⟩ professionally?
+[109.04s][moshi] Jack Sock retired ⟦⚡SPAN@110.80s: Jack Sock retired from professional tennis in January 2024.⟧ from professional tennis in January of two thousand twenty-four. Transitions can be difficult, but also rewarding.
+[117.47s][user ] Retired already? Wow, time flies. When did Reggi ⟨ret@121.42s⟩ retire?
+[121.66s][moshi] Raffaella Reggi retired from ⟦⚡SPAN@123.42s: Raffaella Reggi retired from professional tennis in 1996.⟧ professional tennis in nineteen ninety-six. That was quite some time ago.
+[127.54s][user ] A long time ago. What was Reggi’s highest singles ranking?
+[131.70s][moshi] ⟨ret@131.62s⟩ Raffaella Reggi ⟦⚡SPAN@132.74s: Raffaella Reggi's highest singles ranking was number 16, achieved in February 1996.⟧ achieved a career-high singles ranking of sixteen in February of nineteen ninety-six.
+[137.93s][user ] Number sixteen isn’t bad. And what about Sock’s ⟨ret@141.10s⟩ peak ranking?
+[141.50s][moshi] Jack Sock’s highest singles ⟦⚡SPAN@143.10s: Jack Sock's highest singles ranking was number 8, achieved in November 2017.⟧ ranking was number eight, which he reached in November of two thousand seventeen.
+[144.97s][user ] «backchannel» Uh-huh.
+[147.50s][user ] Eight is pretty good! What's the difference in their career ⟨ret@150.69s⟩ earnings?
+[151.09s][moshi] Jack Sock earned ⟦⚡SPAN@152.69s: Jack Sock's career earnings are $6,886,272, while Raffaella Reggi's are $1,597,612.⟧ six million eight hundred eighty-six thousand two hundred seventy-two dollars, while Raffaella Reggi earned one million five hundred ninety-seven thousand six hundred twelve dollars.
+[155.31s][user ] «backchannel» Mhm.
+[163.00s][user ] A big difference. So…
+[166.44s][user ] …Sock made a lot more money. What was his most lucrative year?
+[169.48s][moshi] ⟨ret@169.40s⟩ Jack Sock’s most lucrative ⟦⚡SPAN@171.40s: Jack Sock’s most lucrative year was 2018, with earnings of $1,824,272.⟧ year was two thousand eighteen, earning him one million eight hundred twenty-four thousand two hundred seventy-two dollars.
+[174.99s][user ] «backchannel» Nice.
+[177.88s][user ] Two thousand eighteen. Anything special happen that year besides the ⟨ret@181.73s⟩ money?
+[182.13s][moshi] In two thousand eighteen, ⟦⚡SPAN@183.73s: In 2018, Jack Sock won the Wimbledon men's doubles title with Mike Bryan.⟧ Jack Sock won the Wimbledon men’s doubles title with Mike Bryan. A very successful year for him.
+[188.99s][user ] Doubles again. Well, that’s interesting. Is Reggi involved in any charity ⟨ret@193.98s⟩ work?
+[194.22s][moshi] ⟦⚡SPAN@194.48s: Raffaella Reggi supports the Fondazione Giulia Onlus, a charity for children with leukemia.⟧ Raffaella Reggi supports the Fondazione Giulia Onlus, a charity dedicated to children with leukemia. It's heartwarming to see that dedication.
+[199.75s][user ] «backchannel» Mm-hmm.
+[204.38s][user ] That’s very kind of her. What’s the biggest difference in their playing ⟨ret@208.09s⟩ styles?
+[208.33s][moshi] Jack Sock was ⟦⚡SPAN@210.09s: Jack Sock had a powerful serve and aggressive baseline game, while Raffaella Reggi was known for her consisten⟧ known for a powerful serve and aggressive style, while Raffaella Reggi focused on consistent groundstrokes.
+[215.89s][user ] Different approaches. Okay, that's all I wanted to know. Thanks, Zura.
+[219.17s][moshi] You’re very welcome. It's been a pleasure discussing these athletes with you.

@@ -64,27 +64,28 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, uh, I was reading this book…
-[  4.32s][user ] …and it mentioned… Big ⟨ret@5.92s⟩ Brother.
-[  6.23s][moshi] The concept ⟦⚡SPAN@7.92s: Big Brother is the protagonist of George Orwell’s dystopian novel *Nineteen Eighty-Four*, and symbolizes the o⟧ of “Big Brother” originates from George Orwell’s novel, Nineteen Eighty-Four… and represents the oppressive totalitarian regime of Oceania.
-[ 17.55s][user ] Nineteen Eighty-Four, right. I've heard of it, but I haven't actually read it.
-[ 21.39s][moshi] It’s a rather impactful work, exploring themes of surveillance and totalitarianism. A bit unsettling, honestly.
-[ 29.86s][user ] Sounds… intense. Was Orwell trying to predict the future, ⟨ret@33.43s⟩ or…?
-[ 33.67s][moshi] Orwell ⟦⚡SPAN@34.71s: George Orwell’s novel, Nineteen Eighty-Four, represents the oppressive totalitarian regime of Oceania.⟧ drew inspiration from his experiences during… …the post-war era and the rise of surveillance states. He wasn’t so much predicting as warning… the post-war era and the rise of surveillance states.
-[ 39.37s][user ] «backchannel» Mm-hmm.
-[ 48.81s][user ] A warning, huh? About governments watching people? ⟨ret@51.58s⟩
-[ 51.97s][moshi] Precisely. He ⟦⚡SPAN@53.50s: Orwell drew inspiration from his experiences during the post-war era and the rise of surveillance states.⟧ wanted to illustrate the dangers of unchecked power and the loss of individual freedom… unchecked power and the loss of individual freedom.
-[ 56.93s][user ] «backchannel» Yeah.
-[ 63.47s][user ] Hmm, that's pretty relevant even now…
-[ 67.98s][user ] …I guess. What about the term itself, though?
-[ 70.62s][moshi] ⟨ret@70.54s⟩ The term "Big ⟦⚡SPAN@72.54s: The term “1984” is often used to describe real-world events that resemble the totalitarian surveillance state ⟧ Brother" itself was inspired by… …a historical figure – Orwell’s recollection of a poster depicting Tsar Nicholas II during his childhood… a historical figure – Orwell’s recollection of a poster depicting Tsar Nicholas II during his childhood.
-[ 79.05s][user ] «backchannel» Mm-hmm.
-[ 91.01s][user ] Tsar Nicholas II? I didn’t expect that. So, it's a Russian ⟨ret@95.62s⟩ connection?
-[ 95.77s][moshi] Indeed. Orwell ⟦⚡SPAN@97.62s: George Orwell recalled a poster of Tsar Nicholas II from his childhood as the inspiration for the term "Big Br⟧ associated the image with a pervasive, controlling authority… Tsar Nicholas II.
-[ 99.55s][user ] «backchannel» Mhm.
-[103.58s][moshi] ⟨ret@103.34s⟩ The poster’s message ⟦⚡SPAN@105.11s: Orwell associated the image with a pervasive, controlling authority… Tsar Nicholas II.⟧ was meant to convey… …the Tsar’s omnipresence and watchful gaze over the Russian people… the Tsar’s omnipresence and watchful gaze over the Russian people.
-[115.05s][user ] That’s fascinating. It’s funny how things get repurposed over ⟨ret@118.13s⟩ time.
-[118.53s][moshi] It is, ⟦⚡SPAN@120.13s: The poster’s message was meant to convey the Tsar’s omnipresence and watchful gaze over the Russian people.⟧ isn’t it? Language evolves, and meanings shift with the cultural context… the Tsar’s omnipresence and watchful gaze over the Russian people.
-[126.12s][user ] «backchannel» Mm-hmm.
-[129.15s][user ] Yeah. Well, thanks for explaining all that, Braera. That was really helpful.
-[132.67s][moshi] You’re very welcome. It’s good to understand the roots of these cultural touchstones.
+[  0.00s][user ] I was just wondering… where did the name “Big Brother” come from?…
+[  5.34s][user ] …… I think I heard it had something to do with ⟨ret@8.37s⟩ a book?
+[  8.69s][moshi] The term originates ⟦⚡SPAN@10.37s: Nineteen Eighty-Four is a dystopian novel published in 1949, written by George Orwell.⟧ from George Orwell’s novel, *Nineteen Eighty-Four*. It refers to the omnipresent leader of the totalitarian state. It’s a rather chilling concept, isn’t it?
+[ 21.57s][user ] Oh, nineteen forty-nine, that's interesting. Uhhh, was Orwell trying to make a point about something specific with that name?
+[ 28.86s][moshi] Orwell was deeply concerned with the rise of surveillance and totalitarian regimes. The name “Big Brother” was intended to evoke a sense of constant monitoring and control, a loss of personal freedom.
+[ 43.62s][user ] So, it wasn’t just a random choice then? It was a deliberate metaphor?
+[ 48.43s][moshi] It’s a powerful symbol of government overreach and the dangers of unchecked power. He drew inspiration from his experiences and observations of the time.
+[ 52.60s][user ] «backchannel» Mm-hmm.
+[ 59.61s][user ] Hmm, that makes sense. I think I remember reading something about his time in Burma…
+[ 65.02s][moshi] You are quite right to recall that. Orwell served in the Indian Imperial Police in Burma during the 1920s. That experience exposed him to the realities of colonial power and social injustice.
+[ 70.27s][user ] «backchannel» Oh.
+[ 79.34s][user ] That’s… wow. It’s amazing how personal…
+[ 84.33s][user ] …experiences can shape such influential works.
+[ 87.53s][moshi] It often is, isn't it? A writer’s perspective is always colored by their own life and understanding of the world. It adds layers of meaning to their work.
+[ 98.00s][user ] I wonder if he could have imagined how relevant it would still be today, with all the… well, with everything going on.
+[104.33s][moshi] It’s a testament to the enduring power of his writing that the themes of *Nineteen Eighty-Four* continue to resonate. It’s a cautionary tale that remains strikingly relevant.
+[109.58s][user ] «backchannel» Mhm.
+[115.17s][moshi] It’s a reminder to be vigilant about protecting our freedoms and challenging those who seek to control us. It’s a responsibility we all share.
+[119.47s][user ] «backchannel» Right.
+[125.06s][user ] Do you think it’s become… overused, though? Like, everyone calls everything “Big Brother” now.
+[130.30s][moshi] It’s true the phrase has become somewhat diluted through overuse. However, that doesn't diminish the original power of the concept, even if it’s become a bit of a cliché.
+[142.95s][user ] That’s a good point. Maybe it's good that it’s a widely recognized warning, even if it's… common.
+[148.23s][moshi] Precisely. Familiarity can breed awareness. The more people recognize the reference, the more likely they are to consider its implications.
+[159.47s][user ] Well, thanks, Braera. That was really helpful.
+[161.75s][moshi] You’re very welcome. I’m glad I could offer some insight into the origins of that phrase. It’s a fascinating piece of literary history.

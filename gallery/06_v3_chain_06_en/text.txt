@@ -64,30 +64,35 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.73s][moshi] ⟨ret@4.65s⟩ I’ve set the ⟦⚡SPAN@6.65s: (tool result) The user agent should be set to MyCustomBrowser version 10.5.⟧ user agent to MyCustomBrowser version…ten point five… ten point five.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 12.16s][user ] Okay, uh, good. Now can you go to ⟨ret@14.66s⟩ example.com?
-[ 14.90s][moshi] ⟦⚡SPAN@15.16s: (tool result) The user agent was previously set to MyCustomBrowser version ten point five.⟧ I’m navigating to example.com now…and the page has loaded… and the page has loaded.
-      CALL: {"function": "browser_go_to", "arguments": {"url": "example.com"}}
-[ 18.06s][user ] «backchannel» Yeah.
-[ 20.56s][user ] What’s the title of that ⟨ret@21.91s⟩ page?
-[ 22.23s][moshi] The title of ⟦⚡SPAN@23.91s: (tool result) The page at example.com is titled “Example Domain”.⟧ the page is…Example Domain… Example Domain.
-      CALL: {"function": "browser_get_title", "arguments": {}}
-[ 26.54s][user ] Hmm, okay. Can you search for "best budgeting apps" on ⟨ret@29.59s⟩ Google?
-[ 29.99s][moshi] I’ve ⟦⚡SPAN@30.63s: (no information found)⟧ searched Google for “best budgeting apps”…here are the results… …but I could not be found.
-      CALL: {"function": "browser_search", "arguments": {"query": "best budgeting apps"}}
-[ 32.25s][user ] «backchannel» Yeah.
-[ 35.56s][moshi] Many articles discuss Mint, YNAB, and Personal Capital…they seem popular.
-[ 41.35s][user ] Actually, could you open YNAB in a new tab?
-[ 44.77s][moshi] ⟨ret@44.53s⟩ I’m opening YNAB ⟦⚡SPAN@46.53s: (tool result) Many articles discuss Mint, YNAB, and Personal Capital…they seem popular.⟧ in a new tab…the page is loading… the page is loading.
-      CALL: {"function": "browser_go_to", "arguments": {"url": "https://www.ynab.com"}}
-[ 51.32s][user ] What’s their current pricing for a ⟨ret@53.38s⟩ single user?
-[ 53.78s][moshi] The current ⟦⚡SPAN@55.38s: (tool result) YNAB’s annual subscription costs $99, or $14.99 per month.⟧ price for a single YNAB user is…$14.99 per month… $99 annually, or $14.99 per month.
-      CALL: {"function": "browser_get_text", "arguments": {"selector": ".pricing-single-user"}}
-[ 63.75s][user ] Okay, that’s a bit high. Can you remind me on the first of next month to re-evaluate my ⟨ret@68.55s⟩ budget?
-[ 68.62s][moshi] I’ve set a reminder ⟦⚡SPAN@70.55s: (no information found)⟧ for July first…to re-evaluate your budget… could not be found.
-      CALL: {"function": "create_reminder", "arguments": {"date": "2024-07-01", "text": "Re-evaluate budget"}}
-[ 72.72s][user ] «backchannel» Really?
-[ 74.92s][user ] Thanks, that’s really helpful. I think that’s all for now.
-[ 77.35s][moshi] You're very welcome. It’s good to take regular stock of your finances—it makes a big difference.
+[  0.00s][user ] I'm trying to get a better handle on my spending.
+[  2.71s][moshi] It's good you're taking control of your finances. I can certainly help with that.
+[  7.20s][user ] Well, first, could you tell me the current price of ⟨ret@10.35s⟩ Tesla stock?
+[ 10.66s][moshi] Tesla is currently ⟦⚡SPAN@12.35s: (tool result) TSLA (Tesla Inc.) is trading at $177.52 USD (+0.8% today) right now.⟧ trading at one hundred seventy-seven dollars and fifty-two cents, up point eight percent today.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"symbol": "TSLA"}}
+[ 14.61s][user ] «backchannel» Yeah.
+[ 17.52s][user ] Hmm, okay. And what's the weather like in Seoul right ⟨ret@20.47s⟩ now?
+[ 20.71s][moshi] ⟦⚡SPAN@20.97s: (tool result) 28.3°C, humidity 68%, wind 7.2 km/h⟧ It's twenty-eight point three degrees Celsius in Seoul, with sixty-eight percent humidity and a seven point two kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 24.88s][user ] «backchannel» Yeah.
+[ 28.18s][user ] That sounds… warm. I’m actually planning a trip there next month.
+[ 32.18s][moshi] That's exciting! Planning ahead is a smart move.
+[ 35.58s][user ] I need to find a hotel. Something reasonably priced, near Myeongdong.
+[ 39.64s][moshi] ⟨ret@39.56s⟩ I found L7 ⟦⚡SPAN@41.56s: (tool result) L7 Myeongdong by LOTTE (37.5658, 126.9748), Nine Tree Premier Hotel Myeongdong II (37.5662, 126.⟧ Myeongdong, Nine Tree Premier Hotel, and T Hotel near Myeongdong.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Myeongdong, Seoul"}}
+[ 45.63s][user ] Can you check availability at L7 Myeongdong for, say, October twentieth to ⟨ret@50.39s⟩ twenty-fifth?
+[ 50.79s][moshi] L7 ⟦⚡SPAN@51.59s: (tool result) L7 Myeongdong by LOTTE: Standard Room (150,000 KRW/night), Deluxe Room (200,000 KRW/night), Suit⟧ Myeongdong has standard rooms for one hundred fifty thousand won, deluxe for two hundred thousand, and suites for three hundred thousand won per night, and it's available.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"hotel_name": "L7 Myeongdong by LOTTE", "check_in_date": "2026-10-20", "check_out_date": "2026-10-25"}}
+[ 60.88s][user ] Okay, book a standard room for those dates, please.
+[ 63.70s][moshi] ⟨ret@63.46s⟩ I’ve booked a ⟦⚡SPAN@65.46s: (tool result) L7 Myeongdong, Standard Room, Oct 20-25, 750000 KRW, confirmation id: 89XZ27⟧ standard room at L7 Myeongdong from October twentieth to twenty-fifth for seven hundred fifty thousand won. Your confirmation ID is 89XZ27.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"hotel_name": "L7 Myeongdong by LOTTE", "check_in_date": "2026-10-20", "check_out_date": "2026-10-25", "room_type": "Standard Room"}}
+[ 74.42s][user ] Great! Now, how about restaurants? Something good, also near ⟨ret@78.20s⟩ Myeongdong.
+[ 78.60s][moshi] ⟦⚡SPAN@78.70s: (tool result) Myeongdong Kyoja (Korean, 37.5666, 126.9755), Wangbijib Myeongdong Main Store (Korean BBQ, 37.56⟧ I see Myeongdong Kyoja, Wangbijib, and Oreno Ramen are good options near Myeongdong.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Myeongdong, Seoul"}}
+[ 81.99s][user ] «backchannel» Yeah.
+[ 84.75s][user ] Hmm, tell me more about Myeongdong Kyoja.
+[ 87.29s][moshi] ⟨ret@87.21s⟩ Myeongdong Kyoja serves knife-cut ⟦⚡SPAN@89.21s: (tool result) Myeongdong Kyoja: 칼국수 (knife-cut noodles), 만두 (dumplings), 37.5666, 126.9755, rating 4.5/5⟧ noodles and dumplings. It’s located at thirty-seven point five six six six, one hundred twenty-six point nine seven five five, and has a four point five star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Myeongdong Kyoja", "location": "Myeongdong, Seoul"}}
+[100.62s][user ] That sounds perfect. Okay, I think that's everything for now.
+[103.80s][moshi] Wonderful! You’re all set with your hotel and have a great restaurant option.
+[108.01s][user ] Thanks so much for your help, Lio.
+[109.77s][moshi] You're very welcome. Enjoy your trip to Seoul.

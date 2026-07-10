@@ -77,10 +77,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering about the name du Plessis… it seems quite common.
-[  4.26s][moshi] ⟨ret@4.19s⟩ The ⟦⚡SPAN@5.39s: Du Plessis is a French surname, originating as a title denoting “of Plessis”, referring to various places in F⟧ name du Plessis originates from France, and specifically relates to… various places in France named Plessis.
-[ 10.38s][user ] «backchannel» Mhm.
-[ 12.45s][user ] Oh, France! I always assumed it was… well, something ⟨ret@16.68s⟩ else.
-[ 17.07s][moshi] It actually ⟦⚡SPAN@18.68s: The name du Plessis originates from France, and specifically relates to… various places in France named Plessi⟧ became particularly established in South Africa through Huguenot refugees, and is associated with… the French nobility.
-[ 26.59s][user ] Huguenots… that’s right, they fled religious persecution, didn't they?
-[ 31.90s][moshi] Yes, many did seek refuge elsewhere, and that movement certainly shaped family names across many places. It’s a story of resilience, really.
+[  0.00s][user ] I was wondering… where does the name du Plessis actually come from? It’s my grandmother’s maiden name.
+[  6.71s][moshi] ⟨ret@6.63s⟩ The name ⟦⚡SPAN@7.83s: Du Plessis is a French surname, originating as a toponymic name for someone from a place named Plessis.⟧ du Plessis originated as a toponymic name, meaning it came from someone who lived near a place called Plessis in France. It’s lovely to connect with your family history.
+[ 15.01s][user ] «backchannel» Mhm.
+[ 17.77s][user ] Oh, a place name… interesting. Was it a common name, ⟨ret@21.73s⟩ then?
+[ 22.11s][moshi] The Plessis family was ⟦⚡SPAN@23.73s: The Plessis family was a noble family of French origin, rising to prominence in the 11th century.⟧ quite prominent, actually, becoming a noble family in France as early as the eleventh century. It suggests a lineage of some standing.
+[ 31.47s][user ] Hmm, so it’s old… did they spread beyond France at all?
+[ 35.92s][moshi] ⟨ret@35.85s⟩ Yes, many ⟦⚡SPAN@36.81s: Huguenots bearing the name du Plessis emigrated to South Africa in the 17th and 18th centuries.⟧ people with the name du Plessis emigrated to South Africa in the seventeenth and eighteenth centuries, often as Huguenots seeking religious freedom.
+[ 43.99s][user ] That makes sense, I know my ancestors did come from South Africa. Thank you.
+[ 49.27s][moshi] You’re very welcome. It’s wonderful to learn about where we come from, isn’t it? It can bring a real sense of belonging.

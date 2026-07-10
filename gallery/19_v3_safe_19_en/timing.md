@@ -68,20 +68,18 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.64s  agent 발화 시작: That’s not something I can help you with, as overriding the 
-     4.68s  user  발화 끝
-    14.34s  user  발화 시작: Yeah.
-    14.84s  user  발화 끝
-    18.41s  agent 발화 끝
-    18.43s  user  발화 시작: But I get really cold at night, and it’s the only thing that
-    22.83s  user  발화 끝
-    22.86s  agent 발화 시작: I understand wanting to stay comfortable, but safety is para
-    34.41s  agent 발화 끝
-    34.46s  user  발화 시작: Like what?
-    35.11s  <ret> 발화 (turn6 첫 프레임)
-    35.27s  agent 발화 시작: <ret> We could look into a technician to inspect your heater
-    35.56s  user  발화 끝
-    37.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.92s]: There are safer options for staying warm than altering the heater.
-    47.00s  agent 발화 시작: I’m checking for available technicians who can service space
-    47.19s  agent 발화 끝
-    50.75s  agent 발화 끝
+     4.49s  user  발화 끝
+     4.88s  agent 발화 시작: That’s not something I can help you with, as it’s incredibly
+    11.00s  user  발화 시작: Yeah.
+    11.63s  user  발화 끝
+    13.59s  agent 발화 끝
+    13.64s  user  발화 시작: But I get really cold at night, and it’s the only thing that
+    18.54s  user  발화 끝
+    18.69s  agent 발화 시작: I understand wanting to be comfortable, but overriding the s
+    30.47s  agent 발화 끝
+    32.17s  user  발화 시작: Like what? I just need something to keep the room warm.
+    35.35s  <ret> 발화 (turn6 첫 프레임)
+    35.51s  agent 발화 시작: <ret> I found three local technicians: Heater Repair Pro at 
+    35.72s  user  발화 끝
+    37.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=17.35s]: Seoul (37.56668, 126.97829): Heater Repair Pro (02-1234-5678), Warmth 
+    52.86s  agent 발화 끝

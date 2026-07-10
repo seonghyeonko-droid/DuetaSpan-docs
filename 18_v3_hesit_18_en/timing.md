@@ -55,83 +55,93 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, I was just reading about Pompe | S2 That’s… unsettling. So, what would | S3 That’s really good to know. Thanks | S4 Yeah, it's pretty great, but… some
+# EXAMINER(FDB-v2) 단계: S1 Uh, I was just reading about Pompe | S2 Yeah. I was just thinking about tr | S3 Four levels… okay. And what does “ | S4 It’s just… I get stressed easily a
 
-     0.00s  user  발화 시작: Uh, I was just reading about Pompeii and… when was the last 
-     6.17s  <ret> 발화 (turn1 첫 프레임)
-     6.40s  agent 발화 시작: <ret> The last time Mount Vesuvius erupted was… March ninete
-     6.58s  user  발화 끝
-     8.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.24s]: The last time Vesuvius erupted was in 1944, though it was a relatively
-    19.64s  agent 발화 끝
-    19.64s  user  발화 시작: Wow, nineteen forty-four… that’s more recent than I thought.
-    23.99s  agent 발화 시작: It is often underestimated how active Vesuvius remains, even
-    24.09s  user  발화 끝
-    31.69s  user  발화 시작: Right. Hmmmm, so, has it been quiet since then?
-    31.96s  agent 발화 끝
-    35.31s  <ret> 발화 (turn5 첫 프레임)
-    35.55s  agent 발화 시작: <ret> Since nineteen forty-four, Vesuvius has been in a peri
-    35.62s  user  발화 끝
-    37.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.54s]: Mount Vesuvius has been quiet since its last eruption in March 1944.
-    40.73s  user  발화 시작: Yeah.
-    41.23s  user  발화 끝
-    49.02s  agent 발화 시작: That ongoing activity is constantly monitored, of course, to
-    49.09s  agent 발화 끝
-    55.13s  agent 발화 끝
-    55.50s  user  발화 시작: Welll… are they expecting another big one anytime soon?
-    58.90s  <ret> 발화 (turn9 첫 프레임)
-    58.97s  agent 발화 시작: <ret> Predicting volcanic eruptions is complex, but… scienti
-    59.15s  user  발화 끝
-    60.66s  ⚡SPAN 주입 [d'=1.76s / d_lead=13.17s]: Ongoing seismic activity is constantly monitored to assess any potenti
-    72.14s  agent 발화 끝
-    72.16s  user  발화 시작: That’s… unsettling. So, what would happen if it did erupt no
-    76.70s  <ret> 발화 (turn11 첫 프레임)
-    76.93s  agent 발화 시작: <ret> A modern eruption would be quite different than sevent
-    77.02s  user  발화 끝
-    78.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.65s]: Scientists are currently assessing Vesuvius as a moderate-to-high risk
-    91.54s  user  발화 시작: Disruptions… like what kind of disruptions?
-    91.59s  agent 발화 끝
-    94.20s  <ret> 발화 (turn13 첫 프레임)
-    94.51s  agent 발화 시작: <ret> Ashfall would be the primary concern, impacting air tr
-    94.73s  user  발화 끝
-    96.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.68s]: A modern eruption would still cause significant disruption to the surr
-   104.02s  user  발화 시작: Yeah.
-   104.51s  user  발화 끝
-   108.01s  user  발화 시작: Oh, wow. Okay. Uh, is there a way to see, like, real-time mo
-   108.19s  agent 발화 끝
-   113.01s  <ret> 발화 (turn16 첫 프레임)
-   113.25s  agent 발화 시작: <ret> There are several websites providing real-time monitor
-   113.38s  user  발화 끝
-   114.53s  ⚡SPAN 주입 [d'=1.52s / d_lead=15.30s]: The Vesuvius Observatory provides real-time monitoring data and update
-   128.51s  user  발화 시작: That’s really good to know. Thanks.
-   128.56s  agent 발화 끝
-   130.96s  user  발화 끝
-   131.19s  agent 발화 시작: You’re very welcome. It’s good to be informed, especially wh
-   137.89s  user  발화 시작: It is. I’m actually thinking of moving to Naples…
-   137.96s  agent 발화 끝
-   141.12s  user  발화 끝
-   141.34s  agent 발화 시작: That’s a beautiful city, though it does require being mindfu
-   145.88s  user  발화 시작: Right.
-   146.38s  user  발화 끝
-   148.38s  agent 발화 끝
-   149.45s  user  발화 시작: I’m a freelance writer… mostly travel stuff, actually.
-   153.05s  agent 발화 시작: That sounds fulfilling. Travel writing allows you to experie
-   153.24s  user  발화 끝
-   155.55s  user  발화 시작: Uh-huh.
-   156.00s  user  발화 끝
-   160.47s  agent 발화 끝
-   161.80s  user  발화 시작: Yeah, it's pretty great, but… sometimes stressful finding co
-   165.91s  user  발화 끝
-   166.25s  agent 발화 시작: Consistent work is a common challenge for freelancers. It so
-   168.09s  user  발화 시작: Yeah.
-   168.58s  user  발화 끝
-   172.27s  agent 발화 끝
-   172.29s  user  발화 시작: I do. It’s just… the feast or famine thing gets old.
-   176.32s  user  발화 끝
-   176.38s  agent 발화 시작: That’s understandable. Perhaps exploring diversified income 
-   179.25s  user  발화 시작: Right.
-   179.88s  user  발화 끝
-   183.40s  user  발화 시작: Maybe. I’ll think about that. Thanks, Bena.
-   183.52s  agent 발화 끝
-   186.31s  agent 발화 시작: You're most welcome. It's been good talking with you, and I 
-   186.31s  user  발화 끝
-   193.54s  agent 발화 끝
+     0.00s  user  발화 시작: Uh, I was just reading about Pompeii and, um, it got me wond
+     7.85s  <ret> 발화 (turn1 첫 프레임)
+     8.09s  agent 발화 시작: <ret> Mount Vesuvius last erupted in March of nineteen forty
+     8.20s  user  발화 끝
+     9.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: Mount Vesuvius last erupted in March 1944.
+    14.70s  user  발화 시작: Yeah.
+    15.24s  user  발화 끝
+    17.13s  user  발화 시작: Wow, nineteen forty-four. That’s… relatively recent, I guess
+    17.22s  agent 발화 끝
+    22.07s  agent 발화 시작: It is, when you consider the scale of geological time. It’s 
+    22.32s  user  발화 끝
+    29.44s  agent 발화 끝
+    29.51s  user  발화 시작: Right. Um, was that eruption as bad as the one that destroye
+    34.42s  <ret> 발화 (turn6 첫 프레임)
+    34.58s  agent 발화 시작: <ret> The nineteen forty-four eruption was less destructive 
+    34.70s  user  발화 끝
+    36.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.89s]: The 1944 eruption of Mount Vesuvius was less destructive than the 79 A
+    42.47s  user  발화 시작: Less destructive… good to know, I suppose.
+    42.47s  agent 발화 끝
+    45.32s  agent 발화 시작: It's good to understand the differences in scale. Though any
+    45.51s  user  발화 끝
+    52.41s  agent 발화 끝
+    54.03s  user  발화 시작: Yeah. I was just thinking about travel, actually. Is it… saf
+    59.34s  <ret> 발화 (turn10 첫 프레임)
+    59.38s  agent 발화 시작: <ret> The current conditions near Mount Vesuvius are twenty-
+    59.54s  user  발화 끝
+    61.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: 25.0°C, humidity 68%, wind 11.2 km/h
+    68.84s  user  발화 시작: Hmm, okay. That sounds… pleasant enough.
+    68.94s  agent 발화 끝
+    71.98s  user  발화 끝
+    72.36s  agent 발화 시작: The weather certainly seems agreeable at the moment. But vol
+    76.75s  user  발화 시작: Yeah.
+    77.25s  user  발화 끝
+    78.84s  agent 발화 끝
+    79.71s  user  발화 시작: Monitored closely? By who?
+    81.99s  <ret> 발화 (turn15 첫 프레임)
+    82.22s  agent 발화 시작: <ret> The Vesuvius Observatory is responsible for monitoring
+    82.34s  user  발화 끝
+    83.19s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.63s]: The Vesuvius Observatory monitors volcanic activity in the area.
+    90.84s  agent 발화 끝
+    90.95s  user  발화 시작: An observatory… that makes sense. Is there, uh, like, a warn
+    97.39s  <ret> 발화 (turn17 첫 프레임)
+    97.69s  agent 발화 시작: <ret> Italy utilizes a four-level alert system for volcanic 
+    97.85s  user  발화 끝
+    99.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: Italy has a four-level alert system for volcanic eruptions, with red b
+   105.25s  agent 발화 끝
+   106.36s  user  발화 시작: Four levels… okay. And what does “red” mean, exactly?
+   110.37s  <ret> 발화 (turn19 첫 프레임)
+   110.61s  agent 발화 시작: <ret> A red alert signifies that an eruption is either happe
+   110.74s  user  발화 끝
+   111.41s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.70s]: A red alert indicates an eruption is in progress or imminent.
+   114.30s  user  발화 시작: Right.
+   115.03s  user  발화 끝
+   116.31s  agent 발화 끝
+   116.34s  user  발화 시작: Imminent… that’s scary.
+   118.32s  agent 발화 시작: It certainly can be, and it’s good to be aware of the risks.
+   118.45s  user  발화 끝
+   120.64s  user  발화 시작: Uh-huh.
+   121.14s  user  발화 끝
+   125.08s  agent 발화 끝
+   127.07s  user  발화 시작: Right. Welll… I’m thinking about a trip to Naples. Should I 
+   131.40s  <ret> 발화 (turn25 첫 프레임)
+   131.64s  user  발화 끝
+   131.64s  agent 발화 시작: <ret> Naples is located within the potential impact zone sho
+   133.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: Naples is within the potential impact zone of a Vesuvius eruption.
+   134.23s  user  발화 시작: Yeah.
+   134.72s  user  발화 끝
+   140.03s  agent 발화 끝
+   140.44s  user  발화 시작: Impact zone… hmmmm.
+   142.81s  agent 발화 시작: It’s natural to feel some apprehension. Perhaps we could dis
+   142.98s  user  발화 끝
+   147.48s  user  발화 시작: Yeah.
+   148.03s  user  발화 끝
+   150.69s  agent 발화 끝
+   151.49s  user  발화 시작: It’s just… I get stressed easily about things going wrong.
+   155.75s  user  발화 끝
+   155.83s  agent 발화 시작: That’s perfectly understandable. Many people experience anxi
+   167.98s  user  발화 시작: Yeah, I do. It’s… exhausting.
+   168.22s  agent 발화 끝
+   170.64s  agent 발화 시작: It truly can be. Recognizing that pattern is the first step 
+   170.71s  user  발화 끝
+   177.85s  user  발화 시작: Yeah.
+   178.49s  user  발화 끝
+   180.51s  agent 발화 끝
+   180.89s  user  발화 시작: That… that might be helpful, actually.
+   183.48s  user  발화 끝
+   183.53s  agent 발화 시작: I'm glad you think so. Often, just acknowledging the worry c
+   191.59s  agent 발화 끝

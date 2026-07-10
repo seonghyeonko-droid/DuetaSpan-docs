@@ -30,7 +30,7 @@
 #     {
 #       "date": "2026-02-24",
 #       "category": "home",
-#       "text": "User's home address is 982 Cedar Lane."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     },
 #     {
 #       "date": "2026-01-24",
@@ -61,9 +61,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 데어데블 시즌 삼은 언제 나오나요?
-     2.17s  <ret> 발화 (turn1 첫 프레임)
-     2.42s  agent 발화 시작: <ret> 데어데블 시즌 삼은… 이천십팔년에 공개되었습니다… 이천십팔년에 공개되었습니다. 찾을 수 없습니다.
-     2.59s  user  발화 끝
-     4.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (no information found)
-    10.52s  agent 발화 끝
+     0.00s  user  발화 시작: 데어데블 시즌 삼는 언제 나오나요?
+     2.34s  <ret> 발화 (turn1 첫 프레임)
+     2.58s  agent 발화 시작: <ret> 데어데블 시즌 삼는 이천십팔년 십월 이십육일에 공개되었습니다. 새로운 시즌을 기대하셨군요.
+     2.58s  user  발화 끝
+     4.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: Daredevil season 3 was released on October 26, 2018.
+     9.58s  agent 발화 끝

@@ -51,15 +51,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you. I’m Aril, and I h
-     7.27s  agent 발화 끝
-     8.56s  user  발화 시작: Aril… that’s a pretty name. I’m just feeling a bit lost, hon
-    15.88s  user  발화 끝
-    16.09s  agent 발화 시작: That’s perfectly understandable, Lucia. San Francisco can be
-    19.70s  user  발화 시작: Wow.
-    20.52s  user  발화 끝
-    25.74s  user  발화 시작: Uhhh, I guess… putting myself out there? It feels awkward, y
-    25.82s  agent 발화 끝
-    32.97s  agent 발화 시작: It absolutely does feel awkward! Many people struggle with t
-    33.11s  user  발화 끝
-    42.66s  agent 발화 끝
+     0.00s  agent 발화 시작: Lucia, hello!
+     1.42s  agent 발화 끝
+     1.70s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a little lost,
+     8.33s  agent 발화 시작: It’s perfectly normal to feel that way, Lucia. Life changes,
+     8.41s  user  발화 끝
+    17.61s  agent 발화 끝
+    18.17s  user  발화 시작: Welll… I moved recently, and everyone seems to already *have
+    26.23s  user  발화 끝
+    26.54s  agent 발화 시작: That’s a very relatable feeling. It takes courage to put you
+    35.40s  agent 발화 끝

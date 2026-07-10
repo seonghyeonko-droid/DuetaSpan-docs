@@ -64,12 +64,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about government agencies… when was the Department of Veterans Affairs actually ⟨ret@6.06s⟩ created?
-[  6.37s][moshi] The Department ⟦⚡SPAN@7.42s: The Department of Veterans Affairs was established on August 9, 1930, by President Herbert Hoover.⟧ of Veterans Affairs was established on August ninth… nineteen thirty, by President Hoover. It's interesting how long it took to formally recognize that need.
-[ 16.62s][user ] Nineteen thirty? That seems… late. Didn’t veterans need support much earlier than that?
-[ 22.50s][moshi] ⟨ret@22.10s⟩ Support was managed ⟦⚡SPAN@24.10s: Prior to 1930, veteran support was managed by the Bureau of War Risks and the Veterans Bureau, established in ⟧ earlier, actually, by the Bureau of War Risks and the Veterans Bureau… established in nineteen twenty-one. It’s good to question assumptions about timelines.
-[ 33.03s][user ] So, the nineteen thirty date is just when it became a *department*? That makes more sense. What did the Veterans Bureau do?
-[ 40.67s][moshi] ⟨ret@40.27s⟩ The Veterans Bureau ⟦⚡SPAN@42.27s: The Veterans Bureau provided compensation, medical care, and vocational rehabilitation for World War I veteran⟧ provided compensation, medical care, and vocational rehabilitation… for veterans of World War One. A lot of returning service members needed assistance then.
-[ 44.22s][user ] «backchannel» Right.
-[ 51.64s][user ] Okay, that clarifies things. Thanks, Brunal.
-[ 54.04s][moshi] You’re very welcome. Sometimes digging a little deeper reveals a more complete picture, doesn't it?
+[  0.00s][user ] I read somewhere the Department of Veterans Affairs was started much earlier than I ⟨ret@4.11s⟩ thought.
+[  4.42s][moshi] The Department ⟦⚡SPAN@5.47s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ of Veterans Affairs was formally established on July twenty-first, nineteen thirty. Does that align with what you read?
+[ 12.33s][user ] Nineteen thirty? That seems… late. I thought it was around the time of the Civil War.
+[ 18.02s][moshi] ⟨ret@17.62s⟩ You are right ⟦⚡SPAN@19.62s: The precursor to the Department of Veterans Affairs, the National Home for Disabled Soldiers, was authorized b⟧ to question that. Congress authorized the National Home for Disabled Soldiers in eighteen eighty-five, a clear predecessor.
+[ 26.36s][user ] Okay, so eighteen eighty-five… but that wasn’t the full department, right? It was just a home?
+[ 31.47s][moshi] ⟨ret@31.07s⟩ Yes, that initial home ⟦⚡SPAN@33.07s: The National Home for Disabled Soldiers provided domiciliary care for Union veterans of the Civil War.⟧ provided care specifically for Union veterans of the Civil War. It was a vital first step, though.
+[ 35.48s][user ] «backchannel» Yeah.
+[ 38.50s][user ] So, the nineteen thirty date is when it became a full department, then?
+[ 42.40s][moshi] Precisely. It was then that it evolved into the department as we know it today. A good reminder that things often develop over time, doesn’t it?

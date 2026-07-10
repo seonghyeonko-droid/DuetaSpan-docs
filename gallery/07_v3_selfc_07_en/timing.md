@@ -76,87 +76,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Hmm, that's reasonable. What about | S3 Yes, please. And could you check i | S4 Okay.
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Could you find some restaurants ne | S3 Is there a coffee shop on Oak Aven | S4 I feel much less stressed now.
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     6.38s  <ret> 발화 (turn1 첫 프레임)
-     6.62s  agent 발화 시작: <ret> I’m scheduling a viewing for The Grandview Lofts on Ju
-     6.85s  user  발화 끝
-     7.90s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.61s]: (tool result) Please confirm your desired viewing date for The Grandvi
-    12.23s  agent 발화 끝
-    12.44s  user  발화 시작: Great. And could you find out…
-    14.99s  user  발화 끝
-    16.56s  user  발화 시작: …what the pet policy is there?
-    18.20s  <ret> 발화 (turn4 첫 프레임)
-    18.36s  agent 발화 시작: <ret> Let me check the pet policy for The Grandview Lofts… p
-    18.55s  user  발화 끝
-    20.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.70s]: (tool result) The Grandview Lofts welcomes pets with a maximum weight 
-    28.06s  agent 발화 끝
-    28.48s  user  발화 시작: Okay.
-    28.94s  <ret> 발화 (turn6 첫 프레임)
-    29.11s  user  발화 끝
-    29.18s  agent 발화 시작: <ret> The Grandview Lofts allows cats and dogs under fifty p
-    30.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: [{"petTypesAllowed": ["cats", "dogs"], "weightLimit": "50 lbs", "petFe
-    35.89s  agent 발화 끝
-    35.97s  user  발화 시작: Hmm, that's reasonable. What about parking?
-    38.54s  <ret> 발화 (turn8 첫 프레임)
-    38.70s  agent 발화 시작: <ret> I’m looking up the parking information for The Grandvi
-    38.88s  user  발화 끝
-    40.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: (tool result) The Grandview Lofts offers assigned parking spaces for a
-    44.90s  agent 발화 끝
-    45.20s  user  발화 시작: Sure.
-    45.81s  <ret> 발화 (turn10 첫 프레임)
-    45.83s  user  발화 끝
-    46.21s  agent 발화 시작: <ret> Parking is garage-style, costs one hundred fifty dolla
-    47.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: [{"parkingType": "garage", "monthlyCost": "$150", "availability": "lim
-    49.85s  user  발화 시작: Right.
-    50.21s  user  발화 끝
-    52.92s  agent 발화 끝
-    54.19s  user  발화 시작: Limited, huh? Okay. I think I’d like to see a different plac
-    60.41s  agent 발화 시작: You’d prefer to view The Oakwood Residences instead? That so
-    60.54s  user  발화 끝
-    65.83s  agent 발화 끝
-    65.93s  user  발화 시작: Yes, please. And could you check if they have a gym?
-    68.83s  <ret> 발화 (turn15 첫 프레임)
-    69.03s  user  발화 끝
-    69.07s  agent 발화 시작: <ret> I’m checking for a gym at The Oakwood Residences… they
-    69.87s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.93s]: (tool result) The Oakwood Residences have a 24-hour fitness center wit
-    73.00s  agent 발화 끝
-    73.05s  user  발화 시작: Thanks.
-    73.68s  user  발화 끝
-    73.86s  <ret> 발화 (turn17 첫 프레임)
-    74.02s  agent 발화 시작: <ret> They do! The Oakwood Residences has a fully equipped f
-    75.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: [{"amenity": "gym", "details": "fully equipped fitness center with car
-    78.60s  agent 발화 끝
-    79.64s  user  발화 시작: That’s good to know. Can we schedule a viewing there for, sa
-    83.75s  <ret> 발화 (turn19 첫 프레임)
-    84.07s  agent 발화 시작: <ret> I’m scheduling a viewing for The Oakwood Residences on
-    84.17s  user  발화 끝
-    85.27s  ⚡SPAN 주입 [d'=1.52s / d_lead=11.08s]: (tool result) To schedule a viewing, please contact the sales team at 
-    90.65s  user  발화 시작: Uh-huh.
-    91.29s  user  발화 끝
-    94.90s  user  발화 시작: Perfect. Also, what’s the closest grocery store?
-    95.15s  agent 발화 끝
-    98.00s  <ret> 발화 (turn22 첫 프레임)
-    98.24s  agent 발화 시작: <ret> Let me find the closest grocery store to The Oakwood R
-    98.37s  user  발화 끝
-   100.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) The Oakwood Residences is located near FairPrice Finest 
-   103.07s  user  발화 시작: Yeah.
-   103.57s  user  발화 끝
-   104.87s  agent 발화 끝
-   105.10s  user  발화 시작: Okay.
-   105.67s  <ret> 발화 (turn25 첫 프레임)
-   105.74s  user  발화 끝
-   105.74s  agent 발화 시작: <ret> Fresh Foods Market is just half a mile away… direction
-   107.43s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.73s]: [{"name": "Fresh Foods Market", "distance": "0.5 miles", "directions":
-   110.09s  user  발화 시작: Okay.
-   110.59s  user  발화 끝
-   111.47s  agent 발화 끝
-   112.50s  user  발화 시작: Great. That sounds really convenient.
-   115.61s  agent 발화 시작: I'm glad to hear it sounds good; convenience really makes a 
-   115.68s  user  발화 끝
-   120.38s  agent 발화 끝
-   122.43s  user  발화 시작: It does. Thanks for all your help, Tellar.
-   124.96s  user  발화 끝
-   125.22s  agent 발화 시작: You’re very welcome! Finding the right place is a big step, 
-   130.50s  agent 발화 끝
+     3.54s  <ret> 발화 (turn1 첫 프레임)
+     3.78s  agent 발화 시작: <ret> I’ve found availability at The Grandview Lofts on June
+     3.93s  user  발화 끝
+     5.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) The Grandview Lofts, 2026-06-15, 14:00, 15:00, 16:00, co
+    14.03s  agent 발화 끝
+    15.39s  user  발화 시작: Oh, um, actually make that June sixteenth.
+    18.34s  <ret> 발화 (turn3 첫 프레임)
+    18.44s  user  발화 끝
+    18.50s  agent 발화 시작: <ret> No problem at all. The Grandview Lofts has openings on
+    20.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.23s]: (tool result) The Grandview Lofts, 2026-06-16, 10:00, 11:00, 12:00, co
+    29.64s  user  발화 시작: Let’s go with eleven.
+    29.73s  agent 발화 끝
+    30.78s  <ret> 발화 (turn5 첫 프레임)
+    31.02s  agent 발화 시작: <ret> Excellent. Your viewing at The Grandview Lofts is conf
+    31.21s  user  발화 끝
+    32.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) The Grandview Lofts, 2026-06-16, 11:00, confirmed, JK234
+    39.16s  user  발화 시작: Could you find some restaurants nearby?
+    39.27s  agent 발화 끝
+    41.03s  <ret> 발화 (turn7 첫 프레임)
+    41.15s  user  발화 끝
+    41.19s  agent 발화 시작: <ret> Bella Italia, The Spice Merchant, and Green Garden Caf
+    43.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) Bella Italia (0.3 km), The Spice Merchant (0.5 km), Gree
+    46.65s  agent 발화 끝
+    47.23s  user  발화 시작: What’s the weather like there on that day?
+    49.02s  <ret> 발화 (turn9 첫 프레임)
+    49.42s  agent 발화 시작: <ret> It will be 25 degrees Celsius, with 68% humidity and a
+    49.49s  user  발화 끝
+    51.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) 25.0°C, humidity 68%, wind 7.2 km/h
+    54.23s  user  발화 시작: Mm-hmm.
+    54.78s  user  발화 끝
+    56.79s  agent 발화 끝
+    56.81s  user  발화 시작: That sounds lovely. Can you get me directions to The Grandvi
+    61.17s  <ret> 발화 (turn12 첫 프레임)
+    61.34s  user  발화 끝
+    61.41s  agent 발화 시작: <ret> The Grandview Lofts is 1.2 kilometers away, about a 5-
+    62.53s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.74s]: (tool result) 1.2 km, 5 min, Drive: Take Elm Street, turn right onto O
+    71.14s  agent 발화 끝
+    71.15s  user  발화 시작: Is there a coffee shop on Oak Avenue?
+    73.42s  <ret> 발화 (turn14 첫 프레임)
+    73.58s  agent 발화 시작: <ret> Yes, there's Coffee Corner on Oak Avenue. It has 4.8 s
+    73.74s  user  발화 끝
+    75.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Coffee Corner (Oak Avenue): 4.8/5 stars, open until 6 PM
+    80.30s  agent 발화 끝
+    80.50s  user  발화 시작: Perfect. What time is it right now?
+    82.29s  <ret> 발화 (turn16 첫 프레임)
+    82.61s  agent 발화 시작: <ret> It’s Friday, July tenth, 2026, at 3:17 PM in Seoul.
+    82.70s  user  발화 끝
+    84.13s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.42s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Seoul right no
+    84.87s  user  발화 시작: Mm-hmm.
+    85.36s  user  발화 끝
+    88.02s  user  발화 시작: Thanks so much, that’s all I needed.
+    88.03s  agent 발화 끝
+    90.15s  user  발화 끝
+    90.31s  agent 발화 시작: You’re very welcome. I’m glad I could help you plan your vie
+    91.81s  user  발화 시작: Mhm.
+    92.30s  user  발화 끝
+    94.24s  agent 발화 끝
+    94.45s  user  발화 시작: I feel much less stressed now.
+    96.92s  agent 발화 시작: That’s wonderful to hear. Transitions can be challenging, an
+    97.04s  user  발화 끝
+   102.89s  agent 발화 끝
+   103.07s  user  발화 시작: I think I’m ready for this.
+   104.53s  agent 발화 시작: That's a great feeling. I’m confident you’ll do wonderfully.
+   104.60s  user  발화 끝
+   110.09s  agent 발화 끝

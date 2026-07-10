@@ -66,47 +66,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Oh, that’s interesting. What about | S3 Hmm, that makes sense. What's thei | S4 That's a pretty optimistic view, i
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 So, it’s not just about government | S3 That sounds… idealistic. Do any pl | S4 Mexico, huh? I didn't know that. W
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.34s  <ret> 발화 (turn1 첫 프레임)
-     2.50s  agent 발화 시작: <ret> Anarchists fundamentally oppose any form of hierarchic
-     2.68s  user  발화 끝
-     4.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.89s]: Anarchists oppose all forms of hierarchical rule, including government
-     6.75s  user  발화 시작: Mm-hmm.
-     7.24s  user  발화 끝
-    10.29s  user  발화 시작: …do they have any specific historical examples of government
-    10.39s  agent 발화 끝
-    15.12s  <ret> 발화 (turn4 첫 프레임)
-    15.27s  agent 발화 시작: <ret> Historically, anarchists have actively opposed state-b
-    15.47s  user  발화 끝
-    17.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.61s]: Anarchists have historically opposed states such as the Spanish State 
-    25.89s  agent 발화 끝
-    25.92s  user  발화 시작: Oh, that’s interesting. What about modern anarchists? Are th
-    31.94s  user  발화 끝
-    31.98s  agent 발화 시작: Modern anarchist thought is quite diverse. While opposition 
-    41.69s  user  발화 시작: So, it's not just about kings and dictators, then?
-    42.12s  agent 발화 끝
-    44.70s  agent 발화 시작: Not at all. Anarchists critique the systemic power structure
-    44.74s  user  발화 끝
-    56.09s  user  발화 시작: Hmm, that makes sense. What's their ideal, then? If not gove
-    56.29s  agent 발화 끝
-    61.73s  <ret> 발화 (turn10 첫 프레임)
-    62.13s  agent 발화 시작: <ret> Anarchists envision a society organized around volunta
-    62.24s  user  발화 끝
-    63.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: Anarchists envision a society without rulers, often based on voluntary
-    71.17s  agent 발화 끝
-    71.37s  user  발화 시작: Direct democracy sounds chaotic. How would that even work on
-    75.99s  agent 발화 시작: It's a valid concern. Proponents suggest federations of smal
-    76.08s  user  발화 끝
-    81.15s  user  발화 시작: Yeah, totally.
-    81.97s  user  발화 끝
-    86.58s  user  발화 시작: That's a pretty optimistic view, isn't it? Do they ever comp
-    86.65s  agent 발화 끝
-    92.22s  agent 발화 시작: Compromise is a complex issue for anarchists. Some engage in
-    92.22s  user  발화 끝
-   106.04s  agent 발화 끝
-   107.46s  user  발화 시작: I see. So there's a lot of internal debate. Thanks, Frunax, 
-   111.73s  agent 발화 시작: You're very welcome. It’s fascinating to explore these ideas
-   111.90s  user  발화 끝
-   117.51s  agent 발화 끝
+     2.59s  user  발화 끝
+     2.61s  <ret> 발화 (turn1 첫 프레임)
+     2.77s  agent 발화 시작: <ret> But I'm afraid there’s no readily available informatio
+     4.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (no information found)
+     7.36s  user  발화 시작: Uh-huh.
+     7.85s  user  발화 끝
+    10.54s  user  발화 시작: Welll… that’s disappointing. What about political ideologies
+    10.59s  agent 발화 끝
+    14.47s  <ret> 발화 (turn4 첫 프레임)
+    14.63s  agent 발화 시작: <ret> Anarchism fundamentally opposes all hierarchical rule 
+    14.76s  user  발화 끝
+    16.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.83s]: Anarchism opposes all forms of hierarchical rule and domination.
+    26.43s  user  발화 시작: So, it’s not just about governments, then?
+    26.45s  agent 발화 끝
+    28.84s  agent 발화 시작: Precisely. Anarchists challenge power structures in all area
+    28.86s  user  발화 끝
+    38.41s  user  발화 시작: Do they have any… positive goals, or just what they’re again
+    38.77s  agent 발화 끝
+    41.89s  <ret> 발화 (turn8 첫 프레임)
+    42.05s  agent 발화 시작: <ret> They advocate for self-governed societies built on vol
+    42.15s  user  발화 끝
+    43.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: Anarchists advocate for self-governed societies based on voluntary ins
+    50.63s  user  발화 시작: That sounds… idealistic. Do any places actually try that?
+    51.00s  agent 발화 끝
+    55.49s  agent 발화 시작: There have been historical attempts at anarchist societies, 
+    55.54s  user  발화 끝
+    61.71s  user  발화 시작: …But do any exist *now*, like even small ones?
+    62.34s  agent 발화 끝
+    64.71s  <ret> 발화 (turn12 첫 프레임)
+    64.95s  agent 발화 시작: <ret> The Zapatista Autonomous Municipalities in Chiapas, Me
+    65.09s  user  발화 끝
+    66.39s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.72s]: The Zapatista Autonomous Municipalities in Chiapas, Mexico, practice s
+    73.63s  user  발화 시작: Mexico, huh? I didn't know that. What's their main goal?
+    73.67s  agent 발화 끝
+    77.09s  <ret> 발화 (turn14 첫 프레임)
+    77.33s  agent 발화 시작: <ret> Their main goal is Indigenous autonomy and rights, and
+    77.42s  user  발화 끝
+    79.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: The Zapatistas seek Indigenous autonomy and rights, resisting neoliber
+    87.81s  agent 발화 끝
+    88.68s  user  발화 시작: Wow, that’s really interesting. Thanks, Frunax.
+    91.26s  user  발화 끝
+    91.53s  agent 발화 시작: You’re very welcome. I’m glad I could share some information
+   100.39s  agent 발화 끝

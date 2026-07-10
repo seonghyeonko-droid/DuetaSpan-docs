@@ -66,43 +66,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 …and I think it’s a false alarm. | S3 …How much would a service call eve | S4 Right, okay, a technician it is th
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 Okay, okay, you're right.… | S3 …But what *should* I do then? | S4 …Actually, is there anything *I* c
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     4.12s  user  발화 끝
-     4.13s  agent 발화 시작: Druna here. I understand the beeping is frustrating, but I a
-    10.71s  agent 발화 끝
-    12.34s  user  발화 시작: But it’s been going off for hours…
-    14.32s  user  발화 끝
-    16.00s  user  발화 시작: …and I think it’s a false alarm.
-    17.84s  agent 발화 시작: Even if you believe it’s a false alarm, disabling it is incr
-    17.85s  user  발화 끝
-    22.01s  user  발화 시작: Yeah.
-    22.51s  user  발화 끝
-    26.27s  agent 발화 끝
-    26.35s  user  발화 시작: Okay, okay, I get it. But what *can* I do then?
-    29.40s  user  발화 끝
-    29.63s  agent 발화 시작: The safest course of action is to call a qualified technicia
-    35.31s  user  발화 시작: …How much would a service call even *cost*?
+     4.05s  agent 발화 시작: Oh dear, I absolutely cannot help you with that. Carbon mono
+     4.07s  user  발화 끝
+    11.27s  agent 발화 끝
+    12.78s  user  발화 시작: But it's just beeping, it’s been hours, it must be a false a
+    16.27s  agent 발화 시작: Even if you believe it’s a false alarm, disabling the alarm 
+    16.39s  user  발화 끝
+    20.10s  user  발화 시작: Yeah.
+    20.55s  user  발화 끝
+    23.84s  user  발화 시작: Okay, okay, you're right.…
+    24.01s  agent 발화 끝
+    25.67s  user  발화 끝
+    26.68s  user  발화 시작: …But what *should* I do then?
+    28.48s  user  발화 끝
+    28.71s  agent 발화 시작: The safest course of action is to immediately evacuate every
+    31.93s  user  발화 시작: Yeah.
+    32.38s  user  발화 끝
+    35.61s  <ret> 발화 (turn9 첫 프레임)
+    35.92s  agent 발화 시작: <ret> They have the equipment to detect the source of the ca
     35.98s  agent 발화 끝
-    37.45s  <ret> 발화 (turn9 첫 프레임)
-    37.77s  agent 발화 시작: <ret> Let me quickly check the average cost of a carbon mono
-    37.90s  user  발화 끝
-    39.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: The cost of a service call for a carbon monoxide alarm inspection can 
-    40.41s  user  발화 시작: Yeah.
-    40.95s  user  발화 끝
-    43.73s  agent 발화 시작: …and it appears the typical range is between eighty and two 
-    43.84s  agent 발화 끝
-    45.45s  user  발화 시작: Yeah.
-    45.94s  user  발화 끝
-    47.75s  agent 발화 끝
-    48.23s  user  발화 시작: That's…more than I expected. Are there any DIY troubleshooti
-    54.11s  user  발화 끝
-    54.37s  agent 발화 시작: While I still strongly advise a professional, you can try re
-    63.02s  user  발화 시작: Right, okay, a technician it is then. Could you find me some
-    63.55s  agent 발화 끝
-    67.67s  <ret> 발화 (turn16 첫 프레임)
-    68.07s  agent 발화 시작: <ret> …and I've found a technician with availability at nine
-    68.20s  user  발화 끝
-    69.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.03s]: To schedule a technician, please provide your location and the model n
-    81.10s  agent 발화 끝
+    37.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: 24/7 Emergency Services (02-1234-5678); Ace Home Solutions (010-9876-5
+    47.15s  agent 발화 시작: Ace Home Solutions is available now for $120, and BrightSpar
+    47.29s  agent 발화 끝
+    50.90s  user  발화 시작: Oh.
+    51.53s  user  발화 끝
+    56.57s  agent 발화 끝
+    57.75s  user  발화 시작: …Actually, is there anything *I* can check first, before cal
+    62.56s  agent 발화 시작: You can check if any fuel-burning appliances—like furnaces, 
+    62.56s  user  발화 끝
+    72.57s  agent 발화 끝

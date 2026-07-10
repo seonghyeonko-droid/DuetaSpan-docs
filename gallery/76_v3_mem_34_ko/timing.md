@@ -25,7 +25,7 @@
 #     {
 #       "date": "2026-04-15",
 #       "category": "home",
-#       "text": "User's home address is 124 Elm Street."
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     },
 #     {
 #       "date": "2025-08-25",
@@ -35,103 +35,73 @@
 #     {
 #       "date": "2025-08-06",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
 #       "date": "2025-06-16",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-31",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-06-13",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-29",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-20",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 지금 집에서 해운대까지 얼마나 걸릴까요? | S2 만덕대로요? 거긴 차가 많이 막히던데… | S3 잠깐만요, 제가 채식주의자라는 거 기억하시죠? | S4 네, 알겠습니다.
+# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 지금 이사 갈 곳을 찾고 있는데, 혹시 제  | S2 이십오분이면 괜찮네요. 근데… 혹시 지금 교통 상황은 어떤가요 | S3 오, P2가 있군요. 그럼 혹시… 제가 채식주의자인데, 올림픽 | S4 아, 감사합니다. 그럼 저는 이제 출발해야 할 것 같아요.
 
-     0.00s  agent 발화 시작: 지원 씨, 안녕하세요. 저는 히아입니다. 오늘 편안하게 이야기 나누면서 삶의 변화를 함께 준비해 드릴게요.
-     6.51s  user  발화 시작: 어… 안녕하세요. 지금 집에서 해운대까지 얼마나 걸릴까요?
-     6.76s  agent 발화 끝
-    10.40s  <ret> 발화 (turn2 첫 프레임)
-    10.48s  agent 발화 시작: <ret> 백이십사 Elm Street에서 해운대 해수욕장까지 가는 데는 대략… 사십분 정도 걸릴 것으로 예
-    10.71s  user  발화 끝
-    12.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (no information found)
-    19.15s  agent 발화 끝
-    20.52s  user  발화 시작: 네…
-    21.06s  user  발화 끝
-    21.07s  agent 발화 시작: 교통 상황에 따라 조금 더 걸릴 수도 있다는 점 참고해 주세요.
-    23.03s  user  발화 시작: 그치.
-    23.52s  user  발화 끝
-    24.75s  user  발화 시작: 혹시 지금 가장 빠른 길 알려줄 수 있어요?
-    24.77s  agent 발화 끝
-    27.29s  <ret> 발화 (turn7 첫 프레임)
-    27.44s  agent 발화 시작: <ret> 현재 가장 빠른 경로는… 만덕대로를 이용하는 것이 좋습니다… 찾을 수 없습니다.
-    27.66s  user  발화 끝
-    29.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.90s]: (no information found)
-    32.34s  agent 발화 끝
-    32.55s  user  발화 시작: 만덕대로요? 거긴 차가 많이 막히던데…
-    35.23s  agent 발화 시작: 지금은 비교적 통행량이 적은 편입니다. 실시간 교통 정보는 계속 변동될 수 있습니다.
-    35.36s  user  발화 끝
-    38.21s  user  발화 시작: 음.
-    38.80s  user  발화 끝
-    41.35s  agent 발화 끝
-    41.43s  agent 발화 시작: 혹시 대중교통 이용은 고려하고 계신가요? 버스나 지하철 노선을 안내해 드릴 수도 있습니다.
-    44.43s  user  발화 시작: 어.
-    45.06s  user  발화 끝
-    46.81s  agent 발화 끝
-    46.98s  user  발화 시작: 아니요, 오늘은 차가 편할 것 같아요.
-    49.51s  user  발화 끝
-    49.52s  agent 발화 시작: 그럼 만덕대로를 이용하는 경로를 계속 안내해 드릴게요.
-    52.53s  agent 발화 끝
-    52.64s  user  발화 시작: 잠깐만요, 제가 채식주의자라는 거 기억하시죠?
-    55.87s  user  발화 끝
-    55.97s  <ret> 발화 (turn16 첫 프레임)
-    56.12s  agent 발화 시작: <ret> 네, 지원 씨는 채식주의자이시죠. 해운대 근처에 채식 식당을 알아봐 드릴까요? 도착해서 식사하실 
-    57.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: [2026-04-19] User is vegetarian.
-    58.94s  user  발화 시작: 그치.
-    59.43s  user  발화 끝
-    62.65s  agent 발화 끝
-    63.04s  user  발화 시작: 아, 네, 좋아요. 도착해서 먹을 만한 곳 있으면 알려주세요.
-    66.75s  <ret> 발화 (turn19 첫 프레임)
-    66.99s  agent 발화 시작: <ret> 해운대 해수욕장 근처 채식 식당을 검색 중인데… 몇 군데가 있습니다. 잠시만 기다려 주세요… 총 
-    67.07s  user  발화 끝
-    68.67s  ⚡SPAN 주입 [d'=1.92s / d_lead=7.46s]: (tool result) 해운대 근처에 채식 식당을 알아봐 드릴까요?
-    71.89s  user  발화 시작: 응응.
-    72.43s  user  발화 끝
-    74.40s  user  발화 시작: 네, 알겠습니다.
-    74.45s  agent 발화 끝
-    75.87s  agent 발화 시작: 검색 결과, ‘채식주의자’라는 식당이 평점이 좋고, 지원 씨의 집에서 가까운 곳에 위치해 있습니다.
-    76.01s  user  발화 끝
-    78.01s  user  발화 시작: 응.
-    78.42s  user  발화 끝
-    82.17s  agent 발화 끝
-    82.29s  user  발화 시작: 오, 그거 괜찮네요. 혹시 예약도 가능할까요?
-    85.30s  <ret> 발화 (turn25 첫 프레임)
-    85.38s  agent 발화 시작: <ret> 네, 다행히 예약이 가능합니다. 지금 예약해 드릴까요?… 예약 가능 여부는 알 수 없습니다.
-    85.53s  user  발화 끝
-    87.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (no information found)
-    92.00s  agent 발화 끝
+     0.00s  agent 발화 시작: 지원 씨, 안녕하세요. 저는 히아입니다. 큰 변화를 겪고 계신 분들을 돕는 상담가입니다.
+     6.17s  agent 발화 끝
+     6.69s  user  발화 시작: 어… 안녕하세요. 지금 이사 갈 곳을 찾고 있는데, 혹시 제 집에서 올림픽공원까지 얼마나 걸릴까요?
+    13.59s  <ret> 발화 (turn2 첫 프레임)
+    13.67s  agent 발화 시작: <ret> 지원 씨의 집 주소는 서울 마포구 성산동 사 오 육번지입니다.
+    13.77s  user  발화 끝
+    15.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: [2026-04-15] User's home address is 서울 마포구 성산동 45-6.
+    16.51s  user  발화 시작: 어.
+    17.00s  user  발화 끝
+    17.69s  agent 발화 끝
+    18.64s  user  발화 시작: 네, 맞아요. 거기서 올림픽공원까지 얼마나 걸릴까요? 지금 바로 가려고 하거든요.
+    24.05s  <ret> 발화 (turn5 첫 프레임)
+    24.29s  agent 발화 시작: <ret> 마포구 성산동 사 오 육번지에서 올림픽공원까지는 강남대로를 이용하면 십이 점 삼킬로미터, 이십오분
+    24.29s  user  발화 끝
+    26.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: (tool result) 12.3 km, 25 minutes, via Gangnamdae-ro; 14.1 km, 31 minu
+    30.36s  user  발화 시작: 어.
+    30.86s  user  발화 끝
+    35.51s  agent 발화 끝
+    35.55s  user  발화 시작: 이십오분이면 괜찮네요. 근데… 혹시 지금 교통 상황은 어떤가요?
+    40.69s  <ret> 발화 (turn8 첫 프레임)
+    40.77s  agent 발화 시작: <ret> 강남대로는 현재 보통 혼잡한 상태이며, 예상 지연 시간은 오분입니다.
+    40.92s  user  발화 끝
+    42.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Moderate congestion, estimated delay 5 minutes.
+    44.17s  user  발화 시작: 어.
+    44.98s  user  발화 끝
+    45.66s  <ret> 발화 (turn10 첫 프레임)
+    45.76s  agent 발화 끝
+    45.82s  agent 발화 시작: <ret> 혹시 올림픽공원 근처에 주차 공간이 있는지 궁금하신가요? 올림픽공원에는 P1 주차장 팔십자리, P
+    47.10s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.75s]: (tool result) Parking lot P1 (80 spaces available), P2 (120 spaces ava
+    51.79s  user  발화 시작: 응.
+    52.19s  user  발화 끝
+    59.23s  agent 발화 끝
+    59.28s  user  발화 시작: 오, P2가 있군요. 그럼 혹시… 제가 채식주의자인데, 올림픽공원 근처에 채식 식당이 있을까요?
+    65.51s  <ret> 발화 (turn13 첫 프레임)
+    65.75s  agent 발화 시작: <ret> 지원 씨는 채식주의자시군요. 올림픽공원 근처에 채식 식당을 찾아보겠습니다. 올림픽공원 근처에는 L
+    65.91s  user  발화 끝
+    67.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.21s]: [2026-04-19] User is vegetarian.
+    80.96s  agent 발화 끝
+    81.22s  user  발화 시작: Loving Hut이 제일 가까운가 보네요. 그럼… 혹시 그 식당에 예약이 필요한가요?
+    86.39s  <ret> 발화 (turn15 첫 프레임)
+    86.63s  agent 발화 시작: <ret> Loving Hut에 오늘 오후 세시에 한명으로 예약이 완료되었습니다. 확인 번호는 칠b9x2z입
+    86.73s  user  발화 끝
+    88.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (tool result) Reservation confirmed for 1 person at Loving Hut, today 
+    92.70s  agent 발화 끝
+    93.29s  user  발화 시작: 아, 감사합니다. 그럼 저는 이제 출발해야 할 것 같아요.
+    96.69s  agent 발화 시작: 즐거운 식사 되세요.
+    96.85s  user  발화 끝
+    98.12s  agent 발화 끝

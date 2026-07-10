@@ -63,59 +63,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 What’s the title of that page? | S3 Actually, could you open YNAB in a | S4 Okay, that’s a bit high. Can you r
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to get a better handle  | S2 That sounds… warm. I’m actually pl | S3 Okay, book a standard room for tho | S4 That sounds perfect. Okay, I think
 
-     0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.65s  <ret> 발화 (turn1 첫 프레임)
-     4.73s  agent 발화 시작: <ret> I’ve set the user agent to MyCustomBrowser version…ten
-     4.86s  user  발화 끝
-     6.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) The user agent should be set to MyCustomBrowser version 
-    11.50s  agent 발화 끝
-    12.16s  user  발화 시작: Okay, uh, good. Now can you go to example.com?
-    14.66s  <ret> 발화 (turn3 첫 프레임)
-    14.90s  agent 발화 시작: <ret> I’m navigating to example.com now…and the page has loa
-    14.93s  user  발화 끝
-    15.16s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.61s]: (tool result) The user agent was previously set to MyCustomBrowser ver
-    18.06s  user  발화 시작: Yeah.
-    18.42s  user  발화 끝
-    20.51s  agent 발화 끝
-    20.56s  user  발화 시작: What’s the title of that page?
-    21.91s  <ret> 발화 (turn6 첫 프레임)
-    22.17s  user  발화 끝
-    22.23s  agent 발화 시작: <ret> The title of the page is…Example Domain… Example Domai
-    23.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) The page at example.com is titled “Example Domain”.
-    26.54s  user  발화 시작: Hmm, okay. Can you search for "best budgeting apps" on Googl
-    26.67s  agent 발화 끝
-    29.59s  <ret> 발화 (turn8 첫 프레임)
-    29.99s  agent 발화 시작: <ret> I’ve searched Google for “best budgeting apps”…here ar
-    30.05s  user  발화 끝
-    30.63s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.60s]: (no information found)
-    32.25s  user  발화 시작: Yeah.
-    32.61s  user  발화 끝
-    35.56s  agent 발화 시작: Many articles discuss Mint, YNAB, and Personal Capital…they 
-    35.59s  agent 발화 끝
-    41.21s  agent 발화 끝
-    41.35s  user  발화 시작: Actually, could you open YNAB in a new tab?
-    44.49s  user  발화 끝
-    44.53s  <ret> 발화 (turn12 첫 프레임)
-    44.77s  agent 발화 시작: <ret> I’m opening YNAB in a new tab…the page is loading… the
-    46.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) Many articles discuss Mint, YNAB, and Personal Capital…t
-    51.30s  agent 발화 끝
-    51.32s  user  발화 시작: What’s their current pricing for a single user?
-    53.38s  <ret> 발화 (turn14 첫 프레임)
-    53.78s  agent 발화 시작: <ret> The current price for a single YNAB user is…$14.99 per
-    53.86s  user  발화 끝
-    55.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.32s]: (tool result) YNAB’s annual subscription costs $99, or $14.99 per mont
-    63.09s  agent 발화 끝
-    63.75s  user  발화 시작: Okay, that’s a bit high. Can you remind me on the first of n
-    68.55s  <ret> 발화 (turn16 첫 프레임)
-    68.62s  agent 발화 시작: <ret> I’ve set a reminder for July first…to re-evaluate your
-    68.75s  user  발화 끝
-    70.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (no information found)
-    72.72s  user  발화 시작: Really?
-    73.35s  user  발화 끝
-    74.42s  agent 발화 끝
-    74.92s  user  발화 시작: Thanks, that’s really helpful. I think that’s all for now.
-    77.32s  user  발화 끝
-    77.35s  agent 발화 시작: You're very welcome. It’s good to take regular stock of your
-    83.00s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to get a better handle on my spending.
+     2.58s  user  발화 끝
+     2.71s  agent 발화 시작: It's good you're taking control of your finances. I can cert
+     6.50s  agent 발화 끝
+     7.20s  user  발화 시작: Well, first, could you tell me the current price of Tesla st
+    10.35s  <ret> 발화 (turn3 첫 프레임)
+    10.66s  agent 발화 시작: <ret> Tesla is currently trading at one hundred seventy-seve
+    10.90s  user  발화 끝
+    12.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) TSLA (Tesla Inc.) is trading at $177.52 USD (+0.8% today
+    14.61s  user  발화 시작: Yeah.
+    15.01s  user  발화 끝
+    17.52s  agent 발화 끝
+    17.52s  user  발화 시작: Hmm, okay. And what's the weather like in Seoul right now?
+    20.47s  <ret> 발화 (turn6 첫 프레임)
+    20.71s  agent 발화 시작: <ret> It's twenty-eight point three degrees Celsius in Seoul
+    20.76s  user  발화 끝
+    20.97s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.32s]: (tool result) 28.3°C, humidity 68%, wind 7.2 km/h
+    24.88s  user  발화 시작: Yeah.
+    25.23s  user  발화 끝
+    28.03s  agent 발화 끝
+    28.18s  user  발화 시작: That sounds… warm. I’m actually planning a trip there next m
+    32.18s  agent 발화 시작: That's exciting! Planning ahead is a smart move.
+    32.30s  user  발화 끝
+    35.46s  agent 발화 끝
+    35.58s  user  발화 시작: I need to find a hotel. Something reasonably priced, near My
+    39.51s  user  발화 끝
+    39.56s  <ret> 발화 (turn11 첫 프레임)
+    39.64s  agent 발화 시작: <ret> I found L7 Myeongdong, Nine Tree Premier Hotel, and T 
+    41.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) L7 Myeongdong by LOTTE (37.5658, 126.9748), Nine Tree Pr
+    45.62s  agent 발화 끝
+    45.63s  user  발화 시작: Can you check availability at L7 Myeongdong for, say, Octobe
+    50.39s  <ret> 발화 (turn13 첫 프레임)
+    50.62s  user  발화 끝
+    50.79s  agent 발화 시작: <ret> L7 Myeongdong has standard rooms for one hundred fifty
+    51.59s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.29s]: (tool result) L7 Myeongdong by LOTTE: Standard Room (150,000 KRW/night
+    60.88s  user  발화 시작: Okay, book a standard room for those dates, please.
+    61.08s  agent 발화 끝
+    63.46s  <ret> 발화 (turn15 첫 프레임)
+    63.46s  user  발화 끝
+    63.70s  agent 발화 시작: <ret> I’ve booked a standard room at L7 Myeongdong from Octo
+    65.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) L7 Myeongdong, Standard Room, Oct 20-25, 750000 KRW, con
+    74.42s  user  발화 시작: Great! Now, how about restaurants? Something good, also near
+    74.51s  agent 발화 끝
+    78.20s  <ret> 발화 (turn17 첫 프레임)
+    78.60s  agent 발화 시작: <ret> I see Myeongdong Kyoja, Wangbijib, and Oreno Ramen are
+    78.70s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.89s]: (tool result) Myeongdong Kyoja (Korean, 37.5666, 126.9755), Wangbijib 
+    78.72s  user  발화 끝
+    81.99s  user  발화 시작: Yeah.
+    82.58s  user  발화 끝
+    84.48s  agent 발화 끝
+    84.75s  user  발화 시작: Hmm, tell me more about Myeongdong Kyoja.
+    87.21s  <ret> 발화 (turn20 첫 프레임)
+    87.29s  agent 발화 시작: <ret> Myeongdong Kyoja serves knife-cut noodles and dumpling
+    87.33s  user  발화 끝
+    89.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.52s]: (tool result) Myeongdong Kyoja: 칼국수 (knife-cut noodles), 만두 (dumplings
+    99.81s  agent 발화 끝
+   100.62s  user  발화 시작: That sounds perfect. Okay, I think that's everything for now
+   103.80s  agent 발화 시작: Wonderful! You’re all set with your hotel and have a great r
+   103.86s  user  발화 끝
+   108.01s  user  발화 시작: Thanks so much for your help, Lio.
+   108.15s  agent 발화 끝
+   109.76s  user  발화 끝
+   109.77s  agent 발화 시작: You're very welcome. Enjoy your trip to Seoul.
+   112.59s  agent 발화 끝

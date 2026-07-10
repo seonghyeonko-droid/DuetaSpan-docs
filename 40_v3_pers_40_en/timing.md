@@ -69,13 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Kim, welcome. I’m Ara, and I help people feel more con
-     5.09s  agent 발화 끝
-     5.14s  user  발화 시작: Ara… that’s a pretty name. Honestly, I'm just feeling a litt
-    10.75s  user  발화 끝
-    11.16s  agent 발화 시작: Overwhelmed is perfectly understandable, Kim. Many people fe
-    18.62s  agent 발화 끝
-    19.88s  user  발화 시작: Well, I'm trying to plan a trip to visit my sister, but ever
-    25.76s  user  발화 끝
-    25.92s  agent 발화 시작: Traveling can certainly add up quickly. Have you considered 
-    33.01s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Kim, it’s lovely to meet you. I’m Ara, and I help peop
+     6.03s  agent 발화 끝
+     6.06s  user  발화 시작: Oh, Ara… that’s a pretty name. I’m just… feeling really over
+    11.85s  user  발화 끝
+    12.22s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
+    18.19s  agent 발화 끝
+    19.47s  user  발화 시작: Well, I’m trying to plan for retirement, but it just feels i
+    25.26s  user  발화 끝
+    25.43s  agent 발화 시작: Planning for the future in New York can be daunting. It’s go
+    32.00s  agent 발화 끝

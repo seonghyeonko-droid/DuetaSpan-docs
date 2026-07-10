@@ -40,7 +40,7 @@
 #     {
 #       "date": "2025-10-22",
 #       "category": "home",
-#       "text": "User's home address is 657 Elm Street."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     },
 #     {
 #       "date": "2025-07-24",
@@ -60,22 +60,33 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 비트 잇 기타 솔로를 누가 연주했는지 궁금해요. | S2 아, 죄송해요. 그 에디 반 헤일런은 다른 유명한 곡도 많이  | S3 좋은 생각이에요. 혹시 지금 그… | S4 …'Eruption'을 바로 틀어볼 수 있을까요?
 
-     0.00s  user  발화 시작: 혹시 마이클 잭슨의 "Beat It" 기타 솔로를 누가 연주했는지 아세요?
-     3.60s  <ret> 발화 (turn1 첫 프레임)
-     3.92s  agent 발화 시작: <ret> "Beat It" 기타 솔로는 정말 유명하죠. 그 솔로를 연주한 분은… 에디 반 헤일런 입니다.
-     4.07s  user  발화 끝
-     5.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Eddie Van Halen played the guitar solo on Michael Jackson's "Beat It".
-     6.35s  user  발화 시작: 맞아요.
-     6.98s  user  발화 끝
-    10.17s  agent 발화 끝
-    11.29s  user  발화 시작: 잠깐만, 엄마, 제가 지금 통화 중이에요.
-    13.87s  user  발화 끝
-    13.98s  <ret> 발화 (turn4 첫 프레임)
-    14.05s  agent 발화 시작: <ret> 다시 말씀드리자면, "Beat It" 기타 솔로를 연주한 분은… 에디 반 헤일런입니다… 다시 말씀
-    15.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: (no information found)
-    24.40s  agent 발화 끝
-    24.86s  user  발화 시작: 와, 에디 반 헤일런이었군요! 정말 대단하네요.
-    28.70s  user  발화 끝
-    28.85s  agent 발화 시작: 네, 맞아요. 에디 반 헤일런은 기타 연주 실력이 아주 뛰어난 분이셨죠.
-    32.78s  agent 발화 끝
+     0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
+     2.78s  <ret> 발화 (turn1 첫 프레임)
+     3.05s  user  발화 끝
+     3.10s  agent 발화 시작: <ret> 마이클 잭슨의 '비트 잇' 기타 솔로는 에디 반 헤일런이 연주했습니다. 기타 연주 스타일이 정말 
+     4.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: Eddie Van Halen wrote the guitar solo for Michael Jackson's "Beat It".
+     8.16s  user  발화 시작: 맞아요.
+     8.79s  user  발화 끝
+     9.80s  user  발화 시작: 어휴, 잠깐만요. 제가 지금 통화 중이거든요.
+     9.82s  agent 발화 끝
+    12.89s  user  발화 시작: 아, 죄송해요. 그 에디 반 헤일런은 다른 유명한 곡도 많이 했어요?
+    12.94s  user  발화 끝
+    17.62s  <ret> 발화 (turn5 첫 프레임)
+    17.70s  agent 발화 시작: <ret> 에디 반 헤일런은 'Van Halen' 밴드의 기타리스트였고, 'Eruption'이나 'Jump'
+    17.89s  user  발화 끝
+    19.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: Eddie Van Halen was the guitarist for the band Van Halen, known for so
+    23.08s  user  발화 시작: 네.
+    23.71s  user  발화 끝
+    24.89s  agent 발화 시작: 기타 솔로를 듣는 것만큼 스트레스 해소에 좋은 게 또 없죠. 잠시 음악을 듣는 시간을 가져보시는 건 어떠세요
+    24.93s  agent 발화 끝
+    30.90s  agent 발화 끝
+    32.03s  user  발화 시작: 좋은 생각이에요. 혹시 지금 그…
+    34.57s  user  발화 끝
+    35.68s  user  발화 시작: …'Eruption'을 바로 틀어볼 수 있을까요?
+    37.51s  <ret> 발화 (turn10 첫 프레임)
+    37.75s  user  발화 끝
+    37.75s  agent 발화 시작: <ret> 'Eruption'을 틀어 드릴게요. 반 헤일런의 기타 연주를 감상하면서 편안한 시간을 보내세요.
+    38.71s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.19s]: Eruption — Van Halen (Van Halen, 1978); Jump — Van Halen (1984); …
+    42.94s  agent 발화 끝

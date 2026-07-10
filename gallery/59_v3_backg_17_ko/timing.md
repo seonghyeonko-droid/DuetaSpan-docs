@@ -30,7 +30,7 @@
 #     {
 #       "date": "2026-01-30",
 #       "category": "home",
-#       "text": "User's home address is 86 Birch Road."
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     },
 #     {
 #       "date": "2026-01-18",
@@ -68,18 +68,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 혹시 건강한 사람의 평균 심박수는 어떻게 돼요? | S2 아, 그건 좀 다르네요. 더 정확한 범위가 있을까요? | S3 오십 회에서 구십 회요? 그건 좀 놀랍네요. | S4 그럼 운동할 때 심박수는 어떻게 달라지나요?
 
      0.00s  user  발화 시작: 혹시 건강한 사람의 평균 심박수는 어떻게 돼요?
-     2.89s  <ret> 발화 (turn1 첫 프레임)
-     3.04s  agent 발화 시작: <ret> 건강한 성인의 정상적인 심박수는 분당… 정도입니다… 육십~백회 정도입니다.
-     3.24s  user  발화 끝
-     3.39s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.29s]: 건강한 성인의 정상적인 휴식 시 심박수는 분당 60~100회입니다.
-     9.34s  agent 발화 끝
-    10.74s  user  발화 시작: 아니, 지금 택시가 왜 이렇게 안 오는 거야?
-    12.98s  user  발화 시작: 분당 몇이라고요?
-    13.13s  user  발화 끝
-    13.98s  <ret> 발화 (turn4 첫 프레임)
-    14.18s  user  발화 끝
-    14.22s  agent 발화 시작: <ret> 일반적으로 건강한 성인의 안정 시 심박수는 분당… 정도입니다. 혹시 운동을 자주 하시는 편이세요?
-    15.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: [A normal resting heart rate for adults ranges from 60 to 100 bpm.]
-    21.91s  agent 발화 끝
+     2.65s  <ret> 발화 (turn1 첫 프레임)
+     2.80s  agent 발화 시작: <ret> 성인의 정상적인 안정 시 심박수는 분당 육십 회에서 백 회 사이입니다. 건강 관리에 관심이 많으시
+     3.05s  user  발화 끝
+     3.15s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.41s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
+    10.15s  user  발화 시작: [sigh] 아, 오늘따라 차가 너무 막히네.
+    10.21s  agent 발화 끝
+    12.30s  user  발화 시작: 아, 그건 좀 다르네요. 더 정확한 범위가 있을까요?
+    12.54s  user  발화 끝
+    15.13s  <ret> 발화 (turn4 첫 프레임)
+    15.37s  agent 발화 시작: <ret> 건강한 성인의 일반적인 심박수는 분당 오십 회에서 구십 회 사이입니다. 조금 더 정확한 수치로 말
+    15.63s  user  발화 끝
+    17.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: The typical heart rate for a healthy adult is between 50 and 90 bpm.
+    23.26s  user  발화 시작: 오십 회에서 구십 회요? 그건 좀 놀랍네요.
+    23.34s  agent 발화 끝
+    25.70s  user  발화 끝
+    25.73s  agent 발화 시작: 네, 맞습니다. 개인차가 있을 수 있지만, 보통 그 범위에 속한다고 알려져 있습니다.
+    31.34s  agent 발화 끝
+    32.64s  user  발화 시작: 그럼 운동할 때 심박수는 어떻게 달라지나요?
+    35.09s  user  발화 끝
+    35.50s  agent 발화 시작: 운동 중에는 심박수가 당연히 올라갑니다. 운동 강도에 따라 달라지는데, 최대 심박수의 오십%에서 팔십오% 정
+    44.45s  agent 발화 끝

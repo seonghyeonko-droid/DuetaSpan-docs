@@ -60,45 +60,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know anything about Lux Aur | S2 …was he part of any other projects | S3 When did Spectra disband? | S4 Did Lux Aurunque release anything 
+# EXAMINER(FDB-v2) 단계: S1 Do you know when Lux Aurunque was  | S2 That's interesting… um, was he bor | S3 …did he collaborate with any other | S4 What kind of music did they make t
 
-     0.00s  user  발화 시작: Do you know anything about Lux Aurunque?
-     2.53s  <ret> 발화 (turn1 첫 프레임)
-     2.63s  user  발화 끝
-     2.77s  agent 발화 시작: <ret> Lux Aurunque was born in… nineteen seventy. It’s inter
-     4.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: Lux Aurunque was born in 1970.
-     7.44s  user  발화 시작: Yeah, yeah.
-     8.07s  user  발화 끝
-    11.21s  agent 발화 끝
-    11.35s  user  발화 시작: What kind of music does he make?
-    12.87s  <ret> 발화 (turn4 첫 프레임)
-    12.93s  agent 발화 시작: <ret> He's known for his ambient electronic compositions—a r
-    13.10s  user  발화 끝
-    14.07s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.80s]: Lux Aurunque is known for his ambient electronic compositions.
-    21.59s  agent 발화 시작: It’s fascinating to explore an artist’s background and see h
-    21.73s  agent 발화 끝
-    26.24s  user  발화 시작: Uh-huh.
-    26.74s  user  발화 끝
-    29.32s  user  발화 시작: …was he part of any other projects before going solo?
-    29.51s  agent 발화 끝
-    31.99s  <ret> 발화 (turn8 첫 프레임)
-    32.04s  agent 발화 시작: <ret> He was a founding member of the electronic group ‘Spec
-    32.18s  user  발화 끝
-    33.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: Lux Aurunque was a founding member of the electronic group ‘Spectra’.
-    36.91s  user  발화 시작: Yeah, totally.
-    37.73s  user  발화 끝
-    41.13s  agent 발화 끝
-    42.50s  user  발화 시작: When did Spectra disband?
-    44.31s  <ret> 발화 (turn11 첫 프레임)
-    44.38s  agent 발화 시작: <ret> Spectra disbanded in nineteen ninety-eight, due to cre
-    44.43s  user  발화 끝
-    46.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: Spectra disbanded in 1998 due to creative differences.
-    47.10s  user  발화 시작: Right.
-    47.59s  user  발화 끝
-    52.56s  user  발화 시작: Did Lux Aurunque release anything with Spectra?
-    52.68s  agent 발화 끝
-    55.12s  <ret> 발화 (turn14 첫 프레임)
-    55.27s  agent 발화 시작: <ret> Spectra released two studio albums, ‘Echoes’ in ninete
-    55.47s  user  발화 끝
-    57.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: Spectra released two studio albums, ‘Echoes’ (1996) and ‘Frequencies’ 
-    64.96s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know when Lux Aurunque was born?
+     2.08s  <ret> 발화 (turn1 첫 프레임)
+     2.31s  agent 발화 시작: <ret> Lux Aurunque was born in nineteen seventy, a pivotal y
+     2.54s  user  발화 끝
+     4.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: Lux Aurunque was born in nineteen seventy.
+     7.70s  user  발화 시작: Yeah, yeah.
+     8.38s  user  발화 끝
+    12.04s  agent 발화 끝
+    12.19s  user  발화 시작: That's interesting… um, was he born in Italy?
+    14.62s  <ret> 발화 (turn4 첫 프레임)
+    14.69s  agent 발화 시작: <ret> He was indeed born in Rome, Italy, on January twelfth,
+    14.96s  user  발화 끝
+    15.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.32s]: Lux Aurunque was born in Rome, Italy, on January 12, 1970.
+    19.21s  user  발화 시작: …did he collaborate with any other musicians early on?
+    20.01s  agent 발화 끝
+    22.12s  <ret> 발화 (turn6 첫 프레임)
+    22.33s  agent 발화 시작: <ret> He first collaborated with Alessandro Bellini in ninet
+    22.44s  user  발화 끝
+    23.56s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.20s]: Lux Aurunque first collaborated with Alessandro Bellini in nineteen ei
+    25.05s  user  발화 시작: Mm-hmm.
+    25.55s  user  발화 끝
+    30.53s  agent 발화 끝
+    30.97s  user  발화 시작: What kind of music did they make together?
+    32.84s  <ret> 발화 (turn9 첫 프레임)
+    32.92s  agent 발화 시작: <ret> They created experimental electronic music in the nine
+    33.09s  user  발화 끝
+    34.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: Bellini and Aurunque created experimental electronic music in the nine
+    42.60s  agent 발화 끝

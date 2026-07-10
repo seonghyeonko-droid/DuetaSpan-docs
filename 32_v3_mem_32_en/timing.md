@@ -58,35 +58,28 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hi Thunalo. That sounds…nice.  | S2 Exactly! I’m starting to feel a bi | S3 Well, I was thinking of climbing w | S4 Hmm, that's true. Maybe I should l
 
-     0.00s  agent 발화 시작: Bonjour Manon, I’m Thunalo. It’s lovely to connect with you;
-     5.99s  user  발화 시작: Yeah.
-     6.49s  user  발화 끝
-     7.73s  agent 발화 끝
-     7.92s  user  발화 시작: Oh, hi Thunalo. That sounds…nice. I was wondering, do you re
-    14.12s  <ret> 발화 (turn3 첫 프레임)
-    14.21s  agent 발화 시작: <ret> You mentioned planning a trip to Kyoto in March… a won
-    14.36s  user  발화 끝
-    15.32s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.60s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    18.12s  user  발화 시작: Mm-hmm.
-    18.61s  user  발화 끝
-    19.81s  agent 발화 끝
-    19.85s  user  발화 시작: Exactly! I’m starting to feel a bit overwhelmed with the pla
-    25.68s  user  발화 끝
-    25.74s  agent 발화 시작: That’s perfectly understandable, Manon. International travel
-    33.95s  agent 발화 끝
-    34.40s  user  발화 시작: Well, I was thinking of climbing while I'm there, but…I don’
-    39.14s  <ret> 발화 (turn8 첫 프레임)
-    39.30s  agent 발화 시작: <ret> You have a passion for rock climbing… so Kyoto with it
-    39.40s  user  발화 끝
-    41.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: [2026-02-20] User is into rock climbing.
-    45.09s  user  발화 시작: Hmm, that's true. Maybe I should look into guided tours then
-    45.27s  agent 발화 끝
-    48.40s  <ret> 발화 (turn10 첫 프레임)
-    48.80s  agent 발화 시작: <ret> That’s a very sensible idea, Manon. Let me see what gu
-    49.02s  user  발화 끝
-    50.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: [Kyoto Rock Climbing Tours: March availability - Kyoto Adventures: 8 s
-    54.97s  agent 발화 시작: There are a few options available… Kyoto Adventures has eigh
-    55.14s  agent 발화 끝
-    62.48s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you; I’m 
+     4.39s  user  발화 시작: Yeah.
+     5.02s  user  발화 끝
+     5.84s  agent 발화 끝
+     5.84s  user  발화 시작: Um, I’m feeling stuck. I want to plan something fun, but eve
+    11.76s  agent 발화 시작: It sounds like you’re experiencing a bit of creative fatigue
+    11.81s  user  발화 끝
+    16.69s  user  발화 시작: Mm-hmm.
+    17.42s  user  발화 끝
+    18.30s  <ret> 발화 (turn5 첫 프레임)
+    18.70s  agent 발화 시작: <ret> I recall you were planning a trip to Kyoto in March.
+    18.81s  agent 발화 끝
+    19.26s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.81s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    21.49s  agent 발화 시작: Perhaps brainstorming activities for that trip could rekindl
+    21.52s  agent 발화 끝
+    26.96s  user  발화 시작: Oh, yes! Kyoto… I was thinking about temples, but I want som
+    26.99s  agent 발화 끝
+    33.88s  <ret> 발화 (turn8 첫 프레임)
+    34.04s  agent 발화 시작: <ret> That’s a wonderful idea! I see you also enjoy rock cli
+    34.18s  user  발화 끝
+    35.56s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.70s]: [2026-02-20] User is into rock climbing.
+    37.56s  agent 발화 시작: Kyoto might not be the first place that comes to mind for cl
+    37.74s  agent 발화 끝
+    44.04s  agent 발화 끝

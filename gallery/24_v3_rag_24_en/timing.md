@@ -76,22 +76,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I was wondering… where does the na | S2 Oh, a place name… interesting. Was | S3 Hmm, so it’s old… did they spread  | S4 That makes sense, I know my ancest
 
-     0.00s  user  발화 시작: I was wondering about the name du Plessis… it seems quite co
-     4.19s  <ret> 발화 (turn1 첫 프레임)
-     4.25s  user  발화 끝
-     4.26s  agent 발화 시작: <ret> The name du Plessis originates from France, and specif
-     5.39s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.24s]: Du Plessis is a French surname, originating as a title denoting “of Pl
-    10.38s  user  발화 시작: Mhm.
-    11.01s  user  발화 끝
-    12.45s  user  발화 시작: Oh, France! I always assumed it was… well, something else.
-    12.50s  agent 발화 끝
-    16.68s  <ret> 발화 (turn4 첫 프레임)
-    17.07s  agent 발화 시작: <ret> It actually became particularly established in South A
-    17.12s  user  발화 끝
-    18.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: The name du Plessis originates from France, and specifically relates t
-    26.34s  agent 발화 끝
-    26.59s  user  발화 시작: Huguenots… that’s right, they fled religious persecution, di
-    31.87s  user  발화 끝
-    31.90s  agent 발화 시작: Yes, many did seek refuge elsewhere, and that movement certa
-    40.94s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering… where does the name du Plessis actually com
+     6.63s  <ret> 발화 (turn1 첫 프레임)
+     6.67s  user  발화 끝
+     6.71s  agent 발화 시작: <ret> The name du Plessis originated as a toponymic name, me
+     7.83s  ⚡SPAN 주입 [d'=1.20s / d_lead=11.09s]: Du Plessis is a French surname, originating as a toponymic name for so
+    15.01s  user  발화 시작: Mhm.
+    15.51s  user  발화 끝
+    17.77s  user  발화 시작: Oh, a place name… interesting. Was it a common name, then?
+    17.79s  agent 발화 끝
+    21.73s  <ret> 발화 (turn4 첫 프레임)
+    22.11s  agent 발화 시작: <ret> The Plessis family was quite prominent, actually, beco
+    22.16s  user  발화 끝
+    23.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.07s]: The Plessis family was a noble family of French origin, rising to prom
+    31.19s  agent 발화 끝
+    31.47s  user  발화 시작: Hmm, so it’s old… did they spread beyond France at all?
+    35.85s  <ret> 발화 (turn6 첫 프레임)
+    35.92s  agent 발화 시작: <ret> Yes, many people with the name du Plessis emigrated to
+    36.06s  user  발화 끝
+    36.81s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.21s]: Huguenots bearing the name du Plessis emigrated to South Africa in the
+    43.99s  user  발화 시작: That makes sense, I know my ancestors did come from South Af
+    44.13s  agent 발화 끝
+    49.27s  agent 발화 시작: You’re very welcome. It’s wonderful to learn about where we 
+    49.41s  user  발화 끝
+    56.03s  agent 발화 끝

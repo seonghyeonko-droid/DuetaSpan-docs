@@ -76,119 +76,99 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 For two people. | S3 Is there parking nearby? | S4 Could you set a reminder for me to
+# EXAMINER(FDB-v2) 단계: S1 What’s the price range at Zuni Caf | S2 Seven thirty. | S3 Hmm, Spalding— | S4 Yes, exactly.
 
-     0.00s  user  발화 시작: What's the price range at Zuni Cafe?
-     1.81s  <ret> 발화 (turn1 첫 프레임)
-     2.04s  agent 발화 시작: <ret> Zuni Cafe’s price level is three, which generally mean
-     2.26s  user  발화 끝
-     2.85s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.93s]: [{"price_level": 3}]
-     3.37s  user  발화 시작: Uh-huh.
-     3.91s  user  발화 끝
-     5.97s  agent 발화 끝
-     5.98s  user  발화 시작: And what are their hours today?
-     7.38s  <ret> 발화 (turn4 첫 프레임)
-     7.62s  agent 발화 시작: <ret> Today, Zuni Cafe is open from eleven thirty AM to ten 
-     7.77s  user  발화 끝
-     7.88s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.77s]: [{"opening_hours": {"weekday": [{"day": 0, "hours": "11:30 AM – 10 PM"
-    12.38s  agent 발화 끝
-    12.55s  user  발화 시작: That’s good. I’m thinking of going there.
-    14.76s  agent 발화 시작: That sounds lovely. It’s a San Francisco institution.
-    14.90s  user  발화 끝
-    16.17s  user  발화 시작: Right.
-    16.81s  user  발화 끝
-    18.58s  user  발화 시작: Do they take reservations?
-    18.60s  agent 발화 끝
-    19.83s  <ret> 발화 (turn9 첫 프레임)
-    20.06s  agent 발화 시작: <ret> Yes, Zuni Cafe does accept reservations.
-    20.23s  user  발화 끝
-    21.81s  user  발화 시작: Yeah.
-    21.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: [{"reservations": true}]
-    22.30s  user  발화 끝
-    23.90s  agent 발화 끝
-    24.20s  user  발화 시작: Okay, can you make one for me tomorrow at seven?
-    27.00s  agent 발화 시작: To confirm, you’d like a table for tomorrow at seven…
-    27.11s  user  발화 끝
-    28.32s  user  발화 시작: Uh-huh.
-    28.81s  user  발화 끝
-    30.61s  agent 발화 끝
-    31.05s  user  발화 시작: For two people.
-    31.72s  <ret> 발화 (turn15 첫 프레임)
-    31.96s  agent 발화 시작: <ret> I’ve reserved a table for two at Zuni Cafe tomorrow at
-    32.06s  user  발화 끝
-    33.08s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.11s]: [{"confirmation_number": "ZX7892"}]
-    39.88s  user  발화 시작: Great!
-    40.07s  agent 발화 끝
-    40.36s  agent 발화 시작: I’m glad I could help with that. A good meal can really…
-    40.51s  user  발화 끝
-    44.01s  agent 발화 끝
-    44.17s  user  발화 시작: …Do they have outdoor seating?
-    45.48s  <ret> 발화 (turn19 첫 프레임)
-    45.79s  agent 발화 시작: <ret> …Zuni Cafe does offer some outdoor seating options.
-    45.92s  user  발화 끝
-    46.92s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.83s]: [{"outdoor_seating": true}]
-    49.23s  user  발화 시작: Wonderful. What’s the weather like there tomorrow?
-    49.62s  agent 발화 끝
-    51.56s  <ret> 발화 (turn21 첫 프레임)
-    51.96s  agent 발화 시작: <ret> Tomorrow in San Francisco will be partly cloudy with a
-    52.10s  user  발화 끝
-    53.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: [{"forecast": "Partly cloudy, high of 68 degrees."}]
-    57.28s  agent 발화 끝
-    57.31s  user  발화 시작: That sounds pleasant.
-    58.78s  user  발화 끝
-    58.91s  agent 발화 시작: It does, doesn't it? Ideal for enjoying a meal outdoors.
-    63.59s  agent 발화 끝
-    63.76s  user  발화 시작: Is there parking nearby?
-    64.94s  <ret> 발화 (turn25 첫 프레임)
-    65.26s  agent 발화 시작: <ret> Parking near Zuni Cafe is limited to street parking.
-    65.32s  user  발화 끝
-    66.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: [{"parking_options": "Limited street parking"}]
-    68.99s  user  발화 시작: Hmm, okay. Is there a garage within walking distance?
-    69.01s  agent 발화 끝
-    73.01s  <ret> 발화 (turn27 첫 프레임)
-    73.08s  agent 발화 시작: <ret> The Post Street Garage is point three miles from Zuni 
-    73.24s  user  발화 끝
-    74.13s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.59s]: [{"name": "Post Street Garage", "distance": "0.3 miles"}]
-    75.39s  user  발화 시작: Yeah.
-    76.02s  user  발화 끝
-    77.67s  agent 발화 끝
-    77.87s  user  발화 시작: Okay, good to know.
-    79.16s  user  발화 끝
-    79.25s  agent 발화 시작: Knowing your parking options can make things much easier.
-    80.96s  user  발화 시작: Right.
-    81.60s  user  발화 끝
-    82.86s  agent 발화 끝
-    84.53s  user  발화 시작: What’s the address of the garage?
-    86.16s  <ret> 발화 (turn33 첫 프레임)
-    86.51s  user  발화 끝
-    86.56s  agent 발화 시작: <ret> The address for Post Street Garage is nineteen ninety 
-    88.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: [{"address": "1990 Post St, San Francisco, CA 94115"}]
-    93.62s  user  발화 시작: Perfect. Thank you.
-    93.87s  agent 발화 끝
-    94.62s  agent 발화 시작: You’re very welcome. I hope you have a wonderful evening.
-    94.81s  user  발화 끝
-    98.46s  agent 발화 끝
-    99.22s  user  발화 시작: Could you set a reminder for me to leave for the reservation
-   102.45s  <ret> 발화 (turn37 첫 프레임)
-   102.84s  agent 발화 시작: <ret> I’ve set a reminder for six thirty PM to leave for you
-   102.96s  user  발화 끝
-   104.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: [{"reminder_id": "RM1234"}]
-   108.30s  user  발화 시작: Yeah.
-   108.94s  user  발화 끝
-   111.40s  user  발화 시작: Great!
-   111.41s  agent 발화 끝
-   112.03s  user  발화 끝
-   112.28s  agent 발화 시작: Preparing for a nice evening is half the enjoyment, isn’t it
-   115.98s  agent 발화 끝
-   116.72s  user  발화 시작: It is. One last thing—can you check the traffic?
-   119.70s  <ret> 발화 (turn42 첫 프레임)
-   119.86s  agent 발화 시작: <ret> There’s moderate traffic, with a fifteen-minute delay 
-   119.96s  user  발화 끝
-   121.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: [{"traffic_condition": "Moderate traffic, 15-minute delay"}]
-   123.10s  user  발화 시작: Right.
-   123.73s  user  발화 끝
-   124.49s  agent 발화 끝
-   125.80s  user  발화 시작: Okay, thanks so much.
-   127.22s  agent 발화 시작: Enjoy your trip.
-   127.27s  user  발화 끝
-   128.64s  agent 발화 끝
+     0.00s  user  발화 시작: What’s the price range at Zuni Cafe?
+     1.90s  <ret> 발화 (turn1 첫 프레임)
+     2.13s  agent 발화 시작: <ret> Zuni Cafe is in the moderate price range. It’s a popul
+     2.31s  user  발화 끝
+     3.10s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.67s]: (tool result) $$ (moderate)
+     4.48s  user  발화 시작: Uh-huh.
+     4.93s  user  발화 끝
+     8.80s  agent 발화 끝
+     9.56s  user  발화 시작: Oh, good to know. And what’s the address?
+    12.16s  <ret> 발화 (turn4 첫 프레임)
+    12.39s  agent 발화 시작: <ret> The address is 1658 Market Street, San Francisco. It’s
+    12.52s  user  발화 끝
+    12.66s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.30s]: (tool result) 1658 Market St, San Francisco, CA 94102, United States
+    18.63s  user  발화 시작: Do they take reservations?
+    18.69s  agent 발화 끝
+    20.21s  <ret> 발화 (turn6 첫 프레임)
+    20.24s  user  발화 끝
+    20.37s  agent 발화 시작: <ret> Yes, reservations are recommended at Zuni Cafe. It get
+    21.41s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.09s]: (tool result) Reservations recommended
+    22.22s  user  발화 시작: Right.
+    22.85s  user  발화 끝
+    25.46s  agent 발화 끝
+    26.82s  user  발화 시작: Okay, can you book a table for two on Friday?
+    29.19s  agent 발화 시작: To confirm, Friday of this week? And what time would you pre
+    29.41s  user  발화 끝
+    31.33s  user  발화 시작: Yeah.
+    31.83s  user  발화 끝
+    33.86s  agent 발화 끝
+    34.58s  user  발화 시작: Seven thirty.
+    35.36s  <ret> 발화 (turn12 첫 프레임)
+    35.59s  agent 발화 시작: <ret> I’ve booked a table for two at Zuni Cafe on Friday at 
+    35.59s  user  발화 끝
+    36.72s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.97s]: (tool result) Confirmed: Zuni Cafe, July 10, 7:30 PM, party of 2, ID: 
+    39.51s  user  발화 시작: Yeah.
+    40.01s  user  발화 끝
+    43.40s  user  발화 시작: Perfect.
+    43.56s  agent 발화 끝
+    44.08s  agent 발화 시작: I’m glad I could assist with that. It's a lovely place to un
+    44.18s  user  발화 끝
+    50.96s  user  발화 시작: Actually, is there a good jazz club nearby?
+    50.98s  agent 발화 끝
+    53.11s  <ret> 발화 (turn17 첫 프레임)
+    53.42s  agent 발화 시작: <ret> SFJAZZ Center is 780 meters away. Grant & Green is 1.1
+    53.68s  user  발화 끝
+    55.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) SFJAZZ Center (780 m), Grant & Green (1.1 km), Bissap Ba
+    63.90s  agent 발화 끝
+    64.40s  user  발화 시작: SFJAZZ sounds good. What’s their schedule like for Friday?
+    67.84s  <ret> 발화 (turn19 첫 프레임)
+    68.24s  agent 발화 시작: <ret> Esperanza Spalding plays at 8:00 PM on Friday. Theo Cr
+    68.29s  user  발화 끝
+    69.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.19s]: (tool result) July 10, 8:00 PM: Esperanza Spalding; July 10, 10:30 PM:
+    75.42s  agent 발화 끝
+    75.57s  user  발화 시작: Hmm, Spalding—
+    76.77s  user  발화 시작: …Can you check ticket prices for Spalding?
+    76.99s  user  발화 끝
+    78.77s  <ret> 발화 (turn22 첫 프레임)
+    79.17s  agent 발화 시작: <ret> Tickets for Esperanza Spalding range from sixty-five t
+    79.30s  user  발화 끝
+    80.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Esperanza Spalding: $65 - $125
+    84.86s  agent 발화 끝
+    85.15s  user  발화 시작: Okay, let’s get two tickets for sixty-five dollars.
+    87.76s  <ret> 발화 (turn24 첫 프레임)
+    88.16s  agent 발화 시작: <ret> Two tickets for Esperanza Spalding at sixty-five dolla
+    88.25s  user  발화 끝
+    89.68s  ⚡SPAN 주입 [d'=1.92s / d_lead=7.42s]: (tool result) Confirmed: Esperanza Spalding, July 10, 2 tickets @ $65,
+    95.57s  agent 발화 끝
+    96.44s  user  발화 시작: Wonderful. And can you set a reminder for six thirty on Frid
+   100.51s  user  발화 끝
+   100.65s  agent 발화 시작: That’s to remind you about your dinner and the concert?
+   102.11s  user  발화 시작: Yeah.
+   102.60s  user  발화 끝
+   103.60s  agent 발화 끝
+   105.39s  user  발화 시작: Yes, exactly.
+   106.19s  <ret> 발화 (turn29 첫 프레임)
+   106.50s  agent 발화 시작: <ret> A reminder is set for 6:30 PM on Friday for your dinne
+   106.77s  user  발화 끝
+   108.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Reminder created: July 10, 6:30 PM, Zuni Cafe & SFJAZZ, 
+   111.94s  user  발화 시작: Yeah.
+   112.44s  user  발화 끝
+   114.05s  agent 발화 끝
+   114.20s  user  발화 시작: That’s great, thank you.
+   115.41s  agent 발화 시작: You’re very welcome. A little planning can make all the diff
+   115.63s  user  발화 끝
+   121.06s  agent 발화 끝
+   121.36s  user  발화 시작: It really does.
+   122.38s  agent 발화 시작: I'm pleased I could help curate a relaxing Friday for you.
+   122.54s  user  발화 끝
+   123.56s  user  발화 시작: Right.
+   124.24s  user  발화 끝
+   126.39s  user  발화 시작: Yes, you’ve been very helpful.
+   126.46s  agent 발화 끝
+   127.99s  user  발화 끝
+   128.40s  agent 발화 시작: Enjoy your trip.
+   129.87s  agent 발화 끝

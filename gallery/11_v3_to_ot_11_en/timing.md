@@ -68,25 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, do you know when the A's  | S2 Oh, seriously? Did you bring the m | S3 Wow, that *was* a while ago. Hmm.  | S4 That’s recent! Okay, one more – th
+# EXAMINER(FDB-v2) 단계: S1 Do you know when the Oakland A's w | S2 Can you believe how long ago that  | S3 So, who pitched the no-hitter agai | S4 Perfect, thanks so much! I really 
 
-     0.00s  user  발화 시작: Hey, uh, do you know when the A's were last no-hit? It feels
-     4.79s  <ret> 발화 (turn1 첫 프레임)
-     5.18s  agent 발화 시작: <ret> The last time the A's were no-hit was… …April twenty-f
-     5.32s  user  발화 끝
-     6.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.61s]: The last time the Oakland Athletics were no-hit was May 9, 2023, when 
-    23.61s  user  발화 시작: Oh, seriously? Did you bring the mail in?
-    23.79s  agent 발화 끝
-    26.30s  user  발화 시작: Wow, that *was* a while ago. Hmm. What about the Mariners?
-    26.43s  user  발화 끝
-    30.98s  <ret> 발화 (turn4 첫 프레임)
-    31.21s  agent 발화 시작: <ret> The last time the Mariners were no-hit was… …June eigh
-    31.40s  user  발화 끝
-    32.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.98s]: The Seattle Mariners were last no-hit on June 21, 2023, by Domingo Ger
-    50.19s  agent 발화 끝
-    50.37s  user  발화 시작: That’s recent! Okay, one more – the Dodgers?
-    53.84s  <ret> 발화 (turn6 첫 프레임)
-    53.91s  agent 발화 시작: <ret> The last time the Dodgers were no-hit was… …September 
-    54.02s  user  발화 끝
-    55.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.61s]: The last time the Dodgers were no-hit was August 31, 2023, by Taijuan 
-    70.52s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know when the Oakland A's were last no-hit? I’m tryin
+     4.37s  <ret> 발화 (turn1 첫 프레임)
+     4.68s  user  발화 끝
+     4.76s  agent 발화 시작: <ret> The last time the A's were no-hit was April twenty-fir
+     6.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: The Oakland Athletics were last no-hit on April 21, 2018.
+    12.58s  user  발화 시작: Wow, that long ago! Uhhh, I thought it was more recent.
+    12.78s  agent 발화 끝
+    16.80s  user  발화 시작: Can you believe how long ago that was?
+    16.97s  user  발화 끝
+    18.91s  user  발화 시작: So, who pitched the no-hitter against them?
+    19.05s  user  발화 끝
+    21.18s  <ret> 발화 (turn5 첫 프레임)
+    21.41s  agent 발화 시작: <ret> James Paxton of the Seattle Mariners pitched that game
+    21.68s  user  발화 끝
+    23.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: James Paxton pitched a no-hitter against the Oakland Athletics on Apri
+    30.69s  agent 발화 끝
+    32.24s  user  발화 시작: Perfect, thanks so much! I really appreciate it.
+    34.78s  user  발화 끝

@@ -55,63 +55,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Kliana, do you know who wrote “ | S2 Björn Ulvaeus, okay. Was he in ABB | S3 Really? Like what musicals? | S4 Wow, that’s a long run. Um, do you
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 What did they do *before* ABBA? Th | S3 I’m thinking of visiting Stockholm | S4 That sounds lovely, actually. Mayb
 
-     0.00s  user  발화 시작: Hi Kliana, do you know who wrote “My Love, My Life” from Mam
-     5.90s  <ret> 발화 (turn1 첫 프레임)
-     6.12s  user  발화 끝
-     6.14s  agent 발화 시작: <ret> That’s a lovely choice, it truly is a classic. The son
-     7.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: “My Love, My Life” was written by Björn Ulvaeus and Benny Andersson.
-    14.95s  user  발화 시작: Oh, go on then, tell me!
-    15.03s  agent 발화 끝
-    16.49s  <ret> 발화 (turn3 첫 프레임)
-    16.70s  user  발화 끝
-    16.73s  agent 발화 시작: <ret> “My Love, My Life” was penned by Björn Ulvaeus… and Be
-    18.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: Björn Ulvaeus and Benny Andersson are two members of the Swedish pop g
-    24.14s  agent 발화 끝
-    24.28s  user  발화 시작: Björn Ulvaeus, okay. Was he in ABBA?
-    27.88s  <ret> 발화 (turn5 첫 프레임)
-    28.20s  agent 발화 시작: <ret> Yes, Björn Ulvaeus was one of the founding members of 
-    28.30s  user  발화 끝
-    29.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: Björn Ulvaeus was a member of the Swedish pop group ABBA.
-    32.05s  user  발화 시작: Yeah.
-    32.54s  user  발화 끝
-    37.23s  agent 발화 끝
-    37.58s  user  발화 시작: That makes sense. Hmmm, what other songs did he write?
-    40.92s  <ret> 발화 (turn8 첫 프레임)
-    41.07s  agent 발화 시작: <ret> He has quite an extensive catalogue! Beyond ABBA, he’s
-    41.28s  user  발화 끝
-    42.92s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.85s]: 10.0°C, humidity 87%, wind 21.6 km/h
-    43.44s  user  발화 시작: Yeah.
-    44.03s  user  발화 끝
-    47.92s  agent 발화 끝
-    49.05s  user  발화 시작: Really? Like what musicals?
-    51.24s  <ret> 발화 (turn11 첫 프레임)
-    51.31s  agent 발화 시작: <ret> He co-wrote the music for… …the hugely successful musi
-    51.59s  user  발화 끝
-    52.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.33s]: He co-wrote the musicals *Chess*, *Kristina from Duvemåla*, and *Mamma
-    61.65s  user  발화 시작: Uh-huh.
-    62.14s  user  발화 끝
-    64.85s  agent 발화 끝
-    64.96s  user  발화 시작: Chess, interesting. Was it popular?
-    67.46s  <ret> 발화 (turn14 첫 프레임)
-    67.77s  agent 발화 시작: <ret> “Chess” ran for over three years in London’s West End 
-    67.91s  user  발화 끝
-    69.22s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.19s]: Chess was a hugely successful musical.
-    75.60s  user  발화 시작: Yeah.
-    76.05s  user  발화 끝
-    77.83s  user  발화 시작: Wow, that’s a long run. Um, do you know anything about his l
-    77.97s  agent 발화 끝
-    82.10s  agent 발화 시작: He had a fairly typical upbringing in Sweden, and developed 
-    82.18s  user  발화 끝
-    85.70s  user  발화 시작: Uh-huh.
-    86.20s  user  발화 끝
-    88.11s  agent 발화 시작: It’s wonderful to see how early passions can blossom into su
-    88.22s  agent 발화 끝
-    90.84s  user  발화 시작: Oh.
-    91.33s  user  발화 끝
-    93.38s  user  발화 시작: It really is. Thanks so much for all the information, Kliana
-    93.44s  agent 발화 끝
-    97.15s  agent 발화 시작: You’re very welcome. I’m glad I could share a bit about Björ
-    97.21s  user  발화 끝
-   102.10s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
+     4.83s  <ret> 발화 (turn1 첫 프레임)
+     5.04s  user  발화 끝
+     5.06s  agent 발화 시작: <ret> That song is lovely, isn’t it? Björn Ulvaeus composed 
+     6.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: Björn Ulvaeus composed "My Love, My Life" with lyrics by Benny Anderss
+    12.31s  user  발화 시작: Oh, Andersson and Ulvaeus… they did a lot of ABBA’s music, r
+    12.38s  agent 발화 끝
+    16.85s  user  발화 끝
+    17.00s  agent 발화 시작: Yes, they were the primary songwriters for ABBA, a very succ
+    22.04s  agent 발화 끝
+    22.16s  user  발화 시작: I’m trying to get into their other work, but it’s hard to kn
+    26.09s  agent 발화 시작: It can be overwhelming with such a large catalog. Perhaps ex
+    26.10s  user  발화 끝
+    33.55s  agent 발화 끝
+    34.36s  user  발화 시작: What did they do *before* ABBA? That sounds like a good plac
+    38.46s  <ret> 발화 (turn7 첫 프레임)
+    38.86s  agent 발화 시작: <ret> They actually started writing songs for other artists 
+    38.99s  user  발화 끝
+    40.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: Benny Andersson and Björn Ulvaeus wrote songs for other artists in the
+    45.44s  agent 발화 끝
+    47.04s  user  발화 시작: Hmm, interesting. Do you know any of those songs?
+    50.46s  user  발화 끝
+    50.72s  <ret> 발화 (turn9 첫 프레임)
+    51.03s  agent 발화 시작: <ret> That's a bit outside my area of expertise, I'm afraid.
+    52.72s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.64s]: The population of Ulaanbaatar, Mongolia is 1,672,298 as of 2024.
+    54.27s  user  발화 시작: Yeah.
+    54.71s  user  발화 끝
+    58.66s  agent 발화 끝
+    59.30s  user  발화 시작: Oh, right, you help people settle in. I'm not moving anywher
+    65.40s  agent 발화 시작: Music is a wonderful way to connect with a place, even from 
+    65.46s  user  발화 끝
+    66.90s  user  발화 시작: Yeah.
+    67.36s  user  발화 끝
+    69.84s  agent 발화 끝
+    69.87s  user  발화 시작: I’m thinking of visiting Stockholm someday. Is it a nice cit
+    73.23s  <ret> 발화 (turn15 첫 프레임)
+    73.62s  agent 발화 시작: <ret> Stockholm is quite beautiful, built on fourteen island
+    73.85s  user  발화 끝
+    75.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: Stockholm is built on fourteen islands and is connected by over fifty 
+    78.36s  user  발화 시작: Uh-huh.
+    78.80s  user  발화 끝
+    79.96s  agent 발화 끝
+    80.38s  user  발화 시작: Wow, that sounds… complicated. Is it easy to get around?
+    84.70s  agent 발화 시작: It's surprisingly easy! The public transport system is very 
+    84.73s  user  발화 끝
+    89.35s  user  발화 시작: Yeah.
+    89.79s  user  발화 끝
+    90.85s  agent 발화 끝
+    90.91s  user  발화 시작: Good to know. What's the weather like there in July?
+    94.63s  <ret> 발화 (turn21 첫 프레임)
+    94.79s  agent 발화 시작: <ret> In July, Stockholm typically sees temperatures around 
+    94.98s  user  발화 끝
+    96.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: 20.0°C, humidity 65%, wind 3.2 km/h
+   101.12s  user  발화 시작: Oh.
+   101.56s  user  발화 끝
+   106.57s  agent 발화 끝
+   106.72s  user  발화 시작: That sounds lovely, actually. Maybe I should start planning…
+   110.53s  agent 발화 시작: That sounds like a wonderful idea. I’m glad I could share a 
+   110.56s  user  발화 끝
+   116.05s  agent 발화 끝
+   116.25s  user  발화 시작: Thanks so much for your help, Kliana.
+   118.24s  agent 발화 시작: You are very welcome. Enjoy planning your potential trip.
+   118.37s  user  발화 끝
+   122.50s  agent 발화 끝

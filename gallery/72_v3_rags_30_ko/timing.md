@@ -30,7 +30,7 @@
 #     {
 #       "date": "2025-08-05",
 #       "category": "home",
-#       "text": "User's home address is 857 Cedar Lane."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     },
 #     {
 #       "date": "2025-06-22",
@@ -56,9 +56,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 유럽에서 인쇄술이 언제 처음 발명되었는지 궁금해요.
-     3.57s  <ret> 발화 (turn1 첫 프레임)
-     3.73s  agent 발화 시작: <ret> 유럽에서 인쇄술이 처음 발명된 건… 천사백사십년쯤 된답니다. 새로운 지식을 얻으시는 걸 도와드릴 
-     3.83s  user  발화 끝
-     5.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.52s]: 금속 활자를 이용한 인쇄술은 13세기 중반 독일에서 요하네스 구텐베르크에 의해 발명되었습니다.
-    16.25s  agent 발화 끝
+     0.00s  user  발화 시작: 유럽에서 인쇄술은 언제 발명되었나요?
+     2.50s  <ret> 발화 (turn1 첫 프레임)
+     2.66s  agent 발화 시작: <ret> 유럽에서 인쇄술이 발명된 건 대략 천사백 사십 년쯤이었어요. 새로운 지식의 확산에 큰 영향을 주었
+     2.77s  user  발화 끝
+     4.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: The printing press was invented in Europe around 1440.
+     9.51s  agent 발화 끝

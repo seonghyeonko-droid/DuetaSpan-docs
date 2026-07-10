@@ -35,24 +35,24 @@
 #     {
 #       "date": "2025-11-04",
 #       "category": "home",
-#       "text": "User's home address is 203 Birch Road."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2025-08-04",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-22",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
@@ -66,79 +66,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오나요, 이천십오년 기준으로요 | S2 'Confident'… 음, 그 앨범의 프로듀서는 누구였나요? | S3 육위까지 올랐다니, 정말 대단하네요. | S4 그렇군요. 앨범 발매 이후 콘서트 투어는 진행했나요?
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오나요, 이천십오년에? | S2 ‘Skyscraper’를 가장 좋아해요. | S3 …그 앨범에 수록된 다른 곡들도 궁금해요. | S4 맞아요, 저도 그래요.
 
-     0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오나요, 이천십오년 기준으로요?
-     4.20s  <ret> 발화 (turn1 첫 프레임)
-     4.36s  agent 발화 시작: <ret> 두 분이 궁금해하시는 데미 로바토의 새 앨범은… 이천십오년 십월에 발매될 예정입니다. 혹시 다른 
-     4.49s  user  발화 끝
-     6.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.31s]: (no information found)
-     7.94s  user  발화 시작: 음.
-     8.44s  user  발화 끝
-    13.68s  agent 발화 끝
-    14.77s  user  발화 시작: 음, 그럼 그 앨범에 수록된 곡들은 어떤 스타일인가요?
-    19.16s  user  발화 끝
-    19.29s  <ret> 발화 (turn4 첫 프레임)
-    19.36s  agent 발화 시작: <ret> 데미 로바토의 앨범은 다양한 스타일을 아우르지만, 주로 팝과 R&B 장르가 주를 이루고 있습니다.
-    21.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: 데미 로바토의 이천십오년 십월에 발매될 앨범은 팝 스타일입니다.
-    29.05s  agent 발화 끝
-    29.48s  user  발화 시작: 아, R&B 스타일이군요. 그 앨범의 제목이 뭐였죠?
-    32.79s  <ret> 발화 (turn6 첫 프레임)
-    33.11s  agent 발화 시작: <ret> 앨범 제목은 'Confident'입니다. 데미 로바토가 자신감을 표현한 앨범이라고 하네요… Con
-    33.18s  user  발화 끝
-    33.83s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.44s]: 두 분이 궁금해하시는 데미 로바토의 새 앨범은… 이천십오년 십월에 발매될 예정입니다.
-    39.55s  agent 발화 끝
-    39.94s  user  발화 시작: 'Confident'… 음, 그 앨범의 프로듀서는 누구였나요?
-    44.12s  <ret> 발화 (turn8 첫 프레임)
-    44.28s  agent 발화 시작: <ret> 'Confident' 앨범은 여러 프로듀서가 참여했지만…
-    44.33s  user  발화 끝
-    45.80s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.28s]: Max Martin, Shellback, and others contributed to the production of Dem
-    47.43s  user  발화 시작: …그 앨범에서 가장 인기 있었던 노래는 뭐였죠?
-    47.57s  agent 발화 끝
-    50.97s  <ret> 발화 (turn10 첫 프레임)
-    51.26s  user  발화 끝
-    51.29s  agent 발화 시작: <ret> 가장 인기 있었던 노래는 'Cool for the Summer'입니다. 많은 사랑을 받았죠… So
-    52.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: 'Confident' 앨범에서 가장 인기 있었던 노래는 'Sorry Not Sorry'였습니다.
-    57.59s  agent 발화 끝
-    58.25s  user  발화 시작: 'Cool for the Summer'였군요. 그 노래가 빌보드 차트에서 몇 위까지 올랐나요?
-    62.56s  <ret> 발화 (turn12 첫 프레임)
-    62.88s  agent 발화 시작: <ret> 'Cool for the Summer'는 빌보드 핫 백 차트에서 육위까지 올랐습니다. 꽤 높은 순
-    63.06s  user  발화 끝
-    64.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: 'Cool for the Summer'는 빌보드 핫 100 차트에서 7위까지 올랐습니다.
-    66.07s  user  발화 시작: 예.
-    66.61s  user  발화 끝
-    70.26s  agent 발화 끝
-    70.39s  user  발화 시작: 육위까지 올랐다니, 정말 대단하네요.
-    72.94s  <ret> 발화 (turn15 첫 프레임)
-    73.10s  agent 발화 시작: <ret> 네, 맞아요. 데미 로바토는 정말 재능 있는 아티스트인 것 같아요. 그런 재능을 바탕으로 계속해서
-    73.30s  user  발화 끝
-    74.94s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=8.53s]: Lisbon (38.70775, -9.13659): Lisboa Story Center (113 m), Pelourinho d
-    81.64s  agent 발화 끝
-    81.78s  user  발화 시작: 맞아요, 정말 멋진 가수예요. 그 앨범 발매 당시, 데미 로바토는 어떤 활동을 하고 있었나요?
-    87.91s  <ret> 발화 (turn17 첫 프레임)
-    88.06s  agent 발화 시작: <ret> 앨범 발매 당시 데미 로바토는 'The X Factor USA'의 심사위원으로 활동하고 있었습니다
-    88.27s  user  발화 끝
-    89.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.16s]: 'Confident' 앨범이 발매된 2015년, 데미 로바토는 'Neon Lights Tour'를 진행하고 있었습니다.
-    92.39s  user  발화 시작: 네.
-    92.89s  user  발화 끝
-   100.20s  user  발화 시작: 아, 'The X Factor USA' 심사위원이었군요.
-   100.22s  agent 발화 끝
-   103.62s  <ret> 발화 (turn20 첫 프레임)
-   103.78s  agent 발화 시작: <ret> 네, 그때부터 데미 로바토는 더욱 많은 팬들을 확보하고 인지도를 높였던 것 같습니다… 네온 라이츠
-   103.99s  user  발화 끝
-   105.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: 앨범 발매 당시 데미 로바토는 'The X Factor USA'의 심사위원으로 활동하고 있었습니다.
-   109.80s  user  발화 시작: 네.
-   110.26s  user  발화 끝
-   111.44s  user  발화 시작: 그렇군요. 앨범 발매 이후 콘서트 투어는 진행했나요?
-   111.66s  agent 발화 끝
-   115.02s  <ret> 발화 (turn23 첫 프레임)
-   115.27s  user  발화 끝
-   115.42s  agent 발화 시작: <ret> 네, 'Confident' 앨범 발매 이후 'The Future Is Now Tour'라는 콘서트
-   117.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.89s]: 앨범 발매 당시 데미 로바토는 네온 라이츠 투어를 진행하고 있었습니다.
-   123.97s  user  발화 시작: 맞아요.
-   124.78s  user  발화 끝
-   128.32s  agent 발화 끝
-   128.35s  user  발화 시작: 'The Future Is Now Tour'… 좋은 하루 보내세요.
-   131.45s  agent 발화 시작: 네, 감사합니다.
-   131.57s  user  발화 끝
-   132.88s  agent 발화 끝
+     0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오나요, 이천십오년에?
+     4.72s  user  발화 끝
+     4.95s  <ret> 발화 (turn1 첫 프레임)
+     5.11s  agent 발화 시작: <ret> 이천십오년 십월에 새 앨범이 발매될 예정입니다. 혹시 데미 로바토의 다른 앨범에 대해서도 궁금하신
+     6.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: October 2015.
+    11.79s  user  발화 시작: 아, 네.
+    11.83s  agent 발화 끝
+    12.34s  agent 발화 시작: 데미 로바토는 다양한 장르를 소화하는 가수로 유명하죠. 그녀의 음악 스타일은 어떻게 생각하시나요?
+    12.48s  user  발화 끝
+    18.29s  user  발화 시작: 음, 저는 그녀의 발라드 스타일을 좋아해요.
+    18.36s  agent 발화 끝
+    21.43s  agent 발화 시작: 발라드 스타일을 좋아하시는군요. 감성적인 가사와 멜로디가 특징이죠. 혹시 특별히 좋아하는 곡이 있으신가요?
+    21.48s  user  발화 끝
+    26.93s  user  발화 시작: 음.
+    27.57s  user  발화 끝
+    29.58s  agent 발화 끝
+    31.94s  user  발화 시작: ‘Skyscraper’를 가장 좋아해요.
+    34.20s  <ret> 발화 (turn8 첫 프레임)
+    34.25s  user  발화 끝
+    34.44s  agent 발화 시작: <ret> 죄송하지만, ‘Skyscraper’에 대한 추가 정보는 찾을 수 없었습니다. 다른 곡에 대해서도 
+    36.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (no information found)
+    40.13s  agent 발화 끝
+    41.10s  user  발화 시작: 다른 곡도 괜찮아요.
+    42.70s  user  발화 끝
+    42.86s  agent 발화 시작: 그녀의 다른 인기곡으로는 ‘Sorry Not Sorry’나 ‘Heart Attack’이 있습니다. 들어보신 
+    47.85s  agent 발화 끝
+    48.21s  user  발화 시작: ‘Heart Attack’도 좋아요.
+    49.59s  user  발화 끝
+    49.88s  agent 발화 시작: ‘Heart Attack’도 좋아하시는군요. 그 곡은 이천십삼년에 발매되었는데, 당시 큰 인기를 끌었습니다—
+    55.77s  user  발화 시작: …그 앨범에 수록된 다른 곡들도 궁금해요.
+    56.36s  agent 발화 끝
+    59.47s  user  발화 끝
+    59.67s  agent 발화 시작: 아, 이천십삼년 앨범에 수록된 다른 곡들이 궁금하시군요. ‘Made to Love You’나 ‘In Case
+    62.82s  user  발화 시작: 예.
+    63.22s  user  발화 끝
+    66.94s  agent 발화 끝
+    67.09s  user  발화 시작: 오, ‘In Case You Forgot’도 듣고 싶네요.
+    70.23s  user  발화 끝
+    70.30s  agent 발화 시작: ‘In Case You Forgot’은 강렬한 가사와 퍼포먼스가 인상적인 곡입니다. 뮤직비디오도 꼭 한번 보
+    77.58s  agent 발화 끝
+    77.74s  user  발화 시작: 알겠습니다. 뮤직비디오도 볼게요.
+    80.21s  <ret> 발화 (turn19 첫 프레임)
+    80.41s  user  발화 끝
+    80.44s  agent 발화 시작: <ret> 데미 로바토의 음악은 많은 사람들에게 영감을 주죠. 그녀의 음악을 통해 위로를 받거나 공감하는 분
+    82.21s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.74s]: The capital of Australia is Canberra.
+    83.16s  user  발화 시작: 네.
+    83.75s  user  발화 끝
+    88.07s  user  발화 시작: 맞아요, 저도 그래요.
+    88.18s  agent 발화 끝
+    89.63s  user  발화 끝
+    89.69s  agent 발화 시작: 그녀의 음악이 당신에게 어떤 의미를 가지는지 궁금하네요. 혹시 음악을 통해 얻는 특별한 경험이 있으신가요?
+    94.97s  user  발화 시작: 네.
+    95.65s  user  발화 끝
+    96.56s  user  발화 시작: 음악은 제 삶의 큰 부분이에요.
+    96.59s  agent 발화 끝
+    99.05s  agent 발화 시작: 음악이 삶의 큰 부분이라는 말씀, 정말 공감됩니다. 음악은 우리의 감정을 표현하고 치유하는 힘을 가지고 있죠
+    99.10s  user  발화 끝
+   104.36s  user  발화 시작: 맞아요.
+   105.18s  user  발화 끝
+   107.08s  user  발화 시작: 네, 정말 그래요.
+   107.12s  agent 발화 끝
+   108.33s  agent 발화 시작: 데미 로바토의 음악과 함께 더욱 행복하고 즐거운 시간을 보내시길 바랍니다.
+   108.46s  user  발화 끝
+   112.82s  agent 발화 끝

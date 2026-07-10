@@ -67,13 +67,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Avery, I'm Klen.
-[  2.44s][user ] Yeah, I am. I’m thinking of going somewhere warm in March.
-[  7.02s][moshi] «interrupted» March is a lovely time to escape the Canadian winter. You mentioned New Zealand in a previous conversation –
-[ 13.06s][user ] «interrupts_prev» Actually, yes! But I was wondering about the best time to see wildflowers there…
-[ 18.63s][moshi] ⟨ret@18.48s⟩ That's a beautiful thought. ⟦⚡SPAN@20.40s: [2026-06-07] User is planning a trip to New Zealand in March. – are you still considering that as a destinatio⟧ New Zealand offers stunning alpine wildflower displays. The peak bloom depends on the region and altitude, but generally, late spring through early summer – November to February – is best…
-[ 31.28s][user ] …But March is still good for *some* flowers, right?
-[ 34.21s][moshi] ⟨ret@34.05s⟩ March is still excellent ⟦⚡SPAN@36.05s: [2025-08-26] User is into alpine wildflower photography. – Knowing your interest in photography, I can suggest⟧ for lower-altitude blooms, and you’ll avoid the peak tourist season.
-[ 38.00s][user ] «backchannel» Mm-hmm.
-[ 39.32s][moshi] The Canterbury region on the South Island is particularly known for its vibrant displays in March, and it’s quite accessible. Would you like me to look at specific trails there?
-[ 51.28s][user ] That sounds perfect, yes please.
+[  0.00s][moshi] Hi Avery, I'm Klen. I understand you're planning a trip to New Zealand in March?
+[  4.88s][user ] Yes, that’s right. I’m starting to look at flights and just wondering about ⟨ret@10.08s⟩ seat preferences.
+[ 10.48s][moshi] You prefer a window seat, ⟦⚡SPAN@12.08s: [2026-06-13] User prefers a window seat when traveling.⟧ so I can certainly keep that in mind as we search for flights. I’ll prioritize those options for you.
+[ 15.71s][user ] «backchannel» Mm-hmm.
+[ 17.61s][user ] Do you think March is a good time to go for seeing wildflowers?
+[ 21.44s][moshi] «interrupted» March is generally a lovely time in New Zealand, though the alpine wildflowers—
+[ 24.99s][user ] «interrupts_prev» …are they still in bloom then, or is it too late?
+[ 28.96s][moshi] ⟨ret@28.81s⟩ Peak bloom depends on ⟦⚡SPAN@30.81s: New Zealand's alpine wildflower season typically peaks from December to February, with some blooms extending i⟧ the specific location and elevation, but March can still offer some beautiful displays. The search results suggest some blooms extend into March, especially in the North Island. It's later in the season, so it will depend on the specific area.
+      CALL: {"function": "search", "arguments": {"query": "alpine wildflower bloom times New Zealand March"}}
+[ 45.21s][user ] Okay, good to know. Maybe the North Island then.

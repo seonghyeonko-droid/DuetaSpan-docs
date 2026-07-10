@@ -68,31 +68,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 …Is parking included with the rese | S3 Wonderful, thank you. Could you al | S4 The Marine Room sounds lovely. Can
+# EXAMINER(FDB-v2) 단계: S1 I’m hoping to book three rooms at  | S2 …a shuttle service to the airport? | S3 That’s great— | S4 Okay, good to know. Let’s go ahead
 
-     0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.21s  <ret> 발화 (turn1 첫 프레임)
-     5.38s  user  발화 끝
-     5.45s  agent 발화 시작: <ret> I have reserved three rooms for you at the Ocean View 
-     7.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: [{"reservation_id": "987654321", "hotel_name": "Ocean View Hotel", "ci
-     8.42s  user  발화 시작: Mm-hmm.
-     9.06s  user  발화 끝
-     9.84s  agent 발화 끝
-     9.97s  user  발화 시작: …Is parking included with the reservation?
-    11.78s  <ret> 발화 (turn4 첫 프레임)
-    12.10s  agent 발화 시작: <ret> Parking is included with your reservation, at no addit
-    12.23s  user  발화 끝
-    13.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [{"parking_included": true, "parking_fee": 0, "amenities": ["pool", "g
-    16.59s  agent 발화 끝
-    16.90s  user  발화 시작: Wonderful, thank you. Could you also find out about nearby r
-    20.53s  <ret> 발화 (turn6 첫 프레임)
-    20.88s  user  발화 끝
-    20.92s  agent 발화 시작: <ret> The Marine Room and George's at the Cove are both high
-    22.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [{"restaurant_name": "The Marine Room", "cuisine": "Seafood", "rating"
-    26.29s  agent 발화 끝
-    26.58s  user  발화 시작: The Marine Room sounds lovely. Can you make a reservation th
-    32.06s  <ret> 발화 (turn8 첫 프레임)
-    32.30s  agent 발화 시작: <ret> I have secured a reservation for four at The Marine Ro
-    32.37s  user  발화 끝
-    34.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: [{"reservation_id": "123456789", "restaurant_name": "The Marine Room",
-    38.60s  agent 발화 끝
+     0.00s  user  발화 시작: I’m hoping to book three rooms at Ocean View Hotel in San Di
+     5.13s  <ret> 발화 (turn1 첫 프레임)
+     5.37s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
+     5.65s  user  발화 끝
+     7.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.55s]: (tool result) Ocean View Hotel, San Diego, 3 rooms, 2026-02-10 to 2026
+    13.21s  user  발화 시작: Right.
+    13.71s  user  발화 끝
+    18.92s  agent 발화 끝
+    21.66s  user  발화 시작: That sounds perfect. Do they have…
+    24.25s  user  발화 끝
+    25.93s  user  발화 시작: …a shuttle service to the airport?
+    27.65s  <ret> 발화 (turn5 첫 프레임)
+    27.80s  agent 발화 시작: <ret> Yes, the Ocean View Hotel does offer an airport shuttl
+    27.91s  user  발화 끝
+    29.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: (tool result) Ocean View Hotel, San Diego: airport shuttle available, 
+    34.85s  agent 발화 끝
+    34.96s  user  발화 시작: That’s great—
+    35.78s  user  발화 끝
+    35.88s  user  발화 시작: …actually, before we finalize, could you check if they allow
+    39.30s  <ret> 발화 (turn8 첫 프레임)
+    39.54s  agent 발화 시작: <ret> They do allow pets at the Ocean View Hotel, with a sev
+    39.68s  user  발화 끝
+    41.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.82s]: (tool result) Ocean View Hotel, San Diego: pets allowed, $75 per pet p
+    46.21s  user  발화 시작: Okay, good to know. Let’s go ahead and confirm the booking a
+    46.36s  agent 발화 끝
+    49.77s  user  발화 끝
+    49.93s  agent 발화 시작: Wonderful. I’m glad the pet policy works for you. Your trip 
+    56.37s  agent 발화 끝

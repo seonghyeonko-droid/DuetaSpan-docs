@@ -63,113 +63,141 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about Jack Sock | S2 Never? That's… strange, considerin | S3 The French Open, in nineteen ninet | S4 Retired. I see. Is Sock planning a
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about Jack Sock | S2 Huh. Interesting. What country is  | S3 Retired already? Wow, time flies.  | S4 …Sock made a lot more money. What 
 
      0.00s  user  발화 시작: I was just reading about Jack Sock and Raffaella Reggi. What
-     4.09s  <ret> 발화 (turn1 첫 프레임)
-     4.25s  agent 발화 시작: <ret> They both competed professionally in… tennis.
-     4.49s  user  발화 끝
-     5.16s  user  발화 시작: Yeah.
-     5.29s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.14s]: Jack Sock and Raffaella Reggi were both professional tennis players.
-     5.52s  user  발화 끝
-     7.39s  agent 발화 끝
-     7.53s  user  발화 시작: Tennis, right? That's what I thought. But were they both equ
-    11.35s  <ret> 발화 (turn4 첫 프레임)
-    11.51s  agent 발화 시작: <ret> Jack Sock achieved a career-high ranking of… number ei
-    11.74s  user  발화 끝
-    13.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: Jack Sock reached a career-high ATP singles ranking of world No. 8, wh
-    15.39s  user  발화 시작: Number eight? That’s pretty good. What about Reggi? Was she 
-    15.85s  agent 발화 끝
-    19.93s  <ret> 발화 (turn6 첫 프레임)
-    20.25s  agent 발화 시작: <ret> Raffaella Reggi’s highest WTA singles ranking was… num
-    20.35s  user  발화 끝
-    21.77s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.00s]: Raffaella Reggi achieved a career-high ranking of number 16 in the wor
-    25.25s  agent 발화 끝
-    26.38s  user  발화 시작: Only forty-three? Wow, quite a difference. Still, forty-thre
-    31.70s  user  발화 끝
-    31.75s  agent 발화 시작: It absolutely is. Success looks different for everyone, and 
-    38.18s  agent 발화 끝
-    38.53s  user  발화 시작: True. Did they ever play against each other? That seems unli
-    41.94s  <ret> 발화 (turn10 첫 프레임)
-    42.26s  agent 발화 시작: <ret> Records indicate Jack Sock and Raffaella Reggi never c
-    42.36s  user  발화 끝
-    43.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.80s]: (no information found)
-    49.06s  agent 발화 끝
-    49.19s  user  발화 시작: Never? That's… strange, considering they both played the sam
-    53.97s  agent 발화 시작: It isn’t uncommon for players to have careers that don’t ove
-    54.00s  user  발화 끝
-    56.55s  user  발화 시작: Yeah.
-    56.85s  user  발화 끝
-    58.77s  user  발화 시작: I guess not. What were their best…
-    58.83s  agent 발화 끝
-    61.22s  user  발화 끝
-    62.82s  user  발화 시작: …results in Grand Slam tournaments? Sock first.
-    65.54s  <ret> 발화 (turn16 첫 프레임)
-    65.78s  user  발화 끝
-    65.84s  agent 발화 시작: <ret> Jack Sock’s best Grand Slam result was reaching the fo
-    66.90s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.49s]: Jack Sock reached the fourth round of the 2017 US Open, which remains 
-    72.33s  agent 발화 끝
-    74.56s  user  발화 시작: The French Open and Wimbledon? Not bad. Reggi’s?
-    77.85s  <ret> 발화 (turn18 첫 프레임)
-    78.09s  agent 발화 시작: <ret> Raffaella Reggi’s furthest advance in a Grand Slam tou
-    78.22s  user  발화 끝
-    79.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.36s]: Raffaella Reggi’s best Grand Slam result was reaching the quarter-fina
-    85.45s  agent 발화 끝
-    85.71s  user  발화 시작: The French Open, in nineteen ninety-one. That’s a long time 
-    89.27s  agent 발화 시작: It speaks to a long and dedicated career, even if it was som
-    89.41s  user  발화 끝
-    91.85s  user  발화 시작: Yeah.
-    92.16s  user  발화 끝
-    93.48s  agent 발화 끝
-    94.19s  user  발화 시작: It does. What country are they both from?
-    95.96s  <ret> 발화 (turn23 첫 프레임)
-    96.12s  agent 발화 시작: <ret> Jack Sock is from the United States, and Raffaella Reg
-    96.26s  user  발화 끝
-    97.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: Raffaella Reggi and her opponent are both from Italy.
-   101.72s  agent 발화 끝
-   102.34s  user  발화 시작: Italy. Okay. Did they both start playing tennis as children?
-   105.73s  <ret> 발화 (turn25 첫 프레임)
-   106.05s  agent 발화 시작: <ret> Jack Sock began playing tennis at age seven, while Raf
-   106.18s  user  발화 끝
-   107.49s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.26s]: Jack Sock began playing tennis at age seven, and Raffaella Reggi start
-   110.20s  user  발화 시작: Mm-hmm.
-   110.70s  user  발화 끝
-   112.30s  agent 발화 끝
-   112.45s  user  발화 시작: Age five. Reggi started younger. What are their current coac
-   116.37s  <ret> 발화 (turn28 첫 프레임)
-   116.77s  agent 발화 시작: <ret> Jack Sock is currently coached by Josh Bascombe, and R
-   116.85s  user  발화 끝
-   118.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: Jack Sock is currently coached by Josh Goffi, and Raffaella Reggi is c
-   125.86s  agent 발화 끝
-   125.90s  user  발화 시작: Paolo Santini. Are they still actively coaching?
-   129.21s  <ret> 발화 (turn30 첫 프레임)
-   129.37s  agent 발화 시작: <ret> As of late 2023, Jack Sock was recovering from injury,
-   129.46s  user  발화 끝
-   130.81s  ⚡SPAN 주입 [d'=1.60s / d_lead=9.69s]: Raffaella Reggi’s last known coach was Ricardo Sanchez.
-   139.06s  agent 발화 끝
-   139.63s  user  발화 시작: Retired. I see. Is Sock planning a comeback?
-   143.13s  <ret> 발화 (turn32 첫 프레임)
-   143.29s  agent 발화 시작: <ret> Jack Sock announced his intention to return to profess
-   143.43s  user  발화 끝
-   145.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: As of late 2023, Jack Sock was recovering from injury.
-   149.03s  agent 발화 끝
-   150.33s  user  발화 시작: Early twenty-twenty-four. That's good to hear. What about Re
-   154.92s  <ret> 발화 (turn34 첫 프레임)
-   155.24s  agent 발화 시작: <ret> Following her retirement, Raffaella Reggi became a ten
-   155.34s  user  발화 끝
-   156.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: Raffaella Reggi had retired from professional tennis in 2004.
-   159.03s  user  발화 시작: Uh-huh.
-   159.53s  user  발화 끝
-   161.27s  user  발화 시작: Italian television. That's a nice transition. One last thing
-   161.64s  agent 발화 끝
-   167.16s  <ret> 발화 (turn37 첫 프레임)
-   167.20s  user  발화 끝
-   167.24s  agent 발화 시작: <ret> Jack Sock’s height is six feet three inches, while Raf
-   168.28s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.71s]: Jack Sock is 6 ft 3 in (191 cm) tall, and Raffaella Reggi is 5 ft 8 in
-   169.68s  user  발화 시작: Mhm.
-   170.17s  user  발화 끝
-   173.96s  agent 발화 끝
-   174.18s  user  발화 시작: Five feet eight inches. Quite a difference in stature, too. 
-   178.31s  agent 발화 시작: You’re very welcome. It’s good to explore these details and 
-   178.54s  user  발화 끝
-   183.50s  agent 발화 끝
+     3.76s  <ret> 발화 (turn1 첫 프레임)
+     3.92s  agent 발화 시작: <ret> They both competed in professional tennis, Jack Sock a
+     4.16s  user  발화 끝
+     5.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: Jack Sock and Raffaella Reggi both competed in professional tennis.
+     6.08s  user  발화 시작: Yeah.
+     6.42s  user  발화 끝
+    10.96s  agent 발화 끝
+    11.13s  user  발화 시작: Tennis, okay. But was Jack Sock better known for singles or 
+    15.61s  <ret> 발화 (turn4 첫 프레임)
+    15.76s  agent 발화 시작: <ret> Jack Sock was more recognized for his doubles performa
+    15.86s  user  발화 끝
+    17.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: Jack Sock achieved greater success in doubles, winning the 2018 Wimble
+    21.80s  user  발화 시작: Wimbledon, huh? I didn’t realize that. Did Raffaella Reggi a
+    21.87s  agent 발화 끝
+    26.11s  <ret> 발화 (turn6 첫 프레임)
+    26.43s  agent 발화 시작: <ret> No, Raffaella Reggi didn't win Wimbledon, though she r
+    26.48s  user  발화 끝
+    28.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: Raffaella Reggi did not win Wimbledon, but reached the quarter-finals 
+    34.22s  user  발화 시작: Quarter-finals is good. What about Grand Slam titles overall
+    34.32s  agent 발화 끝
+    37.66s  <ret> 발화 (turn8 첫 프레임)
+    38.06s  agent 발화 시작: <ret> Raffaella Reggi won one Grand Slam title, the Australi
+    38.19s  user  발화 끝
+    39.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: Raffaella Reggi won one Grand Slam title, the 1995 Australian Open wom
+    44.73s  user  발화 시작: Just one? That seems low for a professional. What about Sock
+    44.92s  agent 발화 끝
+    50.38s  <ret> 발화 (turn10 첫 프레임)
+    50.54s  agent 발화 시작: <ret> Jack Sock won four Grand Slam titles overall, three in
+    50.56s  user  발화 끝
+    52.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.92s]: Jack Sock has won four Grand Slam titles: three in doubles and one in 
+    56.46s  agent 발화 끝
+    57.01s  user  발화 시작: Three doubles and one mixed… So he didn't win any in singles
+    60.35s  <ret> 발화 (turn12 첫 프레임)
+    60.75s  agent 발화 시작: <ret> That’s right, Jack Sock didn’t win any Grand Slam titl
+    60.81s  user  발화 끝
+    62.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: Jack Sock did not win any Grand Slam titles in men's singles.
+    63.35s  user  발화 시작: Yeah.
+    63.70s  user  발화 끝
+    65.70s  agent 발화 끝
+    66.17s  user  발화 시작: Huh. Interesting. What country is Raffaella Reggi from?
+    69.54s  <ret> 발화 (turn15 첫 프레임)
+    69.94s  agent 발화 시작: <ret> Raffaella Reggi is from Italy. It’s wonderful to see a
+    70.01s  user  발화 끝
+    71.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: Raffaella Reggi is from Italy.
+    74.97s  user  발화 시작: Italy, okay. And Jack Sock? Where does he represent?
+    75.08s  agent 발화 끝
+    78.34s  <ret> 발화 (turn17 첫 프레임)
+    78.42s  agent 발화 시작: <ret> Jack Sock represents the United States of America in t
+    78.54s  user  발화 끝
+    80.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: Jack Sock represents the United States of America in tennis.
+    84.54s  agent 발화 끝
+    86.17s  user  발화 시작: The US. Were they ever on the same team, Reggi and Sock?
+    89.59s  <ret> 발화 (turn19 첫 프레임)
+    89.83s  agent 발화 시작: <ret> No, Jack Sock and Raffaella Reggi never competed as a 
+    90.01s  user  발화 끝
+    91.35s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.05s]: Jack Sock and Raffaella Reggi never played together as a team in any o
+    93.11s  user  발화 시작: Really?
+    93.74s  user  발화 끝
+    94.68s  user  발화 시작: That's a shame. What’s Reggi doing now? Is she still involve
+    94.87s  agent 발화 끝
+    98.31s  <ret> 발화 (turn22 첫 프레임)
+    98.71s  agent 발화 시작: <ret> Currently, Raffaella Reggi works as a tennis coach and
+    98.76s  user  발화 끝
+   100.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: Raffaella Reggi is currently a tennis coach and commentator.
+   102.55s  user  발화 시작: Mm-hmm.
+   103.05s  user  발화 끝
+   104.55s  agent 발화 끝
+   104.65s  user  발화 시작: A coach… good for her. And Sock? Is he still playing profess
+   108.80s  <ret> 발화 (turn25 첫 프레임)
+   109.04s  agent 발화 시작: <ret> Jack Sock retired from professional tennis in January 
+   109.14s  user  발화 끝
+   110.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Jack Sock retired from professional tennis in January 2024.
+   117.47s  user  발화 시작: Retired already? Wow, time flies. When did Reggi retire?
+   117.47s  agent 발화 끝
+   121.42s  <ret> 발화 (turn27 첫 프레임)
+   121.66s  agent 발화 시작: <ret> Raffaella Reggi retired from professional tennis in ni
+   121.81s  user  발화 끝
+   123.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: Raffaella Reggi retired from professional tennis in 1996.
+   127.54s  user  발화 시작: A long time ago. What was Reggi’s highest singles ranking?
+   127.64s  agent 발화 끝
+   131.62s  <ret> 발화 (turn29 첫 프레임)
+   131.70s  user  발화 끝
+   131.70s  agent 발화 시작: <ret> Raffaella Reggi achieved a career-high singles ranking
+   132.74s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.12s]: Raffaella Reggi's highest singles ranking was number 16, achieved in F
+   137.82s  agent 발화 끝
+   137.93s  user  발화 시작: Number sixteen isn’t bad. And what about Sock’s peak ranking
+   141.10s  <ret> 발화 (turn31 첫 프레임)
+   141.50s  agent 발화 시작: <ret> Jack Sock’s highest singles ranking was number eight, 
+   141.72s  user  발화 끝
+   143.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: Jack Sock's highest singles ranking was number 8, achieved in November
+   144.97s  user  발화 시작: Uh-huh.
+   145.55s  user  발화 끝
+   147.34s  agent 발화 끝
+   147.50s  user  발화 시작: Eight is pretty good! What's the difference in their career 
+   150.69s  <ret> 발화 (turn34 첫 프레임)
+   151.09s  agent 발화 시작: <ret> Jack Sock earned six million eight hundred eighty-six 
+   151.19s  user  발화 끝
+   152.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: Jack Sock's career earnings are $6,886,272, while Raffaella Reggi's ar
+   155.31s  user  발화 시작: Mhm.
+   155.81s  user  발화 끝
+   162.45s  agent 발화 끝
+   163.00s  user  발화 시작: A big difference. So…
+   164.38s  user  발화 끝
+   166.44s  user  발화 시작: …Sock made a lot more money. What was his most lucrative yea
+   169.40s  <ret> 발화 (turn38 첫 프레임)
+   169.48s  agent 발화 시작: <ret> Jack Sock’s most lucrative year was two thousand eight
+   169.49s  user  발화 끝
+   171.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: Jack Sock’s most lucrative year was 2018, with earnings of $1,824,272.
+   174.99s  user  발화 시작: Nice.
+   175.62s  user  발화 끝
+   177.88s  user  발화 시작: Two thousand eighteen. Anything special happen that year bes
+   178.01s  agent 발화 끝
+   181.73s  <ret> 발화 (turn41 첫 프레임)
+   182.13s  agent 발화 시작: <ret> In two thousand eighteen, Jack Sock won the Wimbledon 
+   182.23s  user  발화 끝
+   183.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: In 2018, Jack Sock won the Wimbledon men's doubles title with Mike Bry
+   188.99s  user  발화 시작: Doubles again. Well, that’s interesting. Is Reggi involved i
+   188.99s  agent 발화 끝
+   193.98s  <ret> 발화 (turn43 첫 프레임)
+   194.22s  agent 발화 시작: <ret> Raffaella Reggi supports the Fondazione Giulia Onlus, 
+   194.31s  user  발화 끝
+   194.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.76s]: Raffaella Reggi supports the Fondazione Giulia Onlus, a charity for ch
+   199.75s  user  발화 시작: Mm-hmm.
+   200.48s  user  발화 끝
+   202.99s  agent 발화 끝
+   204.38s  user  발화 시작: That’s very kind of her. What’s the biggest difference in th
+   208.09s  <ret> 발화 (turn46 첫 프레임)
+   208.33s  agent 발화 시작: <ret> Jack Sock was known for a powerful serve and aggressiv
+   208.50s  user  발화 끝
+   210.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: Jack Sock had a powerful serve and aggressive baseline game, while Raf
+   215.88s  agent 발화 끝
+   215.89s  user  발화 시작: Different approaches. Okay, that's all I wanted to know. Tha
+   219.12s  user  발화 끝
+   219.17s  agent 발화 시작: You’re very welcome. It's been a pleasure discussing these a
+   223.00s  agent 발화 끝

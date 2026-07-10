@@ -68,63 +68,73 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uhhh, good. That sounds useful. | S2 …could you find me a good Italian  | S3 Wonderful! That’s great. Could you | S4 That’s… convenient. Thanks, Driaus
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to plan a trip to Seoul | S2 L7 Seoul Myeongdong sounds good. C | S3 That's great! Now, what about thin | S4 Yes, please.
 
-     0.00s  agent 발화 시작: <ret> To best assist you, I’ll begin monitoring weather upda
-     0.00s  <ret> 발화 (turn0 첫 프레임)
-     2.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (no information found)
-     6.27s  agent 발화 시작: The page is loading now, and I’m watching for changes…
-     6.49s  agent 발화 끝
-     9.36s  agent 발화 끝
-     9.40s  user  발화 시작: Uhhh, good. That sounds useful.
-    11.45s  <ret> 발화 (turn3 첫 프레임)
-    11.77s  agent 발화 시작: <ret> Currently, the temperature is seventy-two degrees Fahr
-    11.85s  user  발화 끝
-    13.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: [{"response": "72°F, Partly Cloudy"}]
-    14.12s  user  발화 시작: Uh-huh.
-    14.62s  user  발화 끝
-    16.64s  user  발화 시작: Okay, good to know. Um…
-    16.77s  agent 발화 끝
-    18.99s  user  발화 끝
-    20.44s  user  발화 시작: …could you find me a good Italian restaurant nearby?
-    23.09s  <ret> 발화 (turn7 첫 프레임)
-    23.49s  agent 발화 시작: <ret> I am searching for Italian restaurants in your current
-    23.54s  user  발화 끝
-    25.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (no information found)
-    25.87s  user  발화 시작: Mhm.
-    26.50s  user  발화 끝
-    28.87s  <ret> 발화 (turn9 첫 프레임)
-    28.95s  agent 발화 시작: <ret> Luigi’s Trattoria has a four-and-a-half-star rating an
-    29.00s  agent 발화 끝
-    29.99s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.62s]: [{"name": "Luigi's Trattoria", "rating": 4.5, "address": "123 Main Str
-    32.43s  user  발화 시작: Yeah.
-    32.93s  user  발화 끝
-    35.52s  user  발화 시작: Luigi's sounds… alright. Can you check if they have any tabl
-    35.57s  agent 발화 끝
-    41.38s  <ret> 발화 (turn12 첫 프레임)
-    41.46s  agent 발화 시작: <ret> Yes, there is a table available, and your confirmation
-    41.59s  user  발화 끝
-    43.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: (tool result) Luigi’s Trattoria has a four-and-a-half-star rating and 
-    45.68s  user  발화 시작: Oh.
-    46.31s  user  발화 끝
-    50.10s  user  발화 시작: Wonderful! That’s great. Could you add a reminder to my cale
-    50.17s  agent 발화 끝
-    54.83s  <ret> 발화 (turn15 첫 프레임)
-    55.10s  user  발화 끝
-    55.23s  agent 발화 시작: <ret> I am creating a reminder for dinner at Luigi’s Trattor
-    56.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.34s]: (tool result) Your confirmation number is LT12345.
-    67.05s  user  발화 시작: Fantastic. Now, could you navigate me there?
-    67.57s  agent 발화 끝
-    69.83s  <ret> 발화 (turn17 첫 프레임)
-    69.91s  agent 발화 시작: <ret> I am calculating the best route to Luigi's Trattoria a
-    70.10s  user  발화 끝
-    71.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.50s]: (tool result) Luigi’s Trattoria is the restaurant for which a dinner r
-    76.09s  user  발화 시작: Right.
-    76.72s  user  발화 끝
-    83.41s  agent 발화 끝
-    83.56s  user  발화 시작: That’s… convenient. Thanks, Driaus.
-    86.25s  <ret> 발화 (turn20 첫 프레임)
-    86.49s  agent 발화 시작: <ret> You’re most welcome. I'm glad I could help streamline 
-    86.52s  user  발화 끝
-    88.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: [{"distance": "1.2 miles", "estimated_time": "5 minutes"}]
-    91.17s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to plan a trip to Seoul. Can you check the weathe
+     3.59s  <ret> 발화 (turn1 첫 프레임)
+     3.83s  agent 발화 시작: <ret> It is currently 23.0°C in Seoul, with seventy-four per
+     4.02s  user  발화 끝
+     5.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: 23.0°C, humidity 74%, wind 5.5 km/h
+     7.13s  user  발화 시작: Yeah.
+     7.62s  user  발화 끝
+    12.60s  agent 발화 끝
+    13.87s  user  발화 시작: That sounds pleasant. Um…
+    16.32s  user  발화 끝
+    16.55s  agent 발화 시작: It does seem quite agreeable, a lovely day for exploring.
+    18.24s  user  발화 시작: Yeah, yeah.
+    19.06s  user  발화 끝
+    20.60s  user  발화 시작: I’d like to find a nice hotel there, something central.
+    20.67s  agent 발화 끝
+    23.76s  <ret> 발화 (turn7 첫 프레임)
+    24.07s  agent 발화 시작: <ret> Hotel Shilla is ₩350000, while L7 Seoul Myeongdong is 
+    24.26s  user  발화 끝
+    25.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: Hotel Shilla (37.56668, 126.97829): ₩350000, L7 Seoul Myeongdong (37.5
+    30.41s  user  발화 시작: Yeah.
+    30.91s  user  발화 끝
+    33.52s  agent 발화 끝
+    33.53s  agent 발화 시작: I can refine the search if you have specific preferences, su
+    35.76s  user  발화 시작: Yeah.
+    36.20s  user  발화 끝
+    38.26s  agent 발화 끝
+    38.41s  user  발화 시작: L7 Seoul Myeongdong sounds good. Can you check if they have 
+    43.84s  <ret> 발화 (turn12 첫 프레임)
+    44.00s  agent 발화 시작: <ret> L7 Seoul Myeongdong has availability next Friday. A St
+    44.14s  user  발화 끝
+    45.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: L7 Seoul Myeongdong: available, Standard Room ₩220000, Deluxe Room ₩28
+    56.94s  agent 발화 끝
+    57.04s  user  발화 시작: Okay, book the standard room for me.
+    58.99s  <ret> 발화 (turn14 첫 프레임)
+    59.07s  agent 발화 시작: <ret> You are all set. A Standard Room at L7 Seoul Myeongdon
+    59.17s  user  발화 끝
+    60.43s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.04s]: L7 Seoul Myeongdong: booked, Standard Room, check-in 2026-07-17, confi
+    63.17s  user  발화 시작: Right.
+    63.81s  user  발화 끝
+    68.11s  agent 발화 끝
+    68.69s  user  발화 시작: That's great! Now, what about things to do?
+    71.37s  <ret> 발화 (turn17 첫 프레임)
+    71.68s  agent 발화 시작: <ret> Popular attractions include Gyeongbokgung Palace, N Se
+    71.78s  user  발화 끝
+    72.73s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.25s]: Gyeongbokgung Palace, N Seoul Tower, Bukchon Hanok Village, …
+    74.16s  user  발화 시작: Yeah.
+    74.65s  user  발화 끝
+    77.82s  user  발화 시작: Can you find me directions to Gyeongbokgung Palace from the 
+    77.94s  agent 발화 끝
+    81.27s  <ret> 발화 (turn20 첫 프레임)
+    81.67s  agent 발화 시작: <ret> It’s 2.1 kilometers, about twenty-seven minutes by foo
+    81.77s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.13s]: (map directions) 2.1 km, approx. 27 mins, walk: <directions string>
+    81.80s  user  발화 끝
+    85.22s  user  발화 시작: Yeah.
+    85.62s  user  발화 끝
+    88.80s  agent 발화 끝
+    89.13s  user  발화 시작: Yes, please.
+    89.89s  <ret> 발화 (turn23 첫 프레임)
+    90.29s  agent 발화 시작: <ret> Walk south on Myeongdong-gil, then turn left onto Toeg
+    90.32s  user  발화 끝
+    91.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (map directions) Walk south on Myeongdong-gil, turn left onto Toegye-r
+    93.93s  user  발화 시작: Right.
+    94.56s  user  발화 끝
+    97.56s  agent 발화 끝
+    98.32s  user  발화 시작: Perfect, thank you so much.
+    99.90s  agent 발화 시작: You’re very welcome. I hope you enjoy your trip to Seoul.
+    99.92s  user  발화 끝
+   103.64s  agent 발화 끝

@@ -69,21 +69,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to offer a listenin
-     8.02s  agent 발화 끝
-     8.28s  user  발화 시작: Jaeia… that’s a lovely name. It sounds… peaceful. I’m just f
-    15.15s  agent 발화 시작: Lost is a very human feeling, Andrea. It often comes with ch
-    15.22s  user  발화 끝
-    18.56s  user  발화 시작: Wow.
-    19.38s  user  발화 끝
-    25.49s  agent 발화 시작: Sometimes, acknowledging the discomfort is the first step to
-    25.49s  agent 발화 끝
-    36.15s  agent 발화 끝
-    36.30s  user  발화 시작: It’s my job. I’ve been at the same company for fifteen years
-    42.09s  user  발화 끝
-    42.32s  agent 발화 시작: Fifteen years is a significant commitment, Andrea. It’s natu
-    54.57s  user  발화 시작: Yeah… it does. It feels like… everything’s different, but…
-    54.70s  agent 발화 끝
-    58.87s  user  발화 끝
-    58.89s  agent 발화 시작: And that uncertainty can be frightening. It’s okay to grieve
-    70.30s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Andrea, my name is Jaeia. It’s lovely to connect with 
+    10.80s  agent 발화 끝
+    10.85s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just… feeling really los
+    18.26s  user  발화 끝
+    18.27s  agent 발화 시작: It’s understandable to feel lost when things shift, Andrea. 
+    22.25s  user  발화 시작: Wow.
+    23.07s  user  발화 끝
+    30.24s  agent 발화 시작: Sometimes simply naming the difference, acknowledging what’s
+    30.33s  agent 발화 끝
+    41.64s  agent 발화 끝
+    41.73s  user  발화 시작: It’s my job, mostly. I… I lost it last month. And I don’t ev
+    48.30s  user  발화 끝
+    48.47s  agent 발화 시작: Losing a job is a significant loss, Andrea. It's not just ab
+    62.62s  agent 발화 끝
+    62.63s  user  발화 시작: I… I’m trying. It's just hard, you know? But… thank you, Jae
+    67.08s  user  발화 끝
+    67.22s  agent 발화 시작: Andrea. Taking the time to acknowledge the pain is a kindnes
+    80.86s  agent 발화 끝

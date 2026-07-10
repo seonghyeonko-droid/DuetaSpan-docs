@@ -45,7 +45,7 @@
 #     {
 #       "date": "2025-07-27",
 #       "category": "home",
-#       "text": "User's home address is 960 Pine Court."
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     }
 #   ],
 #   "conversation_summaries": [
@@ -68,27 +68,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 재향군인부(Department of Veterans Affai | S2 천구백삼십년이라고? 그건 좀 의외인데. 그 전에는 재향군인들을 | S3 음… 그 기관은 지금도 있어? | S4 그렇구나. 알겠어.
+# EXAMINER(FDB-v2) 단계: S1 어, 재향군인부요? 그거 언제 생겼대? | S2 음, 천구백삼십년이라고? 그건 좀 빠른 것 같은데. 더 일찍  | S3 아, 천구백십칠년이 처음이었구나. 그럼 천구백삼십년은 뭐 달라 | S4 그래, 이름이 바뀐 거였구나. 그럼 지금은 재향군인부라고 하던
 
-     0.00s  user  발화 시작: 재향군인부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해.
-     4.68s  <ret> 발화 (turn1 첫 프레임)
-     4.99s  agent 발화 시작: <ret> 재향군인부가 만들어진 건… 천구백삼십년입니다. 예산 관리와 관련된 부서로 시작했다고 들었어요… 천
-     5.14s  user  발화 끝
-     6.12s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.29s]: 재향군인부는 1930년에 재향군인부가 되기 위해 재편되기 전에는 미국 보훈부가 1917년에 설립되었습니다.
-    13.29s  agent 발화 끝
-    13.34s  user  발화 시작: 천구백삼십년이라고? 그건 좀 의외인데. 그 전에는 재향군인들을 누가 챙겼어?
-    18.16s  <ret> 발화 (turn3 첫 프레임)
-    18.47s  agent 발화 시작: <ret> 그 전에는 여러 기관에서 조금씩 담당했는데, 특히 보훈처가 그 역할을 맡았다고 해요. 재향군인 지
-    18.66s  user  발화 끝
-    20.08s  ⚡SPAN 주입 [d'=1.92s / d_lead=11.27s]: 재향군인들을 돌보는 것은 원래 전쟁부의 책임이었습니다.
-    29.74s  agent 발화 끝
-    29.75s  user  발화 시작: 음… 그 기관은 지금도 있어?
-    31.81s  <ret> 발화 (turn5 첫 프레임)
-    32.04s  agent 발화 시작: <ret> 네, 보훈처는 지금도 재향군인과 그 가족을 위한 여러 사업을 진행하고 있습니다. 재향군인부와 협력
-    32.14s  user  발화 끝
-    33.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.98s]: 보훈처가 그 역할을 맡았다고 해요.
-    34.56s  user  발화 시작: 응응.
-    35.20s  user  발화 끝
-    39.95s  user  발화 시작: 그렇구나. 알겠어.
-    40.02s  agent 발화 끝
-    41.84s  user  발화 끝
+     0.00s  user  발화 시작: 어, 재향군인부요? 그거 언제 생겼대?
+     2.73s  <ret> 발화 (turn1 첫 프레임)
+     3.00s  user  발화 끝
+     3.04s  agent 발화 시작: <ret> 재향군인부는 천구백삼십년 칠월 이십일일에 설립되었답니다. 예전에 보훈 관련해서 여쭤보신 적이 있으
+     4.17s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.36s]: The Department of Veterans Affairs was established on July 21, 1930.
+    10.40s  agent 발화 끝
+    10.45s  user  발화 시작: 음, 천구백삼십년이라고? 그건 좀 빠른 것 같은데. 더 일찍 생기지 않았나?
+    15.24s  <ret> 발화 (turn3 첫 프레임)
+    15.55s  agent 발화 시작: <ret> 사실 재향군인부의 시작은 천구백십칠년으로 거슬러 올라가요. 당시에는 '재향군인국'이라는 이름으로 
+    15.67s  user  발화 끝
+    16.20s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.93s]: The agency's origins can be traced back to 1917, with the establishmen
+    23.47s  agent 발화 끝
+    24.31s  user  발화 시작: 아, 천구백십칠년이 처음이었구나. 그럼 천구백삼십년은 뭐 달라진 거야?
+    28.90s  <ret> 발화 (turn5 첫 프레임)
+    29.13s  agent 발화 시작: <ret> 천구백삼십년에 '재향군인국'이 정식으로 '재향군인청'으로 명칭이 변경되었답니다. 규모도 좀 커졌을
+    29.35s  user  발화 끝
+    30.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: In 1930, the Veteran's Bureau was formally renamed the Veterans Admini
+    33.53s  user  발화 시작: 응.
+    34.02s  user  발화 끝
+    36.73s  agent 발화 끝
+    36.76s  user  발화 시작: 그래, 이름이 바뀐 거였구나. 그럼 지금은 재향군인부라고 하던데, 또 바뀐 거야?
+    42.69s  <ret> 발화 (turn8 첫 프레임)
+    42.76s  agent 발화 시작: <ret> 네, 맞습니다. 천구백구십년에 '재향군인청'에서 지금의 '재향군인부'로 다시 한 번 부처 명칭이 
+    43.00s  user  발화 끝
+    44.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: The Veterans Administration became the Department of Veterans Affairs 
+    49.07s  agent 발화 끝

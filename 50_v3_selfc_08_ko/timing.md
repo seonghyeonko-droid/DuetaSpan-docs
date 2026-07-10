@@ -30,12 +30,12 @@
 #     {
 #       "date": "2025-11-07",
 #       "category": "home",
-#       "text": "User's home address is 368 Pine Court."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     },
 #     {
 #       "date": "2025-06-09",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
+#       "text": "User is planning a trip to Iceland in May."
 #     }
 #   ],
 #   "conversation_summaries": [
@@ -66,139 +66,111 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 일A, 일B, 이A로 지정해 줘. | S3 레드 록스 원형 극장이 더 궁금한데, 거기로 가는 버스가 있어 | S4 오월 이십일로 예약해 줘.
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 버스 세 명분, 오월 십일 보여줘. | S2 십육번가 몰은 어떤 곳이야? | S3 덴버에서 시카고로 돌아오는 버스도 예약해 줘. 오월 십이일. | S4 …아, 그냥 제일 싼 걸로 해줘.
 
-     0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘.
-     4.16s  <ret> 발화 (turn1 첫 프레임)
-     4.40s  user  발화 끝
-     4.47s  agent 발화 시작: <ret> 시카고에서 덴버까지 오월 십일, 세 명 기준으로 버스편은… 여덟시에 출발해서 네시에 도착하는 백이
-     6.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: [{"bus_number": "123", "departure_time": "08:00", "arrival_time": "16:
-    10.58s  user  발화 시작: 와.
-    11.35s  user  발화 끝
-    14.02s  agent 발화 끝
-    14.28s  user  발화 시작: 음… 오월 구일로 바꿔봐.
-    16.50s  <ret> 발화 (turn4 첫 프레임)
-    16.90s  user  발화 끝
-    16.90s  agent 발화 시작: <ret> 오월 구일로 변경하면, 열시에 출발해서 여섯시에 도착하는 사백오십육번이 있고, 가격은 십팔만 원입
-    18.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: [{"bus_number": "456", "departure_time": "10:00", "arrival_time": "18:
-    23.76s  agent 발화 끝
-    25.14s  user  발화 시작: 십팔만 원은 좀 비싸네… 더 저렴한 게 있어?
-    27.95s  <ret> 발화 (turn6 첫 프레임)
-    28.34s  agent 발화 시작: <ret> 오월 구일에 십육만 원 이하의 버스는 오후 두시에 출발해서 밤 열시에 도착하는 칠백팔십구번이 있습
-    28.37s  user  발화 끝
-    29.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: [{"bus_number": "789", "departure_time": "14:00", "arrival_time": "22:
-    32.45s  user  발화 시작: 대박.
-    33.08s  user  발화 끝
-    34.84s  user  발화 시작: 칠백팔십구번으로 예약해 줘.
-    35.06s  agent 발화 끝
-    36.78s  <ret> 발화 (turn9 첫 프레임)
-    37.17s  agent 발화 시작: <ret> 칠백팔십구번 버스 세 명으로 예약 완료되었고, 확인 번호는 XYZ123입니다.
-    37.34s  user  발화 끝
-    38.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: {"confirmation_number": "XYZ123"}
-    43.05s  agent 발화 끝
-    43.15s  user  발화 시작: 혹시 좌석 지정도 가능해?
-    45.07s  <ret> 발화 (turn11 첫 프레임)
-    45.22s  agent 발화 시작: <ret> 칠백팔십구번 버스의 좌석은 일A, 일B, 이A, 이B, 삼A, 삼B로 구성되어 있습니다.
-    45.23s  user  발화 끝
-    47.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: [{"seats": ["1A", "1B", "2A", "2B", "3A", "3B"]}]
-    50.61s  user  발화 시작: 일A, 일B, 이A로 지정해 줘.
-    50.82s  agent 발화 끝
-    53.04s  <ret> 발화 (turn13 첫 프레임)
-    53.19s  agent 발화 시작: <ret> 좌석 일A, 일B, 이A로 지정되었습니다.
-    53.34s  user  발화 끝
-    55.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: {"status": "success"}
-    55.44s  user  발화 시작: 그치.
-    56.16s  user  발화 끝
-    56.42s  agent 발화 끝
-    56.66s  user  발화 시작: 혹시 덴버에 도착해서 바로 시내까지 가는 버스가 있어?
-    60.18s  <ret> 발화 (turn16 첫 프레임)
-    60.25s  agent 발화 시작: <ret> 덴버 도착 후 시내까지 가는 구백구십구번 버스는 밤 열시 삼십분에 출발해서 열한시에 도착하고, 요
-    60.50s  user  발화 끝
-    62.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: [{"bus_number": "999", "departure_time": "22:30", "arrival_time": "23:
-    64.30s  user  발화 시작: 그래.
-    64.94s  user  발화 끝
-    68.60s  user  발화 시작: 아, 구백구십구번 버스도 같이 예약해 줘.
-    68.63s  agent 발화 끝
-    71.20s  <ret> 발화 (turn19 첫 프레임)
-    71.35s  agent 발화 시작: <ret> 구백구십구번 버스 세 명으로 예약 완료되었고, 확인 번호는 ABC456입니다.
-    71.51s  user  발화 끝
-    72.56s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.65s]: {"confirmation_number": "ABC456"}
-    75.54s  user  발화 시작: 진짜?
-    76.27s  user  발화 끝
-    77.00s  agent 발화 끝
-    77.24s  user  발화 시작: 혹시 덴버는 지금 날씨가 어때?
-    79.07s  <ret> 발화 (turn22 첫 프레임)
-    79.46s  agent 발화 시작: <ret> 덴버의 현재 날씨는 이십도, 맑습니다.
-    79.68s  user  발화 끝
-    80.70s  user  발화 시작: 응.
-    81.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.14s]: {"temperature": "20", "condition": "Sunny"}
-    81.28s  user  발화 끝
-    82.33s  user  발화 시작: 이십도면 괜찮겠네. 덴버에 볼 만한 곳도 알려줘.
-    82.59s  agent 발화 끝
-    85.98s  <ret> 발화 (turn25 첫 프레임)
-    86.03s  user  발화 끝
-    86.12s  agent 발화 시작: <ret> 덴버에서는 덴버 미술관과 레드 록스 원형 극장을 추천합니다.
-    87.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: [{"name": "Denver Art Museum", "description": "A leading art museum"},
-    89.95s  agent 발화 끝
-    90.19s  user  발화 시작: 레드 록스 원형 극장이 더 궁금한데, 거기로 가는 버스가 있어?
-    94.13s  <ret> 발화 (turn27 첫 프레임)
-    94.28s  agent 발화 시작: <ret> 덴버 시내에서 레드 록스 원형 극장까지 가는 백일번 버스는 열두시에 출발해서 한시에 도착하고, 요
-    94.54s  user  발화 끝
-    96.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: [{"bus_number": "101", "departure_time": "12:00", "arrival_time": "13:
-   100.08s  user  발화 시작: 진짜?
-   101.14s  user  발화 끝
-   101.97s  agent 발화 끝
-   102.73s  user  발화 시작: 그 버스도 예약할 수 있어?
-   103.92s  <ret> 발화 (turn30 첫 프레임)
-   103.99s  agent 발화 시작: <ret> 백일번 버스 세 명으로 예약 완료되었고, 확인 번호는 DEF789입니다.
-   104.25s  user  발화 끝
-   105.28s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.79s]: {"confirmation_number": "DEF789"}
-   109.78s  agent 발화 끝
-   110.70s  user  발화 시작: 좋아. 이제 여행 준비는 다 끝났네.
-   113.80s  agent 발화 시작: 여행 준비가 모두 완료되셨다니 다행입니다.
-   113.89s  user  발화 끝
-   116.22s  user  발화 시작: 근데… 덴버에서 시카고로 돌아오는 버스표는 언제부터 예약할 수 있어?
-   116.57s  agent 발화 끝
-   120.94s  <ret> 발화 (turn34 첫 프레임)
-   121.09s  agent 발화 시작: <ret> 덴버에서 시카고로 돌아오는 버스표는 오월 십오일부터 예약 가능합니다.
-   121.27s  user  발화 끝
-   122.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: {"available_from": "May 15"}
-   125.77s  agent 발화 끝
-   125.80s  user  발화 시작: …오월 십오일 이후에 예약해도 괜찮은데, 혹시 할인되는 날짜가 있을까?
-   130.23s  <ret> 발화 (turn36 첫 프레임)
-   130.39s  agent 발화 시작: <ret> 오월 이십일에 십% 할인된 가격으로 덴버에서 시카고행 버스표를 예약할 수 있습니다.
-   130.62s  user  발화 끝
-   132.08s  user  발화 시작: 응.
-   132.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.10s]: [{"date": "May 20", "discount": "10%"}]
-   132.53s  user  발화 끝
-   135.48s  agent 발화 끝
-   136.87s  user  발화 시작: 오월 이십일로 예약해 줘.
-   138.26s  <ret> 발화 (turn39 첫 프레임)
-   138.57s  agent 발화 시작: <ret> 오월 이십일 덴버에서 시카고행 버스표 세 명으로 예약 완료되었고, 확인 번호는 GHI012입니다.
-   138.75s  user  발화 끝
-   139.70s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.00s]: {"confirmation_number": "GHI012"}
-   145.56s  agent 발화 끝
-   145.63s  user  발화 시작: 좋아, 이제 진짜 끝났네.
-   147.67s  agent 발화 시작: 모든 예약이 마무리되셨다니 기쁩니다.
-   147.84s  user  발화 끝
-   150.16s  agent 발화 끝
-   150.68s  user  발화 시작: 혹시 여행자 보험도 들어줄 수 있어?
-   152.87s  <ret> 발화 (turn43 첫 프레임)
-   153.18s  agent 발화 시작: <ret> 세 명 기준 여행자 보험은 삼만 원이고, 모든 보장을 포함합니다.
-   153.40s  user  발화 끝
-   154.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: [{"price": 30, "coverage": "Full"}]
-   156.06s  user  발화 시작: 헐.
-   156.56s  user  발화 끝
-   157.34s  user  발화 시작: 그걸로 해 줘.
-   157.48s  agent 발화 끝
-   157.78s  <ret> 발화 (turn46 첫 프레임)
-   158.17s  agent 발화 시작: <ret> 여행자 보험 가입 완료되었고, 보험 증권 번호는 JKL345입니다.
-   158.35s  user  발화 끝
-   159.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: {"policy_number": "JKL345"}
-   160.06s  user  발화 시작: 와.
-   160.83s  user  발화 끝
-   162.98s  agent 발화 끝
-   163.01s  user  발화 시작: 완벽해. 정말 고마워.
-   164.85s  agent 발화 시작: 도움이 되었다니 저도 기쁩니다.
-   165.08s  user  발화 끝
-   166.78s  agent 발화 끝
+     0.00s  user  발화 시작: 시카고에서 덴버까지 버스 세 명분, 오월 십일 보여줘.
+     4.13s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  agent 발화 시작: <ret> 시카고에서 덴버까지 버스는 그레이하운드가 십오만 원, 스무시간 삼십분, 플릭스버스는 십이만 오천 
+     4.68s  user  발화 끝
+     6.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.92s]: (tool result) Greyhound: $150, 20h 30m; FlixBus: $125, 22h; Wanderu: $
+    12.12s  user  발화 시작: 와.
+    12.76s  user  발화 끝
+    16.36s  agent 발화 끝
+    17.87s  user  발화 시작: 완더루 시간표 좀 더 자세히 보여줘.
+    19.71s  <ret> 발화 (turn4 첫 프레임)
+    20.11s  agent 발화 시작: <ret> 완더루는 오전 여덟시에 십삼만 원, 스물한시간 십오분, 낮 열두시 삼십분에 십삼만 오천 원, 스무
+    20.31s  user  발화 끝
+    21.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.29s]: (tool result) Wanderu: 08:00 ($130, 21h 15m), 12:30 ($135, 20h 45m), 1
+    31.93s  user  발화 시작: 제일 빠른 거로 예약해 줘.
+    32.40s  agent 발화 끝
+    33.15s  <ret> 발화 (turn6 첫 프레임)
+    33.54s  agent 발화 시작: <ret> 완더루 시카고-덴버, 세 명, 이천이십육년 오월 십일 오전 여덟시, 삼십구만 원, 확인번호는 칠A
+    33.78s  user  발화 끝
+    35.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Wanderu: Chicago to Denver, 3 passengers, 2026-05-10 08:
+    38.79s  user  발화 시작: 대박.
+    39.57s  user  발화 끝
+    41.78s  user  발화 시작: 혹시 덴버에 도착해서 바로 갈 만한 곳 있어?
+    41.79s  agent 발화 끝
+    44.49s  <ret> 발화 (turn9 첫 프레임)
+    44.88s  agent 발화 시작: <ret> 덴버 식물원, 덴버 미술관, 십육번가 몰이 가까운 곳에 있습니다.
+    45.02s  user  발화 끝
+    46.17s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.35s]: (tool result) Denver Botanic Gardens (2.8 km), Denver Art Museum (3.2 
+    49.20s  user  발화 시작: 십육번가 몰은 어떤 곳이야?
+    49.23s  agent 발화 끝
+    51.11s  <ret> 발화 (turn11 첫 프레임)
+    51.26s  agent 발화 시작: <ret> 십육번가 몰은 보행자 거리인데 상점과 식당이 많고, 무료 셔틀과 행사도 열립니다.
+    51.45s  user  발화 끝
+    53.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) 16th Street Mall: Pedestrian mall, shops, restaurants, f
+    57.51s  agent 발화 끝
+    58.07s  user  발화 시작: 그 근처에 괜찮은 호텔 있어?
+    59.61s  <ret> 발화 (turn13 첫 프레임)
+    59.76s  agent 발화 시작: <ret> 메이븐 호텔 이십오만 원, 호텔 테아트로 이십팔만 원, 더 커티스 덴버 십팔만 원입니다.
+    59.96s  user  발화 끝
+    60.49s  ⚡SPAN 주입 [d'=0.88s / d_lead=5.18s]: (tool result) The Maven Hotel at Dairy Block ($250/night), Hotel Teatr
+    63.45s  user  발화 시작: 그치.
+    64.22s  user  발화 끝
+    64.94s  agent 발화 끝
+    65.44s  user  발화 시작: 제일 싼 호텔로 예약해 줘.
+    67.15s  <ret> 발화 (turn16 첫 프레임)
+    67.54s  agent 발화 시작: <ret> 더 커티스 덴버, 한개 방, 이천이십육년 오월 십일부터 십일일까지, 십팔만 원, 확인번호는 B4C
+    67.70s  user  발화 끝
+    69.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) The Curtis Denver: 1 room, 2026-05-10 to 2026-05-11, $18
+    71.40s  user  발화 시작: 그래.
+    72.03s  user  발화 끝
+    75.57s  agent 발화 끝
+    76.59s  user  발화 시작: 덴버 날씨는 어때?
+    77.47s  <ret> 발화 (turn19 첫 프레임)
+    77.86s  agent 발화 시작: <ret> 이십오도, 습도 육십%, 바람은 시속 팔킬로미터, 맑은 하늘입니다.
+    78.02s  user  발화 끝
+    79.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) 25.0°C, humidity 60%, wind 8.0 km/h, clear skies
+    81.59s  user  발화 시작: 진짜?
+    82.31s  user  발화 끝
+    82.65s  user  발화 시작: 덴버에서 시카고로 돌아오는 버스도 예약해 줘. 오월 십이일.
+    82.86s  agent 발화 끝
+    86.34s  <ret> 발화 (turn22 첫 프레임)
+    86.73s  agent 발화 시작: <ret> 덴버에서 시카고로 돌아오는 버스는 그레이하운드가 십육만 원, 스물한시간, 플릭스버스는 십사만 원,
+    86.95s  user  발화 끝
+    88.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.79s]: (tool result) Greyhound: $160, 21h; FlixBus: $140, 23h 30m; Wanderu: $
+    91.81s  user  발화 시작: 응.
+    92.30s  user  발화 끝
+    98.42s  user  발화 시작: 플릭스버스로 예약해 줘.
+    98.52s  agent 발화 끝
+    99.51s  <ret> 발화 (turn25 첫 프레임)
+    99.90s  agent 발화 시작: <ret> 플릭스버스 덴버-시카고, 세 명, 이천이십육년 오월 십이일, 사십이만 원, 확인번호는 구D6F8H
+   100.07s  user  발화 끝
+   101.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (tool result) FlixBus: Denver to Chicago, 3 passengers, 2026-05-12, $4
+   108.35s  user  발화 시작: 덴버 공항에서 시카고 공항까지 바로 가는 비행기는 없어?
+   108.38s  agent 발화 끝
+   111.53s  <ret> 발화 (turn27 첫 프레임)
+   111.92s  agent 발화 시작: <ret> 유나이티드 항공에서 덴버에서 시카고로 가는 직항편이 이십오만 원부터 있습니다.
+   112.10s  user  발화 끝
+   113.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) United Airlines offers direct flights from Denver (DEN) 
+   115.53s  user  발화 시작: 진짜?
+   116.35s  user  발화 끝
+   116.86s  user  발화 시작: 유나이티드 항공으로 예약해 줘.
+   116.86s  agent 발화 끝
+   118.48s  agent 발화 시작: 잠시만요, 몇 시 비행편을 원하시는지 알려주시면—
+   118.80s  user  발화 끝
+   121.07s  user  발화 시작: …아, 그냥 제일 싼 걸로 해줘.
+   121.90s  agent 발화 끝
+   122.64s  <ret> 발화 (turn32 첫 프레임)
+   122.95s  agent 발화 시작: <ret> 유나이티드 항공, 덴버에서 시카고, 이천이십육년 오월 십이일 오후 두시, 이십오만 원, 확인번호는
+   123.05s  user  발화 끝
+   124.00s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.20s]: (tool result) United Airlines: DEN to ORD, 2026-05-12 14:00, $250, con
+   131.08s  user  발화 시작: 덴버에서 시카고 가는 기차 시간표 좀 보여줘.
+   131.14s  agent 발화 끝
+   134.08s  <ret> 발화 (turn34 첫 프레임)
+   134.24s  agent 발화 시작: <ret> 암트랙 캘리포니아 제퍼, 열시 십오분에 출발해서 다음 날 열여섯시 삼십분에 도착, 이십만 원입니다
+   134.50s  user  발화 끝
+   136.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) Amtrak: California Zephyr, departs 10:15, arrives 16:30 
+   141.54s  user  발화 시작: 그럼 암트랙으로 예약해 줘.
+   141.65s  agent 발화 끝
+   143.04s  <ret> 발화 (turn36 첫 프레임)
+   143.19s  agent 발화 시작: <ret> 암트랙 캘리포니아 제퍼, 덴버-시카고, 이천이십육년 오월 십이일, 육십만 원, 확인번호는 Z8Y3
+   143.34s  user  발화 끝
+   145.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Amtrak: California Zephyr, Denver to Chicago, 2026-05-12
+   146.07s  user  발화 시작: 응.
+   146.57s  user  발화 끝
+   151.59s  user  발화 시작: 오월 십일에 덴버 출발, 오월 십이일에 시카고 출발, 오월 일
+   151.73s  agent 발화 끝
+   157.29s  user  발화 끝

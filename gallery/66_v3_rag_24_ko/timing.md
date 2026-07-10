@@ -35,45 +35,43 @@
 #     {
 #       "date": "2025-08-13",
 #       "category": "home",
-#       "text": "User's home address is 609 Oak Avenue."
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2025-10-09",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-28",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-22",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 뒤플레시 이름이 어디에서 유래됐는지 궁금해요.
-     3.08s  <ret> 발화 (turn1 첫 프레임)
-     3.40s  agent 발화 시작: <ret> 뒤플레시라는 성은 아프리카너스어에서 유래되었다고 하는데요… 프랑스어로 '두 배'를 의미합니다.
-     3.60s  user  발화 끝
-     4.84s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.46s]: 듀플레시는 프랑스어로 '두 배'를 의미하며, 이 이름은 이 제품이 일반적인 플래시보다 두 배 더 밝기 때문에 붙여졌습니다.
-     8.97s  user  발화 시작: 맞아요.
-     9.65s  user  발화 끝
-    10.86s  agent 발화 끝
-    11.57s  user  발화 시작: 아프리카너스어가 뭔데요?
-    12.94s  <ret> 발화 (turn4 첫 프레임)
-    13.33s  agent 발화 시작: <ret> 아프리카너스어는 남아프리카 공화국에서 발전한 언어인데… 네덜란드어의 한 방언에서 비롯되었고, 남아
-    13.54s  user  발화 끝
-    14.62s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.69s]: 아프리카너스는 남아프리카 공화국에서 발생한 게르만어입니다.
-    24.64s  user  발화 시작: 아, 그렇군요. 그럼 뒤플레시 성은 네덜란드와 관련이 있는 건가요?
-    25.15s  agent 발화 끝
-    29.91s  user  발화 끝
-    29.94s  agent 발화 시작: 네, 뒤플레시 성은 프랑스 기원의 성으로, 네덜란드 이민자들을 통해 남아프리카로 건너간 것으로 알려져 있습니
-    36.71s  agent 발화 끝
+     0.00s  user  발화 시작: 뒤플레시라는 성이 어디에서 유래되었는지 궁금해요.
+     2.96s  <ret> 발화 (turn1 첫 프레임)
+     3.27s  agent 발화 시작: <ret> 뒤플레시 성은 프랑스에서 유래되었어요.
+     3.56s  user  발화 끝
+     4.00s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.59s]: The surname Du Plessis is of French origin, and it means "from Plessis
+     5.60s  agent 발화 시작: 뒤플레시 성은 프랑스에서 비롯되었고, '플레시에서 온'이라는 뜻이라고 해요.
+     5.85s  agent 발화 끝
+     9.47s  user  발화 시작: 맞아요.
+    10.20s  user  발화 끝
+    10.80s  user  발화 시작: 아, 그렇군요. 그럼 아프리카너스어와 관련이 있을까요?
+    10.92s  agent 발화 끝
+    15.86s  <ret> 발화 (turn5 첫 프레임)
+    15.94s  user  발화 끝
+    15.94s  agent 발화 시작: <ret> 아프리카너스어와 관련이 있는지 여쭤보셨네요. 아프리카너스어는 남아프리카에서 발전한 서게르만어인데,
+    17.30s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.80s]: Afrikaans is a West Germanic language developed in South Africa, deriv
+    25.44s  agent 발화 끝

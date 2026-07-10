@@ -40,12 +40,20 @@
 #     {
 #       "date": "2025-05-30",
 #       "category": "home",
-#       "text": "User's home address is 289 Pine Court."
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2025-12-21",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-16",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -55,29 +63,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 SuperCrawler 버전 십 점 일 | S2 …혹시 지금 제가 보고 있는 페이지에 적용된 건가요? | S3 아, 네, 알겠습니다. 그럼… 지금 SuperCrawler로  | S4 그렇군요. 좋은데요. 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 혹시 웹 브라우저 사용자 에이전트를 슈퍼크롤러 버전 십 점 일 | S2 네, 확인해 보고 싶은데, 지금 웹사이트 정보 좀 가져와 줄  | S3 아, 네, 그렇군요. 그런데… 슈퍼크롤러 설정이 제대로 된 건 | S4 음… 알겠습니다. 고맙습니다.
 
-     0.00s  user  발화 시작: 혹시 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정해 줄 수 있을까요?
-     4.78s  <ret> 발화 (turn1 첫 프레임)
-     5.05s  user  발화 끝
-     5.17s  agent 발화 시작: <ret> 사용자 에이전트를 SuperCrawler 버전 십 점 일로 변경했습니다. 이제 웹사이트를 요청하면
-     6.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) 사용자 에이전트를 SuperCrawler 버전 10.1로 설정할 수 있습니다.
-    10.82s  user  발화 시작: 네.
-    11.14s  user  발화 끝
-    15.18s  agent 발화 끝
-    15.55s  user  발화 시작: 음… 잠깐만요…
-    17.16s  user  발화 끝
-    19.09s  user  발화 시작: …혹시 지금 제가 보고 있는 페이지에 적용된 건가요?
-    22.33s  user  발화 끝
-    22.40s  agent 발화 시작: 지금 보고 계신 페이지는 새로고침을 해야 적용됩니다. 페이지를 다시 불러오시겠어요?
-    28.05s  agent 발화 끝
-    30.44s  user  발화 시작: 아, 네, 알겠습니다. 그럼… 지금 SuperCrawler로 보이게 됐겠죠?
-    33.81s  <ret> 발화 (turn7 첫 프레임)
-    34.13s  agent 발화 시작: <ret> 현재 사용자 에이전트는… SuperCrawler 버전 십 점 일로 확인됩니다… 현재 사용자 에이전
-    34.36s  user  발화 끝
-    35.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 사용자 에이전트를 SuperCrawler 버전 십 점 일로 변경했습니다.
-    42.24s  agent 발화 끝
-    42.51s  user  발화 시작: 그렇군요. 좋은데요. 감사합니다.
-    44.82s  agent 발화 시작: 다행이네요. 혹시 다른 웹사이트에서 테스트해 보시겠어요?
-    45.01s  user  발화 끝
-    48.34s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 웹 브라우저 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정해 줄 수 있을까요?
+     4.59s  <ret> 발화 (turn1 첫 프레임)
+     4.91s  user  발화 끝
+     4.98s  agent 발화 시작: <ret> 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정했습니다. 확인해 보시겠어요?
+     6.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) "Mozilla/5.0 (compatible; SuperCrawler/10.1; +http://sup
+     7.04s  user  발화 시작: 맞아요.
+     7.53s  user  발화 끝
+     9.65s  agent 발화 끝
+     9.74s  user  발화 시작: 네, 확인해 보고 싶은데, 지금 웹사이트 정보 좀 가져와 줄 수 있을까요? 그… 네이버 메인 페이지요.
+    15.75s  <ret> 발화 (turn4 첫 프레임)
+    15.76s  user  발화 끝
+    15.97s  agent 발화 시작: <ret> 네이버 메인 페이지를 크롤링했습니다. 현재 제목은 '네이버 — 대한민국 대표 검색 포털'입니다.
+    17.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) "네이버 — 대한민국 대표 검색 포털 : 검색, 뉴스, 블로그, 카페, 쇼핑, 메일, 지도"
+    22.05s  user  발화 시작: 아, 네, 그렇군요. 그런데… 슈퍼크롤러 설정이 제대로 된 건지 궁금하네요.
+    22.27s  agent 발화 끝
+    26.57s  agent 발화 시작: 슈퍼크롤러 설정은 완료되었고, 현재 적용된 상태입니다. 걱정 마세요.
+    26.59s  user  발화 끝
+    31.43s  agent 발화 끝
+    32.16s  user  발화 시작: 음… 알겠습니다. 고맙습니다.
+    34.28s  user  발화 끝
+    34.51s  agent 발화 시작: 천만에요.
+    35.43s  agent 발화 끝

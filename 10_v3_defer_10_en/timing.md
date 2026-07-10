@@ -63,31 +63,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Oh, and could you also book a tabl | S3 …Le Chat Noir? | S4 How about Friday at 7:30 pm?
 
-     0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     5.28s  <ret> 발화 (turn1 첫 프레임)
-     5.32s  user  발화 끝
-     5.36s  agent 발화 시작: <ret> I’m searching for photos from your France trip last ye
-     7.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) The user is requesting pictures from a holiday in France
-     8.90s  user  발화 시작: Mhm.
-     9.30s  user  발화 끝
-    11.02s  user  발화 시작: Oh, and could you also book a table for two at that little b
-    11.20s  agent 발화 끝
-    15.69s  user  발화 끝
-    17.70s  user  발화 시작: …Le Chat Noir?
-    18.90s  user  발화 끝
-    18.95s  agent 발화 시작: Le Chat Noir… I'll need a date and time to make a reservatio
-    21.88s  user  발화 시작: Yeah.
-    22.50s  user  발화 끝
-    23.68s  agent 발화 끝
-    23.72s  user  발화 시작: How about Friday at 7:30 pm?
-    26.05s  <ret> 발화 (turn8 첫 프레임)
-    26.37s  agent 발화 시작: <ret> Let me see if Le Chat Noir has availability on Friday 
-    26.44s  user  발화 끝
-    27.09s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.90s]: (tool result) Le Chat Noir requires a date and time for reservations.
-    33.01s  <ret> 발화 (turn9 첫 프레임)
-    33.17s  agent 발화 시작: <ret> Your table for two at Le Chat Noir on Friday at 7:30 i
-    33.28s  agent 발화 끝
-    35.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: {"confirmation_number": "LC7392", "status": "confirmed", "date": "Frid
-    41.69s  agent 발화 끝
+     0.00s  user  발화 시작: I need to find pictures related to my holiday in France last
+     5.60s  <ret> 발화 (turn1 첫 프레임)
+     5.65s  user  발화 끝
+     5.68s  agent 발화 시작: <ret> I found three pictures from your France holiday in two
+     7.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) /home/user/Pictures/France Holiday_2023/IMG_1234.jpg, /h
+    10.28s  user  발화 시작: Uh-huh.
+    10.73s  user  발화 끝
+    16.29s  user  발화 시작: Oh, that's great! Can you open IMG_1234 for me?
+    16.44s  agent 발화 끝
+    20.46s  <ret> 발화 (turn4 첫 프레임)
+    20.62s  agent 발화 시작: <ret> IMG_1234 is a JPG, one nine two zero by one zero eight
+    20.77s  user  발화 끝
+    22.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.59s]: (tool result) /home/user/Pictures/France Holiday_2023/IMG_1234.jpg: 19
+    25.58s  user  발화 시작: Yeah.
+    26.07s  user  발화 끝
+    32.22s  agent 발화 끝
+    32.71s  user  발화 시작: Perfect, thank you!
+    33.78s  agent 발화 시작: You're very welcome. It sounds like a lovely trip, revisitin
+    33.95s  user  발화 끝
+    39.71s  agent 발화 끝

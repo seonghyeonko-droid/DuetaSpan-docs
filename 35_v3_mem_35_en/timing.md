@@ -66,29 +66,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yeah, I am. I’m thinking of going  | S2 Actually, yes! But I was wondering | S3 …But March is still good for *some | S4 That sounds perfect, yes please.
+# EXAMINER(FDB-v2) 단계: S1 Yes, that’s right. I’m starting to | S2 Do you think March is a good time  | S3 …are they still in bloom then, or  | S4 Okay, good to know. Maybe the Nort
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen.
-     1.65s  agent 발화 끝
-     2.44s  user  발화 시작: Yeah, I am. I’m thinking of going somewhere warm in March.
-     7.02s  agent 발화 시작: March is a lovely time to escape the Canadian winter. You me
-     7.02s  user  발화 끝
-    13.06s  user  발화 시작: Actually, yes! But I was wondering about the best time to se
-    13.79s  agent 발화 끝
-    18.48s  <ret> 발화 (turn4 첫 프레임)
-    18.63s  agent 발화 시작: <ret> That's a beautiful thought. New Zealand offers stunnin
-    18.66s  user  발화 끝
-    20.40s  ⚡SPAN 주입 [d'=1.92s / d_lead=11.54s]: [2026-06-07] User is planning a trip to New Zealand in March. – are yo
-    30.17s  agent 발화 끝
-    31.28s  user  발화 시작: …But March is still good for *some* flowers, right?
-    34.05s  <ret> 발화 (turn6 첫 프레임)
-    34.21s  agent 발화 시작: <ret> March is still excellent for lower-altitude blooms, an
-    34.37s  user  발화 끝
-    36.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: [2025-08-26] User is into alpine wildflower photography. – Knowing you
-    38.00s  user  발화 시작: Mm-hmm.
-    38.64s  user  발화 끝
-    39.26s  agent 발화 끝
-    39.32s  agent 발화 시작: The Canterbury region on the South Island is particularly kn
-    49.01s  agent 발화 끝
-    51.28s  user  발화 시작: That sounds perfect, yes please.
-    53.35s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you're planning a trip to N
+     4.81s  agent 발화 끝
+     4.88s  user  발화 시작: Yes, that’s right. I’m starting to look at flights and just 
+    10.08s  <ret> 발화 (turn2 첫 프레임)
+    10.48s  agent 발화 시작: <ret> You prefer a window seat, so I can certainly keep that
+    10.67s  user  발화 끝
+    12.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: [2026-06-13] User prefers a window seat when traveling.
+    15.71s  user  발화 시작: Mm-hmm.
+    16.34s  user  발화 끝
+    17.57s  agent 발화 끝
+    17.61s  user  발화 시작: Do you think March is a good time to go for seeing wildflowe
+    21.44s  agent 발화 시작: March is generally a lovely time in New Zealand, though the 
+    21.60s  user  발화 끝
+    24.99s  user  발화 시작: …are they still in bloom then, or is it too late?
+    25.84s  agent 발화 끝
+    28.69s  user  발화 끝
+    28.81s  <ret> 발화 (turn7 첫 프레임)
+    28.96s  agent 발화 시작: <ret> Peak bloom depends on the specific location and elevat
+    30.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.24s]: New Zealand's alpine wildflower season typically peaks from December t
+    45.19s  agent 발화 끝
+    45.21s  user  발화 시작: Okay, good to know. Maybe the North Island then.
+    49.37s  user  발화 끝
