@@ -59,23 +59,25 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you today
-     2.77s  user  발화 시작: Yeah.
-     3.26s  user  발화 끝
-     3.78s  user  발화 시작: Yes, exactly. I'm feeling a bit stuck with a project at work
-     3.80s  agent 발화 끝
-     8.22s  agent 발화 시작: I see. That's perfectly alright, many people experience that
-     8.28s  user  발화 끝
-    15.96s  agent 발화 끝
-    16.34s  user  발화 시작: Uhhh… maybe? I think we talked about feeling overwhelmed onc
-    21.61s  <ret> 발화 (turn5 첫 프레임)
-    22.01s  agent 발화 시작: <ret> I recall you were planning a trip to Kyoto in March. S
-    22.04s  user  발화 끝
-    23.13s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.42s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    27.19s  user  발화 시작: Mm-hmm.
-    27.69s  user  발화 끝
-    29.29s  agent 발화 시작: It sounds like you’re juggling a lot. Would you like to expl
-    29.43s  agent 발화 끝
-    35.92s  agent 발화 끝
-    36.24s  user  발화 시작: Actually, yes. I haven’t looked at booking anything yet, but
-    39.94s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to meet you. I’m a counse
+     5.32s  user  발화 시작: Yeah.
+     5.95s  user  발화 끝
+     7.01s  user  발화 시작: Well, uh, I was just remembering a trip I was planning a whi
+     7.05s  agent 발화 끝
+    10.61s  <ret> 발화 (turn3 첫 프레임)
+    10.69s  agent 발화 시작: <ret> You were planning a trip to Kyoto in March, is that ri
+    10.71s  user  발화 끝
+    12.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    15.36s  user  발화 시작: Mm-hmm.
+    15.99s  user  발화 끝
+    17.36s  user  발화 시작: Yes, Kyoto. I was thinking about it because I need to start 
+    17.36s  agent 발화 끝
+    23.62s  user  발화 끝
+    23.64s  agent 발화 시작: That sounds wonderful. Do you have any specific thoughts abo
+    31.11s  agent 발화 끝
+    31.68s  user  발화 시작: I’m into rock climbing, and I was hoping to find some good s
+    35.68s  <ret> 발화 (turn8 첫 프레임)
+    35.84s  agent 발화 시작: <ret> Ah, rock climbing! That's fantastic. Knowing you enjoy
+    35.97s  user  발화 끝
+    37.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: [2026-02-20] User is into rock climbing.
+    46.36s  agent 발화 끝

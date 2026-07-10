@@ -63,87 +63,93 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Could you make a reservation there | S3 Yes, maybe. How long does it take  | S4 What’s the best way to buy tickets
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Tell me about Le Fumoir. | S3 …What time does the Louvre open? | S4 What about getting around Paris? I
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     2.92s  <ret> 발화 (turn1 첫 프레임)
-     3.15s  user  발화 끝
-     3.15s  agent 발화 시작: <ret> The Eiffel Tower in Paris is at 48.8584 degrees North,
-     4.20s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.67s]: (tool result) Paris, France, 48.8584° N, 2.2945° E
-     5.97s  user  발화 시작: Exactly.
-     6.79s  user  발화 끝
-    11.82s  agent 발화 끝
-    12.12s  user  발화 시작: What about the Louvre Museum?
-    13.54s  <ret> 발화 (turn4 첫 프레임)
-    13.92s  agent 발화 시작: <ret> The Louvre Museum is located at 48.8606 degrees North,
-    13.96s  user  발화 끝
-    15.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: (tool result) Paris, France, 48.8606° N, 2.3376° E
-    23.05s  agent 발화 끝
-    23.06s  user  발화 시작: Are there any good restaurants near the Louvre?
-    25.55s  <ret> 발화 (turn6 첫 프레임)
-    25.86s  agent 발화 시작: <ret> Le Bouillon Chartier is 280 meters away, Bistrot Riche
-    25.90s  user  발화 끝
-    27.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) Paris, France, Le Bouillon Chartier (280m), Bistrot Rich
-    33.92s  agent 발화 끝
-    34.49s  user  발화 시작: Hmm, Chartier sounds interesting.
-    36.74s  user  발화 끝
-    36.79s  agent 발화 시작: Chartier is known for its traditional French cuisine and ver
-    44.99s  agent 발화 끝
-    45.48s  user  발화 시작: Could you make a reservation there for two people tomorrow e
-    48.23s  <ret> 발화 (turn10 첫 프레임)
-    48.47s  agent 발화 시작: <ret> I’ve reserved a table for two at Le Bouillon Chartier 
-    48.67s  user  발화 끝
-    49.51s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.26s]: (tool result) Le Bouillon Chartier, 2026-07-11, 19:00, 2 people, 8a7b2
-    54.73s  agent 발화 끝
-    55.65s  user  발화 시작: Perfect! What’s the weather forecast for Paris tomorrow?
-    59.25s  user  발화 끝
-    59.29s  <ret> 발화 (turn12 첫 프레임)
-    59.36s  agent 발화 시작: <ret> Tomorrow in Paris it will be 25.5 degrees Celsius, wit
-    61.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) 25.5°C, humidity 68%, wind 8.2 km/h
-    63.72s  user  발화 시작: Yeah.
-    64.13s  user  발화 끝
-    67.15s  user  발화 시작: That sounds lovely. I'm…
-    67.20s  agent 발화 끝
-    69.51s  user  발화 끝
-    70.94s  user  발화 시작: …also hoping to visit Versailles.
-    72.92s  user  발화 끝
-    72.94s  agent 발화 시작: Versailles is a wonderful choice! It's a bit outside of Pari
-    80.58s  agent 발화 끝
-    81.29s  user  발화 시작: Yes, maybe. How long does it take to get there by train?
-    84.89s  <ret> 발화 (turn18 첫 프레임)
-    85.00s  agent 발화 시작: <ret> By train, it takes approximately 30 to 40 minutes to r
-    85.13s  user  발화 끝
-    86.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Train, 30-40 minutes
-    91.41s  user  발화 시작: Okay, good to know. And are there any events happening at Ve
-    91.85s  agent 발화 끝
-    95.36s  <ret> 발화 (turn20 첫 프레임)
-    95.75s  agent 발화 시작: <ret> There's a Musical Fountain Show scheduled at Versaille
-    95.90s  user  발화 끝
-    97.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.31s]: (tool result) Musical Fountain Show, 2026-07-12, 16:00
-   100.58s  user  발화 시작: … Actually, is that show included with the palace ticket?
-   101.07s  agent 발화 끝
-   104.08s  agent 발화 시작: The Musical Fountain Show requires a separate ticket in addi
-   104.10s  user  발화 끝
-   109.17s  agent 발화 끝
-   109.59s  user  발화 시작: Oh, okay. Good to know.
-   111.19s  user  발화 끝
-   111.62s  agent 발화 시작: It's still quite a spectacle, though! Many people find it we
-   117.29s  user  발화 시작: What’s the best way to buy tickets for both the palace and t
-   117.41s  agent 발화 끝
-   120.85s  <ret> 발화 (turn26 첫 프레임)
-   120.85s  user  발화 끝
-   120.93s  agent 발화 시작: <ret> I’ve purchased tickets for the Palace and the Musical 
-   122.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: (tool result) Palace of Versailles, Musical Fountain Show, 2026-07-12,
-   129.65s  agent 발화 끝
-   130.73s  user  발화 시작: Fantastic. I think that's everything for now.
-   133.66s  agent 발화 시작: Wonderful! It sounds like you have a lovely trip planned.
-   133.78s  user  발화 끝
-   136.89s  agent 발화 끝
-   137.07s  user  발화 시작: No, I think I’m all set.
-   138.83s  agent 발화 시작: That’s great to hear. Have a wonderful time in Paris and Ver
-   138.86s  user  발화 끝
-   142.80s  agent 발화 끝
-   142.94s  user  발화 시작: Thank you.
-   143.43s  user  발화 끝
-   143.51s  agent 발화 시작: You're very welcome. Enjoy your trip.
-   145.59s  agent 발화 끝
+     3.16s  <ret> 발화 (turn1 첫 프레임)
+     3.37s  user  발화 끝
+     3.38s  agent 발화 시작: <ret> The Eiffel Tower in Paris is at forty-eight point eigh
+     4.44s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.11s]: (tool result) 48.8584,2.2945
+     9.23s  user  발화 시작: Yeah.
+     9.73s  user  발화 끝
+    11.49s  agent 발화 끝
+    11.71s  user  발화 시작: That's great. What about the Louvre Museum?
+    14.02s  <ret> 발화 (turn4 첫 프레임)
+    14.41s  agent 발화 시작: <ret> The Louvre Museum is at forty-eight point eight six ze
+    14.44s  user  발화 끝
+    16.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) 48.8606,2.3376
+    20.45s  user  발화 시작: Right.
+    21.18s  user  발화 끝
+    22.93s  agent 발화 끝
+    23.02s  user  발화 시작: Okay, and how far apart are they?
+    24.68s  <ret> 발화 (turn7 첫 프레임)
+    24.99s  agent 발화 시작: <ret> The distance between the Eiffel Tower and the Louvre M
+    25.05s  user  발화 끝
+    26.52s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.71s]: (tool result) 3.2 km
+    31.70s  agent 발화 끝
+    31.94s  user  발화 시작: Hmm, maybe. Are there any good restaurants near the Louvre?
+    35.36s  user  발화 끝
+    35.46s  <ret> 발화 (turn9 첫 프레임)
+    35.77s  agent 발화 시작: <ret> Le Fumoir is five hundred meters away, Bistrot Valois 
+    37.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: (tool result) Le Fumoir (500 m), Bistrot Valois (600 m), Angelina (700
+    38.94s  user  발화 시작: Okay.
+    39.66s  user  발화 끝
+    45.37s  agent 발화 끝
+    45.69s  user  발화 시작: Tell me about Le Fumoir.
+    47.04s  <ret> 발화 (turn12 첫 프레임)
+    47.10s  agent 발화 시작: <ret> Le Fumoir is at six Rue de l'Amiral de Coligny, a Fren
+    47.30s  user  발화 끝
+    48.64s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.48s]: (tool result) Le Fumoir, 6 Rue de l'Amiral de Coligny, 75001 Paris, Fr
+    55.59s  agent 발화 끝
+    56.46s  user  발화 시작: That sounds nice. Could you make a reservation there for two
+    61.31s  <ret> 발화 (turn14 첫 프레임)
+    61.32s  user  발화 끝
+    61.47s  agent 발화 시작: <ret> You are all set! Your reservation at Le Fumoir is conf
+    62.99s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.81s]: (tool result) Le Fumoir, 2026-07-11 at 20:00 for 2 people, confirmatio
+    72.27s  agent 발화 끝
+    72.60s  user  발화 시작: Perfect!
+    73.44s  agent 발화 시작: I'm glad I could help with that. I find a little planning ah
+    73.56s  user  발화 끝
+    78.30s  agent 발화 끝
+    80.75s  user  발화 시작: Actually, I'm thinking of going to a museum tomorrow morning
+    84.41s  user  발화 시작: …What time does the Louvre open?
+    84.50s  user  발화 끝
+    86.26s  <ret> 발화 (turn19 첫 프레임)
+    86.41s  agent 발화 시작: <ret> The Louvre Museum opens at nine AM and closes at six P
+    86.53s  user  발화 끝
+    88.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) Opens 9:00 AM, Closes 6:00 PM
+    94.17s  user  발화 시작: Good to know. And what's the weather forecast for Paris tomo
+    94.61s  agent 발화 끝
+    97.55s  <ret> 발화 (turn21 첫 프레임)
+    97.85s  agent 발화 시작: <ret> The weather in Paris tomorrow will be twenty-five degr
+    98.02s  user  발화 끝
+    99.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: (tool result) 25.0°C, humidity 60%, wind 8.0 km/h
+   106.80s  agent 발화 끝
+   107.00s  user  발화 시작: Sounds pleasant. Is there anything else I should know about 
+   111.36s  user  발화 끝
+   111.78s  agent 발화 시작: It’s a very large museum, so planning your visit in advance 
+   119.20s  agent 발화 끝
+   120.48s  user  발화 시작: That's helpful. Maybe I’ll just focus on the Mona Lisa.
+   124.04s  user  발화 끝
+   124.41s  agent 발화 시작: A classic choice! It’s quite popular, so be prepared for a c
+   129.55s  agent 발화 끝
+   130.62s  user  발화 시작: What about getting around Paris? Is the metro easy to use?
+   134.75s  agent 발화 시작: The Paris Metro is very efficient and easy to navigate. It's
+   134.82s  user  발화 끝
+   140.73s  agent 발화 끝
+   140.78s  user  발화 시작: Great. Do you think I should buy a metro pass?
+   143.57s  agent 발화 시작: Considering you’ll be visiting multiple locations, a metro p
+   143.60s  user  발화 끝
+   148.37s  user  발화 시작: Mm-hmm.
+   148.87s  user  발화 끝
+   149.79s  user  발화 시작: Okay, good idea. Could you tell me how much a one-day metro 
+   149.92s  agent 발화 끝
+   154.51s  <ret> 발화 (turn32 첫 프레임)
+   154.64s  user  발화 끝
+   154.82s  agent 발화 시작: <ret> A one-day metro pass in Paris costs eight point four f
+   156.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) 8.45 EUR
+   162.37s  agent 발화 끝
+   163.68s  user  발화 시작: Okay, that seems reasonable. Thanks for all your help!
+   166.51s  agent 발화 시작: You’re very welcome. It sounds like you’re planning a wonder
+   166.54s  user  발화 끝
+   171.60s  agent 발화 끝

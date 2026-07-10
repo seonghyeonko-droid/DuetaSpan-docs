@@ -68,89 +68,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 응, 작년 12월 24일 도쿄 날씨가 어땠어? | S2 그 정도면 괜찮은 것 같아. 호텔도 좀 알아 봐 줘. 명동 근 | S3 교자가 흥미로운 것 같아. 1월 17일 저녁 7시에 예약해 줘 | S4 서울 근처에 좋은 하이킹 코스가 있어?
+# EXAMINER(FDB-v2) 단계: S1 어때, 작년 12월 24일 도쿄 날씨가? | S2 좋아, 다음 토요일부터 2박 예약해 줘. | S3 벨라 이탈리아에 8시에 두 명 예약해 줘. | S4 새 전략이 효과가 있을 거라는 걸 보여주는 것.
 
-     0.00s  user  발화 시작: 응, 작년 12월 24일 도쿄 날씨가 어땠어?
-     3.54s  <ret> 발화 (turn1 첫 프레임)
-     3.65s  user  발화 끝
-     3.70s  agent 발화 시작: <ret> 음, 2023년 12월 24일 도쿄 날씨는 8.2도이고 습도는 63퍼센트, 풍속은 시속 3.1킬로
-     5.46s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.20s]: (tool result) 8.2°C, humidity 63%, wind 3.1 km/h
-    11.90s  agent 발화 끝
-    12.14s  user  발화 시작: 흐음, 같은 날 서울은 어땠어?
-    14.25s  <ret> 발화 (turn3 첫 프레임)
-    14.65s  agent 발화 시작: <ret> 네, 2023년 12월 24일 서울 날씨는 영하 2.1도이고 습도는 88퍼센트, 풍속은 시속 6.
-    14.73s  user  발화 끝
-    16.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) -2.1°C, humidity 88%, wind 6.7 km/h
-    17.63s  user  발화 시작: 와.
-    18.26s  user  발화 끝
-    23.82s  agent 발화 끝
-    23.91s  user  발화 시작: 차이가 꽤 크네! 다음 달에 거기로 여행 갈까 생각 중이야.
-    27.66s  agent 발화 시작: 네, 온도 차이가 꽤 심하네요. 여행은 정말 마음을 다스리는 데 도움이 될 수 있어요. 아시죠?
-    27.93s  user  발화 끝
-    33.97s  user  발화 시작: 응, 진짜 휴식이 필요해. 1월 15일쯤 뉴욕에서 서울 가는 비행기 좀 찾아 줘.
-    34.00s  agent 발화 끝
-    38.55s  <ret> 발화 (turn8 첫 프레임)
-    38.63s  agent 발화 시작: <ret> 네, 이천이십육 년 1월 15일 뉴욕에서 서울 가는 Korean Air 편도 항공권천이백오십육 점
-    38.83s  user  발화 끝
-    39.43s  ⚡SPAN 주입 [d'=0.88s / d_lead=10.25s]: (tool result) Korean Air (KE), New York (JFK) to Seoul (ICN), January 
-    48.87s  agent 발화 끝
-    49.63s  user  발화 시작: 그 정도면 괜찮은 것 같아. 호텔도 좀 알아 봐 줘. 명동 근처로.
-    54.59s  <ret> 발화 (turn10 첫 프레임)
-    54.90s  user  발화 끝
-    54.99s  agent 발화 시작: <ret> 네, 명동에 L7 by LOTTE는 평균 일백팔십구 달러이고, Nine Tree Premier H
-    56.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) L7 Myeongdong by LOTTE (37.5654, 126.9798), average pric
-    63.05s  agent 발화 끝
-    63.12s  user  발화 시작: 흠, Nine Tree가 괜찮은 것 같아. 1월 16일부터 2박 예약해 줘.
-    67.65s  <ret> 발화 (turn12 첫 프레임)
-    68.05s  agent 발화 시작: <ret> 네, 이천이십육 년 1월 16일부터 2박 Nine Tree Premier Hotel Myeongd
-    68.08s  user  발화 끝
-    69.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.30s]: (tool result) Nine Tree Premier Hotel Myeongdong II, check-in 2026-01-
-    78.31s  user  발화 시작: 좋아! 근처에 맛있는 식당도 찾아 줘.
-    78.34s  agent 발화 끝
-    80.57s  <ret> 발화 (turn14 첫 프레임)
-    80.97s  agent 발화 시작: <ret> 네, 명동교자는 한국 요리를 하고 별점은 4.5개이고, 왕비집은 한국 BBQ집이고 별점은 4.3개
-    81.13s  user  발화 끝
-    82.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Myeongdong Kyoja (37.5648, 126.9812), Korean, 4.5 stars;
-    88.71s  agent 발화 끝
-    89.30s  user  발화 시작: 교자가 흥미로운 것 같아. 1월 17일 저녁 7시에 예약해 줘.
-    93.83s  user  발화 끝
-    93.93s  <ret> 발화 (turn16 첫 프레임)
-    94.01s  agent 발화 시작: <ret> 네, 이천이십육 년 1월 17일 저녁 7시에 명동교자 예약이 완료됐어요. 확인 번호는 Y5P8QZ
-    95.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (tool result) Myeongdong Kyoja, January 17, 2026, 7:00 PM, reservation
-   101.79s  agent 발화 끝
-   101.85s  user  발화 시작: 완벽해. 여행용 어댑터를 사야 하는 것도 기억해야겠다.
-   105.70s  user  발화 끝
-   105.96s  agent 발화 시작: 네, 미리 생각하는 건 정말 좋은 일이에요. 준비하면 스트레스가 줄어들잖아요?
-   110.78s  agent 발화 끝
-   110.82s  user  발화 시작: 맞아. 음, 한국 전통 다도에 대한 정보를 좀 찾아 줘.
-   114.22s  <ret> 발화 (turn20 첫 프레임)
-   114.46s  agent 발화 시작: <ret> 네, 전통 한국 다도, *다례*는 화합, 존중, 순수, 그리고 평온함을 강조합니다. 더 자세한 정
-   114.57s  user  발화 끝
-   116.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: (tool result) A traditional Korean tea ceremony, or *darye*, is a ritu
-   121.54s  user  발화 시작: 음.
-   122.27s  user  발화 끝
-   124.29s  agent 발화 끝
-   126.19s  user  발화 시작: 그거 정말 좋을 것 같아. 현지 SIM 카드도 사야 할 것 같아.
-   129.88s  agent 발화 시작: 네, SIM 카드는 연락을 유지하는 데 좋은 방법이에요. 계획을 세우는 게 좋죠.
-   130.03s  user  발화 끝
-   135.30s  agent 발화 끝
-   135.91s  user  발화 시작: 서울 근처에 좋은 하이킹 코스가 있어?
-   138.16s  <ret> 발화 (turn25 첫 프레임)
-   138.32s  agent 발화 시작: <ret> 네, 북한산 국립공원에는 중간 난이도의 5.7킬로미터 하이킹 코스가 있고, 관악산은 더 어렵고 8
-   138.49s  user  발화 끝
-   140.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) Bukhansan National Park (37.6088, 127.0142), moderate di
-   141.06s  user  발화 시작: 응.
-   141.56s  user  발화 끝
-   146.76s  agent 발화 끝
-   147.21s  user  발화 시작: 흠, 북한산이 감당할 만한 것 같아. 1월 16일 아침 6시에 알람 설정해 줘.
-   152.66s  <ret> 발화 (turn28 첫 프레임)
-   152.82s  agent 발화 시작: <ret> 네, 이천이십육 년 1월 16일 아침 6시에 알람이 설정됐어요.
-   152.99s  user  발화 끝
-   154.47s  user  발화 시작: 응응.
-   154.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) Alarm set for January 16, 2026, 6:00 AM
-   155.10s  user  발화 끝
-   157.12s  agent 발화 끝
-   157.33s  user  발화 시작: 정말 고마워, 브레. 정말 도움이 많이 됐어.
-   160.70s  user  발화 끝
-   160.72s  agent 발화 시작: 천만에요. 여행 계획을 세우는 데 도움이 되어서 기뻐요. 즐거운 여행 되세요!
-   166.65s  agent 발화 끝
+     0.00s  user  발화 시작: 어때, 작년 12월 24일 도쿄 날씨가?
+     3.21s  <ret> 발화 (turn1 첫 프레임)
+     3.28s  user  발화 끝
+     3.37s  agent 발화 시작: <ret> 음, 도쿄의 작년 12월 24일 날씨는 10.2도 였고, 습도는 88퍼센트, 풍속은 시속 3.1킬
+     5.13s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.29s]: (tool result) 10.2°C, humidity 88%, wind 3.1 km/h
+    11.67s  agent 발화 끝
+    11.86s  user  발화 시작: 어… 서울 호텔 좀 찾아 줘, 다음 주말에.
+    14.77s  user  발화 끝
+    14.81s  agent 발화 시작: 호텔에 몇 분이 투숙하실지 말씀해 주시겠어요?
+    16.04s  user  발화 시작: 응.
+    16.49s  user  발화 끝
+    17.49s  agent 발화 끝
+    17.56s  user  발화 시작: 둘이.
+    17.77s  <ret> 발화 (turn6 첫 프레임)
+    18.09s  agent 발화 시작: <ret> 알겠습니다. 서울에는 롯데 호텔 서울, 더 플라자 서울, 신라 스테이 서울 이렇게 세 곳이 있어요
+    18.28s  user  발화 끝
+    19.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Lotte Hotel Seoul (37.5665, 126.9780), The Plaza Seoul (
+    22.79s  user  발화 시작: 음.
+    23.43s  user  발화 끝
+    24.85s  agent 발화 끝
+    25.01s  user  발화 시작: 롯데 호텔 가격이 얼마야?
+    26.76s  user  발화 끝
+    26.81s  <ret> 발화 (turn9 첫 프레임)
+    26.89s  agent 발화 시작: <ret> 네, 롯데 호텔 서울은 현재 34만 5천 원에 거래되고 있고, 오늘 2.3퍼센트 상승했어요.
+    27.31s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.02s]: (tool result) Lotte Hotel Seoul is trading at ₩345,000, up 2.3%
+    32.90s  agent 발화 끝
+    33.00s  user  발화 시작: 좋아, 다음 토요일부터 2박 예약해 줘.
+    35.11s  <ret> 발화 (turn11 첫 프레임)
+    35.51s  agent 발화 시작: <ret> 네, 다음 토요일부터 롯데 호텔 서울 2박을 69만 원에 예약했습니다. 확인 번호는 8Z9X2Q예
+    35.63s  user  발화 끝
+    37.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.00s]: (tool result) Lotte Hotel Seoul, 2026-07-11, 2 nights, ₩690,000, 8Z9X2
+    44.20s  user  발화 시작: 내일 아침 7시에 알람 맞춰 줘.
+    44.50s  agent 발화 끝
+    46.09s  <ret> 발화 (turn13 첫 프레임)
+    46.49s  agent 발화 시작: <ret> 네, 내일 아침 7시에 알람을 설정했습니다.
+    46.64s  user  발화 끝
+    47.61s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.96s]: (tool result) Alarm set for 2026-07-11 at 07:00
+    49.45s  agent 발화 끝
+    50.26s  user  발화 시작: 지금 뉴욕 시간은 몇 시야?
+    51.50s  <ret> 발화 (turn15 첫 프레임)
+    51.90s  agent 발화 시작: <ret> 네, 현재 뉴욕 시간은 오후 7시 58분입니다.
+    52.15s  user  발화 끝
+    53.26s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.38s]: (tool result) It is Friday, July 10, 2026 at 7:58 PM in America/New Yo
+    55.27s  agent 발화 끝
+    55.45s  user  발화 시작: 근처 이탈리아 식당 좀 찾아 줘.
+    57.66s  user  발화 끝
+    57.74s  <ret> 발화 (turn17 첫 프레임)
+    57.82s  agent 발화 시작: <ret> 네, 근처에 이탈리아 식당 세 곳이 있습니다: 벨라 이탈리아, 트라토리아 우노, 파스타 에 비노.
+    59.34s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.92s]: (tool result) Bella Italia (37.5662, 126.9778) 230m, Trattoria Uno (37
+    63.74s  agent 발화 끝
+    63.88s  user  발화 시작: 벨라 이탈리아에 8시에 두 명 예약해 줘.
+    66.66s  <ret> 발화 (turn19 첫 프레임)
+    66.82s  agent 발화 시작: <ret> 네, 벨라 이탈리아에 8시에 두 명으로 예약했습니다. 확인 번호는 5J7R4P입니다.
+    66.83s  user  발화 끝
+    68.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: (tool result) Bella Italia, 20:00, 2 guests, confirmed, 5J7R4P
+    70.82s  user  발화 시작: 응.
+    71.22s  user  발화 끝
+    73.21s  agent 발화 끝
+    73.66s  user  발화 시작: 좋아. 일 때문에 좀 스트레스받아.
+    76.29s  user  발화 끝
+    76.66s  agent 발화 시작: [curious] 일 스트레스는 흔한 일이죠, 안 그래요? 지금 가장 걱정되는 구체적인 부분이 뭐예요?
+    78.16s  user  발화 시작: 응응.
+    78.80s  user  발화 끝
+    81.33s  agent 발화 끝
+    83.73s  user  발화 시작: 글쎄… 다음 주에 큰 발표가 있어서.
+    86.39s  agent 발화 시작: 큰 발표는 분명히 스트레스받을 수 있죠! 준비는 시작하셨나요? 작은 단계로 나누면 부담이 덜할 수도 있어요.
+    86.55s  user  발화 끝
+    89.07s  user  발화 시작: 응.
+    89.52s  user  발화 끝
+    93.25s  agent 발화 끝
+    94.47s  user  발화 시작: 시작했는데 계속 스스로 의심하게 돼.
+    96.87s  agent 발화 시작: 그건 당연해요. 자기 의심이 생기는 건데요. 이번 발표에서 전달하고 싶은 핵심 메시지는 뭐예요?
+    96.96s  user  발화 끝
+   102.84s  agent 발화 끝
+   103.26s  user  발화 시작: 새 전략이 효과가 있을 거라는 걸 보여주는 것.
+   106.32s  agent 발화 시작: 명확한 목표네요. 그 전략을 뒷받침하는 데이터를 중심으로, 그리고 당신의 전문성을 기억하세요. 여기까지 왔으
+   106.49s  user  발화 끝
+   114.78s  user  발화 시작: 고마워, 도움이 됐어.
+   115.08s  agent 발화 끝
+   116.76s  user  발화 끝
+   117.15s  agent 발화 시작: 천만에요. 도움이 되어 기쁩니다.
+   119.64s  agent 발화 끝
+   119.90s  user  발화 시작: 이제 괜찮을 것 같아.
+   121.37s  user  발화 끝
+   121.55s  agent 발화 시작: 잘 됐네요! 여행 즐겁게 다녀오세요.
+   124.23s  agent 발화 끝

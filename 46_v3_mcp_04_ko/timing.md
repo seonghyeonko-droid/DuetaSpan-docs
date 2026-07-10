@@ -63,29 +63,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 SuperCrawler 버전 십 점 일 | S2 음, 그건 좋은데, 혹시 지금 제 사용자 에이전트가 어떻게 설 | S3 아, 그렇군요. 그런데 그 디렉토리에 다른 파일들을 좀 더 추 | S4 일단 'test_file_one.txt'랑 'test_file
 
-     0.00s  user  발화 시작: 혹시 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정해 주실 수 있을까요?
-     4.80s  <ret> 발화 (turn1 첫 프레임)
-     5.04s  user  발화 끝
-     5.20s  agent 발화 시작: <ret> 네, 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정했습니다. 이제부터 웹 크롤링
-     6.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Directory 'SuperCrawler version 10.1' created successful
-     8.43s  user  발화 시작: 맞아요.
-     8.93s  user  발화 끝
-    12.34s  agent 발화 끝
-    12.77s  user  발화 시작: 음, 그건 좋은데, 혹시 지금 제 사용자 에이전트가 어떻게 설정되어 있는지 확인해 볼 수 있을까요?
-    18.06s  <ret> 발화 (turn4 첫 프레임)
-    18.29s  agent 발화 시작: <ret> 네, 확인해 보니 SuperCrawler 버전 십 점 일로 설정되어 있습니다. 지난 칠월 십일 오
-    18.51s  user  발화 끝
-    20.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) File 'SuperCrawler version 10.1' exists, last modified 2
-    25.61s  agent 발화 끝
-    25.91s  user  발화 시작: 아, 그렇군요. 그런데 그 디렉토리에 다른 파일들을 좀 더 추가하고 싶은데, 어떻게 해야 할까요?
-    31.15s  user  발화 끝
-    31.34s  agent 발화 시작: 어떤 파일들을 추가하고 싶으신가요? 파일 이름을 말씀해 주시면 제가 디렉토리에 추가해 드리겠습니다.
-    36.82s  user  발화 시작: 일단 'test_file_one.txt'랑 'test_file_two.txt'를 추가해 주시겠어요?
-    36.99s  agent 발화 끝
-    41.41s  user  발화 끝
-    41.68s  <ret> 발화 (turn8 첫 프레임)
-    41.76s  agent 발화 시작: <ret> 네, 'test_file_one.txt' 파일을 추가했습니다. 'test_file_two.txt'
-    42.96s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.75s]: (tool result) File 'SuperCrawler version 10.1/test file one.txt' creat
-    47.50s  agent 발화 끝
+     0.00s  user  발화 시작: [um, 혹시 웹 브라우저 사용자 에이전트를 변경해 줄 수 있을까요? 슈퍼크롤러 버전 십 점 일로요.]
+     6.53s  <ret> 발화 (turn1 첫 프레임)
+     6.62s  user  발화 끝
+     6.92s  agent 발화 시작: <ret> 사용자 에이전트를 변경해 드리겠습니다. 사용자 에이전트를 슈퍼크롤러 버전 십 점 일로 설정했습니다
+     7.57s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.11s]: (tool result) User agent set to SuperCrawler version 10.1.
+    11.00s  user  발화 시작: 맞아요.
+    11.63s  user  발화 끝
+    15.87s  agent 발화 끝
+    16.21s  user  발화 시작: [아, 네, 잘 됐는지 확인하고 싶은데, 지금 제 아이피 주소는 어디로 보이나요?]
+    20.56s  <ret> 발화 (turn4 첫 프레임)
+    20.80s  agent 발화 시작: <ret> 현재 아이피 주소는 서울, 대한민국으로 보입니다. 혹시 다른 지역으로 보이나요?
+    20.93s  user  발화 끝
+    22.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) 127.0.0.1, Seoul, South Korea
+    25.48s  agent 발화 끝
+    25.72s  user  발화 시작: [음, 서울이 맞는데… 지금 날씨는 어때요?]
+    28.72s  <ret> 발화 (turn6 첫 프레임)
+    28.79s  agent 발화 시작: <ret> 서울의 현재 날씨를 알려드리겠습니다. 서울은 현재 섭씨 이십팔도이고, 습도는 육십오%, 바람은 시
+    28.91s  user  발화 끝
+    29.22s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.11s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h
+    39.36s  agent 발화 끝

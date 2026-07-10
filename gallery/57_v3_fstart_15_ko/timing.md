@@ -50,61 +50,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼요? | S2 아, 잠깐만, 그… | S3 메뉴 좀 보여줘, 아리아 레스토랑. | S4 파크 하얏트 시드니 가격이 얼마야?
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼요? | S2 베넬롱에 예약 좀 해 줘. 이번 주 토요일 저녁 일곱시에 두  | S3 … 혹시 실내 좌석으로 예약해 줄 수 있어? 베넬롱에. | S4 아니, 괜찮아.
 
      0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼요?
-     3.61s  <ret> 발화 (turn1 첫 프레임)
-     3.68s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 -삼십삼 점 팔 오 육 팔, 경도는 백오십일 점 이 일 오 삼입니다
-     3.88s  user  발화 끝
-     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.80s]: (tool result) -33.8568, 151.2153
-     9.26s  user  발화 시작: 진짜?
-    10.04s  user  발화 끝
-    14.39s  user  발화 시작: 음… 그럼 근처에 맛집 좀 찾아줄 수 있어?
-    14.48s  agent 발화 끝
-    17.05s  <ret> 발화 (turn4 첫 프레임)
-    17.45s  agent 발화 시작: <ret> 오페라 하우스 근처에는 오페라 바가 백미터, 아리아 레스토랑이 이백미터, 베넬롱이 이백오십미터 거
-    17.62s  user  발화 끝
-    19.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Opera Bar (100m), Aria Restaurant (200m), Bennelong (250
-    20.41s  user  발화 시작: 와.
-    21.05s  user  발화 끝
-    25.96s  agent 발화 시작: 어떤 종류의 음식을 선호하시나요? 이탈리아, 프랑스, 아니면 다른 종류를 찾으시나요? 메뉴를 보고 싶으시면 
-    25.98s  agent 발화 끝
-    31.47s  user  발화 시작: 아.
-    31.96s  user  발화 끝
-    33.86s  user  발화 시작: 아, 잠깐만, 그…
-    34.02s  agent 발화 끝
-    35.23s  user  발화 끝
-    36.92s  user  발화 시작: …지금 시드니는 몇 시야?
-    38.34s  <ret> 발화 (turn10 첫 프레임)
-    38.73s  agent 발화 시작: <ret> 지금 시드니는 기온이 섭씨 이십삼도이고 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
-    38.90s  user  발화 끝
-    40.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    45.25s  agent 발화 시작: 맛집을 다시 찾으시면, 메뉴를 보고 싶으신지, 아니면 다른 종류를 찾으시는지 알려주세요.
-    45.40s  agent 발화 끝
-    50.84s  agent 발화 끝
-    51.70s  user  발화 시작: 메뉴 좀 보여줘, 아리아 레스토랑.
-    53.74s  <ret> 발화 (turn13 첫 프레임)
-    54.13s  agent 발화 시작: <ret> 아리아 레스토랑에 이천이십육년 칠월 십일일 저녁 일곱시에 두명 예약이 완료되었습니다. 확인 번호는
-    54.23s  user  발화 끝
-    55.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Aria Restaurant, Sydney, reservation for 2 people on Jul
-    56.42s  user  발화 시작: 응.
-    56.92s  user  발화 끝
-    61.87s  agent 발화 끝
-    63.05s  user  발화 시작: 고마워. 그럼 호텔도 찾아줄 수 있어? 오페라 하우스 근처에.
-    66.81s  <ret> 발화 (turn16 첫 프레임)
-    67.12s  agent 발화 시작: <ret> 오페라 하우스 근처에는 파크 하얏트 시드니가 삼백미터, 풀먼 퀘이 그랜드 시드니 하버가 오백미터,
-    67.35s  user  발화 끝
-    68.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.67s]: (tool result) Park Hyatt Sydney (300m), Pullman Quay Grand Sydney Harb
-    77.67s  user  발화 시작: 파크 하얏트 시드니 가격이 얼마야?
-    77.79s  agent 발화 끝
-    79.93s  <ret> 발화 (turn18 첫 프레임)
-    80.24s  agent 발화 시작: <ret> 파크 하얏트 시드니 (PHS.AX) 주가는 오늘 일 점 이퍼센트 상승한 이백사십오 점 오 영 호주
-    80.25s  user  발화 끝
-    81.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Park Hyatt Sydney (PHS.AX) is trading at $245.50 AUD, up
-    87.18s  agent 발화 끝
-    87.88s  user  발화 시작: 좋아, 그럼 파크 하얏트 시드니로 예약해 줘. 내일 밤으로.
-    91.42s  <ret> 발화 (turn20 첫 프레임)
-    91.81s  agent 발화 시작: <ret> 파크 하얏트 시드니에 이천이십육년 칠월 십일일 일박 예약이 완료되었습니다. 확인 번호는 팔B6C4
-    92.00s  user  발화 끝
-    93.27s  ⚡SPAN 주입 [d'=1.84s / d_lead=9.18s]: (tool result) Park Hyatt Sydney, Sydney, room booked for 1 night, July
-   101.00s  agent 발화 끝
+     3.34s  <ret> 발화 (turn1 첫 프레임)
+     3.41s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 남위 삼십삼 점 팔 오 육 팔도, 경도는 동경 백오십일 점 이 일 
+     3.65s  user  발화 끝
+     5.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.54s]: (tool result) 33.8568° S, 151.2153° E
+     9.35s  user  발화 시작: 진짜?
+    10.13s  user  발화 끝
+    14.79s  user  발화 시작: 음… 근처에 괜찮은 레스토랑 있으면 찾아봐 줘.
+    14.95s  agent 발화 끝
+    15.98s  user  발화 시작: 와.
+    16.61s  user  발화 끝
+    18.02s  <ret> 발화 (turn5 첫 프레임)
+    18.36s  user  발화 끝
+    18.42s  agent 발화 시작: <ret> 아리아 레스토랑은 백오십미터, 베넬롱은 이백미터, 퀘이는 삼백미터 떨어져 있습니다. 분위기나 메뉴
+    20.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Aria Restaurant (150m), Bennelong (200m), Quay (300m)
+    23.68s  user  발화 시작: 어어.
+    24.50s  user  발화 끝
+    26.72s  user  발화 시작: 베넬롱에 예약 좀 해 줘. 이번 주 토요일 저녁 일곱시에 두 명.
+    26.81s  agent 발화 끝
+    30.83s  <ret> 발화 (turn8 첫 프레임)
+    31.15s  agent 발화 시작: <ret> 베넬롱에 이번 주 토요일, 칠월 십이일 저녁 일곱시에 두 분으로 예약이 완료되었습니다. 확인 코드
+    31.22s  user  발화 끝
+    32.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) Bennelong, Saturday, July 12, 2026 at 7:00 PM, 2 guests,
+    33.68s  user  발화 시작: 응.
+    34.08s  user  발화 끝
+    39.58s  agent 발화 끝
+    40.71s  user  발화 시작: 토요일 날씨는 어때?
+    42.39s  <ret> 발화 (turn11 첫 프레임)
+    42.47s  user  발화 끝
+    42.63s  agent 발화 시작: <ret> 시드니의 토요일 날씨는 섭씨 이십이도, 습도는 육십팔퍼센트, 풍속은 시속 칠 점 이킬로미터로 예상
+    44.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) 22.0°C, humidity 68%, wind 7.2 km/h
+    48.92s  user  발화 시작: … 혹시 실내 좌석으로 예약해 줄 수 있어? 베넬롱에.
+    49.67s  agent 발화 끝
+    52.12s  <ret> 발화 (turn13 첫 프레임)
+    52.28s  agent 발화 시작: <ret> 베넬롱에 실내 좌석으로 예약이 변경되었고, 확인 코드는 구a1b8c입니다.
+    52.44s  user  발화 끝
+    54.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (tool result) Bennelong, Saturday, July 12, 2026 at 7:00 PM, 2 guests,
+    58.02s  agent 발화 끝
+    59.24s  user  발화 시작: 고마워.
+    60.01s  agent 발화 시작: 천만에요. 혹시 토요일에 시드니 오페라 하우스에서 공연하는 행사도 알아봐 드릴까요?
+    60.20s  user  발화 끝
+    65.36s  user  발화 시작: 아니, 괜찮아.
+    65.48s  agent 발화 끝
+    66.45s  user  발화 끝
+    66.61s  agent 발화 시작: 네, 알겠습니다. 혹시 다른 계획은 없으신가요?
+    67.66s  user  발화 시작: 응.
+    68.16s  user  발화 끝
+    69.42s  agent 발화 끝
+    70.68s  user  발화 시작: 없어.
+    71.34s  agent 발화 시작: 네, 알겠습니다. 즐거운 여행 되세요.
+    71.50s  user  발화 끝
+    73.92s  agent 발화 끝

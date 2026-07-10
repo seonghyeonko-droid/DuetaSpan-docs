@@ -59,12 +59,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Manon, I'm Thunalo. It's lovely to connect with you today.
-[  2.77s][user ] «backchannel» Yeah.
-[  3.78s][user ] Yes, exactly. I'm feeling a bit stuck with a project at work, actually.
-[  8.22s][moshi] I see. That's perfectly alright, many people experience that. Do you recall if this feeling is similar to anything we discussed before?
-[ 16.34s][user ] Uhhh… maybe? I think we talked about feeling overwhelmed ⟨ret@21.61s⟩ once.
-[ 22.01s][moshi] I recall ⟦⚡SPAN@23.13s: [2026-03-15] User is planning a trip to Kyoto in March.⟧ you were planning a trip to Kyoto in March. Sometimes, planning something exciting can help shift focus, even if indirectly.
-[ 27.19s][user ] «backchannel» Mm-hmm.
-[ 29.29s][moshi] It sounds like you’re juggling a lot. Would you like to explore how that Kyoto trip is progressing, perhaps as a starting point?
-[ 36.24s][user ] Actually, yes. I haven’t looked at booking anything yet, but…
+[  0.00s][moshi] Hi Manon, I’m Thunalo. It’s lovely to meet you. I’m a counselor here to listen, and I’m curious what’s on your mind today.
+[  5.32s][user ] «backchannel» Yeah.
+[  7.01s][user ] Well, uh, I was just remembering a trip I was planning a while back…
+[ 10.69s][moshi] ⟨ret@10.61s⟩ You were planning a trip ⟦⚡SPAN@12.61s: [2026-03-15] User is planning a trip to Kyoto in March.⟧ to Kyoto in March, is that right? Perhaps we could explore what sparked that plan initially?
+[ 15.36s][user ] «backchannel» Mm-hmm.
+[ 17.36s][user ] Yes, Kyoto. I was thinking about it because I need to start making some real plans for a longer vacation.
+[ 23.64s][moshi] That sounds wonderful. Do you have any specific thoughts about what you’d like to experience on this trip? Perhaps some things you're hoping to see or do?
+[ 31.68s][user ] I’m into rock climbing, and I was hoping to find some good spots near ⟨ret@35.68s⟩ Kyoto.
+[ 35.84s][moshi] Ah, rock climbing! That's ⟦⚡SPAN@37.68s: [2026-02-20] User is into rock climbing.⟧ fantastic. Knowing you enjoy that helps me understand your adventurous spirit. I can search for climbing locations near Kyoto for you if you'd like.

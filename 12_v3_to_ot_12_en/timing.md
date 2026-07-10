@@ -58,23 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, who did the guitar solo o | S2 Oh, seriously? That’s cool. | S3 Wow, I didn’t know that! Did he wr | S4 That’s amazing. I'll have to liste
+# EXAMINER(FDB-v2) 단계: S1 Do you know who played the guitar  | S2 Wow, I didn’t realize it was him!  | S3 You won't believe who it was... | S4 So, Jal, do you have any tips for 
 
-     0.00s  user  발화 시작: Hey, uh, who did the guitar solo on Michael Jackson’s “Beat 
-     4.95s  <ret> 발화 (turn1 첫 프레임)
-     5.18s  agent 발화 시작: <ret> Eddie Van Halen performed the guitar solo on “Beat It”
-     5.33s  user  발화 끝
-     6.88s  user  발화 시작: Okay.
-     6.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s song "B
-     7.69s  user  발화 끝
-     9.56s  user  발화 시작: Oh, seriously? That’s cool.
-     9.65s  agent 발화 끝
-    11.98s  user  발화 시작: Wow, I didn’t know that! Did he write it too, or just play i
-    12.09s  user  발화 끝
-    15.80s  <ret> 발화 (turn5 첫 프레임)
-    16.18s  agent 발화 시작: <ret> Eddie Van Halen both wrote and performed that solo. It
-    16.28s  user  발화 끝
-    17.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: Eddie Van Halen wrote and performed the guitar solo for "Beat It".
-    22.48s  agent 발화 끝
-    23.31s  user  발화 시작: That’s amazing. I'll have to listen to it again now, knowing
-    27.47s  user  발화 끝
+     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson’s 
+     5.34s  <ret> 발화 (turn1 첫 프레임)
+     5.55s  agent 발화 시작: <ret> That would be Eddie Van Halen, actually. A truly iconi
+     5.79s  user  발화 끝
+     7.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.80s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s song “B
+     9.73s  user  발화 시작: Yeah.
+    10.50s  user  발화 끝
+    11.18s  user  발화 시작: Wow, I didn’t realize it was him! That's amazing.
+    11.35s  agent 발화 끝
+    14.82s  user  발화 시작: You won't believe who it was...
+    14.93s  user  발화 끝
+    16.70s  user  발화 끝
+    18.20s  user  발화 시작: So, Jal, do you have any tips for dealing with a really stre
+    22.32s  <ret> 발화 (turn6 첫 프레임)
+    22.71s  agent 발화 시작: <ret> Deep, mindful breaths can really help calm things down
+    22.92s  user  발화 끝
+    24.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: Deep breathing exercises can help reduce stress and promote relaxation
+    28.03s  agent 발화 끝

@@ -63,25 +63,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 정부 기관에 대해 읽다가 궁금해졌어…… | S2 그럼, 재향군인부(Department of Veterans A | S3 천구백삼십년? 그거 좀… 늦었네. 그보다 훨씬 전부터 퇴역 군 | S4 그러니까 병원이 먼저 생기고, 그 다음에 부서가 훨씬 뒤에 만
+# EXAMINER(FDB-v2) 단계: S1 어, 정부 부처에 대해 읽고 있었는데… | S2 혹시, 재향군인부(Department of Veterans A | S3 천구백삼십년? 그거 좀… 최근 같아. 훨씬 더 예전에 다른 이 | S4 천팔백팔십오년… 그러니까, 이름은 천구백삼십년에 바뀐 거고, 
 
-     0.00s  user  발화 시작: 어, 정부 기관에 대해 읽다가 궁금해졌어……
-     3.13s  user  발화 끝
-     4.67s  user  발화 시작: 그럼, 재향군인부(Department of Veterans Affairs)는 언제 만들어졌어?
-     9.19s  <ret> 발화 (turn2 첫 프레임)
-     9.59s  agent 발화 시작: <ret> 음, 재향군인부는 천구백삼십년 칠월 이십일일에 설립됐습니다. 이런 정보를 알아두시는 건 좋은 일이
-     9.66s  user  발화 끝
-    11.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: The United States Department of Veterans Affairs was established on Ju
-    18.63s  agent 발화 끝
-    19.08s  user  발화 시작: 천구백삼십년? 그거 좀… 늦었네. 그보다 훨씬 전부터 퇴역 군인들을 지원해야 했잖아?
-    25.23s  <ret> 발화 (turn4 첫 프레임)
-    25.47s  agent 발화 시작: <ret> 네, 사실 그렇습니다. 최초의 연방 퇴역 군인 병원은 천팔백육십육년에 문을 열어서 남북 전쟁 참전
-    25.66s  user  발화 끝
-    27.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.75s]: The first federal veterans’ hospital opened in 1866, offering care to 
-    38.22s  agent 발화 끝
-    39.36s  user  발화 시작: 그러니까 병원이 먼저 생기고, 그 다음에 부서가 훨씬 뒤에 만들어졌다는 거야? 좀 이상하잖아?
-    45.36s  <ret> 발화 (turn6 첫 프레임)
-    45.51s  agent 발화 시작: <ret> 맞아요, 그렇게 생각하시는 게 맞습니다. 천팔백육십일년에 연금국(Bureau of Pensions
-    45.66s  user  발화 끝
-    47.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.52s]: The Bureau of Pensions, established in 1861, initially handled veteran
-    60.03s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 정부 부처에 대해 읽고 있었는데…
+     2.49s  user  발화 끝
+     4.08s  user  발화 시작: 혹시, 재향군인부(Department of Veterans Affairs)는 언제 만들어졌어?
+     8.56s  <ret> 발화 (turn2 첫 프레임)
+     8.96s  agent 발화 시작: <ret> 음, 재향군인부는 천구백삼십년 삼월 삼일에 설립되었어요. 국가를 위해 봉사하신 분들을 지원한 역사
+     9.03s  user  발화 끝
+    10.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.06s]: The Department of Veterans Affairs was established on March 3, 1930.
+    21.02s  agent 발화 끝
+    21.43s  user  발화 시작: 천구백삼십년? 그거 좀… 최근 같아. 훨씬 더 예전에 다른 이름으로 시작하지 않았어?
+    27.16s  <ret> 발화 (turn4 첫 프레임)
+    27.32s  agent 발화 시작: <ret> 네, 사실은 천팔백팔십오년에 국립 장애 퇴역 군인 및 선원 자택(National Home for 
+    27.49s  user  발화 끝
+    29.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.86s]: It originated as the National Home for Disabled Soldiers and Sailors i
+    43.18s  agent 발화 끝
+    44.25s  user  발화 시작: 천팔백팔십오년… 그러니까, 이름은 천구백삼십년에 바뀐 거고, 아이디어는 훨씬 더 오래됐다는 거네. 원래 목적
+    54.08s  user  발화 끝
+    54.11s  agent 발화 시작: 처음에는 남북 전쟁 참전 용사들에게 집과 보살핌을 제공하기 위해 만들어졌어요. 당시에는 매우 구체적인 필요였
+    64.27s  agent 발화 끝

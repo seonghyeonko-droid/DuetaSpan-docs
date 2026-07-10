@@ -63,27 +63,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, that wasn’t what I meant. I w | S3 Can you at least search for how to | S4 Yes, please send it to me.
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, that’s good. Now, can you fin | S3 Play “Kind of Blue”, please. | S4 That's perfect, thank you.
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.22s  <ret> 발화 (turn1 첫 프레임)
-     4.53s  user  발화 끝
-     4.54s  agent 발화 시작: <ret> I’ve created a directory named SuperCrawler version te
-     5.26s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.13s]: (tool result) SuperCrawler version ten point one created.
-     7.76s  user  발화 시작: Mhm.
-     8.26s  user  발화 끝
-    11.67s  agent 발화 끝
-    12.97s  user  발화 시작: Hmm, that wasn’t what I meant. I wanted to change the browse
-    18.02s  user  발화 끝
-    18.17s  agent 발화 시작: I understand. I apologize for the misinterpretation. I can’t
-    25.59s  agent 발화 끝
-    25.96s  user  발화 시작: Can you at least search for how to do that?
-    27.97s  <ret> 발화 (turn6 첫 프레임)
-    28.29s  agent 발화 시작: <ret> Changing your browser’s user agent involves extensions
-    28.41s  user  발화 끝
-    29.09s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.30s]: (tool result) Changing your browser's user agent involves extensions o
-    36.58s  agent 발화 끝
-    37.29s  user  발화 시작: Yes, please send it to me.
-    39.05s  user  발화 끝
-    39.24s  agent 발화 시작: I’ve sent the link to your device. It’s a detailed guide, I 
-    43.59s  agent 발화 끝
+     4.08s  <ret> 발화 (turn1 첫 프레임)
+     4.39s  agent 발화 시작: <ret> I can adjust the browser’s user agent for you. The use
+     4.40s  user  발화 끝
+     5.04s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.30s]: (tool result) User agent set to SuperCrawler version 10.1
+     7.86s  user  발화 시작: Mhm.
+     8.31s  user  발화 끝
+    12.09s  agent 발화 끝
+    12.81s  user  발화 시작: Hmm, that’s good. Now, can you find me some jazz music?
+    16.61s  <ret> 발화 (turn4 첫 프레임)
+    16.84s  user  발화 끝
+    16.85s  agent 발화 시작: <ret> I found “Kind of Blue” by Miles Davis, “A Love Supreme
+    18.37s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.57s]: (tool result) Kind of Blue — Miles Davis — Columbia, 1959; A Love Supr
+    27.42s  agent 발화 끝
+    27.74s  user  발화 시작: Play “Kind of Blue”, please.
+    29.21s  <ret> 발화 (turn6 첫 프레임)
+    29.29s  agent 발화 시작: <ret> Now playing “Kind of Blue” by Miles Davis. I hope you 
+    29.49s  user  발화 끝
+    29.54s  ⚡SPAN 주입 [d'=0.33s / d_lead=0.33s]: (tool result) Playing “Kind of Blue” — Miles Davis — Columbia, 1959
+    33.54s  agent 발화 끝
+    34.21s  user  발화 시작: That's perfect, thank you.
+    35.96s  user  발화 끝
+    36.00s  agent 발화 시작: You're very welcome. I'm glad I could help you find some mus
+    40.40s  agent 발화 끝

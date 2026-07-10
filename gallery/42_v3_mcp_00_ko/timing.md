@@ -76,63 +76,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 파리 에펠탑의 좌표를 알려줄 수 있을까요? | S2 리츠 파리가 좋겠네요. 예약해 줄 수 있나요? | S3 르 부용 샤르티에가 가깝네요. | S4 …그중에 루브르 박물관은 예약해야 하나요?
+# EXAMINER(FDB-v2) 단계: S1 에펠탑 파리 지도를 알려줄 수 있나요? | S2 음… 그럼, 에펠탑 근처에 괜찮은 식당 좀 찾아주실 수 있을까 | S3 멋지네요! 그런데, 혹시 그 식당이 에펠탑 전망을 볼 수 있는 | S4 …저기, 식당 예약은 됐는데, 혹시 그 근처 호텔도 같이 알아
 
-     0.00s  user  발화 시작: 파리 에펠탑의 좌표를 알려줄 수 있을까요?
-     2.90s  <ret> 발화 (turn1 첫 프레임)
-     3.14s  agent 발화 시작: <ret> 에펠탑의 좌표는 북위 사십팔 점 팔 오 팔 사도, 동경 이 점 이 구 사 오도입니다. 파리에 가실
-     3.19s  user  발화 끝
-     4.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) 48.8584° N, 2.2945° E
-    11.57s  agent 발화 끝
-    12.20s  user  발화 시작: 네, 다음 달에 파리 여행을 가려고 해요.
-    15.90s  user  발화 끝
-    16.06s  agent 발화 시작: 다음 달 파리 여행을 계획하고 계시는군요. 멋진 여행이 될 거예요. 혹시 숙소는 예약하셨나요?
-    20.11s  user  발화 시작: 아.
-    20.74s  user  발화 끝
-    21.99s  agent 발화 끝
-    22.64s  user  발화 시작: 아직 숙소를 예약하지 못했어요. 추천해 줄 만한 곳이 있을까요?
-    27.02s  <ret> 발화 (turn6 첫 프레임)
-    27.07s  user  발화 끝
-    27.10s  agent 발화 시작: <ret> 파리에는 럭셔리 호텔이 많아요. 리츠 파리, 브리스톨 파리, 포시즌 호텔 조르주 V가 괜찮은 선택
-    29.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.12s]: (tool result) Hotel Ritz Paris, 15 Place Vendôme, 75001 Paris; Le Bris
-    35.21s  agent 발화 끝
-    35.73s  user  발화 시작: 리츠 파리가 좋겠네요. 예약해 줄 수 있나요?
-    39.10s  user  발화 끝
-    39.20s  <ret> 발화 (turn8 첫 프레임)
-    39.28s  agent 발화 시작: <ret> 리츠 파리 호텔이 예약되었습니다. 확인 번호는 RTZ78923입니다. 팔월 십오일부터 이십일까지 
-    41.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.99s]: (tool result) Confirmation ID: RTZ78923, Hotel Ritz Paris, 15 Place Ve
-    48.28s  agent 발화 끝
-    48.66s  user  발화 시작: 감사합니다. 혹시 그 근처에 괜찮은 레스토랑도 알아봐 줄 수 있을까요?
-    52.92s  <ret> 발화 (turn10 첫 프레임)
-    53.16s  agent 발화 시작: <ret> 리츠 파리 근처에는 르 부용 샤르티에, 라르페주, 세프팀 레스토랑이 있습니다. 르 부용 샤르티에는
-    53.25s  user  발화 끝
-    53.42s  ⚡SPAN 주입 [d'=0.50s / d_lead=12.57s]: (tool result) Le Bouillon Chartier, 7 Rue du Faubourg Montmartre, 7500
-    60.24s  user  발화 시작: 네.
-    60.69s  user  발화 끝
-    65.73s  agent 발화 끝
-    66.07s  user  발화 시작: 르 부용 샤르티에가 가깝네요.
-    68.51s  user  발화 끝
-    68.70s  agent 발화 시작: 르 부용 샤르티에가 가장 가깝네요. 가성비 좋은 맛집으로 유명합니다.
-    70.42s  user  발화 시작: 네.
-    71.01s  user  발화 끝
-    73.13s  agent 발화 시작: 파리에서 맛있는 식사를 즐기실 수 있을 거예요. 혹시 파리에서 꼭 가봐야 할 관광지도 궁금하신가요?
-    73.15s  agent 발화 끝
-    79.87s  user  발화 시작: 네, 물론이죠.
-    79.90s  agent 발화 끝
-    80.68s  <ret> 발화 (turn17 첫 프레임)
-    80.92s  agent 발화 시작: <ret> 파리에서는 에펠탑, 루브르 박물관, 개선문, 노트르담 대성당, 오르세 미술관을 꼭 방문해 보세요.
-    81.01s  user  발화 끝
-    82.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Eiffel Tower, Louvre Museum, Arc de Triomphe, Notre-Dame
-    87.22s  user  발화 시작: …그중에 루브르 박물관은 예약해야 하나요?
-    87.78s  agent 발화 끝
-    90.13s  <ret> 발화 (turn19 첫 프레임)
-    90.37s  agent 발화 시작: <ret> 루브르 박물관은 시간대별 예약을 권장합니다. 현재 오전 열시, 열한시, 오후 한시, 두시에 예약 
-    90.60s  user  발화 끝
-    92.05s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.25s]: (tool result) Louvre Museum, 99 Rue de Rivoli, 75001 Paris: Time slots
-    98.61s  agent 발화 끝
-    98.84s  user  발화 시작: 오후 한시로 예약해 줄 수 있을까요?
-   100.76s  <ret> 발화 (turn21 첫 프레임)
-   101.16s  agent 발화 시작: <ret> 루브르 박물관 오후 한시 입장권이 예약되었습니다. 확인 번호는 LVR45678입니다. 팔월 십육일
-   101.39s  user  발화 끝
-   101.88s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.79s]: (tool result) Confirmation ID: LVR45678, Louvre Museum, 99 Rue de Rivo
-   108.95s  agent 발화 끝
+     0.00s  user  발화 시작: 에펠탑 파리 지도를 알려줄 수 있나요?
+     2.53s  <ret> 발화 (turn1 첫 프레임)
+     2.77s  agent 발화 시작: <ret> 파리 에펠탑의 좌표는 북위 사십팔 점 팔 오 팔 사도, 동경 이 점 이 구 사 오도입니다.
+     2.90s  ⚡SPAN 주입 [d'=0.37s / d_lead=0.37s]: (tool result) 48.8584° N, 2.2945° E
+     2.95s  user  발화 끝
+     4.77s  user  발화 시작: 어머.
+     5.27s  user  발화 끝
+     8.63s  user  발화 시작: 혹시 지금 서울 날씨는 어떤가요?
+     9.02s  agent 발화 끝
+    10.77s  <ret> 발화 (turn4 첫 프레임)
+    11.00s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 이십팔도, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터입니다.
+    11.08s  user  발화 끝
+    11.81s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.69s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h
+    16.69s  agent 발화 끝
+    17.17s  user  발화 시작: 네, 알겠습니다.
+    18.80s  agent 발화 시작: 도움이 되어서 기쁩니다.
+    18.91s  user  발화 끝
+    20.37s  agent 발화 끝
+    20.59s  user  발화 시작: 음… 그럼, 에펠탑 근처에 괜찮은 식당 좀 찾아주실 수 있을까요?
+    25.08s  <ret> 발화 (turn8 첫 프레임)
+    25.48s  agent 발화 시작: <ret> 에펠탑 근처 식당으로는 르 쥘 베른이 이백오십미터, 레 옴브르가 사백미터, 비스트로 슈 프랑스가 
+    25.64s  user  발화 끝
+    27.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: (tool result) Le Jules Verne (250m), 58 Tour Eiffel, 7th arr., Paris; 
+    35.50s  agent 발화 끝
+    35.77s  user  발화 시작: 르 쥘 베른 예약해 줄 수 있나요?
+    38.62s  <ret> 발화 (turn10 첫 프레임)
+    38.87s  user  발화 끝
+    39.02s  agent 발화 시작: <ret> 르 쥘 베른에 칠월 십일일 저녁 여덟시에 두명으로 예약이 확정되었습니다. 확인 번호는 칠A9B2C
+    40.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Reservation confirmed for 2 people at Le Jules Verne on 
+    46.76s  agent 발화 끝
+    47.16s  user  발화 시작: 멋지네요! 그런데, 혹시 그 식당이 에펠탑 전망을 볼 수 있는 곳인가요?
+    53.59s  user  발화 끝
+    53.66s  agent 발화 시작: 네, 르 쥘 베른은 에펠탑 안쪽에 위치해 있어 멋진 전망을 감상할 수 있습니다.
+    58.31s  user  발화 시작: 와, 정말 좋겠네요.
+    58.43s  agent 발화 끝
+    60.12s  agent 발화 시작: 좋은 시간을 보내시길 바랍니다. 혹시 다른 예약이 필요하신가요?
+    60.20s  user  발화 끝
+    61.38s  user  발화 시작: 맞아요.
+    62.15s  user  발화 끝
+    63.93s  user  발화 시작: 아, 잠깐만요—
+    63.97s  agent 발화 끝
+    65.14s  user  발화 시작: …저기, 식당 예약은 됐는데, 혹시 그 근처 호텔도 같이 알아봐 주실 수 있을까요? 르 쥘 베른에서 가까운 
+    65.26s  user  발화 끝
+    73.66s  user  발화 끝
+    73.68s  <ret> 발화 (turn18 첫 프레임)
+    73.76s  agent 발화 시작: <ret> 르 쥘 베른 근처 호텔로는 호텔 플라자 아테네가 팔백미터, 샹그릴라 파리가 일 점 이킬로미터, 포
+    75.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.45s]: (tool result) Hotel Plaza Athénée (800m), 25 Avenue Montaigne, 8th arr
+    85.21s  agent 발화 끝
+    85.25s  user  발화 시작: 음… 호텔 플라자 아테네가 괜찮겠네요. 그쪽 예약도 좀 부탁드릴까요?
+    90.44s  user  발화 끝

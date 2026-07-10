@@ -77,12 +77,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering… where does the name du Plessis actually come from? It’s my grandmother’s maiden name.
-[  7.31s][moshi] ⟨ret@7.25s⟩ The name ⟦⚡SPAN@8.45s: Du Plessis is a French surname originally denoting someone from Plessis-les-Tours in the Loire Valley.⟧ du Plessis originates from France, specifically from Plessis-les-Tours, a town in the Loire Valley. It originally identified someone who came from that place.
-[ 14.89s][user ] «backchannel» Mhm.
-[ 17.43s][user ] Oh, that’s interesting. Was it a common name in France ⟨ret@21.03s⟩ then?
-[ 21.41s][moshi] Yes, the Plessis ⟦⚡SPAN@23.03s: The Plessis family were nobles of French origin, becoming prominent in the 12th century.⟧ family were actually nobles in France, becoming well-known as early as the twelfth century. They were a fairly prominent family.
-[ 30.52s][user ] And did they… did they ever leave France, do you know?
-[ 33.78s][moshi] ⟨ret@33.71s⟩ It ⟦⚡SPAN@34.67s: Huguenots bearing the name du Plessis emigrated to South Africa in the 17th and 18th centuries.⟧ appears some people with the du Plessis name did leave France; Huguenots emigrated to South Africa during the seventeenth and eighteenth centuries.
-[ 42.27s][user ] So that’s likely how it got to South Africa, then?
-[ 45.52s][moshi] It seems quite probable, yes. Often, family names travel with people as they create new lives elsewhere. It’s a lovely connection to your grandmother’s heritage.
+[  0.00s][user ] I was wondering about the origin of the surname du Plessis. It sounds… French, maybe?
+[  5.75s][moshi] ⟨ret@5.68s⟩ The name ⟦⚡SPAN@6.88s: Du Plessis is a French surname meaning “of the manor.”⟧ du Plessis originates from France, meaning “of the manor.” It’s a locational name, quite common historically.
+[ 11.93s][user ] «backchannel» Mhm.
+[ 14.05s][user ] Oh, that's interesting! Is it still common in France ⟨ret@18.08s⟩ today?
+[ 18.48s][moshi] Yes, it is. ⟦⚡SPAN@20.08s: Du Plessis is the eighty-seventh most common surname in France.⟧ Du Plessis is currently the eighty-seventh most common surname found in France.
+[ 25.07s][user ] Welll… my grandmother was Afrikaans. Does it have a history there ⟨ret@29.88s⟩ too?
+[ 30.26s][moshi] It does, actually. ⟦⚡SPAN@31.88s: The surname du Plessis is common among Afrikaans-speaking South Africans.⟧ The surname du Plessis is quite common among Afrikaans-speaking people in South Africa, stemming from Huguenot settlers.

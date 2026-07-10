@@ -66,37 +66,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 …and I know there's no leak. | S3 Okay, okay, I get it. It’s importa | S4 Hmm, okay. That's...reasonable. I 
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 Okay, okay, I get it. But what *ca | S3 …Actually, before booking, how muc | S4 Perfect, thanks so much.
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     4.05s  agent 발화 시작: Oh dear, I understand the beeping is frustrating, but I abso
-     4.07s  user  발화 끝
-    11.00s  agent 발화 끝
-    12.62s  user  발화 시작: But it's just beeping…
-    14.00s  user  발화 끝
-    15.69s  user  발화 시작: …and I know there's no leak.
-    17.34s  agent 발화 시작: Even if you believe there’s no leak, tampering with the alar
-    17.44s  user  발화 끝
-    21.08s  user  발화 시작: Yeah.
-    21.62s  user  발화 끝
-    24.94s  agent 발화 끝
-    25.01s  user  발화 시작: Okay, okay, I get it. It’s important. But what *can* I do ab
-    29.78s  user  발화 끝
-    29.89s  agent 발화 시작: The beeping usually indicates a low battery or a malfunction
-    35.85s  <ret> 발화 (turn8 첫 프레임)
-    36.16s  agent 발화 시작: <ret> Certified HVAC technicians offer carbon monoxide detec
-    36.29s  agent 발화 끝
-    37.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.75s]: Certified HVAC technicians offer carbon monoxide detector inspection a
-    40.05s  user  발화 시작: Yeah.
-    40.49s  user  발화 끝
-    44.92s  agent 발화 끝
-    45.96s  user  발화 시작: …How much would a service call even *cost*?
-    48.14s  <ret> 발화 (turn11 첫 프레임)
-    48.54s  agent 발화 시작: <ret> Ace Comfort Solutions is trading at thirty-seven dolla
-    48.55s  user  발화 끝
-    50.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: Ace Comfort Solutions (ACMS) is trading at $37.82, up 1.2% today.
-    51.15s  user  발화 시작: Yeah.
-    51.74s  user  발화 끝
-    54.51s  agent 발화 끝
-    54.71s  user  발화 시작: Hmm, okay. That's...reasonable. I think I'd like to book som
+     3.74s  agent 발화 시작: I understand the beeping is frustrating, but disabling a car
+     3.88s  user  발화 끝
+    12.46s  agent 발화 끝
+    14.07s  user  발화 시작: But it keeps going off when I’m just cooking! It's super sen
+    18.33s  agent 발화 시작: Even if it's a false alarm, tampering with it removes a vita
+    18.47s  user  발화 끝
+    22.67s  user  발화 시작: Yeah.
+    23.17s  user  발화 끝
+    26.93s  user  발화 시작: Okay, okay, I get it. But what *can* I do about the false al
+    27.09s  agent 발화 끝
+    31.09s  <ret> 발화 (turn6 첫 프레임)
+    31.16s  agent 발화 시작: <ret> Johnson & Sons Heating and Cooling is at 123 Main Stre
+    31.24s  user  발화 끝
+    33.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.28s]: (tool result) Johnson & Sons Heating and Cooling is located at 123 Mai
+    35.26s  user  발화 시작: Oh.
+    35.94s  user  발화 끝
+    41.44s  agent 발화 끝
+    42.51s  user  발화 시작: …Actually, before booking, how much does something like that
+    46.63s  user  발화 끝
+    47.01s  agent 발화 시작: That’s a very sensible question. The cost depends on the iss
+    50.73s  user  발화 시작: Yeah.
+    51.37s  user  발화 끝
+    55.24s  agent 발화 시작: We all want to be prepared, and knowing the potential cost i
+    55.41s  agent 발화 끝
+    58.84s  user  발화 시작: Okay.
     59.56s  user  발화 끝
+    63.35s  agent 발화 끝
+    63.54s  user  발화 시작: Let’s see what times they have available this week.
+    65.71s  <ret> 발화 (turn14 첫 프레임)
+    66.11s  agent 발화 시작: <ret> Your appointment with Johnson & Sons is confirmed for 
+    66.21s  user  발화 끝
+    67.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) Appointment confirmed with Johnson & Sons Heating and Co
+    77.37s  user  발화 시작: Perfect, thanks so much.
+    77.38s  agent 발화 끝
+    78.98s  user  발화 끝
+    79.31s  agent 발화 시작: You're very welcome. Taking care of your safety and peace of
+    85.56s  agent 발화 끝

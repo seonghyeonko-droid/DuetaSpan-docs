@@ -58,43 +58,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm feeling really overwhelmed… | S2 Yeah, uhhh… I have a history exam  | S3 That's good. Could you maybe find  | S4 Maybe. Can you book me a study roo
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling a bit overwhelmed with | S2 That sounds good. | S3 A timeline, yeah, that might work. | S4 Maybe you're right. I should just 
 
-     0.00s  user  발화 시작: I'm feeling really overwhelmed…
-     2.07s  user  발화 끝
-     4.04s  user  발화 시작: …with studying for my exams.
-     6.25s  agent 발화 시작: It's understandable to feel that way, Thunaen here. Exams ca
-     6.30s  user  발화 끝
-    12.74s  agent 발화 끝
-    13.38s  user  발화 시작: Yeah, uhhh… I have a history exam on Friday.
-    16.91s  agent 발화 시작: Okay, a history exam on Friday. Do you have a specific area 
-    17.08s  user  발화 끝
-    23.57s  user  발화 시작: I think it's mostly remembering all the dates.
-    23.68s  agent 발화 끝
-    25.32s  user  발화 시작: Yeah.
-    25.95s  <ret> 발화 (turn7 첫 프레임)
-    26.00s  user  발화 끝
-    26.02s  agent 발화 시작: <ret> It's a popular study aid, actually. The gentle rhythms
-    26.07s  user  발화 끝
-    27.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: (tool result) lofi hip hop radio - beats to relax/study to — ChilledCo
-    30.79s  agent 발화 끝
-    32.24s  user  발화 시작: That's good. Could you maybe find me a timeline of the Frenc
-    36.22s  <ret> 발화 (turn9 첫 프레임)
-    36.60s  agent 발화 시작: <ret> The French Revolution spanned from seventeen eighty-ni
-    36.81s  user  발화 끝
-    38.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.17s]: (tool result) The French Revolution lasted from 1789 to 1799, starting
-    42.77s  agent 발화 끝
-    44.60s  user  발화 시작: Wow, that's a long time.
-    46.35s  user  발화 끝
-    46.52s  agent 발화 시작: It was a period of immense upheaval, yes. Breaking it down i
-    52.31s  agent 발화 끝
-    52.35s  user  발화 시작: Maybe. Can you book me a study room at the library for Frida
-    56.95s  <ret> 발화 (turn13 첫 프레임)
-    57.10s  agent 발화 시작: <ret> I’ve reserved a study room for you at the library on F
-    57.21s  user  발화 끝
-    58.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) Library Study Room, 42 Maple Street (34.0522,-118.2437) 
-    64.35s  user  발화 시작: Perfect, thank you!
-    64.47s  agent 발화 끝
-    65.36s  user  발화 끝
-    65.53s  agent 발화 시작: You're very welcome! Remember, small steps and a calm mind c
-    71.87s  agent 발화 끝
+     0.00s  user  발화 시작: I'm feeling a bit overwhelmed with studying for my exams.
+     3.54s  agent 발화 시작: It's understandable to feel that way when facing exams, Thun
+     3.61s  user  발화 끝
+     9.88s  agent 발화 끝
+     9.92s  user  발화 시작: Well, history is really tough. I need to memorize so many da
+    14.08s  agent 발화 시작: History can definitely be demanding! Perhaps we could explor
+    14.18s  user  발화 끝
+    19.46s  agent 발화 끝
+    20.32s  user  발화 시작: That sounds good.
+    21.64s  <ret> 발화 (turn5 첫 프레임)
+    21.70s  user  발화 끝
+    21.71s  agent 발화 시작: <ret> Spaced repetition involves reviewing information at in
+    23.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Spaced repetition is a learning technique that incorpora
+    25.95s  user  발화 시작: Yeah.
+    26.45s  user  발화 끝
+    27.21s  user  발화 시작: That sounds…complicated. Is there a simpler way?
+    27.41s  agent 발화 끝
+    31.05s  user  발화 끝
+    31.45s  agent 발화 시작: It can seem daunting at first. Perhaps creating a timeline m
+    38.49s  agent 발화 끝
+    38.69s  user  발화 시작: A timeline, yeah, that might work. Can you find me some key 
+    43.71s  <ret> 발화 (turn10 첫 프레임)
+    44.10s  agent 발화 시작: <ret> The French Revolution began in seventeen eighty-nine, 
+    44.11s  user  발화 끝
+    45.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.91s]: (tool result) The French Revolution began in 1789 with the Storming of
+    57.96s  user  발화 시작: That’s…a lot.
+    58.01s  agent 발화 끝
+    60.01s  agent 발화 시작: It is a significant period, isn’t it? Remember, breaking it 
+    60.03s  user  발화 끝
+    66.20s  user  발화 시작: Maybe you're right. I should just focus on one event at a ti
+    66.22s  agent 발화 끝
+    69.90s  agent 발화 시작: Exactly! Small steps, Thunaen. And celebrating each mileston
+    70.03s  user  발화 끝
+    76.43s  agent 발화 끝

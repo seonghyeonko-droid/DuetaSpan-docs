@@ -77,17 +77,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 휴가 때 프랑스 사진 찾아줘. 썸네일 말고.
-     2.92s  <ret> 발화 (turn1 첫 프레임)
-     2.99s  agent 발화 시작: <ret> 프랑스 휴가 사진 세 장을 찾았어요. /home/user/Pictures/France_Holida
-     3.05s  user  발화 끝
-     4.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) /home/user/Pictures/France Holiday_2025/IMG_1234.jpg, /h
-     6.38s  user  발화 시작: 음.
-     6.77s  user  발화 끝
-    10.87s  user  발화 시작: 제일 큰 파일은 뭐야?
-    10.87s  agent 발화 끝
-    11.76s  <ret> 발화 (turn4 첫 프레임)
-    12.16s  agent 발화 시작: <ret> IMG_9012.png 파일이 가장 크고, 십이 점 오MB에 삼천팔백사십x2160 픽셀입니다.
-    12.34s  user  발화 끝
-    13.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 12.5MB, PNG image, 3840x2160 pixels
-    20.27s  agent 발화 끝
+     0.00s  user  발화 시작: 흐음… 작년 프랑스 휴가…
+     2.87s  user  발화 끝
+     4.86s  user  발화 시작: …사진들 찾아줘. 썸네일 말고.
+     6.72s  <ret> 발화 (turn2 첫 프레임)
+     6.79s  agent 발화 시작: <ret> 네, 알겠습니다. 잠시만 기다려 주세요. 프랑스 휴가 사진, 썸네일 제외하고 삼십사장이 검색됐습니
+     6.94s  user  발화 끝
+     8.00s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.88s]: (tool result) /home/sunan/pictures/france holiday/2025/full size image
+     9.67s  user  발화 시작: 음.
+    10.29s  user  발화 끝
+    13.71s  agent 발화 끝
+    14.36s  user  발화 시작: 그거… 혹시 니스 해변 사진은 몇 장이야?
+    16.73s  <ret> 발화 (turn5 첫 프레임)
+    17.12s  agent 발화 시작: <ret> 니스 해변 사진은 총 십이장이 있습니다. 즐거운 시간 되세요.
+    17.26s  user  발화 끝
+    18.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) /home/sunan/pictures/france holiday/2025/full size image
+    21.24s  agent 발화 끝

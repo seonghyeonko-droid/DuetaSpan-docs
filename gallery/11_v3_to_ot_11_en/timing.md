@@ -68,31 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, do you know when the last | S2 Can you believe how… | S3 Anyway, who pitched it? | S4 True enough. I’m always exhausted.
+# EXAMINER(FDB-v2) 단계: S1 Hey, do you happen to know when th | S2 Wow, that was a while ago. I thoug | S3 He’s such a know-it-all, honestly… | S4 Sorry about that. Anyway, I’m tryi
 
-     0.00s  user  발화 시작: Hey, uh, do you know when the last time was that the Oakland
-     4.86s  <ret> 발화 (turn1 첫 프레임)
-     5.24s  agent 발화 시작: <ret> The last time the A’s were no-hit was April twenty-fir
-     5.38s  user  발화 끝
-     6.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: The Oakland Athletics were last no-hit on April 21, 2018.
-    13.44s  user  발화 시작: Wow, really? That long ago…
-    13.64s  agent 발화 끝
-    16.45s  user  발화 끝
-    17.46s  user  발화 시작: Can you believe how…
-    18.93s  user  발화 끝
-    20.72s  user  발화 시작: …expensive groceries are these days?
-    22.72s  user  발화 시작: Anyway, who pitched it?
-    22.84s  user  발화 끝
-    23.87s  <ret> 발화 (turn6 첫 프레임)
-    24.10s  agent 발화 시작: <ret> James Shields, pitching for the White Sox, threw the n
-    24.14s  user  발화 끝
-    25.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: James Shields of the White Sox pitched a no-hitter against the Athleti
-    29.43s  agent 발화 끝
-    30.04s  user  발화 시작: Shields, huh? I remember him.
-    32.86s  user  발화 끝
-    32.88s  agent 발화 시작: He had a solid career. Getting enough quality rest is import
-    40.90s  agent 발화 끝
-    42.15s  user  발화 시작: True enough. I’m always exhausted.
-    44.78s  user  발화 끝
-    44.80s  agent 발화 시작: Well, perhaps we could explore some strategies to improve yo
-    53.33s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, do you happen to know when the A’s were last no-hit? I’
+     4.92s  <ret> 발화 (turn1 첫 프레임)
+     5.30s  agent 발화 시작: <ret> That would have been April twenty-first, two thousand 
+     5.46s  user  발화 끝
+     6.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: The Oakland Athletics were last no-hit on April 21, 2018.
+    12.53s  user  발화 시작: Wow, that was a while ago. I thought it was more recent.
+    12.68s  agent 발화 끝
+    15.91s  user  발화 끝
+    16.01s  agent 발화 시작: It’s easy to lose track of time, especially with sports! Do 
+    22.96s  agent 발화 끝
+    23.06s  user  발화 시작: He’s such a know-it-all, honestly…
+    25.55s  user  발화 끝
+    27.37s  user  발화 시작: Sorry about that. Anyway, I’m trying to find a good sleep sc
+    31.06s  <ret> 발화 (turn6 첫 프레임)
+    31.20s  user  발화 끝
+    31.30s  agent 발화 시작: <ret> A consistent schedule really is key, yes. Aim to go to
+    33.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: Consistent sleep schedules promote better sleep quality and daytime al
+    38.45s  agent 발화 끝

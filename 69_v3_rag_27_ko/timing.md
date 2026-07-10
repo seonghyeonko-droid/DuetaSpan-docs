@@ -55,35 +55,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 럭스 아우룬케 작곡가가 태어난 해가 언제예요? | S2 그분이 활동했던 시기는 언제쯤이었나요? | S3 … 그분이 다른 작곡가들과 협업한 적이 있나요? | S4 아냐 볼코프 씨는 어떤 음악가예요?
+# EXAMINER(FDB-v2) 단계: S1 혹시 럭스 아우룬케 작곡가가 언제 태어났는지 알 수 있을까요? | S2 아, 네… | S3 …맞아요. 근데 그분이 어떤 스타일의 음악을 주로 했는지 궁금 | S4 …혹시 그분이 다른 작곡가들과 협업한 적은 없나요?
 
-     0.00s  user  발화 시작: 럭스 아우룬케 작곡가가 태어난 해가 언제예요?
-     3.07s  <ret> 발화 (turn1 첫 프레임)
-     3.15s  agent 발화 시작: <ret> 럭스 아우룬케 씨는 천구백칠십년에 태어났습니다.
-     3.37s  user  발화 끝
-     4.35s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.42s]: Lux Aurunque was born in nineteen seventy.
-     4.92s  user  발화 시작: 예.
-     5.46s  user  발화 끝
-     6.19s  user  발화 시작: 그분이 활동했던 시기는 언제쯤이었나요?
-     6.57s  agent 발화 끝
-     8.96s  user  발화 끝
-     9.23s  <ret> 발화 (turn4 첫 프레임)
-     9.31s  agent 발화 시작: <ret> 그분은 천구백구십년대에 가장 활발하게 활동하셨습니다. 음악 스타일은 어떤 쪽에 속하는지 아세요?
-     9.95s  ⚡SPAN 주입 [d'=0.72s / d_lead=5.98s]: Lux Aurunque was most active during the nineteen nineties.
-    12.77s  user  발화 시작: 음.
-    13.17s  user  발화 끝
-    15.28s  agent 발화 끝
-    15.59s  user  발화 시작: … 그분이 다른 작곡가들과 협업한 적이 있나요?
-    18.51s  <ret> 발화 (turn7 첫 프레임)
-    18.75s  agent 발화 시작: <ret> 럭스 아우룬케 씨는 아냐 볼코프 씨를 포함한 여러 예술가들과 협업했습니다. 주로 어떤 장르의 음악
-    18.83s  user  발화 끝
-    20.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: Lux Aurunque collaborated with several artists, including Anya Volkov.
-    23.12s  user  발화 시작: 아.
-    23.57s  user  발화 끝
-    26.99s  agent 발화 끝
-    29.44s  user  발화 시작: 아냐 볼코프 씨는 어떤 음악가예요?
-    31.68s  <ret> 발화 (turn10 첫 프레임)
-    31.88s  user  발화 끝
-    31.91s  agent 발화 시작: <ret> 아냐 볼코프 씨는 현대 클래식 피아니스트입니다. 두 분의 협업은 어떤 느낌이었을까요?
-    33.28s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.00s]: Anya Volkov is a contemporary classical pianist.
-    36.91s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 럭스 아우룬케 작곡가가 언제 태어났는지 알 수 있을까요?
+     4.33s  <ret> 발화 (turn1 첫 프레임)
+     4.41s  agent 발화 시작: <ret> 럭스 아우룬케 씨는 천구백칠십년에 태어났습니다. 음악 공부에 관심이 많으신가 봐요.
+     4.68s  user  발화 끝
+     6.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: Lux Aurunque was born in 1970.
+     7.54s  user  발화 시작: 예.
+     8.18s  user  발화 끝
+     9.83s  user  발화 시작: 아, 네…
+    10.20s  agent 발화 끝
+    10.97s  user  발화 끝
+    12.48s  user  발화 시작: …맞아요. 근데 그분이 어떤 스타일의 음악을 주로 했는지 궁금해요.
+    16.74s  <ret> 발화 (turn5 첫 프레임)
+    16.78s  user  발화 끝
+    16.90s  agent 발화 시작: <ret> 럭스 아우룬케 씨는 앰비언트 전자 음악으로 유명합니다—
+    18.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.61s]: (tool result) Lux Aurunque is known for ambient electronic music.
+    19.78s  user  발화 시작: …혹시 그분이 다른 작곡가들과 협업한 적은 없나요?
+    20.50s  agent 발화 끝
+    23.13s  <ret> 발화 (turn7 첫 프레임)
+    23.21s  agent 발화 시작: <ret> 럭스 아우룬케 씨는 이천오년에 에라와 함께 'Celestial Echoes' 앨범에서 협업했습니다
+    23.24s  user  발화 끝
+    25.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: Lux Aurunque collaborated with Aera on the album 'Celestial Echoes' in
+    30.11s  agent 발화 끝

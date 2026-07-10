@@ -67,12 +67,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Avery, I'm Klen.
-[  2.60s][user ] Yes, that's right. I'm particularly interested in seeing ⟨ret@7.32s⟩ wildflowers.
-[  7.72s][moshi] You mentioned ⟦⚡SPAN@9.32s: [2025-08-26] User is into alpine wildflower photography.⟧ your interest in alpine wildflower photography—New Zealand offers stunning locations for that.
-[ 13.10s][user ] «backchannel» Mm-hmm.
-[ 14.83s][moshi] «interrupted» The South Island, specifically, has several national parks ideal for viewing and photographing alpine wildflowers—
-[ 20.78s][user ] «interrupts_prev» …are there any guided photography tours ⟨ret@23.53s⟩ available?
-[ 23.68s][moshi] Guided photography tours are ⟦⚡SPAN@25.53s: (tool result) "Wildflower Journeys" (WJ) is offering a 7-day tour from March 12th to March 18th for $4,500 CAD⟧ certainly an option. Let me check availability for March.
-      CALL: {"function": "search_tours", "arguments": {"location": "New Zealand South Island", "interest": "alpine wildflower photography", "month": "March"}}
-[ 28.50s][moshi] Wildflower Journeys has a seven-day tour from March twelfth to eighteenth for four thousand five hundred Canadian dollars, and Alpine Exposures offers a five-day tour from March twentieth to twenty-fourth for three thousand eight hundred. Both tours have limited availability, so booking soon is advisable.
+[  0.00s][moshi] Hi Avery, I'm Klen. I'm a counselor here to help with your financial goals and planning.
+[  6.23s][user ] Oh, hi Klen. I’m planning a trip to New Zealand in March, and I’m starting to think about ⟨ret@12.50s⟩ flights.
+[ 12.90s][moshi] You mentioned planning a ⟦⚡SPAN@14.50s: [2026-06-07] User is planning a trip to New Zealand in March.⟧ trip to New Zealand in March—wonderful! I see you prefer a window seat when you travel.
+[ 18.22s][user ] «backchannel» Mm-hmm.
+[ 21.08s][user ] Yes, that’s right. Do you think you could look for some one-way flights for me then?
+[ 25.97s][moshi] ⟨ret@25.89s⟩ A one-way flight to ⟦⚡SPAN@27.89s: (tool result) Auckland (AKL), New Zealand is available from Toronto (YYZ), Canada on March 10, 2027 for $1,850⟧ Auckland, New Zealand, is available on March tenth, two thousand twenty-seven for eighteen hundred and fifty Canadian dollars, with one stop. Does that date work for your plans?
+[ 38.31s][user ] That sounds pretty good, actually—
+[ 40.15s][user ] …but what about the wildflower season there? Is March a good time for that?
+[ 45.09s][moshi] ⟨ret@44.85s⟩ The alpine wildflower season ⟦⚡SPAN@46.85s: (tool result) The alpine wildflower season in New Zealand typically peaks from December to February, with some⟧ peaks December to February, but some blooms continue through March. It's a bit past peak, but you'll likely still find plenty in bloom.
+[ 48.29s][user ] «backchannel» Mm-hmm.
+[ 55.17s][user ] That’s great to know. Thanks, Klen.
+[ 57.50s][moshi] You're very welcome, Avery. I'm glad I could help with your planning. Enjoy your trip.

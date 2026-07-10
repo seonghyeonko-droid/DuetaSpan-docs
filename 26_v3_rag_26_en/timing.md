@@ -58,22 +58,41 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, I was wondering about fla | S2 Okay, well, what about… um, the ca | S3 I just… I get so stressed about ex | S4 Perfect! Thanks, Kiora.
 
-     0.00s  user  발화 시작: Um, hi. I was wondering… do you know any countries with a fl
-     7.20s  <ret> 발화 (turn1 첫 프레임)
-     7.44s  agent 발화 시작: <ret> The flag of Germany features black, red, and gold hori
-     7.55s  user  발화 끝
-     9.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: The flag of Germany is composed of black, red, and gold horizontal ban
-    14.29s  user  발화 시작: Oh, Germany, right. I always forget. Hmmm… what about… is th
-    14.34s  agent 발화 끝
-    20.95s  <ret> 발화 (turn3 첫 프레임)
-    21.04s  user  발화 끝
-    21.18s  agent 발화 시작: <ret> Belgium's flag has black, yellow, and red vertical ban
-    22.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: The flag of Belgium is composed of three vertical bands of black, yell
-    23.95s  user  발화 시작: Right.
-    24.40s  user  발화 끝
-    27.22s  user  발화 시작: Oh. Right. Belgium. Well, that's… helpful, I guess.
-    27.23s  agent 발화 끝
-    32.07s  agent 발화 시작: It’s okay to feel a little lost with flags! Sometimes it tak
-    32.08s  user  발화 끝
-    37.34s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, uh, I was wondering about flags… do you know any flags 
+     6.27s  <ret> 발화 (turn1 첫 프레임)
+     6.44s  user  발화 끝
+     6.51s  agent 발화 시작: <ret> The flag of Germany features black, red, and gold—a st
+     8.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: The flag of Germany is composed of black, red, and gold bands.
+    11.54s  user  발화 시작: Oh, gold? I thought it was yellow. Hmmm.
+    11.70s  agent 발화 끝
+    15.34s  user  발화 끝
+    15.76s  agent 발화 시작: You’re right to question that! Often, the color is described
+    18.48s  user  발화 시작: Right.
+    19.11s  user  발화 끝
+    21.69s  agent 발화 끝
+    21.72s  user  발화 시작: Okay, well, what about… um, the capital of Germany?
+    25.55s  <ret> 발화 (turn6 첫 프레임)
+    25.86s  agent 발화 시작: <ret> Berlin is the capital of Germany, a city of 3.7 millio
+    25.98s  user  발화 끝
+    27.23s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.11s]: (tool result) Berlin is the capital and largest city of Germany, with 
+    31.97s  agent 발화 끝
+    32.01s  user  발화 시작: Wow, that's a lot of people. Do you think I could handle stu
+    36.73s  user  발화 끝
+    36.84s  agent 발화 시작: Studying abroad can be challenging, but also incredibly rewa
+    42.53s  agent 발화 끝
+    42.58s  user  발화 시작: I just… I get so stressed about exams.
+    45.91s  agent 발화 시작: It’s very common to feel stressed during exams. Perhaps we c
+    45.95s  user  발화 끝
+    52.04s  user  발화 시작: That actually sounds really good. Maybe we can talk about th
+    52.11s  agent 발화 끝
+    57.13s  agent 발화 시작: [happy] That sounds like a wonderful plan. We definitely can
+    57.27s  user  발화 끝
+    59.63s  user  발화 시작: Uh-huh.
+    60.17s  user  발화 끝
+    62.60s  agent 발화 끝
+    63.86s  user  발화 시작: Perfect! Thanks, Kiora.
+    65.65s  agent 발화 시작: You're very welcome! Take care and remember to be kind to yo
+    65.80s  user  발화 끝
+    69.62s  agent 발화 끝

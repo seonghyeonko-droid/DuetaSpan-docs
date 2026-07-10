@@ -66,24 +66,35 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi Klen. I’m planning a trip t | S2 That sounds pretty good, actually— | S3 …but what about the wildflower sea | S4 That’s great to know. Thanks, Klen
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen.
-     1.84s  agent 발화 끝
-     2.60s  user  발화 시작: Yes, that's right. I'm particularly interested in seeing wil
-     7.32s  <ret> 발화 (turn2 첫 프레임)
-     7.72s  agent 발화 시작: <ret> You mentioned your interest in alpine wildflower photo
-     7.74s  user  발화 끝
-     9.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: [2025-08-26] User is into alpine wildflower photography.
-    13.10s  user  발화 시작: Mm-hmm.
-    13.78s  user  발화 끝
-    14.83s  agent 발화 시작: The South Island, specifically, has several national parks i
-    14.86s  agent 발화 끝
-    20.78s  user  발화 시작: …are there any guided photography tours available?
-    21.64s  agent 발화 끝
-    23.53s  <ret> 발화 (turn6 첫 프레임)
-    23.68s  agent 발화 시작: <ret> Guided photography tours are certainly an option. Let 
-    23.84s  user  발화 끝
-    25.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) "Wildflower Journeys" (WJ) is offering a 7-day tour from
-    28.50s  agent 발화 시작: Wildflower Journeys has a seven-day tour from March twelfth 
-    28.68s  agent 발화 끝
-    46.08s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I'm a counselor here to help with your f
+     5.46s  agent 발화 끝
+     6.23s  user  발화 시작: Oh, hi Klen. I’m planning a trip to New Zealand in March, an
+    12.50s  <ret> 발화 (turn2 첫 프레임)
+    12.90s  agent 발화 시작: <ret> You mentioned planning a trip to New Zealand in March—
+    13.00s  user  발화 끝
+    14.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    18.22s  user  발화 시작: Mm-hmm.
+    19.04s  user  발화 끝
+    20.13s  agent 발화 끝
+    21.08s  user  발화 시작: Yes, that’s right. Do you think you could look for some one-
+    25.71s  user  발화 끝
+    25.89s  <ret> 발화 (turn5 첫 프레임)
+    25.97s  agent 발화 시작: <ret> A one-way flight to Auckland, New Zealand, is availabl
+    27.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.15s]: (tool result) Auckland (AKL), New Zealand is available from Toronto (Y
+    38.12s  agent 발화 끝
+    38.31s  user  발화 시작: That sounds pretty good, actually—
+    40.15s  user  발화 시작: …but what about the wildflower season there? Is March a good
+    40.15s  user  발화 끝
+    44.85s  <ret> 발화 (turn8 첫 프레임)
+    45.05s  user  발화 끝
+    45.09s  agent 발화 시작: <ret> The alpine wildflower season peaks December to Februar
+    46.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) The alpine wildflower season in New Zealand typically pe
+    48.29s  user  발화 시작: Mm-hmm.
+    48.92s  user  발화 끝
+    54.77s  agent 발화 끝
+    55.17s  user  발화 시작: That’s great to know. Thanks, Klen.
+    57.10s  user  발화 끝
+    57.50s  agent 발화 시작: You're very welcome, Avery. I'm glad I could help with your 
+    62.21s  agent 발화 끝

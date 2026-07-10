@@ -59,22 +59,20 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm feeling really overwhelmed…
-[  4.04s][user ] …with studying for my exams.
-[  6.25s][moshi] It's understandable to feel that way, Thunaen here. Exams can be quite stressful, and recognizing that is a good first step.
-[ 13.38s][user ] Yeah, uhhh… I have a history exam on Friday.
-[ 16.91s][moshi] Okay, a history exam on Friday. Do you have a specific area you're struggling with, or is it the overall volume of material?
-[ 23.57s][user ] I think it's mostly remembering all the dates.
-[ 25.32s][user ] «backchannel» Yeah.
-[ 26.02s][moshi] ⟨ret@25.95s⟩ It's a popular study aid, ⟦⚡SPAN@27.95s: (tool result) lofi hip hop radio - beats to relax/study to — ChilledCow, Lofi Girl (2023); chill study beats —⟧ actually. The gentle rhythms can really help with concentration.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"media_title": "lofi hip hop radio - beats to relax/study to", "artist": "ChilledCow"}}
-[ 32.24s][user ] That's good. Could you maybe find me a timeline of the ⟨ret@36.22s⟩ French Revolution?
-[ 36.60s][moshi] The French Revolution spanned ⟦⚡SPAN@38.22s: (tool result) The French Revolution lasted from 1789 to 1799, starting with the Storming of the Bastille and e⟧ from seventeen eighty-nine to seventeen ninety-nine, beginning with the Storming of the Bastille.
-      CALL: {"function": "search", "arguments": {"query": "French Revolution timeline"}}
-[ 44.60s][user ] Wow, that's a long time.
-[ 46.52s][moshi] It was a period of immense upheaval, yes. Breaking it down into smaller phases can make it more manageable.
-[ 52.35s][user ] Maybe. Can you book me a study room at the library for Friday ⟨ret@56.95s⟩ afternoon?
-[ 57.10s][moshi] I’ve reserved a study room ⟦⚡SPAN@58.95s: (tool result) Library Study Room, 42 Maple Street (34.0522,-118.2437) is reserved for you on July 10, 2026 at ⟧ for you at the library on Friday at two PM. Confirmation ID is nine bravo seven x two zed.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "library study room", "date": "2026-07-10", "time": "14:00"}}
-[ 64.35s][user ] Perfect, thank you!
-[ 65.53s][moshi] You're very welcome! Remember, small steps and a calm mind can make a big difference. Enjoy your study session.
+[  0.00s][user ] I'm feeling a bit overwhelmed with studying for my exams.
+[  3.54s][moshi] It's understandable to feel that way when facing exams, Thunaen here. What subjects are causing the most stress right now?
+[  9.92s][user ] Well, history is really tough. I need to memorize so many dates.
+[ 14.08s][moshi] History can definitely be demanding! Perhaps we could explore some memory techniques to help with those dates?
+[ 20.32s][user ] That sounds good.
+[ 21.71s][moshi] ⟨ret@21.64s⟩ Spaced repetition involves reviewing ⟦⚡SPAN@23.64s: (tool result) Spaced repetition is a learning technique that incorporates increasing intervals of time between⟧ information at increasing intervals. It’s a technique to improve retention.
+      CALL: {"function": "web_search", "arguments": {"query": "spaced repetition techniques for history"}}
+[ 25.95s][user ] «backchannel» Yeah.
+[ 27.21s][user ] That sounds…complicated. Is there a simpler way?
+[ 31.45s][moshi] It can seem daunting at first. Perhaps creating a timeline might be a more approachable method for visualizing historical events?
+[ 38.69s][user ] A timeline, yeah, that might work. Can you find me some key dates for the French ⟨ret@43.71s⟩ Revolution?
+[ 44.10s][moshi] The French Revolution began ⟦⚡SPAN@45.71s: (tool result) The French Revolution began in 1789 with the Storming of the Bastille on July 14th; Louis XVI wa⟧ in seventeen eighty-nine, with the Storming of the Bastille on July fourteenth. Louis the Sixteenth was executed in seventeen ninety-three, and Napoleon seized power in seventeen ninety-nine. That’s a good starting point, don't you think?
+      CALL: {"function": "web_search", "arguments": {"query": "key dates French Revolution"}}
+[ 57.96s][user ] That’s…a lot.
+[ 60.01s][moshi] It is a significant period, isn’t it? Remember, breaking it down into smaller chunks can make it less overwhelming.
+[ 66.20s][user ] Maybe you're right. I should just focus on one event at a time.
+[ 69.90s][moshi] Exactly! Small steps, Thunaen. And celebrating each milestone will help you stay motivated. Enjoy your studying.

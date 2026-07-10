@@ -63,55 +63,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, what’s the Russell Hotel like | S3 That’s great! – | S4 …can you check if they have parkin
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, tell me about Aria. | S3 I was also wondering. | S4 That’s a bit steep.
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     4.58s  user  발화 끝
-     4.68s  <ret> 발화 (turn1 첫 프레임)
-     4.76s  agent 발화 시작: <ret> The Sydney Opera House is at latitude negative thirty-
-     6.36s  ⚡SPAN 주입 [d'=1.68s / d_lead=11.59s]: (tool result) -33.8568, 151.2153
-     9.72s  user  발화 시작: Yeah.
-    10.22s  user  발화 끝
-    16.35s  agent 발화 끝
-    16.44s  user  발화 시작: That’s helpful. Could you find me hotels near there?
-    19.90s  <ret> 발화 (turn4 첫 프레임)
-    20.14s  agent 발화 시작: <ret> The Russell Hotel is three hundred meters away, Harbou
-    20.15s  user  발화 끝
-    21.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: (tool result) Circular Quay, Sydney (33.8569, 151.2154): The Russell H
-    29.64s  agent 발화 끝
-    30.30s  user  발화 시작: Hmm, what’s the Russell Hotel like?
-    32.91s  <ret> 발화 (turn6 첫 프레임)
-    32.98s  agent 발화 시작: <ret> The Russell Hotel is located at twenty-eight Pitt Stre
-    33.21s  user  발화 끝
-    34.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.10s]: (tool result) The Russell Hotel, 28 Pitt Street, Sydney NSW 2000, Aust
-    45.09s  agent 발화 끝
-    46.90s  user  발화 시작: Sounds nice. Is it possible to book a room there for next we
-    51.19s  <ret> 발화 (turn8 첫 프레임)
-    51.43s  agent 발화 시작: <ret> I’ve booked a deluxe room at The Russell Hotel for you
-    51.57s  user  발화 끝
-    52.79s  ⚡SPAN 주입 [d'=1.60s / d_lead=11.83s]: (tool result) The Russell Hotel, 2026-07-17 to 2026-07-21, Deluxe Room
-    58.96s  user  발화 시작: Right.
-    59.59s  user  발화 끝
-    63.26s  agent 발화 끝
-    64.41s  user  발화 시작: That’s great! –
-    65.74s  user  발화 시작: …Actually, before you finalize that…
-    65.79s  user  발화 끝
-    68.42s  user  발화 끝
-    70.30s  user  발화 시작: …can you check if they have parking?
-    71.18s  user  발화 시작: Yeah.
-    71.81s  user  발화 끝
-    72.38s  <ret> 발화 (turn14 첫 프레임)
-    72.61s  agent 발화 시작: <ret> —see if parking is available. I’m checking their ameni
-    72.65s  user  발화 끝
-    74.22s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.75s]: (tool result) The Russell Hotel, 28 Pitt Street, Sydney NSW 2000, Aust
-    76.34s  agent 발화 시작: Yes, The Russell Hotel does offer valet parking for forty do
-    76.36s  agent 발화 끝
-    78.76s  user  발화 시작: Mhm.
-    79.58s  user  발화 끝
-    83.47s  agent 발화 끝
-    83.80s  user  발화 시작: Yes, please add the parking.
-    85.88s  <ret> 발화 (turn18 첫 프레임)
-    86.28s  agent 발화 시작: <ret> Wonderful. I’ve added parking to your reservation. The
-    86.38s  ⚡SPAN 주입 [d'=0.50s / d_lead=10.43s]: (tool result) The Russell Hotel, 2026-07-17 to 2026-07-21, Deluxe Room
-    86.43s  user  발화 끝
-    96.71s  agent 발화 끝
+     4.85s  <ret> 발화 (turn1 첫 프레임)
+     4.93s  agent 발화 시작: <ret> The Sydney Opera House is at latitude negative thirty-
+     5.00s  user  발화 끝
+     6.53s  ⚡SPAN 주입 [d'=1.68s / d_lead=11.69s]: (tool result) -33.8568, 151.2153
+     9.96s  user  발화 시작: Yeah.
+    10.69s  user  발화 끝
+    16.61s  agent 발화 끝
+    16.74s  user  발화 시작: And what's the weather like there right now?
+    19.20s  <ret> 발화 (turn4 첫 프레임)
+    19.43s  agent 발화 시작: <ret> Currently in Sydney, it's twenty-two point zero degree
+    19.46s  user  발화 끝
+    21.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.11s]: (tool result) 22.0°C, humidity 65%, wind 15.0 km/h
+    31.54s  agent 발화 끝
+    32.14s  user  발화 시작: Are there any good restaurants nearby?
+    34.39s  <ret> 발화 (turn6 첫 프레임)
+    34.47s  agent 발화 시작: <ret> Aria Restaurant is fifty-five meters away, Bennelong i
+    34.59s  user  발화 끝
+    36.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: (tool result) Aria Restaurant (55 meters), Bennelong (120 meters), Qua
+    45.37s  agent 발화 끝
+    47.08s  user  발화 시작: Hmm, tell me about Aria.
+    49.32s  <ret> 발화 (turn8 첫 프레임)
+    49.56s  agent 발화 시작: <ret> Aria Restaurant is located at one Macquarie Street, Sy
+    49.61s  user  발화 끝
+    50.92s  ⚡SPAN 주입 [d'=1.60s / d_lead=9.50s]: (tool result) Aria Restaurant, 1 Macquarie St, Sydney NSW 2000, Austra
+    56.15s  user  발화 시작: Yeah, totally.
+    57.58s  user  발화 끝
+    59.07s  agent 발화 끝
+    60.45s  user  발화 시작: That sounds nice. Could you book a table for two there tomor
+    65.26s  user  발화 끝
+    65.50s  agent 발화 시작: What time tomorrow evening would you prefer for your reserva
+    69.11s  agent 발화 끝
+    70.48s  user  발화 시작: Around seven pm, if possible.
+    72.99s  <ret> 발화 (turn13 첫 프레임)
+    73.02s  user  발화 끝
+    73.07s  agent 발화 시작: <ret> You are all set! I’ve booked a table for two at Aria R
+    74.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: (tool result) Aria Restaurant, 1 Macquarie St, Sydney, NSW 2000, Austr
+    77.43s  user  발화 시작: Yeah.
+    77.92s  user  발화 끝
+    83.59s  user  발화 시작: I was also wondering.
+    83.68s  agent 발화 끝
+    85.25s  user  발화 끝
+    85.70s  agent 발화 시작: I understand you were considering transport options—
+    87.92s  user  발화 시작: … Actually, can you find me some hotels near the Opera House
+    88.61s  agent 발화 끝
+    92.44s  <ret> 발화 (turn18 첫 프레임)
+    92.52s  agent 발화 시작: <ret> Park Hyatt Sydney is three hundred meters away, Pullma
+    92.69s  user  발화 끝
+    94.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: (tool result) Park Hyatt Sydney (300 meters), Pullman Quay Grand Sydne
+    95.84s  user  발화 시작: Mhm.
+    96.43s  user  발화 끝
+   102.26s  agent 발화 끝
+   102.70s  user  발화 시작: How much would a night at the Park Hyatt cost?
+   105.24s  <ret> 발화 (turn21 첫 프레임)
+   105.40s  agent 발화 시작: <ret> A night at the Park Hyatt Sydney starts from eight hun
+   105.47s  user  발화 끝
+   107.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: (tool result) Park Hyatt Sydney, 7 Hickey Ave, The Rocks NSW 2000, Aus
+   109.85s  user  발화 시작: Uh-huh.
+   110.26s  user  발화 끝
+   113.79s  agent 발화 끝
+   113.89s  user  발화 시작: That’s a bit steep.
+   115.17s  agent 발화 시작: It certainly is a luxury option. Perhaps we could look at so
+   115.27s  user  발화 끝
+   117.56s  user  발화 시작: Yeah.
+   118.19s  user  발화 끝
+   121.04s  user  발화 시작: No, that's okay. I think we're all set.
+   121.05s  agent 발화 끝
+   123.94s  agent 발화 시작: Wonderful. I hope you and your companion have a delightful e
+   123.99s  user  발화 끝
+   130.48s  agent 발화 끝

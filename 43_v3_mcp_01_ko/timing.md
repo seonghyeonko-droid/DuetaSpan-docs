@@ -50,63 +50,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 페이지 상세 지도를 만들어 줘. | S2 …지금 바로 가격을 알려줄 수 있어? | S3 그럼 대략 백삼십만 원 정도 되는 거네. | S4 아, 그건 잘못된 질문이었네. 그냥 예약 가능한지 물어본 거야
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 상세 지도를 만들어줘. 제품 중심으로 보여줘. | S2 아니, 그건 됐어. 그럼, 서울에서 가장 가까운 애플 스토어는 | S3 …혹시 강남역 근처에 자전거 대여하는 곳도 알려줄 수 있어? | S4 아니, 괜찮아. 알려줘서 고마워.
 
-     0.00s  user  발화 시작: 애플 웹사이트 제품 페이지 상세 지도를 만들어 줘.
-     3.17s  <ret> 발화 (turn1 첫 프레임)
-     3.41s  agent 발화 시작: <ret> 애플 웹사이트에는 아이폰, 아이패드, 맥, 애플 워치, 에어팟, TV 및 홈, 엔터테인먼트, 액세
-     3.51s  user  발화 끝
-     5.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Apple's website has sections for iPhone, iPad, Mac, Appl
-     6.84s  user  발화 시작: 그치.
-     7.43s  user  발화 끝
-    11.52s  agent 발화 끝
-    12.80s  user  발화 시작: 음… 아이폰 섹션만 좀 더 자세히 보여줄 수 있어?
-    15.96s  <ret> 발화 (turn4 첫 프레임)
-    16.12s  agent 발화 시작: <ret> 아이폰 섹션에는 아이폰 십오, 아이폰 십오 프로 모델과 사양, 기능, 구매 옵션 페이지가 자세히 
-    16.22s  user  발화 끝
-    17.56s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.36s]: (tool result) The iPhone section details models like iPhone 15, iPhone
-    20.08s  user  발화 시작: 그래.
-    20.72s  user  발화 끝
-    23.48s  agent 발화 끝
-    23.80s  user  발화 시작: 잠깐만, 아이폰 십오 프로 모델의 가격 정보는 어디에 있어?
-    28.16s  agent 발화 시작: 아이폰 십오 프로 모델 가격 정보는…—
-    28.20s  user  발화 끝
-    30.15s  user  발화 시작: …지금 바로 가격을 알려줄 수 있어?
-    30.70s  agent 발화 끝
-    32.35s  <ret> 발화 (turn9 첫 프레임)
-    32.37s  user  발화 끝
-    32.58s  agent 발화 시작: <ret> 아이폰 십오 프로는 구백구십구 달러부터 시작하고, 프로 맥스는 천백구십구 달러부터 시작합니다. 저
-    34.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) The iPhone 15 Pro starts at $999, with the Pro Max begin
-    36.58s  user  발화 시작: 응응.
-    37.21s  user  발화 끝
-    42.55s  agent 발화 끝
-    43.15s  user  발화 시작: 구백구십구 달러면… 한화로 얼마 정도 돼?
-    45.96s  <ret> 발화 (turn12 첫 프레임)
-    46.35s  agent 발화 시작: <ret> 현재 미국 달러 대 한국 원 환율은 천삼백팔 점 이십오 원이고, 오늘 하루 동안 점 일십이 퍼센트
-    46.53s  user  발화 끝
-    47.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) USD/KRW is trading at 1,308.25 KRW, up 0.12% today.
-    54.09s  agent 발화 끝
-    54.36s  user  발화 시작: 그럼 대략 백삼십만 원 정도 되는 거네.
-    56.84s  agent 발화 시작: 네, 대략 백삼십만 원 정도 됩니다.
-    56.86s  user  발화 끝
-    59.33s  agent 발화 끝
-    59.51s  user  발화 시작: 혹시 지금 예약 구매할 수 있어?
-    61.75s  <ret> 발화 (turn16 첫 프레임)
-    61.77s  user  발화 끝
-    61.82s  agent 발화 시작: <ret> 죄송합니다. 유효한 도시나 주소를 알려주시면 애플 스토어 위치를 찾을 수 있습니다.
-    63.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) No Apple Store locations were found. Please provide a va
-    67.64s  user  발화 시작: 아, 그건 잘못된 질문이었네. 그냥 예약 가능한지 물어본 거야.
-    67.65s  agent 발화 끝
-    71.60s  <ret> 발화 (turn18 첫 프레임)
-    71.99s  agent 발화 시작: <ret> 예약 가능 여부를 확인해 드리겠습니다. 잠시만 기다려 주세요.
-    72.08s  user  발화 끝
-    72.72s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.58s]: (tool result) Reservation confirmed, Apple Store, Cupertino, CA, July 
-    76.51s  agent 발화 시작: 예약이 완료되었습니다. 애플 스토어, 캘리포니아 쿠퍼티노, 천이십육년 칠월 십칠일 오전 열 시, 확인 번호는
-    76.57s  agent 발화 끝
-    82.51s  user  발화 시작: 응.
-    82.95s  user  발화 끝
-    86.66s  agent 발화 끝
-    86.81s  user  발화 시작: 좋아. 고마워.
-    88.52s  agent 발화 시작: 즐거운 하루 보내세요.
-    88.61s  user  발화 끝
-    90.23s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 상세 지도를 만들어줘. 제품 중심으로 보여줘.
+     3.71s  <ret> 발화 (turn1 첫 프레임)
+     3.95s  agent 발화 시작: <ret> 애플 웹사이트의 상세 지도를 만들어 드릴게요. 애플 웹사이트 지도를 만들었어요. 주소는 https
+     4.03s  user  발화 끝
+     5.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.73s]: (tool result) Map created successfully. URL: https://example.com/apple
+    14.19s  agent 발화 끝
+    15.74s  user  발화 시작: 그 지도에 아이폰 십오 프로 정보만 따로 표시해 줄 수 있어?
+    19.81s  user  발화 끝
+    19.87s  agent 발화 시작: 아이폰 십오 프로 정보만 따로 표시하는 건 현재 지원하지 않아요. 지도는 전체 웹사이트 구조를 보여드리는 데
+    23.15s  user  발화 시작: 어.
+    23.64s  user  발화 끝
+    28.85s  agent 발화 시작: 혹시 아이폰 십오 프로에 대한 다른 정보가 필요하시면 말씀해 주세요. 제품 사양이나 가격 같은 걸 찾아드릴 
+    28.96s  agent 발화 끝
+    31.94s  user  발화 시작: 우와.
+    32.49s  user  발화 끝
+    36.65s  user  발화 시작: 아니, 그건 됐어. 그럼, 서울에서 가장 가까운 애플 스토어는 어디야?
+    36.68s  agent 발화 끝
+    41.50s  <ret> 발화 (turn8 첫 프레임)
+    41.51s  user  발화 끝
+    41.57s  agent 발화 시작: <ret> 서울에서 가장 가까운 애플 스토어는 강남점, 코엑스점, 영등포점이 있습니다. 강남점은 일 점 이킬
+    42.86s  ⚡SPAN 주입 [d'=1.36s / d_lead=14.71s]: (tool result) Apple Store, Gangnam (37.4979° N, 127.0276° E), 1.2 km; 
+    56.28s  agent 발화 끝
+    56.57s  user  발화 시작: 강남점까지 자전거로 가는 길을 알려줘.
+    59.45s  <ret> 발화 (turn10 첫 프레임)
+    59.59s  agent 발화 시작: <ret> 강남점까지 자전거로 가는 데 예상 시간은 이십삼분, 거리는 육 점 칠킬로미터입니다. 자세한 경로는
+    59.67s  user  발화 끝
+    61.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: (tool result) Estimated travel time: 23 minutes, Distance: 6.7 km. Rou
+    67.90s  agent 발화 끝
+    68.18s  user  발화 시작: …혹시 강남역 근처에 자전거 대여하는 곳도 알려줄 수 있어?
+    72.03s  <ret> 발화 (turn12 첫 프레임)
+    72.10s  agent 발화 시작: <ret> 강남역 근처에는 바이크 스테이션과 헤이바이크에서 자전거를 대여할 수 있습니다. 바이크 스테이션은 
+    72.20s  user  발화 끝
+    74.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: (tool result) Bike Station (37.4962° N, 127.0298° E), 500m; Heybike (3
+    82.26s  agent 발화 끝
+    82.41s  user  발화 시작: 바이크 스테이션 예약해 줄 수 있어? 내일 오후 두시에.
+    85.97s  user  발화 끝
+    86.37s  agent 발화 시작: 바이크 스테이션 예약은 현재 지원하지 않습니다. 직접 연락하셔서 예약하셔야 합니다. 바이크 스테이션 전화번호
+    90.96s  user  발화 시작: 응.
+    91.41s  user  발화 끝
+    94.16s  agent 발화 끝
+    94.31s  user  발화 시작: 아니, 괜찮아. 알려줘서 고마워.
+    97.22s  agent 발화 시작: 천만에요. 즐거운 하루 보내세요.
+    97.27s  user  발화 끝
+   100.18s  agent 발화 끝

@@ -64,13 +64,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find pictures from my France trip last year…
-[  4.41s][user ] …but not the small thumbnail versions.
-[  6.37s][moshi] ⟨ret@6.29s⟩ I found two hundred ⟦⚡SPAN@8.29s: (tool result) /pictures/France_2025/vacation photos (234 files found)⟧ thirty-four photos from your France trip in two thousand twenty-five, excluding thumbnails.
-      CALL: {"function": "search_files", "arguments": {"directory": "/pictures", "query": "France", "exclude": "thumbnails"}}
-[ 10.19s][user ] «backchannel» Mhm.
-[ 13.54s][user ] Oh, great! Could you show me the most recent ⟨ret@16.11s⟩ one?
-[ 16.26s][moshi] ⟦⚡SPAN@17.23s: (tool result) /pictures/France_2025/vacation photos/beach sunset_20250715.jpg⟧ The most recent photo is beach_sunset_20250715.jpg from July fifteenth, two thousand twenty-five.
-[ 19.46s][user ] «backchannel» Really?
-[ 28.04s][user ] Perfect, thank you.
-[ 28.99s][moshi] You're very welcome! It's wonderful to help you rediscover those memories.
+[  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
+[  4.51s][moshi] ⟨ret@4.43s⟩ I found ⟦⚡SPAN@6.43s: (tool result) /Users/sunan/Pictures/France Holiday_2025/IMG_1234.jpg, /Users/sunan/Pictures/France Holiday_202⟧ three pictures from your France holiday in two thousand twenty-five: IMG_1234, IMG_5678, and IMG_9012.
+      CALL: {"function": "search_files", "arguments": {"query": "pictures related to my holiday in France last year", "exclude": "thumbnails"}}
+[  9.64s][user ] «backchannel» Uh-huh.
+[ 16.33s][user ] Could you open IMG_1234 for ⟨ret@19.14s⟩ me?
+[ 19.30s][moshi] I’ve ⟦⚡SPAN@20.18s: (tool result) File opened successfully.⟧ opened IMG_1234 for you. It looks like a lovely scene!
+      CALL: {"function": "read_file", "arguments": {"filename": "/Users/sunan/Pictures/France_Holiday_2025/IMG_1234.jpg"}}
+[ 21.33s][user ] «backchannel» Yeah.
+[ 24.88s][user ] What time is it right ⟨ret@26.48s⟩ now?
+[ 26.64s][moshi] It is currently ⟦⚡SPAN@28.48s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ three seventeen PM in Seoul, on Friday, July tenth, two thousand twenty-six.
+      CALL: {"function": "get_time", "arguments": {}}
+[ 33.51s][user ] That's great, thank you.
+[ 34.80s][moshi] You’re very welcome. I’m glad I could help. Enjoy looking through those photos!

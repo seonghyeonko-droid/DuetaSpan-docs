@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you. I’m Aril, and I h
-     7.60s  agent 발화 끝
-     8.86s  user  발화 시작: Oh, Aril. That’s… a nice name. I’m just feeling a little los
-    17.90s  user  발화 끝
-    18.03s  agent 발화 시작: That’s completely understandable, Lucia. Moving is a big cha
-    21.49s  user  발화 시작: Wow.
-    22.32s  user  발화 끝
-    27.35s  user  발화 시작: Welll… I keep thinking I should join groups, but I get so an
-    27.39s  agent 발화 끝
-    34.11s  agent 발화 시작: It’s perfectly okay to feel anxious about that. It’s brave o
-    34.22s  user  발화 끝
-    44.45s  agent 발화 끝
+     0.00s  agent 발화 시작: Lucia, hello! I’m Aril, and I’m here to help you navigate fr
+     6.95s  agent 발화 끝
+     8.19s  user  발화 시작: Aril… that’s a pretty name. I’m just feeling a little lost, 
+    16.07s  user  발화 끝
+    16.25s  agent 발화 시작: Moving is a big change, and feeling lost afterward is comple
+    19.77s  user  발화 시작: Wow.
+    20.45s  user  발화 끝
+    25.67s  user  발화 시작: Welll… I’m not really sure how to *start* conversations, I g
+    25.75s  agent 발화 끝
+    32.34s  agent 발화 시작: That’s a really common feeling, Lucia. Often, it helps to th
+    32.44s  user  발화 끝
+    44.39s  agent 발화 끝

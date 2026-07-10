@@ -69,10 +69,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Sky, I'm Lira. It's good to connect with you today. I understand I can help with money and budgeting – is there anything specific on your mind?
-[  4.79s][user ] «backchannel» Uh-huh.
-[  9.88s][user ] um, I was just thinking about that dentist appointment we talked about a while back… did I ever confirm ⟨ret@15.54s⟩ the time?
-[ 15.78s][moshi] You did book ⟦⚡SPAN@17.54s: [2026-01-26] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ an appointment with Dr. Han, requesting an early-morning slot. The note doesn’t include the exact time, though.
-[ 24.00s][user ] oh, right. hmm… well, could you look that up for me ⟨ret@27.54s⟩ then?
-[ 27.94s][moshi] Your appointment with ⟦⚡SPAN@29.54s: (tool result) Appointment confirmed: Dr. Han, 8:00 AM, February 12, 2026, 123 Main Street, New York, NY 10001,⟧ Dr. Han is confirmed for eight o’clock in the morning on February twelfth at one-two-three Main Street. The confirmation ID is nine-a-seven-b-two-c.
-      CALL: {"function": "get_appointment", "arguments": {"user_name": "Sky"}}
+[  0.00s][moshi] Hi Sky, I'm Lira. I’m a counselor here to help with money and budgeting – how are you doing today?
+[  3.21s][user ] «backchannel» Uh-huh.
+[  6.75s][user ] Um, well, I was just remembering that dentist appointment I booked a while back… I think I need to reschedule ⟨ret@12.75s⟩ it.
+[ 12.99s][moshi] You booked a ⟦⚡SPAN@14.75s: [2026-01-26] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ dentist appointment asking for an early-morning slot with Dr. Han on January twenty-sixth.
+[ 19.29s][user ] Right, exactly! And I was hoping to move it to next week… could you check Dr. Han’s ⟨ret@25.34s⟩ availability?
+[ 25.62s][moshi] Dr. Han has ⟦⚡SPAN@27.34s: (tool result) Dr. Han is available on Tuesday, July 14, 2026 at 9:00 AM, or Wednesday, July 15, 2026 at 10:30 ⟧ openings on Tuesday, July fourteenth at nine AM, and Wednesday, July fifteenth at ten thirty AM.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Dr. Han", "date": "next week", "appointment_type": "dentist"}}

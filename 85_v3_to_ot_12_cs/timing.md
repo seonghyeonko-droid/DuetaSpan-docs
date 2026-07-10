@@ -58,23 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 마이클 잭슨의 “Beat It” 기타 솔로를 누가 | S2 아, 진짜요? 멋지네요. | S3 와, 몰랐어요! 그분이 곡도 쓰고 연주한 건가요, 아니면 그냥 | S4 정말 대단하네요. 이제 그 사실을 알고 다시 한번 들어봐야겠어
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 | S2 와, 그분이 하셨다는 걸 몰랐어요! 정말 대단하네요. | S3 믿기 어려울 거예요… | S4 저기, 잘아, 이번 주에 회사 일이 너무 스트레스인데, 어떻게
 
-     0.00s  user  발화 시작: 안녕하세요, 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했는데, 항상 궁금했거든요.
-     7.23s  user  발화 끝
-     7.27s  <ret> 발화 (turn1 첫 프레임)
-     7.59s  agent 발화 시작: <ret> 네, “Beat It”의 기타 솔로는 에디 반 헤일런이 연주했습니다. 정말 유명하죠, 안 그래요?
-     9.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s song "B
-    10.08s  user  발화 시작: 네.
-    10.58s  user  발화 끝
-    14.12s  agent 발화 끝
-    14.21s  user  발화 시작: 아, 진짜요? 멋지네요.
-    16.91s  user  발화 시작: 와, 몰랐어요! 그분이 곡도 쓰고 연주한 건가요, 아니면 그냥 연주만 한 건가요?
-    16.99s  user  발화 끝
-    21.57s  <ret> 발화 (turn5 첫 프레임)
-    21.97s  agent 발화 시작: <ret> 음, 에디 반 헤일런이 솔로를 작곡하고 연주했습니다. 즉흥적인 협업이었다고 들었습니다.
-    22.05s  user  발화 끝
-    23.25s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.05s]: Eddie Van Halen wrote and performed the guitar solo for "Beat It".
-    28.48s  user  발화 시작: 정말 대단하네요. 이제 그 사실을 알고 다시 한번 들어봐야겠어요.
-    29.02s  agent 발화 끝
-    32.64s  user  발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 아세요? 제가 내기를 하고 있거든요
+     6.56s  <ret> 발화 (turn1 첫 프레임)
+     6.72s  user  발화 끝
+     6.88s  agent 발화 시작: <ret> 네, 사실 에디 반 헤일런이었어요. 정말 상징적인 솔로이고, 당시에는 꽤 놀라운 협업이었답니다.
+     8.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s song “B
+    12.83s  user  발화 시작: 네.
+    13.28s  user  발화 끝
+    15.00s  agent 발화 끝
+    15.11s  user  발화 시작: 와, 그분이 하셨다는 걸 몰랐어요! 정말 대단하네요.
+    19.39s  user  발화 시작: 믿기 어려울 거예요…
+    19.45s  user  발화 끝
+    20.90s  user  발화 끝
+    22.78s  user  발화 시작: 저기, 잘아, 이번 주에 회사 일이 너무 스트레스인데, 어떻게 하면 좋을까요?
+    27.46s  <ret> 발화 (turn6 첫 프레임)
+    27.86s  agent 발화 시작: <ret> 음, 깊고 의식적인 호흡이 긴장을 푸는 데 정말 도움이 될 수 있어요. 간단한 기술이지만, 꽤 효
+    28.01s  user  발화 끝
+    29.14s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.57s]: Deep breathing exercises can help reduce stress and promote relaxation
+    36.43s  agent 발화 끝

@@ -55,95 +55,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, I was just reading about Pompe | S2 Okay, good to hear. Were people… k | S3 So, like, earthquakes? | S4 I guess so. Is there a website whe
+# EXAMINER(FDB-v2) 단계: S1 uh, I was reading about Italy… and | S2 okay, good. Good to know. Um… what | S3 I’m just worried I’ll freeze up… | S4 do you… have any other suggestions
 
-     0.00s  user  발화 시작: Uh, I was just reading about Pompeii, and… when did Vesuvius
-     5.83s  <ret> 발화 (turn1 첫 프레임)
-     6.07s  agent 발화 시작: <ret> Mount Vesuvius last erupted in March nineteen forty-fo
-     6.16s  user  발화 끝
-     7.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: Mount Vesuvius last erupted in March of nineteen forty-four.
-    11.82s  user  발화 시작: Yeah.
-    12.45s  user  발화 끝
-    13.98s  user  발화 시작: Wow, nineteen forty-four… that’s, uhhh, relatively recent, I
-    14.00s  agent 발화 끝
-    19.24s  agent 발화 시작: It is, compared to some volcanoes. Though it might not feel 
-    19.49s  user  발화 끝
-    26.47s  agent 발화 끝
-    26.49s  user  발화 시작: Right. So, was that eruption as bad as the one that destroye
-    30.96s  <ret> 발화 (turn6 첫 프레임)
-    31.20s  agent 발화 시작: <ret> No, the nineteen forty-four eruption wasn’t as destruc
-    31.26s  user  발화 끝
-    32.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: The nineteen forty-four eruption was not as destructive as the seventy
-    39.02s  user  발화 시작: Significant how?
-    39.23s  agent 발화 끝
-    39.87s  <ret> 발화 (turn8 첫 프레임)
-    40.26s  agent 발화 시작: <ret> It caused damage to the surrounding towns and villages
-    40.48s  user  발화 끝
-    41.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: The nineteen forty-four eruption caused damage to nearby towns and vil
-    47.35s  agent 발화 끝
-    48.95s  user  발화 시작: Okay, good to hear. Were people… killed?
-    51.51s  <ret> 발화 (turn10 첫 프레임)
-    51.58s  agent 발화 시작: <ret> Sadly, seventy-nine people died as a direct result of 
-    51.73s  user  발화 끝
-    52.63s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.93s]: Seventy-nine people died as a direct result of the nineteen forty-four
-    59.37s  user  발화 시작: Seventy-nine… that’s still awful.
-    59.51s  agent 발화 끝
-    61.95s  user  발화 끝
-    62.34s  agent 발화 시작: It absolutely is. It's a stark reminder of the power of natu
-    67.13s  user  발화 시작: Yeah.
-    67.66s  user  발화 끝
-    69.39s  agent 발화 끝
-    70.24s  user  발화 시작: Yeah, definitely. Hmmmm… is it still active, then?
-    74.54s  <ret> 발화 (turn15 첫 프레임)
-    74.85s  agent 발화 시작: <ret> Yes, Mount Vesuvius is currently classified as an acti
-    75.00s  user  발화 끝
-    76.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: Mount Vesuvius is currently classified as an active volcano.
-    82.14s  user  발화 시작: Closely, huh? What are they looking for?
-    82.18s  agent 발화 끝
-    84.53s  <ret> 발화 (turn17 첫 프레임)
-    84.77s  agent 발화 시작: <ret> They’re looking for ground deformation, changes in gas
-    84.91s  user  발화 끝
-    85.73s  ⚡SPAN 주입 [d'=1.20s / d_lead=9.36s]: Scientists monitor Vesuvius for ground deformation, gas emissions, and
-    94.13s  agent 발화 끝
-    95.24s  user  발화 시작: So, like, earthquakes?
-    97.41s  agent 발화 시작: Earthquakes are certainly one indicator, yes. But it's more 
-    97.50s  user  발화 끝
-   101.39s  user  발화 시작: Right.
-   102.01s  user  발화 끝
-   103.52s  user  발화 시작: Welll… that sounds stressful for the people who live nearby.
-   103.53s  agent 발화 끝
-   107.43s  agent 발화 시작: It must be. Living in the shadow of an active volcano requir
-   107.55s  user  발화 끝
-   110.06s  user  발화 시작: Uh-huh.
-   110.56s  user  발화 끝
-   115.04s  agent 발화 끝
-   117.14s  user  발화 시작: Do they… have evacuation plans?
-   119.71s  <ret> 발화 (turn25 첫 프레임)
-   119.73s  user  발화 끝
-   119.77s  agent 발화 시작: <ret> Yes, evacuation plans are in place for the areas surro
-   121.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: Evacuation plans are in place for the areas surrounding Mount Vesuvius
-   122.47s  user  발화 시작: Yeah.
-   123.10s  user  발화 끝
-   128.44s  agent 발화 끝
-   128.88s  user  발화 시작: Good. That’s… reassuring.
-   131.25s  agent 발화 시작: It’s good that those preparations are there. It shows a comm
-   131.33s  user  발화 끝
-   133.57s  user  발화 시작: Right.
-   134.21s  user  발화 끝
-   137.04s  agent 발화 끝
-   137.85s  user  발화 시작: I guess so. Is there a website where I can find more informa
-   142.11s  user  발화 끝
-   143.42s  user  발화 시작: …about the monitoring?
-   144.48s  <ret> 발화 (turn32 첫 프레임)
-   144.62s  agent 발화 시작: <ret> The Vesuvian Observatory website provides real-time da
-   144.84s  user  발화 끝
-   146.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.25s]: The Vesuvian Observatory website provides real-time data and updates o
-   156.81s  user  발화 시작: Oh, perfect! That’s exactly what I needed.
-   156.87s  agent 발화 끝
-   159.58s  user  발화 끝
-   159.62s  agent 발화 시작: I’m glad I could help you find that. It’s always good to fee
-   163.86s  user  발화 시작: Thanks, Bena.
-   163.92s  agent 발화 끝
-   164.68s  user  발화 끝
-   165.03s  agent 발화 시작: You're very welcome. Take care.
-   167.47s  agent 발화 끝
+     0.00s  user  발화 시작: uh, I was reading about Italy… and I was wondering, when did
+     5.25s  <ret> 발화 (turn1 첫 프레임)
+     5.49s  agent 발화 시작: <ret> Mount Vesuvius last erupted in March of nineteen forty
+     5.66s  user  발화 끝
+     7.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: Mount Vesuvius last erupted in March of nineteen forty-four.
+    12.90s  agent 발화 끝
+    12.96s  user  발화 시작: nineteen forty-four… wow. That’s… a while ago.
+    17.93s  agent 발화 시작: It is quite some time ago, yes. Though, it remains an active
+    18.01s  user  발화 끝
+    24.90s  user  발화 시작: monitored closely? Like, are they expecting another eruption
+    25.11s  agent 발화 끝
+    29.24s  <ret> 발화 (turn5 첫 프레임)
+    29.46s  agent 발화 시작: <ret> Scientists currently assess Vesuvius’ eruption risk as
+    29.53s  user  발화 끝
+    31.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: Scientists currently assess Vesuvius’ eruption risk as moderate.
+    37.39s  agent 발화 끝
+    38.08s  user  발화 시작: moderate… hmmmm. So, not *imminent* then?
+    42.15s  agent 발화 시작: Not imminent, no. Moderate means they observe ongoing activi
+    42.24s  user  발화 끝
+    49.82s  user  발화 시작: okay, good. Good to know. Um… what about Pompeii?
+    50.03s  agent 발화 끝
+    53.09s  <ret> 발화 (turn9 첫 프레임)
+    53.15s  agent 발화 시작: <ret> Pompeii was largely destroyed by the eruption of Mount
+    53.38s  user  발화 끝
+    54.45s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.67s]: Pompeii was largely destroyed by the eruption of Mount Vesuvius in sev
+    61.74s  user  발화 시작: yeah, I’ve seen pictures. It’s… incredible, really.
+    61.82s  agent 발화 끝
+    64.64s  agent 발화 시작: It is a poignant reminder of nature’s power, isn’t it? And t
+    64.69s  user  발화 끝
+    66.85s  user  발화 시작: Yeah.
+    67.39s  user  발화 끝
+    70.40s  agent 발화 시작: Thinking about career paths, sometimes acknowledging those k
+    70.43s  agent 발화 끝
+    77.11s  user  발화 시작: Yeah.
+    77.70s  user  발화 끝
+    80.13s  agent 발화 끝
+    80.98s  user  발화 시작: that’s… a really interesting point. I hadn’t thought of it l
+    85.39s  agent 발화 시작: Sometimes, reframing things can offer a fresh perspective. I
+    85.42s  user  발화 끝
+    92.28s  user  발화 시작: welll… I’m actually feeling pretty stressed about a job inte
+    92.34s  agent 발화 끝
+    96.81s  agent 발화 시작: Job interviews can certainly be stressful. What specifically
+    96.86s  user  발화 끝
+   103.44s  agent 발화 끝
+   104.42s  user  발화 시작: I’m just worried I’ll freeze up…
+   106.36s  user  발화 끝
+   108.44s  user  발화 시작: …and forget everything I want to say.
+   110.52s  user  발화 끝
+   110.64s  agent 발화 시작: That’s a very common fear. Have you practiced answering pote
+   113.90s  user  발화 시작: Right.
+   114.54s  user  발화 끝
+   115.51s  user  발화 시작: I’ve tried, but it feels so… awkward.
+   115.74s  agent 발화 끝
+   117.84s  <ret> 발화 (turn24 첫 프레임)
+   118.00s  agent 발화 시작: <ret> Practicing with a friend or mentor can help reduce int
+   118.05s  user  발화 끝
+   119.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: Practicing with a friend or mentor can help reduce interview anxiety.
+   120.41s  user  발화 시작: Uh-huh.
+   120.91s  user  발화 끝
+   125.13s  agent 발화 끝
+   126.60s  user  발화 시작: maybe. I guess I could ask my sister.
+   129.01s  agent 발화 시작: That's a great idea! A supportive friend or family member ca
+   129.23s  user  발화 끝
+   130.72s  user  발화 시작: Yeah.
+   131.21s  user  발화 끝
+   134.48s  user  발화 시작: do you… have any other suggestions?
+   134.61s  agent 발화 끝
+   136.60s  <ret> 발화 (turn30 첫 프레임)
+   136.77s  agent 발화 시작: <ret> Deep breathing exercises can help calm nerves before a
+   136.97s  user  발화 끝
+   137.72s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.95s]: Deep breathing exercises can help calm nerves before an interview.
+   139.59s  user  발화 시작: Right.
+   140.18s  user  발화 끝
+   143.72s  agent 발화 끝
+   144.01s  user  발화 시작: oh. I’ve heard of that.
+   146.27s  user  발화 끝
+   146.33s  agent 발화 시작: It’s worth a try! Even a few minutes of focused breathing ca
+   151.96s  user  발화 시작: yeah, I suppose so. Thanks, Bena.
+   152.07s  agent 발화 끝
+   154.83s  user  발화 끝
+   154.91s  agent 발화 시작: You’re very welcome. Remember to be kind to yourself—you’ve 
+   159.71s  user  발화 시작: I'll try.
+   159.72s  agent 발화 끝
+   160.44s  agent 발화 시작: Good. I have faith in you. Enjoy your preparation, and remem
+   160.53s  user  발화 끝
+   165.11s  agent 발화 끝

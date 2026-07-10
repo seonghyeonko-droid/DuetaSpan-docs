@@ -68,29 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 국가유공자부(Department of Veterans Affa | S2 음… 그게 정확한 날짜 맞아? 좀 더 일찍 만들어졌을 수도 있 | S3 흐으으음… 그럼 천구백삼십년은 뭐, 공식적으로 바뀐 날짜인 거 | S4 알겠어. 그럼 천구백십칠년부터 계속 쭉 이어져 왔다는 거네.
+# EXAMINER(FDB-v2) 단계: S1 퇴역 군인부(Department of Veterans… | S2 …Affairs)가 언제 만들어졌는지 아세요? | S3 천구백삼십년이라고요? 좀 더 자세히 설명해 줄 수 있어요? 그 | S4 네, 천구백삼십년이 맞다면, 그 전에는 어떻게 운영됐는지 궁금
 
-     0.00s  user  발화 시작: 국가유공자부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해.
-     5.23s  <ret> 발화 (turn1 첫 프레임)
-     5.54s  agent 발화 시작: <ret> 국가유공자부는 천구백삼십년 칠월 이십일일에 만들어졌습니다.
-     5.70s  user  발화 끝
-     7.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: The Department of Veterans Affairs was established on July 21, 1930.
-     9.70s  user  발화 시작: 음… 그게 정확한 날짜 맞아? 좀 더 일찍 만들어졌을 수도 있잖아.
-     9.71s  agent 발화 끝
-    14.15s  <ret> 발화 (turn3 첫 프레임)
-    14.22s  agent 발화 시작: <ret> 사실 그 부처의 시작은 천구백십칠년으로 거슬러 올라갑니다. 당시에는 '재향군인국'이라는 이름이었어
-    14.38s  user  발화 끝
-    15.51s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.99s]: The agency’s origins can be traced back to 1917 with the establishment
-    21.14s  user  발화 시작: 흐으으음… 그럼 천구백삼십년은 뭐, 공식적으로 바뀐 날짜인 거네?
-    21.21s  agent 발화 끝
-    25.19s  <ret> 발화 (turn5 첫 프레임)
-    25.26s  agent 발화 시작: <ret> 네, 천구백삼십년에는 재향군인국이 장관급 부서로 승격되면서 공식적으로 현재의 국가유공자부가 된 겁
-    25.40s  user  발화 끝
-    27.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: The Veteran’s Bureau was elevated to a cabinet-level department in 193
-    29.37s  user  발화 시작: 응.
-    29.77s  user  발화 끝
-    32.52s  user  발화 시작: 알겠어. 그럼 천구백십칠년부터 계속 쭉 이어져 왔다는 거네.
-    32.53s  agent 발화 끝
-    36.14s  agent 발화 시작: 맞습니다. 천구백십칠년부터 쭉 이어져 오면서 명칭과 역할이 조금씩 바뀌어 왔다고 보시면 됩니다.
-    36.35s  user  발화 끝
-    42.25s  agent 발화 끝
+     0.00s  user  발화 시작: 퇴역 군인부(Department of Veterans…
+     3.10s  user  발화 끝
+     4.26s  user  발화 시작: …Affairs)가 언제 만들어졌는지 아세요?
+     6.33s  <ret> 발화 (turn2 첫 프레임)
+     6.64s  agent 발화 시작: <ret> 퇴역 군인부(Department of Veterans Affairs)는 천구백삼십년에 만들어졌습니
+     6.85s  user  발화 끝
+     7.53s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.00s]: The Department of Veterans Affairs was created in 1930.
+    11.64s  agent 발화 끝
+    12.08s  user  발화 시작: 천구백삼십년이라고요? 좀 더 자세히 설명해 줄 수 있어요? 그 전에, 지금 서울 날씨는 어때요?
+    18.34s  <ret> 발화 (turn4 첫 프레임)
+    18.65s  agent 발화 시작: <ret> 서울 날씨를 확인해 드렸습니다. 현재 서울은 칠월 십일일 금요일 오후 두 시 삼십삼분입니다. 퇴역
+    18.71s  user  발화 끝
+    18.84s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.77s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
+    27.40s  user  발화 시작: 네, 천구백삼십년이 맞다면, 그 전에는 어떻게 운영됐는지 궁금해요.
+    27.50s  agent 발화 끝
+    31.81s  agent 발화 시작: 천구백삼십년 이전에 퇴역 군인 지원은 주로 전쟁부 산하의 국립 홈(National Home for Disab
+    31.92s  user  발화 끝
+    39.92s  agent 발화 끝

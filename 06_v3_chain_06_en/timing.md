@@ -63,61 +63,77 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find a hotel in Seoul fo | S2 Great! Now, I need to book a fligh | S3 Perfect. Book that one for me, ple | S4 Sounds good. Can you make a reserv
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Uhhh, while that’s playing, could  | S3 Perfect. Now, I need to find a goo | S4 That’s fantastic. Thanks so much.
 
-     0.00s  user  발화 시작: I need to find a hotel in Seoul for next week.
-     2.43s  <ret> 발화 (turn1 첫 프레임)
-     2.50s  agent 발화 시작: <ret> The Shilla Seoul has rooms available from July sevente
-     2.58s  user  발화 끝
-     4.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) The Shilla Seoul, 249 Dongho-ro, Jung-gu, Seoul, 100-861
-     9.92s  agent 발화 끝
-    10.62s  user  발화 시작: That sounds nice. What about something a little cheaper?
-    13.25s  <ret> 발화 (turn3 첫 프레임)
-    13.41s  agent 발화 시작: <ret> L7 Seoul Myeongdong has availability for those dates, 
-    13.57s  user  발화 끝
-    15.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (tool result) L7 Seoul Myeongdong, 77 Eulji-ro, Jung-gu, Seoul, 04536,
-    16.04s  user  발화 시작: Really?
-    16.67s  user  발화 끝
-    20.92s  agent 발화 끝
-    21.01s  user  발화 시작: Okay, that's better. Can you book a room there for me?
-    24.14s  <ret> 발화 (turn6 첫 프레임)
-    24.22s  agent 발화 시작: <ret> Excellent. Your reservation is confirmed at L7 Seoul M
-    24.34s  user  발화 끝
-    26.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.02s]: (tool result) Reservation confirmed at L7 Seoul Myeongdong, check-in J
-    31.73s  user  발화 시작: Yeah.
-    32.13s  user  발화 끝
-    36.24s  agent 발화 끝
-    36.37s  user  발화 시작: Great! Now, I need to book a flight to get there.
-    38.40s  <ret> 발화 (turn9 첫 프레임)
-    38.79s  agent 발화 시작: <ret> Korean Air flight KE082 departs from JFK on July sixte
-    38.95s  user  발화 끝
-    39.84s  ⚡SPAN 주입 [d'=1.44s / d_lead=12.71s]: (tool result) Korean Air flight KE082, departing July 16, 14:00 from J
-    51.50s  agent 발화 끝
-    51.75s  user  발화 시작: That's a bit expensive. Are there any cheaper options?
-    55.45s  <ret> 발화 (turn11 첫 프레임)
-    55.63s  user  발화 끝
-    55.68s  agent 발화 시작: <ret> China Eastern flight MU588 departs JFK on July sixteen
-    57.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.87s]: (tool result) China Eastern flight MU588, departing July 16, 16:00 fro
-    67.47s  user  발화 시작: Perfect. Book that one for me, please.
-    67.55s  agent 발화 끝
-    69.57s  <ret> 발화 (turn13 첫 프레임)
-    69.73s  user  발화 끝
-    69.97s  agent 발화 시작: <ret> Your flight, China Eastern MU588, is booked for July s
-    70.29s  ⚡SPAN 주입 [d'=0.72s / d_lead=12.02s]: (tool result) Flight MU588 booked, JFK to ICN, July 16, $1,180, confir
-    78.68s  user  발화 시작: Really?
-    79.22s  user  발화 끝
-    81.99s  agent 발화 끝
-    82.01s  user  발화 시작: Okay, now I need to find a good restaurant near the hotel.
-    84.88s  <ret> 발화 (turn16 첫 프레임)
-    84.95s  agent 발화 시작: <ret> Myeongdong Kyoja, a Korean restaurant with four and a 
-    85.06s  user  발화 끝
-    86.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Myeongdong Kyoja, 23 Myeongdong 2(i)-ga, Jung-gu, Seoul,
-    91.08s  user  발화 시작: Sounds good. Can you make a reservation there for two people
-    91.20s  agent 발화 끝
-    95.57s  <ret> 발화 (turn18 첫 프레임)
-    95.89s  user  발화 끝
-    95.97s  agent 발화 시작: <ret> I've made a reservation for you and one other at Myeon
-    97.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) Reservation confirmed at Myeongdong Kyoja, July 18, 7 PM
-   106.45s  agent 발화 끝
-   106.69s  user  발화 시작: Wonderful. And finally, can you set an alarm for 8 AM on Jul
-   111.32s  user  발화 끝
+     0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
+     4.51s  <ret> 발화 (turn1 첫 프레임)
+     4.59s  agent 발화 시작: <ret> I’ve created a directory named MyCustomBrowser version
+     4.72s  user  발화 끝
+     6.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) Directory 'MyCustomBrowser version ten point five' creat
+     7.24s  user  발화 시작: Mm-hmm.
+     7.88s  user  발화 끝
+    12.24s  agent 발화 끝
+    12.28s  user  발화 시작: That’s great. Now, can you find me some jazz music?
+    15.18s  <ret> 발화 (turn4 첫 프레임)
+    15.34s  agent 발화 시작: <ret> I found three jazz albums: Miles Davis’s *Kind of Blue
+    15.47s  user  발화 끝
+    17.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Miles Davis – Kind of Blue (1959); John Coltrane – A Lov
+    19.56s  user  발화 시작: Mm-hmm.
+    20.06s  user  발화 끝
+    23.62s  user  발화 시작: Play the Miles Davis album.
+    23.73s  agent 발화 끝
+    25.38s  <ret> 발화 (turn7 첫 프레임)
+    25.46s  agent 발화 시작: <ret> Okay, *Kind of Blue* by Miles Davis is now playing.
+    25.55s  user  발화 끝
+    27.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.65s]: (tool result) Now playing: Kind of Blue – Miles Davis (1959).
+    29.12s  agent 발화 끝
+    29.30s  user  발화 시작: Uhhh, while that’s playing, could you look up the weather in
+    32.10s  <ret> 발화 (turn9 첫 프레임)
+    32.50s  agent 발화 시작: <ret> The weather in Seoul is twenty-five point eight degree
+    32.53s  user  발화 끝
+    33.30s  ⚡SPAN 주입 [d'=1.20s / d_lead=9.36s]: (tool result) 25.8°C, humidity 68%, wind 3.1 km/h.
+    37.06s  user  발화 시작: Mm-hmm.
+    37.69s  user  발화 끝
+    41.86s  agent 발화 시작: Glad you like the sound of that, enjoying the music is impor
+    41.86s  agent 발화 끝
+    45.04s  agent 발화 끝
+    45.90s  user  발화 시작: I need to book a hotel in Busan for next weekend.
+    48.74s  <ret> 발화 (turn13 첫 프레임)
+    48.85s  user  발화 끝
+    48.98s  agent 발화 시작: <ret> I found three hotels in Busan: Haeundae Grand Hotel at
+    50.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.55s]: (tool result) Haeundae Grand Hotel (₩235,000/night); Paradise Hotel Bu
+    62.53s  agent 발화 끝
+    63.16s  user  발화 시작: Book the Haeundae Grand Hotel for those dates.
+    65.71s  <ret> 발화 (turn15 첫 프레임)
+    65.79s  agent 발화 시작: <ret> I’ve booked the Haeundae Grand Hotel for July twelfth 
+    65.89s  user  발화 끝
+    67.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.94s]: (tool result) Haeundae Grand Hotel, 2026-07-12 to 2026-07-14, ₩470,000
+    73.70s  user  발화 시작: Really?
+    74.24s  user  발화 끝
+    76.73s  agent 발화 끝
+    77.26s  user  발화 시작: Perfect. Now, I need to find a good Italian restaurant nearb
+    80.84s  <ret> 발화 (turn18 첫 프레임)
+    81.15s  user  발화 끝
+    81.16s  agent 발화 시작: <ret> There are three Italian restaurants nearby: La Piazza,
+    82.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.66s]: (tool result) La Piazza (550m); Fellini (800m); Osteria Mia (1.2km).
+    91.82s  agent 발화 끝
+    92.01s  user  발화 시작: Is La Piazza highly rated?
+    93.62s  <ret> 발화 (turn20 첫 프레임)
+    93.76s  user  발화 끝
+    93.78s  agent 발화 시작: <ret> La Piazza has a rating of four point six stars based o
+    95.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) La Piazza, 4.6 stars, 325 reviews.
+    99.11s  user  발화 시작: Reserve a table there for two people at seven PM tonight.
+    99.24s  agent 발화 끝
+   102.34s  user  발화 끝
+   102.35s  <ret> 발화 (turn22 첫 프레임)
+   102.67s  agent 발화 시작: <ret> I've reserved a table for two at La Piazza tonight at 
+   104.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: (tool result) La Piazza, 2026-07-10, 19:00, party of 2, confirmation: 
+   110.86s  user  발화 시작: That’s fantastic. Thanks so much.
+   110.88s  agent 발화 끝
+   112.71s  agent 발화 시작: You're very welcome. I’m glad I could help you plan your eve
+   112.80s  user  발화 끝
+   116.87s  agent 발화 끝
+   116.94s  user  발화 시작: I think that's all for now.
+   118.21s  agent 발화 시작: Enjoy your trip.
+   118.41s  user  발화 끝
+   119.40s  agent 발화 끝

@@ -66,75 +66,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요. | S2 아직 날짜는 정하지 못했어요. 한국에서 하는 콘서트가 있으면  | S3 이천십일년 앨범 'Unbroken'에는 어떤 곡들이 들어있나요 | S4 아, 'Camp Rock' 봤어요! 정말 재미있었죠.
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요. | S2 팝 음악을 제일 좋아해요. | S3 맞아요, 저도 위로를 많이 받았어요. | S4 네, 정말 그런 것 같아요.
 
      0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요.
-     3.39s  <ret> 발화 (turn1 첫 프레임)
-     3.54s  agent 발화 시작: <ret> 데미 로바토의 앨범, 'Confidence'가 이천십오년 십월에 발매되었답니다. 혹시 다른 앨범에
-     3.65s  user  발화 끝
-     5.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: Demi Lovato’s album, Confidence, was released in October 2015.
-     8.41s  user  발화 시작: 네네.
-     9.14s  user  발화 끝
-    10.68s  agent 발화 끝
-    11.71s  user  발화 시작: 아, 'Confidence' 앨범이군요. 그 앨범에 수록된 곡들 좀 알려주실 수 있을까요?
-    17.18s  user  발화 끝
-    17.30s  <ret> 발화 (turn4 첫 프레임)
-    17.38s  agent 발화 시작: <ret> 'Confidence' 앨범에는 'Cool for the Summer', 'Confident', 
-    19.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) London, UK (51.5074, 0.1278): Paris, France (2560 meters
-    20.18s  user  발화 시작: 음.
-    20.64s  user  발화 끝
-    22.05s  agent 발화 끝
-    22.16s  agent 발화 시작: 지금 파리, 로마, 베를린은 런던에서 각각 이천오백육십 미터, 만 사천 이백 미터, 구천삼백 미터 거리에 있
-    32.09s  agent 발화 끝
-    32.31s  user  발화 시작: 런던은 별로 관심 없고, 데미 로바토 콘서트 티켓 예매하는 거 도와주실 수 있나요?
-    37.91s  user  발화 끝
-    38.07s  agent 발화 시작: 콘서트 티켓 예매를 도와드릴 수 있어요. 혹시 콘서트 날짜나 장소를 정해두셨나요?
-    40.86s  user  발화 시작: 예.
-    41.35s  user  발화 끝
-    43.39s  agent 발화 끝
-    44.14s  user  발화 시작: 아직 날짜는 정하지 못했어요. 한국에서 하는 콘서트가 있으면 좋겠네요.
-    48.74s  <ret> 발화 (turn11 첫 프레임)
-    48.81s  user  발화 끝
-    48.82s  agent 발화 시작: <ret> 죄송하지만, 현재 데미 로바토는 한국에서 콘서트를 할 예정이 없답니다. 다른 지역 콘서트도 찾아볼
-    50.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Demi Lovato is not currently scheduled to perform in Sou
-    52.22s  user  발화 시작: 음.
-    52.71s  user  발화 끝
-    55.91s  agent 발화 끝
-    55.95s  user  발화 시작: 아쉽네요. 그럼 데미 로바토의…
-    58.48s  user  발화 끝
-    59.59s  user  발화 시작: …다른 앨범들은 언제 발매되었는지 알려주세요.
-    62.44s  <ret> 발화 (turn15 첫 프레임)
-    62.83s  agent 발화 시작: <ret> 데미 로바토의 데뷔 앨범 'Don’t Forget'은 이천팔년에 발매되었어요. 이천십일년에는 'U
-    62.96s  user  발화 끝
-    64.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: Demi Lovato released her debut album, Don’t Forget, in 2008.
-    66.44s  user  발화 시작: 정말요?
-    67.08s  user  발화 끝
-    70.20s  agent 발화 끝
-    71.22s  user  발화 시작: 이천십일년 앨범 'Unbroken'에는 어떤 곡들이 들어있나요?
-    75.30s  agent 발화 시작: 'Unbroken' 앨범에는 'Skyscraper', 'Give Your Heart a Break', 'Un
-    75.34s  user  발화 끝
-    80.36s  user  발화 시작: …혹시 데미 로바토가 가장 좋아하는 색깔이 뭐예요?
-    80.99s  agent 발화 끝
-    84.17s  <ret> 발화 (turn20 첫 프레임)
-    84.41s  agent 발화 시작: <ret> 도쿄의 칠월 십일 평균 기온은 이십팔 점 오도로 예상되며, 습도는 칠십%랍니다. 혹시 여행 계획 
-    84.57s  user  발화 끝
-    86.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: The average temperature in Tokyo on July 10, 2026 is forecast to be 28
-    92.62s  agent 발화 끝
-    92.84s  user  발화 시작: 아니요, 그냥 궁금해서요. 데미 로바토가 연기를 한 영화도 있나요?
-    96.63s  <ret> 발화 (turn22 첫 프레임)
-    96.95s  agent 발화 시작: <ret> 네, 데미 로바토는 이천팔년 디즈니 채널 영화 'Camp Rock'에 출연했어요. 뮤지컬 영화랍니
-    97.15s  user  발화 끝
-    98.39s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.25s]: Demi Lovato starred in the 2008 Disney Channel movie, Camp Rock.
-   101.52s  user  발화 시작: 네네.
-   102.25s  user  발화 끝
-   103.20s  agent 발화 끝
-   103.38s  user  발화 시작: 아, 'Camp Rock' 봤어요! 정말 재미있었죠.
-   106.25s  agent 발화 시작: 정말 재미있었죠. 데미 로바토의 연기 변신도 돋보였다고 생각해요. 힘든 시기를 극복하는 청춘의 이야기를 잘 
-   106.43s  user  발화 끝
-   112.48s  user  발화 시작: 네.
-   113.11s  user  발화 끝
-   115.42s  agent 발화 끝
-   116.50s  user  발화 시작: 맞아요, 정말 감동적이었어요. 오늘 정보 감사합니다.
-   120.06s  user  발화 끝
-   120.23s  agent 발화 시작: 도움이 되었다니 기쁘네요.
-   121.84s  agent 발화 끝
+     4.12s  <ret> 발화 (turn1 첫 프레임)
+     4.27s  agent 발화 시작: <ret> 데미 로바토의 새 앨범은 이천십오년 십월에 발매될 예정입니다. 혹시 다른 앨범에 대해서도 궁금하신
+     4.35s  user  발화 끝
+     6.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: October 2015.
+    10.94s  agent 발화 끝
+    11.37s  user  발화 시작: 아, 네. 그럼 그 앨범의 제목은 뭐예요?
+    13.53s  <ret> 발화 (turn3 첫 프레임)
+    13.58s  user  발화 끝
+    13.92s  agent 발화 시작: <ret> 그 앨범의 제목은 'DEMI'입니다. 요즘 음악 감상 많이 하시나 봐요?
+    14.97s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.39s]: DEMI.
+    18.32s  agent 발화 끝
+    18.69s  user  발화 시작: 네, 요즘 계속 듣고 있어요.
+    21.04s  user  발화 끝
+    21.15s  agent 발화 시작: 듣는 음악이 삶에 활력을 주는 것 같아요. 저는 그런 점이 참 좋다고 생각해요. 혹시 어떤 장르를 주로 들으
+    26.46s  user  발화 시작: 음.
+    26.96s  user  발화 끝
+    28.99s  agent 발화 끝
+    29.08s  user  발화 시작: 팝 음악을 제일 좋아해요.
+    31.24s  <ret> 발화 (turn8 첫 프레임)
+    31.29s  user  발화 끝
+    31.56s  agent 발화 시작: <ret> 팝 음악을 좋아하시는군요. 팝 음악은 대중적이어서 듣기에도 편하고—
+    32.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.73s]: The population of London is 8,982,000.
+    35.55s  user  발화 시작: …혹시 데미 로바토 다른 노래 추천해 주실 수 있나요?
+    36.28s  agent 발화 끝
+    39.35s  agent 발화 시작: 아, 네. 데미 로바토의 다른 노래를 추천해 드릴게요. 'Sorry Not Sorry'나 'Skyscrape
+    39.58s  user  발화 끝
+    46.95s  agent 발화 끝
+    47.17s  user  발화 시작: 'Skyscraper'는 정말 좋아해요.
+    49.33s  agent 발화 시작: 'Skyscraper'는 정말 감동적인 노래죠. 힘든 시간을 겪을 때 많은 위로를 받았다고 하는 분들도 많아
+    49.52s  user  발화 끝
+    55.85s  user  발화 시작: 맞아요, 저도 위로를 많이 받았어요.
+    56.24s  agent 발화 끝
+    58.13s  <ret> 발화 (turn14 첫 프레임)
+    58.53s  agent 발화 시작: <ret> 그렇게 느끼셨다니 정말 다행이에요. 음악은 그런 힘이 있잖아요. 잠시 다른 이야기를 해 볼까요?
+    58.62s  user  발화 끝
+    60.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: The capital of Australia is Canberra.
+    61.74s  user  발화 시작: 예.
+    62.23s  user  발화 끝
+    64.60s  agent 발화 끝
+    65.72s  user  발화 시작: 네, 좋아요. 뭐든 괜찮아요.
+    68.13s  agent 발화 시작: 요즘 스트레스 관리는 어떻게 하고 계세요? 창작 활동에 도움이 될 만한 방법을 찾아보는 것도 좋을 것 같아요
+    68.17s  user  발화 끝
+    71.56s  user  발화 시작: 음.
+    72.02s  user  발화 끝
+    75.26s  agent 발화 끝
+    75.86s  user  발화 시작: 스트레스는 주로 운동으로 풀어요.
+    78.34s  agent 발화 시작: 운동으로 스트레스를 푸시는군요. 건강한 방법이네요. 규칙적인 운동은 정신 건강에도 큰 도움이 된답니다.
+    78.58s  user  발화 끝
+    81.53s  user  발화 시작: 네.
+    81.97s  user  발화 끝
+    85.71s  agent 발화 끝
+    86.67s  user  발화 시작: 네, 정말 그런 것 같아요.
+    88.44s  agent 발화 시작: 긍정적인 마음으로 꾸준히 운동하시면 더욱 활기찬 삶을 사실 수 있을 거예요. 혹시 운동 외에 다른 취미도 있
+    88.46s  user  발화 끝
+    91.38s  user  발화 시작: 아.
+    91.78s  user  발화 끝
+    95.18s  user  발화 시작: 그림 그리는 걸 좋아해요.
+    95.39s  agent 발화 끝
+    96.94s  user  발화 끝
+    97.39s  agent 발화 시작: 그림 그리기를 좋아하시는군요! 창작 활동을 통해 자신을 표현하는 건 정말 멋진 일이에요. 그림 그리면서 스트
+   106.76s  agent 발화 끝
+   107.79s  user  발화 시작: 네, 정말 그래요.
+   109.36s  user  발화 끝
+   109.64s  agent 발화 시작: 그림 그리시는 게 삶에 큰 활력소가 되시는 것 같아 보기 좋아요. 좋은 하루 보내세요.
+   114.69s  agent 발화 끝

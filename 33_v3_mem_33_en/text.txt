@@ -69,39 +69,39 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Casey, I'm Diolo. It’s lovely to connect with you today. Is there anything on your mind?
-[  3.71s][user ] «backchannel» Yeah, yeah.
-[  5.14s][user ] Um, yeah, actually. What time is it right now?
-[  8.99s][moshi] ⟨ret@8.83s⟩ It’s currently two thirty-eight ⟦⚡SPAN@10.83s: (tool result) It is Friday, July 10, 2026 at 2:38 PM in Europe/London right now.⟧ PM in London. A lovely summer afternoon, isn’t it?
-      CALL: {"function": "clock", "arguments": {"location": "London, United Kingdom"}}
-[ 11.59s][user ] «backchannel» Okay.
-[ 14.52s][user ] Yeah, it is. I was wondering… do you remember anything about my birthday ⟨ret@20.00s⟩ plans?
-[ 20.24s][moshi] I do. You were planning a ⟦⚡SPAN@22.00s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ birthday dinner for six people, hoping to find a place with outdoor seating.
-[ 26.28s][user ] Right, exactly! And… uh, do you remember where we left off with that?
-[ 30.77s][moshi] We hadn't settled on a specific restaurant yet, just the general requirements. Is that still the case?
-[ 37.21s][user ] Yeah, pretty much. I’m still looking. Maybe something… Italian?
-[ 42.14s][moshi] Italian sounds wonderful! Do you have a particular area of London in mind?
-[ 44.34s][user ] «backchannel» Yeah, yeah.
-[ 47.23s][user ] Not really, actually. Somewhere… central, I ⟨ret@51.17s⟩ guess?
-[ 51.41s][moshi] There’s ⟦⚡SPAN@52.21s: (tool result) London (51.5074, 0.1278): Bella Italia (850m), Padella (1200m), Bocca di Lupo (1800m)⟧ Bella Italia at eight hundred and fifty meters, Padella at twelve hundred, and Bocca di Lupo at eighteen hundred.
-      CALL: {"function": "nearby_places", "arguments": {"city": "London", "latitude": null, "longitude": null, "search_term": "Italian restaurant", "radius": "2000"}}
-[ 58.48s][user ] Hmm, Padella sounds good. Is it… gluten-free friendly?
-[ 63.50s][moshi] ⟨ret@63.42s⟩ You are ⟦⚡SPAN@64.46s: [2025-10-29] User is gluten-free.⟧ gluten-free, aren’t you? Let me check if Padella offers gluten-free options.
-[ 68.17s][moshi] ⟨ret@68.10s⟩ Padella ⟦⚡SPAN@69.06s: (tool result) Padella offers a limited gluten-free pasta option and salads.; Padella — padella.co.uk — They ha⟧ does have a limited gluten-free pasta option and salads, with a menu available upon request.
-      CALL: {"function": "web_search", "arguments": {"query": "Padella London gluten-free"}}
-[ 74.95s][user ] Oh, that’s good to know. What’s the phone number for Padella?
-[ 78.45s][moshi] ⟨ret@78.29s⟩ Their phone number ⟦⚡SPAN@80.29s: (tool result) Padella's phone number is +44 20 7323 0880.; Padella — squaremeal.co.uk — Find contact details a⟧ is +44 20 7323 0880. Would you like me to call for a reservation?
-      CALL: {"function": "web_search", "arguments": {"query": "Padella London phone number"}}
-[ 88.54s][user ] Actually… before that. Do they have outdoor seating? I remember that was ⟨ret@94.20s⟩ important.
-[ 94.28s][moshi] Yes, you were ⟦⚡SPAN@95.56s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ looking for outdoor seating. Let me quickly confirm if Padella offers that.
-[ 99.49s][moshi] ⟨ret@99.33s⟩ Unfortunately, Padella doesn’t ⟦⚡SPAN@101.33s: (tool result) Padella does not have outdoor seating.; Padella — theinfatuation.com — There's no outdoor space ⟧ have outdoor seating. We could look at Bella Italia instead?
-      CALL: {"function": "web_search", "arguments": {"query": "Padella London outdoor seating"}}
-[105.73s][user ] Hmm. Okay, yeah, let's try Bella Italia then. Can you check for a table for ⟨ret@111.28s⟩ six?
-[111.60s][moshi] I’ve booked a ⟦⚡SPAN@113.28s: (tool result) Bella Italia, London, July 10, 2026, 7:00 PM, 6 people, outdoor seating, confirmation id 9B7X2L⟧ table for six at Bella Italia for seven PM tonight, with outdoor seating. Your confirmation ID is 9B7X2L.
-      CALL: {"function": "booking", "arguments": {"restaurant": "Bella Italia", "date": "July 10, 2026", "time": "7:00 PM", "party_size": "6", "outdoor_seating": "yes"}}
-[121.53s][user ] Perfect! Thank you so much.
-[123.35s][moshi] You’re very welcome, Casey. I’m glad I could help.
-[126.14s][user ] Oh, one last thing. Is Rusty doing okay?
-[130.47s][moshi] ⟨ret@130.31s⟩ You have a Beagle ⟦⚡SPAN@132.16s: [2025-08-08] User has a Beagle named Rusty.⟧ named Rusty, don’t you? I don’t have any information on his current wellbeing, I’m afraid.
-[136.52s][user ] Right, silly question. Never mind.
-[139.14s][moshi] Not silly at all, it’s natural to check on loved ones. Enjoy your dinner, Casey.
+[  0.00s][moshi] Hi Casey, I'm Diolo. It's lovely to connect with you. I'm here to offer support with whatever's on your mind today.
+[  6.97s][user ] Um, what time is it right now? I lost track.
+[ 10.46s][moshi] ⟨ret@10.30s⟩ It is Friday, ⟦⚡SPAN@12.30s: It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul right now.⟧ July 10, 2026 at 2:35 PM in Asia/Seoul right now. Quite a jump from London time, isn't it?
+[ 16.75s][user ] «backchannel» Yeah.
+[ 20.79s][user ] Oh wow, yes. That's a big difference.
+[ 23.82s][moshi] It certainly is. Is there a reason you were checking the time in Seoul specifically?
+[ 29.62s][user ] No, just… random, I guess. But I was remembering that trip to ⟨ret@34.84s⟩ Kyoto.
+[ 35.24s][moshi] I recall you were ⟦⚡SPAN@36.84s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ planning a birthday dinner for six people, hoping for outdoor seating. Was that Kyoto trip related?
+[ 38.28s][user ] «backchannel» Yeah, yeah.
+[ 42.00s][user ] Yeah, that was for my sister's birthday, actually. We went to Kyoto last summer.
+[ 47.15s][moshi] That sounds wonderful. I hope your sister enjoyed her birthday in Kyoto.
+[ 53.78s][user ] She did, it was great. I'm trying to plan something similar this year, actually.
+[ 58.70s][moshi] That’s lovely! Do you have a location in mind yet for this year’s celebration?
+[ 65.65s][user ] Not yet, I was thinking maybe somewhere with good sushi.
+[ 69.23s][moshi] ⟨ret@69.15s⟩ You have ⟦⚡SPAN@70.19s: [2026-05-07] User's favorite cuisine is sushi.⟧ a fondness for sushi, which is a great choice. It’s such a delightful cuisine.
+[ 72.50s][user ] «backchannel» Yeah.
+[ 75.58s][moshi] Perhaps we could explore some restaurants in London that specialize in sushi? I can certainly help with that.
+[ 81.46s][user ] Actually, before that, does Rusty need his vaccinations soon? I can’t remember.
+[ 87.44s][moshi] ⟨ret@87.36s⟩ You have a Beagle named ⟦⚡SPAN@89.36s: [2025-08-08] User has a Beagle named Rusty.⟧ Rusty. I don't have any records of vaccination dates, though.
+[ 92.99s][user ] Oh, right. I should check with the vet, then.
+[ 95.42s][moshi] That’s a good idea. They will have the most accurate information regarding Rusty's needs.
+[101.49s][user ] I think I’ll do that. Also, I'm trying to avoid gluten these ⟨ret@106.26s⟩ days.
+[106.42s][moshi] You are gluten-free, which is ⟦⚡SPAN@108.26s: [2025-10-29] User is gluten-free.⟧ important to keep in mind when we explore restaurant options.
+[111.58s][user ] Exactly. So sushi places that have gluten-free soy sauce would be good.
+[116.78s][moshi] That's very thoughtful. I can filter for restaurants offering gluten-free options. Would you like me to begin that search?
+[125.44s][user ] Yes, please. And maybe outdoor seating, like last ⟨ret@129.95s⟩ year?
+[130.02s][moshi] ⟦⚡SPAN@130.45s: (tool result) Shiro Sushi (51.5074° N, 0.1278° W), Hanabi (51.5129° N, 0.0925° W), Zen Garden (51.4982° N, -0.⟧ Shiro Sushi at 51.5074 degrees North, 0.1278 degrees West; Hanabi at 51.5129 North, 0.0925 West; and Zen Garden at 51.4982 North, negative 0.1183 West.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "sushi", "outdoor_seating": "yes", "gluten_free": "yes", "location": "London"}}
+[142.78s][user ] «backchannel» Oh.
+[147.71s][user ] Those sound good. How far are they from Cedar ⟨ret@150.92s⟩ Lane?
+[151.16s][moshi] Your home address is ⟦⚡SPAN@152.92s: [2025-06-15] User's home address is 743 Cedar Lane.⟧ 743 Cedar Lane. I can find the distance to each restaurant.
+[156.93s][moshi] ⟨ret@156.69s⟩ Shiro Sushi is ⟦⚡SPAN@158.69s: (tool result) Shiro Sushi (2.1 km), Hanabi (3.5 km), Zen Garden (1.8 km)⟧ 2.1 kilometers away, Hanabi is 3.5 kilometers, and Zen Garden is 1.8 kilometers.
+      CALL: {"function": "map_directions_matrix", "arguments": {"origin": "743 Cedar Lane, London", "destinations": ["Shiro Sushi", "Hanabi", "Zen Garden"]}}
+[164.99s][user ] Zen Garden sounds perfect. Can you reserve a table for six there?
+[169.44s][moshi] ⟨ret@169.29s⟩ Your reservation at ⟦⚡SPAN@171.29s: (tool result) Reservation confirmed, Zen Garden, July 10, 2026 at 7:00 PM, party of 6, confirmation id: ZG7892⟧ Zen Garden is confirmed for July 10, 2026 at 7:00 PM for a party of six. Your confirmation ID is ZG7892. Enjoy your evening!
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Zen Garden", "date": "today", "time": "7:00 PM", "party_size": "6"}}

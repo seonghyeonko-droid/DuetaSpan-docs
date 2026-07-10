@@ -63,49 +63,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Actually, how about hotels near th | S3 …Do any of those have availability | S4 Great, thank you.
+# EXAMINER(FDB-v2) 단계: S1 I’m planning a trip and need to vi | S2 …Actually, before we get too deep  | S3 That’s good to know. Now, back to  | S4 Hotel Valencia sounds good. Can yo
 
-     0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.65s  <ret> 발화 (turn1 첫 프레임)
-     4.72s  user  발화 끝
-     4.73s  agent 발화 시작: <ret> I’ve mapped the Apple website, highlighting iPhone, iP
-     5.93s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.55s]: (tool result) Map created: Apple website product sections identified –
-     6.99s  user  발화 시작: Okay.
-     7.63s  user  발화 끝
-    10.28s  agent 발화 끝
-    11.16s  user  발화 시작: Hmm, can you find me restaurants near the Apple Store in Seo
-    14.64s  <ret> 발화 (turn4 첫 프레임)
-    15.04s  agent 발화 시작: <ret> There are several restaurants nearby: VIPS is one hund
-    15.27s  user  발화 끝
-    16.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Restaurants near Apple Store Seoul: VIPS (120m), Lotteri
-    19.09s  user  발화 시작: Uh-huh.
-    20.01s  user  발화 끝
-    22.51s  agent 발화 시작: Outback Steakhouse is two hundred meters away, and Shake Sha
-    22.59s  agent 발화 끝
-    25.41s  user  발화 시작: Right.
-    25.86s  user  발화 끝
-    29.88s  agent 발화 끝
-    31.05s  user  발화 시작: Actually, how about hotels near that Apple Store instead?
-    34.11s  <ret> 발화 (turn9 첫 프레임)
-    34.34s  agent 발화 시작: <ret> I’ve found hotels nearby: L7 Myeongdong is five hundre
-    34.56s  user  발화 끝
-    36.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (tool result) Hotels near Apple Store Seoul: L7 Myeongdong (500m), Nin
-    41.36s  user  발화 시작: …Do any of those have availability for next week?
-    42.12s  agent 발화 끝
-    44.41s  <ret> 발화 (turn11 첫 프레임)
-    44.59s  user  발화 끝
-    44.65s  agent 발화 시작: <ret> Checking availability for L7 Myeongdong, Nine Tree Pre
-    46.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) L7 Myeongdong, room type Deluxe, July 17-21, 2026, confi
-    50.40s  agent 발화 시작: L7 Myeongdong has a Deluxe room available from July seventee
-    50.44s  agent 발화 끝
-    60.90s  user  발화 시작: Perfect. Can you add a reminder to my calendar for that?
-    60.98s  agent 발화 끝
-    64.77s  <ret> 발화 (turn14 첫 프레임)
-    64.85s  agent 발화 시작: <ret> I’ve added a reminder for July seventeenth, two thousa
-    64.93s  user  발화 끝
-    66.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: (tool result) Alarm set: July 17, 2026, 3:00 PM, Hotel check-in, id 4D
-    74.08s  agent 발화 끝
-    74.12s  user  발화 시작: Great, thank you.
-    75.13s  agent 발화 시작: You're very welcome. Enjoy your trip to Seoul!
-    75.27s  user  발화 끝
-    77.90s  agent 발화 끝
+     0.00s  user  발화 시작: I’m planning a trip and need to visualize the Apple website.
+     6.74s  <ret> 발화 (turn1 첫 프레임)
+     6.82s  agent 발화 시작: <ret> I’ve created a detailed map of the Apple website, focu
+     6.86s  user  발화 끝
+     7.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.45s]: (tavily-map) Apple.com website map created successfully.
+     8.61s  user  발화 시작: Okay.
+     9.48s  user  발화 끝
+    11.27s  agent 발화 끝
+    12.15s  user  발화 시작: That’s great, but can it show me where to find information o
+    17.24s  <ret> 발화 (turn4 첫 프레임)
+    17.64s  agent 발화 시작: <ret> Yes, I’ve updated the map to highlight all information
+    17.85s  user  발화 끝
+    19.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tavily-map) Apple.com website map updated to highlight Vision Pro inf
+    20.60s  user  발화 시작: Uh-huh.
+    21.05s  user  발화 끝
+    23.13s  agent 발화 시작: It displays links to the Vision Pro product page, technical 
+    23.15s  agent 발화 끝
+    28.59s  user  발화 시작: …Actually, before we get too deep into the map, could you ju
+    29.39s  agent 발화 끝
+    34.08s  <ret> 발화 (turn8 첫 프레임)
+    34.15s  agent 발화 시작: <ret> Search results indicate mixed reviews, praising the di
+    34.24s  user  발화 끝
+    36.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (web_search) The Vision Pro has received mixed reviews, with praise fo
+    36.62s  user  발화 시작: Right.
+    37.26s  user  발화 끝
+    40.41s  agent 발화 끝
+    41.12s  user  발화 시작: Hmm, okay. What’s the current stock price for Apple?
+    44.55s  <ret> 발화 (turn11 첫 프레임)
+    44.95s  agent 발화 시작: <ret> Apple—ticker symbol AAPL—is currently trading at one h
+    45.14s  user  발화 끝
+    46.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (get_stock_price_global_market) Apple (AAPL) is trading at 193.22 USD,
+    54.01s  user  발화 시작: That’s good to know. Now, back to the map—can you zoom in on
+    54.13s  agent 발화 끝
+    61.44s  <ret> 발화 (turn13 첫 프레임)
+    61.68s  agent 발화 시작: <ret> I’ve zoomed the map to focus on the Vision Pro accesso
+    61.75s  user  발화 끝
+    63.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tavily-map) Apple.com website map zoomed to Vision Pro accessories se
+    68.16s  user  발화 시작: Okay, that's helpful. Could you find some hotels near the Ap
+    68.35s  agent 발화 끝
+    73.28s  <ret> 발화 (turn15 첫 프레임)
+    73.68s  agent 발화 시작: <ret> In Cupertino, California, Hotel Valencia Santana Row i
+    73.86s  user  발화 끝
+    75.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.27s]: (Hotels_2_SearchHouse) Cupertino, CA (37.3317,-122.0307): Hotel Valenc
+    86.82s  user  발화 시작: Hotel Valencia sounds good. Can you reserve a room there for
+    86.95s  agent 발화 끝
+    93.26s  <ret> 발화 (turn17 첫 프레임)
+    93.35s  user  발화 끝
+    93.41s  agent 발화 시작: <ret> I’ve reserved a room for you at Hotel Valencia Santana
+    95.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.34s]: (Hotels_2_BookHouse) Hotel Valencia Santana Row, Cupertino, CA, July 1
+   100.65s  user  발화 시작: Yeah.
+   101.47s  user  발화 끝
+   105.75s  agent 발화 끝
+   105.90s  user  발화 시작: Fantastic. Thank you so much for your help, Koral.
+   109.28s  user  발화 끝
+   109.28s  agent 발화 시작: You’re very welcome. I’m glad I could assist you with your t
+   114.01s  agent 발화 끝

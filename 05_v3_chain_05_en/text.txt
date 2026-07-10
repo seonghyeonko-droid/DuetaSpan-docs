@@ -77,54 +77,64 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's the price range at Zuni ⟨ret@1.84s⟩ Cafe?
-[  2.07s][moshi] Zuni ⟦⚡SPAN@3.04s: (tool result) Zuni Café, 1658 Market St, San Francisco, CA 94102, USA; price range: $$ (moderate)⟧ Café has a moderate price range, indicated by two dollar signs.
-      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ3Vv-B-WjwoARc9J4-b2-y2Q"}}
-[  4.38s][user ] «backchannel» Okay.
-[  7.19s][user ] And are they open right ⟨ret@8.46s⟩ now?
-[  8.70s][moshi] ⟦⚡SPAN@8.96s: (tool result) Zuni Café, 1658 Market St, San Francisco, CA 94102, USA; current status: open, hours: 5:00 PM–10⟧ Yes, Zuni Café is currently open until ten PM.
-      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ3Vv-B-WjwoARc9J4-b2-y2Q"}}
-[ 12.64s][user ] That’s good. Uhhh, what about parking around there?
-[ 15.79s][moshi] Parking can be difficult in that area, as it's quite busy.
-[ 17.95s][user ] «backchannel» Yeah.
-[ 19.25s][moshi] ⟨ret@19.03s⟩ There are several ⟦⚡SPAN@21.03s: (tool result) SP Plus Parking - Civic Center Garage, 1355 Market St, San Francisco, CA 94103 (0.3 km); Union S⟧ parking garages nearby. Let me check for options.
-      CALL: {"function": "maps_search_places", "arguments": {"query": "parking garage near Zuni Cafe", "location": "37.7753,-122.4183"}}
-[ 23.87s][moshi] The Civic Center Garage is three hundred meters away. Union Square Garage is eight hundred meters.
-[ 26.60s][user ] «backchannel» Yeah.
-[ 31.47s][user ] What are the rates at Civic ⟨ret@33.04s⟩ Center?
-[ 33.35s][moshi] The ⟦⚡SPAN@34.08s: (tool result) SP Plus Parking - Civic Center Garage, 1355 Market St, San Francisco, CA 94103; hourly rate: $30⟧ hourly rate at Civic Center Garage is thirty dollars.
-      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJx4b2XlWjwoAR9e9J1G0uV7Q"}}
-[ 35.69s][user ] «backchannel» Yeah.
-[ 37.02s][user ] That’s… expensive. Is there anything cheaper?
-[ 41.17s][moshi] «interrupted» I can search for more affordable options if you’d like—
-[ 43.69s][user ] «interrupts_prev» …Actually, could we look at restaurants with outdoor seating instead? Somewhere a little less crowded?
-[ 49.49s][moshi] I can help you find restaurants with outdoor seating. Do you have a cuisine preference?
-[ 52.62s][user ] «backchannel» Yeah.
-[ 54.78s][user ] Italian would be nice.
-[ 56.40s][moshi] ⟨ret@56.25s⟩ Sotto Mare is ⟦⚡SPAN@58.25s: (tool result) Sotto Mare Oysteria & Seafood, 552 Green St, San Francisco, CA 94133 (0.8 km); Tony's Pizza Napo⟧ eight hundred meters away. Tony's Pizza is one kilometer.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "outdoor_seating": "true", "location": "San Francisco"}}
-[ 62.17s][user ] What’s the vibe at Sotto Mare?
-[ 64.12s][moshi] ⟨ret@63.97s⟩ Sotto Mare has a ⟦⚡SPAN@65.97s: (tool result) Sotto Mare Oysteria & Seafood, 552 Green St, San Francisco, CA 94133; rating: 4.4 stars (from 2,⟧ lively, casual atmosphere, with a four point four star rating from over two thousand reviews.
-      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJp4rT9wWjwoARpS8Jt6K0l94"}}
-[ 71.30s][user ] Sounds good. Can you make a reservation there for two, around seven ⟨ret@75.28s⟩ thirty?
-[ 75.68s][moshi] I've reserved a ⟦⚡SPAN@77.04s: (tool result) Sotto Mare Oysteria & Seafood, 552 Green St, San Francisco, CA 94133; reservation confirmed for ⟧ table for two at Sotto Mare at seven thirty PM. Your confirmation ID is eight seven jklm four five.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Sotto Mare Oysteria & Seafood", "date": "2026-07-10", "time": "19:30", "party_size": "2"}}
-[ 84.42s][user ] Perfect.
-[ 85.44s][moshi] I’m glad I could help with that.
-[ 87.55s][user ] What’s the weather looking like tonight?
-[ 89.60s][moshi] ⟨ret@89.45s⟩ The weather in San ⟦⚡SPAN@91.45s: (tool result) 18.5°C, humidity 68%, wind 8.2 km/h, clear skies⟧ Francisco tonight is eighteen point five degrees Celsius, clear skies, with a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco"}}
-[ 93.54s][user ] «backchannel» Yeah.
-[ 97.45s][user ] [happy] That’s lovely.
-[ 98.89s][moshi] It certainly is. A pleasant evening for dining outdoors.
-[100.94s][user ] «backchannel» Right.
-[103.41s][user ] Do you think I should take a jacket?
-[105.22s][moshi] With a temperature of eighteen point five degrees, a light jacket might be a good idea.
-[111.18s][user ] Okay, good call.
-[112.76s][moshi] I’m happy to offer that suggestion.
-[114.87s][user ] Is there anything else I should know about ⟨ret@116.72s⟩ that area?
-[116.95s][moshi] City Lights Bookstore ⟦⚡SPAN@118.72s: (tool result) City Lights Bookstore (0.4 km); Washington Square Park (0.6 km); Coit Tower (1.2 km)⟧ is four hundred meters away. Washington Square Park is six hundred.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "North Beach, San Francisco"}}
-[118.75s][user ] «backchannel» Right.
-[122.93s][user ] Sounds nice. Thank you, Dar.
-[124.99s][moshi] You're very welcome. Enjoy your trip.
+[  0.00s][user ] What's the price range at Zuni ⟨ret@2.05s⟩ Cafe?
+[  2.28s][moshi] Zuni ⟦⚡SPAN@3.25s: (tool result) Zuni Cafe, 1658 Market Street, San Francisco, CA 94102 is in the $$$ (expensive) price range.⟧ Cafe is considered an expensive restaurant. It's around thirty to sixty dollars per person.
+[  5.22s][user ] «backchannel» Okay.
+[  8.72s][user ] Okay, and what's the weather like there right ⟨ret@10.92s⟩ now?
+[ 11.16s][moshi] ⟦⚡SPAN@11.42s: (tool result) 18.9°C, humidity 62%, wind 8.0 km/h⟧ It’s currently eighteen point nine degrees Celsius with sixty-two percent humidity and an eight kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Zuni Cafe, 1658 Market Street, San Francisco, CA 94102"}}
+[ 19.27s][user ] That sounds nice.
+[ 20.43s][moshi] San Francisco often has a pleasant microclimate. It's a wonderful city for a stroll.
+[ 22.89s][user ] «backchannel» Yeah.
+[ 26.39s][user ] Are there any good bookstores ⟨ret@28.00s⟩ nearby?
+[ 28.23s][moshi] City Lights Bookstore ⟦⚡SPAN@30.00s: (tool result) City Lights Bookstore (459 meters), Green Apple Books (1.2 km), Book Passage (8.5 km)⟧ is four hundred fifty-nine meters away, Green Apple Books is one point two kilometers, and Book Passage is eight point five kilometers.
+      CALL: {"function": "maps_search_places", "arguments": {"query": "bookstores", "location": "Zuni Cafe, 1658 Market Street, San Francisco, CA 94102"}}
+[ 35.15s][user ] «backchannel» Yeah.
+[ 39.11s][user ] City Lights sounds closest. What are their hours ⟨ret@42.75s⟩ today?
+[ 42.98s][moshi] City Lights Bookstore ⟦⚡SPAN@44.75s: (tool result) City Lights Bookstore, 261 Columbus Ave, San Francisco, CA 94133 is open until 7:00 PM.⟧ at two sixty-one Columbus Avenue is open until seven PM tonight.
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJN0H2h_G6j4AR7yG_M4W1n_w"}}
+[ 46.39s][user ] «backchannel» Yeah.
+[ 49.32s][user ] Perfect. I think I’ll head there after dinner.
+[ 51.80s][moshi] That sounds like a lovely plan. A good book is always a nice way to unwind.
+[ 57.13s][user ] Actually, before I go, could you find me a ⟨ret@60.12s⟩ jazz club?
+[ 60.48s][moshi] Grant & Green ⟦⚡SPAN@62.12s: (tool result) Grant & Green (875 meters), Black Cat (1.1 km), Yoshi's (5.3 km)⟧ is eight hundred seventy-five meters away, Black Cat is one point one kilometers, and Yoshi's is five point three kilometers.
+      CALL: {"function": "maps_search_places", "arguments": {"query": "jazz club", "location": "Zuni Cafe, 1658 Market Street, San Francisco, CA 94102"}}
+[ 70.52s][user ] Hmm, Yoshi's is the furthest. What kind of music is playing there tonight?
+[ 75.26s][moshi] ⟨ret@75.10s⟩ Yoshi’s has the Maria ⟦⚡SPAN@77.10s: (tool result) Yoshi's, 510 Embarcadero West, Oakland, CA 94606 has a performance by the Maria Schneider Orches⟧ Schneider Orchestra performing at eight PM tonight.
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJXyWl_kH6j4ARmB-L_wK9q4Q"}}
+[ 79.74s][user ] That sounds interesting—
+[ 81.29s][user ] …is it a formal ⟨ret@82.45s⟩ place?
+[ 82.61s][moshi] Yoshi's dress code is smart ⟦⚡SPAN@84.45s: (tool result) Yoshi's, 510 Embarcadero West, Oakland, CA 94606 has a dress code of smart casual.⟧ casual, so you don’t need to worry about being overly formal.
+[ 85.89s][user ] «backchannel» Yeah.
+[ 87.77s][moshi] Many people enjoy dressing up a little, but it’s not strictly enforced. It’s about feeling comfortable.
+[ 94.97s][user ] Okay. Could you check if I need a reservation ⟨ret@97.58s⟩ for Yoshi's?
+[ 97.98s][moshi] Yoshi's ⟦⚡SPAN@99.02s: (tool result) Yoshi's, 510 Embarcadero West, Oakland, CA 94606 recommends reservations.⟧ recommends making a reservation, especially for popular shows like tonight's.
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJXyWl_kH6j4ARmB-L_wK9q4Q"}}
+[100.82s][user ] «backchannel» Yeah.
+[103.40s][user ] Can you try to book a table for one at ⟨ret@105.91s⟩ eight then?
+[106.07s][moshi] I’ve booked a ⟦⚡SPAN@107.91s: (tool result) Appointment booked at Yoshi's, 510 Embarcadero West, Oakland, CA 94606 for 1 person at 8:00 PM, ⟧ table for one at Yoshi’s for eight PM; your confirmation ID is YSH82947.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Yoshi's", "time": "8:00 PM", "party_size": "1"}}
+[111.95s][user ] «backchannel» Yeah.
+[114.43s][user ] Wonderful! Thank you so much.
+[116.51s][moshi] You’re very welcome. I’m glad I could help with your evening plans.
+[120.64s][user ] Now, I need to set an alarm for seven thirty ⟨ret@123.68s⟩ tomorrow morning.
+[124.08s][moshi] An alarm is ⟦⚡SPAN@125.52s: (tool result) Alarm set for 7:30 AM.⟧ set for seven thirty AM tomorrow.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "7:30 AM"}}
+[125.10s][user ] «backchannel» Right.
+[127.24s][user ] Perfect. And can you remind me to pack my ⟨ret@130.03s⟩ book?
+[130.26s][moshi] I’ve added a reminder ⟦⚡SPAN@132.03s: (tool result) Alarm set for 7:45 AM with label "Pack book".⟧ to pack your book for seven forty-five AM tomorrow.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "7:45 AM", "label": "Pack book"}}
+[135.41s][user ] Excellent. What time does the first train leave for the ⟨ret@138.53s⟩ airport?
+[138.77s][moshi] A train departs ⟦⚡SPAN@140.53s: (tool result) Train departs from Millbrae Station at 8:15 AM, arriving at SFO at 8:45 AM.⟧ from Millbrae Station at eight fifteen AM, arriving at SFO at eight forty-five AM.
+      CALL: {"function": "Trains_1_FindTrains", "arguments": {"destination": "San Francisco International Airport", "departure_time": "8:00 AM"}}
+[146.35s][user ] Okay, that's doable.
+[148.06s][moshi] Planning ahead makes travel so much smoother. It helps minimize stress.
+[151.69s][user ] «backchannel» Right.
+[153.61s][user ] Is there traffic on the way to Millbrae station ⟨ret@156.08s⟩ right now?
+[156.48s][moshi] There’s moderate congestion, ⟦⚡SPAN@158.08s: (tool result) Current traffic conditions show moderate congestion, estimated travel time is 45 minutes.⟧ and the estimated travel time to Millbrae Station is forty-five minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Zuni Cafe, 1658 Market Street, San Francisco, CA 94102", "destination": "Millbrae Station"}}
+[163.97s][user ] Forty-five minutes… I should probably leave soon then.
+[167.50s][moshi] That’s a wise decision. Allowing extra time is always a good idea.
+[170.17s][user ] «backchannel» Mm-hmm.
+[172.78s][user ] Thanks again for all your help, Dar.
+[174.77s][moshi] You’re most welcome. I’m happy to have assisted you. Enjoy your trip.

@@ -68,51 +68,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to plan a trip to Busan | S2 Hmm, the Park Hyatt sounds nice. W | S3 Flights, ideally. From Seoul. | S4 Excellent. That’s everything for n
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling a bit overwhelmed with | S2 Yes, please. Directions to Olympic | S3 …to book a massage for this evenin | S4 Perfect. Thank you so much.
 
-     0.00s  user  발화 시작: I’m trying to plan a trip to Busan next month.
-     2.73s  agent 발화 시작: Busan is a wonderful choice. Perhaps we could start by looki
-     2.91s  user  발화 끝
-     5.21s  user  발화 시작: Uh-huh.
-     5.71s  user  발화 끝
-     8.00s  agent 발화 끝
-     9.27s  user  발화 시작: Yeah, that’d be great. Something near Haeundae Beach.
-    12.28s  <ret> 발화 (turn4 첫 프레임)
-    12.51s  user  발화 끝
-    12.52s  agent 발화 시작: <ret> I found three hotels near Haeundae Beach: Paradise, Pa
-    14.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) Paradise Hotel Busan, 189 Haeundaehaebyeon-ro, Haeundae-
-    15.75s  user  발화 시작: Yeah.
-    16.20s  user  발화 끝
-    18.64s  user  발화 시작: Hmm, the Park Hyatt sounds nice. What’s the price like?
-    18.68s  agent 발화 끝
-    21.99s  <ret> 발화 (turn7 첫 프레임)
-    22.22s  agent 발화 시작: <ret> A room at the Park Hyatt Busan from July twelfth to fi
-    22.48s  user  발화 끝
-    23.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: (tool result) Park Hyatt Busan, reservation for one room, July 12-15, 
-    28.85s  user  발화 시작: Yeah.
-    29.30s  user  발화 끝
-    32.02s  user  발화 시작: That sounds good. I also need to figure out transportation.
-    32.04s  agent 발화 끝
-    36.28s  agent 발화 시작: Are you interested in flights, trains, or buses to Busan?
-    36.28s  user  발화 끝
-    37.66s  user  발화 시작: Yeah.
-    38.15s  user  발화 끝
-    39.91s  user  발화 시작: Flights, ideally. From Seoul.
-    40.03s  agent 발화 끝
-    42.63s  user  발화 끝
-    42.75s  <ret> 발화 (turn13 첫 프레임)
-    42.83s  agent 발화 시작: <ret> Korean Air flight 801 departs Seoul at nine AM on July
-    44.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.85s]: (tool result) Korean Air 801, departs July 12, 2026, 9:00 AM KST, arri
-    50.12s  user  발화 시작: Yeah.
-    50.61s  user  발화 끝
-    53.68s  agent 발화 끝
-    53.78s  user  발화 시작: Okay, let's book that flight.
-    55.71s  <ret> 발화 (turn16 첫 프레임)
-    55.76s  user  발화 끝
-    55.79s  agent 발화 시작: <ret> I’ve booked a roundtrip flight on Korean Air, flight 8
-    57.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.79s]: (tool result) Korean Air 801, departs July 12, 2026, 9:00 AM KST, arri
-    65.58s  agent 발화 끝
-    65.59s  user  발화 시작: Excellent. That’s everything for now, I think.
-    68.26s  user  발화 끝
-    68.31s  agent 발화 시작: Wonderful. I trust you’ll have a very pleasant trip to Busan
-    72.28s  agent 발화 끝
+     0.00s  user  발화 시작: I'm feeling a bit overwhelmed with everything I need to do t
+     3.25s  agent 발화 시작: It's perfectly normal to feel that way when facing a full sc
+     3.38s  user  발화 끝
+    11.68s  agent 발화 끝
+    13.06s  user  발화 시작: That sounds good, actually. I need to check the weather firs
+    16.75s  <ret> 발화 (turn3 첫 프레임)
+    16.99s  agent 발화 시작: <ret> The current weather is twenty-three point zero degrees
+    17.08s  user  발화 끝
+    17.16s  ⚡SPAN 주입 [d'=0.41s / d_lead=0.41s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    22.37s  user  발화 시작: Right.
+    22.86s  user  발화 끝
+    29.74s  agent 발화 끝
+    29.80s  user  발화 시작: Okay, good to know. Thanks.
+    32.20s  user  발화 끝
+    32.32s  agent 발화 시작: You’re very welcome. Is there anything specific you’re hopin
+    37.88s  agent 발화 끝
+    38.84s  user  발화 시작: I was thinking of going for a run in the park. Do you know w
+    43.46s  <ret> 발화 (turn8 첫 프레임)
+    43.78s  agent 발화 시작: <ret> The nearest park is Olympic Park, one thousand and fif
+    43.84s  user  발화 끝
+    45.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.21s]: (tool result) Seoul (37.5665, 126.9780): Olympic Park (1,050m), Childr
+    49.89s  user  발화 시작: Yeah.
+    50.39s  user  발화 끝
+    58.81s  user  발화 시작: Yes, please. Directions to Olympic Park.
+    59.00s  agent 발화 끝
+    61.89s  <ret> 발화 (turn11 첫 프레임)
+    62.28s  agent 발화 시작: <ret> Driving will take fifteen minutes and cover eight poin
+    62.39s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.75s]: (tool result) Driving: 15 minutes, 8.2 km; Transit: 30 minutes, 6.1 km
+    62.42s  user  발화 끝
+    77.21s  user  발화 시작: Transit sounds good. Start navigation.
+    77.24s  agent 발화 끝
+    80.13s  <ret> 발화 (turn13 첫 프레임)
+    80.21s  agent 발화 시작: <ret> Excellent choice. Transit navigation to Olympic Park h
+    80.39s  user  발화 끝
+    80.69s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.85s]: (tool result) Transit route started: Olympic Park, estimated arrival 9
+    84.35s  user  발화 시작: Yeah.
+    84.84s  user  발화 끝
+    90.83s  agent 발화 끝
+    91.75s  user  발화 시작: That's great. Um… I also need…
+    95.31s  user  발화 끝
+    97.02s  user  발화 시작: …to book a massage for this evening.
+    99.09s  user  발화 끝
+    99.10s  agent 발화 시작: A massage sounds lovely. Do you have a preferred location or
+   100.65s  user  발화 시작: Right.
+   101.29s  user  발화 끝
+   104.42s  agent 발화 끝
+   105.67s  user  발화 시작: Not really. Just somewhere nearby with availability after si
+   110.41s  <ret> 발화 (turn20 첫 프레임)
+   110.48s  agent 발화 시작: <ret> Spa Eden has openings at six thirty, seven, and seven 
+   110.52s  user  발화 끝
+   112.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.80s]: (tool result) Spa Eden, 6:30 PM, 7:00 PM, 7:30 PM; Serenity Spa, 6:15 
+   125.28s  agent 발화 끝
+   126.02s  user  발화 시작: Spa Eden at seven PM, please.
+   128.83s  <ret> 발화 (turn22 첫 프레임)
+   129.23s  agent 발화 시작: <ret> Your massage at Spa Eden is confirmed for seven PM. Yo
+   129.28s  ⚡SPAN 주입 [d'=0.45s / d_lead=0.45s]: (tool result) Spa Eden, 7:00 PM, confirmed, booking ID: QX92BZ
+   129.40s  user  발화 끝
+   139.48s  agent 발화 끝
+   139.66s  user  발화 시작: Perfect. Thank you so much.
+   142.03s  agent 발화 시작: You’re very welcome. It’s good to see you’re taking time for
+   142.16s  user  발화 끝
+   143.53s  user  발화 시작: Yeah.
+   143.97s  user  발화 끝
+   146.15s  agent 발화 끝
+   146.61s  user  발화 시작: I feel a lot better having that sorted.
+   148.98s  agent 발화 시작: That's wonderful to hear. Remember, a little planning can ma
+   149.19s  user  발화 끝
+   153.77s  user  발화 시작: Yeah.
+   154.21s  user  발화 끝
+   155.37s  agent 발화 끝
+   155.60s  user  발화 시작: I think you're right. I appreciate your help, Driaus.
+   158.50s  agent 발화 시작: It was my pleasure to assist you. Enjoy your run and your ma
+   158.75s  user  발화 끝
+   163.23s  agent 발화 끝

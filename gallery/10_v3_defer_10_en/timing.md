@@ -63,27 +63,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find pictures from my Fr | S2 …but not the small thumbnail versi | S3 Oh, great! Could you show me the m | S4 Perfect, thank you.
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Could you open IMG_1234 for me? | S3 What time is it right now? | S4 That's great, thank you.
 
-     0.00s  user  발화 시작: I need to find pictures from my France trip last year…
-     3.04s  user  발화 끝
-     4.41s  user  발화 시작: …but not the small thumbnail versions.
-     6.29s  <ret> 발화 (turn2 첫 프레임)
-     6.37s  agent 발화 시작: <ret> I found two hundred thirty-four photos from your Franc
-     6.53s  user  발화 끝
-     8.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) /pictures/France_2025/vacation photos (234 files found)
-    10.19s  user  발화 시작: Mhm.
-    10.69s  user  발화 끝
-    12.62s  agent 발화 끝
-    13.54s  user  발화 시작: Oh, great! Could you show me the most recent one?
-    16.11s  <ret> 발화 (turn5 첫 프레임)
-    16.26s  agent 발화 시작: <ret> The most recent photo is beach_sunset_20250715.jpg fro
-    16.45s  user  발화 끝
-    17.23s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.69s]: (tool result) /pictures/France_2025/vacation photos/beach sunset_20250
-    19.46s  user  발화 시작: Really?
-    20.10s  user  발화 끝
-    25.95s  agent 발화 끝
-    28.04s  user  발화 시작: Perfect, thank you.
-    28.99s  agent 발화 시작: You're very welcome! It's wonderful to help you rediscover t
-    29.04s  user  발화 끝
-    33.20s  agent 발화 끝
+     0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
+     4.43s  <ret> 발화 (turn1 첫 프레임)
+     4.51s  agent 발화 시작: <ret> I found three pictures from your France holiday in two
+     4.54s  user  발화 끝
+     6.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.92s]: (tool result) /Users/sunan/Pictures/France Holiday_2025/IMG_1234.jpg, 
+     9.64s  user  발화 시작: Uh-huh.
+    10.08s  user  발화 끝
+    16.33s  user  발화 시작: Could you open IMG_1234 for me?
+    16.43s  agent 발화 끝
+    19.14s  <ret> 발화 (turn4 첫 프레임)
+    19.30s  agent 발화 시작: <ret> I’ve opened IMG_1234 for you. It looks like a lovely s
+    19.47s  user  발화 끝
+    20.18s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.86s]: (tool result) File opened successfully.
+    21.33s  user  발화 시작: Yeah.
+    21.64s  user  발화 끝
+    24.16s  agent 발화 끝
+    24.88s  user  발화 시작: What time is it right now?
+    26.48s  <ret> 발화 (turn7 첫 프레임)
+    26.64s  agent 발화 시작: <ret> It is currently three seventeen PM in Seoul, on Friday
+    26.86s  user  발화 끝
+    28.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+    33.27s  agent 발화 끝
+    33.51s  user  발화 시작: That's great, thank you.
+    34.51s  user  발화 끝
+    34.80s  agent 발화 시작: You’re very welcome. I’m glad I could help. Enjoy looking th
+    38.96s  agent 발화 끝

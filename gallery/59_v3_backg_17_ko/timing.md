@@ -68,23 +68,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 건강한 사람의 평균 심박수는 어떻게 되나요? | S2 [sigh] 아, 오늘따라 손님이 너무 없네… | S3 운동은 거의 안 해요. | S4 그렇군요. 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 혹시 건강한 사람의 평균 심박수는 어떻게 되나요? | S2 아, 그렇군요. 그럼 운동할 때 심박수는 얼마나 되어야 하는  | S3 아유, 오늘 날씨 진짜 덥네. | S4 주로 조깅을 해요.
 
-     0.00s  user  발화 시작: 건강한 사람의 평균 심박수는 어떻게 되나요?
-     2.59s  <ret> 발화 (turn1 첫 프레임)
-     2.75s  agent 발화 시작: <ret> 건강한 성인의 정상적인 안정 시 심박수는 분당 육십 회에서 백 회 사이입니다. 혹시 운동을 자주 
-     2.91s  user  발화 끝
-     3.09s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.57s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
-    11.32s  agent 발화 끝
-    12.75s  user  발화 시작: [sigh] 아, 오늘따라 손님이 너무 없네…
-    15.25s  user  발화 끝
-    16.42s  user  발화 시작: 운동은 거의 안 해요.
-    17.33s  <ret> 발화 (turn4 첫 프레임)
-    17.56s  agent 발화 시작: <ret> 건강한 사람의 평균 심박수는 분당 오십 회에서 구십 회 정도라고 합니다. 규칙적인 운동을 하면 심
-    17.66s  user  발화 끝
-    19.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.17s]: The average heart rate for a healthy person is between 50 and 90 bpm.
-    26.73s  user  발화 시작: 그렇군요. 감사합니다.
-    26.73s  agent 발화 끝
-    27.99s  agent 발화 시작: 도움이 되었다니 다행입니다.
-    28.15s  user  발화 끝
-    30.02s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 혹시 건강한 사람의 평균 심박수는 어떻게 되나요?
+     3.57s  <ret> 발화 (turn1 첫 프레임)
+     3.72s  agent 발화 시작: <ret> 건강한 성인의 정상적인 안정 시 심박수는 분당 육십회에서 백회 사이입니다.
+     3.92s  user  발화 끝
+     4.07s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.30s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
+    10.02s  agent 발화 끝
+    11.46s  user  발화 시작: 아, 그렇군요. 그럼 운동할 때 심박수는 얼마나 되어야 하는 걸까요?
+    15.95s  agent 발화 시작: 운동 강도에 따라 달라지는데요, 어떤 운동을 주로 하시나요?
+    16.13s  user  발화 끝
+    17.86s  user  발화 시작: 예.
+    18.21s  user  발화 끝
+    19.69s  user  발화 시작: 아유, 오늘 날씨 진짜 덥네.
+    19.93s  agent 발화 끝
+    21.55s  agent 발화 시작: 운동 종류를 알려주시면 좀 더 정확한 정보를 드릴 수 있어요.
+    21.67s  user  발화 끝
+    25.26s  agent 발화 끝
+    25.76s  user  발화 시작: 주로 조깅을 해요.
+    27.09s  <ret> 발화 (turn8 첫 프레임)
+    27.49s  agent 발화 시작: <ret> 조깅을 하실 때는 최대 심박수의 오십%에서 칠십% 정도가 적절합니다.
+    27.64s  user  발화 끝
+    29.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: The target heart rate during moderate-intensity exercise is 50-70% of 
+    33.28s  agent 발화 끝

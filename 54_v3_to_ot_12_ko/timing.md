@@ -62,20 +62,22 @@
 
 
      0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
-     3.27s  <ret> 발화 (turn1 첫 프레임)
-     3.59s  agent 발화 시작: <ret> 마이클 잭슨의 '비트 잇' 기타 솔로는 에디 반 헤일런이 연주했답니다. 기타 연주 스타일이 정말 
-     3.70s  user  발화 끝
-     5.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: Eddie Van Halen wrote the guitar solo for Michael Jackson's "Beat It".
-     8.42s  user  발화 시작: 맞아요.
-     9.23s  user  발화 끝
-    10.03s  agent 발화 끝
-    11.16s  user  발화 시작: 어휴, 잠깐만요.
-    12.70s  user  발화 시작: 아, 죄송해요. 그, 에디 반 헤일런은 다른 유명한 곡도 많이 했나요?
-    12.76s  user  발화 끝
-    17.50s  <ret> 발화 (turn5 첫 프레임)
-    17.58s  agent 발화 시작: <ret> 에디 반 헤일런은 이천칠년에 로큰롤 명예의 전당에 헌액되었어요. 정말 대단한 기타리스트셨죠.
-    17.61s  user  발화 끝
-    19.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: Eddie Van Halen was inducted into the Rock and Roll Hall of Fame in 20
-    22.03s  user  발화 시작: 네.
-    22.57s  user  발화 끝
-    23.60s  agent 발화 끝
+     2.83s  <ret> 발화 (turn1 첫 프레임)
+     3.15s  agent 발화 시작: <ret> 에디 반 헤일런이 마이클 잭슨의 '비트 잇' 기타 솔로를 연주했습니다. 정말 유명한 연주죠.
+     3.24s  user  발화 끝
+     4.27s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.19s]: Eddie Van Halen wrote the guitar solo for Michael Jackson's "Beat It".
+     7.03s  user  발화 시작: 맞아요.
+     7.53s  user  발화 끝
+     8.34s  agent 발화 끝
+     9.50s  user  발화 시작: 어머, 진짜? 나 그 기타리스트 이름 까먹었었네.
+    13.18s  user  발화 시작: 혹시 그분이 다른 유명한 곡도 많이 하셨나요?
+    13.24s  user  발화 끝
+    16.16s  <ret> 발화 (turn5 첫 프레임)
+    16.32s  agent 발화 시작: <ret> 네, 에디 반 헤일런은 밴드 반 헤일런의 리드 기타리스트이자 창립 멤버였습니다.
+    16.41s  user  발화 끝
+    18.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: Eddie Van Halen was the lead guitarist and founder of the band Van Hal
+    19.48s  user  발화 시작: 네.
+    19.98s  user  발화 끝
+    20.75s  agent 발화 시작: 반 헤일런은 천구백칠십이년에 결성되었고, 록 음악에 큰 영향을 주었습니다.
+    20.81s  agent 발화 끝
+    25.74s  agent 발화 끝

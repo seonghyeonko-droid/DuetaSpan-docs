@@ -58,29 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 …and then the dog just started bar | S3 So, fifty to ninety is a good gene | S4 That’s reassuring. Thanks, Eus.
+# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 Oh, that's higher than I thought. | S3 Did you see the game last night? W | S4 Well, what’s considered a low hear
 
      0.00s  user  발화 시작: What is the average heart rate of a healthy person?
-     2.10s  <ret> 발화 (turn1 첫 프레임)
-     2.49s  user  발화 끝
-     2.50s  agent 발화 시작: <ret> A healthy person’s heart typically beats between sixty
-     4.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
-     9.36s  agent 발화 끝
-     9.54s  user  발화 시작: That seems… high. Is there a lower range for athletes?
-    12.88s  <ret> 발화 (turn3 첫 프레임)
-    13.12s  agent 발화 시작: <ret> Actually, for athletes, a resting heart rate can go as
-    13.19s  user  발화 끝
-    14.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: Well-trained athletes may have a resting heart rate as low as 40 bpm.
-    20.53s  agent 발화 끝
-    21.19s  user  발화 시작: …and then the dog just started barking at the mailman!
-    23.96s  user  발화 끝
-    24.00s  user  발화 시작: So, fifty to ninety is a good general range then?
-    26.54s  <ret> 발화 (turn6 첫 프레임)
-    26.85s  agent 발화 시작: <ret> Yes, fifty to ninety beats per minute is a very health
-    27.05s  user  발화 끝
-    28.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: A normal resting heart rate generally falls between 60 and 100 bpm, th
-    34.18s  user  발화 시작: That’s reassuring. Thanks, Eus.
-    34.27s  agent 발화 끝
-    36.02s  agent 발화 시작: You’re very welcome. I’m glad I could put your mind at ease.
-    36.16s  user  발화 끝
-    39.53s  agent 발화 끝
+     2.24s  <ret> 발화 (turn1 첫 프레임)
+     2.54s  user  발화 끝
+     2.63s  agent 발화 시작: <ret> A healthy adult typically has a resting heart rate bet
+     4.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: A normal resting heart rate for adults ranges from sixty to one hundre
+     9.72s  agent 발화 끝
+     9.80s  user  발화 시작: Oh, that's higher than I thought.
+    11.41s  user  발화 끝
+    11.52s  agent 발화 시작: It can be surprising! Heart rate varies a lot depending on f
+    17.07s  agent 발화 끝
+    17.75s  user  발화 시작: Did you see the game last night? What a finish!
+    20.34s  user  발화 끝
+    20.40s  agent 발화 시작: So, are you curious about what might affect *your* heart rat
+    24.24s  user  발화 시작: Well, what’s considered a low heart rate then?
+    24.32s  agent 발화 끝
+    26.12s  <ret> 발화 (turn7 첫 프레임)
+    26.27s  agent 발화 시작: <ret> Generally, a heart rate below sixty beats per minute i
+    26.45s  user  발화 끝
+    28.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: A heart rate below sixty beats per minute is generally considered low 
+    34.01s  agent 발화 끝

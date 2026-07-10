@@ -59,19 +59,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Jamie, it’s lovely to connect with you. My name is Hun
-     2.09s  user  발화 시작: Mm-hmm.
-     2.63s  user  발화 끝
-     7.09s  agent 발화 끝
-     8.07s  user  발화 시작: Oh, Hunar… that’s a beautiful name. I’m just feeling a bit o
-    15.66s  user  발화 끝
-    16.02s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Jamie. M
-    20.96s  user  발화 시작: Mhm.
-    21.59s  user  발화 끝
-    25.27s  agent 발화 시작: Everything at once is a lot to hold, isn't it? Perhaps we co
-    25.42s  agent 발화 끝
-    34.45s  agent 발화 끝
-    34.61s  user  발화 시작: I suppose… just finding things. Like, good walks, quiet cafe
-    42.99s  agent 발화 시작: Feeling lost in a new place is so common, Jamie. It’s about 
-    43.14s  user  발화 끝
-    53.66s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Jamie, welcome. I’m Hunar, and I’m here to offer suppo
+     2.44s  user  발화 시작: Mm-hmm.
+     3.07s  user  발화 끝
+     8.25s  agent 발화 끝
+     9.12s  user  발화 시작: Hunar… that’s a beautiful name. I’m just feeling a bit overw
+    15.84s  user  발화 끝
+    16.26s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Jamie. What feel
+    21.02s  user  발화 시작: Mhm.
+    21.74s  user  발화 끝
+    24.82s  user  발화 시작: I guess… finding a good walking group. Something to help me 
+    25.21s  agent 발화 끝
+    31.54s  agent 발화 시작: That's a lovely goal, Jamie. Connecting with others through 
+    31.68s  user  발화 끝
+    42.54s  agent 발화 끝

@@ -76,29 +76,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering… where does the na | S2 Oh, that’s interesting. Was it a c | S3 And did they… did they ever leave  | S4 So that’s likely how it got to Sou
 
-     0.00s  user  발화 시작: I was wondering… where does the name du Plessis actually com
-     7.25s  <ret> 발화 (turn1 첫 프레임)
-     7.28s  user  발화 끝
-     7.31s  agent 발화 시작: <ret> The name du Plessis originates from France, specifical
-     8.45s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.01s]: Du Plessis is a French surname originally denoting someone from Plessi
-    14.89s  user  발화 시작: Mhm.
-    15.71s  user  발화 끝
-    17.31s  agent 발화 끝
-    17.43s  user  발화 시작: Oh, that’s interesting. Was it a common name in France then?
-    21.03s  <ret> 발화 (turn4 첫 프레임)
-    21.41s  agent 발화 시작: <ret> Yes, the Plessis family were actually nobles in France
-    21.51s  user  발화 끝
-    23.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: The Plessis family were nobles of French origin, becoming prominent in
-    30.27s  agent 발화 끝
-    30.52s  user  발화 시작: And did they… did they ever leave France, do you know?
-    33.71s  <ret> 발화 (turn6 첫 프레임)
-    33.78s  agent 발화 시작: <ret> It appears some people with the du Plessis name did le
-    33.90s  user  발화 끝
-    34.67s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.67s]: Huguenots bearing the name du Plessis emigrated to South Africa in the
-    42.27s  user  발화 시작: So that’s likely how it got to South Africa, then?
-    42.45s  agent 발화 끝
-    45.52s  agent 발화 시작: It seems quite probable, yes. Often, family names travel wit
-    45.69s  user  발화 끝
-    56.19s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering about the origin of the surname du Plessis. 
+     5.68s  <ret> 발화 (turn1 첫 프레임)
+     5.75s  agent 발화 시작: <ret> The name du Plessis originates from France, meaning “o
+     5.79s  user  발화 끝
+     6.88s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.34s]: Du Plessis is a French surname meaning “of the manor.”
+    11.93s  user  발화 시작: Mhm.
+    12.47s  user  발화 끝
+    14.05s  user  발화 시작: Oh, that's interesting! Is it still common in France today?
+    14.09s  agent 발화 끝
+    18.08s  <ret> 발화 (turn4 첫 프레임)
+    18.48s  agent 발화 시작: <ret> Yes, it is. Du Plessis is currently the eighty-seventh
+    18.54s  user  발화 끝
+    20.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: Du Plessis is the eighty-seventh most common surname in France.
+    24.74s  agent 발화 끝
+    25.07s  user  발화 시작: Welll… my grandmother was Afrikaans. Does it have a history 
+    29.88s  <ret> 발화 (turn6 첫 프레임)
+    30.26s  agent 발화 시작: <ret> It does, actually. The surname du Plessis is quite com
+    30.40s  user  발화 끝
+    31.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: The surname du Plessis is common among Afrikaans-speaking South Africa
+    39.02s  agent 발화 끝

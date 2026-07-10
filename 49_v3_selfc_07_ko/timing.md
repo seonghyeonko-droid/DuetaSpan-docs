@@ -76,49 +76,65 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘. | S2 칼국수 좋아하지. 근데… 그 이탈리아 식당, 평점 좀 알려줄  | S3 아, 맞아. 근데 혹시 지금 날씨 어때? | S4 알았어. 고마워.
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 좀 잡아줘. | S2 오, 잘 됐네. 혹시… 그날 날씨는 어때? | S3 저녁 아홉시로 예매해 줘. 두 명. | S4 …일곱시에 알람 맞춰줄 수 있어?
 
-     0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘.
-     3.62s  <ret> 발화 (turn1 첫 프레임)
-     3.70s  user  발화 끝
-     3.85s  agent 발화 시작: <ret> 그랜드뷰 로프트 방문 예약을 육월 십오일 오후 두시에 잡아드렸어요. 확인 번호는 GH789KL입니
-     5.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: (tool result) Visit scheduled for The Grandview Lofts on June 15th, 20
-    14.38s  agent 발화 끝
-    14.78s  user  발화 시작: 아니, 괜찮아. 근데 그 근처에 맛집 좀 알려줘.
-    17.63s  <ret> 발화 (turn3 첫 프레임)
-    17.94s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에 매콤한 칼국수집이 오백미터, 이탈리아 식당이 팔백미터, 카페 블룸이 천이백
-    18.01s  user  발화 끝
-    19.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) Seoul, (37.5665, 126.9780), The Spicy Noodle (500m), Ita
-    28.68s  user  발화 시작: 칼국수 좋아하지. 근데… 그 이탈리아 식당, 평점 좀 알려줄 수 있어?
-    28.70s  agent 발화 끝
-    33.87s  <ret> 발화 (turn5 첫 프레임)
-    34.02s  agent 발화 시작: <ret> 이탈리아 식당은 별점 사 점 오점에 리뷰가 백이십개, 가격대는 조금 높은 편이에요. 괜찮으시겠어요
-    34.19s  user  발화 끝
-    35.15s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.18s]: (tool result) Italian Place, 4.5 stars, 120 reviews, price range $$$.
-    41.20s  agent 발화 끝
-    41.40s  user  발화 시작: 응, 괜찮아. 근데… 잠깐만, 칼국수집 이름이 뭐였지?
-    45.48s  agent 발화 시작: 매콤한 칼국수집이었어요. 오백미터 거리에 있습니다. 기억이 잘 안 나시면 다시 한번 알려드릴게요.
-    45.61s  user  발화 끝
-    51.46s  agent 발화 끝
-    52.25s  user  발화 시작: 아, 맞아. 근데 혹시 지금 날씨 어때?
-    56.52s  <ret> 발화 (turn9 첫 프레임)
-    56.59s  agent 발화 시작: <ret> 지금 서울은 기온이 이십팔도, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터로 불고 있어요. 날
-    56.78s  user  발화 끝
-    58.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h.
-    62.34s  user  발화 시작: 어.
-    62.65s  user  발화 끝
-    65.16s  user  발화 시작: 흐음… 더위 조심해야겠다. 근데, 혹시 내일 모레 날씨도 알려줄 수 있어?
-    65.36s  agent 발화 끝
-    69.52s  <ret> 발화 (turn12 첫 프레임)
-    69.60s  agent 발화 시작: <ret> 내일 모레 서울은 기온이 삼십도, 습도는 칠십%, 바람은 시속 사 점 팔킬로미터로 불고 비가 올 
-    69.74s  user  발화 끝
-    70.96s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.01s]: (tool result) 30.0°C, humidity 70%, wind 4.8 km/h, chance of rain 20%.
-    79.61s  agent 발화 끝
-    81.52s  user  발화 시작: 알았어. 고마워.
-    82.94s  user  발화 끝
-    83.35s  agent 발화 시작: 도움이 되었다니 기쁘네요.
-    84.94s  user  발화 시작: 아니, 괜찮아.
-    85.14s  agent 발화 끝
-    85.76s  user  발화 끝
-    86.06s  agent 발화 시작: 그럼 즐거운 하루 보내세요.
-    87.99s  agent 발화 끝
+     0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약을 좀 잡아줘.
+     4.35s  user  발화 끝
+     4.39s  <ret> 발화 (turn1 첫 프레임)
+     4.62s  agent 발화 시작: <ret> 그랜드뷰 로프트 방문 예약을 육월 십오일 오후 두시에 잡아드렸어요. 확인 번호는 GH789KL입니
+     6.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) Home visit scheduled for The Grandview Lofts on June 15t
+    14.63s  agent 발화 끝
+    15.17s  user  발화 시작: 아니, 괜찮아. 근데 혹시 그 근처에 맛있는 식당도 알아봐 줄 수 있어?
+    19.22s  <ret> 발화 (turn3 첫 프레임)
+    19.53s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에 서울그릴이 삼백오십미터, 파스타 파라다이스가 오백미터, 스파이시 서울이 육
+    19.56s  user  발화 끝
+    21.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: (tool result) Nearby restaurants: Seoul Grill (350m), Pasta Paradise (
+    27.45s  user  발화 시작: 음… 파스타 파라다이스가 괜찮겠는데. 거기가 예약 가능한지 한번 확인해 줄래?
+    27.45s  agent 발화 끝
+    32.24s  <ret> 발화 (turn5 첫 프레임)
+    32.40s  agent 발화 시작: <ret> 파스타 파라다이스에 육월 십오일 저녁 일곱시에 두 명으로 예약이 완료됐습니다. 확인 번호는 RP2
+    32.44s  user  발화 끝
+    33.52s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.39s]: (tool result) Reservation confirmed at Pasta Paradise for two people o
+    40.79s  agent 발화 끝
+    40.99s  user  발화 시작: 오, 잘 됐네. 혹시… 그날 날씨는 어때?
+    43.85s  <ret> 발화 (turn7 첫 프레임)
+    43.92s  agent 발화 시작: <ret> 그랜드뷰 로프트 지역의 날씨는 섭씨 이십오 점 오도, 습도 육십팔퍼센트, 바람은 시속 삼 점 이킬
+    43.94s  user  발화 끝
+    45.21s  ⚡SPAN 주입 [d'=1.36s / d_lead=10.16s]: (tool result) 25.5°C, humidity 68%, wind 3.2 km/h, mostly sunny.
+    54.08s  agent 발화 끝
+    54.88s  user  발화 시작: 으음… 그럼 혹시… 그날 저녁에 영화 볼 만한 거 있어?
+    58.89s  <ret> 발화 (turn9 첫 프레임)
+    59.20s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에서 액션 플릭, 로맨틱 코미디, SF 어드벤처 영화를 상영하고 있어요.
+    59.23s  user  발화 끝
+    60.41s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.95s]: (tool result) Action Flick – Director X – 2026; Romantic Comedy – Dire
+    63.01s  user  발화 시작: 응응.
+    63.59s  user  발화 끝
+    65.99s  user  발화 시작: SF 어드벤처는 누가 감독이야?
+    66.15s  agent 발화 끝
+    67.82s  <ret> 발화 (turn12 첫 프레임)
+    68.06s  agent 발화 시작: <ret> SF 어드벤처 상영 시간은 저녁 여섯시 삼십분과 아홉시에 있습니다.
+    68.07s  user  발화 끝
+    69.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Sci-Fi Adventure showtimes: 6:30 PM, 9:00 PM.
+    72.41s  agent 발화 끝
+    74.34s  user  발화 시작: 저녁 아홉시로 예매해 줘. 두 명.
+    77.29s  user  발화 끝
+    77.46s  <ret> 발화 (turn14 첫 프레임)
+    77.62s  agent 발화 시작: <ret> SF 어드벤처 저녁 아홉시 상영 티켓 두 장을 예매했습니다. 확인 번호는 MT567PQ입니다.
+    79.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Two tickets purchased for Sci-Fi Adventure at 9:00 PM, c
+    83.80s  user  발화 시작: 와, 정말 고마워. 덕분에 오늘 계획이 다 세워졌네.
+    83.97s  agent 발화 끝
+    87.31s  user  발화 끝
+    87.47s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요.
+    90.06s  agent 발화 끝
+    90.10s  user  발화 시작: 아, 잠깐만. 혹시… 내일 아침…
+    93.75s  user  발화 끝
+    95.26s  user  발화 시작: …일곱시에 알람 맞춰줄 수 있어?
+    96.85s  <ret> 발화 (turn19 첫 프레임)
+    97.17s  agent 발화 시작: <ret> 내일 아침 일곱시에 알람을 설정해 드렸습니다. 편안한 밤 보내세요.
+    97.19s  user  발화 끝
+    98.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) Alarm set for 7:00 AM tomorrow.
+   101.47s  user  발화 시작: 응, 고마워. 그럼 이만.
+   101.89s  agent 발화 끝
+   103.04s  agent 발화 시작: 좋은 하루 보내세요.
+   103.07s  user  발화 끝
+   104.52s  agent 발화 끝

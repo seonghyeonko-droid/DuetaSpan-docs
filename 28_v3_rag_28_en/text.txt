@@ -64,10 +64,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading about government agencies, and I’m curious……
-[  5.21s][user ] …when was the Department of Veterans Affairs actually ⟨ret@8.30s⟩ created?
-[  8.61s][moshi] The ⟦⚡SPAN@9.42s: The United States Department of Veterans Affairs was established on July 21, 1930.⟧ Department of Veterans Affairs was established on July twenty-first, nineteen thirty. It's good to be informed about these things.
-[ 16.57s][user ] Nineteen thirty? That seems… late. Weren't there veterans needing support well before ⟨ret@21.51s⟩ then?
-[ 21.91s][moshi] Actually, yes. The ⟦⚡SPAN@23.51s: The first federal veterans’ hospital opened in 1866, offering care to Civil War veterans.⟧ first federal veterans’ hospital opened in eighteen sixty-six, to care for veterans of the Civil War. It evolved over time, of course.
-[ 31.88s][user ] So the hospital came first, and then the department much later? That’s a bit backwards, ⟨ret@36.29s⟩ isn’t it?
-[ 36.68s][moshi] You're right to ⟦⚡SPAN@38.29s: The Bureau of Pensions, established in 1861, initially handled veteran benefits.⟧ question that. The Bureau of Pensions was established in eighteen sixty-one, handling benefits before the department itself existed. It’s a process of building systems, really.
+[  0.00s][user ] I was reading about government departments…
+[  3.62s][user ] …and wondered—when was the Department of Veterans Affairs ⟨ret@6.49s⟩ created?
+[  6.81s][moshi] The Department ⟦⚡SPAN@7.85s: The Department of Veterans Affairs was established on March 3, 1930.⟧ of Veterans Affairs was established on March third, nineteen thirty. It's good to think about the history of support for those who’ve served.
+[ 15.69s][user ] Nineteen thirty? That seems… recent. Didn’t it start as something else, much ⟨ret@20.17s⟩ earlier?
+[ 20.56s][moshi] It actually began as ⟦⚡SPAN@22.17s: It originated as the National Home for Disabled Soldiers and Sailors in 1885.⟧ the National Home for Disabled Soldiers and Sailors in eighteen eighty-five. Perhaps the current name feels newer, but its roots are older.
+[ 29.64s][user ] Eighteen eighty-five… so, the name changed in nineteen thirty, but the idea was much earlier. What was its original purpose, exactly?
+[ 38.46s][moshi] It was originally intended to provide a home and care for Civil War veterans. A very specific need at the time, wasn’t it?

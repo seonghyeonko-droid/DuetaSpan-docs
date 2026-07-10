@@ -63,49 +63,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 앱플 홈페이지 제품 중심으로 자세한 지도 만들어 줘. | S2 아, 그 앱플 스토어 근처 호텔은 어때? | S3 …다음 주에 방 있는 데 있어? | S4 고마워.
+# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 좀 보고 싶은데, 제품 중심으로 자세한 지도 만 | S2 …근데, 지도 너무 자세히 들어가기 전에 비전 프로 리뷰부터  | S3 알아두면 좋네. 자, 다시 지도 얘기로 돌아가서, 비전 프로  | S4 호텔 발렌시아 괜찮은 것 같아. 7월 15일부터 2박 예약해 
 
-     0.00s  user  발화 시작: 앱플 홈페이지 제품 중심으로 자세한 지도 만들어 줘.
-     3.08s  <ret> 발화 (turn1 첫 프레임)
-     3.23s  agent 발화 시작: <ret> 네, 앱플 홈페이지를 분석해서 아이폰, 아이패드, 맥, 그리고 다른 제품 섹션을 강조한 지도를 만
-     3.24s  user  발화 끝
-     5.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.24s]: (tool result) Map created: Apple website product sections identified –
-     6.66s  user  발화 시작: 어어.
-     7.43s  user  발화 끝
-    11.48s  agent 발화 끝
-    11.97s  user  발화 시작: 음, 서울 앱플 스토어 근처에 식당 좀 찾아 줘.
-    15.02s  <ret> 발화 (turn4 첫 프레임)
-    15.21s  user  발화 끝
-    15.32s  agent 발화 시작: <ret> 근처에 여러 식당이 있어요. VIP는 백이십 미터 떨어져 있고, 롯데리아는 백오십 미터 떨어져 있
-    17.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.87s]: (tool result) Restaurants near Apple Store Seoul: VIPS (120m), Lotteri
-    19.59s  user  발화 시작: 응.
-    19.90s  user  발화 끝
-    23.13s  agent 발화 시작: 아웃백 스테이크하우스는 이백 미터, 쉐이크 쉑은 이백오십 미터 거리에 있어요. 원하시면 길 안내도 보여 드릴
-    23.19s  agent 발화 끝
-    26.32s  user  발화 시작: 어.
-    26.81s  user  발화 끝
-    31.20s  agent 발화 끝
-    31.53s  user  발화 시작: 아, 그 앱플 스토어 근처 호텔은 어때?
-    33.75s  <ret> 발화 (turn9 첫 프레임)
-    33.91s  agent 발화 시작: <ret> 근처 호텔을 찾아봤는데, L7 명동은 오백 미터 떨어져 있고, 나인트리 프리미어는 육백—
-    34.02s  user  발화 끝
-    35.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Hotels near Apple Store Seoul: L7 Myeongdong (500m), Nin
-    40.70s  user  발화 시작: …다음 주에 방 있는 데 있어?
-    41.51s  agent 발화 끝
-    41.75s  <ret> 발화 (turn11 첫 프레임)
-    42.13s  user  발화 끝
-    42.14s  agent 발화 시작: <ret> 다음 주 L7 명동, 나인트리 프리미어, 솔라리아 니시테츠의 예약 가능 여부를 확인하고 있어요.
-    43.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.50s]: (tool result) L7 Myeongdong, room type Deluxe, July 17-21, 2026, confi
-    49.58s  agent 발화 시작: L7 명동에 이천이십육 년 칠월 십칠일부터 이십일까지 디럭스 룸이 있어요. 예약이 확정됐고, 예약 아이디는 
-    49.64s  agent 발화 끝
-    60.16s  user  발화 시작: 좋아. 그거 내 캘린더에 알림 추가해 줘.
-    60.38s  agent 발화 끝
-    63.25s  <ret> 발화 (turn14 첫 프레임)
-    63.39s  user  발화 끝
-    63.40s  agent 발화 시작: <ret> 이천이십육 년 칠월 십칠일 오후 세 시에 호텔 체크인 알림을 추가했고, 알람 아이디는 4D5E6F
-    64.53s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.76s]: (tool result) Alarm set: July 17, 2026, 3:00 PM, Hotel check-in, id 4D
-    72.16s  agent 발화 끝
-    72.49s  user  발화 시작: 고마워.
-    73.12s  user  발화 끝
-    73.17s  agent 발화 시작: 천만에요. 서울 여행 즐겁게 다녀오세요!
-    76.40s  agent 발화 끝
+     0.00s  user  발화 시작: 애플 웹사이트 좀 보고 싶은데, 제품 중심으로 자세한 지도 만들어 줄 수 있어?
+     4.61s  <ret> 발화 (turn1 첫 프레임)
+     4.76s  agent 발화 시작: <ret> 네, 애플 웹사이트의 제품 섹션에 초점을 맞춘 상세 지도를 만들었어요.
+     4.86s  user  발화 끝
+     6.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: (tavily-map) Apple.com website map created successfully.
+     6.73s  user  발화 시작: 어어.
+     7.36s  user  발화 끝
+     9.63s  agent 발화 끝
+    10.12s  user  발화 시작: 좋긴 한데, 비전 프로 정보 찾는 데는 어디로 가야 하는지 알려 줄 수 있어?
+    14.36s  <ret> 발화 (turn4 첫 프레임)
+    14.67s  agent 발화 시작: <ret> 네, 비전 프로와 관련된 모든 정보를 애플 사이트에서 강조 표시하도록 지도를 업데이트했어요.
+    14.80s  user  발화 끝
+    16.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tavily-map) Apple.com website map updated to highlight Vision Pro inf
+    18.12s  user  발화 시작: 응.
+    18.47s  user  발화 끝
+    21.03s  agent 발화 시작: 비전 프로 제품 페이지, 기술 사양, 그리고 이용 가능한 액세서리 링크가 표시돼요.
+    21.11s  agent 발화 끝
+    25.73s  user  발화 시작: …근데, 지도 너무 자세히 들어가기 전에 비전 프로 리뷰부터 찾아 줄래?
+    26.45s  agent 발화 끝
+    30.67s  <ret> 발화 (turn8 첫 프레임)
+    30.82s  agent 발화 시작: <ret> 검색 결과, 디스플레이는 칭찬을 받았지만 가격이 비싸고 앱이 제한적이라는 의견이 엇갈리고 있어요.
+    31.01s  user  발화 끝
+    32.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (web_search) The Vision Pro has received mixed reviews, with praise fo
+    33.30s  user  발화 시작: 어.
+    33.75s  user  발화 끝
+    37.17s  agent 발화 끝
+    37.25s  user  발화 시작: 음, 애플 주식 가격은 얼마야?
+    39.25s  <ret> 발화 (turn11 첫 프레임)
+    39.41s  agent 발화 시작: <ret> 애플—티커 심볼 AAPL—현재 193달러 22센트에 거래되고 있고, 오늘 0.88% 상승했어요.
+    39.55s  user  발화 끝
+    41.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.75s]: (get_stock_price_global_market) Apple (AAPL) is trading at 193.22 USD,
+    47.16s  agent 발화 끝
+    48.63s  user  발화 시작: 알아두면 좋네. 자, 다시 지도 얘기로 돌아가서, 비전 프로 액세서리 섹션 좀 확대해 줄래?
+    53.81s  <ret> 발화 (turn13 첫 프레임)
+    54.04s  agent 발화 시작: <ret> 네, 비전 프로 액세서리 섹션에 초점을 맞춰 지도를 확대했고, 이용 가능한 케이스와 관련 상품을 
+    54.28s  user  발화 끝
+    55.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tavily-map) Apple.com website map zoomed to Vision Pro accessories se
+    60.89s  agent 발화 끝
+    61.23s  user  발화 시작: 좋아, 도움이 되네. 애플 파크 방문자 센터 근처 호텔 좀 찾아 줘.
+    65.04s  <ret> 발화 (turn15 첫 프레임)
+    65.27s  agent 발화 시작: <ret> 캘리포니아 쿠퍼티노에 있는 호텔 발렌시아 산타나 로우는 792미터, 더 오차드 호텔은 1608미터
+    65.39s  user  발화 끝
+    67.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.64s]: (Hotels_2_SearchHouse) Cupertino, CA (37.3317,-122.0307): Hotel Valenc
+    76.89s  user  발화 시작: 호텔 발렌시아 괜찮은 것 같아. 7월 15일부터 2박 예약해 줘.
+    76.91s  agent 발화 끝
+    80.58s  <ret> 발화 (turn17 첫 프레임)
+    80.64s  agent 발화 시작: <ret> 네, 7월 15일부터 17일까지 호텔 발렌시아 산타나 로우에 킹 사이즈 침실로 예약을 완료했고, 
+    80.73s  user  발화 끝
+    82.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.98s]: (Hotels_2_BookHouse) Hotel Valencia Santana Row, Cupertino, CA, July 1
+    87.03s  user  발화 시작: 그래.
+    87.53s  user  발화 끝
+    91.63s  agent 발화 끝
+    92.22s  user  발화 시작: 정말 고마워, 코랄. 큰 도움이 됐어.
+    94.68s  agent 발화 시작: 도와드릴 수 있어서 기뻐요. 여행 계획에 도움이 됐다니 다행이에요. 즐거운 여행 되세요.
+    94.80s  user  발화 끝
+   101.30s  agent 발화 끝

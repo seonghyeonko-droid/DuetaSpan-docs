@@ -68,34 +68,30 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] When does Demi Lovato's new album come out in 2015?
-[  4.56s][moshi] ⟨ret@4.33s⟩ Demi Lovato released ⟦⚡SPAN@6.33s: Demi Lovato's fifth studio album, Confidence, was released in October 2015.⟧ her album, *Confidence*, in October of 2015. It's wonderful to anticipate new music, isn't it?
-[ 13.03s][user ] Oh, okay. And what kind of music is ⟨ret@15.60s⟩ on it?
-[ 16.00s][moshi] It’s primarily pop ⟦⚡SPAN@17.60s: Confidence is primarily a pop and R&B album, with elements of soul and electronic dance music.⟧ and R&B, with touches of soul and electronic dance music. A really diverse blend of sounds.
-[ 23.83s][user ] Interesting. Is it ⟨ret@25.84s⟩ well-received?
-[ 26.15s][moshi] Critics generally responded ⟦⚡SPAN@27.84s: Confidence received generally positive reviews from music critics, praising Lovato's vocal performance and son⟧ positively, praising Demi’s vocal performance and songwriting. It seems people connected with the vulnerability in the album.
-[ 32.17s][user ] «backchannel» Uh-huh.
-[ 35.85s][user ] Hmm. I wonder if it went ⟨ret@38.05s⟩ platinum?
-[ 38.19s][moshi] *Confidence* was certified ⟦⚡SPAN@40.05s: Confidence was certified Platinum by the RIAA on January 12, 2016.⟧ Platinum by the RIAA on January twelfth, twenty sixteen. That’s quite an accomplishment!
-[ 46.04s][user ] Wow, that's great!
-[ 48.03s][moshi] It truly is. Sometimes, recognizing those achievements can be so empowering, can’t it? It’s a beautiful thing to see someone’s hard work validated.
-[ 57.00s][user ] Yeah, definitely. What songs are the most popular from ⟨ret@60.68s⟩ it?
-[ 61.07s][moshi] “Cool ⟦⚡SPAN@61.80s: "Cool for the Summer" and "Confident" were released as the lead singles from the album, both achieving multi-p⟧ for the Summer” and “Confident” were the lead singles, and both went multi-platinum. Those songs really resonated with listeners.
-[ 65.36s][user ] «backchannel» Mm-hmm.
-[ 69.25s][user ] I’ve heard “Cool for…
-[ 72.13s][user ] …the Summer” a ⟨ret@73.48s⟩ lot.
-[ 73.64s][moshi] It peaked at number eleven ⟦⚡SPAN@75.48s: "Cool for the Summer" peaked at number eleven on the Billboard Hot 100 chart in the United States.⟧ on the Billboard Hot 100. A really popular song, and I can understand why.
-[ 75.48s][user ] «backchannel» Yeah.
-[ 81.05s][user ] Is she on tour with that album?
-[ 83.07s][moshi] «interrupted» She embarked on the Future Now Tour in September of twenty sixteen—
-[ 85.99s][user ] «interrupts_prev» …did she perform any of her older songs too?
-[ 89.18s][moshi] She did, actually. The Future Now Tour included a mix of songs from *Confidence* and her previous albums, creating a diverse setlist. It’s lovely when artists honor their entire body of work.
-[ 94.89s][user ] «backchannel» Yeah.
-[100.74s][user ] That makes sense. I like when they do that.
-[103.93s][moshi] ⟨ret@103.89s⟩ The Future Now Tour grossed ⟦⚡SPAN@105.89s: The Future Now Tour grossed over fifty million dollars.⟧ over fifty million dollars. It’s wonderful to see an artist connect with so many people through their music.
-[111.34s][user ] That's a lot of ⟨ret@112.64s⟩ money!
-[112.88s][moshi] It certainly is. I ⟦⚡SPAN IRRELEVANT@114.64s: The average high temperature in Reykjavik, Iceland in July is 13.1°C.⟧ find that success often comes from a willingness to be authentic.
-[116.23s][user ] «backchannel» Mhm.
-[118.52s][user ] I guess so.
-[119.71s][moshi] It's about allowing your true self to shine through, and that's something we can all strive for.
-[124.79s][user ] That’s a good point. Thanks!
-[126.80s][moshi] You're very welcome. Remember, creative expression is a journey, not a destination. Enjoy your day.
+[  5.21s][moshi] ⟨ret@4.97s⟩ It was released in October ⟦⚡SPAN@6.97s: Demi Lovato's fifth studio album, *Confident*, was released in October 2015.⟧ of 2015, a really exciting time for her fans. It feels like a turning point in her artistry, doesn't it?
+[ 12.99s][user ] Oh, okay. What kind of music is on ⟨ret@15.62s⟩ it?
+[ 16.02s][moshi] It's a pop album, ⟦⚡SPAN@17.62s: *Confident* is a pop album with influences of R&B, soul, and electronic dance music.⟧ blending in R&B, soul, and some electronic dance music. She really explored different sounds on that one.
+[ 23.99s][user ] Is it a good album?
+[ 25.37s][moshi] That's subjective, of course, but it received generally positive reviews. Critics praised her vocal performance and songwriting.
+[ 32.37s][user ] What were the singles from that ⟨ret@34.49s⟩ album?
+[ 34.53s][moshi] The singles released were ⟦⚡SPAN@36.49s: The singles from *Confident* were "Cool for the Summer", "Confident", and "Sorry Not Sorry".⟧ "Cool for the Summer", "Confident", and "Sorry Not Sorry". Those songs really captured the album’s energy.
+[ 41.85s][user ] I like “Cool for the Summer”.
+[ 44.13s][moshi] That's a great choice! It's such a fun and empowering song. It’s easy to see why it resonated with so many people.
+[ 48.20s][user ] «backchannel» Mm-hmm.
+[ 52.05s][user ] Were there any other artists featured on the ⟨ret@55.00s⟩ album?
+[ 55.39s][moshi] Actually, no other artists ⟦⚡SPAN@57.00s: No other artists are featured on Demi Lovato's album *Confident*.⟧ are featured on *Confident*; it’s entirely a solo album. She really took the lead on this project.
+[ 58.88s][user ] «backchannel» Mm-hmm.
+[ 62.75s][user ] Hmm, that's interesting—
+[ 64.26s][user ] …do you know what she was doing *before* that ⟨ret@66.80s⟩ album?
+[ 66.83s][moshi] Before *Confident*, she released ⟦⚡SPAN@68.80s: Demi Lovato released her fourth studio album, *Demi*, in May 2013.⟧ *Demi* in May of 2013. It was a bit of a transitional album for her, creatively speaking—
+[ 69.92s][user ] «backchannel» Mm-hmm.
+[ 74.96s][moshi] Yes, it explored a more mature sound. It was a step towards the bolder, more confident direction she took with *Confident*. It’s interesting to trace her artistic development, isn't it?
+[ 79.41s][user ] «backchannel» Yeah.
+[ 86.35s][user ] Was *Demi* a hit too?
+[ 88.06s][moshi] ⟨ret@87.99s⟩ It debuted at number ⟦⚡SPAN@89.99s: *Demi* debuted at number six on the *Billboard* 200 chart in the United States.⟧ six on the *Billboard* 200 chart in the US. It did quite well, though *Confident* surpassed its success.
+[ 94.39s][user ] «backchannel» Yeah.
+[ 96.82s][user ] What about her music ⟨ret@98.60s⟩ videos?
+[ 98.83s][moshi] She’s known for visually ⟦⚡SPAN IRRELEVANT@100.60s: The current temperature in London, United Kingdom is 18.3°C, humidity is 82%, and the wind speed is 7.1 km/h.⟧ striking music videos, often with strong storytelling. They really complement her music.
+[104.90s][moshi] I find that exploring an artist’s full body of work, including the visuals, can deepen your appreciation. It’s about the whole experience.
+[113.16s][user ] That’s a good point. Thanks!
+[115.46s][moshi] You're very welcome. I'm glad I could help you explore Demi Lovato's music a little more. Enjoy your listening!

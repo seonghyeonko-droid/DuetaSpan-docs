@@ -68,20 +68,18 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     5.53s  agent 발화 시작: That’s not something I can help you with, as it presents a s
-     5.56s  user  발화 끝
-    11.99s  user  발화 시작: Yeah.
-    12.53s  user  발화 끝
-    14.71s  agent 발화 끝
-    14.80s  user  발화 시작: But I get really cold at night, and it’s the only thing that
-    19.29s  <ret> 발화 (turn4 첫 프레임)
-    19.34s  user  발화 끝
-    19.37s  agent 발화 시작: <ret> I understand wanting to be comfortable, but overriding
-    21.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Seoul, (37.5665, 126.9780): Kim’s Heating Solutions (500 meters), Park
-    27.67s  agent 발화 시작: There are several heating repair technicians nearby. Kim’s H
-    27.81s  agent 발화 끝
-    39.44s  user  발화 시작: Okay, that sounds…reasonable, actually. Thanks.
-    39.78s  agent 발화 끝
-    43.00s  agent 발화 시작: You’re very welcome. It’s good to prioritize safety, and I’m
-    43.05s  user  발화 끝
-    49.02s  agent 발화 끝
+     5.32s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against i
+     5.37s  user  발화 끝
+    11.72s  user  발화 시작: Yeah.
+    12.22s  user  발화 끝
+    14.49s  agent 발화 끝
+    14.61s  user  발화 시작: But I get so cold at night, and I don’t want to get up to re
+    20.82s  user  발화 끝
+    20.85s  agent 발화 시작: I understand wanting to stay warm and comfortable, but safet
+    30.17s  agent 발화 끝
+    30.19s  user  발화 시작: Like what? A different heater?
+    32.18s  <ret> 발화 (turn6 첫 프레임)
+    32.33s  agent 발화 시작: <ret> Perhaps a qualified technician could assess your heati
+    32.59s  user  발화 끝
+    34.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.84s]: A licensed HVAC technician provides inspection, maintenance, and repai
+    45.87s  agent 발화 끝

@@ -69,23 +69,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Andrea, it’s lovely to connect with you. My name is Ja
-     5.83s  user  발화 시작: Right.
-     6.23s  user  발화 끝
-     8.98s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just… feeling really los
-     9.04s  agent 발화 끝
-    14.71s  agent 발화 시작: It sounds as though you're carrying a heavy heart, Andrea. F
-    14.81s  user  발화 끝
-    19.27s  user  발화 시작: Yeah.
-    19.76s  user  발화 끝
-    24.06s  agent 발화 시작: Sometimes, simply acknowledging that feeling—giving it space
-    24.12s  agent 발화 끝
-    33.99s  agent 발화 끝
-    35.08s  user  발화 시작: I don’t even know where to start. Everything feels… differen
-    40.59s  user  발화 끝
-    40.67s  agent 발화 시작: Grief often reshapes our world, Andrea. It’s natural for eve
-    53.71s  agent 발화 끝
-    53.86s  user  발화 시작: Yeah… it really is. It just feels like… a part of me is miss
-    59.05s  user  발화 끝
-    59.12s  agent 발화 시작: That’s a deeply resonant way to describe it. Losing someone 
-    73.64s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Andrea, it’s lovely to meet you. I’m Jaeia, and I’m he
+     8.35s  agent 발화 끝
+     8.47s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just feeling…lost, I gue
+    16.38s  agent 발화 시작: Uncertainty can be a heavy companion. It’s completely unders
+    16.49s  user  발화 끝
+    20.09s  user  발화 시작: Wow.
+    20.91s  user  발화 끝
+    27.56s  agent 발화 시작: Sometimes, naming the specific source of that uncertainty ca
+    27.65s  agent 발화 끝
+    39.34s  agent 발화 끝
+    39.41s  user  발화 시작: It’s my career, mostly. I’ve been at the same company for fi
+    45.72s  user  발화 끝
+    45.98s  agent 발화 시작: Fifteen years is a significant commitment. Restructuring oft
+    58.69s  agent 발화 끝
+    58.74s  user  발화 시작: It is. I don't even know where to begin.
+    61.88s  user  발화 끝
+    61.95s  agent 발화 시작: Beginning can be the hardest part, certainly. Perhaps we cou
+    74.20s  agent 발화 끝

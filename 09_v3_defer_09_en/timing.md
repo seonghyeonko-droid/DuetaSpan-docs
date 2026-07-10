@@ -68,41 +68,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’d like to book three rooms at Oc | S2 What’s the weather typically like  | S3 Can you tell me more about Little  | S4 Perfect! Book
 
-     0.00s  user  발화 시작: I’d like to book three rooms at Ocean View Hotel…
-     2.58s  user  발화 끝
-     3.99s  user  발화 시작: …in San Diego for seven nights starting on February tenth.
-     6.83s  <ret> 발화 (turn2 첫 프레임)
-     7.04s  user  발화 끝
-     7.07s  agent 발화 시작: <ret> I’ve reserved three rooms at Ocean View Hotel in San D
-     8.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.01s]: (tool result) Ocean View Hotel, San Diego, 3 rooms reserved for 7 nigh
-    16.97s  user  발화 시작: Mm-hmm.
-    17.47s  user  발화 끝
-    20.92s  user  발화 시작: What’s the weather typically like in San Diego in February?
-    21.09s  agent 발화 끝
-    23.92s  <ret> 발화 (turn5 첫 프레임)
-    24.08s  agent 발화 시작: <ret> The typical February weather in San Diego is eighteen 
-    24.25s  user  발화 끝
-    25.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) 18.3°C, humidity 68%, wind 8.1 km/h.
-    35.35s  agent 발화 끝
-    35.76s  user  발화 시작: Are there any good Italian restaurants nearby?
-    38.16s  <ret> 발화 (turn7 첫 프레임)
-    38.49s  user  발화 끝
-    38.55s  agent 발화 시작: <ret> There are several Italian restaurants near you in San 
-    40.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.61s]: (tool result) San Diego (32.7157,-117.1611): Little Italy (500m), Buca
-    51.17s  agent 발화 끝
-    51.41s  user  발화 시작: Can you tell me more about Little Italy?
-    53.00s  <ret> 발화 (turn9 첫 프레임)
-    53.40s  agent 발화 시작: <ret> Little Italy is located at ninety-two-one-oh-one, with
-    53.49s  user  발화 끝
-    55.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.22s]: (tool result) Little Italy, San Diego, CA 92101, 32.7163° N, 117.1638°
-    65.93s  user  발화 시작: …do they have outdoor seating?
-    66.62s  agent 발화 끝
-    67.56s  <ret> 발화 (turn11 첫 프레임)
-    67.63s  agent 발화 시작: <ret> Several restaurants in Little Italy offer outdoor seat
-    67.82s  user  발화 끝
-    69.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.43s]: (tool result) Little Italy (600m, outdoor seating available), Buca di 
-    79.45s  user  발화 시작: Perfect! Book
-    80.06s  agent 발화 끝
-    80.97s  user  발화 끝
+     0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
+     5.35s  <ret> 발화 (turn1 첫 프레임)
+     5.42s  user  발화 끝
+     5.59s  agent 발화 시작: <ret> I’ve reserved three rooms for you at the Ocean View Ho
+     7.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Reservation confirmed for 3 rooms at Ocean View Hotel in
+    11.91s  user  발화 시작: …Is parking included with the reservation?
+    12.68s  agent 발화 끝
+    13.83s  <ret> 발화 (turn3 첫 프레임)
+    13.98s  agent 발화 시작: <ret> Parking is available at the Ocean View Hotel for thirt
+    14.22s  user  발화 끝
+    15.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) Ocean View Hotel, San Diego: parking available, $35 per 
+    17.56s  user  발화 시작: Mm-hmm.
+    18.05s  user  발화 끝
+    19.21s  agent 발화 끝
+    19.24s  user  발화 시작: Okay, that’s reasonable. Can you add a rental car to my rese
+    22.91s  <ret> 발화 (turn6 첫 프레임)
+    23.31s  agent 발화 시작: <ret> A compact car is available from Hertz for sixty-five d
+    23.39s  user  발화 끝
+    24.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Compact car available from Hertz, $65 per day.
+    30.12s  agent 발화 끝

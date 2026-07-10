@@ -63,25 +63,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, I was reading about government | S2 …when was the Department of Vetera | S3 Nineteen thirty? That seems… late. | S4 So the hospital came first, and th
+# EXAMINER(FDB-v2) 단계: S1 I was reading about government dep | S2 …and wondered—when was the Departm | S3 Nineteen thirty? That seems… recen | S4 Eighteen eighty-five… so, the name
 
-     0.00s  user  발화 시작: So, I was reading about government agencies, and I’m curious
-     3.94s  user  발화 끝
-     5.21s  user  발화 시작: …when was the Department of Veterans Affairs actually create
-     8.30s  <ret> 발화 (turn2 첫 프레임)
-     8.61s  agent 발화 시작: <ret> The Department of Veterans Affairs was established on 
-     8.69s  user  발화 끝
-     9.42s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.95s]: The United States Department of Veterans Affairs was established on Ju
-    15.56s  agent 발화 끝
-    16.57s  user  발화 시작: Nineteen thirty? That seems… late. Weren't there veterans ne
-    21.51s  <ret> 발화 (turn4 첫 프레임)
-    21.91s  agent 발화 시작: <ret> Actually, yes. The first federal veterans’ hospital op
-    22.03s  user  발화 끝
-    23.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: The first federal veterans’ hospital opened in 1866, offering care to 
-    31.88s  user  발화 시작: So the hospital came first, and then the department much lat
-    31.88s  agent 발화 끝
-    36.29s  <ret> 발화 (turn6 첫 프레임)
-    36.68s  agent 발화 시작: <ret> You're right to question that. The Bureau of Pensions 
-    36.84s  user  발화 끝
-    38.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: The Bureau of Pensions, established in 1861, initially handled veteran
-    47.95s  agent 발화 끝
+     0.00s  user  발화 시작: I was reading about government departments…
+     2.30s  user  발화 끝
+     3.62s  user  발화 시작: …and wondered—when was the Department of Veterans Affairs cr
+     6.49s  <ret> 발화 (turn2 첫 프레임)
+     6.81s  agent 발화 시작: <ret> The Department of Veterans Affairs was established on 
+     6.84s  user  발화 끝
+     7.85s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.78s]: The Department of Veterans Affairs was established on March 3, 1930.
+    14.59s  agent 발화 끝
+    15.69s  user  발화 시작: Nineteen thirty? That seems… recent. Didn’t it start as some
+    20.17s  <ret> 발화 (turn4 첫 프레임)
+    20.56s  agent 발화 시작: <ret> It actually began as the National Home for Disabled So
+    20.68s  user  발화 끝
+    22.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: It originated as the National Home for Disabled Soldiers and Sailors i
+    29.61s  agent 발화 끝
+    29.64s  user  발화 시작: Eighteen eighty-five… so, the name changed in nineteen thirt
+    38.46s  agent 발화 시작: It was originally intended to provide a home and care for Ci
+    38.50s  user  발화 끝
+    45.60s  agent 발화 끝

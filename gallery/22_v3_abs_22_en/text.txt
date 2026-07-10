@@ -67,19 +67,22 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.56s⟩ hate?
-[  2.72s][moshi] But unfortunately, I ⟦⚡SPAN@4.56s: (no information found)⟧ couldn’t find a definitive answer to what specific mode of government anarchists universally oppose.
-[  7.13s][user ] «backchannel» Uh-huh.
-[ 10.16s][user ] Hmm, well, what *do* anarchists generally believe ⟨ret@13.28s⟩ in?
-[ 13.43s][moshi] Generally, anarchists believe ⟦⚡SPAN@15.28s: Anarchism is a political philosophy that advocates for self-governed societies based on voluntary institutions⟧ in self-governed societies and voluntary institutions, rejecting all forms of coercive rule. It’s quite a liberating philosophy, really.
-[ 23.97s][user ] So, no rulers at all? That sounds… chaotic.
-[ 28.09s][moshi] It can seem that way at first glance, but the idea is that people can organize themselves effectively without needing a central authority. It’s about mutual aid and cooperation.
-[ 38.91s][user ] But doesn't that mean anyone could just do whatever they want? –
-[ 42.23s][user ] …wait, is anarchism even legal anywhere?
-[ 45.32s][moshi] ⟨ret@45.16s⟩ Anarchism isn't illegal as ⟦⚡SPAN@47.16s: Anarchism is not illegal in and of itself, but acts of violence or disruption carried out in its name may be.⟧ a philosophy, but actions taken in its name that involve violence or disruption can be, of course. It’s a bit of a legal gray area.
-[ 56.21s][user ] Okay, that makes a little more sense. So, where has anarchism been tried, even ⟨ret@61.52s⟩ briefly?
-[ 61.68s][moshi] Anarchist principles were notably ⟦⚡SPAN@63.52s: During the Spanish Civil War, anarchist principles were implemented in parts of Catalonia and Aragon.⟧ put into practice, albeit briefly, in parts of Catalonia and Aragon during the Spanish Civil War. It was a very turbulent period, naturally.
-[ 72.27s][user ] Turbulent is one word for it. Was it successful, though?
-[ 75.83s][moshi] ⟨ret@75.75s⟩ The areas in Spain ⟦⚡SPAN@77.75s: The anarchist areas in Spain experienced increased worker control and social equality, but also faced signific⟧ saw increased worker control and equality, but they also faced significant challenges during that time. It was a complex experiment, to say the least.
-[ 86.45s][user ] Interesting. I think I need to read up on the Spanish Civil War now.
-[ 90.01s][moshi] That sounds like a wonderful idea. It’s a fascinating, albeit difficult, period of history. Enjoy your research!
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.12s⟩ hate?
+[  2.28s][moshi] They fundamentally reject ⟦⚡SPAN@4.12s: Anarchists oppose all forms of hierarchical rule and coercive control.⟧ any system imposing authority over individuals. It's a broad opposition, really.
+[  9.16s][user ] That's interesting. What about historical figures who leaned that ⟨ret@12.55s⟩ way?
+[ 12.78s][moshi] Pierre-Joseph ⟦⚡SPAN@13.59s: Pierre-Joseph Proudhon was a significant proponent of anarchist philosophy.⟧ Proudhon is often considered a key figure in early anarchist thought. He explored mutualism extensively.
+[ 21.93s][user ] Mutualism… can you explain that a bit?
+[ 24.95s][moshi] It’s a system advocating reciprocal, free association for exchange, based on labor. Essentially, fair trade and cooperation.
+[ 34.18s][user ] So, no central authority at all?
+[ 36.97s][moshi] «interrupted» Exactly. Mutualists believe in individual ownership of the means of production—
+[ 41.57s][user ] «interrupts_prev» …but doesn't that just create inequality again, if some people own more than others?
+[ 46.23s][moshi] That's a very insightful point. It's a common critique of mutualism, and it's a fair one. It relies on a lot of social pressure to prevent accumulation.
+[ 52.12s][user ] «backchannel» Yeah.
+[ 55.55s][user ] What about more modern anarchist ⟨ret@57.85s⟩ thinkers?
+[ 58.01s][moshi] Noam Chomsky, though ⟦⚡SPAN@59.85s: Noam Chomsky has expressed sympathy with anarchist ideas.⟧ not strictly an anarchist himself, has voiced support for many anarchist principles. He often critiques power structures.
+[ 69.10s][user ] Are there anarchist communities anywhere today?
+[ 72.01s][moshi] ⟨ret@71.86s⟩ Yes, there are anarchist ⟦⚡SPAN@73.86s: There are anarchist collectives and communities worldwide.⟧ collectives and communities around the world, though they vary greatly in size and practice.
+[ 79.11s][user ] What do they *do* day to day?
+[ 80.59s][moshi] Their activities range from mutual aid networks to political activism and alternative living arrangements. It really depends on the group.
+[ 89.23s][user ] That sounds…challenging.
+[ 91.18s][moshi] It certainly requires dedication and a strong sense of community. It’s about building a different way of life, which isn't always easy. Enjoy your trip.
