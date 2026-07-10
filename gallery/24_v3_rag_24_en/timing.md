@@ -4,43 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Kim",
+#     "name": "Casey",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
+#       "date": "2026-04-22",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-02-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in May."
 #     },
 #     {
-#       "date": "2025-09-09",
+#       "date": "2025-12-05",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-06-06",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-08-28",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-02",
+#       "date": "2026-01-11",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-09",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -50,24 +63,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I've been thinking about bands tha | S2 Do you know anything about the Man | S3 …was there ever any real evidence  | S4 That’s awful. It must have been so
 
-     0.00s  user  발화 시작: When does the next episode of The Handmaid's Tale air?
-     3.62s  <ret> 발화 (turn1 첫 프레임)
-     3.69s  agent 발화 시작: <ret> The eleventh episode aired on April twenty-fifth, two 
-     3.70s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.05s]: The eleventh episode of The Handmaid's Tale aired on April 25, 2018.
-     3.70s  user  발화 끝
-     7.07s  user  발화 시작: Yeah.
-     7.71s  user  발화 끝
-     8.72s  user  발화 시작: Oh, that was a while ago… um, what about the current season?
-     8.74s  agent 발화 끝
-    13.21s  user  발화 끝
-    13.32s  agent 발화 시작: It's understandable to feel a bit disconnected from past air
-    17.28s  user  발화 시작: Yeah.
-    17.92s  user  발화 끝
-    19.51s  user  발화 시작: Is there a way to find out when the newest episodes are rele
-    19.57s  agent 발화 끝
-    23.20s  <ret> 발화 (turn7 첫 프레임)
-    23.42s  agent 발화 시작: <ret> New episodes are airing weekly on Wednesdays, starting
-    23.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: (tool result) Season 6 of The Handmaid's Tale premiered on April 3, 20
-    23.63s  user  발화 끝
-    33.16s  agent 발화 끝
+     0.00s  user  발화 시작: I've been thinking about bands that just… disappeared.
+     3.28s  user  발화 끝
+     3.44s  agent 발화 시작: It’s understandable to feel drawn to those stories, the ones
+     8.26s  agent 발화 끝
+     8.38s  user  발화 시작: Do you know anything about the Manic Street Preachers?
+    11.09s  <ret> 발화 (turn3 첫 프레임)
+    11.48s  agent 발화 시작: <ret> The Manic Street Preachers’ guitarist, Richey Edwards,
+    11.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: Richey Edwards, the guitarist for the Manic Street Preachers, went mis
+    11.61s  user  발화 끝
+    16.94s  user  발화 시작: …was there ever any real evidence about what happened to him
+    17.60s  agent 발화 끝
+    20.47s  <ret> 발화 (turn5 첫 프레임)
+    20.70s  agent 발화 시작: <ret> —and was legally presumed dead in 2008. It’s a very di
+    20.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: His car was found abandoned near the Severn Bridge, a known suicide sp
+    20.83s  user  발화 끝
+    30.32s  user  발화 시작: Yeah.
+    30.95s  user  발화 끝
+    33.49s  user  발화 시작: That’s awful. It must have been so hard on the other band me
+    33.64s  agent 발화 끝
+    37.75s  agent 발화 시작: Grief is a complex process, and losing a bandmate like that 
+    37.88s  user  발화 끝
+    46.32s  agent 발화 끝

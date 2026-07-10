@@ -1,46 +1,54 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Huna, a calm and patient counselor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Doen, a upbeat and supportive supportive advisor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Henri",
+    "name": "Léa",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "50s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-10-05",
+      "date": "2026-04-10",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-12-19",
       "category": "home",
-      "text": "User's home address is 751 Elm Street."
+      "text": "User's home address is 197 Pine Court."
     },
     {
-      "date": "2025-09-02",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-09-14",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
     },
     {
-      "date": "2025-08-15",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-06-12",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2025-08-09",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-05",
+      "date": "2026-05-10",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-01-31",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -48,15 +56,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-12-03",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-10-12",
+      "date": "2025-07-22",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -67,35 +67,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Where do we get most of our electricity energy ⟨ret@3.30s⟩ from?
-[  3.53s][moshi] ⟦⚡SPAN@3.54s: Globally, coal, petroleum, and natural gas are currently the leading sources of electricity.⟧ Globally, coal, petroleum, and natural gas are currently the leading sources of electricity. It’s a mix, but those fuels dominate right now.
-[  8.07s][user ] «backchannel» Yeah, yeah.
-[ 14.34s][user ] Huh. That’s… not great.
-[ 17.23s][moshi] It’s understandable to feel that way. Many are looking towards more sustainable options, and thankfully, there’s a lot of progress being made.
-[ 25.68s][user ] Like what, ⟨ret@27.21s⟩ exactly?
-[ 27.52s][moshi] ⟦⚡SPAN@27.53s: Hydropower is a major renewable source of electricity, providing about 16.6% of the world’s total electricity.⟧ Hydropower is a major renewable source, providing about 16.6% of the world’s total electricity. It's been a reliable source for quite some time.
-[ 31.23s][user ] «backchannel» Yeah.
-[ 37.61s][user ] Sixteen point six percent… that doesn't seem like *most*.
-[ 41.37s][moshi] You’re right to question that. While significant, it isn't the majority yet. The fossil fuels still hold a larger share, unfortunately.
-[ 46.73s][user ] «backchannel» Yeah.
-[ 49.71s][user ] What about solar and wind? Are those ⟨ret@52.67s⟩ growing?
-[ 53.06s][moshi] ⟦⚡SPAN@53.07s: Solar power is the fastest-growing energy source, with capacity increasing by 22.8% in 2022.⟧ Solar power is the fastest-growing energy source, with capacity increasing by 22.8% in 2022. That’s a really promising trend, isn't it?
-[ 56.40s][user ] «backchannel» Uh-huh.
-[ 62.74s][moshi] Wind power is also expanding rapidly, contributing significantly to renewable energy generation. It’s a complementary technology to solar.
-[ 73.14s][user ] I think I read something about geothermal ⟨ret@75.94s⟩ too…
-[ 76.25s][moshi] ⟦⚡SPAN@76.26s: Geothermal energy provides about 0.4% of the world’s total electricity supply.⟧ Geothermal energy currently provides about 0.4% of the world’s total electricity supply. It’s a smaller percentage, but a very consistent and reliable source.
-[ 81.09s][user ] «backchannel» Okay.
-[ 86.90s][user ] Hmm, only point four percent. That's… smaller than I thought.
-[ 91.26s][moshi] It is a smaller portion currently, but geothermal has a lot of potential, especially in regions with high geothermal activity.
-[ 98.85s][user ] What’s the oldest way we figured out how to make ⟨ret@102.39s⟩ electricity?
-[102.71s][moshi] ⟦⚡SPAN@102.71s: Michael Faraday demonstrated the principle of electromagnetic induction in 1831, leading to the first electric⟧ Michael Faraday demonstrated the principle of electromagnetic induction in 1831, leading to the first electric generator. It was a pivotal moment in scientific history.
-[113.90s][user ] Eighteen thirty-one… wow. That *is* old.
-[117.86s][moshi] It is remarkable to think about how far we’ve come since then. It took time to build on that initial discovery, of course.
-[124.28s][user ] So, the modern steam turbine… where does that fit ⟨ret@128.03s⟩ in?
-[128.43s][moshi] ⟦⚡SPAN@128.43s: The modern steam turbine, invented by Charles Parsons in 1884, dramatically improved the efficiency of electri⟧ The modern steam turbine, invented by Charles Parsons in 1884, dramatically improved the efficiency of electricity generation. It was a major leap forward.
-[132.71s][user ] «backchannel» Yeah.
-[137.95s][user ] Eighteen eighty-four. That's not *that* long after Faraday.
-[141.98s][moshi] No, it isn’t. Progress often builds on earlier breakthroughs, and Parsons’ work really optimized the use of steam power for electricity.
-[144.99s][user ] «backchannel» Uh-huh.
-[151.19s][user ] That’s… good to know. Thanks, Huna.
-[153.60s][moshi] You’re very welcome. It's good to feel informed, and I'm glad I could help clarify things for you.
+[  0.00s][user ] Hi Doen, I'm feeling a bit lost about my career path.
+[  3.94s][moshi] It’s completely normal to feel that way! Exploring options is a great first step.
+[  5.99s][user ] «backchannel» Yeah.
+[ 11.47s][user ] Yeah, I was thinking about going back to school, but it’s a big decision.
+[ 16.51s][moshi] It is. It's good to weigh everything carefully before making such a commitment.
+[ 21.91s][user ] I was reading about the Indian constitution, actually. When was their assembly first formed?
+[ 28.68s][moshi] ⟨ret@28.44s⟩ ⟦⚡SPAN@28.68s: The first meeting of the Indian Constituent Assembly was held on December 6, 1946.⟧ The Indian Constituent Assembly first met on December sixth, nineteen forty-six. Quite a historical moment, isn't it?
+[ 32.34s][user ] «backchannel» Yeah.
+[ 35.68s][user ] Oh, December sixth, 1946… that’s good to know. I’m also trying to figure out if a career change is even realistic for me.
+[ 44.74s][moshi] It often is! Many people successfully change careers, and it can be very rewarding.
+[ 46.34s][user ] «backchannel» Yeah.
+[ 50.13s][user ] I'm worried about the financial side of things, though.
+[ 53.06s][moshi] That's a very valid concern. We can explore budgeting and potential income streams.
+[ 54.90s][user ] «backchannel» Yeah, totally.
+[ 59.30s][user ] I wonder what the weather is like in Seoul ⟨ret@62.16s⟩ right now?
+[ 62.56s][moshi] ⟦⚡SPAN@62.56s: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ It is currently Friday, July tenth, two thousand and twenty-six, at two thirty-three PM in Seoul.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 65.34s][user ] «backchannel» Okay.
+[ 69.10s][moshi] Quite warm, it seems!
+[ 70.87s][user ] That’s helpful, thanks. Back to careers… I feel stuck in a rut.
+[ 75.73s][moshi] I understand. A rut can be draining. Let’s pinpoint what feels stifling.
+[ 77.95s][user ] «backchannel» Right.
+[ 80.96s][user ] It’s mostly the lack of challenge, I think. I need something… more.
+[ 85.90s][moshi] That’s a great insight! Identifying that need for challenge is key.
+[ 89.57s][user ] What kind of jobs are actually in demand these ⟨ret@92.76s⟩ days?
+[ 93.07s][moshi] ⟦⚡SPAN@93.08s: According to recent data, software developers are highly sought after with a median salary of $120,000.⟧ Software developers are currently in high demand, with a median salary around one hundred and twenty thousand dollars. It’s a rapidly growing field with lots of opportunities.
+[ 99.22s][user ] «backchannel» Okay.
+[103.22s][user ] Wow, that’s good to know.
+[105.20s][moshi] [happy] It truly is. Exploring new skills could really open some doors for you.

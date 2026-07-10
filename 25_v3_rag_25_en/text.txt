@@ -1,60 +1,88 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Oli, a grounded and empathetic supportive advisor who helps people with big life transitions. <system>
+SYSTEM: <system> You are Freaia, a grounded and empathetic supportive advisor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Jordan",
+    "name": "Charlotte",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-17",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-29",
+      "category": "work",
+      "text": "User works as a graduate student."
     },
     {
-      "date": "2026-03-20",
+      "date": "2026-02-21",
       "category": "hobby",
       "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-02-26",
-      "category": "work",
-      "text": "User works as a high-school teacher."
+      "date": "2026-02-18",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-01-23",
-      "category": "home",
-      "text": "User's home address is 57 Elm Street."
+      "date": "2025-12-22",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-12-05",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-06-11",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-26",
-      "title": "Booked a dentist appointment",
+      "date": "2025-12-06",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m curious—who led the Paris Opera Ballet for a while back in the eighties?
-[  4.26s][moshi] ⟨ret@4.10s⟩ ⟦⚡SPAN@4.26s: Rudolf Nureyev directed the Paris Opera Ballet from 1983 to 1989 and served as its chief choreographer until O⟧ Rudolf Nureyev directed the Paris Opera Ballet from 1983 to 1989. It’s fascinating how one person can shape an entire company, isn’t it?
-[ 13.75s][user ] 1983 to 1989… that’s quite a run.…
-[ 18.78s][user ] …Did he also elevate dancers within the ⟨ret@20.64s⟩ company?
-[ 20.79s][moshi] ⟦⚡SPAN@20.80s: Nureyev gave the title of étoile—the highest rank—to a member of the Paris Opera Ballet in 1978.⟧ He did, actually. Nureyev gave the title of étoile to a dancer back in 1978. It’s a huge honor, that highest rank.
-[ 28.94s][user ] Hmmm, 1978… before he was even director?
-[ 32.95s][moshi] Yes, that’s right. He was already influencing the company and recognizing talent before taking on the director role. It shows his early impact.
+[  0.00s][user ] I'm trying to get settled here, and I'm wondering about local transport links.
+[  3.81s][moshi] Settling in takes time, and knowing how to get around is a big part of that.
+[  5.26s][user ] «backchannel» Yeah.
+[  8.30s][user ] Yeah, exactly. Are there…
+[ 11.67s][user ] …buses to nearby towns?
+[ 13.28s][moshi] ⟨ret@13.20s⟩ ⟦⚡SPAN@13.28s: (tool result) Buses run from Stainby to Grantham, Sleaford, and Lincoln, with services operated by Stagecoach ⟧ Buses run from Stainby to Grantham, Sleaford, and Lincoln, operated by Stagecoach Lincolnshire.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {}}
+[ 15.38s][user ] «backchannel» Yeah.
+[ 20.01s][user ] That's good to know. How far is Grantham, ⟨ret@22.74s⟩ exactly?
+[ 23.06s][moshi] ⟦⚡SPAN@23.06s: (tool result) The distance between Stainby and Grantham is approximately 7.6 miles, and the driving time is ar⟧ It's about 7.6 miles to Grantham, taking around 15 minutes by car.
+      CALL: {"function": "map_distance", "arguments": {"origin": "Stainby", "destination": "Grantham"}}
+[ 25.46s][user ] «backchannel» Wow.
+[ 27.59s][moshi] It’s helpful to have a sense of those distances when you’re planning your days.
+[ 31.85s][user ] It is. I was reading something about the A1… is that the longest numbered road in the ⟨ret@37.61s⟩ UK?
+[ 37.93s][moshi] ⟦⚡SPAN@37.93s: The A1 is the longest numbered road in the United Kingdom, stretching for 410 miles from London to Edinburgh.⟧ Yes, the A1 is the longest numbered road in the UK, stretching 410 miles from London to Edinburgh.
+[ 44.97s][user ] 410 miles! That’s…
+[ 47.75s][user ] …is it a busy road, though, around Stainby?
+[ 50.42s][moshi] It’s often quite busy—
+[ 51.73s][moshi] «interrupted» —particularly during peak hours, but Stainby itself is set back a little—
+[ 55.52s][user ] «interrupts_prev» Okay, good to know it's not right on top of everything. What about ⟨ret@58.98s⟩ shops?
+[ 59.06s][moshi] ⟦⚡SPAN@59.06s: (tool result) There is one pub, The Crown & Anchor, in Stainby, and a wider selection of shops and restaurants⟧ In Stainby itself, there’s The Crown & Anchor pub, but Grantham has more shops and restaurants.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Stainby"}}
+[ 61.30s][user ] «backchannel» Uh-huh.
+[ 64.19s][user ] The Crown & Anchor, got it. Is Grantham easy to get to from there?
+[ 68.39s][moshi] It’s a straightforward trip, and knowing your options is always reassuring.

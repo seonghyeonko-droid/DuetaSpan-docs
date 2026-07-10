@@ -1,46 +1,59 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Thina, a upbeat and supportive supportive advisor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Kelil, a upbeat and supportive supportive advisor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Sky",
+    "name": "Ethan",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-12-26",
+      "date": "2026-04-26",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-12-21",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-09-23",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-11-08",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2025-07-31",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-07-30",
+      "date": "2025-07-18",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-06-30",
       "category": "home",
-      "text": "User's home address is 271 Pine Court."
+      "text": "User's home address is 843 Elm Street."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-08",
+      "date": "2025-11-17",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-22",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -51,15 +64,50 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Thina, I’m moving to the city and trying to learn about local plants.
-[  4.28s][moshi] Welcome! Settling in is exciting. I can definitely help with local flora.
-[  7.42s][user ] «backchannel» Yeah.
-[  9.78s][user ] Great! I was wondering, which plant—Buddleja or Burchardia—is actually an herb named after a German ⟨ret@16.52s⟩ botanist?
-[ 16.92s][moshi] «interrupted» ⟦⚡SPAN@16.92s: Burchardia is a genus of perennial herbaceous flowering plants native to Australia, New Zealand, and New Caled⟧ Burchardia is a genus named after Johann Burchard, a German botanist—
-[ 21.91s][user ] «interrupts_prev» …Is it common in gardens, or more of a wild plant?
-[ 24.98s][moshi] It’s primarily found in the wild, though some gardeners cultivate it. Burchardia prefers moist, shaded habitats.
-[ 31.03s][user ] «backchannel» Yeah.
-[ 33.03s][moshi] It’s a beautiful, delicate plant—often spotted in forests and along streams. I’ve helped a few clients identify it on nature walks!
-[ 39.41s][user ] «backchannel» Yeah.
-[ 43.99s][user ] That sounds lovely. Thanks for the info, Thina!
-[ 46.90s][moshi] You’re very welcome! I’m glad I could help.
+[  0.00s][user ] Hi, I'm thinking about getting into gardening.
+[  2.39s][moshi] That’s wonderful! Gardening is such a rewarding hobby, really.
+[  5.85s][user ] «backchannel» Mm-hmm.
+[  7.14s][user ] I was wondering, are Calochone and Adlumia both ⟨ret@10.04s⟩ plants?
+[ 10.44s][moshi] ⟦⚡SPAN@10.44s: Calochone and Adlumia are both flowering plants belonging to the family Papaveraceae.⟧ Yes, Calochone and Adlumia are both flowering plants in the poppy family.
+[ 16.02s][user ] Oh, interesting! What kind of soil do Adlumia prefer?
+[ 19.77s][moshi] ⟨ret@19.69s⟩ ⟦⚡SPAN@19.77s: Adlumia prefers a well-drained soil that is rich in organic matter and slightly acidic to neutral in pH.⟧ Adlumia likes well-drained soil, rich in organic matter, and slightly acidic to neutral.
+[ 26.63s][user ] And what about Calochone? Is it similar?
+[ 29.13s][moshi] ⟨ret@29.06s⟩ ⟦⚡SPAN@29.14s: Calochone also thrives in well-drained soil but prefers a slightly more alkaline pH than Adlumia.⟧ Calochone also needs well-drained soil, but it prefers a slightly more alkaline pH.
+[ 33.74s][user ] «backchannel» Mm-hmm.
+[ 36.87s][user ] Hmm, that’s good to know. What’s the weather like in Seoul ⟨ret@40.48s⟩ today?
+[ 40.72s][moshi] ⟦⚡SPAN@40.72s: (tool result) The weather in Seoul is 28.0°C, humidity 68%, wind 4.1 km/h.⟧ It’s 28 degrees Celsius in Seoul today, with 68% humidity and a 4.1 km/h wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 45.76s][user ] «backchannel» Oh.
+[ 48.15s][user ] That sounds lovely. I’m planning a trip there next month.
+[ 51.88s][moshi] Seoul is a fantastic choice! It's such a vibrant city.
+[ 55.89s][user ] I need to find a hotel. Something near Myeongdong.
+[ 58.93s][moshi] ⟨ret@58.86s⟩ ⟦⚡SPAN@58.94s: (tool result) Searching for hotels in Myeongdong, Seoul... L7 Myeongdong by LOTTE is available for $150/night.⟧ I found L7 Myeongdong by LOTTE, available for $150 a night.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Myeongdong, Seoul"}}
+[ 64.48s][user ] That sounds promising! Can you show me some ⟨ret@67.42s⟩ pictures?
+[ 67.64s][moshi] ⟦⚡SPAN@67.66s: (tool result) Searching for photos of L7 Myeongdong by LOTTE hotel... link to image gallery⟧ Here's a link to an image gallery of L7 Myeongdong by LOTTE.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {"query": "L7 Myeongdong by LOTTE hotel photos"}}
+[ 72.30s][user ] Wow, it looks really modern. I think I'd like to book it.
+[ 75.18s][moshi] ⟨ret@74.94s⟩ ⟦⚡SPAN@75.18s: (tool result) Booking confirmed for L7 Myeongdong by LOTTE, check-in October 27, 2026. Confirmation ID: 89XZ21⟧ Excellent! Your booking at L7 Myeongdong is confirmed for October 27th, 2026. Your confirmation ID is 89XZ21.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "L7 Myeongdong by LOTTE", "location": "Myeongdong, Seoul"}}
+[ 86.18s][user ] Perfect! Now, I need to find some good restaurants ⟨ret@89.20s⟩ nearby.
+[ 89.60s][moshi] ⟦⚡SPAN@89.60s: (tool result) Searching for restaurants in Myeongdong, Seoul... Myeongdong Kyoja is a popular choice.⟧ Myeongdong Kyoja is a popular restaurant in that area.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Myeongdong, Seoul"}}
+[ 91.69s][user ] «backchannel» Uh-huh.
+[ 92.77s][user ] Oh, I've heard of that place! Is it known for anything specific?
+[ 96.17s][moshi] ⟨ret@96.09s⟩ ⟦⚡SPAN@96.17s: Myeongdong Kyoja is renowned for its kalguksu, handmade noodle soup, and mandu, Korean dumplings.⟧ Yes, Myeongdong Kyoja is famous for its kalguksu, noodle soup, and mandu, Korean dumplings.
+[ 99.77s][user ] «backchannel» Right.
+[104.19s][user ] That sounds delicious! I'll have to try it.
+[107.41s][moshi] It really is a local favorite. You won’t be disappointed.
+[109.22s][user ] «backchannel» Mhm.
+[111.28s][user ] What’s the time difference between Seoul and London?
+[113.77s][moshi] ⟨ret@113.69s⟩ ⟦⚡SPAN@113.77s: (tool result) It is Friday, July 10, 2026 at 3:33 PM in Europe/London right now.⟧ It’s currently 3:33 PM in London. That's eight hours behind Seoul.
+      CALL: {"function": "get_time", "arguments": {"location": "London"}}
+[118.58s][user ] Okay, good to know. I should probably start packing then.
+[121.47s][moshi] That’s a great idea. A little preparation goes a long way.
+[126.41s][user ] I need to set an alarm for 7 AM on October 27th to catch my flight.
+[130.84s][moshi] ⟨ret@130.68s⟩ ⟦⚡SPAN@130.84s: (tool result) Alarm set for 7:00 AM on October 27, 2026.⟧ An alarm is set for 7 AM on October 27th, to make sure you don’t miss your flight.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "7:00 AM", "date": "October 27, 2026"}}
+[136.85s][user ] Wonderful! You’ve been so helpful, Kelil.
+[139.31s][moshi] It’s my pleasure! I hope you have a wonderful trip to Seoul.
+[143.44s][user ] I think I will. Thanks again!
+[145.36s][moshi] Safe travels, and enjoy the beautiful gardens and delicious food!

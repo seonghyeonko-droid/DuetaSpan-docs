@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "다희",
+#     "name": "정호",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,66 +12,64 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-27",
+#       "date": "2026-05-08",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-02-12",
 #       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2026-02-13",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2026-02-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
-#     },
-#     {
-#       "date": "2025-12-16",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is pescatarian."
 #     },
 #     {
 #       "date": "2025-11-21",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "category": "work",
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2025-09-01",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#       "date": "2025-08-06",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-28",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-05-31",
+#       "date": "2026-03-04",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 세상에서 제일 매운 고추는 어디에서 왔어?
-     2.54s  <ret> 발화 (turn1 첫 프레임)
-     2.77s  agent 발화 시작: <ret> 세상에서 제일 매운 고추는 미국 사우스캐롤라이나 주 록힐에서 처음 재배됐대요. 혹시 매운 음식 좋
-     2.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: The Carolina Reaper, which once held the Guinness World Record for the
-     2.91s  user  발화 끝
-    10.66s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 'I've Been Everywhere'라는 노래 누가 불렀는지 아세요?
+     2.72s  <ret> 발화 (turn1 첫 프레임)
+     2.95s  user  발화 끝
+     2.96s  agent 발화 시작: <ret> 'I've Been Everywhere'는 천구백육십이년에 호주 컨트리 가수인 제프 맥이 처음 불
+     2.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: Australian country singer Geoff Mack wrote and originally performed th
+     8.38s  agent 발화 끝

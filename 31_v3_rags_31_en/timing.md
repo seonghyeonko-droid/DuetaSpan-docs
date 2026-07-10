@@ -4,72 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Sky",
+#     "name": "Amelia",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
+#       "date": "2026-04-18",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-03-09",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
+#       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-01-02",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-14",
-#       "category": "home",
-#       "text": "User's home address is 449 Oak Avenue."
+#       "date": "2025-09-10",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-08-19",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2025-07-17",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Researching a used car",
+#       "date": "2025-08-26",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-24",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-31",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-11",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Where does the hottest chilli pepper in the world come from?
-     2.72s  <ret> 발화 (turn1 첫 프레임)
-     2.95s  agent 발화 시작: <ret> The hottest chilli pepper, Pepper X, comes from Rock H
-     2.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: The Pepper X, currently the world’s hottest chili pepper, was develope
-     3.14s  user  발화 끝
-    10.49s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who wrote the song “I’ve Been Everywhere”?
+     2.37s  <ret> 발화 (turn1 첫 프레임)
+     2.59s  agent 발화 시작: <ret> That song, “I’ve Been Everywhere”, was written and fir
+     2.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: Australian country singer Geoff Mack wrote and originally performed “I
+     2.77s  user  발화 끝
+    10.38s  agent 발화 끝

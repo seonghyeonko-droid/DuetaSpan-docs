@@ -4,114 +4,151 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Hana",
+#     "name": "David",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-02-11",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-03-16",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2026-02-07",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-11-27",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-08-25",
+#       "date": "2026-01-18",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-08-08",
+#       "date": "2025-12-16",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-03",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-07-11",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-06",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-07",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-06",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Select credit card from the paymen | S2 Sounds good. What’s the weather in | S3 But… | S4 Excellent. And could you remind me
+# EXAMINER(FDB-v2) 단계: S1 Please create a product for monthl | S2 What are the key differences betwe | S3 I saw Dr. Lee’s name online. | S4 What’s the weather going to be lik
 
-     0.00s  user  발화 시작: Select credit card from the payment method dropdown, please.
-     3.08s  <ret> 발화 (turn1 첫 프레임)
-     3.24s  user  발화 끝
-     3.32s  agent 발화 시작: <ret> The process usually involves clicking the dropdown, re
-     3.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) The process of selecting a credit card from a payment me
-     8.64s  user  발화 시작: Uhhh, and then apply the five-dollar discount code, "SAVE5".
-     8.79s  agent 발화 끝
-    12.20s  <ret> 발화 (turn3 첫 프레임)
-    12.36s  agent 발화 시작: <ret> You'll enter "SAVE5" in a designated field during chec
-    12.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Applying a discount code like "SAVE5" to a payment usual
-    12.53s  user  발화 끝
-    18.01s  agent 발화 끝
-    18.41s  user  발화 시작: Sounds good. What’s the weather in Seoul right now?
-    21.57s  <ret> 발화 (turn5 첫 프레임)
-    21.92s  user  발화 끝
-    21.97s  agent 발화 시작: <ret> It is 23.0 degrees Celsius in Seoul, with 74 percent h
-    21.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.52s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    24.86s  user  발화 시작: Mm-hmm.
-    25.54s  user  발화 끝
-    30.46s  agent 발화 시작: That’s a pleasant summer day, perfect for a walk in the park
-    30.49s  agent 발화 끝
-    34.44s  user  발화 시작: Hmmmm, I need to book a table for two at a nice Italian rest
-    34.58s  agent 발화 끝
-    38.35s  <ret> 발화 (turn9 첫 프레임)
-    38.75s  agent 발화 시작: <ret> Give me a moment while I search for Italian restaurant
-    38.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (no information found)
-    38.93s  user  발화 끝
-    41.85s  user  발화 시작: Mhm.
-    42.48s  user  발화 끝
-    44.17s  agent 발화 끝
-    44.89s  user  발화 시작: But…
-    45.12s  ⚡지연 SPAN 주입(선제발표 직전): Ristorante Bella Notte offers classic Italian cuisine and has availabi
-    45.51s  agent 발화 시작: <ret> I’ve found several options. Ristorante Bella Notte has
-    45.53s  user  발화 끝
-    55.16s  agent 발화 끝
-    55.45s  user  발화 시작: Okay, book it.
-    55.99s  <ret> 발화 (turn14 첫 프레임)
-    56.39s  agent 발화 시작: <ret> Your reservation for two at Ristorante Bella Notte is 
-    56.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.38s]: (tool result) Reservation confirmed for two at Ristorante Bella Notte 
-    56.55s  user  발화 끝
-    59.93s  user  발화 시작: Nice.
-    60.74s  user  발화 끝
-    66.74s  user  발화 시작: Excellent. And could you remind me what my appointment with 
-    66.77s  agent 발화 끝
-    70.30s  <ret> 발화 (turn17 첫 프레임)
-    70.53s  agent 발화 시작: <ret> The appointment with Dr. Lee, on May 15th, was for you
-    70.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: [2026-05-15] Appointment with Dr. Lee for annual check-up.
-    70.63s  user  발화 끝
-    75.80s  agent 발화 끝
-    75.94s  user  발화 시작: Oh, right. Thanks, Zal.
-    77.55s  agent 발화 시작: You're very welcome. Focusing on your well-being is a great 
-    77.55s  user  발화 끝
-    84.27s  agent 발화 끝
+     0.00s  user  발화 시작: Please create a product for monthly web hosting.
+     2.68s  <ret> 발화 (turn1 첫 프레임)
+     2.81s  user  발화 끝
+     2.92s  agent 발화 시작: <ret> I’ve created a product for monthly web hosting, its ID
+     2.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Product 'monthly web hosting' created with ID 78923.
+     8.76s  user  발화 시작: What’s the price of that product?
+     8.94s  agent 발화 끝
+    10.36s  <ret> 발화 (turn3 첫 프레임)
+    10.52s  agent 발화 시작: <ret> Product 78923 is priced at nine dollars and ninety-nin
+    10.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Product 78923 is priced at $9.99 per month.
+    10.69s  user  발화 끝
+    16.49s  agent 발화 끝
+    16.75s  user  발화 시작: Hmm…
+    17.39s  user  발화 끝
+    17.69s  agent 발화 시작: Is there anything specific you’re thinking about with the pr
+    23.91s  agent 발화 끝
+    24.14s  user  발화 시작: Can you show me some similar products?
+    25.86s  <ret> 발화 (turn7 첫 프레임)
+    26.18s  agent 발화 시작: <ret> A search shows Bluehost, SiteGround, and HostGator are
+    26.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) Web hosting plans offer various features and pricing; Bl
+    26.25s  user  발화 끝
+    28.98s  user  발화 시작: Mm-hmm.
+    29.62s  user  발화 끝
+    31.96s  agent 발화 시작: They all offer different features, so it's good to compare. 
+    32.10s  agent 발화 끝
+    34.77s  user  발화 시작: Okay.
+    35.45s  user  발화 끝
+    37.88s  agent 발화 끝
+    38.08s  user  발화 시작: What are the key differences between Bluehost and SiteGround
+    40.81s  <ret> 발화 (turn12 첫 프레임)
+    41.12s  agent 발화 시작: <ret> Bluehost is typically cheaper, but SiteGround offers f
+    41.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) Bluehost is cheaper, while SiteGround offers faster spee
+    41.37s  user  발화 끝
+    45.09s  user  발화 시작: Yeah, yeah.
+    45.90s  user  발화 끝
+    46.68s  agent 발화 끝
+    47.21s  user  발화 시작: That’s helpful.
+    48.35s  user  발화 끝
+    48.42s  agent 발화 시작: It’s good to know what’s important to you. Speed and support
+    51.80s  user  발화 시작: Yeah.
+    52.30s  user  발화 끝
+    54.77s  agent 발화 끝
+    55.04s  user  발화 시작: I need to book a doctor’s appointment.
+    57.16s  user  발화 끝
+    57.36s  agent 발화 시작: I can certainly help with that. Do you have a preferred prov
+    59.88s  user  발화 시작: Okay.
+    60.56s  user  발화 끝
+    63.28s  agent 발화 끝
+    63.43s  user  발화 시작: I saw Dr. Lee’s name online.
+    65.07s  <ret> 발화 (turn21 첫 프레임)
+    65.47s  agent 발화 시작: <ret> Dr. Lee is a general practitioner at City Medical Clin
+    65.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) Dr. Lee is a general practitioner at City Medical Clinic
+    65.50s  user  발화 끝
+    74.14s  user  발화 시작: Can you book me an appointment for next Tuesday?
+    74.28s  agent 발화 끝
+    76.26s  <ret> 발화 (turn23 첫 프레임)
+    76.58s  agent 발화 시작: <ret> I’ve booked you an appointment with Dr. Lee for next T
+    76.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.24s]: (tool result) Appointment with Dr. Lee booked for Tuesday, July 21st, 
+    76.72s  user  발화 끝
+    84.82s  agent 발화 끝
+    84.93s  user  발화 시작: Great, thank you.
+    85.94s  agent 발화 시작: You’re very welcome. Taking care of your health is important
+    86.08s  user  발화 끝
+    89.58s  user  발화 시작: What’s the weather going to be like then?
+    89.74s  agent 발화 끝
+    91.36s  <ret> 발화 (turn27 첫 프레임)
+    91.52s  agent 발화 시작: <ret> Tuesday will be sunny, with a high of twenty-eight deg
+    91.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Tuesday will be sunny with a high of 28.0°C and a low of
+    91.56s  user  발화 끝
+    97.17s  agent 발화 끝
+    97.75s  user  발화 시작: Sounds nice.
+    98.73s  agent 발화 시작: It does, doesn’t it? A bit of sunshine can really lift your 
+    98.75s  user  발화 끝
+   102.30s  user  발화 시작: Yeah.
+   103.12s  user  발화 끝
+   103.58s  user  발화 시작: Can you remind me of the appointment details?
+   103.68s  agent 발화 끝
+   105.50s  <ret> 발화 (turn32 첫 프레임)
+   105.90s  agent 발화 시작: <ret> You have an appointment with Dr. Lee next Tuesday, Jul
+   105.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: [2026-07-16] Appointment with Dr. Lee booked for Tuesday, July 21st, a
+   106.03s  user  발화 끝
+   114.66s  agent 발화 끝

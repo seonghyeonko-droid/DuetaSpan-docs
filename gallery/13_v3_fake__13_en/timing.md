@@ -4,97 +4,113 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Caleb",
+#     "name": "William",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-18",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-03-05",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-08-19",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-07-17",
+#       "category": "home",
+#       "text": "User's home address is 503 Birch Road."
 #     },
 #     {
-#       "date": "2025-07-27",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-07-25",
+#       "date": "2025-06-23",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-19",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-23",
+#       "date": "2025-10-20",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-05",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What channel is the Weather Channe | S2 Hmm, I think I remember setting up | S3 Oh, good! That's a relief. | S4 Okay, thanks, Gera.
+# EXAMINER(FDB-v2) 단계: S1 Hey Gaera, when does the new seaso | S2 Wait, so 2022? That's a long time  | S3 …Is Joe Mantegna still involved in | S4 So, is the new season good? Should
 
-     0.00s  user  발화 시작: What channel is the Weather Channel on Direct TV?
-     3.45s  <ret> 발화 (turn1 첫 프레임)
-     3.51s  user  발화 끝
-     3.68s  agent 발화 시작: <ret> The Weather Channel is available on Direct TV channel 
-     3.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: The Weather Channel is available on Direct TV channel 362.
-     9.79s  user  발화 시작: And what about the local news?
-     9.79s  agent 발화 끝
-    11.39s  <ret> 발화 (turn3 첫 프레임)
-    11.78s  agent 발화 시작: <ret> Local news channels vary depending on your location, o
-    11.79s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.75s]: (no information found)
-    11.91s  user  발화 끝
-    14.50s  user  발화 시작: Mm-hmm.
-    15.14s  user  발화 끝
-    15.15s  user  발화 시작: Hmm, I think I remember setting up a reminder.
-    15.53s  agent 발화 끝
-    18.16s  user  발화 끝
-    18.23s  agent 발화 시작: It’s good to stay proactive about checking the weather—
-    20.27s  user  발화 시작: …did I set a reminder for a storm warning last week?
-    20.82s  agent 발화 끝
-    23.49s  <ret> 발화 (turn8 첫 프레임)
-    23.55s  agent 발화 시작: <ret> Yes, you did. On July 3rd, you set a reminder to check
-    23.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [2024-07-03] I set a reminder to check the weather for a potential sto
-    23.82s  user  발화 끝
-    30.17s  user  발화 시작: Oh, good! That's a relief.
-    30.17s  agent 발화 끝
-    32.15s  user  발화 끝
-    32.60s  agent 발화 시작: I'm glad I could help you remember. It's easy to forget thos
-    35.19s  user  발화 시작: Yeah.
-    35.82s  user  발화 끝
-    36.86s  agent 발화 끝
-    38.64s  user  발화 시작: Is there a way to get alerts directly?
-    41.18s  user  발화 끝
-    41.44s  agent 발화 시작: Direct TV doesn't offer weather alerts directly, but you can
-    46.76s  agent 발화 끝
-    47.24s  user  발화 시작: Okay, thanks, Gera.
-    48.76s  user  발화 끝
-    48.88s  agent 발화 시작: You’re very welcome. Stay safe and dry out there!
-    52.07s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Gaera, when does the new season of Criminal Minds begin?
+     3.79s  <ret> 발화 (turn1 첫 프레임)
+     3.88s  user  발화 끝
+     4.02s  agent 발화 시작: <ret> Well, the sixteenth season of Criminal Minds premiered
+     4.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: The sixteenth season of Criminal Minds premiered on October 3, 2018, o
+    11.99s  user  발화 시작: Oh, okay, good to know. Do they ever say if it’s coming back
+    12.04s  agent 발화 끝
+    16.44s  <ret> 발화 (turn3 첫 프레임)
+    16.83s  agent 발화 시작: <ret> Actually, it was revived for a sixteenth season! It pr
+    16.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (tool result) Criminal Minds was officially renewed for a fifteenth an
+    16.94s  user  발화 끝
+    20.70s  user  발화 시작: Wow.
+    21.38s  user  발화 끝
+    23.97s  user  발화 시작: Wait, so 2022? That's a long time after 2018.
+    24.34s  agent 발화 끝
+    28.92s  user  발화 끝
+    28.98s  agent 발화 시작: It is! There was a period where it ended, then Paramount+ br
+    33.70s  agent 발화 끝
+    33.75s  user  발화 시작: Hmm, okay. I remember hearing something about a reboot.
+    37.68s  user  발화 끝
+    37.75s  agent 발화 시작: That’s right!—a new version with some returning cast members
+    42.72s  user  발화 시작: …Is Joe Mantegna still involved in the reboot?
+    42.85s  agent 발화 끝
+    45.91s  user  발화 끝
+    46.03s  <ret> 발화 (turn10 첫 프레임)
+    46.25s  agent 발화 시작: <ret> Yes, he is! Joe Mantegna reprises his role as David Ro
+    46.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: Joe Mantegna will reprise his role as David Rossi in the Paramount+ re
+    52.20s  agent 발화 시작: He's joined by Aisha Tyler, Adam Rodriguez, and Paget Brewst
+    52.23s  agent 발화 끝
+    55.55s  user  발화 시작: Yeah.
+    56.18s  user  발화 끝
+    57.84s  agent 발화 끝
+    58.58s  user  발화 시작: That's awesome! I really liked his character.
+    61.39s  <ret> 발화 (turn14 첫 프레임)
+    61.79s  agent 발화 시작: <ret> Me too! He brings a lot of gravitas to the show, don’t
+    61.79s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.35s]: The current weather in London, England is 15.5°C, with partly cloudy s
+    61.81s  user  발화 끝
+    67.98s  agent 발화 시작: It's wonderful when a show retains its core strengths.
+    68.14s  agent 발화 끝
+    69.51s  user  발화 시작: Uh-huh.
+    70.09s  user  발화 끝
+    71.17s  agent 발화 끝
+    72.28s  user  발화 시작: So, is the new season good? Should I watch it?
+    75.25s  <ret> 발화 (turn18 첫 프레임)
+    75.57s  agent 발화 시작: <ret> Reviews suggest it keeps the show's spirit alive and h
+    75.57s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.86s]: (tool result) Critics have praised the revival for maintaining the sho
+    75.75s  user  발화 끝
+    78.09s  user  발화 시작: Yeah.
+    78.68s  user  발화 끝
+    80.43s  agent 발화 끝
+    81.48s  user  발화 시작: Okay, you’ve convinced me. I'll check it out! Thanks, Gaera.
+    85.49s  agent 발화 시작: You're very welcome! I'm glad I could help. Happy watching!
+    85.50s  user  발화 끝
+    89.23s  agent 발화 끝

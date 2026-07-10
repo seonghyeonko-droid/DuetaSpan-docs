@@ -1,86 +1,112 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Bir, a warm and attentive wellness coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Aril, a practical and reassuring counselor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Adam",
+    "name": "Robin",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "40s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-06-06",
+      "date": "2026-05-01",
       "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-05-12",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2026-03-31",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in May."
     },
     {
-      "date": "2026-01-06",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2026-02-04",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2026-01-01",
-      "category": "home",
-      "text": "User's home address is 329 Pine Court."
-    },
-    {
-      "date": "2025-09-10",
+      "date": "2026-01-20",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-10",
+      "category": "home",
+      "text": "User's home address is 353 Cedar Lane."
+    },
+    {
+      "date": "2025-07-29",
+      "category": "work",
+      "text": "User works as a graduate student."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-04",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-17",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-11-26",
-      "title": "Apartment hunting downtown",
+      "date": "2026-02-20",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-10-12",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Adam, I'm Bir. It's lovely to connect with you. Are you thinking about a trip today?
-[  5.13s][user ] Uh, yeah, I am. I need to get to the de Young museum.
-[  8.62s][moshi] ⟨ret@8.54s⟩ ⟦⚡SPAN@8.62s: [2026-01-01] User's home address is 329 Pine Court.⟧ Your home is at 329 Pine Court, so let me find directions from there. The de Young Museum is 6.2 miles from your home, and the drive will take about 18 minutes.
-[ 13.25s][user ] «backchannel» Okay.
-[ 18.77s][user ] Hmm, is there a quicker way by public transit?
-[ 21.92s][moshi] ⟨ret@21.85s⟩ ⟦⚡SPAN@21.93s: (tool result) Public transit from 329 Pine Court to de Young Museum takes approximately 35 minutes, involving ⟧ Taking public transit would take around 35 minutes, with a bus and train transfer. It might be a bit longer, but scenic.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "329 Pine Court", "destination": "de Young museum"}}
+[  0.00s][moshi] Hi Robin, I’m Aril. It’s lovely to connect with you today.
+[  3.38s][user ] Hi Aril, thanks for saying that.
+[  5.45s][moshi] You’re very welcome. Is there anything I can help you with today?
+[ 10.97s][user ] Yes, I need to figure out how long it’ll take to get to my ⟨ret@14.65s⟩ sister’s place.
+[ 15.04s][moshi] ⟦⚡SPAN@15.05s: User's home address is 353 Cedar Lane.⟧ Your home address is 353 Cedar Lane, correct?
+[ 18.77s][user ] That's ⟨ret@19.47s⟩ right.
+[ 19.87s][moshi] ⟦⚡SPAN@19.87s: (tool result) Distance: 78.2 km, Estimated travel time: 1 hour 12 minutes, Route: QEW.⟧ It's 78.2 kilometers to 12 Maple Drive in Hamilton, about an hour and twelve minutes via the QEW.
+      CALL: {"function": "map_directions", "arguments": {"origin": "353 Cedar Lane, Toronto", "destination": "12 Maple Drive, Hamilton"}}
+[ 22.76s][user ] «backchannel» Uh-huh.
+[ 29.03s][user ] Wow, that’s further than I thought.
+[ 30.87s][moshi] It can sometimes be hard to judge distances without checking.
+[ 35.01s][user ] Is there a faster route, maybe avoiding the highway?
+[ 38.48s][moshi] ⟨ret@38.41s⟩ ⟦⚡SPAN@38.49s: (tool result) Distance: 95.6 km, Estimated travel time: 1 hour 45 minutes, Route: Dundas Street.⟧ There’s a route via Dundas Street, but it’s 95.6 kilometers and takes an hour and forty-five minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "353 Cedar Lane, Toronto", "destination": "12 Maple Drive, Hamilton", "route_type": "avoid highways"}}
+[ 44.76s][user ] Hmm, maybe the highway is best then.
+[ 47.46s][moshi] «interrupted» It does seem like the quicker option, and avoiding traffic—
+[ 50.38s][user ] «interrupts_prev» …what’s the traffic like on the QEW right now?
+[ 53.21s][moshi] ⟨ret@53.15s⟩ ⟦⚡SPAN@53.23s: (tool result) Moderate traffic congestion on the QEW westbound between Meadowvale Rd and Trafalgar Rd. Expect ⟧ There’s moderate congestion on the QEW westbound, between Meadowvale and Trafalgar, adding about 15 to 20 minutes.
+      CALL: {"function": "map_weather", "arguments": {"location": "QEW, Toronto"}}
+[ 60.94s][user ] Oh, that’s good to know.
+[ 62.35s][moshi] Planning for those delays can help manage stress during the drive.
+[ 63.92s][user ] «backchannel» Uh-huh.
+[ 66.27s][moshi] It’s a good idea to leave a bit earlier if possible, just in case.
+[ 70.43s][user ] I think I will. Is there anything else I should consider for the trip?
+[ 74.03s][moshi] ⟨ret@73.95s⟩ ⟦⚡SPAN@74.03s: (tool result) Current conditions in Hamilton: 21°C, partly cloudy, wind 12 km/h.⟧ It’s currently 21 degrees Celsius and partly cloudy in Hamilton, with a 12 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Hamilton, Canada"}}
+[ 77.37s][user ] «backchannel» Oh.
+[ 80.73s][user ] Perfect. Thanks for checking that.
+[ 82.67s][moshi] Knowing what to expect can make all the difference.
+[ 86.01s][user ] I'm also bringing my fermentation supplies.
+[ 88.50s][moshi] ⟨ret@88.42s⟩ ⟦⚡SPAN@88.50s: User is into home fermentation.⟧ That sounds interesting! Home fermentation is a lovely hobby.
+[ 93.05s][moshi] I recall you mentioned enjoying home fermentation back in May. Are you taking something special to your sister’s?
+[ 96.86s][user ] «backchannel» Yeah.
+[100.90s][user ] Yeah, a batch of kombucha.
+[102.92s][moshi] Kombucha is a wonderful choice. It's refreshing and good for you.
+[105.11s][user ] «backchannel» Mm-hmm.
+[107.69s][user ] Hopefully she likes it. It's her first time trying it.
+[110.53s][moshi] Introducing someone to a new flavor can be fun.
+[112.71s][user ] «backchannel» Yeah, yeah.
+[114.51s][user ] I hope the drive isn’t too stressful with the traffic.
+[117.38s][moshi] A little preparation goes a long way towards a peaceful journey. Have a wonderful visit with your sister, Robin.

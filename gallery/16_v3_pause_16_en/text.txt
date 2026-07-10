@@ -1,59 +1,56 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Ther, a practical and reassuring wellness coach who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Barir, a curious and validating supportive advisor who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Hugo",
+    "name": "Julia",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "40s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-10",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2026-06-20",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-12-10",
-      "category": "home",
-      "text": "User's home address is 795 Maple Drive."
-    },
-    {
-      "date": "2025-10-05",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
-    },
-    {
-      "date": "2025-08-28",
+      "date": "2026-05-27",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-07-29",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-05-01",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-02-12",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-01-04",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-06-01",
+      "category": "home",
+      "text": "User's home address is 393 Maple Drive."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-20",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-11-17",
+      "date": "2026-06-16",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -61,25 +58,38 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-10-30",
-      "title": "Booked a dentist appointment",
+      "date": "2025-08-18",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who sings that song…
-[  3.58s][user ] …mama don't let your babies…
-[  6.75s][user ] …grow up to be ⟨ret@8.17s⟩ cowboys…
-[  8.49s][moshi] ⟦⚡SPAN@8.49s: Ed Bruce originally released the song "Mammas Don't Let Your Babies Grow Up to Be Cowboys" in 1978.⟧ The song you’re thinking of, “Mama Don’t Let Your Babies Grow Up to Be Cowboys,” was originally sung by Ed Bruce.
-[ 12.43s][user ] «backchannel» Yeah.
-[ 15.77s][user ] Oh, Ed Bruce! I always thought it was Willie Nelson and Waylon Jennings…
-[ 19.70s][moshi] It’s a common mistake, actually. Willie Nelson and Waylon Jennings did a very popular cover in 1978 as well.
-[ 24.91s][user ] «backchannel» Yeah, yeah.
-[ 27.93s][user ] Hmm, a cover, huh? What other songs did Ed Bruce write?
-[ 32.18s][moshi] ⟨ret@31.94s⟩ ⟦⚡SPAN@32.18s: (tool result) Ed Bruce also penned the song "Hello World," which was a number one hit for Louise Mandrell in 1⟧ Ed Bruce also wrote “Hello World,” a number one hit for Louise Mandrell that same year. It’s lovely work.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist_name": "Ed Bruce"}}
+[  0.00s][user ] I was wondering…
+[  2.87s][user ] …who actually wrote the lyrics for “Jesus Christ ⟨ret@5.68s⟩ Superstar”?
+[  5.99s][moshi] ⟦⚡SPAN@6.00s: Tim Rice wrote the lyrics for the 1970 rock opera “Jesus Christ Superstar,” with music by Andrew Lloyd Webber.⟧ Tim Rice is the lyricist behind “Jesus Christ Superstar,” working with composer Andrew Lloyd Webber. It’s quite a legendary collaboration, really.
+[ 13.47s][user ] «backchannel» Yeah.
+[ 16.17s][user ] Oh, okay.…
+[ 18.82s][user ] …And was he involved in any other ⟨ret@21.43s⟩ big musicals?
+[ 21.83s][moshi] ⟦⚡SPAN@21.83s: Tim Rice has collaborated on numerous successful musicals, including “Evita,” “Joseph and the Amazing Technico⟧ Yes, Tim Rice has a pretty extensive catalogue! He’s also known for “Evita” and “Joseph and the Amazing Technicolor Dreamcoat” – quite a range.
+[ 33.20s][user ] “Evita”, right. I remember that one. But… uhhh…
+[ 36.78s][moshi] ⟨ret@36.62s⟩ ⟦⚡SPAN@36.78s: (no information found)⟧ Hmm, it seems I don't have information on what you were about to ask.
+[ 42.58s][user ] …was Andrew Lloyd Webber also involved with those?
+[ 45.69s][moshi] Andrew Lloyd Webber was, of course, his frequent collaborator. They’ve really shaped musical theatre as we know it.
+[ 49.83s][user ] «backchannel» Uh-huh.
+[ 53.39s][user ] That’s fascinating. Did Rice write the lyrics first, or did Webber compose the music?
+[ 57.98s][moshi] ⟨ret@57.90s⟩ ⟦⚡SPAN@57.98s: Andrew Lloyd Webber initially approached Tim Rice with the concept for “Jesus Christ Superstar,” and Rice then⟧ Andrew Lloyd Webber had the initial concept for “Jesus Christ Superstar,” and then Tim Rice began writing the lyrics from there— a very interesting starting point.
+[ 62.21s][user ] «backchannel» Yeah.
+[ 68.66s][user ] So, Webber came up with the idea.
+[ 70.78s][moshi] «interrupted» –and then, well, he and Tim Rice spent a lot of time debating how to approach the story, trying to find a way to—
+[ 78.93s][user ] «interrupts_prev» …did they face any controversy when it first came ⟨ret@81.50s⟩ out?
+[ 81.73s][moshi] ⟦⚡SPAN@81.74s: “Jesus Christ Superstar” faced significant controversy upon its 1970 release due to its depiction of Jesus as ⟧ Yes, it actually did! “Jesus Christ Superstar” sparked quite a bit of controversy when it was released in 1970, as it presented Jesus as a more human figure and featured a very unconventional musical style.
+[ 92.85s][user ] «backchannel» Yeah.
+[ 97.53s][user ] Wow, that's intense. I can imagine.
+[100.01s][moshi] It certainly challenged a lot of expectations at the time, but that’s often where the most impactful art comes from, wouldn't you say?
+[108.21s][user ] Yeah, probably. I’ve been meaning to listen to it again.
+[111.45s][moshi] That sounds lovely. Reconnecting with art that moves you can be such a rewarding experience, a real creative boost.

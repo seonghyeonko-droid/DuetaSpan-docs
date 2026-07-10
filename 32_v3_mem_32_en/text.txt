@@ -1,10 +1,10 @@
 v3_mem_32_en src=mem style=mem
-SYSTEM: <system> You are Orae, a encouraging and non-judgmental life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Farir, a gentle and reflective personal guide who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_32",
-    "name": "Morgan",
+    "name": "Ruby",
     "location": {
       "city": "San Francisco",
       "country": "United States",
@@ -12,90 +12,79 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-09",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2026-03-03",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-05-06",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2025-11-07",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-05-03",
+      "date": "2025-10-29",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2026-01-19",
+      "date": "2025-06-23",
       "category": "home",
-      "text": "User's home address is 201 Oak Avenue."
-    },
-    {
-      "date": "2025-08-19",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User's home address is 756 Maple Drive."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-03",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-12-13",
+      "date": "2025-08-08",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-06-26",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Morgan, I'm Orae. It’s lovely to connect with you today.
-[  1.02s][user ] «backchannel» Right.
-[  3.25s][user ] Hi Orae, good to meet you too. I was hoping you could help me with something.
-[  7.78s][moshi] I'm here to listen and offer support—what’s on your mind?
-[ 11.68s][user ] I’m trying to decide if I should take a new job offer.
-[ 14.68s][moshi] That's a big decision! It’s wonderful you’re taking the time to weigh your options.
-[ 17.07s][user ] «backchannel» Yeah.
-[ 20.20s][user ] It feels… overwhelming. I'm not sure what's best.
-[ 24.33s][moshi] It’s perfectly normal to feel overwhelmed when facing a significant change. Let's break it down.
-[ 28.03s][user ] «backchannel» Yeah.
-[ 29.39s][user ] I remember we talked about my career goals ⟨ret@31.85s⟩ before.
-[ 31.93s][moshi] «interrupted» ⟦⚡SPAN@31.93s: [2026-06-09] User works as a marketing manager.⟧ You mentioned you work as a marketing manager—
-[ 33.57s][user ] «interrupts_prev» …but is it really worth leaving a stable job for something new?
-[ 37.53s][moshi] Morgan. Stability is definitely something to consider.
-[ 41.20s][user ] I'm also worried about the commute to the ⟨ret@43.38s⟩ new office.
-[ 43.78s][moshi] ⟦⚡SPAN@43.78s: (tool result) New office is located at 555 Market Street, San Francisco, CA; driving distance is 6.2 miles, es⟧ The new office at 555 Market Street is about 6.2 miles from your home— that’s roughly a fifteen-minute drive.
-      CALL: {"function": "map_directions", "arguments": {"origin": "201 Oak Avenue", "destination": "new office"}}
-[ 48.60s][user ] «backchannel» Really?
-[ 51.04s][user ] Fifteen minutes isn't terrible, actually.
-[ 53.54s][moshi] It sounds like that’s a point in favor of the new opportunity. Sometimes small wins can help.
-[ 56.39s][user ] «backchannel» Yeah.
-[ 58.99s][user ] I’m just afraid of making the wrong choice.
-[ 61.33s][moshi] It’s okay to feel scared, Morgan. Making decisions always carries a degree of uncertainty—that's just part of life.
-[ 68.18s][user ] What if I regret it?
-[ 69.60s][moshi] Regret is often a signal that we’ve learned something, even if it’s difficult. It doesn't mean you *made* a wrong choice.
-[ 76.52s][user ] That’s… a helpful way to look at it, actually. Thanks, Orae.
-[ 80.08s][moshi] You're very welcome, Morgan. Remember, you're capable of navigating whatever comes your way.
+[  0.00s][moshi] Hi Ruby, I’m Farir. It’s lovely to connect with you today.
+[  1.94s][user ] «backchannel» Uh-huh.
+[  3.27s][user ] Hi Farir, it's good to meet you too. I was hoping you could help me with something.
+[  7.92s][moshi] Ruby. I’m here to support you in any way I can.
+[  9.62s][user ] «backchannel» Yeah, totally.
+[ 11.29s][user ] I'm trying to decide if I should finally start that sourdough starter I've been thinking about.
+[ 16.20s][moshi] That sounds wonderful! Home fermentation can be a really rewarding process.
+[ 21.89s][user ] I remember mentioning I was into it ⟨ret@24.29s⟩ before, actually.
+[ 24.61s][moshi] ⟦⚡SPAN@24.61s: [2025-11-07] User is into home fermentation.⟧ Yes, you did tell me about your interest in home fermentation a little while ago.
+[ 26.38s][user ] «backchannel» Yeah, totally.
+[ 28.85s][user ] Right. Do you think it’s a good idea, given how busy things are?
+[ 32.18s][moshi] It can certainly fit into a busy life, with a little planning.
+[ 36.53s][user ] I'm worried about the upkeep, honestly.
+[ 39.31s][moshi] Maintaining a starter does require consistency, but it’s manageable with a routine.
+[ 41.32s][user ] «backchannel» Yeah.
+[ 44.56s][user ] I was reading about different flours ⟨ret@46.56s⟩ to use.
+[ 46.96s][moshi] It’s interesting how much ⟦⚡SPAN@48.56s: (no information found)⟧ variety there is— I don’t have specific information on flour types right now, unfortunately.
+[ 49.44s][user ] «backchannel» Mhm.
+[ 53.44s][user ] …but what about the time commitment, really? Like, daily feeding?
+[ 57.43s][moshi] Daily feeding is typical initially, yes, to establish a strong culture.
+[ 60.32s][user ] «backchannel» Yeah.
+[ 61.42s][moshi] Though, once established, you can reduce feedings and even refrigerate it.
+[ 63.39s][user ] «backchannel» Mhm.
+[ 66.24s][user ] That sounds…better. I also need to think about space, I guess.
+[ 70.91s][moshi] Considering your location, San Francisco, space can be a factor.
+[ 73.05s][user ] «backchannel» Yeah.
+[ 74.40s][user ] You remember where I live!
+[ 76.13s][moshi] ⟨ret@75.81s⟩ ⟦⚡SPAN@76.13s: [2025-06-23] User's home address is 756 Maple Drive.⟧ I also have your address on file, 756 Maple Drive, should you need it for anything.
+[ 79.83s][user ] «backchannel» Yeah.
+[ 80.99s][user ] That's good to know. I have a dentist appointment soon, too.
+[ 84.61s][moshi] ⟨ret@84.45s⟩ ⟦⚡SPAN@84.61s: [2025-08-08] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ Yes, you booked a dentist appointment with Dr. Han, requesting an early morning slot.
+[ 86.82s][user ] «backchannel» Yeah.
+[ 90.40s][user ] Perfect. I think I'll give the sourdough a try then.
+[ 92.99s][moshi] That’s a lovely decision, Ruby. It sounds like a good challenge for you.
+[ 94.81s][user ] «backchannel» Right.
+[ 96.73s][user ] Thanks, Farir. You've really helped me think it through.
+[ 99.50s][moshi] You’re very welcome, Ruby. Remember, even small steps can lead to big growth.

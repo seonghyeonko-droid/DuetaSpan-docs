@@ -1,105 +1,89 @@
 v3_fake__14_ko src=nq style=v1
-SYSTEM: <system> 당신은 친절하고 침착한 라이프 코치 Klous이며, 사람들의 일상적인 결정과 감정에 도움을 줍니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리를 사람들에게 돕는 부드럽고 사색적인 개인 가이드인 Friara입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "지별",
+    "name": "도슬",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
+    "gender": "male",
     "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-15",
+      "date": "2026-06-09",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-05-31",
+      "date": "2026-05-29",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-11-12",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-04-17",
+      "date": "2025-09-05",
       "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-04-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-08-19",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in May."
+    },
+    {
+      "date": "2025-07-10",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-18",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-15",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-03",
+      "date": "2025-10-13",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-08-08",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-11-18",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 이천십팔년 페미나 미스 인디아 월드 우승자는 누구였어?
-[  3.83s][moshi] ⟨ret@3.67s⟩ ⟦⚡SPAN@3.83s: Anukreethy Vas was crowned as the winner of the 2018 FBB Femina Miss India World pageant.⟧ 이천십팔년 페미나 미스 인디아 월드 우승자는 아누크리티 바스 씨였어요. 요즘 기분은 어떠세요?
-[  8.04s][user ] «backchannel» 응.
-[ 12.32s][user ] 음… 그냥 그래. 요즘…
-[ 16.48s][user ] …좀 힘든 일이 많았거든.
-[ 17.84s][moshi] 힘든 일이 많았다니 안타깝네요. 잠시라도 편안하게 쉴 수 있는 시간을 가지셨으면 좋겠어요.
-[ 21.34s][user ] «backchannel» 음.
-[ 24.73s][user ] 고마워. 혹시… 명상하는 방법 좀 알려줄 수 있어?
-[ 28.60s][moshi] 명상은 마음을 차분하게 가라앉히는 데 도움이 될 수 있어요. 편안한 자세로 눈을 감고, 호흡에 집중해 보세요.
-[ 36.69s][user ] 흐으으음… 근데 집중이 잘 안 돼.
-[ 38.56s][moshi] 처음에는 집중이 잘 안 되는 게 당연해요. 숨을 들이쉬고 내쉬는 것에만 집중하면 돼요.
-[ 41.42s][user ] «backchannel» 응.
-[ 45.18s][user ] 알았어. 그럼… 오늘 날씨는 ⟨ret@47.48s⟩ 어때?
-[ 47.87s][moshi] ⟦⚡SPAN@47.88s: (tool result) The current weather in Seoul is 26.5°C, humidity 68%, wind 3.2 km/h.⟧ 지금 서울 날씨는 이십육 점 오도이고, 습도는 육십팔%, 바람은 시속 삼 점 이킬로미터예요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 50.66s][user ] «backchannel» 진짜?
-[ 54.81s][user ] 이십육 점 오도나 돼? 더위 조심해야겠다.
-[ 57.89s][moshi] ⟨ret@57.82s⟩ ⟦⚡SPAN IRRELEVANT@57.90s: The population of Tokyo is approximately 13.96 million as of 2023.⟧ 네, 날씨가 많이 더우니 조심하세요. 시원한 물을 자주 마시는 것도 좋은 방법이에요.
-[ 60.93s][user ] «backchannel» 응.
-[ 63.17s][user ] 혹시… 요즘 제일 인기 있는 영화가 뭐야?
-[ 66.75s][moshi] ⟨ret@66.67s⟩ ⟦⚡SPAN@66.75s: (tool result) Currently, the most popular movie is “Dune: Part Two”, a science fiction film directed by Denis ⟧ 지금 가장 인기 있는 영화는 드니 빌뇌브 감독의 SF 영화 듄: 파트 이예요.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
-[ 69.11s][user ] «backchannel» 어.
-[ 73.25s][user ] 듄? 한번 찾아봐야겠다.
-[ 74.92s][moshi] 네, 한번 보시면 좋을 것 같아요. 영화 보면서 잠시나마 스트레스를 잊으실 수 있을 거예요.
-[ 77.88s][user ] «backchannel» 어.
-[ 81.19s][user ] 맞아. 영화가 최고지.
-[ 83.17s][moshi] 영화는 일상에서 벗어나 잠시 휴식을 취하기에 좋은 방법이죠.
-[ 87.53s][user ] 근데… 영화 예매는 어떻게 해야 ⟨ret@89.63s⟩ 돼?
-[ 89.94s][moshi] ⟦⚡SPAN@89.95s: (tool result) Searching for movie showtimes near you… “Dune: Part Two” is playing at CGV Gangnam at 2:00 PM an⟧ 주변 영화관에서 듄: 파트 이를 상영하고 있어요. CGV 강남에서 오후 두시와 일곱시 삼십분에 상영하네요.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[ 94.76s][user ] «backchannel» 어.
-[ 98.32s][user ] 오, CGV 강남이네. 예약해 줄 수 있어?
-[101.26s][moshi] 영화 예약을 도와드릴 수는 없지만, 예매 웹사이트를 찾아드릴 수 있어요.
-[107.36s][user ] 아… 그렇구나. 알았어. 고마워.
-[111.16s][moshi] 천만에요.
+[  0.00s][user ] 혹시 세상에서 가장 아름다운 소녀일 수 있을까, 그 노래 부른 사람이 ⟨ret@4.96s⟩ 누구였죠?
+[  5.11s][moshi] ⟦⚡SPAN@5.12s: Prince was an American singer, songwriter, musician, and actor who was widely regarded as one of the greatest ⟧ 세상에서 가장 아름다운 소녀일 수 있을까, 그 노래는 프린스라는 분이 부르셨어요. 정말 다양한 분야에서 재능이 뛰어난 분이었죠.
+[ 15.08s][user ] 프린스요? 아, 맞아요, 그분 노래 좋아했어요.
+[ 17.77s][moshi] ⟨ret@17.61s⟩ ⟦⚡SPAN@17.77s: Prince released his debut album, For You, in 1978, achieving mainstream success with the album 1999 (1982) and⟧ 네, 프린스님은 천구백칠십팔년에 데뷔 앨범을 내셨고, 천구백팔십이년 앨범 '천구백구십구'와 천구백팔십사년 영화 '퍼플 레인'으로 큰 성공을 거두셨어요.
+[ 20.98s][user ] «backchannel» 그렇군요.
+[ 28.05s][moshi] «interrupted» 프린스님은 음악뿐만 아니라 영화, 연기 등 다방면에서 활약하셨는데—
+[ 32.16s][user ] «interrupts_prev» …그 '퍼플 레인' 영화, 혹시 지금 볼 수 있는 곳이 있을까요?
+[ 37.40s][moshi] ⟨ret@37.00s⟩ ⟦⚡SPAN@37.40s: (tool result) Searching for where to watch Purple Rain... Available on Amazon Prime Video, Apple TV, and YouTu⟧ '퍼플 레인' 영화는 아마존 프라임 비디오, 애플 티비, 유튜브에서 대여하거나 구매해서 보실 수 있어요. 혹시 다른 영화도 찾아드릴까요?
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"title": "Purple Rain"}}
+[ 46.67s][moshi] ⟨ret@46.52s⟩ ⟦⚡SPAN IRRELEVANT@46.68s: The current weather in Seoul, South Korea is 26.5°C, humidity 68%, wind 7.2 km/h.⟧ 좋은 하루 보내세요.

@@ -1,51 +1,56 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Delira, a grounded and empathetic counselor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Fialo, a practical and reassuring life coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Casey",
+    "name": "Henri",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "40s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-17",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2026-05-19",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
     },
     {
-      "date": "2026-05-22",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-05-08",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2026-04-30",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2026-02-28",
+      "date": "2025-12-07",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-09-07",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-08-11",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-06-25",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-06-12",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-17",
+      "date": "2026-01-05",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -53,15 +58,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-09",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-08",
+      "date": "2025-06-23",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -72,28 +69,36 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Where does because of mr. terupt take ⟨ret@2.55s⟩ place?
-[  2.94s][moshi] ⟦⚡SPAN@2.95s: Snow Hill Elementary School in Milford, Connecticut, serves as the primary setting for the novel Because of Mr⟧ The story unfolds at Snow Hill Elementary School, located in Milford, Connecticut. It’s a place central to the children’s experiences.
-[ 11.44s][user ] Hmm, Milford… is that near New Haven? ⟨ret@14.20s⟩
-[ 14.44s][moshi] ⟦⚡SPAN@14.44s: (tool result) Milford, Connecticut is approximately 9.9 miles from New Haven, Connecticut, with a driving time⟧ Milford is about nine and a half miles from New Haven, taking around eighteen minutes to drive.
-      CALL: {"function": "map_distance", "arguments": {"origin": "Milford, Connecticut", "destination": "New Haven, Connecticut"}}
-[ 20.24s][user ] Oh, that’s not far at all.
-[ 21.62s][moshi] It’s certainly close enough for a day trip, or even to visit regularly. Sometimes proximity can feel quite comforting.
-[ 25.12s][user ] «backchannel» Mhm.
-[ 28.68s][user ] I’m trying to plan a little trip.
-[ 30.30s][moshi] That sounds lovely! Planning can be such a helpful step toward a relaxing time off. Where were you thinking of going?
-[ 32.38s][user ] «backchannel» Yeah.
-[ 37.27s][user ] Well, I was thinking Connecticut, maybe… but I need to check the ⟨ret@40.39s⟩ weather.
-[ 40.71s][moshi] ⟦⚡SPAN@40.71s: (tool result) The weather in Milford, Connecticut is currently 21.2°C, humidity 68%, wind 7.2 km/h.⟧ Right now in Milford, it’s twenty-one point two degrees Celsius with a gentle breeze. Sounds quite pleasant.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Milford, Connecticut"}}
-[ 45.27s][user ] «backchannel» Yeah.
-[ 46.87s][moshi] A comfortable temperature is always a good sign for a trip, wouldn't you agree?
-[ 51.40s][user ] Yeah, definitely. Are there any good bookstores in Milford? ⟨ret@54.49s⟩
-[ 54.56s][moshi] ⟦⚡SPAN@54.57s: (tool result) Waldenbooks at the Milford Mall is a bookstore located at 1201 Boston Post Rd, Milford, CT 06460⟧ There’s a Waldenbooks at the Milford Mall, at one two zero one Boston Post Road.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "bookstore", "location": "Milford, Connecticut"}}
-[ 59.59s][user ] That sounds perfect!
-[ 60.84s][moshi] It’s wonderful to find a place that fits your interests so easily. A good book can make any trip richer.
-[ 67.21s][user ] «to_other» Oh, honestly, the traffic on the Post Road is just awful.
-[ 70.67s][moshi] Perhaps it's a good idea to avoid peak hours if you're heading there, just to make the journey smoother.
-[ 76.57s][user ] Good point. Maybe I’ll go later in the afternoon.
-[ 79.31s][moshi] A less crowded time will allow you to enjoy the browsing experience more fully. Taking your time is key.
+[  0.00s][user ] I was just wondering, when was the very first Father’s Day actually observed?
+[  4.58s][moshi] ⟨ret@4.18s⟩ ⟦⚡SPAN@4.58s: The first Father’s Day was observed on July 5, 1908, in Fairmont, West Virginia.⟧ So, the very first Father’s Day was celebrated on July 5th, 1908—in Fairmont, West Virginia. It’s fascinating how traditions begin, isn’t it?
+[ 14.70s][user ] West Virginia, huh? That’s interesting.
+[ 17.00s][moshi] It truly is. It’s nice to reflect on the origins of these special days.
+[ 19.85s][user ] «backchannel» Yeah.
+[ 23.67s][user ] Do you know why they chose that particular ⟨ret@25.85s⟩ date?
+[ 26.01s][moshi] ⟦⚡SPAN@26.01s: Sonora Smart Dodd proposed the first Father’s Day in 1909 to honor her father, William Jackson Smart, whose bi⟧ They chose the date because Sonora Smart Dodd proposed it in 1909—to honor her father, William Jackson Smart, whose birthday was in June.
+[ 32.66s][user ] «backchannel» Oh.
+[ 35.38s][user ] So, it was a daughter who started it all?
+[ 38.15s][moshi] Exactly. It was a very thoughtful gesture by Sonora Smart Dodd.
+[ 40.66s][user ] «backchannel» Yeah.
+[ 42.60s][user ] Was it immediately popular, or did it take a while to catch ⟨ret@45.51s⟩ on?
+[ 45.83s][moshi] ⟦⚡SPAN@45.83s: While celebrated locally in Fairmont in 1908, widespread recognition took decades, becoming a permanent nation⟧ It was celebrated locally in 1908, but widespread recognition—took decades. It wasn’t a national holiday until 1972.
+[ 49.80s][user ] «backchannel» Nice.
+[ 54.45s][moshi] It’s amazing how long it can take for a tradition to truly become established. Building something lasting takes patience, and a little bit of luck.
+[ 64.11s][user ] 1972… that’s a long time. Was there any opposition to making it a national ⟨ret@69.17s⟩ holiday?
+[ 69.32s][moshi] ⟦⚡SPAN@69.33s: Some resisted a Father’s Day, fearing it would be commercialized, similar to Mother’s Day, but support grew ov⟧ Some people resisted making it a national holiday—fearing it would become too commercialized, like Mother’s Day. But support grew over the years.
+[ 78.61s][user ] Commercialized, huh? That makes sense.
+[ 80.73s][moshi] It’s a common concern with many holidays, actually. Keeping the sentiment genuine is always the key.
+[ 84.01s][user ] «backchannel» Right.
+[ 86.97s][user ] What about other countries? Did they adopt it around the ⟨ret@89.65s⟩ same time?
+[ 90.05s][moshi] ⟦⚡SPAN@90.05s: Many countries adopted Father’s Day in the 20th century, but dates vary; some align with the US date, others w⟧ Many countries adopted it during the 20th century—but the dates vary. Some follow the US date, while others have local traditions.
+[ 99.65s][user ] So, there’s no single worldwide Father’s Day?
+[102.76s][moshi] «interrupted» No, there isn't—it’s celebrated on different dates around the globe. It's interesting to see how different cultures honor fathers—
+[109.49s][user ] «interrupts_prev» …but is it always about honoring fathers, or do some countries have different focuses?
+[113.91s][moshi] It’s generally about honoring fathers—but the specific traditions do vary quite a bit. For instance, in some places it's more about celebrating fatherhood in general, rather than a specific individual.
+[126.77s][user ] Oh, that’s a subtle but important difference.
+[128.81s][moshi] It is. It's a chance to appreciate the role of fathers and father figures in society.
+[133.82s][user ] «to_other» Did you see old man Hemlock’s roses are finally blooming?
+[137.03s][moshi] That's lovely to hear. Focusing on the positive, like beautiful roses, can be so uplifting.
+[138.96s][user ] «backchannel» Yeah.
+[143.44s][user ] You’re right. It’s good to appreciate the small things.
+[146.09s][moshi] Exactly. And remembering to show appreciation to those we care about—is a good practice in general, I think.

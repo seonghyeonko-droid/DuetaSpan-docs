@@ -4,93 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "우린",
+#     "name": "연린",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-06-21",
+#       "date": "2026-01-22",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-09",
+#       "date": "2026-01-21",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-11-20",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-08-25",
+#       "date": "2025-11-13",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
+#       "text": "User is planning a trip to Switzerland in May."
 #     },
 #     {
-#       "date": "2025-08-01",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2025-09-20",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-05-29",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2025-07-07",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-11",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-06-07",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 미국에서 물 불소화가 언제 시작됐는지 궁금해요. | S2 어머, 진짜? | S3 아, 죄송해요. 잠시만요. | S4 아니요, 괜찮아요. 감사합니다.
 
-     0.00s  user  발화 시작: 미국에서 물 불소화가 언제 시작됐는지 궁금해요.
-     2.91s  <ret> 발화 (turn1 첫 프레임)
-     3.23s  agent 발화 시작: <ret> 물 불소화는 천구백사십오년 일월 이십오일에 시작되었어요.
-     3.23s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.61s]: Fluoridation of water in the U.S. began on January 25, 1945.
-     3.24s  user  발화 끝
-     5.57s  user  발화 시작: 어머.
-     6.06s  user  발화 끝
-     6.83s  agent 발화 끝
-     7.99s  user  발화 시작: 어머, 진짜?
-     9.30s  user  발화 시작: 아, 죄송해요. 잠시만요.
-     9.41s  user  발화 끝
-    11.39s  <ret> 발화 (turn5 첫 프레임)
-    11.54s  agent 발화 시작: <ret> 네, 괜찮아요. 천천히 말씀해 주세요.
-    11.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.26s]: (no information found)
-    11.56s  user  발화 끝
-    13.56s  <ret> 발화 (turn6 첫 프레임)
-    13.80s  agent 발화 끝
-    13.88s  agent 발화 시작: <ret> 물 불소화는 충치 예방에 도움이 된다고 알려져 있지만, 건강에 대한 우려도 있다고 해요. 혹시 더
-    13.88s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.52s]: (tool result) Fluoridation has been linked to reduced tooth decay, but
-    17.75s  user  발화 시작: 네.
-    18.29s  user  발화 끝
-    22.16s  <ret> 발화 (turn8 첫 프레임)
-    22.40s  agent 발화 시작: <ret> 건강에 대한 우려는 개인차가 있을 수 있고, 다양한 연구 결과가 존재해요. 필요하시면 관련 자료를
-    22.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (no information found)
-    22.41s  agent 발화 끝
-    26.68s  user  발화 시작: 음.
-    27.17s  user  발화 끝
-    29.44s  agent 발화 끝
-    29.58s  user  발화 시작: 아니요, 괜찮아요. 감사합니다.
-    31.62s  agent 발화 시작: 도움이 되었다니 기쁘네요.
-    31.65s  user  발화 끝
-    32.90s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 제1차 세계 대전 때 영국군이 어디서 싸웠는지 궁금하네요.
+     4.36s  <ret> 발화 (turn1 첫 프레임)
+     4.67s  agent 발화 시작: <ret> 제1차 세계 대전 당시 영국군은 주로 프랑스에서 전투를 벌였다고 해요.
+     4.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: France was a primary theatre of conflict during World War I, seeing ex
+     4.81s  user  발화 끝
+     7.36s  user  발화 시작: 음.
+     7.85s  user  발화 끝
+     9.01s  agent 발화 끝
+    10.05s  user  발화 시작: 어머, 잠깐만요, 지금 엄마한테 전화가 오네…
+    13.28s  user  발화 끝
+    15.32s  user  발화 시작: 아, 죄송해요. 다시 질문해도 될까요?
+    18.56s  user  발화 끝
+    18.65s  <ret> 발화 (turn5 첫 프레임)
+    18.73s  agent 발화 시작: <ret> 아까 말씀하신 대로, 제1차 세계 대전에서 영국군은 주로 프랑스에서 싸웠답니다. 혹시 더 자세한 
+    18.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: France was a primary theatre of conflict during World War I, seeing ex
+    25.63s  agent 발화 끝

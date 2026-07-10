@@ -1,92 +1,110 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Ariona, a encouraging and non-judgmental supportive advisor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Thera, a warm and attentive life coach who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Victor",
+    "name": "Chloe",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
+    "nationality": "American",
+    "gender": "female",
     "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-29",
+      "date": "2026-05-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-09-01",
       "category": "home",
-      "text": "User's home address is 336 Birch Road."
+      "text": "User's home address is 909 Pine Court."
     },
     {
-      "date": "2026-04-20",
-      "category": "work",
-      "text": "User works as a chef."
-    },
-    {
-      "date": "2026-03-14",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-08-04",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-07-22",
+      "date": "2025-07-27",
       "category": "diet",
-      "text": "User is vegetarian."
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-06-05",
+      "category": "work",
+      "text": "User works as a architect."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-12",
+      "date": "2026-02-05",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-22",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-12-27",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-04-11",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What three powers usually found in government are held by the Pope and College of ⟨ret@5.18s⟩ Cardinals?
-[  5.33s][moshi] ⟦⚡SPAN@5.34s: (no information found)⟧ But unfortunately, there’s no readily available information on exactly three powers held by the Pope and College of Cardinals that directly mirror governmental powers.
-[ 16.06s][user ] Hmm, that's disappointing. Is there anything about the historical power they *did* ⟨ret@21.11s⟩ wield?
-[ 21.34s][moshi] ⟦⚡SPAN@21.35s: The Pope historically held significant temporal power, including the right to crown emperors, declare war, and⟧ Historically, the Pope held quite a bit of power—the right to crown emperors, declare war, and even levy taxes, especially during the medieval period.
-[ 25.47s][user ] «backchannel» Uh-huh.
-[ 31.21s][moshi] It's fascinating how much influence the papacy once had, isn't it? It’s a complex history, and a lot of it is tied to land ownership and political alliances.
-[ 40.01s][user ] What about the College of Cardinals? What was *their* role in all of this?
-[ 44.62s][moshi] ⟨ret@44.31s⟩ ⟦⚡SPAN@44.63s: The College of Cardinals historically advised the Pope on matters of faith and governance and, most importantl⟧ The College of Cardinals primarily advised the Pope, and their most important role was electing new ones—giving them a lot of influence over policy.
-[ 50.25s][user ] «backchannel» Oh.
-[ 53.91s][user ] So, it was more about selecting the leader than direct rule?
-[ 58.12s][moshi] Exactly. They weren’t directly ruling, but choosing the Pope meant shaping the direction of the Church and its political involvement. It's a powerful position, even without a crown.
-[ 69.71s][user ] What was the biggest dispute they ever had with a secular ⟨ret@73.03s⟩ ruler?
-[ 73.17s][moshi] «interrupted» ⟦⚡SPAN@73.19s: Pope Gregory VII and Holy Roman Emperor Henry IV engaged in a major dispute known as the Investiture Controver⟧ One of the biggest disputes was between Pope Gregory VII and Emperor Henry IV—it was over who appointed church officials, and it really challenged both their powers—
-[ 83.10s][user ] «interrupts_prev» …Was that about land, too?
-[ 85.01s][moshi] Yes, absolutely. The Investiture Controversy was deeply rooted in land ownership and control. The right to appoint bishops meant control over valuable land and resources. It’s a classic example of the intersection of spiritual and political power.
-[ 92.46s][user ] «backchannel» Mhm.
-[101.70s][user ] That sounds messy. Did it ever come to a ⟨ret@104.64s⟩ battle?
-[104.88s][moshi] ⟦⚡SPAN@104.88s: The Investiture Controversy involved military conflicts, including sieges and battles, as both Pope Gregory VI⟧ It absolutely did come to battle—there were sieges and conflicts as both sides tried to assert control over territories and appointments.
-[113.01s][user ] What kind of impact did that have on the power of the church long-term?
-[117.11s][moshi] That conflict ultimately weakened the authority of the Holy Roman Emperor and strengthened the independence of the papacy, solidifying its role as a major political and spiritual force in Europe. It was a pivotal moment.
-[121.65s][user ] «backchannel» Yeah.
-[132.62s][user ] That’s good to know. I'm trying to understand how power shifts like that happen.
-[137.33s][moshi] Understanding those shifts is key to understanding history, and how institutions evolve. It’s often about maneuvering, compromise, and sometimes, unfortunately, conflict.
-[142.75s][user ] «backchannel» Mm-hmm.
-[150.72s][user ] It sounds exhausting. Thanks for explaining all of this, Ariona.
-[154.57s][moshi] You're very welcome. It's a fascinating topic, and I'm glad I could help shed some light on it.
+[  0.00s][user ] In what sizes do pounds of paper ⟨ret@2.34s⟩ come?
+[  2.50s][moshi] ⟦⚡SPAN@2.50s: (no information found)⟧ But I don't have information on standard paper sizes by weight. It’s not something I’ve been trained on, unfortunately.
+[  9.82s][user ] Welll… that’s frustrating. I’m trying to figure…
+[ 14.46s][user ] …out how much I’m getting for my money.
+[ 16.74s][moshi] I understand your frustration. It's always good to know you're getting what you expect. Settling into a new place can be tricky enough without that.
+[ 25.24s][user ] I just moved to Seoul, actually. It’s a little overwhelming.
+[ 28.25s][moshi] Welcome to Seoul! It can be a bit much at first, but it’s a wonderful city. I hope you’re finding your feet.
+[ 33.27s][user ] «backchannel» Right.
+[ 35.80s][user ] I am, slowly. What's the weather like ⟨ret@39.66s⟩ today?
+[ 39.98s][moshi] ⟦⚡SPAN@39.98s: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now. The current conditions are 23.0°⟧ Right now in Seoul, it’s 23.0°C with 74% humidity and a light breeze. Hopefully, that’s pleasant weather for exploring!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 49.57s][user ] That sounds… sticky. Are there any parks ⟨ret@52.87s⟩ nearby?
+[ 53.03s][moshi] ⟦⚡SPAN@53.03s: (tool result) Olympic Park is 4.5 km away, and Hangang Park is 2.8 km away.⟧ Olympic Park is about 4.5 kilometers from you, and Hangang Park is closer, at 2.8 kilometers. Both are lovely spots to escape the city heat.
+      CALL: {"function": "maps_search_places", "arguments": {"query": "parks", "location": "Seoul"}}
+[ 65.47s][user ] Hangang Park sounds nice. How do I get there?
+[ 68.64s][moshi] ⟨ret@68.49s⟩ ⟦⚡SPAN@68.65s: (tool result) The fastest route is via Olympic-ro, taking approximately 18 minutes by car.⟧ The quickest way to Hangang Park is via Olympic-ro, which should take around 18 minutes by car. Traffic can vary, of course.
+      CALL: {"function": "map_directions_driving", "arguments": {"origin": "Seoul", "destination": "Hangang Park"}}
+[ 74.43s][user ] «backchannel» Yeah, yeah.
+[ 76.84s][user ] Eighteen minutes, huh? Is there a bus?
+[ 79.41s][moshi] ⟨ret@79.33s⟩ ⟦⚡SPAN@79.41s: (tool result) Bus number 333 takes 35 minutes, and bus number 667 takes 42 minutes.⟧ You can take bus number 333, which takes about 35 minutes, or bus number 667, taking 42 minutes. Public transport is very convenient here.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Seoul", "destination": "Hangang Park"}}
+[ 91.13s][user ] Thirty-five minutes is manageable. Thanks.
+[ 93.74s][moshi] You’re very welcome! It's good to have options, isn’t it?
+[ 97.23s][user ] It is. I need to find a grocery store too.
+[100.30s][moshi] ⟨ret@100.14s⟩ ⟦⚡SPAN@100.30s: (tool result) Lotte Mart is 1.2 km away, and Homeplus is 1.8 km away.⟧ Lotte Mart is only 1.2 kilometers from you, and Homeplus is a bit further at 1.8 kilometers. Both are quite large and have everything you’d need.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "grocery store", "location": "Seoul"}}
+[111.21s][user ] Lotte Mart sounds closer. Do they deliver?
+[114.12s][moshi] ⟨ret@114.05s⟩ ⟦⚡SPAN@114.13s: (tool result) Lotte Mart offers delivery services through its online platform and partnerships with delivery a⟧ Yes, Lotte Mart delivers through their website and apps like Coupang Eats. You can find their online store at [https://www.lottemart.com/](https://www.lottemart.com/). That might save you a trip!
+      CALL: {"function": "search", "arguments": {"query": "Lotte Mart Seoul delivery"}}
+[127.63s][user ] «backchannel» Yeah.
+[136.12s][user ] That’s fantastic! I’m going to check that out.
+[138.92s][moshi] Wonderful! Making things easier for yourself is a great way to settle in.
+[143.46s][user ] I’m also looking for a good coffee ⟨ret@145.58s⟩ shop.
+[145.97s][moshi] ⟦⚡SPAN@145.98s: (tool result) Café Onion Anguk is 2.1 km away, and Fritz Coffee Company is 3.5 km away.⟧ Café Onion Anguk is 2.1 kilometers away, and Fritz Coffee Company is a bit further at 3.5 kilometers. Both are known for their great coffee and atmosphere.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "coffee shop", "location": "Seoul"}}
+[152.38s][user ] «backchannel» Really?
+[156.33s][user ] Café Onion… that sounds interesting.
+[159.15s][moshi] It has a lovely vibe, I’ve heard. A good coffee shop can be a real lifeline when you're adjusting.
+[165.19s][user ] Definitely. I appreciate your help, Thera.
+[167.78s][moshi] It's my pleasure. Remember, taking things one step at a time is key. You're doing great.
+[174.40s][user ] I think I will. Thanks again.

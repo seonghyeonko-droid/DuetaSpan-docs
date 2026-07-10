@@ -1,105 +1,89 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Klous, a kind and steady life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Friara, a gentle and reflective personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "Ethan",
+    "name": "Lukas",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "40s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-15",
+      "date": "2026-06-09",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
+    },
+    {
+      "date": "2026-05-29",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-05-31",
+      "date": "2025-11-12",
+      "category": "home",
+      "text": "User's home address is 769 Elm Street."
+    },
+    {
+      "date": "2025-09-05",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2026-04-17",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-08-19",
+      "category": "work",
+      "text": "User works as a architect."
     },
     {
-      "date": "2026-04-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-07-10",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-18",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-15",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-03",
+      "date": "2025-08-08",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-11-18",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who won the Femina Miss India World 2018?
-[  3.93s][moshi] ⟨ret@3.69s⟩ ⟦⚡SPAN@3.93s: Anukreethy Vas of Tamil Nadu was crowned Femina Miss India World 2018 on June 19, 2018, at the JioSaavn Arena ⟧ Anukreethy Vas, from Tamil Nadu, won the title in 2018. It’s wonderful to look back at these achievements, isn't it?
-[  8.99s][user ] «backchannel» Yeah.
-[ 12.20s][user ] And what about the runner-up?
-[ 14.16s][moshi] ⟨ret@14.02s⟩ ⟦⚡SPAN@14.18s: Shreya Rao Kamavarapu was declared the first runner-up, and Elina Nihalenkova was the second runner-up at the ⟧ Shreya Rao Kamavarapu was the first runner-up, and Elina Nihalenkova placed second. It takes real courage to compete like that.
-[ 20.07s][user ] «backchannel» Yeah, yeah.
-[ 23.65s][user ] Hmm, that’s interesting. What does ‘Femina’ mean, ⟨ret@27.16s⟩ actually?
-[ 27.40s][moshi] ⟦⚡SPAN@27.40s: The word "Femina" is derived from the Latin word for "woman," and the magazine originally focused on topics re⟧ The term comes from the Latin word for “woman,” and it originally focused on women’s interests.
-[ 29.89s][user ] «backchannel» Yeah.
-[ 33.22s][user ] Oh, I see. Do you think confidence is important?
-[ 36.91s][moshi] Confidence is a cornerstone of feeling good about yourself, and a key part of navigating life.
-[ 40.05s][user ] «backchannel» Yeah.
-[ 44.10s][user ] I’m trying to feel more confident… it’s hard.
-[ 46.81s][moshi] It truly is. Small steps, like acknowledging your strengths, can build that confidence over time.
-[ 50.32s][user ] «backchannel» Yeah.
-[ 54.34s][user ] What’s the weather like in London ⟨ret@56.50s⟩ right now?
-[ 56.90s][moshi] ⟦⚡SPAN@56.90s: (tool result) 18.2°C, humidity 62%, wind 9.7 km/h, clear skies in London right now.⟧ It’s 18.2 degrees Celsius and clear in London. A pleasant day, it seems.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
-[ 62.54s][user ] That sounds nice. What about the price of Apple stock?
-[ 66.24s][moshi] ⟨ret@66.16s⟩ ⟦⚡SPAN@66.24s: (tool result) Apple (AAPL) is trading at 193.22 USD, up 0.85% today.⟧ Apple stock is currently trading at 193.22 dollars, with a 0.85% increase today.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "AAPL"}}
-[ 69.19s][user ] «backchannel» Mm-hmm.
-[ 74.29s][user ] Okay. Is there a good Italian restaurant ⟨ret@77.51s⟩ nearby?
-[ 77.75s][moshi] ⟦⚡SPAN@77.75s: (tool result) Bella Italia is 1.2 km away, rated 4.5 stars, serving Italian cuisine.⟧ Bella Italia is one point two kilometers away and has a four-and-a-half star rating.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
-[ 80.46s][user ] «backchannel» Yeah.
-[ 83.87s][user ] That sounds perfect.
-[ 85.45s][moshi] ⟨ret@85.38s⟩ ⟦⚡SPAN IRRELEVANT@85.46s: The city of Kyoto, Japan, experienced a high of 28.5°C yesterday with partly cloudy skies and a gentle breeze ⟧ Wonderful! Sometimes the simplest pleasures are the most satisfying.
-[ 90.53s][user ] I’m thinking of booking a table there for tomorrow.
-[ 93.13s][moshi] That’s a lovely idea. Taking time for a good meal is a wonderful self-care practice.
-[ 96.17s][user ] «backchannel» Yeah, yeah.
-[ 99.55s][user ] What time is it in Seoul right now?
-[101.69s][moshi] ⟨ret@101.45s⟩ ⟦⚡SPAN@101.69s: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul right now.⟧ It’s 2:47 PM in Seoul right now. Time really does fly, doesn’t it?
-      CALL: {"function": "get_time", "arguments": {}}
-[107.78s][user ] It does. Thanks, Klous.
-[109.59s][moshi] You’re very welcome. Remember, you have the strength within you to create a life you love.
+[  0.00s][user ] Do you know who sang “Could You Be ⟨ret@2.24s⟩ Loved”?
+[  2.46s][moshi] ⟦⚡SPAN@2.48s: Prince released “Could You Be Loved” as the second single from his 1980 album *Dirty Mind*.⟧ That song was released by Prince, as the second single from his *Dirty Mind* album. It’s a really upbeat track.
+[  5.78s][user ] «backchannel» Mm-hmm.
+[  9.62s][user ] Oh, okay. And who sang “Could You Be the Most Beautiful Girl in the World”?
+[ 13.94s][moshi] ⟨ret@13.78s⟩ ⟦⚡SPAN@13.94s: Prince wrote and originally performed “Could You Be the Most Beautiful Girl in the World” in 1978, but it beca⟧ It was also Prince who sang “Could You Be the Most Beautiful Girl in the World”, originally in 1978.
+[ 19.27s][user ] «backchannel» Really?
+[ 21.36s][user ] Hmm, he did a lot of songs with “Could You Be…” in the title, didn’t he?
+[ 24.94s][moshi] It seems he favored that phrasing, yes. It’s a lovely way to pose a question, don’t you think?
+[ 28.70s][user ] «backchannel» Yeah.
+[ 31.27s][user ] I wonder what inspired him to write those songs.
+[ 34.13s][moshi] «interrupted» Well, Prince often explored themes of love and—
+[ 36.62s][user ] «interrupts_prev» …did he ever perform that song live, the “Most Beautiful Girl” ⟨ret@40.23s⟩ one?
+[ 40.54s][moshi] ⟦⚡SPAN@40.55s: Prince frequently performed “Could You Be the Most Beautiful Girl in the World” during concerts, often extendi⟧ Yes, he did! He often included “Could You Be the Most Beautiful Girl in the World” in his live performances.
+[ 48.08s][moshi] He frequently performed it live, often extending the song with a fantastic guitar solo. It was a fan favorite.
+[ 55.57s][user ] That sounds amazing. I’ve…
+[ 59.17s][user ] …always loved his guitar ⟨ret@60.72s⟩ work.
+[ 61.11s][moshi] ⟦⚡SPAN IRRELEVANT@61.12s: The current temperature in Reykjavik, Iceland is 8.2°C with partly cloudy skies and a wind speed of 12.5 km/h.⟧ He truly was a gifted musician. It’s wonderful you appreciate his talent.
+[ 66.26s][moshi] I often find music and finances have a surprising amount in common, actually.

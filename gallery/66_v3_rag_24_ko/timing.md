@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "라영",
+#     "name": "노빈",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,34 +13,47 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
+#       "date": "2026-04-22",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-02-16",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in May."
 #     },
 #     {
-#       "date": "2025-09-09",
+#       "date": "2025-12-05",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-06-06",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-08-28",
-#       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-02",
+#       "date": "2026-01-11",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-09",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -50,20 +63,23 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 혹시 매닉 스트리트 프리처스의… | S2 …기타리스트 리치 에드워즈에 대해 아세요? | S3 실종됐다고요? 어떻게 된 일이었죠? | S4 … 혹시 그의 마지막 모습이 담긴 사진 같은 건 없나요?
 
-     0.00s  user  발화 시작: 혹시 시녀 이야기 시즌 오 십일화 언제 방영하는지 아세요?
-     3.53s  <ret> 발화 (turn1 첫 프레임)
-     3.84s  agent 발화 시작: <ret> 시녀 이야기 시즌 오의 십일화는 이천십팔년 사월 이십오일에 방영되었어요.
-     3.85s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.42s]: The eleventh episode of The Handmaid’s Tale season 5 aired on April 25
-     4.06s  user  발화 끝
-     5.89s  user  발화 시작: 그렇군요.
-     6.70s  user  발화 끝
-     9.26s  agent 발화 끝
-     9.93s  user  발화 시작: 아, 이천십팔년이군요. 지금은 이천이십육년인데…
-    13.77s  user  발화 끝
-    14.70s  user  발화 시작: …혹시 서울 날씨 좀 알려주실 수 있을까요?
-    17.50s  <ret> 발화 (turn5 첫 프레임)
-    17.89s  agent 발화 시작: <ret> 현재 서울의 기온은 이십삼 점 영도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 측정되
-    17.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    18.02s  user  발화 끝
-    26.41s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 매닉 스트리트 프리처스의…
+     3.05s  user  발화 끝
+     5.10s  user  발화 시작: …기타리스트 리치 에드워즈에 대해 아세요?
+     7.12s  <ret> 발화 (turn2 첫 프레임)
+     7.44s  agent 발화 시작: <ret> 리치 에드워즈는 웨일즈 록 밴드 매닉 스트리트 프리처스의 리듬 기타리스트이자 작사가였는데, 천구백
+     7.44s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.29s]: Richey Edwards was the rhythm guitarist and lyricist for the Welsh roc
+     7.69s  user  발화 끝
+    17.73s  agent 발화 끝
+    18.38s  user  발화 시작: 실종됐다고요? 어떻게 된 일이었죠?
+    20.74s  agent 발화 시작: 실종 당시 상황에 대해 좀 더 자세히 말씀드릴게요 —
+    20.92s  user  발화 끝
+    22.82s  user  발화 시작: … 혹시 그의 마지막 모습이 담긴 사진 같은 건 없나요?
+    23.60s  agent 발화 끝
+    26.71s  <ret> 발화 (turn6 첫 프레임)
+    26.78s  agent 발화 시작: <ret> 리치 에드워즈가 마지막으로 확인된 건 천구백구십오년 이월 일일 아침 런던 엠버시 호텔에서 체크아웃
+    26.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.54s]: The last confirmed sighting of Richey Edwards was on the morning of Fe
+    26.88s  user  발화 끝
+    40.33s  agent 발화 끝

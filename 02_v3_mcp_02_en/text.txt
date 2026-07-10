@@ -1,56 +1,67 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Lir, a encouraging and non-judgmental counselor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Selo, a practical and reassuring counselor who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Julian",
+    "name": "Rosa",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "male",
-    "age_range": "late 20s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-12-24",
+      "date": "2026-03-29",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-12-19",
+      "date": "2026-03-08",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2026-01-05",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-11-28",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-10-13",
+      "date": "2025-08-14",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-08-21",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-06-15",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
+      "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-04",
+      "date": "2026-02-10",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-26",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -61,24 +72,27 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Start a web crawl on CNN, with a depth of one and a limit of eighteen ⟨ret@5.79s⟩ links.
-[  6.03s][moshi] «interrupted» ⟦⚡SPAN@6.03s: (tool result) Crawl initiated on CNN. 18 links found at depth 1. Crawl completed successfully.⟧ I’ve started a crawl on CNN, finding eighteen links at a depth of one—
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "CNN", "depth": "1", "max_links": "18"}}
-[ 10.45s][user ] «interrupts_prev» …are any of those links about the upcoming ⟨ret@12.89s⟩ election?
-[ 13.20s][moshi] ⟦⚡SPAN@13.21s: (tool result) CNN is extensively covering the upcoming presidential election, with articles on candidate profi⟧ CNN is covering the election extensively, with articles on candidates and debates—
-      CALL: {"function": "tavily-search", "arguments": {"query": "CNN election coverage"}}
-[ 15.51s][user ] «backchannel» Uh-huh.
-[ 18.61s][moshi] It's helpful to stay informed, especially during important events like an election.
-[ 23.56s][user ] Can you find me articles specifically about the economic policies of the candidates?
-[ 28.35s][moshi] «interrupted» ⟨ret@28.20s⟩ ⟦⚡SPAN@28.36s: (tool result) CNN reports on candidate economic plans: Biden focuses on middle-class tax cuts, while Trump emp⟧ CNN reports Biden focuses on tax cuts for the middle class—
-      CALL: {"function": "tavily-search", "arguments": {"query": "CNN economic policies presidential candidates"}}
-[ 31.80s][user ] «interrupts_prev» And what about Trump's plans for trade deals?
-[ 34.80s][moshi] «interrupted» ⟨ret@34.72s⟩ ⟦⚡SPAN@34.80s: Trump plans to renegotiate existing trade deals, impose new tariffs on imports, and prioritize domestic manufa⟧ Trump plans to renegotiate trade deals and prioritize domestic manufacturing—
-[ 39.24s][user ] «interrupts_prev» Okay, that’s helpful. Can you search for articles about the impact of these policies on small ⟨ret@45.52s⟩ businesses?
-[ 45.83s][moshi] «interrupted» ⟦⚡SPAN@45.84s: (tool result) CNN analysis suggests Biden’s policies could benefit small businesses through increased consumer⟧ CNN’s analysis suggests Biden's policies could boost consumer spending—
-      CALL: {"function": "tavily-search", "arguments": {"query": "CNN impact of presidential economic policies on small businesses"}}
-[ 50.02s][user ] «interrupts_prev» That’s quite a contrast. Let's move on. What's the weather in Seoul right ⟨ret@54.52s⟩ now?
-[ 54.92s][moshi] «interrupted» ⟦⚡SPAN@54.92s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It is 23.0 degrees Celsius in Seoul, with 74% humidity—
+[  0.00s][user ] Show me the files and folders in opt, sorted by ⟨ret@3.67s⟩ size.
+[  3.90s][moshi] ⟦⚡SPAN@3.90s: (tool result) /opt/google 12.3MB, /opt/nginx 8.7MB, /opt/bin 4.1MB, /opt/local 2.9MB, /opt/java 1.5MB⟧ Here are the files and folders within opt, listed from largest to smallest: google at 12.3 megabytes, nginx at 8.7, bin at 4.1…
+      CALL: {"function": "list_directory_with_sizes", "arguments": {"path": "opt", "sort_by": "size"}}
+[ 11.36s][user ] «backchannel» Nice.
+[ 15.76s][moshi] …local at 2.9, and java at 1.5 megabytes.
+[ 21.84s][user ] Hmm, what’s inside that google ⟨ret@24.24s⟩ directory?
+[ 24.56s][moshi] ⟦⚡SPAN@24.56s: (tool result) chrome 3.2MB, docs 2.1MB, sheets 1.8MB, slides 1.3MB, drive 0.9MB⟧ It contains chrome at 3.2 megabytes, docs at 2.1, sheets at 1.8… …slides at 1.3, and drive at 0.9 megabytes. Quite a bit stored there, it seems.
+      CALL: {"function": "list_directory", "arguments": {"path": "/opt/google"}}
+[ 39.95s][user ] Uh, how much free space do I have on the ⟨ret@43.23s⟩ root partition?
+[ 43.63s][moshi] ⟦⚡SPAN@43.63s: (tool result) Total: 98.5GB, Used: 62.3GB, Free: 36.2GB⟧ You currently have 36.2 gigabytes of free space available on the root partition, with a total of 98.5 gigabytes and 62.3 used. That should be plenty for most tasks, but it's good to keep an eye on it.
+      CALL: {"function": "get_file_info", "arguments": {"path": "/"}}
+[ 59.04s][user ] Okay. And what's the weather like in Seoul right now?
+[ 62.30s][moshi] ⟨ret@62.22s⟩ ⟦⚡SPAN@62.30s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The current weather in Seoul is 23 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour. A pleasant summer day, it sounds like.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 59.59s][user ] «interrupts_prev» Thanks, that sounds pleasant enough. I think I have a good grasp on things now.
-[ 64.35s][moshi] It's wonderful you feel more prepared. Remember, informed decisions are empowering.
+[ 74.79s][user ] Good to know. I need to send 50,000 won to my sister.
+[ 78.68s][moshi] ⟨ret@78.60s⟩ ⟦⚡SPAN@78.68s: (tool result) Please provide your sister’s bank account number.⟧ Alright, to send 50,000 won to your sister, I'll need her bank account number first. I need that to process the payment securely, of course.
+      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": "50000", "recipient": "sister"}}
+[ 87.14s][user ] It's 123-45-67890. ⟨ret@90.55s⟩
+[ 90.95s][moshi] ⟦⚡SPAN@90.95s: (tool result) Payment of 50,000 won to account 123-45-67890 completed. Transaction ID: 9876543210⟧ The payment of 50,000 won to account 123-45-67890 has been successfully completed. Your transaction ID is 9876543210. It’s always a relief to take care of those things promptly.
+      CALL: {"function": "Payment_1_MakePayment", "arguments": {"amount": "50000", "recipient": "sister", "account_number": "123-45-67890"}}
+[104.03s][user ] «backchannel» Really?
+[108.99s][user ] Great. Find me a good Italian restaurant nearby.
+[112.30s][moshi] ⟨ret@112.22s⟩ ⟦⚡SPAN@112.30s: (tool result) Bella Italia - 0.8km, rated 4.5 stars; Roma - 1.2km, rated 4.2 stars; Pastamore - 1.5km, rated 4⟧ There are several Italian restaurants nearby. Bella Italia is 0.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}

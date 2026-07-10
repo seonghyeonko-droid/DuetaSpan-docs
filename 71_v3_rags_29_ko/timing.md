@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "채형",
+#     "name": "도현",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -13,47 +13,59 @@
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-06-20",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     },
 #     {
-#       "date": "2026-04-28",
+#       "date": "2026-04-03",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-10-17",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-26",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-05-31",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
+#       "date": "2026-01-24",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-16",
-#       "title": "Researching a used car",
+#       "date": "2025-10-31",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 미녀와 야수에서 벨은 누구와 결혼하나요?
-     3.59s  <ret> 발화 (turn1 첫 프레임)
-     3.60s  user  발화 끝
-     3.75s  agent 발화 시작: <ret> 미녀와 야수에서 벨과 결혼하는 사람은 왕자님이랍니다. 그런 사랑 이야기는 정말 감동적이죠.
-     3.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: The Prince is the one who marries Belle in Beauty and the Beast.
-     9.87s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 인디언 헤드 페니가 마지막으로…
+     2.72s  user  발화 끝
+     4.13s  user  발화 시작: …만들어진 해가 언제였는지 알 수 있을까요?
+     7.63s  <ret> 발화 (turn2 첫 프레임)
+     7.79s  agent 발화 시작: <ret> 마지막 인디언 헤드 페니가 만들어진 건 천구백구년이었어요. 육십칠년 동안 계속 만들어졌는데, 그 
+     7.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: The final Indian Head penny was minted in 1909, marking the end of a 6
+     7.88s  user  발화 끝
+    15.39s  agent 발화 끝

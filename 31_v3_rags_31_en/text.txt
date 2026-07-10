@@ -1,71 +1,68 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Freia, a thoughtful and soft-spoken counselor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Frari, a warm and attentive wellness coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Sky",
+    "name": "Amelia",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-30",
+      "date": "2026-04-18",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-03-09",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in August."
+      "text": "User is planning a trip to New Zealand in March."
     },
     {
-      "date": "2026-04-27",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-01-02",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-03-14",
-      "category": "home",
-      "text": "User's home address is 449 Oak Avenue."
+      "date": "2025-09-10",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
-      "date": "2025-08-19",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2025-07-17",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-05",
-      "title": "Researching a used car",
+      "date": "2025-08-26",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-24",
-      "title": "Comparing gym memberships",
+      "date": "2025-07-31",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-08-11",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Where does the hottest chilli pepper in the world come ⟨ret@2.72s⟩ from?
-[  2.95s][moshi] ⟦⚡SPAN@2.96s: The Pepper X, currently the world’s hottest chili pepper, was developed in Rock Hill, South Carolina by Ed Cur⟧ The hottest chilli pepper, Pepper X, comes from Rock Hill, South Carolina — it’s quite a feat of cultivation.
+[  0.00s][user ] Do you know who wrote the song “I’ve Been ⟨ret@2.37s⟩ Everywhere”?
+[  2.59s][moshi] ⟦⚡SPAN@2.61s: Australian country singer Geoff Mack wrote and originally performed “I’ve Been Everywhere” in 1962.⟧ That song, “I’ve Been Everywhere”, was written and first performed by Australian country singer Geoff Mack back in 1962.

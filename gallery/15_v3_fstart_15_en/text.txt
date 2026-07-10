@@ -1,87 +1,113 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Helin, a kind and steady personal guide who helps people with grief and change. <system>
+SYSTEM: <system> You are Nio, a encouraging and non-judgmental counselor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Marie",
+    "name": "Manon",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
+    "nationality": "British",
     "gender": "female",
-    "age_range": "late 20s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-06",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-09-05",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-08-29",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2025-08-06",
+      "date": "2026-05-20",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-07-25",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-06-24",
+      "date": "2026-04-29",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in August."
+      "text": "User is planning a trip to Iceland in December."
+    },
+    {
+      "date": "2026-04-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-03-20",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-03-14",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-07-29",
+      "category": "home",
+      "text": "User's home address is 144 Pine Court."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-26",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-06-02",
+      "date": "2025-11-07",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-11-03",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you look up the coordinates for the Pyramids of Giza in Egypt?
-[  4.60s][moshi] «interrupted» ⟨ret@4.52s⟩ ⟦⚡SPAN@4.60s: (tool result) The Pyramids of Giza are located at 29.9792 degrees North latitude and 31.1342 degrees East long⟧ The Pyramids of Giza are at 29.9792 degrees North, 31.1342 degrees East—
-      CALL: {"function": "map_geocode", "arguments": {"address": "Pyramids of Giza, Egypt"}}
-[ 12.40s][user ] «interrupts_prev» …and what about the Sphinx? Is that nearby?
-[ 15.63s][moshi] The Sphinx is indeed very close, situated on the Giza Plateau alongside the pyramids.
-[ 21.52s][user ] Hmm, okay. And can you show me a map with both of ⟨ret@25.13s⟩ them marked?
-[ 25.53s][moshi] ⟦⚡SPAN@25.53s: (tool result) Map displayed with markers for the Pyramids of Giza and the Sphinx on the Giza Plateau.⟧ I’ve marked both on a map for you. You’ll see them right next to each other.
-      CALL: {"function": "map_mark", "arguments": {"points": [{"latitude": 29.9792, "longitude": 31.1342, "label": "Pyramids of Giza"}, {"latitude": 29.9792, "longitude": 31.1342, "label": "Sphinx"}]}}
-[ 28.28s][user ] «backchannel» Yeah.
-[ 29.17s][moshi] It’s a remarkably preserved site, isn’t it? Considering its age.
-[ 33.20s][user ] What's the weather like there ⟨ret@35.37s⟩ right now?
-[ 35.77s][moshi] ⟦⚡SPAN@35.77s: (tool result) The current weather in Giza is 34.0°C, humidity 28%, wind 14.5 km/h from the northwest.⟧ It’s currently 34.0 degrees Celsius in Giza, with a bit of a breeze.
-      CALL: {"function": "map_weather", "arguments": {"latitude": 29.9792, "longitude": 31.1342}}
-[ 38.32s][user ] «backchannel» Really?
-[ 40.68s][user ] That sounds hot! Is it always that warm?
-[ 44.28s][moshi] Generally, yes. Giza experiences a desert climate, with hot, dry summers and mild winters. It's not unusual for temperatures to reach those levels in July.
+[  0.00s][user ] I need two business class tickets from London Heathrow to Charles de Gaulle airport on April first.
+[  6.87s][moshi] ⟨ret@6.79s⟩ ⟦⚡SPAN@6.87s: (tool result) Flights departing London Heathrow for Charles de Gaulle airport on April 1st, 2026, in business ⟧ Business class flights from London Heathrow to Charles de Gaulle on April first are available, ranging from £875 to £2300.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "London Heathrow", "destination": "Charles de Gaulle airport", "date": "April 1st", "class": "business", "number_of_passengers": 2}}
+[ 16.04s][user ] That's quite a range. What's the cheapest option?
+[ 19.44s][moshi] ⟨ret@19.20s⟩ ⟦⚡SPAN@19.44s: The cheapest flight departing London Heathrow for Charles de Gaulle airport on April 1st, 2026, in business cl⟧ The least expensive option is with British Airways, at £875. It might be a good start to your trip.
+[ 26.48s][user ] Can you tell me the flight details for that British Airways flight?
+[ 30.15s][moshi] ⟨ret@30.07s⟩ ⟦⚡SPAN@30.15s: (tool result) British Airways flight BA302 departs London Heathrow at 10:00 AM on April 1st, 2026, arriving at⟧ British Airways flight BA302 departs at ten AM, arriving in Paris at one fifteen PM.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "London Heathrow", "destination": "Charles de Gaulle airport", "date": "April 1st", "class": "business", "number_of_passengers": 2, "airline": "British Airways"}}
+[ 39.17s][user ] That sounds good. Can you book those tickets for me?
+[ 42.49s][moshi] Are you sure you want to proceed with booking those tickets now?
+[ 46.77s][user ] Yes, please.
+[ 48.16s][moshi] ⟨ret@48.08s⟩ ⟦⚡SPAN@48.16s: (tool result) Booking confirmed for British Airways flight BA302, London Heathrow to Charles de Gaulle airport⟧ Excellent. Your booking is confirmed with confirmation number AB12CD. It's great you've finalized those plans.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "London Heathrow", "destination": "Charles de Gaulle airport", "date": "April 1st", "class": "business", "number_of_passengers": 2, "airline": "British Airways"}}
+[ 57.29s][user ] Perfect. Do you know if there are any good restaurants near Charles de Gaulle airport?
+[ 62.43s][moshi] ⟨ret@62.20s⟩ ⟦⚡SPAN@62.44s: (tool result) Several restaurants are near Charles de Gaulle airport, including Le Bistro des Saveurs, offerin⟧ There are several options nearby, like Le Bistro des Saveurs for French food and Caviar House for seafood.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Charles de Gaulle airport"}}
+[ 66.24s][user ] «backchannel» Right.
+[ 69.13s][user ] Le Bistro des Saveurs sounds nice. –
+[ 71.97s][user ] …Is there a shuttle from the airport to that ⟨ret@75.33s⟩ restaurant?
+[ 75.41s][moshi] ⟦⚡SPAN@75.41s: (tool result) A shuttle from Charles de Gaulle airport to Le Bistro des Saveurs is available via the CDGVAL au⟧ Yes, you can take the CDGVAL train and bus 351 – it takes about thirty minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Charles de Gaulle airport", "destination": "Le Bistro des Saveurs"}}
+[ 81.74s][user ] Okay, good to know. What's the weather forecast for Paris on April ⟨ret@86.79s⟩ first?
+[ 86.95s][moshi] ⟦⚡SPAN@86.95s: (tool result) The weather in Paris on April 1st, 2026, is forecast to be 15°C, partly cloudy with a 20% chance⟧ The forecast for April first is fifteen degrees Celsius, partly cloudy, with a small chance of rain.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Paris", "date": "April 1st"}}
+[ 92.85s][user ] That's pretty mild. I'm also planning a trip to Rome in May.
+[ 97.54s][moshi] That sounds lovely! Rome in May is a beautiful time to visit.
+[101.96s][user ] Do you remember when I mentioned I like Italian ⟨ret@104.58s⟩ food?
+[104.81s][moshi] ⟦⚡SPAN@104.81s: [2026-02-15] I like Italian food.⟧ Yes, you told me on February fifteenth that you enjoy Italian food.
+[108.25s][user ] «backchannel» Okay.
+[109.17s][user ] Great. Are there any highly-rated…
+[113.04s][user ] …Italian restaurants near the ⟨ret@115.22s⟩ Colosseum?
+[115.61s][moshi] ⟦⚡SPAN@115.62s: (tool result) Highly-rated Italian restaurants near the Colosseum include Aroma at Palazzo Manfredi and La Tav⟧ Aroma at Palazzo Manfredi and La Taverna dei Fori Imperiali are both highly recommended near the Colosseum.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Colosseum, Rome", "cuisine": "Italian"}}
+[120.94s][user ] «backchannel» Right.
+[122.58s][user ] Aroma sounds fancy. What’s their price ⟨ret@126.44s⟩ range?
+[126.68s][moshi] ⟦⚡SPAN@126.68s: (tool result) Aroma at Palazzo Manfredi is a luxury restaurant with a price range of €100-€200 per person. dom⟧ It’s a luxury restaurant, costing between one hundred and two hundred euros per person.
+      CALL: {"function": "search", "arguments": {"query": "Aroma at Palazzo Manfredi price range"}}
+[132.19s][user ] That’s a bit expensive. Maybe La Taverna dei Fori Imperiali is better.
+[137.60s][moshi] It’s wonderful to be mindful of your budget. Sometimes simpler options are just as enjoyable.
+[141.43s][user ] «backchannel» Yeah.
+[143.15s][user ] True. Thank you for your help with everything.
+[145.61s][moshi] You’re very welcome. I'm glad I could assist you with your travel planning. Have a wonderful trip!

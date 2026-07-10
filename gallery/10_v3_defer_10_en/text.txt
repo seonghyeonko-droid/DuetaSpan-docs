@@ -1,10 +1,10 @@
 v3_defer_10_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Faera, a practical and reassuring wellness coach who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Fraex, a kind and steady counselor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Quinn",
+    "name": "Sophie",
     "location": {
       "city": "Berlin",
       "country": "Germany",
@@ -12,72 +12,59 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "German",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "gender": "female",
+    "age_range": "40s",
     "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-01-12",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2026-01-28",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-11-04",
+      "date": "2025-10-01",
       "category": "allergy",
       "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-09-07",
+      "date": "2025-09-12",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in May."
+    },
+    {
+      "date": "2025-09-03",
       "category": "work",
-      "text": "User works as a chef."
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2025-07-09",
-      "category": "home",
-      "text": "User's home address is 944 Oak Avenue."
-    },
-    {
-      "date": "2025-06-18",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2025-07-05",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-02",
+      "date": "2025-09-28",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-12-18",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What family movies are showing at Showcase Cinema de Lux Legacy Place in Boston?
-[  5.05s][moshi] «interrupted» ⟨ret@4.97s⟩ ⟦⚡SPAN@5.05s: (tool result) Kung Fu Panda 4 is playing at Showcase Cinema de Lux Legacy Place in Boston at 1:00 PM, 3:30 PM,⟧ Kung Fu Panda 4 and Migration are both playing at the cinema today, with several showtimes—
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"location": "Showcase Cinema de Lux Legacy Place in Boston", "genre": "family"}}
-[  9.81s][user ] «interrupts_prev» …are either of those in IMAX?
-[ 11.59s][moshi] ⟨ret@11.43s⟩ ⟦⚡SPAN@11.59s: (tool result) Kung Fu Panda 4 is not currently showing in IMAX at Showcase Cinema de Lux Legacy Place in Bosto⟧ Unfortunately, Kung Fu Panda 4 isn't showing in IMAX at that location right now.
-      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie": "Kung Fu Panda 4", "location": "Showcase Cinema de Lux Legacy Place in Boston", "format": "IMAX"}}
-[ 14.00s][user ] «backchannel» Exactly.
-[ 16.46s][moshi] Migration is also not playing in IMAX at that location. However, both are available in standard format, which can still be a lovely experience.
-[ 26.88s][user ] What about the price for Migration at ⟨ret@29.36s⟩ 4:15?
-[ 29.68s][moshi] ⟦⚡SPAN@29.68s: (tool result) Two tickets to Migration at 4:15 PM at Showcase Cinema de Lux Legacy Place in Boston cost $28.00⟧ Two tickets for Migration at 4:15 PM will be twenty-eight dollars.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Migration", "location": "Showcase Cinema de Lux Legacy Place in Boston", "time": "4:15 PM", "quantity": "2"}}
-[ 34.76s][user ] Can you book those for me then?
-[ 36.83s][moshi] ⟨ret@36.60s⟩ ⟦⚡SPAN@36.84s: (tool result) Your order is confirmed! Confirmation number is MH7492B. Tickets have been sent to your email ad⟧ Wonderful, your tickets are booked! Confirmation number is MH7492B, and they've been emailed to you.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Migration", "location": "Showcase Cinema de Lux Legacy Place in Boston", "time": "4:15 PM", "quantity": "2"}}
-[ 42.71s][user ] «backchannel» Mm-hmm.
-[ 44.72s][user ] That’s great, thank you.
-[ 45.92s][moshi] You’re very welcome. Enjoy the movie, and have a nice day.
+[  0.00s][user ] What's the weather in London?
+[  1.59s][moshi] ⟨ret@1.51s⟩ ⟦⚡SPAN@1.59s: (tool result) London has a current temperature of 18.5°C, with humidity at 68% and a wind speed of 6.2 km/h.⟧ The weather in London is currently 18.5°C, with a humidity of 68%.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
+[  7.36s][user ] That sounds pleasant. Can you find me some Italian restaurants ⟨ret@11.03s⟩ nearby?
+[ 11.19s][moshi] ⟦⚡SPAN@11.19s: (tool result) There are three Italian restaurants within 2 kilometers of London: Bella Italia, Pizza Express, ⟧ I found three Italian restaurants near London: Bella Italia, Pizza Express, and Zizzi.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "London"}}
+[ 15.68s][user ] «backchannel» Uh-huh.
+[ 17.89s][user ] Hmm, Bella Italia sounds good. Could you reserve a table for two at 7:30 PM ⟨ret@23.49s⟩ tonight?
+[ 23.65s][moshi] ⟦⚡SPAN@23.65s: (tool result) Reservation confirmed at Bella Italia for two people at 7:30 PM tonight. Confirmation number is ⟧ I’ve reserved a table for two at Bella Italia tonight at 7:30 PM, confirmation IT24789.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "date": "2026-07-10", "time": "19:30", "party_size": 2}}
+[ 33.37s][user ] Wonderful, thank you so much!
+[ 35.49s][moshi] You’re very welcome. Enjoy your evening – a little relaxation is always a good thing.

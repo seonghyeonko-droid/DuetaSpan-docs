@@ -1,10 +1,10 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Sio, a thoughtful and soft-spoken personal guide who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Zean, a curious and validating personal guide who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_06",
-    "name": "Avery",
+    "name": "Maya",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -12,48 +12,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "French",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-03-11",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-06-21",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
     },
     {
-      "date": "2026-01-17",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-06-09",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2025-10-22",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2026-02-04",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-10-01",
+      "date": "2025-07-03",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-06-03",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-08-02",
-      "category": "home",
-      "text": "User's home address is 911 Maple Drive."
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-27",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-09-20",
+      "date": "2026-04-10",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -61,56 +53,26 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-07-15",
-      "title": "Booked a dentist appointment",
+      "date": "2025-10-01",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Find action movies directed by Akira Kurosawa and featuring Toshiro Mifune.
-[  5.37s][moshi] ⟨ret@5.29s⟩ ⟦⚡SPAN@5.37s: (tool result) Seven Samurai (1954) is an action film directed by Akira Kurosawa starring Toshiro Mifune, and Y⟧ I found two films that match your request: *Seven Samurai* from 1954, and *Yojimbo* from 1961.
-      CALL: {"function": "Movies_3_FindMovies", "arguments": {"director": "Akira Kurosawa", "actor": "Toshiro Mifune", "genre": "action"}}
-[  8.76s][user ] «backchannel» Yeah.
-[ 13.03s][user ] Hmm, tell me more about *Seven Samurai*.
-[ 15.16s][moshi] ⟨ret@15.00s⟩ ⟦⚡SPAN@15.16s: (no information found)⟧ I’m sorry, I don’t have more detailed information about *Seven Samurai* readily available right now.
-[ 18.22s][user ] «backchannel» Yeah.
-[ 20.99s][user ] Okay. Can you find showtimes for *Yojimbo* near me?
-[ 24.32s][moshi] ⟨ret@24.24s⟩ ⟦⚡SPAN@24.32s: (tool result) Showtimes for Yojimbo are available at the Grand Cinema at 6:30 PM and 9:15 PM today.⟧ There are showtimes for *Yojimbo* at the Grand Cinema this evening, at 6:30 and 9:15.
-      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Yojimbo"}}
-[ 27.34s][user ] «backchannel» Mm-hmm.
-[ 29.71s][moshi] Perhaps a good choice for a quiet evening.
-[ 31.28s][user ] «backchannel» Mhm.
-[ 32.19s][user ] Book me a ticket for the 9:15 ⟨ret@34.26s⟩ showing.
-[ 34.58s][moshi] ⟦⚡SPAN@34.58s: (tool result) Your ticket for Yojimbo at 9:15 PM at the Grand Cinema is confirmed. Confirmation number is AX78⟧ You’re all set! I’ve booked a ticket for *Yojimbo* at 9:15 at the Grand Cinema; your confirmation is AX7892.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Yojimbo", "time": "9:15 PM"}}
-[ 37.86s][user ] «backchannel» Mhm.
-[ 43.46s][user ] Perfect, thanks! What’s the weather like ⟨ret@45.96s⟩ there?
-[ 46.20s][moshi] ⟦⚡SPAN@46.20s: (tool result) The weather at the Grand Cinema is currently 22.5°C, with 68% humidity and a light breeze from t⟧ It’s currently 22.5 degrees Celsius near the Grand Cinema, with a light breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Grand Cinema"}}
-[ 51.38s][user ] That sounds pleasant. I’m feeling a bit stressed about a project at work.
-[ 55.31s][moshi] That’s understandable. Work can be demanding, and it’s good to acknowledge those feelings.
-[ 61.05s][user ] It is… I'm really behind schedule.
-[ 63.20s][moshi] It’s easy to feel overwhelmed when deadlines loom. Perhaps breaking down the project into smaller steps could help?
-[ 67.05s][user ] «backchannel» Mhm.
-[ 70.25s][user ] That’s a good idea. But I'm worried about presenting to the board.
-[ 73.20s][moshi] Presentations can be nerve-wracking. Remember to focus on your preparation and your expertise.
-[ 77.58s][user ] «backchannel» Right.
-[ 78.72s][user ] Easier said than done, I guess.
-[ 80.80s][moshi] It often is. Taking a few deep breaths before you begin can also help calm your nerves.
-[ 84.76s][user ] «backchannel» Yeah.
-[ 86.66s][user ] Hmm… maybe. Can you find some relaxing music for ⟨ret@89.53s⟩ me?
-[ 89.85s][moshi] ⟦⚡SPAN@89.85s: (tool result) I found a playlist titled “Ambient Calm” on Spotify with several relaxing tracks.⟧ I found a playlist called “Ambient Calm” on Spotify that might be helpful.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "relaxing"}}
-[ 92.21s][user ] «backchannel» Yeah.
-[ 95.59s][user ] Play it. ⟨ret@96.14s⟩
-[ 96.29s][moshi] ⟦⚡SPAN@96.30s: (tool result) Now playing “Ambient Calm” on Spotify.⟧ The playlist is now playing on Spotify.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"playlist_name": "Ambient Calm"}}
-[ 98.71s][user ] That's nice. Thank you, Sio.
-[100.42s][moshi] You’re very welcome. It's good to take a moment for yourself when you're feeling pressured.
-[104.97s][user ] I think I will.
-[106.15s][moshi] I'm glad to hear that. Remember, you've got this.
+[  0.00s][user ] Can you clear the code session named projX version one?
+[  3.46s][moshi] ⟨ret@3.38s⟩ ⟦⚡SPAN@3.46s: (no information found)⟧ Hmm, I’m not finding a code session named “projX version one” right now.
+      CALL: {"function": "read_file", "arguments": {"file_path": "projX version one"}}
+[  8.36s][user ] Oh, sorry. It’s actually projX, version ⟨ret@11.06s⟩ 2.
+[ 11.29s][moshi] ⟦⚡SPAN@11.30s: (no information found)⟧ Still no luck locating a session called “projX, version 2.” Perhaps a typo?
+      CALL: {"function": "read_file", "arguments": {"file_path": "projX version 2"}}
+[ 17.01s][user ] No, wait—projX v2. It's in the documents ⟨ret@19.72s⟩ folder.
+[ 20.04s][moshi] ⟦⚡SPAN@20.04s: (no information found)⟧ That’s odd. I can’t seem to find that session either, even looking in documents.
+      CALL: {"function": "read_file", "arguments": {"file_path": "documents/projX v2"}}
+[ 24.17s][user ] Ugh, okay. Just clear all code sessions ⟨ret@26.73s⟩ then.
+[ 27.13s][moshi] ⟦⚡SPAN@27.13s: (tool result) Successfully cleared all code generation sessions.⟧ Alright, all code sessions are now cleared. A fresh start can be good sometimes, don't you think?
+      CALL: {"function": "create_directory", "arguments": {"directory_path": "clear_codegen_session"}}

@@ -4,48 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Casey",
+#     "name": "Henri",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-05-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2026-05-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-08",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-04-30",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-02-28",
+#       "date": "2025-12-07",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-09-07",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-08-11",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-06-25",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-17",
+#       "date": "2026-01-05",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -53,15 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-09",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-08",
+#       "date": "2025-06-23",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -71,57 +68,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Where does because of mr. terupt t | S2 I’m trying to plan a little trip. | S3 Yeah, definitely. Are there any go | S4 Oh, honestly, the traffic on the P
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, when was the | S2 Was it immediately popular, or did | S3 What about other countries? Did th | S4 Oh, that’s a subtle but important 
 
-     0.00s  user  발화 시작: Where does because of mr. terupt take place?
-     2.55s  <ret> 발화 (turn1 첫 프레임)
-     2.91s  user  발화 끝
-     2.94s  agent 발화 시작: <ret> The story unfolds at Snow Hill Elementary School, loca
-     2.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: Snow Hill Elementary School in Milford, Connecticut, serves as the pri
-    11.33s  agent 발화 끝
-    11.44s  user  발화 시작: Hmm, Milford… is that near New Haven?
-    14.20s  <ret> 발화 (turn3 첫 프레임)
-    14.39s  user  발화 끝
-    14.44s  agent 발화 시작: <ret> Milford is about nine and a half miles from New Haven,
-    14.44s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.09s]: (tool result) Milford, Connecticut is approximately 9.9 miles from New
-    19.53s  agent 발화 끝
-    20.24s  user  발화 시작: Oh, that’s not far at all.
-    21.62s  user  발화 끝
-    21.62s  agent 발화 시작: It’s certainly close enough for a day trip, or even to visit
-    25.12s  user  발화 시작: Mhm.
-    25.62s  user  발화 끝
-    28.68s  user  발화 시작: I’m trying to plan a little trip.
-    28.75s  agent 발화 끝
-    30.30s  agent 발화 시작: That sounds lovely! Planning can be such a helpful step towa
-    30.43s  user  발화 끝
-    32.38s  user  발화 시작: Yeah.
-    32.78s  user  발화 끝
-    37.20s  agent 발화 끝
-    37.27s  user  발화 시작: Well, I was thinking Connecticut, maybe… but I need to check
-    40.39s  <ret> 발화 (turn11 첫 프레임)
-    40.64s  user  발화 끝
-    40.71s  agent 발화 시작: <ret> Right now in Milford, it’s twenty-one point two degree
-    40.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) The weather in Milford, Connecticut is currently 21.2°C,
-    45.27s  user  발화 시작: Yeah.
-    45.99s  user  발화 끝
-    46.87s  agent 발화 시작: A comfortable temperature is always a good sign for a trip, 
-    46.92s  agent 발화 끝
-    50.72s  agent 발화 끝
-    51.40s  user  발화 시작: Yeah, definitely. Are there any good bookstores in Milford?
-    54.49s  <ret> 발화 (turn15 첫 프레임)
-    54.56s  agent 발화 시작: <ret> There’s a Waldenbooks at the Milford Mall, at one two 
-    54.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) Waldenbooks at the Milford Mall is a bookstore located a
-    54.64s  user  발화 끝
-    59.59s  user  발화 시작: That sounds perfect!
-    59.61s  agent 발화 끝
-    60.84s  agent 발화 시작: It’s wonderful to find a place that fits your interests so e
-    60.88s  user  발화 끝
-    67.09s  agent 발화 끝
-    67.21s  user  발화 시작: Oh, honestly, the traffic on the Post Road is just awful.
-    70.67s  agent 발화 시작: Perhaps it's a good idea to avoid peak hours if you're headi
-    70.68s  user  발화 끝
-    75.99s  agent 발화 끝
-    76.57s  user  발화 시작: Good point. Maybe I’ll go later in the afternoon.
-    79.31s  agent 발화 시작: A less crowded time will allow you to enjoy the browsing exp
-    79.39s  user  발화 끝
-    85.75s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, when was the very first Father’s Day a
+     4.18s  <ret> 발화 (turn1 첫 프레임)
+     4.26s  user  발화 끝
+     4.58s  agent 발화 시작: <ret> So, the very first Father’s Day was celebrated on July
+     4.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: The first Father’s Day was observed on July 5, 1908, in Fairmont, West
+    14.59s  agent 발화 끝
+    14.70s  user  발화 시작: West Virginia, huh? That’s interesting.
+    16.87s  user  발화 끝
+    17.00s  agent 발화 시작: It truly is. It’s nice to reflect on the origins of these sp
+    19.85s  user  발화 시작: Yeah.
+    20.34s  user  발화 끝
+    21.86s  agent 발화 끝
+    23.67s  user  발화 시작: Do you know why they chose that particular date?
+    25.85s  <ret> 발화 (turn6 첫 프레임)
+    26.01s  agent 발화 시작: <ret> They chose the date because Sonora Smart Dodd proposed
+    26.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: Sonora Smart Dodd proposed the first Father’s Day in 1909 to honor her
+    26.21s  user  발화 끝
+    32.66s  user  발화 시작: Oh.
+    33.16s  user  발화 끝
+    35.38s  user  발화 시작: So, it was a daughter who started it all?
+    35.52s  agent 발화 끝
+    37.82s  user  발화 끝
+    38.15s  agent 발화 시작: Exactly. It was a very thoughtful gesture by Sonora Smart Do
+    40.66s  user  발화 시작: Yeah.
+    41.16s  user  발화 끝
+    42.55s  agent 발화 끝
+    42.60s  user  발화 시작: Was it immediately popular, or did it take a while to catch 
+    45.51s  <ret> 발화 (turn12 첫 프레임)
+    45.83s  agent 발화 시작: <ret> It was celebrated locally in 1908, but widespread reco
+    45.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: While celebrated locally in Fairmont in 1908, widespread recognition t
+    45.84s  user  발화 끝
+    49.80s  user  발화 시작: Nice.
+    50.29s  user  발화 끝
+    54.45s  agent 발화 시작: It’s amazing how long it can take for a tradition to truly b
+    54.55s  agent 발화 끝
+    62.51s  agent 발화 끝
+    64.11s  user  발화 시작: 1972… that’s a long time. Was there any opposition to making
+    69.17s  <ret> 발화 (turn16 첫 프레임)
+    69.32s  agent 발화 시작: <ret> Some people resisted making it a national holiday—fear
+    69.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: Some resisted a Father’s Day, fearing it would be commercialized, simi
+    69.48s  user  발화 끝
+    78.13s  agent 발화 끝
+    78.61s  user  발화 시작: Commercialized, huh? That makes sense.
+    80.73s  agent 발화 시작: It’s a common concern with many holidays, actually. Keeping 
+    80.91s  user  발화 끝
+    84.01s  user  발화 시작: Right.
+    84.42s  user  발화 끝
+    86.85s  agent 발화 끝
+    86.97s  user  발화 시작: What about other countries? Did they adopt it around the sam
+    89.65s  <ret> 발화 (turn21 첫 프레임)
+    90.05s  agent 발화 시작: <ret> Many countries adopted it during the 20th century—but 
+    90.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: Many countries adopted Father’s Day in the 20th century, but dates var
+    90.21s  user  발화 끝
+    98.90s  agent 발화 끝
+    99.65s  user  발화 시작: So, there’s no single worldwide Father’s Day?
+   102.76s  agent 발화 시작: No, there isn't—it’s celebrated on different dates around th
+   102.84s  user  발화 끝
+   109.49s  user  발화 시작: …but is it always about honoring fathers, or do some countri
+   110.27s  agent 발화 끝
+   113.91s  agent 발화 시작: It’s generally about honoring fathers—but the specific tradi
+   113.93s  user  발화 끝
+   126.66s  agent 발화 끝
+   126.77s  user  발화 시작: Oh, that’s a subtle but important difference.
+   128.81s  agent 발화 시작: It is. It's a chance to appreciate the role of fathers and f
+   129.02s  user  발화 끝
+   133.76s  agent 발화 끝
+   133.82s  user  발화 시작: Did you see old man Hemlock’s roses are finally blooming?
+   137.03s  agent 발화 시작: That's lovely to hear. Focusing on the positive, like beauti
+   137.05s  user  발화 끝
+   138.96s  user  발화 시작: Yeah.
+   139.36s  user  발화 끝
+   143.33s  agent 발화 끝
+   143.44s  user  발화 시작: You’re right. It’s good to appreciate the small things.
+   146.09s  agent 발화 시작: Exactly. And remembering to show appreciation to those we ca
+   146.16s  user  발화 끝
+   152.58s  agent 발화 끝

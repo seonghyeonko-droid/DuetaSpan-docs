@@ -1,105 +1,70 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Frarix, a practical and reassuring wellness coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Feli, a encouraging and non-judgmental personal guide who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Iris",
+    "name": "Thomas",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "female",
+    "nationality": "French",
+    "gender": "male",
     "age_range": "late 30s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-17",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2025-08-17",
+      "category": "work",
+      "text": "User works as a architect."
     },
     {
-      "date": "2026-06-13",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2026-03-03",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-02-11",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-12-26",
+      "date": "2025-07-28",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
+      "text": "User is planning a trip to Lisbon in December."
     },
     {
-      "date": "2025-08-15",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-07-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-06-26",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-15",
+      "date": "2025-10-21",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-07-08",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Iris, I'm Frarix. I help people find better rest, and I'm glad to connect with you today.
-[  4.99s][user ] «backchannel» Yeah.
-[  6.86s][user ] Um, I’ve been having trouble falling asleep lately.
-[  9.55s][moshi] That’s very common, Iris. It's good you're addressing it—sleep is foundational for well-being.
-[ 15.61s][user ] Yeah, welll… I was hoping you could give me some advice.
-[ 19.39s][moshi] What specifically feels difficult about falling asleep? Is it racing thoughts, or something else?
-[ 26.01s][user ] I think it's just… too much on my mind.
-[ 29.66s][moshi] Many find that a consistent bedtime routine can help quiet those thoughts.
-[ 32.99s][user ] «backchannel» Right.
-[ 34.48s][moshi] It signals to your body and mind it’s time to wind down, creating a calming association.
-[ 41.56s][user ] That makes sense. Do you have any specific routines you recommend?
-[ 45.40s][moshi] A warm bath, reading a physical book—not on a screen—or gentle stretching are good options.
-[ 50.16s][user ] «backchannel» Yeah.
-[ 53.58s][user ] I do enjoy reading. I’m planning a trip to Kyoto in December, ⟨ret@57.88s⟩ actually.
-[ 58.12s][moshi] ⟦⚡SPAN@58.12s: [2025-12-26] User is planning a trip to Kyoto in December.⟧ Ah, yes. You mentioned a Kyoto trip back in December.
-[ 62.20s][user ] Right. It’s been a while, though.
-[ 64.05s][moshi] It has. Perhaps incorporating some travel planning into your bedtime routine could be helpful.
-[ 67.76s][user ] «backchannel» Yeah.
-[ 70.95s][user ] That’s an interesting idea. I also have a Siamese cat, Bella.
-[ 75.35s][moshi] A lovely companion! Pets can be incredibly comforting, and contribute to relaxation.
-[ 79.33s][user ] «backchannel» Mm-hmm.
-[ 81.71s][user ] She is. I'm also into home fermentation, you know, making kimchi and ⟨ret@85.85s⟩ stuff.
-[ 86.09s][moshi] ⟦⚡SPAN@86.09s: [2026-06-17] User is into home fermentation.⟧ That's fascinating, Iris. Home fermentation can be a very mindful practice.
-[ 88.92s][user ] «backchannel» Right.
-[ 91.55s][user ] It is. But I'm also a pescatarian, so I have to be careful about the fish ⟨ret@96.03s⟩ sauce.
-[ 96.19s][moshi] ⟦⚡SPAN@96.19s: [2026-06-13] User is pescatarian.⟧ Good point—adapting recipes is key. Being mindful of your dietary needs is important.
-[101.22s][user ] «backchannel» Uh-huh.
-[102.93s][user ] And I’m allergic to peanuts, so I really have to read labels.
-[106.46s][moshi] ⟨ret@106.38s⟩ ⟦⚡SPAN@106.46s: [2026-03-03] User is allergic to peanuts.⟧ Iris. Food allergies require constant vigilance.
-[111.30s][user ] It can be a lot sometimes.
-[113.06s][moshi] It is, but managing those things proactively creates a sense of control, which can reduce anxiety.
-[122.28s][user ] True. I also have a dentist appointment coming up, I ⟨ret@125.81s⟩ think.
-[126.21s][moshi] ⟦⚡SPAN@126.21s: [2025-08-15] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ Yes, you booked an early-morning appointment with Dr. Han last August.
-[127.85s][user ] «backchannel» Right.
-[131.31s][user ] Oh, that’s right!
-[132.27s][moshi] Sometimes, simply knowing appointments are scheduled eases mental clutter.
-[134.24s][user ] «backchannel» Right.
-[138.34s][user ] I suppose so. It’s good to have things organized.
-[140.85s][moshi] It is. A little structure can be incredibly grounding, especially when feeling overwhelmed.
-[143.73s][user ] «backchannel» Yeah, totally.
-[147.91s][user ] Okay, that’s really helpful, Frarix. Thanks.
-[150.36s][moshi] You're very welcome, Iris. Remember, small consistent steps create lasting change. Sweet dreams.
+[  0.00s][moshi] Hi Thomas, I'm Feli. It's lovely to meet you. How are things going today?
+[  6.71s][user ] Um, well, I was just wondering if you remembered anything about my upcoming ⟨ret@10.45s⟩ trip.
+[ 10.69s][moshi] ⟦⚡SPAN@10.69s: [2025-07-28] User is planning a trip to Lisbon in December.⟧ Yes, I do. You’re planning a trip to Lisbon in December, which sounds wonderful.
+[ 16.28s][user ] Right, Lisbon! I was thinking about places to stay ⟨ret@19.39s⟩ there.
+[ 19.70s][moshi] ⟦⚡SPAN@19.71s: (tool result) Hotel Lisboa Plaza is trading at 150 EUR per night, with a 4.5-star rating and free Wi-Fi. Also,⟧ Hotel Lisboa Plaza is available for 150 EUR a night, and The Lumiares is 200 EUR.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Lisbon"}}
+[ 22.64s][user ] «backchannel» Exactly.
+[ 27.28s][user ] …Actually, before we get into hotels, do you remember what I was looking at regarding home ⟨ret@31.89s⟩ networks?
+[ 32.13s][moshi] ⟦⚡SPAN@32.13s: [2025-07-08] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.⟧ Ah, yes!

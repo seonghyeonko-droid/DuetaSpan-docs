@@ -4,98 +4,135 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "태우",
+#     "name": "가민",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-09-05",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-08-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2025-08-06",
+#       "date": "2026-05-20",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-07-25",
+#       "date": "2026-04-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2026-04-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-03-20",
 #       "category": "pet",
 #       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-06-24",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-03-14",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Researching a used car",
+#       "date": "2025-11-07",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-09-09",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-11-03",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이집트의 기자 피라미드 좌표를 찾아주시겠어요? | S2 …혹시 메나 하우스 호텔 예약이 가능한지 확인해 주시겠어요?  | S3 정말 감사합니다. 혹시 그 호텔에서 피라미드까지 걸어서 갈 수 | S4 아, 그렇군요. 알겠습니다.
+# EXAMINER(FDB-v2) 단계: S1 런던 히스로 공항에서 샤를 드 골 공항까지 비즈니스석 두 장, | S2 혹시 호텔도 같이 예약해 줄 수 있어요? | S3 사월 일일은 비행기 타고 가니까, 사월 이일 체크인으로 바꿔  | S4 알랭 뒤카스 예약도 부탁해요. 사월 이일 저녁 여덟시에.
 
-     0.00s  user  발화 시작: 이집트의 기자 피라미드 좌표를 찾아주시겠어요?
-     2.89s  <ret> 발화 (turn1 첫 프레임)
-     2.95s  agent 발화 시작: <ret> 기자 피라미드는 북위 이십구 점 구 칠 구 이도, 동경 삼십일 점 일 삼 사 이도에 위치해 있습니
-     2.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.70s]: (tool result) The Pyramids of Giza are located at 29.9792 degrees Nort
-     3.23s  user  발화 끝
-    12.63s  user  발화 시작: 음… 혹시 그 주변에 괜찮은 호텔도 알아봐 주실 수 있을까요?
-    12.64s  agent 발화 끝
-    16.70s  <ret> 발화 (turn3 첫 프레임)
-    17.09s  agent 발화 시작: <ret> 기자 피라미드에서 오km 이내에 세 곳의 호텔이 있습니다. 메나 하우스 호텔은 별점 사 점 팔점에
-    17.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=17.26s]: (tool result) Found three hotels within 5km of the Pyramids of Giza: M
-    17.30s  user  발화 끝
-    27.59s  user  발화 시작: 오.
-    28.09s  user  발화 끝
-    34.12s  agent 발화 시작: 호텔 가격이 꽤 다양하네요—
-    34.35s  agent 발화 끝
-    35.19s  user  발화 시작: …혹시 메나 하우스 호텔 예약이 가능한지 확인해 주시겠어요? 내일 묵을 수 있는지요.
-    35.87s  agent 발화 끝
-    39.91s  <ret> 발화 (turn7 첫 프레임)
-    40.31s  agent 발화 시작: <ret> 메나 하우스 호텔에 이천이십육년 칠월 십일일에 일인실 예약을 완료했습니다. 확인 번호는 엠 에이치
-    40.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Booking confirmed for one guest at Mena House Hotel on J
-    40.33s  user  발화 끝
-    44.87s  user  발화 시작: 진짜요?
-    45.69s  user  발화 끝
-    48.57s  user  발화 시작: 정말 감사합니다. 혹시 그 호텔에서 피라미드까지 걸어서 갈 수 있을까요?
-    48.84s  agent 발화 끝
-    52.62s  <ret> 발화 (turn10 첫 프레임)
-    53.02s  agent 발화 시작: <ret> 메나 하우스 호텔에서 기자 피라미드까지는 약 이 점 오킬로미터이고, 걸어서 삼십분 정도 걸립니다.
-    53.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Walking distance from Mena House Hotel to the Pyramids o
-    53.25s  user  발화 끝
-    59.04s  agent 발화 끝
-    59.87s  user  발화 시작: 아, 그렇군요. 알겠습니다.
-    61.80s  user  발화 끝
-    61.85s  agent 발화 시작: 여행 준비 잘 하시고, 즐거운 시간 보내세요.
-    64.63s  agent 발화 끝
+     0.00s  user  발화 시작: 런던 히스로 공항에서 샤를 드 골 공항까지 비즈니스석 두 장, 사월 일일에 부탁해요.
+     0.00s  <ret> 발화 (turn1 첫 프레임)
+     0.00s  <ret> 발화 (turn3 첫 프레임)
+     0.00s  <ret> 발화 (turn5 첫 프레임)
+     0.05s  agent 발화 시작: <ret> 런던 히스로 공항에서 샤를 드 골 공항까지 비즈니스석 두 장은, 이천이십육년 사월 일일 출발 기준
+     0.05s  ⚡SPAN 주입 [d'=0.09s / d_lead=0.09s]: (tool result) Flights from London Heathrow to Charles de Gaulle airpor
+     0.05s  user  발화 끝
+     0.09s  <ret> 발화 (turn11 첫 프레임)
+     0.14s  user  발화 시작: 이천삼백사십오달러는 좀 비싸네요. 다른 항공사는 없어요?
+     0.14s  agent 발화 끝
+     0.17s  agent 발화 시작: <ret> 에어 프랑스 외에, 브리티시 에어웨이즈는 이천오백육십달러, KLM은 이천칠백팔십달러부터 있습니다.
+     0.17s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) British Airways also offers business class flights from 
+     0.17s  user  발화 끝
+     0.20s  user  발화 시작: 브리티시 에어웨이즈로 예약해 주세요.
+     0.20s  agent 발화 끝
+     0.22s  agent 발화 시작: <ret> 브리티시 에어웨이즈로 예약 완료되었습니다. 예약 번호는 비 에이 칠 팔 구 이 삼 사입니다.
+     0.22s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: (tool result) Booking confirmed for two business class tickets on Brit
+     0.22s  user  발화 끝
+     0.23s  <ret> 발화 (turn9 첫 프레임)
+     0.28s  user  발화 시작: 혹시 호텔도 같이 예약해 줄 수 있어요?
+     0.28s  agent 발화 끝
+     0.30s  agent 발화 시작: 어떤 지역의 호텔을 찾으시나요? 샤를 드 골 공항 근처나 파리 시내 중에서 선택하실 수 있어요.
+     0.30s  user  발화 끝
+     0.37s  user  발화 시작: 파리 시내에 있는 오성급 호텔로 부탁해요.
+     0.37s  agent 발화 끝
+     0.39s  agent 발화 시작: <ret> 파리 시내의 오성급 호텔 중에는 호텔 플라자 아테네와 르 브리스톨 파리가 유명합니다. 객실 요금은
+     0.39s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) The Hotel Plaza Athénée and Le Bristol Paris are highly-
+     0.39s  user  발화 끝
+     0.46s  user  발화 시작: 호텔 플라자 아테네로 예약해 주세요. 이박 삼일로요.
+     0.46s  agent 발화 끝
+     0.49s  agent 발화 시작: <ret> 호텔 플라자 아테네, 사월 일일부터 삼일까지 이박 삼일 예약 완료되었습니다. 예약 번호는 피 에이
+     0.49s  ⚡SPAN 주입 [d'=0.08s / d_lead=0.08s]: (tool result) Booking confirmed at Hotel Plaza Athénée for two nights,
+     0.49s  user  발화 끝
+     0.52s  <ret> 발화 (turn20 첫 프레임)
+     0.54s  <ret> 발화 (turn17 첫 프레임)
+     0.57s  user  발화 시작: 음.
+     0.57s  agent 발화 끝
+     0.57s  user  발화 시작: 사월 일일은 비행기 타고 가니까, 사월 이일 체크인으로 바꿔 줄 수 있어요?
+     0.57s  user  발화 끝
+     0.62s  agent 발화 시작: 네, 체크인 날짜를 사월 이일로 변경해 드릴게요.
+     0.62s  user  발화 끝
+     0.65s  user  발화 시작: —
+     0.65s  agent 발화 끝
+     0.65s  user  발화 시작: …근데 혹시 호텔 근처에 괜찮은 레스토랑도 추천해 줄 수 있어요?
+     0.65s  user  발화 끝
+     0.70s  agent 발화 시작: <ret> 호텔 플라자 아테네 근처에는 미슐랭 삼스타 레스토랑인 알랭 뒤카스가 있습니다.
+     0.70s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: (tool result) Alain Ducasse au Plaza Athénée, a three-Michelin-starred
+     0.70s  user  발화 끝
+     0.74s  agent 발화 시작: 알랭 뒤카스는 호텔 플라자 아테네 안에 있고, 현대 프랑스 요리를 맛볼 수 있습니다. 라베뉴도 근처에 인기 
+     0.74s  agent 발화 끝
+     0.81s  user  발화 시작: 알랭 뒤카스 예약도 부탁해요. 사월 이일 저녁 여덟시에.
+     0.81s  agent 발화 끝
+     0.84s  agent 발화 시작: <ret> 알랭 뒤카스, 사월 이일 저녁 여덟시 예약 완료되었습니다. 예약 번호는 에이 디 구 팔 칠 육 오
+     0.84s  ⚡SPAN 주입 [d'=0.07s / d_lead=0.07s]: (tool result) Reservation confirmed at Alain Ducasse au Plaza Athénée 
+     0.84s  user  발화 끝
+     0.91s  user  발화 시작: 그치.
+     0.91s  agent 발화 끝
+     0.92s  user  발화 시작: 정말 감사합니다. 덕분에 여행 계획이 잘 세워지는 것 같아요.
+     0.92s  user  발화 끝
+     0.96s  agent 발화 시작: 도움이 되었다니 기쁘네요. 여행 잘 다녀오세요.
+     0.96s  user  발화 끝
+     0.98s  user  발화 시작: 네, 알겠습니다.
+     0.98s  agent 발화 끝
+     0.99s  agent 발화 시작: 즐거운 여행 되세요.
+     0.99s  user  발화 끝
+     1.00s  agent 발화 끝

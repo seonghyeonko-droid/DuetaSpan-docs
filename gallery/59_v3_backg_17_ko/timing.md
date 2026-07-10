@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "윤빈",
+#     "name": "가원",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,112 +18,137 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2026-05-22",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-08",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-04-30",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-02-28",
+#       "date": "2026-05-19",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-07",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-08-11",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
+#     },
+#     {
+#       "date": "2025-06-25",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-17",
+#       "date": "2025-09-09",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-18",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2025-06-09",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-08",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… '미스터 테러프트 때문에'라는 책이 어디에서 벌어지는 이 | S2 흠… 홈페이지 들어가 보니까, 학교에서 특별한 행사 같은 거  | S3 아, 그래? 아쉽다. 그럼, 그 책 작가는 누구야? | S4 오, 상도 받았구나. 잘 됐네. 그럼, 롭 부예아 작가 다른 
+# EXAMINER(FDB-v2) 단계: S1 아빠의 날이 처음 지켜진 날이 언제였지? | S2 그녀는 왜 아빠의 날을 만들려고 했을까? | S3 아빠가 평소에 뭘 좋아하시는지 잘 모르겠어. | S4 삼백달러까지? 생각보다 비싸네.
 
-     0.00s  user  발화 시작: 음… '미스터 테러프트 때문에'라는 책이 어디에서 벌어지는 이야기인지 궁금해.
-     4.42s  <ret> 발화 (turn1 첫 프레임)
-     4.58s  agent 발화 시작: <ret> 그 책의 이야기는 코네티컷 주에 있는 스노우 힐 학교에서 벌어져요.
-     4.58s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.72s]: Snow Hill School in Connecticut is the setting for the novel Because o
-     4.77s  user  발화 끝
-     9.30s  agent 발화 끝
-    10.87s  user  발화 시작: 코네티컷이 어디쯤에 있는 주인지 좀 알려줄 수 있어?
-    13.23s  <ret> 발화 (turn3 첫 프레임)
-    13.46s  agent 발화 시작: <ret> 코네티컷 주는 미국 북동부 뉴잉글랜드 지역에 있는 주예요.
-    13.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) Connecticut is a state in the New England region of the 
-    13.68s  user  발화 끝
-    16.84s  user  발화 시작: 응.
-    17.19s  user  발화 끝
-    17.92s  user  발화 시작: 아, 그렇구나. 혹시 그 학교 홈페이지 같은 거 찾아볼 수 있어?
-    17.99s  agent 발화 끝
-    20.97s  <ret> 발화 (turn6 첫 프레임)
-    21.12s  agent 발화 시작: <ret> 스노우 힐 학교 웹사이트를 찾았어요. 주소는 shs.windsorct.org 입니다.
-    21.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) Snow Hill School is a public elementary school in Windso
-    21.15s  user  발화 끝
-    27.56s  agent 발화 끝
-    28.10s  user  발화 시작: 흠… 홈페이지 들어가 보니까, 학교에서 특별한 행사 같은 거 하는지 궁금하네.
-    32.24s  <ret> 발화 (turn8 첫 프레임)
-    32.64s  agent 발화 시작: <ret> 죄송해요. 스노우 힐 학교에서 다음 달에 특별한 행사는 없는 것 같아요.
-    32.64s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.17s]: (tool result) No events found at Snow Hill School in Windsor, Connecti
-    32.67s  user  발화 끝
-    34.61s  user  발화 시작: 맞아.
-    35.11s  user  발화 끝
-    36.66s  user  발화 시작: 어머, 세상에, 벌써 시간이 이렇게 됐네.
-    36.81s  agent 발화 끝
-    38.84s  user  발화 시작: 아, 그래? 아쉽다. 그럼, 그 책 작가는 누구야?
-    38.96s  user  발화 끝
-    42.00s  <ret> 발화 (turn12 첫 프레임)
-    42.16s  agent 발화 시작: <ret> '미스터 테러프트 때문에'의 작가는 롭 부예아 작가이고, 이천십년에 출판되었어요.
-    42.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.00s]: Rob Buyea is the author of Because of Mr. Terupt, published in 2010.
-    42.30s  user  발화 끝
-    44.89s  user  발화 시작: 와.
-    45.53s  user  발화 끝
-    47.16s  agent 발화 끝
-    47.59s  user  발화 시작: 이천십년이라고? 꽤 오래됐네. 혹시 그 책이 받은 상 같은 거 있어?
-    51.76s  <ret> 발화 (turn15 첫 프레임)
-    52.16s  agent 발화 시작: <ret> '미스터 테러프트 때문에'는 이천십일년 로드아일랜드 아동 도서상을 받았고, 다른 여러 상에도 후보
-    52.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.66s]: (tool result) Because of Mr. Terupt won the 2011 Rhode Island Children
-    52.31s  user  발화 끝
-    60.82s  agent 발화 끝
-    61.60s  user  발화 시작: 오, 상도 받았구나. 잘 됐네. 그럼, 롭 부예아 작가 다른 책도 있어?
-    66.91s  <ret> 발화 (turn17 첫 프레임)
-    67.07s  agent 발화 시작: <ret> 롭 부예아 작가의 다른 책으로는 'The Perfect Score'와 'The Last Last 
-    67.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) Rob Buyea has written several other books, including "Th
-    67.25s  user  발화 끝
-    74.09s  user  발화 시작: 아, 그렇구나. 알려줘서 고마워, 델리라.
-    74.20s  agent 발화 끝
-    76.70s  agent 발화 시작: 천만에요. 여행 계획을 세우는 데 도움이 되었다니 기뻐요.
-    76.86s  user  발화 끝
-    80.45s  agent 발화 끝
+     0.00s  user  발화 시작: 아빠의 날이 처음 지켜진 날이 언제였지?
+     2.04s  <ret> 발화 (turn1 첫 프레임)
+     2.19s  agent 발화 시작: <ret> 아빠의 날이 처음 지켜진 날은 천구백팔년 칠월 오일이었어요. 웨스트버지니아 주 페어몬트에서였죠.
+     2.20s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.44s]: The first Father’s Day was celebrated on July 5, 1908, in Fairmont, We
+     2.44s  user  발화 끝
+     4.39s  user  발화 시작: 응.
+     4.84s  user  발화 끝
+     8.63s  agent 발화 끝
+     8.67s  user  발화 시작: 웨스트버지니아는 어디에 있어?
+    10.20s  <ret> 발화 (turn4 첫 프레임)
+    10.44s  agent 발화 시작: <ret> 웨스트버지니아는 미국 애팔래치아 지역에 있는 주로, 버지니아, 켄터키, 오하이오, 펜실베이니아, 
+    10.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) West Virginia is a state in the Appalachian region of th
+    10.65s  user  발화 끝
+    16.80s  user  발화 시작: 응.
+    17.16s  user  발화 끝
+    19.32s  agent 발화 시작: 미국 동부 쪽이네요.
+    19.34s  agent 발화 끝
+    21.00s  user  발화 시작: 아빠의 날을 누가 처음 시작했어?
+    21.02s  agent 발화 끝
+    22.56s  <ret> 발화 (turn8 첫 프레임)
+    22.72s  agent 발화 시작: <ret> 아빠의 날을 처음 시작한 사람은 소노라 스마트 도드라는 분이에요. 천구백구년에 어머니의 날과 비슷
+    22.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: Sonora Smart Dodd is credited with creating Father’s Day in 1909 as a 
+    22.84s  user  발화 끝
+    31.33s  agent 발화 끝
+    32.63s  user  발화 시작: 소노라 스마트 도드에 대해 더 자세히 알고 싶어.
+    35.40s  user  발화 끝
+    35.47s  <ret> 발화 (turn10 첫 프레임)
+    35.71s  agent 발화 시작: <ret> 소노라 스마트 도드는 천팔백팔십이년 이월 십팔일에 태어나 천구백칠십팔년 칠월 이십일일에 세상을 떠
+    35.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.43s]: (tool result) Sonora Smart Dodd (February 18, 1882 – July 21, 1978) wa
+    44.56s  user  발화 시작: 와.
+    45.06s  user  발화 끝
+    48.14s  agent 발화 끝
+    48.39s  user  발화 시작: 그녀는 왜 아빠의 날을 만들려고 했을까?
+    51.00s  <ret> 발화 (turn13 첫 프레임)
+    51.08s  agent 발화 시작: <ret> 그녀는 새로 제정된 어머니의 날에서 영감을 받아, 남북전쟁 참전 용사이자 여섯 아이를 홀로 키운 
+    51.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.95s]: Dodd was inspired by the newly established Mother’s Day and wanted to 
+    51.16s  user  발화 끝
+    57.67s  user  발화 시작: 응.
+    58.02s  user  발화 끝
+    62.02s  agent 발화 끝
+    62.18s  user  발화 시작: 아빠의 날을 만들려고 얼마나 오래 걸렸어?
+    64.15s  <ret> 발화 (turn16 첫 프레임)
+    64.47s  agent 발화 시작: <ret> 천구백십년에 처음 기념 행사가 열렸지만, 아빠의 날이 공식적인 국경일로 인정받기까지는 천구백칠십이
+    64.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.03s]: Although initial celebrations took place in 1910, Father’s Day wasn’t 
+    64.67s  user  발화 끝
+    77.50s  agent 발화 끝
+    77.62s  agent 발화 시작: 천구백십년부터 시작해서—
+    79.08s  user  발화 시작: …근데 지금은 아빠한테 뭘 선물해야 할지 고민이야.
+    79.84s  agent 발화 끝
+    81.88s  agent 발화 시작: 아, 지금은 선물을 고민하고 계시는군요. 아빠께 어떤 선물을 드리고 싶으세요?
+    82.03s  user  발화 끝
+    87.02s  agent 발화 끝
+    87.36s  user  발화 시작: 아빠가 평소에 뭘 좋아하시는지 잘 모르겠어.
+    89.68s  agent 발화 시작: 아빠께서 평소에 좋아하시는 게 딱히 떠오르지 않으신다면, 취미나 관심사를 생각해 보는 건 어떠세요?
+    89.86s  user  발화 끝
+    96.12s  agent 발화 끝
+    96.21s  user  발화 시작: 취미는… 음, 등산을 좋아하시는 것 같아.
+    98.58s  agent 발화 시작: 등산을 좋아하신다면, 등산용품이나 편안한 등산화를 선물하는 것도 좋을 것 같아요.
+    98.65s  user  발화 끝
+   101.71s  user  발화 시작: 응응.
+   102.32s  user  발화 끝
+   104.31s  user  발화 시작: 괜찮은 아이디어네. 얼마 정도 할까?
+   104.37s  agent 발화 끝
+   106.63s  <ret> 발화 (turn26 첫 프레임)
+   106.78s  agent 발화 시작: <ret> 등산화 가격은 브랜드, 기능, 소재에 따라 보통 팔십달러에서 삼백달러 정도예요.
+   106.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Prices for hiking boots typically range from $80 to $300
+   106.90s  user  발화 끝
+   112.44s  agent 발화 끝
+   112.49s  user  발화 시작: 삼백달러까지? 생각보다 비싸네.
+   114.61s  user  발화 끝
+   114.70s  agent 발화 시작: 등산화는 발을 보호하는 중요한 장비라서 품질이 좋은 것을 고르는 게 좋아요. 너무 저렴한 건 발이 불편할 수
+   122.57s  user  발화 시작: 맞는 말이네. 그럼 다른 선물은 뭐가 있을까?
+   122.58s  agent 발화 끝
+   124.94s  agent 발화 시작: 아빠께 필요한 물건이나 갖고 싶어 하셨던 물건을 선물하는 것도 좋은 방법이에요. 평소에 어떤 말씀을 하셨는지
+   125.15s  user  발화 끝
+   133.61s  agent 발화 끝
+   133.89s  user  발화 시작: 음… 최근에 건강 검진을 받으셨다고 하셨던 것 같아.
+   136.77s  agent 발화 시작: 건강 검진을 받으셨다면, 건강 관련 제품이나 영양제를 선물하는 것도 의미 있을 것 같아요.
+   137.12s  user  발화 끝
+   142.81s  agent 발화 시작: 아빠께 좋은 선물을 고르셔서 기쁘시길 바라요.
+   142.84s  agent 발화 끝
+   146.23s  agent 발화 끝

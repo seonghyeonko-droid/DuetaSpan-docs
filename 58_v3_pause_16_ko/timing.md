@@ -4,95 +4,83 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "채린",
+#     "name": "수람",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-23",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "date": "2026-05-27",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-03-22",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-12-20",
+#       "date": "2026-05-23",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-12-10",
+#       "date": "2025-07-04",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-11-08",
+#       "date": "2025-07-03",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-06-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-15",
-#       "title": "Researching a used car",
+#       "date": "2026-06-17",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-19",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그 노래… 엄마는 카우보이가 되지… | S2 에드 브루스… 음… 그분 다른 노래도 있나요? | S3 아, 텍사스도 부르셨구나… 그… | S4 …곡은 언제 발매됐을까요? …
+# EXAMINER(FDB-v2) 단계: S1 예수 그리스도 슈퍼스타 가사는 누가 썼는지 궁금해. | S2 아, 에비타도 팀 라이스 작품이었구나. | S3 그 사람이 쓴 가사 스타일이 좀 독특하잖아요… | S4 …뮤지컬 작가들하고 어떻게 다른 건가요?
 
-     0.00s  user  발화 시작: 그 노래… 엄마는 카우보이가 되지…
-     3.56s  user  발화 끝
-     4.96s  user  발화 시작: …않게 하세요… 부르는 사람이 누구였더라…?
-     8.13s  <ret> 발화 (turn2 첫 프레임)
-     8.53s  agent 발화 시작: <ret> 그 노래는 에드 브루스라는 미국의 컨트리 음악 가수이자 작곡가가 불렀습니다.
-     8.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: Ed Bruce is an American country music singer and songwriter.
-     8.75s  user  발화 끝
-    11.22s  user  발화 시작: 네.
-    11.62s  user  발화 끝
-    13.74s  user  발화 시작: 에드 브루스… 음… 그분 다른 노래도 있나요?
-    13.90s  agent 발화 끝
-    16.69s  <ret> 발화 (turn5 첫 프레임)
-    17.01s  agent 발화 시작: <ret> 에드 브루스는 "텍사스(내가 죽을 때)"나 "밤에 일어나는 일들" 같은 곡으로도 유명합니다.
-    17.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.43s]: (tool result) Ed Bruce also had hits with songs like "Texas (When I Di
-    17.07s  user  발화 끝
-    20.19s  user  발화 시작: 그렇죠.
-    20.73s  user  발화 끝
-    23.44s  agent 발화 끝
-    24.61s  user  발화 시작: 아, 텍사스도 부르셨구나… 그…
-    26.96s  user  발화 끝
-    27.89s  user  발화 시작: …곡은 언제 발매됐을까요? …
-    29.34s  <ret> 발화 (turn9 첫 프레임)
-    29.50s  agent 발화 시작: <ret> "텍사스(내가 죽을 때)"는 천구백칠십사년에 발매되었고 에드 브루스의 대표곡이 되었습니다.
-    29.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: "Texas (When I Die)" was released in 1974 and became Ed Bruce's signat
-    29.64s  user  발화 끝
-    36.63s  agent 발화 끝
+     0.00s  user  발화 시작: 예수 그리스도 슈퍼스타 가사는 누가 썼는지 궁금해.
+     3.20s  <ret> 발화 (turn1 첫 프레임)
+     3.60s  agent 발화 시작: <ret> 예수 그리스도 슈퍼스타 가사는 천구백칠십년 록 오페라를 위해 팀 라이스가 썼어요.
+     3.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: Tim Rice wrote the lyrics for the 1970 rock opera Jesus Christ Superst
+     3.66s  user  발화 끝
+    10.27s  user  발화 시작: 팀 라이스… 다른 작품도 많이 했어요?
+    10.32s  agent 발화 끝
+    12.92s  <ret> 발화 (turn3 첫 프레임)
+    13.23s  agent 발화 시작: <ret> 팀 라이스는 앤드류 로이드 웨버를 포함한 여러 작곡가와 협업해서 에비타, 요셉과 환상적인 색깔 꿈
+    13.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Tim Rice has collaborated with several composers, including Andrew Llo
+    13.45s  user  발화 끝
+    23.06s  agent 발화 끝
+    23.77s  user  발화 시작: 아, 에비타도 팀 라이스 작품이었구나.
+    26.21s  agent 발화 시작: 맞아요, 팀 라이스는 정말 다양한 작품에 참여했답니다.
+    26.31s  user  발화 끝
+    30.54s  user  발화 시작: 그 사람이 쓴 가사 스타일이 좀 독특하잖아요…
+    30.65s  agent 발화 끝
+    33.89s  agent 발화 시작: 팀 라이스의 가사 스타일은—
+    33.96s  user  발화 끝
+    35.77s  user  발화 시작: …그 독특한 스타일이 다른…
+    35.92s  agent 발화 끝
+    38.03s  user  발화 끝
+    39.28s  user  발화 시작: …뮤지컬 작가들하고 어떻게 다른 건가요?
+    41.66s  <ret> 발화 (turn10 첫 프레임)
+    42.06s  agent 발화 시작: <ret> 죄송하지만, 다른 뮤지컬 작가들과의 스타일 차이에 대한 정보는 찾을 수 없었어요.
+    42.06s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.60s]: (no information found)
+    42.19s  user  발화 끝
+    44.07s  user  발화 시작: 응.
+    44.52s  user  발화 끝
+    47.48s  agent 발화 시작: 혹시 다른 뮤지컬에 대해 궁금한 점이 있으신가요?
+    47.66s  agent 발화 끝
+    50.81s  agent 발화 끝

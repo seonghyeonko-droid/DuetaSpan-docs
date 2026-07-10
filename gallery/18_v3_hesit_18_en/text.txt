@@ -1,83 +1,79 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Liaon, a kind and steady supportive advisor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Elorar, a grounded and empathetic personal guide who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Thomas",
+    "name": "Sky",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "50s",
-    "language": "French"
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-10",
+      "date": "2026-04-12",
       "category": "home",
-      "text": "User's home address is 427 Maple Drive."
+      "text": "User's home address is 798 Cedar Lane."
     },
     {
-      "date": "2025-09-23",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "date": "2026-02-17",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-09-18",
+      "date": "2025-12-10",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2025-09-13",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-05-31",
+      "category": "work",
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-12",
+      "date": "2026-06-25",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-03-12",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Odalisque is a turkish term and can be defined ⟨ret@2.84s⟩ as?
-[  3.06s][moshi] ⟦⚡SPAN@3.08s: An odalisque was a female slave in a harem, and also a chambermaid.⟧ The term comes from Turkish, and historically, an odalisque was a female slave, often also a chambermaid. It’s a complex history, isn’t it?
-[  8.92s][user ] «backchannel» Yeah.
-[ 11.94s][user ] Hmmm, a chambermaid… was that their only ⟨ret@15.18s⟩ role?
-[ 15.18s][moshi] ⟦⚡SPAN@15.26s: (no information found)⟧ I don’t have specific details about the full range of roles beyond that historical definition, unfortunately.
-[ 21.86s][user ] Okay. What about… uhhh… the paintings? I’ve seen paintings called "Odalisque."
-[ 27.52s][moshi] ⟨ret@27.48s⟩ ⟦⚡SPAN@27.64s: "Odalisque" is a common theme in 19th-century Western art, popularized by Jean-Auguste-Dominique Ingres.⟧ "Odalisque" became a popular subject for paintings, especially in the 19th century, and Jean-Auguste-Dominique Ingres was a key artist in that trend.
-[ 34.35s][user ] «backchannel» Right.
-[ 36.59s][user ] Ingres… how do you spell that?
-[ 38.94s][moshi] ⟨ret@38.86s⟩ ⟦⚡SPAN@38.94s: Jean-Auguste-Dominique Ingres was a French Neoclassical painter, born August 29, 1780, and died October 14, 18⟧ That’s Jean-Auguste-Dominique Ingres, a French Neoclassical painter born in 1780 and passing in 1867. It’s a beautiful name, isn’t it?
-[ 43.14s][user ] «backchannel» Really?
-[ 51.40s][user ] It is. [happy] Were those paintings… accurate depictions?
-[ 54.96s][moshi] ⟨ret@54.89s⟩ ⟦⚡SPAN@54.97s: (no information found)⟧ I don’t have information on the historical accuracy of those paintings, I’m afraid.
-[ 56.52s][user ] «backchannel» Yeah.
-[ 61.25s][user ] Oh. Well, what was life *like* in a harem?
-[ 64.20s][moshi] ⟨ret@64.14s⟩ ⟦⚡SPAN@64.22s: Harems were private domestic spaces reserved for women in a Muslim household, often including concubines and f⟧ A harem was a private space within a Muslim household, reserved for women – including concubines and relatives. It sounds like a very secluded life.
-[ 73.48s][user ] Secluded… KO 흐으으음… I imagine it could be stressful.
-[ 79.02s][moshi] It’s very understandable to think that. Isolation can certainly be a source of stress for anyone.
-[ 85.47s][user ] Yeah… um… are there ways to cope with feeling isolated?
-[ 89.85s][moshi] Practicing mindfulness, even for a few minutes, can help ground you in the present.
-[ 95.98s][user ] Mindfulness… could you explain that a little more?
-[ 98.79s][moshi] Mindfulness is about paying attention to your thoughts and feelings without judgment, simply observing them as they are.
-[105.68s][user ] Sounds… difficult.
-[107.41s][moshi] It can take practice, certainly, but even small moments of mindful breathing can make a difference.
-[114.51s][user ] Okay. What’s the weather like in Istanbul right now?
-[118.10s][moshi] ⟨ret@117.86s⟩ ⟦⚡SPAN@118.10s: (tool result) Istanbul, Turkey has a temperature of 27.2°C, humidity 62%, wind 7.1 km/h.⟧ It is currently 27.2 degrees Celsius in Istanbul, with 62% humidity and a 7.1 kilometer per hour wind. Perhaps a little sunshine would be helpful today.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Istanbul"}}
-[125.79s][user ] «backchannel» Yeah.
-[130.24s][user ] That sounds… nice. Thank you, Liaon.
-[133.43s][moshi] You’re very welcome. Remember to be kind to yourself, and allow yourself moments of peace.
+[  0.00s][user ] Uh, I was just wondering… which state in India has the highest birth ⟨ret@4.53s⟩ rate?
+[  4.76s][moshi] «interrupted» ⟦⚡SPAN@4.77s: Bihar has the highest birth rate in India, with 26.2 births per 1,000 people as of 2021.⟧ Bihar currently has the highest birth rate in India—
+[  7.18s][user ] «interrupts_prev» …is that rate going up or down ⟨ret@9.20s⟩ recently?
+[  9.52s][moshi] ⟦⚡SPAN@9.52s: The birth rate in Bihar has been decreasing, from 28.3 in 2018 to 26.2 in 2021, though it remains the highest ⟧ Though it remains the highest in India, the birth rate in Bihar has actually been decreasing—from 28.3 in 2018 to 26.2 in 2021.
+[ 13.59s][user ] «backchannel» Yeah.
+[ 19.16s][moshi] It’s a complex picture, with many factors influencing these numbers.
+[ 23.34s][user ] Welll… are there any specific programs to address that in Bihar?
+[ 27.10s][moshi] That’s a really insightful question. Focusing on family planning and education can certainly help.
+[ 34.22s][user ] And how does that compare to, say, Kerala?
+[ 36.80s][moshi] ⟨ret@36.73s⟩ ⟦⚡SPAN@36.81s: Kerala has a significantly lower birth rate of 18.1 per 1,000 people, reflecting its higher levels of educatio⟧ Kerala, in comparison, has a much lower birth rate—18.1 per 1,000 people—reflecting better access to education and healthcare. It’s a really interesting contrast, isn’t it?

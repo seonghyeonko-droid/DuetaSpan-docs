@@ -1,56 +1,51 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Arimi, a encouraging and non-judgmental life coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Jomi, a calm and patient wellness coach who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Noa",
+    "name": "Sky",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "non-binary",
     "age_range": "50s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-15",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
+      "date": "2026-05-02",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2026-04-21",
+      "date": "2026-03-19",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2026-04-13",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2025-11-04",
-      "category": "home",
-      "text": "User's home address is 197 Birch Road."
-    },
-    {
-      "date": "2025-10-24",
+      "date": "2026-01-08",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-08-06",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-07-19",
+      "category": "work",
+      "text": "User works as a physical therapist."
+    },
+    {
+      "date": "2025-06-12",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-18",
+      "date": "2026-01-05",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -58,46 +53,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-01",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-19",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-11-02",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Please book a visit at Willow Creek Residences on October fifth.
-[  3.59s][moshi] «interrupted» ⟨ret@3.51s⟩ ⟦⚡SPAN@3.59s: (tool result) Visit scheduled at Willow Creek Residences for October 5th at 2:00 PM. Confirmation number is WC⟧ I’ve scheduled your visit at Willow Creek Residences for October fifth at two PM—
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "Willow Creek Residences", "visit_date": "October 5th"}}
-[  7.75s][user ] «interrupts_prev» …Is there a contact number for the property manager there?
-[ 11.40s][moshi] Willow Creek Residences’ property manager is Sarah Chen, and her number is 555-123-4567.
-[ 13.83s][user ] «backchannel» Oh.
-[ 18.44s][user ] Okay, good. And can you find me similar residences in the Oakwood ⟨ret@22.92s⟩ area?
-[ 23.15s][moshi] ⟦⚡SPAN@23.16s: (tool result) Found three residences in Oakwood: Oak Haven, Riverbend Estates, and Greenleaf Manor. Oak Haven ⟧ I found three residences in Oakwood: Oak Haven, Riverbend Estates, and Greenleaf Manor. Oak Haven currently has two-bedroom units—
-      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"area_name": "Oakwood"}}
-[ 29.13s][user ] «backchannel» Yeah.
-[ 31.43s][moshi] —available. It might be a good starting point for your search, depending on your needs.
-[ 37.65s][user ] What are the price ranges for those three places, roughly?
-[ 40.70s][moshi] «interrupted» ⟨ret@40.62s⟩ ⟦⚡SPAN@40.70s: (tool result) Oak Haven: $1800 - $2500. Riverbend Estates: $2200 - $3000. Greenleaf Manor: $1500 - $2000. Sour⟧ Oak Haven ranges from eighteen hundred to twenty-five hundred dollars, Riverbend Estates from twenty-two hundred to three thousand—
-      CALL: {"function": "search", "arguments": {"query": "price range Oak Haven Riverbend Estates Greenleaf Manor"}}
-[ 47.41s][user ] «interrupts_prev» Greenleaf sounds interesting. Can we get more details on Greenleaf ⟨ret@51.33s⟩ Manor?
-[ 51.70s][moshi] «interrupted» ⟦⚡SPAN@51.73s: (tool result) Greenleaf Manor offers studio, one-, and two-bedroom apartments. Amenities include a gym, pool, ⟧ Greenleaf Manor offers studios, one- and two-bedroom apartments. They have a gym, a pool, and allow—
-      CALL: {"function": "search", "arguments": {"query": "Greenleaf Manor Oakwood amenities floorplans"}}
-[ 57.07s][user ] «interrupts_prev» Do they allow cats? Specifically, are there any weight ⟨ret@61.13s⟩ restrictions?
-[ 61.37s][moshi] «interrupted» ⟦⚡SPAN@61.37s: (tool result) Greenleaf Manor allows cats up to 20 pounds with a one-time pet fee of $300. Breed restrictions ⟧ Yes, Greenleaf Manor allows cats up to twenty pounds, with a three hundred dollar pet fee. Some breed—
-      CALL: {"function": "search", "arguments": {"query": "Greenleaf Manor Oakwood cat weight restrictions"}}
-[ 67.58s][user ] «interrupts_prev» Okay, that’s good to know. Can you check the weather forecast for Oakwood on ⟨ret@72.74s⟩ October fifth?
-[ 73.14s][moshi] «interrupted» ⟦⚡SPAN@73.14s: (tool result) The weather in Oakwood on October 5th will be partly cloudy with a high of 68°F and a low of 52°⟧ The forecast for Oakwood on October fifth is partly cloudy, with a high of sixty-eight and a low of—
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Oakwood", "date": "October 5th"}}
-[ 78.32s][user ] «interrupts_prev» That sounds pleasant. What about traffic conditions around Greenleaf Manor on that ⟨ret@83.04s⟩ day?
-[ 83.20s][moshi] «interrupted» ⟦⚡SPAN@83.20s: (tool result) Estimated travel time from Willow Creek Residences to Greenleaf Manor is 25-35 minutes with mode⟧ The estimated travel time from Willow Creek to Greenleaf Manor is twenty-five to thirty-five minutes, with moderate—
-      CALL: {"function": "map_directions", "arguments": {"origin": "Willow Creek Residences", "destination": "Greenleaf Manor, Oakwood", "date": "October 5th", "time": "2:00 PM"}}
-[ 89.09s][user ] «interrupts_prev» That’s manageable. Could you set a reminder for me to leave at one thirty PM on ⟨ret@94.22s⟩ October fifth?
-[ 94.54s][moshi] ⟦⚡SPAN@94.54s: (tool result) Alarm set for October 5th at 1:30 PM: Leave for Greenleaf Manor.⟧ I’ve set an alarm for one thirty PM on October fifth, labeled “Leave for Greenleaf Manor”.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "1:30 PM", "date": "October 5th", "label": "Leave for Greenleaf Manor"}}
-[ 96.40s][user ] «backchannel» Yeah.
-[100.17s][user ] Perfect. I appreciate your help with all of this.
-[103.03s][moshi] It’s my pleasure. Taking these small steps can really help to ease transitions, and I’m glad I could support you.
+[  0.00s][user ] Locate coffee shops within one kilometer of London.
+[  3.58s][moshi] «interrupted» ⟨ret@3.50s⟩ ⟦⚡SPAN@3.58s: (tool result) Found 32 coffee shops within 1 kilometer of London, including Costa Coffee at 123 Oxford Street,⟧ I’ve found 32 coffee shops within a kilometer of London, including a Costa Coffee on Oxford Street—
+      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shops", "location": "London", "radius": "1km"}}
+[  8.93s][user ] «interrupts_prev» …Are any of those open ⟨ret@10.73s⟩ right now?
+[ 11.13s][moshi] ⟦⚡SPAN@11.13s: (tool result) Costa Coffee (123 Oxford Street) is currently open, closing at 8:00 PM.⟧ The Costa Coffee on Oxford Street is currently open, and will close at 8:00 PM tonight.
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJdd4hrwug2EcR60-T21G-F4U", "fields": "opening_hours"}}
+[ 17.22s][user ] Great. Can you give me directions there by walking?
+[ 20.32s][moshi] ⟨ret@20.25s⟩ ⟦⚡SPAN@20.32s: (tool result) Walking directions to Costa Coffee (123 Oxford Street): 0.8 km, estimated time 12 minutes. Turn ⟧ It’s 0.8 kilometers to Costa Coffee, about a 12-minute walk. The directions start with a right turn— Enjoy your coffee!
+      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Costa Coffee, 123 Oxford Street, London", "mode": "walking"}}

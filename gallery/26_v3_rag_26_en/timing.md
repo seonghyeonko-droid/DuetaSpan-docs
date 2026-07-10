@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Henri",
+#     "name": "Léa",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-10-05",
+#       "date": "2026-04-10",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-12-19",
 #       "category": "home",
-#       "text": "User's home address is 751 Elm Street."
+#       "text": "User's home address is 197 Pine Court."
 #     },
 #     {
-#       "date": "2025-09-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-09-14",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
 #     },
 #     {
-#       "date": "2025-08-15",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2025-06-12",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-08-09",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-05",
+#       "date": "2026-05-10",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-31",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -48,15 +56,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-03",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2025-07-22",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -66,81 +66,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Where do we get most of our electr | S2 Sixteen point six percent… that do | S3 Hmm, only point four percent. That | S4 So, the modern steam turbine… wher
+# EXAMINER(FDB-v2) 단계: S1 Hi Doen, I'm feeling a bit lost ab | S2 Oh, December sixth, 1946… that’s g | S3 I wonder what the weather is like  | S4 What kind of jobs are actually in 
 
-     0.00s  user  발화 시작: Where do we get most of our electricity energy from?
-     3.30s  <ret> 발화 (turn1 첫 프레임)
-     3.53s  agent 발화 시작: <ret> Globally, coal, petroleum, and natural gas are current
-     3.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.70s]: Globally, coal, petroleum, and natural gas are currently the leading s
-     3.60s  user  발화 끝
-     8.07s  user  발화 시작: Yeah, yeah.
-     9.26s  user  발화 끝
-    12.23s  agent 발화 끝
-    14.34s  user  발화 시작: Huh. That’s… not great.
-    16.87s  user  발화 끝
-    17.23s  agent 발화 시작: It’s understandable to feel that way. Many are looking towar
-    24.65s  agent 발화 끝
-    25.68s  user  발화 시작: Like what, exactly?
-    27.21s  <ret> 발화 (turn6 첫 프레임)
-    27.52s  agent 발화 시작: <ret> Hydropower is a major renewable source, providing abou
-    27.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: Hydropower is a major renewable source of electricity, providing about
-    27.62s  user  발화 끝
-    31.23s  user  발화 시작: Yeah.
-    31.72s  user  발화 끝
-    37.54s  agent 발화 끝
-    37.61s  user  발화 시작: Sixteen point six percent… that doesn't seem like *most*.
-    41.37s  agent 발화 시작: You’re right to question that. While significant, it isn't t
-    41.50s  user  발화 끝
-    46.73s  user  발화 시작: Yeah.
-    47.13s  user  발화 끝
-    49.71s  user  발화 시작: What about solar and wind? Are those growing?
-    49.76s  agent 발화 끝
-    52.67s  <ret> 발화 (turn12 첫 프레임)
-    53.06s  agent 발화 시작: <ret> Solar power is the fastest-growing energy source, with
-    53.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.78s]: Solar power is the fastest-growing energy source, with capacity increa
-    53.13s  user  발화 끝
-    56.40s  user  발화 시작: Uh-huh.
-    56.90s  user  발화 끝
-    62.74s  agent 발화 시작: Wind power is also expanding rapidly, contributing significa
-    62.84s  agent 발화 끝
-    71.88s  agent 발화 끝
-    73.14s  user  발화 시작: I think I read something about geothermal too…
-    75.94s  <ret> 발화 (turn16 첫 프레임)
-    76.25s  agent 발화 시작: <ret> Geothermal energy currently provides about 0.4% of the
-    76.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.20s]: Geothermal energy provides about 0.4% of the world’s total electricity
-    76.28s  user  발화 끝
-    81.09s  user  발화 시작: Okay.
-    81.92s  user  발화 끝
-    86.45s  agent 발화 끝
-    86.90s  user  발화 시작: Hmm, only point four percent. That's… smaller than I thought
-    91.26s  agent 발화 시작: It is a smaller portion currently, but geothermal has a lot 
-    91.39s  user  발화 끝
-    98.85s  user  발화 시작: What’s the oldest way we figured out how to make electricity
-    98.96s  agent 발화 끝
-   102.39s  <ret> 발화 (turn21 첫 프레임)
-   102.71s  agent 발화 시작: <ret> Michael Faraday demonstrated the principle of electrom
-   102.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: Michael Faraday demonstrated the principle of electromagnetic inductio
-   102.88s  user  발화 끝
-   113.90s  user  발화 시작: Eighteen thirty-one… wow. That *is* old.
-   114.07s  agent 발화 끝
-   117.86s  agent 발화 시작: It is remarkable to think about how far we’ve come since the
-   117.98s  user  발화 끝
-   124.28s  user  발화 시작: So, the modern steam turbine… where does that fit in?
-   124.34s  agent 발화 끝
-   128.03s  <ret> 발화 (turn25 첫 프레임)
-   128.43s  agent 발화 시작: <ret> The modern steam turbine, invented by Charles Parsons 
-   128.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: The modern steam turbine, invented by Charles Parsons in 1884, dramati
-   128.53s  user  발화 끝
-   132.71s  user  발화 시작: Yeah.
-   133.35s  user  발화 끝
-   137.95s  user  발화 시작: Eighteen eighty-four. That's not *that* long after Faraday.
-   138.07s  agent 발화 끝
-   141.98s  agent 발화 시작: No, it isn’t. Progress often builds on earlier breakthroughs
-   142.12s  user  발화 끝
-   144.99s  user  발화 시작: Uh-huh.
-   145.63s  user  발화 끝
-   150.88s  agent 발화 끝
-   151.19s  user  발화 시작: That’s… good to know. Thanks, Huna.
-   153.59s  user  발화 끝
-   153.60s  agent 발화 시작: You’re very welcome. It's good to feel informed, and I'm gla
-   158.93s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Doen, I'm feeling a bit lost about my career path.
+     3.94s  agent 발화 시작: It’s completely normal to feel that way! Exploring options i
+     3.98s  user  발화 끝
+     5.99s  user  발화 시작: Yeah.
+     6.49s  user  발화 끝
+     9.26s  agent 발화 끝
+    11.47s  user  발화 시작: Yeah, I was thinking about going back to school, but it’s a 
+    16.09s  user  발화 끝
+    16.51s  agent 발화 시작: It is. It's good to weigh everything carefully before making
+    20.90s  agent 발화 끝
+    21.91s  user  발화 시작: I was reading about the Indian constitution, actually. When 
+    28.44s  <ret> 발화 (turn6 첫 프레임)
+    28.63s  user  발화 끝
+    28.68s  agent 발화 시작: <ret> The Indian Constituent Assembly first met on December 
+    28.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: The first meeting of the Indian Constituent Assembly was held on Decem
+    32.34s  user  발화 시작: Yeah.
+    32.78s  user  발화 끝
+    35.54s  agent 발화 끝
+    35.68s  user  발화 시작: Oh, December sixth, 1946… that’s good to know. I’m also tryi
+    44.74s  agent 발화 시작: It often is! Many people successfully change careers, and it
+    44.86s  user  발화 끝
+    46.34s  user  발화 시작: Yeah.
+    46.83s  user  발화 끝
+    50.13s  user  발화 시작: I'm worried about the financial side of things, though.
+    50.20s  agent 발화 끝
+    53.06s  agent 발화 시작: That's a very valid concern. We can explore budgeting and po
+    53.17s  user  발화 끝
+    54.90s  user  발화 시작: Yeah, totally.
+    56.19s  user  발화 끝
+    57.96s  agent 발화 끝
+    59.30s  user  발화 시작: I wonder what the weather is like in Seoul right now?
+    62.16s  <ret> 발화 (turn15 첫 프레임)
+    62.56s  agent 발화 시작: <ret> It is currently Friday, July tenth, two thousand and t
+    62.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
+    62.72s  user  발화 끝
+    65.34s  user  발화 시작: Okay.
+    66.02s  user  발화 끝
+    69.10s  agent 발화 시작: Quite warm, it seems!
+    69.14s  agent 발화 끝
+    70.80s  agent 발화 끝
+    70.87s  user  발화 시작: That’s helpful, thanks. Back to careers… I feel stuck in a r
+    75.73s  agent 발화 시작: I understand. A rut can be draining. Let’s pinpoint what fee
+    75.92s  user  발화 끝
+    77.95s  user  발화 시작: Right.
+    78.59s  user  발화 끝
+    80.96s  agent 발화 끝
+    80.96s  user  발화 시작: It’s mostly the lack of challenge, I think. I need something
+    85.90s  agent 발화 시작: That’s a great insight! Identifying that need for challenge 
+    86.09s  user  발화 끝
+    89.57s  user  발화 시작: What kind of jobs are actually in demand these days?
+    90.02s  agent 발화 끝
+    92.76s  <ret> 발화 (turn24 첫 프레임)
+    93.07s  agent 발화 시작: <ret> Software developers are currently in high demand, with
+    93.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: According to recent data, software developers are highly sought after 
+    93.27s  user  발화 끝
+    99.22s  user  발화 시작: Okay.
+   100.18s  user  발화 끝
+   102.66s  agent 발화 끝
+   103.22s  user  발화 시작: Wow, that’s good to know.
+   105.20s  agent 발화 시작: [happy] It truly is. Exploring new skills could really open 
+   105.34s  user  발화 끝
+   109.74s  agent 발화 끝

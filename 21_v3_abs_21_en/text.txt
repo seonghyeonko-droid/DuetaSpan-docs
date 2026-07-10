@@ -1,110 +1,61 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Funara, a practical and reassuring wellness coach who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Area, a grounded and empathetic supportive advisor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Ava",
+    "name": "Caleb",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "early 30s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-19",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-03-18",
-      "category": "home",
-      "text": "User's home address is 567 Cedar Lane."
-    },
-    {
-      "date": "2026-02-08",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2026-01-22",
+      "date": "2026-05-15",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-06-03",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2025-09-24",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-09-23",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-07-26",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-14",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-12-05",
+      "date": "2025-12-26",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-31",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] A subset of the underlying set G of the group (G) cannot be written using what kind of expression?
-[  6.65s][moshi] ⟨ret@6.57s⟩ ⟦⚡SPAN@6.65s: (no information found)⟧ That’s a very specific question, and unfortunately, I don’t have information on that topic right now.
-[  8.98s][user ] «backchannel» Right.
-[ 13.63s][user ] Hmm, okay. Well, what about sleep? What's a good starting point for someone struggling with insomnia?
-[ 20.43s][moshi] Establishing a consistent bedtime routine is a great first step. It signals to your body it's time to wind down.
-[ 23.72s][user ] «backchannel» Really?
-[ 28.31s][user ] A routine… uhhh, like what specifically?
-[ 31.72s][moshi] Things like a warm bath, reading, or gentle stretching can help prepare you for sleep. Avoid screens before bed.
-[ 36.99s][user ] «backchannel» Yeah.
-[ 39.72s][moshi] It’s about creating a relaxing atmosphere, something that truly soothes you.
-[ 41.98s][user ] «backchannel» Right.
-[ 44.65s][user ] Okay. What time should I *try* to be asleep by, ⟨ret@48.95s⟩ generally?
-[ 49.19s][moshi] ⟦⚡SPAN@49.19s: The National Sleep Foundation recommends that adults get 7-9 hours of sleep per night.⟧ The National Sleep Foundation recommends adults aim for seven to nine hours of sleep each night. That's a good target, though individual needs vary.
-[ 53.82s][user ] «backchannel» Right.
-[ 58.30s][user ] Seven to nine… that's a wide range.
-[ 61.22s][moshi] It is, and it's about finding what *you* need to feel rested and function well during the day.
-[ 68.80s][user ] Right. And what about if I wake up in the middle of the night?
-[ 72.20s][moshi] If you can't fall back asleep after twenty minutes, get out of bed and do something calming until you feel sleepy again.
-[ 74.40s][user ] «backchannel» Yeah.
-[ 78.80s][user ] Like… what kind of calming?
-[ 81.38s][moshi] Gentle reading, light stretching, or listening to quiet music are good options. Avoid looking at the clock.
-[ 86.54s][user ] «backchannel» Right.
-[ 88.89s][user ] That makes sense. What's the weather like in Seoul right ⟨ret@93.04s⟩ now?
-[ 93.44s][moshi] ⟦⚡SPAN@93.44s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently 23.0 degrees Celsius in Seoul, with seventy-four percent humidity and a light breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[100.95s][user ] Hmm, warm. Do you have any recommendations for calming ⟨ret@105.69s⟩ music?
-[106.00s][moshi] ⟦⚡SPAN@106.01s: Studies show that music with a slow tempo, around 60-80 beats per minute, can promote relaxation and sleep.⟧ Studies show music around sixty to eighty beats per minute can really help with relaxation and sleep.
-[108.08s][user ] «backchannel» Uh-huh.
-[112.39s][user ] Sixty to eighty… okay. Is there a specific artist?
-[117.02s][moshi] ⟨ret@116.70s⟩ ⟦⚡SPAN@117.02s: Brian Eno's "Ambient 1: Music for Airports" is often cited as a classic example of ambient music conducive to ⟧ Brian Eno’s "Ambient 1: Music for Airports" is often recommended for calming and promoting sleep.
-[119.77s][user ] «backchannel» Uh-huh.
-[123.52s][user ] I'll look that up. That sounds… pleasant.
-[126.53s][moshi] It's a beautiful piece. A peaceful soundscape can do wonders for a restless mind.
-[130.34s][user ] «backchannel» Yeah.
-[132.04s][user ] You're right. I think I'll give that a try tonight. Thank you, Funara.
-[136.43s][moshi] You’re very welcome. Sweet dreams, and remember consistency is key.
+[  0.00s][user ] With the passage of phenomes what particular things phonemic in a language are known to change?
+[  5.39s][moshi] ⟨ret@5.31s⟩ ⟦⚡SPAN@5.39s: (no information found)⟧ Unfortunately, I haven’t been able to find specific information on what phonemic changes occur with the passage of phenomes.
+[ 10.25s][user ] «backchannel» Right.
+[ 13.21s][user ] Oh, um, okay. Well, I'm struggling with a friend right now – she keeps cancelling plans.
+[ 19.00s][moshi] That sounds frustrating. It’s really disheartening when someone repeatedly cancels, isn’t it? It can feel like they don't value your time.
+[ 25.30s][user ] «backchannel» Uh-huh.
+[ 27.40s][user ] Yeah, it is. I’ve told her how it makes me feel, but it keeps happening. Should I just… stop asking?
+[ 33.72s][moshi] It’s understandable to feel that way. Before stopping, maybe try setting a clear boundary – like, “I’m happy to make plans when you’re sure you can commit.” It can help protect your energy.

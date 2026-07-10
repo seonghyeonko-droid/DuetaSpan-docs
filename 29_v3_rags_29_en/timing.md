@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Andrea",
+#     "name": "Felix",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-03-18",
+#       "category": "home",
+#       "text": "User's home address is 678 Maple Drive."
 #     },
 #     {
-#       "date": "2026-04-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-12-22",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-01-22",
+#       "date": "2025-10-04",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-09-19",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-05-31",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2025-06-09",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-14",
+#       "date": "2026-05-15",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -53,15 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-06",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-05",
+#       "date": "2025-11-23",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -72,9 +59,11 @@
 # }
 
 
-     0.00s  user  발화 시작: Who does Belle marry in Beauty and the Beast?
-     2.92s  user  발화 끝
-     3.02s  <ret> 발화 (turn1 첫 프레임)
-     3.34s  agent 발화 시작: <ret> The term comes from a classic tale, and Belle marries 
-     3.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: In Disney's Beauty and the Beast, Belle marries the Prince who was pre
-    13.91s  agent 발화 끝
+     0.00s  user  발화 시작: When was the very last…
+     2.26s  user  발화 끝
+     3.87s  user  발화 시작: …Indian Head penny actually made?
+     5.83s  <ret> 발화 (turn2 첫 프레임)
+     6.15s  agent 발화 시작: <ret> The very last Indian Head penny was made in 1909, when
+     6.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: The United States Mint ceased production of the Indian Head cent in 19
+     6.22s  user  발화 끝
+    12.87s  agent 발화 끝

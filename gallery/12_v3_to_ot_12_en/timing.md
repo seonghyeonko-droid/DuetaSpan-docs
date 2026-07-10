@@ -4,89 +4,73 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Casey",
+#     "name": "Kim",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
+#       "date": "2026-04-30",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-06-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-05-09",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-08-25",
+#       "date": "2026-01-22",
 #       "category": "pet",
 #       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-08-01",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-11-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-05-29",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2025-09-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2025-08-17",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
+#       "date": "2025-06-18",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
-#     },
-#     {
-#       "date": "2025-07-25",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about public he | S2 Oh, you wouldn’t believe the traff | S3 Sorry, just a quick chat with some | S4 That’s okay. It just seems… a big 
 
-     0.00s  user  발화 시작: I was just reading about public health… uh, when did they st
-     6.15s  <ret> 발화 (turn1 첫 프레임)
-     6.35s  agent 발화 시작: <ret> The practice began on January 25th, 1945, in Newburgh,
-     6.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: Fluoridation began in the United States on January 25, 1945, in Newbur
+     0.00s  user  발화 시작: I was just reading about World War One, and I was wondering…
+     6.02s  <ret> 발화 (turn1 첫 프레임)
+     6.25s  agent 발화 시작: <ret> They fought extensively on the Western Front, primaril
+     6.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.60s]: The British Army fought extensively on the Western Front in France dur
      6.48s  user  발화 끝
-     9.89s  user  발화 시작: Oh.
-    10.39s  user  발화 끝
-    14.90s  user  발화 시작: Oh, you wouldn’t believe the traffic on the way here.
-    15.07s  agent 발화 끝
-    17.74s  user  발화 시작: Sorry, just a quick chat with someone. So, Newburgh, huh?
-    17.80s  user  발화 끝
-    21.34s  user  발화 끝
-    21.48s  <ret> 발화 (turn5 첫 프레임)
-    21.87s  agent 발화 시작: <ret> I'm afraid I don’t have any further information about 
-    21.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (no information found)
-    27.47s  agent 발화 끝
-    28.49s  user  발화 시작: That’s okay. It just seems… a big step.
-    32.05s  user  발화 끝
-    32.08s  agent 발화 시작: It is a significant public health decision, certainly. Somet
-    39.36s  agent 발화 끝
+     8.33s  user  발화 시작: Yeah.
+     8.96s  user  발화 끝
+     9.81s  user  발화 시작: Oh, that reminds me, did you take out the trash?
+     9.85s  agent 발화 끝
+    12.40s  user  발화 끝
+    12.45s  user  발화 시작: That's interesting. Were there any other significant places 
+    17.71s  <ret> 발화 (turn5 첫 프레임)
+    18.10s  agent 발화 시작: <ret> Beyond France, British forces were involved in signifi
+    18.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: British forces also fought in Belgium, Gallipoli, Mesopotamia, and Afr
+    18.19s  user  발화 끝
+    26.00s  agent 발화 시작: It was a truly global conflict, wasn’t it? It's important to
+    26.12s  agent 발화 끝
+    30.68s  agent 발화 끝

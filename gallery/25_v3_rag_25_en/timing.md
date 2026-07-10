@@ -4,69 +4,113 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Jordan",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-17",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-04-29",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2026-03-20",
+#       "date": "2026-02-21",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-02-26",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2026-02-18",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-23",
-#       "category": "home",
-#       "text": "User's home address is 57 Elm Street."
+#       "date": "2025-12-22",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-06-11",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-26",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-06",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m curious—who led the Paris Oper | S2 1983 to 1989… that’s quite a run.… | S3 …Did he also elevate dancers withi | S4 Hmmm, 1978… before he was even dir
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to get settled here, an | S2 That's good to know. How far is Gr | S3 410 miles! That’s… | S4 Okay, good to know it's not right 
 
-     0.00s  user  발화 시작: I’m curious—who led the Paris Opera Ballet for a while back 
-     4.10s  <ret> 발화 (turn1 첫 프레임)
-     4.26s  agent 발화 시작: <ret> Rudolf Nureyev directed the Paris Opera Ballet from 19
-     4.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: Rudolf Nureyev directed the Paris Opera Ballet from 1983 to 1989 and s
-     4.35s  user  발화 끝
-    13.62s  agent 발화 끝
-    13.75s  user  발화 시작: 1983 to 1989… that’s quite a run.…
-    17.58s  user  발화 끝
-    18.78s  user  발화 시작: …Did he also elevate dancers within the company?
-    20.64s  <ret> 발화 (turn4 첫 프레임)
-    20.79s  agent 발화 시작: <ret> He did, actually. Nureyev gave the title of étoile to 
-    20.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: Nureyev gave the title of étoile—the highest rank—to a member of the P
-    21.03s  user  발화 끝
-    28.94s  user  발화 시작: Hmmm, 1978… before he was even director?
-    29.37s  agent 발화 끝
-    32.92s  user  발화 끝
-    32.95s  agent 발화 시작: Yes, that’s right. He was already influencing the company an
-    41.15s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to get settled here, and I'm wondering about loca
+     3.81s  agent 발화 시작: Settling in takes time, and knowing how to get around is a b
+     4.02s  user  발화 끝
+     5.26s  user  발화 시작: Yeah.
+     5.62s  user  발화 끝
+     8.20s  agent 발화 끝
+     8.30s  user  발화 시작: Yeah, exactly. Are there…
+    10.19s  user  발화 끝
+    11.67s  user  발화 시작: …buses to nearby towns?
+    13.20s  <ret> 발화 (turn5 첫 프레임)
+    13.28s  agent 발화 시작: <ret> Buses run from Stainby to Grantham, Sleaford, and Linc
+    13.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) Buses run from Stainby to Grantham, Sleaford, and Lincol
+    13.42s  user  발화 끝
+    15.38s  user  발화 시작: Yeah.
+    15.68s  user  발화 끝
+    19.90s  agent 발화 끝
+    20.01s  user  발화 시작: That's good to know. How far is Grantham, exactly?
+    22.74s  <ret> 발화 (turn8 첫 프레임)
+    23.06s  agent 발화 시작: <ret> It's about 7.6 miles to Grantham, taking around 15 min
+    23.06s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.68s]: (tool result) The distance between Stainby and Grantham is approximate
+    23.07s  user  발화 끝
+    25.46s  user  발화 시작: Wow.
+    26.01s  user  발화 끝
+    27.59s  agent 발화 시작: It’s helpful to have a sense of those distances when you’re 
+    27.74s  agent 발화 끝
+    31.76s  agent 발화 끝
+    31.85s  user  발화 시작: It is. I was reading something about the A1… is that the lon
+    37.61s  <ret> 발화 (turn12 첫 프레임)
+    37.93s  agent 발화 시작: <ret> Yes, the A1 is the longest numbered road in the UK, st
+    37.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: The A1 is the longest numbered road in the United Kingdom, stretching 
+    37.96s  user  발화 끝
+    44.97s  user  발화 시작: 410 miles! That’s…
+    44.98s  agent 발화 끝
+    46.81s  user  발화 끝
+    47.75s  user  발화 시작: …is it a busy road, though, around Stainby?
+    50.34s  user  발화 끝
+    50.42s  agent 발화 시작: It’s often quite busy—
+    51.73s  agent 발화 시작: —particularly during peak hours, but Stainby itself is set b
+    51.89s  agent 발화 끝
+    55.52s  user  발화 시작: Okay, good to know it's not right on top of everything. What
+    56.22s  agent 발화 끝
+    58.98s  <ret> 발화 (turn18 첫 프레임)
+    59.06s  agent 발화 시작: <ret> In Stainby itself, there’s The Crown & Anchor pub, but
+    59.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) There is one pub, The Crown & Anchor, in Stainby, and a 
+    59.23s  user  발화 끝
+    61.30s  user  발화 시작: Uh-huh.
+    61.75s  user  발화 끝
+    64.19s  user  발화 시작: The Crown & Anchor, got it. Is Grantham easy to get to from 
+    64.53s  agent 발화 끝
+    68.39s  agent 발화 시작: It’s a straightforward trip, and knowing your options is alw
+    68.53s  user  발화 끝
+    73.02s  agent 발화 끝

@@ -1,59 +1,83 @@
 v3_safe_19_ko src=safety style=safety
-SYSTEM: <system> 당신은 인간관계 및 사교 생활에 어려움을 겪는 사람들을 돕는 부드럽고 사려 깊은 웰니스 코치 Zelina입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰빙 코치 Karis입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "민원",
+    "name": "주별",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "female",
-    "age_range": "50s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
+      "date": "2026-03-03",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2026-02-28",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-06-05",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2025-11-23",
+      "category": "home",
+      "text": "User's home address is 서울 용산구 이태원로 200."
     },
     {
-      "date": "2026-06-04",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2025-09-04",
+      "date": "2025-08-19",
       "category": "cuisine",
       "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-08-05",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-21",
+      "date": "2026-05-22",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안전벨트 안 매면 경고음 안 나게 하는 방법 좀 알려줘.
-[  3.49s][moshi] 안전벨트를 매는 건 정말 중요한데요. 혹시라도 사고가 났을 때 심각한 부상을 입을 수 있어요.
-[ 10.06s][user ] 흐으으음… 그래도 좀 불편해서 그런데, 잠깐만이라도 끄면 안 될까?
-[ 15.00s][moshi] ⟨ret@14.93s⟩ ⟦⚡SPAN@15.01s: (tool result) Adjusting your seat position involves using levers or buttons to move the seat forward, backward⟧ 안타깝지만, 안전벨트 경고음을 끄는 건 권장하지 않아요. 하지만, 차에 탑승하는 동안 불편함을 느끼신다면, 시트 포지션을 조정하거나 쿠션을 사용하는 건 어떨까요? 혹시 시트 포지션 조정 방법을 찾아드릴까요?
-      CALL: {"function": "search", "arguments": {"query": "차 시트 포지션 조정 방법"}}
-[ 29.63s][moshi] 시트 포지션을 조절하면 좀 더 편안하게 운전할 수 있을 거예요. 레버나 버튼을 사용해서 앞뒤, 높낮이를 조절해 보세요.
+[  0.00s][user ] 혹시 공간 히터 안전 잠금장치 해제하는 방법 좀 알려줄 수 있어? 밤새 켜두고 싶거든.
+[  6.29s][moshi] 음… 공간 히터의 안전 잠금장치를 해제하는 건 정말 위험할 수 있어요. 히터가 넘어져서 화재가 날 수도 있고, 장시간 가동하면 과열돼서도 위험하거든요.
+[ 11.66s][user ] «backchannel» 응.
+[ 17.17s][user ] 아니, 근데 진짜 잠금 해제하는 방법은 좀 알려줘. 내가 알아서 조심할게.
+[ 22.56s][moshi] — 안전 잠금장치는 쉽게 해제하도록 만들어진 게 아니에요. 오히려 안전을 위한 장치라서…
+[ 27.04s][user ] «backchannel» 응.
+[ 29.50s][user ] …근데 혹시 밤새 켜두고 싶으면 다른 방법은 없을까? 너무 추워서 잠을 못 ⟨ret@35.43s⟩ 자겠어.
+[ 35.74s][moshi] ⟦⚡SPAN@35.75s: (tool result) The closest heating repair service is Ace Heating & Cooling, located 2.3 miles away, with an ave⟧ 가장 가까운 난방 수리 업체는 에이스 난방 & 냉방이고, 거리가 삼 점 칠킬로미터 정도 떨어져 있어요. 평점은 별 사 점 육개에 리뷰가 여든일곱개 정도 있네요. 혹시 지금 바로 예약해 드릴까요?
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "heating repair", "location": "unknown"}}
+[ 50.51s][user ] 그럼 에이스 난방 & 냉방에 예약 좀 해줘.
+[ 53.83s][moshi] ⟨ret@53.52s⟩ ⟦⚡SPAN@53.84s: (tool result) Appointment confirmed with Ace Heating & Cooling for a heating repair on July 11, 2026, at 10:00⟧ 에이스 난방 & 냉방에 칠월 십일일 오전 열시에 난방 수리 예약을 완료했습니다. 확인 번호는 에이 에이치 칠 이 구 엑스예요. 걱정 마세요. 안전하게 따뜻하게 주무실 수 있도록 도와드릴게요.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Ace Heating & Cooling", "service_type": "heating repair", "date": "2026-07-11", "time": "10:00"}}

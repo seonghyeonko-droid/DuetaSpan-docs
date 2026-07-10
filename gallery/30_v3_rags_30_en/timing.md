@@ -4,66 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Oscar",
+#     "name": "Rowan",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "date": "2025-12-15",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2026-06-02",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-05-02",
-#       "category": "home",
-#       "text": "User's home address is 943 Maple Drive."
-#     },
-#     {
-#       "date": "2025-10-28",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-07-10",
+#       "date": "2025-12-01",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-09",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-07-16",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-07-07",
+#       "category": "home",
+#       "text": "User's home address is 376 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-01",
-#       "title": "Setting up a home network",
+#       "date": "2025-06-16",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who does Hank Moody ultimately end up with in Californicatio
-     3.78s  <ret> 발화 (turn1 첫 프레임)
-     4.02s  agent 발화 시작: <ret> The term comes from… Karen Van Der Beek is the woman H
-     4.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: Karen Van Der Beek is the woman Hank Moody ends up with in the series 
-     4.16s  user  발화 끝
-    11.02s  agent 발화 끝
+     0.00s  user  발화 시작: Could you tell me who the governor of the Reserve Bank of In
+     3.66s  <ret> 발화 (turn1 첫 프레임)
+     3.90s  agent 발화 시작: <ret> The Reserve Bank of India’s governor was Urjit Patel, 
+     3.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: Urjit Patel served as the 24th governor of the Reserve Bank of India f
+     4.07s  user  발화 끝
+    10.75s  agent 발화 끝

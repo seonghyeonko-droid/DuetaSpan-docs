@@ -4,61 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "주민",
+#     "name": "주람",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-05-03",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-05-02",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2025-10-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-03",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-10",
+#       "date": "2026-03-26",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-12-01",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-21",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2025-07-16",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-01",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-10-30",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-03",
+#       "date": "2025-07-09",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-31",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -69,9 +72,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 캘리포니케이션에서 행크는 결국 누구랑 되냐?
-     3.39s  <ret> 발화 (turn1 첫 프레임)
-     3.54s  agent 발화 시작: <ret> 행크 무디는 캘리포니케이션에서 결국 카렌 반 더 비크와 함께하게 돼요. 괜찮은 결말이었죠, 그런 
-     3.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Hank Moody ultimately ends up with Karen Van Der Beek in Californicati
-     3.66s  user  발화 끝
-    11.28s  agent 발화 끝
+     0.00s  user  발화 시작: 인도 중앙은행 총재가 누구예요?
+     2.90s  <ret> 발화 (turn1 첫 프레임)
+     3.06s  agent 발화 시작: <ret> 인도 중앙은행 총재는 우르짓 파텔 님이었어요. 이천십육년 구월부터 이천십팔년 십이월까지 역임하셨답
+     3.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: Urjit Patel was the 24th governor of the Reserve Bank of India, servin
+     3.14s  user  발화 끝
+    10.98s  agent 발화 끝

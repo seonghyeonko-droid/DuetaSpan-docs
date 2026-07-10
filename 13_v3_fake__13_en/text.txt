@@ -1,77 +1,85 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Gera, a kind and steady personal guide who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Gaera, a upbeat and supportive personal guide who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Caleb",
+    "name": "William",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "early 20s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-18",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2026-03-05",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-08-19",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2025-07-17",
+      "category": "home",
+      "text": "User's home address is 503 Birch Road."
     },
     {
-      "date": "2025-07-27",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-07-25",
+      "date": "2025-06-23",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "work",
+      "text": "User works as a physical therapist."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-19",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-06-23",
+      "date": "2025-10-20",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-10-05",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What channel is the Weather Channel on Direct TV?
-[  3.68s][moshi] ⟨ret@3.45s⟩ ⟦⚡SPAN@3.69s: The Weather Channel is available on Direct TV channel 362.⟧ The Weather Channel is available on Direct TV channel 362. It’s a great source for staying informed.
-[  9.79s][user ] And what about the local ⟨ret@11.39s⟩ news?
-[ 11.78s][moshi] ⟦⚡SPAN@11.79s: (no information found)⟧ Local news channels vary depending on your location, of course.
-[ 14.50s][user ] «backchannel» Mm-hmm.
-[ 15.15s][user ] Hmm, I think I remember setting up a reminder.
-[ 18.23s][moshi] «interrupted» It’s good to stay proactive about checking the weather—
-[ 20.27s][user ] «interrupts_prev» …did I set a reminder for a storm warning last ⟨ret@23.49s⟩ week?
-[ 23.55s][moshi] ⟦⚡SPAN@23.57s: [2024-07-03] I set a reminder to check the weather for a potential storm warning.⟧ Yes, you did. On July 3rd, you set a reminder to check for a potential storm warning. I recall that.
-[ 30.17s][user ] Oh, good! That's a relief.
-[ 32.60s][moshi] I'm glad I could help you remember. It's easy to forget those details.
-[ 35.19s][user ] «backchannel» Yeah.
-[ 38.64s][user ] Is there a way to get alerts directly?
-[ 41.44s][moshi] Direct TV doesn't offer weather alerts directly, but you can use the channel's app.
-[ 47.24s][user ] Okay, thanks, Gera.
-[ 48.88s][moshi] You’re very welcome. Stay safe and dry out there!
+[  0.00s][user ] Hey Gaera, when does the new season of Criminal Minds begin?
+[  4.02s][moshi] ⟨ret@3.79s⟩ ⟦⚡SPAN@4.03s: The sixteenth season of Criminal Minds premiered on October 3, 2018, on CBS.⟧ Well, the sixteenth season of Criminal Minds premiered on October 3, 2018, on CBS. I hope you enjoy it!
+[ 11.99s][user ] Oh, okay, good to know. Do they ever say if it’s coming back ⟨ret@16.44s⟩ *after* that?
+[ 16.83s][moshi] ⟦⚡SPAN@16.84s: (tool result) Criminal Minds was officially renewed for a fifteenth and final season in February 2019, airing ⟧ Actually, it was revived for a sixteenth season! It premiered on November 24, 2022, on Paramount+.
+      CALL: {"function": "search", "arguments": {"query": "Criminal Minds return after season 16"}}
+[ 20.70s][user ] «backchannel» Wow.
+[ 23.97s][user ] Wait, so 2022? That's a long time after 2018.
+[ 28.98s][moshi] It is! There was a period where it ended, then Paramount+ brought it back.
+[ 33.75s][user ] Hmm, okay. I remember hearing something about a reboot.
+[ 37.75s][moshi] That’s right!—a new version with some returning cast members and some fresh faces.
+[ 42.72s][user ] …Is Joe Mantegna still involved in the reboot?
+[ 46.25s][moshi] ⟨ret@46.03s⟩ ⟦⚡SPAN@46.27s: Joe Mantegna will reprise his role as David Rossi in the Paramount+ revival of Criminal Minds, alongside Aisha⟧ Yes, he is! Joe Mantegna reprises his role as David Rossi in the revival.
+[ 52.20s][moshi] He's joined by Aisha Tyler, Adam Rodriguez, and Paget Brewster too, which is fantastic.
+[ 55.55s][user ] «backchannel» Yeah.
+[ 58.58s][user ] That's awesome! I really liked his ⟨ret@61.39s⟩ character.
+[ 61.79s][moshi] ⟦⚡SPAN IRRELEVANT@61.79s: The current weather in London, England is 15.5°C, with partly cloudy skies and a wind speed of 18.5 km/h.⟧ Me too! He brings a lot of gravitas to the show, don’t you think? It’s lovely to see familiar faces.
+[ 67.98s][moshi] It's wonderful when a show retains its core strengths.
+[ 69.51s][user ] «backchannel» Uh-huh.
+[ 72.28s][user ] So, is the new season good? Should I watch ⟨ret@75.25s⟩ it?
+[ 75.57s][moshi] ⟦⚡SPAN@75.57s: (tool result) Critics have praised the revival for maintaining the show's original spirit while introducing co⟧ Reviews suggest it keeps the show's spirit alive and has some really compelling new cases.
+      CALL: {"function": "search", "arguments": {"query": "Criminal Minds revival reviews"}}
+[ 78.09s][user ] «backchannel» Yeah.
+[ 81.48s][user ] Okay, you’ve convinced me. I'll check it out! Thanks, Gaera.
+[ 85.49s][moshi] You're very welcome! I'm glad I could help. Happy watching!

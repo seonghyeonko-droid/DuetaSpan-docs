@@ -1,64 +1,54 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Aroraus, a encouraging and non-judgmental supportive advisor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Freliia, a calm and patient personal guide who helps people with stress relief and mindfulness. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Ruby",
+    "name": "Remy",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "50s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-08",
+      "date": "2026-05-02",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-12-19",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-02-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-09-02",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-01-30",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-12-13",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in May."
-    },
-    {
-      "date": "2025-10-12",
-      "category": "home",
-      "text": "User's home address is 379 Oak Avenue."
-    },
-    {
-      "date": "2025-06-26",
-      "category": "work",
-      "text": "User works as a chef."
+      "date": "2025-06-30",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-12",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-31",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-07-15",
+      "date": "2025-12-22",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -69,11 +59,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, when is the next Olympics coming to ⟨ret@3.34s⟩ Los Angeles?
-[  3.66s][moshi] ⟦⚡SPAN@3.66s: The 2028 Summer Olympics are scheduled to be held in Los Angeles, California, from July 21 to August 6, 2028.⟧ The next Olympics in Los Angeles are scheduled for July 21st to August 6th, 2028. That gives you some time to prepare if you're planning to go!
-[ 13.83s][user ] 2028… that feels so far away! I thought maybe they’d moved it up.
-[ 18.81s][moshi] It does seem a bit distant, doesn’t it? Sometimes big events do get rescheduled, but this one seems firm.
-[ 20.77s][user ] «backchannel» Yeah.
-[ 25.10s][user ] Hmm, well, what about the weather there then, around that ⟨ret@27.90s⟩ time?
-[ 28.30s][moshi] ⟦⚡SPAN@28.30s: (tool result) Los Angeles on July 21, 2028, is forecast to have a high of 29.4°C and a low of 21.1°C, with sun⟧ On July 21st, 2028, Los Angeles is forecast to be around 29.4°C, sunny, with a very low chance of rain. Perfect weather for enjoying the games, hopefully!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Los Angeles", "date": "2028-07-21"}}
+[  0.00s][user ] I was just reading about ancient astronomy, and it got me wondering… who first thought the Earth was the center of everything?
+[  6.84s][moshi] It’s a concept that really shaped early understanding of the cosmos.
+[  8.50s][user ] «backchannel» Yeah.
+[ 11.99s][user ] But seriously, was it just someone making a guess, or was there some reasoning ⟨ret@16.31s⟩ behind it?
+[ 16.71s][moshi] ⟦⚡SPAN@16.71s: Anaximander, a pre-Socratic Greek philosopher, was the first known to propose a model of the cosmos with the E⟧ Anaximander, a Greek philosopher, was actually the first to suggest a model where the Earth hangs in the center. It was a pretty revolutionary idea for its time, though very different from what we know now.
+[ 23.57s][user ] «backchannel» Yeah.
+[ 30.25s][user ] Anaximander, huh? I’ve never heard of him. What else did he believe?
+[ 33.89s][moshi] He was quite a thinker, really. He attempted to explain many aspects of the natural world through observation and reason.
+[ 41.08s][user ] Okay, but back to the Earth-centered idea… was everyone on board with that right away?
+[ 46.16s][moshi] Not at all. It took centuries for the geocentric model to be refined and become the accepted view, with contributions from figures like Ptolemy.
+[ 55.09s][user ] Ptolemy… now *that* name rings a bell. Wasn’t he the one with the complicated system of circles within ⟨ret@61.71s⟩ circles?
+[ 62.11s][moshi] ⟦⚡SPAN@62.11s: Ptolemy’s model, presented in his book *Almagest*, featured epicycles and deferents to explain the apparent re⟧ Yes, Ptolemy’s model, in his *Almagest*, used complex systems of circles—epicycles and deferents—to explain how planets move. It was a very intricate way to try and make sense of what they observed.
+[ 68.64s][user ] «backchannel» Yeah.
+[ 74.91s][user ] Uhhh, epicycles? That sounds… complicated.
+[ 78.15s][moshi] It was! It worked, to a degree, but it wasn't a particularly elegant solution, and it required constant adjustments.
+[ 82.77s][user ] «backchannel» Yeah.
+[ 85.84s][user ] So, if it was so clunky, why did it stick around for so long?
+[ 89.83s][moshi] Well, it aligned with everyday experience—it *looks* like the sun and stars revolve around us—and it was supported by powerful authorities for many years.
+[ 99.04s][user ] That makes sense, I guess. What…
+[102.79s][user ] …about other cultures? Did they all think the Earth was the center?
+[105.65s][moshi] Many did, yes. Similar geocentric models were developed independently in other civilizations, like those in ancient China and Babylonia.
+[111.35s][user ] «backchannel» Yeah.
+[114.93s][user ] Wow. So it wasn’t just a Greek thing. What’s the weather like in Athens ⟨ret@118.55s⟩ right now?
+[118.95s][moshi] ⟦⚡SPAN@118.95s: (tool result) Athens has a temperature of 28.5°C, humidity 62%, and wind from the northwest at 7.2 km/h.⟧ The weather in Athens is currently 28.5 degrees Celsius, with 62% humidity and a wind from the northwest at 7.2 kilometers per hour. Sounds quite pleasant, actually.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Athens"}}
+[130.14s][user ] That does sound nice. It’s good to know people were looking up at the stars even back then.
+[134.92s][moshi] It is, isn’t it? That curiosity is a very human trait, and it’s what drives us to understand the world around us.
+[141.75s][user ] You’re right. Thanks, Freliia. I feel a little more grounded now, strangely enough.
+[145.71s][moshi] [happy] You’re very welcome. Sometimes, connecting with the past can help us find a sense of peace in the present.

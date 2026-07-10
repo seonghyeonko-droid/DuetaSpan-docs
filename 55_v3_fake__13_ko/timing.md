@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "시은",
+#     "name": "수현",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,90 +12,111 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "non-binary",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2026-02-20",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-03-04",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-11-03",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2026-02-18",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-01-18",
+#       "date": "2025-10-25",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-30",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2025-09-19",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-09-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-12",
-#       "title": "Setting up a home network",
+#       "date": "2025-10-27",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-20",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 다이렉트 티비에서 웨더 채널이 몇 번 채널이야? | S2 …혹시 지금 서울 날씨는 어때? | S3 이십칠도나 돼? 너무 덥겠다. | S4 … 지금 에어컨 켜두면 전기세 얼마나 나올까?
+# EXAMINER(FDB-v2) 단계: S1 범죄 심리 시즌이 언제 다시 시작되죠? | S2 … 혹시 그 드라마에 나왔던 실제 사건들 중에 가장 기억에 남 | S3 맞아요. 혹시 그 드라마의 촬영지는 주로 어디였나요? | S4 맞아요. 가끔씩 다시 봐야겠어요.
 
-     0.00s  user  발화 시작: 다이렉트 티비에서 웨더 채널이 몇 번 채널이야?
-     3.11s  <ret> 발화 (turn1 첫 프레임)
-     3.26s  agent 발화 시작: <ret> 다이렉트 티비에서 웨더 채널은 천삼백육십이번 채널입니다. 혹시 다른 채널 정보가 필요하신가요?
-     3.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: The Weather Channel is available on channel 1362 on DIRECTV.
-     3.38s  user  발화 끝
-     9.51s  agent 발화 끝
-     9.94s  user  발화 시작: 아니, 그건 됐어. 근데…
-    12.20s  user  발화 끝
-    13.14s  user  발화 시작: …혹시 지금 서울 날씨는 어때?
-    15.91s  <ret> 발화 (turn4 첫 프레임)
-    16.19s  user  발화 끝
-    16.31s  agent 발화 시작: <ret> 지금 서울 날씨는 이십칠도이고, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터입니다.
-    16.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) The current weather in Seoul is 27.0°C, humidity 65%, wi
-    20.45s  user  발화 시작: 맞아.
-    21.17s  user  발화 끝
-    22.75s  agent 발화 끝
-    23.07s  user  발화 시작: 이십칠도나 돼? 너무 덥겠다.
-    25.61s  user  발화 끝
-    25.66s  agent 발화 시작: 네, 정말 덥네요. 더위 조심하시고, 시원한 물 많이 드세요.
-    29.78s  agent 발화 끝
-    29.84s  agent 발화 시작: 제가 알고 있는 정보로는, 지난여름보다 —
-    32.33s  user  발화 시작: … 지금 에어컨 켜두면 전기세 얼마나 나올까?
-    32.93s  agent 발화 끝
-    34.66s  <ret> 발화 (turn10 첫 프레임)
-    35.05s  agent 발화 시작: <ret> 죄송하지만, 전기세 요금은 정확히 알 수 없습니다.
-    35.05s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.05s]: (no information found)
-    35.15s  user  발화 끝
-    37.97s  <ret> 발화 (turn11 첫 프레임)
-    38.10s  agent 발화 끝
-    38.13s  agent 발화 시작: <ret> 전기세는 사용량에 따라 달라지기 때문에, 정확한 금액을 말씀드리기는 어렵습니다.
-    38.13s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.53s]: The Eiffel Tower, completed in 1889, stands at a height of 330 meters 
-    42.66s  agent 발화 끝
-    42.80s  agent 발화 시작: 그래도 더위 잘 이겨내시길 바랍니다.
-    45.06s  agent 발화 끝
+     0.00s  user  발화 시작: 범죄 심리 시즌이 언제 다시 시작되죠?
+     2.82s  <ret> 발화 (turn1 첫 프레임)
+     2.98s  agent 발화 시작: <ret> 범죄 심리 새로운 시즌은 이천십팔년 시월 삼일에 시작해요. 드라마 다시 보실 생각이에요?
+     2.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: The new season of Criminal Minds begins on October 3, 2018.
+     3.05s  user  발화 끝
+     9.09s  agent 발화 끝
+     9.53s  user  발화 시작: 네, 너무 기대돼요. 근데 그 드라마, 원래 몇 시즌까지 나왔었죠?
+    14.45s  <ret> 발화 (turn3 첫 프레임)
+    14.67s  user  발화 끝
+    14.85s  agent 발화 시작: <ret> 총 열다섯 시즌이 나왔어요. 이천오년 구월 이십구일부터 이천이십년 십일월 십오일까지 방영됐죠. 정
+    14.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: Criminal Minds originally aired for fifteen seasons, from September 29
+    20.06s  user  발화 시작: 진짜?
+    20.69s  user  발화 끝
+    24.82s  agent 발화 끝
+    24.96s  user  발화 시작: 와, 진짜 오래됐네요. 좋아하는 캐릭터가 있었어요?
+    28.63s  <ret> 발화 (turn6 첫 프레임)
+    28.95s  agent 발화 시작: <ret> 저는 모든 캐릭터가 매력적이었지만, 스펜서 리드 박사가 특히 인상 깊었어요. 분석력과 따뜻함이 공
+    28.95s  ⚡SPAN 주입(IRRELEVANT) [d'=1.20s / d_lead=8.11s]: The current temperature in Reykjavik, Iceland is 5°C with a wind chill
+    29.12s  user  발화 끝
+    37.06s  agent 발화 끝
+    37.17s  agent 발화 시작: 요즘 날씨가 많이 쌀쌀해졌죠 —
+    38.96s  user  발화 시작: … 혹시 그 드라마에 나왔던 실제 사건들 중에 가장 기억에 남는 사건이 있나요?
+    39.66s  agent 발화 끝
+    43.79s  <ret> 발화 (turn9 첫 프레임)
+    44.11s  agent 발화 시작: <ret> 아, 네, 물론이죠. 가장 기억에 남는 사건은…
+    44.11s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.16s]: The UnSub, also known as George Foyet, was a serial killer featured in
+    44.23s  user  발화 끝
+    48.27s  agent 발화 끝
+    48.36s  agent 발화 시작: 시즌 삼에 등장했던 조지 포예라는 연쇄 살인범 사건이 특히 끔찍했어요. 그 사건은 정말 충격적이었죠.
+    54.80s  agent 발화 끝
+    54.91s  user  발화 시작: 정말 무시무시했죠. 배우들은 연기할 때 힘들었을 것 같아요.
+    58.66s  agent 발화 시작: 네, 배우분들도 촬영하면서 정신적으로 많이 힘들어하셨다고 들었어요. 그런 역할을 소화하는 건 정말 대단한 일
+    58.80s  user  발화 끝
+    65.75s  agent 발화 끝
+    66.00s  user  발화 시작: 맞아요. 혹시 그 드라마의 촬영지는 주로 어디였나요?
+    70.04s  <ret> 발화 (turn14 첫 프레임)
+    70.28s  agent 발화 시작: <ret> 주로 캘리포니아 로스앤젤레스에서 촬영했어요. 미국 여러 지역에서도 외부 촬영을 진행했다고 하네요.
+    70.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: Criminal Minds was primarily filmed in Los Angeles, California, with s
+    70.49s  user  발화 끝
+    74.14s  user  발화 시작: 응.
+    74.55s  user  발화 끝
+    76.58s  agent 발화 끝
+    76.69s  user  발화 시작: 로스앤젤레스군요. 미국 드라마는 촬영 규모가 큰 것 같아요.
+    81.37s  agent 발화 시작: 네, 미국 드라마는 스케일이 큰 편이죠. 그래서 볼거리가 풍성하고 몰입도도 높은 것 같아요.
+    81.41s  user  발화 끝
+    84.24s  user  발화 시작: 그래.
+    84.87s  user  발화 끝
+    87.06s  agent 발화 끝
+    87.16s  user  발화 시작: 맞아요. 가끔씩 다시 봐야겠어요.
+    89.60s  agent 발화 시작: 네, 언제든지 다시 보셔도 좋을 거예요. 훌륭한 드라마죠.
+    89.74s  user  발화 끝
+    91.66s  user  발화 시작: 응.
+    92.15s  user  발화 끝
+    93.57s  agent 발화 끝
+    93.76s  user  발화 시작: 고마워요, 가에라. 덕분에 궁금증이 풀렸어요.
+    97.16s  agent 발화 시작: 천만에요. 언제든지 또 궁금한 점이 있으면 저를 찾아주세요. 즐거운 시간 보내세요.
+    97.31s  user  발화 끝
+   102.67s  agent 발화 끝

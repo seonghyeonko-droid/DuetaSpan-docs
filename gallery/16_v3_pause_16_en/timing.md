@@ -4,56 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Hugo",
+#     "name": "Julia",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-10",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-06-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "home",
-#       "text": "User's home address is 795 Maple Drive."
-#     },
-#     {
-#       "date": "2025-10-05",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2025-08-28",
+#       "date": "2026-05-27",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-07-29",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-05-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-01-04",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-06-01",
+#       "category": "home",
+#       "text": "User's home address is 393 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-17",
+#       "date": "2026-06-16",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -61,39 +58,73 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-30",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-08-18",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who sings that song… | S2 …grow up to be cowboys… | S3 Oh, Ed Bruce! I always thought it  | S4 Hmm, a cover, huh? What other song
+# EXAMINER(FDB-v2) 단계: S1 I was wondering… | S2 …And was he involved in any other  | S3 That’s fascinating. Did Rice write | S4 Wow, that's intense. I can imagine
 
-     0.00s  user  발화 시작: Do you know who sings that song…
-     1.94s  user  발화 끝
-     3.58s  user  발화 시작: …mama don't let your babies…
-     5.37s  user  발화 끝
-     6.75s  user  발화 시작: …grow up to be cowboys…
-     8.17s  <ret> 발화 (turn3 첫 프레임)
-     8.49s  agent 발화 시작: <ret> The song you’re thinking of, “Mama Don’t Let Your Babi
-     8.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Ed Bruce originally released the song "Mammas Don't Let Your Babies Gr
-     8.59s  user  발화 끝
-    12.43s  user  발화 시작: Yeah.
-    12.83s  user  발화 끝
-    15.77s  user  발화 시작: Oh, Ed Bruce! I always thought it was Willie Nelson and Wayl
-    16.23s  agent 발화 끝
-    19.70s  agent 발화 시작: It’s a common mistake, actually. Willie Nelson and Waylon Je
-    19.70s  user  발화 끝
-    24.91s  user  발화 시작: Yeah, yeah.
-    26.33s  user  발화 끝
-    27.93s  user  발화 시작: Hmm, a cover, huh? What other songs did Ed Bruce write?
-    28.00s  agent 발화 끝
-    31.94s  <ret> 발화 (turn9 첫 프레임)
-    32.18s  agent 발화 시작: <ret> Ed Bruce also wrote “Hello World,” a number one hit fo
-    32.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) Ed Bruce also penned the song "Hello World," which was a
-    32.28s  user  발화 끝
-    40.62s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering…
+     1.24s  user  발화 끝
+     2.87s  user  발화 시작: …who actually wrote the lyrics for “Jesus Christ Superstar”?
+     5.68s  <ret> 발화 (turn2 첫 프레임)
+     5.99s  agent 발화 시작: <ret> Tim Rice is the lyricist behind “Jesus Christ Supersta
+     6.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: Tim Rice wrote the lyrics for the 1970 rock opera “Jesus Christ Supers
+     6.24s  user  발화 끝
+    13.47s  user  발화 시작: Yeah.
+    13.87s  user  발화 끝
+    16.01s  agent 발화 끝
+    16.17s  user  발화 시작: Oh, okay.…
+    16.89s  user  발화 끝
+    18.82s  user  발화 시작: …And was he involved in any other big musicals?
+    21.43s  <ret> 발화 (turn6 첫 프레임)
+    21.83s  agent 발화 시작: <ret> Yes, Tim Rice has a pretty extensive catalogue! He’s a
+    21.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.18s]: Tim Rice has collaborated on numerous successful musicals, including “
+    22.06s  user  발화 끝
+    33.01s  agent 발화 끝
+    33.20s  user  발화 시작: “Evita”, right. I remember that one. But… uhhh…
+    36.62s  <ret> 발화 (turn8 첫 프레임)
+    36.67s  user  발화 끝
+    36.78s  agent 발화 시작: <ret> Hmm, it seems I don't have information on what you wer
+    36.78s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.95s]: (no information found)
+    41.73s  agent 발화 끝
+    42.58s  user  발화 시작: …was Andrew Lloyd Webber also involved with those?
+    45.69s  agent 발화 시작: Andrew Lloyd Webber was, of course, his frequent collaborato
+    45.91s  user  발화 끝
+    49.83s  user  발화 시작: Uh-huh.
+    50.32s  user  발화 끝
+    53.29s  agent 발화 끝
+    53.39s  user  발화 시작: That’s fascinating. Did Rice write the lyrics first, or did 
+    57.90s  <ret> 발화 (turn13 첫 프레임)
+    57.98s  agent 발화 시작: <ret> Andrew Lloyd Webber had the initial concept for “Jesus
+    57.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: Andrew Lloyd Webber initially approached Tim Rice with the concept for
+    58.16s  user  발화 끝
+    62.21s  user  발화 시작: Yeah.
+    62.61s  user  발화 끝
+    68.66s  user  발화 시작: So, Webber came up with the idea.
+    68.88s  agent 발화 끝
+    70.78s  agent 발화 시작: –and then, well, he and Tim Rice spent a lot of time debatin
+    70.91s  user  발화 끝
+    78.93s  user  발화 시작: …did they face any controversy when it first came out?
+    79.63s  agent 발화 끝
+    81.50s  <ret> 발화 (turn18 첫 프레임)
+    81.73s  agent 발화 시작: <ret> Yes, it actually did! “Jesus Christ Superstar” sparked
+    81.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.96s]: “Jesus Christ Superstar” faced significant controversy upon its 1970 r
+    81.88s  user  발화 끝
+    92.85s  user  발화 시작: Yeah.
+    93.25s  user  발화 끝
+    97.53s  user  발화 시작: Wow, that's intense. I can imagine.
+    97.69s  agent 발화 끝
+    99.97s  user  발화 끝
+   100.01s  agent 발화 시작: It certainly challenged a lot of expectations at the time, b
+   108.21s  user  발화 시작: Yeah, probably. I’ve been meaning to listen to it again.
+   108.26s  agent 발화 끝
+   111.45s  agent 발화 시작: That sounds lovely. Reconnecting with art that moves you can
+   111.63s  user  발화 끝
+   119.88s  agent 발화 끝

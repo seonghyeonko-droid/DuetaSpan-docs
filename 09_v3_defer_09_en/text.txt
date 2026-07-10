@@ -1,89 +1,111 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Zal, a upbeat and supportive counselor who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Drioia, a kind and steady counselor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "Hana",
+    "name": "David",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-16",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-02-11",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2026-03-16",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in December."
-    },
-    {
-      "date": "2026-02-07",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2025-11-27",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-08-25",
+      "date": "2026-01-18",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2025-08-08",
+      "date": "2025-12-16",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-11-03",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-07-11",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2025-06-21",
+      "category": "work",
+      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-06",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-07",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Select credit card from the payment method dropdown, please.
-[  3.32s][moshi] ⟨ret@3.08s⟩ ⟦⚡SPAN@3.32s: (tool result) The process of selecting a credit card from a payment method dropdown typically involves clickin⟧ The process usually involves clicking the dropdown, reviewing the cards, and choosing one.
-      CALL: {"function": "tavily-search", "arguments": {"query": "payment method dropdown credit card selection"}}
-[  8.64s][user ] Uhhh, and then apply the five-dollar discount code, "SAVE5".
-[ 12.36s][moshi] ⟨ret@12.20s⟩ ⟦⚡SPAN@12.36s: (tool result) Applying a discount code like "SAVE5" to a payment usually involves entering the code in a desig⟧ You'll enter "SAVE5" in a designated field during checkout, then confirm the discount.
-      CALL: {"function": "tavily-search", "arguments": {"query": "apply discount code SAVE5 to payment"}}
-[ 18.41s][user ] Sounds good. What’s the weather in Seoul right ⟨ret@21.57s⟩ now?
-[ 21.97s][moshi] ⟦⚡SPAN@21.97s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It is 23.0 degrees Celsius in Seoul, with 74 percent humidity and a 5.5 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 24.86s][user ] «backchannel» Mm-hmm.
-[ 30.46s][moshi] That’s a pleasant summer day, perfect for a walk in the park.
-[ 34.44s][user ] Hmmmm, I need to book a table for two at a nice Italian restaurant ⟨ret@38.35s⟩ tomorrow evening.
-[ 38.75s][moshi] ⟦⚡SPAN@38.75s: (no information found)⟧ Give me a moment while I search for Italian restaurants with availability tomorrow evening.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "date": "2026-07-11", "time": "evening", "party_size": "2"}}
-[ 41.85s][user ] «backchannel» Mhm.
-[ 44.89s][user ] But…
-  ⟦⚡지연 SPAN 도착@45.12s: Ristorante Bella Notte offers classic Italian cuisine and has availability for two at 7:30 PM tomorrow evening⟧
-[ 45.51s][moshi] «deferred_result» ⟨ret@45.52s⟩ I’ve found several options. Ristorante Bella Notte has availability for two at 7:30 PM tomorrow, at 123 Gangnam-daero.
-[ 55.45s][user ] Okay, ⟨ret@55.99s⟩ book it.
-[ 56.39s][moshi] ⟦⚡SPAN@56.39s: (tool result) Reservation confirmed for two at Ristorante Bella Notte on July 11, 2026 at 7:30 PM. Confirmatio⟧ Your reservation for two at Ristorante Bella Notte is confirmed for 7:30 PM tomorrow, confirmation ID BN7492.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Ristorante Bella Notte", "date": "2026-07-11", "time": "19:30", "party_size": "2"}}
-[ 59.93s][user ] «backchannel» Nice.
-[ 66.74s][user ] Excellent. And could you remind me what my appointment with Dr. Lee is ⟨ret@70.30s⟩ about?
-[ 70.53s][moshi] ⟦⚡SPAN@70.54s: [2026-05-15] Appointment with Dr. Lee for annual check-up.⟧ The appointment with Dr. Lee, on May 15th, was for your annual check-up.
-[ 75.94s][user ] Oh, right. Thanks, Zal.
-[ 77.55s][moshi] You're very welcome. Focusing on your well-being is a great step towards a more fulfilling routine.
+[  0.00s][user ] Please create a product for monthly web hosting.
+[  2.92s][moshi] ⟨ret@2.68s⟩ ⟦⚡SPAN@2.92s: (tool result) Product 'monthly web hosting' created with ID 78923.⟧ I’ve created a product for monthly web hosting, its ID is 78923.
+      CALL: {"function": "create_product", "arguments": {"product_name": "monthly web hosting"}}
+[  8.76s][user ] What’s the price of that ⟨ret@10.36s⟩ product?
+[ 10.52s][moshi] ⟦⚡SPAN@10.52s: (tool result) Product 78923 is priced at $9.99 per month.⟧ Product 78923 is priced at nine dollars and ninety-nine cents per month.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "78923"}}
+[ 16.75s][user ] Hmm…
+[ 17.69s][moshi] Is there anything specific you’re thinking about with the price? Perhaps we can explore different tiers.
+[ 24.14s][user ] Can you show me some similar ⟨ret@25.86s⟩ products?
+[ 26.18s][moshi] ⟦⚡SPAN@26.18s: (tool result) Web hosting plans offer various features and pricing; Bluehost, SiteGround, HostGator are popula⟧ A search shows Bluehost, SiteGround, and HostGator are popular web hosting options.
+      CALL: {"function": "search", "arguments": {"query": "web hosting plans"}}
+[ 28.98s][user ] «backchannel» Mm-hmm.
+[ 31.96s][moshi] They all offer different features, so it's good to compare. Do any of those names ring a bell?
+[ 34.77s][user ] «backchannel» Okay.
+[ 38.08s][user ] What are the key differences between Bluehost ⟨ret@40.81s⟩ and SiteGround?
+[ 41.12s][moshi] ⟦⚡SPAN@41.13s: (tool result) Bluehost is cheaper, while SiteGround offers faster speeds and better customer support.⟧ Bluehost is typically cheaper, but SiteGround offers faster speeds and better support.
+      CALL: {"function": "search", "arguments": {"query": "Bluehost vs SiteGround"}}
+[ 45.09s][user ] «backchannel» Yeah, yeah.
+[ 47.21s][user ] That’s helpful.
+[ 48.42s][moshi] It’s good to know what’s important to you. Speed and support are crucial for a good experience.
+[ 51.80s][user ] «backchannel» Yeah.
+[ 55.04s][user ] I need to book a doctor’s appointment.
+[ 57.36s][moshi] I can certainly help with that. Do you have a preferred provider, or a specialty you’re looking for?
+[ 59.88s][user ] «backchannel» Okay.
+[ 63.43s][user ] I saw Dr. Lee’s name ⟨ret@65.07s⟩ online.
+[ 65.47s][moshi] ⟦⚡SPAN@65.47s: (tool result) Dr. Lee is a general practitioner at City Medical Clinic, 555-123-4567.⟧ Dr. Lee is a general practitioner at City Medical Clinic, and their number is 555-123-4567.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Dr. Lee"}}
+[ 74.14s][user ] Can you book me an appointment for ⟨ret@76.26s⟩ next Tuesday?
+[ 76.58s][moshi] ⟦⚡SPAN@76.58s: (tool result) Appointment with Dr. Lee booked for Tuesday, July 21st, at 10:00 AM. Confirmation ID: AB12CD.⟧ I’ve booked you an appointment with Dr. Lee for next Tuesday at ten AM. Confirmation ID is AB12CD.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Dr. Lee", "appointment_date": "2026-07-21"}}
+[ 84.93s][user ] Great, thank you.
+[ 85.94s][moshi] You’re very welcome. Taking care of your health is important.
+[ 89.58s][user ] What’s the weather going to be like then?
+[ 91.52s][moshi] ⟨ret@91.36s⟩ ⟦⚡SPAN@91.52s: (tool result) Tuesday will be sunny with a high of 28.0°C and a low of 20.0°C.⟧ Tuesday will be sunny, with a high of twenty-eight degrees Celsius and a low of twenty.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-21"}}
+[ 97.75s][user ] Sounds nice.
+[ 98.73s][moshi] It does, doesn’t it? A bit of sunshine can really lift your spirits.
+[102.30s][user ] «backchannel» Yeah.
+[103.58s][user ] Can you remind me of the ⟨ret@105.50s⟩ appointment details?
+[105.90s][moshi] ⟦⚡SPAN@105.90s: [2026-07-16] Appointment with Dr. Lee booked for Tuesday, July 21st, at 10:00 AM. Confirmation ID: AB12CD.⟧ You have an appointment with Dr. Lee next Tuesday, July 21st, at ten AM, confirmation AB12CD.

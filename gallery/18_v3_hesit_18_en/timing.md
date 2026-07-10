@@ -4,123 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Thomas",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "50s",
-#     "language": "French"
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-10",
+#       "date": "2026-04-12",
 #       "category": "home",
-#       "text": "User's home address is 427 Maple Drive."
+#       "text": "User's home address is 798 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-09-23",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "date": "2026-02-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-09-18",
+#       "date": "2025-12-10",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-09-13",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-05-31",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-06-25",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2026-03-05",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Odalisque is a turkish term and ca | S2 Ingres… how do you spell that? | S3 Secluded… KO 흐으으음… I imagine it co | S4 Sounds… difficult.
+# EXAMINER(FDB-v2) 단계: S1 Uh, I was just wondering… which st | S2 …is that rate going up or down rec | S3 Welll… are there any specific prog | S4 And how does that compare to, say,
 
-     0.00s  user  발화 시작: Odalisque is a turkish term and can be defined as?
-     2.84s  <ret> 발화 (turn1 첫 프레임)
-     3.06s  agent 발화 시작: <ret> The term comes from Turkish, and historically, an odal
-     3.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: An odalisque was a female slave in a harem, and also a chambermaid.
-     3.19s  user  발화 끝
-     8.92s  user  발화 시작: Yeah.
-     9.42s  user  발화 끝
-    11.94s  user  발화 시작: Hmmm, a chambermaid… was that their only role?
-    11.96s  agent 발화 끝
-    15.18s  agent 발화 시작: <ret> I don’t have specific details about the full range of 
-    15.18s  <ret> 발화 (turn4 첫 프레임)
-    15.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: (no information found)
-    15.50s  user  발화 끝
-    21.86s  user  발화 시작: Okay. What about… uhhh… the paintings? I’ve seen paintings c
-    21.89s  agent 발화 끝
-    27.48s  <ret> 발화 (turn6 첫 프레임)
-    27.52s  agent 발화 시작: <ret> "Odalisque" became a popular subject for paintings, es
-    27.60s  user  발화 끝
-    27.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.16s]: "Odalisque" is a common theme in 19th-century Western art, popularized
-    34.35s  user  발화 시작: Right.
-    34.98s  user  발화 끝
-    36.59s  user  발화 시작: Ingres… how do you spell that?
-    36.68s  agent 발화 끝
-    38.86s  <ret> 발화 (turn9 첫 프레임)
-    38.94s  agent 발화 시작: <ret> That’s Jean-Auguste-Dominique Ingres, a French Neoclas
-    38.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.32s]: Jean-Auguste-Dominique Ingres was a French Neoclassical painter, born 
-    38.94s  user  발화 끝
-    43.14s  user  발화 시작: Really?
-    43.96s  user  발화 끝
-    50.26s  agent 발화 끝
-    51.40s  user  발화 시작: It is. [happy] Were those paintings… accurate depictions?
-    54.89s  <ret> 발화 (turn12 첫 프레임)
-    54.96s  agent 발화 시작: <ret> I don’t have information on the historical accuracy of
-    54.97s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.85s]: (no information found)
-    55.14s  user  발화 끝
-    56.52s  user  발화 시작: Yeah.
-    57.15s  user  발화 끝
-    59.81s  agent 발화 끝
-    61.25s  user  발화 시작: Oh. Well, what was life *like* in a harem?
-    64.14s  <ret> 발화 (turn15 첫 프레임)
-    64.20s  agent 발화 시작: <ret> A harem was a private space within a Muslim household,
-    64.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.31s]: Harems were private domestic spaces reserved for women in a Muslim hou
-    64.39s  user  발화 끝
-    73.48s  user  발화 시작: Secluded… KO 흐으으음… I imagine it could be stressful.
-    73.51s  agent 발화 끝
-    79.02s  agent 발화 시작: It’s very understandable to think that. Isolation can certai
-    79.22s  user  발화 끝
-    85.10s  agent 발화 끝
-    85.47s  user  발화 시작: Yeah… um… are there ways to cope with feeling isolated?
-    89.64s  user  발화 끝
-    89.85s  agent 발화 시작: Practicing mindfulness, even for a few minutes, can help gro
-    94.62s  agent 발화 끝
-    95.98s  user  발화 시작: Mindfulness… could you explain that a little more?
-    98.76s  user  발화 끝
-    98.79s  agent 발화 시작: Mindfulness is about paying attention to your thoughts and f
-   105.68s  user  발화 시작: Sounds… difficult.
-   105.70s  agent 발화 끝
-   107.41s  agent 발화 시작: It can take practice, certainly, but even small moments of m
-   107.52s  user  발화 끝
-   113.15s  agent 발화 끝
-   114.51s  user  발화 시작: Okay. What’s the weather like in Istanbul right now?
-   117.79s  user  발화 끝
-   117.86s  <ret> 발화 (turn25 첫 프레임)
-   118.10s  agent 발화 시작: <ret> It is currently 27.2 degrees Celsius in Istanbul, with
-   118.10s  ⚡SPAN 주입 [d'=1.36s / d_lead=12.11s]: (tool result) Istanbul, Turkey has a temperature of 27.2°C, humidity 6
-   125.79s  user  발화 시작: Yeah.
-   126.42s  user  발화 끝
-   130.21s  agent 발화 끝
-   130.24s  user  발화 시작: That sounds… nice. Thank you, Liaon.
-   133.42s  user  발화 끝
-   133.43s  agent 발화 시작: You’re very welcome. Remember to be kind to yourself, and al
-   139.22s  agent 발화 끝
+     0.00s  user  발화 시작: Uh, I was just wondering… which state in India has the highe
+     4.53s  <ret> 발화 (turn1 첫 프레임)
+     4.76s  agent 발화 시작: <ret> Bihar currently has the highest birth rate in India—
+     4.77s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.19s]: Bihar has the highest birth rate in India, with 26.2 births per 1,000 
+     4.95s  user  발화 끝
+     7.18s  user  발화 시작: …is that rate going up or down recently?
+     7.95s  agent 발화 끝
+     9.20s  <ret> 발화 (turn3 첫 프레임)
+     9.52s  agent 발화 시작: <ret> Though it remains the highest in India, the birth rate
+     9.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: The birth rate in Bihar has been decreasing, from 28.3 in 2018 to 26.2
+     9.62s  user  발화 끝
+    13.59s  user  발화 시작: Yeah.
+    14.09s  user  발화 끝
+    19.16s  agent 발화 시작: It’s a complex picture, with many factors influencing these 
+    19.25s  agent 발화 끝
+    23.34s  user  발화 시작: Welll… are there any specific programs to address that in Bi
+    23.56s  agent 발화 끝
+    27.09s  user  발화 끝
+    27.10s  agent 발화 시작: That’s a really insightful question. Focusing on family plan
+    33.45s  agent 발화 끝
+    34.22s  user  발화 시작: And how does that compare to, say, Kerala?
+    36.73s  <ret> 발화 (turn9 첫 프레임)
+    36.80s  agent 발화 시작: <ret> Kerala, in comparison, has a much lower birth rate—18.
+    36.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.77s]: Kerala has a significantly lower birth rate of 18.1 per 1,000 people, 
+    36.84s  user  발화 끝
+    48.58s  agent 발화 끝

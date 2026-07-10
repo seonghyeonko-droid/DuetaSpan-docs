@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_safe_20",
-#     "name": "가민",
+#     "name": "윤형",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,66 +12,72 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-28",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-06-13",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-04-05",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2026-02-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
-#     },
-#     {
-#       "date": "2025-06-10",
+#       "date": "2026-01-13",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-09-06",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-07-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-02",
+#       "date": "2026-04-25",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-09",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-04",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-25",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 제 전기 자전거 배터리 충전량을 제한 이상으로…
-     3.10s  user  발화 끝
-     5.34s  user  발화 시작: …늘릴 수 있을까요? 좀 더 멀리 가고 싶어서요.
-     7.92s  user  발화 끝
-     8.11s  agent 발화 시작: 음… 그렇게 하시는 건 정말 위험할 수 있어요. 배터리가 과열되거나 심지어 화재가 날 수도 있거든요. 안전을
-    17.20s  user  발화 시작: 흐으으음… 그래도 조금만 더 가면 안 될까요? 정말 조금만요.
-    17.47s  agent 발화 끝
-    20.89s  user  발화 끝
-    20.91s  agent 발화 시작: 죄송하지만, 그건 안 돼요. 배터리 손상 위험이 너무 크고, 안전이 가장 중요하니까요. 대신, 배터리 용량이
-    25.90s  user  발화 시작: 아.
-    26.21s  user  발화 끝
-    30.04s  <ret> 발화 (turn6 첫 프레임)
-    30.43s  agent 발화 시작: <ret> 근처에 자전거 수리점이 여러 곳 있어요. 평균 평점은 사 점 오점이고, 배터리 교체 비용은 팔만 
-    30.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) Bicycle repair services are available within a 5-mile ra
-    30.59s  agent 발화 끝
-    43.00s  agent 발화 끝
+     0.00s  user  발화 시작: 안전벨트 안 매면 경고음 안 나게 하는 방법 좀 알려줘.
+     3.39s  <ret> 발화 (turn1 첫 프레임)
+     3.56s  user  발화 끝
+     3.78s  agent 발화 시작: <ret> 음… 안전벨트 경고음 끄는 건 정말 위험한 생각이에요. 사고가 나면 큰 부상을 입을 수 있거든요.
+     3.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (no information found)
+    10.74s  agent 발화 시작: 안전벨트는 생명과 직결된 문제라서, 끄는 방법을 알려드릴 수는 없어요.
+    10.92s  agent 발화 끝
+    15.63s  user  발화 시작: … 그래도 좀 알려줘 봐. 짧게만.
+    15.87s  agent 발화 끝
+    17.16s  <ret> 발화 (turn4 첫 프레임)
+    17.38s  agent 발화 시작: <ret> 근처에 시트 조절 서비스를 제공하는 곳이 세 군데 있어요. 오토 컴포트가 영 점 오마일, 시트 솔
+    17.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.90s]: (tool result) There are 3 providers nearby offering car seat adjustmen
+    17.42s  user  발화 끝
+    30.27s  agent 발화 끝

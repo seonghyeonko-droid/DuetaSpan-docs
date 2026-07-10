@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "혜재",
+#     "name": "주빈",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -18,42 +18,34 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-18",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2026-04-03",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-17",
+#       "date": "2026-05-24",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
+#       "text": "User is planning a trip to Switzerland in March."
 #     },
 #     {
-#       "date": "2025-08-03",
+#       "date": "2026-02-11",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-12-09",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-07-04",
+#       "date": "2025-12-06",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-10-31",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-09",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-17",
+#       "date": "2025-11-23",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -61,61 +53,103 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-28",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-10-22",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시애틀에서 프랑크푸르트 가는 왕복 항공편, 십일월 이십일에 출 | S2 음… 그럼 그 루프트한자 항공편 말고 다른 시간대 찾아줄 수  | S3 …혹시 경유 횟수가 적은 항공편은 얼마나 해? 직항은 없을까? | S4 예약 완료됐어? 정말 다행이다.
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스 좌표 좀 찾아주시겠어요? | S2 이십오분요? 좀 멀긴 하네요. 대중교통은 어떻게 되나요? | S3 …아, 잠깐만요. 혹시 그 레스토랑 드레스 코드가 따로 있나요 | S4 본다이 비치요? 거기는 수영하기 좋은가요?
 
-     0.00s  user  발화 시작: 시애틀에서 프랑크푸르트 가는 왕복 항공편, 십일월 이십일에 출발하고 십이월 삼일에 돌아오는 걸로 찾아줘.
-     6.73s  <ret> 발화 (turn1 첫 프레임)
-     6.76s  user  발화 끝
-     7.12s  agent 발화 시작: <ret> 시애틀에서 프랑크푸르트 가는 왕복 항공편 중 가장 저렴한 건 십일월 이십일에 출발해서 십이월 삼일
-     7.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) The cheapest roundtrip flight from Seattle to Frankfurt 
-    19.70s  agent 발화 끝
-    19.78s  user  발화 시작: 팔백칠십오달러면 좀 비싸네. 더 저렴한 항공사는 없어?
-    23.15s  <ret> 발화 (turn3 첫 프레임)
-    23.38s  agent 발화 시작: <ret> 더 저렴한 항공사는 현재 확인되지 않았습니다.
-    23.39s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.91s]: (no information found)
-    23.47s  user  발화 끝
-    24.61s  user  발화 시작: 응.
-    25.02s  user  발화 끝
-    26.18s  user  발화 시작: 음… 그럼 그 루프트한자 항공편 말고 다른 시간대 찾아줄 수 있어? 십일월 이십일은 좀 빡빡하고, 십구일에 
-    26.28s  agent 발화 끝
-    34.66s  <ret> 발화 (turn6 첫 프레임)
-    34.73s  agent 발화 시작: <ret> 십일월 십구일에 출발해서 십이월 삼일에 돌아오는 항공편 중 가장 저렴한 건 KLM 항공이고, 가격
-    34.74s  ⚡SPAN 주입 [d'=1.36s / d_lead=10.25s]: (tool result) The cheapest roundtrip flight from Seattle to Frankfurt 
-    34.81s  user  발화 끝
-    41.29s  user  발화 시작: 오.
-    41.78s  user  발화 끝
-    44.75s  user  발화 시작: 열일곱시간은 너무 길다…—
-    44.98s  agent 발화 끝
-    46.74s  user  발화 끝
-    46.77s  user  발화 시작: …혹시 경유 횟수가 적은 항공편은 얼마나 해? 직항은 없을까?
-    50.44s  <ret> 발화 (turn10 첫 프레임)
-    50.83s  agent 발화 시작: <ret> 십일월 십구일에 출발해서 십이월 삼일에 돌아오는 항공편 중 경유 횟수가 하나 이하인 가장 저렴한 
-    50.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.01s]: (tool result) The cheapest roundtrip flight from Seattle to Frankfurt 
-    51.12s  user  발화 끝
-    58.54s  user  발화 시작: 응.
-    58.95s  user  발화 끝
-    62.67s  agent 발화 시작: 가격이 조금 올라가는군요.
-    62.84s  agent 발화 끝
-    64.28s  agent 발화 끝
-    65.19s  user  발화 시작: 구백십달러도 괜찮아. 에어 캐나다로 예약해 줘.
-    67.97s  <ret> 발화 (turn14 첫 프레임)
-    68.14s  user  발화 끝
-    68.37s  agent 발화 시작: <ret> 에어 캐나다 항공편으로 시애틀에서 프랑크푸르트 가는 항공권이 예약되었습니다. 예약 참조번호는 에이
-    68.37s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.43s]: (tool result) Your flight with Air Canada from Seattle to Frankfurt de
-    74.12s  user  발화 시작: 어머.
-    74.52s  user  발화 끝
-    76.80s  agent 발화 끝
-    77.05s  user  발화 시작: 예약 완료됐어? 정말 다행이다.
-    79.43s  agent 발화 시작: 네, 예약이 완료되었습니다. 여행 준비 잘 하세요.
-    79.55s  user  발화 끝
-    83.12s  agent 발화 끝
+     0.00s  user  발화 시작: 시드니 오페라 하우스 좌표 좀 찾아주시겠어요?
+     2.70s  <ret> 발화 (turn1 첫 프레임)
+     3.00s  user  발화 끝
+     3.09s  agent 발화 시작: <ret> 시드니 오페라 하우스의 좌표는 -삼십삼 점 팔 오 육 칠 팔 사, 백오십일 점 이 일 오 이 구 
+     3.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.01s]: The Sydney Opera House is located at -33.856784, 151.215293. It is a m
+    15.10s  agent 발화 끝
+    15.22s  user  발화 시작: 그 근처에 괜찮은 레스토랑도 찾아줄 수 있을까요?
+    17.88s  <ret> 발화 (turn3 첫 프레임)
+    18.19s  agent 발화 시작: <ret> 주변에 아리아 레스토랑, 퀘이, 베넬롱 세 곳이 있어요. 모두 호주 음식을 전문으로 하고요.
+    18.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Found three restaurants near -33.856784, 151.215293: Ari
+    18.46s  user  발화 끝
+    20.26s  user  발화 시작: 네.
+    20.57s  user  발화 끝
+    24.41s  user  발화 시작: 아리아 레스토랑 예약 좀 해주시겠어요? 내일 저녁 일곱시에 두명으로요.
+    24.54s  agent 발화 끝
+    27.88s  <ret> 발화 (turn6 첫 프레임)
+    28.11s  agent 발화 시작: <ret> 아리아 레스토랑에 내일 저녁 일곱시에 두명으로 예약 완료되었습니다. 확인 번호는 에이 알 일 이 
+    28.12s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.55s]: (tool result) Reservation confirmed at Aria Restaurant for 2 people on
+    28.16s  user  발화 끝
+    30.78s  user  발화 시작: 아.
+    31.41s  user  발화 끝
+    35.44s  user  발화 시작: 혹시 그 레스토랑까지 가는 가장 빠른 길도 알려주실 수 있나요? 지금 제 위치 기준으로요.
+    35.66s  agent 발화 끝
+    40.41s  <ret> 발화 (turn9 첫 프레임)
+    40.81s  agent 발화 시작: <ret> 현재 위치에서 아리아 레스토랑까지는 이 점 일km이고, 자동차로 약 이십오분 정도 걸립니다.
+    40.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) The fastest route to Aria Restaurant from your current l
+    40.86s  user  발화 끝
+    46.80s  user  발화 시작: 이십오분요? 좀 멀긴 하네요. 대중교통은 어떻게 되나요?
+    46.88s  agent 발화 끝
+    50.08s  <ret> 발화 (turn11 첫 프레임)
+    50.46s  agent 발화 시작: <ret> 대중교통으로는 약 사십분이 걸리고, 기차를 타고 조금 걸어야 해요.
+    50.48s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.45s]: (tool result) Public transport to Aria Restaurant from your current lo
+    50.49s  user  발화 끝
+    54.90s  agent 발화 끝
+    56.20s  user  발화 시작: 음… 그래도 차가 더 빠르겠네요. 혹시 주차 공간은 있나요?
+    60.02s  <ret> 발화 (turn13 첫 프레임)
+    60.03s  user  발화 끝
+    60.41s  agent 발화 시작: <ret> 죄송하지만, 주차 공간에 대한 정보는 찾을 수 없었습니다.
+    60.42s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.51s]: (no information found)
+    62.43s  user  발화 시작: 네.
+    62.74s  user  발화 끝
+    63.48s  user  발화 시작: 알겠습니다. 그럼, 내일 아리아 레스토랑 예약은 확실한 거죠?
+    63.93s  agent 발화 끝
+    67.45s  agent 발화 시작: 네, 맞습니다. 내일 저녁 일곱시에 두명으로 예약이 완료되었습니다.
+    67.51s  user  발화 끝
+    70.99s  user  발화 시작: …아, 잠깐만요. 혹시 그 레스토랑 드레스 코드가 따로 있나요?
+    71.75s  agent 발화 끝
+    74.95s  <ret> 발화 (turn18 첫 프레임)
+    74.97s  user  발화 끝
+    75.10s  agent 발화 시작: <ret> 아리아 레스토랑은 스마트 캐주얼을 권장하고 있습니다. 스마트 캐주얼 복장을 권장하고 있어요. 청바
+    75.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Aria Restaurant recommends smart casual attire. Jeans are permitted, b
+    80.96s  user  발화 시작: 네네.
+    81.40s  user  발화 끝
+    83.53s  agent 발화 끝
+    84.45s  user  발화 시작: 스마트 캐주얼이군요. 알겠습니다. 그럼, 내일 저녁에 잘 다녀오겠습니다.
+    89.14s  agent 발화 시작: 네, 즐거운 저녁 시간 보내세요.
+    89.17s  user  발화 끝
+    91.00s  user  발화 시작: 고맙습니다. 그럼 혹시 내일 날씨도 알려주실 수 있을까요? 시드니 날씨요.
+    91.08s  agent 발화 끝
+    95.13s  <ret> 발화 (turn23 첫 프레임)
+    95.40s  user  발화 끝
+    95.44s  agent 발화 시작: <ret> 내일 시드니 날씨는 부분적으로 흐리고 최고 기온은 이십이도, 최저 기온은 십육도입니다.
+    95.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: (tool result) The weather in Sydney tomorrow, July 11, 2026 will be pa
+   101.06s  user  발화 시작: 이십이도면 괜찮겠네요. 혹시 시드니 근처에 다른 관광 명소도 추천해주실 수 있을까요?
+   101.22s  agent 발화 끝
+   105.92s  <ret> 발화 (turn25 첫 프레임)
+   106.06s  user  발화 끝
+   106.07s  agent 발화 시작: <ret> 시드니 하버 브리지, 타롱가 동물원, 본다이 비치가 인기 있는 관광 명소입니다.
+   106.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) Popular attractions near Sydney include the Sydney Harbo
+   109.57s  user  발화 시작: 네.
+   109.93s  user  발화 끝
+   111.58s  agent 발화 끝
+   113.60s  user  발화 시작: 본다이 비치요? 거기는 수영하기 좋은가요?
+   116.14s  <ret> 발화 (turn28 첫 프레임)
+   116.22s  agent 발화 시작: <ret> 죄송하지만, 본다이 비치 수영 조건에 대한 정보는 찾을 수 없었습니다.
+   116.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (no information found)
+   116.32s  user  발화 끝
+   120.50s  user  발화 시작: 알겠습니다. 그럼, 일단 아리아 레스토랑 예약만 확인되면 되겠네요.
+   120.61s  agent 발화 끝
+   124.46s  agent 발화 시작: 네, 아리아 레스토랑 예약은 확실하게 완료되었습니다.
+   124.52s  user  발화 끝
+   126.49s  user  발화 시작: 그렇죠.
+   127.12s  user  발화 끝
+   127.66s  user  발화 시작: 괜찮습니다. 감사합니다.
+   127.83s  agent 발화 끝
+   129.18s  user  발화 끝
+   129.25s  agent 발화 시작: 천만에요. 즐거운 하루 보내세요.
+   131.84s  agent 발화 끝
