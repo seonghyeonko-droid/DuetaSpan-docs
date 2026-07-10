@@ -1,111 +1,84 @@
 v3_mem_34_ko src=mem style=mem
-SYSTEM: <system> 당신은 친절하고 침착한 라이프 코치인 Kler이며, 사람들의 일상적인 결정과 감정을 돕습니다. <system>
+SYSTEM: <system> 당신은 건강 및 일상 습관에 대해 사람들을 돕는 따뜻하고 세심한 상담사 Lunax입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "주정",
+    "name": "연담",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-01",
+      "date": "2026-04-11",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-04-01",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-01-07",
+      "category": "home",
+      "text": "User's home address is 인천 연수구 송도동 12-5."
+    },
+    {
+      "date": "2025-12-13",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-12-05",
       "category": "work",
       "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-01-09",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-09-29",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-07-30",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-06-20",
-      "category": "hobby",
-      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-29",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-12-23",
+      "date": "2026-04-27",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-08-11",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 주정님. 저는 Kler예요. 오늘 하루는 어떠셨어요?
-[  2.10s][user ] «backchannel» 응.
-[  4.73s][user ] 그냥 그래. 집에서 제일 가까운 공원까지 얼마나 ⟨ret@8.28s⟩ 걸릴까?
-[  8.36s][moshi] ⟦⚡SPAN@8.36s: [2025-08-11] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.⟧ 주정님, 전에 집 네트워크 설정에 대해 여쭤보셨던 걸로 기억해요. 지금은 집에서 가장 가까운 공원까지의 거리를 알고 싶으시군요. 현재 위치에서 가장 가까운 공원까지는 약 일 점 칠킬로미터이고, 걸어서 이십삼분 정도 걸릴 거예요.
-[ 13.04s][user ] «backchannel» 그래.
-[ 23.24s][moshi] ⟨ret@23.00s⟩ ⟦⚡SPAN@23.24s: (tool result) Distance to the nearest park is 1.7 kilometers, estimated travel time is 23 minutes walking.⟧ 네, 이십삼분 정도 예상되지만, 교통 상황에 따라 조금 더 걸릴 수도 있어요.
-      CALL: {"function": "map_directions", "arguments": {"origin": "Busan", "destination": "park"}}
-[ 27.68s][user ] 그럼 버스타면 얼마나 걸릴까?
-[ 29.63s][moshi] ⟨ret@29.55s⟩ ⟦⚡SPAN@29.63s: (tool result) Taking the bus to the nearest park will take approximately 15 minutes, including a 7-minute walk⟧ 버스를 타면 약 십오분 정도 걸릴 거예요. 칠분 정도 걸어서 이동해야 해요.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "Busan", "destination": "park"}}
-[ 31.88s][user ] «backchannel» 응.
-[ 34.54s][user ] 칠분 걸어야 한다고? 좀 멀겠네.
-[ 36.87s][moshi] 네, 조금 걸어야 하지만, 걸으면서 주변 풍경을 즐기시는 것도 좋을 것 같아요.
-[ 41.51s][user ] 음… 그럼 거기 주변에 카페는 ⟨ret@43.60s⟩ 있어?
-[ 44.00s][moshi] ⟦⚡SPAN@44.00s: (tool result) There are three cafes within 500 meters of the park: Cafe Bloom, Coffee Bean, and Tea Leaf.⟧ 공원 주변에 세 곳의 카페가 있어요. Bloom 카페, 커피빈, 그리고 Tea Leaf 카페입니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "park", "query": "cafe"}}
-[ 46.91s][user ] «backchannel» 음.
-[ 49.85s][user ] Bloom 카페가 제일 괜찮아 보이는데, 거기 메뉴 좀 알려줄 수 ⟨ret@54.07s⟩ 있어?
-[ 54.39s][moshi] ⟦⚡SPAN@54.39s: (tool result) Cafe Bloom's menu includes Americano ($3.50), Latte ($4.00), and a variety of pastries.⟧ Bloom 카페의 메뉴에는 아메리카노가 삼 점 오 영달러, 라떼가 사 점 영 영달러이고, 다양한 페이스트리도 준비되어 있어요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Cafe Bloom", "query": "menu"}}
-[ 62.86s][user ] 아메리카노 가격이 얼마라고?
-[ 65.03s][moshi] 아메리카노는 삼 점 오 영달러입니다.
-[ 68.69s][user ] 삼 점 오 영달러… 음, 그럼 혹시 내가 전에 예약했던 치과 예약 정보 좀 다시 알려줄 수 있어?
-[ 75.86s][moshi] «interrupted» ⟨ret@75.78s⟩ ⟦⚡SPAN@75.86s: [2026-05-29] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ 이른 아침 시간, 한 선생님을 선호하셨던 걸로 기억해요—
-[ 78.59s][user ] «interrupts_prev» …근데 혹시 그날 아침 일찍 진료 가능한지 다시 한번 확인해 줄 수 ⟨ret@83.05s⟩ 있을까?
-[ 83.36s][moshi] ⟦⚡SPAN@83.37s: (tool result) Dr. Han has availability at 8:00 AM on July 15, 2026.⟧ 한 선생님은 이천이십육년 칠월 십오일 오전 여덟시에 진료가 가능합니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider": "Dr. Han", "service": "dentist", "time": "early morning"}}
-[ 85.38s][user ] «backchannel» 헐.
-[ 87.98s][user ] 칠월 십오일 오전 여덟시… 그럼 그걸로 예약해 줘.
-[ 91.20s][moshi] ⟨ret@91.13s⟩ ⟦⚡SPAN@91.21s: (tool result) Appointment with Dr. Han confirmed for July 15, 2026 at 8:00 AM. Confirmation ID: 789345.⟧ 한 선생님과의 치과 예약이 이천이십육년 칠월 십오일 오전 여덟시로 확정되었습니다. 확인 번호는 칠 팔 구 삼 사 오번입니다.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Dr. Han", "service": "dentist", "time": "8:00 AM", "date": "July 15, 2026"}}
-[ 93.98s][user ] «backchannel» 헐.
-[ 99.42s][user ] 고마워.
-[100.08s][moshi] 천만에요.
-[101.07s][user ] 혹시 고양이 알레르기가 있는 사람을 위한 공기는 어떤 게 ⟨ret@105.12s⟩ 좋을까?
-[105.52s][moshi] ⟦⚡SPAN@105.52s: (tool result) Best air purifiers for cat allergies include those with HEPA filters and activated carbon filter⟧ 고양이 알레르기가 있는 분들을 위한 공기청정기는 HEPA 필터와 활성탄 필터가 있는 것이 좋다고 해요.
-      CALL: {"function": "search", "arguments": {"query": "air purifier for cat allergies"}}
+[  0.00s][moshi] 안녕하세요, 연담님. 저는 여러분의 건강과 일상 습관을 도와드리는 에이전트, 루낙스입니다.
+[  5.90s][user ] 안녕하세요, 루낙스님. 요즘 너무 바빠서 좀 지치네요.
+[ 10.04s][moshi] 바쁘신 와중에 건강을 챙기시는 게 중요합니다. 혹시 어디로 이동하시는 계획이 있으신가요?
+[ 17.37s][user ] 네, 다음 주에 중요한 회의가 있어서 부산에 가야 해요.
+[ 20.68s][moshi] ⟨ret@20.52s⟩ ⟦⚡SPAN@20.68s: [2026-01-07] User's home address is 인천 연수구 송도동 12-5.⟧ 집 주소는 인천 연수구 송도동 일 이 오번지입니다. 부산까지 어떻게 이동하실 계획이신가요?
+[ 23.17s][user ] «backchannel» 네.
+[ 26.57s][user ] 음… KTX를 탈까 생각 중인데, 혹시 지금 예약하면 ⟨ret@31.36s⟩ 괜찮을까요?
+[ 31.52s][moshi] ⟦⚡SPAN@31.52s: (tool result) 2026-07-17 14:00 KTX 101, Seoul Station to Busan Station, 2 hours 30 minutes, ₩59,800.⟧ 이천이십육년 칠월 십칠일 오후 두시에 서울역에서 부산역으로 가는 KTX 백일편이 있습니다. 두시간 삼십분 소요되며, 요금은 오만 구천 팔백 원입니다.
+      CALL: {"function": "Trains_1_FindTrains", "arguments": {}}
+[ 42.45s][user ] 흠… 시간이 좀 늦은 것 같기도 하고…
+[ 44.80s][moshi] «interrupted» 혹시 다른 시간대를 알아보실까요? 아니면 다른 교통편을 —
+[ 47.62s][user ] «interrupts_prev» …혹시 송도역에서 바로 가는 버스는 없을까요?
+[ 50.66s][moshi] ⟨ret@50.58s⟩ ⟦⚡SPAN@50.66s: (tool result) 2026-07-17 10:00, Songdo Station to Busan Station, 4 hours 30 minutes, ₩35,000.⟧ 이천이십육년 칠월 십칠일 오전 열시에 송도역에서 부산역으로 가는 버스가 있습니다. 네시간 삼십분 소요되며, 요금은 삼만 오천 원입니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "송도역", "destination": "부산"}}
+[ 59.83s][user ] 아, 버스가 더 빠르네요. 버스표 예매 좀 ⟨ret@63.40s⟩ 도와주시겠어요?
+[ 63.56s][moshi] ⟦⚡SPAN@63.56s: (tool result) Booking confirmed: 송도역 to 부산역, 2026-07-17 10:00, seat 23, confirmation ID: BX9274.⟧ 버스표 예매가 완료되었습니다. 송도역에서 부산역까지, 이천이십육년 칠월 십칠일 오전 열시, 이십삼번 좌석입니다. 확인 코드는 비 엑스 구 이 칠 사입니다.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin": "송도역", "destination": "부산", "date": "2026-07-17", "time": "10:00"}}
+[ 72.52s][user ] «backchannel» 네.
+[ 75.83s][user ] 감사합니다, 루낙스님. 덕분에 편하게 갈 수 있겠어요.
+[ 79.82s][moshi] 천만에요, 연담님. 건강하게 다녀오세요. 혹시 부산에서 특별히 가고 싶은 곳이 있으신가요?
+[ 85.87s][user ] 음… 해운대는 꼭 가보고 싶어요.
+[ 88.65s][moshi] 해운대는 아름다운 곳이죠. 혹시 해운대 근처 맛집도 알아드릴까요?
+[ 90.19s][user ] «backchannel» 네.
+[ 92.98s][user ] 네, 부탁드려요. 저는 해산물을 좋아해요.
+[ 95.74s][moshi] ⟨ret@95.66s⟩ ⟦⚡SPAN@95.74s: (tool result) Haeundae: Geumsu Fish Restaurant — 4.5 stars, seafood; Sijang Seafood — 4.2 stars, seafood marke⟧ 해운대에는 금수회식당과 시장해산물이라는 해산물 맛집이 있습니다. 금수회식당은 별점 사 점 오점이고, 시장해산물은 별점 사 점 이점입니다.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "해운대", "cuisine": "해산물"}}

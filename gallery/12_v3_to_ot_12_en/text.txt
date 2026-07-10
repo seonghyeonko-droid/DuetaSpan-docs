@@ -1,87 +1,91 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Zien, a practical and reassuring counselor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Geara, a curious and validating wellness coach who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Julia",
+    "name": "Remy",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "female",
+    "nationality": "German",
+    "gender": "non-binary",
     "age_range": "early 30s",
-    "language": "English"
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-06-28",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in May."
     },
     {
-      "date": "2025-11-15",
+      "date": "2026-03-23",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-07-19",
+      "date": "2026-03-10",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-01-06",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-06-26",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-22",
-      "title": "Researching a used car",
+      "date": "2026-06-07",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-07-03",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who plays Alex at the end ⟨ret@2.47s⟩ of Jumanji?
-[  2.67s][moshi] ⟦⚡SPAN@2.71s: Colin Hanks plays Alex in the post-credits scene of Jumanji: Welcome to the Jungle.⟧ Colin Hanks plays Alex in that little scene after the credits roll, you know? It's a fun little moment.
-[  9.44s][user ] Oh, right! Hanks… hmm, is he related to Tom Hanks?
-[ 13.88s][moshi] That’s a very common question, actually. Many people wonder about that connection.
-[ 15.27s][user ] «backchannel» Right.
-[ 17.74s][user ] I think my mom’s on the phone…
-[ 20.98s][user ] «to_other» Just a sec, honey.
-[ 22.16s][user ] …Sorry about that. So, Hanks and Tom Hanks – are ⟨ret@25.39s⟩ they family?
-[ 25.76s][moshi] ⟦⚡SPAN@25.79s: Colin Hanks is the son of actor Tom Hanks and Samantha Lewes.⟧ Yes, Colin Hanks is indeed Tom Hanks’ son, and Samantha Lewes is his mother. It’s a well-known Hollywood family.
-[ 28.56s][user ] «backchannel» Mm-hmm.
-[ 32.97s][user ] Wow, I didn't know that. What else has Colin Hanks ⟨ret@36.14s⟩ been in?
-[ 36.45s][moshi] ⟦⚡SPAN@36.46s: Colin Hanks has appeared in films like "Orange County", "King Kong", and "Life in Pieces".⟧ He’s been in quite a few things. "Orange County" and "King Kong" are popular films, and he was also in the TV show, “Life in Pieces”.
-[ 44.30s][user ] "Life in Pieces"…
-[ 46.09s][moshi] It was a really charming sitcom, quite lighthearted. It's good for when you need a bit of a lift, you know?
-[ 47.48s][user ] «backchannel» Mhm.
-[ 50.87s][user ] I think I need a lift right now, actually. I’m feeling really stuck creatively.
-[ 55.26s][moshi] That's completely understandable. Creative blocks happen to everyone, and it's okay to feel that way.
-[ 58.78s][user ] «backchannel» Yeah.
-[ 61.39s][user ] It's just… I have a deadline, and I can’t seem to start.
-[ 64.94s][moshi] Deadlines can definitely add pressure. Sometimes, just freewriting without editing can help loosen things up.
-[ 70.96s][user ] Freewriting… that's a good idea. Maybe I should try that.
-[ 75.20s][moshi] It really can be. Don't worry about perfection, just get the ideas flowing. Sometimes, the mess is where the magic happens.
-[ 83.45s][user ] Thanks, Zien. That actually helps a lot.
-[ 85.92s][moshi] You're very welcome. I'm glad I could offer a little support. Remember, you've got this.
-[ 90.43s][user ] I think I do. I’m going to go try and write now.
-[ 93.99s][moshi] That’s wonderful to hear. Go create something beautiful. I have faith in you.
+[  0.00s][user ] I was reading about Indian history, and it’s just… heavy.
+[  3.53s][moshi] History often is, isn't it? It's good you're taking time to process those feelings.
+[  6.41s][user ] «backchannel» Yeah.
+[  7.98s][user ] I came across something about untouchability. Which communities faced that ⟨ret@12.45s⟩ most?
+[ 12.85s][moshi] ⟦⚡SPAN@12.85s: The Dalit communities were historically subjected to untouchability in India.⟧ It’s heartbreaking to learn that the Dalit communities were historically subjected to that practice in India. It's a deeply unfair part of their history.
+[ 21.65s][user ] Untouchability… that sounds awful. What does “Dalit” even ⟨ret@26.42s⟩ mean?
+[ 26.72s][moshi] ⟦⚡SPAN@26.74s: “Dalit” translates to “broken” or “oppressed” and is a self-chosen political identity.⟧ “Dalit” actually translates to “broken” or “oppressed,” and is a political identity chosen by the communities themselves.
+[ 33.59s][moshi] Knowing the meaning can help understand the weight of their experiences.
+[ 36.93s][user ] Oh. Wow. That's… really sad.
+[ 40.88s][moshi] [sigh] It absolutely is. Recognizing the history is a first step toward understanding.
+[ 43.88s][user ] «backchannel» Yeah.
+[ 46.45s][user ] Um, do you think… do you think things are better now?
+[ 49.84s][moshi] Things have improved legally, but social discrimination sadly still exists.
+[ 51.52s][user ] «backchannel» Mm-hmm.
+[ 55.40s][user ] I think my neighbor, Mrs. Patel, is a social worker.
+[ 58.63s][user ] «to_other» Hey, can you grab me a glass of water?
+[ 60.87s][user ] …Maybe she knows something about this.
+[ 63.24s][moshi] That's a thought! It's wonderful to have people in our lives dedicated to helping others.
+[ 65.24s][user ] «backchannel» Yeah.
+[ 68.32s][user ] Could you find her contact information, maybe? If it’s ⟨ret@71.54s⟩ public.
+[ 71.77s][moshi] ⟦⚡SPAN@71.78s: (tool result) Patel, Priya — Social Worker — 555-123-4567 — patel.priya@email.com⟧ I found a Priya Patel, a social worker, with the number 555-123-4567 and email patel.priya@email.com. Of course, this is only if it’s the right Mrs. Patel.
+      CALL: {"function": "search", "arguments": {"query": "Mrs. Patel social worker"}}
+[ 84.71s][user ] That… that might be her! Thanks.
+[ 87.51s][moshi] You're very welcome. Reaching out could be a really positive step.
+[ 91.40s][user ] I wonder if she’d mind me asking.
+[ 93.72s][moshi] It's always best to approach with respect and understanding, of course.
+[ 95.60s][user ] «backchannel» Mhm.
+[ 98.72s][user ] What's the weather like where she ⟨ret@100.65s⟩ is?
+[100.89s][moshi] ⟦⚡SPAN@100.89s: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h⟧ It’s currently 24.0°C with 68% humidity and a 7.2 km/h wind where she is. Sounds like a pleasant day, hopefully!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "555-123-4567"}}
+[109.01s][user ] That sounds nice. Maybe I should call her this afternoon.
+[112.91s][moshi] That sounds like a thoughtful plan. Taking that step could be really meaningful.
+[118.56s][user ] [happy] I'm feeling a little better just thinking about it.
+[121.09s][moshi] I'm so glad to hear that. Sometimes just taking action can lift our spirits.
+[126.22s][user ] Do you think… talking about this helps?
+[129.06s][moshi] Sharing and learning are powerful ways to process difficult topics.
+[132.62s][user ] I'm going to make that call. Thank you, Geara.
+[135.29s][moshi] You’re very welcome.

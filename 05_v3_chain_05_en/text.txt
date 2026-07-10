@@ -1,10 +1,10 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Ken, a warm and attentive counselor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Toli, a practical and reassuring counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_05",
-    "name": "Aiden",
+    "name": "Adam",
     "location": {
       "city": "Paris",
       "country": "France",
@@ -13,66 +13,78 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "French",
     "gender": "male",
-    "age_range": "early 30s",
+    "age_range": "early 20s",
     "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-01-25",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2026-03-30",
+      "category": "hobby",
+      "text": "User is into marathon training."
     },
     {
-      "date": "2025-10-24",
-      "category": "home",
-      "text": "User's home address is 756 Oak Avenue."
+      "date": "2025-12-16",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-09-02",
+      "date": "2025-11-09",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-09-23",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
+      "text": "User is planning a trip to Vietnam in August."
     },
     {
-      "date": "2025-08-31",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-09-17",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-07",
+      "category": "home",
+      "text": "User's home address is 398 Pine Court."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-16",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-24",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     },
     {
-      "date": "2025-10-05",
-      "title": "Researching a used car",
+      "date": "2025-10-23",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-05-28",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m new to Seoul, and I’d really…
-[  3.61s][user ] …like to see a movie ⟨ret@4.95s⟩ tonight.
-[  5.18s][moshi] ⟦⚡SPAN@5.19s: Seoul has several movie theaters, including the CGV Yongsan I'Park Mall, which is showing "Inside Out 2" at 7:⟧ Seoul has several theaters, and CGV Yongsan I'Park Mall is showing "Inside Out 2" at 7:30 and 9:45 tonight.
-[ 15.07s][user ] Oh, that sounds good! Can you check if there are any seats available for the 7:30 ⟨ret@19.65s⟩ showing?
-[ 19.88s][moshi] ⟦⚡SPAN@19.89s: (tool result) There are 23 seats available for “Inside Out 2” at CGV Yongsan I'Park Mall at 7:30 PM.⟧ There are twenty-three seats available for "Inside Out 2" at 7:30 at CGV Yongsan I'Park Mall.
-      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Inside Out 2", "theater_name": "CGV Yongsan I'Park Mall", "date": "today", "time": "7:30 PM"}}
-[ 27.44s][user ] Great! Could you book me one ticket, ⟨ret@30.24s⟩ please?
-[ 30.40s][moshi] ⟦⚡SPAN@30.40s: (tool result) Your ticket for "Inside Out 2" at CGV Yongsan I'Park Mall at 7:30 PM is confirmed. Confirmation ⟧ Wonderful! Your ticket is confirmed for 7:30, confirmation number 894723. Enjoy the film!
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Inside Out 2", "theater_name": "CGV Yongsan I'Park Mall", "date": "today", "time": "7:30 PM", "num_tickets": 1}}
+[  0.00s][user ] Find songs by The Beatles on the Abbey Road album from nineteen ⟨ret@4.25s⟩ sixty-nine.
+[  4.48s][moshi] ⟦⚡SPAN@4.49s: (tool result) Here's what I found: “Come Together — The Beatles, Something — The Beatles, Maxwell’s Silver Ham⟧ I discovered three songs from that album — “Come Together”, “Something”, and “Maxwell’s Silver Hammer”.
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist_name": "The Beatles", "album_name": "Abbey Road", "year": "1969"}}
+[ 12.49s][user ] Play “Come Together” for me.
+[ 14.15s][moshi] ⟨ret@13.91s⟩ ⟦⚡SPAN@14.15s: (tool result) Now playing “Come Together” by The Beatles.⟧ “Come Together” by The Beatles is now playing. It’s a classic, isn’t it?
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"media_title": "Come Together", "artist_name": "The Beatles"}}
+[ 16.78s][user ] «backchannel» Mm-hmm.
+[ 18.23s][moshi] I’m glad you're enjoying it. Settling into a new city is often easier with familiar music — it can feel like a little piece of home.
+[ 21.07s][user ] «backchannel» Yeah.
+[ 26.09s][user ] What’s the weather like in Seoul right ⟨ret@28.27s⟩ now?
+[ 28.50s][moshi] «interrupted» ⟦⚡SPAN@28.50s: (tool result) The weather in Seoul is 28.2°C, humidity 68%, wind 7.1 km/h.⟧ Currently in Seoul, it’s twenty-eight point two degrees Celsius—
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 32.16s][user ] «interrupts_prev» …are there any good restaurants ⟨ret@33.70s⟩ nearby?
+[ 33.94s][moshi] ⟦⚡SPAN@33.94s: (tool result) Korean BBQ — 4.5 stars, 120 reviews; Italian — 4.2 stars, 85 reviews; Seafood — 4.0 stars, 60 re⟧ I see a highly-rated Korean BBQ place, with four and a half stars and one hundred and twenty reviews. There’s also Italian and Seafood options.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seoul"}}
+[ 38.95s][user ] «backchannel» Yeah.
+[ 45.34s][user ] Reserve a table for two at the Korean BBQ place for seven PM ⟨ret@49.78s⟩ tonight.
+[ 50.10s][moshi] ⟦⚡SPAN@50.10s: (tool result) Reservation confirmed at Korean BBQ for two people at 19:00. Confirmation ID: XJ749Z.⟧ Excellent, your reservation at Korean BBQ is confirmed for seven PM tonight, confirmation ID XJ749Z. I hope you enjoy your meal!
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Korean BBQ", "time": "19:00", "party_size": "2"}}

@@ -4,88 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Andrea",
+#     "name": "Henri",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-04-26",
+#       "date": "2026-05-19",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-10-29",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-03-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-10-10",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2025-06-09",
+#       "date": "2026-02-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
+#       "text": "User is planning a trip to Vietnam in December."
+#     },
+#     {
+#       "date": "2026-02-12",
+#       "category": "home",
+#       "text": "User's home address is 517 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-11-07",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-16",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-27",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What exactly does "flow" even mean | S2 Well, I keep putting off starting  | S3 It's just… I want to feel more pro | S4 That sounds… doable, actually. May
+# EXAMINER(FDB-v2) 단계: S1 Laen… that’s a pretty unusual name | S2 Welll… work’s been really intense, | S3 It’s just… everything. Deadlines,  | S4 Maybe. I don’t know if anything wi
 
-     0.00s  agent 발화 시작: Hallo Andrea, I’m Thaemi. It’s lovely to connect with you – 
-     4.51s  user  발화 시작: Yeah.
-     5.01s  user  발화 끝
-     6.16s  agent 발화 끝
-     7.07s  user  발화 시작: What exactly does "flow" even mean, in practical terms?
-    11.20s  user  발화 끝
-    11.60s  agent 발화 시작: It’s about finding that sweet spot where challenge and skill
-    19.34s  agent 발화 끝
-    19.53s  user  발화 시작: Hmm, sounds nice, but I mostly just feel overwhelmed. I have
-    24.39s  agent 발화 시작: That’s very common, especially in a city like Berlin. What f
-    24.53s  user  발화 끝
-    29.70s  agent 발화 끝
-    30.78s  user  발화 시작: Well, I keep putting off starting my new project. I feel stu
-    36.09s  agent 발화 시작: Sometimes, breaking down a big project into smaller steps ca
-    36.11s  user  발화 끝
-    39.47s  user  발화 시작: …is it normal to feel this way? Like, everyone else seems to
-    40.10s  agent 발화 끝
-    44.60s  user  발화 끝
-    45.02s  agent 발화 시작: It absolutely is normal, Andrea. Comparing ourselves to othe
-    51.69s  agent 발화 끝
-    52.63s  user  발화 시작: It's just… I want to feel more productive, less anxious abou
-    57.17s  user  발화 끝
-    57.35s  agent 발화 시작: We can explore some techniques for managing that anxiety, if
-    63.25s  user  발화 시작: What does mindful scheduling even involve? Is that different
-    63.28s  agent 발화 끝
-    68.52s  agent 발화 시작: It’s about being present with your time, Andrea. Acknowledgi
-    68.57s  user  발화 끝
-    74.87s  agent 발화 끝
-    75.05s  user  발화 시작: That sounds… doable, actually. Maybe I need to rethink how I
-    79.90s  agent 발화 시작: It's a small shift, but it can make a big difference. Perhap
-    80.00s  user  발화 끝
-    85.17s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Henri, it’s lovely to meet you. My name is Laen, and I
+     5.47s  user  발화 시작: Okay.
+     6.06s  user  발화 끝
+     7.14s  agent 발화 끝
+     8.06s  user  발화 시작: Laen… that’s a pretty unusual name. What exactly do you *do*
+    12.69s  user  발화 끝
+    13.06s  agent 발화 시작: I’m a counselor, Henri. I help people find ways to manage st
+    16.40s  user  발화 시작: Uh-huh.
+    16.94s  user  발화 끝
+    22.70s  agent 발화 시작: Sometimes, just acknowledging what’s weighing on you is a go
+    22.90s  agent 발화 끝
+    31.14s  agent 발화 끝
+    31.35s  user  발화 시작: Welll… work’s been really intense, and I feel like I’m const
+    35.59s  agent 발화 시작: That sounds incredibly draining, Henri. Feeling constantly b
+    35.70s  user  발화 끝
+    41.55s  user  발화 시작: Yeah.
+    42.19s  user  발화 끝
+    44.77s  agent 발화 끝
+    46.03s  user  발화 시작: It’s just… everything. Deadlines, meetings, emails… it never
+    54.23s  user  발화 끝
+    54.61s  agent 발화 시작: It’s completely understandable to feel overwhelmed when face
+    62.35s  user  발화 시작: Yeah.
+    62.99s  user  발화 끝
+    64.67s  agent 발화 끝
+    65.57s  user  발화 시작: Maybe. I don’t know if anything will actually help, though.
+    68.89s  user  발화 끝

@@ -1,84 +1,86 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Harir, a thoughtful and soft-spoken supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Liona, a upbeat and supportive wellness coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Ella",
+    "name": "Freya",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "50s",
-    "language": "French"
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-05",
+      "date": "2026-05-11",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2026-05-07",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-12-27",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2025-08-11",
+      "date": "2026-03-27",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-07-12",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-07-11",
+      "date": "2026-01-26",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-10-16",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-10-12",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-29",
-      "title": "Booked a dentist appointment",
+      "date": "2026-06-03",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you hover over the last image in the image gallery on that website for me?
-[  4.80s][moshi] ⟨ret@4.72s⟩ ⟦⚡SPAN@4.80s: (tool result) Found a gallery on example.com with various images. The last image appears to be a landscape pho⟧ I found a gallery on example.com, and it looks like the last image is a landscape photograph.
-      CALL: {"function": "web_search", "arguments": {"query": "image gallery"}}
-[ 10.46s][user ] Hmm, what are the dimensions of that last ⟨ret@13.77s⟩ image, specifically?
-[ 14.17s][moshi] ⟦⚡SPAN@14.17s: (tool result) The last image on example.com/image gallery is 1920 pixels wide and 1080 pixels high.⟧ The image is 1920 pixels wide and 1080 pixels high, according to the website.
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "example.com/image_gallery", "question": "What are the dimensions of the last image?"}}
-[ 20.95s][user ] Okay, good. Now, can you find me some similar landscape ⟨ret@25.19s⟩ photographs?
-[ 25.59s][moshi] ⟦⚡SPAN@25.59s: (tool result) Several websites offer high-resolution landscape images. Unsplash and Pexels are popular choices⟧ There are many websites with similar landscape photos—Unsplash and Pexels are good places to start, offering free stock photos.
-      CALL: {"function": "tavily-search", "arguments": {"query": "landscape photographs similar to 1920x1080 image"}}
-[ 34.52s][user ] Unsplash sounds promising. Can you search Unsplash for landscape photos taken in ⟨ret@40.29s⟩ Iceland?
-[ 40.53s][moshi] «interrupted» ⟦⚡SPAN@40.53s: (tool result) Unsplash shows 5,234 landscape photos tagged “Iceland”, with many featuring glaciers, volcanoes,⟧ Unsplash has over five thousand landscape photos tagged “Iceland,” with many showing glaciers and the Northern Lights—
-      CALL: {"function": "tavily-search", "arguments": {"query": "Unsplash landscape photos Iceland"}}
-[ 46.48s][user ] «interrupts_prev» …Are any of those photos available for commercial use without ⟨ret@50.58s⟩ attribution?
-[ 50.82s][moshi] ⟦⚡SPAN@50.82s: (tool result) Approximately 12% of the Iceland landscape photos on Unsplash are licensed for commercial use wi⟧ About twelve percent of the Iceland landscape photos on Unsplash are licensed for commercial use without needing attribution.
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "unsplash.com/s/photos/iceland-landscape", "question": "Which photos are available for commercial use without attribution?"}}
-[ 54.71s][user ] «backchannel» Mm-hmm.
-[ 57.13s][user ] Hmm, interesting. Can you find me the photographer of the highest-rated Iceland landscape photo on ⟨ret@63.47s⟩ Unsplash?
-[ 63.87s][moshi] ⟦⚡SPAN@63.87s: (tool result) The highest-rated Iceland landscape photo on Unsplash, with 2,500+ likes, was taken by Ólafur Þó⟧ The highest-rated photo was taken by Ólafur Þór Haraldsson, and it has over two thousand five hundred likes.
-      CALL: {"function": "tavily-search", "arguments": {"query": "highest-rated Iceland landscape photo Unsplash photographer"}}
-[ 66.41s][user ] «backchannel» Yeah.
-[ 69.86s][user ] Ólafur Þór Haraldsson… can you find a website for ⟨ret@74.08s⟩ him?
-[ 74.23s][moshi] ⟦⚡SPAN@74.24s: (tool result) Ólafur Þór Haraldsson’s website is https://olafurthor.com/, showcasing his photography and print⟧ His website is olafurthor.com, where he showcases his photography and prints.
-      CALL: {"function": "web_search", "arguments": {"query": "Ólafur Þór Haraldsson website"}}
-[ 79.28s][user ] That’s great. Could you add a reminder to check his prints next ⟨ret@83.31s⟩ week?
-[ 83.47s][moshi] ⟦⚡SPAN@83.47s: (tool result) Alarm set for next week to check Ólafur Þór Haraldsson’s prints. Confirmation ID: 789234.⟧ I’ve set an alarm for next week to remind you to check his prints. Your confirmation ID is 789234. I hope you find some beautiful pieces.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "next week", "description": "Check Ólafur Þór Haraldsson’s prints"}}
+[  0.00s][user ] I need to find some good museums in London, could you help with that?
+[  3.63s][moshi] ⟨ret@3.55s⟩ ⟦⚡SPAN@3.63s: (tool result) The British Museum — 4.5 stars, 4.7m reviews; National Gallery — 4.6 stars, 3.9m reviews; Victor⟧ London has so many great museums. The British Museum has 4.7 million reviews, and the National Gallery has 3.9 million.
+      CALL: {"function": "maps_text_search", "arguments": {"query": "museums in London"}}
+[ 12.26s][user ] Hmm, the National Gallery sounds interesting, but is it free to ⟨ret@16.59s⟩ enter?
+[ 16.99s][moshi] ⟦⚡SPAN@16.99s: Admission to the National Gallery is free, except for special exhibitions.⟧ That’s a great choice! Admission to the National Gallery is free, except for any special exhibits they might have.
+[ 22.36s][user ] «backchannel» Yeah, yeah.
+[ 25.33s][user ] Oh, okay, good to know. And uh, what’s the weather like there ⟨ret@29.31s⟩ right now?
+[ 29.55s][moshi] ⟦⚡SPAN@29.55s: (tool result) 18.0°C, humidity 65%, wind 11.2 km/h⟧ It's currently 18 degrees Celsius in London, with 65% humidity and a wind speed of 11.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
+[ 33.68s][user ] «backchannel» Really?
+[ 37.96s][user ] That sounds lovely! Actually, I need to book a hotel near there for ⟨ret@42.42s⟩ tonight.
+[ 42.65s][moshi] ⟦⚡SPAN@42.66s: (tool result) The Resident Covent Garden — £189/night, 4.7 stars; The Fielding Hotel — £210/night, 4.5 stars; ⟧ I found a few options! The Resident Covent Garden is £189 a night, with a 4.7 star rating.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "near National Gallery London", "check_in_date": "today"}}
+[ 50.59s][user ] £189 sounds alright. Can you book that one for me, please?
+[ 55.65s][moshi] ⟨ret@55.57s⟩ ⟦⚡SPAN@55.65s: (tool result) Booking confirmed for The Resident Covent Garden, check-in today, confirmation ID: GH729KL.⟧ Your booking at The Resident Covent Garden is confirmed for tonight, confirmation ID is GH729KL.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "The Resident Covent Garden", "check_in_date": "today"}}
+[ 60.70s][user ] «backchannel» Wow.
+[ 62.91s][user ] Excellent! Now, can you find me a good Italian ⟨ret@66.49s⟩ restaurant nearby?
+[ 66.89s][moshi] ⟦⚡SPAN@66.89s: (tool result) Lina Stores Soho — 4.6 stars, £20-£30; Padella — 4.5 stars, £15-£25; Bocca di Lupo — 4.7 stars, ⟧ There are several great Italian restaurants nearby! Lina Stores Soho has 4.6 stars and costs between £20 and £30.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "near The Resident Covent Garden"}}
+[ 72.58s][user ] «backchannel» Oh.
+[ 76.26s][user ] Bocca di Lupo sounds nice, a little pricey but nice. Thanks so much for all your help!
+[ 81.57s][moshi] You’re very welcome! Bocca di Lupo is a lovely choice, enjoy your evening and your trip to London. Remember to be kind to yourself while you explore.

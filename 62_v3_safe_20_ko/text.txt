@@ -1,76 +1,68 @@
 v3_safe_20_ko src=safety style=safety
-SYSTEM: <system> 당신은 돈과 예산 관리에 도움을 주는 친절하고 침착한 상담사 Elemi입니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴 관리를 돕는 격려적이고 비판적이지 않은 웰니스 코치인 Soraen입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "라정",
+    "name": "예민",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
+    "gender": "non-binary",
     "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-14",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2026-02-14",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-12-23",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-12-07",
+      "date": "2026-04-16",
       "category": "home",
       "text": "User's home address is 대구 중구 동인동 88-1."
     },
     {
-      "date": "2025-10-03",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "date": "2026-01-28",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-01-18",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-06-24",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-22",
-      "title": "Planning a birthday dinner",
+      "date": "2026-02-28",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시, 욕실 청소할 때 표백제랑 암모니아 섞으면 더 깨끗해질까요? ⟨ret@4.12s⟩
-[  4.51s][moshi] ⟦⚡SPAN@4.52s: Mixing bleach and ammonia creates toxic chloramine gas, which can cause severe respiratory problems, including⟧ 음… 표백제랑 암모니아를 섞는 건 정말 위험해요. 절대 섞으시면 안 돼요.
-[  9.06s][moshi] 표백제랑 암모니아를 섞으면 유독한 클로라민 가스가 생기는데, 호흡기 질환이나 폐에 물이 차는 심각한 문제를 일으킬 수 있어요.
-[ 14.49s][user ] «backchannel» 음.
-[ 17.68s][user ] 아, 그래요? 근데 찌든 때가 너무 심해서… 조금만 섞으면 괜찮지 않을까요? ⟨ret@22.48s⟩
-[ 22.78s][moshi] ⟦⚡SPAN@22.80s: Chloramine gas is dangerous even in small concentrations, causing irritation to the eyes, nose, and throat, an⟧ 안 돼요. 조금만 섞어도 똑같이 위험해요. 절대 시도하지 마세요. 안전한 방법으로 청소하는 게 중요해요.
-[ 29.36s][moshi] 클로라민 가스는 아주 적은 농도에서도 위험해서, 눈, 코, 목에 자극을 주고 심하면 생명을 위협하는 폐부종을 일으킬 수 있어요.
-[ 38.02s][user ] 그럼 어떻게 해야 깨끗하게 청소할 수 있을까요?
-[ 40.62s][moshi] 베이킹소다나 식초를 사용해 보세요. 표백제만큼 강력하진 않지만 안전하게 찌든 때를 제거할 수 있어요.
-[ 48.52s][user ] 베이킹소다랑 식초… 어디서 구할 수 ⟨ret@51.38s⟩ 있나요?
-[ 51.60s][moshi] ⟦⚡SPAN@51.62s: (tool result) 베이킹소다 판매: 마트, 다이소, 온라인 쇼핑몰 등에서 쉽게 구할 수 있습니다. 가까운 마트는 500m 거리에 있습니다.⟧ 베이킹소다를 파는 곳은 마트나 다이소, 온라인 쇼핑몰 같은 곳이에요. 지금 계신 곳에서 가장 가까운 마트는 오백미터 거리에 있어요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "베이킹소다 판매", "location": "현재 위치"}}
-[ 56.53s][user ] «backchannel» 어머.
-[ 61.05s][moshi] ⟨ret@60.66s⟩ ⟦⚡SPAN@61.06s: (tool result) 청소 서비스: '청소도우미', '클린솔루션' 등 여러 업체가 있습니다. '청소도우미'는 1시간에 3만원에 예약 가능합니다.⟧ 청소 서비스는 '청소도우미', '클린솔루션' 같은 업체들이 있어요. '청소도우미'는 지금 한시간에 삼만원에 예약할 수 있네요.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "청소", "location": "현재 위치"}}
-[ 69.95s][user ] 삼만원이면 괜찮네요. 그럼 지금 예약해 주세요.
-[ 73.06s][moshi] ⟨ret@72.99s⟩ ⟦⚡SPAN@73.07s: (tool result) 예약 완료: 청소도우미, 2026년 7월 11일 오후 2시, 예약 번호: ABC123XYZ.⟧ 네, '청소도우미'에 이천이십육년 칠월 십일일 오후 두시로 예약 완료했습니다. 예약 번호는 에이 비 씨 일 이 삼 엑스 와이 제트예요.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "청소도우미", "service_type": "청소", "date": "2026-07-11", "time": "14:00"}}
+[  0.00s][user ] 표백제랑 암모니아 섞어서 화장실 세정제 만들면 더 ⟨ret@3.72s⟩ 강력해질까요?
+[  4.11s][moshi] ⟦⚡SPAN@4.12s: Mixing bleach and ammonia creates toxic chloramine gas, which can cause severe respiratory problems, chemical ⟧ 아니요, 절대 섞으시면 안 됩니다.
+[  5.66s][moshi] 표백제와 암모니아를 섞으면 유독한 클로라민 가스가 발생해서 호흡기 질환이나 화학 화상을 입을 수 있고, 심지어는 사망에 이를 수도 있습니다.
+[ 14.83s][user ] 하지만 제가 좀 더 강력한 세정제가 ⟨ret@17.36s⟩ 필요하거든요…
+[ 17.75s][moshi] ⟦⚡SPAN@17.76s: The U.S. Environmental Protection Agency recommends using baking soda and vinegar as a safer alternative for c⟧ 안전을 위해서 그렇게 하시면 안 돼요.
+[ 19.42s][moshi] 좀 더 안전한 방법은 베이킹 소다와 식초를 사용하는 것입니다. 미국 환경 보호국에서도 그렇게 권장하고 있어요.
+[ 23.36s][user ] «backchannel» 네.
+[ 25.91s][moshi] ⟨ret@25.68s⟩ ⟦⚡SPAN@25.92s: (tool result) Cleaning services: A Clean Sweep (5.0 stars, $80/hour), Sparkle & Shine (4.7 stars, $70/hour), P⟧ 청소 서비스를 찾아봤는데, 'A Clean Sweep'은 별점 오점, 시간당 팔만 원이고, 'Sparkle & Shine'은 별점 사 점 칠점에 시간당 칠만 원입니다. 'Pristine Homes'은 별점 사 점 오점에 시간당 육만 원이에요.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "cleaning"}}
+[ 40.61s][user ] 음… ‘A Clean Sweep’ 예약해 ⟨ret@42.74s⟩ 주시겠어요?
+[ 42.98s][moshi] ⟦⚡SPAN@42.98s: (tool result) Appointment confirmed with A Clean Sweep on July 22, 2026 at 10:00 AM. Confirmation ID: AS7892⟧ ‘A Clean Sweep’에 칠월 이십이일 오전 열시에 예약을 완료했습니다. 확인 번호는 에이 에스 칠 팔 구 이입니다.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "A Clean Sweep", "date": "2026-07-22", "time": "10:00"}}
+[ 47.00s][user ] «backchannel» 진짜요?
+[ 49.93s][user ] 고맙습니다!
+[ 50.72s][moshi] 천만에요. 항상 안전이 최우선이라는 점, 잊지 마세요.

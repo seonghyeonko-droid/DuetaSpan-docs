@@ -1,60 +1,60 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Garir, a grounded and empathetic life coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Zera, a thoughtful and soft-spoken personal guide who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Dylan",
+    "name": "Liam",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "40s",
-    "language": "English"
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-20",
+      "date": "2026-06-24",
+      "category": "home",
+      "text": "User's home address is 427 Cedar Lane."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-11-25",
       "category": "pet",
       "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-12-26",
+      "date": "2025-11-11",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-10-25",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2025-09-08",
-      "category": "hobby",
-      "text": "User is into home fermentation."
-    },
-    {
-      "date": "2025-06-25",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in May."
-    },
-    {
-      "date": "2025-06-07",
-      "category": "home",
-      "text": "User's home address is 770 Birch Road."
+      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-03",
-      "title": "Setting up a home network",
+      "date": "2026-01-07",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you tell me who the members of the Three 6 Mafia ⟨ret@3.38s⟩ are?
-[  3.62s][moshi] ⟦⚡SPAN@3.62s: Three 6 Mafia consisted of DJ Paul, Juicy J, Lord Infamous, Koopsta Knicca, and Gangsta Boo.⟧ Well, Three 6 Mafia was formed by DJ Paul, Juicy J, Lord Infamous, Koopsta Knicca, and Gangsta Boo – a really influential group, don’t you think?
+[  0.00s][user ] When did the Fitbit Aria 2 scale first become ⟨ret@4.25s⟩ available?
+[  4.49s][moshi] ⟦⚡SPAN@4.49s: The Fitbit Aria 2 was first released in late 2017, offering improved accuracy and connectivity.⟧ It first became available in late 2017, offering more accurate readings and a better connection. Sometimes, knowing when something new arrives helps us appreciate the journey, doesn't it?

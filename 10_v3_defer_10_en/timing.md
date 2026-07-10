@@ -4,114 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Julian",
+#     "name": "Louis",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2026-05-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in August."
 #     },
 #     {
-#       "date": "2026-04-03",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-05-03",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-12-04",
-#       "category": "home",
-#       "text": "User's home address is 545 Birch Road."
-#     },
-#     {
-#       "date": "2025-11-16",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2025-12-02",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-10-13",
+#       "date": "2025-08-19",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-06-18",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-24",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-16",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-23",
+#       "date": "2026-01-17",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-19",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What drama movies are playing at t | S2 Can you book me a ticket for the 4 | S3 Sure, take your time. | S4 Oh. Okay, let's do the 7:00 PM sho
+# EXAMINER(FDB-v2) 단계: S1 Play Dilwale Dulhania Le Jayenge w | S2 Hmm, find me some Italian restaura | S3 I'm thinking of going to a concert | S4 …next week in Seoul.
 
-     0.00s  user  발화 시작: What drama movies are playing at the AMC River East twenty-o
-     4.40s  <ret> 발화 (turn1 첫 프레임)
-     4.47s  agent 발화 시작: <ret> The AMC River East twenty-one in Chicago has showings 
-     4.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) The AMC River East 21 in Chicago is showing “Civil War”,
-     4.49s  user  발화 끝
-    12.36s  agent 발화 끝
-    12.44s  user  발화 시작: What time is “Civil War” playing?
-    14.32s  <ret> 발화 (turn3 첫 프레임)
-    14.63s  agent 발화 시작: <ret> “Civil War” is playing at 1:30 PM, 4:15 PM, and 7:00 P
-    14.64s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.34s]: (tool result) “Civil War” is playing at AMC River East 21 in Chicago a
-    14.84s  user  발화 끝
-    18.90s  user  발화 시작: Uh-huh.
-    19.48s  user  발화 끝
-    20.81s  agent 발화 시작: It’s good to have options, isn’t it? Sometimes just knowing 
-    20.97s  agent 발화 끝
-    22.50s  user  발화 시작: Mm-hmm.
-    22.94s  user  발화 끝
-    26.04s  agent 발화 끝
-    27.30s  user  발화 시작: Can you book me a ticket for the 4:15 showing?
-    29.52s  <ret> 발화 (turn8 첫 프레임)
-    29.83s  agent 발화 시작: <ret> Give me a moment while I check ticket availability for
-    29.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (no information found)
-    30.02s  user  발화 끝
-    34.18s  agent 발화 끝
-    35.35s  user  발화 시작: Sure, take your time.
-    36.77s  user  발화 끝
-    36.93s  agent 발화 시작: It can be helpful to slow down, even when we’re trying to ge
-    39.87s  ⚡지연 SPAN 주입(선제발표 직전): The 4:15 PM showing of “Civil War” at AMC River East 21 in Chicago is 
-    40.73s  agent 발화 시작: <ret> I’m so sorry, but it appears that the 4:15 PM showing 
-    40.86s  agent 발화 끝
-    51.46s  user  발화 시작: Oh. Okay, let's do the 7:00 PM showing then.
-    51.53s  agent 발화 끝
-    55.21s  <ret> 발화 (turn13 첫 프레임)
-    55.37s  agent 발화 시작: <ret> Your ticket for the 7:00 PM showing is confirmed, with
-    55.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) Your ticket for “Civil War” at AMC River East 21 in Chic
-    55.44s  user  발화 끝
-    65.52s  agent 발화 끝
+     0.00s  user  발화 시작: Play Dilwale Dulhania Le Jayenge with Hindi subtitles, pleas
+     4.48s  user  발화 끝
+     4.60s  <ret> 발화 (turn1 첫 프레임)
+     4.67s  agent 발화 시작: <ret> The movie is starting now with Hindi subtitles. It's a
+     4.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) Playing Dilwale Dulhania Le Jayenge with Hindi subtitles
+     6.51s  user  발화 시작: Right.
+     6.96s  user  발화 끝
+     8.48s  user  발화 시작: Uh, what’s the weather like in Seoul today?
+     8.65s  agent 발화 끝
+    10.73s  <ret> 발화 (turn4 첫 프레임)
+    10.88s  agent 발화 시작: <ret> Well, right now in Seoul it is Friday, July tenth, two
+    10.89s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.00s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
+    11.06s  user  발화 끝
+    14.31s  user  발화 시작: Yeah.
+    14.85s  user  발화 끝
+    15.75s  agent 발화 시작: The weather is twenty-three point zero degrees Celsius, with
+    15.88s  agent 발화 끝
+    18.34s  user  발화 시작: Yeah.
+    18.79s  user  발화 끝
+    23.95s  agent 발화 끝
+    25.12s  user  발화 시작: Hmm, find me some Italian restaurants nearby.
+    27.58s  <ret> 발화 (turn9 첫 프레임)
+    27.90s  agent 발화 시작: <ret> I found a couple of Italian restaurants near you. Bell
+    27.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.88s]: (tool result) Bella Italia — 4.5 stars, 0.8 km; Pasta Paradise — 4.2 s
+    28.08s  user  발화 끝
+    39.77s  agent 발화 끝
+    41.15s  user  발화 시작: What was I saying about… friends?
+    43.24s  <ret> 발화 (turn11 첫 프레임)
+    43.31s  agent 발화 시작: <ret> You mentioned yesterday that you felt like you didn’t 
+    43.32s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.04s]: [2026-07-09] I feel like I don't have anyone I can really talk to.
+    43.37s  user  발화 끝
+    48.15s  agent 발화 시작: That takes courage to admit, Vaera thinks. It's the first st
+    48.36s  agent 발화 끝
+    50.28s  user  발화 시작: Yeah, yeah.
+    50.92s  user  발화 끝
+    53.93s  agent 발화 끝
+    54.43s  user  발화 시작: I'm thinking of going to a concert next week.
+    56.63s  agent 발화 시작: That sounds fun! Concerts are a lovely way to share an exper
+    56.77s  user  발화 끝
+    61.57s  agent 발화 시작: Sometimes, just being in a crowd enjoying something together
+    61.63s  agent 발화 끝
+    66.19s  agent 발화 끝
+    66.62s  user  발화 시작: Find me events happening…
+    68.22s  user  발화 끝
+    69.94s  user  발화 시작: …next week in Seoul.
+    70.79s  <ret> 발화 (turn19 첫 프레임)
+    71.18s  agent 발화 시작: <ret> Next week in Seoul, there’s a K-Pop Dance Festival on 
+    71.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) K-Pop Dance Festival — July 17, Olympic Park; Seoul Jazz
+    71.37s  user  발화 끝
+    82.31s  user  발화 시작: Give me a moment… I need to check my schedule.
+    82.44s  agent 발화 끝
+    84.95s  user  발화 끝
+    84.97s  agent 발화 시작: Take your time. I'll be here when you're ready.
+    86.90s  ⚡지연 SPAN 주입(선제발표 직전): Support groups can offer a safe space to share experiences and build c
+    87.39s  agent 발화 시작: <ret> I was thinking about what you said about feeling alone
+    87.47s  agent 발화 끝
+   100.62s  agent 발화 끝

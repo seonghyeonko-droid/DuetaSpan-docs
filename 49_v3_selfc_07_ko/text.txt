@@ -1,72 +1,86 @@
 v3_selfc_07_ko src=mcp style=mcp_selfcorrect
-SYSTEM: <system> 당신은 건강 및 일상 습관 관련하여 사람들을 돕는 실용적이고 안심시키는 상담사 Nioen입니다. <system>
+SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 웰니스 코치인 Brelo입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "우재",
+    "name": "수아",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-02",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "date": "2026-05-05",
+      "category": "work",
+      "text": "User works as a graduate student."
     },
     {
-      "date": "2025-12-23",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
+      "date": "2026-04-09",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-12-13",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-03-11",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-12-09",
+      "date": "2026-01-24",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in August."
+      "text": "User is planning a trip to Kyoto in December."
+    },
+    {
+      "date": "2026-01-12",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-12-07",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-18",
-      "title": "Comparing gym memberships",
+      "date": "2026-06-10",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2025-07-14",
-      "title": "Researching a used car",
+      "date": "2026-05-05",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 오늘 저녁에 영화 보려고 하는데, 혹시 '오펜하이머' 상영 시간 좀 알아봐 줄 수 있을까요? 강남역 근처로요.
-[  6.24s][moshi] ⟨ret@6.01s⟩ ⟦⚡SPAN@6.25s: (no information found)⟧ 죄송해요. 강남역 근처 '오펜하이머' 상영 시간 정보는 지금 찾을 수 없네요.
-[  9.04s][user ] «backchannel» 예.
-[ 11.64s][user ] 아, 그러고 보니… 압구정역 쪽으로 찾아봐 주세요. 압구정역이 맞아요. ⟨ret@15.94s⟩
-[ 16.24s][moshi] ⟦⚡SPAN@16.26s: (tool result) Movies_1 FindMovies: 오펜하이머는 압구정역 CGV에서 오늘 저녁 7시, 9시 30분에 상영됩니다.⟧ 압구정역 CGV에서 '오펜하이머'는 오늘 저녁 일곱시, 아홉시 삼십분에 상영될 예정이에요. 괜찮으시겠어요?
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"location": "압구정역", "movie_name": "오펜하이머"}}
-[ 21.62s][user ] «backchannel» 와.
-[ 23.98s][moshi] 그럼 혹시 일곱시로 예매해 드릴까요?
-[ 26.48s][user ] 네, 일곱시로 예매해 ⟨ret@28.12s⟩ 주세요.
-[ 28.35s][moshi] ⟦⚡SPAN@28.36s: (tool result) Movies_1 BuyMovieTickets: 예매가 완료되었습니다. 예매 번호는 A7X9B2입니다.⟧ 네, '오펜하이머' 일곱시 상영으로 예매 완료되었어요. 예매 번호는 에이 칠 엑스 구 비 이입니다. 즐거운 관람 되세요.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"location": "압구정역 CGV", "movie_name": "오펜하이머", "time": "7:00 PM"}}
+[  0.00s][user ] 기본 지원에 대한 연간 구독 플랜을 만들어 줄 수 있을까요, 제품 번호는 구천십이입니다.
+[  6.10s][moshi] ⟨ret@5.87s⟩ ⟦⚡SPAN@6.11s: (tool result) Subscription plan created: annual basic support for product 9012, confirmation ID 7b4n9x.⟧ 제품 구천십이에 대한 연간 기본 지원 구독 플랜을 만들었습니다. 확인 번호는 칠b4n9x입니다. 혹시 다른 제품에도 적용하고 싶으신가요?
+      CALL: {"function": "create_subscription_plan", "arguments": {"product_id": "9012", "plan_type": "annual", "support_level": "basic"}}
+[ 17.41s][user ] 음… 아니요, 그런데 지금 뉴욕 날씨가 ⟨ret@20.45s⟩ 어때요?
+[ 20.76s][moshi] ⟦⚡SPAN@20.77s: (tool result) 28.3°C, humidity 65%, wind 8.2 km/h, clear skies.⟧ 현재 뉴욕은 맑고, 기온은 이십팔 점 삼도, 습도는 육십오%, 바람은 시속 팔 점 이킬로미터입니다. 여행 계획 있으신가요?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New York"}}
+[ 29.95s][user ] 네, 다음 주에 뉴욕에 가는데—
+[ 31.72s][user ] … 혹시 그 호텔 예약도 도와줄 수 있나요?
+[ 33.89s][moshi] 호텔 예약도 도와드릴 수 있습니다. 어떤 종류의 호텔을 찾으세요?
+[ 38.87s][user ] 음… 맨해튼에 있는 가성비 좋은 호텔을 찾고 있어요.
+[ 43.53s][moshi] ⟨ret@43.29s⟩ ⟦⚡SPAN@43.53s: (tool result) The Jane Hotel - $150/night, The Pod Hotels - $120/night, Freehand New York - $180/night.⟧ 맨해튼에서 가성비 좋은 호텔로는 제인 호텔이 일박에 백오십달러, 더 포드 호텔이 백이십달러, 프리핸드 뉴욕이 백팔십달러입니다. 마음에 드는 곳이 있으세요?
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Manhattan", "price_range": "budget"}}
+[ 49.03s][user ] «backchannel» 와.
+[ 54.59s][user ] 제인 호텔이 괜찮아 보이네요.
+[ 56.58s][moshi] 제인 호텔이 마음에 드시는군요. 정말 좋은 선택이에요. 분위기가 독특하고, 위치도 좋다고 들었어요.

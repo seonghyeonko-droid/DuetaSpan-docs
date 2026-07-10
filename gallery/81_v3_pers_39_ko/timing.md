@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "채은",
+#     "name": "노온",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,48 +12,40 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-09",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-02-06",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-12-26",
+#       "date": "2026-01-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
+#     },
+#     {
+#       "date": "2025-09-10",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-10-22",
+#       "date": "2025-08-01",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-09-09",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-07-18",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2025-06-01",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-02",
+#       "date": "2025-06-02",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -63,20 +55,37 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 혹시 제가 뭘 해야 할지, 어떻게 시작해야 할지 알려주실 수  | S2 …혹시 그냥 아무거나 막 써보는 건 어때요? 완벽한 글이 아니 | S3 뭔가 시작하려고 하면 자꾸만 비판적인 생각이 들어요. '이건  | S4 음… 친구에게 말하는 것처럼요? 그런 방법도 있군요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 채은님. 저는 프리르예요. 혹시 오늘 하루 어떻게 지내셨는지 여쭤봐도 될까요?
-     5.24s  user  발화 시작: 네.
-     5.69s  user  발화 끝
-     6.81s  user  발화 시작: 혹시 제가 뭘 도와드릴 수 있는 걸까요?
-     7.18s  agent 발화 끝
-     9.87s  agent 발화 시작: 이름이 마음에 드셨다니 기쁘네요. 저는 채은님의 하루를 조금 더 편안하고 생산적으로 만들어 드릴 수 있도록 
-    10.04s  user  발화 끝
-    22.54s  agent 발화 끝
-    23.44s  user  발화 시작: 음… 요즘 뭔가 계속 미루게 돼요. 해야 할 일은 많은데, 시작하기가 어렵고.
-    29.41s  user  발화 끝
-    29.50s  agent 발화 시작: 일을 미루게 되는 건 흔한 일이에요. 부담감을 느끼시는 건 아닌가 싶어요. 혹시 어떤 일부터 시작해야 할지 
-    35.34s  user  발화 시작: 네.
-    35.97s  user  발화 끝
-    38.72s  agent 발화 시작: 그렇군요. 작은 일부터 하나씩 시작해보는 건 어떨까요? 완벽하게 하려고 하기보다는, 일단 시작하는 게 중요해
-    38.91s  agent 발화 끝
-    46.78s  agent 발화 끝
+     0.00s  agent 발화 시작: 노온 씨, 안녕하세요. 저는 브리오이아예요. 창의적인 막힘이나 자신감 문제로 어려움을 겪는 분들을 돕는 웰니
+     9.51s  agent 발화 끝
+     9.59s  user  발화 시작: 혹시 제가 뭘 해야 할지, 어떻게 시작해야 할지 알려주실 수 있을까요?
+    14.61s  agent 발화 시작: 어떤 부분에서 막힌 느낌이 드시는지 좀 더 자세히 말씀해 주시겠어요? 어떤 생각이나 감정이 떠오르지 않는 건
+    14.73s  user  발화 끝
+    20.62s  user  발화 시작: 응.
+    21.11s  user  발화 끝
+    22.42s  user  발화 시작: 음… 글을 쓰고 싶은데, 뭘 써야 할지 도통 감이 안 와요. 뭘 시작해야 할지 막막하고.
+    22.58s  agent 발화 끝
+    29.41s  agent 발화 시작: 글쓰기를 하고 싶지만, 어떤 주제를 선택해야 할지 고민이시군요. 괜찮아요, 많은 분들이 비슷한 어려움을 겪으
+    29.55s  user  발화 끝
+    37.94s  user  발화 시작: …혹시 그냥 아무거나 막 써보는 건 어때요? 완벽한 글이 아니어도 괜찮잖아요.
+    38.73s  agent 발화 끝
+    43.75s  agent 발화 시작: 아, 네, 좋은 생각이에요. 완벽한 글을 쓰려고 너무 애쓰지 않아도 괜찮아요. 그냥 떠오르는 대로 자유롭게 
+    43.96s  user  발화 끝
+    48.78s  user  발화 시작: 어.
+    49.41s  user  발화 끝
+    51.89s  agent 발화 시작: 글쓰기는 생각을 정리하고 자신을 표현하는 좋은 방법이 될 수 있지만, 때로는 부담이 될 수도 있어요. 혹시 
+    51.95s  agent 발화 끝
+    59.99s  user  발화 시작: 응.
+    60.43s  user  발화 끝
+    63.02s  agent 발화 끝
+    64.88s  user  발화 시작: 뭔가 시작하려고 하면 자꾸만 비판적인 생각이 들어요. '이건 너무 뻔하잖아', '이건 재미없어' 같은…
+    72.47s  user  발화 끝
+    72.60s  agent 발화 시작: 스스로 비판적인 생각을 많이 하시는군요. 그럴 때는 잠시 멈춰서, 자신에게 친절하게 말을 건네보는 건 어떨까
+    80.18s  user  발화 시작: 음.
+    80.68s  user  발화 끝
+    82.85s  agent 발화 끝
+    82.90s  user  발화 시작: 음… 친구에게 말하는 것처럼요? 그런 방법도 있군요.
+    87.27s  agent 발화 시작: 네, 자신을 격려하고 칭찬하는 것은 자신감을 높이는 데 도움이 될 수 있어요. 작은 성공에도 기뻐하고, 자신
+    87.39s  user  발화 끝
+    98.82s  agent 발화 끝

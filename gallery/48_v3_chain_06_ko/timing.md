@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "지훈",
+#     "name": "태서",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,114 +12,145 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
+#       "date": "2026-05-27",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-11-10",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-10-28",
+#       "date": "2026-05-15",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-19",
+#       "date": "2025-07-15",
 #       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-06",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-11-19",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "title": "Setting up a home network",
+#       "date": "2025-08-02",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-22",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 저녁에 괜찮은 레스토랑 좀 추천해 줄 수 있을까요? | S2 '라 비아'… 거긴 예약이 가능한가요? | S3 …알아봐 줄 수 있을까요? | S4 유료 주차라… 그럼 대중교통으로 가는 방법은 없을까요?
+# EXAMINER(FDB-v2) 단계: S1 마이애미에서 애틀랜타까지 버스 시간은 유월 일일에 얼마나 걸릴 | S2 구십오달러면 괜찮네요. 혹시 그 버스에 와이파이가 있나요? | S3 아직 여행 가방도 안 쌌어요. 뭘 챙겨야 할지 고민이에요. | S4 …혹시 거기 가는 버스는 또 어떻게 타야 할까요?
 
-     0.00s  user  발화 시작: 오늘 저녁에 괜찮은 레스토랑 좀 추천해 줄 수 있을까요?
-     3.56s  user  발화 끝
-     3.56s  agent 발화 시작: 어떤 종류의 음식을 좋아하시나요?
-     6.05s  agent 발화 끝
-     6.20s  user  발화 시작: 음… 파스타가 먹고 싶어요.
-     8.74s  user  발화 끝
-     8.89s  agent 발화 시작: 파스타요? 그럼 이탈리안 레스토랑을 찾아볼까요?
-    11.75s  agent 발화 끝
-    11.76s  user  발화 시작: 네, 좋아요.
-    12.75s  <ret> 발화 (turn5 첫 프레임)
-    12.99s  agent 발화 시작: <ret> 오스틴에 있는 이탈리안 레스토랑을 찾아봤는데, '라 비아'라는 곳이 평점이 아주 좋네요.
-    12.99s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.46s]: Restaurants_2_FindRestaurants: {"cuisine": "Italian", "location": "Aus
-    13.04s  user  발화 끝
-    15.70s  user  발화 시작: 그렇죠.
-    16.29s  user  발화 끝
-    18.45s  agent 발화 끝
-    18.52s  user  발화 시작: '라 비아'… 거긴 예약이 가능한가요?
-    21.02s  <ret> 발화 (turn8 첫 프레임)
-    21.10s  agent 발화 시작: <ret> 네, '라 비아'에 저녁 일곱시에 한명으로 예약이 완료됐습니다. 확인 번호는 팔 칠 육 오 사 삼
-    21.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Reservation confirmed at La Via for 1 person on March 10
-    21.15s  user  발화 끝
-    27.87s  agent 발화 끝
-    28.42s  user  발화 시작: 팔 칠 육 오 사 삼 이 일… 혹시 다른 레스토랑도…
-    32.59s  user  발화 끝
-    34.67s  user  발화 시작: …알아봐 줄 수 있을까요?
-    36.44s  agent 발화 시작: 혹시 '라 비아' 말고 다른 스타일의 이탈리안 레스토랑을 원하시나요—
-    36.56s  user  발화 끝
-    40.11s  user  발화 시작: …그 레스토랑의 주소 좀 알려줄 수 있어요?
-    40.70s  agent 발화 끝
-    42.94s  <ret> 발화 (turn13 첫 프레임)
-    43.07s  user  발화 끝
-    43.10s  agent 발화 시작: <ret> '라 비아'의 주소는 백이십삼 Main Street, Austin, TX입니다.
-    43.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.34s]: Restaurants_2_FindRestaurants: {"restaurant_name": "La Via", "location
-    45.97s  user  발화 시작: 네네.
-    46.61s  user  발화 끝
-    47.25s  <ret> 발화 (turn15 첫 프레임)
-    47.44s  agent 발화 끝
-    47.49s  agent 발화 시작: <ret> 네, 근처에 유료 주차 공간이 있습니다.
-    47.49s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.72s]: (tool result) Parking: Paid parking is available nearby.
-    50.21s  agent 발화 끝
-    51.07s  user  발화 시작: 유료 주차라… 그럼 대중교통으로 가는 방법은 없을까요?
-    55.12s  <ret> 발화 (turn17 첫 프레임)
-    55.27s  agent 발화 시작: <ret> 현재 위치에서 십번 버스를 타면 Main Street까지 약 이십오분 정도 걸립니다.
-    55.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) The best route is to take the bus number 10 from your cu
-    55.37s  user  발화 끝
-    60.65s  agent 발화 끝
-    61.68s  user  발화 시작: 이십오분이면 괜찮겠네요.
-    63.43s  user  발화 끝
-    63.49s  agent 발화 시작: 혹시 다른 도움이 필요하신가요? 맛있는 파스타를 드시고 즐거운 저녁 보내세요.
-    68.95s  agent 발화 끝
+     0.00s  user  발화 시작: 마이애미에서 애틀랜타까지 버스 시간은 유월 일일에 얼마나 걸릴까요?
+     4.67s  <ret> 발화 (turn1 첫 프레임)
+     4.90s  agent 발화 시작: <ret> 마이애미에서 애틀랜타까지 버스로는 약 열네시간 삼십분이 걸리고, 요금은 백이십달러입니다. 오전 여
+     4.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) Duration: 14 hours 30 minutes, Price: $120.00, Depart: 0
+     5.00s  user  발화 끝
+    16.17s  agent 발화 끝
+    16.35s  user  발화 시작: 백이십달러는 좀 비싸네요. 좀 더 저렴한 버스는 없을까요?
+    21.22s  <ret> 발화 (turn3 첫 프레임)
+    21.30s  user  발화 끝
+    21.46s  agent 발화 시작: <ret> 유월 일일에 출발하는 버스 중에는 팔십오달러짜리도 있어요. 여섯시에 출발해서 밤 열시에 도착하는 
+    21.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Duration: 16 hours, Price: $85.00, Depart: 06:00 AM, Arr
+    29.61s  user  발화 시작: 여섯시 출발은 너무 일러요. 아홉시 이후에 출발하는 버스는 없나요?
+    29.71s  agent 발화 끝
+    34.28s  user  발화 끝
+    34.29s  <ret> 발화 (turn5 첫 프레임)
+    34.37s  agent 발화 시작: <ret> 아홉시 삼십분에 출발하는 버스는 백오달러이고, 다음 날 새벽 한시 십오분에 도착합니다. 혹시 다른
+    34.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) Duration: 15 hours 45 minutes, Price: $105.00, Depart: 0
+    40.27s  user  발화 시작: 진짜요?
+    41.10s  user  발화 끝
+    42.38s  agent 발화 끝
+    42.46s  user  발화 시작: 음… 유월 이일은 어떨까요?
+    44.92s  <ret> 발화 (turn8 첫 프레임)
+    45.32s  agent 발화 시작: <ret> 유월 이일에는 열시에 출발해서 다음 날 새벽 열두시 삼십분에 도착하는 구십오달러짜리 버스가 있습니
+    45.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Duration: 14 hours 30 minutes, Price: $95.00, Depart: 10
+    45.36s  user  발화 끝
+    48.99s  user  발화 시작: 네.
+    49.59s  user  발화 끝
+    51.69s  user  발화 시작: 구십오달러면 괜찮네요. 혹시 그 버스에 와이파이가 있나요?
+    51.90s  agent 발화 끝
+    56.58s  <ret> 발화 (turn11 첫 프레임)
+    56.82s  agent 발화 시작: <ret> 죄송하지만, 해당 버스에 와이파이가 있는지에 대한 정보는 찾을 수 없었습니다.
+    56.82s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.90s]: (no information found)
+    56.83s  user  발화 끝
+    61.72s  agent 발화 끝
+    62.50s  user  발화 시작: 아, 그렇군요. 그럼 좌석은 편한가요?
+    65.11s  <ret> 발화 (turn13 첫 프레임)
+    65.27s  user  발화 끝
+    65.27s  agent 발화 시작: <ret> 좌석의 편안함에 대한 정보도 찾을 수 없습니다. 버스 회사에 직접 문의해 보시는 게 좋을 것 같아
+    65.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (no information found)
+    69.07s  user  발화 시작: 네.
+    69.56s  user  발화 끝
+    71.06s  agent 발화 끝
+    71.79s  user  발화 시작: 알겠습니다. 그럼 유월 이일 열시 출발하는 버스 티켓을 예매해 주세요.
+    76.51s  <ret> 발화 (turn16 첫 프레임)
+    76.65s  user  발화 끝
+    76.67s  agent 발화 시작: <ret> 유월 이일 열시 출발하는 마이애미-애틀랜타 버스 티켓을 예매했습니다. 확인번호는 비 엑스 구 이 
+    76.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Confirmation ID: BX927HD
+    79.75s  user  발화 시작: 어머.
+    80.33s  user  발화 끝
+    85.34s  agent 발화 끝
+    86.54s  user  발화 시작: 비 엑스 구 이 칠 에이치 디요? 확인번호 잘 적어뒀어요.
+    91.68s  user  발화 끝
+    91.71s  agent 발화 시작: 다행입니다. 혹시 여행 준비는 잘 되어 가시나요?
+    95.08s  agent 발화 끝
+    95.28s  user  발화 시작: 아직 여행 가방도 안 쌌어요. 뭘 챙겨야 할지 고민이에요.
+    99.12s  user  발화 끝
+    99.30s  agent 발화 시작: 여행 가방을 꾸리는 건 항상 설레면서도 고민스러운 일이죠. 혹시 어떤 종류의 여행을 좋아하시나요?
+   106.53s  agent 발화 끝
+   106.53s  user  발화 시작: 주로 자연을 즐기는 여행을 좋아해요. 하이킹이나 캠핑 같은 거요.
+   111.03s  <ret> 발화 (turn23 첫 프레임)
+   111.35s  user  발화 끝
+   111.43s  agent 발화 시작: <ret> 자연을 즐기시는군요. 멋진데요. 혹시 애틀랜타 근처에 하이킹하기 좋은 곳을 알고 싶으신가요?
+   111.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) Stone Mountain Park offers over 30 miles of trails, Amic
+   118.56s  agent 발화 끝
+   118.56s  agent 발화 시작: 애틀랜타 근처에는 스톤 마운틴 파크, 아미콜라 폭포 주립공원, 케네소 마운틴 국립전적지가 하이킹하기 좋기로 
+   124.48s  user  발화 시작: 음.
+   125.06s  user  발화 끝
+   127.14s  agent 발화 끝
+   128.71s  user  발화 시작: 스톤 마운틴 파크는요? 거기는 어떤 곳인가요?
+   131.84s  <ret> 발화 (turn27 첫 프레임)
+   132.04s  user  발화 끝
+   132.07s  agent 발화 시작: <ret> 스톤 마운틴 파크는 거대한 석영 단괴 돔과 하이킹 코스, 경치 좋은 기차, 다양한 볼거리가 있는 
+   132.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.88s]: (tool result) Stone Mountain Park is a 3,200-acre park featuring a mas
+   141.94s  agent 발화 끝
+   143.71s  user  발화 시작: 와, 정말 멋진 곳이네요.
+   145.55s  user  발화 끝
+   145.61s  agent 발화 시작: 네, 많은 분들이 스톤 마운틴 파크를 찾으시는 이유가 있죠. —
+   148.36s  user  발화 시작: …혹시 거기 가는 버스는 또 어떻게 타야 할까요?
+   148.98s  agent 발화 끝
+   151.46s  user  발화 끝
+   151.49s  <ret> 발화 (turn31 첫 프레임)
+   151.65s  agent 발화 시작: <ret> 애틀랜타 버스 터미널에서 스톤 마운틴 파크까지는 사십오분이 걸리고, 요금은 오달러입니다. 삼십분 
+   151.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (tool result) Duration: 45 minutes, Price: $5.00, Depart: Every 30 min
+   155.99s  user  발화 시작: 그렇죠.
+   156.72s  user  발화 끝
+   160.12s  agent 발화 끝
+   160.14s  user  발화 시작: 오달러면 저렴하네요.
+   162.16s  agent 발화 시작: 그렇죠, 부담 없이 다녀올 수 있을 것 같아요. 여행 계획 세우는 게 즐거우시죠?
+   162.21s  user  발화 끝
+   167.49s  agent 발화 끝
+   168.27s  user  발화 시작: 네, 정말 즐거워요. 덕분에 여행이 더 기대돼요.
+   171.94s  agent 발화 시작: 저도 기쁩니다. 즐거운 여행 되세요.
+   172.06s  user  발화 끝
+   174.44s  agent 발화 끝

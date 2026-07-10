@@ -4,48 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "성담",
+#     "name": "노우",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "date": "2026-03-11",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-06-04",
+#       "date": "2026-01-10",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-05-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
-#     },
-#     {
-#       "date": "2025-12-31",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-07-11",
+#       "date": "2025-10-20",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-08-24",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2025-06-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-05-30",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2026-04-23",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -53,49 +58,34 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-27",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-01-08",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-07",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 무슨 일을 하는 사람이세요? | S2 그냥… 어떻게 시작해야 할지 모르겠어요. 먼저 말 걸기가 어렵 | S3 네… 뭘 말해야 할지, 싫어하면 어떡할지… 자꾸 생각하게 돼요 | S4 가볍게… 어떻게 해야 가벼울까요?
 
-     0.00s  agent 발화 시작: 안녕하세요, 성담님. 저는 하라예요. 혹시 요즘 친구 관계나 사회생활에 대해 고민이 있으신가요?
-     7.46s  agent 발화 끝
-     8.44s  user  발화 시작: 혹시 무슨 일을 하는 사람이세요?
-    10.23s  agent 발화 시작: 저는 사람들의 관계를 돕는 라이프 코치예요. 좀 더 편안하게 서로에게 다가갈 수 있도록 도와드리고 싶어요.
-    10.42s  user  발화 끝
-    13.84s  user  발화 시작: 음.
-    14.25s  user  발화 끝
-    17.08s  agent 발화 시작: 혹시 지금 당장 어떤 점이 가장 힘든지 말씀해 주실 수 있을까요? 어떤 상황이든 괜찮아요.
-    17.13s  agent 발화 끝
-    18.99s  user  발화 시작: 응.
-    19.39s  user  발화 끝
-    22.74s  user  발화 시작: 음… 사실은 새로운 사람을 만나는 게 너무 어려워요.
-    23.20s  agent 발화 끝
-    26.26s  agent 발화 시작: 새로운 사람을 만나는 게 어렵다고 느끼시는군요. 혹시 어떤 부분이 가장 망설여지나요? 두려움이라든지…
-    26.30s  user  발화 끝
-    29.70s  user  발화 시작: 응응.
-    30.20s  user  발화 끝
-    32.67s  user  발화 시작: 그냥… 어떻게 시작해야 할지 모르겠어요. 먼저 말 걸기가 어렵고.
-    32.84s  agent 발화 끝
-    37.21s  user  발화 끝
-    37.43s  agent 발화 시작: 먼저 다가가기 어려우신 건 많은 분들이 공감하는 부분이에요. 상대방에게 어떤 말을 건네면 좋을지 고민이 많으
-    41.09s  user  발화 시작: 어.
-    41.49s  user  발화 끝
-    45.35s  agent 발화 끝
-    45.48s  user  발화 시작: 네… 뭘 말해야 할지, 싫어하면 어떡할지… 자꾸 생각하게 돼요.
-    50.62s  user  발화 끝
-    50.63s  agent 발화 시작: 그런 걱정은 당연한 거예요. 하지만 너무 미리 걱정하기보다는, 가볍게 시작해 보는 건 어떨까요?
-    54.22s  user  발화 시작: 어.
-    54.99s  user  발화 끝
-    57.18s  user  발화 시작: 가볍게… 어떻게 해야 가벼울까요?
-    57.36s  agent 발화 끝
-    59.22s  agent 발화 시작: 예를 들어, 공통의 관심사를 찾아 대화를 시작해 보는 거예요. 아니면 그냥 날씨 이야기를 건네는 것도 좋은 
-    59.39s  user  발화 끝
-    66.78s  agent 발화 끝
+     0.00s  agent 발화 시작: 노우 씨, 안녕하세요. 저는 카엔이라고 해요. 힘든 시간들을 함께 걸어갈 수 있도록 돕는 상담가입니다.
+     4.90s  user  발화 시작: 아.
+     5.40s  user  발화 끝
+     6.78s  user  발화 시작: 혹시 제가 뭘 털어놓으면 괜찮은 걸까요?
+     6.81s  agent 발화 끝
+     9.31s  user  발화 끝
+     9.41s  agent 발화 시작: 어떤 이야기든 편하게 말씀해 주세요. 지금 느끼는 감정을 나누는 것만으로도 큰 도움이 될 수 있어요.
+    13.58s  user  발화 시작: 어.
+    14.40s  user  발화 끝
+    16.05s  agent 발화 시작: 혹시 지금 가장 마음이 무거운 부분이 있으신가요? 어떤 생각 때문에 이렇게 저를 찾아오셨는지 궁금하네요.
+    16.13s  agent 발화 끝
+    22.35s  agent 발화 끝

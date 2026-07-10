@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "지안",
+#     "name": "우찬",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,73 +12,75 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
+#       "date": "2025-12-12",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-11-11",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
+#     },
+#     {
+#       "date": "2025-08-21",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-19",
 #       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-01-23",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-15",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-06-07",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 호주에서 코먼웰스 게임을… | S2 …마지막으로 개최한 게 언제였지? | S3 잠깐만, 아까 그 얘기는… | S4 아, 미안. 다시 말해서, 이천십팔년이라고 했지?
+# EXAMINER(FDB-v2) 단계: S1 호간의 영웅들에서 슐츠 상사를 연기한 사람이 누구였지? | S2 맞아요, 옛날 드라마는 다 그런 것 같아요. | S3 …존 배너는 다른 드라마에도 출연했었나? | S4 …관련 영화를 많이 하셨나 보네.
 
-     0.00s  user  발화 시작: 음… 호주에서 코먼웰스 게임을…
-     2.90s  user  발화 끝
-     4.24s  user  발화 시작: …마지막으로 개최한 게 언제였지?
-     5.84s  <ret> 발화 (turn2 첫 프레임)
-     6.07s  agent 발화 시작: <ret> 호주에서 코먼웰스 게임을 마지막으로 개최한 건 이천십팔년이었습니다.
-     6.08s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.19s]: Australia last hosted the Commonwealth Games in 2018.
-     6.12s  user  발화 끝
-     7.90s  user  발화 시작: 응.
-     8.53s  user  발화 끝
-    11.22s  user  발화 시작: 잠깐만, 아까 그 얘기는…
-    11.26s  agent 발화 끝
-    13.34s  user  발화 끝
-    15.48s  user  발화 시작: 아, 미안. 다시 말해서, 이천십팔년이라고 했지?
-    18.48s  <ret> 발화 (turn6 첫 프레임)
-    18.80s  agent 발화 시작: <ret> 네, 맞습니다. 호주에서 코먼웰스 게임을 마지막으로 개최한 건 이천십팔년입니다. 공부하시는데 도움
-    18.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Australia last hosted the Commonwealth Games in 2018.
-    18.86s  user  발화 끝
-    22.53s  user  발화 시작: 헐.
-    22.93s  user  발화 끝
-    27.23s  agent 발화 끝
-    27.31s  agent 발화 시작: 혹시 공부 계획 세우는 데 어려움을 느끼고 계신가요? 제가 도와드릴 수 있어요.
-    32.13s  agent 발화 끝
+     0.00s  user  발화 시작: 호간의 영웅들에서 슐츠 상사를 연기한 사람이 누구였지?
+     3.28s  <ret> 발화 (turn1 첫 프레임)
+     3.33s  user  발화 끝
+     3.52s  agent 발화 시작: <ret> 호간의 영웅들에서 슐츠 상사 역할을 맡은 건 존 배너였어요. 그분은 정말 인상적인 연기를 보여주셨
+     3.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: John Banner played the role of Sergeant Hans Wilhelm Schultz in the te
+    10.90s  user  발화 시작: 음, 그 드라마가 언제 처음 시작했는지 기억나?
+    10.93s  agent 발화 끝
+    13.39s  <ret> 발화 (turn3 첫 프레임)
+    13.70s  agent 발화 시작: <ret> 호간의 영웅들은 천구백육십오년 구월 십칠일에 처음 방영돼서 천구백칠십일년 삼월 이십팔일에 끝났어요
+    13.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Hogan's Heroes originally aired from September 17, 1965, to March 28, 
+    13.96s  user  발화 끝
+    23.44s  user  발화 시작: 맞아요, 옛날 드라마는 다 그런 것 같아요.
+    23.53s  agent 발화 끝
+    25.96s  agent 발화 시작: 그 드라마가 워낙 인기가 많아서…
+    26.03s  user  발화 끝
+    28.18s  agent 발화 끝
+    28.36s  user  발화 시작: …존 배너는 다른 드라마에도 출연했었나?
+    30.75s  <ret> 발화 (turn7 첫 프레임)
+    31.07s  agent 발화 시작: <ret> 존 배너는 여러 작품에 출연했는데, 특히 전쟁 영화에서 자주 볼 수 있었어요.
+    31.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: John Banner also appeared in films such as The Great Escape and The Lo
+    31.27s  user  발화 끝
+    36.44s  agent 발화 끝
+    36.54s  agent 발화 시작: 존 배너는 대탈출과 최장일과 같은 영화에도 출연했어요. 다양한 역할을 소화하셨죠.
+    39.49s  user  발화 시작: 그래.
+    39.98s  user  발화 끝
+    41.68s  agent 발화 끝
+    42.45s  user  발화 시작: 오, 그럼 그분은 주로 전쟁…
+    44.62s  user  발화 끝
+    46.50s  user  발화 시작: …관련 영화를 많이 하셨나 보네.
+    48.24s  user  발화 끝
+    48.34s  agent 발화 시작: 네, 전쟁 영화뿐만 아니라 코미디 영화에도 출연하셨어요. 다재다능한 배우셨죠.
+    53.44s  agent 발화 끝

@@ -1,75 +1,98 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Dio, a calm and patient supportive advisor who helps people with grief and change. <system>
+SYSTEM: <system> You are Doraus, a kind and steady wellness coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Andrea",
+    "name": "Ruby",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-17",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-12-31",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-09-28",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in May."
-    },
-    {
-      "date": "2025-08-11",
+      "date": "2026-06-03",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-07-29",
+      "date": "2026-03-31",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-11-19",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-06-12",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2025-10-05",
+      "category": "work",
+      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-01",
-      "title": "Comparing gym memberships",
+      "date": "2026-06-09",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-13",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you remember what I told you about ⟨ret@1.94s⟩ my grandmother?
-[  2.34s][moshi] ⟦⚡SPAN@2.34s: [2024-07-03] My grandmother, Eleanor Vance, loved gardening and always wore a blue hat.⟧ I do. You told me about your grandmother, Eleanor Vance, and her love for gardening – she always wore a blue hat, you said.
-[  6.59s][user ] «backchannel» Right.
-[  9.52s][user ] Could you find me a picture of ⟨ret@11.66s⟩ that hat?
-[ 12.06s][moshi] ⟦⚡SPAN@12.06s: (no information found)⟧ I’ve searched, but unfortunately, I couldn’t find a picture of Eleanor Vance’s blue hat online.
-      CALL: {"function": "search", "arguments": {"query": "blue hat Eleanor Vance"}}
-[ 15.02s][user ] «backchannel» Yeah.
-[ 17.90s][user ] Oh, that’s a shame. What was the weather like on her birthday ⟨ret@22.00s⟩ in 2018?
-[ 22.40s][moshi] ⟦⚡SPAN@22.40s: (tool result) The weather in Anytown, USA on July 15, 2018 was 26.7°C, humidity 62%, with a light breeze from ⟧ On July fifteenth, 2018, in Anytown, the weather was twenty-six point seven degrees Celsius, with sixty-two percent humidity and a gentle southwest breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2018-07-15", "location": "Anytown, USA"}}
-[ 33.23s][user ] That sounds lovely. It's good to remember those details.
-[ 36.34s][moshi] It is. Sometimes, even small details can bring back a great deal of warmth, and I'm glad I could help you recall that.
+[  0.00s][user ] Do you have the contact information for ⟨ret@2.24s⟩ Eleanor Vance?
+[  2.64s][moshi] ⟦⚡SPAN@2.64s: (no information found)⟧ I’ve searched, but unfortunately, I couldn’t find any contact information for Eleanor Vance.
+      CALL: {"function": "search", "arguments": {"query": "Eleanor Vance contact information"}}
+[  4.40s][user ] «backchannel» Yeah.
+[  7.96s][user ] Oh, okay. That's a shame.
+[ 10.46s][moshi] It can be frustrating when you can't reach someone you're trying to connect with.
+[ 14.17s][user ] Yes, actually. What’s the weather like in Seoul right ⟨ret@17.64s⟩ now?
+[ 17.96s][moshi] ⟦⚡SPAN@17.96s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with humidity at 74 percent and a wind speed of 5.5 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 26.58s][user ] Hmm, not bad.
+[ 28.42s][moshi] It sounds quite pleasant. A comfortable temperature can really boost your mood, don’t you think?
+[ 33.44s][user ] I suppose so. Can you find me some events happening in Seoul this ⟨ret@37.38s⟩ weekend?
+[ 37.70s][moshi] «interrupted» ⟦⚡SPAN@37.70s: (tool result) Seoul International Marathon — domain: visitseoul.net; K-Pop Dance Festival — domain: seoulkpopf⟧ There’s the Seoul International Marathon and the K-Pop Dance Festival happening this weekend—
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Seoul", "date": "this weekend"}}
+[ 41.92s][user ] «interrupts_prev» …are either of those outdoors?
+[ 43.53s][moshi] ⟨ret@43.45s⟩ ⟦⚡SPAN@43.53s: (tool result) Seoul International Marathon — domain: marathon.seoul.go.kr; The marathon is held on city street⟧ The Seoul International Marathon is held on city streets, so it’s an outdoor event.
+      CALL: {"function": "search", "arguments": {"query": "Seoul International Marathon outdoor"}}
+[ 45.55s][user ] «backchannel» Yeah.
+[ 48.52s][moshi] The K-Pop Dance Festival is typically held at the Seoul Plaza, which is also outdoors, though events can sometimes move indoors depending on the weather.
+[ 57.36s][user ] Interesting. What about restaurants nearby? ⟨ret@60.15s⟩
+[ 60.31s][moshi] ⟦⚡SPAN@60.31s: (tool result) Myeongdong Kyoja — domain: myongdongkyoja.com; Gogung Myeongga — domain: gogungmyeongga.com⟧ Nearby, you’ll find Myeongdong Kyoja and Gogung Myeongga. Both are popular choices.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Seoul Plaza"}}
+[ 64.36s][user ] «backchannel» Yeah.
+[ 66.52s][user ] Myeongdong Kyoja… I think I’ve heard of that place.
+[ 69.62s][moshi] It’s quite famous for its dumplings and kalguksu, a knife-cut noodle soup. A good meal can be a real energy booster, especially when you’re busy.
+[ 72.53s][user ] «backchannel» Right.
+[ 78.19s][user ] You’re right. I have a really stressful meeting coming up.
+[ 81.09s][moshi] I understand. Stressful meetings are tough. Perhaps we could explore some techniques for managing that anxiety?
+[ 85.85s][user ] «backchannel» Okay.
+[ 87.78s][user ] That sounds good. What's a…
+[ 91.03s][user ] …good way to prepare mentally?
+[ 93.00s][moshi] A little preparation can go a long way. Visualizing a successful outcome can be really helpful.
+[ 98.89s][user ] Okay, visualization. I’ll try that. What time is it ⟨ret@102.17s⟩ now?
+[102.41s][moshi] ⟦⚡SPAN@102.41s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ It is currently 3:17 PM in Seoul. It’s good to be mindful of the time when preparing for something important.
+      CALL: {"function": "get_time", "arguments": {}}
+[109.11s][user ] Thanks, Doraus. That helps.
+[110.89s][moshi] You’re very welcome. Remember, taking a few moments for yourself can make a real difference in how you approach challenges.

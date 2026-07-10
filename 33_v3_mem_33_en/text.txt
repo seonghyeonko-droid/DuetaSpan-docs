@@ -1,93 +1,77 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Frer, a curious and validating supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Jeami, a calm and patient life coach who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Charlie",
+    "name": "Ella",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "early 30s",
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-19",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-04-12",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2025-11-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2026-03-12",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-09-27",
+      "date": "2026-02-07",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2025-10-08",
       "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2025-09-07",
+      "date": "2025-07-18",
       "category": "home",
-      "text": "User's home address is 824 Maple Drive."
+      "text": "User's home address is 255 Cedar Lane."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-24",
-      "title": "Comparing gym memberships",
+      "date": "2025-06-11",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-29",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-04",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Charlie, I'm Frer. It's lovely to connect with you.
-[  3.30s][user ] Um, what time is it right now in Toronto?
-[  6.02s][moshi] ⟨ret@5.86s⟩ ⟦⚡SPAN@6.02s: (tool result) It is Friday, July 10, 2026 at 2:47 PM in America/Toronto right now.⟧ It's currently 2:47 PM in Toronto. A good time to pause and just…be, wouldn’t you say?
+[  0.00s][moshi] Hi Ella, I’m Jeami. It's lovely to connect with you today.
+[  4.36s][user ] Hi Jeami, it's good to meet you too. What time is it in London right now?
+[  8.64s][moshi] ⟨ret@8.48s⟩ ⟦⚡SPAN@8.64s: (tool result) It is Friday, July 10, 2026 at 10:17 AM in Europe/London right now.⟧ It is currently 10:17 AM in London. A perfect time to start planning, don’t you think?
       CALL: {"function": "get_time", "arguments": {}}
-[  8.87s][user ] «backchannel» Oh.
-[ 13.84s][user ] That's good to know. I was just thinking about my cat, ⟨ret@17.35s⟩ Luna.
-[ 17.59s][moshi] ⟦⚡SPAN@17.59s: [2025-09-27] User has a tabby cat named Luna.⟧ You have a tabby cat named Luna, as our records show.
-[ 22.44s][user ] Right, Luna. I remember telling you about her. What about allergies, did I ever mention ⟨ret@27.97s⟩ any?
-[ 28.21s][moshi] ⟦⚡SPAN@28.21s: [2026-06-19] User is allergic to peanuts.⟧ Yes, you mentioned a peanut allergy on June 19th of last year. Important to keep that in mind.
-[ 34.20s][user ] Oh yeah, peanuts! That's right. I'm planning a trip to Kyoto soon.
-[ 39.23s][moshi] Kyoto is a beautiful city. A change of scenery can be incredibly restorative.
-[ 43.00s][user ] «backchannel» Yeah, yeah.
-[ 44.56s][user ] I was in Kyoto last year, actually. I think I told you about it.
-[ 48.92s][moshi] ⟨ret@48.84s⟩ ⟦⚡SPAN@48.92s: [2025-09-07] User's home address is 824 Maple Drive.⟧ I have your home address as 824 Maple Drive, but no note of a trip to Kyoto.
-[ 52.25s][user ] «backchannel» Yeah.
-[ 54.77s][user ] Hmm, maybe not. I just feel so tired lately, but…
-[ 58.82s][moshi] That's completely understandable. Feeling tired is a signal, Charlie. A sign that your system needs some attention.
-[ 65.73s][user ] I'm thinking about getting a new gym membership, maybe one with a ⟨ret@69.91s⟩ pool.
-[ 70.15s][moshi] ⟦⚡SPAN@70.15s: [2025-10-24] Past chat — Comparing gym memberships: wants a pool; close to the office.⟧ You previously mentioned wanting a pool and proximity to your office when considering gym memberships.
-[ 76.52s][user ] That's right! Can you find gyms in Toronto with pools, near my ⟨ret@81.72s⟩ office?
-[ 81.88s][moshi] ⟦⚡SPAN@81.88s: (no information found)⟧ I’m afraid I didn’t find any gyms matching that description. My search function isn’t quite up to that level yet.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Toronto", "query": "gyms with pools near office"}}
-[ 89.40s][user ] Oh, okay. Well, thanks anyway, Frer.
-[ 92.56s][moshi] Charlie. Remember, even a small moment of rest can make a difference. Take care.
+[ 13.63s][user ] Definitely! I’m still thinking about New Zealand in ⟨ret@17.50s⟩ August.
+[ 17.74s][moshi] ⟦⚡SPAN@17.74s: [2026-02-07] User is planning a trip to New Zealand in August.⟧ Ah yes, your New Zealand trip in August. I have a note of that.
+[ 22.30s][user ] What’s the weather usually like there then, in ⟨ret@25.52s⟩ August?
+[ 25.76s][moshi] ⟦⚡SPAN@25.76s: (tool result) 13.0°C, humidity 80%, wind 12.5 km/h⟧ In New Zealand in August, you can expect around 13 degrees Celsius, with high humidity and winds around 12.5 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "New Zealand"}}
+[ 31.71s][user ] «backchannel» Wow.
+[ 34.80s][user ] That sounds… chilly—
+[ 36.54s][user ] …actually, before we get too deep into the weather, could we look at flights?
+[ 41.11s][moshi] ⟨ret@41.03s⟩ ⟦⚡SPAN@41.11s: (tool result) LHR-AKL, 2026-08-01, £1250 — domain: skyscanner.net⟧ A one-way flight from London to Auckland on August 1st is currently around £1250.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"destination": "New Zealand"}}
+[ 49.46s][user ] That's more than I hoped. Are there any cheaper options around that ⟨ret@53.76s⟩ time?
+[ 54.16s][moshi] ⟦⚡SPAN@54.16s: (tool result) LHR-AKL, 2026-08-15, £980 — domain: kayak.com⟧ If you were to fly on August 15th, a flight is available for around £980.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"destination": "New Zealand"}}
+[ 61.48s][user ] That's much better! I think I'd prefer to go then.
+[ 64.80s][moshi] Excellent! August 15th sounds like a good option for your trip. I'm glad we found something more suitable.

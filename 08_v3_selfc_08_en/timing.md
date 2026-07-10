@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Casey",
+#     "name": "Ivy",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,115 +12,78 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-11",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-06-24",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-09-14",
+#       "date": "2025-11-28",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-07-22",
+#       "date": "2025-11-17",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-09-16",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-15",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-07-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
+#       "date": "2025-06-09",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2026-04-23",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-07",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Are there any info logs related to | S2 Can you show me the IP addresses? | S3 Block that last one too, please. | S4 Is it enabled for my account? I th
+# EXAMINER(FDB-v2) 단계: S1 When does the Central… | S2 …Is it open right now? | S3 What’s the weather like there righ | S4 [sigh] Sounds lovely.
 
-     0.00s  user  발화 시작: Are there any info logs related to user authentication?
-     3.78s  <ret> 발화 (turn1 첫 프레임)
-     4.17s  agent 발화 시작: <ret> So, user authentication logs track login attempts, bot
-     4.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) User authentication logs typically record login attempts
-     4.35s  user  발화 끝
-    12.03s  user  발화 시작: …can you search specifically for logs from the past 24 hours
-    12.79s  agent 발화 끝
-    16.04s  <ret> 발화 (turn3 첫 프레임)
-    16.27s  agent 발화 시작: <ret> Okay, it looks like there have been several failed log
-    16.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: (tool result) Recent searches indicate that user authentication logs f
-    16.56s  user  발화 끝
-    22.16s  user  발화 시작: Yeah.
-    22.80s  user  발화 끝
-    24.78s  agent 발화 시작: It's good to be aware of these things, right? Being proactiv
-    24.99s  agent 발화 끝
-    28.96s  user  발화 시작: Yeah.
-    29.78s  user  발화 끝
-    30.43s  agent 발화 끝
-    30.86s  user  발화 시작: Can you show me the IP addresses?
-    32.56s  <ret> 발화 (turn8 첫 프레임)
-    32.87s  agent 발화 시작: <ret> The IP addresses are 192.0.2.15, 198.51.10.22, and 203
-    32.88s  ⚡SPAN 주입 [d'=1.28s / d_lead=13.45s]: (tool result) The IP addresses associated with the failed login attemp
-    32.97s  user  발화 끝
-    42.70s  user  발화 시작: Yeah, yeah.
-    43.89s  user  발화 끝
-    46.31s  agent 발화 끝
-    46.76s  user  발화 시작: Are those IPs blocked already?
-    48.90s  agent 발화 시작: <ret> Two of those IPs—192.0.2.15 and 198.51.10.22—are alrea
-    48.90s  <ret> 발화 (turn11 첫 프레임)
-    48.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.55s]: (tool result) According to the firewall logs, IP addresses 192.0.2.15 
-    49.12s  user  발화 끝
-    52.42s  user  발화 시작: Wow.
-    53.25s  user  발화 끝
-    60.44s  agent 발화 끝
-    60.77s  user  발화 시작: Block that last one too, please.
-    62.67s  <ret> 발화 (turn14 첫 프레임)
-    63.06s  agent 발화 시작: <ret> Okay, I’ve blocked 203.0.11.45. The block ID is 789456
-    63.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) IP address 203.0.113.45 has been successfully blocked. B
-    63.22s  user  발화 끝
-    69.51s  agent 발화 끝
-    71.84s  user  발화 시작: That’s good. What about two-factor authentication?
-    75.68s  user  발화 끝
-    75.81s  agent 발화 시작: Two-factor authentication adds a great extra layer of securi
-    81.61s  user  발화 시작: Okay.
-    82.43s  user  발화 끝
-    84.01s  agent 발화 끝
-    84.61s  user  발화 시작: Is it enabled for my account? I think I set it up… uh, last 
-    90.56s  <ret> 발화 (turn19 첫 프레임)
-    90.95s  agent 발화 시작: <ret> Yes, two-factor authentication is enabled for your acc
-    90.96s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.07s]: (tool result) Two-factor authentication is currently enabled for your 
-    91.19s  user  발화 끝
-    99.02s  agent 발화 끝
-   100.24s  user  발화 시작: Perfect. That's a relief.
-   102.09s  agent 발화 시작: That’s fantastic! Knowing that's in place is a real weight o
-   102.18s  user  발화 끝
-   108.86s  agent 발화 끝
+     0.00s  user  발화 시작: When does the Central…
+     1.94s  user  발화 끝
+     4.03s  user  발화 시작: …Park Zoo close today?
+     5.76s  <ret> 발화 (turn2 첫 프레임)
+     6.15s  agent 발화 시작: <ret> The Central Park Zoo closes at five thirty this evenin
+     6.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) Central Park Zoo - Closes 5:30 PM, Open until 5:30 PM · 
+     6.20s  user  발화 끝
+     9.44s  user  발화 시작: …Is it open right now?
+    10.13s  agent 발화 끝
+    11.19s  user  발화 끝
+    11.24s  agent 발화 시작: Yes, it is currently open. It remains open until five thirty
+    12.85s  user  발화 시작: Yeah.
+    13.67s  user  발화 끝
+    15.68s  agent 발화 시작: I find that knowing the hours allows for more peaceful plann
+    15.74s  agent 발화 끝
+    17.64s  user  발화 시작: Okay.
+    18.46s  user  발화 끝
+    19.10s  user  발화 시작: What’s the weather like there right now?
+    19.52s  agent 발화 끝
+    21.64s  <ret> 발화 (turn9 첫 프레임)
+    21.79s  agent 발화 시작: <ret> The weather at the zoo is twenty-four point four degre
+    21.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 24.4°C, humidity 65%, wind 8.0 km/h
+    21.96s  user  발화 끝
+    26.64s  user  발화 시작: Yeah.
+    27.18s  user  발화 끝
+    29.90s  agent 발화 끝
+    29.95s  user  발화 시작: [sigh] Sounds lovely.
+    32.07s  agent 발화 시작: It does, doesn’t it? A little sunshine can really lift the s
+    32.34s  user  발화 끝
+    35.91s  agent 발화 끝

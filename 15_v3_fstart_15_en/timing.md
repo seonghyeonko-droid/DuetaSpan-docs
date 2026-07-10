@@ -4,131 +4,161 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Henri",
+#     "name": "Leo",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "early 30s",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-04",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-11-29",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-16",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-09-05",
+#       "date": "2026-06-27",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-05-27",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-05-14",
+#       "category": "home",
+#       "text": "User's home address is 595 Pine Court."
+#     },
+#     {
+#       "date": "2026-04-17",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-03-20",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-01-03",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-27",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-24",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-17",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Please click the bold button withi | S2 Can you reserve a table for two th | S3 Okay, that sounds reasonable. I’m  | S4 Tell me more about Brew & Bites.
+# EXAMINER(FDB-v2) 단계: S1 I need to find a good grief counse | S2 I’m also trying to find a good res | S3 Are there any cafes near the couns | S4 …therapy do they specialize in?
 
-     0.00s  user  발화 시작: Please click the bold button within the editor iframe.
-     3.56s  <ret> 발화 (turn1 첫 프레임)
-     3.63s  agent 발화 시작: <ret> I’ve clicked the bold button within the editor iframe 
-     3.64s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.60s]: (tool result) Clicked button with text 'Bold' within the iframe.
-     3.69s  user  발화 끝
-     6.13s  user  발화 시작: Yeah, yeah.
-     7.23s  agent 발화 끝
-     7.33s  user  발화 시작: That’s great, thank you. Can you find restaurants nearby tha
-     7.42s  user  발화 끝
-    11.81s  <ret> 발화 (turn4 첫 프레임)
-    12.05s  agent 발화 시작: <ret> I found five restaurants open now nearby—Pizza Palace,
-    12.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) Found 5 restaurants open now near your location: 'Pizza 
-    12.05s  user  발화 끝
-    17.95s  user  발화 시작: Yeah.
-    18.76s  user  발화 끝
-    20.25s  agent 발화 끝
-    20.26s  agent 발화 시작: They all have good ratings, and are within a short distance.
-    22.18s  user  발화 시작: Mm-hmm.
-    22.86s  user  발화 끝
-    23.73s  agent 발화 끝
-    23.74s  user  발화 시작: What’s the address for Thai Delight?
-    25.92s  <ret> 발화 (turn9 첫 프레임)
-    26.16s  agent 발화 시작: <ret> Thai Delight is at 123 Maple Street, in Anytown.
-    26.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.88s]: (tool result) Thai Delight is located at 123 Maple Street, Anytown.
-    26.33s  user  발화 끝
-    30.05s  agent 발화 끝
-    30.88s  user  발화 시작: Can you reserve a table for two there at 7:30 PM tonight?
-    35.90s  <ret> 발화 (turn11 첫 프레임)
-    36.14s  agent 발화 시작: <ret> I’ve reserved a table for two at Thai Delight at 7:30 
-    36.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Reservation confirmed at Thai Delight for 2 people at 7:
-    36.25s  user  발화 끝
-    43.88s  agent 발화 끝
-    45.02s  user  발화 시작: Fantastic! Is there parking available nearby?
-    48.52s  <ret> 발화 (turn13 첫 프레임)
-    48.84s  agent 발화 시작: <ret> There are three parking options nearby—Maple Street Pa
-    48.84s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.48s]: (tool result) Found 3 parking lots near 123 Maple Street, Anytown: 'Ma
-    48.86s  user  발화 끝
-    50.84s  user  발화 시작: Yeah.
-    51.33s  user  발화 끝
-    55.32s  agent 발화 끝
-    56.09s  user  발화 시작: How much does it cost to park at Maple Street Parking?
-    59.28s  <ret> 발화 (turn16 첫 프레임)
-    59.44s  agent 발화 시작: <ret> Maple Street Parking is five dollars per hour, with a 
-    59.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Maple Street Parking charges $5 per hour, with a daily m
-    59.66s  user  발화 끝
-    64.47s  user  발화 시작: Okay, that sounds reasonable. I’m also looking for a good co
-    64.58s  agent 발화 끝
-    69.61s  user  발화 끝
-    70.05s  agent 발화 시작: I can certainly help with that—
-    71.06s  user  발화 시작: …actually, before we move on, what's the weather like there 
-    71.69s  agent 발화 끝
-    74.80s  <ret> 발화 (turn20 첫 프레임)
-    75.04s  agent 발화 시작: <ret> It's currently twenty-two degrees Celsius and sunny in
-    75.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) The weather in Anytown is currently 22.0°C, humidity 68%
-    75.22s  user  발화 끝
-    80.61s  user  발화 시작: That's lovely. Okay, back to the coffee shop.
-    80.64s  agent 발화 끝
-    83.44s  <ret> 발화 (turn22 첫 프레임)
-    83.84s  agent 발화 시작: <ret> I found two coffee shops nearby—Brew & Bites and Coffe
-    83.84s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.07s]: (tool result) Found 2 coffee shops near 123 Maple Street, Anytown: 'Br
-    83.99s  user  발화 끝
-    87.92s  agent 발화 끝
-    88.05s  user  발화 시작: Tell me more about Brew & Bites.
-    90.01s  <ret> 발화 (turn24 첫 프레임)
-    90.17s  agent 발화 시작: <ret> Brew & Bites serves coffee, pastries, and light lunche
-    90.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Brew & Bites offers specialty coffee, pastries, and ligh
-    90.30s  user  발화 끝
-    96.89s  agent 발화 끝
-    99.24s  user  발화 시작: Sounds perfect. I think that's all for now.
-   102.19s  user  발화 끝
-   102.20s  agent 발화 시작: Settling into a new city can be exciting—I’m glad I could he
-   108.03s  agent 발화 끝
+     0.00s  user  발화 시작: I need to find a good grief counselor in Seoul.
+     3.19s  <ret> 발화 (turn1 첫 프레임)
+     3.27s  agent 발화 시작: <ret> It sounds like you’re going through a difficult time. 
+     3.27s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.27s]: Sien Counseling offers grief support services in Seoul, specializing i
+     3.28s  user  발화 끝
+    12.38s  user  발화 시작: Do they take insurance?
+    12.54s  agent 발화 끝
+    13.96s  <ret> 발화 (turn3 첫 프레임)
+    14.20s  agent 발화 시작: <ret> Yes, they do accept several Korean insurance plans – S
+    14.20s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.09s]: Sien Counseling accepts major Korean health insurance plans, including
+    14.21s  user  발화 끝
+    18.20s  user  발화 시작: Uh-huh.
+    18.69s  user  발화 끝
+    21.28s  agent 발화 끝
+    21.30s  user  발화 시작: Okay, good. Uhm, what are their hours?
+    24.15s  <ret> 발화 (turn6 첫 프레임)
+    24.39s  agent 발화 시작: <ret> Their office is open Monday to Friday, nine in the mor
+    24.39s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.67s]: Sien Counseling is open Monday through Friday, from 9:00 AM to 6:00 PM
+    24.53s  user  발화 끝
+    31.06s  agent 발화 끝
+    31.91s  user  발화 시작: And can I book an appointment online?
+    34.75s  <ret> 발화 (turn8 첫 프레임)
+    34.98s  agent 발화 시작: <ret> I’ve booked an appointment for you on July twenty-four
+    34.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) Appointment booked for July 24, 2026 at 2:00 PM. Confirm
+    35.09s  user  발화 끝
+    42.77s  agent 발화 끝
+    43.78s  user  발화 시작: Perfect! That's a relief.
+    45.85s  user  발화 끝
+    45.99s  agent 발화 시작: It’s wonderful to hear you feel a bit more at ease. Taking t
+    52.15s  agent 발화 끝
+    53.56s  user  발화 시작: I’m also trying to find a good restaurant nearby.
+    56.83s  <ret> 발화 (turn12 첫 프레임)
+    57.21s  user  발화 끝
+    57.23s  agent 발화 시작: <ret> There’s Myeongdong Kyoja nearby, a very popular Korean
+    57.23s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.49s]: Myeongdong Kyoja is a highly-rated Korean restaurant near Sien Counsel
+    63.66s  user  발화 시작: Kyoja… is that expensive?
+    63.73s  agent 발화 끝
+    66.28s  <ret> 발화 (turn14 첫 프레임)
+    66.44s  agent 발화 시작: <ret> Meals there generally cost between twelve thousand and
+    66.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: Myeongdong Kyoja’s average meal cost is around 12,000 to 15,000 Korean
+    66.61s  user  발화 끝
+    73.02s  agent 발화 끝
+    74.08s  user  발화 시작: That sounds good. What’s the weather like in Seoul today?
+    77.11s  <ret> 발화 (turn16 첫 프레임)
+    77.50s  agent 발화 시작: <ret> It's twenty-eight point five degrees Celsius in Seoul,
+    77.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) 28.5°C, humidity 68%, wind 7.2 km/h.
+    77.64s  user  발화 끝
+    80.28s  user  발화 시작: Okay.
+    80.91s  user  발화 끝
+    85.94s  agent 발화 끝
+    86.65s  user  발화 시작: Hmm. I think I need a coffee first.
+    89.04s  user  발화 끝
+    89.16s  agent 발화 시작: Sometimes a little comfort is exactly what we need before ta
+    93.45s  agent 발화 끝
+    93.81s  user  발화 시작: Are there any cafes near the counseling center?
+    96.98s  <ret> 발화 (turn21 첫 프레임)
+    97.03s  user  발화 끝
+    97.13s  agent 발화 시작: <ret> There’s a Starbucks just a five-minute walk away, at s
+    97.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: There's a Starbucks located within a five-minute walk of Sien Counseli
+   103.75s  agent 발화 끝
+   103.88s  user  발화 시작: Can you get me directions?
+   105.16s  <ret> 발화 (turn23 첫 프레임)
+   105.39s  agent 발화 시작: <ret> Head east on Chungmuro for three hundred meters, then 
+   105.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.08s]: (tool result) Walking directions: Head east on Chungmuro for 300m, the
+   105.48s  user  발화 끝
+   110.22s  user  발화 시작: Uh-huh.
+   110.95s  user  발화 끝
+   112.48s  agent 발화 끝
+   112.97s  user  발화 시작: That sounds easy enough. Do they have Wi-Fi?
+   115.71s  <ret> 발화 (turn26 첫 프레임)
+   116.11s  agent 발화 시작: <ret> Yes, Starbucks does offer free Wi-Fi for all its custo
+   116.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: Starbucks at 68-1 Chungmuro 3(sam)-ga, Jung-gu, Seoul offers free Wi-F
+   116.12s  user  발화 끝
+   118.00s  user  발화 시작: Mhm.
+   118.63s  user  발화 끝
+   121.76s  agent 발화 끝
+   122.32s  user  발화 시작: I was wondering, do you.
+   124.14s  agent 발화 시작: It's perfectly normal to feel a little overwhelmed when faci
+   124.26s  user  발화 끝
+   128.59s  user  발화 시작: …actually, what kind of…
+   128.72s  agent 발화 끝
+   130.99s  user  발화 끝
+   132.93s  user  발화 시작: …therapy do they specialize in?
+   135.22s  user  발화 끝
+   135.26s  agent 발화 시작: Sien Counseling uses cognitive behavioral therapy and accept
+   142.99s  agent 발화 끝
+   143.62s  user  발화 시작: CBT and ACT… okay. That sounds promising.
+   148.28s  user  발화 끝
+   148.42s  agent 발화 시작: Those approaches can be very helpful for learning coping mec
+   149.99s  user  발화 시작: Mm-hmm.
+   150.63s  user  발화 끝
+   151.83s  user  발화 시작: I’m thinking about my grandmother, and…
+   152.22s  agent 발화 끝
+   154.74s  user  발화 끝
+   154.90s  agent 발화 시작: It’s okay to allow yourself to feel those emotions, and to r
+   161.84s  user  발화 시작: I just… I miss her cooking.
+   162.18s  agent 발화 끝
+   164.23s  agent 발화 시작: Food often holds such strong memories, doesn't it? It’s a lo
+   164.43s  user  발화 끝
+   170.21s  agent 발화 끝

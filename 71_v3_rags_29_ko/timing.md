@@ -4,69 +4,64 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "성온",
+#     "name": "도준",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-25",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-06-24",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-12",
+#       "date": "2026-05-09",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-01-10",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-02-03",
+#       "date": "2025-11-04",
 #       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User's home address is 부산 수영구 광안동 210-3."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-30",
-#       "title": "Researching a used car",
+#       "date": "2025-11-11",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-17",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-06-10",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 크레이터 레이크 화산이 마지막으로 분화한 게 언제였지?
-     3.62s  <ret> 발화 (turn1 첫 프레임)
-     3.75s  user  발화 끝
-     3.78s  agent 발화 시작: <ret> 크레이터 레이크 화산이 마지막으로 분화한 건 대략 사천팔백년 전이라고 하네요.
-     3.78s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.17s]: The last eruption of Crater Lake volcano occurred approximately 4,800 
-     7.95s  agent 발화 끝
+     0.00s  user  발화 시작: 스타워즈에 나오는 데이지 리들리가 누구야?
+     3.33s  user  발화 끝
+     3.48s  <ret> 발화 (turn1 첫 프레임)
+     3.64s  agent 발화 시작: <ret> 데이지 리들리는 스타워즈 후속 삼부작에서 레이 역할을 맡아 이름을 알린 영국 배우입니다. 혹시 다
+     3.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.66s]: Daisy Ridley is an English actress who rose to prominence for playing 
+    12.30s  agent 발화 끝

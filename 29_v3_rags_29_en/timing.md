@@ -4,82 +4,82 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Clara",
+#     "name": "Lukas",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-25",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-02-12",
+#       "date": "2026-06-24",
 #       "category": "work",
 #       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
-#     },
-#     {
-#       "date": "2026-01-02",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "home",
-#       "text": "User's home address is 316 Birch Road."
-#     },
-#     {
-#       "date": "2025-09-25",
+#       "date": "2026-06-18",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-06-09",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-05-09",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2026-01-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-25",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-20",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-28",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-06",
+#       "date": "2026-01-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-30",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did Crater Lake’s volcano last erupt, exactly?
-     3.74s  <ret> 발화 (turn1 첫 프레임)
-     3.74s  user  발화 끝
-     4.06s  agent 발화 시작: <ret> That volcano last erupted around 4,800 years ago. It's
-     4.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: The volcano that formed Crater Lake last erupted approximately 4,800 y
-    12.49s  agent 발화 끝
+     0.00s  user  발화 시작: Who played Rey in the Star Wars sequel trilogy?
+     2.94s  <ret> 발화 (turn1 첫 프레임)
+     2.96s  user  발화 끝
+     3.26s  agent 발화 시작: <ret> It was Daisy Ridley who brought Rey to life in those f
+     3.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: Daisy Ridley is an English actress who rose to prominence for playing 
+    12.11s  agent 발화 끝

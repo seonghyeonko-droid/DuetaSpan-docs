@@ -4,87 +4,90 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Casey",
+#     "name": "Dylan",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "British",
+#     "gender": "male",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-05-21",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-03-28",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-01-13",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2025-12-24",
+#       "date": "2025-12-12",
 #       "category": "home",
-#       "text": "User's home address is 755 Oak Avenue."
+#       "text": "User's home address is 36 Elm Street."
 #     },
 #     {
-#       "date": "2025-09-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "date": "2025-11-11",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-08",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-20",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-03-20",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-22",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-09",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Kliomi, quick question.… | S2 Oh, did you see that new cafe open | S3 Right, sorry about that. So, 2018… | S4 That's true. I'm trying to stay mo
+# EXAMINER(FDB-v2) 단계: S1 Hey, do you remember who played Se | S2 Before? Like, what kind of roles? | S3 …did he ever work with Clint Eastw | S4 That makes sense. Thanks for all t
 
-     0.00s  user  발화 시작: Hi Kliomi, quick question.…
-     2.12s  user  발화 끝
-     3.81s  user  발화 시작: …When was the last time Australia hosted the Commonwealth Ga
-     6.68s  <ret> 발화 (turn2 첫 프레임)
-     7.03s  user  발화 끝
-     7.06s  agent 발화 시작: <ret> Australia last hosted the Commonwealth Games in 2018, 
-     7.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: The 2018 Commonwealth Games were held on the Gold Coast in Queensland,
-    11.06s  user  발화 시작: Yeah.
-    11.74s  user  발화 끝
-    16.94s  user  발화 시작: Oh, did you see that new cafe opened down the street?
-    17.08s  agent 발화 끝
-    19.19s  user  발화 시작: Right, sorry about that. So, 2018… that’s fairly recent, isn
-    19.34s  user  발화 끝
-    23.80s  agent 발화 시작: Yes, 2018 is quite recent, and I think it shows Australia's 
-    23.87s  user  발화 끝
-    33.49s  agent 발화 끝
-    33.69s  user  발화 시작: That's true. I'm trying to stay motivated with my studies, a
-    38.94s  agent 발화 시작: I understand completely! Studying can be challenging, but yo
-    38.96s  user  발화 끝
-    48.59s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, do you remember who played Sergeant Schultz on Hogan's 
+     3.28s  <ret> 발화 (turn1 첫 프레임)
+     3.67s  agent 발화 시작: <ret> Oh, that’s a great question! John Banner played Sergea
+     3.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: John Banner played the role of Sergeant Hans Wilhelm Schultz on the te
+     3.75s  user  발화 끝
+    11.51s  user  발화 시작: Yeah, he really was. Um, what else did he do?
+    11.64s  agent 발화 끝
+    14.55s  user  발화 끝
+    14.64s  agent 발화 시작: Well, John Banner had a pretty extensive career before and a
+    19.97s  agent 발화 끝
+    20.09s  user  발화 시작: Before? Like, what kind of roles?
+    22.43s  <ret> 발화 (turn5 첫 프레임)
+    22.67s  agent 발화 시작: <ret> Before Hogan’s Heroes, he appeared in films like The S
+    22.67s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.01s]: Prior to Hogan's Heroes, John Banner appeared in films such as The Ste
+    22.82s  user  발화 끝
+    27.03s  user  발화 시작: …did he ever work with Clint Eastwood?
+    27.68s  agent 발화 끝
+    28.68s  <ret> 발화 (turn7 첫 프레임)
+    28.76s  agent 발화 시작: <ret> Actually, yes, he did! Both John Banner and Clint East
+    28.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.80s]: John Banner and Clint Eastwood both appeared in the 1962 film "The War
+    28.92s  user  발화 끝
+    32.76s  user  발화 시작: Mm-hmm.
+    33.16s  user  발화 끝
+    41.56s  agent 발화 끝
+    42.14s  user  발화 시작: Wow, small world! So, was he German in real life?
+    46.21s  <ret> 발화 (turn10 첫 프레임)
+    46.52s  agent 발화 시작: <ret> He was born in Vienna, Austria, and was actually of Au
+    46.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: John Banner was born in Vienna, Austria, and was of Austrian-Jewish de
+    46.68s  user  발화 끝
+    55.19s  user  발화 시작: That makes sense. Thanks for all the info, Laen!
+    55.70s  agent 발화 끝
+    58.10s  user  발화 끝
+    58.33s  agent 발화 시작: You're very welcome! I’m happy I could help you explore some
+    63.71s  agent 발화 끝

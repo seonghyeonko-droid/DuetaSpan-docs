@@ -4,61 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Dylan",
+#     "name": "Liam",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-20",
+#       "date": "2026-06-24",
+#       "category": "home",
+#       "text": "User's home address is 427 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-03-03",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-11-25",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-12-26",
+#       "date": "2025-11-11",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-10-25",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-09-08",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-06-25",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2025-06-07",
-#       "category": "home",
-#       "text": "User's home address is 770 Birch Road."
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-03",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-07",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Could you tell me who the members of the Three 6 Mafia are?
-     3.38s  <ret> 발화 (turn1 첫 프레임)
-     3.62s  agent 발화 시작: <ret> Well, Three 6 Mafia was formed by DJ Paul, Juicy J, Lo
-     3.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.28s]: Three 6 Mafia consisted of DJ Paul, Juicy J, Lord Infamous, Koopsta Kn
-     3.75s  user  발화 끝
-    12.90s  agent 발화 끝
+     0.00s  user  발화 시작: When did the Fitbit Aria 2 scale first become available?
+     4.25s  <ret> 발화 (turn1 첫 프레임)
+     4.49s  agent 발화 시작: <ret> It first became available in late 2017, offering more 
+     4.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: The Fitbit Aria 2 was first released in late 2017, offering improved a
+     4.63s  user  발화 끝
+    15.30s  agent 발화 끝

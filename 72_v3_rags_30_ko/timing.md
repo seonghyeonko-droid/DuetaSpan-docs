@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "윤슬",
+#     "name": "지호",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,53 +12,35 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-19",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-05-20",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-12-26",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-08",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-06-25",
+#       "date": "2026-04-24",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
+#       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2025-06-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-11-11",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-06-23",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-26",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2026-04-30",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -66,7 +48,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-08",
+#       "date": "2026-04-17",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-04",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -77,9 +67,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 삼 육 마피아 멤버가 누구누구야?
-     2.49s  <ret> 발화 (turn1 첫 프레임)
-     2.62s  agent 발화 시작: <ret> 삼 육 마피아 멤버로는 DJ 폴이 있습니다. 그는 멤피스 출신의 래퍼이자 프로듀서예요.
-     2.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: DJ Paul is an American rapper, DJ, and record producer from Memphis, T
-     2.72s  user  발화 끝
-     8.64s  agent 발화 끝
+     0.00s  user  발화 시작: 피트비트 아리아 이는 언제 나왔어?
+     2.33s  <ret> 발화 (turn1 첫 프레임)
+     2.45s  user  발화 끝
+     2.48s  agent 발화 시작: <ret> 피트비트 아리아 이는 이천십칠년 말에 출시되었답니다. 요즘 건강 관리에 관심이 많으시군요?
+     2.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: The Fitbit Aria 2 was released in late 2017.
+     8.96s  agent 발화 끝

@@ -1,10 +1,10 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Kler, a kind and steady life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Lunax, a warm and attentive counselor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Andrea",
+    "name": "Zoe",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,110 +12,71 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-01",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2026-01-06",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-10-30",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
-    },
-    {
-      "date": "2025-08-18",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-07-30",
-      "category": "home",
-      "text": "User's home address is 646 Birch Road."
-    },
-    {
-      "date": "2025-06-20",
+      "date": "2026-04-11",
       "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-04-02",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-04-01",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-01-07",
+      "category": "home",
+      "text": "User's home address is 388 Oak Avenue."
+    },
+    {
+      "date": "2025-12-05",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-23",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-12-11",
+      "date": "2026-04-27",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-08-11",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Andrea, I'm Kler. It's lovely to connect with you today.
-[  2.05s][user ] «backchannel» Yeah.
-[  4.19s][user ] Hi Kler, nice to meet you too. I need to figure out how long it'll take to get to my friend's place.
-[ 10.06s][moshi] ⟨ret@9.98s⟩ ⟦⚡SPAN@10.06s: [2025-07-30] User's home address is 646 Birch Road.⟧ Your home is at 646 Birch Road, so I can certainly help with that.
-[ 14.05s][user ] Great! It’s 280 Caledonia Road. Can you tell me how long that’ll take?
-[ 19.49s][moshi] ⟨ret@19.41s⟩ ⟦⚡SPAN@19.49s: (tool result) Driving directions from 646 Birch Road to 280 Caledonia Road: 18 minutes, 12.3 km.⟧ It looks like driving will take about eighteen minutes, covering 12.3 kilometers.
-      CALL: {"function": "map_directions", "arguments": {"origin": "646 Birch Road", "destination": "280 Caledonia Road", "mode": "driving"}}
-[ 21.64s][user ] «backchannel» Yeah.
-[ 24.48s][user ] Hmm, that’s not too bad. Is there ⟨ret@27.20s⟩ traffic?
-[ 27.42s][moshi] ⟦⚡SPAN@27.44s: (tool result) Current traffic conditions: moderate congestion, estimated travel time 23 minutes, 12.3 km.⟧ There's currently moderate congestion, so the trip will likely take twenty-three minutes.
-      CALL: {"function": "map_directions", "arguments": {"origin": "646 Birch Road", "destination": "280 Caledonia Road", "mode": "driving", "departure_time": "now"}}
-[ 33.27s][user ] Okay, good to know.
-[ 34.65s][moshi] Knowing what to expect can definitely ease some stress, Andrea.
-[ 36.89s][user ] «backchannel» Mm-hmm.
-[ 39.98s][user ] Yeah, definitely. What about taking the bus?
-[ 42.95s][moshi] ⟨ret@42.90s⟩ ⟦⚡SPAN@42.98s: (tool result) Public transit options: 42 minutes, 2 transfers.⟧ Taking public transit involves two transfers and will take approximately forty-two minutes.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "646 Birch Road", "destination": "280 Caledonia Road"}}
-[ 48.35s][user ] Wow, that’s a big difference. I think I’ll drive.
-[ 51.12s][moshi] Driving sounds like the more efficient choice for you in that case.
-[ 53.46s][user ] «backchannel» Yeah.
-[ 55.19s][user ] Is there parking near 280 Caledonia ⟨ret@58.46s⟩ Road?
-[ 58.76s][moshi] ⟦⚡SPAN@58.78s: (tool result) Several parking lots nearby: Green P Parking - Caledonia, $3.00/hour; Impark, $4.00/hour.⟧ There are a couple options nearby — Green P Parking on Caledonia is three dollars an hour, and Impark is four.
-      CALL: {"function": "map_search_places", "arguments": {"query": "parking near 280 Caledonia Road", "type": "parking"}}
-[ 61.91s][user ] «backchannel» Yeah.
-[ 66.70s][user ] Three dollars sounds good.
-[ 68.36s][moshi] Making practical choices like that can save you a bit, Andrea.
-[ 72.01s][user ] I'm meeting Sarah there. We're going to a Korean BBQ place.
-[ 76.12s][moshi] Oh, that sounds delicious!
-[ 79.03s][user ] I love Korean BBQ. It’s my favorite—
-[ 82.08s][user ] …Do you know if they take reservations?
-[ 84.22s][moshi] ⟨ret@84.14s⟩ It's a ⟦⚡SPAN@86.14s: (tool result) Han Dynasty Korean BBQ: accepts reservations, phone number 416-555-1212.⟧ great choice, and— Han Dynasty Korean BBQ near there does accept reservations; their number is 416-555-1212.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"query": "Korean BBQ near 280 Caledonia Road", "details": "reservations"}}
-[ 87.62s][user ] «backchannel» Uh-huh.
-[ 94.96s][moshi] It’s always wise to plan ahead, especially for popular spots.
-[ 96.38s][user ] «backchannel» Yeah.
-[100.31s][user ] I should probably call then. What time is it ⟨ret@103.37s⟩ now?
-[103.45s][moshi] ⟦⚡SPAN@103.45s: (tool result) It is Friday, July 10, 2026 at 4:52 PM in Toronto.⟧ It's currently 4:52 PM in Toronto on Friday, July 10th.
-      CALL: {"function": "get_time", "arguments": {}}
-[108.22s][user ] Thanks! I'll give them a call.
-[109.98s][moshi] Wonderful. I hope you enjoy your Korean BBQ with Sarah.
-[114.39s][user ] I think I will. You've been really helpful, Kler.
-[117.61s][moshi] It’s been my pleasure, Andrea. Have a lovely evening.
+[  0.00s][moshi] Hi Zoe, I’m Lunax. It’s lovely to connect with you today.
+[  3.57s][user ] Hi Lunax, good to meet you too. I need to get somewhere.
+[  7.43s][moshi] ⟨ret@7.36s⟩ ⟦⚡SPAN@7.44s: [2026-01-07] User's home address is 388 Oak Avenue.⟧ Your home address is 388 Oak Avenue, is that correct?
+[ 14.03s][user ] Yes, that’s right. I want to go to a café.
+[ 17.23s][moshi] Do you have a particular café in mind, Zoe?
+[ 18.65s][user ] «backchannel» Okay.
+[ 20.85s][user ] Not really, just somewhere not too ⟨ret@23.02s⟩ far.
+[ 23.42s][moshi] ⟦⚡SPAN@23.42s: (tool result) Restaurants found: Aroma Espresso Bar - 1.2km, Balzac's Coffee Roasters - 1.8km, Second Cup - 2.⟧ There are a few options nearby. Aroma Espresso Bar is just 1.2 kilometers away.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 25.90s][user ] «backchannel» Mhm.
+[ 29.53s][user ] That sounds good, can you give ⟨ret@31.61s⟩ me directions?
+[ 32.00s][moshi] ⟦⚡SPAN@32.01s: (tool result) Driving: 5 min (1.5km); Walking: 15 min (1.2km); Transit: 8 min.⟧ Aroma Espresso Bar is 1.5 kilometers by car, about a 5-minute drive.
+      CALL: {"function": "map_directions", "arguments": {"origin": "388 Oak Avenue", "destination": "Aroma Espresso Bar"}}
+[ 37.32s][user ] Actually, I think I’ll walk.
+[ 39.71s][moshi] «interrupted» Walking will take approximately 15 minutes, covering 1.2 kilometers—
+[ 44.72s][user ] «interrupts_prev» …is there anything interesting along the way?
+[ 47.52s][moshi] There's a lovely little park, Grange Park, about halfway there.
+[ 49.44s][user ] «backchannel» Mhm.
+[ 51.60s][user ] Oh, that sounds nice. How far is it from ⟨ret@54.27s⟩ my house?
+[ 54.59s][moshi] ⟦⚡SPAN@54.59s: (tool result) 1.0 km, approximately 12 minutes walking.⟧ Grange Park is about 1.0 kilometer from your home, a 12-minute walk.
+      CALL: {"function": "map_distance", "arguments": {"origin": "388 Oak Avenue", "destination": "Grange Park"}}
+[ 57.05s][user ] «backchannel» Oh.
+[ 60.75s][user ] Great, that's good to know. Thanks, Lunax.
+[ 63.41s][moshi] You're very welcome, Zoe. Enjoy your walk and your coffee. I hope it brightens your day.

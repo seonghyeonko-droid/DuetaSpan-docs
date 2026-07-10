@@ -4,105 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "세준",
+#     "name": "유원",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "female",
 #     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-04-21",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-03-22",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
-#     },
-#     {
-#       "date": "2025-11-09",
+#       "date": "2026-04-12",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-09-07",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-03-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2025-05-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-10-08",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-07-18",
+#       "category": "home",
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-09",
-#       "title": "Researching a used car",
+#       "date": "2026-06-08",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-05",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-11",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 프레님. 지금 시각이 어떻게 돼요? | S2 그럼 혹시 다음 주 화요일에 비행기표 예매하려고 하는데, 통로 | S3 좋네요. 그럼 예매해 주세요. | S4 잘 챙겨주셔서 고맙습니다.
+# EXAMINER(FDB-v2) 단계: S1 어, 안녕하세요. 잘 부탁드립니다. | S2 아, 맞아요! 그때 얘기했었죠. 혹시 그때 제가 뭘 더 말씀드 | S3 …혹시 그때 숙소 쪽으로 뭔가 물어봤었나요? | S4 오, 괜찮네요. 감사합니다.
 
-     0.00s  agent 발화 시작: 안녕하세요, 세준님. 저는 수면과 휴식을 도와드리는 에이전트 프레입니다.
-     2.49s  user  발화 시작: 네.
-     3.08s  user  발화 끝
-     4.71s  agent 발화 끝
-     4.86s  user  발화 시작: 안녕하세요, 프레님. 지금 시각이 어떻게 돼요?
-     7.70s  <ret> 발화 (turn3 첫 프레임)
-     7.78s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분입니다. 서울 시간 기준이에요.
-     7.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-     7.95s  user  발화 끝
-    13.57s  agent 발화 끝
-    13.75s  user  발화 시작: 아, 그러네요. 혹시 제가 이천이십오년 오월 이십팔일에 좌석 선호도에 대해 말씀드렸었나요?
-    19.32s  <ret> 발화 (turn5 첫 프레임)
-    19.55s  agent 발화 시작: <ret> 네, 이천이십오년 오월 이십팔일에 여행할 때 통로 쪽 좌석을 선호하신다고 말씀하셨어요.
-    19.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: [2025-05-28] User prefers an aisle seat when traveling.
-    19.57s  user  발화 끝
-    21.68s  user  발화 시작: 네.
-    22.22s  user  발화 끝
-    25.15s  agent 발화 끝
-    25.24s  user  발화 시작: 그럼 혹시 다음 주 화요일에 비행기표 예매하려고 하는데, 통로 좌석으로 알아봐 주실 수 있을까요?
-    30.44s  <ret> 발화 (turn8 첫 프레임)
-    30.68s  agent 발화 시작: <ret> 다음 주 화요일, 칠월 십오일 서울에서 제주로 가는 편도 항공권이 팔만 오천 원에 있고, 통로 좌
-    30.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) One-way flight from Seoul (ICN) to Jeju (CJU) on July 15
-    30.84s  user  발화 끝
-    32.93s  user  발화 시작: 맞아요.
-    33.74s  user  발화 끝
-    37.45s  agent 발화 끝
-    37.69s  user  발화 시작: 좋네요. 그럼 예매해 주세요.
-    39.48s  <ret> 발화 (turn11 첫 프레임)
-    39.56s  agent 발화 시작: <ret> 네, 칠월 십오일 서울에서 제주로 가는 편도 항공권, 통로 좌석으로 예약 완료되었습니다. 확인 번
-    39.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: (tool result) One-way flight from Seoul (ICN) to Jeju (CJU) on July 15
-    39.80s  user  발화 끝
-    47.76s  agent 발화 끝
-    47.82s  user  발화 시작: 감사합니다. 혹시 제가 채식주의자라는 것도 기억하고 계시죠?
-    51.62s  <ret> 발화 (turn13 첫 프레임)
-    51.69s  agent 발화 시작: <ret> 네, 세준님은 채식주의자이신 걸 기억하고 있습니다.
-    51.70s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.95s]: [2025-09-07] User is vegan.
-    51.94s  user  발화 끝
-    53.65s  user  발화 시작: 그렇죠.
-    54.47s  user  발화 끝
-    54.64s  agent 발화 끝
-    56.21s  user  발화 시작: 잘 챙겨주셔서 고맙습니다.
-    58.10s  user  발화 끝
-    58.14s  agent 발화 시작: 언제든지 편하게 말씀해 주세요. 세준님의 편안한 휴식을 응원합니다.
-    62.31s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 유원님. 저는 여행 계획과 휴식에 도움을 드리는 에이전트 제이미예요.
+     4.49s  agent 발화 끝
+     4.98s  user  발화 시작: 어, 안녕하세요. 잘 부탁드립니다.
+     7.19s  <ret> 발화 (turn2 첫 프레임)
+     7.27s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 십칠분입니다. 부산 시간 기준으로요. 혹시 오늘 
+     7.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+     7.33s  user  발화 끝
+    16.21s  agent 발화 끝
+    16.74s  user  발화 시작: 네, 그런데 갑자기 팔월에 교토 여행 계획이 생각나서요.
+    20.11s  <ret> 발화 (turn4 첫 프레임)
+    20.34s  agent 발화 시작: <ret> 교토 여행 계획이 있으시군요.
+    20.35s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.79s]: [2026-03-12] User is planning a trip to Kyoto in August.
+    20.44s  user  발화 끝
+    22.11s  agent 발화 시작: 팔월에 교토 여행을 계획하고 계신다는 말씀을 전에 해주셨어요.
+    22.14s  agent 발화 끝
+    25.35s  agent 발화 끝
+    25.87s  user  발화 시작: 아, 맞아요! 그때 얘기했었죠. 혹시 그때 제가 뭘 더 말씀드렸었나요?
+    30.43s  agent 발화 시작: 잠시만요, 확인해 보겠습니다—
+    30.59s  user  발화 끝
+    31.46s  user  발화 시작: …혹시 그때 숙소 쪽으로 뭔가 물어봤었나요?
+    32.03s  agent 발화 끝
+    34.23s  agent 발화 시작: 네, 숙소에 대해 좀 더 자세히 알아보고 싶으셨던 것 같아요.
+    34.28s  user  발화 끝
+    36.81s  agent 발화 끝
+    36.84s  agent 발화 시작: 숙소에 대한 정보를 더 찾아드릴까요? 팔월 교토 여행 숙소에 대해 알아보시겠어요?
+    39.88s  user  발화 시작: 정말요?
+    40.70s  user  발화 끝
+    41.40s  user  발화 시작: 네, 부탁드려요. 좀 조용하고, 전통적인 느낌의 료칸이면 좋겠어요.
+    41.47s  agent 발화 끝
+    45.30s  <ret> 발화 (turn13 첫 프레임)
+    45.69s  agent 발화 시작: <ret> 교토 그란벨 호텔이 료칸 스타일이고, 조용하고, 전통적인 느낌을 주는데, 일박에 일만 오천 엔 정
+    45.70s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.86s]: (tool result) Kyoto Granbell Hotel — ryokan, quiet, traditional: 15000
+    45.80s  user  발화 끝
+    52.55s  agent 발화 끝
+    52.60s  user  발화 시작: 오, 괜찮네요. 감사합니다.
+    54.68s  user  발화 끝

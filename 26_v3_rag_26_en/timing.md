@@ -4,112 +4,83 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Louis",
+#     "name": "Oliver",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "German",
 #     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "40s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
-#     },
-#     {
-#       "date": "2025-12-17",
+#       "date": "2025-12-28",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-11-28",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-08-27",
-#       "category": "home",
-#       "text": "User's home address is 456 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-06-14",
+#       "date": "2025-11-06",
 #       "category": "pet",
 #       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-09-26",
+#       "category": "home",
+#       "text": "User's home address is 208 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-26",
-#       "title": "Setting up a home network",
+#       "date": "2025-12-19",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Heas, I was wondering about ato | S2 Hmm, well, I’m also trying to plan | S3 I think I'm starting to get it. Oh | S4 That’s true. I’ll try to remember 
+# EXAMINER(FDB-v2) 단계: S1 I’m still getting used to things h | S2 Oh, wow, that recent! I always ass | S3 Speaking of weather… | S4 That sounds lovely. I think I will
 
-     0.00s  user  발화 시작: Hi Heas, I was wondering about atomic structure.
-     3.61s  user  발화 끝
-     3.62s  agent 발화 시작: It's a fascinating topic, isn't it? Atoms are the building b
-     8.57s  user  발화 시작: Yeah, I'm trying to figure out electron shells. How many ele
-     8.67s  agent 발화 끝
-    14.33s  <ret> 발화 (turn3 첫 프레임)
-    14.41s  user  발화 끝
-    14.56s  agent 발화 시작: <ret> The third energy level can hold up to eighteen electro
-    14.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: The third electron shell of an atom can hold a maximum of eighteen ele
-    19.79s  user  발화 시작: Eighteen… that seems like a lot. Is that a hard limit?
-    20.35s  agent 발화 끝
-    23.91s  user  발화 끝
-    24.10s  agent 발화 시작: It is a hard limit, dictated by quantum mechanics. Each shel
-    27.42s  user  발화 시작: Yeah.
-    28.05s  user  발화 끝
-    29.56s  agent 발화 끝
-    29.65s  user  발화 시작: Hmm, well, I’m also trying to plan a weekend trip. Do you kn
-    36.03s  <ret> 발화 (turn8 첫 프레임)
-    36.35s  agent 발화 시작: <ret> The weather in Busan is currently 26.2°C, with 68% hum
-    36.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: (tool result) The current weather in Busan is 26.2°C, humidity 68%, wi
-    36.42s  user  발화 끝
-    45.44s  agent 발화 끝
-    45.53s  user  발화 시작: That *does* sound nice. Okay, back to electrons. What determ
-    52.17s  agent 발화 시작: The limits are determined by the number of orbitals within e
-    52.29s  user  발화 끝
-    58.22s  user  발화 시작: Orbitals… so it's not just a random number?
-    58.28s  agent 발화 끝
-    61.41s  agent 발화 시작: Not at all. It’s a consequence of the wave-like properties o
-    61.55s  user  발화 끝
-    66.69s  agent 발화 끝
-    67.94s  user  발화 시작: I think I'm starting to get it. Oh, uh, my friend Sarah just
-    73.69s  user  발화 끝
-    75.64s  user  발화 시작: …she’s having trouble with her boyfriend, again.
-    78.60s  agent 발화 시작: That sounds difficult for her. Friendships can be really cha
-    78.77s  user  발화 끝
-    83.46s  agent 발화 끝
-    84.35s  user  발화 시작: It is. I always feel so helpless when she goes through this.
-    89.74s  agent 발화 시작: Sometimes, simply listening without judgment is the most hel
-    89.90s  user  발화 끝
-    93.54s  user  발화 시작: Wow.
-    94.36s  user  발화 끝
-    95.39s  agent 발화 끝
-    95.53s  user  발화 시작: That’s true. I’ll try to remember that. Hey, do you know whe
-   102.41s  <ret> 발화 (turn20 첫 프레임)
-   102.73s  agent 발화 시작: <ret> The Busan International Film Festival is scheduled for
-   102.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: (tool result) The Busan International Film Festival will be held from 
-   102.89s  user  발화 끝
-   110.85s  user  발화 시작: Wow, that’s perfect timing! Thanks, Heas.
-   111.08s  agent 발화 끝
-   114.02s  agent 발화 시작: You're very welcome. I'm glad I could help with both your sc
-   114.23s  user  발화 끝
-   119.62s  agent 발화 끝
-   120.15s  user  발화 시작: You're a lifesaver. I really appreciate it.
-   123.17s  agent 발화 시작: It's my pleasure. Remember, a good friend is a wonderful thi
-   123.34s  user  발화 끝
-   127.33s  agent 발화 끝
+     0.00s  user  발화 시작: I’m still getting used to things here… it’s a bit overwhelmi
+     4.03s  user  발화 끝
+     4.05s  agent 발화 시작: Adjusting takes time, and it’s perfectly alright to feel ove
+     7.34s  user  발화 시작: Okay.
+     8.30s  user  발화 끝
+    11.33s  agent 발화 끝
+    13.45s  user  발화 시작: I was reading something online, and it made me wonder… when 
+    21.13s  <ret> 발화 (turn4 첫 프레임)
+    21.28s  user  발화 끝
+    21.36s  agent 발화 시작: <ret> The updated way we measure wind chill—developed by res
+    21.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: The new wind chill formula, developed by researchers in the United Sta
+    25.21s  user  발화 시작: Right.
+    25.84s  user  발화 끝
+    28.46s  user  발화 시작: Oh, wow, that recent! I always assumed it was much older.
+    29.05s  agent 발화 끝
+    32.90s  user  발화 끝
+    33.07s  agent 발화 시작: It’s easy to assume things have always been a certain way, i
+    37.00s  user  발화 시작: Yeah.
+    37.50s  user  발화 끝
+    40.16s  agent 발화 끝
+    40.17s  user  발화 시작: Speaking of weather…
+    41.73s  user  발화 끝
+    43.76s  user  발화 시작: …what’s it like outside right now?
+    45.56s  <ret> 발화 (turn11 첫 프레임)
+    45.88s  agent 발화 시작: <ret> It’s currently 24 degrees Celsius with 68 percent humi
+    45.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h
+    46.07s  user  발화 끝
+    55.70s  user  발화 시작: That sounds lovely. I think I will.
+    55.90s  agent 발화 끝
+    58.30s  agent 발화 시작: That’s wonderful. Taking time for yourself—even a short walk
+    58.42s  user  발화 끝
+    63.86s  agent 발화 끝

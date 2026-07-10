@@ -4,81 +4,83 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Robin",
+#     "name": "Elsa",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-09",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-02-06",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-12-26",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2025-09-10",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-10-22",
+#       "date": "2025-08-01",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-09-09",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-07-18",
-#       "category": "home",
-#       "text": "User's home address is 401 Pine Court."
+#       "date": "2025-06-01",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-18",
-#       "title": "Researching a used car",
+#       "date": "2025-08-06",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-02",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’m just feeling so stuck lately,  | S2 It feels like everything I start j | S3 I’ve tried journaling, but it feel | S4 So, it’s less about the writing, a
 
-     0.00s  agent 발화 시작: Hello Robin, it’s lovely to connect with you.
-     1.28s  user  발화 시작: Uh-huh.
-     1.78s  user  발화 끝
-     3.31s  user  발화 시작: Hmm, Frir… that’s a pretty unusual name. Is it… Scandinavian
-     3.42s  agent 발화 끝
-    10.44s  user  발화 끝
-    10.48s  agent 발화 시작: It is, actually! It’s an old Norse name meaning ‘peaceful.’ 
-    18.30s  user  발화 시작: Mhm.
-    18.75s  user  발화 끝
-    21.42s  agent 발화 끝
-    21.72s  user  발화 시작: Well, I’ve been really struggling to get started on projects
-    28.43s  agent 발화 시작: That’s incredibly common, Robin. It sounds like you're facin
-    28.53s  user  발화 끝
-    38.58s  agent 발화 끝
-    38.69s  user  발화 시작: Yeah, exactly! It’s like I get paralyzed by all the steps. I
-    43.94s  agent 발화 시작: It’s easy to get overwhelmed when looking at the whole pictu
-    43.97s  user  발화 끝
-    57.02s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Elsa, it’s lovely to connect with you. My name is Brio
+     8.06s  agent 발화 끝
+     9.17s  user  발화 시작: I’m just feeling so stuck lately, with my writing.
+    12.37s  user  발화 끝
+    12.61s  agent 발화 시작: It’s understandable to feel that way, Elsa. Creative blocks 
+    20.48s  user  발화 시작: Yeah.
+    21.01s  user  발화 끝
+    22.86s  user  발화 시작: …is that something you see a lot with writers?
+    22.90s  agent 발화 끝
+    25.66s  agent 발화 시작: Yes, I do. It's incredibly common—
+    25.82s  user  발화 끝
+    27.56s  user  발화 시작: It feels like everything I start just… fizzles out. I have i
+    28.15s  agent 발화 끝
+    34.14s  user  발화 끝
+    34.25s  agent 발화 시작: That sense of things fizzling out is a signal, Elsa. Perhaps
+    40.77s  user  발화 시작: Yeah, yeah.
+    42.05s  user  발화 끝
+    44.56s  agent 발화 시작: Sometimes, releasing that pressure—allowing yourself to simp
+    44.72s  agent 발화 끝
+    53.38s  user  발화 시작: Yeah.
+    53.83s  user  발화 끝
+    56.40s  user  발화 시작: I’ve tried journaling, but it feels… self-indulgent. Like I’
+    56.62s  agent 발화 끝
+    60.97s  agent 발화 시작: It’s easy to fall into that trap, to feel your thoughts aren
+    60.98s  user  발화 끝
+    71.46s  user  발화 시작: Mm-hmm.
+    72.01s  user  발화 끝
+    75.02s  agent 발화 끝
+    75.30s  user  발화 시작: So, it’s less about the writing, and more about… the feeling
+    80.26s  user  발화 끝
+    80.66s  agent 발화 시작: Precisely. The writing is simply a tool to access the feelin
+    91.98s  agent 발화 끝

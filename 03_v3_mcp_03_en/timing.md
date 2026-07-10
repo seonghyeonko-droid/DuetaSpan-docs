@@ -4,103 +4,91 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_03",
-#     "name": "Nina",
+#     "name": "Caleb",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
+#       "date": "2025-11-17",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-10-30",
+#       "category": "home",
+#       "text": "User's home address is 565 Birch Road."
+#     },
+#     {
+#       "date": "2025-09-28",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "date": "2025-06-25",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-10-26",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-09-05",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-07-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-06-02",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-22",
-#       "title": "Researching a used car",
+#       "date": "2026-06-12",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-25",
+#       "date": "2026-05-18",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-08",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What's the biking distance from th | S2 That sounds pretty manageable. Cou | S3 Yes, please. Around 2 PM would be  | S4 Let's go with Suzhou Bike Rental, 
 
-     0.00s  user  발화 시작: What's the biking distance from the Suzhou Gardens to Pingji
-     3.54s  <ret> 발화 (turn1 첫 프레임)
-     3.93s  agent 발화 시작: <ret> The biking distance between the Suzhou Gardens and Pin
-     3.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) The biking distance from Suzhou Gardens to Pingjiang Roa
-     4.02s  user  발화 끝
-    10.41s  agent 발화 끝
-    10.49s  user  발화 시작: That sounds pretty manageable. Could you book me a bike rent
-    17.14s  agent 발화 시작: Booking a bike sounds like a great idea! To confirm, you'd l
-    17.25s  user  발화 끝
-    19.88s  user  발화 시작: Yeah.
-    20.52s  user  발화 끝
-    24.27s  agent 발화 끝
-    25.05s  user  발화 시작: Yes, please. Around 2 PM would be perfect.
-    27.84s  <ret> 발화 (turn6 첫 프레임)
-    27.91s  agent 발화 시작: <ret> I found a couple of options. Suzhou Bike Rental has st
-    27.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) There are several bike rentals available near Suzhou Gar
-    28.11s  user  발화 끝
-    32.70s  user  발화 시작: Yeah.
-    33.20s  user  발화 끝
-    36.44s  agent 발화 끝
-    36.56s  user  발화 시작: Let's go with Suzhou Bike Rental, the standard bike.
-    39.99s  <ret> 발화 (turn9 첫 프레임)
-    40.15s  agent 발화 시작: <ret> Wonderful! Your standard bike is reserved at Suzhou Bi
-    40.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.59s]: (tool result) Your standard bicycle rental at Suzhou Bike Rental is co
-    40.21s  user  발화 끝
-    49.74s  agent 발화 끝
+     0.00s  user  발화 시작: Are there any coffee shops nearby in Beijing?
+     2.34s  <ret> 발화 (turn1 첫 프레임)
+     2.74s  agent 발화 시작: <ret> There are a few coffee shops close by. Coffee Bean is 
+     2.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.82s]: (tool result) Coffee Bean & Tea Leaf — 3.1 km, Starbucks — 1.5 km, Pee
+     2.78s  user  발화 끝
+     7.82s  user  발화 시작: Mhm.
+     8.46s  user  발화 끝
+    10.56s  agent 발화 끝
+    11.28s  user  발화 시작: Hmm, how about something a little quieter?
+    14.30s  agent 발화 시작: Sometimes, finding a peaceful space is exactly what you need
+    14.32s  user  발화 끝
+    18.02s  user  발화 시작: Yeah.
+    18.66s  user  발화 끝
+    20.52s  agent 발화 끝
+    21.48s  user  발화 시작: Can you find me directions to the Starbucks?
+    23.63s  <ret> 발화 (turn7 첫 프레임)
+    24.01s  agent 발화 시작: <ret> To get to Starbucks, walk 1.2 kilometers, it will take
+    24.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Walk 1.2 km, approx. 17 minutes. Turn left onto…
+    24.07s  user  발화 끝
+    30.36s  agent 발화 끝

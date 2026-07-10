@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "Ethan",
+#     "name": "Theo",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in May."
-#     },
-#     {
-#       "date": "2026-04-29",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2026-01-13",
+#       "date": "2026-03-24",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-01-26",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "category": "home",
+#       "text": "User's home address is 991 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-07-08",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-10",
+#       "date": "2026-04-12",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -48,7 +53,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-04",
+#       "date": "2025-12-10",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-29",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,29 +71,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 When does the Louvre Museum open a | S2 …Is photography allowed inside? | S3 What’s the best way to get there f | S4 That sounds easy enough. Thanks, O
+# EXAMINER(FDB-v2) 단계: S1 Play What's Going On by Marvin Gay | S2 [sigh] It really is. | S3 Could you find me restaurants… | S4 …nearby that are open now?
 
-     0.00s  user  발화 시작: When does the Louvre Museum open and close?
-     2.33s  <ret> 발화 (turn1 첫 프레임)
-     2.56s  agent 발화 시작: <ret> The Louvre Museum is open from nine AM to six PM, Mond
-     2.57s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.72s]: (tool result) The Louvre Museum is open from 9:00 AM to 6:00 PM, Monda
-     2.72s  user  발화 끝
-     6.63s  user  발화 시작: …Is photography allowed inside?
-     7.28s  agent 발화 끝
-     8.54s  agent 발화 시작: Ah, a good question! Photography is generally allowed inside
-     8.84s  user  발화 끝
-    12.64s  user  발화 시작: Yeah.
-    13.32s  user  발화 끝
-    15.31s  agent 발화 끝
-    15.45s  agent 발화 시작: It’s wonderful you’re planning a visit. Thinking ahead like 
-    20.55s  agent 발화 끝
-    20.83s  user  발화 시작: What’s the best way to get there from the Eiffel Tower?
-    23.41s  <ret> 발화 (turn7 첫 프레임)
-    23.71s  agent 발화 시작: <ret> The quickest way is by RER C train, toward Versailles 
-    23.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: (tool result) The fastest route from the Eiffel Tower to the Louvre Mu
-    23.88s  user  발화 끝
-    30.87s  user  발화 시작: That sounds easy enough. Thanks, Orol.
-    31.64s  agent 발화 끝
-    33.33s  agent 발화 시작: You're very welcome. Remember, planning a route in advance c
-    33.45s  user  발화 끝
-    40.42s  agent 발화 끝
+     0.00s  user  발화 시작: Play What's Going On by Marvin Gaye.
+     2.16s  <ret> 발화 (turn1 첫 프레임)
+     2.40s  agent 발화 시작: <ret> Enjoy the music — it's a beautiful album.
+     2.40s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.40s]: (tool result) Playing "What's Going On" by Marvin Gaye.
+     2.49s  user  발화 끝
+     3.13s  user  발화 시작: Right.
+     3.86s  user  발화 끝
+     4.80s  agent 발화 끝
+     5.05s  user  발화 시작: What was Marvin Gaye’s birthdate?
+     6.82s  <ret> 발화 (turn4 첫 프레임)
+     7.21s  agent 발화 시작: <ret> He was born on April second, nineteen thirty-nine, in 
+     7.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Marvin Gaye was born Marvin Pentz Gay Jr. on April 2, 1939, in Washing
+     7.26s  user  발화 끝
+    13.47s  agent 발화 끝
+    13.48s  user  발화 시작: [sigh] It really is.
+    15.42s  user  발화 끝
+    15.56s  agent 발화 시작: Sometimes, allowing ourselves to simply *feel* the music can
+    20.42s  agent 발화 끝
+    21.03s  user  발화 시작: Could you find me restaurants…
+    22.68s  user  발화 끝
+    24.68s  user  발화 시작: …nearby that are open now?
+    26.06s  <ret> 발화 (turn9 첫 프레임)
+    26.21s  agent 발화 시작: <ret> There are three restaurants open now: The Corner Bistr
+    26.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) 3 restaurants found: The Corner Bistro, open until 10 PM
+    26.34s  user  발화 끝
+    32.79s  agent 발화 끝

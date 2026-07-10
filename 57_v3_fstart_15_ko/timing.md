@@ -4,125 +4,153 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "보원",
+#     "name": "수경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-04",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-11-29",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-16",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-09-05",
+#       "date": "2026-06-27",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-05-27",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-05-14",
+#       "category": "home",
+#       "text": "User's home address is 서울 용산구 이태원로 200."
+#     },
+#     {
+#       "date": "2026-04-17",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-03-20",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2026-01-03",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-27",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-23",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-17",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-21",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-30",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 새로운 도시에 정착하는 거, 진짜 막막하네요. | S2 음… 강남역 근처면 좋을 것 같아요. | S3 사진 보여주세요. | S4 앤트러사이트 커피 로스터스… 가볼 만하겠네요.
+# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때? | S2 그냥 아무거나 괜찮아. 최신 개봉작 중에서. | S3 … 이번 주말에 서울 근교로… | S4 북한산은 좀 멀 것 같은데.
 
-     0.00s  user  발화 시작: 음… 새로운 도시에 정착하는 거, 진짜 막막하네요.
-     3.33s  agent 발화 시작: 새로운 도시에서의 정착을 도와드릴 수 있어요. 어떤 점이 가장 걱정되세요?
-     3.56s  user  발화 끝
-     7.81s  user  발화 시작: 일단 집을 구하는 게…
-     7.91s  agent 발화 끝
-     9.93s  user  발화 끝
-    11.03s  user  발화 시작: …제일 큰 문제인 것 같아요.
-    12.35s  agent 발화 시작: 집을 구하는 건 중요한 첫걸음이죠. 혹시 선호하는 지역이 있으세요?
-    12.55s  user  발화 끝
-    16.66s  user  발화 시작: 음… 강남역 근처면 좋을 것 같아요.
-    16.70s  agent 발화 끝
-    18.70s  <ret> 발화 (turn6 첫 프레임)
-    19.09s  agent 발화 시작: <ret> 강남역 근처에 월세 백오십만 원에서 사백만 원 사이의 집이 십이채 있어요. 괜찮은 곳을 찾아드릴 
-    19.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: (tool result) Hotels_2 SearchHouse returned 12 houses near Gangnam Sta
-    19.20s  user  발화 끝
-    24.09s  user  발화 시작: 음.
-    24.48s  user  발화 끝
-    26.36s  agent 발화 끝
-    27.40s  user  발화 시작: 백오십만 원 정도면 괜찮을 것 같은데…
-    30.25s  user  발화 끝
-    30.62s  agent 발화 시작: 백오십만 원으로 가능한 집들을 더 자세히 알아볼까요?
-    33.76s  agent 발화 끝
-    33.79s  user  발화 시작: 네, 부탁드려요.
-    34.84s  <ret> 발화 (turn11 첫 프레임)
-    34.99s  agent 발화 시작: <ret> 강남역 근처에서 백오십만 원 이하의 집은 오채가 있어요. 테헤란로 구십구길에 있는 스튜디오 아파트
-    35.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.45s]: (tool result) Hotels_2 SearchHouse returned 5 houses near Gangnam Stat
-    35.16s  user  발화 끝
-    41.21s  user  발화 시작: 응.
-    41.51s  user  발화 끝
-    44.45s  agent 발화 끝
-    44.54s  user  발화 시작: 사진 보여주세요.
-    45.87s  agent 발화 시작: 지금 바로 사진을 보여드릴게요. 잠시만 기다려 주세요.
-    45.93s  user  발화 끝
-    49.30s  agent 발화 시작: 그 집은 역에서 도보로 십분 거리에 있고—
-    49.43s  agent 발화 끝
-    51.29s  user  발화 시작: …혹시 그 근처에 괜찮은 카페도 있을까요?
-    52.07s  agent 발화 끝
-    54.12s  <ret> 발화 (turn17 첫 프레임)
-    54.30s  user  발화 끝
-    54.43s  agent 발화 시작: <ret> 강남역 근처에 카페는 스물세곳이 있어요. 커피빈과 스타벅스도 있습니다. 어떤 스타일의 카페를 좋아
-    54.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) Restaurants_2 FindRestaurants returned 23 cafes near Gan
-    56.88s  user  발화 시작: 오.
-    57.66s  user  발화 끝
-    60.98s  agent 발화 시작: 조용하고 분위기 좋은 카페를 찾으시는 건가요?
-    61.06s  agent 발화 끝
-    63.94s  agent 발화 끝
-    64.72s  user  발화 시작: 네, 그런 곳이요.
-    65.57s  <ret> 발화 (turn21 첫 프레임)
-    65.89s  agent 발화 시작: <ret> 강남역 근처에 조용하고 아늑한 카페는 일곱곳이 있어요. 앤트러사이트 커피 로스터스도 있습니다. 거
-    65.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Restaurants_2 FindRestaurants returned 7 cafes near Gang
-    66.10s  user  발화 끝
-    73.43s  user  발화 시작: 앤트러사이트 커피 로스터스… 가볼 만하겠네요.
-    73.49s  agent 발화 끝
-    76.87s  agent 발화 시작: 네, 분위기가 정말 좋아요. 근처에 맛집도 많아요.
-    76.89s  user  발화 끝
-    79.99s  user  발화 시작: 맛집도 추천해 주세요.
-    80.11s  agent 발화 끝
-    81.65s  <ret> 발화 (turn25 첫 프레임)
-    81.73s  agent 발화 시작: <ret> 강남역 근처에는 한식당이 열다섯곳이 있어요. 교촌치킨과 비빔밥 스토리도 있습니다. 어떤 종류의 음
-    81.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Restaurants_2 FindRestaurants returned 15 Korean restaur
-    81.88s  user  발화 끝
-    90.11s  user  발화 시작: 음… 비빔밥이 좋겠네요.
-    90.25s  agent 발화 끝
-    91.80s  agent 발화 시작: 비빔밥 스토리는 평이 아주 좋답니다.
-    91.91s  user  발화 끝
-    93.91s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 날씨 어때?
+     0.88s  <ret> 발화 (turn1 첫 프레임)
+     0.96s  agent 발화 시작: <ret> 오늘 날씨는 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+     0.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: 23.0°C, humidity 74%, wind 5.5 km/h
+     1.20s  user  발화 끝
+     9.35s  agent 발화 끝
+     9.40s  user  발화 시작: 그럼 내일은 어때?
+    10.09s  <ret> 발화 (turn3 첫 프레임)
+    10.48s  agent 발화 시작: <ret> 내일은 섭씨 이십오도로 조금 더 따뜻하고, 습도는 육십팔%, 바람은 시속 칠킬로미터로 조금 더 강
+    10.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: 25.0°C, humidity 68%, wind 7.0 km/h
+    10.68s  user  발화 끝
+    15.12s  user  발화 시작: 음.
+    15.61s  user  발화 끝
+    19.66s  agent 발화 끝
+    20.29s  user  발화 시작: 이번 주말에 영화 보러 가고 싶은데, 상영 시간 좀 알아봐 줄래?
+    24.12s  <ret> 발화 (turn6 첫 프레임)
+    24.44s  agent 발화 시작: <ret> 오펜하이머 영화 상영 시간은 오후 두시, 다섯시 삼십분, 아홉시에 있어요.
+    24.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) Oppenheimer — 14:00, 17:30, 21:00
+    24.55s  user  발화 끝
+    29.39s  agent 발화 끝
+    30.68s  user  발화 시작: 오펜하이머… 음, 아니, 그냥 액션 영화 보고 싶어.
+    34.38s  user  발화 끝
+    34.69s  agent 발화 시작: 액션 영화를 찾으시는군요. 어떤 영화를 좋아하시나요?
+    37.81s  user  발화 시작: 그냥 아무거나 괜찮아. 최신 개봉작 중에서.
+    37.83s  agent 발화 끝
+    40.18s  <ret> 발화 (turn10 첫 프레임)
+    40.58s  agent 발화 시작: <ret> 미션 임파서블: 데드 레코닝 파트 원이 한시, 네시, 일곱시, 열시에 상영 중이에요.
+    40.58s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.46s]: (tool result) Mission: Impossible - Dead Reckoning Part One — 13:00, 1
+    40.77s  user  발화 끝
+    46.04s  agent 발화 끝
+    47.30s  user  발화 시작: 일곱시 표 예매해 줘.
+    48.57s  <ret> 발화 (turn12 첫 프레임)
+    48.88s  agent 발화 시작: <ret> 미션 임파서블 일곱시 표 예매 완료되었고, 확인 번호는 칠 사 구 이 팔 삼번입니다.
+    48.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) Confirmation ID: 749283
+    49.10s  user  발화 끝
+    56.23s  user  발화 시작: 고마워. — 혹시…
+    56.29s  agent 발화 끝
+    58.02s  user  발화 끝
+    59.60s  user  발화 시작: … 이번 주말에 서울 근교로…
+    61.87s  user  발화 끝
+    63.80s  user  발화 시작: …드라이브 갈 만한 곳 있어?
+    65.40s  agent 발화 시작: 서울 근교 드라이브 코스를 찾으시는군요. 어떤 분위기를 원하세요?
+    65.55s  user  발화 끝
+    66.78s  user  발화 시작: 그치.
+    67.42s  user  발화 끝
+    69.56s  agent 발화 끝
+    69.58s  agent 발화 시작: 조용하고 한적한 곳을 좋아하시는지, 아니면 활기차고 볼거리가 많은 곳을 선호하시는지 알려주시면 더 좋은 곳을
+    72.14s  user  발화 시작: 그치.
+    72.54s  user  발화 끝
+    77.26s  user  발화 시작: 음… 경치 좋은 곳으로.
+    77.36s  agent 발화 끝
+    78.58s  <ret> 발화 (turn21 첫 프레임)
+    78.90s  agent 발화 시작: <ret> 남이섬은 아름다운 경치를 자랑하는 섬이고, 북한산 국립공원은 하이킹 코스와 산 풍경이 멋진 곳이에
+    78.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: (tool result) Nami Island — Scenic island with beautiful views; Bukhan
+    79.01s  user  발화 끝
+    85.10s  agent 발화 끝
+    85.82s  user  발화 시작: 남이섬… 거긴 가봤어.
+    87.61s  user  발화 끝
+    87.61s  agent 발화 시작: 남이섬에 가보셨군요. 그럼 북한산 국립공원은 어떠세요? 등산도 즐기실 수 있고, 멋진 풍경을 감상하실 수 있
+    95.42s  user  발화 시작: 북한산은 좀 멀 것 같은데.
+    95.45s  agent 발화 끝
+    97.41s  user  발화 끝
+    97.61s  agent 발화 시작: 북한산이 조금 멀다고 느끼시는군요. 좀 더 가까운 곳을 알아볼까요?
+   100.40s  user  발화 시작: 음.
+   100.81s  user  발화 끝
+   101.64s  user  발화 시작: 응, 좀 더 가까운 곳으로.
+   101.82s  agent 발화 끝
+   102.90s  <ret> 발화 (turn28 첫 프레임)
+   103.21s  agent 발화 시작: <ret> 관악산은 가벼운 하이킹 코스와 멋진 경치를 즐길 수 있고, 서울숲은 넓은 공원으로 산책로와 정원이
+   103.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Mount Gwanak — Easy hiking trails and scenic views; Seou
+   103.39s  user  발화 끝
+   111.33s  agent 발화 끝
+   111.36s  user  발화 시작: 서울숲 좋아 보여.
+   112.86s  agent 발화 시작: 서울숲이 마음에 드시는군요. 편안하게 산책하기 좋은 곳이에요.
+   113.02s  user  발화 끝
+   116.75s  agent 발화 끝

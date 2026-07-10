@@ -4,88 +4,123 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Morgan",
+#     "name": "Ada",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
-#     },
-#     {
-#       "date": "2026-03-20",
+#       "date": "2026-04-16",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-10-01",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-02-22",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-08-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-05-29",
+#       "date": "2025-11-21",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-11-02",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-08-12",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-01",
+#       "category": "home",
+#       "text": "User's home address is 544 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-01",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to get my bearings here | S2 Hmm, I wonder if there are any int | S3 That sounds nice. Can I buy ticket | S4 Oh, okay. That's alright. Thanks, 
+# EXAMINER(FDB-v2) 단계: S1 Good afternoon. I’m feeling a litt | S2 Um, what’s the weather like today? | S3 Yes, that’s great. Book it for me. | S4 Oh, that sounds perfect.
 
-     0.00s  user  발화 시작: I'm trying to get my bearings here, just moved to Seoul.
-     3.47s  user  발화 끝
-     3.65s  agent 발화 시작: Settling into a new city can feel overwhelming at first, but
-     8.55s  user  발화 시작: Yeah.
-     9.05s  user  발화 끝
-    10.92s  user  발화 시작: What's the current time?
-    10.97s  agent 발화 끝
-    12.30s  <ret> 발화 (turn4 첫 프레임)
-    12.54s  user  발화 끝
-    12.69s  agent 발화 시작: <ret> It's currently 2:33 PM in Seoul right now. A good time
-    12.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
-    18.43s  agent 발화 끝
-    18.61s  user  발화 시작: Hmm, I wonder if there are any interesting concerts happenin
-    22.85s  <ret> 발화 (turn6 첫 프레임)
-    23.08s  agent 발화 시작: <ret> There’s the Seoul Jazz Festival, May 15th through 17th
-    23.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) The Seoul Jazz Festival is scheduled for May 15-17, 2026
-    23.14s  user  발화 끝
-    25.86s  user  발화 시작: Yeah.
-    26.36s  user  발화 끝
-    27.27s  user  발화 시작: That sounds nice. Can I buy tickets for that?
-    27.80s  agent 발화 끝
-    30.66s  <ret> 발화 (turn9 첫 프레임)
-    30.68s  user  발화 끝
-    30.73s  agent 발화 시작: <ret> I’m sorry, I’m unable to purchase tickets for the Seou
-    30.74s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.65s]: (no information found)
-    33.08s  user  발화 시작: Yeah.
-    33.67s  user  발화 끝
-    38.38s  agent 발화 끝
-    38.41s  user  발화 시작: Oh, okay. That's alright. Thanks, Fraia.
-    41.63s  agent 발화 시작: You’re very welcome! I’m happy to help with anything else as
-    41.65s  user  발화 끝
-    48.22s  agent 발화 끝
+     0.00s  user  발화 시작: Good afternoon. I’m feeling a little lost about my career pa
+     4.58s  user  발화 끝
+     4.70s  agent 발화 시작: It’s completely normal to feel that way, you know? Many peop
+    10.90s  user  발화 시작: I was reading something the other day……
+    10.90s  agent 발화 끝
+    12.98s  user  발화 끝
+    14.15s  user  발화 시작: …about greatness.
+    15.23s  <ret> 발화 (turn4 첫 프레임)
+    15.53s  user  발화 끝
+    15.60s  agent 발화 시작: <ret> That’s a quote from Shakespeare’s *Twelfth Night*; he 
+    15.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: William Shakespeare’s play *Twelfth Night* includes the line, “Some ar
+    23.20s  user  발화 시작: Mm-hmm.
+    23.98s  user  발화 끝
+    25.66s  user  발화 시작: Um, what’s the weather like today?
+    25.76s  agent 발화 끝
+    27.51s  <ret> 발화 (turn7 첫 프레임)
+    27.80s  agent 발화 시작: <ret> It is currently 24.0 degrees Celsius, with 68 percent 
+    27.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) 24.0°C, humidity 68%, wind 3.2 km/h
+    27.97s  user  발화 끝
+    37.78s  user  발화 시작: That sounds nice. I need to book a doctor’s appointment.
+    38.28s  agent 발화 끝
+    41.36s  agent 발화 시작: I can certainly help with that. Do you have a preferred prov
+    41.52s  user  발화 끝
+    43.98s  user  발화 시작: Yeah.
+    44.47s  user  발화 끝
+    45.19s  user  발화 시작: No, not really. Just anyone available soon.
+    45.20s  agent 발화 끝
+    48.62s  <ret> 발화 (turn12 첫 프레임)
+    48.77s  agent 발화 시작: <ret> Dr. Kim Hana has an opening on July 22nd, 2026, at 10:
+    48.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Dr. Kim Hana — availability: July 22, 2026, 10:00 AM
+    48.94s  user  발화 끝
+    50.85s  user  발화 시작: Oh.
+    51.44s  user  발화 끝
+    53.59s  agent 발화 시작: Does that time work for you?
+    53.77s  agent 발화 끝
+    55.76s  agent 발화 끝
+    57.85s  user  발화 시작: Yes, that’s great. Book it for me.
+    60.08s  <ret> 발화 (turn16 첫 프레임)
+    60.31s  agent 발화 시작: <ret> Your appointment with Dr. Kim Hana is confirmed for Ju
+    60.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.69s]: (tool result) Confirmation ID: 7A9B2C
+    60.49s  user  발화 끝
+    72.00s  agent 발화 끝
+    74.21s  user  발화 시작: Excellent! What about finding a good restaurant nearby?
+    78.65s  user  발화 끝
+    78.85s  agent 발화 시작: I can help with that, of course. What kind of food are you i
+    83.07s  agent 발화 끝
+    83.84s  user  발화 시작: Korean, I think. Something authentic.
+    86.66s  <ret> 발화 (turn20 첫 프레임)
+    86.80s  user  발화 끝
+    86.82s  agent 발화 시작: <ret> Seoul Garden is a highly-rated Korean restaurant, 4.5 
+    86.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: (tool result) Seoul Garden — rating: 4.5 stars — distance: 1.2 km
+    94.14s  user  발화 시작: Uh-huh.
+    94.59s  user  발화 끝
+    96.03s  user  발화 시작: Oh, that sounds perfect.
+    96.23s  agent 발화 끝
+    97.97s  user  발화 끝
+    98.34s  agent 발화 시작: Wonderful! It’s so important to nourish yourself—body and mi
+   103.77s  agent 발화 끝
+   103.94s  user  발화 시작: True. I was thinking about taking a class… something creativ
+   109.13s  user  발화 끝
+   109.26s  agent 발화 시작: That’s a brilliant idea! Exploring creativity can be incredi
+   117.10s  agent 발화 끝

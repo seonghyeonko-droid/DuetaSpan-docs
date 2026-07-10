@@ -4,96 +4,75 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Andrea",
+#     "name": "Sky",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-02",
-#       "category": "home",
-#       "text": "User's home address is 670 Oak Avenue."
+#       "date": "2026-05-13",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-12-23",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-12-13",
+#       "date": "2026-02-24",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "text": "User is planning a trip to New Zealand in October."
 #     },
 #     {
-#       "date": "2025-12-09",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-12-19",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-07-09",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-06-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-11",
+#       "date": "2025-12-07",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-06",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-05",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Mark report five as complete. | S2 And can you find me restaurants ne | S3 Book a table for two at La Scala f | S4 That sounds lovely. Thank you, Nio
+# EXAMINER(FDB-v2) 단계: S1 Can you create an annual subscript | S2 …will that include access to the p | S3 Wonderful! What’s the total cost f | S4 Okay, perfect. Can you send me the
 
-     0.00s  user  발화 시작: Mark report five as complete.
-     1.28s  <ret> 발화 (turn1 첫 프레임)
-     1.52s  agent 발화 시작: <ret> Okay, I’ve created order 789456 to mark report five as
-     1.52s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.11s]: (tool result) Order 789456 created for report completion.
-     1.75s  user  발화 끝
-     7.63s  agent 발화 끝
-     7.87s  user  발화 시작: And can you find me restaurants nearby, uhhh, actually, near
-    12.00s  <ret> 발화 (turn3 첫 프레임)
-    12.16s  agent 발화 시작: <ret> I found five restaurants near the Opera House, includi
-    12.16s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.70s]: (tool result) Found five restaurants near the Opera House: La Scala (I
-    12.32s  user  발화 끝
-    13.90s  user  발화 시작: Okay.
-    14.54s  user  발화 끝
-    17.86s  agent 발화 끝
-    18.30s  user  발화 시작: Book a table for two at La Scala for tomorrow at 7 PM.
-    22.12s  <ret> 발화 (turn6 첫 프레임)
-    22.35s  agent 발화 시작: <ret> Excellent. Your reservation at La Scala is confirmed f
-    22.35s  user  발화 끝
-    22.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.95s]: (tool result) Reservation confirmed at La Scala for two people tomorro
-    33.30s  agent 발화 끝
-    33.35s  user  발화 시작: That sounds lovely. Thank you, Nioen.
-    35.34s  agent 발화 시작: You’re very welcome. I'm glad I could help with your evening
-    35.52s  user  발화 끝
-    39.23s  agent 발화 끝
+     0.00s  user  발화 시작: Can you create an annual subscription plan for basic support
+     4.81s  <ret> 발화 (turn1 첫 프레임)
+     5.05s  agent 발화 시작: <ret> I’ve created an annual plan for you—
+     5.05s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.40s]: (tool result) Subscription created: Plan ID – SU9012-A-2026
+     5.28s  user  발화 끝
+     6.71s  user  발화 시작: …will that include access to the premium tutorials?
+     7.45s  agent 발화 끝
+    10.23s  <ret> 발화 (turn3 첫 프레임)
+    10.39s  agent 발화 시작: <ret> I’ve updated your plan to premium, which gives you acc
+    10.39s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.71s]: (tool result) Subscription updated: Plan ID – SU9012-P-2026
+    10.46s  user  발화 끝
+    15.11s  agent 발화 끝
+    15.22s  user  발화 시작: Wonderful! What’s the total cost for the year?
+    18.34s  <ret> 발화 (turn5 첫 프레임)
+    18.57s  agent 발화 시작: <ret> The total cost for the year will be one hundred forty-
+    18.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.10s]: The annual premium support plan for product 9012 costs 149.99 US dolla
+    18.74s  user  발화 끝
+    23.67s  agent 발화 끝
+    23.82s  user  발화 시작: Okay, perfect. Can you send me the invoice?
+    26.25s  <ret> 발화 (turn7 첫 프레임)
+    26.41s  agent 발화 시작: <ret> Your invoice, INV-20260710-4587, has just been sent to
+    26.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: (tool result) Invoice created: INV-20260710-4587
+    26.50s  user  발화 끝
+    34.75s  agent 발화 끝

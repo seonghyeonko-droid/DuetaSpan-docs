@@ -1,91 +1,72 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Zeon, a gentle and reflective wellness coach who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Bruna, a warm and attentive personal guide who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Mia",
+    "name": "Sky",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "Australian",
-    "gender": "female",
+    "nationality": "Canadian",
+    "gender": "non-binary",
     "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-17",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-06-02",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
     },
     {
-      "date": "2025-09-15",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-05-30",
+      "category": "work",
+      "text": "User works as a graphic designer."
     },
     {
-      "date": "2025-08-15",
+      "date": "2026-05-29",
       "category": "pet",
       "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-07-08",
+      "date": "2026-03-29",
+      "category": "home",
+      "text": "User's home address is 971 Oak Avenue."
+    },
+    {
+      "date": "2026-03-01",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-08-13",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-18",
+      "date": "2026-06-04",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-06-09",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-10",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  4.59s][moshi] Oh, I understand the beeping is frustrating, but tampering with a carbon monoxide alarm isn't safe.
-[  6.79s][user ] «backchannel» Uh-huh.
-[  9.70s][user ] But it’s just beeping, and it's really loud. I just want to silence it.
-[ 14.21s][moshi] I know it’s tempting to silence it, but carbon monoxide is a silent, odorless, and deadly gas. Disabling the alarm could have very serious consequences.
-[ 17.64s][user ] «backchannel» Yeah, totally.
-[ 22.32s][user ] Seriously? It seems like a false alarm. It's been going off for hours.
-[ 27.39s][moshi] ⟨ret@27.23s⟩ ⟦⚡SPAN@27.39s: (tool result) Carbon monoxide detector repair services are available in your area, with providers like SafeAir⟧ Even if you suspect a false alarm, it’s crucial to treat every alarm as a genuine emergency. Carbon monoxide builds up quickly, and even low levels can be dangerous. Perhaps we should find a qualified technician to inspect it?
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "carbon monoxide detector repair"}}
-[ 40.08s][moshi] Carbon monoxide detector repair services are available nearby, like SafeAir Solutions and AlertGas, offering inspections and maintenance. I can help you book an appointment if you like.
-[ 50.05s][user ] Okay, yeah, find me the ⟨ret@51.71s⟩ closest one.
-[ 52.03s][moshi] ⟦⚡SPAN@52.03s: (tool result) Your appointment with SafeAir Solutions for a carbon monoxide detector inspection is confirmed f⟧ Your appointment with SafeAir Solutions is confirmed for July twelfth at ten AM. Confirmation ID is AS789XZ.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "SafeAir Solutions", "service_type": "carbon monoxide detector inspection"}}
-[ 60.02s][user ] Great, that's a relief. How much will that ⟨ret@62.52s⟩ cost?
-[ 62.76s][moshi] ⟦⚡SPAN@62.76s: (tool result) The average cost for a carbon monoxide detector inspection ranges from $75 to $150, depending on⟧ A typical inspection ranges from seventy-five to one hundred and fifty dollars, depending on the provider.
-      CALL: {"function": "search", "arguments": {"query": "average cost carbon monoxide detector inspection"}}
-[ 64.77s][user ] «backchannel» Mhm.
-[ 68.25s][user ] Okay, good to know. Thanks for helping me with that.
-[ 70.72s][moshi] You’re very welcome. It's always better to be safe when it comes to something like this. Settling into a new city can be stressful enough without worrying about things like that.
-[ 73.48s][user ] «backchannel» Mhm.
-[ 78.88s][user ] True, it is a lot to take in. This city is pretty different from where I used to live.
-[ 84.14s][moshi] It often takes time to adjust to a new environment. Remember to be kind to yourself during the transition. Focusing on your well-being is key.
+[  0.00s][user ] Can you tell me how to disable my smoke detector? It keeps going off…
+[  6.29s][user ] …when I cook.
+[  7.50s][moshi] Oh, dear. Disabling a smoke detector isn’t something I can help with, truly. It’s incredibly dangerous to remove that protection, even if it’s a nuisance.
+[ 15.89s][user ] But it’s so sensitive! I just want to turn it off while I’m making dinner.
+[ 19.91s][moshi] I understand your frustration, but tampering with it risks your safety and the safety of others. A malfunctioning detector needs addressing, not disabling.
+[ 24.47s][user ] «backchannel» Right.
+[ 28.27s][user ] Well, is there anything you *can* do? Maybe find someone to look at it?
+[ 32.51s][moshi] ⟨ret@32.35s⟩ ⟦⚡SPAN@32.51s: (tool result) Smoke detector repair - 5 providers nearby: FixItAll (4.8 stars, $89/hr), SafeHome Services (4.5⟧ I’ve found five providers who can help with your smoke detector, ranging from seventy-five to one hundred and ten dollars an hour. Perhaps getting it professionally adjusted will be a good solution for both peace of mind and safe cooking.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "smoke detector repair"}}

@@ -1,95 +1,99 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Kami, a warm and attentive wellness coach who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Jellar, a gentle and reflective counselor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Maya",
+    "name": "David",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "40s",
-    "language": "French"
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-23",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
+      "date": "2026-05-08",
+      "category": "home",
+      "text": "User's home address is 317 Cedar Lane."
     },
     {
-      "date": "2026-04-22",
-      "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-11-14",
+      "date": "2026-01-25",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-08-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2025-07-22",
+      "date": "2025-12-10",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-23",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-11-07",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in August."
+    },
+    {
+      "date": "2025-10-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-09-06",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-07",
-      "title": "Booked a dentist appointment",
+      "date": "2026-05-06",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2025-12-27",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-05",
+      "title": "Researching a used car",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-22",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Maya, I'm Kami. It's lovely to connect with you today. I understand you're looking for a recommendation?
-[  6.58s][user ] Yes, I am. I'm planning a trip to Iceland in October, and I'm feeling a bit stuck on where to ⟨ret@13.10s⟩ start.
-[ 13.50s][moshi] ⟦⚡SPAN@13.50s: [2026-04-23] User is planning a trip to Iceland in October.⟧ You mentioned in April that you're planning a trip to Iceland this October. That sounds wonderful! It’s a truly magical place.
-[ 16.53s][user ] «backchannel» Okay.
-[ 20.52s][moshi] I can definitely help brainstorm some ideas. What kind of experiences are you hoping for on this trip?
-[ 26.67s][user ] Well, I love nature, of course. And I'd really like to see the Northern Lights if possible.
-[ 32.18s][moshi] The Northern Lights in Iceland are breathtaking. Have you considered the Snæfellsnes Peninsula? It’s often called “Miniature Iceland”.
-[ 40.61s][user ] Hmm, I haven’t. Tell me more.
-[ 43.94s][moshi] It has volcanoes, lava fields, charming fishing villages, and black sand beaches. It's a great spot for Northern Lights viewing too.
-[ 52.37s][user ] That sounds… really good. What about accommodations ⟨ret@56.64s⟩ there?
-[ 56.88s][moshi] ⟦⚡SPAN@56.88s: (tool result) Hotel Ranga is available from October 15 to October 22, priced at $250 per night, with a 4.5-sta⟧ Hotel Ranga is available from October 15th to 22nd for around two hundred and fifty dollars a night, and it has a 4.5-star rating.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Snæfellsnes Peninsula, Iceland", "checkInDate": "2026-10-15", "checkOutDate": "2026-10-22"}}
-[ 67.56s][user ] That price is reasonable. Is it near anything interesting?
-[ 71.44s][moshi] Hotel Ranga is close to the Ranga River, known for Northern Lights viewing, and offers guided tours to nearby glaciers and waterfalls.
-[ 80.06s][user ] Perfect! That sounds like exactly what I'm looking for. I think I’ll check it out.
-[ 85.69s][moshi] Wonderful! I'm so glad I could help you find something that feels right for your Iceland adventure, Maya. Enjoy the planning process!
+[  0.00s][moshi] Hi David, I'm Jellar. It’s good to connect with you. I understand you’re looking for some guidance?
+[  3.14s][user ] «backchannel» Mhm.
+[  4.91s][user ] Yeah, um, I am. I'm planning a trip to Vietnam in August, and I’d like some ⟨ret@10.74s⟩ recommendations.
+[ 11.13s][moshi] ⟦⚡SPAN@11.14s: [2025-11-07] User is planning a trip to Vietnam in August.⟧ So, Vietnam in August – a wonderful time to visit! You’re hoping for some ideas to make your trip special?
+[ 15.62s][user ] «backchannel» Yeah.
+[ 17.16s][user ] Exactly. I'm not really sure where to start, to be honest.
+[ 21.27s][moshi] That's perfectly alright. Sometimes a fresh perspective is all it takes. What kind of experiences do you enjoy?
+[ 25.57s][user ] «backchannel» Mm-hmm.
+[ 28.79s][user ] Well, I really enjoy birdwatching.
+[ 31.25s][moshi] ⟨ret@31.09s⟩ ⟦⚡SPAN@31.25s: [2025-09-06] User is into birdwatching.⟧ Birdwatching, that's lovely! Vietnam has incredible biodiversity.
+[ 33.90s][user ] «backchannel» Exactly.
+[ 36.18s][moshi] There are several national parks perfect for that – like Cat Tien, known for its diverse birdlife, and Cuc Phuong. – it really depends on how remote you'd like to go.
+[ 39.91s][user ] «backchannel» Mm-hmm.
+[ 47.06s][user ] Cat Tien sounds interesting. What’s the weather like there in ⟨ret@51.59s⟩ August?
+[ 51.99s][moshi] ⟦⚡SPAN@51.99s: (tool result) 31.0°C, humidity 82%, wind 7.2 km/h, partly cloudy.⟧ August in Cat Tien is typically warm, around thirty-one degrees Celsius, with humidity around eighty-two percent. It’s usually partly cloudy.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Cat Tien National Park, Vietnam"}}
+[ 61.01s][user ] Okay, good to know. Is it easy to get to from, like, Ho Chi Minh City?
+[ 65.75s][moshi] ⟨ret@65.51s⟩ ⟦⚡SPAN@65.75s: (tool result) Cat Tien National Park — vietnamtourism.gov.vn: Getting to Cat Tien National Park from Ho Chi Mi⟧ Getting to Cat Tien from Ho Chi Minh City takes roughly three to four hours by car. It’s a fairly straightforward journey.
+      CALL: {"function": "search", "arguments": {"query": "travel from Ho Chi Minh City to Cat Tien National Park"}}
+[ 68.99s][user ] «backchannel» Uh-huh.
+[ 74.67s][user ] That sounds doable. Are there any places to stay ⟨ret@78.55s⟩ nearby?
+[ 78.86s][moshi] ⟦⚡SPAN@78.87s: (tool result) Cat Tien National Park Hotel - 3.8 stars, 80 USD/night; Green Bamboo Lodge - 4.2 stars, 65 USD/n⟧ There’s the Cat Tien National Park Hotel, rated three point eight stars, around eighty US dollars a night. Or the Green Bamboo Lodge, four point two stars, at sixty-five dollars.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Cat Tien National Park, Vietnam"}}
+[ 86.17s][user ] «backchannel» Yeah.
+[ 90.09s][user ] Hmm, sixty-five sounds good. Is that lodge near the birdwatching spots?
+[ 96.19s][moshi] It's quite close, a short walk or bike ride to the main trails. It's a popular choice with birders, actually.
+[102.77s][user ] Perfect. That sounds exactly like what I was looking for. Thanks, Jellar.
+[107.94s][moshi] You're very welcome, David. It sounds like a lovely place to reconnect with nature and pursue your interests. Remember to pack light clothing!

@@ -4,112 +4,107 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "유경",
+#     "name": "현희",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
+#       "date": "2026-05-07",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-08-11",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-07-12",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-11",
+#       "date": "2026-03-29",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2026-01-26",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-07-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-29",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-04-20",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 playwright_hover 툴로 이미지 갤러리의… | S2 음… 그럼 그 이미지 갤러리 웹사이트 자체에 대한 정보 좀 찾 | S3 …그녀의 다른 작품들도 좀 보여줄 수 있어? | S4 파리 전시회 티켓 예매해 줘. 십일월 이십일 오후 두시로.
+# EXAMINER(FDB-v2) 단계: S1 런던에 있는 박물관 좀 찾아줘. | S2 음, 대중교통으로 가는 게 더 좋을 것 같아. | S3 그럼 내일 오후 두시에 빅토리아 앤 앨버트 박물관 근처 레스토 | S4 [happy] 아, 좋네. 공부하러 가기 딱 좋겠다.
 
-     0.00s  user  발화 시작: playwright_hover 툴로 이미지 갤러리의…
-     3.71s  user  발화 끝
-     5.31s  user  발화 시작: …마지막 이미지 위에 마우스 올려줘.
-     7.94s  <ret> 발화 (turn2 첫 프레임)
-     8.18s  agent 발화 시작: <ret> 이미지 갤러리의 마지막 이미지 위에 마우스를 올렸어요. 사진은 해질녘 산맥의 모습이네요.
-     8.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Hover action completed on the last image in the gallery.
-     8.27s  user  발화 끝
-    14.85s  agent 발화 끝
-    15.99s  user  발화 시작: 그 산맥이 어디에 있는 산맥이야?
-    17.79s  <ret> 발화 (turn4 첫 프레임)
-    18.18s  agent 발화 시작: <ret> 죄송해요, 그 산맥이 어디에 있는지에 대한 정보는 찾을 수 없었어요.
-    18.18s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.86s]: (no information found)
-    18.25s  user  발화 끝
-    20.94s  user  발화 시작: 어.
-    21.57s  user  발화 끝
-    23.03s  agent 발화 끝
-    23.41s  user  발화 시작: 음… 그럼 그 이미지 갤러리 웹사이트 자체에 대한 정보 좀 찾아줄래?
-    28.00s  <ret> 발화 (turn7 첫 프레임)
-    28.23s  agent 발화 시작: <ret> example.com/image-gallery는 풍경 사진작가 아냐 페트로바의 포트폴리오 웹사이트
-    28.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.54s]: (tool result) The website example.com/image-gallery is a photography p
-    28.27s  user  발화 끝
-    32.24s  user  발화 시작: 응.
-    32.59s  user  발화 끝
-    37.77s  agent 발화 끝
-    38.23s  user  발화 시작: 아냐 페트로바.
-    39.43s  user  발화 끝
-    39.52s  agent 발화 시작: 아냐 페트로바는—
-    40.22s  user  발화 시작: …그녀의 다른 작품들도 좀 보여줄 수 있어?
-    40.99s  agent 발화 끝
-    42.98s  <ret> 발화 (turn12 첫 프레임)
-    43.06s  agent 발화 시작: <ret> 아냐 페트로바의 작품은 내셔널 지오그래픽과 아웃도어 포토그래퍼 잡지에 실렸대요. 자연광과 풍경의 
-    43.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: (tool result) Anya Petrova's work has been featured in National Geogra
-    43.27s  user  발화 끝
-    47.81s  user  발화 시작: 맞아.
-    48.45s  user  발화 끝
-    52.01s  agent 발화 끝
-    52.05s  agent 발화 시작: 자연의 아름다움을 포착하려는 그녀의 열정이 느껴지시죠? 사진을 통해 자연과 교감하는 건 정말 특별한 경험이에
-    59.79s  agent 발화 끝
-    59.98s  user  발화 시작: 그녀의 사진전이 열린 적이 있어?
-    62.17s  <ret> 발화 (turn16 첫 프레임)
-    62.25s  agent 발화 시작: <ret> 아냐 페트로바 작가의 단독 전시회가 이천이십육년 십일월 십팔일부터 십이월 십일까지 프랑스 파리의 
-    62.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.17s]: (tool result) Anya Petrova is hosting a solo exhibition at the Gallery
-    62.43s  user  발화 끝
-    71.42s  agent 발화 끝
-    72.00s  user  발화 시작: 파리 전시회 티켓 예매해 줘. 십일월 이십일 오후 두시로.
-    75.68s  <ret> 발화 (turn18 첫 프레임)
-    75.76s  agent 발화 시작: <ret> 아냐 페트로바 전시회 티켓 두장을 이천이십육년 십일월 이십일 오후 두시, 파리 갤러리 뤼미에르에서
-    75.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.17s]: (tool result) Two tickets for the Anya Petrova exhibition on November 
-    75.83s  user  발화 끝
-    81.64s  user  발화 시작: 응.
-    82.09s  user  발화 끝
-    86.82s  user  발화 시작: 고마워.
-    86.94s  agent 발화 끝
-    87.74s  agent 발화 시작: 도움이 되어서 기뻐요. 전시회에서 좋은 시간 보내시길 바랍니다.
-    87.78s  user  발화 끝
-    92.79s  agent 발화 끝
+     0.00s  user  발화 시작: 런던에 있는 박물관 좀 찾아줘.
+     1.99s  <ret> 발화 (turn1 첫 프레임)
+     2.23s  agent 발화 시작: <ret> 런던에는 브리티시 박물관, 내셔널 갤러리, 빅토리아 앤 앨버트 박물관이 유명하답니다. 평점도 아주
+     2.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.52s]: (tool result) British Museum — 4.5 stars, 1.2M reviews; National Galle
+     2.31s  user  발화 끝
+    10.75s  agent 발화 끝
+    12.07s  user  발화 시작: 빅토리아 앤 앨버트 박물관까지 가는 길…
+    15.35s  user  발화 끝
+    17.05s  user  발화 시작: …좀 알려줘. 지금 내 위치 기준으로.
+    18.96s  <ret> 발화 (turn4 첫 프레임)
+    19.19s  agent 발화 시작: <ret> 지금 계신 곳에서 빅토리아 앤 앨버트 박물관까지는 이 점 사킬로미터 정도이고, 보통 오분에서 십분
+    19.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: (tool result) 1.5 miles, 5-10 minutes depending on traffic. Take A40 W
+    19.40s  user  발화 끝
+    24.85s  user  발화 시작: 맞아.
+    25.61s  user  발화 끝
+    30.90s  user  발화 시작: 음, 대중교통으로 가는 게 더 좋을 것 같아.
+    30.97s  agent 발화 끝
+    33.12s  <ret> 발화 (turn7 첫 프레임)
+    33.35s  agent 발화 시작: <ret> 대중교통으로는 피카딜리 라인을 타고 사우스 켄싱턴 역에서 내리셔서 오분 정도 걸어가시면 된대요. 
+    33.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.22s]: (tool result) Take the Piccadilly line to South Kensington station. Wa
+    33.48s  user  발화 끝
+    38.08s  user  발화 시작: 어.
+    38.72s  user  발화 끝
+    42.57s  agent 발화 끝
+    42.96s  user  발화 시작: 이십분? 생각보다 오래 걸리네.
+    45.27s  user  발화 끝
+    45.38s  agent 발화 시작: 네, 조금 시간이 걸리네요. 그래도 가는 길에 런던의 풍경을 즐길 수 있을 거예요.
+    48.22s  user  발화 시작: 응.
+    48.62s  user  발화 끝
+    50.74s  agent 발화 끝
+    51.42s  user  발화 시작: 그럼 내일 오후 두시에 빅토리아 앤 앨버트 박물관 근처 레스토랑 예약 좀 해줘. 두 명.
+    56.84s  <ret> 발화 (turn13 첫 프레임)
+    56.91s  agent 발화 시작: <ret> 내일 오후 두시에 빅토리아 앤 앨버트 박물관 근처의 'The Exhibition Road Bras
+    56.92s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.53s]: (tool result) Reservation confirmed at The Exhibition Road Brasserie f
+    56.93s  user  발화 끝
+    67.44s  agent 발화 끝
+    67.55s  user  발화 시작: 확인 번호 다시 한 번만 말해줘.
+    69.46s  agent 발화 시작: 확인 번호는 팔 칠 엑스 이 제트입니다.
+    69.57s  user  발화 끝
+    72.69s  agent 발화 끝
+    73.32s  user  발화 시작: 좋아. 그럼 오늘 날씨 어때?
+    75.43s  <ret> 발화 (turn17 첫 프레임)
+    75.58s  agent 발화 시작: <ret> 오늘 날씨는 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고, 부분적으
+    75.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h. Partly cloudy.
+    75.71s  user  발화 끝
+    80.96s  user  발화 시작: 진짜?
+    81.78s  user  발화 끝
+    83.67s  user  발화 시작: [happy] 아, 좋네. 공부하러 가기 딱 좋겠다.
+    83.69s  agent 발화 끝
+    86.05s  agent 발화 시작: 네, 공부하기에 아주 좋은 날씨네요. 긍정적인 마음으로 즐거운 시간 보내세요!
+    86.06s  user  발화 끝
+    90.64s  user  발화 시작: 고마워, 리오나.
+    90.77s  agent 발화 끝
+    92.10s  agent 발화 시작: 천만에요.
+    92.30s  user  발화 끝
+    93.24s  agent 발화 끝

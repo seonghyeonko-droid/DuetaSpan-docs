@@ -4,53 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Andrea",
+#     "name": "Riley",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
+#     "nationality": "German",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
-#     },
-#     {
-#       "date": "2026-05-13",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-05-11",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-04-27",
-#       "category": "home",
-#       "text": "User's home address is 314 Pine Court."
-#     },
-#     {
-#       "date": "2026-03-10",
+#       "date": "2026-05-28",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-06",
+#       "date": "2026-05-09",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "category": "home",
+#       "text": "User's home address is 664 Pine Court."
+#     },
+#     {
+#       "date": "2025-09-02",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-06-09",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
+#       "date": "2025-11-14",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-21",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -61,9 +69,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Where is the Burj Khalifa located?
-     1.85s  <ret> 발화 (turn1 첫 프레임)
-     2.08s  agent 발화 시작: <ret> The Burj Khalifa, that incredible building, is located
-     2.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.98s]: The Burj Khalifa, the world's tallest skyscraper, is located in Dubai,
-     2.17s  user  발화 끝
-    10.05s  agent 발화 끝
+     0.00s  user  발화 시작: Who played Belle’s dad in Beauty and the Beast?
+     2.27s  <ret> 발화 (turn1 첫 프레임)
+     2.50s  agent 발화 시작: <ret> That would be Kevin Kline! He really brought a warmth 
+     2.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: Kevin Kline portrayed Maurice, Belle’s father, in the 1991 Disney film
+     2.67s  user  발화 끝
+    11.17s  agent 발화 끝

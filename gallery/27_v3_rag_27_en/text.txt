@@ -1,74 +1,87 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Fara, a practical and reassuring personal guide who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Kien, a curious and validating personal guide who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Jordan",
+    "name": "Charlie",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
+    "nationality": "German",
     "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "English"
+    "age_range": "late 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-22",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-01-09",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-11-23",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-11-08",
-      "category": "home",
-      "text": "User's home address is 218 Elm Street."
-    },
-    {
-      "date": "2025-10-05",
+      "date": "2026-05-28",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-01-21",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
+    },
+    {
+      "date": "2025-10-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-10-03",
+      "category": "home",
+      "text": "User's home address is 395 Maple Drive."
+    },
+    {
+      "date": "2025-07-16",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-07",
+      "date": "2025-10-26",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-10-11",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to remember which film categories both *Call Me Kuchu* and *That's Dancing!* fit into.
-[  5.25s][moshi] ⟨ret@5.01s⟩ ⟦⚡SPAN@5.25s: Both *Call Me Kuchu* and *That's Dancing!* are categorized as documentary films.⟧ Both films are actually categorized as documentary films. It’s a pretty broad genre, covering so much.
-[ 10.27s][user ] «backchannel» Yeah.
-[ 12.70s][user ] Documentary… hmm, is there anything else they have in common?
-[ 16.32s][moshi] ⟨ret@16.24s⟩ ⟦⚡SPAN@16.32s: *Call Me Kuchu* premiered at the 2012 Sundance Film Festival, and *That's Dancing!* featured performances orig⟧ They both have a connection to the Sundance Film Festival, actually—*Call Me Kuchu* premiered there in 2012, and *That's Dancing!* had performances from the 1985 festival.
-[ 28.46s][user ] That’s interesting! What was…
-[ 32.71s][user ] …*Call Me Kuchu* about?
-[ 34.46s][moshi] ⟨ret@34.39s⟩ ⟦⚡SPAN@34.47s: *Call Me Kuchu* is a 2012 American documentary film directed by Katherine Fairfax Wright and Malika Zouhali-Wo⟧ *Call Me Kuchu* is a documentary from 2012, directed by Katherine Fairfax Wright and Malika Zouhali-Worrall, and it’s a really important film focusing on the persecution of LGBTQ people in Uganda. It's a difficult but vital watch.
+[  0.00s][user ] I'm trying to remember something about Barbara Jordan.
+[  2.55s][moshi] It’s wonderful you’re thinking about remarkable people. What specifically about Barbara Jordan interests you?
+[  6.16s][user ] «backchannel» Okay.
+[  8.93s][user ] Was she connected to Mark Knowles ⟨ret@10.91s⟩ somehow?
+[ 11.30s][moshi] ⟦⚡SPAN@11.31s: Barbara Jordan was a lawyer, civil rights leader, and politician, while Mark Knowles is a former professional ⟧ They lived very different lives—Barbara Jordan was a lawyer and politician, and Mark Knowles was a tennis player. Quite a contrast, isn’t it?
+[ 20.46s][user ] What did Barbara Jordan do as a lawyer?
+[ 22.55s][moshi] «interrupted» ⟨ret@22.48s⟩ ⟦⚡SPAN@22.55s: Barbara Jordan served as a lawyer before entering politics, focusing on civil rights cases and advocating for ⟧ Before politics, Barbara Jordan worked as a lawyer, dedicating herself to civil rights and equal opportunity—
+[ 29.38s][user ] «interrupts_prev» …did she ever play tennis?
+[ 30.91s][moshi] ⟨ret@30.83s⟩ ⟦⚡SPAN@30.91s: There is no public record of Barbara Jordan playing tennis, though she was known to enjoy various recreational⟧ There's no record of her playing tennis, though she enjoyed other activities.
+[ 33.38s][user ] «backchannel» Nice.
+[ 36.62s][user ] Okay, that makes sense. What was she known for ⟨ret@39.57s⟩ politically?
+[ 39.89s][moshi] ⟦⚡SPAN@39.89s: Barbara Jordan was the first African American woman elected to the Texas State Senate, and later to the U.S. H⟧ Barbara Jordan broke barriers, becoming the first African American woman elected to the Texas State Senate, and then Congress.
+[ 43.02s][user ] «backchannel» Yeah.
+[ 47.90s][user ] Where did she go to law school?
+[ 49.44s][moshi] ⟨ret@49.29s⟩ ⟦⚡SPAN@49.45s: Barbara Jordan earned her Juris Doctor degree from Boston College Law School in 1959.⟧ She earned her law degree from Boston College Law School in nineteen fifty-nine. It's inspiring to see where her journey began.
+[ 57.99s][user ] What year was she ⟨ret@59.15s⟩ born?
+[ 59.31s][moshi] ⟦⚡SPAN@59.31s: Barbara Jordan was born on February 26, 1936, in Houston, Texas.⟧ Barbara Jordan was born on February twenty-sixth, nineteen thirty-six, in Houston, Texas.
+[ 65.42s][user ] And Mark Knowles… when did *he* retire from ⟨ret@68.27s⟩ tennis?
+[ 68.51s][moshi] ⟦⚡SPAN@68.51s: Mark Knowles retired from professional tennis in 2010 after a successful doubles career spanning over two deca⟧ Mark Knowles retired from professional tennis in two thousand and ten after a long career. It's a big change to leave a sport you love.
+[ 74.07s][user ] «backchannel» Yeah.
+[ 77.02s][user ] What kind of tennis did ⟨ret@78.50s⟩ he play?
+[ 78.90s][moshi] ⟦⚡SPAN@78.90s: Mark Knowles was a professional tennis player specializing in doubles, achieving a career-high ranking of numb⟧ Mark Knowles excelled in doubles tennis, even reaching the world’s number one ranking. That's a remarkable accomplishment.
+[ 87.19s][user ] What country is he from?
+[ 88.62s][moshi] ⟨ret@88.54s⟩ ⟦⚡SPAN@88.62s: Mark Knowles is Bahamian, representing the Bahamas throughout his professional tennis career.⟧ Mark Knowles is from the Bahamas, and proudly represented his country. It’s always interesting to learn where people come from.

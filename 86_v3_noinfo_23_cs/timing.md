@@ -4,87 +4,133 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Andrea",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-17",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2025-12-31",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-09-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
-#     },
-#     {
-#       "date": "2025-08-11",
+#       "date": "2026-06-03",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-29",
+#       "date": "2026-03-31",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-11-19",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-06-12",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2025-10-05",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-01",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-09",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-13",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 할머니에 대해 말씀하신 거 기억하고 있어요. | S2 혹시 그 모자 사진을 찾아 주실 수 있을까요? | S3 아, 아쉽네요. 2018년 할머니 생신 날씨는 어땠나요? | S4 정말 좋네요. 그런 세부 사항들을 기억하는 게 좋네요.
+# EXAMINER(FDB-v2) 단계: S1 엘레노어 밴스의 연락처가 있나요? | S2 그렇다고 생각해요. 이번 주말에 서울에서 열리는 행사들을 찾아 | S3 명동교자… 들어본 것 같아요. | S4 정신적으로 준비하는 좋은 방법은 무엇인가요?
 
-     0.00s  user  발화 시작: 할머니에 대해 말씀하신 거 기억하고 있어요.
-     2.54s  <ret> 발화 (turn1 첫 프레임)
-     2.59s  user  발화 끝
-     2.71s  agent 발화 시작: <ret> 네, 할머니인 엘레노어 밴스 님께서 정원 가꾸시는 걸 좋아하셨고, 항상 파란 모자를 쓰셨다고 말씀
-     2.71s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.67s]: [2024-07-03] My grandmother, Eleanor Vance, loved gardening and always
-     8.07s  user  발화 시작: 예.
-     8.57s  user  발화 끝
-    11.37s  agent 발화 끝
-    11.93s  user  발화 시작: 혹시 그 모자 사진을 찾아 주실 수 있을까요?
-    14.32s  <ret> 발화 (turn4 첫 프레임)
-    14.71s  agent 발화 시작: <ret> 검색해 봤는데, 아쉽게도 엘레노어 밴스 님의 파란 모자 사진은 온라인에서 찾을 수 없었어요.
-    14.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (no information found)
-    14.89s  user  발화 끝
-    18.21s  user  발화 시작: 네.
-    18.61s  user  발화 끝
-    21.33s  agent 발화 끝
-    22.70s  user  발화 시작: 아, 아쉽네요. 2018년 할머니 생신 날씨는 어땠나요?
-    26.29s  <ret> 발화 (turn7 첫 프레임)
-    26.53s  agent 발화 시작: <ret> 이천십팔 년 7월 15일, 애니타운에서는 기온이 섭씨 26.7도였고, 습도는 62퍼센트, 그리고 
-    26.53s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.55s]: (tool result) The weather in Anytown, USA on July 15, 2018 was 26.7°C,
-    26.68s  user  발화 끝
-    36.08s  agent 발화 끝
-    36.59s  user  발화 시작: 정말 좋네요. 그런 세부 사항들을 기억하는 게 좋네요.
-    40.31s  agent 발화 시작: 그렇죠. 때로는 작은 세부 사항조차도 큰 따뜻함을 되살려 줄 수 있고, 제가 기억을 되살리는 데 도움이 되어
-    40.43s  user  발화 끝
-    47.68s  agent 발화 끝
+     0.00s  user  발화 시작: 엘레노어 밴스의 연락처가 있나요?
+     2.35s  <ret> 발화 (turn1 첫 프레임)
+     2.44s  user  발화 끝
+     2.51s  agent 발화 시작: <ret> 찾아봤는데, 아쉽게도 엘레노어 밴스의 연락처는 찾을 수가 없네.
+     2.51s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.91s]: (no information found)
+     4.23s  user  발화 시작: 네.
+     4.64s  user  발화 끝
+     7.42s  agent 발화 끝
+     7.96s  user  발화 시작: 아, 그렇군요. 아쉽네요.
+     9.87s  agent 발화 시작: 연락하고 싶은 사람에게 연락이 안 될 때는 답답하잖아.
+    10.03s  user  발화 끝
+    13.06s  agent 발화 끝
+    13.27s  user  발화 시작: 네, 그러네요. 지금 서울 날씨는 어떤가요?
+    16.02s  <ret> 발화 (turn6 첫 프레임)
+    16.34s  agent 발화 시작: <ret> 지금 서울 날씨는 섭씨 23.0도이고, 습도는 74퍼센트, 풍속은 시속 5.5킬로미터야.
+    16.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    16.36s  user  발화 끝
+    24.33s  user  발화 시작: 음, 괜찮네요.
+    24.40s  agent 발화 끝
+    25.69s  agent 발화 시작: 꽤 괜찮은 날씨네. 기분 좋은 온도는 정말 기분을 좋게 해 주지 않니?
+    25.75s  user  발화 끝
+    30.23s  agent 발화 끝
+    30.77s  user  발화 시작: 그렇다고 생각해요. 이번 주말에 서울에서 열리는 행사들을 찾아 줄 수 있나요?
+    35.19s  <ret> 발화 (turn10 첫 프레임)
+    35.27s  agent 발화 시작: <ret> 이번 주말에는 서울 국제 마라톤과 케이팝 댄스 페스티벌이 열릴 거야—
+    35.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Seoul International Marathon — domain: visitseoul.net; K
+    35.30s  user  발화 끝
+    39.70s  user  발화 시작: 그중 야외에서 하는 행사가 있나요?
+    40.27s  agent 발화 끝
+    41.87s  <ret> 발화 (turn12 첫 프레임)
+    41.96s  user  발화 끝
+    42.11s  agent 발화 시작: <ret> 서울 국제 마라톤은 도시 거리에서 열리니까 야외 행사야.
+    42.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Seoul International Marathon — domain: marathon.seoul.go
+    43.88s  user  발화 시작: 음.
+    44.33s  user  발화 끝
+    46.46s  agent 발화 끝
+    46.57s  agent 발화 시작: 케이팝 댄스 페스티벌은 보통 서울 광장에서 열리는데, 야외 행사이지만 날씨에 따라 실내로 옮겨질 수도 있어.
+    53.85s  agent 발화 끝
+    54.03s  user  발화 시작: 흥미롭네요. 근처에 식당은 어떤 곳이 있나요?
+    56.88s  <ret> 발화 (turn16 첫 프레임)
+    57.20s  agent 발화 시작: <ret> 근처에는 명동교자와 고궁명가가 있어. 둘 다 인기 있는 곳이야.
+    57.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) Myeongdong Kyoja — domain: myongdongkyoja.com; Gogung My
+    57.26s  user  발화 끝
+    60.38s  user  발화 시작: 네.
+    60.78s  user  발화 끝
+    61.46s  agent 발화 끝
+    62.07s  user  발화 시작: 명동교자… 들어본 것 같아요.
+    64.38s  user  발화 끝
+    64.73s  agent 발화 시작: 만두와 칼국수로 꽤 유명해. 특히 바쁠 때는 맛있는 식사가 큰 활력이 될 수 있지.
+    66.62s  user  발화 시작: 예.
+    67.03s  user  발화 끝
+    70.29s  agent 발화 끝
+    71.03s  user  발화 시작: 맞아요. 정말 스트레스 받는 회의가 다가오고 있어요.
+    74.39s  agent 발화 시작: 알겠네. 스트레스 받는 회의는 힘들지. 혹시 그 불안감을 관리하는 방법을 알아볼까?
+    74.45s  user  발화 끝
+    78.64s  user  발화 시작: 예.
+    79.09s  user  발화 끝
+    80.36s  agent 발화 끝
+    80.44s  user  발화 시작: 좋아요. 뭐랄까…
+    82.61s  user  발화 끝
+    84.66s  user  발화 시작: 정신적으로 준비하는 좋은 방법은 무엇인가요?
+    88.01s  agent 발화 시작: 조금의 준비가 큰 도움이 될 수 있어. 성공적인 결과를 시각화하는 것이 정말 도움이 될 거야.
+    88.08s  user  발화 끝
+    94.31s  agent 발화 끝
+    96.87s  user  발화 시작: 알겠습니다. 시각화. 한번 해 볼게요. 지금 몇 시인가요?
+   100.47s  <ret> 발화 (turn28 첫 프레임)
+   100.63s  agent 발화 시작: <ret> 지금 서울 시간은 오후 3시 17분이야. 중요한 일을 준비할 때는 시간을 잘 확인하는 게 좋지.
+   100.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+   100.70s  user  발화 끝
+   107.07s  agent 발화 끝
+   107.63s  user  발화 시작: 고마워요, 도라우스. 도움이 됐어요.
+   110.30s  user  발화 끝
+   110.43s  agent 발화 시작: 천만에. 잠깐이라도 자신을 위한 시간을 가지면 어려운 상황에 더 잘 대처할 수 있을 거야.
+   116.92s  agent 발화 끝

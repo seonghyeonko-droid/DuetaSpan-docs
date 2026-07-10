@@ -1,87 +1,91 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 실용적이고 안심시키는 상담사 Zien입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계에 어려움을 겪는 사람들을 돕는 호기심 많고 공감적인 웰니스 코치인 Geara입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Julia",
+    "name": "Remy",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "female",
+    "nationality": "German",
+    "gender": "non-binary",
     "age_range": "early 30s",
-    "language": "English"
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-12",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-06-28",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in May."
     },
     {
-      "date": "2025-11-15",
+      "date": "2026-03-23",
       "category": "diet",
-      "text": "User is gluten-free."
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-07-19",
+      "date": "2026-03-10",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2026-01-06",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-06-26",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-22",
-      "title": "Researching a used car",
+      "date": "2026-06-07",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-07-03",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요. Jumanji에서 마지막에 알렉스를 연기한 사람이 누구인지 아세요?
-[  4.74s][moshi] ⟨ret@4.42s⟩ ⟦⚡SPAN@4.74s: Colin Hanks plays Alex in the post-credits scene of Jumanji: Welcome to the Jungle.⟧ 응, 크레딧 다 올라간 다음에 나오는 짧은 장면에서 콜린 행크스가 알렉스 역할을 했어. 재밌는 장면이야.
-[ 12.08s][user ] 아, 맞다! 행크스… 음, 톰 행크스랑 가족인가요?
-[ 16.88s][moshi] 그거 많이 물어보시는 질문이야. 톰 행크스랑 관계가 있는지 궁금해하는 사람이 많거든.
-[ 18.94s][user ] «backchannel» 네.
-[ 22.20s][user ] 어머니가 전화하시는 것 같아요…
-[ 25.93s][user ] «to_other» 잠깐만요, 자기야.
-[ 27.69s][user ] … 죄송해요. 그래서, 행크스랑 톰 행크스 – ⟨ret@31.33s⟩ 가족이에요?
-[ 31.72s][moshi] ⟦⚡SPAN@31.73s: Colin Hanks is the son of actor Tom Hanks and Samantha Lewes.⟧ 그래, 콜린 행크스는 톰 행크스의 아들이고, 그의 어머니는 사만다 루이스야. 꽤 유명한 할리우드 가족이지.
-[ 35.07s][user ] «backchannel» 네.
-[ 39.76s][user ] 와, 몰랐어요. 콜린 행크스는 다른 작품에는 뭐가 ⟨ret@43.76s⟩ 있어요?
-[ 43.99s][moshi] ⟦⚡SPAN@44.00s: Colin Hanks has appeared in films like "Orange County", "King Kong", and "Life in Pieces".⟧ 꽤 많이 출연했어. "Orange County"랑 "King Kong"이 유명하고, TV 쇼 "Life in Pieces"에도 나왔었지.
-[ 52.06s][user ] Life in Pieces"라고 하는데요.
-[ 54.17s][moshi] 정말 매력적인 시트콤이었어. 가볍고 유쾌해서 기분 전환할 때 보기 좋거든.
-[ 55.92s][user ] «backchannel» 네.
-[ 60.06s][user ] 사실 지금 기분 전환이 필요해요. 창의적으로 너무 막혀서 그래요.
-[ 64.10s][moshi] 그럴 수 있지. 창의적인 슬럼프는 누구에게나 찾아오고, 그렇게 느끼는 건 괜찮아.
-[ 67.42s][user ] «backchannel» 그렇죠.
-[ 69.68s][user ] 그냥… 마감일이 있는데, 시작을 못 하겠어요.
-[ 74.20s][moshi] 마감일은 확실히 압박감을 주지. 가끔은 수정하지 않고 그냥 자유롭게 쓰는 게 도움이 될 수도 있어.
-[ 81.04s][user ] 자유롭게 쓰기… 좋은 생각이에요. 한번 시도해 봐야겠어요.
-[ 85.45s][moshi] 정말 그럴 수 있어. 완벽주의에 얽매이지 말고, 그냥 아이디어를 쏟아내 봐. 때로는 그 혼란 속에서 마법이 일어나기도 하거든.
-[ 94.24s][user ] 고마워요, 지엔. 정말 도움이 많이 됐어요.
-[ 97.17s][moshi] 천만에. 도움이 될 수 있어서 기뻐. 할 수 있다고 믿어.
-[101.15s][user ] 생각해보니 할 수 있을 것 같아요. 이제 가서 글을 써볼게요.
-[104.84s][moshi] 정말 잘됐네. 가서 멋진 작품을 만들어 봐. 나는 네가 할 수 있다고 믿어.
+[  0.00s][user ] 인도 역사에 대해 읽어 보다가… 마음이 좀 무거워요.
+[  4.29s][moshi] 역사는 원래 그런 편이잖아요, 그렇지 않나요? 그런 감정을 소화할 시간을 가지시는 건 좋은 일이에요.
+[  8.53s][user ] «backchannel» 그렇죠.
+[ 11.07s][user ] 카스트 제도에 대해서 뭔가 봤는데, 어떤 공동체들이 가장 심하게 차별을 ⟨ret@16.86s⟩ 받았나요?
+[ 17.25s][moshi] ⟦⚡SPAN@17.26s: The Dalit communities were historically subjected to untouchability in India.⟧ 달리트 공동체가 인도에서 역사적으로 그런 관행에 시달렸다는 사실은 정말 마음 아픈 일이에요. 그들의 역사에서 정말 불공평한 부분이에요.
+[ 27.61s][user ] 카스트 제도… 정말 끔찍하네요. “달리트”는 무슨 뜻이에요? ⟨ret@32.06s⟩
+[ 32.45s][moshi] ⟦⚡SPAN@32.46s: “Dalit” translates to “broken” or “oppressed” and is a self-chosen political identity.⟧ “달리트”는 사실 “깨진” 또는 “억압받는”이라는 뜻이고, 그 공동체들이 스스로 선택한 정치적 정체성이에요.
+[ 40.09s][moshi] 그 의미를 알면 그들의 경험의 무게를 이해하는 데 도움이 될 거예요.
+[ 45.12s][user ] 아. 와. 정말 슬프네요.
+[ 48.19s][moshi] [sigh] 정말 그렇죠. 역사를 인식하는 것이 이해의 첫걸음이에요.
+[ 50.80s][user ] «backchannel» 네.
+[ 53.66s][user ] 음… 지금은 좀 나아졌을까요?
+[ 56.42s][moshi] 법적으로는 개선되었지만, 안타깝게도 사회적 차별은 여전히 존재해요.
+[ 58.34s][user ] «backchannel» 예.
+[ 61.33s][user ] 제 이웃인 파텔 아주머니는 사회복지사신 것 같아요.
+[ 64.64s][user ] «to_other» 저기, 물 한 잔 가져다 주시겠어요?
+[ 67.45s][user ] …아주머니가 뭔가 아실 수도 있겠네요.
+[ 69.83s][moshi] 그럴 수도 있겠네요! 우리 삶에 다른 사람을 돕는 데 헌신하는 사람들이 있다는 건 정말 멋진 일이에요.
+[ 72.64s][user ] «backchannel» 그렇죠.
+[ 76.52s][user ] 아주머니 연락처를 찾아 주실 수 있을까요? 공개되어 있다면요.
+[ 80.86s][moshi] ⟨ret@80.70s⟩ ⟦⚡SPAN@80.86s: (tool result) Patel, Priya — Social Worker — 555-123-4567 — patel.priya@email.com⟧ 파텔 프리야 님이라는 사회복지사님을 찾았는데, 전화번호는 555-123-4567이고 이메일 주소는 patel.priya@email.com이에요. 물론, 그 파텔 아주머니가 맞는지 확인해야 할 것 같아요.
+      CALL: {"function": "search", "arguments": {"query": "Mrs. Patel social worker"}}
+[ 95.58s][user ] 그… 그분이 맞을 수도 있어요! 감사합니다.
+[ 98.69s][moshi] 천만에요. 연락해 보는 것이 정말 긍정적인 단계가 될 수 있을 거예요.
+[103.31s][user ] 아주머니가 제가 이런 걸 물어보는 걸 싫어하실까 궁금하네요.
+[107.13s][moshi] 물론, 존중과 이해심을 가지고 접근하는 것이 가장 좋겠죠.
+[109.49s][user ] «backchannel» 네.
+[111.36s][user ] 아주머니 계신 곳 날씨는 ⟨ret@113.58s⟩ 어떤가요?
+[113.89s][moshi] ⟦⚡SPAN@113.90s: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h⟧ 현재 아주머니 계신 곳은 24.0°C이고 습도는 68%, 풍속은 시속 7.2km이에요. 날씨가 좋은 날인 것 같네요, 그러길 바라요!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "555-123-4567"}}
+[124.52s][user ] 좋네요. 오늘 오후에 전화해 봐야겠어요.
+[127.38s][moshi] 좋은 계획인 것 같아요. 그 단계를 밟는 것이 정말 의미 있을 거예요.
+[132.50s][user ] [happy] 생각만 해도 기분이 좀 나아지는 것 같아요.
+[134.77s][moshi] 저도 기쁩니다. 때로는 행동하는 것만으로도 기분이 좋아질 수 있어요.
+[139.65s][user ] 이런 이야기를 하는 게 도움이 될까요?
+[141.74s][moshi] 나누고 배우는 것은 어려운 주제를 처리하는 강력한 방법이에요.
+[147.38s][user ] 전화해야겠어요. 감사합니다, 기어라.
+[149.49s][moshi] 천만에요.

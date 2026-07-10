@@ -4,178 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "Samuel",
+#     "name": "Taylor",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-28",
+#       "date": "2026-02-19",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2026-01-13",
+#       "date": "2026-02-18",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-11-27",
+#       "date": "2026-02-15",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-24",
+#       "category": "home",
+#       "text": "User's home address is 559 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-10-15",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-10-05",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-09-17",
-#       "category": "home",
-#       "text": "User's home address is 806 Oak Avenue."
+#       "date": "2025-08-11",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2026-06-19",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-11",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-24",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Who plays Dawn Summers in Buffy th | S2 It is. What year did "Buffy" even  | S3 That's a good point. What's the we | S4 That's… harder than it sounds, som
+# EXAMINER(FDB-v2) 단계: S1 I was just thinking about that sho | S2 …like I missed the last episode. | S3 Oh wow, that’s… a lot to take in. | S4 Maybe. Do you know if there are an
 
-     0.00s  user  발화 시작: Who plays Dawn Summers in Buffy the Vampire Slayer?
-     3.04s  <ret> 발화 (turn1 첫 프레임)
-     3.27s  agent 발화 시작: <ret> That would be Michelle Christine Trachtenberg, an Amer
-     3.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Michelle Christine Trachtenberg is an American actress who played Dawn
-     3.33s  user  발화 끝
-     9.53s  agent 발화 끝
-     9.55s  user  발화 시작: Oh, okay. What else has she been in?
-    11.59s  <ret> 발화 (turn3 첫 프레임)
-    11.82s  agent 발화 시작: <ret> She also starred in “Harriet the Spy” and “EuroTrip,” 
-    11.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: Michelle Trachtenberg also starred in "Harriet the Spy" and "EuroTrip.
-    11.86s  user  발화 끝
-    15.48s  user  발화 시작: Yeah.
-    15.93s  user  발화 끝
-    17.70s  user  발화 시작: Hmm, "EuroTrip"… I remember that one.
-    17.89s  agent 발화 끝
-    20.64s  agent 발화 시작: It’s a fun film, isn't it? A little bit of lighthearted esca
-    20.66s  user  발화 끝
-    25.78s  agent 발화 끝
-    26.70s  user  발화 시작: Yeah, definitely. What about her more recent work?
-    29.91s  <ret> 발화 (turn8 첫 프레임)
-    30.15s  agent 발화 시작: <ret> More recently, she had a recurring role in “Marvel’s A
-    30.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: Michelle Trachtenberg had a recurring role in "Marvel's Agents of S.H.
-    30.35s  user  발화 끝
-    33.21s  user  발화 시작: Mhm.
-    33.70s  user  발화 끝
-    35.38s  agent 발화 끝
-    35.58s  user  발화 시작: Oh, wow, she was in the Marvel universe!
-    38.24s  agent 발화 시작: It’s lovely to see actors find success across different genr
-    38.35s  user  발화 끝
-    43.19s  agent 발화 끝
-    43.77s  user  발화 시작: It is. What year did "Buffy" even end?
-    47.09s  <ret> 발화 (turn13 첫 프레임)
-    47.16s  agent 발화 시작: <ret> "Buffy the Vampire Slayer" concluded in 2003, after se
-    47.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: "Buffy the Vampire Slayer" concluded its run in 2003 after seven seaso
-    47.33s  user  발화 끝
-    52.38s  user  발화 시작: 2003… that feels like ages ago now.
-    52.44s  agent 발화 끝
-    55.85s  user  발화 끝
-    55.88s  agent 발화 시작: Time does have a way of slipping away, doesn't it? It's impo
-    58.87s  user  발화 시작: Yeah.
-    59.32s  user  발화 끝
-    61.39s  agent 발화 끝
-    61.71s  user  발화 시작: You're right. Do you think she still acts?
-    64.38s  <ret> 발화 (turn18 첫 프레임)
-    64.66s  user  발화 끝
-    64.69s  agent 발화 시작: <ret> Her last credited role was in 2020, in the series call
-    64.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: Michelle Trachtenberg's last credited role was in 2020, in the series 
-    66.20s  user  발화 시작: Okay.
-    67.03s  user  발화 끝
-    69.78s  user  발화 시작: 2020… so, relatively recently, then.
-    69.88s  agent 발화 끝
-    73.25s  agent 발화 시작: Yes, that suggests she is still active in the industry, thou
-    73.42s  user  발화 끝
-    78.57s  agent 발화 끝
-    79.92s  user  발화 시작: I wonder what she’s up to now.
-    81.86s  agent 발화 시작: Sometimes, allowing a little mystery can be peaceful. We don
-    81.90s  user  발화 끝
-    87.78s  agent 발화 끝
-    87.97s  user  발화 시작: That's a good point. What's the weather…
-    90.46s  user  발화 끝
-    91.58s  user  발화 시작: …like in Los Angeles?
-    92.77s  <ret> 발화 (turn26 첫 프레임)
-    93.09s  agent 발화 시작: <ret> It's currently 24.4 degrees Celsius in Los Angeles, wi
-    93.09s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.77s]: (tool result) Los Angeles, California currently has 24.4°C, humidity 6
-    93.23s  user  발화 끝
-    95.74s  user  발화 시작: Really?
-    96.70s  user  발화 끝
-    99.67s  user  발화 시작: Hmm, nice. A bit warm, maybe?
-    99.86s  agent 발화 끝
-   102.45s  agent 발화 시작: A little warmth can be very comforting, especially if you fi
-   102.58s  user  발화 끝
-   108.13s  user  발화 시작: True. What's a good way to de-stress?
-   108.28s  agent 발화 끝
-   111.10s  agent 발화 시작: Taking a few deep breaths can make a world of difference, gr
-   111.22s  user  발화 끝
-   116.00s  agent 발화 끝
-   116.38s  user  발화 시작: Yeah, I try to do that sometimes.
-   118.42s  <ret> 발화 (turn33 첫 프레임)
-   118.48s  agent 발화 시작: <ret> That’s wonderful. Even a few moments of mindful breath
-   118.50s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.47s]: The capital of Australia is Canberra, a planned city established in 19
-   118.73s  user  발화 끝
-   123.83s  agent 발화 시작: It's also helpful to identify what specifically is causing y
-   123.95s  agent 발화 끝
-   129.34s  agent 발화 끝
-   129.50s  user  발화 시작: That's… harder than it sounds, sometimes.
-   132.41s  user  발화 끝
-   132.84s  agent 발화 시작: It absolutely can be. It’s okay to start small, just acknowl
-   139.00s  user  발화 시작: I guess so. Do you have any recommendations for books on min
-   139.10s  agent 발화 끝
-   142.94s  agent 발화 시작: There are many wonderful resources. Exploring different auth
-   143.03s  user  발화 끝
-   145.72s  user  발화 시작: Yeah.
-   146.18s  user  발화 끝
-   149.42s  agent 발화 끝
-   149.54s  user  발화 시작: That's true. What's a good restaurant in New York City?
-   153.16s  <ret> 발화 (turn41 첫 프레임)
-   153.32s  agent 발화 시작: <ret> Carmine's is an Italian restaurant in New York City wi
-   153.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) Carmine's is an Italian restaurant in New York City with
-   153.47s  user  발화 끝
-   156.78s  user  발화 시작: Okay.
-   157.41s  user  발화 끝
-   159.48s  agent 발화 끝
-   160.73s  user  발화 시작: Italian sounds good. Thanks, Arunaia.
-   163.40s  agent 발화 시작: You're very welcome. Remember to be kind to yourself, always
-   163.50s  user  발화 끝
-   167.88s  agent 발화 끝
+     0.00s  user  발화 시작: I was just thinking about that show, “The Haves and the Have
+     3.84s  user  발화 끝
+     4.01s  agent 발화 시작: It’s a show that really draws you in, doesn't it? I find tho
+    10.01s  user  발화 시작: Do you remember how it ended? I feel…
+    10.07s  agent 발화 끝
+    13.34s  user  발화 끝
+    15.33s  user  발화 시작: …like I missed the last episode.
+    17.11s  <ret> 발화 (turn4 첫 프레임)
+    17.40s  user  발화 끝
+    17.41s  agent 발화 시작: <ret> The show wrapped up on July nineteenth, two thousand t
+    17.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: “The Haves and the Have Nots” concluded on July 19, 2022, with a shock
+    24.81s  user  발화 시작: Oh wow, that’s… a lot to take in.
+    24.97s  agent 발화 끝
+    27.41s  <ret> 발화 (turn6 첫 프레임)
+    27.55s  agent 발화 시작: <ret> Sometimes endings leave us feeling a little exhausted,
+    27.57s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.67s]: The current price of gold per troy ounce is $2,328.60 as of July 10, 2
+    27.68s  user  발화 끝
+    34.23s  agent 발화 끝
+    34.96s  user  발화 시작: Yeah, definitely. I think I just need to find something ligh
+    38.68s  agent 발화 시작: That sounds like a very good idea. Perhaps a comedy or somet
+    38.75s  user  발화 끝
+    44.19s  agent 발화 끝
+    45.78s  user  발화 시작: Maybe. Do you know if there are any good movies playing near
+    49.71s  <ret> 발화 (turn10 첫 프레임)
+    49.94s  agent 발화 시작: <ret> The Super Mario Bros. Movie is playing one and a half 
+    49.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: (tool result) The Super Mario Bros. Movie — 1.5 miles — 2:45 PM, 5:15 
+    50.04s  user  발화 끝
+    59.07s  agent 발화 끝

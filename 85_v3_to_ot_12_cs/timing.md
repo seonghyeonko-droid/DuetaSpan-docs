@@ -4,117 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Julia",
+#     "name": "Remy",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
+#     "nationality": "German",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-12",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2025-11-15",
+#       "date": "2026-03-23",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-07-19",
+#       "date": "2026-03-10",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-01-06",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-06-26",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-22",
-#       "title": "Researching a used car",
+#       "date": "2026-06-07",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-03",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. Jumanji에서 마지막에 알렉스를 연기한 사람이 | S2 잠깐만요, 자기야. | S3 Life in Pieces"라고 하는데요. | S4 자유롭게 쓰기… 좋은 생각이에요. 한번 시도해 봐야겠어요.
+# EXAMINER(FDB-v2) 단계: S1 인도 역사에 대해 읽어 보다가… 마음이 좀 무거워요. | S2 음… 지금은 좀 나아졌을까요? | S3 아주머니 연락처를 찾아 주실 수 있을까요? 공개되어 있다면요. | S4 좋네요. 오늘 오후에 전화해 봐야겠어요.
 
-     0.00s  user  발화 시작: 안녕하세요. Jumanji에서 마지막에 알렉스를 연기한 사람이 누구인지 아세요?
-     4.42s  <ret> 발화 (turn1 첫 프레임)
-     4.68s  user  발화 끝
-     4.74s  agent 발화 시작: <ret> 응, 크레딧 다 올라간 다음에 나오는 짧은 장면에서 콜린 행크스가 알렉스 역할을 했어. 재밌는 장
-     4.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: Colin Hanks plays Alex in the post-credits scene of Jumanji: Welcome t
-    12.02s  agent 발화 끝
-    12.08s  user  발화 시작: 아, 맞다! 행크스… 음, 톰 행크스랑 가족인가요?
-    16.88s  agent 발화 시작: 그거 많이 물어보시는 질문이야. 톰 행크스랑 관계가 있는지 궁금해하는 사람이 많거든.
-    16.89s  user  발화 끝
-    18.94s  user  발화 시작: 네.
-    19.57s  user  발화 끝
-    22.20s  user  발화 시작: 어머니가 전화하시는 것 같아요…
-    22.43s  agent 발화 끝
-    24.46s  user  발화 끝
-    25.93s  user  발화 시작: 잠깐만요, 자기야.
-    27.69s  user  발화 시작: … 죄송해요. 그래서, 행크스랑 톰 행크스 – 가족이에요?
-    27.73s  user  발화 끝
-    31.33s  <ret> 발화 (turn8 첫 프레임)
-    31.72s  agent 발화 시작: <ret> 그래, 콜린 행크스는 톰 행크스의 아들이고, 그의 어머니는 사만다 루이스야. 꽤 유명한 할리우드 
-    31.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: Colin Hanks is the son of actor Tom Hanks and Samantha Lewes.
-    31.85s  user  발화 끝
-    35.07s  user  발화 시작: 네.
-    35.52s  user  발화 끝
-    39.60s  agent 발화 끝
-    39.76s  user  발화 시작: 와, 몰랐어요. 콜린 행크스는 다른 작품에는 뭐가 있어요?
-    43.76s  <ret> 발화 (turn11 첫 프레임)
-    43.99s  agent 발화 시작: <ret> 꽤 많이 출연했어. "Orange County"랑 "King Kong"이 유명하고, TV 쇼 "L
-    44.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: Colin Hanks has appeared in films like "Orange County", "King Kong", a
-    44.11s  user  발화 끝
-    51.54s  agent 발화 끝
-    52.06s  user  발화 시작: Life in Pieces"라고 하는데요.
-    54.17s  agent 발화 시작: 정말 매력적인 시트콤이었어. 가볍고 유쾌해서 기분 전환할 때 보기 좋거든.
-    54.32s  user  발화 끝
-    55.92s  user  발화 시작: 네.
-    56.56s  user  발화 끝
-    60.06s  user  발화 시작: 사실 지금 기분 전환이 필요해요. 창의적으로 너무 막혀서 그래요.
-    60.15s  agent 발화 끝
-    64.10s  agent 발화 시작: 그럴 수 있지. 창의적인 슬럼프는 누구에게나 찾아오고, 그렇게 느끼는 건 괜찮아.
-    64.27s  user  발화 끝
-    67.42s  user  발화 시작: 그렇죠.
-    68.15s  user  발화 끝
-    69.66s  agent 발화 끝
-    69.68s  user  발화 시작: 그냥… 마감일이 있는데, 시작을 못 하겠어요.
-    73.75s  user  발화 끝
-    74.20s  agent 발화 시작: 마감일은 확실히 압박감을 주지. 가끔은 수정하지 않고 그냥 자유롭게 쓰는 게 도움이 될 수도 있어.
-    81.04s  user  발화 시작: 자유롭게 쓰기… 좋은 생각이에요. 한번 시도해 봐야겠어요.
-    81.19s  agent 발화 끝
-    85.45s  agent 발화 시작: 정말 그럴 수 있어. 완벽주의에 얽매이지 말고, 그냥 아이디어를 쏟아내 봐. 때로는 그 혼란 속에서 마법이 
-    85.53s  user  발화 끝
-    93.61s  agent 발화 끝
-    94.24s  user  발화 시작: 고마워요, 지엔. 정말 도움이 많이 됐어요.
-    97.17s  agent 발화 시작: 천만에. 도움이 될 수 있어서 기뻐. 할 수 있다고 믿어.
-    97.29s  user  발화 끝
-   101.15s  user  발화 시작: 생각해보니 할 수 있을 것 같아요. 이제 가서 글을 써볼게요.
-   101.24s  agent 발화 끝
-   104.84s  agent 발화 시작: 정말 잘됐네. 가서 멋진 작품을 만들어 봐. 나는 네가 할 수 있다고 믿어.
-   104.85s  user  발화 끝
-   110.21s  agent 발화 끝
+     0.00s  user  발화 시작: 인도 역사에 대해 읽어 보다가… 마음이 좀 무거워요.
+     3.93s  user  발화 끝
+     4.29s  agent 발화 시작: 역사는 원래 그런 편이잖아요, 그렇지 않나요? 그런 감정을 소화할 시간을 가지시는 건 좋은 일이에요.
+     8.53s  user  발화 시작: 그렇죠.
+     9.17s  user  발화 끝
+    10.92s  agent 발화 끝
+    11.07s  user  발화 시작: 카스트 제도에 대해서 뭔가 봤는데, 어떤 공동체들이 가장 심하게 차별을 받았나요?
+    16.86s  <ret> 발화 (turn4 첫 프레임)
+    17.19s  user  발화 끝
+    17.25s  agent 발화 시작: <ret> 달리트 공동체가 인도에서 역사적으로 그런 관행에 시달렸다는 사실은 정말 마음 아픈 일이에요. 그들
+    17.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: The Dalit communities were historically subjected to untouchability in
+    27.61s  user  발화 시작: 카스트 제도… 정말 끔찍하네요. “달리트”는 무슨 뜻이에요?
+    27.82s  agent 발화 끝
+    32.06s  <ret> 발화 (turn6 첫 프레임)
+    32.33s  user  발화 끝
+    32.45s  agent 발화 시작: <ret> “달리트”는 사실 “깨진” 또는 “억압받는”이라는 뜻이고, 그 공동체들이 스스로 선택한 정치적 정
+    32.46s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.74s]: “Dalit” translates to “broken” or “oppressed” and is a self-chosen pol
+    40.09s  agent 발화 시작: 그 의미를 알면 그들의 경험의 무게를 이해하는 데 도움이 될 거예요.
+    40.19s  agent 발화 끝
+    45.10s  agent 발화 끝
+    45.12s  user  발화 시작: 아. 와. 정말 슬프네요.
+    48.17s  user  발화 끝
+    48.19s  agent 발화 시작: [sigh] 정말 그렇죠. 역사를 인식하는 것이 이해의 첫걸음이에요.
+    50.80s  user  발화 시작: 네.
+    51.44s  user  발화 끝
+    53.05s  agent 발화 끝
+    53.66s  user  발화 시작: 음… 지금은 좀 나아졌을까요?
+    56.34s  user  발화 끝
+    56.42s  agent 발화 시작: 법적으로는 개선되었지만, 안타깝게도 사회적 차별은 여전히 존재해요.
+    58.34s  user  발화 시작: 예.
+    58.89s  user  발화 끝
+    61.33s  user  발화 시작: 제 이웃인 파텔 아주머니는 사회복지사신 것 같아요.
+    61.38s  agent 발화 끝
+    64.64s  user  발화 시작: 저기, 물 한 잔 가져다 주시겠어요?
+    64.75s  user  발화 끝
+    67.45s  user  발화 시작: …아주머니가 뭔가 아실 수도 있겠네요.
+    67.59s  user  발화 끝
+    69.83s  agent 발화 시작: 그럴 수도 있겠네요! 우리 삶에 다른 사람을 돕는 데 헌신하는 사람들이 있다는 건 정말 멋진 일이에요.
+    69.94s  user  발화 끝
+    72.64s  user  발화 시작: 그렇죠.
+    73.21s  user  발화 끝
+    76.52s  user  발화 시작: 아주머니 연락처를 찾아 주실 수 있을까요? 공개되어 있다면요.
+    76.68s  agent 발화 끝
+    80.70s  <ret> 발화 (turn20 첫 프레임)
+    80.86s  agent 발화 시작: <ret> 파텔 프리야 님이라는 사회복지사님을 찾았는데, 전화번호는 555-123-4567이고 이메일 주소는
+    80.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.85s]: (tool result) Patel, Priya — Social Worker — 555-123-4567 — patel.priy
+    80.87s  user  발화 끝
+    95.58s  user  발화 시작: 그… 그분이 맞을 수도 있어요! 감사합니다.
+    95.70s  agent 발화 끝
+    98.69s  agent 발화 시작: 천만에요. 연락해 보는 것이 정말 긍정적인 단계가 될 수 있을 거예요.
+    98.81s  user  발화 끝
+   103.31s  user  발화 시작: 아주머니가 제가 이런 걸 물어보는 걸 싫어하실까 궁금하네요.
+   103.41s  agent 발화 끝
+   107.13s  agent 발화 시작: 물론, 존중과 이해심을 가지고 접근하는 것이 가장 좋겠죠.
+   107.24s  user  발화 끝
+   109.49s  user  발화 시작: 네.
+   109.99s  user  발화 끝
+   111.29s  agent 발화 끝
+   111.36s  user  발화 시작: 아주머니 계신 곳 날씨는 어떤가요?
+   113.58s  <ret> 발화 (turn27 첫 프레임)
+   113.89s  agent 발화 시작: <ret> 현재 아주머니 계신 곳은 24.0°C이고 습도는 68%, 풍속은 시속 7.2km이에요. 날씨가 좋
+   113.90s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.80s]: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h
+   114.08s  user  발화 끝
+   124.52s  user  발화 시작: 좋네요. 오늘 오후에 전화해 봐야겠어요.
+   124.69s  agent 발화 끝
+   127.38s  agent 발화 시작: 좋은 계획인 것 같아요. 그 단계를 밟는 것이 정말 의미 있을 거예요.
+   127.38s  user  발화 끝
+   132.50s  user  발화 시작: [happy] 생각만 해도 기분이 좀 나아지는 것 같아요.
+   132.56s  agent 발화 끝
+   134.77s  agent 발화 시작: 저도 기쁩니다. 때로는 행동하는 것만으로도 기분이 좋아질 수 있어요.
+   134.99s  user  발화 끝
+   139.65s  user  발화 시작: 이런 이야기를 하는 게 도움이 될까요?
+   139.68s  agent 발화 끝
+   141.74s  agent 발화 시작: 나누고 배우는 것은 어려운 주제를 처리하는 강력한 방법이에요.
+   141.77s  user  발화 끝
+   146.42s  agent 발화 끝
+   147.38s  user  발화 시작: 전화해야겠어요. 감사합니다, 기어라.
+   149.49s  agent 발화 시작: 천만에요.
+   149.74s  user  발화 끝
+   150.63s  agent 발화 끝

@@ -4,87 +4,89 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "성정",
+#     "name": "가담",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-05-19",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-05-27",
+#       "date": "2026-03-24",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2026-04-26",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-03-17",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-03-12",
+#       "date": "2026-02-26",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "text": "User is planning a trip to Vietnam in December."
 #     },
 #     {
-#       "date": "2025-08-30",
+#       "date": "2026-02-12",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2025-11-07",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-06-24",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-22",
-#       "title": "Researching a used car",
+#       "date": "2025-06-12",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 뭘 도와주는 사람이에요? | S2 그냥… 뭘 해야 할지 막막해요. 뭘 먼저 시작해야 할지 모르겠 | S3 …완벽주의가 문제라는 말씀이시죠? 저도 그런 것 같아요. | S4 음… 책상 정리하는 거?
+# EXAMINER(FDB-v2) 단계: S1 혹시 무슨 일을 하는 사람이에요? | S2 사실 요즘 회사 일이 너무 많아서 잠도 제대로 못 자고 있어요 | S3 네, 그렇죠. 어떻게 해야 할지 모르겠어요. | S4 음… 책 읽는 거요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 성정님. 저는 타에미라고 해요. 혹시 오늘 하루 어떻게 보내셨는지 여쭤봐도 될까요?
-     6.49s  agent 발화 끝
-     7.44s  user  발화 시작: 혹시 뭘 도와주는 사람이에요?
-     9.37s  agent 발화 시작: 저는 생산성 향상이나 일상생활의 루틴을 만드는 걸 도와드리는 웰니스 코치랍니다. 혹시 지금 특별히 고민하고 
-     9.43s  user  발화 끝
-    17.94s  agent 발화 끝
-    18.00s  user  발화 시작: 음… 요즘 자꾸 미루게 돼요. 해야 할 일이 쌓여서 시작하기도 싫고.
-    23.21s  agent 발화 시작: 일이 많아서 시작이 어려우시군요. 그런 기분일 때는 뭘 하면 좋을지, 같이 한번 생각해 볼까요?
-    23.37s  user  발화 끝
-    29.28s  agent 발화 끝
-    29.69s  user  발화 시작: 그냥… 뭘 해야 할지 막막해요. 뭘 먼저 시작해야 할지 모르겠어요.
-    34.64s  user  발화 끝
-    35.10s  agent 발화 시작: 막막한 마음, 충분히 이해가 가요. 중요한 건 완벽하게 해내려고 하기보다는 —
-    39.49s  user  발화 시작: …완벽주의가 문제라는 말씀이시죠? 저도 그런 것 같아요.
-    40.10s  agent 발화 끝
-    43.52s  agent 발화 시작: 아, 네, 맞아요. 완벽주의는 때로는 오히려 일을 더 어렵게 만들 수 있답니다. 완벽하게 하려고 애쓰기보다는
-    43.56s  user  발화 끝
-    47.14s  user  발화 시작: 네.
-    47.63s  user  발화 끝
-    52.69s  agent 발화 시작: 작은 성공들이 쌓이면 자신감도 생기고, 다음 단계로 나아가는 동기가 될 거예요. 혹시 지금 당장 할 수 있는
-    52.70s  agent 발화 끝
-    62.66s  agent 발화 끝
-    62.89s  user  발화 시작: 음… 책상 정리하는 거?
-    64.96s  user  발화 끝
-    65.16s  agent 발화 시작: 책상 정리, 아주 좋은 시작이네요! 정리된 공간은 마음도 정리하는 데 도움이 될 수 있답니다.
-    71.28s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 가담님. 저는 라엔이라고 해요. 힘든 일이 있으실 때 편안하게 이야기 나눌 수 있도록 돕는 상담
+     5.71s  user  발화 시작: 그치.
+     6.21s  user  발화 끝
+     7.60s  agent 발화 끝
+     8.33s  user  발화 시작: 혹시 무슨 일을 하는 사람이에요?
+    10.26s  agent 발화 시작: 저는 가담님의 마음을 편안하게 하고, 스트레스를 줄이는 방법을 함께 찾아보는 역할을 합니다. 지금 어떤 점이
+    10.40s  user  발화 끝
+    13.14s  user  발화 시작: 음.
+    13.59s  user  발화 끝
+    18.65s  agent 발화 끝
+    18.75s  agent 발화 시작: 혹시 최근에 특별히 걱정되는 일이나 마음을 짓누르는 무거운 감정이 있으신가요? 무엇이든 괜찮으니 편하게 말씀
+    26.16s  agent 발화 끝
+    26.21s  user  발화 시작: 사실 요즘 회사 일이 너무 많아서 잠도 제대로 못 자고 있어요.
+    29.62s  agent 발화 시작: 일이 많아 잠까지 설치신다니, 정말 힘드시겠어요. 몸과 마음이 많이 지쳐 계실 텐데, 잠 못 이루는 밤이 계
+    29.81s  user  발화 끝
+    35.70s  user  발화 시작: 응.
+    36.20s  user  발화 끝
+    38.98s  agent 발화 끝
+    40.03s  user  발화 시작: 네, 그렇죠. 어떻게 해야 할지 모르겠어요.
+    43.17s  agent 발화 시작: 잠자리에 들기 전에 따뜻한 물로 샤워를 하거나, 잔잔한 음악을 듣는 것이 도움이 될 수 있어요. 아니면 가벼
+    43.27s  user  발화 끝
+    53.69s  user  발화 시작: 응.
+    54.14s  user  발화 끝
+    56.80s  agent 발화 끝
+    56.83s  user  발화 시작: 음… 책 읽는 거요.
+    58.60s  agent 발화 시작: 책 읽는 것을 좋아하시는군요. 책 속의 이야기에 몰입하는 동안 잠시나마 현실의 어려움을 잊을 수 있어서 좋죠
+    58.63s  user  발화 끝
+    68.61s  agent 발화 끝

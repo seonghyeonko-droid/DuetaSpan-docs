@@ -4,61 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "채서",
+#     "name": "소경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-06-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
-#     },
-#     {
-#       "date": "2026-06-08",
+#       "date": "2026-04-21",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-01-23",
+#       "date": "2026-03-23",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-03-12",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-01-09",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2025-10-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2025-06-20",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
+#       "date": "2025-06-27",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-25",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-04-27",
+#       "date": "2026-05-05",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -66,79 +58,101 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-02",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-25",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-27",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 양철 나무꾼이 오즈의 마법사에서 뭘 원했는지 아세요? | S2 에메랄드 시가 어디였죠? | S3 …그럼 양철 나무꾼은 결국 마음을 얻었나요? | S4 와, 열네 권이나요? 다 읽어보고 싶네요. 혹시 그 책들 어디
+# EXAMINER(FDB-v2) 단계: S1 아메리칸 파로아 말은 누가 켄터키 더비에서 탔어요? | S2 아, 그렇군요. 그 사람 나이가 궁금하네요. | S3 … 혹시 아메리칸 파로아 말고, 그 사람이 제일 좋아하는 말은 | S4 그럼 그 사람이 트리플 크라운을 몇 번이나 탔어요?
 
-     0.00s  user  발화 시작: 혹시 양철 나무꾼이 오즈의 마법사에서 뭘 원했는지 아세요?
+     0.00s  user  발화 시작: 아메리칸 파로아 말은 누가 켄터키 더비에서 탔어요?
      3.63s  <ret> 발화 (turn1 첫 프레임)
-     3.94s  agent 발화 시작: <ret> 오즈의 마법사에서 양철 나무꾼은 마음을 갖고 싶어 했어요. 그런 마음 따뜻한 이야기를 좋아하시나요
-     3.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: The Tin Woodman wished for a heart in the story, The Wonderful Wizard 
-     4.03s  user  발화 끝
-     8.52s  user  발화 시작: 어.
-     9.19s  user  발화 끝
-    11.08s  user  발화 시작: 네, 그런 이야기 좋아해요. 근데 그 마음을 왜 그렇게 원했는데요?
-    11.31s  agent 발화 끝
-    15.35s  <ret> 발화 (turn4 첫 프레임)
-    15.42s  agent 발화 시작: <ret> 마음이 없어서 사랑을 못 느낀다고 생각했고, 그런 감정을 경험하고 싶어 했대요. 슬픈 이야기죠, 
-    15.43s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.41s]: He felt he was incapable of love without a heart, and longed to experi
-    15.57s  user  발화 끝
-    22.64s  user  발화 시작: 그렇네요. 그 마음을 얻으려고 얼마나 힘들었을까요?
-    22.82s  agent 발화 끝
-    26.00s  <ret> 발화 (turn6 첫 프레임)
-    26.07s  agent 발화 시작: <ret> 에메랄드 시로 가서 마법사에게 마음을 구하기까지 많은 위험과 고난을 겪었다고 해요.
-    26.07s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.25s]: The Tin Woodman faced many dangers and trials on his journey to the Em
-    26.24s  user  발화 끝
-    30.28s  user  발화 시작: 그래.
-    30.63s  user  발화 끝
-    32.24s  user  발화 시작: 에메랄드 시가 어디였죠?
-    32.32s  agent 발화 끝
-    33.42s  <ret> 발화 (turn9 첫 프레임)
-    33.66s  agent 발화 시작: <ret> 에메랄드 시는 오즈 나라에 있는 가상의 도시인데, 에메랄드로 만들어졌다고 묘사돼요.
-    33.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) The Emerald City is a fictional city in the Land of Oz, 
-    33.85s  user  발화 끝
-    37.07s  user  발화 시작: 어.
-    37.29s  user  발화 끝
-    39.64s  agent 발화 끝
-    39.81s  user  발화 시작: 에메랄드로 만들어졌다니! 정말 신기하네요. 그 마법사는 진짜 마법사였나요?
-    45.28s  <ret> 발화 (turn12 첫 프레임)
-    45.43s  agent 발화 시작: <ret> 그런데 오즈 마법사는 속임수와 환상을 사용하는 평범한 사람이었어요—
-    45.44s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.86s]: The Wizard of Oz was revealed to be a humbug, an ordinary man using il
-    45.61s  user  발화 끝
-    49.48s  user  발화 시작: …그럼 양철 나무꾼은 결국 마음을 얻었나요?
-    50.29s  agent 발화 끝
-    52.25s  <ret> 발화 (turn14 첫 프레임)
-    52.41s  agent 발화 시작: <ret> 아, 네. 결국 마음을 얻었는지 궁금하시군요. 마법사는 진짜 마음을 줄 순 없었지만, 여정에서 연
-    52.41s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.73s]: Though the Wizard couldn't provide a physical heart, the Tin Woodman r
-    52.58s  user  발화 끝
-    62.15s  agent 발화 끝
-    62.30s  user  발화 시작: 아, 깨달음이 중요한 거였군요. 그럼 그 마음은 진짜 마음이었나요?
-    66.31s  user  발화 끝
-    66.58s  agent 발화 시작: 마음은 늘 그 안에 있었던 거죠. 스스로 찾은 마음이니까요.
-    69.34s  user  발화 시작: 응.
-    69.88s  user  발화 끝
-    70.61s  agent 발화 끝
-    71.95s  user  발화 시작: 그 깨달음이 얼마나 감동적일까요. 혹시 다른 오즈의 마법사 이야기들도 있나요?
-    76.39s  <ret> 발화 (turn19 첫 프레임)
-    76.78s  agent 발화 시작: <ret> L. 프랭크 바움은 오즈에 관한 소설을 열네 권이나 썼는데, 도로시와 그녀의 동료들의 모험이 계속
-    76.79s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.29s]: (tool result) L. Frank Baum wrote fourteen novels about Oz, continuing
-    76.94s  user  발화 끝
-    85.07s  agent 발화 끝
-    85.54s  user  발화 시작: 와, 열네 권이나요? 다 읽어보고 싶네요. 혹시 그 책들 어디서 구할 수 있나요?
-    90.84s  <ret> 발화 (turn21 첫 프레임)
-    91.23s  agent 발화 시작: <ret> 아마존이나 반즈 앤 노블 같은 온라인 서점에서 오즈 시리즈 책을 판매하고 있어요.
-    91.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) Several online retailers such as Amazon and Barnes & Nob
-    91.33s  user  발화 끝
-    96.18s  agent 발화 끝
-    96.51s  user  발화 시작: 감사합니다. 덕분에 오즈의 마법사에 대해 더 많이 알게 됐어요.
-   100.53s  user  발화 끝
-   100.89s  agent 발화 시작: 도움이 되었다니 기쁘네요.
-   102.82s  agent 발화 끝
+     3.94s  agent 발화 시작: <ret> 이천십오년 켄터키 더비에서 아메리칸 파로아를 탄 기수는 빅터 에스피노사 씨입니다. 혹시 경마에 관
+     3.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: Victor Espinoza rode American Pharoah to victory in the 2015 Kentucky 
+     4.02s  user  발화 끝
+    13.03s  agent 발화 끝
+    13.10s  user  발화 시작: 그 사람은 또 다른 유명한 말도 탔어요?
+    15.33s  <ret> 발화 (turn3 첫 프레임)
+    15.40s  agent 발화 시작: <ret> 빅터 에스피노사 씨는 워 프론트, 모레노 같은 유명한 말도 탔다고 합니다. 다양한 말들과 함께 레
+    15.41s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.76s]: Victor Espinoza has ridden numerous notable horses, including War Fron
+    15.54s  user  발화 끝
+    18.36s  user  발화 시작: 음.
+    18.71s  user  발화 끝
+    23.76s  user  발화 시작: 그 사람은 지금도 경마 기수로 활동해요?
+    24.16s  agent 발화 끝
+    26.16s  <ret> 발화 (turn6 첫 프레임)
+    26.23s  agent 발화 시작: <ret> 이천이십삼년 말 기준으로 빅터 에스피노사 씨는 여전히 현역 기수로 활동하고 있습니다. 꾸준히 활동
+    26.24s  ⚡SPAN 주입 [d'=1.84s / d_lead=8.62s]: As of late 2023, Victor Espinoza continues to be an active jockey.
+    26.44s  user  발화 끝
+    34.72s  user  발화 시작: 아, 그렇군요. 그 사람 나이가 궁금하네요.
+    34.85s  agent 발화 끝
+    36.74s  <ret> 발화 (turn8 첫 프레임)
+    36.97s  agent 발화 시작: <ret> 빅터 에스피노사 씨는 천구백팔십이년 오월 이십삼일생으로, 이천이십육년 칠월 기준으로 사십이세입니다
+    36.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: Victor Espinoza was born on May 23, 1982, making him 42 years old as o
+    37.12s  user  발화 끝
+    44.11s  agent 발화 끝
+    44.76s  user  발화 시작: 마흔두살이면 한창이네요. 그 사람 고향은 어디예요?
+    48.26s  <ret> 발화 (turn10 첫 프레임)
+    48.33s  agent 발화 시작: <ret> 빅터 에스피노사 씨는 멕시코에서 태어나 미국으로 이민 오셨다고 합니다.
+    48.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: Victor Espinoza was born in Mexico and later immigrated to the United 
+    48.51s  user  발화 끝
+    53.19s  user  발화 시작: 멕시코 출신이라니, 신기하네요.
+    53.33s  agent 발화 끝
+    55.32s  agent 발화 시작: 다양한 배경을 가진 분들이 경마계에 기여하는 모습이 멋지죠. —
+    55.50s  user  발화 끝
+    58.76s  user  발화 시작: … 혹시 아메리칸 파로아 말고, 그 사람이 제일 좋아하는 말은 뭐예요?
+    59.57s  agent 발화 끝
+    62.34s  <ret> 발화 (turn14 첫 프레임)
+    62.50s  user  발화 끝
+    62.57s  agent 발화 시작: <ret> 죄송하지만, 빅터 에스피노사 씨가 가장 좋아하는 말에 대한 정보는 찾을 수 없었습니다.
+    62.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (no information found)
+    65.09s  user  발화 시작: 응.
+    65.31s  user  발화 끝
+    68.40s  agent 발화 끝
+    68.59s  user  발화 시작: 아쉽네요. 그럼 그 사람이 우승한 다른 경마 대회는 뭐가 있어요?
+    72.57s  <ret> 발화 (turn17 첫 프레임)
+    72.80s  agent 발화 시작: <ret> 빅터 에스피노사 씨는 이천십오년에 아메리칸 파로아와 함께 트리플 크라운을 달성했는데, 벨몬트 스테
+    72.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: Victor Espinoza won the Triple Crown with American Pharoah in 2015, in
+    72.93s  user  발화 끝
+    76.26s  user  발화 시작: 어어.
+    76.76s  user  발화 끝
+    81.33s  agent 발화 끝
+    82.78s  user  발화 시작: 트리플 크라운이라… 대단하네요! 그게 제일 큰 대회예요?
+    86.71s  user  발화 끝
+    86.72s  agent 발화 시작: 트리플 크라운은 경마계에서 가장 권위 있는 대회 중 하나로 꼽힙니다.
+    90.10s  user  발화 시작: 음.
+    90.45s  user  발화 끝
+    91.44s  agent 발화 끝
+    92.81s  user  발화 시작: 그럼 그 사람이 트리플 크라운을 몇 번이나 탔어요?
+    95.26s  <ret> 발화 (turn23 첫 프레임)
+    95.49s  agent 발화 시작: <ret> 빅터 에스피노사 씨는 이천십오년 아메리칸 파로아와 함께 트리플 크라운을 한 번 우승했습니다.
+    95.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.94s]: Victor Espinoza has won the Triple Crown once, in 2015 with American P
+    95.68s  user  발화 끝
+    98.44s  user  발화 시작: 어.
+    98.84s  user  발화 끝
+   102.44s  agent 발화 끝
+   102.64s  user  발화 시작: 딱 한 번이군요. 그 말, 엄청 유명하죠?
+   105.23s  agent 발화 시작: 아메리칸 파로아는 정말 역사에 남을 명마라고 할 수 있습니다.
+   105.41s  user  발화 끝
+   108.30s  user  발화 시작: 응.
+   108.61s  user  발화 끝
+   109.53s  agent 발화 끝
+   110.13s  user  발화 시작: 맞아요. 그 말, 지금은 어디에서 지내요?
+   113.19s  <ret> 발화 (turn29 첫 프레임)
+   113.36s  user  발화 끝
+   113.58s  agent 발화 시작: <ret> 아메리칸 파로아는 은퇴해서 현재 켄터키의 쿨모어 스터드에서 지내고 있습니다. 편안하게 휴식을 취하
+   113.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: American Pharoah is now retired and stands at Coolmore Stud in Kentuck
+   121.17s  agent 발화 끝

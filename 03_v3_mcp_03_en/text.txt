@@ -1,92 +1,84 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Horax, a encouraging and non-judgmental wellness coach who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Oraeia, a grounded and empathetic supportive advisor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Nina",
+    "name": "Caleb",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Australian",
-    "gender": "female",
+    "nationality": "American",
+    "gender": "male",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-15",
+      "date": "2025-11-17",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
+    },
+    {
+      "date": "2025-10-30",
+      "category": "home",
+      "text": "User's home address is 565 Birch Road."
+    },
+    {
+      "date": "2025-09-28",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-03-20",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in December."
+      "date": "2025-06-25",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-12-25",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-10-26",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-09-05",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2025-07-04",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-06-02",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-22",
-      "title": "Researching a used car",
+      "date": "2026-06-12",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2026-05-25",
+      "date": "2026-05-18",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-03-08",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-03-23",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's the biking distance from the Suzhou Gardens to Pingjiang ⟨ret@3.54s⟩ Road?
-[  3.93s][moshi] ⟦⚡SPAN@3.94s: (tool result) The biking distance from Suzhou Gardens to Pingjiang Road is approximately 2.8 kilometers, with ⟧ The biking distance between the Suzhou Gardens and Pingjiang Road is about 2.8 kilometers, taking around 11 minutes.
-      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Suzhou Gardens", "destination": "Pingjiang Road"}}
-[ 10.49s][user ] That sounds pretty manageable. Could you book me a bike rental nearby the Suzhou Gardens for tomorrow afternoon?
-[ 17.14s][moshi] Booking a bike sounds like a great idea! To confirm, you'd like a rental near the Suzhou Gardens for tomorrow afternoon, is that right?
-[ 19.88s][user ] «backchannel» Yeah.
-[ 25.05s][user ] Yes, please. Around 2 PM would be perfect.
-[ 27.91s][moshi] ⟨ret@27.84s⟩ ⟦⚡SPAN@27.92s: (tool result) There are several bike rentals available near Suzhou Gardens tomorrow at 2 PM. Suzhou Bike Renta⟧ I found a couple of options. Suzhou Bike Rental has standard bikes for 50 yuan for four hours, while Joyful Wheels has electric bikes for 80 yuan.
-      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"location": "Suzhou Gardens", "date": "2026-07-11", "time": "14:00"}}
-[ 32.70s][user ] «backchannel» Yeah.
-[ 36.56s][user ] Let's go with Suzhou Bike Rental, the standard ⟨ret@39.99s⟩ bike.
-[ 40.15s][moshi] ⟦⚡SPAN@40.15s: (tool result) Your standard bicycle rental at Suzhou Bike Rental is confirmed for July 11, 2026, at 2:00 PM. C⟧ Wonderful! Your standard bike is reserved at Suzhou Bike Rental for tomorrow at 2 PM. Your confirmation number is SB-78923. Enjoy your ride!
-      CALL: {"function": "RentalCars_3_ReserveCar", "arguments": {"location": "Suzhou Gardens", "date": "2026-07-11", "time": "14:00", "car_type": "standard bicycle"}}
+[  0.00s][user ] Are there any coffee shops nearby in ⟨ret@2.34s⟩ Beijing?
+[  2.74s][moshi] ⟦⚡SPAN@2.74s: (tool result) Coffee Bean & Tea Leaf — 3.1 km, Starbucks — 1.5 km, Peet's Coffee — 2.8 km⟧ There are a few coffee shops close by. Coffee Bean is 3.1 kilometers away, Starbucks is 1.5, and Peet's is 2.8.
+      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shops", "location": "Beijing"}}
+[  7.82s][user ] «backchannel» Mhm.
+[ 11.28s][user ] Hmm, how about something a little quieter?
+[ 14.30s][moshi] Sometimes, finding a peaceful space is exactly what you need. It's so important to prioritize moments of calm.
+[ 18.02s][user ] «backchannel» Yeah.
+[ 21.48s][user ] Can you find me directions to the ⟨ret@23.63s⟩ Starbucks?
+[ 24.01s][moshi] ⟦⚡SPAN@24.03s: (tool result) Walk 1.2 km, approx. 17 minutes. Turn left onto…⟧ To get to Starbucks, walk 1.2 kilometers, it will take about 17 minutes. Turn left onto…
+      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Starbucks", "mode": "walking"}}

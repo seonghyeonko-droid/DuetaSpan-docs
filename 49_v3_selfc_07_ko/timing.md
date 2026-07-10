@@ -4,82 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "우재",
+#     "name": "수아",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-02",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-05-05",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-12-23",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
+#       "date": "2026-04-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-03-11",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-12-09",
+#       "date": "2026-01-24",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
+#       "text": "User is planning a trip to Kyoto in December."
+#     },
+#     {
+#       "date": "2026-01-12",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-12-07",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-10",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-14",
-#       "title": "Researching a used car",
+#       "date": "2026-05-05",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 기본 지원에 대한 연간 구독 플랜을 만들어 줄 수 있을까요,  | S2 네, 다음 주에 뉴욕에 가는데— | S3 … 혹시 그 호텔 예약도 도와줄 수 있나요? | S4 제인 호텔이 괜찮아 보이네요.
 
-     0.00s  user  발화 시작: 오늘 저녁에 영화 보려고 하는데, 혹시 '오펜하이머' 상영 시간 좀 알아봐 줄 수 있을까요? 강남역 근처로요
-     6.01s  <ret> 발화 (turn1 첫 프레임)
-     6.12s  user  발화 끝
-     6.24s  agent 발화 시작: <ret> 죄송해요. 강남역 근처 '오펜하이머' 상영 시간 정보는 지금 찾을 수 없네요.
-     6.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (no information found)
-     9.04s  user  발화 시작: 예.
-     9.43s  user  발화 끝
-    11.51s  agent 발화 끝
-    11.64s  user  발화 시작: 아, 그러고 보니… 압구정역 쪽으로 찾아봐 주세요. 압구정역이 맞아요.
-    15.94s  <ret> 발화 (turn4 첫 프레임)
-    16.18s  user  발화 끝
-    16.24s  agent 발화 시작: <ret> 압구정역 CGV에서 '오펜하이머'는 오늘 저녁 일곱시, 아홉시 삼십분에 상영될 예정이에요. 괜찮으
-    16.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Movies_1 FindMovies: 오펜하이머는 압구정역 CGV에서 오늘 저녁 7시, 9시 30분에
-    21.62s  user  발화 시작: 와.
-    22.11s  user  발화 끝
-    23.98s  agent 발화 끝
-    23.98s  agent 발화 시작: 그럼 혹시 일곱시로 예매해 드릴까요?
-    26.48s  user  발화 시작: 네, 일곱시로 예매해 주세요.
-    26.71s  agent 발화 끝
-    28.12s  <ret> 발화 (turn8 첫 프레임)
-    28.35s  agent 발화 시작: <ret> 네, '오펜하이머' 일곱시 상영으로 예매 완료되었어요. 예매 번호는 에이 칠 엑스 구 비 이입니다
-    28.36s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.86s]: (tool result) Movies_1 BuyMovieTickets: 예매가 완료되었습니다. 예매 번호는 A7X9B2입니다.
-    28.37s  user  발화 끝
-    37.20s  agent 발화 끝
+     0.00s  user  발화 시작: 기본 지원에 대한 연간 구독 플랜을 만들어 줄 수 있을까요, 제품 번호는 구천십이입니다.
+     5.83s  user  발화 끝
+     5.87s  <ret> 발화 (turn1 첫 프레임)
+     6.10s  agent 발화 시작: <ret> 제품 구천십이에 대한 연간 기본 지원 구독 플랜을 만들었습니다. 확인 번호는 칠b4n9x입니다. 
+     6.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) Subscription plan created: annual basic support for prod
+    16.91s  agent 발화 끝
+    17.41s  user  발화 시작: 음… 아니요, 그런데 지금 뉴욕 날씨가 어때요?
+    20.45s  <ret> 발화 (turn3 첫 프레임)
+    20.74s  user  발화 끝
+    20.76s  agent 발화 시작: <ret> 현재 뉴욕은 맑고, 기온은 이십팔 점 삼도, 습도는 육십오%, 바람은 시속 팔 점 이킬로미터입니다
+    20.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: (tool result) 28.3°C, humidity 65%, wind 8.2 km/h, clear skies.
+    29.95s  user  발화 시작: 네, 다음 주에 뉴욕에 가는데—
+    30.03s  agent 발화 끝
+    31.70s  user  발화 끝
+    31.72s  user  발화 시작: … 혹시 그 호텔 예약도 도와줄 수 있나요?
+    33.80s  user  발화 끝
+    33.89s  agent 발화 시작: 호텔 예약도 도와드릴 수 있습니다. 어떤 종류의 호텔을 찾으세요?
+    38.87s  user  발화 시작: 음… 맨해튼에 있는 가성비 좋은 호텔을 찾고 있어요.
+    38.89s  agent 발화 끝
+    43.21s  user  발화 끝
+    43.29s  <ret> 발화 (turn8 첫 프레임)
+    43.53s  agent 발화 시작: <ret> 맨해튼에서 가성비 좋은 호텔로는 제인 호텔이 일박에 백오십달러, 더 포드 호텔이 백이십달러, 프리
+    43.53s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.30s]: (tool result) The Jane Hotel - $150/night, The Pod Hotels - $120/night
+    49.03s  user  발화 시작: 와.
+    49.39s  user  발화 끝
+    53.83s  agent 발화 끝
+    54.59s  user  발화 시작: 제인 호텔이 괜찮아 보이네요.
+    56.56s  user  발화 끝
+    56.58s  agent 발화 시작: 제인 호텔이 마음에 드시는군요. 정말 좋은 선택이에요. 분위기가 독특하고, 위치도 좋다고 들었어요.
+    63.63s  agent 발화 끝
