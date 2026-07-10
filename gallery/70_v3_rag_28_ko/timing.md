@@ -68,25 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 참전용사부라고 하는 데가 언제 만들어졌는지 아세요? | S2 음, 잠깐만요. 그게 언제 만들어졌는지 다시 한… | S3 …번만 말씀해 주시겠어요? 기억이 잘 안 나서요. | S4 그… 지금 서울 날씨는 어때요? 갑자기 궁금해졌어요.
+# EXAMINER(FDB-v2) 단계: S1 재향군인부… 그게 언제 만들어졌더라? | S2 천구백삼십년이라고? 좀 더 일찍… | S3 …만들 수도 있지 않았을까? | S4 음… 그럼 그 이전에는 재향군인들을 어떻게 지원했어?
 
-     0.00s  user  발화 시작: 혹시 참전용사부라고 하는 데가 언제 만들어졌는지 아세요?
-     3.53s  <ret> 발화 (turn1 첫 프레임)
-     3.84s  agent 발화 시작: <ret> 참전용사부는 천구백삼십년 칠월 이십일일에 만들어졌습니다. 괜찮으시다면, 예산 관리나 재정 목표 설
-     3.84s  user  발화 끝
-     4.97s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.58s]: The Department of Veterans Affairs was established on July 21, 1930.
-    12.42s  agent 발화 끝
-    12.62s  user  발화 시작: 음, 잠깐만요. 그게 언제 만들어졌는지 다시 한…
-    16.41s  user  발화 끝
-    17.88s  user  발화 시작: …번만 말씀해 주시겠어요? 기억이 잘 안 나서요.
-    20.28s  <ret> 발화 (turn4 첫 프레임)
-    20.59s  agent 발화 시작: <ret> 천구백삼십년 칠월 이십일일입니다. 혹시 다른 궁금한 점이 있으신가요? 아니면, 예산 관련해서 좀 
-    20.79s  user  발화 끝
-    21.24s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.16s]: The Department of Veterans Affairs was established on July 21, 1930.
-    28.75s  agent 발화 끝
-    28.95s  user  발화 시작: 그… 지금 서울 날씨는 어때요? 갑자기 궁금해졌어요.
-    33.23s  <ret> 발화 (turn6 첫 프레임)
-    33.46s  agent 발화 시작: <ret> 지금 서울은 기온이 이십팔 점 영도이고, 습도는 육십오 퍼센트, 바람은 시속 삼 점 이킬로미터입니
-    33.63s  user  발화 끝
-    35.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h
-    41.53s  agent 발화 끝
+     0.00s  user  발화 시작: 재향군인부… 그게 언제 만들어졌더라?
+     2.29s  <ret> 발화 (turn1 첫 프레임)
+     2.60s  agent 발화 시작: <ret> 재향군인부는 허버트 후버 대통령에 의해, 관련 기관들을 통합하면서, 천구백삼십년 칠월 이십일일에 
+     2.61s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.18s]: The Department of Veterans Affairs was established on July 21, 1930, b
+     2.77s  user  발화 끝
+     9.78s  agent 발화 끝
+     9.79s  user  발화 시작: 천구백삼십년이라고? 좀 더 일찍…
+    12.70s  user  발화 끝
+    14.22s  user  발화 시작: …만들 수도 있지 않았을까?
+    15.85s  agent 발화 시작: 그건 충분히 생각해 볼 수 있는 부분이에요. 예산이나 사회적 인식 같은 여러 요인이 영향을 미쳤겠죠.
+    16.06s  user  발화 끝
+    22.25s  agent 발화 끝
+    22.55s  user  발화 시작: 음… 그럼 그 이전에는 재향군인들을 어떻게 지원했어?
+    26.15s  <ret> 발화 (turn6 첫 프레임)
+    26.22s  agent 발화 시작: <ret> 천구백삼십년 재향군인부 설립 전에는 연금국이나 퇴역 군인 자택 같은 여러 기관을 통해 분산적으로 
+    26.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Prior to the establishment of the Department of Veterans Affairs in 19
+    26.39s  user  발화 끝
+    33.96s  agent 발화 끝

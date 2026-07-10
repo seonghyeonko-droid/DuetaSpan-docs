@@ -55,87 +55,83 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, I was reading about Italy, and | S2 Okay… so, what kind of preparation | S3 Nine kilometers… that’s… not that  | S4 Oh. Okay. That’s… good to know.
+# EXAMINER(FDB-v2) 단계: S1 When was the last time mt. vesuviu | S2 Seventy-nine AD… that’s a long tim | S3 Hmm, monitored, okay. So, they kno | S4 I’m also looking at Naples. Is it 
 
-     0.00s  user  발화 시작: Um, I was reading about Italy, and… when did Vesuvius last e
-     4.92s  <ret> 발화 (turn1 첫 프레임)
-     5.16s  agent 발화 시작: <ret> Mount Vesuvius last erupted in March of nineteen forty
-     5.32s  user  발화 끝
-     6.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: Mount Vesuvius last erupted in March of nineteen forty-four.
-    12.53s  agent 발화 끝
-    12.55s  user  발화 시작: Wow, nineteen forty-four… that’s a long time ago.
-    17.13s  agent 발화 시작: It is quite a while ago, yes. Though it remains an active vo
-    17.23s  user  발화 끝
-    24.01s  user  발화 시작: Is it… is it likely to erupt again soon?
-    24.19s  agent 발화 끝
-    26.64s  <ret> 발화 (turn5 첫 프레임)
-    26.86s  agent 발화 시작: <ret> Scientists currently assess Vesuvius as a moderate thr
-    26.96s  user  발화 끝
-    28.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: Scientists currently assess Vesuvius as a moderate threat.
-    33.71s  agent 발화 끝
-    34.44s  user  발화 시작: A moderate threat… hmmm. What does that even *mean* exactly?
-    38.89s  agent 발화 시작: A moderate threat means an eruption isn’t imminent, but it's
-    39.02s  user  발화 끝
-    44.49s  user  발화 시작: Okay… so, what kind of preparations?
-    44.68s  agent 발화 끝
-    47.29s  <ret> 발화 (turn9 첫 프레임)
-    47.35s  agent 발화 시작: <ret> Italy has a national plan for volcanic risk management
-    47.59s  user  발화 끝
-    48.65s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.73s]: Italy has a national plan for volcanic risk management.
-    55.00s  user  발화 시작: Evacuation routes… that sounds scary.
-    55.08s  agent 발화 끝
-    57.88s  agent 발화 시작: It’s responsible planning, really. Being prepared helps mini
-    57.91s  user  발화 끝
-    60.05s  user  발화 시작: Yeah.
-    60.53s  user  발화 끝
-    63.65s  agent 발화 시작: It’s similar to having a fire drill, just on a larger scale.
-    63.68s  agent 발화 끝
-    69.23s  user  발화 시작: Yeah.
-    69.72s  user  발화 끝
-    71.80s  agent 발화 끝
-    72.65s  user  발화 시작: Welll… I’m planning a trip to Naples next year.
-    75.63s  <ret> 발화 (turn16 첫 프레임)
-    75.71s  agent 발화 시작: <ret> Naples is located approximately nine kilometers from M
-    75.84s  user  발화 끝
-    77.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: Naples is located approximately nine kilometers from Mount Vesuvius.
-    83.34s  user  발화 시작: Nine kilometers… that’s… not that far, is it?
-    83.35s  agent 발화 끝
-    86.74s  agent 발화 시작: Relatively speaking, no, it's quite close. But the city is w
-    86.85s  user  발화 끝
-    92.25s  agent 발화 끝
-    93.39s  user  발화 시작: But what if it erupts *while* I’m there?
-    95.94s  agent 발화 시작: That’s a natural concern. The monitoring systems are quite a
-    95.98s  user  발화 끝
-   100.93s  user  발화 시작: Right.
-   101.56s  user  발화 끝
-   103.55s  agent 발화 끝
-   103.62s  user  발화 시작: Alerts… so I’d have time to leave?
-   105.62s  <ret> 발화 (turn23 첫 프레임)
-   106.00s  agent 발화 시작: <ret> Italy’s alert system has four color codes: green, yell
-   106.21s  user  발화 끝
-   107.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: Italy’s alert system has four color codes: green, yellow, orange, and 
-   108.56s  user  발화 시작: Uh-huh.
-   109.19s  user  발화 끝
-   113.55s  agent 발화 끝
-   115.55s  user  발화 시작: Green, yellow, orange, red… okay. What does orange mean?
-   119.84s  user  발화 끝
-   120.13s  agent 발화 시작: Orange indicates an eruption is probable within days or week
-   122.03s  user  발화 시작: Yeah.
-   122.53s  user  발화 끝
-   126.38s  agent 발화 끝
-   126.78s  user  발화 시작: Oh. Okay. That’s… good to know.
-   129.61s  agent 발화 시작: It is reassuring to understand the system, isn't it? It allo
-   129.74s  user  발화 끝
-   131.70s  user  발화 시작: Right.
-   132.33s  user  발화 끝
-   134.79s  agent 발화 끝
-   135.75s  user  발화 시작: Yeah. I guess so. Um… what’s the weather like in Naples righ
-   139.94s  <ret> 발화 (turn32 첫 프레임)
-   140.25s  agent 발화 시작: <ret> The weather in Naples is currently twenty-eight point 
-   140.38s  user  발화 끝
-   141.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.79s]: (tool result) 28.0°C, humidity 62%, wind 7.2 km/h
-   149.88s  user  발화 시작: Twenty-eight degrees… sounds nice.
-   150.04s  agent 발화 끝
-   152.25s  agent 발화 시작: It does sound quite pleasant, doesn't it? Perhaps a good tim
-   152.33s  user  발화 끝
-   156.58s  agent 발화 끝
+     0.00s  user  발화 시작: When was the last time mt. vesuvius erupted?
+     2.61s  <ret> 발화 (turn1 첫 프레임)
+     2.84s  agent 발화 시작: <ret> The last eruption of Mount Vesuvius was in March of ni
+     2.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: Mount Vesuvius last erupted in March 1944 during World War II, causing
+     3.05s  user  발화 끝
+     8.86s  user  발화 시작: Oh, wow. That’s… recent, actually.
+     8.90s  agent 발화 끝
+    12.30s  agent 발화 시작: It is a reminder that even seemingly dormant volcanoes can s
+    12.38s  user  발화 끝
+    17.53s  user  발화 시작: Yeah, um, what about Pompeii? When was *that* eruption?
+    17.76s  agent 발화 끝
+    21.74s  <ret> 발화 (turn5 첫 프레임)
+    21.81s  agent 발화 시작: <ret> That famous eruption, the one that buried Pompeii and 
+    21.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: Mount Vesuvius famously erupted in 79 AD, burying the Roman cities of 
+    21.92s  user  발화 끝
+    27.88s  agent 발화 끝
+    28.48s  user  발화 시작: Seventy-nine AD… that’s a long time ago.
+    31.38s  agent 발화 시작: It certainly is. Imagine witnessing something so powerful, a
+    31.49s  user  발화 끝
+    33.89s  user  발화 시작: Yeah.
+    34.38s  user  발화 끝
+    37.82s  agent 발화 시작: It’s a stark example of nature’s force, and a lesson in resp
+    38.09s  agent 발화 끝
+    41.96s  user  발화 시작: Yeah.
+    42.51s  user  발화 끝
+    43.98s  agent 발화 끝
+    45.28s  user  발화 시작: I’m thinking about traveling to Italy next year.
+    48.09s  agent 발화 시작: That sounds lovely! Italy is a beautiful country with so muc
+    48.13s  user  발화 끝
+    53.11s  user  발화 시작: Is Vesuvius still… active? Is it dangerous to go near?
+    53.23s  agent 발화 끝
+    57.55s  user  발화 끝
+    57.63s  <ret> 발화 (turn14 첫 프레임)
+    57.70s  agent 발화 시작: <ret> Yes, Vesuvius is still considered active and is monito
+    57.71s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.28s]: Mount Vesuvius is considered an active volcano and is constantly monit
+    64.86s  user  발화 시작: Hmm, monitored, okay. So, they know if something’s about to 
+    64.98s  agent 발화 끝
+    69.78s  agent 발화 시작: They have systems in place to detect changes, but predicting
+    69.86s  user  발화 끝
+    74.78s  user  발화 시작: Right.
+    75.41s  user  발화 끝
+    77.38s  agent 발화 끝
+    78.61s  user  발화 시작: I see… welll… what’s the weather like there right now?
+    83.14s  <ret> 발화 (turn19 첫 프레임)
+    83.42s  user  발화 끝
+    83.44s  agent 발화 시작: <ret> It’s currently twenty-four degrees Celsius with sixty-
+    83.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h
+    86.09s  user  발화 시작: Uh-huh.
+    86.63s  user  발화 끝
+    91.28s  agent 발화 끝
+    92.37s  user  발화 시작: Twenty-four degrees, nice.
+    94.56s  agent 발화 시작: That’s quite pleasant, isn’t it? Perfect for exploring, as l
+    94.58s  user  발화 끝
+    96.49s  user  발화 시작: Yeah.
+    96.98s  user  발화 끝
+   100.81s  agent 발화 끝
+   100.87s  user  발화 시작: I’m also looking at Naples. Is it close?
+   103.02s  <ret> 발화 (turn25 첫 프레임)
+   103.42s  agent 발화 시작: <ret> Naples is about nineteen kilometers from Mount Vesuviu
+   103.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Naples is approximately 19 kilometers from Mount Vesuviu
+   103.59s  user  발화 끝
+   106.10s  user  발화 시작: Right.
+   106.73s  user  발화 끝
+   110.09s  agent 발화 끝
+   112.08s  user  발화 시작: Okay, that’s not too bad. Are there tours to the crater?
+   115.48s  <ret> 발화 (turn28 첫 프레임)
+   115.69s  user  발화 끝
+   115.70s  agent 발화 시작: <ret> Yes, you can take guided tours to the crater, with dep
+   115.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: Guided tours to the crater of Mount Vesuvius are available, departing 
+   118.72s  user  발화 시작: Okay.
+   119.40s  user  발화 끝
+   120.70s  agent 발화 시작: It’s a popular excursion, offering incredible views, and a f
+   120.75s  agent 발화 끝
+   127.19s  agent 발화 끝
+   127.51s  user  발화 시작: Sounds amazing. I think I’ll look into it. Thanks, Bena.
+   131.19s  agent 발화 시작: You're very welcome. Planning is half the fun, and it’s wond
+   131.26s  user  발화 끝
+   137.16s  agent 발화 끝

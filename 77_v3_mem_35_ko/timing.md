@@ -68,24 +68,39 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 어, 안녕하세요. 여행 계획 좀 세우고 싶은데 도와주실 수 있 | S2 그때는 좀 힘들었는데, 이번엔 편안하게 쉬고 싶어요. | S3 좋아요. 근데 혹시 비행기 티켓은 미리 예약해야 할까요? | S4 …아, 근데 혹시 경유 횟수가 적은 항공편으로 찾아볼 수 있을
 
-     0.00s  agent 발화 시작: 하형님, 안녕하세요. 저는 클렌이라고 합니다. 돈 관리와 예산 계획을 도와드리는 전문가예요.
-     7.55s  user  발화 시작: 아, 안녕하세요. 뉴질랜드 여행 계획 세우고 있는데, 혹시 좋은 숙소 추천해 줄 수 있을까요?
-     7.74s  agent 발화 끝
-    14.24s  <ret> 발화 (turn2 첫 프레임)
-    14.39s  agent 발화 시작: <ret> 메모를 확인해 보니, 십월에 뉴질랜드 여행을 생각하고 계셨네요.
-    14.45s  user  발화 끝
-    14.74s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.18s]: User is planning a trip to New Zealand in October.
-    16.94s  user  발화 시작: 맞아.
-    17.57s  user  발화 끝
-    19.38s  agent 발화 시작: 혹시 어떤 스타일의 숙소를 선호하시나요? 호텔, 에어비앤비, 아니면 좀 더 특별한 곳을 찾으시나요?
-    19.58s  agent 발화 끝
-    21.63s  user  발화 시작: 음.
+     0.00s  agent 발화 시작: 안녕하세요, 하형님. 저는 여러분의 재정 가이드, 클렌입니다.
+     4.63s  user  발화 시작: 어, 안녕하세요. 여행 계획 좀 세우고 싶은데 도와주실 수 있나요?
+     4.81s  agent 발화 끝
+     9.12s  user  발화 끝
+     9.15s  <ret> 발화 (turn2 첫 프레임)
+     9.29s  agent 발화 시작: <ret> 혹시 뉴질랜드 여행 계획 말씀하시는 건가요?
+     9.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.42s]: [2025-12-04] User is planning a trip to New Zealand in October.
+    12.53s  agent 발화 시작: 네, 작년에 뉴질랜드 여행 계획을 세우셨다고 말씀하셨던 걸 기억합니다. 십월에 가실 예정이셨죠.
+    12.71s  agent 발화 끝
+    16.24s  user  발화 시작: 맞아.
+    16.87s  user  발화 끝
+    19.95s  agent 발화 시작: 혹시 그때와 비슷한 여행 스타일을 원하시나요, 아니면 다른 스타일을 생각하고 계신가요?
+    19.99s  agent 발화 끝
+    21.77s  user  발화 시작: 음.
     22.27s  user  발화 끝
-    26.23s  agent 발화 끝
-    26.65s  user  발화 시작: …에어비앤비 쪽이 좀 더 좋을 것 같아요. 현지 분위기를 느끼고 싶어서요.
-    31.69s  <ret> 발화 (turn7 첫 프레임)
-    31.78s  user  발화 끝
-    31.92s  agent 발화 시작: <ret> 그럼 뉴질랜드 퀸스타운 지역의 에어비앤비 몇 곳을 찾아볼까요? 퀸스타운에서 에어비앤비 세 곳을 찾
-    33.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=23.80s]: (tool result) 3 listings found: 'Lakeview Cottage' (4.8 stars, $150/ni
-    55.73s  agent 발화 끝
+    25.59s  user  발화 시작: 그때는 좀 힘들었는데, 이번엔 편안하게 쉬고 싶어요.
+    25.59s  agent 발화 끝
+    29.57s  agent 발화 시작: 편안한 휴식을 원하시는군요. 그럼 뉴질랜드에서 조용하고 아름다운 곳을 찾아볼까요?
+    29.61s  user  발화 끝
+    32.74s  user  발화 시작: 어어.
+    33.42s  user  발화 끝
+    36.06s  agent 발화 끝
+    36.33s  user  발화 시작: 좋아요. 근데 혹시 비행기 티켓은 미리 예약해야 할까요?
+    40.79s  <ret> 발화 (turn11 첫 프레임)
+    41.02s  agent 발화 시작: <ret> 십월 일일 오클랜드행 편도 항공권은 천이백오십 달러부터 시작합니다—
+    41.03s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.32s]: (tool result) Flights_4 SearchOnewayFlight is returning Auckland, New 
+    41.14s  user  발화 끝
+    45.54s  user  발화 시작: …아, 근데 혹시 경유 횟수가 적은 항공편으로 찾아볼 수 있을까요?
+    46.34s  agent 발화 끝
+    49.89s  <ret> 발화 (turn13 첫 프레임)
+    50.12s  agent 발화 시작: <ret> 십월 일일 오클랜드행, 경유 한 번하는 항공권은 천오백 달러부터 있습니다. 좀 더 편안한 여행이 
+    50.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: (tool result) Flights_4 SearchOnewayFlight is returning Auckland, New 
+    50.35s  user  발화 끝
+    59.34s  agent 발화 끝

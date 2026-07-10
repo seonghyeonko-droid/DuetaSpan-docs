@@ -69,21 +69,18 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m hoping to book three rooms at the Ocean View Hotel in San Diego for seven nights starting on February tenth.
-[  6.08s][moshi] ⟨ret@5.84s⟩ I’ve reserved three ⟦⚡SPAN@7.84s: (tool result) Confirmation ID: OVH20260210-3R, total cost $2100.00⟧ rooms at the Ocean View Hotel in San Diego for seven nights, starting February tenth; your confirmation ID is OVH20260210-3R, and the total is two thousand one hundred dollars. That sounds lovely.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "number_of_rooms": "3", "start_date": "February tenth", "length_of_stay": "7"}}
-[ 16.41s][user ] «backchannel» Right.
-[ 23.98s][user ] And could you check if they have a shuttle service to ⟨ret@26.74s⟩ the airport?
-[ 26.89s][moshi] The Ocean View Hotel ⟦⚡SPAN@28.74s: (tool result) Ocean View Hotel, San Diego, offers complimentary airport shuttle service.⟧ in San Diego does offer a complimentary airport shuttle service. It runs every thirty minutes.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "amenities": "shuttle service"}}
-[ 34.73s][user ] That’s great. I’m also trying to figure out the best way to get around once we’re there.
-[ 39.26s][moshi] «interrupted» Public transportation is a good option—
-[ 41.25s][user ] «interrupts_prev» …are there any car rental places near ⟨ret@43.30s⟩ the hotel?
-[ 43.69s][moshi] Hertz is one ⟦⚡SPAN@45.30s: (tool result) Hertz, 1.2 km, $55/day; Avis, 1.8 km, $60/day; Enterprise, 2.5 km, $50/day.⟧ point two kilometers away, at fifty-five dollars a day; Avis is one point eight kilometers, sixty dollars, and Enterprise is two point five kilometers, fifty dollars per day.
-      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"location": "Ocean View Hotel, San Diego"}}
-[ 57.43s][user ] Hmm, Enterprise sounds good. Can you check availability for a minivan there for the whole week?
-[ 62.55s][moshi] ⟨ret@62.47s⟩ I’ve reserved a ⟦⚡SPAN@64.47s: (tool result) Minivan reserved, confirmation #ENT20260210-7D, total $350.00⟧ minivan with Enterprise for the whole week, starting February tenth; your confirmation number is ENT20260210-7D, for three hundred and fifty dollars.
-      CALL: {"function": "RentalCars_3_ReserveCar", "arguments": {"rental_company": "Enterprise", "location": "Ocean View Hotel, San Diego", "car_type": "minivan", "start_date": "February tenth", "length_of_stay": "7"}}
-[ 72.42s][user ] «backchannel» Oh.
-[ 76.52s][user ] Perfect. Thank you so much, Tian.
-[ 78.74s][moshi] You’re very welcome. I’m glad I could help with the arrangements. I hope you have a wonderful trip to San Diego.
+[  0.00s][user ] Book three rooms at Ocean View Hotel in San Diego for seven nights starting on February tenth.
+[  5.26s][moshi] ⟨ret@5.02s⟩ ⟦⚡SPAN@5.26s: (tool result) Confirmation: Ocean View Hotel, San Diego. Three rooms reserved for seven nights, February 10th ⟧ I’ve reserved three rooms for you at the Ocean View Hotel in San Diego, from February tenth to seventeenth. Your confirmation number is 87654321.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "number_of_rooms": 3, "start_date": "2026-02-10", "length_of_stay": 7}}
+[ 16.35s][user ] That sounds perfect, thank you. What’s the weather usually like there in February?
+[ 20.91s][moshi] San Diego in February is generally mild and pleasant. It's a lovely time to visit, with average highs in the sixties.
+[ 29.26s][user ] Hmm, are there any good seafood restaurants near the hotel?
+[ 32.81s][moshi] «interrupted» ⟨ret@32.49s⟩ ⟦⚡SPAN@32.81s: (tool result) Five seafood restaurants near Ocean View Hotel, San Diego: Mitch's Seafood (0.5 miles, 4.5 stars⟧ There are several excellent seafood restaurants nearby—Mitch’s Seafood is just half a mile away—
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Ocean View Hotel, San Diego", "cuisine": "seafood"}}
+[ 38.94s][user ] «interrupts_prev» …do any of them have outdoor seating?
+[ 40.88s][moshi] Mitch’s Seafood and Brigantine Seafood Restaurant both have outdoor seating available. They’re quite popular, so—
+[ 44.97s][user ] «backchannel» Yeah.
+[ 48.02s][moshi] I can make a reservation for you at either one if you’d like. It’s a popular time to visit, so booking in advance is recommended.
+[ 55.73s][user ] Let’s check if Mitch's has availability for, say, February twelfth at seven pm.
+[ 60.17s][moshi] ⟨ret@59.93s⟩ ⟦⚡SPAN@60.17s: (tool result) Reservation confirmed at Mitch’s Seafood for February 12th at 7:00 PM for a party of three. Conf⟧ Excellent. I’ve booked a table for three at Mitch’s Seafood on February twelfth at seven pm. Your confirmation number is 98765432.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Mitch's Seafood", "date": "2026-02-12", "time": "19:00", "party_size": 3}}

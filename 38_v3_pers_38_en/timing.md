@@ -69,23 +69,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Andrea, welcome. My name is Jaeia, and I’m here to off
-     4.67s  user  발화 시작: Right.
-     5.21s  user  발화 끝
-     7.21s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just feeling…lost, I gue
-     7.36s  agent 발화 끝
-    14.97s  agent 발화 시작: It sounds like you're carrying a lot right now. Change can b
-    15.05s  user  발화 끝
-    20.17s  user  발화 시작: Yeah.
-    20.71s  user  발화 끝
-    25.59s  agent 발화 끝
-    25.61s  agent 발화 시작: It's alright to take your time with that. Sometimes just ack
-    40.22s  agent 발화 끝
-    41.31s  user  발화 시작: My partner and I…we decided to separate. After fifteen years
-    48.54s  user  발화 끝
-    48.67s  agent 발화 시작: Fifteen years is a significant part of a life, Andrea. It’s 
-    59.28s  agent 발화 끝
-    59.32s  user  발화 시작: No, I…I don’t think I do. It’s just waves, isn’t it? Of sadn
-    65.85s  user  발화 끝
-    66.04s  agent 발화 시작: Exactly. Waves are a good way to describe it. They come and 
-    79.40s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Andrea, my name is Jaeia. It’s lovely to connect with 
+     5.86s  user  발화 시작: Right.
+     6.41s  user  발화 끝
+     9.02s  user  발화 시작: Jaeia… that’s a beautiful name. Is it… Korean? I’m just curi
+     9.04s  agent 발화 끝
+    14.19s  agent 발화 시작: It is, yes. My creators chose it for its meaning—grace and p
+    14.29s  user  발화 끝
+    19.08s  user  발화 시작: Yeah.
+    19.52s  user  발화 끝
+    24.20s  agent 발화 시작: I understand you’re in Toronto. Change can be especially dif
+    24.30s  agent 발화 끝
+    36.63s  agent 발화 끝
+    37.84s  user  발화 시작: Welll… it's not the city, exactly. It’s more… a loss. A big 
+    45.44s  user  발화 끝
+    45.46s  agent 발화 시작: Grief takes many forms, Andrea. And it’s alright to feel los
+    57.06s  agent 발화 끝
+    57.10s  user  발화 시작: But… I don’t even know where to begin. It feels so tangled u
+    61.64s  user  발화 끝

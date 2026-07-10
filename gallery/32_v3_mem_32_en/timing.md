@@ -59,23 +59,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Bonjour Manon, I'm Thunalo. It's lovely to connect with you.
-     2.62s  user  발화 시작: Yeah.
-     3.26s  user  발화 끝
-     3.59s  user  발화 시작: Uh, yeah, that’s right. I’m stuck on a painting, and it’s re
-     3.60s  agent 발화 끝
-     7.97s  <ret> 발화 (turn3 첫 프레임)
-     8.05s  agent 발화 시작: <ret> I hear that frustration, Manon. Perhaps recalling past
-     8.08s  user  발화 끝
-     9.49s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.02s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    16.00s  agent 발화 시작: You mentioned a trip to Kyoto in March of this year.
-    16.07s  agent 발화 끝
-    17.99s  user  발화 시작: Mm-hmm.
-    18.49s  user  발화 끝
-    18.97s  agent 발화 시작: Sometimes, simply revisiting the details of an anticipated e
-    19.05s  agent 발화 끝
-    28.06s  agent 발화 끝
-    28.09s  user  발화 시작: Welll… the gardens, I think. I’ve been looking at pictures, 
-    31.84s  user  발화 끝
-    31.86s  agent 발화 시작: The gardens sound beautiful. Visual inspiration is powerful.
-    41.42s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to meet you. Are you feel
+     4.88s  user  발화 시작: Yeah.
+     5.37s  user  발화 끝
+     6.44s  agent 발화 끝
+     6.46s  user  발화 시작: Uhhh, a bit stuck, actually. I'm trying to start a new paint
+    11.79s  <ret> 발화 (turn3 첫 프레임)
+    11.87s  agent 발화 시작: <ret> That’s perfectly alright. It’s very common for creativ
+    11.87s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.76s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    11.92s  user  발화 끝
+    20.62s  agent 발화 시작: You mentioned planning a trip to Kyoto in March. Sometimes, 
+    20.63s  agent 발화 끝
+    26.28s  user  발화 시작: Mm-hmm.
+    26.92s  user  발화 끝
+    28.60s  agent 발화 끝
+    28.63s  agent 발화 시작: Do you remember what specifically drew you to Kyoto, Manon? 
+    38.37s  agent 발화 끝
+    38.61s  user  발화 시작: The temples, I think. And the gardens… but I’m not sure how 
+    44.17s  user  발화 끝
+    44.25s  agent 발화 시작: Welll… it doesn't have to be a direct translation. Perhaps t
+    55.75s  agent 발화 끝

@@ -77,57 +77,60 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's the price range at Zuni ⟨ret@2.04s⟩ Cafe?
-[  2.27s][moshi] Zuni ⟦⚡SPAN@3.24s: (tool result) Zuni Cafe, San Francisco, CA is in the $$$ (expensive) price range.⟧ Cafe is considered an expensive dining option. It's a lovely spot.
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJqY-VwK4UhYARwK69I7yW6wA"}}
-[  4.10s][user ] «backchannel» Uh-huh.
-[  7.59s][user ] And what's the weather like there right ⟨ret@9.45s⟩ now?
-[  9.69s][moshi] ⟦⚡SPAN@9.95s: (tool result) 18.3°C, humidity 62%, wind 8.0 km/h⟧ It’s currently eighteen point three degrees Celsius in San Francisco, with sixty-two percent humidity and an eight kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco, CA"}}
-[ 18.49s][user ] That sounds nice.
-[ 19.78s][moshi] It does, doesn’t it? San Francisco often has pleasant evenings.
-[ 21.65s][user ] «backchannel» Right.
-[ 24.71s][user ] I'm thinking of visiting, maybe staying a few nights.
-[ 27.84s][moshi] That sounds wonderful. Are you planning a trip specifically to San Francisco?
-[ 30.11s][user ] «backchannel» Yeah.
-[ 33.00s][user ] Yes, but I haven’t booked anything yet.
-[ 35.06s][moshi] Okay. Do you have any preferences for hotels, perhaps a particular neighborhood?
-[ 36.91s][user ] «backchannel» Uh-huh.
-[ 40.48s][user ] I'd like something near Fisherman's ⟨ret@42.40s⟩ Wharf.
-[ 42.47s][moshi] The Hotel Riu Plaza ⟦⚡SPAN@44.40s: (tool result) Hotel Riu Plaza Fisherman's Wharf, 2500 Mason St, San Francisco, CA 94133, starting at $289/nigh⟧ starts at two hundred eighty-nine dollars a night, and the Argonaut Hotel at three hundred twenty-five.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Fisherman's Wharf, San Francisco, CA"}}
-[ 50.44s][user ] The Argonaut sounds better. Can you check availability for next ⟨ret@54.11s⟩ weekend?
-[ 54.35s][moshi] I’ve reserved a Deluxe ⟦⚡SPAN@56.11s: (tool result) Argonaut Hotel, 499 Jefferson St, San Francisco, CA 94133, check-in 2026-07-17, check-out 2026-0⟧ King Room at the Argonaut for next weekend, totaling six hundred fifty dollars. Your confirmation ID is seven A nine B two C.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Argonaut Hotel", "check_in_date": "2026-07-17", "check_out_date": "2026-07-19"}}
-[ 64.78s][user ] That’s great, thank you!
-[ 66.15s][moshi] You’re very welcome.
-[ 67.09s][user ] Actually, I was wondering about getting around.
-[ 69.73s][moshi] Are you thinking of renting a car, or relying on public transportation?
-[ 74.52s][user ] Public transport would be ⟨ret@75.97s⟩ good.
-[ 76.29s][moshi] Take the thirty ⟦⚡SPAN@77.97s: (tool result) Take the 30 Stockton bus from Jefferson St & Hyde St, arrive at Market St & 2nd St, then walk 0.⟧ Stockton bus from Jefferson and Hyde streets, arriving at Market and Second. Then it’s a three hundred meter walk. The trip takes about thirty-five minutes.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "Argonaut Hotel", "destination": "Zuni Cafe"}}
-[ 87.23s][user ] Hmm, that's a bit long.
-[ 88.82s][moshi] «interrupted» It is a little lengthy, yes. We could explore alternative routes—
-[ 92.90s][user ] «interrupts_prev» …are there any bike rentals nearby ⟨ret@94.75s⟩ the hotel?
-[ 95.15s][moshi] Blazing Saddles is ⟦⚡SPAN@96.75s: (tool result) Blazing Saddles Bike Rentals (250 m), Unlimited Biking (400 m), Bay City Bike Rentals (600 m)⟧ two hundred fifty meters away, Unlimited Biking is four hundred, and Bay City Bike Rentals is six hundred.
-      CALL: {"function": "maps_around_search", "arguments": {"location": "Argonaut Hotel", "query": "bike rental"}}
-[104.73s][user ] Blazing Saddles sounds closest.
-[106.95s][moshi] It is the nearest option. Would you like me to check their availability?
-[111.61s][user ] Yes, ⟨ret@112.42s⟩ please.
-[112.74s][moshi] They offer standard ⟦⚡SPAN@114.42s: (tool result) Standard bike: $35/day; Electric bike: $75/day; Tandem bike: $50/day.⟧ bikes for thirty-five dollars a day, electric bikes for seventy-five, and tandem bikes for fifty.
-      CALL: {"function": "RentalCars_3_GetCarsAvailable", "arguments": {"location": "Blazing Saddles Bike Rentals"}}
-[116.88s][user ] «backchannel» Yeah.
-[120.26s][user ] I’ll take a standard bike for two days.
-[122.41s][moshi] ⟨ret@122.33s⟩ A standard bike is ⟦⚡SPAN@124.33s: (tool result) Standard bike reserved, pickup 2026-07-17, return 2026-07-19, total $70, confirmation ID: D8E1F3⟧ reserved for you, pickup next Saturday, return Monday, seventy dollars total. Your confirmation ID is D eight E one F three.
-      CALL: {"function": "RentalCars_3_ReserveCar", "arguments": {"rental_company": "Blazing Saddles Bike Rentals", "car_type": "Standard bike", "rental_days": "2"}}
-[127.46s][user ] «backchannel» Right.
-[132.41s][user ] Perfect.
-[132.83s][moshi] Wonderful. It sounds like your trip is taking shape nicely.
-[137.74s][user ] It is. I’m also wondering about events happening that ⟨ret@141.13s⟩ weekend.
-[141.53s][moshi] There's the Outside ⟦⚡SPAN@143.13s: (tool result) Outside Lands Music and Arts Festival (Golden Gate Park), Giants vs. Dodgers (Oracle Park), Shak⟧ Lands festival, a Giants baseball game, and Shakespeare in the Park.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "San Francisco, CA", "date": "2026-07-17"}}
-[147.81s][user ] Shakespeare in the Park sounds lovely.
-[149.78s][moshi] It's a very popular event. Would you like me to find ticket information?
-[151.25s][user ] «backchannel» Right.
-[155.53s][user ] No, that’s alright. I think I’m all set for now.
-[158.46s][moshi] Excellent. I’m glad I could help. Enjoy your trip to San Francisco.
+[  0.00s][user ] What's the price range at Zuni ⟨ret@1.90s⟩ Cafe?
+[  2.12s][moshi] ⟦⚡SPAN@2.14s: (tool result) Zuni Cafe is a restaurant located at 1658 Market Street, San Francisco, CA 94102, with a price r⟧ The price range at Zuni Cafe is thirty to sixty dollars.
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJ9-jF3xJ7j4AR3v9Xq4J5g2M"}}
+[  3.94s][user ] «backchannel» Okay.
+[  6.24s][user ] Okay, good. And what about Foreign ⟨ret@8.48s⟩ Cinema?
+[  8.70s][moshi] ⟦⚡SPAN@8.72s: (tool result) Foreign Cinema is a restaurant located at 2534 Mission Street, San Francisco, CA 94110, with a p⟧ Foreign Cinema's price range is twenty-five to forty-five dollars.
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJwQ7I8R19j4ARd5mK5N_5z8k"}}
+[ 13.54s][user ] Hmm, that's a bit cheaper. Are there any other restaurants like that in the Mission ⟨ret@18.51s⟩ District?
+[ 18.67s][moshi] ⟦⚡SPAN@18.67s: (tool result) Delfina is a popular Italian restaurant in the Mission District with a price range of $30–$50. F⟧ Delfina and Flour + Water are good options, both in the Mission.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Mission District, San Francisco", "price_range": "$25-$45"}}
+[ 20.39s][user ] «backchannel» Yeah.
+[ 22.88s][user ] Flour + Water sounds good. Can you reserve a table for two there tomorrow ⟨ret@27.80s⟩ night?
+[ 28.03s][moshi] «interrupted» ⟦⚡SPAN@28.04s: (tool result) Reservation confirmed at Flour + Water for two people on July 11, 2026, at 7:30 PM. Confirmation⟧ I've reserved a table for two at Flour + Water for tomorrow at 7:30 PM—
+      CALL: {"function": "Hotels_2_ReserveHotel", "arguments": {"restaurant_name": "Flour + Water", "date": "2026-07-11", "time": "7:30 PM", "party_size": 2}}
+[ 32.96s][user ] «interrupts_prev» …Actually, could we make that 8:00 ⟨ret@35.12s⟩ PM instead?
+[ 35.44s][moshi] ⟦⚡SPAN@35.44s: (tool result) Reservation updated at Flour + Water for two people on July 11, 2026, at 8:00 PM. Confirmation n⟧ I've updated your reservation to 8:00 PM. Your new confirmation is FW20260711-43.
+      CALL: {"function": "Hotels_2_ReserveHotel", "arguments": {"restaurant_name": "Flour + Water", "date": "2026-07-11", "time": "8:00 PM", "party_size": 2}}
+[ 39.07s][user ] «backchannel» Really?
+[ 45.65s][user ] Perfect, thank you. What's the weather like in San ⟨ret@48.83s⟩ Francisco tomorrow?
+[ 49.23s][moshi] ⟦⚡SPAN@49.23s: (tool result) The weather in San Francisco on July 11, 2026, will be 20.5°C, with partly cloudy skies and a 65⟧ Tomorrow in San Francisco will be about twenty point five degrees Celsius—
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco", "date": "2026-07-11"}}
+[ 52.23s][user ] «backchannel» Yeah.
+[ 53.98s][moshi] —with a chance of rain, so maybe bring an umbrella.
+[ 57.04s][user ] Good idea. Can you find me some live jazz music near Flour ⟨ret@61.71s⟩ + Water?
+[ 62.11s][moshi] ⟦⚡SPAN@62.11s: (tool result) Bissap Baobab is hosting a live jazz performance on July 11th at 9:00 PM, located at 3349 Missio⟧ Bissap Baobab has a jazz performance tomorrow at nine PM, half a mile away.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "near Flour + Water, San Francisco", "category": "jazz"}}
+[ 67.91s][user ] That sounds nice. What kind of music do they ⟨ret@70.83s⟩ usually play?
+[ 71.23s][moshi] ⟦⚡SPAN@71.23s: (tool result) Bissap Baobab specializes in West African jazz fusion, blending traditional rhythms with modern ⟧ They specialize in West African jazz fusion, blending traditional rhythms.
+      CALL: {"function": "search", "arguments": {"query": "Bissap Baobab music style"}}
+[ 75.87s][user ] Interesting. Can you play a sample of ⟨ret@78.15s⟩ their music?
+[ 78.54s][moshi] ⟦⚡SPAN@78.55s: (tool result) Playing a 30-second sample of "Yalala" by Bissap Baobab.⟧ I'm now playing a sample of "Yalala" by Bissap Baobab.
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"artist": "Bissap Baobab", "title": "sample"}}
+[ 82.57s][user ] That’s great! I think we’ll go after dinner.
+[ 85.20s][moshi] That sounds like a lovely plan. It's good to have something to look forward to.
+[ 90.48s][user ] Do they take ⟨ret@91.75s⟩ reservations?
+[ 92.07s][moshi] ⟦⚡SPAN@92.07s: (tool result) Bissap Baobab does not accept reservations. It is first-come, first-served.⟧ They don't take reservations, it's first-come, first-served.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bissap Baobab"}}
+[ 95.77s][user ] Okay, good to know. Can you add a reminder to my calendar for 9:30 PM tomorrow to head ⟨ret@100.69s⟩ over there?
+[101.08s][moshi] ⟦⚡SPAN@101.09s: (tool result) Alarm set for July 11, 2026, at 9:30 PM with the description "Go to Bissap Baobab."⟧ I’ve added an alarm for 9:30 PM tomorrow, reminding you to go to Bissap Baobab.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "2026-07-11 21:30", "description": "Go to Bissap Baobab"}}
+[103.53s][user ] «backchannel» Wow.
+[107.37s][user ] Wonderful. What's the quickest way to get from Flour + Water to Bissap Baobab by ⟨ret@113.09s⟩ walking?
+[113.33s][moshi] ⟦⚡SPAN@113.33s: (tool result) The quickest walking route from Flour + Water to Bissap Baobab is 0.5 miles, taking approximatel⟧ It’s about a ten-minute walk, half a mile.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Flour + Water, San Francisco", "destination": "Bissap Baobab, San Francisco", "mode": "walking"}}
+[116.03s][user ] Perfect. Is there anything else I should know about Bissap ⟨ret@119.91s⟩ Baobab?
+[120.14s][moshi] ⟦⚡SPAN@120.15s: (tool result) Bissap Baobab is known for its vibrant atmosphere, delicious Senegalese cuisine, and friendly se⟧ People praise their atmosphere, Senegalese cuisine, and service.
+      CALL: {"function": "search", "arguments": {"query": "Bissap Baobab reviews"}}
+[125.95s][user ] That sounds promising. I’m getting excited about tomorrow.
+[129.49s][moshi] It’s good to build anticipation—a little something to look forward to can really lift your spirits.
+[135.46s][user ] Yeah, definitely. What time is sunset ⟨ret@138.58s⟩ tomorrow?
+[138.97s][moshi] ⟦⚡SPAN@138.98s: (tool result) Sunset in San Francisco on July 11, 2026, will be at 8:45 PM.⟧ Sunset tomorrow will be at 8:45 PM.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco", "date": "2026-07-11", "attribute": "sunset"}}
+[143.50s][user ] Okay, that gives us plenty of time.
+[146.01s][moshi] It does. Having that awareness of the day’s rhythm can be soothing, and help you feel more grounded.
+[147.97s][user ] «backchannel» Right.
+[152.74s][user ] You're right. Thanks for all your help, Dar.
+[155.61s][moshi] You’re very welcome. I hope you have a truly restful and enjoyable evening.

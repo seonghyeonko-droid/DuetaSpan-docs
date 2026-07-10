@@ -60,57 +60,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, hi Hia. I need to get to the a | S2 That sounds good. Book it for tomo | S3 Yes, exactly! I need a restaurant  | S4 Perfect. Thanks so much, Hia.
+# EXAMINER(FDB-v2) 단계: S1 Uh, welll… I need to get to the Mu | S2 Hmm, that's a bit long. Is there a | S3 Actually, do you remember if I men | S4 Le Potager du Marais sounds nice. 
 
-     0.00s  agent 발화 시작: Bonjour Ava, I’m Hia.
-     1.98s  agent 발화 끝
-     2.01s  user  발화 시작: Uh, hi Hia. I need to get to the airport tomorrow.
-     5.52s  user  발화 끝
-     5.54s  <ret> 발화 (turn2 첫 프레임)
-     5.62s  agent 발화 시작: <ret> Your home address is 30 Oak Avenue, is that correct?
-     6.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.46s]: [2025-08-06] User's home address is 30 Oak Avenue.
-     9.08s  agent 발화 끝
-    11.56s  user  발화 시작: Yes, that’s right. Can you find me a ride?
-    13.89s  <ret> 발화 (turn4 첫 프레임)
-    14.29s  agent 발화 시작: <ret> A ride to the airport is estimated at twenty-eight eur
-    14.47s  user  발화 끝
-    15.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) Estimated fare: 28.50 EUR, estimated time: 35 minutes.
-    17.39s  user  발화 시작: Uh-huh.
-    17.89s  user  발화 끝
-    20.73s  agent 발화 시작: Does that sound like a reasonable option for you, Ava?
-    20.78s  agent 발화 끝
-    24.34s  agent 발화 끝
-    24.55s  user  발화 시작: That sounds good. Book it for tomorrow at seven AM.
-    28.16s  <ret> 발화 (turn8 첫 프레임)
-    28.24s  agent 발화 시작: <ret> Your ride is booked for seven AM tomorrow, confirmatio
-    28.39s  user  발화 끝
-    30.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) Ride booked, confirmation ID: RH78293.
-    32.66s  user  발화 시작: Yeah, yeah.
-    33.90s  user  발화 끝
-    34.55s  agent 발화 끝
-    34.92s  user  발화 시작: Great! I'm also planning a birthday dinner…
-    37.59s  <ret> 발화 (turn11 첫 프레임)
-    37.90s  agent 발화 시작: <ret> I see we discussed a party of six with a preference fo
-    37.97s  user  발화 끝
-    39.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: [2026-02-09] Past chat — Planning a birthday dinner: party of six; loo
-    40.29s  user  발화 시작: Mm-hmm.
-    40.79s  user  발화 끝
-    42.29s  agent 발화 끝
-    42.34s  user  발화 시작: Yes, exactly! I need a restaurant that fits that.
-    44.93s  <ret> 발화 (turn14 첫 프레임)
-    45.25s  agent 발화 시작: <ret> Le Jardin is at twelve Rue de la Paix, La Terrasse at 
-    45.39s  user  발화 끝
-    46.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: (tool result) Le Jardin: 12 Rue de la Paix, Paris (48.8584, 2.2945); L
-    51.60s  user  발화 시작: Hmm, Le Jardin sounds nice. How far is that from me?
-    51.78s  agent 발화 끝
-    55.36s  <ret> 발화 (turn16 첫 프레임)
-    55.44s  agent 발화 시작: <ret> Le Jardin is six point eight kilometers away, about tw
-    55.68s  user  발화 끝
-    56.56s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.46s]: (tool result) 6.8 km, 22 minutes by car.
-    57.73s  user  발화 시작: Mhm.
-    58.23s  user  발화 끝
-    60.75s  user  발화 시작: Perfect. Thanks so much, Hia.
-    60.90s  agent 발화 끝
-    62.61s  agent 발화 시작: You’re very welcome, Ava. I’m glad I could help with your ar
-    62.69s  user  발화 끝
-    70.53s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It’s lovely to connect with you.
+     3.14s  agent 발화 끝
+     3.19s  user  발화 시작: Uh, welll… I need to get to the Musée d'Orsay from home.
+     7.21s  <ret> 발화 (turn2 첫 프레임)
+     7.29s  agent 발화 시작: <ret> Your home address is 30 Oak Avenue, so I can start pla
+     7.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: User's home address is 30 Oak Avenue.
+     7.35s  user  발화 끝
+    10.16s  user  발화 시작: Yeah, yeah.
+    11.06s  user  발화 시작: Yes, that’s right. How long will it take?
+    11.35s  user  발화 끝
+    11.54s  agent 발화 끝
+    13.74s  user  발화 끝
+    13.81s  <ret> 발화 (turn5 첫 프레임)
+    13.89s  agent 발화 시작: <ret> The Musée d'Orsay is 7.2 kilometers from your home, ab
+    13.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) The distance from 30 Oak Avenue to Musée d'Orsay is 7.2 
+    18.43s  user  발화 시작: Yeah.
+    19.07s  user  발화 끝
+    20.52s  agent 발화 끝
+    20.89s  user  발화 시작: And what about public transport?
+    22.57s  <ret> 발화 (turn8 첫 프레임)
+    22.81s  agent 발화 시작: <ret> By public transport, it’s around 35 minutes, with a ch
+    22.81s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.95s]: (tool result) Public transport from 30 Oak Avenue to Musée d'Orsay tak
+    22.91s  user  발화 끝
+    25.42s  user  발화 시작: Mm-hmm.
+    25.91s  user  발화 끝
+    27.77s  agent 발화 끝
+    28.00s  user  발화 시작: Hmm, that's a bit long. Is there a faster bus route?
+    31.15s  <ret> 발화 (turn11 첫 프레임)
+    31.22s  agent 발화 시작: <ret> Unfortunately, there isn’t a direct bus. The quickest 
+    31.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) No direct bus route exists between 30 Oak Avenue and Mus
+    31.37s  user  발화 끝
+    33.67s  user  발화 시작: Mhm.
+    34.17s  user  발화 끝
+    36.84s  user  발화 시작: I see… but…
+    37.15s  agent 발화 끝
+    38.75s  agent 발화 시작: Perhaps we could explore alternative routes? –
+    38.83s  user  발화 끝
+    40.62s  user  발화 시작: Actually, do you remember if I mentioned I’m vegetarian?
+    41.33s  agent 발화 끝
+    43.44s  <ret> 발화 (turn16 첫 프레임)
+    43.67s  user  발화 끝
+    43.75s  agent 발화 시작: <ret> Yes, you are vegetarian. You mentioned that on April 1
+    43.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: User is vegetarian.
+    45.70s  user  발화 시작: Right.
+    46.15s  user  발화 끝
+    48.69s  user  발화 시작: Oh, good. I was worried I’d forgotten to tell you.
+    48.89s  agent 발화 끝
+    51.56s  agent 발화 시작: It’s perfectly alright to need a reminder, Ava. It’s a commo
+    51.74s  user  발화 끝
+    53.44s  user  발화 시작: Yeah.
+    53.94s  user  발화 끝
+    56.68s  user  발화 시작: [laugh] True enough. Back to the museum… are there any resta
+    56.70s  agent 발화 끝
+    61.48s  <ret> 발화 (turn22 첫 프레임)
+    61.55s  agent 발화 시작: <ret> There are three vegetarian options nearby: Le Potager 
+    61.56s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.79s]: (tool result) There are three vegetarian restaurants within 1 kilomete
+    61.73s  user  발화 끝
+    69.34s  agent 발화 끝
+    69.40s  user  발화 시작: Le Potager du Marais sounds nice. Can you reserve a table fo
+    74.07s  <ret> 발화 (turn24 첫 프레임)
+    74.23s  agent 발화 시작: <ret> A table for one is confirmed at Le Potager du Marais a
+    74.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) Reservation confirmed at Le Potager du Marais for one pe
+    74.30s  user  발화 끝
+    79.20s  user  발화 시작: Really?
+    79.83s  user  발화 끝
+    83.08s  agent 발화 끝
+    84.00s  user  발화 시작: Perfect. Thank you, Hia.
+    85.47s  user  발화 끝
+    85.58s  agent 발화 시작: You’re very welcome, Ava. It sounds like a lovely plan, and 
+    90.58s  agent 발화 끝

@@ -58,105 +58,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 잭 소크랑 라파엘라 레지가 무슨 스포츠 하는 선수들인지  | S2 라켓이 나무였다니… 상상도 안 되네요. 혹시 지금은 어떤 재료 | S3 정말 덥네요. 테니스 치기엔 딱 좋은 날씨네요. | S4 가벼운 게 좋겠네요. 혹시 오늘 저녁에 영화 볼만한 거 추천해
+# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지가 무슨 스포츠를 했는지 궁금해요. | S2 혹시 지금도 활동하고 있나요? | S3 혹시 지금 날씨가 어때요? | S4 육십오점이요? 음, 그냥 다른 영화를 찾아봐야겠네요.
 
-     0.00s  user  발화 시작: 혹시 잭 소크랑 라파엘라 레지가 무슨 스포츠 하는 선수들인지 아세요?
-     3.94s  <ret> 발화 (turn1 첫 프레임)
-     4.10s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수는 프로 테니스 선수입니다.
-     4.34s  user  발화 끝
-     5.29s  user  발화 시작: 네.
-     5.64s  user  발화 끝
-     5.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: Jack Sock and Raffaella Reggi are professional tennis players.
-     8.08s  user  발화 시작: 음… 테니스 선수들은 보통 어떤 훈련을 많이 해요?
-     8.12s  agent 발화 끝
-    11.36s  agent 발화 시작: 테니스 선수들은 체력 훈련과 기술 훈련을 병행하는 편이에요. 코트에서 많은 시간을 보내면서 서브, 스트로크,
-    11.36s  user  발화 끝
-    20.67s  user  발화 시작: 발리 연습이라… 발리가 정확히 뭔데요?
-    20.86s  agent 발화 끝
-    22.75s  <ret> 발화 (turn6 첫 프레임)
-    22.90s  agent 발화 시작: <ret> 발리는 테니스에서 공이 바닥에 닿기 전에 치는 샷을 말합니다. 네트 앞에서 빠르게 반응하는 기술이
-    23.02s  user  발화 끝
-    24.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: A volley in tennis is a shot played before the ball bounces on the gro
-    30.13s  user  발화 시작: 아, 네트 앞에서 치는 거군요. 근데 테니스는 언제부터 시작된 스포츠예요?
-    30.17s  agent 발화 끝
-    34.02s  <ret> 발화 (turn8 첫 프레임)
-    34.38s  user  발화 끝
-    34.40s  agent 발화 시작: <ret> 현대 테니스는 천팔백칠십년대 영국에서 시작된 잔디 테니스에서 유래했습니다. 역사가 꽤 오래되었죠.
-    36.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: Modern tennis evolved from lawn tennis, which originated in England in
-    41.59s  user  발화 시작: 천팔백칠십년대면 엄청 오래됐네요. 그땐 지금이랑 규칙이 많이 달랐어요?
-    41.81s  agent 발화 끝
-    46.54s  agent 발화 시작: 네, 규칙도 장비도 많이 달랐습니다. 처음에는 라켓도 나무로 만들어졌고, 네트 높이도 지금보다 낮았다고 합니
-    46.77s  user  발화 끝
-    54.09s  agent 발화 끝
-    54.11s  user  발화 시작: 라켓이 나무였다니… 상상도 안 되네요. 혹시 지금은 어떤 재료로 만들어요?
-    59.31s  <ret> 발화 (turn12 첫 프레임)
-    59.47s  agent 발화 시작: <ret> 요즘 테니스 라켓은 주로 흑연, 유리 섬유, 또는 복합 재료로 만들어집니다. 가볍고 내구성이 좋아
-    59.48s  user  발화 끝
-    61.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: Modern tennis rackets are typically made of graphite, fiberglass, or c
-    63.78s  user  발화 시작: 네.
-    64.18s  user  발화 끝
-    67.45s  agent 발화 끝
-    68.31s  user  발화 시작: 흑연이군요. 그럼 테니스 코트 크기는 정해져 있어요?
-    70.99s  <ret> 발화 (turn15 첫 프레임)
-    71.30s  agent 발화 시작: <ret> 단식 경기용 테니스 코트는 길이가 이십삼 점 칠 칠미터, 폭이 팔 점 이 삼미터입니다. 복식 경기
-    71.55s  user  발화 끝
-    72.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: A standard tennis court is 78 feet (23.77 meters) long and 27 feet (8.
-    80.19s  agent 발화 끝
-    81.32s  user  발화 시작: 복식 경기용은 얼마나 넓어요?
-    82.87s  <ret> 발화 (turn17 첫 프레임)
-    83.07s  user  발화 끝
-    83.10s  agent 발화 시작: <ret> 복식 경기용 테니스 코트는 폭이 십 점 구 칠미터입니다. 공간이 더 필요하니까요.
-    84.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: For doubles matches, the tennis court is 36 feet (10.97 meters) wide.
+     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지가 무슨 스포츠를 했는지 궁금해요.
+     3.46s  <ret> 발화 (turn1 첫 프레임)
+     3.61s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수 모두 프로 테니스 선수입니다.
+     3.62s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.49s]: Jack Sock and Raffaella Reggi both play professional tennis.
+     3.79s  user  발화 끝
+     4.96s  user  발화 시작: 네.
+     5.31s  user  발화 끝
+     8.02s  user  발화 시작: 테니스요? 음, 그 두 분이 같이 경기한 적이 있어요?
+     8.10s  agent 발화 끝
+    10.70s  <ret> 발화 (turn4 첫 프레임)
+    10.83s  user  발화 끝
+    10.85s  agent 발화 시작: <ret> 두 분이 함께 경기하신 적이 있는지 알아봐 드릴까요?
+    10.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.23s]: (tool result) Jack Sock and Raffaella Reggi have never played a profes
+    13.99s  agent 발화 시작: 잭 소크 선수와 라파엘라 레지 선수는 프로 경기에서 맞붙은 적이 없다고 합니다.
+    14.08s  agent 발화 끝
+    19.26s  agent 발화 끝
+    19.34s  user  발화 시작: 아, 정말요? 좀 놀랍네요. 그럼 레지 선수는 주로 어떤 대회에 출전했어요?
+    23.41s  <ret> 발화 (turn7 첫 프레임)
+    23.81s  agent 발화 시작: <ret> 라파엘라 레지 선수는 주로 ITF 여자 회로 대회에 출전했고, 천구백구십육년에 세계 랭킹 백팔십일
+    23.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) Raffaella Reggi primarily competed in ITF Women's Circui
+    23.92s  user  발화 끝
+    32.60s  user  발화 시작: 백팔십일위면 꽤 괜찮은 순위네요. 그 선수도 한때 잘 나갔던 것 같아요.
+    32.66s  agent 발화 끝
+    37.15s  user  발화 끝
+    37.38s  agent 발화 시작: 네, 그렇죠. 꾸준히 노력해서 좋은 랭킹을 얻으신 것 같아요.
+    41.24s  user  발화 시작: 혹시 지금도 활동하고 있나요?
+    41.50s  agent 발화 끝
+    42.82s  <ret> 발화 (turn11 첫 프레임)
+    42.98s  agent 발화 시작: <ret> 라파엘라 레지 선수는 이천이년에 프로 테니스를 은퇴하셨다고 합니다.
+    42.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) Raffaella Reggi retired from professional tennis in 2002
+    43.23s  user  발화 끝
+    47.51s  agent 발화 끝
+    47.53s  user  발화 시작: 은퇴하셨군요. 시간이 정말 빠르네요. 그럼 잭 소크 선수는 지금 뭐 하고 있을까요?
+    51.68s  <ret> 발화 (turn13 첫 프레임)
+    51.99s  agent 발화 시작: <ret> 잭 소크 선수는 현재도 프로 테니스를 계속하고 있으며, 이천이십삼년 십일월 십사일 기준으로 세계 
+    52.00s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.46s]: (tool result) Jack Sock continues to play professional tennis and is c
+    52.02s  user  발화 끝
+    57.75s  user  발화 시작: 진짜요?
+    58.33s  user  발화 끝
+    59.45s  agent 발화 끝
+    60.30s  user  발화 시작: 아, 아직도 활동하고 있군요.…
+    62.27s  user  발화 끝
+    63.69s  user  발화 시작: …세계 랭킹도 꽤 괜찮네요.
+    65.44s  user  발화 끝
+    65.53s  agent 발화 시작: 네, 꾸준히 활동하고 계시는 것 같아요.
+    67.99s  agent 발화 끝
+    68.08s  user  발화 시작: 혹시 지금 날씨가 어때요?
+    69.33s  <ret> 발화 (turn19 첫 프레임)
+    69.56s  agent 발화 시작: <ret> 서울의 현재 날씨는 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
+    69.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    69.74s  user  발화 끝
+    73.79s  user  발화 시작: 그렇군요.
+    74.58s  user  발화 끝
+    76.00s  agent 발화 끝
+    76.11s  user  발화 시작: 이십삼도면 꽤 덥겠네요.
+    78.04s  user  발화 끝
+    78.29s  agent 발화 시작: 네, 조금 더울 수 있겠어요.
+    80.32s  agent 발화 끝
+    80.35s  user  발화 시작: 오늘 저녁에 영화 볼 만한 거 있을까요?
+    82.47s  <ret> 발화 (turn24 첫 프레임)
+    82.55s  agent 발화 시작: <ret> 메가박스 코엑스 지점에서 "익스트랙션 삼"라는 새로운 액션 영화가 상영 중이라고 합니다.
+    82.55s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.89s]: (tool result) The new action movie "Extraction 3" is currently playing
+    82.65s  user  발화 끝
+    86.43s  user  발화 시작: 네네.
+    86.97s  user  발화 끝
+    88.09s  user  발화 시작: "익스트랙션 삼"요? 재미있을까요?
     88.43s  agent 발화 끝
-    88.56s  user  발화 시작: 그렇군요. 혹시 지금 서울 날씨 어때요?
-    91.28s  <ret> 발화 (turn19 첫 프레임)
-    91.51s  agent 발화 시작: <ret> 지금 서울은 이십팔도이고, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터입니다. 꽤 덥네요.
-    91.52s  user  발화 끝
-    92.56s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.14s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h
-    96.25s  user  발화 시작: 그렇군요.
-    96.98s  user  발화 끝
-    98.55s  user  발화 시작: 정말 덥네요. 테니스 치기엔 딱 좋은 날씨네요.
-    98.65s  agent 발화 끝
-   101.50s  agent 발화 시작: 테니스 치기엔 정말 좋은 날씨입니다. 햇볕도 좋고, 바람도 적당히 불어서 시원하죠.
-   101.69s  user  발화 끝
-   105.56s  user  발화 시작: 음.
-   105.77s  user  발화 끝
-   107.66s  agent 발화 끝
-   108.00s  user  발화 시작: 맞아요. 테니스 말고 다른 라켓 스포츠도 좋아하세요?
-   111.49s  agent 발화 시작: 네, 테니스뿐만 아니라 배드민턴이나 스쿼시도 좋아합니다. 라켓으로 공을 치는 스포츠는 다 재미있죠.
-   111.57s  user  발화 끝
-   117.83s  user  발화 시작: 배드민턴도 재밌죠. 혹시 배드민턴 규칙도 알려주실 수 있어요?
-   118.07s  agent 발화 끝
-   121.65s  agent 발화 시작: 배드민턴 규칙은 테니스와 비슷하지만, 네트 높이가 더 낮고, 공의 무게가 가볍다는 차이점이 있습니다.
-   121.71s  user  발화 끝
-   127.67s  user  발화 시작: 아, 그렇군요. 그럼 배드민턴 라켓은 테니스 라켓보다 가벼워요?
-   128.18s  agent 발화 끝
-   131.48s  <ret> 발화 (turn29 첫 프레임)
-   131.55s  agent 발화 시작: <ret> 네, 배드민턴 라켓은 보통 칠십그램에서 구십오그램 사이로, 테니스 라켓보다 가볍습니다. 빠르게 움
-   131.65s  user  발화 끝
-   133.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: Badminton rackets are generally lighter than tennis rackets, typically
-   139.43s  agent 발화 끝
-   139.96s  user  발화 시작: 가벼운 게 좋겠네요. 혹시 오늘 저녁에 영화 볼만한 거 추천해 주실 수 있나요?
-   144.09s  <ret> 발화 (turn31 첫 프레임)
-   144.33s  agent 발화 시작: <ret> 오늘 저녁에 볼 만한 액션 영화로는 '더 이퀄라이저 삼', '미션 임파서블: 데드 레코닝 파트 일
-   144.54s  user  발화 끝
-   146.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) The Equalizer 3 — Antoine Fuqua — 2023; Mission: Impossi
-   147.97s  user  발화 시작: 음.
-   148.33s  user  발화 끝
-   152.71s  user  발화 시작: 음… '미션 임파서블'이 제일 끌리네요. 예매해 주실 수 있나요?
-   152.90s  agent 발화 끝
-   156.48s  <ret> 발화 (turn34 첫 프레임)
-   156.63s  agent 발화 시작: <ret> '미션 임파서블: 데드 레코닝 파트 일', CGV 강남, 저녁 일곱시, 성인 두명, 삼만 원입니다
-   156.87s  user  발화 끝
-   158.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.32s]: (tool result) Mission: Impossible - Dead Reckoning Part One, CGV 강남, 1
-   167.95s  agent 발화 끝
-   168.69s  user  발화 시작: 감사합니다. 덕분에 좋은 영화 보러 가겠네요.
-   171.55s  agent 발화 시작: 영화 즐겁게 보시고, 좋은 시간 보내세요.
-   171.60s  user  발화 끝
-   172.57s  user  발화 시작: 네.
-   173.02s  user  발화 끝
-   174.26s  user  발화 시작: 아니요, 괜찮습니다. 즐거운 하루 보내세요.
-   174.41s  agent 발화 끝
-   176.84s  user  발화 끝
-   176.85s  agent 발화 시작: 네, 선생님도 즐거운 하루 보내세요.
-   179.34s  agent 발화 끝
+    90.89s  <ret> 발화 (turn27 첫 프레임)
+    91.21s  agent 발화 시작: <ret> "익스트랙션 삼"는 로튼 토마토에서 육십오점의 평점을 받았다고 합니다.
+    91.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) "Extraction 3" has received mixed reviews, with a Rotten
+    91.33s  user  발화 끝
+    96.02s  agent 발화 끝
+    96.11s  user  발화 시작: 육십오점이요? 음, 그냥 다른 영화를 찾아봐야겠네요.
+    99.76s  agent 발화 시작: 네, 다른 영화를 찾아볼까요?
+    99.86s  user  발화 끝
+   101.69s  agent 발화 끝
+   102.49s  user  발화 시작: 네, 코미디 영화 중에서 괜찮은 거 추천해 주세요.
+   105.12s  <ret> 발화 (turn31 첫 프레임)
+   105.51s  agent 발화 시작: <ret> 롯데시네마 월드 타워에서 "패밀리 베케이션"이라는 코미디 영화가 상영 중입니다.
+   105.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) The comedy film "The Family Vacation" is playing at the 
+   105.67s  user  발화 끝
+   110.80s  user  발화 시작: "패밀리 베케이션"이요? 한번 알아봐야겠네요.
+   110.84s  agent 발화 끝
+   113.39s  user  발화 끝
+   113.40s  agent 발화 시작: 즐거운 시간 보내시길 바랍니다.
+   115.47s  agent 발화 끝

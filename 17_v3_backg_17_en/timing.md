@@ -58,29 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 Did you see the game last night? W | S3 Hmm, fifty sounds good. I'm not an | S4 Okay, that makes me feel better. T
+# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 Oh, that's a pretty wide range… | S3 Did you hear about the game last n | S4 What about children? Is it differe
 
      0.00s  user  발화 시작: What is the average heart rate of a healthy person?
-     2.01s  <ret> 발화 (turn1 첫 프레임)
-     2.40s  user  발화 끝
-     2.41s  agent 발화 시작: <ret> A healthy adult generally has a resting heart rate bet
-     4.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
-    10.33s  agent 발화 끝
-    10.50s  user  발화 시작: Oh, that's higher than I thought. Is there a lower acceptabl
-    13.33s  <ret> 발화 (turn3 첫 프레임)
-    13.46s  user  발화 끝
-    13.57s  agent 발화 시작: <ret> It can actually be lower, around fifty beats per minut
-    15.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: A healthy heart rate can be as low as 50 bpm in well-trained athletes.
-    21.91s  agent 발화 끝
-    22.59s  user  발화 시작: Did you see the game last night? What a finish!
-    25.22s  user  발화 끝
-    25.26s  user  발화 시작: Hmm, fifty sounds good. I'm not an athlete though.
-    27.72s  <ret> 발화 (turn6 첫 프레임)
-    28.03s  agent 발화 시작: <ret> For most people, sixty to eighty beats per minute is a
-    28.27s  user  발화 끝
-    29.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: For most adults, a resting heart rate of 60 to 80 bpm is considered no
-    35.53s  user  발화 시작: Okay, that makes me feel better. Thanks, Eus.
-    35.59s  agent 발화 끝
-    38.06s  agent 발화 시작: You’re very welcome.
-    38.12s  user  발화 끝
-    39.39s  agent 발화 끝
+     2.30s  <ret> 발화 (turn1 첫 프레임)
+     2.70s  agent 발화 시작: <ret> A healthy person’s average heart rate usually falls be
+     2.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: A normal resting heart rate for adults ranges from 60 to 100 beats per
+     2.73s  user  발화 끝
+    10.39s  agent 발화 끝
+    10.48s  user  발화 시작: Oh, that's a pretty wide range…
+    12.10s  user  발화 끝
+    12.38s  agent 발화 시작: It is, and many factors influence it — stress, fitness, even
+    19.74s  agent 발화 끝
+    20.50s  user  발화 시작: Did you hear about the game last night?
+    22.22s  user  발화 시작: What about children? Is it different for them?
+    22.25s  user  발화 끝
+    24.14s  <ret> 발화 (turn6 첫 프레임)
+    24.29s  agent 발화 시작: <ret> For children between six and fifteen, the average is b
+    24.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: A normal heart rate for children ages 6 to 15 is between 70 and 100 be
+    24.48s  user  발화 끝
+    32.30s  agent 발화 끝

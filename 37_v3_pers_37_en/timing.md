@@ -59,17 +59,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Jamie, welcome. I’m Hunar, and I’m here to offer suppo
-     8.02s  agent 발화 끝
-     8.40s  user  발화 시작: Hunar… that’s a beautiful name. It sounds… peaceful. I’m jus
-    14.74s  agent 발화 시작: Thank you, Jamie. Overwhelmed is perfectly understandable. W
-    14.84s  user  발화 끝
-    22.20s  agent 발화 끝
-    23.01s  user  발화 시작: Uhhh, well, I keep second-guessing if I made the right choic
-    28.98s  user  발화 끝
-    29.38s  agent 발화 시작: It’s natural to feel that pull, Jamie. Nostalgia is a powerf
-    37.49s  agent 발화 끝
-    37.50s  user  발화 시작: Just… knowing everyone. Being able to walk everywhere. It fe
-    45.39s  agent 발화 시작: That sense of connection is truly important. Perhaps explori
-    45.56s  user  발화 끝
-    53.41s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Jamie, welcome.
+     1.66s  agent 발화 끝
+     1.99s  user  발화 시작: Hunar… that’s a beautiful name. I’m feeling a bit overwhelme
+     7.85s  agent 발화 시작: It’s kind of you to say so. Overwhelm is very common with a 
+     7.87s  user  발화 끝
+    15.35s  agent 발화 끝
+    16.17s  user  발화 시작: Uhhh, finding a good coffee shop. Sounds silly, I know, but 
+    21.39s  user  발화 끝
+    21.77s  agent 발화 시작: Not silly at all. Those small rituals really anchor us. A co
+    31.83s  agent 발화 끝
+    31.84s  user  발화 시작: But… how do I even *begin* to choose a neighborhood? There a
+    36.54s  agent 발화 시작: Sydney is quite vast, Jamie — it’s made up of seventy-nine d
+    36.74s  user  발화 끝
+    46.37s  agent 발화 끝

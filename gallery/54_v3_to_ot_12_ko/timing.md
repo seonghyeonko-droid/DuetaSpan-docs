@@ -60,22 +60,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 비트 잇 기타 솔로를 누가 연주했는지 궁금해요. | S2 어머, 진짜? 나 그 사람 완전 좋아하는데. | S3 잠깐만요… | S4 아, 그러시군요. 그럼, 에디 반 헤일런은 어떤 기타를 주로 
 
      0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
-     2.69s  <ret> 발화 (turn1 첫 프레임)
-     3.01s  agent 발화 시작: <ret> 에디 반 헤일런 씨가 마이클 잭슨의 '비트 잇' 기타 솔로를 연주했습니다.
-     3.05s  user  발화 끝
-     4.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: Eddie Van Halen wrote the guitar solo for Michael Jackson's "Beat It".
-     6.11s  user  발화 시작: 맞아요.
-     6.93s  user  발화 끝
-     7.17s  agent 발화 끝
-     8.34s  user  발화 시작: 어머, 진짜? 그 기타리스트 엄청 유명하잖아.
-    11.50s  user  발화 시작: 혹시 그분이 다른 유명한 곡도 많이 연주했나요?
-    11.57s  user  발화 끝
-    14.55s  user  발화 끝
-    14.73s  agent 발화 시작: 에디 반 헤일런은 여러 곡에서 기타 연주를 맡았는데, 어떤 곡에 대해 더 자세히 알고 싶으신가요?
-    18.70s  user  발화 시작: 네.
-    19.25s  user  발화 끝
-    20.11s  agent 발화 끝
-    20.22s  agent 발화 시작: 혹시 반 헤일런 밴드의 곡을 좋아하시는지 여쭤봐도 될까요? 그쪽 음악도 꽤 유명하거든요.
-    25.22s  agent 발화 끝
+     2.93s  <ret> 발화 (turn1 첫 프레임)
+     3.25s  agent 발화 시작: <ret> 마이클 잭슨의 "비트 잇" 기타 솔로는 에디 반 헤일런이 연주했어요.
+     3.25s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.88s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+     3.33s  user  발화 끝
+     4.74s  user  발화 시작: 맞아요.
+     5.38s  user  발화 끝
+     7.13s  agent 발화 끝
+     8.30s  user  발화 시작: 어머, 진짜? 나 그 사람 완전 좋아하는데.
+    10.88s  user  발화 끝
+    10.91s  user  발화 시작: 잠깐만요…
+    11.89s  <ret> 발화 (turn5 첫 프레임)
+    12.05s  agent 발화 시작: <ret> 죄송하지만, 그 부분에 대한 추가 정보는 찾을 수 없었어요.
+    12.05s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.23s]: (no information found)
+    12.06s  user  발화 끝
+    15.28s  agent 발화 끝
+    15.35s  user  발화 시작: 아, 그러시군요. 그럼, 에디 반 헤일런은 어떤 기타를 주로 사용했죠?
+    19.92s  <ret> 발화 (turn7 첫 프레임)
+    20.24s  agent 발화 시작: <ret> 에디 반 헤일런은 기타를 많이 개조하는 것으로 유명했는데, 특히 천구백칠십팔년 크래머 기타를 자주
+    20.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.39s]: (tool result) Eddie Van Halen was known for heavily modifying his guit
+    20.35s  user  발화 끝
+    30.63s  agent 발화 끝

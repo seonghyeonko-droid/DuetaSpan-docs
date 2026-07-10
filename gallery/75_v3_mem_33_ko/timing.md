@@ -68,93 +68,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 좀 피곤하네요. 지금 몇 시예요? | S2 다행이다. 혹시… 제가 강아지 키우는 거 기억해요? | S3 지금 막 김치를 담갔어요. 근데… 제가 사는 집 주소 기억해요 | S4 음… 음악 듣는 거요.
+# EXAMINER(FDB-v2) 단계: S1 흐으으음… 좀 피곤하네요. 지금 몇 시예요? | S2 그쵸. 근데 요즘 글루텐 프리 식단 지키고 있잖아요. 스시 먹 | S3 일 점 이km… 가까운 편이네요. 예약해 줄 수 있어요? | S4 러스티! 아, 맞아요. 러스티. 너무 귀여워요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 유경님. 저는 디올로예요. 오늘 하루는 어떠셨어요?
-     2.76s  user  발화 시작: 어.
-     3.11s  user  발화 끝
-     3.84s  agent 발화 끝
-     4.01s  user  발화 시작: 음… 좀 피곤하네요. 지금 몇 시예요?
-     6.75s  <ret> 발화 (turn3 첫 프레임)
-     6.83s  agent 발화 시작: <ret> 지금 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십칠분이에요. 조금만 더 힘내세요.
-     6.97s  user  발화 끝
-     8.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
-    10.11s  user  발화 시작: 응.
-    10.46s  user  발화 끝
-    12.16s  agent 발화 끝
-    12.43s  user  발화 시작: 고마워요. 혹시 오늘 해가 언제 질까요?
-    14.81s  <ret> 발화 (turn6 첫 프레임)
-    15.05s  agent 발화 시작: <ret> 오늘 부산에는 해가 여덟시 삼십이분에 질 예정이고, 날씨는 구름이 조금 낀 이십육 점 팔도예요.
-    15.15s  user  발화 끝
-    16.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) 20:32, partly cloudy, 26.8°C, humidity 68%, wind 3.2 km/
-    21.81s  agent 발화 끝
-    21.93s  user  발화 시작: 아, 부산 날씨 알려주는 거였구나. 혹시 제가 좋아하는 게 뭐였더라…?
-    27.04s  <ret> 발화 (turn8 첫 프레임)
-    27.27s  agent 발화 시작: <ret> 유경님께서 가장 좋아하시는 음식은 스시였어요. 기억하고 있었답니다.
-    27.43s  user  발화 끝
-    28.07s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.84s]: [2026-05-07] User's favorite cuisine is sushi.
-    29.01s  user  발화 시작: 어.
-    29.55s  user  발화 끝
-    31.11s  agent 발화 끝
-    31.41s  user  발화 시작: 아, 맞아! 스시! 그럼 혹시 제가 페루트 알레르기가 있는 것도 기억해요?
-    35.45s  <ret> 발화 (turn11 첫 프레임)
-    35.84s  agent 발화 시작: <ret> 네, 유경님은 땅콩 알레르기가 있으셨죠. 항상 주의하시는 게 좋겠어요.
-    36.08s  user  발화 끝
-    36.65s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.12s]: [2025-06-20] User is allergic to peanuts.
-    39.95s  agent 발화 끝
-    40.03s  user  발화 시작: 다행이다. 혹시… 제가 강아지 키우는 거 기억해요?
-    43.25s  <ret> 발화 (turn13 첫 프레임)
-    43.64s  agent 발화 시작: <ret> 네, 유경님은 비글 강아지 '러스티'를 키우고 계시죠. 귀여운 러스티, 잘 지내고 있나요?
-    43.82s  user  발화 끝
-    44.37s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.14s]: [2025-08-08] User has a Beagle named Rusty.
-    48.78s  agent 발화 끝
-    48.91s  user  발화 시작: 러스티는 잘 지내고 있어요. 근데, 제가 글루텐 프리 식단을 하는 것도 기억해요?
-    53.51s  <ret> 발화 (turn15 첫 프레임)
-    53.82s  agent 발화 시작: <ret> 네, 유경님은 글루텐 프리 식단을 챙겨 드시는 것도 알고 있어요. 식단 관리에 신경 쓰시는군요.
-    54.00s  user  발화 끝
-    55.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: [2025-10-29] User is gluten-free.
-    59.57s  agent 발화 끝
-    59.72s  user  발화 시작: 그럼 제가 집 발효에 관심 있는 것도 알고 있겠죠?
-    62.40s  <ret> 발화 (turn17 첫 프레임)
-    62.71s  agent 발화 시작: <ret> 네, 유경님은 집에서 발효하는 것에 관심이 많으시죠. 요즘 뭐 발효하고 계세요?
-    62.81s  user  발화 끝
-    63.52s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.11s]: [2026-03-07] User is into home fermentation.
-    66.83s  agent 발화 끝
-    67.65s  user  발화 시작: 지금 막 김치를 담갔어요. 근데… 제가 사는 집 주소 기억해요?
-    71.96s  <ret> 발화 (turn19 첫 프레임)
-    72.00s  user  발화 끝
-    72.03s  agent 발화 시작: <ret> 네, 유경님께서는 서울 용산구 이태원로 이백에 거주하시는 것으로 알고 있어요.
-    73.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: [2025-06-15] User's home address is 서울 용산구 이태원로 200.
-    77.59s  agent 발화 끝
-    78.06s  user  발화 시작: 정확하네. 혹시… 제가 생일 파티를 열었던 적이 있었나?
-    81.65s  <ret> 발화 (turn21 첫 프레임)
-    82.04s  agent 발화 시작: <ret> 네, 유경님께서는 과거에 여섯명으로 생일 파티를 열 계획이 있으셨고, 야외 좌석을 찾으셨던 적이 
-    82.31s  user  발화 끝
-    83.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: [2025-07-19] Past chat — Planning a birthday dinner: party of six; loo
-    89.28s  agent 발화 끝
-    89.32s  user  발화 시작: 아, 기억하네. 그때 야외 좌석 찾았었는데… 지금은 뭐 하고 싶어요?
-    93.61s  agent 발화 시작: 유경님께서는 지금 무엇을 하고 싶으신가요? 혹시 제가 도와드릴 일이 있을까요?
-    93.76s  user  발화 끝
-    98.61s  agent 발화 끝
-    99.92s  user  발화 시작: 그냥… 요즘 좀 스트레스가 쌓여서요.
-   102.87s  agent 발화 시작: 요즘 스트레스가 많이 쌓이셨다니 안타깝네요. 혹시 스트레스 해소를 위해 어떤 활동을 좋아하시나요?
-   102.88s  user  발화 끝
-   104.60s  user  발화 시작: 응.
-   105.05s  user  발화 끝
-   108.38s  agent 발화 끝
-   108.90s  user  발화 시작: 음… 음악 듣는 거요.
-   110.83s  user  발화 끝
-   110.85s  agent 발화 시작: 음악 듣는 것을 좋아하시는군요. 어떤 음악 장르를 주로 들으세요?
-   114.69s  agent 발화 끝
-   116.28s  user  발화 시작: 잔잔한 클래식 음악요.
-   117.66s  <ret> 발화 (turn30 첫 프레임)
-   117.98s  agent 발화 시작: <ret> 클레르 드 룬 — 드뷔시, 베르가마스크 모음곡 (천구백오); 짐노페디 일번 — 사티, 짐노페디 (
-   118.21s  user  발화 끝
-   119.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.77s]: (tool result) Clair de Lune — Debussy, Suite Bergamasque (1905); Gymno
-   129.75s  agent 발화 끝
-   130.09s  user  발화 시작: 오, 좋네요. 그럼… 지금 바로 틀어줄 수 있어요?
-   132.88s  <ret> 발화 (turn32 첫 프레임)
-   133.20s  agent 발화 시작: <ret> 네, 클레르 드 룬 — 드뷔시, 베르가마스크 모음곡 (천구백오)을 재생해 드릴게요. 음량은 오십%
-   133.47s  user  발화 끝
-   134.24s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.36s]: (tool result) Playback started: Clair de Lune — Debussy, Suite Bergama
-   140.56s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 유경님. 저는 디올로예요. 오늘 하루 어떻게 지내셨어요?
+     3.33s  user  발화 시작: 어.
+     3.92s  user  발화 끝
+     4.58s  agent 발화 끝
+     4.77s  user  발화 시작: 흐으으음… 좀 피곤하네요. 지금 몇 시예요?
+     8.20s  <ret> 발화 (turn3 첫 프레임)
+     8.28s  agent 발화 시작: <ret> 지금은 서울 시간으로 오후 세 시 십칠분이에요. 조금만 더 힘내세요.
+     8.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+     8.46s  user  발화 끝
+    10.24s  user  발화 시작: 그치.
+    10.83s  user  발화 끝
+    12.49s  agent 발화 끝
+    12.77s  user  발화 시작: 부산은 지금 몇 시예요?
+    14.02s  <ret> 발화 (turn6 첫 프레임)
+    14.25s  agent 발화 시작: <ret> 부산도 지금 오후 세 시 십칠분이에요. 시간 차이가 없죠.
+    14.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Busan rig
+    14.38s  user  발화 끝
+    18.18s  agent 발화 끝
+    18.23s  user  발화 시작: 저… 혹시 제가 좋아하는 음식이 뭐였죠? 기억 안 나네요.
+    21.78s  <ret> 발화 (turn8 첫 프레임)
+    22.02s  user  발화 끝
+    22.02s  agent 발화 시작: <ret> 유경님께서 가장 좋아하시는 음식은 스시였어요. 혹시 드시고 싶으세요?
+    22.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: [2026-05-07] User's favorite cuisine is sushi.
+    26.32s  user  발화 시작: 아, 스시! 맞아요, 맞아요. 스시 진짜 좋아하죠.
+    26.41s  agent 발화 끝
+    29.44s  agent 발화 시작: 스시를 좋아하시는군요. 저도 스시를 좋아하는데, 신선한 해산물이 정말 좋잖아요.
+    29.46s  user  발화 끝
+    32.00s  user  발화 시작: 어.
+    32.64s  user  발화 끝
+    35.04s  agent 발화 끝
+    35.38s  user  발화 시작: 그쵸. 근데 요즘 글루텐 프리 식단 지키고 있잖아요. 스시 먹을 수 있을까요?
+    39.80s  <ret> 발화 (turn13 첫 프레임)
+    40.20s  agent 발화 시작: <ret> 네, 유경님께서는 글루텐 프리 식단을 지키시죠. 스시를 드실 때 간장 조심하셔야 할 거예요.
+    40.20s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.41s]: [2025-10-29] User is gluten-free.
+    40.37s  user  발화 끝
+    45.61s  agent 발화 끝
+    45.87s  user  발화 시작: 간장! 아 맞다. 간장에 밀가루 들어가 있잖아요.
+    49.29s  agent 발화 시작: 맞아요. 간장 대신 타마리 간장을 사용하시면 괜찮을 거예요.
+    49.38s  user  발화 끝
+    52.36s  user  발화 시작: 타마리 간장… 알아봐야겠네요. 혹시 근처에 글루텐 프리 스시집 있나요?
+    52.75s  agent 발화 끝
+    57.64s  <ret> 발화 (turn17 첫 프레임)
+    57.71s  agent 발화 시작: <ret> 네, 부산에 '글루텐 프리 스시 부산'이라는 식당이 있어요. 거리는 일 점 이km이고 평점은 사 
+    57.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) There is a restaurant named “Gluten-Free Sushi Busan” lo
+    57.73s  user  발화 끝
+    64.16s  agent 발화 끝
+    64.51s  user  발화 시작: 일 점 이km… 가까운 편이네요. 예약해 줄 수 있어요?
+    68.22s  <ret> 발화 (turn19 첫 프레임)
+    68.37s  agent 발화 시작: <ret> 네, 칠월 십일일 저녁 일곱시에 두 분으로 '글루텐 프리 스시 부산' 예약 완료되었어요. 확인 번
+    68.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Reservation confirmed for 2 people at Gluten-Free Sushi 
+    68.58s  user  발화 끝
+    77.04s  agent 발화 끝
+    77.31s  user  발화 시작: 와, 감사합니다! 저 완전 잊고 있었어요.
+    80.06s  agent 발화 시작: 천만에요. 유경님을 도와드릴 수 있어서 기뻐요.
+    80.13s  user  발화 끝
+    83.56s  user  발화 시작: 아, 그리고 혹시… 저희 강아지 이름이 뭐였죠? 갑자기 까먹었어요.
+    83.58s  agent 발화 끝
+    87.66s  <ret> 발화 (turn23 첫 프레임)
+    87.73s  agent 발화 시작: <ret> 유경님 강아지 이름은 러스티였어요. 귀여운 비글이죠.
+    87.73s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.33s]: [2025-08-08] User has a Beagle named Rusty.
+    87.95s  user  발화 끝
+    91.06s  agent 발화 끝
+    91.90s  user  발화 시작: 러스티! 아, 맞아요. 러스티. 너무 귀여워요.
+    95.28s  agent 발화 시작: 러스티는 정말 사랑스러운 이름이네요. 강아지와 함께 행복한 시간 보내세요.
+    95.41s  user  발화 끝
+    99.63s  agent 발화 끝
+    99.64s  user  발화 시작: 네, 감사합니다. 러스티 산책시키러 가야겠어요.
+   102.95s  agent 발화 시작: 러스티와 즐거운 산책 되세요. 날씨도 좋으니 러스티가 좋아할 거예요.
+   103.15s  user  발화 끝
+   104.24s  user  발화 시작: 응.
+   104.82s  user  발화 끝
+   107.15s  agent 발화 끝
+   107.28s  user  발화 시작: 디올로, 정말 고마워요. 덕분에 기억도 나고, 저녁 약속도 잡고.
+   112.32s  agent 발화 시작: 천만에요, 유경님. 언제든지 편하게 말씀해주세요. 제가 항상 곁에 있답니다.
+   112.37s  user  발화 끝
+   117.23s  agent 발화 끝

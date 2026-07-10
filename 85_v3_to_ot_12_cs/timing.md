@@ -58,27 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 마이클 잭슨 "Beat It" 기타 솔로를 누가 연주했는지 궁 | S2 저기요, 혹시 재활용 쓰레기 버리고 오셨어요? | S3 아, 죄송한데요, 어디까지 얘기했었죠? 아, 기타리스트요. | S4 정말 그렇죠. 그는 록과 팝을 아주 자연스럽게 섞는 게 정말 
+# EXAMINER(FDB-v2) 단계: S1 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했 | S2 그렇군요… 아, 혹시 마이클 잭슨이랑 다른 작업도 하셨나요? | S3 저기, 제 열쇠 보셨어요? | S4 그럼, 딱 그 한 곡이었던 거군요?
 
-     0.00s  user  발화 시작: 마이클 잭슨 "Beat It" 기타 솔로를 누가 연주했는지 궁금하네요. 잘 기억이 안 나요.
-     5.21s  <ret> 발화 (turn1 첫 프레임)
-     5.32s  user  발화 끝
-     5.53s  agent 발화 시작: <ret> 음, 사실 에디 반 헤일런이었어요. 그 노래에 정말 독특한 에너지를 더했거든요.
-     7.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-     7.75s  user  발화 시작: 네.
-     8.38s  user  발화 끝
-    11.37s  agent 발화 끝
-    11.46s  user  발화 시작: 와, 세션 뮤지션이 아니었다는 걸 항상 잊어버려요.
-    15.30s  user  발화 끝
-    15.60s  agent 발화 시작: 그렇게 굉장한 노래에서는 개별적인 기여가 간과되기 쉬워요.
-    20.18s  user  발화 시작: 저기요, 혹시 재활용 쓰레기 버리고 오셨어요?
-    20.42s  agent 발화 끝
-    23.99s  user  발화 시작: 아, 죄송한데요, 어디까지 얘기했었죠? 아, 기타리스트요.
-    24.11s  user  발화 끝
-    28.52s  user  발화 끝
-    28.57s  agent 발화 시작: 에디 반 헤일런과 그의 놀라운 솔로 연주에 대해 이야기하고 있었어요. "Beat It"을 정말 돋보이게 했다
-    36.47s  user  발화 시작: 정말 그렇죠. 그는 록과 팝을 아주 자연스럽게 섞는 게 정말 대단해요.
-    36.49s  agent 발화 끝
-    41.24s  user  발화 끝
-    41.28s  agent 발화 시작: 정말 혁신적인 협업이었고, 두 아티스트 모두에게 중요한 순간이었어요. 장르의 틀을 깨는 데는 용기가 많이 필
-    50.27s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 아세요?
+     3.68s  <ret> 발화 (turn1 첫 프레임)
+     3.93s  user  발화 끝
+     4.00s  agent 발화 시작: <ret> 음, 에디 반 헤일런 님이 연주하셨는데, 정말 혁신적인 기타리스트셨어요. “Beat It”에서의 
+     4.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: Eddie Van Halen, known for his innovative guitar work with the band Va
+     7.00s  user  발화 시작: 네.
+     7.55s  user  발화 끝
+    11.79s  agent 발화 끝
+    11.95s  user  발화 시작: 그렇군요… 아, 혹시 마이클 잭슨이랑 다른 작업도 하셨나요?
+    15.99s  <ret> 발화 (turn4 첫 프레임)
+    16.35s  user  발화 끝
+    16.38s  agent 발화 시작: <ret> 아니요, 그 솔로는 그분들과의 유일한 녹음 협업이었어요. 에디 반 헤일런 님은 마이클 잭슨 님과 
+    16.39s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.80s]: Eddie Van Halen and Michael Jackson never collaborated on any other re
+    26.98s  user  발화 시작: 저기, 제 열쇠 보셨어요?
+    27.18s  agent 발화 끝
+    29.12s  user  발화 시작: 그럼, 딱 그 한 곡이었던 거군요?
+    29.24s  user  발화 끝
+    31.84s  user  발화 끝
+    31.86s  agent 발화 시작: 네, 딱 그 한 곡이에요. 단 한 번의 참여가 이렇게 기억에 남을 수 있다니, 정말 멋진 일이죠?
+    37.32s  agent 발화 끝

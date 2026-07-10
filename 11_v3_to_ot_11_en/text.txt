@@ -69,10 +69,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, do you know the last time the Oakland A's were no-hit? It feels like ⟨ret@4.17s⟩ ages ago.
-[  4.56s][moshi] That happened on ⟦⚡SPAN@6.17s: The Oakland Athletics were last no-hit on April 21, 2018.⟧ April twenty-first, two thousand eighteen. A tough day for their hitters, I imagine.
-[ 11.18s][user ] Wow, really? That was… a while back. Uh, honey, can you grab the mail?
-[ 17.25s][user ] Sorry about that. So, 2018… that’s quite a stretch.
-[ 21.09s][moshi] It is a significant gap, yes. It’s understandable to feel like it’s been a long time when a team goes that long without being no-hit.
-[ 29.57s][user ] I guess so. It's just frustrating as a fan.
-[ 32.39s][moshi] Being a fan definitely has its ups and downs, doesn't it? Sometimes focusing on the enjoyment of the game itself can help with those frustrations.
+[  0.00s][user ] Do you know when the A's were last no-hit? ⟨ret@2.80s⟩ I'm curious.
+[  3.19s][moshi] ⟦⚡SPAN@3.20s: The Oakland Athletics were last no-hit on April 21, 2018, by Mike Fiers of the Detroit Tigers.⟧ The last time the A's were no-hit was April twenty-first, two thousand eighteen. It’s good to look back at those games sometimes.
+[ 11.28s][user ] Wow, that was a while ago. Uhhh…
+[ 15.70s][user ] …my friend just texted about dinner plans…
+[ 20.15s][user ] «to_other» Hey, are we still on for Italian tonight?
+[ 22.25s][user ] …right, sorry. So, who pitched ⟨ret@24.53s⟩ it?
+[ 24.75s][moshi] ⟦⚡SPAN@24.77s: Mike Fiers of the Detroit Tigers pitched the no-hitter against the Oakland Athletics on April 21, 2018.⟧ That no-hitter was pitched by Mike Fiers, playing for the Detroit Tigers.
+[ 28.26s][user ] «backchannel» Okay.
+[ 29.44s][moshi] It's a reminder that even in baseball, unexpected things can happen, isn't it?
+[ 30.79s][user ] «backchannel» Right.
+[ 34.12s][user ] Is he still playing?
+[ 35.31s][moshi] ⟨ret@35.23s⟩ ⟦⚡SPAN@35.31s: Mike Fiers last played in Major League Baseball for the Philadelphia Phillies in 2021, before retiring.⟧ Mike Fiers retired after playing for the Philadelphia Phillies in twenty twenty-one. I hope he's enjoying his time off.

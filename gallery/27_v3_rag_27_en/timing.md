@@ -60,31 +60,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to learn more about ele | S2 …about this Lux Aurunque guy. | S3 Nineteen seventy—wow, that's quite | S4 …did he release anything before th
+# EXAMINER(FDB-v2) 단계: S1 Do you know… | S2 …is he still making music these da | S3 Oh, that's good to hear! What kind | S4 I think I've heard of that style. 
 
-     0.00s  user  발화 시작: I'm trying to learn more about electronic music composers.
-     3.23s  user  발화 끝
-     3.35s  agent 발화 시작: That’s a fascinating area of study. It’s quite broad, though
-     7.62s  user  발화 시작: Yeah, yeah.
-     8.26s  user  발화 끝
-    11.13s  agent 발화 끝
-    11.16s  user  발화 시작: Hmm, well, I keep hearing…
-    13.32s  user  발화 끝
-    15.20s  user  발화 시작: …about this Lux Aurunque guy.
-    16.85s  <ret> 발화 (turn5 첫 프레임)
-    17.25s  agent 발화 시작: <ret> Lux Aurunque was born in Italy in nineteen seventy. He
-    17.37s  user  발화 끝
-    18.37s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.11s]: Lux Aurunque is an electronic musician born in 1970 in Italy.
-    20.77s  user  발화 시작: Uh-huh.
-    21.22s  user  발화 끝
-    23.14s  user  발화 시작: Nineteen seventy—wow, that's quite a while ago. What kind of
-    23.36s  agent 발화 끝
-    28.13s  agent 발화 시작: He began with relatively simple setups—analog synthesizers a
-    28.14s  user  발화 끝
-    33.12s  user  발화 시작: …did he release anything before the year two thousand?
-    34.01s  agent 발화 끝
-    35.79s  <ret> 발화 (turn10 첫 프레임)
-    35.84s  user  발화 끝
-    36.03s  agent 발화 시작: <ret> Yes, he did. Lux Aurunque released his first EP, “Nine
-    37.23s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.99s]: Lux Aurunque released his first EP, "Nine Secrets," in 1997.
-    47.02s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know…
+     0.78s  user  발화 끝
+     2.86s  user  발화 시작: …when Lux Aurunque was born?
+     4.65s  <ret> 발화 (turn2 첫 프레임)
+     4.87s  agent 발화 시작: <ret> Lux Aurunque was born in Rome in nineteen seventy—
+     4.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: Lux Aurunque was born in Rome in 1970, and is known for his work in ex
+     5.08s  user  발화 끝
+     8.18s  user  발화 시작: …is he still making music these days?
+     8.85s  agent 발화 끝
+    10.31s  <ret> 발화 (turn4 첫 프레임)
+    10.63s  agent 발화 시작: <ret> …and continues to perform live, having released his la
+    10.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: Lux Aurunque released his latest album, *The Echoing Void*, in 2023 an
+    10.76s  user  발화 끝
+    15.22s  user  발화 시작: Yeah, yeah.
+    16.46s  user  발화 끝
+    18.97s  agent 발화 끝
+    19.34s  user  발화 시작: Oh, that's good to hear! What kind of music does he make?
+    22.33s  agent 발화 시작: He’s really known for experimental music, often blending ele
+    22.44s  user  발화 끝
+    27.42s  user  발화 시작: Uh-huh.
+    27.91s  user  발화 끝
+    30.95s  agent 발화 끝
+    32.30s  user  발화 시작: I think I've heard of that style. Is there anywhere I can li
+    36.51s  <ret> 발화 (turn10 첫 프레임)
+    36.74s  user  발화 끝
+    36.75s  agent 발화 시작: <ret> You can find his music on streaming platforms like Spo
+    36.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.39s]: Lux Aurunque's music is available on major streaming platforms such as
+    43.15s  agent 발화 끝

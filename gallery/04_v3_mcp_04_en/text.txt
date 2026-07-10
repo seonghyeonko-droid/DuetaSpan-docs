@@ -64,14 +64,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@3.43s⟩ one?
-[  3.75s][moshi] ⟦⚡SPAN@4.39s: (tool result) Directory 'SuperCrawler version ten point one' created successfully.⟧ I’ve created a directory named 'SuperCrawler version ten point one'.
-      CALL: {"function": "create_directory", "arguments": {"directory_name": "SuperCrawler version ten point one"}}
-[  5.87s][user ] «backchannel» Mhm.
-[  9.31s][user ] Hmm, well, what’s the weather in Seoul right ⟨ret@12.22s⟩ now?
-[ 12.46s][moshi] The weather in ⟦⚡SPAN@13.98s: (tool result) 24.0°C, humidity 68%, wind 4.2 km/h⟧ Seoul is twenty-four point zero degrees Celsius, with sixty-eight percent humidity and a wind speed of four point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 23.25s][user ] That sounds pleasant. Can you find me some Italian restaurants nearby?
-[ 27.30s][moshi] ⟨ret@27.22s⟩ In Seoul, I found ⟦⚡SPAN@29.22s: (tool result) Seoul (37.5665, 126.9780): La Piazza (120m), Bellagio (350m), Pasta e Vino (580m)⟧ La Piazza, one hundred and twenty meters away; Bellagio, three hundred and fifty meters; and Pasta e Vino, five hundred and eighty meters away.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Seoul"}}
-[ 39.50s][user ] Bellagio sounds nice. Can you reserve a table for two there at seven PM?
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.07s⟩ one?
+[  4.39s][moshi] ⟦⚡SPAN@4.39s: (tool result) {"status": "success", "url": "https://httpbin.org/headers", "headers": {"Accept": "*/*", "Accept⟧ I’ve set the user agent to SuperCrawler version ten point one, as requested.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://httpbin.org/headers", "user_agent": "SuperCrawler version 10.1"}}
+[  6.70s][user ] «backchannel» Mhm.
+[ 10.35s][user ] Hmm, that’s good… but can you verify it actually ⟨ret@14.32s⟩ took?
+[ 14.56s][moshi] ⟦⚡SPAN@14.56s: (tool result) {"status": "success", "url": "https://httpbin.org/headers", "headers": {"Accept": "*/*", "Accept⟧ Yes, the headers now show “SuperCrawler version ten point one.”
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://httpbin.org/headers", "user_agent": "SuperCrawler version 10.1"}}
+[ 19.36s][user ] Okay, perfect. That’s a relief.

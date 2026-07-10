@@ -58,27 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who played the guitar  | S2 Hey, did you take the recycling ou | S3 Sorry, where were we? Oh right, gu | S4 Definitely. It’s amazing how he bl
+# EXAMINER(FDB-v2) 단계: S1 Do you know who played the guitar  | S2 Hmm, that’s right… uhhh, did he do | S3 Hey, have you seen my keys? | S4 So, it was just that one song then
 
-     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson's 
-     4.60s  <ret> 발화 (turn1 첫 프레임)
-     4.83s  agent 발화 시작: <ret> That was Eddie Van Halen, actually. He brought a reall
-     5.05s  user  발화 끝
-     6.39s  user  발화 시작: Okay.
-     6.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-     7.03s  user  발화 끝
-     8.86s  user  발화 시작: Wow, I always forget it wasn't a session musician.
-     8.90s  agent 발화 끝
-    12.67s  agent 발화 시작: It’s easy to overlook individual contributions in a song lik
-    12.70s  user  발화 끝
-    17.59s  agent 발화 끝
-    18.98s  user  발화 시작: Hey, did you take the recycling out?
-    20.83s  user  발화 시작: Sorry, where were we? Oh right, guitarists.
-    20.91s  user  발화 끝
-    24.66s  user  발화 끝
-    24.73s  agent 발화 시작: We were talking about Eddie Van Halen and his incredible sol
-    30.27s  user  발화 시작: Definitely. It’s amazing how he blended rock with pop so sea
-    30.37s  agent 발화 끝
-    35.54s  user  발화 끝
-    35.91s  agent 발화 시작: It was a really innovative collaboration, and a defining mom
-    44.11s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson’s 
+     3.24s  <ret> 발화 (turn1 첫 프레임)
+     3.47s  agent 발화 시작: <ret> That was Eddie Van Halen, a truly innovative guitarist
+     3.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Eddie Van Halen, known for his innovative guitar work with the band Va
+     3.65s  user  발화 끝
+     5.61s  user  발화 시작: Okay.
+     6.10s  user  발화 끝
+     8.94s  agent 발화 끝
+     8.96s  user  발화 시작: Hmm, that’s right… uhhh, did he do any other work with Micha
+    13.47s  <ret> 발화 (turn4 첫 프레임)
+    13.87s  agent 발화 시작: <ret> No, that solo was their only recorded collaboration—Ed
+    13.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: Eddie Van Halen and Michael Jackson never collaborated on any other re
+    14.01s  user  발화 끝
+    20.96s  agent 발화 끝
+    22.29s  user  발화 시작: Hey, have you seen my keys?
+    24.13s  user  발화 시작: So, it was just that one song then?
+    24.23s  user  발화 끝
+    26.48s  agent 발화 시작: Just that one song, yes. It’s wonderful how a single contrib
+    26.53s  user  발화 끝
+    31.90s  agent 발화 끝

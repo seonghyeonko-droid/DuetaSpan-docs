@@ -63,53 +63,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트를 좀 자세한 지도처럼 보여달라고. | S2 근데 잠깐, 애플 얘기는 잠시 덮고… | S3 내년 7월 15일부터 20일까지. | S4 좋아, 그럼 롯데 호텔 L7 명동으로 예약해 줘.
+# EXAMINER(FDB-v2) 단계: S1 앱플 홈페이지 상세 지도를 만들어 줘… | S2 음, 그 페이지에 비교 차트도 있어? | S3 $799… 생각보다 비싸네. | S4 좋아. 그럼 보장 옵션은 뭐야?
 
-     0.00s  user  발화 시작: 애플 웹사이트를 좀 자세한 지도처럼 보여달라고.
-     2.96s  <ret> 발화 (turn1 첫 프레임)
-     3.11s  agent 발화 시작: <ret> 네, 애플 웹사이트의 상세 지도를 만들어서 주요 영역 스무 군데를 표시해 드렸습니다.
-     3.23s  user  발화 끝
-     4.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) Map created: Apple website overview, 20 points of intere
-     5.25s  user  발화 시작: 어어.
-     5.88s  user  발화 끝
-     8.29s  agent 발화 끝
-     8.84s  user  발화 시작: 스무 군데나 된다고? 너무 많네. 제품 목록은 어디 있는지 보여줘.
-    13.33s  <ret> 발화 (turn4 첫 프레임)
-    13.52s  user  발화 끝
-    13.64s  agent 발화 시작: <ret> 네, 제품 페이지에 지도를 집중해서 여덟 가지 카테고리를 강조해 드렸습니다.
-    15.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Map focused: Apple products page, 8 product categories h
-    16.35s  user  발화 시작: 응.
-    16.65s  user  발화 끝
-    18.69s  agent 발화 시작: 혹시 아이폰처럼 특정 제품으로 더 자세하게 지도를 좁혀 드릴까요?
-    18.78s  agent 발화 끝
-    20.44s  user  발화 시작: 어.
-    21.07s  user  발화 끝
-    23.28s  agent 발화 끝
-    23.55s  user  발화 시작: 근데 잠깐, 애플 얘기는 잠시 덮고…
-    26.27s  user  발화 끝
-    27.53s  user  발화 시작: 서울 호텔 좀 찾아줘.
-    28.81s  user  발화 끝
-    28.87s  agent 발화 시작: 네, 서울 호텔을 검색해 드릴게요. 혹시 날짜는 언제로 생각하고 계신가요?
-    34.10s  user  발화 시작: 내년 7월 15일부터 20일까지.
-    34.47s  agent 발화 끝
-    36.53s  <ret> 발화 (turn12 첫 프레임)
-    36.59s  user  발화 끝
-    36.84s  agent 발화 시작: <ret> 네, 해당 날짜에 서울 호텔 열두 곳을 찾았는데, 밤에 80달러부터 350달러까지 가격대가 다양합
-    38.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) 12 hotels found in Seoul, price range $80-$350 per night
-    43.70s  user  발화 시작: 명동 근처에 있는 곳도 있어?
-    44.30s  agent 발화 끝
-    45.04s  <ret> 발화 (turn14 첫 프레임)
-    45.43s  agent 발화 시작: <ret> 네, 명동 근처에 있는 호텔 네 곳이 있는데, 밤에 120달러부터 280달러까지 가격대가 다양합니
-    45.68s  user  발화 끝
-    47.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) 4 hotels found near Myeongdong, price range $120-$280 pe
-    52.69s  user  발화 시작: 좋아, 그럼 롯데 호텔 L7 명동으로 예약해 줘.
-    52.89s  agent 발화 끝
-    55.80s  <ret> 발화 (turn16 첫 프레임)
-    55.97s  user  발화 끝
-    56.03s  agent 발화 시작: <ret> 네, 롯데 호텔 L7 명동 예약이 7월 15일부터 20일까지, 밤에 250달러로 확정되었습니다. 
-    57.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.95s]: (tool result) Reservation confirmed: L7 Myeongdong by LOTTE, Jul 15-20
-    66.90s  user  발화 시작: 완벽해! 정말 고마워.
-    66.98s  agent 발화 끝
-    68.37s  user  발화 끝
-    68.52s  agent 발화 시작: 네, 도와드릴 수 있어서 기쁩니다. 서울 여행 즐겁게 다녀오세요!
-    73.47s  agent 발화 끝
+     0.00s  user  발화 시작: 앱플 홈페이지 상세 지도를 만들어 줘…
+     2.39s  user  발화 끝
+     3.73s  user  발화 시작: 제품에 집중해서 보여 줘.
+     5.08s  <ret> 발화 (turn2 첫 프레임)
+     5.20s  user  발화 끝
+     5.23s  agent 발화 시작: <ret> 네, 앱플 홈페이지 상세 지도를 만들었고, 아이폰, 아이패드, 맥… 등 제품 카테고리를 강조해 드
+     5.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Map created showing Apple's website structure with produ
+     9.12s  user  발화 시작: 어어.
+     9.66s  user  발화 끝
+    12.26s  agent 발화 시작: …그래서 제품 정보를 쉽게 찾아보실 수 있을 거예요.
+    12.36s  agent 발화 끝
+    13.55s  user  발화 시작: 응.
+    13.86s  user  발화 끝
+    15.42s  user  발화 시작: 좋긴 한데, 아이폰 16 정보 찾는 데도 보여 줄 수 있어?
+    15.54s  agent 발화 끝
+    18.62s  <ret> 발화 (turn7 첫 프레임)
+    19.00s  agent 발화 시작: <ret> 네, 아이폰 16 페이지를 찾아 지도를 업데이트했어요—apple.com/iphone-16에서 확인
+    19.02s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.69s]: (tool result) The map has been updated to pinpoint the iPhone 16 page 
+    19.25s  user  발화 끝
+    24.64s  user  발화 시작: 어.
+    25.04s  user  발화 끝
+    26.50s  user  발화 시작: 음, 그 페이지에 비교 차트도 있어?
+    26.70s  agent 발화 끝
+    28.34s  <ret> 발화 (turn10 첫 프레임)
+    28.64s  agent 발화 시작: <ret> 네, 앱플 홈페이지에 아이폰 16, 프로, 프로 맥스를 비교하는 차트가 있습니다.
+    28.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (tool result) The Apple website features a comparison chart detailing 
+    28.67s  user  발화 끝
+    34.70s  user  발화 시작: 그거 유용하겠네—근데, 아이폰 16 기본 모델 가격은 얼마야?
+    34.76s  agent 발화 끝
+    39.44s  <ret> 발화 (turn12 첫 프레임)
+    39.59s  agent 발화 시작: <ret> 아, 그러시군요—기본 아이폰 16, 128기가바이트 모델은 칠백구십구 달러부터 시작합니다.
+    39.70s  user  발화 끝
+    40.16s  ⚡SPAN 주입 [d'=0.72s / d_lead=0.74s]: (tool result) The base model iPhone 16 with 128GB of storage is priced
+    46.21s  agent 발화 끝
+    46.30s  user  발화 시작: $799… 생각보다 비싸네.
+    48.60s  user  발화 끝
+    48.73s  agent 발화 시작: —하지만 그건…
+    50.19s  agent 발화 끝
+    50.64s  user  발화 시작: …가격은 됐고. 지도에서 아이폰 16용 AppleCare 정보 찾는 곳을 보여 줄 수 있어?
+    55.88s  <ret> 발화 (turn16 첫 프레임)
+    56.11s  agent 발화 시작: <ret> 네, 아이폰 16용 AppleCare+ 페이지를 지도에 강조 표시했어요—apple.com/ipho
+    56.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.22s]: (tool result) Map updated to highlight the AppleCare+ page for iPhone 
+    56.29s  user  발화 끝
+    61.55s  user  발화 시작: 대박.
+    62.18s  user  발화 끝
+    65.33s  agent 발화 끝
+    65.53s  user  발화 시작: 좋아. 그럼 보장 옵션은 뭐야?
+    67.46s  <ret> 발화 (turn19 첫 프레임)
+    67.62s  agent 발화 시작: <ret> AppleCare+는 우발적인 손상—화면, 뒷면 유리—을 보장하고 2년 보증을 포함합니다.
+    67.62s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.42s]: (tool result) AppleCare+ for iPhone 16 offers coverage for accidental 
+    67.79s  user  발화 끝
+    70.25s  user  발화 시작: 어.
+    70.61s  user  발화 끝
+    74.88s  user  발화 시작: 2년이네, 꽤 괜찮네. 고마워, 코랄.
+    75.04s  agent 발화 끝
+    77.42s  user  발화 끝
+    77.53s  agent 발화 시작: 천만에요. 오늘 앱플 홈페이지를 탐색하는 데 도움이 되어 기쁩니다.
+    82.39s  agent 발화 끝

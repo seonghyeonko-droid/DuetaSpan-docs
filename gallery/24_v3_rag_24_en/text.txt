@@ -77,10 +77,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering about the name du Plessis. It sounds… French, maybe?
-[  4.68s][moshi] ⟨ret@4.62s⟩ The name ⟦⚡SPAN@5.82s: Du Plessis is a French surname originating as a topographic name for someone who lived near a manor house.⟧ du Plessis actually comes from France, Korana. It originally described someone living near a manor house.
-[  9.95s][user ] «backchannel» Mhm.
-[ 11.79s][user ] Oh, that's interesting. Is it a common name in other places ⟨ret@15.62s⟩ now?
-[ 16.00s][moshi] It’s most often ⟦⚡SPAN@17.62s: The surname du Plessis is most common in South Africa, where it was brought by Huguenot refugees.⟧ found in South Africa now, surprisingly. Huguenot refugees brought the name there originally.
-[ 23.00s][user ] Huguenot refugees? I don’t know much about them.
-[ 26.78s][moshi] They were French Protestants fleeing religious persecution in the sixteen and seventeen hundreds. It’s a difficult history, certainly.
+[  0.00s][user ] Where does the name du Plessis come from?
+[  2.60s][moshi] ⟨ret@2.59s⟩ ⟦⚡SPAN@2.67s: The surname du Plessis is of French origin, meaning "of the Plessis," referring to several places in France na⟧ The term comes from places in France called Plessis — it means “of the Plessis.” It’s a fairly common French surname.
+[  8.35s][user ] «backchannel» Mhm.
+[ 10.33s][user ] Oh, interesting. Was there a famous du ⟨ret@13.75s⟩ Plessis?
+[ 14.14s][moshi] ⟦⚡SPAN@14.15s: Huguenot soldier François du Plessis, Marquis de Dorval, was a French military leader in the service of Englan⟧ There was François du Plessis, a French soldier who fought for England in the eighteenth century. He was known as the Marquis de Dorval.
+[ 22.46s][user ] Hmm, eighteenth century… that’s a while ago. What about more recently?
+[ 27.67s][moshi] Welll… it's difficult to pinpoint a single, universally famous du Plessis in more recent times. Many have contributed in various fields.
+[ 35.60s][user ] I see. Could you search for a contemporary du Plessis who's a public ⟨ret@40.34s⟩ figure?
+[ 40.47s][moshi] ⟦⚡SPAN@40.50s: (tool result) South African rugby player Damian de Allende, whose full name is Damian Willem de Allende du Ple⟧ I found Damian de Allende du Plessis, a South African rugby player. He plays for Stade Rochelais and the Springboks.
+      CALL: {"function": "search", "arguments": {"query": "contemporary public figure named du Plessis"}}

@@ -50,37 +50,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼요? | S2 고마워. 근데, 혹시 시드니 오페라 하우스 주변에 주차장이 어 | S3 윌슨 파킹 시드니 오페라 하우스가 제일 가까운 것 같네. 거기 | S4 … 혹시 거기 근처에 괜찮은 레스토랑도 있어? 저녁 먹을 곳을
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 …레스토랑도 찾아줄 수 있어? | S3 …혹시 거기 근처에 주차장도 있니? | S4 고마워. 정말 도움이 됐어.
 
-     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼요?
-     3.31s  <ret> 발화 (turn1 첫 프레임)
-     3.38s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 -삼십삼 점 팔 오 육 팔, 경도는 백오십일 점 이 일 오 삼입니다
-     3.61s  user  발화 끝
-     5.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: (tool result) -33.8568, 151.2153
-     7.03s  user  발화 시작: 와.
-     7.75s  user  발화 끝
-    12.88s  user  발화 시작: 음… 그럼, 저 거기 가는 길 좀 알려줄 수 있어? 지금 출발해서 차로 가려고 하는데.
-    12.97s  agent 발화 끝
-    17.82s  <ret> 발화 (turn4 첫 프레임)
-    18.21s  agent 발화 시작: <ret> 지금 출발하시면 시드니 오페라 하우스까지 약 십이 점 오킬로미터, 이십삼분 정도 걸립니다. 실시간
-    18.43s  user  발화 끝
-    19.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) 12.5 km, 23 minutes
-    21.32s  user  발화 시작: 어.
-    21.81s  user  발화 끝
-    26.41s  agent 발화 끝
-    26.72s  user  발화 시작: 고마워. 근데, 혹시 시드니 오페라 하우스 주변에 주차장이 어디 있는지 알아볼 수 있을까?
-    32.03s  <ret> 발화 (turn7 첫 프레임)
-    32.35s  agent 발화 시작: <ret> 시드니 오페라 하우스 근처에 윌슨 파킹 시드니 오페라 하우스(이백오십미터), 시큐어 파킹 오페라 
-    32.61s  user  발화 끝
-    34.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.85s]: (tool result) Wilson Parking Sydney Opera House (250 m), Secure Parkin
-    42.78s  user  발화 시작: 윌슨 파킹 시드니 오페라 하우스가 제일 가까운 것 같네. 거기로 가는 길 좀 알려줘.
-    43.19s  agent 발화 끝
-    47.71s  <ret> 발화 (turn9 첫 프레임)
-    47.95s  agent 발화 시작: <ret> 윌슨 파킹 시드니 오페라 하우스까지는 지금 출발하시면 약 일 점 팔킬로미터, 팔분 정도 소요됩니다
-    48.11s  user  발화 끝
-    49.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) 1.8 km, 8 minutes
-    54.43s  agent 발화 끝
-    55.32s  user  발화 시작: 좋아, 알았어. 근데—
-    57.63s  user  발화 시작: … 혹시 거기 근처에 괜찮은 레스토랑도 있어? 저녁 먹을 곳을 찾고 있거든.
-    57.72s  user  발화 끝
-    62.58s  user  발화 끝
+     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
+     2.91s  <ret> 발화 (turn1 첫 프레임)
+     2.98s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다
+     2.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.22s]: (tool result) The Sydney Opera House is located at latitude -33.8568 a
+     3.24s  user  발화 끝
+     6.01s  user  발화 시작: 응.
+     6.50s  user  발화 끝
+    10.02s  user  발화 시작: 음… 그 근처에 괜찮은…
+    10.20s  agent 발화 끝
+    12.27s  user  발화 끝
+    13.75s  user  발화 시작: …레스토랑도 찾아줄 수 있어?
+    15.28s  <ret> 발화 (turn5 첫 프레임)
+    15.67s  agent 발화 시작: <ret> 시드니 오페라 하우스 근처에는 아리아 레스토랑을 포함해 괜찮은 레스토랑이 여러 곳 있어요. 현대 
+    15.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: (tool result) There are several restaurants near the Sydney Opera Hous
+    15.82s  user  발화 끝
+    19.27s  user  발화 시작: 응.
+    19.82s  user  발화 끝
+    24.48s  agent 발화 끝
+    24.48s  agent 발화 시작: 아리아 레스토랑은 특히 런치 스페셜 메뉴가 인기가 많다고 하네요.
+    28.08s  user  발화 시작: 아리아 레스토랑 예약 좀 해줘. 다음 주 토요일 저녁 일곱시에 두 명으로.
+    28.23s  agent 발화 끝
+    32.45s  <ret> 발화 (turn9 첫 프레임)
+    32.85s  agent 발화 시작: <ret> 아리아 레스토랑에 다음 주 토요일 저녁 일곱시에 두 분 예약이 완료됐습니다. 확인 번호는 ARIA
+    32.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Your reservation at Aria Restaurant for two people on Ju
+    33.08s  user  발화 끝
+    40.40s  agent 발화 끝
+    41.45s  user  발화 시작: …혹시 거기 근처에 주차장도 있니?
+    43.42s  <ret> 발화 (turn11 첫 프레임)
+    43.66s  user  발화 끝
+    43.81s  agent 발화 시작: <ret> 죄송하지만, 아리아 레스토랑 근처 주차장 정보는 찾을 수 없었어요.
+    43.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (no information found)
+    46.72s  user  발화 시작: 아.
+    47.22s  user  발화 끝
+    48.16s  agent 발화 끝
+    48.26s  user  발화 시작: 흐음… 그럼 대중교통으로 가는 방법 좀 알려줘.
+    51.40s  <ret> 발화 (turn14 첫 프레임)
+    51.49s  user  발화 끝
+    51.55s  agent 발화 시작: <ret> 현재 위치에서 아리아 레스토랑까지 대중교통을 이용하려면 Circular Quay 역까지 기차를 타
+    51.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) To reach Aria Restaurant from your current location by p
+    59.79s  agent 발화 끝
+    60.93s  user  발화 시작: 고마워. 정말 도움이 됐어.
+    63.29s  user  발화 끝
+    63.41s  agent 발화 시작: 언제든 편하게 다시 찾아주세요. 좋은 시간 보내세요.
+    66.92s  agent 발화 끝

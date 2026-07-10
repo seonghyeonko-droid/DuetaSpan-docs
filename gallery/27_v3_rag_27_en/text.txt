@@ -61,14 +61,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm trying to learn more about electronic music composers.
-[  3.35s][moshi] That’s a fascinating area of study. It’s quite broad, though—is there a particular style or era you’re interested in?
-[  7.62s][user ] «backchannel» Yeah, yeah.
-[ 11.16s][user ] Hmm, well, I keep hearing…
-[ 15.20s][user ] …about this Lux Aurunque ⟨ret@16.85s⟩ guy.
-[ 17.25s][moshi] Lux Aurunque ⟦⚡SPAN@18.37s: Lux Aurunque is an electronic musician born in 1970 in Italy.⟧ was born in Italy in nineteen seventy. He’s known for his experimental ambient work.
-[ 20.77s][user ] «backchannel» Uh-huh.
-[ 23.14s][user ] Nineteen seventy—wow, that's quite a while ago. What kind of equipment did he use starting out?
-[ 28.13s][moshi] «interrupted» He began with relatively simple setups—analog synthesizers and drum machines were—
-[ 33.12s][user ] «interrupts_prev» …did he release anything before the year two thousand?
-[ 36.03s][moshi] ⟨ret@35.79s⟩ Yes, he ⟦⚡SPAN@37.23s: Lux Aurunque released his first EP, "Nine Secrets," in 1997.⟧ did. Lux Aurunque released his first EP, “Nine Secrets,” in nineteen ninety-seven. It was quite well-received within the experimental scene.
+[  0.00s][user ] Do you know…
+[  2.86s][user ] …when Lux Aurunque was ⟨ret@4.65s⟩ born?
+[  4.87s][moshi] «interrupted» ⟦⚡SPAN@4.89s: Lux Aurunque was born in Rome in 1970, and is known for his work in experimental music.⟧ Lux Aurunque was born in Rome in nineteen seventy—
+[  8.18s][user ] «interrupts_prev» …is he still making music these ⟨ret@10.31s⟩ days?
+[ 10.63s][moshi] ⟦⚡SPAN@10.63s: Lux Aurunque released his latest album, *The Echoing Void*, in 2023 and continues to perform live.⟧ …and continues to perform live, having released his latest album, *The Echoing Void*, in two thousand twenty-three.
+[ 15.22s][user ] «backchannel» Yeah, yeah.
+[ 19.34s][user ] Oh, that's good to hear! What kind of music does he make?
+[ 22.33s][moshi] He’s really known for experimental music, often blending electronic and classical elements. It’s quite unique, really.
+[ 27.42s][user ] «backchannel» Uh-huh.
+[ 32.30s][user ] I think I've heard of that style. Is there anywhere I can listen to his work online?
+[ 36.75s][moshi] ⟨ret@36.51s⟩ ⟦⚡SPAN@36.75s: Lux Aurunque's music is available on major streaming platforms such as Spotify and Apple Music.⟧ You can find his music on streaming platforms like Spotify and Apple Music — I think you’ll enjoy it.

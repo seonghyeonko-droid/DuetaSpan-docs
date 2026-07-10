@@ -58,20 +58,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 뒤플레시라는 이름이 어디에서 왔는지 궁금해요. | S2 아, 그렇군요. 그럼 뒤플레시 가문은 프랑스에서 시작된 건가요 | S3 위그노가 누구였죠? | S4 남아프리카공화국에 정착한 위그노들은 뒤플레시 가문의 역사를 어
 
-     0.00s  user  발화 시작: 뒤플레시 이름이 어디에서 유래됐는지 궁금해요.
-     3.21s  <ret> 발화 (turn1 첫 프레임)
-     3.52s  agent 발화 시작: <ret> 뒤플레시라는 성은 프랑스에서 유래된 것으로 알려져 있어요.
-     3.69s  user  발화 끝
-     4.33s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.56s]: The surname Du Plessis originates from France, meaning "of Plessis", r
-     6.97s  agent 발화 시작: 뒤플레시 성은 '플레시'라는 지명을 나타내는 프랑스어 표현에서 비롯되었다고 해요.
-     7.07s  agent 발화 끝
-    10.76s  user  발화 시작: 맞아요.
-    11.49s  user  발화 끝
-    12.04s  user  발화 시작: 아, 그렇군요. 그럼 플레시는 어떤 의미인가요?
-    12.20s  agent 발화 끝
-    15.08s  <ret> 발화 (turn5 첫 프레임)
-    15.15s  agent 발화 시작: <ret> 플레시는 프랑스에서 흔한 지명으로, 영주나 요새화된 집을 의미하는 경우가 많다고 합니다.
-    15.32s  user  발화 끝
-    17.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: Plessis is a common place name in France, often referring to a manor o
-    21.13s  agent 발화 끝
+     0.00s  user  발화 시작: 뒤플레시라는 이름이 어디에서 왔는지 궁금해요.
+     2.35s  <ret> 발화 (turn1 첫 프레임)
+     2.65s  agent 발화 시작: <ret> 뒤플레시라는 이름은 프랑스어 '드 쁠뤼'에서 유래했는데, '더 많은'이라는 뜻으로 특히 관대한 사
+     2.67s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.01s]: The surname Du Plessis originates from the French phrase "de plus," me
+     2.87s  user  발화 끝
+    10.16s  user  발화 시작: 맞아요.
+    10.79s  user  발화 끝
+    12.67s  agent 발화 끝
+    13.34s  user  발화 시작: 아, 그렇군요. 그럼 뒤플레시 가문은 프랑스에서 시작된 건가요?
+    17.52s  <ret> 발화 (turn4 첫 프레임)
+    17.91s  agent 발화 시작: <ret> 이름 자체는 프랑스에서 시작했지만, 뒤플레시 가문은 십칠세기에 종교 박해를 피해 프랑스를 떠난 위
+    17.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: While the name originated in France, the Du Plessis family became prom
+    18.15s  user  발화 끝
+    27.64s  user  발화 시작: 위그노가 누구였죠?
+    28.06s  agent 발화 끝
+    28.80s  <ret> 발화 (turn6 첫 프레임)
+    28.95s  agent 발화 시작: <ret> 위그노는 십육세기와 십칠세기의 프랑스 개신교도들로, 장 칼뱅의 가르침을 따랐고 프랑스에서 종교 박
+    28.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: Huguenots were French Protestants in the 16th and 17th centuries, who 
+    29.10s  user  발화 끝
+    37.35s  agent 발화 끝
+    37.62s  user  발화 시작: 남아프리카공화국에 정착한 위그노들은 뒤플레시 가문의 역사를 어떻게 바꿨나요?
+    43.18s  user  발화 끝
+    43.29s  agent 발화 시작: 남아프리카공화국에 정착하면서 새로운 삶을 시작하고, 그곳 사회에 큰 영향을 주었을 거예요. 가족의 이야기를 
+    55.54s  agent 발화 끝

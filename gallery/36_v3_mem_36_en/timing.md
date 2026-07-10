@@ -69,19 +69,17 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you. I'm a couns
-     3.54s  user  발화 시작: Uh-huh.
-     3.95s  user  발화 끝
-     7.19s  agent 발화 끝
-     7.43s  user  발화 시작: Uh, yeah, hi. I was just wondering… do you remember anything
-    12.45s  <ret> 발화 (turn3 첫 프레임)
-    12.69s  agent 발화 시작: <ret> Yes, I do. Your note from January twenty-sixth says yo
-    12.75s  user  발화 끝
-    14.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    22.09s  user  발화 시작: Oh, right! And… did I mention anything about allergies in ou
-    22.43s  agent 발화 끝
-    26.23s  <ret> 발화 (turn5 첫 프레임)
-    26.45s  user  발화 끝
-    26.54s  agent 발화 시작: <ret> You did. Your record from January twenty-second states
-    28.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: [2026-01-22] User is allergic to shellfish.
-    34.55s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you today.
+     1.79s  user  발화 시작: Uh-huh.
+     2.24s  user  발화 끝
+     3.80s  agent 발화 끝
+     3.99s  user  발화 시작: Uh, hi Lira. I was just thinking about that dentist appointm
+     6.90s  <ret> 발화 (turn3 첫 프레임)
+     7.13s  agent 발화 시작: <ret> You booked a dentist appointment, requesting an early 
+     7.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+     7.32s  user  발화 끝
+    12.23s  user  발화 시작: Right, and did I mention anything about… parking there?
+    12.55s  agent 발화 끝
+    15.70s  user  발화 끝
+    15.78s  agent 발화 시작: No, that detail wasn’t in our previous conversation. I don't
+    21.06s  agent 발화 끝

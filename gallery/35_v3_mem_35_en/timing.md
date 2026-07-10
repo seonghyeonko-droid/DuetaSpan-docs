@@ -67,23 +67,21 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you're planning a trip to N
-     4.35s  agent 발화 끝
-     5.15s  user  발화 시작: Yeah, March next year. I was hoping you could suggest some g
-    11.65s  <ret> 발화 (turn2 첫 프레임)
-    12.05s  agent 발화 시작: <ret> You mentioned your interest in alpine wildflowers—that
-    12.19s  user  발화 끝
-    13.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [2025-08-26] User is into alpine wildflower photography.
-    16.32s  user  발화 시작: Mm-hmm.
-    16.91s  user  발화 끝
-    17.73s  agent 발화 시작: Mount Cook National Park is renowned for its stunning displa
-    17.84s  agent 발화 끝
-    24.12s  agent 발화 끝
-    24.14s  user  발화 시작: That sounds amazing! Is it pretty accessible by public trans
-    30.12s  user  발화 시작: …Actually, before we get into transport, what’s the weather 
-    30.30s  user  발화 끝
-    35.19s  <ret> 발화 (turn7 첫 프레임)
-    35.35s  user  발화 끝
-    35.35s  agent 발화 시작: <ret> Mount Cook Village is at latitude forty-three point ni
-    37.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: (tool result) Mount Cook Village, New Zealand is 43.9983°S, 170.1358°E
-    48.29s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you’re planning a trip to N
+     4.07s  agent 발화 끝
+     4.84s  user  발화 시작: Yes, that’s right. I was hoping you could help me find some 
+    11.26s  <ret> 발화 (turn2 첫 프레임)
+    11.66s  agent 발화 시작: <ret> You mentioned your interest in alpine wildflower photo
+    11.66s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.24s]: [2025-08-26] User is into alpine wildflower photography.
+    11.75s  user  발화 끝
+    14.33s  user  발화 시작: …are there any specific times of year that are best for that
+    14.90s  agent 발화 끝
+    17.35s  user  발화 시작: Mm-hmm.
+    17.84s  user  발화 끝
+    18.26s  <ret> 발화 (turn5 첫 프레임)
+    18.34s  agent 발화 시작: <ret> The peak season for alpine wildflowers is December to 
+    18.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: New Zealand’s alpine wildflower season typically peaks from December t
+    18.50s  user  발화 끝
+    25.59s  user  발화 시작: That sounds perfect. I’m already planning to be there in Mar
+    25.80s  agent 발화 끝
+    29.75s  user  발화 끝

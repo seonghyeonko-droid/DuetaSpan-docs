@@ -60,35 +60,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔 샌디에이고… | S2 훌륭해. 혹시 그 호텔에서 해변까지 얼마나 걸릴까? | S3 음… 혹시 수영장이 있나? | S4 …근데, 혹시 호텔 근처에 괜찮은 레스토랑도 알아봐 줄 수 있
+# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 세개 방 예약해 | S2 혹시 그 호텔에 수영장이 있는지 알려줄 수 있어? | S3 아, 피트니스 센터는 좋네. 그런데 혹시 해변까지 얼마나 걸릴 | S4 …혹시 호텔 근처에 맛있는 레스토랑도 추천해 줄 수 있어?
 
-     0.00s  user  발화 시작: 오션뷰 호텔 샌디에이고…
-     2.26s  user  발화 끝
-     3.23s  user  발화 시작: …이월 십일부터 칠박 세개 방 예약해 줘.
-     5.79s  <ret> 발화 (turn2 첫 프레임)
-     5.95s  agent 발화 시작: <ret> 오션뷰 호텔 샌디에이고, 이월 십일부터 십칠일까지 세개 방이 예약되었고, 총 비용은 천팔백칠십오 
-     6.14s  user  발화 끝
-     7.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) Confirmation ID: 8A9Z2B, Ocean View Hotel, San Diego, 3 
-    11.85s  user  발화 시작: 어어.
-    12.49s  user  발화 끝
-    16.10s  agent 발화 끝
-    16.30s  user  발화 시작: 훌륭해. 혹시 그 호텔에서 해변까지 얼마나 걸릴까?
-    19.52s  <ret> 발화 (turn5 첫 프레임)
-    19.81s  user  발화 끝
-    19.82s  agent 발화 시작: <ret> 호텔에서 해변까지 거리는 팔백오십 미터이고, 걸어서 약 십일분 정도 걸립니다.
-    21.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Distance to beach: 850 meters, estimated walking time: 1
-    24.68s  agent 발화 끝
-    24.71s  user  발화 시작: 음… 혹시 수영장이 있나?
-    26.21s  <ret> 발화 (turn7 첫 프레임)
-    26.61s  agent 발화 시작: <ret> 네, 오션뷰 호텔에는 야외 수영장이 있고, 아침 여덟시부터 밤 열시까지 이용 가능합니다.
-    26.69s  user  발화 끝
-    28.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Ocean View Hotel, San Diego, has an outdoor swimming poo
-    32.95s  agent 발화 끝
-    33.08s  user  발화 시작: 아, 그거 좋네—
-    34.16s  user  발화 시작: …근데, 혹시 호텔 근처에 괜찮은 레스토랑도 알아봐 줄 수 있어?
-    34.32s  user  발화 끝
-    37.90s  <ret> 발화 (turn10 첫 프레임)
-    38.06s  agent 발화 시작: <ret> 호텔 근처에 밋츠 씨푸드(육백오십미터), 이탈리안 비스트로(구백미터), 타코 숍(사백미터)이 있습
-    38.27s  user  발화 끝
-    39.10s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.11s]: (tool result) Mitch's Seafood: 650 meters, Italian Bistro: 900 meters,
-    44.17s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 세개 방 예약해 줘.
+     5.09s  <ret> 발화 (turn1 첫 프레임)
+     5.25s  agent 발화 시작: <ret> 오션뷰 호텔, 샌디에이고에 이월 십일부터 칠박 세개 방을 예약했습니다. 확인 번호는 팔A9Z2X입
+     5.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Ocean View Hotel in San Diego has been reserved for thre
+     5.28s  user  발화 끝
+    13.78s  agent 발화 끝
+    14.17s  user  발화 시작: 혹시 그 호텔에 수영장이 있는지 알려줄 수 있어?
+    16.81s  <ret> 발화 (turn3 첫 프레임)
+    17.13s  agent 발화 시작: <ret> 오션뷰 호텔에는 야외 수영장과 피트니스 센터, 그리고 무료 아침 식사가 제공됩니다.
+    17.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: Ocean View Hotel in San Diego features an outdoor swimming pool, a fit
+    17.36s  user  발화 끝
+    23.02s  agent 발화 끝
+    24.50s  user  발화 시작: 아, 피트니스 센터는 좋네. 그런데 혹시 해변까지 얼마나 걸릴까?
+    29.27s  agent 발화 시작: 해변까지 걸어서 십분 정도 걸립니다.
+    29.32s  user  발화 끝
+    30.62s  user  발화 시작: 헐.
+    31.11s  user  발화 끝
+    31.31s  agent 발화 시작: 네, 보통 걸음으로 십분 정도면 해변에 도착하실 수 있어요—
+    31.34s  agent 발화 끝
+    34.17s  user  발화 시작: …혹시 호텔 근처에 맛있는 레스토랑도 추천해 줄 수 있어?
+    34.83s  agent 발화 끝
+    37.57s  <ret> 발화 (turn9 첫 프레임)
+    37.65s  agent 발화 시작: <ret> 오션뷰 호텔 근처에는 미치스 씨푸드라는 캐주얼한 레스토랑과 주니퍼 앤 아이비라는 고급 레스토랑이 
+    37.65s  ⚡SPAN 주입 [d'=1.84s / d_lead=10.29s]: There are several highly-rated restaurants near Ocean View Hotel, incl
+    37.87s  user  발화 끝
+    47.94s  agent 발화 끝

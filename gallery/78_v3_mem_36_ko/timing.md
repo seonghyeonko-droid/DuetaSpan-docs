@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 혜호님. 저는 모시라고 합니다. 돈 관리와 예산 관련해서 도와드리는 상담사예요.
-     3.36s  user  발화 시작: 그래.
-     4.14s  user  발화 끝
-     6.91s  agent 발화 끝
-     7.12s  user  발화 시작: 아, 네. 전에 부산에 사는 제 집 주소 말씀드렸었죠?
-    10.54s  <ret> 발화 (turn3 첫 프레임)
-    10.69s  agent 발화 시작: <ret> 네, 혜호님. 부산 해운대구 우동 일 이 삼 사로 등록되어 있습니다.
-    10.91s  user  발화 끝
-    12.22s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.13s]: [2026-03-06] User's home address is 부산 해운대구 우동 123-4.
-    15.83s  agent 발화 끝
-    16.31s  user  발화 시작: 혹시 그 집에 Max가 좋아하는 꽃 이름도 적어 둔 거 있나?
-    19.47s  <ret> 발화 (turn5 첫 프레임)
-    19.86s  agent 발화 시작: <ret> 죄송하지만, Max가 좋아하는 꽃 이름에 대한 정보는 찾을 수 없었습니다.
-    19.92s  user  발화 끝
-    21.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (no information found)
-    24.39s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 혜호님. 저는 재정 상담을 도와드리는 리라입니다.
+     2.10s  user  발화 시작: 그래.
+     2.74s  user  발화 끝
+     4.43s  agent 발화 끝
+     4.64s  user  발화 시작: 전에 교토 여행 간다고 했었지?
+     6.45s  <ret> 발화 (turn3 첫 프레임)
+     6.61s  agent 발화 시작: <ret> 네, 교토 여행에 대해 말씀하신 적이 있으시네요. 치과 예약 관련해서 Dr. Han을 선호하신다고
+     6.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: [2025-06-01] Past chat — Booked a dentist appointment: asked for an ea
+     6.85s  user  발화 끝
+    14.07s  agent 발화 끝
+    14.51s  user  발화 시작: 아, 그게 아니라, 교토 여행 계획했던 거, 숙소 어디로 예약했었는지 기억 안 나.
+    19.29s  <ret> 발화 (turn5 첫 프레임)
+    19.68s  agent 발화 시작: <ret> 죄송해요, 혜호님. 교토 여행 숙소 정보는 메모에 없네요. 치과 예약에 대한 내용만 기록되어 있습
+    19.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: [2025-06-01] Past chat — Booked a dentist appointment: asked for an ea
+    19.69s  user  발화 끝
+    26.53s  agent 발화 끝

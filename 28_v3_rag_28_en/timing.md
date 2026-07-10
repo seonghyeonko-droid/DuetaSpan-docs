@@ -63,29 +63,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering, when did the Vete | S2 Nineteen thirty? That seems… late. | S3 So it wasn’t always called “Vetera | S4 Yes, it is. Thanks, Brunal.
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about the Depar | S2 Nineteen thirty? That seems… late. | S3 So the bureau came first, then the | S4 That makes sense… I think I’m good
 
-     0.00s  user  발화 시작: I was wondering, when did the Veterans Affairs department ac
-     3.74s  <ret> 발화 (turn1 첫 프레임)
-     4.06s  agent 발화 시작: <ret> The Department of Veterans Affairs was established on 
-     4.20s  user  발화 끝
-     5.10s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.89s]: The United States Department of Veterans Affairs was established on Ma
-    12.95s  agent 발화 끝
-    13.51s  user  발화 시작: Nineteen thirty? That seems… late. Wasn't there something be
-    18.30s  <ret> 발화 (turn3 첫 프레임)
-    18.46s  user  발화 끝
-    18.70s  agent 발화 시작: <ret> It did evolve from the National Home for Disabled Sold
-    20.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: The Department of Veterans Affairs evolved from the National Home for 
-    27.08s  agent 발화 끝
-    27.09s  user  발화 시작: So it wasn’t always called “Veterans Affairs”, then? What *w
-    32.20s  <ret> 발화 (turn5 첫 프레임)
-    32.23s  user  발화 끝
-    32.60s  agent 발화 시작: <ret> Initially, it was the National Home for Disabled Soldi
-    34.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: The National Home for Disabled Soldiers and Sailors was initially esta
-    35.91s  user  발화 시작: Right.
-    36.31s  user  발화 끝
-    42.83s  user  발화 시작: Yes, it is. Thanks, Brunal.
-    42.86s  agent 발화 끝
-    44.48s  agent 발화 시작: You’re very welcome. I’m glad I could offer some clarity on 
-    44.58s  user  발화 끝
-    48.78s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about the Department of Veterans Affairs…
+     5.62s  <ret> 발화 (turn1 첫 프레임)
+     5.93s  agent 발화 시작: <ret> The Department of Veterans Affairs was elevated to cab
+     5.94s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.83s]: The Department of Veterans Affairs became a cabinet-level department o
+     6.12s  user  발화 끝
+     9.11s  user  발화 시작: Right.
+     9.61s  user  발화 끝
+    15.75s  agent 발화 끝
+    16.85s  user  발화 시작: Nineteen thirty? That seems… late. Uhhh, wasn’t there someth
+    22.92s  <ret> 발화 (turn4 첫 프레임)
+    23.32s  agent 발화 시작: <ret> There was a Veterans Bureau established on August nint
+    23.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: The Veterans Bureau was established on August 9, 1921, originally to a
+    23.52s  user  발화 끝
+    29.59s  user  발화 시작: Okay.
+    30.03s  user  발화 끝
+    31.70s  agent 발화 끝
+    33.37s  user  발화 시작: So the bureau came first, then the department? But what was 
+    39.77s  agent 발화 시작: Well, advocating for veterans’ rights was a growing movement
+    39.89s  user  발화 끝
+    47.31s  user  발화 시작: That makes sense… I think I’m good for now.
+    47.42s  agent 발화 끝
+    50.26s  user  발화 끝

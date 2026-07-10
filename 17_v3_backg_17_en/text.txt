@@ -59,12 +59,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What is the average heart rate of a ⟨ret@2.01s⟩ healthy person?
-[  2.41s][moshi] A healthy adult generally ⟦⚡SPAN@4.01s: A normal resting heart rate for adults ranges from 60 to 100 bpm.⟧ has a resting heart rate between sixty and one hundred beats per minute. It’s good you’re thinking about your health!
-[ 10.50s][user ] Oh, that's higher than I thought. Is there a lower acceptable ⟨ret@13.33s⟩ limit?
-[ 13.57s][moshi] It can actually be ⟦⚡SPAN@15.33s: A healthy heart rate can be as low as 50 bpm in well-trained athletes.⟧ lower, around fifty beats per minute, especially if you’re very physically fit. It’s all about what’s normal for *you*.
-[ 22.59s][user ] «to_other» Did you see the game last night? What a finish!
-[ 25.26s][user ] Hmm, fifty sounds good. I'm not an ⟨ret@27.72s⟩ athlete though.
-[ 28.03s][moshi] For most people, sixty ⟦⚡SPAN@29.72s: For most adults, a resting heart rate of 60 to 80 bpm is considered normal.⟧ to eighty beats per minute is a good target, then. Don't worry too much about hitting a specific number.
-[ 35.53s][user ] Okay, that makes me feel better. Thanks, Eus.
-[ 38.06s][moshi] You’re very welcome.
+[  0.00s][user ] What is the average heart rate of a ⟨ret@2.30s⟩ healthy person?
+[  2.70s][moshi] ⟦⚡SPAN@2.70s: A normal resting heart rate for adults ranges from 60 to 100 beats per minute, though it's often lower for peo⟧ A healthy person’s average heart rate usually falls between sixty and one hundred beats per minute, though athletes often have lower rates.
+[ 10.48s][user ] Oh, that's a pretty wide range…
+[ 12.38s][moshi] It is, and many factors influence it — stress, fitness, even hydration. It's good to know your baseline.
+[ 20.50s][user ] «to_other» Did you hear about the game last night?
+[ 22.22s][user ] What about children? Is it different for ⟨ret@24.14s⟩ them?
+[ 24.29s][moshi] ⟦⚡SPAN@24.30s: A normal heart rate for children ages 6 to 15 is between 70 and 100 beats per minute, while infants have a muc⟧ For children between six and fifteen, the average is between seventy and one hundred beats per minute — infants have faster heart rates.

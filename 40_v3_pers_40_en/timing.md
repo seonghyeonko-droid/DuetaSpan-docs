@@ -69,13 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Kim, it’s lovely to connect with you.
-     2.26s  agent 발화 끝
-     2.31s  user  발화 시작: Oh, Ara… that’s a pretty name. I’m just… overwhelmed. I keep
-     9.45s  user  발화 끝
-     9.78s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
-    18.21s  agent 발화 끝
-    19.50s  user  발화 시작: Welll… I don’t even know *where* all my money goes. It just…
-    29.01s  user  발화 끝
-    29.20s  agent 발화 시작: That’s a really common feeling. It sounds like gaining some 
-    37.68s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Kim, I’m Ara.
+     1.61s  agent 발화 끝
+     1.67s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling really overwhelm
+     8.29s  user  발화 끝
+     8.61s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
+    15.70s  agent 발화 끝
+    16.87s  user  발화 시작: Uhhh, welll… I think it’s just trying to figure out where to
+    21.92s  user  발화 끝
+    22.18s  agent 발화 시작: That's a great place to begin. Often, just seeing where your
+    28.30s  agent 발화 끝

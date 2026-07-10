@@ -62,28 +62,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How many senators are there in the French Senate?
-[  2.72s][moshi] ⟨ret@2.64s⟩ I'm afraid I couldn't find that ⟦⚡SPAN@4.64s: (no information found)⟧ information for you. It's not something I have access to at the moment.
-[  5.18s][user ] «backchannel» Mhm.
-[  8.88s][user ] Oh, that’s okay. Well, what about the US Senate? How many senators are ⟨ret@13.09s⟩ there?
-[ 13.33s][moshi] There are ⟦⚡SPAN@14.37s: The United States Senate is composed of one hundred senators, two from each state.⟧ one hundred senators in the US Senate, with each state represented by two. That's a pretty consistent number.
-[ 17.79s][user ] «backchannel» Okay.
-[ 20.84s][user ] Hmm, interesting. Could you find me a good Italian restaurant ⟨ret@25.60s⟩ nearby?
-[ 25.84s][moshi] There are three ⟦⚡SPAN@27.60s: (tool result) Trattoria Romana, (34.0522, -118.2437), 123 Main Street, Los Angeles, CA 90012, 450 meters; Bell⟧ Italian restaurants nearby: Trattoria Romana, Bella Napoli, and Pasta Paradise. Trattoria Romana is closest, at four hundred fifty meters.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}
-[ 36.75s][user ] Four hundred fifty meters… hmm. What’s the weather like there, at Trattoria ⟨ret@42.46s⟩ Romana?
-[ 42.70s][moshi] It’s twenty-one point ⟦⚡SPAN@44.46s: (tool result) 21.1°C, humidity 68%, wind 8.2 km/h⟧ one degrees Celsius with sixty-eight percent humidity and an eight point two kilometer per hour wind. A pleasant evening for dining!
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "34.0522, -118.2437"}}
-[ 46.46s][user ] «backchannel» Yeah, yeah.
-[ 54.44s][user ] That sounds lovely. Do they have outdoor seating?
-[ 58.32s][moshi] That’s something I’m unable to check directly, I'm sorry. I can’t access restaurant seating details.
-[ 64.59s][user ] Oh, alright. Maybe I'll just call them. What time is it ⟨ret@67.96s⟩ right now?
-[ 68.36s][moshi] It's Friday, ⟦⚡SPAN@69.96s: (tool result) It is Friday, July 10, 2026 at 6:47 PM in America/Los Angeles right now.⟧ July tenth, two thousand twenty-six, at six forty-seven PM in Los Angeles.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 76.75s][user ] Okay, good to know. I think I’ll make a reservation then.
-[ 80.10s][moshi] Wonderful. I'm glad I could help you find a place for dinner.
-[ 82.57s][user ] «backchannel» Okay.
-[ 83.75s][user ] Thank you, Nias. You've been very helpful.
-[ 86.12s][moshi] You're very welcome. It's my pleasure to assist you in finding a little peace of mind, even with small things.
-[ 90.62s][user ] «backchannel» Right.
-[ 92.76s][user ] I appreciate that. I think I'm all set for now.
-[ 95.66s][moshi] Take care, and enjoy your evening.
+[  2.80s][moshi] ⟨ret@2.72s⟩ ⟦⚡SPAN@2.80s: (no information found)⟧ But unfortunately, I don’t have that information right now.
+[  5.32s][user ] «backchannel» Yeah.
+[  7.18s][user ] Hmm, okay. What about the current time in ⟨ret@11.48s⟩ Paris?
+[ 11.72s][moshi] ⟦⚡SPAN@11.72s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Europe/Paris right now.⟧ It’s currently 3:17 PM in Paris. A lovely time for a stroll, perhaps?
+      CALL: {"function": "get_time", "arguments": {"location": "Paris"}}
+[ 17.62s][user ] That sounds nice… but I’m actually trying to plan a trip.
+[ 21.40s][moshi] Planning a trip is exciting! It's good to have something to look forward to.
+[ 25.19s][user ] I was wondering if you could find me some events happening in Lyon next weekend?
+[ 29.44s][moshi] ⟨ret@29.20s⟩ ⟦⚡SPAN@29.44s: (tool result) Events in Lyon next weekend include the Nuits Sonores festival, a four-day electronic music even⟧ Next weekend in Lyon, there’s the Nuits Sonores festival and a performance of *Hamlet* at the Théâtre des Célestins.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Lyon", "date": "next weekend"}}
+[ 35.61s][user ] «backchannel» Yeah.
+[ 37.40s][user ] Could you tell me more about the Nuits ⟨ret@39.83s⟩ Sonores festival?
+[ 40.15s][moshi] ⟦⚡SPAN@40.15s: (tool result) Nuits Sonores is an annual electronic music festival held in Lyon, France, known for its diverse⟧ Nuits Sonores is an electronic music festival in Lyon, running July 17th through 20th. It's known for its diverse artists and unusual locations.
+      CALL: {"function": "search", "arguments": {"query": "Nuits Sonores festival Lyon"}}
+[ 45.83s][user ] «backchannel» Yeah.
+[ 51.77s][user ] July 17th… that’s cutting it close. Do you think I could still get ⟨ret@56.79s⟩ tickets?
+[ 57.19s][moshi] ⟦⚡SPAN@57.19s: (tool result) Tickets for Nuits Sonores festival on July 17th are currently available, with passes ranging fro⟧ Yes, tickets are available, from €50 for a day pass to €180 for the whole festival. It looks like there's still some availability.
+      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event": "Nuits Sonores festival Lyon", "date": "July 17th"}}
+[ 65.27s][user ] Hmm, €180 is a bit steep. Are there any free events happening in Lyon that ⟨ret@70.70s⟩ weekend?
+[ 71.02s][moshi] ⟦⚡SPAN@71.02s: (tool result) Several free events are scheduled in Lyon next weekend, including outdoor film screenings in Par⟧ There are free film screenings in Parc de la Tête d'Or and a street art exhibition in Croix-Rousse.
+      CALL: {"function": "search", "arguments": {"query": "free events Lyon next weekend"}}
+[ 75.74s][user ] «backchannel» Okay.
+[ 78.12s][user ] That sounds perfect! The street art exhibition… is that easily accessible by public ⟨ret@84.23s⟩ transport?
+[ 84.55s][moshi] ⟦⚡SPAN@84.55s: (tool result) Public transport from Lyon city center to the Croix-Rousse district takes approximately 15-20 mi⟧ It's about 15 to 20 minutes by metro line C, with frequent departures. It’s a pretty straightforward journey.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Lyon city center", "destination": "Croix-Rousse district", "mode": "public transport"}}
+[ 89.53s][user ] «backchannel» Uh-huh.
+[ 91.72s][user ] That’s good to know. Thanks, Nias.
+[ 94.26s][moshi] You’re very welcome. I’m glad I could help with your planning. Have a wonderful time in Lyon.

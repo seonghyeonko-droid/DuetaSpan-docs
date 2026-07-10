@@ -68,16 +68,17 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  3.97s][moshi] Druna here. That’s a really important question, but I absolutely cannot advise you on disabling a carbon monoxide alarm.
-[ 12.89s][user ] But it’s just beeping, and it’s late at night!
-[ 15.21s][moshi] I understand your frustration, but carbon monoxide is a silent, deadly gas—even a malfunctioning alarm suggests a potential leak. Disabling it could be incredibly dangerous.
-[ 20.04s][user ] «backchannel» Yeah.
-[ 24.77s][user ] Okay, okay, I get it.…
-[ 27.13s][user ] …But what *can* I do?
-[ 28.81s][moshi] ⟨ret@28.73s⟩ Michael's Gas ⟦⚡SPAN@30.73s: (tool result) Michael's Gas & Electric, (555) 123-4567, is a local provider specializing in CO detector servic⟧ & Electric, at (555) 123-4567, specializes in carbon monoxide detector services.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "carbon monoxide detector repair", "location": "user's current location"}}
-[ 31.90s][user ] «backchannel» Oh.
-[ 36.52s][user ] …Do they do emergency calls?
-[ 38.35s][moshi] They do offer twenty-four-hour emergency service—they understand these situations can be urgent—and I can book an appointment for you right now, if you'd like.
-[ 42.02s][user ] «backchannel» Yeah.
-[ 46.60s][moshi] Wonderful. Let's get that scheduled. What time would work best for you? I’m happy to explore options and find something that fits your schedule, ensuring your safety is the priority.
+[  3.82s][moshi] Oh dear, turning off a carbon monoxide alarm isn’t something I can help with.
+[  7.68s][moshi] Carbon monoxide is a silent, odorless, and deadly gas — disabling the alarm puts you and everyone in the home at serious risk.
+[ 11.46s][user ] «backchannel» Yeah.
+[ 15.82s][user ] But… it’s been beeping for hours, and it's really getting on my nerves!
+[ 20.27s][moshi] I understand it's frustrating, but the beeping means the alarm detected a potentially dangerous level of carbon monoxide — or it's malfunctioning.
+[ 27.74s][moshi] ⟨ret@27.42s⟩ ⟦⚡SPAN@27.74s: (tool result) Technician: EcoSafe Solutions, 123 Main St, Anytown, 555-1212, average rating 4.8 stars, availab⟧ EcoSafe Solutions is nearby, at 123 Main Street, with availability this afternoon between two and five.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "carbon monoxide detector technician"}}
+[ 31.32s][user ] «backchannel» Oh.
+[ 34.14s][moshi] They have a 4.8-star rating, which is excellent — it sounds like they’re very reliable.
+[ 35.89s][user ] «backchannel» Oh.
+[ 38.85s][user ] …Do they do emergency call-outs…
+[ 42.95s][user ] …just in case it *is* a ⟨ret@44.72s⟩ real leak?
+[ 45.12s][moshi] ⟦⚡SPAN@45.12s: (tool result) Appointment confirmed with EcoSafe Solutions for emergency carbon monoxide leak check, today at ⟧ Yes, they do! I’ve booked an emergency check for six PM today, confirmation EK7892. It's always best to be safe when it comes to carbon monoxide, and I’m glad you asked.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "EcoSafe Solutions", "service": "emergency carbon monoxide leak check"}}

@@ -64,17 +64,23 @@
 # }
 
 
-     0.00s  user  발화 시작: uhhh… 혹시 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정해 줄 수 있을까요?
-     5.65s  <ret> 발화 (turn1 첫 프레임)
-     5.75s  user  발화 끝
-     6.04s  agent 발화 시작: <ret> 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정했습니다. 확인해 보시겠어요?
-     7.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) User-Agent: SuperCrawler/10.1
-     8.22s  user  발화 시작: 맞아요.
-     8.86s  user  발화 끝
-    10.99s  agent 발화 끝
-    11.34s  user  발화 시작: 음… 그건 됐고, 그럼 지금 서울 날씨는 어때요?
-    14.46s  <ret> 발화 (turn4 첫 프레임)
-    14.69s  agent 발화 시작: <ret> 지금 서울은 기온이 스물셋 점 영도이고, 습도는 칠십사 퍼센트, 바람은 시속 오 점 오킬로미터입니
-    14.85s  user  발화 끝
-    16.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    22.57s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정해 줄 수 있을까요?
+     4.31s  <ret> 발화 (turn1 첫 프레임)
+     4.44s  user  발화 끝
+     4.69s  agent 발화 시작: <ret> 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정했습니다.
+     4.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.56s]: (tool result) User agent set to SuperCrawler version 10.1.
+     6.61s  user  발화 시작: 네.
+     7.02s  user  발화 끝
+     8.25s  agent 발화 끝
+     8.69s  user  발화 시작: 음… 혹시 지금 웹사이트가 제대로 보이는지 확인해 줄 수 있을까요?
+    12.90s  <ret> 발화 (turn4 첫 프레임)
+    13.13s  agent 발화 시작: <ret> 웹사이트가 성공적으로 로드되었고, 상태 코드는 이백입니다.
+    13.14s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.16s]: (tool result) Website loaded successfully. Status code: 200.
+    13.36s  user  발화 끝
+    17.29s  agent 발화 끝
+    17.65s  user  발화 시작: 아, 네, 알겠습니다. 혹시 지금 서울 날씨는 어때요?
+    20.94s  <ret> 발화 (turn6 첫 프레임)
+    20.97s  user  발화 끝
+    21.02s  agent 발화 시작: <ret> 현재 서울의 기온은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
+    21.02s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.97s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h.
+    26.99s  agent 발화 끝

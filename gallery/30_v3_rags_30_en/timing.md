@@ -65,10 +65,10 @@
 
 
      0.00s  user  발화 시작: When was the printing…
-     1.61s  user  발화 끝
-     3.31s  user  발화 시작: …press invented in Europe, roughly?
-     5.97s  <ret> 발화 (turn2 첫 프레임)
-     5.99s  user  발화 끝
-     6.21s  agent 발화 시작: <ret> It was invented in Europe around fourteen forty. A tru
-     7.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: The printing press was invented in Europe around fourteen forty.
-    13.34s  agent 발화 끝
+     1.47s  user  발화 끝
+     3.15s  user  발화 시작: …press invented in Europe?
+     5.37s  <ret> 발화 (turn2 첫 프레임)
+     5.55s  user  발화 끝
+     5.61s  agent 발화 시작: <ret> The printing press, as we know it, came about around 1
+     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: Johannes Gutenberg is credited with inventing the printing press with 
+    11.08s  agent 발화 끝

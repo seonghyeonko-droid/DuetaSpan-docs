@@ -68,41 +68,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m hoping to book three rooms at  | S2 That’s great. I’m also trying to f | S3 …are there any car rental places n | S4 Perfect. Thank you so much, Tian.
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 Hmm, are there any good seafood re | S3 …do any of them have outdoor seati | S4 Let’s check if Mitch's has availab
 
-     0.00s  user  발화 시작: I’m hoping to book three rooms at the Ocean View Hotel in Sa
-     5.84s  <ret> 발화 (turn1 첫 프레임)
-     6.02s  user  발화 끝
-     6.08s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
-     7.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=17.77s]: (tool result) Confirmation ID: OVH20260210-3R, total cost $2100.00
-    16.41s  user  발화 시작: Right.
-    16.86s  user  발화 끝
-    23.85s  agent 발화 끝
-    23.98s  user  발화 시작: And could you check if they have a shuttle service to the ai
-    26.74s  <ret> 발화 (turn4 첫 프레임)
-    26.89s  agent 발화 시작: <ret> The Ocean View Hotel in San Diego does offer a complim
-    27.12s  user  발화 끝
-    28.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (tool result) Ocean View Hotel, San Diego, offers complimentary airpor
-    34.40s  agent 발화 끝
-    34.73s  user  발화 시작: That’s great. I’m also trying to figure out the best way to 
-    38.89s  user  발화 끝
-    39.26s  agent 발화 시작: Public transportation is a good option—
-    41.25s  user  발화 시작: …are there any car rental places near the hotel?
-    41.98s  agent 발화 끝
-    43.30s  <ret> 발화 (turn8 첫 프레임)
-    43.69s  agent 발화 시작: <ret> Hertz is one point two kilometers away, at fifty-five 
-    43.93s  user  발화 끝
-    45.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.91s]: (tool result) Hertz, 1.2 km, $55/day; Avis, 1.8 km, $60/day; Enterpris
-    57.43s  user  발화 시작: Hmm, Enterprise sounds good. Can you check availability for 
-    57.60s  agent 발화 끝
-    62.47s  <ret> 발화 (turn10 첫 프레임)
-    62.55s  agent 발화 시작: <ret> I’ve reserved a minivan with Enterprise for the whole 
-    62.76s  user  발화 끝
-    64.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.26s]: (tool result) Minivan reserved, confirmation #ENT20260210-7D, total $3
-    72.42s  user  발화 시작: Oh.
-    72.91s  user  발화 끝
-    75.82s  agent 발화 끝
-    76.52s  user  발화 시작: Perfect. Thank you so much, Tian.
-    78.74s  agent 발화 시작: You’re very welcome. I’m glad I could help with the arrangem
-    78.77s  user  발화 끝
-    85.87s  agent 발화 끝
+     0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
+     5.02s  <ret> 발화 (turn1 첫 프레임)
+     5.18s  user  발화 끝
+     5.26s  agent 발화 시작: <ret> I’ve reserved three rooms for you at the Ocean View Ho
+     5.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: (tool result) Confirmation: Ocean View Hotel, San Diego. Three rooms r
+    16.35s  user  발화 시작: That sounds perfect, thank you. What’s the weather usually l
+    16.48s  agent 발화 끝
+    20.91s  agent 발화 시작: San Diego in February is generally mild and pleasant. It's a
+    20.98s  user  발화 끝
+    28.89s  agent 발화 끝
+    29.26s  user  발화 시작: Hmm, are there any good seafood restaurants near the hotel?
+    32.49s  <ret> 발화 (turn5 첫 프레임)
+    32.77s  user  발화 끝
+    32.81s  agent 발화 시작: <ret> There are several excellent seafood restaurants nearby
+    32.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Five seafood restaurants near Ocean View Hotel, San Dieg
+    38.94s  user  발화 시작: …do any of them have outdoor seating?
+    39.67s  agent 발화 끝
+    40.88s  agent 발화 시작: Mitch’s Seafood and Brigantine Seafood Restaurant both have 
+    41.01s  user  발화 끝
+    44.97s  user  발화 시작: Yeah.
+    45.42s  user  발화 끝
+    48.02s  agent 발화 시작: I can make a reservation for you at either one if you’d like
+    48.25s  agent 발화 끝
+    55.73s  user  발화 시작: Let’s check if Mitch's has availability for, say, February t
+    55.81s  agent 발화 끝
+    59.93s  <ret> 발화 (turn11 첫 프레임)
+    60.17s  agent 발화 시작: <ret> Excellent. I’ve booked a table for three at Mitch’s Se
+    60.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: (tool result) Reservation confirmed at Mitch’s Seafood for February 12
+    60.22s  user  발화 끝
+    71.53s  agent 발화 끝

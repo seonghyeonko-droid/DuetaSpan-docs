@@ -69,45 +69,50 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know the phone number for ⟨ret@1.89s⟩ Dr. Eleanor Vance?
-[  2.28s][moshi] I’m sorry, I couldn’t ⟦⚡SPAN@3.89s: (tool result)⟧ find a phone number for Dr. Eleanor Vance. It doesn't seem to be publicly listed.
-      CALL: {"function": "search", "arguments": {"query": "phone number for Dr. Eleanor Vance"}}
-[  5.82s][user ] «backchannel» Yeah, totally.
-[  8.41s][user ] Oh, uh, that's okay.
-[ 10.41s][moshi] That's alright. Sometimes those details aren't easy to come by.
-[ 11.83s][user ] «backchannel» Okay.
-[ 14.37s][user ] Could you find me some good restaurants nearby? I'm really ⟨ret@17.98s⟩ craving Italian.
-[ 18.38s][moshi] There are three Italian ⟦⚡SPAN@19.98s: (tool result) Seoul, South Korea (37.5665, 126.9780): Bella Italia (250m), La Piazza (580m), Trattoria Uno (81⟧ restaurants nearby: Bella Italia, two hundred and fifty meters away, La Piazza at five hundred and eighty meters, and Trattoria Uno at eight hundred and ten meters.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "current"}}
-[ 25.46s][user ] «backchannel» Uh-huh.
-[ 29.25s][user ] Bella Italia sounds good. Can you make a reservation for me ⟨ret@33.43s⟩ there?
-[ 33.74s][moshi] I've made a ⟦⚡SPAN@34.87s: (tool result) Bella Italia, July 11, 2026 at 7:00 PM, party of 2, confirmation ID: 847XG9⟧ reservation for you at Bella Italia for July eleventh at seven PM, for a party of two. Your confirmation ID is eight four seven X G nine.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "time": "7:00 PM", "date": "July 11, 2026", "party_size": "2"}}
-[ 40.70s][user ] «backchannel» Okay.
-[ 43.53s][user ] Perfect, thank you!
-[ 44.69s][moshi] You're very welcome! I’m glad I could help with that. It’s nice to have a good meal planned.
-[ 50.35s][user ] I'm also feeling really stressed about a presentation I have next week.
-[ 54.01s][moshi] That’s understandable. Presentations can be quite nerve-wracking. What part of the presentation is causing you the most stress?
-[ 61.89s][user ] Just… everything, really. I'm worried about forgetting what to say, or people judging my ideas.
-[ 67.88s][moshi] It's common to feel overwhelmed when facing a big presentation. Let’s break it down. Have you had a chance to practice?
-[ 71.02s][user ] «backchannel» Uh-huh.
-[ 74.90s][moshi] Practicing is a great first step. Even just running through it a few times can boost your confidence significantly. It helps with recall, too.
-[ 83.75s][user ] I guess I haven't. I keep putting it off.
-[ 86.40s][moshi] That’s okay. Procrastination often comes from fear. We can work on strategies to make practice less daunting, if you'd like.
-[ 94.01s][user ] Yes, please. Any tips?
-[ 95.58s][moshi] Start small. Don’t try to perfect the whole presentation at once. Focus on just the opening, then the next section, and so on.
-[104.42s][user ] That sounds… manageable.
-[106.93s][moshi] It is! Small steps build momentum. Also, visualize success. Imagine yourself delivering a confident and engaging presentation.
-[115.86s][user ] I’ll try that. What about if I blank out during it?
-[118.81s][moshi] It happens to the best of us. Have notes, but don’t read directly from them. Use them as prompts. And remember, a pause isn’t a disaster.
-[127.48s][user ] Okay. That’s good to know.
-[129.29s][moshi] It is. And remember your audience wants you to succeed. They're not looking for perfection, they want to hear your ideas.
-[136.16s][user ] That's a good way to look at it. Could you set an alarm for me to remind me to practice ⟨ret@141.20s⟩ tomorrow morning?
-[141.58s][moshi] I’ve set an ⟦⚡SPAN@143.20s: (tool result) Alarm set for July 11, 2026 at 9:00 AM, label: Presentation Practice⟧ alarm for tomorrow, July eleventh, at nine AM, labeled “Presentation Practice”.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "9:00 AM", "date": "July 11, 2026", "label": "Presentation Practice"}}
-[147.44s][user ] Great! Thanks, Brae.
-[148.91s][moshi] You’re most welcome. Remember, you’ve got this. A little preparation goes a long way.
-[154.09s][user ] I think I’m starting to feel a bit better already.
-[156.14s][moshi] [happy] That’s wonderful to hear! It’s a sign you’re already taking positive steps.
-[162.05s][user ] I don’t think I do, for now. Thank you again.
-[165.30s][moshi] You’re very welcome. Wishing you all the best with your presentation. Take care.
+[  0.00s][user ] Do you know how to reach Anya Sharma? I need her ⟨ret@3.12s⟩ contact details.
+[  3.52s][moshi] ⟦⚡SPAN@3.52s: (tool result)⟧ I’m sorry, I couldn’t find any contact information for Anya Sharma. It doesn’t appear to be publicly available.
+      CALL: {"function": "search", "arguments": {"query": "Anya Sharma contact details"}}
+[ 10.64s][user ] Hmm, okay. Well, what about the origin of the term ⟨ret@14.71s⟩ "burnout"?
+[ 15.10s][moshi] ⟦⚡SPAN@15.11s: Burnout was first described in 1974 by Herbert Freudenberger, who used the term to describe the exhaustion exp⟧ The term comes from work done in the 1970s—specifically, it was first described in 1974 by Herbert Freudenberger, relating to exhaustion among helping professionals.
+[ 22.26s][user ] «backchannel» Exactly.
+[ 26.79s][user ] That’s interesting. I’ve been feeling pretty drained lately, actually.
+[ 30.42s][moshi] That sounds tough. It's really common to feel that way when work is demanding, and it’s important to acknowledge those feelings.
+[ 32.97s][user ] «backchannel» Okay.
+[ 37.51s][user ] Yeah, I think I might be getting there. What’s the weather like in Seoul ⟨ret@41.15s⟩ right now?
+[ 41.47s][moshi] ⟦⚡SPAN@41.47s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently 23.0 degrees Celsius in Seoul, with 74% humidity and a wind speed of 5.5 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 44.02s][user ] «backchannel» Uh-huh.
+[ 49.84s][user ] Okay, good to know.
+[ 51.29s][moshi] Knowing the conditions can help you plan your day, even just mentally. It's a small thing, but it can make a difference.
+[ 57.77s][user ] I’m trying to decide if I should look for a new job.
+[ 60.24s][moshi] That’s a big decision, but a very valid one to explore! What’s making you consider a change?
+[ 65.88s][user ] Well, my current role is just…stifling. No growth opportunities.
+[ 70.25s][moshi] That’s incredibly frustrating. Feeling stuck is a major contributor to stress, and it’s smart to address it.
+[ 75.97s][user ] Exactly. Are there any career coaching services available ⟨ret@79.97s⟩ nearby?
+[ 80.29s][moshi] ⟦⚡SPAN@80.29s: (tool result) Brae Wellness - 1.2 km, Bright Futures Coaching - 3.5 km, NextStep Careers - 2.8 km⟧ There are a few options nearby. Brae Wellness is 1.2 kilometers away, Bright Futures Coaching is 3.5 kilometers, and NextStep Careers is 2.8 kilometers.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service": "career coaching", "location": "current"}}
+[ 91.57s][user ] Hmm, Brae Wellness sounds promising.
+[ 94.67s][moshi] It does! They specialize in helping people navigate career transitions.
+[ 98.98s][user ] Can you book me an appointment with Brae Wellness for next ⟨ret@102.30s⟩ Tuesday?
+[102.53s][moshi] ⟦⚡SPAN@102.54s: (tool result) Appointment confirmed for Tuesday, July 14, 2026 at 10:00 AM. Confirmation ID: BW789234⟧ You’re all set! I’ve booked an appointment for you with Brae Wellness next Tuesday at 10:00 AM. Your confirmation ID is BW789234.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Brae Wellness", "date": "2026-07-14"}}
+[112.97s][user ] Great!
+[113.65s][moshi] Taking that step is a really positive move. It’s good to be proactive about your well-being.
+[118.88s][user ] I’m also feeling overwhelmed with tasks at work.
+[121.51s][moshi] That’s completely understandable. It sounds like you're juggling a lot right now.
+[125.89s][user ] Yeah, it's a lot. What’s the current stock price of ⟨ret@128.93s⟩ Tesla?
+[129.08s][moshi] ⟦⚡SPAN@129.09s: (tool result) Tesla (TSLA) is trading at $255.42, down $3.15 today.⟧ Tesla—TSLA—is currently trading at $255.42, which is down $3.15 for today.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "TSLA"}}
+[137.51s][user ] Okay, thanks.
+[138.32s][moshi] You’re welcome. Sometimes just knowing the numbers can feel…grounding, even if it doesn't change things.
+[143.81s][user ] I need to send a quick message to my sister.
+[145.97s][moshi] I can help with that, but I’ll need her contact information first.
+[149.58s][user ] Oh, right. Never mind.
+[151.72s][moshi] Just let me know if you change your mind.
+[155.49s][user ] I need to set an alarm for 7:00 AM tomorrow.
+[158.54s][moshi] ⟨ret@158.30s⟩ ⟦⚡SPAN@158.54s: (tool result) Alarm set for 7:00 AM.⟧ Okay, an alarm is set for 7:00 AM tomorrow morning.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "07:00"}}
+[162.24s][user ] Thank you.
+[162.70s][moshi] You're very welcome. Prioritizing sleep is such a crucial part of managing stress, you're doing a great thing.
+[169.29s][user ] I think that's all for now.
+[170.57s][moshi] Alright. Remember, taking small steps towards better well-being is what matters most. Take care.

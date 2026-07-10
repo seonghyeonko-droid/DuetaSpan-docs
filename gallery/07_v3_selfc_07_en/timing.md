@@ -76,73 +76,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m thinking about moving to Seoul | S2 …like to find some apartments in t | S3 Lexis Korean sounds better. What a | S4 Actually, I meant July eighteenth,
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Tell me more about Bella Italia. | S3 “Space Explorers” sounds good. Wha | S4 Do you think I'm making the right 
 
-     0.00s  user  발화 시작: I’m thinking about moving to Seoul, but I keep getting diffe
-     5.16s  <ret> 발화 (turn1 첫 프레임)
-     5.39s  agent 발화 시작: <ret> In Seoul, the cherry blossoms usually bloom between la
-     5.61s  user  발화 끝
-     7.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: The cherry blossoms in Seoul typically bloom between late March and ea
-    13.74s  agent 발화 끝
-    14.07s  user  발화 시작: That's good to know. Uh, actually, I meant 2027.
-    17.49s  <ret> 발화 (turn3 첫 프레임)
-    17.64s  agent 발화 시작: <ret> Still, in Seoul, the cherry blossoms typically bloom b
-    17.68s  user  발화 끝
-    19.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: The cherry blossoms in Seoul typically bloom between late March and ea
-    25.82s  user  발화 시작: Okay, great. I’d…
-    25.84s  agent 발화 끝
-    27.10s  user  발화 끝
-    28.59s  user  발화 시작: …like to find some apartments in the Gangnam district.
-    31.35s  <ret> 발화 (turn6 첫 프레임)
-    31.59s  user  발화 끝
-    31.59s  agent 발화 시작: <ret> I found two options in Gangnam: The Galleria Foret, li
-    33.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.04s]: (tool result) 37.4979, 127.0276, The Galleria Foret, 2300000000 KRW, 4
-    44.47s  user  발화 시작: Raemian Estian sounds interesting. Can you schedule a viewin
-    44.63s  agent 발화 끝
-    48.11s  <ret> 발화 (turn8 첫 프레임)
-    48.27s  agent 발화 시작: <ret> I’ve scheduled a viewing for Raemian Estian on July ei
-    48.40s  user  발화 끝
-    50.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.66s]: (tool result) Raemian Estian, July 18, 2026, 10:00 AM, confirmation ID
-    58.93s  agent 발화 끝
-    58.96s  user  발화 시작: Perfect! I also need to find a good Korean language school n
-    63.45s  <ret> 발화 (turn10 첫 프레임)
-    63.54s  user  발화 끝
-    63.85s  agent 발화 시작: <ret> Two Korean language schools are near Gangnam: Gangnam 
-    65.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.47s]: (tool result) Gangnam Language Center, 37.4965, 127.0264, 02-555-1234;
-    74.24s  user  발화 시작: Right.
-    74.81s  user  발화 끝
-    82.31s  agent 발화 끝
-    83.71s  user  발화 시작: Lexis Korean sounds better. What are their phone number agai
-    86.70s  <ret> 발화 (turn13 첫 프레임)
-    87.10s  agent 발화 시작: <ret> The phone number for Lexis Korean is zero two – five f
-    87.26s  user  발화 끝
-    88.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: Lexis Korean, 37.4972, 127.0270, 02-555-5678
-    93.55s  agent 발화 끝
-    93.68s  user  발화 시작: Great. Could you look up the weather forecast for Seoul on J
-    98.37s  <ret> 발화 (turn15 첫 프레임)
-    98.41s  user  발화 끝
-    98.53s  agent 발화 시작: <ret> On July eighteenth, two thousand twenty-six, the forec
-   100.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.33s]: (tool result) 27.0°C, humidity 78%, wind 4.2 km/h
-   110.86s  agent 발화 끝
-   110.92s  user  발화 시작: Hmm, that sounds a bit warm.
-   113.23s  user  발화 끝
-   113.73s  agent 발화 시작: It does sound warm, but hopefully a comfortable warmth for y
-   119.52s  agent 발화 끝
-   120.84s  user  발화 시작: Actually, I meant July eighteenth, 2027.
-   123.92s  <ret> 발화 (turn19 첫 프레임)
-   124.08s  user  발화 끝
-   124.08s  agent 발화 시작: <ret> On July eighteenth, two thousand twenty-seven, Seoul’s
-   125.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.95s]: (tool result) 25.5°C, humidity 75%, wind 3.8 km/h
-   131.80s  user  발화 시작: Uh-huh.
-   132.30s  user  발화 끝
-   136.80s  user  발화 시작: Yes, much better. Can you find me some good restaurants near
-   137.03s  agent 발화 끝
-   142.03s  <ret> 발화 (turn22 첫 프레임)
-   142.19s  agent 발화 시작: <ret> Near Raemian Estian, I found Byeokje Galbi, a Korean B
-   142.31s  user  발화 끝
-   142.75s  ⚡SPAN 주입 [d'=0.72s / d_lead=7.84s]: (tool result) Byeokje Galbi, 37.4970, 127.0285, Korean BBQ, 02-555-901
-   147.95s  user  발화 시작: Yeah.
-   148.44s  user  발화 끝
-   150.03s  agent 발화 끝
-   150.31s  user  발화 시작: I think I'll try Byeokje Galbi. Can you make a reservation f
-   157.49s  user  발화 끝
+     0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
+     3.47s  <ret> 발화 (turn1 첫 프레임)
+     3.71s  agent 발화 시작: <ret> I’ve scheduled a viewing for you at The Grandview Loft
+     3.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: (tool result) Viewing scheduled for The Grandview Lofts on June 15, 20
+     3.93s  user  발화 끝
+    13.21s  agent 발화 끝
+    13.48s  user  발화 시작: That’s… uh, the sixteenth, actually.
+    16.25s  <ret> 발화 (turn3 첫 프레임)
+    16.41s  agent 발화 시작: <ret> Okay, I’ve updated that to June sixteenth at two PM. Y
+    16.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: (tool result) Viewing scheduled for The Grandview Lofts on June 16, 20
+    16.43s  user  발화 끝
+    24.67s  user  발화 시작: Great. What’s the weather going to be like then?
+    24.71s  agent 발화 끝
+    27.24s  <ret> 발화 (turn5 첫 프레임)
+    27.48s  agent 발화 시작: <ret> It’s looking like twenty-five point five degrees Celsi
+    27.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) The weather on June 16, 2026, will be 25.5°C, humidity 6
+    27.53s  user  발화 끝
+    35.50s  agent 발화 끝
+    35.57s  user  발화 시작: Hmm, sounds pleasant. Can you find me restaurants nearby?
+    39.63s  <ret> 발화 (turn7 첫 프레임)
+    39.79s  agent 발화 시작: <ret> I found five restaurants nearby: Bella Italia, The Spi
+    39.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) There are five restaurants within 1.6 kilometers of The 
+    39.96s  user  발화 끝
+    48.32s  agent 발화 끝
+    48.62s  user  발화 시작: Tell me more about Bella Italia.
+    50.65s  <ret> 발화 (turn9 첫 프레임)
+    50.74s  user  발화 끝
+    51.05s  agent 발화 시작: <ret> Bella Italia is a popular Italian place, known for pas
+    51.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: (tool result) Bella Italia is a popular Italian restaurant known for i
+    54.99s  user  발화 시작: Right.
+    55.58s  user  발화 끝
+    58.23s  agent 발화 끝
+    59.59s  user  발화 시작: Is it possible to make a reservation there for, say, seven P
+    63.05s  <ret> 발화 (turn12 첫 프레임)
+    63.29s  agent 발화 시작: <ret> Yes, I’ve booked a table for you at Bella Italia on Ju
+    63.29s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.50s]: (tool result) Reservation confirmed at Bella Italia for June 16, 2026,
+    63.42s  user  발화 끝
+    72.79s  agent 발화 끝
+    72.93s  user  발화 시작: Perfect. What’s playing at the movies that night?
+    75.48s  <ret> 발화 (turn14 첫 프레임)
+    75.63s  agent 발화 시작: <ret> That evening, “Space Explorers,” “The Last Detective,”
+    75.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) Showing on June 16, 2026: "Space Explorers", "The Last D
+    75.66s  user  발화 끝
+    81.88s  agent 발화 끝
+    81.94s  user  발화 시작: “Space Explorers” sounds good. What time are the showings?
+    85.57s  <ret> 발화 (turn16 첫 프레임)
+    85.69s  user  발화 끝
+    85.88s  agent 발화 시작: <ret> “Space Explorers” is showing at six thirty, nine, and 
+    85.89s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.00s]: (tool result) "Space Explorers" showings on June 16, 2026, are at 6:30
+    90.88s  agent 발화 끝
+    91.91s  user  발화 시작: Let's go with the nine o’clock showing.
+    93.92s  <ret> 발화 (turn18 첫 프레임)
+    94.00s  agent 발화 시작: <ret> Two tickets for “Space Explorers” at nine PM are all y
+    94.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Two tickets for "Space Explorers" at 9:00 PM on June 16,
+    94.12s  user  발화 끝
+    97.09s  user  발화 시작: Mm-hmm.
+    97.63s  user  발화 끝
+   101.08s  user  발화 시작: Wonderful! I feel much better having everything planned.
+   101.32s  agent 발화 끝
+   104.66s  agent 발화 시작: It’s great to hear you're feeling more prepared! Sometimes, 
+   104.69s  user  발화 끝
+   107.35s  user  발화 시작: Mhm.
+   107.98s  user  발화 끝
+   111.48s  agent 발화 끝
+   111.72s  user  발화 시작: Do you think I'm making the right choice moving to the city?
+   114.85s  user  발화 끝
+   114.90s  agent 발화 시작: That’s a big question, and it’s good you’re thinking it thro
+   121.89s  agent 발화 끝
+   123.10s  user  발화 시작: I’m just worried about leaving my friends.
+   125.31s  agent 발화 시작: It's completely natural to feel that way. Maintaining friend
+   125.36s  user  발화 끝
+   133.88s  agent 발화 끝
+   135.93s  user  발화 시작: I suppose you’re right. Thanks, Tellar.
+   138.19s  user  발화 끝
+   138.43s  agent 발화 시작: You’re very welcome. Remember, change can be exciting, and y
+   145.98s  agent 발화 끝

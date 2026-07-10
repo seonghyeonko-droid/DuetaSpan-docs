@@ -68,23 +68,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 건강한 사람의 평균 심박수는 어떻게 되나요? | S2 아, 그건 좀 높은데요. 그럼 평균이 육십에서 백이라고 하셨죠 | S3 어휴, 오늘따라 손님이 너무 많네. | S4 그럼 운동할 때 심박수는 얼마나 되어야 하는지 알려주시겠어요?
+# EXAMINER(FDB-v2) 단계: S1 건강한 사람의 평균 심박수는 어떻게 되나요? | S2 아, 그렇군요. 그럼 운동할 때 심박수는요? | S3 아휴, 오늘따라 손님이 너무 많네. | S4 혹시 심박수가 너무 낮으면 문제가 될까요?
 
-     0.00s  user  발화 시작: 혹시 건강한 사람의 평균 심박수는 어떻게 되나요?
-     3.14s  <ret> 발화 (turn1 첫 프레임)
-     3.29s  agent 발화 시작: <ret> 건강한 성인의 정상적인 휴식 시 심박수는 분당 육십회에서 백회 정도입니다. 괜찮으셨으면 좋겠어요.
-     3.52s  user  발화 끝
-     3.64s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.46s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
-    10.75s  agent 발화 끝
-    12.16s  user  발화 시작: 아, 그건 좀 높은데요. 그럼 평균이 육십에서 백이라고 하셨죠?
-    15.75s  <ret> 발화 (turn3 첫 프레임)
-    15.99s  agent 발화 시작: <ret> 네, 맞습니다. 건강한 사람의 평균 심박수는 분당 오십회에서 구십회 사이입니다. 조금 차이가 있네
-    16.18s  user  발화 끝
-    17.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.96s]: The average heart rate for a healthy person is between 50 and 90 bpm.
-    22.94s  agent 발화 끝
-    23.02s  user  발화 시작: 어휴, 오늘따라 손님이 너무 많네.
-    24.97s  agent 발화 시작: 혹시 심박수에 대해 더 궁금한 점이 있으신가요?
-    25.14s  user  발화 끝
-    28.11s  agent 발화 끝
-    28.63s  user  발화 시작: 그럼 운동할 때 심박수는 얼마나 되어야 하는지 알려주시겠어요?
-    32.70s  user  발화 끝
+     0.00s  user  발화 시작: 건강한 사람의 평균 심박수는 어떻게 되나요?
+     2.39s  <ret> 발화 (turn1 첫 프레임)
+     2.54s  agent 발화 시작: <ret> 건강한 성인의 정상적인 휴식 시 심박수는 분당 육십회에서 백회 정도예요.
+     2.55s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.46s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
+     2.73s  user  발화 끝
+     8.01s  agent 발화 끝
+     9.57s  user  발화 시작: 아, 그렇군요. 그럼 운동할 때 심박수는요?
+    12.26s  <ret> 발화 (turn3 첫 프레임)
+    12.50s  agent 발화 시작: <ret> 운동할 때는 건강한 심장이 보통 분당 오십회에서 구십회 사이로 뛰는 편이에요.
+    12.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: During exercise, a healthy heart rate typically ranges from 50 to 90 b
+    12.76s  user  발화 끝
+    18.33s  agent 발화 끝
+    18.50s  user  발화 시작: 아휴, 오늘따라 손님이 너무 많네.
+    20.65s  agent 발화 시작: 음, 심박수에 대해 더 궁금한 점이 있으신가요?
+    20.76s  user  발화 끝
+    23.93s  agent 발화 끝
+    24.43s  user  발화 시작: 혹시 심박수가 너무 낮으면 문제가 될까요?
+    27.36s  agent 발화 시작: 심박수가 너무 낮으면 의사와 상담하는 게 좋아요.
+    27.38s  user  발화 끝
+    31.15s  agent 발화 끝

@@ -63,53 +63,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to plan a trip, and I'd | S2 Actually, before we go deeper into | S3 July fifteenth to twentieth of nex | S4 Okay, can you book the L7 Myeongdo
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Hmm, is there a comparison chart a | S3 $799… that’s more than I expected. | S4 Okay, good. And what are the cover
 
-     0.00s  user  발화 시작: I'm trying to plan a trip, and I'd like to see what the Appl
-     5.12s  <ret> 발화 (turn1 첫 프레임)
-     5.19s  user  발화 끝
-     5.20s  agent 발화 시작: <ret> I’ve created a detailed map of the Apple website, iden
-     6.40s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.81s]: (tool result) Map created: Apple website overview, 20 points of intere
-     7.14s  user  발화 시작: Okay.
-     8.24s  user  발화 끝
-    10.01s  agent 발화 끝
-    10.92s  user  발화 시작: Twenty? That seems like a lot. Can you just show me where th
-    14.57s  <ret> 발화 (turn4 첫 프레임)
-    14.97s  agent 발화 시작: <ret> I've now focused the map on the products page, highlig
-    15.18s  user  발화 끝
-    16.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Map focused: Apple products page, 8 product categories h
-    17.24s  user  발화 시작: Uh-huh.
-    17.88s  user  발화 끝
-    19.23s  agent 발화 시작: I can further refine the map to a specific product if you'd 
-    19.32s  agent 발화 끝
-    21.15s  user  발화 시작: Right.
-    21.55s  user  발화 끝
-    24.14s  agent 발화 끝
-    25.31s  user  발화 시작: Actually, before we go deeper into Apple…
-    27.89s  user  발화 끝
-    29.78s  user  발화 시작: …could you find hotels in Seoul?
-    32.22s  agent 발화 시작: Let’s switch gears—I can search for hotels in Seoul. What da
-    32.28s  user  발화 끝
-    37.92s  agent 발화 끝
-    38.05s  user  발화 시작: July fifteenth to twentieth of next year.
-    41.06s  <ret> 발화 (turn12 첫 프레임)
-    41.14s  agent 발화 시작: <ret> I found twelve hotels in Seoul for those dates, rangin
-    41.20s  user  발화 끝
-    43.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) 12 hotels found in Seoul, price range $80-$350 per night
-    46.61s  user  발화 시작: …Are any of those near Myeongdong?
-    47.31s  agent 발화 끝
-    48.20s  <ret> 발화 (turn14 첫 프레임)
-    48.59s  agent 발화 시작: <ret> Four hotels near Myeongdong are available, ranging fro
-    48.68s  user  발화 끝
-    50.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) 4 hotels found near Myeongdong, price range $120-$280 pe
-    54.96s  user  발화 시작: Okay, can you book the L7 Myeongdong by LOTTE for me?
-    55.12s  agent 발화 끝
-    58.49s  <ret> 발화 (turn16 첫 프레임)
-    58.73s  agent 발화 시작: <ret> Your reservation at the L7 Myeongdong by LOTTE is conf
-    58.89s  user  발화 끝
-    60.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: (tool result) Reservation confirmed: L7 Myeongdong by LOTTE, Jul 15-20
-    69.99s  user  발화 시작: Perfect! Thanks so much.
-    70.09s  agent 발화 끝
-    71.92s  user  발화 끝
-    72.36s  agent 발화 시작: You’re very welcome. I’m glad I could help with your Seoul a
-    77.36s  agent 발화 끝
+     0.00s  user  발화 시작: Create a detailed map of the Apple website…
+     3.24s  user  발화 끝
+     4.89s  user  발화 시작: …focusing on the products.
+     6.87s  user  발화 끝
+     6.94s  <ret> 발화 (turn2 첫 프레임)
+     7.01s  agent 발화 시작: <ret> I've created a detailed map of the Apple website, high
+     7.02s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.63s]: (tool result) Map created showing Apple's website structure with produ
+    10.56s  user  발화 시작: Uh-huh.
+    11.10s  user  발화 끝
+    13.45s  agent 발화 시작: …and more. It should help you navigate their offerings easil
+    13.64s  agent 발화 끝
+    14.77s  user  발화 시작: Okay.
+    15.59s  user  발화 끝
+    16.82s  agent 발화 끝
+    16.88s  user  발화 시작: That's great, but can it show me where to find information o
+    21.51s  <ret> 발화 (turn7 첫 프레임)
+    21.75s  agent 발화 시작: <ret> I’ve updated the map to pinpoint the iPhone 16 page—it
+    21.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) The map has been updated to pinpoint the iPhone 16 page 
+    21.93s  user  발화 끝
+    26.50s  user  발화 시작: Yeah.
+    27.32s  user  발화 끝
+    28.28s  agent 발화 끝
+    29.48s  user  발화 시작: Hmm, is there a comparison chart available on that page?
+    32.35s  <ret> 발화 (turn10 첫 프레임)
+    32.75s  agent 발화 시작: <ret> Yes, the Apple website has a comparison chart—it detai
+    32.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) The Apple website features a comparison chart detailing 
+    32.99s  user  발화 끝
+    39.33s  agent 발화 끝
+    40.11s  user  발화 시작: That sounds useful—but actually, what’s the starting price o
+    45.07s  <ret> 발화 (turn12 첫 프레임)
+    45.47s  agent 발화 시작: <ret> Actually— The base iPhone 16, with 128GB, is priced at
+    45.57s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.51s]: (tool result) The base model iPhone 16 with 128GB of storage is priced
+    45.71s  user  발화 끝
+    52.99s  user  발화 시작: $799… that’s more than I expected.
+    53.12s  agent 발화 끝
+    56.73s  user  발화 끝
+    56.81s  agent 발화 시작: —but it does include…
+    58.00s  user  발화 시작: …Actually, forget the price for a moment. Can you show me wh
+    58.15s  agent 발화 끝
+    66.03s  <ret> 발화 (turn16 첫 프레임)
+    66.27s  agent 발화 시작: <ret> The map now highlights the AppleCare+ page for the iPh
+    66.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Map updated to highlight the AppleCare+ page for iPhone 
+    66.44s  user  발화 끝
+    71.05s  user  발화 시작: Really?
+    71.87s  user  발화 끝
+    74.38s  agent 발화 끝
+    76.47s  user  발화 시작: Okay, good. And what are the coverage options?
+    78.58s  <ret> 발화 (turn19 첫 프레임)
+    78.98s  agent 발화 시작: <ret> AppleCare+ covers accidental damage—screens, back glas
+    78.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) AppleCare+ for iPhone 16 offers coverage for accidental 
+    79.15s  user  발화 끝
+    81.19s  user  발화 시작: Yeah.
+    82.02s  user  발화 끝
+    85.11s  user  발화 시작: Two years, huh? That's decent. Thanks, Koral.
+    85.23s  agent 발화 끝
+    88.62s  agent 발화 시작: You’re welcome. I'm glad I could help you navigate the Apple
+    88.71s  user  발화 끝
+    92.60s  agent 발화 끝

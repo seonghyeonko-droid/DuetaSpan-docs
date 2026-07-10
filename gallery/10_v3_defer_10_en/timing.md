@@ -65,22 +65,27 @@
 
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.56s  <ret> 발화 (turn1 첫 프레임)
-     4.64s  agent 발화 시작: <ret> I found three pictures from your France holiday in 202
-     4.67s  user  발화 끝
-     6.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.67s]: (tool result) /Users/sunan/Pictures/FranceHoliday/2025/IMG_1234.jpg, /
-    10.94s  user  발화 시작: Uh-huh.
-    11.43s  user  발화 끝
-    19.12s  user  발화 시작: Can you open IMG_1234.jpg?
-    19.31s  agent 발화 끝
-    22.18s  <ret> 발화 (turn4 첫 프레임)
-    22.50s  agent 발화 시작: <ret> I’ve opened IMG_1234.jpg for you. It looks like a love
-    22.73s  user  발화 끝
-    23.21s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.44s]: (tool result) File opened successfully.
-    25.19s  user  발화 시작: Yeah.
-    25.64s  user  발화 끝
-    28.93s  agent 발화 끝
-    29.45s  user  발화 시작: That’s great, thanks!
-    30.71s  agent 발화 시작: You're very welcome. It's good to revisit happy memories, is
-    30.82s  user  발화 끝
-    34.55s  agent 발화 끝
+     5.18s  <ret> 발화 (turn1 첫 프레임)
+     5.26s  agent 발화 시작: <ret> I found seventeen pictures from your France holiday in
+     5.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) Found 17 image files matching 'France holiday' from 2025
+     5.27s  user  발화 끝
+     7.98s  user  발화 시작: Uh-huh.
+     8.43s  user  발화 끝
+    11.61s  user  발화 시작: Uhhh, can you show me the largest one?
+    11.75s  agent 발화 끝
+    13.18s  <ret> 발화 (turn4 첫 프레임)
+    13.32s  agent 발화 시작: <ret> The largest file is 'Eiffel_Tower_Sunset_2025_07_15.jp
+    13.34s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.55s]: The largest file is 'Eiffel_Tower_Sunset_2025_07_15.jpg' at 6.2 MB.
+    13.50s  user  발화 끝
+    16.52s  user  발화 시작: Yeah.
+    16.73s  user  발화 끝
+    20.87s  agent 발화 끝
+    21.51s  user  발화 시작: But… can you open it for me?
+    23.32s  <ret> 발화 (turn7 첫 프레임)
+    23.48s  agent 발화 시작: <ret> Give me a moment while I check if I can open that file
+    23.48s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.14s]: (tool result)
+    23.63s  user  발화 끝
+    25.65s  ⚡지연 SPAN 주입(선제발표 직전): The file 'Eiffel_Tower_Sunset_2025_07_15.jpg' is a JPEG image and is n
+    26.58s  agent 발화 시작: <ret> I apologize for the slight delay. I've opened 'Eiffel_
+    26.62s  agent 발화 끝
+    39.34s  agent 발화 끝

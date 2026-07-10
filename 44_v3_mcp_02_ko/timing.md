@@ -68,59 +68,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 서울 날씨 어때요? | S2 부산은 서울보다 조금 더 덥겠네요. | S3 와, 정말 고마워요. | S4 메가박스 해운대까지 가는 길 좀 알려줘.
+# EXAMINER(FDB-v2) 단계: S1 날씨 좀 알려줄 수 있어? 서울 날씨가 궁금해. | S2 아니, 괜찮아. 그럼… 영화 예매 좀 해줄 수 있을까? | S3 오후 다섯 시 반으로… | S4 고마워. 혹시 지금 시간도 알려줄 수 있어?
 
-     0.00s  user  발화 시작: 오늘 서울 날씨 어때요?
-     1.24s  <ret> 발화 (turn1 첫 프레임)
-     1.64s  agent 발화 시작: <ret> 서울은 현재 기온이 이십삼 점 영도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
-     1.79s  user  발화 끝
-     3.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     8.46s  user  발화 시작: 아, 네.
-     8.58s  agent 발화 끝
-     9.09s  user  발화 끝
-     9.28s  agent 발화 시작: 날씨가 꽤 쾌적하네요. 혹시 다른 지역 날씨도 알아봐 드릴까요?
-    11.02s  user  발화 시작: 네네.
-    11.66s  user  발화 끝
-    13.49s  agent 발화 끝
-    13.70s  user  발화 시작: 그럼, 내일 부산 날씨도 알려주세요.
-    15.62s  <ret> 발화 (turn6 첫 프레임)
-    16.02s  agent 발화 시작: <ret> 내일 부산은 기온이 이십오 점 영도이고 습도는 육십팔%, 바람은 시속 칠 점 영킬로미터로 예상됩니
-    16.12s  user  발화 끝
-    16.98s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.86s]: (tool result) 25.0°C, humidity 68%, wind 7.0 km/h
-    22.88s  agent 발화 끝
-    24.08s  user  발화 시작: 부산은 서울보다 조금 더 덥겠네요.
-    26.52s  agent 발화 시작: 네, 그렇습니다. 부산은 서울보다 조금 더 따뜻할 것으로 보입니다. 혹시 여행 계획이 있으신가요?
-    26.66s  user  발화 끝
-    28.96s  user  발화 시작: 네.
-    29.36s  user  발화 끝
-    32.63s  agent 발화 끝
-    33.19s  user  발화 시작: 다음 주 금요일에 부산 가는 기차표 예매해 줄 수 있어요?
-    36.11s  <ret> 발화 (turn11 첫 프레임)
-    36.35s  agent 발화 시작: <ret> 다음 주 금요일 서울에서 부산 가는 기차표를 예매했습니다. 오후 두시 삼십분 KTX, 좌석은 십오
-    36.41s  user  발화 끝
-    37.47s  ⚡SPAN 주입 [d'=1.36s / d_lead=11.73s]: (tool result) Seoul to Busan, next Friday, 14:30, KTX, ₩59800, seat 15
-    48.08s  agent 발화 끝
-    48.67s  user  발화 시작: 와, 정말 고마워요.
-    50.25s  agent 발화 시작: 천만에요. 도움이 되어 기쁩니다. 혹시 부산에서 할 만한 일도 찾아볼까요?
-    50.28s  user  발화 끝
-    52.59s  user  발화 시작: 네.
-    53.08s  user  발화 끝
-    56.27s  agent 발화 끝
-    57.28s  user  발화 시작: 음… 부산에 볼만한 영화관 좀 찾아줘.
-    59.82s  <ret> 발화 (turn16 첫 프레임)
-    60.13s  user  발화 끝
-    60.22s  agent 발화 시작: <ret> 부산에서 영화관은 해운대 메가박스가 일 점 이킬로미터, 롯데시네마 부산이 이 점 오킬로미터, CG
-    61.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Busan, Haeundae, Megabox Haeundae (1.2km), Lotte Cinema 
-    65.91s  user  발화 시작: 네.
-    66.17s  user  발화 끝
-    68.61s  agent 발화 끝
-    69.52s  user  발화 시작: 메가박스 해운대까지 가는 길 좀 알려줘.
-    71.80s  <ret> 발화 (turn19 첫 프레임)
-    72.20s  agent 발화 시작: <ret> 부산에서 메가박스 해운대까지 자동차로 이십분, 십이 점 오킬로미터입니다.
-    72.43s  user  발화 끝
-    73.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.92s]: (tool result) Busan to Megabox Haeundae, driving, 20 minutes, 12.5 km
-    78.13s  agent 발화 끝
-    78.58s  user  발화 시작: 알겠어요. 감사합니다.
-    79.97s  agent 발화 시작: 네, 천만에요. 즐거운 여행 되세요.
-    80.05s  user  발화 끝
-    82.88s  agent 발화 끝
+     0.00s  user  발화 시작: 날씨 좀 알려줄 수 있어? 서울 날씨가 궁금해.
+     2.58s  <ret> 발화 (turn1 첫 프레임)
+     2.97s  agent 발화 시작: <ret> 서울 날씨는 현재 이십육 점 일도이고, 습도는 육십팔%, 바람은 시속 사 점 팔킬로미터로 맑습니다
+     2.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) The current weather in Seoul is 26.1°C, humidity 68%, wi
+     3.14s  user  발화 끝
+     5.72s  user  발화 시작: 네.
+     6.21s  user  발화 끝
+    10.19s  agent 발화 끝
+    10.41s  user  발화 시작: 오, 꽤 덥네.
+    11.64s  user  발화 끝
+    11.86s  agent 발화 시작: 날씨가 많이 더워졌네요. 자외선 차단제를 꼭 챙기세요.
+    13.45s  user  발화 시작: 예.
+    13.90s  user  발화 끝
+    15.65s  agent 발화 끝
+    15.77s  user  발화 시작: 혹시 이번 주말에 비 올 가능성은 어때?
+    18.29s  <ret> 발화 (turn7 첫 프레임)
+    18.45s  agent 발화 시작: <ret> 이번 주말 서울 날씨는 토요일에 비 올 확률이 이십%, 일요일에는 오십%입니다.
+    18.45s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.90s]: (tool result) This weekend in Seoul, Saturday has a 20% chance of rain
+    18.63s  user  발화 끝
+    21.73s  user  발화 시작: 네.
+    22.18s  user  발화 끝
+    23.35s  agent 발화 시작: 일요일에는 우산을 챙기시는 게 좋겠어요. 혹시 다른 지역 날씨도 알아볼까요?
+    23.36s  agent 발화 끝
+    26.04s  user  발화 시작: 네.
+    26.44s  user  발화 끝
+    28.87s  agent 발화 끝
+    29.36s  user  발화 시작: 아니, 괜찮아. 그럼… 영화 예매 좀 해줄 수 있을까?
+    32.23s  agent 발화 시작: 어떤 영화로 예매해 드릴까요? 보고 싶은 영화 제목을 말씀해 주세요.
+    32.32s  user  발화 끝
+    37.15s  agent 발화 끝
+    37.83s  user  발화 시작: 음… '인터스텔라' 보고 싶은데, 혹시 상영 시간표 좀 알아봐 줄래?
+    42.67s  <ret> 발화 (turn14 첫 프레임)
+    42.75s  agent 발화 시작: <ret> '인터스텔라'는 오늘 메가박스 코엑스에서 오후 두시 삼십분, 다섯시 사십오분, 아홉시에 상영됩니다
+    42.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Interstellar is playing at Megabox Coex at 2:30 PM, 5:45
+    42.82s  user  발화 끝
+    45.91s  user  발화 시작: 네네.
+    46.54s  user  발화 끝
+    49.49s  user  발화 시작: 오후 다섯 시 반으로…
+    49.61s  agent 발화 끝
+    51.23s  user  발화 끝
+    53.25s  user  발화 시작: …예매해 줘. 두 자리로.
+    55.22s  <ret> 발화 (turn18 첫 프레임)
+    55.24s  user  발화 끝
+    55.46s  agent 발화 시작: <ret> '인터스텔라' 오후 다섯시 사십오분 메가박스 코엑스 이인석 예매가 완료되었습니다. 확인 번호는 칠
+    55.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: (tool result) Your tickets for Interstellar at Megabox Coex at 5:45 PM
+    58.88s  user  발화 시작: 와.
+    59.29s  user  발화 끝
+    63.80s  agent 발화 끝
+    64.47s  user  발화 시작: 고마워. 혹시 지금 시간도 알려줄 수 있어?
+    66.89s  <ret> 발화 (turn21 첫 프레임)
+    67.29s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일일 오후 세 시 십칠분입니다.
+    67.29s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.34s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+    67.42s  user  발화 끝
+    71.63s  agent 발화 끝
+    72.26s  user  발화 시작: 아, 벌써 시간이 이렇게 됐네.
+    74.10s  user  발화 끝
+    74.43s  agent 발화 시작: 시간이 정말 빠르네요. 혹시 오늘 저녁 계획은 있으신가요?
+    78.31s  agent 발화 끝

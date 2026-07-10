@@ -66,75 +66,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a lovely name. I’m jus | S2 Small. Like I don’t matter. | S3 Just… no time. And honestly, no en | S4 I guess… being kind to myself, eve
+# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a beautiful name. I’m  | S2 I used to paint a lot. Before the  | S3 That’s easy to say, but… it’s hard | S4 I guess. I just wish it were easie
 
-     0.00s  agent 발화 시작: Marie, welcome. My name is Bir, and I’m here to listen—to of
-     7.22s  user  발화 시작: Bir… that’s a lovely name. I’m just feeling a bit lost, hone
-     7.33s  agent 발화 끝
-    13.56s  agent 발화 시작: Lost is a very human feeling, Marie. It sounds like work is 
-    13.66s  user  발화 끝
-    23.25s  agent 발화 끝
-    23.27s  user  발화 시작: Uhhh, well, it’s just… everything feels pointless. Like I’m 
-    28.28s  agent 발화 시작: That sense of pointlessness can be deeply draining. It’s bra
-    28.46s  user  발화 끝
-    35.25s  user  발화 시작: I think it comes and goes. But it’s been worse lately.
-    35.42s  agent 발화 끝
-    38.79s  agent 발화 시작: It’s understandable that it feels more intense now. Sometime
-    38.94s  user  발화 끝
-    45.70s  user  발화 시작: Yeah.
-    46.34s  user  발화 끝
-    47.84s  agent 발화 끝
-    48.81s  user  발화 시작: A new manager. He's… demanding. And doesn't seem to value an
-    54.78s  user  발화 끝
-    54.90s  agent 발화 시작: A shift in leadership can certainly disrupt things. It’s dis
-    60.01s  user  발화 시작: Yeah.
-    60.55s  user  발화 끝
-    63.65s  user  발화 시작: Small. Like I don’t matter.
-    63.80s  agent 발화 끝
-    65.79s  agent 발화 시작: That’s a painful feeling, Marie. To feel diminished, like yo
-    66.04s  user  발화 끝
-    70.53s  user  발화 시작: Yeah, yeah.
-    71.58s  user  발화 끝
-    73.48s  agent 발화 시작: Sometimes, when we feel unseen, we begin to question our own
-    73.53s  agent 발화 끝
-    81.42s  user  발화 시작: Mm-hmm.
-    81.87s  user  발화 끝
-    83.69s  user  발화 시작: That’s… easier said than done.
-    84.14s  agent 발화 끝
-    86.12s  agent 발화 시작: It’s a practice, not a destination. It takes consistent effo
-    86.32s  user  발화 끝
-    96.27s  agent 발화 끝
-    96.97s  user  발화 시작: I used to paint. Haven’t in ages, though.
-    99.91s  agent 발화 시작: Painting… that sounds like a beautiful outlet. It’s common t
-    99.92s  user  발화 끝
-   109.64s  user  발화 시작: Just… no time. And honestly, no energy.
-   109.74s  agent 발화 끝
-   113.43s  user  발화 끝
-   113.49s  agent 발화 시작: A lack of time and energy are very real obstacles. It sounds
-   119.90s  user  발화 시작: Yeah.
-   120.39s  user  발화 끝
-   123.32s  user  발화 시작: Maybe. I don’t know. It feels silly to focus on painting whe
-   123.46s  agent 발화 끝
-   129.81s  user  발화 끝
-   130.14s  agent 발화 시작: It’s not silly at all, Marie. Sometimes, nurturing ourselves
-   135.92s  user  발화 시작: Really?
-   136.55s  user  발화 끝
-   140.48s  agent 발화 끝
-   140.88s  user  발화 시작: Self-compassion… I keep hearing that.
-   143.84s  user  발화 끝
-   144.04s  agent 발화 시작: It’s a concept many find difficult to embrace, especially wh
-   152.22s  agent 발화 끝
-   152.38s  user  발화 시작: I guess… being kind to myself, even when I mess up.
-   155.88s  agent 발화 시작: That’s a wonderful starting point. It's recognizing that eve
-   156.03s  user  발화 끝
-   160.08s  user  발화 시작: Yeah, yeah.
-   161.04s  user  발화 끝
-   164.37s  user  발화 시작: Hmm. That actually… helps, thinking about it that way.
-   164.73s  agent 발화 끝
-   168.49s  agent 발화 시작: I'm glad to hear that, Marie. It’s a shift in perspective th
-   168.53s  user  발화 끝
-   175.49s  agent 발화 끝
-   177.84s  user  발화 시작: Thanks, Bir. That was… good to hear.
-   180.75s  user  발화 끝
-   181.12s  agent 발화 시작: You're very welcome, Marie. It was a privilege to listen. Re
-   189.00s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Marie, it’s lovely to connect with you. My name is Bir
+     7.28s  user  발화 시작: Bir… that’s a beautiful name. I’m just… feeling a bit lost l
+     7.41s  agent 발화 끝
+    12.40s  agent 발화 시작: Feeling lost is a very human experience, Marie. It often com
+    12.51s  user  발화 끝
+    20.32s  user  발화 시작: It’s my job. I’ve been at the same company for fifteen years
+    20.42s  agent 발화 끝
+    25.91s  agent 발화 시작: Fifteen years is a significant commitment. It takes courage 
+    26.11s  user  발화 끝
+    33.91s  user  발화 시작: It just… doesn’t feel right anymore. I used to love it, but 
+    34.03s  agent 발화 끝
+    39.75s  agent 발화 시작: That shift in feeling is important to acknowledge, Marie. Wh
+    39.79s  user  발화 끝
+    45.58s  user  발화 시작: Yeah.
+    46.30s  user  발화 끝
+    47.45s  agent 발화 끝
+    48.56s  user  발화 시작: I'm scared, though. What if I can't find something else? Som
+    53.65s  user  발화 끝
+    53.73s  agent 발화 시작: That fear is understandable. Uncertainty can be unsettling. 
+    58.23s  user  발화 시작: Yeah, yeah.
+    59.80s  user  발화 끝
+    61.06s  agent 발화 시작: Perhaps exploring what truly brings you joy, outside of work
+    61.09s  agent 발화 끝
+    69.31s  user  발화 시작: I used to paint a lot. Before the kids, before everything go
+    70.01s  agent 발화 끝
+    74.36s  user  발화 끝
+    74.46s  agent 발화 시작: Painting… that sounds like a beautiful outlet. It’s easy for
+    79.09s  user  발화 시작: Yeah.
+    79.59s  user  발화 끝
+    82.24s  user  발화 시작: Yeah. It was… freeing. I haven't touched a brush in years.
+    82.57s  agent 발화 끝
+    86.75s  agent 발화 시작: It’s never too late to reconnect with those parts of yoursel
+    86.82s  user  발화 끝
+    92.76s  user  발화 시작: Mhm.
+    93.21s  user  발화 끝
+    94.63s  agent 발화 끝
+    95.36s  user  발화 시작: I keep thinking about what everyone else will think. My husb
+   100.24s  agent 발화 시작: It’s natural to consider the perspectives of those we care a
+   100.32s  user  발화 끝
+   106.89s  user  발화 시작: That’s easy to say, but… it’s hard to do. They have expectat
+   106.92s  agent 발화 끝
+   112.08s  user  발화 끝
+   112.19s  agent 발화 시작: Expectations can be powerful forces. But sometimes, the grea
+   118.00s  user  발화 시작: Yeah.
+   118.50s  user  발화 끝
+   121.07s  user  발화 시작: I was hoping you could tell me… what I *should* do. Just giv
+   121.23s  agent 발화 끝
+   126.35s  user  발화 끝
+   126.72s  agent 발화 시작: I wish I could offer a simple answer, Marie, but life rarely
+   131.94s  user  발화 시작: Yeah.
+   132.75s  user  발화 끝
+   135.62s  agent 발화 끝
+   136.13s  user  발화 시작: So… you can’t just… solve my problem?
+   140.34s  user  발화 끝
+   140.57s  agent 발화 시작: Solving implies a problem to be fixed, Marie. Sometimes, it’
+   149.79s  agent 발화 끝
+   150.01s  user  발화 시작: I feel silly for even talking about this. It’s just a job.
+   153.90s  agent 발화 시작: It’s not “just a job” if it impacts your well-being, Marie. 
+   154.03s  user  발화 끝
+   160.49s  user  발화 시작: I guess. I just wish it were easier.
+   160.75s  agent 발화 끝
+   163.22s  agent 발화 시작: Easier isn’t always better, Marie. Growth often comes throug
+   163.35s  user  발화 끝
+   167.67s  user  발화 시작: Yeah, yeah.
+   168.77s  user  발화 끝
+   172.54s  agent 발화 끝
+   174.10s  user  발화 시작: My friend suggested I talk to a career counselor.
+   177.53s  user  발화 끝
+   177.54s  agent 발화 시작: That’s a wonderful suggestion. A career counselor could offe
+   184.68s  agent 발화 끝
+   185.14s  user  발화 시작: Okay. Maybe I will. Thanks, Bir.
+   187.92s  user  발화 끝
+   188.21s  agent 발화 시작: You’re very welcome, Marie. Remember to be kind to yourself 
+   195.49s  agent 발화 끝

@@ -61,9 +61,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 지금 nba에서 가장 나이 많은 선수는 누구세요?
-     3.42s  user  발화 끝
-     3.61s  <ret> 발화 (turn1 첫 프레임)
-     3.77s  agent 발화 시작: <ret> 현재 nba에서 가장 나이 많은 선수는 빈스 카터 선수입니다. 농구 팬이시군요?
-     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: Vince Carter is currently the oldest player in the NBA.
-     8.39s  agent 발화 끝
+     0.00s  user  발화 시작: 현재 nba에서 가장 나이가 많은 선수는 누구인가요?
+     3.74s  <ret> 발화 (turn1 첫 프레임)
+     3.84s  user  발화 끝
+     3.90s  agent 발화 시작: <ret> 현재 nba에서 가장 나이가 많은 선수는 빈스 카터 선수입니다.
+     3.90s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.56s]: Vince Carter is currently the oldest active player in the NBA, having 
+     7.46s  agent 발화 끝

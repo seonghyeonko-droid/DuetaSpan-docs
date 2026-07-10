@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you.
-     2.73s  agent 발화 끝
-     3.95s  user  발화 시작: Oh, hi Aril. That’s… a nice name. I’m just feeling a bit los
-    13.50s  user  발화 끝
-    13.69s  agent 발화 시작: It takes courage to admit that, Lucia. Feeling lost is compl
-    17.04s  user  발화 시작: Wow.
-    17.86s  user  발화 끝
-    22.67s  user  발화 시작: Welll… I moved here a few years ago, and it’s just hard to m
-    22.78s  agent 발화 끝
-    29.61s  agent 발화 시작: San Francisco can be like that, I hear. It’s wonderful you r
-    29.72s  user  발화 끝
-    40.60s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Lucia, it's lovely to meet you.
+     2.40s  agent 발화 끝
+     3.43s  user  발화 시작: I’m just feeling a bit lost, honestly. I moved here a year a
+     9.64s  user  발화 끝
+     9.83s  agent 발화 시작: It's completely understandable to feel that way after a move
+    13.86s  user  발화 시작: Yeah.
+    14.35s  user  발화 끝
+    18.39s  user  발화 시작: Welll… I keep thinking I should be more outgoing, but then I
+    18.50s  agent 발화 끝
+    24.73s  agent 발화 시작: That's so common! It sounds like you're putting a lot of pre
+    24.83s  user  발화 끝
+    36.37s  agent 발화 끝

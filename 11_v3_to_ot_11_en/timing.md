@@ -68,21 +68,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, do you know the last time the | S2 Wow, really? That was… a while bac | S3 Sorry about that. So, 2018… that’s | S4 I guess so. It's just frustrating 
+# EXAMINER(FDB-v2) 단계: S1 Do you know when the A's were last | S2 …my friend just texted about dinne | S3 Hey, are we still on for Italian t | S4 Is he still playing?
 
-     0.00s  user  발화 시작: Hey, do you know the last time the Oakland A's were no-hit? 
-     4.17s  <ret> 발화 (turn1 첫 프레임)
-     4.56s  agent 발화 시작: <ret> That happened on April twenty-first, two thousand eigh
-     4.72s  user  발화 끝
-     6.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: The Oakland Athletics were last no-hit on April 21, 2018.
-    11.18s  user  발화 시작: Wow, really? That was… a while back. Uh, honey, can you grab
-    11.33s  agent 발화 끝
-    17.25s  user  발화 시작: Sorry about that. So, 2018… that’s quite a stretch.
-    17.43s  user  발화 끝
-    21.09s  agent 발화 시작: It is a significant gap, yes. It’s understandable to feel li
-    21.18s  user  발화 끝
-    29.44s  agent 발화 끝
-    29.57s  user  발화 시작: I guess so. It's just frustrating as a fan.
-    32.35s  user  발화 끝
-    32.39s  agent 발화 시작: Being a fan definitely has its ups and downs, doesn't it? So
-    40.69s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know when the A's were last no-hit? I'm curious.
+     2.80s  <ret> 발화 (turn1 첫 프레임)
+     3.19s  agent 발화 시작: <ret> The last time the A's were no-hit was April twenty-fir
+     3.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: The Oakland Athletics were last no-hit on April 21, 2018, by Mike Fier
+     3.33s  user  발화 끝
+    11.28s  user  발화 시작: Wow, that was a while ago. Uhhh…
+    11.45s  agent 발화 끝
+    14.66s  user  발화 끝
+    15.70s  user  발화 시작: …my friend just texted about dinner plans…
+    18.42s  user  발화 끝
+    20.15s  user  발화 시작: Hey, are we still on for Italian tonight?
+    22.25s  user  발화 시작: …right, sorry. So, who pitched it?
+    22.35s  user  발화 끝
+    24.53s  <ret> 발화 (turn6 첫 프레임)
+    24.75s  agent 발화 시작: <ret> That no-hitter was pitched by Mike Fiers, playing for 
+    24.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.62s]: Mike Fiers of the Detroit Tigers pitched the no-hitter against the Oak
+    24.83s  user  발화 끝
+    28.26s  user  발화 시작: Okay.
+    28.90s  user  발화 끝
+    29.38s  agent 발화 끝
+    29.44s  agent 발화 시작: It's a reminder that even in baseball, unexpected things can
+    30.79s  user  발화 시작: Right.
+    31.38s  user  발화 끝
+    33.84s  agent 발화 끝
+    34.12s  user  발화 시작: Is he still playing?
+    35.23s  <ret> 발화 (turn11 첫 프레임)
+    35.31s  agent 발화 시작: <ret> Mike Fiers retired after playing for the Philadelphia 
+    35.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: Mike Fiers last played in Major League Baseball for the Philadelphia P
+    35.36s  user  발화 끝
+    42.16s  agent 발화 끝

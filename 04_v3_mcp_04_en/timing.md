@@ -63,27 +63,20 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, well, what’s the weather in S | S3 That sounds pleasant. Can you find | S4 Bellagio sounds nice. Can you rese
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     3.43s  <ret> 발화 (turn1 첫 프레임)
-     3.74s  user  발화 끝
-     3.75s  agent 발화 시작: <ret> I’ve created a directory named 'SuperCrawler version t
-     4.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.86s]: (tool result) Directory 'SuperCrawler version ten point one' created s
-     5.87s  user  발화 시작: Mhm.
-     6.41s  user  발화 끝
-     8.61s  agent 발화 끝
-     9.31s  user  발화 시작: Hmm, well, what’s the weather in Seoul right now?
-    12.22s  <ret> 발화 (turn4 첫 프레임)
-    12.46s  agent 발화 시작: <ret> The weather in Seoul is twenty-four point zero degrees
-    12.55s  user  발화 끝
-    13.98s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.38s]: (tool result) 24.0°C, humidity 68%, wind 4.2 km/h
-    22.84s  agent 발화 끝
-    23.25s  user  발화 시작: That sounds pleasant. Can you find me some Italian restauran
-    27.22s  <ret> 발화 (turn6 첫 프레임)
-    27.30s  agent 발화 시작: <ret> In Seoul, I found La Piazza, one hundred and twenty me
-    27.32s  user  발화 끝
-    29.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: (tool result) Seoul (37.5665, 126.9780): La Piazza (120m), Bellagio (3
-    38.67s  agent 발화 끝
-    39.50s  user  발화 시작: Bellagio sounds nice. Can you reserve a table for two there 
-    44.50s  user  발화 끝
+     4.07s  <ret> 발화 (turn1 첫 프레임)
+     4.39s  agent 발화 시작: <ret> I’ve set the user agent to SuperCrawler version ten po
+     4.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.23s]: (tool result) {"status": "success", "url": "https://httpbin.org/header
+     4.40s  user  발화 끝
+     6.70s  user  발화 시작: Mhm.
+     7.19s  user  발화 끝
+     9.62s  agent 발화 끝
+    10.35s  user  발화 시작: Hmm, that’s good… but can you verify it actually took?
+    14.32s  <ret> 발화 (turn4 첫 프레임)
+    14.56s  agent 발화 시작: <ret> Yes, the headers now show “SuperCrawler version ten po
+    14.56s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.49s]: (tool result) {"status": "success", "url": "https://httpbin.org/header
+    14.69s  user  발화 끝
+    19.05s  agent 발화 끝
+    19.36s  user  발화 시작: Okay, perfect. That’s a relief.
+    21.63s  user  발화 끝

@@ -76,22 +76,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Where does the name du Plessis com | S2 Oh, interesting. Was there a famou | S3 Hmm, eighteenth century… that’s a  | S4 I see. Could you search for a cont
 
-     0.00s  user  발화 시작: I was wondering about the name du Plessis. It sounds… French
-     4.62s  <ret> 발화 (turn1 첫 프레임)
-     4.68s  agent 발화 시작: <ret> The name du Plessis actually comes from France, Korana
-     4.72s  user  발화 끝
-     5.82s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.09s]: Du Plessis is a French surname originating as a topographic name for s
-     9.95s  user  발화 시작: Mhm.
-    10.58s  user  발화 끝
-    11.77s  agent 발화 끝
-    11.79s  user  발화 시작: Oh, that's interesting. Is it a common name in other places 
-    15.62s  <ret> 발화 (turn4 첫 프레임)
-    16.00s  agent 발화 시작: <ret> It’s most often found in South Africa now, surprisingl
-    16.04s  user  발화 끝
-    17.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.68s]: The surname du Plessis is most common in South Africa, where it was br
-    22.68s  agent 발화 끝
-    23.00s  user  발화 시작: Huguenot refugees? I don’t know much about them.
-    26.78s  agent 발화 시작: They were French Protestants fleeing religious persecution i
-    26.80s  user  발화 끝
-    34.29s  agent 발화 끝
+     0.00s  user  발화 시작: Where does the name du Plessis come from?
+     2.59s  <ret> 발화 (turn1 첫 프레임)
+     2.60s  agent 발화 시작: <ret> The term comes from places in France called Plessis — 
+     2.67s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.75s]: The surname du Plessis is of French origin, meaning "of the Plessis," 
+     2.73s  user  발화 끝
+     8.35s  user  발화 시작: Mhm.
+     9.08s  user  발화 끝
+    10.33s  user  발화 시작: Oh, interesting. Was there a famous du Plessis?
+    10.35s  agent 발화 끝
+    13.75s  <ret> 발화 (turn4 첫 프레임)
+    14.14s  agent 발화 시작: <ret> There was François du Plessis, a French soldier who fo
+    14.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: Huguenot soldier François du Plessis, Marquis de Dorval, was a French 
+    14.17s  user  발화 끝
+    22.15s  agent 발화 끝
+    22.46s  user  발화 시작: Hmm, eighteenth century… that’s a while ago. What about more
+    27.67s  agent 발화 시작: Welll… it's difficult to pinpoint a single, universally famo
+    27.72s  user  발화 끝
+    35.60s  user  발화 시작: I see. Could you search for a contemporary du Plessis who's 
+    35.73s  agent 발화 끝
+    40.34s  <ret> 발화 (turn8 첫 프레임)
+    40.47s  agent 발화 시작: <ret> I found Damian de Allende du Plessis, a South African 
+    40.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) South African rugby player Damian de Allende, whose full
+    40.74s  user  발화 끝
+    48.12s  agent 발화 끝

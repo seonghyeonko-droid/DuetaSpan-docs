@@ -63,85 +63,85 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering… where did the… | S2 That sounds… unsettling. Is it sti | S3 I suppose so. Could you… find me s | S4 Yeah, it does. I think I need a br
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, where did th | S2 Hmmmmm… it sounds a bit bleak. | S3 Those sound… different. | S4 …with all the technology now?
 
-     0.00s  user  발화 시작: I was wondering… where did the…
-     2.49s  user  발화 끝
-     4.12s  user  발화 시작: …name “Big Brother” actually come from?…
-     5.82s  <ret> 발화 (turn2 첫 프레임)
-     6.14s  agent 발화 시작: <ret> It comes from George Orwell’s novel, Nineteen Eighty-F
-     6.39s  user  발화 끝
-     7.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: Nineteen Eighty-Four is a dystopian novel published in nineteen forty-
-    16.30s  agent 발화 끝
-    16.30s  user  발화 시작: Oh, okay. That makes sense. Was that book popular right away
-    19.88s  <ret> 발화 (turn4 첫 프레임)
-    20.27s  agent 발화 시작: <ret> It didn’t become widely popular immediately; it gained
-    20.27s  user  발화 끝
-    21.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.92s]: Nineteen Eighty-Four initially sold poorly, but gained traction in the
-    27.68s  user  발화 시작: Yeah, yeah.
-    29.25s  user  발화 끝
-    30.20s  agent 발화 끝
-    31.05s  user  발화 시작: Hmm, that’s true. What was Orwell trying to say with it, do 
-    34.66s  agent 발화 시작: He was exploring the dangers of totalitarianism and mass sur
-    34.80s  user  발화 끝
-    38.23s  user  발화 시작: Mm-hmm.
-    38.72s  user  발화 끝
-    44.11s  agent 발화 끝
-    44.35s  user  발화 시작: That sounds… unsettling. Is it still relevant today?
-    48.41s  user  발화 끝
-    48.75s  agent 발화 시작: The themes of surveillance and control still resonate strong
-    51.36s  user  발화 시작: Yeah.
-    51.77s  user  발화 끝
-    54.86s  agent 발화 끝
-    55.05s  user  발화 시작: [sigh] It is a bit scary…
-    56.90s  user  발화 끝
-    58.55s  user  발화 시작: …when you think about it.
-    59.57s  agent 발화 시작: It can be, yes. But recognizing those dangers is the first s
-    59.75s  user  발화 끝
-    64.13s  user  발화 시작: Yeah.
-    64.67s  user  발화 끝
-    66.20s  agent 발화 끝
-    66.24s  user  발화 시작: I suppose so. Could you… find me some current articles discu
-    71.72s  <ret> 발화 (turn17 첫 프레임)
-    71.80s  agent 발화 시작: <ret> One article from Wired discusses the US government sec
-    72.03s  user  발화 끝
-    73.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: (tool result) The US government secretly purchased location data from 
-    78.99s  user  발화 시작: Mm-hmm.
-    79.44s  user  발화 끝
-    82.06s  user  발화 시작: Wow, that’s… concerning. What about data privacy laws?
-    82.37s  agent 발화 끝
-    86.01s  <ret> 발화 (turn20 첫 프레임)
-    86.31s  agent 발화 시작: <ret> The California Consumer Privacy Act was enacted in two
-    86.55s  user  발화 끝
-    88.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.80s]: The California Consumer Privacy Act was enacted in two thousand eighte
-    89.64s  user  발화 시작: Yeah.
-    90.08s  user  발화 끝
-    95.11s  agent 발화 끝
-    95.45s  user  발화 시작: Is that a federal law, though?
-    97.39s  user  발화 끝
-    97.43s  agent 발화 시작: No, it’s a state law, specific to California. There isn’t a 
-   100.05s  user  발화 시작: Right.
-   100.41s  user  발화 끝
-   104.94s  agent 발화 끝
-   106.08s  user  발화 시작: That’s disappointing. Maybe we need a “Big Brother” to prote
-   110.80s  agent 발화 시작: [laugh] That’s a rather ironic thought! It highlights the co
-   110.90s  user  발화 끝
-   113.47s  user  발화 시작: Yeah, yeah.
-   114.61s  user  발화 끝
-   117.56s  user  발화 시작: Yeah, it does. I think I need a break from all this, actuall
-   117.75s  agent 발화 끝
-   120.30s  agent 발화 시작: That sounds like a very good idea. Sometimes stepping away i
-   120.52s  user  발화 끝
-   124.72s  user  발화 시작: Exactly.
-   125.54s  user  발화 끝
-   126.91s  user  발화 시작: Maybe I'll listen to some music. Can you find me some relaxi
-   126.92s  agent 발화 끝
-   130.98s  <ret> 발화 (turn32 첫 프레임)
-   131.06s  agent 발화 시작: <ret> I found Clair de Lune by Debussy, Gymnopédie No. 1 by 
-   131.26s  user  발화 끝
-   132.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: (tool result) Clair de Lune — Debussy, Suite Bergamasque (1905); Gymno
-   142.14s  agent 발화 끝
-   142.75s  user  발화 시작: Perfect, thank you.
-   143.89s  user  발화 끝
-   143.93s  agent 발화 시작: You're very welcome. I hope the music helps you unwind and f
-   149.07s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, where did the name “big brother” come 
+     3.44s  <ret> 발화 (turn1 첫 프레임)
+     3.75s  agent 발화 시작: <ret> The term comes from George Orwell’s novel *Nineteen Ei
+     3.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: The term comes from George Orwell’s dystopian novel *Nineteen Eighty-F
+     3.79s  user  발화 끝
+    12.51s  agent 발화 끝
+    12.93s  user  발화 시작: Nineteen Eighty-Four… was that a really popular book when it
+    16.75s  <ret> 발화 (turn3 첫 프레임)
+    17.14s  agent 발화 시작: <ret> *Nineteen Eighty-Four* didn't sell well at first, only
+    17.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: *Nineteen Eighty-Four* was initially not a commercial success, selling
+    17.18s  user  발화 끝
+    20.58s  user  발화 시작: Mhm.
+    21.07s  user  발화 끝
+    26.98s  agent 발화 끝
+    27.89s  user  발화 시작: Grew in influence… how so?
+    30.26s  <ret> 발화 (turn6 첫 프레임)
+    30.42s  agent 발화 시작: <ret> Its influence really took hold in the nineteen fifties
+    30.42s  ⚡SPAN 주입 [d'=1.92s / d_lead=10.25s]: Its influence grew steadily in the 1950s, becoming a cultural touchsto
+    30.52s  user  발화 끝
+    40.67s  agent 발화 끝
+    41.47s  user  발화 시작: So it became a symbol of the Cold War?
+    43.69s  user  발화 끝
+    43.81s  agent 발화 시작: It did, yes. The themes resonated with anxieties of the time
+    48.07s  user  발화 시작: Yeah.
+    48.47s  user  발화 끝
+    52.62s  agent 발화 끝
+    52.67s  user  발화 시작: Hmmmmm… it sounds a bit bleak.
+    55.07s  agent 발화 시작: It is, quite bleak actually. Orwell was writing about the da
+    55.17s  user  발화 끝
+    58.95s  user  발화 시작: Yeah.
+    59.40s  user  발화 끝
+    61.37s  user  발화 시작: Is there anything Orwell…
+    61.80s  agent 발화 끝
+    63.07s  user  발화 끝
+    64.08s  user  발화 시작: …wrote that *isn't* so…dark?
+    66.81s  agent 발화 시작: He wrote some essays and journalism that were less overtly d
+    66.99s  user  발화 끝
+    70.58s  user  발화 시작: Right.
+    70.98s  user  발화 끝
+    75.85s  agent 발화 끝
+    75.97s  user  발화 시작: Observational… like what kind of social issues?
+    79.07s  <ret> 발화 (turn18 첫 프레임)
+    79.38s  agent 발화 시작: <ret> Orwell wrote a lot about poverty, class differences, a
+    79.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.20s]: Orwell wrote extensively about poverty, class, and colonialism, notabl
+    79.62s  user  발화 끝
+    89.58s  agent 발화 끝
+    91.02s  user  발화 시작: Those sound… different.
+    92.86s  agent 발화 시작: They are. They show a different side of his thinking, a comm
+    93.00s  user  발화 끝
+    99.49s  agent 발화 끝
+   100.13s  user  발화 시작: [happy] Maybe I should check those out. But back to “big bro
+   105.66s  agent 발화 시작: Yes, the phrase has become universal, used across many cultu
+   105.73s  user  발화 끝
+   109.26s  user  발화 시작: Yeah.
+   109.71s  user  발화 끝
+   114.98s  user  발화 시작: That's… kind of scary, actually.
+   115.16s  agent 발화 끝
+   116.95s  agent 발화 시작: It is a sobering thought, isn’t it? The power of language to
+   117.15s  user  발화 끝
+   119.16s  user  발화 시작: Right.
+   119.56s  user  발화 끝
+   123.32s  user  발화 시작: Do you— do you think it's getting worse…
+   123.39s  agent 발화 끝
+   125.53s  user  발화 끝
+   126.77s  user  발화 시작: …with all the technology now?
+   128.47s  user  발화 끝
+   128.59s  agent 발화 시작: That’s a valid concern. Technology certainly presents new av
+   132.00s  user  발화 시작: Yeah, yeah.
+   133.47s  user  발화 끝
+   137.44s  agent 발화 끝
+   138.19s  user  발화 시작: … I guess so.
+   139.20s  user  발화 끝
+   139.36s  agent 발화 시작: It’s good to be aware and to consider the balance between se
+   145.40s  user  발화 시작: Yeah.
+   145.85s  user  발화 끝
+   147.61s  agent 발화 끝
+   148.03s  user  발화 시작: Welll… thank you, Braera. That was helpful.
+   150.38s  agent 발화 시작: You’re very welcome. It’s important to understand the origin
+   150.53s  user  발화 끝
+   157.74s  agent 발화 끝
