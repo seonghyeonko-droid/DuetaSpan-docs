@@ -4,53 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Oscar",
+#     "name": "Sky",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-14",
+#       "date": "2026-03-15",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-03-22",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2026-01-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-12-02",
-#       "category": "home",
-#       "text": "User's home address is 596 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-11-13",
+#       "date": "2026-01-30",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-08-26",
+#       "date": "2025-12-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-11-28",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-08-01",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-22",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-06-23",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,99 +58,85 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-15",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-09",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know when season five of Se | S2 Maybe later. Who plays the main ch | S3 …is Señora Acero on Netflix? | S4 …about the show’s filming location
+# EXAMINER(FDB-v2) 단계: S1 Hey Uia, do you know who won the c | S2 That's interesting. What other cha | S3 Yeah, definitely. Do you know how… | S4 Oh, I've heard of that…
 
-     0.00s  user  발화 시작: Do you know when season five of Señora Acero comes out?
-     2.92s  <ret> 발화 (turn1 첫 프레임)
-     3.24s  agent 발화 시작: <ret> Well, settling into a new city often means catching up
-     3.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.11s]: The fifth season of Señora Acero premiered on October 15, 2018.
-     3.42s  user  발화 끝
-    12.44s  user  발화 시작: Nice.
-    12.94s  user  발화 끝
-    15.34s  agent 발화 끝
-    15.38s  user  발화 시작: Oh, okay. That was a while ago…
-    17.64s  user  발화 끝
-    17.83s  agent 발화 시작: It was, wasn't it? Sometimes finding shows to enjoy is part 
-    21.02s  user  발화 시작: Yeah, yeah.
-    22.02s  user  발화 끝
-    25.71s  agent 발화 끝
-    26.57s  user  발화 시작: Is there a season six?
-    28.33s  <ret> 발화 (turn7 첫 프레임)
-    28.56s  agent 발화 시작: <ret> It seems there isn’t any news about a sixth season cur
-    28.57s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.77s]: There is no official information regarding a sixth season of Señora Ac
-    28.64s  user  발화 끝
-    35.32s  agent 발화 끝
-    35.51s  user  발화 시작: Hmm, that’s a shame. I really liked that show.
-    37.87s  user  발화 끝
-    38.17s  agent 발화 시작: It’s understandable to feel disappointed when a show you enj
-    42.40s  user  발화 시작: Yeah, yeah.
-    43.69s  user  발화 끝
-    45.17s  agent 발화 끝
-    45.48s  user  발화 시작: Maybe later. Who plays the main character?
-    47.99s  <ret> 발화 (turn12 첫 프레임)
-    48.02s  user  발화 끝
-    48.06s  agent 발화 시작: <ret> Kate del Castillo portrays Vicenta Acero, the main cha
-    48.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: Kate del Castillo plays the main character, Vicenta Acero, in Señora A
-    53.28s  user  발화 시작: Yeah.
-    53.69s  user  발화 끝
-    56.12s  agent 발화 끝
-    56.16s  user  발화 시작: I think so. Is she in other shows?
-    57.98s  <ret> 발화 (turn15 첫 프레임)
-    58.14s  agent 발화 시작: <ret> Yes, Kate del Castillo has been in several other drama
-    58.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) La Reina del Sur — drama; Tres Heridas — drama; El Carte
-    58.28s  user  발화 끝
-    67.41s  user  발화 시작: Oh, La Reina del Sur!…
-    67.50s  agent 발화 끝
-    69.34s  user  발화 끝
-    70.57s  user  발화 시작: …I've heard of that one—
-    71.78s  user  발화 시작: …is Señora Acero on Netflix?
-    71.86s  user  발화 끝
-    73.80s  <ret> 발화 (turn19 첫 프레임)
-    74.04s  agent 발화 시작: <ret> Actually, Señora Acero isn’t currently on Netflix, but
-    74.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: Señora Acero is available for streaming on Vix, formerly Univision Now
-    74.23s  user  발화 끝
-    78.62s  user  발화 시작: Uh-huh.
-    79.11s  user  발화 끝
-    84.06s  agent 발화 끝
-    84.34s  user  발화 시작: Vix, okay. Good to know.
-    86.32s  user  발화 끝
-    86.43s  agent 발화 시작: It’s always helpful to know where to find your favorite show
-    92.81s  user  발화 시작: What about the actors, are any of them Mexican?
-    93.01s  agent 발화 끝
-    94.96s  <ret> 발화 (turn24 첫 프레임)
-    95.19s  agent 발화 시작: <ret> Kate del Castillo, who plays the lead, is Mexican-Amer
-    95.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: Kate del Castillo is a Mexican-American actress, born in Mexico City.
-    95.34s  user  발화 끝
-   101.79s  user  발화 시작: That’s cool. Do you know anything…
-   101.91s  agent 발화 끝
-   103.77s  user  발화 끝
-   105.72s  user  발화 시작: …about the show’s filming locations?
-   107.76s  <ret> 발화 (turn27 첫 프레임)
-   107.84s  agent 발화 시작: <ret> It was filmed in Mexico City and Miami, as well as var
-   107.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Mexico City, Mexico — drama; Miami, Florida — drama; Var
-   107.98s  user  발화 끝
-   114.26s  user  발화 시작: Wow, it travelled around a lot.
-   114.51s  agent 발화 끝
-   116.02s  agent 발화 시작: It seems so. A show’s journey can sometimes mirror our own a
-   116.10s  user  발화 끝
-   122.99s  user  발화 시작: Maybe you're right. Thanks for the information.
-   123.11s  agent 발화 끝
-   125.24s  agent 발화 시작: You're very welcome. Remember, finding your rhythm in a new 
-   125.25s  user  발화 끝
-   128.97s  user  발화 시작: Right.
-   129.47s  user  발화 끝
-   130.56s  agent 발화 끝
-   131.27s  user  발화 시작: I appreciate that.
-   132.37s  user  발화 끝
-   132.78s  agent 발화 시작: It’s all about building a life that feels comfortable and fa
-   139.68s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Uia, do you know who won the college world series this y
+     3.25s  <ret> 발화 (turn1 첫 프레임)
+     3.57s  agent 발화 시작: <ret> It sounds like you're asking about baseball—Oregon Sta
+     3.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.12s]: Oregon State defeated Notre Dame 8–2 in the championship series to win
+     3.74s  user  발화 끝
+    14.60s  agent 발화 시작: That was a really exciting finish!
+    14.69s  agent 발화 끝
+    17.37s  agent 발화 끝
+    17.45s  user  발화 시작: Oh, wow, that’s great! What was the score of the final game 
+    21.39s  <ret> 발화 (turn4 첫 프레임)
+    21.61s  user  발화 끝
+    21.62s  agent 발화 시작: <ret> The final game saw Oregon State defeat Notre Dame by a
+    21.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: Oregon State defeated Notre Dame 8–2 in the championship series to win
+    29.32s  agent 발화 시작: It was a decisive victory for them.
+    29.45s  agent 발화 끝
+    30.59s  user  발화 시작: Yeah.
+    30.99s  user  발화 끝
+    31.86s  agent 발화 끝
+    32.70s  user  발화 시작: That’s amazing. I wonder…
+    35.29s  <ret> 발화 (turn8 첫 프레임)
+    35.36s  agent 발화 시작: <ret> Sometimes, reflecting on a team's journey can be just 
+    35.46s  user  발화 끝
+    36.73s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.13s]: Oregon State’s head coach is Mitch Canham, who led the Beavers to thei
+    48.61s  agent 발화 시작: A strong leader definitely makes a difference.
+    48.72s  agent 발화 끝
+    49.98s  user  발화 시작: Yeah.
+    50.43s  user  발화 끝
+    51.99s  agent 발화 끝
+    52.44s  user  발화 시작: That's interesting. What other championships have they won? 
+    55.04s  user  발화 시작: …and who did they play in the 2018 championship?
+    55.26s  user  발화 끝
+    57.85s  <ret> 발화 (turn13 첫 프레임)
+    58.08s  agent 발화 시작: <ret> Oregon State also won in two thousand six, two thousan
+    58.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: Oregon State won the College World Series in 2006, 2007, and 2018, def
+    58.27s  user  발화 끝
+    68.10s  agent 발화 시작: Quite a history of success.
+    68.19s  agent 발화 끝
+    70.16s  user  발화 시작: North Carolina, huh? I remember that being a close series.
+    70.37s  agent 발화 끝
+    73.35s  agent 발화 시작: It's wonderful you recall such details—it shows your genuine
+    73.40s  user  발화 끝
+    79.50s  agent 발화 시작: Sports memories can be so vivid.
+    79.70s  agent 발화 끝
+    81.91s  user  발화 시작: Yeah, definitely. Do you know how…
+    82.08s  agent 발화 끝
+    84.31s  user  발화 끝
+    85.40s  user  발화 시작: …many total championships Notre Dame has won?
+    88.17s  <ret> 발화 (turn20 첫 프레임)
+    88.24s  agent 발화 시작: <ret> Notre Dame has won one College World Series championsh
+    88.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.17s]: Notre Dame has won one College World Series championship, in 2023.
+    88.44s  user  발화 끝
+    95.33s  agent 발화 시작: It was their first time claiming the title.
+    95.41s  agent 발화 끝
+    98.10s  agent 발화 끝
+    99.06s  user  발화 시작: Just one? That’s surprising.
+   100.73s  <ret> 발화 (turn23 첫 프레임)
+   100.81s  agent 발화 시작: <ret> The two thousand twenty-four College World Series was 
+   100.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: The 2024 College World Series was held at Charles Schwab Field Omaha i
+   101.05s  user  발화 끝
+   108.58s  agent 발화 시작: A beautiful venue for such an event.
+   108.65s  agent 발화 끝
+   110.99s  agent 발화 끝
+   111.07s  user  발화 시작: Oh, I've heard of that…
+   112.59s  user  발화 끝
+   113.55s  user  발화 시작: …stadium. Thanks for the info, Uia.
+   115.81s  agent 발화 시작: You’re very welcome. It's a pleasure to share these details 
+   115.84s  user  발화 끝
+   119.89s  agent 발화 시작: I hope you have a lovely day ahead.
+   120.03s  agent 발화 끝
+   122.10s  agent 발화 끝

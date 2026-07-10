@@ -1,98 +1,115 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Dea, a grounded and empathetic life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Naia, a calm and patient counselor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Hugo",
+    "name": "Casey",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "40s",
-    "language": "German"
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-30",
-      "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2026-03-04",
-      "category": "home",
-      "text": "User's home address is 360 Pine Court."
-    },
-    {
-      "date": "2026-02-17",
+      "date": "2026-05-04",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-01-01",
+      "date": "2026-04-03",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in March."
+    },
+    {
+      "date": "2026-01-07",
+      "category": "home",
+      "text": "User's home address is 728 Birch Road."
+    },
+    {
+      "date": "2025-10-23",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-07-01",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-05-27",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-09-07",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "text": "User is allergic to penicillin."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-11",
-      "title": "Apartment hunting downtown",
+      "date": "2026-01-13",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2026-03-26",
-      "title": "Setting up a home network",
+      "date": "2026-01-10",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-02-22",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Hugo, I'm Dea. It's lovely to connect with you today. I'm here to support you with whatever's on your mind.
-[  8.18s][user ] Um, I was just thinking about that trip to Kyoto we talked ⟨ret@11.29s⟩ about.
-[ 11.53s][moshi] ⟦⚡SPAN@11.53s: [2026-02-17] User prefers a window seat when traveling.⟧ You mentioned you prefer a window seat when you travel, which is a lovely way to enjoy the scenery.
-[ 17.46s][user ] Right, the window seat. Do you remember what hotel I was looking ⟨ret@20.94s⟩ at there?
-[ 21.26s][moshi] ⟦⚡SPAN@21.26s: [2026-06-11] Past chat — Apartment hunting downtown: wanted a pet-friendly building; budget for 2 bedrooms.⟧ I do recall you were discussing accommodation options, specifically looking for a pet-friendly building with two bedrooms.
-[ 29.07s][user ] Oh, yeah, that was for Berlin, wasn’t it? Not Kyoto.
-[ 32.06s][moshi] You're right to clarify, Hugo. My apologies for the mix-up. I have no note of a hotel you discussed for Kyoto.
-[ 34.94s][user ] «backchannel» Yeah.
-[ 40.27s][user ] Okay, no worries. What’s the weather like in Berlin today?
-[ 43.35s][moshi] ⟨ret@43.28s⟩ ⟦⚡SPAN@43.36s: (tool result) 22.0°C, humidity 68%, wind 3.2 km/h⟧ The weather in Berlin is currently 22.0 degrees Celsius, with 68% humidity and a light breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 52.36s][user ] That sounds nice. And uh, do you know if Luna is getting enough attention while I'm at ⟨ret@57.20s⟩ work?
-[ 57.28s][moshi] ⟦⚡SPAN@57.28s: [2025-09-07] User has a tabby cat named Luna.⟧ You have a tabby cat named Luna, which is wonderful. I don’t have any information about her current level of attention.
-[ 65.58s][user ] [sigh] I wish I knew. It's hard balancing work and being a good pet parent.
-[ 70.32s][moshi] It absolutely is, Hugo. Finding that balance takes real effort. It's admirable you're thinking about Luna's well-being.
-[ 75.28s][user ] «backchannel» Okay.
-[ 79.17s][user ] Maybe I should look into a pet sitter.
-[ 81.28s][moshi] That’s a thoughtful idea. It could provide Luna with extra companionship and you with peace of mind.
-[ 88.58s][user ] Do you know of any good pet-sitting services ⟨ret@91.21s⟩ around here?
-[ 91.61s][moshi] ⟦⚡SPAN@91.61s: (tool result) PetPal - 4.8 stars, 120 reviews; Happy Paws - 4.5 stars, 85 reviews⟧ PetPal has a 4.8-star rating with 120 reviews, and Happy Paws has 4.5 stars with 85 reviews.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "pet sitting"}}
-[ 96.88s][user ] «backchannel» Oh.
-[102.01s][user ] Hmm, PetPal sounds good.
-[103.83s][moshi] It's great you're exploring options, Hugo. Taking that step shows how much you care for Luna.
+[  0.00s][moshi] Hi Casey, I’m Naia. It’s good to connect with you today.
+[  2.95s][user ] «backchannel» Mm-hmm.
+[  4.19s][user ] Hi Naia, nice to meet you too. I’ve been feeling a bit lost lately.
+[  8.35s][moshi] It’s perfectly alright to feel that way, Casey. Many people experience times of uncertainty.
+[ 14.51s][user ] Yeah, it’s just… my sister and I are fighting a lot.
+[ 18.39s][moshi] Family relationships can be really complex, can't they? It’s brave of you to talk about it.
+[ 22.17s][user ] «backchannel» Mm-hmm.
+[ 25.11s][user ] It’s just silly stuff, mostly, but it escalates quickly.
+[ 28.80s][moshi] Sometimes those small things are just symptoms of something deeper going on.
+[ 30.79s][user ] «backchannel» Okay.
+[ 33.52s][user ] Maybe. I just wish we could get along better.
+[ 36.36s][moshi] That's a very common desire, Casey. What specifically feels difficult right now?
+[ 38.21s][user ] «backchannel» Yeah.
+[ 42.53s][user ] Well, she keeps bringing up things from the ⟨ret@44.92s⟩ past.
+[ 45.16s][moshi] ⟦⚡SPAN@45.16s: [2026-01-10] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ I recall you mentioned researching a car back in January, and sometimes unresolved issues can resurface like that.
+[ 48.75s][user ] «backchannel» Uh-huh.
+[ 52.52s][moshi] It sounds like those past events are still affecting both of you.
+[ 54.91s][user ] «backchannel» Mhm.
+[ 57.50s][user ] Yeah, exactly. It’s like she’s holding a grudge.
+[ 60.29s][moshi] Holding onto resentment can be incredibly draining for everyone involved.
+[ 65.67s][user ] It is. I try to let it go, but she won’t.
+[ 68.39s][moshi] It takes two people to resolve conflict, and it's hard when one isn't willing.
+[ 73.64s][user ] I know. I was hoping you might have some advice.
+[ 76.18s][moshi] I can certainly offer some perspectives, Casey. Have you tried setting boundaries?
+[ 80.79s][user ] I’ve tried, but she just ignores them. –
+[ 82.72s][user ] …Actually, it feels like she doesn’t even *hear* me.
+[ 85.92s][moshi] That’s a really painful experience, feeling unheard by someone you love.
+[ 91.13s][user ] It is. It makes me feel… invisible, I guess.
+[ 95.22s][moshi] That’s a very valid feeling, Casey. It’s important to acknowledge that.
+[100.44s][user ] Do you think therapy might help? For both of us?
+[103.28s][moshi] That could be a really positive step, Casey. Sometimes a neutral space is helpful.
+[105.94s][user ] «backchannel» Yeah.
+[108.68s][user ] I’ll suggest it. But she’s really resistant to anything like that.
+[112.22s][moshi] It’s common to be hesitant about therapy. It takes courage to seek help.
+[117.09s][user ] She says it’s “admitting defeat.”
+[119.16s][moshi] That’s a misconception many people have. It’s actually a sign of strength.
+[125.63s][user ] I guess. It’s just… frustrating.
+[128.13s][moshi] It sounds like you’re feeling quite stuck in this pattern.
+[131.78s][user ] I am. I just want things to be peaceful.
+[135.02s][moshi] Peace is a worthwhile goal, Casey. It takes work, but it's achievable.
+[139.74s][user ] Do you have any experience with siblings who fight a lot?
+[143.09s][moshi] In my work, I've seen many sibling dynamics. It’s a common challenge.
+[147.66s][user ] That’s… comforting, actually. Knowing I’m not alone.
+[151.86s][moshi] You’re definitely not alone, Casey. Many families struggle with similar issues.

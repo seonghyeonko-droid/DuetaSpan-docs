@@ -1,96 +1,117 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Naera, a grounded and empathetic supportive advisor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Fril, a upbeat and supportive personal guide who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Noah",
+    "name": "Elsa",
     "location": {
-      "city": "San Francisco",
+      "city": "New York",
       "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "timezone": "America/New_York (EST, UTC-5)",
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "male",
+    "gender": "female",
     "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-05-19",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2026-03-08",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-01-17",
+      "date": "2026-03-16",
       "category": "diet",
       "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-09-21",
+      "date": "2026-02-10",
       "category": "allergy",
       "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-02-02",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-01-20",
+      "category": "home",
+      "text": "User's home address is 667 Birch Road."
+    },
+    {
+      "date": "2025-12-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-06",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-23",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-08-07",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to find out about the early governors of Maryland.
-[  3.35s][moshi] I can help with that. Maryland has a rich history!
-[  4.84s][user ] «backchannel» Okay.
-[  6.96s][user ] Specifically, who was the fifth governor? And when was ⟨ret@10.25s⟩ he born?
-[ 10.65s][moshi] ⟦⚡SPAN@10.65s: Leonard Calvert was the fifth governor of the Province of Maryland, born in 1606.⟧ Leonard Calvert was the fifth governor of the Province of Maryland, born in sixteen oh six.
-[ 13.70s][user ] «backchannel» Okay.
-[ 16.77s][user ] That's interesting. What was Maryland like back then?
-[ 19.91s][moshi] It was a new colony, full of promise and challenges for those early settlers.
-[ 22.84s][user ] «backchannel» Yeah.
-[ 26.05s][user ] What was the original purpose of establishing Maryland?
-[ 29.02s][moshi] ⟨ret@28.78s⟩ ⟦⚡SPAN@29.02s: Maryland was founded in 1632 as a haven for English Catholics.⟧ Maryland was founded in sixteen thirty-two as a haven for English Catholics.
-[ 30.52s][user ] «backchannel» Mm-hmm.
-[ 33.64s][user ] So it was a religious freedom project, essentially?
-[ 36.36s][moshi] Yes, it was intended to be a place where people could practice their faith freely.
-[ 40.70s][user ] And how long did that colony exist as it was originally ⟨ret@44.20s⟩ founded?
-[ 44.43s][moshi] ⟦⚡SPAN@44.44s: The Province of Maryland existed from 1632 until 1776, when it joined the United States.⟧ The Province of Maryland existed from sixteen thirty-two until seventeen seventy-six, when it joined the United States.
-[ 52.81s][user ] That’s a long time. What about the first governor?
-[ 56.01s][moshi] The first governor was also Leonard Calvert, his father.
-[ 58.49s][user ] «backchannel» Yeah.
-[ 59.77s][user ] Oh, interesting. So it was a family affair. What was Leonard Calvert Senior doing before Maryland?
-[ 65.25s][moshi] ⟨ret@65.17s⟩ ⟦⚡SPAN@65.25s: Leonard Calvert, the first governor, was Secretary of State to George Calvert, 1st Baron Baltimore.⟧ Leonard Calvert, the first governor, was Secretary of State to George Calvert, the first Baron Baltimore.
-[ 68.57s][user ] «backchannel» Yeah.
-[ 72.14s][moshi] «interrupted» He played a key role in securing the charter for the colony—
-[ 74.88s][user ] «interrupts_prev» …did the fifth governor, Leonard Calvert, have any children?
-[ 78.09s][moshi] ⟨ret@77.93s⟩ ⟦⚡SPAN@78.09s: (tool result) Leonard Calvert married Anne Wolseley and had several children, including William Calvert.⟧ Leonard Calvert married Anne Wolseley and had several children, including William Calvert.
-      CALL: {"function": "search", "arguments": {"query": "Leonard Calvert (fifth governor of Maryland) children"}}
-[ 83.77s][user ] So he continued the family line. Did William become a governor too?
-[ 88.04s][moshi] No, William Calvert became a politician and served as a member of the Maryland Assembly.
-[ 89.80s][user ] «backchannel» Mhm.
-[ 93.76s][user ] That’s still a good legacy. What was the economy like in Maryland at that time?
-[ 98.17s][moshi] It heavily relied on tobacco cultivation, which shaped the colony’s society.
-[101.72s][user ] «backchannel» Yeah.
-[103.43s][user ] Tobacco, huh? Sounds like a tough business.
-[106.08s][moshi] It was demanding work, but it provided a vital source of income for many.
-[108.56s][user ] «backchannel» Yeah.
-[110.90s][user ] Did they have any other major industries back then?
-[113.48s][moshi] They also engaged in fishing and some limited fur trading, but tobacco was dominant.
-[115.78s][user ] «backchannel» Uh-huh.
-[119.42s][user ] It seems like a very different world.
-[121.34s][moshi] It truly was, a time of immense change and hardship for those early colonists.
-[123.75s][user ] «backchannel» Right.
-[127.19s][user ] I guess it is hard to imagine. Thanks for the information, Naera.
-[130.82s][moshi] You're very welcome. I'm glad I could share a little of Maryland's history with you.
+[  0.00s][user ] Hi, I’m new to the city. It’s a little overwhelming!
+[  3.09s][moshi] Welcome! It’s perfectly normal to feel that way when settling in.
+[  7.21s][user ] That’s great to hear. I was wondering, what’s the best way to get around?
+[ 10.92s][moshi] Public transport is pretty efficient here, and there are lots of options. We can look at buses, trains, or ride-sharing.
+[ 18.67s][user ] Buses sound good. Are they easy to ⟨ret@21.03s⟩ use?
+[ 21.35s][moshi] ⟦⚡SPAN@21.35s: (tool result) The city bus network covers most areas, with routes and schedules available on the official tran⟧ You’ll find the city bus network covers most areas, and routes are on the transit website. I can help you find a route if you tell me where you’re headed.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {}}
+[ 31.16s][user ] Um, I need to get to the National Museum.
+[ 33.37s][moshi] ⟨ret@33.30s⟩ ⟦⚡SPAN@33.38s: (tool result) Bus lines 14, 27, and 88 all stop near the National Museum, departing every 15-20 minutes.⟧ Lines 14, 27, and 88 all stop near the museum, departing every 15 to 20 minutes. Would you like me to check the next departure times for you?
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"destination": "National Museum"}}
+[ 39.28s][user ] «backchannel» Exactly.
+[ 44.20s][user ] Yes, please.
+[ 45.17s][moshi] ⟨ret@45.10s⟩ ⟦⚡SPAN@45.18s: (tool result) Next departure: Line 14 at 14:42, Line 27 at 14:48, Line 88 at 14:55.⟧ The next bus is line 14 at 2:42 PM, line 27 at 2:48 PM, and line 88 at 2:55 PM.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"destination": "National Museum", "time": "now"}}
+[ 55.85s][user ] Perfect! Thanks.
+[ 57.41s][moshi] You're very welcome!
+[ 58.67s][user ] Actually, yeah. I’m trying to find a good Korean ⟨ret@61.92s⟩ restaurant.
+[ 62.07s][moshi] ⟦⚡SPAN@62.08s: (tool result) Seoul Garden offers authentic Korean cuisine and is highly rated, located at 12 Maple Street.⟧ Seoul Garden offers authentic Korean cuisine and has high ratings, at 12 Maple Street.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean"}}
+[ 65.35s][user ] «backchannel» Yeah, yeah.
+[ 68.46s][user ] Oh, that sounds lovely. What's the weather like today?
+[ 71.27s][moshi] ⟨ret@71.19s⟩ ⟦⚡SPAN@71.27s: (tool result) It is 24.5°C, humidity 68%, wind 7.2 km/h, with partly cloudy skies.⟧ It’s 24.5 degrees Celsius and partly cloudy, with humidity at 68% and a wind speed of 7.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 74.36s][user ] «backchannel» Really?
+[ 81.52s][user ] Nice. I need to send some money to my family.
+[ 84.27s][moshi] There are many options for money transfers here, depending on where they are. I can help you find a suitable service.
+[ 87.01s][user ] «backchannel» Yeah.
+[ 92.75s][user ] They’re in Egypt.
+[ 93.76s][moshi] ⟨ret@93.60s⟩ ⟦⚡SPAN@93.76s: (tool result) Several services facilitate transfers to Egypt, including Western Union and MoneyGram, with vary⟧ Western Union and MoneyGram both facilitate transfers to Egypt, though fees do vary between them.
+      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"recipient_country": "Egypt"}}
+[100.84s][user ] Hmm, okay. Do you know when the current president of Egypt was ⟨ret@104.46s⟩ born?
+[104.70s][moshi] ⟦⚡SPAN@104.70s: Abdel Fattah el-Sisi, the current president of Egypt, was born on November 19, 1954.⟧ Abdel Fattah el-Sisi was born on November 19, 1954. He's been in office since 2014, if you’re interested in his career.
+[111.38s][user ] «backchannel» Mm-hmm.
+[114.39s][user ] Oh, that's interesting. I remember reading something about a decree…the Hamayouni ⟨ret@118.67s⟩ Decree?
+[119.07s][moshi] ⟦⚡SPAN@119.07s: The Hamayouni Decree was reformed by Isma'il Pasha, who was born in 1830, significantly altering land ownershi⟧ Isma'il Pasha, born in 1830, reformed the Hamayouni Decree and altered land ownership laws.
+[126.33s][user ] Wow, 1830. That's a long time ago!
+[129.32s][moshi] It really is! It’s fascinating to learn about the history of a place, don’t you think?
+[134.41s][user ] Yeah, it is. I think I need to write that down.
+[136.74s][moshi] It’s good to keep track of interesting details as you explore.
+[138.34s][user ] «backchannel» Yeah.
+[140.23s][user ] I am also wondering if there are any good events happening ⟨ret@143.03s⟩ this weekend?
+[143.43s][moshi] ⟦⚡SPAN@143.44s: (tool result) The City Arts Festival will be held this Saturday and Sunday in Central Park, featuring local ar⟧ The City Arts Festival is happening this Saturday and Sunday in Central Park, showcasing local artists.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "this weekend"}}
+[148.89s][user ] «backchannel» Yeah.
+[150.59s][user ] I think that’s all for now. Thank you so much!
+[153.09s][moshi] You are very welcome! I'm glad I could help.

@@ -4,83 +4,99 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Mia",
+#     "name": "Ella",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "female",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-12",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-01-11",
+#       "category": "home",
+#       "text": "User's home address is 896 Maple Drive."
 #     },
 #     {
-#       "date": "2026-02-09",
+#       "date": "2025-12-14",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-12-10",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-10-25",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
-#     },
-#     {
-#       "date": "2025-07-31",
-#       "category": "home",
-#       "text": "User's home address is 816 Birch Road."
+#       "date": "2025-05-27",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-22",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-27",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-12",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-07",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, Orarira! I'm feeling a bit los | S2 What's a good first step, do you t | S3 I'm trying to remember… what's tha | S4 That's it! Thanks, Orarira. You're
+# EXAMINER(FDB-v2) 단계: S1 Do you remember what we were talki | S2 I was wondering… what did the… | S3 …principal do in The Breakfast Clu | S4 I guess so. It sounds stressful. W
 
-     0.00s  user  발화 시작: Hi, Orarira! I'm feeling a bit lost about making new friends
-     4.81s  user  발화 끝
-     4.98s  agent 발화 시작: Oh, hello there! It's perfectly normal to feel that way.
-     8.59s  agent 발화 끝
-     8.71s  user  발화 시작: What's a good first step, do you think?
-    10.99s  agent 발화 시작: A wonderful first step is simply showing genuine interest in
-    11.02s  user  발화 끝
-    13.65s  user  발화 시작: Exactly.
-    14.61s  user  발화 끝
-    18.63s  agent 발화 끝
-    18.94s  user  발화 시작: I'm trying to remember… what's that opening of a snail shell
-    23.09s  <ret> 발화 (turn6 첫 프레임)
-    23.24s  agent 발화 시작: <ret> That opening you’re thinking of is called the aperture
-    23.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: The opening of a snail shell is known as the aperture, and it serves a
-    23.34s  user  발화 끝
-    26.24s  user  발화 시작: Yeah.
-    26.88s  user  발화 끝
-    28.01s  user  발화 시작: That's it! Thanks, Orarira. You're so helpful.
-    28.53s  agent 발화 끝
-    31.79s  agent 발화 시작: [happy] I'm glad I could help! Remembering little details ca
-    31.95s  user  발화 끝
-    38.37s  agent 발화 끝
+     0.00s  user  발화 시작: Do you remember what we were talking about last week?
+     3.05s  user  발화 끝
+     3.21s  agent 발화 시작: I do! [2026-07-03] You mentioned feeling stuck in your curre
+     9.29s  agent 발화 끝
+     9.32s  user  발화 시작: That’s right. I’m still feeling that way, actually.
+    12.57s  agent 발화 시작: That’s understandable; career crossroads can be unsettling. 
+    12.65s  user  발화 끝
+    14.20s  user  발화 시작: Yeah.
+    14.74s  user  발화 끝
+    18.18s  agent 발화 끝
+    18.50s  user  발화 시작: I was wondering… what did the…
+    21.22s  user  발화 끝
+    22.15s  user  발화 시작: …principal do in The Breakfast Club?
+    24.17s  <ret> 발화 (turn7 첫 프레임)
+    24.32s  agent 발화 시작: <ret> The film features Richard Vernon, played by Edward Jam
+    24.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: Edward James Olmos portrayed Richard Vernon, the assistant principal w
+    24.50s  user  발화 끝
+    28.89s  user  발화 시작: …was he a strict disciplinarian, or just… annoying?
+    29.64s  agent 발화 끝
+    33.36s  agent 발화 시작: He definitely leaned towards strict, and had a rather imposi
+    33.52s  user  발화 끝
+    36.85s  user  발화 시작: Right.
+    37.48s  user  발화 끝
+    38.09s  agent 발화 시작: He believed strongly in rules and order, and wasn't afraid t
+    38.14s  agent 발화 끝
+    47.88s  user  발화 시작: I guess so. It sounds stressful. What was the weather like t
+    48.02s  agent 발화 끝
+    52.21s  <ret> 발화 (turn13 첫 프레임)
+    52.27s  agent 발화 시작: <ret> Right now, it’s 23.0°C with 74% humidity and a wind sp
+    52.29s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.34s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    52.51s  user  발화 끝
+    62.61s  agent 발화 끝

@@ -1,51 +1,72 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Lari, a upbeat and supportive supportive advisor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Tia, a kind and steady counselor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Taylor",
+    "name": "Nathan",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-02",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-05-11",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
-    },
-    {
-      "date": "2026-05-10",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2026-03-16",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2026-01-26",
+      "date": "2026-02-22",
       "category": "home",
-      "text": "User's home address is 743 Oak Avenue."
+      "text": "User's home address is 249 Pine Court."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2026-01-18",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in March."
+    },
+    {
+      "date": "2025-10-31",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-08-19",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-08-16",
+      "date": "2026-03-03",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-07-05",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -56,39 +77,18 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Find any file with report in its name within my documents ⟨ret@3.82s⟩ folder.
-[  4.20s][moshi] ⟦⚡SPAN@4.22s: (tool result) /Users/user/documents/monthly report.pdf, /Users/user/documents/sales report_2024.docx⟧ I found two files matching that description—a PDF and a Word document. Both seem to be reports from last year.
-      CALL: {"function": "search_files", "arguments": {"directory": "documents", "query": "report"}}
-[  6.34s][user ] «backchannel» Yeah.
-[ 11.72s][user ] Which one is the most recent?
-[ 13.45s][moshi] ⟨ret@13.38s⟩ ⟦⚡SPAN@13.46s: (tool result) Last modified: 2024-12-15 14:30:00⟧ The monthly report PDF was last updated on December fifteenth, 2024.
-      CALL: {"function": "get_file_info", "arguments": {"filepath": "/Users/user/documents/monthly_report.pdf"}}
-[ 14.90s][user ] «backchannel» Mm-hmm.
-[ 18.24s][moshi] «interrupted» Now let’s look at the sales report—
-[ 19.33s][user ] «interrupts_prev» … actually, can you just open the PDF for me?
-[ 23.07s][moshi] ⟨ret@22.93s⟩ ⟦⚡SPAN@23.09s: (tool result) File contents successfully read.⟧ The PDF is now open; I’ve passed the contents to your display.
-      CALL: {"function": "read_file", "arguments": {"filepath": "/Users/user/documents/monthly_report.pdf"}}
-[ 26.41s][user ] Thanks! That's great. Is there anything about project Phoenix in ⟨ret@29.66s⟩ it?
-[ 30.06s][moshi] ⟦⚡SPAN@30.06s: (tool result) Project Phoenix: Status - On Track, Budget - $120,000, Completion Date - August 15, 2026⟧ Yes, Project Phoenix is mentioned! It’s currently on track, with a budget of one hundred twenty thousand dollars. The expected completion date is August fifteenth, 2026.
-      CALL: {"function": "tavily-extract", "arguments": {"file_content": "/Users/user/documents/monthly_report.pdf", "query": "Project Phoenix"}}
-[ 32.96s][user ] «backchannel» Oh.
-[ 39.48s][user ] That's good to hear. Remind me to check on its progress ⟨ret@42.74s⟩ next week.
-[ 43.13s][moshi] ⟦⚡SPAN@43.14s: (tool result) Alarm set for July 27, 2026, 9:00 AM: Check progress of Project Phoenix.⟧ I've set an alarm for July twenty-seventh, 2026, at nine AM to check on Project Phoenix.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"alarm_time": "2026-07-27 09:00:00", "alarm_message": "Check progress of Project Phoenix"}}
-[ 48.43s][user ] Perfect. What's the weather like in Seoul right ⟨ret@51.25s⟩ now?
-[ 51.65s][moshi] ⟦⚡SPAN@51.65s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently twenty-three degrees Celsius in Seoul, with seventy-four percent humidity. There's a light breeze of five point five kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 60.00s][user ] Sounds pleasant. Do you have my doctor's number ⟨ret@62.80s⟩ saved?
-[ 63.18s][moshi] ⟦⚡SPAN@63.20s: [2024-03-10] Dr. Lee, 02-1234-5678⟧ I do! Let me retrieve that for you.
-[ 66.24s][moshi] Your doctor, Dr. Lee, can be reached at zero-two, one-two-three-four, five-six-seven-eight.
-[ 68.06s][user ] «backchannel» Yeah.
-[ 71.69s][user ] Thanks, that was helpful. I need to schedule a follow-up appointment.
-[ 75.48s][moshi] I can help with that. Which doctor would you like to schedule with?
-[ 79.46s][moshi] And what date are you thinking of?
-[ 80.46s][user ] «backchannel» Yeah, totally.
-[ 81.25s][user ] Dr. Lee, sometime next week. ⟨ret@83.39s⟩
-[ 83.62s][moshi] ⟦⚡SPAN@83.63s: (tool result) Dr. Lee is available July 29, 2026 at 10:00 AM and July 31, 2026 at 2:00 PM⟧ Dr. Lee has appointments available on July twenty-ninth at ten AM and July thirty-first at two PM.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Dr. Lee", "service_type": "follow-up"}}
-[ 90.32s][user ] Let's go with the 29th at ⟨ret@92.58s⟩ 10.
-[ 92.98s][moshi] ⟦⚡SPAN@92.98s: (tool result) Appointment confirmed with Dr. Lee on July 29, 2026 at 10:00 AM. Confirmation ID: ABC123XYZ.⟧ Your appointment with Dr. Lee is confirmed for July twenty-ninth at ten AM. Your confirmation ID is ABC one-two-three XYZ.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Dr. Lee", "appointment_date": "2026-07-29", "appointment_time": "10:00"}}
+[  0.00s][user ] I’m hoping to find a good movie to watch tonight. Something ⟨ret@3.72s⟩ funny, maybe?
+[  4.12s][moshi] ⟦⚡SPAN@4.12s: (tool result) "Paddington 2 (2017) - 99% rating, PG, 1h 43m"⟧ Well, it sounds like you’re in the mood for a laugh, and I found Paddington 2! It has a ninety-nine percent rating—
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {"genres": "comedy"}}
+[  7.82s][user ] «backchannel» Yeah.
+[ 10.44s][moshi] —and is rated PG, running one hour and forty-three minutes.
+[ 11.56s][user ] «backchannel» Okay.
+[ 13.91s][user ] That sounds…perfect, actually. Can you tell me where it’s playing near me?
+[ 18.43s][moshi] ⟨ret@18.36s⟩ ⟦⚡SPAN@18.43s: (tool result) "AMC Boston Common 19: 7:00 PM, 9:30 PM; Regal Fenway RPX & IMAX: 7:15 PM, 9:45 PM"⟧ Paddington 2 is showing at AMC Boston Common at seven and nine-thirty, and at Regal Fenway at seven-fifteen and nine-forty-five.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Paddington 2"}}
+[ 26.09s][user ] Hmm, let’s go with the 7:15 showing at…
+[ 31.15s][user ] …Regal Fenway. Can you get me two tickets?
+[ 33.97s][moshi] ⟨ret@33.81s⟩ ⟦⚡SPAN@33.97s: (tool result) "Confirmation: RT92X-LP7B"⟧ I’ve secured two tickets for Paddington 2 at Regal Fenway for the seven-fifteen showing. Your confirmation number is RT92X-LP7B.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Paddington 2", "theater": "Regal Fenway", "time": "7:15 PM", "number_of_tickets": "2"}}
+[ 42.95s][user ] Wonderful! Thank you so much, Tia.
+[ 45.40s][moshi] You're very welcome. Enjoy the movie, and I hope it helps you relax tonight. A little lightheartedness can do wonders.

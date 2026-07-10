@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "우슬",
+#     "name": "보국",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,77 +12,93 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-04-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-02-03",
+#       "date": "2026-01-11",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
 #     },
 #     {
-#       "date": "2025-10-13",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2025-12-14",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-09-02",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-12-10",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-28",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-22",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-15",
+#       "date": "2026-05-27",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2026-03-12",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-07",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 재온 씨. 요즘 진로 때문에 고민이 많아서요. | S2 네, 영화 보는 거 정말 좋아해요! | S3 …그런데 그 영화에서 교장 선생님 이름이 뭐였죠? | S4 아, 버논이었군요. 기억이 안 났어요. 감사합니다.
 
-     0.00s  user  발화 시작: 안녕하세요, 저는 새로운 친구를…
-     3.23s  user  발화 끝
-     5.27s  user  발화 시작: …사귀는 게 좀 어려워요.
-     6.89s  agent 발화 시작: 안녕하세요! 새로운 친구를 만드는 건 누구에게나 쉽지 않죠. 어떤 점이 가장 힘든가요?
-     7.06s  user  발화 끝
-    10.45s  user  발화 시작: 음.
-    10.90s  user  발화 끝
-    12.33s  user  발화 시작: 음… 사람들이랑 대화를 시작하는 게 잘 안 돼요. 뭘 물어봐야 할지 모르겠어요.
-    12.54s  agent 발화 끝
-    18.22s  <ret> 발화 (turn5 첫 프레임)
-    18.62s  agent 발화 시작: <ret> 혹시 주변 사람들의 관심사를 파악하는 데 도움이 될 만한 팁을 드릴까요? 가벼운 대화는 관계를 시
-    18.67s  user  발화 끝
-    18.72s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.13s]: Small talk is a social interaction in which people exchange superficia
-    34.02s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 재온 씨. 요즘 진로 때문에 고민이 많아서요.
+     3.98s  agent 발화 시작: 안녕하세요. 진로 고민, 당연히 하실 수 있죠. 어떤 점이 가장 걱정되세요?
+     4.12s  user  발화 끝
+     5.36s  user  발화 시작: 네.
+     5.76s  user  발화 끝
+     8.89s  agent 발화 끝
+     9.49s  user  발화 시작: 음… 제가 뭘 잘하는지, 뭘 하고 싶은지 잘 모르겠어요.
+    13.62s  agent 발화 시작: 그런 고민은 흔하게 겪으시는 거 같아요. 혹시 영화를 좋아하시나요?
+    13.85s  user  발화 끝
+    17.25s  user  발화 시작: 네, 영화 보는 거 정말 좋아해요!
+    17.60s  agent 발화 끝
+    19.59s  <ret> 발화 (turn6 첫 프레임)
+    19.73s  agent 발화 시작: <ret> 영화를 좋아하신다면, '브렉퍼스트 클럽'이라는 영화를 아실 거예요. 존 휴즈 감독이 천구백팔십오년
+    19.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: John Hughes directed "The Breakfast Club", released in 1985, starring 
+    19.83s  user  발화 끝
+    23.84s  user  발화 시작: 맞아요.
+    24.57s  user  발화 끝
+    27.57s  agent 발화 시작: 그 영화 속 등장인물들의 이야기를 통해 자신을 돌아보는 것도 좋은 방법일 수 있어요. —
+    27.64s  agent 발화 끝
+    31.84s  user  발화 시작: …그런데 그 영화에서 교장 선생님 이름이 뭐였죠?
+    32.70s  agent 발화 끝
+    34.85s  <ret> 발화 (turn10 첫 프레임)
+    34.92s  agent 발화 시작: <ret> 아, 교장 선생님이요?
+    34.93s  ⚡SPAN 주입 [d'=0.80s / d_lead=1.47s]: Assistant Principal Richard Vernon oversaw Saturday detention in "The 
+    35.03s  user  발화 끝
+    36.34s  agent 발화 시작: '브렉퍼스트 클럽'에서 학생들을 감독한 조교장은 리처드 버논이었어요. 규칙을 엄격하게 적용하면서도 학생들을 
+    36.39s  agent 발화 끝
+    44.48s  user  발화 시작: 네네.
+    45.12s  user  발화 끝
+    46.69s  user  발화 시작: 아, 버논이었군요. 기억이 안 났어요. 감사합니다.
+    46.82s  agent 발화 끝
+    50.44s  agent 발화 시작: 도움이 되었다니 기쁘네요. 자신을 발견하는 여정은 때론 어렵지만, 분명히 가치 있는 일이에요.
+    50.61s  user  발화 끝
+    56.69s  agent 발화 끝

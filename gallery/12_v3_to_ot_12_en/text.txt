@@ -1,10 +1,10 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Meno, a grounded and empathetic life coach who helps people with family and relationships. <system>
+SYSTEM: <system> You are Naeon, a curious and validating supportive advisor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Clara",
+    "name": "Avery",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,53 +12,53 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "female",
-    "age_range": "late 30s",
+    "gender": "non-binary",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-16",
+      "date": "2025-11-15",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-20",
       "category": "pet",
       "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2026-04-29",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2025-09-09",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
     },
     {
-      "date": "2026-03-02",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-07-28",
+      "category": "work",
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2026-02-25",
+      "date": "2025-06-30",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-05-28",
       "category": "cuisine",
       "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-10-28",
-      "category": "home",
-      "text": "User's home address is 560 Elm Street."
-    },
-    {
-      "date": "2025-08-15",
-      "category": "work",
-      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-02",
-      "title": "Planning a birthday dinner",
+      "date": "2025-12-11",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "wants a pool",
+        "close to the office"
       ]
     },
     {
-      "date": "2026-03-16",
+      "date": "2025-11-09",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -66,32 +66,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-08-16",
-      "title": "Researching a used car",
+      "date": "2025-06-28",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, can you tell me which is the third largest state in ⟨ret@3.16s⟩ the USA?
-[  3.34s][moshi] ⟦⚡SPAN@3.40s: California is the most populous state in the United States and the third largest by area.⟧ It’s interesting to think about size, isn’t it? California is actually the third largest state by area.
-[  5.22s][user ] «backchannel» Yeah.
-[  9.24s][user ] Oh, really? I always thought Texas was up there.
-[ 12.23s][moshi] Texas *is* large, absolutely—it’s the second largest, actually. It’s easy to mix them up.
-[ 18.83s][user ] What about area, specifically? Like, in square ⟨ret@22.75s⟩ miles?
-[ 23.15s][moshi] «interrupted» ⟦⚡SPAN@23.15s: California covers an area of 163,696 square miles, according to the United States Census Bureau.⟧ California covers an area of one hundred sixty-three thousand, six hundred ninety-six square miles—
-[ 28.22s][user ] «interrupts_prev» …And is that including all the water area, like lakes and ⟨ret@31.46s⟩ stuff?
-[ 31.75s][moshi] ⟦⚡SPAN@31.78s: The total area of California includes 155,779.2 square miles of land and 7,900.4 square miles of water.⟧ The total area includes one hundred fifty-five thousand, seven hundred seventy-nine point two square miles of land, plus seven thousand, nine hundred point four square miles of water.
-[ 38.72s][user ] «backchannel» Uh-huh.
-[ 41.17s][moshi] It’s a really diverse landscape, which adds to its appeal, I think.
-[ 45.19s][user ] So, what’s the biggest then? The absolute largest ⟨ret@48.69s⟩ state?
-[ 49.09s][moshi] ⟦⚡SPAN@49.09s: Alaska is the largest state in the United States, with a total area of 665,384 square miles.⟧ Alaska is the largest, covering six hundred sixty-five thousand, three hundred eighty-four square miles.
-[ 51.66s][user ] «backchannel» Yeah.
-[ 55.92s][user ] That’s huge! I guess everything is bigger in Alaska.
-[ 59.87s][moshi] It certainly has a reputation for vastness, and it’s well-deserved. It’s a truly unique place.
-[ 65.66s][user ] Do you think living somewhere so big changes how people think?
-[ 68.82s][moshi] I believe our surroundings certainly shape our perspective, don't you? It can affect our sense of scale and possibility.
+[  0.00s][user ] Where does the prime minister of ⟨ret@1.99s⟩ Canada live?
+[  2.21s][moshi] ⟦⚡SPAN@2.23s: The prime minister of Canada officially resides at 24 Sussex Drive in Ottawa.⟧ Well, it’s lovely to plan ahead—the official residence is 24 Sussex Drive in Ottawa. It's a beautiful historic home!
+[  5.36s][user ] «backchannel» Mm-hmm.
+[  9.50s][user ] Oh, is it a big place?
+[ 10.89s][moshi] It certainly is! It’s quite a landmark, really.
+[ 12.49s][user ] «backchannel» Mm-hmm.
+[ 14.71s][user ] Has the prime minister *always* lived ⟨ret@17.11s⟩ there?
+[ 17.35s][moshi] «interrupted» ⟦⚡SPAN@17.35s: 24 Sussex Drive has been the official residence of the prime minister since 1950.⟧ It’s been the official residence since nineteen fifty—though there have been periods when it wasn't actively used—
+[ 22.48s][user ] «interrupts_prev» …but is it open to the public at all?
+[ 24.94s][moshi] ⟨ret@24.54s⟩ ⟦⚡SPAN@24.94s: 24 Sussex Drive is not generally open for public tours.⟧ It isn't usually open for public tours, unfortunately—it’s primarily a working and private residence. I can look up some other Ottawa attractions for you, if you’d like?

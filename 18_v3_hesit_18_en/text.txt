@@ -1,10 +1,10 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Keli, a calm and patient life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Lorana, a calm and patient supportive advisor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Paul",
+    "name": "Casey",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,66 +12,48 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "late 30s",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-12-13",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
-    },
-    {
-      "date": "2025-10-06",
+      "date": "2026-01-26",
       "category": "work",
-      "text": "User works as a graphic designer."
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2025-09-07",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-06-11",
+      "date": "2025-10-16",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-08-24",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-08-22",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-15",
+      "date": "2025-11-12",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-01",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-09-24",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Uh, who won the Australian Open men’s ⟨ret@2.30s⟩ final?
-[  2.52s][moshi] «interrupted» ⟦⚡SPAN@2.54s: Roger Federer won the Australian Open men’s singles title in 2017, defeating Rafael Nadal.⟧ It was a thrilling match, and Roger Federer ultimately claimed the title—
-[  6.47s][user ] «interrupts_prev» …did Nadal win it any other years?
-[  8.82s][moshi] Rafael Nadal has won the Australian Open twice, in 2009 and 2022.
-[ 15.06s][user ] Welll… that’s good to know. What about ⟨ret@17.97s⟩ Djokovic?
-[ 18.21s][moshi] ⟦⚡SPAN@18.21s: Novak Djokovic has won the Australian Open a record ten times, as of January 2024.⟧ Novak Djokovic holds the record with ten Australian Open titles, a truly remarkable achievement.
-[ 24.09s][user ] Hmm, that’s a lot. Is Federer still playing?
-[ 27.23s][moshi] Sadly, Roger Federer has retired from professional tennis; he played his last match in 2022.
+[  0.00s][user ] uh, I was wondering… who has scored the most goals in a Premier League ⟨ret@4.06s⟩ season?
+[  4.24s][moshi] ⟦⚡SPAN@4.30s: Luis Suárez holds the record for most Premier League goals in a single season, scoring thirty-one goals in the⟧ It’s actually Luis Suárez who holds that record. He scored thirty-one goals in the 2013–14 season while with Liverpool—quite a feat, isn't it?
+[ 13.94s][user ] wow, thirty-one? That's… a lot.
+[ 17.49s][moshi] It really is! That kind of dedication and skill takes a lot of work. Sometimes setting ambitious goals helps us focus, you know?
+[ 25.56s][user ] hmm, I guess so. Do you think I should set more goals for myself at work?
+[ 30.60s][moshi] And something we can definitely explore. Perhaps we can talk about what feels achievable for you right now?

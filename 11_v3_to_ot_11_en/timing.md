@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Liam",
+#     "name": "Riley",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,68 +12,82 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "male",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-16",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-02-19",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-11-25",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-12-17",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in October."
 #     },
 #     {
-#       "date": "2025-06-23",
+#       "date": "2025-10-23",
 #       "category": "home",
-#       "text": "User's home address is 657 Maple Drive."
+#       "text": "User's home address is 980 Birch Road."
 #     },
 #     {
-#       "date": "2025-06-22",
+#       "date": "2025-08-18",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-07-27",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-14",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-05-08",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know when the National Inst | S2 Oh, that’s interesting. What was h | S3 …was it connected to the veterans  | S4 So, it was a response to that need
+# EXAMINER(FDB-v2) 단계: S1 Do you know who played Neville’s w | S2 Uh, what's the weather like in Man | S3 Did you pack an umbrella? | S4 That's good to know, thank you.
 
-     0.00s  user  발화 시작: Do you know when the National Institute of Mental Health was
-     2.99s  <ret> 발화 (turn1 첫 프레임)
-     3.38s  agent 발화 시작: <ret> It’s understandable to wonder about origins, isn’t it?
-     3.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: The National Institute of Mental Health was first established on April
-     3.51s  user  발화 끝
-    12.79s  user  발화 시작: Oh, that’s interesting. What was happening in the world then
-    12.88s  agent 발화 끝
-    15.65s  user  발화 끝
-    15.71s  agent 발화 시작: That was a time of significant change—
-    18.05s  user  발화 시작: …was it connected to the veterans returning from the war?
-    18.80s  agent 발화 끝
-    20.76s  <ret> 발화 (turn5 첫 프레임)
-    20.99s  agent 발화 시작: <ret> Following World War Two, there was a growing awareness
-    21.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: Following World War II, there was increased recognition of the need fo
-    21.10s  user  발화 끝
-    31.00s  agent 발화 끝
-    31.63s  user  발화 시작: So, it was a response to that need, then?
-    34.54s  user  발화 끝
-    34.58s  agent 발화 시작: In part, yes. Difficult experiences often highlight areas ne
-    43.02s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who played Neville’s wife in *Auf Wiedersehen, P
+     2.94s  <ret> 발화 (turn1 첫 프레임)
+     3.33s  agent 발화 시작: <ret> Well, it seems Julia Tobin brought Moira, Neville’s wi
+     3.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.54s]: Julia Tobin played Neville’s wife, Moira, in the first two series of t
+     3.38s  user  발화 끝
+     6.51s  user  발화 시작: Uh-huh.
+     7.06s  user  발화 끝
+    12.87s  agent 발화 끝
+    12.90s  user  발화 시작: Oh, right. I remember now.
+    14.26s  agent 발화 시작: Sometimes a familiar face just needs a little nudge to come 
+    14.38s  user  발화 끝
+    17.24s  user  발화 시작: Yeah.
+    17.69s  user  발화 끝
+    21.02s  agent 발화 끝
+    21.16s  user  발화 시작: Uh, what's the weather like in Manchester today?
+    23.17s  <ret> 발화 (turn7 첫 프레임)
+    23.40s  agent 발화 시작: <ret> The weather in Manchester is currently nineteen degree
+    23.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) Manchester: 19.0°C, humidity 68%, wind 8.0 km/h, conditi
+    23.56s  user  발화 끝
+    31.04s  agent 발화 끝
+    31.36s  user  발화 시작: Did you pack an umbrella?
+    32.66s  user  발화 시작: That's good to know, thank you.
+    32.69s  user  발화 끝
+    34.30s  agent 발화 시작: I'm glad I could share that with you. Sometimes, simply know
+    34.32s  user  발화 끝
+    41.48s  agent 발화 끝

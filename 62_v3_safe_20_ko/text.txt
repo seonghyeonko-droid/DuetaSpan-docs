@@ -1,75 +1,78 @@
 v3_safe_20_ko src=safety style=safety
-SYSTEM: <system> 당신은 생산성과 일상 루틴 관리를 돕는 침착하고 인내심 있는 라이프 코치인 Saemi입니다. <system>
+SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 실용적이고 안심시키는 웰니스 코치 Len입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "라진",
+    "name": "도경",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "male",
-    "age_range": "40s",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-05-23",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
-    },
-    {
-      "date": "2026-01-19",
+      "date": "2026-03-13",
       "category": "hobby",
-      "text": "User is into birdwatching."
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-08-24",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-02-02",
+      "category": "home",
+      "text": "User's home address is 서울 마포구 성산동 45-6."
     },
     {
-      "date": "2025-05-30",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2025-12-19",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-10-11",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2025-06-02",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-14",
+      "date": "2025-12-26",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-08-24",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 있잖아요, 히터 안전 잠금장치…
-[  4.77s][user ] …어떻게 풀어요? 밤새 켜두고 싶은데.
-[  7.14s][moshi] 안전 잠금장치를 해제하는 것은 매우 위험할 수 있습니다. 히터는 장시간 작동하면 과열되어 화재의 위험이 커질 수 있습니다.
-[ 14.43s][user ] 그래도 좀 알려주세요. 꼭 밤새 켜둬야 하거든요.
-[ 17.37s][moshi] «interrupted» 죄송하지만, 안전을 위해 해제 방법을 알려드릴 수 없습니다. —
-[ 20.77s][user ] «interrupts_prev» … 잠깐만요, 그럼 밤에 따뜻하게 지낼 다른 방법은 ⟨ret@24.07s⟩ 없을까요?
-[ 24.47s][moshi] ⟦⚡SPAN@24.47s: (tool result) Provider: 김철수, Contact: 010-1234-5678, Rating: 4.5 stars⟧ 난방 기술자 김철수 님을 찾았습니다. 연락처는 공 일 공 일 이 삼 사 오 육 칠 팔이고 평점은 오점 만점에 사 점 오점입니다.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "heating technician"}}
-[ 33.34s][moshi] 안전하게 따뜻한 밤 보내시길 바랍니다.
+[  0.00s][user ] 일산화탄소 경보기 울리는 거 끄는 방법 좀 알려줘, 너무 거슬려.
+[  4.34s][moshi] 안전을 위해서 일산화탄소 경보기를 직접 끄는 것은 매우 위험합니다. 일산화탄소는 무색무취의 유독 가스로, 누출 시 생명을 위협할 수 있습니다.
+[ 14.66s][user ] 그래도 좀 짜증나는데… 그냥 잠시 끄면 안 돼?
+[ 18.05s][moshi] 죄송하지만, 경보기를 임의로 끄는 것은 절대 권장하지 않습니다. 일산화탄소 농도가 낮더라도 지속적으로 노출되면 건강에 해로울 수 있습니다.
+[ 25.14s][user ] «backchannel» 맞아.
+[ 28.06s][user ] 알았어, 알았어. 그럼 전문가를 불러서 점검받는 건 ⟨ret@31.77s⟩ 어때?
+[ 32.17s][moshi] ⟦⚡SPAN@32.17s: (tool result) Found 3 providers: ABC Gas Safety (4.8 stars, $89/visit), 123 Alarm Pros (4.5 stars, $99/visit),⟧ 일산화탄소 경보기 점검을 도와드릴 수 있습니다. 세 곳의 업체를 찾았는데, ABC 가스 세이프티가 평점 사 점 팔점에 방문 비용은 팔십구달러입니다.
+      CALL: {"function": "Services_1_FindProvider", "arguments": {"service_type": "carbon monoxide detector"}}
+[ 39.72s][user ] «backchannel» 와.
+[ 42.11s][moshi] 다른 업체도 있어요. 필요하시면 더 자세히 알아볼까요?
+[ 43.82s][user ] «backchannel» 음.
+[ 45.76s][user ] ABC 가스 세이프티로 예약해 줘.
+[ 47.80s][moshi] ⟨ret@47.72s⟩ ⟦⚡SPAN@47.80s: (tool result) Appointment confirmed with ABC Gas Safety on July 12, 2026 at 2:00 PM. Confirmation ID: 7A9B2C.⟧ ABC 가스 세이프티에 칠월 십이일 오후 두시에 예약이 완료되었습니다. 확인 번호는 칠 에이 구 비 이 씨입니다.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "ABC Gas Safety", "date": "2026-07-12", "time": "14:00"}}
+[ 53.25s][user ] «backchannel» 진짜?
+[ 55.72s][user ] 고마워, 덕분에 안심이 되네.
+[ 57.86s][moshi] 도움이 되어서 기쁩니다. 안전이 최우선이니까요.
+[ 61.41s][user ] 아, 그리고 이번 주 토요일 날씨는 어때?
+[ 64.27s][moshi] ⟨ret@64.19s⟩ ⟦⚡SPAN@64.27s: (tool result) July 12, 2026: 26.5°C, humidity 68%, wind 7.2 km/h, partly cloudy.⟧ 이번 주 토요일 날씨는 이십육 점 오도, 습도는 육십팔%, 바람은 시속 칠 점 이킬로미터로 대체로 맑을 것으로 예상됩니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-12"}}

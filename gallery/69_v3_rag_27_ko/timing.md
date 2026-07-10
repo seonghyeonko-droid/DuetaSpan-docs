@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "정연",
+#     "name": "라온",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,139 +12,148 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-05-19",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-17",
+#       "date": "2026-03-16",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-09-21",
+#       "date": "2026-02-02",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-11-20",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "home",
+#       "text": "User's home address is 서울 용산구 이태원로 200."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-06",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-17",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-27",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 혹시 미국 북부 식민지에 있었던 천육백삼십이년부터 | S2 그분이 메릴랜드 식민지를 소유하게 된 건 언제였죠? | S3 그 식민지에 가톨릭 신자들만 살았나요? | S4 담배 말고 다른 생산물은 없었나요?
+# EXAMINER(FDB-v2) 단계: S1 이집트 대통령이 하마유니 칙령을 바꾼 사람이 언제 태어났는지  | S2 농노제? 지금은 없어졌겠지? | S3 한식, 특히 비빔밥이 먹고 싶어. | S4 아니, 괜찮아. 이 정도면 충분해.
 
-     0.00s  user  발화 시작: 안녕하세요, 혹시 미국 북부 식민지에 있었던 천육백삼십이년부터 천칠백칠십육년까지 존재했던 곳의 다섯 번째 주
-    10.69s  agent 발화 시작: 어떤 분에 대해 궁금하신지 말씀해 주시면 제가 알아봐 드릴게요.
-    10.89s  user  발화 끝
-    13.02s  user  발화 시작: 네.
-    13.51s  user  발화 끝
-    13.71s  user  발화 시작: 그 식민지의 다섯 번째…
-    14.11s  agent 발화 끝
-    16.02s  user  발화 끝
-    17.49s  user  발화 시작: …주지사가 언제 태어났는지 알고 싶어요.
-    20.35s  <ret> 발화 (turn5 첫 프레임)
-    20.44s  user  발화 끝
-    20.51s  agent 발화 시작: <ret> 그분은 천육백이십육년 십일월 이십이일에 영국 런던에서 태어나셨고, 천육백구십육년 일월 십삼일에 메
-    20.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: He was born in London, England, on November 22, 1626, and died in Mary
-    24.34s  user  발화 시작: 네.
-    24.79s  user  발화 끝
-    28.58s  agent 발화 시작: 혹시 다른 식민지나 주지사에 대해서도 궁금하신 점이 있으신가요?
-    28.62s  agent 발화 끝
-    32.28s  agent 발화 끝
-    32.63s  user  발화 시작: 그 주지사의 이름이 뭐였죠?
-    34.55s  <ret> 발화 (turn9 첫 프레임)
-    34.71s  agent 발화 시작: <ret> 그분의 이름은 세실 칼버트였고, 메릴랜드 식민지의 소유주였습니다.
-    34.71s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.21s]: Cecil Calvert, 2nd Baron Baltimore, was an English nobleman, and the p
-    34.88s  user  발화 끝
-    37.23s  user  발화 시작: 네.
-    37.77s  user  발화 끝
-    38.91s  agent 발화 끝
-    41.33s  user  발화 시작: 그분이 메릴랜드 식민지를 소유하게 된 건 언제였죠?
-    44.45s  <ret> 발화 (turn12 첫 프레임)
-    44.68s  agent 발화 시작: <ret> 그는 천육백삼십이년에 아버지 조지 칼버트로부터 식민지 소유권을 상속받았습니다.
-    44.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: Calvert inherited the proprietorship from his father, George Calvert, 
-    44.82s  user  발화 끝
-    48.05s  user  발화 시작: 네.
-    48.49s  user  발화 끝
-    49.86s  agent 발화 끝
-    50.03s  user  발화 시작: 그분의 아버지는 어떤 분이셨나요?
-    51.98s  <ret> 발화 (turn15 첫 프레임)
-    52.21s  agent 발화 시작: <ret> 조지 칼버트는 메릴랜드 식민지의 초대 총독이셨던 영국 정치가이자 식민지 개척자였습니다.
-    52.22s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.07s]: George Calvert, 1st Baron Baltimore, was an English statesman and colo
-    52.33s  user  발화 끝
-    58.28s  agent 발화 끝
-    58.56s  user  발화 시작: 메릴랜드 식민지는 왜 세워졌나요?
-    60.90s  <ret> 발화 (turn17 첫 프레임)
-    60.98s  agent 발화 시작: <ret> 메릴랜드는 천육백삼십이년 세실 칼버트에 의해 영국 가톨릭 신자들을 위한 피난처로 세워졌습니다.
-    60.98s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.88s]: Maryland was founded in 1632 by Cecil Calvert, 2nd Baron Baltimore, as
-    61.14s  user  발화 끝
-    64.95s  user  발화 시작: 네.
-    65.44s  user  발화 끝
-    66.83s  user  발화 시작: 그 식민지에 가톨릭 신자들만 살았나요?
-    66.86s  agent 발화 끝
-    69.40s  agent 발화 시작: 아니요, 가톨릭 신자들을 위한 식민지였지만 다른 종교를 가진 사람들도 살았습니다. —
-    69.55s  user  발화 끝
-    73.41s  user  발화 시작: … 혹시 그분 가족에 대한 정보도 좀 알려주실 수 있을까요?
-    74.16s  agent 발화 끝
-    77.49s  <ret> 발화 (turn22 첫 프레임)
-    77.56s  agent 발화 시작: <ret> 세실 칼버트 경은 천육백이십오년에 앤 아룬델과 결혼하여 열한명의 자녀를 두었습니다.
-    77.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: Cecil Calvert married Anne Arundell in 1625, and they had eleven child
-    77.76s  user  발화 끝
-    83.31s  agent 발화 끝
-    84.85s  user  발화 시작: 그분 자녀들은 뭘 했나요?
-    86.16s  <ret> 발화 (turn24 첫 프레임)
-    86.56s  agent 발화 시작: <ret> 칼버트 경의 자녀들 중 몇 명은 메릴랜드 식민지의 행정과 발전에 중요한 역할을 했습니다.
-    86.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: Several of Calvert's children played significant roles in the administ
-    86.74s  user  발화 끝
-    88.27s  user  발화 시작: 아.
-    88.90s  user  발화 끝
-    92.08s  agent 발화 끝
-    93.82s  user  발화 시작: 그 식민지의 경제는 어땠나요?
-    95.89s  <ret> 발화 (turn27 첫 프레임)
-    95.94s  user  발화 끝
-    95.97s  agent 발화 시작: <ret> 메릴랜드 식민지의 경제는 주로 담배 재배와 무역에 기반을 두고 있었습니다.
-    95.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: The economy of the Province of Maryland was largely based on tobacco c
-    98.90s  user  발화 시작: 네.
-    99.35s  user  발화 끝
-   100.28s  agent 발화 끝
-   100.45s  user  발화 시작: 담배 말고 다른 생산물은 없었나요?
-   102.93s  agent 발화 시작: 담배 외에도 곡물, 가축, 그리고 어업도 중요한 경제 활동이었습니다.
-   103.13s  user  발화 끝
-   105.44s  user  발화 시작: 네.
-   105.94s  user  발화 끝
-   107.56s  agent 발화 끝
-   108.47s  user  발화 시작: 그 식민지는 영국과 어떤 관계였나요?
-   111.13s  <ret> 발화 (turn33 첫 프레임)
-   111.20s  agent 발화 시작: <ret> 메릴랜드 식민지는 영국 식민지였으며 미국 독립 혁명 때까지 영국 통치하에 있었습니다.
-   111.21s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.28s]: The Province of Maryland was an English colony and remained under Brit
-   111.43s  user  발화 끝
-   114.89s  user  발화 시작: 네.
-   115.38s  user  발화 끝
-   116.41s  agent 발화 시작: 혹시 다른 역사적인 인물이나 식민지에 대해 궁금한 점이 있으신가요?
-   116.48s  agent 발화 끝
-   117.86s  user  발화 시작: 음.
-   118.31s  user  발화 끝
-   119.61s  user  발화 시작: 아니요, 오늘은 여기까지 할게요. 감사합니다.
-   120.21s  agent 발화 끝
-   122.86s  agent 발화 시작: 도움이 되었다니 기쁩니다. 언제든지 궁금한 점이 있으시면 다시 찾아주세요.
-   122.98s  user  발화 끝
-   127.53s  agent 발화 끝
+     0.00s  user  발화 시작: 이집트 대통령이 하마유니 칙령을 바꾼 사람이 언제 태어났는지 궁금해.
+     4.88s  <ret> 발화 (turn1 첫 프레임)
+     4.96s  agent 발화 시작: <ret> 이집트의 가말 압델 나세르 후세인 대통령은 천구백십팔년 일월 십오일에 알렉산드리아에서 태어났답니다
+     4.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Gamal Abdel Nasser Hussein was born in Alexandria, Egypt, on January 1
+     5.14s  user  발화 끝
+     8.40s  user  발화 시작: 음.
+     8.81s  user  발화 끝
+    10.82s  user  발화 시작: 음… 그 칙령이 대체 무슨 내용이었던 거야?
+    11.21s  agent 발화 끝
+    14.33s  user  발화 끝
+    14.59s  agent 발화 시작: 하마유니 칙령에 대해 더 자세히 알고 싶으신가요? 이사벨라 여왕이 발령한 칙령이었어요.
+    20.06s  agent 발화 끝
+    20.08s  user  발화 시작: 이사벨라 여왕? 스페인 여왕 말이야?
+    22.81s  <ret> 발화 (turn6 첫 프레임)
+    22.88s  agent 발화 시작: <ret> 네, 맞아요. 스페인의 이사벨라 일세와 페르난도 이세가 천사백구십이년에 알함브라 칙령을 발표했죠.
+    22.89s  ⚡SPAN 주입 [d'=0.72s / d_lead=5.93s]: Isabella I of Castile and Ferdinand II of Aragon issued the Alhambra D
+    23.13s  user  발화 끝
+    25.97s  user  발화 시작: 어머.
+    26.60s  user  발화 끝
+    28.81s  agent 발화 끝
+    29.34s  user  발화 시작: 잠깐만, 이집트 대통령이랑 스페인 여왕이랑 무슨 관계가 있는 거야?
+    34.29s  user  발화 끝
+    34.35s  agent 발화 시작: 하마유니 칙령은 십구세기 오스만 제국에서 이집트의 농노제를 폐지하는 조치였어요. —
+    37.03s  user  발화 시작: 어.
+    37.66s  user  발화 끝
+    39.47s  agent 발화 시작: —나세르 대통령은 이 칙령을 개정하여 농노제를 완전히 없애려고 노력했답니다.
+    39.62s  agent 발화 끝
+    44.19s  agent 발화 끝
+    44.26s  user  발화 시작: 농노제? 지금은 없어졌겠지?
+    46.70s  user  발화 끝
+    46.80s  agent 발화 시작: 네, 물론이죠. 지금은 농노제는 전 세계적으로 폐지되었답니다.
+    48.99s  user  발화 시작: 응.
+    49.39s  user  발화 끝
+    50.81s  agent 발화 끝
+    51.12s  user  발화 시작: 오늘 날씨 어때?
+    52.30s  <ret> 발화 (turn16 첫 프레임)
+    52.53s  agent 발화 시작: <ret> 지금 기온은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+    52.54s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.84s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    52.59s  user  발화 끝
+    54.97s  user  발화 시작: 진짜?
+    55.79s  user  발화 끝
+    58.37s  agent 발화 끝
+    58.87s  user  발화 시작: 그럼, 이번 주 토요일에 갈 만한 맛집 좀 추천해 줄래?
+    62.48s  user  발화 끝
+    62.58s  agent 발화 시작: 이번 주 토요일에 맛있는 식사를 할 수 있는 곳을 찾고 계시는군요. 어디를 선호하시나요?
+    67.95s  agent 발화 끝
+    68.17s  user  발화 시작: 한식, 특히 비빔밥이 먹고 싶어.
+    70.47s  <ret> 발화 (turn21 첫 프레임)
+    70.79s  agent 발화 시작: <ret> 비빔밥은 따뜻한 흰 쌀밥 위에 다양한 채소와 고기, 그리고 계란 프라이를 얹은 한국의 대표적인 요
+    70.79s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.58s]: Bibimbap is a signature Korean dish consisting of warm white rice topp
+    70.89s  user  발화 끝
+    74.41s  user  발화 시작: 맞아.
+    75.37s  user  발화 끝
+    77.23s  user  발화 시작: 어디에 괜찮은 비빔밥집이 있어?
+    77.36s  agent 발화 끝
+    79.45s  <ret> 발화 (turn24 첫 프레임)
+    79.52s  agent 발화 시작: <ret> 한 쿡 한국 식당이 평점 사 점 오점에 메인 스트리트 백이십삼번지에 있고, 밤 열시까지 영업한답니
+    79.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) Han Kook Korean Restaurant, 4.5 stars, 123 Main Street, 
+    79.72s  user  발화 끝
+    85.95s  agent 발화 끝
+    86.74s  user  발화 시작: 거긴 예약 가능한가?
+    88.21s  <ret> 발화 (turn26 첫 프레임)
+    88.61s  agent 발화 시작: <ret> 이천이십육년 칠월 십이일 저녁 일곱시에 두명으로 예약이 완료되었어요. 확인 번호는 팔 칠 육 오 
+    88.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) Reservation confirmed for 2 people at 7:00 PM on July 12
+    88.67s  user  발화 끝
+    96.36s  user  발화 시작: 와, 고마워!
+    96.58s  agent 발화 끝
+    97.83s  user  발화 끝
+    97.86s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁘네요. 혹시 다른 계획도 세워드릴까요?
+   102.53s  agent 발화 끝
+   103.36s  user  발화 시작: 아니, 괜찮아. 이 정도면 충분해.
+   106.11s  agent 발화 시작: 그럼, 즐거운 시간 보내세요.
+   106.31s  user  발화 끝
+   108.10s  agent 발화 끝
+   108.28s  user  발화 시작: 알겠어.
+   109.10s  user  발화 끝
+   109.32s  agent 발화 시작: 새로운 도시에 잘 정착하실 수 있도록 최선을 다해 돕겠습니다.
+   110.78s  user  발화 시작: 응.
+   111.23s  user  발화 끝
+   112.69s  user  발화 시작: [laugh] 덕분에 좀 안심이 되네.
+   112.70s  agent 발화 끝
+   115.25s  agent 발화 시작: [happy] 새로운 곳에서 긍정적인 마음으로 시작하시는 모습이 보기 좋네요.
+   115.51s  user  발화 끝
+   118.77s  agent 발화 끝

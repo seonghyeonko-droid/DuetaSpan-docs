@@ -1,10 +1,10 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Miana, a grounded and empathetic counselor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Daeen, a warm and attentive supportive advisor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Jordan",
+    "name": "Rowan",
     "location": {
       "city": "London",
       "country": "United Kingdom",
@@ -13,50 +13,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "British",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-26",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2026-01-16",
+      "date": "2026-06-01",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-07-29",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2025-11-06",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-05-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2025-07-24",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
+    },
+    {
+      "date": "2025-06-10",
+      "category": "work",
+      "text": "User works as a nurse."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-10",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-01-06",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-08-04",
+      "date": "2025-06-02",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -67,46 +51,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’ve been having trouble sleeping lately. Any advice?
-[  2.92s][moshi] It’s completely normal to experience sleep difficulties from time to time. Focusing on creating a relaxing bedtime routine can often help.
-[ 11.73s][user ] That sounds good…
-[ 14.85s][user ] …but what actually *is* a good routine?
-[ 17.56s][moshi] A good routine is personalized, but generally involves calming activities before bed. Things like a warm bath or reading a book can be very effective.
-[ 26.45s][user ] I already read, but I still toss and turn.
-[ 29.17s][moshi] Sometimes, it’s less about what you *do* and more about what you avoid. Try to limit screen time and caffeine before bed.
-[ 34.86s][user ] «backchannel» Uh-huh.
-[ 36.63s][user ] I do avoid caffeine, but I look at my phone a lot.
-[ 39.35s][moshi] That’s a common habit, and a tough one to break. The blue light emitted from screens can interfere with melatonin production.
-[ 44.11s][user ] «backchannel» Yeah.
-[ 46.70s][user ] Melatonin? What does that ⟨ret@48.45s⟩ do?
-[ 48.85s][moshi] ⟦⚡SPAN@48.85s: Melatonin is a hormone primarily produced by the pineal gland that regulates sleep and wakefulness.⟧ Melatonin is a hormone that your body makes to help regulate when it’s time to sleep and when it’s time to wake—it’s really important for a healthy sleep cycle. It's often called the sleep hormone for a reason.
-[ 59.78s][user ] Okay, so less phone. What about… dreams?
-[ 62.82s][moshi] Dreams are a fascinating part of sleep, and often reflect our subconscious thoughts and feelings.
-[ 66.73s][user ] «backchannel» Okay.
-[ 68.11s][user ] Mine are always weird and stressful.
-[ 70.18s][moshi] It’s common for dreams to feel strange or unsettling. They can be a way for your mind to process emotions.
-[ 76.17s][user ] Do people dream in color, or is that just ⟨ret@78.68s⟩ movies?
-[ 79.08s][moshi] «interrupted» ⟦⚡SPAN@79.08s: Most people dream in color, although a significant minority report dreaming primarily in black and white.⟧ Actually, most people do experience dreams in color, though a surprising number—
-[ 83.11s][user ] «interrupts_prev» …but does that change if you’ve never seen color?
-[ 85.72s][moshi] That’s a really insightful question. It seems people born without color vision still dream in shades, just not the ones we typically experience.
-[ 93.37s][user ] Wow, that’s… something. Back to routines, what about waking up?
-[ 98.08s][moshi] A consistent wake-up time, even on weekends, is incredibly beneficial for regulating your body’s natural clock.
-[104.50s][user ] I hate mornings.
-[105.73s][moshi] Many people do! It can take time to adjust to a new routine, and it’s okay to start small.
-[107.85s][user ] «backchannel» Yeah.
-[112.76s][user ] What’s the history of even *thinking* ⟨ret@115.02s⟩ about sleep?
-[115.41s][moshi] ⟦⚡SPAN@115.42s: Ancient Egyptians believed in the god Morpheus, representing dreams, and developed specific rituals for induci⟧ Thinking about sleep as something we need to actively manage goes way back—ancient Egyptians even had a god, Morpheus, associated with dreams and sleep rituals.
-[122.94s][user ] «backchannel» Mm-hmm.
-[125.17s][moshi] They really valued restful sleep and saw it as connected to health and well-being.
-[129.55s][moshi] It’s amazing how much wisdom from the past still resonates today.
-[133.95s][user ] So, gods and rituals… anything about ⟨ret@137.08s⟩ priests?
-[137.31s][moshi] ⟦⚡SPAN@137.32s: In ancient Israel, the High Priest served in the Temple, with duties including maintaining the sacred fire ove⟧ In ancient Israel, the High Priest had a very important role, including keeping the sacred fire burning throughout the night— It was a significant responsibility, requiring wakefulness and dedication.
-[148.54s][user ] Was there a *first* ⟨ret@150.01s⟩ high priest?
-[150.41s][moshi] ⟦⚡SPAN@150.41s: Aaron, brother of Moses, is traditionally regarded as the first High Priest in the Hebrew Bible.⟧ Traditionally, Aaron, who was Moses's brother, is considered the very first High Priest in the Hebrew Bible. He’s a very important figure in religious history.
-[160.16s][user ] Moses’s brother? What did he actually ⟨ret@162.58s⟩ *do*?
-[162.90s][moshi] ⟦⚡SPAN@162.90s: Aaron assisted Moses in speaking to Pharaoh, oversaw the construction of the Tabernacle, and consecrated pries⟧ Aaron assisted Moses in communicating with Pharaoh, and he oversaw building the Tabernacle—he was also responsible for consecrating other priests for the Israelite people.
-[172.36s][user ] That sounds… busy. I just want to sleep.
-[175.37s][moshi] It’s understandable to feel overwhelmed. Perhaps we can focus on creating a simple bedtime routine for you tonight?
-[180.11s][user ] «backchannel» Mm-hmm.
-[182.02s][user ] Okay, that sounds good. Maybe just… no phone.
-[185.09s][moshi] That's a wonderful starting point. Small changes can make a big difference over time.
+[  0.00s][user ] Hi, I'm feeling a bit overwhelmed with studying for my exams.
+[  3.66s][moshi] Hi there! It's completely normal to feel that way when exams are approaching. Remember, taking small steps can make a big difference.
+[  6.86s][user ] «backchannel» Mm-hmm.
+[ 12.23s][user ] That’s easy to say… but I just can’t seem to focus. What’s the earliest people used energy ⟨ret@17.72s⟩ from oil?
+[ 18.12s][moshi] ⟦⚡SPAN@18.12s: Oil was first used as an energy source in the fourth century BCE.⟧ People first began using oil as an energy source way back in the fourth century BCE. That’s quite a long time ago, isn’t it?
+[ 25.87s][user ] Fourth century BCE? Wow, that *is* old. What were they even using it for then?
+[ 31.09s][moshi] Well, it wasn’t quite like powering cars, of course! They used it more for lighting and heating, and even in warfare.
+[ 33.40s][user ] «backchannel» Uh-huh.
+[ 36.83s][user ] [laugh] Warfare…
+[ 39.80s][user ] …huh? That's… intense. Maybe I need a break from studying. What's the weather ⟨ret@44.66s⟩ like today?
+[ 45.06s][moshi] ⟦⚡SPAN@45.06s: (tool result) Current conditions: 26.0°C, humidity 65%, wind 7.2 km/h.⟧ It's currently 26.0°C with 65% humidity and a 7.2 km/h wind. A little fresh air could definitely help you refocus.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}

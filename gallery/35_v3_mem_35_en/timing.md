@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Amelia",
+#     "name": "Rosa",
 #     "location": {
 #       "city": "Berlin",
 #       "country": "Germany",
@@ -13,75 +13,76 @@
 #     },
 #     "nationality": "German",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "50s",
 #     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-13",
+#       "date": "2026-06-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-03-03",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-02-04",
 #       "category": "work",
 #       "text": "User works as a chef."
 #     },
 #     {
-#       "date": "2026-06-03",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-01-19",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     },
 #     {
-#       "date": "2025-11-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-09-25",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-09-08",
+#       "date": "2025-09-13",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-14",
+#       "date": "2025-08-17",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-17",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-07-19",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-01",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Um, hi Klami. I’m planning a trip  | S2 Yes, that’s right. I’m thinking ab | S3 Welll… I really like Thai food, ac | S4 Oh, that sounds good! Maybe I shou
 
-     0.00s  agent 발화 시작: Hi Amelia, I'm Huen. It's lovely to connect with you. I unde
-     2.44s  user  발화 시작: Mm-hmm.
-     2.94s  user  발화 끝
-     6.90s  agent 발화 끝
-     7.25s  user  발화 시작: Um, yes, I am. I was hoping you could suggest a restaurant f
-    12.37s  <ret> 발화 (turn3 첫 프레임)
-    12.77s  agent 발화 시작: <ret> Finding the perfect spot is important. I see you menti
-    12.85s  user  발화 끝
-    12.87s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.84s]: [2026-06-17] Past chat — Planning a birthday dinner: party of six; loo
-    20.14s  agent 발화 끝
-    20.17s  user  발화 시작: Yes, that's right! Something with a nice atmosphere would be
-    23.99s  <ret> 발화 (turn5 첫 프레임)
-    24.31s  agent 발화 시작: <ret> There are two options that stand out: Korean Garden an
-    24.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Korean Garden - 4.5 stars, outdoor seating, party size u
-    24.48s  user  발화 끝
-    31.45s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Rosa, I'm Klami. It's lovely to meet you, and I'm here to
+     4.99s  agent 발화 끝
+     5.79s  user  발화 시작: Um, hi Klami. I’m planning a trip to Vietnam in December.
+     9.64s  <ret> 발화 (turn2 첫 프레임)
+    10.04s  agent 발화 시작: <ret> That’s wonderful, Rosa! You mentioned a Vietnam trip i
+    10.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [2026-01-19] User is planning a trip to Vietnam in December.
+    10.14s  user  발화 끝
+    14.53s  agent 발화 끝
+    14.55s  user  발화 시작: Yes, that’s right. I’m thinking about what to do there.
+    17.81s  agent 발화 시작: Vietnam offers so many amazing experiences. What kind of act
+    17.83s  user  발화 끝
+    23.56s  agent 발화 끝
+    24.05s  user  발화 시작: Welll… I really like Thai food, actually. Is there anything 
+    29.31s  <ret> 발화 (turn6 첫 프레임)
+    29.37s  user  발화 끝
+    29.47s  agent 발화 시작: <ret> Knowing you enjoy Thai cuisine, Vietnamese food will l
+    29.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.52s]: [2026-06-15] User's favorite cuisine is Thai.
+    33.57s  user  발화 시작: Yeah.
+    34.02s  user  발화 끝
+    37.99s  agent 발화 끝
+    40.15s  user  발화 시작: Oh, that sounds good! Maybe I should look for cooking classe
+    43.99s  user  발화 끝
+    44.28s  agent 발화 시작: That's a fantastic idea, Rosa! Learning to cook local dishes
+    51.22s  agent 발화 끝

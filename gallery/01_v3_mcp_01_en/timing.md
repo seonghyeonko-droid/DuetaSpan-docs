@@ -4,135 +4,159 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Alice",
+#     "name": "Anna",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "Canadian",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
-#     },
-#     {
-#       "date": "2025-11-13",
+#       "date": "2026-05-07",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-10-29",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-02-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
 #     },
 #     {
-#       "date": "2025-06-19",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-01-01",
+#       "category": "home",
+#       "text": "User's home address is 764 Elm Street."
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-19",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-10",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need you to set the user agent t | S2 I’m thinking maybe Busan. Are ther | S3 The capsule hotel sounds…minimalis | S4 Okay, good to know. Can you find m
+# EXAMINER(FDB-v2) 단계: S1 I need to fill out a form online,  | S2 I’m trying to find a nice park in  | S3 …can you tell me what time it is r | S4 Wonderful. Do you think the kids w
 
-     0.00s  user  발화 시작: I need you to set the user agent to CustomCrawler version tw
-     4.30s  <ret> 발화 (turn1 첫 프레임)
-     4.38s  agent 발화 시작: <ret> Alright, I’ve set the user agent to CustomCrawler vers
-     4.38s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.00s]: (tool result) {"user-agent": "CustomCrawler version 2.5"}
-     4.44s  user  발화 끝
-     6.72s  user  발화 시작: Yeah, yeah.
-     8.71s  user  발화 끝
-     9.38s  agent 발화 끝
-    10.26s  user  발화 시작: Hmm, that’s good. What’s the weather like in Seoul right now
-    13.57s  <ret> 발화 (turn4 첫 프레임)
-    13.97s  agent 발화 시작: <ret> The weather in Seoul is twenty-three point zero degree
-    13.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    14.20s  user  발화 끝
-    17.66s  user  발화 시작: Right.
-    18.24s  user  발화 끝
-    22.26s  agent 발화 끝
-    23.39s  user  발화 시작: That sounds…pleasant. I’m thinking of a little getaway.
-    26.91s  agent 발화 시작: A getaway sounds lovely! Do you have any destinations in min
-    27.15s  user  발화 끝
-    34.14s  agent 발화 끝
-    34.90s  user  발화 시작: I’m thinking maybe Busan. Are there any good hotels there?
-    38.25s  <ret> 발화 (turn9 첫 프레임)
-    38.33s  agent 발화 시작: <ret> In Busan, Hotel LCT The Prime is one hundred fifty tho
-    38.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.99s]: (tool result) Hotel LCT The Prime — ₩150,000/night; Paradise Hotel Bus
-    38.52s  user  발화 끝
-    49.24s  user  발화 시작: Wow, Park Hyatt is…expensive. What about something a little 
-    49.32s  agent 발화 끝
-    55.26s  user  발화 끝
-    55.34s  agent 발화 시작: You’re right to consider your budget. I can refine the searc
-    58.62s  user  발화 시작: Mm-hmm.
-    59.26s  user  발화 끝
-    63.41s  agent 발화 끝
-    63.44s  user  발화 시작: Uh, under a hundred thousand won.
-    65.06s  <ret> 발화 (turn14 첫 프레임)
-    65.45s  agent 발화 시작: <ret> Hotel Mato is eighty-five thousand won per night, and 
-    65.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Hotel Mato — ₩85,000/night; Busan Station Capsule Hotel 
-    65.65s  user  발화 끝
-    74.35s  agent 발화 끝
-    76.45s  user  발화 시작: The capsule hotel sounds…minimalist.
-    79.26s  <ret> 발화 (turn16 첫 프레임)
-    79.48s  agent 발화 시작: <ret> I understand wanting a bit more comfort. Hotel Mato of
-    79.63s  user  발화 끝
-    80.54s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.44s]: Hotel Mato offers free Wi-Fi and breakfast.
-    90.25s  user  발화 시작: That sounds better. Can you check if there’s anything to *do
-    90.66s  agent 발화 끝
-    94.53s  <ret> 발화 (turn18 첫 프레임)
-    94.60s  agent 발화 시작: <ret> Busan has Haeundae Beach, Gamcheon Culture Village, Ja
-    94.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) Haeundae Beach, Gamcheon Culture Village, Jagalchi Fish 
-    94.69s  user  발화 끝
-   103.27s  agent 발화 끝
-   103.55s  user  발화 시작: Gamcheon Culture Village…that sounds interesting. What’s it 
-   107.81s  <ret> 발화 (turn20 첫 프레임)
-   108.21s  agent 발화 시작: <ret> Gamcheon Culture Village is well known for its vibrant
-   108.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: Gamcheon Culture Village is known for its colorful houses and art inst
-   108.22s  user  발화 끝
-   110.55s  user  발화 시작: Yeah.
-   111.18s  user  발화 끝
-   115.86s  agent 발화 끝
-   117.94s  user  발화 시작: Okay, good to know. Can you find me bus tickets from Seoul t
-   122.77s  <ret> 발화 (turn23 첫 프레임)
-   122.89s  user  발화 끝
-   122.93s  agent 발화 시작: <ret> There’s a bus at two PM for twenty-five thousand won, 
-   122.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: (tool result) 14:00 — ₩25,000; 16:30 — ₩28,000; 19:00 — ₩26,000
-   131.50s  agent 발화 끝
-   131.94s  user  발화 시작: Let’s go with the two PM bus.
-   134.04s  <ret> 발화 (turn25 첫 프레임)
-   134.28s  agent 발화 시작: <ret> Excellent. Your bus ticket from Seoul to Busan for nex
-   134.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.91s]: (tool result) Confirmation ID: BX749Z
-   134.43s  user  발화 끝
-   142.77s  user  발화 시작: Perfect. Thank you, Thelin.
-   143.19s  agent 발화 끝
-   144.55s  agent 발화 시작: You're very welcome! I'm glad I could help with planning you
-   144.66s  user  발화 끝
-   151.04s  agent 발화 끝
+     0.00s  user  발화 시작: I need to fill out a form online, can you help with that?
+     2.82s  user  발화 끝
+     2.90s  agent 발화 시작: I can assist with form filling. What information do you need
+     5.05s  user  발화 시작: Yeah.
+     5.73s  user  발화 끝
+     7.02s  agent 발화 끝
+     7.85s  user  발화 시작: It asks for my phone number, five five five, one two three, 
+    12.84s  <ret> 발화 (turn4 첫 프레임)
+    13.08s  agent 발화 시작: <ret> I'm sorry, I wasn’t able to find anything to help with
+    13.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (no information found)
+    13.32s  user  발화 끝
+    15.67s  user  발화 시작: Yeah.
+    16.47s  user  발화 끝
+    17.34s  agent 발화 끝
+    18.57s  user  발화 시작: Oh. Well, can you just type that number into the phone field
+    23.14s  <ret> 발화 (turn7 첫 프레임)
+    23.37s  agent 발화 시작: <ret> I'm unable to directly interact with websites to fill 
+    23.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (no information found)
+    23.48s  user  발화 끝
+    25.68s  user  발화 시작: Right.
+    26.12s  user  발화 끝
+    27.20s  agent 발화 끝
+    27.78s  user  발화 시작: That's… frustrating. Okay, let’s try something else. What’s 
+    34.86s  <ret> 발화 (turn10 첫 프레임)
+    35.26s  agent 발화 시작: <ret> It’s currently 23.0 degrees Celsius in Seoul, with 74%
+    35.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    35.43s  user  발화 끝
+    38.24s  user  발화 시작: Yeah, totally.
+    39.66s  user  발화 끝
+    42.67s  agent 발화 끝
+    42.75s  user  발화 시작: That sounds pleasant! Do you think it’s a good day to go for
+    47.28s  user  발화 끝
+    47.32s  agent 발화 시작: It certainly sounds like it! Fresh air and sunshine are wond
+    52.03s  user  발화 시작: I’m trying to find a nice park in Seoul for that walk. Can y
+    52.19s  agent 발화 끝
+    56.27s  <ret> 발화 (turn15 첫 프레임)
+    56.67s  agent 발화 시작: <ret> Olympic Park has sprawling lawns and scenic trails — a
+    56.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) Olympic Park boasts sprawling lawns and scenic trails. V
+    56.84s  user  발화 끝
+    61.80s  user  발화 시작: Olympic Park, huh? Is it easy to get to by subway?
+    61.85s  agent 발화 끝
+    65.26s  <ret> 발화 (turn17 첫 프레임)
+    65.36s  user  발화 끝
+    65.50s  agent 발화 시작: <ret> Olympic Park Station is on Lines 5 and 9, with multipl
+    65.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) Olympic Park Station is on Seoul Subway Line 5 and Line 
+    70.60s  user  발화 시작: That's good to know. I’m also trying to plan a little outing
+    70.68s  agent 발화 끝
+    74.98s  agent 발화 시작: That sounds like a lovely idea! Planning ahead really helps 
+    75.18s  user  발화 끝
+    80.49s  agent 발화 끝
+    80.76s  user  발화 시작: …Actually, before we get into next week…
+    83.17s  user  발화 끝
+    85.02s  user  발화 시작: …can you tell me what time it is right now?
+    87.65s  <ret> 발화 (turn22 첫 프레임)
+    87.73s  agent 발화 시작: <ret> It’s currently 3:17 PM in Seoul, on Friday, July 10th.
+    87.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+    87.89s  user  발화 끝
+    89.83s  user  발화 시작: Yeah, totally.
+    91.07s  user  발화 끝
+    92.21s  agent 발화 끝
+    93.12s  user  발화 시작: Okay, good. Back to next week… I was thinking about the aqua
+    99.62s  <ret> 발화 (turn25 첫 프레임)
+    99.75s  user  발화 끝
+    99.78s  agent 발화 시작: <ret> Adult tickets to the COEX Aquarium cost 28,000 won, wh
+    99.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) COEX Aquarium adult tickets cost ₩28,000, youth tickets 
+   104.90s  user  발화 시작: Wow.
+   105.71s  user  발화 끝
+   106.45s  user  발화 시작: And children’s tickets are 20,000 won? That’s helpful.
+   106.63s  agent 발화 끝
+   110.38s  agent 발화 시작: It's good to have all the details sorted out beforehand.
+   110.51s  user  발화 끝
+   113.14s  user  발화 시작: Can we book tickets for four people for next Tuesday?
+   113.57s  agent 발화 끝
+   115.83s  <ret> 발화 (turn30 첫 프레임)
+   115.99s  agent 발화 시작: <ret> Your tickets for the COEX Aquarium are confirmed for n
+   115.99s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.72s]: (tool result) Booking confirmed: COEX Aquarium, July 15, 2026, 4 ticke
+   116.14s  user  발화 끝
+   118.10s  user  발화 시작: Yeah, yeah.
+   119.71s  user  발화 끝
+   120.70s  user  발화 시작: Great! The confirmation ID is AQ7892, right?
+   120.71s  agent 발화 끝
+   125.38s  user  발화 끝
+   125.69s  agent 발화 시작: Yes, that is correct — your confirmation ID is AQ7892.
+   129.25s  user  발화 시작: Mhm.
+   129.88s  user  발화 끝
+   130.34s  user  발화 시작: Wonderful. Do you think the kids will enjoy it?
+   130.50s  agent 발화 끝
+   132.87s  agent 발화 시작: I’m sure they will! Aquariums are always a hit, sparking cur
+   132.88s  user  발화 끝
+   138.61s  agent 발화 끝
+   138.64s  user  발화 시작: I hope so. I’m also running low on groceries. Can you help m
+   143.61s  <ret> 발화 (turn38 첫 프레임)
+   143.77s  agent 발화 시작: <ret> Lotte Mart Jamsil is a large supermarket located near 
+   143.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Lotte Mart Jamsil is a large supermarket near Olympic Pa
+   143.87s  user  발화 끝
+   150.08s  user  발화 시작: Lotte Mart… Is it open late?
+   150.11s  agent 발화 끝
+   152.20s  <ret> 발화 (turn40 첫 프레임)
+   152.60s  agent 발화 시작: <ret> Lotte Mart Jamsil is open from 10:00 AM to 11:00 PM ev
+   152.60s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.31s]: (tool result) Lotte Mart Jamsil is open from 10:00 AM to 11:00 PM dail
+   152.76s  user  발화 끝
+   155.25s  user  발화 시작: Wow.
+   156.07s  user  발화 끝
+   156.91s  agent 발화 끝
+   158.13s  user  발화 시작: Perfect. Thanks for all your help, Sellara.
+   160.72s  user  발화 끝
+   161.14s  agent 발화 시작: You’re very welcome! Remember, a little planning goes a long
+   166.93s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "Paul",
+#     "name": "Casey",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,79 +12,56 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-10-06",
+#       "date": "2026-01-26",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a physical therapist."
 #     },
 #     {
-#       "date": "2025-09-07",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-06-11",
+#       "date": "2025-10-16",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-08-24",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-22",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-15",
+#       "date": "2025-11-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-01",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-24",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, who won the Australian Open me | S2 …did Nadal win it any other years? | S3 Welll… that’s good to know. What a | S4 Hmm, that’s a lot. Is Federer stil
 
-     0.00s  user  발화 시작: Uh, who won the Australian Open men’s final?
-     2.30s  <ret> 발화 (turn1 첫 프레임)
-     2.52s  agent 발화 시작: <ret> It was a thrilling match, and Roger Federer ultimately
-     2.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: Roger Federer won the Australian Open men’s singles title in 2017, def
-     2.73s  user  발화 끝
-     6.47s  user  발화 시작: …did Nadal win it any other years?
-     7.19s  agent 발화 끝
-     8.77s  user  발화 끝
-     8.82s  agent 발화 시작: Rafael Nadal has won the Australian Open twice, in 2009 and 
-    15.03s  agent 발화 끝
-    15.06s  user  발화 시작: Welll… that’s good to know. What about Djokovic?
-    17.97s  <ret> 발화 (turn5 첫 프레임)
-    18.21s  agent 발화 시작: <ret> Novak Djokovic holds the record with ten Australian Op
-    18.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: Novak Djokovic has won the Australian Open a record ten times, as of J
-    18.43s  user  발화 끝
-    24.05s  agent 발화 끝
-    24.09s  user  발화 시작: Hmm, that’s a lot. Is Federer still playing?
-    27.05s  user  발화 끝
-    27.23s  agent 발화 시작: Sadly, Roger Federer has retired from professional tennis; h
-    33.25s  agent 발화 끝
+     0.00s  user  발화 시작: uh, I was wondering… who has scored the most goals in a Prem
+     4.06s  <ret> 발화 (turn1 첫 프레임)
+     4.24s  agent 발화 시작: <ret> It’s actually Luis Suárez who holds that record. He sc
+     4.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: Luis Suárez holds the record for most Premier League goals in a single
+     4.40s  user  발화 끝
+    13.79s  agent 발화 끝
+    13.94s  user  발화 시작: wow, thirty-one? That's… a lot.
+    17.49s  agent 발화 시작: It really is! That kind of dedication and skill takes a lot 
+    17.55s  user  발화 끝
+    25.56s  user  발화 시작: hmm, I guess so. Do you think I should set more goals for my
+    25.79s  agent 발화 끝
+    30.52s  user  발화 끝
+    30.60s  agent 발화 시작: And something we can definitely explore. Perhaps we can talk
+    36.94s  agent 발화 끝

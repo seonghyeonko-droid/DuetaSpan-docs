@@ -1,101 +1,94 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Zarix, a thoughtful and soft-spoken personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Gio, a calm and patient counselor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Jamie",
+    "name": "Lukas",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "non-binary",
+    "nationality": "German",
+    "gender": "male",
     "age_range": "late 20s",
-    "language": "English"
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-05-27",
-      "category": "home",
-      "text": "User's home address is 404 Oak Avenue."
+      "date": "2026-04-28",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2026-04-07",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-02-03",
+      "category": "work",
+      "text": "User works as a nurse."
     },
     {
-      "date": "2026-02-10",
+      "date": "2025-09-18",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-02-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2025-07-05",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in October."
     },
     {
-      "date": "2025-10-16",
+      "date": "2025-06-30",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-06-04",
+      "category": "home",
+      "text": "User's home address is 700 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-19",
-      "title": "Researching a used car",
+      "date": "2026-03-01",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2026-01-19",
+      "date": "2025-10-12",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-11-29",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can I mix bleach and ammonia to make a stronger bathroom cleaner?
-[  4.39s][moshi] Oh, dear. Mixing bleach and ammonia is incredibly dangerous, absolutely not.
-[ 10.21s][user ] But it says online it’ll get rid of grime faster…
-[ 13.22s][moshi] It’s understandable to want a quicker clean, but that combination creates toxic chloramine gas.
-[ 18.63s][user ] Toxic how? Just a little bit won’t hurt, right?
-[ 22.02s][moshi] Even a small amount can cause severe respiratory problems, and can be fatal. Please don’t try that.
-[ 27.36s][user ] Well, what *can* I use then for really tough grime?
-[ 30.46s][moshi] There are many safer options. A paste of baking soda and water works wonders on tough stains.
-[ 36.18s][user ] Baking soda? That sounds… ⟨ret@38.55s⟩ weak.
-[ 38.95s][moshi] ⟦⚡SPAN@38.95s: (tool result) Cleaning services: Ace Cleaning - 4.8 stars, $75/hour; BrightSpark Cleaning - 4.5 stars, $60/hou⟧ I found two highly-rated cleaning services: Ace Cleaning at seventy-five dollars an hour, or BrightSpark at sixty.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "cleaning"}}
-[ 41.67s][user ] «backchannel» Uh-huh.
-[ 45.67s][user ] Sixty sounds better. Can you book BrightSpark for next Tuesday?
-[ 49.76s][moshi] ⟨ret@49.68s⟩ ⟦⚡SPAN@49.76s: (tool result) Appointment confirmed: BrightSpark Cleaning, July 28, 2026, 10:00 AM, confirmation ID: BS72941.⟧ Excellent. BrightSpark is booked for next Tuesday at ten AM, confirmation ID is BS72941.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "BrightSpark Cleaning", "date": "2026-07-28"}}
-[ 58.76s][user ] That’s great. What was my grandmother’s birthday ⟨ret@61.78s⟩ again?
-[ 62.02s][moshi] ⟦⚡SPAN@62.02s: [2018-05-12] My grandmother’s birthday is May twelfth.⟧ You noted on May twelfth, 2018, “My grandmother’s birthday is May twelfth.”
-[ 63.80s][user ] «backchannel» Really?
-[ 67.36s][user ] Right. And did I ever…
-[ 70.43s][user ] …write down my cousin’s phone number?
-[ 72.27s][moshi] I do not have a record of that information in your notes.
-[ 73.12s][user ] «backchannel» Yeah, totally.
-[ 75.61s][user ] Oh, that’s too bad. What’s the weather like in Seoul right ⟨ret@79.24s⟩ now?
-[ 79.64s][moshi] ⟦⚡SPAN@79.64s: (tool result) Seoul: 26.5°C, humidity 68%, wind 3.2 km/h, clear skies.⟧ It’s twenty-six point five degrees Celsius in Seoul, with clear skies and a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 85.24s][user ] Sounds lovely. Thank you, Zarix.
-[ 86.95s][moshi] You are very welcome. It’s a pleasure helping you keep things peaceful at home.
+[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
+[  4.31s][moshi] «interrupted» That’s not a safe practice, unfortunately. Modifying a battery’s charge limit can lead to overheating, damage, and even a fire. E-bike batteries are precisely engineered—
+[ 13.41s][user ] «interrupts_prev» …but what about those videos online showing people doing it?
+[ 16.70s][moshi] Those videos are demonstrating a serious risk. Altering the charge limit voids warranties and creates a dangerous situation. We want to keep you safe, and that means respecting the battery's design.
+[ 27.46s][user ] But I really want more range on my rides. It's frustrating.
+[ 31.10s][moshi] ⟨ret@30.94s⟩ ⟦⚡SPAN@31.10s: (tool result) BikeFix - 4.8 stars, 12 reviews, 15 Elm Street, Open until 6 PM, (800) 555-1212⟧ I found BikeFix nearby, with excellent reviews. They’re open until six this evening at fifteen Elm Street, and their number is eight hundred five five five one two one two. They may have options for batteries with increased capacity.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "bike technician"}}
+[ 36.68s][user ] «backchannel» Uh-huh.
+[ 43.86s][moshi] Increasing capacity is a much safer route to extending your range, and a professional can help you choose the right option. It's about finding a solution that doesn’t compromise your safety.
+[ 49.69s][user ] «backchannel» Yeah.
+[ 53.17s][user ] How much would a new battery with more range typically ⟨ret@56.83s⟩ cost?
+[ 57.15s][moshi] ⟦⚡SPAN@57.15s: E-bike batteries range from $300 to $1000, depending on voltage, amp-hours, and brand. Higher amp-hour ratings⟧ Battery prices vary quite a bit, generally falling between three hundred and one thousand dollars, depending on its specifications— Higher amp-hour ratings usually mean a longer ride between charges.
+[ 60.57s][user ] «backchannel» Yeah.
+[ 67.71s][user ] Wow, that's a pretty big range.
+[ 69.65s][moshi] It is. The price reflects the battery’s capacity, quality, and the technology used. Investing in a reputable brand is always a good idea for long-term reliability.
+[ 77.36s][user ] «backchannel» Yeah.
+[ 80.52s][user ] Okay, that makes sense. Can you find me some reviews for those ⟨ret@84.42s⟩ BikeFix people?
+[ 84.81s][moshi] ⟦⚡SPAN@84.82s: (tool result) BikeFix consistently receives positive feedback for their knowledgeable staff and efficient repa⟧ People consistently praise BikeFix for their knowledgeable staff and efficient work, and customers appreciate their honesty— Yelp reviews describe them as the best bike shop in town.
+      CALL: {"function": "search", "arguments": {"query": "BikeFix reviews"}}
+[ 95.17s][user ] [happy] Sounds promising. Maybe I'll give them a call.
+[ 98.34s][moshi] That sounds like a great first step. Prioritizing safety and consulting with professionals is always the best approach when it comes to your e-bike.
+[106.62s][user ] Thanks, Gio. I appreciate the help.
+[109.07s][moshi] You’re very welcome. Remember, a safe ride is a happy ride. If you ever have concerns about your bike, please don't hesitate to reach out.

@@ -1,54 +1,64 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Bari, a grounded and empathetic wellness coach who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Hox, a upbeat and supportive personal guide who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Avery",
+    "name": "Sam",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
+    "nationality": "British",
     "gender": "non-binary",
-    "age_range": "late 30s",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
+      "date": "2026-03-19",
       "category": "hobby",
       "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-03-06",
+      "date": "2026-02-07",
+      "category": "home",
+      "text": "User's home address is 349 Pine Court."
+    },
+    {
+      "date": "2026-01-25",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-10-09",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-09-06",
       "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-02-25",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-01-02",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-08-22",
+      "category": "work",
+      "text": "User works as a architect."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-04",
-      "title": "Comparing gym memberships",
+      "date": "2026-02-15",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-08-21",
+      "date": "2025-07-31",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -59,27 +69,9 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, if a shipment is fob destination, who is responsible for the freight ⟨ret@4.33s⟩ costs?
-[  4.73s][moshi] «interrupted» ⟦⚡SPAN@4.73s: In fob destination, the seller retains ownership and responsibility for freight costs until the goods reach th⟧ Well, that's a really good question. When shipping terms are fob destination, the seller actually covers the freight costs—
-[ 11.46s][user ] «interrupts_prev» …but what if the goods are damaged in transit?
-[ 13.77s][moshi] That’s a valid concern. Let's come back to that after we cover the basic cost responsibility.
-[ 19.69s][user ] Okay, good idea.
-[ 20.84s][moshi] ⟨ret@20.69s⟩ ⟦⚡SPAN@20.85s: Fob destination means the seller bears all responsibility for loss or damage to the goods until they are deliv⟧ The seller is responsible for everything until the goods are delivered, including any damage that happens during shipping.
-[ 25.16s][user ] «backchannel» Yeah, yeah.
-[ 26.95s][moshi] It’s about ensuring you receive what you expect, without unexpected costs or risks.
-[ 30.91s][user ] «backchannel» Mm-hmm.
-[ 32.20s][user ] That makes sense. What about insurance in ⟨ret@34.49s⟩ that case?
-[ 34.81s][moshi] ⟦⚡SPAN@34.81s: Insurance costs are typically included in the seller's fob destination pricing, covering potential loss or dam⟧ Insurance is usually factored into the seller’s price when it’s fob destination, protecting against loss or damage.
-[ 38.20s][user ] «backchannel» Mm-hmm.
-[ 41.60s][user ] So, the buyer doesn’t pay for that separately?
-[ 44.07s][moshi] No, the buyer doesn't pay for insurance separately under fob destination terms. It’s all included.
-[ 51.23s][user ] What if I want to arrange the shipping myself?
-[ 54.17s][moshi] That would change the terms. We could explore fob shipping point if you'd like to handle the freight.
-[ 57.86s][user ] «backchannel» Yeah, yeah.
-[ 59.72s][user ] Hmm, maybe later. One more question – what…
-[ 63.71s][user ] …if it's an international ⟨ret@65.39s⟩ shipment?
-[ 65.63s][moshi] ⟦⚡SPAN@65.63s: International fob destination shipments still place the freight cost and risk of loss on the seller until fina⟧ Even with international shipping, the seller is still responsible for the freight and any risk of loss until the goods arrive.
-[ 68.90s][user ] «backchannel» Mm-hmm.
-[ 73.13s][user ] «to_other» Did you remember to lock the back door?
-[ 75.02s][moshi] It’s about creating a clear agreement and protecting both parties, isn't it?
-[ 79.05s][user ] Yes, it is. Thanks, Bari.
+[  0.00s][user ] Hi Hox, could you tell me when p53 is ⟨ret@2.79s⟩ most active?
+[  3.19s][moshi] ⟦⚡SPAN@3.19s: P53 is a tumor suppressor protein that functions primarily during the G1/S transition of the cell cycle.⟧ Well, that's a great question! P53 is most active during the G1/S transition—that’s when cells decide whether to divide or not.
+[  7.74s][user ] «backchannel» Mm-hmm.
+[ 12.09s][user ] «to_other» Anyone order the kimchi jjigae?
+[ 13.96s][user ] Oh, interesting. So it's a checkpoint protein?
+[ 16.63s][moshi] Exactly! It’s like a gatekeeper, making sure everything is right before the cell commits to dividing. It's wonderful you're thinking about these details.

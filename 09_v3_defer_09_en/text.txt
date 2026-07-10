@@ -1,73 +1,92 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Arellar, a grounded and empathetic supportive advisor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Elo, a grounded and empathetic life coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "Amelia",
+    "name": "Lena",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
+    "nationality": "American",
     "gender": "female",
-    "age_range": "early 30s",
-    "language": "French"
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-21",
+      "date": "2026-04-22",
       "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User is gluten-free."
     },
     {
-      "date": "2026-05-24",
-      "category": "home",
-      "text": "User's home address is 740 Oak Avenue."
-    },
-    {
-      "date": "2026-05-23",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
-    },
-    {
-      "date": "2026-05-14",
+      "date": "2026-03-02",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-03-10",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2025-11-17",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2026-01-28",
+      "date": "2025-10-18",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-09-21",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-07-20",
+      "category": "work",
+      "text": "User works as a graduate student."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-29",
-      "title": "Setting up a home network",
+      "date": "2026-05-18",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-30",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Tell me the biking distance and time between the London Eye and Buckingham Palace.
-[  4.33s][moshi] ⟨ret@4.09s⟩ ⟦⚡SPAN@4.33s: (tool result) Distance: 2.9 km, Duration: 11 mins⟧ The biking distance is two point nine kilometers, taking about eleven minutes.
-      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "London Eye", "destination": "Buckingham Palace", "mode": "bicycling"}}
-[  7.72s][user ] «backchannel» Yeah.
-[  9.79s][user ] That’s good to know. Um, what about finding a quiet coffee shop nearby?
-[ 14.28s][moshi] Give me a moment while I check for quiet coffee shops in that area.
-[ 16.79s][user ] «backchannel» Right.
-[ 18.65s][user ] Thanks, Arellar.
-  ⟦⚡지연 SPAN 도착@18.71s: The Attendant is a coffee shop with 4.5 stars, located 0.7 miles from Buckingham Palace.⟧
-[ 19.74s][moshi] «deferred_result» ⟨ret@19.74s⟩ I've found a few options for you. I discovered The Attendant, a highly-rated coffee shop, just point seven miles away. It seems like a lovely, peaceful spot.
+[  0.00s][user ] What’s the weather like in Seoul right now?
+[  2.27s][moshi] ⟨ret@2.03s⟩ ⟦⚡SPAN@2.27s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently 23.0 degrees Celsius in Seoul, with seventy-four percent humidity and a gentle breeze of 5.5 kilometers per hour. It's a lovely day for getting things done.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 14.46s][user ] That sounds nice. I’m really struggling to focus on my studies though.
+[ 18.30s][moshi] It’s completely normal to feel that way sometimes. Studying can be challenging, and it takes real effort to stay motivated.
+[ 21.51s][user ] «backchannel» Uh-huh.
+[ 26.22s][moshi] «interrupted» I find that breaking down large tasks into smaller, more manageable steps—
+[ 30.98s][user ] «interrupts_prev» …Do you have any tips for time ⟨ret@32.77s⟩ management?
+[ 33.17s][moshi] ⟦⚡SPAN@33.17s: Prioritization and scheduling are vital components of effective time management, allowing individuals to alloc⟧ Prioritization and scheduling are really vital for managing your time well, helping you focus and minimize putting things off. I can help you create a study schedule if you'd like.
+[ 36.67s][user ] «backchannel» Yeah.
+[ 44.70s][user ] That would be amazing, actually. Can you find me some study cafes ⟨ret@48.23s⟩ nearby?
+[ 48.47s][moshi] ⟦⚡SPAN@48.47s: (tool result) Cafe Flow - 2.1km, Study Hub - 1.8km, Book & Bean - 3.5km⟧ There’s Cafe Flow, 2.1 kilometers away, Study Hub at 1.8 kilometers, and Book & Bean, which is 3.5 kilometers from here. Would you like directions to any of those?
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "cafe", "keywords": "study"}}

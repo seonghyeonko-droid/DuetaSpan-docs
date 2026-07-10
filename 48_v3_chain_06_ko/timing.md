@@ -4,163 +4,139 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "라진",
+#     "name": "세준",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "non-binary",
 #     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-05",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2026-06-05",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2025-11-02",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-06-29",
+#       "date": "2025-11-18",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-09",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-10-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-25",
+#       "date": "2026-04-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-10",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시티 라이츠 서점 전화번호 좀 알려줘. | S2 십오분이면 괜찮네. 그런데 지금 날씨는 어때? | S3 … 아니, 잠깐만. 혹시 그 근처에 서점 말고 다른 볼거리도  | S4 클램 차우더, 알았어. 그럼 이제 서점부터 카페, 롬바르드 스
+# EXAMINER(FDB-v2) 단계: S1 타지마할의 좌표가 어떻게 돼요? | S2 너무 비싼 곳 말고, 적당한 가격대의 호텔로 부탁해. | S3 그럼 그 호텔을 예약해 줘. 내년 오월 십일부터 삼박으로. | S4 아그라 날씨는 내년 오월에 어때?
 
-     0.00s  user  발화 시작: 시티 라이츠 서점 전화번호 좀 알려줘.
-     2.43s  <ret> 발화 (turn1 첫 프레임)
-     2.67s  agent 발화 시작: <ret> 시티 라이츠 서점은 콜롬버스 애비뉴 이백육십일번지에 있고, 전화번호는 사 일 오 삼 구 사 일 구
-     2.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) City Lights Bookstore is located at 261 Columbus Ave, Sa
-     2.72s  user  발화 끝
-     8.29s  user  발화 시작: 우와.
-     8.92s  user  발화 끝
-    12.82s  agent 발화 끝
-    14.58s  user  발화 시작: 응, 고마워. 그 서점 근처에 괜찮은 카페 있어?
-    18.17s  <ret> 발화 (turn4 첫 프레임)
-    18.40s  agent 발화 시작: <ret> 시티 라이츠 서점 근처에는 카페 트리스테, 워싱턴 스퀘어 바 앤 그릴, 그리고 카페 트리스테가 있
-    18.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) There are several cafes near City Lights Bookstore, incl
-    18.42s  user  발화 끝
-    20.89s  user  발화 시작: 어.
-    21.38s  user  발화 끝
-    25.63s  agent 발화 끝
-    25.68s  user  발화 시작: 카페 트리스테가 제일 유명한가 보네.
-    28.07s  user  발화 끝
-    28.11s  agent 발화 시작: 네, 카페 트리스테는 그 지역에서 꽤 유명한 곳입니다. 오래된 역사도 가지고 있고요.
-    33.85s  agent 발화 끝
-    34.08s  user  발화 시작: 그 카페 트리스테 영업시간이 어떻게 돼?
-    36.24s  <ret> 발화 (turn9 첫 프레임)
-    36.48s  user  발화 끝
-    36.64s  agent 발화 시작: <ret> 카페 트리스테는 일주일 내내 아침 여섯시부터 밤 열시까지 영업합니다.
-    36.64s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.62s]: (tool result) Caffe Trieste is open from 6:00 AM to 10:00 PM, seven da
-    41.16s  user  발화 시작: 아, 늦게까지 하는구나. 그럼 거기까지 가는 가장 빠른 길은 어떻게 돼?
-    41.26s  agent 발화 끝
-    45.80s  <ret> 발화 (turn11 첫 프레임)
-    45.93s  user  발화 끝
-    46.03s  agent 발화 시작: <ret> 현재 위치에서 카페 트리스테까지 가장 빠른 길은 콜롬버스 애비뉴와 그랜트 애비뉴를 거치는 거예요.
-    46.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) The fastest route to Caffe Trieste from your current loc
-    55.21s  agent 발화 끝
-    56.43s  user  발화 시작: 십오분이면 괜찮네. 그런데 지금 날씨는 어때?
-    60.27s  <ret> 발화 (turn13 첫 프레임)
-    60.43s  agent 발화 시작: <ret> 현재 샌프란시스코 날씨는 십팔 점 삼도이고, 습도는 육십오%, 풍속은 시속 팔 점 이킬로미터입니다
-    60.43s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.91s]: (tool result) The current weather in San Francisco is 18.3°C, with hum
-    60.45s  user  발화 끝
-    67.31s  user  발화 시작: 겉옷 안 입고 가도 되겠네.
-    67.34s  agent 발화 끝
-    69.34s  agent 발화 시작: 네, 오늘 날씨면 겉옷 없이 가셔도 괜찮을 것 같아요. 편안하게 다녀오세요.
-    69.38s  user  발화 끝
-    74.02s  agent 발화 끝
-    75.28s  user  발화 시작: 혹시 그 근처에 주차할 곳도 있을까?
-    77.45s  <ret> 발화 (turn17 첫 프레임)
-    77.84s  agent 발화 시작: <ret> 카페 트리스테 근처에는 유니온 스퀘어 주차장과 서터-스톡턴 주차장 같은 주차장이 여러 곳 있습니다
-    77.85s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.43s]: (tool result) There are several parking garages near Caffe Trieste, in
-    77.87s  user  발화 끝
-    84.27s  agent 발화 끝
-    84.34s  user  발화 시작: 주차장이 많이 있네. 그럼 그 주차장들 가격은 어느 정도 해?
-    88.33s  user  발화 끝
-    88.36s  agent 발화 시작: 주차장 가격은 시간당 다르지만, 대략 팔달러에서 십이달러 정도 예상하시면 됩니다.
-    91.44s  user  발화 시작: 그래.
-    92.03s  user  발화 끝
-    94.10s  user  발화 시작: 으음… 팔달러에서 십이달러면 좀 비싼가?
-    94.20s  agent 발화 끝
-    97.94s  user  발화 끝
-    97.99s  agent 발화 시작: 네, 샌프란시스코 물가를 생각하면 일반적인 가격입니다. —
-   100.94s  user  발화 시작: … 아니, 잠깐만. 혹시 그 근처에 서점 말고 다른 볼거리도 있어?
-   101.73s  agent 발화 끝
-   106.26s  user  발화 끝
-   106.48s  agent 발화 시작: 그 근처에는 롬바르드 스트리트와 피셔맨스 워프 같은 관광 명소가 있습니다.
-   111.52s  agent 발화 끝
-   111.60s  user  발화 시작: 롬바르드 스트리트? 거긴 어떤 곳인데?
-   114.59s  <ret> 발화 (turn26 첫 프레임)
-   114.91s  agent 발화 시작: <ret> 롬바르드 스트리트는 "세계에서 가장 구불구불한 길"로 알려져 있으며, 여덟개의 헤어핀 커브가 특징
-   114.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Lombard Street is known as "the most crooked street in t
-   114.97s  user  발화 끝
-   120.19s  user  발화 시작: 그래.
-   120.83s  user  발화 끝
-   121.72s  agent 발화 끝
-   121.82s  user  발화 시작: 와, 구불구불한 길이라니 신기하네.
-   124.78s  user  발화 끝
-   124.88s  agent 발화 시작: 네, 사진 찍기에도 좋은 곳이에요. 많은 관광객들이 방문하는 곳이기도 하고요.
-   129.78s  agent 발화 끝
-   129.84s  user  발화 시작: 그럼 롬바르드 스트리트에서 피셔맨스 워프까지 얼마나 걸릴까?
-   134.23s  <ret> 발화 (turn31 첫 프레임)
-   134.47s  agent 발화 시작: <ret> 롬바르드 스트리트에서 피셔맨스 워프까지는 약 사킬로미터 정도이고, 차로 십오분에서 이십분 정도 걸
-   134.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) The distance between Lombard Street and Fisherman's Whar
-   134.56s  user  발화 끝
-   137.64s  user  발화 시작: 진짜?
-   138.32s  user  발화 끝
-   142.21s  agent 발화 끝
-   142.26s  user  발화 시작: 차로 가면 되겠네. 혹시 피셔맨스 워프에서 꼭 먹어봐야 할 음식 있어?
-   147.59s  user  발화 끝
-   147.64s  agent 발화 시작: 피셔맨스 워프에서는 클램 차우더를 꼭 드셔보세요. 신선한 해산물로 만든 맛있는 수프입니다.
-   152.85s  user  발화 시작: 그치.
-   153.48s  user  발화 끝
-   154.55s  agent 발화 끝
-   155.25s  user  발화 시작: 클램 차우더, 알았어. 그럼 이제 서점부터 카페, 롬바르드 스트리트, 피셔맨스 워프까지 가는 일정을 정리해 
-   164.04s  agent 발화 시작: 네, 가능합니다. 서점 방문 후 카페에서 잠시 휴식을 취하고, 롬바르드 스트리트를 구경한 뒤 피셔맨스 워프에
-   164.05s  user  발화 끝
-   173.84s  user  발화 시작: 좋아, 그거대로 해 줘. 혹시 오늘 저녁에 좋은 영화 볼만한 거 있어?
-   173.87s  agent 발화 끝
-   178.56s  <ret> 발화 (turn39 첫 프레임)
-   178.84s  user  발화 끝
-   178.88s  agent 발화 시작: <ret> 현재 샌프란시스코에서 상영 중인 영화는 "인사이드 아웃 이", "배드 보이즈: 라이드 오어 다이"
-   178.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) Currently playing in San Francisco are "Inside Out 2", "
-   186.11s  agent 발화 끝
-   186.53s  user  발화 시작: 인사이드 아웃 이는 어떤 영화야?
-   188.93s  user  발화 끝
-   189.12s  <ret> 발화 (turn41 첫 프레임)
-   189.28s  agent 발화 시작: <ret> "인사이드 아웃 이"는 사춘기를 겪는 라일리의 이야기를 다루며, 불안과 같은 새로운 감정이 기쁨,
-   189.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.33s]: (tool result) Inside Out 2 follows Riley as she navigates adolescence,
-   199.62s  agent 발화 끝
-   199.96s  user  발화 시작: 오, 흥미로운 내용이네. 그럼 영화 예매는 어떻게 해야 돼?
-   203.98s  user  발화 끝
-   204.07s  agent 발화 시작: 영화 예매는 온라인 예매 사이트나 영화관 앱을 통해 하실 수 있습니다.
-   208.23s  agent 발화 끝
-   209.18s  user  발화 시작: 알았어. 고마워.
-   210.84s  user  발화 끝
-   210.90s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요.
-   213.67s  agent 발화 끝
+     0.00s  user  발화 시작: 타지마할의 좌표가 어떻게 돼요?
+     1.69s  <ret> 발화 (turn1 첫 프레임)
+     1.92s  agent 발화 시작: <ret> 타지마할은 북위 이십칠 점 일 칠도, 동경 칠십팔 점 영 사도에 위치하고 있습니다.
+     1.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) The Taj Mahal is located at 27.1751° N, 78.0421° E.
+     1.98s  user  발화 끝
+     8.41s  agent 발화 끝
+     8.44s  agent 발화 시작: 아름다운 곳이죠. 혹시 방문 계획이 있으신가요?
+    12.37s  agent 발화 끝
+    14.01s  user  발화 시작: 음, 내년 오월쯤에 가볼까 생각 중이야.
+    17.23s  agent 발화 시작: 내년 오월은 좋은 시기일 것 같아요. 날씨도 쾌적하고 관광객도 많지 않아서요.
+    17.25s  user  발화 끝
+    22.38s  user  발화 시작: 그럼 그 근처 호텔도 좀 알아봐 줄 수 있어?
+    22.78s  agent 발화 끝
+    24.73s  <ret> 발화 (turn6 첫 프레임)
+    24.89s  agent 발화 시작: <ret> 타지마할 근처에 호텔 다섯 곳이 있습니다. ITC 무갈, 오베로이 아마르빌라스, 코트야드 매리어트
+    24.89s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.13s]: (tool result) 5 hotels found near Taj Mahal: ITC Mughal, a Luxury Coll
+    24.92s  user  발화 끝
+    36.02s  agent 발화 끝
+    36.03s  agent 발화 시작: 어떤 스타일의 호텔을 선호하시나요?
+    38.48s  agent 발화 끝
+    38.49s  user  발화 시작: 너무 비싼 곳 말고, 적당한 가격대의 호텔로 부탁해.
+    42.42s  <ret> 발화 (turn9 첫 프레임)
+    42.57s  user  발화 끝
+    42.65s  agent 발화 시작: <ret> 코트야드 매리어트 아그라가 육천 루피, 크리스탈 사로바르 프리미어 아그라가 오천 오백 루피, 호텔
+    42.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Courtyard by Marriott Agra (₹6,000/night), Crystal Sarov
+    51.04s  agent 발화 끝
+    51.06s  agent 발화 시작: 이 중에서 마음에 드는 곳이 있으신가요?
+    53.18s  agent 발화 끝
+    53.97s  user  발화 시작: 코트야드 매리어트 아그라가 괜찮아 보이는데, 그 호텔에 대한 정보를 좀 더 자세히 알려줄 수 있어?
+    60.62s  <ret> 발화 (turn12 첫 프레임)
+    60.83s  user  발화 끝
+    60.86s  agent 발화 시작: <ret> 코트야드 매리어트 아그라는 별점 사 점 오점이고, 무료 와이파이와 레스토랑, 피트니스 센터를 갖추
+    60.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Courtyard by Marriott Agra has a rating of 4.5 stars, of
+    67.97s  user  발화 시작: …그 호텔에서 타지마할까지 도보로 갈 수 있어?
+    68.60s  agent 발화 끝
+    70.92s  user  발화 끝
+    70.94s  agent 발화 시작: 네, 도보로 약 이 점 오킬로미터 거리입니다.
+    73.48s  agent 발화 끝
+    73.63s  user  발화 시작: 그럼 그 호텔을 예약해 줘. 내년 오월 십일부터 삼박으로.
+    77.38s  <ret> 발화 (turn16 첫 프레임)
+    77.47s  user  발화 끝
+    77.53s  agent 발화 시작: <ret> 코트야드 매리어트 아그라 예약이 완료되었습니다. 이천이십칠년 오월 십일 체크인, 삼박, 확인번호는
+    77.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.59s]: (tool result) Booking confirmed for Courtyard by Marriott Agra, check-
+    87.04s  agent 발화 시작: 즐거운 여행 되세요.
+    87.12s  agent 발화 끝
+    88.33s  agent 발화 끝
+    88.36s  user  발화 시작: 고마워. 혹시 아그라에서 가볼 만한 다른 곳도 있어?
+    91.62s  <ret> 발화 (turn19 첫 프레임)
+    91.73s  user  발화 끝
+    91.78s  agent 발화 시작: <ret> 아그라 포트, 잇마드-우드-다울라의 무덤, 메흐타브 바그, 파테푸르 시크리가 아그라에서 인기 있는
+    91.78s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.06s]: (tool result) Agra Fort, Itmad-ud-Daulah's Tomb (Baby Taj), Mehtab Bag
+    99.84s  agent 발화 끝
+    99.86s  agent 발화 시작: 역사적인 유적지가 많으니, 관심 있는 곳을 방문해 보시는 것도 좋을 것 같습니다.
+   105.09s  agent 발화 끝
+   105.12s  user  발화 시작: 앗, 맞아. 아그라 포트랑 잇마드-우드-다울라의 무덤은 꼭 가보고 싶어.
+   110.16s  user  발화 끝
+   110.23s  agent 발화 시작: 좋은 선택입니다. 두 곳 모두 아름다운 건축물로 유명합니다.
+   112.87s  user  발화 시작: 응.
+   113.51s  user  발화 끝
+   115.37s  user  발화 시작: 아그라 날씨는 내년 오월에 어때?
+   115.37s  agent 발화 끝
+   117.89s  <ret> 발화 (turn25 첫 프레임)
+   118.13s  agent 발화 시작: <ret> 이천이십칠년 오월 십일 아그라의 날씨는 삼십오도, 습도 사십%이며, 가벼운 바람이 불 것으로 예상
+   118.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) The weather in Agra on May 10, 2027, is expected to be 3
+   118.13s  user  발화 끝
+   127.31s  agent 발화 끝
+   127.44s  agent 발화 시작: 가벼운 옷차림을 준비하시는 것이 좋겠습니다.
+   130.41s  agent 발화 끝
+   130.41s  user  발화 시작: 알았어. 정말 고마워.
+   132.35s  user  발화 끝
+   132.48s  agent 발화 시작: 도움이 되었다니 기쁩니다.
+   134.14s  agent 발화 끝

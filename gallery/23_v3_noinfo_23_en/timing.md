@@ -4,117 +4,173 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Robin",
+#     "name": "Louis",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-25",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-06-13",
+#       "category": "home",
+#       "text": "User's home address is 600 Birch Road."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2026-03-01",
+#       "date": "2026-04-20",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-03-17",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-10-31",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-03-11",
+#       "category": "work",
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-08-08",
+#       "date": "2025-11-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-09-17",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
+#       "text": "User is planning a trip to Lisbon in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-29",
+#       "date": "2026-02-11",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you happen to know Sarah Miller | S2 Sounds nice. I'm thinking of takin | S3 Um, maybe… is there anything to *d | S4 That sounds perfect! I’d like to b
+# EXAMINER(FDB-v2) 단계: S1 Could you find me the phone number | S2 I need to book a massage, then. Do | S3 Thanks. What time is it right now? | S4 Oh, right. Never mind, I'll do it 
 
-     0.00s  user  발화 시작: Do you happen to know Sarah Miller’s phone number?
-     1.58s  <ret> 발화 (turn1 첫 프레임)
-     1.97s  agent 발화 시작: <ret> I’ve checked everywhere, but I couldn’t find a phone n
-     1.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (no information found)
-     2.21s  user  발화 끝
-     7.66s  agent 발화 끝
-     8.53s  user  발화 시작: Oh, that’s a shame. Well, what about the weather in Seoul la
-    12.39s  <ret> 발화 (turn3 첫 프레임)
-    12.78s  agent 발화 시작: <ret> I’m sorry, I don’t have historical weather data going 
-    12.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.43s]: (no information found)
-    12.98s  user  발화 끝
-    14.77s  user  발화 시작: Yeah.
-    15.26s  user  발화 끝
-    19.17s  user  발화 시작: Actually, yes, please. What’s the weather like right now?
-    19.22s  agent 발화 끝
-    21.82s  <ret> 발화 (turn6 첫 프레임)
-    22.08s  user  발화 끝
-    22.22s  agent 발화 시작: <ret> It’s 23.0 degrees Celsius with 74% humidity and a ligh
-    22.22s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.42s]: (tool result) It is 23.0°C, humidity 74%, wind 5.5 km/h.
-    31.52s  user  발화 시작: Sounds nice. I'm thinking of taking a trip…
-    31.64s  agent 발화 끝
-    34.25s  user  발화 끝
-    34.28s  agent 발화 시작: Oh, that’s wonderful! I love helping people plan trips. Wher
-    39.30s  user  발화 시작: I was wondering about flights to Bali.
-    39.42s  agent 발화 끝
-    41.55s  user  발화 끝
-    41.56s  <ret> 발화 (turn10 첫 프레임)
-    41.64s  agent 발화 시작: <ret> There’s a one-way flight from Jakarta to Denpasar on J
-    41.64s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.55s]: (tool result) Jakarta (CGK) — Denpasar (DPS) — July 28, 2026 — $685
-    49.20s  agent 발화 끝
-    49.79s  user  발화 시작: Um, maybe… is there anything to *do* in Bali?
-    53.31s  <ret> 발화 (turn12 첫 프레임)
-    53.63s  agent 발화 시작: <ret> Bali is famous for Uluwatu Temple, a beautiful temple 
-    53.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Uluwatu Temple — Bali’s most iconic temples perched on a
-    53.64s  user  발화 끝
-    56.08s  user  발화 시작: Okay.
-    56.72s  user  발화 끝
-    59.46s  agent 발화 끝
-    59.97s  user  발화 시작: That does sound amazing! Could you find me some hotels near 
-    64.10s  <ret> 발화 (turn15 첫 프레임)
-    64.18s  agent 발화 시작: <ret> Alila Villas Uluwatu is a highly-rated hotel nearby, a
-    64.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) Alila Villas Uluwatu — Average 4.8 stars — $450/night
-    64.28s  user  발화 끝
-    68.41s  user  발화 시작: Oh.
-    69.36s  user  발화 끝
-    72.20s  agent 발화 끝
-    72.76s  user  발화 시작: That sounds perfect! I’d like to book a room there for three
-    77.35s  <ret> 발화 (turn18 첫 프레임)
-    77.75s  agent 발화 시작: <ret> Excellent! I’ve reserved a room for you at Alila Villa
-    77.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: (tool result) Confirmation: ALV-789-BLI
-    77.76s  user  발화 끝
-    87.81s  user  발화 시작: Wonderful, thank you so much!
-    87.91s  agent 발화 끝
-    89.50s  agent 발화 시작: You’re very welcome! It sounds like you’re in for a really s
-    89.70s  user  발화 끝
-    95.75s  agent 발화 끝
+     0.00s  user  발화 시작: Could you find me the phone number for Dr. Eleanor Vance?
+     2.41s  <ret> 발화 (turn1 첫 프레임)
+     2.81s  agent 발화 시작: <ret> I’ve checked, but a phone number for Dr. Eleanor Vance
+     2.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: (no information found)
+     3.05s  user  발화 끝
+     5.82s  user  발화 시작: Uh-huh.
+     6.42s  user  발화 끝
+     7.58s  agent 발화 끝
+     7.74s  user  발화 시작: Oh, that’s a shame. She used to be my therapist.
+    10.75s  agent 발화 시작: It’s understandable to want to reconnect, even after time ha
+    10.79s  user  발화 끝
+    17.17s  user  발화 시작: I wonder what the weather was like on July fourth, nineteen 
+    17.28s  agent 발화 끝
+    21.08s  <ret> 발화 (turn6 첫 프레임)
+    21.48s  agent 발화 시작: <ret> I’m sorry, historical weather data that far back isn’t
+    21.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (no information found)
+    21.52s  user  발화 끝
+    24.83s  user  발화 시작: Yeah.
+    25.46s  user  발화 끝
+    26.33s  agent 발화 끝
+    26.62s  user  발화 시작: Hmm, well, what about today’s weather in Seoul?
+    29.65s  <ret> 발화 (turn9 첫 프레임)
+    29.73s  agent 발화 시작: <ret> Today in Seoul, it’s 26.5 degrees Celsius, with 68% hu
+    29.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.71s]: (tool result) It is Friday, July 10, 2026, with a temperature of 26.5°
+    29.81s  user  발화 끝
+    37.52s  user  발화 시작: Right.
+    38.11s  user  발화 끝
+    40.25s  user  발화 시작: That sounds nice. I've been feeling so stressed lately.
+    40.44s  agent 발화 끝
+    43.49s  user  발화 끝
+    43.59s  agent 발화 시작: Stress is a common feeling, and acknowledging it is the firs
+    49.11s  agent 발화 끝
+    49.57s  user  발화 시작: I need to book a massage, then. Do you know any good places?
+    52.38s  <ret> 발화 (turn14 첫 프레임)
+    52.69s  agent 발화 시작: <ret> Seoul Garden Massage has great reviews, offering deep 
+    52.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.68s]: (tool result) Seoul Garden Massage offers deep tissue and hot stone ma
+    52.81s  user  발화 끝
+    59.37s  agent 발화 끝
+    59.66s  user  발화 시작: That sounds perfect. Can you reserve a spot for me?
+    62.50s  <ret> 발화 (turn16 첫 프레임)
+    62.58s  agent 발화 시작: <ret> I’ve booked you a massage at Seoul Garden Massage for 
+    62.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.14s]: (tool result) Booking confirmed for Seoul Garden Massage tomorrow at 3
+    62.62s  user  발화 끝
+    71.25s  user  발화 시작: Fantastic! That’s a huge weight off my mind.
+    71.72s  agent 발화 끝
+    74.48s  user  발화 끝
+    74.62s  agent 발화 시작: [happy] It’s wonderful to hear that. Taking time for self-ca
+    79.81s  agent 발화 끝
+    79.87s  user  발화 시작: Could you remind me of my appointment?
+    81.66s  user  발화 끝
+    81.81s  agent 발화 시작: I've stored that for you. [2026-07-11] Massage appointment a
+    89.22s  agent 발화 끝
+    89.34s  user  발화 시작: Thanks. What time is it right now?
+    90.99s  <ret> 발화 (turn22 첫 프레임)
+    91.15s  agent 발화 시작: <ret> It’s currently 3:58 PM in Seoul.
+    91.15s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.82s]: (tool result) It is Friday, July 10, 2026 at 3:58 PM in Asia/Seoul rig
+    91.37s  user  발화 끝
+    92.17s  user  발화 시작: Okay.
+    92.85s  user  발화 끝
+    93.97s  agent 발화 끝
+    94.20s  user  발화 시작: Hmm, I wonder what movies are playing tonight?
+    96.53s  <ret> 발화 (turn25 첫 프레임)
+    96.68s  agent 발화 시작: <ret> "Elemental" and "Spider-Man: Across the Spider-Verse" 
+    96.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) "Elemental" and "Spider-Man: Across the Spider-Verse" ar
+    96.74s  user  발화 끝
+   102.14s  user  발화 시작: Spider-Man sounds good. What times?
+   102.15s  agent 발화 끝
+   104.58s  <ret> 발화 (turn27 첫 프레임)
+   104.81s  agent 발화 시작: <ret> You can catch "Spider-Man" at 6:30, 9:00, or 11:30 PM 
+   104.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) "Spider-Man: Across the Spider-Verse" plays at 6:30 PM, 
+   105.00s  user  발화 끝
+   109.00s  user  발화 시작: Yeah.
+   109.63s  user  발화 끝
+   110.42s  agent 발화 끝
+   110.45s  user  발화 시작: 9:00 PM sounds perfect.
+   112.57s  user  발화 끝
+   112.76s  agent 발화 시작: A great choice. Sometimes escaping into a good story is a wo
+   118.17s  user  발화 시작: I need to send a message to my friend, Ji-woo.
+   118.22s  agent 발화 끝
+   120.59s  agent 발화 시작: I can help with that, but I need Ji-woo’s contact informatio
+   120.75s  user  발화 끝
+   124.70s  user  발화 시작: Oh, right. Never mind, I'll do it myself.
+   124.71s  agent 발화 끝
+   127.17s  agent 발화 시작: Sometimes it’s nice to handle things personally.
+   127.19s  user  발화 끝
+   128.20s  user  발화 시작: Yeah.
+   128.64s  user  발화 끝
+   129.75s  agent 발화 끝
+   130.16s  user  발화 시작: I'm thinking of taking a trip to Busan next week.
+   133.07s  agent 발화 시작: Busan is a beautiful city. A little planning can make a trip
+   133.12s  user  발화 끝
+   138.54s  agent 발화 끝
+   139.51s  user  발화 시작: Yeah, maybe. I should probably look at trains.
+   142.35s  <ret> 발화 (turn39 첫 프레임)
+   142.47s  user  발화 끝
+   142.51s  agent 발화 시작: <ret> Trains to Busan leave Seoul Station at 8:00 AM, 11:00 
+   142.51s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.25s]: (tool result) Trains to Busan depart from Seoul Station at 8:00 AM, 11
+   147.10s  user  발화 시작: Yeah.
+   147.74s  user  발화 끝
+   148.60s  user  발화 시작: The 11:00 AM one sounds good.
+   148.76s  agent 발화 끝
+   150.35s  user  발화 끝
+   150.39s  agent 발화 시작: Excellent. Planning ahead gives you something positive to lo
+   154.46s  agent 발화 끝

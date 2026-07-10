@@ -1,101 +1,70 @@
 v3_mcp_03_ko src=mcp style=v1
-SYSTEM: <system> 당신은 건강 및 일상 습관에 대해 사람들을 돕는 긍정적이고 지지적인 조언자 Lari입니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 어려워하는 사람들을 돕는 친절하고 침착한 상담사 티아입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "예연",
+    "name": "주율",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "male",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-04",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-05-11",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2026-05-10",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2026-03-16",
+      "date": "2026-05-20",
       "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
+      "text": "User's home address is 서울 강남구 역삼동 678-9."
     },
     {
-      "date": "2026-01-26",
+      "date": "2026-02-02",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-08-19",
       "category": "hobby",
       "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-07-15",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-08",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-08-24",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-08-01",
+      "date": "2025-12-08",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-06-07",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 내 문서 폴더 안에 '보고서'가 들어간 파일 좀 ⟨ret@3.16s⟩ 찾아줘.
-[  3.48s][moshi] ⟦⚡SPAN@3.48s: (tool result) report_2023.docx, report draft.pdf, final report v2.txt⟧ 보고서라는 단어가 들어간 파일 세 개를 찾았어요. report_2023.docx, report_draft.pdf, 그리고 final_report_v2.txt가 있습니다.
-      CALL: {"function": "search_files", "arguments": {"directory": "my documents", "query": "report"}}
-[ 12.44s][user ] «backchannel» 와.
-[ 15.48s][user ] report_2023.docx 파일 좀 열어 봐. ⟨ret@19.16s⟩
-[ 19.24s][moshi] ⟦⚡SPAN@19.24s: (tool result) 2023년 연간 보고서. … (생략) … 매출액은 전년 대비 15% 증가했습니다.⟧ 이천이십삼년 연간 보고서 내용이에요. 매출액은 전년 대비 십오% 증가했다고 하네요.
-      CALL: {"function": "read_file", "arguments": {"file_path": "report_2023.docx"}}
-[ 20.88s][user ] «backchannel» 음.
-[ 24.39s][user ] 음… 혹시 이천이십이년 보고서도 찾아줄 수 있어?
-[ 28.48s][moshi] ⟨ret@28.40s⟩ ⟦⚡SPAN@28.48s: (tool result) 2022 annual report.pdf⟧ 네, 이천이십이년 보고서도 찾았어요. 2022_annual_report.pdf 파일입니다.
-      CALL: {"function": "search_files", "arguments": {"directory": "my documents", "query": "report 2022"}}
-[ 30.34s][user ] «backchannel» 와.
-[ 34.76s][user ] 그거 내용도 한번 봐 ⟨ret@36.17s⟩ 줄래?
-[ 36.49s][moshi] «interrupted» ⟦⚡SPAN@36.49s: (tool result) 2022년 연간 보고서. … (생략) … 2022년 매출은 100억 원을 달성했습니다.⟧ 이천이십이년 연간 보고서 내용인데—
-      CALL: {"function": "read_file", "arguments": {"file_path": "2022_annual_report.pdf"}}
-[ 38.20s][user ] «interrupts_prev» … 잠깐만, 이천이십이년 매출액이 얼마였지? 다시 한번 말해 줄 수 있어?
-[ 43.30s][moshi] 이천이십이년 매출은 백억 원을 달성했다고 보고서에 나와 있어요. 혹시 다른 내용도 궁금하신가요?
-[ 50.03s][user ] 아, 고마워. 그럼 이천이십삼년…
-[ 54.16s][user ] …보고서에서 영업이익은 얼마였는지 ⟨ret@56.56s⟩ 찾아줘.
-[ 56.80s][moshi] ⟦⚡SPAN@56.80s: (tool result) 영업이익: 25억 원⟧ 이천이십삼년 보고서에서 영업이익은 이십오억 원으로 확인됐어요.
-      CALL: {"function": "tavily-extract", "arguments": {"text": "2023년 연간 보고서. … (생략) … 매출액은 전년 대비 15% 증가했습니다.", "query": "영업이익"}}
-[ 61.03s][user ] 음, 생각보다 적네. 이천이십이년 영업이익은 얼마였어?
-[ 64.94s][moshi] ⟨ret@64.78s⟩ ⟦⚡SPAN@64.94s: (tool result) 영업이익: 20억 원⟧ 이천이십이년 영업이익은 이십억 원이었어요.
-      CALL: {"function": "tavily-extract", "arguments": {"text": "2022년 연간 보고서. … (생략) … 2022년 매출은 100억 원을 달성했습니다.", "query": "영업이익"}}
-[ 68.31s][user ] 그렇군요. 이번 주 금요일 오후 세시에 김민지 팀장님과 화상 회의 예약해 줘.
-[ 73.97s][moshi] ⟨ret@73.73s⟩ ⟦⚡SPAN@73.97s: (tool result) Appointment confirmed with 김민지 팀장님 on July 25, 2026 at 15:00. Confirmation ID: A7B2C9⟧ 김민지 팀장님과의 화상 회의가 이번 주 금요일 오후 세시에 확정되었습니다. 확인 코드는 에이 칠 비 이 씨 구예요.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "김민지 팀장님", "date": "July 25, 2026", "time": "15:00"}}
+[  0.00s][user ] 혹시, 재미있게 볼 수 있는 코미디 드라마 영화 좀 찾아줄 수 있어? 그레타 거윅 감독이고, 시얼샤 로넌이 출연하는 ⟨ret@8.11s⟩ 걸로.
+[  8.43s][moshi] ⟦⚡SPAN@8.43s: (tool result) "Lady Bird (2017) - Comedy, Drama, Romance, Coming-of-age. Little Women (2019) - Drama, Romance,⟧ 그레타 거윅 감독에 시얼샤 로넌이 출연하는 코미디 드라마 영화로는 '레디 오어 낫', '작은 아씨들', 그리고 '프란시스 하'가 있어요.
+      CALL: {"function": "Movies_3_FindMovies", "arguments": {"director": "Greta Gerwig", "actors": "Saoirse Ronan", "genres": "comedy-drama"}}
+[ 11.73s][user ] «backchannel» 그렇죠.
+[ 15.70s][moshi] 세 작품 모두 평이 아주 좋답니다. 혹시 다른 배우나 장르를 더 선호하시나요?
+[ 21.64s][user ] 아니, 괜찮아. '레디 오어 낫'에 대해 좀 더 자세히 알려줄 수 ⟨ret@25.94s⟩ 있을까?
+[ 26.34s][moshi] ⟦⚡SPAN@26.34s: Lady Bird (2017) - A high school senior navigates the complexities of coming-of-age in Sacramento, California,⟧ '레디 오어 낫'은 캘리포니아 새크라멘토에서 고등학교를 다니는 소녀의 성장기를 그린 영화예요. 시얼샤 로넌과 로리 메트칼프가 출연했고, 그레타 거윅이 감독을 맡았어요. 상영 시간은 구십삼분입니다.
+[ 36.11s][user ] «backchannel» 네.
+[ 40.59s][user ] 아, 그렇구나. 어디에서 상영하는지 알아봐 줄 수 있어?

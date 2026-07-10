@@ -4,155 +4,147 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_06",
-#     "name": "William",
+#     "name": "Harry",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "male",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-05",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2026-06-05",
+#       "category": "home",
+#       "text": "User's home address is 475 Maple Drive."
 #     },
 #     {
-#       "date": "2025-11-02",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-06-29",
+#       "date": "2025-11-18",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-09",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2025-10-08",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-25",
+#       "date": "2026-04-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-10",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to find the phone number fo | S2 Caffe Trieste sounds interesting.  | S3 Hmm, not bad. Is it usually this w | S4 …Actually, before that, does it ha
+# EXAMINER(FDB-v2) 단계: S1 I want to know the coordinates for | S2 …maybe something luxurious? | S3 … actually, how far is it from the | S4 And could you add an alarm for 6:0
 
-     0.00s  user  발화 시작: I need to find the phone number for City Lights Bookstore in
-     3.82s  <ret> 발화 (turn1 첫 프레임)
-     3.84s  user  발화 끝
-     3.89s  agent 발화 시작: <ret> City Lights Bookstore’s phone number is (415) 394-1951
-     3.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) City Lights Bookstore is located at 261 Columbus Ave, Sa
-    11.12s  agent 발화 끝
-    11.86s  user  발화 시작: Great, thanks. And what about their hours today?
-    14.80s  <ret> 발화 (turn3 첫 프레임)
-    14.96s  agent 발화 시작: <ret> They are open today from 10:00 AM until 7:00 PM. It’s 
-    14.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: (tool result) City Lights Bookstore is located at 261 Columbus Ave, Sa
-    15.09s  user  발화 끝
-    20.23s  agent 발화 끝
-    20.73s  user  발화 시작: That’s good to know. I was hoping to go browsing there later
-    23.42s  agent 발화 시작: That sounds like a nice plan.
-    23.50s  user  발화 끝
-    23.98s  user  발화 시작: Yeah.
-    24.29s  user  발화 끝
-    25.17s  user  발화 시작: Actually, yes. Could you find…
-    25.31s  agent 발화 끝
-    26.92s  user  발화 끝
-    29.00s  user  발화 시작: …me some good cafes nearby?
-    30.43s  <ret> 발화 (turn9 첫 프레임)
-    30.74s  agent 발화 시작: <ret> There are a few cafes close by. Caffe Trieste is just 
-    30.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (tool result) Caffe Trieste — 0.3 mi; Cafe Babel — 0.4 mi; Mama’s Roya
-    30.75s  user  발화 끝
-    36.36s  user  발화 시작: Caffe Trieste sounds interesting. What’s their address?
-    36.48s  agent 발화 끝
-    38.77s  <ret> 발화 (turn11 첫 프레임)
-    39.09s  agent 발화 시작: <ret> It’s located at 601 Vallejo Street, San Francisco.
-    39.09s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.84s]: (tool result) Caffe Trieste is located at 601 Vallejo St, San Francisc
+     0.00s  user  발화 시작: I want to know the coordinates for the Taj Mahal.
+     2.59s  user  발화 끝
+     2.68s  <ret> 발화 (turn1 첫 프레임)
+     2.76s  agent 발화 시작: <ret> The Taj Mahal is located at 27.17 degrees North, 78.04
+     2.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) 27.1751° N, 78.0421° E
+    12.31s  agent 발화 끝
+    13.05s  user  발화 시작: What's the weather like there right now?
+    15.14s  <ret> 발화 (turn3 첫 프레임)
+    15.30s  agent 발화 시작: <ret> Currently in Agra, it’s 36.0 degrees Celsius with 48 p
+    15.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) 36.0°C, humidity 48%, wind 8.0 km/h
+    15.46s  user  발화 끝
+    25.77s  agent 발화 끝
+    26.32s  user  발화 시작: I’m thinking of going next week.
+    27.81s  agent 발화 시작: That sounds lovely. Planning a trip can be a very healing pr
+    27.97s  user  발화 끝
+    33.85s  user  발화 시작: Can you find me some hotels nearby…
+    33.87s  agent 발화 끝
+    36.24s  user  발화 끝
+    37.34s  user  발화 시작: …maybe something luxurious?
+    38.76s  <ret> 발화 (turn8 첫 프레임)
+    39.08s  agent 발화 시작: <ret> I found two luxurious options—The Oberoi Amarvilas at 
+    39.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) The Oberoi Amarvilas, Agra - ₹37,000 per night; ITC Mugh
     39.13s  user  발화 끝
-    42.93s  agent 발화 끝
-    43.33s  user  발화 시작: Perfect. I think I’ll walk there after the bookstore.
-    46.33s  user  발화 끝
-    46.42s  agent 발화 시작: That sounds like a pleasant afternoon. A little walk is good
-    50.86s  agent 발화 끝
-    51.55s  user  발화 시작: Do you know if Caffe Trieste has Wi-Fi?
-    53.64s  <ret> 발화 (turn15 첫 프레임)
-    54.04s  agent 발화 시작: <ret> Yes, Caffe Trieste does offer free Wi-Fi. You can stay
-    54.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Caffe Trieste is located at 601 Vallejo St, San Francisc
-    54.14s  user  발화 끝
-    58.39s  agent 발화 끝
-    60.65s  user  발화 시작: Wonderful. And what's the weather like there right now?
-    63.38s  <ret> 발화 (turn17 첫 프레임)
-    63.46s  agent 발화 시작: <ret> The weather in San Francisco is currently 18.3 degrees
-    63.46s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.46s]: (tool result) 18.3°C, humidity 62%, wind 8.2 km/h
-    63.60s  user  발화 끝
-    72.91s  agent 발화 끝
-    73.15s  user  발화 시작: Hmm, not bad. Is it usually this warm?
-    75.22s  agent 발화 시작: San Francisco summers are generally mild, with average highs
-    75.22s  user  발화 끝
-    80.74s  user  발화 시작: That’s good to know. I’m planning a trip there next month.
-    80.87s  agent 발화 끝
-    84.07s  user  발화 끝
-    84.44s  agent 발화 시작: That sounds lovely. A little planning can make all the diffe
-    87.29s  user  발화 시작: Mm-hmm.
-    87.78s  user  발화 끝
-    88.72s  user  발화 시작: I'm also trying to find a quiet hotel near North Beach.
-    89.12s  agent 발화 끝
-    91.72s  <ret> 발화 (turn24 첫 프레임)
-    92.00s  user  발화 끝
-    92.12s  agent 발화 시작: <ret> I found a few hotels in North Beach. Hotel Boheme is a
-    92.12s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.44s]: (tool result) Hotel Boheme — $250/night; Washington Square Hotel — $28
-    98.50s  user  발화 시작: $250 sounds reasonable. What are the reviews like for that o
-    98.57s  agent 발화 끝
-   102.79s  <ret> 발화 (turn26 첫 프레임)
-   102.98s  user  발화 끝
-   103.10s  agent 발화 시작: <ret> Hotel Boheme has very good reviews. It has 4.5 stars o
-   103.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Hotel Boheme San Francisco Reviews — TripAdvisor: 4.5 st
-   110.63s  user  발화 시작: That's pretty good. I think I’d like to look at some picture
-   110.79s  agent 발화 끝
-   113.03s  user  발화 끝
-   113.13s  agent 발화 시작: I can pull up some images for you—
-   114.45s  user  발화 시작: …Actually, before that, does it have parking?
-   115.16s  agent 발화 끝
-   116.55s  <ret> 발화 (turn30 첫 프레임)
-   116.94s  agent 발화 시작: <ret> Hotel Boheme does offer limited paid parking. It’s at 
-   116.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) Hotel Boheme is located at 1225 Columbus Ave, San Franci
-   117.03s  user  발화 끝
-   121.01s  user  발화 시작: Uh-huh.
-   121.50s  user  발화 끝
-   122.36s  agent 발화 끝
-   122.52s  user  발화 시작: Okay, good. Parking is important. Now, show me the pictures.
-   125.36s  <ret> 발화 (turn33 첫 프레임)
-   125.57s  user  발화 끝
-   125.59s  agent 발화 시작: <ret> Here are some images of Hotel Boheme, showing the exte
-   125.60s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.37s]: (tool result) Hotel Boheme San Francisco — images.google.com: exterior
-   127.18s  user  발화 시작: Yeah.
-   127.54s  user  발화 끝
-   130.93s  agent 발화 시작: It does seem quite charming. A comfortable base for explorin
-   130.96s  agent 발화 끝
-   134.67s  agent 발화 끝
-   134.77s  user  발화 시작: I think I’m going to book a room there for three nights, sta
-   138.83s  <ret> 발화 (turn37 첫 프레임)
-   139.23s  agent 발화 시작: <ret> Excellent. Your room at Hotel Boheme is booked for thr
-   139.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) Confirmation ID: BH7294X
-   139.30s  user  발화 끝
-   143.18s  user  발화 시작: Oh.
-   143.67s  user  발화 끝
-   148.93s  agent 발화 끝
-   149.15s  user  발화 시작: Perfect! That’s everything for now, I think.
-   151.99s  agent 발화 시작: Wonderful. I’m glad I could help you plan your trip. Remembe
-   152.10s  user  발화 끝
-   158.84s  agent 발화 끝
+    46.52s  user  발화 시작: Really?
+    47.15s  user  발화 끝
+    49.17s  user  발화 시작: What’s the Oberoi like?
+    49.32s  agent 발화 끝
+    50.54s  <ret> 발화 (turn11 첫 프레임)
+    50.86s  agent 발화 시작: <ret> The Oberoi Amarvilas is a five-star hotel known for it
+    50.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.55s]: (tool result) The Oberoi Amarvilas, Agra is a five-star hotel offering
+    51.01s  user  발화 끝
+    56.03s  user  발화 시작: Yeah.
+    56.38s  user  발화 끝
+    62.40s  agent 발화 끝
+    62.42s  user  발화 시작: Can you show me pictures?
+    63.55s  <ret> 발화 (turn14 첫 프레임)
+    63.79s  agent 발화 시작: <ret> I’ve gathered some images—you can see the hotel’s beau
+    63.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) image search results for The Oberoi Amarvilas, Agra - a 
+    63.99s  user  발화 끝
+    70.65s  agent 발화 끝
+    71.70s  user  발화 시작: … actually, how far is it from the Taj Mahal?
+    74.22s  agent 발화 시작: It’s approximately—
+    74.24s  user  발화 끝
+    74.84s  user  발화 시작: … I mean, walking distance?
+    75.59s  agent 발화 끝
+    76.77s  user  발화 끝
+    77.06s  agent 발화 시작: It is roughly a fifteen-minute walk, about 1.2 kilometers, f
+    79.48s  user  발화 시작: Yeah.
+    79.83s  user  발화 끝
+    83.59s  user  발화 시작: Can you find me restaurants nearby with outdoor seating?
+    83.69s  agent 발화 끝
+    86.55s  user  발화 끝
+    86.58s  <ret> 발화 (turn21 첫 프레임)
+    86.66s  agent 발화 시작: <ret> I found three restaurants with outdoor seating: Pinch 
+    86.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: (tool result) Pinch of Spice - Indian, 4.5 stars; Esphahan - Indian, 4
+    94.72s  agent 발화 끝
+    94.92s  user  발화 시작: Book me a table at Esphahan for two people next Tuesday even
+    98.37s  <ret> 발화 (turn23 첫 프레임)
+    98.77s  agent 발화 시작: <ret> Your reservation at Esphahan is confirmed for two peop
+    98.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) Reservation confirmed for Esphahan, July 14th at 7:00 PM
+    98.81s  user  발화 끝
+   105.52s  user  발화 시작: Oh.
+   106.01s  user  발화 끝
+   109.25s  agent 발화 끝
+   110.18s  user  발화 시작: And could you add an alarm for 6:00 AM that day?
+   112.64s  <ret> 발화 (turn26 첫 프레임)
+   112.95s  user  발화 끝
+   112.96s  agent 발화 시작: <ret> An alarm is set for 6:00 AM on July 14th. Starting you
+   112.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Alarm set for July 14th, 2026 at 6:00 AM.
+   119.43s  user  발화 시작: What's the exchange rate for Indian rupees to US dollars tod
+   119.54s  agent 발화 끝
+   123.04s  <ret> 발화 (turn28 첫 프레임)
+   123.31s  user  발화 끝
+   123.36s  agent 발화 시작: <ret> Currently, one US dollar is equal to 83.25 Indian rupe
+   123.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 1  83.25 INR
+   131.47s  agent 발화 끝
+   131.48s  user  발화 시작: Thanks, that’s very helpful.
+   132.86s  user  발화 끝
+   132.91s  agent 발화 시작: You'
+   133.50s  agent 발화 끝

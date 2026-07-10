@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "William",
+#     "name": "Adam",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-02-16",
+#       "category": "home",
+#       "text": "User's home address is 576 Birch Road."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in October."
+#       "date": "2025-11-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-10-22",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-14",
+#       "date": "2025-10-04",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "work",
+#       "text": "User works as a accountant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2026-06-24",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-15",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,53 +56,39 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-18",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-13",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m thinking of going to a movie t | S2 Hmm, Barbarian sounds good. What t | S3 That's fantastic, thank you! Oh, u | S4 Eight minutes, okay. That's doable
+# EXAMINER(FDB-v2) 단계: S1 I’m thinking about getting a subsc | S2 That sounds great! Um, what’s the  | S3 Perfect! I need to find a good Ita | S4 Can you reserve a table for two th
 
-     0.00s  user  발화 시작: I’m thinking of going to a movie tonight. What horror…
-     3.70s  user  발화 끝
-     4.67s  user  발화 시작: …films are playing at the Music Box Theatre in Chicago?
-     7.83s  <ret> 발화 (turn2 첫 프레임)
-     8.07s  agent 발화 시작: <ret> There are two horror films playing at the Music Box to
-     8.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) The Black Phone — 7:00 PM, 9:30 PM; Barbarian — 7:15 PM,
-     8.18s  user  발화 끝
-    18.22s  agent 발화 끝
-    19.59s  user  발화 시작: Hmm, Barbarian sounds good. What times again?
-    23.61s  user  발화 끝
-    23.85s  agent 발화 시작: Barbarian is showing at seven fifteen and nine forty-five th
-    26.68s  user  발화 시작: Right.
-    27.31s  user  발화 끝
-    28.42s  user  발화 시작: [sigh] I think I'll go with the 7:15 showing. Can you get me
-    28.47s  agent 발화 끝
-    33.12s  <ret> 발화 (turn7 첫 프레임)
-    33.44s  agent 발화 시작: <ret> I’ve gotten you two tickets for Barbarian at seven fif
-    33.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: (tool result) Confirmation: BBRBN-715PM-2TKTS-MBX
-    33.70s  user  발화 끝
-    38.82s  user  발화 시작: Right.
-    39.32s  user  발화 끝
-    44.02s  user  발화 시작: That's fantastic, thank you! Oh, um, do you know what the we
-    44.06s  agent 발화 끝
-    48.79s  <ret> 발화 (turn10 첫 프레임)
-    49.19s  agent 발화 시작: <ret> In Chicago, it’s currently 24 degrees Celsius with six
-    49.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.50s]: (tool result) 24.0°C, humidity 62%, wind 8.0 km/h
-    49.30s  user  발화 끝
-    56.56s  user  발화 시작: That sounds… pleasant. Is the Music Box Theatre far from Sta
-    56.69s  agent 발화 끝
-    61.45s  <ret> 발화 (turn12 첫 프레임)
-    61.52s  agent 발화 시작: <ret> It’s about 3.2 kilometers from State Street to the Mus
-    61.52s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.95s]: (tool result) 3.2 km, approximately 8 minutes by car.
-    61.60s  user  발화 끝
-    68.42s  user  발화 시작: Eight minutes, okay. That's doable. I appreciate your help, 
-    68.48s  agent 발화 끝
-    72.65s  agent 발화 시작: You are very welcome. I’m glad I could assist you in plannin
-    72.77s  user  발화 끝
-    78.07s  agent 발화 끝
+     0.00s  user  발화 시작: I’m thinking about getting a subscription to your service. C
+     7.47s  <ret> 발화 (turn1 첫 프레임)
+     7.71s  agent 발화 시작: <ret> I can help with that. I’ve created a silver subscripti
+     7.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: (tool result) Subscription created: ID 87654, tier Silver, billing eve
+     7.88s  user  발화 끝
+    13.51s  user  발화 시작: Mhm.
+    13.95s  user  발화 끝
+    15.91s  agent 발화 끝
+    17.25s  user  발화 시작: That sounds great! Um, what’s the weather like in Seoul righ
+    21.77s  <ret> 발화 (turn4 첫 프레임)
+    22.09s  agent 발화 시작: <ret> The weather in Seoul is currently twenty-six point fiv
+    22.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Seoul: 26.5°C, humidity 68%, wind 4.1 km/h, clear skies.
+    22.12s  user  발화 끝
+    25.11s  user  발화 시작: Yeah.
+    25.60s  user  발화 끝
+    28.71s  user  발화 시작: Perfect! I need to find a good Italian restaurant nearby.
+    28.82s  agent 발화 끝
+    32.28s  <ret> 발화 (turn7 첫 프레임)
+    32.68s  agent 발화 시작: <ret> I found Bella Italia, it's just point eight kilometers
+    32.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) Found: Bella Italia, 0.8km, 4.5 stars, $$$.
+    32.87s  user  발화 끝
+    39.72s  agent 발화 끝
+    40.02s  user  발화 시작: Can you reserve a table for two there at seven this evening?
+    43.44s  user  발화 끝

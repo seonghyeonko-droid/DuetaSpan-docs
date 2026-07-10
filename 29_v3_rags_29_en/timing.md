@@ -4,61 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "William",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-05-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2026-05-07",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-18",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-09-14",
+#       "date": "2026-02-15",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-07-01",
+#       "date": "2026-01-02",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-11-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2025-07-07",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-22",
+#       "category": "home",
+#       "text": "User's home address is 109 Maple Drive."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-30",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-02-26",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-18",
+#       "date": "2026-02-17",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -69,11 +64,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Who played Jojen Reed…
-     2.08s  user  발화 끝
-     3.64s  user  발화 시작: …in Game of Thrones?
-     5.01s  <ret> 발화 (turn2 첫 프레임)
-     5.12s  user  발화 끝
-     5.33s  agent 발화 시작: <ret> That was Thomas Brodie-Sangster, a wonderful actor who
-     5.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: Thomas Brodie-Sangster portrayed Jojen Reed in the HBO series Game of 
-    15.49s  agent 발화 끝
+     0.00s  user  발화 시작: When do the letters in a word represent a larger idea?
+     3.86s  <ret> 발화 (turn1 첫 프레임)
+     3.94s  user  발화 끝
+     4.18s  agent 발화 시작: <ret> Well, sometimes letters stand for something bigger, yo
+     4.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.22s]: An acronym is a word formed from the initial letters of other words.
+    13.40s  agent 발화 끝

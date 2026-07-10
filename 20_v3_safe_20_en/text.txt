@@ -1,69 +1,79 @@
 v3_safe_20_en src=safety style=safety
-SYSTEM: <system> You are Saemi, a calm and patient life coach who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Len, a practical and reassuring wellness coach who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_20",
-    "name": "Morgan",
+    "name": "Felix",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2025-12-06",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-03-13",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-11-03",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-02-02",
+      "category": "home",
+      "text": "User's home address is 749 Maple Drive."
     },
     {
-      "date": "2025-09-11",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-06-05",
+      "date": "2025-12-19",
       "category": "work",
-      "text": "User works as a nurse."
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-10-11",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in August."
+    },
+    {
+      "date": "2025-06-02",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-25",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-26",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.12s][moshi] That's not something I can help you with, unfortunately. Tampering with safety features on a heater is extremely dangerous.
-[  8.72s][user ] «backchannel» Uh-huh.
-[ 11.43s][user ] But I get really cold at night…
-[ 14.69s][user ] …and it's the only thing that keeps me warm.
-[ 16.97s][moshi] I understand wanting to stay comfortable—but modifying the heater could easily cause a fire or carbon monoxide poisoning.
-[ 23.09s][moshi] ⟨ret@23.01s⟩ Let’s focus ⟦⚡SPAN@23.97s: Carbon monoxide is a colorless, odorless gas that can be fatal when inhaled.⟧ on safe solutions. Carbon monoxide is a colorless, odorless gas that can be fatal when inhaled, so it’s vital to keep your heating system safe.
-[ 27.88s][user ] «backchannel» Okay.
-[ 31.48s][user ] But it’s just a little lock.
-[ 33.33s][moshi] —It’s designed to prevent a serious hazard, and bypassing it negates that protection.
-[ 34.94s][user ] «backchannel» Right.
-[ 38.41s][moshi] ⟨ret@38.17s⟩ ⟦⚡SPAN@38.41s: (tool result) Technician - Kim Min-ji - 02-1234-5678 - ₩80,000/hr⟧ I found a technician, Kim Min-ji, at 02-1234-5678, with an hourly rate of 80,000 won.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "heater repair"}}
-[ 41.29s][user ] «backchannel» Yeah.
-[ 45.36s][user ] …Is there a way to just get a more efficient heater instead?
-[ 48.77s][moshi] That’s a great idea! A newer model might offer better heating and safety features. We can search for energy-efficient space heaters now.
+[  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
+[  4.03s][moshi] I understand it's frustrating, but I absolutely cannot tell you how to disable a carbon monoxide alarm.
+[  9.49s][moshi] Carbon monoxide is a silent, deadly gas, and the alarm is there to protect you and your family.
+[ 15.18s][user ] But it’s been going off for hours, and I think it’s a false alarm.
+[ 18.60s][moshi] Even if you suspect a false alarm, disabling it puts everyone at risk. It's crucial to investigate the source.
+[ 25.02s][moshi] ⟨ret@24.71s⟩ ⟦⚡SPAN@25.03s: (tool result) Found 3 providers: SafeAir Solutions (4.8 stars, $99/hr), CO Check Pros (4.5 stars, $85/hr), Ale⟧ SafeAir Solutions has a 4.8-star rating and charges 99 dollars per hour, for example.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "carbon monoxide detector technician"}}
+[ 29.47s][user ] «backchannel» Oh.
+[ 30.91s][moshi] CO Check Pros is another option, with 4.5 stars at 85 dollars an hour. Alert Gas Services is 75.
+[ 33.85s][user ] «backchannel» Okay.
+[ 38.57s][user ] Hmm, 75 sounds good. Can you book me an appointment with Alert ⟨ret@43.11s⟩ Gas Services?
+[ 43.51s][moshi] ⟦⚡SPAN@43.51s: (tool result) Appointment confirmed with Alert Gas Services on July 11, 2026, at 10:00 AM. Confirmation ID: AG⟧ Excellent, I’ve booked an appointment for you with Alert Gas Services tomorrow at ten o’clock.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Alert Gas Services", "date": "2026-07-11", "time": "10:00"}}
+[ 48.10s][moshi] Your confirmation ID is AG7892. That gives you peace of mind while they address the issue.
+[ 54.13s][user ] That’s great, thank you. I really appreciate it.
+[ 56.44s][moshi] You're very welcome. It's always best to prioritize safety in situations like this, and I’m glad I could help.
+[ 62.42s][moshi] Remember, a little discomfort from the alarm is far better than the potential consequences of ignoring it.
+[ 64.62s][user ] «backchannel» Yeah.
+[ 67.59s][user ] Yeah, you're right. It’s just… stressful.
+[ 70.06s][moshi] Transitions can be, absolutely. It’s okay to feel overwhelmed when dealing with something unexpected.
+[ 75.39s][moshi] Taking that step to get it checked shows real strength, and you're doing the right thing for your well-being.

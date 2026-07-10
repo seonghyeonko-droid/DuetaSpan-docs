@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "수서",
+#     "name": "정민",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,79 +12,78 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-21",
+#       "date": "2026-06-22",
 #       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     },
 #     {
-#       "date": "2025-09-23",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2025-12-23",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-09-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-06-13",
+#       "date": "2025-11-26",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-10-20",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-09-12",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-12",
+#       "date": "2026-02-20",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 누나라고 하니까… 좀 신기하네요. 진짜 상담사세요? | S2 솔직히 말하면, 말을 좀 잘 듣길 바라는 거죠. | S3 그렇죠… 어떻게 해야 할지 도통 모르겠어요. | S4 음… 그럴 수도 있겠네요.
+# EXAMINER(FDB-v2) 단계: S1 혹시, 어떤 걸 도와주시는 건가요? | S2 주로 숙제를 할 때 그래요. 집중을 못 하고 딴짓만 하니까 답 | S3 … 혹시, 아이가 숙제를 싫어하는 이유가 뭘까요? 그냥 게으른 | S4 한번 그렇게 해봐야겠어요. 감사합니다, 브레안님.
 
-     0.00s  agent 발화 시작: 안녕하세요, 수서님. 저는 여러분의 육아와 가족 시간을 돕는 상담사, 누나예요. 오늘 어떤 이야기를 나눠볼까
-     6.39s  user  발화 시작: 그치.
-     6.89s  user  발화 끝
-     8.62s  user  발화 시작: 누나라고 하니까… 좀 신기하네요. 진짜 상담사세요?
-     8.71s  agent 발화 끝
-    13.11s  user  발화 끝
-    13.17s  agent 발화 시작: 저는 수서님께 편안하게 이야기 나누는 친구 같은 존재가 되고 싶어요. 어떤 고민이든 저에게 말씀해 주세요.
-    21.04s  user  발화 시작: 음… 요즘 아들 녀석 때문에 너무 힘들어요.
-    21.10s  agent 발화 끝
-    24.73s  agent 발화 시작: 아드님 때문에 힘드시군요. 어떤 점이 가장 어려우신가요? 구체적으로 말씀해 주시면 더 잘 이해할 수 있을 것
-    24.74s  user  발화 끝
-    27.77s  user  발화 시작: 맞아.
-    28.26s  user  발화 끝
-    32.96s  agent 발화 시작: 아이가 성장하면서 부모님과의 관계에서 어려움을 겪는 건 자연스러운 일이에요. 수서님은 아드님과 어떤 관계를 
-    33.02s  agent 발화 끝
-    41.52s  user  발화 시작: 솔직히 말하면, 말을 좀 잘 듣길 바라는 거죠.
-    42.23s  agent 발화 끝
-    45.17s  user  발화 끝
-    45.59s  agent 발화 시작: 아드님이 말씀에 잘 따랐으면 좋겠으시군요. 아이의 의견을 존중하면서도 부모님의 지침을 따르게 하는 건 쉽지 
-    49.89s  user  발화 시작: 그래.
-    50.44s  user  발화 끝
-    54.50s  agent 발화 끝
-    54.56s  user  발화 시작: 그렇죠… 어떻게 해야 할지 도통 모르겠어요.
-    58.26s  user  발화 끝
-    58.38s  agent 발화 시작: 아이의 마음을 이해하려고 노력해 보세요. 아이가 왜 그런 행동을 하는지, 어떤 생각을 가지고 있는지 물어보는
-    66.96s  user  발화 시작: 그런 말을 하면 오히려 짜증을 내요.
-    67.04s  agent 발화 끝
-    69.64s  agent 발화 시작: 아이가 짜증을 내는 건 자신의 감정을 표현하는 방식일 수 있어요. 아이의 감정을 인정하고 공감해 주는 것이 
-    69.73s  user  발화 끝
-    75.84s  user  발화 시작: 아.
-    76.33s  user  발화 끝
-    78.17s  agent 발화 끝
-    78.87s  user  발화 시작: 음… 그럴 수도 있겠네요.
-    80.85s  user  발화 끝
-    81.05s  agent 발화 시작: 아이와의 대화에서 긍정적인 면을 강조해 보세요. 아이가 잘한 점이나 노력한 점을 칭찬해 주면 아이도 기분 좋
-    90.18s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 정민님. 저는 여러분의 육아와 가정 생활을 돕는 상담가 브레안이라고 해요.
+     6.77s  agent 발화 끝
+     6.88s  user  발화 시작: 혹시, 어떤 걸 도와주시는 건가요?
+     9.72s  agent 발화 시작: 저는 아이들과 함께하는 시간을 더 즐겁고 의미 있게 만들 수 있도록, 다양한 아이디어를 드리고 정민님의 고민
+     9.78s  user  발화 끝
+    19.12s  agent 발화 끝
+    19.18s  user  발화 시작: 음, 요즘 아이와 매일 다투게 돼요. 뭘 해도 마음에 안 들어 하고… 정말 힘드네요.
+    25.95s  user  발화 끝
+    26.06s  agent 발화 시작: 아이와 자주 다투신다니, 마음이 많이 힘드시겠어요. 혹시 어떤 상황에서 주로 다투게 되시는지 조금 더 자세히
+    35.44s  user  발화 시작: 주로 숙제를 할 때 그래요. 집중을 못 하고 딴짓만 하니까 답답하고 —
+    35.88s  agent 발화 끝
+    39.84s  user  발화 끝
+    39.87s  user  발화 시작: … 혹시, 아이가 숙제를 싫어하는 이유가 뭘까요? 그냥 게으른 걸까요?
+    45.56s  user  발화 끝
+    46.13s  agent 발화 시작: 아이가 숙제를 싫어하는 이유가 게으름 때문이라고 단정 짓기는 어려워요. 숙제 내용이 너무 어렵거나, 아이가 
+    52.61s  user  발화 시작: 네.
+    53.11s  user  발화 끝
+    58.93s  agent 발화 시작: 아이의 입장에서 왜 숙제를 싫어하는지, 어떤 부분이 힘든지 함께 이야기 나눠보는 건 어떨까요? 아이의 마음을
+    59.12s  agent 발화 끝
+    71.55s  agent 발화 끝
+    71.94s  user  발화 시작: 한번 그렇게 해봐야겠어요. 감사합니다, 브레안님.
+    75.69s  user  발화 끝

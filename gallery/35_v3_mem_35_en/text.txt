@@ -1,10 +1,10 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Huen, a practical and reassuring wellness coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Klami, a encouraging and non-judgmental supportive advisor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Amelia",
+    "name": "Rosa",
     "location": {
       "city": "Berlin",
       "country": "Germany",
@@ -13,66 +13,61 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "German",
     "gender": "female",
-    "age_range": "40s",
+    "age_range": "50s",
     "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-06-13",
+      "date": "2026-06-15",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-02-04",
       "category": "work",
       "text": "User works as a chef."
     },
     {
-      "date": "2026-06-03",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-01-19",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in December."
     },
     {
-      "date": "2025-11-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2025-09-25",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-09-08",
+      "date": "2025-09-13",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-14",
+      "date": "2025-08-17",
       "category": "allergy",
       "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-17",
-      "title": "Planning a birthday dinner",
+      "date": "2025-07-19",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-03-01",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Amelia, I'm Huen. It's lovely to connect with you. I understand you’re looking for a recommendation today.
-[  2.44s][user ] «backchannel» Mm-hmm.
-[  7.25s][user ] Um, yes, I am. I was hoping you could suggest a restaurant for a birthday ⟨ret@12.37s⟩ dinner.
-[ 12.77s][moshi] ⟦⚡SPAN@12.87s: [2026-06-17] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ Finding the perfect spot is important. I see you mentioned planning a birthday dinner for six people, and you were hoping for outdoor seating.
-[ 20.17s][user ] Yes, that's right! Something with a nice atmosphere would be ⟨ret@23.99s⟩ great.
-[ 24.31s][moshi] ⟦⚡SPAN@24.31s: (tool result) Korean Garden - 4.5 stars, outdoor seating, party size up to 8 - Berlin; Kimchi House - 4.2 star⟧ There are two options that stand out: Korean Garden and Kimchi House, both in Berlin, and both offering outdoor seating.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean BBQ", "outdoor_seating": "yes", "party_size": "6"}}
+[  0.00s][moshi] Hi Rosa, I'm Klami. It's lovely to meet you, and I'm here to support your well-being.
+[  5.79s][user ] Um, hi Klami. I’m planning a trip to Vietnam in ⟨ret@9.64s⟩ December.
+[ 10.04s][moshi] ⟦⚡SPAN@10.04s: [2026-01-19] User is planning a trip to Vietnam in December.⟧ That’s wonderful, Rosa! You mentioned a Vietnam trip in December last year.
+[ 14.55s][user ] Yes, that’s right. I’m thinking about what to do there.
+[ 17.81s][moshi] Vietnam offers so many amazing experiences. What kind of activities do you enjoy?
+[ 24.05s][user ] Welll… I really like Thai food, actually. Is there anything similar in Vietnam?
+[ 29.47s][moshi] ⟨ret@29.31s⟩ ⟦⚡SPAN@29.47s: [2026-06-15] User's favorite cuisine is Thai.⟧ Knowing you enjoy Thai cuisine, Vietnamese food will likely appeal to you—it shares similar flavor profiles, with fresh herbs and spices.
+[ 33.57s][user ] «backchannel» Yeah.
+[ 40.15s][user ] Oh, that sounds good! Maybe I should look for cooking classes.
+[ 44.28s][moshi] That's a fantastic idea, Rosa! Learning to cook local dishes is a great way to immerse yourself in a new culture.

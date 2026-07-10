@@ -4,64 +4,96 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Elsa",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "early 20s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-30",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2026-06-09",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
-#     },
-#     {
-#       "date": "2026-02-11",
+#       "date": "2026-05-19",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-09-18",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-14",
+#       "category": "home",
+#       "text": "User's home address is 414 Pine Court."
+#     },
+#     {
+#       "date": "2025-10-24",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-31",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
-#       "title": "Researching a used car",
+#       "date": "2026-01-14",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-17",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hello Elsa, my name is Elin. I’m a counselor here to offer s
-     5.79s  agent 발화 끝
-     6.21s  user  발화 시작: Oh, hi Elin. That’s… nice. Um, I’m just really stressed abou
-    12.13s  agent 발화 시작: It sounds like you’re carrying a lot right now. Can you tell
-    12.23s  user  발화 끝
-    18.89s  agent 발화 끝
-    19.58s  user  발화 시작: Well, she keeps trying to set me up on dates.
-    22.35s  user  발화 끝
-    22.75s  agent 발화 시작: It’s very common for parents to want to see their children h
-    31.93s  agent 발화 끝
-    31.94s  user  발화 시작: It is! It feels like she doesn’t respect my choices at all. 
-    36.94s  agent 발화 시작: That feeling of a lack of respect is really important. Perha
-    37.22s  user  발화 끝
-    44.73s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Charlie, it’s lovely to meet you. I’m Teas, and I’m he
+     4.92s  user  발화 시작: Yeah.
+     5.64s  user  발화 끝
+     6.86s  agent 발화 끝
+     7.74s  user  발화 시작: Mindfulness, huh? That sounds…nice, I guess. I’m just really
+    13.90s  user  발화 끝
+    14.26s  agent 발화 시작: It’s perfectly okay to feel stressed, Charlie. Work can be a
+    19.18s  user  발화 시작: Yeah.
+    19.82s  user  발화 끝
+    22.29s  agent 발화 시작: Sometimes just naming what’s causing the stress can lessen i
+    22.33s  agent 발화 끝
+    31.67s  user  발화 시작: …Is this like therapy? I'm not sure I need *therapy* therapy
+    32.39s  agent 발화 끝
+    35.73s  agent 발화 시작: Charlie. It’s not quite the same. I'm here to offer tools an
+    35.80s  user  발화 끝
+    43.09s  agent 발화 끝
+    43.27s  user  발화 시작: Okay, that sounds…less intense. I’m just constantly worried 
+    49.45s  agent 발화 시작: It’s very common to feel that way, Charlie. Perfectionism ca
+    49.53s  user  발화 끝
+    57.84s  agent 발화 끝

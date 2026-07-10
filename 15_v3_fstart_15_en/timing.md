@@ -4,53 +4,59 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Sam",
+#     "name": "Ava",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-06",
-#       "category": "home",
-#       "text": "User's home address is 804 Oak Avenue."
+#       "date": "2026-04-07",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-02-28",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2026-01-25",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2026-01-07",
+#       "date": "2026-03-13",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-09-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-11-20",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-07-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
+#       "date": "2025-07-29",
+#       "category": "home",
+#       "text": "User's home address is 316 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-17",
+#       "date": "2026-04-29",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-08",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-06",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -60,51 +66,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m having trouble sleeping lately | S2 I wonder if my bedroom is too brig | S3 …Do weighted blankets help with th | S4 Okay, good to know. Thanks, Gunan.
+# EXAMINER(FDB-v2) 단계: S1 I’m thinking of going to Chicago,  | S2 That sounds good. Can you show me  | S3 I remember reading something about | S4 I'm also thinking of checking out 
 
-     0.00s  user  발화 시작: I’m having trouble sleeping lately. Do you have any suggesti
-     4.25s  user  발화 끝
-     4.34s  agent 발화 시작: Getting enough rest is so important, and I'm happy to help.
-     7.79s  user  발화 시작: I’ve tried cutting back on caffeine, but it doesn’t seem to 
-     7.95s  agent 발화 끝
-    12.28s  user  발화 끝
-    12.42s  agent 발화 시작: That’s a good first step! Sometimes, though, it takes a litt
-    17.13s  user  발화 시작: Mm-hmm.
-    17.76s  user  발화 끝
-    18.95s  agent 발화 끝
-    19.00s  user  발화 시작: I wonder if my bedroom is too bright?
-    21.19s  <ret> 발화 (turn6 첫 프레임)
-    21.27s  agent 발화 시작: <ret> It’s certainly possible that light is a factor—exposur
-    21.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: Light exposure before bed suppresses melatonin production, which can m
-    21.45s  user  발화 끝
-    24.16s  user  발화 시작: Right.
-    24.57s  user  발화 끝
-    30.03s  agent 발화 끝
-    30.11s  user  발화 시작: What’s the best temperature for sleeping?
-    32.69s  <ret> 발화 (turn9 첫 프레임)
-    32.70s  user  발화 끝
-    32.77s  agent 발화 시작: <ret> Your body temperature actually drops when you sleep, s
-    32.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: The ideal sleep temperature is between 60 and 67 degrees Fahrenheit, a
-    39.46s  user  발화 시작: …Do weighted blankets help with that, do you think?
-    40.18s  agent 발화 끝
-    42.50s  <ret> 발화 (turn11 첫 프레임)
-    42.68s  user  발화 끝
-    42.90s  agent 발화 시작: <ret> Weighted blankets can definitely be helpful for some p
-    42.90s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.24s]: Weighted blankets can promote relaxation by stimulating the release of
-    46.00s  agent 발화 시작: They can promote relaxation by increasing serotonin and dopa
-    46.13s  agent 발화 끝
-    54.04s  user  발화 시작: Yeah.
-    54.52s  user  발화 끝
-    58.43s  agent 발화 끝
-    58.87s  user  발화 시작: That sounds nice. Could you find me some highly-rated weight
-    63.42s  <ret> 발화 (turn15 첫 프레임)
-    63.60s  user  발화 끝
-    63.73s  agent 발화 시작: <ret> I found a couple of well-reviewed options—CozyCalm has
-    63.74s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.48s]: (tool result) CozyCalm Weighted Blanket — amazon.com: 4.6 stars, 23,00
-    70.27s  user  발화 시작: Yeah.
-    70.76s  user  발화 끝
-    74.14s  user  발화 시작: Okay, good to know. Thanks, Gunan.
-    74.21s  agent 발화 끝
-    76.17s  agent 발화 시작: You’re very welcome. Remember, small changes can make a big 
-    76.22s  user  발화 끝
-    81.82s  agent 발화 끝
+     0.00s  user  발화 시작: I’m thinking of going to Chicago, and I’d like to see some m
+     7.35s  <ret> 발화 (turn1 첫 프레임)
+     7.43s  agent 발화 시작: <ret> It sounds like you're planning a trip to Chicago, and 
+     7.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.13s]: Chicago's downtown area, known as the Loop, has several museums within
+     7.51s  user  발화 끝
+    14.62s  user  발화 시작: Okay.
+    15.44s  user  발화 끝
+    20.55s  agent 발화 끝
+    20.63s  user  발화 시작: Oh, that sounds lovely. What's the closest one to, say, Mill
+    24.86s  <ret> 발화 (turn4 첫 프레임)
+    25.10s  agent 발화 시작: <ret> The Art Institute of Chicago is the closest museum to 
+    25.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) The Art Institute of Chicago is 0.8 kilometers from Mill
+    25.17s  user  발화 끝
+    29.81s  user  발화 시작: Uh-huh.
+    30.31s  user  발화 끝
+    34.42s  agent 발화 시작: It's a place where you can really lose yourself in creativit
+    34.46s  agent 발화 끝
+    37.99s  user  발화 시작: Mm-hmm.
+    38.48s  user  발화 끝
+    40.26s  agent 발화 끝
+    40.29s  user  발화 시작: Is it open tomorrow?
+    41.80s  <ret> 발화 (turn9 첫 프레임)
+    42.04s  agent 발화 시작: <ret> Yes, the Art Institute will be open tomorrow, July ele
+    42.04s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.53s]: (tool result) The Art Institute of Chicago is open tomorrow, July 11, 
+    42.23s  user  발화 끝
+    48.58s  agent 발화 끝
+    49.30s  user  발화 시작: Great! And what about restaurants nearby? Somewhere not too 
+    53.36s  <ret> 발화 (turn11 첫 프레임)
+    53.60s  agent 발화 시작: <ret> There are several options! Revival Food Hall is quite 
+    53.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: (tool result) Revival Food Hall has a price range of $ and is 0.3 mile
+    53.74s  user  발화 끝
+    62.32s  agent 발화 끝
+    63.48s  user  발화 시작: That sounds good. Can you show me directions to Revival Food
+    68.82s  <ret> 발화 (turn13 첫 프레임)
+    69.13s  agent 발화 시작: <ret> From the Art Institute, head west on Adams Street, the
+    69.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.64s]: (tool result) Walking directions: Head west on E Adams St, turn right 
+    69.19s  user  발화 끝
+    78.78s  agent 발화 끝
+    80.18s  user  발화 시작: Perfect. I’m also wondering about the weather there tomorrow
+    84.50s  <ret> 발화 (turn15 첫 프레임)
+    84.62s  user  발화 끝
+    84.66s  agent 발화 시작: <ret> Tomorrow in Chicago will be quite pleasant, with a tem
+    84.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: (tool result) The weather in Chicago tomorrow, July 11, 2026, will be 
+    89.40s  user  발화 시작: Really?
+    90.22s  user  발화 끝
+    95.59s  user  발화 시작: That’s nice to know.
+    95.74s  agent 발화 끝
+    96.97s  user  발화 끝
+    97.37s  agent 발화 시작: Sometimes, knowing what to expect can ease a little anxiety,
+   100.69s  user  발화 시작: Yeah.
+   101.33s  user  발화 끝
+   102.83s  agent 발화 끝
+   102.91s  user  발화 시작: I remember reading something about a famous sculpture in Mil
+   108.36s  <ret> 발화 (turn21 첫 프레임)
+   108.60s  agent 발화 시작: <ret> Ah, yes, “The Bean”! It’s officially called Cloud Gate
+   108.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.08s]: Cloud Gate, nicknamed “The Bean” because of its shape, is a public scu
+   108.75s  user  발화 끝
+   115.32s  user  발화 시작: Mm-hmm.
+   115.82s  user  발화 끝
+   117.68s  agent 발화 끝
+   117.73s  user  발화 시작: I think I saw a picture of it once. What year was it install
+   120.92s  <ret> 발화 (turn24 첫 프레임)
+   121.32s  agent 발화 시작: <ret> Cloud Gate was installed in Millennium Park back in tw
+   121.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: Cloud Gate was installed in Millennium Park in 2006.
+   121.52s  user  발화 끝
+   128.04s  agent 발화 끝
+   128.18s  user  발화 시작: That’s a long time ago.
+   129.78s  agent 발화 시작: It’s amazing how quickly time passes, isn't it? Sometimes a 
+   129.88s  user  발화 끝
+   135.89s  agent 발화 끝
+   138.24s  user  발화 시작: I'm also thinking of checking out Wrigleyville.
+   140.97s  user  발화 끝
+   140.99s  agent 발화 시작: Wrigleyville is a vibrant neighborhood, known for its lively
+   146.78s  agent 발화 끝
+   146.93s  user  발화 시작: Is there anything happening there tomorrow?
+   149.61s  <ret> 발화 (turn30 첫 프레임)
+   149.70s  user  발화 끝
+   149.77s  agent 발화 시작: <ret> Yes, the Chicago Cubs are playing the St. Louis Cardin
+   149.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Chicago Cubs vs. St. Louis Cardinals at Wrigley Field, J
+   152.37s  user  발화 시작: Yeah.
+   152.81s  user  발화 끝
+   155.79s  agent 발화 끝
+   156.04s  user  발화 시작: That sounds fun!
+   157.76s  agent 발화 시작: It’s wonderful to find something that sparks your interest a
+   157.83s  user  발화 끝
+   163.31s  agent 발화 끝

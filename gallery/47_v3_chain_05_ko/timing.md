@@ -4,145 +4,136 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "연은",
+#     "name": "소우",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-18",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-09-12",
+#       "date": "2026-06-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2025-08-05",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2025-11-10",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-06-20",
+#       "date": "2025-09-29",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "text": "User is planning a trip to Vietnam in December."
+#     },
+#     {
+#       "date": "2025-09-22",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-20",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-10",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-03",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 저기, 혹시 위도 삼십사 점 영 오, 경도 백육 점 오 오에  | S2 그럼, 그냥 바로 가면 되는 건가요? | S3 오, 아직도 덥네요. | S4 혹시, 제가 칠월 십오일에 알버커키에서 출발하는 비행편을 찾아
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 시카고에서 덴버까지 비즈니스석 기차표 좀 알 | S2 아… 그럼, 칠월 이십오일은? | S3 고마워! | S4 이백오십달러면 좀 비싸네… 더 저렴한 곳은 없을까?
 
-     0.00s  user  발화 시작: 저기, 혹시 위도 삼십사 점 영 오, 경도 백육 점 오 오에 해당하는 주소가 뭐예요?
-     6.52s  <ret> 발화 (turn1 첫 프레임)
-     6.77s  user  발화 끝
-     6.84s  agent 발화 시작: <ret> 위도 삼십사 점 영 오, 경도 백육 점 오 오은 뉴멕시코주 앨버커키 센트럴 애비뉴 일 일 일 일 
-     6.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) 11111 Central Ave SE, Albuquerque, NM 87123 is the addre
-    15.74s  agent 발화 끝
-    16.20s  user  발화 시작: 아, 네. 그 근처에 맛있는 식당 좀 찾아주세요.
-    18.64s  <ret> 발화 (turn3 첫 프레임)
-    18.95s  agent 발화 시작: <ret> 그 근처에는 프론티어 레스토랑이 있는데, 스물네시간 운영하는 식당으로 뉴멕시코 요리가 유명합니다.
-    18.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.61s]: (tool result) Frontier Restaurant is a popular 24/7 diner known for it
-    18.98s  user  발화 끝
-    25.02s  user  발화 시작: 응.
-    25.34s  user  발화 끝
-    27.56s  agent 발화 끝
-    28.38s  user  발화 시작: 거기 평점 좀 알려줄 수 있어?
-    30.15s  <ret> 발화 (turn6 첫 프레임)
-    30.36s  user  발화 끝
-    30.38s  agent 발화 시작: <ret> 프론티어 레스토랑은 앨버커키에서 이천삼백사십오개의 리뷰를 바탕으로 평균 평점이 사 점 이점입니다.
-    30.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: (tool result) Frontier Restaurant in Albuquerque has an average rating
-    35.23s  user  발화 시작: 음.
-    35.59s  user  발화 끝
-    37.65s  agent 발화 끝
-    38.03s  user  발화 시작: 혹시 예약 가능한가요?
-    39.50s  <ret> 발화 (turn9 첫 프레임)
-    39.78s  user  발화 끝
-    39.81s  agent 발화 시작: <ret> 죄송하지만, 프론티어 레스토랑의 예약 정보는 찾을 수 없습니다.
-    39.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (no information found)
-    44.12s  agent 발화 끝
-    44.28s  user  발화 시작: 그럼, 그냥 바로 가면 되는 건가요?
-    47.33s  user  발화 끝
-    47.36s  agent 발화 시작: 네, 예약 없이 바로 가셔도 괜찮을 것 같아요. 스물네시간 운영하는 곳이니까요.
-    52.26s  agent 발화 끝
-    53.66s  user  발화 시작: 아, 고마워요. 그런데, 제가 지난달에 휴가를 다녀왔거든요.
-    58.98s  user  발화 끝
-    59.22s  agent 발화 시작: 네, 좋으셨겠네요. 어디로 다녀오셨어요?
-    62.60s  agent 발화 끝
-    63.55s  user  발화 시작: 음… 몰디브에 다녀왔는데, 너무 좋았어요.
-    67.86s  agent 발화 시작: 몰디브라니 정말 멋진 곳이네요. 휴가 잘 다녀오셨다니 다행입니다.
-    68.05s  user  발화 끝
-    71.88s  user  발화 시작: 그쪽 날씨는 지금 어때요?
-    72.02s  agent 발화 끝
-    73.39s  <ret> 발화 (turn17 첫 프레임)
-    73.76s  user  발화 끝
-    73.79s  agent 발화 시작: <ret> 몰디브의 현재 날씨는 기온 삼십 점 오도, 습도 칠십팔%, 풍속은 시속 십일 점 이킬로미터입니다.
-    73.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) The current weather in the Maldives is 30.5°C, humidity 
-    77.36s  user  발화 시작: 어.
-    78.08s  user  발화 끝
-    81.91s  user  발화 시작: 오, 아직도 덥네요.
-    82.04s  agent 발화 끝
-    83.70s  user  발화 끝
-    84.10s  agent 발화 시작: 네, 몰디브는 항상 더운 편이죠. 휴가 가기 좋은 날씨인 것 같아요.
-    86.75s  user  발화 시작: 응.
-    87.39s  user  발화 끝
-    88.58s  agent 발화 끝
-    89.41s  user  발화 시작: 혹시 몰디브 여행에 필요한 비자 정보 좀 알려줄 수 있을까요?
-    93.16s  user  발화 끝
-    93.22s  <ret> 발화 (turn23 첫 프레임)
-    93.53s  agent 발화 시작: <ret> 대한민국 국적자분들은 관광 목적으로 몰디브에 삼십일까지 비자 없이 입국할 수 있습니다.
-    93.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) South Korean citizens can enter the Maldives visa-free f
-    95.59s  user  발화 시작: 응.
-    95.99s  user  발화 끝
-   100.25s  agent 발화 끝
-   100.36s  user  발화 시작: 아, 다행이다. 그럼, 몰디브에서 가장 인기 있는 액티비티는 뭐예요?
-   104.78s  <ret> 발화 (turn26 첫 프레임)
-   104.86s  agent 발화 시작: <ret> 몰디브에서는 스쿠버 다이빙, 스노클링, 그리고 선셋 크루즈가 가장 인기 있는 액티비티입니다.
-   104.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Popular activities in the Maldives include scuba diving,
-   104.89s  user  발화 끝
-   109.62s  user  발화 시작: 어.
-   110.02s  user  발화 끝
-   111.40s  user  발화 시작: 스쿠버 다이빙… 저도 한번 해보고 싶네요.
-   111.44s  agent 발화 끝
-   114.60s  agent 발화 시작: 스쿠버 다이빙은 정말 멋진 경험이 될 거예요. 몰디브는 해양 생물이 풍부해서 더욱 아름답죠.
-   114.63s  user  발화 끝
-   119.94s  user  발화 시작: 아.
-   120.57s  user  발화 끝
-   121.56s  agent 발화 끝
-   121.57s  user  발화 시작: 혹시, 제가 칠월 십오일에 알버커키에서 출발하는 비행편을 찾아줄 수 있을까요?
-   126.98s  <ret> 발화 (turn32 첫 프레임)
-   127.08s  user  발화 끝
-   127.13s  agent 발화 시작: <ret> 죄송합니다. 칠월 십오일 알버커키 출발 항공편 정보는 찾을 수 없습니다.
-   127.14s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.00s]: (no information found)
-   129.79s  user  발화 시작: 응.
-   130.10s  user  발화 끝
-   132.07s  user  발화 시작: 아, 그럼 칠월 이십일로 다시 한번 찾아봐 줄래?
-   132.12s  agent 발화 끝
-   134.73s  <ret> 발화 (turn35 첫 프레임)
-   134.98s  user  발화 끝
-   135.04s  agent 발화 시작: <ret> 죄송합니다. 칠월 이십일 알버커키 출발 항공편 정보도 찾을 수 없습니다.
-   135.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (no information found)
-   139.89s  agent 발화 끝
-   140.82s  user  발화 시작: 음… 알았어. 그럼, 그냥 오늘은 이만 할게.
-   146.19s  user  발화 끝
-   146.44s  agent 발화 시작: 네, 편안한 저녁 보내세요.
-   148.38s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 시카고에서 덴버까지 비즈니스석 기차표 좀 알아봐 줘. 혼자 가는 거야.
+     5.29s  <ret> 발화 (turn1 첫 프레임)
+     5.32s  user  발화 끝
+     5.61s  agent 발화 시작: <ret> 음, 죄송해요. 현재 시카고에서 덴버까지 가는 기차편 정보를 찾을 수 없네요. 다른 날짜나 도시를
+     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (no information found)
+    10.81s  user  발화 시작: 응.
+    11.31s  user  발화 끝
+    12.84s  user  발화 시작: 아, 그래? 그럼 칠월 십오일로 해 봐.
+    12.84s  agent 발화 끝
+    15.11s  <ret> 발화 (turn4 첫 프레임)
+    15.34s  agent 발화 시작: <ret> 칠월 십오일도 마찬가지로 정보를 찾을 수 없어요. 혹시 다른 날짜를 생각해 보시겠어요? 아니면, 
+    15.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (no information found)
+    15.41s  user  발화 끝
+    20.95s  user  발화 시작: 아.
+    21.44s  user  발화 끝
+    24.18s  user  발화 시작: 음… 그럼 칠월 이십일은 어때?
+    24.38s  agent 발화 끝
+    26.21s  user  발화 끝
+    26.25s  <ret> 발화 (turn7 첫 프레임)
+    26.32s  agent 발화 시작: <ret> 죄송해요. 칠월 이십일에도 해당 조건에 맞는 기차편이 없네요. 다른 날짜를 알아봐 드릴까요?
+    26.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) No trains found matching your criteria.
+    32.62s  agent 발화 끝
+    33.01s  user  발화 시작: 아… 그럼, 칠월 이십오일은?
+    36.26s  <ret> 발화 (turn9 첫 프레임)
+    36.38s  user  발화 끝
+    36.41s  agent 발화 시작: <ret> 칠월 이십오일에 암트랙 캘리포니아 제퍼 편이 있어요. 오전 여덟시에 출발해서 오후 여섯시에 도착하
+    36.42s  ⚡SPAN 주입 [d'=1.04s / d_lead=10.25s]: (tool result) 1 train found: Amtrak California Zephyr, departs 8:00 AM
+    46.66s  agent 발화 끝
+    46.73s  user  발화 시작: 오, 있네! 그럼 그 기차표 좀 예매해 줘.
+    49.12s  <ret> 발화 (turn11 첫 프레임)
+    49.44s  agent 발화 시작: <ret> 네, 암트랙 캘리포니아 제퍼 편, 시카고에서 덴버, 칠월 이십오일, 비즈니스석, 일인, 예약이 완
+    49.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) Booking confirmed: Amtrak California Zephyr, Chicago to 
+    49.46s  user  발화 끝
+    55.95s  user  발화 시작: 진짜?
+    56.58s  user  발화 끝
+    62.01s  agent 발화 끝
+    63.40s  user  발화 시작: 고마워!
+    64.36s  user  발화 끝
+    64.50s  agent 발화 시작: 천만에요. 새로운 환경에 적응하는 여정은 늘 설렘과 약간의 두려움을 동반하죠. 작은 변화라도, 자신을 믿고 
+    67.52s  user  발화 시작: 음.
+    68.02s  user  발화 끝
+    74.00s  agent 발화 시작: 새로운 시작은 언제나 기회를 가져다 준답니다. 혹시 여행 준비에 필요한 다른 정보가 있으신가요? 숙소나 주변
+    74.23s  agent 발화 끝
+    82.56s  user  발화 시작: 어.
+    83.33s  user  발화 끝
+    85.87s  agent 발화 끝
+    87.69s  user  발화 시작: 음… 덴버 근처에 좋은 호텔 좀 알아봐 줘.
+    90.70s  <ret> 발화 (turn19 첫 프레임)
+    91.01s  agent 발화 시작: <ret> 덴버 브라운 팰리스 호텔 앤 스파가 괜찮은 곳 같아요. 별점은 사 점 오점이고, 일박에 이백오십달
+    91.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.69s]: (tool result) The Brown Palace Hotel & Spa, 4.5 stars, $250/night, 321
+    91.06s  user  발화 끝
+    97.41s  user  발화 시작: 응.
+    97.82s  user  발화 끝
+   104.70s  agent 발화 끝
+   105.17s  user  발화 시작: 이백오십달러면 좀 비싸네… 더 저렴한 곳은 없을까?
+   109.99s  <ret> 발화 (turn22 첫 프레임)
+   110.06s  agent 발화 시작: <ret> 그럼 라 킨타 인 바이 윈덤 덴버 센트럴은 어떠세요? 별점은 삼점이고, 일박에 백이십달러이며, 주
+   110.06s  user  발화 끝
+   110.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) La Quinta Inn by Wyndham Denver Central, 3 stars, $120/n
+   122.63s  agent 발화 끝
+   122.91s  user  발화 시작: 오, 백이십달러면 괜찮네.
+   125.18s  user  발화 끝
+   125.74s  agent 발화 시작: 좋은 선택이에요. 새로운 공간에서 편안하게 머무는 것도 중요한 부분이죠. 여행을 통해 자신을 더 깊이 알아가
+   134.97s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "민우",
+#     "name": "도재",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -18,66 +18,61 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2026-04-09",
+#       "date": "2026-06-09",
 #       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in March."
+#       "text": "User is planning a trip to Iceland in May."
 #     },
 #     {
-#       "date": "2026-03-07",
+#       "date": "2026-05-19",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-03-05",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2026-03-14",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2026-02-11",
+#       "date": "2026-02-14",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-31",
 #       "category": "work",
 #       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-10-21",
-#       "category": "home",
-#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-02",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-02-23",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-02",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 민우님. 저는 엘린이라고 해요. 가족이나 관계에 대해 고민이 있으실 때 편안하게 이야기 나눌 수
-     8.39s  agent 발화 끝
-     9.34s  user  발화 시작: 음, 엘린이라고 하니까 좀 색다른데요? 혹시… 진짜 상담사세요?
-    13.63s  agent 발화 시작: 제가 진짜 상담사는 아니지만, 민우님의 마음을 이해하고 함께 고민하는 데 도움을 드릴 수 있도록 노력할게요.
-    13.74s  user  발화 끝
-    18.87s  user  발화 시작: 어.
-    19.60s  user  발화 끝
-    22.21s  agent 발화 끝
-    22.31s  user  발화 시작: 사실 엄마랑 계속 다투고 있어요. 제가 뭘 해도 마음에 안 드시는 것 같아서…
-    27.49s  user  발화 끝
-    27.74s  agent 발화 시작: 어머님과의 관계 때문에 힘드시군요. 어떤 부분에서 주로 갈등이 생기시는지 조금 더 자세히 말씀해 주시겠어요?
-    34.83s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 도재님. 저는 여러분의 마음 건강을 돕는 상담사, 티스예요. 오늘 하루 어떠신가요?
+     4.55s  user  발화 시작: 응.
+     5.00s  user  발화 끝
+     6.35s  agent 발화 끝
+     7.20s  user  발화 시작: 티스요? 이름이 좀 독특하네요. 무슨 일을 하는 분이세요?
+    11.07s  agent 발화 시작: 저는 스트레스 해소와 마음 챙김을 통해 여러분이 좀 더 편안하게 지낼 수 있도록 돕는 역할을 해요. 혹시 지
+    11.22s  user  발화 끝
+    16.56s  user  발화 시작: 응.
+    17.01s  user  발화 끝
+    20.07s  agent 발화 끝
+    20.16s  agent 발화 시작: 숨을 깊게 쉬어 보세요. 때로는 잠시 멈춰서 자신의 감정에 귀 기울이는 것만으로도 큰 도움이 될 수 있답니다
+    26.30s  user  발화 시작: …제가 요즘 너무 불안해서요. 특히 회사 일이 잘 풀리지 않을 때면 더 그래요.
+    26.93s  agent 발화 끝
+    31.16s  agent 발화 시작: 불안하시군요. 회사 일이 잘 풀리지 않을 때 느끼는 압박감이 크신 것 같아요. 그런 감정이 드는 상황을 좀 
+    31.30s  user  발화 끝
+    39.04s  agent 발화 끝
+    39.45s  user  발화 시작: 음… 매일 야근하고, 상사도 너무 까다롭고, 미래에 대한 걱정도 많고… 그냥 다 싫어져요.
+    46.81s  user  발화 끝
+    47.23s  agent 발화 시작: 매일 야근하시고, 상사 때문에 힘드시고, 미래에 대한 불안감까지 느끼시는군요. 여러 가지 어려움이 한꺼번에 
+    58.59s  agent 발화 끝

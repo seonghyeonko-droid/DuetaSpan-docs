@@ -1,60 +1,82 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Baera, a gentle and reflective personal guide who helps people with family and relationships. <system>
+SYSTEM: <system> You are Elo, a gentle and reflective personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Jack",
+    "name": "Quinn",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "early 30s",
-    "language": "French"
+    "nationality": "Australian",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
-    },
-    {
-      "date": "2026-04-10",
+      "date": "2026-06-23",
       "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-11-12",
+      "date": "2026-04-29",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-12-12",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-27",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "text": "User is planning a trip to Vietnam in August."
     },
     {
-      "date": "2025-09-18",
+      "date": "2025-08-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-05-28",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-08-06",
-      "category": "home",
-      "text": "User's home address is 614 Oak Avenue."
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-18",
-      "title": "Researching a used car",
+      "date": "2026-06-01",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-21",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-11",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who was the other main candidate for president in 2016, besides Hillary ⟨ret@5.70s⟩ Clinton?
-[  5.93s][moshi] ⟦⚡SPAN@5.94s: Bernie Sanders ran for the Democratic nomination for president in 2016.⟧ It was Bernie Sanders who also sought the nomination—a truly passionate voice, wasn’t it?
+[  0.00s][user ] Who played Harper Finkle…
+[  3.65s][user ] …on Wizards of Waverly ⟨ret@5.39s⟩ Place?
+[  5.55s][moshi] ⟦⚡SPAN@5.63s: Jennifer Stone portrayed Harper Finkle in the Disney Channel series Wizards of Waverly Place.⟧ That would be Jennifer Stone, who wonderfully played Harper Finkle in Wizards of Waverly Place. It’s lovely how actors bring characters to life, isn’t it?

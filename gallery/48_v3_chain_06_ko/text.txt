@@ -1,109 +1,105 @@
 v3_chain_06_ko src=mcp style=mcp_chained
-SYSTEM: <system> 당신은 수면과 휴식을 돕는 실용적이고 안심시키는 개인 가이드인 Tora입니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Eloraus입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_06",
-    "name": "라진",
+    "name": "세준",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
+    "gender": "non-binary",
     "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-05",
-      "category": "work",
-      "text": "User works as a accountant."
+      "date": "2026-06-05",
+      "category": "home",
+      "text": "User's home address is 서울 종로구 세종대로 175."
     },
     {
-      "date": "2025-11-02",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-06-29",
+      "date": "2025-11-18",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-06-09",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-10-08",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-08-04",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in May."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-25",
+      "date": "2026-04-12",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-12-10",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-05-27",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 시티 라이츠 서점 전화번호 좀 ⟨ret@2.43s⟩ 알려줘.
-[  2.67s][moshi] ⟦⚡SPAN@2.67s: (tool result) City Lights Bookstore is located at 261 Columbus Ave, San Francisco, CA 94133. Their phone numbe⟧ 시티 라이츠 서점은 콜롬버스 애비뉴 이백육십일번지에 있고, 전화번호는 사 일 오 삼 구 사 일 구 오 일번입니다. 혹시 다른 정보가 필요하신가요?
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJdd4hrwugEmsRUzbRhSpwRuM"}}
-[  8.29s][user ] «backchannel» 우와.
-[ 14.58s][user ] 응, 고마워. 그 서점 근처에 괜찮은 카페 ⟨ret@18.17s⟩ 있어?
-[ 18.40s][moshi] ⟦⚡SPAN@18.41s: (tool result) There are several cafes near City Lights Bookstore, including Caffe Trieste, Washington Square B⟧ 시티 라이츠 서점 근처에는 카페 트리스테, 워싱턴 스퀘어 바 앤 그릴, 그리고 카페 트리스테가 있습니다.
-      CALL: {"function": "maps_around_search", "arguments": {"location": "City Lights Bookstore", "type": "cafe"}}
-[ 20.89s][user ] «backchannel» 어.
-[ 25.68s][user ] 카페 트리스테가 제일 유명한가 보네.
-[ 28.11s][moshi] 네, 카페 트리스테는 그 지역에서 꽤 유명한 곳입니다. 오래된 역사도 가지고 있고요.
-[ 34.08s][user ] 그 카페 트리스테 영업시간이 어떻게 ⟨ret@36.24s⟩ 돼?
-[ 36.64s][moshi] ⟦⚡SPAN@36.64s: (tool result) Caffe Trieste is open from 6:00 AM to 10:00 PM, seven days a week.⟧ 카페 트리스테는 일주일 내내 아침 여섯시부터 밤 열시까지 영업합니다.
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJg-t6fJ4EmsRUzLqW-R2R2hQ"}}
-[ 41.16s][user ] 아, 늦게까지 하는구나. 그럼 거기까지 가는 가장 빠른 길은 어떻게 돼?
-[ 46.03s][moshi] ⟨ret@45.80s⟩ ⟦⚡SPAN@46.04s: (tool result) The fastest route to Caffe Trieste from your current location is via Columbus Avenue and Grant A⟧ 현재 위치에서 카페 트리스테까지 가장 빠른 길은 콜롬버스 애비뉴와 그랜트 애비뉴를 거치는 거예요. 걸어서 약 십오분 정도 걸립니다.
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Caffe Trieste"}}
-[ 56.43s][user ] 십오분이면 괜찮네. 그런데 지금 날씨는 어때? ⟨ret@60.27s⟩
-[ 60.43s][moshi] ⟦⚡SPAN@60.43s: (tool result) The current weather in San Francisco is 18.3°C, with humidity at 65% and a wind speed of 8.2 km/⟧ 현재 샌프란시스코 날씨는 십팔 점 삼도이고, 습도는 육십오%, 풍속은 시속 팔 점 이킬로미터입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco"}}
-[ 67.31s][user ] 겉옷 안 입고 가도 되겠네.
-[ 69.34s][moshi] 네, 오늘 날씨면 겉옷 없이 가셔도 괜찮을 것 같아요. 편안하게 다녀오세요.
-[ 75.28s][user ] 혹시 그 근처에 주차할 곳도 ⟨ret@77.45s⟩ 있을까?
-[ 77.84s][moshi] ⟦⚡SPAN@77.85s: (tool result) There are several parking garages near Caffe Trieste, including the Union Square Garage and the ⟧ 카페 트리스테 근처에는 유니온 스퀘어 주차장과 서터-스톡턴 주차장 같은 주차장이 여러 곳 있습니다.
-      CALL: {"function": "maps_around_search", "arguments": {"location": "Caffe Trieste", "type": "parking"}}
-[ 84.34s][user ] 주차장이 많이 있네. 그럼 그 주차장들 가격은 어느 정도 해?
-[ 88.36s][moshi] 주차장 가격은 시간당 다르지만, 대략 팔달러에서 십이달러 정도 예상하시면 됩니다.
-[ 91.44s][user ] «backchannel» 그래.
-[ 94.10s][user ] 으음… 팔달러에서 십이달러면 좀 비싼가?
-[ 97.99s][moshi] «interrupted» 네, 샌프란시스코 물가를 생각하면 일반적인 가격입니다. —
-[100.94s][user ] «interrupts_prev» … 아니, 잠깐만. 혹시 그 근처에 서점 말고 다른 볼거리도 있어?
-[106.48s][moshi] 그 근처에는 롬바르드 스트리트와 피셔맨스 워프 같은 관광 명소가 있습니다.
-[111.60s][user ] 롬바르드 스트리트? 거긴 어떤 ⟨ret@114.59s⟩ 곳인데?
-[114.91s][moshi] ⟦⚡SPAN@114.91s: (tool result) Lombard Street is known as "the most crooked street in the world", featuring eight hairpin turns⟧ 롬바르드 스트리트는 "세계에서 가장 구불구불한 길"로 알려져 있으며, 여덟개의 헤어핀 커브가 특징입니다.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Lombard Street, San Francisco"}}
-[120.19s][user ] «backchannel» 그래.
-[121.82s][user ] 와, 구불구불한 길이라니 신기하네.
-[124.88s][moshi] 네, 사진 찍기에도 좋은 곳이에요. 많은 관광객들이 방문하는 곳이기도 하고요.
-[129.84s][user ] 그럼 롬바르드 스트리트에서 피셔맨스 워프까지 얼마나 ⟨ret@134.23s⟩ 걸릴까?
-[134.47s][moshi] ⟦⚡SPAN@134.47s: (tool result) The distance between Lombard Street and Fisherman's Wharf is approximately 2.5 miles, and it tak⟧ 롬바르드 스트리트에서 피셔맨스 워프까지는 약 사킬로미터 정도이고, 차로 십오분에서 이십분 정도 걸립니다.
-      CALL: {"function": "maps_distance", "arguments": {"origin": "Lombard Street, San Francisco", "destination": "Fisherman's Wharf, San Francisco"}}
-[137.64s][user ] «backchannel» 진짜?
-[142.26s][user ] 차로 가면 되겠네. 혹시 피셔맨스 워프에서 꼭 먹어봐야 할 음식 있어?
-[147.64s][moshi] 피셔맨스 워프에서는 클램 차우더를 꼭 드셔보세요. 신선한 해산물로 만든 맛있는 수프입니다.
-[152.85s][user ] «backchannel» 그치.
-[155.25s][user ] 클램 차우더, 알았어. 그럼 이제 서점부터 카페, 롬바르드 스트리트, 피셔맨스 워프까지 가는 일정을 정리해 줄 수 있어?
-[164.04s][moshi] 네, 가능합니다. 서점 방문 후 카페에서 잠시 휴식을 취하고, 롬바르드 스트리트를 구경한 뒤 피셔맨스 워프에서 식사를 즐기는 코스를 추천합니다.
-[173.84s][user ] 좋아, 그거대로 해 줘. 혹시 오늘 저녁에 좋은 영화 볼만한 거 ⟨ret@178.56s⟩ 있어?
-[178.88s][moshi] ⟦⚡SPAN@178.88s: (tool result) Currently playing in San Francisco are "Inside Out 2", "Bad Boys: Ride or Die", and "The Garfiel⟧ 현재 샌프란시스코에서 상영 중인 영화는 "인사이드 아웃 이", "배드 보이즈: 라이드 오어 다이", 그리고 "가필드 무비"입니다.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {"location": "San Francisco"}}
-[186.53s][user ] 인사이드 아웃 이는 어떤 영화야?
-[189.28s][moshi] ⟨ret@189.12s⟩ ⟦⚡SPAN@189.28s: (tool result) Inside Out 2 follows Riley as she navigates adolescence, with new emotions like Anxiety joining ⟧ "인사이드 아웃 이"는 사춘기를 겪는 라일리의 이야기를 다루며, 불안과 같은 새로운 감정이 기쁨, 슬픔, 분노, 두려움, 혐오와 함께 등장합니다.
-      CALL: {"function": "search", "arguments": {"query": "Inside Out 2 plot summary"}}
-[199.96s][user ] 오, 흥미로운 내용이네. 그럼 영화 예매는 어떻게 해야 돼?
-[204.07s][moshi] 영화 예매는 온라인 예매 사이트나 영화관 앱을 통해 하실 수 있습니다.
-[209.18s][user ] 알았어. 고마워.
-[210.90s][moshi] 천만에요. 즐거운 시간 보내세요.
+[  0.00s][user ] 타지마할의 좌표가 어떻게 ⟨ret@1.69s⟩ 돼요?
+[  1.92s][moshi] ⟦⚡SPAN@1.93s: (tool result) The Taj Mahal is located at 27.1751° N, 78.0421° E.⟧ 타지마할은 북위 이십칠 점 일 칠도, 동경 칠십팔 점 영 사도에 위치하고 있습니다.
+      CALL: {"function": "map_geo", "arguments": {"query": "Taj Mahal"}}
+[  8.44s][moshi] 아름다운 곳이죠. 혹시 방문 계획이 있으신가요?
+[ 14.01s][user ] 음, 내년 오월쯤에 가볼까 생각 중이야.
+[ 17.23s][moshi] 내년 오월은 좋은 시기일 것 같아요. 날씨도 쾌적하고 관광객도 많지 않아서요.
+[ 22.38s][user ] 그럼 그 근처 호텔도 좀 알아봐 줄 수 ⟨ret@24.73s⟩ 있어?
+[ 24.89s][moshi] ⟦⚡SPAN@24.89s: (tool result) 5 hotels found near Taj Mahal: ITC Mughal, a Luxury Collection Hotel, Agra; The Oberoi Amarvilas⟧ 타지마할 근처에 호텔 다섯 곳이 있습니다. ITC 무갈, 오베로이 아마르빌라스, 코트야드 매리어트 아그라, 크리스탈 사로바르 프리미어 아그라, 호텔 타지 리조트입니다.
+      CALL: {"function": "Hotels_2_SearchHotel", "arguments": {"location": "Taj Mahal"}}
+[ 36.03s][moshi] 어떤 스타일의 호텔을 선호하시나요?
+[ 38.49s][user ] 너무 비싼 곳 말고, 적당한 가격대의 호텔로 부탁해. ⟨ret@42.42s⟩
+[ 42.65s][moshi] ⟦⚡SPAN@42.66s: (tool result) Courtyard by Marriott Agra (₹6,000/night), Crystal Sarovar Premiere Agra (₹5,500/night), Hotel T⟧ 코트야드 매리어트 아그라가 육천 루피, 크리스탈 사로바르 프리미어 아그라가 오천 오백 루피, 호텔 타지 리조트가 사천 루피 정도입니다.
+      CALL: {"function": "Hotels_2_SearchHotel", "arguments": {"location": "Taj Mahal", "price_range": "moderate"}}
+[ 51.06s][moshi] 이 중에서 마음에 드는 곳이 있으신가요?
+[ 53.97s][user ] 코트야드 매리어트 아그라가 괜찮아 보이는데, 그 호텔에 대한 정보를 좀 더 자세히 알려줄 수 있어? ⟨ret@60.62s⟩
+[ 60.86s][moshi] «interrupted» ⟦⚡SPAN@60.86s: (tool result) Courtyard by Marriott Agra has a rating of 4.5 stars, offers free WiFi, and has a restaurant and⟧ 코트야드 매리어트 아그라는 별점 사 점 오점이고, 무료 와이파이와 레스토랑, 피트니스 센터를 갖추고 있습니다. —
+      CALL: {"function": "map_place_details", "arguments": {"query": "Courtyard by Marriott Agra"}}
+[ 67.97s][user ] «interrupts_prev» …그 호텔에서 타지마할까지 도보로 갈 수 있어?
+[ 70.94s][moshi] 네, 도보로 약 이 점 오킬로미터 거리입니다.
+[ 73.63s][user ] 그럼 그 호텔을 예약해 줘. 내년 오월 십일부터 삼박으로.
+[ 77.53s][moshi] ⟨ret@77.38s⟩ ⟦⚡SPAN@77.54s: (tool result) Booking confirmed for Courtyard by Marriott Agra, check-in 2027-05-10, 3 nights, confirmation ID⟧ 코트야드 매리어트 아그라 예약이 완료되었습니다. 이천이십칠년 오월 십일 체크인, 삼박, 확인번호는 칠 팔 구 사 오 육입니다.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Courtyard by Marriott Agra", "check_in_date": "2027-05-10", "duration": "3"}}
+[ 87.04s][moshi] 즐거운 여행 되세요.
+[ 88.36s][user ] 고마워. 혹시 아그라에서 가볼 만한 다른 곳도 있어?
+[ 91.78s][moshi] ⟨ret@91.62s⟩ ⟦⚡SPAN@91.78s: (tool result) Agra Fort, Itmad-ud-Daulah's Tomb (Baby Taj), Mehtab Bagh, Fatehpur Sikri are popular attraction⟧ 아그라 포트, 잇마드-우드-다울라의 무덤, 메흐타브 바그, 파테푸르 시크리가 아그라에서 인기 있는 관광지입니다.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Agra"}}
+[ 99.86s][moshi] 역사적인 유적지가 많으니, 관심 있는 곳을 방문해 보시는 것도 좋을 것 같습니다.
+[105.12s][user ] 앗, 맞아. 아그라 포트랑 잇마드-우드-다울라의 무덤은 꼭 가보고 싶어.
+[110.23s][moshi] 좋은 선택입니다. 두 곳 모두 아름다운 건축물로 유명합니다.
+[112.87s][user ] «backchannel» 응.
+[115.37s][user ] 아그라 날씨는 내년 오월에 어때? ⟨ret@117.89s⟩
+[118.13s][moshi] ⟦⚡SPAN@118.13s: (tool result) The weather in Agra on May 10, 2027, is expected to be 35.0°C, humidity 40%, with a light breeze⟧ 이천이십칠년 오월 십일 아그라의 날씨는 삼십오도, 습도 사십%이며, 가벼운 바람이 불 것으로 예상됩니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Agra", "date": "2027-05-10"}}
+[127.44s][moshi] 가벼운 옷차림을 준비하시는 것이 좋겠습니다.
+[130.41s][user ] 알았어. 정말 고마워.
+[132.48s][moshi] 도움이 되었다니 기쁩니다.

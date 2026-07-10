@@ -4,85 +4,102 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Thomas",
+#     "name": "Grace",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "late 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
+#       "date": "2026-06-22",
+#       "category": "home",
+#       "text": "User's home address is 143 Pine Court."
+#     },
+#     {
+#       "date": "2025-12-23",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-11-26",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-10-20",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-05-06",
+#       "date": "2025-09-12",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-16",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User is planning a trip to Kyoto in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-03",
+#       "date": "2026-03-10",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-03",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-07-03",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hi Nuna. That’s… a nice name.  | S2 He just… won’t listen. Tantrums al | S3 That’s… interesting. She’s tried r | S4 [sigh] That sounds… hard to fit in
+# EXAMINER(FDB-v2) 단계: S1 Brean… that’s an unusual name. Wha | S2 It’s just… everything. He won’t pl | S3 …but is it really *that* bad? All  | S4 I just want him to be happy, and t
 
-     0.00s  agent 발화 시작: Hello Thomas, it’s lovely to meet you. I’m Nuna, and I’m her
-     6.36s  user  발화 시작: Okay.
-     7.18s  user  발화 끝
-     8.51s  user  발화 시작: Oh, hi Nuna. That’s… a nice name. I’m just feeling really ov
-     8.57s  agent 발화 끝
-    15.13s  agent 발화 시작: It's completely understandable to feel overwhelmed, Thomas. 
-    15.23s  user  발화 끝
-    27.23s  agent 발화 끝
-    27.90s  user  발화 시작: Well, it's my little sister, actually. She’s having a really
-    33.66s  agent 발화 시작: That sounds difficult. It's common for toddlers to test boun
-    33.69s  user  발화 끝
-    38.56s  user  발화 시작: Uh-huh.
-    39.11s  user  발화 끝
-    43.34s  user  발화 시작: He just… won’t listen. Tantrums all the time, refusing to ea
-    43.77s  agent 발화 끝
-    51.64s  user  발화 끝
-    51.66s  agent 발화 시작: It’s so hard when a child is consistently refusing to cooper
-    55.82s  user  발화 시작: Mhm.
-    56.45s  user  발화 끝
-    62.82s  agent 발화 시작: Sometimes, simply acknowledging Leo’s feelings can make a di
-    62.88s  agent 발화 끝
-    76.92s  agent 발화 끝
-    77.01s  user  발화 시작: That’s… interesting. She’s tried rewards, time-outs, everyth
-    83.18s  agent 발화 시작: It sounds like she’s putting in a lot of effort, and it’s ad
-    83.21s  user  발화 끝
-    91.68s  user  발화 시작: Yeah, totally.
-    92.97s  user  발화 끝
-    94.78s  agent 발화 끝
-    95.93s  user  발화 시작: Connecting? What does that even mean, practically?
-    99.44s  user  발화 끝
-    99.56s  agent 발화 시작: It means setting aside dedicated, uninterrupted time—even ju
-   111.80s  agent 발화 끝
-   111.99s  user  발화 시작: [sigh] That sounds… hard to fit in. I’ll suggest it though. 
-   119.40s  user  발화 끝
+     0.00s  agent 발화 시작: Bonjour, Grace. I’m Brean, and I’m here to offer a little su
+     4.17s  user  발화 시작: Yeah.
+     4.80s  user  발화 끝
+     6.13s  user  발화 시작: Brean… that’s an unusual name. What exactly *do* you do?
+     6.25s  agent 발화 끝
+    10.75s  agent 발화 시작: I help people find ways to connect with their children, mana
+    10.81s  user  발화 끝
+    21.18s  agent 발화 끝
+    21.91s  user  발화 시작: Welll… I’m struggling with screen time. My son, Leo, is glue
+    27.25s  agent 발화 시작: That’s a very common worry, Grace. It’s hard when technology
+    27.33s  user  발화 끝
+    36.90s  agent 발화 끝
+    37.33s  user  발화 시작: It’s just… everything. He won’t play outside, he’s grumpy wh
+    43.00s  agent 발화 시작: It sounds exhausting, trying to balance his needs with what 
+    43.26s  user  발화 끝
+    49.25s  user  발화 시작: …but is it really *that* bad? All the other kids have tablet
+    50.09s  agent 발화 끝
+    54.94s  user  발화 끝
+    54.98s  agent 발화 시작: That's a valid concern, Grace. Feeling included is important
+    66.77s  agent 발화 끝
+    67.58s  user  발화 시작: A balance… like, how much is too much? I don’t even know whe
+    72.13s  agent 발화 시작: There isn’t one right answer, Grace. It depends on Leo’s age
+    72.31s  user  발화 끝
+    79.34s  user  발화 시작: Right.
+    79.98s  user  발화 끝
+    84.09s  agent 발화 끝
+    84.17s  user  발화 시작: I just want him to be happy, and to enjoy being a kid, you k
+    90.10s  user  발화 끝
+    90.23s  agent 발화 시작: That’s a beautiful wish, Grace. It’s a lovely reminder that 
+    99.27s  agent 발화 끝

@@ -4,135 +4,159 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Alice",
+#     "name": "Anna",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "Canadian",
 #     "gender": "female",
-#     "age_range": "40s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
-#     },
-#     {
-#       "date": "2025-11-13",
+#       "date": "2026-05-07",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-10-29",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "date": "2026-02-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
 #     },
 #     {
-#       "date": "2025-06-19",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-01-01",
+#       "category": "home",
+#       "text": "User's home address is 764 Elm Street."
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-19",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-10",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 알았어, CustomCrawler 버전 2.5로 사용자 에이전 | S2 부산이 괜찮을 것 같아. 좋은 호텔 있어? | S3 캡슐 호텔은…미니멀리스트 같아. | S4 좋아, 알았어. 다음 금요일 서울에서 부산 가는 버스표 좀 찾
+# EXAMINER(FDB-v2) 단계: S1 온라인 양식 작성하는 거 도와주실 수 있어요? | S2 그 산책을 위해 서울에 있는 좋은 공원을 찾아보려고 해요. 공 | S3 …지금 몇 시인지 알려줄 수 있나요? | S4 아이들이 좋아할까요?
 
-     0.00s  user  발화 시작: 알았어, CustomCrawler 버전 2.5로 사용자 에이전트 설정해 줘.
-     3.94s  <ret> 발화 (turn1 첫 프레임)
-     4.09s  agent 발화 시작: <ret> 네, 요청하신 대로 사용자 에이전트를 CustomCrawler 버전 2.5로 설정했습니다.
-     4.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) {"user-agent": "CustomCrawler version 2.5"}
-     4.26s  user  발화 끝
-     6.51s  user  발화 시작: 어어.
-     6.96s  user  발화 끝
-     9.18s  agent 발화 끝
-     9.68s  user  발화 시작: 음, 서울 날씨는 지금 어때?
-    11.42s  <ret> 발화 (turn4 첫 프레임)
-    11.66s  user  발화 끝
-    11.73s  agent 발화 시작: <ret> 서울 날씨는 현재 섭씨 23.0도이고, 습도는 74퍼센트, 풍속은 시속 5.5킬로미터입니다.
-    11.74s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.13s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    14.93s  user  발화 시작: 응.
-    15.33s  user  발화 끝
-    18.86s  agent 발화 끝
-    18.87s  user  발화 시작: 기분 좋은데. 짧게 여행이나 갈까 싶어.
-    21.45s  user  발화 끝
-    21.72s  agent 발화 시작: 여행은 정말 좋죠! 혹시 가고 싶은 곳이 있으세요, 아니면 추천해 드릴까요? 편안하게 여행 계획을 세울 수 
-    30.06s  agent 발화 끝
-    30.13s  user  발화 시작: 부산이 괜찮을 것 같아. 좋은 호텔 있어?
-    32.63s  <ret> 발화 (turn9 첫 프레임)
-    32.94s  agent 발화 시작: <ret> 부산에는 호텔 LCT 더 프라임이 1박에 15만 원이고, 파라다이스 호텔 부산은 22만 원, 파크
-    32.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: (tool result) Hotel LCT The Prime — ₩150,000/night; Paradise Hotel Bus
-    33.13s  user  발화 끝
-    42.16s  agent 발화 끝
-    43.64s  user  발화 시작: 와, 파크 하얏트는…비싸네. 좀 더 저렴한 곳은 없을까?
-    47.91s  agent 발화 시작: 예산을 고려하시는 건 정말 현명하세요. 검색 범위를 좁혀볼게요. 좀 더 저렴한 옵션을 위해 생각하시는 가격대
-    48.09s  user  발화 끝
-    51.56s  user  발화 시작: 응.
-    51.92s  user  발화 끝
-    56.86s  agent 발화 끝
-    56.89s  user  발화 시작: 음, 10만 원 이하로.
-    57.94s  <ret> 발화 (turn14 첫 프레임)
-    58.34s  agent 발화 시작: <ret> 호텔 마토는 1박에 8만 5천 원이고, 부산역 캡슐 호텔은 6만 원입니다. 혹시 이 두 곳 중에 
-    58.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: (tool result) Hotel Mato — ₩85,000/night; Busan Station Capsule Hotel 
-    58.36s  user  발화 끝
-    66.91s  user  발화 시작: 캡슐 호텔은…미니멀리스트 같아.
-    66.91s  agent 발화 끝
-    69.22s  <ret> 발화 (turn16 첫 프레임)
-    69.45s  agent 발화 시작: <ret> 좀 더 편안함을 원하시는 마음은 이해가 갑니다. 호텔 마토는 무료 와이파이와 아침 식사를 제공해서
-    69.59s  user  발화 끝
-    70.18s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.93s]: Hotel Mato offers free Wi-Fi and breakfast.
-    80.35s  agent 발화 끝
-    80.98s  user  발화 시작: 그게 더 나은 것 같아. 부산에서 할 만한 거 있어?
-    83.43s  <ret> 발화 (turn18 첫 프레임)
-    83.67s  agent 발화 시작: <ret> 부산에는 해운대 해수욕장, 감천문화마을, 자갈치시장, 태종대공원 등 즐길 거리가 많습니다.
-    83.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Haeundae Beach, Gamcheon Culture Village, Jagalchi Fish 
-    83.89s  user  발화 끝
-    89.81s  user  발화 시작: 감천문화마을…재미있을 것 같아. 뭘로 유명해?
-    90.34s  agent 발화 끝
-    93.19s  user  발화 끝
-    93.45s  <ret> 발화 (turn20 첫 프레임)
-    93.60s  agent 발화 시작: <ret> 감천문화마을은 다채로운 색상의 집들과 독특한 예술 작품으로 유명해서 아주 그림 같은 곳입니다.
-    93.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: Gamcheon Culture Village is known for its colorful houses and art inst
-    95.63s  user  발화 시작: 그치.
-    96.09s  user  발화 끝
-   100.28s  agent 발화 끝
-   100.82s  user  발화 시작: 좋아, 알았어. 다음 금요일 서울에서 부산 가는 버스표 좀 찾아줘.
-   105.23s  <ret> 발화 (turn23 첫 프레임)
-   105.36s  agent 발화 시작: <ret> 오후 2시에 2만 5천 원짜리 버스, 오후 4시 30분에 2만 8천 원짜리 버스, 그리고 오후 7
-   105.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) 14:00 — ₩25,000; 16:30 — ₩28,000; 19:00 — ₩26,000
-   105.45s  user  발화 끝
-   113.81s  user  발화 시작: 오후 2시 버스로 할게.
-   113.89s  agent 발화 끝
-   115.04s  <ret> 발화 (turn25 첫 프레임)
-   115.28s  agent 발화 시작: <ret> 알겠습니다. 다음 금요일 오후 2시 서울에서 부산 가는 버스표 예매가 완료되었습니다. 확인 코드는
-   115.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: (tool result) Confirmation ID: BX749Z
-   115.56s  user  발화 끝
-   124.74s  agent 발화 끝
-   125.31s  user  발화 시작: 완벽해. 고마워, 텔린.
-   127.25s  agent 발화 시작: 천만에요! 여행 계획을 세우는 데 도움이 되어 기쁩니다. 편안하게 짐을 꾸리고 부산을 즐기세요.
-   127.43s  user  발화 끝
-   133.97s  agent 발화 끝
+     0.00s  user  발화 시작: 온라인 양식 작성하는 거 도와주실 수 있어요?
+     2.58s  user  발화 끝
+     2.62s  agent 발화 시작: 양식 작성을 도와드릴 수 있어요. 어떤 정보를 입력해 드릴까요?
+     4.73s  user  발화 시작: 맞아요.
+     5.22s  user  발화 끝
+     6.74s  agent 발화 끝
+     7.16s  user  발화 시작: 전화번호를 물어보는데, 오오오, 일이삼, 사오육칠이에요.
+    11.76s  <ret> 발화 (turn4 첫 프레임)
+    11.83s  agent 발화 시작: <ret> 죄송하지만, 해당 요청에 대한 정보를 찾을 수 없었어요.
+    11.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.51s]: (no information found)
+    11.88s  user  발화 끝
+    13.93s  user  발화 시작: 네.
+    14.23s  user  발화 끝
+    15.23s  user  발화 시작: 그럼, 그냥 그 번호를 전화번호 칸에 입력해 주시겠어요?
+    15.34s  agent 발화 끝
+    18.54s  <ret> 발화 (turn7 첫 프레임)
+    18.85s  agent 발화 시작: <ret> 웹사이트와 직접 상호 작용하여 양식을 작성하는 것은 불가능해요.
+    18.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (no information found)
+    18.93s  user  발화 끝
+    21.73s  user  발화 시작: 네.
+    22.09s  user  발화 끝
+    23.56s  user  발화 시작: 정말 답답하네요. 좋아요, 다른 걸 시도해 봐요. 지금 서울 날씨는 어때요?
+    23.71s  agent 발화 끝
+    29.01s  <ret> 발화 (turn10 첫 프레임)
+    29.08s  agent 발화 시작: <ret> 현재 서울은 섭씨 23.0도이고, 습도는 74%이며, 약한 바람이 불고 있어요.
+    29.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    29.21s  user  발화 끝
+    31.96s  user  발화 시작: 네.
+    32.32s  user  발화 끝
+    36.01s  user  발화 시작: 기분 좋은 날씨네요! 아이들과 산책하기 좋은 날일까요?
+    36.22s  agent 발화 끝
+    39.76s  user  발화 끝
+    39.88s  agent 발화 시작: 정말 그렇게 생각해요! 신선한 공기와 햇살은 가족과 함께 보내는 시간에 아주 좋아요.
+    45.96s  agent 발화 끝
+    46.41s  user  발화 시작: 그 산책을 위해 서울에 있는 좋은 공원을 찾아보려고 해요. 공원을 검색해 줄 수 있나요?
+    51.75s  <ret> 발화 (turn15 첫 프레임)
+    51.90s  agent 발화 시작: <ret> 올림픽공원은 넓은 잔디밭과 아름다운 산책로를 갖춘 피크닉에 아주 좋은 곳이에요.
+    51.91s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.02s]: (tool result) Olympic Park boasts sprawling lawns and scenic trails. V
+    52.06s  user  발화 끝
+    57.91s  agent 발화 끝
+    58.49s  user  발화 시작: 올림픽공원이요? 지하철로 가기 쉬운가요?
+    61.19s  <ret> 발화 (turn17 첫 프레임)
+    61.41s  agent 발화 시작: <ret> 올림픽공원역은 5호선과 9호선에 있으며, 공원 접근을 위한 여러 출구가 있어요.
+    61.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: (tool result) Olympic Park Station is on Seoul Subway Line 5 and Line 
+    61.63s  user  발화 끝
+    66.93s  user  발화 시작: 알아두면 좋겠네요. 다음 주에 작은 나들이 계획도 세우고 있어요.
+    67.15s  agent 발화 끝
+    70.73s  user  발화 끝
+    71.02s  agent 발화 시작: 정말 멋진 생각이에요! 미리 계획하면 가족과 함께하는 시간을 더욱 즐겁게 만들 수 있어요.
+    77.41s  agent 발화 끝
+    77.99s  user  발화 시작: …사실, 다음 주에 대해서는 잠시 미뤄두고…
+    80.95s  user  발화 끝
+    82.57s  user  발화 시작: …지금 몇 시인지 알려줄 수 있나요?
+    84.44s  <ret> 발화 (turn22 첫 프레임)
+    84.51s  agent 발화 시작: <ret> 현재 서울은 금요일 7월 10일 오후 3시 17분이에요.
+    84.52s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.25s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
+    84.55s  user  발화 끝
+    86.49s  user  발화 시작: 네.
+    86.98s  user  발화 끝
+    88.73s  user  발화 시작: 좋아요. 다음 주로 돌아가서… 아쿠아리움에 가고 싶어요. 아쿠아리움 티켓 가격을 찾아줄 수 있나요?
+    88.77s  agent 발화 끝
+    94.59s  <ret> 발화 (turn25 첫 프레임)
+    94.74s  agent 발화 시작: <ret> 코엑스 아쿠아리움의 성인 티켓은 2만 8천 원이고, 청소년 티켓은 2만 5천 원이에요.
+    94.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) COEX Aquarium adult tickets cost ₩28,000, youth tickets 
+    94.98s  user  발화 끝
+    99.27s  user  발화 시작: 정말요?
+   100.09s  user  발화 끝
+   100.76s  agent 발화 끝
+   101.16s  user  발화 시작: 어린이 티켓은 2만 원인가요? 도움이 되네요.
+   104.42s  agent 발화 시작: 미리 모든 세부 사항을 정리해 두면 좋겠죠.
+   104.54s  user  발화 끝
+   107.65s  agent 발화 끝
+   108.85s  user  발화 시작: 다음에 4명 티켓을 예약할 수 있을까요?
+   110.88s  <ret> 발화 (turn30 첫 프레임)
+   111.03s  agent 발화 시작: <ret> 다음 주 화요일, 7월 15일 코엑스 아쿠아리움 티켓이 예약되었어요.
+   111.04s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.26s]: (tool result) Booking confirmed: COEX Aquarium, July 15, 2026, 4 ticke
+   111.11s  user  발화 끝
+   112.94s  user  발화 시작: 네.
+   113.25s  user  발화 끝
+   115.29s  agent 발화 끝
+   117.62s  user  발화 시작: 확인 ID는 AQ7892가 맞나요?
+   121.19s  user  발화 끝
+   121.31s  agent 발화 시작: 네, 맞습니다. 확인 ID는 AQ7892예요.
+   124.09s  user  발화 시작: 예.
+   124.49s  user  발화 끝
+   125.07s  user  발화 시작: 아이들이 좋아할까요?
+   125.15s  agent 발화 끝
+   126.35s  agent 발화 시작: 분명히 좋아할 거예요! 아쿠아리움은 항상 인기가 많고, 호기심과 경이로움을 불러일으키죠.
+   126.50s  user  발화 끝
+   132.42s  agent 발화 끝
+   133.72s  user  발화 시작: 그렇게 되길 바라요. 식료품도 다 떨어졌어요. 근처 슈퍼마켓을 찾아줄 수 있나요?
+   138.40s  <ret> 발화 (turn38 첫 프레임)
+   138.64s  agent 발화 시작: <ret> 롯데마트 잠실점은 올림픽공원 근처에 있는 대형 슈퍼마켓으로, 다양한 상품을 제공하고 있어요.
+   138.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: (tool result) Lotte Mart Jamsil is a large supermarket near Olympic Pa
+   138.85s  user  발화 끝
+   145.17s  agent 발화 끝
+   145.81s  user  발화 시작: 롯데마트… 늦게까지 영업하나요?
+   147.46s  <ret> 발화 (turn40 첫 프레임)
+   147.78s  agent 발화 시작: <ret> 롯데마트 잠실점은 매일 오전 10시부터 밤 11시까지 영업해요.
+   147.78s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.82s]: (tool result) Lotte Mart Jamsil is open from 10:00 AM to 11:00 PM dail
+   147.88s  user  발화 끝
+   150.75s  user  발화 시작: 와.
+   151.25s  user  발화 끝
+   152.60s  agent 발화 끝
+   152.75s  user  발화 시작: 완벽하네요. 도와주셔서 감사합니다, 셀라라.
+   156.22s  user  발화 끝
+   156.61s  agent 발화 시작: 천만에요! 조금의 계획이 즐거운 가족 시간을 만드는 데 큰 도움이 된다는 것을 기억하세요.
+   162.82s  agent 발화 끝

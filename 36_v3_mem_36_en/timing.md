@@ -4,126 +4,159 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Hugo",
+#     "name": "Casey",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-30",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "home",
-#       "text": "User's home address is 360 Pine Court."
-#     },
-#     {
-#       "date": "2026-02-17",
+#       "date": "2026-05-04",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-01",
+#       "date": "2026-04-03",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in March."
+#     },
+#     {
+#       "date": "2026-01-07",
+#       "category": "home",
+#       "text": "User's home address is 728 Birch Road."
+#     },
+#     {
+#       "date": "2025-10-23",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-07-01",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-05-27",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-09-07",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-01-13",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-26",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-10",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-22",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, I was just thinking about that | S2 Okay, no worries. What’s the weath | S3 [sigh] I wish I knew. It's hard ba | S4 Do you know of any good pet-sittin
+# EXAMINER(FDB-v2) 단계: S1 Hi Naia, nice to meet you too. I’v | S2 Yeah, exactly. It’s like she’s hol | S3 …Actually, it feels like she doesn | S4 I guess. It’s just… frustrating.
 
-     0.00s  agent 발화 시작: Hi Hugo, I'm Dea. It's lovely to connect with you today. I'm
-     7.09s  agent 발화 끝
-     8.18s  user  발화 시작: Um, I was just thinking about that trip to Kyoto we talked a
-    11.29s  <ret> 발화 (turn2 첫 프레임)
-    11.53s  agent 발화 시작: <ret> You mentioned you prefer a window seat when you travel
-    11.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: [2026-02-17] User prefers a window seat when traveling.
-    11.70s  user  발화 끝
-    17.46s  user  발화 시작: Right, the window seat. Do you remember what hotel I was loo
-    17.50s  agent 발화 끝
-    20.94s  <ret> 발화 (turn4 첫 프레임)
-    21.26s  agent 발화 시작: <ret> I do recall you were discussing accommodation options,
-    21.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: [2026-06-11] Past chat — Apartment hunting downtown: wanted a pet-frie
-    21.44s  user  발화 끝
-    29.07s  user  발화 시작: Oh, yeah, that was for Berlin, wasn’t it? Not Kyoto.
-    29.61s  agent 발화 끝
-    32.06s  agent 발화 시작: You're right to clarify, Hugo. My apologies for the mix-up. 
-    32.22s  user  발화 끝
-    34.94s  user  발화 시작: Yeah.
-    35.44s  user  발화 끝
-    39.93s  agent 발화 끝
-    40.27s  user  발화 시작: Okay, no worries. What’s the weather like in Berlin today?
-    43.28s  <ret> 발화 (turn9 첫 프레임)
-    43.35s  agent 발화 시작: <ret> The weather in Berlin is currently 22.0 degrees Celsiu
-    43.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) 22.0°C, humidity 68%, wind 3.2 km/h
-    43.50s  user  발화 끝
-    51.32s  agent 발화 끝
-    52.36s  user  발화 시작: That sounds nice. And uh, do you know if Luna is getting eno
-    57.20s  <ret> 발화 (turn11 첫 프레임)
-    57.28s  agent 발화 시작: <ret> You have a tabby cat named Luna, which is wonderful. I
-    57.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.26s]: [2025-09-07] User has a tabby cat named Luna.
-    57.45s  user  발화 끝
-    65.53s  agent 발화 끝
-    65.58s  user  발화 시작: [sigh] I wish I knew. It's hard balancing work and being a g
-    70.32s  agent 발화 시작: It absolutely is, Hugo. Finding that balance takes real effo
-    70.53s  user  발화 끝
-    75.28s  user  발화 시작: Okay.
-    75.91s  user  발화 끝
-    78.06s  agent 발화 끝
-    79.17s  user  발화 시작: Maybe I should look into a pet sitter.
-    81.28s  agent 발화 시작: That’s a thoughtful idea. It could provide Luna with extra c
-    81.34s  user  발화 끝
-    88.28s  agent 발화 끝
-    88.58s  user  발화 시작: Do you know of any good pet-sitting services around here?
-    91.21s  <ret> 발화 (turn18 첫 프레임)
-    91.61s  agent 발화 시작: <ret> PetPal has a 4.8-star rating with 120 reviews, and Hap
-    91.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: (tool result) PetPal - 4.8 stars, 120 reviews; Happy Paws - 4.5 stars,
-    91.72s  user  발화 끝
-    96.88s  user  발화 시작: Oh.
-    97.69s  user  발화 끝
-   101.12s  agent 발화 끝
-   102.01s  user  발화 시작: Hmm, PetPal sounds good.
-   103.83s  agent 발화 시작: It's great you're exploring options, Hugo. Taking that step 
-   103.85s  user  발화 끝
-   109.58s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Casey, I’m Naia. It’s good to connect with you today.
+     2.95s  user  발화 시작: Mm-hmm.
+     3.45s  user  발화 끝
+     4.03s  agent 발화 끝
+     4.19s  user  발화 시작: Hi Naia, nice to meet you too. I’ve been feeling a bit lost 
+     8.35s  agent 발화 시작: It’s perfectly alright to feel that way, Casey. Many people 
+     8.50s  user  발화 끝
+    14.51s  user  발화 시작: Yeah, it’s just… my sister and I are fighting a lot.
+    14.88s  agent 발화 끝
+    17.84s  user  발화 끝
+    18.39s  agent 발화 시작: Family relationships can be really complex, can't they? It’s
+    22.17s  user  발화 시작: Mm-hmm.
+    22.67s  user  발화 끝
+    24.88s  agent 발화 끝
+    25.11s  user  발화 시작: It’s just silly stuff, mostly, but it escalates quickly.
+    28.67s  user  발화 끝
+    28.80s  agent 발화 시작: Sometimes those small things are just symptoms of something 
+    30.79s  user  발화 시작: Okay.
+    31.42s  user  발화 끝
+    33.52s  user  발화 시작: Maybe. I just wish we could get along better.
+    33.57s  agent 발화 끝
+    36.36s  agent 발화 시작: That's a very common desire, Casey. What specifically feels 
+    36.48s  user  발화 끝
+    38.21s  user  발화 시작: Yeah.
+    38.70s  user  발화 끝
+    41.63s  agent 발화 끝
+    42.53s  user  발화 시작: Well, she keeps bringing up things from the past.
+    44.92s  <ret> 발화 (turn14 첫 프레임)
+    45.16s  agent 발화 시작: <ret> I recall you mentioned researching a car back in Janua
+    45.16s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.42s]: [2026-01-10] Past chat — Researching a used car: comparing hybrid mode
+    45.26s  user  발화 끝
+    48.75s  user  발화 시작: Uh-huh.
+    49.20s  user  발화 끝
+    52.52s  agent 발화 시작: It sounds like those past events are still affecting both of
+    52.58s  agent 발화 끝
+    54.91s  user  발화 시작: Mhm.
+    55.65s  user  발화 끝
+    56.46s  agent 발화 끝
+    57.50s  user  발화 시작: Yeah, exactly. It’s like she’s holding a grudge.
+    60.27s  user  발화 끝
+    60.29s  agent 발화 시작: Holding onto resentment can be incredibly draining for every
+    65.43s  agent 발화 끝
+    65.67s  user  발화 시작: It is. I try to let it go, but she won’t.
+    68.35s  user  발화 끝
+    68.39s  agent 발화 시작: It takes two people to resolve conflict, and it's hard when 
+    73.48s  agent 발화 끝
+    73.64s  user  발화 시작: I know. I was hoping you might have some advice.
+    76.17s  user  발화 끝
+    76.18s  agent 발화 시작: I can certainly offer some perspectives, Casey. Have you tri
+    80.79s  user  발화 시작: I’ve tried, but she just ignores them. –
+    81.22s  agent 발화 끝
+    82.72s  user  발화 시작: …Actually, it feels like she doesn’t even *hear* me.
+    82.91s  user  발화 끝
+    85.92s  agent 발화 시작: That’s a really painful experience, feeling unheard by someo
+    86.10s  user  발화 끝
+    91.13s  user  발화 시작: It is. It makes me feel… invisible, I guess.
+    91.14s  agent 발화 끝
+    95.01s  user  발화 끝
+    95.22s  agent 발화 시작: That’s a very valid feeling, Casey. It’s important to acknow
+    99.57s  agent 발화 끝
+   100.44s  user  발화 시작: Do you think therapy might help? For both of us?
+   103.28s  agent 발화 시작: That could be a really positive step, Casey. Sometimes a neu
+   103.45s  user  발화 끝
+   105.94s  user  발화 시작: Yeah.
+   106.44s  user  발화 끝
+   108.68s  user  발화 시작: I’ll suggest it. But she’s really resistant to anything like
+   108.70s  agent 발화 끝
+   112.05s  user  발화 끝
+   112.22s  agent 발화 시작: It’s common to be hesitant about therapy. It takes courage t
+   117.09s  user  발화 시작: She says it’s “admitting defeat.”
+   117.23s  agent 발화 끝
+   119.16s  agent 발화 시작: That’s a misconception many people have. It’s actually a sig
+   119.31s  user  발화 끝
+   124.72s  agent 발화 끝
+   125.63s  user  발화 시작: I guess. It’s just… frustrating.
+   128.13s  agent 발화 시작: It sounds like you’re feeling quite stuck in this pattern.
+   128.26s  user  발화 끝
+   131.27s  agent 발화 끝
+   131.78s  user  발화 시작: I am. I just want things to be peaceful.
+   135.02s  agent 발화 시작: Peace is a worthwhile goal, Casey. It takes work, but it's a
+   135.10s  user  발화 끝
+   139.69s  agent 발화 끝
+   139.74s  user  발화 시작: Do you have any experience with siblings who fight a lot?
+   143.09s  agent 발화 시작: In my work, I've seen many sibling dynamics. It’s a common c
+   143.22s  user  발화 끝
+   147.53s  agent 발화 끝
+   147.66s  user  발화 시작: That’s… comforting, actually. Knowing I’m not alone.
+   151.86s  agent 발화 시작: You’re definitely not alone, Casey. Many families struggle w
+   151.96s  user  발화 끝
+   157.28s  agent 발화 끝

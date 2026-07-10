@@ -1,103 +1,78 @@
 v3_to_ot_12_ko src=nq style=v1
-SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 차분하고 공감적인 라이프 코치, 메노입니다. <system>
+SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 호기심 많고 공감하며 지지적인 조언자 Naeon입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "재경",
+    "name": "진완",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-16",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2025-11-15",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-04-29",
+      "date": "2025-09-09",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is pescatarian."
     },
     {
-      "date": "2026-03-02",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2025-06-30",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
     },
     {
-      "date": "2026-02-25",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-10-28",
-      "category": "home",
-      "text": "User's home address is 경기 성남시 분당구 판교로 235."
-    },
-    {
-      "date": "2025-08-15",
+      "date": "2025-05-28",
       "category": "work",
       "text": "User works as a nurse."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-27",
-      "title": "Setting up a home network",
+      "date": "2025-12-13",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-06-08",
+      "date": "2025-12-11",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-11-09",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 미국에서 세 번째로 큰 주는 ⟨ret@2.28s⟩ 어디인가요?
-[  2.59s][moshi] ⟦⚡SPAN@2.60s: California is the most populous state in the United States and the third largest by area.⟧ 미국에서 가장 인구가 많은 주는 캘리포니아이고, 면적으로는 세 번째로 큰 주랍니다.
-[  7.90s][moshi] 혹시 다른 주에 대해서도 궁금하신가요?
-[ 11.23s][user ] 네, 다른 주들도 궁금해요.
-[ 13.63s][moshi] 어떤 주에 대해 더 알고 싶으신가요?
-[ 14.28s][user ] «backchannel» 예.
-[ 15.44s][user ] 텍사스는 몇 번째로 큰 ⟨ret@17.31s⟩ 주인가요?
-[ 17.71s][moshi] ⟦⚡SPAN@17.71s: Texas is the second-largest state in the United States by both area and population.⟧ 텍사스는 면적과 인구 모두 미국에서 두 번째로 큰 주예요.
-[ 20.46s][user ] «backchannel» 네네.
-[ 21.41s][user ] 플로리다는요?
-[ 22.62s][moshi] ⟨ret@22.54s⟩ ⟦⚡SPAN@22.62s: Florida is the twenty-second most extensive and the third most populous state in the United States.⟧ 플로리다는 미국에서 면적으로 스물두 번째, 인구로는 세 번째로 큰 주입니다.
-[ 25.60s][user ] «backchannel» 맞아요.
-[ 27.00s][user ] 그 세 번째로 큰…
-[ 30.03s][user ] …주들이 모두 어디에 있나요?
-[ 32.22s][moshi] 미국에서 세 번째로 큰 주들을 말씀하시는 거죠?
-[ 33.33s][user ] «backchannel» 음.
-[ 34.33s][user ] 네, 맞아요.
-[ 35.81s][moshi] «interrupted» 음—
-[ 35.67s][user ] «interrupts_prev» …그럼 캘리포니아의 주도는 ⟨ret@37.83s⟩ 어디인가요?
-[ 38.14s][moshi] ⟦⚡SPAN@38.15s: Sacramento is the capital city of the State of California.⟧ 캘리포니아의 주도는 새크라멘토예요.
-[ 41.01s][user ] 아니요, ⟨ret@41.91s⟩ 괜찮아요.
-[ 42.14s][moshi] ⟦⚡SPAN@42.15s: (tool result) 28.0°C, humidity 62%, wind 7.2 km/h⟧ 새크라멘토의 현재 기온은 이십팔도이고, 습도는 육십이%, 바람은 시속 칠 점 이킬로미터입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Sacramento, California"}}
-[ 47.88s][moshi] 여행 계획에 도움이 될까요?
-[ 49.55s][user ] 아니요, 그냥 궁금해서요.
-[ 51.69s][moshi] ⟨ret@51.37s⟩ ⟦⚡SPAN@51.69s: California is known for its diverse landscapes, including the beaches of Southern California, the redwood fore⟧ 네, 그렇군요. 혹시 캘리포니아의 유명한 관광지에 대해 알아볼까요?
-[ 55.66s][moshi] 캘리포니아는 다양한 풍경으로 유명한 곳인데, 남부 캘리포니아의 해변과 레드우드 숲, 요세미티 국립공원이 특히 유명합니다.
-[ 59.35s][user ] «backchannel» 맞아요.
-[ 63.24s][user ] 요세미티 국립공원에 가려면 어떻게 해야 ⟨ret@66.18s⟩ 하나요?
-[ 66.58s][moshi] ⟦⚡SPAN@66.58s: (tool result) Yosemite National Park — 9695 South Highway 41, Yosemite Valley, CA 95389⟧ 요세미티 국립공원의 주소는 캘리포니아주 요세미티 밸리 사우스 하이웨이 사십일번지 구천육백구십오번입니다.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"attraction": "Yosemite National Park"}}
-[ 73.41s][moshi] 교통편 정보도 찾아드릴까요?
+[  0.00s][user ] 캐나다 총리가 어디에 사는지 ⟨ret@2.02s⟩ 궁금해요.
+[  2.33s][moshi] ⟦⚡SPAN@2.34s: 24 Sussex Drive is the official residence of the Prime Minister of Canada.⟧ 캐나다 총리님께서 거주하시는 곳은… 이십사 서식스 드라이브입니다. 정말 멋진 곳이죠.
+[  4.76s][user ] «backchannel» 음.
+[  9.17s][user ] 음, 그 집은 얼마나 큰가요?
+[ 11.39s][moshi] ⟨ret@11.23s⟩ ⟦⚡SPAN@11.39s: The 34-room residence sits on a 32-acre wooded estate.⟧ 그곳은 삼십이에이커의 숲 속에 자리 잡은, 방이 서른네개나 되는 아주 넓은 집이랍니다.
+[ 14.07s][user ] «backchannel» 음.
+[ 16.95s][user ] 와, 엄청 크네요. 혹시 그 집이—
+[ 20.16s][user ] …그 집이 일반인에게 ⟨ret@22.25s⟩ 공개되나요?
+[ 22.56s][moshi] ⟦⚡SPAN@22.97s: Public tours of 24 Sussex Drive have been suspended since 2008.⟧ 아, 네, 좋은 질문이에요. — 이천팔년부터 일반인에게는 공개가 중단되었답니다. 아쉽지만요.

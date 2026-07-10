@@ -1,59 +1,51 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Thiax, a grounded and empathetic supportive advisor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Siox, a upbeat and supportive life coach who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Owen",
+    "name": "Manon",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "early 20s",
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-08",
+      "date": "2026-01-23",
+      "category": "home",
+      "text": "User's home address is 651 Maple Drive."
+    },
+    {
+      "date": "2025-11-19",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-10",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a physical therapist."
     },
     {
-      "date": "2025-12-14",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-10-06",
-      "category": "hobby",
-      "text": "User is into birdwatching."
-    },
-    {
-      "date": "2025-09-11",
+      "date": "2025-08-20",
       "category": "cuisine",
       "text": "User's favorite cuisine is Italian."
     },
     {
-      "date": "2025-09-06",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-07-21",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-08",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-02-02",
+      "date": "2026-06-17",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -61,22 +53,65 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2026-01-15",
-      "title": "Apartment hunting downtown",
+      "date": "2026-03-24",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-08-07",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Owen, I'm Thiax. It's lovely to meet you. I understand I’m here to offer support with friendships and social connections.
-[  6.89s][user ] Um, yeah, hi. I'm just trying to figure out a good place to go birdwatching.
-[ 11.79s][moshi] ⟨ret@11.71s⟩ ⟦⚡SPAN@11.79s: Toronto has several excellent birdwatching locations, including High Park, Tommy Thompson Park, and the Toront⟧ Toronto offers some wonderful spots for birdwatching, like High Park, Tommy Thompson Park, and the Toronto Islands.
-[ 17.56s][user ] «backchannel» Uh-huh.
-[ 19.23s][user ] And how far is Tommy Thompson Park from my place?
-[ 22.76s][moshi] ⟨ret@22.37s⟩ ⟦⚡SPAN@22.77s: [2026-04-08] User works as a accountant.⟧ I have a note that you work as an accountant, but that doesn't help with distance. I can find that for you, though.
-[ 29.14s][moshi] ⟨ret@28.74s⟩ ⟦⚡SPAN@29.14s: (tool result) Distance: 21.3 km, Estimated time: 32 mins.⟧ Tommy Thompson Park is about 21.3 kilometers away, and it should take around 32 minutes to get there. I hope you see some beautiful birds!
-      CALL: {"function": "map_directions", "arguments": {"origin": "Owen's home", "destination": "Tommy Thompson Park"}}
+[  0.00s][moshi] Hi Manon, I'm Siox! It's lovely to meet you. How can I brighten your day today?
+[  2.64s][user ] «backchannel» Uh-huh.
+[  5.40s][user ] I need to figure out the best way to get to my friend’s place.
+[  9.00s][moshi] ⟨ret@8.92s⟩ ⟦⚡SPAN@9.00s: [2026-01-23] User's home address is 651 Maple Drive.⟧ Your home address is 651 Maple Drive, so where are you heading to today?
+[ 12.62s][user ] «backchannel» Yeah.
+[ 16.29s][user ] It’s 22 Oak ⟨ret@17.59s⟩ Street.
+[ 17.99s][moshi] ⟦⚡SPAN@17.99s: (tool result) 22 Oak Street is 6.2 miles from 651 Maple Drive. Estimated travel time is 18 minutes by car.⟧ It looks like 22 Oak Street is six point two miles away, with an estimated eighteen-minute drive.
+      CALL: {"function": "map_directions", "arguments": {"origin": "651 Maple Drive", "destination": "22 Oak Street"}}
+[ 24.16s][user ] That sounds pretty good. Are there any bus ⟨ret@26.97s⟩ routes?
+[ 27.37s][moshi] ⟦⚡SPAN@27.37s: (tool result) Bus route 14A departs near 651 Maple Drive and stops 0.3 miles from 22 Oak Street. Journey time ⟧ Yes, there’s the 14A bus route. It takes forty-five minutes, with a short walk at the end.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "651 Maple Drive", "destination": "22 Oak Street"}}
+[ 33.13s][user ] Hmm, that's a bit long. What about walking?
+[ 36.05s][moshi] ⟨ret@35.97s⟩ ⟦⚡SPAN@36.05s: (tool result) Walking from 651 Maple Drive to 22 Oak Street is 2.8 miles and will take approximately 55 minute⟧ Walking would be two point eight miles, taking about fifty-five minutes. A nice, brisk walk perhaps?
+      CALL: {"function": "map_directions", "arguments": {"origin": "651 Maple Drive", "destination": "22 Oak Street", "mode": "walking"}}
+[ 38.83s][user ] «backchannel» Yeah.
+[ 44.06s][user ] That's… actually not terrible. Is there a good coffee shop along the way?
+[ 49.22s][moshi] ⟨ret@49.14s⟩ ⟦⚡SPAN@49.22s: (tool result) "The Daily Grind" is located 0.7 miles into the walk, serving coffee and pastries. It has a 4.5-⟧ There’s "The Daily Grind", a highly-rated coffee shop, point seven miles into your walk.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "route from 651 Maple Drive to 22 Oak Street", "cuisine": "coffee shop"}}
+[ 54.41s][user ] «backchannel» Yeah.
+[ 55.82s][user ] Perfect! I think I’ll walk, then.
+[ 58.31s][moshi] Wonderful! Walking is a great way to clear your head and enjoy the day.
+[ 63.07s][user ] Do you think I should tell Sarah I'm walking?
+[ 65.58s][moshi] That's a thoughtful idea! Letting her know you're walking could be a good way to manage expectations.
+[ 68.33s][user ] «backchannel» Uh-huh.
+[ 71.22s][user ] Yeah, good point. I'm also trying to cut down on my carbon footprint.
+[ 75.11s][moshi] «interrupted» That’s fantastic, Manon! Making conscious choices like that really do make a difference—
+[ 79.94s][user ] «interrupts_prev» …actually, do you know if Oak Street has parking? Just in case.
+[ 83.43s][moshi] Oak Street does have limited street parking available, though it can be quite competitive—
+[ 86.11s][user ] «backchannel» Yeah, totally.
+[ 88.71s][moshi] I’m glad to hear that eases your mind. It's always good to have a backup plan.
+[ 91.30s][user ] «backchannel» Uh-huh.
+[ 93.94s][user ] I remember mentioning I like Italian ⟨ret@96.44s⟩ food.
+[ 96.60s][moshi] ⟦⚡SPAN@96.60s: [2025-08-20] User's favorite cuisine is Italian.⟧ You do! Your favorite cuisine is Italian, which is a wonderful choice.
+[100.85s][user ] Do you know any good Italian restaurants near 22 Oak Street?
+[104.69s][moshi] ⟨ret@104.61s⟩ ⟦⚡SPAN@104.69s: (tool result) "Bella Notte" is 0.5 miles from 22 Oak Street and serves classic Italian dishes. It has a 4.2-st⟧ "Bella Notte" is nearby, half a mile from your friend’s place, with a four point two-star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "22 Oak Street", "cuisine": "Italian"}}
+[110.50s][user ] That sounds lovely. Maybe we could go there after?
+[113.91s][moshi] That sounds like a delightful plan! A little Italian treat after your visit.
+[118.79s][user ] I'm feeling much better about this now, thanks.
+[121.32s][moshi] That makes me so happy to hear, Manon! It’s amazing how a little planning can reduce stress.
+[124.95s][user ] «backchannel» Yeah.
+[127.58s][user ] It really does. You've been a big help.
+[129.92s][moshi] I'm so glad I could assist you. Remember, taking small steps towards your goals makes all the difference.

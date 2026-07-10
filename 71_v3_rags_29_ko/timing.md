@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "지현",
+#     "name": "현람",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,58 +12,55 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-17",
+#       "date": "2026-02-15",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-11-04",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-05-07",
+#       "date": "2025-07-07",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-10-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
-#     },
-#     {
-#       "date": "2025-09-14",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-07-19",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-01",
+#       "date": "2025-07-02",
 #       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#     },
+#     {
+#       "date": "2025-06-22",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-18",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-07-29",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 왕좌의 게임에서 조젠 리드를 연기한 배우가 누구예요?
-     3.63s  <ret> 발화 (turn1 첫 프레임)
-     3.75s  user  발화 끝
-     3.79s  agent 발화 시작: <ret> 왕좌의 게임에서 조젠 리드 역할은 토마스 브로디-생스터 씨가 맡았어요. 아마 그 분을 아실 거예요
-     3.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: Thomas Brodie-Sangster is an English actor, who played Jojen Reed in t
-     9.59s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 글자들의 머리글자가 다른 의미를 나타내는 경우 있잖아, 그게 뭐라고 하지?
+     6.19s  <ret> 발화 (turn1 첫 프레임)
+     6.35s  user  발화 끝
+     6.35s  agent 발화 시작: <ret> 글자들의 머리글자를 모아서 만든 단어는, 다른 단어들의 첫 글자를 따서 만든 약어라고 해요.
+     6.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: An acronym is a word formed from the initial letters of other words an
+    11.95s  agent 발화 끝
+    12.03s  agent 발화 시작: 그런 약어를 통해 좀 더 간결하게 소통할 수 있겠죠.
+    15.08s  agent 발화 끝

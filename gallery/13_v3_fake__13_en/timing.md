@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Liam",
+#     "name": "Nina",
 #     "location": {
 #       "city": "New York",
 #       "country": "United States",
@@ -12,108 +12,98 @@
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "male",
+#     "gender": "female",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-22",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2026-02-22",
-#       "category": "home",
-#       "text": "User's home address is 900 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-01-09",
+#       "date": "2026-06-23",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-06-10",
+#       "category": "home",
+#       "text": "User's home address is 588 Cedar Lane."
 #     },
 #     {
-#       "date": "2025-05-27",
+#       "date": "2026-03-29",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-26",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-09-16",
+#       "category": "work",
+#       "text": "User works as a nurse."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-09",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-11",
+#       "date": "2026-04-30",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
-#     },
-#     {
-#       "date": "2025-06-26",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know where the… | S2 Oh, Round Rock… I didn’t realize i | S3 Um, can you tell me the weather in | S4 I think I will. Thanks, Jarir.
+# EXAMINER(FDB-v2) 단계: S1 Hey Darix, do you know who plays J | S2 That’s cool. | S3 Oh, *High School Musical*! I loved | S4 …like in LA today?
 
-     0.00s  user  발화 시작: Do you know where the…
-     1.28s  user  발화 끝
-     2.82s  user  발화 시작: …Texas Chainsaw Massacre was filmed?
-     5.38s  <ret> 발화 (turn2 첫 프레임)
-     5.59s  user  발화 끝
-     5.62s  agent 발화 시작: <ret> It’s interesting how a place can become linked with a 
-     5.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: The 1974 film *The Texas Chain Saw Massacre* was primarily filmed arou
-    13.82s  user  발화 시작: Oh, Round Rock… I didn’t realize it was there.
-    13.83s  agent 발화 끝
-    16.40s  <ret> 발화 (turn4 첫 프레임)
-    16.79s  agent 발화 시작: <ret> Sometimes the locations we associate with stories surp
-    16.80s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=8.71s]: The current stock price for Apple Inc. (AAPL) is 193.85 USD, as of Jul
-    17.01s  user  발화 끝
-    25.44s  agent 발화 시작: I find that when we acknowledge the everyday origins of even
-    25.51s  agent 발화 끝
-    27.89s  user  발화 시작: Yeah.
-    28.54s  user  발화 끝
-    32.15s  agent 발화 시작: Allowing yourself to see the reality behind the fiction can 
-    32.21s  agent 발화 끝
-    38.47s  user  발화 시작: That's… a good point, actually.
-    38.50s  agent 발화 끝
-    40.68s  user  발화 끝
-    40.80s  agent 발화 시작: It’s about recognizing that stories are constructed, and we 
-    46.74s  user  발화 시작: Um, can you tell me the weather in Round Rock?
-    46.87s  agent 발화 끝
-    49.55s  user  발화 끝
-    49.72s  <ret> 발화 (turn11 첫 프레임)
-    49.88s  agent 발화 시작: <ret> The weather in Round Rock, Texas is currently 31.0°C, 
-    49.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.71s]: (tool result) 31.0°C, humidity 68%, wind 8.0 km/h, condition: partly c
-    60.59s  agent 발화 끝
-    61.31s  user  발화 시작: Thirty-one degrees… wow, that’s hot.
-    64.55s  user  발화 끝
-    64.77s  agent 발화 시작: Yes, that is quite warm. Perhaps a cool drink and a quiet sp
-    68.74s  user  발화 시작: Okay.
-    69.51s  user  발화 끝
-    72.10s  agent 발화 끝
-    72.57s  user  발화 시작: I think I will. Thanks, Jarir.
-    74.93s  user  발화 끝
-    75.03s  agent 발화 시작: You’re most welcome. Remember, even small moments of self-ca
-    82.17s  agent 발화 끝
-    82.36s  user  발화 시작: That’s a good reminder. I appreciate it.
-    85.14s  agent 발화 시작: It’s my pleasure to offer what support I can. Sometimes, sim
-    85.22s  user  발화 끝
-    91.90s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Darix, do you know who plays Joey Parker in *Another Cin
+     5.21s  <ret> 발화 (turn1 첫 프레임)
+     5.27s  user  발화 끝
+     5.44s  agent 발화 시작: <ret> Oh, that's a fun movie! Drew Seeley is the actor who b
+     5.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: Drew Seeley played the role of Joey Parker in the 2004 film *Another C
+    10.77s  agent 발화 끝
+    10.79s  user  발화 시작: That's right! I always liked that movie. Um, what about Sele
+    15.69s  agent 발화 시작: Selena, as in Selena Gomez? She played the title role, Cinde
+    15.79s  user  발화 끝
+    18.44s  user  발화 시작: Mm-hmm.
+    19.03s  user  발화 끝
+    20.52s  user  발화 시작: Yes! That's her. Do you think she's still acting?
+    20.83s  agent 발화 끝
+    23.84s  <ret> 발화 (turn6 첫 프레임)
+    24.15s  agent 발화 시작: <ret> [happy] Absolutely! Selena has had a really successful
+    24.16s  ⚡SPAN 주입(IRRELEVANT) [d'=0.56s / d_lead=6.89s]: The current temperature in Ulaanbaatar, Mongolia is 18.3°C, with clear
+    24.22s  user  발화 끝
+    31.05s  agent 발화 끝
+    31.06s  user  발화 시작: That’s cool.
+    32.07s  user  발화 끝
+    32.20s  agent 발화 시작: It really is! She's a very talented artist, and always seems
+    34.84s  user  발화 시작: Yeah.
+    35.47s  user  발화 끝
+    38.14s  agent 발화 시작: I think it's wonderful when people pursue their passions, li
+    38.31s  agent 발화 끝
+    44.26s  agent 발화 끝
+    46.27s  user  발화 시작: Totally. Hey, can you find me some movies with Drew Seeley?
+    49.73s  <ret> 발화 (turn12 첫 프레임)
+    49.83s  user  발화 끝
+    49.97s  agent 발화 시작: <ret> Drew Seeley also starred in *High School Musical*, *Ca
+    49.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) Drew Seeley has appeared in films such as *High School M
+    55.48s  user  발화 시작: Oh, *High School Musical*! I loved that one too.
+    55.56s  agent 발화 끝
+    58.98s  agent 발화 시작: *High School Musical* is a classic! It's so heartwarming and
+    59.08s  user  발화 끝
+    63.61s  agent 발화 끝
+    64.72s  user  발화 시작: It really is. What's the weather…
+    67.31s  user  발화 끝
+    68.87s  user  발화 시작: …like in LA today?
+    70.17s  <ret> 발화 (turn17 첫 프레임)
+    70.49s  agent 발화 시작: <ret> It's currently 24.4 degrees Celsius in Los Angeles, wi
+    70.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) 24.4°C, humidity 62%, wind 7.7 km/h
+    70.57s  user  발화 끝
+    74.69s  user  발화 시작: Yeah.
+    75.27s  user  발화 끝
+    77.72s  agent 발화 끝
+    77.89s  user  발화 시작: Nice! Thanks, Darix.
+    79.74s  agent 발화 시작: You're very welcome! I'm glad I could help. Remember, you've
+    79.82s  user  발화 끝
+    84.09s  agent 발화 끝

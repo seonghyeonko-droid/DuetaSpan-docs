@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Charlie",
+#     "name": "Thomas",
 #     "location": {
 #       "city": "New York",
 #       "country": "United States",
@@ -12,48 +12,40 @@
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
+#       "date": "2026-04-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-03-28",
+#       "date": "2026-03-13",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-10-23",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-07-05",
+#       "date": "2026-03-09",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-03-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-10-12",
+#       "category": "home",
+#       "text": "User's home address is 578 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-05-15",
+#       "date": "2025-11-01",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -64,9 +56,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Do you know what ethernet standard is often called Thicknet?
-     3.62s  <ret> 발화 (turn1 첫 프레임)
-     3.86s  agent 발화 시작: <ret> Well, that standard is generally called Thicknet becau
-     3.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: 10BASE5, a coaxial cable standard, is commonly known as Thicknet due t
-     4.00s  user  발화 끝
-    10.81s  agent 발화 끝
+     0.00s  user  발화 시작: Who is the current foreign minister of Latvia?
+     2.82s  <ret> 발화 (turn1 첫 프레임)
+     3.06s  agent 발화 시작: <ret> Well, that would be Edgars Rinkēvičs, who has been Lat
+     3.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: Edgars Rinkēvičs is the current Minister of Foreign Affairs of the Rep
+     3.19s  user  발화 끝
+    11.92s  agent 발화 끝

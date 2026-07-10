@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "노우",
+#     "name": "보호",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,61 +12,61 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
+#       "date": "2026-04-13",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-03-28",
+#       "date": "2026-03-13",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2026-03-12",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-10-23",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-07-05",
+#       "date": "2026-03-09",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-03-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
+#     },
+#     {
+#       "date": "2025-10-12",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2026-05-15",
+#       "date": "2025-11-01",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-20",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시, 두꺼운 이더넷이라고 불리는 표준이 정확히 뭔지 알 수 있을까요?
-     4.99s  <ret> 발화 (turn1 첫 프레임)
-     5.14s  agent 발화 시작: <ret> 원래 이더넷 표준은 일 공 비 에이 에스 이 오라고 불렸는데, 두꺼운 동축 케이블 때문에 Thic
-     5.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.47s]: 10BASE5 is the original Ethernet standard, nicknamed Thicknet due to i
-     5.28s  user  발화 끝
-    12.60s  agent 발화 끝
+     0.00s  user  발화 시작: 라트비아 외무부 장관이 누구세요?
+     2.81s  <ret> 발화 (turn1 첫 프레임)
+     2.91s  user  발화 끝
+     2.97s  agent 발화 시작: <ret> 라트비아 외무부 장관은 이천십일년부터 에드가르스 링케비치스 씨입니다.
+     2.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: Edgars Rinkēvičs has been the Minister of Foreign Affairs of Latvia si
+     7.78s  agent 발화 끝
