@@ -59,15 +59,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Jamie, welcome. I’m Hunar, and I help people feel more settl
-     5.97s  agent 발화 끝
-     7.00s  user  발화 시작: Hunar… that’s a lovely name. It’s just… Sydney feels so big,
-    13.49s  user  발화 끝
-    13.57s  agent 발화 시작: It’s completely natural to feel overwhelmed by a city’s size
-    21.31s  agent 발화 끝
-    21.45s  user  발화 시작: Welll… I miss having a local coffee shop. Somewhere I can ju
-    28.69s  agent 발화 시작: Ah, a familiar space is so grounding. It’s about finding a r
-    28.82s  user  발화 끝
-    37.35s  agent 발화 끝
-    37.88s  user  발화 시작: That’s a good idea, I suppose. But where do I even start? Th
-    42.88s  user  발화 끝
+     0.00s  agent 발화 시작: Jamie, welcome. I'm Hunar, and I help people feel settled an
+     7.00s  agent 발화 끝
+     8.04s  user  발화 시작: Hunar… that’s a beautiful name. I’m feeling a bit overwhelme
+    15.71s  agent 발화 시작: It’s completely natural to feel that way, Jamie. A new city 
+    15.88s  user  발화 끝
+    25.55s  agent 발화 끝
+    25.77s  user  발화 시작: I guess…finding things. Not just shops, but, uh, places that
+    34.61s  user  발화 끝
+    34.68s  agent 발화 시작: I understand completely. Finding spaces that resonate with y
+    45.94s  agent 발화 끝

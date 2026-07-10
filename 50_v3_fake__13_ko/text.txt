@@ -1,0 +1,91 @@
+v3_fake__13_ko src=nq style=v1
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 부드럽고 사색적인 라이프 코치인 Runana입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_fake__13",
+    "name": "노빈",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-11",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-02-19",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2026-01-08",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-11-04",
+      "category": "home",
+      "text": "User's home address is 203 Birch Road."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-08-04",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-07-22",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-06-17",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 데미 로바토 새 앨범 언제 나오나요?
+[  2.92s][moshi] 데미 로바토의 새 앨범 출시일에 대해 궁금하시군요.
+[  4.93s][user ] «backchannel» 음.
+[  6.39s][user ] 네, 맞아요.
+[  7.55s][moshi] ⟨ret@7.32s⟩ 데미 로바토의 ⟦⚡SPAN@9.32s: [source: Wikipedia] Demi Lovato's fifth studio album, *Confident*, was released in October 2015.⟧ 다섯 번째 스튜디오 앨범, *Confident*는… 이천십오년 십월에 발매되었어요.
+[ 15.85s][user ] 아, 그렇군요.
+[ 17.65s][moshi] ⟨ret@17.26s⟩ 데미 로바토가 ⟦⚡SPAN IRRELEVANT@19.26s: [source: Britannica] The Sahara Desert is the largest hot desert in the world, covering most of North Africa.⟧ 앨범을 꾸준히 발표하고 있는데, 이전 앨범에 대해서도 궁금하신가요?
+[ 20.85s][user ] «backchannel» 음.
+[ 23.04s][moshi] 그녀의 음악적 변화에 대해 이야기해 볼 수도 있겠네요.
+[ 26.06s][user ] 아니요, 그냥 이번 앨범에 관심이 많아서요.
+[ 29.63s][moshi] «interrupted» *Confident* 앨범은 데미 로바토의 음악 스타일에서 중요한 변화를 보여주는 앨범이라고—
+[ 34.99s][user ] «interrupts_prev» 그 앨범에 어떤 노래들이 들어 있어요?
+[ 37.48s][moshi] 아, 네. *Confident* 앨범에는 ‘Cool for the Summer’나 ‘Sorry Not Sorry’ 같은 인기곡들이 수록되어 있어요.
+[ 40.91s][user ] «backchannel» 예.
+[ 43.92s][user ] ‘Cool for the Summer’ 정말 좋아하는데.
+[ 46.41s][moshi] ‘Cool for the Summer’는 많은 사랑을 받았죠. 데미 로바토의 매력이 잘 드러나는 곡이라고 생각해요.
+[ 49.04s][user ] «backchannel» 음.
+[ 52.15s][user ] 혹시 그 앨범의 프로듀서는 ⟨ret@54.38s⟩ 누구인가요?
+[ 54.61s][moshi] *Confident* 앨범은 ⟦⚡SPAN@56.38s: [source: AllMusic] *Confident* was primarily produced by Max Martin, Savan Kotecha, and Shellback.⟧ 주로 맥스 마틴, 사반 코테차, 쉘백이 프로듀싱을 맡았답니다.
+[ 57.03s][user ] «backchannel» 네.
+[ 60.33s][user ] 맥스 마틴이요? 유명한 프로듀서네요.
+[ 63.00s][moshi] 네, 맥스 마틴은 팝 음악계에서 아주 유명한 프로듀서예요. 많은 히트곡을 만들었죠.

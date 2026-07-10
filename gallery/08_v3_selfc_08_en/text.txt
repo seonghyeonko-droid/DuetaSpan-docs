@@ -56,71 +56,69 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.47s⟩ tenth.
-[  4.83s][moshi] There are three ⟦⚡SPAN@6.47s: (tool result) Three buses found: 8:00 AM, $250; 2:00 PM, $280; 7:00 PM, $230.⟧ buses from Chicago to Denver on May tenth: an 8:00 AM departure for $250, a 2:00 PM bus at $280, and a 7:00 PM option costing $230.
+[  0.00s][user ] Show me buses from Chicago to…
+[  4.73s][user ] …Denver for three passengers on May ⟨ret@7.01s⟩ tenth.
+[  7.41s][moshi] There are three buses ⟦⚡SPAN@9.01s: (tool result) Three buses found: 8:00 AM, $250; 1:30 PM, $280; 6:00 PM, $220.⟧ from Chicago to Denver on May tenth. The 8:00 AM bus is two hundred and fifty dollars.
       CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
-[ 12.33s][user ] «backchannel» Oh.
-[ 16.62s][user ] That 2:00 PM one— can you book that ⟨ret@19.04s⟩ for me?
-[ 19.26s][moshi] I’ve booked ⟦⚡SPAN@21.04s: (tool result) Booking confirmed: Confirmation #AX789.⟧ the 2:00 PM bus for three passengers, confirmation number AX789.
-      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_id": "2:00 PM", "num_passengers": 3}}
-[ 27.66s][user ] Great. What’s the weather like in Denver on that day?
-[ 29.98s][moshi] ⟨ret@29.83s⟩ The forecast for Denver on ⟦⚡SPAN@31.83s: (tool result) Sunny, high of 75°F, low of 50°F.⟧ May tenth is sunny, with a high of 75 degrees Fahrenheit and a low of 50.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denver", "date": "May tenth"}}
-[ 33.94s][user ] «backchannel» Really?
-[ 36.71s][user ] Okay, good. Can you set a reminder to pack for the trip on ⟨ret@39.76s⟩ May eighth?
-[ 40.15s][moshi] ⟦⚡SPAN@40.26s: (tool result) Reminder set for May eighth.⟧ I’ve set a reminder for May eighth to pack for your trip to Denver.
-      CALL: {"function": "Calendar_2_SetReminder", "arguments": {"date": "May eighth", "reminder_text": "Pack for Denver trip"}}
-[ 45.40s][user ] Perfect. And are there any good Italian restaurants near Union Station ⟨ret@48.10s⟩ in Denver?
-[ 48.49s][moshi] Rioja, a Mediterranean-inspired Italian ⟦⚡SPAN@50.10s: (tool result) Rioja: 4.5 stars, Mediterranean-inspired Italian; Stoic & Genuine: 4.2 stars, seafood-focused It⟧ restaurant, has 4.5 stars, and Stoic & Genuine, focusing on seafood, has 4.2.
-      CALL: {"function": "Restaurants_3_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Union Station, Denver"}}
-[ 54.59s][user ] Rioja sounds interesting. What’s their ⟨ret@57.52s⟩ address?
-[ 57.77s][moshi] Rioja is ⟦⚡SPAN@59.52s: (tool result) 1332 Larimer St, Denver, CO 80202.⟧ located at 1332 Larimer Street, Denver, Colorado, 80202.
-      CALL: {"function": "Restaurants_2_GetRestaurantDetails", "arguments": {"restaurant_name": "Rioja"}}
-[ 62.37s][user ] «backchannel» Okay.
-[ 64.73s][user ] Can you navigate me there from Union ⟨ret@68.42s⟩ Station?
-[ 68.65s][moshi] I’m navigating ⟦⚡SPAN@70.42s: (tool result) Navigating to Rioja via 16th Street Mall.⟧ you to Rioja via the 16th Street Mall.
-      CALL: {"function": "Navigation_1_Navigate", "arguments": {"start": "Union Station, Denver", "destination": "1332 Larimer St, Denver, CO 80202"}}
-[ 71.34s][user ] «backchannel» Uh-huh.
-[ 74.77s][user ] Actually, hold on. I think I want to check out a different restaurant.
-[ 80.65s][moshi] «interrupted» I can certainly—
-[ 80.53s][user ] «interrupts_prev» …is there anything with outdoor seating?
-[ 83.54s][moshi] ⟨ret@83.48s⟩ Tavernetta, ⟦⚡SPAN@85.48s: (tool result) Tavernetta: 4.6 stars, outdoor seating available.⟧ with 4.6 stars, has outdoor seating available.
-      CALL: {"function": "Restaurants_3_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Union Station, Denver", "outdoor_seating": true}}
-[ 89.26s][user ] «backchannel» Wow.
-[ 90.88s][user ] Tavernetta sounds lovely. What time do they close ⟨ret@95.29s⟩ tonight?
-[ 95.67s][moshi] Tavernetta ⟦⚡SPAN@97.29s: (tool result) Closes at 10:00 PM.⟧ closes at 10:00 PM tonight.
-      CALL: {"function": "Restaurants_2_GetRestaurantDetails", "arguments": {"restaurant_name": "Tavernetta"}}
-[ 97.90s][user ] «backchannel» Yeah.
-[101.71s][user ] Perfect. Can you make a reservation for two at 7:30 PM?
-[104.89s][moshi] ⟨ret@104.83s⟩ Your ⟦⚡SPAN@105.63s: (tool result) Reservation confirmed for two at 7:30 PM.⟧ reservation for two at Tavernetta is confirmed for 7:30 PM.
-      CALL: {"function": "Restaurants_1_MakeReservation", "arguments": {"restaurant_name": "Tavernetta", "date": "today", "time": "7:30 PM", "num_people": 2}}
-[110.11s][user ] Wonderful. Is there a good coffee shop ⟨ret@112.50s⟩ near Tavernetta?
-[112.80s][moshi] Little Owl Coffee, rated ⟦⚡SPAN@114.50s: (tool result) Little Owl Coffee: 4.7 stars, 0.2 miles away.⟧ 4.7 stars, is just 0.2 miles from Tavernetta.
-      CALL: {"function": "Places_3_FindPlaces", "arguments": {"type": "coffee shop", "location": "near Tavernetta, Denver"}}
-[116.17s][user ] «backchannel» Wow.
-[117.31s][user ] Great. Can you send a text message to my wife, Sarah, saying I’ve made dinner reservations at ⟨ret@119.24s⟩ Tavernetta for 7:30?
-[119.47s][moshi] I’ve sent a ⟦⚡SPAN@121.24s: (tool result) Message sent to Sarah.⟧ message to Sarah letting her know about the 7:30 reservation at Tavernetta.
-      CALL: {"function": "Messaging_1_SendMessage", "arguments": {"recipient": "Sarah", "message": "Made dinner reservations at Tavernetta for 7:30."}}
-[127.08s][user ] Thanks, that’s really helpful. Can you remind me to leave for dinner ⟨ret@130.38s⟩ at 6:45?
-[130.77s][moshi] ⟦⚡SPAN@130.88s: (tool result) Reminder set for 6:45 PM.⟧ I’ve set a reminder for 6:45 PM to leave for your dinner at Tavernetta.
-      CALL: {"function": "Calendar_2_SetReminder", "arguments": {"date": "today", "time": "6:45 PM", "reminder_text": "Leave for Tavernetta"}}
-[137.57s][user ] Perfect. What’s the best way to get from Union Station to Tavernetta?
-[140.61s][moshi] ⟨ret@140.56s⟩ You can walk to Tavernetta ⟦⚡SPAN@142.56s: (tool result) Walk: 15 minutes. Light rail: 8 minutes.⟧ in 15 minutes, or take the light rail in 8 minutes.
-      CALL: {"function": "Navigation_1_Navigate", "arguments": {"start": "Union Station, Denver", "destination": "Tavernetta"}}
-[142.45s][user ] «backchannel» Yeah.
-[146.62s][user ] I think I'll walk. Is there anything else I should keep in mind for the trip?
-[149.51s][moshi] [happy] Sometimes, a little mindful breathing can help ease travel stress. It’s a small practice that can create a sense of calm.
-[155.72s][user ] That’s a good idea, thank you. ⟨ret@155.98s⟩ What’s the exchange rate between US dollars and Euros today?
-[156.37s][moshi] Currently, one ⟦⚡SPAN@157.98s: (tool result) 1 USD = 0.92 EUR.⟧ US dollar equals 0.92 Euros.
-      CALL: {"function": "Finance_1_GetExchangeRate", "arguments": {"from_currency": "USD", "to_currency": "EUR"}}
-[159.57s][user ] «backchannel» Wow.
-[161.00s][user ] Okay. Could you play some relaxing music for the ⟨ret@162.97s⟩ bus ride?
-[163.28s][moshi] I’m now ⟦⚡SPAN@164.09s: (tool result) Playing relaxing ambient music.⟧ playing relaxing ambient music for your bus ride.
-      CALL: {"function": "Music_1_PlayMusic", "arguments": {"genre": "relaxing"}}
-[164.52s][user ] «backchannel» Yeah.
-[166.57s][user ] That's nice. Can you check if my flight back on May fifteenth is on time?
-[170.28s][moshi] ⟨ret@170.20s⟩ Your flight, UA123, on May fifteenth is currently ⟦⚡SPAN@170.70s: (tool result) UA123 is on time.⟧ on time.
-      CALL: {"function": "Flights_1_GetFlightStatus", "arguments": {"flight_number": "UA123", "date": "May fifteenth"}}
-[170.39s][user ] «backchannel» Yeah.
-[171.15s][user ] Great! Thanks so much for all your help, Oruus.
-[174.47s][moshi] It was my pleasure to assist you. Wishing you a wonderful trip to Denver.
+[ 11.56s][user ] «backchannel» Oh.
+[ 13.62s][user ] Actually, make that May ⟨ret@15.41s⟩ eleventh.
+[ 15.64s][moshi] For May eleventh, there ⟦⚡SPAN@17.41s: (tool result) Two buses found: 9:00 AM, $260; 7:00 PM, $230.⟧ are two buses available. The 9:00 AM bus costs two hundred and sixty dollars.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May eleventh"}}
+[ 22.04s][user ] The 7:00 PM one sounds good. Can you book it?
+[ 24.87s][moshi] ⟨ret@24.71s⟩ I have booked ⟦⚡SPAN@26.71s: (tool result) Booking confirmed: confirmation number is 49X7Z2.⟧ the 7:00 PM bus for three passengers. Your confirmation number is 49X7Z2.
+      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_id": "7:00 PM", "num_passengers": 3}}
+[ 29.59s][user ] «backchannel» Really?
+[ 32.23s][user ] Great. And could you set a reminder for me to leave for the bus station at 5:30 PM on ⟨ret@37.81s⟩ May eleventh?
+[ 38.21s][moshi] ⟦⚡SPAN@38.31s: (tool result) Reminder set for May eleventh, 5:30 PM: Leave for bus station.⟧ A reminder is set for May eleventh at 5:30 PM to leave for the bus station.
+      CALL: {"function": "Calendar_1_SetReminder", "arguments": {"date": "May eleventh", "time": "5:30 PM", "reminder_text": "Leave for bus station"}}
+[ 44.23s][user ] Perfect. Now, what's the weather forecast for Denver on ⟨ret@48.07s⟩ May eleventh?
+[ 48.46s][moshi] The forecast for Denver ⟦⚡SPAN@50.07s: (tool result) Denver, May eleventh: sunny, high 75, low 50.⟧ on May eleventh is sunny, with a high of seventy-five and a low of fifty.
+      CALL: {"function": "Weather_1_GetForecast", "arguments": {"city": "Denver", "date": "May eleventh"}}
+[ 57.66s][user ] That sounds lovely. Is there anything interesting to do in ⟨ret@61.28s⟩ Denver?
+[ 61.52s][moshi] Denver has attractions ⟦⚡SPAN@63.28s: (tool result) Denver attractions: Denver Art Museum, Botanic Gardens, Red Rocks Amphitheatre.⟧ like the Denver Art Museum, Botanic Gardens, and Red Rocks Amphitheatre.
+      CALL: {"function": "Places_1_FindAttractions", "arguments": {"city": "Denver"}}
+[ 65.78s][user ] «backchannel» Mhm.
+[ 68.26s][user ] Red Rocks sounds amazing. Can you show me directions from the bus station to Red Rocks ⟨ret@73.65s⟩ Amphitheatre?
+[ 73.88s][moshi] Driving to Red Rocks ⟦⚡SPAN@75.65s: (tool result) Drive: 30 minutes, 15 miles. Public transit: 1 hour, 10 minutes.⟧ Amphitheatre will take about thirty minutes, fifteen miles from the bus station.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"start": "Denver bus station", "end": "Red Rocks Amphitheatre"}}
+[ 81.08s][user ] Public transit sounds better. What's the schedule like?
+[ 84.56s][moshi] ⟨ret@84.40s⟩ Bus route 16L ⟦⚡SPAN@86.40s: (tool result) Bus route 16L: departs 8:15 AM, 9:15 AM, 10:15 AM…⟧ departs from the bus station at 8:15, 9:15, 10:15 AM, and so on.
+      CALL: {"function": "Transit_1_GetSchedule", "arguments": {"start": "Denver bus station", "end": "Red Rocks Amphitheatre"}}
+[ 88.21s][user ] «backchannel» Uh-huh.
+[ 92.31s][user ] That’s good to know. I think I’ll pack a light jacket—
+[ 95.52s][user ] …do they have food at Red Rocks?
+[ 97.58s][moshi] ⟨ret@97.43s⟩ Concessions are available ⟦⚡SPAN@99.43s: (tool result) Red Rocks: concessions available – burgers, hot dogs, snacks.⟧ at Red Rocks Amphitheatre, including burgers, hot dogs, and snacks.
+      CALL: {"function": "Places_1_GetDetails", "arguments": {"place": "Red Rocks Amphitheatre", "attribute": "food"}}
+[100.61s][user ] «backchannel» Yeah.
+[104.12s][user ] Wonderful. Okay, one last thing. What's a good local restaurant near Red ⟨ret@109.04s⟩ Rocks?
+[109.36s][moshi] ⟦⚡SPAN@109.84s: (tool result) The Morrison Inn: Mexican, 4.5 stars. Cafe Prague: Czech, 4 stars.⟧ The Morrison Inn, serving Mexican food, has four and a half stars. Cafe Prague is Czech and has four stars.
+      CALL: {"function": "Places_1_FindRestaurants", "arguments": {"location": "near Red Rocks Amphitheatre"}}
+[117.16s][user ] The Morrison Inn sounds perfect. Can you make a reservation for two people at 7:30 PM on ⟨ret@123.39s⟩ May eleventh?
+[123.71s][moshi] I have made a ⟦⚡SPAN@125.39s: (tool result) Reservation confirmed: The Morrison Inn, May eleventh, 7:30 PM, party of 2.⟧ reservation for two at The Morrison Inn on May eleventh at 7:30 PM.
+      CALL: {"function": "Restaurant_1_MakeReservation", "arguments": {"restaurant": "The Morrison Inn", "date": "May eleventh", "time": "7:30 PM", "num_people": 2}}
+[126.35s][user ] «backchannel» Yeah.
+[129.89s][user ] Excellent! This trip is really coming together.
+[132.91s][moshi] I am glad I could assist you in planning your trip.
+[136.70s][user ] I’m a little worried about altitude sickness though.
+[139.40s][moshi] It’s wise to consider altitude sickness when traveling to Denver, as it's a mile high.
+[142.17s][user ] «backchannel» Yeah.
+[145.69s][user ] Do you have any advice for preventing it?
+[147.90s][moshi] Staying hydrated and avoiding strenuous activity upon arrival can help your body adjust.
+[154.12s][user ] That's helpful. Should I avoid alcohol too?
+[156.90s][moshi] Yes, limiting alcohol intake is also recommended when acclimating to higher altitudes.
+[162.89s][user ] Good to know. I think I'm all set now.
+[165.23s][moshi] It sounds like you’ve thoughtfully prepared for your trip.
+[168.46s][user ] Yes, I think so. Thanks again for all your help.
+[171.37s][moshi] You are most welcome.
+[172.78s][user ] I was wondering, what’s the history of Red Rocks?
+[175.85s][moshi] Red Rocks Amphitheatre has a fascinating history, evolving from a natural geological formation to a beloved venue.
+[179.55s][user ] «backchannel» Yeah, totally.
+[184.29s][user ] That sounds interesting.
+[185.51s][moshi] Its story began with Native American gatherings and evolved into a performance space in the early 20th century.
+[188.33s][user ] «backchannel» Yeah.
+[193.24s][user ] Wow, that’s a long time ago.
+[195.25s][moshi] Indeed. The first official concert was held there in 1920, marking the start of its musical legacy.
+[202.13s][user ] Amazing.
+[203.06s][moshi] The venue was formally dedicated in 1941, and has hosted countless iconic performers since then.
+[210.31s][user ] I can’t wait to go.
+[211.65s][moshi] I hope you have a truly memorable experience at Red Rocks Amphitheatre.

@@ -60,55 +60,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 That makes sense. And who is the c | S3 Yeah, I feel like I should have pa | S4 I’m thinking of visiting Provence.
+# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Hmm, that makes sense. So, each st | S3 Wow, that’s a long time ago. I'm t | S4 Oh, that's good to hear! How do I 
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.46s  <ret> 발화 (turn1 첫 프레임)
-     2.53s  agent 발화 시작: <ret> I'm sorry, I don't currently have that information ava
-     2.72s  user  발화 끝
-     4.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: (no information found)
-     8.59s  user  발화 시작: Okay.
-     9.09s  user  발화 끝
-    12.36s  agent 발화 끝
-    12.49s  user  발화 시작: Oh, okay. Well, what about the US Senate? How many senators 
-    17.16s  <ret> 발화 (turn4 첫 프레임)
-    17.40s  agent 발화 시작: <ret> The US Senate is comprised of one hundred senators… tw
-    17.49s  user  발화 끝
-    19.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.23s]: [source: Wikipedia] The United States Senate has 100 senators, two fro
-    28.63s  agent 발화 끝
-    28.68s  user  발화 시작: That makes sense. And who is the current President Pro Tempo
-    29.00s  <ret> 발화 (turn6 첫 프레임)
-    29.08s  agent 발화 시작: <ret> The current President Pro Tempore of the Senate is… Pa
-    29.17s  user  발화 끝
-    31.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: [source: Senate.gov] Patty Murray is the current President Pro Tempore
-    32.72s  user  발화 시작: Exactly.
-    36.96s  agent 발화 끝
-    37.39s  user  발화 시작: I’m trying to get a better handle on how our government work
-    41.99s  user  발화 끝
-    42.33s  agent 발화 시작: It absolutely can be overwhelming, understanding all the lay
-    42.44s  user  발화 끝
-    44.55s  user  발화 시작: Yeah, yeah.
-    49.09s  user  발화 끝
-    49.18s  user  발화 시작: Yeah, I feel like I should have paid more attention in civic
-    49.42s  agent 발화 끝
-    58.98s  <ret> 발화 (turn12 첫 프레임)
-    59.30s  agent 발화 시작: <ret> The longest river in France is… the Loire, extending 1
-    59.47s  user  발화 끝
-    59.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.28s]: [source: Britannica] The Loire is the longest river in France, with a 
-    60.58s  agent 발화 끝
-    60.62s  user  발화 시작: Wow, that’s pretty long. I’m planning a trip to France next 
-    64.60s  user  발화 끝
-    64.85s  agent 발화 시작: [happy] That sounds wonderful! Traveling can be such a enric
-    74.54s  agent 발화 끝
-    74.66s  user  발화 시작: I’m thinking of visiting Provence. Is it usually hot there i
-    76.36s  <ret> 발화 (turn16 첫 프레임)
-    76.68s  agent 발화 시작: <ret> Provence typically experiences an average high of 29 d
-    76.92s  user  발화 끝
-    77.10s  user  발화 시작: Right.
-    77.72s  ⚡SPAN 주입 [d'=1.36s / d_lead=1.38s]: (tool result) The average high temperature in Provence, France in July
-    78.06s  agent 발화 끝
-    78.30s  user  발화 시작: Okay, good to know. Thanks for the information!
-    80.56s  agent 발화 시작: You’re very welcome. I'm glad I could help you with your pla
-    80.70s  user  발화 끝
-    81.68s  user  발화 끝
-    86.54s  agent 발화 끝
+     2.12s  user  발화 끝
+     2.34s  <ret> 발화 (turn1 첫 프레임)
+     2.42s  agent 발화 시작: <ret> I’m afraid I couldn’t locate the exact number of senat
+     4.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (no information found)
+     4.83s  user  발화 시작: Mhm.
+     5.33s  user  발화 끝
+     7.67s  user  발화 시작: Oh, okay. Well, what about the US Senate? How many senators 
+     7.70s  agent 발화 끝
+    11.48s  <ret> 발화 (turn4 첫 프레임)
+    11.71s  agent 발화 시작: <ret> The US Senate is composed of one hundred senators… two
+    12.02s  user  발화 끝
+    13.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: [source: Wikipedia] The United States Senate has one hundred senators,
+    15.53s  user  발화 시작: Okay.
+    16.16s  user  발화 끝
+    17.95s  user  발화 시작: Hmm, that makes sense. So, each state gets two, regardless o
+    18.01s  agent 발화 끝
+    22.53s  agent 발화 시작: That’s correct. Each state, no matter its size, has equal re
+    22.77s  user  발화 끝
+    28.88s  agent 발화 끝
+    28.96s  user  발화 시작: That's interesting. Is that always how it’s been?
+    31.50s  user  발화 끝
+    31.53s  <ret> 발화 (turn9 첫 프레임)
+    31.77s  agent 발화 시작: <ret> Equal state representation in the Senate was establish
+    33.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: [source: Senate.gov] The US Constitution established equal state repre
+    35.36s  user  발화 시작: Yeah.
+    35.86s  user  발화 끝
+    38.86s  agent 발화 끝
+    40.46s  user  발화 시작: Wow, that’s a long time ago. I'm trying to plan a trip to Wa
+    44.44s  user  발화 끝
+    44.53s  agent 발화 시작: Washington, D.C. is a wonderful choice for a trip.
+    47.95s  agent 발화 끝
+    48.56s  user  발화 시작: I was hoping to tour the Senate building. Is that possible r
+    51.79s  user  발화 끝
+    51.79s  <ret> 발화 (turn14 첫 프레임)
+    51.87s  agent 발화 시작: <ret> Tours of the US Senate building are available… with li
+    53.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (tool result) Tours of the US Senate building are currently available,
+    55.87s  user  발화 시작: Okay.
+    56.51s  user  발화 끝
+    57.42s  user  발화 시작: Oh, that's good to hear! How do I book a tour?
+    57.75s  agent 발화 끝
+    59.29s  <ret> 발화 (turn17 첫 프레임)
+    59.69s  agent 발화 시작: <ret> I’ve booked a tour for you on July 12th at 10:00 AM.
+    59.91s  user  발화 끝
+    61.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.94s]: (tool result) A tour has been booked for you on July 12th at 10:00 AM.
+    62.29s  user  발화 시작: Uh-huh.
+    62.79s  user  발화 끝
+    63.62s  agent 발화 끝
+    64.59s  user  발화 시작: Perfect! Thank you so much for your help, Nias.
+    67.23s  agent 발화 시작: You’re very welcome. I’m glad I could assist with your trip 
+    67.36s  user  발화 끝
+    70.80s  agent 발화 끝

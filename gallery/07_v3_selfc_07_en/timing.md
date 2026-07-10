@@ -76,83 +76,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Is that a good place? | S3 Thank you. Can you also find me di | S4 Good idea. What’s the weather fore
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 A paid garage… hmm, is there anyth | S3 Actually, before I forget, can you | S4 Fantastic. I think that’s everythi
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.15s  <ret> 발화 (turn1 첫 프레임)
-     3.39s  agent 발화 시작: <ret> Alright, I’ve scheduled a viewing for you at The Grand
-     3.65s  user  발화 끝
-     5.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: (tool result) Viewing scheduled at The Grandview Lofts for June 15th a
-    11.74s  agent 발화 끝
-    13.15s  user  발화 시작: Actually, can we push that back to June sixteenth?
-    15.69s  <ret> 발화 (turn3 첫 프레임)
-    15.85s  agent 발화 시작: <ret> I’ve rescheduled your viewing at The Grandview Lofts t
-    16.02s  user  발화 끝
-    17.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.15s]: (tool result) Viewing at The Grandview Lofts rescheduled to June 16th 
-    24.00s  agent 발화 끝
-    24.00s  user  발화 시작: Great. And can you find me the…
-    27.37s  user  발화 끝
-    28.60s  user  발화 시작: …nearest coffee shop to The Grandview Lofts?
-    33.77s  <ret> 발화 (turn6 첫 프레임)
-    34.01s  agent 발화 시작: <ret> The closest coffee shop to The Grandview Lofts is “Bea
-    34.07s  user  발화 끝
-    35.61s  ⚡SPAN 주입 [d'=1.84s / d_lead=2.87s]: (tool result) Nearest coffee shop is "Bean There, Done That" at 123 Ma
-    36.88s  agent 발화 끝
-    37.20s  user  발화 시작: Is that a good place?
-    41.57s  agent 발화 시작: It generally receives very positive reviews, offering a cozy
-    41.59s  user  발화 끝
-    44.32s  user  발화 시작: Okay, and can you check if they have wifi?
-    44.48s  agent 발화 끝
-    49.41s  <ret> 발화 (turn10 첫 프레임)
-    49.50s  user  발화 끝
-    49.57s  agent 발화 시작: <ret> Yes, “Bean There, Done That” does offer free wifi for 
-    49.70s  user  발화 시작: Right.
-    49.77s  ⚡SPAN 주입 [d'=0.36s / d_lead=0.36s]: (tool result) Bean There, Done That offers free wifi.
-    49.93s  agent 발화 끝
-    50.89s  user  발화 시작: Perfect. I think I'll head over there after the viewing. But
-    53.40s  user  발화 끝
-    56.13s  <ret> 발화 (turn13 첫 프레임)
-    56.53s  agent 발화 시작: <ret> I’ve set a reminder for you for June sixteenth at one 
-    56.68s  user  발화 끝
-    58.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.56s]: (tool result) Reminder set for June 16th at 1:45 PM: Viewing at The Gr
-    60.09s  agent 발화 끝
-    60.79s  user  발화 시작: Thank you. Can you also find me directions from Bean There, 
-    65.32s  <ret> 발화 (turn15 첫 프레임)
-    65.72s  agent 발화 시작: <ret> From “Bean There, Done That”, head north on Main Stree
-    65.92s  user  발화 끝
-    66.92s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.51s]: (tool result) Directions: Head north on Main Street, turn left onto El
-    69.04s  user  발화 시작: That sounds easy enough. Is there parking at The Grandview L
-    69.23s  agent 발화 끝
-    72.49s  <ret> 발화 (turn17 첫 프레임)
-    72.64s  agent 발화 시작: <ret> Yes, The Grandview Lofts does offer free parking on si
-    72.88s  user  발화 끝
-    73.29s  ⚡SPAN 주입 [d'=0.80s / d_lead=3.04s]: (tool result) The Grandview Lofts offers free on-site parking.
-    75.69s  agent 발화 끝
-    75.83s  user  발화 시작: Wonderful. This is really helping me get organized.
-    79.07s  user  발화 끝
-    79.08s  agent 발화 시작: [happy] It’s wonderful to hear that I'm helping you feel pre
-    80.49s  user  발화 시작: Uh-huh.
-    81.57s  agent 발화 끝
-    81.74s  user  발화 시작: Do you think I should bring anything to the viewing?
-    82.56s  user  발화 끝
-    82.56s  agent 발화 시작: A notepad and pen could be helpful for jotting down any ques
-    84.03s  user  발화 시작: Yeah.
-    84.69s  agent 발화 끝
-    85.03s  user  발화 시작: Good idea. What’s the weather forecast for June sixteenth?
-    85.24s  <ret> 발화 (turn25 첫 프레임)
-    85.36s  user  발화 끝
-    85.64s  agent 발화 시작: <ret> It looks like June sixteenth will be sunny with a high
-    85.67s  user  발화 끝
-    86.20s  ⚡SPAN 주입 [d'=0.96s / d_lead=1.61s]: (tool result) June 16th: Sunny, high of 75°F, low of 60°F.
-    86.73s  user  발화 시작: Okay.
-    86.75s  user  발화 끝
-    87.12s  user  발화 시작: Perfect viewing weather!
-    87.25s  agent 발화 끝
-    87.84s  agent 발화 시작: [surprised] It certainly sounds like it! A pleasant day alwa
-    87.94s  user  발화 끝
-    90.94s  user  발화 끝
-    91.07s  agent 발화 끝
-    91.80s  user  발화 시작: Thanks again for all your help, Tellar.
-    93.79s  agent 발화 시작: You’re very welcome. I’m glad I could assist you, and I wish
-    93.88s  user  발화 끝
-    99.25s  agent 발화 끝
+     4.04s  <ret> 발화 (turn1 첫 프레임)
+     4.16s  user  발화 끝
+     4.28s  agent 발화 시작: <ret> I’ve scheduled a viewing for you at The Grandview Loft
+     5.56s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.72s]: (tool result) Viewing scheduled for The Grandview Lofts, June 15th, 2:
+     9.00s  agent 발화 끝
+     9.08s  user  발화 시작: Actually… June sixteenth would work better.
+    11.65s  <ret> 발화 (turn3 첫 프레임)
+    11.81s  agent 발화 시작: <ret> Let me just confirm that for you— the viewing at The G
+    11.86s  user  발화 끝
+    13.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: (tool result) Viewing rescheduled for The Grandview Lofts, June 16th, 
+    18.99s  agent 발화 끝
+    19.06s  user  발화 시작: Great. Can you find me directions to get there from my curre
+    22.74s  <ret> 발화 (turn5 첫 프레임)
+    22.95s  user  발화 끝
+    22.97s  agent 발화 시작: <ret> Directions to The Grandview Lofts, at 123 Elm Street, 
+    24.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) Directions to The Grandview Lofts: 123 Elm Street, 15 mi
+    29.57s  user  발화 시작: Okay, and what’s the parking situation like there?
+    29.82s  agent 발화 끝
+    32.16s  <ret> 발화 (turn7 첫 프레임)
+    32.32s  agent 발화 시작: <ret> The Grandview Lofts has limited street parking, but th
+    32.44s  user  발화 끝
+    34.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) The Grandview Lofts: limited street parking, paid garage
+    37.55s  agent 발화 끝
+    37.94s  user  발화 시작: A paid garage… hmm, is there anything closer, maybe with fre
+    42.39s  <ret> 발화 (turn9 첫 프레임)
+    42.79s  agent 발화 시작: <ret> There’s free parking available at the City Hall lot, j
+    42.94s  user  발화 끝
+    44.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) Free parking available at City Hall lot, 5-minute walk.
+    45.43s  user  발화 시작: Right.
+    46.20s  user  발화 끝
+    47.64s  user  발화 시작: Perfect! Could you set a reminder for me to leave fifteen mi
+    47.84s  agent 발화 끝
+    51.76s  <ret> 발화 (turn12 첫 프레임)
+    52.12s  user  발화 끝
+    52.15s  agent 발화 시작: <ret> I’ve set a reminder for June sixteenth at 10:15 AM for
+    53.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) Reminder set: June 16th, 10:15 AM, "Grandview Lofts View
+    57.19s  user  발화 시작: Thanks so much, Tellar. You’re a lifesaver.
+    57.38s  agent 발화 끝
+    59.53s  agent 발화 시작: You’re very welcome. It's my pleasure to support you as you 
+    59.63s  user  발화 끝
+    64.58s  agent 발화 끝
+    65.01s  user  발화 시작: Actually, before I forget, can you check the weather forecas
+    69.49s  user  발화 끝
+    69.52s  <ret> 발화 (turn16 첫 프레임)
+    69.60s  agent 발화 시작: <ret> The forecast for June sixteenth at 123 Elm Street is s
+    71.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) June 16th, 123 Elm Street: Sunny, high of 75 degrees Fah
+    75.53s  agent 발화 끝
+    75.56s  user  발화 시작: That sounds lovely. Is there a good coffee shop nearby I cou
+    81.05s  <ret> 발화 (turn18 첫 프레임)
+    81.21s  agent 발화 시작: <ret> There's a highly-rated coffee shop, “The Daily Grind”,
+    81.21s  user  발화 끝
+    83.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) "The Daily Grind" coffee shop, 2-minute walk from The Gr
+    84.24s  user  발화 시작: Uh-huh.
+    84.74s  user  발화 끝
+    86.53s  agent 발화 끝
+    86.79s  user  발화 시작: Oh, great. What are their hours on Saturday?
+    89.80s  <ret> 발화 (turn21 첫 프레임)
+    89.98s  user  발화 끝
+    90.12s  agent 발화 시작: <ret> The Daily Grind is open on Saturday from 7:00 AM to 5:
+    90.30s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.35s]: (tool result) The Daily Grind: Saturday, 7:00 AM to 5:00 PM.
+    91.77s  user  발화 시작: Exactly.
+    92.87s  user  발화 끝
+    94.47s  agent 발화 끝
+    96.68s  user  발화 시작: Fantastic. I think that’s everything.
+    99.39s  agent 발화 시작: Wonderful. It sounds like you’re well-prepared for your view
+    99.54s  user  발화 끝
+   102.62s  agent 발화 끝
+   103.00s  user  발화 시작: Yes, I am. Thank you again.
+   105.49s  user  발화 끝
+   105.71s  agent 발화 시작: You’re very welcome. I wish you all the best with finding a 
+   109.19s  user  발화 시작: I appreciate that.
+   109.36s  agent 발화 끝
+   110.47s  user  발화 끝
+   110.65s  agent 발화 시작: Enjoy your trip.
+   111.65s  agent 발화 끝

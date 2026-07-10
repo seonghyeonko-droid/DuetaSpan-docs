@@ -68,27 +68,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 What’s the cancellation policy? | S3 That sounds good, but— | S4 Is parking included with the reser
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     4.97s  <ret> 발화 (turn1 첫 프레임)
-     5.20s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
-     5.46s  user  발화 끝
-     6.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 ro
-    12.01s  user  발화 시작: Right.
-    12.51s  user  발화 끝
-    16.98s  agent 발화 끝
-    19.73s  user  발화 시작: What’s the cancellation policy?
-    22.76s  <ret> 발화 (turn4 첫 프레임)
-    23.08s  agent 발화 시작: <ret> You can cancel for free until January twenty-fifth.
-    23.29s  user  발화 끝
-    24.36s  ⚡SPAN 주입 [d'=1.60s / d_lead=1.93s]: (tool result) Free cancellation until January 25th.
-    25.01s  agent 발화 끝
-    25.48s  user  발화 시작: That sounds good, but—
-    28.31s  user  발화 시작: Is parking included with the reservation?
-    28.43s  user  발화 끝
-    34.32s  <ret> 발화 (turn7 첫 프레임)
-    34.48s  agent 발화 시작: <ret> Parking is available at the hotel for a daily fee of t
-    34.57s  user  발화 끝
-    36.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) Parking: $25 per day.
-    40.55s  agent 발화 끝
+     5.03s  <ret> 발화 (turn1 첫 프레임)
+     5.27s  agent 발화 시작: <ret> I’ve confirmed your reservation at the Ocean View Hote
+     5.28s  user  발화 끝
+     7.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 ro
+     8.62s  user  발화 시작: …Does that include breakfast?
+     9.48s  agent 발화 끝
+    10.33s  <ret> 발화 (turn3 첫 프레임)
+    10.49s  agent 발화 시작: <ret> The Ocean View Hotel does include a complimentary cont
+    10.56s  user  발화 끝
+    12.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: (tool result) Ocean View Hotel, San Diego: complimentary continental b
+    13.79s  user  발화 시작: Mm-hmm.
+    14.28s  user  발화 끝
+    15.18s  user  발화 시작: Perfect. And can you set a reminder to check out on February
+    15.35s  agent 발화 끝
+    19.61s  <ret> 발화 (turn6 첫 프레임)
+    19.85s  agent 발화 시작: <ret> I’ve set a reminder for February seventeenth to check 
+    20.00s  user  발화 끝
+    21.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: (tool result) Reminder set for February seventeenth: Check out of Ocea
+    23.88s  agent 발화 끝

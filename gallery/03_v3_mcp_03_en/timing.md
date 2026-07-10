@@ -58,45 +58,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process… | S2 Okay, good. | S3 Can you apply the discount code SP | S4 Perfect. Go ahead and place the or
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process… | S2 What's the total cost, including s | S3 Great! Now, can you use my saved p | S4 Complete the order then.
 
      0.00s  user  발화 시작: Start the checkout process…
-     2.08s  user  발화 끝
-     3.75s  user  발화 시작: …in the shopping cart iframe.
-     5.31s  <ret> 발화 (turn2 첫 프레임)
-     5.59s  user  발화 끝
-     5.70s  agent 발화 시작: <ret> Alright, I’ve opened the checkout page within the shop
-     7.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) checkout page opened
-     9.82s  agent 발화 끝
-    10.70s  user  발화 시작: Okay, good.
-    12.60s  agent 발화 시작: [happy] That's excellent! Now, shall we proceed with filling
-    12.68s  user  발화 끝
-    16.91s  agent 발화 끝
-    18.50s  user  발화 시작: Yes, please. What’s the current shipping cost?
-    18.89s  <ret> 발화 (turn6 첫 프레임)
-    18.96s  agent 발화 시작: <ret> The current shipping cost is… $7.99.
-    19.09s  user  발화 끝
-    20.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) $7.99
-    22.05s  user  발화 시작: Exactly.
-    23.43s  agent 발화 시작: It’s a standard rate for items delivered within the continen
-    23.49s  agent 발화 끝
-    25.09s  user  발화 끝
-    29.32s  agent 발화 끝
-    29.95s  user  발화 시작: Can you apply the discount code SPRING20?
-    31.88s  <ret> 발화 (turn10 첫 프레임)
-    32.27s  agent 발화 시작: <ret> I’ve applied the discount code SPRING20 to your order.
-    32.45s  user  발화 끝
-    33.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) discount applied
-    40.01s  agent 발화 끝
-    40.53s  user  발화 시작: And what’s the new total?
-    42.18s  <ret> 발화 (turn12 첫 프레임)
-    42.27s  user  발화 끝
-    42.34s  agent 발화 시작: <ret> The new total, with the discount applied, is… $45.50.
-    43.54s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.63s]: (tool result) $45.50
-    44.80s  user  발화 시작: Perfect. Go ahead and place the order.
-    44.97s  agent 발화 끝
-    46.24s  <ret> 발화 (turn14 첫 프레임)
-    46.56s  agent 발화 시작: <ret> Wonderful! Your order has been confirmed, and the orde
-    46.69s  user  발화 끝
-    48.08s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.05s]: (tool result) order confirmed, order number 12345
-    51.61s  agent 발화 끝
+     1.75s  user  발화 끝
+     3.60s  user  발화 시작: …in the shopping cart iframe.
+     5.15s  <ret> 발화 (turn2 첫 프레임)
+     5.44s  user  발화 끝
+     5.54s  agent 발화 시작: <ret> Alright, I've initiated the checkout process within th
+     6.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.13s]: (tool result) checkout initiated
+    10.51s  user  발화 시작: What's the total cost, including shipping?
+    10.67s  agent 발화 끝
+    12.97s  <ret> 발화 (turn4 첫 프레임)
+    13.05s  agent 발화 시작: <ret> The total cost, including shipping, is seventy-eight d
+    13.10s  user  발화 끝
+    14.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) $78.50
+    16.86s  user  발화 시작: Yeah.
+    17.36s  user  발화 끝
+    18.06s  agent 발화 시작: Just confirming, that includes the items currently in your c
+    18.23s  agent 발화 끝
+    23.15s  agent 발화 끝
+    23.32s  user  발화 시작: Can you apply a twenty percent discount code?
+    25.76s  <ret> 발화 (turn8 첫 프레임)
+    26.16s  agent 발화 시작: <ret> I’ve applied the SAVE20 discount code, bringing your n
+    26.42s  user  발화 끝
+    27.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) discount applied, new total $62.80
+    32.99s  user  발화 시작: Great! Now, can you use my saved payment method?
+    33.01s  agent 발화 끝
+    36.20s  <ret> 발화 (turn10 첫 프레임)
+    36.59s  agent 발화 시작: <ret> Your saved payment method has been confirmed for this 
+    36.78s  user  발화 끝
+    38.12s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.02s]: (tool result) payment method confirmed
+    40.53s  user  발화 시작: And ship it to my default address?
+    40.61s  agent 발화 끝
+    42.19s  <ret> 발화 (turn12 첫 프레임)
+    42.58s  agent 발화 시작: <ret> Shipping will be to your default address on file.
+    42.65s  user  발화 끝
+    44.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) shipping address confirmed
+    46.27s  agent 발화 끝
+    47.90s  user  발화 시작: Complete the order then.
+    48.98s  <ret> 발화 (turn14 첫 프레임)
+    49.38s  agent 발화 시작: <ret> Your order is now confirmed, and the order number is t
+    49.56s  user  발화 끝
+    50.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: (tool result) order confirmed, #12345
+    55.16s  agent 발화 끝
+    55.17s  user  발화 시작: Perfect, thank you.
+    56.12s  agent 발화 시작: You’re very welcome! I’m glad I could help streamline your c
+    56.32s  user  발화 끝
+    61.02s  agent 발화 끝

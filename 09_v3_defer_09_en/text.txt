@@ -69,14 +69,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Book three rooms at Ocean View Hotel in San Diego for seven nights starting on ⟨ret@4.97s⟩ February tenth.
-[  5.20s][moshi] I’ve reserved three ⟦⚡SPAN@6.97s: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 rooms, February 10th to February 17th, con⟧ rooms at the Ocean View Hotel in San Diego for seven nights, starting February tenth, and your confirmation number is 8675309.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "number_of_rooms": 3, "start_date": "February tenth", "length_of_stay": 7}}
-[ 12.01s][user ] «backchannel» Right.
-[ 19.73s][user ] What’s the cancellation ⟨ret@22.76s⟩ policy?
-[ 23.08s][moshi] You can cancel for free ⟦⚡SPAN@24.36s: (tool result) Free cancellation until January 25th.⟧ until January twenty-fifth.
-      CALL: {"function": "Hotels_4_GetCancellationPolicy", "arguments": {"confirmation_number": "8675309"}}
-[ 25.48s][user ] That sounds good, but—
-[ 28.31s][user ] Is parking included with the reservation?
-[ 34.48s][moshi] ⟨ret@34.32s⟩ Parking is available ⟦⚡SPAN@36.32s: (tool result) Parking: $25 per day.⟧ at the hotel for a daily fee of twenty-five dollars.
+[  0.00s][user ] Book three rooms at Ocean View Hotel in San Diego for seven nights starting on February ⟨ret@5.03s⟩ tenth.
+[  5.27s][moshi] «interrupted» I’ve confirmed your reservation ⟦⚡SPAN@7.03s: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 rooms, February tenth to February seventee⟧ at the Ocean View Hotel in San Diego—
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"number_of_rooms": "3", "hotel_name": "Ocean View Hotel", "city": "San Diego", "check_in_date": "February tenth", "length_of_stay": "7"}}
+[  8.62s][user ] «interrupts_prev» …Does that include breakfast?
+[ 10.49s][moshi] ⟨ret@10.33s⟩ The Ocean View Hotel ⟦⚡SPAN@12.33s: (tool result) Ocean View Hotel, San Diego: complimentary continental breakfast included.⟧ does include a complimentary continental breakfast with your stay.
       CALL: {"function": "Hotels_4_GetHotelDetails", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego"}}
+[ 13.79s][user ] «backchannel» Mm-hmm.
+[ 15.18s][user ] Perfect. And can you set a reminder to check out on February ⟨ret@19.61s⟩ seventeenth?
+[ 19.85s][moshi] I’ve set a reminder for ⟦⚡SPAN@21.61s: (tool result) Reminder set for February seventeenth: Check out of Ocean View Hotel.⟧ February seventeenth to check out of the hotel.
+      CALL: {"function": "Calendar_4_SetReminder", "arguments": {"date": "February seventeenth", "reminder_text": "Check out of Ocean View Hotel"}}

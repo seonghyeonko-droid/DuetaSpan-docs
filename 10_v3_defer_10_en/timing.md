@@ -64,21 +64,19 @@
 # }
 
 
-     0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.78s  <ret> 발화 (turn1 첫 프레임)
-     4.86s  user  발화 끝
-     4.86s  agent 발화 시작: <ret> I found thirty-two images from your France holiday in 
-     6.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.89s]: (tool result) Found 32 images matching 'France holiday' from 2023, exc
-     7.32s  user  발화 시작: Uh-huh.
-     7.86s  user  발화 끝
-    10.62s  user  발화 시작: Can you open the first one?
-    10.75s  agent 발화 끝
-    12.07s  <ret> 발화 (turn4 첫 프레임)
-    12.22s  agent 발화 시작: <ret> I’ve opened the first picture, it’s from your France t
-    12.36s  user  발화 끝
-    13.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.77s]: (tool result) Opened /Users/sunan/Pictures/France2023/image001.jpg
-    14.19s  user  발화 시작: Yeah.
-    14.63s  user  발화 끝
-    17.00s  agent 발화 끝
-    17.50s  user  발화 시작: That’s lovely, thanks!
-    19.11s  user  발화 끝
+     0.00s  user  발화 시작: Find pictures related to my holiday in France last year…
+     3.42s  user  발화 끝
+     4.87s  user  발화 시작: …but not thumbnails.
+     5.99s  <ret> 발화 (turn2 첫 프레임)
+     6.07s  agent 발화 시작: <ret> I found twelve pictures from your France holiday in tw
+     6.25s  user  발화 끝
+     7.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) 12 files found: 'Paris EiffelTower.jpg', 'Nice Beach.png
+     9.65s  user  발화 시작: Mhm.
+    10.38s  user  발화 끝
+    12.00s  agent 발화 끝
+    12.89s  user  발화 시작: Could you open the one of the Eiffel Tower?
+    14.71s  <ret> 발화 (turn5 첫 프레임)
+    14.86s  agent 발화 시작: <ret> I’ve opened ‘Paris_EiffelTower.jpg’ for you.
+    14.97s  user  발화 끝
+    15.67s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.37s]: (tool result) file opened
+    18.23s  agent 발화 끝

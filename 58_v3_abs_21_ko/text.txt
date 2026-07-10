@@ -1,0 +1,82 @@
+v3_abs_21_ko src=squad2 style=abstain
+SYSTEM: <system> 당신은 건강 및 일상 습관 관련하여 사람들을 돕는, 현실적이고 공감적인 상담사 Nias입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_abs_21",
+    "name": "하재",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-16",
+      "category": "home",
+      "text": "User's home address is 389 Maple Drive."
+    },
+    {
+      "date": "2026-02-21",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in August."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-09-21",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-03-12",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-16",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 프랑스 상원 의원 수는 몇 ⟨ret@2.38s⟩ 명인가요?
+[  2.77s][moshi] 프랑스 상원 의원 ⟦⚡SPAN@4.38s: (no information found)⟧ 수에 대한 정보는 현재 찾을 수 없었습니다. 죄송합니다.
+[  5.98s][user ] «backchannel» 네.
+[  7.45s][user ] 아, 그렇군요. 그럼 프랑스 ⟨ret@9.62s⟩ 국회는요?
+[  9.93s][moshi] 프랑스 의회는 상원과 ⟦⚡SPAN@11.54s: [source: Wikipedia] The French Parliament is bicameral, comprising the Senate and the National Assembly.⟧ 국민의회, 두 개의 원으로 구성되어 있습니다.
+[ 14.25s][user ] 국민의회 의원 수는요?
+[ 16.49s][moshi] ⟨ret@16.34s⟩ 국민의회는 총 오백칠십칠 ⟦⚡SPAN@18.34s: [source: National Assembly of France] The National Assembly has 577 members.⟧ 명의 의원으로 이루어져 있습니다.
+[ 19.21s][user ] «backchannel» 네.
+[ 20.27s][moshi] 혹시 다른 궁금한 점이 있으신가요?
+[ 22.25s][user ] 프랑스 대통령은 누가 선출했나요?
+[ 24.47s][moshi] ⟨ret@24.39s⟩ 에마뉘엘 마크롱 ⟦⚡SPAN@25.91s: [source: Britannica] Emmanuel Macron was re-elected as president of France on April 24, 2022.⟧ 대통령이 이천이십이년 사월 이십사일에 재선에 성공했습니다.
+[ 29.86s][user ] 그분은 몇 년도에 처음 대통령이 되었죠? ⟨ret@32.30s⟩
+[ 32.46s][moshi] 마크롱 ⟦⚡SPAN@33.58s: [source: Reuters] Emmanuel Macron was first elected president of France in 2017.⟧ 대통령은 처음 이천십칠년에 프랑스 대통령으로 선출되었습니다.
+[ 33.96s][user ] «backchannel» 예.
+[ 37.31s][user ] 기억력이 좋으시네요.
+[ 39.20s][moshi] [happy] 칭찬해 주셔서 감사합니다. 제가 도울 수 있어서 기쁩니다.
+[ 42.90s][user ] 건강 관리에 대한 조언…
+[ 46.31s][user ] …좀 해주실 수 있나요?
+[ 48.69s][moshi] 규칙적인 생활 습관과 균형 잡힌 식단이 중요하다고 생각합니다. 충분한 수면도 잊지 마세요.
+[ 55.38s][user ] 좋은 말씀이네요. 감사해요.
+[ 57.31s][moshi] 언제든 필요하시면 찾아주세요. 좋은 하루 보내세요.

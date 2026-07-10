@@ -59,23 +59,25 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you.
-     6.08s  user  발화 시작: Yeah.
-     6.63s  user  발화 끝
-     7.99s  user  발화 시작: Oh, that's nice. Actually, I was just thinking about a trip 
-     8.02s  agent 발화 끝
-    12.13s  agent 발화 시작: A trip sounds wonderful! Are you revisiting a place you love
-    12.20s  user  발화 끝
-    19.00s  agent 발화 끝
-    19.45s  user  발화 시작: It's to Kyoto, actually. I’m going in March. Do you think th
-    25.96s  <ret> 발화 (turn5 첫 프레임)
-    26.36s  agent 발화 시작: <ret> You're planning a trip to Kyoto in March… that’s a bea
-    26.52s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.63s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    26.54s  user  발화 끝
-    26.60s  user  발화 시작: Mm-hmm.
-    26.80s  agent 발화 시작: It’s a popular time, though, so booking accommodations and e
-    26.99s  agent 발화 끝
-    31.63s  agent 발화 끝
-    32.05s  user  발화 시작: That's a good point. I also remember talking about my dentis
-    35.17s  user  발화 끝
-    39.70s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It’s lovely to connect with you today
+     3.60s  user  발화 시작: Yeah.
+     4.27s  user  발화 끝
+     4.82s  agent 발화 끝
+     4.82s  user  발화 시작: Hi Thunalo. I was thinking about that trip I’m planning… the
+    10.68s  <ret> 발화 (turn3 첫 프레임)
+    10.76s  agent 발화 시작: <ret> You're planning a trip to Kyoto in March… a wonderful 
+    10.85s  user  발화 끝
+    12.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    15.38s  user  발화 시작: Mm-hmm.
+    15.87s  user  발화 끝
+    17.38s  agent 발화 끝
+    17.40s  user  발화 시작: Yes! I’m trying to finalize the dates, actually. What’s the 
+    23.52s  <ret> 발화 (turn6 첫 프레임)
+    23.59s  agent 발화 시작: <ret> Kyoto is eight hours ahead of Paris in March… that’s s
+    23.70s  user  발화 끝
+    25.36s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.95s]: (tool result) Kyoto is 8 hours ahead of Paris in March.
+    30.55s  agent 발화 끝
+    31.06s  user  발화 시작: Eight hours… that’s quite a bit. I— I mean, will that affect
+    36.99s  agent 발화 시작: Jet lag can certainly be a factor with that time difference,
+    37.03s  user  발화 끝
+    45.34s  agent 발화 끝

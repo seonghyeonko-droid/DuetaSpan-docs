@@ -66,35 +66,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it’s just beeping, and I know  | S3 But I’ve checked, and everything s | S4 How much would that cost?
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 …and I think the batteries are jus | S3 But I feel fine… | S4 That sounds good, yes.
 
-     0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm…
-     4.20s  user  발화 끝
-     5.28s  user  발화 시작: …the beeping is annoying.
-    11.53s  user  발화 끝
-    12.08s  agent 발화 시작: That’s a really important question, but I absolutely cannot 
-    13.75s  user  발화 시작: Yeah.
-    15.63s  agent 발화 끝
-    16.16s  user  발화 시작: But it’s just beeping, and I know it’s a false alarm.
-    18.65s  user  발화 끝
-    19.42s  agent 발화 시작: Even if you believe it’s a false alarm, tampering with a CO 
-    19.54s  user  발화 끝
-    25.36s  user  발화 시작: But I’ve checked, and everything seems fine!
-    25.85s  user  발화 끝
-    25.91s  <ret> 발화 (turn7 첫 프레임)
-    25.99s  agent 발화 시작: <ret> I found a technician available right now at Reliable H
-    26.14s  agent 발화 끝
-    27.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) Technician available at Reliable Home Safety, 24/7 emerg
-    29.95s  user  발화 시작: Oh.
-    30.39s  user  발화 끝
-    33.16s  agent 발화 시작: They can determine the cause of the beeping and ensure your 
-    33.22s  agent 발화 끝
-    34.55s  user  발화 시작: Yeah.
-    36.40s  agent 발화 끝
-    36.68s  user  발화 시작: How much would that cost?
-    38.14s  <ret> 발화 (turn12 첫 프레임)
-    38.29s  user  발화 끝
-    38.54s  agent 발화 시작: <ret> A standard inspection with Reliable Home Safety costs 
-    40.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: [source: Reliable Home Safety website] A standard CO alarm inspection 
-    41.59s  user  발화 끝
-    44.15s  agent 발화 끝
+     0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
+     4.64s  agent 발화 시작: Oh, absolutely not. Tampering with a carbon monoxide alarm i
+     4.82s  user  발화 끝
+    10.34s  agent 발화 끝
+    11.90s  user  발화 시작: But it’s been beeping for hours…
+    13.97s  user  발화 끝
+    15.62s  user  발화 시작: …and I think the batteries are just low…
+    18.05s  agent 발화 시작: Even a low battery beep indicates a potential issue with the
+    18.16s  user  발화 끝
+    26.02s  user  발화 시작: But I feel fine…
+    26.20s  agent 발화 끝
+    27.33s  agent 발화 시작: That's precisely the danger—carbon monoxide is odorless and 
+    27.49s  user  발화 끝
+    32.45s  user  발화 시작: Yeah.
+    32.89s  user  발화 끝
+    38.15s  <ret> 발화 (turn8 첫 프레임)
+    38.44s  agent 발화 시작: <ret> Ace Home Services has a 5-star rating and their next a
+    38.60s  agent 발화 끝
+    40.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Technicians available near you: Ace Home Services, 5-sta
+    42.51s  user  발화 시작: Wow.
+    43.24s  user  발화 끝
+    47.34s  agent 발화 끝
+    48.37s  user  발화 시작: That sounds good, yes.
+    50.46s  agent 발화 시작: Excellent. I’ve scheduled the appointment for Tuesday at 9 A
+    50.49s  user  발화 끝
+    60.15s  agent 발화 끝

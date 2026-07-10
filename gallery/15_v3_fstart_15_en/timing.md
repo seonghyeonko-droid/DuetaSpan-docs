@@ -63,67 +63,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Are there any family suites availa | S3 Good to know. And what about resta | S4 Is it expensive?
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 That sounds good. Is there parking | S3 That’s a bit pricey. | S4 Can you book a spot there for me f
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     4.02s  user  발화 끝
-     4.17s  <ret> 발화 (turn1 첫 프레임)
-     4.25s  agent 발화 시작: <ret> The Sydney Opera House is located at latitude -33.8568
-     5.85s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.79s]: (tool result) -33.8568, 151.2153
-     9.30s  user  발화 시작: Wow.
-     9.84s  user  발화 끝
-    14.01s  user  발화 시작: Okay, and can you find me hotels near that location?
-    14.04s  agent 발화 끝
-    18.29s  <ret> 발화 (turn4 첫 프레임)
-    18.52s  agent 발화 시작: <ret> The closest hotel is the Shangri-La Hotel, Sydney, jus
-    18.74s  user  발화 끝
-    20.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) Shangri-La Hotel, Sydney - 0.5km
-    21.17s  user  발화 시작: Right.
-    22.88s  user  발화 시작: What’s their website?
-    22.96s  agent 발화 끝
-    25.42s  user  발화 끝
-    26.86s  <ret> 발화 (turn7 첫 프레임)
-    26.93s  agent 발화 시작: <ret> The Shangri-La Hotel, Sydney’s website is https://www.
-    27.09s  user  발화 시작: Mhm.
-    27.18s  user  발화 끝
-    27.36s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.63s]: (tool result) https://www.shangri-la.com/sydney/shangrila
-    27.57s  agent 발화 끝
-    29.25s  user  발화 시작: Are there any family suites available next weekend.
-    31.44s  user  발화 끝
-    33.69s  user  발화 끝
-    34.15s  agent 발화 시작: Let me check availability for family suites at the Shangri-L
-    40.78s  user  발화 시작: Actually, never mind about the suites, what's the cancellati
-    41.27s  user  발화 끝
-    41.47s  agent 발화 끝
-    41.49s  agent 발화 시작: The Shangri-La Hotel, Sydney’s cancellation policy allows fr
-    43.09s  user  발화 시작: Yeah, yeah.
-    45.33s  agent 발화 끝
-    46.41s  user  발화 시작: Good to know. And what about restaurants nearby?
-    46.78s  <ret> 발화 (turn15 첫 프레임)
-    47.02s  agent 발화 시작: <ret> Aria Restaurant is nearby, only 0.8 kilometers from th
-    47.05s  user  발화 끝
-    47.44s  user  발화 끝
-    48.33s  user  발화 시작: Oh.
-    48.62s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.93s]: (tool result) Aria Restaurant - 0.8km
-    50.95s  agent 발화 끝
-    51.96s  user  발화 시작: What kind of cuisine do they serve?
-    54.04s  <ret> 발화 (turn18 첫 프레임)
-    54.36s  agent 발화 시작: <ret> Aria Restaurant serves Modern Australian cuisine.
-    54.55s  user  발화 끝
-    54.77s  user  발화 끝
-    55.00s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.65s]: (tool result) Modern Australian
-    56.62s  user  발화 시작: Yeah.
-    57.10s  user  발화 끝
-    58.01s  agent 발화 끝
-    58.27s  user  발화 시작: Is it expensive?
-    59.72s  <ret> 발화 (turn21 첫 프레임)
-    59.88s  agent 발화 시작: <ret> Aria Restaurant is considered very expensive, with a $
-    60.07s  user  발화 끝
-    61.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: (tool result) $$$$ (very expensive)
-    63.27s  user  발화 시작: Uh-huh.
-    63.72s  user  발화 끝
-    64.42s  agent 발화 끝
-    65.24s  user  발화 시작: Okay, thanks. That's helpful.
-    67.04s  user  발화 끝
-    67.41s  agent 발화 시작: You're very welcome. I'm glad I could help you plan a bit fo
-    71.38s  agent 발화 끝
+     3.44s  <ret> 발화 (turn1 첫 프레임)
+     3.51s  agent 발화 시작: <ret> The Sydney Opera House is located at latitude -33.8568
+     3.70s  user  발화 끝
+     5.12s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.81s]: (tool result) -33.8568, 151.2153
+     6.82s  user  발화 시작: Oh.
+     7.55s  user  발화 끝
+    12.32s  agent 발화 끝
+    15.01s  user  발화 시작: Okay, and can you give me directions…
+    17.54s  user  발화 끝
+    19.26s  user  발화 시작: …from that location to the Harbour Bridge?
+    21.46s  <ret> 발화 (turn5 첫 프레임)
+    21.70s  agent 발화 시작: <ret> The Harbour Bridge is 1.2 kilometers away, about a 15-
+    21.85s  user  발화 끝
+    22.74s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.49s]: (tool result) 1.2 km, 15 min walk
+    23.36s  user  발화 시작: Yeah, yeah.
+    24.77s  user  발화 끝
+    26.19s  agent 발화 끝
+    26.37s  user  발화 시작: That sounds good. Is there parking near the Harbour Bridge?
+    29.86s  <ret> 발화 (turn8 첫 프레임)
+    30.10s  agent 발화 시작: <ret> Wilson Parking at 80 Alfred Street, Milsons Point, is 
+    30.20s  user  발화 끝
+    30.98s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.35s]: (tool result) Wilson Parking - 80 Alfred St, Milsons Point NSW 2061
+    34.35s  user  발화 시작: And how much does it cost per hour there?
+    34.45s  agent 발화 끝
+    36.57s  <ret> 발화 (turn10 첫 프레임)
+    36.80s  agent 발화 시작: <ret> Parking at that location costs $7.00 per hour.
+    36.93s  user  발화 끝
+    37.93s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.19s]: (tool result) $7.00 per hour
+    39.94s  user  발화 시작: That’s a bit pricey.
+    39.98s  agent 발화 끝
+    41.36s  user  발화 끝
+    41.77s  agent 발화 시작: It can be, especially during peak times, but—
+    43.83s  user  발화 시작: Are there any cheaper options within a 20-minute walk?
+    44.68s  agent 발화 끝
+    46.51s  <ret> 발화 (turn14 첫 프레임)
+    46.90s  agent 발화 시작: <ret> Secure Parking at 133 Alfred Street is $5.50 per hour.
+    47.01s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.28s]: (tool result) Secure Parking - 133 Alfred St, Milsons Point NSW 2061, 
+    47.06s  user  발화 끝
+    52.18s  agent 발화 끝
+    52.40s  user  발화 시작: Perfect.
+    53.22s  agent 발화 시작: That's a bit more affordable, and still within a reasonable 
+    53.22s  user  발화 끝
+    54.54s  user  발화 시작: Mhm.
+    55.03s  user  발화 끝
+    57.33s  agent 발화 끝
+    57.79s  user  발화 시작: Can you book a spot there for me for one hour, starting in 3
+    61.41s  <ret> 발화 (turn19 첫 프레임)
+    61.81s  agent 발화 시작: <ret> Your parking spot, number 27, is confirmed for 2:30 PM
+    61.91s  user  발화 끝
+    63.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) Reservation confirmed. Spot #27, starting at 2:30 PM.
+    63.53s  user  발화 시작: Yeah, yeah.
+    64.54s  user  발화 끝
+    65.93s  agent 발화 끝
+    66.92s  user  발화 시작: Great, thanks so much.
+    68.67s  user  발화 끝
+    69.15s  agent 발화 시작: You're very welcome. Enjoy your visit to the Harbour Bridge.
+    72.72s  agent 발화 끝

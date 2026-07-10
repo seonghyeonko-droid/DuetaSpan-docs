@@ -1,0 +1,106 @@
+v3_rag_25_ko src=hotpotqa style=v2
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰니스 코치, Zura입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_25",
+    "name": "은연",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-20",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-09-03",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2025-08-06",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-19",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는지 ⟨ret@4.19s⟩ 아세요?
+[  4.58s][moshi] 확인해 ⟦⚡SPAN@5.23s: [source: Wikipedia] Jack Sock and Raffaella Reggi are both professional tennis players.⟧ 보겠습니다.
+[  5.70s][moshi] 잭 소크 선수와 라파엘라 레지 선수 두 분은… 테니스 선수입니다.
+[ 10.43s][user ] 테니스요? 음… 좀 의외네요. 혹시 두 분이 같이 뛴 적도 ⟨ret@14.44s⟩ 있어요?
+[ 14.74s][moshi] 두 ⟦⚡SPAN@15.64s: [source: ATP Tour] Jack Sock and Raffaella Reggi competed together in the 2018 Hopman Cup.⟧ 분이 함께 경기를 하셨는지 알아볼까요?
+[ 17.23s][moshi] 잭 소크 선수와 라파엘라 레지 선수는… 이천십팔년 홉먼컵에서 함께 출전했습니다.
+[ 23.35s][user ] 홉먼컵이요? 그게 뭔데요?
+[ 25.02s][moshi] 홉먼컵은 국가 대항전 방식의 테니스 대회입니다.
+[ 26.12s][user ] «backchannel» 네.
+[ 28.36s][moshi] 여러 나라에서 팀을 이루어 경쟁하는 방식이에요.
+[ 31.98s][user ] 아하, 그렇군요. 그럼 두 분이 홉먼컵에서 얼마나 잘했는데요?
+[ 36.49s][moshi] ⟨ret@36.25s⟩ 홉먼컵에서의 ⟦⚡SPAN@37.53s: [source: ESPN] Jack Sock and Raffaella Reggi won their singles matches in the 2018 Hopman Cup, helping the Uni⟧ 성적을 찾아볼게요.
+[ 38.83s][moshi] 잭 소크 선수와 라파엘라 레지 선수는… 이천십팔년 홉먼컵에서 단식 경기를 모두 이겨 미국팀이 결승에 진출하는 데 기여했습니다.
+[ 43.74s][user ] «backchannel» 네.
+[ 48.17s][user ] 결승까지 갔다고요? 대단하네요. 혹시 우승도 했나요?
+[ 51.96s][moshi] ⟨ret@51.91s⟩ 결승전 ⟦⚡SPAN@52.95s: [source: Tennis.com] The United States lost the 2018 Hopman Cup final to Switzerland.⟧ 결과도 알아봐 드릴게요.
+[ 54.36s][moshi] 미국팀은… 이천십팔년 홉먼컵 결승에서 스위스에 아쉽게 패배했습니다.
+[ 59.84s][user ] 아, 아깝네요. 그럼 레지 선수 말고 다른 파트너랑도 뛴 적 ⟨ret@63.30s⟩ 있어요?
+[ 63.53s][moshi] 잭 소크 ⟦⚡SPAN@64.90s: [source: WTA Tour] Jack Sock has also partnered with Coco Vandeweghe in several tournaments.⟧ 선수의 다른 파트너를 검색해 보겠습니다.
+[ 66.65s][moshi] 잭 소크 선수는… 코코 반데웨이 선수와도 여러 토너먼트에서 파트너로 활동했습니다.
+[ 72.73s][user ] 코코 반데웨이요? 그 선수도 유명하죠.
+[ 75.89s][moshi] 네, 코코 반데웨이 선수도 뛰어난 테니스 선수입니다.
+[ 77.73s][user ] «backchannel» 네.
+[ 79.21s][moshi] 강렬한 서브와 파워풀한 플레이가 특징입니다.
+[ 82.10s][user ] 잭 소크 선수는 주로 어떤 스타일의 테니스 ⟨ret@85.55s⟩ 선수가예요?
+[ 85.86s][moshi] 잭 소크 ⟦⚡SPAN@86.91s: [source: US Open] Jack Sock is known for his aggressive baseline game and powerful serve.⟧ 선수의 플레이 스타일을 설명해 드릴게요.
+[ 88.66s][moshi] 잭 소크 선수는… 공격적인 베이스라인 게임과 강력한 서브가 특징입니다.
+[ 91.78s][user ] «backchannel» 네.
+[ 93.95s][user ] 공격적인 스타일이군요. 레지 선수도 그런 ⟨ret@97.40s⟩ 스타일인가요?
+[ 97.64s][moshi] 라파엘라 레지 ⟦⚡SPAN@99.08s: [source: ITF Tennis] Raffaella Reggi is a defensive player known for her consistent groundstrokes.⟧ 선수의 스타일도 확인해 보겠습니다.
+[100.76s][moshi] 라파엘라 레지 선수는… 꾸준한 그라운드 스트로크를 구사하는 수비형 선수로 알려져 있습니다.
+[106.11s][user ] 수비형이라… 잭 소크 선수랑 잘 맞았겠네요.
+[109.44s][moshi] 공격과 수비를 모두 갖춘 조합이었던 셈이죠.
+[111.55s][user ] «backchannel» 음.
+[113.05s][user ] 두 분 다 은퇴하셨나요?…
+[116.51s][user ] …아니면 아직도 활동하고 ⟨ret@118.68s⟩ 있나요?
+[118.83s][moshi] 현재 두 ⟦⚡SPAN@119.96s: [source: ATP Tour] Jack Sock is currently ranked number 136 in the world as of November 2023.⟧ 분의 활동 상태를 알아볼게요.
+[121.17s][moshi] 잭 소크 선수는… 이천이십삼년 십일월 기준으로 세계 랭킹 백삼십육위입니다.
+[126.92s][user ] 아직도 활동하고 있군요. 레지 ⟨ret@130.18s⟩ 선수는요?
+[130.58s][moshi] 라파엘라 레지 선수의 ⟦⚡SPAN@132.18s: [source: WTA Tour] Raffaella Reggi retired from professional tennis in 2019.⟧ 현재 활동 상태도 확인해 보겠습니다.
+[134.38s][moshi] 라파엘라 레지 선수는… 이천십구년에 프로 테니스 선수로서 은퇴했습니다.
+[139.14s][user ] 아, 레지 선수는 은퇴하셨군요. 잭 소크 선수는 앞으로도 계속 활약하겠네요.
+[144.98s][moshi] 네, 앞으로도 잭 소크 선수의 활약을 기대해 볼 수 있겠습니다.
+[149.72s][user ] 오늘 알려주셔서 감사합니다.
+[151.84s][moshi] 도움이 되었다니 기쁩니다.

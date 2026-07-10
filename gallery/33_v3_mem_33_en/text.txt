@@ -69,37 +69,42 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Casey, I’m Diolo. It's lovely to connect with you today.
-[  2.56s][user ] «backchannel» Yeah, yeah.
-[  4.68s][user ] Oh, hi. Um, what time is it right now? I've lost ⟨ret@8.15s⟩ track.
-[  8.31s][moshi] It’s currently 10:32 AM in London. I hope your day ⟦⚡SPAN@8.64s: (tool result) It is currently 10:32 AM in London.⟧ is off to a good start.
+[  0.00s][moshi] Hi Casey, I'm Diolo. It's lovely to connect with you today.
+[  2.46s][user ] «backchannel» Yeah, yeah.
+[  3.40s][user ] Oh, hello. I was just wondering what the time is right now.
+[  6.12s][moshi] ⟨ret@5.96s⟩ The time in London is… ⟦⚡SPAN@7.96s: (tool result) It is currently 10:32 AM in London.⟧ currently 10:32 AM. It’s a bit grey out, isn’t it?
       CALL: {"function": "get_current_time", "arguments": {"location": "London"}}
-[  8.54s][user ] «backchannel» Yeah.
-[  8.84s][user ] That's good to know. I’m trying to decide what to make for dinner tonight.
-[ 14.98s][moshi] That sounds like a pleasant evening plan. Is there anything in particular you're leaning towards?
-[ 19.72s][user ] I was thinking maybe something with, uh, fermented vegetables? I've been getting into that ⟨ret@23.35s⟩ lately.
-[ 23.50s][moshi] You’ve been exploring home fermentation, which is fantastic. ⟦⚡SPAN@23.80s: [2026-03-07] User is into home fermentation.⟧ It’s a really rewarding hobby.
-[ 23.65s][user ] «backchannel» Yeah, yeah.
-[ 24.90s][user ] Yeah, it is. I’m just trying to think of a good main dish to go with it. Something… not too heavy.
-[ 26.35s][moshi] A lighter main dish sounds lovely. Are you hoping to pair it with a specific type of fermented vegetable?
-[ 31.56s][user ] Hmm, probably kimchi. I made a big batch last week.
-[ 37.08s][moshi] Kimchi is a wonderful choice, so flavorful. Are you looking for something to complement its spice?
-[ 42.39s][user ] Exactly. And I’m also gluten-free, just so you know.
-[ 48.14s][moshi] ⟨ret@48.07s⟩ You're gluten-free, which is good to keep in mind. ⟦⚡SPAN@49.91s: [2025-10-29] User is gluten-free.⟧ We can certainly find some suitable options.
-[ 51.50s][user ] I was thinking maybe fish? I really like sushi, actually.
-[ 58.74s][moshi] ⟨ret@58.50s⟩ You enjoy sushi, which is a great ⟦⚡SPAN@60.50s: [2026-05-07] User's favorite cuisine is sushi.⟧ option. Perhaps a light fish dish inspired by sushi flavors?
-[ 63.02s][user ] That sounds perfect! Do you have any suggestions?
-[ 67.46s][moshi] A grilled sea bass with a kimchi glaze could be delicious and gluten-free. Would you like a recipe?
-[ 72.72s][user ] Oh, that sounds amazing. Yes, ⟨ret@75.91s⟩ please!
-[ 75.99s][moshi] Here's a gluten-free grilled sea ⟦⚡SPAN@77.91s: (tool result) Grilled Sea Bass with Kimchi Glaze - Gluten-Free: [URL: example.com/seabass]⟧ bass with kimchi glaze recipe at example.com/seabass.
-      CALL: {"function": "search_recipe", "arguments": {"dish": "grilled sea bass with kimchi glaze", "dietary_restriction": "gluten-free"}}
-[ 80.13s][user ] Fantastic. Thanks so much. I’m also planning a party next week.
-[ 85.80s][moshi] ⟨ret@85.40s⟩ ⟦⚡SPAN@85.90s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ A party sounds fun! Are you planning something similar to your birthday dinner from last year?
-[ 89.86s][moshi] You were looking for outdoor seating for a party of six last year. Is that still the case this time?
-[ 95.76s][user ] Yeah, pretty much. Six people, outdoor seating if possible.
-[ 98.76s][moshi] Wonderful. I can start looking for restaurants with outdoor seating that can accommodate six people.
-[100.58s][user ] «backchannel» Yeah.
-[104.60s][user ] Great. Somewhere not too far from my address, if that's ⟨ret@106.62s⟩ possible?
-[106.77s][moshi] Your address is 743 ⟦⚡SPAN@108.30s: [2025-06-15] User's home address is 743 Cedar Lane.⟧ Cedar Lane. I’ll focus my search on restaurants nearby.
-[110.62s][user ] Perfect. Thank you, Diolo.
-[115.03s][moshi] You’re very welcome, Casey. It’s my pleasure to help.
+[  9.22s][user ] «backchannel» Yeah.
+[ 11.23s][user ] It is, actually. I'm trying to decide what to make for dinner tonight.
+[ 15.55s][moshi] Dinner decisions can be tricky. Do you have any preferences in mind, or are you feeling adventurous?
+[ 20.86s][user ] Well, I was thinking about sushi. I really enjoy ⟨ret@23.84s⟩ that.
+[ 24.24s][moshi] You know, you mentioned ⟦⚡SPAN@25.84s: [2026-05-07] User's favorite cuisine is sushi.⟧ you enjoy sushi… back on May 7th, 2026. A wonderful choice, if I may say so.
+[ 29.52s][user ] «backchannel» Yeah.
+[ 31.72s][user ] Oh, right! I’d forgotten I told you that. Do you know if there’s a good sushi place ⟨ret@35.97s⟩ nearby?
+[ 36.21s][moshi] There’s a highly-rated sushi ⟦⚡SPAN@37.97s: (tool result) Zuma is a highly-rated sushi restaurant 2.3 miles from your location.⟧ restaurant called Zuma… just 2.3 miles from where you are.
+      CALL: {"function": "find_restaurants", "arguments": {"cuisine": "sushi", "location": "London"}}
+[ 41.16s][user ] Zuma, huh? Is it expensive?
+[ 43.21s][moshi] ⟨ret@43.14s⟩ Zuma ⟦⚡SPAN@44.18s: (tool result) Zuma's price range is ££££.⟧ is on the pricier side… with a price range of ££££. Perhaps a special occasion?
+      CALL: {"function": "get_restaurant_price_range", "arguments": {"restaurant_name": "Zuma", "location": "London"}}
+[ 51.10s][user ] Maybe. I’m also trying to get more into fermentation ⟨ret@54.57s⟩ these days.
+[ 54.97s][moshi] You ⟦⚡SPAN@55.61s: [2026-03-07] User is into home fermentation.⟧ mentioned you're getting into home fermentation… back in March of 2026. That's a fascinating hobby!
+[ 61.74s][user ] It is! I'm thinking about making kimchi. But I'm gluten-free, so I need to be careful.
+[ 67.02s][moshi] ⟨ret@66.78s⟩ Right, you are ⟦⚡SPAN@68.78s: [2025-10-29] User is gluten-free.⟧ gluten-free… as we discussed in October 2025. Kimchi recipes vary, so checking ingredients is wise.
+[ 76.12s][user ] Good point. I also need to remember Rusty needs a walk later.
+[ 79.61s][moshi] ⟨ret@79.29s⟩ ⟦⚡SPAN@79.79s: [2025-08-08] User has a Beagle named Rusty.⟧ And of course, Rusty the Beagle… needs his walk later, as we know. A good boy deserves a good walk.
+[ 88.00s][user ] He does indeed. I'm also allergic to peanuts, I should probably keep that in mind when I'm looking at recipes.
+[ 94.21s][moshi] ⟨ret@94.13s⟩ ⟦⚡SPAN@94.63s: [2025-06-20] User is allergic to peanuts.⟧ It’s good to remember your peanut allergy… from June of 2025. Always a good idea to double-check ingredients.
+[101.92s][user ] Yes, definitely. I was planning a birthday dinner a while back. Do you remember any ⟨ret@106.12s⟩ details?
+[106.36s][moshi] You were planning a ⟦⚡SPAN@108.12s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ birthday dinner… for six people, with outdoor seating, back in July 2025.
+[110.47s][user ] «backchannel» Oh.
+[112.17s][user ] Ah, yes! That’s right. I think it was for my friend, Sarah.
+[115.83s][moshi] Sarah is lucky to have a friend who plans such lovely dinners.
+[119.41s][user ] She is. I was also looking at gym ⟨ret@121.79s⟩ memberships.
+[122.03s][moshi] You were comparing gym ⟦⚡SPAN@123.79s: [2025-06-07] Past chat — Comparing gym memberships: wants a pool; close to the office.⟧ memberships… wanting a pool and proximity to the office, back in June 2025.
+[123.95s][user ] «backchannel» Really?
+[127.87s][user ] That’s right. I ended up joining the one near work.
+[130.27s][moshi] Excellent! Convenience is key when building a routine.
+[133.92s][user ] It really is. It's good to have everything remembered.
+[136.83s][moshi] I’m happy to help keep track of things, Casey. It's part of what I do.
+[140.88s][user ] Well, thank you, Diolo. That’s very kind of you.
+[143.53s][moshi] You’re very welcome. I hope you have a lovely evening.

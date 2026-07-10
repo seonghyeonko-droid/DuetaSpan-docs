@@ -1,0 +1,91 @@
+v3_mcp_01_cs src=mcp style=v2
+SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 차분하고 공감적인 개인 가이드 Koral입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_01",
+    "name": "Taylor",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-31",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-11-13",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-08-15",
+      "category": "home",
+      "text": "User's home address is 50 Pine Court."
+    },
+    {
+      "date": "2025-07-17",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-06-08",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-04",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-10-25",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 애플 웹사이트 제품 중심으로 자세한 지도 만들어 ⟨ret@3.39s⟩ 줘.
+[  3.63s][moshi] 네, 애플 웹사이트를 ⟦⚡SPAN@5.39s: (tool result) Map created: Apple.com product sections identified – iPhone, Mac, iPad, Apple Watch, AirPods, TV⟧ 분석해서 주요 제품 섹션인 아이폰, 맥, 아이패드, 애플 워치, 에어팟, TV & 홈, 엔터테인먼트, 액세서리를 강조한 지도를 만들었어요.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
+[ 13.49s][user ] 오, 좋네. 아이폰 섹션만 좀 더 확대해 ⟨ret@16.24s⟩ 줄래?
+[ 16.48s][moshi] 네, 아이폰 섹션을 ⟦⚡SPAN@18.24s: (tool result) iPhone section mapped: models – iPhone 15, iPhone 15 Pro, iPhone 15 Plus, iPhone 15 Pro Max, iPh⟧ 확대해서 현재 모델인 아이폰 15, 15 Pro, 15 Plus, 15 Pro Max, 그리고 아이폰 SE를 보여드릴게요.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone", "focus": "models"}}
+[ 19.77s][user ] «backchannel» 우와.
+[ 24.80s][user ] 그럼…
+[ 26.46s][user ] …그 가격들은 얼마야?
+[ 27.67s][moshi] ⟨ret@27.59s⟩ 시작 가격은 ⟦⚡SPAN@29.59s: (tool result) iPhone prices: 15 - $799, 15 Plus - $899, 15 Pro - $999, 15 Pro Max - $1199, SE - $429.⟧ 이렇습니다. 아이폰 15는 799달러, 15 Plus는 899달러, 15 Pro는 999달러, 15 Pro Max는 1199달러, 그리고 아이폰 SE는 429달러입니다.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone/pricing", "focus": "prices"}}
+[ 32.56s][user ] «backchannel» 응.
+[ 41.27s][user ] 보상 판매 프로그램 같은 거 있어?
+[ 43.12s][moshi] 네, 애플은 보상 판매 프로그램을 제공하고 있어요. 오래된 기기를 반납하면 새 기기를 구매할 때 크레딧을 받을 수 있습니다.
+[ 50.13s][user ] 현재 아이폰으로 얼마 정도 받을 수 있는데…
+[ 52.70s][moshi] «interrupted» 받을 수 있는 금액은 현재 아이폰 모델과 상태에 따라 달라집니다.
+[ 55.94s][user ] «interrupts_prev» 아이폰 12 Pro 반납하면 얼마나 받을 수 ⟨ret@58.93s⟩ 있어?
+[ 59.09s][moshi] 네, 상태가 좋다면 아이폰 ⟦⚡SPAN@60.93s: (tool result) iPhone 12 Pro trade-in value: $300-$400 (estimated, condition dependent).⟧ 12 Pro를 반납했을 때 300달러에서 400달러 사이의 크레딧을 받을 수 있습니다.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/tradein", "device": "iPhone 12 Pro", "condition": "good"}}
+[ 65.25s][user ] 알았어, 괜찮네. 제일 가까운 애플 스토어 찾아 줘.
+[ 68.53s][moshi] ⟨ret@68.45s⟩ 네, 가장 가까운 애플 ⟦⚡SPAN@70.45s: (tool result) Nearest Apple Store: Apple Fifth Avenue, 767 5th Ave, New York, NY 10019, 0.2 miles away.⟧ 스토어는 뉴욕 5번가에 있는 Apple Fifth Avenue이고, 주소는 767 5th Avenue, New York이며 현재 위치에서 0.2마일 떨어져 있습니다.
+      CALL: {"function": "tavily-map", "arguments": {"location": "current", "query": "Apple Store"}}
+[ 78.29s][user ] 좋아, 길 안내해 ⟨ret@79.69s⟩ 줘.
+[ 80.01s][moshi] 네, Apple Fifth ⟦⚡SPAN@81.69s: (tool result) Directions initiated: walking route to Apple Fifth Avenue provided.⟧ Avenue까지 도보 길 안내를 기기에 시작했습니다. 즐거운 여행 되세요.
+      CALL: {"function": "tavily-map", "arguments": {"start": "current", "end": "Apple Fifth Avenue, 767 5th Ave, New York, NY 10019"}}

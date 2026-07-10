@@ -67,18 +67,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.30s⟩ hate?
-[  2.45s][moshi] And ⟦⚡SPAN@4.30s: (no information found)⟧ I can see why you’d ask.
-[  7.19s][user ] «backchannel» Uh-huh.
-[ 10.43s][user ] I’m planning a trip to Italy, what’s the best time of year to go? ⟨ret@21.64s⟩
-[ 21.79s][moshi] The most enjoyable times to visit Rome are… in April and October. ⟦⚡SPAN@22.08s: [source: WeatherSpark] The best times to visit Rome are April and October, when the weather is pleasant and th⟧ It's a beautiful city, you'll love it.
-[ 22.42s][user ] What about Florence? Is that ⟨ret@24.07s⟩ different?
-[ 24.39s][moshi] Florence ⟦⚡SPAN@26.07s: [source: Visit Florence] Florence is best visited in the shoulder seasons of April-May and September-October f⟧ is also best enjoyed during the shoulder seasons… in April-May and September-October.
-[ 34.27s][user ] Okay, good to know. And what are some must-see sights in Florence?
-[ 37.77s][moshi] «interrupted» Florence is brimming with incredible art and architecture—the Duomo is truly spectacular, and the Uffizi Gallery—
-[ 47.80s][user ] «interrupts_prev» Is it really crowded at the Uffizi?
-[ 50.19s][moshi] «interrupted» It can get quite busy, yes. Booking tickets in advance is highly recommended to avoid long lines, and perhaps consider—
-[ 59.79s][user ] «interrupts_prev» Right, good point. Can you book me tickets for the Uffizi for ⟨ret@61.76s⟩ October 10th?
-[ 61.92s][moshi] I have ⟦⚡SPAN@63.76s: (tool result) Tickets for the Uffizi Gallery on October 10th are confirmed. Your reference number is ZX789Q.⟧ confirmed your tickets for the Uffizi Gallery… with reference number ZX789Q. I've sent the confirmation to your email address.
-[ 74.63s][user ] Perfect! Thanks so much, Frunax.
-[ 77.62s][moshi] You are very welcome! I’m glad I could help with your planning.
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.81s⟩ hate?
+[  2.96s][moshi] And I can understand ⟦⚡SPAN@4.81s: (no information found)⟧ why you’d ask. It seems anarchists fundamentally oppose all forms of hierarchical rule.
+[  6.76s][user ] «backchannel» Uh-huh.
+[  9.38s][user ] Hmm, so they don't like *any* government then? Even a ⟨ret@13.40s⟩ democracy?
+[ 13.63s][moshi] «interrupted» They ⟦⚡SPAN@14.36s: [source: Wikipedia] Anarchists are critical of all forms of state power, including democracy, viewing them as ⟧ certainly critique all forms of state power, including democracy, viewing them as inherently coercive—
+[ 19.31s][user ] «interrupts_prev» But wouldn’t that make it hard to actually *build* anything?
+[ 22.15s][moshi] That’s a very practical concern, and you’re right to ask. Anarchists envision a society organized through voluntary associations.
+[ 30.22s][user ] Voluntary associations… like what exactly?
+[ 33.45s][moshi] Those associations could range from small mutual aid groups to larger federations coordinating resources. It’s a complex system.
+[ 43.05s][user ] Could you give me an example of one that's actually worked?
+[ 45.92s][moshi] ⟨ret@45.76s⟩ There’s Revolutionary Catalonia ⟦⚡SPAN@47.76s: [source: The Anarchist Federation] Revolutionary Catalonia, during the Spanish Civil War, saw widespread imple⟧ during the Spanish Civil War, where anarchist principles were widely implemented in industries and communities—a fascinating case study.
+[ 55.85s][user ] Okay, interesting. So it’s been tried before.
+[ 58.42s][moshi] It has, and it offers valuable lessons about alternative ways to organize society. It's certainly a path worth considering.

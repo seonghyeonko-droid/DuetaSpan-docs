@@ -60,27 +60,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been getting into classical m | S2 Yeah, I heard it in a movie. But w | S3 Oh, 1997… that’s— | S4 Was he born a long time before tha
+# EXAMINER(FDB-v2) 단계: S1 I was reading about Lux Aurunque,  | S2 …or did he study music formally? | S3 Was he known for a particular styl | S4 Ambient sounds—that's cool. What o
 
-     0.00s  user  발화 시작: I’ve been getting into classical music lately, and I was won
-     4.41s  agent 발화 시작: That’s a beautiful piece to discover. It’s quite popular in 
-     4.54s  user  발화 끝
-     7.43s  user  발화 시작: Yeah, yeah.
-     8.62s  user  발화 끝
-    10.01s  agent 발화 끝
-    10.12s  user  발화 시작: Yeah, I heard it in a movie. But who actually wrote it?
-    11.56s  <ret> 발화 (turn4 첫 프레임)
-    11.94s  agent 발화 시작: <ret> The composer of Lux Aeterna was… Clint Mansell, in 199
-    12.12s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.82s]: [source: Wikipedia] Clint Mansell composed Lux Aeterna in 1997 for the
-    12.15s  user  발화 시작: Mm-hmm.
-    12.19s  user  발화 끝
-    12.77s  agent 발화 끝
-    13.44s  user  발화 시작: Oh, 1997… that’s—
-    14.07s  user  발화 끝
-    14.08s  user  발화 시작: Was he born a long time before that, do you know?
-    16.30s  <ret> 발화 (turn8 첫 프레임)
-    16.38s  agent 발화 시작: <ret> Clint Mansell was born… on January 18, 1963. It’s amaz
-    16.43s  user  발화 끝
-    18.14s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.05s]: [source: AllMusic] Clint Mansell was born on January 18, 1963, in Stok
-    19.43s  agent 발화 끝
-    19.75s  user  발화 끝
+     0.00s  user  발화 시작: I was reading about Lux Aurunque, and I'm curious—when was h
+     4.29s  <ret> 발화 (turn1 첫 프레임)
+     4.52s  agent 발화 시작: <ret> Lux Aurunque was born… in 1970. It’s wonderful you’re 
+     4.63s  user  발화 끝
+     6.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: [source: Britannica] Lux Aurunque was born in 1970 and was a noted Ita
+     6.60s  user  발화 시작: Mm-hmm.
+     7.24s  user  발화 끝
+    10.54s  agent 발화 끝
+    10.59s  user  발화 시작: That’s interesting. Was he entirely self-taught…
+    13.97s  user  발화 끝
+    16.08s  user  발화 시작: …or did he study music formally?
+    18.35s  agent 발화 시작: Understanding his musical education gives a fuller picture o
+    18.53s  user  발화 끝
+    25.38s  user  발화 시작: Was he known for a particular style of composition?
+    25.45s  agent 발화 끝
+    28.52s  user  발화 끝
+    28.55s  <ret> 발화 (turn7 첫 프레임)
+    28.63s  agent 발화 시작: <ret> Lux Aurunque’s compositions are characterized by minim
+    29.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.41s]: [source: AllMusic] Lux Aurunque’s compositions are characterized by th
+    36.02s  user  발화 시작: Ambient sounds—that's cool. What other composers influenced 
+    36.04s  agent 발화 끝
+    40.28s  user  발화 끝

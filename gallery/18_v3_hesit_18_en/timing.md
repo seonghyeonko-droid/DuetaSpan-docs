@@ -55,67 +55,81 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about Pompeii,  | S2 I guess so. Are there any signs it | S3 Oh, okay. So, like, smelly steam? | S4 That’s good to know. I think I'll 
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about Pompeii,  | S2 Hmm, I see… welll… what kind of da | S3 Constantly monitored, huh? That’s… | S4 Okay. So… if I were to visit, shou
 
-     0.00s  user  발화 시작: I was just reading about Pompeii, and it got me thinking… wh
-     6.32s  agent 발화 시작: It’s natural to wonder about the history of a place with suc
-     6.49s  user  발화 끝
-    14.67s  agent 발화 끝
-    14.68s  user  발화 시작: Yeah, I mean, it’s been quiet for a while now, hasn’t it? Bu
-    18.34s  <ret> 발화 (turn3 첫 프레임)
-    18.65s  agent 발화 시작: <ret> The last time Mount Vesuvius erupted was… in March 194
-    18.75s  user  발화 끝
-    20.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: [source: Wikipedia] Mount Vesuvius last erupted in March 1944.
-    24.96s  user  발화 시작: Wow, nineteen forty-four. That’s… longer than I thought.
-    25.23s  agent 발화 끝
-    31.00s  agent 발화 시작: It is a significant period of calm, though volcanic activity
-    31.03s  user  발화 끝
-    38.22s  agent 발화 끝
-    38.82s  user  발화 시작: I guess so. Are there any signs it might erupt again soon? I
-    42.46s  <ret> 발화 (turn7 첫 프레임)
-    42.62s  agent 발화 시작: <ret> Currently, Vesuvius is at a yellow alert level… with i
-    42.84s  user  발화 끝
-    44.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Current volcanic activity: yellow alert level, increased
-    45.48s  user  발화 시작: Yeah.
-    49.93s  agent 발화 시작: That means scientists are closely watching it, but there’s n
-    50.17s  agent 발화 끝
-    51.45s  user  발화 끝
-    53.39s  agent 발화 끝
-    54.75s  user  발화 시작: Okay, that’s… reassuring. I was getting a little worried.
-    63.40s  agent 발화 시작: It’s completely understandable to feel that way! It’s a powe
-    63.41s  user  발화 끝
-    66.34s  user  발화 시작: So, uh, what exactly *is* a fumarole? I keep hearing that wo
-    66.49s  agent 발화 끝
-    74.55s  user  발화 끝
-    74.57s  <ret> 발화 (turn13 첫 프레임)
-    74.81s  agent 발화 시작: <ret> A fumarole is essentially a vent… releasing volcanic g
-    75.06s  user  발화 시작: Yeah.
-    75.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.50s]: [source: USGS] Fumaroles are vents releasing volcanic gas, steam, and 
-    75.30s  agent 발화 끝
-    76.26s  user  발화 시작: Oh, okay. So, like, smelly steam?
-    78.76s  user  발화 끝
-    83.35s  user  발화 끝
-    83.36s  agent 발화 시작: [laugh] You could describe it that way! It’s often associate
-    83.90s  agent 발화 끝
-    84.02s  user  발화 시작: Hmm. Is Naples generally safe, then, even with Vesuvius near
-    89.14s  agent 발화 시작: Naples is generally considered safe, but preparedness is key
-    89.21s  user  발화 끝
-    94.42s  agent 발화 끝
-    95.54s  user  발화 시작: Preparedness… like, having an evacuation plan?
-   102.93s  <ret> 발화 (turn20 첫 프레임)
-   102.99s  agent 발화 시작: <ret> Evacuation plans are indeed in place… for zones at hig
-   103.19s  user  발화 끝
-   104.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: [source: City of Naples Emergency Services] Evacuation plans are in pl
-   108.08s  user  발화 시작: Right.
-   110.78s  user  발화 시작: That’s good to know. I think I'll look into those plans befo
-   110.78s  agent 발화 끝
-   112.44s  user  발화 끝
-   120.44s  agent 발화 시작: That's a very proactive step. It's always helpful to be info
-   120.52s  user  발화 끝
-   120.62s  user  발화 시작: Uh-huh.
-   121.08s  agent 발화 끝
-   123.13s  user  발화 시작: Yeah, I— I mean, you can’t be too careful, right?
-   125.77s  user  발화 끝
-   131.43s  user  발화 끝
-   131.65s  agent 발화 시작: Exactly. And remember, a little bit of planning can go a lon
-   138.32s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about Pompeii, and it got me thinking… uh
+     5.97s  <ret> 발화 (turn1 첫 프레임)
+     6.21s  agent 발화 시작: <ret> You're thinking about the history of that region, and 
+     6.40s  user  발화 끝
+     7.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: [source: Wikipedia] Mount Vesuvius has erupted numerous times, with th
+    11.74s  agent 발화 시작: The last time Vesuvius erupted was… in March 1944.
+    11.95s  agent 발화 끝
+    16.06s  user  발화 시작: Wow, that wasn’t as long ago as I thought.
+    16.13s  agent 발화 끝
+    18.58s  agent 발화 시작: It's easy to underestimate how recently geological events oc
+    18.65s  user  발화 끝
+    25.26s  agent 발화 끝
+    25.29s  user  발화 시작: So, was that eruption as bad as the one that destroyed Pompe
+    32.00s  <ret> 발화 (turn6 첫 프레임)
+    32.23s  agent 발화 시작: <ret> The 1944 eruption was less violent than the one that b
+    32.33s  user  발화 끝
+    34.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [source: Smithsonian Institution] The 1944 eruption was less violent t
+    36.97s  user  발화 시작: Oh.
+    37.47s  user  발화 끝
+    38.67s  agent 발화 시작: It’s important to remember that even less violent eruptions 
+    38.86s  agent 발화 끝
+    44.32s  agent 발화 끝
+    44.35s  user  발화 시작: Hmm, I see… welll… what kind of damage did it actually do?
+    48.66s  <ret> 발화 (turn10 첫 프레임)
+    48.73s  agent 발화 시작: <ret> The 1944 eruption destroyed villages, damaged aircraft
+    48.88s  user  발화 끝
+    50.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: [source: USGS] The 1944 eruption destroyed several villages, damaged a
+    55.31s  agent 발화 끝
+    56.36s  user  발화 시작: Aircraft? That’s… surprising.
+    59.25s  agent 발화 시작: It is a surprising detail, the timing of the eruption coinci
+    59.41s  user  발화 끝
+    64.05s  user  발화 시작: Nice.
+    64.67s  user  발화 끝
+    66.16s  agent 발화 끝
+    67.62s  user  발화 시작: Oh, right, World War Two. I’d forgotten about that. So, is V
+    72.80s  <ret> 발화 (turn15 첫 프레임)
+    73.04s  agent 발화 시작: <ret> Vesuvius is considered an active volcano and is consta
+    73.22s  user  발화 끝
+    74.00s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.19s]: [source: National Geographic] Mount Vesuvius is considered an active v
+    78.21s  user  발화 시작: Constantly monitored, huh? That’s… reassuring, I guess.
+    78.23s  agent 발화 끝
+    82.11s  agent 발화 시작: It’s understandable to feel reassured knowing that experts a
+    82.28s  user  발화 끝
+    85.68s  user  발화 시작: Right.
+    86.00s  user  발화 끝
+    87.63s  user  발화 시작: Do they… have any idea when it might erupt again? Or is it j
+    87.67s  agent 발화 끝
+    93.43s  <ret> 발화 (turn20 첫 프레임)
+    93.66s  agent 발화 시작: <ret> Predicting volcanic eruptions is incredibly complex, a
+    93.84s  user  발화 끝
+    95.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: [source: Vesuvius Observatory] While precise prediction is impossible,
+   100.02s  agent 발화 시작: Scientists monitor gas, ground movement, and seismic activit
+   100.10s  agent 발화 끝
+   103.09s  user  발화 시작: Uh-huh.
+   103.58s  user  발화 끝
+   109.05s  agent 발화 끝
+   110.18s  user  발화 시작: That makes sense. I— I mean, it’s not like a weather forecas
+   113.73s  agent 발화 시작: No, it’s far more complex than a weather forecast; volcanic 
+   113.78s  user  발화 끝
+   116.00s  user  발화 시작: Yeah.
+   116.59s  user  발화 끝
+   121.11s  agent 발화 끝
+   121.12s  user  발화 시작: Okay. So… if I were to visit, should I be worried?
+   125.33s  agent 발화 시작: It’s natural to have some apprehension, but the area is gene
+   125.38s  user  발화 끝
+   127.89s  user  발화 시작: Right.
+   128.43s  user  발화 끝
+   131.68s  agent 발화 끝
+   133.70s  user  발화 시작: Precautions like…?
+   135.18s  user  발화 끝
+   135.47s  agent 발화 시작: Evacuation plans, monitoring systems, and restricted access 
+   141.40s  user  발화 시작: I see. That’s good to know. Thanks, Bena.
+   141.81s  agent 발화 끝
+   143.84s  user  발화 끝
+   144.06s  agent 발화 시작: You’re very welcome. It sounds like understanding the histor
+   149.75s  agent 발화 끝

@@ -68,23 +68,21 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… when was the | S2 Did you take the recycling out? | S3 Sorry about that. Back to baseball | S4 Oh, James Paxton! I remember heari
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, when was the | S2 Seriously, it’s overflowing. | S3 Sorry about that. Back to baseball | S4 That’s a good point. Thanks, Ellan
 
-     0.00s  user  발화 시작: I was just wondering… when was the last time the A’s got no-
-     4.96s  <ret> 발화 (turn1 첫 프레임)
-     5.28s  user  발화 끝
-     5.35s  agent 발화 시작: <ret> The last time the A’s were no-hit was… in April 2018. 
-     6.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.59s]: [source: Baseball-Reference.com] The last no-hitter against the Oaklan
-    10.73s  user  발화 시작: Wow, 2018… that *is* a while. Hey, Mark, did you take the re
-    10.94s  agent 발화 끝
-    15.49s  user  발화 시작: Did you take the recycling out?
-    15.64s  user  발화 끝
-    17.21s  user  발화 시작: Sorry about that. Back to baseball, who pitched that no-hitt
-    17.33s  user  발화 끝
-    23.34s  <ret> 발화 (turn5 첫 프레임)
-    23.55s  agent 발화 시작: <ret> The pitcher who threw the no-hitter against the A’s wa
-    23.83s  user  발화 끝
-    25.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: MLB.com] James Paxton of the Seattle Mariners pitched a no-hi
-    29.34s  agent 발화 끝
-    30.82s  user  발화 시작: Oh, James Paxton! I remember hearing about that game. Thanks
-    36.19s  user  발화 끝
+     0.00s  user  발화 시작: I was just wondering, when was the last time the A's got no-
+     5.76s  <ret> 발화 (turn1 첫 프레임)
+     6.16s  agent 발화 시작: <ret> The last time the A's were no-hit was… in April 2018.
+     6.30s  user  발화 끝
+     7.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: MLB.com] The last time the A's were no-hit was April 21, 2018
+    10.88s  agent 발화 끝
+    11.00s  user  발화 시작: Wow, 2018. That’s a long time. Hey, honey, did you take out 
+    16.61s  user  발화 시작: Seriously, it’s overflowing.
+    16.74s  user  발화 끝
+    18.73s  user  발화 시작: Sorry about that. Back to baseball, have they been close sin
+    18.87s  user  발화 끝
+    22.89s  agent 발화 시작: They’ve had some close calls, but haven’t quite seen another
+    22.89s  user  발화 끝
+    33.27s  agent 발화 끝
+    34.51s  user  발화 시작: That’s a good point. Thanks, Ellana.
+    36.45s  user  발화 끝

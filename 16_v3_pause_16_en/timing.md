@@ -63,77 +63,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… where did th | S2 A foundational text… so it really  | S3 …on anything real that was happeni | S4 It's a bit unsettling to think abo
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering… where does t | S2 Surveillance, right. That’s… unset | S3 …are there any real-world examples | S4 It's funny how books can do that… 
 
-     0.00s  user  발화 시작: I was just wondering… where did the term “big brother” actua
-     2.58s  user  발화 끝
-     4.38s  user  발화 시작: …I always assumed it was…
-     6.69s  user  발화 끝
-     8.10s  user  발화 시작: …just a general expression for authority.
-    12.33s  <ret> 발화 (turn3 첫 프레임)
-    12.64s  agent 발화 시작: <ret> The phrase “big brother” comes from a novel… Nineteen 
-    12.73s  user  발화 끝
-    14.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: [source: Wikipedia] “The term ‘Big Brother’ originated from George Orw
-    20.86s  user  발화 시작: Nineteen Eighty-Four, huh? Was that a popular book when it f
-    21.17s  agent 발화 끝
-    25.16s  <ret> 발화 (turn5 첫 프레임)
-    25.55s  agent 발화 시작: <ret> It was actually quite popular right away… in 1949.
-    25.58s  user  발화 끝
-    27.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: [source: Britannica] “Nineteen Eighty-Four was an immediate critical a
-    28.62s  user  발화 시작: Mhm.
-    29.85s  user  발화 끝
-    34.36s  agent 발화 끝
-    35.28s  user  발화 시작: A foundational text… so it really influenced a lot of other 
-    37.34s  agent 발화 시작: It certainly did. Many later works of science fiction and po
-    37.40s  user  발화 끝
-    39.13s  agent 발화 끝
-    39.98s  user  발화 시작: Hmm, I think I remember my English teacher talking about it.
-    46.86s  <ret> 발화 (turn10 첫 프레임)
-    47.26s  agent 발화 시작: <ret> The book explores the dangers of totalitarianism… thro
-    47.29s  user  발화 끝
-    47.36s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.50s]: [source: LitCharts] “Nineteen Eighty-Four explores the dangers of tota
-    47.41s  user  발화 시작: Yeah.
-    47.76s  agent 발화 끝
-    47.93s  user  발화 시작: That sounds… pretty bleak. Did Orwell base it…
-    51.01s  user  발화 끝
-    55.67s  user  발화 끝
-    57.02s  user  발화 시작: …on anything real that was happening at the time?
-    57.41s  <ret> 발화 (turn14 첫 프레임)
-    57.46s  user  발화 끝
-    57.48s  agent 발화 시작: <ret> Orwell found inspiration in real events… Stalinist Rus
-    59.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: [source: History.com] “Orwell drew inspiration from Stalinist Russia, 
-    59.74s  user  발화 시작: Yeah.
-    61.29s  user  발화 시작: So it wasn’t just a random scary story, it was based on thin
-    61.50s  agent 발화 끝
-    64.98s  agent 발화 시작: Exactly. It was a response to the political realities he obs
-    65.17s  user  발화 끝
-    66.97s  user  발화 끝
-    67.97s  user  발화 시작: Right.
-    68.46s  user  발화 끝
-    72.21s  agent 발화 끝
-    72.86s  user  발화 시작: That makes sense. Were there any specific technologies that 
-    76.67s  <ret> 발화 (turn20 첫 프레임)
-    76.99s  agent 발화 시작: <ret> Early ideas about telescreens… influenced Orwell’s dep
-    77.15s  user  발화 끝
-    78.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: [source: Smithsonian Magazine] “Although not yet widespread in 1949, e
-    85.42s  agent 발화 끝
-    85.63s  user  발화 시작: Wow, so even the idea of the telescreens wasn’t entirely new
-    90.28s  agent 발화 시작: That's right. He extrapolated from emerging technologies and
-    90.36s  user  발화 끝
-   100.73s  user  발화 시작: It's a bit unsettling to think about how relevant it still i
-   100.80s  agent 발화 끝
-   103.60s  agent 발화 시작: It is, isn't it? The themes Orwell explored continue to reso
-   103.68s  user  발화 끝
-   106.27s  user  발화 시작: Yeah.
-   106.67s  user  발화 끝
-   110.51s  user  발화 시작: I wonder if he'd be surprised by how much of his vision came
-   110.78s  agent 발화 끝
-   114.45s  agent 발화 시작: [curious] I imagine he would be, and perhaps a little dishea
-   114.53s  user  발화 끝
-   116.10s  user  발화 시작: Right.
-   116.59s  user  발화 끝
-   119.30s  agent 발화 끝
-   120.44s  user  발화 시작: You’re right. Well, thanks for explaining the origin of “big
-   123.91s  user  발화 끝
-   123.97s  agent 발화 시작: You’re very welcome. Sometimes understanding the roots of a 
-   129.94s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering… where does the phrase “big brother” ac
+     4.35s  user  발화 끝
+     6.00s  user  발화 시작: …I always assumed it was just a common saying…
+     8.54s  user  발화 끝
+     9.92s  user  발화 시작: …but it feels like there's more to it.
+    11.52s  <ret> 발화 (turn3 첫 프레임)
+    11.84s  agent 발화 시작: <ret> The phrase "big brother" actually comes from literatur
+    11.90s  user  발화 끝
+    13.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.05s]: [source: Wikipedia] "The term 'Big Brother' originated from George Orw
+    20.61s  user  발화 시작: Oh, a book! That makes sense. Is it about actual brothers, o
+    20.88s  agent 발화 끝
+    26.26s  user  발화 끝
+    26.34s  agent 발화 시작: It’s quite metaphorical, representing government surveillanc
+    32.76s  user  발화 시작: Yeah, yeah.
+    34.09s  user  발화 끝
+    34.92s  agent 발화 끝
+    35.89s  user  발화 시작: Surveillance, right. That’s… unsettling. Is that book still 
+    40.99s  <ret> 발화 (turn8 첫 프레임)
+    41.23s  agent 발화 시작: <ret> It is very widely read, actually… with over fifty mill
+    41.35s  user  발화 끝
+    42.67s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.63s]: [source: Goodreads] " *Nineteen Eighty-Four* has sold over 50 million 
+    43.71s  user  발화 시작: Mm-hmm.
+    44.34s  user  발화 끝
+    47.84s  user  발화 시작: Wow, fifty million! That’s incredible. It sounds like a pret
+    47.85s  agent 발화 끝
+    53.48s  agent 발화 시작: It certainly has been. The concepts within it continue to re
+    53.63s  user  발화 끝
+    56.28s  user  발화 시작: Yeah.
+    57.00s  user  발화 끝
+    59.81s  user  발화 시작: Hmm. So, if it's about surveillance…
+    59.93s  agent 발화 끝
+    62.58s  user  발화 끝
+    64.09s  user  발화 시작: …are there any real-world examples that people often compare
+    67.59s  <ret> 발화 (turn15 첫 프레임)
+    67.67s  agent 발화 시작: <ret> It's often used when discussing government surveillanc
+    67.84s  user  발화 끝
+    69.03s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.65s]: [source: Electronic Frontier Foundation] "The term 'Big Brother' is fr
+    69.92s  user  발화 시작: Mm-hmm.
+    70.56s  user  발화 끝
+    73.21s  user  발화 시작: PRISM… I think I’ve heard of that. Was that the one Snowden 
+    73.32s  agent 발화 끝
+    77.25s  agent 발화 시작: Yes, Edward Snowden’s revelations in 2013 brought attention 
+    77.42s  user  발화 끝
+    84.75s  agent 발화 끝
+    85.02s  user  발화 시작: So, Orwell basically predicted that kind of thing? That’s a 
+    89.23s  user  발화 끝
+    89.27s  agent 발화 시작: In a way, yes. He foresaw the potential for technology to be
+    94.33s  user  발화 시작: Mm-hmm.
+    95.06s  user  발화 끝
+    96.68s  agent 발화 끝
+    97.77s  user  발화 시작: It's funny how books can do that… predict the future, almost
+   101.32s  agent 발화 시작: [curious] It's a testament to insightful observation and a d
+   101.47s  user  발화 끝
+   103.53s  user  발화 시작: Yeah.
+   104.11s  user  발화 끝
+   107.08s  user  발화 시작: I suppose so. I might actually have to read that book now.
+   107.25s  agent 발화 끝
+   110.27s  agent 발화 시작: It’s a powerful read, though it can be quite thought-provoki
+   110.49s  user  발화 끝
+   112.10s  user  발화 시작: Right.
+   112.74s  user  발화 끝
+   115.63s  user  발화 시작: Thanks, Braera. I appreciate the info.
+   115.64s  agent 발화 끝
+   117.91s  agent 발화 시작: You’re very welcome. It’s my pleasure to help you explore in
+   118.12s  user  발화 끝
+   123.52s  agent 발화 끝

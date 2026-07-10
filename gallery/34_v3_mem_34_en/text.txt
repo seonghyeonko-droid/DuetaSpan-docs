@@ -61,32 +61,25 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ava, I’m Hia. It’s good to connect with you.
-[  7.44s][user ] I’m thinking of going to visit my mother. She lives outside the city.
-[ 13.28s][moshi] ⟨ret@13.22s⟩ So, you’d like ⟦⚡SPAN@15.22s: [2025-08-06] User's home address is 30 Oak Avenue.⟧ to get directions from your home… to your mother’s location?
-[ 17.27s][user ] «backchannel» Right.
-[ 19.54s][user ] Yes, exactly. How long will it take to drive there?
-[ 21.25s][moshi] ⟨ret@21.17s⟩ The drive to your ⟦⚡SPAN@22.69s: (tool result) Driving to Mother’s location will take approximately 45 minutes.⟧ mother’s location is estimated to be… about 45 minutes.
-      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "Mother’s location"}}
-[ 24.01s][user ] «backchannel» Yeah, yeah.
-[ 25.54s][user ] Mm-hmm.
-[ 29.55s][moshi] That sounds manageable. Is there anything specific you'd like to know about the route?
-[ 32.93s][user ] «backchannel» Mm-hmm.
-[ 35.92s][user ] Are there any good vegetarian restaurants along the ⟨ret@40.99s⟩ way?
-[ 41.31s][moshi] Knowing you prefer vegetarian options… I can certainly look for restaurants along your route. There’s ⟦⚡SPAN@41.95s: [2026-04-15] User is vegetarian.⟧ a vegetarian restaurant called “Le Potager” about 20 minutes into your drive.
-[ 42.41s][user ] Oh, that sounds lovely. ⟨ret@49.71s⟩
-[ 50.10s][moshi] It’s wonderful to find ⟦⚡SPAN@50.21s: (tool result) “Le Potager” is a vegetarian restaurant 20 minutes into your drive.⟧ a pleasant stop on a journey. Would you like me to add it to your route?
-      CALL: {"function": "search_restaurants", "arguments": {"location": "route to Mother’s location", "cuisine": "vegetarian"}}
-[ 50.25s][user ] «backchannel» Mhm.
-[ 51.21s][user ] Yes, please.
-[ 56.86s][moshi] ⟨ret@56.78s⟩ I’ve added “Le Potager” to ⟦⚡SPAN@58.78s: (tool result) Le Potager has been added to your route.⟧ your route. It’ll be a nice break during your drive.
-      CALL: {"function": "add_stop", "arguments": {"route": "route to Mother’s location", "stop": "Le Potager"}}
-[ 60.40s][user ] «backchannel» Right.
-[ 62.41s][user ] Perfect!
-[ 64.21s][moshi] [happy] It’s good to anticipate a little enjoyment along the way. I’m glad I could help with that.
-[ 66.11s][user ] «backchannel» Yeah.
-[ 69.79s][user ] I’m also planning a birthday dinner for ⟨ret@72.06s⟩ my sister.
-[ 72.36s][moshi] Ah, yes, I recall ⟦⚡SPAN@74.06s: [2026-02-09] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ we discussed a birthday dinner for your sister with a party of six… and you preferred outdoor seating.
-[ 76.06s][user ] «backchannel» Uh-huh.
-[ 80.11s][user ] Right.
-[ 80.94s][moshi] Is there anything new about those plans, or are we still looking for an outdoor table for six?
+[  0.00s][moshi] Hi Ava, I’m Hia. It’s lovely to connect with you. I understand you’re navigating some transitions, and I’m here to offer guidance as you need it.
+[  7.86s][user ] I’m trying to figure out the best way to get to my friend’s place for dinner tonight. It's a bit tricky to reach.
+[ 13.94s][moshi] ⟨ret@13.88s⟩ To start planning the best ⟦⚡SPAN@15.88s: [2025-08-06] User's home address is 30 Oak Avenue.⟧ route for you, Ava, let’s confirm your starting point is 30 Oak Avenue.
+[ 18.16s][user ] «backchannel» Yeah, yeah.
+[ 19.55s][user ] Yes, that’s right. And it's a bit late, so I’d like the quickest route, please.
+[ 23.96s][moshi] I can help with that. Could you please tell me your friend’s address?
+[ 25.94s][user ] «backchannel» Mm-hmm.
+[ 27.94s][user ] It’s 12 Rue de ⟨ret@29.49s⟩ Rivoli.
+[ 29.87s][moshi] The quickest driving ⟦⚡SPAN@31.49s: (tool result) Driving directions to 12 Rue de Rivoli: 25 minutes, 10.4 kilometers.⟧ route to 12 Rue de Rivoli is estimated to take 25 minutes, covering 10.4 kilometers.
+      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "12 Rue de Rivoli", "mode": "driving"}}
+[ 34.86s][user ] «backchannel» Yeah.
+[ 37.12s][moshi] That route avoids the main congestion zones, which should make for a smoother journey.
+[ 41.97s][user ] That sounds good. Is there parking near 12 Rue de Rivoli?
+[ 46.16s][moshi] ⟨ret@46.10s⟩ There are several parking ⟦⚡SPAN@48.10s: (tool result) Parking near 12 Rue de Rivoli: Several options available, starting at €5 per hour.⟧ options near 12 Rue de Rivoli, with hourly rates starting around €5.
+      CALL: {"function": "find_parking", "arguments": {"location": "12 Rue de Rivoli"}}
+[ 48.76s][user ] «backchannel» Yeah.
+[ 53.12s][user ] Hmm, okay. That’s helpful. My friend mentioned it’s a Mexican restaurant.
+[ 58.32s][moshi] ⟨ret@58.00s⟩ Knowing your favorite cuisine ⟦⚡SPAN@60.00s: [2026-04-19] User's favorite cuisine is Mexican.⟧ is Mexican, Ava, I hope you enjoy your dinner tonight.
+[ 63.25s][user ] I think I will. I’m also vegetarian, though, so I hope they ⟨ret@67.82s⟩ have options.
+[ 68.14s][moshi] It’s good to remember ⟦⚡SPAN@69.82s: [2026-04-15] User is vegetarian.⟧ you are vegetarian, Ava, and I hope the restaurant has suitable choices for you.
+[ 74.17s][user ] Thanks. That’s all I needed to know, I think.
+[ 76.53s][moshi] You're very welcome, Ava. I’m glad I could help with the directions and parking information. Enjoy your evening.

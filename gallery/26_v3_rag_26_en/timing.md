@@ -58,45 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Uh, hey. I’m trying to remember a  | S2 Oh, right! Germany. I knew it was  | S3 Oh wow, I didn’t know that! So Ger | S4 That’s really interesting! Thanks…
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to remember a flag… it  | S2 That's right! It was Germany. Hmm, | S3 Donatello, yes! That rings a bell. | S4 Perfect! Thanks, Kiora, you’re a l
 
-     0.00s  user  발화 시작: Uh, hey. I’m trying to remember a flag… it has black, red, a
-     7.28s  user  발화 끝
-     7.30s  agent 발화 시작: It sounds like you're trying to recall a particular national
-    12.86s  user  발화 시작: Yeah, I think so. I saw it in a history book, I think. It wa
-    12.95s  agent 발화 끝
-    18.58s  <ret> 발화 (turn3 첫 프레임)
-    18.64s  user  발화 끝
-    18.81s  agent 발화 시작: <ret> The flag you’re thinking of… is likely the flag of Ger
-    20.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: [source: Britannica] The flag of Germany features three horizontal ban
-    21.57s  user  발화 시작: Right.
-    22.38s  user  발화 끝
-    24.84s  agent 발화 끝
-    24.85s  user  발화 시작: Oh, right! Germany. I knew it was a European country. But wh
-    32.26s  agent 발화 시작: Flag colors often have symbolic meaning, representing import
-    32.31s  user  발화 끝
-    37.60s  user  발화 시작: Hmm. I wonder if other countries use those colors too? I see
-    37.63s  agent 발화 끝
-    42.50s  <ret> 발화 (turn8 첫 프레임)
-    42.82s  agent 발화 시작: <ret> Actually, Belgium also uses black, yellow, and red, th
-    42.88s  user  발화 끝
-    44.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: [source: Flags of the World] The flag of Belgium consists of three ver
-    49.02s  agent 발화 끝
-    49.06s  user  발화 시작: Oh wow, I didn’t know that! So Germany’s is horizontal, Belg
-    55.31s  agent 발화 시작: Exactly! It’s interesting how different nations can share co
-    55.40s  user  발화 끝
-    60.53s  user  발화 시작: So, Germany’s colors… were they always like that? Or did the
-    60.59s  agent 발화 끝
-    66.19s  <ret> 발화 (turn12 첫 프레임)
-    66.59s  agent 발화 시작: <ret> The black, red, and gold colors for Germany were first
-    66.78s  user  발화 끝
-    68.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: [source: History.com] The black, red, and gold colors of the German fl
-    71.31s  user  발화 시작: Yeah.
-    71.81s  user  발화 끝
-    73.08s  agent 발화 끝
-    74.29s  user  발화 시작: That’s really interesting! Thanks…
-    76.92s  user  발화 끝
-    79.00s  user  발화 시작: …Kiora. That helped a lot.
-    82.05s  user  발화 끝
-    82.08s  agent 발화 시작: [happy] You’re very welcome! It’s wonderful to help you conn
-    86.29s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to remember a flag… it has black, red, and yellow
+     4.35s  user  발화 끝
+     4.39s  agent 발화 시작: Flags can be tricky to recall, it’s easy to mix up the color
+    13.31s  user  발화 시작: Oh, just a quiz. I think it was a European country.
+    13.39s  agent 발화 끝
+    16.78s  <ret> 발화 (turn3 첫 프레임)
+    16.87s  user  발화 끝
+    17.02s  agent 발화 시작: <ret> The flag with black, red, and yellow bands is… the fla
+    18.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Wikipedia] The flag of Germany features three horizontal band
+    19.14s  user  발화 시작: Right.
+    19.92s  user  발화 끝
+    21.69s  user  발화 시작: That's right! It was Germany. Hmm, I also need to remember a
+    21.74s  agent 발화 끝
+    27.80s  user  발화 끝
+    27.81s  agent 발화 시작: Sculptors often capture a feeling or idea in their work, do 
+    34.75s  agent 발화 끝
+    34.83s  user  발화 시작: I think he did a lot of bronze work. And he was Italian, I t
+    38.14s  <ret> 발화 (turn8 첫 프레임)
+    38.46s  agent 발화 시작: <ret> The Italian sculptor known for bronze work was… Donate
+    38.57s  user  발화 끝
+    39.98s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.44s]: [source: Britannica] Donatello was a Florentine sculptor of the Early 
+    42.90s  agent 발화 끝
+    42.93s  user  발화 시작: Donatello, yes! That rings a bell. He sounds important.
+    47.92s  agent 발화 시작: [happy] He absolutely was— Donatello really influenced a who
+    48.02s  user  발화 끝
+    55.67s  user  발화 시작: Okay, last one. I need a city in Spain. It starts with a ‘B’
+    55.76s  agent 발화 끝
+    59.97s  <ret> 발화 (turn12 첫 프레임)
+    60.36s  agent 발화 시작: <ret> The Spanish city that starts with ‘B’ is… Barcelona.
+    60.53s  user  발화 끝
+    61.57s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.70s]: [source: WorldAtlas] Barcelona is the capital and largest city of Cata
+    62.03s  user  발화 시작: Uh-huh.
+    62.66s  user  발화 끝
+    64.06s  agent 발화 끝
+    65.37s  user  발화 시작: Perfect! Thanks, Kiora, you’re a lifesaver.
+    68.37s  agent 발화 시작: You're very welcome! It’s great to hear I could help you wit
+    68.55s  user  발화 끝
+    72.03s  agent 발화 끝

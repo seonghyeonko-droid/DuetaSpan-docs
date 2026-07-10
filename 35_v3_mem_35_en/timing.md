@@ -66,28 +66,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Yeah, I am. I’m starting to look a | S2 Not really, I was hoping you could | S3 …Is it easy to get to from Christc | S4 I think independent travel would b
 
-     0.00s  agent 발화 시작: Hi Avery, I’m Klen. I understand you’re thinking about trave
-     1.52s  agent 발화 끝
-     1.66s  user  발화 시작: Yeah, I am. I’m trying to decide where to go in March, and I
-     5.83s  <ret> 발화 (turn2 첫 프레임)
-     6.23s  agent 발화 시작: <ret> You’re planning a trip to New Zealand in March, which 
-     6.37s  user  발화 끝
-     7.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    14.43s  user  발화 시작: …Is it going to be super crowded then?
-    14.52s  agent 발화 끝
-    15.24s  agent 발화 시작: That’s a very practical question, Avery. March is shoulder s
-    15.24s  user  발화 끝
-    23.10s  user  발화 시작: Mm-hmm.
-    25.50s  <ret> 발화 (turn6 첫 프레임)
-    25.64s  agent 발화 시작: <ret> New Zealand offers incredible opportunities for alpine
-    25.77s  agent 발화 끝
-    27.12s  user  발화 끝
-    27.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: [2025-08-26] User is into alpine wildflower photography.
-    32.49s  agent 발화 끝
-    32.50s  agent 발화 시작: …and March is when many of the later-blooming species are st
-    33.71s  user  발화 시작: Mm-hmm.
-    34.34s  user  발화 끝
-    35.88s  user  발화 시작: Oh, that sounds perfect! Do you have any recommendations for
-    36.34s  agent 발화 끝
-    42.19s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen.
+     1.88s  agent 발화 끝
+     2.01s  user  발화 시작: Yeah, I am. I’m starting to look at flights for that New Zea
+     6.03s  <ret> 발화 (turn2 첫 프레임)
+     6.36s  user  발화 끝
+     6.43s  agent 발화 시작: <ret> You’re planning a trip to New Zealand in March, which 
+     8.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    14.86s  agent 발화 끝
+    15.17s  user  발화 시작: Not really, I was hoping you could suggest something. I’m re
+    21.12s  <ret> 발화 (turn4 첫 프레임)
+    21.14s  agent 발화 시작: <ret> Alpine wildflower photography in New Zealand… that sou
+    21.19s  user  발화 끝
+    23.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.29s]: [2025-08-26] User is into alpine wildflower photography.
+    32.69s  user  발화 시작: …Is it easy to get to from Christchurch?
+    33.43s  agent 발화 끝
+    35.55s  user  발화 끝
+    35.70s  agent 발화 시작: That’s a very practical question. The Mackenzie Basin is abo
+    42.12s  user  발화 시작: Mm-hmm.
+    42.76s  user  발화 끝
+    44.28s  agent 발화 끝
+    44.31s  agent 발화 시작: Many guided photography tours operate from Christchurch, or 
+    55.53s  agent 발화 끝
+    56.89s  user  발화 시작: I think independent travel would be better. What’s the weath
+    61.51s  user  발화 끝

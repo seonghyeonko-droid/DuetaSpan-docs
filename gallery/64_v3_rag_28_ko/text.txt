@@ -1,0 +1,79 @@
+v3_rag_28_ko src=nq style=v2
+SYSTEM: <system> 당신은 돈과 예산 관리를 통해 사람들을 돕는 사려 깊고 부드러운 말투의 웰니스 코치 Brunal입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_28",
+    "name": "정슬",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-26",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-04-22",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2026-03-27",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-11",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in March."
+    },
+    {
+      "date": "2025-07-27",
+      "category": "home",
+      "text": "User's home address is 960 Pine Court."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-29",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-29",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 그… 퇴역 군인부(Department of Veterans Affairs)가 언제 만들어졌는지 ⟨ret@5.04s⟩ 궁금하네요.
+[  5.36s][moshi] 퇴역 군인부를 언제 ⟦⚡SPAN@7.04s: [source: Britannica] The Department of Veterans Affairs was established on July 21, 1930, by President Herbert⟧ 만들었는지 여쭤보셨죠. 잠시만 확인해 볼게요.
+[  9.45s][moshi] 퇴역 군인부는 허버트 후버 대통령에 의해 천구백삼십년 칠월 이십일일에 설립되었습니다.
+[ 13.98s][user ] «backchannel» 그치.
+[ 15.49s][user ] 천구백삼십년이라고요? 그게 좀 의외네요. 전쟁 참전 용사들을 위한 부서가 그 늦게 만들어졌다는 게…
+[ 22.39s][moshi] 천구백삼십년이 맞습니다. 당시에는 제1차 세계 대전 참전 용사들을 위한 지원 체계가 필요했던 시기였어요.
+[ 27.34s][user ] «backchannel» 응.
+[ 31.51s][user ] 아, 그렇군요. 그럼 그 이전에는 어떻게 했어요? 참전 용사들을 그냥 내버려 뒀나요?

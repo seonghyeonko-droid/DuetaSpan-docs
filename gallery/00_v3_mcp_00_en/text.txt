@@ -64,45 +64,41 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in Paris?
-[  3.08s][moshi] ⟨ret@2.85s⟩ The ⟦⚡SPAN@4.13s: (tool result) 48.8584° N, 2.2945° E⟧ Eiffel Tower in Paris is located at 48.8584 degrees North, 2.2945 degrees East. It's a wonderful landmark, isn't it?
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.82s⟩ Paris?
+[  3.82s][moshi] The ⟦⚡SPAN@5.10s: (tool result) 48.8584° N, 2.2945° E⟧ Eiffel Tower in Paris is located at 48.8584 degrees North, 2.2945 degrees East.
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[  6.39s][user ] «backchannel» Exactly.
-[ 13.51s][user ] That's great. Now, can you find me a highly-rated French restaurant ⟨ret@20.57s⟩ nearby?
-[ 20.97s][moshi] There's Le Jules ⟦⚡SPAN@21.07s: (tool result) Le Jules Verne - 4.6 stars, 0.1 miles⟧ Verne, a French restaurant with 4.6 stars, just 0.1 miles from the Eiffel Tower. It’s known for its amazing views.
-      CALL: {"function": "maps_search", "arguments": {"query": "French restaurant", "latitude": 48.8584, "longitude": 2.2945}}
-[ 21.64s][user ] Is it expensive? ⟨ret@26.21s⟩
-[ 26.52s][moshi] Le Jules Verne is ⟦⚡SPAN@28.21s: (tool result) Price range: $$$$⟧ quite upscale—the price range is listed as four dollar signs. It's definitely a special occasion kind of place.
-      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJp0V_M4vK8EcR5_6JvK1b08M"}}
-[ 34.48s][user ] Hmm, maybe something a bit more affordable. Can you search for ⟨ret@40.53s⟩ bistros?
-[ 40.80s][moshi] I found Bistro Paul Bert, a ⟦⚡SPAN@42.53s: (tool result) Bistro Paul Bert - 4.4 stars, 2.5 miles⟧ bistro with 4.4 stars, located 2.5 miles from the Eiffel Tower. It generally has more reasonable prices.
-      CALL: {"function": "maps_search", "arguments": {"query": "bistro", "latitude": 48.8584, "longitude": 2.2945}}
-[ 47.51s][user ] That sounds better. What’s the ⟨ret@47.72s⟩ quickest way to get there by metro?
-[ 47.80s][moshi] The quickest route to ⟦⚡SPAN@49.00s: (tool result) Metro Line 6, 20 minutes⟧ Bistro Paul Bert is via Metro Line 6, and it will take approximately 20 minutes.
-      CALL: {"function": "maps_directions", "arguments": {"origin": "Eiffel Tower", "destination": "Bistro Paul Bert", "mode": "transit"}}
-[ 53.54s][user ] Perfect. And can you book a table for two there at 7:30 PM tonight?
-[ 60.57s][moshi] ⟨ret@60.41s⟩ Wonderful! I’ve booked a ⟦⚡SPAN@61.69s: (tool result) Confirmed - Bistro Paul Bert, tonight 7:30 PM, party of 2. Confirmation #PB7892⟧ table for two at Bistro Paul Bert tonight at 7:30 PM. Your confirmation number is PB7892.
-      CALL: {"function": "restaurant_book", "arguments": {"restaurant_name": "Bistro Paul Bert", "date": "today", "time": "19:30", "party_size": 2}}
-[ 63.00s][user ] «backchannel» Yeah.
-[ 65.02s][user ] Great! Do they have a dress code?
-[ 68.73s][moshi] Bistro Paul Bert is a classic bistro—it’s generally smart casual. You won’t need a suit, but avoid very casual wear.
-[ 79.65s][user ] That's good to know. I'm meeting a friend there, and—
-[ 81.22s][user ] …is it okay if we’re a little late, like maybe 7:45?
-[ 85.05s][moshi] ⟨ret@84.98s⟩ Bistro Paul Bert has a 15-minute grace period for late arrivals. So 7:45 ⟦⚡SPAN@86.98s: (tool result) 15-minute grace period⟧ should be fine, but it's best to call them if you'll be much later.
-      CALL: {"function": "restaurant_policy", "arguments": {"restaurant_name": "Bistro Paul Bert", "policy_type": "late arrival"}}
-[ 88.70s][user ] That's a relief.
-[ 94.69s][moshi] It’s always good to be prepared, isn’t it? Sometimes a little flexibility makes things less stressful.
-[ 99.19s][user ] Definitely. Could you set a reminder for me to leave for the metro at 7:00 PM?
-[103.75s][moshi] ⟨ret@103.52s⟩ I’ve set a ⟦⚡SPAN@104.56s: (tool result) Reminder set for 7:00 PM - "Leave for Bistro Paul Bert"⟧ reminder for 7:00 PM to leave for Bistro Paul Bert. You’ll receive a notification.
-      CALL: {"function": "reminder_set", "arguments": {"time": "19:00", "message": "Leave for Bistro Paul Bert"}}
-[107.04s][user ] Perfect. Is there anything else I should know about the bistro?
-[113.83s][moshi] Bistro Paul Bert is known for its steak frites and classic French onion soup. It’s a very popular spot with locals.
-[118.50s][user ] That sounds delicious.
-[125.52s][moshi] It really is! It’s a great choice for a relaxed and authentic Parisian dining experience.
-[126.13s][user ] This has been really helpful, thank you.
-[131.95s][moshi] You’re very welcome! I'm glad I could help you plan a lovely evening.
-[135.98s][user ] I think I'm all set then.
-[142.52s][moshi] Wonderful. Enjoy your dinner at Bistro Paul Bert! It sounds like a delightful evening awaits.
-[142.72s][user ] «backchannel» Mm-hmm.
-[144.47s][user ] I will. Thanks again.
-[150.80s][moshi] You’re very kind. I hope you and your friend have a wonderful time.
+[ 13.90s][user ] Okay, great. And can you find me a highly-rated French restaurant ⟨ret@18.97s⟩ nearby?
+[ 19.37s][moshi] Le Jules Verne, ⟦⚡SPAN@20.97s: (tool result) Le Jules Verne - 4.7 stars - 0.2 km⟧ with 4.7 stars, is just 0.2 kilometers from the Eiffel Tower.
+      CALL: {"function": "maps_search", "arguments": {"query": "French restaurant", "latitude": 48.8584, "longitude": 2.2945, "radius": "1km", "sort_by": "rating"}}
+[ 23.83s][user ] «backchannel» Right.
+[ 25.77s][user ] That sounds amazing. Is it ⟨ret@28.78s⟩ expensive?
+[ 29.09s][moshi] Le Jules Verne ⟦⚡SPAN@30.62s: (tool result) Price range: $$$$⟧ is in the $$$$ price range, indicating it is quite expensive.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJg0c3k5n4EmsRjH2K9g3R420"}}
+[ 34.39s][user ] Oh, wow. Okay, maybe something a little more affordable ⟨ret@37.80s⟩ then?
+[ 38.12s][moshi] Les Cocottes has ⟦⚡SPAN@39.80s: (tool result) Les Cocottes - 4.3 stars - 0.8 km⟧ 4.3 stars and is 0.8 kilometers away, in the $$ price range.
+      CALL: {"function": "maps_search", "arguments": {"query": "French restaurant", "latitude": 48.8584, "longitude": 2.2945, "radius": "1km", "price_range": "$$"}}
+[ 41.92s][user ] «backchannel» Yeah.
+[ 45.08s][user ] That sounds better. Can you show me their menu?
+[ 48.66s][moshi] I can search for a link to Les Cocottes’ menu online for you.
+[ 52.25s][user ] Actually, could you check…
+[ 55.79s][user ] …if they have outdoor seating?
+[ 57.76s][moshi] ⟨ret@57.68s⟩ Yes, Les Cocottes ⟦⚡SPAN@59.68s: (tool result) Outdoor seating: Available⟧ does have outdoor seating available.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJp0x2XkX4EmsR1xL4w6N34s8"}}
+[ 59.18s][user ] «backchannel» Yeah.
+[ 61.61s][moshi] It’s always nice to enjoy a meal outdoors, especially in Paris.
+[ 68.77s][user ] Do they take ⟨ret@70.29s⟩ reservations?
+[ 70.45s][moshi] Reservations at Les Cocottes ⟦⚡SPAN@72.29s: (tool result) Reservations: Recommended⟧ are recommended, as it is a popular spot.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJp0x2XkX4EmsR1xL4w6N34s8"}}
+[ 77.81s][user ] Okay, can you book a table for two for tomorrow evening at 7:30 ⟨ret@82.37s⟩ PM?
+[ 82.73s][moshi] Excellent, your ⟦⚡SPAN@84.37s: (tool result) Reservation confirmed - Les Cocottes, tomorrow at 7:30 PM for 2 people. Confirmation #LC7892⟧ reservation at Les Cocottes is confirmed for tomorrow at 7:30 PM. Your confirmation number is LC7892.
+      CALL: {"function": "restaurant_reserve", "arguments": {"restaurant_name": "Les Cocottes", "date": "tomorrow", "time": "19:30", "party_size": 2}}
+[ 92.50s][user ] Perfect! Thank you so much.
+[ 94.58s][moshi] You're very welcome! It sounds like you have a lovely evening planned.
+[ 99.23s][user ] Could you also find me a good bakery near the ⟨ret@102.38s⟩ Louvre?
+[102.61s][moshi] Stohrer, with 4.6 ⟦⚡SPAN@104.38s: (tool result) Stohrer - 4.6 stars - 0.6 km⟧ stars, is a highly-rated bakery 0.6 kilometers from the Louvre.
+      CALL: {"function": "maps_search", "arguments": {"query": "bakery", "latitude": 48.8606, "longitude": 2.3376, "radius": "1km", "sort_by": "rating"}}
+[109.74s][user ] Oh, Stohrer, I’ve heard of them! Are they known for anything specific?
+[114.19s][moshi] ⟨ret@113.95s⟩ Stohrer is particularly ⟦⚡SPAN@115.95s: (tool result) Speciality: Rum Babas⟧ famous for their rum babas.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJ0W2W5fX4EmsR9K1-d1sQx3w"}}
+[117.71s][user ] Rum babas sound delicious! I think that’s all I need for now.
+[121.87s][moshi] Wonderful! Enjoy your trip to Paris and the delicious treats.

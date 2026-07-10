@@ -77,42 +77,41 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on ⟨ret@3.15s⟩ June fifteenth.
-[  3.39s][moshi] Alright, I’ve scheduled ⟦⚡SPAN@5.15s: (tool result) Viewing scheduled at The Grandview Lofts for June 15th at 2:00 PM.⟧ a viewing for you at The Grandview Lofts on June fifteenth at two in the afternoon.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[ 13.15s][user ] Actually, can we push that back to June sixteenth?
-[ 15.85s][moshi] ⟨ret@15.69s⟩ I’ve rescheduled your ⟦⚡SPAN@17.69s: (tool result) Viewing at The Grandview Lofts rescheduled to June 16th at 2:00 PM.⟧ viewing at The Grandview Lofts to June sixteenth, also at two PM.
-      CALL: {"function": "Homes_2_RescheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "originalDate": "June fifteenth", "newDate": "June sixteenth"}}
-[ 24.00s][user ] Great. And can you find me the…
-[ 28.60s][user ] …nearest coffee shop to The Grandview Lofts? ⟨ret@33.77s⟩
-[ 34.01s][moshi] The closest coffee shop to The Grandview Lofts is “Bean There, Done That” ⟦⚡SPAN@35.61s: (tool result) Nearest coffee shop is "Bean There, Done That" at 123 Main Street, 0.3 miles away.⟧ at 123 Main Street, just three tenths of a mile away.
-      CALL: {"function": "Maps_2_FindNearby", "arguments": {"location": "The Grandview Lofts", "query": "coffee shop"}}
-[ 37.20s][user ] Is that a good place?
-[ 41.57s][moshi] It generally receives very positive reviews, offering a cozy atmosphere and excellent lattes. It's a popular spot for locals.
-[ 44.32s][user ] Okay, and can you check if they have wifi?
-[ 49.57s][moshi] ⟨ret@49.41s⟩ Yes, “Bean There, Done That” does ⟦⚡SPAN@49.77s: (tool result) Bean There, Done That offers free wifi.⟧ offer free wifi for its customers.
-      CALL: {"function": "BusinessInfo_2_CheckWifi", "arguments": {"businessName": "Bean There, Done That"}}
-[ 49.70s][user ] «backchannel» Right.
-[ 50.89s][user ] Perfect. I think I'll head over there after the viewing. But— I meant to say, could you send a reminder for the viewing on ⟨ret@56.13s⟩ the sixteenth?
-[ 56.53s][moshi] I’ve set a reminder for you for June ⟦⚡SPAN@58.13s: (tool result) Reminder set for June 16th at 1:45 PM: Viewing at The Grandview Lofts.⟧ sixteenth at one forty-five PM for your viewing at The Grandview Lofts.
-      CALL: {"function": "Calendar_2_SetReminder", "arguments": {"date": "June sixteenth", "time": "1:45 PM", "description": "Viewing at The Grandview Lofts"}}
-[ 60.79s][user ] Thank you. Can you also find me directions from Bean There, Done That to The ⟨ret@65.32s⟩ Grandview Lofts?
-[ 65.72s][moshi] From “Bean There, Done That”, head north on ⟦⚡SPAN@66.92s: (tool result) Directions: Head north on Main Street, turn left onto Elm Avenue, The Grandview Lofts will be on⟧ Main Street, then turn left onto Elm Avenue, and The Grandview Lofts will be on your right.
-      CALL: {"function": "Maps_2_GetDirections", "arguments": {"start": "Bean There, Done That", "end": "The Grandview Lofts"}}
-[ 69.04s][user ] That sounds easy enough. Is there parking at The Grandview ⟨ret@72.49s⟩ Lofts?
-[ 72.64s][moshi] Yes, The ⟦⚡SPAN@73.29s: (tool result) The Grandview Lofts offers free on-site parking.⟧ Grandview Lofts does offer free parking on site for visitors.
-      CALL: {"function": "BusinessInfo_2_CheckParking", "arguments": {"businessName": "The Grandview Lofts"}}
-[ 75.83s][user ] Wonderful. This is really helping me get organized.
-[ 79.08s][moshi] [happy] It’s wonderful to hear that I'm helping you feel prepared, that’s often a big part of a smooth transition.
-[ 80.49s][user ] «backchannel» Uh-huh.
-[ 81.74s][user ] Do you think I should bring anything to the viewing?
-[ 82.56s][moshi] A notepad and pen could be helpful for jotting down any questions or observations you have during the viewing.
-[ 84.03s][user ] «backchannel» Yeah.
-[ 85.03s][user ] Good idea. What’s ⟨ret@85.24s⟩ the weather forecast for June sixteenth?
-[ 85.64s][moshi] It looks like June sixteenth will ⟦⚡SPAN@86.20s: (tool result) June 16th: Sunny, high of 75°F, low of 60°F.⟧ be sunny with a high of seventy-five and a low of sixty degrees.
-      CALL: {"function": "Weather_2_GetForecast", "arguments": {"date": "June sixteenth", "location": "123 Main Street"}}
-[ 86.73s][user ] «backchannel» Okay.
-[ 87.12s][user ] Perfect viewing weather!
-[ 87.84s][moshi] [surprised] It certainly sounds like it! A pleasant day always makes these things a little easier.
-[ 91.80s][user ] Thanks again for all your help, Tellar.
-[ 93.79s][moshi] You’re very welcome. I’m glad I could assist you, and I wish you the best with your viewing.
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
+[  4.28s][moshi] ⟨ret@4.04s⟩ I’ve scheduled a viewing ⟦⚡SPAN@5.56s: (tool result) Viewing scheduled for The Grandview Lofts, June 15th, 2:00 PM.⟧ for you at The Grandview Lofts on June fifteenth at 2:00 PM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
+[  9.08s][user ] Actually… June sixteenth would work better.
+[ 11.81s][moshi] ⟨ret@11.65s⟩ Let me just confirm that ⟦⚡SPAN@13.65s: (tool result) Viewing rescheduled for The Grandview Lofts, June 16th, 10:30 AM.⟧ for you— the viewing at The Grandview Lofts is now set for June sixteenth at 10:30 AM.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 19.06s][user ] Great. Can you find me directions to get there from my current location?
+[ 22.97s][moshi] ⟨ret@22.74s⟩ Directions to The ⟦⚡SPAN@24.74s: (tool result) Directions to The Grandview Lofts: 123 Elm Street, 15 minutes via Main Street.⟧ Grandview Lofts, at 123 Elm Street, are approximately fifteen minutes via Main Street.
+      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
+[ 29.57s][user ] Okay, and what’s the parking situation like ⟨ret@32.16s⟩ there?
+[ 32.32s][moshi] The Grandview Lofts has ⟦⚡SPAN@34.16s: (tool result) The Grandview Lofts: limited street parking, paid garage nearby.⟧ limited street parking, but there's a paid garage conveniently nearby.
+      CALL: {"function": "Homes_2_GetParkingInfo", "arguments": {"property": "The Grandview Lofts"}}
+[ 37.94s][user ] A paid garage… hmm, is there anything closer, maybe with free ⟨ret@42.39s⟩ parking?
+[ 42.79s][moshi] There’s free parking available at ⟦⚡SPAN@44.39s: (tool result) Free parking available at City Hall lot, 5-minute walk.⟧ the City Hall lot, just a five-minute walk from The Grandview Lofts.
+      CALL: {"function": "Nearby_2_FindParking", "arguments": {"location": "The Grandview Lofts", "preference": "free"}}
+[ 45.43s][user ] «backchannel» Right.
+[ 47.64s][user ] Perfect! Could you set a reminder for me to leave fifteen minutes before the ⟨ret@51.76s⟩ viewing?
+[ 52.15s][moshi] I’ve set a reminder ⟦⚡SPAN@53.76s: (tool result) Reminder set: June 16th, 10:15 AM, "Grandview Lofts Viewing".⟧ for June sixteenth at 10:15 AM for your Grandview Lofts viewing.
+      CALL: {"function": "Reminder_2_SetReminder", "arguments": {"time": "June 16th, 10:15 AM", "event": "Grandview Lofts Viewing"}}
+[ 57.19s][user ] Thanks so much, Tellar. You’re a lifesaver.
+[ 59.53s][moshi] You’re very welcome. It's my pleasure to support you as you navigate this big step.
+[ 65.01s][user ] Actually, before I forget, can you check the weather forecast for that day?
+[ 69.60s][moshi] ⟨ret@69.52s⟩ The forecast for June sixteenth ⟦⚡SPAN@71.52s: (tool result) June 16th, 123 Elm Street: Sunny, high of 75 degrees Fahrenheit.⟧ at 123 Elm Street is sunny with a high of seventy-five degrees Fahrenheit.
+      CALL: {"function": "Weather_2_GetForecast", "arguments": {"date": "June 16th", "location": "123 Elm Street"}}
+[ 75.56s][user ] That sounds lovely. Is there a good coffee shop nearby I could stop at beforehand?
+[ 81.21s][moshi] ⟨ret@81.05s⟩ There's a highly-rated coffee shop, ⟦⚡SPAN@83.05s: (tool result) "The Daily Grind" coffee shop, 2-minute walk from The Grandview Lofts.⟧ “The Daily Grind”, just a two-minute walk from The Grandview Lofts.
+      CALL: {"function": "Nearby_2_FindCoffeeShops", "arguments": {"location": "The Grandview Lofts"}}
+[ 84.24s][user ] «backchannel» Uh-huh.
+[ 86.79s][user ] Oh, great. What are their hours on Saturday?
+[ 90.12s][moshi] ⟨ret@89.80s⟩ ⟦⚡SPAN@90.30s: (tool result) The Daily Grind: Saturday, 7:00 AM to 5:00 PM.⟧ The Daily Grind is open on Saturday from 7:00 AM to 5:00 PM.
+      CALL: {"function": "BusinessHours_2_GetHours", "arguments": {"business": "The Daily Grind", "day": "Saturday"}}
+[ 91.77s][user ] «backchannel» Exactly.
+[ 96.68s][user ] Fantastic. I think that’s everything.
+[ 99.39s][moshi] Wonderful. It sounds like you’re well-prepared for your viewing.
+[103.00s][user ] Yes, I am. Thank you again.
+[105.71s][moshi] You’re very welcome. I wish you all the best with finding a new home.
+[109.19s][user ] I appreciate that.
+[110.65s][moshi] Enjoy your trip.

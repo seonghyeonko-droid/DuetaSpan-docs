@@ -55,141 +55,137 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Rioja sounds interesting. What’s t | S3 Perfect. Can you make a reservatio | S4 I think I'll walk. Is there anythi
+# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to… | S2 That sounds lovely. Is there anyth | S3 The Morrison Inn sounds perfect. C | S4 Yes, I think so. Thanks again for 
 
-     0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     4.47s  <ret> 발화 (turn1 첫 프레임)
-     4.83s  agent 발화 시작: <ret> There are three buses from Chicago to Denver on May te
-     5.05s  user  발화 끝
-     6.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.60s]: (tool result) Three buses found: 8:00 AM, $250; 2:00 PM, $280; 7:00 PM
-    12.33s  user  발화 시작: Oh.
-    12.97s  user  발화 끝
-    16.43s  agent 발화 끝
-    16.62s  user  발화 시작: That 2:00 PM one— can you book that for me?
-    19.04s  <ret> 발화 (turn4 첫 프레임)
-    19.26s  agent 발화 시작: <ret> I’ve booked the 2:00 PM bus for three passengers, conf
-    19.53s  user  발화 끝
-    21.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) Booking confirmed: Confirmation #AX789.
-    26.91s  agent 발화 끝
-    27.66s  user  발화 시작: Great. What’s the weather like in Denver on that day?
-    29.83s  <ret> 발화 (turn6 첫 프레임)
-    29.98s  agent 발화 시작: <ret> The forecast for Denver on May tenth is sunny, with a 
-    30.11s  user  발화 끝
-    31.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Sunny, high of 75°F, low of 50°F.
-    33.94s  user  발화 시작: Really?
-    34.67s  user  발화 끝
-    36.33s  agent 발화 끝
-    36.71s  user  발화 시작: Okay, good. Can you set a reminder to pack for the trip on M
-    39.76s  <ret> 발화 (turn9 첫 프레임)
-    40.15s  agent 발화 시작: <ret> I’ve set a reminder for May eighth to pack for your tr
-    40.26s  user  발화 끝
-    40.26s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.19s]: (tool result) Reminder set for May eighth.
-    45.34s  agent 발화 끝
-    45.40s  user  발화 시작: Perfect. And are there any good Italian restaurants near Uni
-    48.10s  <ret> 발화 (turn11 첫 프레임)
-    48.49s  agent 발화 시작: <ret> Rioja, a Mediterranean-inspired Italian restaurant, ha
-    48.54s  user  발화 끝
-    50.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.80s]: (tool result) Rioja: 4.5 stars, Mediterranean-inspired Italian; Stoic 
-    54.28s  agent 발화 끝
-    54.59s  user  발화 시작: Rioja sounds interesting. What’s their address?
-    57.52s  <ret> 발화 (turn13 첫 프레임)
-    57.77s  agent 발화 시작: <ret> Rioja is located at 1332 Larimer Street, Denver, Color
-    57.87s  user  발화 끝
-    59.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) 1332 Larimer St, Denver, CO 80202.
-    62.37s  user  발화 시작: Okay.
-    63.01s  user  발화 끝
-    64.02s  agent 발화 끝
-    64.73s  user  발화 시작: Can you navigate me there from Union Station?
-    68.42s  <ret> 발화 (turn16 첫 프레임)
-    68.65s  agent 발화 시작: <ret> I’m navigating you to Rioja via the 16th Street Mall.
-    68.93s  user  발화 끝
-    70.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Navigating to Rioja via 16th Street Mall.
-    71.34s  user  발화 시작: Uh-huh.
-    74.44s  agent 발화 끝
-    74.77s  user  발화 시작: Actually, hold on. I think I want to check out a different r
-    74.99s  user  발화 끝
-    80.53s  user  발화 시작: …is there anything with outdoor seating?
-    80.65s  agent 발화 시작: I can certainly—
-    80.83s  user  발화 끝
-    81.15s  agent 발화 끝
-    83.48s  <ret> 발화 (turn21 첫 프레임)
-    83.54s  agent 발화 시작: <ret> Tavernetta, with 4.6 stars, has outdoor seating availa
-    83.77s  user  발화 끝
-    85.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: (tool result) Tavernetta: 4.6 stars, outdoor seating available.
-    89.26s  user  발화 시작: Wow.
-    90.08s  user  발화 끝
-    90.88s  user  발화 시작: Tavernetta sounds lovely. What time do they close tonight?
-    91.10s  agent 발화 끝
-    95.29s  <ret> 발화 (turn24 첫 프레임)
-    95.67s  agent 발화 시작: <ret> Tavernetta closes at 10:00 PM tonight.
-    95.88s  user  발화 끝
-    97.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) Closes at 10:00 PM.
-    97.90s  user  발화 시작: Yeah.
-    98.68s  user  발화 끝
-   101.04s  agent 발화 끝
-   101.71s  user  발화 시작: Perfect. Can you make a reservation for two at 7:30 PM?
-   104.83s  <ret> 발화 (turn27 첫 프레임)
-   104.89s  agent 발화 시작: <ret> Your reservation for two at Tavernetta is confirmed fo
-   104.94s  user  발화 끝
-   105.63s  ⚡SPAN 주입 [d'=0.80s / d_lead=5.14s]: (tool result) Reservation confirmed for two at 7:30 PM.
-   110.04s  agent 발화 끝
-   110.11s  user  발화 시작: Wonderful. Is there a good coffee shop near Tavernetta?
-   112.50s  <ret> 발화 (turn29 첫 프레임)
-   112.80s  agent 발화 시작: <ret> Little Owl Coffee, rated 4.7 stars, is just 0.2 miles 
-   113.02s  user  발화 끝
-   114.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) Little Owl Coffee: 4.7 stars, 0.2 miles away.
-   116.17s  user  발화 시작: Wow.
-   116.85s  user  발화 끝
-   117.31s  user  발화 시작: Great. Can you send a text message to my wife, Sarah, saying
-   117.48s  agent 발화 끝
-   119.24s  <ret> 발화 (turn32 첫 프레임)
-   119.47s  agent 발화 시작: <ret> I’ve sent a message to Sarah letting her know about th
-   119.61s  user  발화 끝
-   121.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: (tool result) Message sent to Sarah.
-   126.37s  agent 발화 끝
-   127.08s  user  발화 시작: Thanks, that’s really helpful. Can you remind me to leave fo
-   130.38s  <ret> 발화 (turn34 첫 프레임)
-   130.77s  agent 발화 시작: <ret> I’ve set a reminder for 6:45 PM to leave for your dinn
-   130.88s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.86s]: (tool result) Reminder set for 6:45 PM.
-   130.97s  user  발화 끝
-   137.57s  user  발화 시작: Perfect. What’s the best way to get from Union Station to Ta
-   137.62s  agent 발화 끝
-   140.56s  <ret> 발화 (turn36 첫 프레임)
-   140.61s  agent 발화 시작: <ret> You can walk to Tavernetta in 15 minutes, or take the 
-   140.84s  user  발화 끝
-   142.45s  user  발화 시작: Yeah.
-   142.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Walk: 15 minutes. Light rail: 8 minutes.
-   143.87s  user  발화 끝
-   146.08s  agent 발화 끝
-   146.62s  user  발화 시작: I think I'll walk. Is there anything else I should keep in m
-   149.22s  user  발화 끝
-   149.51s  agent 발화 시작: [happy] Sometimes, a little mindful breathing can help ease 
-   155.49s  agent 발화 끝
-   155.72s  user  발화 시작: That’s a good idea, thank you. What’s the exchange rate betw
-   155.98s  <ret> 발화 (turn41 첫 프레임)
-   156.36s  user  발화 끝
-   156.37s  agent 발화 시작: <ret> Currently, one US dollar equals 0.92 Euros.
-   157.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) 1 USD = 0.92 EUR.
-   159.57s  user  발화 시작: Wow.
-   161.00s  user  발화 시작: Okay. Could you play some relaxing music for the bus ride?
-   161.09s  agent 발화 끝
-   162.97s  <ret> 발화 (turn44 첫 프레임)
-   163.28s  agent 발화 시작: <ret> I’m now playing relaxing ambient music for your bus ri
-   163.45s  user  발화 끝
-   163.60s  user  발화 끝
-   164.09s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.51s]: (tool result) Playing relaxing ambient music.
-   164.52s  user  발화 시작: Yeah.
-   166.27s  user  발화 끝
-   166.57s  user  발화 시작: That's nice. Can you check if my flight back on May fifteent
-   166.80s  agent 발화 끝
-   170.20s  <ret> 발화 (turn47 첫 프레임)
-   170.28s  user  발화 끝
-   170.28s  agent 발화 시작: <ret> Your flight, UA123, on May fifteenth is currently on t
-   170.39s  user  발화 시작: Yeah.
-   170.70s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.54s]: (tool result) UA123 is on time.
-   170.82s  agent 발화 끝
-   171.15s  user  발화 시작: Great! Thanks so much for all your help, Oruus.
-   173.81s  user  발화 끝
-   174.47s  agent 발화 시작: It was my pleasure to assist you. Wishing you a wonderful tr
-   174.62s  user  발화 끝
-   175.19s  agent 발화 끝
+     0.00s  user  발화 시작: Show me buses from Chicago to…
+     2.58s  user  발화 끝
+     4.73s  user  발화 시작: …Denver for three passengers on May tenth.
+     7.01s  <ret> 발화 (turn2 첫 프레임)
+     7.41s  agent 발화 시작: <ret> There are three buses from Chicago to Denver on May te
+     7.45s  user  발화 끝
+     9.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: (tool result) Three buses found: 8:00 AM, $250; 1:30 PM, $280; 6:00 PM
+    11.56s  user  발화 시작: Oh.
+    11.92s  user  발화 끝
+    13.62s  user  발화 시작: Actually, make that May eleventh.
+    13.98s  agent 발화 끝
+    15.41s  <ret> 발화 (turn5 첫 프레임)
+    15.64s  agent 발화 시작: <ret> For May eleventh, there are two buses available. The 9
+    15.74s  user  발화 끝
+    17.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) Two buses found: 9:00 AM, $260; 7:00 PM, $230.
+    22.04s  user  발화 시작: The 7:00 PM one sounds good. Can you book it?
+    22.17s  agent 발화 끝
+    24.71s  <ret> 발화 (turn7 첫 프레임)
+    24.87s  agent 발화 시작: <ret> I have booked the 7:00 PM bus for three passengers. Yo
+    25.00s  user  발화 끝
+    26.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Booking confirmed: confirmation number is 49X7Z2.
+    29.59s  user  발화 시작: Really?
+    30.41s  user  발화 끝
+    32.23s  user  발화 시작: Great. And could you set a reminder for me to leave for the 
+    32.41s  agent 발화 끝
+    37.81s  <ret> 발화 (turn10 첫 프레임)
+    38.21s  agent 발화 시작: <ret> A reminder is set for May eleventh at 5:30 PM to leave
+    38.25s  user  발화 끝
+    38.31s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.32s]: (tool result) Reminder set for May eleventh, 5:30 PM: Leave for bus st
+    43.53s  agent 발화 끝
+    44.23s  user  발화 시작: Perfect. Now, what's the weather forecast for Denver on May 
+    48.07s  <ret> 발화 (turn12 첫 프레임)
+    48.46s  agent 발화 시작: <ret> The forecast for Denver on May eleventh is sunny, with
+    48.72s  user  발화 끝
+    50.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Denver, May eleventh: sunny, high 75, low 50.
+    55.27s  agent 발화 끝
+    57.66s  user  발화 시작: That sounds lovely. Is there anything interesting to do in D
+    61.28s  <ret> 발화 (turn14 첫 프레임)
+    61.52s  agent 발화 시작: <ret> Denver has attractions like the Denver Art Museum, Bot
+    61.59s  user  발화 끝
+    63.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Denver attractions: Denver Art Museum, Botanic Gardens, 
+    65.78s  user  발화 시작: Mhm.
+    66.22s  user  발화 끝
+    67.55s  agent 발화 끝
+    68.26s  user  발화 시작: Red Rocks sounds amazing. Can you show me directions from th
+    73.65s  <ret> 발화 (turn17 첫 프레임)
+    73.88s  agent 발화 시작: <ret> Driving to Red Rocks Amphitheatre will take about thir
+    74.10s  user  발화 끝
+    75.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) Drive: 30 minutes, 15 miles. Public transit: 1 hour, 10 
+    79.95s  agent 발화 끝
+    81.08s  user  발화 시작: Public transit sounds better. What's the schedule like?
+    84.40s  <ret> 발화 (turn19 첫 프레임)
+    84.56s  agent 발화 시작: <ret> Bus route 16L departs from the bus station at 8:15, 9:
+    84.69s  user  발화 끝
+    86.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Bus route 16L: departs 8:15 AM, 9:15 AM, 10:15 AM…
+    88.21s  user  발화 시작: Uh-huh.
+    88.71s  user  발화 끝
+    92.11s  agent 발화 끝
+    92.31s  user  발화 시작: That’s good to know. I think I’ll pack a light jacket—
+    95.52s  user  발화 시작: …do they have food at Red Rocks?
+    95.68s  user  발화 끝
+    97.43s  <ret> 발화 (turn23 첫 프레임)
+    97.58s  agent 발화 시작: <ret> Concessions are available at Red Rocks Amphitheatre, i
+    97.60s  user  발화 끝
+    99.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: (tool result) Red Rocks: concessions available – burgers, hot dogs, sn
+   100.61s  user  발화 시작: Yeah.
+   101.11s  user  발화 끝
+   104.12s  user  발화 시작: Wonderful. Okay, one last thing. What's a good local restaur
+   104.29s  agent 발화 끝
+   109.04s  <ret> 발화 (turn26 첫 프레임)
+   109.36s  agent 발화 시작: <ret> The Morrison Inn, serving Mexican food, has four and a
+   109.44s  user  발화 끝
+   109.84s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.98s]: (tool result) The Morrison Inn: Mexican, 4.5 stars. Cafe Prague: Czech
+   117.16s  user  발화 시작: The Morrison Inn sounds perfect. Can you make a reservation 
+   117.34s  agent 발화 끝
+   123.39s  <ret> 발화 (turn28 첫 프레임)
+   123.71s  agent 발화 시작: <ret> I have made a reservation for two at The Morrison Inn 
+   123.93s  user  발화 끝
+   125.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Reservation confirmed: The Morrison Inn, May eleventh, 7
+   126.35s  user  발화 시작: Yeah.
+   126.84s  user  발화 끝
+   129.89s  user  발화 시작: Excellent! This trip is really coming together.
+   129.96s  agent 발화 끝
+   132.84s  user  발화 끝
+   132.91s  agent 발화 시작: I am glad I could assist you in planning your trip.
+   135.68s  agent 발화 끝
+   136.70s  user  발화 시작: I’m a little worried about altitude sickness though.
+   139.40s  agent 발화 시작: It’s wise to consider altitude sickness when traveling to De
+   139.56s  user  발화 끝
+   142.17s  user  발화 시작: Yeah.
+   142.66s  user  발화 끝
+   144.86s  agent 발화 끝
+   145.69s  user  발화 시작: Do you have any advice for preventing it?
+   147.90s  agent 발화 시작: Staying hydrated and avoiding strenuous activity upon arriva
+   147.94s  user  발화 끝
+   153.97s  agent 발화 끝
+   154.12s  user  발화 시작: That's helpful. Should I avoid alcohol too?
+   156.90s  agent 발화 시작: Yes, limiting alcohol intake is also recommended when acclim
+   157.12s  user  발화 끝
+   162.89s  user  발화 시작: Good to know. I think I'm all set now.
+   162.92s  agent 발화 끝
+   165.23s  agent 발화 시작: It sounds like you’ve thoughtfully prepared for your trip.
+   165.28s  user  발화 끝
+   168.19s  agent 발화 끝
+   168.46s  user  발화 시작: Yes, I think so. Thanks again for all your help.
+   171.23s  user  발화 끝
+   171.37s  agent 발화 시작: You are most welcome.
+   172.65s  agent 발화 끝
+   172.78s  user  발화 시작: I was wondering, what’s the history of Red Rocks?
+   175.85s  agent 발화 시작: Red Rocks Amphitheatre has a fascinating history, evolving f
+   175.93s  user  발화 끝
+   179.55s  user  발화 시작: Yeah, totally.
+   180.69s  user  발화 끝
+   184.29s  user  발화 시작: That sounds interesting.
+   184.33s  agent 발화 끝
+   185.51s  agent 발화 시작: Its story began with Native American gatherings and evolved 
+   185.67s  user  발화 끝
+   188.33s  user  발화 시작: Yeah.
+   188.96s  user  발화 끝
+   192.18s  agent 발화 끝
+   193.24s  user  발화 시작: Wow, that’s a long time ago.
+   195.18s  user  발화 끝
+   195.25s  agent 발화 시작: Indeed. The first official concert was held there in 1920, m
+   202.13s  user  발화 시작: Amazing.
+   202.34s  agent 발화 끝
+   202.94s  user  발화 끝
+   203.06s  agent 발화 시작: The venue was formally dedicated in 1941, and has hosted cou
+   210.31s  user  발화 시작: I can’t wait to go.
+   210.48s  agent 발화 끝
+   211.65s  agent 발화 시작: I hope you have a truly memorable experience at Red Rocks Am
+   211.78s  user  발화 끝
+   215.62s  agent 발화 끝

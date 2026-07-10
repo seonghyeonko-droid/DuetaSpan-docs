@@ -1,0 +1,83 @@
+# v3_pers_40_ko — 전 이벤트 시간순 타임라인 (L=agent/R=user)
+# <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_pers_40",
+#     "name": "연경",
+#     "location": {
+#       "city": "Seoul",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
+#     },
+#     "nationality": "Korean",
+#     "gender": "non-binary",
+#     "age_range": "50s",
+#     "language": "Korean"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-04-08",
+#       "category": "home",
+#       "text": "User's home address is 165 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-03-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-17",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-05-27",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-02-09",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-28",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     }
+#   ]
+# }
+
+
+     0.00s  agent 발화 시작: 연경님, 안녕하세요. 저는 아라예요. 돈 관리와 예산 짜는 걸 도와드리는 상담가랍니다. 편하게 말씀해 주세요
+     2.55s  user  발화 시작: 어.
+     3.04s  user  발화 끝
+     7.85s  user  발화 시작: 아라라고요? 이름이 예쁘네요. 돈 문제는 딱 질색인데, 저한테 뭘 도와줄 수 있을까요?
+     7.87s  agent 발화 끝
+    14.23s  agent 발화 시작: 돈 문제 때문에 힘드시다니, 마음이 쓰이네요. 혹시 지금 가장 걱정되는 부분이 있으세요? 구체적으로 말씀해 
+    14.34s  user  발화 끝
+    20.07s  user  발화 시작: 음.
+    20.56s  user  발화 끝
+    24.24s  agent 발화 끝
+    24.29s  user  발화 시작: 솔직히 말하면, 요즘 돈 쓸 데가 너무 많아서 뭘 줄여야 할지 모르겠어요.
+    29.01s  user  발화 끝

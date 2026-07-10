@@ -63,23 +63,18 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, when did the | S2 …like it’s always been around. | S3 July 1930? That seems… surprisingl | S4 So, over a century before the depa
 
-     0.00s  user  발화 시작: I was just wondering, when did the Veterans Affairs departme
-     6.03s  user  발화 끝
-     7.30s  user  발화 시작: …like it’s always been around.
-    17.61s  <ret> 발화 (turn2 첫 프레임)
-    17.92s  agent 발화 시작: <ret> The Department of Veterans Affairs was formally establ
-    17.97s  user  발화 끝
-    18.73s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.19s]: [source: Britannica] The Department of Veterans Affairs was establishe
-    23.11s  agent 발화 끝
-    24.14s  user  발화 시작: July 1930? That seems… surprisingly recent. Didn’t they have
-    34.09s  <ret> 발화 (turn4 첫 프레임)
-    34.49s  agent 발화 시작: <ret> Before the Department of Veterans Affairs, veteran ben
-    34.62s  user  발화 끝
-    36.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.38s]: [source: VA.gov] Prior to 1930, veteran benefits were administered by 
-    39.87s  agent 발화 끝
-    39.87s  user  발화 시작: So, over a century before the department itself? That's a pr
-    53.17s  user  발화 끝
-    53.19s  agent 발화 시작: The Bureau focused on providing pensions, of course, but als
-    53.58s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about government departments, and it made
+     6.69s  <ret> 발화 (turn1 첫 프레임)
+     7.01s  agent 발화 시작: <ret> The Department of Veterans Affairs was formally establ
+     7.21s  user  발화 끝
+     7.81s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.18s]: [source: Britannica] The United States Department of Veterans Affairs 
+    12.19s  agent 발화 끝
+    12.60s  user  발화 시작: July 1930? That seems… late. I thought there must have been 
+    20.64s  <ret> 발화 (turn3 첫 프레임)
+    20.81s  user  발화 끝
+    21.04s  agent 발화 시작: <ret> You’re right to question that—there were certainly eff
+    22.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [source: VA.gov] Prior to 1930, the Veterans Bureau, established in 19
+    26.23s  agent 발화 시작: Support for veterans existed before 1930… through the Vetera
+    26.42s  agent 발화 끝
+    31.89s  agent 발화 끝

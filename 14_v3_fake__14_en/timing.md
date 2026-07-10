@@ -55,39 +55,39 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just watching Mamma Mia!… | S2 Yeah, it got me thinking about the | S3 That makes sense. Were they writin | S4 It is. I’m thinking of learning mo
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Mamma Mia! | S2 Oh, Björn Ulvaeus! I keep getting  | S3 What other songs did Björn Ulvaeus | S4 It really shows. It makes the show
 
-     0.00s  user  발화 시작: I was just watching Mamma Mia!…
-     5.46s  user  발화 끝
-     6.76s  user  발화 시작: …and I'm curious… who actually wrote “My Love, My Life”? It’
-    13.88s  agent 발화 시작: It really is a standout track from the musical. It’s wonderf
-    14.18s  user  발화 끝
-    18.84s  user  발화 시작: Yeah, it got me thinking about the songwriting team. I know 
-    18.97s  agent 발화 끝
-    24.41s  <ret> 발화 (turn4 첫 프레임)
-    24.63s  user  발화 끝
-    24.72s  agent 발화 시작: <ret> The song “My Love, My Life” was created by… Björn Ulva
-    26.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: [source: Wikipedia] "My Love, My Life" was written by Björn Ulvaeus an
-    29.25s  agent 발화 끝
-    29.27s  user  발화 시작: Oh, okay, so it wasn't Agnetha or Anni-Frid who wrote it? I 
-    36.19s  <ret> 발화 (turn6 첫 프레임)
-    36.35s  agent 발화 시작: <ret> It's a common assumption, as their voices are so centr
-    36.50s  user  발화 끝
-    38.19s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.30s]: (tool result) AAPL: 170.34
-    40.65s  agent 발화 끝
-    41.58s  user  발화 시작: That makes sense. Were they writing songs for other artists 
-    47.30s  <ret> 발화 (turn8 첫 프레임)
-    47.54s  agent 발화 시작: <ret> Yes, Björn and Benny also wrote songs for other artist
-    47.69s  user  발화 끝
-    49.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.66s]: [source: AllMusic] Ulvaeus and Andersson wrote songs for a variety of 
-    51.19s  agent 발화 끝
-    52.82s  user  발화 시작: Gemini… I don't think I know them. Did they have any hits?
-    57.03s  user  발화 끝
-    57.12s  agent 발화 시작: Gemini had a few minor hits in the early 1970s, but they’re 
-    57.29s  user  발화 시작: Oh.
-    57.62s  agent 발화 끝
-    58.40s  user  발화 시작: It is. I’m thinking of learning more about ABBA’s songwritin
-    61.60s  user  발화 끝
-    66.84s  agent 발화 시작: [happy] There are some excellent documentaries about ABBA av
-    66.88s  user  발화 끝
-    67.29s  agent 발화 끝
+     0.00s  user  발화 시작: I was just listening to Mamma Mia! and I’m curious… who wrot
+     7.13s  user  발화 끝
+     7.27s  agent 발화 시작: That’s a lovely song to ask about, and a very common questio
+    13.24s  user  발화 시작: It really is. I’m trying to learn more about the people behi
+    13.24s  agent 발화 끝
+    17.16s  <ret> 발화 (turn3 첫 프레임)
+    17.48s  agent 발화 시작: <ret> Understanding the creators can really deepen your appr
+    17.49s  user  발화 끝
+    19.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: [source: Wikipedia] "My Love, My Life" was written by Björn Ulvaeus.
+    22.92s  <ret> 발화 (turn4 첫 프레임)
+    23.08s  agent 발화 시작: <ret> The songwriter behind “My Love, My Life” is… Björn Ulv
+    23.17s  agent 발화 끝
+    24.92s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.79s]: (tool result) AAPL: 170.34 +0.45
+    30.62s  user  발화 시작: Oh, Björn Ulvaeus! I keep getting his name mixed up with Ben
+    30.86s  agent 발화 끝
+    34.95s  agent 발화 시작: It’s easy to do, they formed such a strong partnership. Both
+    34.97s  user  발화 끝
+    41.07s  agent 발화 끝
+    42.01s  user  발화 시작: What other songs did Björn Ulvaeus write for Mamma Mia!?
+    45.78s  <ret> 발화 (turn8 첫 프레임)
+    46.02s  agent 발화 시작: <ret> Björn Ulvaeus, along with Benny Andersson, co-wrote ev
+    46.18s  user  발화 끝
+    47.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: [source: Mamma Mia! official website] Björn Ulvaeus and Benny Andersso
+    54.69s  agent 발화 끝
+    56.00s  user  발화 시작: Wow, they wrote *all* of them? That’s incredible!
+    59.69s  agent 발화 시작: [happy] It is, isn’t it? They have a really remarkable talen
+    59.69s  user  발화 끝
+    63.12s  user  발화 시작: Yeah.
+    63.57s  user  발화 끝
+    67.80s  agent 발화 끝
+    68.37s  user  발화 시작: It really shows. It makes the show so… complete.
+    72.14s  agent 발화 시작: I agree. A cohesive musical vision is so important, and they
+    72.21s  user  발화 끝
+    79.18s  agent 발화 끝

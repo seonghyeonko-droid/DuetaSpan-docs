@@ -69,21 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to offer guidance a
-     5.61s  user  발화 시작: Right.
-     6.11s  user  발화 끝
-     8.65s  user  발화 시작: Jaeia… that’s a lovely name. It sounds… peaceful. I’m just f
-     8.76s  agent 발화 끝
-    14.88s  agent 발화 시작: Lost is a very human feeling, Andrea. It’s often a sign we’r
-    14.91s  user  발화 끝
-    20.62s  user  발화 시작: Yeah.
-    21.25s  user  발화 끝
-    26.60s  agent 발화 시작: Sometimes, simply acknowledging that feeling—allowing yourse
-    26.66s  agent 발화 끝
-    37.18s  agent 발화 끝
-    38.32s  user  발화 시작: That’s… helpful, actually. It’s just, everything feels so di
-    44.43s  user  발화 끝
-    44.58s  agent 발화 시작: Grief reshapes our world, Andrea. It’s not about “getting ov
-    56.41s  agent 발화 끝
-    56.49s  user  발화 시작: I— I mean, I keep expecting to call her, you know? Old habit
-    61.35s  user  발화 끝
+     0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to offer a gentle s
+     7.23s  agent 발화 끝
+     7.33s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… peaceful. I’m jus
+    13.15s  agent 발화 시작: It’s understandable to feel lost when facing uncertainty, An
+    13.21s  user  발화 끝
+    16.07s  user  발화 시작: Wow.
+    16.55s  user  발화 끝
+    22.00s  agent 발화 끝
+    22.01s  agent 발화 시작: What feels most overwhelming about this sense of being lost—
+    29.42s  agent 발화 끝
+    29.51s  user  발화 시작: It's… well, my partner and I just separated. After fifteen y
+    36.03s  user  발화 끝
+    36.23s  agent 발화 시작: Fifteen years is a significant chapter, Andrea. It’s natural
+    46.95s  user  발화 시작: It does. It really, really does. I just… I don’t even know w
+    47.04s  agent 발화 끝
+    51.95s  user  발화 끝

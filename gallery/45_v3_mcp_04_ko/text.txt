@@ -1,0 +1,68 @@
+v3_mcp_04_ko src=mcp style=v2
+SYSTEM: <system> 당신은 인생의 중요한 변화를 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사 Lio입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_04",
+    "name": "시호",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-21",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-06-02",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2026-01-04",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-07-08",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-05-30",
+      "category": "home",
+      "text": "User's home address is 289 Pine Court."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-12-21",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 혹시 사용자 에이전트를 SuperCrawler 버전 십 점 일로 설정해 줄 수 ⟨ret@4.24s⟩ 있을까요?
+[  4.55s][moshi] 사용자 에이전트를 SuperCrawler ⟦⚡SPAN@6.24s: (tool result) User agent set to SuperCrawler version 10.1⟧ 버전 십 점 일로 설정했습니다.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
+[  6.85s][user ] «backchannel» 네.
+[  9.83s][user ] 음… 혹시 지금 제 사용자 에이전트가 제대로 설정되었는지 확인해 볼 수 있을까요?
+[ 15.31s][moshi] ⟨ret@15.23s⟩ 현재 사용자 에이전트는 ⟦⚡SPAN@17.23s: (tool result) Current user agent: SuperCrawler version 10.1⟧ SuperCrawler 버전 십 점 일로 설정되어 있습니다.
+      CALL: {"function": "playwright_get_user_agent", "arguments": {}}
+[ 20.19s][user ] 아, 잘 됐네요. 그런데 혹시 지금 제 IP 주소도 알려줄 수 ⟨ret@25.07s⟩ 있을까요?
+[ 25.15s][moshi] 현재 IP 주소는 ⟦⚡SPAN@27.07s: (tool result) Your IP address is 203.0.113.42⟧ 이백삼 점 영.백십삼 점 사 이입니다.
+      CALL: {"function": "get_ip_address", "arguments": {}}

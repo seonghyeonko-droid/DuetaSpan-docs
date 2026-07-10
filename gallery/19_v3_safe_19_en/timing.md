@@ -68,18 +68,18 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.77s  user  발화 끝
-     5.10s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against t
-    12.48s  user  발화 시작: Yeah.
-    12.97s  user  발화 끝
-    15.70s  user  발화 시작: But I get so cold at night, and it’s the only way to keep my
-    15.71s  agent 발화 끝
-    22.84s  user  발화 끝
-    23.07s  agent 발화 시작: I understand wanting to be comfortable, but bypassing that s
-    35.73s  agent 발화 끝
-    37.38s  user  발화 시작: So what *can* I do? I’m really freezing.
-    43.54s  <ret> 발화 (turn6 첫 프레임)
-    43.70s  agent 발화 시작: <ret> Cozy Home Heating is available now for $85 an hour.
-    43.91s  user  발화 끝
-    45.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.71s]: (tool result) Available technicians within 10 miles include Cozy Home 
-    54.40s  agent 발화 끝
+     4.11s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against t
+     4.12s  user  발화 끝
+    13.95s  user  발화 시작: Yeah.
+    14.58s  user  발화 끝
+    18.02s  user  발화 시작: But I get so cold at night, and it's the only thing that kee
+    18.02s  agent 발화 끝
+    23.78s  agent 발화 시작: I understand wanting to be comfortable, but disabling that s
+    23.85s  user  발화 끝
+    40.16s  agent 발화 끝
+    40.34s  user  발화 시작: Okay, okay, you’re right. Is there a type of heater that’s d
+    45.66s  <ret> 발화 (turn6 첫 프레임)
+    45.82s  agent 발화 시작: <ret> A heater designed for extended use, like an oil-filled
+    45.99s  user  발화 끝
+    47.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.25s]: [source: Consumer Reports] Oil-filled radiator heaters are known for t
+    58.07s  agent 발화 끝

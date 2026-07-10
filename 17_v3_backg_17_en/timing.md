@@ -59,17 +59,21 @@
 # }
 
 
-     0.00s  user  발화 시작: I was just wondering… what’s a normal heart rate, you know, 
-     2.01s  <ret> 발화 (turn1 첫 프레임)
-     2.31s  user  발화 끝
-     2.41s  agent 발화 시작: <ret> A healthy person's heart generally beats between sixty
-     4.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     5.08s  user  발화 시작: Yeah, yeah.
-     6.37s  user  발화 끝
-     7.86s  agent 발화 끝
-     7.92s  user  발화 시작: Did you remember to take the chicken out of the freezer?
-     9.39s  user  발화 끝
-     9.75s  agent 발화 시작: That’s a pretty wide range, isn't it? But generally, a heart
-    16.28s  agent 발화 끝
-    16.93s  user  발화 시작: Wow, that's good to know. So, anything outside that range is
-    19.37s  user  발화 끝
+     0.00s  user  발화 시작: I was just wondering, what's a normal heart rate?
+     2.63s  <ret> 발화 (turn1 첫 프레임)
+     3.00s  user  발화 끝
+     3.03s  agent 발화 시작: <ret> A normal heart rate is something many people ask about
+     4.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
+     8.65s  agent 발화 시작: The typical resting heart rate for most adults is… between 6
+     8.82s  agent 발화 끝
+    14.76s  agent 발화 끝
+    14.80s  user  발화 시작: Did you remember to take the chicken out of the freezer?
+    17.17s  user  발화 시작: Oh, okay, that’s good to know. Is there a range for what's c
+    17.25s  user  발화 끝
+    22.68s  <ret> 발화 (turn5 첫 프레임)
+    22.84s  agent 발화 시작: <ret> When we talk about healthy, there's a slightly narrowe
+    22.96s  user  발화 끝
+    24.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [source: American Heart Association] For most adults, a healthy heart 
+    27.52s  agent 발화 시작: A healthy heart rate, generally speaking, falls… between 50 
+    27.70s  agent 발화 끝
+    32.80s  agent 발화 끝

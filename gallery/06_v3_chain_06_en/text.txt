@@ -65,43 +65,43 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Could you set the user agent to MyCustomBrowser version ten point five?
-[  4.92s][moshi] ⟨ret@4.84s⟩ Okay, I’ve set the user ⟦⚡SPAN@6.84s: (tool result) User agent set to MyCustomBrowser version 10.5.⟧ agent to MyCustomBrowser version 10.5 for you.
+[  5.13s][moshi] ⟨ret@5.06s⟩ Okay, I’ve set the ⟦⚡SPAN@7.06s: (tool result) User agent set to MyCustomBrowser version 10.5⟧ user agent to MyCustomBrowser version 10.5 for you.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "MyCustomBrowser version 10.5"}}
-[ 10.20s][user ] Now, can you go to apple.com and tell me what the latest iPhone 15 ⟨ret@12.23s⟩ Pro specs are?
-[ 12.39s][moshi] I’ve navigated to the ⟦⚡SPAN@13.43s: (tool result) Navigated to https://www.apple.com/iphone-15-pro/.⟧ iPhone 15 Pro page on Apple’s website.
-      CALL: {"function": "navigate", "arguments": {"url": "https://www.apple.com/iphone-15-pro/"}}
-[ 13.16s][user ] «backchannel» Really?
-[ 14.87s][user ] Great. What’s the starting storage capacity?
-[ 18.02s][moshi] ⟨ret@17.95s⟩ The iPhone 15 Pro starts with 256GB ⟦⚡SPAN@18.51s: (tool result) The iPhone 15 Pro starts with 256GB of storage.⟧ of storage.
-      CALL: {"function": "web_query", "arguments": {"url": "https://www.apple.com/iphone-15-pro/", "query": "starting storage capacity"}}
-[ 18.29s][user ] «backchannel» Yeah.
-[ 18.89s][user ] And what about the camera—how many megapixels is the ⟨ret@21.99s⟩ main camera?
-[ 22.39s][moshi] ⟦⚡SPAN@22.39s: (tool result) The main camera has 48 megapixels.⟧ The main camera on the iPhone 15 Pro has 48 megapixels.
-      CALL: {"function": "web_query", "arguments": {"url": "https://www.apple.com/iphone-15-pro/", "query": "main camera megapixels"}}
-[ 23.16s][user ] Hmm, okay. Could you search for cases for the iPhone 15 Pro on Amazon?
-[ 25.65s][moshi] ⟨ret@25.57s⟩ I’m searching Amazon ⟦⚡SPAN@27.41s: (tool result) Searching Amazon for iPhone 15 Pro case.⟧ for iPhone 15 Pro cases now.
-      CALL: {"function": "search", "arguments": {"query": "iPhone 15 Pro case Amazon"}}
-[ 29.75s][user ] What’s the price of the most popular ⟨ret@31.84s⟩ one?
-[ 32.24s][moshi] The most popular iPhone 15 ⟦⚡SPAN@33.52s: (tool result) The most popular case is priced at $24.99.⟧ Pro case on Amazon is currently priced at $24.99.
-      CALL: {"function": "web_query", "arguments": {"url": "https://www.amazon.com/s?k=iPhone+15+Pro+case", "query": "most popular case price"}}
-[ 34.39s][user ] «backchannel» Really?
-[ 35.43s][user ] That sounds reasonable. Add it to my cart.
-[ 41.53s][moshi] ⟨ret@41.45s⟩ I’ve added the iPhone 15 Pro case ⟦⚡SPAN@41.95s: (tool result) iPhone 15 Pro case added to your Amazon cart.⟧ to your Amazon cart.
-      CALL: {"function": "add_to_cart", "arguments": {"item": "iPhone 15 Pro case", "price": "24.99", "source": "Amazon"}}
-[ 42.18s][user ] Good. Now, remind me to check out tomorrow at 2 PM.
-[ 48.05s][moshi] ⟨ret@47.98s⟩ I've set a reminder ⟦⚡SPAN@49.98s: (tool result) Reminder set for tomorrow at 2:00 PM to check out Amazon cart.⟧ for you to check out your Amazon cart tomorrow at 2:00 PM.
-      CALL: {"function": "set_reminder", "arguments": {"time": "2:00 PM tomorrow", "task": "check out Amazon cart"}}
-[ 54.34s][user ] Perfect. What’s my Amazon Prime shipping speed ⟨ret@57.59s⟩ usually?
-[ 57.99s][moshi] Your ⟦⚡SPAN@59.59s: (tool result) Your usual Amazon Prime shipping speed is two days.⟧ typical Amazon Prime shipping speed is two days.
-      CALL: {"function": "get_shipping_speed", "arguments": {"account": "Amazon Prime"}}
-[ 66.05s][user ] Okay, good to know. And can you find me a highly-rated portable charger ⟨ret@68.49s⟩ for travel?
-[ 68.80s][moshi] I’m searching ⟦⚡SPAN@70.49s: (tool result) Searching for highly rated portable chargers for travel.⟧ for highly-rated portable chargers for travel right now.
-      CALL: {"function": "search", "arguments": {"query": "highly rated portable charger travel"}}
-[ 75.20s][user ] What's the highest capacity one under ⟨ret@78.23s⟩ $50?
-[ 78.55s][moshi] The highest capacity portable charger ⟦⚡SPAN@80.15s: (tool result) The highest capacity charger under $50 is 20000mAh.⟧ for travel under $50 is 20000mAh.
-      CALL: {"function": "web_query", "arguments": {"url": "https://www.amazon.com/s?k=portable+charger+travel", "query": "highest capacity under $50"}}
-[ 82.03s][user ] Add that to my Amazon cart as ⟨ret@85.04s⟩ well.
-[ 85.36s][moshi] I’ve added the ⟦⚡SPAN@87.04s: (tool result) 20000mAh portable charger added to your Amazon cart.⟧ 20000mAh portable charger to your Amazon cart.
-      CALL: {"function": "add_to_cart", "arguments": {"item": "20000mAh portable charger", "price": "under $50", "source": "Amazon"}}
-[ 89.55s][user ] Excellent. That’s all for now.
-[ 90.63s][moshi] [happy] Wonderful! You’re all set, and your cart is ready to go.
+[ 10.62s][user ] Great. Now, can you go to ⟨ret@13.74s⟩ apple.com?
+[ 13.89s][moshi] I’ve navigated ⟦⚡SPAN@15.26s: (tool result) Navigated to https://www.apple.com⟧ to apple.com as requested.
+      CALL: {"function": "playwright_goto", "arguments": {"url": "https://www.apple.com"}}
+[ 15.59s][user ] «backchannel» Yeah.
+[ 17.03s][user ] Hmm, I’m looking for the iPhone 15 Pro specs. Can you find that page for me?
+[ 23.63s][moshi] ⟨ret@23.56s⟩ I found ⟦⚡SPAN@25.56s: (tool result) Found: https://www.apple.com/iphone-15-pro/specs⟧ the iPhone 15 Pro specs page at apple.com/iphone-15-pro/specs/.
+      CALL: {"function": "playwright_search", "arguments": {"query": "iPhone 15 Pro specs", "site": "https://www.apple.com"}}
+[ 26.71s][user ] «backchannel» Really?
+[ 29.98s][user ] Could you read me the ⟨ret@31.87s⟩ storage options?
+[ 32.26s][moshi] ⟦⚡SPAN@33.07s: (tool result) 128GB, 256GB, 512GB, 1TB⟧ The iPhone 15 Pro is available with 128GB, 256GB, 512GB, and 1TB of storage.
+      CALL: {"function": "playwright_extract", "arguments": {"url": "https://www.apple.com/iphone-15-pro/specs/", "selector": ".storage-options"}}
+[ 42.55s][user ] And how much does the 256GB model cost?
+[ 46.67s][moshi] ⟨ret@46.45s⟩ The 256GB ⟦⚡SPAN@48.45s: (tool result) $999⟧ iPhone 15 Pro costs $999.
+      CALL: {"function": "playwright_extract", "arguments": {"url": "https://www.apple.com/iphone-15-pro/specs/", "selector": ".price-256gb"}}
+[ 51.66s][user ] Okay, I think I'll order one. Can you add it to my ⟨ret@55.19s⟩ cart?
+[ 55.55s][moshi] ⟦⚡SPAN@55.69s: (tool result) Item added to cart.⟧ I’ve added the 256GB iPhone 15 Pro to your shopping cart.
+      CALL: {"function": "playwright_add_to_cart", "arguments": {"url": "https://www.apple.com/iphone-15-pro/specs/", "variant": "256GB"}}
+[ 60.82s][user ] Perfect. What’s in my cart now?
+[ 63.38s][moshi] ⟨ret@63.31s⟩ Your cart currently ⟦⚡SPAN@65.31s: (tool result) iPhone 15 Pro (256GB) - $999⟧ contains one iPhone 15 Pro with 256GB of storage, totaling $999.
+      CALL: {"function": "playwright_view_cart", "arguments": {}}
+[ 68.72s][user ] «backchannel» Really?
+[ 70.73s][user ] Alright, let's proceed to ⟨ret@72.87s⟩ checkout.
+[ 73.26s][moshi] I’ve ⟦⚡SPAN@73.99s: (tool result) Navigated to checkout page.⟧ navigated you to the checkout page.
+      CALL: {"function": "playwright_goto", "arguments": {"url": "https://www.apple.com/shop/checkout"}}
+[ 76.17s][user ] Could you fill in my shipping address? It’s 123 Main Street, Anytown, CA ⟨ret@83.20s⟩ 91234.
+[ 83.51s][moshi] I’ve filled in ⟦⚡SPAN@85.20s: (tool result) Shipping address filled.⟧ your shipping address as 123 Main Street, Anytown, California, 91234.
+      CALL: {"function": "playwright_fill_form", "arguments": {"selector": ".shipping-address", "data": {"street": "123 Main Street", "city": "Anytown", "state": "CA", "zip": "91234"}}}
+[ 91.08s][user ] And use my saved payment ⟨ret@93.18s⟩ method.
+[ 93.47s][moshi] I’ve selected your ⟦⚡SPAN@94.62s: (tool result) Saved payment method selected.⟧ saved payment method for this purchase.
+      CALL: {"function": "playwright_select_payment", "arguments": {"method": "saved_card"}}
+[ 96.50s][user ] Now, place the ⟨ret@97.58s⟩ order.
+[ 97.87s][moshi] Your order has ⟦⚡SPAN@99.58s: (tool result) Order placed. Confirmation number: ABC-12345.⟧ been placed, and your confirmation number is ABC-12345.
+      CALL: {"function": "playwright_place_order", "arguments": {}}
+[103.60s][user ] Fantastic. Thank you!
+[105.47s][moshi] You’re very welcome. I’m glad I could help with your purchase today.
+[109.40s][user ] One more thing - remind me to check the shipping status tomorrow at ⟨ret@113.79s⟩ 2 PM.
+[114.08s][moshi] I’ve set a reminder for you ⟦⚡SPAN@115.79s: (tool result) Reminder set for tomorrow at 2:00 PM.⟧ to check the shipping status tomorrow at 2 PM.
+      CALL: {"function": "playwright_set_reminder", "arguments": {"time": "14:00", "message": "Check iPhone 15 Pro shipping status"}}

@@ -69,29 +69,33 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to get my day together, and I was thinking about checking the weather. It feels like it’s been raining forever.
-[  3.64s][moshi] It’s understandable to feel that way when the weather is consistently gloomy; let’s see what’s ahead for you.
-[ 12.83s][user ] Yeah, that’d be great. I need to know if I should bring an umbrella to my meeting ⟨ret@19.10s⟩ later.
-[ 19.34s][moshi] I’m now watching weather.example.com ⟦⚡SPAN@21.10s: (tool result) Watching for weather updates from weather.example.com⟧ for any updates, and will let you know if there are changes.
-[ 22.26s][user ] «backchannel» Uh-huh.
-[ 25.47s][user ] Okay, cool.
-[ 26.33s][moshi] Staying on top of the weather is a good way to prepare for your day, and it sounds like you have an important meeting coming up.
-[ 28.68s][user ] «backchannel» Mhm.
-[ 31.70s][moshi] I can also set a reminder for you, if you’d like, to ensure you don’t forget your umbrella.
-[ 33.56s][user ] «backchannel» Yeah.
-[ 35.29s][user ] Actually, could you check the current conditions in ⟨ret@41.02s⟩ Seattle?
-[ 41.42s][moshi] The current ⟦⚡SPAN@43.02s: (tool result) Current conditions in Seattle: 52°F, cloudy.⟧ conditions in Seattle are 52 degrees Fahrenheit and cloudy.
-[ 44.71s][user ] «backchannel» Oh.
-[ 48.18s][user ] Hmm, okay. Not too bad. Can you set a reminder…
-[ 55.38s][user ] …for me to leave for my meeting at 2:00 PM?
-[ 60.15s][moshi] ⟨ret@60.07s⟩ A reminder is set for 2:00 PM to leave for ⟦⚡SPAN@60.56s: (tool result) Reminder set for 2:00 PM: Leave for meeting.⟧ your meeting.
-      CALL: {"function": "set_reminder", "arguments": {"time": "2:00 PM", "task": "Leave for meeting"}}
-[ 60.71s][user ] Perfect. Thanks. Oh, I wonder what the latest iPhone looks like.
-[ 63.38s][moshi] It's good to be prepared; a little curiosity about technology is also perfectly fine.
-[ 66.30s][user ] «backchannel» Right.
-[ 68.91s][user ] Could you pull up the specs for the iPhone 15 ⟨ret@74.92s⟩ Pro?
-[ 75.00s][moshi] I’ve opened the iPhone 15 Pro specs page ⟦⚡SPAN@75.42s: (tool result) Opening iPhone 15 Pro specs page on example.com⟧ on example.com for you.
-      CALL: {"function": "open_url", "arguments": {"url": "https://www.example.com/iphone15prospecs"}}
-[ 75.12s][user ] «backchannel» Oh.
-[ 77.78s][user ] Great, thanks! I think I'm all set for now.
-[ 80.83s][moshi] [happy] I’m glad I could help you organize your day and get the information you needed. Enjoy your meeting!
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@4.12s⟩ com.
+[  4.36s][moshi] I’ll monitor weather dot example dot ⟦⚡SPAN@6.12s: (tool result) monitoring weather.example.com⟧ com for any changes and let you know when an update is available.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com", "event": "update"}}
+[  9.40s][moshi] I am now actively monitoring weather dot example dot com for updates, and will inform you immediately.
+[ 16.86s][user ] That sounds good.
+[ 18.13s][moshi] Excellent.
+[ 18.34s][user ] «backchannel» Mhm.
+[ 18.68s][moshi] I'm happy to help manage your daily routines and keep you informed, as we discussed.
+[ 20.86s][user ] «backchannel» Uh-huh.
+[ 23.54s][user ] Can you find me a good Italian ⟨ret@26.10s⟩ restaurant nearby?
+[ 26.50s][moshi] There’s Bella Notte at ⟦⚡SPAN@28.10s: (tool result) Bella Notte, 123 Main Street, 4.5 stars⟧ 123 Main Street, with a 4.5-star rating, which appears to be a highly-rated option.
+      CALL: {"function": "find_restaurant", "arguments": {"cuisine": "Italian", "location": "current"}}
+[ 29.26s][user ] «backchannel» Wow.
+[ 33.08s][user ] That’s great. Book a table for two at 7:30 PM tonight.
+[ 37.07s][moshi] ⟨ret@36.99s⟩ Your reservation ⟦⚡SPAN@38.27s: (tool result) Reservation confirmed, Bella Notte, tonight at 7:30 PM for 2. Confirmation #BN1234⟧ at Bella Notte for two people tonight at 7:30 PM is confirmed, with confirmation number BN1234.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant": "Bella Notte", "date": "tonight", "time": "7:30 PM", "party_size": 2}}
+[ 42.65s][user ] «backchannel» Wow.
+[ 44.59s][user ] Perfect.
+[ 45.41s][moshi] Wonderful. I’m glad I could assist with that booking for you.
+[ 47.51s][user ] «backchannel» Right.
+[ 49.10s][user ] I need to send a reminder to pay my phone bill tomorrow.
+[ 52.34s][moshi] ⟨ret@52.26s⟩ A reminder to pay your phone bill ⟦⚡SPAN@54.26s: (tool result) Reminder set for tomorrow at 9:00 AM: Pay phone bill⟧ has been set for tomorrow at 9:00 AM.
+      CALL: {"function": "set_reminder", "arguments": {"date": "tomorrow", "time": "9:00 AM", "message": "Pay phone bill"}}
+[ 53.89s][user ] «backchannel» Oh.
+[ 57.35s][user ] Thank you.
+[ 57.91s][moshi] You’re very welcome. It’s my pleasure to help streamline your tasks.
+[ 58.93s][user ] «backchannel» Mhm.
+[ 63.80s][user ] Actually, what's the weather forecast for tomorrow?
+[ 66.75s][moshi] ⟨ret@66.67s⟩ The forecast for tomorrow is sunny, ⟦⚡SPAN@68.67s: (tool result) Tomorrow: Sunny, high 75, low 60.⟧ with a high of 75 degrees and a low of 60.
+      CALL: {"function": "get_weather", "arguments": {"date": "tomorrow", "location": "current"}}

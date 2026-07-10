@@ -63,87 +63,87 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Hmm, okay. Could you search for ca | S3 Good. Now, remind me to check out  | S4 What's the highest capacity one un
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 And how much does the 256GB model  | S3 Alright, let's proceed to checkout | S4 Now, place the order.
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     4.84s  <ret> 발화 (turn1 첫 프레임)
-     4.92s  agent 발화 시작: <ret> Okay, I’ve set the user agent to MyCustomBrowser versi
-     5.00s  user  발화 끝
-     6.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: (tool result) User agent set to MyCustomBrowser version 10.5.
-     9.45s  agent 발화 끝
-    10.20s  user  발화 시작: Now, can you go to apple.com and tell me what the latest iPh
-    12.23s  <ret> 발화 (turn3 첫 프레임)
-    12.39s  agent 발화 시작: <ret> I’ve navigated to the iPhone 15 Pro page on Apple’s we
-    12.60s  user  발화 끝
-    13.16s  user  발화 시작: Really?
-    13.43s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.45s]: (tool result) Navigated to https://www.apple.com/iphone-15-pro/.
-    14.84s  agent 발화 끝
-    14.87s  user  발화 시작: Great. What’s the starting storage capacity?
-    17.65s  user  발화 끝
-    17.95s  <ret> 발화 (turn6 첫 프레임)
-    18.02s  agent 발화 시작: <ret> The iPhone 15 Pro starts with 256GB of storage.
-    18.11s  user  발화 끝
-    18.29s  user  발화 시작: Yeah.
-    18.51s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.59s]: (tool result) The iPhone 15 Pro starts with 256GB of storage.
-    18.61s  agent 발화 끝
-    18.89s  user  발화 시작: And what about the camera—how many megapixels is the main ca
-    20.27s  user  발화 끝
-    21.99s  <ret> 발화 (turn9 첫 프레임)
-    22.39s  ⚡SPAN 주입 [d'=0.39s / d_lead=0.39s]: (tool result) The main camera has 48 megapixels.
-    22.39s  agent 발화 시작: <ret> The main camera on the iPhone 15 Pro has 48 megapixels
-    22.60s  user  발화 끝
-    22.79s  agent 발화 끝
-    23.16s  user  발화 시작: Hmm, okay. Could you search for cases for the iPhone 15 Pro 
-    25.57s  <ret> 발화 (turn11 첫 프레임)
-    25.60s  user  발화 끝
-    25.65s  agent 발화 시작: <ret> I’m searching Amazon for iPhone 15 Pro cases now.
-    27.41s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.17s]: (tool result) Searching Amazon for iPhone 15 Pro case.
-    29.75s  user  발화 시작: What’s the price of the most popular one?
-    29.82s  agent 발화 끝
-    31.84s  <ret> 발화 (turn13 첫 프레임)
-    32.05s  user  발화 끝
-    32.24s  agent 발화 시작: <ret> The most popular iPhone 15 Pro case on Amazon is curre
-    33.52s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.15s]: (tool result) The most popular case is priced at $24.99.
-    34.39s  user  발화 시작: Really?
-    35.38s  agent 발화 끝
-    35.43s  user  발화 시작: That sounds reasonable. Add it to my cart.
-    40.83s  user  발화 끝
-    41.45s  <ret> 발화 (turn16 첫 프레임)
-    41.53s  agent 발화 시작: <ret> I’ve added the iPhone 15 Pro case to your Amazon cart.
-    41.55s  user  발화 끝
-    41.95s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.63s]: (tool result) iPhone 15 Pro case added to your Amazon cart.
-    42.16s  agent 발화 끝
-    42.18s  user  발화 시작: Good. Now, remind me to check out tomorrow at 2 PM.
-    47.97s  user  발화 끝
-    47.98s  <ret> 발화 (turn18 첫 프레임)
-    48.05s  agent 발화 시작: <ret> I've set a reminder for you to check out your Amazon c
-    49.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) Reminder set for tomorrow at 2:00 PM to check out Amazon
-    54.17s  agent 발화 끝
-    54.34s  user  발화 시작: Perfect. What’s my Amazon Prime shipping speed usually?
-    57.59s  <ret> 발화 (turn20 첫 프레임)
-    57.99s  agent 발화 시작: <ret> Your typical Amazon Prime shipping speed is two days.
-    58.04s  user  발화 끝
-    59.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Your usual Amazon Prime shipping speed is two days.
-    65.08s  agent 발화 끝
-    66.05s  user  발화 시작: Okay, good to know. And can you find me a highly-rated porta
-    68.49s  <ret> 발화 (turn22 첫 프레임)
-    68.80s  agent 발화 시작: <ret> I’m searching for highly-rated portable chargers for t
-    68.96s  user  발화 끝
-    70.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) Searching for highly rated portable chargers for travel.
-    75.20s  user  발화 시작: What's the highest capacity one under $50?
-    75.33s  agent 발화 끝
-    78.23s  <ret> 발화 (turn24 첫 프레임)
-    78.55s  agent 발화 시작: <ret> The highest capacity portable charger for travel under
-    78.67s  user  발화 끝
-    80.15s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.47s]: (tool result) The highest capacity charger under $50 is 20000mAh.
-    82.01s  agent 발화 끝
-    82.03s  user  발화 시작: Add that to my Amazon cart as well.
-    85.04s  <ret> 발화 (turn26 첫 프레임)
-    85.26s  user  발화 끝
-    85.36s  agent 발화 시작: <ret> I’ve added the 20000mAh portable charger to your Amazo
-    87.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) 20000mAh portable charger added to your Amazon cart.
-    89.53s  agent 발화 끝
-    89.55s  user  발화 시작: Excellent. That’s all for now.
-    90.63s  agent 발화 시작: [happy] Wonderful! You’re all set, and your cart is ready to
-    90.69s  user  발화 끝
-    93.08s  agent 발화 끝
+     5.06s  <ret> 발화 (turn1 첫 프레임)
+     5.13s  agent 발화 시작: <ret> Okay, I’ve set the user agent to MyCustomBrowser versi
+     5.23s  user  발화 끝
+     7.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) User agent set to MyCustomBrowser version 10.5
+     9.81s  agent 발화 끝
+    10.62s  user  발화 시작: Great. Now, can you go to apple.com?
+    13.74s  <ret> 발화 (turn3 첫 프레임)
+    13.89s  agent 발화 시작: <ret> I’ve navigated to apple.com as requested.
+    14.04s  user  발화 끝
+    15.26s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.00s]: (tool result) Navigated to https://www.apple.com
+    15.59s  user  발화 시작: Yeah.
+    16.17s  user  발화 끝
+    16.89s  agent 발화 끝
+    17.03s  user  발화 시작: Hmm, I’m looking for the iPhone 15 Pro specs. Can you find t
+    23.56s  <ret> 발화 (turn6 첫 프레임)
+    23.63s  agent 발화 시작: <ret> I found the iPhone 15 Pro specs page at apple.com/ipho
+    23.75s  user  발화 끝
+    25.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Found: https://www.apple.com/iphone-15-pro/specs
+    26.71s  user  발화 시작: Really?
+    27.49s  user  발화 끝
+    29.88s  agent 발화 끝
+    29.98s  user  발화 시작: Could you read me the storage options?
+    31.87s  <ret> 발화 (turn9 첫 프레임)
+    32.26s  agent 발화 시작: <ret> The iPhone 15 Pro is available with 128GB, 256GB, 512G
+    32.43s  user  발화 끝
+    33.07s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.11s]: (tool result) 128GB, 256GB, 512GB, 1TB
+    42.37s  agent 발화 끝
+    42.55s  user  발화 시작: And how much does the 256GB model cost?
+    46.45s  <ret> 발화 (turn11 첫 프레임)
+    46.61s  user  발화 끝
+    46.67s  agent 발화 시작: <ret> The 256GB iPhone 15 Pro costs $999.
+    48.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) $999
+    51.58s  agent 발화 끝
+    51.66s  user  발화 시작: Okay, I think I'll order one. Can you add it to my cart?
+    55.19s  <ret> 발화 (turn13 첫 프레임)
+    55.54s  user  발화 끝
+    55.55s  agent 발화 시작: <ret> I’ve added the 256GB iPhone 15 Pro to your shopping ca
+    55.69s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.33s]: (tool result) Item added to cart.
+    60.82s  user  발화 시작: Perfect. What’s in my cart now?
+    60.88s  agent 발화 끝
+    63.31s  <ret> 발화 (turn15 첫 프레임)
+    63.35s  user  발화 끝
+    63.38s  agent 발화 시작: <ret> Your cart currently contains one iPhone 15 Pro with 25
+    65.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: (tool result) iPhone 15 Pro (256GB) - $999
+    68.72s  user  발화 시작: Really?
+    69.49s  user  발화 끝
+    70.73s  user  발화 시작: Alright, let's proceed to checkout.
+    70.94s  agent 발화 끝
+    72.87s  <ret> 발화 (turn18 첫 프레임)
+    73.26s  agent 발화 시작: <ret> I’ve navigated you to the checkout page.
+    73.27s  user  발화 끝
+    73.99s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.58s]: (tool result) Navigated to checkout page.
+    75.83s  agent 발화 끝
+    76.17s  user  발화 시작: Could you fill in my shipping address? It’s 123 Main Street,
+    83.20s  <ret> 발화 (turn20 첫 프레임)
+    83.51s  agent 발화 시작: <ret> I’ve filled in your shipping address as 123 Main Stree
+    83.68s  user  발화 끝
+    85.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Shipping address filled.
+    90.19s  agent 발화 끝
+    91.08s  user  발화 시작: And use my saved payment method.
+    93.18s  <ret> 발화 (turn22 첫 프레임)
+    93.47s  agent 발화 시작: <ret> I’ve selected your saved payment method for this purch
+    93.61s  user  발화 끝
+    94.62s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.14s]: (tool result) Saved payment method selected.
+    96.50s  user  발화 시작: Now, place the order.
+    96.62s  agent 발화 끝
+    97.58s  <ret> 발화 (turn24 첫 프레임)
+    97.87s  agent 발화 시작: <ret> Your order has been placed, and your confirmation numb
+    97.97s  user  발화 끝
+    99.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Order placed. Confirmation number: ABC-12345.
+   103.60s  user  발화 시작: Fantastic. Thank you!
+   103.66s  agent 발화 끝
+   105.44s  user  발화 끝
+   105.47s  agent 발화 시작: You’re very welcome. I’m glad I could help with your purchas
+   109.31s  agent 발화 끝
+   109.40s  user  발화 시작: One more thing - remind me to check the shipping status tomo
+   113.79s  <ret> 발화 (turn28 첫 프레임)
+   114.08s  agent 발화 시작: <ret> I’ve set a reminder for you to check the shipping stat
+   114.30s  user  발화 끝
+   115.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Reminder set for tomorrow at 2:00 PM.
+   117.92s  agent 발화 끝
