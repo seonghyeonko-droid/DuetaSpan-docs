@@ -63,29 +63,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, or actually, make that versio | S3 That’s better. Now, can you check  | S4 Okay, good. Thanks.
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Okay, good. And can you now check  | S3 Hmm, that seems… unusual. Is that  | S4 I think something’s wrong. Can you
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     5.26s  <ret> 발화 (turn1 첫 프레임)
-     5.56s  user  발화 끝
-     5.58s  agent 발화 시작: <ret> I’ve set the user agent to SuperCrawler version ten po
-     6.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.46s]: (tool result) User agent set to SuperCrawler version 10.1.
-     8.02s  user  발화 시작: Mhm.
-     8.52s  user  발화 끝
-    10.83s  user  발화 시작: Hmm, or actually, make that version ten point two.
-    11.04s  agent 발화 끝
-    15.28s  <ret> 발화 (turn4 첫 프레임)
-    15.52s  agent 발화 시작: <ret> [happy] Of course. The user agent is now SuperCrawler 
-    15.64s  user  발화 끝
-    17.04s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.76s]: (tool result) User agent set to SuperCrawler version 10.2.
-    24.28s  agent 발화 끝
-    24.29s  user  발화 시작: That’s better. Now, can you check what the current IP addres
-    28.66s  <ret> 발화 (turn6 첫 프레임)
-    28.74s  agent 발화 시작: <ret> It appears your current IP address is two zero three d
-    28.78s  user  발화 끝
-    29.86s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.14s]: (tool result) 203.0.113.42
-    35.88s  agent 발화 끝
-    36.52s  user  발화 시작: Okay, good. Thanks.
-    37.77s  agent 발화 시작: You’re very welcome. It sounds like you’re preparing for som
-    37.90s  user  발화 끝
-    42.95s  agent 발화 끝
+     4.33s  <ret> 발화 (turn1 첫 프레임)
+     4.65s  agent 발화 시작: <ret> The user agent is now set to SuperCrawler version ten 
+     4.67s  user  발화 끝
+     5.29s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.86s]: (tool result) User agent set to SuperCrawler version 10.1.
+     6.78s  user  발화 시작: Mhm.
+     7.28s  user  발화 끝
+     9.27s  user  발화 시작: Okay, good. And can you now check what the current IP addres
+     9.51s  agent 발화 끝
+    13.55s  <ret> 발화 (turn4 첫 프레임)
+    13.79s  agent 발화 시작: <ret> Your current IP address is two zero three dot zero dot
+    13.94s  user  발화 끝
+    14.91s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.46s]: (tool result) 203.0.113.42
+    19.21s  user  발화 시작: Hmm, that seems… unusual. Is that definitely my IP?
+    19.26s  agent 발화 끝
+    24.86s  user  발화 끝
+    25.00s  agent 발화 시작: It’s understandable to question a result that feels off. Som
+    31.58s  agent 발화 끝
+    32.18s  user  발화 시작: I think something’s wrong. Can you try a different IP lookup
+    37.33s  <ret> 발화 (turn8 첫 프레임)
+    37.40s  agent 발화 시작: <ret> The alternative service shows your IP address is one n
+    37.59s  user  발화 끝
+    38.37s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.88s]: (tool result) 198.51.100.17
+    43.27s  agent 발화 끝

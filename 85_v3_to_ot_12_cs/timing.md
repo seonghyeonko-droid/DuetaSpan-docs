@@ -58,25 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 방금 Beat It 듣고 있었는데, 기타 솔로가 진짜 대 | S2 회계팀에 이미 보냈어요? | S3 아, 죄송해요. 잠깐만요, 어디까지 얘기했었죠? 아 맞다, 에 | S4 아쉽네요. 같이 작업한 곡이 더 있었으면 좋았을 텐데. 감사합
+# EXAMINER(FDB-v2) 단계: S1 혹시, 마이클 잭슨의 Beat It 듣다가 문득 궁금해졌는데, | S2 와, 에디 반 헤일런이요? 정말 대단하네요. 몰랐어요! | S3 저기, 혹시 쓰레기 버리셨어요? | S4 죄송해요. 그런데, 혹시 특별히 부탁을 받아서 연주한 건가요,
 
-     0.00s  user  발화 시작: 아, 방금 Beat It 듣고 있었는데, 기타 솔로가 진짜 대단하더라고요. 그 기타 솔로 누가 연주했는지 아
-     6.99s  <ret> 발화 (turn1 첫 프레임)
-     7.09s  user  발화 끝
-     7.31s  agent 발화 시작: <ret> 네, 마이클 잭슨의 “Beat It” 기타 솔로는 에디 반 헤일런이 연주했답니다. 정말 상징적인 
-     8.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-    10.02s  user  발화 시작: 예.
-    10.52s  user  발화 끝
-    14.18s  user  발화 시작: 와, 몰랐어요! 정말 대단하시네요. 저기, Mark 씨, 그 보고서 다 끝내셨어요?
-    14.21s  agent 발화 끝
-    21.03s  user  발화 시작: 회계팀에 이미 보냈어요?
-    21.14s  user  발화 끝
-    22.59s  user  발화 시작: 아, 죄송해요. 잠깐만요, 어디까지 얘기했었죠? 아 맞다, 에디 반 헤일런. 마이클 잭슨이랑 다른 작업도 했
-    22.64s  user  발화 끝
-    28.63s  <ret> 발화 (turn6 첫 프레임)
-    29.03s  agent 발화 시작: <ret> “Beat It” 말고는 에디 반 헤일런이 마이클 잭슨과 다른 녹음 작업에 협업한 적은 없답니다.
-    29.21s  user  발화 끝
-    30.31s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.39s]: [source: Rolling Stone] Van Halen did not collaborate with Michael Jac
-    37.42s  agent 발화 끝
-    37.62s  user  발화 시작: 아쉽네요. 같이 작업한 곡이 더 있었으면 좋았을 텐데. 감사합니다, Jal.
-    42.71s  user  발화 끝
+     0.00s  user  발화 시작: 혹시, 마이클 잭슨의 Beat It 듣다가 문득 궁금해졌는데, 그 멋진 기타 솔로를 누가 연주했는지 알 수 
+     7.67s  <ret> 발화 (turn1 첫 프레임)
+     7.74s  user  발화 끝
+     7.98s  agent 발화 시작: <ret> 정말 유명한 솔로라서, 많은 분들이 그 기원을 궁금해하시더라고요.
+     9.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+    13.28s  agent 발화 시작: 마이클 잭슨의 “Beat It” 기타 솔로는… 에디 반 헤일런이 연주했어요. 곡을 훨씬 더 돋보이게 만들었죠
+    13.45s  agent 발화 끝
+    16.06s  user  발화 시작: 네.
+    16.42s  user  발화 끝
+    20.51s  agent 발화 끝
+    21.74s  user  발화 시작: 와, 에디 반 헤일런이요? 정말 대단하네요. 몰랐어요!
+    26.39s  user  발화 시작: 저기, 혹시 쓰레기 버리셨어요?
+    26.42s  user  발화 끝
+    28.75s  user  발화 시작: 죄송해요. 그런데, 혹시 특별히 부탁을 받아서 연주한 건가요, 아니면 그냥 자발적으로 참여한 건가요?
+    28.88s  user  발화 끝
+    35.99s  agent 발화 시작: 에디 반 헤일런에게 직접 부탁을 드렸대요. 그 당시 그의 인기가 얼마나 높았는지 알 수 있는 부분이죠. 팝 
+    36.16s  user  발화 끝
+    46.19s  agent 발화 끝

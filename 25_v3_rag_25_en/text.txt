@@ -64,45 +64,46 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering… did Jack Sock and Raffaella Reggi play the same sport? It feels like a silly ⟨ret@7.78s⟩ question.
-[  7.94s][moshi] Both Jack Sock and ⟦⚡SPAN@9.78s: [source: Wikipedia] Jack Sock is an American professional tennis player, while Raffaella Reggi is a retired It⟧ Raffaella Reggi were professional tennis players.
-[  9.28s][user ] «backchannel» Yeah.
-[ 12.24s][user ] Tennis, huh? Okay. But they played at different times, didn’t they? I feel like I remember Reggi from a long time ago.
-[ 19.56s][moshi] ⟨ret@19.40s⟩ Raffaella Reggi ⟦⚡SPAN@21.40s: [source: ITF website] Raffaella Reggi competed professionally from 1989 to 2002, while Jack Sock began his pro⟧ played professionally from 1989 to 2002, and Jack Sock started in 2011.
-[ 27.24s][user ] So quite a gap there. Did Reggi ever win any major tournaments? I don’t recall her being a big ⟨ret@34.59s⟩ name.
-[ 34.91s][moshi] Raffaella Reggi won ⟦⚡SPAN@36.43s: [source: ESPN] Raffaella Reggi won six singles and thirteen doubles titles during her career, reaching a caree⟧ six singles and thirteen doubles titles, peaking at number 26 in the world.
-[ 41.87s][user ] Not bad at all! Twenty-six… that’s pretty high up. But did Sock ever reach that ⟨ret@48.00s⟩ ranking?
-[ 48.40s][moshi] Jack Sock’s ⟦⚡SPAN@50.00s: [source: ATP Tour] Jack Sock achieved a career-high ATP singles ranking of world No. 8 in November 2017.⟧ highest ranking was world number 8, in November 2017.
-[ 53.88s][user ] Wow, number eight! He was definitely more visible during his career. What about doubles for Reggi? You said she won a lot of ⟨ret@63.55s⟩ those.
-[ 63.71s][moshi] Raffaella Reggi won ⟦⚡SPAN@65.55s: [source: WTA Tour] Raffaella Reggi won the 1999 Australian Open women's doubles title with Sandra Testud.⟧ the 1999 Australian Open women’s doubles title with Sandra Testud.
-[ 70.19s][user ] The Australian Open… that's a significant win! Did Sock win a Grand Slam too? I’m trying to ⟨ret@77.42s⟩ compare.
-[ 77.83s][moshi] Jack Sock won ⟦⚡SPAN@79.42s: [source: US Open website] Jack Sock won the 2018 US Open men's doubles title with Mike Bryan.⟧ the 2018 US Open men's doubles title with Mike Bryan.
-[ 81.78s][user ] «backchannel» Wow.
-[ 83.32s][user ] So both of them have Grand Slam titles, just in different events. Interesting. Were they ever ⟨ret@90.14s⟩ opponents?
-[ 90.54s][moshi] It requires checking their ⟦⚡SPAN@92.14s: [source: tennisabstract.com] Jack Sock and Raffaella Reggi never played each other in a professional tennis ma⟧ match histories to see if their paths ever crossed.
-[ 94.60s][moshi] Jack Sock and Raffaella Reggi never competed against each other professionally.
-[ 99.23s][user ] Never played each other. That makes sense, given the timeline. What about their playing styles? Were they similar?
-[106.15s][moshi] ⟨ret@106.07s⟩ Jack Sock had an ⟦⚡SPAN@108.07s: [source: Tennis.com] Jack Sock is known for his aggressive baseline game and powerful serve, while Raffaella R⟧ aggressive baseline game, and Raffaella Reggi was a counter-puncher.
-[109.22s][user ] «backchannel» Yeah.
-[111.55s][user ] So opposites, really. Aggressive versus reactive. That explains a lot. What surface did Reggi ⟨ret@119.77s⟩ prefer?
-[120.09s][moshi] Raffaella Reggi ⟦⚡SPAN@121.53s: [source: ITF website] Raffaella Reggi achieved her best results on clay courts, particularly at the Italian Op⟧ excelled on clay courts, especially at the Italian Open.
-[125.08s][user ] Clay… that’s a slower surface, right? Good for a counter-puncher. And Sock? What surface suited him ⟨ret@132.36s⟩ best?
-[132.76s][moshi] Jack Sock was ⟦⚡SPAN@134.36s: [source: ATP Tour] Jack Sock performed strongest on hard courts, with several of his titles won on that surfac⟧ most successful on hard courts, winning multiple titles there.
-[136.07s][user ] «backchannel» Right.
-[139.25s][user ] Hard courts… makes sense with his power game. Did either of them coach after ⟨ret@145.23s⟩ retiring?
-[145.47s][moshi] It’s common for ⟦⚡SPAN@147.23s: [source: USTA.com] Jack Sock has expressed interest in coaching but has not yet taken on a full-time coaching ⟧ athletes to transition into coaching roles, sharing their experience and insights.
-[151.70s][moshi] Jack Sock has shown interest in coaching, but is not currently a full-time coach.
-[156.05s][user ] Interesting. Still considering it. What about Reggi? Is she involved in tennis ⟨ret@161.73s⟩ now?
-[162.04s][moshi] Raffaella Reggi works ⟦⚡SPAN@163.73s: [source: LastWordOnTennis.com] Raffaella Reggi is now a tennis commentator for Italian television.⟧ as a tennis commentator on Italian television.
-[166.19s][user ] A commentator! That’s a good fit. She’d have a lot of insight. Did she ever write any ⟨ret@172.93s⟩ books?
-[173.00s][moshi] Raffaella ⟦⚡SPAN@174.05s: [source: Amazon.it] Raffaella Reggi co-authored the book "Storie di tennis: voci al femminile" in 2021.⟧ Reggi co-authored "Storie di tennis: voci al femminile" in 2021.
-[175.50s][user ] «backchannel» Uh-huh.
-[179.25s][user ] A book! That’s great. So she’s still involved in the tennis world. What’s it ⟨ret@184.28s⟩ about?
-[184.68s][moshi] The book ⟦⚡SPAN@185.72s: [source: IBS.it] "Storie di tennis: voci al femminile" features interviews with female figures in Italian tenn⟧ features interviews with women involved in Italian tennis.
-[188.66s][user ] Interviews… so it’s about the broader history of women’s tennis in ⟨ret@192.72s⟩ Italy?
-[193.12s][moshi] The book ⟦⚡SPAN@194.24s: [source: Goodreads] The book explores the challenges and successes of women in Italian tennis over several dec⟧ examines the challenges and achievements of women in Italian tennis.
-[194.86s][user ] «backchannel» Yeah.
-[197.72s][user ] That sounds really valuable. It’s important to preserve those stories. So, both had pretty good careers, just in different ways.
-[206.33s][moshi] Yes, and both have found ways to remain connected to the sport they love, in their own unique ways.
-[211.53s][user ] Well, this was a surprisingly interesting dive into two players I didn’t know much about. Thanks, Zura.
-[218.43s][moshi] You're very welcome. Sometimes, exploring these connections can bring unexpected insights.
+[  0.00s][user ] So, I was reading about Jack Sock, and I realized I don't know what sport he and Raffaella Reggi both played. It feels like it's on the tip of my tongue.
+[  9.39s][moshi] It’s understandable to feel a little hazy on details sometimes, especially when thinking about athletes and their careers. Let’s see if we can bring it to the surface.
+[ 12.58s][user ] «backchannel» Yeah.
+[ 19.42s][user ] Yeah, but I really thought I knew. Was it basketball? It just doesn't quite *feel* right.
+[ 25.00s][moshi] ⟨ret@24.93s⟩ Jack Sock and Raffaella ⟦⚡SPAN@26.93s: [source: Wikipedia] Jack Sock and Raffaella Reggi both competed as professional tennis players.⟧ Reggi both had careers as… professional tennis players. It’s a common point of connection for them.
+[ 32.75s][user ] Tennis, huh? I guess that makes sense. Did they ever play *together*, or just in the same sport?
+[ 38.91s][moshi] They were both accomplished players in the same sport, but didn’t actually compete as a doubles team, as far as I know.
+[ 46.31s][user ] Okay, so just the same sport. I’m still a little unsure though. What was Reggi known for, ⟨ret@51.36s⟩ specifically?
+[ 51.68s][moshi] Raffaella Reggi ⟦⚡SPAN@53.20s: [source: ITF Tennis] Raffaella Reggi won six singles and fourteen doubles titles during her career.⟧ achieved a successful career, winning six singles and fourteen doubles titles.
+[ 58.20s][user ] Wow, fourteen doubles titles. That's a lot! Was Sock as successful in ⟨ret@63.50s⟩ doubles?
+[ 63.89s][moshi] That’s a fair comparison ⟦⚡SPAN@65.50s: [source: ATP Tour] Jack Sock reached a career-high doubles ranking of world No. 8 in 2018.⟧ to make. While Jack Sock is well-known for his singles play, he did find significant success in doubles as well.
+[ 72.39s][moshi] Jack Sock reached a career-high doubles ranking of world No. 8… in 2018.
+[ 79.92s][user ] World No. 8! That *is* good. So, both pretty successful players, then. What about their biggest ⟨ret@86.69s⟩ wins?
+[ 87.00s][moshi] Jack Sock’s ⟦⚡SPAN@88.05s: [source: ESPN] Jack Sock won the 2017 Paris Masters title, defeating Rafael Nadal in the final.⟧ biggest win came at the 2017 Paris Masters, defeating Rafael Nadal in the final.
+[ 92.09s][user ] «backchannel» Wow.
+[ 93.56s][user ] Nadal! That's huge. Reggi must have some impressive wins too, ⟨ret@97.38s⟩ right?
+[ 97.62s][moshi] Raffaella Reggi’s ⟦⚡SPAN@99.38s: [source: Tennis Abstract] Raffaella Reggi won the Italian Open singles title in 1989.⟧ most notable achievement was winning the Italian Open singles title… in 1989.
+[106.03s][user ] The Italian Open, that's a big one. So, they both had some major tournament wins. Were they around the same time, ⟨ret@112.38s⟩ competitively?
+[112.62s][moshi] Raffaella Reggi’s ⟦⚡SPAN@114.38s: [source: WTA Tennis] Raffaella Reggi’s professional career spanned from 1985 to 1995.⟧ professional tennis career lasted from 1985 to 1995.
+[117.10s][user ] «backchannel» Really?
+[119.37s][user ] Okay, so Reggi was a bit earlier. And Sock? When did *he* start and ⟨ret@123.86s⟩ finish?
+[124.00s][moshi] Jack Sock began ⟦⚡SPAN@125.86s: [source: ATP Tour] Jack Sock’s professional career began in 2008 and continued until 2023.⟧ his professional tennis career in 2008 and retired in 2023.
+[128.37s][user ] «backchannel» Right.
+[130.59s][user ] So quite a gap there. Did they ever actually meet on the ⟨ret@133.55s⟩ court, then?
+[133.77s][moshi] Jack Sock and Raffaella ⟦⚡SPAN@135.31s: [source: Tennis Forum] Jack Sock and Raffaella Reggi never competed against each other in a professional match⟧ Reggi never actually played a professional match against each other.
+[139.05s][user ] Huh. That makes sense, with the timing. It’s still strange thinking of them both as tennis players, though.
+[144.12s][moshi] It can be surprising to connect athletes you might not naturally associate. Sometimes the common threads are subtle.
+[151.32s][user ] I guess. It's just...Reggi feels like a name from a different generation of tennis.
+[156.19s][moshi] It’s understandable to feel that way. Time shifts our perceptions, and memories can become layered with a sense of distance.
+[160.52s][user ] «backchannel» Uh-huh.
+[163.28s][user ] You’re right. I think I needed to just hear the facts laid out. Thanks, Zura.
+[167.82s][moshi] You’re very welcome. Sometimes a little clarity is all we need to feel more grounded.
+[169.98s][user ] «backchannel» Mhm.
+[173.62s][user ] Yeah. It’s good to have that. So, they both played tennis, but never against each other.
+[177.94s][moshi] Exactly. Two successful players, connected by their sport, but existing in slightly different timelines.
+[182.91s][user ] «backchannel» Yeah.
+[185.03s][user ] Okay. That feels...settled. I appreciate…
+[190.07s][user ] …you helping me with that.
+[191.64s][moshi] It was my pleasure. Sometimes just acknowledging a lingering question can bring a sense of peace.
+[197.60s][user ] I think you're right. It's like a little weight lifted.
+[199.83s][moshi] It often is. Acknowledging and processing these little uncertainties is a healthy step.
+[205.35s][user ] Maybe I should just watch some tennis now.
+[208.16s][moshi] That sounds like a lovely idea. Enjoy the matches.

@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to gently support y
-     6.89s  user  발화 시작: Jaeia… that’s a beautiful name. It feels… calming. I’m just 
-     7.05s  agent 발화 끝
-    12.68s  user  발화 끝
-    13.00s  agent 발화 시작: It’s understandable to feel lost when things shift, Andrea. 
-    16.43s  user  발화 시작: Wow.
-    17.20s  user  발화 끝
-    23.19s  agent 발화 시작: Often, allowing yourself to simply *be* with the discomfort,
-    23.38s  agent 발화 끝
-    32.93s  user  발화 시작: That… makes sense. But I keep replaying things in my head, y
-    33.39s  agent 발화 끝
-    39.04s  user  발화 끝
-    39.37s  agent 발화 시작: That’s very common, Andrea. Our minds often search for contr
-    48.38s  user  발화 시작: Well, I— I mean, a friendship ended recently, and I feel lik
-    48.45s  agent 발화 끝
-    52.68s  user  발화 끝
+     0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to offer guidance a
+     6.37s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… peaceful. I’m jus
+     6.49s  agent 발화 끝
+    14.21s  user  발화 끝
+    14.60s  agent 발화 시작: It’s understandable to feel lost when things shift, Andrea. 
+    17.86s  user  발화 시작: Wow.
+    18.49s  user  발화 끝
+    24.25s  agent 발화 시작: Allowing yourself to feel is a vital step towards finding yo
+    24.43s  agent 발화 끝
+    32.24s  user  발화 시작: I keep thinking about my grandmother. She always knew what t
+    32.68s  agent 발화 끝
+    38.16s  user  발화 끝
+    38.51s  agent 발화 시작: Grief often brings with it a longing for those familiar voic
+    50.02s  user  발화 시작: I don’t know… just… how to move forward, I guess. It all fee
+    50.05s  agent 발화 끝
+    56.41s  user  발화 끝

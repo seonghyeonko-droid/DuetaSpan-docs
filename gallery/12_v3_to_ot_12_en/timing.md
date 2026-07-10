@@ -58,25 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Did you send it to accounting yet? | S3 Sorry about that, where were we? O | S4 That’s too bad. It would have been
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It by | S2 Wow, Eddie Van Halen? That’s incre | S3 Hey, did you take the trash out ye | S4 Sorry about that. So, was he asked
 
-     0.00s  user  발화 시작: I was just listening to Beat It, and that guitar solo is inc
-     4.70s  <ret> 발화 (turn1 첫 프레임)
-     4.93s  agent 발화 시작: <ret> Eddie Van Halen played the guitar solo on Michael Jack
-     5.14s  user  발화 끝
-     6.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     7.34s  user  발화 시작: Okay.
-     7.88s  user  발화 끝
-    11.18s  agent 발화 끝
-    11.40s  user  발화 시작: Wow, I didn't know that! He's amazing. Hey, Mark, did you fi
-    16.73s  user  발화 시작: Did you send it to accounting yet?
-    16.91s  user  발화 끝
-    18.70s  user  발화 시작: Sorry about that, where were we? Oh right, Eddie Van Halen. 
-    18.85s  user  발화 끝
-    24.68s  <ret> 발화 (turn6 첫 프레임)
-    25.07s  agent 발화 시작: <ret> Beyond “Beat It,” Eddie Van Halen didn’t collaborate o
-    25.28s  user  발화 끝
-    26.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: [source: Rolling Stone] Van Halen did not collaborate with Michael Jac
-    33.13s  agent 발화 끝
-    33.80s  user  발화 시작: That’s too bad. It would have been cool to hear more of them
-    39.22s  user  발화 끝
+     0.00s  user  발화 시작: I was just listening to Beat It by Michael Jackson, and it o
+     6.64s  <ret> 발화 (turn1 첫 프레임)
+     6.88s  agent 발화 시작: <ret> It’s a really iconic solo, and a lot of people wonder 
+     7.04s  user  발화 끝
+     8.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+    11.68s  agent 발화 시작: The guitar solo on Michael Jackson’s “Beat It” was performed
+    11.82s  agent 발화 끝
+    15.29s  user  발화 시작: Okay.
+    16.02s  user  발화 끝
+    20.68s  user  발화 시작: Wow, Eddie Van Halen? That’s incredible. I didn’t know that!
+    21.09s  agent 발화 끝
+    24.45s  user  발화 시작: Hey, did you take the trash out yet?
+    24.51s  user  발화 끝
+    26.36s  user  발화 시작: Sorry about that. So, was he asked specifically, or did he j
+    26.57s  user  발화 끝
+    31.48s  agent 발화 시작: He was specifically asked, which is quite a testament to his
+    31.51s  user  발화 끝
+    41.95s  agent 발화 끝

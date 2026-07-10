@@ -65,26 +65,27 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.75s][moshi] ⟨ret@4.67s⟩ I’ve mapped ⟦⚡SPAN@6.27s: (tool result) map created: Apple website product sections identified - iPhone, Mac, iPad, Watch, AirPods, TV &⟧ the Apple website, highlighting the main product sections: iPhone, Mac, iPad, Watch, AirPods, TV & Home, Entertainment, and Accessories.
+[  4.27s][moshi] ⟨ret@4.20s⟩ I’ve mapped ⟦⚡SPAN@5.80s: (tool result) Map created: Apple.com product sections identified - iPhone, iPad, Mac, Apple Watch, AirPods, TV⟧ the Apple website, identifying key product sections—iPhone, iPad, Mac, Apple Watch, AirPods, TV & Home, Entertainment, and Accessories.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
-[ 15.20s][user ] That’s great. Can you focus the map specifically on the iPhone ⟨ret@19.43s⟩ section?
-[ 19.82s][moshi] The iPhone section ⟦⚡SPAN@21.43s: (tool result) iPhone section map: models - iPhone 15, iPhone 15 Pro, iPhone 15 Pro Max, iPhone 15 Plus, iPhone⟧ map details models like the iPhone 15, 15 Pro, 15 Pro Max, 15 Plus, and the iPhone SE.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone", "focus": "models"}}
-[ 23.52s][user ] «backchannel» Nice.
-[ 28.75s][user ] Hmm, are there any deals currently…
-[ 32.54s][user ] …on the iPhone 15 Pro ⟨ret@34.65s⟩ Max?
-[ 35.05s][moshi] I found ⟦⚡SPAN@36.65s: (tool result) Deals found: Best Buy - $100 off with trade-in; Apple - financing available; Verizon - BOGO offe⟧ several deals—Best Buy has $100 off with trade-in, Apple offers financing, and Verizon has a buy-one-get-one offer.
-      CALL: {"function": "tavily-search", "arguments": {"query": "iPhone 15 Pro Max deals"}}
-[ 45.81s][user ] The Best Buy one sounds good. Can you check if they have the space black, 256GB model in stock at the store ⟨ret@53.80s⟩ nearest me?
-[ 54.20s][moshi] «interrupted» At the ⟦⚡SPAN@55.80s: (tool result) Stock: Nearest Best Buy (123 Main St) - Space Black 256GB iPhone 15 Pro Max: 3 in stock.⟧ nearest Best Buy, located at 123 Main Street, they currently have three space black, 256GB iPhone 15 Pro Max models in stock—
-      CALL: {"function": "tavily-stock", "arguments": {"store": "nearest", "product": "iPhone 15 Pro Max", "color": "space black", "storage": "256GB"}}
-[ 65.02s][user ] «interrupts_prev» That’s fantastic! Can you put one on hold for ⟨ret@68.39s⟩ me?
-[ 68.63s][moshi] I’ve reserved a ⟦⚡SPAN@70.39s: (tool result) Reservation confirmed: iPhone 15 Pro Max (Space Black, 256GB) held at Best Buy (123 Main St) und⟧ space black, 256GB iPhone 15 Pro Max for you at the 123 Main Street Best Buy under my name for two hours. Your confirmation number is 47892.
-      CALL: {"function": "tavily-reserve", "arguments": {"store": "123 Main St", "product": "iPhone 15 Pro Max", "color": "space black", "storage": "256GB"}}
-[ 73.38s][user ] «backchannel» Mm-hmm.
-[ 81.57s][moshi] It was my pleasure to assist. I am glad we found one for you so quickly.
-[ 87.15s][user ] Do they offer any protection plans with ⟨ret@89.61s⟩ that purchase?
-[ 90.01s][moshi] Best Buy ⟦⚡SPAN@91.61s: (tool result) Protection plans: AppleCare+ from $99; Geek Squad 2-year protection from $149.⟧ offers AppleCare+ starting at $99, and Geek Squad 2-year protection for $149.
-      CALL: {"function": "tavily-search", "arguments": {"query": "Best Buy iPhone 15 Pro Max protection plan"}}
-[ 99.97s][user ] Perfect. Thanks for all your help, Koral.
-[102.82s][moshi] You’re very welcome. Enjoy your new iPhone!
+[ 15.28s][user ] That’s good. Can you now map just the iPhone section, and detail the models ⟨ret@19.87s⟩ available?
+[ 20.26s][moshi] I’ve mapped the iPhone ⟦⚡SPAN@21.87s: (tool result) iPhone section mapped: Models listed - iPhone 15, iPhone 15 Plus, iPhone 15 Pro, iPhone 15 Pro M⟧ section, and the models listed are the iPhone 15, 15 Plus, 15 Pro, and 15 Pro Max.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone/", "focus": "models"}}
+[ 22.92s][user ] «backchannel» Nice.
+[ 26.68s][user ] Are there any trade-in offers currently available for the iPhone ⟨ret@30.69s⟩ 15 Pro?
+[ 31.08s][moshi] Apple is ⟦⚡SPAN@32.13s: (tool result) Apple Trade In: Get up to $1100 off iPhone 15 Pro with eligible trade-in.⟧ currently offering trade-in deals—you can get up to $1100 off the iPhone 15 Pro with an eligible trade-in.
+      CALL: {"function": "tavily-search", "arguments": {"query": "iPhone 15 Pro trade-in offers apple"}}
+[ 39.23s][user ] That sounds promising. What about the storage options for the 15 Pro?
+[ 43.54s][moshi] «interrupted» The iPhone 15 Pro has several storage options—
+[ 45.97s][user ] «interrupts_prev» …Is there a significant price difference between the 256 and 512 gigabyte ⟨ret@51.40s⟩ models?
+[ 51.77s][moshi] The iPhone ⟦⚡SPAN@53.40s: (tool result) iPhone 15 Pro: 256GB - $999, 512GB - $1199.⟧ 15 Pro with 256 gigabytes is $999, while the 512 gigabyte model is $1199.
+      CALL: {"function": "tavily-search", "arguments": {"query": "iPhone 15 Pro 256GB vs 512GB price"}}
+[ 55.28s][user ] «backchannel» Mm-hmm.
+[ 61.36s][moshi] That's a $200 difference, so it depends on your storage needs.
+[ 65.57s][user ] Okay, let's say I want to trade in my old iPhone 12 and get the 512GB 15 Pro. Can you estimate the final ⟨ret@72.34s⟩ cost?
+[ 72.55s][moshi] Assuming a $300 ⟦⚡SPAN@74.34s: (tool result) Estimated final cost: $899 (after $300 trade-in).⟧ trade-in value for your iPhone 12, the estimated final cost for the 512GB iPhone 15 Pro would be $899.
+      CALL: {"function": "tavily-calculate", "arguments": {"trade_in_value": 300, "new_price": 1199}}
+[ 84.15s][user ] That's pretty good. Go ahead and start the trade-in process for me.
+[ 87.11s][moshi] ⟨ret@87.04s⟩ Great! I’ve initiated ⟦⚡SPAN@89.04s: (tool result) Trade-in initiated: Confirmation #TRD78945. Shipping label emailed to your address.⟧ the trade-in process; your confirmation number is TRD78945, and a shipping label has been emailed to you.
+      CALL: {"function": "apple-tradein", "arguments": {"device": "iPhone 12", "new_device": "iPhone 15 Pro 512GB"}}
+[ 92.84s][user ] «backchannel» Really?
+[ 98.07s][user ] Perfect, thank you.

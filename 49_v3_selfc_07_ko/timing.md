@@ -76,81 +76,83 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘. | S2 이십오분… 생각보다 가깝네. 혹시 그쪽 근처에 주차 공간이 있 | S3 오, 멋지다. 그럼… 혹시 그 근처에 괜찮은 카페도 알아봐 줄 | S4 고마워, 텔러. 덕분에 걱정 없이 방문할 수 있겠어.
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘. | S2 고마워, 정말 큰 도움이 됐어. 혹시… | S3 좋아. 그럼 혹시… 그 로프트에 반려동물 동반이 가능한지도 확 | S4 오크 애비뉴… 사백오십육번지… 아, 잠깐만, 사백오십칠번지로 
 
      0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘.
-     3.24s  <ret> 발화 (turn1 첫 프레임)
-     3.47s  agent 발화 시작: <ret> 그랜드뷰 로프트에 육월 십오일 오후 두시에 방문 예약을 잡아드렸어요. 괜찮으신가요?
-     3.69s  user  발화 끝
-     5.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) Appointment scheduled for June 15th at 2:00 PM.
-     9.63s  agent 발화 끝
-    10.94s  user  발화 시작: 음… 세시로 좀 늦춰줄 수 있어? 그날 오후에 다른 일정이 생겨서.
-    15.74s  <ret> 발화 (turn3 첫 프레임)
-    16.05s  agent 발화 시작: <ret> 네, 육월 십오일 오후 세시로 시간을 변경해 드렸어요. 이제 괜찮으시죠?
-    16.07s  user  발화 끝
-    17.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) Rescheduled to June 15th at 3:00 PM.
-    21.16s  user  발화 시작: 응, 좋아. 아, 근데 그랜드뷰 로프트는… 솔직히 이름만 들어봤지, 정확히 어디 있는지 잘 몰라.
-    21.24s  agent 발화 끝
-    28.14s  agent 발화 시작: 그랜드뷰 로프트는 강남역 근처에 위치하고 있어요. 찾아가는 길을 안내해 드릴까요?
-    28.25s  user  발화 끝
-    33.77s  user  발화 시작: 응, 부탁해. 지금 바로 길 안내 시작해줘.
-    33.97s  agent 발화 끝
-    37.18s  <ret> 발화 (turn7 첫 프레임)
-    37.37s  user  발화 끝
-    37.41s  agent 발화 시작: <ret> 그랜드뷰 로프트까지 가는 길을 안내해 드릴게요. 예상 소요 시간은 이십오분 정도예요.
-    38.30s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.79s]: (tool result) Calculating route to The Grandview Lofts. Estimated trav
-    43.20s  agent 발화 끝
-    44.08s  user  발화 시작: 이십오분… 생각보다 가깝네. 혹시 그쪽 근처에 주차 공간이 있는지 알아봐 줄 수 있어?
-    49.97s  <ret> 발화 (turn9 첫 프레임)
-    50.03s  agent 발화 시작: <ret> 그랜드뷰 로프트에는 주차 공간이 있지만, 공간이 제한적이에요. 시간당 오천 원의 주차 요금이 있어
-    50.15s  user  발화 끝
-    51.33s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.65s]: (tool result) Parking available on-site, limited spaces. Cost: 5,000 w
-    55.00s  user  발화 시작: 음.
-    55.41s  user  발화 끝
-    57.63s  user  발화 시작: 오천 원… 괜찮아. 그럼, 혹시 그 건물에 반려동물 동반이 가능한지도 확인해 줄래? 강아지를 데려가고 싶어서
-    57.68s  agent 발화 끝
-    65.32s  <ret> 발화 (turn12 첫 프레임)
-    65.36s  user  발화 끝
-    65.64s  agent 발화 시작: <ret> 네, 반려동물 동반이 가능하지만, 무게 제한이 십kg이에요.
-    66.52s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.40s]: (tool result) Pets are allowed with a weight limit of 10 kg.
-    70.01s  user  발화 시작: 십kg… 우리 멍멍이는 팔kg이라 괜찮겠네. 다행이다. 근데 혹시 그 로프트, 전망은 어때?
-    70.04s  agent 발화 끝
-    77.52s  agent 발화 시작: 그랜드뷰 로프트는 높은 층에 위치해서 탁 트인 도시 전망을 자랑해요. 특히 해 질 녘 풍경이 아름답다고 하네
-    77.70s  user  발화 끝
-    85.90s  agent 발화 끝
-    86.04s  user  발화 시작: 오, 멋지다. 그럼… 혹시 그 근처에 괜찮은 카페도 알아봐 줄 수 있어? 방문 전에 커피 한 잔 하고 싶어서
-    92.99s  <ret> 발화 (turn16 첫 프레임)
-    93.05s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에 카페 블룸, 커피빈, 아로마 카페 세 곳이 있어요.
-    93.12s  user  발화 끝
-    94.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) Three cafes found within 500m: Cafe Bloom, Coffee Bean, 
-    96.12s  user  발화 시작: 응응.
-    96.61s  user  발화 끝
-    98.41s  user  발화 시작: 카페 블룸… 거기가 제일 괜찮아 보이는데. 거기로 가는 길도 알려줄 수 있어?
-    98.42s  agent 발화 끝
-   103.63s  <ret> 발화 (turn19 첫 프레임)
-   103.73s  user  발화 끝
-   103.76s  agent 발화 시작: <ret> 카페 블룸까지 가는 길을 안내해 드릴게요. 예상 소요 시간은 팔분 정도예요.
-   105.60s  user  발화 시작: 오.
-   105.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) Calculating route to Cafe Bloom. Estimated travel time: 
-   106.23s  user  발화 끝
-   108.57s  agent 발화 끝
-   108.74s  user  발화 시작: 좋아. 그럼, 혹시… 육월 십오일 오후 세시 그랜드뷰 로프트 방문 예약 건 다시 한 번 확인해 줄래?
-   116.15s  agent 발화 시작: 네, 육월 십오일 오후 세시에 그랜드뷰 로프트 방문 예약을 확인해 드립니다. 반려동물 동반 가능하고, 주차 
-   116.17s  user  발화 끝
-   126.45s  agent 발화 끝
-   126.58s  user  발화 시작: 고마워, 텔러. 덕분에 걱정 없이 방문할 수 있겠어.
-   130.27s  agent 발화 시작: 천만에요. 즐거운 방문 되세요.
-   130.38s  user  발화 끝
-   133.14s  agent 발화 끝
-   135.44s  user  발화 시작: 아, 잠깐만! 카페 블룸… 그게 아니라, 블룸앤블룸이었나?
-   139.12s  <ret> 발화 (turn26 첫 프레임)
-   139.44s  agent 발화 시작: <ret> 아, 블룸앤블룸이군요. 찾았습니다.
-   139.60s  user  발화 끝
-   140.32s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.86s]: (tool result) Bloom & Bloom found within 500m.
-   142.10s  user  발화 시작: 맞아, 블룸앤블룸. 그럼 블룸앤블룸으로 가는 길을 알려줘.
-   142.30s  agent 발화 끝
-   145.79s  <ret> 발화 (turn28 첫 프레임)
-   145.84s  user  발화 끝
-   145.94s  agent 발화 시작: <ret> 블룸앤블룸까지 가는 길을 안내해 드릴게요. 예상 소요 시간은 십분 정도예요.
-   147.47s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.32s]: (tool result) Calculating route to Bloom & Bloom. Estimated travel tim
-   151.26s  agent 발화 끝
+     2.90s  <ret> 발화 (turn1 첫 프레임)
+     3.13s  agent 발화 시작: <ret> 그랜드뷰 로프트 육월 십오일 오후 두시에 방문 예약을 잡아드렸어요. 즐거운 집 구경 되시길 바랍니
+     3.32s  user  발화 끝
+     4.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: (tool result) Viewing scheduled for June 15th at 2:00 PM.
+    10.12s  agent 발화 끝
+    11.28s  user  발화 시작: 잠깐만, 십오일은 안 돼. 십육일로 바꿔줘.
+    13.56s  <ret> 발화 (turn3 첫 프레임)
+    13.86s  user  발화 끝
+    13.87s  agent 발화 시작: <ret> 육월 십육일 오후 두시로 예약 변경해 드렸습니다. 혹시 다른 시간대는 괜찮으신가요?
+    15.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: (tool result) Viewing rescheduled for June 16th at 2:00 PM.
+    20.82s  user  발화 시작: 아니, 두시 괜찮아. 그런데 혹시 그 근처에 주차 공간이 있는지 알아봐 줄 수 있어?
+    20.86s  agent 발화 끝
+    25.95s  <ret> 발화 (turn5 첫 프레임)
+    26.35s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에는 거리 주차 공간이 제한적이고, 메인 스트리트 백이십삼번지에 주차장이 있는
+    26.56s  user  발화 끝
+    27.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) Limited street parking available. Garage at 123 Main Str
+    35.35s  user  발화 시작: 주차장이 더 편하겠네. 그럼 그 주차장 예약도 좀 해 줄래? 두시간 정도.
+    35.53s  agent 발화 끝
+    39.41s  <ret> 발화 (turn7 첫 프레임)
+    39.70s  user  발화 끝
+    39.72s  agent 발화 시작: <ret> 메인 스트리트 백이십삼번지 주차장 두시간 예약 완료되었습니다. 확인 번호는 칠 팔 구 사 오번입니
+    41.33s  ⚡SPAN 주입 [d'=1.92s / d_lead=7.23s]: (tool result) Spot reserved at 123 Main Street. Confirmation number: 7
+    46.94s  agent 발화 끝
+    47.70s  user  발화 시작: 고마워, 정말 큰 도움이 됐어. 혹시…
+    51.35s  user  발화 끝
+    52.99s  user  발화 시작: …그 로프트 주변에 괜찮은 카페도 있을까?
+    55.69s  <ret> 발화 (turn10 첫 프레임)
+    55.77s  agent 발화 시작: <ret> 그랜드뷰 로프트 주변에는 커피빈이 영 점 이마일, 스타벅스가 영 점 오마일, 로컬 브루가 영 점 
+    55.85s  user  발화 끝
+    57.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) "Coffee Bean" - 0.2 miles, "Starbucks" - 0.5 miles, "Loc
+    61.09s  user  발화 시작: 어.
+    61.49s  user  발화 끝
+    63.78s  user  발화 시작: 로컬 브루가 제일 가까운 것 같네. 거기 메뉴 좀 알려줄 수 있어?
+    63.88s  agent 발화 끝
+    67.16s  user  발화 끝
+    67.16s  <ret> 발화 (turn13 첫 프레임)
+    67.23s  agent 발화 시작: <ret> 로컬 브루는 커피, 차, 페이스트리, 샌드위치를 판매하고, 자세한 메뉴는 localbrew.com
+    68.60s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.14s]: (tool result) Coffee, tea, pastries, sandwiches. Full menu at localbre
+    74.32s  user  발화 시작: 좋아. 그럼 혹시… 그 로프트에 반려동물 동반이 가능한지도 확인해 줄 수 있을까?
+    74.37s  agent 발화 끝
+    79.22s  <ret> 발화 (turn15 첫 프레임)
+    79.61s  agent 발화 시작: <ret> 그랜드뷰 로프트는 보증금 오십달러를 내면 반려동물 동반이 가능합니다.
+    79.79s  user  발화 끝
+    80.98s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.04s]: (tool result) Pets allowed with a $50 deposit.
+    84.65s  agent 발화 끝
+    84.77s  user  발화 시작: 아, 보증금이 있구나. 그럼 혹시 다른 로프트도 알아봐 줄 수 있어? 반려동물 보증금이 없는 곳으로.
+    91.61s  <ret> 발화 (turn17 첫 프레임)
+    91.92s  agent 발화 시작: <ret> 반려동물 보증금이 없는 파크사이드 레지던스가 육월 십육일에 입주 가능합니다.
+    91.99s  user  발화 끝
+    93.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) "Parkside Residences" - no pet deposit, available June 1
+    94.28s  user  발화 시작: 음.
+    94.73s  user  발화 끝
+    97.62s  agent 발화 끝
+    97.63s  user  발화 시작: 파크사이드 레지던스… 음, 거기는 위치가 어때?
+   100.85s  <ret> 발화 (turn20 첫 프레임)
+   101.24s  agent 발화 시작: <ret> 파크사이드 레지던스는 오크 애비뉴 사백오십육번지에 위치해 있습니다.
+   101.33s  user  발화 끝
+   102.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.82s]: (tool result) 456 Oak Avenue.
+   104.58s  user  발화 시작: 응.
+   105.03s  user  발화 끝
+   106.05s  agent 발화 끝
+   106.18s  user  발화 시작: 오크 애비뉴… 사백오십육번지… 아, 잠깐만, 사백오십칠번지로 다시 찾아줘. 내가 잘못 말했어.
+   113.08s  <ret> 발화 (turn23 첫 프레임)
+   113.39s  agent 발화 시작: <ret> 파크사이드 레지던스는 오크 애비뉴 사백오십칠번지에 위치해 있습니다.
+   113.55s  user  발화 끝
+   115.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) 457 Oak Avenue.
+   118.34s  agent 발화 끝
+   118.47s  user  발화 시작: 맞아, 사백오십칠번지. 그곳에 방문 예약을 잡아줘. 육월 십육일 오후 세시로.
+   124.38s  <ret> 발화 (turn25 첫 프레임)
+   124.53s  agent 발화 시작: <ret> 파크사이드 레지던스 육월 십육일 오후 세시에 방문 예약을 잡아드렸습니다.
+   124.68s  user  발화 끝
+   126.06s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.61s]: (tool result) Viewing scheduled for June 16th at 3:00 PM.
+   130.14s  agent 발화 끝
+   132.38s  user  발화 시작: 정말 고마워, 덕분에 집 구하기가 훨씬 수월해졌어.
+   136.25s  agent 발화 시작: 도움이 되었다니 기쁩니다. 새로운 시작을 응원할게요.
+   136.32s  user  발화 끝
+   140.19s  agent 발화 끝

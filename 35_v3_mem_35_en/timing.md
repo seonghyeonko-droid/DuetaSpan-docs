@@ -66,24 +66,31 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hi Klen, thanks! I’m starting to p | S2 That sounds beautiful! I’m really  | S3 …are there any specific regions th | S4 Oh, that’s great to know. And I al
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you're planning a trip to N
-     4.72s  agent 발화 끝
-     5.21s  user  발화 시작: Yes, that's right! I’m starting to look at flights and thing
-     9.71s  <ret> 발화 (turn2 첫 프레임)
-    10.11s  agent 발화 시작: <ret> March is a beautiful time to visit. New Zealand’s wild
-    10.25s  user  발화 끝
-    11.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    16.52s  user  발화 시작: …do you think I should book flights and accommodation togeth
-    17.24s  agent 발화 끝
-    18.72s  user  발화 시작: Mhm.
-    19.21s  user  발화 끝
-    20.95s  <ret> 발화 (turn5 첫 프레임)
-    21.02s  agent 발화 시작: <ret> When booking flights, Avery, I recall you prefer a win
-    21.06s  user  발화 끝
-    22.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: [2026-06-13] User prefers a window seat when traveling.
-    23.44s  user  발화 시작: Mm-hmm.
-    23.93s  user  발화 끝
-    28.39s  user  발화 시작: Oh, that’s a good reminder! Yes, please. And what about the 
-    28.43s  agent 발화 끝
-    34.69s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen. It's lovely to connect with you today.
+     3.84s  agent 발화 끝
+     4.51s  user  발화 시작: Hi Klen, thanks! I’m starting to plan a trip to New Zealand 
+    10.12s  <ret> 발화 (turn2 첫 프레임)
+    10.52s  agent 발화 시작: <ret> New Zealand sounds wonderful! You’re planning that tri
+    10.72s  user  발화 끝
+    12.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    15.91s  agent 발화 시작: Yes, you mentioned a New Zealand trip for March last month… 
+    15.98s  agent 발화 끝
+    22.15s  user  발화 시작: Mm-hmm.
+    22.78s  user  발화 끝
+    24.29s  agent 발화 끝
+    25.40s  user  발화 시작: That sounds beautiful! I’m really into photography, specific
+    31.39s  agent 발화 시작: Wildflower photography is a passion of yours… and New Zealan
+    31.52s  user  발화 끝
+    38.09s  user  발화 시작: …are there any specific regions that are particularly good f
+    38.85s  agent 발화 끝
+    43.37s  user  발화 끝
+    43.80s  agent 발화 시작: Alpine wildflowers thrive in certain areas… the Southern Alp
+    50.51s  agent 발화 끝
+    50.76s  user  발화 시작: Oh, that’s great to know. And I always prefer a window seat 
+    55.13s  <ret> 발화 (turn10 첫 프레임)
+    55.34s  user  발화 끝
+    55.37s  agent 발화 시작: <ret> I can note your preference for a window seat… it's a s
+    57.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: [2026-06-13] User prefers a window seat when traveling.
+    61.85s  agent 발화 끝

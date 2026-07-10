@@ -56,36 +56,41 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading about Pompeii… it’s just… incredible, isn’t it?
-[  3.55s][moshi] It truly is a captivating story, full of lessons about life and loss. It’s understandable to feel moved by it.
-[ 12.19s][user ] I mean, it’s a volcano, right? Vesuvius? When did it… uhhh… last actually ⟨ret@16.94s⟩ erupt?
-[ 17.25s][moshi] Mount Vesuvius last erupted ⟦⚡SPAN@18.94s: [source: Wikipedia] Mount Vesuvius last erupted in March 1944 during World War II.⟧ in March of nineteen forty-four, during the Second World War.
-[ 23.65s][user ] Wow. Nineteen forty-four… that’s… recent, relatively speaking.
-[ 28.30s][moshi] It is, when you consider the centuries of dormancy beforehand. Though “recent” is always relative to geological timescales.
-[ 36.90s][user ] Right. So, it’s still… active, then? I guess?
-[ 40.47s][moshi] ⟨ret@40.24s⟩ Vesuvius is considered ⟦⚡SPAN@42.24s: [source: Smithsonian Institution] Mount Vesuvius is considered an active volcano, and is constantly monitored.⟧ an active volcano and remains under constant monitoring.
-[ 45.86s][user ] That’s… reassuring, I guess. But also… a little scary.
-[ 50.35s][moshi] It’s natural to feel a bit apprehensive. Ongoing monitoring helps assess and mitigate potential risks, which is important.
-[ 53.26s][user ] «backchannel» Yeah.
-[ 57.89s][moshi] Knowing the science behind it can sometimes ease those anxieties, too. Understanding the processes is empowering.
-[ 65.65s][user ] So, nineteen forty-four was the last time… anything significant happened? Like, a big ⟨ret@71.64s⟩ eruption?
-[ 71.87s][moshi] The ⟦⚡SPAN@72.76s: [source: USGS] The 1944 eruption of Mount Vesuvius was not as large as the 79 AD eruption, but still caused da⟧ nineteen forty-four eruption caused damage, but it wasn’t as large as the eruption in seventy-nine AD.
-[ 76.58s][user ] «backchannel» Yeah.
-[ 78.72s][user ] Okay, so not… another Pompeii situation. That’s good to know.
-[ 82.27s][moshi] Precisely. The scale of the seventy-nine AD eruption was exceptional, a truly catastrophic event.
-[ 89.61s][user ] I wonder… how close is it to Naples now? Is it still a threat to the city?
-[ 94.49s][moshi] ⟨ret@94.41s⟩ It’s nineteen ⟦⚡SPAN@95.61s: (tool result) 19 kilometers.⟧ kilometers from Naples.
-[ 97.15s][user ] Nineteen kilometers… that’s… not very far, actually.
-[100.72s][moshi] It’s true, it’s relatively close. That’s why the ongoing monitoring is so vital for the safety of the region.
-[104.88s][user ] «backchannel» Right.
-[106.92s][user ] I— I mean, do they have… evacuation plans? In case?
-[111.07s][moshi] ⟨ret@110.93s⟩ Naples has a ⟦⚡SPAN@112.93s: [source: Naples government website] Naples has a detailed evacuation plan for Vesuvius, regularly updated and ⟧ detailed, regularly updated, and practiced evacuation plan for Vesuvius.
-[112.92s][user ] «backchannel» Uh-huh.
-[118.20s][user ] That’s… good. Really good. It’s just… a lot to think about.
-[122.81s][moshi] It is a lot to process. Thinking about potential risks can be unsettling, but preparedness is key.
-[125.13s][user ] «backchannel» Yeah.
-[130.59s][user ] So, if I were visiting Naples, should I… worry?
-[134.59s][moshi] Worry isn’t helpful, but awareness is. The volcano is closely watched, and the risk is managed. Enjoy your trip.
-[138.05s][user ] «backchannel» Right.
-[143.12s][user ] [sigh] Okay. I think I will. Thank you, Bena.
-[147.69s][moshi] You’re most welcome. It’s perfectly normal to feel a little apprehensive when contemplating such powerful forces of nature.
+[  0.00s][user ] I was just reading about Pompeii… it’s amazing how much was preserved.
+[  4.65s][moshi] It truly is remarkable, isn't it? That city offers such a vivid glimpse into the past.
+[ 10.84s][user ] It makes you wonder about Vesuvius, though… is it still active?
+[ 15.00s][moshi] That’s a very natural question to ask, given its history. It’s certainly considered an active volcano.
+[ 22.59s][user ] But… how long has it been since it last… uhhh… actually ⟨ret@27.51s⟩ erupted?
+[ 27.90s][moshi] The last time ⟦⚡SPAN@29.51s: [source: Britannica] Mount Vesuvius last erupted in March 1944, during World War II.⟧ Mount Vesuvius erupted was… in March 1944. It's been a relatively quiet period since then.
+[ 35.97s][user ] Wow, during World War Two? That’s… incredible.
+[ 39.98s][moshi] It is quite a coincidence, isn't it? The eruption was thankfully a minor one, compared to the famous one in 79 AD.
+[ 47.69s][user ] So, it’s still a threat, then? I mean, living near it…
+[ 51.67s][moshi] It does pose a potential risk, yes. Scientists closely monitor Vesuvius for any signs of increased activity.
+[ 58.98s][user ] Right. Is there like… a warning system? For people who live nearby?
+[ 64.42s][moshi] ⟨ret@64.26s⟩ There is a comprehensive monitoring ⟦⚡SPAN@66.26s: [source: Vesuvius National Park] The Vesuvius Observatory monitors volcanic activity 24/7 and has evacuation p⟧ system, and evacuation plans are in place for nearby communities. That offers some peace of mind, I think.
+[ 69.77s][user ] «backchannel» Yeah.
+[ 72.26s][user ] That’s good to hear. I guess they’ve learned a lot since Pompeii.
+[ 76.39s][moshi] The lessons from Pompeii have been invaluable in modern volcano preparedness.
+[ 80.83s][user ] It’s just… I’m thinking about moving to Naples, and…
+[ 85.10s][moshi] Naples is a beautiful city, with so much to offer. It’s understandable to have some concerns about Vesuvius.
+[ 91.46s][user ] Yeah. Is it… like, a constant worry for people who live there?
+[ 96.11s][moshi] It’s something people are aware of, certainly. But it doesn’t dominate daily life for most residents.
+[ 98.80s][user ] «backchannel» Right.
+[101.91s][user ] Hmm, welll… that’s reassuring. What about… the risk level, specifically?
+[107.76s][moshi] The risk is always present with an active volcano, but it’s carefully assessed and managed.
+[113.65s][user ] And monitored, you said? Constantly?
+[116.36s][moshi] Yes, exactly. The Vesuvius Observatory provides continuous surveillance.
+[118.36s][user ] «backchannel» Yeah.
+[121.66s][moshi] That allows for early detection of any changes that could indicate an impending eruption.
+[123.11s][user ] «backchannel» Yeah.
+[126.86s][user ] So, if something *were* to happen, they’d have time to get people out?
+[131.65s][moshi] ⟨ret@131.33s⟩ Evacuation plans are ⟦⚡SPAN@133.33s: [source: Smithsonian Institution Global Volcanism Program] Evacuation plans are regularly updated and practice⟧ regularly updated and practiced, with designated routes and shelters available. Preparedness is key in mitigating the risks.
+[137.89s][user ] «backchannel» Yeah.
+[140.97s][user ] That’s… good. I think.
+[143.25s][moshi] It’s perfectly natural to feel a little apprehensive. It’s a big decision, moving to a new place.
+[147.69s][user ] «backchannel» Mm-hmm.
+[149.45s][user ] I— I mean, it’s a beautiful area, and the history is amazing…
+[153.80s][moshi] It truly is. Balancing the potential risks with the benefits is a common part of making life choices.
+[155.75s][user ] «backchannel» Uh-huh.
+[160.22s][user ] Okay. Thanks, Bena. You’ve really helped me think this through.
+[164.25s][moshi] [happy] You're very welcome. It sounds like you're carefully weighing all your options, which is wonderful.

@@ -61,31 +61,35 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ava, I’m Hia. It’s lovely to connect with you. I understand you’re navigating some changes, and I’m here to offer guidance as you transition.
-[  9.58s][user ] Well, I'm thinking of going to a concert downtown, but I'm not sure how long it will take to get there.
-[ 14.66s][moshi] ⟨ret@14.58s⟩ Your home is at 30 Oak ⟦⚡SPAN@16.58s: [2025-08-06] User's home address is 30 Oak Avenue.⟧ Avenue. I can find the quickest route and estimate travel time for you.
-[ 20.63s][user ] Yes, please. That would be great.
-[ 22.35s][moshi] ⟨ret@22.28s⟩ The estimated travel time to ⟦⚡SPAN@24.28s: (tool result) ETA is 22 minutes via Rue de Rivoli.⟧ the Concert Hall via Rue de Rivoli is twenty-two minutes.
-      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "Concert Hall"}}
-[ 24.84s][user ] «backchannel» Uh-huh.
-[ 27.47s][moshi] Traffic conditions can fluctuate, of course, but that’s the current best estimate. Do you have a preferred mode of transport?
-[ 32.50s][user ] «backchannel» Yeah, yeah.
-[ 34.76s][user ] I was thinking of taking the metro. Is ⟨ret@37.46s⟩ that faster?
-[ 37.77s][moshi] Taking ⟦⚡SPAN@38.58s: (tool result) Metro travel time is 18 minutes with one transfer.⟧ the metro will be faster, at eighteen minutes, with one transfer required.
-      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "Concert Hall", "mode": "metro"}}
-[ 40.53s][user ] «backchannel» Mm-hmm.
-[ 44.27s][user ] Oh, good to know. And is there parking near the Concert Hall, just in case?
-[ 48.20s][moshi] ⟨ret@48.15s⟩ Parking downtown can be ⟦⚡SPAN@50.15s: (tool result) Parking available 3 blocks away, €15 per hour.⟧ challenging. I can check availability for you, but it’s often limited and expensive.
-      CALL: {"function": "find_parking", "arguments": {"location": "Concert Hall"}}
-[ 54.94s][moshi] There is parking available three blocks from the Concert Hall, at a rate of fifteen euros per hour.
-[ 62.79s][user ] Fifteen euros… that’s a bit steep.
-[ 65.14s][moshi] It is, isn’t it? Often, public transport is more economical and less stressful in central Paris.
-[ 67.71s][user ] «backchannel» Mhm.
-[ 71.41s][user ] You’re right. I think I’ll stick with the metro. Do you know if the metro station ⟨ret@75.67s⟩ is accessible?
-[ 75.98s][moshi] You prefer an aisle ⟦⚡SPAN@77.67s: [2026-03-22] User prefers an aisle seat when traveling.⟧ seat when you travel. I can check the accessibility features of the metro station nearest you.
-[ 80.38s][user ] «backchannel» Right.
-[ 82.63s][user ] That would be wonderful, thank you.
-[ 84.78s][moshi] ⟨ret@84.71s⟩ The nearest ⟦⚡SPAN@85.91s: (tool result) Nearest station has elevators and tactile paving.⟧ station to your home has elevators and tactile paving for accessibility.
-      CALL: {"function": "get_station_info", "arguments": {"station": "nearest metro station to 30 Oak Avenue"}}
-[ 86.80s][user ] «backchannel» Yeah.
-[ 90.75s][user ] Perfect! That’s very reassuring.
+[  0.00s][moshi] Hi Ava, I'm Hia. It's lovely to connect with you. I understand you're navigating some transitions, and I'm here to offer guidance.
+[  7.56s][user ] I'm trying to figure out the best way to get to my friend Sophie's place for dinner tonight.
+[ 12.30s][moshi] ⟨ret@12.22s⟩ I can help ⟦⚡SPAN@13.66s: [2025-08-06] User's home address is 30 Oak Avenue.⟧ with that. To start, your home address is 30 Oak Avenue.
+[ 16.05s][user ] «backchannel» Yeah, yeah.
+[ 17.95s][user ] Yes, that's right. And Sophie lives at 12 Rue de Rivoli. How long will ⟨ret@23.37s⟩ that take?
+[ 23.77s][moshi] The drive to ⟦⚡SPAN@25.37s: (tool result) Driving directions to 12 Rue de Rivoli: 22 minutes, 8.5 kilometers.⟧ 12 Rue de Rivoli is approximately 22 minutes, covering 8.5 kilometers.
+      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "12 Rue de Rivoli", "mode": "driving"}}
+[ 28.23s][user ] «backchannel» Yeah.
+[ 30.30s][moshi] That sounds manageable for a dinner with Sophie.
+[ 31.77s][user ] «backchannel» Mm-hmm.
+[ 32.97s][user ] Oh, good point. What's the traffic like right now?
+[ 36.50s][moshi] ⟨ret@36.42s⟩ There is moderate traffic ⟦⚡SPAN@38.42s: (tool result) Moderate traffic; estimated delay: 7 minutes.⟧ currently, adding an estimated delay of 7 minutes to your journey.
+      CALL: {"function": "get_traffic", "arguments": {"route": "from 30 Oak Avenue to 12 Rue de Rivoli"}}
+[ 43.85s][user ] Hmm, so closer to thirty minutes then?
+[ 46.65s][moshi] Yes, accounting for the traffic, the trip will likely take around thirty minutes. I hope that doesn’t cause you any stress.
+[ 50.15s][user ] «backchannel» Mhm.
+[ 56.28s][user ] No, that’s okay. I just want to be on time. I remember Sophie mentioning something about parking being difficult.
+[ 64.30s][moshi] That’s a good thing to consider. Parking can certainly add to the stress of an evening.
+[ 67.71s][user ] «backchannel» Right.
+[ 69.76s][user ] Do you know anything about parking near ⟨ret@72.16s⟩ her place?
+[ 72.47s][moshi] Parking near 12 Rue ⟦⚡SPAN@74.16s: (tool result) Limited street parking; nearby parking garage at 20 Rue Saint-Honoré, €5 per hour.⟧ de Rivoli is limited to street parking, though there is a garage at 20 Rue Saint-Honoré for €5 per hour.
+      CALL: {"function": "get_parking", "arguments": {"location": "12 Rue de Rivoli"}}
+[ 75.90s][user ] «backchannel» Oh.
+[ 81.68s][user ] Okay, good to know. That garage sounds like a good option.
+[ 85.74s][moshi] It sounds like a practical solution, Ava. It’s wise to have a plan in place, especially when time is a factor.
+[ 93.31s][user ] Is it a long walk from the garage?
+[ 95.70s][moshi] «interrupted» It's—
+[ 95.85s][user ] «interrupts_prev» Just trying to gauge how much extra time I need to add.
+[ 99.70s][moshi] The walk from 20 Rue Saint-Honoré to 12 Rue de Rivoli is approximately 5 minutes.
+[102.73s][user ] «backchannel» Really?
+[104.83s][user ] Perfect. Thanks so much, Hia!
+[106.89s][moshi] You're very welcome, Ava. I’m glad I could assist you with your planning. Enjoy your dinner with Sophie.

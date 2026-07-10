@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Lucia, it’s wonderful to connect with you. I’m Aril, and I h
-     8.11s  agent 발화 끝
-     8.26s  user  발화 시작: Aril… that’s a lovely name. I was just thinking, it's been s
-    15.67s  agent 발화 시작: It’s completely understandable to feel that way, especially 
-    15.81s  user  발화 끝
-    18.99s  user  발화 시작: Wow.
-    19.80s  user  발화 끝
-    24.71s  agent 발화 끝
-    25.36s  user  발화 시작: Welll… I guess I worry about putting myself out there. It fe
-    32.97s  user  발화 끝
-    33.19s  agent 발화 시작: That’s a very common feeling, Lucia. Starting can be the har
-    41.53s  agent 발화 끝
+     0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you. I’m Aril, and I h
+     9.36s  agent 발화 끝
+     9.49s  user  발화 시작: Aril… that’s a pretty name. I’m just feeling a bit lost, hon
+    16.85s  agent 발화 시작: Feeling lost is completely understandable, Lucia. It’s brave
+    16.95s  user  발화 끝
+    20.52s  user  발화 시작: Wow.
+    21.34s  user  발화 끝
+    26.82s  agent 발화 끝
+    27.41s  user  발화 시작: Welll… it feels silly, but I worry about putting myself out 
+    33.48s  user  발화 끝
+    33.69s  agent 발화 시작: That’s a very common worry, Lucia. It takes courage to be vu
+    44.49s  agent 발화 끝

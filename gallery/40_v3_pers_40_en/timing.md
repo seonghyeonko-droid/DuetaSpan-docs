@@ -69,13 +69,11 @@
 # }
 
 
-     0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I help
-     7.41s  agent 발화 끝
-     8.46s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
-    15.04s  user  발화 끝
-    15.07s  agent 발화 시작: It absolutely can feel that way, Kim. Many people share that
-    23.32s  agent 발화 끝
-    23.37s  user  발화 시작: Welll… I’m trying to plan for retirement, but it all seems s
-    30.61s  user  발화 끝
-    30.84s  agent 발화 시작: That’s a very common feeling when looking ahead. It’s great 
-    39.88s  agent 발화 끝
+     0.00s  agent 발화 시작: Kim, it’s lovely to connect with you. I’m Ara, and I help pe
+     6.71s  agent 발화 끝
+     7.79s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
+    15.12s  user  발화 끝
+    15.13s  agent 발화 시작: It’s completely understandable to feel that way, Kim. So man
+    24.97s  agent 발화 끝
+    24.99s  user  발화 시작: Welll… I’m thinking about retirement. I haven’t really saved
+    32.64s  user  발화 끝

@@ -58,29 +58,41 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was looking at flags and I notic | S2 Oh, Germany! I went there once, be | S3 Hmm, Belgium too? That's interesti | S4 So, it’s not just black, red, and 
+# EXAMINER(FDB-v2) 단계: S1 I was looking at flags and I notic | S2 Oh, Germany! Right. I always get t | S3 Wow, that's neat! So it's not just | S4 Yeah, you're right. I feel a littl
 
      0.00s  user  발화 시작: I was looking at flags and I noticed some have black, red, a
-     7.94s  <ret> 발화 (turn1 첫 프레임)
-     8.18s  agent 발화 시작: <ret> The flag of Germany uses black, red, and gold horizont
-     8.20s  user  발화 끝
-     9.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: [source: Britannica] The flag of Germany features three horizontal ban
-    12.71s  agent 발화 끝
-    13.24s  user  발화 시작: Oh, Germany! I went there once, beautiful country… but are t
-    22.08s  <ret> 발화 (turn3 첫 프레임)
-    22.32s  agent 발화 시작: <ret> Belgium’s flag has vertical bands of black, yellow, an
-    22.42s  user  발화 끝
-    24.06s  user  발화 시작: Right.
-    24.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.92s]: [source: Flags of the World] The flag of Belgium consists of three ver
-    24.69s  user  발화 끝
-    26.24s  agent 발화 끝
-    27.08s  user  발화 시작: Hmm, Belgium too? That's interesting. I wonder if there's a 
-    33.00s  <ret> 발화 (turn6 첫 프레임)
-    33.16s  agent 발화 시작: <ret> Austria's flag features red, white, and red bands, der
-    33.28s  user  발화 끝
-    34.36s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.79s]: [source: Wikipedia] The flag of Austria consists of three horizontal b
-    38.95s  agent 발화 끝
-    40.33s  user  발화 시작: So, it’s not just black, red, and yellow then, there are var
-    46.41s  agent 발화 시작: You’re very welcome! It’s wonderful you’re curious about the
-    46.45s  user  발화 끝
-    52.43s  agent 발화 끝
+     6.44s  user  발화 끝
+     6.59s  agent 발화 시작: It is an interesting color scheme, and many countries utiliz
+    15.16s  agent 발화 끝
+    15.68s  user  발화 시작: Well, I was wondering if you knew which country’s flag uses 
+    21.61s  <ret> 발화 (turn3 첫 프레임)
+    21.84s  agent 발화 시작: <ret> The country whose flag prominently features black, red
+    21.98s  user  발화 끝
+    23.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: [source: Britannica] The national flag of Germany features three horiz
+    25.66s  user  발화 시작: Right.
+    26.11s  user  발화 끝
+    30.05s  agent 발화 끝
+    30.91s  user  발화 시작: Oh, Germany! Right. I always get those European flags mixed 
+    37.91s  agent 발화 시작: Flags often carry historical and symbolic meaning, and Germa
+    38.00s  user  발화 끝
+    46.06s  agent 발화 끝
+    47.48s  user  발화 시작: Tell me about it! I’m all ears. What do the colors represent
+    52.13s  <ret> 발화 (turn8 첫 프레임)
+    52.44s  agent 발화 시작: <ret> The colors of the German flag represent determination 
+    52.53s  user  발화 끝
+    54.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.30s]: [source: History.com] Black represents determination, red signifies co
+    62.74s  agent 발화 끝
+    63.17s  user  발화 시작: Wow, that's neat! So it's not just random colors then.
+    67.20s  agent 발화 시작: Absolutely not! Colors are rarely chosen randomly for a nati
+    67.33s  user  발화 끝
+    76.71s  agent 발화 끝
+    77.18s  user  발화 시작: That makes sense. I guess I should study up on flags more. T
+    82.60s  user  발화 끝
+    83.01s  agent 발화 시작: You’re very welcome! It’s wonderful to see your curiosity. K
+    87.36s  user  발화 시작: Uh-huh.
+    87.85s  user  발화 끝
+    92.33s  agent 발화 끝
+    92.40s  user  발화 시작: Yeah, you're right. I feel a little smarter already.
+    95.13s  user  발화 끝
+    95.28s  agent 발화 시작: [happy] That's wonderful to hear! A little knowledge can go 
+   102.70s  agent 발화 끝

@@ -60,63 +60,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 So, the House is much bigger. I'm  | S3 What's the best way to get my name | S4 Great! Thanks, Nias, that’s really
+# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Interesting. I'm thinking about st | S3 I think mornings might work. I str | S4 So meditation can *lead* to mindfu
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.58s  <ret> 발화 (turn1 첫 프레임)
-     2.67s  agent 발화 시작: <ret> And I’m sorry, but I don’t currently have that specifi
-     2.77s  user  발화 끝
-     4.07s  user  발화 시작: Mhm.
-     4.26s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.24s]: (no information found)
-     4.57s  user  발화 끝
-     5.72s  user  발화 시작: Oh. Well, what about the US Senate? How many senators are th
-     5.90s  agent 발화 끝
-     9.73s  <ret> 발화 (turn4 첫 프레임)
-     9.79s  user  발화 끝
-     9.97s  agent 발화 시작: <ret> There are one hundred senators in the US Senate, with 
-    10.85s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.90s]: [source: Wikipedia] The United States Senate has one hundred senators,
-    12.88s  user  발화 시작: Okay.
-    13.42s  user  발화 끝
-    14.88s  agent 발화 끝
-    15.00s  user  발화 시작: Two from each state, right. And how does that compare to the
-    20.00s  agent 발화 시작: The House of Representatives has four hundred thirty-five me
-    20.00s  user  발화 끝
-    25.42s  agent 발화 끝
-    26.16s  user  발화 시작: So, the House is much bigger. I'm thinking of running for of
-    30.17s  agent 발화 시작: That’s wonderful to hear! It takes courage to consider publi
-    30.27s  user  발화 끝
-    31.51s  user  발화 시작: Yeah, yeah.
-    32.47s  user  발화 끝
-    34.47s  agent 발화 끝
-    35.36s  user  발화 시작: Yeah, but I’m not sure where to start. It seems so… daunting
-    38.90s  agent 발화 시작: It absolutely can feel that way. It's okay to feel overwhelm
-    39.06s  user  발화 끝
-    43.34s  agent 발화 끝
-    43.94s  user  발화 시작: What's the best way to get my name out there, do you think?
-    46.60s  agent 발화 시작: Building community connections is a great first step, volunt
-    46.71s  user  발화 끝
-    51.23s  agent 발화 끝
-    51.24s  user  발화 시작: Okay, that makes sense. What about fundraising? Is that hard
-    54.88s  <ret> 발화 (turn16 첫 프레임)
-    54.96s  agent 발화 시작: <ret> There are workshops on October twenty-seventh and Nove
-    55.03s  user  발화 끝
-    56.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.82s]: (tool result) Political Campaign Workshops: Oct 27, 7 PM, City Hall; N
-    58.19s  user  발화 시작: Okay.
-    58.77s  user  발화 끝
-    59.78s  agent 발화 끝
-    60.08s  user  발화 시작: That’s perfect! The twenty-seventh works. Can you sign me up
-    63.88s  <ret> 발화 (turn19 첫 프레임)
-    64.28s  agent 발화 시작: <ret> You're registered for the workshop on October twenty-s
-    64.34s  user  발화 끝
-    65.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) Registration confirmed for Political Campaign Workshop, 
-    66.86s  user  발화 시작: Right.
-    67.36s  user  발화 끝
-    68.33s  user  발화 시작: Great! Thanks, Nias, that’s really helpful.
-    68.40s  agent 발화 끝
-    70.91s  agent 발화 시작: You’re very welcome. It sounds like you’re taking positive s
-    71.10s  user  발화 끝
-    75.94s  agent 발화 끝
-    77.25s  user  발화 시작: I appreciate it. I feel a little less lost now.
-    80.11s  agent 발화 시작: That’s wonderful to hear. Remember, small steps forward are 
-    80.16s  user  발화 끝
-    84.45s  agent 발화 끝
+     2.98s  <ret> 발화 (turn1 첫 프레임)
+     3.06s  agent 발화 시작: <ret> And I’ve checked my resources, but unfortunately, I co
+     3.14s  user  발화 끝
+     4.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (no information found)
+     7.23s  user  발화 시작: Okay.
+     7.99s  user  발화 끝
+     9.79s  user  발화 시작: Oh. Well, what about the US Senate? How many senators are th
+     9.81s  agent 발화 끝
+    12.86s  <ret> 발화 (turn4 첫 프레임)
+    13.01s  user  발화 끝
+    13.10s  agent 발화 시작: <ret> The US Senate is comprised of senators representing ea
+    14.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.74s]: [source: Wikipedia] The United States Senate is composed of 100 senato
+    18.57s  user  발화 시작: Exactly.
+    19.39s  user  발화 끝
+    24.84s  agent 발화 끝
+    24.91s  user  발화 시작: That makes sense. I’m trying to understand how these bodies 
+    30.44s  <ret> 발화 (turn7 첫 프레임)
+    30.51s  agent 발화 시작: <ret> Some countries opt for a simpler structure, a single l
+    30.69s  user  발화 끝
+    32.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.85s]: [source: Britannica] A unicameral legislature is a lawmaking body with
+    41.36s  agent 발화 끝
+    42.29s  user  발화 시작: Interesting. I'm thinking about starting a new habit – regul
+    47.97s  agent 발화 시작: That's a wonderful goal! Starting small is key – even five m
+    48.13s  user  발화 끝
+    50.40s  user  발화 시작: Yeah, yeah.
+    51.59s  user  발화 끝
+    55.43s  agent 발화 끝
+    55.87s  user  발화 시작: Five minutes… okay, that sounds doable. Is there a best time
+    60.15s  agent 발화 시작: There isn’t one single ‘best’ time, but many find mornings b
+    60.35s  user  발화 끝
+    70.96s  agent 발화 끝
+    71.52s  user  발화 시작: I think mornings might work. I struggle with anxiety sometim
+    77.02s  agent 발화 시작: Meditation is often recommended for managing anxiety. It hel
+    77.16s  user  발화 끝
+    85.22s  agent 발화 끝
+    85.27s  user  발화 시작: That's good to hear. What’s the difference between mindfulne
+    88.66s  <ret> 발화 (turn16 첫 프레임)
+    89.05s  agent 발화 시작: <ret> Mindfulness is a state of being present, and meditatio
+    89.15s  user  발화 끝
+    90.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.85s]: [source: Mindful.org] Mindfulness is a mental state achieved by focusi
+    96.55s  user  발화 시작: Okay.
+    97.13s  user  발화 끝
+    99.90s  agent 발화 끝
+   100.16s  user  발화 시작: So meditation can *lead* to mindfulness?
+   103.12s  user  발화 끝
+   103.29s  agent 발화 시작: Exactly. Meditation is a tool, and mindfulness is the result
+   108.14s  user  발화 시작: Right.
+   108.91s  user  발화 끝
+   110.73s  user  발화 시작: That's a helpful way to think about it. Thanks, Nias.
+   110.80s  agent 발화 끝
+   113.34s  agent 발화 시작: You’re very welcome. It’s been a pleasure talking with you.
+   113.60s  user  발화 끝
+   116.71s  agent 발화 끝

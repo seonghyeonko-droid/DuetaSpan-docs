@@ -64,15 +64,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@5.26s⟩ one?
-[  5.58s][moshi] I’ve ⟦⚡SPAN@6.22s: (tool result) User agent set to SuperCrawler version 10.1.⟧ set the user agent to SuperCrawler version ten point one. It’s done now.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.33s⟩ one?
+[  4.65s][moshi] The ⟦⚡SPAN@5.29s: (tool result) User agent set to SuperCrawler version 10.1.⟧ user agent is now set to SuperCrawler version ten point one, as requested.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[  8.02s][user ] «backchannel» Mhm.
-[ 10.83s][user ] Hmm, or actually, make that version ten point ⟨ret@15.28s⟩ two.
-[ 15.52s][moshi] [happy] Of course. ⟦⚡SPAN@17.04s: (tool result) User agent set to SuperCrawler version 10.2.⟧ The user agent is now SuperCrawler version ten point two. A small change, but a helpful one, perhaps?
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.2"}}
-[ 24.29s][user ] That’s better. Now, can you check what the current IP address is?
-[ 28.74s][moshi] ⟨ret@28.66s⟩ It appears ⟦⚡SPAN@29.86s: (tool result) 203.0.113.42⟧ your current IP address is two zero three dot zero dot one one three dot forty-two.
+[  6.78s][user ] «backchannel» Mhm.
+[  9.27s][user ] Okay, good. And can you now check what the current IP address ⟨ret@13.55s⟩ is?
+[ 13.79s][moshi] Your current ⟦⚡SPAN@14.91s: (tool result) 203.0.113.42⟧ IP address is two zero three dot zero dot one one three dot forty-two.
       CALL: {"function": "get_ip_address", "arguments": {}}
-[ 36.52s][user ] Okay, good. Thanks.
-[ 37.77s][moshi] You’re very welcome. It sounds like you’re preparing for some focused web exploration.
+[ 19.21s][user ] Hmm, that seems… unusual. Is that definitely my IP?
+[ 25.00s][moshi] It’s understandable to question a result that feels off. Sometimes these things can be a little tricky to interpret.
+[ 32.18s][user ] I think something’s wrong. Can you try a different IP lookup service, just to be sure?
+[ 37.40s][moshi] ⟨ret@37.33s⟩ The alternative ⟦⚡SPAN@38.37s: (tool result) 198.51.100.17⟧ service shows your IP address is one nine eight dot five one dot one hundred dot seventeen.
+      CALL: {"function": "get_ip_address_alternative", "arguments": {}}

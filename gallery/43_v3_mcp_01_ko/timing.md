@@ -58,67 +58,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 애플 웹사이트 제품 중심으로 상세 지도를 만들어 줄 수  | S2 …혹시 아이폰 십오 프로 모델은 따로 표시되나? | S3 구백구십구달러? 생각보다 비싸네. 다른 색상은 뭐가 있어? | S4 좋아. 고마워.
+# EXAMINER(FDB-v2) 단계: S1 음… 애플 웹사이트를 좀 자세하게 분석해서 어떤 제품들이 있는 | S2 그건 좋네. 혹시 아이폰 관련 페이지는 좀 더 자세하게 볼 수 | S3 음… 아이폰 십오 프로 모델의 상세 스펙 페이지로 바로 이동할 | S4 좋아, 지금 당장은 됐어.
 
-     0.00s  user  발화 시작: 음… 애플 웹사이트 제품 중심으로 상세 지도를 만들어 줄 수 있어?
-     4.70s  <ret> 발화 (turn1 첫 프레임)
-     4.93s  agent 발화 시작: <ret> 지금 tavily-map 도구를 사용해서 애플 웹사이트 제품 관련 상세 지도를 생성해 드릴게요.
-     5.04s  user  발화 끝
-     6.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: <no information found>
-    10.59s  <ret> 발화 (turn2 첫 프레임)
-    10.83s  agent 발화 시작: <ret> 애플 웹사이트 제품 관련 지도 생성이 완료됐습니다. 총 스물일곱개 섹션이 확인됐어요.
-    11.01s  agent 발화 끝
-    12.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Map created: Apple website, products focus. 27 sections 
-    16.30s  agent 발화 끝
-    17.15s  user  발화 시작: 스물일곱개나? 좀 많네. 아이폰 관련 섹션만 보여줄 수 있어?
-    22.27s  <ret> 발화 (turn4 첫 프레임)
-    22.49s  agent 발화 시작: <ret> tavily-map 도구를 사용해서 아이폰 관련 섹션만 필터링해 드릴게요. 잠시만 기다려—
-    22.71s  user  발화 끝
-    24.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.29s]: <no information found>
-    28.05s  user  발화 시작: …혹시 아이폰 십오 프로 모델은 따로 표시되나?
-    28.78s  agent 발화 끝
-    30.95s  <ret> 발화 (turn6 첫 프레임)
-    31.14s  user  발화 끝
-    31.18s  agent 발화 시작: <ret> 아이폰 십오 프로 모델은 별도로 표시됩니다.
-    32.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.95s]: (tool result) iPhone 15 Pro section found. Detailed specs, pricing, an
-    34.02s  agent 발화 시작: 아이폰 십오 프로 섹션을 찾았습니다. 상세 스펙, 가격, 그리고 재고 현황이 표시됩니다.
-    34.13s  agent 발화 끝
-    36.05s  user  발화 시작: 어.
-    36.50s  user  발화 끝
-    39.81s  agent 발화 끝
-    40.48s  user  발화 시작: 가격이 얼마야? 지금 바로 확인할 수 있어?
-    43.23s  <ret> 발화 (turn10 첫 프레임)
-    43.53s  agent 발화 시작: <ret> 현재 아이폰 십오 프로의 가격을 확인해 드릴게요.
-    43.62s  user  발화 끝
-    45.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: <no information found>
-    46.46s  <ret> 발화 (turn11 첫 프레임)
-    46.70s  agent 발화 시작: <ret> 아이폰 십오 프로는 십이기가 RAM, 시작 가격은 구백구십구달러입니다.
-    46.77s  agent 발화 끝
-    48.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) iPhone 15 Pro: 12GB RAM, starting at $999.
-    48.67s  user  발화 시작: 우와.
-    49.30s  user  발화 끝
-    51.66s  user  발화 시작: 구백구십구달러? 생각보다 비싸네. 다른 색상은 뭐가 있어?
-    51.79s  agent 발화 끝
-    56.54s  <ret> 발화 (turn14 첫 프레임)
-    56.69s  agent 발화 시작: <ret> 다른 색상 옵션을 확인해 드릴게요.
-    56.80s  user  발화 끝
-    57.90s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.91s]: <no information found>
-    58.98s  <ret> 발화 (turn15 첫 프레임)
-    59.38s  agent 발화 시작: <ret> 아이폰 십오 프로 색상은 블랙 티타늄, 화이트 티타늄, 블루 티타늄, 내추럴 티타늄입니다.
-    59.60s  agent 발화 끝
-    60.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) iPhone 15 Pro colors: Black Titanium, White Titanium, Bl
-    64.70s  agent 발화 끝
-    64.75s  user  발화 시작: 블루 티타늄이 예쁘겠는데. 지금 바로 예약할 수 있어?
-    69.02s  <ret> 발화 (turn17 첫 프레임)
-    69.08s  agent 발화 시작: <ret> 블루 티타늄 모델 예약을 도와드릴게요.
-    69.38s  user  발화 끝
-    70.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.95s]: <no information found>
-    71.83s  <ret> 발화 (turn18 첫 프레임)
-    71.91s  agent 발화 시작: <ret> 예약이 완료되었습니다. 주문 번호는 칠 팔 구 사 오 육 일 이 삼입니다.
-    72.03s  agent 발화 끝
-    72.47s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.23s]: (tool result) Reservation confirmed. Order number: 789456123.
-    77.14s  agent 발화 끝
-    77.83s  user  발화 시작: 좋아. 고마워.
-    79.19s  agent 발화 시작: 즐거운 쇼핑 되세요.
-    79.26s  user  발화 끝
-    81.07s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 애플 웹사이트를 좀 자세하게 분석해서 어떤 제품들이 있는지 지도처럼 만들어 줄 수 있어?
+     6.29s  <ret> 발화 (turn1 첫 프레임)
+     6.52s  agent 발화 시작: <ret> 애플 웹사이트의 제품을 지도 형태로 분석해 달라는 요청이시군요. 애플 웹사이트 제품 분석 지도를 
+     6.63s  user  발화 끝
+     8.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.42s]: (tool result) map created: apple.com/products
+     9.71s  user  발화 시작: 그치.
+    10.15s  user  발화 끝
+    14.26s  agent 발화 끝
+    15.15s  user  발화 시작: 잠깐만, 그런데 그 지도에 가격 정보도 같이 표시해 줄 수 있어?
+    18.74s  <ret> 발화 (turn4 첫 프레임)
+    19.13s  agent 발화 시작: <ret> 가격 정보까지 표시해 달라고 하시니, 잠시만 기다려 주시겠어요.
+    19.36s  user  발화 끝
+    20.18s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.26s]: (tool result) price data unavailable for apple.com
+    23.26s  agent 발화 시작: 죄송합니다. 애플 웹사이트에서는 가격 정보를 지도에 표시하는 것이 불가능합니다.
+    23.39s  agent 발화 끝
+    26.23s  user  발화 시작: 그래.
+    26.68s  user  발화 끝
+    28.77s  <ret> 발화 (turn7 첫 프레임)
+    28.82s  agent 발화 끝
+    28.84s  agent 발화 시작: <ret> 다른 정보는 추가해 드릴 수 있습니다. 예를 들어 제품 카테고리별로 색깔을 다르게 표시하는 것은 
+    29.81s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.76s]: (tool result) color coding enabled: categories
+    35.60s  agent 발화 끝
+    35.62s  agent 발화 시작: 제품 카테고리별 색상 코딩을 적용했습니다. 지도를 다시 확인해 보시겠어요?
+    37.66s  user  발화 시작: 응응.
+    38.30s  user  발화 끝
+    40.94s  agent 발화 끝
+    41.51s  user  발화 시작: 그건 좋네. 혹시 아이폰 관련 페이지는 좀 더 자세하게 볼 수 있을까?
+    45.31s  <ret> 발화 (turn11 첫 프레임)
+    45.69s  agent 발화 시작: <ret> 아이폰 관련 페이지를 확대해서 보여 드리겠습니다.
+    45.82s  user  발화 끝
+    47.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.56s]: (tool result) map focused: apple.com/iphone
+    49.06s  agent 발화 시작: 아이폰 페이지에 지도를 초점을 맞췄습니다.
+    49.26s  agent 발화 끝
+    52.01s  agent 발화 끝
+    52.22s  user  발화 시작: 음… 아이폰 십오 프로 모델의 상세 스펙 페이지로 바로 이동할 수 있어?
+    56.39s  user  발화 끝
+    56.63s  <ret> 발화 (turn14 첫 프레임)
+    56.70s  agent 발화 시작: <ret> 아이폰 십오 프로 모델 상세 스펙 페이지로 이동해 드릴까요?
+    58.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) url: apple.com/iphone-15-pro-specs
+    60.14s  user  발화 시작: 좋아, 지금 당장은 됐어.
+    60.63s  agent 발화 끝
+    61.88s  agent 발화 시작: 혹시 다른 제품이나 웹사이트 분석이 필요하시면 언제든지 말씀해 주세요.
+    62.07s  user  발화 끝
+    66.33s  agent 발화 끝

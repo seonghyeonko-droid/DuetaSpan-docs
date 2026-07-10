@@ -68,83 +68,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Yeah, you're right. Maybe I’ll boo | S3 Actually, I should probably send a | S4 Could you search for bestsellers i
+# EXAMINER(FDB-v2) 단계: S1 Begin watching for a weather updat | S2 Hmm, moderate. Okay. I'll keep tha | S3 Actually, could you book me a tabl | S4 Wonderful! You’re a lifesaver.
 
      0.00s  user  발화 시작: Begin watching for a weather update from weather dot example
-     3.88s  <ret> 발화 (turn1 첫 프레임)
-     4.11s  agent 발화 시작: <ret> The temperature is currently 22 degrees Celsius, with 
-     4.21s  user  발화 끝
-     5.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) Temperature is 22 degrees Celsius, partly cloudy.
-     9.71s  agent 발화 끝
-    10.25s  user  발화 시작: That's good to know. I’m planning a picnic tomorrow, actuall
-    14.31s  agent 발화 시작: That sounds lovely! A picnic is a wonderful way to enjoy the
-    14.41s  user  발화 끝
-    16.22s  user  발화 시작: Right.
-    16.90s  user  발화 끝
-    18.92s  user  발화 시작: I wonder if it will rain though…
-    19.03s  agent 발화 끝
-    20.49s  <ret> 발화 (turn6 첫 프레임)
-    20.81s  agent 발화 시작: <ret> I've checked the forecast. Tomorrow will be 20 degrees
-    20.81s  user  발화 끝
-    22.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) Tomorrow: 20 degrees Celsius, 60% chance of rain.
-    26.88s  agent 발화 끝
-    27.04s  user  발화 시작: Oh, hmm.
-    28.05s  agent 발화 시작: It might be wise to have a backup plan, just in case.
-    28.27s  user  발화 끝
-    29.30s  user  발화 시작: Yeah.
-    29.93s  user  발화 끝
-    31.38s  agent 발화 끝
-    32.20s  user  발화 시작: Yeah, you're right. Maybe I’ll book a table inside somewhere
-    41.37s  user  발화 끝
-    41.42s  <ret> 발화 (turn11 첫 프레임)
-    41.57s  agent 발화 시작: <ret> The Rose Garden has availability tomorrow at 1:15 PM f
-    43.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) The Rose Garden: Available tomorrow at 1:15 PM for two p
-    47.62s  user  발화 시작: 1:15 is fine. Could you book it for me, please?
-    47.82s  agent 발화 끝
-    50.64s  <ret> 발화 (turn13 첫 프레임)
-    50.72s  agent 발화 시작: <ret> Excellent. Your reservation at The Rose Garden is conf
-    50.99s  user  발화 끝
-    52.08s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.64s]: (tool result) Reservation confirmed: The Rose Garden, tomorrow, 1:15 P
-    55.40s  user  발화 시작: Oh.
-    55.84s  user  발화 끝
-    60.37s  agent 발화 끝
-    60.76s  user  발화 시작: Perfect!
-    61.48s  user  발화 끝
-    61.53s  agent 발화 시작: I’m glad I could help with that. It's always good to be prep
-    65.52s  agent 발화 끝
-    67.29s  user  발화 시작: Actually, I should probably send a reminder to my friend, Sa
-    76.54s  <ret> 발화 (turn18 첫 프레임)
-    76.94s  agent 발화 시작: <ret> A reminder has been sent to Sarah regarding the reserv
-    77.11s  user  발화 끝
-    78.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Reminder sent to Sarah: Rose Garden, tomorrow 1:15 PM.
-    80.31s  user  발화 시작: Right.
-    80.95s  user  발화 끝
-    84.41s  agent 발화 끝
-    84.80s  user  발화 시작: Wonderful, thank you!
-    86.54s  user  발화 끝
-    86.67s  agent 발화 시작: You’re very welcome. It's all taken care of.
-    87.62s  user  발화 시작: Yeah.
-    87.93s  user  발화 끝
-    89.14s  user  발화 시작: I was also hoping to find a good book to read while I wait f
-    89.31s  agent 발화 끝
-    95.46s  agent 발화 시작: A thrilling read sounds perfect for a relaxing afternoon.
-    95.72s  user  발화 끝
-    96.58s  user  발화 시작: Mhm.
-    97.21s  user  발화 끝
-    99.49s  agent 발화 끝
-   101.31s  user  발화 시작: Could you search for bestsellers in the mystery and thriller
-   105.32s  <ret> 발화 (turn27 첫 프레임)
-   105.38s  user  발화 끝
-   105.40s  agent 발화 시작: <ret> The top three bestsellers in mystery and thriller are 
-   107.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) Top 3: “The Silent Patient”, “Gone Girl”, “The Guest Lis
-   112.03s  agent 발화 끝
-   112.25s  user  발화 시작: “The Silent Patient” sounds good.
-   114.37s  agent 발화 시작: [happy] That's an excellent choice! It's a very popular and 
-   114.45s  user  발화 끝
-   116.74s  user  발화 시작: Right.
-   117.23s  user  발화 끝
-   119.07s  user  발화 시작: Thanks, Driaus. You've been a huge help.
-   119.23s  agent 발화 끝
-   121.92s  agent 발화 시작: It was my pleasure. I’m glad I could assist you in planning 
-   121.93s  user  발화 끝
-   127.11s  agent 발화 끝
+     4.18s  <ret> 발화 (turn1 첫 프레임)
+     4.42s  agent 발화 시작: <ret> I’m now tracking the weather for you from weather dot 
+     4.55s  user  발화 끝
+     6.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) Temperature is 25 degrees Celsius, partly cloudy.
+    11.19s  agent 발화 끝
+    11.74s  user  발화 시작: That's good to know. I’m thinking of going for a walk later.
+    15.12s  agent 발화 시작: A walk sounds lovely. Perhaps you'd like me to check the pol
+    15.15s  user  발화 끝
+    17.01s  user  발화 시작: Right.
+    17.51s  user  발화 끝
+    19.69s  user  발화 시작: Oh, yes, please. That would be helpful.
+    19.79s  agent 발화 끝
+    21.87s  <ret> 발화 (turn6 첫 프레임)
+    22.19s  user  발화 끝
+    22.19s  agent 발화 시작: <ret> The pollen count is moderate at pollen dot example dot
+    23.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Pollen count is moderate.
+    28.17s  agent 발화 끝
+    28.38s  user  발화 시작: Hmm, moderate. Okay. I'll keep that in mind.
+    31.73s  agent 발화 시작: It’s always best to be prepared, especially if you have sens
+    31.95s  user  발화 끝
+    33.75s  user  발화 시작: Oh.
+    34.20s  user  발화 끝
+    35.75s  agent 발화 끝
+    36.51s  user  발화 시작: I do. Hey, do you think I should pack a light jacket?
+    39.47s  user  발화 끝
+    39.89s  agent 발화 시작: Given the partly cloudy conditions and a temperature of 25 d
+    43.85s  user  발화 시작: Oh.
+    44.48s  user  발화 끝
+    47.71s  user  발화 시작: Yeah, you're probably right. I'm also trying to decide what 
+    48.04s  agent 발화 끝
+    51.55s  user  발화 끝
+    51.68s  agent 발화 시작: Deciding on dinner can be a challenge. I can search for near
+    56.56s  user  발화 시작: Actually, could you book me a table at La Piazza for 7:30?
+    56.72s  agent 발화 끝
+    60.34s  <ret> 발화 (turn16 첫 프레임)
+    60.59s  user  발화 끝
+    60.66s  agent 발화 시작: <ret> I've confirmed your reservation at La Piazza for 7:30 
+    60.84s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.67s]: (tool result) Reservation confirmed for La Piazza at 7:30 PM. Confirma
+    63.68s  user  발화 시작: Right.
+    64.13s  user  발화 끝
+    67.29s  user  발화 시작: Excellent! That’s perfect, thank you.
+    67.33s  agent 발화 끝
+    69.42s  user  발화 끝
+    69.88s  agent 발화 시작: You’re very welcome. It’s my pleasure to assist you with arr
+    71.36s  user  발화 시작: Yeah.
+    71.86s  user  발화 끝
+    73.77s  agent 발화 끝
+    73.90s  user  발화 시작: I also need to send a reminder to myself to pick up dry clea
+    77.26s  <ret> 발화 (turn22 첫 프레임)
+    77.58s  agent 발화 시작: <ret> I’ve set a reminder for tomorrow to pick up your dry c
+    77.69s  user  발화 끝
+    78.30s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.10s]: (tool result) Reminder set for tomorrow: Pick up dry cleaning.
+    78.43s  user  발화 시작: Mhm.
+    78.88s  user  발화 끝
+    80.68s  agent 발화 끝
+    80.71s  user  발화 시작: Wonderful! You’re a lifesaver.
+    82.97s  user  발화 끝
+    83.08s  agent 발화 시작: [happy] I’m glad I could help. It’s all about streamlining y
+    86.85s  user  발화 시작: It really is. I think that’s everything for now.
+    87.10s  agent 발화 끝
+    89.29s  user  발화 끝
+    89.75s  agent 발화 시작: Very well. Enjoy your walk and your dinner at La Piazza.
+    91.52s  user  발화 시작: Right.
+    91.97s  user  발화 끝
+    93.26s  user  발화 시작: Thanks, I will.
+    93.45s  agent 발화 끝
+    94.27s  user  발화 끝
+    94.52s  agent 발화 시작: Have a pleasant day.
+    96.00s  agent 발화 끝

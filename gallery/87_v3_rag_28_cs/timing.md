@@ -63,27 +63,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 정부 부처들 읽다가… 퇴역 군인부 언제 시작했는지 궁금해 | S2 천구백삼십년? 솔직히 생각보다 엄청 최근인데. 훨씬 오래된 줄 | S3 그러면 연금국에서 남북 전쟁 때 처리했겠네… 근데 그 *전*에 | S4 와, 천육백삼십육년! 진짜 대박이다. 나라 시작할 때부터 거의
+# EXAMINER(FDB-v2) 단계: S1 어, 정부 부처에 대해 읽고 있었는데…… | S2 그, 보훈처는 언제 시작했어? | S3 7월 1930년? 생각보다 꽤 최근인데. 진짜 그럴까? | S4 그렇구나, 그냥 새로 생긴 게 아니라 합쳐진 거였네? 그게 더
 
-     0.00s  user  발화 시작: 어, 정부 부처들 읽다가… 퇴역 군인부 언제 시작했는지 궁금해.
-     4.11s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> 네, 퇴역 군인부는 호버 대통령님께서 천구백삼십년에 설립하셨습니다.
-     4.58s  user  발화 끝
-     5.71s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.97s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-    10.39s  user  발화 시작: 천구백삼십년? 솔직히 생각보다 엄청 최근인데. 훨씬 오래된 줄 알았어.
-    10.48s  agent 발화 끝
-    15.43s  <ret> 발화 (turn3 첫 프레임)
-    15.66s  agent 발화 시작: <ret> 사실, 퇴역 군인들을 위한 지원은 더 오래 전부터 있었어요. 천구백삼십년 이전에 퇴역 군인 관련 
-    15.90s  user  발화 끝
-    17.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: [source: History.com] Prior to 1930, veterans’ affairs were managed by
-    28.23s  agent 발화 끝
-    29.00s  user  발화 시작: 그러면 연금국에서 남북 전쟁 때 처리했겠네… 근데 그 *전*에는? 독립 전쟁 참전 용사들은?
-    34.94s  <ret> 발화 (turn5 첫 프레임)
-    35.17s  agent 발화 시작: <ret> 네, 퇴역 군인들에 대한 지원은 천육백삼십육년으로 거슬러 올라가요. 순례자들이 장애가 있는 군인들
-    35.35s  user  발화 끝
-    36.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.32s]: [source: VA.gov] Initially, assistance to veterans dates back to 1636,
-    38.13s  user  발화 시작: 어어.
-    38.94s  user  발화 끝
-    43.97s  user  발화 시작: 와, 천육백삼십육년! 진짜 대박이다. 나라 시작할 때부터 거의 신경 썼다는 거네.
-    44.49s  agent 발화 끝
-    49.72s  user  발화 끝
+     0.00s  user  발화 시작: 어, 정부 부처에 대해 읽고 있었는데……
+     2.58s  user  발화 끝
+     3.94s  user  발화 시작: 그, 보훈처는 언제 시작했어?
+     5.96s  <ret> 발화 (turn2 첫 프레임)
+     6.36s  agent 발화 시작: <ret> 음, 여러 기관이 얼마나 오래되었는지 생각해보면 흥미로운데요, 보훈부는 특정 요구에 대한 대응으로
+     6.58s  user  발화 끝
+     7.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    12.94s  agent 발화 시작: 보훈부는 공식적으로 1930년 7월 21일에 설립되었습니다.
+    13.07s  agent 발화 끝
+    17.43s  user  발화 시작: 7월 1930년? 생각보다 꽤 최근인데. 진짜 그럴까?
+    17.47s  agent 발화 끝
+    21.19s  <ret> 발화 (turn5 첫 프레임)
+    21.43s  agent 발화 시작: <ret> 네, 천구백삼십 년 이전에 참전 용사 혜택은 연금국을 포함한 여러 기관에서 처리했습니다.
+    21.59s  user  발화 끝
+    23.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.73s]: [source: VA.gov] Prior to 1930, veteran benefits were administered by 
+    27.17s  agent 발화 끝
+    27.31s  user  발화 시작: 그렇구나, 그냥 새로 생긴 게 아니라 합쳐진 거였네? 그게 더 말이 되네. 그럼 보훈국은 정확히 뭘 했어?
+    33.10s  user  발화 끝
+    33.16s  <ret> 발화 (turn7 첫 프레임)
+    33.32s  agent 발화 시작: <ret> 네, 천구백이십일 년에 만들어진 보훈국은 제1차 세계 대전 참전 용사들에게 재활, 의료 서비스, 
+    35.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: [source: History.com] The Veterans Bureau, established in 1921, provid
+    41.57s  agent 발화 끝

@@ -56,74 +56,46 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.92s⟩ May tenth.
-[  4.32s][moshi] There are ⟦⚡SPAN@5.92s: (tool result) Buses found: 14:30, $285; 18:00, $310; 22:15, $295.⟧ three buses: 2:30 PM at two hundred eighty-five dollars, 6 PM at three-ten, and 10:15 PM at two ninety-five.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
-[ 11.18s][user ] «backchannel» Oh.
-[ 14.97s][user ] That 2:30 one sounds good. Book it.
-[ 17.70s][moshi] ⟨ret@17.47s⟩ Excellent. Your ⟦⚡SPAN@19.47s: (tool result) Booking confirmed: ID 7XW9R.⟧ booking is confirmed with ID 7XW9R.
-      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_id": "14:30", "num_passengers": 3}}
-[ 23.36s][user ] Can you remind me about that bus on May ninth?
-[ 26.14s][moshi] May ninth? That's a day before your trip.
-[ 28.11s][user ] «backchannel» Yeah.
-[ 29.88s][user ] …actually, make that May eighth, just to be safe.
-[ 33.27s][moshi] ⟨ret@32.96s⟩ A ⟦⚡SPAN@34.00s: (tool result) Reminder set for May eighth at 10:00 AM.⟧ reminder is set for May eighth at ten AM regarding your bus.
-      CALL: {"function": "Reminders_3_SetReminder", "arguments": {"date": "May eighth", "time": "10:00", "content": "Bus to Denver"}}
-[ 39.10s][user ] What’s the weather like in Denver on May ⟨ret@41.59s⟩ tenth?
-[ 41.67s][moshi] The forecast for ⟦⚡SPAN@43.59s: (tool result) Denver, May tenth: 68°F, sunny.⟧ Denver on May tenth is sixty-eight degrees and sunny.
-      CALL: {"function": "Weather_3_GetWeather", "arguments": {"city": "Denver", "date": "May tenth"}}
-[ 48.51s][user ] Are there any good Italian restaurants near Union Station in ⟨ret@52.36s⟩ Denver?
-[ 52.60s][moshi] Dio Mio has four ⟦⚡SPAN@54.36s: (tool result) Dio Mio Handmade Pasta, 4.5 stars; Stoic & Genuine, 4.2 stars.⟧ and a half stars, and Stoic & Genuine has four point two.
-      CALL: {"function": "Restaurants_3_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Union Station, Denver"}}
-[ 58.85s][user ] What’s the address for ⟨ret@60.40s⟩ Dio Mio?
-[ 60.80s][moshi] The ⟦⚡SPAN@61.92s: (tool result) 1473 Larimer St, Denver, CO 80202.⟧ address for Dio Mio is fourteen seventy-three Larimer Street, Denver, Colorado, eight-oh-two-oh-two.
-      CALL: {"function": "Restaurants_3_GetRestaurantDetails", "arguments": {"restaurant_name": "Dio Mio Handmade Pasta"}}
-[ 66.77s][user ] «backchannel» Mhm.
-[ 70.27s][user ] Okay, great. And what about hotels near the Denver Art ⟨ret@73.91s⟩ Museum?
-[ 74.15s][moshi] The Maven ⟦⚡SPAN@75.51s: (tool result) The Maven Hotel, $250; Hampton Inn, $180; Hyatt Place, $220.⟧ is two hundred fifty dollars, Hampton Inn is one eighty, and Hyatt Place is two twenty.
-      CALL: {"function": "Hotels_3_FindHotels", "arguments": {"location": "Denver Art Museum"}}
-[ 82.47s][user ] Is the Maven ⟨ret@83.87s⟩ pet-friendly?
-[ 84.27s][moshi] Yes, The Maven ⟦⚡SPAN@85.87s: (tool result) Yes, pet-friendly, $75 fee per stay.⟧ is pet-friendly with a seventy-five dollar fee per stay.
-      CALL: {"function": "Hotels_3_GetHotelDetails", "arguments": {"hotel_name": "The Maven Hotel"}}
-[ 87.54s][user ] «backchannel» Right.
-[ 89.56s][user ] Book a room at the Hampton Inn for one night…
-[ 94.00s][user ] …May tenth.
-[ 95.07s][moshi] ⟨ret@94.91s⟩ Your room at the ⟦⚡SPAN@96.91s: (tool result) Room booked, confirmation number 2B4K6.⟧ Hampton Inn is booked; confirmation number two B four K six.
-      CALL: {"function": "Hotels_3_BookHotel", "arguments": {"hotel_name": "Hampton Inn", "check_in_date": "May tenth", "num_nights": 1}}
-[ 97.78s][user ] «backchannel» Yeah.
-[101.06s][user ] Could you set a reminder to pack my suitcase on May seventh at ⟨ret@105.13s⟩ 6 PM?
-[105.45s][moshi] ⟦⚡SPAN@105.93s: (tool result) Reminder set for May seventh at 6 PM.⟧ A reminder to pack your suitcase is set for May seventh at six PM.
-      CALL: {"function": "Reminders_3_SetReminder", "arguments": {"date": "May seventh", "time": "18:00", "content": "Pack suitcase"}}
-[107.58s][user ] «backchannel» Yeah, totally.
-[111.29s][user ] What’s the fastest route from the Hampton Inn to the Denver Art ⟨ret@114.77s⟩ Museum?
-[115.08s][moshi] Take I-25 ⟦⚡SPAN@116.77s: (tool result) I-25 N, 15 minutes, 8.2 miles.⟧ North for fifteen minutes, about eight point two miles.
-      CALL: {"function": "Navigation_3_GetRoute", "arguments": {"start": "Hampton Inn Denver", "end": "Denver Art Museum"}}
-[121.22s][user ] What time does the Denver Art Museum open on May tenth?
-[124.83s][moshi] ⟨ret@124.67s⟩ The Denver Art Museum ⟦⚡SPAN@126.67s: (tool result) 10:00 AM to 5:00 PM.⟧ opens at ten AM and closes at five PM on May tenth.
-      CALL: {"function": "Museums_3_GetMuseumHours", "arguments": {"museum_name": "Denver Art Museum", "date": "May tenth"}}
-[128.89s][user ] «backchannel» Yeah.
-[131.53s][user ] Can you find me a pharmacy near the ⟨ret@133.72s⟩ hotel?
-[134.12s][moshi] ⟦⚡SPAN@134.22s: (tool result) Walgreens, 0.5 miles; CVS, 0.8 miles.⟧ Walgreens is half a mile away, and CVS is point eight miles.
-      CALL: {"function": "Pharmacies_3_FindPharmacies", "arguments": {"location": "Hampton Inn Denver"}}
-[136.82s][user ] «backchannel» Yeah.
-[139.51s][user ] Is Walgreens open now?
-[141.35s][moshi] ⟨ret@141.27s⟩ Walgreens is ⟦⚡SPAN@142.71s: (tool result) Open until 10:00 PM.⟧ open until ten PM tonight.
-      CALL: {"function": "Pharmacies_3_GetPharmacyHours", "arguments": {"pharmacy_name": "Walgreens"}}
-[144.99s][user ] Okay, good. What’s the latest news about travel restrictions?
-[148.58s][moshi] Travel restrictions are always changing, so it’s good to stay informed.
-[153.30s][user ] Can you check if my flight home on May thirteenth is ⟨ret@156.51s⟩ on time?
-[156.91s][moshi] Your flight on ⟦⚡SPAN@158.51s: (tool result) Flight is on time.⟧ May thirteenth is currently on time.
-      CALL: {"function": "Flights_3_GetFlightStatus", "arguments": {"flight_date": "May thirteenth"}}
-[161.74s][user ] Great. And what’s the exchange rate between US dollars and ⟨ret@166.06s⟩ Euros?
-[166.38s][moshi] One ⟦⚡SPAN@167.18s: (tool result) 1 USD = 0.92 EUR.⟧ US dollar equals point nine-two Euros at this moment.
-      CALL: {"function": "Currency_3_GetExchangeRate", "arguments": {"from_currency": "USD", "to_currency": "EUR"}}
-[168.21s][user ] «backchannel» Yeah, totally.
-[170.91s][user ] Remind me to buy a travel adapter on May ninth at 8 PM.
-[174.96s][moshi] ⟨ret@174.88s⟩ A reminder to ⟦⚡SPAN@176.16s: (tool result) Reminder set for May ninth at 8 PM.⟧ buy a travel adapter is set for May ninth at eight PM.
-      CALL: {"function": "Reminders_3_SetReminder", "arguments": {"date": "May ninth", "time": "20:00", "content": "Buy travel adapter"}}
-[176.54s][user ] «backchannel» Okay.
-[180.72s][user ] What’s the population of ⟨ret@182.21s⟩ Denver?
-[182.61s][moshi] As of ⟦⚡SPAN@184.21s: [source: Wikipedia] Denver is the most populous city in Colorado, with an estimated population of 715,522 as o⟧ 2023, Denver’s estimated population is seven hundred fifteen thousand five hundred twenty-two.
-[185.33s][user ] «backchannel» Okay.
-[192.12s][user ] That’s a lot of people. Is there anything else I should prepare for the trip?
-[196.40s][moshi] [curious] Perhaps thinking about what brings you joy during travel can help ease any anxieties. Sometimes, simply focusing on the positive aspects of a journey can make all the difference.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.91s⟩ May tenth.
+[  4.31s][moshi] I found fourteen ⟦⚡SPAN@5.91s: (tool result) Buses found: 14, prices from $150.⟧ buses from Chicago to Denver on May tenth, with prices starting at one hundred and fifty dollars.
+[  7.66s][user ] «backchannel» Yeah.
+[ 12.55s][user ] That’s a bit high. Can we look at May eleventh instead.
+[ 15.65s][moshi] ⟨ret@15.41s⟩ …eighteen buses are available ⟦⚡SPAN@17.41s: (tool result) Buses found: 18, prices from $120.⟧ on May eleventh, and the prices start at one hundred and twenty dollars.
+[ 22.64s][user ] Much better. Are there any direct ⟨ret@25.21s⟩ buses?
+[ 25.37s][moshi] There are five ⟦⚡SPAN@27.21s: (tool result) 5 direct buses found, prices from $180.⟧ direct buses, with prices starting from one hundred and eighty dollars.
+[ 32.25s][user ] Okay, book me the cheapest direct bus for three people on May ⟨ret@36.21s⟩ eleventh.
+[ 36.60s][moshi] ⟦⚡SPAN@36.71s: (tool result) Booking confirmed: Ref #AB567, total $540.⟧ Your booking is confirmed, reference number AB567, for a total of five hundred and forty dollars.
+      CALL: {"function": "Buses_4_BookBus", "arguments": {"bus_id": "1234", "num_passengers": "3", "date": "May eleventh", "price": "$180"}}
+[ 41.44s][user ] «backchannel» Really?
+[ 46.81s][user ] Great. Can you set a reminder to leave for the bus station at 6 AM on May ⟨ret@51.97s⟩ eleventh?
+[ 52.37s][moshi] A reminder is set ⟦⚡SPAN@53.97s: (tool result) Reminder set for May eleventh, 6:00 AM.⟧ for six AM on May eleventh to leave for the bus station.
+      CALL: {"function": "Reminders_1_SetReminder", "arguments": {"time": "6:00 AM", "date": "May eleventh", "reminder_text": "Leave for bus station"}}
+[ 58.36s][user ] Perfect. What’s the weather forecast for Denver on May ⟨ret@62.32s⟩ eleventh?
+[ 62.55s][moshi] The forecast for Denver ⟦⚡SPAN@64.32s: (tool result) Denver: Sunny, high 75°F, low 50°F.⟧ on May eleventh is sunny, with a high of seventy-five and a low of fifty degrees Fahrenheit.
+[ 71.09s][user ] That sounds lovely. I’m a little anxious about the trip, though.
+[ 74.17s][moshi] Traveling can sometimes bring up anxieties, it's perfectly natural to feel that way. Perhaps we could explore some grounding exercises?
+[ 81.11s][user ] «backchannel» Mhm.
+[ 83.99s][user ] That might help. But first.
+[ 87.17s][moshi] «interrupted» Before we delve into techniques, let's—
+[ 89.53s][user ] «interrupts_prev» …actually, could you tell me if there are any good vegetarian restaurants near the Denver bus station?
+[ 94.62s][moshi] ⟨ret@94.39s⟩ I found ⟦⚡SPAN@95.67s: (tool result) 3 vegetarian restaurants found within 1 mile.⟧ three vegetarian restaurants within one mile of the Denver bus station.
+[100.33s][user ] Read me their names and ⟨ret@102.05s⟩ ratings.
+[102.44s][moshi] The restaurants are ⟦⚡SPAN@104.05s: (tool result) 1. Green Leaf (4.5 stars), 2. Root Bistro (4.2 stars), 3. Veggie Heaven (3.8 stars).⟧ Green Leaf, with four and a half stars, Root Bistro with four and two stars, and Veggie Heaven with three and eight tenths.
+[108.48s][user ] «backchannel» Right.
+[112.26s][user ] Green Leaf sounds good. Can you get me directions from the bus station to Green Leaf?
+[117.34s][moshi] ⟨ret@117.19s⟩ It’s a fifteen-minute walk, ⟦⚡SPAN@119.19s: (tool result) Walking: 15 mins, 0.7 miles.⟧ about seven tenths of a mile, from the bus station to Green Leaf.
+      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"start": "Denver Bus Station", "end": "Green Leaf"}}
+[120.08s][user ] «backchannel» Yeah.
+[123.28s][user ] That’s walkable. Thanks!
+[125.27s][moshi] You are very welcome. It’s good to have a plan for a meal already.
+[127.18s][user ] «backchannel» Yeah, totally.
+[130.58s][user ] I'm also trying to cut down on sugar. Any tips?
+[133.59s][moshi] Reducing sugar intake is a wonderful goal. Start by identifying hidden sugars in your usual foods and drinks.
+[142.75s][user ] That’s a good point. I didn’t realize how much sugar is in yogurt.
+[146.56s][moshi] It’s surprising how often sugar is added to seemingly healthy foods. Reading labels carefully is a great first step.
+[150.37s][user ] «backchannel» Really?
+[155.86s][user ] Okay. I think I’m ready for the trip now.
+[158.73s][moshi] [happy] It sounds as though you’ve thoughtfully prepared, and that's a wonderful feeling.
+[162.26s][user ] «backchannel» Yeah, yeah.
+[163.50s][user ] Yes, I am. Thanks for your help, Oruus.
+[166.04s][moshi] It was a pleasure assisting you. Enjoy your trip to Denver.

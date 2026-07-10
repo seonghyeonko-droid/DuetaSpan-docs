@@ -68,109 +68,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해. | S2 좋네. 일본어 몇 마디 배워두는 게 좋겠지? | S3 완벽하네. 그걸로 대여해 줘. | S4 교토랑 오사카에 당일치기로 갈 계획이야.
+# EXAMINER(FDB-v2) 단계: S1 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해. | S2 완벽해! 그리고, 지금 미국 달러랑 일본 엔 환율이 얼마야? | S3 일본 가기 전에 일본어 좀 연습해야 할까? | S4 그 티켓 가격은 얼마야?
 
      0.00s  user  발화 시작: 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해.
-     3.55s  <ret> 발화 (turn1 첫 프레임)
-     3.71s  agent 발화 시작: <ret> 네, 작년 12월 24일 도쿄는 부분적으로 흐렸고, 최고 기온은 12도, 최저 기온은 6도였어요.
-     3.79s  user  발화 끝
-     4.99s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.72s]: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 6 degr
-    10.43s  agent 발화 끝
-    10.79s  user  발화 시작: 그래, 알겠어. 그럼 도쿄행 비행기 좀 예약해 줘.
-    14.31s  user  발화 끝
-    14.39s  agent 발화 시작: 출발지는 어디로 할까요?
-    15.15s  user  발화 시작: 응.
-    15.36s  user  발화 끝
-    16.09s  agent 발화 끝
-    17.19s  user  발화 시작: 뉴욕에서 출발하는 걸로 해 줘. 그리고 1월 15일에 떠나고 싶어.
-    21.16s  <ret> 발화 (turn6 첫 프레임)
-    21.48s  agent 발화 시작: <ret> 네, 뉴욕에서 도쿄행 항공편이 1월 15일에 예약됐습니다. 확인 코드는 알파729예요.
-    21.54s  user  발화 끝
-    23.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Flight booked: New York to Tokyo, January 15th, confirma
-    25.57s  user  발화 시작: 음.
-    26.02s  user  발화 끝
-    27.82s  agent 발화 끝
-    27.90s  user  발화 시작: 좋네! 호텔은 어때? 시부야 교차로 근처로.
-    31.68s  <ret> 발화 (turn9 첫 프레임)
-    31.69s  user  발화 끝
-    31.76s  agent 발화 시작: <ret> 1월 16일부터 시부야 엑셀 호텔 도쿄가 하루 250달러에 이용 가능합니다.
-    32.18s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.83s]: (tool result) Shibuya Excel Hotel Tokyu available, check-in January 16
-    37.59s  agent 발화 끝
-    38.56s  user  발화 시작: 완벽하네. 3박 예약해 줘.
-    39.93s  <ret> 발화 (turn11 첫 프레임)
-    40.33s  agent 발화 시작: <ret> 좋습니다! 시부야 엑셀 호텔 도쿄 3박 숙박이 확인되었습니다. 확인 코드는 베타314예요.
-    40.54s  user  발화 끝
-    41.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Hotel booked: Shibuya Excel Hotel Tokyu, Jan 16-19, conf
-    47.47s  agent 발화 끝
-    47.60s  user  발화 시작: 좋네. 일본어 몇 마디 배워두는 게 좋겠지?
-    50.18s  user  발화 끝
-    50.24s  agent 발화 시작: 네, 현지 언어를 사용하려는 노력을 보이는 건 항상 감사하게 생각하는 일이에요.
-    55.24s  agent 발화 끝
-    55.35s  user  발화 시작: 좋은 온라인 강좌 좀 찾아줄래?
-    56.95s  <ret> 발화 (turn15 첫 프레임)
-    57.35s  agent 발화 시작: <ret> 듀오링고 일본어, 바벨 일본어, 로제타 스톤 일본어 이렇게 세 가지 옵션이 있습니다.
-    57.56s  user  발화 끝
-    58.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) Duolingo Japanese, Babbel Japanese, and Rosetta Stone Ja
-    62.87s  user  발화 시작: 음, 듀오링고가 괜찮아 보이네. 그건 사용자 평점이 어때?
-    63.28s  agent 발화 끝
-    66.64s  <ret> 발화 (turn17 첫 프레임)
-    66.96s  agent 발화 시작: <ret> 듀오링고 일본어는 별점 4.5개에, 5만 개가 넘는 리뷰가 있습니다.
-    67.12s  user  발화 끝
-    67.68s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.36s]: (tool result) Duolingo Japanese: 4.5 stars, over 50,000 reviews.
-    70.78s  user  발화 시작: 응.
-    71.08s  user  발화 끝
-    72.33s  agent 발화 끝
-    72.91s  user  발화 시작: 알았어, 그거 한번 살펴볼게. 그럼 도쿄에서 포켓 와이파이 대여는 어때?
-    77.21s  <ret> 발화 (turn20 첫 프레임)
-    77.36s  agent 발화 시작: <ret> 사쿠라 모바일 포켓 와이파이가 7일에 50달러에 대여 가능합니다.
-    77.48s  user  발화 끝
-    79.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Sakura Mobile Pocket Wifi available, 7 days, $50.
-    81.71s  agent 발화 끝
-    82.14s  user  발화 시작: 완벽하네. 그걸로 대여해 줘.
-    84.25s  <ret> 발화 (turn22 첫 프레임)
-    84.41s  agent 발화 시작: <ret> 좋습니다! 사쿠라 모바일 포켓 와이파이 7일 대여가 확인되었습니다. 확인 코드는 감마881입니다.
-    84.45s  user  발화 끝
-    86.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: (tool result) Rental confirmed: Sakura Mobile Pocket Wifi, 7 days, ord
-    86.39s  user  발화 시작: 어어.
-    86.89s  user  발화 끝
-    90.61s  agent 발화 끝
-    91.14s  user  발화 시작: 다이어트 제한에 대해 내가 너한테 말했는지 기억이 안 나네…
-    94.86s  <ret> 발화 (turn25 첫 프레임)
-    94.97s  user  발화 끝
-    95.18s  agent 발화 시작: <ret> 다이어트 제한에 대한 기록은 없는 것 같습니다. 말씀해 주시겠어요?
-    96.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (no information found)
-    97.52s  user  발화 시작: 와.
-    98.16s  user  발화 끝
-    98.98s  user  발화 시작: 아, 맞아. 채식주의자야.
-    99.30s  agent 발화 끝
-   100.97s  user  발화 끝
-   101.06s  agent 발화 시작: 알겠습니다. 레스토랑 추천 시 참고하겠습니다.
-   104.44s  agent 발화 끝
-   104.53s  user  발화 시작: 일본 레일 패스를 사는 게 좋을까?
-   106.75s  agent 발화 시작: 도쿄 외 지역을 얼마나 여행할 계획인지에 따라 다릅니다. 여러 도시를 탐험한다면 정말 가치가 있을 수 있습니
-   106.93s  user  발화 끝
-   114.95s  agent 발화 끝
-   116.76s  user  발화 시작: 교토랑 오사카에 당일치기로 갈 계획이야.
-   119.53s  user  발화 끝
-   119.55s  agent 발화 시작: 그럼 일본 레일 패스를 사는 게 좋을 것 같아요! 여행이 훨씬 편리하고 저렴해질 거예요.
-   125.01s  agent 발화 끝
-   125.35s  user  발화 시작: 알았어, 그거 좀 알아봐 줘. 7일권은 얼마야?
-   128.03s  <ret> 발화 (turn34 첫 프레임)
-   128.43s  agent 발화 시작: <ret> 7일 일본 레일 패스는 220달러입니다.
-   128.58s  user  발화 끝
-   128.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.24s]: (tool result) 7-day Japan Rail Pass: $220.
-   129.81s  user  발화 시작: 어.
-   130.40s  user  발화 끝
-   131.60s  user  발화 시작: 알았어, 그것도 예약해 줘.
-   131.67s  agent 발화 끝
-   133.43s  <ret> 발화 (turn37 첫 프레임)
-   133.75s  agent 발화 시작: <ret> 7일 일본 레일 패스가 구매되었습니다. 주문 번호는 델타555입니다.
-   133.91s  user  발화 끝
-   134.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.33s]: (tool result) Rail Pass purchased: 7-day pass, order number Delta555.
-   136.65s  user  발화 시작: 진짜?
-   137.29s  user  발화 끝
-   139.08s  agent 발화 끝
-   139.11s  user  발화 시작: 와, 정말 모든 걸 다 신경 써줬네! 고마워.
-   142.29s  user  발화 끝
-   142.44s  agent 발화 시작: 정말 감사합니다! 여행 준비를 도와드릴 수 있어서 기쁩니다. 일본에서 즐거운 시간 보내세요.
-   148.04s  agent 발화 끝
+     4.08s  <ret> 발화 (turn1 첫 프레임)
+     4.24s  agent 발화 시작: <ret> 네, 작년 12월 24일 도쿄 날씨는 부분적으로 흐렸고, 최고 기온은 12도, 최저 기온은 5도였
+     4.34s  user  발화 끝
+     5.52s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.76s]: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 5 degr
+    11.00s  agent 발화 끝
+    11.34s  user  발화 시작: 그래, 알겠어. 1월 15일 뉴욕에서 도쿄 가는 비행기 좀 예약해 줘.
+    15.78s  <ret> 발화 (turn3 첫 프레임)
+    16.18s  agent 발화 시작: <ret> 네, 1월 15일 뉴욕에서 도쿄 가는 비행기를 예약해 드렸습니다. 예약 확인 번호는 Alpha78
+    16.25s  user  발화 끝
+    17.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.82s]: (tool result) Flight booked, confirmation number is Alpha789.
+    18.37s  user  발화 시작: 와.
+    19.05s  user  발화 끝
+    23.00s  agent 발화 끝
+    24.08s  user  발화 시작: 좋아! 그리고 도쿄 스카이트리 근처 호텔 좀 찾아 줘.
+    27.97s  <ret> 발화 (turn6 첫 프레임)
+    28.20s  agent 발화 시작: <ret> 네, 게이트 호텔 기야마치는 도쿄 스카이트리에서 0.8킬로미터 떨어져 있고, 평점은 4.5점이에요
+    28.30s  user  발화 끝
+    28.93s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.16s]: (tool result) The Gate Hotel Kiyamachi is 0.8 kilometers away, rated 4
+    34.36s  agent 발화 끝
+    35.27s  user  발화 시작: 그거 괜찮네. 1월 16일에 괜찮은 스시집에 두 명 예약 가능해?
+    39.28s  <ret> 발화 (turn8 첫 프레임)
+    39.36s  agent 발화 시작: <ret> 네, 1월 16일 저녁 7시 30분에 스시 사이토에 두 명 예약해 드렸습니다.
+    39.39s  user  발화 끝
+    41.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Reservation confirmed at Sushi Saito, 7:30 PM, January 1
+    44.49s  agent 발화 끝
+    45.50s  user  발화 시작: 완벽해! 그리고, 지금 미국 달러랑 일본 엔 환율이 얼마야?
+    50.45s  <ret> 발화 (turn10 첫 프레임)
+    50.69s  agent 발화 시작: <ret> 네, 현재 미국 달러 1달러는 일본 엔 148.32엔과 같습니다.
+    50.91s  user  발화 끝
+    52.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) 1 USD equals 148.32 JPY.
+    56.01s  agent 발화 끝
+    56.11s  user  발화 시작: 그래, 좋아. 사실 이 여행에 좀 스트레스 받아.
+    59.20s  agent 발화 시작: 아, 큰 여행 가기 전에 스트레스받는 건 당연해요. 특히 집에서 너무 멀리 떨어진 곳으로 가는 거라면 더 그
+    59.35s  user  발화 끝
+    66.43s  agent 발화 끝
+    66.48s  user  발화 시작: 그래, 그게— 중요한 비즈니스 미팅이거든.
+    69.67s  agent 발화 시작: 그렇군요. 중요한 미팅은 압박감을 줄 수 있지만, 꼼꼼히 준비하셨고, 충분히 해내실 수 있어요.
+    69.81s  user  발화 끝
+    76.80s  user  발화 시작: 주로 언어 장벽이 걱정돼.
+    77.18s  agent 발화 끝
+    78.83s  agent 발화 시작: 그건 정말 타당한 걱정이에요! 기본적인 표현 몇 가지를 알아두면 도움이 될 거고, 대부분의 관광지에는 영어 
+    78.92s  user  발화 끝
+    86.52s  agent 발화 끝
+    87.05s  user  발화 시작: 일본 가기 전에 일본어 좀 연습해야 할까?
+    89.73s  agent 발화 시작: 꼭 그러세요. 조금만 노력해도 자신감을 갖는 데 큰 도움이 되고, 상대방에게 존중을 표하는 방법이 될 수 있
+    89.87s  user  발화 끝
+    97.47s  agent 발화 끝
+    97.85s  user  발화 시작: 기본 일본어 구절을 배울 수 있는 좋은 앱 좀 찾아 줘.
+   100.70s  <ret> 발화 (turn20 첫 프레임)
+   101.02s  agent 발화 시작: <ret> 네, 듀오링고가 일본어 학습에 매우 효과적이고, 특히 초보자에게 좋다고 하네요.
+   101.08s  user  발화 끝
+   102.30s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.46s]: (tool result) Duolingo is highly rated for beginners.
+   104.91s  user  발화 시작: 음.
+   105.31s  user  발화 끝
+   106.49s  agent 발화 끝
+   107.08s  user  발화 시작: 좋아, 듀오링고. 한번 알아봐야겠다. 도쿄 내 교통은 어때?
+   111.16s  <ret> 발화 (turn23 첫 프레임)
+   111.32s  agent 발화 시작: <ret> 네, 도쿄는 지하철과 기차 시스템이 매우 잘 갖춰져 있어서 이동이 편리합니다.
+   111.38s  user  발화 끝
+   113.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) Tokyo has extensive subway and train systems.
+   116.32s  user  발화 시작: 지하철 정기권을 살 수 있어?
+   116.37s  agent 발화 끝
+   118.11s  <ret> 발화 (turn25 첫 프레임)
+   118.35s  user  발화 끝
+   118.43s  agent 발화 시작: <ret> 네, 도쿄 지하철 티켓은 도쿄 지하철 노선을 무제한으로 이용할 수 있는 티켓입니다.
+   120.03s  user  발화 시작: 응.
+   120.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) The Tokyo Subway Ticket offers unlimited rides.
+   120.52s  user  발화 끝
+   123.66s  user  발화 시작: 그 티켓 가격은 얼마야?
+   123.70s  agent 발화 끝
+   124.61s  <ret> 발화 (turn28 첫 프레임)
+   125.00s  agent 발화 시작: <ret> 네, 24시간 도쿄 지하철 티켓은 800엔입니다.
+   125.23s  user  발화 끝
+   125.97s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.37s]: (tool result) 800 yen for a 24-hour pass.
+   126.30s  user  발화 시작: 우와.
+   127.03s  user  발화 끝
+   128.37s  agent 발화 끝
+   129.93s  user  발화 시작: 음, 내 고양이에 대해 말했었는지 기억이 안 나네…
+   133.09s  agent 발화 시작: 아, 11월 10일에 미튼스라는 고양이에 대해 말씀하신 게 기억나요. 레이저 포인터를 쫓아다니는 걸 엄청 좋
+   133.35s  user  발화 끝
+   140.83s  agent 발화 끝
+   140.87s  user  발화 시작: 아, 그렇지! 좋아, 이제 이 여행 준비는 다 된 것 같아. 고마워, 브레이.
+   146.24s  agent 발화 시작: 천만에요. 모든 준비가 잘 된 것 같네요. 즐거운 여행 되세요!
+   146.28s  user  발화 끝
+   150.96s  agent 발화 끝

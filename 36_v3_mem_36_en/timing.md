@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you. I'm a couns
-     3.90s  user  발화 시작: Uh-huh.
-     4.34s  user  발화 끝
-     7.92s  agent 발화 끝
-     8.02s  user  발화 시작: Oh, hi Lira. Um, I was just remembering I mentioned somethin
-    14.78s  <ret> 발화 (turn3 첫 프레임)
-    15.01s  agent 발화 시작: <ret> Yes, you did. You booked an appointment with Dr. Han, 
-    15.25s  user  발화 끝
-    16.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    19.35s  agent 발화 끝
-    20.55s  user  발화 시작: Right, that’s it! And, uh, what time was that appointment ag
-    25.14s  <ret> 발화 (turn5 첫 프레임)
-    25.45s  agent 발화 시작: <ret> It's scheduled for January twenty-sixth at eight fifte
-    25.64s  user  발화 끝
-    26.74s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.34s]: (tool result) January twenty-sixth, eight fifteen AM with Dr. Han.
-    29.79s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you today.
+     1.51s  user  발화 시작: Uh-huh.
+     2.01s  user  발화 끝
+     3.28s  agent 발화 끝
+     3.29s  user  발화 시작: I was just thinking about my dentist appointment… I complete
+     7.62s  <ret> 발화 (turn3 첫 프레임)
+     7.85s  agent 발화 시작: <ret> You scheduled a dentist appointment with Dr. Han for a
+     8.01s  user  발화 끝
+     9.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    15.91s  agent 발화 끝
+    17.08s  user  발화 시작: Oh, right! And… what was the name of my dog again? It’s slip
+    21.82s  <ret> 발화 (turn5 첫 프레임)
+    22.22s  agent 발화 시작: <ret> You have an adorable Corgi named Mochi, a lovely compa
+    22.40s  user  발화 끝
+    23.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: [2025-07-02] User has a Corgi named Mochi.
+    29.63s  agent 발화 끝

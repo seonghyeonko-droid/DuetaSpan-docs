@@ -76,95 +76,107 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What’s the price range at Zuni Caf | S2 Great. Can you check if they have  | S3 Oh, I’ve heard of Lafayette Park!  | S4 Oh, Green Apple Books! I love that
+# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 Is there parking nearby? | S3 Perfect. What's the weather like t | S4 Excellent! What time should I leav
 
-     0.00s  user  발화 시작: What’s the price range at Zuni Cafe?
-     2.19s  <ret> 발화 (turn1 첫 프레임)
-     2.43s  agent 발화 시작: <ret> Zuni Cafe is in the moderate price range.
-     2.54s  user  발화 끝
-     3.23s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.24s]: (tool result) $$ (moderate)
-     3.87s  user  발화 시작: Okay.
-     4.37s  user  발화 끝
-     5.60s  user  발화 시작: Okay, good. And what about State Bird Provisions?
-     5.67s  agent 발화 끝
-     8.41s  <ret> 발화 (turn4 첫 프레임)
-     8.64s  agent 발화 시작: <ret> State Bird Provisions is considered an expensive resta
-     8.83s  user  발화 끝
-     8.91s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.84s]: (tool result) $$$ (expensive)
-    12.39s  user  발화 시작: Hmm, expensive. Are there any highly-rated cafes near Union 
-    12.48s  agent 발화 끝
-    18.48s  <ret> 발화 (turn6 첫 프레임)
-    18.64s  user  발화 끝
-    18.64s  agent 발화 시작: <ret> Cafe Envy is 4.2 stars and is 0.2 miles from Union Squ
-    19.68s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.33s]: (tool result) Cafe Envy - 4.2 stars, 0.2 miles.
-    21.11s  user  발화 시작: Oh.
-    21.61s  user  발화 끝
-    23.97s  agent 발화 끝
-    24.41s  user  발화 시작: That sounds promising. What are their hours today?
-    27.73s  <ret> 발화 (turn9 첫 프레임)
-    27.97s  agent 발화 시작: <ret> Cafe Envy is open today from 7 AM to 5 PM.
-    28.16s  user  발화 끝
-    29.49s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.93s]: (tool result) 7 AM–5 PM
-    29.84s  user  발화 시작: Yeah.
-    30.34s  user  발화 끝
-    31.89s  user  발화 시작: Great. Can you check if they have outdoor seating?
-    31.90s  agent 발화 끝
-    34.69s  <ret> 발화 (turn12 첫 프레임)
-    35.00s  agent 발화 시작: <ret> Yes, Cafe Envy does offer outdoor seating.
-    35.12s  user  발화 끝
-    35.73s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.37s]: (tool result) Outdoor seating available.
-    38.38s  agent 발화 끝
-    40.31s  user  발화 시작: Perfect. I think I’ll head there. Can you give me walking di
-    43.85s  <ret> 발화 (turn14 첫 프레임)
-    44.25s  agent 발화 시작: <ret> It’s an 18-minute walk, about 0.8 miles from your curr
-    44.33s  user  발화 끝
-    45.77s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.09s]: (tool result) 18 min walk, 0.8 miles.
-    49.34s  agent 발화 끝
-    49.48s  user  발화 시작: That's good to know. Are there any parks along the way?
-    52.66s  <ret> 발화 (turn16 첫 프레임)
-    53.06s  agent 발화 시작: <ret> Lafayette Park is 0.3 miles from Cafe Envy.
-    53.27s  user  발화 끝
-    54.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.44s]: (tool result) Lafayette Park - 0.3 miles from destination.
-    57.50s  agent 발화 끝
-    57.68s  user  발화 시작: Oh, I’ve heard of Lafayette Park! It’s supposed to have a gr
-    62.14s  agent 발화 시작: It’s known for panoramic city views and a peaceful atmospher
-    62.36s  user  발화 끝
-    65.35s  user  발화 시작: Actually, could you check if Lafayette Park is dog-friendly?
-    66.07s  agent 발화 끝
-    68.75s  <ret> 발화 (turn20 첫 프레임)
-    69.14s  user  발화 끝
-    69.15s  agent 발화 시작: <ret> Dogs are allowed at Lafayette Park, but they must be k
-    70.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.34s]: (tool result) Dogs allowed on leash.
-    73.50s  agent 발화 끝
-    73.52s  user  발화 시작: Excellent! That’s really helpful.
-    75.39s  agent 발화 시작: I’m glad I could assist. A little fresh air before coffee so
-    75.45s  user  발화 끝
-    80.16s  agent 발화 끝
-    80.96s  user  발화 시작: It does. Is there a good bookstore near Lafayette Park?
-    84.29s  <ret> 발화 (turn24 첫 프레임)
-    84.69s  agent 발화 시작: <ret> Green Apple Books on Clement is 1.1 miles from Lafayet
-    84.76s  user  발화 끝
-    85.73s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.72s]: (tool result) Green Apple Books on Clement - 1.1 miles.
-    86.58s  user  발화 시작: Wow.
-    87.36s  user  발화 끝
-    89.41s  agent 발화 끝
-    89.42s  user  발화 시작: Oh, Green Apple Books! I love that place. What are their hou
-    94.05s  <ret> 발화 (turn27 첫 프레임)
-    94.21s  agent 발화 시작: <ret> Green Apple Books on Clement is open today from 10 AM 
-    94.24s  user  발화 끝
-    96.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) 10 AM–7 PM
-    98.77s  user  발화 시작: Perfect timing. Okay, one last thing. Can you set a reminder
-    98.88s  agent 발화 끝
-   105.65s  <ret> 발화 (turn29 첫 프레임)
-   106.05s  agent 발화 시작: <ret> A reminder to leave for Cafe Envy is set for ten minut
-   106.19s  user  발화 끝
-   107.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) Reminder set for 10 minutes from now.
-   110.22s  agent 발화 끝
-   110.42s  user  발화 시작: Wonderful, thank you so much!
-   112.18s  user  발화 끝
-   112.25s  agent 발화 시작: You’re very welcome. Enjoy your walk and your coffee.
-   114.28s  user  발화 시작: Yeah.
-   114.86s  user  발화 끝
-   115.55s  agent 발화 시작: [happy] It sounds like a lovely plan for a relaxing afternoo
-   115.63s  agent 발화 끝
-   119.16s  agent 발화 끝
+     0.00s  user  발화 시작: What's the price range at Zuni Cafe?
+     1.95s  <ret> 발화 (turn1 첫 프레임)
+     2.18s  agent 발화 시작: <ret> Zuni Cafe is in the moderate price range—
+     2.27s  user  발화 끝
+     2.91s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.95s]: (tool result) $$
+     4.38s  user  발화 시작: Is it open right now?
+     5.13s  agent 발화 끝
+     5.28s  <ret> 발화 (turn3 첫 프레임)
+     5.51s  agent 발화 시작: <ret> It sounds like you're wondering about current hours.
+     5.71s  user  발화 끝
+     5.78s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.09s]: (tool result) 11:30 AM to 10:00 PM
+     8.46s  agent 발화 시작: Zuni Cafe is currently open until ten PM.
+     8.61s  agent 발화 끝
+    11.66s  user  발화 시작: Okay, good. And how do I get there from here?
+    11.83s  agent 발화 끝
+    13.92s  <ret> 발화 (turn6 첫 프레임)
+    14.16s  agent 발화 시작: <ret> You can drive there in about ten minutes, or take publ
+    14.38s  user  발화 끝
+    15.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Driving: 10 min, Public Transit: 15 min
+    16.00s  user  발화 시작: Right.
+    16.68s  user  발화 끝
+    19.16s  agent 발화 끝
+    19.55s  user  발화 시작: Drive sounds faster. Give me directions.
+    21.79s  <ret> 발화 (turn9 첫 프레임)
+    22.02s  agent 발화 시작: <ret> Head north on Market Street, then turn right onto Twen
+    22.12s  user  발화 끝
+    23.47s  user  발화 시작: Really?
+    23.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) Head north on Market St toward 20th St, turn right onto 
+    24.01s  user  발화 끝
+    26.13s  agent 발화 시작: …and continue for about half a mile. It’ll be on your right.
+    26.28s  agent 발화 끝
+    27.92s  user  발화 시작: Yeah.
+    28.41s  user  발화 끝
+    29.88s  user  발화 시작: Is there parking nearby?
+    30.16s  agent 발화 끝
+    30.95s  <ret> 발화 (turn14 첫 프레임)
+    31.35s  agent 발화 시작: <ret> There is limited street parking available nearby.
+    31.49s  user  발화 끝
+    32.39s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.37s]: (tool result) Yes, limited street parking available.
+    32.58s  user  발화 시작: Uh-huh.
+    33.08s  user  발화 끝
+    34.53s  user  발화 시작: Okay. Can you book a table for two at seven tonight?
+    34.72s  agent 발화 끝
+    36.87s  <ret> 발화 (turn17 첫 프레임)
+    37.27s  agent 발화 시작: <ret> I have confirmed a reservation for two at seven tonigh
+    37.34s  user  발화 끝
+    38.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Confirmed. Reservation for 2 at 7:00 PM. Confirmation #Z
+    44.66s  user  발화 시작: Great! What kind of food do they serve?
+    44.82s  agent 발화 끝
+    46.37s  <ret> 발화 (turn19 첫 프레임)
+    46.76s  agent 발화 시작: <ret> They serve Californian cuisine, and are particularly k
+    47.01s  user  발화 끝
+    48.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) Californian cuisine, known for its roast chicken.
+    52.37s  agent 발화 끝
+    53.17s  user  발화 시작: Roast chicken sounds good. Is there a dress code?
+    55.25s  <ret> 발화 (turn21 첫 프레임)
+    55.65s  agent 발화 시작: <ret> The dress code is casual.
+    55.89s  user  발화 끝
+    56.21s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.31s]: (tool result) Casual.
+    57.95s  user  발화 시작: Perfect. What's the weather like there right now?
+    57.96s  agent 발화 끝
+    60.29s  <ret> 발화 (turn23 첫 프레임)
+    60.45s  agent 발화 시작: <ret> It's currently sixty-eight degrees and partly cloudy.
+    60.58s  user  발화 끝
+    61.97s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.47s]: (tool result) 68°F, partly cloudy.
+    63.91s  agent 발화 끝
+    64.69s  user  발화 시작: Hmm, that's nice. Is there anything else to do nearby after 
+    67.83s  <ret> 발화 (turn25 첫 프레임)
+    68.22s  agent 발화 시작: <ret> The SFJazz Center is just half a mile away.
+    68.34s  user  발화 끝
+    69.67s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.79s]: (tool result) The SFJazz Center is 0.5 miles away.
+    71.86s  user  발화 시작: Jazz sounds good. What’s playing tonight?
+    72.02s  agent 발화 끝
+    73.44s  <ret> 발화 (turn27 첫 프레임)
+    73.67s  agent 발화 시작: <ret> The Bad Plus are playing at eight PM tonight.
+    73.84s  user  발화 끝
+    74.64s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.19s]: (tool result) The Bad Plus, 8:00 PM.
+    76.86s  agent 발화 끝
+    77.27s  user  발화 시작: Can you get tickets for that?
+    78.26s  <ret> 발화 (turn29 첫 프레임)
+    78.50s  agent 발화 시작: <ret> I’ve booked two tickets for The Bad Plus. Your confirm
+    78.73s  user  발화 끝
+    80.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (tool result) Two tickets booked. Confirmation #BT45JQ.
+    80.90s  user  발화 시작: Wow.
+    81.71s  user  발화 끝
+    84.18s  user  발화 시작: Excellent! What time should I leave Zuni Cafe to make the sh
+    84.38s  agent 발화 끝
+    87.09s  <ret> 발화 (turn32 첫 프레임)
+    87.49s  agent 발화 시작: <ret> It’s a fifteen-minute walk or a five-minute drive to t
+    87.56s  user  발화 끝
+    88.05s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.21s]: (tool result) 15 min walk, 5 min drive.
+    91.70s  agent 발화 끝
+    91.75s  user  발화 시작: Five minutes it is. Set a reminder for 7:55 PM to leave.
+    95.61s  <ret> 발화 (turn34 첫 프레임)
+    95.93s  agent 발화 시작: <ret> A reminder is set for 7:55 PM to leave for the SFJazz 
+    96.10s  user  발화 끝
+    97.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Reminder set for 7:55 PM.
+   101.91s  agent 발화 끝
+   102.02s  user  발화 시작: That's perfect. Thank you so much.
+   103.78s  agent 발화 시작: You're very welcome. I hope you enjoy your evening!
+   103.86s  user  발화 끝
+   107.02s  agent 발화 끝

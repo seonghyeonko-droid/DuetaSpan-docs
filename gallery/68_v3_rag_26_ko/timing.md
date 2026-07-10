@@ -66,28 +66,35 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 음… 요즘 독일 여행을 좀 알아보고 있는데, 독일 국기가 어떻 | S2 아, 검은색, 빨간색, 금색이구나. 다른 나라 국기랑 헷갈릴까 | S3 와, 역사적인 의미가 있었구나. 몰랐네. 혹시 독일 국기 디자 | S4 천구백십구년이라… 그렇군요. 독일 여행 준비하면서 국기 색깔이
 
-     0.00s  user  발화 시작: 음… 요즘 계속 날씨가 안 좋네요. 독일 국기는 어떤 색깔이에요?
-     5.66s  <ret> 발화 (turn1 첫 프레임)
-     5.74s  agent 발화 시작: <ret> 날씨가 꿉꿉하긴 하네요. 독일 국기 색깔에 대해 알아볼까요?
-     5.83s  user  발화 끝
-     7.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: [source: Britannica] The flag of Germany consists of three equal horiz
-    10.21s  agent 발화 시작: 독일 국기는 검정색, 빨간색, 그리고 금색의 가로 줄무늬 세 개로 이루어져 있어요.
-    10.32s  agent 발화 끝
-    16.29s  user  발화 시작: 아, 검정, 빨강, 금색이군요. 혹시 그 색깔들이 무슨 의미가 있어요?
-    16.33s  agent 발화 끝
-    22.02s  <ret> 발화 (turn4 첫 프레임)
-    22.15s  agent 발화 시작: <ret> 색깔마다 의미가 담겨 있는 경우가 많죠. 그 의미에 대해 좀 더 자세히 알아볼까요?
-    22.36s  user  발화 끝
-    24.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [source: History.com] The black represents determination, the red sign
-    27.48s  agent 발화 시작: 검정색은 결의, 빨간색은 용기, 그리고 금색은 관용을 상징한다고 해요.
-    27.52s  agent 발화 끝
-    30.14s  user  발화 시작: 응응.
-    30.92s  user  발화 끝
-    33.32s  agent 발화 끝
-    33.41s  user  발화 시작: 오, 흥미롭네요. 관용이라… 근데 독일은 옛날에 청동기 시대에도 번성했었나요?
-    41.21s  <ret> 발화 (turn8 첫 프레임)
-    41.36s  agent 발화 시작: <ret> 기원전 이천이백년에서 팔백년 사이에 독일 지역에서 청동기 문화가 번성했고, 중요한 고고학적 증거를
-    41.48s  user  발화 끝
-    43.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: [source: World History Encyclopedia] Bronze Age cultures flourished in
-    50.31s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 요즘 독일 여행을 좀 알아보고 있는데, 독일 국기가 어떻게 생겼는지 궁금해. 검은색, 빨간색, 노란색이
+     9.70s  <ret> 발화 (turn1 첫 프레임)
+     9.77s  agent 발화 시작: <ret> 독일 국기에 대해 궁금하시다니, 제가 알려 드릴게요.
+     9.96s  user  발화 끝
+    11.22s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.10s]: [source: Britannica] The flag of Germany is a tricolor of black, red, 
+    12.87s  agent 발화 끝
+    12.97s  agent 발화 시작: 독일 국기는 검은색, 빨간색, 그리고 금색으로 이루어진 삼색기입니다.
+    17.65s  agent 발화 끝
+    17.79s  user  발화 시작: 아, 검은색, 빨간색, 금색이구나. 다른 나라 국기랑 헷갈릴까 봐 걱정했는데 다행이다. 근데 그 색깔들은 무
+    26.87s  <ret> 발화 (turn4 첫 프레임)
+    27.03s  agent 발화 시작: <ret> 다른 나라 국기랑 헷갈릴까 봐 걱정하시는 마음은 충분히 이해가 돼요. 그 색깔들은 독일의 역사와 
+    27.29s  user  발화 끝
+    28.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: [source: History.com] The colors black, red, and gold were adopted dur
+    34.35s  agent 발화 끝
+    34.51s  agent 발화 시작: 검은색, 빨간색, 금색은 천팔백사십팔년 혁명 당시 채택되었으며, 자유, 평등, 박애를 상징한다고 해요.
+    37.78s  user  발화 시작: 응응.
+    38.42s  user  발화 끝
+    41.45s  agent 발화 끝
+    41.73s  user  발화 시작: 와, 역사적인 의미가 있었구나. 몰랐네. 혹시 독일 국기 디자인이 바뀐 적은 있어?
+    47.23s  <ret> 발화 (turn8 첫 프레임)
+    47.30s  agent 발화 시작: <ret> 네, 독일 국기 디자인은 역사를 거치면서 몇 번 바뀌었어요.
+    47.42s  user  발화 끝
+    48.99s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.56s]: [source: Flags of the World] The current design of the German flag was
+    50.87s  agent 발화 끝
+    50.94s  agent 발화 시작: 현재 독일 국기 디자인은 일차 세계 대전 이후 천구백십구년에 공식적으로 채택되었고, 서독 건국과 함께 천구백
+    61.17s  user  발화 시작: 천구백십구년이라… 그렇군요. 독일 여행 준비하면서 국기 색깔이랑 의미 정도는 알아두면 좋겠네. 고마워요!
+    61.23s  agent 발화 끝
+    69.20s  agent 발화 시작: 여행 준비에 도움이 되었다니 기쁘네요. 즐거운 여행 되세요!
+    69.23s  user  발화 끝
+    72.62s  agent 발화 끝

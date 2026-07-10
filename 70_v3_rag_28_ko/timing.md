@@ -68,23 +68,14 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 퇴역 군인부(Department of… | S2 …Veterans Affairs)가 언제 만들어졌는지 궁금하네 | S3 천구백삼십년이라고요? 좀 더 일찍 만들어진 건 아니었나요? 혹 | S4 아, 그렇군요. 그럼 천구백삼십년에 완전히 새로운 부처가 만들
 
-     0.00s  user  발화 시작: 음… 퇴역 군인부(Department of…
-     3.37s  user  발화 끝
-     4.71s  user  발화 시작: …Veterans Affairs)가 언제 만들어졌는지 궁금하네요.
-     8.37s  <ret> 발화 (turn2 첫 프레임)
-     8.68s  user  발화 끝
-     8.69s  agent 발화 시작: <ret> 퇴역 군인부는 천구백삼십년 칠월 이십일일에 설립되었고, 여러 퇴역 군인 지원 프로그램을 통합했어요
-    10.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: [source: Britannica] The Department of Veterans Affairs was establishe
-    15.60s  agent 발화 끝
-    15.61s  user  발화 시작: 천구백삼십년이라고요? 좀 더 일찍 만들어진 건 아니었나요? 혹시 그 전에도 비슷한 기관이 있었나요?
-    22.18s  <ret> 발화 (turn4 첫 프레임)
-    22.25s  agent 발화 시작: <ret> 천구백삼십년 이전에 전쟁 위험 보험국과 퇴역 군인국에서 퇴역 군인 지원을 담당했어요.
-    22.33s  user  발화 끝
-    23.54s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.16s]: [source: History.com] Prior to 1930, veteran benefits were administere
-    28.41s  agent 발화 끝
-    28.44s  user  발화 시작: 아, 그렇군요. 그럼 천구백삼십년에 완전히 새로운 부처가 만들어진 건 아니고, 기존 기관들을 합친 거군요?
-    35.11s  agent 발화 시작: 맞아요. 기존 기관들을 통합해서 퇴역 군인부를 새롭게 만들었어요. [happy] 예산 관리에도 도움이 될 것
-    35.39s  user  발화 끝
-    43.12s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 재향군인부 말인데, 언제 만들어졌는지 궁금해. 그냥 갑자기 생각나서.
+     4.59s  <ret> 발화 (turn1 첫 프레임)
+     4.86s  user  발화 끝
+     4.90s  agent 발화 시작: <ret> 재향군인부는 여러 참전 용사 지원 프로그램을 통합하여 하나의 기관으로 출범했는데, 그 설립 시기는
+     6.03s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.68s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    14.58s  agent 발화 끝
+    15.76s  user  발화 시작: 천구백삼십년이라고? 음, 그 전에 참전 용사들을 어떻게 관리했는데요?
+    20.61s  agent 발화 시작: 그 이전에도 참전 용사들을 위한 지원은 있었지만, 여러 기관에 분산되어 있었죠. 체계적인 관리가 어려웠던 건
+    20.66s  user  발화 끝
+    29.32s  agent 발화 끝

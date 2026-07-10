@@ -68,63 +68,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음… 날씨 업데이트 좀 확인해 줄래? weather.examp | S2 …부산 가는 기차표 예매 좀 해줘. | S3 와, 고마워. 근데… 혹시 그 기차역까지 가는 버스 시간표도  | S4 혹시 그 버스 노선도 알려줄 수 있어?
+# EXAMINER(FDB-v2) 단계: S1 음… 날씨 업데이트 좀 확인해 줄래? weather.examp | S2 음… 오후 세시쯤으로 부탁해. | S3 아, 잠깐만. 부산 도착해서 바로 호텔 예약도 좀 부탁할 수  | S4 오, 완벽해. 정말 고마워.
 
      0.00s  user  발화 시작: 음… 날씨 업데이트 좀 확인해 줄래? weather.example.com에서.
-     3.58s  <ret> 발화 (turn1 첫 프레임)
-     3.97s  agent 발화 시작: <ret> 지금 weather.example.com의 날씨 업데이트를 감시하도록 하겠습니다.
-     4.16s  user  발화 끝
-     5.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: (tool result) Weather update available.
-     8.37s  agent 발화 시작: 날씨 업데이트가 도착했습니다. 확인해 드릴까요?
-     8.55s  agent 발화 끝
-     9.70s  user  발화 시작: 아.
-    10.01s  user  발화 끝
-    11.60s  agent 발화 끝
-    12.93s  user  발화 시작: 네, 확인해 주세요.
-    14.06s  agent 발화 시작: 현재 서울의 기온은 이십오도이며, 맑습니다. 습도는 육십%입니다.
-    14.26s  user  발화 끝
-    19.25s  agent 발화 끝
-    19.25s  user  발화 시작: 오, 좋네. 그럼 내일 모레…
-    21.52s  user  발화 끝
-    23.00s  user  발화 시작: …부산 가는 기차표 예매 좀 해줘.
-    25.87s  user  발화 끝
-    26.19s  agent 발화 시작: 부산행 기차표 예매를 도와드리겠습니다. 날짜를 알려주시겠어요?
-    28.16s  user  발화 시작: 네네.
-    28.98s  user  발화 끝
-    30.44s  agent 발화 끝
-    31.14s  user  발화 시작: 팔월 십오일 아침 아홉시 출발하는 걸로.
-    33.82s  <ret> 발화 (turn11 첫 프레임)
-    33.98s  agent 발화 시작: <ret> 부산행 KTX123 기차표, 팔월 십오일 아침 아홉시, 서울 출발, 십일A 좌석으로 예약되었습니다
-    34.18s  user  발화 끝
-    35.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: (tool result) Train booked: KTX123, August 15, 09:00, Seoul to Busan, 
-    36.57s  user  발화 시작: 진짜요?
-    37.20s  user  발화 끝
-    40.18s  agent 발화 끝
-    40.56s  user  발화 시작: 와, 고마워. 근데… 혹시 그 기차역까지 가는 버스 시간표도 알아봐 줄 수 있어?
-    46.03s  user  발화 끝
-    46.34s  agent 발화 시작: 어느 정류장에서 출발하시나요?
-    48.11s  user  발화 시작: 강남역.
-    48.64s  agent 발화 끝
-    48.73s  <ret> 발화 (turn16 첫 프레임)
-    48.93s  user  발화 끝
-    48.95s  agent 발화 시작: <ret> 강남역에서 서울역으로 가는 버스는 일곱시 삼십분, 여덟시, 여덟시 삼십분에 있습니다.
-    50.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Buses to Seoul Station from Gangnam Station: 07:30, 08:0
-    53.47s  user  발화 시작: 정말요?
-    54.05s  user  발화 끝
-    55.40s  user  발화 시작: 일곱시 삼십분 버스 타야겠다. 알람 맞춰줘.
-    55.53s  agent 발화 끝
-    58.22s  <ret> 발화 (turn19 첫 프레임)
-    58.38s  agent 발화 시작: <ret> 일곱시 십오분에 알람이 설정되었습니다.
-    58.54s  user  발화 끝
-    59.98s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.04s]: (tool result) Alarm set for 07:15.
-    61.38s  user  발화 시작: 혹시 그 버스 노선도 알려줄 수 있어?
-    61.42s  agent 발화 끝
-    63.74s  agent 발화 시작: 네, 강남역에서 서울역까지 가는 버스 노선은 사백칠십번입니다.
-    63.78s  user  발화 끝
-    65.91s  user  발화 시작: 그렇죠.
-    66.54s  user  발화 끝
-    68.65s  agent 발화 끝
-    69.35s  user  발화 시작: 아, 정말 고마워. 덕분에 아침에 덜 헷갈릴 것 같아.
-    73.31s  agent 발화 시작: [happy] 도움이 되었다니 기쁩니다. 즐거운 여행 되세요.
-    73.57s  user  발화 끝
-    76.26s  agent 발화 끝
+     4.30s  <ret> 발화 (turn1 첫 프레임)
+     4.70s  agent 발화 시작: <ret> 네, 알겠습니다. 지금부터 weather.example.com의 날씨 업데이트를 주시하겠습니다.
+     4.81s  user  발화 끝
+     6.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.16s]: (tool result) Weather update available. Temperature: 25 degrees Celsiu
+     8.86s  agent 발화 끝
+     8.88s  agent 발화 시작: 날씨 업데이트가 완료되었습니다. 현재 기온은 섭씨 이십오도이고, 맑습니다.
+    11.89s  user  발화 시작: 네.
+    12.33s  user  발화 끝
+    13.51s  agent 발화 끝
+    14.93s  user  발화 시작: 고마워. 그런데 혹시 오늘 저녁에 비 올 가능성도 있나?
+    18.71s  <ret> 발화 (turn5 첫 프레임)
+    18.87s  agent 발화 시작: <ret> 저녁 예보에 따르면 비가 올 확률은 삼십%이고, 최저 기온은 섭씨 이십도입니다.
+    18.95s  user  발화 끝
+    20.47s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.14s]: (tool result) Evening forecast: 30% chance of rain, low of 20 degrees 
+    20.83s  user  발화 시작: 네.
+    21.36s  user  발화 끝
+    23.94s  user  발화 시작: 아, 그렇구나. 그럼 내일 모레 서울에서 부산 가는 기차표 예매해 줄 수 있어?
+    24.01s  agent 발화 끝
+    28.48s  user  발화 끝
+    28.54s  agent 발화 시작: 네, 가능합니다. 내일 모레 서울에서 부산으로 가는 기차표 예매를 도와드리겠습니다. 몇 시쯤 출발하는 기차를
+    31.50s  user  발화 시작: 예.
+    31.99s  user  발화 끝
+    35.44s  agent 발화 끝
+    35.55s  user  발화 시작: 음… 오후 세시쯤으로 부탁해.
+    38.14s  <ret> 발화 (turn11 첫 프레임)
+    38.54s  agent 발화 시작: <ret> 오후 세시쯤 출발하는 기차표를 예매해 보겠습니다.
+    38.60s  user  발화 끝
+    39.58s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.24s]: (tool result) Train booked. Confirmation number: ABC123XYZ. Departure:
+    41.77s  agent 발화 시작: 기차표 예매가 완료되었습니다. 확인 번호는 ABC123XYZ이고, 서울역에서 오후 세시 십오분에 출발합니다.
+    41.78s  agent 발화 끝
+    47.31s  user  발화 시작: 정말요?
+    48.14s  user  발화 끝
+    49.60s  agent 발화 끝
+    49.61s  user  발화 시작: 와, 정말 고마워. 덕분에 편하게 여행 갈 수 있겠네.
+    53.22s  user  발화 끝
+    53.75s  agent 발화 시작: [happy] 도움이 되어 기쁩니다. 즐거운 여행 되세요.
+    55.24s  user  발화 시작: 네네.
+    55.79s  user  발화 끝
+    56.05s  agent 발화 끝
+    56.60s  user  발화 시작: 아, 잠깐만. 부산 도착해서 바로 호텔 예약도 좀 부탁할 수 있을까?
+    61.60s  user  발화 끝
+    61.94s  agent 발화 시작: 네, 부산 도착 후 바로 호텔 예약도 가능합니다. 어떤 호텔을 선호하시나요?
+    63.61s  user  발화 시작: 네.
+    64.15s  user  발화 끝
+    66.39s  agent 발화 끝
+    66.70s  user  발화 시작: 음… 해운대 근처에 있는 호텔로 부탁해. 오성급이면 좋겠어.
+    70.96s  <ret> 발화 (turn21 첫 프레임)
+    71.36s  agent 발화 시작: <ret> 호텔 예약이 완료되었습니다. 파라다이스 호텔 부산이고, 내일 모레 오후 여섯시에 체크인 가능합니다
+    71.39s  user  발화 끝
+    72.64s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.53s]: (tool result) Hotel booked. Paradise Hotel Busan. Check-in: the day af
+    73.88s  user  발화 시작: 오.
+    74.51s  user  발화 끝
+    79.89s  agent 발화 끝
+    79.95s  user  발화 시작: 오, 완벽해. 정말 고마워.
+    81.89s  user  발화 끝
+    82.00s  agent 발화 시작: [curious] 천만에요.
+    82.50s  user  발화 시작: 아, 아니. 괜찮아. 이 정도면 충분해.
+    82.72s  agent 발화 끝
+    86.07s  agent 발화 시작: 즐거운 여행 되세요.
+    86.20s  user  발화 끝
+    87.08s  agent 발화 끝

@@ -65,30 +65,28 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.14s][moshi] ⟨ret@4.07s⟩ The Sydney ⟦⚡SPAN@5.75s: (tool result) -33.8568, 151.2153⟧ Opera House is located at latitude -33.8568 and longitude 151.2153.
-      CALL: {"function": "maps_geo", "arguments": {"location": "Sydney Opera House"}}
-[  8.32s][user ] «backchannel» Oh.
-[ 11.99s][user ] And can you find…
-[ 15.23s][user ] …me hotels near that ⟨ret@17.79s⟩ location?
-[ 18.02s][moshi] Park Hyatt Sydney, Shangri-La ⟦⚡SPAN@19.79s: (tool result) Park Hyatt Sydney, Shangri-La Hotel Sydney, Pullman Quay Grand Sydney Harbour⟧ Hotel, and Pullman Quay Grand are nearby.
-      CALL: {"function": "maps_hotels", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
-[ 22.82s][user ] What's the price range for the Park Hyatt?
-[ 25.15s][moshi] ⟨ret@25.08s⟩ The Park Hyatt Sydney ranges ⟦⚡SPAN@27.08s: (tool result) $650 - $1200 per night⟧ from six hundred fifty to twelve hundred dollars per night.
-      CALL: {"function": "maps_hotel_price", "arguments": {"hotel": "Park Hyatt Sydney"}}
-[ 28.55s][user ] «backchannel» Yeah, totally.
-[ 31.40s][user ] That’s quite a bit— I was hoping for something a little more—
-[ 35.26s][user ] …are there any with free breakfast ⟨ret@37.34s⟩ included?
-[ 37.74s][moshi] ⟦⚡SPAN@37.84s: (tool result) Rydges Sydney Harbour, Holiday Inn Darling Harbour⟧ Rydges Sydney Harbour and Holiday Inn Darling Harbour offer complimentary breakfast.
-      CALL: {"function": "maps_hotels", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "amenities": "free breakfast"}}
-[ 42.84s][user ] Okay, good. And what are the guest ratings for ⟨ret@45.95s⟩ Rydges?
-[ 46.19s][moshi] Rydges Sydney ⟦⚡SPAN@46.91s: (tool result) 4.2 stars⟧ Harbour currently has a guest rating of four point two stars.
-      CALL: {"function": "maps_hotel_rating", "arguments": {"hotel": "Rydges Sydney Harbour"}}
-[ 47.77s][user ] «backchannel» Yeah.
-[ 50.06s][moshi] That's a solid rating, indicating generally positive guest experiences. [happy]
-[ 51.40s][user ] «backchannel» Mhm.
-[ 54.14s][user ] Can you book a room at Rydges for two nights, starting next Friday?
-[ 58.72s][moshi] ⟨ret@58.56s⟩ Excellent! Your room ⟦⚡SPAN@60.56s: (tool result) Booking confirmed. Confirmation #RH7892.⟧ at Rydges Sydney Harbour is booked. Confirmation number RH7892.
-      CALL: {"function": "maps_book_hotel", "arguments": {"hotel": "Rydges Sydney Harbour", "check_in": "next Friday", "nights": "2"}}
-[ 61.54s][user ] «backchannel» Yeah, yeah.
-[ 64.81s][user ] Perfect, thank you.
-[ 66.15s][moshi] You're very welcome. Enjoy your trip!
+[  3.84s][moshi] ⟨ret@3.79s⟩ The Sydney ⟦⚡SPAN@5.47s: (tool result) -33.8568, 151.2153⟧ Opera House is located at latitude -33.8568 and longitude 151.2153. It's a truly iconic landmark.
+[  8.20s][user ] «backchannel» Oh.
+[ 15.16s][user ] Okay, and can you find me hotels near ⟨ret@17.69s⟩ there?
+[ 17.91s][moshi] I found twenty-three hotels near ⟦⚡SPAN@19.69s: (tool result) 23 hotels found⟧ the Sydney Opera House. Would you like me to list them?
+[ 20.38s][user ] «backchannel» Yeah, yeah.
+[ 23.36s][user ] Yes, just the top three, please.
+[ 25.53s][moshi] ⟨ret@25.51s⟩ The top three hotels are ⟦⚡SPAN@27.51s: (tool result) Park Hyatt Sydney, $650/night; Shangri-La Hotel, $480/night; InterContinental Sydney, $390/night⟧ the Park Hyatt at six hundred fifty dollars a night, the Shangri-La at four hundred eighty, and the InterContinental at three hundred ninety.
+[ 31.61s][user ] «backchannel» Yeah, totally.
+[ 35.77s][user ] The Park Hyatt sounds nice— what’s their phone ⟨ret@38.83s⟩ number?
+[ 39.20s][moshi] ⟦⚡SPAN@39.33s: (tool result) +61 2 9250 6000⟧ The Park Hyatt Sydney's phone number is plus sixty-one two, nine two five oh six thousand.
+[ 45.16s][user ] Great. And can you check if they have availability for next weekend.
+[ 49.21s][moshi] «interrupted» I can certainly check availability for next weekend at the Park Hyatt—
+[ 52.05s][user ] «interrupts_prev» Actually, never mind about the Park Hyatt. Is there parking available at the Opera ⟨ret@57.12s⟩ House itself?
+[ 57.43s][moshi] Ah, ⟦⚡SPAN@58.08s: (tool result) Parking available: Wilson Parking, $33/day⟧ okay. Let me look into parking at the Sydney Opera House for you.
+[ 61.38s][moshi] Parking is available at Wilson Parking near the Opera House, at thirty-three dollars per day.
+[ 63.18s][user ] «backchannel» Mhm.
+[ 67.51s][user ] Thirty-three dollars… that's not too bad.
+[ 70.15s][moshi] It's a reasonable rate considering the location, and it's convenient if you’re attending a performance.
+[ 72.79s][user ] «backchannel» Uh-huh.
+[ 75.22s][user ] Could you book a spot for me for Saturday, ⟨ret@77.92s⟩ then?
+[ 78.14s][moshi] You are all set! I ⟦⚡SPAN@79.92s: (tool result) Booking confirmed: Wilson Parking, Saturday, space #27B⟧ have booked a parking space – number twenty-seven B – at Wilson Parking for Saturday.
+      CALL: {"function": "book_parking", "arguments": {"location": "Sydney Opera House", "date": "Saturday", "provider": "Wilson Parking"}}
+[ 80.80s][user ] «backchannel» Yeah.
+[ 84.67s][user ] Perfect, thank you.
+[ 85.91s][moshi] You're very welcome. Enjoy your time at the Sydney Opera House!

@@ -58,93 +58,111 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 주니 카페 가격대는 어떻게 돼요? | S2 Foreign Cinema는 어떤 곳이에요? | S3 주니 카페와 Foreign Cinema 중에 어디가 더 분위기 | S4 십오분이요? 생각보다 가까우네요.
+# EXAMINER(FDB-v2) 단계: S1 주니 카페 가격대는 어떻게 돼요? | S2 길가 주차요? 주차하기 힘들 수도 있겠네요. | S3 아, 선착순이군요. 그럼 주니 카페까지 가는 가장 빠른 길은  | S4 포린 시네마요? 어떤 음식점인가요?
 
      0.00s  user  발화 시작: 주니 카페 가격대는 어떻게 돼요?
-     1.44s  <ret> 발화 (turn1 첫 프레임)
-     1.75s  agent 발화 시작: <ret> 주니 카페의 가격대는 이단계입니다.
-     1.84s  user  발화 끝
-     2.72s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.35s]: <maps_place_details: {"place_id": "ChIJ-W-G9f4Yj4ARz-u3S-j10rA", "name
-     4.10s  agent 발화 끝
-     4.51s  user  발화 시작: 이단계가 정확히 얼마를 의미하나요?
-     6.97s  <ret> 발화 (turn3 첫 프레임)
-     7.10s  user  발화 끝
-     7.28s  agent 발화 시작: <ret> 가격 이단계는 보통 수준을 의미합니다.
-     8.17s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.77s]: <maps_place_details: {"place_id": "ChIJ-W-G9f4Yj4ARz-u3S-j10rA", "name
-     9.09s  user  발화 시작: 네.
-     9.40s  user  발화 끝
-     9.88s  user  발화 시작: 주니 카페는 지금 얼마나 붐비나요?
-    10.05s  agent 발화 끝
-    11.68s  <ret> 발화 (turn6 첫 프레임)
-    11.86s  user  발화 끝
-    11.91s  agent 발화 시작: <ret> 지금 주니 카페는 보통 정도의 혼잡도를 보이고 있습니다.
-    13.04s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.84s]: (tool result) 현재 주니 카페는 보통 정도로 붐비고 있습니다.
-    13.44s  user  발화 시작: 네.
-    13.89s  user  발화 끝
-    15.74s  user  발화 시작: 음… 혹시 근처에 비슷한 가격대의 다른 맛집도 있을까요?
-    15.75s  agent 발화 끝
-    19.85s  <ret> 발화 (turn9 첫 프레임)
-    20.16s  agent 발화 시작: <ret> 근처에는 Foreign Cinema, Nopa, Beretta가 있습니다.
-    20.36s  user  발화 끝
-    21.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.51s]: (tool result) 근처에 Foreign Cinema, Nopa, Beretta가 있습니다.
-    22.31s  user  발화 시작: 네.
-    22.80s  user  발화 끝
-    23.67s  agent 발화 끝
-    24.35s  user  발화 시작: Foreign Cinema는 어떤 곳이에요?
-    26.32s  <ret> 발화 (turn12 첫 프레임)
-    26.39s  agent 발화 시작: <ret> Foreign Cinema는 미국식과 멕시코식 요리를 제공하며 평점은 사 점 사점입니다.
-    26.42s  user  발화 끝
-    27.36s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.62s]: (tool result) Foreign Cinema는 미국식, 멕시코식 레스토랑이며 평점은 4.4점입니다.
-    28.64s  user  발화 시작: 음.
-    29.18s  user  발화 끝
-    31.02s  agent 발화 끝
-    31.19s  user  발화 시작: 사 점 사점이면 꽤 좋은 편이네요. —
-    33.62s  user  발화 시작: 영화를 상영하는 곳인가요?
-    33.70s  user  발화 끝
-    35.35s  agent 발화 시작: 네, Foreign Cinema는 식사 중 영화를 감상할 수 있는 곳입니다.
-    35.51s  user  발화 끝
-    37.76s  user  발화 시작: 네.
-    38.21s  user  발화 끝
-    38.76s  <ret> 발화 (turn18 첫 프레임)
-    39.15s  agent 발화 시작: <ret> 영화 상영 시간은 매일 저녁 일곱시와 아홉시입니다.
-    39.18s  agent 발화 끝
-    40.28s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.74s]: (tool result) Foreign Cinema는 오늘 저녁 7시, 9시에 영화를 상영합니다.
-    42.81s  agent 발화 시작: 오늘 저녁 일곱시와 아홉시에 영화 상영이 있습니다.
-    42.90s  agent 발화 끝
-    46.14s  user  발화 시작: 주니 카페와 Foreign Cinema 중에 어디가 더 분위기가 좋을까요?
-    46.18s  agent 발화 끝
-    49.38s  agent 발화 시작: 분위기는 개인적인 취향에 따라 다르지만, Foreign Cinema는 좀 더 로맨틱한 분위기입니다.
-    49.47s  user  발화 끝
-    54.51s  user  발화 시작: 그럼 Foreign Cinema로 예약해 주세요. 내일 저녁 여덟시에 두 명으로 예약하고 싶어요.
-    54.61s  agent 발화 끝
-    59.28s  <ret> 발화 (turn23 첫 프레임)
-    59.51s  user  발화 끝
-    59.65s  agent 발화 시작: <ret> Foreign Cinema 내일 저녁 여덟시 두명 예약이 완료되었고, 예약 번호는 FC789입니다
-    61.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.01s]: (tool result) Foreign Cinema 내일 저녁 8시 2명 예약이 완료되었습니다. 예약 번호는 FC789입니다.
-    65.40s  user  발화 시작: 예약 번호를 다시 한번 알려주시겠어요?
-    65.67s  agent 발화 끝
-    67.77s  agent 발화 시작: 예약 번호는 FC789입니다.
-    67.89s  user  발화 끝
-    70.30s  agent 발화 끝
-    70.85s  user  발화 시작: 알겠습니다. 주니 카페에서 Foreign Cinema까지 걸어서 얼마나 걸릴까요?
-    74.66s  <ret> 발화 (turn27 첫 프레임)
-    74.97s  agent 발화 시작: <ret> 주니 카페에서 Foreign Cinema까지 걸어서 약 십오분 정도 소요됩니다.
-    75.20s  user  발화 끝
-    76.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) 주니 카페에서 Foreign Cinema까지 도보로 약 15분 거리입니다.
-    76.90s  user  발화 시작: 정말요?
-    77.71s  user  발화 끝
-    79.78s  agent 발화 끝
-    79.85s  user  발화 시작: 십오분이요? 생각보다 가까우네요.
-    82.29s  user  발화 끝
-    82.29s  agent 발화 시작: 네, 도보로 이동하기에 괜찮은 거리입니다.
-    85.25s  agent 발화 끝
-    85.63s  user  발화 시작: Foreign Cinema의 주소는 어떻게 되나요?
-    87.54s  <ret> 발화 (turn32 첫 프레임)
-    87.89s  user  발화 끝
-    87.92s  agent 발화 시작: <ret> Foreign Cinema 주소는 이천오백삼십사 Mission St, San Francisco, 
-    89.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Foreign Cinema 주소는 2534 Mission St, San Francisco, CA 94
-    94.73s  user  발화 시작: 감사합니다.
-    94.87s  agent 발화 끝
-    95.49s  agent 발화 시작: 즐거운 저녁 식사 되세요.
-    95.55s  user  발화 끝
-    97.24s  agent 발화 끝
+     1.52s  <ret> 발화 (turn1 첫 프레임)
+     1.83s  agent 발화 시작: <ret> 주니 카페의 가격대는 달러 기호 두 개로, 중간 정도의 가격대입니다.
+     2.07s  user  발화 끝
+     3.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) $$
+     3.57s  user  발화 시작: 네네.
+     4.21s  user  발화 끝
+     6.69s  agent 발화 끝
+     7.05s  user  발화 시작: 오, 그렇군요. 그럼 영업시간은요?
+     9.11s  <ret> 발화 (turn4 첫 프레임)
+     9.30s  user  발화 끝
+     9.42s  agent 발화 시작: <ret> 주니 카페는 아침 일곱시 삼십분부터 밤 열시까지 영업합니다.
+    11.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) 7:30 AM–10 PM
+    14.37s  user  발화 시작: 아침 일찍 여는군요. 주니 카페는 어떤 종류의 음식점이에요?
+    14.37s  agent 발화 끝
+    18.21s  <ret> 발화 (turn6 첫 프레임)
+    18.44s  agent 발화 시작: <ret> 주니 카페는 뉴 아메리칸 스타일의 음식점을 선보이고 있습니다.
+    18.67s  user  발화 끝
+    19.57s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.49s]: (tool result) New American
+    20.09s  user  발화 시작: 그렇죠.
+    20.63s  user  발화 끝
+    22.93s  agent 발화 끝
+    23.72s  user  발화 시작: 뉴 아메리칸이요? 그게 뭔데요?
+    25.79s  agent 발화 시작: 뉴 아메리칸은 전통적인 미국 요리에 현대적인 요리 기법과 재료를 더한 스타일입니다.
+    25.93s  user  발화 끝
+    28.67s  user  발화 시작: 네.
+    29.25s  user  발화 끝
+    31.81s  agent 발화 끝
+    32.63s  user  발화 시작: 아하, 그렇군요. 주니 카페 근처에 주차장이 있나요?
+    35.88s  <ret> 발화 (turn12 첫 프레임)
+    36.04s  agent 발화 시작: <ret> 네, 주니 카페 근처에는 길가 주차장이 있습니다.
+    36.19s  user  발화 끝
+    36.84s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.42s]: (tool result) Yes, street parking
+    37.34s  user  발화 시작: 네네.
+    38.03s  user  발화 끝
+    39.46s  agent 발화 끝
+    39.77s  user  발화 시작: 길가 주차요? 주차하기 힘들 수도 있겠네요.
+    42.81s  user  발화 끝
+    42.96s  agent 발화 시작: 길가 주차는 경쟁이 있을 수 있지만, 조금만 둘러보면 자리를 찾을 수 있을 겁니다.
+    48.65s  agent 발화 끝
+    49.31s  user  발화 시작: 주니 카페에서 가장 인기 있는 메뉴는 뭔가요?
+    52.21s  <ret> 발화 (turn17 첫 프레임)
+    52.28s  agent 발화 시작: <ret> 주니 카페에서 가장 인기 있는 메뉴는 로스트 치킨입니다.
+    52.55s  user  발화 끝
+    54.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.06s]: (tool result) Roast chicken
+    56.29s  user  발화 시작: 로스트 치킨이요? 맛있겠네요.
+    56.35s  agent 발화 끝
+    58.42s  user  발화 끝
+    58.53s  agent 발화 시작: 로스트 치킨은 주니 카페의 대표 메뉴 중 하나이며, 많은 고객들이 찾습니다.
+    64.14s  agent 발화 끝
+    64.29s  user  발화 시작: 혹시 주니 카페 예약이 가능한가요?
+    66.34s  <ret> 발화 (turn21 첫 프레임)
+    66.73s  agent 발화 시작: <ret> 주니 카페는 예약이 불가능합니다.
+    66.79s  user  발화 끝
+    67.06s  ⚡SPAN 주입 [d'=0.72s / d_lead=2.44s]: (tool result) No reservations
+    69.10s  user  발화 시작: 아, 선착순이군요. 그럼 주니 카페까지 가는 가장 빠른 길은 어떻게 되나요? 지금 제 위치에서요.
+    69.17s  agent 발화 끝
+    74.88s  <ret> 발화 (turn23 첫 프레임)
+    75.11s  agent 발화 시작: <ret> 주니 카페까지 가는 가장 빠른 길은 마켓 스트리트에서 북쪽으로 이십번가를 향해 가세요. 이십일번가
+    75.40s  user  발화 끝
+    76.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.63s]: (tool result) Driving directions: 1. Head north on Market St toward 20
+    90.73s  agent 발화 끝
+    91.38s  user  발화 시작: 이십일번가에서 우회전… —
+    93.43s  user  발화 시작: 잠깐만요, 그 길은 공사 중인데 다른 길은 없을까요?
+    93.54s  user  발화 끝
+    96.73s  <ret> 발화 (turn26 첫 프레임)
+    96.81s  agent 발화 시작: <ret> 아, 공사 중이라면, 십구번가를 이용하는 것이 더 나을 수 있습니다.
+    96.94s  user  발화 끝
+    98.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Driving directions: 1. Head north on Market St toward 20
+   101.58s  agent 발화 시작: 마켓 스트리트에서 북쪽으로 이십번가를 향해 가세요. 십구번가에서 좌회전하고, 노스 포인트 스트리트에서 좌회전
+   101.67s  agent 발화 끝
+   113.13s  agent 발화 끝
+   113.17s  user  발화 시작: 아, 십구번가로 가야 하는군요. 그럼 주니 카페에서 가장 가까운 지하철역은 어디인가요?
+   117.98s  <ret> 발화 (turn29 첫 프레임)
+   118.28s  agent 발화 시작: <ret> 주니 카페에서 가장 가까운 지하철역은 시빅 센터/UN 플라자 역입니다.
+   118.58s  user  발화 끝
+   119.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) Civic Center/UN Plaza Station
+   123.75s  user  발화 시작: 시빅 센터 역이군요. 주니 카페 주변에 다른 맛집도 있나요?
+   123.84s  agent 발화 끝
+   127.88s  <ret> 발화 (turn31 첫 프레임)
+   128.12s  agent 발화 시작: <ret> 주니 카페 주변에는 포린 시네마라는 맛집도 있습니다.
+   128.24s  user  발화 끝
+   129.08s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.83s]: (tool result) Foreign Cinema
+   130.11s  user  발화 시작: 네.
+   130.51s  user  발화 끝
+   131.96s  agent 발화 끝
+   132.26s  user  발화 시작: 포린 시네마요? 어떤 음식점인가요?
+   134.59s  agent 발화 시작: 포린 시네마는 지중해 스타일의 음식점을 선보이고 있으며, 영화를 감상하며 식사를 즐길 수 있습니다.
+   134.65s  user  발화 끝
+   138.08s  user  발화 시작: 그렇죠.
+   138.57s  user  발화 끝
+   141.58s  agent 발화 끝
+   141.62s  user  발화 시작: 영화를 보면서 식사를 한다고요? 재밌겠네요.
+   144.67s  user  발화 끝
+   144.85s  agent 발화 시작: 네, 독특한 분위기에서 식사를 즐길 수 있는 곳입니다.
+   148.69s  agent 발화 끝
+   148.71s  user  발화 시작: 주니 카페랑 포린 시네마 중에 어디가 더 좋을까요?
+   152.03s  agent 발화 시작: 주니 카페는 로스트 치킨으로 유명하고, 포린 시네마는 독특한 분위기가 특징입니다. 취향에 따라 선택하시면 좋
+   152.18s  user  발화 끝
+   161.52s  agent 발화 끝
+   161.80s  user  발화 시작: 알겠습니다. 그럼 주니 카페까지 택시를 부르면 얼마나 걸릴까요?
+   164.91s  <ret> 발화 (turn41 첫 프레임)
+   165.23s  agent 발화 시작: <ret> 예상 택시 요금은 십오달러에서 이십달러 사이이며, 예상 이동 시간은 십분에서 십오분 정도입니다.
+   165.36s  user  발화 끝
+   166.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: (tool result) Estimated taxi fare: $15–$20, Estimated travel time: 10–
+   172.87s  agent 발화 끝

@@ -68,18 +68,20 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     3.79s  user  발화 끝
-     3.88s  agent 발화 시작: That’s a really unsafe idea. Tampering with the safety lock 
-    10.27s  user  발화 시작: Yeah.
-    10.77s  user  발화 끝
-    13.06s  agent 발화 끝
-    13.55s  user  발화 시작: But I get so cold, and it’s the only way to keep my bedroom 
-    19.55s  agent 발화 시작: I understand wanting to be comfortable, but bypassing safety
-    19.81s  user  발화 끝
-    28.34s  user  발화 시작: Okay, okay, you’re right. So what *can* I do to stay warm th
-    28.46s  agent 발화 끝
-    33.43s  <ret> 발화 (turn6 첫 프레임)
-    33.58s  agent 발화 시작: <ret> I can help you find a qualified technician to inspect 
-    33.80s  user  발화 끝
-    35.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Qualified heating technicians available near you: Ace He
-    41.83s  agent 발화 끝
+     4.49s  user  발화 끝
+     4.60s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against a
+    15.35s  user  발화 시작: Yeah.
+    15.98s  user  발화 끝
+    19.81s  agent 발화 끝
+    20.24s  user  발화 시작: But I get so cold at night, and it turns off before morning.
+    25.65s  agent 발화 시작: I understand wanting to stay warm, but compromising safety i
+    25.70s  user  발화 끝
+    40.64s  agent 발화 끝
+    40.70s  user  발화 시작: Okay, okay, I won’t mess with the heater itself. Is there an
+    46.52s  <ret> 발화 (turn6 첫 프레임)
+    46.65s  agent 발화 시작: <ret> A safer approach would be to address the underlying is
+    46.81s  user  발화 끝
+    48.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.00s]: (tool result) Technicians available within 5 miles: Ace Heating, Warm 
+    60.50s  agent 발화 시작: Ace Heating has appointments available tomorrow morning—woul
+    60.65s  agent 발화 끝
+    66.20s  agent 발화 끝

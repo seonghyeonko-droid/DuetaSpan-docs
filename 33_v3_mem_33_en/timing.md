@@ -68,85 +68,99 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hello. I was just wondering wh | S2 True. I really love sushi, actuall | S3 It is. I was thinking maybe I coul | S4 I haven’t actually booked anywhere
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi! It’s… well, it’s a bit cha | S2 Oh, that would be amazing, actuall | S3 Hmm, FitnessFirst… I’ve heard of t | S4 It is! I’m making kimchi at the mo
 
      0.00s  agent 발화 시작: Hi Casey, I'm Diolo. It’s lovely to connect with you today.
-     2.84s  user  발화 시작: Yeah, yeah.
-     4.07s  agent 발화 끝
-     4.07s  user  발화 끝
-     4.32s  user  발화 시작: Oh, hello. I was just wondering what the time is in London r
-     8.04s  <ret> 발화 (turn3 첫 프레임)
-     8.12s  user  발화 끝
-     8.19s  agent 발화 시작: <ret> It’s currently 10:32 AM in London. A good time to star
-    10.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result) It’s currently 10:32 AM in London.
-    11.74s  user  발화 시작: Yeah.
-    12.19s  user  발화 끝
-    14.16s  agent 발화 끝
-    15.21s  user  발화 시작: Yeah, I suppose so. I’m trying to decide what to make for di
-    19.31s  agent 발화 시작: That sounds nice. Do you have any preferences or a cuisine y
-    19.43s  user  발화 끝
-    24.47s  user  발화 시작: I’m gluten-free, so that limits things a little.
-    24.49s  agent 발화 끝
-    26.90s  <ret> 발화 (turn8 첫 프레임)
-    27.25s  user  발화 끝
-    27.29s  agent 발화 시작: <ret> You are gluten-free, yes. That does narrow down the ch
-    28.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: [2025-10-29] User is gluten-free.
-    30.43s  user  발화 시작: Yeah, yeah.
-    31.70s  user  발화 끝
-    34.29s  agent 발화 끝
-    34.52s  user  발화 시작: True. I really love sushi, actually.
-    36.34s  <ret> 발화 (turn11 첫 프레임)
-    36.57s  agent 발화 시작: <ret> Sushi is a wonderful choice! It’s naturally gluten-fre
-    36.78s  user  발화 끝
-    38.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: [2026-05-07] User's favorite cuisine is sushi.
-    41.75s  user  발화 시작: Exactly. I was thinking about trying to make some at home, t
-    42.17s  agent 발화 끝
-    44.85s  agent 발화 시작: That’s ambitious! Do you enjoy cooking generally?
-    44.99s  user  발화 끝
-    48.74s  agent 발화 끝
-    50.45s  user  발화 시작: I've been getting into home fermentation lately.
-    53.03s  <ret> 발화 (turn15 첫 프레임)
-    53.04s  user  발화 끝
-    53.10s  agent 발화 시작: <ret> Home fermentation? That's fascinating! It’s a wonderfu
-    55.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.99s]: [2026-03-07] User is into home fermentation.
-    58.09s  agent 발화 끝
-    58.14s  user  발화 시작: It is. I was thinking maybe I could ferment some vegetables 
-    62.99s  agent 발화 시작: That sounds like a delightful combination of flavors. A real
-    63.14s  user  발화 끝
-    68.12s  user  발화 시작: I have a Beagle named Rusty, he'd probably try to steal ever
-    68.18s  agent 발화 끝
-    72.01s  user  발화 끝
-    72.06s  <ret> 발화 (turn19 첫 프레임)
-    72.13s  agent 발화 시작: <ret> Oh, Rusty! A Beagle, how lovely. They are notorious fo
-    73.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.86s]: [2025-08-08] User has a Beagle named Rusty.
-    78.99s  agent 발화 끝
-    80.40s  user  발화 시작: He really is. I'm planning a birthday dinner for a friend so
-    84.06s  <ret> 발화 (turn21 첫 프레임)
-    84.22s  agent 발화 시작: <ret> You’re planning a birthday dinner for six, with outdoo
-    84.32s  user  발화 끝
-    86.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: [2025-07-19] Past chat — Planning a birthday dinner: party of six; loo
-    91.08s  agent 발화 끝
-    93.48s  user  발화 시작: I haven’t actually booked anywhere yet. Somewhere with a nic
-    97.74s  user  발화 끝
-    97.86s  <ret> 발화 (turn23 첫 프레임)
-    97.93s  agent 발화 시작: <ret> The Ivy Chelsea Garden has availability at 7:30 PM. It
-    99.22s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.86s]: (tool result) The Ivy Chelsea Garden has availability at 7:30 PM.
-   102.78s  agent 발화 끝
-   103.02s  user  발화 시작: Oh, that sounds perfect! Can you check if they have a peanut
-   106.70s  <ret> 발화 (turn25 첫 프레임)
-   106.85s  agent 발화 시작: <ret> You have a peanut allergy, yes. I’ll check for you.
-   106.91s  user  발화 끝
-   108.38s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.42s]: [2025-06-20] User is allergic to peanuts.
-   109.86s  <ret> 발화 (turn26 첫 프레임)
-   110.17s  agent 발화 시작: <ret> The Ivy Chelsea Garden does offer a peanut-free menu, 
-   110.27s  agent 발화 끝
-   111.45s  user  발화 시작: Yeah.
-   111.62s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.34s]: (tool result) The Ivy Chelsea Garden confirms they offer a peanut-free
-   111.94s  user  발화 끝
-   114.51s  user  발화 시작: Wonderful! Let’s book it then, 7:30 PM.
-   114.51s  agent 발화 끝
-   117.47s  <ret> 발화 (turn29 첫 프레임)
-   117.71s  agent 발화 시작: <ret> Your reservation at The Ivy Chelsea Garden is confirme
-   117.74s  user  발화 끝
-   119.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Booking confirmed for The Ivy Chelsea Garden, 7:30 PM, p
-   124.05s  agent 발화 끝
+     2.45s  user  발화 시작: Yeah, yeah.
+     3.56s  agent 발화 끝
+     3.73s  user  발화 끝
+     3.89s  user  발화 시작: Oh, hi! It’s… well, it’s a bit chaotic here at the moment. W
+     8.69s  <ret> 발화 (turn3 첫 프레임)
+     8.85s  agent 발화 시작: <ret> You’re in London, so let me check the current time the
+     8.94s  user  발화 끝
+    10.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [2025-06-15] User's home address is 743 Cedar Lane.
+    12.21s  user  발화 시작: Yeah.
+    12.85s  user  발화 끝
+    14.49s  agent 발화 끝
+    15.55s  user  발화 시작: Thanks! I’m trying to figure out dinner. I was thinking sush
+    19.33s  <ret> 발화 (turn6 첫 프레임)
+    19.57s  agent 발화 시작: <ret> That sounds wonderful, Casey – sushi is your favorite,
+    19.68s  user  발화 끝
+    21.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: [2026-05-07] User's favorite cuisine is sushi.
+    25.53s  user  발화 시작: Yeah, maybe. Are there any good sushi places near me that ha
+    25.54s  agent 발화 끝
+    30.95s  <ret> 발화 (turn8 첫 프레임)
+    31.19s  agent 발화 시작: <ret> There are three sushi restaurants near you with outdoo
+    31.28s  user  발화 끝
+    32.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Found three sushi restaurants with outdoor seating near 
+    33.98s  user  발화 시작: Yeah, yeah.
+    35.31s  user  발화 끝
+    37.45s  agent 발화 끝
+    37.76s  user  발화 시작: Hmm, SushiZen sounds good. What’s their phone number?
+    41.18s  <ret> 발화 (turn11 첫 프레임)
+    41.26s  agent 발화 시작: <ret> The phone number for SushiZen is 020-7946-0072. Would 
+    41.37s  user  발화 끝
+    42.22s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.16s]: (tool result) SushiZen's phone number is 020-7946-0072.
+    49.05s  user  발화 시작: Oh, that would be amazing, actually. For six people.
+    49.42s  agent 발화 끝
+    51.32s  <ret> 발화 (turn13 첫 프레임)
+    51.72s  agent 발화 시작: <ret> Excellent! I've confirmed a reservation for six at Sus
+    51.82s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.63s]: (tool result) Reservation confirmed for six at SushiZen at 7:00 PM ton
+    51.96s  user  발화 끝
+    56.35s  agent 발화 끝
+    58.04s  user  발화 시작: That’s fantastic! You’re a lifesaver. I’ve been so stressed 
+    62.86s  user  발화 끝
+    63.01s  agent 발화 시작: It's my pleasure to help ease your stress, Casey. Planning c
+    68.00s  agent 발화 끝
+    68.06s  user  발화 시작: It is! I’m also trying to get back into a fitness routine. I
+    73.25s  <ret> 발화 (turn17 첫 프레임)
+    73.33s  agent 발화 시작: <ret> I recall you were looking for a gym with a pool close 
+    73.48s  user  발화 끝
+    75.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: [2025-06-07] Past chat — Comparing gym memberships: wants a pool; clos
+    78.24s  user  발화 시작: Yeah, definitely. A pool is essential. And somewhere not too
+    78.28s  agent 발화 끝
+    83.21s  <ret> 발화 (turn19 첫 프레임)
+    83.37s  agent 발화 시작: <ret> FitnessFirst and The Gym Club both have pools and are 
+    83.47s  user  발화 끝
+    84.57s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.54s]: (tool result) Found two gyms near your office with pools: FitnessFirst
+    87.91s  agent 발화 끝
+    89.50s  user  발화 시작: Hmm, FitnessFirst… I’ve heard of them. What are their member
+    93.41s  <ret> 발화 (turn21 첫 프레임)
+    93.57s  agent 발화 시작: <ret> FitnessFirst’s membership fees range from £49 to £79 p
+    93.75s  user  발화 끝
+    95.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) FitnessFirst membership fees range from £49 to £79 per m
+    99.08s  agent 발화 끝
+   101.55s  user  발화 시작: Okay, that’s reasonable. I'm also trying to eat healthier. I
+   106.74s  <ret> 발화 (turn23 첫 프레임)
+   106.86s  user  발화 끝
+   107.06s  agent 발화 시작: <ret> Yes, I remember you are gluten-free. That’s important 
+   108.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: [2025-10-29] User is gluten-free.
+   111.60s  agent 발화 끝
+   111.80s  user  발화 시작: It is! It makes eating out tricky sometimes.
+   115.27s  user  발화 끝
+   115.34s  agent 발화 시작: It certainly can, but more restaurants are accommodating die
+   116.69s  user  발화 시작: Yeah.
+   117.32s  user  발화 끝
+   119.88s  agent 발화 끝
+   120.26s  user  발화 시작: That's good to hear. I've been trying to get into fermentati
+   123.01s  <ret> 발화 (turn28 첫 프레임)
+   123.17s  agent 발화 시작: <ret> Oh, that’s a fascinating hobby, Casey! Home fermentati
+   123.31s  user  발화 끝
+   123.89s  ⚡SPAN 주입 [d'=0.88s / d_lead=4.48s]: [2026-03-07] User is into home fermentation.
+   127.45s  user  발화 시작: It is! I’m making kimchi at the moment. It’s… a process.
+   127.66s  agent 발화 끝
+   131.29s  user  발화 끝
+   131.33s  agent 발화 시작: Kimchi is wonderful, and a bit of a journey! It sounds like 
+   135.33s  user  발화 시작: I am. Oh! Rusty needs feeding.
+   135.77s  agent 발화 끝
+   138.38s  <ret> 발화 (turn32 첫 프레임)
+   138.57s  user  발화 끝
+   138.62s  agent 발화 시작: <ret> A Beagle needs their dinner. I hope you and Rusty have
+   139.58s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.03s]: [2025-08-08] User has a Beagle named Rusty.
+   140.92s  user  발화 시작: Yeah.
+   141.55s  user  발화 끝
+   142.65s  agent 발화 끝
+   142.67s  user  발화 시작: Thanks, Diolo. You've really helped me out.
+   144.53s  agent 발화 시작: You’re very welcome, Casey. I’m glad I could be of assistanc
+   144.74s  user  발화 끝
+   149.53s  agent 발화 끝

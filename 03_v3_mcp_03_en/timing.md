@@ -58,45 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Can you apply the discount code SU | S3 What’s the new total? | S4 And send me a confirmation email.
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Can you apply the discount code 'S | S3 What's the new total? | S4 Perfect, thanks!
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.90s  <ret> 발화 (turn1 첫 프레임)
-     3.30s  agent 발화 시작: <ret> Alright, I've navigated to the checkout page within th
-     3.46s  user  발화 끝
-     4.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) checkout page loaded
+     2.82s  <ret> 발화 (turn1 첫 프레임)
+     3.22s  agent 발화 시작: <ret> Alright, I’ve initiated the checkout process within th
+     3.23s  user  발화 끝
+     4.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) checkout initiated
      7.42s  agent 발화 끝
-     8.84s  user  발화 시작: What's the total cost, including shipping?
-    11.41s  <ret> 발화 (turn3 첫 프레임)
-    11.48s  agent 발화 시작: <ret> The total comes to one hundred and twenty-five dollars
-    11.57s  user  발화 끝
-    12.77s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.44s]: (tool result) $125.50
-    14.71s  user  발화 시작: Yeah.
-    15.34s  user  발화 끝
-    15.79s  agent 발화 시작: It’s wonderful you’re finalizing this purchase! Staying on t
-    15.92s  agent 발화 끝
-    21.85s  agent 발화 끝
-    22.24s  user  발화 시작: Can you apply the discount code SUMMER20?
-    24.87s  <ret> 발화 (turn7 첫 프레임)
-    25.02s  agent 발화 시작: <ret> The discount code SUMMER20 has been successfully appli
-    25.20s  user  발화 끝
-    26.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) discount applied
-    29.75s  agent 발화 끝
-    30.03s  user  발화 시작: What’s the new total?
-    31.13s  <ret> 발화 (turn9 첫 프레임)
-    31.37s  agent 발화 시작: <ret> With the discount, the new total is one hundred dollar
-    31.46s  user  발화 끝
-    33.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) $100.40
-    36.09s  agent 발화 끝
-    36.11s  user  발화 시작: Use my saved credit card to complete the purchase.
-    39.04s  <ret> 발화 (turn11 첫 프레임)
-    39.36s  agent 발화 시작: <ret> Excellent! Your order is confirmed; the reference numb
-    39.48s  user  발화 끝
-    40.88s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.93s]: (tool result) order confirmed, #78945
-    45.27s  user  발화 시작: And send me a confirmation email.
-    45.29s  agent 발화 끝
-    46.95s  <ret> 발화 (turn13 첫 프레임)
-    47.27s  agent 발화 시작: <ret> A confirmation email has been sent to user@example.com
-    47.38s  user  발화 끝
-    48.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) email sent
-    54.27s  agent 발화 끝
+     8.81s  user  발화 시작: What’s the total amount due?
+    10.49s  <ret> 발화 (turn3 첫 프레임)
+    10.56s  agent 발화 시작: <ret> The total amount due for your order is seventy-eight d
+    10.61s  user  발화 끝
+    11.85s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.16s]: (tool result) $78.50
+    13.56s  user  발화 시작: Yeah.
+    14.20s  user  발화 끝
+    14.56s  agent 발화 시작: It's wonderful to see you moving forward with this purchase,
+    14.72s  agent 발화 끝
+    20.30s  agent 발화 끝
+    20.68s  user  발화 시작: Can you apply the discount code 'SUMMER20'?
+    23.23s  <ret> 발화 (turn7 첫 프레임)
+    23.39s  agent 발화 시작: <ret> I’ve applied the discount code SUMMER20 to your order.
+    23.50s  user  발화 끝
+    24.67s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.24s]: (tool result) discount applied
+    26.63s  agent 발화 끝
+    26.94s  user  발화 시작: What's the new total?
+    28.02s  <ret> 발화 (turn9 첫 프레임)
+    28.26s  agent 발화 시작: <ret> With the discount applied, your new total is sixty-two
+    28.37s  user  발화 끝
+    30.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) $62.80
+    32.97s  user  발화 시작: Go ahead and confirm the order.
+    32.99s  agent 발화 끝
+    34.36s  <ret> 발화 (turn11 첫 프레임)
+    34.68s  agent 발화 시작: <ret> Your order has been confirmed, and the order number is
+    34.75s  user  발화 끝
+    36.20s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.60s]: (tool result) order confirmed, #12345
+    40.21s  user  발화 시작: Perfect, thanks!
+    40.28s  agent 발화 끝
+    41.44s  agent 발화 시작: [happy] You are very welcome! I'm glad I could help streamli
+    41.54s  user  발화 끝
+    46.58s  agent 발화 끝

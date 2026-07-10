@@ -63,32 +63,32 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 …picture to my sister, Sarah? | S3 That’s great, thanks. What’s the w | S4 Okay, thanks.
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 What’s the weather… | S3 …like in Lyon right now? | S4 Okay.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.16s  <ret> 발화 (turn1 첫 프레임)
-     4.22s  agent 발화 시작: <ret> I found twelve files from your France holiday last yea
-     4.39s  user  발화 끝
-     6.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.24s]: (tool result) 12 files found: 'Paris EiffelTower.jpg', 'Nice Beach.png
-     8.65s  user  발화 시작: Mhm.
-     9.09s  user  발화 끝
-    11.46s  agent 발화 끝
-    12.07s  user  발화 시작: Can you send the Paris…
-    13.81s  user  발화 끝
-    14.79s  user  발화 시작: …picture to my sister, Sarah?
-    16.37s  <ret> 발화 (turn5 첫 프레임)
-    16.68s  agent 발화 시작: <ret> I’ve just sent the Eiffel Tower picture to Sarah.
-    16.78s  user  발화 끝
-    17.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.67s]: (tool result) File 'Paris EiffelTower.jpg' sent to Sarah.
-    18.29s  user  발화 시작: Yeah.
-    18.79s  user  발화 끝
-    19.36s  agent 발화 끝
-    19.59s  user  발화 시작: That’s great, thanks. What’s the weather like in Paris right
-    22.99s  agent 발화 시작: Let me check on that.
-    23.11s  user  발화 끝
-    24.19s  agent 발화 끝
-    24.23s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Temperature: 15°C, Condition: Partly Cloudy, Wind: 12 km
-    24.38s  user  발화 시작: Okay, thanks.
-    25.17s  agent 발화 시작: <ret> The current weather in Paris is 15 degrees Celsius and
-    25.20s  user  발화 끝
-    32.49s  agent 발화 끝
+     5.00s  <ret> 발화 (turn1 첫 프레임)
+     5.07s  agent 발화 시작: <ret> I found three pictures from your France holiday last y
+     5.18s  user  발화 끝
+     7.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.01s]: (tool result) 3 files found: "Paris EiffelTower.jpg", "Nice Beach.png"
+    12.56s  user  발화 시작: Mhm.
+    13.20s  user  발화 끝
+    17.08s  agent 발화 끝
+    17.71s  user  발화 시작: Can you send “Paris_EiffelTower.jpg” to my sister, Sarah?
+    22.34s  <ret> 발화 (turn4 첫 프레임)
+    22.50s  agent 발화 시작: <ret> I’ve sent “Paris_EiffelTower.jpg” to Sarah. Your confi
+    22.62s  user  발화 끝
+    24.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) File sent to Sarah. Confirmation number: 829571
+    24.66s  user  발화 시작: Really?
+    25.62s  user  발화 끝
+    29.13s  agent 발화 끝
+    29.59s  user  발화 시작: What’s the weather…
+    31.02s  user  발화 끝
+    32.39s  user  발화 시작: …like in Lyon right now?
+    34.13s  agent 발화 시작: Let me check on that.
+    34.28s  user  발화 끝
+    34.85s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Partly cloudy, 18°C
+    35.07s  user  발화 시작: Okay.
+    35.24s  agent 발화 끝
+    35.63s  agent 발화 시작: <ret> The weather in Lyon is currently partly cloudy with a 
+    35.84s  user  발화 끝
+    46.21s  agent 발화 끝

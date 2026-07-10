@@ -66,47 +66,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 So, they’re against *all* governme | S3 …instead of just government itself | S4 Okay, that makes sense. Could you 
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Proudhon, right. Was he French? | S3 Are there any major groups still a | S4 That sounds…idealistic. Could you 
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.64s  <ret> 발화 (turn1 첫 프레임)
-     2.80s  agent 발화 시작: <ret> And I’ve searched for a definitive answer, but unfortu
-     2.82s  user  발화 끝
-     4.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (no information found)
-     6.99s  user  발화 시작: Uh-huh.
-     7.53s  user  발화 끝
-     9.89s  agent 발화 끝
-    10.14s  user  발화 시작: Well, what do they generally dislike about governments?
-    12.83s  <ret> 발화 (turn4 첫 프레임)
-    12.99s  agent 발화 시작: <ret> They generally dislike governments because anarchists 
-    13.14s  user  발화 끝
-    14.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: [source: Wikipedia] Anarchists oppose all forms of hierarchical rule, 
-    20.69s  agent 발화 끝
-    21.28s  user  발화 시작: So, they’re against *all* governments? Even small, local one
-    25.24s  agent 발화 시작: Yes, their opposition extends to all hierarchical structures
-    25.30s  user  발화 끝
-    32.98s  agent 발화 끝
-    33.01s  user  발화 시작: But don’t some anarchists focus more on capitalism as the co
-    37.12s  user  발화 시작: …instead of just government itself?
-    37.21s  user  발화 끝
-    38.77s  <ret> 발화 (turn9 첫 프레임)
-    38.93s  agent 발화 시작: <ret> —and advocate for a stateless, classless society witho
-    39.19s  user  발화 끝
-    40.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: [source: Stanford Encyclopedia of Philosophy] Anarcho-communism advoca
-    45.32s  agent 발화 끝
-    46.02s  user  발화 시작: And what’s the difference between anarcho-communism and anar
-    49.86s  <ret> 발화 (turn11 첫 프레임)
-    50.02s  agent 발화 시작: <ret> Anarcho-syndicalism focuses on labor movements and wor
-    50.18s  user  발화 끝
-    51.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: [source: The Anarchist FAQ] Anarcho-syndicalism focuses on labor movem
-    58.41s  agent 발화 끝
-    58.44s  user  발화 시작: Okay, that makes sense. Could you find me a good book on ana
-    62.77s  <ret> 발화 (turn13 첫 프레임)
-    62.85s  agent 발화 시작: <ret> I found “Anarchy, State, and Utopia” by Robert Nozick,
-    62.98s  user  발화 끝
-    64.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) "Anarchy, State, and Utopia" by Robert Nozick, $18.99.
-    68.55s  agent 발화 끝
-    69.31s  user  발화 시작: That sounds interesting, thanks.
-    71.05s  agent 발화 시작: You’re very welcome! I’m glad I could offer some resources. 
-    71.25s  user  발화 끝
-    77.07s  agent 발화 끝
+     3.10s  <ret> 발화 (turn1 첫 프레임)
+     3.23s  user  발화 끝
+     3.24s  agent 발화 시작: <ret> And I can certainly understand why you’d ask. It appea
+     5.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (no information found)
+     6.94s  user  발화 시작: Uh-huh.
+     7.43s  user  발화 끝
+     9.59s  agent 발화 끝
+     9.76s  user  발화 시작: Hmm, okay. Well, what about the history of anarchism—when di
+    16.95s  <ret> 발화 (turn4 첫 프레임)
+    17.18s  agent 발화 시작: <ret> The roots of anarchism go back to the Enlightenment pe
+    17.32s  user  발화 끝
+    17.99s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.06s]: [source: Wikipedia] Anarchism as a political philosophy emerged during
+    25.25s  agent 발화 끝
+    25.79s  user  발화 시작: Proudhon, right. Was he French?
+    28.18s  <ret> 발화 (turn6 첫 프레임)
+    28.49s  agent 발화 시작: <ret> Yes, Pierre-Joseph Proudhon was indeed French—a social
+    28.66s  user  발화 끝
+    30.02s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.35s]: [source: Britannica] Pierre-Joseph Proudhon was a French socialist, po
+    34.76s  user  발화 시작: Interesting. So, if someone wanted to learn more about curre
+    34.84s  agent 발화 끝
+    41.07s  user  발화 끝
+    41.17s  agent 발화 시작: Current anarchist movements are quite diverse, ranging from—
+    44.13s  user  발화 시작: Are there any major groups still active in Europe today?
+    44.88s  agent 발화 끝
+    47.93s  agent 발화 시작: Europe does see continued anarchist activity, with several g
+    48.15s  user  발화 끝
+    53.80s  user  발화 시작: Mutual aid… how does that work, exactly?
+    54.23s  agent 발화 끝
+    56.97s  <ret> 발화 (turn12 첫 프레임)
+    57.12s  agent 발화 시작: <ret> Mutual aid is a system of reciprocal exchange—resource
+    57.31s  user  발화 끝
+    58.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: [source: The Anarchist Federation] Mutual aid is a reciprocal exchange
+    66.39s  agent 발화 끝
+    66.47s  user  발화 시작: That sounds…idealistic. Could you recommend a good book to g
+    74.33s  agent 발화 시작: For a broader overview, I often recommend 'Anarchy, State, a
+    74.35s  user  발화 끝
+    82.71s  agent 발화 끝
+    83.44s  user  발화 시작: Okay, great. Thanks, Frunax.
+    85.92s  agent 발화 시작: You’re very welcome. I’m glad I could help illuminate some o
+    86.03s  user  발화 끝
+    90.22s  agent 발화 끝

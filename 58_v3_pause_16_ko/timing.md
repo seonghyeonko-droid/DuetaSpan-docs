@@ -63,65 +63,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 빅 브라더라는 말이 어디서 왔는지 궁금했는데… | S2 뭔가 섬뜩하네요. 지금도 빅… | S3 생각보다 오래됐네요. 그 소설이 지금도 많이 읽히나요? | S4 혹시 그 소설을 영화화한 적도 있나요?
+# EXAMINER(FDB-v2) 단계: S1 빅 브라더라는 말은 어디에서 유래된 걸까요? | S2 전체주의 사회라… 요즘에도 그런 비슷한 상황이 있을까요? | S3 혹시 빅 브라더처럼 감시가… | S4 네, 맞아요. 저도 그렇게 생각해요.
 
-     0.00s  user  발화 시작: 빅 브라더라는 말이 어디서 왔는지 궁금했는데…
-     3.05s  <ret> 발화 (turn1 첫 프레임)
-     3.44s  agent 발화 시작: <ret> 조지 오웰의 디스토피아 소설 《천구백팔십사》의 주인공이 빅 브라더입니다.
-     3.60s  user  발화 끝
-     5.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: [source: Wikipedia] "Big Brother is the protagonist of George Orwell's
-     8.35s  user  발화 시작: 아, 그렇군요. 그럼 그…
-     8.49s  agent 발화 끝
-    10.09s  user  발화 끝
-    11.13s  user  발화 시작: …소설에서 어떤 의미로 사용됐어요?
-    13.06s  <ret> 발화 (turn4 첫 프레임)
-    13.38s  agent 발화 시작: <ret> 오웰의 소설에서 빅 브라더는 오세아니아를 지배하는 전지전능한 독재자입니다.
-    13.58s  user  발화 끝
-    15.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [source: Britannica] "In Orwell’s novel, Big Brother is the seemingly 
-    16.07s  user  발화 시작: 아.
-    16.70s  user  발화 끝
-    18.71s  user  발화 시작: 뭔가 섬뜩하네요. 지금도 빅…
-    19.03s  agent 발화 끝
-    20.55s  user  발화 끝
-    22.34s  user  발화 시작: …브라더라는 표현을 많이 쓰잖아요.
-    24.79s  user  발화 끝
-    24.90s  agent 발화 시작: 현대 사회에서도 감시나 권력 남용을 비판할 때 자주 사용되죠.
-    28.65s  agent 발화 끝
-    29.12s  user  발화 시작: 혹시 그 소설이 출판된 해를 알 수 있을까요?
-    31.79s  <ret> 발화 (turn10 첫 프레임)
-    32.10s  agent 발화 시작: <ret> 《천구백팔십사》는 천구백사십구년에 출판되었습니다.
-    32.17s  user  발화 끝
-    33.23s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.70s]: (tool result) 1949
-    35.79s  agent 발화 끝
-    35.97s  user  발화 시작: 생각보다 오래됐네요. 그 소설이 지금도 많이 읽히나요?
-    39.24s  <ret> 발화 (turn12 첫 프레임)
-    39.47s  agent 발화 시작: <ret> 《천구백팔십사》는 전 세계적으로 오천만 권 이상 판매되었습니다.
-    39.72s  user  발화 끝
-    40.89s  user  발화 시작: 네.
-    41.16s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.72s]: [source: Goodreads] "Nineteen Eighty-Four has sold over 50 million cop
-    41.34s  user  발화 끝
-    44.20s  agent 발화 끝
-    44.38s  user  발화 시작: 와, 정말 대단하네요. 그 소설의 배경이 된 시대는 언제인가요?
-    48.43s  <ret> 발화 (turn15 첫 프레임)
-    48.59s  agent 발화 시작: <ret> 오웰은 자신의 시대, 천구백사십년대의 사회적, 정치적 흐름을 바탕으로 미래의 섬뜩한 비전을 만들었
-    48.82s  user  발화 끝
-    50.19s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.74s]: [source: Literary Hub] "Orwell extrapolates from the social and politi
-    51.48s  user  발화 시작: 네.
-    51.94s  user  발화 끝
-    56.34s  agent 발화 끝
-    56.42s  user  발화 시작: 그럼 그 소설은 미래를 예측한 건가요?
-    58.86s  user  발화 끝
-    59.21s  agent 발화 시작: 미래를 예측했다고 보기는 어렵지만, 권력의 위험성을 경고하는 메시지를 담고 있습니다.
-    64.91s  agent 발화 끝
-    64.97s  user  발화 시작: 혹시 그 소설을 영화화한 적도 있나요?
-    67.22s  <ret> 발화 (turn20 첫 프레임)
-    67.53s  agent 발화 시작: <ret> 마이클 래드포드가 감독한 천구백팔십사년 영화가 있습니다.
-    67.83s  user  발화 끝
-    69.08s  user  발화 시작: 그렇죠.
-    69.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.82s]: (tool result) 1984, directed by Michael Radford
-    69.71s  user  발화 끝
-    71.35s  agent 발화 끝
-    71.99s  user  발화 시작: 아, 영화도 있었군요. 한번 찾아봐야겠어요.
-    74.39s  agent 발화 시작: 좋은 선택입니다. 책과 영화 모두 깊은 생각을 하게 만드는 작품이죠.
-    74.57s  user  발화 끝
-    79.26s  agent 발화 끝
+     0.00s  user  발화 시작: 빅 브라더라는 말은 어디에서 유래된 걸까요?
+     3.09s  agent 발화 시작: 빅 브라더라는 용어의 기원에 대해 궁금하시군요.
+     3.23s  user  발화 끝
+     6.61s  user  발화 시작: … 잠깐만요, 그 책 제목이 뭐였죠?
+     6.79s  agent 발화 끝
+     8.33s  <ret> 발화 (turn3 첫 프레임)
+     8.72s  agent 발화 시작: <ret> 빅 브라더라는 말은 조지 오웰의 디스토피아 소설 *천구백팔십사*에서 처음 사용되었답니다.
+     8.86s  user  발화 끝
+    10.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: [source: Wikipedia] The term "Big Brother" originated from the 1949 dy
+    11.10s  user  발화 시작: 맞아요.
+    11.83s  user  발화 끝
+    15.58s  agent 발화 끝
+    15.80s  user  발화 시작: 아, *천구백팔십사*요. 그 책은 어떤 내용이었죠?
+    19.32s  agent 발화 시작: *천구백팔십사*는 전체주의 사회를 배경으로 개인의 자유가 억압되는 이야기를 다루고 있어요.
+    19.40s  user  발화 끝
+    25.66s  agent 발화 끝
+    26.13s  user  발화 시작: 전체주의 사회라… 요즘에도 그런 비슷한 상황이 있을까요?
+    29.88s  agent 발화 시작: 사회 감시와 통제가 강화되는 경향이 나타나면서 유사한 우려가 제기되기도 하죠.
+    29.92s  user  발화 끝
+    32.20s  user  발화 시작: 네.
+    32.69s  user  발화 끝
+    34.68s  user  발화 시작: 감시 카메라 같은 거 말하는 건가요?
+    34.83s  agent 발화 끝
+    36.72s  agent 발화 시작: 네, 감시 카메라나 데이터 수집 등을 통해 개인 정보가 무분별하게 수집되는 경우가 있죠.
+    36.76s  user  발화 끝
+    39.86s  user  발화 시작: 네.
+    40.35s  user  발화 끝
+    42.18s  agent 발화 끝
+    42.60s  user  발화 시작: 그럼 빅 브라더는 그런 감시를 상징하는 거군요.
+    45.74s  user  발화 끝
+    45.84s  agent 발화 시작: 맞아요. 빅 브라더는 감시 사회의 은유적인 표현으로 널리 사용되고 있습니다.
+    47.87s  user  발화 시작: 그렇죠.
+    48.57s  user  발화 끝
+    50.84s  agent 발화 끝
+    50.97s  user  발화 시작: 혹시 빅 브라더처럼 감시가…
+    53.18s  user  발화 끝
+    54.61s  user  발화 시작: …심한 나라가 실제로 있나요?
+    55.96s  <ret> 발화 (turn18 첫 프레임)
+    56.35s  agent 발화 시작: <ret> 중국은 안면 인식 기술, 데이터 수집, 검열 등을 포함한 정교한 감시 시스템을 운영하고 있습니다.
+    56.55s  user  발화 끝
+    57.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.48s]: [source: Freedom House] China maintains a sophisticated system of surv
+    62.83s  agent 발화 끝
+    62.91s  user  발화 시작: 중국이 그렇게 심하다니, 좀 무섭네요.
+    65.88s  user  발화 끝
+    66.16s  agent 발화 시작: 개인의 자유와 프라이버시를 보호하는 것이 중요하다고 생각해요.
+    70.18s  agent 발화 끝
+    70.86s  user  발화 시작: 네, 맞아요. 저도 그렇게 생각해요.
+    73.12s  user  발화 끝
+    73.42s  agent 발화 시작: 혹시 개인 정보 보호를 위해 특별히 노력하는 부분이 있으신가요?
+    74.79s  user  발화 시작: 네.
+    75.42s  user  발화 끝
+    77.09s  user  발화 시작: 특별히 하는 건 없는데… 그냥 SNS에…
+    77.25s  agent 발화 끝
+    80.65s  user  발화 끝
+    82.45s  user  발화 시작: …너무 많은 정보를 올리지 않으려고 해요.
+    84.86s  agent 발화 시작: 그것도 좋은 방법이에요. 온라인 활동에 주의를 기울이는 것이 중요하죠.
+    84.99s  user  발화 끝
+    89.71s  agent 발화 끝

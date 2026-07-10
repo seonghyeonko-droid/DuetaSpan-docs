@@ -70,36 +70,43 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][moshi] Hi Casey, I'm Diolo. It’s lovely to connect with you today.
-[  2.84s][user ] «backchannel» Yeah, yeah.
-[  4.32s][user ] Oh, hello. I was just wondering what the time is in London right now.
-[  8.19s][moshi] ⟨ret@8.04s⟩ It’s currently 10:32 AM ⟦⚡SPAN@10.04s: (tool result) It’s currently 10:32 AM in London.⟧ in London. A good time to start the day, wouldn't you agree?
-      CALL: {"function": "get_current_time", "arguments": {"location": "London"}}
-[ 11.74s][user ] «backchannel» Yeah.
-[ 15.21s][user ] Yeah, I suppose so. I’m trying to decide what to make for dinner tonight.
-[ 19.31s][moshi] That sounds nice. Do you have any preferences or a cuisine you’re leaning towards?
-[ 24.47s][user ] I’m gluten-free, so that limits things a ⟨ret@26.90s⟩ little.
-[ 27.29s][moshi] You are gluten-free, ⟦⚡SPAN@28.90s: [2025-10-29] User is gluten-free.⟧ yes. That does narrow down the choices, but there are still so many delicious options!
-[ 30.43s][user ] «backchannel» Yeah, yeah.
-[ 34.52s][user ] True. I really love sushi, ⟨ret@36.34s⟩ actually.
-[ 36.57s][moshi] Sushi is a ⟦⚡SPAN@38.34s: [2026-05-07] User's favorite cuisine is sushi.⟧ wonderful choice! It’s naturally gluten-free, which is perfect for you.
-[ 41.75s][user ] Exactly. I was thinking about trying to make some at home, though.
-[ 44.85s][moshi] That’s ambitious! Do you enjoy cooking generally?
-[ 50.45s][user ] I've been getting into home fermentation lately.
-[ 53.10s][moshi] ⟨ret@53.03s⟩ Home fermentation? That's ⟦⚡SPAN@55.03s: [2026-03-07] User is into home fermentation.⟧ fascinating! It’s a wonderfully mindful practice.
-[ 58.14s][user ] It is. I was thinking maybe I could ferment some vegetables to go with the sushi.
-[ 62.99s][moshi] That sounds like a delightful combination of flavors. A really creative idea.
-[ 68.12s][user ] I have a Beagle named Rusty, he'd probably try to steal everything.
-[ 72.13s][moshi] ⟨ret@72.06s⟩ Oh, ⟦⚡SPAN@73.02s: [2025-08-08] User has a Beagle named Rusty.⟧ Rusty! A Beagle, how lovely. They are notorious for their inquisitive noses, aren't they?
-[ 80.40s][user ] He really is. I'm planning a birthday dinner for a friend soon, ⟨ret@84.06s⟩ too.
-[ 84.22s][moshi] You’re planning a birthday ⟦⚡SPAN@86.06s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ dinner for six, with outdoor seating, as we discussed before. How’s that progressing?
-[ 93.48s][user ] I haven’t actually booked anywhere yet. Somewhere with a nice garden would be great.
-[ 97.93s][moshi] ⟨ret@97.86s⟩ The Ivy Chelsea ⟦⚡SPAN@99.22s: (tool result) The Ivy Chelsea Garden has availability at 7:30 PM.⟧ Garden has availability at 7:30 PM. It's a beautiful spot.
-      CALL: {"function": "find_restaurants", "arguments": {"location": "London", "party_size": "6", "outdoor_seating": "yes", "cuisine": "any"}}
-[103.02s][user ] Oh, that sounds perfect! Can you check if they have a peanut-free menu?
-[106.85s][moshi] ⟨ret@106.70s⟩ You have a peanut ⟦⚡SPAN@108.38s: [2025-06-20] User is allergic to peanuts.⟧ allergy, yes. I’ll check for you.
-[110.17s][moshi] ⟨ret@109.86s⟩ The Ivy Chelsea Garden ⟦⚡SPAN@111.62s: (tool result) The Ivy Chelsea Garden confirms they offer a peanut-free menu.⟧ does offer a peanut-free menu, so that’s a relief.
-      CALL: {"function": "check_allergy_menu", "arguments": {"restaurant": "The Ivy Chelsea Garden", "allergy": "peanuts"}}
-[111.45s][user ] «backchannel» Yeah.
-[114.51s][user ] Wonderful! Let’s book it then, 7:30 ⟨ret@117.47s⟩ PM.
-[117.71s][moshi] Your reservation at The ⟦⚡SPAN@119.47s: (tool result) Booking confirmed for The Ivy Chelsea Garden, 7:30 PM, party of six. Confirmation number is 8294⟧ Ivy Chelsea Garden is confirmed for 7:30 PM. Enjoy your friend's birthday!
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant": "The Ivy Chelsea Garden", "time": "7:30 PM", "party_size": "6"}}
+[  2.45s][user ] «backchannel» Yeah, yeah.
+[  3.89s][user ] Oh, hi! It’s… well, it’s a bit chaotic here at the moment. What time is it where you are?
+[  8.85s][moshi] ⟨ret@8.69s⟩ You’re in London, so let ⟦⚡SPAN@10.69s: [2025-06-15] User's home address is 743 Cedar Lane.⟧ me check the current time there… it is currently 2:47 PM.
+[ 12.21s][user ] «backchannel» Yeah.
+[ 15.55s][user ] Thanks! I’m trying to figure out dinner. I was thinking sushi, ⟨ret@19.33s⟩ actually.
+[ 19.57s][moshi] That sounds wonderful, Casey – ⟦⚡SPAN@21.33s: [2026-05-07] User's favorite cuisine is sushi.⟧ sushi is your favorite, isn't it? Perhaps we could explore some local options?
+[ 25.53s][user ] Yeah, maybe. Are there any good sushi places near me that have outdoor seating? I’m meeting ⟨ret@30.95s⟩ friends.
+[ 31.19s][moshi] There are three sushi ⟦⚡SPAN@32.95s: (tool result) Found three sushi restaurants with outdoor seating near 743 Cedar Lane: SushiZen, Tokyo Nights, ⟧ restaurants near you with outdoor seating: SushiZen, Tokyo Nights, and Wasabi House.
+      CALL: {"function": "find_restaurants", "arguments": {"cuisine": "sushi", "location": "743 Cedar Lane, London", "outdoor_seating": "yes"}}
+[ 33.98s][user ] «backchannel» Yeah, yeah.
+[ 37.76s][user ] Hmm, SushiZen sounds good. What’s their phone number?
+[ 41.26s][moshi] ⟨ret@41.18s⟩ The ⟦⚡SPAN@42.22s: (tool result) SushiZen's phone number is 020-7946-0072.⟧ phone number for SushiZen is 020-7946-0072. Would you like me to call for reservations?
+      CALL: {"function": "get_restaurant_details", "arguments": {"restaurant_name": "SushiZen", "detail": "phone number"}}
+[ 49.05s][user ] Oh, that would be amazing, actually. For ⟨ret@51.32s⟩ six people.
+[ 51.72s][moshi] ⟦⚡SPAN@51.82s: (tool result) Reservation confirmed for six at SushiZen at 7:00 PM tonight.⟧ Excellent! I've confirmed a reservation for six at SushiZen tonight at 7:00 PM.
+      CALL: {"function": "make_reservation", "arguments": {"restaurant_name": "SushiZen", "party_size": "6", "date": "today", "time": "7:00 PM"}}
+[ 58.04s][user ] That’s fantastic! You’re a lifesaver. I’ve been so stressed about this.
+[ 63.01s][moshi] It's my pleasure to help ease your stress, Casey. Planning can be overwhelming sometimes.
+[ 68.06s][user ] It is! I’m also trying to get back into a fitness routine. I was looking at gyms.
+[ 73.33s][moshi] ⟨ret@73.25s⟩ I recall you were looking for a ⟦⚡SPAN@75.25s: [2025-06-07] Past chat — Comparing gym memberships: wants a pool; close to the office.⟧ gym with a pool close to your office. Is that still your preference?
+[ 78.24s][user ] Yeah, definitely. A pool is essential. And somewhere not too far from work.
+[ 83.37s][moshi] ⟨ret@83.21s⟩ FitnessFirst and The ⟦⚡SPAN@84.57s: (tool result) Found two gyms near your office with pools: FitnessFirst and The Gym Club.⟧ Gym Club both have pools and are conveniently located near your office.
+      CALL: {"function": "find_gyms", "arguments": {"location": "near office", "amenities": "pool"}}
+[ 89.50s][user ] Hmm, FitnessFirst… I’ve heard of them. What are their membership ⟨ret@93.41s⟩ fees?
+[ 93.57s][moshi] FitnessFirst’s membership fees range ⟦⚡SPAN@95.41s: (tool result) FitnessFirst membership fees range from £49 to £79 per month.⟧ from £49 to £79 per month, depending on the package.
+      CALL: {"function": "get_gym_details", "arguments": {"gym_name": "FitnessFirst", "detail": "membership fees"}}
+[101.55s][user ] Okay, that’s reasonable. I'm also trying to eat healthier. I’m gluten-free, you know?
+[107.06s][moshi] ⟨ret@106.74s⟩ Yes, I remember you are ⟦⚡SPAN@108.74s: [2025-10-29] User is gluten-free.⟧ gluten-free. That’s important to keep in mind when planning meals.
+[111.80s][user ] It is! It makes eating out tricky sometimes.
+[115.34s][moshi] It certainly can, but more restaurants are accommodating dietary needs these days.
+[116.69s][user ] «backchannel» Yeah.
+[120.26s][user ] That's good to hear. I've been trying to get into fermentation ⟨ret@123.01s⟩ too.
+[123.17s][moshi] Oh, ⟦⚡SPAN@123.89s: [2026-03-07] User is into home fermentation.⟧ that’s a fascinating hobby, Casey! Home fermentation can be very rewarding.
+[127.45s][user ] It is! I’m making kimchi at the moment. It’s… a process.
+[131.33s][moshi] Kimchi is wonderful, and a bit of a journey! It sounds like you’re keeping busy.
+[135.33s][user ] I am. Oh! Rusty needs feeding.
+[138.62s][moshi] ⟨ret@138.38s⟩ A Beagle needs ⟦⚡SPAN@139.58s: [2025-08-08] User has a Beagle named Rusty.⟧ their dinner. I hope you and Rusty have a lovely evening.
+[140.92s][user ] «backchannel» Yeah.
+[142.67s][user ] Thanks, Diolo. You've really helped me out.
+[144.53s][moshi] You’re very welcome, Casey. I’m glad I could be of assistance. Enjoy your dinner and time with friends.

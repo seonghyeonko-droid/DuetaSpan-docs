@@ -69,11 +69,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering… has that happened to the A’s recently? Like, a no-hitter against ⟨ret@5.47s⟩ them?
-[  5.86s][moshi] It’s good to think about ⟦⚡SPAN@7.31s: [source: Baseball-Reference.com] The Oakland Athletics were last no-hit on April 21, 2018, by Mike Fiers of th⟧ the history of the game. Let’s see when that last occurred.
-[  9.67s][moshi] The last time the A’s were no-hit was April twenty-first, two thousand eighteen, by Mike Fiers.
-[ 16.18s][user ] Wow, that was a while ago. Hey, Mark, did you remember to take the trash out?
-[ 20.03s][user ] «to_other» Seriously, it's overflowing!
-[ 21.76s][user ] Sorry about that. So, who was pitching for the A’s that day?
-[ 25.69s][moshi] ⟨ret@25.47s⟩ Frankie Montas was ⟦⚡SPAN@26.99s: [source: Baseball-Reference.com] On April 21, 2018, the Oakland Athletics’ starting pitcher was Frankie Montas⟧ the Athletics’ starting pitcher on April twenty-first, two thousand eighteen.
-[ 30.66s][moshi] It’s interesting to look back at those matchups, isn’t it?
+[  0.00s][user ] I was just wondering, has the Oakland A's team been no-hit recently? It feels like it's been a ⟨ret@5.09s⟩ while.
+[  5.48s][moshi] The last time ⟦⚡SPAN@7.09s: [source: Baseball-Reference.com] The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ the A's were no-hit was… in April 2018. It's good to be aware of those historical moments.
+[ 13.49s][user ] Wow, 2018. That *is* a while ago. Hey, Mark, did you remember to take the trash out?
+[ 19.84s][user ] «to_other» Did you take the trash out?
+[ 21.29s][user ] Sorry about that, Ellana. Back to baseball—who pitched the no-hitter against them?
+[ 26.21s][moshi] ⟨ret@25.98s⟩ That no-hitter was ⟦⚡SPAN@27.98s: [source: ESPN] On April 21, 2018, Ervin Santana of the Minnesota Twins pitched a 3-0 no-hitter against the Oak⟧ pitched by Ervin Santana of the Minnesota Twins… on April 21, 2018. It's interesting to look back at individual performances like that.
+[ 37.09s][user ] Santana, okay. That explains why I don’t remember it—I don't follow the Twins much.
+[ 41.83s][moshi] It’s perfectly natural to focus on your favorite teams—that’s part of what makes being a fan enjoyable.

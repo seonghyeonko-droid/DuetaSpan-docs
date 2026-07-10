@@ -63,53 +63,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Hmm, are there any deals currently | S3 The Best Buy one sounds good. Can  | S4 Do they offer any protection plans
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Are there any trade-in offers curr | S3 …Is there a significant price diff | S4 That's pretty good. Go ahead and s
 
      0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
-     4.67s  <ret> 발화 (turn1 첫 프레임)
-     4.75s  agent 발화 시작: <ret> I’ve mapped the Apple website, highlighting the main p
-     4.86s  user  발화 끝
-     6.27s  ⚡SPAN 주입 [d'=1.60s / d_lead=10.39s]: (tool result) map created: Apple website product sections identified -
-    15.14s  agent 발화 끝
-    15.20s  user  발화 시작: That’s great. Can you focus the map specifically on the iPho
-    19.43s  <ret> 발화 (turn3 첫 프레임)
-    19.82s  agent 발화 시작: <ret> The iPhone section map details models like the iPhone 
-    19.92s  user  발화 끝
-    21.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.34s]: (tool result) iPhone section map: models - iPhone 15, iPhone 15 Pro, i
-    23.52s  user  발화 시작: Nice.
-    24.34s  user  발화 끝
-    28.75s  user  발화 시작: Hmm, are there any deals currently…
-    29.16s  agent 발화 끝
-    31.34s  user  발화 끝
-    32.54s  user  발화 시작: …on the iPhone 15 Pro Max?
-    34.65s  <ret> 발화 (turn7 첫 프레임)
-    35.05s  agent 발화 시작: <ret> I found several deals—Best Buy has $100 off with trade
-    35.26s  user  발화 끝
-    36.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: (tool result) Deals found: Best Buy - $100 off with trade-in; Apple - 
-    45.48s  agent 발화 끝
-    45.81s  user  발화 시작: The Best Buy one sounds good. Can you check if they have the
-    53.80s  <ret> 발화 (turn9 첫 프레임)
-    54.20s  agent 발화 시작: <ret> At the nearest Best Buy, located at 123 Main Street, t
-    54.42s  user  발화 끝
-    55.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.46s]: (tool result) Stock: Nearest Best Buy (123 Main St) - Space Black 256G
-    65.02s  user  발화 시작: That’s fantastic! Can you put one on hold for me?
-    65.65s  agent 발화 끝
-    68.39s  <ret> 발화 (turn11 첫 프레임)
-    68.63s  agent 발화 시작: <ret> I’ve reserved a space black, 256GB iPhone 15 Pro Max f
-    68.82s  user  발화 끝
-    70.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.08s]: (tool result) Reservation confirmed: iPhone 15 Pro Max (Space Black, 2
-    73.38s  user  발화 시작: Mm-hmm.
-    74.01s  user  발화 끝
-    81.57s  agent 발화 시작: It was my pleasure to assist. I am glad we found one for you
-    81.71s  agent 발화 끝
-    87.15s  user  발화 시작: Do they offer any protection plans with that purchase?
-    87.31s  agent 발화 끝
-    89.61s  <ret> 발화 (turn15 첫 프레임)
-    90.01s  agent 발화 시작: <ret> Best Buy offers AppleCare+ starting at $99, and Geek S
-    90.20s  user  발화 끝
-    91.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.56s]: (tool result) Protection plans: AppleCare+ from $99; Geek Squad 2-year
-    99.56s  agent 발화 끝
-    99.97s  user  발화 시작: Perfect. Thanks for all your help, Koral.
-   102.79s  user  발화 끝
-   102.82s  agent 발화 시작: You’re very welcome. Enjoy your new iPhone!
-   105.86s  agent 발화 끝
+     4.20s  <ret> 발화 (turn1 첫 프레임)
+     4.27s  agent 발화 시작: <ret> I’ve mapped the Apple website, identifying key product
+     4.44s  user  발화 끝
+     5.80s  ⚡SPAN 주입 [d'=1.60s / d_lead=10.94s]: (tool result) Map created: Apple.com product sections identified - iPh
+    15.21s  agent 발화 끝
+    15.28s  user  발화 시작: That’s good. Can you now map just the iPhone section, and de
+    19.87s  <ret> 발화 (turn3 첫 프레임)
+    20.26s  agent 발화 시작: <ret> I’ve mapped the iPhone section, and the models listed 
+    20.37s  user  발화 끝
+    21.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) iPhone section mapped: Models listed - iPhone 15, iPhone
+    22.92s  user  발화 시작: Nice.
+    23.74s  user  발화 끝
+    26.68s  user  발화 시작: Are there any trade-in offers currently available for the iP
+    27.02s  agent 발화 끝
+    30.69s  <ret> 발화 (turn6 첫 프레임)
+    31.08s  agent 발화 시작: <ret> Apple is currently offering trade-in deals—you can get
+    31.31s  user  발화 끝
+    32.13s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.07s]: (tool result) Apple Trade In: Get up to $1100 off iPhone 15 Pro with e
+    39.15s  agent 발화 끝
+    39.23s  user  발화 시작: That sounds promising. What about the storage options for th
+    43.54s  agent 발화 시작: The iPhone 15 Pro has several storage options—
+    43.73s  user  발화 끝
+    45.97s  user  발화 시작: …Is there a significant price difference between the 256 and
+    46.77s  agent 발화 끝
+    51.40s  <ret> 발화 (turn10 첫 프레임)
+    51.77s  agent 발화 시작: <ret> The iPhone 15 Pro with 256 gigabytes is $999, while th
+    51.80s  user  발화 끝
+    53.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: (tool result) iPhone 15 Pro: 256GB - $999, 512GB - $1199.
+    55.28s  user  발화 시작: Mm-hmm.
+    55.91s  user  발화 끝
+    61.36s  agent 발화 시작: That's a $200 difference, so it depends on your storage need
+    61.51s  agent 발화 끝
+    65.57s  user  발화 시작: Okay, let's say I want to trade in my old iPhone 12 and get 
+    65.71s  agent 발화 끝
+    72.34s  <ret> 발화 (turn14 첫 프레임)
+    72.55s  agent 발화 시작: <ret> Assuming a $300 trade-in value for your iPhone 12, the
+    72.71s  user  발화 끝
+    74.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.67s]: (tool result) Estimated final cost: $899 (after $300 trade-in).
+    83.21s  agent 발화 끝
+    84.15s  user  발화 시작: That's pretty good. Go ahead and start the trade-in process 
+    87.04s  <ret> 발화 (turn16 첫 프레임)
+    87.11s  user  발화 끝
+    87.11s  agent 발화 시작: <ret> Great! I’ve initiated the trade-in process; your confi
+    89.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.68s]: (tool result) Trade-in initiated: Confirmation #TRD78945. Shipping lab
+    92.84s  user  발화 시작: Really?
+    93.57s  user  발화 끝
+    96.79s  agent 발화 끝
+    98.07s  user  발화 시작: Perfect, thank you.
+    99.35s  user  발화 끝

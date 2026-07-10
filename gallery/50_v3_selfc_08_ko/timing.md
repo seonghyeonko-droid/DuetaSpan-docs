@@ -66,125 +66,131 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명… | S2 …혹시 그 버스에 와이파이 되는지 알 수 있어? | S3 이백오십달러면 좀 비싸네. 더 저렴한 곳은 없을까? | S4 돌아오는 버스 확인 번호는 구 팔 칠 육 오 사번이네. 알았어
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘 | S2 그럼 수하물 추가 요금이 얼마야? | S3 좋아. 그럼 출발 전에… | S4 티켓은 어떻게 사?
 
-     0.00s  user  발화 시작: 시카고에서 덴버까지 세 명…
-     2.26s  user  발화 끝
-     3.77s  user  발화 시작: …오월 십일에 가는 버스 좀 보여줘.
-     5.93s  <ret> 발화 (turn2 첫 프레임)
-     6.21s  user  발화 끝
-     6.25s  agent 발화 시작: <ret> 오월 십일 시카고에서 덴버까지 가는 버스는 그레이하운드, 오후 두시 삼십분 출발, 일인당 이백이십
-     7.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.70s]: (tool result) Buses found: Greyhound, 14:30 departure, $220 per person
-    11.17s  user  발화 시작: 와.
-    11.62s  user  발화 끝
-    13.94s  agent 발화 끝
-    14.40s  user  발화 시작: 그레이하운드 말고 다른 버스 회사도 있어?
-    16.69s  <ret> 발화 (turn5 첫 프레임)
-    16.98s  user  발화 끝
-    17.00s  agent 발화 시작: <ret> 플릭스버스도 있어요. 오전 여덟시에 출발하며, 일인당 백팔십오달러입니다.
-    18.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) FlixBus, 08:00 departure, $185 per person.
-    23.16s  agent 발화 끝
-    23.53s  user  발화 시작: 플릭스버스가 더 저렴하네. 혹시 수하물 규정은 어떻게 돼?
-    27.03s  <ret> 발화 (turn7 첫 프레임)
-    27.26s  agent 발화 시작: <ret> 플릭스버스는 휴대 수하물은 무료이고, 위탁 수하물은 오십파운드까지 삼십달러입니다.
-    27.46s  user  발화 끝
-    29.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) One free carry-on, $30 for checked baggage up to 50lbs.
-    30.89s  user  발화 시작: 대박.
-    31.39s  user  발화 끝
-    33.10s  agent 발화 끝
-    33.44s  user  발화 시작: 음… 근데 혹시 오월 구일로 날짜를 바꿔서 알아봐 줄 수 있어?
-    37.92s  <ret> 발화 (turn10 첫 프레임)
-    38.11s  user  발화 끝
-    38.15s  agent 발화 시작: <ret> 오월 구일 플릭스버스는 오후 네시에 출발하며, 일인당 백구십달러입니다.
-    39.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: (tool result) FlixBus, 16:00 departure, $190 per person.
-    43.47s  user  발화 시작: 아, 구일은 십일보다 조금 더 비싸네—
-    44.03s  agent 발화 끝
-    46.17s  user  발화 시작: …혹시 그 버스에 와이파이 되는지 알 수 있어?
-    46.34s  user  발화 끝
-    48.82s  <ret> 발화 (turn13 첫 프레임)
-    49.05s  agent 발화 시작: <ret> 해당 노선에는 무료 와이파이가 제공되고, 각 좌석에 전원 콘센트도 있습니다.
-    49.08s  user  발화 끝
-    50.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: (tool result) Free Wi-Fi available on this route. Power outlets at eac
-    54.66s  agent 발화 끝
-    54.71s  user  발화 시작: 와이파이 있으면 좋지. 그럼 오월 구일 플릭스버스로 세 명 예약해 줘.
-    59.52s  <ret> 발화 (turn15 첫 프레임)
-    59.59s  agent 발화 시작: <ret> 예약이 완료되었습니다. 확인 번호는 칠 팔 구 사 오 육번입니다.
-    59.62s  user  발화 끝
-    61.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Booking confirmed. Confirmation number: 789456.
-    63.09s  user  발화 시작: 그치.
-    63.58s  user  발화 끝
-    63.98s  user  발화 시작: 확인 번호 다시 한 번만 말해줄래?
-    64.45s  agent 발화 끝
-    65.82s  user  발화 끝
-    66.38s  agent 발화 시작: 확인 번호는 칠 팔 구 사 오 육번입니다.
-    69.39s  user  발화 시작: 고마워. 혹시 시카고 버스 터미널에서 출발하는 시간까지 가는 방법도 알려줄 수 있어?
-    69.94s  agent 발화 끝
-    74.83s  <ret> 발화 (turn20 첫 프레임)
-    75.22s  agent 발화 시작: <ret> 블루라인 기차를 오헤어 방향으로 타고 클라크/레이크 역에서 내려서 오분 정도 걸어가시면 됩니다.
-    75.22s  user  발화 끝
-    76.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) Take the Blue Line train towards O'Hare. Get off at the 
-    78.13s  user  발화 시작: 그래.
-    78.58s  user  발화 끝
+     0.00s  user  발화 시작: 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘.
+     3.45s  <ret> 발화 (turn1 첫 프레임)
+     3.77s  agent 발화 시작: <ret> 시카고에서 덴버까지 오월 십일에 가는 버스는 세 대가 있습니다. 아침 여덟시 출발은 이십오만 원,
+     3.83s  user  발화 끝
+     5.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.69s]: (tool result) Three buses found: 8:00 AM, $250; 12:00 PM, $280; 6:00 P
+    11.39s  user  발화 시작: 와.
+    11.83s  user  발화 끝
+    15.46s  agent 발화 끝
+    16.69s  user  발화 시작: 제일 싼 거로 예약해 줘.
+    17.69s  <ret> 발화 (turn4 첫 프레임)
+    18.09s  agent 발화 시작: <ret> 저녁 여섯시 출발, 이십삼만 원짜리 버스로 예약 완료되었습니다. 예약 번호는 칠 팔 구 사 오번입
+    18.30s  user  발화 끝
+    19.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Reservation confirmed: ID 78945.
+    25.79s  agent 발화 끝
+    26.15s  user  발화 시작: 혹시 그 버스에 와이파이 있어?
+    27.51s  <ret> 발화 (turn6 첫 프레임)
+    27.91s  agent 발화 시작: <ret> 네, 예약하신 칠 팔 구 사 오번 버스에는 와이파이가 제공됩니다.
+    28.08s  user  발화 끝
+    28.79s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.70s]: (tool result) Yes, WiFi is available on bus 78945.
+    30.19s  user  발화 시작: 대박.
+    30.83s  user  발화 끝
+    31.61s  agent 발화 끝
+    31.94s  user  발화 시작: 아, 그런데—
+    32.96s  user  발화 시작: 혹시 수하물 규정이 어떻게 돼?
+    33.03s  user  발화 끝
+    34.20s  <ret> 발화 (turn10 첫 프레임)
+    34.59s  agent 발화 시작: <ret> 수하물 규정을 알려드리겠습니다. 각 승객당 위탁 수하물은 한 개, 기내 반입 수하물은 한 개까지 
+    34.80s  user  발화 끝
+    36.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) One checked bag (50 lbs max), one carry-on (22 lbs max) 
+    42.61s  agent 발화 끝
+    42.73s  agent 발화 시작: 각 승객당 위탁 수하물은 최대 이십삼킬로그램, 기내 반입 수하물은 최대 십킬로그램까지 허용됩니다.
+    50.47s  agent 발화 끝
+    50.64s  user  발화 시작: 이십오킬로그램짜리 캐리어가 있는데, 괜찮을까?
+    54.20s  user  발화 끝
+    54.61s  agent 발화 시작: 기내 반입 수하물은 최대 십킬로그램까지 허용되므로, 이십오킬로그램짜리 캐리어는 위탁 수하물로 부치셔야 합니다
+    61.74s  agent 발화 끝
+    63.32s  user  발화 시작: 그럼 수하물 추가 요금이 얼마야?
+    64.74s  <ret> 발화 (turn15 첫 프레임)
+    64.98s  agent 발화 시작: <ret> 이십이킬로그램 초과 수하물에 대해서는 이만 원의 추가 요금이 발생합니다.
+    65.21s  user  발화 끝
+    65.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.54s]: (tool result) $20 extra for luggage over 22 lbs.
+    68.37s  user  발화 시작: 그치.
+    69.00s  user  발화 끝
+    69.52s  agent 발화 끝
+    69.61s  user  발화 시작: 알았어. 그럼 그냥 위탁 수하물로 부칠게.
+    73.12s  agent 발화 시작: 네, 그렇게 하시는 게 좋겠습니다. 위탁 수하물은 버스 출발 전에 탑승구에서 부치시면 됩니다.
+    73.12s  user  발화 끝
+    76.34s  user  발화 시작: 어어.
+    77.16s  user  발화 끝
+    78.30s  agent 발화 끝
+    78.50s  user  발화 시작: 탑승구는 어디야?
+    79.23s  <ret> 발화 (turn21 첫 프레임)
+    79.63s  agent 발화 시작: <ret> 탑승구는 십이번 게이트입니다.
+    79.73s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.75s]: (tool result) Boarding gate is Gate 12.
+    79.74s  user  발화 끝
     81.37s  agent 발화 끝
-    81.90s  user  발화 시작: 블루라인… 알았어. 그럼 혹시 덴버 버스 터미널 근처에 괜찮은 호텔도 알아봐 줄 수 있을까?
-    87.76s  <ret> 발화 (turn23 첫 프레임)
-    88.15s  agent 발화 시작: <ret> 덴버 버스 터미널 근처에는 메이븐 호텔 앳 데어리 블록이 있고, 별점은 네개이며 일박에 이백오십달
-    88.34s  user  발화 끝
-    89.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) The Maven Hotel at Dairy Block, 4 stars, $250/night.
-    94.74s  user  발화 시작: 진짜?
-    95.47s  user  발화 끝
-    96.77s  agent 발화 끝
-    96.87s  user  발화 시작: 이백오십달러면 좀 비싸네. 더 저렴한 곳은 없을까?
-   100.31s  <ret> 발화 (turn26 첫 프레임)
-   100.69s  agent 발화 시작: <ret> 데이즈 인 바이 윈덤 덴버 다운타운은 별점 두개, 일박에 백이십달러입니다.
-   100.71s  user  발화 끝
-   102.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Days Inn by Wyndham Denver Downtown, 2 stars, $120/night
-   103.07s  user  발화 시작: 응.
-   103.37s  user  발화 끝
-   106.35s  user  발화 시작: 백이십달러면 괜찮네. 그럼 그 호텔 예약해 줘. 오월 구일 밤에 체크인하고 십일 아침에 체크아웃하는 걸로.
-   106.39s  agent 발화 끝
-   114.09s  user  발화 끝
-   114.13s  <ret> 발화 (turn29 첫 프레임)
-   114.29s  agent 발화 시작: <ret> 호텔 예약이 완료되었습니다. 확인 번호는 일 이 삼 칠 팔 구번입니다.
-   115.89s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.56s]: (tool result) Hotel booked. Confirmation number: 123789.
-   119.79s  user  발화 시작: 호텔 확인 번호도 일 이 삼 칠 팔 구번이네. 잘 기억해야겠다.
-   119.85s  agent 발화 끝
-   124.38s  agent 발화 시작: 네, 잘 기억해 두시는 게 좋겠습니다.
-   124.51s  user  발화 끝
-   125.38s  user  발화 시작: 응.
-   125.73s  user  발화 끝
-   126.45s  agent 발화 끝
-   127.47s  user  발화 시작: 혹시 덴버에서 시카고로 돌아오는 버스 티켓도 미리 예약해 둘까?
-   131.48s  <ret> 발화 (turn34 첫 프레임)
-   131.80s  agent 발화 시작: <ret> 오월 십일일 덴버에서 시카고로 가는 그레이하운드 버스는 오전 열시에 출발하며, 일인당 이백삼십달러
-   131.82s  user  발화 끝
-   132.84s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.88s]: (tool result) Greyhound, 10:00 departure, $230 per person.
-   139.68s  agent 발화 끝
-   139.78s  user  발화 시작: 음… 이백삼십달러면 괜찮은 것 같아. 그럼 그 버스도 예약해 줘.
-   144.84s  <ret> 발화 (turn36 첫 프레임)
-   145.00s  agent 발화 시작: <ret> 예약이 완료되었습니다. 확인 번호는 구 팔 칠 육 오 사번입니다.
-   145.10s  user  발화 끝
-   146.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.59s]: (tool result) Booking confirmed. Confirmation number: 987654.
-   149.59s  agent 발화 끝
-   150.44s  user  발화 시작: 돌아오는 버스 확인 번호는 구 팔 칠 육 오 사번이네. 알았어.
-   155.57s  agent 발화 시작: 네, 확인해 주셔서 감사합니다.
-   155.76s  user  발화 끝
-   157.32s  agent 발화 끝
-   158.67s  user  발화 시작: 이번 여행 준비는 거의 다 된 것 같아.
-   161.25s  user  발화 끝
-   161.34s  agent 발화 시작: 여행 준비를 꼼꼼히 하시는 모습이 보기 좋습니다.
-   164.57s  agent 발화 끝
-   164.62s  user  발화 시작: 여행 전에 혹시 챙겨야 할 특별한 물건 같은 건 없을까?
-   168.35s  agent 발화 시작: 장거리 버스 여행이라면 편안한 신발과 목베개를 챙기시는 것이 좋습니다.
-   168.37s  user  발화 끝
-   170.57s  user  발화 시작: 그니까.
-   171.02s  user  발화 끝
-   173.31s  user  발화 시작: 아, 목베개! 좋은 생각이야.
-   173.58s  agent 발화 끝
-   175.39s  agent 발화 시작: 편안한 여행 되세요.
-   175.56s  user  발화 끝
-   177.13s  agent 발화 끝
-   178.23s  user  발화 시작: 고마워, 덕분에 여행 준비 잘 된 것 같아.
-   181.04s  agent 발화 시작: 도움이 되었다니 기쁩니다.
-   181.19s  user  발화 끝
-   182.88s  agent 발화 끝
+    83.26s  user  발화 시작: 혹시 십이번 게이트까지 가는 길이 좀 복잡해?
+    85.99s  agent 발화 시작: 시카고 버스 터미널은 비교적 간단한 구조로 되어 있어서, 십이번 게이트까지 쉽게 찾아갈 수 있습니다.
+    86.07s  user  발화 끝
+    88.87s  user  발화 시작: 진짜?
+    89.55s  user  발화 끝
+    92.28s  user  발화 시작: 혹시 터미널 안에 식당이 있어?
+    92.29s  agent 발화 끝
+    93.81s  <ret> 발화 (turn26 첫 프레임)
+    93.97s  agent 발화 시작: <ret> 네, 터미널 안에는 카페와 패스트푸드 식당이 있습니다.
+    94.22s  user  발화 끝
+    95.09s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.14s]: (tool result) Yes, a cafe and a fast-food restaurant are available.
+    96.87s  user  발화 시작: 좋아. 그럼 출발 전에…
+    97.11s  agent 발화 끝
+    98.80s  user  발화 끝
+   100.66s  user  발화 시작: …간단히 먹을 수 있겠네.
+   102.12s  user  발화 끝
+   102.13s  agent 발화 시작: 네, 출발 전에 간단하게 식사를 해결하실 수 있습니다.
+   103.52s  user  발화 시작: 음.
+   103.92s  user  발화 끝
+   105.08s  agent 발화 끝
+   105.38s  user  발화 시작: 혹시 버스에서 충전할 수 있어?
+   106.74s  <ret> 발화 (turn32 첫 프레임)
+   107.14s  agent 발화 시작: <ret> 네, 예약하신 칠 팔 구 사 오번 버스에는 콘센트가 설치되어 있습니다.
+   107.32s  user  발화 끝
+   108.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) Yes, power outlets are available on bus 78945.
+   108.92s  user  발화 시작: 응.
+   109.42s  user  발화 끝
+   111.63s  agent 발화 끝
+   111.67s  user  발화 시작: 다행이다. 아이폰 배터리가 거의 없거든.
+   114.73s  user  발화 끝
+   114.82s  agent 발화 시작: 아이폰 배터리가 부족하시다니 다행이네요. 버스에서 충전하시면서 편안하게 이동하실 수 있겠습니다.
+   120.37s  agent 발화 끝
+   120.45s  user  발화 시작: 혹시 덴버 버스 터미널에서 시내까지 가는 방법 좀 알려줘.
+   123.15s  <ret> 발화 (turn37 첫 프레임)
+   123.55s  agent 발화 시작: <ret> 덴버 버스 터미널에서 시내까지는 D 노선 경전철을 이용하시면 바로 갈 수 있습니다.
+   123.77s  user  발화 끝
+   125.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Light rail line D goes directly to the city center.
+   128.56s  agent 발화 끝
+   128.75s  user  발화 시작: 경전철은 어디서 타?
+   130.09s  agent 발화 시작: 덴버 버스 터미널과 연결된 경전철역에서 D 노선을 타시면 됩니다.
+   130.22s  user  발화 끝
+   133.93s  agent 발화 끝
+   134.95s  user  발화 시작: 티켓은 어떻게 사?
+   135.95s  <ret> 발화 (turn41 첫 프레임)
+   136.11s  agent 발화 시작: <ret> 역에 있는 티켓 자판기에서 티켓을 구매하실 수 있습니다.
+   136.14s  user  발화 끝
+   137.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: (tool result) Tickets can be purchased at the station kiosk.
+   139.34s  agent 발화 끝
+   141.00s  user  발화 시작: 아, 알았어. 정말 고마워.
+   143.44s  user  발화 끝
+   143.54s  agent 발화 시작: 천만에요. 편안한 여행 되세요.
+   145.80s  agent 발화 끝
+   146.62s  user  발화 시작: 혹시 여행자 보험도 알아봐 줄 수 있어?
+   148.59s  <ret> 발화 (turn45 첫 프레임)
+   148.66s  agent 발화 시작: <ret> 덴버 여행자 보험은 기본형이 오만 원, 종합형이 십만 원입니다.
+   148.88s  user  발화 끝
+   149.79s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.66s]: (tool result) Basic plan: $50. Comprehensive plan: $100.
+   149.88s  user  발화 시작: 응.
+   150.24s  user  발화 끝
+   152.31s  agent 발화 끝
+   152.41s  user  발화 시작: 그럼 기본형으로 해줘.
+   153.57s  <ret> 발화 (turn48 첫 프레임)
+   153.81s  agent 발화 시작: <ret> 기본형 여행자 보험 구매 완료되었습니다. 보험 증권 번호는 이 삼 사 오 육번입니다.
+   153.88s  user  발화 끝
+   155.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Insurance purchased. Policy number: 23456.
+   160.53s  agent 발화 끝
+   161.17s  user  발화 시작: 좋아. 이제 정말 다 준비됐네.
+   163.62s  user  발화 끝
+   163.63s  agent 발화 시작: 네, 이제 모든 준비가 완료되셨습니다. 즐거운 여행 되시길 바랍니다.
+   167.47s  agent 발화 끝

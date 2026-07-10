@@ -68,29 +68,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박, 방 세 개 예 | S2 혹시 취소하려면 어떻게 해야 해? | S3 … 혹시 수영장이 있는지 알려줄 수 있어? | S4 그럼 조식은 포함되어 있어?
+# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박, 방 세 개 예 | S2 그 호텔에 수영장이 있나? | S3 아, 그런데— | S4 혹시 반려동물 동반 가능한가요?
 
      0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박, 방 세 개 예약해 줘.
-     5.31s  <ret> 발화 (turn1 첫 프레임)
-     5.47s  agent 발화 시작: <ret> 예약이 완료됐습니다. 확인 번호는 팔십사B7G이고, 오션뷰 호텔 샌디에이고에서 이월 십일부터 십칠
-     5.60s  user  발화 끝
-     7.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) Reservation confirmed. Confirmation number is 84B7G. Thr
-    15.23s  user  발화 시작: 혹시 취소하려면 어떻게 해야 해?
-    15.44s  agent 발화 끝
-    17.21s  agent 발화 시작: 취소 정책은 호텔마다 다르지만, 보통 예약 확인서에 자세히 나와 있습니다—
-    17.21s  user  발화 끝
-    20.99s  user  발화 시작: … 혹시 수영장이 있는지 알려줄 수 있어?
-    21.84s  agent 발화 끝
-    23.72s  user  발화 끝
-    24.09s  agent 발화 시작: 네, 오션뷰 호텔에는 수영장이 있습니다. [surprised] 호텔 웹사이트에 따르면 야외 수영장과 어린이 
-    28.22s  user  발화 시작: 응.
-    28.63s  user  발화 끝
-    31.37s  agent 발화 시작: 수영장 이용 시간은 매일 아침 여덟시부터 저녁 아홉시까지입니다. 수건도 제공되는 것 같아요.
-    31.50s  agent 발화 끝
-    37.16s  agent 발화 끝
-    37.65s  user  발화 시작: 그럼 조식은 포함되어 있어?
-    39.41s  <ret> 발화 (turn9 첫 프레임)
-    39.56s  agent 발화 시작: <ret> 네, 모든 객실 유형에 조식이 포함되어 있습니다. 뷔페식으로 제공되고, 매일 아침 일곱시부터 열시
-    39.64s  user  발화 끝
-    40.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.35s]: (tool result) Breakfast is included for all room types.
-    47.90s  agent 발화 끝
+     4.76s  <ret> 발화 (turn1 첫 프레임)
+     4.92s  agent 발화 시작: <ret> 오션뷰 호텔, 샌디에이고, 이월 십일부터 십칠일까지 방 세 개 예약이 완료됐습니다. 확인 번호는 
+     5.05s  user  발화 끝
+     6.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.20s]: (tool result) Booking confirmed: Ocean View Hotel, San Diego, Feb 10-1
+    14.94s  user  발화 시작: 그 호텔에 수영장이 있나?
+    15.12s  agent 발화 끝
+    16.19s  <ret> 발화 (turn3 첫 프레임)
+    16.51s  agent 발화 시작: <ret> 오션뷰 호텔에는 야외 수영장이 있는데, 아침 여덟시부터 밤 열시까지 운영합니다.
+    16.60s  user  발화 끝
+    18.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Ocean View Hotel has an outdoor pool, open 8 AM to 10 PM
+    22.16s  agent 발화 끝
+    23.48s  user  발화 시작: 아, 그런데—
+    24.77s  user  발화 시작: 혹시 반려동물 동반 가능한가요?
+    24.85s  user  발화 끝
+    26.61s  <ret> 발화 (turn6 첫 프레임)
+    27.00s  agent 발화 시작: <ret> 네, 오션뷰 호텔은 이십파운드 이하의 반려동물 동반이 가능하며, 숙박당 칠십오달러의 추가 요금이 
+    27.16s  user  발화 끝
+    28.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) Ocean View Hotel allows pets under 20 lbs, with a $75 fe
+    32.30s  user  발화 시작: 헐.
+    32.84s  user  발화 끝
+    34.51s  agent 발화 시작: 즐거운 여행 되세요.
+    34.70s  agent 발화 끝
+    36.08s  agent 발화 끝

@@ -77,19 +77,24 @@
 # }
 
 
-     0.00s  user  발화 시작: 내 프랑스 휴가 사진 찾아줘. 작년 거 말고…
-     3.15s  user  발화 끝
-     4.58s  user  발화 시작: …썸네일 말고.
-     5.78s  <ret> 발화 (turn2 첫 프레임)
-     5.85s  agent 발화 시작: <ret> 이천이십이년 프랑스 휴가 사진 십칠장을 찾았어요. 혹시 특정 날짜 사진을 보고 싶으신가요?
-     6.00s  user  발화 끝
-     7.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: (tool result) 2022년 프랑스 휴가 관련 사진 17장 발견.
-     8.85s  user  발화 시작: 그래.
-     9.34s  user  발화 끝
-    13.03s  agent 발화 끝
-    13.09s  user  발화 시작: 아니, 그냥 보여줘.
-    14.71s  <ret> 발화 (turn5 첫 프레임)
-    15.03s  user  발화 끝
-    15.10s  agent 발화 시작: <ret> 사진첩에 표시해 드렸어요. 확인해 보시고, 다른 사진을 찾으실 게 있으면 말씀해 주세요. [hap
-    16.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) 사진첩에 표시됨.
-    21.03s  agent 발화 끝
+     0.00s  user  발화 시작: 내 프랑스 휴가 사진 찾아줘. 작년 거인데, 썸네일 말고 제대로 된 사진으로.
+     4.88s  <ret> 발화 (turn1 첫 프레임)
+     4.94s  agent 발화 시작: <ret> 작년 프랑스 휴가 사진 스물세개가 발견됐어요. 썸네일은 제외했고요.
+     5.14s  user  발화 끝
+     6.66s  user  발화 시작: 음.
+     6.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) 23 files found matching 'France holiday' from 2023, excl
+     7.06s  user  발화 끝
+     9.15s  agent 발화 끝
+    11.84s  user  발화 시작: 그 중에서 에펠탑 사진만 보여줘.
+    13.42s  <ret> 발화 (turn4 첫 프레임)
+    13.66s  agent 발화 시작: <ret> 그 스물세개 중에서 에펠탑 사진이 일곱개 있어요.
+    13.82s  user  발화 끝
+    14.46s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.61s]: (tool result) 7 files containing 'Eiffel Tower' found within the previ
+    15.12s  user  발화 시작: 응.
+    15.47s  user  발화 끝
+    17.27s  agent 발화 끝
+    17.40s  user  발화 시작: 잠깐만, 지금 몇 시야?
+    17.99s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) It is currently 3:17 PM.
+    18.90s  agent 발화 시작: <ret> 현재 시간은 오후 세 시 십칠분입니다.
+    19.00s  user  발화 끝
+    21.48s  agent 발화 끝

@@ -63,53 +63,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도 만들어 줘. | S2 음… 지금 아이폰 15 프로 맥스 할인하는 데 있어? | S3 베스트 바이 거 괜찮은데. 내 주변 매장에 스페이스 블랙, 2 | S4 그거 구매할 때 보호 플랜 같은 거 제공해?
+# EXAMINER(FDB-v2) 단계: S1 나 그거 좀 만들어 줘. 애플 웹사이트 상세 지도를, 제품 중 | S2 아이폰 15 프로 트레이드인 혜택은 지금 있는 거 있어? | S3 …256기가랑 512기가 모델 가격 차이가 많이 나? | S4 꽤 괜찮네. 그럼 트레이드인 시작해 줘.
 
-     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도 만들어 줘.
-     2.86s  <ret> 발화 (turn1 첫 프레임)
-     3.02s  agent 발화 시작: <ret> 네, 애플 웹사이트를 분석해서 주요 제품 섹션인 아이폰, 맥, 아이패드, 워치, 에어팟, TV &
-     3.23s  user  발화 끝
-     4.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) map created: Apple website product sections identified -
-    13.27s  agent 발화 끝
-    13.30s  user  발화 시작: 좋네. 아이폰 섹션으로 지도를 좀 더 구체적으로 맞춰 줄래?
-    16.66s  <ret> 발화 (turn3 첫 프레임)
-    16.97s  agent 발화 시작: <ret> 네, 아이폰 섹션 지도는 아이폰 15, 15 프로, 15 프로 맥스, 15 플러스, 그리고 아이폰
-    17.09s  user  발화 끝
-    18.34s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.18s]: (tool result) iPhone section map: models - iPhone 15, iPhone 15 Pro, i
-    19.86s  user  발화 시작: 우와.
-    20.58s  user  발화 끝
-    24.15s  agent 발화 끝
-    24.88s  user  발화 시작: 음… 지금 아이폰 15 프로 맥스 할인하는 데 있어?
-    27.98s  user  발화 시작: …아이폰 15 프로 맥스?
-    28.02s  user  발화 끝
-    29.58s  <ret> 발화 (turn7 첫 프레임)
-    29.74s  agent 발화 시작: <ret> 네, 할인 정보가 몇 가지 있어요. 베스트 바이가 트레이드인 시 100달러 할인하고, 애플은 파이
-    29.91s  user  발화 끝
-    31.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.99s]: (tool result) Deals found: Best Buy - $100 off with trade-in; Apple - 
-    38.68s  user  발화 시작: 베스트 바이 거 괜찮은데. 내 주변 매장에 스페이스 블랙, 256기가 모델 재고 있나 확인해 줄래?
-    38.73s  agent 발화 끝
-    44.65s  <ret> 발화 (turn9 첫 프레임)
-    44.81s  agent 발화 시작: <ret> 네, 가장 가까운 베스트 바이, 123 메인 스트리트에 스페이스 블랙, 256기가 아이폰 15 프
-    44.93s  user  발화 끝
-    46.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: (tool result) Stock: Nearest Best Buy (123 Main St) - Space Black 256G
-    52.63s  user  발화 시작: 와, 진짜 잘 됐다! 하나 예약해 줘.
-    53.16s  agent 발화 끝
-    54.41s  <ret> 발화 (turn11 첫 프레임)
-    54.65s  agent 발화 시작: <ret> 네, 123 메인 스트리트 베스트 바이에 스페이스 블랙, 256기가 아이폰 15 프로 맥스를 두 
-    54.88s  user  발화 끝
-    56.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.85s]: (tool result) Reservation confirmed: iPhone 15 Pro Max (Space Black, 2
-    58.61s  user  발화 시작: 응.
-    58.83s  user  발화 끝
-    65.46s  agent 발화 시작: 도와드릴 수 있어서 기뻤어요. 빠르게 찾아 드려서 정말 다행이네요.
-    65.50s  agent 발화 끝
-    68.84s  agent 발화 끝
-    69.35s  user  발화 시작: 그거 구매할 때 보호 플랜 같은 거 제공해?
-    71.68s  <ret> 발화 (turn15 첫 프레임)
-    71.76s  agent 발화 시작: <ret> 네, 베스트 바이는 99달러부터 시작하는 AppleCare+와 149달러의 Geek Squad 2
-    71.89s  user  발화 끝
-    73.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.36s]: (tool result) Protection plans: AppleCare+ from $99; Geek Squad 2-year
-    78.66s  user  발화 시작: 좋아. 도와줘서 고마워, 코랄.
-    79.12s  agent 발화 끝
-    81.15s  agent 발화 시작: 천만에요. 새 아이폰 즐겁게 사용하세요!
-    81.24s  user  발화 끝
-    83.73s  agent 발화 끝
+     0.00s  user  발화 시작: 나 그거 좀 만들어 줘. 애플 웹사이트 상세 지도를, 제품 중심으로.
+     5.26s  <ret> 발화 (turn1 첫 프레임)
+     5.41s  agent 발화 시작: <ret> 네, 애플 웹사이트 지도를 만들었어요. 주요 제품 섹션으로는 아이폰, 아이패드, 맥, 애플 워치,
+     5.56s  user  발화 끝
+     7.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.82s]: (tool result) Map created: Apple.com product sections identified - iPh
+    17.21s  user  발화 시작: 좋네. 그럼 아이폰 섹션만 따로 지도를 만들고, 어떤 모델들이 있는지 자세히 알려 줘.
+    17.23s  agent 발화 끝
+    23.58s  <ret> 발화 (turn3 첫 프레임)
+    23.90s  agent 발화 시작: <ret> 네, 아이폰 섹션 지도를 만들었고, 현재 아이폰 15, 15 플러스, 15 프로, 15 프로 맥스
+    23.97s  user  발화 끝
+    25.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) iPhone section mapped: Models listed - iPhone 15, iPhone
+    27.07s  user  발화 시작: 우와.
+    27.56s  user  발화 끝
+    31.78s  agent 발화 끝
+    32.49s  user  발화 시작: 아이폰 15 프로 트레이드인 혜택은 지금 있는 거 있어?
+    36.23s  <ret> 발화 (turn6 첫 프레임)
+    36.30s  agent 발화 시작: <ret> 네, 애플에서 현재 트레이드인 혜택을 제공하고 있습니다. 적격 기기를 트레이드인하면 아이폰 15 
+    36.52s  user  발화 끝
+    38.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: (tool result) Apple Trade In: Get up to $1100 off iPhone 15 Pro with e
+    46.53s  user  발화 시작: 그거 괜찮네. 15 프로 스토리지 옵션은 뭐가 있어?
+    46.64s  agent 발화 끝
+    50.04s  user  발화 끝
+    50.40s  agent 발화 시작: 아이폰 15 프로에는 여러 가지 스토리지 옵션이 있습니다—
+    53.88s  user  발화 시작: …256기가랑 512기가 모델 가격 차이가 많이 나?
+    54.66s  agent 발화 끝
+    58.22s  <ret> 발화 (turn10 첫 프레임)
+    58.37s  user  발화 끝
+    58.38s  agent 발화 시작: <ret> 네, 아이폰 15 프로 256기가 모델은 999달러이고, 512기가 모델은 1199달러입니다.
+    60.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) iPhone 15 Pro: 256GB - $999, 512GB - $1199.
+    61.50s  user  발화 시작: 응.
+    61.96s  user  발화 끝
+    66.99s  agent 발화 시작: 200달러 차이니까, 스토리지 필요량에 따라 다르겠네요.
+    67.14s  agent 발화 끝
+    70.90s  user  발화 시작: 알았어. 내가 아이폰 12 트레이드인하고 512기가 15 프로로 바꾸고 싶어. 최종 가격이 얼마 정도 나올 
+    71.10s  agent 발화 끝
+    79.35s  <ret> 발화 (turn14 첫 프레임)
+    79.58s  agent 발화 시작: <ret> 네, 아이폰 12 트레이드인 가치가 300달러라고 가정하면, 512기가 아이폰 15 프로의 예상 
+    79.71s  user  발화 끝
+    80.63s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.92s]: (tool result) Estimated final cost: $899 (after $300 trade-in).
+    89.04s  user  발화 시작: 꽤 괜찮네. 그럼 트레이드인 시작해 줘.
+    89.50s  agent 발화 끝
+    91.32s  <ret> 발화 (turn16 첫 프레임)
+    91.55s  agent 발화 시작: <ret> 좋아요! 트레이드인 프로세스를 시작했습니다. 확인 번호는 TRD78945이고, 배송 라벨이 이메일
+    91.62s  user  발화 끝
+    93.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.20s]: (tool result) Trade-in initiated: Confirmation #TRD78945. Shipping lab
+    97.59s  user  발화 시작: 진짜?
+    98.22s  user  발화 끝
+   101.75s  agent 발화 끝
+   102.36s  user  발화 시작: 완벽해, 고마워.
+   104.25s  user  발화 끝

@@ -63,27 +63,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about governmen | S2 Nineteen thirty? That seems… surpr | S3 So the Bureau of Pensions handled  | S4 Wow, sixteen thirty-six! That’s in
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about governmen | S2 …when did the Veterans Affairs dep | S3 July 1930? That seems… surprisingl | S4 So it wasn't created *from* nothin
 
-     0.00s  user  발화 시작: I was just reading about government departments… when did th
-     5.90s  <ret> 발화 (turn1 첫 프레임)
-     6.22s  agent 발화 시작: <ret> The Department of Veterans Affairs was established in 
-     6.39s  user  발화 끝
-     7.02s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.91s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-    11.13s  agent 발화 끝
-    12.01s  user  발화 시작: Nineteen thirty? That seems… surprisingly recent, honestly. 
-    17.94s  <ret> 발화 (turn3 첫 프레임)
-    18.34s  agent 발화 시작: <ret> Actually, support for veterans goes back further. Befo
-    18.59s  user  발화 끝
-    19.62s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.13s]: [source: History.com] Prior to 1930, veterans’ affairs were managed by
-    28.47s  user  발화 시작: So the Bureau of Pensions handled things during the Civil Wa
-    28.64s  agent 발화 끝
-    36.40s  <ret> 발화 (turn5 첫 프레임)
-    36.79s  agent 발화 시작: <ret> Assistance to veterans began as early as sixteen thirt
-    36.95s  user  발화 끝
-    38.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.81s]: [source: VA.gov] Initially, assistance to veterans dates back to 1636,
-    39.27s  user  발화 시작: Right.
-    39.95s  user  발화 끝
-    44.60s  agent 발화 끝
-    44.94s  user  발화 시작: Wow, sixteen thirty-six! That’s incredible. So it’s been a c
-    51.98s  user  발화 끝
+     0.00s  user  발화 시작: I was just reading about government departments……
+     2.96s  user  발화 끝
+     4.87s  user  발화 시작: …when did the Veterans Affairs department actually get start
+     8.22s  <ret> 발화 (turn2 첫 프레임)
+     8.53s  agent 발화 시작: <ret> It’s interesting to consider how long different agenci
+     8.71s  user  발화 끝
+     9.58s  ⚡SPAN 주입 [d'=1.36s / d_lead=9.46s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    17.96s  agent 발화 시작: The Department of Veterans Affairs was formally established…
+    17.99s  agent 발화 끝
+    24.44s  agent 발화 끝
+    24.77s  user  발화 시작: July 1930? That seems… surprisingly recent, actually. Was it
+    31.63s  <ret> 발화 (turn5 첫 프레임)
+    32.02s  agent 발화 시작: <ret> Before 1930, veteran benefits were handled by several 
+    32.18s  user  발화 끝
+    33.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: [source: VA.gov] Prior to 1930, veteran benefits were administered by 
+    39.48s  user  발화 시작: So it wasn't created *from* nothing, it was a consolidation?
+    39.62s  agent 발화 끝
+    48.03s  <ret> 발화 (turn7 첫 프레임)
+    48.10s  agent 발화 시작: <ret> The Veterans Bureau, created in 1921, offered services
+    48.24s  user  발화 끝
+    50.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: [source: History.com] The Veterans Bureau, established in 1921, provid
+    57.93s  agent 발화 끝

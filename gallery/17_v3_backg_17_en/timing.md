@@ -58,21 +58,22 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, what’s a nor | S2 Oh, that’s a pretty wide range. Is | S3 Did you remember to take the chick | S4 Wow, okay. So, below sixty could b
 
      0.00s  user  발화 시작: I was just wondering, what’s a normal heart rate?
-     2.22s  <ret> 발화 (turn1 첫 프레임)
-     2.61s  agent 발화 시작: <ret> Generally, a healthy heart beats between sixty and one
-     2.77s  user  발화 끝
-     4.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     7.47s  agent 발화 끝
-     7.81s  user  발화 시작: Oh, that’s a pretty wide range. Is there an *ideal* number w
-    11.99s  <ret> 발화 (turn3 첫 프레임)
-    12.23s  agent 발화 시작: <ret> Actually, for many adults, an ideal resting heart rate
-    12.34s  user  발화 끝
-    13.83s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.65s]: [source: American Heart Association] For most adults, a normal resting
-    17.88s  agent 발화 끝
-    18.71s  user  발화 시작: Did you remember to take the chicken out of the freezer?
-    21.70s  user  발화 시작: Wow, okay. So, below sixty could be a concern?
-    21.86s  user  발화 끝
-    25.72s  user  발화 끝
+     2.65s  <ret> 발화 (turn1 첫 프레임)
+     3.05s  agent 발화 시작: <ret> A healthy person’s heart typically beats between sixty
+     3.24s  user  발화 끝
+     4.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
+     6.24s  user  발화 시작: Yeah, yeah.
+     7.52s  user  발화 끝
+     9.40s  agent 발화 끝
+    10.85s  user  발화 시작: Oh, so it can be lower than sixty? I thought that was bad.
+    14.78s  agent 발화 시작: It absolutely can be lower, and often that’s a sign of good 
+    14.82s  user  발화 끝
+    19.96s  agent 발화 끝
+    20.71s  user  발화 시작: Did you remember to take the recycling out?
+    23.08s  <ret> 발화 (turn6 첫 프레임)
+    23.20s  user  발화 끝
+    23.24s  agent 발화 시작: <ret> Actually, a resting heart rate between fifty and ninet
+    25.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: [source: American Heart Association] For most adults, a normal resting
+    29.17s  agent 발화 끝

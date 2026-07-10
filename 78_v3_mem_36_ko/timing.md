@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: 혜호님, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 관련해서 도와드리는 상담사예요.
-     3.65s  user  발화 시작: 그래.
-     4.29s  user  발화 끝
-     7.42s  agent 발화 끝
-     7.42s  user  발화 시작: 음… 혹시 제가 예전에 치과 예약했던 거 기억나세요?
-    11.13s  <ret> 발화 (turn3 첫 프레임)
-    11.28s  agent 발화 시작: <ret> 네, 기억나요. 일찍 진료받고 한 선생님을 선호하셨죠. 혹시 또 예약이 필요하신가요?
-    11.44s  user  발화 끝
-    13.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    18.18s  user  발화 시작: 아, 네. 그때보다 좀 더 빨리 예약하고 싶은데… 가능할까요?
-    18.19s  agent 발화 끝
-    22.19s  <ret> 발화 (turn5 첫 프레임)
-    22.34s  agent 발화 시작: <ret> 화요일 오전 여덟시, 수요일 오전 일곱시 삼십분에 예약 가능합니다. 혹시 괜찮으신 시간이 있으세요
-    22.49s  user  발화 끝
-    24.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) Available slots with Dr. Han: Tuesday at 8:00 AM, Wednes
-    29.57s  agent 발화 끝
+     0.00s  agent 발화 시작: 혜호 씨, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 짜는 걸 도와드리는 상담사예요.
+     2.78s  user  발화 시작: 그래.
+     3.25s  user  발화 끝
+     5.70s  user  발화 시작: 음… 혹시 제가 예전에 치과 예약했던 거 기억나세요?
+     5.79s  agent 발화 끝
+     9.58s  <ret> 발화 (turn3 첫 프레임)
+     9.73s  agent 발화 시작: <ret> 네, 혜호 씨. 예전에 한 선생님께 아침 일찍 예약하셨던 거 기억나요. 혹시 예약 날짜를 다시 확
+     9.86s  user  발화 끝
+    11.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    17.62s  user  발화 시작: 아, 그러네요. 그때 제가 아침으로 해달라고 했었죠. 근데 제가 요즘 잠을 너무 늦게 자서… 혹시 좀 늦은 
+    17.66s  agent 발화 끝
+    26.19s  <ret> 발화 (turn5 첫 프레임)
+    26.58s  agent 발화 시작: <ret> 네, 한 선생님께 열시로 예약 변경해 드렸어요. 같은 날짜로요.
+    26.80s  user  발화 끝
+    28.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.65s]: (tool result) Appointment rescheduled to 10:00 AM on the same day.
+    30.23s  agent 발화 끝

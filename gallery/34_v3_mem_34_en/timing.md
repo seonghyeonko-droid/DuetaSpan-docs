@@ -60,65 +60,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Well, I'm thinking of going to a c | S2 I was thinking of taking the metro | S3 Fifteen euros… that’s a bit steep. | S4 That would be wonderful, thank you
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to figure out the best  | S2 Hmm, so closer to thirty minutes t | S3 Do you know anything about parking | S4 Just trying to gauge how much extr
 
-     0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
-     9.41s  agent 발화 끝
-     9.58s  user  발화 시작: Well, I'm thinking of going to a concert downtown, but I'm n
-    14.58s  <ret> 발화 (turn2 첫 프레임)
-    14.66s  agent 발화 시작: <ret> Your home is at 30 Oak Avenue. I can find the quickest
-    14.81s  user  발화 끝
-    16.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: [2025-08-06] User's home address is 30 Oak Avenue.
-    20.27s  agent 발화 끝
-    20.63s  user  발화 시작: Yes, please. That would be great.
-    22.28s  <ret> 발화 (turn4 첫 프레임)
-    22.35s  agent 발화 시작: <ret> The estimated travel time to the Concert Hall via Rue 
-    22.57s  user  발화 끝
-    24.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) ETA is 22 minutes via Rue de Rivoli.
-    24.84s  user  발화 시작: Uh-huh.
-    25.34s  user  발화 끝
-    27.47s  agent 발화 시작: Traffic conditions can fluctuate, of course, but that’s the 
-    27.68s  agent 발화 끝
-    32.50s  user  발화 시작: Yeah, yeah.
-    34.20s  user  발화 끝
-    34.70s  agent 발화 끝
-    34.76s  user  발화 시작: I was thinking of taking the metro. Is that faster?
-    37.46s  <ret> 발화 (turn9 첫 프레임)
-    37.77s  agent 발화 시작: <ret> Taking the metro will be faster, at eighteen minutes, 
-    37.99s  user  발화 끝
-    38.58s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.14s]: (tool result) Metro travel time is 18 minutes with one transfer.
-    40.53s  user  발화 시작: Mm-hmm.
-    41.12s  user  발화 끝
-    42.91s  agent 발화 끝
-    44.27s  user  발화 시작: Oh, good to know. And is there parking near the Concert Hall
-    48.15s  <ret> 발화 (turn12 첫 프레임)
-    48.20s  agent 발화 시작: <ret> Parking downtown can be challenging. I can check avail
-    48.29s  user  발화 끝
-    50.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Parking available 3 blocks away, €15 per hour.
-    54.94s  agent 발화 시작: There is parking available three blocks from the Concert Hal
-    55.16s  agent 발화 끝
-    61.42s  agent 발화 끝
-    62.79s  user  발화 시작: Fifteen euros… that’s a bit steep.
-    65.14s  agent 발화 시작: It is, isn’t it? Often, public transport is more economical 
-    65.33s  user  발화 끝
-    67.71s  user  발화 시작: Mhm.
-    68.21s  user  발화 끝
-    71.25s  agent 발화 끝
-    71.41s  user  발화 시작: You’re right. I think I’ll stick with the metro. Do you know
-    75.67s  <ret> 발화 (turn18 첫 프레임)
-    75.98s  agent 발화 시작: <ret> You prefer an aisle seat when you travel. I can check 
-    76.23s  user  발화 끝
-    77.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: [2026-03-22] User prefers an aisle seat when traveling.
-    80.38s  user  발화 시작: Right.
-    80.78s  user  발화 끝
-    82.63s  user  발화 시작: That would be wonderful, thank you.
-    82.74s  agent 발화 끝
-    84.70s  user  발화 끝
-    84.71s  <ret> 발화 (turn21 첫 프레임)
-    84.78s  agent 발화 시작: <ret> The nearest station to your home has elevators and tac
-    85.91s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.06s]: (tool result) Nearest station has elevators and tactile paving.
-    86.80s  user  발화 시작: Yeah.
-    87.29s  user  발화 끝
-    90.75s  user  발화 시작: Perfect! That’s very reassuring.
-    90.85s  agent 발화 끝
-    92.55s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It's lovely to connect with you. I understa
+     7.56s  user  발화 시작: I'm trying to figure out the best way to get to my friend So
+     7.60s  agent 발화 끝
+    12.22s  <ret> 발화 (turn2 첫 프레임)
+    12.30s  agent 발화 시작: <ret> I can help with that. To start, your home address is 3
+    12.46s  user  발화 끝
+    13.66s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.42s]: [2025-08-06] User's home address is 30 Oak Avenue.
+    16.05s  user  발화 시작: Yeah, yeah.
+    17.15s  user  발화 끝
+    17.72s  agent 발화 끝
+    17.95s  user  발화 시작: Yes, that's right. And Sophie lives at 12 Rue de Rivoli. How
+    23.37s  <ret> 발화 (turn5 첫 프레임)
+    23.77s  agent 발화 시작: <ret> The drive to 12 Rue de Rivoli is approximately 22 minu
+    23.98s  user  발화 끝
+    25.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.59s]: (tool result) Driving directions to 12 Rue de Rivoli: 22 minutes, 8.5 
+    28.23s  user  발화 시작: Yeah.
+    28.96s  user  발화 끝
+    30.30s  agent 발화 시작: That sounds manageable for a dinner with Sophie.
+    30.36s  agent 발화 끝
+    31.77s  user  발화 시작: Mm-hmm.
+    32.41s  user  발화 끝
+    32.97s  user  발화 시작: Oh, good point. What's the traffic like right now?
+    33.21s  agent 발화 끝
+    36.42s  <ret> 발화 (turn10 첫 프레임)
+    36.50s  agent 발화 시작: <ret> There is moderate traffic currently, adding an estimat
+    36.62s  user  발화 끝
+    38.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) Moderate traffic; estimated delay: 7 minutes.
+    42.48s  agent 발화 끝
+    43.85s  user  발화 시작: Hmm, so closer to thirty minutes then?
+    46.65s  agent 발화 시작: Yes, accounting for the traffic, the trip will likely take a
+    46.80s  user  발화 끝
+    50.15s  user  발화 시작: Mhm.
+    50.79s  user  발화 끝
+    54.90s  agent 발화 끝
+    56.28s  user  발화 시작: No, that’s okay. I just want to be on time. I remember Sophi
+    64.30s  agent 발화 시작: That’s a good thing to consider. Parking can certainly add t
+    64.44s  user  발화 끝
+    67.71s  user  발화 시작: Right.
+    68.15s  user  발화 끝
+    69.62s  agent 발화 끝
+    69.76s  user  발화 시작: Do you know anything about parking near her place?
+    72.16s  <ret> 발화 (turn18 첫 프레임)
+    72.47s  agent 발화 시작: <ret> Parking near 12 Rue de Rivoli is limited to street par
+    72.67s  user  발화 끝
+    74.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) Limited street parking; nearby parking garage at 20 Rue 
+    75.90s  user  발화 시작: Oh.
+    76.49s  user  발화 끝
+    81.68s  user  발화 시작: Okay, good to know. That garage sounds like a good option.
+    81.83s  agent 발화 끝
+    85.52s  user  발화 끝
+    85.74s  agent 발화 시작: It sounds like a practical solution, Ava. It’s wise to have 
+    93.30s  agent 발화 끝
+    93.31s  user  발화 시작: Is it a long walk from the garage?
+    95.70s  agent 발화 시작: It's—
+    95.85s  user  발화 시작: Just trying to gauge how much extra time I need to add.
+    95.89s  user  발화 끝
+    96.48s  agent 발화 끝
+    99.60s  user  발화 끝
+    99.70s  agent 발화 시작: The walk from 20 Rue Saint-Honoré to 12 Rue de Rivoli is app
+   102.73s  user  발화 시작: Really?
+   103.55s  user  발화 끝
+   104.83s  user  발화 시작: Perfect. Thanks so much, Hia!
+   105.16s  agent 발화 끝
+   106.89s  agent 발화 시작: You're very welcome, Ava. I’m glad I could assist you with y
+   107.05s  user  발화 끝
+   113.42s  agent 발화 끝

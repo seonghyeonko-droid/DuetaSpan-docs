@@ -66,55 +66,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering about Demi Lo | S2 Yeah, that's true. But I was also  | S3 Actually, I’m trying to figure out | S4 I do. What about her more recent s
+# EXAMINER(FDB-v2) 단계: S1 I was just thinking about Demi Lov | S2 Oh, right! October. Is it any good | S3 Was it a big hit, though? Like, di | S4 Yeah. I just remembered "Cool for 
 
-     0.00s  user  발화 시작: I was just wondering about Demi Lovato’s music… when is her 
-     5.46s  user  발화 끝
-     5.57s  agent 발화 시작: It’s wonderful you’re connecting with music right now. What 
-    11.83s  agent 발화 끝
-    11.88s  user  발화 시작: I mean, I remember she had one come out a while ago… around 
-    16.45s  <ret> 발화 (turn3 첫 프레임)
-    16.68s  agent 발화 시작: <ret> Her album, *Confidence*, was released in October of 20
-    16.86s  user  발화 끝
-    18.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: [source: Wikipedia] Demi Lovato’s fifth studio album, Confidence, was 
-    21.07s  agent 발화 끝
-    21.87s  user  발화 시작: Oh, right! October. That rings a bell.
-    25.60s  agent 발화 시작: Sometimes remembering is less about pinpointing a date and m
-    25.75s  user  발화 끝
-    32.23s  agent 발화 끝
-    32.29s  user  발화 시작: Yeah, that's true. But I was also curious…
-    35.62s  user  발화 끝
-    36.99s  user  발화 시작: …if she’s released anything since then.
-    39.10s  <ret> 발화 (turn8 첫 프레임)
-    39.17s  agent 발화 시작: <ret> She released *Dancing with the Devil… The Art of Stayi
-    39.34s  user  발화 끝
-    41.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: [source: Rolling Stone] Demi Lovato released her seventh studio album,
-    41.76s  user  발화 시작: Mm-hmm.
-    42.25s  user  발화 끝
-    46.01s  agent 발화 시작: Exploring an artist’s evolution can be really inspiring. It’
-    46.07s  agent 발화 끝
-    53.89s  agent 발화 끝
-    53.91s  user  발화 시작: Actually, I’m trying to figure out what album to listen to o
-    57.84s  user  발화 끝
-    58.09s  agent 발화 시작: Choosing music for a road trip is a lovely idea—
-    60.58s  user  발화 시작: …do you think *Confidence* would be a good choice for that?
-    61.37s  agent 발화 끝
-    63.47s  <ret> 발화 (turn14 첫 프레임)
-    63.86s  agent 발화 시작: <ret> *Confidence* could be a great choice, especially if yo
-    64.00s  user  발화 끝
-    65.47s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.11s]: [source: Britannica] The Great Barrier Reef, located off the coast of 
-    69.80s  agent 발화 시작: It's about finding music that resonates with the energy of y
-    69.97s  agent 발화 끝
-    72.12s  user  발화 시작: Mm-hmm.
-    72.61s  user  발화 끝
-    74.38s  agent 발화 끝
-    75.34s  user  발화 시작: I do. What about her more recent stuff? Is it very different
-    79.20s  <ret> 발화 (turn18 첫 프레임)
-    79.51s  agent 발화 시작: <ret> Her eighth album, *Holy Fvck*, came out in August 2022
-    79.69s  user  발화 끝
-    81.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: [source: Billboard] *Holy Fvck*, Lovato’s eighth studio album, was rel
-    81.20s  user  발화 시작: Yeah.
-    81.65s  user  발화 끝
-    85.48s  agent 발화 끝
-    85.96s  user  발화 시작: Oh, rock, huh? That’s interesting. Maybe I’ll check that one
-    90.59s  user  발화 끝
+     0.00s  user  발화 시작: I was just thinking about Demi Lovato… do you know…
+     3.51s  user  발화 끝
+     4.59s  user  발화 시작: …when her new album is coming out?
+     6.85s  user  발화 끝
+     6.91s  agent 발화 시작: It's wonderful you're connecting with music that inspires yo
+    10.29s  agent 발화 끝
+    10.31s  user  발화 시작: I mean, the one she was working on in 2015. I can’t remember
+    15.25s  <ret> 발화 (turn4 첫 프레임)
+    15.48s  agent 발화 시작: <ret> The album you're thinking of, *Confidence*, was releas
+    15.73s  user  발화 끝
+    17.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: [source: Wikipedia] Demi Lovato’s fifth studio album, Confidence, was 
+    20.87s  user  발화 시작: Oh, right! October. Is it any good?
+    20.91s  agent 발화 끝
+    23.30s  <ret> 발화 (turn6 첫 프레임)
+    23.61s  agent 발화 시작: <ret> Music is so subjective, isn’t it? What resonates with 
+    23.78s  user  발화 끝
+    23.80s  ⚡SPAN 주입(IRRELEVANT) [d'=0.50s / d_lead=4.82s]: [source: Britannica] The Great Barrier Reef, located off the coast of 
+    28.43s  agent 발화 끝
+    28.85s  user  발화 시작: I've heard some really mixed reviews, actually.
+    31.11s  agent 발화 시작: It's natural for there to be varying opinions on artistic wo
+    31.20s  user  발화 끝
+    34.84s  user  발화 시작: Was it a big hit, though? Like, did it chart well?
+    34.90s  agent 발화 끝
+    37.79s  <ret> 발화 (turn10 첫 프레임)
+    37.93s  agent 발화 시작: <ret> It actually debuted at number one on the Billboard 200
+    38.07s  user  발화 끝
+    39.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.35s]: [source: Billboard] *Confidence* debuted at number one on the Billboar
+    40.49s  user  발화 시작: Wow, number one? That’s amazing! Did any of the singles do w
+    41.28s  agent 발화 끝
+    45.67s  user  발화 끝
+    45.69s  agent 발화 시작: That’s a fantastic question! It’s wonderful you're digging d
+    48.49s  user  발화 시작: Mm-hmm.
+    48.99s  user  발화 끝
+    51.11s  agent 발화 끝
+    51.15s  user  발화 시작: Yeah. I just remembered "Cool for the Summer" was on there.
+    54.63s  <ret> 발화 (turn15 첫 프레임)
+    54.76s  user  발화 끝
+    54.78s  agent 발화 시작: <ret> “Cool for the Summer” reached number eleven on the Bil
+    56.45s  user  발화 시작: Mm-hmm.
+    56.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [source: Rolling Stone] “Cool for the Summer” peaked at number 11 on t
+    57.09s  user  발화 끝
+    59.25s  agent 발화 시작: Sometimes, focusing on a single hit can overshadow the beaut
+    59.27s  agent 발화 끝
+    61.98s  user  발화 시작: Mm-hmm.
+    62.61s  user  발화 끝
+    65.03s  user  발화 시작: True. I guess I should give the whole thing another listen.
+    65.08s  agent 발화 끝
+    68.36s  agent 발화 시작: That sounds like a lovely idea. Really allowing yourself to 
+    68.40s  user  발화 끝
+    72.72s  agent 발화 끝

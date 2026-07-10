@@ -66,65 +66,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오는지 궁금해요. | S2 ‘Cool for the Summer’… 네, 기억나요. 그  | S3 그 TV 쇼는 어떤 거였는데요? | S4 혹시 그 앨범이 빌보드 차트에서 좋은 성적을 거뒀나요?
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오는지 궁금해요. | S2 와, 대단하네요. | S3 …그 앨범에 피처링한 가수가 누구였는지 궁금해요. | S4 데미 로바토의 다른 앨범들도 비슷한 스타일인가요?
 
      0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오는지 궁금해요.
-     3.23s  user  발화 끝
-     3.31s  <ret> 발화 (turn1 첫 프레임)
-     3.47s  agent 발화 시작: <ret> 음, 데미 로바토의 새 앨범은 이천십오년 십월에 발매될 예정입니다.
-     5.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was 
-     6.59s  user  발화 시작: 그렇죠.
-     7.32s  user  발화 끝
-     8.19s  agent 발화 끝
-     8.31s  user  발화 시작: 아, 그렇군요. 그럼 그 앨범에 수록된 곡들은 어떤 스타일이에요?
-    13.12s  agent 발화 시작: 그 앨범은 팝, R&B, 일렉트로닉 댄스 뮤직 등 다양한 장르를 아우르는 곡들로 구성되어 있어요. [curi
-    13.13s  user  발화 끝
-    19.93s  agent 발화 끝
-    20.24s  user  발화 시작: 오, 다양하네요. 혹시 그 앨범의 타이틀곡은 무엇인가요?
-    24.72s  <ret> 발화 (turn6 첫 프레임)
-    24.74s  user  발화 끝
-    24.95s  agent 발화 시작: <ret> 타이틀곡은 ‘Cool for the Summer’입니다. 많은 사랑을 받았던 곡이죠.
-    26.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: [source: Rolling Stone] "Cool for the Summer" was released as the lead
-    27.08s  user  발화 시작: 예.
-    27.48s  user  발화 끝
-    29.08s  user  발화 시작: ‘Cool for the Summer’… 네, 기억나요. 그 노래 정말 좋았어요.
-    29.21s  agent 발화 끝
-    33.22s  agent 발화 시작: 맞아요. 저도 그 노래를 좋아합니다. 데미 로바토의 매력이 잘 드러나는 곡이라고 생각해요.
-    33.23s  user  발화 끝
-    37.24s  user  발화 시작: 음.
-    37.74s  user  발화 끝
-    39.99s  agent 발화 시작: 그 앨범은 그녀의 솔직하고 당당한 면모를 보여주는 곡들로 채워져 있어서 많은 팬들에게 공감을 얻었습니다.
-    40.03s  agent 발화 끝
-    43.57s  user  발화 시작: 음.
-    44.06s  user  발화 끝
-    47.48s  user  발화 시작: 그럼 그 앨범이 나오기 전에 데미 로바토는 어떤 활동을 하고 있었나요?
-    47.55s  agent 발화 끝
-    51.88s  user  발화 끝
-    52.10s  agent 발화 시작: 이천십오년 앨범 발매 전, 데미 로바토는 주로 TV 쇼에 출연하고, 다른 아티스트들과 협업하며 활동했어요—
-    58.64s  user  발화 시작: 그 TV 쇼는 어떤 거였는데요?
-    59.47s  agent 발화 끝
-    60.31s  <ret> 발화 (turn16 첫 프레임)
-    60.71s  user  발화 끝
-    60.71s  agent 발화 시작: <ret> 아, 네. 데미 로바토는 ‘The X Factor USA’의 심사위원으로 활동했었습니다.
-    62.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [source: Billboard] Lovato served as a judge on the second and third s
-    62.94s  user  발화 시작: 네.
-    63.76s  user  발화 끝
-    66.08s  agent 발화 끝
-    66.34s  user  발화 시작: 아, ‘X 팩터’에 나왔었군요. 심사위원으로 활동했다니 대단하네요.
-    70.94s  <ret> 발화 (turn19 첫 프레임)
-    71.18s  agent 발화 시작: <ret> 네, 심사위원으로서 그녀는 재능 있는 참가자들을 발굴하고 조언하는 역할을 했습니다.
-    71.20s  user  발화 끝
-    72.94s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.26s]: [source: Britannica] The Sahara is the largest hot desert in the world
-    73.72s  user  발화 시작: 아.
-    74.17s  user  발화 끝
-    77.36s  user  발화 시작: 혹시 그 앨범이 빌보드 차트에서 좋은 성적을 거뒀나요?
-    77.44s  agent 발화 끝
-    81.07s  <ret> 발화 (turn22 첫 프레임)
-    81.30s  user  발화 끝
-    81.31s  agent 발화 시작: <ret> 네, ‘Confidence’ 앨범은 빌보드 이백 차트에서 팔위에 올랐습니다. 성공적인 데뷔였죠.
-    83.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: Official Charts] Confidence peaked at number eight on the Bil
-    87.09s  agent 발화 끝
-    87.21s  user  발화 시작: 와, 팔위면 정말 잘 된 거네요! 데미 로바토, 정말 멋진 가수인 것 같아요.
-    93.19s  user  발화 끝
-    93.39s  agent 발화 시작: 맞아요. 데미 로바토는 뛰어난 가창력과 솔직한 음악으로 많은 사람들에게 영감을 주는 아티스트입니다. [hap
-   100.25s  agent 발화 끝
+     3.25s  <ret> 발화 (turn1 첫 프레임)
+     3.33s  user  발화 끝
+     3.40s  agent 발화 시작: <ret> 데미 로바토의 다섯 번째 스튜디오 앨범 *Confident*는… 이천십오년 십월에 발매되었어요.
+     5.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: [source: Wikipedia] Demi Lovato's fifth studio album, *Confident*, was
+     9.47s  user  발화 시작: 아, 그렇군요. 이천십오년 십월이라고 하셨죠?
+     9.51s  agent 발화 끝
+    12.31s  <ret> 발화 (turn3 첫 프레임)
+    12.71s  agent 발화 시작: <ret> 네, 맞아요. 데미 로바토의 *Confident* 앨범은 이천십오년 십월에 출시되었답니다.
+    12.89s  user  발화 끝
+    13.75s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.86s]: [source: Billboard] *Confident* debuted at number one on the Billboard
+    17.55s  agent 발화 시작: *Confident* 앨범은 빌보드 이백 차트에서 일위를 기록하며 데미 로바토의 첫 번째 차트 일위 앨범이 
+    17.56s  agent 발화 끝
+    23.98s  agent 발화 끝
+    24.59s  user  발화 시작: 와, 대단하네요.
+    26.01s  user  발화 끝
+    26.45s  agent 발화 시작: 네, 정말 대단하죠. 데미 로바토가 얼마나 많은 노력을 기울였을지 상상도 안 돼요. 음악 작업은 창의적인 에
+    32.08s  user  발화 시작: 음.
+    32.89s  user  발화 끝
+    34.84s  user  발화 시작: 음… 솔직히 저는 그 앨범의 노래들이…
+    34.88s  agent 발화 끝
+    37.67s  agent 발화 시작: 노래들에 대해서는 어떤 느낌이셨나요? 혹시 특별히 좋아하거나 —
+    37.79s  user  발화 끝
+    41.07s  user  발화 시작: …그 앨범에 피처링한 가수가 누구였는지 궁금해요.
+    41.92s  agent 발화 끝
+    44.66s  <ret> 발화 (turn11 첫 프레임)
+    44.73s  agent 발화 시작: <ret> 아, 피처링 가수요? 잠시만요, 확인해 볼게요.
+    44.91s  user  발화 끝
+    46.10s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.81s]: (tool result) Sirah, a singer and songwriter, is featured on the track
+    47.17s  <ret> 발화 (turn12 첫 프레임)
+    47.54s  agent 발화 끝
+    47.56s  agent 발화 시작: <ret> 데미 로바토의 *Confident* 앨범에 참여한 피처링 가수는 시라(Sirah)라는 싱어송라이터
+    49.17s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=8.02s]: [source: Encyclopedia Britannica] The giraffe is the tallest mammal on
+    55.58s  agent 발화 끝
+    55.60s  agent 발화 시작: 시라님은 데미 로바토와 함께 멋진 조화를 이루었던 것 같아요.
+    59.17s  user  발화 시작: 아, 시라군요. 이름이 독특하네요.
+    59.35s  agent 발화 끝
+    61.89s  user  발화 끝
+    61.95s  agent 발화 시작: 네, 시라님은 독특한 음색과 뛰어난 가창력으로 많은 사랑을 받고 있는 아티스트예요.
+    67.50s  user  발화 시작: 데미 로바토의 다른 앨범들도 비슷한 스타일인가요?
+    67.56s  agent 발화 끝
+    71.01s  agent 발화 시작: 데미 로바토의 앨범들은 각기 다른 스타일을 보여주지만, *Confident* 앨범과 비슷한 분위기의 곡들도 
+    71.14s  user  발화 끝
+    74.71s  user  발화 시작: 예.
+    75.33s  user  발화 끝
+    78.01s  agent 발화 끝
+    78.48s  user  발화 시작: 그렇군요. 알려주셔서 감사합니다.
+    80.91s  user  발화 끝
+    80.96s  agent 발화 시작: 천만에요. 데미 로바토의 음악을 즐겨 들으시고, 좋은 하루 보내세요.
+    85.49s  agent 발화 끝

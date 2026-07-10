@@ -68,25 +68,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… has that hap | S2 Wow, that was a while ago. Hey, Ma | S3 Seriously, it's overflowing! | S4 Sorry about that. So, who was pitc
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, has the Oakl | S2 Did you take the trash out? | S3 Sorry about that, Ellana. Back to  | S4 Santana, okay. That explains why I
 
-     0.00s  user  발화 시작: I was just wondering… has that happened to the A’s recently?
-     5.47s  <ret> 발화 (turn1 첫 프레임)
-     5.84s  user  발화 끝
-     5.86s  agent 발화 시작: <ret> It’s good to think about the history of the game. Let’
-     7.31s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.98s]: [source: Baseball-Reference.com] The Oakland Athletics were last no-hi
-     9.67s  agent 발화 시작: The last time the A’s were no-hit was April twenty-first, tw
-     9.84s  agent 발화 끝
-    15.09s  agent 발화 끝
-    16.18s  user  발화 시작: Wow, that was a while ago. Hey, Mark, did you remember to ta
-    20.03s  user  발화 시작: Seriously, it's overflowing!
-    20.11s  user  발화 끝
-    21.76s  user  발화 시작: Sorry about that. So, who was pitching for the A’s that day?
-    21.88s  user  발화 끝
-    25.47s  <ret> 발화 (turn6 첫 프레임)
-    25.60s  user  발화 끝
-    25.69s  agent 발화 시작: <ret> Frankie Montas was the Athletics’ starting pitcher on 
-    26.99s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.14s]: [source: Baseball-Reference.com] On April 21, 2018, the Oakland Athlet
-    30.66s  agent 발화 시작: It’s interesting to look back at those matchups, isn’t it?
-    30.83s  agent 발화 끝
-    33.19s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, has the Oakland A's team been no-hit r
+     5.09s  <ret> 발화 (turn1 첫 프레임)
+     5.46s  user  발화 끝
+     5.48s  agent 발화 시작: <ret> The last time the A's were no-hit was… in April 2018. 
+     7.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: [source: Baseball-Reference.com] The last time the Oakland Athletics w
+    13.27s  agent 발화 끝
+    13.49s  user  발화 시작: Wow, 2018. That *is* a while ago. Hey, Mark, did you remembe
+    19.84s  user  발화 시작: Did you take the trash out?
+    19.93s  user  발화 끝
+    21.29s  user  발화 시작: Sorry about that, Ellana. Back to baseball—who pitched the n
+    21.36s  user  발화 끝
+    25.98s  <ret> 발화 (turn5 첫 프레임)
+    26.11s  user  발화 끝
+    26.21s  agent 발화 시작: <ret> That no-hitter was pitched by Ervin Santana of the Min
+    27.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: [source: ESPN] On April 21, 2018, Ervin Santana of the Minnesota Twins
+    37.09s  user  발화 시작: Santana, okay. That explains why I don’t remember it—I don't
+    37.29s  agent 발화 끝
+    41.83s  agent 발화 시작: It’s perfectly natural to focus on your favorite teams—that’
+    42.09s  user  발화 끝
+    47.89s  agent 발화 끝

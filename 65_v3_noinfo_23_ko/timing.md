@@ -63,99 +63,73 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 지난 연말에 도쿄 날씨가 어땠는지 알려줄 수 있어? 특히 크리 | S2 대중교통은 어떻게 가? | S3 눈이라… 혹시 내일모레 서울에서 눈썰매 탈 수 있는 곳 있어? | S4 혹시 내 친구 김민지 연락처 알아줄 수 있어?
+# EXAMINER(FDB-v2) 단계: S1 지난 크리스마스 이브에 도쿄 날씨가 어땠는지 알려줄 수 있어? | S2 다행이다. 부산에서 친구랑 만나기로 했는데. 혹시 부산 가는  | S3 젠 앤 플로우, 거기 괜찮은 곳이야? 혹시 다른 곳도 알아봐  | S4 혹시 내 친구 수진이 연락처 알아줄 수 있어? 전에 한번 얘기
 
-     0.00s  user  발화 시작: 지난 연말에 도쿄 날씨가 어땠는지 알려줄 수 있어? 특히 크리스마스 이브 날씨가 궁금해.
-     4.71s  <ret> 발화 (turn1 첫 프레임)
-     5.11s  agent 발화 시작: <ret> 지난 십이월 이십사일 도쿄는 칠도였고, 약한 비가 내리는 흐린 날씨였어요. 따뜻하게 입으셨어야 했
-     5.28s  user  발화 끝
-     6.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) Temperature: 7 degrees Celsius, Condition: Cloudy with l
-    12.89s  agent 발화 끝
-    13.29s  user  발화 시작: 아, 그랬구나. 그럼 이번 주말 부산 날씨는 어때?
-    17.03s  <ret> 발화 (turn3 첫 프레임)
-    17.27s  agent 발화 시작: <ret> 이번 주 토요일 부산은 십이도, 맑고, 일요일은 십오도, 구름이 조금 낄 예정이에요. 나들이하기 
-    17.50s  user  발화 끝
-    19.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) Saturday: 12 degrees Celsius, Sunny. Sunday: 15 degrees 
-    19.23s  user  발화 시작: 진짜?
-    19.86s  user  발화 끝
-    23.39s  agent 발화 끝
-    23.42s  user  발화 시작: 주말에 부산에서 할 만한 거 추천해 줄 수 있어?
-    25.99s  user  발화 끝
-    26.34s  agent 발화 시작: 부산은 해운대, 광안리 같은 아름다운 해변이 유명하죠. 감천문화마을도 독특하고 재미있을 거예요.
-    32.18s  agent 발화 끝
-    33.70s  user  발화 시작: 감천문화마을, 거기가 어디에 있는 거야?
-    36.20s  <ret> 발화 (turn8 첫 프레임)
-    36.44s  agent 발화 시작: <ret> 지금 계신 곳에서 차로 약 사십오분 정도 걸려요. 대중교통도 편리하게 이용할 수 있어요.
-    36.62s  user  발화 끝
-    38.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) Starting from your current location, approximately 45 mi
-    41.77s  agent 발화 끝
-    41.89s  user  발화 시작: 대중교통은 어떻게 가?
-    42.93s  <ret> 발화 (turn10 첫 프레임)
-    43.17s  agent 발화 시작: <ret> 지하철 일호선을 타고 토성역에서 내려서 일 일번이나 일 이번 버스를 타면 돼요.
-    43.36s  user  발화 끝
-    44.53s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.19s]: (tool result) Take the subway line 1 to Toseong Station, then bus 1-1 
-    48.34s  user  발화 시작: 혹시 근처에 맛집도 있을까?
-    48.36s  agent 발화 끝
-    50.25s  agent 발화 시작: 감천문화마을 근처에는 깡깡이예술마을에서 맛있는 식사를 할 수 있는 곳들이 많아요. 특히 돼지국밥이 유명하죠.
-    50.39s  user  발화 끝
-    57.48s  agent 발화 끝
-    57.95s  user  발화 시작: 돼지국밥… 좋아! 그럼 지금 바로 깡깡이예술마을 근처 돼지국밥 맛집 예약해 줘.
-    63.35s  <ret> 발화 (turn14 첫 프레임)
-    63.51s  agent 발화 시작: <ret> 두명으로 지금부터 열두시 삼십분에 깡깡이예술마을 돼지국밥 맛집 예약 완료되었어요. 즐거운 식사 되
-    63.60s  user  발화 끝
-    65.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) Reservation confirmed for 2 people at 12:30 PM.
-    70.13s  agent 발화 끝
-    70.58s  user  발화 시작: 고마워! 근데 혹시 내일모레 서울 날씨는 어때?
-    74.25s  <ret> 발화 (turn16 첫 프레임)
-    74.28s  user  발화 끝
-    74.49s  agent 발화 시작: <ret> 모레 서울은 십도, 눈이 올 예정이에요. 옷 따뜻하게 입으시고, 미끄럼 조심하세요.
-    76.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) 10 degrees Celsius, Snow.
-    80.49s  user  발화 시작: 눈이라… 혹시 내일모레 서울에서 눈썰매 탈 수 있는 곳 있어?
-    80.56s  agent 발화 끝
-    84.71s  <ret> 발화 (turn18 첫 프레임)
-    84.95s  agent 발화 시작: <ret> 롯데월드, 어린이대공원, 서울숲에서 눈썰매를 즐길 수 있어요.
-    85.16s  user  발화 끝
-    85.21s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.07s]: (tool result) Lotte World, Children's Grand Park, Seoul Forest.
-    89.02s  agent 발화 끝
-    89.93s  user  발화 시작: 롯데월드는 너무 사람이 많을 것 같아. 어린이대공원은 어때?
-    93.34s  <ret> 발화 (turn20 첫 프레임)
-    93.50s  agent 발화 시작: <ret> 어린이대공원은 보통 정도의 혼잡이 예상돼요. 그래도 롯데월드보다는 덜 붐빌 것 같아요.
-    93.77s  user  발화 끝
-    95.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: (tool result) Moderate crowd expected.
-    97.87s  user  발화 시작: 그니까.
-    98.60s  user  발화 끝
-    99.53s  user  발화 시작: 좋아, 그럼 어린이대공원으로 내일모레 오전 열시에 입장권 예매해 줘.
-    99.61s  agent 발화 끝
-   103.83s  <ret> 발화 (turn23 첫 프레임)
-   104.07s  agent 발화 시작: <ret> 내일모레 오전 열시에 어린이대공원 입장권 이장 예매 완료되었어요. 확인번호는 ABC123XYZ입니
-   104.20s  user  발화 끝
-   105.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) 2 tickets booked for Children's Grand Park, tomorrow at 
-   111.20s  agent 발화 끝
-   111.43s  user  발화 시작: 확인번호 다시 한번 말해 줄 수 있어?
-   113.31s  agent 발화 시작: 확인번호는 ABC123XYZ입니다. 잘 메모해 두세요.
-   113.36s  user  발화 끝
-   117.71s  agent 발화 끝
-   117.73s  user  발화 시작: 혹시 내 친구 김민지 연락처 알아줄 수 있어?
-   120.38s  <ret> 발화 (turn27 첫 프레임)
-   120.46s  user  발화 끝
-   120.46s  agent 발화 시작: <ret> 죄송하지만, 김민지님의 연락처는 찾을 수 없었어요. 개인 정보 보호 문제로 제가 접근할 수 없는 
-   122.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) (no information found)
-   122.68s  user  발화 시작: 그래.
-   123.41s  user  발화 끝
-   127.56s  user  발화 시작: 아, 그래. 알았어. 그럼 내일 오전 아홉시에 서울에서 부산 가는 KTX 예매해 줘.
-   127.60s  agent 발화 끝
-   132.42s  <ret> 발화 (turn30 첫 프레임)
-   132.50s  agent 발화 시작: <ret> 내일 오전 아홉시 서울에서 부산 가는 KTX 좌석 십오A로 예매 완료되었어요.
-   132.70s  user  발화 끝
-   133.70s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.04s]: (tool result) KTX booked for tomorrow at 9:00 AM, seat number 15A.
-   134.44s  user  발화 시작: 진짜?
-   134.94s  user  발화 끝
-   137.52s  user  발화 시작: 고마워. 덕분에 여행 계획 잘 세울 수 있겠어.
-   137.54s  agent 발화 끝
-   140.43s  agent 발화 시작: 천만에요. 즐거운 여행 되세요! 혹시 더 필요하신 건 없으신가요?
-   140.56s  user  발화 끝
-   144.78s  agent 발화 끝
-   144.87s  user  발화 시작: 아니, 괜찮아. 이제 그만할게.
-   146.62s  agent 발화 시작: 좋은 하루 보내세요.
-   146.95s  user  발화 끝
-   147.86s  agent 발화 끝
+     0.00s  user  발화 시작: 지난 크리스마스 이브에 도쿄 날씨가 어땠는지 알려줄 수 있어?
+     3.40s  <ret> 발화 (turn1 첫 프레임)
+     3.79s  agent 발화 시작: <ret> 도쿄의 지난 크리스마스 이브 날씨는 기온 오도에 가벼운 눈이었어요.
+     4.02s  user  발화 끝
+     5.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) Temperature: 5 degrees Celsius, Condition: Light snow.
+     8.28s  agent 발화 끝
+     8.61s  user  발화 시작: 오, 추웠겠네. 그럼 이번 주말 서울 날씨는 어때?
+    13.26s  <ret> 발화 (turn3 첫 프레임)
+    13.49s  agent 발화 시작: <ret> 이번 주 토요일 서울은 팔도, 흐리고 일요일에는 삼도, 눈이 올 예정이에요.
+    13.75s  user  발화 끝
+    15.17s  user  발화 시작: 진짜?
+    15.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) Saturday: 8 degrees Celsius, Cloudy. Sunday: 3 degrees C
+    15.71s  user  발화 끝
+    18.73s  user  발화 시작: 눈이라니, 싫다. 그럼 혹시 부산은 어때? 눈 안 오면 좋겠는데.
+    18.86s  agent 발화 끝
+    23.33s  <ret> 발화 (turn6 첫 프레임)
+    23.60s  user  발화 끝
+    23.64s  agent 발화 시작: <ret> 부산은 토요일 십이도, 구름 조금, 일요일에는 십도, 비가 올 전망이에요. 눈은 오지 않겠네요.
+    25.09s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.77s]: (tool result) Saturday: 12 degrees Celsius, Partly cloudy. Sunday: 10 
+    30.41s  agent 발화 끝
+    31.87s  user  발화 시작: 다행이다. 부산에서 친구랑 만나기로 했는데. 혹시 부산 가는 기차표 예매해 줄 수 있어?
+    37.64s  <ret> 발화 (turn8 첫 프레임)
+    37.87s  agent 발화 시작: <ret> 네, 부산행 기차표 예매 완료됐어요. 기차 번호는 백이십삼번, 서울역에서 오전 열시에 출발해서 부
+    38.07s  user  발화 끝
+    39.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) Booking confirmed. Train number: 123. Departure: Seoul S
+    47.82s  user  발화 시작: 와, 정말 고마워. 혹시 그 기차표 좀 더 자세한 정보 알 수 있을까? 좌석 등급 같은 거.
+    47.88s  agent 발화 끝
+    53.76s  <ret> 발화 (turn10 첫 프레임)
+    53.91s  agent 발화 시작: <ret> 좌석 등급은 일반석이고, 좌석 번호는 십오A예요.
+    54.07s  user  발화 끝
+    55.28s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.12s]: (tool result) Seat class: Standard. Seat number: 15A.
+    57.88s  user  발화 시작: 아, 좋아. 혹시 내일 모레 서울에서 하는 요가 클래스 예약해 줄 수 있어?
+    58.03s  agent 발화 끝
+    62.41s  <ret> 발화 (turn12 첫 프레임)
+    62.65s  agent 발화 시작: <ret> 네, 내일 모레 서울 젠 앤 플로우 요가 스튜디오 일곱시에 요가 클래스 예약 완료됐어요.
+    62.84s  user  발화 끝
+    64.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) Class booked. Studio: Zen & Flow Yoga. Time: 7:00 PM.
+    68.16s  agent 발화 끝
+    68.62s  user  발화 시작: 젠 앤 플로우, 거기 괜찮은 곳이야? 혹시 다른 곳도 알아봐 줄 수 있어?
+    73.02s  <ret> 발화 (turn14 첫 프레임)
+    73.17s  agent 발화 시작: <ret> 서울에는 하모니 요가, 소울풀 무브먼트, 평화로운 마음 요가 스튜디오가 있어요.
+    73.33s  user  발화 끝
+    75.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Available studios: Harmony Yoga, Soulful Movement, Peace
+    78.64s  agent 발화 끝
+    78.88s  user  발화 시작: 음… 하모니 요가는 어때? 거기가 좀 더 유명한 것 같기도 하고.
+    82.59s  <ret> 발화 (turn16 첫 프레임)
+    82.62s  user  발화 끝
+    82.82s  agent 발화 시작: <ret> 하모니 요가 내일 모레 일곱시 하타 요가 수업은 박지혜 강사님 수업이고, 가격은 이만 원이에요.
+    83.09s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.14s]: (tool result) Class type: Hatha Yoga. Instructor: Ji-hye Park. Price: 
+    89.87s  user  발화 시작: 이만 원이면 괜찮네. 그럼 하모니 요가로 예약해 줘.
+    89.96s  agent 발화 끝
+    93.75s  <ret> 발화 (turn18 첫 프레임)
+    93.91s  agent 발화 시작: <ret> 네, 하모니 요가 박지혜 강사님 하타 요가 수업 예약 완료됐어요.
+    94.08s  user  발화 끝
+    95.43s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.11s]: (tool result) Booking confirmed. Class: Hatha Yoga. Instructor: Ji-hye
+    98.03s  agent 발화 끝
+    98.73s  user  발화 시작: 혹시 내 친구 수진이 연락처 알아줄 수 있어? 전에 한번 얘기했는데 기억이 안 나네.
+   103.48s  <ret> 발화 (turn20 첫 프레임)
+   103.71s  agent 발화 시작: <ret> 죄송해요, 수진 씨의 연락처는 찾을 수 없었어요. 개인 정보 보호 때문에 제가 접근할 수 없는 정
+   103.97s  user  발화 끝
+   105.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.31s]: (no information found)
+   108.88s  user  발화 시작: 아.
+   109.38s  user  발화 끝
+   110.86s  user  발화 시작: 아, 그래? 그럼 어쩔 수 없지.
+   111.03s  agent 발화 끝
+   112.92s  agent 발화 시작: 여행 준비 잘 하시고, 친구분과 즐거운 시간 보내세요.
+   113.07s  user  발화 끝
+   116.75s  agent 발화 끝
