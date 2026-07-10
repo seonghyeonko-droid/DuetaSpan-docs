@@ -1,83 +1,77 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are Brariia, a gentle and reflective supportive advisor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Huia, a warm and attentive personal guide who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Zoe",
+    "name": "Remy",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "German",
-    "gender": "female",
+    "nationality": "British",
+    "gender": "non-binary",
     "age_range": "50s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
-      "category": "home",
-      "text": "User's home address is 131 Cedar Lane."
-    },
-    {
-      "date": "2026-05-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-12-29",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
-    },
-    {
-      "date": "2025-11-06",
+      "date": "2026-06-08",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-10-15",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2026-03-29",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-08-28",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2026-03-01",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-09-04",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2025-07-06",
+      "category": "home",
+      "text": "User's home address is 816 Cedar Lane."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "diet",
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-06",
+      "date": "2025-08-07",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-31",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you happen to know Sarah Miller's phone number? I met her at the conference ⟨ret@3.58s⟩ last year.
-[  3.98s][moshi] ⟦⚡SPAN@3.98s: (no information found)⟧ I’ve looked, and unfortunately, I couldn’t find a phone number for Sarah Miller. It seems that information isn’t publicly available.
-      CALL: {"function": "search", "arguments": {"query": "Sarah Miller phone number"}}
-[ 12.04s][user ] Oh, um, that’s a shame. Well, what about the weather in Seoul on July fourth of ⟨ret@17.40s⟩ last year?
-[ 17.80s][moshi] ⟦⚡SPAN@17.80s: (tool result) The weather in Seoul on July 4, 2025, was 28.5°C with partly cloudy skies and a humidity of 68%.⟧ On July fourth of last year, Seoul had a pleasant temperature of 28.5 degrees Celsius, with partly cloudy skies. It was also quite humid, at 68 percent.
-      CALL: {"function": "search", "arguments": {"query": "weather in Seoul July 4 2025"}}
-[ 28.46s][user ] That sounds lovely. I think I need to book a hotel in Busan for ⟨ret@32.07s⟩ next week.
-[ 32.47s][moshi] ⟦⚡SPAN@32.47s: (tool result) Busan hotels: Paradise Hotel Busan (4.5 stars, $210/night), Park Hyatt Busan (4.7 stars, $280/ni⟧ I found some hotels in Busan for next week. The Paradise Hotel is 4.5 stars and costs $210 a night, while the Park Hyatt is 4.7 stars at $280.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Busan", "check_in_date": "2026-07-17"}}
-[ 43.74s][user ] Hmm, the Paradise sounds good. Could you reserve a room for me there?
-[ 47.59s][moshi] ⟨ret@47.51s⟩ ⟦⚡SPAN@47.59s: (tool result) Paradise Hotel Busan for 1 night, check-in July 17, 2026. Confirmation ID: PHB7492.⟧ I’ve booked a room for you at the Paradise Hotel Busan for next week, with confirmation ID PHB7492. I hope your trip is restorative.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Paradise Hotel Busan", "check_in_date": "2026-07-17"}}
+[  0.00s][user ] Do you know the phone number for Anya…
+[  3.94s][user ] …Sharma? I met her at the conference last ⟨ret@6.27s⟩ year.
+[  6.67s][moshi] ⟦⚡SPAN@6.67s: (no information found)⟧ I’ve looked, and unfortunately, I couldn’t find a publicly listed phone number for Anya Sharma.
+      CALL: {"function": "search", "arguments": {"query": "Anya Sharma phone number"}}
+[ 12.05s][user ] Oh, um… that’s a shame.
+[ 14.41s][moshi] It happens sometimes, especially with private contact details. Perhaps you could try reaching out through the conference organizers?
+[ 20.81s][user ] Maybe… what was the weather like in Seoul on July 10th of last ⟨ret@24.69s⟩ year?
+[ 25.09s][moshi] ⟦⚡SPAN@25.09s: (tool result) 28.5°C, humidity 82%, wind 7.2 km/h⟧ Last July 10th in Seoul, it was quite warm—around twenty-eight point five degrees Celsius—with fairly high humidity and a gentle breeze of seven point two kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2025-07-10", "location": "Seoul"}}
+[ 31.04s][user ] «backchannel» Mm-hmm.
+[ 35.68s][moshi] It sounds like it was a lovely summer day.
+[ 38.02s][user ] Actually, yes. Find me some Italian restaurants ⟨ret@41.28s⟩ nearby.
+[ 41.59s][moshi] ⟦⚡SPAN@41.60s: (tool result) Trattoria del Sole: 4.5 stars, 0.8 km; Bella Italia: 4.2 stars, 1.2 km; Roma Ristorante: 3.9 sta⟧ I found three Italian restaurants close by—Trattoria del Sole, with four and a half stars, is only point eight kilometers away. Bella Italia and Roma Ristorante are also excellent options!
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}

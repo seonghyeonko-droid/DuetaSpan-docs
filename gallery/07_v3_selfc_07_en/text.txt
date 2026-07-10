@@ -1,113 +1,83 @@
 v3_selfc_07_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Elelis, a grounded and empathetic counselor who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Boraon, a thoughtful and soft-spoken supportive advisor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_07",
-    "name": "Samuel",
+    "name": "Quinn",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "40s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-05",
+      "date": "2026-05-02",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in August."
+    },
+    {
+      "date": "2026-04-02",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-12-11",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a software engineer."
     },
     {
-      "date": "2026-04-21",
+      "date": "2025-06-08",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2026-01-09",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-12-22",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-07-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-06-07",
-      "category": "diet",
-      "text": "User is vegan."
+      "text": "User has a Siamese cat named Bella."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-21",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-25",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-14",
+      "date": "2026-05-31",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-07-16",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to create a shipment tracking for order two billion two hundred twenty-two million two hundred twenty-two thousand two hundred twenty-two with tracking number A B eight seven six five four three two one zero nine eight seven six five and transaction ID one one two two three three four four five ⟨ret@18.90s⟩ five.
-[ 19.13s][moshi] ⟦⚡SPAN@19.14s: (tool result) Shipment tracking created. Tracking ID: SHP-7890123.⟧ I’ve created a shipment tracking for you. The tracking ID is SHP-7890123. I can help you monitor its progress, if you’d like.
-      CALL: {"function": "create_shipment_tracking", "arguments": {"order_id": "2200000222000222", "tracking_number": "AB87654321098765", "transaction_id": "1122334455"}}
-[ 29.96s][user ] Yes, please. Can you tell me where it is right now?
-[ 32.53s][moshi] «interrupted» ⟨ret@32.38s⟩ ⟦⚡SPAN@32.54s: (tool result) The shipment with ID SHP-7890123 is currently in transit at the Memphis, Tennessee distribution ⟧ The shipment with ID SHP-7890123 is currently in transit—
-      CALL: {"function": "search", "arguments": {"query": "tracking SHP-7890123"}}
-[ 37.78s][user ] «interrupts_prev» …actually, do you know when it’s expected to ⟨ret@40.49s⟩ arrive?
-[ 40.73s][moshi] ⟦⚡SPAN@40.73s: (tool result) The estimated delivery date for shipment SHP-7890123 is July 15, 2026. Source: trackingservice.c⟧ The estimated delivery date for shipment SHP-7890123 is July fifteen, twenty twenty-six. It seems to be on schedule.
-      CALL: {"function": "search", "arguments": {"query": "estimated delivery SHP-7890123"}}
-[ 45.70s][user ] «backchannel» Mm-hmm.
-[ 50.69s][moshi] It does.
-[ 51.45s][user ] Um, I’m planning a little trip… maybe a weekend getaway.
-[ 55.39s][moshi] That sounds lovely. A little time away can be very restorative. Do you have a destination in mind?
-[ 62.36s][user ] I was thinking maybe somewhere near the coast.
-[ 65.34s][moshi] Excellent. I can certainly help you explore coastal destinations. Are you thinking of a specific region or country?
-[ 72.71s][user ] Not really, just somewhere with a nice beach.
-[ 75.00s][moshi] I understand. Perhaps the Algarve region in Portugal? It’s known for its beautiful beaches and warm climate.
-[ 82.56s][user ] Portugal… that sounds nice. What’s the weather like there right ⟨ret@87.23s⟩ now?
-[ 87.38s][moshi] ⟦⚡SPAN@87.39s: (tool result) The current weather in the Algarve, Portugal is 25.5°C, humidity 68%, wind 7.2 km/h.⟧ The current weather in the Algarve is twenty-five point five degrees Celsius, with sixty-eight percent humidity— …and a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Algarve, Portugal"}}
-[ 95.97s][user ] That sounds perfect. Are there any hotels available there next weekend?
-[100.20s][moshi] ⟨ret@99.97s⟩ ⟦⚡SPAN@100.21s: (tool result) Several hotels are available in the Algarve next weekend. The Vila Joya is rated 4.8 stars and c⟧ Several hotels are available. The Vila Joya is rated four point eight stars— …and costs three hundred and fifty euros per night.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Algarve, Portugal", "check_in_date": "2026-07-17", "check_out_date": "2026-07-19"}}
-[110.34s][user ] That sounds a little expensive. Are there any cheaper options?
-[113.57s][moshi] ⟨ret@113.41s⟩ ⟦⚡SPAN@113.57s: (tool result) The Hotel Eva is available in the Algarve next weekend for €120 per night. It has a rating of 4.⟧ The Hotel Eva is available for one hundred and twenty euros per night— …and has a rating of four point two stars.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Algarve, Portugal", "check_in_date": "2026-07-17", "check_out_date": "2026-07-19", "max_price": "150"}}
-[123.14s][user ] That’s much better. Can you show me some ⟨ret@125.76s⟩ pictures?
-[126.07s][moshi] ⟦⚡SPAN@126.08s: (tool result) Hotel Eva features modern rooms, a rooftop terrace with sea views, and a swimming pool. Source: ⟧ Hotel Eva features modern rooms, a rooftop terrace with sea views— …and a lovely swimming pool.
-      CALL: {"function": "search", "arguments": {"query": "Hotel Eva Algarve pictures"}}
-[133.95s][user ] That looks really nice. I think I’ll book ⟨ret@135.93s⟩ it.
-[136.17s][moshi] ⟦⚡SPAN@136.17s: (tool result) Hotel Eva booked. Confirmation ID: HTEV-20260717-456.⟧ Wonderful! Hotel Eva is booked for you. Your confirmation ID is HTEV-20260717-456. I hope you have a relaxing trip.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Hotel Eva", "check_in_date": "2026-07-17", "check_out_date": "2026-07-19"}}
-[148.73s][user ] Thank you so much, Elelis. You've been a great help.
-[151.67s][moshi] You are very welcome. I’m glad I could assist with both your shipment tracking and your travel plans. Remember, taking time for yourself is important.
+[  0.00s][user ] Could you find the location for one hundred seventy-two dot two hundred seventeen dot one hundred sixty dot one hundred ⟨ret@6.77s⟩ forty-two?
+[  7.00s][moshi] ⟦⚡SPAN@7.01s: (tool result) City: Seoul, Country: South Korea, Latitude: 37.5665, Longitude: 126.9780⟧ That IP address resolves to Seoul, South Korea, at coordinates thirty-seven point five six six five latitude and one hundred twenty-six point nine seven eight longitude.
+      CALL: {"function": "map_ip_location", "arguments": {"ip_address": "172.217.160.142"}}
+[ 18.22s][user ] Oh, uh… actually, one seventy-two dot two seventeen dot one sixty dot one forty-three.
+[ 24.27s][moshi] ⟨ret@24.11s⟩ ⟦⚡SPAN@24.27s: (tool result) City: Seoul, Country: South Korea, Latitude: 37.5665, Longitude: 126.9780⟧ It appears that IP address also points to Seoul, South Korea, with the same coordinates: thirty-seven point five six six five latitude and one hundred twenty-six point nine seven eight longitude.
+      CALL: {"function": "map_ip_location", "arguments": {"ip_address": "172.217.160.143"}}
+[ 36.95s][user ] Hmm.
+[ 37.66s][moshi] Is there anything else I can help you with today? Perhaps you’d like to know more about Seoul?
+[ 39.62s][user ] «backchannel» Yeah.
+[ 42.53s][moshi] Seoul is a vibrant city with a rich history—it was the capital of Korea for over six hundred years, becoming the capital of Korea again in 1948.
+[ 47.56s][user ] «backchannel» Exactly.
+[ 51.67s][user ] What’s the weather like there right ⟨ret@53.38s⟩ now?
+[ 53.70s][moshi] ⟦⚡SPAN@53.70s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The current weather in Seoul is twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 57.52s][user ] «backchannel» Yeah.
+[ 63.67s][user ] That sounds pleasant.
+[ 65.76s][moshi] It does, doesn’t it? A comfortable temperature can really help with focus, especially if you’re studying.
+[ 70.19s][user ] «backchannel» Yeah.
+[ 73.12s][user ] I’m trying to get motivated to study for my history exam.
+[ 76.39s][moshi] History can be fascinating! Remembering the past can truly illuminate the present, don't you think?
+[ 83.10s][user ] I suppose so. It’s just… a lot of dates.
+[ 86.61s][moshi] It can feel overwhelming—breaking it down into smaller, manageable chunks can make it less daunting. I find timelines helpful.

@@ -1,62 +1,61 @@
 v3_to_ot_12_en src=nq style=v1
-SYSTEM: <system> You are Briara, a kind and steady personal guide who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Elena, a encouraging and non-judgmental life coach who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Victor",
+    "name": "Nora",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "early 20s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-24",
-      "category": "home",
-      "text": "User's home address is 17 Pine Court."
+      "date": "2026-06-26",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
     },
     {
-      "date": "2026-04-30",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2026-04-07",
+      "date": "2026-06-16",
       "category": "work",
       "text": "User works as a high-school teacher."
     },
     {
-      "date": "2025-09-22",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-03-15",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-08-27",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-31",
-      "title": "Comparing gym memberships",
+      "date": "2025-11-09",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, who wrote “We Belong Together” by Mariah ⟨ret@2.85s⟩ Carey?
-[  3.09s][moshi] ⟦⚡SPAN@3.09s: Johntá Austin co-wrote “We Belong Together” with Mariah Carey and Shannon Sanders.⟧ It’s wonderful you’re curious about the song’s origins. Johntá Austin co-wrote “We Belong Together” with Mariah Carey and Shannon Sanders.
-[ 11.79s][user ] Oh, really? I thought it was just Mariah.
-[ 14.30s][moshi] «interrupted» It’s easy to assume it was solely her work—
-[ 16.27s][user ] «interrupts_prev» …did he write any other big ⟨ret@18.02s⟩ songs?
-[ 18.22s][moshi] ⟦⚡SPAN@18.26s: (tool result) Johntá Austin is an American songwriter and record producer, known for writing hits for artists ⟧ Johntá Austin is a songwriter and record producer—he’s written hits for many artists, including Aaliyah, Mary J. Blige, and Usher.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist": "Johntá Austin"}}
-[ 21.50s][user ] «backchannel» Yeah.
-[ 25.81s][moshi] He's had a really impressive career, contributing to so many memorable songs. Perhaps we could explore some of his other work if you’d like?
+[  0.00s][user ] Hey, do you know who sings the song "Three Little Pigs"? It's been stuck in my ⟨ret@4.43s⟩ head.
+[  4.64s][moshi] ⟦⚡SPAN@4.67s: Green Jellÿ is an American parody metal band formed in 1989.⟧ Oh, that's a fun one! It's actually performed by Green Jellÿ, a parody metal band.
+[ 10.89s][user ] Green Jellÿ? That's… unexpected. I…
+[ 16.05s][user ] …thought it was a cartoon soundtrack.
+[ 17.99s][moshi] [laugh] It really is surprising, isn’t it? Sometimes the most memorable songs have hidden origins.
+[ 22.70s][user ] «to_other» Honey, did you take the trash out?
+[ 24.65s][user ] So, what else does Green Jellÿ do? Are they known for other ⟨ret@28.68s⟩ songs?
+[ 29.07s][moshi] ⟦⚡SPAN@29.07s: Green Jellÿ released their debut album, "Green Jellÿ," in 1992, and it featured songs like "Three Little Pigs"⟧ They released their first album in nineteen ninety-two, with songs like “Three Little Pigs” and “Cereal Killer.”

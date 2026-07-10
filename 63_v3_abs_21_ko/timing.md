@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "가우",
+#     "name": "소경",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,115 +12,88 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-17",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "date": "2026-06-02",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-27",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-01-25",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-04-12",
+#       "date": "2025-09-13",
 #       "category": "allergy",
 #       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-11-30",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-08-29",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-10-22",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-06-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2025-08-27",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-12",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-05-16",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2025-08-26",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-23",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시, 무염수태고개의 개념이 꾸란에서 유래했다는 주장에 대해  | S2 오, 인사이드 아웃 이요? 재미있을까요? | S3 감사합니다. 그런데, 혹시 지난주 금요일에 제가 뭐라고 메모해 | S4 아니요, 괜찮아요. 그냥… 생각나서요. 그럼…
+# EXAMINER(FDB-v2) 단계: S1 동남아시아에 지리적으로 속하지 않는 섬들이 어디야? | S2 그럼, 혹시 서울 날씨는 어때? 지금? | S3 고마워. 혹시 내일 모레가 무슨 요일이야? | S4 아직은… 뭘 해야 할지 고민 중이야.
 
-     0.00s  user  발화 시작: 혹시, 무염수태고개의 개념이 꾸란에서 유래했다는 주장에 대해 반박하는 사람이 누구인지 아세요?
-     5.05s  <ret> 발화 (turn1 첫 프레임)
-     5.29s  agent 발화 시작: <ret> 죄송해요, 그 부분에 대한 정보를 찾을 수 없었어요. 아직 명확하게 알려진 바가 없는 것 같아요.
-     5.29s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.71s]: (no information found)
-     5.37s  user  발화 끝
-     8.58s  user  발화 시작: 네.
-     9.08s  user  발화 끝
-    10.00s  agent 발화 끝
-    11.33s  user  발화 시작: 음… 그렇군요. 그럼, 요즘 가장 인기 있는 영화가 뭐예요?
-    14.75s  <ret> 발화 (turn4 첫 프레임)
-    14.99s  agent 발화 시작: <ret> 지금 극장에서 가장 인기 있는 영화는 '인사이드 아웃 이', '배드 보이 라이드 오어 다이', 그
-    14.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: (tool result) Top-rated movies currently include "Inside Out 2," "Bad 
-    15.17s  user  발화 끝
-    21.38s  agent 발화 끝
-    21.74s  user  발화 시작: 오, 인사이드 아웃 이요? 재미있을까요?
-    24.32s  agent 발화 시작: 네, 많은 분들이 재미있다고 하더라고요. 감정 변화를 다룬 이야기라, 공감되는 부분이 많을 거예요.
-    24.37s  user  발화 끝
-    27.97s  user  발화 시작: 네.
-    28.46s  user  발화 끝
-    29.73s  agent 발화 시작: 혹시 지금 시간 확인해 드릴까요? 제가 지금 시간을 알려드릴 수 있어요.
-    29.74s  agent 발화 끝
-    33.38s  agent 발화 끝
-    34.12s  user  발화 시작: 아, 네, 시간 좀 알려주세요.
-    35.67s  <ret> 발화 (turn10 첫 프레임)
-    35.91s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 사십칠분이에요.
-    35.91s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.11s]: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul rig
-    36.10s  user  발화 끝
-    40.03s  agent 발화 끝
-    40.14s  user  발화 시작: 감사합니다. 그런데, 혹시 지난주 금요일에 제가 뭐라고 메모해 둔 거 있었나요?
-    44.60s  <ret> 발화 (turn12 첫 프레임)
-    44.77s  user  발화 끝
-    44.92s  agent 발화 시작: <ret> 네, 이천이십육년 칠월 삼일에 “오늘 꼭 운동하기”라고 메모해 두셨네요.
-    44.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: [2026-07-03] 오늘 꼭 운동하기
-    48.42s  user  발화 시작: 네.
-    49.19s  user  발화 끝
-    50.20s  agent 발화 끝
-    51.18s  user  발화 시작: 아, 맞다! 운동해야 하는데…
-    53.44s  user  발화 끝
-    53.76s  agent 발화 시작: 운동 계획 세우는 거 도와드릴까요? 아니면 간단히 스트레칭이라도 해보시는 건 어떠세요?
-    58.11s  agent 발화 끝
-    58.17s  user  발화 시작: 아니요, 괜찮아요. 그냥… 생각나서요. 그럼…
-    61.40s  user  발화 끝
-    63.42s  user  발화 시작: …다음에 또 이야기해요.
-    64.63s  agent 발화 시작: 네, 언제든지 편하게 다시 찾아주세요. 항상 응원할게요!
-    64.84s  user  발화 끝
-    67.95s  agent 발화 끝
+     0.00s  user  발화 시작: 동남아시아에 지리적으로 속하지 않는 섬들이 어디야?
+     2.80s  <ret> 발화 (turn1 첫 프레임)
+     2.96s  user  발화 끝
+     3.03s  agent 발화 시작: <ret> 음, 죄송하지만 그 질문에 대한 정보는 찾을 수 없었어요. 아직 그 부분은 파악되지 않은 것 같아
+     3.04s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.33s]: (no information found)
+     6.15s  user  발화 시작: 응.
+     6.47s  user  발화 끝
+     8.36s  agent 발화 끝
+     9.68s  user  발화 시작: 그럼, 혹시 서울 날씨는 어때? 지금?
+    11.75s  <ret> 발화 (turn4 첫 프레임)
+    11.98s  agent 발화 시작: <ret> 서울 날씨는 현재 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요. 
+    11.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    12.22s  user  발화 끝
+    19.26s  agent 발화 끝
+    19.60s  user  발화 시작: 고마워. 혹시 내일 모레가 무슨 요일이야?
+    21.95s  <ret> 발화 (turn6 첫 프레임)
+    22.09s  user  발화 끝
+    22.18s  agent 발화 시작: <ret> 내일 모레는 일요일이 될 거예요. 지금이 금요일이니까요. 주말 계획 있으세요?
+    22.19s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.63s]: It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.
+    26.82s  agent 발화 끝
+    28.11s  user  발화 시작: 아직은… 뭘 해야 할지 고민 중이야.
+    30.48s  agent 발화 시작: 고민이시군요. 뭐든 너무 조급해하지 마세요. 잠시 시간을 갖고 생각을 정리하는 것도 좋은 방법이에요.
+    30.69s  user  발화 끝
+    36.69s  agent 발화 끝

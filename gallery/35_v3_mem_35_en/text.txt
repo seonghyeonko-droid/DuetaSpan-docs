@@ -1,10 +1,10 @@
 v3_mem_35_en src=mem style=mem
-SYSTEM: <system> You are Timi, a thoughtful and soft-spoken counselor who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Telis, a upbeat and supportive wellness coach who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Avery",
+    "name": "Liam",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,95 +12,84 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "male",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
+      "date": "2026-03-30",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
       "date": "2026-03-15",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-11-16",
       "category": "home",
-      "text": "User's home address is 973 Pine Court."
+      "text": "User's home address is 170 Maple Drive."
     },
     {
-      "date": "2025-08-23",
+      "date": "2025-11-24",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2025-06-17",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2025-11-22",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-09-08",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-06-07",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in August."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-30",
-      "title": "Setting up a home network",
+      "date": "2025-12-22",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     },
     {
-      "date": "2025-07-13",
-      "title": "Apartment hunting downtown",
+      "date": "2025-11-14",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Avery, I'm Timi. It's lovely to meet you.
-[  1.19s][user ] «backchannel» Yeah, yeah.
-[  3.12s][user ] Hi Timi, it’s good to meet you too. I’m feeling a bit stuck.
-[  7.16s][moshi] It’s alright to feel stuck sometimes, Avery. What’s on your mind today?
-[  8.54s][user ] «backchannel» Yeah, totally.
-[ 10.67s][user ] I’m trying to plan a weekend getaway, but I can’t decide where to go.
-[ 15.11s][moshi] A getaway sounds wonderful. Do you have any preferences for the kind of place?
-[ 16.87s][user ] «backchannel» Yeah.
-[ 20.92s][user ] I was thinking somewhere with good food… actually, I really love Italian.
-[ 25.54s][moshi] ⟨ret@25.22s⟩ ⟦⚡SPAN@25.54s: [2025-08-23] User's favorite cuisine is Italian.⟧ It sounds like you’re craving Italian food on this trip, Avery.
-[ 27.71s][user ] «backchannel» Yeah.
-[ 31.21s][user ] Yes, definitely! Somewhere with really authentic Italian cuisine.
-[ 36.93s][moshi] That’s a lovely starting point. Let’s explore some options for you.
-[ 41.58s][user ] What would you ⟨ret@42.74s⟩ suggest?
-[ 42.98s][moshi] ⟦⚡SPAN@42.98s: (tool result) Italian restaurants in Sydney, NSW: Lucio Pizzeria (4.5 stars, $$), Bella Italia (4.2 stars, $$$⟧ There are a few highly-rated Italian restaurants in Sydney—Lucio Pizzeria and Bella Italia.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
-[ 44.75s][user ] «backchannel» Yeah.
-[ 49.19s][user ] Those sound good, but I was hoping to go *away* for the weekend.
-[ 53.41s][moshi] «interrupted» Oh, my apologies. I jumped to local options. You’d like to travel further—
-[ 56.95s][user ] «interrupts_prev» …Do you think somewhere in Victoria might be nice?
-[ 60.47s][moshi] ⟨ret@60.23s⟩ ⟦⚡SPAN@60.47s: (tool result) Italian restaurants in Victoria: Il Corso (4.6 stars, $$$), La Luna (4.3 stars, $$).⟧ Il Corso and La Luna in Victoria have excellent reviews, and offer Italian cuisine.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Victoria"}}
-[ 66.25s][user ] Il Corso sounds interesting. What’s ⟨ret@69.51s⟩ nearby?
-[ 69.83s][moshi] ⟦⚡SPAN@69.83s: (tool result) Il Corso is near Portsea, offering beaches, hiking trails, and the Point Nepean National Park.⟧ Il Corso is close to Portsea, with beaches, hiking, and Point Nepean National Park.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Il Corso, Victoria"}}
-[ 71.39s][user ] «backchannel» Yeah.
-[ 74.99s][user ] That sounds perfect! Is it easy to get there from ⟨ret@78.79s⟩ Sydney?
-[ 79.19s][moshi] ⟦⚡SPAN@79.19s: (tool result) One-way flights from Sydney to Melbourne: $129 (Jetstar), $155 (Qantas).⟧ One-way flights from Sydney to Melbourne start at around one hundred and twenty-nine dollars.
-      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "Sydney", "destination": "Melbourne"}}
-[ 81.49s][user ] «backchannel» Yeah, totally.
-[ 84.57s][user ] Okay, that's reasonable. What about accommodation near Il Corso?
-[ 88.81s][moshi] ⟨ret@88.75s⟩ ⟦⚡SPAN@88.83s: (tool result) Hotels in Portsea: Portsea Hotel (4.2 stars, $250/night), Sorrento Beach House (4.5 stars, $300/⟧ Portsea Hotel and Sorrento Beach House are both highly-rated options in that area.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Portsea, Victoria"}}
-[ 93.99s][user ] The Portsea Hotel sounds good. Could you tell me a bit more about it?
-[ 98.52s][moshi] ⟨ret@98.36s⟩ ⟦⚡SPAN@98.52s: (tool result) Portsea Hotel: standard room available, $250/night. Confirmation ID: PX749Z.⟧ A standard room is available at the Portsea Hotel for two hundred and fifty dollars a night.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Portsea Hotel", "location": "Portsea, Victoria"}}
-[102.15s][user ] «backchannel» Yeah.
-[103.17s][user ] That's great. I think I'll book it.
-[105.26s][moshi] Wonderful! It’s good to take that first step toward a relaxing weekend.
-[109.37s][user ] Thanks, Timi. You’ve been a huge help.
-[111.88s][moshi] You’re very welcome, Avery. Sometimes, just talking through options can clear the path.
-[117.46s][user ] I agree. I feel much more confident now.
-[120.52s][moshi] That’s lovely to hear. It sounds like you’re ready for a revitalizing trip.
-[124.17s][user ] I am! Thanks again for your guidance.
-[127.14s][moshi] Avery. Enjoy your Italian getaway and the beautiful scenery.
+[  0.00s][moshi] Hi Liam, I'm Telis. It's wonderful to connect with you today! I'm here to support your well-being, especially when it comes to relationships.
+[  9.21s][user ] Um, well, I'm trying to find a good Korean BBQ place in ⟨ret@15.07s⟩ Sydney.
+[ 15.47s][moshi] ⟦⚡SPAN@15.47s: [2025-11-24] User's favorite cuisine is Korean BBQ.⟧ It sounds like you're craving something familiar! I remember you mentioned loving Korean BBQ.
+[ 21.64s][user ] Right, yeah. Do you know any good ones around here?
+[ 24.62s][moshi] ⟨ret@24.54s⟩ ⟦⚡SPAN@24.62s: (tool result) Korean BBQ restaurants in Sydney: Bulgogi House (4.5 stars, 120 reviews), Seoul Food (4.2 stars,⟧ There are a few highly-rated options! Bulgogi House has the most reviews, with a 4.5-star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Korean BBQ", "location": "Sydney"}}
+[ 31.56s][user ] Bulgogi House sounds good. What's their address?
+[ 35.61s][moshi] ⟨ret@35.37s⟩ ⟦⚡SPAN@35.61s: (tool result) Bulgogi House: 58 Oxford Street, Darlinghurst, NSW 2010.⟧ Bulgogi House is located at 58 Oxford Street, in Darlinghurst. I can help you reserve a table if you'd like.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Bulgogi House", "location": "Sydney"}}
+[ 42.77s][user ] No, that's okay. I think I'll just walk in.
+[ 45.57s][moshi] That sounds perfect, Liam. Spontaneity can be so refreshing!
+[ 50.24s][user ] I'm actually planning a trip to Kyoto in August, ⟨ret@53.57s⟩ too.
+[ 53.80s][moshi] ⟦⚡SPAN@53.81s: [2025-06-07] User is planning a trip to Kyoto in August.⟧ Oh, Kyoto in August! You've been planning that for a while, which is great – preparation is key.
+[ 55.50s][user ] «backchannel» Yeah.
+[ 59.51s][user ] Yeah, I have. Is it going to be super ⟨ret@62.25s⟩ crowded?
+[ 62.57s][moshi] ⟦⚡SPAN@62.57s: (tool result) August is peak season in Kyoto; expect large crowds at popular temples and gardens. Consider vis⟧ August is a popular time to visit Kyoto, so it will be quite busy. Visiting early or on weekdays could help.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"city": "Kyoto", "month": "August", "year": "2026"}}
+[ 66.56s][user ] «backchannel» Yeah.
+[ 69.56s][moshi] Sometimes a little planning can really help manage those bigger crowds, don't you think? It allows you to enjoy the experience more fully.
+[ 77.77s][user ] I'm also a little worried about the heat.
+[ 80.20s][moshi] ⟨ret@79.97s⟩ ⟦⚡SPAN@80.20s: (tool result) Average high in Kyoto in August: 31.0°C, humidity 82%, chance of rain 20%.⟧ It can get quite warm! The average high in Kyoto in August is 31 degrees Celsius, with about 82% humidity.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "Kyoto", "month": "August"}}
+[ 88.13s][user ] Wow, okay. That is hot.
+[ 91.15s][moshi] It definitely is warm, Liam. Staying hydrated will be really important, and seeking shade when you can. Perhaps plan indoor activities for the hottest parts of the day?

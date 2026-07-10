@@ -1,46 +1,51 @@
 v3_mem_36_en src=mem style=mem
-SYSTEM: <system> You are Teax, a gentle and reflective supportive advisor who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Oruen, a encouraging and non-judgmental life coach who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "David",
+    "name": "Ada",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "40s",
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-20",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2026-06-02",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-02-21",
+      "date": "2026-04-17",
       "category": "hobby",
       "text": "User is into birdwatching."
     },
     {
-      "date": "2026-01-22",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in December."
+      "date": "2025-08-02",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-05-27",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2025-06-20",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
+    },
+    {
+      "date": "2025-06-19",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-16",
+      "date": "2025-11-05",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -49,23 +54,33 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     {
       "date": "2025-08-15",
-      "title": "Apartment hunting downtown",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi David, I'm Teax. It's lovely to connect with you today.
-[  5.25s][user ] um, hey Teax. I was just wondering… do you remember anything about my trip to ⟨ret@10.43s⟩ Kyoto?
-[ 10.67s][moshi] ⟦⚡SPAN@10.67s: [2026-01-22] User is planning a trip to Kyoto in December.⟧ Yes, I do. You are planning a trip to Kyoto this December, and I can certainly help you recall details as needed.
-[ 13.57s][user ] «backchannel» Yeah.
-[ 18.27s][moshi] Perhaps we could begin by exploring what you’ve already envisioned for that journey? It’s a beautiful city.
-[ 25.23s][user ] I think I mentioned I wanted outdoor seating for a birthday dinner… six ⟨ret@29.57s⟩ people?
-[ 29.81s][moshi] ⟦⚡SPAN@29.81s: [2026-01-16] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ That's right. You were planning a birthday dinner for six people, with a preference for outdoor seating.
-[ 32.99s][user ] «backchannel» Yeah.
-[ 35.93s][user ] And… I need to remember to check the pollen count. I’m really ⟨ret@40.26s⟩ allergic.
-[ 40.58s][moshi] ⟦⚡SPAN@40.58s: [2025-05-27] User is allergic to pollen.⟧ I have a note that you have a pollen allergy, so remembering to check the count is a very good idea for your wellbeing.
+[  0.00s][moshi] Hi Ada, I'm Oruen. It's lovely to connect with you today. How are you feeling?
+[  6.25s][user ] Um, a bit lost, to be honest. It's been a rough few months.
+[  9.34s][moshi] It's perfectly alright to feel lost after a difficult time, Ada. Grief and change can be disorienting.
+[ 16.07s][user ] Yeah, well… I was just remembering my trip to ⟨ret@19.21s⟩ Switzerland.
+[ 19.37s][moshi] ⟦⚡SPAN@19.37s: [2025-06-20] User is planning a trip to Switzerland in December.⟧ You're planning a trip to Switzerland this December, which sounds like a wonderful escape.
+[ 23.28s][user ] «backchannel» Mm-hmm.
+[ 25.01s][moshi] Perhaps focusing on that trip can give you something hopeful to look forward to. Is there anything specific you're planning?
+[ 28.65s][user ] «backchannel» Right.
+[ 32.21s][user ] I was thinking about what to pack. It'll be cold, I guess?
+[ 35.89s][moshi] ⟨ret@35.65s⟩ ⟦⚡SPAN@35.89s: (tool result) Weather in Switzerland: 5.0°C, humidity 85%, wind 7.2 km/h.⟧ The weather in Switzerland is currently 5 degrees Celsius, with high humidity and a bit of wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Switzerland"}}
+[ 42.25s][moshi] It’s a good idea to pack warm layers for December. It’s alright to prepare practically, Ada.

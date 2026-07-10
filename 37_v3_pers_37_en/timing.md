@@ -4,48 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Jamie",
+#     "name": "Olivia",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-08",
-#       "category": "home",
-#       "text": "User's home address is 727 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-01-05",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-11-26",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-10-18",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-09-02",
+#       "date": "2026-05-03",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2026-04-24",
+#       "category": "home",
+#       "text": "User's home address is 258 Maple Drive."
+#     },
+#     {
+#       "date": "2026-04-20",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-02-09",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-06",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-05",
+#       "date": "2026-06-13",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-23",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-01",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -55,65 +76,83 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Wellness coach? That sounds… inten | S2 I don’t know anymore! It's been a  | S3 Yeah, we drifted apart after gradu | S4 Do you… are you even real? I mean,
+# EXAMINER(FDB-v2) 단계: S1 Orus? That’s… a unique name. What  | S2 Affordability is a big one, yeah.  | S3 …Do people actually *use* those, t | S4 A walking group… that’s not a bad 
 
-     0.00s  agent 발화 시작: Hallo Jamie, I’m Keaen. It’s lovely to meet you. I’m a welln
-     4.49s  user  발화 시작: Yeah.
-     5.12s  user  발화 끝
-     8.34s  agent 발화 끝
-     9.18s  user  발화 시작: Wellness coach? That sounds… intense. I just feel a bit lost
-    15.81s  user  발화 끝
-    16.16s  agent 발화 시작: It's completely understandable to feel that way, Jamie. Berl
-    25.99s  agent 발화 끝
-    26.14s  user  발화 시작: Uh, welll… I keep trying to join groups, but I just end up f
-    31.08s  agent 발화 시작: That's a really common experience. It takes time to find gro
-    31.19s  user  발화 끝
-    37.19s  user  발화 시작: Uh-huh.
-    37.88s  user  발화 끝
-    39.75s  agent 발화 끝
-    40.98s  user  발화 시작: Yeah, mostly. Book clubs, hiking… things I *should* like.
-    45.61s  user  발화 끝
-    46.03s  agent 발화 시작: “Should” is a big word, Jamie. Sometimes we put pressure on 
-    55.72s  agent 발화 끝
-    56.59s  user  발화 시작: I don’t know anymore! It's been a while since I felt that, h
-    60.56s  user  발화 끝
-    60.72s  agent 발화 시작: [sigh] That’s okay. It sounds like you've been focusing on w
-    68.09s  user  발화 시작: Maybe. It's just… hard. Everyone else seems to have friends 
-    68.14s  agent 발화 끝
-    72.69s  agent 발화 시작: Comparison can be such a thief of joy, can’t it? It’s easy t
-    72.81s  user  발화 끝
-    79.65s  agent 발화 끝
-    79.77s  user  발화 시작: I remember when I had a really close friend, Lena. We met in
-    84.01s  agent 발화 시작: It sounds like Lena was a very important person to you, and 
-    84.12s  user  발화 끝
-    86.63s  user  발화 시작: Yeah, totally.
-    87.91s  user  발화 끝
-    89.70s  agent 발화 끝
-    90.64s  user  발화 시작: Yeah, we drifted apart after graduation. Different cities, d
-    95.46s  user  발화 끝
-    95.69s  agent 발화 시작: That’s a natural part of life, though it’s always sad when c
-    99.27s  user  발화 시작: Yeah.
-    99.90s  user  발화 끝
-   102.97s  agent 발화 끝
-   103.13s  user  발화 시작: Not really. I feel like it would be awkward. It's been ages.
-   106.63s  agent 발화 시작: It’s brave to acknowledge that vulnerability. Sometimes a sm
-   106.73s  user  발화 끝
-   110.65s  user  발화 시작: Uh-huh.
-   111.15s  user  발화 끝
-   113.40s  agent 발화 끝
-   113.41s  agent 발화 시작: Exactly. What kind of friendships are you hoping to build, J
-   119.71s  agent 발화 끝
-   120.62s  user  발화 시작: Someone I can just… be myself with, I guess. Someone who get
-   126.21s  agent 발화 시작: That's a wonderful aspiration. Authenticity is the cornersto
-   126.36s  user  발화 끝
-   133.81s  agent 발화 끝
-   134.78s  user  발화 시작: Do you… are you even real? I mean, you’re a wellness coach, 
-   139.50s  agent 발화 시작: [laugh] That’s a fair question! I’m here to offer support an
-   139.65s  user  발화 끝
-   142.40s  user  발화 시작: Yeah, totally.
-   143.69s  user  발화 끝
-   147.71s  agent 발화 끝
-   147.77s  user  발화 시작: Okay. That makes sense. I was just wondering.
-   150.81s  agent 발화 시작: It's perfectly natural to be curious. Remember, Jamie, build
-   150.81s  user  발화 끝
-   159.71s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Olivia, welcome to Toronto!
+     2.12s  agent 발화 끝
+     2.60s  user  발화 시작: Orus? That’s… a unique name. What exactly does a “settling-i
+     8.50s  agent 발화 시작: It’s lovely to meet you too! I help people navigate all the 
+     8.57s  user  발화 끝
+    19.91s  agent 발화 끝
+    20.39s  user  발화 시작: Well, I’m already feeling a little overwhelmed, honestly. So
+    25.20s  user  발화 끝
+    25.52s  agent 발화 시작: That’s perfectly normal, Olivia. Toronto is a sprawling city
+    34.32s  agent 발화 끝
+    34.34s  user  발화 시작: I don’t know…safe, walkable, maybe some good coffee shops? I
+    40.08s  agent 발화 시작: Those are wonderful priorities! A sense of safety and peace 
+    40.32s  user  발화 끝
+    47.67s  agent 발화 끝
+    48.06s  user  발화 시작: I walked around a bit of Yorkville. It was…nice. Very fancy.
+    52.55s  user  발화 끝
+    52.61s  agent 발화 시작: Yorkville is certainly beautiful, and upscale. It’s a popula
+    56.81s  user  발화 시작: Yeah.
+    57.31s  user  발화 끝
+    61.32s  agent 발화 끝
+    61.45s  user  발화 시작: Affordability is a big one, yeah. Everything seems so expens
+    65.61s  user  발화 끝
+    65.95s  agent 발화 시작: It can be, absolutely. Many people find areas a little furth
+    71.02s  user  발화 시작: Yeah.
+    71.65s  user  발화 끝
+    74.39s  agent 발화 끝
+    74.59s  user  발화 시작: Leslieville… I haven’t. What’s it like?
+    78.01s  user  발화 끝
+    78.06s  agent 발화 시작: It’s a really lovely area, known for its Victorian homes and
+    85.85s  agent 발화 끝
+    85.98s  user  발화 시작: That sounds…nice.
+    87.55s  agent 발화 시작: It’s gaining popularity, but still retains a lot of its orig
+    87.69s  user  발화 끝
+    95.56s  agent 발화 끝
+    95.96s  user  발화 시작: Parks are good. I need green space. I really miss having a g
+   100.06s  agent 발화 시작: That’s something to prioritize, definitely. Access to nature
+   100.13s  user  발화 끝
+   109.14s  user  발화 시작: …Do people actually *use* those, though? I mean, are they sa
+   109.84s  agent 발화 끝
+   113.12s  user  발화 끝
+   113.37s  agent 발화 시작: The police haven't reported any major issues with safety at 
+   118.12s  user  발화 시작: Yeah.
+   118.76s  user  발화 끝
+   122.78s  agent 발화 끝
+   122.79s  agent 발화 시작: It’s wonderful that you're thinking ahead about those practi
+   129.37s  agent 발화 끝
+   129.90s  user  발화 시작: I’m also worried about making friends. I don’t know anyone h
+   133.87s  agent 발화 시작: That’s a common feeling when you relocate, Olivia. It takes 
+   133.93s  user  발화 끝
+   141.19s  agent 발화 끝
+   141.34s  user  발화 시작: Easier said than done, I guess. I’m pretty introverted.
+   144.95s  user  발화 끝
+   145.16s  agent 발화 시작: That's perfectly alright! There are many ways to connect wit
+   153.54s  agent 발화 끝
+   153.76s  user  발화 시작: A book club? Hmm… maybe. I used to be in one.
+   157.50s  agent 발화 시작: They’re a great way to meet like-minded individuals in a rel
+   157.60s  user  발화 끝
+   162.07s  user  발화 시작: Yeah.
+   162.70s  user  발화 끝
+   163.43s  user  발화 시작: A walking group… that’s not a bad idea. I do like walking.
+   163.47s  agent 발화 끝
+   167.51s  agent 발화 시작: It’s a wonderful way to explore the city *and* meet people! 
+   167.64s  user  발화 끝
+   173.24s  user  발화 시작: What’s the weather like this weekend? I might want to check 
+   173.25s  agent 발화 끝
+   176.98s  user  발화 끝
+   177.04s  agent 발화 시작: The weather this weekend looks lovely! It will be around twe
+   185.11s  agent 발화 끝
+   185.18s  user  발화 시작: That sounds perfect. Thanks, Orus.
+   187.57s  user  발화 끝
+   187.61s  agent 발화 시작: You’re very welcome, Olivia. It’s my pleasure to help. Remem
+   193.03s  user  발화 시작: Right.
+   193.53s  user  발화 끝
+   195.14s  user  발화 시작: I will try. It's just…a lot.
+   195.21s  agent 발화 끝
+   197.72s  user  발화 끝
+   198.07s  agent 발화 시작: It absolutely is. But you've already taken the first steps b
+   206.51s  agent 발화 끝

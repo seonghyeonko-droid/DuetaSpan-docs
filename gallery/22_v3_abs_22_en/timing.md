@@ -4,96 +4,88 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Amelia",
+#     "name": "Freya",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "French",
+#     "nationality": "German",
 #     "gender": "female",
-#     "age_range": "50s",
-#     "language": "French"
+#     "age_range": "early 20s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-01",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2026-03-02",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
-#     },
-#     {
-#       "date": "2026-01-28",
+#       "date": "2026-04-09",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-07-24",
+#       "date": "2026-01-01",
+#       "category": "home",
+#       "text": "User's home address is 908 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-12-15",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-06-02",
 #       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-07-19",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-05",
-#       "title": "Researching a used car",
+#       "date": "2026-06-01",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-23",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-20",
+#       "date": "2026-02-20",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-04",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What instrument does the mandolin  | S2 Hmm, welll… maybe you can tell… | S3 …me the current time in Seoul? | S4 That's good to know. I'm feeling a
+# EXAMINER(FDB-v2) 단계: S1 In what year was The Blue School e | S2 Oh, that's a shame. Um, well… do y | S3 It’s my aunt. She’s… well… | S4 …she’s just very critical of every
 
-     0.00s  user  발화 시작: What instrument does the mandolin not have the same tuning o
-     3.06s  <ret> 발화 (turn1 첫 프레임)
-     3.22s  agent 발화 시작: <ret> Unfortunately, I don't have information on what instru
-     3.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (no information found)
-     3.38s  user  발화 끝
-     9.11s  agent 발화 시작: But don’t worry, sometimes not knowing is just a starting po
-     9.28s  agent 발화 끝
-    13.70s  user  발화 시작: Hmm, welll… maybe you can tell…
-    13.82s  agent 발화 끝
-    16.66s  user  발화 끝
-    18.01s  user  발화 시작: …me the current time in Seoul?
-    20.83s  user  발화 끝
-    21.06s  <ret> 발화 (turn5 첫 프레임)
-    21.14s  agent 발화 시작: <ret> It’s currently 2:37 PM in Seoul. I hope that helps you
-    21.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
-    28.84s  user  발화 시작: That's good to know. I'm feeling a bit stressed about a proj
-    28.97s  agent 발화 끝
-    32.63s  user  발화 끝
-    33.13s  agent 발화 시작: Oh, deadlines can be tough! It's completely normal to feel s
-    35.96s  user  발화 시작: Yeah.
-    36.41s  user  발화 끝
-    41.08s  agent 발화 시작: Exactly. And celebrate each small win along the way—you dese
-    41.23s  agent 발화 끝
-    50.87s  agent 발화 끝
+     0.00s  user  발화 시작: In what year was The Blue School established?
+     2.62s  <ret> 발화 (turn1 첫 프레임)
+     2.78s  agent 발화 시작: <ret> It seems the founding year of The Blue School isn’t wi
+     2.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (no information found)
+     2.96s  user  발화 끝
+     7.78s  agent 발화 끝
+     7.88s  user  발화 시작: Oh, that's a shame. Um, well… do you know anything about han
+    13.87s  agent 발화 시작: That’s a very common challenge, and it takes courage to even
+    13.99s  user  발화 끝
+    20.40s  agent 발화 끝
+    20.76s  user  발화 시작: It’s my aunt. She’s… well…
+    22.51s  user  발화 끝
+    23.77s  user  발화 시작: …she’s just very critical of everything I do.
+    26.40s  user  발화 끝
+    26.50s  agent 발화 시작: [curious] It sounds like her criticism is really getting to 
+    41.12s  agent 발화 끝

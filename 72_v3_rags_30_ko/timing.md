@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "보완",
+#     "name": "성서",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,40 +12,35 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-06-21",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "category": "home",
+#       "text": "User's home address is 서울 용산구 이태원로 200."
+#     },
+#     {
+#       "date": "2025-11-19",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-12-30",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2025-07-18",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-07-01",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-27",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
+#       "date": "2025-08-05",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-30",
+#       "date": "2026-06-14",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -53,20 +48,30 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-12",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-02-20",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-12",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 의식의 흐름이라는 개념을 처음 생각해낸 사람은 누구야?
-     4.17s  <ret> 발화 (turn1 첫 프레임)
-     4.33s  agent 발화 시작: <ret> 의식의 흐름이라는 개념은, 계속해서 흘러가는 생각과 감정의 연속으로 윌리엄 제임스가 처음 제안했어
-     4.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: William James proposed the concept of the stream of consciousness as a
-     4.40s  user  발화 끝
-    14.02s  agent 발화 끝
+     0.00s  user  발화 시작: 이천년대 애플 회계 관행 합법성 조사 누가 이끌었어?
+     4.30s  <ret> 발화 (turn1 첫 프레임)
+     4.45s  agent 발화 시작: <ret> 이천년대 애플 회계 관행 합법성 조사는 유럽연합 경쟁 담당 집행위원이 이끌었습니다.
+     4.46s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.64s]: The EU's competition commissioner led the investigation into the legal
+     4.58s  user  발화 끝
+     6.99s  user  발화 시작: 와.
+     8.13s  user  발화 끝
+    10.09s  agent 발화 끝

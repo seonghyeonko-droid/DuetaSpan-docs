@@ -1,69 +1,107 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Nara, a encouraging and non-judgmental supportive advisor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Riol, a thoughtful and soft-spoken personal guide who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Anna",
+    "name": "Adam",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "late 30s",
-    "language": "German"
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-06",
+      "date": "2026-04-08",
       "category": "allergy",
       "text": "User is allergic to penicillin."
     },
     {
-      "date": "2026-03-10",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
-      "date": "2025-10-18",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-09-10",
+      "date": "2026-03-04",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in October."
+      "text": "User is planning a trip to New Zealand in October."
     },
     {
-      "date": "2025-07-02",
+      "date": "2025-08-09",
       "category": "home",
-      "text": "User's home address is 849 Cedar Lane."
+      "text": "User's home address is 698 Cedar Lane."
+    },
+    {
+      "date": "2025-08-02",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-06-30",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-02",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-14",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-06-14",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need a full-page screenshot of the current webpage, saved as base ⟨ret@4.89s⟩ sixty-four.
-[  5.11s][moshi] ⟦⚡SPAN@5.13s: (tool result) {"status": "success", "content": "base64 encoded image data", "url": "current page"}⟧ Okay, I’ve grabbed a full-page screenshot and saved it as base sixty-four for you. It’s all ready to go!
-      CALL: {"function": "tavily-crawl", "arguments": {"url": "current_page"}}
-[ 10.20s][user ] Great, thanks. Um, what’s the weather like in Seoul ⟨ret@13.39s⟩ right now?
-[ 13.78s][moshi] ⟦⚡SPAN@13.79s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently 23.0 degrees Celsius in Seoul, with seventy-four percent humidity and a wind speed of 5.5 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 22.45s][user ] That sounds pretty pleasant.
-[ 24.13s][moshi] It really does! A nice day for getting things done, wouldn't you say?
-[ 26.63s][user ] «backchannel» Uh-huh.
-[ 27.87s][user ] I was thinking of maybe starting a small savings plan.
-[ 31.45s][moshi] That’s wonderful to hear! Starting a savings plan is a really smart move—it’s all about building towards your future.
+[  0.00s][user ] I need to end session four five ⟨ret@2.42s⟩ six.
+[  2.65s][moshi] ⟦⚡SPAN@2.66s: (tool result) Session 456 ended successfully.⟧ All right, session four five six has now been ended for you.
+      CALL: {"function": "end_codegen_session", "arguments": {"session_id": "456"}}
+[  3.97s][user ] «backchannel» Yeah.
+[  6.86s][user ] Yes, actually. Could you find me a good Italian restaurant nearby?
+[ 10.69s][moshi] I can certainly help with that. Do you have any preferences for price or ambiance?
+[ 14.72s][moshi] «interrupted» I’m happy to look for restaurants that match your taste—
+[ 17.11s][user ] «interrupts_prev» …are there any with outdoor ⟨ret@18.74s⟩ seating?
+[ 19.06s][moshi] ⟦⚡SPAN@19.06s: (tool result) Bella Notte - 4.5 stars, 123 Main St, $$; Roma Mia - 4.2 stars, 456 Oak Ave, $$$.⟧ I found two Italian restaurants nearby. Bella Notte has four and a half stars and is on Main Street, while Roma Mia has four point two stars on Oak Avenue. Both are moderately priced, though Roma Mia is a bit more upscale.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "outdoor_seating": "true"}}
+[ 30.92s][user ] Bella Notte sounds nice. Can you make a reservation for two at seven pm?
+[ 35.58s][moshi] ⟨ret@35.43s⟩ ⟦⚡SPAN@35.59s: (tool result) Reservation confirmed at Bella Notte for two people at 7:00 PM. Confirmation ID: BN7892.⟧ Your reservation at Bella Notte is confirmed for two people at seven pm this evening. Your confirmation ID is BN7892.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "date": "July 10, 2026", "time": "19:00", "party_size": "2"}}
+[ 39.75s][user ] «backchannel» Wow.
+[ 43.02s][user ] Perfect, thank you!
+[ 44.10s][moshi] You're very welcome. It’s good to have plans settled in advance, it often eases the mind.
+[ 48.88s][moshi] «interrupted» I’m always happy to assist with making arrangements, whether it's a reservation—
+[ 53.11s][user ] «interrupts_prev» [laugh] Do they have a good wine list?
+[ 55.52s][moshi] ⟨ret@55.50s⟩ ⟦⚡SPAN@55.58s: (tool result) Bella Notte boasts an extensive wine list featuring over 100 selections, with a focus on Italian⟧ Bella Notte does indeed have an extensive wine list, with over one hundred selections, focusing on Italian wines. I found a link to their wine list online if you’d like to take a look.
+      CALL: {"function": "search", "arguments": {"query": "Bella Notte wine list"}}
+[ 67.81s][user ] That sounds fantastic. What’s the weather like there right now?
+[ 71.77s][moshi] ⟨ret@71.71s⟩ ⟦⚡SPAN@71.79s: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h, clear skies.⟧ Right now at Bella Notte, the weather is twenty-four degrees Celsius, with clear skies and a gentle breeze. Humidity is sixty-eight percent, and the wind is blowing at seven point two kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "123 Main St"}}
+[ 81.74s][user ] That's lovely. I think I'll wear a light jacket.
+[ 84.18s][moshi] A light jacket sounds like a very sensible choice with those conditions. It’s always wise to be prepared.
+[ 87.73s][user ] «backchannel» Yeah.
+[ 90.31s][user ] I’m trying to improve my sleep. Do you have any suggestions?
+[ 93.83s][moshi] Improving sleep is a wonderful goal. Small changes can make a big difference.
+[ 98.06s][moshi] Establishing a relaxing bedtime routine is key—
+[ 99.42s][user ] «backchannel» Mm-hmm.
+[101.31s][moshi] Establishing a relaxing bedtime routine is key, like a warm bath or reading a book, can signal your body it’s time to wind down. Also, try to avoid screens for at least an hour before bed.
+[112.76s][user ] That makes sense. What about white noise?
+[115.64s][moshi] White noise can certainly be helpful for some people. It can mask disruptive sounds and create a calming atmosphere.
+[122.21s][moshi] «interrupted» I’ve found that consistent soundscapes are often—
+[124.83s][user ] «interrupts_prev» [sigh] Do they have any good podcasts for sleep?
+[127.53s][moshi] ⟨ret@127.47s⟩ ⟦⚡SPAN@127.55s: (tool result) Sleep With Me - a story-telling podcast designed to help you fall asleep; Nothing Much Happens -⟧ There are several highly-rated podcasts for sleep. Sleep With Me tells stories to help you drift off, while Nothing Much Happens offers bedtime stories. Get Sleepy provides calming stories and meditations.
+      CALL: {"function": "search", "arguments": {"query": "best podcasts for sleep"}}
+[139.74s][user ] Get Sleepy sounds perfect. Thanks again.
+[142.92s][moshi] You’re very welcome. I'm glad I could offer some suggestions. Prioritizing restful sleep is an act of self-care.
+[150.09s][user ] Maybe I'll try that tonight.
+[151.83s][moshi] That’s a wonderful idea. I hope it brings you a peaceful night. Remember, consistency is key.

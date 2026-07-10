@@ -1,56 +1,51 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Thel, a grounded and empathetic counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Elaeon, a thoughtful and soft-spoken supportive advisor who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Liam",
+    "name": "Nora",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-12-16",
-      "category": "home",
-      "text": "User's home address is 75 Birch Road."
+      "date": "2026-03-31",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-11-12",
-      "category": "work",
-      "text": "User works as a nurse."
+      "date": "2026-01-24",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-11-01",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
-    },
-    {
-      "date": "2025-10-20",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-07-08",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-06-29",
+      "date": "2026-01-01",
       "category": "cuisine",
       "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-11-13",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2025-05-30",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-12",
+      "date": "2026-06-28",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -58,35 +53,59 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-27",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-20",
+      "date": "2026-01-16",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2025-12-26",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How many tokens did…
-[  3.35s][user ] …session F three consume?
-[  5.64s][moshi] ⟨ret@5.56s⟩ ⟦⚡SPAN@5.64s: (tool result) Session F3 consumed 14,872 tokens.⟧ That session used fourteen thousand eight hundred seventy-two tokens. It sounds like you're keeping a close eye on usage—that's smart.
-      CALL: {"function": "get_codegen_session", "arguments": {"session_id": "F3"}}
-[ 14.37s][user ] Um, can you show me the search results for "best Italian restaurants ⟨ret@18.02s⟩ near me"?
-[ 18.42s][moshi] ⟦⚡SPAN@18.42s: (tool result) Bella Notte - 4.5 stars, 0.3 miles; Roma Ristorante - 4.2 stars, 0.5 miles; Luigi's - 3.9 stars,⟧ Bella Notte has four and a half stars, just point three miles away. Roma Ristorante is also close—four point two stars, half a mile.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "near me", "cuisine": "Italian"}}
-[ 21.17s][user ] «backchannel» Yeah.
-[ 28.21s][user ] Actually, book me a table at Bella Notte for two people, this Saturday at ⟨ret@33.61s⟩ 7 PM.
-[ 34.01s][moshi] ⟦⚡SPAN@34.01s: (tool result) Reservation confirmed at Bella Notte for 2 people on Saturday, July 17, 2026 at 7:00 PM. Confirm⟧ Wonderful! Your table for two at Bella Notte is confirmed for Saturday at seven, confirmation BN71726. I hope you enjoy your evening.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "party_size": 2, "date": "this Saturday", "time": "7 PM"}}
-[ 39.44s][user ] «backchannel» Yeah.
-[ 44.12s][user ] Great. Thanks, Thel.
+[  0.00s][user ] Can you please book me an appointment with Ms. Anya Sharma for February twenty-ninth at nine in the morning?
+[  6.38s][moshi] ⟨ret@6.30s⟩ ⟦⚡SPAN@6.38s: (tool result) Appointment confirmed with Anya Sharma on February 29 at 9:00 AM. Confirmation ID: 87b32-91a5d.⟧ Your appointment with Ms. Sharma is confirmed for February twenty-ninth at nine AM. Your confirmation ID is 87b32-91a5d.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Anya Sharma", "date": "February 29", "time": "9:00 AM"}}
+[ 15.91s][user ] Great! And could you find me another provider specializing in dermatology near ⟨ret@21.54s⟩ downtown?
+[ 21.94s][moshi] «interrupted» ⟦⚡SPAN@21.94s: (tool result) Dr. Eleanor Vance practices dermatology at 14 Oak Street, downtown. Her number is 555-123-4567.⟧ There’s Dr. Eleanor Vance, who practices dermatology at fourteen Oak Street—
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"specialty": "dermatology", "location": "downtown"}}
+[ 26.03s][user ] «interrupts_prev» …Is she accepting new patients?
+[ 28.45s][moshi] ⟨ret@28.39s⟩ ⟦⚡SPAN@28.47s: (tool result) Dr. Eleanor Vance is currently accepting new patients. Call 555-123-4567 to schedule.⟧ Dr. Vance is currently accepting new patients. You can reach her office at 555-123-4567 to schedule an appointment.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Eleanor Vance", "query": "accepting new patients"}}
+[ 38.18s][user ] Wonderful. What’s the weather like there right ⟨ret@41.01s⟩ now?
+[ 41.41s][moshi] «interrupted» ⟦⚡SPAN@41.41s: (tool result) The current weather at 14 Oak Street is 18.5°C, humidity 62%, wind 7.2 km/h.⟧ Right now at fourteen Oak Street, it’s eighteen point five degrees Celsius—
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "14 Oak Street"}}
+[ 45.40s][user ] «interrupts_prev» Sounds pleasant. Can you search for Italian restaurants ⟨ret@48.78s⟩ nearby?
+[ 49.02s][moshi] ⟦⚡SPAN@49.02s: (tool result) Bella Notte is an Italian restaurant at 22 Pine Avenue, 0.8 km away, rated 4.5 stars.⟧ Bella Notte is an Italian restaurant located at twenty-two Pine Avenue, just point eight kilometers away, and it has a four point five star rating.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "14 Oak Street"}}
+[ 58.36s][user ] That sounds good. Do they take reservations?
+[ 61.06s][moshi] ⟨ret@60.98s⟩ ⟦⚡SPAN@61.06s: (tool result) Bella Notte accepts reservations online or by calling 555-987-6543.⟧ Yes, Bella Notte accepts reservations. You can make one online or by calling 555-987-6543.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "query": "accepts reservations"}}
+[ 69.00s][user ] Perfect. What time is it in Seoul ⟨ret@71.63s⟩ right now?
+[ 72.02s][moshi] ⟦⚡SPAN@72.03s: (tool result) It is Friday, July 10, 2026 at 2:48 PM in Asia/Seoul right now.⟧ It is currently Friday, July tenth, two thousand twenty-six, at two forty-eight PM in Asia/Seoul.
+      CALL: {"function": "get_time", "arguments": {}}
+[ 76.22s][user ] «backchannel» Mm-hmm.
+[ 79.42s][user ] Okay. Can you remind me of my appointment with Ms. ⟨ret@82.79s⟩ Sharma?
+[ 83.10s][moshi] «interrupted» ⟦⚡SPAN@83.11s: [2026-07-10] Appointment confirmed with Anya Sharma on February 29 at 9:00 AM. Confirmation ID: 87b32-91a5d.⟧ Your appointment with Ms. Sharma is confirmed for February twenty-ninth at nine AM—
+[ 87.25s][user ] «interrupts_prev» And what's the cheapest roundtrip flight from Seoul to Tokyo next week?
+[ 91.44s][moshi] ⟨ret@91.28s⟩ ⟦⚡SPAN@91.44s: (tool result) The cheapest roundtrip flight from Seoul to Tokyo next week is $350 with Korean Air.⟧ The cheapest roundtrip flight from Seoul to Tokyo next week is three hundred and fifty dollars with Korean Air.
+      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"departure_city": "Seoul", "arrival_city": "Tokyo", "date": "next week"}}
+[ 97.68s][user ] That’s quite reasonable. Can you play some relaxing music?
+[101.15s][moshi] ⟨ret@100.91s⟩ ⟦⚡SPAN@101.15s: (tool result) Now playing "Weightless" by Marconi Union.⟧ Now playing "Weightless" by Marconi Union. I hope you find it calming.
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"genre": "relaxing"}}
+[106.32s][user ] That’s lovely, thank you. What’s the exchange rate between Korean Won and US ⟨ret@111.98s⟩ dollars?
+[112.30s][moshi] ⟦⚡SPAN@112.30s: (tool result) One US dollar is currently worth 1,385.50 Korean Won.⟧ Currently, one US dollar is worth one thousand three hundred and eighty-five point fifty Korean Won.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "KRWUSD"}}
+[118.49s][user ] Good to know. Remind me to buy flowers for my mother next ⟨ret@122.59s⟩ Tuesday.
+[122.82s][moshi] ⟦⚡SPAN@122.83s: [2026-07-10] Remind me to buy flowers for my mother next Tuesday.⟧ I’ve noted that you’d like to remember to buy flowers for your mother next Tuesday.
+[126.38s][user ] Perfect. That's all for now.
+[128.29s][moshi] It’s been a pleasure assisting you. I hope you have a lovely day.

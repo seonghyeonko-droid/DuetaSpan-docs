@@ -1,88 +1,89 @@
 v3_rag_28_ko src=nq style=v2
-SYSTEM: <system> 저는 Jer이고, 새로운 도시에 정착하는 사람들을 돕는 호기심 많고 공감하며 지지적인 조언자입니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계에 어려움을 겪는 사람들을 돕는 호기심 많고 공감적인 웰니스 코치인 Lon입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "준진",
+    "name": "윤현",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "female",
-    "age_range": "40s",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-28",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-03-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2026-06-12",
+      "date": "2025-12-28",
       "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2026-05-20",
-      "category": "home",
-      "text": "User's home address is 대구 중구 동인동 88-1."
+      "date": "2025-11-06",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2026-03-27",
-      "category": "pet",
-      "text": "User has a tabby cat named Luna."
+      "date": "2025-10-16",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
     },
     {
-      "date": "2025-11-01",
+      "date": "2025-09-11",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-07-14",
       "category": "work",
       "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-24",
+      "date": "2025-08-01",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-09-16",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-08-14",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요. 요즘 여행 계획 세우고 있는데, 혹시 이천이십이년에 월드컵이 어디서 열렸는지 ⟨ret@6.12s⟩ 아세요?
-[  6.44s][moshi] ⟦⚡SPAN@6.44s: Qatar hosted the 2022 FIFA World Cup from 20 November to 18 December 2022.⟧ 이천이십이년 월드컵은 이천이십이년 십일월 이십일부터 십이월 십팔일까지 카타르에서 열렸습니다.
-[ 13.04s][user ] 카타르요? 음, 사실 카타르는 잘 몰라서… 거긴 어떤 곳이에요?
-[ 18.18s][moshi] 카타르는 아라비아반도에 위치한 작은 나라인데, 현대적인 건축물과 전통적인 문화가 공존하는 곳이에요.
-[ 24.92s][user ] 현대적인 건축물이라고 하니까 궁금한데요…
-[ 29.79s][user ] …혹시 카타르에 유명한 건축물이 ⟨ret@31.89s⟩ 있을까요?
-[ 32.20s][moshi] ⟦⚡SPAN@32.21s: The National Museum of Qatar, designed by Jean Nouvel, opened in March 2019 and is inspired by the desert rose⟧ 장 누벨이 설계한 카타르 국립 박물관은 이천십구년 삼월에 개관했는데, 사막 장미에서 영감을 받았다고 합니다.
-[ 37.58s][user ] «backchannel» 네.
-[ 39.21s][user ] 사막 장미에서 영감을 받았다니, 정말 독특하네요—
-[ 42.55s][user ] …근데 월드컵 경기장들은 다 어떻게 ⟨ret@45.57s⟩ 생겼어요?
-[ 45.81s][moshi] ⟦⚡SPAN@45.81s: Stadium 974, used during the 2022 FIFA World Cup, was built using shipping containers and steel.⟧ 이천이십이년 월드컵에 사용된 구백칠십사 스타디움은 배송 컨테이너와 강철로 지어졌다고 합니다.
-[ 49.44s][user ] «backchannel» 예.
-[ 52.30s][user ] 배송 컨테이너로 지어졌다고요? 와, 정말 신기하네요! 그런 경기장이 있다니.
-[ 57.53s][moshi] 네, 정말 독특하죠. 지속 가능성을 고려한 디자인이라고 해요. 카타르 여행하시면 꼭 한번 방문해 보세요.
+[  0.00s][user ] 안녕하세요. 오늘 날씨가 ⟨ret@1.90s⟩ 어때요?
+[  2.21s][moshi] ⟦⚡SPAN@2.22s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 안녕하세요. 지금 기온은 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다. 오늘 하루도 활기차게 보내세요!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 11.65s][user ] 음… 영화 한 편 보고 싶은데, 혹시 추천해 줄 만한 거 있어요?
+[ 16.52s][moshi] 어떤 장르를 좋아하세요? 좋아하는 배우가 있으신가요?
+[ 19.40s][user ] 음… 그냥 재미있는 걸로요. 옛날 영화도 괜찮아요.
+[ 22.91s][moshi] ⟨ret@22.84s⟩ ⟦⚡SPAN@22.92s: Mike Myers played the role of the Cat in the Hat in the 2003 film.⟧ 이천삼년에 개봉한 영화에서 마이크 마이어스가 모자쓴 고양이 역할을 맡았답니다. 아주 유쾌한 영화예요.
+[ 27.32s][user ] «backchannel» 오.
+[ 29.40s][user ] 마이크 마이어스요? 그 배우 이름이 좀 낯설긴 한데…
+[ 32.80s][moshi] 맞아요. 코미디 배우로 유명하죠. '오스틴 파워' 시리즈에 출연하기도 했어요.
+[ 35.40s][user ] «backchannel» 그렇죠.
+[ 37.97s][user ] 오스틴 파워! 아, 그건 알아요. 근데 '모자쓴 고양이'는 어땠어요?
+[ 42.73s][moshi] 호불호가 갈리는 영화지만, 독특한 분위기가 매력적이에요. 아이들과 함께 보기에도 괜찮을 거예요.
+[ 45.83s][user ] «backchannel» 네.
+[ 49.11s][user ] 음… 그럼 혹시 다른 배우가 그 역할에 캐스팅될 뻔한 적은 ⟨ret@53.20s⟩ 없었어요?
+[ 53.28s][moshi] ⟦⚡SPAN@53.28s: Jim Carrey was initially considered for the role of the Cat in the Hat.⟧ 흥미로운 질문이네요.
+[ 54.47s][moshi] '모자쓴 고양이' 역할에는 처음에 짐 캐리가 고려되었지만, 최종적으로 마이크 마이어스가 캐스팅되었답니다.
+[ 60.92s][moshi] 짐 캐리의 코믹 연기도 꽤 기대되었을 것 같아요.
+[ 64.12s][user ] 짐 캐리였으면 또 다른 느낌이었겠네요. 아, 그런데 짐 캐리는 요즘 뭐 하고 ⟨ret@69.31s⟩ 있어요?
+[ 69.70s][moshi] ⟦⚡SPAN@69.71s: (tool result) Jim Carrey recently starred in Sonic the Hedgehog 2 (2022) and has been focusing on painting and⟧ 짐 캐리는 이천이십이년에 '소닉 더 헤지혹 이'에 출연했고, 그림과 정치 만화에 집중하고 있다고 해요.
+      CALL: {"function": "search", "arguments": {"query": "짐 캐리 최근 활동"}}
+[ 75.90s][moshi] 예술 활동도 꾸준히 하고 계신 것 같아요.
+[ 78.21s][user ] 소닉이라… 짐 캐리가 그런 역할도 한다니 신기하네요.
+[ 81.80s][moshi] 맞아요. 변신이 무궁무진한 배우인 것 같아요. 그런 다재다능함이 매력적이죠.
+[ 86.39s][user ] 아, 그러네요. 이야기를 나누니 기분이 좀 좋아지는 것 같아요.
+[ 90.12s][moshi] 저도 기쁩니다. 긍정적인 대화는 정말 좋은 에너지인 것 같아요.

@@ -1,46 +1,56 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Zelira, a practical and reassuring counselor who helps people with settling into a new city. <system>
+SYSTEM: <system> You are Zon, a grounded and empathetic personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Julian",
+    "name": "Samuel",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "50s",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-24",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2026-02-23",
+      "category": "work",
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2026-01-05",
-      "category": "home",
-      "text": "User's home address is 902 Birch Road."
+      "date": "2025-11-15",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-10-15",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-10-29",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2025-09-26",
+      "date": "2025-09-17",
       "category": "pet",
       "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-09-15",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-06-23",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-12",
+      "date": "2026-03-29",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -48,49 +58,60 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-12-19",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-07-04",
+      "date": "2026-03-28",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-02-20",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Zelira, I’m new to the city and feeling a bit lost.
-[  4.32s][moshi] Welcome! It’s perfectly normal to feel that way when settling in.
-[  7.92s][user ] I’m trying to find a good coffee shop near the museum.
-[ 11.64s][moshi] «interrupted» ⟨ret@11.40s⟩ ⟦⚡SPAN@11.64s: (tool result) {"restaurants": [{"name": "Bean There", "address": "123 Main St", "rating": 4.5}]}⟧ I found a place called Bean There, at one two three Main Street—
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "the museum", "cuisine": "coffee shop"}}
-[ 15.61s][user ] «interrupts_prev» …is it a good place to meet people?
-[ 18.01s][moshi] That’s a lovely thought. It's a popular spot, often quite lively.
-[ 21.34s][user ] «backchannel» Yeah.
-[ 22.80s][user ] Okay, that sounds promising. What about the history museum ⟨ret@27.77s⟩ itself?
-[ 28.09s][moshi] ⟦⚡SPAN@28.09s: The Carnegie Museum of Art opened in 1896, and features a collection of architecture, design, painting, and sc⟧ The Carnegie Museum of Art opened in eighteen ninety-six, and has collections—
-[ 31.50s][user ] «backchannel» Yeah.
-[ 33.17s][moshi] It’s a beautiful building with a rich history, certainly.
-[ 36.05s][user ] Do they have any special exhibits going on ⟨ret@39.23s⟩ right now?
-[ 39.63s][moshi] ⟦⚡SPAN@39.63s: (tool result) {"events": [{"name": "Modern Masters", "date": "2026-07-15"}]}⟧ There’s an exhibit called Modern Masters, starting July fifteenth.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Carnegie Museum of Art"}}
-[ 41.86s][user ] «backchannel» Yeah.
-[ 44.27s][user ] That sounds interesting. Is it ⟨ret@46.81s⟩ free?
-[ 47.13s][moshi] «interrupted» ⟦⚡SPAN@47.13s: General admission to the Carnegie Museum of Art is twenty dollars for adults, fifteen for seniors and students⟧ General admission is twenty dollars for adults, fifteen for seniors—
-[ 50.83s][user ] «interrupts_prev» Okay, a little pricey. What’s the weather like ⟨ret@54.39s⟩ today?
-[ 54.79s][moshi] ⟦⚡SPAN@54.79s: (tool result) "23.0°C, humidity 74%, wind 5.5 km/h"⟧ It's twenty-three point zero degrees Celsius, with seventy-four percent humidity.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "the city"}}
-[ 58.55s][user ] «backchannel» Yeah.
-[ 60.52s][user ] That’s pleasant. Thanks, Zelira…
-[ 64.76s][user ] …you’ve been a great help.
-[ 66.25s][moshi] You’re very welcome. Remember, taking things one step at a time is key.
-[ 71.26s][user ] One last thing, when did the Steelers last win the Super ⟨ret@75.71s⟩ Bowl?
-[ 75.79s][moshi] ⟦⚡SPAN@75.79s: The Pittsburgh Steelers won Super Bowl XLIII on February 1, 2009, defeating the Arizona Cardinals 27–23.⟧ The Steelers last won the Super Bowl on February first, two thousand nine—
+[  0.00s][user ] I'm trying to understand the Chinese Civil War better.
+[  3.29s][moshi] I can help with that. It’s a complex period in history.
+[  6.67s][user ] Who was the main leader on the nationalist side?
+[  9.80s][moshi] ⟨ret@9.56s⟩ ⟦⚡SPAN@9.80s: Chiang Kai-shek led the Nationalist government of the Republic of China from 1928 to 1949 in a struggle agains⟧ The main leader of the nationalist side was Chiang Kai-shek, who led the government from 1928 to 1949.
+[ 16.24s][user ] That’s right, Chiang Kai-shek. What about Mao Zedong?
+[ 20.35s][moshi] Mao Zedong was the leader of the Communist Party of China, naturally.
+[ 22.91s][user ] «backchannel» Yeah.
+[ 24.86s][user ] And when did the communists actually win the ⟨ret@27.55s⟩ war?
+[ 27.87s][moshi] ⟦⚡SPAN@27.87s: The Chinese Communist Party won the Chinese Civil War in 1949, establishing the People’s Republic of China.⟧ The Communist Party won the war in 1949, establishing the People’s Republic of China.
+[ 33.39s][user ] That’s a pretty significant year, isn’t it?
+[ 35.95s][moshi] It truly was; it marked a huge shift in China’s direction.
+[ 39.82s][user ] Were there any major battles before the final ⟨ret@43.04s⟩ takeover?
+[ 43.41s][moshi] ⟦⚡SPAN@43.44s: The Battle of Huaihai, fought from November 1948 to January 1949, was a decisive battle in the Chinese Civil W⟧ One major battle was the Battle of Huaihai, fought from November 1948 to January 1949.
+[ 45.94s][user ] «backchannel» Yeah.
+[ 49.69s][moshi] It was a really pivotal moment, shifting the balance of power.
+[ 50.75s][user ] «backchannel» Okay.
+[ 54.77s][user ] What kind of support did the nationalists have from other countries?
+[ 58.69s][moshi] ⟨ret@58.61s⟩ ⟦⚡SPAN@58.69s: The Nationalist government received significant financial and military aid from the United States during the C⟧ The Nationalist government received financial and military aid from the United States.
+[ 63.97s][user ] That's interesting. Did the communists get help too?.
+[ 67.22s][moshi] «interrupted» The Soviet Union did offer some support to the communists—
+[ 70.33s][user ] «interrupts_prev» …but was it comparable to what the nationalists got from America?
+[ 74.52s][moshi] The Soviet support was less extensive than the American aid to the Nationalists.
+[ 77.29s][user ] «backchannel» Yeah.
+[ 78.99s][user ] Okay, so a big difference in backing. What happened to Chiang Kai-shek after the communists ⟨ret@84.81s⟩ won?
+[ 85.20s][moshi] ⟦⚡SPAN@85.21s: After losing the Chinese Civil War, Chiang Kai-shek retreated to Taiwan and established a government there in ⟧ After losing, Chiang Kai-shek retreated to Taiwan and established a government there in 1949.
+[ 91.87s][user ] So he didn't just…disappear?
+[ 94.15s][moshi] No, he continued to lead a government in Taiwan for decades.
+[ 95.85s][user ] «backchannel» Yeah, yeah.
+[ 98.67s][user ] What was the state of relations between mainland China and Taiwan after that?
+[103.65s][moshi] Relations were very tense for a long time, with ongoing military threats.
+[106.25s][user ] «backchannel» Yeah, yeah.
+[108.82s][user ] Do they still have that tension today?
+[111.46s][moshi] There’s still a complex relationship, though it’s evolved over the years.
+[113.66s][user ] «backchannel» Yeah.
+[115.30s][user ] What about the economic situation in China after the communists took over?
+[120.03s][moshi] They initially focused on land reform and collectivization of agriculture.
+[124.09s][user ] Was that successful?
+[125.76s][moshi] It had mixed results, leading to significant disruptions and famine in some areas.

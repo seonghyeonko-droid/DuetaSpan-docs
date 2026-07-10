@@ -4,70 +4,71 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Victor",
+#     "name": "Nora",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-24",
-#       "category": "home",
-#       "text": "User's home address is 17 Pine Court."
+#       "date": "2026-06-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-04-07",
+#       "date": "2026-06-16",
 #       "category": "work",
 #       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-09-22",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-03-15",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-31",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-11-09",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, "Three Little Pigs"라는 노래를 부 | S2 만화 영화 사운드트랙인 줄 알았어요. | S3 여보, 쓰레기 버렸어요? | S4 그럼, Green Jellÿ는 또 뭘 하나요? 다른 노래로도 
 
-     0.00s  user  발화 시작: 어, 머라이어 캐리 “We Belong Together” 누가 썼어?
-     2.87s  <ret> 발화 (turn1 첫 프레임)
-     3.10s  user  발화 끝
-     3.18s  agent 발화 시작: <ret> 좋은 노래에 관심 가져주셔서 기뻐요. Johntá Austin이 머라이어 캐리랑 Shannon S
-     3.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: Johntá Austin co-wrote “We Belong Together” with Mariah Carey and Shan
-    12.31s  agent 발화 끝
-    12.32s  user  발화 시작: 오, 진짜? 머라이어 혼자 쓴 줄 알았어.
-    15.63s  agent 발화 시작: 혼자 쓴 거라고 생각하기 쉬울 수도 있어요—
-    15.65s  user  발화 끝
-    17.55s  user  발화 시작: …그 사람이 다른 유명한 노래도 썼어?
-    18.36s  agent 발화 끝
-    19.37s  <ret> 발화 (turn5 첫 프레임)
-    19.76s  agent 발화 시작: <ret> Johntá Austin은 작곡가이자 레코드 프로듀서인데, Aaliyah, Mary J. Blig
-    19.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: (tool result) Johntá Austin is an American songwriter and record produ
-    19.85s  user  발화 끝
-    23.61s  user  발화 시작: 어.
-    24.32s  user  발화 끝
-    28.68s  agent 발화 시작: 정말 인상적인 커리어를 가지고 계시네요. 다른 작품들도 찾아볼까요?
-    28.85s  agent 발화 끝
-    33.91s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, "Three Little Pigs"라는 노래를 부른 가수가 누구인지 아세요? 계속 생각나서요.
+     6.24s  <ret> 발화 (turn1 첫 프레임)
+     6.38s  user  발화 끝
+     6.55s  agent 발화 시작: <ret> 아, 그거 재미있는 노래죠! 사실 Green Jellÿ라는 패러디 메탈 밴드가 부른 노래예요.
+     6.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Green Jellÿ is an American parody metal band formed in 1989.
+    12.79s  user  발화 시작: Green Jellÿ요? 좀… 뜻밖인데요. 제가…
+    12.80s  agent 발화 끝
+    16.77s  user  발화 끝
+    18.62s  user  발화 시작: 만화 영화 사운드트랙인 줄 알았어요.
+    20.88s  agent 발화 시작: 하하, 정말 놀랍죠, 그렇지 않나요? 때로는 가장 기억에 남는 노래가 숨겨진 기원을 가지고 있기도 해요.
+    20.93s  user  발화 끝
+    28.58s  user  발화 시작: 여보, 쓰레기 버렸어요?
+    28.80s  agent 발화 끝
+    30.43s  user  발화 시작: 그럼, Green Jellÿ는 또 뭘 하나요? 다른 노래로도 유명한가요?
+    30.57s  user  발화 끝
+    34.76s  <ret> 발화 (turn7 첫 프레임)
+    35.16s  agent 발화 시작: <ret> 음, 그들은 천구백구십이년에 첫 앨범을 발표했는데, “Three Little Pigs”와 “Cer
+    35.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.72s]: Green Jellÿ released their debut album, "Green Jellÿ," in 1992, and it
+    35.29s  user  발화 끝
+    43.88s  agent 발화 끝

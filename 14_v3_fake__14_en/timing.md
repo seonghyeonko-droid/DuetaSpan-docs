@@ -4,53 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__14",
-#     "name": "Lukas",
+#     "name": "Jack",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-19",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "date": "2026-05-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-18",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-11-15",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
-#     },
-#     {
-#       "date": "2025-10-01",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-08-27",
+#       "date": "2026-05-18",
 #       "category": "home",
-#       "text": "User's home address is 382 Elm Street."
+#       "text": "User's home address is 913 Pine Court."
 #     },
 #     {
-#       "date": "2025-08-06",
+#       "date": "2025-10-09",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2025-06-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-26",
+#       "date": "2026-01-14",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,115 +48,83 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-06-06",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Bius, do you know when the Smit | S2 Wow, that's a lot. | S3 That's interesting— | S4 Free, that’s great!
+# EXAMINER(FDB-v2) 단계: S1 Who is the Fire Lord in Legend of  | S2 Did Gyatso have any siblings? | S3 That sounds…pleasant. | S4 Do you…do you think I can finish m
 
-     0.00s  user  발화 시작: Hi Bius, do you know when the Smithsonian Air and Space Muse
-     4.67s  <ret> 발화 (turn1 첫 프레임)
-     4.77s  user  발화 끝
-     4.91s  agent 발화 시작: <ret> Well, it’s wonderful you’re curious about history. The
-     4.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.34s]: The Smithsonian National Air and Space Museum first opened its doors t
-    11.91s  user  발화 시작: Yeah.
-    12.36s  user  발화 끝
-    17.11s  user  발화 시작: That’s good to know. What about the Udvar-Hazy Center?
-    17.24s  agent 발화 끝
-    21.12s  <ret> 발화 (turn4 첫 프레임)
-    21.14s  user  발화 끝
-    21.29s  agent 발화 시작: <ret> It’s natural to want to explore all aspects of a subje
-    21.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.68s]: The Steven F. Udvar-Hazy Center, an extension of the National Air and 
-    32.96s  agent 발화 끝
-    32.99s  user  발화 시작: December 2003… hmm.
-    35.96s  agent 발화 시작: Sometimes, just letting a date settle in your mind is enough
-    36.13s  user  발화 끝
-    39.46s  user  발화 시작: Yeah, totally.
-    40.80s  user  발화 끝
-    43.84s  agent 발화 끝
-    44.19s  user  발화 시작: What kind of aircraft do they have at Udvar-Hazy?
-    47.01s  <ret> 발화 (turn9 첫 프레임)
-    47.25s  agent 발화 시작: <ret> It’s good to delve deeper into specifics. The Udvar-Ha
-    47.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.87s]: The Udvar-Hazy Center houses a collection including the Space Shuttle 
-    47.47s  user  발화 끝
-    51.08s  user  발화 시작: Yeah.
-    51.49s  user  발화 끝
-    59.12s  agent 발화 끝
-    60.24s  user  발화 시작: Wow, that's a lot.
-    61.36s  agent 발화 시작: It is, isn't it? A collection like that can really inspire a
-    61.62s  user  발화 끝
-    67.19s  agent 발화 끝
-    68.20s  user  발화 시작: Do they have the Wright brothers’ plane there?
-    70.35s  <ret> 발화 (turn14 첫 프레임)
-    70.43s  agent 발화 시작: <ret> It’s fascinating how we trace innovation back to its o
-    70.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: The 1903 Wright Flyer, the first successful airplane, is currently on 
-    70.60s  user  발화 끝
-    74.11s  user  발화 시작: Yeah.
-    74.69s  user  발화 끝
-    81.50s  agent 발화 끝
-    82.06s  user  발화 시작: Oh, okay. So it’s not at the other one.
-    84.27s  agent 발화 시작: Precisely. It’s easy to get locations mixed up when we’re ta
-    84.37s  user  발화 끝
-    87.21s  user  발화 시작: Yeah.
-    87.75s  user  발화 끝
-    91.36s  agent 발화 끝
-    91.38s  user  발화 시작: What was the first object ever put on display at the origina
-    95.31s  <ret> 발화 (turn20 첫 프레임)
-    95.62s  agent 발화 시작: <ret> Showing your deep curiosity. The first object displaye
-    95.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.06s]: The first object displayed at the National Air and Space Museum was a 
-    95.82s  user  발화 끝
-   105.68s  agent 발화 끝
-   105.91s  user  발화 시작: That's interesting—
-   107.14s  user  발화 시작: …wait, was the Enola Gay actually *used* in a bombing?
-   107.28s  user  발화 끝
-   110.72s  <ret> 발화 (turn23 첫 프레임)
-   110.88s  agent 발화 시작: <ret> It’s important to face difficult history with honesty.
-   110.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: The Enola Gay was the Boeing B-29 Superfortress that dropped the atomi
-   110.98s  user  발화 끝
-   115.44s  user  발화 시작: Right.
-   116.08s  user  발화 끝
-   122.25s  agent 발화 끝
-   122.29s  user  발화 시작: That's… heavy.
-   123.24s  <ret> 발화 (turn26 첫 프레임)
-   123.55s  agent 발화 시작: <ret> It is. Sometimes acknowledging the weight of the past 
-   123.56s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.90s]: The current temperature in Reykjavik, Iceland is 8.2°C, with partly cl
-   123.80s  user  발화 끝
-   128.30s  agent 발화 시작: It's good to acknowledge the complexity of feelings.
-   128.46s  agent 발화 끝
-   131.44s  agent 발화 끝
-   131.60s  user  발화 시작: Do they offer tours at the Air and Space Museum?
-   134.39s  <ret> 발화 (turn29 첫 프레임)
-   134.63s  agent 발화 시작: <ret> It’s wonderful to seek out guided experiences. Guided 
-   134.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.41s]: (tool result) Event: Guided Tours, Smithsonian National Air and Space 
-   134.79s  user  발화 끝
-   139.95s  user  발화 시작: Nice.
-   140.58s  user  발화 끝
-   143.99s  user  발화 시작: Free, that’s great!
-   144.04s  agent 발화 끝
-   145.41s  agent 발화 시작: It’s lovely when opportunities for learning are accessible t
-   145.59s  user  발화 끝
-   149.67s  agent 발화 끝
-   150.38s  user  발화 시작: How long are the tours usually?
-   152.08s  <ret> 발화 (turn34 첫 프레임)
-   152.40s  agent 발화 시작: <ret> It's good to plan your time effectively. The guided to
-   152.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: Smithsonian National Air and Space Museum guided tours generally last 
-   152.63s  user  발화 끝
-   156.49s  user  발화 시작: Yeah.
-   157.09s  user  발화 끝
-   159.29s  user  발화 시작: Okay, good to know.
-   159.39s  agent 발화 끝
-   160.62s  user  발화 끝
-   160.78s  agent 발화 시작: That’s helpful information, isn't it? Planning can reduce st
-   164.58s  user  발화 시작: Yeah.
-   165.07s  user  발화 끝
-   166.35s  user  발화 시작: Thanks, Bius.
-   166.57s  agent 발화 끝
-   167.35s  agent 발화 시작: You’re very welcome. Remember, curiosity is a beautiful thin
-   167.36s  user  발화 끝
-   172.63s  agent 발화 끝
+     0.00s  user  발화 시작: Who is the Fire Lord in Legend of Korra?
+     2.70s  <ret> 발화 (turn1 첫 프레임)
+     2.94s  agent 발화 시작: <ret> Well, that's a fascinating question! The Fire Lord in 
+     2.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.64s]: Ozai was the Fire Lord before his son Zuko, ruling during the Hundred 
+     2.96s  user  발화 끝
+     9.65s  user  발화 시작: Yeah.
+    10.09s  user  발화 끝
+    14.43s  user  발화 시작: Oh, right. Zuko too, wasn't he?
+    14.57s  agent 발화 끝
+    17.06s  user  발화 끝
+    17.43s  agent 발화 시작: Exactly! Zuko had a remarkable journey to becoming Fire Lord
+    27.03s  agent 발화 끝
+    27.06s  user  발화 시작: Um, yeah, I guess so. What about Aang's airbending teacher?
+    31.84s  <ret> 발화 (turn6 첫 프레임)
+    32.00s  agent 발화 시작: <ret> Aang’s airbending teacher was Monk Gyatso—a truly wise
+    32.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: Monk Gyatso was Aang’s mentor and a highly skilled airbending master.
+    32.19s  user  발화 끝
+    36.43s  user  발화 시작: Yeah.
+    36.92s  user  발화 끝
+    40.61s  agent 발화 시작: He really guided Aang, helping him understand not just bendi
+    40.76s  agent 발화 끝
+    46.26s  agent 발화 끝
+    47.21s  user  발화 시작: Did Gyatso have any siblings?
+    48.80s  <ret> 발화 (turn10 첫 프레임)
+    49.04s  agent 발화 시작: <ret> It's lovely you're asking about his family! Gyatso had
+    49.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.59s]: Monk Gyatso had a younger sister named Kya, who was also an airbending
+    49.18s  user  발화 끝
+    55.66s  user  발화 시작: Mm-hmm.
+    56.16s  user  발화 끝
+    58.63s  agent 발화 끝
+    58.84s  user  발화 시작: [sigh] It's hard to keep track of all these characters.
+    61.78s  agent 발화 시작: It absolutely can be! There are so many wonderful characters
+    61.94s  user  발화 끝
+    70.54s  agent 발화 끝
+    71.21s  user  발화 시작: What was the weather like in Republic City during the finale
+    74.54s  <ret> 발화 (turn15 첫 프레임)
+    74.62s  agent 발화 시작: <ret> The weather in Republic City during the finale was 26.
+    74.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: (tool result) 26.0°C, humidity 68%, wind 7.2 km/h, clear skies
+    74.77s  user  발화 끝
+    85.03s  user  발화 시작: That sounds…pleasant.
+    85.05s  agent 발화 끝
+    86.88s  <ret> 발화 (turn17 첫 프레임)
+    87.19s  agent 발화 시작: <ret> It does, doesn't it? A clear day can really lift your 
+    87.20s  ⚡SPAN 주입(IRRELEVANT) [d'=1.36s / d_lead=6.67s]: The average price of a barrel of West Texas Intermediate crude oil is 
+    87.30s  user  발화 끝
+    89.29s  user  발화 시작: Uh-huh.
+    89.83s  user  발화 끝
+    93.87s  agent 발화 끝
+    94.18s  user  발화 시작: What kind of tea did Iroh like?
+    96.53s  <ret> 발화 (turn20 첫 프레임)
+    96.69s  agent 발화 시작: <ret> Oh, that's a great question! Uncle Iroh truly cherishe
+    96.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: Iroh greatly enjoyed jasmine tea, often remarking on its calming and p
+    96.72s  user  발화 끝
+   105.55s  agent 발화 끝
+   105.62s  user  발화 시작: He seemed like a really good guy.
+   107.60s  user  발화 끝
+   107.64s  agent 발화 시작: He absolutely was! Iroh had a beautiful soul and offered wis
+   116.72s  user  발화 시작: Do you…do you think I can finish my history paper?
+   116.86s  agent 발화 끝
+   120.24s  user  발화 끝
+   120.40s  agent 발화 시작: Of course you can! You’ve already come so far, and you’re cl
+   124.10s  user  발화 시작: Right.
+   124.73s  user  발화 끝
+   129.96s  agent 발화 끝
+   130.88s  user  발화 시작: I guess so. Thanks, Freus.
+   133.00s  agent 발화 시작: You're very welcome. Remember, taking things one step at a t
+   133.09s  user  발화 끝
+   139.21s  agent 발화 끝

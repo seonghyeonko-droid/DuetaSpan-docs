@@ -1,97 +1,70 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Unaia, a warm and attentive personal guide who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Bren, a practical and reassuring counselor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "Manon",
+    "name": "Rowan",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "female",
-    "age_range": "late 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-17",
-      "category": "home",
-      "text": "User's home address is 807 Pine Court."
+      "date": "2026-06-02",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-05-16",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-01-25",
+      "category": "work",
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2026-04-27",
+      "date": "2025-09-13",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-04-12",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2025-08-29",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2025-11-30",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-08-27",
+      "category": "home",
+      "text": "User's home address is 397 Birch Road."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-10",
-      "title": "Comparing gym memberships",
+      "date": "2025-08-08",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-06-15",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who says it is not that the concept of the Immaculate Conception is taken from the Qur'an?
-[  5.11s][moshi] ⟨ret@5.03s⟩ ⟦⚡SPAN@5.11s: (no information found)⟧ But unfortunately, I haven't been able to find any information on that topic.
-[  9.56s][moshi] Perhaps we could explore a different area of religious history?
-[ 12.26s][user ] «backchannel» Yeah.
-[ 13.83s][user ] Um, well, what's the weather…
-[ 16.85s][user ] …like in Seoul right now?
-[ 18.56s][moshi] ⟨ret@18.48s⟩ ⟦⚡SPAN@18.56s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently 23.0 degrees Celsius in Seoul, with 74% humidity and a light breeze of 5.5 kilometers per hour.
+[  0.00s][user ] What islands are not geographically part of Southeast Asia?
+[  3.73s][moshi] ⟨ret@3.65s⟩ ⟦⚡SPAN@3.73s: (no information found)⟧ But unfortunately, I don’t have information on islands specifically excluded from Southeast Asia.
+[ 10.06s][user ] Um, well, could you tell me the current time in Tokyo?
+[ 13.89s][moshi] ⟨ret@13.65s⟩ ⟦⚡SPAN@13.89s: (tool result) It is Friday, July 10, 2026 at 2:38 PM in Asia/Tokyo right now.⟧ It's currently 2:38 PM in Tokyo. Quite a different time zone than here, isn’t it?
+      CALL: {"function": "get_time", "arguments": {"location": "Asia/Tokyo"}}
+[ 17.11s][user ] «backchannel» Really?
+[ 19.48s][moshi] Is there anything else I can help you with today? Perhaps we could explore some career options, if you’re feeling stuck?
+[ 25.74s][user ] No, not right now. Just… what’s the weather like in ⟨ret@30.03s⟩ Seoul?
+[ 30.43s][moshi] ⟦⚡SPAN@30.43s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s 23.0 degrees Celsius in Seoul, with 74% humidity and a light wind. Sounds quite pleasant, actually.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 28.22s][moshi] Sounds like a pleasant day for studying outdoors, doesn’t it?
-[ 30.45s][user ] «backchannel» Yeah.
-[ 31.51s][moshi] Yes, it does! Fresh air can be so helpful for concentration.
-[ 36.01s][user ] What about ⟨ret@37.09s⟩ Busan?
-[ 37.41s][moshi] ⟦⚡SPAN@37.41s: (tool result) 25.0°C, humidity 68%, wind 8.2 km/h⟧ In Busan, it’s 25.0 degrees Celsius, with 68% humidity and a wind speed of 8.2 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Busan"}}
-[ 45.72s][moshi] Busan is a bit warmer and windier than Seoul at the moment.
-[ 50.25s][user ] Find me some Korean ⟨ret@51.77s⟩ movies.
-[ 52.09s][moshi] ⟦⚡SPAN@52.09s: (tool result) Parasite (2019) - A darkly comedic thriller exploring class disparity. Bong Joon-ho, IMDb.⟧ I found “Parasite”, a darkly comedic thriller about class disparity, directed by Bong Joon-ho.
-      CALL: {"function": "Media_3_FindMovies", "arguments": {"genre": "Korean"}}
-[ 59.45s][moshi] It’s a critically acclaimed film, if you’re looking for something thought-provoking.
-[ 64.26s][user ] [laugh] That sounds good!
-[ 67.15s][moshi] [happy] I'm glad to hear that! It's a really powerful movie.
-[ 68.50s][user ] «backchannel» Mm-hmm.
-[ 70.98s][user ] What time is it there, in ⟨ret@72.70s⟩ Seoul?
-[ 73.02s][moshi] ⟦⚡SPAN@73.02s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ It is currently 3:17 PM in Seoul on Friday, July 10, 2026.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 79.17s][moshi] Plenty of time left in the day for achieving your goals!
-[ 84.26s][user ] What did I say about staying ⟨ret@86.47s⟩ motivated?
-[ 86.62s][moshi] ⟦⚡SPAN@86.63s: [2026-07-09] I need to remember to reward myself after each study session.⟧ You said, "I need to remember to reward myself after each study session."
-[ 91.78s][moshi] That's a wonderful way to build positive habits, Unaia thinks!
-[ 96.05s][user ] Okay, thanks.
-[ 97.29s][moshi] You’re very welcome! Remember, small rewards can make a big difference.
+[ 39.17s][user ] That does sound nice. Thanks, Bren.
+[ 41.39s][moshi] You’re very welcome. It’s good to hear you’re feeling a bit brighter. Remember, a change of scenery can often help.

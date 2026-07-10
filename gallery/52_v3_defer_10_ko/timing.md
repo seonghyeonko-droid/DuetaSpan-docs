@@ -4,105 +4,102 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "지훈",
+#     "name": "성람",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-12",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#       "date": "2026-05-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
 #     },
 #     {
-#       "date": "2026-03-22",
+#       "date": "2026-03-21",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-21",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "date": "2026-01-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2025-07-21",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-15",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-17",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 자전거로 광둥탑에서 진씨 가옥까지 얼마나 걸릴까? | S2 좋아. 그럼 진씨 가옥… | S3 Panxi Restaurant가 제일 괜찮아 보이는데, 예약해 | S4 …그 근처에 전통 공예품 파는 곳도 있니?
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 볼 만한 영화 좀 찾아줘. | S2 근데 혹시 어제 있었던 야구 경기 결과는 어떻게 됐어? | S3 더우면… 시원한 카페라도 찾아봐 줄래? | S4 아, 맞아! 고마워.
 
-     0.00s  user  발화 시작: 자전거로 광둥탑에서 진씨 가옥까지 얼마나 걸릴까?
-     3.64s  <ret> 발화 (turn1 첫 프레임)
-     3.71s  agent 발화 시작: <ret> 자전거로 광둥탑에서 진씨 가옥까지는 대략 이 점 삼킬로미터이고, 십이분 정도 걸릴 거예요. 즐거운
-     3.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: (tool result) The bike ride from Canton Tower to Chen Clan Academy is 
-     3.83s  user  발화 끝
-    11.64s  agent 발화 끝
-    11.78s  user  발화 시작: 음, 십이분이면 괜찮네. 근데 지금 날씨는 어때?
-    15.02s  <ret> 발화 (turn3 첫 프레임)
-    15.38s  user  발화 끝
-    15.41s  agent 발화 시작: <ret> 지금 광저우 날씨는 삼십일 점 이도이고, 습도는 칠십팔%, 동풍이 육 점 팔킬로미터 속도로 살짝 
-    15.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.30s]: (tool result) The current weather in Guangzhou is 31.2°C, with humidit
-    22.90s  user  발화 시작: 응.
-    23.34s  user  발화 끝
-    25.67s  user  발화 시작: 좋아. 그럼 진씨 가옥…
-    25.71s  agent 발화 끝
-    27.38s  user  발화 끝
-    29.33s  user  발화 시작: …주변에 맛집도 좀 찾아줘.
-    31.04s  <ret> 발화 (turn7 첫 프레임)
-    31.43s  agent 발화 시작: <ret> 진씨 가옥 근처에는 Dian Dou De, Tao Tao Ju, Panxi Restaurant 같
-    31.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.36s]: (tool result) There are several highly-rated restaurants near Chen Cla
-    31.68s  user  발화 끝
-    34.62s  user  발화 시작: 어.
-    35.02s  user  발화 끝
-    38.79s  agent 발화 끝
-    39.67s  user  발화 시작: Panxi Restaurant가 제일 괜찮아 보이는데, 예약해 줄 수 있어?
-    42.62s  <ret> 발화 (turn10 첫 프레임)
-    42.78s  agent 발화 시작: <ret> 네, Panxi Restaurant에 칠월 십일일 저녁 일곱시에 혼자 예약했습니다. 확인 번호는 
-    42.78s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.44s]: (tool result) Reservation confirmed for Panxi Restaurant, table for on
-    42.96s  user  발화 끝
-    49.15s  user  발화 시작: 어, 잠깐만. 혹시…
-    49.22s  agent 발화 끝
-    51.50s  agent 발화 시작: Panxi Restaurant는 전통 광동 요리를 맛볼 수 있는 곳으로 —
-    51.59s  user  발화 끝
-    54.54s  user  발화 시작: …그 근처에 전통 공예품 파는 곳도 있니?
-    55.10s  agent 발화 끝
-    56.76s  <ret> 발화 (turn14 첫 프레임)
-    56.91s  agent 발화 시작: <ret> 네, 진씨 가옥 근처 오백미터 이내에 전통 공예품을 파는 곳들이 여러 군데 있어요. 리완 호수 공
-    56.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Several shops selling traditional crafts are located wit
-    57.12s  user  발화 끝
-    64.65s  agent 발화 끝
-    64.82s  user  발화 시작: 오, 좋아. 그럼 리완 호수 공예 시장까지 자전거로 얼마나 걸릴까?
-    68.80s  <ret> 발화 (turn16 첫 프레임)
-    69.11s  agent 발화 시작: <ret> 진씨 가옥에서 리완 호수 공예 시장까지는 자전거로 일 점 팔킬로미터이고, 팔분 정도 걸릴 거예요.
-    69.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) The bike ride from Chen Clan Academy to Liwan Lake Park 
-    69.27s  user  발화 끝
-    77.87s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 볼 만한 영화 좀 찾아줘.
+     2.49s  user  발화 끝
+     2.54s  <ret> 발화 (turn1 첫 프레임)
+     2.60s  agent 발화 시작: <ret> 토요일에 '인사이드 아웃 이'가 두시, 네시 삼십분, 일곱시에 상영될 예정이에요. 혹시 다른 영화
+     2.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: {"movies": [{"title": "Inside Out 2", "times": ["14:00", "16:30", "19:
+     9.88s  agent 발화 끝
+     9.98s  user  발화 시작: 음… 아니, 그 영화 괜찮아 보이네.
+    13.12s  user  발화 끝
+    13.35s  agent 발화 시작: 다행이에요. 가족 영화로도 좋고, 친구들과 함께 보기도 좋겠네요.
+    17.29s  user  발화 시작: 근데 혹시 어제 있었던 야구 경기 결과는 어떻게 됐어?
+    17.75s  agent 발화 끝
+    20.13s  <ret> 발화 (turn5 첫 프레임)
+    20.20s  agent 발화 시작: <ret> 죄송하지만, 어제 야구 경기 결과에 대한 정보를 찾을 수 없었어요.
+    20.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (no information found)
+    20.43s  user  발화 끝
+    24.51s  agent 발화 끝
+    24.56s  user  발화 시작: 아, 그래? 음… 그럼, 혹시 내일 날씨는 어때?
+    28.56s  <ret> 발화 (turn7 첫 프레임)
+    28.88s  agent 발화 시작: <ret> 내일 서울은 이십팔도, 습도는 육십오%, 바람은 시속 칠 점 이킬로미터로 예상됩니다. 꽤 덥겠어요
+    28.88s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.41s]: (tool result) 28.0°C, humidity 65%, wind 7.2 km/h
+    29.05s  user  발화 끝
+    36.12s  user  발화 시작: 더우면… 시원한 카페라도 찾아봐 줄래?
+    36.29s  agent 발화 끝
+    38.58s  <ret> 발화 (turn9 첫 프레임)
+    38.97s  agent 발화 시작: <ret> 강남구에 있는 '커피빈'이 평점이 사 점 오점이에요. 시원하게 커피 한 잔 하기에 괜찮겠네요.
+    38.98s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.35s]: {"restaurants": [{"name": "Coffee Bean", "address": "Gangnam-gu", "rat
+    39.12s  user  발화 끝
+    41.97s  user  발화 시작: 우와.
+    42.46s  user  발화 끝
+    45.33s  agent 발화 끝
+    46.23s  user  발화 시작: 오, 좋아! 근데 잠깐만, 어제 친구한테 보냈던 메시지 내용이 뭐였지?
+    50.62s  <ret> 발화 (turn12 첫 프레임)
+    51.01s  agent 발화 시작: <ret> 이천이십육년 칠월 구일에 “오늘 저녁에 같이 저녁 먹자”라고 메시지를 보냈습니다.
+    51.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [2026-07-09] 오늘 저녁에 같이 저녁 먹자.
+    51.22s  user  발화 끝
+    56.74s  user  발화 시작: 아, 맞아! 고마워.
+    56.80s  agent 발화 끝
+    58.22s  user  발화 끝
+    58.44s  agent 발화 시작: 천만에요. 혹시 저녁 메뉴도 제가 추천해 드릴까요?
+    60.67s  user  발화 시작: 어.
+    61.30s  user  발화 끝
+    62.74s  agent 발화 끝
+    63.04s  user  발화 시작: 아니, 괜찮아. 지금은 그냥 카페부터 가볼까.
+    65.99s  user  발화 끝
+    66.30s  agent 발화 시작: 시원한 카페에서 잠시 쉬면서 기분 전환하는 것도 좋겠네요.
+    69.90s  agent 발화 끝

@@ -4,83 +4,91 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "혜민",
+#     "name": "가국",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-04-21",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-05-23",
+#       "date": "2026-02-06",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
+#     },
+#     {
+#       "date": "2025-10-23",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-05",
 #       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2025-07-25",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-06-21",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-01",
+#       "date": "2026-01-27",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-30",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 필라델피아에서 이탈리아 식당 찾아줘. | S2 랄프스 레스토랑까지 가는 길 알려줘. | S3 지금 몇 시야? | S4 오늘 기분 전환할 만한 영화 추천해 줄래?
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 서울에서 부산 가는 기차표 좀 알아봐 줄래? | S2 음… 그럼 다음 주 화요일은 어때? | S3 응. | S4 그럼 KTX 오전 열한시 특실로 예매해 줘.
 
-     0.00s  user  발화 시작: 필라델피아에서 이탈리아 식당 찾아줘.
-     2.52s  <ret> 발화 (turn1 첫 프레임)
-     2.72s  user  발화 끝
-     2.83s  agent 발화 시작: <ret> 필라델피아에는 랄프스 이탈리안 레스토랑을 포함한 이탈리아 식당이 많이 있어요. 구번가 남쪽 칠백육
-     2.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: There are many Italian restaurants in Philadelphia, including Ralph's 
-    11.78s  agent 발화 끝
-    12.26s  user  발화 시작: 랄프스 레스토랑까지 가는 길 알려줘.
-    14.53s  <ret> 발화 (turn3 첫 프레임)
-    14.84s  agent 발화 시작: <ret> 랄프스 레스토랑까지는 현재 거리에서 서쪽으로 영 점 일마일 이동한 뒤, 구번가에서 오른쪽으로 영 
-    14.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Directions to Ralph's Italian Restaurant: Start heading 
-    14.85s  user  발화 끝
-    20.30s  user  발화 시작: 음.
+     0.00s  user  발화 시작: 이번 주 토요일에 서울에서 부산 가는 기차표 좀 알아봐 줄래?
+     4.09s  <ret> 발화 (turn1 첫 프레임)
+     4.12s  user  발화 끝
+     4.40s  agent 발화 시작: <ret> 죄송해요. 현재 그 날짜에 대한 기차표 정보가 없네요. 다른 날짜를 알아볼까요?
+     4.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.31s]: (no information found)
+     9.71s  agent 발화 끝
+    10.24s  user  발화 시작: 음… 그럼 다음 주 화요일은 어때?
+    13.38s  <ret> 발화 (turn3 첫 프레임)
+    13.66s  user  발화 끝
+    13.71s  agent 발화 시작: <ret> 다음 주 화요일, 칠월 십사일에 서울에서 부산 가는 기차편이 있습니다. 지금 바로 확인해 드릴까요
+    13.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: {"date": "2026-07-14", "departure": "Seoul", "arrival": "Busan"}
+    20.17s  user  발화 시작: 응.
+    20.24s  agent 발화 끝
     20.66s  user  발화 끝
-    23.74s  agent 발화 끝
-    24.62s  user  발화 시작: 지금 몇 시야?
-    25.40s  <ret> 발화 (turn6 첫 프레임)
-    25.62s  user  발화 끝
-    25.63s  agent 발화 시작: <ret> 지금은 미국 동부 시간으로 이천이십육년 칠월 십일 금요일 오후 두시 사십일분이에요.
-    25.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) It is Friday, July 10, 2026 at 2:41 PM in America/New Yo
-    32.49s  agent 발화 끝
-    33.85s  user  발화 시작: 오늘 기분 전환할 만한 영화 추천해 줄래?
-    36.48s  user  발화 끝
-    36.66s  agent 발화 시작: 음, 영화로 기분 전환이라니 좋은 생각이에요! 혹시 특별히 좋아하는 장르가 있으세요?
-    42.96s  agent 발화 끝
+    20.79s  agent 발화 시작: 어떤 시간대 기차를 선호하시나요? 좀 더 자세히 말씀해 주시면 더 정확하게 찾아드릴 수 있어요.
+    24.84s  user  발화 시작: 아.
+    25.38s  user  발화 끝
+    26.92s  <ret> 발화 (turn7 첫 프레임)
+    26.99s  agent 발화 시작: <ret> KTX는 오전 여덟시, 열한시, 오후 두시, 다섯시에 출발하는 편이 있네요. 좌석 등급은 일반실과
+    27.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.82s]: [2026-07-10] 기차표를 알아봐 달라고 하셨어요.
+    27.14s  agent 발화 끝
+    36.56s  agent 발화 시작: 혹시 기차표 예매를 도와드릴까요? 특실은 좌석이 빨리 소진될 수 있으니 서두르는 게 좋겠어요.
+    36.81s  agent 발화 끝
+    43.00s  agent 발화 끝
+    43.35s  user  발화 시작: 그럼 KTX 오전 열한시 특실로 예매해 줘.
+    46.04s  <ret> 발화 (turn10 첫 프레임)
+    46.40s  user  발화 끝
+    46.42s  agent 발화 시작: <ret> KTX 오전 열한시 특실로 예매 완료되었습니다. 확인번호는 에이 비 일 이 씨 디입니다. 즐거운 
+    46.44s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.90s]: (tool result) {"confirmation id": "AB12CD"}
+    55.33s  agent 발화 끝
+    55.43s  agent 발화 시작: 혹시 여행 중에 필요한 다른 정보가 있으신가요? 편안한 여행을 위한 팁도 알려드릴 수 있어요.
+    61.08s  agent 발화 끝

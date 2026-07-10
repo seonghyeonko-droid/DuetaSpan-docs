@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "유아",
+#     "name": "예안",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,85 +12,67 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
+#       "date": "2026-03-22",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-02-05",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-27",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-02-07",
+#       "date": "2026-01-24",
 #       "category": "diet",
-#       "text": "User is pescatarian."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-09-17",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-08-20",
+#       "date": "2025-07-27",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2025-08-01",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in December."
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-01",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-04-30",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-03",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 심리 상담 같은 것도 해주시는 건가요? | S2 영어 학원이랑 미술 학원 둘 다 다니고 있어요. 둘 다 다니느 | S3 음… 게임을 좀 하긴 하는데, 그것도 잠깐이에요. | S4 남편도 저랑 똑같이 생각해요. 아이를 위해 좋은 건 해주고 싶
+# EXAMINER(FDB-v2) 단계: S1 헌 씨… 음, 솔직히 요즘 너무 불안하고 초조해서 어떻게 해야 | S2 사실… 취업 때문에 너무 걱정돼요. 계속 떨어지고, 앞으로 어 | S3 …헌 씨, 혹시 저처럼 불안감을 느끼는 사람들이 많나요? | S4 그렇군요… 다른 사람들도 다 비슷한 고민을 하고 있다는 게 조
 
-     0.00s  agent 발화 시작: 안녕하세요, 유아님. 저는 여러분의 삶을 함께 고민하고 응원하는 비안이라고 해요. 어떤 이야기를 나누고 싶으
-     7.23s  user  발화 시작: 혹시 심리 상담 같은 것도 해주시는 건가요?
-     7.27s  agent 발화 끝
-    10.02s  agent 발화 시작: 네, 유아님. 저는 부모님과 자녀분들 사이의 관계, 그리고 가족 구성원 모두가 행복할 수 있는 시간을 만드는
-    10.14s  user  발화 끝
-    19.29s  agent 발화 끝
-    19.68s  user  발화 시작: 음… 요즘 애들 학원 때문에 너무 힘드네요.
-    23.11s  agent 발화 시작: 학원 문제 때문에 힘드시군요. 아이의 학업에 대한 걱정과, 또 부모님으로서 최선을 다하려는 마음이 느껴져요.
-    23.24s  user  발화 끝
-    32.98s  user  발화 시작: 영어 학원이랑 미술 학원 둘 다 다니고 있어요. 둘 다 다니느라 너무 바쁘고, 아이도 지쳐 보여서…
-    33.21s  agent 발화 끝
-    39.89s  agent 발화 시작: 아이가 두 학원을 다니면서 많이 지쳐 보인다고 말씀해주셨네요. 아이의 스케줄이 너무 빡빡한 것 같아 걱정이 
-    40.11s  user  발화 끝
-    43.74s  user  발화 시작: 네.
-    44.23s  user  발화 끝
-    51.08s  agent 발화 시작: 아이가 학원을 마치고 돌아온 후의 시간을 여쭤봤는데, 아이가 어떤 활동을 하는지, 또 아이가 그 시간을 어떻
-    51.16s  agent 발화 끝
-    57.64s  user  발화 시작: 음.
-    58.19s  user  발화 끝
-    66.59s  user  발화 시작: 음… 게임을 좀 하긴 하는데, 그것도 잠깐이에요.
-    66.70s  agent 발화 끝
-    70.10s  user  발화 끝
-    70.35s  agent 발화 시작: 게임을 잠깐 하는 정도라고 하셨네요. 아이가 스스로 좋아하는 활동을 찾아서 즐기는 시간이 부족한 것 같아 안
-    81.62s  user  발화 시작: 생각해봤는데… 시간이 없어서 잘 안 돼요. 저도 회사 일 때문에 너무 바쁘거든요.
-    81.72s  agent 발화 끝
-    86.95s  agent 발화 시작: 회사 일도 바쁘신데 아이까지 챙기려니 정말 힘드시겠어요. 부모님으로서 느끼는 책임감과 부담감이 크신 것 같아
-    87.13s  user  발화 끝
-    98.55s  agent 발화 끝
-    99.02s  user  발화 시작: 남편도 저랑 똑같이 생각해요. 아이를 위해 좋은 건 해주고 싶은데, 어떻게 해야 할지 모르겠어요.
-   105.31s  user  발화 끝
-   105.52s  agent 발화 시작: 아이를 위해 좋은 것을 해주고 싶지만, 어떻게 해야 할지 몰라 답답하시군요. 아이의 행복을 바라는 마음은 당
-   119.25s  agent 발화 끝
+     0.00s  agent 발화 시작: 예안 씨, 안녕하세요. 저는 여러분의 마음 건강을 돕는 상담사, 헌입니다. 오늘 하루는 어떠셨어요?
+     7.74s  user  발화 시작: 헌 씨… 음, 솔직히 요즘 너무 불안하고 초조해서 어떻게 해야 할지 모르겠어요.
+     7.83s  agent 발화 끝
+    12.85s  agent 발화 시작: 불안하고 초조하시다니, 마음이 많이 힘드시겠네요. 어떤 점이 가장 불안하신가요? 구체적으로 말씀해 주시면 함
+    13.06s  user  발화 끝
+    22.07s  agent 발화 끝
+    22.44s  user  발화 시작: 사실… 취업 때문에 너무 걱정돼요. 계속 떨어지고, 앞으로 어떻게 될지 막막하고—
+    28.56s  user  발화 시작: …헌 씨, 혹시 저처럼 불안감을 느끼는 사람들이 많나요?
+    28.69s  user  발화 끝
+    32.42s  agent 발화 시작: 많은 분들이 비슷한 감정을 느끼십니다. 불안은 흔한 감정이고, 특히 미래에 대한 불확실성이 클 때 더욱 심해
+    32.58s  user  발화 끝
+    37.50s  user  발화 시작: 네.
+    37.90s  user  발화 끝
+    40.26s  user  발화 시작: 그렇군요… 다른 사람들도 다 비슷한 고민을 하고 있다는 게 조금 위로가 되네요.
+    40.53s  agent 발화 끝
+    45.25s  user  발화 끝

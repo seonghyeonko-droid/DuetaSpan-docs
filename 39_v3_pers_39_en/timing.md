@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Simon",
+#     "name": "Milan",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -13,124 +13,77 @@
 #     },
 #     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "late 20s",
+#     "age_range": "early 20s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-20",
+#       "date": "2026-06-27",
 #       "category": "work",
 #       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-04-25",
+#       "date": "2026-05-24",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-02-23",
+#       "date": "2026-02-01",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-12-14",
+#       "date": "2025-09-09",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-20",
 #       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-09-12",
-#       "category": "home",
-#       "text": "User's home address is 819 Maple Drive."
-#     },
-#     {
-#       "date": "2025-07-23",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is lactose-intolerant."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-12",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-02-01",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-06-12",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-19",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Zal? That's... an unusual name for | S2 I don't know! That's what I'm afra | S3 Visualization? Like, imagining it  | S4 I guess I could try. It's just… ha
+# EXAMINER(FDB-v2) 단계: S1 Oh, uh, hello. A wellness coach fo | S2 I guess. I just feel like I don't  | S3 …but is it even worth it? I mean,  | S4 It just feels like so much effort 
 
-     0.00s  agent 발화 시작: Bonjour, Simon. I’m Zal, and I’m here to offer support and g
-     4.45s  user  발화 시작: Yeah.
-     4.99s  user  발화 끝
-     7.17s  user  발화 시작: Zal? That's... an unusual name for a voice assistant. Is it,
-     7.22s  agent 발화 끝
-    13.42s  user  발화 끝
-    13.55s  agent 발화 시작: It is a name I carry to remind me of my purpose, Simon—to of
-    17.09s  user  발화 시작: Right.
-    17.45s  user  발화 끝
-    21.39s  agent 발화 끝
-    21.60s  user  발화 시작: Right. Okay. Well, I’ve been feeling really overwhelmed late
-    25.96s  agent 발화 시작: That's very common, Simon. When things feel overwhelming, it
-    26.09s  user  발화 끝
-    28.34s  user  발화 시작: Yeah.
-    28.93s  user  발화 끝
-    32.71s  user  발화 시작: Easier said than done, honestly. It's just… constant.
-    32.87s  agent 발화 끝
-    36.46s  user  발화 끝
-    36.56s  agent 발화 시작: Constant pressure can certainly take a toll. Have you identi
-    43.63s  user  발화 시작: I think it’s the presentation next week. It feels like every
-    43.65s  agent 발화 끝
-    47.84s  user  발화 끝
-    48.03s  agent 발화 시작: Placing so much weight on one event can amplify anxiety. Wha
-    56.05s  agent 발화 끝
-    56.87s  user  발화 시작: I don't know! That's what I'm afraid of. My boss will be fur
-    60.91s  agent 발화 시작: It's understandable to worry about your boss's reaction. But
-    61.03s  user  발화 끝
-    68.16s  user  발화 시작: I try to be positive, I really do, but it just feels impossi
-    68.32s  agent 발화 끝
-    72.08s  agent 발화 시작: It's alright to acknowledge those difficult feelings, Simon.
-    72.23s  user  발화 끝
-    78.77s  user  발화 시작: …But what if I just completely freeze up during the presenta
-    79.49s  agent 발화 끝
-    82.10s  agent 발화 시작: That’s a valid fear, Simon. We can explore some techniques t
-    82.28s  user  발화 끝
-    84.41s  user  발화 시작: Okay.
-    85.05s  user  발화 끝
-    89.14s  agent 발화 끝
-    89.29s  user  발화 시작: Visualization? Like, imagining it going well? Sounds cheesy.
-    93.92s  user  발화 끝
-    93.92s  agent 발화 시작: It can feel that way at first, but it’s a powerful tool. It 
-   101.01s  agent 발화 끝
-   102.14s  user  발화 시작: Hmm. Maybe. I also haven’t been sleeping well. Everything ra
-   107.89s  agent 발화 시작: Sleep is vital for managing stress. Perhaps a calming routin
-   107.93s  user  발화 끝
-   116.22s  user  발화 시작: I've tried reading, but I just end up scrolling on my phone 
-   116.37s  agent 발화 끝
-   120.01s  user  발화 끝
-   120.08s  agent 발화 시작: That’s a common habit. The blue light from screens can inter
-   128.84s  agent 발화 끝
-   128.91s  user  발화 시작: I guess I could try. It's just… hard to disconnect.
-   132.75s  user  발화 끝
-   132.99s  agent 발화 시작: Disconnecting can be a challenge in today’s world. It requir
-   139.48s  agent 발화 끝
-   140.99s  user  발화 시작: Self-compassion? What does that even mean?
-   143.89s  agent 발화 시작: It means treating yourself with the same kindness and unders
-   144.04s  user  발화 끝
-   147.03s  user  발화 시작: Yeah, totally.
-   147.84s  user  발화 끝
-   150.13s  user  발화 시작: I don't know… I’m usually pretty hard on myself.
-   150.18s  agent 발화 끝
-   153.33s  agent 발화 시작: Many people are, Simon. It’s a pattern we often develop. But
-   153.42s  user  발화 끝
-   160.79s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour, Milan.
+     1.29s  agent 발화 끝
+     2.44s  user  발화 시작: Oh, uh, hello. A wellness coach for friends? That’s… specifi
+     7.96s  user  발화 끝
+     8.07s  agent 발화 시작: It can be tricky navigating relationships, can’t it? Many pe
+    10.45s  user  발화 시작: Right.
+    11.13s  user  발화 끝
+    15.21s  user  발화 시작: I guess. I just feel like I don't really *have* close friend
+    15.39s  agent 발화 끝
+    19.36s  agent 발화 시작: That feeling of distance is quite common, Milan. It takes wo
+    19.46s  user  발화 끝
+    24.58s  user  발화 시작: …but is it even worth it? I mean, people always move, change
+    25.20s  agent 발화 끝
+    28.09s  user  발화 끝
+    28.12s  agent 발화 시작: Milan. It's natural to wonder about the point when things sh
+    31.81s  user  발화 시작: Uh-huh.
+    32.30s  user  발화 끝
+    33.00s  user  발화 시작: It just feels like so much effort for something that might j
+    33.12s  agent 발화 끝
+    37.68s  agent 발화 시작: It’s understandable to feel hesitant when you’ve experienced
+    37.72s  user  발화 끝
+    46.26s  agent 발화 끝

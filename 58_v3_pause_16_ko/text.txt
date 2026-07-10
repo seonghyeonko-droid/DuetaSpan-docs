@@ -1,115 +1,71 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 학습 및 동기 부여 유지에 도움을 주는 따뜻하고 세심한 지원 조언가 Droral입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리를 도와주는 긍정적이고 지지적인 개인 가이드 Iano입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "세찬",
+    "name": "채슬",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "40s",
+    "age_range": "50s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-29",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
-    },
-    {
-      "date": "2025-11-07",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2025-08-15",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-07-27",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-06-25",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-06-15",
+      "date": "2026-03-08",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-02-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-12-12",
+      "category": "home",
+      "text": "User's home address is 부산 해운대구 해운대로 570."
+    },
+    {
+      "date": "2025-09-15",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-08-30",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-11",
-      "title": "Planning a birthday dinner",
+      "date": "2025-10-11",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 고릴라즈 멤버가 ⟨ret@1.39s⟩ 누구누구지?
-[  1.79s][moshi] ⟦⚡SPAN@1.79s: 2-D, Murdoc Niccals, Russel Hobbs, and Noodle are the core members of the virtual band Gorillaz.⟧ 고릴라즈의 핵심 멤버는 이-D, 머독 니컬스, 러셀 홉스, 그리고 누들로 구성되어 있어요. 음악을 좋아하시는군요.
-[ 10.97s][user ] 머독 니컬스에 대해 좀 더 자세히 ⟨ret@12.86s⟩ 알려줘.
-[ 13.18s][moshi] ⟦⚡SPAN@13.18s: Murdoc Niccals is the bassist and self-proclaimed leader of the virtual band Gorillaz, known for his green ski⟧ 머독 니컬스는 고릴라즈의 베이시스트이자 자칭 리더인데, 초록 피부와 악마 같은 성격으로 유명하답니다.
-[ 21.67s][user ] 누들은 어떤 역할을 ⟨ret@22.86s⟩ 해?
-[ 23.02s][moshi] ⟦⚡SPAN@23.02s: Noodle is the Japanese guitarist and vocalist for Gorillaz, often portrayed as a mysterious and talented music⟧ 누들은 고릴라즈의 일본인 기타리스트이자 보컬인데, 신비롭고 재능 있는 음악가로 묘사되고 있어요.
-[ 28.42s][user ] «backchannel» 맞아.
-[ 29.70s][user ] 러셀 홉스는 어떤 사람이야?
-[ 31.45s][moshi] ⟨ret@31.37s⟩ ⟦⚡SPAN@31.45s: Russel Hobbs is the drummer for Gorillaz, possessed by the spirits of several deceased rappers, giving him a u⟧ 러셀 홉스는 고릴라즈의 드러머인데, 여러 명의 래퍼 영혼에 씌어 독특하고 강력한 드럼 연주를 선보인다고 해요.
-[ 41.86s][user ] 이-D는 무슨 악기를 ⟨ret@43.51s⟩ 연주해?
-[ 43.82s][moshi] ⟦⚡SPAN@43.83s: 2-D is the lead vocalist and keyboardist for Gorillaz, recognizable by his black eyes and often melancholic de⟧ 이-D는 고릴라즈의 리드 보컬이자 키보디스트인데, 검은 눈과 우울한 분위기로 쉽게 알아볼 수 있어요.
-[ 46.70s][user ] «backchannel» 와.
-[ 50.93s][user ] 고릴라즈 노래 중에 제일 유명한 건 뭐야?
-[ 53.37s][moshi] ⟨ret@53.22s⟩ ⟦⚡SPAN@53.38s: (tool result) Feel Good Inc. by Gorillaz is their most commercially successful song, released in 2005.⟧ 고릴라즈의 가장 성공한 곡은 이천오년에 발매된 '필 굿 잉크'랍니다.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist_name": "Gorillaz"}}
-[ 58.62s][user ] 이천오년이라고?
-[ 59.80s][moshi] 네, 이천오년에 발매되었어요. 혹시 다른 곡도 궁금하신가요?
-[ 65.67s][user ] 그 곡 뮤직비디오는 어때?
-[ 67.84s][moshi] ⟨ret@67.53s⟩ ⟦⚡SPAN@67.84s: The music video for Feel Good Inc. features a haunted hotel and a cartoon whale attacking a city.⟧ '필 굿 잉크' 뮤직비디오에는 유령 호텔과 도시를 공격하는 만화 고래가 등장해요. 독특한 영상미가 돋보이죠.
-[ 76.08s][user ] 고릴라즈는 언제 데뷔했어?
-[ 77.84s][moshi] ⟨ret@77.69s⟩ ⟦⚡SPAN@77.85s: Gorillaz released their self-titled debut album in March 2001.⟧ 고릴라즈는 이천일년 삼월에 데뷔 앨범을 발매했어요.
-[ 84.21s][user ] 데뷔 앨범 제목이 뭐야?
-[ 85.76s][moshi] 데뷔 앨범 제목도 그냥 '고릴라즈'예요.
-[ 88.86s][user ] 고릴라즈 멤버들은 다 가상 인물이야?
-[ 90.85s][moshi] ⟨ret@90.77s⟩ ⟦⚡SPAN@90.85s: Gorillaz is a virtual band created by musician Damon Albarn and artist Jamie Hewlett.⟧ 네, 고릴라즈는 음악가 데이먼 알반과 아티스트 제이미 휴렛이 만든 가상 밴드랍니다.
-[ 97.37s][user ] 데이먼 알반은 ⟨ret@98.54s⟩ 누구야?
-[ 98.86s][moshi] ⟦⚡SPAN@98.86s: Damon Albarn is an English musician, best known as the frontman of the band Blur.⟧ 데이먼 알반은 영국 음악가인데, 밴드 블러의 프론트맨으로 가장 잘 알려져 있어요.
-[100.92s][user ] «backchannel» 응.
-[104.43s][user ] 블러도 알아! 그럼 제이미 ⟨ret@106.56s⟩ 휴렛은?
-[106.87s][moshi] ⟦⚡SPAN@106.88s: Jamie Hewlett is an English comic book artist and designer, known for co-creating the Gorillaz visual identity⟧ 제이미 휴렛은 영국 만화가이자 디자이너인데, 고릴라즈의 시각적 이미지를 공동으로 만들었어요.
-[114.37s][user ] 고릴라즈 멤버들은 서로 협업을 많이 해?
-[117.04s][moshi] 네, 멤버들끼리뿐만 아니라 다양한 아티스트들과 활발하게 협업하고 있어요.
-[123.56s][user ] 협업한 아티스트 중에 유명한 사람이 ⟨ret@125.88s⟩ 있어?
-[126.11s][moshi] ⟦⚡SPAN@126.12s: (tool result) Gorillaz have collaborated with artists such as Snoop Dogg, De La Soul, and Shaun Ryder. gorilla⟧ 스눕 독, 디 라 솔, 숀 라이더 등 여러 유명 아티스트들과 협업한 적이 있어요. 공식 웹사이트에서 더 자세히 볼 수 있습니다.
-      CALL: {"function": "search", "arguments": {"query": "Gorillaz collaborations"}}
-[129.30s][user ] «backchannel» 응.
-[136.53s][user ] 스눕 독이랑 협업했다니, 신기하다.
-[139.19s][moshi] 네, 스눕 독과의 협업은 정말 화제가 되었었죠. 고릴라즈의 음악적 스펙트럼을 넓혀줬다고 생각해요.
-[146.92s][user ] 고릴라즈는 지금까지 몇 장의 앨범을 ⟨ret@148.95s⟩ 냈어?
-[149.11s][moshi] ⟦⚡SPAN@149.11s: As of November 2023, Gorillaz have released eight studio albums.⟧ 이천이십삼년 십일월 기준으로 고릴라즈는 스튜디오 앨범 여덟장을 발매했어요.
-[155.39s][user ] 여덟장이나 냈구나… 요즘도 활동해? ⟨ret@158.04s⟩
-[158.36s][moshi] ⟦⚡SPAN@158.36s: Gorillaz released their most recent studio album, Cracker Island, in February 2023.⟧ 네, 가장 최근 앨범인 '크래커 아일랜드'는 이천이십삼년 이월에 발매되었어요. 여전히 활발하게 활동하고 있답니다.
-[161.24s][user ] «backchannel» 맞아.
-[167.46s][user ] 크래커 아일랜드에 대한 평가는 어때?
-[170.01s][moshi] ⟨ret@169.94s⟩ ⟦⚡SPAN@170.02s: (tool result) Cracker Island received generally positive reviews, praised for its vibrant sound and diverse co⟧ '크래커 아일랜드'는 생동감 넘치는 사운드와 다양한 협업으로 대체적으로 긍정적인 평가를 받았어요. 피치포크에서 자세한 리뷰를 읽어보실 수 있습니다.
-      CALL: {"function": "search", "arguments": {"query": "Cracker Island Gorillaz review"}}
-[181.76s][user ] 고릴라즈 콘서트 티켓 예매는 어디서 ⟨ret@183.91s⟩ 해?
-[184.22s][moshi] ⟦⚡SPAN@184.23s: (tool result) There are no upcoming Gorillaz events currently listed in your area.⟧ 죄송하지만, 현재 해당 지역에 고릴라즈 콘서트 일정이 없네요.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"artist_name": "Gorillaz"}}
-[186.39s][user ] «backchannel» 응응.
-[189.12s][user ] 아쉽다… 그래도 고릴라즈 알게 돼서 기뻐.
-[191.99s][moshi] 저도 고릴라즈에 대해 이야기 나누게 되어 기뻤어요. 언제든지 음악에 대한 궁금한 점이 있다면 저에게 물어보세요.
+[  0.00s][user ] 음… 아시안 게임에서 인도팀이…
+[  3.83s][user ] …이천십팔년에 금메달을 몇 개 ⟨ret@5.62s⟩ 땄더라…?
+[  6.03s][moshi] ⟦⚡SPAN@6.03s: India won a total of 69 medals at the 2018 Asian Games, including 16 gold medals.⟧ 이천십팔년 아시안 게임에서 인도팀은 총 예순아홉개의 메달을 획득했는데, 그중 금메달은 열여섯개였어요.
+[ 11.62s][user ] «backchannel» 정말요?
+[ 13.86s][moshi] 혹시 다른 메달 종류에 대해서도 궁금하신가요?
+[ 17.26s][user ] 아니, 금메달만 몇 개인지 궁금한…
+[ 20.64s][user ] …거예요. 다시 한 번만 알려주세요.
+[ 22.89s][moshi] 이천십팔년 아시안 게임에서 인도팀은 금메달을 열여섯개 땄습니다.
+[ 28.01s][user ] 아, 열여섯개였구나… 그럼 은메달은 몇 개였죠?
+[ 31.50s][moshi] ⟨ret@31.34s⟩ ⟦⚡SPAN@31.50s: India won a total of 69 medals at the 2018 Asian Games, including 16 gold medals, 23 silver medals, and 30 bro⟧ 이천십팔년 아시안 게임에서 인도팀은 금메달 열여섯개와 함께 은메달 스물세개, 동메달 서른개를 획득했습니다.
+[ 36.81s][user ] «backchannel» 진짜요?
+[ 40.89s][user ] 꽤 많이 땄네요.
+[ 41.79s][moshi] 네, 정말 대단한 성과였죠. 스포츠 정신이 빛나는 결과인 것 같아요.

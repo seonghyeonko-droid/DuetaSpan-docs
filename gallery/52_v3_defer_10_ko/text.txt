@@ -1,84 +1,77 @@
 v3_defer_10_ko src=mcp style=mcp_deferred
-SYSTEM: <system> 당신은 Aeia이며, 사람들의 여행 및 휴가 계획을 돕는 긍정적이고 지지적인 라이프 코치입니다. <system>
+SYSTEM: <system> 당신은 사람들의 우정과 사회생활을 돕는 부드럽고 사색적인 웰니스 코치인 Orelius입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "지훈",
+    "name": "성람",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-12",
-      "category": "home",
-      "text": "User's home address is 부산 해운대구 우동 123-4."
+      "date": "2026-05-26",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
     },
     {
-      "date": "2026-03-22",
+      "date": "2026-03-21",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-12-21",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "date": "2026-01-04",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2025-12-13",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
+      "date": "2025-07-21",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-06-29",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-11",
-      "title": "Apartment hunting downtown",
+      "date": "2025-10-15",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-07-17",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 자전거로 광둥탑에서 진씨 가옥까지 얼마나 걸릴까?
-[  3.71s][moshi] ⟨ret@3.64s⟩ ⟦⚡SPAN@3.72s: (tool result) The bike ride from Canton Tower to Chen Clan Academy is approximately 2.3 kilometers and will ta⟧ 자전거로 광둥탑에서 진씨 가옥까지는 대략 이 점 삼킬로미터이고, 십이분 정도 걸릴 거예요. 즐거운 라이딩 되세요!
-      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Canton Tower", "destination": "Chen Clan Academy"}}
-[ 11.78s][user ] 음, 십이분이면 괜찮네. 근데 지금 날씨는 ⟨ret@15.02s⟩ 어때?
-[ 15.41s][moshi] ⟦⚡SPAN@15.42s: (tool result) The current weather in Guangzhou is 31.2°C, with humidity at 78%, and a light breeze from the ea⟧ 지금 광저우 날씨는 삼십일 점 이도이고, 습도는 칠십팔%, 동풍이 육 점 팔킬로미터 속도로 살짝 불고 있어요. 자전거 타기엔 괜찮은 날씨네요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Guangzhou"}}
-[ 22.90s][user ] «backchannel» 응.
-[ 25.67s][user ] 좋아. 그럼 진씨 가옥…
-[ 29.33s][user ] …주변에 맛집도 좀 ⟨ret@31.04s⟩ 찾아줘.
-[ 31.43s][moshi] ⟦⚡SPAN@31.43s: (tool result) There are several highly-rated restaurants near Chen Clan Academy, including Dian Dou De, Tao Ta⟧ 진씨 가옥 근처에는 Dian Dou De, Tao Tao Ju, Panxi Restaurant 같은 맛집들이 있어요. 다 평점이 아주 좋답니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Chen Clan Academy"}}
-[ 34.62s][user ] «backchannel» 어.
-[ 39.67s][user ] Panxi Restaurant가 제일 괜찮아 보이는데, 예약해 줄 수 ⟨ret@42.62s⟩ 있어?
-[ 42.78s][moshi] ⟦⚡SPAN@42.78s: (tool result) Reservation confirmed for Panxi Restaurant, table for one, July 11, 2026, 7:00 PM, confirmation ⟧ 네, Panxi Restaurant에 칠월 십일일 저녁 일곱시에 혼자 예약했습니다. 확인 번호는 피 엑스 칠 팔 구 이예요.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Panxi Restaurant"}}
-[ 49.15s][user ] 어, 잠깐만. 혹시…
-[ 51.50s][moshi] «interrupted» Panxi Restaurant는 전통 광동 요리를 맛볼 수 있는 곳으로 —
-[ 54.54s][user ] «interrupts_prev» …그 근처에 전통 공예품 파는 곳도 ⟨ret@56.76s⟩ 있니?
-[ 56.91s][moshi] ⟦⚡SPAN@56.92s: (tool result) Several shops selling traditional crafts are located within a 500-meter radius of Chen Clan Acad⟧ 네, 진씨 가옥 근처 오백미터 이내에 전통 공예품을 파는 곳들이 여러 군데 있어요. 리완 호수 공예 시장도 있답니다.
-      CALL: {"function": "map_search_places", "arguments": {"query": "traditional crafts", "location": "Chen Clan Academy"}}
-[ 64.82s][user ] 오, 좋아. 그럼 리완 호수 공예 시장까지 자전거로 얼마나 ⟨ret@68.80s⟩ 걸릴까?
-[ 69.11s][moshi] ⟦⚡SPAN@69.12s: (tool result) The bike ride from Chen Clan Academy to Liwan Lake Park Craft Market is approximately 1.8 kilome⟧ 진씨 가옥에서 리완 호수 공예 시장까지는 자전거로 일 점 팔킬로미터이고, 팔분 정도 걸릴 거예요. 쇼핑도 즐겁게 하시길 바랍니다!
-      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Chen Clan Academy", "destination": "Liwan Lake Park Craft Market"}}
+[  0.00s][user ] 이번 주 토요일에 볼 만한 영화 좀 찾아줘.
+[  2.60s][moshi] ⟨ret@2.54s⟩ ⟦⚡SPAN@2.62s: {"movies": [{"title": "Inside Out 2", "times": ["14:00", "16:30", "19:00"]}]}⟧ 토요일에 '인사이드 아웃 이'가 두시, 네시 삼십분, 일곱시에 상영될 예정이에요. 혹시 다른 영화도 알아볼까요?
+[  9.98s][user ] 음… 아니, 그 영화 괜찮아 보이네.
+[ 13.35s][moshi] 다행이에요. 가족 영화로도 좋고, 친구들과 함께 보기도 좋겠네요.
+[ 17.29s][user ] 근데 혹시 어제 있었던 야구 경기 결과는 어떻게 됐어?
+[ 20.20s][moshi] ⟨ret@20.13s⟩ ⟦⚡SPAN@20.21s: (no information found)⟧ 죄송하지만, 어제 야구 경기 결과에 대한 정보를 찾을 수 없었어요.
+[ 24.56s][user ] 아, 그래? 음… 그럼, 혹시 내일 날씨는 ⟨ret@28.56s⟩ 어때?
+[ 28.88s][moshi] ⟦⚡SPAN@28.88s: (tool result) 28.0°C, humidity 65%, wind 7.2 km/h⟧ 내일 서울은 이십팔도, 습도는 육십오%, 바람은 시속 칠 점 이킬로미터로 예상됩니다. 꽤 덥겠어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 36.12s][user ] 더우면… 시원한 카페라도 찾아봐 ⟨ret@38.58s⟩ 줄래?
+[ 38.97s][moshi] ⟦⚡SPAN@38.98s: {"restaurants": [{"name": "Coffee Bean", "address": "Gangnam-gu", "rating": 4.5}]}⟧ 강남구에 있는 '커피빈'이 평점이 사 점 오점이에요. 시원하게 커피 한 잔 하기에 괜찮겠네요.
+[ 41.97s][user ] «backchannel» 우와.
+[ 46.23s][user ] 오, 좋아! 근데 잠깐만, 어제 친구한테 보냈던 메시지 내용이 ⟨ret@50.62s⟩ 뭐였지?
+[ 51.01s][moshi] ⟦⚡SPAN@51.02s: [2026-07-09] 오늘 저녁에 같이 저녁 먹자.⟧ 이천이십육년 칠월 구일에 “오늘 저녁에 같이 저녁 먹자”라고 메시지를 보냈습니다.
+[ 56.74s][user ] 아, 맞아! 고마워.
+[ 58.44s][moshi] 천만에요. 혹시 저녁 메뉴도 제가 추천해 드릴까요?
+[ 60.67s][user ] «backchannel» 어.
+[ 63.04s][user ] 아니, 괜찮아. 지금은 그냥 카페부터 가볼까.
+[ 66.30s][moshi] 시원한 카페에서 잠시 쉬면서 기분 전환하는 것도 좋겠네요.

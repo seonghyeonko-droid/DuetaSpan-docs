@@ -4,108 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Ruby",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
 #     },
 #     {
-#       "date": "2026-06-12",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-12-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-05-20",
-#       "category": "home",
-#       "text": "User's home address is 910 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-03-27",
+#       "date": "2025-11-06",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-11-01",
+#       "date": "2025-10-16",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-07-14",
 #       "category": "work",
 #       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-24",
+#       "date": "2025-08-01",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-16",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-14",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Jer, I'm trying to get settled  | S2 Qatar, huh? I didn't realize that. | S3 Wow, that's hot! I'm trying to fin | S4 Perfect! That sounds exactly like 
+# EXAMINER(FDB-v2) 단계: S1 Hey, do you ever feel… | S2 Um, yeah, unique is one word for i | S3 I guess so. I need to find a good  | S4 We did. We still do, mostly. She’s
 
-     0.00s  user  발화 시작: Hi Jer, I'm trying to get settled here. It's a bit overwhelm
-     3.68s  agent 발화 시작: Oh, hello! Settling in *is* a lot, isn't it?
-     3.70s  user  발화 끝
-     7.09s  agent 발화 끝
-     7.71s  user  발화 시작: Thanks. I was wondering, who hosted the World Cup in 2022?
-    11.70s  <ret> 발화 (turn3 첫 프레임)
-    11.87s  user  발화 끝
-    12.10s  agent 발화 시작: <ret> The 2022 FIFA World Cup was hosted by Qatar — it was t
-    12.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: The 2022 FIFA World Cup was hosted by Qatar, marking the first time th
-    18.81s  user  발화 시작: Qatar, huh? I didn't realize that. What's the weather…
-    18.86s  agent 발화 끝
-    22.60s  user  발화 끝
-    24.09s  user  발화 시작: …like there right now?
-    24.91s  <ret> 발화 (turn6 첫 프레임)
-    25.31s  agent 발화 시작: <ret> Right now in Qatar, it's 32.0 degrees Celsius, with 65
-    25.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) 32.0°C, humidity 65%, wind 8.9 km/h
-    25.38s  user  발화 끝
-    31.90s  user  발화 시작: Yeah.
-    32.63s  user  발화 끝
-    33.80s  user  발화 시작: Wow, that's hot! I'm trying to find a good restaurant nearby
-    33.89s  agent 발화 끝
-    37.45s  agent 발화 시작: Well, finding a good place to eat is a great way to feel mor
-    37.50s  user  발화 끝
-    40.59s  user  발화 시작: …do they have any places that serve Korean food?
-    41.29s  agent 발화 끝
-    42.97s  <ret> 발화 (turn11 첫 프레임)
-    43.37s  agent 발화 시작: <ret> There’s Arirang Korean Restaurant, it has 4.5 stars an
-    43.37s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.08s]: (tool result) Arirang Korean Restaurant, 4.5 stars, 0.8km, $$
-    43.46s  user  발화 끝
-    47.42s  user  발화 시작: Yeah, yeah.
-    48.98s  user  발화 끝
-    50.45s  agent 발화 끝
-    50.45s  user  발화 시작: Perfect! That sounds exactly like what I need. Thanks, Jer.
-    54.08s  agent 발화 시작: You're very welcome! I'm glad I could help you find somethin
-    54.15s  user  발화 끝
-    60.85s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, do you ever feel…
+     1.47s  user  발화 끝
+     2.75s  user  발화 시작: …like you just need a break from everything?
+     4.68s  user  발화 끝
+     4.83s  agent 발화 시작: Oh, absolutely. It's so important to recognize when you're f
+    12.30s  agent 발화 끝
+    13.37s  user  발화 시작: Well, I was just wondering… who played the Cat in the Hat in
+    16.85s  <ret> 발화 (turn4 첫 프레임)
+    17.25s  agent 발화 시작: <ret> That role was wonderfully played by Mike Myers, in the
+    17.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: Mike Myers portrayed the Cat in the Hat in the 2003 film adaptation of
+    17.26s  user  발화 끝
+    25.17s  agent 발화 끝
+    25.21s  user  발화 시작: Um, yeah, unique is one word for it. Is it raining right now
+    28.58s  <ret> 발화 (turn6 첫 프레임)
+    28.98s  agent 발화 시작: <ret> It is currently raining, with a temperature of 22.0 de
+    28.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) Current conditions are 22.0°C, humidity 88%, wind 3.1 km
+    29.10s  user  발화 끝
+    31.51s  user  발화 시작: Uh-huh.
+    31.95s  user  발화 끝
+    34.92s  user  발화 시작: Cozy? It's kind of depressing, honestly.
+    35.28s  agent 발화 끝
+    37.30s  agent 발화 시작: [sigh] I understand. Gray days can definitely affect your mo
+    37.37s  user  발화 끝
+    41.22s  user  발화 시작: Okay.
+    41.71s  user  발화 끝
+    44.90s  agent 발화 끝
+    45.24s  user  발화 시작: I guess so. I need to find a good movie to watch. Something 
+    48.44s  <ret> 발화 (turn12 첫 프레임)
+    48.84s  agent 발화 시작: <ret> I found "Paddington 2", a really well-loved comedy fro
+    48.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) "Paddington 2" is a critically acclaimed comedy film rel
+    48.90s  user  발화 끝
+    53.45s  user  발화 시작: Exactly.
+    54.27s  user  발화 끝
+    55.60s  agent 발화 끝
+    55.86s  user  발화 시작: Paddington? I’ve heard of it. What about something… older? L
+    61.19s  user  발화 끝
+    61.26s  <ret> 발화 (turn15 첫 프레임)
+    61.33s  agent 발화 시작: <ret> There’s "Home Alone", a classic 1990 comedy directed b
+    61.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.19s]: (tool result) "Home Alone" is a 1990 American Christmas comedy film di
+    68.42s  user  발화 시작: Oh, yeah, "Home Alone"! That’s a good one. My sister loved t
+    68.52s  agent 발화 끝
+    72.40s  agent 발화 시작: It’s funny how movies can bring back such strong memories of
+    72.44s  user  발화 끝
+    79.41s  user  발화 시작: We did. We still do, mostly. She’s going through a rough pat
+    79.49s  agent 발화 끝
+    84.13s  user  발화 끝
+    84.24s  agent 발화 시작: That's really thoughtful of you to share that. It’s wonderfu
+    89.62s  user  발화 시작: Yeah.
+    90.16s  user  발화 끝
+    91.33s  user  발화 시작: I want to send her flowers. Can you help with that?
+    91.66s  agent 발화 끝
+    94.00s  user  발화 끝
+    94.19s  agent 발화 시작: Of course I can. It's a lovely idea. What city does your sis
+    99.75s  agent 발화 끝

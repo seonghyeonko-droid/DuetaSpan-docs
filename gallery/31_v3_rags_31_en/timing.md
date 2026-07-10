@@ -4,64 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Avery",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2026-05-31",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-20",
+#       "date": "2026-03-08",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-09-09",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2026-02-21",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-11-30",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-19",
+#       "category": "home",
+#       "text": "User's home address is 247 Maple Drive."
+#     },
+#     {
+#       "date": "2025-07-03",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-09",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-10",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-31",
+#       "date": "2025-12-10",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-01",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Do you know who played the young boy in Chitty Chitty Bang B
-     3.09s  <ret> 발화 (turn1 첫 프레임)
-     3.30s  agent 발화 시작: <ret> Well, that was Adrian Hall, a very talented young acto
-     3.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: Adrian Hall played the role of Jeremy Potts, the young boy, in the 196
-     3.38s  user  발화 끝
-     9.46s  agent 발화 끝
+     0.00s  user  발화 시작: When did Nick Foles last play for the Eagles?
+     3.28s  <ret> 발화 (turn1 첫 프레임)
+     3.50s  agent 발화 시작: <ret> Well, it seems Nick Foles last played for the Eagles i
+     3.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: Nick Foles last played for the Philadelphia Eagles in 2019, during the
+     3.61s  user  발화 끝
+    12.77s  agent 발화 끝

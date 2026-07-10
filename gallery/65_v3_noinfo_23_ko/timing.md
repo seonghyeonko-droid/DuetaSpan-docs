@@ -4,95 +4,78 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "유완",
+#     "name": "노별",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2026-05-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-12-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2026-06-08",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-03-29",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-08-28",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-03-01",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-09-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
+#     },
+#     {
+#       "date": "2025-07-06",
+#       "category": "home",
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-06",
+#       "date": "2025-08-07",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-31",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 김민지 씨 연락처 알 수 있을까요? | S2 아, 그렇군요. 그럼 오늘 서울 날씨는 어때요? | S3 네, 더울 것 같아요. 이번 주 토요일에 영화 볼 만한 거 있 | S4 아니요, 인사이드 아웃 이 괜찮아요.
 
-     0.00s  user  발화 시작: 혹시 김민지 씨 연락처 알 수 있을까요?
-     1.78s  <ret> 발화 (turn1 첫 프레임)
-     2.17s  agent 발화 시작: <ret> 죄송합니다. 김민지 님의 연락처는 찾을 수 없었습니다. 개인 정보 보호 때문에 제가 도와드릴 수 
-     2.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.73s]: (no information found)
-     2.26s  user  발화 끝
-     9.85s  user  발화 시작: 아, 그렇군요. 그럼 오늘 서울 날씨는 어때요?
-     9.91s  agent 발화 끝
-    12.21s  <ret> 발화 (turn3 첫 프레임)
-    12.43s  user  발화 끝
-    12.44s  agent 발화 시작: <ret> 서울 날씨는 현재 기온이 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
-    12.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    19.63s  agent 발화 시작: 오늘 하루도 꽤 덥겠네요.
-    19.86s  agent 발화 끝
-    21.37s  agent 발화 끝
-    21.49s  user  발화 시작: 네, 더울 것 같아요. 이번 주 토요일에 영화 볼 만한 거 있을까요?
-    24.41s  <ret> 발화 (turn6 첫 프레임)
-    24.65s  agent 발화 시작: <ret> 이번 주 토요일, 칠월 십이일에는 CGV 강남에서 '인사이드 아웃 이'가 열시, 열세시, 열여섯시
-    24.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) '인사이드 아웃 2' - 10:00, 13:00, 16:00, 19:00, CGV 강남
-    24.72s  user  발화 끝
-    31.99s  agent 발화 시작: 혹시 다른 영화 장르를 선호하시나요?
-    32.06s  agent 발화 끝
-    34.76s  agent 발화 끝
-    34.87s  user  발화 시작: 아니요, 인사이드 아웃 이 괜찮아요.
-    36.71s  user  발화 끝
-    36.76s  agent 발화 시작: 다행이네요. 좋은 영화 관람되시길 바랍니다.
-    39.72s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 김민지 씨 전화번호 알아요?
+     1.64s  <ret> 발화 (turn1 첫 프레임)
+     2.03s  agent 발화 시작: <ret> 죄송해요, 김민지 씨 연락처는 찾을 수 없었어요. 개인 정보라서 공개되지 않는 것 같아요.
+     2.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (no information found)
+     2.12s  user  발화 끝
+     7.80s  user  발화 시작: 음…
+     7.87s  agent 발화 끝
+     8.33s  <ret> 발화 (turn3 첫 프레임)
+     8.56s  agent 발화 시작: <ret> 혹시 다른 분을 찾으시는 건가요?
+     8.56s  user  발화 끝
+     8.57s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.07s]: 저는 Huia예요, 막힌 부분이나 자신감이 부족할 때 도움을 드리는 가이드예요.
+    10.58s  agent 발화 시작: 혹시 창작 활동에 어려움을 겪고 계신가요? 지금부터 새로운 영감을 찾도록 도와드릴게요. 어떤 분야에 관심이 
+    10.63s  agent 발화 끝
+    14.95s  user  발화 시작: 그치.
+    15.40s  user  발화 끝
+    18.69s  agent 발화 끝
+    18.72s  agent 발화 시작: 어떤 아이디어가 떠오르지 않을 때, 잠시 생각을 멈추고 주변을 둘러보는 건 어떠세요?
+    24.55s  agent 발화 끝

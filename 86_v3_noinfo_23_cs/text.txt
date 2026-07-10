@@ -1,83 +1,77 @@
 v3_noinfo_23_cs src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스에 대해 사람들을 돕는 부드럽고 사려 깊은 조력자, Brariia입니다. 기본적으로 반말로 말합니다. <system>
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 따뜻하고 세심한 개인 가이드, Huia입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "Zoe",
+    "name": "Remy",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "German",
-    "gender": "female",
+    "nationality": "British",
+    "gender": "non-binary",
     "age_range": "50s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-11",
-      "category": "home",
-      "text": "User's home address is 131 Cedar Lane."
-    },
-    {
-      "date": "2026-05-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-12-29",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
-    },
-    {
-      "date": "2025-11-06",
+      "date": "2026-06-08",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-10-15",
-      "category": "work",
-      "text": "User works as a graduate student."
+      "date": "2026-03-29",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-08-28",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2026-03-01",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-09-04",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2025-07-06",
+      "category": "home",
+      "text": "User's home address is 816 Cedar Lane."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "diet",
+      "text": "User is vegan."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-06",
+      "date": "2025-08-07",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-31",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 저기, 혹시 사라 밀러 씨 전화번호 아세요? 작년에 컨퍼런스에서 만났었거든요.
-[  5.79s][moshi] ⟨ret@5.63s⟩ ⟦⚡SPAN@5.79s: (no information found)⟧ 아, 찾긴 했는데, 사라 밀러 씨 전화번호는 찾을 수가 없네. 정보가 공개되지 않은 것 같아.
-      CALL: {"function": "search", "arguments": {"query": "Sarah Miller phone number"}}
-[ 12.61s][user ] 아, 음, 아쉽네요. 그럼 작년 7월 4일 서울 날씨는 ⟨ret@17.72s⟩ 어땠어요?
-[ 18.12s][moshi] ⟦⚡SPAN@18.12s: (tool result) The weather in Seoul on July 4, 2025, was 28.5°C with partly cloudy skies and a humidity of 68%.⟧ 작년 7월 4일에는 서울 날씨가 28.5도였고, 구름이 조금 낀 맑은 날씨였어. 습도도 68퍼센트나 됐지.
-      CALL: {"function": "search", "arguments": {"query": "weather in Seoul July 4 2025"}}
-[ 26.28s][user ] 좋네요. 다음 주에 부산 호텔을 예약해야 할 것 같아요.
-[ 30.05s][moshi] ⟨ret@29.82s⟩ ⟦⚡SPAN@30.05s: (tool result) Busan hotels: Paradise Hotel Busan (4.5 stars, $210/night), Park Hyatt Busan (4.7 stars, $280/ni⟧ 다음 주 부산 호텔 몇 군데 찾았어. 파라다이스 호텔은 별점이 4.5개이고, 밤에 210달러고, 파크 하얏트는 별점이 4.7개인데 밤에 280달러야.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Busan", "check_in_date": "2026-07-17"}}
-[ 40.41s][user ] 흠, 파라다이스 괜찮은 것 같아요. 거기 방 예약해 주실 수 있으세요?
-[ 45.00s][moshi] ⟨ret@44.92s⟩ ⟦⚡SPAN@45.00s: (tool result) Paradise Hotel Busan for 1 night, check-in July 17, 2026. Confirmation ID: PHB7492.⟧ 파라다이스 호텔 부산에 다음 주 방을 예약했어. 확인 코드는 PHB7492야. 여행 잘 다녀와.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Paradise Hotel Busan", "check_in_date": "2026-07-17"}}
+[  0.00s][user ] 아냐… 전화번호 알아?
+[  1.86s][user ] …샤르마? 작년 컨퍼런스에서 만났어.
+[  4.93s][moshi] ⟨ret@4.77s⟩ ⟦⚡SPAN@4.93s: (no information found)⟧ 아냐 샤르마 님의 전화번호는 공개적으로 찾을 수 없었습니다. 죄송합니다.
+      CALL: {"function": "search", "arguments": {"query": "Anya Sharma phone number"}}
+[  9.78s][user ] 어… 아쉽네.
+[ 11.39s][moshi] 그럴 때가 있어요, 특히 개인 연락처는 잘 공개되지 않거든요. 혹시 컨퍼런스 주최측에 연락해 보시는 건 어떠세요?
+[ 18.46s][user ] 글쎄… 작년 7월 10일 서울 날씨는 ⟨ret@21.47s⟩ 어땠어?
+[ 21.79s][moshi] ⟦⚡SPAN@21.79s: (tool result) 28.5°C, humidity 82%, wind 7.2 km/h⟧ 작년 7월 10일 서울 날씨는 섭씨 28.5도 정도로 꽤 더웠고, 습도도 높고 바람은 시속 7.2킬로미터 정도 불었습니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2025-07-10", "location": "Seoul"}}
+[ 26.75s][user ] «backchannel» 응.
+[ 30.77s][moshi] 날씨가 좋았던 여름날이었던 것 같네요.
+[ 33.23s][user ] 근데, 응. 근처에 이탈리아 식당 좀 찾아 줘.
+[ 36.76s][moshi] ⟨ret@36.68s⟩ ⟦⚡SPAN@36.76s: (tool result) Trattoria del Sole: 4.5 stars, 0.8 km; Bella Italia: 4.2 stars, 1.2 km; Roma Ristorante: 3.9 sta⟧ 근처에 이탈리아 식당 세 곳을 찾았습니다. 별점 4.5점인 트라토리아 델 솔레는 0.8킬로미터 거리에 있어요. 벨라 이탈리아랑 로마 리스토란테도 괜찮은 선택입니다!
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}

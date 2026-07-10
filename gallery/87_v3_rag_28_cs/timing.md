@@ -4,108 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Ruby",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-03-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
 #     },
 #     {
-#       "date": "2026-06-12",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-12-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2026-05-20",
-#       "category": "home",
-#       "text": "User's home address is 910 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-03-27",
+#       "date": "2025-11-06",
 #       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2025-11-01",
+#       "date": "2025-10-16",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-07-14",
 #       "category": "work",
 #       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-24",
+#       "date": "2025-08-01",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-16",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-14",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 제르. 여기 정착하려고 하니까 좀 정신이 없네요! | S2 카타르군요, 그렇군요. 몰랐어요. 지금 날씨는… | S3 와, 더운데요! 근처에 괜찮은 식당을 찾고 있어요. | S4 딱이에요! 제가 딱 필요한 곳이네요. 고마워요, 제르.
+# EXAMINER(FDB-v2) 단계: S1 야, 너 혹시… | S2 어… 그래, 독특하다는 말은 맞는 것 같아. 지금 비 와? | S3 그렇겠지. 영화 한 편 찾아봐야겠다. 웃긴 거. | S4 응. 아직도 좋아. 사실 언니가 좀 힘든 시기를 보내고 있어.
 
-     0.00s  user  발화 시작: 안녕하세요, 제르. 여기 정착하려고 하니까 좀 정신이 없네요!
-     4.31s  user  발화 끝
-     4.33s  agent 발화 시작: 아, 안녕하세요! 정착하는 게 쉽지 않죠, 그렇지요?
-     8.32s  agent 발화 끝
-     8.70s  user  발화 시작: 감사합니다. 혹시 2022년 월드컵은 누가 개최했는지 궁금합니다.
-    13.26s  <ret> 발화 (turn3 첫 프레임)
-    13.50s  agent 발화 시작: <ret> 이천이십이 년 FIFA 월드컵은 카타르에서 개최됐습니다. 아랍 세계에서 처음 열린 대회였답니다.
-    13.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: The 2022 FIFA World Cup was hosted by Qatar, marking the first time th
-    13.57s  user  발화 끝
-    21.89s  agent 발화 끝
-    22.67s  user  발화 시작: 카타르군요, 그렇군요. 몰랐어요. 지금 날씨는…
-    27.34s  user  발화 끝
-    29.36s  user  발화 시작: …거기서 어때요?
-    30.30s  <ret> 발화 (turn6 첫 프레임)
-    30.54s  agent 발화 시작: <ret> 지금 카타르의 기온은 섭씨 32.0도이고, 습도는 65퍼센트, 풍속은 시속 8.9킬로미터입니다.
-    30.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) 32.0°C, humidity 65%, wind 8.9 km/h
-    30.65s  user  발화 끝
-    38.29s  user  발화 시작: 네.
-    38.74s  user  발화 끝
-    40.51s  agent 발화 끝
-    40.57s  user  발화 시작: 와, 더운데요! 근처에 괜찮은 식당을 찾고 있어요.
-    44.27s  user  발화 끝
-    44.55s  agent 발화 시작: 음, 맛있는 곳을 찾는 건 집처럼 편안하게 지내는 좋은 방법이 될 거예요—
-    49.55s  user  발화 시작: …혹시 한국 음식 파는 곳이 있나요?
-    50.10s  agent 발화 끝
-    51.44s  <ret> 발화 (turn11 첫 프레임)
-    51.60s  agent 발화 시작: <ret> 아리랑 한식당이 있는데, 평점이 4.5점이고 거리는 0.8킬로미터, 가격대는 보통입니다.
-    51.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) Arirang Korean Restaurant, 4.5 stars, 0.8km, $$
-    51.67s  user  발화 끝
-    56.83s  user  발화 시작: 네.
-    57.24s  user  발화 끝
-    60.63s  user  발화 시작: 딱이에요! 제가 딱 필요한 곳이네요. 고마워요, 제르.
-    60.65s  agent 발화 끝
-    64.68s  agent 발화 시작: 천만에요! 제가 식당을 찾는 데 도움이 되어서 기쁩니다. 고향의 맛을 찾는 게 정말 중요하잖아요?
-    64.84s  user  발화 끝
-    72.80s  agent 발화 끝
+     0.00s  user  발화 시작: 야, 너 혹시…
+     1.27s  user  발화 끝
+     2.81s  user  발화 시작: … 뭔가 다 때려치우고 싶을 때 있어?
+     4.75s  user  발화 끝
+     4.87s  agent 발화 시작: 오, 당연하지. 힘들 때 알아차리고 자신에게 시간 주는 게 진짜 중요해. 무슨 일 있었어?
+    12.14s  agent 발화 끝
+    12.60s  user  발화 시작: 음, 그냥 궁금해서… 영화에서 캣 인 더 햇은 누가 연기했어?
+    16.86s  <ret> 발화 (turn4 첫 프레임)
+    17.10s  agent 발화 시작: <ret> 그건 이천삼 년 영화에서 마이크 마이어스가 맡았어. 꽤 독특한 연기야, 그렇지 않아?
+    17.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: Mike Myers portrayed the Cat in the Hat in the 2003 film adaptation of
+    17.17s  user  발화 끝
+    25.59s  agent 발화 끝
+    26.73s  user  발화 시작: 어… 그래, 독특하다는 말은 맞는 것 같아. 지금 비 와?
+    29.93s  <ret> 발화 (turn6 첫 프레임)
+    30.17s  agent 발화 시작: <ret> 지금 비 오고 있어, 기온은 22.0도야. 오히려 아늑한 느낌인데.
+    30.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Current conditions are 22.0°C, humidity 88%, wind 3.1 km
+    30.29s  user  발화 끝
+    32.50s  user  발화 시작: 음.
+    32.99s  user  발화 끝
+    35.87s  agent 발화 끝
+    35.95s  user  발화 시작: 아늑해? 솔직히 좀 우울해.
+    38.58s  user  발화 끝
+    38.84s  agent 발화 시작: [sigh] 알아. 흐린 날은 기분을 좀 그럴 수 있지. 그래도 그런 감정을 인정하는 게 먼저야.
+    43.30s  user  발화 시작: 그래.
+    44.02s  user  발화 끝
+    47.47s  agent 발화 끝
+    47.55s  user  발화 시작: 그렇겠지. 영화 한 편 찾아봐야겠다. 웃긴 거.
+    51.23s  <ret> 발화 (turn12 첫 프레임)
+    51.55s  agent 발화 시작: <ret> 이천십칠 년에 나온 "패딩턴 2"라는 코미디 영화를 찾았어. 엄청 따뜻하고 좋다고 하더라.
+    51.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) "Paddington 2" is a critically acclaimed comedy film rel
+    51.62s  user  발화 끝
+    57.22s  user  발화 시작: 오.
+    57.85s  user  발화 끝
+    59.67s  agent 발화 끝
+    59.78s  user  발화 시작: 패딩턴? 들어본 것 같아. 좀 더 옛날 거는 없어? 90년대 영화 같은 거?
+    64.50s  <ret> 발화 (turn15 첫 프레임)
+    64.58s  agent 발화 시작: <ret> 천구백구십 년에 크리스 콜럼버스 감독이 만든 "나 홀로 집에"라는 코미디 영화가 있어. 많은 사람
+    64.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: (tool result) "Home Alone" is a 1990 American Christmas comedy film di
+    64.72s  user  발화 끝
+    75.20s  agent 발화 끝
+    75.28s  user  발화 시작: 오, "나 홀로 집에"! 그거 진짜 재밌었지. 우리 언니가 그 영화 엄청 좋아했어.
+    80.44s  agent 발화 시작: 영화가 가족과의 추억을 떠올리게 하는 경우가 있잖아. 언니랑 사이가 되게 좋았나 보네.
+    80.56s  user  발화 끝
+    87.11s  user  발화 시작: 응. 아직도 좋아. 사실 언니가 좀 힘든 시기를 보내고 있어.
+    87.48s  agent 발화 끝
+    91.31s  agent 발화 시작: 그렇게 솔직하게 말해줘서 고마워. 아직도 연락하고 지내는 게 참 좋다. 가끔은 누군가 챙겨주는 것만으로도 큰
+    91.41s  user  발화 끝
+    98.57s  user  발화 시작: 그래.
+    99.02s  user  발화 끝
+   101.19s  agent 발화 끝
+   101.75s  user  발화 시작: 언니한테 꽃 보내주고 싶어. 도와줄 수 있어?
+   105.49s  agent 발화 시작: 당연히 도와줄 수 있지. 좋은 생각이야. 언니는 어느 도시에 살아?
+   105.59s  user  발화 끝
+   110.77s  agent 발화 끝

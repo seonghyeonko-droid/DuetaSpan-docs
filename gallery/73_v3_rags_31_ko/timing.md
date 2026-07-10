@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "윤안",
+#     "name": "다진",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,56 +12,64 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-18",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-02-21",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2026-05-31",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-02-20",
+#       "date": "2025-11-30",
 #       "category": "diet",
 #       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-09-09",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "date": "2025-11-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-10-24",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-09",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-10",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-31",
+#       "date": "2025-12-10",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-01",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 칙칙이 칙칙이 방방에서 그 남자아이를 누가 연기했어?
-     2.80s  <ret> 발화 (turn1 첫 프레임)
-     3.04s  agent 발화 시작: <ret> 그 영화 칙칙이 칙칙이 방방에 나오는 남자아이 제러미 포츠는 에드리안 홀이 연기했어요.
-     3.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: Adrian Hall played the boy, Jeremy Potts, in the 1968 film Chitty Chit
-     3.05s  user  발화 끝
-     9.80s  agent 발화 끝
+     0.00s  user  발화 시작: 닉 폴스가 이글스에서 뛴 해가 언제야?
+     1.97s  <ret> 발화 (turn1 첫 프레임)
+     2.19s  agent 발화 시작: <ret> 음, 닉 폴스는 이천십칠년부터 현재까지 필라델피아 이글스에서 뛰었어요. 힘든 시기에도 포기하지 않
+     2.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Nick Foles played for the Philadelphia Eagles from 2017–present.
+     2.40s  user  발화 끝
+    10.63s  agent 발화 끝

@@ -4,140 +4,174 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "연아",
+#     "name": "예찬",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "early 30s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-02",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
-#     },
-#     {
-#       "date": "2026-02-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-10-30",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2025-10-07",
+#       "date": "2026-06-02",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-07-29",
+#       "date": "2026-05-13",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2026-02-18",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-12-31",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-09-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-23",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-12-09",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-20",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-29",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 코드 세션 구십구는 지금까지 몇 줄의 코드를 생성했는지 알려줄 | S2 흐음, 좋네. | S3 아니, 그거로 할게. 혹시 이번 주 토요일에 근처에 괜찮은 레 | S4 이천이십육년 유월 이십일.
+# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 서울 날씨 어때? | S2 아니, 그냥 궁금해서 물어봤어. 그… 요즘 사람들한테 추천하는 | S3 꽤 비싸네… | S4 가이세키 요리… 뭔가 고급스러워 보이네.
 
-     0.00s  user  발화 시작: 코드 세션 구십구는 지금까지 몇 줄의 코드를 생성했는지 알려줄 수 있을까?
-     5.31s  <ret> 발화 (turn1 첫 프레임)
-     5.37s  user  발화 끝
-     5.47s  agent 발화 시작: <ret> 죄송해요, 해당 세션의 코드 정보는 찾을 수 없네요. 아직 기록이 남아있지 않거나, 다른 세션 번
-     5.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (no information found)
-    11.64s  user  발화 시작: 예.
-    12.04s  user  발화 끝
-    13.86s  agent 발화 끝
-    14.26s  user  발화 시작: 음… 다른 세션 번호는… 음, 세션 칠십칠은 어때?
-    17.74s  <ret> 발화 (turn4 첫 프레임)
-    18.06s  agent 발화 시작: <ret> 세션 칠십칠은 현재 일만 이천 삼백 사십오바이트 분량의 코드를 생성했고, 마지막 수정 시간은 이천
-    18.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: (tool result) file size: 12345 bytes, last modified: 2026-07-09T14:22:
-    18.28s  user  발화 끝
-    26.11s  user  발화 시작: 음.
-    26.43s  user  발화 끝
-    28.40s  agent 발화 끝
-    28.49s  user  발화 시작: 아, 그렇구나.
-    29.64s  user  발화 끝
-    29.80s  agent 발화 시작: 혹시 다른 세션에 대해서도 궁금하신 점이 있으신가요?
-    32.76s  agent 발화 끝
-    32.90s  user  발화 시작: 아니, 괜찮아. 그런데, 오늘 서울 날씨는 어때?
-    35.76s  <ret> 발화 (turn9 첫 프레임)
-    36.16s  agent 발화 시작: <ret> 지금 서울은 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있습니다.
-    36.16s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.02s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    36.42s  user  발화 끝
-    38.52s  user  발화 시작: 진짜요?
-    39.24s  user  발화 끝
-    44.18s  agent 발화 끝
-    44.29s  user  발화 시작: 흐음, 좋네.
-    45.87s  agent 발화 시작: 날씨가 좋으니 기분도 좋아지는 것 같아요. 혹시 오늘 특별한 계획이 있으신가요?
-    46.04s  user  발화 끝
-    47.37s  user  발화 시작: 음.
-    47.87s  user  발화 끝
-    50.69s  user  발화 시작: 글쎄, 아직은 잘 모르겠어. 저녁에 영화 볼까 하는데…
-    50.73s  agent 발화 끝
-    54.71s  agent 발화 시작: 영화를 보시는군요! 어떤 장르를 좋아하시나요? 혹시 보고 싶은 영화가 있으세요?
-    54.72s  user  발화 끝
-    59.66s  agent 발화 끝
-    61.60s  user  발화 시작: 음… 로맨틱 코미디나 볼까 생각 중이야.
-    65.05s  <ret> 발화 (turn17 첫 프레임)
-    65.29s  agent 발화 시작: <ret> 이천삼년에 리처드 커티스가 감독한 '러브 액츄얼리'는 어떠세요? 로맨틱 코미디 장르의 대표작이죠.
-    65.29s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.46s]: (tool result) "Love Actually", directed by Richard Curtis, released in
-    65.30s  user  발화 끝
-    70.75s  agent 발화 끝
-    70.84s  user  발화 시작: 아, 그거 재밌지.
-    72.14s  agent 발화 시작: 정말 그렇죠? 많은 분들이 좋아하시는 영화예요. 혹시 다른 영화도 찾아볼까요?
-    72.17s  user  발화 끝
-    76.61s  user  발화 시작: 아니, 그거로 할게. 혹시 이번 주 토요일에 근처에 괜찮은 레스토랑 예약해 줄 수 있어?
-    76.63s  agent 발화 끝
-    81.77s  <ret> 발화 (turn21 첫 프레임)
-    82.01s  agent 발화 시작: <ret> 이번 주 토요일 저녁 일곱시에 '라 피아짜'라는 이탈리아 레스토랑이 예약 가능합니다. 평점이 사 
-    82.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: (tool result) "La Piazza", Italian, 4.5 stars, 12 reviews, available 7
-    82.21s  user  발화 끝
-    91.52s  agent 발화 끝
-    91.71s  user  발화 시작: 좋아, 거기 예약해 줘.
-    93.48s  <ret> 발화 (turn23 첫 프레임)
-    93.64s  agent 발화 시작: <ret> 네, '라 피아짜'에 이번 주 토요일 저녁 일곱시로 예약이 완료되었습니다. 확인 번호는 엘 피 칠
-    93.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) Reservation confirmed: La Piazza, 2026-07-12 19:00, conf
-    93.69s  user  발화 끝
-   101.70s  agent 발화 끝
-   102.69s  user  발화 시작: 알았어. 고마워.
-   103.95s  agent 발화 시작: 천만에요. 즐거운 저녁 식사 되시길 바랍니다.
-   104.11s  user  발화 끝
-   106.53s  agent 발화 끝
-   106.61s  user  발화 시작: 음… 혹시 지난달에 내가 뭐라고 메모했었는지 기억해 줄 수 있어?
-   111.19s  user  발화 끝
-   111.34s  agent 발화 시작: 어떤 메모를 말씀하시는 건가요? 정확한 날짜를 알려주시면 더 정확하게 찾아드릴 수 있습니다.
-   117.13s  agent 발화 끝
-   117.40s  user  발화 시작: 이천이십육년 유월 이십일.
-   119.15s  <ret> 발화 (turn29 첫 프레임)
-   119.47s  agent 발화 시작: <ret> 이천이십육년 유월 이십일에는 '오늘 엄마와 다퉜다. 너무 심하게 말해서 후회한다'라고 메모하셨네요
-   119.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: [2026-06-20] 오늘 엄마와 다퉜다. 너무 심하게 말해서 후회한다.
-   119.71s  user  발화 끝
-   121.85s  user  발화 시작: 예.
-   122.35s  user  발화 끝
-   125.91s  agent 발화 끝
-   127.18s  user  발화 시작: 아, 맞아.
-   128.64s  agent 발화 시작: 가족과의 관계는 때때로 어려울 수 있지만, 진심으로 사과하면 대부분 잘 풀리는 것 같아요. 혹시 지금 기분이
-   128.80s  user  발화 끝
-   136.43s  agent 발화 끝
-   136.68s  user  발화 시작: 조금 나아졌어.
-   137.83s  user  발화 끝
-   137.97s  agent 발화 시작: 다행이네요. 긍정적인 마음을 가지는 건 정말 중요해요.
-   141.66s  agent 발화 끝
+     0.00s  user  발화 시작: 이번 주 토요일에 서울 날씨 어때?
+     2.04s  <ret> 발화 (turn1 첫 프레임)
+     2.20s  agent 발화 시작: <ret> 이번 주 토요일 서울 날씨는 이십팔 점 오도, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터로 
+     2.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) Temperature: 28.5°C, humidity: 65%, wind: 3.2 km/h, cond
+     2.31s  user  발화 끝
+    10.77s  agent 발화 끝
+    11.18s  user  발화 시작: 그럼 일요일은?
+    11.89s  <ret> 발화 (turn3 첫 프레임)
+    12.21s  agent 발화 시작: <ret> 일요일은 삼십 점 일도까지 올라가고, 습도는 칠십%로 조금 더 높아지겠어요. 맑은 날씨가 예상됩니
+    12.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Temperature: 30.1°C, humidity: 70%, wind: 4.8 km/h, cond
+    12.42s  user  발화 끝
+    18.56s  agent 발화 끝
+    20.07s  user  발화 시작: 아, 그렇군요. 혹시 다음 주 화요일에 부산은 어때요?
+    23.05s  <ret> 발화 (turn5 첫 프레임)
+    23.45s  agent 발화 시작: <ret> 다음 주 화요일 부산은 이십육 점 구도이고, 습도가 칠십팔%로 높겠습니다. 비가 올 가능성이 있어
+    23.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Temperature: 26.9°C, humidity: 78%, wind: 6.1 km/h, cond
+    23.63s  user  발화 끝
+    25.73s  user  발화 시작: 진짜?
+    26.36s  user  발화 끝
+    30.30s  user  발화 시작: 비가 온다고요? 그럼 우산 챙겨야겠네.
+    30.54s  agent 발화 끝
+    32.80s  agent 발화 시작: 네, 우산을 챙기시는 게 좋겠어요. 혹시 다른 계획 있으신가요?
+    32.88s  user  발화 끝
+    36.24s  user  발화 시작: 아니, 그냥 궁금해서 물어봤어. 그… 요즘 사람들한테 추천하는 여행지가 있어?
+    36.31s  agent 발화 끝
+    41.99s  <ret> 발화 (turn10 첫 프레임)
+    42.07s  agent 발화 시작: <ret> 음… 사람들에게 인기 있는 여행지를 찾아서 알려드릴까요?
+    42.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.40s]: (tool result) Jeju Island, South Korea is a popular destination known 
+    42.22s  user  발화 끝
+    46.44s  agent 발화 시작: 제주도는 화산 지형과 해변, 그리고 하이킹 코스로 유명하고, 그리스 산토리니는 하얀 마을과 아름다운 석양으로
+    46.46s  agent 발화 끝
+    52.39s  user  발화 시작: 어어.
+    53.02s  user  발화 끝
+    54.97s  agent 발화 끝
+    55.10s  agent 발화 시작: 네, 두 곳 모두 아름다운 곳이죠. 혹시 특별히 선호하는 스타일이 있으신가요? —
+    59.10s  user  발화 시작: … 사실 요즘 좀 스트레스 받아서, 조용하고 편안한 곳으로 가고 싶어.
+    59.82s  agent 발화 끝
+    63.43s  <ret> 발화 (turn15 첫 프레임)
+    63.49s  user  발화 끝
+    63.51s  agent 발화 시작: <ret> 아, 스트레스를 받으셨군요. 조용하고 편안한 곳을 원하시는군요.
+    63.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: (tool result) The Maldives is an island nation in the Indian Ocean kno
+    66.75s  agent 발화 시작: 몰디브는 인도양에 있는 섬나라로 고급 리조트, 깨끗한 해변, 그리고 조용한 분위기로 유명합니다. 일본 교토는
+    66.88s  agent 발화 끝
+    77.60s  agent 발화 끝
+    78.50s  user  발화 시작: 몰디브는 너무 비쌀 것 같고… 교토는 괜찮겠다.
+    81.83s  user  발화 끝
+    81.95s  agent 발화 시작: 교토는 조용하고 평화로운 곳이라 스트레스 해소에 도움이 될 거예요.
+    84.49s  user  발화 시작: 응.
+    84.94s  user  발화 끝
+    85.98s  agent 발화 끝
+    87.89s  user  발화 시작: 교토에 가는 방법 좀 알려줄래?
+    89.78s  <ret> 발화 (turn21 첫 프레임)
+    89.94s  agent 발화 시작: <ret> 서울에서 교토로 가는 직항은 없어요. 환승 한 번 하는 항공편은 보통 여덟시간에서 열두시간 정도 
+    89.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.32s]: (tool result) There are no direct flights from Seoul to Kyoto. Flights
+    90.01s  user  발화 끝
+    95.64s  user  발화 시작: 오.
+    96.14s  user  발화 끝
+    99.26s  agent 발화 끝
+   101.23s  user  발화 시작: 꽤 비싸네…
+   102.51s  user  발화 끝
+   102.55s  agent 발화 시작: 네, 가격이 조금 부담스러울 수도 있겠네요. 다른 방법도 찾아볼까요?
+   105.49s  user  발화 시작: 응.
+   105.93s  user  발화 끝
+   106.37s  user  발화 시작: 음… 괜찮아. 그냥 교토에 대한 정보 좀 더 알려줘.
+   106.38s  agent 발화 끝
+   109.91s  <ret> 발화 (turn27 첫 프레임)
+   110.30s  agent 발화 시작: <ret> 후시미 이나리 신사는 수천 개의 선명한 붉은 도리이 문으로 유명하고, 금각사는 금박으로 덮인 멋진
+   110.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.95s]: (tool result) Fushimi Inari Shrine is famous for its thousands of vibr
+   110.39s  user  발화 끝
+   126.25s  agent 발화 끝
+   127.39s  user  발화 시작: 와, 사진으로 봤는데 정말 예쁘더라.
+   129.87s  agent 발화 시작: 네, 실제로 가면 훨씬 더 아름다울 거예요.
+   129.97s  user  발화 끝
+   130.63s  user  발화 시작: 응.
+   130.98s  user  발화 끝
+   132.31s  agent 발화 끝
+   132.68s  user  발화 시작: 혹시 교토에서 맛있는 음식점도 추천해 줄 수 있어?
+   135.84s  <ret> 발화 (turn32 첫 프레임)
+   136.00s  agent 발화 시작: <ret> 니시키 시장은 다양한 현지 음식과 간식을 제공하고, 혼케 오와리야는 천사백육십오년에 설립된 전통 
+   136.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.75s]: (tool result) Nishiki Market offers a variety of local foods and snack
+   136.20s  user  발화 끝
+   143.29s  user  발화 시작: 그래.
+   143.79s  user  발화 끝
+   148.74s  agent 발화 끝
+   149.63s  user  발화 시작: 가이세키 요리… 뭔가 고급스러워 보이네.
+   153.06s  agent 발화 시작: 네, 가이세키 요리는 일본의 전통적인 코스 요리입니다.
+   153.15s  user  발화 끝
+   155.00s  user  발화 시작: 응.
+   155.41s  user  발화 끝
+   156.24s  user  발화 시작: 아, 그렇구나. 마지막으로…
+   156.62s  agent 발화 끝
+   158.96s  user  발화 끝
+   160.81s  user  발화 시작: …교토에 가면 꼭 사야 할 기념품이 있을까?
+   163.31s  <ret> 발화 (turn39 첫 프레임)
+   163.71s  agent 발화 시작: <ret> 기요미즈야키 도자기와 니시진오리 직물과 같은 전통 공예품이 인기 있고, 말차 맛 과자와 차도 널리
+   163.71s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.21s]: (tool result) Traditional crafts like Kiyomizu-yaki pottery and Nishij
+   163.76s  user  발화 끝
+   171.92s  agent 발화 끝
+   173.22s  user  발화 시작: 알았어. 정보 고마워.
+   174.93s  agent 발화 시작: 천만에요. 도움이 되었다니 기쁩니다.
+   175.14s  user  발화 끝
+   177.70s  agent 발화 끝

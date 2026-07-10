@@ -4,102 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Casey",
+#     "name": "Julian",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
+#     "nationality": "German",
+#     "gender": "male",
 #     "age_range": "late 20s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-15",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
+#       "date": "2025-11-26",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     },
 #     {
-#       "date": "2026-02-27",
+#       "date": "2025-09-27",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-09-08",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-29",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-08-26",
+#       "date": "2025-07-28",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-08-01",
-#       "category": "work",
-#       "text": "User works as a accountant."
+#       "date": "2025-07-01",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-07",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-01",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-01",
+#       "date": "2025-10-13",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, a life coach? That’s… unexpect | S2 Maybe. I was thinking a museum, bu | S3 I haven’t, actually. Are there man | S4 That sounds good. Really good, act
+# EXAMINER(FDB-v2) 단계: S1 Heon… that’s an unusual name. What | S2 Space within… sounds a bit vague,  | S3 …is it normal to feel this way, th | S4 That’s… reassuring, actually. Mayb
 
-     0.00s  agent 발화 시작: Hello Casey, it’s lovely to connect with you. My name is Bia
-     7.88s  agent 발화 끝
-     7.92s  user  발화 시작: Oh, a life coach? That’s… unexpected. I just needed someone 
-    15.38s  user  발화 끝
-    15.74s  agent 발화 시작: It’s perfectly alright to feel a little surprised, Casey. Fi
-    25.01s  agent 발화 끝
-    26.34s  user  발화 시작: Well, she’s eight, loves art, but gets really bored easily. 
-    33.95s  user  발화 끝
-    34.18s  agent 발화 시작: That’s a common challenge with bright young minds! It sounds
-    36.52s  user  발화 시작: Yeah.
-    37.01s  user  발화 끝
-    40.44s  user  발화 시작: Maybe. I was thinking a museum, but they're so… quiet. She'd
-    41.12s  agent 발화 끝
-    47.81s  user  발화 끝
-    48.19s  agent 발화 시작: Museums can be tricky with energetic children. It's about fi
-    57.56s  user  발화 시작: I haven’t, actually. Are there many of those around London?
-    57.70s  agent 발화 끝
-    61.49s  agent 발화 시작: There are quite a few options, actually. The Little Artists'
-    61.58s  user  발화 끝
-    65.19s  user  발화 시작: Mm-hmm.
-    65.82s  user  발화 끝
-    70.27s  user  발화 시작: Twenty-five pounds… that’s not bad, I suppose. Is it a big c
-    70.39s  agent 발화 끝
-    76.62s  user  발화 끝
-    76.69s  agent 발화 시작: The classes are kept quite small, with a maximum of twelve c
-    83.04s  agent 발화 끝
-    83.17s  user  발화 시작: That sounds good. Really good, actually. Thanks, Bian.
-    86.31s  user  발화 끝
-    86.37s  agent 발화 시작: You’re very welcome, Casey. It’s often the small, thoughtful
-    97.41s  agent 발화 끝
+     0.00s  agent 발화 시작: Guten Tag, Julian.
+     1.33s  agent 발화 끝
+     1.40s  user  발화 시작: Heon… that’s an unusual name. What exactly *do* you do?
+     6.41s  user  발화 끝
+     6.82s  agent 발화 시작: I guide people towards greater wellbeing, Julian, by explori
+    15.03s  agent 발화 끝
+    16.34s  user  발화 시작: Space within… sounds a bit vague, honestly. I’m just really 
+    22.37s  user  발화 끝
+    22.52s  agent 발화 시작: It’s perfectly understandable to feel overwhelmed by work— m
+    31.45s  agent 발화 시작: Perhaps we could start by identifying the root of the stress
+    31.47s  agent 발화 끝
+    36.02s  user  발화 시작: …is it normal to feel this way, though? Like, *everyone* at 
+    36.77s  agent 발화 끝
+    42.37s  user  발화 끝
+    42.81s  agent 발화 시작: It's very common to compare ourselves to others, Julian, and
+    51.62s  user  발화 시작: That’s… reassuring, actually. Maybe I just need to learn to 
+    51.81s  agent 발화 끝
+    55.94s  agent 발화 시작: Developing coping mechanisms is a wonderful step. We could e
+    56.11s  user  발화 끝
+    61.90s  agent 발화 끝

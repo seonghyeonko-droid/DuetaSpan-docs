@@ -1,72 +1,46 @@
 v3_mem_33_en src=mem style=mem
-SYSTEM: <system> You are Dunar, a curious and validating wellness coach who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Runaus, a warm and attentive counselor who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_33",
-    "name": "Dylan",
+    "name": "Taylor",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
-    "gender": "male",
-    "age_range": "early 20s",
-    "language": "German"
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-02-02",
-      "category": "home",
-      "text": "User's home address is 635 Pine Court."
-    },
-    {
-      "date": "2025-10-08",
+      "date": "2026-05-01",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-09-11",
-      "category": "work",
-      "text": "User works as a accountant."
-    },
-    {
-      "date": "2025-08-15",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-07-30",
+      "date": "2026-01-21",
       "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-05-29",
+      "date": "2025-09-06",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-07-27",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-17",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-03-20",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-02-14",
+      "date": "2025-07-05",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -77,9 +51,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Dylan, I'm Dunar. It's lovely to connect with you.
-[  3.39s][user ] Um, what time is it right now?
-[  5.53s][moshi] ⟨ret@5.37s⟩ ⟦⚡SPAN@5.53s: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Berlin, Germany.⟧ It’s currently 2:35 PM in Berlin, Germany. A perfect time to pause and check in with yourself, don't you think?
+[  0.00s][moshi] Hi Taylor, I'm Runaus. It's lovely to meet you.
+[  1.52s][user ] «backchannel» Yeah, yeah.
+[  3.26s][user ] Hi Runaus, it's good to meet you too. What time is it right now?
+[  7.33s][moshi] ⟨ret@7.17s⟩ ⟦⚡SPAN@7.33s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Toronto, Canada right now.⟧ It’s currently 2:37 PM in Toronto, Canada. A perfect time for a little self-care, perhaps?
       CALL: {"function": "get_time", "arguments": {}}
-[ 12.30s][user ] Oh, right. And, uh, do I have any appointments ⟨ret@16.04s⟩ tomorrow?
-[ 16.28s][moshi] ⟦⚡SPAN@16.28s: [2026-03-20] Past chat — Setting up a home network: asked about mesh routers; coverage for a 3-story house.⟧ I have a note from March twentieth that you were setting up a home network, but no appointments listed for tomorrow.
+[  9.34s][user ] «backchannel» Nice.
+[ 13.97s][user ] That's good to know. I was wondering, do you remember what I said about my ⟨ret@19.40s⟩ cat?
+[ 19.64s][moshi] ⟦⚡SPAN@19.64s: [2025-09-06] User has a tabby cat named Luna.⟧ Yes, I do! You have a beautiful tabby cat named Luna.
+[ 24.72s][user ] Luna's been getting into everything.
+[ 27.00s][moshi] «interrupted» It’s quite common for cats to explore—
+[ 29.00s][user ] «interrupts_prev» …do you have any advice for keeping a curious cat entertained?
+[ 33.52s][moshi] Ah, a very good question! Keeping a curious cat occupied is a common challenge. Enrichment is key—
+[ 40.70s][moshi] Providing Luna with puzzle toys, scratching posts, and dedicated playtime can really help redirect her energy and satisfy her natural instincts.

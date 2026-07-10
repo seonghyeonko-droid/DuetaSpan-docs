@@ -1,10 +1,10 @@
 v3_rags_29_en src=nq_single style=rag_single
-SYSTEM: <system> You are Brilo, a kind and steady personal guide who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Friami, a practical and reassuring counselor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_29",
-    "name": "Morgan",
+    "name": "Elsa",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,50 +12,52 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "gender": "female",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-11",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2026-01-29",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-03-06",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2026-02-24",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2025-10-09",
+      "date": "2026-01-22",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-07-03",
-      "category": "home",
-      "text": "User's home address is 177 Cedar Lane."
+      "date": "2025-07-26",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2025-06-21",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-03",
-      "title": "Apartment hunting downtown",
+      "date": "2026-05-05",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How many Yes Bank…
-[  3.19s][user ] …branches are there in ⟨ret@4.68s⟩ India?
-[  5.00s][moshi] ⟦⚡SPAN@5.00s: Yes Bank currently has six hundred and thirty branches across India.⟧ There are six hundred and thirty Yes Bank branches in India. It’s good to know where your banking options are!
+[  0.00s][user ] When did the Olympic Games officially separate their summer and winter events?
+[  5.04s][moshi] ⟨ret@4.72s⟩ ⟦⚡SPAN@5.04s: The International Olympic Committee formally separated the Summer and Winter Olympic Games in 1924 after the C⟧ Well, it seems the International Olympic Committee officially made that split in nineteen twenty-four, following the Winter Games at Chamonix. It’s good to have clarity on these historical milestones, isn’t it?

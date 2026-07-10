@@ -4,110 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_27",
-#     "name": "재완",
+#     "name": "세린",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
-#       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "date": "2026-04-12",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-04-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in May."
-#     },
-#     {
-#       "date": "2026-03-09",
+#       "date": "2026-02-16",
 #       "category": "hobby",
 #       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-01-03",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2026-02-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-07-18",
+#       "date": "2025-11-01",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-08-11",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2025-08-10",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-26",
-#       "title": "Researching a used car",
+#       "date": "2026-04-26",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-07",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 테렌초라는 도시가 이탈리아 어느 지방에 있어? | S2 취미는… 글쎄. | S3 성이 있구나. 사진 좀 찾아봐 줘. | S4 그냥 좀 외롭네.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 요즘 친구 사귀는 게 너무 어렵네요. | S2 좋은 생각이에요. 혹시 클래식 음악 관련 모임 같은 거 있을까 | S3 그래미상을 받았다고요? 어떤 동화에서 영감을 받은 곡이에요? | S4 아, 흥미롭네요. 혹시 지금 제 주변에 비슷한 모임이 있는지 
 
-     0.00s  user  발화 시작: 테렌초라는 도시가 이탈리아 어느 지방에 있어?
-     2.95s  <ret> 발화 (turn1 첫 프레임)
-     3.03s  agent 발화 시작: <ret> 테렌초는 이탈리아 북부의 에밀리아로마냐 지방, 파르마 현에 있는 도시랍니다. 새로운 친구를 사귀고
-     3.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.66s]: Terenzo is a city in the Province of Parma, located in the Emilia-Roma
-     3.29s  user  발화 끝
-    11.55s  user  발화 시작: 에밀리아로마냐? 거긴 어떤 곳이야?
-    11.69s  agent 발화 끝
-    13.90s  <ret> 발화 (turn3 첫 프레임)
-    13.99s  user  발화 끝
-    14.06s  agent 발화 시작: <ret> 에밀리아로마냐는 토르텔리니와 딸리아텔레 같은 파스타, 발사믹 식초, 파르미지아노 레지아노 치즈 등
-    14.06s  ⚡SPAN 주입 [d'=1.44s / d_lead=12.10s]: Emilia-Romagna is known for its culinary traditions, including pasta d
-    20.08s  user  발화 시작: 응.
-    20.48s  user  발화 끝
-    26.16s  agent 발화 끝
-    26.18s  user  발화 시작: 맛있는 거 좋아하지. 근데 파르마 현은 또 뭐야?
-    29.19s  <ret> 발화 (turn6 첫 프레임)
-    29.42s  agent 발화 시작: <ret> 파르마 현은 에밀리아로마냐 지방의 이탈리아 현으로, 파르미지아노 레지아노 치즈와 프로슈토 생산으로
-    29.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: The Province of Parma is an Italian province in the Emilia-Romagna reg
-    29.60s  user  발화 끝
-    32.81s  user  발화 시작: 응.
-    33.21s  user  발화 끝
-    39.12s  agent 발화 끝
-    39.60s  user  발화 시작: 취미는… 글쎄.
-    42.05s  user  발화 끝
-    42.07s  agent 발화 시작: 취미를 찾는 건 자신을 더 알아가는 과정이기도 하죠. —
-    44.46s  user  발화 시작: … 혹시 테렌초에 유명한 관광지가 있어?
-    45.18s  user  발화 시작: 응.
-    45.21s  agent 발화 끝
-    45.59s  user  발화 끝
-    46.61s  <ret> 발화 (turn12 첫 프레임)
-    46.76s  agent 발화 시작: <ret> 테렌초 성은 중세 시대의 성으로 주변 시골의 탁 트인 전망을 제공한답니다. 좋은 친구는 서로의 꿈
-    46.77s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.14s]: The Castle of Terenzo is a medieval castle located in Terenzo, offerin
-    46.95s  user  발화 끝
-    51.82s  user  발화 시작: 응.
-    52.23s  user  발화 끝
-    53.76s  user  발화 시작: 성이 있구나. 사진 좀 찾아봐 줘.
-    53.90s  agent 발화 끝
-    56.05s  <ret> 발화 (turn15 첫 프레임)
-    56.38s  agent 발화 시작: <ret> 테렌초 성 사진을 찾아봤는데, 멋진 사진들이 많네요. 사진을 함께 보면서 추억을 만드는 것도 즐거
-    56.38s  ⚡SPAN 주입 [d'=0.88s / d_lead=6.95s]: (tool result) Here are some photos of the Castle of Terenzo: image URL
-    56.58s  user  발화 끝
-    63.33s  agent 발화 끝
-    63.41s  user  발화 시작: 와, 진짜 예쁘다.
-    65.03s  user  발화 끝
-    65.38s  agent 발화 시작: 그렇죠? 아름다운 풍경을 함께 나누는 건 정말 행복한 일이에요. 혹시 지금 기분이 어떠세요?
-    70.70s  agent 발화 끝
-    70.84s  user  발화 시작: 그냥 좀 외롭네.
-    72.13s  agent 발화 시작: 외로움을 느낄 땐, 솔직하게 자신의 감정을 표현하는 게 중요해요. 감정을 숨기기보다는 누군가에게 털어놓는 것
-    72.27s  user  발화 끝
-    79.54s  agent 발화 끝
-    80.99s  user  발화 시작: 고마워, 누이아.
-    82.26s  agent 발화 시작: 천만에요. 언제든지 제가 옆에 있다는 것을 기억하세요. 친구를 만드는 건 시간이 걸릴 수 있지만, 포기하지 
-    82.32s  user  발화 끝
-    92.27s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요. 요즘 친구 사귀는 게 너무 어렵네요.
+     3.23s  agent 발화 시작: 안녕하세요. 친구 관계에 어려움을 느끼시는군요. 어떤 점이 가장 힘든지 말씀해 주시겠어요?
+     3.37s  user  발화 끝
+     8.67s  user  발화 시작: 음… 새로운 사람을 만날 기회가 잘 없어요.
+     8.88s  agent 발화 끝
+    11.90s  user  발화 끝
+    12.20s  agent 발화 시작: 새로운 사람을 만나는 기회가 없는군요. 혹시 어떤 활동을 좋아하시는지 알려주실 수 있을까요?
+    14.93s  user  발화 시작: 예.
+    15.43s  user  발화 끝
+    17.82s  agent 발화 시작: 관심사를 중심으로 모임에 참여해 보는 건 어떠세요? 비슷한 취미를 가진 사람들을 만날 수 있을 거예요.
+    17.85s  agent 발화 끝
+    21.31s  user  발화 시작: 네.
+    21.80s  user  발화 끝
+    23.75s  user  발화 시작: 좋은 생각이에요. 혹시 클래식 음악 관련 모임 같은 거 있을까요?
+    23.75s  agent 발화 끝
+    27.82s  <ret> 발화 (turn8 첫 프레임)
+    27.97s  agent 발화 시작: <ret> 천구백육십구년에 요 브루스 예가 챔버 뮤직 소사이어티 오브 링컨 센터를 설립했는데, 그 단체가 천
+    27.98s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.80s]: (tool result) Joh Bruce Yeh founded the Chamber Music Society of Linco
+    28.24s  user  발화 끝
+    35.26s  user  발화 시작: 그렇군요.
+    36.07s  user  발화 끝
+    38.77s  agent 발화 끝
+    39.27s  user  발화 시작: 그래미상을 받았다고요? 어떤 동화에서 영감을 받은 곡이에요?
+    43.59s  <ret> 발화 (turn11 첫 프레임)
+    43.82s  agent 발화 시작: <ret> 곡은 러시아 민담인 '도망간 병사와 악마'를 바탕으로 만들어졌다고 해요.
+    43.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: The work is based on the Russian folk tale, The Runaway Soldier and th
+    43.90s  user  발화 끝
+    48.78s  user  발화 시작: 아, 흥미롭네요. 혹시 지금 제 주변에 비슷한 모임이 있는지 알아봐 주실 수 있을까요?
+    48.85s  agent 발화 끝
+    54.61s  <ret> 발화 (turn13 첫 프레임)
+    54.84s  agent 발화 시작: <ret> 주변의 클래식 음악 관련 모임 정보를 찾을 수 없네요. 죄송합니다.
+    54.85s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.92s]: (no information found)
+    54.99s  user  발화 끝
+    58.71s  agent 발화 시작: 다른 방법으로 찾아볼까요?
+    58.76s  agent 발화 끝
+    60.32s  agent 발화 끝

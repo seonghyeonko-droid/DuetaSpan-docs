@@ -1,46 +1,56 @@
 v3_pause_16_en src=nq style=v1
-SYSTEM: <system> You are Droral, a warm and attentive supportive advisor who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Iano, a upbeat and supportive personal guide who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Andrea",
+    "name": "Hugo",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
-    "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "English"
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "50s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-11-07",
+      "date": "2026-03-08",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-08-15",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2025-07-27",
+      "date": "2026-02-11",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-06-25",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
+      "date": "2025-12-12",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-09-15",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-08-30",
+      "category": "home",
+      "text": "User's home address is 754 Birch Road."
+    },
+    {
+      "date": "2025-07-28",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-19",
+      "date": "2026-04-13",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -48,61 +58,35 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-12-08",
-      "title": "Researching a used car",
+      "date": "2025-09-07",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was wondering who is in the ⟨ret@2.10s⟩ band Gorillaz?
-[  2.41s][moshi] ⟦⚡SPAN@2.42s: Gorillaz is a British virtual band formed in 1998 by musician Damon Albarn and artist Jamie Hewlett.⟧ Gorillaz came to be in nineteen ninety-eight, formed by Damon Albarn and the artist Jamie Hewlett. It’s wonderful you’re curious about music!
-[ 10.41s][user ] «backchannel» Mhm.
-[ 12.93s][user ] Oh, that’s cool. Are there other members besides them?
-[ 16.28s][moshi] There have been several collaborators over the years. It’s like building a really creative team!
-[ 22.74s][user ] Hmm, can you name some ⟨ret@23.91s⟩ of them?
-[ 24.14s][moshi] ⟦⚡SPAN@24.15s: The most prominent collaborators include 2-D, Murdoc Niccals, Noodle, and Russel Hobbs.⟧ The core group includes 2-D, Murdoc Niccals, Noodle, and Russel Hobbs—they all contribute so much.
-[ 27.65s][user ] «backchannel» Oh.
-[ 33.02s][user ] 2-D… that’s a funny name. What does he ⟨ret@35.68s⟩ do?
-[ 36.08s][moshi] ⟦⚡SPAN@36.08s: 2-D is the lead vocalist and keyboardist for the virtual band Gorillaz.⟧ 2-D is the lead vocalist and keyboardist, lending his voice to so many of their songs.
-[ 43.13s][user ] What about Noodle? What's her role?
-[ 45.19s][moshi] ⟨ret@45.11s⟩ ⟦⚡SPAN@45.19s: Noodle is the guitarist and occasional vocalist for Gorillaz, known for her distinctive style.⟧ Noodle plays guitar and sometimes sings—she's known for her really distinctive style.
-[ 51.33s][user ] And Murdoc? I’ve heard that name ⟨ret@53.32s⟩ before.
-[ 53.63s][moshi] ⟦⚡SPAN@53.64s: Murdoc Niccals is the bassist and self-proclaimed leader of Gorillaz, known for his chaotic personality.⟧ Murdoc plays bass and considers himself the leader, though he’s known for being a bit chaotic!
-[ 59.93s][user ] Chaotic, huh? Sounds interesting. Is Russel Hobbs the ⟨ret@63.53s⟩ drummer?
-[ 63.92s][moshi] ⟦⚡SPAN@63.93s: Russel Hobbs is the drummer for Gorillaz, and is possessed by the spirit of Del the Ghost.⟧ Russel Hobbs is the drummer, and a fascinating story surrounds him—he’s possessed by Del the Ghost.
-[ 72.49s][user ] Possessed? That’s a little spooky!
-[ 74.51s][moshi] It adds to their unique mythology, doesn’t it? It's about creativity and storytelling!
-[ 80.53s][user ] So, those four are the main ones?
-[ 82.68s][moshi] They form the central creative core of Gorillaz, yes. They’ve all brought so much to the project.
-[ 85.39s][user ] «backchannel» Yeah.
-[ 89.89s][user ] I’m curious about their first ⟨ret@91.79s⟩ song…
-[ 91.94s][moshi] ⟦⚡SPAN@91.95s: (tool result) Gorillaz' debut single, "Clint Eastwood," was released in 2001 and became a commercial success.⟧ Their first single, "Clint Eastwood," came out in two thousand and one, and it became a big hit.
-      CALL: {"function": "search", "arguments": {"query": "Gorillaz first song"}}
-[ 98.64s][user ] Two thousand one… that…
-[102.68s][user ] …was a long time ago!—
-[104.12s][user ] …What kind of music would you say they play?
-[106.77s][moshi] ⟨ret@106.70s⟩ ⟦⚡SPAN@106.78s: Gorillaz' music incorporates alternative rock, hip hop, electronic music, and pop influences.⟧ Their music blends alternative rock, hip hop, electronic music, and pop influences—it’s quite a mix.
-[112.05s][user ] «backchannel» Mm-hmm.
-[114.90s][moshi] It’s really experimental and always evolving, which is what makes it so exciting. As a supporter, I admire that.
-[123.40s][user ] Do they have any awards?
-[124.88s][moshi] ⟨ret@124.81s⟩ ⟦⚡SPAN@124.89s: Gorillaz have won numerous awards, including a Brit Award for Best British Band in 2007.⟧ They've won many awards, including a Brit Award for Best British Band in two thousand and seven.
-[128.46s][user ] «backchannel» Oh.
-[132.56s][user ] A Brit Award, that’s impressive. What…
-[135.90s][user ] …about albums? How many have they ⟨ret@138.04s⟩ released?
-[138.28s][moshi] ⟦⚡SPAN@138.28s: Gorillaz have released seven studio albums, with the most recent being "Cracker Island" in 2023.⟧ They’ve released seven studio albums, the newest one being “Cracker Island” in twenty twenty-three.
-[145.94s][user ] Seven albums… that’s a lot of music.
-[148.27s][moshi] It certainly is! A wonderful amount of creativity to explore. Perhaps you’d enjoy listening to them?
-[153.69s][user ] «backchannel» Uh-huh.
-[157.31s][user ] I think I will. Is there a way to play their music ⟨ret@160.60s⟩ online?
-[160.84s][moshi] ⟦⚡SPAN@160.84s: (tool result) Now playing: "Feel Good Inc." by Gorillaz on Spotify.⟧ I’m now playing “Feel Good Inc.” by Gorillaz on Spotify for you.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"artist": "Gorillaz"}}
-[162.50s][user ] «backchannel» Right.
-[165.50s][user ] Oh, nice! I love that song.
-[167.96s][moshi] It's a classic, isn't it? Music can be such a great source of motivation.
-[173.24s][user ] It really is. Thanks for all the information!
-[175.71s][moshi] You're very welcome. I'm happy I could share their story with you. Remember, staying curious is a great habit!
+[  0.00s][user ] Hey Iano, do you know how many medals India won at the 2018 Asian ⟨ret@3.81s⟩ Games?
+[  4.11s][moshi] ⟦⚡SPAN@4.13s: India won a total of 69 medals at the 2018 Asian Games, including 16 gold medals, 23 silver medals, and 30 bro⟧ Well, India really shone at the 2018 Asian Games, taking home a total of sixty-nine medals! That’s a fantastic achievement, isn’t it?
+[ 14.61s][user ] Sixty-nine… wow. Uh, what about the weather in Seoul right ⟨ret@18.27s⟩ now?
+[ 18.66s][moshi] ⟦⚡SPAN@18.67s: The current weather in Seoul is 26.0°C, humidity 78%, wind 4.1 km/h.⟧ The weather in Seoul is currently twenty-six degrees Celsius, with seventy-eight percent humidity and a light breeze. Sounds pretty nice!
+[ 28.83s][user ] That does sound nice. I'm thinking of going to a ⟨ret@32.07s⟩ movie.
+[ 32.23s][moshi] ⟦⚡SPAN@32.23s: It is Friday, July 10, 2026 at 2:41 PM in Asia/Seoul right now.⟧ —but first, I was wondering, what time is it there right now? It's currently two forty-one PM in Seoul on Friday, July tenth. Plenty of time to catch a film!
+[ 43.98s][user ] Perfect. … I’m looking for action movies.
+[ 46.99s][moshi] ⟨ret@46.92s⟩ ⟦⚡SPAN@47.00s: "Mission: Impossible - Dead Reckoning Part One" is playing at Lotte Cinema World Tower at 3:00 PM, 6:00 PM, an⟧ "Mission: Impossible - Dead Reckoning Part One" is showing at Lotte Cinema World Tower at three, six, and nine PM.
+[ 50.82s][user ] «backchannel» Yeah.
+[ 55.39s][moshi] Thinking about the three o’clock showing? It’s a great option if you want to make the most of the afternoon.
+[ 58.91s][user ] «backchannel» Really?
+[ 61.95s][user ] Is there anything else…
+[ 65.35s][user ] …playing around that ⟨ret@66.34s⟩ time?
+[ 66.66s][moshi] ⟦⚡SPAN@66.66s: "Bad Boys: Ride or Die" is playing at Megabox Coex at 3:15 PM and 6:30 PM.⟧ Actually, “Bad Boys: Ride or Die” is playing at Megabox Coex at three fifteen and six thirty. A bit of a different vibe!
+[ 74.74s][user ] That sounds fun too. Iano…
+[ 77.78s][user ] …can you find restaurants ⟨ret@79.46s⟩ nearby?
+[ 79.85s][moshi] ⟦⚡SPAN@79.86s: There are many restaurants in Seoul, including Gaeseong Mandu Koong, known for its dumplings, and Hadongkwan, ⟧ Seoul is full of delicious options! You could try Gaeseong Mandu Koong for dumplings or Hadongkwan for Korean beef soup.
+[ 83.23s][user ] «backchannel» Yeah.
+[ 89.10s][user ] Korean beef soup sounds amazing. Can you make a reservation for me?
+[ 92.92s][moshi] ⟨ret@92.76s⟩ ⟦⚡SPAN@92.92s: Hadongkwan's contact number is +82 2-2266-4282. Their website is hadongkwan.co.kr, source: restaurantguru.com.⟧ I'm happy to help with that. But I cannot directly make reservations for restaurants. I can search for their contact information for you, though.
+[102.38s][moshi] I found that Hadongkwan's number is plus eighty-two two two two six six four two eight two.

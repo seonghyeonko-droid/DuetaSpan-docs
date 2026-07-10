@@ -4,69 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "Dylan",
+#     "name": "Taylor",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-02",
-#       "category": "home",
-#       "text": "User's home address is 635 Pine Court."
-#     },
-#     {
-#       "date": "2025-10-08",
+#       "date": "2026-05-01",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-09-11",
-#       "category": "work",
-#       "text": "User works as a accountant."
-#     },
-#     {
-#       "date": "2025-08-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-30",
+#       "date": "2026-01-21",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-05-29",
+#       "date": "2025-09-06",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-27",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-14",
+#       "date": "2025-07-05",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -76,18 +50,33 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hi Runaus, it's good to meet you t | S2 That's good to know. I was wonderi | S3 Luna's been getting into everythin | S4 …do you have any advice for keepin
 
-     0.00s  agent 발화 시작: Hi Dylan, I'm Dunar. It's lovely to connect with you.
-     3.23s  agent 발화 끝
-     3.39s  user  발화 시작: Um, what time is it right now?
-     5.37s  <ret> 발화 (turn2 첫 프레임)
-     5.53s  agent 발화 시작: <ret> It’s currently 2:35 PM in Berlin, Germany. A perfect t
-     5.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Berlin, German
-     5.64s  user  발화 끝
-    12.30s  user  발화 시작: Oh, right. And, uh, do I have any appointments tomorrow?
-    12.38s  agent 발화 끝
-    16.04s  <ret> 발화 (turn4 첫 프레임)
-    16.28s  agent 발화 시작: <ret> I have a note from March twentieth that you were setti
-    16.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: [2026-03-20] Past chat — Setting up a home network: asked about mesh r
-    16.46s  user  발화 끝
-    22.58s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Taylor, I'm Runaus. It's lovely to meet you.
+     1.52s  user  발화 시작: Yeah, yeah.
+     2.80s  user  발화 끝
+     3.26s  user  발화 시작: Hi Runaus, it's good to meet you too. What time is it right 
+     3.38s  agent 발화 끝
+     7.17s  <ret> 발화 (turn3 첫 프레임)
+     7.33s  agent 발화 시작: <ret> It’s currently 2:37 PM in Toronto, Canada. A perfect t
+     7.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Toronto, Canad
+     7.42s  user  발화 끝
+     9.34s  user  발화 시작: Nice.
+    10.07s  user  발화 끝
+    13.97s  user  발화 시작: That's good to know. I was wondering, do you remember what I
+    14.09s  agent 발화 끝
+    19.40s  <ret> 발화 (turn6 첫 프레임)
+    19.64s  agent 발화 시작: <ret> Yes, I do! You have a beautiful tabby cat named Luna.
+    19.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: [2025-09-06] User has a tabby cat named Luna.
+    19.77s  user  발화 끝
+    23.81s  agent 발화 끝
+    24.72s  user  발화 시작: Luna's been getting into everything.
+    26.98s  user  발화 끝
+    27.00s  agent 발화 시작: It’s quite common for cats to explore—
+    29.00s  user  발화 시작: …do you have any advice for keeping a curious cat entertaine
+    29.58s  agent 발화 끝
+    33.52s  agent 발화 시작: Ah, a very good question! Keeping a curious cat occupied is 
+    33.58s  user  발화 끝
+    40.70s  agent 발화 시작: Providing Luna with puzzle toys, scratching posts, and dedic
+    40.80s  agent 발화 끝
+    49.27s  agent 발화 끝

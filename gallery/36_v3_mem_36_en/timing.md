@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "David",
+#     "name": "Ada",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2026-06-02",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2026-02-21",
+#       "date": "2026-04-17",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-01-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
+#       "date": "2025-08-02",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2025-05-27",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-06-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in December."
+#     },
+#     {
+#       "date": "2025-06-19",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-16",
+#       "date": "2025-11-05",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -49,39 +54,47 @@
 #     },
 #     {
 #       "date": "2025-08-15",
-#       "title": "Apartment hunting downtown",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-12",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi David, I'm Teax. It's lovely to connect with you today.
-     4.11s  agent 발화 끝
-     5.25s  user  발화 시작: um, hey Teax. I was just wondering… do you remember anything
-    10.43s  <ret> 발화 (turn2 첫 프레임)
-    10.67s  agent 발화 시작: <ret> Yes, I do. You are planning a trip to Kyoto this Decem
-    10.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: [2026-01-22] User is planning a trip to Kyoto in December.
-    10.90s  user  발화 끝
-    13.57s  user  발화 시작: Yeah.
-    14.06s  user  발화 끝
-    18.27s  agent 발화 시작: Perhaps we could begin by exploring what you’ve already envi
-    18.36s  agent 발화 끝
-    25.23s  user  발화 시작: I think I mentioned I wanted outdoor seating for a birthday 
-    25.36s  agent 발화 끝
-    29.57s  <ret> 발화 (turn6 첫 프레임)
-    29.81s  agent 발화 시작: <ret> That's right. You were planning a birthday dinner for 
-    29.81s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.02s]: [2026-01-16] Past chat — Planning a birthday dinner: party of six; loo
-    29.94s  user  발화 끝
-    32.99s  user  발화 시작: Yeah.
-    33.48s  user  발화 끝
-    35.83s  agent 발화 끝
-    35.93s  user  발화 시작: And… I need to remember to check the pollen count. I’m reall
-    40.26s  <ret> 발화 (turn9 첫 프레임)
-    40.58s  agent 발화 시작: <ret> I have a note that you have a pollen allergy, so remem
-    40.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: [2025-05-27] User is allergic to pollen.
-    40.61s  user  발화 끝
-    48.32s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Ada, I'm Oruen. It's lovely to connect with you today. Ho
+     5.14s  agent 발화 끝
+     6.25s  user  발화 시작: Um, a bit lost, to be honest. It's been a rough few months.
+     9.34s  agent 발화 시작: It's perfectly alright to feel lost after a difficult time, 
+     9.48s  user  발화 끝
+    16.07s  user  발화 시작: Yeah, well… I was just remembering my trip to Switzerland.
+    16.10s  agent 발화 끝
+    19.21s  <ret> 발화 (turn4 첫 프레임)
+    19.37s  agent 발화 시작: <ret> You're planning a trip to Switzerland this December, w
+    19.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.66s]: [2025-06-20] User is planning a trip to Switzerland in December.
+    19.58s  user  발화 끝
+    23.28s  user  발화 시작: Mm-hmm.
+    23.73s  user  발화 끝
+    25.01s  agent 발화 시작: Perhaps focusing on that trip can give you something hopeful
+    25.02s  agent 발화 끝
+    28.65s  user  발화 시작: Right.
+    29.09s  user  발화 끝
+    32.21s  user  발화 시작: I was thinking about what to pack. It'll be cold, I guess?
+    32.23s  agent 발화 끝
+    35.65s  <ret> 발화 (turn9 첫 프레임)
+    35.89s  agent 발화 시작: <ret> The weather in Switzerland is currently 5 degrees Cels
+    35.89s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.48s]: (tool result) Weather in Switzerland: 5.0°C, humidity 85%, wind 7.2 km
+    35.90s  user  발화 끝
+    42.25s  agent 발화 시작: It’s a good idea to pack warm layers for December. It’s alri
+    42.37s  agent 발화 끝
+    48.50s  agent 발화 끝

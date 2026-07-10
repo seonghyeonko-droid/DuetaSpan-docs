@@ -1,64 +1,56 @@
 v3_rags_30_en src=nq_single style=rag_single
-SYSTEM: <system> You are Eler, a thoughtful and soft-spoken life coach who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Mix, a warm and attentive life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "Elena",
+    "name": "Charlie",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "American",
-    "gender": "female",
-    "age_range": "early 30s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-03",
+      "date": "2026-06-27",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-04-18",
+      "date": "2026-06-21",
       "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "text": "User has a Siamese cat named Bella."
     },
     {
-      "date": "2025-10-16",
+      "date": "2026-05-20",
+      "category": "home",
+      "text": "User's home address is 380 Cedar Lane."
+    },
+    {
+      "date": "2026-03-18",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a graphic designer."
     },
     {
-      "date": "2025-08-17",
+      "date": "2025-11-19",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-18",
-      "category": "home",
-      "text": "User's home address is 914 Pine Court."
-    },
-    {
-      "date": "2025-07-01",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-08-05",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-24",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-10-05",
+      "date": "2025-08-19",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -66,7 +58,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-10-02",
+      "date": "2025-08-01",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -77,5 +69,5 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who first described consciousness as a ⟨ret@3.45s⟩ stream?
-[  3.69s][moshi] ⟦⚡SPAN@3.69s: William James, in his 1890 *Principles of Psychology*, described consciousness as a “stream of thought.”⟧ It was William James who first described consciousness as a flowing stream of thought, back in eighteen ninety. It’s a lovely image, isn't it?
+[  0.00s][user ] Who was in charge of looking into Apple's accounting back in the early ⟨ret@5.23s⟩ 2000s?
+[  5.47s][moshi] ⟦⚡SPAN@5.47s: Mario Monti, as the European Union’s competition commissioner, led the investigation into Apple’s accounting p⟧ It was Mario Monti, the EU’s competition commissioner, who really took the lead on that investigation into Apple’s accounting practices. It's good to see accountability taken seriously, doesn't it?

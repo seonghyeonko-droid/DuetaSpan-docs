@@ -1,116 +1,87 @@
 v3_rag_26_ko src=nq style=v3
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 실용적이고 안심시키는 상담사 Zelira입니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리를 돕는 현실적이고 공감적인 개인 가이드인 Zon입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "정별",
+    "name": "우찬",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "male",
-    "age_range": "early 30s",
+    "age_range": "early 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-01-05",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2025-10-31",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2025-10-28",
+      "date": "2026-02-23",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2025-10-15",
-      "category": "home",
-      "text": "User's home address is 인천 연수구 송도동 12-5."
+      "date": "2025-11-15",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-09-26",
+      "date": "2025-09-17",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-07-24",
+      "date": "2025-09-15",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-13",
+      "date": "2025-07-25",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2026-02-01",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-01-08",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 안녕하세요, Zelira님. 새로운 도시에 이사 와서 좀 떨리네요.
-[  5.26s][moshi] 안녕하세요. 새로운 시작은 언제나 설레면서도 걱정되는 일이죠. 제가 옆에서 차근차근 도와드릴게요.
-[  8.18s][user ] «backchannel» 네네.
-[ 11.16s][user ] 음, 우선 이 도시에 스포츠팀이 있는지 궁금해요. 축구나 야구는 즐겨 ⟨ret@16.87s⟩ 봐요.
-[ 17.18s][moshi] ⟦⚡SPAN@17.19s: Pittsburgh is home to three major professional sports franchises: the Pittsburgh Steelers (NFL), the Pittsburg⟧ 피츠버그에는 세 개의 주요 프로 스포츠 팀이 있어요. 피츠버그 스틸러스(NFL), 피츠버그 파이리츠(MLB), 그리고 피츠버그 펭귄스(NHL)이죠.
-[ 23.89s][user ] «backchannel» 네.
-[ 26.98s][user ] 아, 스틸러스는 미식축구팀이군요. 스틸러스가 마지막으로 슈퍼볼에서 우승한 게 ⟨ret@33.07s⟩ 언제였죠?
-[ 33.46s][moshi] ⟦⚡SPAN@33.47s: The Pittsburgh Steelers won Super Bowl XLIII on February 1, 2009, defeating the Arizona Cardinals 27–23.⟧ 피츠버그 스틸러스는 이천구년 이월 일일에 애리조나 카디널스를 스물일곱대 이십삼으로 꺾고 슈퍼볼 XLIII에서 우승했어요.
-[ 41.58s][user ] 이천구년이군요. 생각보다 오래됐네요. 그 전에 우승한 적은 또 언제 있었나요? ⟨ret@47.80s⟩
-[ 47.95s][moshi] ⟦⚡SPAN@47.96s: Prior to Super Bowl XLIII, the Pittsburgh Steelers had won Super Bowls IX, X, XIII, and XIV in 1975, 1976, 197⟧ 이천구년 슈퍼볼 우승 전에, 스틸러스는 천구백칠십오년, 천구백칠십육년, 천구백칠십구년, 그리고 천구백팔십년에 각각 슈퍼볼 IX, X, XIII, XIV에서 우승했어요.
-[ 53.21s][user ] «backchannel» 진짜요?
-[ 59.26s][user ] 와, 칠십년대에 엄청난 전성기를 누렸었네요. 혹시…
-[ 64.17s][moshi] «interrupted» 그 시절에는 정말 대단했죠. 팬들에게도 —
-[ 66.17s][user ] «interrupts_prev» …혹시 그 시절 경기 티켓 구하기가 엄청 ⟨ret@69.53s⟩ 어려웠을까요?
-[ 69.92s][moshi] ⟦⚡SPAN@69.93s: Demand for Steelers tickets during their 1970s dynasty was exceptionally high, often exceeding supply by a sig⟧ 천구백칠십년대 스틸러스 왕조 시절에는 티켓 수요가 공급보다 훨씬 높았어요.
-[ 71.46s][user ] «backchannel» 네네.
-[ 74.41s][user ] 그렇군요. 요즘 티켓은 좀 덜 힘들까요?
-[ 78.57s][moshi] ⟨ret@78.50s⟩ ⟦⚡SPAN@78.58s: (tool result) Pittsburgh Steelers home games: November 15, 2026 vs. Cincinnati Bengals ($150-$500); November 2⟧ 피츠버그 스틸러스 홈 경기는 십일월 십오일에 신시내티 벵갈스와의 경기, 티켓 가격은 백오십달러에서 오백달러, 그리고 십일월 이십구일에는 클리블랜드 브라운스와의 경기가 있어요. 티켓 가격은 백이십달러에서 사백오십달러입니다.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Pittsburgh", "event_type": "NFL"}}
-[ 86.28s][user ] «backchannel» 와.
-[ 93.97s][user ] 오, 십일월에 경기가 있군요. 벵갈스와의 경기 티켓을 좀 알아봐 ⟨ret@99.38s⟩ 주시겠어요?
-[ 99.70s][moshi] ⟦⚡SPAN@99.70s: (tool result) Booking confirmed: Pittsburgh Steelers vs. Cincinnati Bengals, November 15, 2026, 2 tickets, Sec⟧ 네, 십일월 십오일 피츠버그 스틸러스 대 신시내티 벵갈스 경기 티켓 두장 예약 완료되었습니다. 섹션 백이십삼 십열 오번과 육번 좌석이고요, 확인 번호는 피 엑스 칠 팔 구 케이 엘입니다.
-      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event": "Pittsburgh Steelers vs. Cincinnati Bengals", "date": "November 15, 2026", "number_of_tickets": "2"}}
-[110.70s][user ] 와, 감사합니다! 혹시 이 근처에 맛있는 이탈리안 식당도 추천해 주실 수 ⟨ret@116.90s⟩ 있나요?
-[117.29s][moshi] ⟦⚡SPAN@117.30s: (tool result) Top-rated Italian restaurants in Pittsburgh: Primanti Bros. Restaurant and Bar (4.2 stars, $15-3⟧ 피츠버그에서 평점 높은 이탈리안 식당으로는 프리만티 브로스 레스토랑 앤 바(별점 사 점 이점, 가격 십오달러에서 삼십달러)와 디아노이아스 이터리(별점 사 점 오점, 가격 이십오달러에서 사십달러)가 있어요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Pittsburgh"}}
-[130.33s][user ] 디아노이아스 이터리가 맛있어 보이네요. 예약은 어떻게 해야 하나요?
-[135.05s][moshi] ⟨ret@134.82s⟩ ⟦⚡SPAN@135.06s: (tool result) Reservation confirmed at DiAnoia's Eatery for November 16, 2026 at 7:00 PM, party of 2. Confirma⟧ 디아노이아스 이터리 십일월 십육일 저녁 일곱시에 두명 예약 완료되었습니다. 확인 번호는 알 오 육 칠 팔 엠 엔입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "DiAnoia's Eatery", "date": "November 16, 2026", "time": "7:00 PM", "party_size": "2"}}
-[141.12s][user ] «backchannel» 정말요?
-[143.36s][user ] 정말 친절하시네요. 덕분에 즐거운 저녁을 보낼 수 있을 것 같아요.
-[148.86s][moshi] 저도 기쁘네요. 새로운 도시에 잘 정착하실 수 있도록 계속 도와드릴게요.
-[152.99s][user ] 혹시 오늘 날씨는 ⟨ret@154.86s⟩ 어때요?
-[155.17s][moshi] ⟦⚡SPAN@155.18s: (tool result) The weather in Pittsburgh is currently 18.5°C, humidity 62%, wind 7.2 km/h.⟧ 현재 피츠버그의 날씨는 십팔 점 오도이고, 습도는 육십이%, 바람은 시속 칠 점 이킬로미터입니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Pittsburgh"}}
-[161.81s][user ] 생각보다 따뜻하네요.
-[163.57s][moshi] 네, 오늘 하루는 꽤 온화할 것 같아요.
+[  0.00s][user ] 요즘 중국 현대사에 관심이 좀 생겨서… 중국 내전 때 국민당을 이끌었던 사람이 누구였지?
+[  7.68s][moshi] ⟨ret@7.62s⟩ ⟦⚡SPAN@7.70s: Chiang Kai-shek was a Chinese political and military leader who served as the leader of the Republic of China ⟧ 중국 공화국의 지도자였던 장제스는 천구백이십팔년부터 천구백칠십오년까지 중국의 정치 및 군사 지도자였습니다.
+[ 15.95s][user ] 음, 장제스… 이름은 들어봤는데, 좀 더 자세히 알려줄 수 있어?
+[ 21.61s][moshi] 장제스는 중국 현대사에서 매우 중요한 인물입니다.
+[ 23.51s][user ] «backchannel» 응.
+[ 24.92s][user ] 그 사람이 뭘 그렇게 많이 했길래 중요한 ⟨ret@27.89s⟩ 건데?
+[ 28.04s][moshi] ⟦⚡SPAN@28.05s: Chiang Kai-shek led the Nationalist government in a struggle against the Chinese Communist Party, ultimately l⟧ 그는 중국 공산당과의 투쟁에서 국민당 정부를 이끌었지만 결국 천구백사십구년 중국 내전에서 패배했습니다.
+[ 35.86s][user ] 아, 그래서 내전에서 졌구나. 그럼 공산당은 누가 ⟨ret@40.69s⟩ 이끌었어?
+[ 40.84s][moshi] ⟦⚡SPAN@40.85s: Mao Zedong was the chairman of the Communist Party of China and a key figure in the Chinese Communist Revoluti⟧ 그건 또 다른 중요한 질문이네요.
+[ 42.99s][moshi] 마오쩌둥은 중국 공산당의 주석이었고 중국 공산 혁명의 핵심 인물이었습니다.
+[ 46.00s][user ] «backchannel» 응.
+[ 48.20s][user ] 마오쩌둥… 이름이 좀 낯설긴 한데.
+[ 52.54s][moshi] 마오쩌둥은 장제스와는 완전히 다른 정치적 노선을 걸었습니다.
+[ 56.39s][user ] 그 두 사람, 서로 엄청 대립했겠네?
+[ 59.64s][moshi] «interrupted» 네, 두 사람은 이념적으로나 전략적으로 매우 대립했습니다—
+[ 62.89s][user ] «interrupts_prev» …근데 그 내전이 정확히 언제 시작된 거야?
+[ 65.50s][moshi] ⟨ret@65.43s⟩ ⟦⚡SPAN@65.51s: The Chinese Civil War began in 1927, with conflicts between the Kuomintang-led Nationalist government and the ⟧ 중국 내전은 천구백이십칠년에 국민당 정부와 중국 공산당 간의 갈등으로 시작되었습니다.
+[ 71.85s][user ] 천구백이십칠년… 생각보다 훨씬 오래됐네. 그럼 그 내전은 얼마나 오래 계속됐어? ⟨ret@78.59s⟩
+[ 78.74s][moshi] ⟦⚡SPAN@78.75s: The Chinese Civil War lasted intermittently from 1927 to 1949, with a major pause during World War II.⟧ 중국 내전은 제2차 세계 대전 기간 동안 주요 중단이 있었지만, 천구백이십칠년부터 천구백사십구년까지 간헐적으로 계속되었습니다.
+[ 83.77s][user ] «backchannel» 응.
+[ 87.18s][user ] 세계 이차 대전 중에도 싸웠다니… 복잡하네.
+[ 90.97s][moshi] 네, 역사는 복잡한 면이 많죠. 하지만 이해하려고 노력하는 것이 중요합니다.
+[ 94.03s][user ] «backchannel» 응.
+[ 96.06s][user ] 그럼 내전이 끝난 후에 장제스는 어떻게 됐어?
+[ 99.66s][moshi] ⟨ret@99.27s⟩ ⟦⚡SPAN@99.67s: After losing the Chinese Civil War, Chiang Kai-shek retreated to Taiwan and established a government there in ⟧ 중국 내전에서 패배한 후 장제스는 대만으로 퇴각하여 천구백사십구년에 그곳에 정부를 세웠습니다.
+[106.08s][user ] 대만으로 갔구나… 대만 정부를 세웠다는 건, 지금도 영향력이 있는 거야?
+[112.04s][moshi] 네, 대만은 여전히 중요한 정치적 존재감을 유지하고 있습니다.
+[113.35s][user ] «backchannel» 어.
+[115.57s][user ] 오늘 날씨가 어때?
+[117.40s][moshi] ⟨ret@117.16s⟩ ⟦⚡SPAN@117.40s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 현재 기온은 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[120.49s][user ] «backchannel» 음.
+[123.71s][user ] 꽤 덥겠네.
+[124.86s][moshi] 네, 꽤 더운 날씨입니다.

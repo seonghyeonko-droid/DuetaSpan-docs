@@ -1,74 +1,85 @@
 v3_backg_17_ko src=nq style=v1
-SYSTEM: <system> 당신은 건강 및 일상 습관 관리를 돕는 부드럽고 사색적인 웰니스 코치인 Gealo입니다. <system>
+SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 돕는 부드럽고 사색적인 개인 가이드인 Oro입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "보민",
+    "name": "세은",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "female",
-    "age_range": "early 20s",
+    "gender": "male",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2025-11-28",
+      "date": "2026-02-13",
       "category": "home",
-      "text": "User's home address is 서울 강남구 역삼동 678-9."
+      "text": "User's home address is 부산 수영구 광안동 210-3."
     },
     {
-      "date": "2025-11-05",
+      "date": "2025-12-06",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-11-21",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-09-16",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2025-11-15",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-08-20",
+      "date": "2025-09-30",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in August."
+      "text": "User is planning a trip to Switzerland in December."
+    },
+    {
+      "date": "2025-08-02",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-21",
-      "title": "Comparing gym memberships",
+      "date": "2026-02-12",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-06-03",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 세이빙 벨에 나오는 제시라는 캐릭터 연기한 사람이 ⟨ret@3.11s⟩ 누구였지?
-[  3.27s][moshi] ⟦⚡SPAN@3.27s: Elizabeth Berkley Lauren.⟧ 제시라는 캐릭터를 연기한 사람은 엘리자베스 버클리 로렌이었어요. 좋은 드라마죠.
-[ 10.85s][user ] 음, 그 배우 다른 작품도 많이 ⟨ret@12.85s⟩ 했어?
-[ 13.09s][moshi] ⟦⚡SPAN@13.09s: Elizabeth Berkley Lauren is an American actress, known for her roles in films like First Wives Club and Showgi⟧ 엘리자베스 버클리 로렌은 영화 '퍼스트 와이브스 클럽'이나 '쇼걸' 같은 작품에서도 활약했어요.
-[ 15.14s][user ] «backchannel» 그래.
-[ 18.96s][moshi] 연기 경력이 꽤나 다양하네요. 텔레비전에도 꾸준히 출연했고요.
-[ 23.79s][user ] 잠깐만, 그 '쇼걸' 영화 —
-[ 25.75s][user ] … 그 영화가 엄청 논란이 ⟨ret@27.92s⟩ 많았다면서?
-[ 28.08s][moshi] ⟦⚡SPAN@28.08s: Showgirls is a 1995 American erotic drama film directed by Paul Verhoeven, and starring Elizabeth Berkley and ⟧ '쇼걸'은 폴 버호벤 감독의 천구백구십오년 에로틱 드라마 영화로, 엘리자베스 버클리와 카일 맥라클란이 주연을 맡았어요.
-[ 36.88s][moshi] 많은 논란이 있었던 작품이죠.
-[ 38.68s][user ] 아, 그렇구나. 그럼 제시…
-[ 42.60s][user ] …역할 말고 다른 유명한 ⟨ret@44.40s⟩ 역할은?
-[ 44.72s][moshi] ⟦⚡SPAN@44.72s: Elizabeth Berkley Lauren also played Nanny in the 1993 film Mrs. Doubtfire, alongside Robin Williams.⟧ 엘리자베스 버클리 로렌은 로빈 윌리엄스와 함께 출연한 천구백구십삼년 영화 '미세스 다웃파이어'에서 유모 역할을 맡기도 했답니다.
+[  0.00s][user ] 혹시, 식스 시즌은 언제 ⟨ret@2.19s⟩ 시작하나요?
+[  2.35s][moshi] ⟦⚡SPAN@2.35s: The television series Six premiered on January 18, 2017, and concluded on February 15, 2018.⟧ 새로운 시즌을 기다리시는군요. 식스라는 드라마는 이천십칠년 일월 십팔일에 시작해서 이천십팔년 이월 십오일에 끝났습니다.
+[  8.45s][user ] «backchannel» 네.
+[ 11.48s][user ] 이천십팔년에 끝났다고 하셨죠?
+[ 13.62s][moshi] ⟨ret@13.38s⟩ ⟦⚡SPAN@13.62s: The television series Six premiered on January 18, 2017, and concluded on February 15, 2018.⟧ 네, 맞습니다. 말씀드린 대로, 식스는 이천십팔년에 마지막 시즌을 마쳤습니다.
+[ 19.29s][user ] «to_other» 어머, 벌써 시간이 그렇게 됐네.
+[ 21.18s][user ] 아, 그러셨군요. 그럼, 혹시 새로운 영화 볼만한 거 추천해 주실 수 ⟨ret@26.21s⟩ 있나요?
+[ 26.45s][moshi] ⟦⚡SPAN@26.45s: (tool result) Found: "Oppenheimer", directed by Christopher Nolan, released July 21, 2023.⟧ 영화를 찾고 있습니다. 크리스토퍼 놀란 감독의 '오펜하이머'가 이천이십삼년 칠월 이십일일에 개봉했습니다.
+      CALL: {"function": "Media_3_FindMovies", "arguments": {}}
+[ 36.40s][user ] 오펜하이머요? 그 영화에 대해 좀 더 자세히 ⟨ret@39.20s⟩ 알려주세요.
+[ 39.60s][moshi] ⟦⚡SPAN@39.60s: (tool result) Playing trailer for "Oppenheimer".⟧ '오펜하이머'의 예고편을 재생해 드릴게요.
+      CALL: {"function": "Media_3_PlayMovie", "arguments": {"movie_name": "Oppenheimer"}}
+[ 43.17s][user ] 예고편 잠깐 보여주세요.
+[ 44.41s][moshi] 예고편을 보여드리는 동안 잠시 눈을 감고 편안하게 호흡해 보세요. 영화 속 긴장감에 몸과 마음이 차분해질 거예요.
+[ 47.15s][user ] «backchannel» 네.
+[ 52.14s][user ] 아, 좋네요. 혹시 오늘 날씨는 어때요?
+[ 55.04s][moshi] ⟨ret@54.96s⟩ ⟦⚡SPAN@55.04s: (tool result) The weather is 23.0°C, humidity 74%, wind 5.5 km/h.⟧ 지금 날씨는 기온이 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 61.71s][user ] 이십삼도면 꽤 덥겠네요.
+[ 63.95s][moshi] 네, 조금 더울 수 있겠네요. 시원한 물 한 잔 마시면서 잠시 휴식을 취하는 건 어떠세요?
+[ 69.91s][user ] 좋은 생각이네요. 고마워요.
+[ 71.79s][moshi] 도움이 되었다니 기쁩니다. 마음의 평화를 찾으시는 데 조금이나마 도움이 되셨으면 좋겠습니다.

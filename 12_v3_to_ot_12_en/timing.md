@@ -4,70 +4,71 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Victor",
+#     "name": "Nora",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
-#     "age_range": "early 20s",
-#     "language": "French"
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-24",
-#       "category": "home",
-#       "text": "User's home address is 17 Pine Court."
+#       "date": "2026-06-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
 #     },
 #     {
-#       "date": "2026-04-30",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-04-07",
+#       "date": "2026-06-16",
 #       "category": "work",
 #       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2025-09-22",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-03-15",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-31",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-11-09",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Hey, do you know who sings the son | S2 …thought it was a cartoon soundtra | S3 Honey, did you take the trash out? | S4 So, what else does Green Jellÿ do?
 
-     0.00s  user  발화 시작: Hey, who wrote “We Belong Together” by Mariah Carey?
-     2.85s  <ret> 발화 (turn1 첫 프레임)
-     3.09s  agent 발화 시작: <ret> It’s wonderful you’re curious about the song’s origins
-     3.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: Johntá Austin co-wrote “We Belong Together” with Mariah Carey and Shan
-     3.23s  user  발화 끝
-    10.41s  agent 발화 끝
-    11.79s  user  발화 시작: Oh, really? I thought it was just Mariah.
-    14.20s  user  발화 끝
-    14.30s  agent 발화 시작: It’s easy to assume it was solely her work—
-    16.27s  user  발화 시작: …did he write any other big songs?
-    16.89s  agent 발화 끝
-    18.02s  <ret> 발화 (turn5 첫 프레임)
-    18.22s  agent 발화 시작: <ret> Johntá Austin is a songwriter and record producer—he’s
-    18.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: (tool result) Johntá Austin is an American songwriter and record produ
-    18.29s  user  발화 끝
-    21.50s  user  발화 시작: Yeah.
-    22.13s  user  발화 끝
-    25.81s  agent 발화 시작: He's had a really impressive career, contributing to so many
-    25.87s  agent 발화 끝
-    32.44s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, do you know who sings the song "Three Little Pigs"? It'
+     4.43s  <ret> 발화 (turn1 첫 프레임)
+     4.64s  agent 발화 시작: <ret> Oh, that's a fun one! It's actually performed by Green
+     4.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.82s]: Green Jellÿ is an American parody metal band formed in 1989.
+     4.86s  user  발화 끝
+     9.46s  agent 발화 끝
+    10.89s  user  발화 시작: Green Jellÿ? That's… unexpected. I…
+    14.58s  user  발화 끝
+    16.05s  user  발화 시작: …thought it was a cartoon soundtrack.
+    17.99s  agent 발화 시작: [laugh] It really is surprising, isn’t it? Sometimes the mos
+    18.03s  user  발화 끝
+    22.53s  agent 발화 끝
+    22.70s  user  발화 시작: Honey, did you take the trash out?
+    24.65s  user  발화 시작: So, what else does Green Jellÿ do? Are they known for other 
+    24.82s  user  발화 끝
+    28.68s  <ret> 발화 (turn7 첫 프레임)
+    29.07s  agent 발화 시작: <ret> They released their first album in nineteen ninety-two
+    29.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: Green Jellÿ released their debut album, "Green Jellÿ," in 1992, and it
+    29.14s  user  발화 끝
+    34.71s  agent 발화 끝

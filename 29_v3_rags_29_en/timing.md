@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Morgan",
+#     "name": "Elsa",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -12,55 +12,56 @@
 #       "currency": "AUD ($)"
 #     },
 #     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-11",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-01-29",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-06",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-02-24",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-10-09",
+#       "date": "2026-01-22",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-07-03",
-#       "category": "home",
-#       "text": "User's home address is 177 Cedar Lane."
+#       "date": "2025-07-26",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-03",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-05",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-05",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: How many Yes Bank…
-     1.61s  user  발화 끝
-     3.19s  user  발화 시작: …branches are there in India?
-     4.68s  <ret> 발화 (turn2 첫 프레임)
-     4.95s  user  발화 끝
-     5.00s  agent 발화 시작: <ret> There are six hundred and thirty Yes Bank branches in 
-     5.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: Yes Bank currently has six hundred and thirty branches across India.
-    12.84s  agent 발화 끝
+     0.00s  user  발화 시작: When did the Olympic Games officially separate their summer 
+     4.67s  user  발화 끝
+     4.72s  <ret> 발화 (turn1 첫 프레임)
+     5.04s  agent 발화 시작: <ret> Well, it seems the International Olympic Committee off
+     5.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.89s]: The International Olympic Committee formally separated the Summer and 
+    17.93s  agent 발화 끝

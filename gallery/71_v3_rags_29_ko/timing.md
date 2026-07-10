@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "라린",
+#     "name": "가국",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,45 +12,53 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "non-binary",
 #     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-06-25",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-03-06",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2026-02-12",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2026-04-09",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
-#     },
-#     {
-#       "date": "2026-01-11",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-10-09",
+#       "date": "2025-11-18",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
+#       "text": "User is planning a trip to Kyoto in March."
 #     },
 #     {
-#       "date": "2025-07-03",
+#       "date": "2025-09-22",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-25",
+#       "date": "2025-12-26",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-24",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -58,22 +66,20 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-13",
-#       "title": "Researching a used car",
+#       "date": "2025-07-29",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 인도 예스 은행 지점…
-     2.26s  user  발화 끝
-     3.37s  user  발화 시작: …수는 모두 몇 개예요?
-     4.57s  <ret> 발화 (turn2 첫 프레임)
-     4.73s  agent 발화 시작: <ret> 현재 인도 전역에 예스 은행 지점이 총 육백삼십개 있습니다.
-     4.73s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.66s]: Yes Bank currently has six hundred and thirty branches across India.
-     4.88s  user  발화 끝
-     8.39s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 올림픽이 여름이랑 겨울로 나뉜 게 언제였더라?
+     3.95s  <ret> 발화 (turn1 첫 프레임)
+     4.11s  agent 발화 시작: <ret> 국제올림픽위원회에서 여름과 겨울 경기를 공식적으로 분리한 건 천구백이십사년이었어요.
+     4.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.57s]: The International Olympic Committee formally separated the Summer and 
+     4.12s  user  발화 끝
+    10.69s  agent 발화 끝

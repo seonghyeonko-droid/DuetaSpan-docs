@@ -4,93 +4,89 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Zoe",
+#     "name": "Remy",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
+#     "nationality": "British",
+#     "gender": "non-binary",
 #     "age_range": "50s",
-#     "language": "German"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-11",
-#       "category": "home",
-#       "text": "User's home address is 131 Cedar Lane."
-#     },
-#     {
-#       "date": "2026-05-12",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-12-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2026-06-08",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-03-29",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-08-28",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-03-01",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-09-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
+#     },
+#     {
+#       "date": "2025-07-06",
+#       "category": "home",
+#       "text": "User's home address is 816 Cedar Lane."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-06",
+#       "date": "2025-08-07",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-31",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you happen to know Sarah Miller | S2 Oh, um, that’s a shame. Well, what | S3 That sounds lovely. I think I need | S4 Hmm, the Paradise sounds good. Cou
+# EXAMINER(FDB-v2) 단계: S1 Do you know the phone number for A | S2 Oh, um… that’s a shame. | S3 Maybe… what was the weather like i | S4 Actually, yes. Find me some Italia
 
-     0.00s  user  발화 시작: Do you happen to know Sarah Miller's phone number? I met her
-     3.58s  <ret> 발화 (turn1 첫 프레임)
-     3.98s  agent 발화 시작: <ret> I’ve looked, and unfortunately, I couldn’t find a phon
-     3.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.19s]: (no information found)
-     4.16s  user  발화 끝
-    11.17s  agent 발화 끝
-    12.04s  user  발화 시작: Oh, um, that’s a shame. Well, what about the weather in Seou
-    17.40s  <ret> 발화 (turn3 첫 프레임)
-    17.80s  agent 발화 시작: <ret> On July fourth of last year, Seoul had a pleasant temp
-    17.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: (tool result) The weather in Seoul on July 4, 2025, was 28.5°C with pa
-    17.97s  user  발화 끝
-    28.33s  agent 발화 끝
-    28.46s  user  발화 시작: That sounds lovely. I think I need to book a hotel in Busan 
-    32.07s  <ret> 발화 (turn5 첫 프레임)
-    32.47s  agent 발화 시작: <ret> I found some hotels in Busan for next week. The Paradi
-    32.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.45s]: (tool result) Busan hotels: Paradise Hotel Busan (4.5 stars, $210/nigh
-    32.48s  user  발화 끝
-    43.74s  user  발화 시작: Hmm, the Paradise sounds good. Could you reserve a room for 
-    43.93s  agent 발화 끝
-    47.51s  <ret> 발화 (turn7 첫 프레임)
-    47.59s  agent 발화 시작: <ret> I’ve booked a room for you at the Paradise Hotel Busan
-    47.59s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.37s]: (tool result) Paradise Hotel Busan for 1 night, check-in July 17, 2026
-    47.72s  user  발화 끝
-    56.96s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know the phone number for Anya…
+     1.94s  user  발화 끝
+     3.94s  user  발화 시작: …Sharma? I met her at the conference last year.
+     6.27s  <ret> 발화 (turn2 첫 프레임)
+     6.67s  agent 발화 시작: <ret> I’ve looked, and unfortunately, I couldn’t find a publ
+     6.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.24s]: (no information found)
+     6.71s  user  발화 끝
+    11.90s  agent 발화 끝
+    12.05s  user  발화 시작: Oh, um… that’s a shame.
+    14.31s  user  발화 끝
+    14.41s  agent 발화 시작: It happens sometimes, especially with private contact detail
+    20.81s  user  발화 시작: Maybe… what was the weather like in Seoul on July 10th of la
+    20.90s  agent 발화 끝
+    24.69s  <ret> 발화 (turn6 첫 프레임)
+    25.09s  agent 발화 시작: <ret> Last July 10th in Seoul, it was quite warm—around twen
+    25.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.75s]: (tool result) 28.5°C, humidity 82%, wind 7.2 km/h
+    25.12s  user  발화 끝
+    31.04s  user  발화 시작: Mm-hmm.
+    31.73s  user  발화 끝
+    35.68s  agent 발화 시작: It sounds like it was a lovely summer day.
+    35.84s  agent 발화 끝
+    38.02s  user  발화 시작: Actually, yes. Find me some Italian restaurants nearby.
+    38.03s  agent 발화 끝
+    41.28s  <ret> 발화 (turn10 첫 프레임)
+    41.59s  agent 발화 시작: <ret> I found three Italian restaurants close by—Trattoria d
+    41.60s  ⚡SPAN 주입 [d'=1.60s / d_lead=11.69s]: (tool result) Trattoria del Sole: 4.5 stars, 0.8 km; Bella Italia: 4.2
+    41.68s  user  발화 끝
+    53.28s  agent 발화 끝

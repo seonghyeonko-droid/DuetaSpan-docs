@@ -4,90 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_33",
-#     "name": "노현",
+#     "name": "서진",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "male",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-02",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2025-10-08",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-09-11",
+#       "date": "2026-06-04",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2025-08-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-30",
+#       "date": "2026-05-21",
 #       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-05-29",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-03-03",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-07-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-17",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-11-09",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-14",
+#       "date": "2025-10-23",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-18",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 노현님. 저는 여러분의 창의적인 고민을 돕는 웰니스 코치, 두나입니다.
-     4.86s  agent 발화 끝
-     5.35s  user  발화 시작: 안녕하세요, 두나님. 지금 부산 시간 몇 시예요?
-     8.55s  <ret> 발화 (turn2 첫 프레임)
-     8.63s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 네시 오십팔분입니다. 오늘 하루 잘 보내고 계신가요?
-     8.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) It is Friday, July 10, 2026 at 4:58 PM in Asia/Seoul rig
-     8.72s  user  발화 끝
-    14.88s  agent 발화 끝
-    15.43s  user  발화 시작: 네, 덕분에 잘 지내고 있어요. 혹시 제가 글루텐 알레르기가 있다던 거 기억하세요?
-    20.27s  <ret> 발화 (turn4 첫 프레임)
-    20.50s  agent 발화 시작: <ret> 네, 노현님은 글루텐 알레르기가 있으시다는 걸 기억하고 있어요. 식사하실 때 꼭 주의하시고요.
-    20.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: [2025-10-08] User is gluten-free.
-    20.70s  user  발화 끝
-    26.28s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 서진님. 저는 여러분의 시간을 좀 더 편안하게 만들어 드릴 루나우스예요.
+     2.35s  user  발화 시작: 어.
+     2.75s  user  발화 끝
+     4.95s  agent 발화 끝
+     5.06s  user  발화 시작: 어, 안녕하세요.
+     6.46s  <ret> 발화 (turn3 첫 프레임)
+     6.54s  agent 발화 시작: <ret> 지금은 서울 시간으로 이천이십육년 칠월 십일 오후 두시 삼십팔분이에요. 오늘 하루도 잘 보내고 계
+     6.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) It is Friday, July 10, 2026 at 2:38 PM in Asia/Seoul rig
+     6.58s  user  발화 끝
+     8.51s  user  발화 시작: 우와.
+     9.14s  user  발화 끝
+    13.03s  agent 발화 끝
+    13.24s  user  발화 시작: 아, 네. 그런데 제가 다음 주 화요일에 중요한 회의가 있는데.
+    17.30s  user  발화 끝
+    17.38s  agent 발화 시작: 다음 주 화요일이요? 혹시 회의 준비에 특별히 신경 쓰이는 부분이 있으신가요 —
+    21.39s  user  발화 시작: …아니, 그게 아니라, 그날 날씨가 어떨지 궁금해서요.
+    22.01s  agent 발화 끝
+    24.57s  <ret> 발화 (turn8 첫 프레임)
+    24.89s  agent 발화 시작: <ret> 다음 주 화요일 서울 날씨는 이십육도, 습도 육십팔%, 바람은 시속 칠 점 이킬로미터로 대체로 맑
+    24.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) 26.0°C, humidity 68%, wind 7.2 km/h, condition: partly c
+    24.95s  user  발화 끝
+    35.14s  agent 발화 끝

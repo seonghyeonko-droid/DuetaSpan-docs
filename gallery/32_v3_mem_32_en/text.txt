@@ -1,10 +1,10 @@
 v3_mem_32_en src=mem style=mem
-SYSTEM: <system> You are Saeus, a warm and attentive wellness coach who helps people with big life transitions. <system>
+SYSTEM: <system> You are Seana, a curious and validating personal guide who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_32",
-    "name": "Riley",
+    "name": "Taylor",
     "location": {
       "city": "San Francisco",
       "country": "United States",
@@ -13,69 +13,85 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     },
     "nationality": "American",
     "gender": "non-binary",
-    "age_range": "50s",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-12",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-12-27",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in March."
-    },
-    {
-      "date": "2025-12-03",
+      "date": "2026-02-09",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-05-28",
-      "category": "work",
-      "text": "User works as a architect."
+      "date": "2025-12-05",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-09-18",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-07-16",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-17",
-      "title": "Setting up a home network",
+      "date": "2026-04-25",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2026-01-09",
-      "title": "Comparing gym memberships",
+      "date": "2025-09-05",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-08-20",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Riley, I'm Saeus. It's lovely to connect with you today. I understand you’re navigating some life changes, and I’m here to support you.
-[  5.59s][user ] «backchannel» Yeah.
-[  7.73s][user ] It is good to meet you too, Saeus. I was hoping you could help me remember something.
-[ 12.28s][moshi] Riley. What's on your mind? Perhaps a detail from a past conversation?
-[ 17.29s][user ] Yes, actually. Do you recall what I said about my favorite type ⟨ret@21.25s⟩ of food?
-[ 21.65s][moshi] ⟦⚡SPAN@21.65s: [2026-03-12] User's favorite cuisine is sushi.⟧ I do, Riley. Your favorite cuisine is sushi — a wonderful choice, full of fresh flavors.
-[ 23.77s][user ] «backchannel» Yeah.
-[ 27.82s][user ] Perfect! That's exactly what I was trying to recall.
-[ 31.18s][moshi] It's good to keep those little preferences in mind, as they really shape our well-being.
-[ 36.13s][user ] Speaking of preferences, I’m planning a trip soon…
-[ 39.20s][moshi] ⟨ret@39.04s⟩ ⟦⚡SPAN@39.20s: [2025-12-27] User is planning a trip to Kyoto in March.⟧ You mentioned back in December you were planning a trip to Kyoto in March — a beautiful city steeped in history.
-[ 45.47s][user ] Kyoto, yes! —
-[ 46.81s][user ] …Do you remember if I said anything about ⟨ret@49.09s⟩ hotels there?
-[ 49.49s][moshi] ⟦⚡SPAN@49.49s: (tool result) Kyoto hotels: Hotel Granvia Kyoto (4.5 stars, $200/night); Hyatt Regency Kyoto (4.6 stars, $250/⟧ There are several options in Kyoto. Hotel Granvia is four and a half stars, around two hundred dollars a night.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Kyoto"}}
-[ 51.86s][user ] «backchannel» Yeah.
-[ 55.33s][moshi] The Hyatt Regency is four point six stars, around two hundred and fifty dollars. And the Ritz-Carlton is five stars, costing six hundred dollars per night.
-[ 59.23s][user ] «backchannel» Yeah, yeah.
-[ 64.76s][user ] Those prices are quite a range! Thank you, Saeus.
-[ 67.71s][moshi] You’re very welcome, Riley. Finding the right balance between comfort and budget is key, isn't it?
+[  0.00s][moshi] Hi Taylor, I'm Seana. It's so lovely to connect with you today.
+[  1.22s][user ] «backchannel» Yeah, totally.
+[  4.02s][user ] Hi Seana, it’s good to talk to you too. Can you recall what I was planning for my birthday?
+[  9.18s][moshi] ⟨ret@9.10s⟩ ⟦⚡SPAN@9.18s: [2026-04-25] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ You were planning a birthday dinner for six people, hoping to find a place with outdoor seating.
+[ 14.55s][user ] Yes, that’s right! Do you remember anything about the kind of food I was thinking of?
+[ 19.40s][moshi] ⟨ret@19.24s⟩ ⟦⚡SPAN@19.40s: [2025-12-05] User's favorite cuisine is Thai.⟧ Your favorite cuisine is Thai, so I imagine that's what you had in mind.
+[ 23.09s][user ] Perfect! I’m thinking of having it next Saturday.
+[ 26.39s][moshi] That sounds wonderful! Is there anything I can help you with regarding that plan?
+[ 28.53s][user ] «backchannel» Yeah.
+[ 30.42s][user ] Actually, yeah. I’m trying to find ⟨ret@32.63s⟩ a restaurant.
+[ 33.03s][moshi] ⟦⚡SPAN@33.03s: (tool result) Found 5 Thai restaurants in San Francisco: "Kin Khao", "Farmhouse Kitchen Thai Cuisine", "Lers R⟧ I found five Thai restaurants in San Francisco: Kin Khao, Farmhouse Kitchen, Lers Ros, Marnee Thai, and Osha Thai.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
+[ 39.40s][user ] «backchannel» Right.
+[ 41.50s][user ] Ooh, Farmhouse Kitchen sounds good. Do they have outdoor seating?
+[ 45.27s][moshi] ⟨ret@45.12s⟩ ⟦⚡SPAN@45.28s: (tool result) Farmhouse Kitchen Thai Cuisine: Outdoor seating available, 4.5 stars, price range $$$.⟧ Farmhouse Kitchen does have outdoor seating, and they have a 4.5-star rating with a moderate price range.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Farmhouse Kitchen Thai Cuisine"}}
+[ 49.05s][user ] «backchannel» Yeah.
+[ 52.75s][user ] That sounds pretty good. Are they busy next Saturday? –
+[ 56.71s][user ] … actually, can you check if they take ⟨ret@59.27s⟩ reservations?
+[ 59.58s][moshi] ⟦⚡SPAN@59.59s: (tool result) Farmhouse Kitchen Thai Cuisine: Reservations accepted via OpenTable.⟧ Farmhouse Kitchen accepts reservations through OpenTable, which is very convenient.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Farmhouse Kitchen Thai Cuisine"}}
+[ 64.64s][user ] Great! Can you find me a link to OpenTable for that ⟨ret@67.92s⟩ restaurant?
+[ 68.07s][moshi] ⟦⚡SPAN@68.08s: (tool result) OpenTable - Farmhouse Kitchen Thai Cuisine: https://www.opentable.com/r/farmhouse-kitchen-thai-c⟧ Here’s a link to their OpenTable page: https://www.opentable.com/r/farmhouse-kitchen-thai-cuisine-san-francisco.
+      CALL: {"function": "search", "arguments": {"query": "OpenTable Farmhouse Kitchen Thai Cuisine San Francisco"}}
+[ 82.03s][user ] Thanks! That’s perfect. I appreciate it.
+[ 84.46s][moshi] You're very welcome, Taylor.
+[ 87.04s][user ] I was also thinking about getting a small gift for my friend. They’re really into making their own sourdough.
+[ 92.71s][moshi] Oh, that’s a thoughtful idea! It’s wonderful to support someone’s hobbies.

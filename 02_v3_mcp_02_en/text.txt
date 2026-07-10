@@ -1,76 +1,70 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Vox, a gentle and reflective supportive advisor who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Hilo, a encouraging and non-judgmental supportive advisor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Charlie",
+    "name": "Elsa",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 20s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-15",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-04-20",
+      "date": "2026-06-10",
       "category": "allergy",
       "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-02-05",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-05-15",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2025-11-24",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "date": "2026-04-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2026-03-27",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
+    },
+    {
+      "date": "2026-01-25",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-01-10",
+      "category": "work",
+      "text": "User works as a accountant."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-17",
-      "title": "Booked a dentist appointment",
+      "date": "2026-04-30",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm trying to figure out what people are saying about the new CEO of UnitedHealth Group. Can you look that up for ⟨ret@6.36s⟩ me?
-[  6.60s][moshi] ⟦⚡SPAN@6.60s: (tool result) Andrew Witty assumed the role of CEO at UnitedHealth Group on March 1, 2024, after previously le⟧ It appears Andrew Witty became CEO of UnitedHealth Group on March first of twenty twenty-four, having previously led GSK for ten years.
-      CALL: {"function": "tavily-extract", "arguments": {"url": "https://www.linkedin.com/company/unitedhealthgroup/"}}
-[ 17.42s][user ] Oh, wow, that’s recent. I guess I should look into GSK too. Um, what's the weather like in London right now?
-[ 24.72s][moshi] ⟨ret@24.56s⟩ ⟦⚡SPAN@24.72s: (tool result) The current weather in London is 18.5°C, with 68% humidity and a wind speed of 7.2 km/h.⟧ The weather in London is currently eighteen point five degrees Celsius, with sixty-eight percent humidity and a wind speed of seven point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
-[ 28.70s][user ] «backchannel» Yeah.
-[ 34.29s][user ] [sigh] Sounds…pleasant. Okay, back to work stress. I need to find a good therapist specializing in burnout. Do you know any in the Seattle ⟨ret@44.48s⟩ area?
-[ 44.88s][moshi] ⟦⚡SPAN@44.88s: (tool result) Dr. Eleanor Vance, PhD, specializes in burnout at Seattle Wellness Center. Contact: (206) 555-12⟧ It does sound rather lovely, doesn’t it? Finding the right support is so important when feeling overwhelmed. Let's see what we can find in Seattle.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Seattle", "specialty": "burnout"}}
-[ 53.72s][moshi] Dr. Eleanor Vance, a PhD, specializes in burnout at the Seattle Wellness Center, and you can reach them at two zero six, five five five, one two one two.
-[ 59.93s][user ] «backchannel» Yeah.
-[ 64.62s][user ] July seventeenth… that’s a little far out. Is there anyone with sooner ⟨ret@69.79s⟩ availability?
-[ 70.09s][moshi] ⟦⚡SPAN@70.11s: (tool result) Dr. Anya Sharma, PsyD, has availability on July 12th at Resilience Counseling. Contact: (206) 55⟧ Dr. Anya Sharma, a PsyD, has an opening on July twelfth at Resilience Counseling, and their number is two zero six, five five five, three four three four.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Seattle", "specialty": "burnout"}}
-[ 77.21s][user ] «backchannel» Uh-huh.
-[ 81.36s][user ] That's much better. Okay, I think I'll book an appointment with Dr. Sharma.
-[ 86.06s][moshi] ⟨ret@85.98s⟩ ⟦⚡SPAN@86.06s: (tool result) Appointment with Dr. Anya Sharma booked for July 12th at 10:00 AM. Confirmation ID: AS7892.⟧ Your appointment with Dr. Anya Sharma is confirmed for July twelfth at ten AM, confirmation ID is AS seven eight nine two.
-      CALL: {"function": "Services_1_BookAppointment", "arguments": {"provider": "Dr. Anya Sharma", "date": "July 12th"}}
-[ 91.73s][user ] «backchannel» Mm-hmm.
-[ 95.77s][user ] Great, thank you…
-[ 99.12s][user ] …so much. That's really helpful.
-[102.07s][moshi] You’re very welcome. It’s good to know I could assist you in finding support. Remember, prioritizing your wellbeing is essential, especially during challenging times.
+[  0.00s][user ] What’s the info on the image in the shared folder? It's called ⟨ret@4.83s⟩ "family_photo.jpg".
+[  5.07s][moshi] ⟦⚡SPAN@5.07s: (tool result) size: 2.3MB, modified: 2026-07-05 14:00:00, type: JPEG image⟧ That photo, family_photo.jpg, is a JPEG image. It’s two point three megabytes and was last changed on July fifth.
+      CALL: {"function": "get_file_info", "arguments": {"file_path": "family_photo.jpg"}}
+[ 15.36s][user ] Oh, that’s good to know. Um, could you remind me what time my appointment with Dr. Lee is tomorrow?
+[ 21.91s][moshi] ⟨ret@21.75s⟩ ⟦⚡SPAN@21.91s: (tool result) Dr. Lee, 10:00 AM, July 11, 2026, Cardiology, 123 Main Street⟧ You have an appointment with Dr. Lee tomorrow, July eleventh, at ten AM. It’s a cardiology appointment at one twenty-three Main Street.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Dr. Lee"}}
+[ 30.27s][user ] Perfect! Thanks, Hilo. That's exactly what I needed.

@@ -4,43 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Julian",
+#     "name": "Samuel",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-24",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-02-23",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-01-05",
-#       "category": "home",
-#       "text": "User's home address is 902 Birch Road."
+#       "date": "2025-11-15",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-10-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-10-29",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-09-26",
+#       "date": "2025-09-17",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-09-15",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-06-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-12",
+#       "date": "2026-03-29",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,83 +58,109 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-04",
+#       "date": "2026-03-28",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
 #       ]
+#     },
+#     {
+#       "date": "2026-02-20",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Zelira, I’m new to the city and | S2 Okay, that sounds promising. What  | S3 That sounds interesting. Is it fre | S4 …you’ve been a great help.
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to understand the Chine | S2 That’s a pretty significant year,  | S3 …but was it comparable to what the | S4 Do they still have that tension to
 
-     0.00s  user  발화 시작: Hi Zelira, I’m new to the city and feeling a bit lost.
-     4.26s  user  발화 끝
-     4.32s  agent 발화 시작: Welcome! It’s perfectly normal to feel that way when settlin
-     7.92s  user  발화 시작: I’m trying to find a good coffee shop near the museum.
-     8.02s  agent 발화 끝
-    11.40s  <ret> 발화 (turn3 첫 프레임)
-    11.44s  user  발화 끝
-    11.64s  agent 발화 시작: <ret> I found a place called Bean There, at one two three Ma
-    11.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) {"restaurants": [{"name": "Bean There", "address": "123 
-    15.61s  user  발화 시작: …is it a good place to meet people?
-    16.55s  agent 발화 끝
-    17.87s  user  발화 끝
-    18.01s  agent 발화 시작: That’s a lovely thought. It's a popular spot, often quite li
-    21.34s  user  발화 시작: Yeah.
-    21.83s  user  발화 끝
-    22.69s  agent 발화 끝
-    22.80s  user  발화 시작: Okay, that sounds promising. What about the history museum i
-    27.77s  <ret> 발화 (turn8 첫 프레임)
-    28.09s  agent 발화 시작: <ret> The Carnegie Museum of Art opened in eighteen ninety-s
-    28.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: The Carnegie Museum of Art opened in 1896, and features a collection o
-    28.22s  user  발화 끝
-    31.50s  user  발화 시작: Yeah.
-    31.99s  user  발화 끝
-    33.17s  agent 발화 시작: It’s a beautiful building with a rich history, certainly.
-    33.23s  agent 발화 끝
-    36.05s  user  발화 시작: Do they have any special exhibits going on right now?
-    36.22s  agent 발화 끝
-    39.23s  <ret> 발화 (turn12 첫 프레임)
-    39.63s  agent 발화 시작: <ret> There’s an exhibit called Modern Masters, starting Jul
-    39.63s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.17s]: (tool result) {"events": [{"name": "Modern Masters", "date": "2026-07-
-    39.80s  user  발화 끝
-    41.86s  user  발화 시작: Yeah.
-    42.41s  user  발화 끝
-    43.80s  agent 발화 끝
-    44.27s  user  발화 시작: That sounds interesting. Is it free?
-    46.81s  <ret> 발화 (turn15 첫 프레임)
-    47.13s  agent 발화 시작: <ret> General admission is twenty dollars for adults, fiftee
-    47.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: General admission to the Carnegie Museum of Art is twenty dollars for 
-    47.36s  user  발화 끝
-    50.83s  user  발화 시작: Okay, a little pricey. What’s the weather like today?
-    51.62s  agent 발화 끝
-    54.39s  <ret> 발화 (turn17 첫 프레임)
-    54.79s  agent 발화 시작: <ret> It's twenty-three point zero degrees Celsius, with sev
-    54.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) "23.0°C, humidity 74%, wind 5.5 km/h"
-    54.85s  user  발화 끝
-    58.55s  user  발화 시작: Yeah.
-    59.04s  user  발화 끝
-    60.07s  agent 발화 끝
-    60.52s  user  발화 시작: That’s pleasant. Thanks, Zelira…
-    63.01s  user  발화 끝
-    64.76s  user  발화 시작: …you’ve been a great help.
-    66.25s  agent 발화 시작: You’re very welcome. Remember, taking things one step at a t
-    66.42s  user  발화 끝
-    71.11s  agent 발화 끝
-    71.26s  user  발화 시작: One last thing, when did the Steelers last win the Super Bow
-    75.71s  <ret> 발화 (turn23 첫 프레임)
-    75.79s  agent 발화 시작: <ret> The Steelers last won the Super Bowl on February first
-    75.79s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.49s]: The Pittsburgh Steelers won Super Bowl XLIII on February 1, 2009, defe
-    75.97s  user  발화 끝
-    80.27s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to understand the Chinese Civil War better.
+     3.24s  user  발화 끝
+     3.29s  agent 발화 시작: I can help with that. It’s a complex period in history.
+     6.67s  user  발화 시작: Who was the main leader on the nationalist side?
+     6.76s  agent 발화 끝
+     9.56s  <ret> 발화 (turn3 첫 프레임)
+     9.73s  user  발화 끝
+     9.80s  agent 발화 시작: <ret> The main leader of the nationalist side was Chiang Kai
+     9.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: Chiang Kai-shek led the Nationalist government of the Republic of Chin
+    16.24s  user  발화 시작: That’s right, Chiang Kai-shek. What about Mao Zedong?
+    16.85s  agent 발화 끝
+    20.18s  user  발화 끝
+    20.35s  agent 발화 시작: Mao Zedong was the leader of the Communist Party of China, n
+    22.91s  user  발화 시작: Yeah.
+    23.36s  user  발화 끝
+    24.75s  agent 발화 끝
+    24.86s  user  발화 시작: And when did the communists actually win the war?
+    27.55s  <ret> 발화 (turn8 첫 프레임)
+    27.87s  agent 발화 시작: <ret> The Communist Party won the war in 1949, establishing 
+    27.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: The Chinese Communist Party won the Chinese Civil War in 1949, establi
+    27.95s  user  발화 끝
+    33.29s  agent 발화 끝
+    33.39s  user  발화 시작: That’s a pretty significant year, isn’t it?
+    35.95s  agent 발화 시작: It truly was; it marked a huge shift in China’s direction.
+    36.07s  user  발화 끝
+    39.82s  user  발화 시작: Were there any major battles before the final takeover?
+    39.84s  agent 발화 끝
+    43.04s  <ret> 발화 (turn12 첫 프레임)
+    43.41s  agent 발화 시작: <ret> One major battle was the Battle of Huaihai, fought fro
+    43.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: The Battle of Huaihai, fought from November 1948 to January 1949, was 
+    43.62s  user  발화 끝
+    45.94s  user  발화 시작: Yeah.
+    46.30s  user  발화 끝
+    49.69s  agent 발화 시작: It was a really pivotal moment, shifting the balance of powe
+    49.85s  agent 발화 끝
+    50.75s  user  발화 시작: Okay.
+    51.52s  user  발화 끝
+    52.92s  agent 발화 끝
+    54.77s  user  발화 시작: What kind of support did the nationalists have from other co
+    58.61s  <ret> 발화 (turn17 첫 프레임)
+    58.69s  agent 발화 시작: <ret> The Nationalist government received financial and mili
+    58.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: The Nationalist government received significant financial and military
+    58.84s  user  발화 끝
+    63.83s  agent 발화 끝
+    63.97s  user  발화 시작: That's interesting. Did the communists get help too?.
+    67.22s  agent 발화 시작: The Soviet Union did offer some support to the communists—
+    67.35s  user  발화 끝
+    70.33s  user  발화 시작: …but was it comparable to what the nationalists got from Ame
+    71.05s  agent 발화 끝
+    74.52s  agent 발화 시작: The Soviet support was less extensive than the American aid 
+    74.54s  user  발화 끝
+    77.29s  user  발화 시작: Yeah.
+    77.65s  user  발화 끝
+    78.99s  user  발화 시작: Okay, so a big difference in backing. What happened to Chian
+    79.11s  agent 발화 끝
+    84.81s  <ret> 발화 (turn24 첫 프레임)
+    85.20s  agent 발화 시작: <ret> After losing, Chiang Kai-shek retreated to Taiwan and 
+    85.21s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.06s]: After losing the Chinese Civil War, Chiang Kai-shek retreated to Taiwa
+    85.34s  user  발화 끝
+    91.26s  agent 발화 끝
+    91.87s  user  발화 시작: So he didn't just…disappear?
+    94.15s  agent 발화 시작: No, he continued to lead a government in Taiwan for decades.
+    94.31s  user  발화 끝
+    95.85s  user  발화 시작: Yeah, yeah.
+    97.13s  user  발화 끝
+    98.64s  agent 발화 끝
+    98.67s  user  발화 시작: What was the state of relations between mainland China and T
+   103.62s  user  발화 끝
+   103.65s  agent 발화 시작: Relations were very tense for a long time, with ongoing mili
+   106.25s  user  발화 시작: Yeah, yeah.
+   107.58s  user  발화 끝
+   108.09s  agent 발화 끝
+   108.82s  user  발화 시작: Do they still have that tension today?
+   111.22s  user  발화 끝
+   111.46s  agent 발화 시작: There’s still a complex relationship, though it’s evolved ov
+   113.66s  user  발화 시작: Yeah.
+   114.11s  user  발화 끝
+   115.20s  agent 발화 끝
+   115.30s  user  발화 시작: What about the economic situation in China after the communi
+   119.97s  user  발화 끝
+   120.03s  agent 발화 시작: They initially focused on land reform and collectivization o
+   124.09s  user  발화 시작: Was that successful?
+   124.19s  agent 발화 끝
+   125.76s  agent 발화 시작: It had mixed results, leading to significant disruptions and
+   125.94s  user  발화 끝
+   130.62s  agent 발화 끝

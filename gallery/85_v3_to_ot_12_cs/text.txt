@@ -1,62 +1,61 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 스트레스 해소와 마음챙김을 돕는 친절하고 침착한 개인 가이드 Briara입니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 격려적이고 비판적이지 않은 라이프 코치 Elena입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Victor",
+    "name": "Nora",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "male",
-    "age_range": "early 20s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-24",
-      "category": "home",
-      "text": "User's home address is 17 Pine Court."
+      "date": "2026-06-26",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in March."
     },
     {
-      "date": "2026-04-30",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2026-04-07",
+      "date": "2026-06-16",
       "category": "work",
       "text": "User works as a high-school teacher."
     },
     {
-      "date": "2025-09-22",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-03-15",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    },
+    {
+      "date": "2025-08-27",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-31",
-      "title": "Comparing gym memberships",
+      "date": "2025-11-09",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 어, 머라이어 캐리 “We Belong Together” 누가 썼어?
-[  3.18s][moshi] ⟨ret@2.87s⟩ ⟦⚡SPAN@3.19s: Johntá Austin co-wrote “We Belong Together” with Mariah Carey and Shannon Sanders.⟧ 좋은 노래에 관심 가져주셔서 기뻐요. Johntá Austin이 머라이어 캐리랑 Shannon Sanders랑 같이 “We Belong Together”를 공동으로 썼어요.
-[ 12.32s][user ] 오, 진짜? 머라이어 혼자 쓴 줄 알았어.
-[ 15.63s][moshi] «interrupted» 혼자 쓴 거라고 생각하기 쉬울 수도 있어요—
-[ 17.55s][user ] «interrupts_prev» …그 사람이 다른 유명한 노래도 ⟨ret@19.37s⟩ 썼어?
-[ 19.76s][moshi] ⟦⚡SPAN@19.77s: (tool result) Johntá Austin is an American songwriter and record producer, known for writing hits for artists ⟧ Johntá Austin은 작곡가이자 레코드 프로듀서인데, Aaliyah, Mary J. Blige, Usher 같은 많은 아티스트들을 위해서 히트곡을 썼어요.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist": "Johntá Austin"}}
-[ 23.61s][user ] «backchannel» 어.
-[ 28.68s][moshi] 정말 인상적인 커리어를 가지고 계시네요. 다른 작품들도 찾아볼까요?
+[  0.00s][user ] 안녕하세요, "Three Little Pigs"라는 노래를 부른 가수가 누구인지 아세요? 계속 생각나서요.
+[  6.55s][moshi] ⟨ret@6.24s⟩ ⟦⚡SPAN@6.56s: Green Jellÿ is an American parody metal band formed in 1989.⟧ 아, 그거 재미있는 노래죠! 사실 Green Jellÿ라는 패러디 메탈 밴드가 부른 노래예요.
+[ 12.79s][user ] Green Jellÿ요? 좀… 뜻밖인데요. 제가…
+[ 18.62s][user ] 만화 영화 사운드트랙인 줄 알았어요.
+[ 20.88s][moshi] 하하, 정말 놀랍죠, 그렇지 않나요? 때로는 가장 기억에 남는 노래가 숨겨진 기원을 가지고 있기도 해요.
+[ 28.58s][user ] «to_other» 여보, 쓰레기 버렸어요?
+[ 30.43s][user ] 그럼, Green Jellÿ는 또 뭘 하나요? 다른 노래로도 ⟨ret@34.76s⟩ 유명한가요?
+[ 35.16s][moshi] ⟦⚡SPAN@35.16s: Green Jellÿ released their debut album, "Green Jellÿ," in 1992, and it featured songs like "Three Little Pigs"⟧ 음, 그들은 천구백구십이년에 첫 앨범을 발표했는데, “Three Little Pigs”와 “Cereal Killer” 같은 곡들이 수록되어 있어요.

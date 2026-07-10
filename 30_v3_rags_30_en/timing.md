@@ -4,61 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Elena",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-06-27",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-04-18",
+#       "date": "2026-06-21",
 #       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-10-16",
+#       "date": "2026-05-20",
+#       "category": "home",
+#       "text": "User's home address is 380 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-03-18",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-08-17",
+#       "date": "2025-11-19",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-18",
-#       "category": "home",
-#       "text": "User's home address is 914 Pine Court."
-#     },
-#     {
-#       "date": "2025-07-01",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-08-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-24",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-05",
+#       "date": "2025-08-19",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -66,7 +58,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-02",
+#       "date": "2025-08-01",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -77,9 +69,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Who first described consciousness as a stream?
-     3.45s  <ret> 발화 (turn1 첫 프레임)
-     3.69s  agent 발화 시작: <ret> It was William James who first described consciousness
-     3.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: William James, in his 1890 *Principles of Psychology*, described consc
-     3.84s  user  발화 끝
-    12.82s  agent 발화 끝
+     0.00s  user  발화 시작: Who was in charge of looking into Apple's accounting back in
+     5.23s  <ret> 발화 (turn1 첫 프레임)
+     5.47s  agent 발화 시작: <ret> It was Mario Monti, the EU’s competition commissioner,
+     5.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: Mario Monti, as the European Union’s competition commissioner, led the
+     5.60s  user  발화 끝
+    15.02s  agent 발화 끝
