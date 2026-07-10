@@ -1,56 +1,72 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Mena, a thoughtful and soft-spoken supportive advisor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Thel, a grounded and empathetic counselor who helps people with everyday decisions and feelings. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Louis",
+    "name": "Liam",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
+    "nationality": "Canadian",
     "gender": "male",
     "age_range": "early 20s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-26",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
+      "date": "2025-12-16",
+      "category": "home",
+      "text": "User's home address is 75 Birch Road."
     },
     {
-      "date": "2026-01-26",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
-    },
-    {
-      "date": "2025-10-13",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-08-08",
+      "date": "2025-11-12",
       "category": "work",
       "text": "User works as a nurse."
     },
     {
-      "date": "2025-07-05",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2025-11-01",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
     },
     {
-      "date": "2025-06-24",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-10-20",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-07-08",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-06-29",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-12",
+      "date": "2026-02-12",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-06-27",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-20",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -61,17 +77,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What percentage of tokens did session zero zero one use?
-[  4.15s][moshi] ⟨ret@4.08s⟩ ⟦⚡SPAN@4.16s: (tool result) Session 001 used 78.3% of its allocated tokens.⟧ Session zero zero one used seventy-eight point three percent of its tokens. That’s quite a bit, isn’t it?
-      CALL: {"function": "get_codegen_session", "arguments": {"session_id": "001"}}
-[  8.09s][user ] «backchannel» Yeah, totally.
-[ 11.39s][user ] Um, can you show me the details…
-[ 15.16s][user ] …of that session? Just the main points.
-[ 18.44s][moshi] ⟨ret@18.04s⟩ ⟦⚡SPAN@18.44s: Session 001 started on July 8, 2026, at 10:15 AM and ended July 9, 2026, at 6:00 PM. It generated 1,250 tokens⟧ That session began July eighth, twenty twenty-six, at ten fifteen AM, and finished July ninth at six PM. It generated one thousand two hundred fifty tokens, using nine hundred seventy-eight.
-[ 27.62s][user ] «backchannel» Yeah.
-[ 32.27s][user ] A story, huh? [surprised] Can you find me some good restaurants nearby?
-[ 36.71s][moshi] ⟨ret@36.63s⟩ ⟦⚡SPAN@36.71s: (tool result) Found 3 restaurants: "Bella Italia" (Italian, 4.5 stars), "Spice Route" (Indian, 4.2 stars), "Oc⟧ I found three restaurants nearby: Bella Italia, an Italian place with four and a half stars; Spice Route, Indian, four point two stars; and Ocean View, seafood, at four stars.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 49.61s][user ] Bella Italia sounds nice. Can you reserve a table for two at seven thirty ⟨ret@54.37s⟩ tonight?
-[ 54.77s][moshi] ⟦⚡SPAN@54.77s: (tool result) Reservation confirmed at Bella Italia for 2 people at 7:30 PM. Confirmation ID: BI7294.⟧ Wonderful. Your table for two at Bella Italia is confirmed for seven thirty this evening. Your confirmation ID is BI seven two nine four. I hope you enjoy your meal.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "time": "19:30", "party_size": 2}}
+[  0.00s][user ] How many tokens did…
+[  3.35s][user ] …session F three consume?
+[  5.64s][moshi] ⟨ret@5.56s⟩ ⟦⚡SPAN@5.64s: (tool result) Session F3 consumed 14,872 tokens.⟧ That session used fourteen thousand eight hundred seventy-two tokens. It sounds like you're keeping a close eye on usage—that's smart.
+      CALL: {"function": "get_codegen_session", "arguments": {"session_id": "F3"}}
+[ 14.37s][user ] Um, can you show me the search results for "best Italian restaurants ⟨ret@18.02s⟩ near me"?
+[ 18.42s][moshi] ⟦⚡SPAN@18.42s: (tool result) Bella Notte - 4.5 stars, 0.3 miles; Roma Ristorante - 4.2 stars, 0.5 miles; Luigi's - 3.9 stars,⟧ Bella Notte has four and a half stars, just point three miles away. Roma Ristorante is also close—four point two stars, half a mile.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "near me", "cuisine": "Italian"}}
+[ 21.17s][user ] «backchannel» Yeah.
+[ 28.21s][user ] Actually, book me a table at Bella Notte for two people, this Saturday at ⟨ret@33.61s⟩ 7 PM.
+[ 34.01s][moshi] ⟦⚡SPAN@34.01s: (tool result) Reservation confirmed at Bella Notte for 2 people on Saturday, July 17, 2026 at 7:00 PM. Confirm⟧ Wonderful! Your table for two at Bella Notte is confirmed for Saturday at seven, confirmation BN71726. I hope you enjoy your evening.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Notte", "party_size": 2, "date": "this Saturday", "time": "7 PM"}}
+[ 39.44s][user ] «backchannel» Yeah.
+[ 44.12s][user ] Great. Thanks, Thel.

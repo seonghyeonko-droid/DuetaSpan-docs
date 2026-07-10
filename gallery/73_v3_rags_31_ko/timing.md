@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "소현",
+#     "name": "윤안",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,53 +12,56 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-08",
+#       "date": "2026-06-18",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-05-31",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
+#       "date": "2026-02-20",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-12-25",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2025-12-08",
+#       "date": "2025-09-09",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-06-18",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-10",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-10-09",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-31",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 소프라노즈 마지막 회장에 나온 발라드는 뭐였죠?
-     2.54s  <ret> 발화 (turn1 첫 프레임)
-     2.77s  user  발화 끝
-     2.78s  agent 발화 시작: <ret> 마지막 회장 장면에서, 저니의 '돈 스톱 빌리빈'이 흘러나왔어요. 기억하시는지요.
-     2.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: Don't Stop Believin' by Journey was featured during the final scene of
-     9.64s  agent 발화 끝
+     0.00s  user  발화 시작: 칙칙이 칙칙이 방방에서 그 남자아이를 누가 연기했어?
+     2.80s  <ret> 발화 (turn1 첫 프레임)
+     3.04s  agent 발화 시작: <ret> 그 영화 칙칙이 칙칙이 방방에 나오는 남자아이 제러미 포츠는 에드리안 홀이 연기했어요.
+     3.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: Adrian Hall played the boy, Jeremy Potts, in the 1968 film Chitty Chit
+     3.05s  user  발화 끝
+     9.80s  agent 발화 끝

@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Noa",
+#     "name": "Avery",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Australian",
 #     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "French"
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-26",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
-#     },
-#     {
-#       "date": "2026-01-06",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-25",
+#       "date": "2026-03-15",
 #       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-06-24",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-11-16",
+#       "category": "home",
+#       "text": "User's home address is 973 Pine Court."
+#     },
+#     {
+#       "date": "2025-08-23",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "category": "work",
+#       "text": "User works as a software engineer."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-01",
+#       "date": "2025-11-30",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-13",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -50,47 +58,97 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Arina, nice to meet you too. I' | S2 That’s great, thanks! | S3 …Do they have a set lunch menu? | S4 Excellent. That’s really helpful, 
+# EXAMINER(FDB-v2) 단계: S1 Hi Timi, it’s good to meet you too | S2 What would you suggest? | S3 That sounds perfect! Is it easy to | S4 Thanks, Timi. You’ve been a huge h
 
-     0.00s  agent 발화 시작: Hi Noa, I'm Arina! So lovely to meet you.
-     2.96s  agent 발화 끝
-     3.89s  user  발화 시작: Hi Arina, nice to meet you too. I'm looking for a good place
-     9.22s  user  발화 끝
-     9.23s  agent 발화 시작: Do you have any dietary preferences or cuisine types in mind
-    11.66s  user  발화 시작: Yeah.
-    12.25s  user  발화 끝
-    12.46s  agent 발화 끝
-    13.45s  user  발화 시작: Welll… I’m allergic to pollen, so outdoor seating might be t
-    18.75s  <ret> 발화 (turn5 첫 프레임)
-    18.91s  user  발화 끝
-    18.91s  agent 발화 시작: <ret> I recall you mentioned a pollen allergy, so we’ll defi
-    18.91s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.27s]: [2025-06-24] User is allergic to pollen.
-    24.18s  agent 발화 끝
-    24.29s  user  발화 시작: That’s great, thanks!
-    25.57s  <ret> 발화 (turn7 첫 프레임)
-    25.73s  agent 발화 시작: <ret> Le Potager du Marais is a vegan French restaurant with
-    25.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) Le Potager du Marais - Vegan French, indoor seating, 4.5
-    25.81s  user  발화 끝
-    30.34s  user  발화 시작: …Do they have a set lunch menu?
-    31.15s  agent 발화 끝
-    32.83s  user  발화 끝
-    32.88s  <ret> 발화 (turn9 첫 프레임)
-    33.12s  agent 발화 시작: <ret> Yes, they do! They have a set lunch menu for 25 euros,
-    33.12s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.79s]: (tool result) Le Potager du Marais - Lunch menu available, 25 EUR, Mon
-    37.67s  user  발화 시작: Oh.
-    38.12s  user  발화 끝
-    40.68s  agent 발화 시작: I’m glad to hear that fits your needs. It's a lovely spot, v
-    40.91s  agent 발화 끝
-    44.52s  agent 발화 끝
-    44.91s  user  발화 시작: Sounds wonderful! Is it easy to get to by metro?
-    48.72s  <ret> 발화 (turn13 첫 프레임)
-    48.88s  agent 발화 시작: <ret> It is! The closest metro stop is Rambuteau on Line 11,
-    48.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) Metro: Rambuteau (Line 11). Walk 3 minutes. Estimated tr
-    49.07s  user  발화 끝
-    54.69s  user  발화 시작: Right.
-    55.33s  user  발화 끝
-    57.90s  user  발화 시작: Excellent. That’s really helpful, Arina.
-    58.06s  agent 발화 끝
-    60.72s  agent 발화 시작: You’re very welcome, Noa. I'm happy I could help you find a 
-    60.77s  user  발화 끝
-    68.42s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Timi. It's lovely to meet you.
+     1.19s  user  발화 시작: Yeah, yeah.
+     2.05s  user  발화 끝
+     2.58s  agent 발화 끝
+     3.12s  user  발화 시작: Hi Timi, it’s good to meet you too. I’m feeling a bit stuck.
+     7.09s  user  발화 끝
+     7.16s  agent 발화 시작: It’s alright to feel stuck sometimes, Avery. What’s on your 
+     8.54s  user  발화 시작: Yeah, totally.
+     9.68s  user  발화 끝
+    10.67s  user  발화 시작: I’m trying to plan a weekend getaway, but I can’t decide whe
+    10.86s  agent 발화 끝
+    14.84s  user  발화 끝
+    15.11s  agent 발화 시작: A getaway sounds wonderful. Do you have any preferences for 
+    16.87s  user  발화 시작: Yeah.
+    17.46s  user  발화 끝
+    20.34s  agent 발화 끝
+    20.92s  user  발화 시작: I was thinking somewhere with good food… actually, I really 
+    25.22s  <ret> 발화 (turn9 첫 프레임)
+    25.41s  user  발화 끝
+    25.54s  agent 발화 시작: <ret> It sounds like you’re craving Italian food on this tri
+    25.54s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.52s]: [2025-08-23] User's favorite cuisine is Italian.
+    27.71s  user  발화 시작: Yeah.
+    28.35s  user  발화 끝
+    29.06s  agent 발화 끝
+    31.21s  user  발화 시작: Yes, definitely! Somewhere with really authentic Italian cui
+    36.64s  user  발화 끝
+    36.93s  agent 발화 시작: That’s a lovely starting point. Let’s explore some options f
+    41.32s  agent 발화 끝
+    41.58s  user  발화 시작: What would you suggest?
+    42.74s  <ret> 발화 (turn14 첫 프레임)
+    42.98s  agent 발화 시작: <ret> There are a few highly-rated Italian restaurants in Sy
+    42.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Italian restaurants in Sydney, NSW: Lucio Pizzeria (4.5 
+    43.19s  user  발화 끝
+    44.75s  user  발화 시작: Yeah.
+    45.34s  user  발화 끝
+    48.63s  agent 발화 끝
+    49.19s  user  발화 시작: Those sound good, but I was hoping to go *away* for the week
+    53.35s  user  발화 끝
+    53.41s  agent 발화 시작: Oh, my apologies. I jumped to local options. You’d like to t
+    56.95s  user  발화 시작: …Do you think somewhere in Victoria might be nice?
+    57.71s  agent 발화 끝
+    60.23s  <ret> 발화 (turn19 첫 프레임)
+    60.41s  user  발화 끝
+    60.47s  agent 발화 시작: <ret> Il Corso and La Luna in Victoria have excellent review
+    60.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Italian restaurants in Victoria: Il Corso (4.6 stars, $$
+    66.25s  user  발화 시작: Il Corso sounds interesting. What’s nearby?
+    66.26s  agent 발화 끝
+    69.51s  <ret> 발화 (turn21 첫 프레임)
+    69.81s  user  발화 끝
+    69.83s  agent 발화 시작: <ret> Il Corso is close to Portsea, with beaches, hiking, an
+    69.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.13s]: (tool result) Il Corso is near Portsea, offering beaches, hiking trail
+    71.39s  user  발화 시작: Yeah.
+    72.03s  user  발화 끝
+    74.95s  agent 발화 끝
+    74.99s  user  발화 시작: That sounds perfect! Is it easy to get there from Sydney?
+    78.79s  <ret> 발화 (turn24 첫 프레임)
+    79.19s  agent 발화 시작: <ret> One-way flights from Sydney to Melbourne start at arou
+    79.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) One-way flights from Sydney to Melbourne: $129 (Jetstar)
+    79.30s  user  발화 끝
+    81.49s  user  발화 시작: Yeah, totally.
+    82.86s  user  발화 끝
+    84.51s  agent 발화 끝
+    84.57s  user  발화 시작: Okay, that's reasonable. What about accommodation near Il Co
+    88.75s  <ret> 발화 (turn27 첫 프레임)
+    88.81s  agent 발화 시작: <ret> Portsea Hotel and Sorrento Beach House are both highly
+    88.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Hotels in Portsea: Portsea Hotel (4.2 stars, $250/night)
+    88.92s  user  발화 끝
+    93.81s  agent 발화 끝
+    93.99s  user  발화 시작: The Portsea Hotel sounds good. Could you tell me a bit more 
+    98.36s  <ret> 발화 (turn29 첫 프레임)
+    98.52s  agent 발화 시작: <ret> A standard room is available at the Portsea Hotel for 
+    98.52s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.86s]: (tool result) Portsea Hotel: standard room available, $250/night. Conf
+    98.58s  user  발화 끝
+   102.15s  user  발화 시작: Yeah.
+   102.55s  user  발화 끝
+   103.17s  user  발화 시작: That's great. I think I'll book it.
+   103.38s  agent 발화 끝
+   105.15s  user  발화 끝
+   105.26s  agent 발화 시작: Wonderful! It’s good to take that first step toward a relaxi
+   109.37s  user  발화 시작: Thanks, Timi. You’ve been a huge help.
+   109.47s  agent 발화 끝
+   111.62s  user  발화 끝
+   111.88s  agent 발화 시작: You’re very welcome, Avery. Sometimes, just talking through 
+   117.34s  agent 발화 끝
+   117.46s  user  발화 시작: I agree. I feel much more confident now.
+   120.42s  user  발화 끝
+   120.52s  agent 발화 시작: That’s lovely to hear. It sounds like you’re ready for a rev
+   124.17s  user  발화 시작: I am! Thanks again for your guidance.
+   124.45s  agent 발화 끝
+   126.76s  user  발화 끝
+   127.14s  agent 발화 시작: Avery. Enjoy your Italian getaway and the beautiful scenery.
+   131.29s  agent 발화 끝

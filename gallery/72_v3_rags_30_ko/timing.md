@@ -4,61 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "시형",
+#     "name": "보완",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-05-03",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2025-12-30",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-18",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-07-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-27",
 #       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2026-02-06",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-06-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "text": "User's home address is 대구 중구 동인동 88-1."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-25",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-04-30",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-12",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 음… nba에서 가장 많은 mvp를 받은 선수는 누구야?
-     4.20s  <ret> 발화 (turn1 첫 프레임)
-     4.35s  agent 발화 시작: <ret> 가장 많은 nba mvp는 커림 압둘-자바 선수가 받았는데, 통산 여섯 번이나 수상하셨어요. 그 
-     4.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: Kareem Abdul-Jabbar has won the most NBA Most Valuable Player awards, 
-     4.44s  user  발화 끝
-    12.18s  agent 발화 끝
+     0.00s  user  발화 시작: 의식의 흐름이라는 개념을 처음 생각해낸 사람은 누구야?
+     4.17s  <ret> 발화 (turn1 첫 프레임)
+     4.33s  agent 발화 시작: <ret> 의식의 흐름이라는 개념은, 계속해서 흘러가는 생각과 감정의 연속으로 윌리엄 제임스가 처음 제안했어
+     4.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: William James proposed the concept of the stream of consciousness as a
+     4.40s  user  발화 끝
+    14.02s  agent 발화 끝

@@ -4,135 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Taylor",
+#     "name": "Zoe",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "German",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-06-11",
+#       "category": "home",
+#       "text": "User's home address is 131 Cedar Lane."
 #     },
 #     {
-#       "date": "2026-03-02",
+#       "date": "2026-05-12",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-12-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
+#     },
+#     {
+#       "date": "2025-11-06",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-20",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-10-15",
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-11-21",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-07-19",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
-#     },
-#     {
-#       "date": "2025-07-01",
+#       "date": "2025-08-28",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into rock climbing."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-05",
-#       "title": "Researching a used car",
+#       "date": "2025-11-06",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-08-18",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-10-31",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-29",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have Sarah Miller’s phone… | S2 Hmm, that’s frustrating. What *can | S3 Wow, that's a bit pricey. What abo | S4 It really does. Can you find me di
+# EXAMINER(FDB-v2) 단계: S1 Do you happen to know Sarah Miller | S2 Oh, um, that’s a shame. Well, what | S3 That sounds lovely. I think I need | S4 Hmm, the Paradise sounds good. Cou
 
-     0.00s  user  발화 시작: Do you have Sarah Miller’s phone…
-     1.99s  user  발화 끝
-     3.98s  user  발화 시작: …number? I need to reach her.
-     5.51s  <ret> 발화 (turn2 첫 프레임)
-     5.91s  agent 발화 시작: <ret> I’m so sorry, I couldn’t find a phone number for Sarah
-     5.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (no information found)
-     5.96s  user  발화 끝
-    11.98s  agent 발화 끝
-    12.16s  user  발화 시작: Oh, okay. Well, what about the weather in Seoul last Tuesday
-    15.17s  <ret> 발화 (turn4 첫 프레임)
-    15.55s  agent 발화 시작: <ret> I checked, but unfortunately, I don’t have historical 
-    15.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.58s]: (no information found)
-    15.63s  user  발화 끝
-    20.03s  user  발화 시작: Hmm, that’s frustrating. What *can* you do?
-    20.13s  agent 발화 끝
-    23.07s  user  발화 끝
-    23.32s  agent 발화 시작: I can help you find information, book things, or even just c
-    30.34s  user  발화 시작: Okay… can you find me some jazz concerts happening this week
-    30.41s  agent 발화 끝
-    33.39s  <ret> 발화 (turn8 첫 프레임)
-    33.71s  agent 발화 시작: <ret> There are a few options! Jazz at the Blue Note on the 
-    33.71s  ⚡SPAN 주입 [d'=0.80s / d_lead=7.98s]: (tool result) Jazz at the Blue Note - July 12, 8 PM, Blue Note Club, S
-    33.86s  user  발화 끝
-    39.54s  user  발화 시작: Uh-huh.
-    39.94s  user  발화 끝
-    41.67s  user  발화 시작: The Seoul Jazz Festival sounds good. Can you tell me more?
-    41.68s  agent 발화 끝
-    44.38s  <ret> 발화 (turn11 첫 프레임)
-    44.70s  agent 발화 시작: <ret> It’s a yearly event at Olympic Park with international
-    44.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.29s]: (tool result) The Seoul Jazz Festival is an annual music event held in
-    44.81s  user  발화 끝
-    52.99s  agent 발화 끝
-    53.28s  user  발화 시작: Wow, that's a bit pricey. What about something free?
-    56.38s  user  발화 끝
-    56.42s  agent 발화 시작: Sometimes the best things *are* free, aren’t they? Let’s see
-    62.03s  agent 발화 끝
-    62.03s  user  발화 시작: Yes, please!
-    62.82s  <ret> 발화 (turn15 첫 프레임)
-    63.06s  agent 발화 시작: <ret> There's a movie night on the eleventh, a street art fe
-    63.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) Free Outdoor Movie Night - July 11, 8 PM, Yeouido Hangan
-    63.23s  user  발화 끝
-    66.71s  user  발화 시작: Uh-huh.
-    67.16s  user  발화 끝
-    70.87s  user  발화 시작: The street art festival sounds amazing!
-    70.90s  agent 발화 끝
-    73.42s  user  발화 끝
-    73.71s  agent 발화 시작: That sounds like a wonderful opportunity to get inspired, do
-    81.03s  agent 발화 끝
-    81.04s  user  발화 시작: It really does. Can you find me directions to the Hongdae ar
-    84.61s  <ret> 발화 (turn20 첫 프레임)
-    84.75s  user  발화 끝
-    84.77s  agent 발화 시작: <ret> The quickest way is by subway, about twenty-five minut
-    84.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Directions to Hongdae area, Seoul: Estimated time 25 min
-    91.55s  user  발화 시작: Perfect, thank you so much!
-    91.58s  agent 발화 끝
-    92.98s  agent 발화 시작: You're very welcome! Remember, even small steps can lead to 
-    93.20s  user  발화 끝
-    99.33s  agent 발화 끝
+     0.00s  user  발화 시작: Do you happen to know Sarah Miller's phone number? I met her
+     3.58s  <ret> 발화 (turn1 첫 프레임)
+     3.98s  agent 발화 시작: <ret> I’ve looked, and unfortunately, I couldn’t find a phon
+     3.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.19s]: (no information found)
+     4.16s  user  발화 끝
+    11.17s  agent 발화 끝
+    12.04s  user  발화 시작: Oh, um, that’s a shame. Well, what about the weather in Seou
+    17.40s  <ret> 발화 (turn3 첫 프레임)
+    17.80s  agent 발화 시작: <ret> On July fourth of last year, Seoul had a pleasant temp
+    17.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: (tool result) The weather in Seoul on July 4, 2025, was 28.5°C with pa
+    17.97s  user  발화 끝
+    28.33s  agent 발화 끝
+    28.46s  user  발화 시작: That sounds lovely. I think I need to book a hotel in Busan 
+    32.07s  <ret> 발화 (turn5 첫 프레임)
+    32.47s  agent 발화 시작: <ret> I found some hotels in Busan for next week. The Paradi
+    32.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.45s]: (tool result) Busan hotels: Paradise Hotel Busan (4.5 stars, $210/nigh
+    32.48s  user  발화 끝
+    43.74s  user  발화 시작: Hmm, the Paradise sounds good. Could you reserve a room for 
+    43.93s  agent 발화 끝
+    47.51s  <ret> 발화 (turn7 첫 프레임)
+    47.59s  agent 발화 시작: <ret> I’ve booked a room for you at the Paradise Hotel Busan
+    47.59s  ⚡SPAN 주입 [d'=1.76s / d_lead=9.37s]: (tool result) Paradise Hotel Busan for 1 night, check-in July 17, 2026
+    47.72s  user  발화 끝
+    56.96s  agent 발화 끝

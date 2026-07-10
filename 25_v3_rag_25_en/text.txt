@@ -1,78 +1,75 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are Thar, a upbeat and supportive personal guide who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Feno, a gentle and reflective wellness coach who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_25",
-    "name": "Hana",
+    "name": "Nora",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
+    "nationality": "German",
     "gender": "female",
     "age_range": "late 20s",
-    "language": "English"
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-11-27",
+      "date": "2025-12-31",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-11-16",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-11-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     },
     {
       "date": "2025-09-11",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-08-14",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2025-08-02",
-      "category": "home",
-      "text": "User's home address is 936 Elm Street."
+      "date": "2025-07-25",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-03",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-18",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-05",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-07-24",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m trying to settle a debate. Who’s the more well-known musician…
-[  4.90s][user ] …Peter Chelsom or Billy Bob ⟨ret@6.79s⟩ Thornton?
-[  6.95s][moshi] ⟦⚡SPAN@6.95s: Billy Bob Thornton is an American actor, filmmaker, and musician who achieved fame in the 1990s.⟧ Well, it seems Billy Bob Thornton is the more recognizable name—he's an American actor, filmmaker, and musician who really rose to fame in the nineties.
-[ 16.25s][user ] Huh, I thought Chelsom had more hits.
-[ 18.79s][moshi] «interrupted» That’s interesting! While Peter Chelsom is a respected film director, Billy Bob Thornton has a broader presence in both film and music—
-[ 26.28s][user ] «interrupts_prev» …but did Thornton actually *release* albums, or is he just known to ⟨ret@29.78s⟩ play?
-[ 30.01s][moshi] ⟦⚡SPAN@30.02s: Billy Bob Thornton has released three studio albums: “Private Audition” in 2001, “The Edge of the World” in 20⟧ He actually did release albums, three studio albums in total—"Private Audition" came out in two thousand one, then "The Edge of the World" in two thousand three, and "BeautifulWorld" in two thousand nine.
-[ 33.78s][user ] «backchannel» Mhm.
-[ 41.59s][moshi] It’s easy to forget about his music career with all his acting work! I’m glad we cleared that up.
+[  0.00s][user ] Hi Feno, I was wondering…
+[  2.72s][user ] …about Culture Beat.
+[  3.64s][moshi] Hello! It's lovely to connect. Music can be such a powerful connector, can’t it?
+[  7.25s][user ] «backchannel» Right.
+[  8.59s][user ] Yes, it is. How long was "Mr. Vain" at number one on the RPM Dance chart in Canada?
+[ 13.80s][moshi] «interrupted» ⟨ret@13.72s⟩ ⟦⚡SPAN@13.80s: "Mr. Vain" by Culture Beat spent ten weeks at number one on the RPM Dance chart in Canada during the fall of 1⟧ That song actually topped the Canadian RPM Dance chart for ten weeks—
+[ 17.82s][user ] «interrupts_prev» …was that their longest-running number one ⟨ret@20.11s⟩ hit?
+[ 20.43s][moshi] ⟦⚡SPAN@20.43s: (tool result) Culture Beat had two number-one singles on the RPM Dance chart; "Got to Get It" reached the top ⟧ Actually, Culture Beat had two number-one hits there—"Got to Get It" for seven weeks, and "Mr. Vain" for ten.
+      CALL: {"function": "search", "arguments": {"query": "Culture Beat number one hits Canada"}}
+[ 25.21s][user ] «backchannel» Mm-hmm.
+[ 27.18s][user ] So "Mr. Vain" was their biggest hit in Canada, then?
+[ 30.27s][moshi] It seems that way, yes. It held the top position for a longer duration, which often indicates a song’s popularity.
+[ 38.15s][user ] Do you know what album "Mr. Vain" ⟨ret@39.70s⟩ was on?
+[ 40.10s][moshi] ⟦⚡SPAN@40.10s: "Mr. Vain" was the lead single from Culture Beat's second studio album, *Within the Realm of Pleasure*, releas⟧ That song was the lead single from their second studio album, *Within the Realm of Pleasure*, released in nineteen ninety-three. A really fun album, if you haven’t heard the rest of it!
+[ 50.35s][user ] I haven’t. Is that album still available to buy?
+[ 52.99s][moshi] ⟨ret@52.83s⟩ ⟦⚡SPAN@52.99s: (tool result) *Within the Realm of Pleasure* by Culture Beat is available for purchase on Amazon for $14.99 as⟧ It’s currently available on Amazon for fourteen ninety-nine, and you can find it digitally on many platforms too.
+      CALL: {"function": "search", "arguments": {"query": "buy Within the Realm of Pleasure Culture Beat"}}

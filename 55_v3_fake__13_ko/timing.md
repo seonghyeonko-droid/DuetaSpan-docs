@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "세원",
+#     "name": "보훈",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,29 +18,37 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-13",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-10-17",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-01-29",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2025-12-31",
+#       "date": "2025-09-06",
 #       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-06-22",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "date": "2025-08-01",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-30",
+#       "date": "2026-02-04",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-18",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -51,25 +59,23 @@
 # }
 
 
-     0.00s  user  발화 시작: 그 노래…
-     1.61s  user  발화 끝
-     3.77s  user  발화 시작: …새가 코에 날아들었다는 거, 누가 불렀지?
-     6.96s  <ret> 발화 (turn2 첫 프레임)
-     7.12s  agent 발화 시작: <ret> 아, 그 노래요? 리틀 지미 디킨스 씨가 불렀답니다.
-     7.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: Little Jimmy Dickens sang the song "Let the Bird of Paradise Fly Up Yo
-     7.28s  user  발화 끝
-    10.90s  <ret> 발화 (turn3 첫 프레임)
-    10.95s  agent 발화 끝
-    10.98s  agent 발화 시작: <ret> 그분은 컨트리 음악계에서 정말 유명하셨죠.
-    10.98s  ⚡SPAN 주입(IRRELEVANT) [d'=1.44s / d_lead=2.86s]: The average high temperature in Reykjavik, Iceland in January is -1.8°
-    12.73s  user  발화 시작: 그래.
-    13.41s  user  발화 끝
-    13.84s  agent 발화 끝
-    13.90s  agent 발화 시작: 혹시 다른 컨트리 가수에 대해 궁금하신 점 있으세요?
-    16.12s  user  발화 시작: 음.
-    16.57s  user  발화 끝
-    16.80s  user  발화 시작: 아니, 됐어. 고마워.
-    17.00s  agent 발화 끝
-    18.68s  user  발화 끝
-    19.07s  agent 발화 시작: 천만에요.
-    20.02s  agent 발화 끝
+     0.00s  user  발화 시작: 유럽과 아시아를 나누는 전통적인 경계선이 어디예요?
+     3.45s  <ret> 발화 (turn1 첫 프레임)
+     3.61s  agent 발화 시작: <ret> 보통 우랄 산맥을 유럽과 아시아의 경계로 여겨요. 여행 계획 세우실 때 참고하시면 좋겠네요.
+     3.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: The Ural Mountains are generally considered the dividing line between 
+     3.74s  user  발화 끝
+     9.24s  <ret> 발화 (turn2 첫 프레임)
+     9.63s  agent 발화 끝
+     9.64s  agent 발화 시작: <ret> 혹시 다른 궁금한 점 있으세요? 뭐든 편하게 물어보세요.
+     9.64s  ⚡SPAN 주입(IRRELEVANT) [d'=1.44s / d_lead=3.70s]: The current price of Tesla stock is $177.44 as of 3:17 PM EST.
+    13.34s  agent 발화 끝
+    14.39s  user  발화 시작: 우랄 산맥이 러시아에 있어요?
+    16.71s  <ret> 발화 (turn4 첫 프레임)
+    16.84s  user  발화 끝
+    17.04s  agent 발화 시작: <ret> 네, 우랄 산맥은 러시아 서부에서 시작해서 카자흐스탄까지 이어져요. 꽤 넓은 지역을 차지하고 있죠
+    17.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: The Ural Mountains span a north–south arc across western Russia, from 
+    19.40s  user  발화 시작: 예.
+    19.90s  user  발화 끝
+    23.29s  agent 발화 끝
+    23.38s  agent 발화 시작: 혹시 러시아 여행 계획 있으신가요? 아니면 그냥 궁금하셨던 건가요?
+    27.64s  agent 발화 끝

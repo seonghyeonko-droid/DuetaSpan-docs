@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Hannah",
+#     "name": "Ruby",
 #     "location": {
 #       "city": "Paris",
 #       "country": "France",
@@ -13,47 +13,55 @@
 #     },
 #     "nationality": "French",
 #     "gender": "female",
-#     "age_range": "late 30s",
+#     "age_range": "40s",
 #     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-06-28",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-25",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2026-06-12",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-09-25",
+#       "date": "2026-05-20",
+#       "category": "home",
+#       "text": "User's home address is 910 Oak Avenue."
+#     },
+#     {
+#       "date": "2026-03-27",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-08-08",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-07-18",
-#       "category": "home",
-#       "text": "User's home address is 428 Oak Avenue."
+#       "date": "2025-11-01",
+#       "category": "work",
+#       "text": "User works as a chef."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-02",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-24",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-13",
+#       "date": "2025-09-16",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-14",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -63,33 +71,41 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering… | S2 …how much did it cost to *make* Ti | S3 Two hundred million? Wow, that's…  | S4 That's incredible. So, do you thin
+# EXAMINER(FDB-v2) 단계: S1 Hi Jer, I'm trying to get settled  | S2 Qatar, huh? I didn't realize that. | S3 Wow, that's hot! I'm trying to fin | S4 Perfect! That sounds exactly like 
 
-     0.00s  user  발화 시작: I was just wondering…
-     1.61s  user  발화 끝
-     2.92s  user  발화 시작: …how much did it cost to *make* Titanic? It seems like a lot
-     6.42s  <ret> 발화 (turn2 첫 프레임)
-     6.74s  agent 발화 시작: <ret> Well, creating something so grand certainly wasn’t che
-     6.74s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.58s]: The 1997 film Titanic had a production budget of approximately $200 mi
-     6.77s  user  발화 끝
-    13.27s  agent 발화 시작: It's amazing what goes into a movie of that scale, isn't it?
-    13.31s  agent 발화 끝
-    14.75s  user  발화 시작: Yeah.
-    15.10s  user  발화 끝
-    16.73s  agent 발화 끝
-    17.78s  user  발화 시작: Two hundred million? Wow, that's… a huge amount of money. Um
-    23.66s  <ret> 발화 (turn6 첫 프레임)
-    24.06s  agent 발화 시작: <ret> Actually, it *was* a record—when it came out, Titanic 
-    24.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: At the time of its release, Titanic was the most expensive film ever m
-    24.21s  user  발화 끝
-    26.62s  user  발화 시작: Wow.
-    27.45s  user  발화 끝
-    31.00s  agent 발화 시작: It really shows the ambition of the project, doesn’t it? I a
-    31.11s  agent 발화 끝
-    36.13s  user  발화 시작: Yeah.
-    36.63s  user  발화 끝
-    38.68s  user  발화 시작: That's incredible. So, do you think a movie could *ever* cos
-    38.69s  agent 발화 끝
-    43.55s  agent 발화 시작: It’s very likely, considering inflation and modern special e
-    43.68s  user  발화 끝
-    51.11s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Jer, I'm trying to get settled here. It's a bit overwhelm
+     3.68s  agent 발화 시작: Oh, hello! Settling in *is* a lot, isn't it?
+     3.70s  user  발화 끝
+     7.09s  agent 발화 끝
+     7.71s  user  발화 시작: Thanks. I was wondering, who hosted the World Cup in 2022?
+    11.70s  <ret> 발화 (turn3 첫 프레임)
+    11.87s  user  발화 끝
+    12.10s  agent 발화 시작: <ret> The 2022 FIFA World Cup was hosted by Qatar — it was t
+    12.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: The 2022 FIFA World Cup was hosted by Qatar, marking the first time th
+    18.81s  user  발화 시작: Qatar, huh? I didn't realize that. What's the weather…
+    18.86s  agent 발화 끝
+    22.60s  user  발화 끝
+    24.09s  user  발화 시작: …like there right now?
+    24.91s  <ret> 발화 (turn6 첫 프레임)
+    25.31s  agent 발화 시작: <ret> Right now in Qatar, it's 32.0 degrees Celsius, with 65
+    25.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) 32.0°C, humidity 65%, wind 8.9 km/h
+    25.38s  user  발화 끝
+    31.90s  user  발화 시작: Yeah.
+    32.63s  user  발화 끝
+    33.80s  user  발화 시작: Wow, that's hot! I'm trying to find a good restaurant nearby
+    33.89s  agent 발화 끝
+    37.45s  agent 발화 시작: Well, finding a good place to eat is a great way to feel mor
+    37.50s  user  발화 끝
+    40.59s  user  발화 시작: …do they have any places that serve Korean food?
+    41.29s  agent 발화 끝
+    42.97s  <ret> 발화 (turn11 첫 프레임)
+    43.37s  agent 발화 시작: <ret> There’s Arirang Korean Restaurant, it has 4.5 stars an
+    43.37s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.08s]: (tool result) Arirang Korean Restaurant, 4.5 stars, 0.8km, $$
+    43.46s  user  발화 끝
+    47.42s  user  발화 시작: Yeah, yeah.
+    48.98s  user  발화 끝
+    50.45s  agent 발화 끝
+    50.45s  user  발화 시작: Perfect! That sounds exactly like what I need. Thanks, Jer.
+    54.08s  agent 발화 시작: You're very welcome! I'm glad I could help you find somethin
+    54.15s  user  발화 끝
+    60.85s  agent 발화 끝

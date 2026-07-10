@@ -1,121 +1,69 @@
 v3_mcp_00_ko src=mcp style=v1
-SYSTEM: <system> 당신은 호기심 많고 공감하며 지지하는 웰니스 코치인 Kellax이며, 사람들의 일상적인 결정과 감정에 도움을 줍니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 돈과 예산 관리에 대해 사람들을 돕는 격려적이고 비판적이지 않은 조력자 Nara입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "서형",
+    "name": "보원",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-05",
+      "date": "2026-03-10",
       "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-12-08",
-      "category": "work",
-      "text": "User works as a high-school teacher."
+      "date": "2026-01-01",
+      "category": "home",
+      "text": "User's home address is 부산 해운대구 해운대로 570."
     },
     {
-      "date": "2025-11-25",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2025-12-30",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-07-13",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-06-28",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in December."
-    },
-    {
-      "date": "2025-06-12",
+      "date": "2025-10-02",
       "category": "diet",
-      "text": "User is vegan."
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-09-10",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-25",
-      "title": "Apartment hunting downtown",
+      "date": "2025-05-27",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-11-01",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-29",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 데이비드 가르시아에게 백오십달러 칠십오센트 개인 요청서를 만들어 ⟨ret@4.80s⟩ 줘.
-[  5.04s][moshi] ⟦⚡SPAN@5.04s: (tool result) Payment request created successfully. Request ID: 92746381.⟧ 데이비드 가르시아님께 백오십달러 칠십오센트 요청서가 성공적으로 생성되었어요. 요청 ID는 구 이 칠 사 육 삼 팔 일입니다.
-      CALL: {"function": "Payment_1_RequestPayment", "arguments": {"amount": "150.75", "recipient": "David Garcia"}}
-[ 15.24s][user ] 음… 그 돈은 다음 주 토요일까지 보내 달라고 할까?
-[ 19.46s][moshi] 요청서에 다음 주 토요일까지 입금하도록 설정해 드릴까요?
-[ 24.31s][user ] 응. ⟨ret@24.46s⟩
-[ 24.54s][moshi] ⟦⚡SPAN@24.54s: (tool result) Payment due date updated to 2026-07-18.⟧ 요청서 마감일을 이천이십육년 칠월 십팔일로 업데이트했습니다.
-      CALL: {"function": "Payment_1_MakePayment", "arguments": {"request_id": "92746381", "due_date": "2026-07-18"}}
-[ 27.32s][user ] «backchannel» 네.
-[ 29.56s][user ] 고마워.
-[ 30.74s][moshi] 천만에요.
-[ 31.89s][user ] 오늘 서울 날씨 ⟨ret@33.35s⟩ 어때?
-[ 33.66s][moshi] ⟦⚡SPAN@33.67s: (tool result) Weather in Seoul: 28.5°C, humidity 68%, wind 7.2 km/h. Sunny.⟧ 서울 날씨는 현재 이십팔 점 오도이고, 습도는 육십팔%, 바람은 시속 칠 점 이킬로미터로 불고 있습니다. 맑아요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 38.63s][user ] «backchannel» 그렇군요.
-[ 42.19s][moshi] 네, 오늘 정말 덥네요. 자외선 차단제를 꼭 바르세요.
-[ 45.92s][user ] 이번 주말에 갈 만한…
-[ 49.58s][user ] …영화 좀 추천해 ⟨ret@50.79s⟩ 줘.
-[ 51.11s][moshi] ⟦⚡SPAN@51.11s: (tool result) Currently playing movies in Seoul: "Inside Out 2", "Bad Boys: Ride or Die", "The Garfield Movie"⟧ 현재 서울에서 상영 중인 영화는 "인사이드 아웃 이", "배드 보이 라이드 오어 다이", "가필드 무비"입니다.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[ 57.07s][user ] "인사이드 아웃 이" 평점은 어때?
-[ 59.52s][moshi] ⟨ret@59.44s⟩ ⟦⚡SPAN@59.52s: (tool result) Inside Out 2 is receiving rave reviews, with a 95% rating on Rotten Tomatoes and a score of 86 o⟧ "인사이드 아웃 이"는 로튼 토마토에서 구십오%, 메타크리틱에서 팔십육점을 받으며 호평을 받고 있어요. 베라이어티에 따르면 개봉 주말에 일억 이천 오백만 달러의 수익을 올렸다고 합니다.
-      CALL: {"function": "search", "arguments": {"query": "Inside Out 2 movie review"}}
-[ 71.99s][user ] 재밌겠네.
-[ 73.00s][moshi] 네, 정말 많은 분들이 재밌다고 하네요. 가족과 함께 보기에도 좋을 것 같아요.
-[ 77.66s][user ] 내일 모레는 무슨 요일이야?
-[ 80.03s][moshi] 내일 모레는 일요일입니다.
-[ 81.87s][user ] 음… 혹시 근처에 괜찮은 레스토랑 ⟨ret@84.34s⟩ 있어?
-[ 84.73s][moshi] ⟦⚡SPAN@84.74s: (tool result) Nearby restaurants: "Olive Young", "VIPS", "Ashley".⟧ 근처에 "올리브영", "빕스", "애슐리"가 있습니다.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 88.59s][user ] 빕스는 예약 ⟨ret@90.10s⟩ 가능해?
-[ 90.42s][moshi] ⟦⚡SPAN@90.42s: (tool result) VIPS reservation confirmed for tomorrow at 7:00 PM. Confirmation ID: 583921.⟧ 내일 저녁 일곱시에 빕스 예약이 확정되었습니다. 확인 ID는 오 팔 삼 구 이 일입니다.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "VIPS"}}
-[ 93.54s][user ] «backchannel» 네.
-[ 97.11s][user ] 와, 고마워.
-[ 98.52s][moshi] 천만에요. 맛있는 저녁 식사 되세요.
-[101.45s][user ] 혹시… 내가 지난달에 빕스에 갔던 기억이 있는데…
-[105.07s][moshi] [curious] 지난달에 빕스에 가셨던 기억이 있으시군요.
-[107.98s][user ] 응, 그랬던 것 ⟨ret@109.23s⟩ 같아.
-[109.47s][moshi] ⟦⚡SPAN@109.47s: [2026-06-15] 빕스에 갔었어.⟧ 이천이십육년 유월 십오일에 빕스에 가셨던 기록이 있습니다.
-[113.61s][user ] 아, 맞아!
-[114.54s][moshi] 기억을 떠올려 드려서 기쁩니다. 혹시 다른 기억을 확인해 드릴까요?
+[  0.00s][user ] 혹시 오늘 날씨 ⟨ret@1.62s⟩ 어때?
+[  1.86s][moshi] ⟦⚡SPAN@1.86s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 오늘 날씨는 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[  8.60s][moshi] 날씨가 좋으니 기분 전환 삼아 산책이라도 가시는 건 어떠세요?
+[ 12.22s][user ] 음… 잠깐만, 그럼 지금 몇 시지?
+[ 14.93s][moshi] ⟨ret@14.86s⟩ ⟦⚡SPAN@14.94s: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ 지금은 이천이십육년 칠월 십일 금요일 오후 두시 삼십삼분이에요.
+      CALL: {"function": "get_time", "arguments": {}}
+[ 20.09s][user ] 아, 맞아. 근데 웹사이트 화면 캡처 좀 해 줄 수 있어? 전체 페이지로…
+[ 26.89s][user ] …base sixty-four로 저장해 줘.
+[ 29.07s][moshi] ⟨ret@28.99s⟩ ⟦⚡SPAN@29.07s: (tool result) Screenshot saved as base64 encoded string: /9j/4AAQSkZJRgABAQ…⟧ 네, 전체 페이지 화면 캡처를 base sixty-four 형식으로 저장했어요.
+      CALL: {"function": "playwright_screenshot", "arguments": {}}

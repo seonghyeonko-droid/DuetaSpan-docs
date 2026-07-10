@@ -4,139 +4,132 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Sky",
+#     "name": "Alex",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-11",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2025-12-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in August."
-#     },
-#     {
-#       "date": "2025-11-16",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-11-13",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-02-06",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-08-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-01-19",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
+#       "date": "2025-07-30",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-16",
+#       "date": "2026-03-24",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-13",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-24",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Elera, nice to meet you too. I  | S2 Fifteen minutes, that’s pretty goo | S3 Okay, I think I’ll drive then. Any | S4 Yes, exactly. Any recommendations?
+# EXAMINER(FDB-v2) 단계: S1 um, hi. I need to get somewhere, b | S2 yes! That one. How far is it from  | S3 perfect. Thank you so much. | S4 I do have Mochi. He’s a good boy.
 
-     0.00s  agent 발화 시작: Hi Sky, I'm Elera. It's lovely to connect with you today.
-     4.02s  agent 발화 끝
-     4.08s  user  발화 시작: Hi Elera, nice to meet you too. I need to figure out driving
-     8.82s  <ret> 발화 (turn2 첫 프레임)
-     8.90s  agent 발화 시작: <ret> I see you're planning a trip, and I recall you enjoy M
-     8.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: [2026-03-16] User's favorite cuisine is Mexican.
-     8.94s  user  발화 끝
-    11.16s  user  발화 시작: Okay.
-    11.84s  user  발화 끝
-    12.36s  user  발화 시작: Actually, I'm trying to get to a new vintage synth shop.
-    12.79s  agent 발화 끝
-    15.72s  user  발화 끝
-    16.11s  agent 발화 시작: Ah, a new pursuit! That sounds exciting. Where is this shop 
-    17.66s  user  발화 시작: Yeah.
-    18.16s  user  발화 끝
-    21.34s  agent 발화 끝
-    21.60s  user  발화 시작: It’s at 123 Geary Avenue in Toronto.
-    24.42s  <ret> 발화 (turn8 첫 프레임)
-    24.81s  agent 발화 시작: <ret> From your place, it’s about 8.2 kilometers, taking aro
-    24.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) Directions to 123 Geary Avenue, Toronto: 8.2 km, 15 mins
-    24.83s  user  발화 끝
-    26.91s  user  발화 시작: Oh.
-    27.55s  user  발화 끝
-    29.72s  agent 발화 끝
-    29.99s  user  발화 시작: Fifteen minutes, that’s pretty good. Is there traffic?
-    32.87s  <ret> 발화 (turn11 첫 프레임)
-    33.13s  agent 발화 시작: <ret> There’s moderate congestion on Dufferin Street, adding
-    33.27s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.46s]: (tool result) Traffic: Moderate congestion on Dufferin St., adding 5 m
-    33.46s  user  발화 끝
-    37.75s  user  발화 시작: …what about taking the subway instead?
-    38.59s  agent 발화 끝
-    40.01s  <ret> 발화 (turn13 첫 프레임)
-    40.09s  agent 발화 시작: <ret> The subway will take around 35 minutes, with two line 
-    40.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Subway: 35 mins (2 line changes); walk 8 mins at destina
-    40.20s  user  발화 끝
-    45.87s  user  발화 시작: Hmm, that’s a lot longer.
-    45.88s  agent 발화 끝
-    47.39s  agent 발화 시작: Sometimes convenience comes at a cost of time, and vice vers
-    47.43s  user  발화 끝
-    48.91s  user  발화 시작: Uh-huh.
-    49.45s  user  발화 끝
-    50.98s  agent 발화 시작: It's about finding the balance that suits your needs for thi
-    51.10s  agent 발화 끝
-    52.69s  user  발화 시작: Uh-huh.
-    53.19s  user  발화 끝
-    54.63s  agent 발화 끝
-    55.10s  user  발화 시작: Okay, I think I’ll drive then. Any parking nearby?
-    58.34s  <ret> 발화 (turn20 첫 프레임)
-    58.66s  agent 발화 시작: <ret> There’s a Green P parking lot on Geary Avenue, just po
-    58.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Green P Parking - Geary Ave: 0.2 km, $3.00/hour.
-    58.71s  user  발화 끝
-    65.21s  user  발화 시작: Perfect. Thanks for all the help!
-    65.38s  agent 발화 끝
-    67.10s  agent 발화 시작: You're very welcome, Sky. I'm glad I could assist.
-    67.14s  user  발화 끝
-    70.00s  user  발화 시작: I’m also planning a birthday dinner next week.
-    70.15s  agent 발화 끝
-    72.32s  <ret> 발화 (turn24 첫 프레임)
-    72.39s  agent 발화 시작: <ret> I recall you mentioned planning a birthday dinner for 
-    72.40s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.90s]: [2026-03-16] Past chat — Planning a birthday dinner: party of six; loo
-    72.58s  user  발화 끝
-    77.14s  user  발화 시작: Yes, exactly. Any recommendations?
-    77.30s  agent 발화 끝
-    79.64s  <ret> 발화 (turn26 첫 프레임)
-    79.80s  agent 발화 시작: <ret> El Catrin Destileria is a Mexican restaurant with outd
-    79.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) El Catrin Destileria: Mexican, outdoor seating, 4.5 star
-    80.01s  user  발화 끝
-    88.01s  agent 발화 끝
-    88.74s  user  발화 시작: That sounds lovely. Can you check if they have availability 
-    92.66s  <ret> 발화 (turn28 첫 프레임)
-    92.74s  agent 발화 시작: <ret> They have availability next Saturday at 7:30 PM. Your 
-    92.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) El Catrin Destileria: Available Saturday at 7:30 PM. Con
-    92.86s  user  발화 끝
-    99.72s  user  발화 시작: Great! I’ll take it. Thanks again, Elera.
-    99.83s  agent 발화 끝
-   102.76s  user  발화 끝
-   103.07s  agent 발화 시작: Wonderful! Enjoy your dinner, Sky. It’s good to plan ahead f
-   108.17s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Alex, I'm Zen. It’s good to connect with you today.
+     3.24s  agent 발화 끝
+     3.39s  user  발화 시작: um, hi. I need to get somewhere, but I forgot where I live.
+     7.26s  <ret> 발화 (turn2 첫 프레임)
+     7.34s  agent 발화 시작: <ret> You mentioned having a Corgi named Mochi, and that you
+     7.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: [2026-02-06] User has a Corgi named Mochi.
+     7.37s  user  발화 끝
+     9.99s  user  발화 시작: Yeah.
+    10.63s  user  발화 끝
+    12.48s  user  발화 시작: oh, right! Mochi. Okay, good. I want to go to that Italian p
+    12.95s  agent 발화 끝
+    17.53s  user  발화 끝
+    17.84s  agent 발화 시작: Could you tell me a little more about the Italian place you 
+    22.18s  agent 발화 끝
+    22.72s  user  발화 시작: you know, the one we talked about for my birthday?
+    25.26s  <ret> 발화 (turn7 첫 프레임)
+    25.62s  user  발화 끝
+    25.65s  agent 발화 시작: <ret> I recall you were planning a birthday dinner for six p
+    25.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: [2025-11-13] Past chat — Planning a birthday dinner: party of six; loo
+    30.65s  agent 발화 끝
+    30.88s  user  발화 시작: yes! That one. How far is it from here?
+    33.52s  <ret> 발화 (turn9 첫 프레임)
+    33.92s  agent 발화 시작: <ret> It’s about three and a half miles, with an estimated t
+    33.92s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.99s]: (tool result) Distance: 3.2 miles, Estimated time: 12 minutes via taxi
+    34.12s  user  발화 끝
+    35.52s  user  발화 시작: Right.
+    36.15s  user  발화 끝
+    38.74s  agent 발화 시작: Would you like me to find a taxi for you?
+    38.92s  agent 발화 끝
+    41.34s  user  발화 시작: yes, please. That would be great.
+    41.37s  agent 발화 끝
+    42.95s  <ret> 발화 (turn13 첫 프레임)
+    43.35s  agent 발화 시작: <ret> A ride has been confirmed. David Miller will arrive in
+    43.35s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.49s]: (tool result) Ride confirmed. Driver: David Miller. ETA: 5 minutes. Ve
+    43.51s  user  발화 끝
+    49.81s  user  발화 시작: perfect. Thank you so much.
+    49.84s  agent 발화 끝
+    51.71s  agent 발화 시작: You’re very welcome, Alex. It's good to feel prepared, isn’t
+    51.75s  user  발화 끝
+    55.11s  user  발화 시작: yeah, definitely. I get so stressed when I forget things.
+    55.28s  agent 발화 끝
+    58.40s  agent 발화 시작: It’s understandable to feel stressed when things slip your m
+    58.62s  user  발화 끝
+    60.31s  user  발화 시작: Mhm.
+    60.80s  user  발화 끝
+    63.80s  user  발화 시작: [sigh] I guess so. It’s just… a lot right now.
+    63.95s  agent 발화 끝
+    67.41s  agent 발화 시작: It sounds like you’re carrying a heavy load. Remember, it’s 
+    67.54s  user  발화 끝
+    73.20s  agent 발화 끝
+    73.31s  user  발화 시작: I do have Mochi. He’s a good boy.
+    75.71s  <ret> 발화 (turn22 첫 프레임)
+    75.78s  agent 발화 시작: <ret> You’ve mentioned Mochi before, and it’s wonderful to h
+    75.79s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.81s]: [2026-02-06] User has a Corgi named Mochi.
+    75.85s  user  발화 끝
+    80.59s  agent 발화 끝
+    80.73s  user  발화 시작: he is. I don't know what I'd do without him.
+    83.64s  user  발화 끝
+    83.75s  agent 발화 시작: Companionship can be a great source of comfort, especially d
+    89.30s  agent 발화 끝

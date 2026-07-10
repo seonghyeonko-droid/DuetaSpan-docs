@@ -1,59 +1,59 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Daeen, a grounded and empathetic counselor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Aroraon, a encouraging and non-judgmental personal guide who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Oscar",
+    "name": "Amelia",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-31",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in May."
-    },
-    {
-      "date": "2026-05-23",
-      "category": "home",
-      "text": "User's home address is 603 Maple Drive."
-    },
-    {
-      "date": "2026-03-23",
-      "category": "work",
-      "text": "User works as a architect."
-    },
-    {
-      "date": "2025-12-03",
+      "date": "2026-05-01",
       "category": "allergy",
-      "text": "User is allergic to pollen."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2025-10-28",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-03-02",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
+    },
+    {
+      "date": "2026-01-28",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-07-24",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-07-19",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-19",
-      "title": "Comparing gym memberships",
+      "date": "2025-08-05",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2026-03-29",
+      "date": "2025-07-23",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
@@ -61,29 +61,25 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-12-27",
-      "title": "Researching a used car",
+      "date": "2025-07-20",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What series was set in the past?
-[  2.04s][moshi] But I don’t have information on any series specifically set in the past.
-[  6.28s][user ] Hmm, okay. Well, what’s the weather…
-[ 10.52s][user ] …like in Seoul ⟨ret@11.58s⟩ today?
-[ 11.82s][moshi] ⟦⚡SPAN@11.82s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently 23.0 degrees Celsius in Seoul, with 74% humidity and a wind speed of 5.5 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 21.84s][moshi] Quite warm for July, isn’t it?
-[ 23.94s][user ] Yeah, it is. Uh, remind me, what did I say about feeling stressed?
-[ 28.33s][moshi] ⟨ret@28.03s⟩ ⟦⚡SPAN@28.35s: [2024-03-15] I feel overwhelmed with work and family commitments.⟧ On March fifteenth, two years ago, you said you felt overwhelmed with work and family commitments.
-[ 31.80s][user ] «backchannel» Right.
-[ 34.10s][moshi] It's good to revisit how we were feeling, sometimes. Do you still feel that way now?
-[ 39.91s][user ] Not really, things are better now. Could you find me some relaxing ⟨ret@43.53s⟩ music?
-[ 43.92s][moshi] ⟦⚡SPAN@43.93s: (tool result) Ambient music by Brian Eno, available on Spotify and Apple Music.⟧ I found some relaxing ambient music by Brian Eno, available on both Spotify and Apple Music.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "relaxing"}}
-[ 49.92s][moshi] Perhaps that will help maintain this sense of calm.
+[  0.00s][user ] What instrument does the mandolin not have the same tuning ⟨ret@3.06s⟩ of?
+[  3.22s][moshi] ⟦⚡SPAN@3.22s: (no information found)⟧ Unfortunately, I don't have information on what instrument specifically has a different tuning than the mandolin.
+[  9.11s][moshi] But don’t worry, sometimes not knowing is just a starting point for discovery, right?
+[ 13.70s][user ] Hmm, welll… maybe you can tell…
+[ 18.01s][user ] …me the current time in Seoul?
+[ 21.14s][moshi] ⟨ret@21.06s⟩ ⟦⚡SPAN@21.14s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now.⟧ It’s currently 2:37 PM in Seoul. I hope that helps you stay on track with your day—or maybe take a well-deserved break!
+      CALL: {"function": "get_time", "arguments": {"location": "Asia/Seoul"}}
+[ 28.84s][user ] That's good to know. I'm feeling a bit stressed about a project deadline.
+[ 33.13s][moshi] Oh, deadlines can be tough! It's completely normal to feel stressed when facing one. Remember to break things down into smaller steps.
+[ 35.96s][user ] «backchannel» Yeah.
+[ 41.08s][moshi] Exactly. And celebrate each small win along the way—you deserve it! Sometimes, acknowledging progress is as important as the final result.

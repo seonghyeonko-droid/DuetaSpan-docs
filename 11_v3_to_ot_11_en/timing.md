@@ -4,95 +4,95 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Alice",
+#     "name": "Hana",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "British",
 #     "gender": "female",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-04-28",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-05-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in August."
+#       "date": "2026-02-03",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-28",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-01-02",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-09-06",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2025-09-03",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-18",
+#       "date": "2026-03-13",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-25",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-14",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-27",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-27",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Klos, who has the most steals  | S2 Wow, that’s a lot! | S3 …wait, was Scottie Pippen close be | S4 So Stockton has a pretty comfortab
+# EXAMINER(FDB-v2) 단계: S1 Hey, do you know who sang “Don’t W | S2 Oh, right! Bobby McFerrin. I remem | S3 …Did he do any other songs that we | S4 That’s cool. I might have to check
 
-     0.00s  user  발화 시작: Hey Klos, who has the most steals in NBA history?
-     2.80s  <ret> 발화 (turn1 첫 프레임)
-     3.19s  agent 발화 시작: <ret> It’s quite a record, actually—John Stockton finished h
-     3.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: John Stockton retired as the NBA's all-time leader with 3,265 career s
-     3.32s  user  발화 끝
-     9.01s  user  발화 시작: Uh-huh.
-     9.41s  user  발화 끝
-    10.70s  user  발화 시작: Wow, that’s a lot!
-    10.79s  agent 발화 끝
-    11.96s  agent 발화 시작: It certainly is a testament to his dedication and skill on t
-    12.18s  user  발화 끝
-    14.62s  user  발화 시작: Yeah.
-    15.06s  user  발화 끝
-    16.63s  agent 발화 시작: Building strong defensive habits—like anticipating passes—is
-    16.88s  agent 발화 끝
-    24.19s  agent 발화 끝
-    24.78s  user  발화 시작: …wait, was Scottie Pippen close behind him?
-    26.95s  <ret> 발화 (turn8 첫 프레임)
-    27.27s  agent 발화 시작: <ret> Scottie Pippen was indeed a fantastic defender, finish
-    27.27s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.32s]: Scottie Pippen is second all-time in NBA history with 2,433 career ste
-    27.36s  user  발화 끝
-    32.84s  user  발화 시작: Right.
-    33.34s  user  발화 끝
-    34.59s  agent 발화 끝
-    34.89s  user  발화 시작: So Stockton has a pretty comfortable lead, then?
-    37.34s  agent 발화 시작: It’s a significant margin—over eight hundred steals separate
-    37.38s  user  발화 끝
-    42.62s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, do you know who sang “Don’t Worry, Be Happy”? I can’t q
+     4.09s  <ret> 발화 (turn1 첫 프레임)
+     4.48s  agent 발화 시작: <ret> That song is by Bobby McFerrin, released in nineteen e
+     4.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: Bobby McFerrin released “Don’t Worry, Be Happy” in 1988, and it became
+     4.63s  user  발화 끝
+     7.45s  user  발화 시작: Yeah.
+     7.89s  user  발화 끝
+    10.52s  user  발화 시작: Oh, right! Bobby McFerrin. I remember now.
+    10.59s  agent 발화 끝
+    13.88s  agent 발화 시작: It’s wonderful when a tune suddenly clicks back into memory,
+    13.99s  user  발화 끝
+    15.84s  user  발화 시작: Yeah.
+    16.47s  user  발화 끝
+    17.95s  agent 발화 시작: I find music can be such a powerful trigger for recollection
+    18.23s  agent 발화 끝
+    22.17s  user  발화 시작: …Did he do any other songs that were really popular?
+    22.80s  agent 발화 끝
+    24.21s  <ret> 발화 (turn8 첫 프레임)
+    24.52s  agent 발화 시작: <ret> Well, Bobby McFerrin is known for his vocal improvisat
+    24.53s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.11s]: Beyond "Don't Worry, Be Happy", Bobby McFerrin is celebrated for his a
+    24.57s  user  발화 끝
+    30.56s  agent 발화 시작: He’s celebrated for his a cappella work, especially the albu
+    30.63s  agent 발화 끝
+    32.63s  user  발화 시작: Uh-huh.
+    33.07s  user  발화 끝
+    36.76s  agent 발화 끝
+    37.58s  user  발화 시작: That’s cool. I might have to check that out.
+    40.03s  user  발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "태율",
+#     "name": "민슬",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,70 +12,83 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in May."
-#     },
-#     {
-#       "date": "2026-05-23",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-12-03",
+#       "date": "2026-05-01",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-10-28",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-03-02",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-01-28",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-07-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-08-03",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-04",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-23",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-20",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 과거를 배경으로 한 시리즈가 뭐였지? | S2 아, 그렇군요. 그럼 요즘… | S3 …가장 인기 있는 영화는 뭐예요? | S4 아니요, 괜찮아요. 그냥 궁금해서요.
 
-     0.00s  user  발화 시작: 과거를 배경으로 한 시리즈가 뭐였지?
-     2.09s  <ret> 발화 (turn1 첫 프레임)
-     2.40s  agent 발화 시작: <ret> 음, 죄송하지만 그 질문에 대한 정보는 찾을 수가 없네요.
-     2.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (no information found)
-     2.67s  user  발화 끝
-     6.52s  agent 발화 끝
-     6.81s  user  발화 시작: 아, 그렇군요. 그럼 요즘…
-     8.46s  user  발화 끝
-    10.01s  user  발화 시작: …가장 인기 있는 영화는 뭐예요?
-    11.41s  <ret> 발화 (turn4 첫 프레임)
-    11.73s  agent 발화 시작: <ret> 요즘 가장 인기 있는 영화는 듄 파트 이 고질라 콩: 새로운 제국, 그리고 쿠нг푸 팬더 사예요.
-    11.73s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.34s]: (tool result) Top-rated movies: 'Dune: Part Two', 'Godzilla x Kong: Th
-    11.85s  user  발화 끝
-    15.87s  user  발화 시작: 음.
-    16.27s  user  발화 끝
-    17.98s  agent 발화 시작: 듄 파트 이는 평점이 아주 높다고 하네요. 혹시 다른 장르를 찾으시나요?
-    18.08s  agent 발화 끝
-    23.11s  agent 발화 끝
-    23.14s  user  발화 시작: 아니요, 괜찮아요. 그냥 궁금해서요.
-    25.08s  agent 발화 시작: 그렇군요. 혹시 건강 관리에 관심 있으신가요? 요즘 운동도 많이 하시고요.
-    25.22s  user  발화 끝
-    30.73s  agent 발화 끝
+     0.00s  user  발화 시작: 만돌린은 어떤 악기와 튜닝이 같지 않나요?
+     2.31s  <ret> 발화 (turn1 첫 프레임)
+     2.61s  agent 발화 시작: <ret> 음, 그 부분에 대한 정보는 아직 찾을 수 없네요.
+     2.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: (no information found)
+     2.87s  user  발화 끝
+     5.99s  agent 발화 끝
+     6.37s  user  발화 시작: 아, 그렇군요. 다른 악기에 대해서는 어떨까요?
+     9.29s  user  발화 끝
+     9.55s  agent 발화 시작: 어떤 악기를 비교해 보고 싶으신가요? 좀 더 자세히 말씀해 주시면 제가 알아볼게요.
+    12.35s  user  발화 시작: 네.
+    12.71s  user  발화 끝
+    15.34s  agent 발화 끝
+    15.74s  user  발화 시작: 기타요. 만돌린과 기타 튜닝 차이가 궁금해요.
+    19.33s  <ret> 발화 (turn6 첫 프레임)
+    19.39s  agent 발화 시작: <ret> 만돌린과 기타는 둘 다 현악기인데, 보통 만돌린은 오도 음정으로, 기타는 사도 음정으로 조율된답니
+    19.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: The mandolin and guitar are both stringed instruments, but the mandoli
+    19.57s  user  발화 끝
+    24.94s  user  발화 시작: 와.
+    25.57s  user  발화 끝
+    26.71s  agent 발화 끝

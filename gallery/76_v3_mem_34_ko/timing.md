@@ -4,152 +4,97 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "라영",
+#     "name": "지린",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "date": "2026-02-06",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-13",
-#       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "date": "2026-01-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
-#       "date": "2025-10-25",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2025-08-02",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-10-12",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-08-30",
+#       "date": "2025-07-30",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-16",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-10-14",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-01",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-25",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 네, 안녕하세요. | S2 아, 네, 알겠습니다. | S3 … 혹시 택시비는 얼마나 할까요? | S4 아, 네, 좋아요!
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 젠. 지금 집에서 강남역까지 어떻게 가는 게 제일 | S2 이십오분 정도 걸린다고요? 음… 지금 교통 상황이 어떤가요? | S3 흠… 그럼 차가 덜 막히는 시간대가 언제쯤 있을까요? | S4 아니요, 괜찮아요. 지금 바로 출발할게요. 알려주셔서 감사합니
 
-     0.00s  agent 발화 시작: 안녕하세요, 라영님. 저는 엘레라입니다. 건강과 일상 습관을 도와드리는 상담가예요.
-     3.41s  user  발화 시작: 맞아요.
-     4.04s  user  발화 끝
-     5.42s  agent 발화 끝
-     6.07s  user  발화 시작: 아, 네, 안녕하세요.
-     7.64s  agent 발화 시작: 혹시 어디 가실 곳이 있으신가요?
-     7.81s  user  발화 끝
-     9.35s  agent 발화 끝
-     9.77s  user  발화 시작: 음, 혹시 집에서 해운대까지 버스가 어떻게 다니는지 알 수 있을까요?
-    14.14s  <ret> 발화 (turn5 첫 프레임)
-    14.30s  agent 발화 시작: <ret> 해운대까지 가시는군요. 전에 헬스장 알아보실 때 사무실 근처를 중요하게 생각하셨던 걸로 기억해요.
-    14.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: [2026-03-16] Past chat — Comparing gym memberships: wants a pool; clos
-    14.49s  user  발화 끝
-    16.16s  user  발화 시작: 네.
-    16.65s  user  발화 끝
-    20.51s  agent 발화 끝
-    20.59s  user  발화 시작: 네, 맞아요.
-    21.51s  agent 발화 시작: 지금 계신 곳이 부산이시죠?
-    21.74s  user  발화 끝
-    23.26s  agent 발화 끝
-    23.33s  user  발화 시작: 네, 맞습니다.
-    24.16s  <ret> 발화 (turn10 첫 프레임)
-    24.39s  agent 발화 시작: <ret> 천삼번, 천십일번, 천이십번 버스가 해운대까지 가는데, 대략 사십분에서 오십분 정도 걸릴 것 같아
-    24.39s  ⚡SPAN 주입 [d'=0.56s / d_lead=6.77s]: (tool result) 1003, 1011, 1020. Estimated time: 40-50 minutes.
-    24.62s  user  발화 끝
-    27.26s  user  발화 시작: 정말요?
-    28.07s  user  발화 끝
-    31.16s  agent 발화 끝
-    31.43s  user  발화 시작: 아, 네, 알겠습니다.
-    33.06s  agent 발화 시작: 혹시 선호하는 버스 노선이 있으신가요?
-    33.13s  user  발화 끝
-    35.32s  agent 발화 끝
-    35.34s  user  발화 시작: 음… 천삼번이 제일 자주 다니나요?
-    37.75s  <ret> 발화 (turn15 첫 프레임)
-    37.91s  agent 발화 시작: <ret> 네, 천삼번이 십분에서 십오분 간격으로 자주 다니는 편이에요. 다음 출발은 오후 두시 사십이분입니
-    37.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) Frequency: Every 10-15 minutes. Next departure: 14:42.
-    38.11s  user  발화 끝
-    41.28s  user  발화 시작: 네.
-    41.68s  user  발화 끝
-    44.14s  <ret> 발화 (turn17 첫 프레임)
-    44.38s  agent 발화 시작: <ret> 지금 출발하시면 대략 세시 이십오분쯤 해운대에 도착하실 거예요. 거리는 십사 점 오킬로미터입니다.
-    44.38s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.70s]: (tool result) Estimated arrival: 15:25. Distance: 14.5 km.
-    44.39s  agent 발화 끝
-    50.08s  agent 발화 끝
-    50.67s  user  발화 시작: 흠, 그런데 버스 말고 다른 방법은 없을까요? —
-    54.02s  user  발화 시작: … 혹시 택시비는 얼마나 할까요?
-    54.18s  user  발화 끝
-    55.89s  <ret> 발화 (turn20 첫 프레임)
-    56.13s  agent 발화 시작: <ret> 택시 요금은 대략 일만 팔천 원에서 이만 삼천 원 정도 예상되고, 이십분에서 이십오분 정도 걸릴 
-    56.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Estimated fare: ₩18,000 - ₩23,000. Estimated time: 20-25
-    56.37s  user  발화 끝
-    60.78s  user  발화 시작: 네.
-    61.27s  user  발화 끝
-    62.47s  agent 발화 끝
-    62.56s  user  발화 시작: 꽤 차이가 나네요.
-    63.65s  agent 발화 시작: 버스는 조금 더 시간이 걸리지만 비용은 저렴하죠.
-    63.71s  user  발화 끝
-    66.56s  agent 발화 끝
-    66.80s  user  발화 시작: 네, 맞아요.
-    68.00s  user  발화 끝
-    68.04s  <ret> 발화 (turn25 첫 프레임)
-    68.28s  agent 발화 시작: <ret> 혹시 벨라에게 간식을 좀 사갈까요? 벨라, 고양이시죠?
-    68.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.12s]: [2025-08-30] User has a Siamese cat named Bella.
-    72.37s  agent 발화 시작: 전에 시암 고양이 벨라가 있다고 말씀하셨던 게 기억나요. 벨라를 위한 간식을 사가실까요?
-    72.40s  agent 발화 끝
-    77.98s  agent 발화 끝
-    78.22s  user  발화 시작: 아, 네, 좋아요!
-    79.51s  agent 발화 시작: 벨라가 좋아할 만한 간식은 해운대 근처에 많이 있을 거예요.
-    79.55s  user  발화 끝
-    82.65s  user  발화 시작: 그럼 해운대 근처에 맛있는 비건 식당도 알아봐 주실 수 있나요?
-    82.74s  agent 발화 끝
-    86.36s  <ret> 발화 (turn30 첫 프레임)
-    86.76s  agent 발화 시작: <ret> 해운대 근처에 러빙헛, 플랜트 베이스, 그린리프 비건이라는 비건 식당이 있어요.
-    86.76s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.13s]: (tool result) Loving Hut Haeundae, Plant Base, Green Leaf Vegan.
-    87.00s  user  발화 끝
-    91.89s  agent 발화 끝
-    91.99s  user  발화 시작: 러빙헛은 가봤어요. 플랜트 베이스로 가볼까요?
-    96.62s  agent 발화 시작: 플랜트 베이스도 괜찮은 선택일 것 같아요.
-    96.76s  user  발화 끝
-    98.83s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 지린 님. 저는 젠입니다. 힘든 변화나 슬픔을 겪고 계신 분들을 돕는 역할을 하고 있어요.
+     5.95s  user  발화 시작: 안녕하세요, 젠. 지금 집에서 강남역까지 어떻게 가는 게 제일 빠를까요?
+     6.15s  agent 발화 끝
+    10.29s  <ret> 발화 (turn2 첫 프레임)
+    10.37s  agent 발화 시작: <ret> 저장된 정보에 따르면, 지린 님은 강남역 근처의 한 치과에 예약하신 적이 있으시네요. 혹시 그쪽으
+    10.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: [2025-10-14] Past chat — Booked a dentist appointment: asked for an ea
+    10.58s  user  발화 끝
+    13.05s  user  발화 시작: 네네.
+    13.69s  user  발화 끝
+    18.38s  agent 발화 시작: 혹시 출발하시는 곳이 저장된 주소와 같은 곳인가요?
+    18.44s  agent 발화 끝
+    19.98s  user  발화 시작: 네.
+    20.33s  user  발화 끝
+    21.50s  user  발화 시작: 네, 맞아요. 그쪽에서 출발하려고요.
+    21.75s  agent 발화 끝
+    24.24s  <ret> 발화 (turn7 첫 프레임)
+    24.40s  agent 발화 시작: <ret> 지금 지린 님 주소에서 강남역까지는 자동차로 약 십이 점 오킬로미터, 이십오분 정도 걸릴 것 같아
+    24.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: [2025-07-30] User has a Beagle named Rusty.
+    24.41s  user  발화 끝
+    32.58s  user  발화 시작: 이십오분 정도 걸린다고요? 음… 지금 교통 상황이 어떤가요?
+    32.78s  agent 발화 끝
+    37.33s  <ret> 발화 (turn9 첫 프레임)
+    37.41s  agent 발화 시작: <ret> 현재는 교통이 약간 혼잡해서 삼십팔분 정도 예상됩니다.
+    37.41s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.51s]: (tool result) {"duration": "38 minutes", "status": "moderate congestio
+    37.49s  user  발화 끝
+    40.92s  agent 발화 끝
+    41.13s  user  발화 시작: 아… 좀 막히는군요. 대중교통은 어때요?
+    44.36s  <ret> 발화 (turn11 첫 프레임)
+    44.52s  agent 발화 시작: <ret> 대중교통으로는 사십이분 정도 걸릴 것 같아요. 이호선과 구호선을 환승하시면 됩니다.
+    44.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.64s]: (tool result) {"duration": "42 minutes", "mode": "subway + walk", "rou
+    44.60s  user  발화 끝
+    50.12s  user  발화 시작: 흠… 그럼 차가 덜 막히는 시간대가 언제쯤 있을까요?
+    50.16s  agent 발화 끝
+    53.69s  <ret> 발화 (turn13 첫 프레임)
+    53.92s  agent 발화 시작: <ret> 세시 사십오분쯤이면 교통이 조금 덜 막힐 것 같습니다. 그때 출발하시면 이십팔분 정도 소요될 거예
+    53.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) {"duration": "28 minutes", "status": "light traffic", "e
+    54.14s  user  발화 끝
+    60.05s  user  발화 시작: 세시 사십오분이요? 알겠습니다.
+    60.27s  agent 발화 끝
+    62.11s  agent 발화 시작: 혹시 지금 바로 출발하시는 게 아니라면, 조금 후에 다시 확인해 드릴까요?
+    62.31s  user  발화 끝
+    65.90s  agent 발화 끝
+    66.05s  user  발화 시작: 아니요, 괜찮아요. 지금 바로 출발할게요. 알려주셔서 감사합니다.
+    70.50s  agent 발화 시작: 천천히, 안전하게 다녀오세요. 혹시 운전 중에 힘든 감정이 떠오르시면, 잠시 멈춰서 심호흡을 해보시는 것도 
+    70.59s  user  발화 끝
+    77.95s  agent 발화 끝

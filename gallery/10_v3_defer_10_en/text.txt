@@ -1,65 +1,72 @@
 v3_defer_10_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Mix, a encouraging and non-judgmental counselor who helps people with money and budgeting. <system>
+SYSTEM: <system> You are Aeia, a upbeat and supportive life coach who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Jamie",
+    "name": "Milan",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "50s",
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-25",
+      "date": "2026-04-14",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2026-04-12",
+      "category": "home",
+      "text": "User's home address is 58 Birch Road."
+    },
+    {
+      "date": "2026-03-22",
       "category": "trip",
       "text": "User is planning a trip to Switzerland in March."
     },
     {
-      "date": "2026-01-31",
-      "category": "home",
-      "text": "User's home address is 308 Maple Drive."
-    },
-    {
-      "date": "2025-10-21",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-06-19",
+      "date": "2025-12-21",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a chef."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-05",
-      "title": "Setting up a home network",
+      "date": "2026-05-11",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-07-17",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Find the coordinates for the High-Tech Park in Nanshan District, Shenzhen.
-[  4.57s][moshi] ⟨ret@4.50s⟩ ⟦⚡SPAN@4.58s: (tool result) {"latitude": 22.5616, "longitude": 114.0579}⟧ The coordinates for the High-Tech Park are latitude 22.56, longitude 114.05. It's a vibrant area, isn't it?
-      CALL: {"function": "map_geocode", "arguments": {"location": "High-Tech Park in Nanshan District, Shenzhen"}}
-[ 13.60s][user ] Uh, what’s the weather like there now?
-[ 15.45s][moshi] Give me a moment while I check the current conditions for that location.
-[ 19.14s][moshi] I’m having trouble retrieving the weather information for those specific coordinates right now.
-  ⟦⚡지연 SPAN 도착@22.96s: 28.3°C, humidity 81%, wind 7.2 km/h⟧
-[ 23.73s][moshi] «deferred_result» ⟨ret@23.74s⟩ I apologize for the delay. It looks like it’s 28.3 degrees Celsius, with 81 percent humidity and a 7.2 kilometer per hour breeze. Hopefully that’s useful for your plans.
-[ 31.00s][user ] «backchannel» Yeah.
-[ 37.36s][user ] That's good to know…
-[ 40.66s][user ] …thanks. Maybe I should look at apartments nearby.
-[ 43.70s][moshi] That sounds like a great idea.
+[  0.00s][user ] How long will it take to bike from the Canton Tower to Chen Clan Academy?
+[  4.22s][moshi] «interrupted» ⟨ret@4.14s⟩ ⟦⚡SPAN@4.22s: (tool result) 2.3 km, 12 minutes, route found.⟧ It looks like biking there will take about twelve minutes —
+      CALL: {"function": "maps_direction_bicycling", "arguments": {"origin": "Canton Tower", "destination": "Chen Clan Academy"}}
+[  6.40s][user ] «interrupts_prev» …Is that mostly flat, or are there hills?
+[  9.02s][moshi] That route is fairly flat, with only a slight incline near the end. It’s a pretty easy ride!
+[ 14.71s][user ] Great! And are there bike rental places near the Canton Tower?
+[ 18.98s][moshi] ⟨ret@18.67s⟩ ⟦⚡SPAN@18.99s: There are three bike rental locations within 500 meters of the Canton Tower, with prices ranging from 20 to 35⟧ There are three rental spots nearby, costing between twenty and thirty-five yuan an hour.
+[ 21.70s][user ] «backchannel» Yeah, yeah.
+[ 24.78s][user ] Perfect. Can you find me some good Cantonese restaurants near Chen Clan Academy?
+[ 29.70s][moshi] ⟨ret@29.54s⟩ ⟦⚡SPAN@29.70s: (tool result) 5 Cantonese restaurants found within 1 km of Chen Clan Academy, average rating 4.2 stars.⟧ I found five Cantonese restaurants within a kilometer, with an average rating of four point two stars.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Chen Clan Academy", "cuisine": "Cantonese"}}

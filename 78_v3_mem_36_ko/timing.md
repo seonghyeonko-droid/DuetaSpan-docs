@@ -4,96 +4,87 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "시호",
+#     "name": "다담",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 30s",
+#     "gender": "male",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
+#       "date": "2026-03-20",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-03-04",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-01-03",
+#       "date": "2026-02-21",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-12-13",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-01-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in December."
 #     },
 #     {
-#       "date": "2025-08-10",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2025-07-30",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2025-05-27",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-16",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-01-16",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-16",
-#       "title": "Researching a used car",
+#       "date": "2025-08-15",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-06",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 어, 안녕하세요. | S2 음… 전에 교토 여행 계획 세우고 있었던 거 기억해요? | S3 아니요, 그건 됐어요. 혹시 제가 꽃가루 알레르기가 있던가요? | S4 아, 그렇군요. 감사합니다.
 
-     0.00s  agent 발화 시작: 안녕하세요, 시호님. 저는 여러분의 상담사, 리온이라고 합니다.
-     4.35s  agent 발화 끝
-     5.06s  user  발화 시작: 아, 네. 반가워요. 혹시 제가 예전에 말씀드렸던 거 기억하세요?
-     9.21s  <ret> 발화 (turn2 첫 프레임)
-     9.36s  agent 발화 시작: <ret> 네, 시호님. 치과 예약 건에 대해 말씀하셨었죠. 아침 시간대, 한 선생님을 선호하신다고요.
-     9.37s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.67s]: [2026-03-16] Past chat — Booked a dentist appointment: asked for an ea
-     9.41s  user  발화 끝
-    13.74s  user  발화 시작: 네.
-    14.19s  user  발화 끝
-    16.02s  agent 발화 끝
-    16.52s  user  발화 시작: 맞아요. 혹시 그 예약 다시 확인할 수 있을까요?
-    19.22s  <ret> 발화 (turn5 첫 프레임)
-    19.62s  agent 발화 시작: <ret> 네, 한 선생님은 서울시 서울대로 백이십삼번지에 계시고, 전화번호는 공 이 일 이 삼 사 오 육 
-    19.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Provider: Dr. Han, Dentistry, 123 Seoul St., Seoul; Phon
-    19.71s  user  발화 끝
-    27.08s  agent 발화 끝
-    27.51s  user  발화 시작: 아, 감사합니다. 혹시 이 선생님 다른 병원에도 계신가요?
-    31.64s  agent 발화 시작: 죄송해요, 시호님. 다른 병원 정보는 찾을 수 없었습니다.
-    31.81s  user  발화 끝
-    35.39s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 다담님. 저는 다담님을 도와드리는 에이전트, 티악입니다.
+     4.96s  agent 발화 끝
+     5.66s  user  발화 시작: 어, 안녕하세요.
+     7.22s  user  발화 끝
+     7.43s  agent 발화 시작: 혹시 제가 기억하고 있는 내용 중에 궁금한 점이 있으실까요?
+     9.36s  user  발화 시작: 응.
+     9.58s  user  발화 끝
+    11.27s  agent 발화 끝
+    11.76s  user  발화 시작: 음… 전에 교토 여행 계획 세우고 있었던 거 기억해요?
+    15.96s  <ret> 발화 (turn5 첫 프레임)
+    16.18s  agent 발화 시작: <ret> 네, 다담님께서 올해 십이월에 교토 여행을 계획하고 계신다는 걸 기억하고 있습니다.
+    16.20s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.46s]: [2026-01-22] User is planning a trip to Kyoto in December.
+    16.29s  user  발화 끝
+    18.81s  user  발화 시작: 와.
+    19.31s  user  발화 끝
+    21.47s  agent 발화 시작: 혹시 여행 계획에 대해 더 자세히 여쭤봐 드릴까요?
+    21.65s  agent 발화 끝
+    24.48s  agent 발화 끝
+    24.84s  user  발화 시작: 아니요, 그건 됐어요. 혹시 제가 꽃가루 알레르기가 있던가요?
+    28.12s  <ret> 발화 (turn9 첫 프레임)
+    28.27s  agent 발화 시작: <ret> 네, 다담님께서는 꽃가루 알레르기가 있으신 걸로 기록되어 있습니다.
+    28.28s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.67s]: [2025-05-27] User is allergic to pollen.
+    28.49s  user  발화 끝
+    32.76s  agent 발화 시작: 봄철에는 특히 조심하시는 게 좋겠습니다.
+    32.95s  agent 발화 끝
+    35.19s  user  발화 시작: 아, 그렇군요. 감사합니다.
+    35.35s  agent 발화 끝
+    37.82s  user  발화 끝

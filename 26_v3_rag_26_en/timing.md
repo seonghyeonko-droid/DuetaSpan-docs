@@ -4,51 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Emma",
+#     "name": "Julian",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
+#     "nationality": "American",
+#     "gender": "male",
 #     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-13",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-07-12",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-07",
+#       "date": "2026-03-24",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-07-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2026-01-05",
+#       "category": "home",
+#       "text": "User's home address is 902 Birch Road."
+#     },
+#     {
+#       "date": "2025-10-15",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-26",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-14",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-26",
+#       "date": "2026-03-12",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -56,79 +48,83 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-17",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-12-19",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-04",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Dunar, how are you doing today? | S2 Yeah, not bad. Do you… uh… remembe | S3 I was thinking about joining a hik | S4 That makes sense. I’m also a bit w
+# EXAMINER(FDB-v2) 단계: S1 Hi Zelira, I’m new to the city and | S2 Okay, that sounds promising. What  | S3 That sounds interesting. Is it fre | S4 …you’ve been a great help.
 
-     0.00s  user  발화 시작: Hi Dunar, how are you doing today?
-     2.30s  user  발화 끝
-     2.36s  agent 발화 시작: I’m doing very well, thank you for asking. It’s good to conn
-     7.75s  user  발화 시작: Um, yeah, actually. I was just wondering… who is the chief m
-     7.82s  agent 발화 끝
-    14.35s  <ret> 발화 (turn3 첫 프레임)
-    14.46s  user  발화 끝
-    14.59s  agent 발화 시작: <ret> The current Chief Minister of Maharashtra is Devendra 
-    14.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: Devendra Fadnavis is currently serving as the Chief Minister of Mahara
-    21.13s  agent 발화 시작: It’s important to stay informed about leadership, isn’t it?
-    21.31s  agent 발화 끝
-    24.17s  user  발화 시작: That's right. Hey, quick question—what’s the weather like in
-    24.18s  agent 발화 끝
-    29.08s  <ret> 발화 (turn6 첫 프레임)
-    29.40s  agent 발화 시작: <ret> It’s currently 28.5 degrees Celsius in Mumbai, with 82
-    29.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) 28.5°C, humidity 82%, wind 12.3 km/h, clear skies
-    29.49s  user  발화 끝
-    36.12s  agent 발화 시작: Sounds quite pleasant, actually.
-    36.21s  agent 발화 끝
-    38.06s  agent 발화 끝
-    38.50s  user  발화 시작: Yeah, not bad. Do you… uh… remember what I said…
-    43.08s  user  발화 끝
-    44.54s  user  발화 시작: …about feeling lonely last week?
-    46.52s  <ret> 발화 (turn10 첫 프레임)
-    46.91s  agent 발화 시작: <ret> Yes, I do. On July third, two thousand twenty-six, you
-    46.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.82s]: [2026-07-03] I feel really lonely lately, and it's making it hard to f
-    46.99s  user  발화 끝
-    54.65s  agent 발화 시작: That sounds like a difficult feeling to navigate.
-    54.73s  agent 발화 끝
-    57.09s  user  발화 시작: It is. I’m trying to make more friends, but it’s hard.
-    57.24s  agent 발화 끝
-    61.06s  agent 발화 시작: It absolutely is hard. Building genuine connections takes co
-    61.16s  user  발화 끝
-    66.44s  agent 발화 끝
-    66.69s  user  발화 시작: I was thinking about joining a hiking group. Do you think th
-    71.51s  agent 발화 시작: That sounds like a wonderful idea! Shared activities are a f
-    71.69s  user  발화 끝
-    76.64s  user  발화 시작: Yeah.
-    77.17s  user  발화 끝
-    78.31s  user  발화 시작: Okay, good. Uh, what’s the best way to find hiking groups in
-    78.45s  agent 발화 끝
-    82.62s  <ret> 발화 (turn18 첫 프레임)
-    83.02s  agent 발화 시작: <ret> A popular group, Mumbai Hikers, organizes weekly hikes
-    83.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) Mumbai Hikers is a popular group organizing weekly hikes
-    83.07s  user  발화 끝
-    89.67s  agent 발화 시작: Connecting with others through a shared love of nature sound
-    89.78s  agent 발화 끝
-    92.45s  user  발화 시작: Mm-hmm.
-    93.09s  user  발화 끝
-    93.59s  user  발화 시작: Meetups… okay. That's helpful. Do you have any advice for ma
-    93.79s  agent 발화 끝
-   100.62s  agent 발화 시작: Active listening and genuine curiosity are key. Ask question
-   100.68s  user  발화 끝
-   103.66s  user  발화 시작: Yeah, yeah.
-   104.89s  user  발화 끝
-   106.01s  user  발화 시작: That makes sense. I’m also a bit worried about awkward silen
-   106.22s  agent 발화 끝
-   110.68s  agent 발화 시작: Awkward silences are perfectly normal! Don’t feel pressured 
-   110.73s  user  발화 끝
-   119.40s  agent 발화 끝
-   119.97s  user  발화 시작: Hmm, I never thought of it that way. Thanks, Dunar.
-   123.04s  agent 발화 시작: You’re very welcome. Remember, building friendships is a pro
-   123.19s  user  발화 끝
-   128.50s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Zelira, I’m new to the city and feeling a bit lost.
+     4.26s  user  발화 끝
+     4.32s  agent 발화 시작: Welcome! It’s perfectly normal to feel that way when settlin
+     7.92s  user  발화 시작: I’m trying to find a good coffee shop near the museum.
+     8.02s  agent 발화 끝
+    11.40s  <ret> 발화 (turn3 첫 프레임)
+    11.44s  user  발화 끝
+    11.64s  agent 발화 시작: <ret> I found a place called Bean There, at one two three Ma
+    11.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) {"restaurants": [{"name": "Bean There", "address": "123 
+    15.61s  user  발화 시작: …is it a good place to meet people?
+    16.55s  agent 발화 끝
+    17.87s  user  발화 끝
+    18.01s  agent 발화 시작: That’s a lovely thought. It's a popular spot, often quite li
+    21.34s  user  발화 시작: Yeah.
+    21.83s  user  발화 끝
+    22.69s  agent 발화 끝
+    22.80s  user  발화 시작: Okay, that sounds promising. What about the history museum i
+    27.77s  <ret> 발화 (turn8 첫 프레임)
+    28.09s  agent 발화 시작: <ret> The Carnegie Museum of Art opened in eighteen ninety-s
+    28.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: The Carnegie Museum of Art opened in 1896, and features a collection o
+    28.22s  user  발화 끝
+    31.50s  user  발화 시작: Yeah.
+    31.99s  user  발화 끝
+    33.17s  agent 발화 시작: It’s a beautiful building with a rich history, certainly.
+    33.23s  agent 발화 끝
+    36.05s  user  발화 시작: Do they have any special exhibits going on right now?
+    36.22s  agent 발화 끝
+    39.23s  <ret> 발화 (turn12 첫 프레임)
+    39.63s  agent 발화 시작: <ret> There’s an exhibit called Modern Masters, starting Jul
+    39.63s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.17s]: (tool result) {"events": [{"name": "Modern Masters", "date": "2026-07-
+    39.80s  user  발화 끝
+    41.86s  user  발화 시작: Yeah.
+    42.41s  user  발화 끝
+    43.80s  agent 발화 끝
+    44.27s  user  발화 시작: That sounds interesting. Is it free?
+    46.81s  <ret> 발화 (turn15 첫 프레임)
+    47.13s  agent 발화 시작: <ret> General admission is twenty dollars for adults, fiftee
+    47.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: General admission to the Carnegie Museum of Art is twenty dollars for 
+    47.36s  user  발화 끝
+    50.83s  user  발화 시작: Okay, a little pricey. What’s the weather like today?
+    51.62s  agent 발화 끝
+    54.39s  <ret> 발화 (turn17 첫 프레임)
+    54.79s  agent 발화 시작: <ret> It's twenty-three point zero degrees Celsius, with sev
+    54.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (tool result) "23.0°C, humidity 74%, wind 5.5 km/h"
+    54.85s  user  발화 끝
+    58.55s  user  발화 시작: Yeah.
+    59.04s  user  발화 끝
+    60.07s  agent 발화 끝
+    60.52s  user  발화 시작: That’s pleasant. Thanks, Zelira…
+    63.01s  user  발화 끝
+    64.76s  user  발화 시작: …you’ve been a great help.
+    66.25s  agent 발화 시작: You’re very welcome. Remember, taking things one step at a t
+    66.42s  user  발화 끝
+    71.11s  agent 발화 끝
+    71.26s  user  발화 시작: One last thing, when did the Steelers last win the Super Bow
+    75.71s  <ret> 발화 (turn23 첫 프레임)
+    75.79s  agent 발화 시작: <ret> The Steelers last won the Super Bowl on February first
+    75.79s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.49s]: The Pittsburgh Steelers won Super Bowl XLIII on February 1, 2009, defe
+    75.97s  user  발화 끝
+    80.27s  agent 발화 끝

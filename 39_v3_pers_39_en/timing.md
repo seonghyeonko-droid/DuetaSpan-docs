@@ -4,109 +4,133 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "Elias",
+#     "name": "Simon",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "50s",
-#     "language": "English"
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-21",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-11-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
-#     },
-#     {
-#       "date": "2025-10-19",
+#       "date": "2026-06-20",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2025-10-07",
+#       "date": "2026-04-25",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2026-02-23",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-09-12",
+#       "category": "home",
+#       "text": "User's home address is 819 Maple Drive."
+#     },
+#     {
+#       "date": "2025-07-23",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-26",
-#       "title": "Researching a used car",
+#       "date": "2026-04-12",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-12",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Studies? I thought this was a gene | S2 But what if I just sit there and s | S3 That’s a thought. Do you… know any | S4 [sigh] I just feel so rusty. It’s 
+# EXAMINER(FDB-v2) 단계: S1 Zal? That's... an unusual name for | S2 I don't know! That's what I'm afra | S3 Visualization? Like, imagining it  | S4 I guess I could try. It's just… ha
 
-     0.00s  agent 발화 시작: Hello Elias, welcome. I’m Dra, your wellness coach – here to
+     0.00s  agent 발화 시작: Bonjour, Simon. I’m Zal, and I’m here to offer support and g
+     4.45s  user  발화 시작: Yeah.
+     4.99s  user  발화 끝
+     7.17s  user  발화 시작: Zal? That's... an unusual name for a voice assistant. Is it,
      7.22s  agent 발화 끝
-     8.30s  user  발화 시작: Studies? I thought this was a general assistant. I’m trying 
-    13.39s  user  발화 끝
-    13.57s  agent 발화 시작: That’s wonderful, Elias. Rediscovering a passion like painti
-    19.53s  user  발화 시작: Yeah.
-    20.03s  user  발화 끝
-    22.89s  user  발화 시작: Welll… finding the time, mostly. Work’s been crazy, and then
-    23.03s  agent 발화 끝
-    28.83s  agent 발화 시작: It sounds like you're carrying a lot, Elias. Time truly is p
-    28.91s  user  발화 끝
-    37.04s  agent 발화 끝
-    37.23s  user  발화 시작: That sounds good. I used to paint every Saturday, but that h
-    42.32s  agent 발화 시작: Saturdays hold a lovely rhythm, don’t they? Perhaps we could
-    42.37s  user  발화 끝
-    46.97s  user  발화 시작: Mm-hmm.
-    47.60s  user  발화 끝
-    51.03s  agent 발화 시작: It's about making it manageable, Elias, not about achieving 
-    51.04s  agent 발화 끝
-    59.92s  user  발화 시작: But what if I just sit there and stare at a blank canvas? Th
-    60.72s  agent 발화 끝
-    64.48s  agent 발화 시작: That’s perfectly normal, Elias. It’s a sign you’re facing th
-    64.59s  user  발화 끝
-    72.50s  agent 발화 끝
-    72.65s  user  발화 시작: Okay. I’ve been thinking of taking a class, maybe? But they’
-    76.90s  user  발화 끝
-    77.05s  agent 발화 시작: A class could be inspiring. But cost shouldn’t be a barrier 
-    85.95s  agent 발화 끝
-    85.97s  user  발화 시작: I guess. I saw something on YouTube, but it didn’t seem very
-    90.05s  agent 발화 시작: Structure can be very helpful. Perhaps we could explore some
-    90.23s  user  발화 끝
-    98.06s  agent 발화 끝
-    98.92s  user  발화 시작: That’s a thought. Do you… know anything about color theory?
-   102.23s  agent 발화 시작: It’s a fascinating field, Elias, and a cornerstone of painti
-   102.43s  user  발화 끝
-   110.76s  agent 발화 끝
-   110.82s  user  발화 시작: Huh. I remember reading something about complementary colors
-   114.61s  user  발화 끝
-   114.82s  agent 발화 시작: Yes, complementary colors create strong contrast and vibranc
-   122.98s  agent 발화 끝
-   124.43s  user  발화 시작: I used to have a notebook with all that stuff written down… 
-   128.60s  user  발화 끝
-   128.86s  agent 발화 시작: It’s easy to misplace things, Elias. Sometimes revisiting ol
-   135.53s  user  발화 시작: [sigh] I just feel so rusty. It’s been years.
-   135.63s  agent 발화 끝
-   138.19s  agent 발화 시작: Rust is natural after a break, Elias. Think of it as a chanc
-   138.40s  user  발화 끝
-   141.25s  user  발화 시작: Yeah.
-   141.70s  user  발화 끝
-   146.72s  agent 발화 끝
-   146.89s  user  발화 시작: You always say the right thing, don’t you?
-   148.93s  agent 발화 시작: I simply aim to offer support, Elias. Your inner strength is
-   148.97s  user  발화 끝
-   155.89s  agent 발화 끝
-   156.71s  user  발화 시작: Thanks, Dra. That actually helps.
-   158.83s  user  발화 끝
-   158.86s  agent 발화 시작: You’re very welcome, Elias. Remember, even a few minutes ded
-   165.20s  agent 발화 끝
+    13.42s  user  발화 끝
+    13.55s  agent 발화 시작: It is a name I carry to remind me of my purpose, Simon—to of
+    17.09s  user  발화 시작: Right.
+    17.45s  user  발화 끝
+    21.39s  agent 발화 끝
+    21.60s  user  발화 시작: Right. Okay. Well, I’ve been feeling really overwhelmed late
+    25.96s  agent 발화 시작: That's very common, Simon. When things feel overwhelming, it
+    26.09s  user  발화 끝
+    28.34s  user  발화 시작: Yeah.
+    28.93s  user  발화 끝
+    32.71s  user  발화 시작: Easier said than done, honestly. It's just… constant.
+    32.87s  agent 발화 끝
+    36.46s  user  발화 끝
+    36.56s  agent 발화 시작: Constant pressure can certainly take a toll. Have you identi
+    43.63s  user  발화 시작: I think it’s the presentation next week. It feels like every
+    43.65s  agent 발화 끝
+    47.84s  user  발화 끝
+    48.03s  agent 발화 시작: Placing so much weight on one event can amplify anxiety. Wha
+    56.05s  agent 발화 끝
+    56.87s  user  발화 시작: I don't know! That's what I'm afraid of. My boss will be fur
+    60.91s  agent 발화 시작: It's understandable to worry about your boss's reaction. But
+    61.03s  user  발화 끝
+    68.16s  user  발화 시작: I try to be positive, I really do, but it just feels impossi
+    68.32s  agent 발화 끝
+    72.08s  agent 발화 시작: It's alright to acknowledge those difficult feelings, Simon.
+    72.23s  user  발화 끝
+    78.77s  user  발화 시작: …But what if I just completely freeze up during the presenta
+    79.49s  agent 발화 끝
+    82.10s  agent 발화 시작: That’s a valid fear, Simon. We can explore some techniques t
+    82.28s  user  발화 끝
+    84.41s  user  발화 시작: Okay.
+    85.05s  user  발화 끝
+    89.14s  agent 발화 끝
+    89.29s  user  발화 시작: Visualization? Like, imagining it going well? Sounds cheesy.
+    93.92s  user  발화 끝
+    93.92s  agent 발화 시작: It can feel that way at first, but it’s a powerful tool. It 
+   101.01s  agent 발화 끝
+   102.14s  user  발화 시작: Hmm. Maybe. I also haven’t been sleeping well. Everything ra
+   107.89s  agent 발화 시작: Sleep is vital for managing stress. Perhaps a calming routin
+   107.93s  user  발화 끝
+   116.22s  user  발화 시작: I've tried reading, but I just end up scrolling on my phone 
+   116.37s  agent 발화 끝
+   120.01s  user  발화 끝
+   120.08s  agent 발화 시작: That’s a common habit. The blue light from screens can inter
+   128.84s  agent 발화 끝
+   128.91s  user  발화 시작: I guess I could try. It's just… hard to disconnect.
+   132.75s  user  발화 끝
+   132.99s  agent 발화 시작: Disconnecting can be a challenge in today’s world. It requir
+   139.48s  agent 발화 끝
+   140.99s  user  발화 시작: Self-compassion? What does that even mean?
+   143.89s  agent 발화 시작: It means treating yourself with the same kindness and unders
+   144.04s  user  발화 끝
+   147.03s  user  발화 시작: Yeah, totally.
+   147.84s  user  발화 끝
+   150.13s  user  발화 시작: I don't know… I’m usually pretty hard on myself.
+   150.18s  agent 발화 끝
+   153.33s  agent 발화 시작: Many people are, Simon. It’s a pattern we often develop. But
+   153.42s  user  발화 끝
+   160.79s  agent 발화 끝

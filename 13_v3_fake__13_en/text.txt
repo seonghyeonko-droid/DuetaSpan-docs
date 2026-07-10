@@ -1,10 +1,10 @@
 v3_fake__13_en src=nq style=v1
-SYSTEM: <system> You are Fias, a kind and steady life coach who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Aren, a upbeat and supportive wellness coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__13",
-    "name": "Charlie",
+    "name": "Liam",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,48 +12,35 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "male",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-06",
-      "category": "home",
-      "text": "User's home address is 448 Birch Road."
+      "date": "2025-10-17",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2026-05-13",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-01-29",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-12-31",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2025-06-22",
+      "date": "2025-09-06",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-08-01",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-17",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-08-24",
+      "date": "2026-02-04",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -61,7 +48,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-07-07",
+      "date": "2025-10-18",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -72,14 +59,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who sang “Let the Bird of Paradise Fly Up Your Nose”?
-[  4.20s][moshi] ⟨ret@3.97s⟩ ⟦⚡SPAN@4.21s: Little Jimmy Dickens released “Let the Bird of Paradise Fly Up Your Nose” in 1965, and it became his signature⟧ That’s a fun question! It was Little Jimmy Dickens who released that song back in nineteen sixty-five.
-[  8.55s][user ] «backchannel» Mm-hmm.
-[ 10.20s][user ] Oh, okay. That's good to ⟨ret@12.38s⟩ know.
-[ 12.78s][moshi] ⟦⚡SPAN IRRELEVANT@12.78s: The average high temperature in Buenos Aires, Argentina in July is 18.2°C.⟧ It really became his signature tune, a bit of a novelty hit.
-[ 15.16s][user ] «backchannel» Uh-huh.
-[ 16.65s][moshi] Sometimes a little lightheartedness is exactly what we need, don’t you think?
-[ 18.58s][user ] «backchannel» Right.
-[ 21.09s][user ] Yeah, I guess so. Um, can you find me some country music events nearby?
-[ 26.39s][moshi] ⟨ret@26.31s⟩ ⟦⚡SPAN@26.39s: (tool result) There are three country music events happening within 20 miles this weekend, starting tonight.⟧ There are three country music events happening within twenty miles this weekend, starting tonight.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {}}
+[  0.00s][user ] I was just wondering, where is the line between Europe and Asia?
+[  4.31s][moshi] ⟨ret@4.08s⟩ ⟦⚡SPAN@4.32s: The Ural Mountains are generally considered the dividing line between Europe and Asia.⟧ Generally, people consider the Ural Mountains to be the dividing line between Europe and Asia.
+[  9.59s][user ] Oh, interesting. And what about ⟨ret@12.21s⟩ culturally?
+[ 12.58s][moshi] ⟦⚡SPAN IRRELEVANT@12.61s: The current price of Tesla stock is $177.89 as of 3:27 PM PST.⟧ Culturally, it's much more blurred, of course. There’s a lot of overlap and shared history.
+[ 15.75s][user ] «backchannel» Mm-hmm.
+[ 17.44s][user ] That makes sense. It's not so neat and tidy, is it?
+[ 21.27s][moshi] [laugh] Exactly! Life rarely is, and that’s perfectly okay. It's good you're thinking about how complex things can be.

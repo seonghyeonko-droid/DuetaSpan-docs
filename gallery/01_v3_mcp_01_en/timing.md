@@ -4,53 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Louis",
+#     "name": "Liam",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "Canadian",
 #     "gender": "male",
 #     "age_range": "early 20s",
-#     "language": "German"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-12-16",
+#       "category": "home",
+#       "text": "User's home address is 75 Birch Road."
 #     },
 #     {
-#       "date": "2026-01-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
-#     },
-#     {
-#       "date": "2025-10-13",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-08-08",
+#       "date": "2025-11-12",
 #       "category": "work",
 #       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-07-05",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-11-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
 #     },
 #     {
-#       "date": "2025-06-24",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-10-20",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-07-08",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-12",
+#       "date": "2026-02-12",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-27",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-20",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -60,35 +76,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What percentage of tokens did sess | S2 …of that session? Just the main po | S3 A story, huh? [surprised] Can you  | S4 Bella Italia sounds nice. Can you 
+# EXAMINER(FDB-v2) 단계: S1 How many tokens did… | S2 Um, can you show me the search res | S3 Actually, book me a table at Bella | S4 Great. Thanks, Thel.
 
-     0.00s  user  발화 시작: What percentage of tokens did session zero zero one use?
-     4.07s  user  발화 끝
-     4.08s  <ret> 발화 (turn1 첫 프레임)
-     4.15s  agent 발화 시작: <ret> Session zero zero one used seventy-eight point three p
-     4.16s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.39s]: (tool result) Session 001 used 78.3% of its allocated tokens.
-     8.09s  user  발화 시작: Yeah, totally.
-     9.51s  user  발화 끝
-    10.54s  agent 발화 끝
-    11.39s  user  발화 시작: Um, can you show me the details…
-    13.47s  user  발화 끝
-    15.16s  user  발화 시작: …of that session? Just the main points.
-    18.04s  <ret> 발화 (turn5 첫 프레임)
-    18.21s  user  발화 끝
-    18.44s  agent 발화 시작: <ret> That session began July eighth, twenty twenty-six, at 
-    18.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.40s]: Session 001 started on July 8, 2026, at 10:15 AM and ended July 9, 202
-    27.62s  user  발화 시작: Yeah.
-    28.07s  user  발화 끝
-    31.84s  agent 발화 끝
-    32.27s  user  발화 시작: A story, huh? [surprised] Can you find me some good restaura
-    36.63s  <ret> 발화 (turn8 첫 프레임)
-    36.71s  agent 발화 시작: <ret> I found three restaurants nearby: Bella Italia, an Ita
-    36.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.19s]: (tool result) Found 3 restaurants: "Bella Italia" (Italian, 4.5 stars)
-    36.88s  user  발화 끝
-    48.90s  agent 발화 끝
-    49.61s  user  발화 시작: Bella Italia sounds nice. Can you reserve a table for two at
-    54.37s  <ret> 발화 (turn10 첫 프레임)
-    54.77s  agent 발화 시작: <ret> Wonderful. Your table for two at Bella Italia is confi
-    54.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: (tool result) Reservation confirmed at Bella Italia for 2 people at 7:
-    54.81s  user  발화 끝
-    64.42s  agent 발화 끝
+     0.00s  user  발화 시작: How many tokens did…
+     1.75s  user  발화 끝
+     3.35s  user  발화 시작: …session F three consume?
+     5.56s  <ret> 발화 (turn2 첫 프레임)
+     5.61s  user  발화 끝
+     5.64s  agent 발화 시작: <ret> That session used fourteen thousand eight hundred seve
+     5.64s  ⚡SPAN 주입 [d'=1.60s / d_lead=7.83s]: (tool result) Session F3 consumed 14,872 tokens.
+    13.47s  agent 발화 끝
+    14.37s  user  발화 시작: Um, can you show me the search results for "best Italian res
+    18.02s  <ret> 발화 (turn4 첫 프레임)
+    18.42s  agent 발화 시작: <ret> Bella Notte has four and a half stars, just point thre
+    18.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) Bella Notte - 4.5 stars, 0.3 miles; Roma Ristorante - 4.
+    18.62s  user  발화 끝
+    21.17s  user  발화 시작: Yeah.
+    21.95s  user  발화 끝
+    27.04s  agent 발화 끝
+    28.21s  user  발화 시작: Actually, book me a table at Bella Notte for two people, thi
+    33.61s  <ret> 발화 (turn7 첫 프레임)
+    34.01s  agent 발화 시작: <ret> Wonderful! Your table for two at Bella Notte is confir
+    34.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.68s]: (tool result) Reservation confirmed at Bella Notte for 2 people on Sat
+    34.23s  user  발화 끝
+    39.44s  user  발화 시작: Yeah.
+    39.93s  user  발화 끝
+    43.69s  agent 발화 끝
+    44.12s  user  발화 시작: Great. Thanks, Thel.
+    45.87s  user  발화 끝

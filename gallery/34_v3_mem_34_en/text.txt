@@ -1,100 +1,101 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Elera, a practical and reassuring life coach who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Zen, a calm and patient personal guide who helps people with grief and change. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Sky",
+    "name": "Alex",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
+    "nationality": "American",
     "gender": "non-binary",
-    "age_range": "40s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-11",
-      "category": "hobby",
-      "text": "User is into vintage synth collecting."
-    },
-    {
-      "date": "2025-12-17",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in August."
-    },
-    {
-      "date": "2025-11-16",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-11-13",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-10-12",
+      "date": "2026-02-06",
       "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-08-30",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "date": "2026-01-19",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-08-02",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
+    },
+    {
+      "date": "2025-07-30",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-16",
+      "date": "2026-03-24",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-11-13",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-06-24",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Sky, I'm Elera. It's lovely to connect with you today.
-[  4.08s][user ] Hi Elera, nice to meet you too. I need to figure out driving directions.
-[  8.90s][moshi] ⟨ret@8.82s⟩ ⟦⚡SPAN@8.90s: [2026-03-16] User's favorite cuisine is Mexican.⟧ I see you're planning a trip, and I recall you enjoy Mexican food.
-[ 11.16s][user ] «backchannel» Okay.
-[ 12.36s][user ] Actually, I'm trying to get to a new vintage synth shop.
-[ 16.11s][moshi] Ah, a new pursuit! That sounds exciting. Where is this shop located?
-[ 17.66s][user ] «backchannel» Yeah.
-[ 21.60s][user ] It’s at 123 Geary Avenue in ⟨ret@24.42s⟩ Toronto.
-[ 24.81s][moshi] ⟦⚡SPAN@24.82s: (tool result) Directions to 123 Geary Avenue, Toronto: 8.2 km, 15 mins via Dufferin St.⟧ From your place, it’s about 8.2 kilometers, taking around 15 minutes.
-      CALL: {"function": "map_directions", "arguments": {"origin": "User's home address", "destination": "123 Geary Avenue, Toronto"}}
-[ 26.91s][user ] «backchannel» Oh.
-[ 29.99s][user ] Fifteen minutes, that’s pretty good. Is there ⟨ret@32.87s⟩ traffic?
-[ 33.13s][moshi] «interrupted» ⟦⚡SPAN@33.27s: (tool result) Traffic: Moderate congestion on Dufferin St., adding 5 mins to ETA.⟧ There’s moderate congestion on Dufferin Street, adding about five minutes to the trip—
-      CALL: {"function": "map_directions_matrix", "arguments": {"origins": ["User's home address"], "destinations": ["123 Geary Avenue, Toronto"], "mode": "driving"}}
-[ 37.75s][user ] «interrupts_prev» …what about taking the subway instead?
-[ 40.09s][moshi] ⟨ret@40.01s⟩ ⟦⚡SPAN@40.09s: (tool result) Subway: 35 mins (2 line changes); walk 8 mins at destination.⟧ The subway will take around 35 minutes, with two line changes, and an eight-minute walk at the end.
-      CALL: {"function": "map_directions_transit_integrated", "arguments": {"origin": "User's home address", "destination": "123 Geary Avenue, Toronto"}}
-[ 45.87s][user ] Hmm, that’s a lot longer.
-[ 47.39s][moshi] Sometimes convenience comes at a cost of time, and vice versa.
-[ 48.91s][user ] «backchannel» Uh-huh.
-[ 50.98s][moshi] It's about finding the balance that suits your needs for this trip.
-[ 52.69s][user ] «backchannel» Uh-huh.
-[ 55.10s][user ] Okay, I think I’ll drive then. Any parking ⟨ret@58.34s⟩ nearby?
-[ 58.66s][moshi] ⟦⚡SPAN@58.66s: (tool result) Green P Parking - Geary Ave: 0.2 km, $3.00/hour.⟧ There’s a Green P parking lot on Geary Avenue, just point two kilometers away, at three dollars an hour.
-      CALL: {"function": "map_search_places", "arguments": {"query": "parking near 123 Geary Avenue, Toronto", "type": "parking"}}
-[ 65.21s][user ] Perfect. Thanks for all the help!
-[ 67.10s][moshi] You're very welcome, Sky. I'm glad I could assist.
-[ 70.00s][user ] I’m also planning a birthday dinner next week.
-[ 72.39s][moshi] ⟨ret@72.32s⟩ ⟦⚡SPAN@72.40s: [2026-03-16] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ I recall you mentioned planning a birthday dinner for six people with outdoor seating.
-[ 77.14s][user ] Yes, exactly. Any ⟨ret@79.64s⟩ recommendations?
-[ 79.80s][moshi] ⟦⚡SPAN@79.80s: (tool result) El Catrin Destileria: Mexican, outdoor seating, 4.5 stars, 1.5 km away.⟧ El Catrin Destileria is a Mexican restaurant with outdoor seating, rated four and a half stars, and it’s one point five kilometers away.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "Toronto", "cuisine": "Mexican", "outdoor_seating": "true", "party_size": "6"}}
-[ 88.74s][user ] That sounds lovely. Can you check if they have availability next Saturday?
-[ 92.74s][moshi] ⟨ret@92.66s⟩ ⟦⚡SPAN@92.74s: (tool result) El Catrin Destileria: Available Saturday at 7:30 PM. Confirmation: 7X9B2.⟧ They have availability next Saturday at 7:30 PM. Your confirmation number is 7X9B2.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "El Catrin Destileria", "date": "2026-07-18", "party_size": "6"}}
-[ 99.72s][user ] Great! I’ll take it. Thanks again, Elera.
-[103.07s][moshi] Wonderful! Enjoy your dinner, Sky. It’s good to plan ahead for celebrations.
+[  0.00s][moshi] Hi Alex, I'm Zen. It’s good to connect with you today.
+[  3.39s][user ] um, hi. I need to get somewhere, but I forgot where I live.
+[  7.34s][moshi] ⟨ret@7.26s⟩ ⟦⚡SPAN@7.34s: [2026-02-06] User has a Corgi named Mochi.⟧ You mentioned having a Corgi named Mochi, and that you live in New York City.
+[  9.99s][user ] «backchannel» Yeah.
+[ 12.48s][user ] oh, right! Mochi. Okay, good. I want to go to that Italian place…
+[ 17.84s][moshi] Could you tell me a little more about the Italian place you have in mind?
+[ 22.72s][user ] you know, the one we talked about for my ⟨ret@25.26s⟩ birthday?
+[ 25.65s][moshi] ⟦⚡SPAN@25.66s: [2025-11-13] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ I recall you were planning a birthday dinner for six people, and you preferred outdoor seating.
+[ 30.88s][user ] yes! That one. How far is it ⟨ret@33.52s⟩ from here?
+[ 33.92s][moshi] ⟦⚡SPAN@33.92s: (tool result) Distance: 3.2 miles, Estimated time: 12 minutes via taxi.⟧ It’s about three and a half miles, with an estimated taxi ride of twelve minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "New York City", "destination": "Italian restaurant with outdoor seating"}}
+[ 35.52s][user ] «backchannel» Right.
+[ 38.74s][moshi] Would you like me to find a taxi for you?
+[ 41.34s][user ] yes, please. That would ⟨ret@42.95s⟩ be great.
+[ 43.35s][moshi] ⟦⚡SPAN@43.35s: (tool result) Ride confirmed. Driver: David Miller. ETA: 5 minutes. Vehicle: Toyota Camry, Blue, ABC-123.⟧ A ride has been confirmed. David Miller will arrive in about five minutes in a blue Toyota Camry.
+      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"pickup_location": "New York City", "dropoff_location": "Italian restaurant with outdoor seating"}}
+[ 49.81s][user ] perfect. Thank you so much.
+[ 51.71s][moshi] You’re very welcome, Alex. It's good to feel prepared, isn’t it?
+[ 55.11s][user ] yeah, definitely. I get so stressed when I forget things.
+[ 58.40s][moshi] It’s understandable to feel stressed when things slip your mind. Grief and change can do that.
+[ 60.31s][user ] «backchannel» Mhm.
+[ 63.80s][user ] [sigh] I guess so. It’s just… a lot right now.
+[ 67.41s][moshi] It sounds like you’re carrying a heavy load. Remember, it’s okay to ask for support.
+[ 73.31s][user ] I do have Mochi. He’s a good boy.
+[ 75.78s][moshi] ⟨ret@75.71s⟩ ⟦⚡SPAN@75.79s: [2026-02-06] User has a Corgi named Mochi.⟧ You’ve mentioned Mochi before, and it’s wonderful to have a companion like him.
+[ 80.73s][user ] he is. I don't know what I'd do without him.
+[ 83.75s][moshi] Companionship can be a great source of comfort, especially during difficult times.

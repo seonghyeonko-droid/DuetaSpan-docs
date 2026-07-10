@@ -4,48 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Caleb",
+#     "name": "Elena",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "date": "2026-05-03",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-03-03",
+#       "date": "2026-04-18",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-08-17",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-18",
 #       "category": "home",
-#       "text": "User's home address is 83 Maple Drive."
+#       "text": "User's home address is 914 Pine Court."
 #     },
 #     {
-#       "date": "2026-02-06",
+#       "date": "2025-07-01",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
-#     },
-#     {
-#       "date": "2026-02-02",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-06-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-30",
+#       "date": "2026-01-24",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -53,28 +58,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-01",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-22",
+#       "date": "2025-10-05",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-02",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who has won the most MVP awards in NBA history?
-     4.07s  <ret> 발화 (turn1 첫 프레임)
-     4.31s  agent 발화 시작: <ret> Well, it’s Kareem Abdul-Jabbar who holds that record, 
-     4.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: Kareem Abdul-Jabbar has won the most NBA MVP awards, with six wins thr
-     4.44s  user  발화 끝
-    11.73s  agent 발화 끝
+     0.00s  user  발화 시작: Who first described consciousness as a stream?
+     3.45s  <ret> 발화 (turn1 첫 프레임)
+     3.69s  agent 발화 시작: <ret> It was William James who first described consciousness
+     3.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: William James, in his 1890 *Principles of Psychology*, described consc
+     3.84s  user  발화 끝
+    12.82s  agent 발화 끝

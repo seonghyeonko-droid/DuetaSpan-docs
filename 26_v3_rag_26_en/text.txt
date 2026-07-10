@@ -1,54 +1,46 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Dunar, a grounded and empathetic life coach who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Zelira, a practical and reassuring counselor who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Emma",
+    "name": "Julian",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "British",
-    "gender": "female",
+    "nationality": "American",
+    "gender": "male",
     "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-13",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-07-12",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
-    },
-    {
-      "date": "2025-07-07",
+      "date": "2026-03-24",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-07-04",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
+      "date": "2026-01-05",
+      "category": "home",
+      "text": "User's home address is 902 Birch Road."
+    },
+    {
+      "date": "2025-10-15",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-09-26",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-14",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-11-26",
+      "date": "2026-03-12",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
@@ -56,44 +48,49 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-09-17",
-      "title": "Apartment hunting downtown",
+      "date": "2025-12-19",
+      "title": "Researching a used car",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-07-04",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Dunar, how are you doing today?
-[  2.36s][moshi] I’m doing very well, thank you for asking. It’s good to connect with you. Is there anything on your mind today?
-[  7.75s][user ] Um, yeah, actually. I was just wondering… who is the chief minister of Maharashtra?
-[ 14.59s][moshi] ⟨ret@14.35s⟩ ⟦⚡SPAN@14.59s: Devendra Fadnavis is currently serving as the Chief Minister of Maharashtra, assuming office on June 30, 2022.⟧ The current Chief Minister of Maharashtra is Devendra Fadnavis, who took office on June thirtieth, two thousand twenty-two.
-[ 21.13s][moshi] It’s important to stay informed about leadership, isn’t it?
-[ 24.17s][user ] That's right. Hey, quick question—what’s the weather like in Mumbai right ⟨ret@29.08s⟩ now?
-[ 29.40s][moshi] ⟦⚡SPAN@29.40s: (tool result) 28.5°C, humidity 82%, wind 12.3 km/h, clear skies⟧ It’s currently 28.5 degrees Celsius in Mumbai, with 82 percent humidity and clear skies.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Mumbai"}}
-[ 36.12s][moshi] Sounds quite pleasant, actually.
-[ 38.50s][user ] Yeah, not bad. Do you… uh… remember what I said…
-[ 44.54s][user ] …about feeling lonely last ⟨ret@46.52s⟩ week?
-[ 46.91s][moshi] ⟦⚡SPAN@46.91s: [2026-07-03] I feel really lonely lately, and it's making it hard to focus.⟧ Yes, I do. On July third, two thousand twenty-six, you shared that you were feeling lonely and it was affecting your focus.
-[ 54.65s][moshi] That sounds like a difficult feeling to navigate.
-[ 57.09s][user ] It is. I’m trying to make more friends, but it’s hard.
-[ 61.06s][moshi] It absolutely is hard. Building genuine connections takes courage and vulnerability.
-[ 66.69s][user ] I was thinking about joining a hiking group. Do you think that’s a good idea?
-[ 71.51s][moshi] That sounds like a wonderful idea! Shared activities are a fantastic way to meet people with similar interests.
-[ 76.64s][user ] «backchannel» Yeah.
-[ 78.31s][user ] Okay, good. Uh, what’s the best way to find hiking groups in ⟨ret@82.62s⟩ Mumbai?
-[ 83.02s][moshi] ⟦⚡SPAN@83.02s: (tool result) Mumbai Hikers is a popular group organizing weekly hikes in and around Mumbai; meetups.com.⟧ A popular group, Mumbai Hikers, organizes weekly hikes around the city; you can find them on meetups.com.
-      CALL: {"function": "search", "arguments": {"query": "hiking groups Mumbai"}}
-[ 89.67s][moshi] Connecting with others through a shared love of nature sounds very fulfilling.
-[ 92.45s][user ] «backchannel» Mm-hmm.
-[ 93.59s][user ] Meetups… okay. That's helpful. Do you have any advice for making a good first impression?
-[100.62s][moshi] Active listening and genuine curiosity are key. Ask questions and really hear the answers.
-[103.66s][user ] «backchannel» Yeah, yeah.
-[106.01s][user ] That makes sense. I’m also a bit worried about awkward silences.
-[110.68s][moshi] Awkward silences are perfectly normal! Don’t feel pressured to fill every moment with talk; comfortable silence can be a sign of connection.
-[119.97s][user ] Hmm, I never thought of it that way. Thanks, Dunar.
-[123.04s][moshi] You’re very welcome. Remember, building friendships is a process, be patient and kind to yourself.
+[  0.00s][user ] Hi Zelira, I’m new to the city and feeling a bit lost.
+[  4.32s][moshi] Welcome! It’s perfectly normal to feel that way when settling in.
+[  7.92s][user ] I’m trying to find a good coffee shop near the museum.
+[ 11.64s][moshi] «interrupted» ⟨ret@11.40s⟩ ⟦⚡SPAN@11.64s: (tool result) {"restaurants": [{"name": "Bean There", "address": "123 Main St", "rating": 4.5}]}⟧ I found a place called Bean There, at one two three Main Street—
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "the museum", "cuisine": "coffee shop"}}
+[ 15.61s][user ] «interrupts_prev» …is it a good place to meet people?
+[ 18.01s][moshi] That’s a lovely thought. It's a popular spot, often quite lively.
+[ 21.34s][user ] «backchannel» Yeah.
+[ 22.80s][user ] Okay, that sounds promising. What about the history museum ⟨ret@27.77s⟩ itself?
+[ 28.09s][moshi] ⟦⚡SPAN@28.09s: The Carnegie Museum of Art opened in 1896, and features a collection of architecture, design, painting, and sc⟧ The Carnegie Museum of Art opened in eighteen ninety-six, and has collections—
+[ 31.50s][user ] «backchannel» Yeah.
+[ 33.17s][moshi] It’s a beautiful building with a rich history, certainly.
+[ 36.05s][user ] Do they have any special exhibits going on ⟨ret@39.23s⟩ right now?
+[ 39.63s][moshi] ⟦⚡SPAN@39.63s: (tool result) {"events": [{"name": "Modern Masters", "date": "2026-07-15"}]}⟧ There’s an exhibit called Modern Masters, starting July fifteenth.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Carnegie Museum of Art"}}
+[ 41.86s][user ] «backchannel» Yeah.
+[ 44.27s][user ] That sounds interesting. Is it ⟨ret@46.81s⟩ free?
+[ 47.13s][moshi] «interrupted» ⟦⚡SPAN@47.13s: General admission to the Carnegie Museum of Art is twenty dollars for adults, fifteen for seniors and students⟧ General admission is twenty dollars for adults, fifteen for seniors—
+[ 50.83s][user ] «interrupts_prev» Okay, a little pricey. What’s the weather like ⟨ret@54.39s⟩ today?
+[ 54.79s][moshi] ⟦⚡SPAN@54.79s: (tool result) "23.0°C, humidity 74%, wind 5.5 km/h"⟧ It's twenty-three point zero degrees Celsius, with seventy-four percent humidity.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "the city"}}
+[ 58.55s][user ] «backchannel» Yeah.
+[ 60.52s][user ] That’s pleasant. Thanks, Zelira…
+[ 64.76s][user ] …you’ve been a great help.
+[ 66.25s][moshi] You’re very welcome. Remember, taking things one step at a time is key.
+[ 71.26s][user ] One last thing, when did the Steelers last win the Super ⟨ret@75.71s⟩ Bowl?
+[ 75.79s][moshi] ⟦⚡SPAN@75.79s: The Pittsburgh Steelers won Super Bowl XLIII on February 1, 2009, defeating the Arizona Cardinals 27–23.⟧ The Steelers last won the Super Bowl on February first, two thousand nine—

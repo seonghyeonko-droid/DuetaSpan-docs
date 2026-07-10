@@ -1,88 +1,73 @@
 v3_mem_36_ko src=mem style=mem
-SYSTEM: <system> 당신은 친구 관계 및 사회 생활에 어려움을 겪는 사람들을 돕는 침착하고 인내심 있는 상담사 Reon입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 부드럽고 사려 깊은 조력자 Teax입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "시호",
+    "name": "다담",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "male",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-03",
+      "date": "2026-03-20",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2026-03-04",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2026-01-03",
+      "date": "2026-02-21",
       "category": "hobby",
       "text": "User is into birdwatching."
     },
     {
-      "date": "2025-12-13",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-01-22",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
     },
     {
-      "date": "2025-08-10",
-      "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
-    },
-    {
-      "date": "2025-07-30",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2025-05-27",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-16",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-16",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-07-16",
-      "title": "Researching a used car",
+      "date": "2025-08-15",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-06",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] 안녕하세요, 시호님. 저는 여러분의 상담사, 리온이라고 합니다.
-[  5.06s][user ] 아, 네. 반가워요. 혹시 제가 예전에 말씀드렸던 거 기억하세요?
-[  9.36s][moshi] ⟨ret@9.21s⟩ ⟦⚡SPAN@9.37s: [2026-03-16] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ 네, 시호님. 치과 예약 건에 대해 말씀하셨었죠. 아침 시간대, 한 선생님을 선호하신다고요.
-[ 13.74s][user ] «backchannel» 네.
-[ 16.52s][user ] 맞아요. 혹시 그 예약 다시 확인할 수 ⟨ret@19.22s⟩ 있을까요?
-[ 19.62s][moshi] ⟦⚡SPAN@19.62s: (tool result) Provider: Dr. Han, Dentistry, 123 Seoul St., Seoul; Phone: 02-123-4567.⟧ 네, 한 선생님은 서울시 서울대로 백이십삼번지에 계시고, 전화번호는 공 이 일 이 삼 사 오 육 칠입니다.
-      CALL: {"function": "Services_1_FindProvider", "arguments": {"query": "Dr. Han"}}
-[ 27.51s][user ] 아, 감사합니다. 혹시 이 선생님 다른 병원에도 계신가요?
-[ 31.64s][moshi] 죄송해요, 시호님. 다른 병원 정보는 찾을 수 없었습니다.
+[  0.00s][moshi] 안녕하세요, 다담님. 저는 다담님을 도와드리는 에이전트, 티악입니다.
+[  5.66s][user ] 어, 안녕하세요.
+[  7.43s][moshi] 혹시 제가 기억하고 있는 내용 중에 궁금한 점이 있으실까요?
+[  9.36s][user ] «backchannel» 응.
+[ 11.76s][user ] 음… 전에 교토 여행 계획 세우고 있었던 거 기억해요?
+[ 16.18s][moshi] ⟨ret@15.96s⟩ ⟦⚡SPAN@16.20s: [2026-01-22] User is planning a trip to Kyoto in December.⟧ 네, 다담님께서 올해 십이월에 교토 여행을 계획하고 계신다는 걸 기억하고 있습니다.
+[ 18.81s][user ] «backchannel» 와.
+[ 21.47s][moshi] 혹시 여행 계획에 대해 더 자세히 여쭤봐 드릴까요?
+[ 24.84s][user ] 아니요, 그건 됐어요. 혹시 제가 꽃가루 알레르기가 ⟨ret@28.12s⟩ 있던가요?
+[ 28.27s][moshi] ⟦⚡SPAN@28.28s: [2025-05-27] User is allergic to pollen.⟧ 네, 다담님께서는 꽃가루 알레르기가 있으신 걸로 기록되어 있습니다.
+[ 32.76s][moshi] 봄철에는 특히 조심하시는 게 좋겠습니다.
+[ 35.19s][user ] 아, 그렇군요. 감사합니다.

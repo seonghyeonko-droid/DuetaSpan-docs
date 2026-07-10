@@ -1,107 +1,84 @@
 v3_noinfo_23_ko src=mcp style=mcp_noinfo
-SYSTEM: <system> 당신은 창의적인 막힘과 자신감 문제를 가진 사람들을 돕는 따뜻하고 세심한 라이프 코치 Neas입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스에 대해 사람들을 돕는 부드럽고 사려 깊은 조력자, Brariia입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_noinfo_23",
-    "name": "예담",
+    "name": "유완",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-14",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-06-11",
+      "category": "home",
+      "text": "User's home address is 서울 마포구 성산동 45-6."
     },
     {
-      "date": "2026-03-02",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-02-20",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2025-11-21",
+      "date": "2026-05-12",
       "category": "cuisine",
       "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-07-19",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "date": "2025-12-29",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
     },
     {
-      "date": "2025-07-01",
+      "date": "2025-11-06",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-10-15",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-08-28",
       "category": "hobby",
-      "text": "User is into home fermentation."
+      "text": "User is into rock climbing."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-05",
-      "title": "Researching a used car",
+      "date": "2025-11-06",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-08-18",
-      "title": "Comparing gym memberships",
+      "date": "2025-10-31",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-29",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 김민지 씨 연락처 알 수 ⟨ret@1.98s⟩ 있을까요?
-[  2.37s][moshi] ⟦⚡SPAN@2.38s: (no information found)⟧ 죄송해요, 김민지 씨 연락처는 찾을 수 없었어요. 개인 정보라서 제가 접근할 수 없는 것 같아요.
+[  0.00s][user ] 혹시 김민지 씨 연락처 알 수 ⟨ret@1.78s⟩ 있을까요?
+[  2.17s][moshi] ⟦⚡SPAN@2.18s: (no information found)⟧ 죄송합니다. 김민지 님의 연락처는 찾을 수 없었습니다. 개인 정보 보호 때문에 제가 도와드릴 수 없는 부분입니다.
       CALL: {"function": "search", "arguments": {"query": "김민지 연락처"}}
-[  9.25s][user ] 아, 그렇군요. 그럼 오늘 서울 날씨는 어때요?
-[ 12.53s][moshi] ⟨ret@12.29s⟩ ⟦⚡SPAN@12.54s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 서울 날씨는 현재 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요. 꽤 덥네요.
+[  9.85s][user ] 아, 그렇군요. 그럼 오늘 서울 날씨는 ⟨ret@12.21s⟩ 어때요?
+[ 12.44s][moshi] ⟦⚡SPAN@12.45s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 서울 날씨는 현재 기온이 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "서울"}}
-[ 21.48s][user ] 흐음… 이번 주 토요일에 영화 볼 만한 ⟨ret@23.91s⟩ 거 있을까요?
-[ 24.23s][moshi] ⟦⚡SPAN@24.23s: (tool result) '인사이드 아웃 2'는 현재 상영 중이며, 평점은 9.2/10입니다. CGV 왕십리에서 상영하고 있습니다.⟧ 이번 주 토요일에는 '인사이드 아웃 이'가 상영 중이고, 평점도 구 점 이점 정도로 꽤 높아요. CGV 왕십리에서 볼 수 있답니다.
+[ 19.63s][moshi] 오늘 하루도 꽤 덥겠네요.
+[ 21.49s][user ] 네, 더울 것 같아요. 이번 주 토요일에 영화 볼 만한 거 ⟨ret@24.41s⟩ 있을까요?
+[ 24.65s][moshi] ⟦⚡SPAN@24.65s: (tool result) '인사이드 아웃 2' - 10:00, 13:00, 16:00, 19:00, CGV 강남⟧ 이번 주 토요일, 칠월 십이일에는 CGV 강남에서 '인사이드 아웃 이'가 열시, 열세시, 열여섯시, 열아홉시에 상영됩니다.
       CALL: {"function": "Movies_1_FindMovies", "arguments": {"date": "2026-07-12"}}
-[ 29.27s][user ] «backchannel» 맞아요.
-[ 33.67s][moshi] 재밌을 것 같죠? 아이들과 함께 보기에도 좋을 것 같아요.
-[ 37.35s][user ] 그럼 그 영화 티켓 예매해 줄 수…
-[ 41.13s][user ] …있어요? 토요일 오후 두시에 두 장으로 부탁해요.
-[ 45.05s][moshi] ⟨ret@44.82s⟩ ⟦⚡SPAN@45.06s: (tool result) CGV왕십리, 2026-07-12 14:00, 2석, 예약번호: 87654321⟧ 네, '인사이드 아웃 이' 토요일 오후 두시 CGV 왕십리 두석 예매 완료됐어요. 예약번호는 팔 칠 육 오 사 삼 이 일입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "인사이드 아웃 2", "date": "2026-07-12", "time": "14:00", "quantity": "2"}}
-[ 54.37s][user ] 와, 고마워요! 혹시 제가 칠월 십오일에 중요한 면접이 있는데, 그때 날씨는 어떨까요?
-[ 59.97s][moshi] ⟨ret@59.82s⟩ ⟦⚡SPAN@59.98s: (tool result) 26.5°C, humidity 68%, wind 7.2 km/h⟧ 칠월 십오일은 이십육 점 오도이고, 습도는 육십팔%, 바람은 시속 칠 점 이킬로미터로 예상돼요. 면접에 좋은 날씨일 것 같아요.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-15"}}
-[ 64.97s][user ] «backchannel» 네.
-[ 70.33s][user ] 다행이다… 혹시 그 면접 잘 볼 수 있도록 응원해 줄 수 있을까요?
-[ 75.00s][moshi] 당연하죠! 면접 잘 보시길 진심으로 응원할게요. 자신감을 가지세요, 분명 좋은 결과가 있을 거예요.
-[ 81.65s][user ] [laugh] 고마워요, 네스. 덕분에 힘이 나네요.
-[ 86.49s][moshi] 제가 도움이 됐다니 기쁘네요. 중요한 건 자신감을 잃지 않는 거예요. 긍정적인 마음으로 면접에 임하시면 분명 좋은 결과가 있을 거예요.
-[ 90.97s][user ] «backchannel» 그렇죠.
-[ 96.27s][user ] 그런데, 혹시 제가 작년에 여름휴가 때 어디 갔었는지 기억해 주실 수 ⟨ret@101.46s⟩ 있나요?
-[101.70s][moshi] ⟦⚡SPAN@101.70s: [2025-08-03] 제주도에 갔었습니다.⟧ 이천이십오년 팔월 삼일에 제주도에 가셨었어요. 즐거운 휴가 보내셨나요?
-[109.48s][user ] 아, 맞아요! 정말 좋았죠.
-[111.86s][moshi] 기억력이 좋으시네요. 좋은 추억은 언제나 우리에게 힘이 되는 것 같아요.
+[ 31.99s][moshi] 혹시 다른 영화 장르를 선호하시나요?
+[ 34.87s][user ] 아니요, 인사이드 아웃 이 괜찮아요.
+[ 36.76s][moshi] 다행이네요. 좋은 영화 관람되시길 바랍니다.

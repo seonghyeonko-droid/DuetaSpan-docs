@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_hesit_18",
-#     "name": "서정",
+#     "name": "성린",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,40 +12,43 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-16",
+#       "date": "2026-06-01",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-08",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2026-01-20",
+#       "date": "2025-12-26",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "date": "2025-08-26",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-12-12",
+#       "date": "2025-06-08",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in May."
+#       "text": "User is planning a trip to Lisbon in May."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-30",
+#       "date": "2026-04-13",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -53,91 +56,73 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-03-23",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
 #       "date": "2025-12-03",
-#       "title": "Researching a used car",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 댄싱 위드 더 스타 시즌 십삼 우승자는 누구였죠? | S2 혹시 키다 번스님 고향에 대해 더 자세히 알려줄 수 있을까요? | S3 이번 주 토요일 날씨는 어때요? | S4 혹시 경복궁 가는 버스 노선 좀 알려줄 수 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 생태학에서 천연자원의 현명한 관리를 뭐라고 부르나요? | S2 오, 꽤 덥네요. | S3 혹시 지난주 금요일에 제가 뭐라고 메모했는지 기억나요? | S4 인사이드 아웃 이 재미있을까요?
 
-     0.00s  user  발화 시작: 댄싱 위드 더 스타 시즌 십삼 우승자는 누구였죠?
-     2.57s  <ret> 발화 (turn1 첫 프레임)
-     2.88s  agent 발화 시작: <ret> 이천십육년에 'So You Think You Can Dance' 열세 번째 시즌의 우승자는 리온 
-     2.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: Leon "Kida" Burns won the thirteenth season of So You Think You Can Da
-     3.09s  user  발화 끝
-     5.20s  user  발화 시작: 정말요?
-     6.25s  user  발화 끝
-     8.60s  user  발화 시작: 아, 맞다. 기억이 나네요.
-     9.00s  agent 발화 끝
-    10.70s  agent 발화 시작: 기억이 돌아와 다행입니다. 과거를 떠올리는 건 때로는 어려울 수 있죠.
-    10.86s  user  발화 끝
-    12.87s  user  발화 시작: 네.
-    13.31s  user  발화 끝
-    16.03s  agent 발화 끝
-    16.11s  user  발화 시작: 그으으음… 혹시 그분 다른 활동도 하셨나요?
-    19.69s  <ret> 발화 (turn7 첫 프레임)
-    19.76s  agent 발화 시작: <ret> 리온 "키다" 번스님은 루이지애나주 뉴올리언스 출신의 무용가이자 안무가입니다.
-    19.77s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.02s]: Leon "Kida" Burns is a dancer and choreographer from New Orleans, Loui
-    19.95s  user  발화 끝
-    23.62s  user  발화 시작: 음.
-    24.07s  user  발화 끝
-    25.65s  agent 발화 시작: 춤과 안무가로서의 활동을 꾸준히 이어오고 계시는 분이시죠.
-    25.78s  agent 발화 끝
-    30.14s  agent 발화 끝
-    30.48s  user  발화 시작: 혹시 키다 번스님 고향에 대해 더 자세히 알려줄 수 있을까요?
-    33.48s  <ret> 발화 (turn11 첫 프레임)
-    33.55s  agent 발화 시작: <ret> 뉴올리언스는 전 세계 주요 항구 도시이며 루이지애나주에서 가장 인구가 많은 도시입니다.
-    33.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.89s]: New Orleans is a major port worldwide and the most populous city in Lo
-    33.71s  user  발화 끝
-    36.09s  user  발화 시작: 네.
-    36.59s  user  발화 끝
-    39.44s  agent 발화 끝
-    39.47s  user  발화 시작: 아하, 그렇군요.
-    40.43s  agent 발화 시작: 새로운 환경에 적응하는 건 때로는 용기가 필요한 일입니다.
-    40.62s  user  발화 끝
-    44.36s  user  발화 시작: 지금 제 기분이 좀 그래요.
-    44.45s  agent 발화 끝
-    46.20s  user  발화 끝
-    46.59s  agent 발화 시작: 변화의 물결 속에서 느끼는 불안감은 자연스러운 감정입니다.
-    50.43s  agent 발화 끝
-    51.09s  user  발화 시작: 이번 주 토요일 날씨는 어때요?
-    52.67s  <ret> 발화 (turn18 첫 프레임)
-    53.06s  agent 발화 시작: <ret> 서울은 오늘 이십팔도, 습도 육십오%, 바람은 시속 삼킬로미터로 약간 흐립니다.
-    53.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Seoul: 28.0°C, humidity 65%, wind 3.0 km/h, partly cloud
-    53.17s  user  발화 끝
-    58.85s  agent 발화 끝
-    59.26s  user  발화 시작: 흐으음… 주말에 어디 갈 만한 곳 없을까요?
-    61.93s  <ret> 발화 (turn20 첫 프레임)
-    62.16s  agent 발화 시작: <ret> 서울에서 가장 아름답고 큰 왕궁은 경복궁입니다.
-    62.16s  user  발화 끝
-    62.17s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.70s]: Gyeongbokgung Palace is the most beautiful and largest royal palace in
-    65.67s  user  발화 시작: 경복궁… 좋아 보여요.
-    65.86s  agent 발화 끝
-    68.25s  user  발화 끝
-    68.48s  agent 발화 시작: 때로는 익숙한 곳에서 새로운 아름다움을 발견하는 것도 좋은 방법입니다.
-    73.10s  user  발화 시작: 혹시 경복궁 가는 버스 노선 좀 알려줄 수 있을까요?
-    73.16s  agent 발화 끝
-    76.31s  <ret> 발화 (turn24 첫 프레임)
-    76.54s  agent 발화 시작: <ret> 경복궁으로 가는 버스는 백구번, 칠천이십오번, 천칠백십일번이 있습니다.
-    76.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) Bus 109, 7025, 1711 to Gyeongbokgung Palace.
-    76.66s  user  발화 끝
-    79.30s  user  발화 시작: 음.
-    79.70s  user  발화 끝
-    82.14s  agent 발화 끝
-    82.47s  user  발화 시작: 감사합니다.
-    83.29s  user  발화 끝
-    83.57s  agent 발화 시작: 도움이 되었다니 기쁩니다.
-    85.46s  agent 발화 끝
+     0.00s  user  발화 시작: 생태학에서 천연자원의 현명한 관리를 뭐라고 부르나요?
+     3.32s  <ret> 발화 (turn1 첫 프레임)
+     3.63s  agent 발화 시작: <ret> 천연자원의 현명한 관리는, 천연자원의 지속 가능한 사용이라고 합니다. 그게 핵심이죠.
+     3.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: natural resource management is the sustainable use of natural resource
+     3.84s  user  발화 끝
+     9.88s  agent 발화 끝
+     9.90s  user  발화 시작: 음, 지속 가능한 사용… 그게 맞는 말인가?
+    13.42s  user  발화 끝
+    13.42s  agent 발화 시작: 맞아요. 지속 가능성이 중요한 부분이에요. 자원을 아껴 쓰는 거죠.
+    15.96s  user  발화 시작: 예.
+    16.36s  user  발화 끝
+    17.11s  user  발화 시작: 그럼, 혹시 서울 날씨 좀 알려줄 수 있어요?
+    17.58s  agent 발화 끝
+    19.81s  <ret> 발화 (turn6 첫 프레임)
+    19.88s  agent 발화 시작: <ret> 지금 서울 날씨는 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+    19.89s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.22s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    20.07s  user  발화 끝
+    26.99s  user  발화 시작: 오, 꽤 덥네요.
+    27.10s  agent 발화 끝
+    27.99s  agent 발화 시작: 네, 조금 더울 수 있어요. 물을 충분히 마시는 게 좋겠어요.
+    28.14s  user  발화 끝
+    29.54s  user  발화 시작: 네.
+    29.98s  user  발화 끝
+    31.68s  agent 발화 끝
+    31.76s  user  발화 시작: 아, 맞아요. 물 마셔야지.
+    33.36s  agent 발화 시작: 그렇죠. 수분 보충은 정말 중요하니까요.
+    33.42s  user  발화 끝
+    36.82s  user  발화 시작: 혹시 지난주 금요일에 제가 뭐라고 메모했는지 기억나요?
+    36.92s  agent 발화 끝
+    39.87s  <ret> 발화 (turn13 첫 프레임)
+    40.02s  agent 발화 시작: <ret> 이천이십육년 칠월 삼일에 “오늘 운동 꼭 해야지”라고 메모하셨네요.
+    40.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: [2026-07-03] 오늘 운동 꼭 해야지.
+    40.20s  user  발화 끝
+    42.51s  user  발화 시작: 진짜요?
+    43.14s  user  발화 끝
+    44.41s  agent 발화 시작: 기억력이 좋으시네요. 운동은 꾸준히 하는 게 중요하죠.
+    44.51s  agent 발화 끝
+    46.23s  user  발화 시작: 네네.
+    46.95s  user  발화 끝
+    48.67s  agent 발화 끝
+    49.56s  user  발화 시작: 맞아요. 근데 요즘 너무 바빠서…
+    52.29s  agent 발화 시작: 바쁘신 와중에도 건강을 챙기려고 노력하시는 모습이 보기 좋아요. 잠시라도 시간을 내서 스트레칭이라도 해보세요
+    52.42s  user  발화 끝
+    60.26s  agent 발화 끝
+    60.62s  user  발화 시작: 좋은 생각이에요. 혹시 이번 주 토요일에 볼 영화 추천해 줄 수 있어요?
+    64.77s  <ret> 발화 (turn20 첫 프레임)
+    64.78s  user  발화 끝
+    64.84s  agent 발화 시작: <ret> 이번 주 토요일에는 ‘인사이드 아웃 이’가 롯데시네마 서울에서 오후 두시, 다섯시, 여덟시에 상영
+    64.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) 'Inside Out 2' - showing at 14:00, 17:00, 20:00 at Lotte
+    72.19s  user  발화 시작: 인사이드 아웃 이 재미있을까요?
+    72.40s  agent 발화 끝
+    73.99s  user  발화 끝
+    74.23s  agent 발화 시작: 평점이 좋더라고요. 많은 분들이 재미있다고 하니, 한번 보시면 좋을 것 같아요.
+    79.33s  user  발화 시작: 알겠습니다. 감사합니다.
+    79.41s  agent 발화 끝
+    80.86s  agent 발화 시작: 천만에요. 언제든지 궁금한 점이 있으면 저에게 물어보세요.
+    80.94s  user  발화 끝
+    85.02s  agent 발화 끝

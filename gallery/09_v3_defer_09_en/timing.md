@@ -4,133 +4,164 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "Avery",
+#     "name": "Marie",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-06",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-01-01",
-#       "category": "home",
-#       "text": "User's home address is 32 Oak Avenue."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-09-11",
+#       "date": "2026-05-02",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
-#       "date": "2025-06-09",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2026-04-06",
+#       "category": "home",
+#       "text": "User's home address is 507 Birch Road."
 #     },
 #     {
-#       "date": "2025-06-03",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-02-25",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-10-30",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-10-07",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-17",
-#       "title": "Researching a used car",
+#       "date": "2026-01-09",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-23",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find me train tickets for two adul | S2 Great. What's the weather like in  | S3 Perfect. I think I'm all set for t | S4 That's doable. Are there any good 
+# EXAMINER(FDB-v2) 단계: S1 How many lines of code has session | S2 Perfect. Thanks! | S3 Hmm, nice. | S4 Ritz sounds good.
 
-     0.00s  user  발화 시작: Find me train tickets for two adults from Dallas to San Fran
-     5.87s  <ret> 발화 (turn1 첫 프레임)
-     6.00s  user  발화 끝
-     6.10s  agent 발화 시작: <ret> I’ve found train tickets for you—
-     6.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.17s]: (tool result) Tickets confirmed: DFW to SFO, July 4th, 12:00 PM, 2 adu
-     7.55s  user  발화 시작: …are those refundable if something comes up?
-     8.26s  agent 발화 끝
-     9.37s  <ret> 발화 (turn3 첫 프레임)
-     9.53s  agent 발화 시작: <ret> Let me check the fare details for you.
-     9.53s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.53s]: Standard fares are non-refundable, but can be exchanged for a $50 fee 
-     9.67s  user  발화 끝
-    11.97s  agent 발화 시작: The standard fares are non-refundable, but you can exchange 
-    12.06s  agent 발화 끝
-    13.87s  user  발화 시작: Yeah.
-    14.36s  user  발화 끝
-    16.98s  user  발화 시작: Yes, please.
-    17.62s  agent 발화 끝
-    18.13s  user  발화 끝
-    18.37s  agent 발화 시작: Excellent. Your tickets are now confirmed. Confirmation ID i
-    21.52s  user  발화 시작: Yeah, yeah.
-    22.34s  user  발화 끝
-    25.18s  agent 발화 끝
-    26.79s  user  발화 시작: Great. What's the weather like in San Francisco on July four
-    30.05s  <ret> 발화 (turn10 첫 프레임)
-    30.29s  agent 발화 시작: <ret> It looks like San Francisco on July fourth will be eig
-    30.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) San Francisco, July 4th: 18.3°C, partly cloudy, wind 7.2
-    30.48s  user  발화 끝
-    40.96s  user  발화 시작: That sounds pleasant. Can you find me some highly-rated rest
-    41.09s  agent 발화 끝
-    45.34s  <ret> 발화 (turn12 첫 프레임)
-    45.66s  agent 발화 시작: <ret> I found three highly-rated restaurants near Union Squa
-    45.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.45s]: (tool result) Zuni Café (4.6 stars, Californian), Scoma's (4.5 stars, 
-    45.87s  user  발화 끝
-    50.02s  user  발화 시작: Mm-hmm.
-    50.51s  user  발화 끝
-    57.11s  agent 발화 끝
-    57.88s  user  발화 시작: Zuni Café sounds interesting. Can you make a reservation the
-    63.33s  <ret> 발화 (turn15 첫 프레임)
-    63.57s  agent 발화 시작: <ret> I’ve confirmed a reservation at Zuni Café— —for two pe
-    63.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) Reservation confirmed at Zuni Café, July 4th, 7:00 PM, p
-    63.67s  user  발화 끝
-    70.97s  user  발화 시작: Wow.
-    71.88s  user  발화 끝
-    73.72s  agent 발화 끝
-    73.91s  user  발화 시작: Perfect. I think I'm all set for the trip.
-    76.29s  agent 발화 시작: That's wonderful to hear! Planning ahead is a great way to r
-    76.49s  user  발화 끝
-    81.75s  agent 발화 끝
-    82.01s  user  발화 시작: I was thinking about adding a side trip to Yosemite.
-    84.60s  user  발화 끝
-    85.02s  agent 발화 시작: Yosemite is a beautiful choice. It's a bit of a drive from S
-    90.16s  agent 발화 끝
-    91.02s  user  발화 시작: How far is it, roughly?
-    92.68s  <ret> 발화 (turn22 첫 프레임)
-    93.00s  user  발화 끝
-    93.00s  agent 발화 시작: <ret> The distance from San Francisco to Yosemite National P
-    93.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.89s]: San Francisco to Yosemite National Park is approximately 320 kilometer
-   100.55s  user  발화 시작: Uh-huh.
-   101.09s  user  발화 끝
-   103.73s  user  발화 시작: That's doable. Are there any good hiking trails there for be
-   103.89s  agent 발화 끝
-   107.77s  <ret> 발화 (turn25 첫 프레임)
-   107.93s  agent 발화 시작: <ret> I found a few beginner-friendly hiking trails in Yosem
-   107.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.33s]: (tool result) Lower Yosemite Fall Trail (1.6km, easy), Mirror Lake Loo
-   108.04s  user  발화 끝
-   114.31s  user  발화 시작: Yeah, yeah.
-   115.60s  user  발화 끝
-   119.90s  user  발화 시작: Lower Yosemite Fall sounds nice. Thanks for all your help.
-   120.26s  agent 발화 끝
-   123.74s  user  발화 끝
-   123.85s  agent 발화 시작: You’re very welcome. Remember, taking time for yourself and 
-   132.66s  agent 발화 끝
+     0.00s  user  발화 시작: How many lines of code has session ninety-nine generated?
+     3.23s  user  발화 끝
+     3.35s  <ret> 발화 (turn1 첫 프레임)
+     3.58s  agent 발화 시작: <ret> Session ninety-nine has generated one thousand four hu
+     3.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) Session 99 has generated 1478 lines of code.
+    13.08s  user  발화 시작: Yeah, it’s… pretty big. Can you find me some Italian restaur
+    13.27s  agent 발화 끝
+    17.79s  agent 발화 시작: I can certainly help with that. What part of town are you in
+    17.80s  user  발화 끝
+    20.45s  user  발화 시작: Mm-hmm.
+    21.23s  user  발화 끝
+    22.28s  agent 발화 끝
+    22.88s  user  발화 시작: Uh, near the central park.
+    24.44s  <ret> 발화 (turn6 첫 프레임)
+    24.53s  user  발화 끝
+    24.75s  agent 발화 시작: <ret> There’s Bella Italia, four and a half stars, point thr
+    24.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: Bella Italia: 4.5 stars, 0.3km, $$; Trattoria Romana: 4.2 stars, 0.5km
+    34.18s  user  발화 시작: Hmm. Bella Italia sounds good. Can you make a reservation fo
+    34.25s  agent 발화 끝
+    38.72s  <ret> 발화 (turn8 첫 프레임)
+    39.12s  agent 발화 시작: <ret> I’ve confirmed a reservation for two at Bella Italia a
+    39.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: (tool result) Reservation confirmed at Bella Italia for 2 people at 7:
+    39.32s  user  발화 끝
+    48.21s  agent 발화 끝
+    48.36s  user  발화 시작: Perfect. Thanks!
+    49.59s  agent 발화 시작: You’re very welcome. It’s good to have a plan in place, espe
+    49.79s  user  발화 끝
+    53.44s  user  발화 시작: Yeah.
+    53.89s  user  발화 끝
+    55.89s  agent 발화 끝
+    56.40s  user  발화 시작: I need to send a message to my sister.
+    58.52s  user  발화 끝
+    58.73s  agent 발화 시작: I can help with that. What would you like to say, and what’s
+    62.00s  user  발화 시작: Yeah.
+    62.49s  user  발화 끝
+    64.06s  agent 발화 끝
+    64.40s  user  발화 시작: Her number is 555-123-4567. Tell her I’ll be late.
+    68.49s  <ret> 발화 (turn16 첫 프레임)
+    68.88s  agent 발화 시작: <ret> I’ve sent your message to five-five-five, one-two-thre
+    68.89s  user  발화 끝
+    68.89s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.95s]: (tool result) Message sent to 555-123-4567: "I’ll be late."
+    72.66s  user  발화 시작: Right.
+    73.16s  user  발화 끝
+    75.83s  agent 발화 끝
+    75.97s  user  발화 시작: Great. What’s the weather like today?
+    77.93s  <ret> 발화 (turn19 첫 프레임)
+    78.01s  agent 발화 시작: <ret> It's twenty-three point zero degrees Celsius, with sev
+    78.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h.
+    78.10s  user  발화 끝
+    87.09s  user  발화 시작: Hmm, nice.
+    87.24s  agent 발화 끝
+    88.23s  user  발화 끝
+    88.38s  agent 발화 시작: It sounds like a pretty pleasant day overall. It's good to h
+    91.16s  user  발화 시작: Yeah.
+    91.61s  user  발화 끝
+    93.31s  agent 발화 시작: Sometimes, a little sunshine can really lift your spirits, d
+    93.38s  agent 발화 끝
+    97.89s  user  발화 시작: I need to book a hotel in Paris.
+    98.03s  agent 발화 끝
+    99.96s  user  발화 끝
+   100.16s  agent 발화 시작: Paris! Wonderful choice. When are you planning to travel?
+   104.07s  user  발화 시작: Next week, for five nights.
+   104.27s  agent 발화 끝
+   106.05s  user  발화 끝
+   106.47s  agent 발화 시작: Okay, next week for five nights. I can start searching for h
+   113.61s  agent 발화 끝
+   114.23s  user  발화 시작: Something with a gym would be nice.
+   115.67s  <ret> 발화 (turn29 첫 프레임)
+   116.06s  agent 발화 시작: <ret> Hotel Ritz Paris is available for one thousand two hun
+   116.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.21s]: Hotel Ritz Paris: €1200/night, gym, 4.8 stars; Le Bristol Paris: €1100
+   116.16s  user  발화 끝
+   131.27s  agent 발화 끝
+   131.35s  user  발화 시작: Ritz sounds good.
+   132.63s  agent 발화 시작: Excellent choice. It’s a beautiful hotel.
+   132.64s  user  발화 끝
+   134.26s  user  발화 시작: Mhm.
+   134.89s  user  발화 끝
+   135.91s  agent 발화 끝
+   137.17s  user  발화 시작: What time is it…
+   138.45s  user  발화 끝
+   140.03s  user  발화 시작: …in Tokyo right now?
+   141.45s  <ret> 발화 (turn35 첫 프레임)
+   141.50s  user  발화 끝
+   141.53s  agent 발화 시작: <ret> It is currently ten thirty-three PM in Tokyo. It’s qui
+   141.53s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.51s]: (tool result) It is Friday, July 10, 2026 at 10:33 PM in Asia/Tokyo ri
+   144.63s  user  발화 시작: Mm-hmm.
+   145.46s  user  발화 끝
+   146.85s  user  발화 시작: Oh, wow. That's late.
+   147.04s  agent 발화 끝
+   149.30s  user  발화 끝
+   149.47s  agent 발화 시작: It is. Sometimes it helps to remember the world keeps spinni
+   155.63s  agent 발화 끝

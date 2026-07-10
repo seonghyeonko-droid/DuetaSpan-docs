@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "소원",
+#     "name": "가우",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,35 +12,53 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-27",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
-#     },
-#     {
-#       "date": "2025-09-07",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-09-04",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-06-23",
+#       "date": "2026-05-17",
 #       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#     },
+#     {
+#       "date": "2026-04-27",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2026-04-12",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-11-30",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-10-22",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-24",
+#       "date": "2026-06-14",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,53 +66,61 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-10-12",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-05-29",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 조상 찾기 기록은 얼마나 오래 전까지 남아있나요? | S2 FamilySearch는요? | S3 그럼 그쪽 기록은 얼마나 오래됐을까요? | S4 …근데 제가 한국 조상을 찾고 싶은데, 혹시 한국 기록도 많이
+# EXAMINER(FDB-v2) 단계: S1 혹시, 무염수태고개의 개념이 꾸란에서 유래했다는 주장에 대해  | S2 오, 인사이드 아웃 이요? 재미있을까요? | S3 감사합니다. 그런데, 혹시 지난주 금요일에 제가 뭐라고 메모해 | S4 아니요, 괜찮아요. 그냥… 생각나서요. 그럼…
 
-     0.00s  user  발화 시작: 조상 찾기 기록은 얼마나 오래 전까지 남아있나요?
-     3.06s  <ret> 발화 (turn1 첫 프레임)
-     3.29s  agent 발화 시작: <ret> 음, 안타깝게도 현재로서는 Ancestry.com이 가계도 조사를 위해 얼마나 오래된 기록을 보유
-     3.30s  ⚡SPAN 주입 [d'=0.64s / d_lead=7.74s]: (no information found)
-     3.52s  user  발화 끝
-     6.95s  user  발화 시작: 그래.
-     7.40s  user  발화 끝
-    11.03s  agent 발화 끝
-    11.39s  user  발화 시작: 아, 그렇군요. 그럼 다른 사이트는 어때요?
-    14.06s  user  발화 끝
-    14.41s  agent 발화 시작: 다른 가계도 웹사이트들은 기록 보관 기간이 조금씩 다른 경우가 많아요. 어떤 사이트를 염두에 두고 계신가요?
-    20.65s  agent 발화 끝
-    20.79s  user  발화 시작: FamilySearch는요?
-    21.51s  <ret> 발화 (turn6 첫 프레임)
-    21.82s  agent 발화 시작: <ret> FamilySearch는 예수 그리스도 후기 성도 교회에서 운영하는 비영리 가계도 단체인데, 수세
-    21.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: FamilySearch is a nonprofit genealogy organization operated by The Chu
-    22.07s  user  발화 끝
-    26.59s  user  발화 시작: 응.
-    26.89s  user  발화 끝
-    30.21s  agent 발화 끝
-    31.11s  user  발화 시작: 그럼 그쪽 기록은 얼마나 오래됐을까요?
-    33.01s  <ret> 발화 (turn9 첫 프레임)
-    33.17s  agent 발화 시작: <ret> 기록의 범위는 상당히 넓어서— 기록은 수세기에 걸쳐 있는데, 특히 천오백년대부터 상당한 양의 자료
-    33.37s  user  발화 끝
-    33.89s  ⚡SPAN 주입 [d'=0.88s / d_lead=1.76s]: FamilySearch records span centuries, with significant collections dati
-    41.90s  user  발화 시작: …근데 제가 한국 조상을 찾고 싶은데, 혹시 한국 기록도 많이 있나요?
-    41.97s  agent 발화 끝
-    46.16s  user  발화 끝
-    46.16s  agent 발화 시작: 네, FamilySearch는 한국 기록도 상당량 보유하고 있어요. 한국의 고문서나 호적 같은 자료들을 찾아
-    52.05s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시, 무염수태고개의 개념이 꾸란에서 유래했다는 주장에 대해 반박하는 사람이 누구인지 아세요?
+     5.05s  <ret> 발화 (turn1 첫 프레임)
+     5.29s  agent 발화 시작: <ret> 죄송해요, 그 부분에 대한 정보를 찾을 수 없었어요. 아직 명확하게 알려진 바가 없는 것 같아요.
+     5.29s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.71s]: (no information found)
+     5.37s  user  발화 끝
+     8.58s  user  발화 시작: 네.
+     9.08s  user  발화 끝
+    10.00s  agent 발화 끝
+    11.33s  user  발화 시작: 음… 그렇군요. 그럼, 요즘 가장 인기 있는 영화가 뭐예요?
+    14.75s  <ret> 발화 (turn4 첫 프레임)
+    14.99s  agent 발화 시작: <ret> 지금 극장에서 가장 인기 있는 영화는 '인사이드 아웃 이', '배드 보이 라이드 오어 다이', 그
+    14.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: (tool result) Top-rated movies currently include "Inside Out 2," "Bad 
+    15.17s  user  발화 끝
+    21.38s  agent 발화 끝
+    21.74s  user  발화 시작: 오, 인사이드 아웃 이요? 재미있을까요?
+    24.32s  agent 발화 시작: 네, 많은 분들이 재미있다고 하더라고요. 감정 변화를 다룬 이야기라, 공감되는 부분이 많을 거예요.
+    24.37s  user  발화 끝
+    27.97s  user  발화 시작: 네.
+    28.46s  user  발화 끝
+    29.73s  agent 발화 시작: 혹시 지금 시간 확인해 드릴까요? 제가 지금 시간을 알려드릴 수 있어요.
+    29.74s  agent 발화 끝
+    33.38s  agent 발화 끝
+    34.12s  user  발화 시작: 아, 네, 시간 좀 알려주세요.
+    35.67s  <ret> 발화 (turn10 첫 프레임)
+    35.91s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 사십칠분이에요.
+    35.91s  ⚡SPAN 주입 [d'=1.20s / d_lead=4.11s]: (tool result) It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul rig
+    36.10s  user  발화 끝
+    40.03s  agent 발화 끝
+    40.14s  user  발화 시작: 감사합니다. 그런데, 혹시 지난주 금요일에 제가 뭐라고 메모해 둔 거 있었나요?
+    44.60s  <ret> 발화 (turn12 첫 프레임)
+    44.77s  user  발화 끝
+    44.92s  agent 발화 시작: <ret> 네, 이천이십육년 칠월 삼일에 “오늘 꼭 운동하기”라고 메모해 두셨네요.
+    44.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: [2026-07-03] 오늘 꼭 운동하기
+    48.42s  user  발화 시작: 네.
+    49.19s  user  발화 끝
+    50.20s  agent 발화 끝
+    51.18s  user  발화 시작: 아, 맞다! 운동해야 하는데…
+    53.44s  user  발화 끝
+    53.76s  agent 발화 시작: 운동 계획 세우는 거 도와드릴까요? 아니면 간단히 스트레칭이라도 해보시는 건 어떠세요?
+    58.11s  agent 발화 끝
+    58.17s  user  발화 시작: 아니요, 괜찮아요. 그냥… 생각나서요. 그럼…
+    61.40s  user  발화 끝
+    63.42s  user  발화 시작: …다음에 또 이야기해요.
+    64.63s  agent 발화 시작: 네, 언제든지 편하게 다시 찾아주세요. 항상 응원할게요!
+    64.84s  user  발화 끝
+    67.95s  agent 발화 끝

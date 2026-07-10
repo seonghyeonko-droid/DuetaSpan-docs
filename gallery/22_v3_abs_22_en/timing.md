@@ -4,56 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Oscar",
+#     "name": "Amelia",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-31",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in May."
-#     },
-#     {
-#       "date": "2026-05-23",
-#       "category": "home",
-#       "text": "User's home address is 603 Maple Drive."
-#     },
-#     {
-#       "date": "2026-03-23",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-12-03",
+#       "date": "2026-05-01",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-10-28",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-03-02",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in March."
+#     },
+#     {
+#       "date": "2026-01-28",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-07-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-19",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-08-05",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-29",
+#       "date": "2025-07-23",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -61,47 +61,39 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-12-27",
-#       "title": "Researching a used car",
+#       "date": "2025-07-20",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What series was set in the past? | S2 …like in Seoul today? | S3 Yeah, it is. Uh, remind me, what d | S4 Not really, things are better now.
+# EXAMINER(FDB-v2) 단계: S1 What instrument does the mandolin  | S2 Hmm, welll… maybe you can tell… | S3 …me the current time in Seoul? | S4 That's good to know. I'm feeling a
 
-     0.00s  user  발화 시작: What series was set in the past?
-     2.04s  agent 발화 시작: But I don’t have information on any series specifically set 
-     2.12s  user  발화 끝
-     6.28s  user  발화 시작: Hmm, okay. Well, what’s the weather…
-     6.30s  agent 발화 끝
-     9.14s  user  발화 끝
-    10.52s  user  발화 시작: …like in Seoul today?
-    11.58s  <ret> 발화 (turn4 첫 프레임)
-    11.82s  agent 발화 시작: <ret> It's currently 23.0 degrees Celsius in Seoul, with 74%
-    11.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.06s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    11.95s  user  발화 끝
-    21.84s  agent 발화 시작: Quite warm for July, isn’t it?
-    21.88s  agent 발화 끝
-    23.94s  user  발화 시작: Yeah, it is. Uh, remind me, what did I say about feeling str
-    23.96s  agent 발화 끝
-    28.03s  <ret> 발화 (turn7 첫 프레임)
-    28.29s  user  발화 끝
-    28.33s  agent 발화 시작: <ret> On March fifteenth, two years ago, you said you felt o
-    28.35s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.02s]: [2024-03-15] I feel overwhelmed with work and family commitments.
-    31.80s  user  발화 시작: Right.
-    32.11s  user  발화 끝
-    34.10s  agent 발화 시작: It's good to revisit how we were feeling, sometimes. Do you 
-    34.35s  agent 발화 끝
-    38.96s  agent 발화 끝
-    39.91s  user  발화 시작: Not really, things are better now. Could you find me some re
-    43.53s  <ret> 발화 (turn11 첫 프레임)
-    43.90s  user  발화 끝
-    43.92s  agent 발화 시작: <ret> I found some relaxing ambient music by Brian Eno, avai
-    43.93s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.16s]: (tool result) Ambient music by Brian Eno, available on Spotify and App
-    49.92s  agent 발화 시작: Perhaps that will help maintain this sense of calm.
-    50.08s  agent 발화 끝
-    52.83s  agent 발화 끝
+     0.00s  user  발화 시작: What instrument does the mandolin not have the same tuning o
+     3.06s  <ret> 발화 (turn1 첫 프레임)
+     3.22s  agent 발화 시작: <ret> Unfortunately, I don't have information on what instru
+     3.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (no information found)
+     3.38s  user  발화 끝
+     9.11s  agent 발화 시작: But don’t worry, sometimes not knowing is just a starting po
+     9.28s  agent 발화 끝
+    13.70s  user  발화 시작: Hmm, welll… maybe you can tell…
+    13.82s  agent 발화 끝
+    16.66s  user  발화 끝
+    18.01s  user  발화 시작: …me the current time in Seoul?
+    20.83s  user  발화 끝
+    21.06s  <ret> 발화 (turn5 첫 프레임)
+    21.14s  agent 발화 시작: <ret> It’s currently 2:37 PM in Seoul. I hope that helps you
+    21.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
+    28.84s  user  발화 시작: That's good to know. I'm feeling a bit stressed about a proj
+    28.97s  agent 발화 끝
+    32.63s  user  발화 끝
+    33.13s  agent 발화 시작: Oh, deadlines can be tough! It's completely normal to feel s
+    35.96s  user  발화 시작: Yeah.
+    36.41s  user  발화 끝
+    41.08s  agent 발화 시작: Exactly. And celebrate each small win along the way—you dese
+    41.23s  agent 발화 끝
+    50.87s  agent 발화 끝

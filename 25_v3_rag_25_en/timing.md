@@ -4,89 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Hana",
+#     "name": "Nora",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "German",
 #     "gender": "female",
 #     "age_range": "late 20s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-11-27",
+#       "date": "2025-12-31",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-11-16",
 #       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-11-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
 #       "date": "2025-09-11",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-08-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2025-08-02",
-#       "category": "home",
-#       "text": "User's home address is 936 Elm Street."
+#       "date": "2025-07-25",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-03",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-18",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-05",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-24",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to settle a debate. Who | S2 …Peter Chelsom or Billy Bob Thornt | S3 Huh, I thought Chelsom had more hi | S4 …but did Thornton actually *releas
+# EXAMINER(FDB-v2) 단계: S1 Hi Feno, I was wondering… | S2 Yes, it is. How long was "Mr. Vain | S3 So "Mr. Vain" was their biggest hi | S4 I haven’t. Is that album still ava
 
-     0.00s  user  발화 시작: I’m trying to settle a debate. Who’s the more well-known mus
-     3.69s  user  발화 끝
-     4.90s  user  발화 시작: …Peter Chelsom or Billy Bob Thornton?
-     6.79s  <ret> 발화 (turn2 첫 프레임)
-     6.95s  agent 발화 시작: <ret> Well, it seems Billy Bob Thornton is the more recogniz
-     6.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: Billy Bob Thornton is an American actor, filmmaker, and musician who a
-     7.16s  user  발화 끝
-    16.18s  agent 발화 끝
-    16.25s  user  발화 시작: Huh, I thought Chelsom had more hits.
-    18.79s  agent 발화 시작: That’s interesting! While Peter Chelsom is a respected film 
-    19.03s  user  발화 끝
-    26.28s  user  발화 시작: …but did Thornton actually *release* albums, or is he just k
-    27.03s  agent 발화 끝
-    29.78s  <ret> 발화 (turn6 첫 프레임)
-    30.01s  agent 발화 시작: <ret> He actually did release albums, three studio albums in
-    30.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.73s]: Billy Bob Thornton has released three studio albums: “Private Audition
-    30.17s  user  발화 끝
-    33.78s  user  발화 시작: Mhm.
-    34.23s  user  발화 끝
-    41.59s  agent 발화 시작: It’s easy to forget about his music career with all his acti
-    41.75s  agent 발화 끝
-    47.42s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Feno, I was wondering…
+     1.61s  user  발화 끝
+     2.72s  user  발화 시작: …about Culture Beat.
+     3.64s  agent 발화 시작: Hello! It's lovely to connect. Music can be such a powerful 
+     3.73s  user  발화 끝
+     7.25s  user  발화 시작: Right.
+     7.80s  user  발화 끝
+     8.59s  user  발화 시작: Yes, it is. How long was "Mr. Vain" at number one on the RPM
+     8.69s  agent 발화 끝
+    13.72s  <ret> 발화 (turn5 첫 프레임)
+    13.80s  agent 발화 시작: <ret> That song actually topped the Canadian RPM Dance chart
+    13.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: "Mr. Vain" by Culture Beat spent ten weeks at number one on the RPM Da
+    14.01s  user  발화 끝
+    17.82s  user  발화 시작: …was that their longest-running number one hit?
+    18.47s  agent 발화 끝
+    20.11s  <ret> 발화 (turn7 첫 프레임)
+    20.43s  agent 발화 시작: <ret> Actually, Culture Beat had two number-one hits there—"
+    20.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Culture Beat had two number-one singles on the RPM Dance
+    20.59s  user  발화 끝
+    25.21s  user  발화 시작: Mm-hmm.
+    25.84s  user  발화 끝
+    27.18s  user  발화 시작: So "Mr. Vain" was their biggest hit in Canada, then?
+    27.24s  agent 발화 끝
+    30.23s  user  발화 끝
+    30.27s  agent 발화 시작: It seems that way, yes. It held the top position for a longe
+    37.73s  agent 발화 끝
+    38.15s  user  발화 시작: Do you know what album "Mr. Vain" was on?
+    39.70s  <ret> 발화 (turn12 첫 프레임)
+    40.10s  agent 발화 시작: <ret> That song was the lead single from their second studio
+    40.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: "Mr. Vain" was the lead single from Culture Beat's second studio album
+    40.21s  user  발화 끝
+    50.12s  agent 발화 끝
+    50.35s  user  발화 시작: I haven’t. Is that album still available to buy?
+    52.83s  <ret> 발화 (turn14 첫 프레임)
+    52.94s  user  발화 끝
+    52.99s  agent 발화 시작: <ret> It’s currently available on Amazon for fourteen ninety
+    52.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) *Within the Realm of Pleasure* by Culture Beat is availa
+    59.47s  agent 발화 끝

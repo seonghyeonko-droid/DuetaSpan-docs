@@ -1,64 +1,76 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Gari, a practical and reassuring life coach who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Vox, a gentle and reflective supportive advisor who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Stella",
+    "name": "Charlie",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "late 20s",
-    "language": "French"
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-07",
+      "date": "2026-06-15",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-04-20",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-04-05",
+      "date": "2026-02-05",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2026-03-30",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2026-01-02",
-      "category": "work",
-      "text": "User works as a high-school teacher."
-    },
-    {
-      "date": "2025-12-31",
-      "category": "home",
-      "text": "User's home address is 670 Maple Drive."
+      "date": "2025-11-24",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-25",
-      "title": "Planning a birthday dinner",
+      "date": "2026-04-17",
+      "title": "Booked a dentist appointment",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, could you look up Zuni Cafe…
-[  3.54s][user ] …for me? I need their phone ⟨ret@5.69s⟩ number.
-[  5.93s][moshi] ⟦⚡SPAN@5.93s: {"name": "Zuni Café", "address": "1658 Market St, San Francisco, CA 94102", "phone_number": "415-552-2377", "r⟧ Zuni Café’s phone number is 415-552-2377, located on Market Street in San Francisco. It has a 4.5-star rating.
-[ 12.56s][user ] «backchannel» Wow.
-[ 19.36s][user ] Oh, that's great! Um, actually, I'm trying to decide if I should even go to San Francisco next month…
-[ 25.77s][moshi] Well, deciding where to focus your energy is a big part of feeling less overwhelmed. Sometimes a change of scenery *can* be really helpful, though.
+[  0.00s][user ] I'm trying to figure out what people are saying about the new CEO of UnitedHealth Group. Can you look that up for ⟨ret@6.36s⟩ me?
+[  6.60s][moshi] ⟦⚡SPAN@6.60s: (tool result) Andrew Witty assumed the role of CEO at UnitedHealth Group on March 1, 2024, after previously le⟧ It appears Andrew Witty became CEO of UnitedHealth Group on March first of twenty twenty-four, having previously led GSK for ten years.
+      CALL: {"function": "tavily-extract", "arguments": {"url": "https://www.linkedin.com/company/unitedhealthgroup/"}}
+[ 17.42s][user ] Oh, wow, that’s recent. I guess I should look into GSK too. Um, what's the weather like in London right now?
+[ 24.72s][moshi] ⟨ret@24.56s⟩ ⟦⚡SPAN@24.72s: (tool result) The current weather in London is 18.5°C, with 68% humidity and a wind speed of 7.2 km/h.⟧ The weather in London is currently eighteen point five degrees Celsius, with sixty-eight percent humidity and a wind speed of seven point two kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
+[ 28.70s][user ] «backchannel» Yeah.
+[ 34.29s][user ] [sigh] Sounds…pleasant. Okay, back to work stress. I need to find a good therapist specializing in burnout. Do you know any in the Seattle ⟨ret@44.48s⟩ area?
+[ 44.88s][moshi] ⟦⚡SPAN@44.88s: (tool result) Dr. Eleanor Vance, PhD, specializes in burnout at Seattle Wellness Center. Contact: (206) 555-12⟧ It does sound rather lovely, doesn’t it? Finding the right support is so important when feeling overwhelmed. Let's see what we can find in Seattle.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Seattle", "specialty": "burnout"}}
+[ 53.72s][moshi] Dr. Eleanor Vance, a PhD, specializes in burnout at the Seattle Wellness Center, and you can reach them at two zero six, five five five, one two one two.
+[ 59.93s][user ] «backchannel» Yeah.
+[ 64.62s][user ] July seventeenth… that’s a little far out. Is there anyone with sooner ⟨ret@69.79s⟩ availability?
+[ 70.09s][moshi] ⟦⚡SPAN@70.11s: (tool result) Dr. Anya Sharma, PsyD, has availability on July 12th at Resilience Counseling. Contact: (206) 55⟧ Dr. Anya Sharma, a PsyD, has an opening on July twelfth at Resilience Counseling, and their number is two zero six, five five five, three four three four.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"location": "Seattle", "specialty": "burnout"}}
+[ 77.21s][user ] «backchannel» Uh-huh.
+[ 81.36s][user ] That's much better. Okay, I think I'll book an appointment with Dr. Sharma.
+[ 86.06s][moshi] ⟨ret@85.98s⟩ ⟦⚡SPAN@86.06s: (tool result) Appointment with Dr. Anya Sharma booked for July 12th at 10:00 AM. Confirmation ID: AS7892.⟧ Your appointment with Dr. Anya Sharma is confirmed for July twelfth at ten AM, confirmation ID is AS seven eight nine two.
+      CALL: {"function": "Services_1_BookAppointment", "arguments": {"provider": "Dr. Anya Sharma", "date": "July 12th"}}
+[ 91.73s][user ] «backchannel» Mm-hmm.
+[ 95.77s][user ] Great, thank you…
+[ 99.12s][user ] …so much. That's really helpful.
+[102.07s][moshi] You’re very welcome. It’s good to know I could assist you in finding support. Remember, prioritizing your wellbeing is essential, especially during challenging times.

@@ -1,97 +1,118 @@
 v3_defer_09_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Brarin, a calm and patient personal guide who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Laia, a encouraging and non-judgmental counselor who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_09",
-    "name": "Avery",
+    "name": "Marie",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "late 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-06",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2026-01-01",
-      "category": "home",
-      "text": "User's home address is 32 Oak Avenue."
-    },
-    {
-      "date": "2025-12-12",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-09-11",
+      "date": "2026-05-02",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Mexican."
     },
     {
-      "date": "2025-06-09",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2026-04-06",
+      "category": "home",
+      "text": "User's home address is 507 Birch Road."
     },
     {
-      "date": "2025-06-03",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2026-02-25",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2025-10-30",
+      "category": "work",
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-10-07",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-07-17",
-      "title": "Researching a used car",
+      "date": "2026-01-09",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-11-05",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-23",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Find me train tickets for two adults from Dallas to San Francisco on July fourth, departing at noon.
-[  6.10s][moshi] «interrupted» ⟨ret@5.87s⟩ ⟦⚡SPAN@6.11s: (tool result) Tickets confirmed: DFW to SFO, July 4th, 12:00 PM, 2 adult standard seats, total $875. Confirmat⟧ I’ve found train tickets for you—
-      CALL: {"function": "Trains_1_GetTrainTickets", "arguments": {"adults": "2", "departure_city": "Dallas", "arrival_city": "San Francisco", "departure_date": "July fourth", "departure_time": "noon"}}
-[  7.55s][user ] «interrupts_prev» …are those refundable if something comes ⟨ret@9.37s⟩ up?
-[  9.53s][moshi] ⟦⚡SPAN@9.53s: Standard fares are non-refundable, but can be exchanged for a $50 fee plus any fare difference.⟧ Let me check the fare details for you.
-[ 11.97s][moshi] The standard fares are non-refundable, but you can exchange them for a fifty-dollar fee—
-[ 13.87s][user ] «backchannel» Yeah.
-[ 16.98s][user ] «interrupts_prev» Yes, please.
-[ 18.37s][moshi] Excellent. Your tickets are now confirmed. Confirmation ID is TX92KL.
-[ 21.52s][user ] «backchannel» Yeah, yeah.
-[ 26.79s][user ] Great. What's the weather like in San Francisco on July ⟨ret@30.05s⟩ fourth?
-[ 30.29s][moshi] ⟦⚡SPAN@30.29s: (tool result) San Francisco, July 4th: 18.3°C, partly cloudy, wind 7.2 km/h.⟧ It looks like San Francisco on July fourth will be eighteen point three degrees Celsius— —partly cloudy, with a wind speed of seven point two kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco", "date": "July fourth"}}
-[ 40.96s][user ] That sounds pleasant. Can you find me some highly-rated restaurants near Union ⟨ret@45.34s⟩ Square?
-[ 45.66s][moshi] ⟦⚡SPAN@45.66s: (tool result) Zuni Café (4.6 stars, Californian), Scoma's (4.5 stars, Seafood), Lori's Diner (4.4 stars, Ameri⟧ I found three highly-rated restaurants near Union Square: Zuni Café— —with four point six stars, Scoma’s with four point five, and Lori’s Diner with four point four.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Union Square, San Francisco"}}
-[ 50.02s][user ] «backchannel» Mm-hmm.
-[ 57.88s][user ] Zuni Café sounds interesting. Can you make a reservation there for two people on July fourth at seven ⟨ret@63.33s⟩ PM?
-[ 63.57s][moshi] ⟦⚡SPAN@63.57s: (tool result) Reservation confirmed at Zuni Café, July 4th, 7:00 PM, party of 2. Confirmation #ZC78PP.⟧ I’ve confirmed a reservation at Zuni Café— —for two people on July fourth at seven PM. Your confirmation number is ZC78PP.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Zuni Café", "date": "July fourth", "time": "7 PM", "party_size": "2"}}
-[ 70.97s][user ] «backchannel» Wow.
-[ 73.91s][user ] Perfect. I think I'm all set for the trip.
-[ 76.29s][moshi] That's wonderful to hear! Planning ahead is a great way to reduce stress.
-[ 82.01s][user ] I was thinking about adding a side trip to Yosemite.
-[ 85.02s][moshi] Yosemite is a beautiful choice. It's a bit of a drive from San Francisco.
-[ 91.02s][user ] How far is it, ⟨ret@92.68s⟩ roughly?
-[ 93.00s][moshi] ⟦⚡SPAN@93.00s: San Francisco to Yosemite National Park is approximately 320 kilometers, or a 4-5 hour drive.⟧ The distance from San Francisco to Yosemite National Park is approximately three hundred and twenty kilometers— —which is about a four to five-hour drive, depending on traffic.
-[100.55s][user ] «backchannel» Uh-huh.
-[103.73s][user ] That's doable. Are there any good hiking trails there for beginners?
-[107.93s][moshi] ⟨ret@107.77s⟩ ⟦⚡SPAN@107.93s: (tool result) Lower Yosemite Fall Trail (1.6km, easy), Mirror Lake Loop (5km, easy), Cook's Meadow Loop (1km, ⟧ I found a few beginner-friendly hiking trails in Yosemite: Lower Yosemite Fall Trail— —the Mirror Lake Loop, and Cook’s Meadow Loop. They all seem quite accessible.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Yosemite National Park", "interest": "hiking trails for beginners"}}
-[114.31s][user ] «backchannel» Yeah, yeah.
-[119.90s][user ] Lower Yosemite Fall sounds nice. Thanks for all your help.
-[123.85s][moshi] You’re very welcome. Remember, taking time for yourself and enjoying experiences like this is important for staying motivated.
+[  0.00s][user ] How many lines of code has session ninety-nine generated?
+[  3.58s][moshi] ⟨ret@3.35s⟩ ⟦⚡SPAN@3.59s: (tool result) Session 99 has generated 1478 lines of code.⟧ Session ninety-nine has generated one thousand four hundred seventy-eight lines of code. That's quite a bit – are you working on a large project?
+      CALL: {"function": "get_codegen_session", "arguments": {"session_id": "99"}}
+[ 13.08s][user ] Yeah, it’s… pretty big. Can you find me some Italian restaurants nearby?
+[ 17.79s][moshi] I can certainly help with that. What part of town are you in right now?
+[ 20.45s][user ] «backchannel» Mm-hmm.
+[ 22.88s][user ] Uh, near the central park.
+[ 24.75s][moshi] ⟨ret@24.44s⟩ ⟦⚡SPAN@24.76s: Bella Italia: 4.5 stars, 0.3km, $$; Trattoria Romana: 4.2 stars, 0.5km, $$$.⟧ There’s Bella Italia, four and a half stars, point three kilometers away, and Trattoria Romana, four point two stars, point five kilometers away.
+[ 34.18s][user ] Hmm. Bella Italia sounds good. Can you make a reservation for two at ⟨ret@38.72s⟩ seven PM?
+[ 39.12s][moshi] ⟦⚡SPAN@39.12s: (tool result) Reservation confirmed at Bella Italia for 2 people at 7:00 PM. Confirmation ID: BX729L.⟧ I’ve confirmed a reservation for two at Bella Italia at seven PM. Your confirmation ID is BX729L.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "time": "19:00", "party_size": 2}}
+[ 48.36s][user ] Perfect. Thanks!
+[ 49.59s][moshi] You’re very welcome. It’s good to have a plan in place, especially with a busy week ahead.
+[ 53.44s][user ] «backchannel» Yeah.
+[ 56.40s][user ] I need to send a message to my sister.
+[ 58.73s][moshi] I can help with that. What would you like to say, and what’s her contact information?
+[ 62.00s][user ] «backchannel» Yeah.
+[ 64.40s][user ] Her number is 555-123-4567. Tell her I’ll be ⟨ret@68.49s⟩ late.
+[ 68.88s][moshi] ⟦⚡SPAN@68.89s: (tool result) Message sent to 555-123-4567: "I’ll be late."⟧ I’ve sent your message to five-five-five, one-two-three, four-five-six-seven: “I’ll be late.”
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "555-123-4567", "message": "I’ll be late."}}
+[ 72.66s][user ] «backchannel» Right.
+[ 75.97s][user ] Great. What’s the weather like today?
+[ 78.01s][moshi] ⟨ret@77.93s⟩ ⟦⚡SPAN@78.01s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h.⟧ It's twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 87.09s][user ] Hmm, nice.
+[ 88.38s][moshi] It sounds like a pretty pleasant day overall. It's good to have comfortable weather.
+[ 91.16s][user ] «backchannel» Yeah.
+[ 93.31s][moshi] Sometimes, a little sunshine can really lift your spirits, don't you think?
+[ 97.89s][user ] I need to book a hotel in Paris.
+[100.16s][moshi] Paris! Wonderful choice. When are you planning to travel?
+[104.07s][user ] Next week, for five nights.
+[106.47s][moshi] Okay, next week for five nights. I can start searching for hotels. Do you have any preferences?
+[114.23s][user ] Something with a gym would ⟨ret@115.67s⟩ be nice.
+[116.06s][moshi] ⟦⚡SPAN@116.07s: Hotel Ritz Paris: €1200/night, gym, 4.8 stars; Le Bristol Paris: €1100/night, gym, 4.7 stars.⟧ Hotel Ritz Paris is available for one thousand two hundred euros a night, with a gym and a four point eight-star rating. Le Bristol Paris is one thousand one hundred euros a night, also with a gym and four point seven stars.
+[131.35s][user ] Ritz sounds good.
+[132.63s][moshi] Excellent choice. It’s a beautiful hotel.
+[134.26s][user ] «backchannel» Mhm.
+[137.17s][user ] What time is it…
+[140.03s][user ] …in Tokyo right now?
+[141.53s][moshi] ⟨ret@141.45s⟩ ⟦⚡SPAN@141.53s: (tool result) It is Friday, July 10, 2026 at 10:33 PM in Asia/Tokyo right now.⟧ It is currently ten thirty-three PM in Tokyo. It’s quite a bit later there!
+      CALL: {"function": "get_time", "arguments": {"location": "Tokyo"}}
+[144.63s][user ] «backchannel» Mm-hmm.
+[146.85s][user ] Oh, wow. That's late.
+[149.47s][moshi] It is. Sometimes it helps to remember the world keeps spinning even when we're winding down.

@@ -4,97 +4,122 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Remy",
+#     "name": "Lucia",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
+#       "date": "2026-04-21",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
 #       "date": "2026-04-15",
-#       "category": "home",
-#       "text": "User's home address is 316 Birch Road."
-#     },
-#     {
-#       "date": "2025-12-03",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-11-01",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-23",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-08-27",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-08-16",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-12-01",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-10-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-07-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-23",
+#       "date": "2026-05-26",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-13",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-03",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm just feeling really stuck righ | S2 I don’t know, honestly. I guess… e | S3 Playful exploration? I haven't don | S4 I… I don't know. Kind of empty? Li
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi. Fio… that’s a pretty name. | S2 Sort of. It's all just… jargon. An | S3 Okay. Um… what about, like, invest | S4 What if I just… save it all? Is th
 
-     0.00s  agent 발화 시작: Hello Remy, it’s wonderful to connect with you. I’m Tarimi, 
-     5.65s  user  발화 시작: Yeah, yeah.
-     6.66s  user  발화 끝
-     8.02s  agent 발화 끝
-     8.30s  user  발화 시작: I'm just feeling really stuck right now, actually.
-    11.15s  agent 발화 시작: Stuck is a very common feeling, Remy. What feels the most ch
-    11.36s  user  발화 끝
-    14.76s  user  발화 시작: Oh.
-    15.25s  user  발화 끝
-    19.58s  agent 발화 끝
-    20.26s  user  발화 시작: Um, welll… I think it’s the starting. I have so many ideas, 
-    27.30s  user  발화 끝
-    27.49s  agent 발화 시작: That’s a really insightful observation. It sounds like you’r
-    34.90s  user  발화 시작: I don’t know, honestly. I guess… everyone else seems so sure
-    35.00s  agent 발화 끝
-    39.68s  agent 발화 시작: It’s easy to fall into comparing ourselves to others, isn’t 
-    39.81s  user  발화 끝
-    42.10s  user  발화 시작: Mm-hmm.
-    42.73s  user  발화 끝
-    47.64s  agent 발화 시작: Often, what looks like certainty is just someone further alo
-    47.65s  agent 발화 끝
-    53.91s  user  발화 시작: Yeah.
-    54.55s  user  발화 끝
-    58.21s  agent 발화 끝
-    58.96s  user  발화 시작: Playful exploration? I haven't done that in ages. Sounds… sc
-    64.52s  user  발화 끝
-    64.56s  agent 발화 시작: It can feel vulnerable to let go of control. But sometimes, 
-    73.27s  user  발화 시작: Maybe. I was trying to write a song, but it just feels…flat.
-    73.42s  agent 발화 끝
-    77.71s  user  발화 끝
-    77.98s  agent 발화 시작: A flat song can be a wonderful starting point, Remy. What if
-    86.60s  agent 발화 끝
-    87.00s  user  발화 시작: I… I don't know. Kind of empty? Like a long, drawn-out note.
-    91.79s  agent 발화 시작: That's a beautiful image. An empty space holds potential, yo
-    91.82s  user  발화 끝
-   100.37s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Lucia, it’s lovely to connect with you.
+     1.61s  user  발화 시작: Okay.
+     2.44s  user  발화 끝
+     2.72s  agent 발화 끝
+     2.99s  user  발화 시작: Oh, hi. Fio… that’s a pretty name. I’m just feeling really o
+     8.87s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Lucia. M
+     9.06s  user  발화 끝
+    14.93s  user  발화 시작: Really?
+    15.75s  user  발화 끝
+    17.40s  agent 발화 끝
+    18.09s  user  발화 시작: Well, I just got a new job, which is great, but… the benefit
+    23.55s  user  발화 끝
+    23.83s  agent 발화 시작: A new job is exciting! Benefits can definitely be tricky. It
+    32.68s  user  발화 시작: Sort of. It's all just… jargon. And deadlines. I’m afraid I’
+    32.73s  agent 발화 끝
+    38.88s  agent 발화 시작: That fear is very common, Lucia. It’s wise to be cautious. L
+    39.03s  user  발화 끝
+    44.51s  user  발화 시작: Exactly.
+    45.33s  user  발화 끝
+    48.00s  agent 발화 시작: Sometimes, writing down the pros and cons of each choice can
+    48.02s  agent 발화 끝
+    52.25s  user  발화 시작: Yeah.
+    52.79s  user  발화 끝
+    56.71s  agent 발화 끝
+    57.38s  user  발화 시작: That's... actually a good idea. I always just freeze up when
+    62.59s  agent 발화 시작: Spreadsheets aren’t for everyone! A handwritten list works j
+    62.62s  user  발화 끝
+    70.02s  user  발화 시작: Okay. Um… what about, like, investing? I know I *should* be 
+    70.14s  agent 발화 끝
+    77.75s  user  발화 끝
+    78.03s  agent 발화 시작: Investing can seem daunting, but it really comes down to put
+    81.62s  user  발화 시작: Yeah.
+    82.17s  user  발화 끝
+    89.86s  user  발화 시작: Stocks and bonds… sounds scary. — I’ve heard stories.
+    89.91s  agent 발화 끝
+    93.70s  user  발화 끝
+    93.96s  agent 발화 시작: Stories can definitely amplify the fear factor. It's about f
+    99.25s  user  발화 시작: Yeah.
+    99.98s  user  발화 끝
+   102.43s  user  발화 시작: What if I just… save it all? Is that a bad idea?
+   102.59s  agent 발화 끝
+   106.66s  agent 발화 시작: Saving is *always* a good idea, Lucia. But sometimes, lettin
+   106.73s  user  발화 끝
+   110.12s  user  발화 시작: Yeah.
+   110.85s  user  발화 끝
+   116.03s  agent 발화 끝
+   116.10s  user  발화 시작: Okay. I think… I think I need to sit down with all this stuf
+   121.20s  agent 발화 시작: You're very welcome, Lucia. Taking that first step is the ha
+   121.38s  user  발화 끝
+   129.26s  agent 발화 끝

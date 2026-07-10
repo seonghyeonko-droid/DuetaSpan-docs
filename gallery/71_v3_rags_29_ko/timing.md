@@ -4,69 +4,76 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "준람",
+#     "name": "라린",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 20s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-05-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-05-12",
+#       "date": "2026-05-03",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-04-09",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2026-01-11",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "text": "User works as a software engineer."
 #     },
 #     {
-#       "date": "2026-05-06",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-10-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in March."
 #     },
 #     {
-#       "date": "2025-11-24",
+#       "date": "2025-07-03",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-09-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-14",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-25",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-31",
-#       "title": "Setting up a home network",
+#       "date": "2025-10-13",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 혹시 식스 플래그 캘리포니아에 놀이기구가 몇 개 있는지 알 수 있을까요?
-     5.03s  <ret> 발화 (turn1 첫 프레임)
-     5.19s  agent 발화 시작: <ret> 놀이기구는 총 마흔세 개가 있어요. 롤러코스터나 가족용, 워터파크 놀이기구도 다 포함된 숫자랍니다
-     5.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: Six Flags California has forty-three rides, including roller coasters,
-     5.37s  user  발화 끝
-    11.81s  agent 발화 끝
+     0.00s  user  발화 시작: 인도 예스 은행 지점…
+     2.26s  user  발화 끝
+     3.37s  user  발화 시작: …수는 모두 몇 개예요?
+     4.57s  <ret> 발화 (turn2 첫 프레임)
+     4.73s  agent 발화 시작: <ret> 현재 인도 전역에 예스 은행 지점이 총 육백삼십개 있습니다.
+     4.73s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.66s]: Yes Bank currently has six hundred and thirty branches across India.
+     4.88s  user  발화 끝
+     8.39s  agent 발화 끝

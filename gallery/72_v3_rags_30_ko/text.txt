@@ -1,60 +1,68 @@
 v3_rags_30_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스에 대해 사람들을 돕는 침착하고 인내심 있는 조력자 Fael입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 사려 깊고 부드러운 말투의 라이프 코치 Eler이며, 사람들의 일상적인 결정과 감정을 돕습니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_30",
-    "name": "시형",
+    "name": "보완",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-04-30",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "date": "2026-05-03",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2026-03-03",
+      "date": "2025-12-30",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-07-18",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2025-07-01",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-06-27",
       "category": "home",
-      "text": "User's home address is 서울 마포구 성산동 45-6."
-    },
-    {
-      "date": "2026-02-06",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2026-02-02",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-06-28",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
+      "text": "User's home address is 대구 중구 동인동 88-1."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-25",
-      "title": "Comparing gym memberships",
+      "date": "2026-04-30",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-07-12",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음… nba에서 가장 많은 mvp를 받은 선수는 누구야?
-[  4.35s][moshi] ⟨ret@4.20s⟩ ⟦⚡SPAN@4.36s: Kareem Abdul-Jabbar has won the most NBA Most Valuable Player awards, with six wins throughout his career.⟧ 가장 많은 nba mvp는 커림 압둘-자바 선수가 받았는데, 통산 여섯 번이나 수상하셨어요. 그 기록은 정말 대단하죠.
+[  0.00s][user ] 의식의 흐름이라는 개념을 처음 생각해낸 사람은 누구야?
+[  4.33s][moshi] ⟨ret@4.17s⟩ ⟦⚡SPAN@4.33s: William James proposed the concept of the stream of consciousness as a continuously flowing succession of thou⟧ 의식의 흐름이라는 개념은, 계속해서 흘러가는 생각과 감정의 연속으로 윌리엄 제임스가 처음 제안했어요. 그분 덕분에 이렇게 생각할 수 있게 되었죠.

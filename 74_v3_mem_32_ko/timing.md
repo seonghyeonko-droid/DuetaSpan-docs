@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "유형",
+#     "name": "재람",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-17",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-03-14",
+#       "date": "2026-04-22",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-02-15",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-11-29",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2026-01-18",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2026-01-14",
+#       "date": "2025-06-21",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-11",
+#       "date": "2025-10-06",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -50,30 +55,45 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 사eus님. 잘 지냈어요. 혹시 제가 예전에 말씀 | S2 … 근데 그때 제가 한국 바베큐를 엄청 좋아한다고 말씀드렸었죠 | S3 네, 그래도 주말에는 꼭 암벽 등반을 하려고 노력해요. 강아지 | S4 아, 맞아요. 모치는 유제품 알레르기가 있어요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 유형님. 저는 Klellan이에요. 오늘 하루는 어떠셨어요?
-     4.81s  agent 발화 끝
-     5.04s  user  발화 시작: 안녕하세요, Klellan 씨. 요즘 운동할 시간이 부족해서 고민이에요.
-     9.48s  user  발화 끝
-     9.51s  <ret> 발화 (turn2 첫 프레임)
-     9.57s  agent 발화 시작: <ret> 운동 시간을 내기 어려우시군요. 혹시 전에 이야기했던 헬스장 멤버십에 대해 다시 한번 알아볼까요?
-     9.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: [2026-05-11] Past chat — Comparing gym memberships: wants a pool; clos
-    16.25s  agent 발화 시작: 전에 저희가 이야기했던 것처럼, 수영장이 있고 사무실과 가까운 헬스장을 찾고 계셨죠.
-    16.34s  agent 발화 끝
-    19.06s  user  발화 시작: 예.
-    19.87s  user  발화 끝
-    22.15s  agent 발화 시작: 혹시 어떤 헬스장을 알아보고 계신지 말씀해 주실 수 있을까요?
-    22.32s  agent 발화 끝
-    24.94s  user  발화 시작: 그렇죠.
-    25.75s  user  발화 끝
-    26.26s  agent 발화 끝
-    26.79s  user  발화 시작: 음… 회사 근처에 괜찮은 곳이 있는지 찾아봐 주실 수 있을까요?
-    30.87s  <ret> 발화 (turn8 첫 프레임)
-    30.94s  agent 발화 시작: <ret> 부산에 있는 헬스장 중에서 Fitness First Busan이 평점이 사 점 오점이고, 사무실에
-    30.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) {"restaurants": [{"name": "Fitness First Busan", "addres
-    31.13s  user  발화 끝
-    39.05s  agent 발화 끝
-    39.08s  user  발화 시작: 오, 가까운 곳이 있군요.
-    40.65s  agent 발화 시작: 네, 가까워서 다니기 편하실 거예요. 혹시 더 자세한 정보를 원하시면 알려주세요.
-    40.69s  user  발화 끝
-    46.10s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 재람님. 저는 여러분의 웰빙 코치, 사eus입니다. 오늘 하루는 어떠셨어요?
+     4.88s  user  발화 시작: 네.
+     5.51s  user  발화 끝
+     6.81s  agent 발화 끝
+     7.15s  user  발화 시작: 안녕하세요, 사eus님. 잘 지냈어요. 혹시 제가 예전에 말씀드렸던 여행 계획 기억하시나요?
+    13.51s  <ret> 발화 (turn3 첫 프레임)
+    13.59s  agent 발화 시작: <ret> 네, 재람님. 사무실 근처에 수영장이 있는 헬스 멤버십을 비교했던 것 기억하고 있어요. —
+    13.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: [2025-10-06] Past chat — Comparing gym memberships: wants a pool; clos
+    13.73s  user  발화 끝
+    18.91s  user  발화 시작: … 근데 그때 제가 한국 바베큐를 엄청 좋아한다고 말씀드렸었죠?
+    19.70s  agent 발화 끝
+    22.45s  <ret> 발화 (turn5 첫 프레임)
+    22.53s  agent 발화 시작: <ret> 아, 네, 맞아요. 한국 바베큐를 아주 좋아하신다고 말씀하셨었죠.
+    22.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.34s]: [2026-06-28] User's favorite cuisine is Korean BBQ.
+    22.57s  user  발화 끝
+    26.87s  agent 발화 끝
+    26.88s  agent 발화 시작: 한국 바베큐를 가장 좋아하신다는 걸 기억하고 있습니다. 혹시 최근에 맛있는 곳을 찾으셨나요?
+    29.77s  user  발화 시작: 네.
+    30.17s  user  발화 끝
+    33.89s  <ret> 발화 (turn8 첫 프레임)
+    33.96s  agent 발화 시작: <ret> 정말 다행이네요! 혹시 최근에 스트레스 받는 일은 없으셨나요? 운동이나 취미 활동은 꾸준히 하고 
+    33.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: [2025-11-29] User is into rock climbing.
+    34.01s  agent 발화 끝
+    42.78s  agent 발화 시작: 암벽 등반을 좋아하신다고 말씀해주셨던 것 같아요. 암벽 등반은 스트레스 해소에 아주 좋은 활동이죠. 요즘도 
+    42.85s  agent 발화 끝
+    51.36s  agent 발화 끝
+    51.44s  user  발화 시작: 네, 그래도 주말에는 꼭 암벽 등반을 하려고 노력해요. 강아지 모치도 같이 데려가고 싶어요.
+    57.66s  <ret> 발화 (turn11 첫 프레임)
+    57.92s  user  발화 끝
+    57.97s  agent 발화 시작: <ret> 모치와 함께 등반을 가고 싶으시군요. 모치도 분명 좋아할 거예요. 혹시 모치가 유제품을 못 먹는다
+    57.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: [2026-04-22] User has a Corgi named Mochi.
+    61.33s  user  발화 시작: 네.
+    62.15s  user  발화 끝
+    66.50s  agent 발화 끝
+    66.62s  user  발화 시작: 아, 맞아요. 모치는 유제품 알레르기가 있어요.
+    69.25s  <ret> 발화 (turn14 첫 프레임)
+    69.64s  agent 발화 시작: <ret> 네, 유제품 알레르기가 있으시죠. 외출 시에는 항상 주의하셔야 할 것 같아요.
+    69.65s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.98s]: [2026-02-15] User is lactose-intolerant.
+    69.81s  user  발화 끝
+    75.62s  agent 발화 끝

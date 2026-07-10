@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "하훈",
+#     "name": "지슬",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,75 +12,78 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "50s",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-01-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
-#     },
-#     {
-#       "date": "2025-10-13",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-08-08",
+#       "date": "2026-05-27",
 #       "category": "work",
 #       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2025-07-05",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-12-16",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2025-06-24",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-11-12",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-11-01",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-08-09",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-29",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-12",
+#       "date": "2025-11-03",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-27",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-20",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 제로 제로 일 세션이… | S2 …토큰을 얼마나 사용했는지 알 수 있을까요? | S3 음, 그게 좀 높네요. 토큰 사용량을 줄일 수 있는 방법이 있 | S4 아니요, 괜찮아요. 다른 걸 물어볼게요. 이번 주 토요일 날씨
 
-     0.00s  user  발화 시작: 혹시 제로 제로 일 세션이…
-     1.93s  user  발화 끝
-     3.59s  user  발화 시작: …토큰을 얼마나 사용했는지 알 수 있을까요?
-     5.63s  <ret> 발화 (turn2 첫 프레임)
-     5.86s  agent 발화 시작: <ret> 제로 제로 일 세션은 칠월 구일 기준으로 토큰의 삼십칠 점 팔퍼센트를 사용했습니다.
-     5.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: (tool result) Session 001 utilized 37.8% of allocated tokens as of Jul
-     6.03s  user  발화 끝
-     7.82s  user  발화 시작: 음.
-     8.31s  user  발화 끝
-    11.72s  user  발화 시작: 음, 그게 좀 높네요. 토큰 사용량을 줄일 수 있는 방법이 있을까요?
-    11.93s  agent 발화 끝
-    15.93s  agent 발화 시작: 토큰 사용량을 줄이는 방법은 여러 가지가 있답니다. 좀 더 자세히 알아볼까요?
-    16.07s  user  발화 끝
-    19.38s  user  발화 시작: 그렇죠.
-    19.83s  user  발화 끝
-    21.40s  agent 발화 끝
-    21.70s  user  발화 시작: 아니요, 괜찮아요. 다른 걸 물어볼게요. 이번 주 토요일 날씨가 어때요?
-    26.55s  user  발화 끝
-    26.75s  <ret> 발화 (turn8 첫 프레임)
-    26.91s  agent 발화 시작: <ret> 이번 주 토요일인 칠월 십일일은 이십팔 점 오도이고, 습도는 육십팔퍼센트, 남서풍이 십오킬로미터 
-    26.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) The weather on Saturday, July 11, 2026, will be 28.5°C, 
-    35.29s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 혹시 지난 세션 F3가 토큰을 얼마나 소모했는지 알려줄 수 있어?
+     5.24s  <ret> 발화 (turn1 첫 프레임)
+     5.47s  user  발화 끝
+     5.47s  agent 발화 시작: <ret> 세션 F3는 토큰을 천 사백칠십팔 개 소모했습니다. 혹시 다른 세션에 대해서도 알아볼까요?
+     5.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: (tool result) Session F3 consumed 1478 tokens.
+    12.61s  agent 발화 끝
+    14.14s  user  발화 시작: 어… 잠깐만. 천 개 넘게 썼다고? 좀 많이 쓴 거 같은데.
+    18.21s  user  발화 끝
+    18.24s  agent 발화 시작: 토큰 사용량이 예상보다 많으셨군요. 혹시 어떤 작업을 주로 하셨는지 여쭤봐도 될까요? 작업 내용에 따라 토큰
+    27.66s  agent 발화 끝

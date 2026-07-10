@@ -1,84 +1,77 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Biax, a encouraging and non-judgmental personal guide who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Rarion, a kind and steady supportive advisor who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Harry",
+    "name": "Isla",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
-    "gender": "male",
-    "age_range": "late 20s",
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-23",
-      "category": "home",
-      "text": "User's home address is 233 Pine Court."
-    },
-    {
-      "date": "2026-04-08",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
-    },
-    {
-      "date": "2026-03-13",
+      "date": "2026-02-23",
       "category": "work",
       "text": "User works as a graphic designer."
     },
     {
-      "date": "2026-02-19",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-01-26",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
-      "date": "2025-10-30",
+      "date": "2026-01-04",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-11-05",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-24",
+      "date": "2025-12-20",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-09-28",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to mark order one hundred twenty three thousand seven hundred eighty nine as delivered, transaction ID one billion one hundred twenty two million three hundred thirty four thousand four hundred fifty five, tracking number a a one two three four five six seven eight nine ⟨ret@17.07s⟩ zero.
-[ 17.45s][moshi] ⟦⚡SPAN@17.47s: (tool result) Shipment updated: Order 123789, Transaction 1122334455, Tracking aa1234567890, Status: Delivered⟧ Alright, I've marked order one hundred twenty three thousand seven hundred eighty nine as delivered, confirmation nine x seven zed two bee.
-      CALL: {"function": "create_shipment_tracking", "arguments": {"order_id": "123789", "transaction_id": "1122334455", "tracking_number": "aa1234567890", "status": "delivered"}}
-[ 24.96s][user ] Oh, that’s great. I was really worried about that one.
-[ 27.71s][moshi] It’s wonderful to hear, I’m glad I could help ease your mind a little. Little things like that can add up.
-[ 34.39s][user ] What’s the weather like in Seoul ⟨ret@36.35s⟩ today?
-[ 36.75s][moshi] ⟦⚡SPAN@36.75s: (tool result) Seoul: 26.5°C, humidity 68%, wind 4.1 km/h, clear skies.⟧ It’s currently twenty-six point five degrees Celsius in Seoul, with clear skies and a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 39.58s][user ] «backchannel» Mhm.
-[ 42.34s][moshi] It sounds like a lovely day for being outdoors, if you have the chance!
-[ 43.97s][user ] «backchannel» Uh-huh.
-[ 45.87s][user ] Do you remember what I said about my goals ⟨ret@48.26s⟩ yesterday?
-[ 48.66s][moshi] ⟦⚡SPAN@48.66s: [2026-07-09] I want to walk thirty minutes every day this week.⟧ Yesterday, you shared that you want to walk thirty minutes every day this week.
-[ 52.43s][moshi] That’s a fantastic goal, and a really sustainable one!
-[ 55.45s][user ] I’m feeling a bit overwhelmed with work.
-[ 57.87s][moshi] It’s completely okay to feel overwhelmed sometimes, it’s a very human experience. Remember to be kind to yourself.
-[ 62.03s][user ] «backchannel» Yeah.
-[ 64.13s][user ] Can you find me some relaxing ⟨ret@65.90s⟩ music?
-[ 66.21s][moshi] ⟦⚡SPAN@66.22s: (tool result) Relaxing Music: "Weightless" by Marconi Union, available on Spotify, Apple Music, YouTube Music.⟧ I found "Weightless" by Marconi Union, a popular choice for relaxation, on Spotify, Apple Music, and YouTube Music.
-      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "relaxing"}}
-[ 70.16s][user ] «backchannel» Yeah.
-[ 73.33s][user ] Play it on Spotify.
-[ 75.56s][moshi] I’m sorry, I can only look up music at this time. I cannot directly control music playback on Spotify.
-[ 77.78s][user ] «backchannel» Mhm.
-[ 82.00s][user ] Oh, okay. That’s good to know. Thanks, Biax.
-[ 84.83s][moshi] You’re very welcome! Remember, taking small steps towards your well-being is always a victory.
+[  0.00s][user ] I need to find a hotel in Seoul for next week, something ⟨ret@3.85s⟩ near Myeongdong.
+[  4.23s][moshi] ⟦⚡SPAN@4.25s: (tool result) {"hotel name": "L7 Myeongdong", "address": "76 Namdaemun-ro 2-ga, Jung-gu, Seoul", "price": "180⟧ I’ve found L7 Myeongdong, it's at 76 Namdaemun-ro 2-ga, and rooms are available for 180000 Korean won.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Seoul", "date": "next week", "proximity": "Myeongdong"}}
+[  7.69s][user ] «backchannel» Right.
+[ 12.71s][user ] That sounds good. Can…
+[ 16.14s][user ] …you book it for ⟨ret@17.47s⟩ me?
+[ 17.55s][moshi] ⟦⚡SPAN@17.55s: (tool result) {"confirmation id": "XM829Z"}⟧ Your reservation at L7 Myeongdong is confirmed, your ID is XM829Z. I hope you have a wonderful time!
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "L7 Myeongdong", "location": "Seoul", "date": "next week"}}

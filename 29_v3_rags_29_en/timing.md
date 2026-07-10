@@ -4,72 +4,63 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Charlotte",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "nationality": "Australian",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-08",
+#       "date": "2026-03-11",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-05-06",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-03-06",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-11-24",
+#       "date": "2026-02-24",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-09-06",
+#       "date": "2025-10-09",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-07-03",
 #       "category": "home",
-#       "text": "User's home address is 150 Elm Street."
+#       "text": "User's home address is 177 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-14",
+#       "date": "2025-11-03",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-10",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: How many rides does Six Flags California have?
-     3.42s  user  발화 끝
-     3.49s  <ret> 발화 (turn1 첫 프레임)
-     3.81s  agent 발화 시작: <ret> Well, it sounds like you're planning a fun day! Six Fl
-     3.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: Six Flags Magic Mountain currently features forty-three thrilling ride
-    12.57s  agent 발화 끝
+     0.00s  user  발화 시작: How many Yes Bank…
+     1.61s  user  발화 끝
+     3.19s  user  발화 시작: …branches are there in India?
+     4.68s  <ret> 발화 (turn2 첫 프레임)
+     4.95s  user  발화 끝
+     5.00s  agent 발화 시작: <ret> There are six hundred and thirty Yes Bank branches in 
+     5.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: Yes Bank currently has six hundred and thirty branches across India.
+    12.84s  agent 발화 끝

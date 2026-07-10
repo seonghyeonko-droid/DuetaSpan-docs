@@ -4,56 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Riley",
+#     "name": "Avery",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "German",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "date": "2026-06-18",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-11-18",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2026-05-31",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-14",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-08-29",
+#       "date": "2026-02-20",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2025-06-19",
+#       "date": "2025-09-09",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-28",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-25",
+#       "date": "2025-10-09",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -61,7 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-08",
+#       "date": "2025-07-31",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -72,9 +59,9 @@
 # }
 
 
-     0.00s  user  발화 시작: Do you remember what song played at the very end of The Sopr
-     3.06s  <ret> 발화 (turn1 첫 프레임)
-     3.29s  agent 발화 시작: <ret> It's a really evocative choice, isn't it? That song, "
-     3.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: Journey's 1981 rock ballad "Don't Stop Believin'" played over the fina
-     3.47s  user  발화 끝
-    10.19s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who played the young boy in Chitty Chitty Bang B
+     3.09s  <ret> 발화 (turn1 첫 프레임)
+     3.30s  agent 발화 시작: <ret> Well, that was Adrian Hall, a very talented young acto
+     3.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: Adrian Hall played the role of Jeremy Potts, the young boy, in the 196
+     3.38s  user  발화 끝
+     9.46s  agent 발화 끝
