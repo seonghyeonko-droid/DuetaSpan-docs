@@ -4,98 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Charlie",
+#     "name": "Thomas",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-17",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-06-01",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-10-27",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-02",
+#       "date": "2026-05-06",
 #       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "text": "User is planning a trip to Vietnam in December."
 #     },
 #     {
-#       "date": "2025-07-22",
+#       "date": "2025-09-29",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-16",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-06-18",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-28",
+#       "date": "2026-04-03",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2026-03-25",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Koraus… that's a really unusual na | S2 Um… finding a good coffee shop. So | S3 I don't know… cozy, I guess? Not t | S4 I’ve thought about it… but I get r
+# EXAMINER(FDB-v2) 단계: S1 Oh, hi Nuna. That’s… a nice name.  | S2 He just… won’t listen. Tantrums al | S3 That’s… interesting. She’s tried r | S4 [sigh] That sounds… hard to fit in
 
-     0.00s  agent 발화 시작: Hello Charlie, welcome.
-     2.26s  agent 발화 끝
-     2.40s  user  발화 시작: Koraus… that's a really unusual name. Is it, like, a Korean 
-    11.00s  agent 발화 시작: It is, actually. Koraus is a name with roots in Korea, meani
-    11.06s  user  발화 끝
-    18.47s  user  발화 시작: Uh-huh.
-    19.11s  user  발화 끝
-    21.89s  agent 발화 끝
-    22.64s  user  발화 시작: Yeah, but honestly, it’s kind of overwhelming. I don’t even 
-    29.92s  agent 발화 시작: That feeling is perfectly normal, Charlie. It’s like standin
-    30.01s  user  발화 끝
-    35.77s  user  발화 시작: Yeah, yeah.
-    36.77s  user  발화 끝
-    39.21s  user  발화 시작: Um… finding a good coffee shop. Somewhere I can just… be, an
-    39.66s  agent 발화 끝
-    48.25s  user  발화 끝
-    48.31s  agent 발화 시작: A quiet haven is so important. A place to gather your though
-    58.47s  agent 발화 끝
-    59.37s  user  발화 시작: I don't know… cozy, I guess? Not too modern. Not too… trendy
-    67.47s  user  발화 끝
-    67.50s  agent 발화 시작: Cozy is a wonderful feeling to seek out. Sometimes, the most
-    73.57s  user  발화 시작: Right.
-    74.06s  user  발화 끝
-    76.66s  agent 발화 시작: It sounds like you’re craving a sense of familiarity amidst 
-    76.87s  agent 발화 끝
-    86.30s  agent 발화 끝
-    87.74s  user  발화 시작: It's more than just coffee, though. I'm starting to feel rea
-    93.63s  agent 발화 시작: Loneliness is a very valid feeling when navigating a new cit
-    93.77s  user  발화 끝
-   105.27s  agent 발화 끝
-   105.48s  user  발화 시작: I’ve thought about it… but I get really anxious about meetin
-   111.91s  user  발화 끝
-   112.10s  agent 발화 시작: That anxiety is understandable. It’s okay to take small step
-   124.53s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Thomas, it’s lovely to meet you. I’m Nuna, and I’m her
+     6.36s  user  발화 시작: Okay.
+     7.18s  user  발화 끝
+     8.51s  user  발화 시작: Oh, hi Nuna. That’s… a nice name. I’m just feeling really ov
+     8.57s  agent 발화 끝
+    15.13s  agent 발화 시작: It's completely understandable to feel overwhelmed, Thomas. 
+    15.23s  user  발화 끝
+    27.23s  agent 발화 끝
+    27.90s  user  발화 시작: Well, it's my little sister, actually. She’s having a really
+    33.66s  agent 발화 시작: That sounds difficult. It's common for toddlers to test boun
+    33.69s  user  발화 끝
+    38.56s  user  발화 시작: Uh-huh.
+    39.11s  user  발화 끝
+    43.34s  user  발화 시작: He just… won’t listen. Tantrums all the time, refusing to ea
+    43.77s  agent 발화 끝
+    51.64s  user  발화 끝
+    51.66s  agent 발화 시작: It’s so hard when a child is consistently refusing to cooper
+    55.82s  user  발화 시작: Mhm.
+    56.45s  user  발화 끝
+    62.82s  agent 발화 시작: Sometimes, simply acknowledging Leo’s feelings can make a di
+    62.88s  agent 발화 끝
+    76.92s  agent 발화 끝
+    77.01s  user  발화 시작: That’s… interesting. She’s tried rewards, time-outs, everyth
+    83.18s  agent 발화 시작: It sounds like she’s putting in a lot of effort, and it’s ad
+    83.21s  user  발화 끝
+    91.68s  user  발화 시작: Yeah, totally.
+    92.97s  user  발화 끝
+    94.78s  agent 발화 끝
+    95.93s  user  발화 시작: Connecting? What does that even mean, practically?
+    99.44s  user  발화 끝
+    99.56s  agent 발화 시작: It means setting aside dedicated, uninterrupted time—even ju
+   111.80s  agent 발화 끝
+   111.99s  user  발화 시작: [sigh] That sounds… hard to fit in. I’ll suggest it though. 
+   119.40s  user  발화 끝

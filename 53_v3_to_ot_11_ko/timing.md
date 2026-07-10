@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "우찬",
+#     "name": "은경",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,75 +12,76 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 30s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-12",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-11-11",
+#       "date": "2026-02-16",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "text": "User is planning a trip to Lisbon in March."
 #     },
 #     {
-#       "date": "2025-08-21",
+#       "date": "2025-11-25",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-06-19",
+#       "date": "2025-06-23",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#     },
+#     {
+#       "date": "2025-06-22",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-07",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-10-29",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-04",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 호간의 영웅들에서 슐츠 상사를 연기한 사람이 누구였지? | S2 맞아요, 옛날 드라마는 다 그런 것 같아요. | S3 …존 배너는 다른 드라마에도 출연했었나? | S4 …관련 영화를 많이 하셨나 보네.
+# EXAMINER(FDB-v2) 단계: S1 정신건강연구소가 언제 세워졌는지 궁금해. | S2 음, 그 연구소가 그렇게 오래됐구나. | S3 아, 잠깐만, 그 연구소가…— | S4 …그 연구소가 지금도 계속 운영 중이야?
 
-     0.00s  user  발화 시작: 호간의 영웅들에서 슐츠 상사를 연기한 사람이 누구였지?
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.33s  user  발화 끝
-     3.52s  agent 발화 시작: <ret> 호간의 영웅들에서 슐츠 상사 역할을 맡은 건 존 배너였어요. 그분은 정말 인상적인 연기를 보여주셨
-     3.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: John Banner played the role of Sergeant Hans Wilhelm Schultz in the te
-    10.90s  user  발화 시작: 음, 그 드라마가 언제 처음 시작했는지 기억나?
-    10.93s  agent 발화 끝
-    13.39s  <ret> 발화 (turn3 첫 프레임)
-    13.70s  agent 발화 시작: <ret> 호간의 영웅들은 천구백육십오년 구월 십칠일에 처음 방영돼서 천구백칠십일년 삼월 이십팔일에 끝났어요
-    13.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Hogan's Heroes originally aired from September 17, 1965, to March 28, 
-    13.96s  user  발화 끝
-    23.44s  user  발화 시작: 맞아요, 옛날 드라마는 다 그런 것 같아요.
-    23.53s  agent 발화 끝
-    25.96s  agent 발화 시작: 그 드라마가 워낙 인기가 많아서…
-    26.03s  user  발화 끝
-    28.18s  agent 발화 끝
-    28.36s  user  발화 시작: …존 배너는 다른 드라마에도 출연했었나?
-    30.75s  <ret> 발화 (turn7 첫 프레임)
-    31.07s  agent 발화 시작: <ret> 존 배너는 여러 작품에 출연했는데, 특히 전쟁 영화에서 자주 볼 수 있었어요.
-    31.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: John Banner also appeared in films such as The Great Escape and The Lo
-    31.27s  user  발화 끝
-    36.44s  agent 발화 끝
-    36.54s  agent 발화 시작: 존 배너는 대탈출과 최장일과 같은 영화에도 출연했어요. 다양한 역할을 소화하셨죠.
-    39.49s  user  발화 시작: 그래.
-    39.98s  user  발화 끝
-    41.68s  agent 발화 끝
-    42.45s  user  발화 시작: 오, 그럼 그분은 주로 전쟁…
-    44.62s  user  발화 끝
-    46.50s  user  발화 시작: …관련 영화를 많이 하셨나 보네.
-    48.24s  user  발화 끝
-    48.34s  agent 발화 시작: 네, 전쟁 영화뿐만 아니라 코미디 영화에도 출연하셨어요. 다재다능한 배우셨죠.
-    53.44s  agent 발화 끝
+     0.00s  user  발화 시작: 정신건강연구소가 언제 세워졌는지 궁금해.
+     2.95s  user  발화 끝
+     2.98s  <ret> 발화 (turn1 첫 프레임)
+     3.22s  agent 발화 시작: <ret> 정신건강연구소는 처음으로 천구백사십구년 사월 십오일에 설립되었답니다. 마음의 건강에 관심을 가져주
+     3.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.91s]: The National Institute of Mental Health was first established on April
+    12.09s  user  발화 시작: 음, 그 연구소가 그렇게 오래됐구나.
+    12.12s  agent 발화 끝
+    14.15s  agent 발화 시작: 네, 오랜 역사를 가지고 있어요.
+    14.22s  user  발화 끝
+    16.30s  user  발화 시작: 아, 잠깐만, 그 연구소가…—
+    16.36s  agent 발화 끝
+    18.33s  user  발화 시작: …그 연구소가 지금도 계속 운영 중이야?
+    18.41s  user  발화 끝
+    20.44s  <ret> 발화 (turn6 첫 프레임)
+    20.73s  user  발화 끝
+    20.76s  agent 발화 시작: <ret> 정신건강연구소는 현재도 선도적인 연구 기관으로 계속 운영되고 있습니다. 꾸준히 연구를 이어가고 있
+    20.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: The National Institute of Mental Health remains a leading research ins
+    25.40s  user  발화 시작: 음.
+    25.75s  user  발화 끝
+    28.50s  agent 발화 끝

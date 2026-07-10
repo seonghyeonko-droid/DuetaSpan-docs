@@ -4,90 +4,76 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Dylan",
+#     "name": "Liam",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Canadian",
 #     "gender": "male",
-#     "age_range": "50s",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2026-02-16",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-01-13",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "home",
-#       "text": "User's home address is 36 Elm Street."
-#     },
-#     {
-#       "date": "2025-11-11",
+#       "date": "2025-11-25",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-09-08",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-06-23",
+#       "category": "home",
+#       "text": "User's home address is 657 Maple Drive."
+#     },
+#     {
+#       "date": "2025-06-22",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-06-21",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-20",
-#       "title": "Researching a used car",
+#       "date": "2025-07-14",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, do you remember who played Se | S2 Before? Like, what kind of roles? | S3 …did he ever work with Clint Eastw | S4 That makes sense. Thanks for all t
+# EXAMINER(FDB-v2) 단계: S1 Do you know when the National Inst | S2 Oh, that’s interesting. What was h | S3 …was it connected to the veterans  | S4 So, it was a response to that need
 
-     0.00s  user  발화 시작: Hey, do you remember who played Sergeant Schultz on Hogan's 
-     3.28s  <ret> 발화 (turn1 첫 프레임)
-     3.67s  agent 발화 시작: <ret> Oh, that’s a great question! John Banner played Sergea
-     3.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: John Banner played the role of Sergeant Hans Wilhelm Schultz on the te
-     3.75s  user  발화 끝
-    11.51s  user  발화 시작: Yeah, he really was. Um, what else did he do?
-    11.64s  agent 발화 끝
-    14.55s  user  발화 끝
-    14.64s  agent 발화 시작: Well, John Banner had a pretty extensive career before and a
-    19.97s  agent 발화 끝
-    20.09s  user  발화 시작: Before? Like, what kind of roles?
-    22.43s  <ret> 발화 (turn5 첫 프레임)
-    22.67s  agent 발화 시작: <ret> Before Hogan’s Heroes, he appeared in films like The S
-    22.67s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.01s]: Prior to Hogan's Heroes, John Banner appeared in films such as The Ste
-    22.82s  user  발화 끝
-    27.03s  user  발화 시작: …did he ever work with Clint Eastwood?
-    27.68s  agent 발화 끝
-    28.68s  <ret> 발화 (turn7 첫 프레임)
-    28.76s  agent 발화 시작: <ret> Actually, yes, he did! Both John Banner and Clint East
-    28.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.80s]: John Banner and Clint Eastwood both appeared in the 1962 film "The War
-    28.92s  user  발화 끝
-    32.76s  user  발화 시작: Mm-hmm.
-    33.16s  user  발화 끝
-    41.56s  agent 발화 끝
-    42.14s  user  발화 시작: Wow, small world! So, was he German in real life?
-    46.21s  <ret> 발화 (turn10 첫 프레임)
-    46.52s  agent 발화 시작: <ret> He was born in Vienna, Austria, and was actually of Au
-    46.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: John Banner was born in Vienna, Austria, and was of Austrian-Jewish de
-    46.68s  user  발화 끝
-    55.19s  user  발화 시작: That makes sense. Thanks for all the info, Laen!
-    55.70s  agent 발화 끝
-    58.10s  user  발화 끝
-    58.33s  agent 발화 시작: You're very welcome! I’m happy I could help you explore some
-    63.71s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know when the National Institute of Mental Health was
+     2.99s  <ret> 발화 (turn1 첫 프레임)
+     3.38s  agent 발화 시작: <ret> It’s understandable to wonder about origins, isn’t it?
+     3.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: The National Institute of Mental Health was first established on April
+     3.51s  user  발화 끝
+    12.79s  user  발화 시작: Oh, that’s interesting. What was happening in the world then
+    12.88s  agent 발화 끝
+    15.65s  user  발화 끝
+    15.71s  agent 발화 시작: That was a time of significant change—
+    18.05s  user  발화 시작: …was it connected to the veterans returning from the war?
+    18.80s  agent 발화 끝
+    20.76s  <ret> 발화 (turn5 첫 프레임)
+    20.99s  agent 발화 시작: <ret> Following World War Two, there was a growing awareness
+    21.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: Following World War II, there was increased recognition of the need fo
+    21.10s  user  발화 끝
+    31.00s  agent 발화 끝
+    31.63s  user  발화 시작: So, it was a response to that need, then?
+    34.54s  user  발화 끝
+    34.58s  agent 발화 시작: In part, yes. Difficult experiences often highlight areas ne
+    43.02s  agent 발화 끝

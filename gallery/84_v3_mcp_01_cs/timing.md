@@ -4,109 +4,135 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "Freya",
+#     "name": "Alice",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Australian",
 #     "gender": "female",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-11",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-06-17",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-05-07",
+#       "date": "2026-03-04",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-01-26",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-10-16",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-02-21",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2025-11-13",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-10-29",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-06-19",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-03",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-19",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 런던에 괜찮은 박물관 좀 찾아 주실 수 있을까요? | S2 아, 그렇군요. 그런데 지금 런던 날씨는 어떤가요? | S3 189파운드는 괜찮은 것 같아요. 그걸로 예약해 주시겠어요? | S4 보카 디 루포가 괜찮은 것 같네요. 조금 비싸지만 괜찮아요. 
+# EXAMINER(FDB-v2) 단계: S1 알았어, CustomCrawler 버전 2.5로 사용자 에이전 | S2 부산이 괜찮을 것 같아. 좋은 호텔 있어? | S3 캡슐 호텔은…미니멀리스트 같아. | S4 좋아, 알았어. 다음 금요일 서울에서 부산 가는 버스표 좀 찾
 
-     0.00s  user  발화 시작: 안녕하세요. 런던에 괜찮은 박물관 좀 찾아 주실 수 있을까요?
-     3.60s  <ret> 발화 (turn1 첫 프레임)
-     3.76s  agent 발화 시작: <ret> 음, 런던에는 좋은 박물관이 엄청 많아. 브리티시 뮤지엄은 리뷰가 470만 개고, 내셔널 갤러리는
-     3.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: (tool result) The British Museum — 4.5 stars, 4.7m reviews; National G
-     3.98s  user  발화 끝
-    12.47s  agent 발화 끝
-    12.48s  user  발화 시작: 흠, 내셔널 갤러리가 흥미로운 것 같은데, 입장료는 무료인가요?
-    16.33s  <ret> 발화 (turn3 첫 프레임)
-    16.64s  agent 발화 시작: <ret> 좋은 선택이야! 내셔널 갤러리 입장료는 무료인데, 특별 전시 같은 건 따로 돈을 받을 수도 있어.
-    16.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: Admission to the National Gallery is free, except for special exhibiti
-    16.83s  user  발화 끝
-    21.43s  user  발화 시작: 네네.
-    21.92s  user  발화 끝
-    22.94s  user  발화 시작: 아, 그렇군요. 그런데 지금 런던 날씨는 어떤가요?
-    23.08s  agent 발화 끝
-    26.01s  <ret> 발화 (turn6 첫 프레임)
-    26.07s  agent 발화 시작: <ret> 지금 런던은 18도이고, 습도는 65%, 바람은 시속 11.2킬로미터야.
-    26.09s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.89s]: (tool result) 18.0°C, humidity 65%, wind 11.2 km/h
-    26.18s  user  발화 끝
-    29.09s  user  발화 시작: 정말요?
-    29.91s  user  발화 끝
-    31.95s  agent 발화 끝
-    32.03s  user  발화 시작: 기분이 좋네요! 사실 오늘 밤에 그 근처에 호텔을 예약해야 해요.
-    35.99s  <ret> 발화 (turn9 첫 프레임)
-    36.31s  agent 발화 시작: <ret> 몇 군데 찾아봤어! 레지던트 코벤트 가든은 1박에 189파운드이고, 평점은 4.7이야.
-    36.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) The Resident Covent Garden — £189/night, 4.7 stars; The 
-    36.52s  user  발화 끝
-    42.94s  agent 발화 끝
-    43.95s  user  발화 시작: 189파운드는 괜찮은 것 같아요. 그걸로 예약해 주시겠어요?
-    47.88s  <ret> 발화 (turn11 첫 프레임)
-    48.03s  agent 발화 시작: <ret> 레지던트 코벤트 가든 예약 완료됐어, 확인 코드는 GH729KL이야.
-    48.04s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.46s]: (tool result) Booking confirmed for The Resident Covent Garden, check-
-    48.11s  user  발화 끝
-    51.79s  user  발화 시작: 정말요?
-    52.52s  user  발화 끝
-    53.35s  user  발화 시작: 정말 훌륭하네요! 그럼 근처에 괜찮은 이탈리아 식당 좀 찾아 주시겠어요?
-    53.49s  agent 발화 끝
-    58.42s  <ret> 발화 (turn14 첫 프레임)
-    58.53s  user  발화 끝
-    58.65s  agent 발화 시작: <ret> 근처에 좋은 이탈리아 식당이 꽤 있어! 리나 스토어 소호는 평점이 4.6이고, 가격은 20파운드에
-    58.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) Lina Stores Soho — 4.6 stars, £20-£30; Padella — 4.5 sta
-    64.06s  user  발화 시작: 와.
-    64.70s  user  발화 끝
-    66.82s  user  발화 시작: 보카 디 루포가 괜찮은 것 같네요. 조금 비싸지만 괜찮아요. 정말 도와주셔서 감사합니다!
-    66.86s  agent 발화 끝
-    72.28s  user  발화 끝
-    72.31s  agent 발화 시작: 천만에! 보카 디 루포도 좋은 선택이야. 런던 여행과 저녁 시간 즐겁게 보내고, 여행하면서 자기 자신에게도 
-    80.80s  agent 발화 끝
+     0.00s  user  발화 시작: 알았어, CustomCrawler 버전 2.5로 사용자 에이전트 설정해 줘.
+     3.94s  <ret> 발화 (turn1 첫 프레임)
+     4.09s  agent 발화 시작: <ret> 네, 요청하신 대로 사용자 에이전트를 CustomCrawler 버전 2.5로 설정했습니다.
+     4.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) {"user-agent": "CustomCrawler version 2.5"}
+     4.26s  user  발화 끝
+     6.51s  user  발화 시작: 어어.
+     6.96s  user  발화 끝
+     9.18s  agent 발화 끝
+     9.68s  user  발화 시작: 음, 서울 날씨는 지금 어때?
+    11.42s  <ret> 발화 (turn4 첫 프레임)
+    11.66s  user  발화 끝
+    11.73s  agent 발화 시작: <ret> 서울 날씨는 현재 섭씨 23.0도이고, 습도는 74퍼센트, 풍속은 시속 5.5킬로미터입니다.
+    11.74s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.13s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    14.93s  user  발화 시작: 응.
+    15.33s  user  발화 끝
+    18.86s  agent 발화 끝
+    18.87s  user  발화 시작: 기분 좋은데. 짧게 여행이나 갈까 싶어.
+    21.45s  user  발화 끝
+    21.72s  agent 발화 시작: 여행은 정말 좋죠! 혹시 가고 싶은 곳이 있으세요, 아니면 추천해 드릴까요? 편안하게 여행 계획을 세울 수 
+    30.06s  agent 발화 끝
+    30.13s  user  발화 시작: 부산이 괜찮을 것 같아. 좋은 호텔 있어?
+    32.63s  <ret> 발화 (turn9 첫 프레임)
+    32.94s  agent 발화 시작: <ret> 부산에는 호텔 LCT 더 프라임이 1박에 15만 원이고, 파라다이스 호텔 부산은 22만 원, 파크
+    32.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: (tool result) Hotel LCT The Prime — ₩150,000/night; Paradise Hotel Bus
+    33.13s  user  발화 끝
+    42.16s  agent 발화 끝
+    43.64s  user  발화 시작: 와, 파크 하얏트는…비싸네. 좀 더 저렴한 곳은 없을까?
+    47.91s  agent 발화 시작: 예산을 고려하시는 건 정말 현명하세요. 검색 범위를 좁혀볼게요. 좀 더 저렴한 옵션을 위해 생각하시는 가격대
+    48.09s  user  발화 끝
+    51.56s  user  발화 시작: 응.
+    51.92s  user  발화 끝
+    56.86s  agent 발화 끝
+    56.89s  user  발화 시작: 음, 10만 원 이하로.
+    57.94s  <ret> 발화 (turn14 첫 프레임)
+    58.34s  agent 발화 시작: <ret> 호텔 마토는 1박에 8만 5천 원이고, 부산역 캡슐 호텔은 6만 원입니다. 혹시 이 두 곳 중에 
+    58.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: (tool result) Hotel Mato — ₩85,000/night; Busan Station Capsule Hotel 
+    58.36s  user  발화 끝
+    66.91s  user  발화 시작: 캡슐 호텔은…미니멀리스트 같아.
+    66.91s  agent 발화 끝
+    69.22s  <ret> 발화 (turn16 첫 프레임)
+    69.45s  agent 발화 시작: <ret> 좀 더 편안함을 원하시는 마음은 이해가 갑니다. 호텔 마토는 무료 와이파이와 아침 식사를 제공해서
+    69.59s  user  발화 끝
+    70.18s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.93s]: Hotel Mato offers free Wi-Fi and breakfast.
+    80.35s  agent 발화 끝
+    80.98s  user  발화 시작: 그게 더 나은 것 같아. 부산에서 할 만한 거 있어?
+    83.43s  <ret> 발화 (turn18 첫 프레임)
+    83.67s  agent 발화 시작: <ret> 부산에는 해운대 해수욕장, 감천문화마을, 자갈치시장, 태종대공원 등 즐길 거리가 많습니다.
+    83.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Haeundae Beach, Gamcheon Culture Village, Jagalchi Fish 
+    83.89s  user  발화 끝
+    89.81s  user  발화 시작: 감천문화마을…재미있을 것 같아. 뭘로 유명해?
+    90.34s  agent 발화 끝
+    93.19s  user  발화 끝
+    93.45s  <ret> 발화 (turn20 첫 프레임)
+    93.60s  agent 발화 시작: <ret> 감천문화마을은 다채로운 색상의 집들과 독특한 예술 작품으로 유명해서 아주 그림 같은 곳입니다.
+    93.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: Gamcheon Culture Village is known for its colorful houses and art inst
+    95.63s  user  발화 시작: 그치.
+    96.09s  user  발화 끝
+   100.28s  agent 발화 끝
+   100.82s  user  발화 시작: 좋아, 알았어. 다음 금요일 서울에서 부산 가는 버스표 좀 찾아줘.
+   105.23s  <ret> 발화 (turn23 첫 프레임)
+   105.36s  agent 발화 시작: <ret> 오후 2시에 2만 5천 원짜리 버스, 오후 4시 30분에 2만 8천 원짜리 버스, 그리고 오후 7
+   105.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) 14:00 — ₩25,000; 16:30 — ₩28,000; 19:00 — ₩26,000
+   105.45s  user  발화 끝
+   113.81s  user  발화 시작: 오후 2시 버스로 할게.
+   113.89s  agent 발화 끝
+   115.04s  <ret> 발화 (turn25 첫 프레임)
+   115.28s  agent 발화 시작: <ret> 알겠습니다. 다음 금요일 오후 2시 서울에서 부산 가는 버스표 예매가 완료되었습니다. 확인 코드는
+   115.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: (tool result) Confirmation ID: BX749Z
+   115.56s  user  발화 끝
+   124.74s  agent 발화 끝
+   125.31s  user  발화 시작: 완벽해. 고마워, 텔린.
+   127.25s  agent 발화 시작: 천만에요! 여행 계획을 세우는 데 도움이 되어 기쁩니다. 편안하게 짐을 꾸리고 부산을 즐기세요.
+   127.43s  user  발화 끝
+   133.97s  agent 발화 끝

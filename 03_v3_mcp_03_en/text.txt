@@ -1,10 +1,10 @@
 v3_mcp_03_en src=mcp style=v1
-SYSTEM: <system> You are Oraeia, a grounded and empathetic supportive advisor who helps people with family and relationships. <system>
+SYSTEM: <system> You are Lari, a upbeat and supportive supportive advisor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_03",
-    "name": "Caleb",
+    "name": "Taylor",
     "location": {
       "city": "San Francisco",
       "country": "United States",
@@ -12,73 +12,83 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "USD ($)"
     },
     "nationality": "American",
-    "gender": "male",
-    "age_range": "50s",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2025-11-17",
+      "date": "2026-06-04",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-05-11",
       "category": "trip",
-      "text": "User is planning a trip to Iceland in March."
+      "text": "User is planning a trip to Iceland in October."
     },
     {
-      "date": "2025-10-30",
-      "category": "home",
-      "text": "User's home address is 565 Birch Road."
+      "date": "2026-05-10",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     },
     {
-      "date": "2025-09-28",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-06-25",
+      "date": "2026-03-16",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to peanuts."
     },
     {
-      "date": "2025-06-02",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2026-01-26",
+      "category": "home",
+      "text": "User's home address is 743 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-12",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2026-05-18",
+      "date": "2025-08-16",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-03-08",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Are there any coffee shops nearby in ⟨ret@2.34s⟩ Beijing?
-[  2.74s][moshi] ⟦⚡SPAN@2.74s: (tool result) Coffee Bean & Tea Leaf — 3.1 km, Starbucks — 1.5 km, Peet's Coffee — 2.8 km⟧ There are a few coffee shops close by. Coffee Bean is 3.1 kilometers away, Starbucks is 1.5, and Peet's is 2.8.
-      CALL: {"function": "map_search_places", "arguments": {"query": "coffee shops", "location": "Beijing"}}
-[  7.82s][user ] «backchannel» Mhm.
-[ 11.28s][user ] Hmm, how about something a little quieter?
-[ 14.30s][moshi] Sometimes, finding a peaceful space is exactly what you need. It's so important to prioritize moments of calm.
-[ 18.02s][user ] «backchannel» Yeah.
-[ 21.48s][user ] Can you find me directions to the ⟨ret@23.63s⟩ Starbucks?
-[ 24.01s][moshi] ⟦⚡SPAN@24.03s: (tool result) Walk 1.2 km, approx. 17 minutes. Turn left onto…⟧ To get to Starbucks, walk 1.2 kilometers, it will take about 17 minutes. Turn left onto…
-      CALL: {"function": "map_directions", "arguments": {"origin": "current location", "destination": "Starbucks", "mode": "walking"}}
+[  0.00s][user ] Find any file with report in its name within my documents ⟨ret@3.82s⟩ folder.
+[  4.20s][moshi] ⟦⚡SPAN@4.22s: (tool result) /Users/user/documents/monthly report.pdf, /Users/user/documents/sales report_2024.docx⟧ I found two files matching that description—a PDF and a Word document. Both seem to be reports from last year.
+      CALL: {"function": "search_files", "arguments": {"directory": "documents", "query": "report"}}
+[  6.34s][user ] «backchannel» Yeah.
+[ 11.72s][user ] Which one is the most recent?
+[ 13.45s][moshi] ⟨ret@13.38s⟩ ⟦⚡SPAN@13.46s: (tool result) Last modified: 2024-12-15 14:30:00⟧ The monthly report PDF was last updated on December fifteenth, 2024.
+      CALL: {"function": "get_file_info", "arguments": {"filepath": "/Users/user/documents/monthly_report.pdf"}}
+[ 14.90s][user ] «backchannel» Mm-hmm.
+[ 18.24s][moshi] «interrupted» Now let’s look at the sales report—
+[ 19.33s][user ] «interrupts_prev» … actually, can you just open the PDF for me?
+[ 23.07s][moshi] ⟨ret@22.93s⟩ ⟦⚡SPAN@23.09s: (tool result) File contents successfully read.⟧ The PDF is now open; I’ve passed the contents to your display.
+      CALL: {"function": "read_file", "arguments": {"filepath": "/Users/user/documents/monthly_report.pdf"}}
+[ 26.41s][user ] Thanks! That's great. Is there anything about project Phoenix in ⟨ret@29.66s⟩ it?
+[ 30.06s][moshi] ⟦⚡SPAN@30.06s: (tool result) Project Phoenix: Status - On Track, Budget - $120,000, Completion Date - August 15, 2026⟧ Yes, Project Phoenix is mentioned! It’s currently on track, with a budget of one hundred twenty thousand dollars. The expected completion date is August fifteenth, 2026.
+      CALL: {"function": "tavily-extract", "arguments": {"file_content": "/Users/user/documents/monthly_report.pdf", "query": "Project Phoenix"}}
+[ 32.96s][user ] «backchannel» Oh.
+[ 39.48s][user ] That's good to hear. Remind me to check on its progress ⟨ret@42.74s⟩ next week.
+[ 43.13s][moshi] ⟦⚡SPAN@43.14s: (tool result) Alarm set for July 27, 2026, 9:00 AM: Check progress of Project Phoenix.⟧ I've set an alarm for July twenty-seventh, 2026, at nine AM to check on Project Phoenix.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"alarm_time": "2026-07-27 09:00:00", "alarm_message": "Check progress of Project Phoenix"}}
+[ 48.43s][user ] Perfect. What's the weather like in Seoul right ⟨ret@51.25s⟩ now?
+[ 51.65s][moshi] ⟦⚡SPAN@51.65s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s currently twenty-three degrees Celsius in Seoul, with seventy-four percent humidity. There's a light breeze of five point five kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 60.00s][user ] Sounds pleasant. Do you have my doctor's number ⟨ret@62.80s⟩ saved?
+[ 63.18s][moshi] ⟦⚡SPAN@63.20s: [2024-03-10] Dr. Lee, 02-1234-5678⟧ I do! Let me retrieve that for you.
+[ 66.24s][moshi] Your doctor, Dr. Lee, can be reached at zero-two, one-two-three-four, five-six-seven-eight.
+[ 68.06s][user ] «backchannel» Yeah.
+[ 71.69s][user ] Thanks, that was helpful. I need to schedule a follow-up appointment.
+[ 75.48s][moshi] I can help with that. Which doctor would you like to schedule with?
+[ 79.46s][moshi] And what date are you thinking of?
+[ 80.46s][user ] «backchannel» Yeah, totally.
+[ 81.25s][user ] Dr. Lee, sometime next week. ⟨ret@83.39s⟩
+[ 83.62s][moshi] ⟦⚡SPAN@83.63s: (tool result) Dr. Lee is available July 29, 2026 at 10:00 AM and July 31, 2026 at 2:00 PM⟧ Dr. Lee has appointments available on July twenty-ninth at ten AM and July thirty-first at two PM.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"provider_name": "Dr. Lee", "service_type": "follow-up"}}
+[ 90.32s][user ] Let's go with the 29th at ⟨ret@92.58s⟩ 10.
+[ 92.98s][moshi] ⟦⚡SPAN@92.98s: (tool result) Appointment confirmed with Dr. Lee on July 29, 2026 at 10:00 AM. Confirmation ID: ABC123XYZ.⟧ Your appointment with Dr. Lee is confirmed for July twenty-ninth at ten AM. Your confirmation ID is ABC one-two-three XYZ.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider_name": "Dr. Lee", "appointment_date": "2026-07-29", "appointment_time": "10:00"}}

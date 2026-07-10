@@ -1,73 +1,75 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Thella, a gentle and reflective life coach who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Klaena, a curious and validating wellness coach who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Ivy",
+    "name": "Morgan",
     "location": {
-      "city": "Toronto",
-      "country": "Canada",
-      "timezone": "America/Toronto (EST, UTC-5)",
-      "currency": "CAD ($)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "late 30s",
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-24",
-      "category": "work",
-      "text": "User works as a high-school teacher."
+      "date": "2026-05-07",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-11-28",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
+      "date": "2026-02-26",
+      "category": "home",
+      "text": "User's home address is 223 Birch Road."
     },
     {
-      "date": "2025-11-17",
-      "category": "hobby",
-      "text": "User is into birdwatching."
+      "date": "2025-12-03",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in August."
     },
     {
       "date": "2025-09-16",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "category": "work",
+      "text": "User works as a graduate student."
     },
     {
-      "date": "2025-07-15",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-07-14",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-06-02",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-09",
-      "title": "Comparing gym memberships",
+      "date": "2026-01-24",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When does the Central…
-[  4.03s][user ] …Park Zoo close ⟨ret@5.76s⟩ today?
-[  6.15s][moshi] «interrupted» ⟦⚡SPAN@6.16s: (tool result) Central Park Zoo - Closes 5:30 PM, Open until 5:30 PM · Phone: (212) 360-3400⟧ The Central Park Zoo closes at five thirty this evening, and—
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJ-V98D9NkwYgR4Y5-pG0jV5c"}}
-[  9.44s][user ] «interrupts_prev» …Is it open right now?
-[ 11.24s][moshi] Yes, it is currently open. It remains open until five thirty PM.
-[ 12.85s][user ] «backchannel» Yeah.
-[ 15.68s][moshi] I find that knowing the hours allows for more peaceful planning, don’t you think?
-[ 17.64s][user ] «backchannel» Okay.
-[ 19.10s][user ] What’s the weather like there right now?
-[ 21.79s][moshi] ⟨ret@21.64s⟩ ⟦⚡SPAN@21.80s: (tool result) 24.4°C, humidity 65%, wind 8.0 km/h⟧ The weather at the zoo is twenty-four point four degrees Celsius, with sixty-five percent humidity— …and a gentle breeze of eight kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Central Park Zoo"}}
-[ 26.64s][user ] «backchannel» Yeah.
-[ 29.95s][user ] [sigh] Sounds lovely.
-[ 32.07s][moshi] It does, doesn’t it? A little sunshine can really lift the spirits.
+[  0.00s][user ] I need to update my email address to jane.smith at email dot com within the profile ⟨ret@6.13s⟩ frame.
+[  6.52s][moshi] ⟦⚡SPAN@6.53s: (tool result) Email updated to jane.smith@email.com.⟧ Okay, I’ve updated your email address within the profile frame to jane.smith@email.com.
+      CALL: {"function": "playwright_iframe_fill", "arguments": {"iframe_selector": "profile frame", "field_selector": "email", "value": "jane.smith at email dot com"}}
+[ 12.00s][user ] Um, actually, make that jane_smith88 at email dot ⟨ret@16.81s⟩ com.
+[ 17.04s][moshi] ⟦⚡SPAN@17.05s: (tool result) Email updated to jane smith88@email.com.⟧ No problem at all! I’ve updated your email again, now to jane_smith88@email.com. It’s good to be precise, you know?
+      CALL: {"function": "playwright_iframe_fill", "arguments": {"iframe_selector": "profile frame", "field_selector": "email", "value": "jane_smith88 at email dot com"}}
+[ 21.77s][user ] «backchannel» Yeah, yeah.
+[ 25.74s][user ] Thanks. What's the weather like in Seoul right now?
+[ 28.99s][moshi] ⟨ret@28.87s⟩ ⟦⚡SPAN@29.03s: (tool result) It is 28.0°C, humidity 68%, wind 7.2 km/h in Seoul.⟧ Well, it sounds lovely! It’s currently 28.0 degrees Celsius in Seoul, with humidity at 68% and a gentle breeze of 7.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 40.15s][user ] That sounds nice. I’m thinking of going for a walk.
+[ 44.54s][moshi] That's a wonderful idea!

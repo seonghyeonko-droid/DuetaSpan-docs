@@ -4,56 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_00",
-#     "name": "라빈",
+#     "name": "지민",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "male",
-#     "age_range": "early 20s",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-24",
+#       "date": "2026-06-28",
 #       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-02-06",
+#       "date": "2026-03-19",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-03-02",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-11",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2026-01-01",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2026-01-26",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-11-04",
+#       "date": "2025-12-01",
 #       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-12",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-12-10",
+#       "date": "2026-06-12",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -61,7 +58,15 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-29",
+#       "date": "2026-05-28",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-07",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -71,29 +76,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 마빈 게이의 What's Going On 틀어줘. | S2 음, 오늘 날씨 어때? | S3 오늘 저녁에 비 올까? | S4 아, 다행이다. 그럼, 내일 모레는?
+# EXAMINER(FDB-v2) 단계: S1 혹시 지금 BBC 뉴스 좀 보여줄 수 있을까요? 헤드리스 모드 | S2 네, 서울 날씨 알려주세요. | S3 흠, 비가 올 수도 있겠네요. 우산 챙겨야겠어요. | S4 네, 꾸준히 하는 게 제일 어렵죠. 그래도 노력해 볼게요.
 
-     0.00s  user  발화 시작: 마빈 게이의 What's Going On 틀어줘.
-     2.17s  <ret> 발화 (turn1 첫 프레임)
-     2.41s  agent 발화 시작: <ret> 마빈 게이의 What's Going On을 재생하고 있어요. 편안하게 감상하세요.
-     2.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Playing "What's Going On" by Marvin Gaye.
-     2.54s  user  발화 끝
-     4.01s  user  발화 시작: 그렇죠.
-     4.77s  user  발화 끝
-     7.17s  user  발화 시작: 음, 오늘 날씨 어때?
-     7.55s  agent 발화 끝
-     9.05s  <ret> 발화 (turn4 첫 프레임)
-     9.37s  agent 발화 시작: <ret> 지금 기온은 이십삼도이고 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
-     9.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     9.42s  user  발화 끝
-    16.68s  agent 발화 끝
-    17.26s  user  발화 시작: 오늘 저녁에 비 올까?
-    19.01s  agent 발화 시작: 오늘 저녁에는 비가 올 가능성이 낮아요. 맑은 하늘을 기대해도 좋을 것 같아요.
-    19.10s  user  발화 끝
-    23.91s  agent 발화 끝
-    24.16s  user  발화 시작: 아, 다행이다. 그럼, 내일 모레는?
-    26.62s  <ret> 발화 (turn8 첫 프레임)
-    26.70s  agent 발화 시작: <ret> 내일 모레는 기온이 이십오도로 조금 더 올라가고, 습도는 육십팔%, 바람은 시속 칠킬로미터로 예상
-    26.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) 25.0°C, humidity 68%, wind 7.0 km/h
-    26.98s  user  발화 끝
-    34.11s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 지금 BBC 뉴스 좀 보여줄 수 있을까요? 헤드리스 모드로, GPU는 끄고.
+     6.09s  <ret> 발화 (turn1 첫 프레임)
+     6.33s  agent 발화 시작: <ret> 네, BBC 뉴스 보여드릴게요. 지금 헤드리스 모드로 접속했고, GPU도 껐습니다. 페이지는 일 
+     6.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: (tool result) Navigation successful. Page loaded in 1.2 seconds.
+     6.49s  user  발화 끝
+    14.63s  agent 발화 끝
+    15.30s  user  발화 시작: 오, 빠르네요. 그럼 지금 날씨는 어때요?
+    18.63s  user  발화 끝
+    18.78s  agent 발화 시작: 날씨요? 지금 계신 곳의 날씨를 알려드릴까요?
+    21.87s  agent 발화 끝
+    22.73s  user  발화 시작: 네, 서울 날씨 알려주세요.
+    24.99s  <ret> 발화 (turn5 첫 프레임)
+    25.07s  agent 발화 시작: <ret> 서울 날씨는 현재 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있습니다.
+    25.07s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.13s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    25.32s  user  발화 끝
+    28.21s  user  발화 시작: 네.
+    28.80s  user  발화 끝
+    32.20s  agent 발화 끝
+    32.72s  user  발화 시작: 아, 맞다. 다음 주 금요일에 중요한 약속이 있는데, 그때 날씨는 어떨까요?
+    37.67s  <ret> 발화 (turn8 첫 프레임)
+    37.90s  user  발화 끝
+    38.07s  agent 발화 시작: <ret> 다음 주 금요일 말씀이시죠? 날짜를 확인해 볼게요.
+    38.07s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.32s]: (tool result) It is Friday, July 10, 2026 at 2:36 PM in Asia/Seoul rig
+    41.29s  <ret> 발화 (turn9 첫 프레임)
+    41.39s  agent 발화 끝
+    41.45s  agent 발화 시작: <ret> 다음 주 금요일 서울 날씨는 이십육 점 오도로 예상되며, 비가 올 확률은 삼십%, 바람은 시속 칠
+    41.45s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.60s]: (tool result) 26.5°C, chance of rain 30%, wind 7.2 km/h
+    45.00s  user  발화 시작: 정말요?
+    45.82s  user  발화 끝
+    49.06s  agent 발화 끝
+    49.37s  user  발화 시작: 흠, 비가 올 수도 있겠네요. 우산 챙겨야겠어요.
+    52.53s  agent 발화 시작: 네, 혹시 대비해서 우산을 챙기시는 게 좋겠어요.
+    52.60s  user  발화 끝
+    53.21s  user  발화 시작: 그렇죠.
+    53.84s  user  발화 끝
+    54.98s  agent 발화 끝
+    55.00s  user  발화 시작: 고마워요. 아, 그리고 제가 지난달에 다이어트 결심을 했었는데, 혹시 건강한 식단 추천해 줄 수 있을까요?
+    62.46s  agent 발화 시작: 다이어트 결심, 정말 멋지네요! 건강한 식단을 찾으시는군요. 식단 관리는 꾸준함이 중요하답니다.
+    62.70s  user  발화 끝
+    67.75s  user  발화 시작: 네네.
+    68.57s  user  발화 끝
+    69.77s  agent 발화 끝
+    70.20s  user  발화 시작: 네, 꾸준히 하는 게 제일 어렵죠. 그래도 노력해 볼게요.
+    73.49s  agent 발화 시작: 맞아요. 작은 변화부터 시작해서 꾸준히 실천하는 게 중요해요. 스스로에게 너무 부담을 주지 마시고요.
+    73.67s  user  발화 끝
+    80.30s  agent 발화 끝

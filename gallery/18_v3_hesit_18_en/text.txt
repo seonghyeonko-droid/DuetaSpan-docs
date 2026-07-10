@@ -1,111 +1,77 @@
 v3_hesit_18_en src=nq style=v1
-SYSTEM: <system> You are Fri, a warm and attentive life coach who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Keli, a calm and patient life coach who helps people with parenting and family time. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_hesit_18",
-    "name": "Nina",
+    "name": "Paul",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "French"
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-21",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
-    },
-    {
-      "date": "2026-03-23",
-      "category": "allergy",
-      "text": "User is allergic to cat dander."
-    },
-    {
-      "date": "2026-03-12",
-      "category": "hobby",
-      "text": "User is into marathon training."
-    },
-    {
-      "date": "2026-01-09",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-10-20",
+      "date": "2025-12-13",
       "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
+      "text": "User is planning a trip to Lisbon in October."
     },
     {
-      "date": "2025-06-27",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2025-10-06",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-09-07",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
+    },
+    {
+      "date": "2025-06-11",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-05",
+      "date": "2026-06-15",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-01",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-09-24",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-03-25",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-27",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey Fri, do you know who rode American Pharoah in the Kentucky ⟨ret@3.60s⟩ Derby?
-[  3.84s][moshi] ⟦⚡SPAN@3.84s: Victor Espinoza rode American Pharoah to victory in the 2015 Kentucky Derby, completing the race in 2:03.02.⟧ Well, it was Victor Espinoza who guided American Pharoah to win the 2015 Kentucky Derby, finishing in two minutes and three seconds. That was quite a race!
-[ 11.30s][user ] «backchannel» Mm-hmm.
-[ 14.29s][user ] Hmm, two minutes and three seconds… that’s fast.
-[ 17.57s][moshi] It truly is! Seeing a horse and rider connect like that is inspiring, isn’t it? It’s a beautiful partnership.
-[ 20.66s][user ] «backchannel» Yeah.
-[ 24.82s][user ] Do you think it’s harder for the horse or the jockey?
-[ 27.30s][moshi] That's a thoughtful question! Both face incredible physical demands, but the jockey also needs to make split-second decisions.
-[ 30.63s][user ] «backchannel» Okay.
-[ 35.56s][user ] What other big races did American Pharoah ⟨ret@38.17s⟩ win?
-[ 38.32s][moshi] ⟦⚡SPAN@38.41s: American Pharoah won the Triple Crown in 2015, including the Preakness Stakes and the Belmont Stakes.⟧ American Pharoah went on to win the Triple Crown in 2015, taking both the Preakness Stakes and the Belmont Stakes as well.
-[ 42.44s][user ] «backchannel» Yeah.
-[ 45.33s][user ] Did he ever lose a ⟨ret@46.91s⟩ race?
-[ 47.28s][moshi] ⟦⚡SPAN@47.30s: American Pharoah had a record of eight wins and one loss in his nine-race career.⟧ Actually, American Pharoah did lose one race during his nine-race career—a pretty remarkable record overall.
-[ 50.32s][user ] «backchannel» Mhm.
-[ 55.72s][user ] I wonder who trained ⟨ret@56.82s⟩ him?
-[ 57.05s][moshi] ⟦⚡SPAN@57.06s: Bob Baffert trained American Pharoah, and he is a well-known and highly successful thoroughbred horse trainer.⟧ American Pharoah was trained by Bob Baffert, a very successful name in thoroughbred horse racing.
-[ 62.92s][user ] Was Bob Baffert also the trainer for ⟨ret@65.76s⟩ Justify?
-[ 66.07s][moshi] ⟦⚡SPAN@66.08s: Bob Baffert trained Justify, who won the Triple Crown in 2018, becoming the second Triple Crown winner for Baf⟧ Yes, Bob Baffert also trained Justify, who won the Triple Crown in 2018—making him the second Triple Crown winner for Baffert.
-[ 74.36s][user ] That’s amazing! He must be a really good trainer.
-[ 78.10s][moshi] «interrupted» He certainly is! It takes incredible skill and dedication—
-[ 82.04s][user ] «interrupts_prev» …did American Pharoah ever race outside of the ⟨ret@85.16s⟩ US?
-[ 85.55s][moshi] ⟦⚡SPAN@85.56s: (tool result) American Pharoah did not race internationally; all of his races took place in the United States.⟧ Actually, American Pharoah’s racing career was entirely within the United States, all nine races were held here.
-      CALL: {"function": "search", "arguments": {"query": "American Pharoah international races"}}
-[ 88.47s][user ] «backchannel» Yeah.
-[ 93.88s][user ] Oh, okay. So he stayed pretty local.
-[ 96.40s][moshi] It seems he did! Sometimes focusing on what’s closest to home leads to the greatest achievements. It’s a nice reminder.
-[104.32s][user ] What happened to American Pharoah after he retired?
-[107.48s][moshi] ⟨ret@107.42s⟩ ⟦⚡SPAN@107.50s: After retiring, American Pharoah began his breeding career at Coolmore Stud in Kentucky in 2016.⟧ After retirement, American Pharoah began a breeding career at Coolmore Stud in Kentucky in 2016. He’s passing on his legacy!
-[113.66s][user ] «backchannel» Oh.
-[116.25s][user ] That’s nice. It’s good to know he’s still contributing.
-[119.92s][moshi] It truly is. Continuing a passion, even in a new way, is a wonderful thing. It’s a great example for all of us.
+[  0.00s][user ] Uh, who won the Australian Open men’s ⟨ret@2.30s⟩ final?
+[  2.52s][moshi] «interrupted» ⟦⚡SPAN@2.54s: Roger Federer won the Australian Open men’s singles title in 2017, defeating Rafael Nadal.⟧ It was a thrilling match, and Roger Federer ultimately claimed the title—
+[  6.47s][user ] «interrupts_prev» …did Nadal win it any other years?
+[  8.82s][moshi] Rafael Nadal has won the Australian Open twice, in 2009 and 2022.
+[ 15.06s][user ] Welll… that’s good to know. What about ⟨ret@17.97s⟩ Djokovic?
+[ 18.21s][moshi] ⟦⚡SPAN@18.21s: Novak Djokovic has won the Australian Open a record ten times, as of January 2024.⟧ Novak Djokovic holds the record with ten Australian Open titles, a truly remarkable achievement.
+[ 24.09s][user ] Hmm, that’s a lot. Is Federer still playing?
+[ 27.23s][moshi] Sadly, Roger Federer has retired from professional tennis; he played his last match in 2022.

@@ -4,59 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "지호",
+#     "name": "노우",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-24",
+#       "date": "2026-05-24",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
+#       "text": "User is planning a trip to New Zealand in May."
 #     },
 #     {
-#       "date": "2025-11-11",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2026-03-28",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-06-23",
+#       "date": "2026-03-12",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-06-17",
+#       "date": "2025-10-23",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-07-05",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-30",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-06-14",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-04-17",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-04",
+#       "date": "2026-05-15",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -67,9 +64,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 피트비트 아리아 이는 언제 나왔어?
-     2.33s  <ret> 발화 (turn1 첫 프레임)
-     2.45s  user  발화 끝
-     2.48s  agent 발화 시작: <ret> 피트비트 아리아 이는 이천십칠년 말에 출시되었답니다. 요즘 건강 관리에 관심이 많으시군요?
-     2.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: The Fitbit Aria 2 was released in late 2017.
-     8.96s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시, 두꺼운 이더넷이라고 불리는 표준이 정확히 뭔지 알 수 있을까요?
+     4.99s  <ret> 발화 (turn1 첫 프레임)
+     5.14s  agent 발화 시작: <ret> 원래 이더넷 표준은 일 공 비 에이 에스 이 오라고 불렸는데, 두꺼운 동축 케이블 때문에 Thic
+     5.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.47s]: 10BASE5 is the original Ethernet standard, nicknamed Thicknet due to i
+     5.28s  user  발화 끝
+    12.60s  agent 발화 끝

@@ -4,59 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Hugo",
+#     "name": "Sophie",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-16",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-03-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
 #     },
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-01-28",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-11-20",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2026-01-02",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-05-30",
-#       "category": "home",
-#       "text": "User's home address is 737 Oak Avenue."
+#       "date": "2025-08-09",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-22",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-27",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-08",
+#       "date": "2025-06-22",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -67,13 +56,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Hugo, my name is Kaen. I’m here to offer support as yo
-     6.34s  user  발화 시작: I’m just feeling really lost, actually. Everything feels…unc
-     6.53s  agent 발화 끝
-    11.18s  agent 발화 시작: Uncertainty can be unsettling, Hugo. It’s completely natural
-    11.24s  user  발화 끝
-    19.04s  user  발화 시작: Welll… I just quit my job. It was awful, but now I’m worried
-    19.07s  agent 발화 끝
-    25.27s  agent 발화 시작: It takes courage to leave something that doesn’t serve you, 
-    25.48s  user  발화 끝
-    33.70s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Sophie, my name is Nia. I’m a counselor here to help y
+     2.41s  user  발화 시작: Yeah.
+     3.00s  user  발화 끝
+     6.85s  agent 발화 끝
+     7.24s  user  발화 시작: Oh, a counselor? That’s… unexpected. I just needed a quick t
+    13.41s  agent 발화 시작: It is currently 2:33 PM in Seoul, Sophie. Perhaps we could t
+    13.59s  user  발화 끝
+    19.17s  user  발화 시작: Seoul? That’s a bit random, isn’t it? I’m in San Francisco.
+    19.29s  agent 발화 끝
+    23.71s  user  발화 끝
+    23.90s  agent 발화 시작: It is 2:33 PM in Los Angeles, Sophie. Sometimes a small dist
+    31.59s  agent 발화 끝

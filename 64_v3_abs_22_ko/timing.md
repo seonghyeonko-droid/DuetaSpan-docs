@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "연현",
+#     "name": "정재",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,53 +12,35 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-09",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2026-04-07",
+#       "category": "work",
+#       "text": "User works as a nurse."
 #     },
 #     {
-#       "date": "2026-04-14",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-11-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-11-21",
+#       "date": "2026-01-12",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-10-24",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-09",
+#       "date": "2025-10-05",
 #       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#       "text": "User's home address is 서울 종로구 세종대로 175."
+#     },
+#     {
+#       "date": "2025-06-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-06-10",
+#       "date": "2025-11-03",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -68,20 +50,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 아오누마 게임 후속작은 어떤 콘솔로 나왔을까요? | S2 …개발자분들의 작품은 찾아보실 수 있나요? | S3 미야모토 시게루 님의 작품을 찾아주세요. | S4 아, 슈퍼 마리오 육십사군요. 그 게임 정말 재미있게 했었어요
 
-     0.00s  user  발화 시작: 한나라 초기 궁궐 유적은 어디에서 발견됐을까요?
-     2.60s  <ret> 발화 (turn1 첫 프레임)
-     2.91s  agent 발화 시작: <ret> 아쉽게도, 그 부분에 대한 기록은 아직 찾을 수 없었어요.
-     2.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.08s]: (no information found)
-     3.14s  user  발화 끝
-     4.84s  user  발화 시작: 응.
-     5.24s  user  발화 끝
-     6.99s  agent 발화 끝
-     7.09s  user  발화 시작: 음… 그렇군요. 혹시 잠들기 전에 긴장을 푸는 데 도움이 되는 음악 추천해 주실 수 있나요?
-    12.89s  <ret> 발화 (turn4 첫 프레임)
-    13.21s  agent 발화 시작: <ret> 편안하게 잠들 수 있도록 클래식이나 자연의 소리 같은 음악이 도움이 될 수 있어요.
-    13.21s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.50s]: (tool result) Classical, ambient, and nature sounds are often recommen
-    13.34s  user  발화 끝
-    18.70s  agent 발화 시작: 혹시 특별히 선호하는 스타일이 있으신가요?
-    18.71s  agent 발화 끝
-    21.28s  agent 발화 끝
+     0.00s  user  발화 시작: 아오누마 게임 후속작은 어떤 콘솔로 나왔을까요?
+     3.39s  agent 발화 시작: 아오누마님의 게임 후속작이 어떤 콘솔로 출시되었는지—
+     3.56s  user  발화 끝
+     7.65s  agent 발화 끝
+     7.86s  user  발화 시작: … 혹시 다른 게임…
+     9.28s  user  발화 끝
+    10.83s  user  발화 시작: …개발자분들의 작품은 찾아보실 수 있나요?
+    13.41s  user  발화 끝
+    13.52s  agent 발화 시작: 네, 다른 개발자분들의 작품도 찾아볼 수 있습니다. 어떤 분의 작품을 알아봐 드릴까요?
+    18.93s  agent 발화 끝
+    19.31s  user  발화 시작: 미야모토 시게루 님의 작품을 찾아주세요.
+    21.61s  <ret> 발화 (turn6 첫 프레임)
+    21.76s  agent 발화 시작: <ret> 미야모토 시게루 님은 천구백구십육년에 닌텐도 육십사용 삼D 플랫폼 게임인 슈퍼 마리오 육십사를 개
+    21.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) Super Mario 64 was a landmark 3D platformer directed by 
+    21.90s  user  발화 끝
+    25.50s  user  발화 시작: 진짜요?
+    26.14s  user  발화 끝
+    29.75s  user  발화 시작: 아, 슈퍼 마리오 육십사군요. 그 게임 정말 재미있게 했었어요.
+    30.20s  agent 발화 끝
+    33.06s  agent 발화 시작: 정말 즐거운 게임이었죠. 그때 즐거웠던 추억이 있으셨다니 저도 기쁩니다.
+    33.26s  user  발화 끝
+    38.16s  agent 발화 끝

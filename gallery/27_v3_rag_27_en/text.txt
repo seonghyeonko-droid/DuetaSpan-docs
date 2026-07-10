@@ -1,87 +1,96 @@
 v3_rag_27_en src=hotpotqa style=v1
-SYSTEM: <system> You are Kien, a curious and validating personal guide who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Naera, a grounded and empathetic supportive advisor who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Charlie",
+    "name": "Noah",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
+    "nationality": "American",
+    "gender": "male",
     "age_range": "late 30s",
-    "language": "German"
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-28",
-      "category": "work",
-      "text": "User works as a marketing manager."
-    },
-    {
-      "date": "2026-05-04",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2026-01-21",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in March."
-    },
-    {
-      "date": "2025-10-26",
+      "date": "2026-04-27",
       "category": "cuisine",
       "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-10-03",
-      "category": "home",
-      "text": "User's home address is 395 Maple Drive."
+      "date": "2026-03-08",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-16",
+      "date": "2026-01-17",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-09-21",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-26",
-      "title": "Setting up a home network",
+      "date": "2026-04-06",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm trying to remember something about Barbara Jordan.
-[  2.55s][moshi] It’s wonderful you’re thinking about remarkable people. What specifically about Barbara Jordan interests you?
-[  6.16s][user ] «backchannel» Okay.
-[  8.93s][user ] Was she connected to Mark Knowles ⟨ret@10.91s⟩ somehow?
-[ 11.30s][moshi] ⟦⚡SPAN@11.31s: Barbara Jordan was a lawyer, civil rights leader, and politician, while Mark Knowles is a former professional ⟧ They lived very different lives—Barbara Jordan was a lawyer and politician, and Mark Knowles was a tennis player. Quite a contrast, isn’t it?
-[ 20.46s][user ] What did Barbara Jordan do as a lawyer?
-[ 22.55s][moshi] «interrupted» ⟨ret@22.48s⟩ ⟦⚡SPAN@22.55s: Barbara Jordan served as a lawyer before entering politics, focusing on civil rights cases and advocating for ⟧ Before politics, Barbara Jordan worked as a lawyer, dedicating herself to civil rights and equal opportunity—
-[ 29.38s][user ] «interrupts_prev» …did she ever play tennis?
-[ 30.91s][moshi] ⟨ret@30.83s⟩ ⟦⚡SPAN@30.91s: There is no public record of Barbara Jordan playing tennis, though she was known to enjoy various recreational⟧ There's no record of her playing tennis, though she enjoyed other activities.
-[ 33.38s][user ] «backchannel» Nice.
-[ 36.62s][user ] Okay, that makes sense. What was she known for ⟨ret@39.57s⟩ politically?
-[ 39.89s][moshi] ⟦⚡SPAN@39.89s: Barbara Jordan was the first African American woman elected to the Texas State Senate, and later to the U.S. H⟧ Barbara Jordan broke barriers, becoming the first African American woman elected to the Texas State Senate, and then Congress.
-[ 43.02s][user ] «backchannel» Yeah.
-[ 47.90s][user ] Where did she go to law school?
-[ 49.44s][moshi] ⟨ret@49.29s⟩ ⟦⚡SPAN@49.45s: Barbara Jordan earned her Juris Doctor degree from Boston College Law School in 1959.⟧ She earned her law degree from Boston College Law School in nineteen fifty-nine. It's inspiring to see where her journey began.
-[ 57.99s][user ] What year was she ⟨ret@59.15s⟩ born?
-[ 59.31s][moshi] ⟦⚡SPAN@59.31s: Barbara Jordan was born on February 26, 1936, in Houston, Texas.⟧ Barbara Jordan was born on February twenty-sixth, nineteen thirty-six, in Houston, Texas.
-[ 65.42s][user ] And Mark Knowles… when did *he* retire from ⟨ret@68.27s⟩ tennis?
-[ 68.51s][moshi] ⟦⚡SPAN@68.51s: Mark Knowles retired from professional tennis in 2010 after a successful doubles career spanning over two deca⟧ Mark Knowles retired from professional tennis in two thousand and ten after a long career. It's a big change to leave a sport you love.
-[ 74.07s][user ] «backchannel» Yeah.
-[ 77.02s][user ] What kind of tennis did ⟨ret@78.50s⟩ he play?
-[ 78.90s][moshi] ⟦⚡SPAN@78.90s: Mark Knowles was a professional tennis player specializing in doubles, achieving a career-high ranking of numb⟧ Mark Knowles excelled in doubles tennis, even reaching the world’s number one ranking. That's a remarkable accomplishment.
-[ 87.19s][user ] What country is he from?
-[ 88.62s][moshi] ⟨ret@88.54s⟩ ⟦⚡SPAN@88.62s: Mark Knowles is Bahamian, representing the Bahamas throughout his professional tennis career.⟧ Mark Knowles is from the Bahamas, and proudly represented his country. It’s always interesting to learn where people come from.
+[  0.00s][user ] I’m trying to find out about the early governors of Maryland.
+[  3.35s][moshi] I can help with that. Maryland has a rich history!
+[  4.84s][user ] «backchannel» Okay.
+[  6.96s][user ] Specifically, who was the fifth governor? And when was ⟨ret@10.25s⟩ he born?
+[ 10.65s][moshi] ⟦⚡SPAN@10.65s: Leonard Calvert was the fifth governor of the Province of Maryland, born in 1606.⟧ Leonard Calvert was the fifth governor of the Province of Maryland, born in sixteen oh six.
+[ 13.70s][user ] «backchannel» Okay.
+[ 16.77s][user ] That's interesting. What was Maryland like back then?
+[ 19.91s][moshi] It was a new colony, full of promise and challenges for those early settlers.
+[ 22.84s][user ] «backchannel» Yeah.
+[ 26.05s][user ] What was the original purpose of establishing Maryland?
+[ 29.02s][moshi] ⟨ret@28.78s⟩ ⟦⚡SPAN@29.02s: Maryland was founded in 1632 as a haven for English Catholics.⟧ Maryland was founded in sixteen thirty-two as a haven for English Catholics.
+[ 30.52s][user ] «backchannel» Mm-hmm.
+[ 33.64s][user ] So it was a religious freedom project, essentially?
+[ 36.36s][moshi] Yes, it was intended to be a place where people could practice their faith freely.
+[ 40.70s][user ] And how long did that colony exist as it was originally ⟨ret@44.20s⟩ founded?
+[ 44.43s][moshi] ⟦⚡SPAN@44.44s: The Province of Maryland existed from 1632 until 1776, when it joined the United States.⟧ The Province of Maryland existed from sixteen thirty-two until seventeen seventy-six, when it joined the United States.
+[ 52.81s][user ] That’s a long time. What about the first governor?
+[ 56.01s][moshi] The first governor was also Leonard Calvert, his father.
+[ 58.49s][user ] «backchannel» Yeah.
+[ 59.77s][user ] Oh, interesting. So it was a family affair. What was Leonard Calvert Senior doing before Maryland?
+[ 65.25s][moshi] ⟨ret@65.17s⟩ ⟦⚡SPAN@65.25s: Leonard Calvert, the first governor, was Secretary of State to George Calvert, 1st Baron Baltimore.⟧ Leonard Calvert, the first governor, was Secretary of State to George Calvert, the first Baron Baltimore.
+[ 68.57s][user ] «backchannel» Yeah.
+[ 72.14s][moshi] «interrupted» He played a key role in securing the charter for the colony—
+[ 74.88s][user ] «interrupts_prev» …did the fifth governor, Leonard Calvert, have any children?
+[ 78.09s][moshi] ⟨ret@77.93s⟩ ⟦⚡SPAN@78.09s: (tool result) Leonard Calvert married Anne Wolseley and had several children, including William Calvert.⟧ Leonard Calvert married Anne Wolseley and had several children, including William Calvert.
+      CALL: {"function": "search", "arguments": {"query": "Leonard Calvert (fifth governor of Maryland) children"}}
+[ 83.77s][user ] So he continued the family line. Did William become a governor too?
+[ 88.04s][moshi] No, William Calvert became a politician and served as a member of the Maryland Assembly.
+[ 89.80s][user ] «backchannel» Mhm.
+[ 93.76s][user ] That’s still a good legacy. What was the economy like in Maryland at that time?
+[ 98.17s][moshi] It heavily relied on tobacco cultivation, which shaped the colony’s society.
+[101.72s][user ] «backchannel» Yeah.
+[103.43s][user ] Tobacco, huh? Sounds like a tough business.
+[106.08s][moshi] It was demanding work, but it provided a vital source of income for many.
+[108.56s][user ] «backchannel» Yeah.
+[110.90s][user ] Did they have any other major industries back then?
+[113.48s][moshi] They also engaged in fishing and some limited fur trading, but tobacco was dominant.
+[115.78s][user ] «backchannel» Uh-huh.
+[119.42s][user ] It seems like a very different world.
+[121.34s][moshi] It truly was, a time of immense change and hardship for those early colonists.
+[123.75s][user ] «backchannel» Right.
+[127.19s][user ] I guess it is hard to imagine. Thanks for the information, Naera.
+[130.82s][moshi] You're very welcome. I'm glad I could share a little of Maryland's history with you.

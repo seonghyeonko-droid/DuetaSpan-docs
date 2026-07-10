@@ -4,69 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_02",
-#     "name": "다경",
+#     "name": "수경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-07",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
-#     },
-#     {
-#       "date": "2025-12-30",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-11-13",
-#       "category": "home",
-#       "text": "User's home address is 대구 중구 동인동 88-1."
-#     },
-#     {
-#       "date": "2025-08-25",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-07-19",
+#       "date": "2026-05-31",
 #       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-07-07",
+#       "date": "2026-01-05",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in October."
+#     },
+#     {
+#       "date": "2025-10-22",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-10-14",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-11",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-06-24",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-19",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-17",
+#       "date": "2025-07-18",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -76,16 +58,39 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 어, 오늘 밤에 공포 영화 볼까 하는데, 시카고 뮤직 박스 극 | S2 고마워. 아, 근데 혹시 내일 날씨 어때? | S3 꽤 덥겠네. 그럼 알람 맞춰놔 줘. 내일 아침 일곱시에. | S4 아, 맞다. 그 메모 있었지. 잊고 있었네.
 
-     0.00s  user  발화 시작: 음… 프로젝트랑 웹사이트 관련된 폴더를 하나씩 만들어 줄 수 있어?
-     4.04s  <ret> 발화 (turn1 첫 프레임)
-     4.44s  agent 발화 시작: <ret> 프로젝트 폴더를 만들었어요. 이제 웹사이트 폴더도 만들어 드릴까요?
-     4.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) Directory "projects" created successfully.
-     4.53s  user  발화 끝
-     8.44s  user  발화 시작: 응, 그 웹사이트 폴더는 프로젝트 폴더 안에 넣어줘.
-     8.56s  agent 발화 끝
-    11.55s  <ret> 발화 (turn3 첫 프레임)
-    11.95s  agent 발화 시작: <ret> 프로젝트 폴더 안에 새로운 웹사이트 폴더를 만들었습니다.
-    11.95s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.38s]: (tool result) Directory "projects/new website" created successfully.
-    12.00s  user  발화 끝
-    15.33s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 오늘 밤에 공포 영화 볼까 하는데, 시카고 뮤직 박스 극장에서 상영하는 거 있는지 찾아봐 줄래?
+     5.10s  <ret> 발화 (turn1 첫 프레임)
+     5.50s  agent 발화 시작: <ret> 시카고 뮤직 박스 극장에서는 지금 '유전'과 '겟 아웃' 두 편의 공포 영화를 상영하고 있습니다.
+     5.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) Title — domain: snippet
+     5.70s  user  발화 끝
+    11.90s  user  발화 시작: 오, '유전' 괜찮아 보이네. 그럼 그거 티켓 예매해 줘. 오늘 밤 여덟시 타임으로 두 장.
+    11.98s  agent 발화 끝
+    17.32s  <ret> 발화 (turn3 첫 프레임)
+    17.72s  agent 발화 시작: <ret> 네, '유전' 오늘 밤 여덟시 타임으로 두 장 예매 완료되었습니다. 확인 번호는 칠 사 구 이 팔
+    17.72s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.23s]: (tool result) Confirmation ID: 74928a
+    17.83s  user  발화 끝
+    20.34s  user  발화 시작: 그래.
+    20.84s  user  발화 끝
+    24.95s  agent 발화 끝
+    25.20s  user  발화 시작: 고마워. 아, 근데 혹시 내일 날씨 어때?
+    27.66s  <ret> 발화 (turn6 첫 프레임)
+    27.82s  agent 발화 시작: <ret> 내일 시카고 날씨는 최고 기온이 이십오 점 오도이고, 습도는 육십팔%, 바람은 시속 칠 점 이킬로
+    27.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) 25.5°C, humidity 68%, wind 7.2 km/h
+    27.97s  user  발화 끝
+    36.39s  agent 발화 끝
+    37.50s  user  발화 시작: 꽤 덥겠네. 그럼 알람 맞춰놔 줘. 내일 아침 일곱시에.
+    40.94s  <ret> 발화 (turn8 첫 프레임)
+    41.02s  agent 발화 시작: <ret> 네, 내일 아침 일곱시에 알람을 설정했습니다.
+    41.02s  ⚡SPAN 주입 [d'=1.92s / d_lead=2.96s]: (tool result) Alarm set for 7:00 AM
+    41.25s  user  발화 끝
+    43.98s  agent 발화 끝
+    44.38s  user  발화 시작: 알람 맞춰줘서 고마워. 음… 혹시 지난번에 내가 뭐라고 메모해 둔 거 있어?
+    49.09s  <ret> 발화 (turn10 첫 프레임)
+    49.33s  agent 발화 시작: <ret> 네, 이천이십사년 칠월 십오일에 “내일 아침 일곱시에 알람 맞춰줘”라고 메모해 두셨습니다.
+    49.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: [2024-07-15] 내일 아침 7시에 알람 맞춰줘.
+    49.47s  user  발화 끝
+    55.82s  agent 발화 끝
+    56.55s  user  발화 시작: 아, 맞다. 그 메모 있었지. 잊고 있었네.
+    59.46s  user  발화 끝

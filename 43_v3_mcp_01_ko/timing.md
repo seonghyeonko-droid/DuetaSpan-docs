@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_01",
-#     "name": "현희",
+#     "name": "우재",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,99 +12,97 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "male",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
+#       "date": "2026-06-17",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-03-29",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2026-01-26",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-07-18",
+#       "date": "2026-04-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2026-02-21",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-11-13",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-10-29",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-07-11",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-20",
-#       "title": "Researching a used car",
+#       "date": "2026-03-19",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 런던에 있는 박물관 좀 찾아줘. | S2 음, 대중교통으로 가는 게 더 좋을 것 같아. | S3 그럼 내일 오후 두시에 빅토리아 앤 앨버트 박물관 근처 레스토 | S4 [happy] 아, 좋네. 공부하러 가기 딱 좋겠다.
+# EXAMINER(FDB-v2) 단계: S1 혹시 브라우저 사용자 에이전트를 변경할 수 있어? Custom | S2 링크 좀 찾아줘. | S3 오, 훨씬 깔끔하네. 고마워. 근데 있잖아, 내일 날씨 어때? | S4 으… 더워. 여행 계획 세우는 거 도와줄 수 있어? 시원한 데
 
-     0.00s  user  발화 시작: 런던에 있는 박물관 좀 찾아줘.
-     1.99s  <ret> 발화 (turn1 첫 프레임)
-     2.23s  agent 발화 시작: <ret> 런던에는 브리티시 박물관, 내셔널 갤러리, 빅토리아 앤 앨버트 박물관이 유명하답니다. 평점도 아주
-     2.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.52s]: (tool result) British Museum — 4.5 stars, 1.2M reviews; National Galle
-     2.31s  user  발화 끝
-    10.75s  agent 발화 끝
-    12.07s  user  발화 시작: 빅토리아 앤 앨버트 박물관까지 가는 길…
-    15.35s  user  발화 끝
-    17.05s  user  발화 시작: …좀 알려줘. 지금 내 위치 기준으로.
-    18.96s  <ret> 발화 (turn4 첫 프레임)
-    19.19s  agent 발화 시작: <ret> 지금 계신 곳에서 빅토리아 앤 앨버트 박물관까지는 이 점 사킬로미터 정도이고, 보통 오분에서 십분
-    19.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: (tool result) 1.5 miles, 5-10 minutes depending on traffic. Take A40 W
-    19.40s  user  발화 끝
-    24.85s  user  발화 시작: 맞아.
-    25.61s  user  발화 끝
-    30.90s  user  발화 시작: 음, 대중교통으로 가는 게 더 좋을 것 같아.
-    30.97s  agent 발화 끝
-    33.12s  <ret> 발화 (turn7 첫 프레임)
-    33.35s  agent 발화 시작: <ret> 대중교통으로는 피카딜리 라인을 타고 사우스 켄싱턴 역에서 내리셔서 오분 정도 걸어가시면 된대요. 
-    33.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.22s]: (tool result) Take the Piccadilly line to South Kensington station. Wa
-    33.48s  user  발화 끝
-    38.08s  user  발화 시작: 어.
-    38.72s  user  발화 끝
-    42.57s  agent 발화 끝
-    42.96s  user  발화 시작: 이십분? 생각보다 오래 걸리네.
-    45.27s  user  발화 끝
-    45.38s  agent 발화 시작: 네, 조금 시간이 걸리네요. 그래도 가는 길에 런던의 풍경을 즐길 수 있을 거예요.
-    48.22s  user  발화 시작: 응.
-    48.62s  user  발화 끝
-    50.74s  agent 발화 끝
-    51.42s  user  발화 시작: 그럼 내일 오후 두시에 빅토리아 앤 앨버트 박물관 근처 레스토랑 예약 좀 해줘. 두 명.
-    56.84s  <ret> 발화 (turn13 첫 프레임)
-    56.91s  agent 발화 시작: <ret> 내일 오후 두시에 빅토리아 앤 앨버트 박물관 근처의 'The Exhibition Road Bras
-    56.92s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.53s]: (tool result) Reservation confirmed at The Exhibition Road Brasserie f
-    56.93s  user  발화 끝
-    67.44s  agent 발화 끝
-    67.55s  user  발화 시작: 확인 번호 다시 한 번만 말해줘.
-    69.46s  agent 발화 시작: 확인 번호는 팔 칠 엑스 이 제트입니다.
-    69.57s  user  발화 끝
-    72.69s  agent 발화 끝
-    73.32s  user  발화 시작: 좋아. 그럼 오늘 날씨 어때?
-    75.43s  <ret> 발화 (turn17 첫 프레임)
-    75.58s  agent 발화 시작: <ret> 오늘 날씨는 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고, 부분적으
-    75.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h. Partly cloudy.
-    75.71s  user  발화 끝
-    80.96s  user  발화 시작: 진짜?
-    81.78s  user  발화 끝
-    83.67s  user  발화 시작: [happy] 아, 좋네. 공부하러 가기 딱 좋겠다.
-    83.69s  agent 발화 끝
-    86.05s  agent 발화 시작: 네, 공부하기에 아주 좋은 날씨네요. 긍정적인 마음으로 즐거운 시간 보내세요!
-    86.06s  user  발화 끝
-    90.64s  user  발화 시작: 고마워, 리오나.
-    90.77s  agent 발화 끝
-    92.10s  agent 발화 시작: 천만에요.
-    92.30s  user  발화 끝
-    93.24s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 브라우저 사용자 에이전트를 변경할 수 있어? CustomCrawler 버전 이 점 오로 해줘.
+     5.25s  <ret> 발화 (turn1 첫 프레임)
+     5.45s  agent 발화 시작: <ret> 사용자 에이전트를 CustomCrawler 버전 이 점 오로 설정했습니다. 지금 확인해 보시면 변
+     5.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
+     5.51s  user  발화 끝
+    12.07s  agent 발화 끝
+    13.57s  user  발화 시작: 음… 근데 그게 제대로 됐는지 확인하려면 어떻게 해야 돼?
+    17.46s  user  발화 끝
+    17.54s  agent 발화 시작: 사용자 에이전트 확인 사이트에 접속해서 확인해 보시면 됩니다. 혹시 제가 링크를 찾아 드릴까요?
+    20.46s  user  발화 시작: 응.
+    20.95s  user  발화 끝
+    23.20s  agent 발화 끝
+    23.59s  user  발화 시작: 링크 좀 찾아줘.
+    24.74s  <ret> 발화 (turn6 첫 프레임)
+    24.97s  agent 발화 시작: <ret> 사용자 에이전트 확인 사이트가 검색됐습니다. whatismyuseragent.org에서 확인해 보
+    24.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) "사용자 에이전트 확인 사이트 - User-Agent String Detection — whatism
+    25.10s  user  발화 끝
+    28.23s  user  발화 시작: 응응.
+    28.87s  user  발화 끝
+    32.38s  agent 발화 끝
+    32.80s  user  발화 시작: 아, 링크는 고마운데… 그 사이트가 좀 복잡하네. 좀 더 간단한 데 없을까?
+    37.64s  <ret> 발화 (turn9 첫 프레임)
+    37.71s  agent 발화 시작: <ret> 좀 더 간단한 사용자 에이전트 확인 사이트를 찾았습니다. whatmyuseragent.com에서 
+    37.72s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.95s]: (tool result) "User Agent Detector — https://www.whatmyuseragent.com/"
+    37.76s  user  발화 끝
+    42.82s  user  발화 시작: 어.
+    43.45s  user  발화 끝
+    44.66s  agent 발화 끝
+    45.34s  user  발화 시작: 오, 훨씬 깔끔하네. 고마워. 근데 있잖아, 내일 날씨 어때?
+    50.34s  user  발화 끝
+    50.36s  agent 발화 시작: 내일 날씨를 알려드릴게요. 어느 지역의 날씨를 알고 싶으세요?
+    52.03s  user  발화 시작: 음.
+    52.52s  user  발화 끝
+    54.66s  agent 발화 끝
+    55.00s  user  발화 시작: 서울 날씨 알려줘.
+    56.25s  <ret> 발화 (turn15 첫 프레임)
+    56.64s  agent 발화 시작: <ret> 서울의 내일 날씨는 섭씨 이십팔도, 습도 칠십%, 풍속은 시속 삼킬로미터로 예상됩니다. 꽤 더울 
+    56.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: (tool result) "(tool result) 28.0°C, humidity 70%, wind 3.0 km/h"
+    56.65s  user  발화 끝
+    65.95s  user  발화 시작: 으… 더워. 여행 계획 세우는 거 도와줄 수 있어? 시원한 데로 가고 싶어.
+    66.00s  agent 발화 끝
+    71.36s  agent 발화 시작: 여행 계획은 제가 도와드릴 수 있습니다. 혹시 선호하는 여행 스타일이나 가고 싶은 곳이 있으신가요?
+    71.41s  user  발화 끝
+    77.33s  agent 발화 끝

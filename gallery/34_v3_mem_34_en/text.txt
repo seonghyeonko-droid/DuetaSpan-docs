@@ -1,10 +1,10 @@
 v3_mem_34_en src=mem style=mem
-SYSTEM: <system> You are Lunax, a warm and attentive counselor who helps people with health and daily habits. <system>
+SYSTEM: <system> You are Thiax, a grounded and empathetic supportive advisor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_34",
-    "name": "Zoe",
+    "name": "Owen",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,71 +12,71 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "female",
-    "age_range": "40s",
+    "gender": "male",
+    "age_range": "early 20s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-04-11",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-04-08",
+      "category": "work",
+      "text": "User works as a accountant."
     },
     {
-      "date": "2026-04-02",
+      "date": "2025-12-14",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-10-06",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-09-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-09-06",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
-    },
-    {
-      "date": "2026-04-01",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2026-01-07",
-      "category": "home",
-      "text": "User's home address is 388 Oak Avenue."
-    },
-    {
-      "date": "2025-12-05",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in August."
+      "text": "User is allergic to shellfish."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-27",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-08",
+      "title": "Setting up a home network",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-02-02",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-01-15",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Zoe, I’m Lunax. It’s lovely to connect with you today.
-[  3.57s][user ] Hi Lunax, good to meet you too. I need to get somewhere.
-[  7.43s][moshi] ⟨ret@7.36s⟩ ⟦⚡SPAN@7.44s: [2026-01-07] User's home address is 388 Oak Avenue.⟧ Your home address is 388 Oak Avenue, is that correct?
-[ 14.03s][user ] Yes, that’s right. I want to go to a café.
-[ 17.23s][moshi] Do you have a particular café in mind, Zoe?
-[ 18.65s][user ] «backchannel» Okay.
-[ 20.85s][user ] Not really, just somewhere not too ⟨ret@23.02s⟩ far.
-[ 23.42s][moshi] ⟦⚡SPAN@23.42s: (tool result) Restaurants found: Aroma Espresso Bar - 1.2km, Balzac's Coffee Roasters - 1.8km, Second Cup - 2.⟧ There are a few options nearby. Aroma Espresso Bar is just 1.2 kilometers away.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {}}
-[ 25.90s][user ] «backchannel» Mhm.
-[ 29.53s][user ] That sounds good, can you give ⟨ret@31.61s⟩ me directions?
-[ 32.00s][moshi] ⟦⚡SPAN@32.01s: (tool result) Driving: 5 min (1.5km); Walking: 15 min (1.2km); Transit: 8 min.⟧ Aroma Espresso Bar is 1.5 kilometers by car, about a 5-minute drive.
-      CALL: {"function": "map_directions", "arguments": {"origin": "388 Oak Avenue", "destination": "Aroma Espresso Bar"}}
-[ 37.32s][user ] Actually, I think I’ll walk.
-[ 39.71s][moshi] «interrupted» Walking will take approximately 15 minutes, covering 1.2 kilometers—
-[ 44.72s][user ] «interrupts_prev» …is there anything interesting along the way?
-[ 47.52s][moshi] There's a lovely little park, Grange Park, about halfway there.
-[ 49.44s][user ] «backchannel» Mhm.
-[ 51.60s][user ] Oh, that sounds nice. How far is it from ⟨ret@54.27s⟩ my house?
-[ 54.59s][moshi] ⟦⚡SPAN@54.59s: (tool result) 1.0 km, approximately 12 minutes walking.⟧ Grange Park is about 1.0 kilometer from your home, a 12-minute walk.
-      CALL: {"function": "map_distance", "arguments": {"origin": "388 Oak Avenue", "destination": "Grange Park"}}
-[ 57.05s][user ] «backchannel» Oh.
-[ 60.75s][user ] Great, that's good to know. Thanks, Lunax.
-[ 63.41s][moshi] You're very welcome, Zoe. Enjoy your walk and your coffee. I hope it brightens your day.
+[  0.00s][moshi] Hi Owen, I'm Thiax. It's lovely to meet you. I understand I’m here to offer support with friendships and social connections.
+[  6.89s][user ] Um, yeah, hi. I'm just trying to figure out a good place to go birdwatching.
+[ 11.79s][moshi] ⟨ret@11.71s⟩ ⟦⚡SPAN@11.79s: Toronto has several excellent birdwatching locations, including High Park, Tommy Thompson Park, and the Toront⟧ Toronto offers some wonderful spots for birdwatching, like High Park, Tommy Thompson Park, and the Toronto Islands.
+[ 17.56s][user ] «backchannel» Uh-huh.
+[ 19.23s][user ] And how far is Tommy Thompson Park from my place?
+[ 22.76s][moshi] ⟨ret@22.37s⟩ ⟦⚡SPAN@22.77s: [2026-04-08] User works as a accountant.⟧ I have a note that you work as an accountant, but that doesn't help with distance. I can find that for you, though.
+[ 29.14s][moshi] ⟨ret@28.74s⟩ ⟦⚡SPAN@29.14s: (tool result) Distance: 21.3 km, Estimated time: 32 mins.⟧ Tommy Thompson Park is about 21.3 kilometers away, and it should take around 32 minutes to get there. I hope you see some beautiful birds!
+      CALL: {"function": "map_directions", "arguments": {"origin": "Owen's home", "destination": "Tommy Thompson Park"}}

@@ -1,65 +1,80 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Thaelo, a grounded and empathetic personal guide who helps people with grief and change. <system>
+SYSTEM: <system> You are Brelir, a kind and steady supportive advisor who helps people with big life transitions. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Elsa",
+    "name": "William",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "female",
-    "age_range": "late 30s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-26",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-05-31",
+      "category": "hobby",
+      "text": "User is into rock climbing."
     },
     {
-      "date": "2026-03-12",
-      "category": "work",
-      "text": "User works as a accountant."
+      "date": "2026-01-05",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in October."
     },
     {
-      "date": "2025-12-30",
-      "category": "home",
-      "text": "User's home address is 464 Birch Road."
+      "date": "2025-10-22",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-07-19",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-10-14",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-19",
-      "title": "Researching a used car",
+      "date": "2026-06-24",
+      "title": "Setting up a home network",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-18",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to get organized. Please make a new directory called “projects” and then a new directory called “website” inside of ⟨ret@7.78s⟩ it.
-[  8.02s][moshi] ⟦⚡SPAN@8.02s: (no information found)⟧ I’m sorry, I wasn’t able to create those directories right now. Something seems to be preventing access.
-      CALL: {"function": "create_directory", "arguments": {"directory_path": "projects/website"}}
-[ 15.81s][user ] Oh. Well, that’s frustrating. Um…
-[ 21.03s][user ] …can you at least tell me what the weather is like ⟨ret@23.72s⟩ in Seoul?
-[ 23.87s][moshi] ⟦⚡SPAN@23.88s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently twenty-three degrees Celsius, with seventy-four percent humidity and a five point five kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 32.23s][moshi] It's a gentle warmth, isn't it? Sometimes, a calm day is all we need to begin again.
-[ 35.16s][user ] «backchannel» Yeah.
-[ 38.54s][user ] That's…nice, actually. Okay, let's try the directories again. Make “projects” and “website” inside ⟨ret@45.01s⟩ it.
-[ 45.17s][moshi] ⟦⚡SPAN@45.17s: (no information found)⟧ I’m still having trouble creating those directories, I apologize. It appears there’s a persistent system issue.
-      CALL: {"function": "create_directory", "arguments": {"directory_path": "projects/website"}}
+[  0.00s][user ] I’m thinking of going to a movie tonight. What horror…
+[  4.67s][user ] …films are playing at the Music Box Theatre in ⟨ret@7.83s⟩ Chicago?
+[  8.07s][moshi] ⟦⚡SPAN@8.07s: (tool result) The Black Phone — 7:00 PM, 9:30 PM; Barbarian — 7:15 PM, 9:45 PM⟧ There are two horror films playing at the Music Box tonight. The Black Phone shows at seven and nine thirty. Barbarian is at seven fifteen and nine forty-five.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {"location": "Chicago", "theater": "Music Box Theatre", "genre": "horror"}}
+[ 19.59s][user ] Hmm, Barbarian sounds good. What times again?
+[ 23.85s][moshi] Barbarian is showing at seven fifteen and nine forty-five this evening.
+[ 26.68s][user ] «backchannel» Right.
+[ 28.42s][user ] [sigh] I think I'll go with the 7:15 showing. Can you get me ⟨ret@33.12s⟩ two tickets?
+[ 33.44s][moshi] ⟦⚡SPAN@33.44s: (tool result) Confirmation: BBRBN-715PM-2TKTS-MBX⟧ I’ve gotten you two tickets for Barbarian at seven fifteen. Your confirmation number is BBRBN-715PM-2TKTS-MBX.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Barbarian", "theater": "Music Box Theatre", "time": "7:15 PM", "quantity": "2"}}
+[ 38.82s][user ] «backchannel» Right.
+[ 44.02s][user ] That's fantastic, thank you! Oh, um, do you know what the weather is like there ⟨ret@48.79s⟩ right now?
+[ 49.19s][moshi] ⟦⚡SPAN@49.19s: (tool result) 24.0°C, humidity 62%, wind 8.0 km/h⟧ In Chicago, it’s currently 24 degrees Celsius with sixty-two percent humidity and an eight kilometer per hour breeze.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Chicago"}}
+[ 56.56s][user ] That sounds… pleasant. Is the Music Box Theatre far from State Street?
+[ 61.52s][moshi] ⟨ret@61.45s⟩ ⟦⚡SPAN@61.52s: (tool result) 3.2 km, approximately 8 minutes by car.⟧ It’s about 3.2 kilometers from State Street to the Music Box Theatre, or roughly eight minutes driving.
+      CALL: {"function": "map_directions", "arguments": {"origin": "State Street, Chicago", "destination": "Music Box Theatre, Chicago"}}
+[ 68.42s][user ] Eight minutes, okay. That's doable. I appreciate your help, Brelir.
+[ 72.65s][moshi] You are very welcome. I’m glad I could assist you in planning your evening. Enjoy the film.

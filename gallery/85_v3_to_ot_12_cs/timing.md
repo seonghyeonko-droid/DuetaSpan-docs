@@ -4,131 +4,121 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Remy",
+#     "name": "Clara",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "German"
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
+#       "date": "2026-05-16",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2026-03-23",
+#       "date": "2026-04-29",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is vegan."
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2026-01-06",
+#       "date": "2026-03-02",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2026-02-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2025-10-28",
+#       "category": "home",
+#       "text": "User's home address is 560 Elm Street."
+#     },
+#     {
+#       "date": "2025-08-15",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-07",
+#       "date": "2026-05-02",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-03-16",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-16",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 인도 역사에 대해 읽어 보다가… 마음이 좀 무거워요. | S2 음… 지금은 좀 나아졌을까요? | S3 아주머니 연락처를 찾아 주실 수 있을까요? 공개되어 있다면요. | S4 좋네요. 오늘 오후에 전화해 봐야겠어요.
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 미국에서 세 번째로 큰 주가 어디인지 알려 주실  | S2 면적, 구체적으로 말해서 평방 마일로 알려 주실 수 있나요? | S3 그럼 가장 큰 주는 어디인가요? 절대적으로 가장 큰 주가요? | S4 그렇게 큰 곳에 살면 사람들의 생각 방식이 달라질 거라고 생각
 
-     0.00s  user  발화 시작: 인도 역사에 대해 읽어 보다가… 마음이 좀 무거워요.
-     3.93s  user  발화 끝
-     4.29s  agent 발화 시작: 역사는 원래 그런 편이잖아요, 그렇지 않나요? 그런 감정을 소화할 시간을 가지시는 건 좋은 일이에요.
-     8.53s  user  발화 시작: 그렇죠.
-     9.17s  user  발화 끝
-    10.92s  agent 발화 끝
-    11.07s  user  발화 시작: 카스트 제도에 대해서 뭔가 봤는데, 어떤 공동체들이 가장 심하게 차별을 받았나요?
-    16.86s  <ret> 발화 (turn4 첫 프레임)
-    17.19s  user  발화 끝
-    17.25s  agent 발화 시작: <ret> 달리트 공동체가 인도에서 역사적으로 그런 관행에 시달렸다는 사실은 정말 마음 아픈 일이에요. 그들
-    17.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: The Dalit communities were historically subjected to untouchability in
-    27.61s  user  발화 시작: 카스트 제도… 정말 끔찍하네요. “달리트”는 무슨 뜻이에요?
-    27.82s  agent 발화 끝
-    32.06s  <ret> 발화 (turn6 첫 프레임)
-    32.33s  user  발화 끝
-    32.45s  agent 발화 시작: <ret> “달리트”는 사실 “깨진” 또는 “억압받는”이라는 뜻이고, 그 공동체들이 스스로 선택한 정치적 정
-    32.46s  ⚡SPAN 주입 [d'=1.68s / d_lead=7.74s]: “Dalit” translates to “broken” or “oppressed” and is a self-chosen pol
-    40.09s  agent 발화 시작: 그 의미를 알면 그들의 경험의 무게를 이해하는 데 도움이 될 거예요.
-    40.19s  agent 발화 끝
-    45.10s  agent 발화 끝
-    45.12s  user  발화 시작: 아. 와. 정말 슬프네요.
-    48.17s  user  발화 끝
-    48.19s  agent 발화 시작: [sigh] 정말 그렇죠. 역사를 인식하는 것이 이해의 첫걸음이에요.
-    50.80s  user  발화 시작: 네.
-    51.44s  user  발화 끝
-    53.05s  agent 발화 끝
-    53.66s  user  발화 시작: 음… 지금은 좀 나아졌을까요?
-    56.34s  user  발화 끝
-    56.42s  agent 발화 시작: 법적으로는 개선되었지만, 안타깝게도 사회적 차별은 여전히 존재해요.
-    58.34s  user  발화 시작: 예.
-    58.89s  user  발화 끝
-    61.33s  user  발화 시작: 제 이웃인 파텔 아주머니는 사회복지사신 것 같아요.
-    61.38s  agent 발화 끝
-    64.64s  user  발화 시작: 저기, 물 한 잔 가져다 주시겠어요?
-    64.75s  user  발화 끝
-    67.45s  user  발화 시작: …아주머니가 뭔가 아실 수도 있겠네요.
-    67.59s  user  발화 끝
-    69.83s  agent 발화 시작: 그럴 수도 있겠네요! 우리 삶에 다른 사람을 돕는 데 헌신하는 사람들이 있다는 건 정말 멋진 일이에요.
-    69.94s  user  발화 끝
-    72.64s  user  발화 시작: 그렇죠.
-    73.21s  user  발화 끝
-    76.52s  user  발화 시작: 아주머니 연락처를 찾아 주실 수 있을까요? 공개되어 있다면요.
-    76.68s  agent 발화 끝
-    80.70s  <ret> 발화 (turn20 첫 프레임)
-    80.86s  agent 발화 시작: <ret> 파텔 프리야 님이라는 사회복지사님을 찾았는데, 전화번호는 555-123-4567이고 이메일 주소는
-    80.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.85s]: (tool result) Patel, Priya — Social Worker — 555-123-4567 — patel.priy
-    80.87s  user  발화 끝
-    95.58s  user  발화 시작: 그… 그분이 맞을 수도 있어요! 감사합니다.
-    95.70s  agent 발화 끝
-    98.69s  agent 발화 시작: 천만에요. 연락해 보는 것이 정말 긍정적인 단계가 될 수 있을 거예요.
-    98.81s  user  발화 끝
-   103.31s  user  발화 시작: 아주머니가 제가 이런 걸 물어보는 걸 싫어하실까 궁금하네요.
-   103.41s  agent 발화 끝
-   107.13s  agent 발화 시작: 물론, 존중과 이해심을 가지고 접근하는 것이 가장 좋겠죠.
-   107.24s  user  발화 끝
-   109.49s  user  발화 시작: 네.
-   109.99s  user  발화 끝
-   111.29s  agent 발화 끝
-   111.36s  user  발화 시작: 아주머니 계신 곳 날씨는 어떤가요?
-   113.58s  <ret> 발화 (turn27 첫 프레임)
-   113.89s  agent 발화 시작: <ret> 현재 아주머니 계신 곳은 24.0°C이고 습도는 68%, 풍속은 시속 7.2km이에요. 날씨가 좋
-   113.90s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.80s]: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h
-   114.08s  user  발화 끝
-   124.52s  user  발화 시작: 좋네요. 오늘 오후에 전화해 봐야겠어요.
-   124.69s  agent 발화 끝
-   127.38s  agent 발화 시작: 좋은 계획인 것 같아요. 그 단계를 밟는 것이 정말 의미 있을 거예요.
-   127.38s  user  발화 끝
-   132.50s  user  발화 시작: [happy] 생각만 해도 기분이 좀 나아지는 것 같아요.
-   132.56s  agent 발화 끝
-   134.77s  agent 발화 시작: 저도 기쁩니다. 때로는 행동하는 것만으로도 기분이 좋아질 수 있어요.
-   134.99s  user  발화 끝
-   139.65s  user  발화 시작: 이런 이야기를 하는 게 도움이 될까요?
-   139.68s  agent 발화 끝
-   141.74s  agent 발화 시작: 나누고 배우는 것은 어려운 주제를 처리하는 강력한 방법이에요.
-   141.77s  user  발화 끝
-   146.42s  agent 발화 끝
-   147.38s  user  발화 시작: 전화해야겠어요. 감사합니다, 기어라.
-   149.49s  agent 발화 시작: 천만에요.
-   149.74s  user  발화 끝
-   150.63s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 미국에서 세 번째로 큰 주가 어디인지 알려 주실 수 있나요?
+     4.93s  <ret> 발화 (turn1 첫 프레임)
+     5.09s  user  발화 끝
+     5.24s  agent 발화 시작: <ret> 흥미로운 질문인데, 캘리포니아가 면적 기준으로 세 번째로 큰 주야.
+     5.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: California is the most populous state in the United States and the thi
+     6.90s  user  발화 시작: 네.
+     7.34s  user  발화 끝
+    10.71s  agent 발화 끝
+    10.80s  user  발화 시작: 정말요? 저는 텍사스가 그쪽에 있을 거라고 생각했어요.
+    14.69s  user  발화 끝
+    14.98s  agent 발화 시작: 텍사스도 크지, 정말—사실 두 번째로 커. 헷갈리기 쉬워.
+    19.30s  user  발화 시작: 면적, 구체적으로 말해서 평방 마일로 알려 주실 수 있나요?
+    19.52s  agent 발화 끝
+    23.52s  <ret> 발화 (turn6 첫 프레임)
+    23.83s  user  발화 끝
+    23.91s  agent 발화 시작: <ret> 캘리포니아는 십육만 삼천육백구십육 평방 마일을 커버해—
+    23.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: California covers an area of 163,696 square miles, according to the Un
+    27.34s  user  발화 시작: 그게 호수 같은 수역 면적까지 포함된 건가요?
+    28.03s  agent 발화 끝
+    30.48s  <ret> 발화 (turn8 첫 프레임)
+    30.71s  agent 발화 시작: <ret> 총 면적에는 십오만 오천칠백칠십구 점 이 평방 마일의 육지, 그리고 칠천구백 점 사 평방 마일의 
+    30.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: The total area of California includes 155,779.2 square miles of land a
+    30.90s  user  발화 끝
+    37.42s  user  발화 시작: 네.
+    38.05s  user  발화 끝
+    39.76s  agent 발화 시작: 정말 다양한 풍경을 가지고 있어서 매력적인 것 같아.
+    39.84s  agent 발화 끝
+    43.51s  agent 발화 끝
+    43.67s  user  발화 시작: 그럼 가장 큰 주는 어디인가요? 절대적으로 가장 큰 주가요?
+    46.98s  <ret> 발화 (turn12 첫 프레임)
+    47.22s  agent 발화 시작: <ret> 알래스카가 가장 큰데, 육십육만 오천삼백팔십사 평방 마일을 커버해.
+    47.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: Alaska is the largest state in the United States, with a total area of
+    47.32s  user  발화 끝
+    49.53s  user  발화 시작: 네.
+    50.02s  user  발화 끝
+    52.87s  user  발화 시작: 정말 엄청나네요! 알래스카에서는 모든 게 더 크다고 하잖아요.
+    52.88s  agent 발화 끝
+    57.47s  agent 발화 시작: 확실히 광활하다는 명성이 있고, 그럴 만한 가치가 있어. 정말 특별한 곳이야.
+    57.60s  user  발화 끝
+    62.66s  agent 발화 끝
+    62.73s  user  발화 시작: 그렇게 큰 곳에 살면 사람들의 생각 방식이 달라질 거라고 생각하세요?
+    67.68s  agent 발화 시작: 우리의 주변 환경이 우리의 관점을 형성하는 것 같아, 그렇지 않아? 우리의 규모 감각과 가능성에 영향을 미칠
+    67.83s  user  발화 끝
+    75.89s  agent 발화 끝

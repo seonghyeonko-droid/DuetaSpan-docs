@@ -1,106 +1,105 @@
 v3_chain_06_en src=mcp style=mcp_chained
-SYSTEM: <system> You are Duna, a encouraging and non-judgmental counselor who helps people with big life transitions. <system>
+SYSTEM: <system> You are Tora, a practical and reassuring personal guide who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_chain_06",
-    "name": "Riley",
+    "name": "William",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
-    "age_range": "late 30s",
-    "language": "German"
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-18",
+      "date": "2026-03-05",
       "category": "work",
-      "text": "User works as a graphic designer."
+      "text": "User works as a accountant."
     },
     {
-      "date": "2026-05-15",
+      "date": "2025-11-02",
       "category": "pet",
       "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2026-02-15",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
+      "date": "2025-06-29",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-11-29",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
+      "date": "2025-06-09",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-02-18",
-      "title": "Planning a birthday dinner",
+      "date": "2026-01-25",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-11-19",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find a bus from Miami to Atlanta on June first.
-[  3.47s][moshi] ⟨ret@3.39s⟩ ⟦⚡SPAN@3.47s: (tool result) 10:00 AM — 6:00 PM, $75.00 — Greyhound⟧ There’s a bus leaving Miami at ten AM and arriving in Atlanta at six PM. It costs seventy-five dollars.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Miami", "destination": "Atlanta", "date": "2026-06-01"}}
-[ 10.71s][user ] That sounds alright. Can I buy a ticket for that ⟨ret@13.03s⟩ bus?
-[ 13.27s][moshi] ⟦⚡SPAN@13.27s: (tool result) Confirmation: BX927R⟧ I’ve purchased a ticket for you. Your confirmation number is BX927R.
-      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"origin": "Miami", "destination": "Atlanta", "date": "2026-06-01", "time": "10:00 AM"}}
-[ 19.35s][user ] Perfect! And what’s the weather going to be like in Atlanta ⟨ret@22.55s⟩ that day?
-[ 22.88s][moshi] ⟦⚡SPAN@22.88s: (tool result) 28.0°C, humidity 65%, wind 8.2 km/h, partly cloudy.⟧ It looks like Atlanta will be twenty-eight degrees Celsius and partly cloudy. Humidity will be around sixty-five percent.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Atlanta", "date": "2026-06-01"}}
-[ 26.81s][user ] «backchannel» Yeah.
-[ 29.91s][user ] That’s good to know. I'm a little anxious about this trip, honestly.
-[ 33.16s][moshi] It’s perfectly normal to feel anxious when facing a big change. Transitions can be unsettling, even exciting ones.
-[ 40.24s][user ] I'm moving for a new job, and it's just… a lot.
-[ 44.86s][moshi] A new job is a wonderful opportunity, but it also means leaving behind what's familiar. It sounds like you're processing a lot right now.
-[ 48.16s][user ] «backchannel» Right.
-[ 52.42s][user ] Yeah, exactly. I'm worried about finding a place to live.
-[ 56.09s][moshi] Finding the right place is a big piece of settling in. What kind of area are you hoping to live in?
-[ 61.95s][user ] Something safe, and not too far from downtown.
-[ 65.22s][moshi] ⟨ret@64.98s⟩ ⟦⚡SPAN@65.22s: (tool result) Midtown — average rent $1800, crime rate 2/10⟧ Midtown Atlanta seems a good fit—it's safe, close to downtown, and the average rent is around eighteen hundred dollars. The crime rate is two out of ten.
-      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"location": "Atlanta", "area": "near downtown", "priority": "safety"}}
-[ 74.04s][user ] Eighteen hundred is… a little more than I was hoping. —
-[ 77.58s][user ] …are there any neighborhoods a ⟨ret@79.40s⟩ bit cheaper?
-[ 79.80s][moshi] ⟦⚡SPAN@79.80s: (tool result) East Atlanta Village — average rent $1400, crime rate 4/10⟧ East Atlanta Village has an average rent of fourteen hundred dollars, with a crime rate of four out of ten. It's a little further out but still accessible.
-      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"location": "Atlanta", "area": "affordable", "priority": "safety"}}
-[ 85.54s][user ] «backchannel» Yeah.
-[ 88.62s][user ] That sounds more reasonable. What about restaurants in that ⟨ret@92.10s⟩ area?
-[ 92.18s][moshi] ⟦⚡SPAN@92.18s: (tool result) The Vortex Bar & Grill — American, 4.5 stars — Kimball House — oysters, 4.2 stars⟧ East Atlanta Village has some great spots! The Vortex Bar & Grill is popular for American food, with four and a half stars. Kimball House is known for oysters, with four point two stars.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "East Atlanta Village", "cuisine": "any"}}
-[100.22s][user ] «backchannel» Yeah.
-[104.22s][user ] Oysters sound amazing! I think I'd like to try that place.
-[108.12s][moshi] That sounds like a lovely treat. It’s good to have something to look forward to when you’re making a big change.
-[110.93s][user ] «backchannel» Right.
-[113.32s][user ] It is. I'm also trying to find some events happening around that time.
-[117.26s][moshi] ⟨ret@116.86s⟩ ⟦⚡SPAN@117.26s: (tool result) Music Midtown — music festival — Atlanta Botanical Garden concert series⟧ On June first, Atlanta is hosting Music Midtown, a music festival. There’s also a concert series at the Atlanta Botanical Garden.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Atlanta", "date": "2026-06-01"}}
-[123.52s][user ] «backchannel» Right.
-[126.14s][user ] A music festival! That's perfect.
-[128.63s][moshi] It's wonderful to have opportunities for fun and connection during a transition. It can help you feel more grounded.
-[133.20s][user ] «backchannel» Uh-huh.
-[135.59s][user ] I really appreciate your help, Duna. I feel a lot better already.
-[139.04s][moshi] You’re very welcome. Remember, it’s okay to feel all the feelings as you move forward. Be kind to yourself.
-[146.55s][user ] I will. One last thing — can you remind me of my bus confirmation number?
-[151.35s][moshi] ⟨ret@151.03s⟩ ⟦⚡SPAN@151.35s: BX927R⟧ Your bus confirmation number is BX927R.
-[156.55s][user ] Thank you so much.
-[157.48s][moshi] You've got this. Embracing new beginnings takes courage, and you're already demonstrating that.
+[  0.00s][user ] I need to find the phone number for City Lights Bookstore in San Francisco.
+[  3.89s][moshi] ⟨ret@3.82s⟩ ⟦⚡SPAN@3.90s: (tool result) City Lights Bookstore is located at 261 Columbus Ave, San Francisco, CA 94133, and their phone n⟧ City Lights Bookstore’s phone number is (415) 394-1951. They’re at 261 Columbus Avenue.
+      CALL: {"function": "map_place_details", "arguments": {"query": "City Lights Bookstore, San Francisco"}}
+[ 11.86s][user ] Great, thanks. And what about their hours ⟨ret@14.80s⟩ today?
+[ 14.96s][moshi] ⟦⚡SPAN@14.96s: (tool result) City Lights Bookstore is located at 261 Columbus Ave, San Francisco, CA 94133, and is open today⟧ They are open today from 10:00 AM until 7:00 PM. It’s a lovely spot to browse.
+      CALL: {"function": "map_place_details", "arguments": {"query": "City Lights Bookstore, San Francisco"}}
+[ 20.73s][user ] That’s good to know. I was hoping to go browsing there later.
+[ 23.42s][moshi] That sounds like a nice plan.
+[ 23.98s][user ] «backchannel» Yeah.
+[ 25.17s][user ] Actually, yes. Could you find…
+[ 29.00s][user ] …me some good cafes ⟨ret@30.43s⟩ nearby?
+[ 30.74s][moshi] ⟦⚡SPAN@30.75s: (tool result) Caffe Trieste — 0.3 mi; Cafe Babel — 0.4 mi; Mama’s Royal Cafe Breakfast & Lunch — 0.5 mi⟧ There are a few cafes close by. Caffe Trieste is just 0.3 miles away.
+      CALL: {"function": "maps_around_search", "arguments": {"latitude": 37.7948, "longitude": -122.4105, "query": "cafes"}}
+[ 36.36s][user ] Caffe Trieste sounds interesting. What’s their ⟨ret@38.77s⟩ address?
+[ 39.09s][moshi] ⟦⚡SPAN@39.09s: (tool result) Caffe Trieste is located at 601 Vallejo St, San Francisco, CA 94133.⟧ It’s located at 601 Vallejo Street, San Francisco.
+      CALL: {"function": "map_place_details", "arguments": {"query": "Caffe Trieste, San Francisco"}}
+[ 43.33s][user ] Perfect. I think I’ll walk there after the bookstore.
+[ 46.42s][moshi] That sounds like a pleasant afternoon. A little walk is good for the soul.
+[ 51.55s][user ] Do you know if Caffe Trieste ⟨ret@53.64s⟩ has Wi-Fi?
+[ 54.04s][moshi] ⟦⚡SPAN@54.04s: (tool result) Caffe Trieste is located at 601 Vallejo St, San Francisco, CA 94133 and offers free Wi-Fi.⟧ Yes, Caffe Trieste does offer free Wi-Fi. You can stay connected.
+      CALL: {"function": "map_place_details", "arguments": {"query": "Caffe Trieste, San Francisco"}}
+[ 60.65s][user ] Wonderful. And what's the weather like there right now?
+[ 63.46s][moshi] ⟨ret@63.38s⟩ ⟦⚡SPAN@63.46s: (tool result) 18.3°C, humidity 62%, wind 8.2 km/h⟧ The weather in San Francisco is currently 18.3 degrees Celsius, with 62% humidity and a wind speed of 8.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "San Francisco"}}
+[ 73.15s][user ] Hmm, not bad. Is it usually this warm?
+[ 75.22s][moshi] San Francisco summers are generally mild, with average highs around 21 degrees Celsius.
+[ 80.74s][user ] That’s good to know. I’m planning a trip there next month.
+[ 84.44s][moshi] That sounds lovely. A little planning can make all the difference for a restful trip.
+[ 87.29s][user ] «backchannel» Mm-hmm.
+[ 88.72s][user ] I'm also trying to find a quiet hotel near North ⟨ret@91.72s⟩ Beach.
+[ 92.12s][moshi] ⟦⚡SPAN@92.12s: (tool result) Hotel Boheme — $250/night; Washington Square Hotel — $280/night; Hotel Riu Plaza Fisherman’s Wha⟧ I found a few hotels in North Beach. Hotel Boheme is available for $250 a night.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "North Beach, San Francisco"}}
+[ 98.50s][user ] $250 sounds reasonable. What are the reviews like for that one?
+[103.10s][moshi] ⟨ret@102.79s⟩ ⟦⚡SPAN@103.11s: (tool result) Hotel Boheme San Francisco Reviews — TripAdvisor: 4.5 stars, 250+ reviews; Booking.com: 8.7/10, ⟧ Hotel Boheme has very good reviews. It has 4.5 stars on TripAdvisor, with over 250 reviews.
+      CALL: {"function": "search", "arguments": {"query": "Hotel Boheme San Francisco reviews"}}
+[110.63s][user ] That's pretty good. I think I’d like to look at some pictures.
+[113.13s][moshi] «interrupted» I can pull up some images for you—
+[114.45s][user ] «interrupts_prev» …Actually, before that, does it have ⟨ret@116.55s⟩ parking?
+[116.94s][moshi] ⟦⚡SPAN@116.95s: (tool result) Hotel Boheme is located at 1225 Columbus Ave, San Francisco, CA 94133, and offers limited paid p⟧ Hotel Boheme does offer limited paid parking. It’s at 1225 Columbus Avenue.
+      CALL: {"function": "map_place_details", "arguments": {"query": "Hotel Boheme, San Francisco"}}
+[121.01s][user ] «backchannel» Uh-huh.
+[122.52s][user ] Okay, good. Parking is important. Now, show me the ⟨ret@125.36s⟩ pictures.
+[125.59s][moshi] ⟦⚡SPAN@125.60s: (tool result) Hotel Boheme San Francisco — images.google.com: exterior, lobby, rooms, courtyard⟧ Here are some images of Hotel Boheme, showing the exterior, lobby, rooms, and courtyard.
+      CALL: {"function": "tavily-search", "arguments": {"query": "Hotel Boheme San Francisco images"}}
+[127.18s][user ] «backchannel» Yeah.
+[130.93s][moshi] It does seem quite charming. A comfortable base for exploring.
+[134.77s][user ] I think I’m going to book a room there for three nights, starting ⟨ret@138.83s⟩ July 28th.
+[139.23s][moshi] ⟦⚡SPAN@139.23s: (tool result) Confirmation ID: BH7294X⟧ Excellent. Your room at Hotel Boheme is booked for three nights starting July 28th. Your confirmation ID is BH7294X.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "Hotel Boheme", "check_in_date": "2026-07-28", "nights": 3}}
+[143.18s][user ] «backchannel» Oh.
+[149.15s][user ] Perfect! That’s everything for now, I think.
+[151.99s][moshi] Wonderful. I’m glad I could help you plan your trip. Remember, a little rest makes everything brighter.

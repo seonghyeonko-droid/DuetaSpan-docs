@@ -1,66 +1,90 @@
 v3_mem_32_en src=mem style=mem
-SYSTEM: <system> You are Feaus, a warm and attentive counselor who helps people with productivity and daily routines. <system>
+SYSTEM: <system> You are Nura, a upbeat and supportive life coach who helps people with productivity and daily routines. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mem_32",
-    "name": "Thomas",
+    "name": "Louis",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "male",
-    "age_range": "late 20s",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-07",
+      "date": "2026-05-27",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-04-18",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2026-02-03",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
+      "date": "2026-01-04",
+      "category": "home",
+      "text": "User's home address is 944 Birch Road."
     },
     {
-      "date": "2025-08-10",
+      "date": "2025-11-12",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-07-30",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
+      "text": "User is planning a trip to Iceland in August."
     },
     {
-      "date": "2025-07-22",
-      "category": "hobby",
-      "text": "User is into home fermentation."
+      "date": "2025-06-26",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-28",
+      "date": "2025-10-07",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-11-18",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Thomas, I'm Feaus. It's lovely to meet you. Is there anything on your mind today?
-[  4.99s][user ] Um, I was just thinking about that trip I'm planning.
-[  7.93s][moshi] ⟨ret@7.85s⟩ ⟦⚡SPAN@7.93s: [2025-08-10] User is planning a trip to Vietnam in March.⟧ You mentioned a trip to Vietnam back in August, planning to go in March. Do you want to discuss the details?
-[ 14.51s][user ] Yes, actually! What was the latest I said about it?
-[ 17.89s][moshi] ⟨ret@17.81s⟩ ⟦⚡SPAN@17.89s: [2025-08-10] User is planning a trip to Vietnam in March.⟧ You were starting to plan a trip to Vietnam for March, and hadn't mentioned any specifics beyond that. Perhaps we could brainstorm some ideas?
+[  0.00s][moshi] Hi Louis, I'm Nura! So lovely to meet you.
+[  3.59s][user ] Um, well, I was just wondering if you could remind me about my Iceland trip.
+[  8.04s][moshi] ⟨ret@7.96s⟩ ⟦⚡SPAN@8.04s: [2025-07-30] User is planning a trip to Iceland in August.⟧ Louis! I recall you're planning a trip to Iceland in August.
+[ 12.06s][moshi] It's wonderful you're taking that time for yourself.
+[ 14.99s][user ] Right, Iceland. And did I mention anything about what I wanted to *do* there?
+[ 19.21s][moshi] I'm checking my notes, but I don’t have any details about your planned activities in Iceland.
+[ 24.65s][user ] Oh, that's okay. Actually, before we get into that, can you check the weather in ⟨ret@29.44s⟩ Sydney?
+[ 29.60s][moshi] ⟦⚡SPAN@29.60s: (tool result) 18.0°C, humidity 62%, wind 10.5 km/h⟧ It’s currently 18.0°C in Sydney, with humidity at 62% and a breeze of 10.5 km/h.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[ 37.52s][moshi] A lovely day for a walk, perhaps?
+[ 39.73s][user ] That sounds nice. I think I need to focus on packing, though.
+[ 43.08s][moshi] «interrupted» Packing is a great idea! It's so empowering to be prepared. –
+[ 46.29s][user ] «interrupts_prev» …do you remember if I mentioned anything about allergies when we talked about trips?
+[ 50.78s][moshi] ⟨ret@50.70s⟩ ⟦⚡SPAN@50.78s: [2026-05-27] User is allergic to pollen.⟧ Yes, Louis, you mentioned you have a pollen allergy back on May 27th.
+[ 55.22s][moshi] Perhaps pack some antihistamines for Iceland, just in case!
+[ 56.32s][user ] «backchannel» Mm-hmm.
+[ 60.08s][user ] Oh, good thinking. That’s really helpful, thank you.
+[ 62.90s][moshi] You’re very welcome, Louis! It's my pleasure to help you feel confident.
+[ 67.31s][user ] I was also looking at used cars a while ago…
+[ 70.05s][moshi] ⟨ret@69.89s⟩ ⟦⚡SPAN@70.05s: [2025-10-07] Past chat — Researching a used car: comparing hybrid models; wants under 30k miles.⟧ I see you were researching hybrid cars with under 30,000 miles on October 7th.
+[ 75.07s][moshi] Is that something you’re still considering?
+[ 77.14s][user ] Maybe. Do you think I should look at the ⟨ret@79.71s⟩ current market?
+[ 79.87s][moshi] ⟦⚡SPAN@79.87s: (tool result) Used Hybrid Cars Australia - Carsales — carsales.com.au/used-cars/hybrid⟧ A search shows Carsales has a section for used hybrid cars in Australia.
+      CALL: {"function": "search", "arguments": {"query": "used hybrid cars under 30000 miles Australia"}}
+[ 83.15s][user ] «backchannel» Okay.
+[ 85.31s][user ] That’s perfect! Thank you, Nura.
+[ 87.33s][moshi] You’re so very welcome, Louis!

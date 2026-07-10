@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "태형",
+#     "name": "주정",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,35 +12,43 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "40s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-28",
+#       "date": "2025-11-26",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in May."
+#     },
+#     {
+#       "date": "2025-07-16",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-28",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2025-11-06",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-09-26",
+#       "date": "2025-06-27",
 #       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-20",
+#       "date": "2026-03-19",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-25",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -50,31 +58,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 요즘 날씨가 너무 변덕스러워요. 혹시 오늘 서울 날씨는 어때요 | S2 아, 그렇군요. 근데 궁금한 게 있는데요. 체감온도 공식이 바 | S3 오, 이천일년이군요. 생각보다 오래됐네요. | S4 뭐, 아직은 적응 중이에요.
+# EXAMINER(FDB-v2) 단계: S1 혹시 그레이즈 아나토미 드라마 보셨어요? 너무 재밌잖아요. | S2 엇, 진짜요? 몰랐어요!— | S3 …근데 그 드라마에서 제일 좋아하는 커플은 누구예요? | S4 저도 그 커플이 좋았어요. 두 사람의 관계가 진짜 드라마틱하잖
 
-     0.00s  user  발화 시작: 요즘 날씨가 너무 변덕스러워요. 혹시 오늘 서울 날씨는 어때요?
-     5.26s  <ret> 발화 (turn1 첫 프레임)
-     5.33s  agent 발화 시작: <ret> 서울은 현재 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
-     5.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-     5.46s  user  발화 끝
-    11.18s  agent 발화 끝
-    11.19s  user  발화 시작: 아, 그렇군요. 근데 궁금한 게 있는데요. 체감온도 공식이 바뀐 게 언제였죠?
-    17.43s  <ret> 발화 (turn3 첫 프레임)
-    17.58s  agent 발화 시작: <ret> 체감온도 공식은 이천일년 십일월에 미국 기상청과 캐나다 기상센터에 의해 업데이트되었답니다.
-    17.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: The formula for wind chill was updated in November 2001 by the Nationa
-    17.67s  user  발화 끝
-    20.32s  user  발화 시작: 헐.
-    20.86s  user  발화 끝
-    23.39s  agent 발화 시작: 새로운 공식은 이전보다 더 정확하다고 알려져 있어요.
-    23.50s  agent 발화 끝
-    25.33s  user  발화 시작: 응.
-    25.97s  user  발화 끝
-    26.53s  agent 발화 끝
-    26.54s  user  발화 시작: 오, 이천일년이군요. 생각보다 오래됐네요.
-    30.09s  agent 발화 시작: 시간은 참 빠르게 흘러가죠. 혹시 새로운 도시에 정착하면서 힘든 점은 없으세요?
-    30.23s  user  발화 끝
-    35.09s  agent 발화 끝
-    35.15s  user  발화 시작: 뭐, 아직은 적응 중이에요.
-    37.69s  user  발화 끝
-    37.72s  agent 발화 시작: 새로운 환경에 적응하는 건 시간이 필요한 일이에요. 천천히 주변을 둘러보면서 자신만의 공간을 만들어가세요.
-    44.58s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 그레이즈 아나토미 드라마 보셨어요? 너무 재밌잖아요.
+     4.58s  user  발화 끝
+     4.67s  agent 발화 시작: 드라마를 즐겨 보시는군요. 저는 사람들의 건강과 습관을 관리하는 걸 돕는 Fioen이에요.
+     8.07s  user  발화 시작: 네.
+     8.71s  user  발화 끝
+     9.81s  user  발화 시작: 아, 네. 그 드라마에서 맥스웰 아담스랑 메레디스 그레이가 결혼하는 거 궁금해요. 언제 결혼했는지 아세요?
+     9.94s  agent 발화 끝
+    17.47s  <ret> 발화 (turn4 첫 프레임)
+    17.78s  agent 발화 시작: <ret> 두 분은 이천구년 사월 오일에, 퇴근 후 즉흥적으로 결혼식을 올렸어요.
+    17.79s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.00s]: Meredith Grey and Derek Shepherd get married on April 5, 2009, in a po
+    18.01s  user  발화 끝
+    19.81s  user  발화 시작: 정말요?
+    20.63s  user  발화 끝
+    22.78s  agent 발화 끝
+    23.34s  user  발화 시작: 엇, 진짜요? 몰랐어요!—
+    26.29s  user  발화 시작: …근데 그 드라마에서 제일 좋아하는 커플은 누구예요?
+    26.48s  user  발화 끝
+    29.41s  agent 발화 시작: 드라마 취향도 정말 다양하네요. 저는 그레이와 셰퍼드 커플의 이야기가 가장 인상 깊었어요.
+    29.57s  user  발화 끝
+    35.23s  agent 발화 끝
+    35.25s  user  발화 시작: 저도 그 커플이 좋았어요. 두 사람의 관계가 진짜 드라마틱하잖아요.
+    40.57s  user  발화 끝
+    40.64s  agent 발화 시작: 맞아요. 서로에게 힘이 되어주는 모습이 보기 좋았죠. 삶에서 그런 지지적인 관계를 만드는 게 중요해요.
+    46.58s  agent 발화 끝

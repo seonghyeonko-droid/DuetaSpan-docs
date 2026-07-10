@@ -4,53 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Thomas",
+#     "name": "Avery",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "home",
-#       "text": "User's home address is 772 Birch Road."
+#       "date": "2026-06-07",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2026-02-27",
+#       "date": "2026-03-06",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-02-25",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
 #       "date": "2026-01-02",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in August."
-#     },
-#     {
-#       "date": "2025-11-14",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-09-13",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2025-08-11",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-12",
+#       "date": "2026-03-04",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -58,41 +48,71 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-05",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-08-21",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who guest starred on S | S2 I see… that sounds complicated. | S3 Did you hear… | S4 …about the traffic on Elm Street?
+# EXAMINER(FDB-v2) 단계: S1 So, if a shipment is fob destinati | S2 That makes sense. What about insur | S3 What if I want to arrange the ship | S4 Did you remember to lock the back 
 
-     0.00s  user  발화 시작: Do you know who guest starred on Sons of Anarchy, season fiv
-     2.86s  <ret> 발화 (turn1 첫 프레임)
-     3.23s  user  발화 끝
-     3.25s  agent 발화 시작: <ret> It’s interesting how actors can bring such depth to a 
-     3.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: Rachel Miner portrayed Maureen Ashby in three episodes of Sons of Anar
-     8.27s  user  발화 시작: Okay.
-     8.77s  user  발화 끝
-    11.59s  agent 발화 끝
-    11.63s  user  발화 시작: Oh, okay. Uh, what did she do on the show?
-    14.22s  user  발화 끝
-    14.34s  agent 발화 시작: Well, sometimes characters appear to really shake things up 
-    16.83s  user  발화 시작: Yeah, yeah.
-    17.65s  user  발화 끝
-    18.45s  agent 발화 시작: Maureen Ashby, as portrayed by Rachel Miner, was involved in
-    18.51s  agent 발화 끝
-    26.84s  agent 발화 끝
-    27.69s  user  발화 시작: I see… that sounds complicated.
-    29.61s  agent 발화 시작: Difficult situations often bring out strong emotions, don’t 
-    29.76s  user  발화 끝
-    34.59s  user  발화 시작: Okay.
-    35.09s  user  발화 끝
-    37.53s  user  발화 시작: Did you hear…
-    37.67s  agent 발화 끝
-    38.58s  user  발화 끝
-    40.13s  user  발화 시작: …about the traffic on Elm Street?
-    41.60s  user  발화 끝
+     0.00s  user  발화 시작: So, if a shipment is fob destination, who is responsible for
+     4.33s  <ret> 발화 (turn1 첫 프레임)
+     4.67s  user  발화 끝
+     4.73s  agent 발화 시작: <ret> Well, that's a really good question. When shipping ter
+     4.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: In fob destination, the seller retains ownership and responsibility fo
+    11.46s  user  발화 시작: …but what if the goods are damaged in transit?
+    12.14s  agent 발화 끝
+    13.71s  user  발화 끝
+    13.77s  agent 발화 시작: That’s a valid concern. Let's come back to that after we cov
+    19.50s  agent 발화 끝
+    19.69s  user  발화 시작: Okay, good idea.
+    20.69s  <ret> 발화 (turn5 첫 프레임)
+    20.69s  user  발화 끝
+    20.84s  agent 발화 시작: <ret> The seller is responsible for everything until the goo
+    20.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: Fob destination means the seller bears all responsibility for loss or 
+    25.16s  user  발화 시작: Yeah, yeah.
+    26.77s  user  발화 끝
+    26.95s  agent 발화 시작: It’s about ensuring you receive what you expect, without une
+    27.00s  agent 발화 끝
+    30.91s  user  발화 시작: Mm-hmm.
+    31.41s  user  발화 끝
+    32.20s  user  발화 시작: That makes sense. What about insurance in that case?
+    32.23s  agent 발화 끝
+    34.49s  <ret> 발화 (turn10 첫 프레임)
+    34.81s  agent 발화 시작: <ret> Insurance is usually factored into the seller’s price 
+    34.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: Insurance costs are typically included in the seller's fob destination
+    34.97s  user  발화 끝
+    38.20s  user  발화 시작: Mm-hmm.
+    38.83s  user  발화 끝
+    41.60s  user  발화 시작: So, the buyer doesn’t pay for that separately?
+    41.72s  agent 발화 끝
+    44.07s  agent 발화 시작: No, the buyer doesn't pay for insurance separately under fob
+    44.13s  user  발화 끝
+    50.19s  agent 발화 끝
+    51.23s  user  발화 시작: What if I want to arrange the shipping myself?
+    53.73s  user  발화 끝
+    54.17s  agent 발화 시작: That would change the terms. We could explore fob shipping p
+    57.86s  user  발화 시작: Yeah, yeah.
+    58.97s  user  발화 끝
+    59.72s  user  발화 시작: Hmm, maybe later. One more question – what…
+    59.72s  agent 발화 끝
+    62.31s  user  발화 끝
+    63.71s  user  발화 시작: …if it's an international shipment?
+    65.39s  <ret> 발화 (turn19 첫 프레임)
+    65.63s  agent 발화 시작: <ret> Even with international shipping, the seller is still 
+    65.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: International fob destination shipments still place the freight cost a
+    65.79s  user  발화 끝
+    68.90s  user  발화 시작: Mm-hmm.
+    69.39s  user  발화 끝
+    71.93s  agent 발화 끝
+    73.13s  user  발화 시작: Did you remember to lock the back door?
+    75.02s  agent 발화 시작: It’s about creating a clear agreement and protecting both pa
+    75.10s  user  발화 끝
+    79.05s  user  발화 시작: Yes, it is. Thanks, Bari.
+    79.18s  agent 발화 끝
+    81.12s  user  발화 끝

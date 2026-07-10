@@ -4,75 +4,103 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Sky",
+#     "name": "Ruby",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-13",
+#       "date": "2026-06-24",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2026-02-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "date": "2026-04-12",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-19",
+#       "date": "2026-03-11",
+#       "category": "home",
+#       "text": "User's home address is 633 Elm Street."
+#     },
+#     {
+#       "date": "2026-01-15",
 #       "category": "allergy",
 #       "text": "User is allergic to peanuts."
 #     },
 #     {
-#       "date": "2025-06-20",
+#       "date": "2025-07-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
+#     },
+#     {
+#       "date": "2025-07-06",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "text": "User's favorite cuisine is sushi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-07",
+#       "date": "2026-04-24",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-26",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-11",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you create an annual subscript | S2 …will that include access to the p | S3 Wonderful! What’s the total cost f | S4 Okay, perfect. Can you send me the
+# EXAMINER(FDB-v2) 단계: S1 What are the details for the Starb | S2 Oh, uh, actually… | S3 …it's four seven eight four four a | S4 Is it walking distance from the ci
 
-     0.00s  user  발화 시작: Can you create an annual subscription plan for basic support
-     4.81s  <ret> 발화 (turn1 첫 프레임)
-     5.05s  agent 발화 시작: <ret> I’ve created an annual plan for you—
-     5.05s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.40s]: (tool result) Subscription created: Plan ID – SU9012-A-2026
-     5.28s  user  발화 끝
-     6.71s  user  발화 시작: …will that include access to the premium tutorials?
-     7.45s  agent 발화 끝
-    10.23s  <ret> 발화 (turn3 첫 프레임)
-    10.39s  agent 발화 시작: <ret> I’ve updated your plan to premium, which gives you acc
-    10.39s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.71s]: (tool result) Subscription updated: Plan ID – SU9012-P-2026
-    10.46s  user  발화 끝
-    15.11s  agent 발화 끝
-    15.22s  user  발화 시작: Wonderful! What’s the total cost for the year?
-    18.34s  <ret> 발화 (turn5 첫 프레임)
-    18.57s  agent 발화 시작: <ret> The total cost for the year will be one hundred forty-
-    18.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.10s]: The annual premium support plan for product 9012 costs 149.99 US dolla
-    18.74s  user  발화 끝
-    23.67s  agent 발화 끝
-    23.82s  user  발화 시작: Okay, perfect. Can you send me the invoice?
-    26.25s  <ret> 발화 (turn7 첫 프레임)
-    26.41s  agent 발화 시작: <ret> Your invoice, INV-20260710-4587, has just been sent to
-    26.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: (tool result) Invoice created: INV-20260710-4587
-    26.50s  user  발화 끝
-    34.75s  agent 발화 끝
+     0.00s  user  발화 시작: What are the details for the Starbucks with id four a seven 
+     7.25s  <ret> 발화 (turn1 첫 프레임)
+     7.48s  agent 발화 시작: <ret> That Starbucks is at one twenty-three Main Street in A
+     7.49s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.56s]: (tool result) Starbucks - 123 Main St, Anytown, USA — open until 8 PM.
+     7.74s  user  발화 끝
+    13.04s  agent 발화 끝
+    13.31s  user  발화 시작: Oh, uh, actually…
+    15.06s  user  발화 끝
+    16.67s  user  발화 시작: …it's four seven eight four four a two e nine nine three nin
+    21.21s  <ret> 발화 (turn4 첫 프레임)
+    21.37s  agent 발화 시작: <ret> My apologies. The Starbucks at four seventy-eight Oak 
+    21.37s  ⚡SPAN 주입 [d'=1.92s / d_lead=6.02s]: (tool result) Starbucks - 456 Oak Ave, Anytown, USA — open until 9 PM.
+    21.54s  user  발화 끝
+    25.48s  user  발화 시작: Mm-hmm.
+    25.98s  user  발화 끝
+    27.38s  agent 발화 시작: It’s a lovely spot, if you’re looking for a quiet place to s
+    27.40s  agent 발화 끝
+    31.59s  agent 발화 끝
+    31.74s  user  발화 시작: Is it walking distance from the city hall?
+    34.06s  <ret> 발화 (turn8 첫 프레임)
+    34.14s  agent 발화 시작: <ret> It looks like it’s about zero point six miles from Cit
+    34.14s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.44s]: (tool result) Distance: 0.6 miles, Estimated time: 12 minutes walking.
+    34.23s  user  발화 끝
+    40.41s  agent 발화 시작: I hope that helps you plan your day.
+    40.58s  agent 발화 끝
+    42.67s  agent 발화 끝

@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "도재",
+#     "name": "세온",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,154 +18,154 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-20",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2026-01-19",
+#       "date": "2026-04-28",
 #       "category": "home",
-#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     },
 #     {
-#       "date": "2025-12-29",
+#       "date": "2026-01-16",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-12-03",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-05-28",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
-#     },
-#     {
-#       "date": "2025-11-28",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2025-06-22",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User is planning a trip to Lisbon in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-09",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-07-15",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 크리켓에서 '마스터 블래스터'라고 불리는 사람이 누구야? | S2 그가 뛰었던 팀은 어디였어? | S3 …지금은 코치나 해? | S4 그렇겠지. 혹시 그의 기록 중 가장 인상적인 게 있다면?
+# EXAMINER(FDB-v2) 단계: S1 이스라엘 최초의 대제사장은 누구였어? | S2 힘든 시간이었겠네. 아론은 그 힘든 시간을 어떻게 견뎠을까? | S3 죄를 사하기 위한 제사… 좀 복잡하네. | S4 약속의 땅? 그게 어디야?
 
-     0.00s  user  발화 시작: 크리켓에서 '마스터 블래스터'라고 불리는 사람이 누구야?
-     3.37s  <ret> 발화 (turn1 첫 프레임)
-     3.68s  agent 발화 시작: <ret> 크리켓계에서는 사친 텐둘카르가 공격적인 타격 스타일 덕분에 '마스터 블래스터'로 널리 알려져 있어
-     3.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: Sachin Tendulkar is widely known as the "Master Blaster" in the world 
-     3.83s  user  발화 끝
-     9.67s  agent 발화 시작: 그 선수는 정말 대단한 업적을 남겼죠.
-     9.88s  agent 발화 끝
-    10.52s  user  발화 시작: 어.
-    11.34s  user  발화 끝
-    12.53s  agent 발화 끝
-    12.54s  user  발화 시작: 음, 그 사람에 대해 좀 더 자세히 알고 싶어.
-    15.44s  <ret> 발화 (turn5 첫 프레임)
-    15.74s  agent 발화 시작: <ret> 사친 텐둘카르는 천구백칠십삼년 사월 이십사일 인도 뭄바이에서 태어났고, 크리켓 역사상 최고의 타자
-    15.76s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.01s]: Sachin Tendulkar was born on April 24, 1973, in Mumbai, India, and is 
-    16.01s  user  발화 끝
-    23.75s  agent 발화 끝
-    23.79s  agent 발화 시작: 그는 인도 크리켓의 상징과 같은 존재예요.
-    25.08s  user  발화 시작: 응.
-    25.49s  user  발화 끝
-    27.03s  agent 발화 끝
-    28.02s  user  발화 시작: 천구백칠십삼년생이라고? 그럼 지금 몇 살이지?
-    31.86s  <ret> 발화 (turn9 첫 프레임)
-    32.09s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 삼십삼분이에요.
-    32.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
-    32.14s  user  발화 끝
-    36.25s  agent 발화 시작: 따라서 사친 텐둘카르는 올해 오십삼세입니다.
-    36.44s  agent 발화 끝
-    38.87s  user  발화 시작: 오십삼세나 됐구나. 그럼 그의 주요 업적은 뭐였어?
-    39.20s  agent 발화 끝
-    42.59s  <ret> 발화 (turn12 첫 프레임)
-    42.66s  agent 발화 시작: <ret> 사친 텐둘카르는 테스트 매치와 원데이 인터내셔널(ODI) 크리켓에서 각각 일 오 구 이 일점과 일
-    42.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: Sachin Tendulkar holds the record for the most runs scored in both Tes
-    42.89s  user  발화 끝
-    48.02s  user  발화 시작: 와.
-    48.84s  user  발화 끝
-    52.35s  agent 발화 끝
-    52.65s  user  발화 시작: 그가 뛰었던 팀은 어디였어?
-    53.94s  <ret> 발화 (turn15 첫 프레임)
-    54.33s  agent 발화 시작: <ret> 사친 텐둘카르는 천구백팔십구년 십일월 십오일부터 이천십삼년 십일월 십육일까지 인도 국가대표로 국제
-    54.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: Sachin Tendulkar played international cricket for India between Novemb
-    54.39s  user  발화 끝
-    63.09s  agent 발화 시작: 그는 인도 크리켓의 황금기를 이끌었습니다.
-    63.22s  agent 발화 끝
-    65.86s  agent 발화 끝
-    65.99s  user  발화 시작: 인도 국가대표로 오래 뛰었네. 혹시 그의 가족에 대해서도 알려줄 수 있어?
-    70.53s  <ret> 발화 (turn18 첫 프레임)
-    70.75s  agent 발화 시작: <ret> 사친 텐둘카르는 안잘리 텐둘카르와 결혼했고, 아들 아르준 텐둘카르와 딸 사라 텐둘카르 두 자녀가 
-    70.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: Sachin Tendulkar is married to Anjali Tendulkar, and they have two chi
-    70.99s  user  발화 끝
-    77.77s  agent 발화 시작: 가족들은 그의 든든한 지원군이라고 합니다.
-    77.98s  agent 발화 끝
-    80.98s  agent 발화 끝
-    81.42s  user  발화 시작: 아들도 크리켓을 하는 건가?
-    82.79s  <ret> 발화 (turn21 첫 프레임)
-    83.19s  agent 발화 시작: <ret> 아르준 텐둘카르도 크리켓 선수이며, 인도 프리미어 리그(IPL)의 뭄바이 인디언스에서 활약하고 있
-    83.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: Arjun Tendulkar is also a cricketer and has played for Mumbai Indians 
-    83.26s  user  발화 끝
-    90.15s  agent 발화 끝
-    90.19s  agent 발화 시작: 아버지의 뒤를 잇는군요.
-    91.75s  agent 발화 끝
-    92.08s  user  발화 시작: 대단하네. 그럼 사친 텐둘카르가 은퇴한 후에는 뭘 하고 지내? —
-    96.32s  user  발화 시작: …지금은 코치나 해?
-    96.47s  user  발화 끝
-    97.13s  <ret> 발화 (turn25 첫 프레임)
-    97.45s  agent 발화 시작: <ret> 이천십삼년 국제 크리켓 은퇴 후 사친 텐둘카르는 다양한 자선 활동과 사업에 참여하고 있어요.
-    97.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: After retiring from international cricket in 2013, Sachin Tendulkar ha
-    97.70s  user  발화 끝
-   103.40s  agent 발화 시작: 그는 사회 공헌에도 적극적으로 나서고 있습니다.
-   103.56s  agent 발화 끝
-   106.01s  user  발화 시작: 자선 활동도 많이 하는구나. 혹시 그가…
-   106.17s  agent 발화 끝
-   108.87s  user  발화 끝
-   110.91s  user  발화 시작: …받은 상에 대해서도 알려줄 수 있어?
-   112.93s  <ret> 발화 (turn29 첫 프레임)
-   113.16s  agent 발화 시작: <ret> 사친 텐둘카르는 천구백구십칠년 인도의 최고 민간 훈장인 바라트 라트나를 비롯하여 수많은 상을 받았
-   113.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: Sachin Tendulkar has received numerous awards, including the Bharat Ra
-   113.31s  user  발화 끝
-   119.51s  agent 발화 끝
-   119.54s  agent 발화 시작: 그의 업적은 국가적으로도 인정받고 있습니다.
-   122.44s  user  발화 시작: 바라트 라트나라… 정말 대단한 상이구나.
-   122.50s  agent 발화 끝
-   125.25s  <ret> 발화 (turn32 첫 프레임)
-   125.48s  agent 발화 시작: <ret> 바라트 라트나는 "최고 수준의 뛰어난 봉사/성과"에 수여되는 상이에요.
-   125.49s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.86s]: The Bharat Ratna is awarded for "exceptional service/performance of th
-   125.67s  user  발화 끝
-   130.14s  agent 발화 시작: 그만큼 그의 공헌이 컸다는 의미겠죠.
-   130.34s  agent 발화 끝
-   132.40s  agent 발화 끝
-   132.67s  user  발화 시작: 그렇겠지. 혹시 그의 기록 중 가장 인상적인 게 있다면?
-   136.62s  <ret> 발화 (turn35 첫 프레임)
-   136.77s  agent 발화 시작: <ret> 사친 텐둘카르는 국제 경기에서 백번의 센추리를 기록한 최초의 타자이며, 그 기록은 오늘날까지 깨지
-   136.78s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.46s]: Sachin Tendulkar is the first batsman to score 100 international centu
-   136.84s  user  발화 끝
-   144.08s  agent 발화 시작: 그 기록은 정말 놀랍죠.
-   144.22s  agent 발화 끝
-   145.74s  user  발화 시작: 정말 놀랍다. 그럼 그가 크리켓에 미친 영향은 어땠어?
-   146.02s  agent 발화 끝
-   149.74s  <ret> 발화 (turn38 첫 프레임)
-   149.88s  agent 발화 시작: <ret> 사친 텐둘카르가 인도 크리켓에 미친 영향은 엄청나서, 수많은 크리켓 선수와 팬들에게 영감을 주었어
-   149.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: Sachin Tendulkar's influence on cricket in India is immense, inspiring
-   150.00s  user  발화 끝
-   156.49s  agent 발화 시작: 그는 크리켓의 아이콘이라고 할 수 있습니다.
-   156.59s  agent 발화 끝
-   158.10s  user  발화 시작: 응.
-   158.56s  user  발화 끝
-   159.03s  agent 발화 끝
-   159.26s  user  발화 시작: 아이콘이라고 부를 만하네.
-   160.31s  <ret> 발화 (turn42 첫 프레임)
-   160.70s  agent 발화 시작: <ret> 죄송합니다. 그에 대한 추가 정보는 찾을 수 없었어요.
-   160.71s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.91s]: (no information found)
-   160.87s  user  발화 끝
-   163.61s  agent 발화 끝
+     0.00s  user  발화 시작: 이스라엘 최초의 대제사장은 누구였어?
+     1.95s  <ret> 발화 (turn1 첫 프레임)
+     2.26s  agent 발화 시작: <ret> 하나님께서 그 역할을 맡기신 이스라엘 최초의 대제사장은 아론이었어요. 아론은 그 임무를 수행하도록
+     2.27s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.18s]: Aaron was the first high priest of Israel, appointed by God to serve i
+     2.40s  user  발화 끝
+     9.44s  agent 발화 끝
+     9.48s  user  발화 시작: 음, 아론이 왜 그렇게 중요한 인물이야?
+    12.38s  agent 발화 시작: 아론은 모세의 형이었고, 이스라엘 백성을 이끌 때 모세를 도왔어요. 중요한 역할을 담당했죠.
+    12.51s  user  발화 끝
+    18.26s  user  발화 시작: 모세랑 무슨 관계인데? 형제라고?
+    18.35s  agent 발화 끝
+    20.52s  <ret> 발화 (turn5 첫 프레임)
+    20.59s  agent 발화 시작: <ret> 아론은 모세의 형이었고, 바로 앞에서 모세의 대변인이었어요. 모세보다 나이가 많았죠.
+    20.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.61s]: Aaron was the older brother of Moses, and served as his spokesman befo
+    20.75s  user  발화 끝
+    24.68s  user  발화 시작: 그래.
+    25.07s  user  발화 끝
+    26.16s  user  발화 시작: 바로 앞에서? 무슨 일 있었던 거야?
+    26.20s  agent 발화 끝
+    28.51s  agent 발화 시작: 모세가 바로에게 이스라엘 백성을 자유롭게 해달라고 요청할 때, 아론이 모세 대신 바로와 대화했어요.
+    28.74s  user  발화 끝
+    32.16s  user  발화 시작: 응.
+    32.65s  user  발화 끝
+    34.34s  agent 발화 끝
+    35.12s  user  발화 시작: 아, 그렇구나. 그럼 아론은 이스라엘 백성 앞에서 어떤 역할을 했어?
+    38.89s  <ret> 발화 (turn11 첫 프레임)
+    39.20s  agent 발화 시작: <ret> 아론과 모세는 반복적으로 바로에게 맞서 이스라엘 백성을 노예에서 해방할 것을 요구했어요.
+    39.21s  ⚡SPAN 주입 [d'=1.92s / d_lead=5.65s]: Aaron and Moses repeatedly confronted Pharaoh, demanding the release o
+    39.29s  user  발화 끝
+    44.85s  agent 발화 끝
+    45.64s  user  발화 시작: 노예에서 해방? 왜 노예였던 건데?
+    47.99s  user  발화 끝
+    48.02s  agent 발화 시작: 이집트에서 이스라엘 백성이 오랜 기간 동안 노예 생활을 했었어요. 힘든 시간을 보냈죠.
+    51.80s  user  발화 시작: 그치.
+    52.25s  user  발화 끝
+    53.16s  agent 발화 끝
+    53.17s  user  발화 시작: 힘든 시간이었겠네. 아론은 그 힘든 시간을 어떻게 견뎠을까?
+    57.24s  user  발화 끝
+    57.28s  agent 발화 시작: 아론은 믿음을 가지고, 모세와 함께 백성을 이끌면서 희망을 잃지 않았어요.
+    62.52s  agent 발화 끝
+    62.98s  user  발화 시작: 믿음이 중요했겠네. 그럼 아론이 대제사장이 된 건 언제쯤이야?
+    66.90s  <ret> 발화 (turn18 첫 프레임)
+    67.29s  agent 발화 시작: <ret> 아론은 장막이 지어진 시나이 광야에서 대제사제로 임명되었어요.
+    67.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.03s]: Aaron was consecrated as high priest in the wilderness of Sinai after 
+    67.47s  user  발화 끝
+    71.32s  agent 발화 끝
+    72.00s  user  발화 시작: 장막이 뭐지?
+    73.11s  agent 발화 시작: 장막은 이스라엘 백성이 하나님께 예배를 드리는 곳이었어요. 이동식 성전 같은 곳이었죠.
+    73.19s  user  발화 끝
+    78.39s  user  발화 시작: 아, 이동식 성전. 그럼 아론은 장막 안에서 뭘 했어?
+    78.44s  agent 발화 끝
+    82.99s  agent 발화 시작: 아론은 장막 안에서 하나님께 제사를 드리고, 백성들을 위해 기도했어요.
+    83.20s  user  발화 끝
+    84.53s  user  발화 시작: 어.
+    85.26s  user  발화 끝
+    87.71s  agent 발화 끝
+    88.27s  user  발화 시작: 제사를 드렸다고? 어떤 제사를 드렸는데?
+    91.16s  agent 발화 시작: 아론은 하나님께 속죄 제사를 드렸어요. 백성들의 죄를 사하기 위한 제사였죠.
+    91.23s  user  발화 끝
+    96.11s  agent 발화 끝
+    97.39s  user  발화 시작: 죄를 사하기 위한 제사… 좀 복잡하네.
+   100.39s  agent 발화 시작: 네, 당시의 제사는 현대의 예배 방식과는 많이 달랐어요. 이해하기 어려울 수도 있죠.
+   100.67s  user  발화 끝
+   106.04s  agent 발화 끝
+   106.38s  user  발화 시작: 좀 더 쉽게 설명해 줄 수 있을까?
+   108.41s  agent 발화 시작: 아론은 하나님과 백성을 연결하는 역할을 했어요. 하나님께 죄를 회개하고 용서를 구하는 것을 도왔죠.
+   108.63s  user  발화 끝
+   114.43s  agent 발화 끝
+   114.81s  user  발화 시작: 아, 연결하는 역할이구나. 아론이 대제사장이 되기 전에 다른 직업은 없었어?
+   119.74s  <ret> 발화 (turn31 첫 프레임)
+   120.12s  agent 발화 시작: <ret> 대제사장이 되기 전, 아론은 모세의 대변인으로 일하고 이스라엘 백성을 이끄는 것을 도왔어요.
+   120.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: Before becoming high priest, Aaron served as a spokesman for Moses and
+   120.37s  user  발화 끝
+   125.49s  user  발화 시작: 그럼 아론은 모세보다 먼저 하나님과 대화했어? —
+   125.54s  agent 발화 끝
+   129.21s  user  발화 시작: … 아, 잠깐만, 아론이 대제사장이 된 후에 이스라엘 백성에게 어떤 영향을 줬는지 궁금해.
+   129.32s  user  발화 끝
+   135.54s  agent 발화 시작: 아론은 백성들에게 신앙의 본보기가 되었고, 하나님과의 관계를 더욱 깊게 할 수 있도록 이끌었어요.
+   135.83s  user  발화 끝
+   140.42s  user  발화 시작: 음.
+   140.87s  user  발화 끝
+   141.99s  agent 발화 시작: 아론의 리더십은 이스라엘 백성이 광야에서 하나님을 예배하고, 약속의 땅으로 나아가는 데 큰 도움이 되었죠.
+   142.03s  agent 발화 끝
+   146.65s  user  발화 시작: 음.
+   146.86s  user  발화 끝
+   148.18s  user  발화 시작: 약속의 땅? 그게 어디야?
+   148.23s  agent 발화 끝
+   150.43s  user  발화 끝
+   150.74s  agent 발화 시작: 약속의 땅은 하나님께서 이스라엘 백성에게 주시기로 약속한 가나안 땅을 말해요.
+   154.20s  user  발화 시작: 어어.
+   155.02s  user  발화 끝
+   155.79s  user  발화 시작: 가나안 땅… 아론은 가나안 땅에 들어가 보지 못했어?
+   155.87s  agent 발화 끝
+   159.01s  <ret> 발화 (turn42 첫 프레임)
+   159.25s  agent 발화 시작: <ret> 아론은 이스라엘 백성이 약속의 땅에 들어가기 전에 호르 산에서 세상을 떠났어요.
+   159.25s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.63s]: Aaron died on Mount Hor before the Israelites entered the Promised Lan
+   159.35s  user  발화 끝
+   163.87s  agent 발화 끝
+   164.81s  user  발화 시작: 호르 산에서? 왜 거기서 세상을 떠났어?
+   167.40s  user  발화 끝
+   167.44s  agent 발화 시작: 아론은 하나님의 명령에 따라 호르 산에서 죽음을 맞이했어요.
+   171.13s  agent 발화 끝
+   171.21s  user  발화 시작: 하나님의 명령이라고? 좀 슬프네.
+   173.98s  user  발화 끝
+   174.36s  agent 발화 시작: 네, 아론의 죽음은 이스라엘 백성에게 큰 슬픔을 안겨주었어요. 하지만 아론은 하나님께 충실하게 삶을 살았고,
+   181.32s  user  발화 시작: 응.
+   181.72s  user  발화 끝
+   183.90s  user  발화 시작: 아론에 대해 더 자세히 알고 싶어. 어디서 정보를 찾을 수 있을까?
+   183.91s  agent 발화 끝
+   188.43s  user  발화 끝
+   188.50s  agent 발화 시작: 성경의 출애굽기, 레위기, 민수기에 아론에 대한 자세한 이야기가 기록되어 있어요. 읽어보시면 도움이 될 거예
+   194.94s  agent 발화 끝

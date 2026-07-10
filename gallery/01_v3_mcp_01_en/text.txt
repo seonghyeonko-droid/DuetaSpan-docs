@@ -1,86 +1,98 @@
 v3_mcp_01_en src=mcp style=v2
-SYSTEM: <system> You are Liona, a upbeat and supportive wellness coach who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Thelin, a practical and reassuring wellness coach who helps people with planning trips and time off. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_01",
-    "name": "Freya",
+    "name": "Alice",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
     },
-    "nationality": "American",
+    "nationality": "Australian",
     "gender": "female",
     "age_range": "40s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-11",
-      "category": "work",
-      "text": "User works as a marketing manager."
+      "date": "2026-06-17",
+      "category": "diet",
+      "text": "User is vegan."
     },
     {
-      "date": "2026-05-07",
+      "date": "2026-03-04",
       "category": "seat",
       "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2026-03-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Korean BBQ."
-    },
-    {
-      "date": "2026-01-26",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
-    },
-    {
-      "date": "2025-10-16",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
-    },
-    {
-      "date": "2025-10-12",
+      "date": "2026-02-21",
       "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
+      "text": "User is planning a trip to Iceland in October."
+    },
+    {
+      "date": "2025-11-13",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-06-19",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-03",
-      "title": "Setting up a home network",
+      "date": "2026-03-19",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I need to find some good museums in London, could you help with that?
-[  3.63s][moshi] ⟨ret@3.55s⟩ ⟦⚡SPAN@3.63s: (tool result) The British Museum — 4.5 stars, 4.7m reviews; National Gallery — 4.6 stars, 3.9m reviews; Victor⟧ London has so many great museums. The British Museum has 4.7 million reviews, and the National Gallery has 3.9 million.
-      CALL: {"function": "maps_text_search", "arguments": {"query": "museums in London"}}
-[ 12.26s][user ] Hmm, the National Gallery sounds interesting, but is it free to ⟨ret@16.59s⟩ enter?
-[ 16.99s][moshi] ⟦⚡SPAN@16.99s: Admission to the National Gallery is free, except for special exhibitions.⟧ That’s a great choice! Admission to the National Gallery is free, except for any special exhibits they might have.
-[ 22.36s][user ] «backchannel» Yeah, yeah.
-[ 25.33s][user ] Oh, okay, good to know. And uh, what’s the weather like there ⟨ret@29.31s⟩ right now?
-[ 29.55s][moshi] ⟦⚡SPAN@29.55s: (tool result) 18.0°C, humidity 65%, wind 11.2 km/h⟧ It's currently 18 degrees Celsius in London, with 65% humidity and a wind speed of 11.2 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "London"}}
-[ 33.68s][user ] «backchannel» Really?
-[ 37.96s][user ] That sounds lovely! Actually, I need to book a hotel near there for ⟨ret@42.42s⟩ tonight.
-[ 42.65s][moshi] ⟦⚡SPAN@42.66s: (tool result) The Resident Covent Garden — £189/night, 4.7 stars; The Fielding Hotel — £210/night, 4.5 stars; ⟧ I found a few options! The Resident Covent Garden is £189 a night, with a 4.7 star rating.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "near National Gallery London", "check_in_date": "today"}}
-[ 50.59s][user ] £189 sounds alright. Can you book that one for me, please?
-[ 55.65s][moshi] ⟨ret@55.57s⟩ ⟦⚡SPAN@55.65s: (tool result) Booking confirmed for The Resident Covent Garden, check-in today, confirmation ID: GH729KL.⟧ Your booking at The Resident Covent Garden is confirmed for tonight, confirmation ID is GH729KL.
-      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "The Resident Covent Garden", "check_in_date": "today"}}
-[ 60.70s][user ] «backchannel» Wow.
-[ 62.91s][user ] Excellent! Now, can you find me a good Italian ⟨ret@66.49s⟩ restaurant nearby?
-[ 66.89s][moshi] ⟦⚡SPAN@66.89s: (tool result) Lina Stores Soho — 4.6 stars, £20-£30; Padella — 4.5 stars, £15-£25; Bocca di Lupo — 4.7 stars, ⟧ There are several great Italian restaurants nearby! Lina Stores Soho has 4.6 stars and costs between £20 and £30.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "near The Resident Covent Garden"}}
-[ 72.58s][user ] «backchannel» Oh.
-[ 76.26s][user ] Bocca di Lupo sounds nice, a little pricey but nice. Thanks so much for all your help!
-[ 81.57s][moshi] You’re very welcome! Bocca di Lupo is a lovely choice, enjoy your evening and your trip to London. Remember to be kind to yourself while you explore.
+[  0.00s][user ] I need you to set the user agent to CustomCrawler version two point five.
+[  4.38s][moshi] ⟨ret@4.30s⟩ ⟦⚡SPAN@4.38s: (tool result) {"user-agent": "CustomCrawler version 2.5"}⟧ Alright, I’ve set the user agent to CustomCrawler version two point five for that request.
+      CALL: {"function": "tavily-crawl", "arguments": {"url": "https://httpbin.org/headers", "user_agent": "CustomCrawler version 2.5"}}
+[  6.72s][user ] «backchannel» Yeah, yeah.
+[ 10.26s][user ] Hmm, that’s good. What’s the weather like in Seoul ⟨ret@13.57s⟩ right now?
+[ 13.97s][moshi] ⟦⚡SPAN@13.97s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is twenty-three point zero degrees Celsius, with seventy-four percent humidity and a five point five kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 17.66s][user ] «backchannel» Right.
+[ 23.39s][user ] That sounds…pleasant. I’m thinking of a little getaway.
+[ 26.91s][moshi] A getaway sounds lovely! Do you have any destinations in mind, or are you open to suggestions? I can help you plan something relaxing.
+[ 34.90s][user ] I’m thinking maybe Busan. Are there any good hotels there?
+[ 38.33s][moshi] ⟨ret@38.25s⟩ ⟦⚡SPAN@38.33s: (tool result) Hotel LCT The Prime — ₩150,000/night; Paradise Hotel Busan — ₩220,000/night; Park Hyatt Busan — ⟧ In Busan, Hotel LCT The Prime is one hundred fifty thousand won a night, Paradise Hotel Busan is two hundred twenty thousand, and Park Hyatt Busan is three hundred thousand.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Busan"}}
+[ 49.24s][user ] Wow, Park Hyatt is…expensive. What about something a little more affordable?
+[ 55.34s][moshi] You’re right to consider your budget. I can refine the search. Do you have a price range in mind for a more affordable option?
+[ 58.62s][user ] «backchannel» Mm-hmm.
+[ 63.44s][user ] Uh, under a hundred ⟨ret@65.06s⟩ thousand won.
+[ 65.45s][moshi] ⟦⚡SPAN@65.46s: (tool result) Hotel Mato — ₩85,000/night; Busan Station Capsule Hotel — ₩60,000/night⟧ Hotel Mato is eighty-five thousand won per night, and the Busan Station Capsule Hotel is sixty thousand. Would either of those be of interest?
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Busan", "max_price": 100000}}
+[ 76.45s][user ] The capsule hotel sounds…minimalist. ⟨ret@79.26s⟩
+[ 79.48s][moshi] I understand ⟦⚡SPAN@80.54s: Hotel Mato offers free Wi-Fi and breakfast.⟧ wanting a bit more comfort. Hotel Mato offers complimentary Wi-Fi and breakfast, which might be a nice convenience for your trip. It seems a good balance of price and amenities.
+[ 90.25s][user ] That sounds better. Can you check if there’s anything to *do* in Busan?
+[ 94.60s][moshi] ⟨ret@94.53s⟩ ⟦⚡SPAN@94.61s: (tool result) Haeundae Beach, Gamcheon Culture Village, Jagalchi Fish Market, Taejongdae Park⟧ Busan has Haeundae Beach, Gamcheon Culture Village, Jagalchi Fish Market, and Taejongdae Park—lots of exciting options to explore.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Busan"}}
+[103.55s][user ] Gamcheon Culture Village…that sounds interesting. What’s it known ⟨ret@107.81s⟩ for?
+[108.21s][moshi] ⟦⚡SPAN@108.21s: Gamcheon Culture Village is known for its colorful houses and art installations.⟧ Gamcheon Culture Village is well known for its vibrant, colorful houses and unique art installations, making it quite a picturesque spot.
+[110.55s][user ] «backchannel» Yeah.
+[117.94s][user ] Okay, good to know. Can you find me bus tickets from Seoul to Busan for, say, next Friday?
+[122.93s][moshi] ⟨ret@122.77s⟩ ⟦⚡SPAN@122.93s: (tool result) 14:00 — ₩25,000; 16:30 — ₩28,000; 19:00 — ₩26,000⟧ There’s a bus at two PM for twenty-five thousand won, one at four thirty for twenty-eight thousand, and another at seven PM for twenty-six thousand.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"departure_city": "Seoul", "arrival_city": "Busan", "date": "2026-07-17"}}
+[131.94s][user ] Let’s go with the two PM ⟨ret@134.04s⟩ bus.
+[134.28s][moshi] ⟦⚡SPAN@134.28s: (tool result) Confirmation ID: BX749Z⟧ Excellent. Your bus ticket from Seoul to Busan for next Friday at two PM is confirmed. Your confirmation ID is BX749Z.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"departure_city": "Seoul", "arrival_city": "Busan", "date": "2026-07-17", "time": "14:00"}}
+[142.77s][user ] Perfect. Thank you, Thelin.
+[144.55s][moshi] You're very welcome! I'm glad I could help with planning your trip. Remember to pack comfortably, and enjoy Busan.

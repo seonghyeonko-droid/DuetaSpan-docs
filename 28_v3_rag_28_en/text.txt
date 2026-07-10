@@ -1,46 +1,54 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Hin, a kind and steady life coach who helps people with grief and change. <system>
+SYSTEM: <system> You are Miana, a grounded and empathetic counselor who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Charlie",
+    "name": "Jordan",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
     },
-    "nationality": "American",
+    "nationality": "British",
     "gender": "non-binary",
-    "age_range": "40s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-15",
+      "date": "2026-04-26",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2026-01-16",
       "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "text": "User is allergic to shellfish."
     },
     {
-      "date": "2026-01-19",
+      "date": "2025-07-29",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2025-12-02",
-      "category": "home",
-      "text": "User's home address is 267 Pine Court."
-    },
-    {
-      "date": "2025-06-22",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
+      "date": "2025-05-28",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-19",
+      "date": "2026-05-10",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2026-01-06",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -48,60 +56,57 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-10-13",
+      "date": "2025-08-04",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
         "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-09-09",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I've been feeling so lost lately, just… adrift.
-[  2.93s][moshi] It's alright to feel lost sometimes. Change can be unsettling, and it’s brave of you to acknowledge that.
-[  6.09s][user ] «backchannel» Yeah.
-[  9.85s][user ] It’s just… everything feels different since my grandmother passed.
-[ 13.35s][moshi] Grief changes everything, doesn't it? It reshapes our world, and it takes time to adjust to that new landscape.
-[ 15.44s][user ] «backchannel» Yeah, yeah.
-[ 21.16s][user ] I keep replaying memories. It’s exhausting.
-[ 24.13s][moshi] That’s very common. Memories are a natural part of grieving—a way of keeping loved ones close.
-[ 26.79s][user ] «backchannel» Yeah.
-[ 30.09s][user ] Do you think it ever gets easier? Really?
-[ 32.35s][moshi] It does shift, though it won’t disappear. The sharp edges soften, and you learn to carry the love alongside the sadness.
-[ 39.68s][user ] I’m trying to focus on the good times, but…
-[ 41.66s][moshi] Focusing on positive memories is a wonderful step. It honors their life and brings a little light to your heart.
-[ 46.00s][user ] «backchannel» Yeah.
-[ 48.89s][user ] Tell me about Sachin Tendulkar. I remember my grandfather loved ⟨ret@52.84s⟩ cricket.
-[ 53.23s][moshi] ⟦⚡SPAN@53.24s: Sachin Ramesh Tendulkar is widely regarded as one of the greatest batsmen in the history of cricket.⟧ Many consider Sachin Ramesh Tendulkar to be one of the greatest batsmen in cricket history. Perhaps sharing stories about him will bring back fond memories of your grandfather.
-[ 58.26s][user ] «backchannel» Yeah, totally.
-[ 62.75s][user ] Master Blaster, wasn’t that his nickname?
-[ 65.11s][moshi] ⟨ret@65.04s⟩ ⟦⚡SPAN@65.12s: Sachin Tendulkar earned the nickname "Master Blaster" for his aggressive batting style and powerful shots.⟧ He earned the nickname “Master Blaster” because of his aggressive batting style and powerful shots.
-[ 70.35s][user ] What was his highest score in Test ⟨ret@72.53s⟩ cricket?
-[ 72.76s][moshi] ⟦⚡SPAN@72.77s: Sachin Tendulkar’s highest score in Test cricket is 248 not out, which he achieved against Sri Lanka in 2010.⟧ His highest score in Test cricket was 248 not out, achieved against Sri Lanka in 2010.
-[ 78.00s][user ] «backchannel» Wow.
-[ 79.82s][user ] That’s amazing. He really was something, wasn't he?
-[ 82.63s][moshi] He truly was. His dedication and skill inspired so many people.
-[ 85.70s][user ] «backchannel» Yeah.
-[ 86.67s][user ] Was he ever part of a World Cup winning ⟨ret@88.91s⟩ team?
-[ 89.30s][moshi] ⟦⚡SPAN@89.31s: Sachin Tendulkar was a member of the Indian cricket team that won the 2011 Cricket World Cup.⟧ He was part of the Indian team that won the 2011 Cricket World Cup.
-[ 93.81s][user ] I think my grandfather watched that game.
-[ 96.14s][moshi] «interrupted» That would have been a special moment, shared with someone he loved—
-[ 98.59s][user ] «interrupts_prev» …do you think talking about him will make me feel *worse*, though?
-[101.77s][moshi] ⟨ret@101.69s⟩ Sometimes, it can feel ⟦⚡SPAN@103.29s: Avoiding difficult emotions can sometimes delay the healing process, as acknowledging and processing them is i⟧ safer to avoid the sadness. But avoiding difficult emotions can delay healing, as acknowledging them is important for grief. It’s a delicate balance, and you’re the best judge of what you can handle.
-[115.45s][user ] I guess. It’s just… hard to know what to do.
-[118.43s][moshi] It is. There’s no right or wrong way to grieve. Be kind to yourself, and allow yourself to feel whatever arises.
-[125.60s][user ] What’s the weather like in Seoul right ⟨ret@127.33s⟩ now?
-[127.57s][moshi] ⟦⚡SPAN@127.57s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently 23.0 degrees Celsius in Seoul, with 74 percent humidity and a 5.5 kilometer per hour wind. A gentle breeze, perhaps a good day for a quiet walk.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[139.18s][user ] That sounds… peaceful. Thank you, Hin.
-[141.74s][moshi] You’re very welcome. Remember, peace isn't the absence of sadness, but finding space *with* it.
+[  0.00s][user ] I’ve been having trouble sleeping lately. Any advice?
+[  2.92s][moshi] It’s completely normal to experience sleep difficulties from time to time. Focusing on creating a relaxing bedtime routine can often help.
+[ 11.73s][user ] That sounds good…
+[ 14.85s][user ] …but what actually *is* a good routine?
+[ 17.56s][moshi] A good routine is personalized, but generally involves calming activities before bed. Things like a warm bath or reading a book can be very effective.
+[ 26.45s][user ] I already read, but I still toss and turn.
+[ 29.17s][moshi] Sometimes, it’s less about what you *do* and more about what you avoid. Try to limit screen time and caffeine before bed.
+[ 34.86s][user ] «backchannel» Uh-huh.
+[ 36.63s][user ] I do avoid caffeine, but I look at my phone a lot.
+[ 39.35s][moshi] That’s a common habit, and a tough one to break. The blue light emitted from screens can interfere with melatonin production.
+[ 44.11s][user ] «backchannel» Yeah.
+[ 46.70s][user ] Melatonin? What does that ⟨ret@48.45s⟩ do?
+[ 48.85s][moshi] ⟦⚡SPAN@48.85s: Melatonin is a hormone primarily produced by the pineal gland that regulates sleep and wakefulness.⟧ Melatonin is a hormone that your body makes to help regulate when it’s time to sleep and when it’s time to wake—it’s really important for a healthy sleep cycle. It's often called the sleep hormone for a reason.
+[ 59.78s][user ] Okay, so less phone. What about… dreams?
+[ 62.82s][moshi] Dreams are a fascinating part of sleep, and often reflect our subconscious thoughts and feelings.
+[ 66.73s][user ] «backchannel» Okay.
+[ 68.11s][user ] Mine are always weird and stressful.
+[ 70.18s][moshi] It’s common for dreams to feel strange or unsettling. They can be a way for your mind to process emotions.
+[ 76.17s][user ] Do people dream in color, or is that just ⟨ret@78.68s⟩ movies?
+[ 79.08s][moshi] «interrupted» ⟦⚡SPAN@79.08s: Most people dream in color, although a significant minority report dreaming primarily in black and white.⟧ Actually, most people do experience dreams in color, though a surprising number—
+[ 83.11s][user ] «interrupts_prev» …but does that change if you’ve never seen color?
+[ 85.72s][moshi] That’s a really insightful question. It seems people born without color vision still dream in shades, just not the ones we typically experience.
+[ 93.37s][user ] Wow, that’s… something. Back to routines, what about waking up?
+[ 98.08s][moshi] A consistent wake-up time, even on weekends, is incredibly beneficial for regulating your body’s natural clock.
+[104.50s][user ] I hate mornings.
+[105.73s][moshi] Many people do! It can take time to adjust to a new routine, and it’s okay to start small.
+[107.85s][user ] «backchannel» Yeah.
+[112.76s][user ] What’s the history of even *thinking* ⟨ret@115.02s⟩ about sleep?
+[115.41s][moshi] ⟦⚡SPAN@115.42s: Ancient Egyptians believed in the god Morpheus, representing dreams, and developed specific rituals for induci⟧ Thinking about sleep as something we need to actively manage goes way back—ancient Egyptians even had a god, Morpheus, associated with dreams and sleep rituals.
+[122.94s][user ] «backchannel» Mm-hmm.
+[125.17s][moshi] They really valued restful sleep and saw it as connected to health and well-being.
+[129.55s][moshi] It’s amazing how much wisdom from the past still resonates today.
+[133.95s][user ] So, gods and rituals… anything about ⟨ret@137.08s⟩ priests?
+[137.31s][moshi] ⟦⚡SPAN@137.32s: In ancient Israel, the High Priest served in the Temple, with duties including maintaining the sacred fire ove⟧ In ancient Israel, the High Priest had a very important role, including keeping the sacred fire burning throughout the night— It was a significant responsibility, requiring wakefulness and dedication.
+[148.54s][user ] Was there a *first* ⟨ret@150.01s⟩ high priest?
+[150.41s][moshi] ⟦⚡SPAN@150.41s: Aaron, brother of Moses, is traditionally regarded as the first High Priest in the Hebrew Bible.⟧ Traditionally, Aaron, who was Moses's brother, is considered the very first High Priest in the Hebrew Bible. He’s a very important figure in religious history.
+[160.16s][user ] Moses’s brother? What did he actually ⟨ret@162.58s⟩ *do*?
+[162.90s][moshi] ⟦⚡SPAN@162.90s: Aaron assisted Moses in speaking to Pharaoh, oversaw the construction of the Tabernacle, and consecrated pries⟧ Aaron assisted Moses in communicating with Pharaoh, and he oversaw building the Tabernacle—he was also responsible for consecrating other priests for the Israelite people.
+[172.36s][user ] That sounds… busy. I just want to sleep.
+[175.37s][moshi] It’s understandable to feel overwhelmed. Perhaps we can focus on creating a simple bedtime routine for you tonight?
+[180.11s][user ] «backchannel» Mm-hmm.
+[182.02s][user ] Okay, that sounds good. Maybe just… no phone.
+[185.09s][moshi] That's a wonderful starting point. Small changes can make a big difference over time.

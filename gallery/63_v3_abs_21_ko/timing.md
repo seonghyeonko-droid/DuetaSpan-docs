@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_21",
-#     "name": "예정",
+#     "name": "가현",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,79 +12,56 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
+#     "gender": "male",
 #     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
-#     },
-#     {
-#       "date": "2025-12-10",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-11-02",
+#       "date": "2026-02-16",
 #       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-09-02",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2026-01-22",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
 #     },
 #     {
-#       "date": "2025-07-14",
-#       "category": "diet",
-#       "text": "User is gluten-free."
+#       "date": "2025-08-23",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-08-07",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-28",
-#       "title": "Setting up a home network",
+#       "date": "2026-02-01",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-17",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 로키 산맥이 북동부 앨버타에 처음… | S2 …생겨난 게 몇 년 전이야? | S3 음… | S4 맞아, 그럴 것 같아.
 
-     0.00s  user  발화 시작: 로키 산맥이 북동부 앨버타에 처음…
-     2.58s  user  발화 끝
-     4.25s  user  발화 시작: …생겨난 게 몇 년 전이야?
-     5.99s  user  발화 끝
-     6.18s  agent 발화 시작: 아, 그 질문은 제가 지금 바로 답해 드리기 어려울 것 같아요. 기록된 정보가 없는 부분이라서요.
-    11.26s  agent 발화 끝
-    11.79s  user  발화 시작: 음…
-    12.28s  user  발화 끝
-    12.46s  agent 발화 시작: 그래도 혹시 다른 궁금한 점이 있으시면 언제든지 편하게 말씀해 주세요. 제가 도울 수 있는 다른 부분이 있을
-    14.80s  user  발화 시작: 예.
-    15.30s  user  발화 끝
-    18.20s  agent 발화 끝
-    18.31s  agent 발화 시작: 새로운 도전을 앞두고 막막함을 느끼시는 분들이 많은데, 작은 성공 경험부터 쌓아가는 게 중요하다고 생각해요.
-    23.94s  user  발화 시작: 맞아, 그럴 것 같아.
-    24.05s  agent 발화 끝
-    25.45s  user  발화 끝
-    25.66s  agent 발화 시작: 자신감을 키우는 데 도움이 될 만한 이야기를 해 드릴까요? 아니면 다른 주제로 넘어가 볼까요?
-    30.85s  agent 발화 끝
+     0.00s  user  발화 시작: 아리스토텔레스가 진공의 존재를 시험하기 위해 무엇을 조사했나요?
+     3.89s  <ret> 발화 (turn1 첫 프레임)
+     4.12s  agent 발화 시작: <ret> 아리스토텔레스가 진공의 존재를 확인하기 위해 구체적으로 어떤 조사를 진행했는지는 현재까지 알려진 
+     4.13s  ⚡SPAN 주입 [d'=0.64s / d_lead=6.16s]: (no information found)
+     4.17s  user  발화 끝
+    10.28s  agent 발화 끝
+    10.73s  user  발화 시작: 음…
+    11.22s  user  발화 끝
+    11.60s  agent 발화 시작: 혹시 다른 주제에 대해 이야기해 볼까요? 공부나 동기 부여에 대해 제가 도와드릴 수 있어요.
+    15.87s  agent 발화 끝
+    16.35s  user  발화 시작: 아니요, 괜찮아요. 그냥 궁금해서 물어봤어요.
+    18.72s  agent 발화 시작: 그렇군요. 궁금한 점이 생기면 언제든지 저에게 말씀해 주세요. 제가 아는 선에서 최대한 도와드릴게요.
+    18.89s  user  발화 끝
+    24.09s  agent 발화 끝

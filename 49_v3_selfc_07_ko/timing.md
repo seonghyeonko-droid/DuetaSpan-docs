@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "수아",
+#     "name": "수서",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,53 +12,51 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-05",
-#       "category": "work",
-#       "text": "User works as a graduate student."
+#       "date": "2026-02-03",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-09",
+#       "date": "2025-07-26",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     },
+#     {
+#       "date": "2025-07-13",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-07-02",
 #       "category": "cuisine",
 #       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2026-03-11",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2026-01-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in December."
-#     },
-#     {
-#       "date": "2026-01-12",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
-#     },
-#     {
-#       "date": "2025-12-07",
-#       "category": "diet",
-#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-10",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-01",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     },
 #     {
-#       "date": "2026-05-05",
+#       "date": "2026-02-05",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-29",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -68,35 +66,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 기본 지원에 대한 연간 구독 플랜을 만들어 줄 수 있을까요,  | S2 네, 다음 주에 뉴욕에 가는데— | S3 … 혹시 그 호텔 예약도 도와줄 수 있나요? | S4 제인 호텔이 괜찮아 보이네요.
+# EXAMINER(FDB-v2) 단계: S1 스타벅스 아이디 사칠팔사사 이이구구삼구오아투 찾아서 자세한 정 | S2 아, 잠깐만. 사칠팔사사 이이구구삼구오아투가 아니라… | S3 …사칠팔사사 이이구구삼구오아삼이 맞는 것 같아. | S4 오, 별점도 좋네.
 
-     0.00s  user  발화 시작: 기본 지원에 대한 연간 구독 플랜을 만들어 줄 수 있을까요, 제품 번호는 구천십이입니다.
-     5.83s  user  발화 끝
-     5.87s  <ret> 발화 (turn1 첫 프레임)
-     6.10s  agent 발화 시작: <ret> 제품 구천십이에 대한 연간 기본 지원 구독 플랜을 만들었습니다. 확인 번호는 칠b4n9x입니다. 
-     6.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) Subscription plan created: annual basic support for prod
-    16.91s  agent 발화 끝
-    17.41s  user  발화 시작: 음… 아니요, 그런데 지금 뉴욕 날씨가 어때요?
-    20.45s  <ret> 발화 (turn3 첫 프레임)
-    20.74s  user  발화 끝
-    20.76s  agent 발화 시작: <ret> 현재 뉴욕은 맑고, 기온은 이십팔 점 삼도, 습도는 육십오%, 바람은 시속 팔 점 이킬로미터입니다
-    20.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: (tool result) 28.3°C, humidity 65%, wind 8.2 km/h, clear skies.
-    29.95s  user  발화 시작: 네, 다음 주에 뉴욕에 가는데—
-    30.03s  agent 발화 끝
-    31.70s  user  발화 끝
-    31.72s  user  발화 시작: … 혹시 그 호텔 예약도 도와줄 수 있나요?
-    33.80s  user  발화 끝
-    33.89s  agent 발화 시작: 호텔 예약도 도와드릴 수 있습니다. 어떤 종류의 호텔을 찾으세요?
-    38.87s  user  발화 시작: 음… 맨해튼에 있는 가성비 좋은 호텔을 찾고 있어요.
-    38.89s  agent 발화 끝
-    43.21s  user  발화 끝
-    43.29s  <ret> 발화 (turn8 첫 프레임)
-    43.53s  agent 발화 시작: <ret> 맨해튼에서 가성비 좋은 호텔로는 제인 호텔이 일박에 백오십달러, 더 포드 호텔이 백이십달러, 프리
-    43.53s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.30s]: (tool result) The Jane Hotel - $150/night, The Pod Hotels - $120/night
-    49.03s  user  발화 시작: 와.
-    49.39s  user  발화 끝
-    53.83s  agent 발화 끝
-    54.59s  user  발화 시작: 제인 호텔이 괜찮아 보이네요.
-    56.56s  user  발화 끝
-    56.58s  agent 발화 시작: 제인 호텔이 마음에 드시는군요. 정말 좋은 선택이에요. 분위기가 독특하고, 위치도 좋다고 들었어요.
-    63.63s  agent 발화 끝
+     0.00s  user  발화 시작: 스타벅스 아이디 사칠팔사사 이이구구삼구오아투 찾아서 자세한 정보 좀 알려줘.
+     5.07s  <ret> 발화 (turn1 첫 프레임)
+     5.18s  user  발화 끝
+     5.30s  agent 발화 시작: <ret> 서울 강남구 대치동 선릉로 이십팔에 있는 스타벅스에 대한 정보를 찾으셨네요. 그곳은 커피 전문점이
+     5.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) Starbucks, 28 Seolleung-ro, Daechi-dong, Gangnam-gu, Seo
+     9.07s  user  발화 시작: 응응.
+     9.47s  user  발화 끝
+    12.71s  agent 발화 끝
+    12.84s  user  발화 시작: 아, 잠깐만. 사칠팔사사 이이구구삼구오아투가 아니라…
+    16.68s  user  발화 끝
+    18.09s  user  발화 시작: …사칠팔사사 이이구구삼구오아삼이 맞는 것 같아.
+    21.45s  user  발화 끝
+    21.46s  <ret> 발화 (turn5 첫 프레임)
+    21.70s  agent 발화 시작: <ret> 서울 강남구 대치동 선릉로 이십팔에 있는 스타벅스는 별점 사 점 이점의 커피 전문점입니다.
+    21.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Starbucks, 28 Seolleung-ro, Daechi-dong, Gangnam-gu, Seo
+    28.48s  user  발화 시작: 오, 별점도 좋네.
+    28.51s  agent 발화 끝
+    29.62s  agent 발화 시작: 네, 많은 분들이 좋아하시는 곳이랍니다.
+    29.63s  user  발화 끝
+    32.20s  agent 발화 끝

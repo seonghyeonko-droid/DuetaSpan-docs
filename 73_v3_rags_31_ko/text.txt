@@ -1,71 +1,55 @@
 v3_rags_31_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 우정과 사교 생활에 어려움을 겪는 사람들을 돕는 격려적이고 비판적이지 않은 상담사 Elelil입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 가족 및 관계에 대한 도움을 주는 부드럽고 사색적인 개인 가이드, Baera입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "우호",
+    "name": "예민",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 20s",
+    "gender": "male",
+    "age_range": "early 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-05-09",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2026-06-03",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-03-08",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "date": "2026-04-10",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
     },
     {
-      "date": "2025-09-02",
-      "category": "home",
-      "text": "User's home address is 서울 종로구 세종대로 175."
+      "date": "2025-11-12",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in October."
     },
     {
-      "date": "2025-06-09",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2025-08-06",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-05",
-      "title": "Comparing gym memberships",
+      "date": "2025-08-30",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-09-19",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-06-21",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 미녀와 야수에서 벨 아빠 역할을 누가 했는지 ⟨ret@2.93s⟩ 궁금해.
-[  3.17s][moshi] ⟦⚡SPAN@3.17s: Kevin Kline played Maurice, Belle’s father, in the 2017 live-action adaptation of Beauty and the Beast.⟧ 벨의 아빠 모리스 역할은 케빈 클라인 씨가 맡았답니다. 영화는 이천십칠년에 개봉했어요.
+[  0.00s][user ] 이천십육년에 민주당 후보로 누가 ⟨ret@2.80s⟩ 출마했었지?
+[  3.04s][moshi] ⟦⚡SPAN@3.04s: Bernie Sanders ran for president on the Democratic ticket in 2016 but lost the nomination to Hillary Clinton.⟧ 이천십육년 민주당 후보로는 버니 샌더스 씨가 출마하셨는데, 결국 힐러리 클린턴 씨가 후보 자리를 얻으셨답니다.

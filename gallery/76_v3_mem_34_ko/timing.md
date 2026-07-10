@@ -4,110 +4,68 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "연담",
+#     "name": "태준",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "female",
+#     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-11",
+#       "date": "2026-04-08",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-12-14",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
-#       "date": "2026-04-01",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-09-11",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
-#       "date": "2026-01-07",
-#       "category": "home",
-#       "text": "User's home address is 인천 연수구 송도동 12-5."
-#     },
-#     {
-#       "date": "2025-12-13",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "date": "2025-09-06",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-27",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-07-03",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 루낙스님. 요즘 너무 바빠서 좀 지치네요. | S2 흠… 시간이 좀 늦은 것 같기도 하고… | S3 아, 버스가 더 빠르네요. 버스표 예매 좀 도와주시겠어요? | S4 음… 해운대는 꼭 가보고 싶어요.
 
-     0.00s  agent 발화 시작: 안녕하세요, 연담님. 저는 여러분의 건강과 일상 습관을 도와드리는 에이전트, 루낙스입니다.
-     5.90s  user  발화 시작: 안녕하세요, 루낙스님. 요즘 너무 바빠서 좀 지치네요.
-     6.26s  agent 발화 끝
-    10.04s  agent 발화 시작: 바쁘신 와중에 건강을 챙기시는 게 중요합니다. 혹시 어디로 이동하시는 계획이 있으신가요?
-    10.25s  user  발화 끝
-    15.88s  agent 발화 끝
-    17.37s  user  발화 시작: 네, 다음 주에 중요한 회의가 있어서 부산에 가야 해요.
-    20.52s  <ret> 발화 (turn4 첫 프레임)
-    20.68s  agent 발화 시작: <ret> 집 주소는 인천 연수구 송도동 일 이 오번지입니다. 부산까지 어떻게 이동하실 계획이신가요?
-    20.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: [2026-01-07] User's home address is 인천 연수구 송도동 12-5.
-    20.74s  user  발화 끝
-    23.17s  user  발화 시작: 네.
-    23.62s  user  발화 끝
-    26.57s  user  발화 시작: 음… KTX를 탈까 생각 중인데, 혹시 지금 예약하면 괜찮을까요?
-    26.61s  agent 발화 끝
-    31.36s  <ret> 발화 (turn7 첫 프레임)
-    31.52s  agent 발화 시작: <ret> 이천이십육년 칠월 십칠일 오후 두시에 서울역에서 부산역으로 가는 KTX 백일편이 있습니다. 두시간
-    31.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.70s]: (tool result) 2026-07-17 14:00 KTX 101, Seoul Station to Busan Station
-    31.66s  user  발화 끝
-    42.22s  agent 발화 끝
-    42.45s  user  발화 시작: 흠… 시간이 좀 늦은 것 같기도 하고…
-    44.80s  agent 발화 시작: 혹시 다른 시간대를 알아보실까요? 아니면 다른 교통편을 —
-    44.95s  user  발화 끝
-    47.62s  user  발화 시작: …혹시 송도역에서 바로 가는 버스는 없을까요?
-    48.27s  agent 발화 끝
-    50.58s  <ret> 발화 (turn11 첫 프레임)
-    50.66s  agent 발화 시작: <ret> 이천이십육년 칠월 십칠일 오전 열시에 송도역에서 부산역으로 가는 버스가 있습니다. 네시간 삼십분 
-    50.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) 2026-07-17 10:00, Songdo Station to Busan Station, 4 hou
-    50.67s  user  발화 끝
-    59.42s  agent 발화 끝
-    59.83s  user  발화 시작: 아, 버스가 더 빠르네요. 버스표 예매 좀 도와주시겠어요?
-    63.40s  <ret> 발화 (turn13 첫 프레임)
-    63.56s  agent 발화 시작: <ret> 버스표 예매가 완료되었습니다. 송도역에서 부산역까지, 이천이십육년 칠월 십칠일 오전 열시, 이십삼
-    63.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.92s]: (tool result) Booking confirmed: 송도역 to 부산역, 2026-07-17 10:00, seat 23
-    63.71s  user  발화 끝
-    72.52s  user  발화 시작: 네.
-    73.01s  user  발화 끝
-    75.48s  agent 발화 끝
-    75.83s  user  발화 시작: 감사합니다, 루낙스님. 덕분에 편하게 갈 수 있겠어요.
-    79.62s  user  발화 끝
-    79.82s  agent 발화 시작: 천만에요, 연담님. 건강하게 다녀오세요. 혹시 부산에서 특별히 가고 싶은 곳이 있으신가요?
-    85.23s  agent 발화 끝
-    85.87s  user  발화 시작: 음… 해운대는 꼭 가보고 싶어요.
-    88.36s  user  발화 끝
-    88.65s  agent 발화 시작: 해운대는 아름다운 곳이죠. 혹시 해운대 근처 맛집도 알아드릴까요?
-    90.19s  user  발화 시작: 네.
-    90.64s  user  발화 끝
-    92.98s  user  발화 시작: 네, 부탁드려요. 저는 해산물을 좋아해요.
-    93.09s  agent 발화 끝
-    95.66s  <ret> 발화 (turn21 첫 프레임)
-    95.74s  agent 발화 시작: <ret> 해운대에는 금수회식당과 시장해산물이라는 해산물 맛집이 있습니다. 금수회식당은 별점 사 점 오점이고
-    95.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.94s]: (tool result) Haeundae: Geumsu Fish Restaurant — 4.5 stars, seafood; S
-    95.89s  user  발화 끝
-   106.68s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 태준님. 저는 여러분의 관계와 사회생활을 돕는 Thiax입니다. 오늘 하루는 어떠셨어요?
+     5.93s  user  발화 시작: 안녕하세요, Thiax 씨. 혹시 제가 고양이 알레르기가 있다는 거 기억하세요?
+     6.16s  agent 발화 끝
+    10.98s  <ret> 발화 (turn2 첫 프레임)
+    11.06s  agent 발화 시작: <ret> 네, 태준님. 제가 기록해 둔 바로는 고양이 털 알레르기가 있으시죠. 혹시 최근에 증상이 심해지셨
+    11.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: [2025-12-14] User is allergic to cat dander.
+    11.25s  user  발화 끝
+    16.89s  agent 발화 끝
+    18.40s  user  발화 시작: 아니요, 괜찮은데… 혹시 저희 집에서 제일 가까운 동물병원 어디인지 알아봐 주실 수 있을까요?
+    24.84s  <ret> 발화 (turn4 첫 프레임)
+    25.00s  agent 발화 시작: <ret> 네, 태준님. 부산에 계시는 걸로 알고 있는데, 가장 가까운 동물병원은 일 점 이킬로미터 거리에 
+    25.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) 동물병원 — Busan, South Korea: 34.5678, 128.6789 — distance:
+    25.17s  user  발화 끝
+    32.46s  agent 발화 끝
+    32.52s  user  발화 시작: 아, 정말 가까운 곳이 있네요. 감사합니다.
+    35.46s  agent 발화 시작: 천만에요, 태준님. 혹시 벨라를 데려가실 때 필요한 준비물이 있을까요? 혹시 벨라에 대해 더 이야기해 보실까
+    35.47s  user  발화 끝
+    43.02s  agent 발화 끝

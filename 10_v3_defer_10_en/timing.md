@@ -4,121 +4,105 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Louis",
+#     "name": "Felix",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "French",
 #     "gender": "male",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "early 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in August."
+#       "date": "2026-06-24",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2026-05-03",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2026-03-21",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-12-02",
+#       "date": "2025-10-03",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-09-26",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-08-19",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2025-07-06",
+#       "category": "home",
+#       "text": "User's home address is 590 Elm Street."
 #     },
 #     {
-#       "date": "2025-06-18",
-#       "category": "diet",
-#       "text": "User is vegan."
+#       "date": "2025-06-17",
+#       "category": "trip",
+#       "text": "User is planning a trip to Kyoto in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-17",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-14",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-19",
+#       "date": "2026-04-18",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-12-06",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Play Dilwale Dulhania Le Jayenge w | S2 Hmm, find me some Italian restaura | S3 I'm thinking of going to a concert | S4 …next week in Seoul.
+# EXAMINER(FDB-v2) 단계: S1 Please clear the final attempt one | S2 I need to book a… | S3 …hotel in Busan for next week. | S4 July twenty-sixth to twenty-eighth
 
-     0.00s  user  발화 시작: Play Dilwale Dulhania Le Jayenge with Hindi subtitles, pleas
-     4.48s  user  발화 끝
-     4.60s  <ret> 발화 (turn1 첫 프레임)
-     4.67s  agent 발화 시작: <ret> The movie is starting now with Hindi subtitles. It's a
-     4.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) Playing Dilwale Dulhania Le Jayenge with Hindi subtitles
-     6.51s  user  발화 시작: Right.
-     6.96s  user  발화 끝
-     8.48s  user  발화 시작: Uh, what’s the weather like in Seoul today?
-     8.65s  agent 발화 끝
-    10.73s  <ret> 발화 (turn4 첫 프레임)
-    10.88s  agent 발화 시작: <ret> Well, right now in Seoul it is Friday, July tenth, two
-    10.89s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.00s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
-    11.06s  user  발화 끝
-    14.31s  user  발화 시작: Yeah.
-    14.85s  user  발화 끝
-    15.75s  agent 발화 시작: The weather is twenty-three point zero degrees Celsius, with
-    15.88s  agent 발화 끝
-    18.34s  user  발화 시작: Yeah.
-    18.79s  user  발화 끝
-    23.95s  agent 발화 끝
-    25.12s  user  발화 시작: Hmm, find me some Italian restaurants nearby.
-    27.58s  <ret> 발화 (turn9 첫 프레임)
-    27.90s  agent 발화 시작: <ret> I found a couple of Italian restaurants near you. Bell
-    27.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.88s]: (tool result) Bella Italia — 4.5 stars, 0.8 km; Pasta Paradise — 4.2 s
-    28.08s  user  발화 끝
-    39.77s  agent 발화 끝
-    41.15s  user  발화 시작: What was I saying about… friends?
-    43.24s  <ret> 발화 (turn11 첫 프레임)
-    43.31s  agent 발화 시작: <ret> You mentioned yesterday that you felt like you didn’t 
-    43.32s  ⚡SPAN 주입 [d'=1.76s / d_lead=5.04s]: [2026-07-09] I feel like I don't have anyone I can really talk to.
-    43.37s  user  발화 끝
-    48.15s  agent 발화 시작: That takes courage to admit, Vaera thinks. It's the first st
-    48.36s  agent 발화 끝
-    50.28s  user  발화 시작: Yeah, yeah.
-    50.92s  user  발화 끝
-    53.93s  agent 발화 끝
-    54.43s  user  발화 시작: I'm thinking of going to a concert next week.
-    56.63s  agent 발화 시작: That sounds fun! Concerts are a lovely way to share an exper
-    56.77s  user  발화 끝
-    61.57s  agent 발화 시작: Sometimes, just being in a crowd enjoying something together
-    61.63s  agent 발화 끝
-    66.19s  agent 발화 끝
-    66.62s  user  발화 시작: Find me events happening…
-    68.22s  user  발화 끝
-    69.94s  user  발화 시작: …next week in Seoul.
-    70.79s  <ret> 발화 (turn19 첫 프레임)
-    71.18s  agent 발화 시작: <ret> Next week in Seoul, there’s a K-Pop Dance Festival on 
-    71.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) K-Pop Dance Festival — July 17, Olympic Park; Seoul Jazz
-    71.37s  user  발화 끝
-    82.31s  user  발화 시작: Give me a moment… I need to check my schedule.
-    82.44s  agent 발화 끝
-    84.95s  user  발화 끝
-    84.97s  agent 발화 시작: Take your time. I'll be here when you're ready.
-    86.90s  ⚡지연 SPAN 주입(선제발표 직전): Support groups can offer a safe space to share experiences and build c
-    87.39s  agent 발화 시작: <ret> I was thinking about what you said about feeling alone
-    87.47s  agent 발화 끝
-   100.62s  agent 발화 끝
+     0.00s  user  발화 시작: Please clear the final attempt one hundred twenty three sess
+     3.84s  user  발화 끝
+     3.84s  <ret> 발화 (turn1 첫 프레임)
+     3.91s  agent 발화 시작: <ret> Session one hundred twenty three is now clear for a fr
+     3.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.75s]: (tool result) Session 123 cleared.
+     9.66s  agent 발화 끝
+     9.76s  user  발화 시작: Um, what's the weather like in Seoul right now?
+    12.31s  <ret> 발화 (turn3 첫 프레임)
+    12.47s  agent 발화 시작: <ret> It’s twenty-three point zero degrees Celsius in Seoul,
+    12.47s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.76s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    12.67s  user  발화 끝
+    20.87s  user  발화 시작: I need to book a…
+    21.23s  agent 발화 끝
+    22.02s  user  발화 끝
+    24.03s  user  발화 시작: …hotel in Busan for next week.
+    26.17s  agent 발화 시작: Busan sounds wonderful! To help me find the perfect place, c
+    26.24s  user  발화 끝
+    32.14s  user  발화 시작: July twenty-sixth to twenty-eighth.
+    32.28s  agent 발화 끝
+    33.60s  <ret> 발화 (turn8 첫 프레임)
+    33.91s  agent 발화 시작: <ret> Give me a moment while I check availability for those 
+    33.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (no information found)
+    33.98s  user  발화 끝
+    40.37s  <ret> 발화 (turn9 첫 프레임)
+    40.45s  agent 발화 시작: <ret> I’ve found the Hotel LCT The President in the Busan St
+    40.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.59s]: Hotel LCT The President - ₩150,000/night, 4.5 stars, Busan Station are
+    40.49s  agent 발화 끝
+    52.05s  agent 발화 끝

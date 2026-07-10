@@ -4,153 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "수경",
+#     "name": "혜연",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-27",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2026-02-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
 #     },
 #     {
-#       "date": "2026-05-27",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "date": "2026-01-25",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
 #     },
 #     {
-#       "date": "2026-05-14",
-#       "category": "home",
-#       "text": "User's home address is 서울 용산구 이태원로 200."
-#     },
-#     {
-#       "date": "2026-04-17",
+#       "date": "2026-01-07",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2026-03-20",
-#       "category": "diet",
-#       "text": "User is gluten-free."
-#     },
-#     {
-#       "date": "2026-01-03",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "date": "2025-07-11",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-23",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-05-04",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-21",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-30",
+#       "date": "2026-04-11",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
 #       ]
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때? | S2 그냥 아무거나 괜찮아. 최신 개봉작 중에서. | S3 … 이번 주말에 서울 근교로… | S4 북한산은 좀 멀 것 같은데.
+# EXAMINER(FDB-v2) 단계: S1 오늘 저녁에 맛있는 멕시코 음식점 좀 찾아줄 수 있어? 오스틴 | S2 혹시 그 근처에 주차 공간이 있는지 알아봐 줄 수 있을까? | S3 고마워. 혹시 내일 날씨는 어때? | S4 음, 좋은 생각인데. 편안한 분위기의 음악으로 추천해 줘.
 
-     0.00s  user  발화 시작: 오늘 날씨 어때?
-     0.88s  <ret> 발화 (turn1 첫 프레임)
-     0.96s  agent 발화 시작: <ret> 오늘 날씨는 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
-     0.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: 23.0°C, humidity 74%, wind 5.5 km/h
-     1.20s  user  발화 끝
-     9.35s  agent 발화 끝
-     9.40s  user  발화 시작: 그럼 내일은 어때?
-    10.09s  <ret> 발화 (turn3 첫 프레임)
-    10.48s  agent 발화 시작: <ret> 내일은 섭씨 이십오도로 조금 더 따뜻하고, 습도는 육십팔%, 바람은 시속 칠킬로미터로 조금 더 강
-    10.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: 25.0°C, humidity 68%, wind 7.0 km/h
-    10.68s  user  발화 끝
-    15.12s  user  발화 시작: 음.
-    15.61s  user  발화 끝
-    19.66s  agent 발화 끝
-    20.29s  user  발화 시작: 이번 주말에 영화 보러 가고 싶은데, 상영 시간 좀 알아봐 줄래?
-    24.12s  <ret> 발화 (turn6 첫 프레임)
-    24.44s  agent 발화 시작: <ret> 오펜하이머 영화 상영 시간은 오후 두시, 다섯시 삼십분, 아홉시에 있어요.
-    24.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) Oppenheimer — 14:00, 17:30, 21:00
-    24.55s  user  발화 끝
-    29.39s  agent 발화 끝
-    30.68s  user  발화 시작: 오펜하이머… 음, 아니, 그냥 액션 영화 보고 싶어.
-    34.38s  user  발화 끝
-    34.69s  agent 발화 시작: 액션 영화를 찾으시는군요. 어떤 영화를 좋아하시나요?
-    37.81s  user  발화 시작: 그냥 아무거나 괜찮아. 최신 개봉작 중에서.
-    37.83s  agent 발화 끝
-    40.18s  <ret> 발화 (turn10 첫 프레임)
-    40.58s  agent 발화 시작: <ret> 미션 임파서블: 데드 레코닝 파트 원이 한시, 네시, 일곱시, 열시에 상영 중이에요.
-    40.58s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.46s]: (tool result) Mission: Impossible - Dead Reckoning Part One — 13:00, 1
-    40.77s  user  발화 끝
-    46.04s  agent 발화 끝
-    47.30s  user  발화 시작: 일곱시 표 예매해 줘.
-    48.57s  <ret> 발화 (turn12 첫 프레임)
-    48.88s  agent 발화 시작: <ret> 미션 임파서블 일곱시 표 예매 완료되었고, 확인 번호는 칠 사 구 이 팔 삼번입니다.
-    48.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) Confirmation ID: 749283
-    49.10s  user  발화 끝
-    56.23s  user  발화 시작: 고마워. — 혹시…
-    56.29s  agent 발화 끝
-    58.02s  user  발화 끝
-    59.60s  user  발화 시작: … 이번 주말에 서울 근교로…
-    61.87s  user  발화 끝
-    63.80s  user  발화 시작: …드라이브 갈 만한 곳 있어?
-    65.40s  agent 발화 시작: 서울 근교 드라이브 코스를 찾으시는군요. 어떤 분위기를 원하세요?
-    65.55s  user  발화 끝
-    66.78s  user  발화 시작: 그치.
-    67.42s  user  발화 끝
-    69.56s  agent 발화 끝
-    69.58s  agent 발화 시작: 조용하고 한적한 곳을 좋아하시는지, 아니면 활기차고 볼거리가 많은 곳을 선호하시는지 알려주시면 더 좋은 곳을
-    72.14s  user  발화 시작: 그치.
-    72.54s  user  발화 끝
-    77.26s  user  발화 시작: 음… 경치 좋은 곳으로.
-    77.36s  agent 발화 끝
-    78.58s  <ret> 발화 (turn21 첫 프레임)
-    78.90s  agent 발화 시작: <ret> 남이섬은 아름다운 경치를 자랑하는 섬이고, 북한산 국립공원은 하이킹 코스와 산 풍경이 멋진 곳이에
-    78.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: (tool result) Nami Island — Scenic island with beautiful views; Bukhan
-    79.01s  user  발화 끝
-    85.10s  agent 발화 끝
-    85.82s  user  발화 시작: 남이섬… 거긴 가봤어.
-    87.61s  user  발화 끝
-    87.61s  agent 발화 시작: 남이섬에 가보셨군요. 그럼 북한산 국립공원은 어떠세요? 등산도 즐기실 수 있고, 멋진 풍경을 감상하실 수 있
-    95.42s  user  발화 시작: 북한산은 좀 멀 것 같은데.
-    95.45s  agent 발화 끝
-    97.41s  user  발화 끝
-    97.61s  agent 발화 시작: 북한산이 조금 멀다고 느끼시는군요. 좀 더 가까운 곳을 알아볼까요?
-   100.40s  user  발화 시작: 음.
-   100.81s  user  발화 끝
-   101.64s  user  발화 시작: 응, 좀 더 가까운 곳으로.
-   101.82s  agent 발화 끝
-   102.90s  <ret> 발화 (turn28 첫 프레임)
-   103.21s  agent 발화 시작: <ret> 관악산은 가벼운 하이킹 코스와 멋진 경치를 즐길 수 있고, 서울숲은 넓은 공원으로 산책로와 정원이
-   103.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Mount Gwanak — Easy hiking trails and scenic views; Seou
-   103.39s  user  발화 끝
-   111.33s  agent 발화 끝
-   111.36s  user  발화 시작: 서울숲 좋아 보여.
-   112.86s  agent 발화 시작: 서울숲이 마음에 드시는군요. 편안하게 산책하기 좋은 곳이에요.
-   113.02s  user  발화 끝
-   116.75s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 저녁에 맛있는 멕시코 음식점 좀 찾아줄 수 있어? 오스틴, 텍사스에 있는 곳으로.
+     5.32s  <ret> 발화 (turn1 첫 프레임)
+     5.40s  agent 발화 시작: <ret> 오스틴에 괜찮은 멕시코 음식점들이 몇 군데 있어요. 엘 알마 카페는 별점 사 점 오점이고, 라 콘
+     5.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.16s]: (tool result) El Alma Cafe - 4.5 stars, 1203 S 1st Ave, Austin, TX 787
+     5.65s  user  발화 끝
+    13.54s  user  발화 시작: 라 콘데사로 예약해 줄 수 있어? 내일 저녁 일곱시에 두 명으로.
+    13.56s  agent 발화 끝
+    17.30s  <ret> 발화 (turn3 첫 프레임)
+    17.70s  agent 발화 시작: <ret> 네, 라 콘데사 내일 저녁 일곱시에 두 분으로 예약 완료되었습니다. 확인 번호는 엘 씨 칠 팔 구
+    17.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.48s]: (tool result) Reservation confirmed for La Condesa, July 11, 2026, 7:0
+    17.84s  user  발화 끝
+    22.33s  user  발화 시작: 음.
+    22.82s  user  발화 끝
+    24.18s  agent 발화 끝
+    24.78s  user  발화 시작: 혹시 그 근처에 주차 공간이 있는지 알아봐 줄 수 있을까?
+    27.74s  <ret> 발화 (turn6 첫 프레임)
+    28.13s  agent 발화 시작: <ret> 라 콘데사 근처에는 도보 오분 거리에 주차장이 여러 곳 있어요—
+    28.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: (tool result) La Condesa Parking - domain: austintexas.gov - Several p
+    28.30s  user  발화 끝
+    31.45s  user  발화 시작: …혹시 그 주차장 중에 제일 저렴한 곳은 어디야?
+    32.15s  agent 발화 끝
+    34.78s  agent 발화 시작: 죄송해요, 잠시만요. 가장 저렴한 곳은… 육번가 주차장이 시간당 십달러 정도예요.
+    34.83s  user  발화 끝
+    36.67s  user  발화 시작: 네네.
+    37.30s  user  발화 끝
+    40.56s  agent 발화 시작: 다른 곳들은 보통 십오달러에서 이십오달러 정도 하니까 육번가가 괜찮을 것 같아요.
+    40.57s  agent 발화 끝
+    42.27s  user  발화 시작: 그렇군요.
+    43.41s  user  발화 끝
+    45.19s  agent 발화 끝
+    45.26s  user  발화 시작: 고마워. 혹시 내일 날씨는 어때?
+    47.24s  <ret> 발화 (turn13 첫 프레임)
+    47.48s  agent 발화 시작: <ret> 내일 오스틴 날씨는 삼십이 점 이도이고, 습도는 육십팔%, 바람은 시속 팔 점 이킬로미터로 예상됩
+    47.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.57s]: (tool result) July 11, 2026, Austin, Texas: 32.2°C, humidity 68%, wind
+    47.66s  user  발화 끝
+    53.78s  user  발화 시작: 네네.
+    54.60s  user  발화 끝
+    56.05s  agent 발화 끝
+    56.17s  user  발화 시작: 아, 좋네. 그럼 내일 저녁에 편하게 데이트할 수 있겠어.
+    59.40s  user  발화 끝
+    59.47s  agent 발화 시작: 네, 데이트하기 좋은 날씨일 것 같아요. 즐거운 시간 보내세요! 혹시 잠자리에 들기 전에 긴장을 푸는 데 도
+    68.00s  agent 발화 끝
+    68.25s  user  발화 시작: 음, 좋은 생각인데. 편안한 분위기의 음악으로 추천해 줘.
+    71.84s  <ret> 발화 (turn18 첫 프레임)
+    72.15s  agent 발화 시작: <ret> 편안한 분위기의 음악으로 Marconi Union의 “Weightless”를 틀어 드릴게요.
+    72.16s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.00s]: (tool result) Playing "Weightless" by Marconi Union - ambient, relaxin
+    72.33s  user  발화 끝
+    76.14s  agent 발화 끝

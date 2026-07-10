@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Charlie",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
+#       "date": "2026-04-26",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2026-01-16",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-01-19",
+#       "date": "2025-07-29",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-12-02",
-#       "category": "home",
-#       "text": "User's home address is 267 Pine Court."
-#     },
-#     {
-#       "date": "2025-06-22",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-05-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-19",
+#       "date": "2026-05-10",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-06",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,109 +56,113 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-13",
+#       "date": "2025-08-04",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I've been feeling so lost lately,  | S2 I’m trying to focus on the good ti | S3 That’s amazing. He really was some | S4 I guess. It’s just… hard to know w
+# EXAMINER(FDB-v2) 단계: S1 I’ve been having trouble sleeping  | S2 Melatonin? What does that do? | S3 …but does that change if you’ve ne | S4 Was there a *first* high priest?
 
-     0.00s  user  발화 시작: I've been feeling so lost lately, just… adrift.
-     2.93s  agent 발화 시작: It's alright to feel lost sometimes. Change can be unsettlin
+     0.00s  user  발화 시작: I’ve been having trouble sleeping lately. Any advice?
+     2.92s  agent 발화 시작: It’s completely normal to experience sleep difficulties from
      2.96s  user  발화 끝
-     6.09s  user  발화 시작: Yeah.
-     6.54s  user  발화 끝
-     8.86s  agent 발화 끝
-     9.85s  user  발화 시작: It’s just… everything feels different since my grandmother p
-    13.35s  agent 발화 시작: Grief changes everything, doesn't it? It reshapes our world,
-    13.41s  user  발화 끝
-    15.44s  user  발화 시작: Yeah, yeah.
-    17.32s  user  발화 끝
-    19.69s  agent 발화 끝
-    21.16s  user  발화 시작: I keep replaying memories. It’s exhausting.
-    24.13s  agent 발화 시작: That’s very common. Memories are a natural part of grieving—
-    24.21s  user  발화 끝
-    26.79s  user  발화 시작: Yeah.
-    27.43s  user  발화 끝
-    30.09s  user  발화 시작: Do you think it ever gets easier? Really?
-    30.43s  agent 발화 끝
-    32.35s  agent 발화 시작: It does shift, though it won’t disappear. The sharp edges so
-    32.48s  user  발화 끝
-    39.67s  agent 발화 끝
-    39.68s  user  발화 시작: I’m trying to focus on the good times, but…
-    41.66s  agent 발화 시작: Focusing on positive memories is a wonderful step. It honors
-    41.89s  user  발화 끝
-    46.00s  user  발화 시작: Yeah.
-    46.63s  user  발화 끝
-    47.82s  agent 발화 끝
-    48.89s  user  발화 시작: Tell me about Sachin Tendulkar. I remember my grandfather lo
-    52.84s  <ret> 발화 (turn15 첫 프레임)
-    53.23s  agent 발화 시작: <ret> Many consider Sachin Ramesh Tendulkar to be one of the
-    53.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: Sachin Ramesh Tendulkar is widely regarded as one of the greatest bats
-    53.24s  user  발화 끝
-    58.26s  user  발화 시작: Yeah, totally.
-    59.63s  user  발화 끝
-    62.60s  agent 발화 끝
-    62.75s  user  발화 시작: Master Blaster, wasn’t that his nickname?
-    65.04s  <ret> 발화 (turn18 첫 프레임)
-    65.11s  agent 발화 시작: <ret> He earned the nickname “Master Blaster” because of his
-    65.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: Sachin Tendulkar earned the nickname "Master Blaster" for his aggressi
-    65.29s  user  발화 끝
-    70.35s  user  발화 시작: What was his highest score in Test cricket?
-    70.71s  agent 발화 끝
-    72.53s  <ret> 발화 (turn20 첫 프레임)
-    72.76s  agent 발화 시작: <ret> His highest score in Test cricket was 248 not out, ach
-    72.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: Sachin Tendulkar’s highest score in Test cricket is 248 not out, which
-    72.93s  user  발화 끝
-    78.00s  user  발화 시작: Wow.
-    78.82s  user  발화 끝
-    79.53s  agent 발화 끝
-    79.82s  user  발화 시작: That’s amazing. He really was something, wasn't he?
-    82.63s  agent 발화 시작: He truly was. His dedication and skill inspired so many peop
-    82.77s  user  발화 끝
-    85.70s  user  발화 시작: Yeah.
-    86.42s  user  발화 끝
-    86.67s  user  발화 시작: Was he ever part of a World Cup winning team?
-    87.07s  agent 발화 끝
-    88.91s  <ret> 발화 (turn26 첫 프레임)
-    89.26s  user  발화 끝
-    89.30s  agent 발화 시작: <ret> He was part of the Indian team that won the 2011 Crick
-    89.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: Sachin Tendulkar was a member of the Indian cricket team that won the 
-    93.64s  agent 발화 끝
-    93.81s  user  발화 시작: I think my grandfather watched that game.
-    96.14s  agent 발화 시작: That would have been a special moment, shared with someone h
-    96.39s  user  발화 끝
-    98.59s  user  발화 시작: …do you think talking about him will make me feel *worse*, t
-    99.19s  agent 발화 끝
-   101.69s  <ret> 발화 (turn30 첫 프레임)
-   101.77s  agent 발화 시작: <ret> Sometimes, it can feel safer to avoid the sadness. But
-   101.93s  user  발화 끝
-   103.29s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.06s]: Avoiding difficult emotions can sometimes delay the healing process, a
-   114.34s  agent 발화 끝
-   115.45s  user  발화 시작: I guess. It’s just… hard to know what to do.
-   118.26s  user  발화 끝
-   118.43s  agent 발화 시작: It is. There’s no right or wrong way to grieve. Be kind to y
-   125.60s  user  발화 시작: What’s the weather like in Seoul right now?
-   125.79s  agent 발화 끝
-   127.33s  <ret> 발화 (turn34 첫 프레임)
-   127.57s  agent 발화 시작: <ret> It's currently 23.0 degrees Celsius in Seoul, with 74 
-   127.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-   127.72s  user  발화 끝
-   139.18s  user  발화 시작: That sounds… peaceful. Thank you, Hin.
-   139.36s  agent 발화 끝
-   141.74s  agent 발화 시작: You’re very welcome. Remember, peace isn't the absence of sa
-   141.77s  user  발화 끝
-   148.00s  agent 발화 끝
+    11.26s  agent 발화 끝
+    11.73s  user  발화 시작: That sounds good…
+    12.93s  user  발화 끝
+    14.85s  user  발화 시작: …but what actually *is* a good routine?
+    17.35s  user  발화 끝
+    17.56s  agent 발화 시작: A good routine is personalized, but generally involves calmi
+    26.45s  user  발화 시작: I already read, but I still toss and turn.
+    26.60s  agent 발화 끝
+    28.94s  user  발화 끝
+    29.17s  agent 발화 시작: Sometimes, it’s less about what you *do* and more about what
+    34.86s  user  발화 시작: Uh-huh.
+    35.59s  user  발화 끝
+    36.63s  user  발화 시작: I do avoid caffeine, but I look at my phone a lot.
+    36.73s  agent 발화 끝
+    39.35s  agent 발화 시작: That’s a common habit, and a tough one to break. The blue li
+    39.40s  user  발화 끝
+    44.11s  user  발화 시작: Yeah.
+    44.74s  user  발화 끝
+    46.70s  user  발화 시작: Melatonin? What does that do?
+    46.81s  agent 발화 끝
+    48.45s  <ret> 발화 (turn12 첫 프레임)
+    48.85s  agent 발화 시작: <ret> Melatonin is a hormone that your body makes to help re
+    48.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: Melatonin is a hormone primarily produced by the pineal gland that reg
+    48.96s  user  발화 끝
+    59.74s  agent 발화 끝
+    59.78s  user  발화 시작: Okay, so less phone. What about… dreams?
+    62.82s  agent 발화 시작: Dreams are a fascinating part of sleep, and often reflect ou
+    62.92s  user  발화 끝
+    66.73s  user  발화 시작: Okay.
+    67.14s  user  발화 끝
+    68.05s  agent 발화 끝
+    68.11s  user  발화 시작: Mine are always weird and stressful.
+    70.18s  agent 발화 시작: It’s common for dreams to feel strange or unsettling. They c
+    70.37s  user  발화 끝
+    76.17s  user  발화 시작: Do people dream in color, or is that just movies?
+    76.20s  agent 발화 끝
+    78.68s  <ret> 발화 (turn19 첫 프레임)
+    79.08s  agent 발화 시작: <ret> Actually, most people do experience dreams in color, t
+    79.08s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.71s]: Most people dream in color, although a significant minority report dre
+    79.12s  user  발화 끝
+    83.11s  user  발화 시작: …but does that change if you’ve never seen color?
+    83.80s  agent 발화 끝
+    85.60s  user  발화 끝
+    85.72s  agent 발화 시작: That’s a really insightful question. It seems people born wi
+    93.37s  user  발화 시작: Wow, that’s… something. Back to routines, what about waking 
+    93.79s  agent 발화 끝
+    97.96s  user  발화 끝
+    98.08s  agent 발화 시작: A consistent wake-up time, even on weekends, is incredibly b
+   104.37s  agent 발화 끝
+   104.50s  user  발화 시작: I hate mornings.
+   105.73s  agent 발화 시작: Many people do! It can take time to adjust to a new routine,
+   105.93s  user  발화 끝
+   107.85s  user  발화 시작: Yeah.
+   108.35s  user  발화 끝
+   112.02s  agent 발화 끝
+   112.76s  user  발화 시작: What’s the history of even *thinking* about sleep?
+   115.02s  <ret> 발화 (turn28 첫 프레임)
+   115.41s  agent 발화 시작: <ret> Thinking about sleep as something we need to actively 
+   115.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.78s]: Ancient Egyptians believed in the god Morpheus, representing dreams, a
+   115.63s  user  발화 끝
+   122.94s  user  발화 시작: Mm-hmm.
+   123.48s  user  발화 끝
+   125.17s  agent 발화 시작: They really valued restful sleep and saw it as connected to 
+   125.19s  agent 발화 끝
+   129.55s  agent 발화 시작: It’s amazing how much wisdom from the past still resonates t
+   129.61s  agent 발화 끝
+   133.62s  agent 발화 끝
+   133.95s  user  발화 시작: So, gods and rituals… anything about priests?
+   137.08s  <ret> 발화 (turn33 첫 프레임)
+   137.31s  agent 발화 시작: <ret> In ancient Israel, the High Priest had a very importan
+   137.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.18s]: In ancient Israel, the High Priest served in the Temple, with duties i
+   137.37s  user  발화 끝
+   148.49s  agent 발화 끝
+   148.54s  user  발화 시작: Was there a *first* high priest?
+   150.01s  <ret> 발화 (turn35 첫 프레임)
+   150.41s  agent 발화 시작: <ret> Traditionally, Aaron, who was Moses's brother, is cons
+   150.41s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.82s]: Aaron, brother of Moses, is traditionally regarded as the first High P
+   150.57s  user  발화 끝
+   160.16s  user  발화 시작: Moses’s brother? What did he actually *do*?
+   160.24s  agent 발화 끝
+   162.58s  <ret> 발화 (turn37 첫 프레임)
+   162.90s  agent 발화 시작: <ret> Aaron assisted Moses in communicating with Pharaoh, an
+   162.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=9.55s]: Aaron assisted Moses in speaking to Pharaoh, oversaw the construction 
+   163.08s  user  발화 끝
+   172.36s  user  발화 시작: That sounds… busy. I just want to sleep.
+   172.44s  agent 발화 끝
+   175.32s  user  발화 끝
+   175.37s  agent 발화 시작: It’s understandable to feel overwhelmed. Perhaps we can focu
+   180.11s  user  발화 시작: Mm-hmm.
+   180.74s  user  발화 끝
+   181.62s  agent 발화 끝
+   182.02s  user  발화 시작: Okay, that sounds good. Maybe just… no phone.
+   185.07s  user  발화 끝
+   185.09s  agent 발화 시작: That's a wonderful starting point. Small changes can make a 
+   190.27s  agent 발화 끝

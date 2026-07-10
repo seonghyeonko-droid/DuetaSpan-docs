@@ -4,133 +4,117 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Ruby",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-31",
+#       "date": "2026-06-25",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-11-19",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-05",
+#       "date": "2026-03-05",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-10-31",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-09",
-#       "title": "Setting up a home network",
+#       "date": "2025-11-29",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-13",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 엘레노어 밴스의 연락처가 있나요? | S2 그렇다고 생각해요. 이번 주말에 서울에서 열리는 행사들을 찾아 | S3 명동교자… 들어본 것 같아요. | S4 정신적으로 준비하는 좋은 방법은 무엇인가요?
+# EXAMINER(FDB-v2) 단계: S1 사라 밀러 전화번호 알아? | S2 좋네. 여행 갈까 생각 중인데… | S3 음… 그럴까… 발리에는 뭐 할 게 있어? | S4 완벽하네! 7월 28일부터 3박 예약해 줘.
 
-     0.00s  user  발화 시작: 엘레노어 밴스의 연락처가 있나요?
-     2.35s  <ret> 발화 (turn1 첫 프레임)
-     2.44s  user  발화 끝
-     2.51s  agent 발화 시작: <ret> 찾아봤는데, 아쉽게도 엘레노어 밴스의 연락처는 찾을 수가 없네.
-     2.51s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.91s]: (no information found)
-     4.23s  user  발화 시작: 네.
-     4.64s  user  발화 끝
-     7.42s  agent 발화 끝
-     7.96s  user  발화 시작: 아, 그렇군요. 아쉽네요.
-     9.87s  agent 발화 시작: 연락하고 싶은 사람에게 연락이 안 될 때는 답답하잖아.
-    10.03s  user  발화 끝
-    13.06s  agent 발화 끝
-    13.27s  user  발화 시작: 네, 그러네요. 지금 서울 날씨는 어떤가요?
-    16.02s  <ret> 발화 (turn6 첫 프레임)
-    16.34s  agent 발화 시작: <ret> 지금 서울 날씨는 섭씨 23.0도이고, 습도는 74퍼센트, 풍속은 시속 5.5킬로미터야.
-    16.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    16.36s  user  발화 끝
-    24.33s  user  발화 시작: 음, 괜찮네요.
-    24.40s  agent 발화 끝
-    25.69s  agent 발화 시작: 꽤 괜찮은 날씨네. 기분 좋은 온도는 정말 기분을 좋게 해 주지 않니?
-    25.75s  user  발화 끝
-    30.23s  agent 발화 끝
-    30.77s  user  발화 시작: 그렇다고 생각해요. 이번 주말에 서울에서 열리는 행사들을 찾아 줄 수 있나요?
-    35.19s  <ret> 발화 (turn10 첫 프레임)
-    35.27s  agent 발화 시작: <ret> 이번 주말에는 서울 국제 마라톤과 케이팝 댄스 페스티벌이 열릴 거야—
-    35.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Seoul International Marathon — domain: visitseoul.net; K
-    35.30s  user  발화 끝
-    39.70s  user  발화 시작: 그중 야외에서 하는 행사가 있나요?
-    40.27s  agent 발화 끝
-    41.87s  <ret> 발화 (turn12 첫 프레임)
-    41.96s  user  발화 끝
-    42.11s  agent 발화 시작: <ret> 서울 국제 마라톤은 도시 거리에서 열리니까 야외 행사야.
-    42.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Seoul International Marathon — domain: marathon.seoul.go
-    43.88s  user  발화 시작: 음.
-    44.33s  user  발화 끝
-    46.46s  agent 발화 끝
-    46.57s  agent 발화 시작: 케이팝 댄스 페스티벌은 보통 서울 광장에서 열리는데, 야외 행사이지만 날씨에 따라 실내로 옮겨질 수도 있어.
-    53.85s  agent 발화 끝
-    54.03s  user  발화 시작: 흥미롭네요. 근처에 식당은 어떤 곳이 있나요?
-    56.88s  <ret> 발화 (turn16 첫 프레임)
-    57.20s  agent 발화 시작: <ret> 근처에는 명동교자와 고궁명가가 있어. 둘 다 인기 있는 곳이야.
-    57.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: (tool result) Myeongdong Kyoja — domain: myongdongkyoja.com; Gogung My
-    57.26s  user  발화 끝
-    60.38s  user  발화 시작: 네.
-    60.78s  user  발화 끝
-    61.46s  agent 발화 끝
-    62.07s  user  발화 시작: 명동교자… 들어본 것 같아요.
-    64.38s  user  발화 끝
-    64.73s  agent 발화 시작: 만두와 칼국수로 꽤 유명해. 특히 바쁠 때는 맛있는 식사가 큰 활력이 될 수 있지.
-    66.62s  user  발화 시작: 예.
-    67.03s  user  발화 끝
-    70.29s  agent 발화 끝
-    71.03s  user  발화 시작: 맞아요. 정말 스트레스 받는 회의가 다가오고 있어요.
-    74.39s  agent 발화 시작: 알겠네. 스트레스 받는 회의는 힘들지. 혹시 그 불안감을 관리하는 방법을 알아볼까?
-    74.45s  user  발화 끝
-    78.64s  user  발화 시작: 예.
-    79.09s  user  발화 끝
-    80.36s  agent 발화 끝
-    80.44s  user  발화 시작: 좋아요. 뭐랄까…
-    82.61s  user  발화 끝
-    84.66s  user  발화 시작: 정신적으로 준비하는 좋은 방법은 무엇인가요?
-    88.01s  agent 발화 시작: 조금의 준비가 큰 도움이 될 수 있어. 성공적인 결과를 시각화하는 것이 정말 도움이 될 거야.
-    88.08s  user  발화 끝
-    94.31s  agent 발화 끝
-    96.87s  user  발화 시작: 알겠습니다. 시각화. 한번 해 볼게요. 지금 몇 시인가요?
-   100.47s  <ret> 발화 (turn28 첫 프레임)
-   100.63s  agent 발화 시작: <ret> 지금 서울 시간은 오후 3시 17분이야. 중요한 일을 준비할 때는 시간을 잘 확인하는 게 좋지.
-   100.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-   100.70s  user  발화 끝
-   107.07s  agent 발화 끝
-   107.63s  user  발화 시작: 고마워요, 도라우스. 도움이 됐어요.
-   110.30s  user  발화 끝
-   110.43s  agent 발화 시작: 천만에. 잠깐이라도 자신을 위한 시간을 가지면 어려운 상황에 더 잘 대처할 수 있을 거야.
-   116.92s  agent 발화 끝
+     0.00s  user  발화 시작: 사라 밀러 전화번호 알아?
+     1.72s  <ret> 발화 (turn1 첫 프레임)
+     1.79s  user  발화 끝
+     1.88s  agent 발화 시작: <ret> 어디 찾아봤는데, 사라 밀러 전화번호는 공개된 게 없어. 미안해.
+     1.88s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.86s]: (no information found)
+     6.75s  agent 발화 끝
+     7.00s  user  발화 시작: 아, 아쉽다. 그럼 서울 지난 화요일 날씨는 어땠어?
+    10.62s  <ret> 발화 (turn3 첫 프레임)
+    11.02s  agent 발화 시작: <ret> 미안, 그쪽 날씨 데이터는 오래돼서 없어. 대신 오늘 날씨는 알려줄 수 있어.
+    11.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: (no information found)
+    11.17s  user  발화 끝
+    12.64s  user  발화 시작: 음.
+    13.18s  user  발화 끝
+    16.30s  agent 발화 끝
+    16.40s  user  발화 시작: 아, 맞아, 오늘 날씨는 어때?
+    18.82s  <ret> 발화 (turn6 첫 프레임)
+    19.06s  agent 발화 시작: <ret> 지금 기온은 섭씨 23.0도에 습도는 74%고, 바람은 시속 5.5킬로미터로 살짝 불어. 괜찮지 
+    19.06s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.92s]: (tool result) It is 23.0°C, humidity 74%, wind 5.5 km/h.
+    19.31s  user  발화 끝
+    26.93s  user  발화 시작: 좋네. 여행 갈까 생각 중인데…
+    26.99s  agent 발화 끝
+    29.51s  agent 발화 시작: 오, 정말? 여행 계획 짜는 거 좋아해. 어디로 갈 생각이야?
+    29.70s  user  발화 끝
+    33.68s  agent 발화 끝
+    34.46s  user  발화 시작: 발리 가는 비행편 좀 알아봐 줘.
+    36.81s  user  발화 끝
+    37.06s  <ret> 발화 (turn10 첫 프레임)
+    37.14s  agent 발화 시작: <ret> 7월 28일에 자카르타에서 덴파사르 가는 편도 항공권이 685달러인데, 괜찮아 보여?
+    37.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) Jakarta (CGK) — Denpasar (DPS) — July 28, 2026 — $685
+    43.67s  agent 발화 끝
+    43.78s  user  발화 시작: 음… 그럴까… 발리에는 뭐 할 게 있어?
+    47.90s  <ret> 발화 (turn12 첫 프레임)
+    48.22s  agent 발화 시작: <ret> 발리는 절벽 위에 지어진 아름다운 울루와뚜 사원이 유명해.
+    48.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) Uluwatu Temple — Bali’s most iconic temples perched on a
+    48.27s  user  발화 끝
+    49.78s  user  발화 시작: 아.
+    50.42s  user  발화 끝
+    51.92s  agent 발화 끝
+    52.70s  user  발화 시작: 울루와뚜 사원 근처 호텔 좀 찾아줘.
+    54.82s  <ret> 발화 (turn15 첫 프레임)
+    55.22s  agent 발화 시작: <ret> 울루와뚜 사원 근처에 알릴라 빌라스 울루와뚜라는 호텔이 있는데, 평점은 4.8점에 밤에 450달러
+    55.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: (tool result) Alila Villas Uluwatu — Average 4.8 stars — $450/night
+    55.43s  user  발화 끝
+    59.76s  user  발화 시작: 진짜?
+    60.39s  user  발화 끝
+    63.65s  agent 발화 끝
+    65.34s  user  발화 시작: 완벽하네! 7월 28일부터 3박 예약해 줘.
+    68.63s  <ret> 발화 (turn18 첫 프레임)
+    68.71s  agent 발화 시작: <ret> 좋아! 알릴라 빌라스 울루와뚜에 7월 28일부터 3박 예약됐어. 예약 확인번호는 ALV-789-B
+    68.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Confirmation: ALV-789-BLI
+    68.85s  user  발화 끝
+    76.99s  user  발화 시작: 정말 고마워!
+    77.09s  agent 발화 끝
+    78.28s  user  발화 끝
+    78.64s  agent 발화 시작: 천만에! 정말 멋진 여행이 될 것 같아. 시작하는 데 도움이 돼서 기뻐.
+    84.34s  agent 발화 끝

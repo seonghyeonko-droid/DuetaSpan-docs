@@ -1,86 +1,110 @@
 v3_mcp_00_en src=mcp style=v1
-SYSTEM: <system> You are Rex, a kind and steady counselor who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Dean, a grounded and empathetic life coach who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_00",
-    "name": "Theo",
+    "name": "Ethan",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "French",
+    "nationality": "American",
     "gender": "male",
-    "age_range": "early 20s",
-    "language": "French"
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-03-24",
+      "date": "2026-05-21",
       "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-02-06",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "date": "2026-03-19",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
     },
     {
-      "date": "2026-01-26",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2026-03-02",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     },
     {
-      "date": "2025-11-04",
-      "category": "home",
-      "text": "User's home address is 991 Cedar Lane."
-    },
-    {
-      "date": "2025-07-08",
+      "date": "2026-01-11",
       "category": "work",
-      "text": "User works as a graduate student."
+      "text": "User works as a marketing manager."
+    },
+    {
+      "date": "2025-12-01",
+      "category": "diet",
+      "text": "User is gluten-free."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-12",
-      "title": "Researching a used car",
+      "date": "2026-03-22",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-10",
+      "date": "2025-09-13",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-07-27",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
-      ]
-    },
-    {
-      "date": "2025-06-29",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Play What's Going On by Marvin ⟨ret@2.16s⟩ Gaye.
-[  2.40s][moshi] ⟦⚡SPAN@2.40s: (tool result) Playing "What's Going On" by Marvin Gaye.⟧ Enjoy the music — it's a beautiful album.
-      CALL: {"function": "Music_3_PlayMedia", "arguments": {"media_name": "What's Going On", "artist_name": "Marvin Gaye"}}
-[  3.13s][user ] «backchannel» Right.
-[  5.05s][user ] What was Marvin Gaye’s ⟨ret@6.82s⟩ birthdate?
-[  7.21s][moshi] ⟦⚡SPAN@7.22s: Marvin Gaye was born Marvin Pentz Gay Jr. on April 2, 1939, in Washington, D.C.⟧ He was born on April second, nineteen thirty-nine, in Washington, D.C. That’s quite a legacy he left behind.
-[ 13.48s][user ] [sigh] It really is.
-[ 15.56s][moshi] Sometimes, allowing ourselves to simply *feel* the music can be a real gift, you know?
-[ 21.03s][user ] Could you find me restaurants…
-[ 24.68s][user ] …nearby that are open ⟨ret@26.06s⟩ now?
-[ 26.21s][moshi] ⟦⚡SPAN@26.22s: (tool result) 3 restaurants found: The Corner Bistro, open until 10 PM; Bella Italia, open until 9 PM; Spice R⟧ There are three restaurants open now: The Corner Bistro, Bella Italia, and Spice Route. Would you like details on any of them?
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"current_location": "unknown", "open_now": true}}
+[  0.00s][user ] I need to check the latest news on the BBC. Could you open that for me, without any graphics, ⟨ret@4.91s⟩ please?
+[  5.14s][moshi] ⟦⚡SPAN@5.15s: (tool result) Navigation successful to https://www.bbc.com/news. Headless mode enabled, GPU disabled.⟧ I’ve opened BBC News for you in headless mode, with the GPU disabled. It's a good way to stay informed.
+      CALL: {"function": "puppeteer_navigate", "arguments": {"url": "https://www.bbc.com/news", "headless": true, "disable_gpu": true}}
+[ 11.05s][user ] Thanks. Um, what’s the weather like in London ⟨ret@13.77s⟩ right now?
+[ 14.17s][moshi] ⟦⚡SPAN@14.17s: The weather in London is 18.5°C, humidity 68%, wind 11.2 km/h.⟧ It’s currently 18.5 degrees Celsius in London, with 68 percent humidity and a wind speed of 11.2 kilometers per hour. A pleasant day, it seems.
+[ 18.79s][user ] «backchannel» Really?
+[ 23.09s][user ] That sounds nice. Do you remember what I said about my goals last ⟨ret@27.12s⟩ week?
+[ 27.42s][moshi] ⟦⚡SPAN@27.44s: [2026-07-03] I want to start running three times a week.⟧ Yes, you mentioned on July 3rd that you wanted to start running three times a week. That's a great step towards better health.
+[ 30.37s][user ] «backchannel» Oh.
+[ 33.77s][user ] Right, that’s good. I’m finding it hard to stick to it, though.
+[ 37.20s][moshi] It’s completely normal to find new habits challenging at first. Be kind to yourself, and remember why you started.
+[ 39.03s][user ] «backchannel» Yeah.
+[ 43.35s][user ] I know, I know. I just… feel so tired after work.
+[ 46.80s][moshi] That’s understandable. Perhaps scheduling your runs for earlier in the day, before work, might help with energy levels?
+[ 53.65s][user ] Maybe. Hey, what time is it in Seoul right now?
+[ 57.00s][moshi] ⟨ret@56.69s⟩ ⟦⚡SPAN@57.01s: It is Friday, July 10, 2026 at 2:47 PM in Asia/Seoul right now.⟧ It is currently 2:47 PM in Seoul, on Friday, July 10th. Quite a bit ahead of us here.
+[ 63.77s][user ] Wow, really? Okay. I need to book a restaurant for two people tonight.
+[ 68.79s][moshi] Do you have a cuisine or location in mind?
+[ 73.68s][user ] Italian, near Trafalgar Square. Something… reasonably ⟨ret@78.06s⟩ priced.
+[ 78.45s][moshi] ⟦⚡SPAN@78.46s: (tool result) Bella Italia - Trafalgar Square: 4.2 stars, £20-£30 per person.⟧ I found Bella Italia near Trafalgar Square. It has a 4.2-star rating, and the price is around 20 to 30 pounds per person.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Trafalgar Square", "price_range": "reasonable"}}
+[ 86.59s][user ] That sounds good. Can you reserve a table for two at 8 ⟨ret@90.15s⟩ PM?
+[ 90.37s][moshi] ⟦⚡SPAN@90.39s: (tool result) Reservation confirmed at Bella Italia - Trafalgar Square for 2 people at 8:00 PM. Confirmation I⟧ Let me check availability and make the reservation.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia - Trafalgar Square", "date": "today", "time": "20:00", "party_size": 2}}
+[ 93.34s][moshi] Wonderful! Your table for two at Bella Italia is confirmed for 8:00 PM. Your confirmation ID is BF7X92.
+[ 98.09s][user ] «backchannel» Uh-huh.
+[101.88s][user ] Perfect. Thanks so much, Dean.
+[103.81s][moshi] You’re very welcome. I'm glad I could help. Remember, small steps lead to big changes.
+[108.26s][user ] I’ll try to remember that. What’s the latest stock price for Tesla?
+[112.07s][moshi] ⟨ret@112.00s⟩ ⟦⚡SPAN@112.08s: Tesla (TSLA) is currently trading at $177.89.⟧ The current stock price for Tesla is 177 dollars and 89 cents. A bit of a fluctuating market lately, isn't it?
+[120.01s][user ] Yeah, it is. Can you remind me to take my medication at 9 PM?
+[124.03s][moshi] ⟨ret@123.79s⟩ ⟦⚡SPAN@124.03s: (tool result) Alarm set for 9:00 PM with message "Take your medication".⟧ I’ve set an alarm for 9:00 PM to remind you to take your medication. Prioritizing your health is key.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "21:00", "message": "Take your medication"}}
+[126.42s][user ] «backchannel» Really?
+[129.19s][user ] Excellent. Thank you.
+[130.39s][moshi] You’re most welcome. It’s all about building those consistent routines, one step at a time.

@@ -4,86 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Ivy",
+#     "name": "Morgan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
+#       "date": "2026-05-07",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-28",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
+#       "date": "2026-02-26",
+#       "category": "home",
+#       "text": "User's home address is 223 Birch Road."
 #     },
 #     {
-#       "date": "2025-11-17",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
+#       "date": "2025-12-03",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
 #     },
 #     {
 #       "date": "2025-09-16",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "category": "work",
+#       "text": "User works as a graduate student."
 #     },
 #     {
-#       "date": "2025-07-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-07-14",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-06-02",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-09",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-24",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 When does the Central… | S2 …Is it open right now? | S3 What’s the weather like there righ | S4 [sigh] Sounds lovely.
+# EXAMINER(FDB-v2) 단계: S1 I need to update my email address  | S2 Um, actually, make that jane_smith | S3 Thanks. What's the weather like in | S4 That sounds nice. I’m thinking of 
 
-     0.00s  user  발화 시작: When does the Central…
-     1.94s  user  발화 끝
-     4.03s  user  발화 시작: …Park Zoo close today?
-     5.76s  <ret> 발화 (turn2 첫 프레임)
-     6.15s  agent 발화 시작: <ret> The Central Park Zoo closes at five thirty this evenin
-     6.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.98s]: (tool result) Central Park Zoo - Closes 5:30 PM, Open until 5:30 PM · 
-     6.20s  user  발화 끝
-     9.44s  user  발화 시작: …Is it open right now?
-    10.13s  agent 발화 끝
-    11.19s  user  발화 끝
-    11.24s  agent 발화 시작: Yes, it is currently open. It remains open until five thirty
-    12.85s  user  발화 시작: Yeah.
-    13.67s  user  발화 끝
-    15.68s  agent 발화 시작: I find that knowing the hours allows for more peaceful plann
-    15.74s  agent 발화 끝
-    17.64s  user  발화 시작: Okay.
-    18.46s  user  발화 끝
-    19.10s  user  발화 시작: What’s the weather like there right now?
-    19.52s  agent 발화 끝
-    21.64s  <ret> 발화 (turn9 첫 프레임)
-    21.79s  agent 발화 시작: <ret> The weather at the zoo is twenty-four point four degre
-    21.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 24.4°C, humidity 65%, wind 8.0 km/h
-    21.96s  user  발화 끝
-    26.64s  user  발화 시작: Yeah.
-    27.18s  user  발화 끝
-    29.90s  agent 발화 끝
-    29.95s  user  발화 시작: [sigh] Sounds lovely.
-    32.07s  agent 발화 시작: It does, doesn’t it? A little sunshine can really lift the s
-    32.34s  user  발화 끝
-    35.91s  agent 발화 끝
+     0.00s  user  발화 시작: I need to update my email address to jane.smith at email dot
+     6.13s  <ret> 발화 (turn1 첫 프레임)
+     6.52s  agent 발화 시작: <ret> Okay, I’ve updated your email address within the profi
+     6.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.66s]: (tool result) Email updated to jane.smith@email.com.
+     6.67s  user  발화 끝
+    12.00s  user  발화 시작: Um, actually, make that jane_smith88 at email dot com.
+    12.18s  agent 발화 끝
+    16.81s  <ret> 발화 (turn3 첫 프레임)
+    17.04s  agent 발화 시작: <ret> No problem at all! I’ve updated your email again, now 
+    17.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.89s]: (tool result) Email updated to jane smith88@email.com.
+    17.10s  user  발화 끝
+    21.77s  user  발화 시작: Yeah, yeah.
+    23.24s  user  발화 끝
+    24.93s  agent 발화 끝
+    25.74s  user  발화 시작: Thanks. What's the weather like in Seoul right now?
+    28.87s  <ret> 발화 (turn6 첫 프레임)
+    28.99s  agent 발화 시작: <ret> Well, it sounds lovely! It’s currently 28.0 degrees Ce
+    29.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: (tool result) It is 28.0°C, humidity 68%, wind 7.2 km/h in Seoul.
+    29.11s  user  발화 끝
+    39.88s  agent 발화 끝
+    40.15s  user  발화 시작: That sounds nice. I’m thinking of going for a walk.
+    44.31s  user  발화 끝
+    44.54s  agent 발화 시작: That's a wonderful idea!
+    46.34s  agent 발화 끝

@@ -4,61 +4,69 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "Liam",
+#     "name": "Charlie",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "male",
+#     "nationality": "American",
+#     "gender": "non-binary",
 #     "age_range": "late 30s",
-#     "language": "French"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "home",
-#       "text": "User's home address is 427 Cedar Lane."
+#       "date": "2026-05-24",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in May."
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-03-28",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     },
 #     {
-#       "date": "2025-11-25",
+#       "date": "2026-03-12",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2025-11-11",
+#       "date": "2025-10-23",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-07-05",
 #       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-10-25",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-07",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-06-14",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-05-15",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When did the Fitbit Aria 2 scale first become available?
-     4.25s  <ret> 발화 (turn1 첫 프레임)
-     4.49s  agent 발화 시작: <ret> It first became available in late 2017, offering more 
-     4.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: The Fitbit Aria 2 was first released in late 2017, offering improved a
-     4.63s  user  발화 끝
-    15.30s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know what ethernet standard is often called Thicknet?
+     3.62s  <ret> 발화 (turn1 첫 프레임)
+     3.86s  agent 발화 시작: <ret> Well, that standard is generally called Thicknet becau
+     3.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: 10BASE5, a coaxial cable standard, is commonly known as Thicknet due t
+     4.00s  user  발화 끝
+    10.81s  agent 발화 끝

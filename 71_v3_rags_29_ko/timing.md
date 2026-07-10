@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "도준",
+#     "name": "지현",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,56 +12,58 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-24",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-06-17",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-05-09",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-01-10",
+#       "date": "2026-05-07",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-11-04",
+#       "date": "2025-10-18",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in December."
+#     },
+#     {
+#       "date": "2025-09-14",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-07-19",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-01",
 #       "category": "home",
-#       "text": "User's home address is 부산 수영구 광안동 210-3."
+#       "text": "User's home address is 인천 연수구 송도동 12-5."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-11",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-18",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-10",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 스타워즈에 나오는 데이지 리들리가 누구야?
-     3.33s  user  발화 끝
-     3.48s  <ret> 발화 (turn1 첫 프레임)
-     3.64s  agent 발화 시작: <ret> 데이지 리들리는 스타워즈 후속 삼부작에서 레이 역할을 맡아 이름을 알린 영국 배우입니다. 혹시 다
-     3.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.66s]: Daisy Ridley is an English actress who rose to prominence for playing 
-    12.30s  agent 발화 끝
+     0.00s  user  발화 시작: 왕좌의 게임에서 조젠 리드를 연기한 배우가 누구예요?
+     3.63s  <ret> 발화 (turn1 첫 프레임)
+     3.75s  user  발화 끝
+     3.79s  agent 발화 시작: <ret> 왕좌의 게임에서 조젠 리드 역할은 토마스 브로디-생스터 씨가 맡았어요. 아마 그 분을 아실 거예요
+     3.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: Thomas Brodie-Sangster is an English actor, who played Jojen Reed in t
+     9.59s  agent 발화 끝

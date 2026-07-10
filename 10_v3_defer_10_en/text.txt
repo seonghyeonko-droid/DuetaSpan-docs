@@ -1,94 +1,92 @@
 v3_defer_10_en src=mcp style=mcp_deferred
-SYSTEM: <system> You are Vaera, a curious and validating personal guide who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Lunaia, a encouraging and non-judgmental life coach who helps people with sleep and rest. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Louis",
+    "name": "Felix",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "40s",
-    "language": "English"
+    "age_range": "early 20s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-21",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in August."
+      "date": "2026-06-24",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     },
     {
-      "date": "2026-05-03",
-      "category": "work",
-      "text": "User works as a graphic designer."
+      "date": "2026-03-21",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2025-12-02",
+      "date": "2025-10-03",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-09-26",
       "category": "pet",
-      "text": "User has a Beagle named Rusty."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2025-08-19",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "date": "2025-07-06",
+      "category": "home",
+      "text": "User's home address is 590 Elm Street."
     },
     {
-      "date": "2025-06-18",
-      "category": "diet",
-      "text": "User is vegan."
+      "date": "2025-06-17",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-01-17",
-      "title": "Setting up a home network",
+      "date": "2026-06-14",
+      "title": "Researching a used car",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-10-19",
+      "date": "2026-04-18",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-12-06",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Play Dilwale Dulhania Le Jayenge with Hindi subtitles, please.
-[  4.67s][moshi] ⟨ret@4.60s⟩ ⟦⚡SPAN@4.68s: (tool result) Playing Dilwale Dulhania Le Jayenge with Hindi subtitles.⟧ The movie is starting now with Hindi subtitles. It's a classic, isn’t it?
-      CALL: {"function": "Media_3_PlayMovie", "arguments": {"movie_name": "Dilwale Dulhania Le Jayenge", "subtitles": "Hindi"}}
-[  6.51s][user ] «backchannel» Right.
-[  8.48s][user ] Uh, what’s the weather like in Seoul ⟨ret@10.73s⟩ today?
-[ 10.88s][moshi] ⟦⚡SPAN@10.89s: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul right now.⟧ Well, right now in Seoul it is Friday, July tenth, two thirty-three PM.
+[  0.00s][user ] Please clear the final attempt one hundred twenty three session.
+[  3.91s][moshi] ⟨ret@3.84s⟩ ⟦⚡SPAN@3.92s: (tool result) Session 123 cleared.⟧ Session one hundred twenty three is now clear for a fresh start. That's a good step towards focused work.
+      CALL: {"function": "browser", "arguments": {"action": "clear_codegen_session", "session_id": "123"}}
+[  9.76s][user ] Um, what's the weather like in Seoul right ⟨ret@12.31s⟩ now?
+[ 12.47s][moshi] ⟦⚡SPAN@12.47s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It’s twenty-three point zero degrees Celsius in Seoul, with seventy-four percent humidity and a gentle breeze. A lovely day for being present.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 14.31s][user ] «backchannel» Yeah.
-[ 15.75s][moshi] The weather is twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour.
-[ 18.34s][user ] «backchannel» Yeah.
-[ 25.12s][user ] Hmm, find me some Italian restaurants ⟨ret@27.58s⟩ nearby.
-[ 27.90s][moshi] ⟦⚡SPAN@27.90s: (tool result) Bella Italia — 4.5 stars, 0.8 km; Pasta Paradise — 4.2 stars, 1.2 km.⟧ I found a couple of Italian restaurants near you. Bella Italia has four and a half stars and is point eight kilometers away. Pasta Paradise is four point two stars, a bit further at one point two kilometers.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}
-[ 41.15s][user ] What was I saying about… friends?
-[ 43.31s][moshi] ⟨ret@43.24s⟩ ⟦⚡SPAN@43.32s: [2026-07-09] I feel like I don't have anyone I can really talk to.⟧ You mentioned yesterday that you felt like you didn’t have anyone to really talk to.
-[ 48.15s][moshi] That takes courage to admit, Vaera thinks. It's the first step toward building stronger connections.
-[ 50.28s][user ] «backchannel» Yeah, yeah.
-[ 54.43s][user ] I'm thinking of going to a concert next week.
-[ 56.63s][moshi] That sounds fun! Concerts are a lovely way to share an experience with others.
-[ 61.57s][moshi] Sometimes, just being in a crowd enjoying something together can be really bonding.
-[ 66.62s][user ] Find me events happening…
-[ 69.94s][user ] …next week ⟨ret@70.79s⟩ in Seoul.
-[ 71.18s][moshi] ⟦⚡SPAN@71.19s: (tool result) K-Pop Dance Festival — July 17, Olympic Park; Seoul Jazz Fest — July 18-19, Olympic Park.⟧ Next week in Seoul, there’s a K-Pop Dance Festival on July seventeenth at Olympic Park. And the Seoul Jazz Fest runs July eighteenth and nineteenth, also at Olympic Park.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Seoul", "date": "next week"}}
-[ 82.31s][user ] Give me a moment… I need to check my schedule.
-[ 84.97s][moshi] Take your time. I'll be here when you're ready.
-  ⟦⚡지연 SPAN 도착@86.90s: Support groups can offer a safe space to share experiences and build connections with others who understand.⟧
-[ 87.39s][moshi] «deferred_result» ⟨ret@87.39s⟩ I was thinking about what you said about feeling alone. Sometimes, support groups can be a great way to connect with others. They offer a safe space to share experiences and build connections with people who understand.
+[ 20.87s][user ] I need to book a…
+[ 24.03s][user ] …hotel in Busan for next week.
+[ 26.17s][moshi] Busan sounds wonderful! To help me find the perfect place, could you tell me the dates you're thinking of?
+[ 32.14s][user ] July twenty-sixth to ⟨ret@33.60s⟩ twenty-eighth.
+[ 33.91s][moshi] ⟦⚡SPAN@33.92s: (no information found)⟧ Give me a moment while I check availability for those dates in Busan. It looks like there aren't any results currently.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Busan", "check_in_date": "2026-07-26", "check_out_date": "2026-07-28"}}
+[ 40.45s][moshi] ⟨ret@40.37s⟩ ⟦⚡SPAN@40.45s: Hotel LCT The President - ₩150,000/night, 4.5 stars, Busan Station area.⟧ I’ve found the Hotel LCT The President in the Busan Station area, it’s four and a half stars and costs one hundred fifty thousand won per night. That could be a good place to start your search, wouldn’t you agree?

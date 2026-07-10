@@ -4,83 +4,85 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Oliver",
+#     "name": "Quinn",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "40s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2025-12-28",
+#       "date": "2026-04-13",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2026-03-18",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2025-11-26",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-11-28",
+#       "date": "2025-09-20",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2025-07-16",
 #       "category": "diet",
-#       "text": "User is gluten-free."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-11-06",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
-#       "date": "2025-09-26",
+#       "date": "2025-06-27",
 #       "category": "home",
-#       "text": "User's home address is 208 Elm Street."
+#       "text": "User's home address is 722 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-19",
-#       "title": "Planning a birthday dinner",
+#       "date": "2025-06-13",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m still getting used to things h | S2 Oh, wow, that recent! I always ass | S3 Speaking of weather… | S4 That sounds lovely. I think I will
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering, when did Mer | S2 I do. But before that, didn’t they | S3 …Was that on a ferry, or am I comp | S4 That was so sweet! It’s amazing ho
 
-     0.00s  user  발화 시작: I’m still getting used to things here… it’s a bit overwhelmi
-     4.03s  user  발화 끝
-     4.05s  agent 발화 시작: Adjusting takes time, and it’s perfectly alright to feel ove
-     7.34s  user  발화 시작: Okay.
-     8.30s  user  발화 끝
-    11.33s  agent 발화 끝
-    13.45s  user  발화 시작: I was reading something online, and it made me wonder… when 
-    21.13s  <ret> 발화 (turn4 첫 프레임)
-    21.28s  user  발화 끝
-    21.36s  agent 발화 시작: <ret> The updated way we measure wind chill—developed by res
-    21.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: The new wind chill formula, developed by researchers in the United Sta
-    25.21s  user  발화 시작: Right.
-    25.84s  user  발화 끝
-    28.46s  user  발화 시작: Oh, wow, that recent! I always assumed it was much older.
-    29.05s  agent 발화 끝
-    32.90s  user  발화 끝
-    33.07s  agent 발화 시작: It’s easy to assume things have always been a certain way, i
-    37.00s  user  발화 시작: Yeah.
-    37.50s  user  발화 끝
-    40.16s  agent 발화 끝
-    40.17s  user  발화 시작: Speaking of weather…
-    41.73s  user  발화 끝
-    43.76s  user  발화 시작: …what’s it like outside right now?
-    45.56s  <ret> 발화 (turn11 첫 프레임)
-    45.88s  agent 발화 시작: <ret> It’s currently 24 degrees Celsius with 68 percent humi
-    45.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) 24.0°C, humidity 68%, wind 7.2 km/h
-    46.07s  user  발화 끝
-    55.70s  user  발화 시작: That sounds lovely. I think I will.
-    55.90s  agent 발화 끝
-    58.30s  agent 발화 시작: That’s wonderful. Taking time for yourself—even a short walk
-    58.42s  user  발화 끝
-    63.86s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering, when did Meredith and Derek actually g
+     5.71s  <ret> 발화 (turn1 첫 프레임)
+     5.95s  agent 발화 시작: <ret> Well, that’s a beautiful question! They officially mar
+     5.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: Derek Shepherd and Meredith Grey officially married on May 31, 2009, i
+     6.02s  user  발화 끝
+     8.65s  user  발화 시작: Really?
+     9.47s  user  발화 끝
+    13.55s  agent 발화 끝
+    15.69s  user  발화 시작: Oh, that's right! It wasn’t the big wedding everyone expecte
+    20.36s  user  발화 끝
+    20.73s  agent 발화 시작: Not at all! It was quite intimate, a real reflection of thei
+    22.89s  user  발화 시작: Yeah.
+    23.43s  user  발화 끝
+    25.57s  user  발화 시작: I do. But before that, didn’t they have a sort of…practice r
+    26.19s  agent 발화 끝
+    30.41s  user  발화 시작: …Was that on a ferry, or am I completely misremembering?
+    30.42s  user  발화 끝
+    33.81s  <ret> 발화 (turn8 첫 프레임)
+    34.13s  agent 발화 시작: <ret> —they had an unofficial wedding on a ferry in Washingt
+    34.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.03s]: Meredith and Derek had an unofficial wedding ceremony on a ferry in Wa
+    34.21s  user  발화 끝
+    45.16s  agent 발화 끝
+    45.19s  user  발화 시작: That was so sweet! It’s amazing how much I still remember ab
+    51.02s  user  발화 끝

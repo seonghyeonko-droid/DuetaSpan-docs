@@ -4,133 +4,117 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Ruby",
+#     "name": "Robin",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "nationality": "British",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-03",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-31",
+#       "date": "2026-06-25",
 #       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-11-19",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-10-05",
+#       "date": "2026-03-05",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2026-03-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-10-31",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in August."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-09",
-#       "title": "Setting up a home network",
+#       "date": "2025-11-29",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-13",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you have the contact informatio | S2 I suppose so. Can you find me some | S3 Myeongdong Kyoja… I think I’ve hea | S4 …good way to prepare mentally?
+# EXAMINER(FDB-v2) 단계: S1 Do you happen to know Sarah Miller | S2 Sounds nice. I'm thinking of takin | S3 Um, maybe… is there anything to *d | S4 That sounds perfect! I’d like to b
 
-     0.00s  user  발화 시작: Do you have the contact information for Eleanor Vance?
-     2.24s  <ret> 발화 (turn1 첫 프레임)
-     2.64s  agent 발화 시작: <ret> I’ve searched, but unfortunately, I couldn’t find any 
-     2.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (no information found)
-     2.87s  user  발화 끝
-     4.40s  user  발화 시작: Yeah.
-     4.85s  user  발화 끝
-     7.83s  agent 발화 끝
-     7.96s  user  발화 시작: Oh, okay. That's a shame.
-     9.94s  user  발화 끝
-    10.46s  agent 발화 시작: It can be frustrating when you can't reach someone you're tr
-    14.17s  user  발화 시작: Yes, actually. What’s the weather like in Seoul right now?
-    14.30s  agent 발화 끝
-    17.64s  <ret> 발화 (turn6 첫 프레임)
-    17.96s  agent 발화 시작: <ret> The weather in Seoul is currently 23.0 degrees Celsius
-    17.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    18.01s  user  발화 끝
-    26.58s  user  발화 시작: Hmm, not bad.
-    26.71s  agent 발화 끝
-    28.32s  user  발화 끝
-    28.42s  agent 발화 시작: It sounds quite pleasant. A comfortable temperature can real
-    33.44s  user  발화 시작: I suppose so. Can you find me some events happening in Seoul
-    33.60s  agent 발화 끝
-    37.38s  <ret> 발화 (turn10 첫 프레임)
-    37.70s  agent 발화 시작: <ret> There’s the Seoul International Marathon and the K-Pop
-    37.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.95s]: (tool result) Seoul International Marathon — domain: visitseoul.net; K
-    37.74s  user  발화 끝
-    41.92s  user  발화 시작: …are either of those outdoors?
-    42.65s  agent 발화 끝
-    43.45s  <ret> 발화 (turn12 첫 프레임)
-    43.53s  agent 발화 시작: <ret> The Seoul International Marathon is held on city stree
-    43.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) Seoul International Marathon — domain: marathon.seoul.go
-    43.58s  user  발화 끝
-    45.55s  user  발화 시작: Yeah.
-    46.18s  user  발화 끝
-    48.52s  agent 발화 시작: The K-Pop Dance Festival is typically held at the Seoul Plaz
-    48.62s  agent 발화 끝
-    57.14s  agent 발화 끝
-    57.36s  user  발화 시작: Interesting. What about restaurants nearby?
-    60.15s  <ret> 발화 (turn16 첫 프레임)
-    60.31s  agent 발화 시작: <ret> Nearby, you’ll find Myeongdong Kyoja and Gogung Myeong
-    60.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) Myeongdong Kyoja — domain: myongdongkyoja.com; Gogung My
-    60.41s  user  발화 끝
-    64.36s  user  발화 시작: Yeah.
-    64.95s  user  발화 끝
-    65.91s  agent 발화 끝
-    66.52s  user  발화 시작: Myeongdong Kyoja… I think I’ve heard of that place.
-    69.62s  agent 발화 시작: It’s quite famous for its dumplings and kalguksu, a knife-cu
-    69.71s  user  발화 끝
-    72.53s  user  발화 시작: Right.
-    73.11s  user  발화 끝
-    78.19s  agent 발화 끝
-    78.19s  user  발화 시작: You’re right. I have a really stressful meeting coming up.
-    80.78s  user  발화 끝
-    81.09s  agent 발화 시작: I understand. Stressful meetings are tough. Perhaps we could
-    85.85s  user  발화 시작: Okay.
-    86.52s  user  발화 끝
-    87.78s  user  발화 시작: That sounds good. What's a…
-    87.86s  agent 발화 끝
-    89.53s  user  발화 끝
-    91.03s  user  발화 시작: …good way to prepare mentally?
-    92.77s  user  발화 끝
-    93.00s  agent 발화 시작: A little preparation can go a long way. Visualizing a succes
-    98.80s  agent 발화 끝
-    98.89s  user  발화 시작: Okay, visualization. I’ll try that. What time is it now?
-   102.17s  <ret> 발화 (turn28 첫 프레임)
-   102.41s  agent 발화 시작: <ret> It is currently 3:17 PM in Seoul. It’s good to be mind
-   102.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-   102.45s  user  발화 끝
-   108.98s  agent 발화 끝
-   109.11s  user  발화 시작: Thanks, Doraus. That helps.
-   110.86s  user  발화 끝
-   110.89s  agent 발화 시작: You’re very welcome. Remember, taking a few moments for your
-   117.43s  agent 발화 끝
+     0.00s  user  발화 시작: Do you happen to know Sarah Miller’s phone number?
+     1.58s  <ret> 발화 (turn1 첫 프레임)
+     1.97s  agent 발화 시작: <ret> I’ve checked everywhere, but I couldn’t find a phone n
+     1.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (no information found)
+     2.21s  user  발화 끝
+     7.66s  agent 발화 끝
+     8.53s  user  발화 시작: Oh, that’s a shame. Well, what about the weather in Seoul la
+    12.39s  <ret> 발화 (turn3 첫 프레임)
+    12.78s  agent 발화 시작: <ret> I’m sorry, I don’t have historical weather data going 
+    12.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.43s]: (no information found)
+    12.98s  user  발화 끝
+    14.77s  user  발화 시작: Yeah.
+    15.26s  user  발화 끝
+    19.17s  user  발화 시작: Actually, yes, please. What’s the weather like right now?
+    19.22s  agent 발화 끝
+    21.82s  <ret> 발화 (turn6 첫 프레임)
+    22.08s  user  발화 끝
+    22.22s  agent 발화 시작: <ret> It’s 23.0 degrees Celsius with 74% humidity and a ligh
+    22.22s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.42s]: (tool result) It is 23.0°C, humidity 74%, wind 5.5 km/h.
+    31.52s  user  발화 시작: Sounds nice. I'm thinking of taking a trip…
+    31.64s  agent 발화 끝
+    34.25s  user  발화 끝
+    34.28s  agent 발화 시작: Oh, that’s wonderful! I love helping people plan trips. Wher
+    39.30s  user  발화 시작: I was wondering about flights to Bali.
+    39.42s  agent 발화 끝
+    41.55s  user  발화 끝
+    41.56s  <ret> 발화 (turn10 첫 프레임)
+    41.64s  agent 발화 시작: <ret> There’s a one-way flight from Jakarta to Denpasar on J
+    41.64s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.55s]: (tool result) Jakarta (CGK) — Denpasar (DPS) — July 28, 2026 — $685
+    49.20s  agent 발화 끝
+    49.79s  user  발화 시작: Um, maybe… is there anything to *do* in Bali?
+    53.31s  <ret> 발화 (turn12 첫 프레임)
+    53.63s  agent 발화 시작: <ret> Bali is famous for Uluwatu Temple, a beautiful temple 
+    53.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) Uluwatu Temple — Bali’s most iconic temples perched on a
+    53.64s  user  발화 끝
+    56.08s  user  발화 시작: Okay.
+    56.72s  user  발화 끝
+    59.46s  agent 발화 끝
+    59.97s  user  발화 시작: That does sound amazing! Could you find me some hotels near 
+    64.10s  <ret> 발화 (turn15 첫 프레임)
+    64.18s  agent 발화 시작: <ret> Alila Villas Uluwatu is a highly-rated hotel nearby, a
+    64.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) Alila Villas Uluwatu — Average 4.8 stars — $450/night
+    64.28s  user  발화 끝
+    68.41s  user  발화 시작: Oh.
+    69.36s  user  발화 끝
+    72.20s  agent 발화 끝
+    72.76s  user  발화 시작: That sounds perfect! I’d like to book a room there for three
+    77.35s  <ret> 발화 (turn18 첫 프레임)
+    77.75s  agent 발화 시작: <ret> Excellent! I’ve reserved a room for you at Alila Villa
+    77.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: (tool result) Confirmation: ALV-789-BLI
+    77.76s  user  발화 끝
+    87.81s  user  발화 시작: Wonderful, thank you so much!
+    87.91s  agent 발화 끝
+    89.50s  agent 발화 시작: You’re very welcome! It sounds like you’re in for a really s
+    89.70s  user  발화 끝
+    95.75s  agent 발화 끝

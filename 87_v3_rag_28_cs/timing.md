@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Charlie",
+#     "name": "Jordan",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "late 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
+#       "date": "2026-04-26",
+#       "category": "work",
+#       "text": "User works as a high-school teacher."
+#     },
+#     {
+#       "date": "2026-01-16",
 #       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2026-01-19",
+#       "date": "2025-07-29",
 #       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
-#       "date": "2025-12-02",
-#       "category": "home",
-#       "text": "User's home address is 267 Pine Court."
-#     },
-#     {
-#       "date": "2025-06-22",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-05-28",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-19",
+#       "date": "2026-05-10",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-06",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -48,109 +56,113 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-13",
+#       "date": "2025-08-04",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애 요즘 너무 길을 잃은 기분이야, 그냥… 표류하는 것 같아. | S2 좋았던 기억에 집중하려고 하는데… | S3 정말 대단했네. 진짜 굉장한 사람이었지, 안 그래? | S4 그렇겠지. 그냥… 뭘 해야 할지 모르겠어.
+# EXAMINER(FDB-v2) 단계: S1 응, 잠을 잘 못 자서 고민이야. 뭐 조언 좀 해 줄 수 있어 | S2 멜라토닌? 그게 뭔데? | S3 …근데 색깔을 본 적이 없는 사람은 꿈이 달라? | S4 처음 대사제는 누구였어?
 
-     0.00s  user  발화 시작: 애 요즘 너무 길을 잃은 기분이야, 그냥… 표류하는 것 같아.
-     4.29s  agent 발화 시작: 괜찮아요. 가끔 길을 잃는 건 괜찮아요. 변화는 불안하게 만들 수 있고, 그런 걸 인정하는 건 용기 있는 일
-     4.44s  user  발화 끝
-    10.26s  user  발화 시작: 그치.
-    10.85s  user  발화 끝
-    15.04s  user  발화 시작: 할머니 돌아가시고 나서 모든 게 달라진 것 같아…
-    15.09s  agent 발화 끝
-    18.74s  user  발화 끝
-    18.79s  agent 발화 시작: 슬픔은 모든 걸 바꾸잖아요, 안 그래요? 우리 세계를 재구성하고, 그 새로운 풍경에 적응하는 데 시간이 걸리
-    21.67s  user  발화 시작: 음.
-    22.30s  user  발화 끝
-    27.42s  agent 발화 끝
-    28.48s  user  발화 시작: 계속 기억이 떠올라. 너무 힘들어.
-    31.85s  user  발화 끝
-    31.86s  agent 발화 시작: 그건 아주 흔한 일이에요. 기억은 슬픔의 자연스러운 부분이에요—사랑하는 사람을 가까이 두는 방법이죠.
-    35.35s  user  발화 시작: 응응.
-    36.12s  user  발화 끝
-    39.92s  agent 발화 끝
-    40.04s  user  발화 시작: 이게 나아질까? 진짜?
-    41.78s  user  발화 끝
-    42.01s  agent 발화 시작: 사라지진 않겠지만, 변할 거예요. 날카로운 모서리가 부드러워지고, 슬픔과 함께 사랑을 품는 법을 배우게 될 
-    51.23s  agent 발화 끝
-    52.14s  user  발화 시작: 좋았던 기억에 집중하려고 하는데…
-    54.65s  agent 발화 시작: 긍정적인 기억에 집중하는 건 정말 좋은 방법이에요. 그들의 삶을 기리고, 당신의 마음에 작은 빛을 가져다주죠
-    54.86s  user  발화 끝
-    61.37s  user  발화 시작: 응.
-    61.81s  user  발화 끝
-    63.97s  user  발화 시작: 사친 텐둘카르에 대해 말해 줘. 할아버지가 크리켓을 엄청 좋아하셨어.
-    64.01s  agent 발화 끝
-    68.18s  <ret> 발화 (turn15 첫 프레임)
-    68.57s  agent 발화 시작: <ret> 많은 사람들이 사친 라메시 텐둘카르를 크리켓 역사상 가장 위대한 타자 중 한 명으로 여겨요. 그에
-    68.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.50s]: Sachin Ramesh Tendulkar is widely regarded as one of the greatest bats
-    68.64s  user  발화 끝
-    75.90s  user  발화 시작: 어.
-    76.40s  user  발화 끝
-    82.06s  agent 발화 끝
-    82.14s  user  발화 시작: 마스터 블래스터, 그게 별명이었지?
-    84.61s  <ret> 발화 (turn18 첫 프레임)
-    84.77s  agent 발화 시작: <ret> 공격적인 타격 스타일과 강력한 샷 때문에 “마스터 블래스터”라는 별명을 얻었어요.
-    84.77s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.95s]: Sachin Tendulkar earned the nickname "Master Blaster" for his aggressi
-    85.00s  user  발화 끝
-    91.33s  user  발화 시작: 테스트 크리켓에서 최고 점수는 얼마였어?
-    91.73s  agent 발화 끝
-    93.40s  <ret> 발화 (turn20 첫 프레임)
-    93.72s  agent 발화 시작: <ret> 테스트 크리켓에서 최고 점수는 이천십 년 스리랑카를 상대로 기록한 248점 무사퇴출이었어요.
-    93.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Sachin Tendulkar’s highest score in Test cricket is 248 not out, which
-    93.92s  user  발화 끝
-    99.79s  user  발화 시작: 와.
-   100.43s  user  발화 끝
-   101.45s  agent 발화 끝
-   102.02s  user  발화 시작: 정말 대단했네. 진짜 굉장한 사람이었지, 안 그래?
-   106.03s  agent 발화 시작: 정말 그랬어요. 그의 헌신과 기술은 많은 사람들에게 영감을 줬어요.
-   106.18s  user  발화 끝
-   110.32s  user  발화 시작: 응.
-   110.81s  user  발화 끝
-   112.05s  agent 발화 끝
-   112.77s  user  발화 시작: 월드컵 우승팀에 속했었어?
-   114.41s  <ret> 발화 (turn26 첫 프레임)
-   114.73s  agent 발화 시작: <ret> 이천십일 년 크리켓 월드컵에서 우승한 인도 팀의 일원이었어요.
-   114.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.55s]: Sachin Tendulkar was a member of the Indian cricket team that won the 
-   114.98s  user  발화 끝
-   120.29s  agent 발화 끝
-   121.57s  user  발화 시작: 할아버지가 그 경기를 보셨던 것 같아.
-   123.72s  agent 발화 시작: 사랑하는 사람과 함께 특별한 순간이었을 거예요—
-   123.83s  user  발화 끝
-   127.62s  user  발화 시작: …그에 대해 이야기하면 더 *힘들어질*까 봐 걱정돼.
-   128.25s  agent 발화 끝
-   130.38s  <ret> 발화 (turn30 첫 프레임)
-   130.62s  agent 발화 시작: <ret> 때로는 슬픔을 피하는 게 더 안전하게 느껴질 수 있어요. 하지만 어려운 감정을 피하면 치유가 늦어
-   130.85s  user  발화 끝
-   131.74s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.22s]: Avoiding difficult emotions can sometimes delay the healing process, a
-   146.58s  agent 발화 끝
-   146.88s  user  발화 시작: 그렇겠지. 그냥… 뭘 해야 할지 모르겠어.
-   151.21s  user  발화 끝
-   151.51s  agent 발화 시작: 그럴 수 있어요. 슬픔을 겪는 데 정해진 방법은 없어요. 자신에게 친절하고, 어떤 감정이든 느껴지도록 허용하
-   161.01s  agent 발화 끝
-   161.20s  user  발화 시작: 지금 서울 날씨는 어때?
-   162.90s  <ret> 발화 (turn34 첫 프레임)
-   163.14s  agent 발화 시작: <ret> 현재 서울은 23.0도이고 습도는 74%, 풍속은 시속 5.5킬로미터예요. 부드러운 바람이 부는,
-   163.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.48s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-   163.31s  user  발화 끝
-   175.62s  agent 발화 끝
-   176.06s  user  발화 시작: 그건… 평화롭네. 고마워, 힌.
-   179.02s  user  발화 끝
-   179.09s  agent 발화 시작: 천만에요. 기억하세요, 평화는 슬픔의 부재가 아니라 슬픔과 함께 공간을 찾는 거예요.
-   186.18s  agent 발화 끝
+     0.00s  user  발화 시작: 응, 잠을 잘 못 자서 고민이야. 뭐 조언 좀 해 줄 수 있어?
+     4.39s  user  발화 끝
+     4.41s  agent 발화 시작: 네, 잠자리에 어려움을 겪는 건 완전히 정상이에요. 잠들기 전에 편안한 루틴을 만드는 데 집중하면 도움이 될
+    14.75s  agent 발화 끝
+    15.09s  user  발화 시작: 그래, 좋게 들리네…
+    16.70s  user  발화 끝
+    18.24s  user  발화 시작: …근데 좋은 루틴이 대체 뭔데?
+    20.21s  user  발화 끝
+    20.28s  agent 발화 시작: 네, 좋은 루틴은 개인차가 있지만, 일반적으로 잠자리에 들기 전에 편안한 활동을 하는 것을 포함해요. 따뜻한
+    33.30s  agent 발화 끝
+    34.42s  user  발화 시작: 난 이미 책 읽는데도 계속 뒤척여.
+    36.40s  user  발화 끝
+    36.40s  agent 발화 시작: 네, 때로는 뭘 하는 것보다 뭘 피하는지가 더 중요할 수도 있어요. 잠자리에 들기 전에 스크린 타임과 카페인
+    43.24s  user  발화 시작: 응.
+    43.64s  user  발화 끝
+    45.35s  agent 발화 끝
+    45.38s  user  발화 시작: 카페인은 안 마시는데, 핸드폰을 너무 많이 봐.
+    48.61s  user  발화 끝
+    48.84s  agent 발화 시작: 네, 흔한 습관이고 고치기 힘든 습관이기도 해요. 스크린에서 나오는 블루라이트는 멜라토닌 생성을 방해할 수 
+    54.49s  user  발화 시작: 그래.
+    54.97s  user  발화 끝
+    57.59s  agent 발화 끝
+    57.74s  user  발화 시작: 멜라토닌? 그게 뭔데?
+    59.41s  <ret> 발화 (turn12 첫 프레임)
+    59.49s  agent 발화 시작: <ret> 네, 멜라토닌은 우리 몸에서 수면 시간과 기상 시간을 조절하는 데 도움이 되는 호르몬이에요—건강한
+    59.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.13s]: Melatonin is a hormone primarily produced by the pineal gland that reg
+    59.63s  user  발화 끝
+    72.62s  agent 발화 끝
+    72.65s  user  발화 시작: 알았어, 그럼 핸드폰은 줄이고… 꿈은 어때?
+    76.02s  agent 발화 시작: 네, 꿈은 수면의 흥미로운 부분이고, 종종 우리의 무의식적인 생각과 감정을 반영해요.
+    76.03s  user  발화 끝
+    81.63s  user  발화 시작: 어.
+    82.27s  user  발화 끝
+    83.25s  agent 발화 끝
+    83.33s  user  발화 시작: 내 꿈은 항상 이상하고 스트레스 받아.
+    85.97s  agent 발화 시작: 네, 꿈이 이상하거나 불안하게 느껴지는 건 흔한 일이에요. 마음이 감정을 처리하는 방식일 수도 있어요.
+    86.11s  user  발화 끝
+    93.40s  user  발화 시작: 사람들이 꿈을 컬러로 꾸는 거야, 아니면 그냥 영화 같은 거야?
+    93.80s  agent 발화 끝
+    97.64s  <ret> 발화 (turn19 첫 프레임)
+    97.71s  agent 발화 시작: <ret> 네, 사실 대부분의 사람들은 꿈을 컬러로 경험하지만, 놀랍게도 상당수의 사람들은—
+    97.72s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.35s]: Most people dream in color, although a significant minority report dre
+    97.88s  user  발화 끝
+   105.44s  user  발화 시작: …근데 색깔을 본 적이 없는 사람은 꿈이 달라?
+   106.06s  agent 발화 끝
+   108.15s  user  발화 끝
+   108.21s  agent 발화 시작: 네, 정말 통찰력 있는 질문이에요. 색맹으로 태어난 사람들도 꿈을 꾸지만, 우리가 일반적으로 경험하는 색깔과
+   118.46s  agent 발화 끝
+   120.00s  user  발화 시작: 와, 그건… 대단하네. 다시 루틴 얘기로 돌아가서, 일어나기는 어때?
+   125.92s  user  발화 끝
+   126.08s  agent 발화 시작: 네, 주말에도 일정한 시간에 일어나는 것이 우리 몸의 자연스러운 시계를 조절하는 데 매우 유익해요.
+   133.45s  user  발화 시작: 난 아침을 싫어해.
+   133.45s  agent 발화 끝
+   134.83s  user  발화 끝
+   135.20s  agent 발화 시작: 네, 많은 사람들이 그래요! 새로운 루틴에 적응하는 데 시간이 걸릴 수 있고, 천천히 시작하는 것도 괜찮아요
+   138.32s  user  발화 시작: 그래.
+   138.82s  user  발화 끝
+   144.38s  agent 발화 끝
+   144.94s  user  발화 시작: 잠에 대한 생각의 역사는 어때?
+   146.81s  <ret> 발화 (turn28 첫 프레임)
+   147.13s  agent 발화 시작: <ret> 네, 잠을 적극적으로 관리해야 한다고 생각하는 것은 아주 오래전부터 있었어요—고대 이집트인들은 꿈
+   147.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.38s]: Ancient Egyptians believed in the god Morpheus, representing dreams, a
+   147.38s  user  발화 끝
+   158.38s  user  발화 시작: 응.
+   158.87s  user  발화 끝
+   161.51s  agent 발화 끝
+   161.57s  agent 발화 시작: 네, 그들은 편안한 잠을 매우 중요하게 생각했고 건강과 웰빙과 관련이 있다고 보았어요.
+   168.89s  agent 발화 끝
+   169.03s  agent 발화 시작: 네, 과거의 지혜가 오늘날에도 여전히 와닿는다는 게 놀랍네요.
+   174.21s  agent 발화 끝
+   174.28s  user  발화 시작: 그래. 그럼 신이랑 의식… 사제에 대해서는 어때?
+   177.46s  <ret> 발화 (turn33 첫 프레임)
+   177.54s  agent 발화 시작: <ret> 네, 고대 이스라엘에서는 대사제가 매우 중요한 역할을 했는데, 밤새 신성한 불을 계속 피워야 하는
+   177.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.19s]: In ancient Israel, the High Priest served in the Temple, with duties i
+   177.79s  user  발화 끝
+   191.74s  agent 발화 끝
+   193.56s  user  발화 시작: 처음 대사제는 누구였어?
+   195.05s  <ret> 발화 (turn35 첫 프레임)
+   195.29s  agent 발화 시작: <ret> 네, 전통적으로 모세의 형제인 아론이 히브리 성경에서 최초의 대사제로 여겨져요. 종교 역사에서 매
+   195.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.45s]: Aaron, brother of Moses, is traditionally regarded as the first High P
+   195.41s  user  발화 끝
+   204.74s  agent 발화 끝
+   205.08s  user  발화 시작: 모세의 형제? 그는 뭘 실제로 *했어*?
+   208.12s  <ret> 발화 (turn37 첫 프레임)
+   208.28s  agent 발화 시작: <ret> 네, 아론은 모세가 파라오와 소통하는 것을 돕고, 회막을 건설하는 것을 감독했으며, 이스라엘 백성
+   208.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.10s]: Aaron assisted Moses in speaking to Pharaoh, oversaw the construction 
+   208.46s  user  발화 끝
+   220.38s  agent 발화 끝
+   220.59s  user  발화 시작: 그거… 바쁘네. 난 그냥 잠들고 싶어.
+   224.82s  agent 발화 시작: 네, 압도감을 느끼는 것은 이해가 돼요. 오늘 밤 당신을 위한 간단한 잠자리 루틴을 만드는 데 집중해 볼까요
+   224.99s  user  발화 끝
+   232.01s  user  발화 시작: 그래.
+   232.51s  user  발화 끝
+   234.14s  agent 발화 끝
+   234.41s  user  발화 시작: 그래, 좋겠어. 그냥… 핸드폰 안 보는 걸로.
+   239.56s  agent 발화 시작: 네, 아주 좋은 시작이에요. 작은 변화가 시간이 지나면서 큰 차이를 만들 수 있답니다.
+   239.65s  user  발화 끝
+   248.41s  agent 발화 끝

@@ -1,10 +1,10 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are Vellan, a upbeat and supportive life coach who helps people with creative blocks and confidence. <system>
+SYSTEM: <system> You are Thulo, a kind and steady wellness coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_21",
-    "name": "William",
+    "name": "Quinn",
     "location": {
       "city": "Sydney",
       "country": "Australia",
@@ -12,65 +12,74 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "AUD ($)"
     },
     "nationality": "Australian",
-    "gender": "male",
-    "age_range": "late 20s",
+    "gender": "non-binary",
+    "age_range": "early 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-13",
+      "date": "2026-04-21",
       "category": "trip",
-      "text": "User is planning a trip to Vietnam in March."
+      "text": "User is planning a trip to Lisbon in March."
     },
     {
-      "date": "2025-12-10",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2026-02-16",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2025-11-20",
-      "category": "home",
-      "text": "User's home address is 487 Maple Drive."
-    },
-    {
-      "date": "2025-07-14",
+      "date": "2025-10-15",
       "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "text": "User's favorite cuisine is Ethiopian."
     },
     {
-      "date": "2025-05-31",
-      "category": "work",
-      "text": "User works as a high-school teacher."
+      "date": "2025-08-23",
+      "category": "home",
+      "text": "User's home address is 519 Pine Court."
+    },
+    {
+      "date": "2025-08-07",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-24",
-      "title": "Comparing gym memberships",
+      "date": "2026-03-17",
+      "title": "Researching a used car",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     },
     {
-      "date": "2025-09-27",
+      "date": "2026-01-23",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-01-10",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How many years ago did the…
-[  4.16s][user ] …Rocky Mountains arise in northeastern Alberta?
-[  7.63s][moshi] ⟨ret@7.55s⟩ ⟦⚡SPAN@7.63s: (no information found)⟧ Unfortunately, a precise timeframe for the Rocky Mountains’ formation in that specific area isn’t widely known.
-[ 15.30s][user ] Oh, um… that’s a shame.
-[ 17.99s][moshi] It’s okay to not have all the answers, you know? Sometimes the mystery is part of the beauty. It's like a blank canvas – full of potential!
-[ 21.63s][user ] «backchannel» Yeah, yeah.
-[ 26.80s][moshi] Perhaps we could explore other geological wonders? I find learning about the Earth’s history incredibly inspiring.
-[ 34.37s][user ] Actually, could you tell me the current time in Seoul?
-[ 37.15s][moshi] ⟨ret@37.07s⟩ ⟦⚡SPAN@37.15s: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul right now.⟧ It is currently two thirty-seven PM in Seoul, on Friday, July tenth. A perfect time to start something new, don’t you think?
-      CALL: {"function": "get_time", "arguments": {"location": "Asia/Seoul"}}
+[  0.00s][user ] What did Aristotle investigate to test the existence of a vacuum?
+[  4.18s][moshi] ⟨ret@4.10s⟩ ⟦⚡SPAN@4.18s: (no information found)⟧ Unfortunately, it isn’t known what specific investigations Aristotle undertook to test for a vacuum.
+[  7.16s][user ] «backchannel» Yeah, yeah.
+[ 11.81s][user ] Oh, okay. Um… well, what about his thoughts on motion?
+[ 15.91s][moshi] Aristotle believed that motion required a continuous cause — something had to be constantly pushing or pulling an object to keep it moving.
+[ 21.49s][user ] «backchannel» Mhm.
+[ 25.06s][moshi] He thought natural motion, like things falling, happened because objects sought their natural place, while violent motion needed a force. — It’s a pretty different view than what we understand now.
+[ 34.44s][user ] «backchannel» Yeah.
+[ 37.43s][user ] That sounds… complicated. Can you tell me about his ideas on categories?
+[ 42.82s][moshi] ⟨ret@42.74s⟩ ⟦⚡SPAN@42.82s: Aristotle divided all things into categories based on their essential qualities, with ten primary categories i⟧ Aristotle organized everything into categories, based on essential qualities. These included substance, quantity, and relation, among ten others.
+[ 52.55s][user ] Wow, that’s a lot to take in! Thanks, Thulo.

@@ -4,89 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_abs_22",
-#     "name": "Morgan",
+#     "name": "Lily",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in October."
+#       "date": "2026-04-07",
+#       "category": "home",
+#       "text": "User's home address is 600 Maple Drive."
 #     },
 #     {
-#       "date": "2026-05-09",
+#       "date": "2026-03-31",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2026-04-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "date": "2025-12-25",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "work",
-#       "text": "User works as a nurse."
+#       "date": "2025-11-06",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     },
 #     {
-#       "date": "2025-11-30",
+#       "date": "2025-10-05",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-05",
+#       "date": "2025-06-07",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
+#       "date": "2026-04-06",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-08",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
 #         "wants under 30k miles"
 #       ]
-#     },
-#     {
-#       "date": "2026-06-10",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 From where do the earliest Han cou | S2 Oh. Well… | S3 …what’s the weather in Seoul right | S4 That does sound quite pleasant.
+# EXAMINER(FDB-v2) 단계: S1 What console was home to the seque | S2 Oh, okay. Well, what about the ori | S3 …was that the first Zelda game he  | S4 That's amazing! What other Zelda g
 
-     0.00s  user  발화 시작: From where do the earliest Han court fragments derive?
-     3.45s  <ret> 발화 (turn1 첫 프레임)
-     3.61s  agent 발화 시작: <ret> But unfortunately, the origin of the earliest Han cour
-     3.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (no information found)
-     3.79s  user  발화 끝
-     6.19s  user  발화 시작: Yeah.
-     6.59s  user  발화 끝
-     8.84s  user  발화 시작: Oh. Well…
-     8.94s  agent 발화 끝
-    10.45s  user  발화 끝
-    11.77s  user  발화 시작: …what’s the weather in Seoul right now?
-    13.89s  user  발화 끝
-    14.00s  <ret> 발화 (turn5 첫 프레임)
-    14.16s  agent 발화 시작: <ret> It’s currently 23.0 degrees Celsius in Seoul, with hum
-    14.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    24.05s  agent 발화 시작: A comfortable temperature, wouldn’t you say? Perhaps good fo
-    24.18s  agent 발화 끝
-    28.08s  user  발화 시작: That does sound quite pleasant.
-    28.17s  agent 발화 끝
-    30.34s  user  발화 끝
+     0.00s  user  발화 시작: What console was home to the sequel for Aonuma?
+     2.80s  <ret> 발화 (turn1 첫 프레임)
+     2.96s  agent 발화 시작: <ret> But unfortunately, I don’t have information about whic
+     2.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: (no information found)
+     3.10s  user  발화 끝
+     8.70s  agent 발화 끝
+     8.81s  user  발화 시작: Oh, okay. Well, what about the original Aonuma game?
+    12.08s  <ret> 발화 (turn3 첫 프레임)
+    12.24s  agent 발화 시작: <ret> The original Aonuma game, *The Legend of Zelda: Ocarin
+    12.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: The Legend of Zelda: Ocarina of Time was released for the Nintendo 64 
+    12.38s  user  발화 끝
+    19.09s  user  발화 시작: …was that the first Zelda game he directed?
+    19.84s  agent 발화 끝
+    22.01s  agent 발화 시작: Yes, that is correct. *Ocarina of Time* was Eiji Aonuma’s di
+    22.05s  user  발화 끝
+    27.59s  user  발화 시작: Yeah.
+    28.09s  user  발화 끝
+    32.11s  agent 발화 끝
+    32.59s  user  발화 시작: That's amazing! What other Zelda games did he work on?
+    35.64s  <ret> 발화 (turn8 첫 프레임)
+    35.80s  agent 발화 시작: <ret> He’s contributed to many Zelda games, including *Major
+    35.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.54s]: Eiji Aonuma has been involved with many Zelda titles, including Majora
+    35.97s  user  발화 끝
+    49.35s  agent 발화 끝

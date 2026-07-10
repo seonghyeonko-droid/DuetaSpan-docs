@@ -1,115 +1,93 @@
 v3_fstart_15_ko src=mcp style=mcp_falsestart
-SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 상담사 Sien입니다. <system>
+SYSTEM: <system> 당신은 수면 및 휴식을 어려워하는 사람들을 돕는 긍정적이고 지지적인 상담사 구난입니다. 기본적으로 존댓말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "수경",
+    "name": "혜연",
     "location": {
-      "city": "Busan",
+      "city": "Seoul",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
+    "gender": "male",
     "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-27",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2026-02-28",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in December."
     },
     {
-      "date": "2026-05-27",
-      "category": "hobby",
-      "text": "User is into rock climbing."
+      "date": "2026-01-25",
+      "category": "work",
+      "text": "User works as a high-school teacher."
     },
     {
-      "date": "2026-05-14",
-      "category": "home",
-      "text": "User's home address is 서울 용산구 이태원로 200."
-    },
-    {
-      "date": "2026-04-17",
+      "date": "2026-01-07",
       "category": "allergy",
       "text": "User is allergic to pollen."
     },
     {
-      "date": "2026-03-20",
-      "category": "diet",
-      "text": "User is gluten-free."
-    },
-    {
-      "date": "2026-01-03",
-      "category": "pet",
-      "text": "User has a Siamese cat named Bella."
+      "date": "2025-07-11",
+      "category": "hobby",
+      "text": "User is into birdwatching."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-23",
-      "title": "Booked a dentist appointment",
+      "date": "2026-05-04",
+      "title": "Setting up a home network",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     },
     {
-      "date": "2026-03-21",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-07-30",
+      "date": "2026-04-11",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-17",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 오늘 날씨 ⟨ret@0.88s⟩ 어때?
-[  0.96s][moshi] ⟦⚡SPAN@0.96s: 23.0°C, humidity 74%, wind 5.5 km/h⟧ 오늘 날씨는 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
-[  9.40s][user ] 그럼 내일은 ⟨ret@10.09s⟩ 어때?
-[ 10.48s][moshi] ⟦⚡SPAN@10.49s: 25.0°C, humidity 68%, wind 7.0 km/h⟧ 내일은 섭씨 이십오도로 조금 더 따뜻하고, 습도는 육십팔%, 바람은 시속 칠킬로미터로 조금 더 강하게 불 거예요.
-[ 15.12s][user ] «backchannel» 음.
-[ 20.29s][user ] 이번 주말에 영화 보러 가고 싶은데, 상영 시간 좀 알아봐 ⟨ret@24.12s⟩ 줄래?
-[ 24.44s][moshi] ⟦⚡SPAN@24.44s: (tool result) Oppenheimer — 14:00, 17:30, 21:00⟧ 오펜하이머 영화 상영 시간은 오후 두시, 다섯시 삼십분, 아홉시에 있어요.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[ 30.68s][user ] 오펜하이머… 음, 아니, 그냥 액션 영화 보고 싶어.
-[ 34.69s][moshi] 액션 영화를 찾으시는군요. 어떤 영화를 좋아하시나요?
-[ 37.81s][user ] 그냥 아무거나 괜찮아. 최신 개봉작 ⟨ret@40.18s⟩ 중에서.
-[ 40.58s][moshi] ⟦⚡SPAN@40.58s: (tool result) Mission: Impossible - Dead Reckoning Part One — 13:00, 16:00, 19:00, 22:00⟧ 미션 임파서블: 데드 레코닝 파트 원이 한시, 네시, 일곱시, 열시에 상영 중이에요.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
-[ 47.30s][user ] 일곱시 표 예매해 ⟨ret@48.57s⟩ 줘.
-[ 48.88s][moshi] ⟦⚡SPAN@48.89s: (tool result) Confirmation ID: 749283⟧ 미션 임파서블 일곱시 표 예매 완료되었고, 확인 번호는 칠 사 구 이 팔 삼번입니다.
-      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie": "Mission: Impossible - Dead Reckoning Part One", "time": "19:00"}}
-[ 56.23s][user ] 고마워. — 혹시…
-[ 59.60s][user ] … 이번 주말에 서울 근교로…
-[ 63.80s][user ] …드라이브 갈 만한 곳 있어?
-[ 65.40s][moshi] 서울 근교 드라이브 코스를 찾으시는군요. 어떤 분위기를 원하세요?
-[ 66.78s][user ] «backchannel» 그치.
-[ 69.58s][moshi] 조용하고 한적한 곳을 좋아하시는지, 아니면 활기차고 볼거리가 많은 곳을 선호하시는지 알려주시면 더 좋은 곳을 추천해 드릴 수 있어요.
-[ 72.14s][user ] «backchannel» 그치.
-[ 77.26s][user ] 음… 경치 좋은 ⟨ret@78.58s⟩ 곳으로.
-[ 78.90s][moshi] ⟦⚡SPAN@78.90s: (tool result) Nami Island — Scenic island with beautiful views; Bukhansan National Park — Hiking trails and mo⟧ 남이섬은 아름다운 경치를 자랑하는 섬이고, 북한산 국립공원은 하이킹 코스와 산 풍경이 멋진 곳이에요.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Seoul", "type": "scenic"}}
-[ 85.82s][user ] 남이섬… 거긴 가봤어.
-[ 87.61s][moshi] 남이섬에 가보셨군요. 그럼 북한산 국립공원은 어떠세요? 등산도 즐기실 수 있고, 멋진 풍경을 감상하실 수 있어요.
-[ 95.42s][user ] 북한산은 좀 멀 것 같은데.
-[ 97.61s][moshi] 북한산이 조금 멀다고 느끼시는군요. 좀 더 가까운 곳을 알아볼까요?
-[100.40s][user ] «backchannel» 음.
-[101.64s][user ] 응, 좀 더 가까운 ⟨ret@102.90s⟩ 곳으로.
-[103.21s][moshi] ⟦⚡SPAN@103.22s: (tool result) Mount Gwanak — Easy hiking trails and scenic views; Seoul Forest — Large park with walking paths⟧ 관악산은 가벼운 하이킹 코스와 멋진 경치를 즐길 수 있고, 서울숲은 넓은 공원으로 산책로와 정원이 아름다운 곳이에요.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Seoul", "radius": "50km", "type": "scenic"}}
-[111.36s][user ] 서울숲 좋아 보여.
-[112.86s][moshi] 서울숲이 마음에 드시는군요. 편안하게 산책하기 좋은 곳이에요.
+[  0.00s][user ] 오늘 저녁에 맛있는 멕시코 음식점 좀 찾아줄 수 있어? 오스틴, 텍사스에 있는 ⟨ret@5.32s⟩ 곳으로.
+[  5.40s][moshi] ⟦⚡SPAN@5.40s: (tool result) El Alma Cafe - 4.5 stars, 1203 S 1st Ave, Austin, TX 78704; La Condesa - 4.2 stars, 3308 Guadalu⟧ 오스틴에 괜찮은 멕시코 음식점들이 몇 군데 있어요. 엘 알마 카페는 별점 사 점 오점이고, 라 콘데사는 사 점 이점이에요.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Austin, Texas", "cuisine": "Mexican"}}
+[ 13.54s][user ] 라 콘데사로 예약해 줄 수 있어? 내일 저녁 일곱시에 두 ⟨ret@17.30s⟩ 명으로.
+[ 17.70s][moshi] ⟦⚡SPAN@17.70s: (tool result) Reservation confirmed for La Condesa, July 11, 2026, 7:00 PM, party of 2. Confirmation ID: LC789⟧ 네, 라 콘데사 내일 저녁 일곱시에 두 분으로 예약 완료되었습니다. 확인 번호는 엘 씨 칠 팔 구 이 삼이에요.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "La Condesa", "date": "July 11, 2026", "time": "19:00", "party_size": "2"}}
+[ 22.33s][user ] «backchannel» 음.
+[ 24.78s][user ] 혹시 그 근처에 주차 공간이 있는지 알아봐 줄 ⟨ret@27.74s⟩ 수 있을까?
+[ 28.13s][moshi] «interrupted» ⟦⚡SPAN@28.14s: (tool result) La Condesa Parking - domain: austintexas.gov - Several parking garages are within a 5-minute wal⟧ 라 콘데사 근처에는 도보 오분 거리에 주차장이 여러 곳 있어요—
+      CALL: {"function": "search", "arguments": {"query": "parking near La Condesa Austin"}}
+[ 31.45s][user ] «interrupts_prev» …혹시 그 주차장 중에 제일 저렴한 곳은 어디야?
+[ 34.78s][moshi] 죄송해요, 잠시만요. 가장 저렴한 곳은… 육번가 주차장이 시간당 십달러 정도예요.
+[ 36.67s][user ] «backchannel» 네네.
+[ 40.56s][moshi] 다른 곳들은 보통 십오달러에서 이십오달러 정도 하니까 육번가가 괜찮을 것 같아요.
+[ 42.27s][user ] «backchannel» 그렇군요.
+[ 45.26s][user ] 고마워. 혹시 내일 날씨는 ⟨ret@47.24s⟩ 어때?
+[ 47.48s][moshi] ⟦⚡SPAN@47.48s: (tool result) July 11, 2026, Austin, Texas: 32.2°C, humidity 68%, wind 8.2 km/h, partly cloudy.⟧ 내일 오스틴 날씨는 삼십이 점 이도이고, 습도는 육십팔%, 바람은 시속 팔 점 이킬로미터로 예상됩니다. 구름이 조금 끼겠어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Austin, Texas", "date": "July 11, 2026"}}
+[ 53.78s][user ] «backchannel» 네네.
+[ 56.17s][user ] 아, 좋네. 그럼 내일 저녁에 편하게 데이트할 수 있겠어.
+[ 59.47s][moshi] 네, 데이트하기 좋은 날씨일 것 같아요. 즐거운 시간 보내세요! 혹시 잠자리에 들기 전에 긴장을 푸는 데 도움이 될 만한 음악을 추천해 드릴까요?
+[ 68.25s][user ] 음, 좋은 생각인데. 편안한 분위기의 음악으로 추천해 ⟨ret@71.84s⟩ 줘.
+[ 72.15s][moshi] ⟦⚡SPAN@72.16s: (tool result) Playing "Weightless" by Marconi Union - ambient, relaxing music.⟧ 편안한 분위기의 음악으로 Marconi Union의 “Weightless”를 틀어 드릴게요.
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"genre": "chill"}}

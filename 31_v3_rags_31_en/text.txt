@@ -1,64 +1,51 @@
 v3_rags_31_en src=nq_single style=rag_single
-SYSTEM: <system> You are Elelil, a encouraging and non-judgmental counselor who helps people with friendships and social life. <system>
+SYSTEM: <system> You are Baera, a gentle and reflective personal guide who helps people with family and relationships. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rags_31",
-    "name": "Riley",
+    "name": "Jack",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
-    "gender": "non-binary",
-    "age_range": "50s",
-    "language": "German"
+    "nationality": "French",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-28",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-06-26",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
     },
     {
-      "date": "2026-05-09",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2026-04-10",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
     },
     {
-      "date": "2026-03-08",
-      "category": "home",
-      "text": "User's home address is 664 Pine Court."
-    },
-    {
-      "date": "2025-09-02",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
-      "date": "2025-06-09",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Ethiopian."
-    },
-    {
-      "date": "2025-06-02",
+      "date": "2025-11-12",
       "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
+      "text": "User is planning a trip to Lisbon in March."
+    },
+    {
+      "date": "2025-09-18",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-08-06",
+      "category": "home",
+      "text": "User's home address is 614 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-14",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-06-21",
+      "date": "2025-09-18",
       "title": "Researching a used car",
       "bullets": [
         "comparing hybrid models",
@@ -69,5 +56,5 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Who played Belle’s dad in Beauty and the ⟨ret@2.27s⟩ Beast?
-[  2.50s][moshi] ⟦⚡SPAN@2.51s: Kevin Kline portrayed Maurice, Belle’s father, in the 1991 Disney film Beauty and the Beast.⟧ That would be Kevin Kline! He really brought a warmth to Maurice, didn't he? It’s lovely when characters have such supportive fathers.
+[  0.00s][user ] Who was the other main candidate for president in 2016, besides Hillary ⟨ret@5.70s⟩ Clinton?
+[  5.93s][moshi] ⟦⚡SPAN@5.94s: Bernie Sanders ran for the Democratic nomination for president in 2016.⟧ It was Bernie Sanders who also sought the nomination—a truly passionate voice, wasn’t it?

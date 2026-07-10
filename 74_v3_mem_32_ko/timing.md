@@ -4,51 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "다우",
+#     "name": "정현",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "late 20s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-07",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2026-05-27",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-02-03",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
+#       "date": "2026-04-18",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2025-08-28",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "date": "2025-11-19",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-10",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2025-11-12",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-28",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-16",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2025-11-18",
+#       "date": "2026-01-08",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -58,18 +58,41 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 누라님. 잘 지내고 있어요. 혹시 제가 예전에 말 | S2 음… 사실 다음 달에 친구들과 함께 경주에 가는 걸 생각하고  | S3 야외 좌석이 있다니 좋네요!— | S4 와, 정말 감사합니다! 덕분에 편하게 여행 계획을 세울 수 있
 
-     0.00s  agent 발화 시작: 안녕하세요, 다우님. 저는 여러분의 일상과 생산성을 돕는 에이전트, 페우스입니다.
-     3.27s  user  발화 시작: 예.
-     3.99s  user  발화 끝
-     6.11s  agent 발화 끝
-     6.40s  user  발화 시작: 음… 전에 강아지 이름이 뭐였죠? 갑자기 기억이 안 나네요.
-     9.85s  <ret> 발화 (turn3 첫 프레임)
-     9.91s  agent 발화 시작: <ret> 강아지 이름은 모치였어요. 귀여운 코기시죠.
-     9.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: [2026-03-07] User has a Corgi named Mochi.
-    10.05s  user  발화 끝
-    12.38s  user  발화 시작: 음.
-    12.92s  user  발화 끝
-    13.77s  agent 발화 시작: 모치와 함께 즐거운 시간 보내시길 바랍니다. 혹시 오늘 특별한 계획 있으신가요?
-    13.92s  agent 발화 끝
-    19.69s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 정현님! 저는 여러분의 삶을 응원하는 라이프 코치 누라예요. 오늘 하루도 활기차게 시작하셨나요?
+     8.11s  agent 발화 끝
+     8.48s  user  발화 시작: 안녕하세요, 누라님. 잘 지내고 있어요. 혹시 제가 예전에 말씀드렸던 여행 계획 기억하시나요?
+    15.01s  <ret> 발화 (turn2 첫 프레임)
+    15.08s  agent 발화 시작: <ret> 창가 자리를 선호하신다고 말씀해주셨어요. 여행할 때 창밖 풍경을 보시는 걸 좋아하시죠.
+    15.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: [2025-11-19] User prefers a window seat when traveling.
+    15.20s  user  발화 끝
+    21.70s  user  발화 시작: 네, 맞아요. 그때 제가 창가 자리를 꼭 부탁드린다고 말씀드렸었죠.
+    21.89s  agent 발화 끝
+    26.04s  agent 발화 시작: 기억하고 있어요. 혹시 최근에 특별히 관심 있는 여행지가 있으신가요?
+    26.19s  user  발화 끝
+    30.91s  agent 발화 끝
+    31.00s  user  발화 시작: 음… 사실 다음 달에 친구들과 함께 경주에 가는 걸 생각하고 있어요.
+    36.06s  agent 발화 시작: 경주요? 정말 멋진 곳이죠! 혹시 경주에서 특별히 보고 싶은 곳이 있으신가요? 아니면 맛집이라도?
+    36.19s  user  발화 끝
+    44.02s  agent 발화 끝
+    44.04s  user  발화 시작: 사실 맛집을 좀 알아보고 싶어요. 특히 친구들이랑 같이 먹을 만한, 좀 특별한 곳이 있을까요?
+    49.84s  <ret> 발화 (turn8 첫 프레임)
+    49.91s  agent 발화 시작: <ret> 황리단길에 있는 한식당이 평점이 사 점 오점에 야외 좌석도 마련되어 있다고 해요.
+    50.02s  user  발화 끝
+    50.88s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.56s]: (tool result) Restaurant: Hwangnidan Gil, Korean, 4.5 stars, outdoor s
+    53.52s  user  발화 시작: 네.
+    54.02s  user  발화 끝
+    56.17s  agent 발화 끝
+    56.80s  user  발화 시작: 야외 좌석이 있다니 좋네요!—
+    58.58s  user  발화 시작: 혹시 그 황리단길 식당 예약해 줄 수 있나요?
+    58.78s  user  발화 끝
+    61.52s  <ret> 발화 (turn12 첫 프레임)
+    61.53s  user  발화 끝
+    61.60s  agent 발화 시작: <ret> 네, 황리단길 식당에 팔월 십일 저녁 일곱시에 여섯명으로 예약이 완료되었어요. 확인번호는 엑스 제
+    61.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) Reservation confirmed for 6 people at Hwangnidan Gil on 
+    71.07s  user  발화 시작: 와, 정말 감사합니다! 덕분에 편하게 여행 계획을 세울 수 있겠네요.
+    71.28s  agent 발화 끝
+    76.13s  agent 발화 시작: 천만에요. 여행 준비 잘 하시고, 즐거운 시간 보내세요!
+    76.26s  user  발화 끝
+    80.99s  agent 발화 끝

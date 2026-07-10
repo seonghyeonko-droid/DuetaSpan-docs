@@ -1,56 +1,46 @@
 v3_backg_17_en src=nq style=v1
-SYSTEM: <system> You are Fruna, a calm and patient counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Bari, a grounded and empathetic wellness coach who helps people with creative blocks and confidence. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_backg_17",
-    "name": "Thomas",
+    "name": "Avery",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "Australian",
-    "gender": "male",
-    "age_range": "40s",
+    "nationality": "Canadian",
+    "gender": "non-binary",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-15",
-      "category": "home",
-      "text": "User's home address is 772 Birch Road."
+      "date": "2026-06-07",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     },
     {
-      "date": "2026-02-27",
+      "date": "2026-03-06",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2026-02-25",
+      "category": "diet",
+      "text": "User is vegetarian."
     },
     {
       "date": "2026-01-02",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in August."
-    },
-    {
-      "date": "2025-11-14",
-      "category": "diet",
-      "text": "User is vegan."
-    },
-    {
-      "date": "2025-09-13",
-      "category": "hobby",
-      "text": "User is into rock climbing."
-    },
-    {
-      "date": "2025-08-11",
-      "category": "work",
-      "text": "User works as a software engineer."
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-10-12",
+      "date": "2026-03-04",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
@@ -58,26 +48,38 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       ]
     },
     {
-      "date": "2025-06-05",
-      "title": "Booked a dentist appointment",
+      "date": "2025-08-21",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who guest starred on Sons of Anarchy, season ⟨ret@2.86s⟩ five?
-[  3.25s][moshi] ⟦⚡SPAN@3.26s: Rachel Miner portrayed Maureen Ashby in three episodes of Sons of Anarchy’s fifth season.⟧ It’s interesting how actors can bring such depth to a role, even briefly. Rachel Miner played Maureen Ashby in three episodes of season five.
-[  8.27s][user ] «backchannel» Okay.
-[ 11.63s][user ] Oh, okay. Uh, what did she do on the show?
-[ 14.34s][moshi] Well, sometimes characters appear to really shake things up for the main cast.
-[ 16.83s][user ] «backchannel» Yeah, yeah.
-[ 18.45s][moshi] Maureen Ashby, as portrayed by Rachel Miner, was involved in a custody battle with Jax Teller—a challenging situation for everyone.
-[ 27.69s][user ] I see… that sounds complicated.
-[ 29.61s][moshi] Difficult situations often bring out strong emotions, don’t they? It's natural to feel pulled in different directions when families are involved.
-[ 34.59s][user ] «backchannel» Okay.
-[ 37.53s][user ] Did you hear…
-[ 40.13s][user ] …about the traffic on Elm Street?
+[  0.00s][user ] So, if a shipment is fob destination, who is responsible for the freight ⟨ret@4.33s⟩ costs?
+[  4.73s][moshi] «interrupted» ⟦⚡SPAN@4.73s: In fob destination, the seller retains ownership and responsibility for freight costs until the goods reach th⟧ Well, that's a really good question. When shipping terms are fob destination, the seller actually covers the freight costs—
+[ 11.46s][user ] «interrupts_prev» …but what if the goods are damaged in transit?
+[ 13.77s][moshi] That’s a valid concern. Let's come back to that after we cover the basic cost responsibility.
+[ 19.69s][user ] Okay, good idea.
+[ 20.84s][moshi] ⟨ret@20.69s⟩ ⟦⚡SPAN@20.85s: Fob destination means the seller bears all responsibility for loss or damage to the goods until they are deliv⟧ The seller is responsible for everything until the goods are delivered, including any damage that happens during shipping.
+[ 25.16s][user ] «backchannel» Yeah, yeah.
+[ 26.95s][moshi] It’s about ensuring you receive what you expect, without unexpected costs or risks.
+[ 30.91s][user ] «backchannel» Mm-hmm.
+[ 32.20s][user ] That makes sense. What about insurance in ⟨ret@34.49s⟩ that case?
+[ 34.81s][moshi] ⟦⚡SPAN@34.81s: Insurance costs are typically included in the seller's fob destination pricing, covering potential loss or dam⟧ Insurance is usually factored into the seller’s price when it’s fob destination, protecting against loss or damage.
+[ 38.20s][user ] «backchannel» Mm-hmm.
+[ 41.60s][user ] So, the buyer doesn’t pay for that separately?
+[ 44.07s][moshi] No, the buyer doesn't pay for insurance separately under fob destination terms. It’s all included.
+[ 51.23s][user ] What if I want to arrange the shipping myself?
+[ 54.17s][moshi] That would change the terms. We could explore fob shipping point if you'd like to handle the freight.
+[ 57.86s][user ] «backchannel» Yeah, yeah.
+[ 59.72s][user ] Hmm, maybe later. One more question – what…
+[ 63.71s][user ] …if it's an international ⟨ret@65.39s⟩ shipment?
+[ 65.63s][moshi] ⟦⚡SPAN@65.63s: International fob destination shipments still place the freight cost and risk of loss on the seller until fina⟧ Even with international shipping, the seller is still responsible for the freight and any risk of loss until the goods arrive.
+[ 68.90s][user ] «backchannel» Mm-hmm.
+[ 73.13s][user ] «to_other» Did you remember to lock the back door?
+[ 75.02s][moshi] It’s about creating a clear agreement and protecting both parties, isn't it?
+[ 79.05s][user ] Yes, it is. Thanks, Bari.
