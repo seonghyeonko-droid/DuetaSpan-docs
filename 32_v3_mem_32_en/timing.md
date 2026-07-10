@@ -4,82 +4,74 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_32",
-#     "name": "Oscar",
+#     "name": "Zoe",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "male",
-#     "age_range": "late 30s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-03",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2026-03-11",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-01-24",
+#       "date": "2026-05-17",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-01-23",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-03-14",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-11-15",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in March."
-#     },
-#     {
-#       "date": "2025-11-11",
+#       "date": "2026-01-18",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2026-01-14",
+#       "category": "work",
+#       "text": "User works as a architect."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-03",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-05-11",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-16",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Oscar, I'm Frio. It's good to connect with you. I underst
-     4.72s  agent 발화 끝
-     5.46s  user  발화 시작: um, yeah, that’s right. I was hoping you could help me with 
-     9.79s  agent 발화 시작: Oscar. What's on your mind today? I’m here to listen and off
-     9.85s  user  발화 끝
-    10.96s  user  발화 시작: Yeah.
-    11.36s  user  발화 끝
-    13.82s  agent 발화 끝
-    13.89s  user  발화 시작: I was just wondering… do you recall if I mentioned anything 
-    17.41s  <ret> 발화 (turn5 첫 프레임)
-    17.81s  agent 발화 시작: <ret> Yes, you did mention a cat! You have a Siamese cat nam
-    17.81s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.18s]: [2025-11-11] User has a Siamese cat named Bella.
-    17.92s  user  발화 끝
-    23.00s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Zoe, I'm Klellan. It’s lovely to connect with you today. 
+     4.76s  agent 발화 끝
+     5.38s  user  발화 시작: Um, well, I was just thinking about that trip I took last ye
+    10.08s  <ret> 발화 (turn2 첫 프레임)
+    10.16s  agent 발화 시작: <ret> I recall you mentioned your travel preferences last Ma
+    10.16s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.18s]: [2026-05-17] User prefers an aisle seat when traveling.
+    10.29s  user  발화 끝
+    13.84s  user  발화 시작: Okay.
+    14.61s  user  발화 끝
+    15.34s  agent 발화 끝
+    15.38s  user  발화 시작: Oh, yes! That’s right.
+    17.24s  agent 발화 시작: It's good to remember those little comforts when we plan, is
+    17.27s  user  발화 끝
+    20.15s  user  발화 시작: Yeah, yeah.
+    21.62s  user  발화 끝
+    23.42s  agent 발화 시작: I'm glad that detail resonated with you. Perhaps we could di
+    23.54s  agent 발화 끝
+    29.92s  user  발화 시작: Actually, could you tell me what the weather is like in Pari
+    30.00s  agent 발화 끝
+    33.06s  <ret> 발화 (turn9 첫 프레임)
+    33.30s  agent 발화 시작: <ret> The weather in Paris today is quite pleasant — it’s 22
+    33.30s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.02s]: (tool result) 22.0°C, humidity 68%, wind 3.2 km/h
+    33.48s  user  발화 끝
+    39.32s  agent 발화 끝

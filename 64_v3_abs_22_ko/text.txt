@@ -1,101 +1,68 @@
 v3_abs_22_ko src=squad2 style=abstain
-SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 친절하고 침착한 개인 가이드 Haes입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 건강 및 일상 습관 관련 어려움을 겪는 사람들을 돕는, 현실적이고 공감 능력이 뛰어난 상담사 대은입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "소완",
+    "name": "태율",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 30s",
+    "age_range": "late 30s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Thai."
+      "date": "2026-05-31",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in May."
     },
     {
-      "date": "2026-04-17",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2026-04-03",
+      "date": "2026-05-23",
       "category": "home",
-      "text": "User's home address is 인천 연수구 송도동 12-5."
+      "text": "User's home address is 서울 용산구 이태원로 200."
     },
     {
-      "date": "2025-11-05",
+      "date": "2026-03-23",
       "category": "work",
       "text": "User works as a software engineer."
     },
     {
-      "date": "2025-07-27",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-12-03",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-07-26",
-      "category": "trip",
-      "text": "User is planning a trip to Vietnam in August."
+      "date": "2025-10-28",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-02",
-      "title": "Apartment hunting downtown",
+      "date": "2025-08-03",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 균형 잡힌 식단과 규칙적인 운동이 뭘 불가능하게 ⟨ret@3.68s⟩ 만들까요?
-[  3.99s][moshi] ⟦⚡SPAN@4.00s: (no information found)⟧ 음, 그 질문에 대한 답은 아직 알려진 바가 없어요.
-[  7.87s][user ] 아, 그렇군요. 건강에 좋은 습관이 뭘 막을 수 있는지 궁금했거든요.
-[ 12.62s][moshi] 건강을 챙기는 건 정말 중요하죠.
-[ 14.84s][user ] 네, 있어요. 이번 주 토요일 날씨가 ⟨ret@17.40s⟩ 어때요?
-[ 17.47s][moshi] ⟦⚡SPAN@17.48s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 이번 주 토요일은 섭씨 이십삼도, 습도 칠십사%, 바람은 시속 오 점 오킬로미터로 예상됩니다.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "2026-07-11"}}
-[ 22.32s][user ] «backchannel» 예.
-[ 24.17s][user ] 꽤 덥겠네요. 그럼, 서울에서 가장 가까운 해변은 ⟨ret@27.33s⟩ 어디에요?
-[ 27.64s][moshi] ⟦⚡SPAN@27.65s: (tool result) 을왕리 해수욕장이 서울에서 가장 가까운 해변으로 꼽힙니다. 인천광역시 중구에 위치해 있으며, 대중교통으로도 쉽게 갈 수 있습니다. VisitIncheon, visitinch⟧ 서울에서 가장 가까운 해변은 을왕리 해수욕장이라고 합니다. 인천에 있어요.
-      CALL: {"function": "search", "arguments": {"query": "서울 근처 해변"}}
-[ 29.61s][user ] «backchannel» 음.
-[ 33.15s][user ] 을왕리 해수욕장… 가본 적 있는데, 좋았어요. 그런데, 거기 가는 버스는 어떻게 타야 하나요?
-[ 39.87s][moshi] ⟨ret@39.64s⟩ ⟦⚡SPAN@39.88s: (tool result) 1000번 버스를 타면 을왕리 해수욕장까지 갈 수 있습니다. 서울역에서 출발하여 약 1시간 30분 소요됩니다.⟧ 서울역에서 천번 버스를 타면 약 한 시간 반 정도 걸린다고 합니다.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"destination": "을왕리 해수욕장"}}
-[ 41.49s][user ] «backchannel» 네.
-[ 44.10s][user ] 천번 버스… 아, 잠깐만요. —
-[ 45.93s][user ] … 혹시 그 버스 시간표 좀 알려줄 수 있어요?
-[ 48.58s][moshi] ⟨ret@48.51s⟩ ⟦⚡SPAN@48.59s: (tool result) 1000번 버스의 첫차는 오전 6시이고, 막차는 오후 10시입니다. 10분 간격으로 운행합니다.⟧ 천번 버스는 첫차가 오전 여섯시고, 막차가 오후 열시예요. 십분 간격으로 운행합니다.
-      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"route": "1000"}}
-[ 51.83s][user ] «backchannel» 진짜요?
-[ 55.65s][moshi] 혹시 다른 교통편도 알아봐 드릴까요?
-[ 58.01s][user ] 아니요, 괜찮아요. 그럼, 이번 주말에 갈만한 다른 곳은 없을까요?
-[ 62.61s][moshi] ⟨ret@62.54s⟩ ⟦⚡SPAN@62.62s: (tool result) 경복궁은 서울의 대표적인 관광 명소 중 하나입니다. 조선 시대의 정궁으로, 아름다운 건축물과 정원을 자랑합니다. Korea Tourism Organization, engli⟧ 서울에 있는 경복궁은 어떠세요? 아름다운 궁궐과 정원이 유명하다고 합니다.
-      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "서울"}}
-[ 65.59s][user ] «backchannel» 맞아요.
-[ 68.95s][user ] 경복궁… 한 번 가봐야겠네요. 입장료는 얼마예요?
-[ 72.20s][moshi] ⟨ret@72.13s⟩ ⟦⚡SPAN@72.21s: (tool result) 경복궁 입장료는 성인 기준 3,000원입니다. 만 24세 이하와 65세 이상은 무료입니다. Cultural Heritage Administration, cha.go.kr, ⟧ 성인 기준 입장료는 삼천원이라고 합니다. 이십사세 이하와 육십오세 이상은 무료예요.
-      CALL: {"function": "search", "arguments": {"query": "경복궁 입장료"}}
-[ 78.11s][user ] 오, 저렴하네요. 그럼, 경복궁 근처에 맛집도 추천해 줄 수 ⟨ret@82.42s⟩ 있을까요?
-[ 82.57s][moshi] ⟦⚡SPAN@82.58s: (tool result) 통인동에는 다양한 맛집이 있습니다. 특히, 통인시장에 있는 칼국수 가게가 유명합니다. Seoul Metropolitan Government, seoul.go.kr, 2024⟧ 경복궁 근처 통인동에 맛집이 많다고 합니다. 특히 통인시장의 칼국수 가게가 유명해요.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "경복궁"}}
-[ 86.25s][user ] «backchannel» 예.
-[ 88.72s][user ] 칼국수… 맛있겠네요. 혹시 지금 예약할 수 있을까요?
-[ 92.30s][moshi] 예약 기능은 제공되지 않아요. 직접 방문하셔야 합니다.
-[ 95.15s][user ] «backchannel» 예.
-[ 96.35s][user ] 아, 아쉽네요. 그래도 가봐야겠어요. 감사합니다.
-[ 99.48s][moshi] 천만에요. 즐거운 시간 보내세요.
+[  0.00s][user ] 과거를 배경으로 한 시리즈가 ⟨ret@2.09s⟩ 뭐였지?
+[  2.40s][moshi] ⟦⚡SPAN@2.41s: (no information found)⟧ 음, 죄송하지만 그 질문에 대한 정보는 찾을 수가 없네요.
+[  6.81s][user ] 아, 그렇군요. 그럼 요즘…
+[ 10.01s][user ] …가장 인기 있는 영화는 ⟨ret@11.41s⟩ 뭐예요?
+[ 11.73s][moshi] ⟦⚡SPAN@11.73s: (tool result) Top-rated movies: 'Dune: Part Two', 'Godzilla x Kong: The New Empire', 'Kung Fu Panda 4'.⟧ 요즘 가장 인기 있는 영화는 듄 파트 이 고질라 콩: 새로운 제국, 그리고 쿠нг푸 팬더 사예요.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
+[ 15.87s][user ] «backchannel» 음.
+[ 17.98s][moshi] 듄 파트 이는 평점이 아주 높다고 하네요. 혹시 다른 장르를 찾으시나요?
+[ 23.14s][user ] 아니요, 괜찮아요. 그냥 궁금해서요.
+[ 25.08s][moshi] 그렇군요. 혹시 건강 관리에 관심 있으신가요? 요즘 운동도 많이 하시고요.

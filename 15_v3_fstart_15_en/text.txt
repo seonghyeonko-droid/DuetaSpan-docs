@@ -1,10 +1,10 @@
 v3_fstart_15_en src=mcp style=mcp_falsestart
-SYSTEM: <system> You are Jella, a gentle and reflective counselor who helps people with everyday decisions and feelings. <system>
+SYSTEM: <system> You are Buon, a encouraging and non-judgmental personal guide who helps people with settling into a new city. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fstart_15",
-    "name": "Ava",
+    "name": "Rowan",
     "location": {
       "city": "Berlin",
       "country": "Germany",
@@ -12,98 +12,70 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "EUR (€)"
     },
     "nationality": "German",
-    "gender": "female",
-    "age_range": "50s",
+    "gender": "non-binary",
+    "age_range": "early 20s",
     "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2026-04-07",
-      "category": "diet",
-      "text": "User is pescatarian."
+      "date": "2026-06-24",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-03-13",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-11-20",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-07-29",
+      "date": "2025-12-23",
       "category": "home",
-      "text": "User's home address is 316 Oak Avenue."
+      "text": "User's home address is 797 Oak Avenue."
+    },
+    {
+      "date": "2025-07-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2025-06-17",
+      "category": "hobby",
+      "text": "User is into marathon training."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-29",
+      "date": "2026-01-23",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-03-08",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-01-06",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m thinking of going to Chicago, and I’d like to see some museums… um, ones that are pretty close to downtown.
-[  7.43s][moshi] ⟨ret@7.35s⟩ ⟦⚡SPAN@7.43s: Chicago's downtown area, known as the Loop, has several museums within a few kilometers, including the Art Ins⟧ It sounds like you're planning a trip to Chicago, and I can certainly help with that. The Loop area has some wonderful museums, like the Art Institute, the Field Museum, and the Museum of Science and Industry, all fairly close by.
-[ 14.62s][user ] «backchannel» Okay.
-[ 20.63s][user ] Oh, that sounds lovely. What's the closest one to, say, Millennium Park?
-[ 25.10s][moshi] ⟨ret@24.86s⟩ ⟦⚡SPAN@25.10s: (tool result) The Art Institute of Chicago is 0.8 kilometers from Millennium Park.⟧ The Art Institute of Chicago is the closest museum to Millennium Park, at just 0.8 kilometers away. It’s a beautiful space.
-      CALL: {"function": "map_search_places", "arguments": {"query": "museums near Millennium Park Chicago", "radius": "2km"}}
-[ 29.81s][user ] «backchannel» Uh-huh.
-[ 34.42s][moshi] It's a place where you can really lose yourself in creativity, and I think you'd find it quite inspiring.
-[ 37.99s][user ] «backchannel» Mm-hmm.
-[ 40.29s][user ] Is it open ⟨ret@41.80s⟩ tomorrow?
-[ 42.04s][moshi] ⟦⚡SPAN@42.04s: (tool result) The Art Institute of Chicago is open tomorrow, July 11, 2026, from 11:00 AM to 5:00 PM.⟧ Yes, the Art Institute will be open tomorrow, July eleventh, from eleven in the morning until five in the evening.
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJrZ0V3WJkw4ARiXg38oJ9bH0"}}
-[ 49.30s][user ] Great! And what about restaurants nearby? Somewhere not too ⟨ret@53.36s⟩ expensive.
-[ 53.60s][moshi] ⟦⚡SPAN@53.60s: (tool result) Revival Food Hall has a price range of $ and is 0.3 miles from the Art Institute of Chicago.⟧ There are several options! Revival Food Hall is quite popular, and it's only 0.3 miles away with a very affordable price range.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Art Institute of Chicago", "price_range": "cheap"}}
-[ 63.48s][user ] That sounds good. Can you show me directions to Revival Food Hall from the Art ⟨ret@68.82s⟩ Institute?
-[ 69.13s][moshi] ⟦⚡SPAN@69.14s: (tool result) Walking directions: Head west on E Adams St, turn right onto S Wabash Ave, turn left onto W Monr⟧ From the Art Institute, head west on Adams Street, then right on Wabash Avenue, and left on Monroe Street. It's about a six-minute walk, 0.3 miles.
-      CALL: {"function": "map_directions", "arguments": {"origin": "Art Institute of Chicago", "destination": "Revival Food Hall"}}
-[ 80.18s][user ] Perfect. I’m also wondering about the weather there tomorrow.
-[ 84.66s][moshi] ⟨ret@84.50s⟩ ⟦⚡SPAN@84.66s: (tool result) The weather in Chicago tomorrow, July 11, 2026, will be 25.5°C, humidity 68%, wind 8.2 km/h.⟧ Tomorrow in Chicago will be quite pleasant, with a temperature of 25.5 degrees Celsius, 68 percent humidity, and a gentle breeze at 8.2 kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Chicago"}}
-[ 89.40s][user ] «backchannel» Really?
-[ 95.59s][user ] That’s nice to know.
-[ 97.37s][moshi] Sometimes, knowing what to expect can ease a little anxiety, especially when traveling.
-[100.69s][user ] «backchannel» Yeah.
-[102.91s][user ] I remember reading something about a famous sculpture in Millennium Park… the ⟨ret@108.36s⟩ Bean?
-[108.60s][moshi] ⟦⚡SPAN@108.60s: Cloud Gate, nicknamed “The Bean” because of its shape, is a public sculpture by Anish Kapoor located in Millen⟧ Ah, yes, “The Bean”! It’s officially called Cloud Gate, a sculpture by Anish Kapoor, and it’s a very popular spot in Millennium Park.
-[115.32s][user ] «backchannel» Mm-hmm.
-[117.73s][user ] I think I saw a picture of it once. What year was ⟨ret@120.92s⟩ it installed?
-[121.32s][moshi] ⟦⚡SPAN@121.32s: Cloud Gate was installed in Millennium Park in 2006.⟧ Cloud Gate was installed in Millennium Park back in two thousand six. It’s become quite an iconic landmark.
-[128.18s][user ] That’s a long time ago.
-[129.78s][moshi] It’s amazing how quickly time passes, isn't it? Sometimes a landmark can really anchor us to a moment.
-[138.24s][user ] I'm also thinking of checking out Wrigleyville.
-[140.99s][moshi] Wrigleyville is a vibrant neighborhood, known for its lively atmosphere and, of course, Wrigley Field.
-[146.93s][user ] Is there anything happening there tomorrow?
-[149.77s][moshi] ⟨ret@149.61s⟩ ⟦⚡SPAN@149.77s: (tool result) Chicago Cubs vs. St. Louis Cardinals at Wrigley Field, July 11, 2026, 7:05 PM.⟧ Yes, the Chicago Cubs are playing the St. Louis Cardinals at Wrigley Field tomorrow at seven oh five PM.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Wrigleyville, Chicago", "date": "July 11, 2026"}}
-[152.37s][user ] «backchannel» Yeah.
-[156.04s][user ] That sounds fun!
-[157.76s][moshi] It’s wonderful to find something that sparks your interest and makes you feel excited about your plans.
+[  0.00s][user ] I’d like one ticket to The Lion…
+[  3.71s][user ] …King on May first in Los Angeles.
+[  6.77s][moshi] ⟨ret@6.69s⟩ ⟦⚡SPAN@6.77s: (tool result) Confirmation: LIONKING-LA-20260501-001⟧ Wonderful! I’ve secured one ticket to The Lion King for May first in Los Angeles. Your confirmation number is LIONKING-LA-20260501-001.
+      CALL: {"function": "Events_3_BuyEventTickets", "arguments": {"event_name": "The Lion King", "date": "May first", "location": "Los Angeles", "quantity": "1"}}
+[ 15.99s][user ] «backchannel» Exactly.
+[ 19.12s][user ] That’s great. Um, what’s the weather like there that day?
+[ 22.70s][moshi] ⟨ret@22.46s⟩ ⟦⚡SPAN@22.70s: The weather forecast for Los Angeles on May 1st, 2026 is 24.0°C, humidity 62%, wind 8.2 km/h.⟧ It looks like Los Angeles will be quite pleasant on May first, with a temperature of 24.0°C.
+[ 26.42s][user ] «backchannel» Wow.
+[ 28.91s][user ] And, uh, is it far from the Hollywood Bowl?
+[ 32.37s][moshi] ⟨ret@32.29s⟩ ⟦⚡SPAN@32.37s: The distance between The Lion King’s location in Los Angeles and the Hollywood Bowl is approximately 8.7 kilom⟧ The Lion King’s theater is about 8.7 kilometers from the Hollywood Bowl—a relatively short trip!
+[ 39.75s][user ] Can you find me a restaurant near the theater? — I’m thinking ⟨ret@43.73s⟩ Italian.
+[ 43.98s][moshi] ⟦⚡SPAN@43.98s: Musso & Frank Grill is an Italian restaurant located 1.6 km from The Lion King’s location, with a 4.3-star rat⟧ I found Musso & Frank Grill, an Italian restaurant just 1.6 kilometers from the theater—it has a 4.3-star rating.
+[ 47.34s][user ] «backchannel» Mhm.
+[ 53.58s][user ] That sounds good. What time does it open?
+[ 56.27s][moshi] ⟨ret@56.03s⟩ ⟦⚡SPAN@56.27s: Musso & Frank Grill opens at 11:00 AM on May 1st, 2026.⟧ Musso & Frank Grill opens at 11:00 AM on May first—plenty of time before the show!
+[ 63.58s][user ] Okay. Can you get me directions from the restaurant to the ⟨ret@67.32s⟩ theater?
+[ 67.64s][moshi] ⟦⚡SPAN@67.64s: (tool result) Directions: 1.6 km via Cahuenga Blvd, approx. 7 min.⟧ It’s 1.6 kilometers via Cahuenga Boulevard, taking about seven minutes.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Musso & Frank Grill", "destination": "The Lion King’s location"}}
+[ 72.56s][moshi] I’m happy to help you plan a smooth evening.
+[ 75.02s][user ] That’s really helpful, thank you.
+[ 77.56s][moshi] You're very welcome! It’s my pleasure to help you settle in and enjoy your time here.
+[ 79.27s][user ] «backchannel» Yeah.
+[ 82.61s][user ] What about getting a ride from my hotel? It’s the Beverly Hills ⟨ret@86.95s⟩ Hotel.
+[ 87.18s][moshi] ⟦⚡SPAN@87.19s: (tool result) Ride estimate: $25.50, ETA 15 min.⟧ A ride from the Beverly Hills Hotel to the theater is estimated at $25.50, with an arrival time in about fifteen minutes.
+      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"pickup_location": "Beverly Hills Hotel", "dropoff_location": "The Lion King’s location"}}
+[ 95.97s][user ] Okay, book that for me, ⟨ret@97.54s⟩ please.
+[ 97.94s][moshi] ⟦⚡SPAN@97.94s: (tool result) Ride confirmed: BH-LK-20260501-R12⟧ Your ride is confirmed—the code is BH-LK-20260501-R12.
+      CALL: {"function": "RideSharing_2_GetRide", "arguments": {"pickup_location": "Beverly Hills Hotel", "dropoff_location": "The Lion King’s location"}}

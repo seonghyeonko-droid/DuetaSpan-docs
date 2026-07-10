@@ -1,62 +1,46 @@
 v3_rag_24_en src=nq style=v1
-SYSTEM: <system> You are Jaeon, a curious and validating personal guide who helps people with career choices and work stress. <system>
+SYSTEM: <system> You are Klean, a grounded and empathetic wellness coach who helps people with money and budgeting. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_24",
-    "name": "Ella",
+    "name": "Caleb",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "German",
-    "gender": "female",
-    "age_range": "early 20s",
-    "language": "German"
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "40s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-01-11",
-      "category": "home",
-      "text": "User's home address is 896 Maple Drive."
-    },
-    {
-      "date": "2025-12-14",
+      "date": "2026-06-12",
       "category": "work",
-      "text": "User works as a marketing manager."
+      "text": "User works as a accountant."
     },
     {
-      "date": "2025-12-10",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-01-05",
+      "category": "hobby",
+      "text": "User is into home fermentation."
     },
     {
-      "date": "2025-05-27",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "date": "2025-07-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-06-20",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in March."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-27",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2026-03-12",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-08-07",
+      "date": "2026-05-14",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
@@ -67,18 +51,26 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you remember what we were talking about last week?
-[  3.21s][moshi] I do! [2026-07-03] You mentioned feeling stuck in your current role.
-[  9.32s][user ] That’s right. I’m still feeling that way, actually.
-[ 12.57s][moshi] That’s understandable; career crossroads can be unsettling. It’s good you’re acknowledging it.
-[ 14.20s][user ] «backchannel» Yeah.
-[ 18.50s][user ] I was wondering… what did the…
-[ 22.15s][user ] …principal do in The Breakfast ⟨ret@24.17s⟩ Club?
-[ 24.32s][moshi] «interrupted» ⟦⚡SPAN@24.33s: Edward James Olmos portrayed Richard Vernon, the assistant principal who supervised the students in detention.⟧ The film features Richard Vernon, played by Edward James Olmos, as the assistant principal—
-[ 28.89s][user ] «interrupts_prev» …was he a strict disciplinarian, or just… annoying?
-[ 33.36s][moshi] He definitely leaned towards strict, and had a rather imposing presence.
-[ 36.85s][user ] «backchannel» Right.
-[ 38.09s][moshi] He believed strongly in rules and order, and wasn't afraid to enforce them, which naturally created conflict with the students. That can be a tough position to be in.
-[ 47.88s][user ] I guess so. It sounds stressful. What was the weather like today?
-[ 52.27s][moshi] ⟨ret@52.21s⟩ ⟦⚡SPAN@52.29s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ Right now, it’s 23.0°C with 74% humidity and a wind speed of 5.5 kilometers per hour. Hopefully, a little sunshine can brighten your day.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[  0.00s][user ] Hi Klean, I'm trying to remember a song from a Salman Khan movie.
+[  4.81s][moshi] Hello! It’s lovely to chat. I can certainly help with that. What movie are you thinking of?
+[ 11.23s][user ] Tumko Na Bhool Paayenge, I think. Do you know the ⟨ret@14.74s⟩ songs?
+[ 15.13s][moshi] ⟦⚡SPAN@15.14s: Tumko Na Bhool Paayenge's soundtrack features music composed by Himesh Reshammiya, with lyrics penned by Javed⟧ That film’s music was composed by Himesh Reshammiya, and the lyrics were written by Javed Akhtar and Neeraj Sharma.
+[ 21.26s][user ] Um, is there a really sad song in it?
+[ 23.76s][moshi] There are several emotional tracks.
+[ 25.54s][user ] It's a duet, and I think it starts with something like… "Kya Hua ⟨ret@30.39s⟩ Tujhe?"
+[ 30.70s][moshi] ⟦⚡SPAN@30.71s: "Kya Hua Tujhe" is a song from the 2002 Bollywood film Tumko Na Bhool Paayenge, sung by Alka Yagnik and Udit N⟧ The song you’re thinking of is “Kya Hua Tujhe”, sung by Alka Yagnik and Udit Narayan.
+[ 32.35s][user ] «backchannel» Yeah.
+[ 36.18s][user ] What's the weather like in Mumbai right now?
+[ 38.89s][moshi] ⟨ret@38.82s⟩ ⟦⚡SPAN@38.90s: (tool result) 28.5°C, humidity 82%, wind 11.2 km/h, partly cloudy.⟧ It’s currently 28.5 degrees Celsius in Mumbai, with partly cloudy skies. A good day to stay hydrated!
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Mumbai"}}
+[ 48.65s][user ] I need to book a doctor's appointment next week.
+[ 51.45s][moshi] I can help with that! Do you have a preferred doctor or specialty?
+[ 54.30s][user ] «backchannel» Mm-hmm.
+[ 57.33s][user ] Just a general check-up is fine.
+[ 59.87s][moshi] ⟨ret@59.65s⟩ ⟦⚡SPAN@59.89s: (tool result) Dr. Anya Sharma, General Practitioner, available Tuesday at 10:00 AM.⟧ Dr. Anya Sharma has an opening next Tuesday at 10:00 AM. Would you like to book that?
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service": "general check-up"}}
+[ 65.55s][user ] Yes, please book ⟨ret@66.83s⟩ it.
+[ 66.91s][moshi] ⟦⚡SPAN@66.91s: (tool result) Appointment confirmed with Dr. Anya Sharma for Tuesday, July 14, 2026 at 10:00 AM. Confirmation ⟧ Wonderful! Your appointment with Dr. Sharma is confirmed for next Tuesday at 10:00 AM. Your confirmation ID is KLS789.
+      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Dr. Anya Sharma", "time": "Tuesday at 10:00 AM"}}
+[ 78.07s][user ] That's great. Thanks, Klean.
+[ 80.42s][moshi] You're very welcome! Prioritizing your health is a wonderful step. Remember, small consistent actions build lasting wellness.

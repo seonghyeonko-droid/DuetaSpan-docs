@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "도재",
+#     "name": "도안",
 #     "location": {
 #       "city": "Seoul",
 #       "country": "South Korea",
@@ -12,67 +12,76 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in May."
+#       "date": "2026-02-18",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2025-12-23",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2026-03-14",
+#       "date": "2025-09-18",
 #       "category": "home",
-#       "text": "User's home address is 서울 종로구 세종대로 175."
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
 #     },
 #     {
-#       "date": "2026-02-14",
+#       "date": "2025-07-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-06-06",
 #       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-08-31",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User is allergic to shellfish."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-23",
+#       "date": "2026-05-08",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 도재님. 저는 여러분의 마음 건강을 돕는 상담사, 티스예요. 오늘 하루 어떠신가요?
-     4.55s  user  발화 시작: 응.
-     5.00s  user  발화 끝
-     6.35s  agent 발화 끝
-     7.20s  user  발화 시작: 티스요? 이름이 좀 독특하네요. 무슨 일을 하는 분이세요?
-    11.07s  agent 발화 시작: 저는 스트레스 해소와 마음 챙김을 통해 여러분이 좀 더 편안하게 지낼 수 있도록 돕는 역할을 해요. 혹시 지
-    11.22s  user  발화 끝
-    16.56s  user  발화 시작: 응.
-    17.01s  user  발화 끝
-    20.07s  agent 발화 끝
-    20.16s  agent 발화 시작: 숨을 깊게 쉬어 보세요. 때로는 잠시 멈춰서 자신의 감정에 귀 기울이는 것만으로도 큰 도움이 될 수 있답니다
-    26.30s  user  발화 시작: …제가 요즘 너무 불안해서요. 특히 회사 일이 잘 풀리지 않을 때면 더 그래요.
-    26.93s  agent 발화 끝
-    31.16s  agent 발화 시작: 불안하시군요. 회사 일이 잘 풀리지 않을 때 느끼는 압박감이 크신 것 같아요. 그런 감정이 드는 상황을 좀 
-    31.30s  user  발화 끝
-    39.04s  agent 발화 끝
-    39.45s  user  발화 시작: 음… 매일 야근하고, 상사도 너무 까다롭고, 미래에 대한 걱정도 많고… 그냥 다 싫어져요.
-    46.81s  user  발화 끝
-    47.23s  agent 발화 시작: 매일 야근하시고, 상사 때문에 힘드시고, 미래에 대한 불안감까지 느끼시는군요. 여러 가지 어려움이 한꺼번에 
-    58.59s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 도안님. 저는 여러분의 시간을 계획하고 휴식을 찾는 여정을 돕는 라이프 코치, 재예요.
+     6.44s  agent 발화 끝
+     6.45s  user  발화 시작: 어머, 재라고 하시니… 좀 색다른 이름이네요. 혹시 제가 뭘 도와드릴 수 있는 걸까요?
+    12.42s  user  발화 끝
+    12.59s  agent 발화 시작: 재라는 이름이 색다르다고 말씀해주셔서 기뻐요. 지금 가장 고민되는 부분이 있으신가요? 어떤 점이 힘드신지 편
+    17.49s  user  발화 시작: 음.
+    17.98s  user  발화 끝
+    20.89s  agent 발화 끝
+    21.54s  user  발화 시작: 사실 요즘 일이 너무 많아서, 잠깐이라도 제대로 쉬고 싶은 마음이 간절하거든요.
+    27.05s  user  발화 끝
+    27.27s  agent 발화 시작: 일이 많아 지치시는군요. 잠시라도 휴식을 취하고 싶다는 마음은 당연해요. 어떤 종류의 휴식이 가장 끌리세요?
+    38.18s  user  발화 시작: 음… 그냥 조용히 바다 보면서 커피 마시는 정도면 좋겠어요. 서울 근교에 괜찮은 곳 있을까요?
+    38.22s  agent 발화 끝
+    44.99s  user  발화 끝
+    45.00s  agent 발화 시작: 서울 근교에서 조용히 바다를 보며 커피를 즐길 수 있는 곳을 찾으시는군요. 잠시만요, 그런 곳이 있는지 알아
+    53.85s  agent 발화 끝

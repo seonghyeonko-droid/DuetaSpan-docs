@@ -4,77 +4,92 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Rowan",
+#     "name": "Hannah",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-11-06",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
-#     },
-#     {
-#       "date": "2025-06-10",
+#       "date": "2026-06-07",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-04-25",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-09-25",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-07-18",
+#       "category": "home",
+#       "text": "User's home address is 428 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-02",
-#       "title": "Researching a used car",
+#       "date": "2026-01-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi, I'm feeling a bit overwhelmed  | S2 Fourth century BCE? Wow, that *is* | S3 [laugh] Warfare… | S4 …huh? That's… intense. Maybe I nee
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering… | S2 …how much did it cost to *make* Ti | S3 Two hundred million? Wow, that's…  | S4 That's incredible. So, do you thin
 
-     0.00s  user  발화 시작: Hi, I'm feeling a bit overwhelmed with studying for my exams
-     3.65s  user  발화 끝
-     3.66s  agent 발화 시작: Hi there! It's completely normal to feel that way when exams
-     6.86s  user  발화 시작: Mm-hmm.
-     7.50s  user  발화 끝
-    11.21s  agent 발화 끝
-    12.23s  user  발화 시작: That’s easy to say… but I just can’t seem to focus. What’s t
-    17.72s  <ret> 발화 (turn4 첫 프레임)
-    18.12s  agent 발화 시작: <ret> People first began using oil as an energy source way b
-    18.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Oil was first used as an energy source in the fourth century BCE.
-    18.20s  user  발화 끝
-    25.86s  agent 발화 끝
-    25.87s  user  발화 시작: Fourth century BCE? Wow, that *is* old. What were they even 
-    31.09s  agent 발화 시작: Well, it wasn’t quite like powering cars, of course! They us
-    31.14s  user  발화 끝
-    33.40s  user  발화 시작: Uh-huh.
-    34.04s  user  발화 끝
-    36.83s  user  발화 시작: [laugh] Warfare…
-    37.15s  agent 발화 끝
-    38.71s  user  발화 끝
-    39.80s  user  발화 시작: …huh? That's… intense. Maybe I need a break from studying. W
-    44.66s  <ret> 발화 (turn10 첫 프레임)
-    45.06s  agent 발화 시작: <ret> It's currently 26.0°C with 65% humidity and a 7.2 km/h
-    45.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) Current conditions: 26.0°C, humidity 65%, wind 7.2 km/h.
-    45.26s  user  발화 끝
-    54.62s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering…
+     1.61s  user  발화 끝
+     2.92s  user  발화 시작: …how much did it cost to *make* Titanic? It seems like a lot
+     6.42s  <ret> 발화 (turn2 첫 프레임)
+     6.74s  agent 발화 시작: <ret> Well, creating something so grand certainly wasn’t che
+     6.74s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.58s]: The 1997 film Titanic had a production budget of approximately $200 mi
+     6.77s  user  발화 끝
+    13.27s  agent 발화 시작: It's amazing what goes into a movie of that scale, isn't it?
+    13.31s  agent 발화 끝
+    14.75s  user  발화 시작: Yeah.
+    15.10s  user  발화 끝
+    16.73s  agent 발화 끝
+    17.78s  user  발화 시작: Two hundred million? Wow, that's… a huge amount of money. Um
+    23.66s  <ret> 발화 (turn6 첫 프레임)
+    24.06s  agent 발화 시작: <ret> Actually, it *was* a record—when it came out, Titanic 
+    24.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: At the time of its release, Titanic was the most expensive film ever m
+    24.21s  user  발화 끝
+    26.62s  user  발화 시작: Wow.
+    27.45s  user  발화 끝
+    31.00s  agent 발화 시작: It really shows the ambition of the project, doesn’t it? I a
+    31.11s  agent 발화 끝
+    36.13s  user  발화 시작: Yeah.
+    36.63s  user  발화 끝
+    38.68s  user  발화 시작: That's incredible. So, do you think a movie could *ever* cos
+    38.69s  agent 발화 끝
+    43.55s  agent 발화 시작: It’s very likely, considering inflation and modern special e
+    43.68s  user  발화 끝
+    51.11s  agent 발화 끝

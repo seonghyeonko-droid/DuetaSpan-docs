@@ -4,56 +4,59 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Riley",
+#     "name": "Alice",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
+#     "nationality": "Australian",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-19",
+#       "date": "2026-06-01",
 #       "category": "hobby",
 #       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-12-17",
+#       "date": "2026-05-22",
 #       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "text": "User is planning a trip to Iceland in August."
 #     },
 #     {
-#       "date": "2025-10-23",
-#       "category": "home",
-#       "text": "User's home address is 980 Birch Road."
-#     },
-#     {
-#       "date": "2025-08-18",
+#       "date": "2025-11-28",
 #       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-07-27",
+#       "date": "2025-09-06",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-08",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-05-18",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     },
 #     {
-#       "date": "2026-02-07",
+#       "date": "2025-10-27",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-27",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -63,31 +66,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who played Neville’s w | S2 Uh, what's the weather like in Man | S3 Did you pack an umbrella? | S4 That's good to know, thank you.
+# EXAMINER(FDB-v2) 단계: S1 Hey Klos, who has the most steals  | S2 Wow, that’s a lot! | S3 …wait, was Scottie Pippen close be | S4 So Stockton has a pretty comfortab
 
-     0.00s  user  발화 시작: Do you know who played Neville’s wife in *Auf Wiedersehen, P
-     2.94s  <ret> 발화 (turn1 첫 프레임)
-     3.33s  agent 발화 시작: <ret> Well, it seems Julia Tobin brought Moira, Neville’s wi
-     3.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.54s]: Julia Tobin played Neville’s wife, Moira, in the first two series of t
-     3.38s  user  발화 끝
-     6.51s  user  발화 시작: Uh-huh.
-     7.06s  user  발화 끝
-    12.87s  agent 발화 끝
-    12.90s  user  발화 시작: Oh, right. I remember now.
-    14.26s  agent 발화 시작: Sometimes a familiar face just needs a little nudge to come 
-    14.38s  user  발화 끝
-    17.24s  user  발화 시작: Yeah.
-    17.69s  user  발화 끝
-    21.02s  agent 발화 끝
-    21.16s  user  발화 시작: Uh, what's the weather like in Manchester today?
-    23.17s  <ret> 발화 (turn7 첫 프레임)
-    23.40s  agent 발화 시작: <ret> The weather in Manchester is currently nineteen degree
-    23.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) Manchester: 19.0°C, humidity 68%, wind 8.0 km/h, conditi
-    23.56s  user  발화 끝
-    31.04s  agent 발화 끝
-    31.36s  user  발화 시작: Did you pack an umbrella?
-    32.66s  user  발화 시작: That's good to know, thank you.
-    32.69s  user  발화 끝
-    34.30s  agent 발화 시작: I'm glad I could share that with you. Sometimes, simply know
-    34.32s  user  발화 끝
-    41.48s  agent 발화 끝
+     0.00s  user  발화 시작: Hey Klos, who has the most steals in NBA history?
+     2.80s  <ret> 발화 (turn1 첫 프레임)
+     3.19s  agent 발화 시작: <ret> It’s quite a record, actually—John Stockton finished h
+     3.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: John Stockton retired as the NBA's all-time leader with 3,265 career s
+     3.32s  user  발화 끝
+     9.01s  user  발화 시작: Uh-huh.
+     9.41s  user  발화 끝
+    10.70s  user  발화 시작: Wow, that’s a lot!
+    10.79s  agent 발화 끝
+    11.96s  agent 발화 시작: It certainly is a testament to his dedication and skill on t
+    12.18s  user  발화 끝
+    14.62s  user  발화 시작: Yeah.
+    15.06s  user  발화 끝
+    16.63s  agent 발화 시작: Building strong defensive habits—like anticipating passes—is
+    16.88s  agent 발화 끝
+    24.19s  agent 발화 끝
+    24.78s  user  발화 시작: …wait, was Scottie Pippen close behind him?
+    26.95s  <ret> 발화 (turn8 첫 프레임)
+    27.27s  agent 발화 시작: <ret> Scottie Pippen was indeed a fantastic defender, finish
+    27.27s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.32s]: Scottie Pippen is second all-time in NBA history with 2,433 career ste
+    27.36s  user  발화 끝
+    32.84s  user  발화 시작: Right.
+    33.34s  user  발화 끝
+    34.59s  agent 발화 끝
+    34.89s  user  발화 시작: So Stockton has a pretty comfortable lead, then?
+    37.34s  agent 발화 시작: It’s a significant margin—over eight hundred steals separate
+    37.38s  user  발화 끝
+    42.62s  agent 발화 끝

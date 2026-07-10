@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_25",
-#     "name": "Lukas",
+#     "name": "Hana",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -12,68 +12,81 @@
 #       "currency": "AUD ($)"
 #     },
 #     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-21",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-18",
-#       "category": "home",
-#       "text": "User's home address is 759 Maple Drive."
-#     },
-#     {
-#       "date": "2025-12-05",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-10-22",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-08-28",
+#       "date": "2025-11-27",
 #       "category": "work",
-#       "text": "User works as a software engineer."
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
+#     },
+#     {
+#       "date": "2025-08-14",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-08-02",
+#       "category": "home",
+#       "text": "User's home address is 936 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-11",
+#       "date": "2026-01-03",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-11-05",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just thinking about that old | S2 Hmm, Loretta Lynn… I always though | S3 What time is it right now, anyway? | S4 That's true. Thanks, Bara.
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to settle a debate. Who | S2 …Peter Chelsom or Billy Bob Thornt | S3 Huh, I thought Chelsom had more hi | S4 …but did Thornton actually *releas
 
-     0.00s  user  발화 시작: I was just thinking about that old song… “Your Love Had Take
-     5.36s  <ret> 발화 (turn1 첫 프레임)
-     5.52s  agent 발화 시작: <ret> Well, that’s a lovely song to remember! It was actuall
-     5.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Loretta Lynn and Conway Twitty recorded "Your Love Had Taken Me That H
-     5.74s  user  발화 끝
-    13.26s  agent 발화 끝
-    13.33s  user  발화 시작: Hmm, Loretta Lynn… I always thought it was Dolly Parton.
-    16.96s  agent 발화 시작: It’s easy to get those two mixed up, they both have such ama
-    16.99s  user  발화 끝
-    20.02s  user  발화 시작: Oh.
-    20.38s  user  발화 끝
-    23.33s  user  발화 시작: What time is it right now, anyway? I’ve completely lost trac
-    23.68s  agent 발화 끝
-    26.07s  <ret> 발화 (turn6 첫 프레임)
-    26.29s  user  발화 끝
-    26.31s  agent 발화 시작: <ret> It's currently two thirty-seven in the afternoon in Se
-    26.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) It is Friday, July 10, 2026 at 2:37 PM in Asia/Seoul rig
-    33.26s  agent 발화 끝
-    34.43s  user  발화 시작: That's true. Thanks, Bara.
-    36.32s  user  발화 끝
+     0.00s  user  발화 시작: I’m trying to settle a debate. Who’s the more well-known mus
+     3.69s  user  발화 끝
+     4.90s  user  발화 시작: …Peter Chelsom or Billy Bob Thornton?
+     6.79s  <ret> 발화 (turn2 첫 프레임)
+     6.95s  agent 발화 시작: <ret> Well, it seems Billy Bob Thornton is the more recogniz
+     6.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: Billy Bob Thornton is an American actor, filmmaker, and musician who a
+     7.16s  user  발화 끝
+    16.18s  agent 발화 끝
+    16.25s  user  발화 시작: Huh, I thought Chelsom had more hits.
+    18.79s  agent 발화 시작: That’s interesting! While Peter Chelsom is a respected film 
+    19.03s  user  발화 끝
+    26.28s  user  발화 시작: …but did Thornton actually *release* albums, or is he just k
+    27.03s  agent 발화 끝
+    29.78s  <ret> 발화 (turn6 첫 프레임)
+    30.01s  agent 발화 시작: <ret> He actually did release albums, three studio albums in
+    30.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.73s]: Billy Bob Thornton has released three studio albums: “Private Audition
+    30.17s  user  발화 끝
+    33.78s  user  발화 시작: Mhm.
+    34.23s  user  발화 끝
+    41.59s  agent 발화 시작: It’s easy to forget about his music career with all his acti
+    41.75s  agent 발화 끝
+    47.42s  agent 발화 끝

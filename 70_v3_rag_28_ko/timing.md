@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "보국",
+#     "name": "도원",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,85 +12,69 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-11-25",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
-#     },
-#     {
-#       "date": "2025-11-06",
+#       "date": "2026-06-07",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-07-28",
+#       "date": "2026-04-25",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Thai."
 #     },
 #     {
-#       "date": "2025-07-24",
+#       "date": "2025-08-08",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-06-10",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2025-07-18",
+#       "category": "home",
+#       "text": "User's home address is 서울 강남구 역삼동 678-9."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-05",
+#       "date": "2025-12-29",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-09-04",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 야, 에너지원으로 기름을 처음 언제 썼대? 궁금하네. | S2 에? 기원전 사세기라고? 그게 말이… | S3 …돼? 좀 더 자세히 말해 봐. | S4 지금 서울 날씨 어때? 갑자기 추워졌던데.
+# EXAMINER(FDB-v2) 단계: S1 타이타닉 영화가 만들어질 때… | S2 …돈이 얼마나 들었는지 궁금해요. | S3 이억 달러요? 좀 많이 들었네요. 그 돈으로 뭘 그렇게 많이  | S4 아, 촬영 기간도 엄청 길었군요. 혹시 지금 서울 날씨는 어때
 
-     0.00s  user  발화 시작: 야, 에너지원으로 기름을 처음 언제 썼대? 궁금하네.
-     3.45s  <ret> 발화 (turn1 첫 프레임)
-     3.77s  agent 발화 시작: <ret> 음, 고대 이집트인들이 기원전 사세기에 처음 에너지원으로 기름을 사용했다고 하네요. 에너지 공부에
-     3.77s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.83s]: Oil was first used as an energy source in the fourth century BCE by th
-     3.93s  user  발화 끝
-     8.51s  user  발화 시작: 응.
-     8.95s  user  발화 끝
-    11.61s  agent 발화 끝
-    11.79s  user  발화 시작: 에? 기원전 사세기라고? 그게 말이…
-    14.84s  user  발화 끝
-    16.34s  user  발화 시작: …돼? 좀 더 자세히 말해 봐.
-    18.16s  <ret> 발화 (turn5 첫 프레임)
-    18.47s  agent 발화 시작: <ret> 역사 기록에 따르면 고대 이집트인들은 기름을 조명, 난방, 그리고 미라를 보존하는 데 사용했어요.
-    18.48s  ⚡SPAN 주입 [d'=1.92s / d_lead=10.20s]: The ancient Egyptians used oil for lighting, heating, and preserving m
-    18.69s  user  발화 끝
-    24.21s  user  발화 시작: 응.
-    24.65s  user  발화 끝
-    28.55s  user  발화 시작: 지금 서울 날씨 어때? 갑자기 추워졌던데.
-    28.67s  agent 발화 끝
-    31.45s  <ret> 발화 (turn8 첫 프레임)
-    31.68s  agent 발화 시작: <ret> 현재 서울은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요. 공부하
-    31.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.01s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    31.73s  user  발화 끝
-    41.69s  agent 발화 끝
+     0.00s  user  발화 시작: 타이타닉 영화가 만들어질 때…
+     2.96s  user  발화 끝
+     4.15s  user  발화 시작: …돈이 얼마나 들었는지 궁금해요.
+     5.78s  <ret> 발화 (turn2 첫 프레임)
+     6.09s  agent 발화 시작: <ret> 영화를 만드는 데에는 이억 달러가 들었다고 해요. 당시 기준으로 정말 굉장한 금액이었죠.
+     6.10s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.60s]: The film cost $200 million to produce, making it one of the most expen
+     6.27s  user  발화 끝
+     8.22s  user  발화 시작: 그렇군요.
+     9.04s  user  발화 끝
+    11.69s  agent 발화 끝
+    11.76s  user  발화 시작: 이억 달러요? 좀 많이 들었네요. 그 돈으로 뭘 그렇게 많이 했는데요?
+    13.57s  user  발화 시작: 네.
+    14.21s  user  발화 끝
+    15.38s  <ret> 발화 (turn6 첫 프레임)
+    15.66s  agent 발화 시작: <ret> 촬영은 천구백구십육년 십이월 일일에 멕시코 로사리토에서 시작해서, 백육십일 동안 진행됐다고 해요.
+    15.70s  ⚡SPAN 주입 [d'=0.96s / d_lead=9.55s]: Principal photography began in Rosarito, Mexico, on December 1, 1996, 
+    15.83s  user  발화 끝
+    22.17s  user  발화 시작: 와.
+    22.80s  user  발화 끝
+    25.21s  agent 발화 끝
+    26.39s  user  발화 시작: 아, 촬영 기간도 엄청 길었군요. 혹시 지금 서울 날씨는 어때요?
+    30.73s  <ret> 발화 (turn9 첫 프레임)
+    30.96s  agent 발화 시작: <ret> 지금 서울은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+    30.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    31.02s  user  발화 끝
+    37.73s  agent 발화 끝

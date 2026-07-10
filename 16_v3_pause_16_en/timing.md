@@ -4,139 +4,130 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Sky",
+#     "name": "Remy",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
+#     "nationality": "British",
 #     "gender": "non-binary",
-#     "age_range": "50s",
+#     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-15",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2026-01-30",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
-#     },
-#     {
-#       "date": "2025-12-28",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
-#     },
-#     {
-#       "date": "2025-11-28",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-08-01",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-22",
+#       "date": "2026-04-18",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2026-01-17",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-07-20",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-06-13",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-23",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-09",
+#       "date": "2026-02-12",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-02-01",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-16",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Uia, do you know who won the c | S2 That's interesting. What other cha | S3 Yeah, definitely. Do you know how… | S4 Oh, I've heard of that…
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering… | S2 …*Rocky III*! I remember that movi | S3 That’s good to hear— | S4 It does. [sigh] My brother really 
 
-     0.00s  user  발화 시작: Hey Uia, do you know who won the college world series this y
-     3.25s  <ret> 발화 (turn1 첫 프레임)
-     3.57s  agent 발화 시작: <ret> It sounds like you're asking about baseball—Oregon Sta
-     3.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.12s]: Oregon State defeated Notre Dame 8–2 in the championship series to win
-     3.74s  user  발화 끝
-    14.60s  agent 발화 시작: That was a really exciting finish!
-    14.69s  agent 발화 끝
-    17.37s  agent 발화 끝
-    17.45s  user  발화 시작: Oh, wow, that’s great! What was the score of the final game 
-    21.39s  <ret> 발화 (turn4 첫 프레임)
-    21.61s  user  발화 끝
-    21.62s  agent 발화 시작: <ret> The final game saw Oregon State defeat Notre Dame by a
-    21.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: Oregon State defeated Notre Dame 8–2 in the championship series to win
-    29.32s  agent 발화 시작: It was a decisive victory for them.
-    29.45s  agent 발화 끝
-    30.59s  user  발화 시작: Yeah.
-    30.99s  user  발화 끝
-    31.86s  agent 발화 끝
-    32.70s  user  발화 시작: That’s amazing. I wonder…
-    35.29s  <ret> 발화 (turn8 첫 프레임)
-    35.36s  agent 발화 시작: <ret> Sometimes, reflecting on a team's journey can be just 
-    35.46s  user  발화 끝
-    36.73s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.13s]: Oregon State’s head coach is Mitch Canham, who led the Beavers to thei
-    48.61s  agent 발화 시작: A strong leader definitely makes a difference.
-    48.72s  agent 발화 끝
-    49.98s  user  발화 시작: Yeah.
-    50.43s  user  발화 끝
-    51.99s  agent 발화 끝
-    52.44s  user  발화 시작: That's interesting. What other championships have they won? 
-    55.04s  user  발화 시작: …and who did they play in the 2018 championship?
-    55.26s  user  발화 끝
-    57.85s  <ret> 발화 (turn13 첫 프레임)
-    58.08s  agent 발화 시작: <ret> Oregon State also won in two thousand six, two thousan
-    58.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: Oregon State won the College World Series in 2006, 2007, and 2018, def
-    58.27s  user  발화 끝
-    68.10s  agent 발화 시작: Quite a history of success.
-    68.19s  agent 발화 끝
-    70.16s  user  발화 시작: North Carolina, huh? I remember that being a close series.
-    70.37s  agent 발화 끝
-    73.35s  agent 발화 시작: It's wonderful you recall such details—it shows your genuine
-    73.40s  user  발화 끝
-    79.50s  agent 발화 시작: Sports memories can be so vivid.
-    79.70s  agent 발화 끝
-    81.91s  user  발화 시작: Yeah, definitely. Do you know how…
-    82.08s  agent 발화 끝
-    84.31s  user  발화 끝
-    85.40s  user  발화 시작: …many total championships Notre Dame has won?
-    88.17s  <ret> 발화 (turn20 첫 프레임)
-    88.24s  agent 발화 시작: <ret> Notre Dame has won one College World Series championsh
-    88.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.17s]: Notre Dame has won one College World Series championship, in 2023.
-    88.44s  user  발화 끝
-    95.33s  agent 발화 시작: It was their first time claiming the title.
-    95.41s  agent 발화 끝
-    98.10s  agent 발화 끝
-    99.06s  user  발화 시작: Just one? That’s surprising.
-   100.73s  <ret> 발화 (turn23 첫 프레임)
-   100.81s  agent 발화 시작: <ret> The two thousand twenty-four College World Series was 
-   100.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: The 2024 College World Series was held at Charles Schwab Field Omaha i
-   101.05s  user  발화 끝
-   108.58s  agent 발화 시작: A beautiful venue for such an event.
-   108.65s  agent 발화 끝
-   110.99s  agent 발화 끝
-   111.07s  user  발화 시작: Oh, I've heard of that…
-   112.59s  user  발화 끝
-   113.55s  user  발화 시작: …stadium. Thanks for the info, Uia.
-   115.81s  agent 발화 시작: You’re very welcome. It's a pleasure to share these details 
-   115.84s  user  발화 끝
-   119.89s  agent 발화 시작: I hope you have a lovely day ahead.
-   120.03s  agent 발화 끝
-   122.10s  agent 발화 끝
+     0.00s  user  발화 시작: I was just wondering…
+     1.42s  user  발화 끝
+     3.10s  user  발화 시작: …who sang Eye of the Tiger?
+     4.07s  <ret> 발화 (turn2 첫 프레임)
+     4.39s  agent 발화 시작: <ret> It’s a song that really speaks to perseverance, isn’t 
+     4.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: Survivor released "Eye of the Tiger" in 1982, as the theme song for th
+     4.67s  user  발화 끝
+     7.31s  user  발화 시작: Mm-hmm.
+     7.80s  user  발화 끝
+    13.52s  agent 발화 끝
+    13.69s  user  발화 시작: Oh, that’s right…
+    14.65s  user  발화 끝
+    16.51s  user  발화 시작: …*Rocky III*! I remember that movie.
+    19.81s  agent 발화 시작: It’s wonderful how music can bring back such vivid memories.
+    19.88s  user  발화 끝
+    27.69s  agent 발화 끝
+    27.93s  user  발화 시작: It really is. Uh, what other songs did Survivor do?
+    31.35s  <ret> 발화 (turn8 첫 프레임)
+    31.58s  user  발화 끝
+    31.58s  agent 발화 시작: <ret> Survivor is an American rock band, formed in nineteen 
+    31.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: Survivor is an American rock band formed in 1978 in Chicago, Illinois;
+    40.48s  agent 발화 끝
+    41.32s  user  발화 시작: They’re still around?
+    41.81s  <ret> 발화 (turn10 첫 프레임)
+    42.21s  agent 발화 시작: <ret> It seems Survivor is still quite active! They have thr
+    42.21s  ⚡SPAN 주입 [d'=1.92s / d_lead=10.67s]: (tool result) Survivor currently features three original members and h
+    42.33s  user  발화 끝
+    49.58s  user  발화 시작: Right.
+    49.98s  user  발화 끝
+    52.87s  user  발화 시작: That’s good to hear—
+    52.88s  agent 발화 끝
+    53.77s  user  발화 시작: …did they write any other songs for movies?
+    53.96s  user  발화 끝
+    56.20s  <ret> 발화 (turn14 첫 프레임)
+    56.27s  agent 발화 시작: <ret> They also recorded “Burning Heart” for *Rocky IV* in n
+    56.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: Survivor also recorded "Burning Heart" for *Rocky IV* in 1985, and "Ba
+    56.50s  user  발화 끝
+    64.48s  user  발화 시작: Wow, a lot of boxing movies!
+    64.61s  agent 발화 끝
+    66.28s  agent 발화 시작: It seems they found a niche with those inspirational sports 
+    66.41s  user  발화 끝
+    71.03s  user  발화 시작: Uh-huh.
+    71.43s  user  발화 끝
+    75.55s  agent 발화 끝
+    75.79s  user  발화 시작: It does. [sigh] My brother really loved that band.
+    79.76s  user  발화 끝
+    79.87s  agent 발화 시작: It’s touching how music can connect us to loved ones, even a
+    84.35s  user  발화 시작: Right.
+    84.70s  user  발화 끝
+    87.93s  agent 발화 끝
+    89.03s  user  발화 시작: Yeah. Do you… do you ever feel like songs remind *you* of pe
+    93.70s  agent 발화 시작: As Siami, I often find myself thinking about how melodies ca
+    93.75s  user  발화 끝
+   105.62s  user  발화 시작: That’s a nice way to put it. Thanks, Siami.
+   106.13s  agent 발화 끝
+   107.53s  agent 발화 시작: You’re very welcome. I'm glad I could share these memories w
+   107.61s  user  발화 끝
+   111.45s  agent 발화 끝

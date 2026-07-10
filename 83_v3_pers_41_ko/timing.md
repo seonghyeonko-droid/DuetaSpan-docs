@@ -4,114 +4,104 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "은아",
+#     "name": "윤온",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "early 30s",
+#     "gender": "male",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
+#       "date": "2026-04-15",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2026-01-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-11-01",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in March."
+#     },
+#     {
+#       "date": "2025-08-16",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-12",
-#       "category": "home",
-#       "text": "User's home address is 부산 해운대구 해운대로 570."
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-07-09",
-#       "category": "work",
-#       "text": "User works as a high-school teacher."
-#     },
-#     {
-#       "date": "2025-05-31",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2025-07-17",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-27",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-09",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-28",
+#       "date": "2026-05-24",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-05-14",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 상담가는 무슨 일을 하시는 건가요? | S2 뭐든 하겠다고 쉽게 말했는데… 막상 하려니 뭘 해야 할지, 뭘 | S3 어렸을 때 그림 그리는 걸 좋아했어요. 미술 학원도 다녔고…  | S4 정말 그럴까요? 어떤 방법들이 있을까요?
+# EXAMINER(FDB-v2) 단계: S1 혹시, 제가 뭘 어떻게 해야 할지 모를 때, 진짜로 도움을 주 | S2 사실, 저는 바다를 그리고 싶은데… 바다를 너무 많이 봐서,  | S3 맞아요. 그냥 똑같은 파도, 똑같은 하늘만 보이는 것 같아요. | S4 파란색과 회색이 섞인 색깔이 아닐까요? 어두운 느낌이 좀 더 
 
-     0.00s  agent 발화 시작: 안녕하세요, 은아 씨. 저는 베안이라고 해요. 삶의 중요한 변화를 겪는 분들을 돕는 상담가입니다.
-     2.38s  user  발화 시작: 네.
-     2.86s  user  발화 끝
-     7.25s  user  발화 시작: 상담가는 무슨 일을 하시는 건가요?
-     7.32s  agent 발화 끝
-     9.42s  user  발화 끝
-     9.55s  agent 발화 시작: 삶의 방향을 설정하고, 어려운 결정을 내릴 때, 그리고 새로운 시작을 할 때 옆에서 함께 고민하고 지지해 드
-    13.83s  user  발화 시작: 네네.
-    14.32s  user  발화 끝
-    17.76s  agent 발화 끝
-    17.84s  user  발화 시작: 음… 지금 제가 딱 그런 상황이에요. 회사를 그만두려고 하는데, 너무 불안해요.
-    22.58s  agent 발화 시작: 회사를 그만두는 건 큰 결정이죠. 불안한 마음이 드는 건 당연해요. 어떤 점이 가장 걱정되세요?
-    22.74s  user  발화 끝
-    29.20s  agent 발화 끝
-    29.25s  user  발화 시작: 뭐든 하겠다고 쉽게 말했는데… 막상 하려니 뭘 해야 할지, 뭘 잘하는지 모르겠어요.
-    34.45s  agent 발화 시작: 자신을 잘 모르는 건 흔한 일이에요. 지금은 잠시 멈춰서, 자신이 진정으로 원하는 게 뭔지 —
-    34.57s  user  발화 끝
-    40.03s  user  발화 시작: …근데, 솔직히 말해서, 돈 문제도 너무 걱정돼요. 당장 생활은 어떻게 해야 하나 싶고…
-    40.88s  agent 발화 끝
-    46.79s  user  발화 끝
-    46.85s  agent 발화 시작: 돈 문제는 현실적인 걱정이죠. 재정적인 부분에 대한 불안감은 앞으로의 계획을 세우는 데 큰 영향을 줄 수 있
-    52.20s  user  발화 시작: 네네.
-    52.70s  user  발화 끝
-    55.03s  agent 발화 시작: 혹시 지금까지 해왔던 일 중에서 가장 즐거웠던 일이나, 몰두했던 경험이 있다면 말씀해 주실 수 있을까요?
-    55.19s  agent 발화 끝
-    61.80s  agent 발화 끝
-    63.56s  user  발화 시작: 어렸을 때 그림 그리는 걸 좋아했어요. 미술 학원도 다녔고… 근데, 그걸로 돈 벌기는 어렵잖아요.
-    70.03s  agent 발화 시작: 그림 그리는 걸 좋아했다니, 정말 멋지네요. 지금은 현실적인 부분을 생각하니 어려움을 느끼시는군요.
-    70.19s  user  발화 끝
-    77.39s  agent 발화 끝
-    77.40s  user  발화 시작: 네, 그렇죠. 그림 그리는 건 취미로만 해야 하는 걸까요? 다른 길을 찾아야 할까요?
-    82.34s  agent 발화 시작: 취미로만 해야 한다는 생각은 버리세요. 그림 실력을 활용할 수 있는 다양한 방법이 있을 수 있어요.
-    82.40s  user  발화 끝
-    89.07s  agent 발화 끝
-    89.12s  user  발화 시작: 정말 그럴까요? 어떤 방법들이 있을까요?
-    91.48s  agent 발화 시작: 그림과 관련된 직업 외에도, 자신의 창의성을 발휘할 수 있는 일들이 많아요. 잠시 숨을 고르고, 가능성을 열
-    91.66s  user  발화 끝
-    99.18s  agent 발화 끝
-    99.73s  user  발화 시작: 숨을 고르고… 네, 한번 생각해보겠어요. 감사합니다, 베안 씨.
-   104.00s  agent 발화 시작: 천천히 시간을 가지고, 자신에게 맞는 길을 찾아가세요.
-   104.18s  user  발화 끝
-   107.98s  agent 발화 끝
+     0.00s  agent 발화 시작: 윤온 씨, 안녕하세요. 저는 타리미라고 해요. 막힌 부분이나 자신감이 필요할 때, 함께 생각을 풀어내는 걸 
+     6.14s  user  발화 시작: 예.
+     6.49s  user  발화 끝
+     8.33s  user  발화 시작: 혹시, 제가 뭘 어떻게 해야 할지 모를 때, 진짜로 도움을 주실 수 있을까요?
+     8.72s  agent 발화 끝
+    12.65s  agent 발화 시작: 무엇을 해야 할지 몰라서 답답한 마음, 충분히 이해해요. 지금 어떤 점이 가장 막막하게 느껴지세요?
+    12.86s  user  발화 끝
+    15.73s  user  발화 시작: 네.
+    16.37s  user  발화 끝
+    19.52s  user  발화 시작: 음… 제가 요즘 그림을 그리려고 하는데, 뭘 그려야 할지 계속 망설여져요. 뭘 시작해야 할지 감이 안 와요.
+    19.65s  agent 발화 끝
+    25.81s  agent 발화 시작: 그림을 그리고 싶다는 열정은 있는데, 무엇을 그려야 할지 몰라서 어려움을 겪고 계시는군요. 어떤 그림을 그리
+    25.96s  user  발화 끝
+    28.42s  user  발화 시작: 음.
+    28.83s  user  발화 끝
+    34.52s  agent 발화 시작: 어떤 그림이라도 괜찮아요. 떠오르는 이미지나, 최근에 인상 깊었던 장면, 아니면 그냥 자유롭게 끄적이는 것도
+    34.53s  agent 발화 끝
+    38.53s  user  발화 시작: 음.
+    39.02s  user  발화 끝
+    43.05s  user  발화 시작: 사실, 저는 바다를 그리고 싶은데… 바다를 너무 많이 봐서, 더 이상 뭘 그려야 할지 모르겠어요. 식상하게 
+    43.19s  agent 발화 끝
+    50.28s  user  발화 끝
+    50.52s  agent 발화 시작: 바다를 너무 많이 봐서 오히려 식상하게 느껴지시는군요. 익숙한 풍경이라 새로운 시각으로 바라보기 어려울 수도
+    56.10s  user  발화 시작: 음.
+    56.50s  user  발화 끝
+    58.16s  agent 발화 끝
+    58.20s  user  발화 시작: 맞아요. 그냥 똑같은 파도, 똑같은 하늘만 보이는 것 같아요. 뭔가 특별한 걸 그리고 싶은데…
+    63.72s  user  발화 끝
+    63.88s  agent 발화 시작: 특별한 바다를 그리고 싶으신 마음이시군요. 혹시 바다를 보면서 어떤 감정을 느끼셨는지 떠올려 보셨어요? 그 
+    74.50s  agent 발화 끝
+    74.77s  user  발화 시작: 감정… 음, 평화로움, 그리고 약간의 외로움? 그런 느낌이었어요.
+    79.96s  agent 발화 시작: 평화로움과 외로움이라… 그 두 가지 감정을 동시에 담아낼 수 있는 그림이라면 정말 특별하겠네요. 어떤 색깔이
+    80.05s  user  발화 끝
+    83.65s  user  발화 시작: 네.
+    84.28s  user  발화 끝
+    91.05s  user  발화 시작: 파란색과 회색이 섞인 색깔이 아닐까요? 어두운 느낌이 좀 더 외로움을 표현할 수 있을 것 같아요.
+    91.09s  agent 발화 끝
+    95.97s  agent 발화 시작: 어두운 파란색과 회색의 조화… 정말 멋진 상상이네요. 윤온 씨의 감정을 담아낸 그림이 탄생할 것 같아요.
+    96.05s  user  발화 끝
+   103.70s  agent 발화 끝

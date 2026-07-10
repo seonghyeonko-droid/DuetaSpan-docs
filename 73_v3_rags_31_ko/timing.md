@@ -4,51 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "우찬",
+#     "name": "소현",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "male",
 #     "age_range": "late 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-23",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2026-03-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-04-29",
+#       "date": "2026-01-06",
 #       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
+#       "text": "User is planning a trip to Kyoto in August."
 #     },
 #     {
-#       "date": "2025-08-27",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-12-25",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2025-05-28",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2025-12-08",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-06-18",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-09-01",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-27",
+#       "date": "2026-01-10",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -59,9 +56,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 웨이버리 플레이스에서 하퍼 역할은 누가 했어?
-     2.38s  <ret> 발화 (turn1 첫 프레임)
-     2.62s  agent 발화 시작: <ret> 웨이버리 플레이스에서 하퍼 핀클 역은 제니퍼 린들시 스톤이 맡았어요. 그 드라마에서 아주 중요한 
-     2.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.36s]: Jennifer Lindsay Stone played Harper Finkle on the Disney Channel seri
-     2.81s  user  발화 끝
-     9.98s  agent 발화 끝
+     0.00s  user  발화 시작: 소프라노즈 마지막 회장에 나온 발라드는 뭐였죠?
+     2.54s  <ret> 발화 (turn1 첫 프레임)
+     2.77s  user  발화 끝
+     2.78s  agent 발화 시작: <ret> 마지막 회장 장면에서, 저니의 '돈 스톱 빌리빈'이 흘러나왔어요. 기억하시는지요.
+     2.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: Don't Stop Believin' by Journey was featured during the final scene of
+     9.64s  agent 발화 끝

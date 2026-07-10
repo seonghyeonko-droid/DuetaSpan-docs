@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "현람",
+#     "name": "준람",
 #     "location": {
 #       "city": "Busan",
 #       "country": "South Korea",
@@ -12,55 +12,61 @@
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "non-binary",
+#     "gender": "female",
 #     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-15",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-06-08",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-11-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
+#       "date": "2026-05-12",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2025-07-07",
+#       "date": "2026-05-06",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-11-24",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-07-02",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2025-06-22",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "date": "2025-09-06",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-29",
-#       "title": "Researching a used car",
+#       "date": "2025-12-14",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-31",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 음… 글자들의 머리글자가 다른 의미를 나타내는 경우 있잖아, 그게 뭐라고 하지?
-     6.19s  <ret> 발화 (turn1 첫 프레임)
-     6.35s  user  발화 끝
-     6.35s  agent 발화 시작: <ret> 글자들의 머리글자를 모아서 만든 단어는, 다른 단어들의 첫 글자를 따서 만든 약어라고 해요.
-     6.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: An acronym is a word formed from the initial letters of other words an
-    11.95s  agent 발화 끝
-    12.03s  agent 발화 시작: 그런 약어를 통해 좀 더 간결하게 소통할 수 있겠죠.
-    15.08s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 식스 플래그 캘리포니아에 놀이기구가 몇 개 있는지 알 수 있을까요?
+     5.03s  <ret> 발화 (turn1 첫 프레임)
+     5.19s  agent 발화 시작: <ret> 놀이기구는 총 마흔세 개가 있어요. 롤러코스터나 가족용, 워터파크 놀이기구도 다 포함된 숫자랍니다
+     5.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: Six Flags California has forty-three rides, including roller coasters,
+     5.37s  user  발화 끝
+    11.81s  agent 발화 끝

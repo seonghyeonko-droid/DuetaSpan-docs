@@ -1,118 +1,89 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Haes, a kind and steady personal guide who helps people with planning trips and time off. <system>
+SYSTEM: <system> You are Daeen, a grounded and empathetic counselor who helps people with health and daily habits. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_abs_22",
-    "name": "Taylor",
+    "name": "Oscar",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "Australian",
-    "gender": "non-binary",
-    "age_range": "40s",
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
-    },
-    {
-      "date": "2026-04-20",
+      "date": "2026-05-31",
       "category": "trip",
-      "text": "User is planning a trip to Kyoto in October."
+      "text": "User is planning a trip to Lisbon in May."
     },
     {
-      "date": "2026-04-03",
-      "category": "hobby",
-      "text": "User is into alpine wildflower photography."
-    },
-    {
-      "date": "2026-03-20",
-      "category": "work",
-      "text": "User works as a graphic designer."
-    },
-    {
-      "date": "2025-07-27",
+      "date": "2026-05-23",
       "category": "home",
-      "text": "User's home address is 385 Maple Drive."
+      "text": "User's home address is 603 Maple Drive."
+    },
+    {
+      "date": "2026-03-23",
+      "category": "work",
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2025-12-03",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-10-28",
+      "category": "pet",
+      "text": "User has a Golden Retriever named Max."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-05-07",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2026-03-13",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-12-02",
+      "date": "2026-06-19",
       "title": "Comparing gym memberships",
       "bullets": [
         "wants a pool",
         "close to the office"
+      ]
+    },
+    {
+      "date": "2026-03-29",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What does a balanced diet and regular exercise make impossible?
-[  3.65s][moshi] But I’m afraid I don’t have an answer for that right now. It seems that isn’t something widely documented.
-[  6.43s][user ] «backchannel» Mm-hmm.
-[  9.76s][user ] Oh, okay. Well, what’s the weather like in Seoul ⟨ret@13.58s⟩ today?
-[ 13.82s][moshi] ⟦⚡SPAN@13.82s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The weather in Seoul is currently 23.0 degrees Celsius, with 74 percent humidity and a wind speed of 5.5 kilometers per hour.
+[  0.00s][user ] What series was set in the past?
+[  2.04s][moshi] But I don’t have information on any series specifically set in the past.
+[  6.28s][user ] Hmm, okay. Well, what’s the weather…
+[ 10.52s][user ] …like in Seoul ⟨ret@11.58s⟩ today?
+[ 11.82s][moshi] ⟦⚡SPAN@11.82s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ It's currently 23.0 degrees Celsius in Seoul, with 74% humidity and a wind speed of 5.5 kilometers per hour.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 23.48s][moshi] It’s quite pleasant, isn’t it?
-[ 25.14s][user ] It sounds nice. Can you find me some Italian restaurants nearby?
-[ 29.29s][moshi] ⟨ret@28.98s⟩ ⟦⚡SPAN@29.30s: (tool result) Bella Italia - 4.5 stars, 1.2km; Pasta Paradise - 4.2 stars, 2.5km; Roma Mia - 3.9 stars, 1.8km⟧ I found three Italian restaurants near you: Bella Italia, Pasta Paradise, and Roma Mia.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
-[ 35.90s][moshi] Bella Italia has the highest rating, at 4.5 stars.
-[ 39.44s][user ] Hmm, Bella Italia sounds good. Can you reserve a table for two there at ⟨ret@44.26s⟩ 7 PM?
-[ 44.66s][moshi] ⟦⚡SPAN@44.66s: (tool result) Reservation confirmed for 2 people at Bella Italia, 19:00, confirmation ID: BI72839.⟧ A table for two at Bella Italia is confirmed for 7 PM, your confirmation ID is BI72839.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "time": "19:00", "party_size": "2"}}
-[ 53.39s][moshi] I hope you enjoy your meal!
-[ 54.28s][user ] «backchannel» Okay.
-[ 55.20s][user ] Perfect, thank you. What time is it right ⟨ret@57.61s⟩ now?
-[ 57.92s][moshi] ⟦⚡SPAN@57.93s: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul right now.⟧ It is currently 3:17 PM in Seoul on Friday, July 10th, 2026.
-      CALL: {"function": "get_time", "arguments": {}}
-[ 63.47s][user ] That’s helpful. I’m thinking of going to Jeju Island.
-[ 66.46s][moshi] «interrupted» Jeju Island is a beautiful place to visit! —
-[ 68.43s][user ] «interrupts_prev» …do you know when the peak season is for tourism there?
-[ 71.51s][moshi] The peak season for Jeju Island tourism is generally considered to be from April to May, due to the cherry blossoms, and again from September to November for the autumn foliage.
-[ 81.78s][moshi] Many people enjoy the pleasant weather during those months.
-[ 83.10s][user ] «backchannel» Uh-huh.
-[ 85.75s][user ] Are there any festivals happening in Jeju Island in ⟨ret@88.98s⟩ October?
-[ 89.28s][moshi] ⟦⚡SPAN@89.30s: (tool result) Jeju International Film Festival - October 15-22, 2026; Jeju Olle Walking Festival - October 29-⟧ I found two events: the Jeju International Film Festival from October 15th to 22nd, and the Jeju Olle Walking Festival from October 29th to 31st.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Jeju Island", "month": "October"}}
-[ 94.16s][user ] «backchannel» Yeah.
-[100.93s][user ] The walking festival sounds fun. Can you tell me more…
-[106.28s][user ] …about Jeju Olle trails?
-[108.34s][moshi] ⟨ret@108.27s⟩ ⟦⚡SPAN@108.35s: (tool result) Jeju Olle trails are a series of long-distance walking paths around Jeju Island, offering stunni⟧ Jeju Olle trails are long-distance walking paths around the island, offering beautiful views and cultural experiences, you can find more information at jejuolle.org.
-      CALL: {"function": "search", "arguments": {"query": "Jeju Olle trails"}}
-[119.88s][moshi] They’re quite popular with both locals and tourists.
-[121.63s][user ] «backchannel» Mhm.
-[124.90s][user ] That sounds amazing. What’s the average cost of a round-trip flight to Jeju from ⟨ret@129.50s⟩ Seoul?
-[129.89s][moshi] ⟦⚡SPAN@129.90s: (tool result) Average round-trip flight: ₩150,000 - ₩250,000 (KRW).⟧ A round-trip flight from Seoul to Jeju Island averages between 150,000 and 250,000 Korean Won.
-      CALL: {"function": "Flights_4_SearchRoundtripFlights", "arguments": {"origin": "Seoul", "destination": "Jeju Island"}}
-[138.48s][user ] Okay, good to know. Can you remind me what time my restaurant reservation is?
-[143.01s][moshi] ⟨ret@142.93s⟩ ⟦⚡SPAN@143.01s: [2026-07-10] Reservation confirmed for 2 people at Bella Italia, 19:00, confirmation ID: BI72839.⟧ Your reservation at Bella Italia is confirmed for 7 PM tonight, confirmation ID BI72839.
-[150.99s][moshi] I've saved that detail for you.
-[152.13s][user ] «backchannel» Yeah, yeah.
-[152.94s][user ] Wonderful. Thank you, Haes.
-[154.88s][moshi] You’re very welcome! I’m glad I could help with your planning.
+[ 21.84s][moshi] Quite warm for July, isn’t it?
+[ 23.94s][user ] Yeah, it is. Uh, remind me, what did I say about feeling stressed?
+[ 28.33s][moshi] ⟨ret@28.03s⟩ ⟦⚡SPAN@28.35s: [2024-03-15] I feel overwhelmed with work and family commitments.⟧ On March fifteenth, two years ago, you said you felt overwhelmed with work and family commitments.
+[ 31.80s][user ] «backchannel» Right.
+[ 34.10s][moshi] It's good to revisit how we were feeling, sometimes. Do you still feel that way now?
+[ 39.91s][user ] Not really, things are better now. Could you find me some relaxing ⟨ret@43.53s⟩ music?
+[ 43.92s][moshi] ⟦⚡SPAN@43.93s: (tool result) Ambient music by Brian Eno, available on Spotify and Apple Music.⟧ I found some relaxing ambient music by Brian Eno, available on both Spotify and Apple Music.
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "relaxing"}}
+[ 49.92s][moshi] Perhaps that will help maintain this sense of calm.

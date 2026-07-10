@@ -4,99 +4,116 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "서형",
+#     "name": "재경",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
-#     },
-#     {
-#       "date": "2026-05-04",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-13",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-07-17",
+#       "date": "2026-02-13",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-01-23",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-01-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-29",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-03",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-01-19",
+#       "title": "Setting up a home network",
+#       "bullets": [
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 토론토 시내에 있는 약국 좀 찾아줘. | S2 아니, 괜찮아. 그런데— | S3 …길을 알려줄 수 있어? 지금 여기 있거든. | S4 발작스 커피는 괜찮아 보여. 그쪽으로 길을 알려줘.
+# EXAMINER(FDB-v2) 단계: S1 호스트 파일 크기가 얼마나 돼? | S2 아니, 괜찮아. 그냥 궁금해서 물어본 거야. 그럼 오늘 날씨  | S3 …기차 시간표 좀 알아봐 줄 수 있어? | S4 아니, 그냥 일반석으로 해 줘.
 
-     0.00s  user  발화 시작: 토론토 시내에 있는 약국 좀 찾아줘.
-     2.26s  <ret> 발화 (turn1 첫 프레임)
-     2.44s  user  발화 끝
-     2.57s  agent 발화 시작: <ret> 토론토 시내에는 사백십육 약국, 렉솔, 슈퍼스 약국이 있어요. 오백오십오 용 스트리트에 사백십육 
-     2.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) 416 Pharmacy, 555 Yonge St, Toronto, ON M4Y 2V3; Rexall,
-     6.95s  user  발화 시작: 맞아요.
-     7.68s  user  발화 끝
-    10.54s  agent 발화 끝
-    10.88s  user  발화 시작: 음… 렉솔은 영업시간이 어떻게 돼?
-    14.03s  <ret> 발화 (turn4 첫 프레임)
-    14.35s  agent 발화 시작: <ret> 렉솔은 오늘 밤 아홉시까지 영업하고 있어요. 지금 가셔도 괜찮을 것 같아요.
-    14.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: (tool result) Rexall (22 Yonge St, Toronto, ON M5E 1Z8) - Open until 9
-    14.42s  user  발화 끝
-    16.32s  user  발화 시작: 와.
-    16.95s  user  발화 끝
-    19.09s  agent 발화 시작: 혹시 다른 약국도 알아봐 드릴까요?
-    19.11s  agent 발화 끝
-    21.20s  agent 발화 끝
-    21.38s  user  발화 시작: 아니, 괜찮아. 그런데—
-    23.71s  user  발화 시작: … 혹시 그 렉솔까지 가는 가장 빠른…
-    23.78s  user  발화 끝
-    26.76s  user  발화 끝
-    28.04s  user  발화 시작: …길을 알려줄 수 있어? 지금 여기 있거든.
-    30.13s  <ret> 발화 (turn10 첫 프레임)
-    30.36s  agent 발화 시작: <ret> 현재 위치에서 렉솔까지 차로 약 일 점 이킬로미터, 오분 정도 걸려요. 용 스트리트를 북쪽으로 가
-    30.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.80s]: (tool result) Drive 1.2 km, approx. 5 mins. 1. Head north on Yonge St.
-    30.58s  user  발화 끝
-    39.15s  user  발화 시작: 그렇죠.
-    39.78s  user  발화 끝
-    43.17s  agent 발화 끝
-    43.86s  user  발화 시작: 고마워. 그 옆에 맛있는 커피숍도 있을까?
-    46.87s  <ret> 발화 (turn13 첫 프레임)
-    47.02s  agent 발화 시작: <ret> 렉솔 근처에는 팀 호튼스, 스타벅스, 발작스 커피 로스터스가 있어요. 백 용 스트리트에 팀 호튼스
-    47.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) Tim Hortons, 100 Yonge St, Toronto, ON M5C 2W1; Starbuck
-    47.05s  user  발화 끝
-    50.98s  user  발화 시작: 네.
-    51.47s  user  발화 끝
-    54.44s  agent 발화 끝
-    54.52s  user  발화 시작: 발작스 커피는 괜찮아 보여. 그쪽으로 길을 알려줘.
-    58.33s  <ret> 발화 (turn16 첫 프레임)
-    58.40s  agent 발화 시작: <ret> 현재 위치에서 발작스 커피까지 걸어서 약 칠백오십미터, 십분 정도 걸릴 거예요. 용 스트리트를 계
-    58.41s  ⚡SPAN 주입 [d'=1.84s / d_lead=11.35s]: (tool result) Walk 750 m, approx. 10 mins. 1. Head north on Yonge St. 
-    58.58s  user  발화 끝
-    69.76s  agent 발화 끝
-    70.03s  user  발화 시작: 완벽해. 정말 고마워.
-    72.00s  user  발화 끝
-    72.18s  agent 발화 시작: 천만에요. 잠시 산책하며 기분 전환하면 스트레스 해소에 도움이 될 거예요.
-    77.03s  agent 발화 끝
+     0.00s  user  발화 시작: 호스트 파일 크기가 얼마나 돼?
+     2.03s  user  발화 끝
+     2.03s  <ret> 발화 (turn1 첫 프레임)
+     2.34s  agent 발화 시작: <ret> 호스트 파일 크기는 백이십팔바이트이고, 마지막 수정일은 칠월 구일 오전 열시 십오분입니다. 혹시 
+     2.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) The hosts file is 128 bytes in size and was last modifie
+    10.71s  user  발화 시작: 아니, 그게 아니라… 음, 십킬로바이트 정도로 생각했는데.
+    10.78s  agent 발화 끝
+    14.79s  agent 발화 시작: 아, 십킬로바이트 정도로 생각하셨군요.
+    14.87s  user  발화 끝
+    17.19s  agent 발화 끝
+    17.33s  user  발화 시작: 응, 십킬로바이트.
+    18.85s  <ret> 발화 (turn5 첫 프레임)
+    19.16s  agent 발화 시작: <ret> 다시 확인해 보니, 호스트 파일 크기는 여전히 백이십팔바이트이고, 마지막 수정일은 칠월 구일 오전
+    19.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.16s]: (tool result) The hosts file is 128 bytes in size and was last modifie
+    19.21s  user  발화 끝
+    24.75s  user  발화 시작: 어.
+    25.48s  user  발화 끝
+    27.25s  agent 발화 시작: 파일 크기를 잘못 기억하셨던 것 같아요. 혹시 다른 파일 크기를 확인해 드릴까요?
+    27.31s  agent 발화 끝
+    31.85s  user  발화 시작: 아니, 괜찮아. 그냥 궁금해서 물어본 거야. 그럼 오늘 날씨 어때?
+    31.89s  agent 발화 끝
+    36.66s  <ret> 발화 (turn9 첫 프레임)
+    36.66s  user  발화 끝
+    36.89s  agent 발화 시작: <ret> 서울 날씨는 현재 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다. 오늘 하루
+    36.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) The weather in Seoul is 23.0°C, humidity 74%, wind 5.5 k
+    42.59s  user  발화 시작: 대박.
+    43.23s  user  발화 끝
+    45.09s  agent 발화 끝
+    45.47s  user  발화 시작: 고마워. 혹시 내일 모레 부산 가는…
+    48.85s  user  발화 끝
+    49.95s  user  발화 시작: …기차 시간표 좀 알아봐 줄 수 있어?
+    51.70s  <ret> 발화 (turn13 첫 프레임)
+    51.84s  agent 발화 시작: <ret> 부산행 기차는 서울역에서 오전 여덟시, 열시 삼십분, 오후 한시, 세시 삼십분, 여섯시에 출발합니
+    51.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: (tool result) Trains to Busan depart from Seoul Station at 08:00, 10:3
+    52.02s  user  발화 끝
+    61.86s  user  발화 시작: 음… 열시 삼십분 기차가 좋겠어.
+    61.96s  agent 발화 끝
+    64.64s  agent 발화 시작: 네, 열시 삼십분 기차로 알아봐 드릴게요. 혹시 좌석 등급을 지정하고 싶으신가요?
+    64.72s  user  발화 끝
+    69.82s  agent 발화 끝
+    69.84s  user  발화 시작: 아니, 그냥 일반석으로 해 줘.
+    71.67s  <ret> 발화 (turn17 첫 프레임)
+    72.06s  agent 발화 시작: <ret> 부산행 기차, 일반석, 십오C 좌석으로 예매가 완료되었습니다. 확인번호는 칠 팔 구 엑스 와이 제
+    72.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: (tool result) Train to Busan confirmed, standard class, seat 15C, conf
+    72.29s  user  발화 끝
+    78.91s  user  발화 시작: 어.
+    79.68s  user  발화 끝
+    80.95s  user  발화 시작: 와, 고마워. 정말 큰 도움이 됐어.
+    81.00s  agent 발화 끝
+    83.90s  agent 발화 시작: 천만에요. 언제든지 필요한 일이 있으면 저를 찾아주세요. 제가 항상 곁에서 도와드리겠습니다.
+    83.98s  user  발화 끝
+    90.19s  agent 발화 끝

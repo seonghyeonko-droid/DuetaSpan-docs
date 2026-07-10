@@ -1,77 +1,96 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are Brioia, a upbeat and supportive life coach who helps people with stress relief and mindfulness. <system>
+SYSTEM: <system> You are Kera, a thoughtful and soft-spoken supportive advisor who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_selfc_08",
-    "name": "Sam",
+    "name": "Riley",
     "location": {
-      "city": "New York",
-      "country": "United States",
-      "timezone": "America/New_York (EST, UTC-5)",
-      "currency": "USD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "American",
+    "nationality": "French",
     "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "English"
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-05-26",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in December."
-    },
-    {
-      "date": "2026-05-04",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-03-13",
-      "category": "pet",
-      "text": "User has a Beagle named Rusty."
-    },
-    {
-      "date": "2025-07-17",
+      "date": "2026-02-13",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2026-01-23",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-01-08",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-06-08",
+      "category": "home",
+      "text": "User's home address is 104 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-04-29",
-      "title": "Apartment hunting downtown",
+      "date": "2026-04-03",
+      "title": "Setting up a home network",
       "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-12-05",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Locate pharmacies inside ⟨ret@2.53s⟩ Toronto.
-[  2.92s][moshi] ⟦⚡SPAN@2.93s: (tool result) {"results": [{"name": "Shoppers Drug Mart", "address": "123 Main St, Toronto, ON M5H 2W1", "lati⟧ I’ve found two pharmacies in Toronto for you. There’s Shoppers Drug Mart at 123 Main Street, and Rexall Pharmacy at 456 Queen Street West.
-      CALL: {"function": "maps_text_search", "arguments": {"query": "pharmacies in Toronto"}}
-[  8.28s][user ] «backchannel» Mhm.
-[ 12.79s][user ] Which one is closest to the CN ⟨ret@15.18s⟩ Tower?
-[ 15.41s][moshi] ⟦⚡SPAN@15.42s: (tool result) {"distance": 2.5, "duration": 8, "units": "km", "mode": "driving"}⟧ Shoppers Drug Mart is about 2.5 kilometers from the CN Tower, and would take about 8 minutes to drive.
-      CALL: {"function": "map_directions", "arguments": {"origin": "CN Tower", "destination": "Shoppers Drug Mart 123 Main St, Toronto, ON M5H 2W1"}}
-[ 17.81s][user ] «backchannel» Oh.
-[ 21.13s][moshi] It’s a relatively quick trip, and a good option if you’re already in that area. Remember, prioritizing your well-being is key.
-[ 25.88s][user ] «backchannel» Yeah, totally.
-[ 28.10s][user ] And what about ⟨ret@29.14s⟩ Rexall?
-[ 29.45s][moshi] «interrupted» ⟦⚡SPAN@29.46s: (tool result) {"distance": 3.1, "duration": 12, "units": "km", "mode": "driving"}⟧ Rexall Pharmacy is a little further—about 3.1 kilometers—and would take around 12 minutes to drive from the CN Tower. —
-      CALL: {"function": "map_directions", "arguments": {"origin": "CN Tower", "destination": "Rexall Pharmacy 456 Queen St W, Toronto, ON M5V 1Y1"}}
-[ 36.37s][user ] «interrupts_prev» …Do either of them have a 24-hour service?
-[ 39.40s][moshi] ⟨ret@39.33s⟩ ⟦⚡SPAN@39.41s: (tool result) {"name": "Shoppers Drug Mart", "opening hours": {"open now", "weekday text": Monday: 8:00 AM – 1⟧ Shoppers Drug Mart is currently open, and they’re open until midnight every day this week, with slightly shorter hours on Sundays.
-      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJ8xQvW9yYE4gRzIe1Y6zOq8k"}}
-[ 46.49s][user ] Perfect!
-[ 47.13s][moshi] It’s wonderful to know you’ve found a convenient option. Taking care of your needs, even small ones, is a great act of self-compassion.
-[ 49.17s][user ] «backchannel» Right.
-[ 54.56s][user ] Can you send the address to ⟨ret@56.50s⟩ my phone?
-[ 56.73s][moshi] ⟦⚡SPAN@56.74s: (tool result) {"status": "success", "message id": "a1b2c3d4"}⟧ I’ve just sent the address for Shoppers Drug Mart to your phone—message ID a1b2c3d4.
-      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "user's phone", "location": "Shoppers Drug Mart 123 Main St, Toronto, ON M5H 2W1"}}
-[ 64.88s][user ] Thank you.
-[ 65.42s][moshi] You’re very welcome. It’s all about making things a little easier for yourself, isn’t it?
+[  0.00s][user ] How large is the hosts ⟨ret@2.12s⟩ file?
+[  2.51s][moshi] ⟦⚡SPAN@2.52s: (tool result) /etc/hosts: 178 bytes⟧ The hosts file is one hundred and seventy-eight bytes in size. That’s quite a small file, isn't it?
+      CALL: {"function": "get_file_info", "arguments": {"file_path": "/etc/hosts"}}
+[  7.63s][user ] And where is it located ⟨ret@9.68s⟩ exactly?
+[  9.91s][moshi] ⟦⚡SPAN@9.92s: The hosts file is located at /etc/hosts on most Unix-like systems.⟧ It’s located at /etc/hosts on most Unix-like systems, a standard place for it.
+[ 16.50s][user ] I see… um, what about my calendar for next Tuesday?
+[ 20.39s][moshi] Next Tuesday is July fourteenth. Do you want me to check for events then?
+[ 22.65s][user ] «backchannel» Yeah.
+[ 24.30s][user ] Yes, please.
+[ 25.91s][moshi] ⟨ret@25.59s⟩ ⟦⚡SPAN@25.91s: (no information found)⟧ I’m sorry, I don’t have any events scheduled for next Tuesday, July fourteenth.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {"date": "2026-07-14"}}
+[ 29.95s][user ] Oh— that's odd. I thought I had a meeting with Dr. Lee then.
+[ 34.91s][moshi] That is surprising. Perhaps it wasn't added to your digital calendar yet?
+[ 38.66s][user ] Maybe. I scheduled it with her… last Wednesday, I think.
+[ 41.51s][user ] «backchannel» Yeah.
+[ 43.14s][moshi] ⟨ret@43.07s⟩ ⟦⚡SPAN@43.15s: [2026-07-01] I scheduled a meeting with Dr. Lee.⟧ You noted on July first that you scheduled a meeting with Dr. Lee.
+[ 47.52s][user ] Oh, good, you remembered! Can you remind Dr. Lee about it?
+[ 51.19s][moshi] I can certainly try to send her a message. What’s her email address?
+[ 53.07s][user ] «backchannel» Mm-hmm.
+[ 54.77s][user ] It’s lee.sunhee@med.ac.kr. ⟨ret@58.48s⟩
+[ 58.87s][moshi] ⟦⚡SPAN@58.88s: (tool result) Message sent to lee.sunhee@med.ac.kr⟧ I’ve sent a reminder message to lee.sunhee@med.ac.kr about your meeting next Tuesday.
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"recipient": "lee.sunhee@med.ac.kr", "message": "Reminder of our meeting next Tuesday, July 14th."}}
+[ 64.65s][user ] Perfect! Thanks, Kera.
+[ 66.49s][moshi] You’re very welcome. I’m glad I could help with that reminder and your file question.
+[ 67.96s][user ] «backchannel» Okay.
+[ 71.19s][user ] One last thing… what’s the weather like in Seoul ⟨ret@74.48s⟩ tomorrow?
+[ 74.84s][moshi] ⟦⚡SPAN@74.89s: (tool result) 24.0°C, humidity 70%, wind 6.2 km/h⟧ Tomorrow in Seoul will be twenty-four degrees Celsius with seventy percent humidity and a six point two kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 81.09s][user ] Sounds pleasant enough.
+[ 83.01s][moshi] It does indeed sound quite comfortable. Perhaps a good day for studying outdoors?

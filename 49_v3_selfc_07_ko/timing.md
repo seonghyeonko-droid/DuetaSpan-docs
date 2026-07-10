@@ -4,111 +4,114 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "현진",
+#     "name": "윤서",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-22",
+#       "date": "2026-05-14",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 해운대로 570."
+#     },
+#     {
+#       "date": "2025-09-03",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-09-01",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-11-21",
+#       "date": "2025-08-29",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-09-29",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-09-15",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "date": "2025-08-11",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-29",
-#       "title": "Researching a used car",
+#       "date": "2025-08-30",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-05-28",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 음, 작년에 나온 캐럴 좀… | S2 샘 스미스… 그거 괜찮았지. 이번 주말에 영화 볼까? | S3 배드 보이즈… 그거 볼까. 지금 바로 예매해 줘. | S4 좋아, 뭔가 편안한 음악 틀어 줘.
+# EXAMINER(FDB-v2) 단계: S1 슬랙봇 사용자 에이전트로 설정해 줄 수 있어? 확장 링크 버전 | S2 아, 그렇구나. | S3 …혹시 그때 서울에서 열리는 공연이 있을까? | S4 아니, 괜찮아. 그냥 궁금했어.
 
-     0.00s  user  발화 시작: 음, 작년에 나온 캐럴 좀…
-     2.08s  user  발화 끝
-     3.20s  user  발화 시작: …찾아줄래? 두 천 이십삼 년 거.
-     5.39s  <ret> 발화 (turn2 첫 프레임)
-     5.63s  agent 발화 시작: <ret> 두 천 이십삼 년에는 머라이어 캐리가 "All I Want for Christmas Is You 
-     5.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: (tool result) In 2023, Mariah Carey released “All I Want for Christmas
-     5.64s  user  발화 끝
-    14.47s  agent 발화 끝
-    14.63s  user  발화 시작: 아, 부블레… 아니, 이천이십이년 캐럴은? 이천이십이년으로 다시 해 줘.
-    19.22s  <ret> 발화 (turn4 첫 프레임)
-    19.53s  agent 발화 시작: <ret> 두 천 이십이 년에는 브렌다 리의 "Rockin’ Around the Christmas Tree"
-    19.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: (tool result) In 2022, Brenda Lee’s “Rockin’ Around the Christmas Tree
-    19.63s  user  발화 끝
-    22.60s  user  발화 시작: 응.
-    23.09s  user  발화 끝
-    28.82s  user  발화 시작: 샘 스미스… 그거 괜찮았지. 이번 주말에 영화 볼까?
-    28.89s  agent 발화 끝
-    31.95s  user  발화 끝
-    31.96s  agent 발화 시작: 주말에 영화를 보시는군요. 어떤 영화를 보고 싶으세요?
-    35.80s  agent 발화 끝
-    35.99s  user  발화 시작: 글쎄, 뭐 재미있는 거… 음, 액션 영화 있나?
-    39.41s  <ret> 발화 (turn9 첫 프레임)
-    39.65s  agent 발화 시작: <ret> 현재 상영 중인 액션 영화로는 "Bad Boys: Ride or Die", "Kingdom of 
-    39.66s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.58s]: (tool result) Currently showing action films include "Bad Boys: Ride o
-    39.82s  user  발화 끝
-    45.94s  user  발화 시작: 어어.
-    46.57s  user  발화 끝
-    47.84s  user  발화 시작: 배드 보이즈… 그거 볼까. 지금 바로 예매해 줘.
-    48.23s  agent 발화 끝
-    50.95s  <ret> 발화 (turn12 첫 프레임)
-    51.02s  agent 발화 시작: <ret> 네, "Bad Boys: Ride or Die" 티켓 두 장이 칠월 십일일 토요일 오후 일곱시에 
-    51.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.87s]: (tool result) Confirmation ID: 7X9L2. Two tickets for "Bad Boys: Ride 
-    51.08s  user  발화 끝
-    57.61s  user  발화 시작: 우와.
-    58.10s  user  발화 끝
-    62.89s  agent 발화 끝
-    62.94s  user  발화 시작: 고마워. 아, 그런데 지금 몇 시야?
-    65.01s  <ret> 발화 (turn15 첫 프레임)
-    65.32s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 세시 사십칠분입니다.
-    65.33s  user  발화 끝
-    65.33s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.63s]: (tool result) It is Friday, July 10, 2026 at 3:47 PM in Asia/Seoul rig
-    67.45s  user  발화 시작: 와.
-    67.94s  user  발화 끝
-    69.57s  user  발화 시작: 벌써? 시간이 빠르네…
-    69.95s  agent 발화 끝
-    70.95s  agent 발화 시작: 시간이 빠르게 흘러가는 건 어쩔 수 없죠. 혹시 스트레스 해소에 도움이 될 만한 음악을 추천해 드릴까요?
-    70.95s  user  발화 끝
-    77.46s  user  발화 시작: 좋아, 뭔가 편안한 음악 틀어 줘.
-    77.67s  agent 발화 끝
-    80.18s  user  발화 끝
-    80.28s  <ret> 발화 (turn20 첫 프레임)
-    80.35s  agent 발화 시작: <ret> 지금 Marconi Union의 "Weightless"를 재생합니다. 편안하게 휴식을 취하세요.
-    80.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (tool result) Now playing: "Weightless" by Marconi Union.
-    82.70s  user  발화 시작: 그치.
-    83.11s  user  발화 끝
-    85.34s  user  발화 시작: 아, 좋다… 고마워, 사리.
-    85.40s  agent 발화 끝
-    86.95s  user  발화 끝
-    87.25s  agent 발화 시작: 천만에요.
-    88.06s  agent 발화 끝
+     0.00s  user  발화 시작: 슬랙봇 사용자 에이전트로 설정해 줄 수 있어? 확장 링크 버전 일으로.
+     4.96s  <ret> 발화 (turn1 첫 프레임)
+     5.09s  user  발화 끝
+     5.19s  agent 발화 시작: <ret> 네, 사용자 에이전트를 슬랙봇 링크 확장 버전 일으로 설정해 드렸습니다.
+     5.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) User agent set to Slackbot Link Expanding version 1.0
+     6.75s  user  발화 시작: 음.
+     6.97s  user  발화 끝
+    10.56s  agent 발화 끝
+    10.71s  user  발화 시작: 고마워. 그럼, 내일 모레 서울 날씨는 어때?
+    13.58s  <ret> 발화 (turn4 첫 프레임)
+    13.89s  agent 발화 시작: <ret> 내일 모레 서울 날씨는 섭씨 이십육 점 이도, 습도 육십팔퍼센트, 바람은 시속 칠 점 일킬로미터로
+    13.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) 26.2°C, humidity 68%, wind 7.1 km/h, partly cloudy.
+    13.95s  user  발화 끝
+    22.79s  agent 발화 끝
+    23.35s  user  발화 시작: 음… 혹시 그때 미세먼지 농도는 어때?
+    26.09s  <ret> 발화 (turn6 첫 프레임)
+    26.24s  agent 발화 시작: <ret> 미세먼지 농도는 십이 마이크로그램/세제곱미터로, 보통 수준입니다.
+    26.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.36s]: (tool result) PM2.5: 12 µg/m³, good.
+    26.25s  user  발화 끝
+    28.79s  user  발화 시작: 그래.
+    29.14s  user  발화 끝
+    31.61s  agent 발화 끝
+    32.03s  user  발화 시작: 아, 그렇구나.
+    32.85s  user  발화 끝
+    33.22s  agent 발화 시작: 혹시 다른 궁금한 점이 있으신가요? 저는 창의적인 막힘이나 자신감을 북돋아 드리는 일을 돕고 있답니다.
+    36.91s  user  발화 시작: 아.
+    37.54s  user  발화 끝
+    40.55s  agent 발화 끝
+    41.37s  user  발화 시작: 내일 모레…—
+    42.50s  user  발화 시작: …혹시 그때 서울에서 열리는 공연이 있을까?
+    42.52s  user  발화 끝
+    45.32s  <ret> 발화 (turn13 첫 프레임)
+    45.39s  agent 발화 시작: <ret> 내일 모레 서울에서는 샬롯 극장에서 '오페라의 유령' 공연이 열릴 예정이고, 티켓 가격은 팔만 원
+    45.40s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.88s]: (tool result) July 12, 2026: 'The Phantom of the Opera' at Charlotte T
+    45.54s  user  발화 끝
+    53.27s  agent 발화 끝
+    53.48s  user  발화 시작: 오페라의 유령? 팔만 원부터라고?
+    55.70s  agent 발화 시작: 네, '오페라의 유령' 티켓 가격은 팔만 원부터 시작합니다. 혹시 다른 공연을 알아보고 싶으신가요?
+    55.74s  user  발화 끝
+    61.84s  user  발화 시작: 아니, 괜찮아. 그냥 궁금했어.
+    62.01s  agent 발화 끝
+    64.27s  agent 발화 시작: 때로는 예상치 못한 즐거움을 발견하는 것도 좋지요. 새로운 가능성을 열어두는 건 창의적인 과정에도 도움이 될
+    64.29s  user  발화 끝
+    69.69s  user  발화 시작: 그치.
+    70.18s  user  발화 끝
+    71.77s  agent 발화 끝
+    72.90s  user  발화 시작: 맞는 말 같아.
+    73.75s  user  발화 끝
+    73.82s  agent 발화 시작: 긍정적인 마음은 좋은 영감을 불러일으킨답니다.
+    77.52s  agent 발화 끝

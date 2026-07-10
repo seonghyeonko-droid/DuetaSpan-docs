@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "서민",
+#     "name": "태현",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "late 30s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-27",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-01-26",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-10-10",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in May."
-#     },
-#     {
-#       "date": "2025-08-18",
+#       "date": "2026-01-31",
 #       "category": "diet",
-#       "text": "User is vegetarian."
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2025-07-22",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2025-11-24",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#     },
+#     {
+#       "date": "2025-10-27",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-08-04",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-03",
+#       "date": "2026-04-02",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -53,15 +48,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-04-11",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-10-29",
+#       "date": "2026-03-30",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -71,89 +58,95 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 문서 폴더 안에 '새 프로젝트'라는 새 폴더 만들어 줄  | S2 '기획서.docx'요. | S3 아니요, 지금은 괜찮아요. 그런데 오늘 서울 날씨는 어때요? | S4 '인터스텔라'요.
+# EXAMINER(FDB-v2) 단계: S1 자전거로 경복궁에서 성균관까지 가는 길 좀 알려줄래요? | S2 아, 좋은 말씀이네요. 그럼 혹시 성균관 근처에 맛있는 식당도 | S3 근데, 혹시 제가 작년에 제주도에 갔던 기억나세요? | S4 아, 그러네요. 지금은 힘들겠어요.
 
-     0.00s  user  발화 시작: 혹시 문서 폴더 안에 '새 프로젝트'라는 새 폴더 만들어 줄 수 있어요?
-     4.00s  <ret> 발화 (turn1 첫 프레임)
-     4.21s  user  발화 끝
-     4.39s  agent 발화 시작: <ret> 네, '문서' 폴더 안에 '새 프로젝트' 폴더를 만들었어요. 이제 새 프로젝트를 시작하시기 좋겠네
-     4.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: (tool result) Directory '문서/새 프로젝트' created successfully.
-     9.85s  agent 발화 끝
-     9.94s  user  발화 시작: 아, 좋아요. 그런데 그 폴더에…
-    12.52s  user  발화 끝
-    14.44s  user  발화 시작: …지금 바로 들어가 보고 싶은데요.
-    16.20s  <ret> 발화 (turn4 첫 프레임)
-    16.42s  agent 발화 시작: <ret> '새 프로젝트' 폴더는 아직 비어 있어요. 지금 파일을 넣어두셔도 괜찮아요.
-    16.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.82s]: (tool result) Files in '문서/새 프로젝트': (empty).
-    16.52s  user  발화 끝
-    21.24s  agent 발화 끝
-    23.62s  user  발화 시작: 음, 그 폴더 안에 '기획서.docx' 파일을 옮겨 놓을 수 있을까요?
-    27.22s  agent 발화 시작: 파일 이름을 다시 한번 말씀해 주시겠어요? 파일 이름이 정확해야 옮길 수 있거든요.
-    27.46s  user  발화 끝
-    29.96s  user  발화 시작: 네.
-    30.31s  user  발화 끝
-    31.81s  user  발화 시작: '기획서.docx'요.
-    32.03s  agent 발화 끝
-    33.04s  agent 발화 시작: 파일 이름이 '기획서.docx'군요. 어떤 폴더에서 옮겨올까요?
-    33.14s  user  발화 끝
-    36.19s  user  발화 시작: 맞아요.
-    36.82s  user  발화 끝
-    37.88s  user  발화 시작: 음… 바탕 화면에 있어요.
-    38.04s  agent 발화 끝
-    40.14s  user  발화 끝
-    40.35s  <ret> 발화 (turn12 첫 프레임)
-    40.42s  agent 발화 시작: <ret> 바탕 화면에 있는 '기획서.docx' 파일을 '새 프로젝트' 폴더로 옮기시겠어요?
-    40.43s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.32s]: (tool result) File '바탕 화면/기획서.docx' read successfully.
-    45.39s  <ret> 발화 (turn13 첫 프레임)
-    45.63s  agent 발화 시작: <ret> 네, '기획서.docx' 파일을 읽어왔어요. 이제 '새 프로젝트' 폴더로 옮겨드릴게요.
-    45.63s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.21s]: (tool result) File '문서/새 프로젝트/기획서.docx' written successfully.
-    45.75s  agent 발화 끝
-    49.73s  agent 발화 시작: '기획서.docx' 파일을 '새 프로젝트' 폴더로 옮겼습니다. 이제 확인해 보실까요? —
-    49.84s  agent 발화 끝
-    53.32s  user  발화 시작: … 잠깐만요, 혹시 그 파일이 제대로 옮겨졌는지 파일 크기를 확인해 볼 수 있을까요?
-    54.03s  agent 발화 끝
-    57.71s  user  발화 끝
-    58.06s  <ret> 발화 (turn16 첫 프레임)
-    58.12s  agent 발화 시작: <ret> '기획서.docx' 파일의 크기는 이 점 삼 메가바이트이고, 마지막 수정일은 오늘 오후 두시 사십
-    58.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) File size: 2.3 MB, last modified: 2026-07-10 14:45:00.
-    60.58s  user  발화 시작: 그렇군요.
-    61.26s  user  발화 끝
-    64.48s  agent 발화 시작: 다행이네요. 혹시 다른 파일도 옮기실 게 있으신가요?
-    64.74s  agent 발화 끝
-    67.62s  agent 발화 끝
-    67.83s  user  발화 시작: 아니요, 지금은 괜찮아요. 그런데 오늘 서울 날씨는 어때요?
-    70.80s  <ret> 발화 (turn20 첫 프레임)
-    71.03s  agent 발화 시작: <ret> 지금 서울은 이십팔 점 오도이고, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터로 불고 있어요.
-    71.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.50s]: (tool result) Current weather in Seoul: 28.5°C, humidity 65%, wind 3.2
-    71.07s  user  발화 끝
-    78.53s  agent 발화 끝
-    79.21s  user  발화 시작: 덥네요. 혹시 내일은 좀 더 시원할까요?
-    81.45s  <ret> 발화 (turn22 첫 프레임)
-    81.67s  agent 발화 시작: <ret> 내일 서울은 이십육 점 팔도로 조금 더 시원해지겠지만, 습도는 칠십%이고 비가 올 확률은 이십% 
-    81.69s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.85s]: (tool result) Weather in Seoul tomorrow: 26.8°C, humidity 70%, chance 
-    81.93s  user  발화 끝
-    88.52s  agent 발화 끝
-    88.83s  user  발화 시작: 아, 그럼 우산도 챙겨야겠네요.
-    90.44s  user  발화 끝
-    90.62s  agent 발화 시작: 네, 혹시 모르니 우산을 챙기시는 게 좋겠어요. 혹시 다른 계획은 없으신가요?
-    95.39s  agent 발화 끝
-    95.45s  user  발화 시작: 음… 저녁에 영화 볼 건데, 혹시 근처 영화관에 상영 시간 좀 알아봐 줄 수 있을까요?
-   100.91s  user  발화 끝
-   101.09s  agent 발화 시작: 네, 어떤 영화를 보실 예정이신가요?
-   103.16s  agent 발화 끝
-   103.24s  user  발화 시작: '인터스텔라'요.
-   104.29s  user  발화 끝
-   104.40s  <ret> 발화 (turn28 첫 프레임)
-   104.55s  agent 발화 시작: <ret> 서울 메가박스 코엑스에서 '인터스텔라'는 저녁 일곱시와 열시에 상영합니다.
-   104.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (tool result) '인터스텔라' showtimes in Seoul: 19:00, 22:00 (Megabox Coex).
-   109.36s  agent 발화 끝
-   109.75s  user  발화 시작: 일곱시로 예매해 줄 수 있어요?
-   111.27s  <ret> 발화 (turn30 첫 프레임)
-   111.35s  agent 발화 시작: <ret> 네, '인터스텔라' 저녁 일곱시 메가박스 코엑스 영화표 두장을 예매했습니다. 예약 번호는 칠 팔 
-   111.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) 2 tickets for '인터스텔라' at 19:00, Megabox Coex, confirmed.
-   111.41s  user  발화 끝
-   118.02s  user  발화 시작: 감사합니다.
-   118.12s  agent 발화 끝
-   118.84s  user  발화 끝
-   119.35s  agent 발화 시작: 천만에요. 혹시 영화 보실 때 필요한 다른 건 없으신가요?
-   123.52s  agent 발화 끝
+     0.00s  user  발화 시작: 자전거로 경복궁에서 성균관까지 가는 길 좀 알려줄래요?
+     3.96s  <ret> 발화 (turn1 첫 프레임)
+     4.07s  user  발화 끝
+     4.35s  agent 발화 시작: <ret> 경복궁에서 성균관까지 자전거로는 이 점 일킬로미터, 약 팔분 정도 걸립니다.
+     4.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.13s]: (tool result) Distance: 2.1 km, Duration: 8 minutes.
+     9.48s  agent 발화 끝
+     9.53s  user  발화 시작: 팔분요? 생각보다 가깝네요.
+    11.34s  agent 발화 시작: 네, 가까운 거리라서 자전거로 다니기 좋으실 거예요.
+    11.37s  user  발화 끝
+    12.29s  user  발화 시작: 맞아요.
+    12.79s  user  발화 끝
+    14.62s  user  발화 시작: 혹시 지금 날씨는 어때요?
+    14.71s  agent 발화 끝
+    15.52s  <ret> 발화 (turn6 첫 프레임)
+    15.83s  agent 발화 시작: <ret> 서울 날씨는 현재 이십육 점 오도이고, 습도는 육십팔퍼센트, 바람은 시속 삼 점 이킬로미터입니다.
+    15.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) Current weather in Seoul: 26.5°C, humidity 68%, wind 3.2
+    15.90s  user  발화 끝
+    18.29s  user  발화 시작: 정말요?
+    19.11s  user  발화 끝
+    22.41s  user  발화 시작: 음, 꽤 덥겠네요.
+    22.60s  agent 발화 끝
+    23.77s  agent 발화 시작: 네, 조금 더운 날씨이지만, 자전거 타기에는 괜찮을 거예요.
+    23.79s  user  발화 끝
+    25.28s  user  발화 시작: 네.
+    25.58s  user  발화 끝
+    27.18s  agent 발화 시작: 햇볕이 강할 수 있으니 선크림을 바르시는 것을 추천드립니다. — 자외선 차단제를 꼭 챙기세요.
+    27.33s  agent 발화 끝
+    32.82s  agent 발화 끝
+    32.87s  user  발화 시작: 아, 좋은 말씀이네요. 그럼 혹시 성균관 근처에 맛있는 식당도 있을까요?
+    37.49s  <ret> 발화 (turn13 첫 프레임)
+    37.53s  agent 발화 시작: <ret> 성균관 근처에는 '매화식당'이라는 한식집이 있고, 평점이 사 점 오점에 평균 가격은 일만 오천 원
+    37.57s  ⚡SPAN 주입 [d'=1.04s / d_lead=11.59s]: (tool result) Restaurants near Sungkyunkwan University: '매화식당' (Korean
+    37.60s  user  발화 끝
+    46.62s  user  발화 시작: 네.
+    46.98s  user  발화 끝
+    49.12s  agent 발화 끝
+    50.04s  user  발화 시작: 매화식당이 더 끌리네요. 가격도 저렴하고.
+    53.00s  user  발화 끝
+    53.15s  agent 발화 시작: 저렴한 가격에 맛있는 한식을 즐기실 수 있을 거예요.
+    56.07s  user  발화 시작: 혹시 매화식당 예약은 가능한가요?
+    56.43s  agent 발화 끝
+    58.08s  <ret> 발화 (turn18 첫 프레임)
+    58.48s  agent 발화 시작: <ret> 네, 매화식당에 칠월 십일 저녁 일곱시에 두명으로 예약이 완료되었습니다. — 확인 번호는 팔 칠 
+    58.48s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.32s]: (tool result) Reservation confirmed at 매화식당 for 2 people on July 10, 2
+    58.55s  user  발화 끝
+    65.80s  agent 발화 끝
+    66.51s  user  발화 시작: 와, 정말 고맙습니다. 덕분에 저녁 약속도 잡았네요.
+    70.12s  user  발화 끝
+    70.19s  agent 발화 시작: 천만에요. 맛있는 저녁 식사 되세요.
+    72.96s  agent 발화 끝
+    73.88s  user  발화 시작: 근데, 혹시 제가 작년에 제주도에 갔던 기억나세요?
+    77.28s  <ret> 발화 (turn22 첫 프레임)
+    77.67s  agent 발화 시작: <ret> 네, 이천이십오년 칠월 십오일에 제주도에 다녀오셨다고 말씀하셨었죠.
+    77.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: [2025-07-15] 제주도에 갔었어요.
+    77.72s  user  발화 끝
+    82.10s  user  발화 시작: 맞아요. 그때 정말 좋았는데…
+    82.30s  agent 발화 끝
+    83.85s  user  발화 끝
+    83.97s  agent 발화 시작: 아름다운 추억을 간직하고 계시는군요.
+    86.33s  user  발화 시작: 그때 사진도 찍었는데, 혹시 제가 찍은 사진을 찾을 수 있을까요?
+    86.51s  agent 발화 끝
+    90.17s  user  발화 끝
+    90.32s  agent 발화 시작: 사진을 찾으려면 사진이 저장된 위치를 알려주셔야 합니다.
+    94.15s  agent 발화 끝
+    96.08s  user  발화 시작: 음… 제 컴퓨터에 있을 거예요.
+    97.87s  user  발화 끝
+    97.95s  agent 발화 시작: 컴퓨터에서 사진을 찾으려면 컴퓨터에 접근 권한이 필요합니다.
+   100.58s  user  발화 시작: 예.
+   100.98s  user  발화 끝
+   101.52s  user  발화 시작: 아, 그러네요. 지금은 힘들겠어요.
+   101.88s  agent 발화 끝
+   103.95s  agent 발화 시작: 네, 지금은 어렵습니다.
+   104.10s  user  발화 끝
+   105.61s  agent 발화 끝
+   106.75s  user  발화 시작: 그럼, 혹시 제가 오늘 아침에 알람을 맞춰놓은 게 있나요?
+   110.19s  <ret> 발화 (turn33 첫 프레임)
+   110.50s  user  발화 끝
+   110.51s  agent 발화 시작: <ret> 네, 오늘 아침 일곱시에 '기상', 아홉시에 '회의 알림' 알람이 설정되어 있습니다.
+   110.51s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.67s]: (tool result) Alarms set: 7:00 AM - Wake up, 9:00 AM - Meeting reminde
+   113.04s  user  발화 시작: 그렇군요.
+   113.67s  user  발화 끝
+   115.18s  agent 발화 끝
+   115.81s  user  발화 시작: 아, 맞다. 회의가 있었죠.
+   117.56s  user  발화 끝
+   117.68s  agent 발화 시작: 중요한 회의에 늦지 않도록 주의하세요.
+   120.03s  user  발화 시작: 네, 알겠습니다. 정말 감사합니다.
+   120.22s  agent 발화 끝
+   121.88s  user  발화 끝
+   122.08s  agent 발화 시작: 도움이 되었다니 기쁩니다.
+   123.74s  agent 발화 끝

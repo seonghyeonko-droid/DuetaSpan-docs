@@ -4,61 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Quinn",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Australian",
+#     "nationality": "German",
 #     "gender": "non-binary",
-#     "age_range": "50s",
-#     "language": "English"
+#     "age_range": "late 30s",
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-23",
-#       "category": "hobby",
-#       "text": "User is into birdwatching."
-#     },
-#     {
-#       "date": "2026-04-29",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-12-12",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-08-27",
+#       "date": "2026-04-11",
 #       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2025-08-11",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-11-18",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     },
 #     {
-#       "date": "2025-05-28",
+#       "date": "2025-09-14",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2025-08-29",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-06-19",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "text": "User is allergic to penicillin."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-01",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-21",
+#       "date": "2026-02-28",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -66,22 +53,28 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-11",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-12-25",
+#       "title": "Booked a dentist appointment",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-08",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: Who played Harper Finkle…
-     1.99s  user  발화 끝
-     3.65s  user  발화 시작: …on Wizards of Waverly Place?
-     5.39s  <ret> 발화 (turn2 첫 프레임)
-     5.55s  agent 발화 시작: <ret> That would be Jennifer Stone, who wonderfully played H
-     5.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: Jennifer Stone portrayed Harper Finkle in the Disney Channel series Wi
-     5.73s  user  발화 끝
-    15.71s  agent 발화 끝
+     0.00s  user  발화 시작: Do you remember what song played at the very end of The Sopr
+     3.06s  <ret> 발화 (turn1 첫 프레임)
+     3.29s  agent 발화 시작: <ret> It's a really evocative choice, isn't it? That song, "
+     3.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: Journey's 1981 rock ballad "Don't Stop Believin'" played over the fina
+     3.47s  user  발화 끝
+    10.19s  agent 발화 끝

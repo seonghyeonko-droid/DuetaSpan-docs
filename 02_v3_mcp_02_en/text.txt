@@ -1,81 +1,64 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are Tealo, a kind and steady counselor who helps people with parenting and family time. <system>
+SYSTEM: <system> You are Gari, a practical and reassuring life coach who helps people with career choices and work stress. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_mcp_02",
-    "name": "Adam",
+    "name": "Stella",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
-    "gender": "male",
+    "nationality": "French",
+    "gender": "female",
     "age_range": "late 20s",
-    "language": "English"
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-02-16",
-      "category": "home",
-      "text": "User's home address is 576 Birch Road."
+      "date": "2026-04-07",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
     },
     {
-      "date": "2025-11-26",
+      "date": "2026-04-05",
       "category": "cuisine",
       "text": "User's favorite cuisine is sushi."
     },
     {
-      "date": "2025-10-04",
-      "category": "allergy",
-      "text": "User is allergic to peanuts."
+      "date": "2026-03-30",
+      "category": "diet",
+      "text": "User is pescatarian."
     },
     {
-      "date": "2025-07-21",
+      "date": "2026-01-02",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a high-school teacher."
+    },
+    {
+      "date": "2025-12-31",
+      "category": "home",
+      "text": "User's home address is 670 Maple Drive."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-06-24",
+      "date": "2025-11-25",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2026-04-15",
-      "title": "Setting up a home network",
-      "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2026-04-13",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m thinking about getting a subscription to your service. Can you create a subscription plan for the silver tier, billed every three ⟨ret@7.47s⟩ months?
-[  7.71s][moshi] ⟦⚡SPAN@7.71s: (tool result) Subscription created: ID 87654, tier Silver, billing every 3 months, starting today.⟧ I can help with that. I’ve created a silver subscription for you, ID eight seven six five four, billed every three months.
-      CALL: {"function": "create_subscription_plan", "arguments": {"tier": "silver", "billing_frequency": "three months"}}
-[ 13.51s][user ] «backchannel» Mhm.
-[ 17.25s][user ] That sounds great! Um, what’s the weather like in Seoul right ⟨ret@21.77s⟩ now?
-[ 22.09s][moshi] ⟦⚡SPAN@22.09s: (tool result) Seoul: 26.5°C, humidity 68%, wind 4.1 km/h, clear skies.⟧ The weather in Seoul is currently twenty-six point five degrees Celsius, with clear skies and a gentle breeze.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
-[ 25.11s][user ] «backchannel» Yeah.
-[ 28.71s][user ] Perfect! I need to find a good Italian restaurant ⟨ret@32.28s⟩ nearby.
-[ 32.68s][moshi] ⟦⚡SPAN@32.68s: (tool result) Found: Bella Italia, 0.8km, 4.5 stars, $$$.⟧ I found Bella Italia, it's just point eight kilometers away, with four and a half stars and a moderate price range.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "nearby"}}
-[ 40.02s][user ] Can you reserve a table for two there at seven this evening?
+[  0.00s][user ] Hey, could you look up Zuni Cafe…
+[  3.54s][user ] …for me? I need their phone ⟨ret@5.69s⟩ number.
+[  5.93s][moshi] ⟦⚡SPAN@5.93s: {"name": "Zuni Café", "address": "1658 Market St, San Francisco, CA 94102", "phone_number": "415-552-2377", "r⟧ Zuni Café’s phone number is 415-552-2377, located on Market Street in San Francisco. It has a 4.5-star rating.
+[ 12.56s][user ] «backchannel» Wow.
+[ 19.36s][user ] Oh, that's great! Um, actually, I'm trying to decide if I should even go to San Francisco next month…
+[ 25.77s][moshi] Well, deciding where to focus your energy is a big part of feeling less overwhelmed. Sometimes a change of scenery *can* be really helpful, though.

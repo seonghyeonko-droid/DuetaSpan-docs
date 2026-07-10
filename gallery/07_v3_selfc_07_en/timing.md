@@ -4,125 +4,118 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Simon",
+#     "name": "Riley",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
+#     "nationality": "American",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-22",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "date": "2026-05-14",
+#       "category": "home",
+#       "text": "User's home address is 838 Pine Court."
 #     },
 #     {
-#       "date": "2025-11-21",
+#       "date": "2025-09-03",
+#       "category": "work",
+#       "text": "User works as a chef."
+#     },
+#     {
+#       "date": "2025-09-01",
 #       "category": "hobby",
-#       "text": "User is into rock climbing."
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-09-29",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
+#       "date": "2025-08-29",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
 #     },
 #     {
-#       "date": "2025-07-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "date": "2025-08-11",
+#       "category": "diet",
+#       "text": "User is gluten-free."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-29",
-#       "title": "Researching a used car",
+#       "date": "2025-08-30",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-12",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-05-28",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-18",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What holiday songs were released i | S2 That sounds pretty pleasant. I nee | S3 Yes, uh, something Italian, prefer | S4 Perfect, thank you.
+# EXAMINER(FDB-v2) 단계: S1 I need to find a good Italian rest | S2 Actually, I was thinking about som | S3 …actually, make that eleven am, sh | S4 That’s interesting. Can you find m
 
-     0.00s  user  발화 시작: What holiday songs were released in two thousand twenty-thre
-     5.25s  <ret> 발화 (turn1 첫 프레임)
-     5.48s  agent 발화 시작: <ret> Several holiday songs came out in two thousand twenty-
-     5.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) Mariah Carey - "All I Want for Christmas Is You (New Ver
-     5.70s  user  발화 끝
-    15.03s  agent 발화 끝
-    15.28s  user  발화 시작: Oh, that’s nice. Can you play the Ariana Grande one?
-    18.40s  <ret> 발화 (turn3 첫 프레임)
-    18.56s  agent 발화 시작: <ret> I’m playing “Santa Tell Me (Remix)” by Ariana Grande f
-    18.56s  ⚡SPAN 주입 [d'=1.92s / d_lead=6.16s]: (tool result) Playing "Santa Tell Me (Remix)" by Ariana Grande.
-    18.61s  user  발화 끝
-    20.56s  user  발화 시작: Yeah.
-    21.10s  user  발화 끝
-    24.72s  agent 발화 끝
-    25.26s  user  발화 시작: That’s lovely. What’s the weather like in Seoul today?
-    28.56s  <ret> 발화 (turn6 첫 프레임)
-    28.80s  agent 발화 시작: <ret> Right now in Seoul, it’s twenty-three point zero degre
-    28.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
-    28.92s  user  발화 끝
-    36.54s  agent 발화 끝
-    36.60s  user  발화 시작: That sounds pretty pleasant. I need…
-    39.10s  user  발화 끝
-    40.15s  user  발화 시작: …to book a restaurant for dinner tonight.
-    42.18s  agent 발화 시작: That sounds like a wonderful idea! Taking time for a nice me
-    42.23s  user  발화 끝
-    46.52s  user  발화 시작: Okay.
-    47.15s  user  발화 끝
-    48.16s  agent 발화 끝
-    48.34s  user  발화 시작: Yes, uh, something Italian, preferably.
-    50.92s  user  발화 끝
-    51.45s  agent 발화 시작: Italian sounds delicious. Do you have a preferred area of th
-    54.81s  user  발화 시작: Yeah.
-    55.49s  user  발화 끝
-    56.45s  agent 발화 끝
-    57.80s  user  발화 시작: Near the COEX Aquarium.
-    59.19s  <ret> 발화 (turn15 첫 프레임)
-    59.59s  agent 발화 시작: <ret> I found two Italian restaurants near the COEX Aquarium
-    59.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) Bella Italia - Italian, 4.5 stars, 15 minutes walk. Trat
-    59.69s  user  발화 끝
-    67.43s  agent 발화 끝
-    67.58s  user  발화 시작: Bella Italia sounds good. Can you reserve a table for two at
-    72.68s  <ret> 발화 (turn17 첫 프레임)
-    73.00s  user  발화 끝
-    73.07s  agent 발화 시작: <ret> I’ve booked a table for two at Bella Italia at seven P
-    73.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) Reservation confirmed at Bella Italia for two people at 
-    76.78s  user  발화 시작: Oh.
-    77.42s  user  발화 끝
-    80.91s  agent 발화 끝
-    81.57s  user  발화 시작: Perfect, thank you.
-    82.85s  agent 발화 시작: You’re very welcome. I’m glad I could help with your evening
-    82.86s  user  발화 끝
-    89.39s  agent 발화 끝
-    91.58s  user  발화 시작: I think I will. What time is my alarm set for tomorrow?
-    94.57s  <ret> 발화 (turn22 첫 프레임)
-    94.73s  agent 발화 시작: <ret> You have an alarm set for seven AM tomorrow morning.
-    94.73s  ⚡SPAN 주입 [d'=0.80s / d_lead=3.56s]: (tool result) Alarm set for 7:00 AM.
-    94.82s  user  발화 끝
-    98.29s  agent 발화 끝
+     0.00s  user  발화 시작: I need to find a good Italian restaurant nearby.
+     2.24s  <ret> 발화 (turn1 첫 프레임)
+     2.48s  agent 발화 시작: <ret> There are a couple of Italian restaurants close by. Be
+     2.48s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.72s]: (tool result) {"restaurants": [{"name": "Bella Notte", "address": "123
+     2.58s  user  발화 끝
+     9.20s  agent 발화 끝
+     9.50s  user  발화 시작: That sounds lovely. Can you make a reservation for two at se
+    13.53s  <ret> 발화 (turn3 첫 프레임)
+    13.69s  agent 발화 시작: <ret> I’ve reserved a table for two at Bella Notte at seven 
+    13.69s  ⚡SPAN 주입 [d'=1.92s / d_lead=6.63s]: (tool result) {"confirmation id": "BN7892", "restaurant name": "Bella 
+    13.76s  user  발화 끝
+    18.40s  user  발화 시작: Yeah.
+    19.02s  user  발화 끝
+    20.32s  agent 발화 끝
+    20.89s  user  발화 시작: Perfect. And uh, what's the weather like there tonight?
+    23.90s  <ret> 발화 (turn6 첫 프레임)
+    24.14s  agent 발화 시작: <ret> It looks like it will be a pleasant evening — the temp
+    24.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) {"temperature": 22.5, "humidity": 68, "wind speed": 7.2}
+    24.26s  user  발화 끝
+    29.02s  user  발화 시작: Yeah.
+    29.46s  user  발화 끝
+    31.85s  agent 발화 시작: It’s wonderful when the weather cooperates with a nice dinne
+    31.93s  agent 발화 끝
+    38.64s  user  발화 시작: Actually, I was thinking about something else. I need to set
+    38.75s  agent 발화 끝
+    43.71s  agent 발화 시작: That’s a thoughtful thing to do. What time would you like me
+    43.79s  user  발화 끝
+    47.37s  user  발화 시작: Yeah.
+    47.86s  user  발화 끝
+    48.61s  user  발화 시작: I was going to say ten am—
+    48.61s  agent 발화 끝
+    50.21s  user  발화 시작: …actually, make that eleven am, she’s usually free then.
+    50.27s  user  발화 끝
+    53.73s  <ret> 발화 (turn14 첫 프레임)
+    53.86s  user  발화 끝
+    54.11s  agent 발화 시작: <ret> Consider it done. I’ve set an alarm for eleven am tomo
+    54.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) {"alarm id": "ALM123", "time": "11:00"}
+    62.45s  user  발화 시작: Thank you. Now, could you search for some information about 
+    62.65s  agent 발화 끝
+    67.22s  <ret> 발화 (turn16 첫 프레임)
+    67.38s  agent 발화 시작: <ret> Eugene O’Neill was a prominent playwright in the ninet
+    67.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: (tool result) Eugene O'Neill was a leading American playwright of the 
+    67.59s  user  발화 끝
+    73.73s  user  발화 시작: That’s interesting. Can you find me a good article about him
+    73.76s  agent 발화 끝
+    76.48s  <ret> 발화 (turn18 첫 프레임)
+    76.72s  agent 발화 시작: <ret> Biography dot com has a detailed biography of Eugene O
+    76.72s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.74s]: (tool result) Eugene O'Neill (1888-1953) was an American playwright an
+    76.91s  user  발화 끝
+    84.28s  user  발화 시작: I think that's all for now. Thanks, Laen.
+    84.46s  agent 발화 끝
+    86.71s  agent 발화 시작: You're very welcome. Sometimes simply naming what feels bloc
+    86.72s  user  발화 끝
+    92.69s  agent 발화 끝

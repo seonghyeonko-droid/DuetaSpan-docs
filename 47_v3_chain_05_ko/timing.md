@@ -4,9 +4,9 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "소우",
+#     "name": "라온",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -18,34 +18,42 @@
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-11-10",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-09-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2025-09-22",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-09-13",
+#       "date": "2026-04-05",
 #       "category": "hobby",
-#       "text": "User is into vintage synth collecting."
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-09-06",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-07-02",
+#       "category": "home",
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-10",
+#       "date": "2026-05-29",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2026-03-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -53,15 +61,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-01-03",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-27",
+#       "date": "2026-01-06",
 #       "title": "Researching a used car",
 #       "bullets": [
 #         "comparing hybrid models",
@@ -71,69 +71,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 이번 주 토요일에 시카고에서 덴버까지 비즈니스석 기차표 좀 알 | S2 아… 그럼, 칠월 이십오일은? | S3 고마워! | S4 이백오십달러면 좀 비싸네… 더 저렴한 곳은 없을까?
+# EXAMINER(FDB-v2) 단계: S1 지금부터 걸어서 이동하는 경로를 알려주세요. 위도 삼십사 점  | S2 혹시 그 카페가 지금 영업하고 있는지 확인할 수 있을까요? | S3 … 혹시 그 근처에 다른 맛집도 있을까요? | S4 그곳까지 가는 가장 빠른 길은 무엇인가요?
 
-     0.00s  user  발화 시작: 이번 주 토요일에 시카고에서 덴버까지 비즈니스석 기차표 좀 알아봐 줘. 혼자 가는 거야.
-     5.29s  <ret> 발화 (turn1 첫 프레임)
-     5.32s  user  발화 끝
-     5.61s  agent 발화 시작: <ret> 음, 죄송해요. 현재 시카고에서 덴버까지 가는 기차편 정보를 찾을 수 없네요. 다른 날짜나 도시를
-     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (no information found)
-    10.81s  user  발화 시작: 응.
-    11.31s  user  발화 끝
-    12.84s  user  발화 시작: 아, 그래? 그럼 칠월 십오일로 해 봐.
-    12.84s  agent 발화 끝
-    15.11s  <ret> 발화 (turn4 첫 프레임)
-    15.34s  agent 발화 시작: <ret> 칠월 십오일도 마찬가지로 정보를 찾을 수 없어요. 혹시 다른 날짜를 생각해 보시겠어요? 아니면, 
-    15.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (no information found)
-    15.41s  user  발화 끝
-    20.95s  user  발화 시작: 아.
-    21.44s  user  발화 끝
-    24.18s  user  발화 시작: 음… 그럼 칠월 이십일은 어때?
-    24.38s  agent 발화 끝
-    26.21s  user  발화 끝
-    26.25s  <ret> 발화 (turn7 첫 프레임)
-    26.32s  agent 발화 시작: <ret> 죄송해요. 칠월 이십일에도 해당 조건에 맞는 기차편이 없네요. 다른 날짜를 알아봐 드릴까요?
-    26.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) No trains found matching your criteria.
-    32.62s  agent 발화 끝
-    33.01s  user  발화 시작: 아… 그럼, 칠월 이십오일은?
-    36.26s  <ret> 발화 (turn9 첫 프레임)
-    36.38s  user  발화 끝
-    36.41s  agent 발화 시작: <ret> 칠월 이십오일에 암트랙 캘리포니아 제퍼 편이 있어요. 오전 여덟시에 출발해서 오후 여섯시에 도착하
-    36.42s  ⚡SPAN 주입 [d'=1.04s / d_lead=10.25s]: (tool result) 1 train found: Amtrak California Zephyr, departs 8:00 AM
-    46.66s  agent 발화 끝
-    46.73s  user  발화 시작: 오, 있네! 그럼 그 기차표 좀 예매해 줘.
-    49.12s  <ret> 발화 (turn11 첫 프레임)
-    49.44s  agent 발화 시작: <ret> 네, 암트랙 캘리포니아 제퍼 편, 시카고에서 덴버, 칠월 이십오일, 비즈니스석, 일인, 예약이 완
-    49.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) Booking confirmed: Amtrak California Zephyr, Chicago to 
-    49.46s  user  발화 끝
-    55.95s  user  발화 시작: 진짜?
-    56.58s  user  발화 끝
-    62.01s  agent 발화 끝
-    63.40s  user  발화 시작: 고마워!
-    64.36s  user  발화 끝
-    64.50s  agent 발화 시작: 천만에요. 새로운 환경에 적응하는 여정은 늘 설렘과 약간의 두려움을 동반하죠. 작은 변화라도, 자신을 믿고 
-    67.52s  user  발화 시작: 음.
-    68.02s  user  발화 끝
-    74.00s  agent 발화 시작: 새로운 시작은 언제나 기회를 가져다 준답니다. 혹시 여행 준비에 필요한 다른 정보가 있으신가요? 숙소나 주변
-    74.23s  agent 발화 끝
-    82.56s  user  발화 시작: 어.
-    83.33s  user  발화 끝
-    85.87s  agent 발화 끝
-    87.69s  user  발화 시작: 음… 덴버 근처에 좋은 호텔 좀 알아봐 줘.
-    90.70s  <ret> 발화 (turn19 첫 프레임)
-    91.01s  agent 발화 시작: <ret> 덴버 브라운 팰리스 호텔 앤 스파가 괜찮은 곳 같아요. 별점은 사 점 오점이고, 일박에 이백오십달
-    91.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.69s]: (tool result) The Brown Palace Hotel & Spa, 4.5 stars, $250/night, 321
-    91.06s  user  발화 끝
-    97.41s  user  발화 시작: 응.
-    97.82s  user  발화 끝
-   104.70s  agent 발화 끝
-   105.17s  user  발화 시작: 이백오십달러면 좀 비싸네… 더 저렴한 곳은 없을까?
-   109.99s  <ret> 발화 (turn22 첫 프레임)
-   110.06s  agent 발화 시작: <ret> 그럼 라 킨타 인 바이 윈덤 덴버 센트럴은 어떠세요? 별점은 삼점이고, 일박에 백이십달러이며, 주
-   110.06s  user  발화 끝
-   110.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) La Quinta Inn by Wyndham Denver Central, 3 stars, $120/n
-   122.63s  agent 발화 끝
-   122.91s  user  발화 시작: 오, 백이십달러면 괜찮네.
-   125.18s  user  발화 끝
-   125.74s  agent 발화 시작: 좋은 선택이에요. 새로운 공간에서 편안하게 머무는 것도 중요한 부분이죠. 여행을 통해 자신을 더 깊이 알아가
-   134.97s  agent 발화 끝
+     0.00s  user  발화 시작: 지금부터 걸어서 이동하는 경로를 알려주세요. 위도 삼십사 점 영 오, 경도 -백십팔 점 이 사에서 위도 삼십
+    12.38s  <ret> 발화 (turn1 첫 프레임)
+    12.57s  user  발화 끝
+    12.69s  agent 발화 시작: <ret> 지금 위치에서 목적지까지는 약 일 점 육킬로미터, 도보로 이십이분 정도 걸립니다. 사우스 브로드웨
+    12.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) {"distance": 1.6, "duration": 22, "route": "Walk north o
+    22.84s  agent 발화 끝
+    23.44s  user  발화 시작: 그 경로에 괜찮은 카페가 있는지 알려줄 수 있을까요?
+    26.50s  <ret> 발화 (turn3 첫 프레임)
+    26.81s  agent 발화 시작: <ret> 출발지 근처에 평점이 사 점 오점인 버브 커피 로스터스라는 카페가 있습니다.
+    26.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) {"results": [{"name": "Verve Coffee Roasters", "vicinity
+    26.87s  user  발화 끝
+    32.45s  user  발화 시작: 그 카페까지 얼마나 걸릴까요?
+    32.46s  agent 발화 끝
+    34.54s  <ret> 발화 (turn5 첫 프레임)
+    34.71s  user  발화 끝
+    34.77s  agent 발화 시작: <ret> 버브 커피 로스터스까지는 약 영 점 삼킬로미터, 걸어서 사분 정도 소요됩니다. 사우스 브로드웨이로
+    34.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: (tool result) {"distance": 0.3, "duration": 4, "route": "Walk north on
+    44.13s  agent 발화 끝
+    44.47s  user  발화 시작: 혹시 그 카페가 지금 영업하고 있는지 확인할 수 있을까요?
+    47.71s  <ret> 발화 (turn7 첫 프레임)
+    47.84s  user  발화 끝
+    48.02s  agent 발화 시작: <ret> 버브 커피 로스터스는 지금 영업 중이고, 오후 여섯시까지 영업합니다.
+    48.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) {"name": "Verve Coffee Roasters", "opening hours": "Open
+    51.02s  user  발화 시작: 정말요?
+    51.84s  user  발화 끝
+    53.20s  agent 발화 끝
+    53.34s  user  발화 시작: 아, 좋은 정보네요. 그런데—
+    55.84s  user  발화 시작: … 혹시 그 근처에 다른 맛집도 있을까요?
+    55.88s  user  발화 끝
+    59.13s  <ret> 발화 (turn11 첫 프레임)
+    59.20s  agent 발화 시작: <ret> 목적지 근처에 평점이 사 점 사점인 그랜드 센트럴 마켓이라는 맛집이 있습니다.
+    59.21s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.47s]: (tool result) {"results": [{"name": "Grand Central Market", "vicinity"
+    59.26s  user  발화 끝
+    64.67s  agent 발화 끝
+    66.26s  user  발화 시작: 그랜드 센트럴 마켓은 어떤 종류의 음식을 파나요?
+    69.13s  <ret> 발화 (turn13 첫 프레임)
+    69.50s  user  발화 끝
+    69.52s  agent 발화 시작: <ret> 그랜드 센트럴 마켓은 다양한 음식을 판매하는 역사적인 푸드 홀입니다. 여러 종류의 음식점을 만나볼
+    69.53s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.60s]: (tool result) {"name": "Grand Central Market", "cuisine": "Various", "
+    77.12s  agent 발화 끝
+    78.15s  user  발화 시작: 그곳까지 가는 가장 빠른 길은 무엇인가요?
+    80.49s  <ret> 발화 (turn15 첫 프레임)
+    80.80s  agent 발화 시작: <ret> 그랜드 센트럴 마켓까지는 약 영 점 육킬로미터, 걸어서 팔분 정도 걸립니다. 브로드웨이 남쪽 방향
+    80.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) {"distance": 0.6, "duration": 8, "route": "Walk south on
+    80.87s  user  발화 끝
+    88.97s  user  발화 시작: 정말 고맙습니다. 덕분에 계획을 세우는 데 도움이 많이 되었어요.
+    89.19s  agent 발화 끝
+    92.89s  user  발화 끝
+    93.03s  agent 발화 시작: 도움이 되었다니 기쁩니다. 즐거운 시간 보내세요.
+    96.27s  agent 발화 끝

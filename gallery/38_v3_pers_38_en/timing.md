@@ -4,102 +4,129 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Grace",
+#     "name": "Sam",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "40s",
-#     "language": "French"
+#     "nationality": "American",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-22",
-#       "category": "home",
-#       "text": "User's home address is 143 Pine Court."
+#       "date": "2026-06-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in May."
 #     },
 #     {
-#       "date": "2025-12-23",
+#       "date": "2026-05-31",
 #       "category": "pet",
 #       "text": "User has a Golden Retriever named Max."
 #     },
 #     {
-#       "date": "2025-11-26",
+#       "date": "2025-09-19",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-08-21",
+#       "category": "work",
+#       "text": "User works as a architect."
+#     },
+#     {
+#       "date": "2025-08-16",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     },
 #     {
-#       "date": "2025-10-20",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-09-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in October."
+#       "date": "2025-07-09",
+#       "category": "home",
+#       "text": "User's home address is 212 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-10",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-27",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2026-03-03",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-03",
+#       "date": "2026-02-02",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
+#     },
+#     {
+#       "date": "2025-10-24",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Brean… that’s an unusual name. Wha | S2 It’s just… everything. He won’t pl | S3 …but is it really *that* bad? All  | S4 I just want him to be happy, and t
+# EXAMINER(FDB-v2) 단계: S1 A life coach? Huh. I was just… fee | S2 …Is it possible I’m just not cut o | S3 I… haven’t really thought about th | S4 It’s just hard to justify, when th
 
-     0.00s  agent 발화 시작: Bonjour, Grace. I’m Brean, and I’m here to offer a little su
-     4.17s  user  발화 시작: Yeah.
-     4.80s  user  발화 끝
-     6.13s  user  발화 시작: Brean… that’s an unusual name. What exactly *do* you do?
-     6.25s  agent 발화 끝
-    10.75s  agent 발화 시작: I help people find ways to connect with their children, mana
-    10.81s  user  발화 끝
-    21.18s  agent 발화 끝
-    21.91s  user  발화 시작: Welll… I’m struggling with screen time. My son, Leo, is glue
-    27.25s  agent 발화 시작: That’s a very common worry, Grace. It’s hard when technology
-    27.33s  user  발화 끝
-    36.90s  agent 발화 끝
-    37.33s  user  발화 시작: It’s just… everything. He won’t play outside, he’s grumpy wh
-    43.00s  agent 발화 시작: It sounds exhausting, trying to balance his needs with what 
-    43.26s  user  발화 끝
-    49.25s  user  발화 시작: …but is it really *that* bad? All the other kids have tablet
-    50.09s  agent 발화 끝
-    54.94s  user  발화 끝
-    54.98s  agent 발화 시작: That's a valid concern, Grace. Feeling included is important
-    66.77s  agent 발화 끝
-    67.58s  user  발화 시작: A balance… like, how much is too much? I don’t even know whe
-    72.13s  agent 발화 시작: There isn’t one right answer, Grace. It depends on Leo’s age
-    72.31s  user  발화 끝
-    79.34s  user  발화 시작: Right.
-    79.98s  user  발화 끝
-    84.09s  agent 발화 끝
-    84.17s  user  발화 시작: I just want him to be happy, and to enjoy being a kid, you k
-    90.10s  user  발화 끝
-    90.23s  agent 발화 시작: That’s a beautiful wish, Grace. It’s a lovely reminder that 
-    99.27s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Sam, it’s lovely to connect with you. I’m Ariana, and 
+     7.79s  agent 발화 끝
+     8.01s  user  발화 시작: A life coach? Huh. I was just… feeling really overwhelmed la
+    14.17s  user  발화 끝
+    14.18s  agent 발화 시작: Overwhelmed is a very common feeling, Sam. It sounds like yo
+    19.42s  user  발화 시작: Nice.
+    20.19s  user  발화 끝
+    23.08s  agent 발화 끝
+    23.88s  user  발화 시작: Just… everything at work. Deadlines, new projects, my boss… 
+    29.98s  agent 발화 시작: It’s understandable that a heavy workload would be stressful
+    30.05s  user  발화 끝
+    34.30s  user  발화 시작: Mhm.
+    34.92s  user  발화 끝
+    39.43s  user  발화 시작: I try, but then something *else* always pops up. It’s never-
+    39.95s  agent 발화 끝
+    44.11s  user  발화 끝
+    44.15s  agent 발화 시작: That feeling of constantly putting out fires can be exhausti
+    53.06s  user  발화 시작: …Is it possible I’m just not cut out for this job, honestly?
+    53.85s  agent 발화 끝
+    56.95s  user  발화 끝
+    57.00s  agent 발화 시작: That’s a very honest question, Sam. Doubting your abilities 
+    59.87s  user  발화 시작: Yeah.
+    60.32s  user  발화 끝
+    63.95s  user  발화 시작: It just feels like everyone else is handling it better.
+    64.04s  agent 발화 끝
+    67.07s  agent 발화 시작: Comparing yourself to others is a natural tendency, but it o
+    67.14s  user  발화 끝
+    71.59s  user  발화 시작: Mm-hmm.
+    72.22s  user  발화 끝
+    75.47s  agent 발화 시작: Focusing on your own progress, and celebrating small wins, c
+    75.60s  agent 발화 끝
+    84.28s  user  발화 시작: Right.
+    84.92s  user  발화 끝
+    87.06s  agent 발화 끝
+    87.36s  user  발화 시작: I… haven’t really thought about that. Just getting through t
+    92.78s  user  발화 끝
+    92.90s  agent 발화 시작: That’s perfectly alright. It's common to lose sight of bigge
+   103.52s  agent 발화 끝
+   104.78s  user  발화 시작: Maybe. I also feel guilty taking time for myself when things
+   109.72s  agent 발화 시작: Guilt is a powerful emotion, and it sounds like you’re carry
+   109.83s  user  발화 끝
+   115.51s  user  발화 시작: Okay.
+   116.29s  user  발화 끝
+   120.64s  agent 발화 끝
+   120.94s  user  발화 시작: It’s just hard to justify, when there’s always more to do.
+   124.64s  agent 발화 시작: I understand that feeling. It's about recognizing that you a
+   124.74s  user  발화 끝
+   133.54s  agent 발화 끝
+   134.13s  user  발화 시작: That’s… a good way to put it. Thanks, Ariana.
+   137.28s  user  발화 끝
+   137.69s  agent 발화 시작: You’re very welcome, Sam. It takes courage to acknowledge th
+   143.94s  agent 발화 끝

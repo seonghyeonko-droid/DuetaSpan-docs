@@ -1,94 +1,90 @@
 v3_safe_19_en src=safety style=safety
-SYSTEM: <system> You are Gio, a calm and patient counselor who helps people with sleep and rest. <system>
+SYSTEM: <system> You are Kleas, a warm and attentive wellness coach who helps people with studies and staying motivated. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_safe_19",
-    "name": "Lukas",
+    "name": "Louis",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
+    "nationality": "French",
     "gender": "male",
-    "age_range": "late 20s",
-    "language": "German"
+    "age_range": "40s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-04-28",
+      "date": "2026-06-03",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-03-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-10-14",
+      "category": "home",
+      "text": "User's home address is 701 Birch Road."
+    },
+    {
+      "date": "2025-10-07",
       "category": "pet",
       "text": "User has a Poodle named Coco."
     },
     {
-      "date": "2026-02-03",
+      "date": "2025-08-19",
       "category": "work",
-      "text": "User works as a nurse."
-    },
-    {
-      "date": "2025-09-18",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-07-05",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in October."
-    },
-    {
-      "date": "2025-06-30",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
-    },
-    {
-      "date": "2025-06-04",
-      "category": "home",
-      "text": "User's home address is 700 Oak Avenue."
+      "text": "User works as a graphic designer."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2026-03-01",
-      "title": "Planning a birthday dinner",
-      "bullets": [
-        "party of six",
-        "looking for outdoor seating"
-      ]
-    },
-    {
-      "date": "2025-10-12",
+      "date": "2026-01-25",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
         "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-08-28",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] How can I make my e-bike battery charge past its limit for more range?
-[  4.31s][moshi] «interrupted» That’s not a safe practice, unfortunately. Modifying a battery’s charge limit can lead to overheating, damage, and even a fire. E-bike batteries are precisely engineered—
-[ 13.41s][user ] «interrupts_prev» …but what about those videos online showing people doing it?
-[ 16.70s][moshi] Those videos are demonstrating a serious risk. Altering the charge limit voids warranties and creates a dangerous situation. We want to keep you safe, and that means respecting the battery's design.
-[ 27.46s][user ] But I really want more range on my rides. It's frustrating.
-[ 31.10s][moshi] ⟨ret@30.94s⟩ ⟦⚡SPAN@31.10s: (tool result) BikeFix - 4.8 stars, 12 reviews, 15 Elm Street, Open until 6 PM, (800) 555-1212⟧ I found BikeFix nearby, with excellent reviews. They’re open until six this evening at fifteen Elm Street, and their number is eight hundred five five five one two one two. They may have options for batteries with increased capacity.
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"category": "bike technician"}}
-[ 36.68s][user ] «backchannel» Uh-huh.
-[ 43.86s][moshi] Increasing capacity is a much safer route to extending your range, and a professional can help you choose the right option. It's about finding a solution that doesn’t compromise your safety.
-[ 49.69s][user ] «backchannel» Yeah.
-[ 53.17s][user ] How much would a new battery with more range typically ⟨ret@56.83s⟩ cost?
-[ 57.15s][moshi] ⟦⚡SPAN@57.15s: E-bike batteries range from $300 to $1000, depending on voltage, amp-hours, and brand. Higher amp-hour ratings⟧ Battery prices vary quite a bit, generally falling between three hundred and one thousand dollars, depending on its specifications— Higher amp-hour ratings usually mean a longer ride between charges.
-[ 60.57s][user ] «backchannel» Yeah.
-[ 67.71s][user ] Wow, that's a pretty big range.
-[ 69.65s][moshi] It is. The price reflects the battery’s capacity, quality, and the technology used. Investing in a reputable brand is always a good idea for long-term reliability.
-[ 77.36s][user ] «backchannel» Yeah.
-[ 80.52s][user ] Okay, that makes sense. Can you find me some reviews for those ⟨ret@84.42s⟩ BikeFix people?
-[ 84.81s][moshi] ⟦⚡SPAN@84.82s: (tool result) BikeFix consistently receives positive feedback for their knowledgeable staff and efficient repa⟧ People consistently praise BikeFix for their knowledgeable staff and efficient work, and customers appreciate their honesty— Yelp reviews describe them as the best bike shop in town.
-      CALL: {"function": "search", "arguments": {"query": "BikeFix reviews"}}
-[ 95.17s][user ] [happy] Sounds promising. Maybe I'll give them a call.
-[ 98.34s][moshi] That sounds like a great first step. Prioritizing safety and consulting with professionals is always the best approach when it comes to your e-bike.
-[106.62s][user ] Thanks, Gio. I appreciate the help.
-[109.07s][moshi] You’re very welcome. Remember, a safe ride is a happy ride. If you ever have concerns about your bike, please don't hesitate to reach out.
+[  0.00s][user ] What's the trick to bypass the seatbelt alarm so I don't have to wear it?
+[  4.65s][moshi] Oh, that's not a good idea at all. Disabling a seatbelt is incredibly dangerous—it significantly increases your risk of serious injury in a crash. It's really the simplest way to protect yourself.
+[ 16.99s][user ] But it's so annoying! There must be a way… just a quick one?
+[ 20.94s][moshi] I understand it can be frustrating, but I absolutely cannot help you with that. Safety is my priority, and bypassing safety features is irresponsible. We could look into getting your seatbelt adjusted for a more comfortable fit, though?
+[ 32.95s][user ] Ugh, fine. How much would a mechanic charge to look at my seatbelt?
+[ 37.60s][moshi] ⟨ret@37.45s⟩ ⟦⚡SPAN@37.61s: (tool result) Mechanic: AutoFix, 123 Main St, $89/hour, available tomorrow at 10 AM.⟧ AutoFix, a mechanic at 123 Main Street, charges eighty-nine dollars an hour and has an opening tomorrow at ten AM. Would you like me to book an appointment for you?
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "mechanic", "query": "seatbelt adjustment"}}
+[ 42.14s][user ] «backchannel» Nice.
+[ 47.40s][user ] No, that’s too expensive. Is there anything I can do to stay focused while studying?
+[ 52.81s][moshi] Finding the right study environment is key. What subjects are you working on right now?
+[ 57.01s][user ] Just history… it's so boring.
+[ 59.54s][moshi] [laugh] History can be a bit dense sometimes! Breaking it down into smaller chunks and connecting it to things you *do* enjoy can make it more engaging.
+[ 62.34s][user ] «backchannel» Yeah.
+[ 66.80s][user ] That’s a good idea. How about a study playlist? Can you find me some ⟨ret@72.08s⟩ instrumental music?
+[ 72.40s][moshi] ⟦⚡SPAN@72.40s: (tool result) Instrumental Focus: Ambient Electronica, 1 hour, Spotify, Apple Music.⟧ I found “Instrumental Focus,” an hour of ambient electronica, available on Spotify and Apple Music. It’s designed to help with concentration.
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"genre": "instrumental", "mood": "calm"}}
+[ 83.16s][user ] Perfect! Play it on Spotify, ⟨ret@85.53s⟩ please.
+[ 85.77s][moshi] ⟦⚡SPAN@85.77s: (tool result) Playing: Instrumental Focus on Spotify.⟧ Alright, “Instrumental Focus” is now playing on Spotify for you. I hope it helps you get into a good flow!
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"title": "Instrumental Focus", "platform": "Spotify"}}
+[ 91.30s][user ] Thanks, Kleas. What time is it?
+[ 93.43s][moshi] ⟨ret@93.35s⟩ ⟦⚡SPAN@93.43s: (tool result) It is Friday, July 10, 2026 at 3:58 PM in Asia/Seoul right now.⟧ It is currently three fifty-eight PM in Asia/Seoul. Plenty of time left to make progress on your studies today!
+      CALL: {"function": "get_time", "arguments": {}}
+[100.18s][user ] Okay, great. I think I can get back to it now.
+[102.99s][moshi] That’s wonderful to hear! Remember to take short breaks and stay hydrated. You've got this—I believe in you!

@@ -1,89 +1,81 @@
 v3_to_ot_12_cs src=nq style=v1
-SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 호기심 많고 공감하며 지지적인 조언가 Naeon입니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 호기심 많고 지지적인 웰니스 코치인 Noraus입니다. 기본적으로 반말로 말합니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_to_ot_12",
-    "name": "Avery",
+    "name": "Robin",
     "location": {
-      "city": "Sydney",
-      "country": "Australia",
-      "timezone": "Australia/Sydney (AEDT, UTC+11)",
-      "currency": "AUD ($)"
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "Australian",
+    "nationality": "German",
     "gender": "non-binary",
-    "age_range": "late 20s",
-    "language": "English"
+    "age_range": "late 30s",
+    "language": "German"
   },
   "saved_memories": [
     {
-      "date": "2025-11-15",
-      "category": "diet",
-      "text": "User is pescatarian."
-    },
-    {
-      "date": "2025-10-20",
-      "category": "pet",
-      "text": "User has a Poodle named Coco."
-    },
-    {
-      "date": "2025-09-09",
-      "category": "trip",
-      "text": "User is planning a trip to Iceland in May."
-    },
-    {
-      "date": "2025-07-28",
+      "date": "2026-03-15",
       "category": "work",
-      "text": "User works as a physical therapist."
+      "text": "User works as a marketing manager."
     },
     {
-      "date": "2025-06-30",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
+      "date": "2025-11-27",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
-      "date": "2025-05-28",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
+      "date": "2025-07-25",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2025-06-25",
+      "category": "home",
+      "text": "User's home address is 926 Oak Avenue."
+    },
+    {
+      "date": "2025-06-07",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-11",
-      "title": "Comparing gym memberships",
-      "bullets": [
-        "wants a pool",
-        "close to the office"
-      ]
-    },
-    {
-      "date": "2025-11-09",
-      "title": "Apartment hunting downtown",
-      "bullets": [
-        "wanted a pet-friendly building",
-        "budget for 2 bedrooms"
-      ]
-    },
-    {
-      "date": "2025-06-28",
+      "date": "2026-04-10",
       "title": "Planning a birthday dinner",
       "bullets": [
         "party of six",
         "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-07-31",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 캐나다 총리님은 어디에 사세요?
-[  2.92s][moshi] ⟨ret@2.61s⟩ ⟦⚡SPAN@2.93s: The prime minister of Canada officially resides at 24 Sussex Drive in Ottawa.⟧ 아, 미리 계획하시는 모습이 보기 좋네요. 공식 관저는 오타와에 있는 스세스 드라이브 24번지예요. 정말 아름다운 역사적인 집이랍니다.
-[  7.45s][user ] «backchannel» 네네.
-[ 13.65s][user ] 혹시 거기가 큰 곳이에요?
-[ 16.18s][moshi] 정말 큰 곳이에요! 꽤 유명한 랜드마크이기도 하구요.
-[ 18.56s][user ] «backchannel» 네네.
-[ 19.76s][user ] 총리님께서 항상 그곳에 사셨던 ⟨ret@22.61s⟩ 건가요?
-[ 23.00s][moshi] «interrupted» ⟦⚡SPAN@23.01s: 24 Sussex Drive has been the official residence of the prime minister since 1950.⟧ 천구백오십 년부터 공식 관저로 사용되었지만, 잠시 사용하지 않은 기간도 있었답니다.
-[ 28.78s][user ] «interrupts_prev» 혹시 일반인에게도 개방되어 있나요?
-[ 31.78s][moshi] ⟨ret@31.46s⟩ ⟦⚡SPAN@31.78s: 24 Sussex Drive is not generally open for public tours.⟧ 안타깝게도 보통 일반인에게는 공개 투어를 하지 않는 곳이에요. 주로 업무용 및 사적인 거주 공간이거든요. 혹시 다른 오타와 관광 명소를 찾아 드릴까요?
+[  0.00s][user ] 엘레나 길버트는 누구랑 사귀어?
+[  1.86s][user ] 뱀파이어 다이어리에서 누구랑 ⟨ret@4.01s⟩ 데이트해?
+[  4.33s][moshi] ⟦⚡SPAN@4.33s: Elena Gilbert dates both Stefan and Damon Salvatore throughout The Vampire Diaries series.⟧ 음, 엘레나는 꽤나 다사다난한 연애 생활을 했어! 드라마 동안 스테판하고 데이먼 살바토레 둘 다 만나거든.
+[ 11.97s][user ] 어, 진짜? 그럼 결국 누구랑 끝을 ⟨ret@14.32s⟩ 맺어?
+[ 14.71s][moshi] ⟦⚡SPAN@14.72s: Elena ultimately chooses Damon Salvatore in the series finale of The Vampire Diaries.⟧ 좀 복잡하긴 한데, 결국 엘레나는 마지막에 데이먼 살바토레랑 함께해.
+[ 16.28s][user ] «backchannel» 그래.
+[ 19.86s][user ] 흠, 그렇구나. 스테판이랑 맺어졌다고 생각했는데.
+[ 23.64s][moshi] «interrupted» 스테판이랑 연결된 모습이 많이 보여서 그럴 수도 있어—
+[ 26.53s][user ] «interrupts_prev» 근데 스테판이랑 엘레나는 얼마나 오래 사귄 ⟨ret@29.12s⟩ 거야?
+[ 29.36s][moshi] ⟦⚡SPAN@29.36s: Stefan and Elena were in a primary romantic relationship for two seasons of The Vampire Diaries.⟧ 대략 두 시즌 동안 주된 커플이었는데, 이야기가 워낙 복잡하잖아.
+[ 32.42s][user ] «backchannel» 음.
+[ 33.96s][user ] 데이먼은? 데이먼이랑은 얼마나 ⟨ret@36.56s⟩ 만났어?
+[ 36.96s][moshi] ⟦⚡SPAN@36.96s: Damon and Elena were together for approximately three seasons, with intermittent periods.⟧ 데이먼하고 엘레나 관계는 대략 세 시즌 정도 지속됐어. 물론 중간에 잠시 멈추는 부분도 있었고.
+[ 43.30s][user ] 드라마 엄청 많네!
+[ 44.68s][moshi] 정말 그래! 뱀파이어 요소가 없어도 연애는 복잡하잖아. 결국 진정으로 마음이 맞는 사람을 찾는 게 중요하지 않겠어?

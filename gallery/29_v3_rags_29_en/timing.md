@@ -4,69 +4,72 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Sky",
+#     "name": "Charlotte",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-15",
-#       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "date": "2026-06-08",
+#       "category": "work",
+#       "text": "User works as a architect."
 #     },
 #     {
-#       "date": "2026-01-02",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2026-05-06",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
-#       "date": "2025-11-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "date": "2025-11-24",
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     },
 #     {
-#       "date": "2025-07-07",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2025-06-22",
+#       "date": "2025-09-06",
 #       "category": "home",
-#       "text": "User's home address is 109 Maple Drive."
+#       "text": "User's home address is 150 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-26",
+#       "date": "2025-12-14",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-15",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-10",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
 #         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2026-02-17",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: When do the letters in a word represent a larger idea?
-     3.86s  <ret> 발화 (turn1 첫 프레임)
-     3.94s  user  발화 끝
-     4.18s  agent 발화 시작: <ret> Well, sometimes letters stand for something bigger, yo
-     4.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.22s]: An acronym is a word formed from the initial letters of other words.
-    13.40s  agent 발화 끝
+     0.00s  user  발화 시작: How many rides does Six Flags California have?
+     3.42s  user  발화 끝
+     3.49s  <ret> 발화 (turn1 첫 프레임)
+     3.81s  agent 발화 시작: <ret> Well, it sounds like you're planning a fun day! Six Fl
+     3.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: Six Flags Magic Mountain currently features forty-three thrilling ride
+    12.57s  agent 발화 끝

@@ -4,59 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "Ella",
+#     "name": "Caleb",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "early 20s",
-#     "language": "German"
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "40s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-11",
-#       "category": "home",
-#       "text": "User's home address is 896 Maple Drive."
-#     },
-#     {
-#       "date": "2025-12-14",
+#       "date": "2026-06-12",
 #       "category": "work",
-#       "text": "User works as a marketing manager."
+#       "text": "User works as a accountant."
 #     },
 #     {
-#       "date": "2025-12-10",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "date": "2026-01-05",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-05-27",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-07-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-06-20",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in March."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-05-27",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-12",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-07",
+#       "date": "2026-05-14",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
@@ -66,37 +50,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you remember what we were talki | S2 I was wondering… what did the… | S3 …principal do in The Breakfast Clu | S4 I guess so. It sounds stressful. W
+# EXAMINER(FDB-v2) 단계: S1 Hi Klean, I'm trying to remember a | S2 It's a duet, and I think it starts | S3 I need to book a doctor's appointm | S4 Yes, please book it.
 
-     0.00s  user  발화 시작: Do you remember what we were talking about last week?
-     3.05s  user  발화 끝
-     3.21s  agent 발화 시작: I do! [2026-07-03] You mentioned feeling stuck in your curre
-     9.29s  agent 발화 끝
-     9.32s  user  발화 시작: That’s right. I’m still feeling that way, actually.
-    12.57s  agent 발화 시작: That’s understandable; career crossroads can be unsettling. 
-    12.65s  user  발화 끝
-    14.20s  user  발화 시작: Yeah.
-    14.74s  user  발화 끝
-    18.18s  agent 발화 끝
-    18.50s  user  발화 시작: I was wondering… what did the…
-    21.22s  user  발화 끝
-    22.15s  user  발화 시작: …principal do in The Breakfast Club?
-    24.17s  <ret> 발화 (turn7 첫 프레임)
-    24.32s  agent 발화 시작: <ret> The film features Richard Vernon, played by Edward Jam
-    24.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: Edward James Olmos portrayed Richard Vernon, the assistant principal w
-    24.50s  user  발화 끝
-    28.89s  user  발화 시작: …was he a strict disciplinarian, or just… annoying?
-    29.64s  agent 발화 끝
-    33.36s  agent 발화 시작: He definitely leaned towards strict, and had a rather imposi
-    33.52s  user  발화 끝
-    36.85s  user  발화 시작: Right.
-    37.48s  user  발화 끝
-    38.09s  agent 발화 시작: He believed strongly in rules and order, and wasn't afraid t
-    38.14s  agent 발화 끝
-    47.88s  user  발화 시작: I guess so. It sounds stressful. What was the weather like t
-    48.02s  agent 발화 끝
-    52.21s  <ret> 발화 (turn13 첫 프레임)
-    52.27s  agent 발화 시작: <ret> Right now, it’s 23.0°C with 74% humidity and a wind sp
-    52.29s  ⚡SPAN 주입 [d'=0.96s / d_lead=10.34s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    52.51s  user  발화 끝
-    62.61s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Klean, I'm trying to remember a song from a Salman Khan m
+     4.62s  user  발화 끝
+     4.81s  agent 발화 시작: Hello! It’s lovely to chat. I can certainly help with that. 
+    11.16s  agent 발화 끝
+    11.23s  user  발화 시작: Tumko Na Bhool Paayenge, I think. Do you know the songs?
+    14.74s  <ret> 발화 (turn3 첫 프레임)
+    15.13s  agent 발화 시작: <ret> That film’s music was composed by Himesh Reshammiya, a
+    15.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: Tumko Na Bhool Paayenge's soundtrack features music composed by Himesh
+    15.26s  user  발화 끝
+    21.26s  user  발화 시작: Um, is there a really sad song in it?
+    21.37s  agent 발화 끝
+    23.76s  agent 발화 시작: There are several emotional tracks.
+    23.85s  user  발화 끝
+    25.54s  user  발화 시작: It's a duet, and I think it starts with something like… "Kya
+    25.98s  agent 발화 끝
+    30.39s  <ret> 발화 (turn7 첫 프레임)
+    30.70s  agent 발화 시작: <ret> The song you’re thinking of is “Kya Hua Tujhe”, sung b
+    30.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: "Kya Hua Tujhe" is a song from the 2002 Bollywood film Tumko Na Bhool 
+    30.91s  user  발화 끝
+    32.35s  user  발화 시작: Yeah.
+    32.99s  user  발화 끝
+    36.12s  agent 발화 끝
+    36.18s  user  발화 시작: What's the weather like in Mumbai right now?
+    38.82s  <ret> 발화 (turn10 첫 프레임)
+    38.89s  agent 발화 시작: <ret> It’s currently 28.5 degrees Celsius in Mumbai, with pa
+    38.90s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.69s]: (tool result) 28.5°C, humidity 82%, wind 11.2 km/h, partly cloudy.
+    39.09s  user  발화 끝
+    46.58s  agent 발화 끝
+    48.65s  user  발화 시작: I need to book a doctor's appointment next week.
+    51.45s  agent 발화 시작: I can help with that! Do you have a preferred doctor or spec
+    51.61s  user  발화 끝
+    54.30s  user  발화 시작: Mm-hmm.
+    54.94s  user  발화 끝
+    55.57s  agent 발화 끝
+    57.33s  user  발화 시작: Just a general check-up is fine.
+    59.55s  user  발화 끝
+    59.65s  <ret> 발화 (turn15 첫 프레임)
+    59.87s  agent 발화 시작: <ret> Dr. Anya Sharma has an opening next Tuesday at 10:00 A
+    59.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Dr. Anya Sharma, General Practitioner, available Tuesday
+    65.34s  agent 발화 끝
+    65.55s  user  발화 시작: Yes, please book it.
+    66.83s  <ret> 발화 (turn17 첫 프레임)
+    66.91s  agent 발화 시작: <ret> Wonderful! Your appointment with Dr. Sharma is confirm
+    66.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: (tool result) Appointment confirmed with Dr. Anya Sharma for Tuesday, 
+    67.16s  user  발화 끝
+    76.47s  agent 발화 끝
+    78.07s  user  발화 시작: That's great. Thanks, Klean.
+    80.42s  agent 발화 시작: You're very welcome! Prioritizing your health is a wonderful
+    80.52s  user  발화 끝
+    88.86s  agent 발화 끝

@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Ava",
+#     "name": "Rowan",
 #     "location": {
 #       "city": "Berlin",
 #       "country": "Germany",
@@ -12,145 +12,107 @@
 #       "currency": "EUR (€)"
 #     },
 #     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "early 20s",
 #     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-07",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "date": "2026-06-24",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-11-20",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
-#     },
-#     {
-#       "date": "2025-07-29",
+#       "date": "2025-12-23",
 #       "category": "home",
-#       "text": "User's home address is 316 Oak Avenue."
+#       "text": "User's home address is 797 Oak Avenue."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Italian."
+#     },
+#     {
+#       "date": "2025-06-17",
+#       "category": "hobby",
+#       "text": "User is into marathon training."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-29",
+#       "date": "2026-01-23",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2026-03-08",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-06",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m thinking of going to Chicago,  | S2 That sounds good. Can you show me  | S3 I remember reading something about | S4 I'm also thinking of checking out 
+# EXAMINER(FDB-v2) 단계: S1 I’d like one ticket to The Lion… | S2 And, uh, is it far from the Hollyw | S3 That sounds good. What time does i | S4 What about getting a ride from my 
 
-     0.00s  user  발화 시작: I’m thinking of going to Chicago, and I’d like to see some m
-     7.35s  <ret> 발화 (turn1 첫 프레임)
-     7.43s  agent 발화 시작: <ret> It sounds like you're planning a trip to Chicago, and 
-     7.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.13s]: Chicago's downtown area, known as the Loop, has several museums within
-     7.51s  user  발화 끝
-    14.62s  user  발화 시작: Okay.
-    15.44s  user  발화 끝
-    20.55s  agent 발화 끝
-    20.63s  user  발화 시작: Oh, that sounds lovely. What's the closest one to, say, Mill
-    24.86s  <ret> 발화 (turn4 첫 프레임)
-    25.10s  agent 발화 시작: <ret> The Art Institute of Chicago is the closest museum to 
-    25.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) The Art Institute of Chicago is 0.8 kilometers from Mill
-    25.17s  user  발화 끝
-    29.81s  user  발화 시작: Uh-huh.
-    30.31s  user  발화 끝
-    34.42s  agent 발화 시작: It's a place where you can really lose yourself in creativit
-    34.46s  agent 발화 끝
-    37.99s  user  발화 시작: Mm-hmm.
-    38.48s  user  발화 끝
-    40.26s  agent 발화 끝
-    40.29s  user  발화 시작: Is it open tomorrow?
-    41.80s  <ret> 발화 (turn9 첫 프레임)
-    42.04s  agent 발화 시작: <ret> Yes, the Art Institute will be open tomorrow, July ele
-    42.04s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.53s]: (tool result) The Art Institute of Chicago is open tomorrow, July 11, 
-    42.23s  user  발화 끝
-    48.58s  agent 발화 끝
-    49.30s  user  발화 시작: Great! And what about restaurants nearby? Somewhere not too 
-    53.36s  <ret> 발화 (turn11 첫 프레임)
-    53.60s  agent 발화 시작: <ret> There are several options! Revival Food Hall is quite 
-    53.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: (tool result) Revival Food Hall has a price range of $ and is 0.3 mile
-    53.74s  user  발화 끝
-    62.32s  agent 발화 끝
-    63.48s  user  발화 시작: That sounds good. Can you show me directions to Revival Food
-    68.82s  <ret> 발화 (turn13 첫 프레임)
-    69.13s  agent 발화 시작: <ret> From the Art Institute, head west on Adams Street, the
-    69.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.64s]: (tool result) Walking directions: Head west on E Adams St, turn right 
-    69.19s  user  발화 끝
-    78.78s  agent 발화 끝
-    80.18s  user  발화 시작: Perfect. I’m also wondering about the weather there tomorrow
-    84.50s  <ret> 발화 (turn15 첫 프레임)
-    84.62s  user  발화 끝
-    84.66s  agent 발화 시작: <ret> Tomorrow in Chicago will be quite pleasant, with a tem
-    84.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: (tool result) The weather in Chicago tomorrow, July 11, 2026, will be 
-    89.40s  user  발화 시작: Really?
-    90.22s  user  발화 끝
-    95.59s  user  발화 시작: That’s nice to know.
-    95.74s  agent 발화 끝
-    96.97s  user  발화 끝
-    97.37s  agent 발화 시작: Sometimes, knowing what to expect can ease a little anxiety,
-   100.69s  user  발화 시작: Yeah.
-   101.33s  user  발화 끝
-   102.83s  agent 발화 끝
-   102.91s  user  발화 시작: I remember reading something about a famous sculpture in Mil
-   108.36s  <ret> 발화 (turn21 첫 프레임)
-   108.60s  agent 발화 시작: <ret> Ah, yes, “The Bean”! It’s officially called Cloud Gate
-   108.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.08s]: Cloud Gate, nicknamed “The Bean” because of its shape, is a public scu
-   108.75s  user  발화 끝
-   115.32s  user  발화 시작: Mm-hmm.
-   115.82s  user  발화 끝
-   117.68s  agent 발화 끝
-   117.73s  user  발화 시작: I think I saw a picture of it once. What year was it install
-   120.92s  <ret> 발화 (turn24 첫 프레임)
-   121.32s  agent 발화 시작: <ret> Cloud Gate was installed in Millennium Park back in tw
-   121.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: Cloud Gate was installed in Millennium Park in 2006.
-   121.52s  user  발화 끝
-   128.04s  agent 발화 끝
-   128.18s  user  발화 시작: That’s a long time ago.
-   129.78s  agent 발화 시작: It’s amazing how quickly time passes, isn't it? Sometimes a 
-   129.88s  user  발화 끝
-   135.89s  agent 발화 끝
-   138.24s  user  발화 시작: I'm also thinking of checking out Wrigleyville.
-   140.97s  user  발화 끝
-   140.99s  agent 발화 시작: Wrigleyville is a vibrant neighborhood, known for its lively
-   146.78s  agent 발화 끝
-   146.93s  user  발화 시작: Is there anything happening there tomorrow?
-   149.61s  <ret> 발화 (turn30 첫 프레임)
-   149.70s  user  발화 끝
-   149.77s  agent 발화 시작: <ret> Yes, the Chicago Cubs are playing the St. Louis Cardin
-   149.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Chicago Cubs vs. St. Louis Cardinals at Wrigley Field, J
-   152.37s  user  발화 시작: Yeah.
-   152.81s  user  발화 끝
-   155.79s  agent 발화 끝
-   156.04s  user  발화 시작: That sounds fun!
-   157.76s  agent 발화 시작: It’s wonderful to find something that sparks your interest a
-   157.83s  user  발화 끝
-   163.31s  agent 발화 끝
+     0.00s  user  발화 시작: I’d like one ticket to The Lion…
+     2.59s  user  발화 끝
+     3.71s  user  발화 시작: …King on May first in Los Angeles.
+     6.69s  <ret> 발화 (turn2 첫 프레임)
+     6.77s  agent 발화 시작: <ret> Wonderful! I’ve secured one ticket to The Lion King fo
+     6.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.56s]: (tool result) Confirmation: LIONKING-LA-20260501-001
+     6.84s  user  발화 끝
+    15.99s  user  발화 시작: Exactly.
+    17.09s  user  발화 끝
+    19.12s  user  발화 시작: That’s great. Um, what’s the weather like there that day?
+    19.34s  agent 발화 끝
+    22.46s  <ret> 발화 (turn5 첫 프레임)
+    22.70s  agent 발화 시작: <ret> It looks like Los Angeles will be quite pleasant on Ma
+    22.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: The weather forecast for Los Angeles on May 1st, 2026 is 24.0°C, humid
+    22.73s  user  발화 끝
+    26.42s  user  발화 시작: Wow.
+    27.37s  user  발화 끝
+    28.86s  agent 발화 끝
+    28.91s  user  발화 시작: And, uh, is it far from the Hollywood Bowl?
+    32.29s  <ret> 발화 (turn8 첫 프레임)
+    32.37s  agent 발화 시작: <ret> The Lion King’s theater is about 8.7 kilometers from t
+    32.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: The distance between The Lion King’s location in Los Angeles and the H
+    32.56s  user  발화 끝
+    39.09s  agent 발화 끝
+    39.75s  user  발화 시작: Can you find me a restaurant near the theater? — I’m thinkin
+    43.73s  <ret> 발화 (turn10 첫 프레임)
+    43.98s  agent 발화 시작: <ret> I found Musso & Frank Grill, an Italian restaurant jus
+    43.98s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.21s]: Musso & Frank Grill is an Italian restaurant located 1.6 km from The L
+    44.01s  user  발화 끝
+    47.34s  user  발화 시작: Mhm.
+    48.02s  user  발화 끝
+    52.18s  agent 발화 끝
+    53.58s  user  발화 시작: That sounds good. What time does it open?
+    56.03s  <ret> 발화 (turn13 첫 프레임)
+    56.27s  agent 발화 시작: <ret> Musso & Frank Grill opens at 11:00 AM on May first—ple
+    56.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: Musso & Frank Grill opens at 11:00 AM on May 1st, 2026.
+    56.31s  user  발화 끝
+    62.11s  agent 발화 끝
+    63.58s  user  발화 시작: Okay. Can you get me directions from the restaurant to the t
+    67.32s  <ret> 발화 (turn15 첫 프레임)
+    67.60s  user  발화 끝
+    67.64s  agent 발화 시작: <ret> It’s 1.6 kilometers via Cahuenga Boulevard, taking abo
+    67.64s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.05s]: (tool result) Directions: 1.6 km via Cahuenga Blvd, approx. 7 min.
+    72.56s  agent 발화 시작: I’m happy to help you plan a smooth evening.
+    72.69s  agent 발화 끝
+    75.02s  user  발화 시작: That’s really helpful, thank you.
+    75.15s  agent 발화 끝
+    77.09s  user  발화 끝
+    77.56s  agent 발화 시작: You're very welcome! It’s my pleasure to help you settle in 
+    79.27s  user  발화 시작: Yeah.
+    79.99s  user  발화 끝
+    82.55s  agent 발화 끝
+    82.61s  user  발화 시작: What about getting a ride from my hotel? It’s the Beverly Hi
+    86.95s  <ret> 발화 (turn21 첫 프레임)
+    87.18s  agent 발화 시작: <ret> A ride from the Beverly Hills Hotel to the theater is 
+    87.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) Ride estimate: $25.50, ETA 15 min.
+    87.33s  user  발화 끝
+    95.62s  agent 발화 끝
+    95.97s  user  발화 시작: Okay, book that for me, please.
+    97.54s  <ret> 발화 (turn23 첫 프레임)
+    97.94s  agent 발화 시작: <ret> Your ride is confirmed—the code is BH-LK-20260501-R12.
+    97.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Ride confirmed: BH-LK-20260501-R12
+    98.05s  user  발화 끝
+   104.66s  agent 발화 끝

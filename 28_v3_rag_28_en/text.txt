@@ -1,65 +1,78 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are Daeen, a warm and attentive supportive advisor who helps people with studies and staying motivated. <system>
+SYSTEM: <system> You are Zaris, a warm and attentive supportive advisor who helps people with friendships and social life. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_28",
-    "name": "Rowan",
+    "name": "Hannah",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
     },
-    "nationality": "British",
-    "gender": "non-binary",
-    "age_range": "40s",
-    "language": "English"
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "French"
   },
   "saved_memories": [
     {
-      "date": "2026-06-01",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
-    },
-    {
-      "date": "2025-11-06",
-      "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2025-07-24",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in December."
-    },
-    {
-      "date": "2025-06-10",
+      "date": "2026-06-07",
       "category": "work",
-      "text": "User works as a nurse."
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-04-25",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-09-25",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-08-08",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-07-18",
+      "category": "home",
+      "text": "User's home address is 428 Oak Avenue."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-02",
-      "title": "Researching a used car",
+      "date": "2026-01-02",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-12-13",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi, I'm feeling a bit overwhelmed with studying for my exams.
-[  3.66s][moshi] Hi there! It's completely normal to feel that way when exams are approaching. Remember, taking small steps can make a big difference.
-[  6.86s][user ] «backchannel» Mm-hmm.
-[ 12.23s][user ] That’s easy to say… but I just can’t seem to focus. What’s the earliest people used energy ⟨ret@17.72s⟩ from oil?
-[ 18.12s][moshi] ⟦⚡SPAN@18.12s: Oil was first used as an energy source in the fourth century BCE.⟧ People first began using oil as an energy source way back in the fourth century BCE. That’s quite a long time ago, isn’t it?
-[ 25.87s][user ] Fourth century BCE? Wow, that *is* old. What were they even using it for then?
-[ 31.09s][moshi] Well, it wasn’t quite like powering cars, of course! They used it more for lighting and heating, and even in warfare.
-[ 33.40s][user ] «backchannel» Uh-huh.
-[ 36.83s][user ] [laugh] Warfare…
-[ 39.80s][user ] …huh? That's… intense. Maybe I need a break from studying. What's the weather ⟨ret@44.66s⟩ like today?
-[ 45.06s][moshi] ⟦⚡SPAN@45.06s: (tool result) Current conditions: 26.0°C, humidity 65%, wind 7.2 km/h.⟧ It's currently 26.0°C with 65% humidity and a 7.2 km/h wind. A little fresh air could definitely help you refocus.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
+[  0.00s][user ] I was just wondering…
+[  2.92s][user ] …how much did it cost to *make* Titanic? It seems like a ⟨ret@6.42s⟩ lot.
+[  6.74s][moshi] ⟦⚡SPAN@6.74s: The 1997 film Titanic had a production budget of approximately $200 million.⟧ Well, creating something so grand certainly wasn’t cheap—the production budget was around two hundred million dollars.
+[ 13.27s][moshi] It's amazing what goes into a movie of that scale, isn't it?
+[ 14.75s][user ] «backchannel» Yeah.
+[ 17.78s][user ] Two hundred million? Wow, that's… a huge amount of money. Um, was that a record at ⟨ret@23.66s⟩ the time?
+[ 24.06s][moshi] ⟦⚡SPAN@24.06s: At the time of its release, Titanic was the most expensive film ever made.⟧ Actually, it *was* a record—when it came out, Titanic was the single most expensive film ever created.
+[ 26.62s][user ] «backchannel» Wow.
+[ 31.00s][moshi] It really shows the ambition of the project, doesn’t it? I always find it fascinating to see how filmmakers bring such visions to life.
+[ 36.13s][user ] «backchannel» Yeah.
+[ 38.68s][user ] That's incredible. So, do you think a movie could *ever* cost more than that now?
+[ 43.55s][moshi] It’s very likely, considering inflation and modern special effects! Budgets often creep up with each new blockbuster.

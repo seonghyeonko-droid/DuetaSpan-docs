@@ -4,133 +4,115 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "성훈",
+#     "name": "서아",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 20s",
+#     "age_range": "early 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-02",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "date": "2026-04-10",
+#       "category": "home",
+#       "text": "User's home address is 서울 종로구 세종대로 175."
 #     },
 #     {
-#       "date": "2026-05-15",
+#       "date": "2026-02-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
+#     },
+#     {
+#       "date": "2026-02-21",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-01-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in August."
+#     },
+#     {
+#       "date": "2025-11-10",
 #       "category": "pet",
 #       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-31",
-#       "category": "home",
-#       "text": "User's home address is 서울 마포구 성산동 45-6."
-#     },
-#     {
-#       "date": "2026-01-26",
-#       "category": "diet",
-#       "text": "User is vegan."
-#     },
-#     {
-#       "date": "2025-07-29",
-#       "category": "work",
-#       "text": "User works as a graphic designer."
+#       "date": "2025-10-01",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-30",
-#       "title": "Researching a used car",
+#       "date": "2026-05-26",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 차로 사킬로미터 안에 있는 미술관 좀 찾아줘. | S2 아, 벌써 이렇게 됐네. | S3 그냥 친구랑 점심 먹기로 했어. | S4 그 목걸이는 금이었는데…
+# EXAMINER(FDB-v2) 단계: S1 어… 혹시 라이언 킹 뮤지컬 티켓 예매… | S2 아… 확인번호가 뭐였지? 방금 말했었나? | S3 음… 이 근처에 괜찮은 레스토랑 좀 찾아줄래? | S4 혹시… 그곳까지 가는 길 좀 알려줄 수 있어?
 
-     0.00s  user  발화 시작: 시카고에서 차로 사킬로미터 안에 있는 미술관 좀 찾아줘.
-     3.71s  <ret> 발화 (turn1 첫 프레임)
-     3.78s  agent 발화 시작: <ret> 시카고에는 아주 유명한 미술관이 있어요, 바로 시카고 미술관인데, 주소는 사우스 미시간 애비뉴 백
-     3.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) The Art Institute of Chicago is a world-renowned art mus
-     4.02s  user  발화 끝
-     6.29s  user  발화 시작: 어.
-     6.97s  user  발화 끝
-    11.13s  user  발화 시작: 음… 거기는 벌써 가봤어. 다른 데는 없어?
-    11.19s  agent 발화 끝
-    13.98s  <ret> 발화 (turn4 첫 프레임)
-    14.37s  agent 발화 시작: <ret> 그럼, 멕시코 미술관도 있어요, 웨스트 십구번지 천팔백오십이번지에 있습니다.
-    14.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) The National Museum of Mexican Art is located at 1852 We
-    14.65s  user  발화 끝
-    20.15s  user  발화 시작: 멕시코 미술관? 아, 그거 괜찮겠다.
-    20.21s  agent 발화 끝
-    22.96s  user  발화 끝
-    23.09s  agent 발화 시작: 새로운 경험은 늘 좋은 기회가 될 수 있죠.
-    25.67s  agent 발화 끝
-    26.92s  user  발화 시작: 지금 몇 시야?
-    27.85s  <ret> 발화 (turn8 첫 프레임)
-    28.02s  user  발화 끝
-    28.24s  agent 발화 시작: <ret> 지금은 이천이십육년 칠월 십일 금요일 오후 두시 삼십삼분입니다.
-    28.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
-    32.91s  agent 발화 끝
-    32.93s  user  발화 시작: 아, 벌써 이렇게 됐네.
-    34.27s  agent 발화 시작: 시간은 빠르게 흐르는 것 같아요.
-    34.40s  user  발화 끝
-    35.97s  agent 발화 끝
-    37.30s  user  발화 시작: 내일 비 올까?
-    38.00s  <ret> 발화 (turn12 첫 프레임)
-    38.15s  agent 발화 시작: <ret> 내일 시카고 날씨는 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 예상됩니다.
-    38.16s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.26s]: (tool result) The weather in Chicago tomorrow will be 23.0°C, humidity
-    38.40s  user  발화 끝
-    41.25s  user  발화 시작: 음.
-    41.70s  user  발화 끝
-    44.28s  agent 발화 시작: 야외 활동 계획에 참고하시면 좋을 것 같아요.
-    44.41s  agent 발화 끝
-    46.86s  agent 발화 끝
-    46.88s  user  발화 시작: 다음 주 화요일에 약속 있는데…
-    48.91s  agent 발화 시작: 무슨 약속이 있으신가요?
-    49.05s  user  발화 끝
-    50.32s  user  발화 시작: 그냥 친구랑 점심 먹기로 했어.
-    50.39s  agent 발화 끝
-    52.23s  agent 발화 시작: 친구분과 즐거운 시간을 보내세요.
-    52.40s  user  발화 끝
-    54.16s  user  발화 시작: 혹시 그 친구가 전에… 아…
-    54.35s  agent 발화 끝
-    56.51s  user  발화 끝
-    57.48s  user  발화 시작: …내가 이천이십사년에 잃어버린 목걸이에 대해 말했었나?
-    60.70s  <ret> 발화 (turn21 첫 프레임)
-    60.86s  agent 발화 시작: <ret> 이천이십사년 칠월 십오일에 친구분이 목걸이를 잃어버렸다고 말씀하셨네요.
-    60.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: [2024-07-15] 친구가 내 목걸이를 잃어버렸다고 말했어.
-    61.14s  user  발화 끝
-    65.23s  user  발화 시작: 아, 맞아. 그랬지.
-    65.40s  agent 발화 끝
-    66.62s  agent 발화 시작: 기억을 되살려 드려 기쁩니다.
-    66.69s  user  발화 끝
-    68.51s  agent 발화 끝
-    69.76s  user  발화 시작: 그 목걸이는 금이었는데…
-    71.61s  agent 발화 시작: 소중한 물건이었겠네요.
-    71.70s  user  발화 끝
-    73.02s  user  발화 시작: 응, 좀 아까웠어.
-    73.12s  agent 발화 끝
-    74.19s  agent 발화 시작: 가끔은 잃어버린 물건에 대한 아쉬움이 남는 건 당연해요.
-    74.39s  user  발화 끝
-    75.94s  user  발화 시작: 응.
-    76.44s  user  발화 끝
-    77.08s  user  발화 시작: 그럼, 그 미술관… 다시 한번 찾아볼까?
-    77.38s  agent 발화 끝
-    79.86s  agent 발화 시작: 언제든 다시 방문하셔서 새로운 감동을 느껴보시는 것도 좋을 것 같아요.
-    79.99s  user  발화 끝
-    84.22s  agent 발화 끝
+     0.00s  user  발화 시작: 어… 혹시 라이언 킹 뮤지컬 티켓 예매…
+     3.46s  user  발화 끝
+     4.53s  user  발화 시작: …좀 도와줄 수 있어? 오월 일일, 로스앤젤레스에서.
+     7.83s  <ret> 발화 (turn2 첫 프레임)
+     7.90s  agent 발화 시작: <ret> 네, 라이언 킹 뮤지컬 티켓, 오월 일일 로스앤젤레스 공연으로 예매 완료됐습니다. 가격은 백오십달
+     7.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) Event: The Lion King, Date: May 1, 2026, Location: Los A
+     8.04s  user  발화 끝
+    16.11s  user  발화 시작: 어머.
+    16.60s  user  발화 끝
+    19.04s  user  발화 시작: 어… 잠깐만. 오월 일일이 아니라 이일로 바꿔줄 수 있어?
+    19.17s  agent 발화 끝
+    23.64s  <ret> 발화 (turn5 첫 프레임)
+    24.04s  agent 발화 시작: <ret> 네, 변경된 날짜인 오월 이일로 다시 예매 완료됐습니다. 가격은 백육십달러이고, 확인 번호는 엘 
+    24.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) Event: The Lion King, Date: May 2, 2026, Location: Los A
+    24.18s  user  발화 끝
+    33.08s  agent 발화 끝
+    33.35s  user  발화 시작: 아… 확인번호가 뭐였지? 방금 말했었나?
+    36.15s  agent 발화 시작: 네, 방금 말씀드렸어요. 확인 번호는 엘 케이 오 이 엘 에이 이 육입니다.
+    36.40s  user  발화 끝
+    38.21s  user  발화 시작: 그치.
+    38.71s  user  발화 끝
+    41.34s  agent 발화 끝
+    42.66s  user  발화 시작: 엇, 고마워. 그럼… 로스앤젤레스 날씨는 어때?
+    46.38s  <ret> 발화 (turn10 첫 프레임)
+    46.59s  user  발화 끝
+    46.78s  agent 발화 시작: <ret> 로스앤젤레스 날씨는 이십오 점 오도이고, 습도는 육십팔%, 바람은 시속 칠 점 이킬로미터로 맑은 
+    46.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Los Angeles: 25.5°C, humidity 68%, wind 7.2 km/h, clear 
+    51.78s  user  발화 시작: 진짜?
+    52.51s  user  발화 끝
+    54.89s  agent 발화 끝
+    55.13s  user  발화 시작: 음… 이 근처에 괜찮은 레스토랑 좀 찾아줄래?
+    58.45s  <ret> 발화 (turn13 첫 프레임)
+    58.69s  user  발화 끝
+    58.85s  agent 발화 시작: <ret> 로스앤젤레스 근처에는 무쏘 & 프랭크 그릴, 필리페 더 오리지널, 인앤아웃 버거 같은 레스토랑들이
+    58.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: (tool result) Restaurants near Los Angeles: Musso & Frank Grill, Phili
+    67.94s  agent 발화 끝
+    69.16s  user  발화 시작: 햄버거! 인앤아웃 버거 찾아줘.
+    71.21s  <ret> 발화 (turn15 첫 프레임)
+    71.52s  user  발화 끝
+    71.52s  agent 발화 시작: <ret> 인앤아웃 버거, 로스앤젤레스 선셋 대로 칠천구번지에 있어요. 평점은 오점 만점에 사 점 오점이고,
+    71.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.94s]: (tool result) In-N-Out Burger - Los Angeles: 7009 Sunset Blvd, Los Ang
+    80.47s  agent 발화 끝
+    81.59s  user  발화 시작: 혹시… 그곳까지 가는 길 좀 알려줄 수 있어?
+    84.00s  <ret> 발화 (turn17 첫 프레임)
+    84.31s  agent 발화 시작: <ret> 선셋 대로를 따라가시면 인앤아웃 버거까지 약 십오분 정도 걸립니다. 길 안내를 보내드릴까요?
+    84.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) Directions to In-N-Out Burger - 7009 Sunset Blvd, Los An
+    84.41s  user  발화 끝
+    88.00s  user  발화 시작: 와.
+    88.62s  user  발화 끝
+    90.05s  user  발화 시작: 응, 부탁해.
+    90.15s  agent 발화 끝
+    90.96s  agent 발화 시작: 네, 길 안내를 보내드렸습니다. 즐거운 시간 보내세요!
+    91.19s  user  발화 끝
+    93.96s  agent 발화 끝

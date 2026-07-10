@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_chain_05",
-#     "name": "Morgan",
+#     "name": "Casey",
 #     "location": {
 #       "city": "Berlin",
 #       "country": "Germany",
@@ -13,121 +13,109 @@
 #     },
 #     "nationality": "German",
 #     "gender": "non-binary",
-#     "age_range": "40s",
+#     "age_range": "50s",
 #     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-05",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
-#     },
-#     {
-#       "date": "2025-11-12",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-10-10",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
-#     },
-#     {
-#       "date": "2025-09-22",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
-#     },
-#     {
-#       "date": "2025-07-09",
+#       "date": "2026-04-05",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
+#     },
+#     {
+#       "date": "2025-09-06",
+#       "category": "work",
+#       "text": "User works as a accountant."
+#     },
+#     {
+#       "date": "2025-08-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in May."
+#     },
+#     {
+#       "date": "2025-07-02",
+#       "category": "home",
+#       "text": "User's home address is 91 Birch Road."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-23",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-30",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-08-01",
+#       "date": "2026-03-21",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2026-01-06",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-04",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I want a business class train from | S2 Perfect! Uh, what's the weather li | S3 Oh, Snooze sounds good. Can you ma | S4 I guess so. I’m still a little ner
+# EXAMINER(FDB-v2) 단계: S1 Give me walking directions from th | S2 Okay, perfect. And what’s the weat | S3 Great, thanks. I also need to book | S4 Can you reserve a table for two at
 
-     0.00s  user  발화 시작: I want a business class train from Chicago to Denver on Apri
-     4.75s  <ret> 발화 (turn1 첫 프레임)
-     4.99s  agent 발화 시작: <ret> There’s a business class train leaving Chicago for Den
-     4.99s  ⚡SPAN 주입 [d'=1.52s / d_lead=10.11s]: (tool result) Chicago to Denver, April 22, 2026, business class, one p
-     5.19s  user  발화 끝
-    12.32s  user  발화 시작: Yeah.
-    12.95s  user  발화 끝
-    15.10s  agent 발화 끝
-    15.10s  user  발화 시작: That sounds good. Can you get me a ticket for that one?
-    17.60s  <ret> 발화 (turn4 첫 프레임)
-    17.84s  agent 발화 시작: <ret> I’ve secured your business class ticket on train one t
-    17.84s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.90s]: (tool result) Train 123, Chicago-Denver, 2026-04-22, business, 1 passe
-    17.97s  user  발화 끝
-    24.67s  user  발화 시작: Right.
-    25.31s  user  발화 끝
-    26.74s  agent 발화 끝
-    26.86s  user  발화 시작: Perfect! Uh, what's the weather like in Denver that day?
-    30.37s  <ret> 발화 (turn7 첫 프레임)
-    30.52s  agent 발화 시작: <ret> Denver on April twenty-second… it’s looking like sunsh
-    30.53s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.78s]: Denver, Colorado on April 22, 2026: 21.1°C, humidity 38%, wind 8.9 km/
-    30.70s  user  발화 끝
-    36.30s  agent 발화 끝
-    36.32s  agent 발화 시작: It'll be a lovely day in Denver — expect sunshine, clear ski
-    39.31s  user  발화 시작: Mm-hmm.
-    40.08s  user  발화 끝
-    45.81s  agent 발화 시작: I’m glad to hear that sounds good.
-    45.96s  agent 발화 끝
-    47.87s  user  발화 시작: I’m wondering, what are some good restaurants near Union Sta
-    48.07s  agent 발화 끝
-    51.54s  <ret> 발화 (turn12 첫 프레임)
-    51.84s  user  발화 끝
-    51.85s  agent 발화 시작: <ret> There are a few highly-rated restaurants near Union St
-    51.86s  ⚡SPAN 주입 [d'=1.36s / d_lead=12.15s]: (tool result) Restaurants near Union Station, Denver: Stoic & Genuine 
-    63.99s  agent 발화 끝
-    64.07s  user  발화 시작: Oh, Snooze sounds good. Can you make a reservation there for
-    69.14s  <ret> 발화 (turn14 첫 프레임)
-    69.48s  user  발화 끝
-    69.53s  agent 발화 시작: <ret> I’ve booked a table for one at Snooze for nine AM on A
-    69.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Snooze, Denver, 2026-04-22, 9:00 AM, 1 person, reservati
-    78.40s  user  발화 시작: That’s fantastic, thank you so much!
-    78.43s  agent 발화 끝
-    80.52s  agent 발화 시작: You’re very welcome! It sounds like you have a wonderful tri
-    80.66s  user  발화 끝
-    84.86s  agent 발화 시작: Remember, transitions can be a little daunting, but with a b
-    85.05s  agent 발화 끝
-    90.29s  user  발화 시작: Wow.
-    90.83s  user  발화 끝
-    95.39s  agent 발화 끝
-    95.55s  user  발화 시작: I guess so. I’m still a little nervous about moving.
-    98.78s  user  발화 끝
-    98.83s  agent 발화 시작: It's perfectly normal to feel nervous about a big change. Ac
-   104.00s  user  발화 시작: Yeah, yeah.
-   104.96s  user  발화 끝
-   106.06s  agent 발화 끝
-   106.12s  user  발화 시작: That’s… true. Thank you, Bunami.
-   108.88s  user  발화 끝
-   108.91s  agent 발화 시작: Anytime. Remember, taking these steps is about building the 
-   117.80s  agent 발화 끝
+     0.00s  user  발화 시작: Give me walking directions from thirty-four point zero five 
+    13.78s  <ret> 발화 (turn1 첫 프레임)
+    14.02s  agent 발화 시작: <ret> Walking will take about forty-four minutes—
+    14.02s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.86s]: (tool result) {"distance": 2135, "duration": 2642, "route": "Walk nort
+    14.20s  user  발화 끝
+    16.28s  user  발화 시작: …can you tell me if there’s a coffee shop along that route?
+    16.89s  agent 발화 끝
+    18.90s  <ret> 발화 (turn3 첫 프레임)
+    19.14s  agent 발화 시작: <ret> There's a Starbucks about six hundred meters from your
+    19.14s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.93s]: (tool result) {"results": [{"name": "Starbucks", "vicinity": "800 S Br
+    19.23s  user  발화 끝
+    25.07s  agent 발화 끝
+    25.09s  user  발화 시작: Okay, perfect. And what’s the weather like there right now?
+    28.29s  <ret> 발화 (turn5 첫 프레임)
+    28.45s  agent 발화 시작: <ret> It’s currently twenty-four point four degrees Celsius 
+    28.45s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.81s]: (tool result) "24.4°C, humidity 65%, wind 8.0 km/h"
+    28.61s  user  발화 끝
+    35.27s  agent 발화 끝
+    35.46s  user  발화 시작: That sounds pleasant. Can you remind me of my appointment wi
+    39.20s  <ret> 발화 (turn7 첫 프레임)
+    39.45s  agent 발화 시작: <ret> You have an appointment with Dr. Lee at three o’clock 
+    39.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [2026-07-15] I have an appointment with Dr. Lee at 3:00 PM.
+    39.62s  user  발화 끝
+    43.86s  user  발화 시작: Great, thanks. I also need to book a table for dinner tonigh
+    43.94s  agent 발화 끝
+    47.70s  user  발화 끝
+    47.98s  agent 발화 시작: Do you have a specific restaurant in mind, or a type of cuis
+    49.84s  user  발화 시작: Yeah.
+    50.28s  user  발화 끝
+    52.38s  agent 발화 끝
+    52.54s  user  발화 시작: Italian would be nice, somewhere near downtown.
+    54.97s  <ret> 발화 (turn12 첫 프레임)
+    55.37s  agent 발화 시작: <ret> Osteria Mozza is a highly-rated Italian restaurant dow
+    55.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.61s]: (tool result) {"restaurants": [{"name": "Osteria Mozza", "address": "6
+    55.50s  user  발화 끝
+    62.87s  user  발화 시작: Can you reserve a table for two at seven thirty tonight?
+    62.98s  agent 발화 끝
+    66.00s  <ret> 발화 (turn14 첫 프레임)
+    66.11s  user  발화 끝
+    66.15s  agent 발화 시작: <ret> I’ve reserved a table for two at Osteria Mozza for sev
+    66.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: (tool result) {"confirmation id": "RM7829"}
+    75.00s  user  발화 시작: Wonderful, thank you so much for your help.
+    75.01s  agent 발화 끝
+    77.24s  agent 발화 시작: You’re very welcome. Remember, even small steps toward your 
+    77.25s  user  발화 끝
+    84.61s  agent 발화 끝

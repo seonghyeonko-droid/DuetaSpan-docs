@@ -4,43 +4,51 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "Adam",
+#     "name": "Emma",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "London",
+#       "country": "United Kingdom",
+#       "timezone": "Europe/London (GMT, UTC+0)",
+#       "currency": "GBP (£)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "British",
+#     "gender": "female",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-24",
+#       "date": "2026-01-13",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2025-07-12",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2026-03-10",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-11",
+#       "date": "2025-07-07",
 #       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-12-19",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "date": "2025-07-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-26",
+#       "date": "2026-06-14",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-26",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -48,99 +56,79 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-10-18",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-09-17",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Ariax, I was wondering about th | S2 Oh, so sprinkles is a general term | S3 Okay, so nonpareils are the little | S4 Are they safe though? Edible glitt
+# EXAMINER(FDB-v2) 단계: S1 Hi Dunar, how are you doing today? | S2 Yeah, not bad. Do you… uh… remembe | S3 I was thinking about joining a hik | S4 That makes sense. I’m also a bit w
 
-     0.00s  user  발화 시작: Hi Ariax, I was wondering about those tiny colorful sprinkle
-     5.14s  user  발화 끝
-     5.16s  agent 발화 시작: Hello! It's lovely to chat with you. Sprinkles are such a fu
-    10.31s  user  발화 시작: Yeah, I always wondered what they're actually called.
-    10.43s  agent 발화 끝
-    13.17s  user  발화 끝
-    13.30s  <ret> 발화 (turn3 첫 프레임)
-    13.54s  agent 발화 시작: <ret> Those tiny sprinkles you’re thinking of are actually c
-    13.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: Nonpareils are small, spherical confectionery used for decorating bake
-    22.12s  user  발화 시작: Nonpareils, huh? That's a fancy name for something so small.
-    22.72s  agent 발화 끝
-    26.19s  user  발화 끝
-    26.36s  agent 발화 시작: It is a bit, isn't it? Sometimes the simplest things have th
-    29.36s  user  발화 시작: Right.
-    30.18s  user  발화 끝
-    30.57s  agent 발화 끝
-    30.62s  user  발화 시작: Do they have another name, like, a more common one?
-    33.97s  <ret> 발화 (turn8 첫 프레임)
-    34.29s  agent 발화 시작: <ret> In the United States, they're often just called “sprin
-    34.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: In the United States, nonpareils are often simply referred to as "spri
-    34.37s  user  발화 끝
-    40.59s  agent 발화 끝
-    40.66s  user  발화 시작: Oh, so sprinkles is a general term?
-    43.55s  agent 발화 시작: Exactly! It’s like saying “fruit” instead of specifying an a
-    43.61s  user  발화 끝
-    48.15s  user  발화 시작: That makes sense. What about the long, thin sprinkles?
-    48.18s  agent 발화 끝
-    51.99s  agent 발화 시작: Those are called jimmies! They are a classic topping for ice
-    52.12s  user  발화 끝
-    56.90s  agent 발화 끝
-    58.15s  user  발화 시작: Jimmies… I've heard that one before. Are they different ever
-    62.88s  <ret> 발화 (turn14 첫 프레임)
-    63.10s  user  발화 끝
-    63.20s  agent 발화 시작: <ret> They are! "Jimmies" is mostly used in the Northeast—ev
-    63.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: The term "jimmies" for the long, thin sprinkles is primarily used in t
-    71.55s  user  발화 시작: That’s wild! So it depends where you are?
-    71.73s  agent 발화 끝
-    74.79s  user  발화 끝
-    74.89s  agent 발화 시작: Precisely. Language often reflects local customs and history
-    77.57s  user  발화 시작: Mm-hmm.
-    78.30s  user  발화 끝
-    78.81s  user  발화 시작: Okay, so nonpareils are the little balls, jimmies are the lo
-    79.14s  agent 발화 끝
-    85.76s  user  발화 끝
-    85.95s  agent 발화 시작: Oh, absolutely! There’s a whole world of sprinkles out there
-    89.79s  agent 발화 끝
-    89.81s  user  발화 시작: Like what? I feel like I’m learning a lot today.
-    93.21s  agent 발화 시작: There are quins, which are shaped like little rods—and sandi
-    93.41s  user  발화 끝
-    98.15s  agent 발화 시작: …coarse sugar crystals that add a lovely sparkle—they’re gre
-    98.39s  agent 발화 끝
-   101.93s  user  발화 시작: …Wait, sparkle? Do they make glitter sprinkles?
-   102.68s  agent 발화 끝
-   105.21s  agent 발화 시작: Yes, they do! Those are often made with edible glitter—
-   105.31s  user  발화 끝
-   108.59s  user  발화 시작: Oh, wow, edible glitter! That’s… a lot.
-   109.29s  agent 발화 끝
-   112.29s  user  발화 끝
-   112.50s  agent 발화 시작: It certainly is! It's a fun way to make treats extra special
-   117.49s  user  발화 시작: Are they safe though? Edible glitter sounds kind of scary.
-   117.54s  agent 발화 끝
-   121.78s  <ret> 발화 (turn28 첫 프레임)
-   121.86s  agent 발화 시작: <ret> They are! The FDA says edible glitter—made from gum ar
-   121.86s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.69s]: Edible glitter is generally made from gum arabic, cornstarch, and food
-   121.89s  user  발화 끝
-   124.67s  user  발화 시작: Yeah.
-   125.22s  user  발화 끝
-   129.39s  user  발화 시작: Good to know! So, back to the basics, what were the very fir
-   129.54s  agent 발화 끝
-   134.45s  <ret> 발화 (turn31 첫 프레임)
-   134.69s  agent 발화 시작: <ret> The earliest sprinkles were nonpareils, which started 
-   134.69s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.16s]: Nonpareils, originating in the 19th century, were the earliest form of
-   134.91s  user  발화 끝
-   137.23s  user  발화 시작: Yeah, totally.
-   138.52s  user  발화 끝
-   140.85s  agent 발화 끝
-   141.19s  user  발화 시작: That's a long time ago! It's neat to think about where thing
-   145.96s  user  발화 끝
-   146.10s  agent 발화 시작: It truly is. Every little detail has a story behind it, does
-   154.68s  agent 발화 끝
-   154.79s  user  발화 시작: Yeah, that's true. Well, thanks for telling me all about spr
-   159.64s  agent 발화 시작: You're very welcome! I'm glad I could share some sprinkle kn
-   159.74s  user  발화 끝
-   165.38s  agent 발화 끝
+     0.00s  user  발화 시작: Hi Dunar, how are you doing today?
+     2.30s  user  발화 끝
+     2.36s  agent 발화 시작: I’m doing very well, thank you for asking. It’s good to conn
+     7.75s  user  발화 시작: Um, yeah, actually. I was just wondering… who is the chief m
+     7.82s  agent 발화 끝
+    14.35s  <ret> 발화 (turn3 첫 프레임)
+    14.46s  user  발화 끝
+    14.59s  agent 발화 시작: <ret> The current Chief Minister of Maharashtra is Devendra 
+    14.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: Devendra Fadnavis is currently serving as the Chief Minister of Mahara
+    21.13s  agent 발화 시작: It’s important to stay informed about leadership, isn’t it?
+    21.31s  agent 발화 끝
+    24.17s  user  발화 시작: That's right. Hey, quick question—what’s the weather like in
+    24.18s  agent 발화 끝
+    29.08s  <ret> 발화 (turn6 첫 프레임)
+    29.40s  agent 발화 시작: <ret> It’s currently 28.5 degrees Celsius in Mumbai, with 82
+    29.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) 28.5°C, humidity 82%, wind 12.3 km/h, clear skies
+    29.49s  user  발화 끝
+    36.12s  agent 발화 시작: Sounds quite pleasant, actually.
+    36.21s  agent 발화 끝
+    38.06s  agent 발화 끝
+    38.50s  user  발화 시작: Yeah, not bad. Do you… uh… remember what I said…
+    43.08s  user  발화 끝
+    44.54s  user  발화 시작: …about feeling lonely last week?
+    46.52s  <ret> 발화 (turn10 첫 프레임)
+    46.91s  agent 발화 시작: <ret> Yes, I do. On July third, two thousand twenty-six, you
+    46.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.82s]: [2026-07-03] I feel really lonely lately, and it's making it hard to f
+    46.99s  user  발화 끝
+    54.65s  agent 발화 시작: That sounds like a difficult feeling to navigate.
+    54.73s  agent 발화 끝
+    57.09s  user  발화 시작: It is. I’m trying to make more friends, but it’s hard.
+    57.24s  agent 발화 끝
+    61.06s  agent 발화 시작: It absolutely is hard. Building genuine connections takes co
+    61.16s  user  발화 끝
+    66.44s  agent 발화 끝
+    66.69s  user  발화 시작: I was thinking about joining a hiking group. Do you think th
+    71.51s  agent 발화 시작: That sounds like a wonderful idea! Shared activities are a f
+    71.69s  user  발화 끝
+    76.64s  user  발화 시작: Yeah.
+    77.17s  user  발화 끝
+    78.31s  user  발화 시작: Okay, good. Uh, what’s the best way to find hiking groups in
+    78.45s  agent 발화 끝
+    82.62s  <ret> 발화 (turn18 첫 프레임)
+    83.02s  agent 발화 시작: <ret> A popular group, Mumbai Hikers, organizes weekly hikes
+    83.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) Mumbai Hikers is a popular group organizing weekly hikes
+    83.07s  user  발화 끝
+    89.67s  agent 발화 시작: Connecting with others through a shared love of nature sound
+    89.78s  agent 발화 끝
+    92.45s  user  발화 시작: Mm-hmm.
+    93.09s  user  발화 끝
+    93.59s  user  발화 시작: Meetups… okay. That's helpful. Do you have any advice for ma
+    93.79s  agent 발화 끝
+   100.62s  agent 발화 시작: Active listening and genuine curiosity are key. Ask question
+   100.68s  user  발화 끝
+   103.66s  user  발화 시작: Yeah, yeah.
+   104.89s  user  발화 끝
+   106.01s  user  발화 시작: That makes sense. I’m also a bit worried about awkward silen
+   106.22s  agent 발화 끝
+   110.68s  agent 발화 시작: Awkward silences are perfectly normal! Don’t feel pressured 
+   110.73s  user  발화 끝
+   119.40s  agent 발화 끝
+   119.97s  user  발화 시작: Hmm, I never thought of it that way. Thanks, Dunar.
+   123.04s  agent 발화 시작: You’re very welcome. Remember, building friendships is a pro
+   123.19s  user  발화 끝
+   128.50s  agent 발화 끝

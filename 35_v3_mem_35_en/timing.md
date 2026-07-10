@@ -4,85 +4,93 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Rosa",
+#     "name": "Noa",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "German"
+#     "nationality": "French",
+#     "gender": "non-binary",
+#     "age_range": "late 20s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-15",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
-#     },
-#     {
-#       "date": "2026-03-03",
-#       "category": "hobby",
-#       "text": "User is into rock climbing."
-#     },
-#     {
-#       "date": "2026-02-04",
+#       "date": "2026-01-26",
 #       "category": "work",
-#       "text": "User works as a chef."
+#       "text": "User works as a marketing manager."
 #     },
 #     {
-#       "date": "2026-01-19",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in December."
-#     },
-#     {
-#       "date": "2025-09-13",
+#       "date": "2026-01-06",
 #       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-17",
+#       "date": "2025-10-25",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-06-24",
 #       "category": "allergy",
 #       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-19",
-#       "title": "Setting up a home network",
+#       "date": "2026-03-01",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, hi Klami. I’m planning a trip  | S2 Yes, that’s right. I’m thinking ab | S3 Welll… I really like Thai food, ac | S4 Oh, that sounds good! Maybe I shou
+# EXAMINER(FDB-v2) 단계: S1 Hi Arina, nice to meet you too. I' | S2 That’s great, thanks! | S3 …Do they have a set lunch menu? | S4 Excellent. That’s really helpful, 
 
-     0.00s  agent 발화 시작: Hi Rosa, I'm Klami. It's lovely to meet you, and I'm here to
-     4.99s  agent 발화 끝
-     5.79s  user  발화 시작: Um, hi Klami. I’m planning a trip to Vietnam in December.
-     9.64s  <ret> 발화 (turn2 첫 프레임)
-    10.04s  agent 발화 시작: <ret> That’s wonderful, Rosa! You mentioned a Vietnam trip i
-    10.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [2026-01-19] User is planning a trip to Vietnam in December.
-    10.14s  user  발화 끝
-    14.53s  agent 발화 끝
-    14.55s  user  발화 시작: Yes, that’s right. I’m thinking about what to do there.
-    17.81s  agent 발화 시작: Vietnam offers so many amazing experiences. What kind of act
-    17.83s  user  발화 끝
-    23.56s  agent 발화 끝
-    24.05s  user  발화 시작: Welll… I really like Thai food, actually. Is there anything 
-    29.31s  <ret> 발화 (turn6 첫 프레임)
-    29.37s  user  발화 끝
-    29.47s  agent 발화 시작: <ret> Knowing you enjoy Thai cuisine, Vietnamese food will l
-    29.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.52s]: [2026-06-15] User's favorite cuisine is Thai.
-    33.57s  user  발화 시작: Yeah.
-    34.02s  user  발화 끝
-    37.99s  agent 발화 끝
-    40.15s  user  발화 시작: Oh, that sounds good! Maybe I should look for cooking classe
-    43.99s  user  발화 끝
-    44.28s  agent 발화 시작: That's a fantastic idea, Rosa! Learning to cook local dishes
-    51.22s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Noa, I'm Arina! So lovely to meet you.
+     2.96s  agent 발화 끝
+     3.89s  user  발화 시작: Hi Arina, nice to meet you too. I'm looking for a good place
+     9.22s  user  발화 끝
+     9.23s  agent 발화 시작: Do you have any dietary preferences or cuisine types in mind
+    11.66s  user  발화 시작: Yeah.
+    12.25s  user  발화 끝
+    12.46s  agent 발화 끝
+    13.45s  user  발화 시작: Welll… I’m allergic to pollen, so outdoor seating might be t
+    18.75s  <ret> 발화 (turn5 첫 프레임)
+    18.91s  user  발화 끝
+    18.91s  agent 발화 시작: <ret> I recall you mentioned a pollen allergy, so we’ll defi
+    18.91s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.27s]: [2025-06-24] User is allergic to pollen.
+    24.18s  agent 발화 끝
+    24.29s  user  발화 시작: That’s great, thanks!
+    25.57s  <ret> 발화 (turn7 첫 프레임)
+    25.73s  agent 발화 시작: <ret> Le Potager du Marais is a vegan French restaurant with
+    25.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) Le Potager du Marais - Vegan French, indoor seating, 4.5
+    25.81s  user  발화 끝
+    30.34s  user  발화 시작: …Do they have a set lunch menu?
+    31.15s  agent 발화 끝
+    32.83s  user  발화 끝
+    32.88s  <ret> 발화 (turn9 첫 프레임)
+    33.12s  agent 발화 시작: <ret> Yes, they do! They have a set lunch menu for 25 euros,
+    33.12s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.79s]: (tool result) Le Potager du Marais - Lunch menu available, 25 EUR, Mon
+    37.67s  user  발화 시작: Oh.
+    38.12s  user  발화 끝
+    40.68s  agent 발화 시작: I’m glad to hear that fits your needs. It's a lovely spot, v
+    40.91s  agent 발화 끝
+    44.52s  agent 발화 끝
+    44.91s  user  발화 시작: Sounds wonderful! Is it easy to get to by metro?
+    48.72s  <ret> 발화 (turn13 첫 프레임)
+    48.88s  agent 발화 시작: <ret> It is! The closest metro stop is Rambuteau on Line 11,
+    48.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (tool result) Metro: Rambuteau (Line 11). Walk 3 minutes. Estimated tr
+    49.07s  user  발화 끝
+    54.69s  user  발화 시작: Right.
+    55.33s  user  발화 끝
+    57.90s  user  발화 시작: Excellent. That’s really helpful, Arina.
+    58.06s  agent 발화 끝
+    60.72s  agent 발화 시작: You’re very welcome, Noa. I'm happy I could help you find a 
+    60.77s  user  발화 끝
+    68.42s  agent 발화 끝

@@ -4,99 +4,128 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_08",
-#     "name": "Sam",
+#     "name": "Riley",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "American",
+#     "nationality": "French",
 #     "gender": "non-binary",
-#     "age_range": "early 20s",
-#     "language": "English"
+#     "age_range": "40s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-26",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
-#     },
-#     {
-#       "date": "2026-05-04",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-03-13",
-#       "category": "pet",
-#       "text": "User has a Beagle named Rusty."
-#     },
-#     {
-#       "date": "2025-07-17",
+#       "date": "2026-02-13",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2026-02-10",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-01-23",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-01-08",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-06-08",
+#       "category": "home",
+#       "text": "User's home address is 104 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-29",
-#       "title": "Apartment hunting downtown",
+#       "date": "2026-04-03",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-05",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Locate pharmacies inside Toronto. | S2 And what about Rexall? | S3 Perfect! | S4 Thank you.
+# EXAMINER(FDB-v2) 단계: S1 How large is the hosts file? | S2 Yes, please. | S3 Oh, good, you remembered! Can you  | S4 One last thing… what’s the weather
 
-     0.00s  user  발화 시작: Locate pharmacies inside Toronto.
-     2.53s  <ret> 발화 (turn1 첫 프레임)
-     2.92s  agent 발화 시작: <ret> I’ve found two pharmacies in Toronto for you. There’s 
-     2.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: (tool result) {"results": [{"name": "Shoppers Drug Mart", "address": "
-     3.10s  user  발화 끝
-     8.28s  user  발화 시작: Mhm.
-     8.91s  user  발화 끝
-    12.65s  agent 발화 끝
-    12.79s  user  발화 시작: Which one is closest to the CN Tower?
-    15.18s  <ret> 발화 (turn4 첫 프레임)
-    15.41s  agent 발화 시작: <ret> Shoppers Drug Mart is about 2.5 kilometers from the CN
-    15.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) {"distance": 2.5, "duration": 8, "units": "km", "mode": 
-    15.61s  user  발화 끝
-    17.81s  user  발화 시작: Oh.
-    18.45s  user  발화 끝
-    21.13s  agent 발화 시작: It’s a relatively quick trip, and a good option if you’re al
-    21.20s  agent 발화 끝
-    25.88s  user  발화 시작: Yeah, totally.
-    27.40s  user  발화 끝
-    28.04s  agent 발화 끝
-    28.10s  user  발화 시작: And what about Rexall?
-    29.14s  <ret> 발화 (turn9 첫 프레임)
-    29.45s  agent 발화 시작: <ret> Rexall Pharmacy is a little further—about 3.1 kilomete
-    29.46s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.54s]: (tool result) {"distance": 3.1, "duration": 12, "units": "km", "mode":
-    29.71s  user  발화 끝
-    36.37s  user  발화 시작: …Do either of them have a 24-hour service?
-    36.99s  agent 발화 끝
-    39.33s  <ret> 발화 (turn11 첫 프레임)
-    39.40s  agent 발화 시작: <ret> Shoppers Drug Mart is currently open, and they’re open
-    39.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) {"name": "Shoppers Drug Mart", "opening hours": {"open n
-    39.42s  user  발화 끝
-    46.12s  agent 발화 끝
-    46.49s  user  발화 시작: Perfect!
-    47.13s  agent 발화 시작: It’s wonderful to know you’ve found a convenient option. Tak
-    47.31s  user  발화 끝
-    49.17s  user  발화 시작: Right.
-    49.66s  user  발화 끝
-    54.26s  agent 발화 끝
-    54.56s  user  발화 시작: Can you send the address to my phone?
-    56.50s  <ret> 발화 (turn16 첫 프레임)
-    56.73s  agent 발화 시작: <ret> I’ve just sent the address for Shoppers Drug Mart to y
-    56.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) {"status": "success", "message id": "a1b2c3d4"}
-    56.96s  user  발화 끝
-    63.49s  agent 발화 끝
-    64.88s  user  발화 시작: Thank you.
-    65.42s  agent 발화 시작: You’re very welcome. It’s all about making things a little e
-    65.52s  user  발화 끝
-    69.68s  agent 발화 끝
+     0.00s  user  발화 시작: How large is the hosts file?
+     2.12s  <ret> 발화 (turn1 첫 프레임)
+     2.51s  agent 발화 시작: <ret> The hosts file is one hundred and seventy-eight bytes 
+     2.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) /etc/hosts: 178 bytes
+     2.58s  user  발화 끝
+     7.63s  user  발화 시작: And where is it located exactly?
+     7.75s  agent 발화 끝
+     9.68s  <ret> 발화 (turn3 첫 프레임)
+     9.91s  agent 발화 시작: <ret> It’s located at /etc/hosts on most Unix-like systems, 
+     9.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: The hosts file is located at /etc/hosts on most Unix-like systems.
+    10.08s  user  발화 끝
+    16.30s  agent 발화 끝
+    16.50s  user  발화 시작: I see… um, what about my calendar for next Tuesday?
+    20.39s  agent 발화 시작: Next Tuesday is July fourteenth. Do you want me to check for
+    20.66s  user  발화 끝
+    22.65s  user  발화 시작: Yeah.
+    23.32s  user  발화 끝
+    24.10s  agent 발화 끝
+    24.30s  user  발화 시작: Yes, please.
+    25.59s  <ret> 발화 (turn8 첫 프레임)
+    25.90s  user  발화 끝
+    25.91s  agent 발화 시작: <ret> I’m sorry, I don’t have any events scheduled for next 
+    25.91s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.08s]: (no information found)
+    29.95s  user  발화 시작: Oh— that's odd. I thought I had a meeting with Dr. Lee then.
+    29.98s  agent 발화 끝
+    34.81s  user  발화 끝
+    34.91s  agent 발화 시작: That is surprising. Perhaps it wasn't added to your digital 
+    38.66s  user  발화 시작: Maybe. I scheduled it with her… last Wednesday, I think.
+    38.89s  agent 발화 끝
+    41.51s  user  발화 시작: Yeah.
+    42.14s  user  발화 끝
+    43.01s  user  발화 끝
+    43.07s  <ret> 발화 (turn13 첫 프레임)
+    43.14s  agent 발화 시작: <ret> You noted on July first that you scheduled a meeting w
+    43.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: [2026-07-01] I scheduled a meeting with Dr. Lee.
+    46.89s  agent 발화 끝
+    47.52s  user  발화 시작: Oh, good, you remembered! Can you remind Dr. Lee about it?
+    51.19s  agent 발화 시작: I can certainly try to send her a message. What’s her email 
+    51.35s  user  발화 끝
+    53.07s  user  발화 시작: Mm-hmm.
+    53.70s  user  발화 끝
+    54.77s  user  발화 시작: It’s lee.sunhee@med.ac.kr.
+    54.80s  agent 발화 끝
+    58.48s  <ret> 발화 (turn18 첫 프레임)
+    58.87s  agent 발화 시작: <ret> I’ve sent a reminder message to lee.sunhee@med.ac.kr a
+    58.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Message sent to lee.sunhee@med.ac.kr
+    59.03s  user  발화 끝
+    64.65s  user  발화 시작: Perfect! Thanks, Kera.
+    64.89s  agent 발화 끝
+    66.49s  agent 발화 시작: You’re very welcome. I’m glad I could help with that reminde
+    66.59s  user  발화 끝
+    67.96s  user  발화 시작: Okay.
+    68.60s  user  발화 끝
+    70.61s  agent 발화 끝
+    71.19s  user  발화 시작: One last thing… what’s the weather like in Seoul tomorrow?
+    74.48s  <ret> 발화 (turn23 첫 프레임)
+    74.84s  agent 발화 시작: <ret> Tomorrow in Seoul will be twenty-four degrees Celsius 
+    74.89s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.77s]: (tool result) 24.0°C, humidity 70%, wind 6.2 km/h
+    75.03s  user  발화 끝
+    81.09s  user  발화 시작: Sounds pleasant enough.
+    81.61s  agent 발화 끝
+    83.01s  agent 발화 시작: It does indeed sound quite comfortable. Perhaps a good day f
+    83.12s  user  발화 끝
+    87.69s  agent 발화 끝

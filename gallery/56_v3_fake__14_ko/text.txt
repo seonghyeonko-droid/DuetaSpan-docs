@@ -1,64 +1,102 @@
 v3_fake__14_ko src=nq style=v1
-SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 침착하고 인내심 있는 웰니스 코치인 Gunara입니다. 기본적으로 존댓말로 말합니다. <system>
+SYSTEM: <system> 당신은 슬픔과 변화로 어려움을 겪는 사람들을 돕는 사려 깊고 부드러운 말투의 상담사, Laon입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "세빈",
+    "name": "유재",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "non-binary",
-    "age_range": "late 30s",
+    "gender": "male",
+    "age_range": "40s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2025-10-31",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2025-09-03",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in October."
-    },
-    {
-      "date": "2025-08-22",
+      "date": "2026-06-21",
       "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "text": "User is allergic to pollen."
     },
     {
-      "date": "2025-08-18",
+      "date": "2026-05-18",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Mexican."
+      "text": "User's favorite cuisine is Italian."
+    },
+    {
+      "date": "2026-03-12",
+      "category": "work",
+      "text": "User works as a chef."
+    },
+    {
+      "date": "2026-03-04",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-11-07",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2025-10-18",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in December."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-04",
-      "title": "Planning a birthday dinner",
+      "date": "2026-06-11",
+      "title": "Setting up a home network",
       "bullets": [
-        "party of six",
-        "looking for outdoor seating"
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-06-26",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-06-15",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 천칠백육십일년에 스페인과 협정을 맺은 사람이 누구였나요? ⟨ret@3.68s⟩
-[  3.83s][moshi] ⟦⚡SPAN@3.84s: Louis XV.⟧ 천칠백육십일년에 스페인과 협정을 맺은 사람은 루이 십오세였습니다. 어려운 시기에 중요한 결정이었죠.
-[ 12.49s][user ] 루이 십오세는 어떤 왕이었나요?
-[ 15.44s][moshi] ⟨ret@15.29s⟩ ⟦⚡SPAN@15.45s: Louis XV was King of France from 1 September 1715 until his death in 1774.⟧ 루이 십오세는 천칠백십오년 구월 일일부터 천칠백칠십사년 사망할 때까지 프랑스의 왕이었습니다.
-[ 22.60s][user ] 그 시대 프랑스는 어땠나요?
-[ 24.53s][moshi] «interrupted» ⟨ret@24.15s⟩ ⟦⚡SPAN IRRELEVANT@24.55s: The current temperature in Seoul is 28.5°C, with humidity at 65% and a gentle breeze from the northeast at 3.2⟧ 그 시대 프랑스는—
-[ 25.43s][user ] «interrupts_prev» … 그 협정은 프랑스에 어떤 영향을 줬나요?
-[ 28.43s][moshi] 그 협정은 프랑스에게 큰 영향을 미쳤습니다. 칠년 전쟁의 결과로 프랑스는 캐나다를 영국에 넘겨주어야 했습니다.
-[ 32.87s][user ] «backchannel» 네.
-[ 36.04s][user ] 칠년 전쟁은 왜 일어났나요?
-[ 37.83s][moshi] 칠년 전쟁은 여러 복잡한 이유로 일어났지만, 주로 식민지 지배권을 놓고 영국과 프랑스 사이에 벌어진 갈등이었습니다. 힘든 시기였죠.
+[  0.00s][user ] 뉴욕 리얼 하우스위프들 예전 출연진 누가 있었는지 궁금해요. ⟨ret@4.26s⟩
+[  4.41s][moshi] ⟦⚡SPAN@4.42s: Bethenny Frankel was one of the original cast members of The Real Housewives of New York City.⟧ 뉴욕 리얼 하우스위프들 초기 멤버 중에는 베서니 프랭클이 있었어요. 정말 인상 깊은 분이셨죠.
+[ 10.82s][user ] 아, 맞아요. 그분 좀 까칠한 면도 있었지만 재밌었어요.
+[ 14.47s][moshi] ⟨ret@14.32s⟩ ⟦⚡SPAN@14.48s: The capital of France is Paris, a global center for art, fashion, gastronomy and culture.⟧ 맞아요. 때로는 날카로운 면도 있었지만, 보는 사람들을 즐겁게 해주는 매력이 있었죠.
+[ 20.65s][moshi] 프랑스의 수도는 파리인데, 예술과 패션, 미식, 그리고 문화의 중심지라고 할 수 있어요.
+[ 23.47s][user ] «backchannel» 맞아요.
+[ 27.50s][moshi] «interrupted» 파리는 오랜 역사와 아름다운 건축물로도 유명하고요. —
+[ 31.63s][user ] «interrupts_prev» 잠깐만요…
+[ 32.83s][moshi] …많은 사람들의 로망이 되는 도시이기도 해요.
+[ 35.10s][user ] «backchannel» 그렇죠.
+[ 36.07s][user ] 파리는 가본 적 없어요. 혹시 지금 서울 날씨는 어때요?
+[ 39.67s][moshi] ⟨ret@39.60s⟩ ⟦⚡SPAN@39.68s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 지금 서울의 날씨는 섭씨 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터로 불고 있어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 45.01s][user ] «backchannel» 음.
+[ 49.12s][user ] 꽤 덥네요. 저는 요즘 좀 힘든 시간을 보내고 있어요.
+[ 52.58s][moshi] 힘든 시간을 보내고 계시다니 마음이 아프네요. 어떤 어려움이 있으신가요?
+[ 58.41s][user ] 그냥… 모든 게 다 잘 안 풀리는 것 같아요.
+[ 61.62s][moshi] ⟨ret@61.55s⟩ ⟦⚡SPAN@61.63s: Mindfulness is the basic human capacity to fully attend to the present moment.⟧ 모든 게 잘 풀리지 않는다고 느끼시는군요. 그런 감정은 누구에게나 찾아올 수 있어요.
+[ 67.08s][moshi] 현재에 집중하는 마음 챙김은 인간의 기본적인 능력이에요. 지금 이 순간에 온전히 집중하는 거죠.
+[ 74.51s][user ] 마음 챙김이요? 그게 뭔데요?
+[ 76.74s][moshi] 마음 챙김은 현재의 경험을 판단 없이 있는 그대로 받아들이는 연습이에요.
+[ 82.00s][user ] 아… 그런 거군요. 혹시 지금 제 마음 상태에 대해 얘기해도 될까요?
+[ 86.44s][moshi] 언제든 편하게 말씀해주세요. 제가 곁에서 들어드릴게요.

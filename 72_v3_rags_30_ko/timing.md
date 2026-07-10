@@ -4,56 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_30",
-#     "name": "보호",
+#     "name": "시형",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
+#     "gender": "non-binary",
 #     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-13",
+#       "date": "2026-04-30",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Ethiopian."
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-03-13",
-#       "category": "hobby",
-#       "text": "User is into home fermentation."
-#     },
-#     {
-#       "date": "2026-03-09",
-#       "category": "work",
-#       "text": "User works as a chef."
-#     },
-#     {
-#       "date": "2026-03-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2025-10-12",
+#       "date": "2026-03-03",
 #       "category": "home",
-#       "text": "User's home address is 경기 성남시 분당구 판교로 235."
+#       "text": "User's home address is 서울 마포구 성산동 45-6."
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2026-02-02",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
+#     },
+#     {
+#       "date": "2025-06-28",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-01",
-#       "title": "Apartment hunting downtown",
-#       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-20",
+#       "date": "2025-06-25",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -64,9 +56,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 라트비아 외무부 장관이 누구세요?
-     2.81s  <ret> 발화 (turn1 첫 프레임)
-     2.91s  user  발화 끝
-     2.97s  agent 발화 시작: <ret> 라트비아 외무부 장관은 이천십일년부터 에드가르스 링케비치스 씨입니다.
-     2.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: Edgars Rinkēvičs has been the Minister of Foreign Affairs of Latvia si
-     7.78s  agent 발화 끝
+     0.00s  user  발화 시작: 음… nba에서 가장 많은 mvp를 받은 선수는 누구야?
+     4.20s  <ret> 발화 (turn1 첫 프레임)
+     4.35s  agent 발화 시작: <ret> 가장 많은 nba mvp는 커림 압둘-자바 선수가 받았는데, 통산 여섯 번이나 수상하셨어요. 그 
+     4.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: Kareem Abdul-Jabbar has won the most NBA Most Valuable Player awards, 
+     4.44s  user  발화 끝
+    12.18s  agent 발화 끝

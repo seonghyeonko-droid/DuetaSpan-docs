@@ -4,77 +4,92 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "Rowan",
+#     "name": "Hannah",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "British",
-#     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "nationality": "French",
+#     "gender": "female",
+#     "age_range": "late 30s",
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-01",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-11-06",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2025-07-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in December."
-#     },
-#     {
-#       "date": "2025-06-10",
+#       "date": "2026-06-07",
 #       "category": "work",
-#       "text": "User works as a nurse."
+#       "text": "User works as a graphic designer."
+#     },
+#     {
+#       "date": "2026-04-25",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2025-09-25",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-08-08",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-07-18",
+#       "category": "home",
+#       "text": "User's home address is 428 Oak Avenue."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-02",
-#       "title": "Researching a used car",
+#       "date": "2026-01-02",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-13",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕, 시험 공부 때문에 좀 힘들어. | S2 기원전 4세기? 와, 진짜 오래됐네. 그때 뭘 하려고 썼는데? | S3 하하, 전쟁… | S4 …어? 엄청나네. 공부 좀 쉬어야겠다. 오늘 날씨 어때?
+# EXAMINER(FDB-v2) 단계: S1 음, 궁금한 게 있었는데요. | S2 영화 *Titanic* 만드는 데 얼마 들었어요? 엄청 많이  | S3 이억 달러요? 와, 정말 엄청난 금액이네요. 음, 그때 기준으 | S4 정말 대단하네요. 혹시 지금은 그거보다 더 비싼 영화가 나올 
 
-     0.00s  user  발화 시작: 안녕, 시험 공부 때문에 좀 힘들어.
-     2.70s  agent 발화 시작: 안녕하세요! 시험이 다가오면 그렇게 느끼는 건 당연해요. 작은 걸음부터 시작하면 큰 도움이 될 거예요.
-     2.72s  user  발화 끝
-     6.47s  user  발화 시작: 어어.
-     7.15s  user  발화 끝
-    11.41s  user  발화 시작: 말은 쉽지… 근데 도저히 집중이 안 돼. 사람들이 기름에서 에너지를 얻기 시작한 가장 오래된 때는 언제야?
-    11.42s  agent 발화 끝
-    18.36s  <ret> 발화 (turn4 첫 프레임)
-    18.50s  user  발화 끝
-    18.60s  agent 발화 시작: <ret> 사람들은 기원전 4세기에 처음 기름을 에너지원으로 사용하기 시작했어요. 꽤 오래됐죠, 안 그래요?
-    18.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: Oil was first used as an energy source in the fourth century BCE.
-    26.62s  agent 발화 끝
-    27.45s  user  발화 시작: 기원전 4세기? 와, 진짜 오래됐네. 그때 뭘 하려고 썼는데?
-    31.98s  user  발화 끝
-    32.02s  agent 발화 시작: 음, 물론 지금처럼 차를 움직이는 데 쓴 건 아니고요! 주로 조명이나 난방, 심지어 전쟁에도 사용했어요.
-    35.59s  user  발화 시작: 그래.
-    36.05s  user  발화 끝
-    41.15s  agent 발화 끝
-    41.46s  user  발화 시작: 하하, 전쟁…
-    43.07s  user  발화 끝
-    44.92s  user  발화 시작: …어? 엄청나네. 공부 좀 쉬어야겠다. 오늘 날씨 어때?
-    48.48s  <ret> 발화 (turn10 첫 프레임)
-    48.56s  agent 발화 시작: <ret> 현재 기온은 섭씨 26.0도이고 습도는 65%, 풍속은 시속 7.2킬로미터예요. 신선한 공기를 쐐
-    48.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) Current conditions: 26.0°C, humidity 65%, wind 7.2 km/h.
-    48.81s  user  발화 끝
-    54.40s  agent 발화 끝
+     0.00s  user  발화 시작: 음, 궁금한 게 있었는데요.
+     1.90s  user  발화 시작: 영화 *Titanic* 만드는 데 얼마 들었어요? 엄청 많이 들었을 것 같아요.
+     2.07s  user  발화 끝
+     6.38s  <ret> 발화 (turn2 첫 프레임)
+     6.76s  agent 발화 시작: <ret> 뭐, 그렇게 웅장한 걸 만드는 데 돈이 안 들 수가 없죠. 제작비가 대략 이백 달러 정도 됐습니다
+     6.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: The 1997 film Titanic had a production budget of approximately $200 mi
+     6.90s  user  발화 끝
+    14.54s  agent 발화 시작: 그 규모의 영화에 얼마나 많은 노력이 들어가는지 정말 놀랍지 않아요?
+    14.55s  agent 발화 끝
+    16.86s  user  발화 시작: 아.
+    17.49s  user  발화 끝
+    19.43s  user  발화 시작: 이억 달러요? 와, 정말 엄청난 금액이네요. 음, 그때 기준으로도 기록이었나요?
+    19.73s  agent 발화 끝
+    25.27s  <ret> 발화 (turn6 첫 프레임)
+    25.34s  agent 발화 시작: <ret> 사실, 기록이었어요. 개봉했을 때 *Titanic*은 역대 가장 비싼 영화였답니다.
+    25.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: At the time of its release, Titanic was the most expensive film ever m
+    25.54s  user  발화 끝
+    27.82s  user  발화 시작: 와.
+    28.31s  user  발화 끝
+    32.02s  agent 발화 끝
+    32.06s  agent 발화 시작: 그 프로젝트의 야심이 얼마나 컸는지 알 수 있네요. 영화 제작자들이 그런 비전을 어떻게 현실로 만드는지 항상
+    39.54s  user  발화 시작: 예.
+    40.03s  user  발화 끝
+    42.62s  user  발화 시작: 정말 대단하네요. 혹시 지금은 그거보다 더 비싼 영화가 나올 수 있을까요?
+    43.05s  agent 발화 끝
+    48.04s  user  발화 끝
+    48.15s  agent 발화 시작: 물가 상승과 현대 특수 효과를 생각하면 충분히 가능할 것 같아요! 새로운 블록버스터가 나올 때마다 예산이 점
+    59.24s  agent 발화 끝

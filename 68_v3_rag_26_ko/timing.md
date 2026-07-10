@@ -4,131 +4,131 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_26",
-#     "name": "세빈",
+#     "name": "서완",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "late 20s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-24",
+#       "date": "2026-05-16",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
-#       "date": "2026-03-10",
+#       "date": "2026-01-13",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
+#     },
+#     {
+#       "date": "2025-09-25",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-07-04",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-01-11",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
-#     },
-#     {
-#       "date": "2025-12-19",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-26",
-#       "title": "Setting up a home network",
+#       "date": "2026-06-22",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-10-18",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-12-24",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-10-12",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 아, 달콤한 거 얘기하니까 생각났는데, 미국에서 저 작은 알갱 | S2 프랑스에서 왔구나! 역시, 뭔가 묘하게 프랑스 느낌이 났어요. | S3 그건 그렇고, 혹시 요즘 날씨 어때요? 갑자기 너무 더워진 것 | S4 오, 간단하네요. 그럼 그거 만들어서 친구들이랑 같이 먹어야겠
+# EXAMINER(FDB-v2) 단계: S1 안녕하세요, 오늘 날씨가 어때요? | S2 아, 그렇군요. 혹시 영화 예매도 할 수 있어요? | S3 오, 다섯시로 예매하고 싶은데, 어떻게 해야 하죠? | S4 서울 재즈 페스티벌… 재밌겠네요. 그럼, 혹시 제가 지난달에 
 
-     0.00s  user  발화 시작: 아, 달콤한 거 얘기하니까 생각났는데, 미국에서 저 작은 알갱이들, 알록달록한 거 있잖아요? 그거 뭐라고 부
-     9.46s  user  발화 끝
-     9.50s  agent 발화 시작: 달콤한 간식에 대해 이야기하시는군요. 어떤 종류의 간식을 찾고 계신가요?
-    12.85s  user  발화 시작: 아.
-    13.48s  user  발화 끝
-    14.53s  user  발화 시작: 아니, 그게… 스프링클 같은 건데, 좀 더 작고, 겉은 딱딱하고, 안에 뭔가 부드러운 게 들어있는…
-    14.64s  agent 발화 끝
-    22.90s  <ret> 발화 (turn4 첫 프레임)
-    23.21s  agent 발화 시작: <ret> 작은 알갱이 간식은 겉이 딱딱한 껍질로 덮여 있고, 안은 부드러운 심으로 이루어져 있어요.
-    23.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: Nonpareils are a small, spherical candy covered in a hard shell, with 
-    23.38s  user  발화 끝
-    28.34s  user  발화 시작: 아, nonpareils! 맞아요, 그거였어요. 이름이 너무 어려워서 기억이 안 났네.
-    28.40s  agent 발화 끝
-    33.52s  agent 발화 시작: nonpareils라고 부르는군요. 기억하기 어려운 이름이죠.
-    33.53s  user  발화 끝
-    36.89s  agent 발화 끝
-    37.29s  user  발화 시작: 근데 그거, 혹시 프랑스에서 온 거 아니에요? 뭔가 프랑스 느낌이 나는 것 같아서.
-    42.47s  <ret> 발화 (turn8 첫 프레임)
-    42.71s  agent 발화 시작: <ret> nonpareils는 십구세기에 프랑스에서 시작되었지만, 미국에서 인기를 얻었어요.
-    42.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: Nonpareils originated in France in the 19th century, but became popula
-    42.85s  user  발화 끝
-    47.35s  user  발화 시작: 프랑스에서 왔구나! 역시, 뭔가 묘하게 프랑스 느낌이 났어요.
-    47.57s  agent 발화 끝
-    52.96s  agent 발화 시작: 프랑스에서 유래되었다는 점이 흥미롭죠.
-    53.01s  user  발화 끝
-    55.37s  agent 발화 끝
-    56.25s  user  발화 시작: 근데 그거, 색깔별로 맛이 다른 건가요? 아니면 그냥 다 똑같은 맛이에요?
-    61.21s  <ret> 발화 (turn12 첫 프레임)
-    61.61s  agent 발화 시작: <ret> 보통 바닐라 맛이지만, 초콜릿이나 과일 맛이 나는 변형도 있어요.
-    61.61s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.77s]: Nonpareils are typically vanilla-flavored, though some variations may 
-    61.81s  user  발화 끝
-    66.38s  agent 발화 끝
-    68.40s  user  발화 시작: 아, 바닐라 맛이 기본이군요. 초콜릿 맛도 있다니, 다음에 한번 먹어봐야겠어요.
-    74.69s  agent 발화 시작: 초콜릿 맛도 한번 시도해 보세요. 색다른 즐거움을 느낄 수 있을 거예요.
-    74.83s  user  발화 끝
-    77.97s  user  발화 시작: 그건 그렇고, 혹시 요즘 날씨 어때요? 갑자기 너무 더워진 것 같아서.
-    78.24s  agent 발화 끝
-    84.39s  <ret> 발화 (turn16 첫 프레임)
-    84.47s  agent 발화 시작: <ret> 현재 기온은 이십팔 점 오도이고, 습도는 육십팔%, 바람은 시속 칠 점 이킬로미터로 불고 있어요.
-    84.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) 28.5°C, humidity 68%, wind 7.2 km/h
-    84.50s  user  발화 끝
-    91.24s  agent 발화 끝
-    91.54s  user  발화 시작: 으, 진짜 덥네요. 이러다가 더위 먹겠어요.
-    95.66s  user  발화 끝
-    95.86s  agent 발화 시작: 더위에 주의하시고, 충분히 수분을 섭취하세요.
-    99.05s  agent 발화 끝
-    99.43s  user  발화 시작: 아, 그러고 보니, nonpareils 넣은 쿠키 레시피 좀 알려주실 수 있어요?
-   104.94s  <ret> 발화 (turn20 첫 프레임)
-   105.09s  agent 발화 시작: <ret> 일반적인 nonpareils 쿠키 레시피는 밀가루, 버터, 설탕, 계란, 바닐라 추출물, 그리고 
-   105.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: A typical nonpareil cookie recipe includes flour, butter, sugar, eggs,
-   105.36s  user  발화 끝
-   110.82s  user  발화 시작: 음.
-   111.65s  user  발화 끝
-   113.94s  agent 발화 끝
-   115.01s  user  발화 시작: 오, 간단하네요. 그럼 그거 만들어서 친구들이랑 같이 먹어야겠어요. —
-   120.12s  user  발화 시작: … 근데 혹시 nonpareils 말고 비슷한 종류의 간식 또 있어요?
-   120.16s  user  발화 끝
-   126.14s  agent 발화 시작: 비슷한 종류의 간식도 많아요. 어떤 종류를 찾으세요?
-   126.28s  user  발화 끝
-   127.82s  user  발화 시작: 맞아.
-   128.63s  user  발화 끝
-   128.79s  <ret> 발화 (turn26 첫 프레임)
-   129.02s  agent 발화 시작: <ret> sprinkles, jimmies, 그리고 confetti sprinkles도 비슷한 종류의 간식
-   129.03s  ⚡SPAN 주입 [d'=0.56s / d_lead=4.77s]: Sprinkles, jimmies, and confetti sprinkles are all small, decorative c
-   129.19s  agent 발화 끝
-   133.60s  agent 발화 시작: 스프링클, 지미스, 그리고 콘페티 스프링클도 디저트 위에 뿌리는 작은 장식 사탕으로, nonpareils와 
-   133.78s  agent 발화 끝
-   140.46s  agent 발화 끝
-   140.64s  user  발화 시작: 아, 스프링클! 그거 진짜 좋아하는데. 다음에 마트 갈 때 꼭 사 와야겠어요.
-   146.21s  agent 발화 시작: 스프링클을 좋아하시는군요. 즐거운 시간을 보내시길 바랍니다.
-   146.42s  user  발화 끝
-   150.23s  agent 발화 끝
+     0.00s  user  발화 시작: 안녕하세요, 오늘 날씨가 어때요?
+     3.21s  <ret> 발화 (turn1 첫 프레임)
+     3.27s  agent 발화 시작: <ret> 안녕하세요. 지금 기온은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다. 날
+     3.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+     3.38s  user  발화 끝
+    10.97s  agent 발화 끝
+    10.97s  user  발화 시작: 아, 그렇군요. 마하라슈트라 주 총리는 누구예요?
+    15.33s  <ret> 발화 (turn3 첫 프레임)
+    15.49s  agent 발화 시작: <ret> 마하라슈트라 주 총리는 데벤드라 파드나비스 님입니다. 이천십사년 십일월 구일에 취임하셨습니다.
+    15.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: Devendra Fadnavis is the current Chief Minister of Maharashtra, having
+    15.60s  user  발화 끝
+    22.12s  agent 발화 끝
+    22.94s  user  발화 시작: 음… 파드나비스 님… 혹시 그분 고향이 어디예요?
+    28.11s  <ret> 발화 (turn5 첫 프레임)
+    28.34s  agent 발화 시작: <ret> 죄송하지만, 데벤드라 파드나비스 님의 고향에 대한 정보는 찾을 수 없었습니다.
+    28.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: (no information found)
+    28.55s  user  발화 끝
+    33.39s  agent 발화 끝
+    33.48s  user  발화 시작: 아, 그렇군요. 혹시 영화 예매도 할 수 있어요?
+    37.07s  <ret> 발화 (turn7 첫 프레임)
+    37.30s  agent 발화 시작: <ret> 네, 영화 예매도 가능합니다. 현재 상영 중인 영화는 오펜하이머, 바비, 미션 임파서블: 데드 레
+    37.31s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.32s]: (tool result) Oppenheimer, Barbie, Mission: Impossible - Dead Reckonin
+    37.45s  user  발화 끝
+    44.45s  user  발화 시작: 바비 영화 시간 좀 알려주시겠어요?
+    44.62s  agent 발화 끝
+    46.92s  <ret> 발화 (turn9 첫 프레임)
+    46.99s  agent 발화 시작: <ret> 바비 영화 상영 시간은 오후 두시, 다섯시, 여덟시입니다.
+    47.00s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.61s]: (tool result) 14:00, 17:00, 20:00
+    47.17s  user  발화 끝
+    48.56s  user  발화 시작: 어머.
+    49.38s  user  발화 끝
+    50.58s  user  발화 시작: 오, 다섯시로 예매하고 싶은데, 어떻게 해야 하죠?
+    50.60s  agent 발화 끝
+    53.73s  <ret> 발화 (turn12 첫 프레임)
+    54.04s  agent 발화 시작: <ret> 바비 영화 다섯시 상영, 두석 예매 완료되었습니다. 확인 번호는 팔 구 칠 육 오 사입니다.
+    54.05s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.79s]: (tool result) Barbie, 17:00, 2 seats confirmed, ID: 897654
+    54.09s  user  발화 끝
+    59.42s  user  발화 시작: 와, 정말 빠르네요! 혹시… 친구랑 영화 보러 가는데, 친구에게 위치 좀 공유해 줄 수 있을까요?
+    59.83s  agent 발화 끝
+    67.12s  <ret> 발화 (turn14 첫 프레임)
+    67.48s  user  발화 끝
+    67.53s  agent 발화 시작: <ret> 네, 친구분께 현재 위치를 공유했습니다.
+    67.53s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.77s]: (tool result) Location shared with your contact.
+    70.29s  agent 발화 끝
+    70.31s  user  발화 시작: 고마워요, 정말 편리하네요. 아, 그런데 혹시 이번 주 토요일에 특별한 이벤트 있어요?
+    76.51s  <ret> 발화 (turn16 첫 프레임)
+    76.75s  agent 발화 시작: <ret> 이번 주 토요일, 칠월 십삼일에는 서울 재즈 페스티벌이 열립니다.
+    76.75s  ⚡SPAN 주입 [d'=0.56s / d_lead=4.12s]: (tool result) Seoul Jazz Festival, July 13, 2026
+    76.93s  user  발화 끝
+    78.99s  user  발화 시작: 예.
+    79.63s  user  발화 끝
+    80.69s  user  발화 시작: 서울 재즈 페스티벌… 재밌겠네요. 그럼, 혹시 제가 지난달에 친구에게 보낸 메시지는 기억하시나요?
+    80.87s  agent 발화 끝
+    88.60s  <ret> 발화 (turn19 첫 프레임)
+    88.75s  agent 발화 시작: <ret> 이천이십육년 칠월 삼일에 친구에게 서울 재즈 페스티벌에 같이 가자고 메시지를 보내셨습니다.
+    88.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: [2026-07-03] 친구에게 서울 재즈 페스티벌 같이 가자고 메시지 보냈다.
+    88.85s  user  발화 끝
+    92.30s  user  발화 시작: 진짜요?
+    93.12s  user  발화 끝
+    94.61s  user  발화 시작: 아, 맞아요! 기억해 주셔서 고마워요. 그럼, 저는 이만 가볼게요.
+    94.72s  agent 발화 끝
+   101.05s  user  발화 끝
+   101.45s  agent 발화 시작: 네, 좋은 하루 보내세요.
+   102.83s  agent 발화 끝

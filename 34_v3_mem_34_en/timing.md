@@ -4,162 +4,139 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_34",
-#     "name": "Manon",
+#     "name": "Sky",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "British",
-#     "gender": "female",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-01-23",
-#       "category": "home",
-#       "text": "User's home address is 651 Maple Drive."
+#       "date": "2026-04-11",
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     },
 #     {
-#       "date": "2025-11-19",
-#       "category": "diet",
-#       "text": "User is pescatarian."
-#     },
-#     {
-#       "date": "2025-10-10",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-08-20",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
-#     },
-#     {
-#       "date": "2025-07-21",
+#       "date": "2025-12-17",
 #       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "text": "User is planning a trip to New Zealand in August."
+#     },
+#     {
+#       "date": "2025-11-16",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2025-11-13",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
+#     },
+#     {
+#       "date": "2025-10-12",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-08-30",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-17",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2026-03-24",
+#       "date": "2026-03-16",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-08-07",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I need to figure out the best way  | S2 That's… actually not terrible. Is  | S3 Yeah, good point. I'm also trying  | S4 That sounds lovely. Maybe we could
+# EXAMINER(FDB-v2) 단계: S1 Hi Elera, nice to meet you too. I  | S2 Fifteen minutes, that’s pretty goo | S3 Okay, I think I’ll drive then. Any | S4 Yes, exactly. Any recommendations?
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Siox! It's lovely to meet you. How can I brigh
-     2.64s  user  발화 시작: Uh-huh.
-     3.14s  user  발화 끝
-     5.37s  agent 발화 끝
-     5.40s  user  발화 시작: I need to figure out the best way to get to my friend’s plac
-     8.92s  <ret> 발화 (turn3 첫 프레임)
-     9.00s  agent 발화 시작: <ret> Your home address is 651 Maple Drive, so where are you
-     9.00s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.86s]: [2026-01-23] User's home address is 651 Maple Drive.
-     9.01s  user  발화 끝
-    12.62s  user  발화 시작: Yeah.
-    13.25s  user  발화 끝
-    13.86s  agent 발화 끝
-    16.29s  user  발화 시작: It’s 22 Oak Street.
-    17.59s  <ret> 발화 (turn6 첫 프레임)
-    17.99s  agent 발화 시작: <ret> It looks like 22 Oak Street is six point two miles awa
-    17.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) 22 Oak Street is 6.2 miles from 651 Maple Drive. Estimat
-    18.08s  user  발화 끝
-    24.01s  agent 발화 끝
-    24.16s  user  발화 시작: That sounds pretty good. Are there any bus routes?
-    26.97s  <ret> 발화 (turn8 첫 프레임)
-    27.37s  agent 발화 시작: <ret> Yes, there’s the 14A bus route. It takes forty-five mi
-    27.37s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.79s]: (tool result) Bus route 14A departs near 651 Maple Drive and stops 0.3
-    27.39s  user  발화 끝
-    33.13s  user  발화 시작: Hmm, that's a bit long. What about walking?
-    33.16s  agent 발화 끝
-    35.97s  <ret> 발화 (turn10 첫 프레임)
-    36.05s  agent 발화 시작: <ret> Walking would be two point eight miles, taking about f
-    36.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: (tool result) Walking from 651 Maple Drive to 22 Oak Street is 2.8 mil
-    36.09s  user  발화 끝
-    38.83s  user  발화 시작: Yeah.
-    39.32s  user  발화 끝
-    43.05s  agent 발화 끝
-    44.06s  user  발화 시작: That's… actually not terrible. Is there a good coffee shop a
-    49.14s  <ret> 발화 (turn13 첫 프레임)
-    49.20s  user  발화 끝
-    49.22s  agent 발화 시작: <ret> There’s "The Daily Grind", a highly-rated coffee shop,
-    49.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: (tool result) "The Daily Grind" is located 0.7 miles into the walk, se
-    54.41s  user  발화 시작: Yeah.
-    55.14s  user  발화 끝
-    55.82s  user  발화 시작: Perfect! I think I’ll walk, then.
-    55.99s  agent 발화 끝
-    58.31s  agent 발화 시작: Wonderful! Walking is a great way to clear your head and enj
-    58.54s  user  발화 끝
-    62.75s  agent 발화 끝
-    63.07s  user  발화 시작: Do you think I should tell Sarah I'm walking?
-    65.58s  agent 발화 시작: That's a thoughtful idea! Letting her know you're walking co
-    65.65s  user  발화 끝
-    68.33s  user  발화 시작: Uh-huh.
-    68.83s  user  발화 끝
-    71.22s  user  발화 시작: Yeah, good point. I'm also trying to cut down on my carbon f
-    71.23s  agent 발화 끝
-    75.11s  agent 발화 시작: That’s fantastic, Manon! Making conscious choices like that 
-    75.24s  user  발화 끝
-    79.94s  user  발화 시작: …actually, do you know if Oak Street has parking? Just in ca
-    80.71s  agent 발화 끝
-    83.43s  agent 발화 시작: Oak Street does have limited street parking available, thoug
-    83.59s  user  발화 끝
-    86.11s  user  발화 시작: Yeah, totally.
-    87.49s  user  발화 끝
-    88.62s  agent 발화 끝
-    88.71s  agent 발화 시작: I’m glad to hear that eases your mind. It's always good to h
-    91.30s  user  발화 시작: Uh-huh.
-    91.74s  user  발화 끝
-    92.73s  agent 발화 끝
-    93.94s  user  발화 시작: I remember mentioning I like Italian food.
-    96.44s  <ret> 발화 (turn28 첫 프레임)
-    96.60s  agent 발화 시작: <ret> You do! Your favorite cuisine is Italian, which is a w
-    96.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: [2025-08-20] User's favorite cuisine is Italian.
-    96.75s  user  발화 끝
-   100.85s  user  발화 시작: Do you know any good Italian restaurants near 22 Oak Street?
-   100.95s  agent 발화 끝
-   104.61s  <ret> 발화 (turn30 첫 프레임)
-   104.68s  user  발화 끝
-   104.69s  agent 발화 시작: <ret> "Bella Notte" is nearby, half a mile from your friend’
-   104.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) "Bella Notte" is 0.5 miles from 22 Oak Street and serves
-   110.38s  agent 발화 끝
-   110.50s  user  발화 시작: That sounds lovely. Maybe we could go there after?
-   113.88s  user  발화 끝
-   113.91s  agent 발화 시작: That sounds like a delightful plan! A little Italian treat a
-   118.79s  user  발화 시작: I'm feeling much better about this now, thanks.
-   118.95s  agent 발화 끝
-   121.32s  agent 발화 시작: That makes me so happy to hear, Manon! It’s amazing how a li
-   121.52s  user  발화 끝
-   124.95s  user  발화 시작: Yeah.
-   125.45s  user  발화 끝
-   127.11s  agent 발화 끝
-   127.58s  user  발화 시작: It really does. You've been a big help.
-   129.92s  agent 발화 시작: I'm so glad I could assist you. Remember, taking small steps
-   130.03s  user  발화 끝
-   136.64s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sky, I'm Elera. It's lovely to connect with you today.
+     4.02s  agent 발화 끝
+     4.08s  user  발화 시작: Hi Elera, nice to meet you too. I need to figure out driving
+     8.82s  <ret> 발화 (turn2 첫 프레임)
+     8.90s  agent 발화 시작: <ret> I see you're planning a trip, and I recall you enjoy M
+     8.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: [2026-03-16] User's favorite cuisine is Mexican.
+     8.94s  user  발화 끝
+    11.16s  user  발화 시작: Okay.
+    11.84s  user  발화 끝
+    12.36s  user  발화 시작: Actually, I'm trying to get to a new vintage synth shop.
+    12.79s  agent 발화 끝
+    15.72s  user  발화 끝
+    16.11s  agent 발화 시작: Ah, a new pursuit! That sounds exciting. Where is this shop 
+    17.66s  user  발화 시작: Yeah.
+    18.16s  user  발화 끝
+    21.34s  agent 발화 끝
+    21.60s  user  발화 시작: It’s at 123 Geary Avenue in Toronto.
+    24.42s  <ret> 발화 (turn8 첫 프레임)
+    24.81s  agent 발화 시작: <ret> From your place, it’s about 8.2 kilometers, taking aro
+    24.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) Directions to 123 Geary Avenue, Toronto: 8.2 km, 15 mins
+    24.83s  user  발화 끝
+    26.91s  user  발화 시작: Oh.
+    27.55s  user  발화 끝
+    29.72s  agent 발화 끝
+    29.99s  user  발화 시작: Fifteen minutes, that’s pretty good. Is there traffic?
+    32.87s  <ret> 발화 (turn11 첫 프레임)
+    33.13s  agent 발화 시작: <ret> There’s moderate congestion on Dufferin Street, adding
+    33.27s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.46s]: (tool result) Traffic: Moderate congestion on Dufferin St., adding 5 m
+    33.46s  user  발화 끝
+    37.75s  user  발화 시작: …what about taking the subway instead?
+    38.59s  agent 발화 끝
+    40.01s  <ret> 발화 (turn13 첫 프레임)
+    40.09s  agent 발화 시작: <ret> The subway will take around 35 minutes, with two line 
+    40.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Subway: 35 mins (2 line changes); walk 8 mins at destina
+    40.20s  user  발화 끝
+    45.87s  user  발화 시작: Hmm, that’s a lot longer.
+    45.88s  agent 발화 끝
+    47.39s  agent 발화 시작: Sometimes convenience comes at a cost of time, and vice vers
+    47.43s  user  발화 끝
+    48.91s  user  발화 시작: Uh-huh.
+    49.45s  user  발화 끝
+    50.98s  agent 발화 시작: It's about finding the balance that suits your needs for thi
+    51.10s  agent 발화 끝
+    52.69s  user  발화 시작: Uh-huh.
+    53.19s  user  발화 끝
+    54.63s  agent 발화 끝
+    55.10s  user  발화 시작: Okay, I think I’ll drive then. Any parking nearby?
+    58.34s  <ret> 발화 (turn20 첫 프레임)
+    58.66s  agent 발화 시작: <ret> There’s a Green P parking lot on Geary Avenue, just po
+    58.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Green P Parking - Geary Ave: 0.2 km, $3.00/hour.
+    58.71s  user  발화 끝
+    65.21s  user  발화 시작: Perfect. Thanks for all the help!
+    65.38s  agent 발화 끝
+    67.10s  agent 발화 시작: You're very welcome, Sky. I'm glad I could assist.
+    67.14s  user  발화 끝
+    70.00s  user  발화 시작: I’m also planning a birthday dinner next week.
+    70.15s  agent 발화 끝
+    72.32s  <ret> 발화 (turn24 첫 프레임)
+    72.39s  agent 발화 시작: <ret> I recall you mentioned planning a birthday dinner for 
+    72.40s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.90s]: [2026-03-16] Past chat — Planning a birthday dinner: party of six; loo
+    72.58s  user  발화 끝
+    77.14s  user  발화 시작: Yes, exactly. Any recommendations?
+    77.30s  agent 발화 끝
+    79.64s  <ret> 발화 (turn26 첫 프레임)
+    79.80s  agent 발화 시작: <ret> El Catrin Destileria is a Mexican restaurant with outd
+    79.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) El Catrin Destileria: Mexican, outdoor seating, 4.5 star
+    80.01s  user  발화 끝
+    88.01s  agent 발화 끝
+    88.74s  user  발화 시작: That sounds lovely. Can you check if they have availability 
+    92.66s  <ret> 발화 (turn28 첫 프레임)
+    92.74s  agent 발화 시작: <ret> They have availability next Saturday at 7:30 PM. Your 
+    92.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) El Catrin Destileria: Available Saturday at 7:30 PM. Con
+    92.86s  user  발화 끝
+    99.72s  user  발화 시작: Great! I’ll take it. Thanks again, Elera.
+    99.83s  agent 발화 끝
+   102.76s  user  발화 끝
+   103.07s  agent 발화 시작: Wonderful! Enjoy your dinner, Sky. It’s good to plan ahead f
+   108.17s  agent 발화 끝

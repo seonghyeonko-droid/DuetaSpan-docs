@@ -1,92 +1,98 @@
 v3_rag_26_ko src=nq style=v3
-SYSTEM: <system> 당신은 친구 관계 및 사교 생활에 대한 도움을 주는 따뜻하고 세심한 상담사 Ariax입니다. <system>
+SYSTEM: <system> 당신은 인간 관계 및 사교 생활에 어려움을 겪는 사람들을 돕는, 현실적이고 공감 능력이 뛰어난 라이프 코치 Dunar입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "세빈",
+    "name": "서완",
     "location": {
-      "city": "Seoul",
+      "city": "Busan",
       "country": "South Korea",
       "timezone": "Asia/Seoul (KST, UTC+9)",
       "currency": "KRW (₩)"
     },
     "nationality": "Korean",
-    "gender": "male",
-    "age_range": "40s",
+    "gender": "female",
+    "age_range": "late 20s",
     "language": "Korean"
   },
   "saved_memories": [
     {
-      "date": "2026-03-24",
+      "date": "2026-05-16",
       "category": "pet",
-      "text": "User has a Poodle named Coco."
+      "text": "User has a Corgi named Mochi."
     },
     {
-      "date": "2026-03-10",
+      "date": "2026-01-13",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in October."
+    },
+    {
+      "date": "2025-09-25",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-07-04",
       "category": "seat",
-      "text": "User prefers a window seat when traveling."
-    },
-    {
-      "date": "2026-01-11",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
-    },
-    {
-      "date": "2025-12-19",
-      "category": "hobby",
-      "text": "User is into marathon training."
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-26",
-      "title": "Setting up a home network",
+      "date": "2026-06-22",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "asked about mesh routers",
-        "coverage for a 3-story house"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-10-18",
-      "title": "Booked a dentist appointment",
+      "date": "2025-12-24",
+      "title": "Apartment hunting downtown",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-10-12",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 아, 달콤한 거 얘기하니까 생각났는데, 미국에서 저 작은 알갱이들, 알록달록한 거 있잖아요? 그거 뭐라고 부르죠?
-[  9.50s][moshi] 달콤한 간식에 대해 이야기하시는군요. 어떤 종류의 간식을 찾고 계신가요?
-[ 12.85s][user ] «backchannel» 아.
-[ 14.53s][user ] 아니, 그게… 스프링클 같은 건데, 좀 더 작고, 겉은 딱딱하고, 안에 뭔가 부드러운 게 ⟨ret@22.90s⟩ 들어있는…
-[ 23.21s][moshi] ⟦⚡SPAN@23.22s: Nonpareils are a small, spherical candy covered in a hard shell, with a soft, chewy center.⟧ 작은 알갱이 간식은 겉이 딱딱한 껍질로 덮여 있고, 안은 부드러운 심으로 이루어져 있어요.
-[ 28.34s][user ] 아, nonpareils! 맞아요, 그거였어요. 이름이 너무 어려워서 기억이 안 났네.
-[ 33.52s][moshi] nonpareils라고 부르는군요. 기억하기 어려운 이름이죠.
-[ 37.29s][user ] 근데 그거, 혹시 프랑스에서 온 거 아니에요? 뭔가 프랑스 느낌이 나는 것 ⟨ret@42.47s⟩ 같아서.
-[ 42.71s][moshi] ⟦⚡SPAN@42.71s: Nonpareils originated in France in the 19th century, but became popular in the United States.⟧ nonpareils는 십구세기에 프랑스에서 시작되었지만, 미국에서 인기를 얻었어요.
-[ 47.35s][user ] 프랑스에서 왔구나! 역시, 뭔가 묘하게 프랑스 느낌이 났어요.
-[ 52.96s][moshi] 프랑스에서 유래되었다는 점이 흥미롭죠.
-[ 56.25s][user ] 근데 그거, 색깔별로 맛이 다른 건가요? 아니면 그냥 다 똑같은 ⟨ret@61.21s⟩ 맛이에요?
-[ 61.61s][moshi] ⟦⚡SPAN@61.61s: Nonpareils are typically vanilla-flavored, though some variations may include chocolate or fruit flavors.⟧ 보통 바닐라 맛이지만, 초콜릿이나 과일 맛이 나는 변형도 있어요.
-[ 68.40s][user ] 아, 바닐라 맛이 기본이군요. 초콜릿 맛도 있다니, 다음에 한번 먹어봐야겠어요.
-[ 74.69s][moshi] 초콜릿 맛도 한번 시도해 보세요. 색다른 즐거움을 느낄 수 있을 거예요.
-[ 77.97s][user ] 그건 그렇고, 혹시 요즘 날씨 어때요? 갑자기 너무 더워진 것 같아서.
-[ 84.47s][moshi] ⟨ret@84.39s⟩ ⟦⚡SPAN@84.47s: (tool result) 28.5°C, humidity 68%, wind 7.2 km/h⟧ 현재 기온은 이십팔 점 오도이고, 습도는 육십팔%, 바람은 시속 칠 점 이킬로미터로 불고 있어요.
+[  0.00s][user ] 안녕하세요, 오늘 날씨가 어때요?
+[  3.27s][moshi] ⟨ret@3.21s⟩ ⟦⚡SPAN@3.29s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ 안녕하세요. 지금 기온은 이십삼도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다. 날씨가 꽤 좋네요.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {}}
-[ 91.54s][user ] 으, 진짜 덥네요. 이러다가 더위 먹겠어요.
-[ 95.86s][moshi] 더위에 주의하시고, 충분히 수분을 섭취하세요.
-[ 99.43s][user ] 아, 그러고 보니, nonpareils 넣은 쿠키 레시피 좀 알려주실 수 ⟨ret@104.94s⟩ 있어요?
-[105.09s][moshi] ⟦⚡SPAN@105.10s: A typical nonpareil cookie recipe includes flour, butter, sugar, eggs, and vanilla extract, with nonpareils ad⟧ 일반적인 nonpareils 쿠키 레시피는 밀가루, 버터, 설탕, 계란, 바닐라 추출물, 그리고 알록달록한 장식으로 nonpareils를 넣는 걸 포함해요.
-[110.82s][user ] «backchannel» 음.
-[115.01s][user ] 오, 간단하네요. 그럼 그거 만들어서 친구들이랑 같이 먹어야겠어요. —
-[120.12s][user ] … 근데 혹시 nonpareils 말고 비슷한 종류의 간식 또 있어요?
-[126.14s][moshi] 비슷한 종류의 간식도 많아요. 어떤 종류를 찾으세요?
-[127.82s][user ] «backchannel» 맞아.
-[129.02s][moshi] ⟨ret@128.79s⟩ ⟦⚡SPAN@129.03s: Sprinkles, jimmies, and confetti sprinkles are all small, decorative candies used to top desserts, similar to ⟧ sprinkles, jimmies, 그리고 confetti sprinkles도 비슷한 종류의 간식이에요.
-[133.60s][moshi] 스프링클, 지미스, 그리고 콘페티 스프링클도 디저트 위에 뿌리는 작은 장식 사탕으로, nonpareils와 비슷해요.
-[140.64s][user ] 아, 스프링클! 그거 진짜 좋아하는데. 다음에 마트 갈 때 꼭 사 와야겠어요.
-[146.21s][moshi] 스프링클을 좋아하시는군요. 즐거운 시간을 보내시길 바랍니다.
+[ 10.97s][user ] 아, 그렇군요. 마하라슈트라 주 총리는 누구예요?
+[ 15.49s][moshi] ⟨ret@15.33s⟩ ⟦⚡SPAN@15.49s: Devendra Fadnavis is the current Chief Minister of Maharashtra, having assumed office on November 9, 2014.⟧ 마하라슈트라 주 총리는 데벤드라 파드나비스 님입니다. 이천십사년 십일월 구일에 취임하셨습니다.
+[ 22.94s][user ] 음… 파드나비스 님… 혹시 그분 고향이 ⟨ret@28.11s⟩ 어디예요?
+[ 28.34s][moshi] ⟦⚡SPAN@28.35s: (no information found)⟧ 죄송하지만, 데벤드라 파드나비스 님의 고향에 대한 정보는 찾을 수 없었습니다.
+[ 33.48s][user ] 아, 그렇군요. 혹시 영화 예매도 할 수 ⟨ret@37.07s⟩ 있어요?
+[ 37.30s][moshi] ⟦⚡SPAN@37.31s: (tool result) Oppenheimer, Barbie, Mission: Impossible - Dead Reckoning Part One⟧ 네, 영화 예매도 가능합니다. 현재 상영 중인 영화는 오펜하이머, 바비, 미션 임파서블: 데드 레코닝 파트 원입니다.
+      CALL: {"function": "Movies_1_FindMovies", "arguments": {}}
+[ 44.45s][user ] 바비 영화 시간 좀 알려주시겠어요?
+[ 46.99s][moshi] ⟨ret@46.92s⟩ ⟦⚡SPAN@47.00s: (tool result) 14:00, 17:00, 20:00⟧ 바비 영화 상영 시간은 오후 두시, 다섯시, 여덟시입니다.
+      CALL: {"function": "Movies_1_GetTimesForMovie", "arguments": {"movie_name": "Barbie"}}
+[ 48.56s][user ] «backchannel» 어머.
+[ 50.58s][user ] 오, 다섯시로 예매하고 싶은데, 어떻게 해야 ⟨ret@53.73s⟩ 하죠?
+[ 54.04s][moshi] ⟦⚡SPAN@54.05s: (tool result) Barbie, 17:00, 2 seats confirmed, ID: 897654⟧ 바비 영화 다섯시 상영, 두석 예매 완료되었습니다. 확인 번호는 팔 구 칠 육 오 사입니다.
+      CALL: {"function": "Movies_1_BuyMovieTickets", "arguments": {"movie_name": "Barbie", "time": "17:00"}}
+[ 59.42s][user ] 와, 정말 빠르네요! 혹시… 친구랑 영화 보러 가는데, 친구에게 위치 좀 공유해 줄 수 ⟨ret@67.12s⟩ 있을까요?
+[ 67.53s][moshi] ⟦⚡SPAN@67.53s: (tool result) Location shared with your contact.⟧ 네, 친구분께 현재 위치를 공유했습니다.
+      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {}}
+[ 70.31s][user ] 고마워요, 정말 편리하네요. 아, 그런데 혹시 이번 주 토요일에 특별한 이벤트 ⟨ret@76.51s⟩ 있어요?
+[ 76.75s][moshi] ⟦⚡SPAN@76.75s: (tool result) Seoul Jazz Festival, July 13, 2026⟧ 이번 주 토요일, 칠월 십삼일에는 서울 재즈 페스티벌이 열립니다.
+      CALL: {"function": "Events_3_FindEvents", "arguments": {}}
+[ 78.99s][user ] «backchannel» 예.
+[ 80.69s][user ] 서울 재즈 페스티벌… 재밌겠네요. 그럼, 혹시 제가 지난달에 친구에게 보낸 메시지는 기억하시나요?
+[ 88.75s][moshi] ⟨ret@88.60s⟩ ⟦⚡SPAN@88.76s: [2026-07-03] 친구에게 서울 재즈 페스티벌 같이 가자고 메시지 보냈다.⟧ 이천이십육년 칠월 삼일에 친구에게 서울 재즈 페스티벌에 같이 가자고 메시지를 보내셨습니다.
+[ 92.30s][user ] «backchannel» 진짜요?
+[ 94.61s][user ] 아, 맞아요! 기억해 주셔서 고마워요. 그럼, 저는 이만 가볼게요.
+[101.45s][moshi] 네, 좋은 하루 보내세요.

@@ -4,96 +4,94 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Charlie",
+#     "name": "Emilia",
 #     "location": {
-#       "city": "New York",
+#       "city": "San Francisco",
 #       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
-#     "gender": "non-binary",
-#     "age_range": "40s",
+#     "gender": "female",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-09",
+#       "date": "2026-02-18",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "text": "User's favorite cuisine is Italian."
 #     },
 #     {
-#       "date": "2026-05-19",
-#       "category": "pet",
-#       "text": "User has a tabby cat named Luna."
-#     },
-#     {
-#       "date": "2026-03-14",
-#       "category": "home",
-#       "text": "User's home address is 414 Pine Court."
-#     },
-#     {
-#       "date": "2025-10-24",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2025-08-31",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-07-31",
+#       "date": "2025-12-23",
 #       "category": "hobby",
 #       "text": "User is into marathon training."
+#     },
+#     {
+#       "date": "2025-09-18",
+#       "category": "home",
+#       "text": "User's home address is 415 Maple Drive."
+#     },
+#     {
+#       "date": "2025-07-30",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in December."
+#     },
+#     {
+#       "date": "2025-07-21",
+#       "category": "pet",
+#       "text": "User has a Golden Retriever named Max."
+#     },
+#     {
+#       "date": "2025-06-06",
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-14",
-#       "title": "Booked a dentist appointment",
+#       "date": "2026-03-29",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     },
 #     {
-#       "date": "2026-01-11",
+#       "date": "2025-11-14",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-27",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-17",
-#       "title": "Setting up a home network",
-#       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hello Charlie, it’s lovely to meet you. I’m Teas, and I’m he
-     4.92s  user  발화 시작: Yeah.
-     5.64s  user  발화 끝
-     6.86s  agent 발화 끝
-     7.74s  user  발화 시작: Mindfulness, huh? That sounds…nice, I guess. I’m just really
-    13.90s  user  발화 끝
-    14.26s  agent 발화 시작: It’s perfectly okay to feel stressed, Charlie. Work can be a
-    19.18s  user  발화 시작: Yeah.
-    19.82s  user  발화 끝
-    22.29s  agent 발화 시작: Sometimes just naming what’s causing the stress can lessen i
-    22.33s  agent 발화 끝
-    31.67s  user  발화 시작: …Is this like therapy? I'm not sure I need *therapy* therapy
-    32.39s  agent 발화 끝
-    35.73s  agent 발화 시작: Charlie. It’s not quite the same. I'm here to offer tools an
-    35.80s  user  발화 끝
-    43.09s  agent 발화 끝
-    43.27s  user  발화 시작: Okay, that sounds…less intense. I’m just constantly worried 
-    49.45s  agent 발화 시작: It’s very common to feel that way, Charlie. Perfectionism ca
-    49.53s  user  발화 끝
-    57.84s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Emilia, it’s lovely to connect with you. I’m Zae, and 
+     7.74s  agent 발화 끝
+     8.15s  user  발화 시작: Oh, uh, Zae? That's… different. I just need help figuring ou
+    14.98s  agent 발화 시작: It is a little unusual, isn’t it? Burnout is serious, Emilia
+    15.01s  user  발화 끝
+    23.00s  agent 발화 끝
+    23.64s  user  발화 시작: I don’t even know anymore. I used to love hiking, but now… e
+    29.99s  user  발화 끝
+    30.34s  agent 발화 시작: That feeling of overwhelm is so common when you’re depleted.
+    35.51s  user  발화 시작: Mm-hmm.
+    36.00s  user  발화 끝
+    39.08s  agent 발화 시작: Sometimes, simply imagining a different environment can lift
+    39.10s  agent 발화 끝
+    46.01s  user  발화 시작: Well, I was thinking maybe somewhere warm… a beach, maybe? B
+    46.03s  agent 발화 끝
+    52.66s  agent 발화 시작: A warm, uncrowded beach sounds wonderful. It’s good to prior
+    52.73s  user  발화 끝
+    63.00s  agent 발화 끝

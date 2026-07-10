@@ -4,110 +4,97 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_41",
-#     "name": "Lily",
+#     "name": "Remy",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "female",
-#     "age_range": "late 20s",
+#     "nationality": "Canadian",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-28",
-#       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
-#     },
-#     {
-#       "date": "2026-04-12",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
-#     },
-#     {
-#       "date": "2025-10-16",
+#       "date": "2026-04-15",
 #       "category": "home",
-#       "text": "User's home address is 722 Pine Court."
+#       "text": "User's home address is 316 Birch Road."
 #     },
 #     {
-#       "date": "2025-09-29",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
+#       "date": "2025-12-03",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-07-09",
+#       "date": "2025-11-01",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-10-23",
 #       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User works as a software engineer."
+#     },
+#     {
+#       "date": "2025-08-27",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-08-16",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-21",
+#       "date": "2025-11-23",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
-#     },
-#     {
-#       "date": "2025-10-06",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-03",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m just feeling really lost right | S2 I just don’t feel fulfilled anymor | S3 I have some savings, but not a ton | S4 Okay. And… what if I choose the wr
+# EXAMINER(FDB-v2) 단계: S1 I'm just feeling really stuck righ | S2 I don’t know, honestly. I guess… e | S3 Playful exploration? I haven't don | S4 I… I don't know. Kind of empty? Li
 
-     0.00s  agent 발화 시작: Hello Lily, welcome. I’m Vean, and I’m here to support you t
-     6.61s  user  발화 시작: I’m just feeling really lost right now, actually.
-     6.72s  agent 발화 끝
-     9.66s  agent 발화 시작: It's perfectly alright to feel lost, Lily. Transitions can b
-     9.70s  user  발화 끝
-    17.87s  agent 발화 끝
-    17.90s  user  발화 시작: Well, I’m thinking about leaving my job. It’s just… a big st
-    22.77s  agent 발화 시작: It absolutely is a big step. Leaving a job is a significant 
-    22.95s  user  발화 끝
-    25.20s  user  발화 시작: Yeah.
-    25.74s  user  발화 끝
-    30.14s  agent 발화 끝
-    30.45s  user  발화 시작: I just don’t feel fulfilled anymore. It’s not challenging, a
-    36.19s  agent 발화 시작: That sense of stagnation can be really draining. It’s import
-    36.29s  user  발화 끝
-    41.86s  user  발화 시작: …Do you think it’s okay to leave a job without having anothe
-    42.63s  agent 발화 끝
-    45.64s  agent 발화 시작: That’s a very valid concern, Lily. It requires careful thoug
-    45.89s  user  발화 끝
-    49.21s  user  발화 시작: Uh-huh.
-    49.84s  user  발화 끝
-    52.49s  user  발화 시작: I have some savings, but not a ton. And the thought of the j
-    52.50s  agent 발화 끝
-    58.19s  user  발화 끝
-    58.35s  agent 발화 시작: It's understandable to feel overwhelmed. Perhaps we could ex
-    65.72s  agent 발화 끝
-    66.49s  user  발화 시작: That sounds… good, actually. I hadn’t really broken it down 
-    71.38s  agent 발화 시작: Sometimes just outlining things can reduce the anxiety. We c
-    71.50s  user  발화 끝
-    79.25s  user  발화 시작: Okay. And… what if I choose the wrong thing? What if I regre
-    79.67s  agent 발화 끝
-    83.92s  agent 발화 시작: Regret is a natural part of decision-making, Lily. It doesn’
-    84.11s  user  발화 끝
-    91.24s  agent 발화 끝
-    91.85s  user  발화 시작: That’s… a different way of looking at it. I usually just bea
-    97.19s  agent 발화 시작: It’s common to be self-critical, but self-compassion is a po
-    97.32s  user  발화 끝
-   104.15s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Remy, it’s wonderful to connect with you. I’m Tarimi, 
+     5.65s  user  발화 시작: Yeah, yeah.
+     6.66s  user  발화 끝
+     8.02s  agent 발화 끝
+     8.30s  user  발화 시작: I'm just feeling really stuck right now, actually.
+    11.15s  agent 발화 시작: Stuck is a very common feeling, Remy. What feels the most ch
+    11.36s  user  발화 끝
+    14.76s  user  발화 시작: Oh.
+    15.25s  user  발화 끝
+    19.58s  agent 발화 끝
+    20.26s  user  발화 시작: Um, welll… I think it’s the starting. I have so many ideas, 
+    27.30s  user  발화 끝
+    27.49s  agent 발화 시작: That’s a really insightful observation. It sounds like you’r
+    34.90s  user  발화 시작: I don’t know, honestly. I guess… everyone else seems so sure
+    35.00s  agent 발화 끝
+    39.68s  agent 발화 시작: It’s easy to fall into comparing ourselves to others, isn’t 
+    39.81s  user  발화 끝
+    42.10s  user  발화 시작: Mm-hmm.
+    42.73s  user  발화 끝
+    47.64s  agent 발화 시작: Often, what looks like certainty is just someone further alo
+    47.65s  agent 발화 끝
+    53.91s  user  발화 시작: Yeah.
+    54.55s  user  발화 끝
+    58.21s  agent 발화 끝
+    58.96s  user  발화 시작: Playful exploration? I haven't done that in ages. Sounds… sc
+    64.52s  user  발화 끝
+    64.56s  agent 발화 시작: It can feel vulnerable to let go of control. But sometimes, 
+    73.27s  user  발화 시작: Maybe. I was trying to write a song, but it just feels…flat.
+    73.42s  agent 발화 끝
+    77.71s  user  발화 끝
+    77.98s  agent 발화 시작: A flat song can be a wonderful starting point, Remy. What if
+    86.60s  agent 발화 끝
+    87.00s  user  발화 시작: I… I don't know. Kind of empty? Like a long, drawn-out note.
+    91.79s  agent 발화 시작: That's a beautiful image. An empty space holds potential, yo
+    91.82s  user  발화 끝
+   100.37s  agent 발화 끝

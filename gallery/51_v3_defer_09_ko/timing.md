@@ -4,43 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_09",
-#     "name": "가희",
+#     "name": "현준",
 #     "location": {
-#       "city": "Seoul",
+#       "city": "Busan",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
 #     },
 #     "nationality": "Korean",
-#     "gender": "female",
-#     "age_range": "50s",
+#     "gender": "non-binary",
+#     "age_range": "40s",
 #     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-22",
+#       "date": "2026-05-06",
+#       "category": "pet",
+#       "text": "User has a Beagle named Rusty."
+#     },
+#     {
+#       "date": "2026-01-01",
+#       "category": "home",
+#       "text": "User's home address is 부산 해운대구 우동 123-4."
+#     },
+#     {
+#       "date": "2025-12-12",
+#       "category": "diet",
+#       "text": "User is pescatarian."
+#     },
+#     {
+#       "date": "2025-09-11",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-06-03",
 #       "category": "allergy",
-#       "text": "User is allergic to pollen."
-#     },
-#     {
-#       "date": "2025-10-18",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in March."
-#     },
-#     {
-#       "date": "2025-09-21",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-07-20",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "text": "User is allergic to peanuts."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-07-14",
+#       "date": "2025-12-16",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     },
+#     {
+#       "date": "2025-07-17",
 #       "title": "Comparing gym memberships",
 #       "bullets": [
 #         "wants a pool",
@@ -48,51 +66,79 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-02",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-07-04",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 달러 환율 좀 알려줘. 유로 기준으로. | S2 아니, 그냥 궁금해서. 아, 그리고 이번 주 토요일에 서울 날 | S3 …혹시 비 올 가능성은 없어? | S4 그냥 친구 만날 건데.
+# EXAMINER(FDB-v2) 단계: S1 칠월 사일에 댈러스에서 샌프란시스코까지 기차표 두 장 찾아줘. | S2 아, 훨씬 저렴하네. 그럼 이걸로 해 줘. | S3 다행이다. 그럼 샌프란시스코 날씨는 어때? 칠월 사일 기준으로 | S4 알카트라즈 섬은 미리 예약해야 해?
 
-     0.00s  user  발화 시작: 달러 환율 좀 알려줘. 유로 기준으로.
-     2.69s  <ret> 발화 (turn1 첫 프레임)
-     2.84s  agent 발화 시작: <ret> 현재 유로당 달러 환율은, 오늘 오후 두시 삼십분 기준으로 영 점 구 이유로입니다.
-     2.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.44s]: The current exchange rate is 1 US dollar equals 0.92 euros, as of July
-     2.90s  user  발화 끝
-     9.24s  agent 발화 시작: 환율 변동이 심하니까 참고만 하세요.
-     9.27s  agent 발화 끝
-    11.50s  agent 발화 끝
-    11.89s  user  발화 시작: 음… 그럼 지금 백달러는 얼마야?
-    14.74s  <ret> 발화 (turn4 첫 프레임)
-    15.06s  agent 발화 시작: <ret> 백달러는 구십이유로입니다.
-    15.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.84s]: 92.00 EUR
-    15.21s  user  발화 끝
-    16.90s  agent 발화 끝
-    17.01s  agent 발화 시작: 혹시 여행 자금 마련하시는 건가요?
-    19.55s  agent 발화 끝
-    19.67s  user  발화 시작: 아니, 그냥 궁금해서. 아, 그리고 이번 주 토요일에 서울 날씨 어때?
-    24.05s  <ret> 발화 (turn7 첫 프레임)
-    24.45s  agent 발화 시작: <ret> 이번 주 토요일 서울 날씨는 이십팔도, 습도 육십오%, 바람은 시속 칠 점 이킬로미터로 흐리고, 
-    24.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) 28.0°C, humidity 65%, wind 7.2 km/h, cloudy.
-    24.62s  user  발화 끝
-    31.60s  user  발화 시작: …혹시 비 올 가능성은 없어?
-    32.20s  agent 발화 끝
-    33.67s  user  발화 끝
-    33.73s  agent 발화 시작: 비 올 가능성은 삼십% 정도 예상됩니다.
-    34.94s  user  발화 시작: 응.
-    35.26s  user  발화 끝
-    35.95s  agent 발화 시작: 우산을 챙겨가시는 게 좋겠네요. 혹시 토요일에 특별한 계획 있으신가요?
-    35.99s  agent 발화 끝
-    37.02s  user  발화 시작: 응.
-    37.46s  user  발화 끝
-    39.56s  agent 발화 끝
-    41.07s  user  발화 시작: 그냥 친구 만날 건데.
-    42.35s  agent 발화 시작: 친구분과 즐거운 시간 보내시길 바랍니다. 저는 언제나 당신의 계획을 응원해요.
-    42.59s  user  발화 끝
-    47.82s  agent 발화 끝
+     0.00s  user  발화 시작: 칠월 사일에 댈러스에서 샌프란시스코까지 기차표 두 장 찾아줘. 정오쯤 출발하는 걸로.
+     6.09s  <ret> 발화 (turn1 첫 프레임)
+     6.25s  agent 발화 시작: <ret> 칠월 사일 정오 십오분에 출발해서 저녁 여덟시에 도착하는 댈러스-샌프란시스코행 기차표가 이백오십달
+     6.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.36s]: (tool result) {"train id": "TXSF0704", "departure time": "12:15", "arr
+     6.30s  user  발화 끝
+    15.61s  agent 발화 끝
+    15.91s  user  발화 시작: 와, 꽤 비싸네.
+    17.28s  agent 발화 시작: 기차표 가격은 날짜와 시간에 따라 달라질 수 있습니다. 좀 더 저렴한 시간대가 있을까요?
+    17.33s  user  발화 끝
+    22.34s  user  발화 시작: 다른 시간대도 좀 알아봐 줘. 아침 일찍 출발하는 거면 더 괜찮을 것 같아.
+    22.55s  agent 발화 끝
+    26.53s  <ret> 발화 (turn5 첫 프레임)
+    26.85s  agent 발화 시작: <ret> 아침 여섯시에 출발해서 오후 네시에 도착하는 기차표는 백팔십달러입니다. 확인번호는 디 사 이 육 
+    26.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) {"train id": "TXSF0704E", "departure time": "06:00", "ar
+    26.87s  user  발화 끝
+    31.29s  user  발화 시작: 네.
+    31.92s  user  발화 끝
+    34.17s  agent 발화 끝
+    34.37s  user  발화 시작: 아, 훨씬 저렴하네. 그럼 이걸로 해 줘.
+    36.56s  <ret> 발화 (turn8 첫 프레임)
+    36.96s  agent 발화 시작: <ret> 아침 여섯시 기차표 두 장, 총 백팔십달러 결제가 완료되었고, 확인번호는 디 사 이 육 에프 팔입
+    36.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: (tool result) {"train id": "TXSF0704E", "departure time": "06:00", "ar
+    37.14s  user  발화 끝
+    40.08s  user  발화 시작: 와.
+    40.53s  user  발화 끝
+    44.37s  agent 발화 끝
+    44.45s  agent 발화 시작: 여행 준비는 잘 되어 가시나요? 혹시 샌프란시스코에서 특별히 가보고 싶은 곳이 있으신가요? —
+    48.83s  user  발화 시작: … 혹시 그 기차에 와이파이 되는지 알아봐 줄 수 있어?
+    49.49s  agent 발화 끝
+    51.80s  <ret> 발화 (turn12 첫 프레임)
+    51.88s  agent 발화 시작: <ret> 아침 여섯시 기차는 와이파이가 제공됩니다.
+    51.88s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.91s]: (tool result) {"train id": "TXSF0704E", "departure time": "06:00", "ar
+    52.06s  user  발화 끝
+    54.79s  agent 발화 끝
+    54.88s  agent 발화 시작: 편안한 여행 되세요. 기차 안에서 업무를 보실 수 있겠네요.
+    56.20s  user  발화 시작: 네.
+    56.70s  user  발화 끝
+    58.21s  agent 발화 끝
+    58.28s  user  발화 시작: 다행이다. 그럼 샌프란시스코 날씨는 어때? 칠월 사일 기준으로.
+    62.33s  <ret> 발화 (turn16 첫 프레임)
+    62.41s  agent 발화 시작: <ret> 칠월 사일 샌프란시스코의 기온은 이십도, 습도는 육십오%, 바람은 시속 팔킬로미터로 약간 흐린 날
+    62.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: (tool result) {"city": "San Francisco", "date": "July 4", "temperature
+    62.63s  user  발화 끝
+    69.93s  agent 발화 시작: 샌프란시스코는 여름에도 아침저녁으로 쌀쌀할 수 있으니 가벼운 겉옷을 챙기시는 게 좋겠습니다.
+    70.05s  agent 발화 끝
+    75.39s  user  발화 시작: 고마워. 샌프란시스코에서 꼭 가봐야 할 관광지는 어디야?
+    75.40s  agent 발화 끝
+    79.24s  <ret> 발화 (turn19 첫 프레임)
+    79.64s  agent 발화 시작: <ret> 샌프란시스코에서는 금문교, 알카트라즈 섬, 그리고 어부 부두가 많은 관광객들에게 사랑받는 명소입니
+    79.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) "Golden Gate Bridge, Alcatraz Island, Fisherman's Wharf 
+    79.78s  user  발화 끝
+    86.08s  agent 발화 끝
+    88.07s  user  발화 시작: 알카트라즈 섬은 미리 예약해야 해?
+    90.66s  user  발화 끝
+    90.74s  agent 발화 시작: 네, 알카트라즈 섬은 미리 예약하지 않으면 입장이 어려울 수 있습니다.
+    95.09s  agent 발화 끝
+    95.15s  user  발화 시작: 그럼 지금 예약해 줘. 칠월 사일 오후 두시 기준으로 두 명.
+    99.13s  <ret> 발화 (turn23 첫 프레임)
+    99.53s  agent 발화 시작: <ret> 알카트라즈 섬 투어, 칠월 사일 오후 두시, 두 명으로 예약이 완료되었고, 확인번호는 지 구 에이
+    99.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.35s]: (tool result) {"event name": "Alcatraz Island tour", "date": "July 4",
+    99.64s  user  발화 끝
+   107.88s  agent 발화 끝
+   108.01s  agent 발화 시작: 즐거운 시간 보내시길 바랍니다.
+   109.62s  agent 발화 끝
