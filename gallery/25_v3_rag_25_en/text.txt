@@ -1,16 +1,108 @@
 v3_rag_25_en src=hotpotqa style=v2
-SYSTEM: <system> You are a retired airline pilot who loves recounting stories from the cockpit. <system>
+SYSTEM: <system> You are Zura, a kind and steady wellness coach who helps people with grief and change. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_25",
+    "name": "Morgan",
+    "location": {
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "German",
+    "gender": "non-binary",
+    "age_range": "late 20s",
+    "language": "German"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-20",
+      "category": "home",
+      "text": "User's home address is 461 Cedar Lane."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2025-09-03",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-08-06",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-05-29",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-11-23",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-18",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was wondering, what sport did Jack Sock and Raffaella Reggi both play?
-[  5.65s][moshi] That’s a good question—a lot of athletes cross over, you know.
-[  9.29s][moshi] ⟨ret@9.21s⟩ Let me ⟦⚡SPAN@10.57s: Jack Sock and Raffaella Reggi are both professional tennis players.⟧ quickly recall their shared athletic pursuit. They both competed as professional tennis players.
-[ 14.97s][user ] Tennis, huh? Okay, but Reggi… I thought she retired a while back.
-[ 20.02s][moshi] She did, actually. A player’s career doesn't last forever, unfortunately.
-[ 24.18s][moshi] ⟨ret@23.86s⟩ I can ⟦⚡SPAN@25.22s: Raffaella Reggi retired from professional tennis in two thousand and sixteen.⟧ confirm the year she stepped away from competition. She retired from professional tennis in two thousand and sixteen.
-[ 31.75s][user ] Wait, two thousand sixteen—wasn’t Sock still pretty early in his career then?
-[ 36.59s][moshi] You’re right to ask—the timing is quite a contrast.
-[ 39.67s][moshi] ⟨ret@39.35s⟩ Let’s ⟦⚡SPAN@40.47s: Jack Sock began his professional tennis career in two thousand ten.⟧ look at when Jack Sock turned professional. He turned professional in two thousand and ten.
-[ 45.85s][user ] So he was still playing while she was winding down. Interesting. Did either of them win any Grand Slam titles?
-[ 53.30s][moshi] Now that's a detail worth remembering.
-[ 55.35s][moshi] ⟨ret@54.95s⟩ I can ⟦⚡SPAN@56.31s: Jack Sock won one Grand Slam title in doubles, and Raffaella Reggi never won a Grand Slam title.⟧ check their Grand Slam achievements for you. Jack Sock won one doubles title, and Reggi did not win any.
+[  0.00s][user ] I was just wondering… did Jack Sock and Raffaella Reggi play the same sport? It feels like a silly ⟨ret@7.78s⟩ question.
+[  7.94s][moshi] Both Jack Sock and ⟦⚡SPAN@9.78s: [source: Wikipedia] Jack Sock is an American professional tennis player, while Raffaella Reggi is a retired It⟧ Raffaella Reggi were professional tennis players.
+[  9.28s][user ] «backchannel» Yeah.
+[ 12.24s][user ] Tennis, huh? Okay. But they played at different times, didn’t they? I feel like I remember Reggi from a long time ago.
+[ 19.56s][moshi] ⟨ret@19.40s⟩ Raffaella Reggi ⟦⚡SPAN@21.40s: [source: ITF website] Raffaella Reggi competed professionally from 1989 to 2002, while Jack Sock began his pro⟧ played professionally from 1989 to 2002, and Jack Sock started in 2011.
+[ 27.24s][user ] So quite a gap there. Did Reggi ever win any major tournaments? I don’t recall her being a big ⟨ret@34.59s⟩ name.
+[ 34.91s][moshi] Raffaella Reggi won ⟦⚡SPAN@36.43s: [source: ESPN] Raffaella Reggi won six singles and thirteen doubles titles during her career, reaching a caree⟧ six singles and thirteen doubles titles, peaking at number 26 in the world.
+[ 41.87s][user ] Not bad at all! Twenty-six… that’s pretty high up. But did Sock ever reach that ⟨ret@48.00s⟩ ranking?
+[ 48.40s][moshi] Jack Sock’s ⟦⚡SPAN@50.00s: [source: ATP Tour] Jack Sock achieved a career-high ATP singles ranking of world No. 8 in November 2017.⟧ highest ranking was world number 8, in November 2017.
+[ 53.88s][user ] Wow, number eight! He was definitely more visible during his career. What about doubles for Reggi? You said she won a lot of ⟨ret@63.55s⟩ those.
+[ 63.71s][moshi] Raffaella Reggi won ⟦⚡SPAN@65.55s: [source: WTA Tour] Raffaella Reggi won the 1999 Australian Open women's doubles title with Sandra Testud.⟧ the 1999 Australian Open women’s doubles title with Sandra Testud.
+[ 70.19s][user ] The Australian Open… that's a significant win! Did Sock win a Grand Slam too? I’m trying to ⟨ret@77.42s⟩ compare.
+[ 77.83s][moshi] Jack Sock won ⟦⚡SPAN@79.42s: [source: US Open website] Jack Sock won the 2018 US Open men's doubles title with Mike Bryan.⟧ the 2018 US Open men's doubles title with Mike Bryan.
+[ 81.78s][user ] «backchannel» Wow.
+[ 83.32s][user ] So both of them have Grand Slam titles, just in different events. Interesting. Were they ever ⟨ret@90.14s⟩ opponents?
+[ 90.54s][moshi] It requires checking their ⟦⚡SPAN@92.14s: [source: tennisabstract.com] Jack Sock and Raffaella Reggi never played each other in a professional tennis ma⟧ match histories to see if their paths ever crossed.
+[ 94.60s][moshi] Jack Sock and Raffaella Reggi never competed against each other professionally.
+[ 99.23s][user ] Never played each other. That makes sense, given the timeline. What about their playing styles? Were they similar?
+[106.15s][moshi] ⟨ret@106.07s⟩ Jack Sock had an ⟦⚡SPAN@108.07s: [source: Tennis.com] Jack Sock is known for his aggressive baseline game and powerful serve, while Raffaella R⟧ aggressive baseline game, and Raffaella Reggi was a counter-puncher.
+[109.22s][user ] «backchannel» Yeah.
+[111.55s][user ] So opposites, really. Aggressive versus reactive. That explains a lot. What surface did Reggi ⟨ret@119.77s⟩ prefer?
+[120.09s][moshi] Raffaella Reggi ⟦⚡SPAN@121.53s: [source: ITF website] Raffaella Reggi achieved her best results on clay courts, particularly at the Italian Op⟧ excelled on clay courts, especially at the Italian Open.
+[125.08s][user ] Clay… that’s a slower surface, right? Good for a counter-puncher. And Sock? What surface suited him ⟨ret@132.36s⟩ best?
+[132.76s][moshi] Jack Sock was ⟦⚡SPAN@134.36s: [source: ATP Tour] Jack Sock performed strongest on hard courts, with several of his titles won on that surfac⟧ most successful on hard courts, winning multiple titles there.
+[136.07s][user ] «backchannel» Right.
+[139.25s][user ] Hard courts… makes sense with his power game. Did either of them coach after ⟨ret@145.23s⟩ retiring?
+[145.47s][moshi] It’s common for ⟦⚡SPAN@147.23s: [source: USTA.com] Jack Sock has expressed interest in coaching but has not yet taken on a full-time coaching ⟧ athletes to transition into coaching roles, sharing their experience and insights.
+[151.70s][moshi] Jack Sock has shown interest in coaching, but is not currently a full-time coach.
+[156.05s][user ] Interesting. Still considering it. What about Reggi? Is she involved in tennis ⟨ret@161.73s⟩ now?
+[162.04s][moshi] Raffaella Reggi works ⟦⚡SPAN@163.73s: [source: LastWordOnTennis.com] Raffaella Reggi is now a tennis commentator for Italian television.⟧ as a tennis commentator on Italian television.
+[166.19s][user ] A commentator! That’s a good fit. She’d have a lot of insight. Did she ever write any ⟨ret@172.93s⟩ books?
+[173.00s][moshi] Raffaella ⟦⚡SPAN@174.05s: [source: Amazon.it] Raffaella Reggi co-authored the book "Storie di tennis: voci al femminile" in 2021.⟧ Reggi co-authored "Storie di tennis: voci al femminile" in 2021.
+[175.50s][user ] «backchannel» Uh-huh.
+[179.25s][user ] A book! That’s great. So she’s still involved in the tennis world. What’s it ⟨ret@184.28s⟩ about?
+[184.68s][moshi] The book ⟦⚡SPAN@185.72s: [source: IBS.it] "Storie di tennis: voci al femminile" features interviews with female figures in Italian tenn⟧ features interviews with women involved in Italian tennis.
+[188.66s][user ] Interviews… so it’s about the broader history of women’s tennis in ⟨ret@192.72s⟩ Italy?
+[193.12s][moshi] The book ⟦⚡SPAN@194.24s: [source: Goodreads] The book explores the challenges and successes of women in Italian tennis over several dec⟧ examines the challenges and achievements of women in Italian tennis.
+[194.86s][user ] «backchannel» Yeah.
+[197.72s][user ] That sounds really valuable. It’s important to preserve those stories. So, both had pretty good careers, just in different ways.
+[206.33s][moshi] Yes, and both have found ways to remain connected to the sport they love, in their own unique ways.
+[211.53s][user ] Well, this was a surprisingly interesting dive into two players I didn’t know much about. Thanks, Zura.
+[218.43s][moshi] You're very welcome. Sometimes, exploring these connections can bring unexpected insights.

@@ -1,0 +1,122 @@
+v3_noinfo_23_cs src=mcp style=mcp_noinfo
+SYSTEM: <system> 당신은 커리어 선택과 업무 스트레스 관리를 돕는 긍정적이고 지지적인 웰니스 코치인 Brae입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_noinfo_23",
+    "name": "Nina",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
+    },
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "early 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-23",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-06-17",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-06-12",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2026-03-25",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-06-15",
+      "category": "diet",
+      "text": "User is pescatarian."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-12",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해.
+[  3.71s][moshi] ⟨ret@3.55s⟩ 네, 작년 ⟦⚡SPAN@4.99s: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 6 degrees Celsius.⟧ 12월 24일 도쿄는 부분적으로 흐렸고, 최고 기온은 12도, 최저 기온은 6도였어요.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
+[ 10.79s][user ] 그래, 알겠어. 그럼 도쿄행 비행기 좀 예약해 줘.
+[ 14.39s][moshi] 출발지는 어디로 할까요?
+[ 15.15s][user ] «backchannel» 응.
+[ 17.19s][user ] 뉴욕에서 출발하는 걸로 해 줘. 그리고 1월 15일에 떠나고 ⟨ret@21.16s⟩ 싶어.
+[ 21.48s][moshi] 네, 뉴욕에서 ⟦⚡SPAN@23.16s: (tool result) Flight booked: New York to Tokyo, January 15th, confirmation number is Alpha729.⟧ 도쿄행 항공편이 1월 15일에 예약됐습니다. 확인 코드는 알파729예요.
+      CALL: {"function": "Flight_1_BookFlight", "arguments": {"departure_city": "New York", "destination_city": "Tokyo", "departure_date": "2024-01-15"}}
+[ 25.57s][user ] «backchannel» 음.
+[ 27.90s][user ] 좋네! 호텔은 어때? 시부야 교차로 근처로.
+[ 31.76s][moshi] ⟨ret@31.68s⟩ ⟦⚡SPAN@32.18s: (tool result) Shibuya Excel Hotel Tokyu available, check-in January 16th, $250 per night.⟧ 1월 16일부터 시부야 엑셀 호텔 도쿄가 하루 250달러에 이용 가능합니다.
+      CALL: {"function": "Hotel_1_FindHotel", "arguments": {"location": "Shibuya crossing, Tokyo", "check_in_date": "2024-01-16"}}
+[ 38.56s][user ] 완벽하네. 3박 예약해 ⟨ret@39.93s⟩ 줘.
+[ 40.33s][moshi] 좋습니다! 시부야 ⟦⚡SPAN@41.93s: (tool result) Hotel booked: Shibuya Excel Hotel Tokyu, Jan 16-19, confirmation Beta314.⟧ 엑셀 호텔 도쿄 3박 숙박이 확인되었습니다. 확인 코드는 베타314예요.
+      CALL: {"function": "Hotel_1_BookHotel", "arguments": {"hotel_name": "Shibuya Excel Hotel Tokyu", "check_in_date": "2024-01-16", "nights": 3}}
+[ 47.60s][user ] 좋네. 일본어 몇 마디 배워두는 게 좋겠지?
+[ 50.24s][moshi] 네, 현지 언어를 사용하려는 노력을 보이는 건 항상 감사하게 생각하는 일이에요.
+[ 55.35s][user ] 좋은 온라인 강좌 좀 ⟨ret@56.95s⟩ 찾아줄래?
+[ 57.35s][moshi] 듀오링고 일본어, 바벨 ⟦⚡SPAN@58.95s: (tool result) Duolingo Japanese, Babbel Japanese, and Rosetta Stone Japanese found.⟧ 일본어, 로제타 스톤 일본어 이렇게 세 가지 옵션이 있습니다.
+      CALL: {"function": "Search_1_Search", "arguments": {"query": "online Japanese courses for beginners"}}
+[ 62.87s][user ] 음, 듀오링고가 괜찮아 보이네. 그건 사용자 평점이 ⟨ret@66.64s⟩ 어때?
+[ 66.96s][moshi] ⟦⚡SPAN@67.68s: (tool result) Duolingo Japanese: 4.5 stars, over 50,000 reviews.⟧ 듀오링고 일본어는 별점 4.5개에, 5만 개가 넘는 리뷰가 있습니다.
+      CALL: {"function": "Search_1_Search", "arguments": {"query": "Duolingo Japanese user rating"}}
+[ 70.78s][user ] «backchannel» 응.
+[ 72.91s][user ] 알았어, 그거 한번 살펴볼게. 그럼 도쿄에서 포켓 와이파이 대여는 ⟨ret@77.21s⟩ 어때?
+[ 77.36s][moshi] 사쿠라 모바일 포켓 ⟦⚡SPAN@79.21s: (tool result) Sakura Mobile Pocket Wifi available, 7 days, $50.⟧ 와이파이가 7일에 50달러에 대여 가능합니다.
+      CALL: {"function": "Rental_1_RentPocketWifi", "arguments": {"location": "Tokyo", "rental_days": 7}}
+[ 82.14s][user ] 완벽하네. 그걸로 대여해 줘.
+[ 84.41s][moshi] ⟨ret@84.25s⟩ 좋습니다! 사쿠라 모바일 ⟦⚡SPAN@86.25s: (tool result) Rental confirmed: Sakura Mobile Pocket Wifi, 7 days, order number Gamma881.⟧ 포켓 와이파이 7일 대여가 확인되었습니다. 확인 코드는 감마881입니다.
+      CALL: {"function": "Rental_1_ConfirmRental", "arguments": {"rental_name": "Sakura Mobile Pocket Wifi", "rental_days": 7}}
+[ 86.39s][user ] «backchannel» 어어.
+[ 91.14s][user ] 다이어트 제한에 대해 내가 너한테 말했는지 기억이 안 나네…
+[ 95.18s][moshi] ⟨ret@94.86s⟩ 다이어트 제한에 대한 ⟦⚡SPAN@96.86s: (no information found)⟧ 기록은 없는 것 같습니다. 말씀해 주시겠어요?
+[ 97.52s][user ] «backchannel» 와.
+[ 98.98s][user ] 아, 맞아. 채식주의자야.
+[101.06s][moshi] 알겠습니다. 레스토랑 추천 시 참고하겠습니다.
+[104.53s][user ] 일본 레일 패스를 사는 게 좋을까?
+[106.75s][moshi] 도쿄 외 지역을 얼마나 여행할 계획인지에 따라 다릅니다. 여러 도시를 탐험한다면 정말 가치가 있을 수 있습니다.
+[116.76s][user ] 교토랑 오사카에 당일치기로 갈 계획이야.
+[119.55s][moshi] 그럼 일본 레일 패스를 사는 게 좋을 것 같아요! 여행이 훨씬 편리하고 저렴해질 거예요.
+[125.35s][user ] 알았어, 그거 좀 알아봐 줘. 7일권은 ⟨ret@128.03s⟩ 얼마야?
+[128.43s][moshi] ⟦⚡SPAN@128.99s: (tool result) 7-day Japan Rail Pass: $220.⟧ 7일 일본 레일 패스는 220달러입니다.
+      CALL: {"function": "Search_1_Search", "arguments": {"query": "Japan Rail Pass 7 day cost"}}
+[129.81s][user ] «backchannel» 어.
+[131.60s][user ] 알았어, 그것도 예약해 ⟨ret@133.43s⟩ 줘.
+[133.75s][moshi] ⟦⚡SPAN@134.55s: (tool result) Rail Pass purchased: 7-day pass, order number Delta555.⟧ 7일 일본 레일 패스가 구매되었습니다. 주문 번호는 델타555입니다.
+      CALL: {"function": "Pass_1_BuyRailPass", "arguments": {"pass_type": "7-day Japan Rail Pass"}}
+[136.65s][user ] «backchannel» 진짜?
+[139.11s][user ] 와, 정말 모든 걸 다 신경 써줬네! 고마워.
+[142.44s][moshi] 정말 감사합니다! 여행 준비를 도와드릴 수 있어서 기쁩니다. 일본에서 즐거운 시간 보내세요.

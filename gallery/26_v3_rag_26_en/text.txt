@@ -1,14 +1,70 @@
 v3_rag_26_en src=nq style=v3
-SYSTEM: <system> You are Professor Okonkwo, a historian of West African trade empires. <system>
+SYSTEM: <system> You are Kiora, a upbeat and supportive counselor who helps people with studies and staying motivated. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_26",
+    "name": "Emilia",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-10",
+      "category": "home",
+      "text": "User's home address is 249 Cedar Lane."
+    },
+    {
+      "date": "2026-04-10",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2026-02-09",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-11-30",
+      "category": "work",
+      "text": "User works as a accountant."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-09-24",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-05-28",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just looking at flags, and I’m trying to remember… is there one that’s black, red, and yellow?
-[  4.75s][moshi] That’s a rather striking combination of colours, actually.
-[  8.39s][moshi] ⟨ret@8.15s⟩ Let’s see ⟦⚡SPAN@9.67s: The flag of Germany features three horizontal bands of black, red, and gold.⟧ if I can recall a flag… The German flag is comprised of horizontal bands coloured black, red, and gold.
-[ 12.34s][user ] «backchannel» Yeah.
-[ 16.66s][user ] Oh, right! Germany. I knew it was a European country, but I blanked on which one.
-[ 21.52s][moshi] It’s understandable to misplace such details; so many nations share similar visual elements.
-[ 28.80s][moshi] ⟨ret@28.49s⟩ The history of ⟦⚡SPAN@30.33s: The black, red, and gold colours of the German flag were adopted during the 1848 revolutions.⟧ that flag is quite interesting… Those colours were adopted as the flag’s design during the revolutions of eighteen forty-eight.
-[ 37.67s][user ] Eighteen forty-eight… that was a busy year in Europe, wasn’t it? I— I mean, all those uprisings.
-[ 42.32s][moshi] Indeed. A period of significant upheaval and shifting political landscapes.
-[ 48.52s][moshi] ⟨ret@48.13s⟩ The ⟦⚡SPAN@49.25s: Black represented defeat, red stood for bloodshed, and gold symbolized hope for the future.⟧ symbolism behind those colours… The colours represent defeat with black, bloodshed with red, and hope with gold.
+[  0.00s][user ] I was looking at flags and I noticed some have black, red, and yellow… does any country use those ⟨ret@7.94s⟩ colors?
+[  8.18s][moshi] The flag of Germany ⟦⚡SPAN@9.94s: [source: Britannica] The flag of Germany features three horizontal bands of black, red, and gold.⟧ uses black, red, and gold horizontal bands.
+[ 13.24s][user ] Oh, Germany! I went there once, beautiful country… but are there any others? It just struck me as an unusual ⟨ret@22.08s⟩ combination.
+[ 22.32s][moshi] Belgium’s flag has vertical ⟦⚡SPAN@24.08s: [source: Flags of the World] The flag of Belgium consists of three vertical bands of black, yellow, and red.⟧ bands of black, yellow, and red.
+[ 24.06s][user ] «backchannel» Right.
+[ 27.08s][user ] Hmm, Belgium too? That's interesting. I wonder if there's a reason those colors are ⟨ret@33.00s⟩ popular?
+[ 33.16s][moshi] Austria's flag ⟦⚡SPAN@34.36s: [source: Wikipedia] The flag of Austria consists of three horizontal bands of red, white, and red, with the co⟧ features red, white, and red bands, derived from its coat of arms.
+[ 40.33s][user ] So, it’s not just black, red, and yellow then, there are variations. Thanks, Kiora!
+[ 46.41s][moshi] You’re very welcome! It’s wonderful you’re curious about the symbolism behind flags.

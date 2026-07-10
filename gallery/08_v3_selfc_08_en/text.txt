@@ -1,24 +1,129 @@
 v3_selfc_08_en src=mcp style=mcp_selfcorrect
-SYSTEM: <system> You are an enthusiastic museum guide, specializing in pre-Columbian art. <system>
+SYSTEM: <system> You are Oruus, a gentle and reflective counselor who helps people with health and daily habits. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_selfc_08",
+    "name": "Julia",
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "French"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-05",
+      "category": "home",
+      "text": "User's home address is 528 Birch Road."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-12-04",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-11-07",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in May."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-05",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.39s⟩ tenth.
-[  4.78s][moshi] Let’s find ⟦⚡SPAN@5.91s: (tool result) Buses_3_FindBus returned three options: Greyhound, 8:00 AM, $150; FlixBus, 10:30 AM, $125; and W⟧ a bus for your trip— There are three buses available: Greyhound, FlixBus, and Wanderu, with prices ranging from one hundred twenty-five to one hundred seventy-five dollars.
-[ 15.24s][user ] Hmm, actually, make that May ⟨ret@17.71s⟩ eleventh—
-[ 17.95s][moshi] Adjusting ⟦⚡SPAN@18.83s: (tool result) Buses_3_FindBus returned two options: FlixBus, 9:00 AM, $130; and Wanderu, 2:00 PM, $180.⟧ the date to May eleventh— For May eleventh, FlixBus departs at nine AM for one hundred thirty dollars, and Wanderu leaves at two PM for one hundred eighty dollars.
-[ 29.82s][user ] The FlixBus sounds good. Can you reserve three seats?
-[ 33.72s][moshi] ⟨ret@33.57s⟩ Certainly, I ⟦⚡SPAN@34.85s: (tool result) Buses_3_ReserveSeats returned Reservation ID: BX7892. Passengers: 3. Bus: FlixBus. Date: May 11.⟧ can reserve those seats— Your FlixBus reservation is confirmed, ID BX7892, for three passengers on May eleventh, totaling three hundred ninety dollars.
-[ 40.30s][user ] «backchannel» Yeah, totally.
-[ 43.91s][user ] Does that include baggage fees?
-[ 45.89s][moshi] «interrupted» That’s a good question—
-[ 47.24s][moshi] ⟨ret@47.17s⟩ FlixBus charges twenty-five dollars ⟦⚡SPAN@49.17s: (tool result) Buses_3_GetBaggageFees returned FlixBus baggage fee: $25 per bag. First bag free.⟧ per bag after the first free one.
-[ 50.04s][user ] «backchannel» Okay.
-[ 51.65s][user ] Okay, good to know.
-[ 52.87s][moshi] Now, about pre-Columbian art, did you know the cultures of Mesoamerica often incorporated jade into their sculptures?
-[ 57.22s][user ] «backchannel» Yeah.
-[ 60.08s][moshi] It was highly prized, symbolizing life and renewal— its vibrant green color representing vegetation and water, quite important to their belief systems.
-[ 65.36s][user ] «backchannel» Yeah.
-[ 69.82s][user ] That's interesting. Are there any museums in Denver with significant pre-Columbian ⟨ret@75.65s⟩ collections?
-[ 75.89s][moshi] Denver has ⟦⚡SPAN@77.09s: (tool result) Museums_FindMuseums returned Denver Art Museum: Pre-Columbian collection, 500 items. Denver Muse⟧ several options— The Denver Art Museum boasts a collection of five hundred pre-Columbian items, while the Museum of Nature & Science has a smaller exhibit of fifty pieces.
-[ 87.17s][user ] The Denver Art Museum sounds like the place to go.
-[ 90.78s][moshi] It's an excellent choice! They have a particularly strong collection of ceramics from the Moche culture— quite delicate and beautifully painted.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@3.92s⟩ May tenth.
+[  4.32s][moshi] There are ⟦⚡SPAN@5.92s: (tool result) Buses found: 14:30, $285; 18:00, $310; 22:15, $295.⟧ three buses: 2:30 PM at two hundred eighty-five dollars, 6 PM at three-ten, and 10:15 PM at two ninety-five.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
+[ 11.18s][user ] «backchannel» Oh.
+[ 14.97s][user ] That 2:30 one sounds good. Book it.
+[ 17.70s][moshi] ⟨ret@17.47s⟩ Excellent. Your ⟦⚡SPAN@19.47s: (tool result) Booking confirmed: ID 7XW9R.⟧ booking is confirmed with ID 7XW9R.
+      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_id": "14:30", "num_passengers": 3}}
+[ 23.36s][user ] Can you remind me about that bus on May ninth?
+[ 26.14s][moshi] May ninth? That's a day before your trip.
+[ 28.11s][user ] «backchannel» Yeah.
+[ 29.88s][user ] …actually, make that May eighth, just to be safe.
+[ 33.27s][moshi] ⟨ret@32.96s⟩ A ⟦⚡SPAN@34.00s: (tool result) Reminder set for May eighth at 10:00 AM.⟧ reminder is set for May eighth at ten AM regarding your bus.
+      CALL: {"function": "Reminders_3_SetReminder", "arguments": {"date": "May eighth", "time": "10:00", "content": "Bus to Denver"}}
+[ 39.10s][user ] What’s the weather like in Denver on May ⟨ret@41.59s⟩ tenth?
+[ 41.67s][moshi] The forecast for ⟦⚡SPAN@43.59s: (tool result) Denver, May tenth: 68°F, sunny.⟧ Denver on May tenth is sixty-eight degrees and sunny.
+      CALL: {"function": "Weather_3_GetWeather", "arguments": {"city": "Denver", "date": "May tenth"}}
+[ 48.51s][user ] Are there any good Italian restaurants near Union Station in ⟨ret@52.36s⟩ Denver?
+[ 52.60s][moshi] Dio Mio has four ⟦⚡SPAN@54.36s: (tool result) Dio Mio Handmade Pasta, 4.5 stars; Stoic & Genuine, 4.2 stars.⟧ and a half stars, and Stoic & Genuine has four point two.
+      CALL: {"function": "Restaurants_3_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "Union Station, Denver"}}
+[ 58.85s][user ] What’s the address for ⟨ret@60.40s⟩ Dio Mio?
+[ 60.80s][moshi] The ⟦⚡SPAN@61.92s: (tool result) 1473 Larimer St, Denver, CO 80202.⟧ address for Dio Mio is fourteen seventy-three Larimer Street, Denver, Colorado, eight-oh-two-oh-two.
+      CALL: {"function": "Restaurants_3_GetRestaurantDetails", "arguments": {"restaurant_name": "Dio Mio Handmade Pasta"}}
+[ 66.77s][user ] «backchannel» Mhm.
+[ 70.27s][user ] Okay, great. And what about hotels near the Denver Art ⟨ret@73.91s⟩ Museum?
+[ 74.15s][moshi] The Maven ⟦⚡SPAN@75.51s: (tool result) The Maven Hotel, $250; Hampton Inn, $180; Hyatt Place, $220.⟧ is two hundred fifty dollars, Hampton Inn is one eighty, and Hyatt Place is two twenty.
+      CALL: {"function": "Hotels_3_FindHotels", "arguments": {"location": "Denver Art Museum"}}
+[ 82.47s][user ] Is the Maven ⟨ret@83.87s⟩ pet-friendly?
+[ 84.27s][moshi] Yes, The Maven ⟦⚡SPAN@85.87s: (tool result) Yes, pet-friendly, $75 fee per stay.⟧ is pet-friendly with a seventy-five dollar fee per stay.
+      CALL: {"function": "Hotels_3_GetHotelDetails", "arguments": {"hotel_name": "The Maven Hotel"}}
+[ 87.54s][user ] «backchannel» Right.
+[ 89.56s][user ] Book a room at the Hampton Inn for one night…
+[ 94.00s][user ] …May tenth.
+[ 95.07s][moshi] ⟨ret@94.91s⟩ Your room at the ⟦⚡SPAN@96.91s: (tool result) Room booked, confirmation number 2B4K6.⟧ Hampton Inn is booked; confirmation number two B four K six.
+      CALL: {"function": "Hotels_3_BookHotel", "arguments": {"hotel_name": "Hampton Inn", "check_in_date": "May tenth", "num_nights": 1}}
+[ 97.78s][user ] «backchannel» Yeah.
+[101.06s][user ] Could you set a reminder to pack my suitcase on May seventh at ⟨ret@105.13s⟩ 6 PM?
+[105.45s][moshi] ⟦⚡SPAN@105.93s: (tool result) Reminder set for May seventh at 6 PM.⟧ A reminder to pack your suitcase is set for May seventh at six PM.
+      CALL: {"function": "Reminders_3_SetReminder", "arguments": {"date": "May seventh", "time": "18:00", "content": "Pack suitcase"}}
+[107.58s][user ] «backchannel» Yeah, totally.
+[111.29s][user ] What’s the fastest route from the Hampton Inn to the Denver Art ⟨ret@114.77s⟩ Museum?
+[115.08s][moshi] Take I-25 ⟦⚡SPAN@116.77s: (tool result) I-25 N, 15 minutes, 8.2 miles.⟧ North for fifteen minutes, about eight point two miles.
+      CALL: {"function": "Navigation_3_GetRoute", "arguments": {"start": "Hampton Inn Denver", "end": "Denver Art Museum"}}
+[121.22s][user ] What time does the Denver Art Museum open on May tenth?
+[124.83s][moshi] ⟨ret@124.67s⟩ The Denver Art Museum ⟦⚡SPAN@126.67s: (tool result) 10:00 AM to 5:00 PM.⟧ opens at ten AM and closes at five PM on May tenth.
+      CALL: {"function": "Museums_3_GetMuseumHours", "arguments": {"museum_name": "Denver Art Museum", "date": "May tenth"}}
+[128.89s][user ] «backchannel» Yeah.
+[131.53s][user ] Can you find me a pharmacy near the ⟨ret@133.72s⟩ hotel?
+[134.12s][moshi] ⟦⚡SPAN@134.22s: (tool result) Walgreens, 0.5 miles; CVS, 0.8 miles.⟧ Walgreens is half a mile away, and CVS is point eight miles.
+      CALL: {"function": "Pharmacies_3_FindPharmacies", "arguments": {"location": "Hampton Inn Denver"}}
+[136.82s][user ] «backchannel» Yeah.
+[139.51s][user ] Is Walgreens open now?
+[141.35s][moshi] ⟨ret@141.27s⟩ Walgreens is ⟦⚡SPAN@142.71s: (tool result) Open until 10:00 PM.⟧ open until ten PM tonight.
+      CALL: {"function": "Pharmacies_3_GetPharmacyHours", "arguments": {"pharmacy_name": "Walgreens"}}
+[144.99s][user ] Okay, good. What’s the latest news about travel restrictions?
+[148.58s][moshi] Travel restrictions are always changing, so it’s good to stay informed.
+[153.30s][user ] Can you check if my flight home on May thirteenth is ⟨ret@156.51s⟩ on time?
+[156.91s][moshi] Your flight on ⟦⚡SPAN@158.51s: (tool result) Flight is on time.⟧ May thirteenth is currently on time.
+      CALL: {"function": "Flights_3_GetFlightStatus", "arguments": {"flight_date": "May thirteenth"}}
+[161.74s][user ] Great. And what’s the exchange rate between US dollars and ⟨ret@166.06s⟩ Euros?
+[166.38s][moshi] One ⟦⚡SPAN@167.18s: (tool result) 1 USD = 0.92 EUR.⟧ US dollar equals point nine-two Euros at this moment.
+      CALL: {"function": "Currency_3_GetExchangeRate", "arguments": {"from_currency": "USD", "to_currency": "EUR"}}
+[168.21s][user ] «backchannel» Yeah, totally.
+[170.91s][user ] Remind me to buy a travel adapter on May ninth at 8 PM.
+[174.96s][moshi] ⟨ret@174.88s⟩ A reminder to ⟦⚡SPAN@176.16s: (tool result) Reminder set for May ninth at 8 PM.⟧ buy a travel adapter is set for May ninth at eight PM.
+      CALL: {"function": "Reminders_3_SetReminder", "arguments": {"date": "May ninth", "time": "20:00", "content": "Buy travel adapter"}}
+[176.54s][user ] «backchannel» Okay.
+[180.72s][user ] What’s the population of ⟨ret@182.21s⟩ Denver?
+[182.61s][moshi] As of ⟦⚡SPAN@184.21s: [source: Wikipedia] Denver is the most populous city in Colorado, with an estimated population of 715,522 as o⟧ 2023, Denver’s estimated population is seven hundred fifteen thousand five hundred twenty-two.
+[185.33s][user ] «backchannel» Okay.
+[192.12s][user ] That’s a lot of people. Is there anything else I should prepare for the trip?
+[196.40s][moshi] [curious] Perhaps thinking about what brings you joy during travel can help ease any anxieties. Sometimes, simply focusing on the positive aspects of a journey can make all the difference.

@@ -1,65 +1,112 @@
 # v3_abs_22_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_abs_22",
+#     "name": "William",
+#     "location": {
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
+#     },
+#     "nationality": "American",
+#     "gender": "male",
+#     "age_range": "early 20s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-01",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
+#     },
+#     {
+#       "date": "2026-04-28",
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
+#     },
+#     {
+#       "date": "2026-04-21",
+#       "category": "diet",
+#       "text": "User is gluten-free."
+#     },
+#     {
+#       "date": "2025-06-26",
+#       "category": "home",
+#       "text": "User's home address is 329 Maple Drive."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-05-26",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2026-04-24",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-13",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     }
+#   ]
+# }
+
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 So, they’re against *all* governme | S3 …instead of just government itself | S4 Okay, that makes sense. Could you 
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.57s  <ret> 발화 (turn1 첫 프레임)
-     2.72s  agent 발화 시작: <ret> That’s a fascinating question, exploring political ide
-     2.92s  user  발화 끝
-     4.33s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.29s]: (no information found)
-    13.96s  user  발화 시작: Oh. Well, what about Alzheimer’s? What does that actually *d
-    13.99s  agent 발화 끝
-    19.26s  agent 발화 시작: It's a truly devastating illness, affecting so many.
-    19.28s  user  발화 끝
-    22.91s  <ret> 발화 (turn4 첫 프레임)
-    22.91s  agent 발화 끝
-    22.99s  agent 발화 시작: <ret> Understanding the pathology is crucial for research. A
-    24.27s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.21s]: Alzheimer’s disease is characterized by the buildup of amyloid plaques
-    30.40s  user  발화 시작: Plaques and tangles… uh, are those like, physical things you
-    30.77s  agent 발화 끝
-    34.82s  agent 발화 시작: [laugh] Yes, absolutely. They are visible under a microscope
-    34.93s  user  발화 끝
-    39.02s  <ret> 발화 (turn7 첫 프레임)
-    39.40s  agent 발화 시작: <ret> Visualizing these changes helps with diagnosis. A micr
-    39.46s  agent 발화 끝
-    40.13s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.73s]: Microscopic examination of brain tissue reveals the presence of amyloi
-    47.14s  agent 발화 끝
-    47.46s  user  발화 시작: Right. And if someone starts forgetting things, is that *alw
-    51.78s  agent 발화 시작: Not at all. Memory loss has many possible causes.
-    52.00s  user  발화 끝
-    55.64s  <ret> 발화 (turn10 첫 프레임)
-    55.95s  agent 발화 시작: <ret> Distinguishing between causes is key to care. Memory l
-    55.99s  agent 발화 끝
-    57.48s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.33s]: Memory loss can be caused by a variety of factors, including stress, d
-    59.93s  user  발화 시작: Mm-hmm.
-    60.43s  user  발화 끝
-    64.38s  user  발화 시작: So, it could be something treatable?
-    64.52s  agent 발화 끝
-    66.70s  agent 발화 시작: Often, yes. Many causes of memory loss are reversible.
-    66.77s  user  발화 끝
-    71.04s  user  발화 시작: That’s… reassuring. But what about those tangles? Can anythi
-    71.19s  agent 발화 끝
-    76.36s  user  발화 끝
-    76.47s  agent 발화 시작: That’s a very important question, currently under intensive 
-    80.04s  <ret> 발화 (turn16 첫 프레임)
-    80.13s  agent 발화 끝
-    80.19s  agent 발화 시작: <ret> Research focuses on preventing tangle formation. Thera
-    81.88s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.11s]: Current research is exploring potential therapies to prevent the forma
-    87.98s  agent 발화 끝
-    88.18s  user  발화 시작: Okay. What’s the earliest age someone can get Alzheimer’s?
-    92.11s  <ret> 발화 (turn18 첫 프레임)
-    92.18s  agent 발화 시작: <ret> Early-onset cases are relatively uncommon. Alzheimer’s
-    92.20s  user  발화 끝
-    93.55s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.42s]: Early-onset Alzheimer’s disease typically affects individuals younger 
-    99.31s  user  발화 시작: That’s…young. But is it genetic, usually?
-    99.46s  agent 발화 끝
-   103.32s  agent 발화 시작: Genetics can certainly play a role, but it’s complex.
-   103.48s  user  발화 끝
-   106.90s  <ret> 발화 (turn21 첫 프레임)
-   107.06s  agent 발화 시작: <ret> Family history is a risk factor, however. Most cases a
-   107.11s  agent 발화 끝
-   108.50s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.78s]: While most cases of Alzheimer’s are sporadic, a small percentage are l
-   114.20s  agent 발화 끝
-   114.66s  user  발화 시작: I— I mean, so it’s not *guaranteed* if my grandmother had it
-   118.50s  user  발화 끝
-   118.85s  agent 발화 시작: No, not at all. It increases risk, but doesn’t guarantee it.
-   123.48s  agent 발화 끝
+     2.64s  <ret> 발화 (turn1 첫 프레임)
+     2.80s  agent 발화 시작: <ret> And I’ve searched for a definitive answer, but unfortu
+     2.82s  user  발화 끝
+     4.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (no information found)
+     6.99s  user  발화 시작: Uh-huh.
+     7.53s  user  발화 끝
+     9.89s  agent 발화 끝
+    10.14s  user  발화 시작: Well, what do they generally dislike about governments?
+    12.83s  <ret> 발화 (turn4 첫 프레임)
+    12.99s  agent 발화 시작: <ret> They generally dislike governments because anarchists 
+    13.14s  user  발화 끝
+    14.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: [source: Wikipedia] Anarchists oppose all forms of hierarchical rule, 
+    20.69s  agent 발화 끝
+    21.28s  user  발화 시작: So, they’re against *all* governments? Even small, local one
+    25.24s  agent 발화 시작: Yes, their opposition extends to all hierarchical structures
+    25.30s  user  발화 끝
+    32.98s  agent 발화 끝
+    33.01s  user  발화 시작: But don’t some anarchists focus more on capitalism as the co
+    37.12s  user  발화 시작: …instead of just government itself?
+    37.21s  user  발화 끝
+    38.77s  <ret> 발화 (turn9 첫 프레임)
+    38.93s  agent 발화 시작: <ret> —and advocate for a stateless, classless society witho
+    39.19s  user  발화 끝
+    40.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: [source: Stanford Encyclopedia of Philosophy] Anarcho-communism advoca
+    45.32s  agent 발화 끝
+    46.02s  user  발화 시작: And what’s the difference between anarcho-communism and anar
+    49.86s  <ret> 발화 (turn11 첫 프레임)
+    50.02s  agent 발화 시작: <ret> Anarcho-syndicalism focuses on labor movements and wor
+    50.18s  user  발화 끝
+    51.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: [source: The Anarchist FAQ] Anarcho-syndicalism focuses on labor movem
+    58.41s  agent 발화 끝
+    58.44s  user  발화 시작: Okay, that makes sense. Could you find me a good book on ana
+    62.77s  <ret> 발화 (turn13 첫 프레임)
+    62.85s  agent 발화 시작: <ret> I found “Anarchy, State, and Utopia” by Robert Nozick,
+    62.98s  user  발화 끝
+    64.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) "Anarchy, State, and Utopia" by Robert Nozick, $18.99.
+    68.55s  agent 발화 끝
+    69.31s  user  발화 시작: That sounds interesting, thanks.
+    71.05s  agent 발화 시작: You’re very welcome! I’m glad I could offer some resources. 
+    71.25s  user  발화 끝
+    77.07s  agent 발화 끝

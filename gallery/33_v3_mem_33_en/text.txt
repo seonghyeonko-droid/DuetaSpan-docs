@@ -1,0 +1,105 @@
+v3_mem_33_en src=mem style=mem
+SYSTEM: <system> You are Diolo, a warm and attentive supportive advisor who helps people with everyday decisions and feelings. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mem_33",
+    "name": "Casey",
+    "location": {
+      "city": "London",
+      "country": "United Kingdom",
+      "timezone": "Europe/London (GMT, UTC+0)",
+      "currency": "GBP (£)"
+    },
+    "nationality": "British",
+    "gender": "non-binary",
+    "age_range": "40s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-07",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-03-07",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-08-08",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-06-20",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-06-15",
+      "category": "home",
+      "text": "User's home address is 743 Cedar Lane."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-07-19",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-06-07",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][moshi] Hi Casey, I'm Diolo. It’s lovely to connect with you today.
+[  2.84s][user ] «backchannel» Yeah, yeah.
+[  4.32s][user ] Oh, hello. I was just wondering what the time is in London right now.
+[  8.19s][moshi] ⟨ret@8.04s⟩ It’s currently 10:32 AM ⟦⚡SPAN@10.04s: (tool result) It’s currently 10:32 AM in London.⟧ in London. A good time to start the day, wouldn't you agree?
+      CALL: {"function": "get_current_time", "arguments": {"location": "London"}}
+[ 11.74s][user ] «backchannel» Yeah.
+[ 15.21s][user ] Yeah, I suppose so. I’m trying to decide what to make for dinner tonight.
+[ 19.31s][moshi] That sounds nice. Do you have any preferences or a cuisine you’re leaning towards?
+[ 24.47s][user ] I’m gluten-free, so that limits things a ⟨ret@26.90s⟩ little.
+[ 27.29s][moshi] You are gluten-free, ⟦⚡SPAN@28.90s: [2025-10-29] User is gluten-free.⟧ yes. That does narrow down the choices, but there are still so many delicious options!
+[ 30.43s][user ] «backchannel» Yeah, yeah.
+[ 34.52s][user ] True. I really love sushi, ⟨ret@36.34s⟩ actually.
+[ 36.57s][moshi] Sushi is a ⟦⚡SPAN@38.34s: [2026-05-07] User's favorite cuisine is sushi.⟧ wonderful choice! It’s naturally gluten-free, which is perfect for you.
+[ 41.75s][user ] Exactly. I was thinking about trying to make some at home, though.
+[ 44.85s][moshi] That’s ambitious! Do you enjoy cooking generally?
+[ 50.45s][user ] I've been getting into home fermentation lately.
+[ 53.10s][moshi] ⟨ret@53.03s⟩ Home fermentation? That's ⟦⚡SPAN@55.03s: [2026-03-07] User is into home fermentation.⟧ fascinating! It’s a wonderfully mindful practice.
+[ 58.14s][user ] It is. I was thinking maybe I could ferment some vegetables to go with the sushi.
+[ 62.99s][moshi] That sounds like a delightful combination of flavors. A really creative idea.
+[ 68.12s][user ] I have a Beagle named Rusty, he'd probably try to steal everything.
+[ 72.13s][moshi] ⟨ret@72.06s⟩ Oh, ⟦⚡SPAN@73.02s: [2025-08-08] User has a Beagle named Rusty.⟧ Rusty! A Beagle, how lovely. They are notorious for their inquisitive noses, aren't they?
+[ 80.40s][user ] He really is. I'm planning a birthday dinner for a friend soon, ⟨ret@84.06s⟩ too.
+[ 84.22s][moshi] You’re planning a birthday ⟦⚡SPAN@86.06s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ dinner for six, with outdoor seating, as we discussed before. How’s that progressing?
+[ 93.48s][user ] I haven’t actually booked anywhere yet. Somewhere with a nice garden would be great.
+[ 97.93s][moshi] ⟨ret@97.86s⟩ The Ivy Chelsea ⟦⚡SPAN@99.22s: (tool result) The Ivy Chelsea Garden has availability at 7:30 PM.⟧ Garden has availability at 7:30 PM. It's a beautiful spot.
+      CALL: {"function": "find_restaurants", "arguments": {"location": "London", "party_size": "6", "outdoor_seating": "yes", "cuisine": "any"}}
+[103.02s][user ] Oh, that sounds perfect! Can you check if they have a peanut-free menu?
+[106.85s][moshi] ⟨ret@106.70s⟩ You have a peanut ⟦⚡SPAN@108.38s: [2025-06-20] User is allergic to peanuts.⟧ allergy, yes. I’ll check for you.
+[110.17s][moshi] ⟨ret@109.86s⟩ The Ivy Chelsea Garden ⟦⚡SPAN@111.62s: (tool result) The Ivy Chelsea Garden confirms they offer a peanut-free menu.⟧ does offer a peanut-free menu, so that’s a relief.
+      CALL: {"function": "check_allergy_menu", "arguments": {"restaurant": "The Ivy Chelsea Garden", "allergy": "peanuts"}}
+[111.45s][user ] «backchannel» Yeah.
+[114.51s][user ] Wonderful! Let’s book it then, 7:30 ⟨ret@117.47s⟩ PM.
+[117.71s][moshi] Your reservation at The ⟦⚡SPAN@119.47s: (tool result) Booking confirmed for The Ivy Chelsea Garden, 7:30 PM, party of six. Confirmation number is 8294⟧ Ivy Chelsea Garden is confirmed for 7:30 PM. Enjoy your friend's birthday!
+      CALL: {"function": "book_restaurant", "arguments": {"restaurant": "The Ivy Chelsea Garden", "time": "7:30 PM", "party_size": "6"}}

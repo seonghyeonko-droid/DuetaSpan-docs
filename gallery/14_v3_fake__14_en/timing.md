@@ -1,55 +1,115 @@
 # v3_fake__14_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_fake__14",
+#     "name": "Marcus",
+#     "location": {
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
+#     },
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-04-23",
+#       "category": "home",
+#       "text": "User's home address is 240 Birch Road."
+#     },
+#     {
+#       "date": "2026-02-26",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
+#       "date": "2025-11-09",
+#       "category": "work",
+#       "text": "User works as a graduate student."
+#     },
+#     {
+#       "date": "2025-10-10",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     },
+#     {
+#       "date": "2025-09-14",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-01-07",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     }
+#   ]
+# }
 
-     0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
-     6.02s  user  발화 끝
-     6.45s  agent 발화 시작: That's a lovely question, and a wonderful piece of music.
-     9.88s  <ret> 발화 (turn2 첫 프레임)
-    10.19s  agent 발화 끝
-    10.20s  agent 발화 시작: <ret> Let me quickly check the songwriting credits for you. 
-    11.48s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.74s]: Björn Ulvaeus wrote “My Love, My Life”, which featured in the musical 
-    20.06s  user  발화 시작: Oh, really? I always thought it was Benny Andersson.
-    20.17s  agent 발화 끝
-    23.50s  agent 발화 시작: It’s a common mistake; they collaborated so closely.
-    23.66s  user  발화 끝
-    27.14s  <ret> 발화 (turn5 첫 프레임)
-    27.30s  agent 발화 시작: <ret> I can pull up a bit more detail on their partnership. 
-    27.35s  agent 발화 끝
-    28.74s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.42s]: Benny Andersson and Björn Ulvaeus formed a songwriting partnership tha
-    33.80s  user  발화 시작: Mm-hmm.
-    34.29s  user  발화 끝
-    36.84s  agent 발화 시작: Their compositions often feature complex harmonies and emoti
-    36.95s  agent 발화 끝
-    41.83s  <ret> 발화 (turn8 첫 프레임)
-    42.14s  agent 발화 시작: <ret> It’s interesting to consider the emotional undercurren
-    42.33s  ⚡SPAN 주입 [d'=0.50s / d_lead=3.55s]: Ulvaeus has spoken of drawing inspiration from personal experiences wh
-    42.34s  agent 발화 끝
-    48.12s  user  발화 시작: Yeah, yeah.
-    49.36s  user  발화 끝
-    51.27s  agent 발화 끝
-    51.43s  user  발화 시작: That makes sense, I suppose. Did he write any other songs fo
-    56.35s  <ret> 발화 (turn11 첫 프레임)
-    56.74s  agent 발화 시작: <ret> He contributed significantly to the overall soundtrack
-    56.98s  user  발화 끝
-    58.27s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=4.07s]: (tool result) Current time in Tokyo is 19:34 on October 26th.
-    60.56s  <ret> 발화 (turn12 첫 프레임)
-    60.64s  agent 발화 시작: <ret> Let’s see which other tracks bear his name. He also co
-    60.82s  agent 발화 끝
-    62.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.65s]: Ulvaeus co-wrote “Dancing Queen”, another popular song featured in Mam
-    69.31s  agent 발화 끝
-    71.01s  user  발화 시작: Oh, “Dancing Queen”! That’s a classic!
-    74.00s  user  발화 시작: Was he involved in writing the story for Mamma Mia?
-    74.06s  user  발화 끝
-    77.74s  user  발화 끝
-    78.20s  agent 발화 시작: He wasn’t directly involved in the plot development, though.
-    81.81s  <ret> 발화 (turn16 첫 프레임)
-    82.11s  agent 발화 시작: <ret> The story itself has a rather fascinating origin. Cath
-    82.23s  agent 발화 끝
-    82.61s  ⚡SPAN 주입 [d'=0.80s / d_lead=3.71s]: The storyline for Mamma Mia! was created by Catherine Johnson, based o
-    88.19s  user  발화 시작: Yeah.
-    88.82s  user  발화 끝
-    92.30s  agent 발화 끝
-    92.59s  user  발화 시작: So it wasn’t based on a pre-existing play or novel?
-    96.61s  user  발화 끝
-    97.00s  agent 발화 시작: Precisely—it was crafted specifically around the existing so
-   102.09s  agent 발화 끝
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Mamma Mia! | S2 Do you know what other songs Björn | S3 …entire soundtrack! That’s incredi | S4 That sounds perfect! Is it easy to
+
+     0.00s  user  발화 시작: I was just listening to Mamma Mia! and I’m trying to remembe
+     6.86s  user  발화 끝
+     7.10s  agent 발화 시작: Oh, that’s a lovely song. It’s one of my favorites from the 
+    11.16s  user  발화 시작: I know it’s one of the ABBA songs, but I can’t place exactly
+    11.27s  agent 발화 끝
+    16.44s  <ret> 발화 (turn3 첫 프레임)
+    16.75s  agent 발화 시작: <ret> Björn Ulvaeus wrote “My Love, My Life.” He’s one of th
+    16.86s  user  발화 끝
+    18.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: [source: AllMusic] "My Love, My Life" was written by Björn Ulvaeus.
+    22.87s  user  발화 시작: That’s right! I always get Benny and Björn mixed up.
+    23.00s  agent 발화 끝
+    27.02s  <ret> 발화 (turn5 첫 프레임)
+    27.17s  agent 발화 시작: <ret> It's very easy to do; they were a wonderful songwritin
+    27.32s  user  발화 끝
+    29.02s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=4.59s]: (tool result) AAPL: 170.34
+    31.76s  agent 발화 끝
+    31.94s  user  발화 시작: Do you know what other songs Björn Ulvaeus wrote for Mamma M
+    35.45s  <ret> 발화 (turn7 첫 프레임)
+    35.70s  agent 발화 시작: <ret> Björn Ulvaeus, along with Benny Andersson, co-wrote al
+    35.82s  user  발화 끝
+    37.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: [source: Songfacts] Björn Ulvaeus and Benny Andersson co-wrote almost 
+    41.44s  agent 발화 끝
+    41.49s  user  발화 시작: Wow, so almost the…
+    43.42s  user  발화 끝
+    44.72s  user  발화 시작: …entire soundtrack! That’s incredible.
+    47.53s  agent 발화 시작: It truly is. They created such a vibrant and memorable score
+    47.72s  user  발화 끝
+    49.98s  user  발화 시작: Yeah.
+    50.61s  user  발화 끝
+    53.37s  agent 발화 끝
+    54.33s  user  발화 시작: I’m planning a trip to Stockholm, actually.
+    57.11s  agent 발화 시작: [happy] Oh, how wonderful! Stockholm is a beautiful city, fu
+    57.24s  user  발화 끝
+    59.06s  user  발화 시작: Yeah.
+    59.69s  user  발화 끝
+    62.68s  user  발화 시작: I'd love to find some places connected to ABBA while I’m the
+    62.81s  agent 발화 끝
+    66.24s  <ret> 발화 (turn16 첫 프레임)
+    66.32s  agent 발화 시작: <ret> You can visit the ABBA The Museum, located in Djurgård
+    66.47s  user  발화 끝
+    67.68s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.21s]: [source: Visit Stockholm] The ABBA The Museum is located in Djurgården
+    69.38s  user  발화 시작: Uh-huh.
+    69.83s  user  발화 끝
+    70.49s  user  발화 시작: That sounds perfect! Is it easy to get to?
+    70.53s  agent 발화 끝
+    73.37s  <ret> 발화 (turn19 첫 프레임)
+    73.69s  agent 발화 시작: <ret> The estimated travel time to the ABBA The Museum is tw
+    73.81s  user  발화 끝
+    74.73s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.77s]: (tool result) Route calculated: Djurgårdsstrand 19, 115 21 Stockholm, 
+    77.23s  user  발화 시작: Yeah.
+    77.73s  user  발화 끝
+    78.45s  agent 발화 끝
+    79.89s  user  발화 시작: Great! Thanks so much for your help, Kliana.
+    82.80s  user  발화 끝
+    83.08s  agent 발화 시작: You’re very welcome. I hope you have a truly magical time in
+    87.47s  agent 발화 끝

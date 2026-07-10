@@ -1,16 +1,110 @@
 v3_mcp_02_en src=mcp style=v3
-SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+SYSTEM: <system> You are Driaus, a kind and steady supportive advisor who helps people with productivity and daily routines. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_02",
+    "name": "Ethan",
+    "location": {
+      "city": "Berlin",
+      "country": "Germany",
+      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "German",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "German"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-10",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-02-24",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-12-24",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-11-11",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-09-15",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in May."
+    },
+    {
+      "date": "2025-07-31",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-19",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-05-11",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.54s⟩ com.
-[  3.77s][moshi] Certainly, I can ⟦⚡SPAN@5.30s: (tool result) The website reports current conditions in London are 12 degrees Celsius and cloudy.⟧ monitor that website for you. The current temperature in London is twelve degrees Celsius with cloudy skies.
+[  0.00s][user ] Begin watching for a weather update from weather dot example dot ⟨ret@3.88s⟩ com.
+[  4.11s][moshi] The temperature is ⟦⚡SPAN@5.88s: (tool result) Temperature is 22 degrees Celsius, partly cloudy.⟧ currently 22 degrees Celsius, with partly cloudy conditions.
       CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com"}}
-[ 12.99s][user ] Oh, that's… colder than I thought, actually. I— I mean, I was hoping for sunshine.
-[ 18.86s][moshi] London weather can be quite changeable, yes. Are you planning a trip there?
-[ 23.58s][user ] Maybe. Um, could you check if there are any direct flights from New York to ⟨ret@28.71s⟩ London tomorrow?
-[ 29.02s][moshi] I can ⟦⚡SPAN@30.23s: (tool result) There are three direct flights tomorrow: United at 9:00 AM for $750, British Airways at 6:00 PM ⟧ certainly look into flight availability for you. There are three direct flights tomorrow, ranging from seven hundred fifty to eight hundred twenty dollars.
-      CALL: {"function": "flights_search", "arguments": {"from": "New York", "to": "London", "date": "tomorrow"}}
-[ 33.12s][user ] «backchannel» Mhm.
-[ 38.44s][user ] Hmm, the United one sounds good. Book that for me, please.
-[ 42.41s][moshi] ⟨ret@42.34s⟩ Absolutely, ⟦⚡SPAN@43.38s: (tool result) Your United flight to London tomorrow at 9:00 AM is confirmed; booking reference is Alpha-Charli⟧ I can take care of that booking for you. Your flight on United at nine AM is confirmed, booking reference Alpha-Charlie-nine-two-seven.
-      CALL: {"function": "flights_book", "arguments": {"flight": "United", "time": "9:00 AM", "price": "$750"}}
+[ 10.25s][user ] That's good to know. I’m planning a picnic tomorrow, actually.
+[ 14.31s][moshi] That sounds lovely! A picnic is a wonderful way to enjoy the day.
+[ 16.22s][user ] «backchannel» Right.
+[ 18.92s][user ] I wonder if it will rain ⟨ret@20.49s⟩ though…
+[ 20.81s][moshi] I've checked the forecast. ⟦⚡SPAN@22.49s: (tool result) Tomorrow: 20 degrees Celsius, 60% chance of rain.⟧ Tomorrow will be 20 degrees Celsius with a 60 percent chance of rain.
+      CALL: {"function": "playwright_expect_response", "arguments": {"url": "weather.example.com/forecast"}}
+[ 27.04s][user ] Oh, hmm.
+[ 28.05s][moshi] It might be wise to have a backup plan, just in case.
+[ 29.30s][user ] «backchannel» Yeah.
+[ 32.20s][user ] Yeah, you're right. Maybe I’ll book a table inside somewhere instead. Do you think The Rose Garden has availability tomorrow around 1pm?
+[ 41.57s][moshi] ⟨ret@41.42s⟩ The Rose Garden ⟦⚡SPAN@43.42s: (tool result) The Rose Garden: Available tomorrow at 1:15 PM for two people.⟧ has availability tomorrow at 1:15 PM for a party of two.
+      CALL: {"function": "restaurant_check_availability", "arguments": {"restaurant_name": "The Rose Garden", "date": "tomorrow", "time": "1pm", "party_size": "2"}}
+[ 47.62s][user ] 1:15 is fine. Could you book it for me, please?
+[ 50.72s][moshi] ⟨ret@50.64s⟩ Excellent. Your ⟦⚡SPAN@52.08s: (tool result) Reservation confirmed: The Rose Garden, tomorrow, 1:15 PM, party of 2. Confirmation # RG47B.⟧ reservation at The Rose Garden is confirmed for tomorrow at 1:15 PM. Your confirmation number is RG47B.
+      CALL: {"function": "restaurant_reserve", "arguments": {"restaurant_name": "The Rose Garden", "date": "tomorrow", "time": "1:15pm", "party_size": "2"}}
+[ 55.40s][user ] «backchannel» Oh.
+[ 60.76s][user ] Perfect!
+[ 61.53s][moshi] I’m glad I could help with that. It's always good to be prepared.
+[ 67.29s][user ] Actually, I should probably send a reminder to my friend, Sarah. Remind her about the picnic—or the restaurant, I guess now—for tomorrow at ⟨ret@76.54s⟩ 1:15.
+[ 76.94s][moshi] A reminder has ⟦⚡SPAN@78.54s: (tool result) Reminder sent to Sarah: Rose Garden, tomorrow 1:15 PM.⟧ been sent to Sarah regarding the reservation at The Rose Garden tomorrow at 1:15 PM.
+      CALL: {"function": "send_reminder", "arguments": {"recipient": "Sarah", "message": "Rose Garden reservation tomorrow at 1:15pm", "time": "now"}}
+[ 80.31s][user ] «backchannel» Right.
+[ 84.80s][user ] Wonderful, thank you!
+[ 86.67s][moshi] You’re very welcome. It's all taken care of.
+[ 87.62s][user ] «backchannel» Yeah.
+[ 89.14s][user ] I was also hoping to find a good book to read while I wait for Sarah. Something…thrilling.
+[ 95.46s][moshi] A thrilling read sounds perfect for a relaxing afternoon.
+[ 96.58s][user ] «backchannel» Mhm.
+[101.31s][user ] Could you search for bestsellers in the mystery and thriller category?
+[105.40s][moshi] ⟨ret@105.32s⟩ The top three bestsellers in ⟦⚡SPAN@107.32s: (tool result) Top 3: “The Silent Patient”, “Gone Girl”, “The Guest List”.⟧ mystery and thriller are “The Silent Patient”, “Gone Girl”, and “The Guest List”.
+      CALL: {"function": "book_search", "arguments": {"genre": "mystery and thriller", "search_term": "bestsellers"}}
+[112.25s][user ] “The Silent Patient” sounds good.
+[114.37s][moshi] [happy] That's an excellent choice! It's a very popular and gripping novel.
+[116.74s][user ] «backchannel» Right.
+[119.07s][user ] Thanks, Driaus. You've been a huge help.
+[121.92s][moshi] It was my pleasure. I’m glad I could assist you in planning a lovely day.

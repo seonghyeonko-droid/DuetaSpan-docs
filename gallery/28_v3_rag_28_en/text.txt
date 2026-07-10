@@ -1,17 +1,74 @@
 v3_rag_28_en src=nq style=v2
-SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+SYSTEM: <system> You are Brunal, a thoughtful and soft-spoken wellness coach who helps people with money and budgeting. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_28",
+    "name": "Lucia",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "50s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-26",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2026-03-27",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-03-03",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-10-11",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-07-27",
+      "category": "home",
+      "text": "User's home address is 820 Cedar Lane."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-29",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-11-13",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was reading about government departments, and it got me wondering… when was the Department of Veterans Affairs actually created?
-[  7.92s][moshi] That’s a very good question, tracing the history of support for those who served is important.
-[ 12.95s][moshi] ⟨ret@12.57s⟩ Let’s ⟦⚡SPAN@13.85s: The United States Department of Veterans Affairs was established on July 21, 1930, by President Herbert Hoover⟧ pinpoint that date for you— The Department of Veterans Affairs was established on July twenty-first, nineteen thirty, by President Hoover.
-[ 18.10s][user ] «backchannel» Mm-hmm.
-[ 21.55s][user ] Nineteen thirty? That seems… relatively recent, doesn’t it? Weren’t there veterans’ benefits *before* then?
-[ 28.87s][moshi] Certainly, benefits existed prior to the department’s formal creation; support evolved over time.
-[ 34.71s][moshi] ⟨ret@34.31s⟩ Actually, earlier forms ⟦⚡SPAN@36.15s: Prior to 1930, the Veterans Bureau, created in 1921, administered benefits for veterans of World War I and ear⟧ of aid were quite extensive— Before nineteen thirty, the Veterans Bureau, created in nineteen twenty-one, handled benefits for veterans of past wars.
-[ 42.01s][user ] «backchannel» Yeah.
-[ 45.55s][user ] But did that Bureau actually have the power to *create* new benefits, or just administer what Congress gave it?
-[ 52.44s][moshi] «interrupted» That’s a subtle but crucial distinction—
-[ 54.93s][moshi] ⟨ret@54.70s⟩ The Veterans Bureau mostly ⟦⚡SPAN@56.70s: The Veterans Bureau primarily implemented benefits authorized by Congress, lacking independent authority to es⟧ put into action benefits approved by Congress, it didn't create new programs itself.
-[ 61.34s][user ] So Hoover's department was a step up in terms of… agency, I guess?
-[ 66.54s][moshi] Precisely, the nineteen thirty restructuring consolidated and expanded the scope of veterans’ services.
+[  0.00s][user ] I was just reading about government departments… when did the Veterans Affairs department actually get ⟨ret@5.90s⟩ started?
+[  6.22s][moshi] The ⟦⚡SPAN@7.02s: [source: Wikipedia] The United States Department of Veterans Affairs was established on July 21, 1930, by Pres⟧ Department of Veterans Affairs was established in nineteen thirty by President Hoover.
+[ 12.01s][user ] Nineteen thirty? That seems… surprisingly recent, honestly. I always thought it was much ⟨ret@17.94s⟩ older.
+[ 18.34s][moshi] Actually, support ⟦⚡SPAN@19.62s: [source: History.com] Prior to 1930, veterans’ affairs were managed by the Bureau of Pensions, created in 1861⟧ for veterans goes back further. Before nineteen thirty, veterans’ affairs were handled by the Bureau of Pensions, created in eighteen sixty-one.
+[ 28.47s][user ] So the Bureau of Pensions handled things during the Civil War… but what about *before* that? Like, Revolutionary War ⟨ret@36.40s⟩ veterans?
+[ 36.79s][moshi] Assistance to veterans ⟦⚡SPAN@38.40s: [source: VA.gov] Initially, assistance to veterans dates back to 1636, when the Pilgrims provided benefits to ⟧ began as early as sixteen thirty-six, with benefits provided to disabled soldiers by the Pilgrims.
+[ 39.27s][user ] «backchannel» Right.
+[ 44.94s][user ] Wow, sixteen thirty-six! That’s incredible. So it’s been a concern almost from the beginning of the country.

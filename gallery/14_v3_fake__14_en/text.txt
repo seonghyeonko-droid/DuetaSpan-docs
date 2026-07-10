@@ -1,24 +1,81 @@
 v3_fake__14_en src=nq style=v1
-SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
+SYSTEM: <system> You are Kliana, a thoughtful and soft-spoken supportive advisor who helps people with settling into a new city. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_fake__14",
+    "name": "Marcus",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
+    },
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-23",
+      "category": "home",
+      "text": "User's home address is 240 Birch Road."
+    },
+    {
+      "date": "2026-02-26",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-11-09",
+      "category": "work",
+      "text": "User works as a graduate student."
+    },
+    {
+      "date": "2025-10-10",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-09-14",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-07",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a beautiful song.
-[  6.45s][moshi] That's a lovely question, and a wonderful piece of music.
-[ 10.20s][moshi] ⟨ret@9.88s⟩ Let me ⟦⚡SPAN@11.48s: Björn Ulvaeus wrote “My Love, My Life”, which featured in the musical Mamma Mia!.⟧ quickly check the songwriting credits for you. Björn Ulvaeus is credited with writing “My Love, My Life” for the Mamma Mia! musical.
-[ 20.06s][user ] Oh, really? I always thought it was Benny Andersson.
-[ 23.50s][moshi] It’s a common mistake; they collaborated so closely.
-[ 27.30s][moshi] ⟨ret@27.14s⟩ I can pull ⟦⚡SPAN@28.74s: Benny Andersson and Björn Ulvaeus formed a songwriting partnership that produced hits for ABBA.⟧ up a bit more detail on their partnership. Andersson and Ulvaeus created many successful songs together as the core of ABBA.
-[ 33.80s][user ] «backchannel» Mm-hmm.
-[ 36.84s][moshi] Their compositions often feature complex harmonies and emotional depth.
-[ 42.14s][moshi] ⟨ret@41.83s⟩ ⟦⚡SPAN@42.33s: Ulvaeus has spoken of drawing inspiration from personal experiences when writing songs.⟧ It’s interesting to consider the emotional undercurrents. Ulvaeus found inspiration for his songwriting in his own personal life.
-[ 48.12s][user ] «backchannel» Yeah, yeah.
-[ 51.43s][user ] That makes sense, I suppose. Did he write any other songs for ⟨ret@56.35s⟩ the movie?
-[ 56.74s][moshi] He contributed ⟦⚡SPAN IRRELEVANT@58.27s: (tool result) Current time in Tokyo is 19:34 on October 26th.⟧ significantly to the overall soundtrack.
-[ 60.64s][moshi] ⟨ret@60.56s⟩ Let’s see which ⟦⚡SPAN@62.56s: Ulvaeus co-wrote “Dancing Queen”, another popular song featured in Mamma Mia!.⟧ other tracks bear his name. He also co-wrote “Dancing Queen,” a well-known song from the film.
-[ 71.01s][user ] Oh, “Dancing Queen”! That’s a classic!
-[ 74.00s][user ] Was he involved in writing the story for Mamma Mia?
-[ 78.20s][moshi] He wasn’t directly involved in the plot development, though.
-[ 82.11s][moshi] ⟨ret@81.81s⟩ ⟦⚡SPAN@82.61s: The storyline for Mamma Mia! was created by Catherine Johnson, based on ABBA's songs.⟧ The story itself has a rather fascinating origin. Catherine Johnson developed the story for the musical, using ABBA’s music as a base.
-[ 88.19s][user ] «backchannel» Yeah.
-[ 92.59s][user ] So it wasn’t based on a pre-existing play or novel?
-[ 97.00s][moshi] Precisely—it was crafted specifically around the existing songs.
+[  0.00s][user ] I was just listening to Mamma Mia! and I’m trying to remember who wrote that beautiful song, “My Love, My Life.”
+[  7.10s][moshi] Oh, that’s a lovely song. It’s one of my favorites from the musical.
+[ 11.16s][user ] I know it’s one of the ABBA songs, but I can’t place exactly *who* in ABBA wrote ⟨ret@16.44s⟩ it.
+[ 16.75s][moshi] Björn Ulvaeus wrote ⟦⚡SPAN@18.44s: [source: AllMusic] "My Love, My Life" was written by Björn Ulvaeus.⟧ “My Love, My Life.” He’s one of the primary songwriters for ABBA.
+[ 22.87s][user ] That’s right! I always get Benny and Björn mixed ⟨ret@27.02s⟩ up.
+[ 27.17s][moshi] It's very easy to ⟦⚡SPAN IRRELEVANT@29.02s: (tool result) AAPL: 170.34⟧ do; they were a wonderful songwriting team together.
+[ 31.94s][user ] Do you know what other songs Björn Ulvaeus wrote for Mamma ⟨ret@35.45s⟩ Mia?
+[ 35.70s][moshi] Björn Ulvaeus, along with ⟦⚡SPAN@37.45s: [source: Songfacts] Björn Ulvaeus and Benny Andersson co-wrote almost all of the songs in Mamma Mia!.⟧ Benny Andersson, co-wrote almost all of the songs in *Mamma Mia!*.
+[ 41.49s][user ] Wow, so almost the…
+[ 44.72s][user ] …entire soundtrack! That’s incredible.
+[ 47.53s][moshi] It truly is. They created such a vibrant and memorable score for the film and stage.
+[ 49.98s][user ] «backchannel» Yeah.
+[ 54.33s][user ] I’m planning a trip to Stockholm, actually.
+[ 57.11s][moshi] [happy] Oh, how wonderful! Stockholm is a beautiful city, full of music and history.
+[ 59.06s][user ] «backchannel» Yeah.
+[ 62.68s][user ] I'd love to find some places connected to ABBA while I’m there.
+[ 66.32s][moshi] ⟨ret@66.24s⟩ You can visit ⟦⚡SPAN@67.68s: [source: Visit Stockholm] The ABBA The Museum is located in Djurgården, Stockholm.⟧ the ABBA The Museum, located in Djurgården, Stockholm.
+[ 69.38s][user ] «backchannel» Uh-huh.
+[ 70.49s][user ] That sounds perfect! Is it easy to get ⟨ret@73.37s⟩ to?
+[ 73.69s][moshi] The estimated ⟦⚡SPAN@74.73s: (tool result) Route calculated: Djurgårdsstrand 19, 115 21 Stockholm, Sweden. Estimated time: 25 minutes.⟧ travel time to the ABBA The Museum is twenty-five minutes.
+[ 77.23s][user ] «backchannel» Yeah.
+[ 79.89s][user ] Great! Thanks so much for your help, Kliana.
+[ 83.08s][moshi] You’re very welcome. I hope you have a truly magical time in Stockholm.

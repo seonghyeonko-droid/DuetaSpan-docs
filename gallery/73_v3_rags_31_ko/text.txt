@@ -1,0 +1,65 @@
+v3_rags_31_ko src=nq_single style=rag_single
+SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 침착하고 인내심 있는 조력자 Sorax입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rags_31",
+    "name": "라경",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "late 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-15",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2026-03-12",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-02-24",
+      "category": "home",
+      "text": "User's home address is 982 Cedar Lane."
+    },
+    {
+      "date": "2026-01-24",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-12-18",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-11-04",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-25",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 데어데블 시즌 삼은 언제 ⟨ret@1.69s⟩ 공개되나요?
+[  1.92s][moshi] ⟦⚡SPAN@2.73s: [source: Wikipedia] Daredevil season 3 was released on October 26, 2018.⟧ 데어데블 시즌 삼의 공개 날짜를 알려드릴게요. 데어데블 시즌 삼은 이천십팔년 십월 이십육일에 공개되었어요.

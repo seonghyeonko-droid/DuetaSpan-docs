@@ -1,40 +1,88 @@
 v3_abs_21_en src=squad2 style=abstain
-SYSTEM: <system> You are an amateur astronomer who has spent years mapping the night sky. <system>
+SYSTEM: <system> You are Nias, a grounded and empathetic counselor who helps people with health and daily habits. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_abs_21",
+    "name": "Camille",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-11",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-03-16",
+      "category": "home",
+      "text": "User's home address is 874 Birch Road."
+    },
+    {
+      "date": "2026-02-20",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2025-12-21",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in May."
+    },
+    {
+      "date": "2025-09-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2025-09-02",
+      "category": "work",
+      "text": "User works as a graduate student."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-06-18",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How many senators are there in the French Senate?
-[  2.73s][moshi] ⟨ret@2.68s⟩ That’s an ⟦⚡SPAN@3.72s: (no information found)⟧ interesting question about French governance. I’m afraid I don’t have that specific number in my records right now. Perhaps we can look elsewhere?
-[ 10.68s][user ] Could you find out for me, then?
-[ 12.64s][moshi] ⟨ret@12.41s⟩ Let me share ⟦⚡SPAN@13.85s: The French Senate has 348 senators, each elected by an electoral college for a six-year term.⟧ what I just discovered. The French Senate is comprised of three hundred and forty-eight senators. Quite a sizable body, isn't it?
-[ 21.35s][user ] Wow, that’s a lot. What about the US Senate?
-[ 24.05s][moshi] The United States Senate has one hundred members.
-[ 25.50s][user ] «backchannel» Mhm.
-[ 27.66s][user ] That's a big difference! Is the French Senate more powerful?
-[ 31.05s][moshi] That’s a complex question with a nuanced answer, really.
-[ 33.12s][user ] «backchannel» Okay.
-[ 35.79s][user ] Could you explain the powers of the ⟨ret@38.06s⟩ French Senate?
-[ 38.46s][moshi] Let's ⟦⚡SPAN@39.42s: The French Senate shares legislative power with the National Assembly, reviewing and amending proposed laws.⟧ delve into their legislative role. The French Senate reviews and amends proposed laws alongside the National Assembly. They play a vital role in lawmaking.
-[ 49.72s][user ] So, they can change laws?
-[ 51.62s][moshi] Absolutely, they have the power to amend proposed legislation.
-[ 52.94s][user ] «backchannel» Yeah, yeah.
-[ 56.56s][user ] Do they have any other responsibilities besides ⟨ret@59.24s⟩ laws?
-[ 59.55s][moshi] ⟦⚡SPAN@60.20s: The French Senate also represents local authorities and ratifies international treaties.⟧ Beyond lawmaking, they have other duties. They represent local authorities and ratify international treaties too. A broad range of responsibilities, indeed.
-[ 69.82s][user ] Representing local authorities sounds interesting.
-[ 72.89s][moshi] It’s a key part of their structure, ensuring regional voices are heard.
-[ 77.82s][user ] Do they get to vote on everything?
-[ 79.64s][user ] Do they vote on everything the National Assembly does?
-[ 82.51s][moshi] That’s a good point to clarify. They don't vote on *everything*—the process is more complex than that. It involves a system of shuttle diplomacy.
-[ 88.60s][user ] «backchannel» Okay.
-[ 91.48s][user ] Shuttle diplomacy? What’s that?
-[ 93.68s][moshi] It means the two assemblies—Senate and National Assembly—negotiate until they agree.
-[ 96.96s][user ] «backchannel» Yeah.
-[ 99.00s][moshi] It's a back-and-forth process to reach a consensus on laws.
-[101.47s][user ] «backchannel» Right.
-[103.15s][user ] So, if they disagree, what happens?
-[105.40s][moshi] A joint commission attempts to reconcile the differences, ultimately.
-[110.01s][user ] And if *they* can’t agree?
-[111.46s][moshi] The National Assembly generally has the final say, though.
-[115.26s][user ] Oh. So the National Assembly is more powerful?
-[118.43s][moshi] In cases of disagreement, yes, the National Assembly holds greater power.
-[123.31s][user ] That seems a bit unfair.
-[124.94s][moshi] It reflects the historical development of the French constitution.
+[  2.67s][moshi] ⟨ret@2.58s⟩ And I’m sorry, but I ⟦⚡SPAN@4.26s: (no information found)⟧ don’t currently have that specific number.
+[  4.07s][user ] «backchannel» Mhm.
+[  5.72s][user ] Oh. Well, what about the US Senate? How many senators are there?
+[  9.97s][moshi] ⟨ret@9.73s⟩ There are ⟦⚡SPAN@10.85s: [source: Wikipedia] The United States Senate has one hundred senators, two from each state.⟧ one hundred senators in the US Senate, with each state having two representatives.
+[ 12.88s][user ] «backchannel» Okay.
+[ 15.00s][user ] Two from each state, right. And how does that compare to the House of Representatives?
+[ 20.00s][moshi] The House of Representatives has four hundred thirty-five members, allocated by state population.
+[ 26.16s][user ] So, the House is much bigger. I'm thinking of running for office someday.
+[ 30.17s][moshi] That’s wonderful to hear! It takes courage to consider public service.
+[ 31.51s][user ] «backchannel» Yeah, yeah.
+[ 35.36s][user ] Yeah, but I’m not sure where to start. It seems so… daunting.
+[ 38.90s][moshi] It absolutely can feel that way. It's okay to feel overwhelmed at the beginning.
+[ 43.94s][user ] What's the best way to get my name out there, do you think?
+[ 46.60s][moshi] Building community connections is a great first step, volunteering or attending local events.
+[ 51.24s][user ] Okay, that makes sense. What about fundraising? Is that hard?
+[ 54.96s][moshi] ⟨ret@54.88s⟩ There are workshops on October ⟦⚡SPAN@56.88s: (tool result) Political Campaign Workshops: Oct 27, 7 PM, City Hall; Nov 3, 10 AM, Library.⟧ twenty-seventh and November third to help with fundraising.
+[ 58.19s][user ] «backchannel» Okay.
+[ 60.08s][user ] That’s perfect! The twenty-seventh works. Can you sign me ⟨ret@63.88s⟩ up?
+[ 64.28s][moshi] You're registered for the ⟦⚡SPAN@65.88s: (tool result) Registration confirmed for Political Campaign Workshop, October 27th, 7 PM.⟧ workshop on October twenty-seventh at seven PM.
+[ 66.86s][user ] «backchannel» Right.
+[ 68.33s][user ] Great! Thanks, Nias, that’s really helpful.
+[ 70.91s][moshi] You’re very welcome. It sounds like you’re taking positive steps, and I’m happy to support you.
+[ 77.25s][user ] I appreciate it. I feel a little less lost now.
+[ 80.11s][moshi] That’s wonderful to hear. Remember, small steps forward are still progress.

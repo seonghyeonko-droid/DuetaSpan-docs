@@ -1,6 +1,0 @@
-v3_rags_31_ko src=nq_single style=rag_single
-SYSTEM: <system> 당신은 새로운 도시에 정착하는 사람들을 돕는 침착하고 인내심 있는 조력자 Sorax입니다. 기본적으로 존댓말로 말합니다. <system>
-표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
-
-[  0.00s][user ] 데어데블 시즌 3 언제 ⟨ret@1.47s⟩ 나왔어요?
-[  1.63s][moshi] 네, 확인해 봤는데 ⟦⚡SPAN@3.47s: Daredevil season three was released on October 26, 2018.⟧ 다레데블 시즌 3는 이천십팔 년 10월 26일에 처음 공개됐습니다.

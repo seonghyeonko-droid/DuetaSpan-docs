@@ -1,0 +1,78 @@
+v3_mem_36_ko src=mem style=mem
+SYSTEM: <system> 당신은 돈과 예산 관리에 대한 도움을 주는 침착하고 인내심 있는 상담사 Lira입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mem_36",
+    "name": "혜호",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-06",
+      "category": "home",
+      "text": "User's home address is 70 Maple Drive."
+    },
+    {
+      "date": "2026-01-22",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-12-08",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-11-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-10-11",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-07-02",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-26",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-23",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][moshi] 혜호님, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 관련해서 도와드리는 상담사예요.
+[  3.65s][user ] «backchannel» 그래.
+[  7.42s][user ] 음… 혹시 제가 예전에 치과 예약했던 거 기억나세요?
+[ 11.28s][moshi] ⟨ret@11.13s⟩ 네, 기억나요. ⟦⚡SPAN@13.13s: [2026-01-26] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ 일찍 진료받고 한 선생님을 선호하셨죠. 혹시 또 예약이 필요하신가요?
+[ 18.18s][user ] 아, 네. 그때보다 좀 더 빨리 예약하고 싶은데… ⟨ret@22.19s⟩ 가능할까요?
+[ 22.34s][moshi] 화요일 오전 여덟시, ⟦⚡SPAN@24.19s: (tool result) Available slots with Dr. Han: Tuesday at 8:00 AM, Wednesday at 7:30 AM.⟧ 수요일 오전 일곱시 삼십분에 예약 가능합니다. 혹시 괜찮으신 시간이 있으세요?
+      CALL: {"function": "find_appointment", "arguments": {"doctor": "Dr. Han", "time_preference": "early morning", "date": "next available"}}

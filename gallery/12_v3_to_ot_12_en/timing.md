@@ -1,29 +1,82 @@
 # v3_to_ot_12_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_to_ot_12",
+#     "name": "Rowan",
+#     "location": {
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
+#     },
+#     "nationality": "German",
+#     "gender": "non-binary",
+#     "age_range": "early 30s",
+#     "language": "German"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-02-11",
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
+#     },
+#     {
+#       "date": "2026-01-09",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-09-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
+#       "date": "2025-07-07",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Thai."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-03-01",
+#       "title": "Booked a dentist appointment",
+#       "bullets": [
+#         "asked for an early-morning slot",
+#         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-25",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     }
+#   ]
+# }
 
-     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson’s 
-     5.22s  <ret> 발화 (turn1 첫 프레임)
-     5.45s  agent 발화 시작: <ret> That is a very popular question, indeed. Eddie Van Hal
-     5.56s  user  발화 끝
-     6.58s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.68s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-     8.65s  user  발화 시작: Right.
-     9.15s  user  발화 끝
-    12.73s  agent 발화 끝
-    12.80s  user  발화 시작: Wow, I always thought it was someone else! I— I mean, it jus
-    19.06s  agent 발화 시작: Many listeners are surprised by the collaboration, given Van
-    19.19s  user  발화 끝
-    20.43s  user  발화 시작: Mm-hmm.
-    21.07s  user  발화 끝
-    23.60s  agent 발화 끝
-    23.70s  user  발화 시작: Hey, did you take the trash out yet?
-    25.64s  user  발화 시작: Sorry about that. So, was he asked specifically to make it d
-    25.68s  user  발화 끝
-    30.68s  <ret> 발화 (turn8 첫 프레임)
-    30.91s  agent 발화 시작: <ret> Considering the context, that is a reasonable inquiry.
-    31.00s  user  발화 끝
-    31.88s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.87s]: Van Halen recorded his guitar solo separately and Jackson did not dire
-    34.98s  user  발화 시작: Yeah.
-    35.62s  user  발화 끝
-    38.10s  agent 발화 끝
-    38.36s  user  발화 시작: That’s amazing! So it was completely his own artistic choice
-    42.39s  user  발화 끝
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Did you send it to accounting yet? | S3 Sorry about that, where were we? O | S4 That’s too bad. It would have been
+
+     0.00s  user  발화 시작: I was just listening to Beat It, and that guitar solo is inc
+     4.70s  <ret> 발화 (turn1 첫 프레임)
+     4.93s  agent 발화 시작: <ret> Eddie Van Halen played the guitar solo on Michael Jack
+     5.14s  user  발화 끝
+     6.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     7.34s  user  발화 시작: Okay.
+     7.88s  user  발화 끝
+    11.18s  agent 발화 끝
+    11.40s  user  발화 시작: Wow, I didn't know that! He's amazing. Hey, Mark, did you fi
+    16.73s  user  발화 시작: Did you send it to accounting yet?
+    16.91s  user  발화 끝
+    18.70s  user  발화 시작: Sorry about that, where were we? Oh right, Eddie Van Halen. 
+    18.85s  user  발화 끝
+    24.68s  <ret> 발화 (turn6 첫 프레임)
+    25.07s  agent 발화 시작: <ret> Beyond “Beat It,” Eddie Van Halen didn’t collaborate o
+    25.28s  user  발화 끝
+    26.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: [source: Rolling Stone] Van Halen did not collaborate with Michael Jac
+    33.13s  agent 발화 끝
+    33.80s  user  발화 시작: That’s too bad. It would have been cool to hear more of them
+    39.22s  user  발화 끝

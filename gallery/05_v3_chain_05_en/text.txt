@@ -1,33 +1,124 @@
 v3_chain_05_en src=mcp style=mcp_chained
-SYSTEM: <system> You are a veteran architect who specializes in sustainable urban housing. <system>
+SYSTEM: <system> You are Dar, a grounded and empathetic personal guide who helps people with sleep and rest. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_chain_05",
+    "name": "Casey",
+    "location": {
+      "city": "San Francisco",
+      "country": "United States",
+      "timezone": "America/Los_Angeles (PST, UTC-8)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "late 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-02-08",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-10-24",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-10-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    },
+    {
+      "date": "2025-09-29",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in December."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-06-01",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-13",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2026-04-19",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's the price range at Zuni ⟨ret@2.17s⟩ Cafe?
-[  2.40s][moshi] Let ⟦⚡SPAN@3.13s: (tool result) Zuni Cafe’s price range is $$$ which means entrees cost between thirty and sixty dollars.⟧ me quickly check current pricing for you… Entrees at Zuni Cafe generally run from thirty to sixty dollars.
-[  4.22s][user ] «backchannel» Mhm.
-[ 11.45s][user ] Okay, good. And are they open late ⟨ret@13.61s⟩ tonight?
-[ 13.83s][moshi] ⟦⚡SPAN@14.11s: (tool result) Zuni Cafe is open until ten p.m. tonight, Tuesday.⟧ I can certainly find their current hours… Zuni Cafe stays open until ten this evening.
-[ 17.84s][user ] «backchannel» Yeah.
-[ 20.31s][user ] Perfect. Can you see if they have outdoor seating?
-[ 23.32s][moshi] ⟨ret@23.18s⟩ ⟦⚡SPAN@23.98s: (tool result) Zuni Cafe offers both indoor and outdoor seating.⟧ Let's check their amenities… Yes, Zuni Cafe has outdoor seating available.
-[ 25.79s][user ] «backchannel» Okay.
-[ 28.59s][user ] Great. I think I’d like to make a reservation for two.
-[ 32.03s][moshi] ⟨ret@31.80s⟩ Certainly, ⟦⚡SPAN@32.52s: (tool result) Reservation confirmed for two people at Zuni Cafe tonight at 7:30 p.m. under the name Alex Mille⟧ let's get that arranged for you… Your table for two is confirmed at 7:30 p.m.
-[ 37.65s][user ] That’s fantastic. Is there parking nearby?
-[ 41.31s][moshi] ⟨ret@41.08s⟩ I can look ⟦⚡SPAN@42.76s: (tool result) There is a public parking garage at 1658 Market Street, a two-minute walk from Zuni Cafe.⟧ up parking options in that area… There's a garage on Market Street, a two-minute walk.
-[ 43.91s][user ] «backchannel» Yeah.
-[ 48.97s][user ] Two minutes, that sounds good. What’s the address of that garage?
-[ 52.39s][moshi] ⟨ret@52.32s⟩ Let me get ⟦⚡SPAN@53.76s: (tool result) The parking garage address is 1658 Market Street, San Francisco, California 94102.⟧ you the full address details… The garage is located at 1658 Market Street, San Francisco.
-[ 55.24s][user ] «backchannel» Really?
-[ 59.66s][user ] Is it a secure ⟨ret@62.03s⟩ garage?
-[ 62.40s][moshi] I ⟦⚡SPAN@63.23s: (tool result) 1658 Market Street is a monitored garage with security cameras and on-site attendants.⟧ can check the garage's security features… Yes, it’s a monitored garage with cameras and attendants.
-[ 69.19s][user ] Actually, before we go further, is Zuni Cafe dog-friendly?
-[ 73.91s][moshi] «interrupted» Well, regarding the garage’s monthly rates—
-[ 75.98s][user ] «interrupts_prev» …I just want to make sure we can bring our dog.
-[ 78.64s][moshi] ⟨ret@78.32s⟩ Ah, ⟦⚡SPAN@79.44s: (tool result) Zuni Cafe allows dogs on their outdoor patio.⟧ a very important consideration… Yes, dogs are welcome on the outdoor patio at Zuni Cafe.
-[ 85.67s][user ] Wonderful! That’s a relief. What’s the phone number for the garage, just in case?
-[ 90.92s][moshi] ⟨ret@90.85s⟩ I ⟦⚡SPAN@91.97s: (tool result) The phone number for the 1658 Market Street garage is 415-775-5678.⟧ can find that number for you right away… The garage’s phone number is 415-775-5678.
-[ 98.52s][user ] Perfect. Could you send me directions to Zuni Cafe from my current ⟨ret@103.49s⟩ location?
-[103.80s][moshi] Of course, let ⟦⚡SPAN@105.09s: (tool result) Directions to Zuni Cafe from your location: Head north on Fillmore Street, turn right on Sutter ⟧ me calculate the best route… Head north on Fillmore, right on Sutter, then left on Market.
-[110.39s][user ] That sounds straightforward. Thanks for all your help!
-[113.40s][moshi] It’s my pleasure. I often find that thoughtful planning makes for a more enjoyable evening—just as with any good building design.
+[  0.00s][user ] What’s the price range at Zuni ⟨ret@2.19s⟩ Cafe?
+[  2.43s][moshi] Zuni ⟦⚡SPAN@3.23s: (tool result) $$ (moderate)⟧ Cafe is in the moderate price range.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ-W-9-zE6j4AR9U9eF14gE9A"}}
+[  3.87s][user ] «backchannel» Okay.
+[  5.60s][user ] Okay, good. And what about State Bird ⟨ret@8.41s⟩ Provisions?
+[  8.64s][moshi] ⟦⚡SPAN@8.91s: (tool result) $$$ (expensive)⟧ State Bird Provisions is considered an expensive restaurant.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ44V5wXU6j4AR99wJv8t1c-M"}}
+[ 12.39s][user ] Hmm, expensive. Are there any highly-rated cafes near Union Square that are cheaper?
+[ 18.64s][moshi] ⟨ret@18.48s⟩ Cafe Envy ⟦⚡SPAN@19.68s: (tool result) Cafe Envy - 4.2 stars, 0.2 miles.⟧ is 4.2 stars and is 0.2 miles from Union Square.
+      CALL: {"function": "maps_search_nearby", "arguments": {"location": "Union Square, San Francisco", "type": "cafe", "price_max": 2}}
+[ 21.11s][user ] «backchannel» Oh.
+[ 24.41s][user ] That sounds promising. What are their hours ⟨ret@27.73s⟩ today?
+[ 27.97s][moshi] Cafe Envy is open ⟦⚡SPAN@29.49s: (tool result) 7 AM–5 PM⟧ today from 7 AM to 5 PM.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ9w1J5XU6j4ARo6uWfB7k93I"}}
+[ 29.84s][user ] «backchannel» Yeah.
+[ 31.89s][user ] Great. Can you check if they have outdoor ⟨ret@34.69s⟩ seating?
+[ 35.00s][moshi] Yes, ⟦⚡SPAN@35.73s: (tool result) Outdoor seating available.⟧ Cafe Envy does offer outdoor seating.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ9w1J5XU6j4ARo6uWfB7k93I"}}
+[ 40.31s][user ] Perfect. I think I’ll head there. Can you give me walking ⟨ret@43.85s⟩ directions?
+[ 44.25s][moshi] It’s an 18-minute ⟦⚡SPAN@45.77s: (tool result) 18 min walk, 0.8 miles.⟧ walk, about 0.8 miles from your current location.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "my location", "destination": "Cafe Envy, 1825 Bush St, San Francisco, CA 94115"}}
+[ 49.48s][user ] That's good to know. Are there any parks along ⟨ret@52.66s⟩ the way?
+[ 53.06s][moshi] Lafayette Park ⟦⚡SPAN@54.66s: (tool result) Lafayette Park - 0.3 miles from destination.⟧ is 0.3 miles from Cafe Envy.
+      CALL: {"function": "maps_search_along_route", "arguments": {"origin": "my location", "destination": "Cafe Envy, 1825 Bush St, San Francisco, CA 94115", "type": "park"}}
+[ 57.68s][user ] Oh, I’ve heard of Lafayette Park! It’s supposed to have a great view.
+[ 62.14s][moshi] «interrupted» It’s known for panoramic city views and a peaceful atmosphere—
+[ 65.35s][user ] «interrupts_prev» Actually, could you check if Lafayette Park is ⟨ret@68.75s⟩ dog-friendly?
+[ 69.15s][moshi] Dogs are allowed at Lafayette ⟦⚡SPAN@70.75s: (tool result) Dogs allowed on leash.⟧ Park, but they must be kept on a leash.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJqXm2eXU6j4AR6X_PqVw1-wI"}}
+[ 73.52s][user ] Excellent! That’s really helpful.
+[ 75.39s][moshi] I’m glad I could assist. A little fresh air before coffee sounds lovely.
+[ 80.96s][user ] It does. Is there a good bookstore near Lafayette ⟨ret@84.29s⟩ Park?
+[ 84.69s][moshi] Green Apple ⟦⚡SPAN@85.73s: (tool result) Green Apple Books on Clement - 1.1 miles.⟧ Books on Clement is 1.1 miles from Lafayette Park.
+      CALL: {"function": "maps_search_nearby", "arguments": {"location": "Lafayette Park, San Francisco", "type": "bookstore"}}
+[ 86.58s][user ] «backchannel» Wow.
+[ 89.42s][user ] Oh, Green Apple Books! I love that place. What are their hours?
+[ 94.21s][moshi] ⟨ret@94.05s⟩ Green Apple Books on Clement ⟦⚡SPAN@96.05s: (tool result) 10 AM–7 PM⟧ is open today from 10 AM to 7 PM.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ6-Bqj3E6j4ARuI4-M0_CqS4"}}
+[ 98.77s][user ] Perfect timing. Okay, one last thing. Can you set a reminder for me to leave for Cafe Envy in ⟨ret@105.65s⟩ ten minutes?
+[106.05s][moshi] A reminder to leave for ⟦⚡SPAN@107.65s: (tool result) Reminder set for 10 minutes from now.⟧ Cafe Envy is set for ten minutes from now.
+      CALL: {"function": "set_reminder", "arguments": {"time": "in 10 minutes", "reminder_text": "Leave for Cafe Envy"}}
+[110.42s][user ] Wonderful, thank you so much!
+[112.25s][moshi] You’re very welcome. Enjoy your walk and your coffee.
+[114.28s][user ] «backchannel» Yeah.
+[115.55s][moshi] [happy] It sounds like a lovely plan for a relaxing afternoon.

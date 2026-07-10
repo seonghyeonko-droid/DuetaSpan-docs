@@ -1,30 +1,94 @@
 # v3_defer_10_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_defer_10",
+#     "name": "Lukas",
+#     "location": {
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
+#     },
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "early 30s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-03-14",
+#       "category": "home",
+#       "text": "User's home address is 260 Maple Drive."
+#     },
+#     {
+#       "date": "2026-02-18",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-11-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
+#     },
+#     {
+#       "date": "2025-09-16",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-07-29",
+#       "category": "work",
+#       "text": "User works as a marketing manager."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2025-09-26",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-09-02",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     }
+#   ]
+# }
+
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 …picture to my sister, Sarah? | S3 That’s great, thanks. What’s the w | S4 Okay, thanks.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.84s  <ret> 발화 (turn1 첫 프레임)
-     4.91s  user  발화 끝
-     4.91s  agent 발화 시작: <ret> Certainly, I can locate those images for you. I found 
-     6.28s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.48s]: (tool result) Four files were found: "Paris_Eiffel_Tower.jpg", "Nice_B
-     9.79s  user  발화 시작: Yeah.
-    10.42s  user  발화 끝
-    13.91s  user  발화 시작: Oh, excellent! Can you send “Paris_Eiffel_Tower.jpg” to my s
-    14.04s  agent 발화 끝
-    21.56s  <ret> 발화 (turn4 첫 프레임)
-    21.88s  agent 발화 시작: <ret> Of course, I can send that image right away. The email
-    22.02s  user  발화 끝
-    22.52s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.36s]: (tool result) Email sent to elise.dupont@example.com with subject "Par
-    25.22s  user  발화 시작: Yeah.
-    25.77s  user  발화 끝
-    30.09s  agent 발화 끝
-    31.10s  user  발화 시작: Great, thanks. What's the weather like in Nice right now?
-    34.94s  user  발화 끝
-    35.19s  agent 발화 시작: Let me check on that for you.
-    36.02s  user  발화 시작: Right.
-    36.75s  user  발화 끝
-    36.80s  user  발화 시작: Okay, thanks.
-    36.91s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) The current weather in Nice, France is twenty-two degree
-    37.03s  agent 발화 끝
-    37.85s  agent 발화 시작: <ret> Right, I have that weather information now for you. It
-    37.95s  user  발화 끝
-    48.75s  agent 발화 끝
+     4.16s  <ret> 발화 (turn1 첫 프레임)
+     4.22s  agent 발화 시작: <ret> I found twelve files from your France holiday last yea
+     4.39s  user  발화 끝
+     6.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.24s]: (tool result) 12 files found: 'Paris EiffelTower.jpg', 'Nice Beach.png
+     8.65s  user  발화 시작: Mhm.
+     9.09s  user  발화 끝
+    11.46s  agent 발화 끝
+    12.07s  user  발화 시작: Can you send the Paris…
+    13.81s  user  발화 끝
+    14.79s  user  발화 시작: …picture to my sister, Sarah?
+    16.37s  <ret> 발화 (turn5 첫 프레임)
+    16.68s  agent 발화 시작: <ret> I’ve just sent the Eiffel Tower picture to Sarah.
+    16.78s  user  발화 끝
+    17.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.67s]: (tool result) File 'Paris EiffelTower.jpg' sent to Sarah.
+    18.29s  user  발화 시작: Yeah.
+    18.79s  user  발화 끝
+    19.36s  agent 발화 끝
+    19.59s  user  발화 시작: That’s great, thanks. What’s the weather like in Paris right
+    22.99s  agent 발화 시작: Let me check on that.
+    23.11s  user  발화 끝
+    24.19s  agent 발화 끝
+    24.23s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Temperature: 15°C, Condition: Partly Cloudy, Wind: 12 km
+    24.38s  user  발화 시작: Okay, thanks.
+    25.17s  agent 발화 시작: <ret> The current weather in Paris is 15 degrees Celsius and
+    25.20s  user  발화 끝
+    32.49s  agent 발화 끝

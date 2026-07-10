@@ -1,0 +1,87 @@
+v3_mcp_01_ko src=mcp style=v2
+SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 차분하고 공감적인 개인 가이드 Koral입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_01",
+    "name": "예재",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-31",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
+    },
+    {
+      "date": "2026-02-18",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-11-13",
+      "category": "home",
+      "text": "User's home address is 50 Pine Court."
+    },
+    {
+      "date": "2025-08-15",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-04",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-11-08",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 음… 애플 웹사이트 제품 중심으로 상세 지도를 만들어 줄 수 ⟨ret@4.70s⟩ 있어?
+[  4.93s][moshi] 지금 tavily-map 도구를 ⟦⚡SPAN@6.70s: <no information found>⟧ 사용해서 애플 웹사이트 제품 관련 상세 지도를 생성해 드릴게요.
+[ 10.83s][moshi] ⟨ret@10.59s⟩ 애플 웹사이트 제품 ⟦⚡SPAN@12.59s: (tool result) Map created: Apple website, products focus. 27 sections identified.⟧ 관련 지도 생성이 완료됐습니다. 총 스물일곱개 섹션이 확인됐어요.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
+[ 17.15s][user ] 스물일곱개나? 좀 많네. 아이폰 관련 섹션만 보여줄 수 ⟨ret@22.27s⟩ 있어?
+[ 22.49s][moshi] «interrupted» tavily-map 도구를 ⟦⚡SPAN@24.27s: <no information found>⟧ 사용해서 아이폰 관련 섹션만 필터링해 드릴게요. 잠시만 기다려—
+[ 28.05s][user ] «interrupts_prev» …혹시 아이폰 십오 프로 모델은 따로 표시되나?
+[ 31.18s][moshi] ⟨ret@30.95s⟩ 아이폰 십오 프로 ⟦⚡SPAN@32.95s: (tool result) iPhone 15 Pro section found. Detailed specs, pricing, and availability.⟧ 모델은 별도로 표시됩니다.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "iPhone 15 Pro"}}
+[ 34.02s][moshi] 아이폰 십오 프로 섹션을 찾았습니다. 상세 스펙, 가격, 그리고 재고 현황이 표시됩니다.
+[ 36.05s][user ] «backchannel» 어.
+[ 40.48s][user ] 가격이 얼마야? 지금 바로 확인할 수 ⟨ret@43.23s⟩ 있어?
+[ 43.53s][moshi] 현재 아이폰 십오 ⟦⚡SPAN@45.23s: <no information found>⟧ 프로의 가격을 확인해 드릴게요.
+[ 46.70s][moshi] ⟨ret@46.46s⟩ 아이폰 십오 ⟦⚡SPAN@48.46s: (tool result) iPhone 15 Pro: 12GB RAM, starting at $999.⟧ 프로는 십이기가 RAM, 시작 가격은 구백구십구달러입니다.
+      CALL: {"function": "get_price", "arguments": {"product": "iPhone 15 Pro"}}
+[ 48.67s][user ] «backchannel» 우와.
+[ 51.66s][user ] 구백구십구달러? 생각보다 비싸네. 다른 색상은 뭐가 있어?
+[ 56.69s][moshi] ⟨ret@56.54s⟩ 다른 ⟦⚡SPAN@57.90s: <no information found>⟧ 색상 옵션을 확인해 드릴게요.
+[ 59.38s][moshi] ⟨ret@58.98s⟩ 아이폰 십오 프로 ⟦⚡SPAN@60.98s: (tool result) iPhone 15 Pro colors: Black Titanium, White Titanium, Blue Titanium, Natural Titanium.⟧ 색상은 블랙 티타늄, 화이트 티타늄, 블루 티타늄, 내추럴 티타늄입니다.
+      CALL: {"function": "get_colors", "arguments": {"product": "iPhone 15 Pro"}}
+[ 64.75s][user ] 블루 티타늄이 예쁘겠는데. 지금 바로 예약할 수 ⟨ret@69.02s⟩ 있어?
+[ 69.08s][moshi] 블루 ⟦⚡SPAN@70.14s: <no information found>⟧ 티타늄 모델 예약을 도와드릴게요.
+[ 71.91s][moshi] ⟨ret@71.83s⟩ ⟦⚡SPAN@72.47s: (tool result) Reservation confirmed. Order number: 789456123.⟧ 예약이 완료되었습니다. 주문 번호는 칠 팔 구 사 오 육 일 이 삼입니다.
+      CALL: {"function": "reserve_product", "arguments": {"product": "iPhone 15 Pro", "color": "Blue Titanium"}}
+[ 77.83s][user ] 좋아. 고마워.
+[ 79.19s][moshi] 즐거운 쇼핑 되세요.

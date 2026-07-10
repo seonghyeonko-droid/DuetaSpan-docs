@@ -1,28 +1,85 @@
 v3_abs_22_en src=squad2 style=abstain
-SYSTEM: <system> You are Dr. Sato, a neurologist fascinated by how memory works. <system>
+SYSTEM: <system> You are Frunax, a warm and attentive supportive advisor who helps people with planning trips and time off. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_abs_22",
+    "name": "William",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-04-28",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2026-04-21",
+      "category": "diet",
+      "text": "User is gluten-free."
+    },
+    {
+      "date": "2025-06-26",
+      "category": "home",
+      "text": "User's home address is 329 Maple Drive."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-26",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-08-13",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.57s⟩ hate?
-[  2.72s][moshi] That’s a fascinating ⟦⚡SPAN@4.33s: (no information found)⟧ question, exploring political ideals. I’m afraid a direct answer isn’t available to me currently. Anarchists oppose all forms of hierarchical rule.
-[ 13.96s][user ] Oh. Well, what about Alzheimer’s? What does that actually *do* to the brain?
-[ 19.26s][moshi] It's a truly devastating illness, affecting so many.
-[ 22.99s][moshi] ⟨ret@22.91s⟩ Understanding the ⟦⚡SPAN@24.27s: Alzheimer’s disease is characterized by the buildup of amyloid plaques and neurofibrillary tangles in the brai⟧ pathology is crucial for research. Alzheimer’s involves amyloid plaques and tangles disrupting brain cell function.
-[ 30.40s][user ] Plaques and tangles… uh, are those like, physical things you can see?
-[ 34.82s][moshi] [laugh] Yes, absolutely. They are visible under a microscope.
-[ 39.40s][moshi] ⟨ret@39.02s⟩ Visualizing ⟦⚡SPAN@40.13s: Microscopic examination of brain tissue reveals the presence of amyloid plaques and neurofibrillary tangles.⟧ these changes helps with diagnosis. A microscopic exam shows plaques and tangles within the brain tissue.
-[ 47.46s][user ] Right. And if someone starts forgetting things, is that *always* Alzheimer’s?
-[ 51.78s][moshi] Not at all. Memory loss has many possible causes.
-[ 55.95s][moshi] ⟨ret@55.64s⟩ Distinguishing between ⟦⚡SPAN@57.48s: Memory loss can be caused by a variety of factors, including stress, depression, and vitamin deficiencies.⟧ causes is key to care. Memory loss can stem from stress, depression, or vitamin deficiencies, too.
-[ 59.93s][user ] «backchannel» Mm-hmm.
-[ 64.38s][user ] So, it could be something treatable?
-[ 66.70s][moshi] Often, yes. Many causes of memory loss are reversible.
-[ 71.04s][user ] That’s… reassuring. But what about those tangles? Can anything be done about those?
-[ 76.47s][moshi] That’s a very important question, currently under intensive study.
-[ 80.19s][moshi] ⟨ret@80.04s⟩ Research focuses ⟦⚡SPAN@81.88s: Current research is exploring potential therapies to prevent the formation of neurofibrillary tangles.⟧ on preventing tangle formation. Therapies to prevent tangle formation are currently being investigated.
-[ 88.18s][user ] Okay. What’s the earliest age someone can get Alzheimer’s?
-[ 92.18s][moshi] ⟨ret@92.11s⟩ Early-onset cases ⟦⚡SPAN@93.55s: Early-onset Alzheimer’s disease typically affects individuals younger than sixty-five years of age.⟧ are relatively uncommon. Alzheimer’s can affect people under sixty-five, though it’s less common.
-[ 99.31s][user ] That’s…young. But is it genetic, usually?
-[103.32s][moshi] Genetics can certainly play a role, but it’s complex.
-[107.06s][moshi] ⟨ret@106.90s⟩ Family history is ⟦⚡SPAN@108.50s: While most cases of Alzheimer’s are sporadic, a small percentage are linked to genetic mutations.⟧ a risk factor, however. Most cases aren’t directly genetic, but mutations can be a factor.
-[114.66s][user ] I— I mean, so it’s not *guaranteed* if my grandmother had it?
-[118.85s][moshi] No, not at all. It increases risk, but doesn’t guarantee it.
+[  0.00s][user ] What mode of government does the anarchists hate?
+[  2.80s][moshi] ⟨ret@2.64s⟩ And I’ve searched for ⟦⚡SPAN@4.64s: (no information found)⟧ a definitive answer, but unfortunately, I couldn’t find a single mode of government anarchists universally oppose.
+[  6.99s][user ] «backchannel» Uh-huh.
+[ 10.14s][user ] Well, what do they generally dislike about ⟨ret@12.83s⟩ governments?
+[ 12.99s][moshi] They generally dislike ⟦⚡SPAN@14.83s: [source: Wikipedia] Anarchists oppose all forms of hierarchical rule, believing that government is inherently ⟧ governments because anarchists oppose all hierarchical rule, believing government is inherently oppressive and unnecessary.
+[ 21.28s][user ] So, they’re against *all* governments? Even small, local ones?
+[ 25.24s][moshi] Yes, their opposition extends to all hierarchical structures—not just large nation-states, but also smaller, local governing bodies.
+[ 33.01s][user ] But don’t some anarchists focus more on capitalism as the core problem?
+[ 37.12s][user ] …instead of just government ⟨ret@38.77s⟩ itself?
+[ 38.93s][moshi] —and advocate for ⟦⚡SPAN@40.77s: [source: Stanford Encyclopedia of Philosophy] Anarcho-communism advocates for a society without class, money, ⟧ a stateless, classless society without money, as seen in anarcho-communism.
+[ 46.02s][user ] And what’s the difference between anarcho-communism and ⟨ret@49.86s⟩ anarcho-syndicalism?
+[ 50.02s][moshi] Anarcho-syndicalism focuses on ⟦⚡SPAN@51.86s: [source: The Anarchist FAQ] Anarcho-syndicalism focuses on labor movements and workers' control of industry.⟧ labor movements and workers’ control of industry, differing from anarcho-communism’s broader societal focus.
+[ 58.44s][user ] Okay, that makes sense. Could you find me a good book on anarchism to learn more?
+[ 62.85s][moshi] ⟨ret@62.77s⟩ I found “Anarchy, ⟦⚡SPAN@64.77s: (tool result) "Anarchy, State, and Utopia" by Robert Nozick, $18.99.⟧ State, and Utopia” by Robert Nozick, available for $18.99.
+[ 69.31s][user ] That sounds interesting, thanks.
+[ 71.05s][moshi] You’re very welcome! I’m glad I could offer some resources. It’s always rewarding to explore different perspectives.

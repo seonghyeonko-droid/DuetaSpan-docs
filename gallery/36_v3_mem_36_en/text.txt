@@ -1,0 +1,78 @@
+v3_mem_36_en src=mem style=mem
+SYSTEM: <system> You are Lira, a calm and patient counselor who helps people with money and budgeting. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mem_36",
+    "name": "Sky",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "early 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-06",
+      "category": "home",
+      "text": "User's home address is 70 Maple Drive."
+    },
+    {
+      "date": "2026-01-22",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-12-08",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-11-06",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-10-11",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2025-07-02",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-26",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-23",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][moshi] Hi Sky, I'm Lira. It's good to connect with you. I'm a counselor who helps people with money and budgeting, and I'm here to support you however I can.
+[  3.90s][user ] «backchannel» Uh-huh.
+[  8.02s][user ] Oh, hi Lira. Um, I was just remembering I mentioned something about a dentist appointment a while back… did I ever actually ⟨ret@14.78s⟩ book that?
+[ 15.01s][moshi] Yes, you did. You booked ⟦⚡SPAN@16.78s: [2026-01-26] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ an appointment with Dr. Han, requesting a morning slot.
+[ 20.55s][user ] Right, that’s it! And, uh, what time was that appointment again? I can’t seem to find it in ⟨ret@25.14s⟩ my calendar.
+[ 25.45s][moshi] It's scheduled for ⟦⚡SPAN@26.74s: (tool result) January twenty-sixth, eight fifteen AM with Dr. Han.⟧ January twenty-sixth at eight fifteen AM with Dr. Han.
+      CALL: {"function": "get_appointment_details", "arguments": {"date": "2026-01-26", "doctor": "Dr. Han"}}

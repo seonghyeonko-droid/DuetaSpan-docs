@@ -1,10 +1,78 @@
 v3_mcp_04_en src=mcp style=v2
-SYSTEM: <system> You are a pastry chef trained in classic French patisserie. <system>
+SYSTEM: <system> You are Lio, a thoughtful and soft-spoken counselor who helps people with big life transitions. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_04",
+    "name": "Lily",
+    "location": {
+      "city": "Sydney",
+      "country": "Australia",
+      "timezone": "Australia/Sydney (AEDT, UTC+11)",
+      "currency": "AUD ($)"
+    },
+    "nationality": "Australian",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-21",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-05-16",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2026-01-04",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-07-08",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-05-30",
+      "category": "hobby",
+      "text": "User is into vintage synth collecting."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-12-21",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-11-12",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.60s⟩ one?
-[  4.91s][moshi] Certainly, ⟦⚡SPAN@5.56s: (tool result) The user agent is now set to SuperCrawler version 10.1.⟧ I can adjust the browser settings for you. The user agent has been updated to SuperCrawler version ten point one, as requested.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@5.26s⟩ one?
+[  5.58s][moshi] I’ve ⟦⚡SPAN@6.22s: (tool result) User agent set to SuperCrawler version 10.1.⟧ set the user agent to SuperCrawler version ten point one. It’s done now.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[ 13.37s][user ] Hmm, that seems… aggressive. Can you change it back to the ⟨ret@17.36s⟩ default?
-[ 17.60s][moshi] Of ⟦⚡SPAN@18.48s: (tool result) The user agent has been reset to the default browser setting.⟧ course, reverting to the standard settings is simple. The user agent is now back to the default setting; it should behave normally again.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "default"}}
+[  8.02s][user ] «backchannel» Mhm.
+[ 10.83s][user ] Hmm, or actually, make that version ten point ⟨ret@15.28s⟩ two.
+[ 15.52s][moshi] [happy] Of course. ⟦⚡SPAN@17.04s: (tool result) User agent set to SuperCrawler version 10.2.⟧ The user agent is now SuperCrawler version ten point two. A small change, but a helpful one, perhaps?
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.2"}}
+[ 24.29s][user ] That’s better. Now, can you check what the current IP address is?
+[ 28.74s][moshi] ⟨ret@28.66s⟩ It appears ⟦⚡SPAN@29.86s: (tool result) 203.0.113.42⟧ your current IP address is two zero three dot zero dot one one three dot forty-two.
+      CALL: {"function": "get_ip_address", "arguments": {}}
+[ 36.52s][user ] Okay, good. Thanks.
+[ 37.77s][moshi] You’re very welcome. It sounds like you’re preparing for some focused web exploration.

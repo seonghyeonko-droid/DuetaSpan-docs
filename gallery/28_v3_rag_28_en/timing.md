@@ -1,35 +1,89 @@
 # v3_rag_28_en — 전 이벤트 시간순 타임라인 (L=agent/R=user)
 # <ret>=agent 턴 첫 프레임(lead 첫 토큰 대체) · SPAN=lead 안 d' 지점(문장 중간 가능, Eq.3 sample_rag_delay)
+# CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+# {
+#   "profile": {
+#     "user_id": "v3_rag_28",
+#     "name": "Lucia",
+#     "location": {
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
+#     },
+#     "nationality": "American",
+#     "gender": "female",
+#     "age_range": "50s",
+#     "language": "English"
+#   },
+#   "saved_memories": [
+#     {
+#       "date": "2026-06-26",
+#       "category": "work",
+#       "text": "User works as a nurse."
+#     },
+#     {
+#       "date": "2026-03-27",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-03-03",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-10-11",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2025-07-27",
+#       "category": "home",
+#       "text": "User's home address is 820 Cedar Lane."
+#     }
+#   ],
+#   "conversation_summaries": [
+#     {
+#       "date": "2026-04-29",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-13",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
+#     }
+#   ]
+# }
 
-     0.00s  user  발화 시작: So, I was reading about government departments, and it got m
-     7.92s  agent 발화 시작: That’s a very good question, tracing the history of support 
-     8.06s  user  발화 끝
-    12.57s  <ret> 발화 (turn2 첫 프레임)
-    12.95s  agent 발화 시작: <ret> Let’s pinpoint that date for you— The Department of Ve
-    13.19s  agent 발화 끝
-    13.85s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.49s]: The United States Department of Veterans Affairs was established on Ju
-    18.10s  user  발화 시작: Mm-hmm.
-    18.91s  user  발화 끝
-    21.55s  user  발화 시작: Nineteen thirty? That seems… relatively recent, doesn’t it? 
-    21.66s  agent 발화 끝
-    28.55s  user  발화 끝
-    28.87s  agent 발화 시작: Certainly, benefits existed prior to the department’s formal
-    34.31s  <ret> 발화 (turn6 첫 프레임)
-    34.71s  agent 발화 시작: <ret> Actually, earlier forms of aid were quite extensive— B
-    34.90s  agent 발화 끝
-    36.15s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.12s]: Prior to 1930, the Veterans Bureau, created in 1921, administered bene
-    42.01s  user  발화 시작: Yeah.
-    42.69s  user  발화 끝
-    44.45s  agent 발화 끝
-    45.55s  user  발화 시작: But did that Bureau actually have the power to *create* new 
-    52.44s  agent 발화 시작: That’s a subtle but crucial distinction—
-    52.63s  user  발화 끝
-    54.70s  <ret> 발화 (turn10 첫 프레임)
-    54.93s  agent 발화 시작: <ret> The Veterans Bureau mostly put into action benefits ap
-    55.16s  agent 발화 끝
-    56.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: The Veterans Bureau primarily implemented benefits authorized by Congr
-    61.32s  agent 발화 끝
-    61.34s  user  발화 시작: So Hoover's department was a step up in terms of… agency, I 
-    66.11s  user  발화 끝
-    66.54s  agent 발화 시작: Precisely, the nineteen thirty restructuring consolidated an
-    72.79s  agent 발화 끝
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about governmen | S2 Nineteen thirty? That seems… surpr | S3 So the Bureau of Pensions handled  | S4 Wow, sixteen thirty-six! That’s in
+
+     0.00s  user  발화 시작: I was just reading about government departments… when did th
+     5.90s  <ret> 발화 (turn1 첫 프레임)
+     6.22s  agent 발화 시작: <ret> The Department of Veterans Affairs was established in 
+     6.39s  user  발화 끝
+     7.02s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.91s]: [source: Wikipedia] The United States Department of Veterans Affairs w
+    11.13s  agent 발화 끝
+    12.01s  user  발화 시작: Nineteen thirty? That seems… surprisingly recent, honestly. 
+    17.94s  <ret> 발화 (turn3 첫 프레임)
+    18.34s  agent 발화 시작: <ret> Actually, support for veterans goes back further. Befo
+    18.59s  user  발화 끝
+    19.62s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.13s]: [source: History.com] Prior to 1930, veterans’ affairs were managed by
+    28.47s  user  발화 시작: So the Bureau of Pensions handled things during the Civil Wa
+    28.64s  agent 발화 끝
+    36.40s  <ret> 발화 (turn5 첫 프레임)
+    36.79s  agent 발화 시작: <ret> Assistance to veterans began as early as sixteen thirt
+    36.95s  user  발화 끝
+    38.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.81s]: [source: VA.gov] Initially, assistance to veterans dates back to 1636,
+    39.27s  user  발화 시작: Right.
+    39.95s  user  발화 끝
+    44.60s  agent 발화 끝
+    44.94s  user  발화 시작: Wow, sixteen thirty-six! That’s incredible. So it’s been a c
+    51.98s  user  발화 끝

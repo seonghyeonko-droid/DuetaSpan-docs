@@ -1,0 +1,79 @@
+v3_backg_17_ko src=nq style=v1
+SYSTEM: <system> 당신은 돈과 예산 관리에 대한 도움을 주는 호기심 많고 공감적인 개인 가이드인 Eus입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_backg_17",
+    "name": "도정",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "late 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-04",
+      "category": "diet",
+      "text": "User is pescatarian."
+    },
+    {
+      "date": "2026-02-07",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "home",
+      "text": "User's home address is 86 Birch Road."
+    },
+    {
+      "date": "2026-01-18",
+      "category": "allergy",
+      "text": "User is allergic to shellfish."
+    },
+    {
+      "date": "2025-10-23",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-09-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-01-02",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 요즘 건강 관리에 관심이 많아서 그런데, 혹시 건강한 사람의 평균 심박수가 어떻게 되는지 ⟨ret@6.12s⟩ 궁금해요.
+[  6.27s][moshi] ⟦⚡SPAN@6.62s: [source: Mayo Clinic] A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ 건강한 성인의 정상적인 안정 시 심박수는 분당 육십 회에서 백 회 사이입니다.
+[  8.79s][user ] «backchannel» 예.
+[ 11.03s][user ] 아, 그건 좀 높은 편이네요. 그럼 좀 더 건강한 사람의 평균 심박수는 어느 정도일까요?
+[ 16.83s][moshi] ⟨ret@16.60s⟩ 좀 더 건강한 ⟦⚡SPAN@18.60s: [source: Cleveland Clinic] For adults, a typical heart rate ranges from 60 to 90 beats per minute.⟧ 성인의 일반적인 심박수는 분당 육십 회에서 구십 회 사이입니다.
+[ 22.16s][user ] «to_other» [sigh] 오늘따라 차가 너무 막히네.
+[ 24.36s][user ] 아하, 그럼 평균적으로는 분당 칠십오회 정도라고 생각하면 될까요?
+[ 28.58s][moshi] 네, 대략 분당 칠십오 회 정도로 생각하시면 괜찮겠습니다.

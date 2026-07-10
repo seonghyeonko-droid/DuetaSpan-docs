@@ -1,8 +1,0 @@
-[user] Hey, what's up?
-[moshi] Oh, nothing much. Just talking to this other boy.
-[user] Right.
-[user] Who is he?
-[moshi] Just some guy I met. We were just laughing about something.
-[user] What were you laughing about?
-[moshi] I don't remember. It was just something funny that happened earlier.
-[user] Well, I'm glad you're having a good time. I'll talk to you later.

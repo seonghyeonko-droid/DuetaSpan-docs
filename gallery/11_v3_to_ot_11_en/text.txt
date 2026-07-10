@@ -1,14 +1,79 @@
 v3_to_ot_11_en src=nq style=v1
-SYSTEM: <system> You are Dr. Elena Vasquez, a marine biologist who studies coral reef ecosystems. <system>
+SYSTEM: <system> You are Ellana, a kind and steady wellness coach who helps people with sleep and rest. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_to_ot_11",
+    "name": "Rowan",
+    "location": {
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
+    },
+    "nationality": "American",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-03",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    },
+    {
+      "date": "2026-03-26",
+      "category": "trip",
+      "text": "User is planning a trip to Lisbon in October."
+    },
+    {
+      "date": "2026-02-12",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-09-24",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-07-12",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-06-13",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Ethiopian."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-08",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-01-24",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know when the A’s were last no-hit? I’m trying to settle ⟨ret@4.24s⟩ a bet.
-[  4.63s][moshi] That’s ⟦⚡SPAN@5.60s: The last time the Oakland Athletics were no-hit was April 21, 2018.⟧ a good baseball question, and— that occurred on April twenty-first, two thousand eighteen.
-[ 11.90s][user ] Wow, that was a while ago. Who pitched it?
-[ 15.14s][moshi] That was a combined effort by Mike Fiers, Matt Shoemaker, and Cam Bedrosian of the Los Angeles Angels.
-[ 17.58s][user ] «backchannel» Uh-huh.
-[ 22.12s][moshi] ⟨ret@21.90s⟩ Considering ⟦⚡SPAN@23.26s: Mike Fiers pitched six innings, allowing no hits and striking out eight batters.⟧ the rarity of no-hitters— Mike Fiers pitched six hitless innings, striking out eight batters.
-[ 29.92s][user ] Wait, was that during the playoffs or regular season?
-[ 33.37s][user ] Was it a home game for the A’s?
-[ 36.12s][moshi] It was a regular season game, played at the Oakland Coliseum.
-[ 40.72s][user ] Okay, good to know. Thanks, Dr. Vasquez.
+[  0.00s][user ] I was just wondering… has that happened to the A’s recently? Like, a no-hitter against ⟨ret@5.47s⟩ them?
+[  5.86s][moshi] It’s good to think about ⟦⚡SPAN@7.31s: [source: Baseball-Reference.com] The Oakland Athletics were last no-hit on April 21, 2018, by Mike Fiers of th⟧ the history of the game. Let’s see when that last occurred.
+[  9.67s][moshi] The last time the A’s were no-hit was April twenty-first, two thousand eighteen, by Mike Fiers.
+[ 16.18s][user ] Wow, that was a while ago. Hey, Mark, did you remember to take the trash out?
+[ 20.03s][user ] «to_other» Seriously, it's overflowing!
+[ 21.76s][user ] Sorry about that. So, who was pitching for the A’s that day?
+[ 25.69s][moshi] ⟨ret@25.47s⟩ Frankie Montas was ⟦⚡SPAN@26.99s: [source: Baseball-Reference.com] On April 21, 2018, the Oakland Athletics’ starting pitcher was Frankie Montas⟧ the Athletics’ starting pitcher on April twenty-first, two thousand eighteen.
+[ 30.66s][moshi] It’s interesting to look back at those matchups, isn’t it?

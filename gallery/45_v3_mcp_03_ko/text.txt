@@ -1,0 +1,96 @@
+v3_mcp_03_ko src=mcp style=v1
+SYSTEM: <system> 당신은 호기심이 많고 지지적인 웰니스 코치 Thunaen이며, 사람들의 학습과 동기 부여 유지에 도움을 줍니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mcp_03",
+    "name": "유준",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-21",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2026-01-26",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in March."
+    },
+    {
+      "date": "2025-11-17",
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-08-27",
+      "category": "home",
+      "text": "User's home address is 913 Oak Avenue."
+    },
+    {
+      "date": "2025-07-25",
+      "category": "pet",
+      "text": "User has a Beagle named Rusty."
+    },
+    {
+      "date": "2025-07-09",
+      "category": "diet",
+      "text": "User is vegan."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-02-07",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2025-12-08",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2025-08-20",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 장바구니 iframe에서 결제 과정을 시작해 ⟨ret@3.05s⟩ 줄래?
+[  3.35s][moshi] 네, 장바구니 ⟦⚡SPAN@5.05s: (tool result) 결제 과정이 시작되었습니다.⟧ iframe에서 결제 과정을 시작했어요. 이제 결제 정보를 입력하는 화면으로 넘어갔을 거예요.
+      CALL: {"function": "playwright_iframe_click", "arguments": {"iframe_name": "shopping_cart", "button_text": "결제하기"}}
+[  8.56s][user ] «backchannel» 아.
+[ 10.43s][user ] 음…
+[ 11.13s][moshi] ⟨ret@11.06s⟩ 네, 현재 저장된 ⟦⚡SPAN@13.06s: (tool result) 서울특별시 강남구 테헤란로 427⟧ 배송 주소는 서울특별시 강남구 테헤란로 사백이십칠입니다. 이 주소로 배송해 드릴까요?
+      CALL: {"function": "get_user_address", "arguments": {}}
+[ 17.93s][user ] 맞아. 그 주소로 해줘.
+[ 19.33s][moshi] ⟨ret@19.26s⟩ 네, 배송 주소를 ⟦⚡SPAN@21.26s: (tool result) 배송 주소가 설정되었습니다.⟧ 서울특별시 강남구 테헤란로 사백이십칠로 설정했습니다. 이제 결제 수단을 선택하는 단계로 넘어가시겠어요?
+      CALL: {"function": "set_shipping_address", "arguments": {"address": "서울특별시 강남구 테헤란로 427"}}
+[ 27.90s][user ] 신용카드로 할게.
+[ 28.98s][moshi] 신용카드 정보를 입력해 주시면 됩니다. 카드 번호, 유효기간, 그리고 CVC 번호를 순서대로 알려주세요. 안전하게 처리해 드리니 안심하셔도 돼요.
+[ 39.15s][user ] 카드 번호는 일 이 삼 사 오 육 칠 팔 구 공 일 이 삼 사 오 육, 유효기간은 이천이십오년 십이월, CVC는 ⟨ret@46.24s⟩ 백이십삼이야.
+[ 46.46s][moshi] 네, 신용카드 결제가 ⟦⚡SPAN@48.24s: (tool result) 결제가 완료되었습니다. 주문 번호는 20240726-1234입니다.⟧ 완료되었습니다. 주문 번호는 이 공 이 사 공 칠 이 육 일 이 삼 사입니다. 주문 내역은 이메일로도 보내드릴게요.
+      CALL: {"function": "process_payment", "arguments": {"card_number": "1234-5678-9012-3456", "expiration_date": "2025/12", "cvc": "123"}}
+[ 55.47s][user ] 고마워.
+[ 56.09s][moshi] 천만에요. 혹시 더 필요한 건 없으신가요? 쇼핑 즐거우셨길 바라요.

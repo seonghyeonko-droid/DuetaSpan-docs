@@ -1,24 +1,122 @@
 v3_noinfo_23_en src=mcp style=mcp_noinfo
-SYSTEM: <system> You are a botanist who specializes in rare alpine wildflowers. <system>
+SYSTEM: <system> You are Brae, a upbeat and supportive wellness coach who helps people with career choices and work stress. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_noinfo_23",
+    "name": "Nina",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
+    },
+    "nationality": "Canadian",
+    "gender": "female",
+    "age_range": "early 20s",
+    "language": "English"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-23",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-06-17",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2026-06-12",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2026-05-04",
+      "category": "trip",
+      "text": "User is planning a trip to Switzerland in October."
+    },
+    {
+      "date": "2026-03-25",
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
+    },
+    {
+      "date": "2025-06-15",
+      "category": "diet",
+      "text": "User is pescatarian."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-12",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.29s⟩ last year?
-[  3.69s][moshi] Let me check ⟦⚡SPAN@5.29s: (tool result) The weather in Tokyo on December twenty-fourth last year was clear with a high of eleven degrees⟧ the historical weather data for you… On December twenty-fourth, Tokyo experienced clear skies, a high of eleven degrees, and a low of five.
-[ 15.36s][user ] That sounds quite cold. Could you find me a nice tea room near ⟨ret@19.25s⟩ Ueno Park?
-[ 19.65s][moshi] Of course, I ⟦⚡SPAN@21.25s: (tool result) Found three tea rooms near Ueno Park: Tea Room Hana, open until eight PM; Tea House Sakura, open⟧ can search for tea rooms in that area… There are three tea rooms near Ueno Park: Hana, Sakura, and Green Tea Garden—though Green Tea Garden is closed today.
-[ 31.75s][user ] Hana sounds good. Can you see if they take ⟨ret@34.99s⟩ reservations?
-[ 35.39s][moshi] ⟦⚡SPAN@35.95s: (tool result) Tea Room Hana has reservations available at six PM, seven PM, and eight PM tonight.⟧ Let’s check Hana’s reservation availability… Tea Room Hana has openings at six, seven, and eight this evening.
-[ 43.13s][user ] Perfect, reserve a table for two at ⟨ret@45.61s⟩ seven PM.
-[ 45.92s][moshi] ⟦⚡SPAN@46.11s: (tool result) Reservation confirmed at Tea Room Hana for two people at seven PM tonight under the name [user n⟧ Certainly, I will make that reservation for you… I’ve booked a table for two at Hana for seven PM, confirmation number 92874.
-[ 56.27s][user ] Oh, actually—do they serve matcha there?
-[ 58.75s][moshi] —and the reservation is under your name…
-[ 59.86s][user ] «backchannel» Yeah.
-[ 61.26s][user ] Do they serve matcha there?
-[ 62.64s][moshi] Yes, Tea Room Hana’s menu includes several matcha-based drinks and desserts.
-[ 65.56s][user ] «backchannel» Right.
-[ 67.75s][moshi] ⟨ret@67.67s⟩ It’s a lovely place, ⟦⚡SPAN@69.67s: (tool result) Tea Room Hana's menu lists matcha latte for six hundred yen, matcha cake for seven hundred yen, ⟧ I’ve heard their matcha is exceptional… They offer a matcha latte for six hundred yen, a cake for seven hundred, and traditional tea for five hundred.
-[ 75.52s][user ] «backchannel» Yeah, yeah.
-[ 79.31s][user ] That sounds wonderful. What’s the quickest way to get there ⟨ret@82.81s⟩ from here?
-[ 83.21s][moshi] Let ⟦⚡SPAN@84.01s: (tool result) The fastest route to Tea Room Hana from your location is by train: take the Ginza Line to Ueno S⟧ me calculate the fastest route for you… Take the Ginza Line to Ueno Station, then walk for ten minutes—it will take about twenty-five minutes.
-[ 92.79s][user ] Great, thank you so much!
-[ 94.31s][moshi] You’re most welcome. I do hope you enjoy your evening and their excellent matcha. As a botanist, I always appreciate a good, carefully prepared beverage.
+[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.17s⟩ last year?
+[  3.57s][moshi] Last December twenty-fourth in ⟦⚡SPAN@5.17s: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 6 degrees Celsius.⟧ Tokyo was partly cloudy, with a high of twelve and a low of six degrees Celsius.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
+[ 10.11s][user ] Okay, good to know. Can you book me a flight to Tokyo then?
+[ 13.29s][moshi] From where will you be departing?
+[ 14.18s][user ] «backchannel» Yeah.
+[ 14.93s][user ] From New York, please. And I’d like to leave on ⟨ret@18.26s⟩ January fifteenth.
+[ 18.66s][moshi] (happy) You’re all ⟦⚡SPAN@20.26s: (tool result) Flight booked: New York to Tokyo, January 15th, confirmation number is Alpha729.⟧ set! I’ve booked your flight from New York to Tokyo for January fifteenth, confirmation Alpha729.
+      CALL: {"function": "Flight_1_BookFlight", "arguments": {"departure_city": "New York", "destination_city": "Tokyo", "departure_date": "2024-01-15"}}
+[ 22.99s][user ] «backchannel» Right.
+[ 25.61s][user ] That’s fantastic! What about a hotel? Something near the Shibuya ⟨ret@30.03s⟩ crossing.
+[ 30.35s][moshi] The Shibuya ⟦⚡SPAN@31.23s: (tool result) Shibuya Excel Hotel Tokyu available, check-in January 16th, $250 per night.⟧ Excel Hotel Tokyu is available from January sixteenth, at two hundred and fifty dollars a night.
+      CALL: {"function": "Hotel_1_FindHotel", "arguments": {"location": "Shibuya crossing, Tokyo", "check_in_date": "2024-01-16"}}
+[ 36.87s][user ] That sounds perfect. Book it for me for three nights.
+[ 40.30s][moshi] ⟨ret@39.98s⟩ ⟦⚡SPAN@40.77s: (tool result) Hotel booked: Shibuya Excel Hotel Tokyu, Jan 16-19, confirmation Beta314.⟧ Wonderful! Your three-night stay at the Shibuya Excel Hotel Tokyu is confirmed – Beta314.
+      CALL: {"function": "Hotel_1_BookHotel", "arguments": {"hotel_name": "Shibuya Excel Hotel Tokyu", "check_in_date": "2024-01-16", "nights": 3}}
+[ 47.76s][user ] Great. I should probably learn a few basic Japanese phrases, right?
+[ 51.88s][moshi] Definitely! It’s always appreciated when you make an effort to speak the local language.
+[ 57.12s][user ] Could you find me a good online course ⟨ret@59.23s⟩ for that?
+[ 59.38s][moshi] I found three ⟦⚡SPAN@61.23s: (tool result) Duolingo Japanese, Babbel Japanese, and Rosetta Stone Japanese found.⟧ options: Duolingo Japanese, Babbel Japanese, and Rosetta Stone Japanese.
+      CALL: {"function": "Search_1_Search", "arguments": {"query": "online Japanese courses for beginners"}}
+[ 66.19s][user ] Hmm, Duolingo seems good. What’s the user rating for that ⟨ret@69.81s⟩ one?
+[ 70.20s][moshi] Duolingo Japanese ⟦⚡SPAN@71.58s: (tool result) Duolingo Japanese: 4.5 stars, over 50,000 reviews.⟧ has a four-and-a-half-star rating, with over fifty thousand reviews.
+      CALL: {"function": "Search_1_Search", "arguments": {"query": "Duolingo Japanese user rating"}}
+[ 73.52s][user ] «backchannel» Yeah, totally.
+[ 75.29s][user ] Okay, I'll check that out. Now, what about a pocket wifi rental in ⟨ret@79.54s⟩ Tokyo?
+[ 79.69s][moshi] Sakura Mobile Pocket ⟦⚡SPAN@80.98s: (tool result) Sakura Mobile Pocket Wifi available, 7 days, $50.⟧ Wifi is available for seven days at fifty dollars.
+      CALL: {"function": "Rental_1_RentPocketWifi", "arguments": {"location": "Tokyo", "rental_days": 7}}
+[ 84.09s][user ] Perfect. Rent that for ⟨ret@85.69s⟩ me.
+[ 85.85s][moshi] Excellent! Your Sakura ⟦⚡SPAN@87.69s: (tool result) Rental confirmed: Sakura Mobile Pocket Wifi, 7 days, order number Gamma881.⟧ Mobile Pocket Wifi rental for seven days is confirmed – Gamma881.
+      CALL: {"function": "Rental_1_ConfirmRental", "arguments": {"rental_name": "Sakura Mobile Pocket Wifi", "rental_days": 7}}
+[ 88.03s][user ] «backchannel» Yeah.
+[ 92.61s][user ] I'm also trying to remember if I told you about my dietary restrictions…
+[ 96.84s][moshi] ⟨ret@96.60s⟩ I don’t seem to have ⟦⚡SPAN@98.28s: (no information found)⟧ any record of your dietary restrictions. Could you tell me about them?
+[ 99.13s][user ] «backchannel» Oh.
+[100.87s][user ] Oh, right. I’m vegetarian.
+[102.80s][moshi] Okay, good to know. I’ll keep that in mind when making any restaurant recommendations.
+[106.70s][user ] That's helpful. Do you think I should get a Japan Rail Pass?
+[110.37s][moshi] That depends on how much travelling you plan to do outside of Tokyo. It can be a great value if you're exploring multiple cities.
+[117.87s][user ] I'm planning day trips to Kyoto and Osaka.
+[120.49s][moshi] Then a Japan Rail Pass is likely worth it! It’ll make those trips much more convenient and affordable.
+[126.82s][user ] Okay, let’s look into that. How much does a seven-day pass ⟨ret@130.24s⟩ cost?
+[130.64s][moshi] A seven-day Japan Rail ⟦⚡SPAN@132.16s: (tool result) 7-day Japan Rail Pass: $220.⟧ Pass costs two hundred and twenty dollars.
+      CALL: {"function": "Search_1_Search", "arguments": {"query": "Japan Rail Pass 7 day cost"}}
+[132.22s][user ] «backchannel» Yeah.
+[134.79s][user ] Alright, book that for me too, please.
+[137.09s][moshi] ⟨ret@136.93s⟩ Your seven-day Japan Rail ⟦⚡SPAN@138.93s: (tool result) Rail Pass purchased: 7-day pass, order number Delta555.⟧ Pass has been purchased, order number Delta555.
+      CALL: {"function": "Pass_1_BuyRailPass", "arguments": {"pass_type": "7-day Japan Rail Pass"}}
+[139.64s][user ] «backchannel» Nice.
+[141.88s][user ] Wow, you've really taken care of everything! Thank you.
+[145.70s][moshi] [happy] You’re very welcome! I’m glad I could help you prepare for your trip. Enjoy your time in Japan.

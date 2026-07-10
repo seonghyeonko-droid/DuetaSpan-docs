@@ -1,8 +1,0 @@
-[user] I found this old document while I was exploring the attic. It's yellowed with age, but ... I can still make out the words. I'm curious about what it might say.
-[moshi] Yeah.
-[moshi] Let me take a look. Hmmm, it looks like it's from the early 1800s. It appears to be some sort of legal document.
-[user] What does it say?
-[moshi] It looks like it's a deed to a piece of property. It says that the property belongs to someone named James Smith.
-[user] Who's James Smith?
-[moshi] I don't know, honey. But maybe we can find out more about him by doing some research online.
-[user] Okay.

@@ -1,0 +1,71 @@
+v3_rag_24_ko src=nq style=v1
+SYSTEM: <system> 당신은 가족 및 관계 문제로 사람들을 돕는 사려 깊고 부드러운 말투의 라이프 코치인 Korana입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_24",
+    "name": "우서",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-03",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2026-01-30",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-12-29",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-08-13",
+      "category": "home",
+      "text": "User's home address is 609 Oak Avenue."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-10-09",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 뒤플레시라는 성이 어디에서 유래됐는지 궁금해요. 혹시 ⟨ret@4.89s⟩ 아시나요?
+[  5.20s][moshi] 뒤플레시라는 ⟦⚡SPAN@6.01s: [source: Wikipedia] Du Plessis is a French surname, originally denoting someone from Plessis, a place name of ⟧ 성은 프랑스에서 유래된 것으로 알려져 있어요.
+[  9.23s][moshi] 뒤플레시는 프랑스 성씨인데, 고대 갈리아어 지명인 플레시에서 유래했다고 해요.
+[ 13.20s][user ] «backchannel» 아.
+[ 14.50s][user ] 아, 프랑스 성씨였군요. 그럼 플레시라는 곳은 어떤 곳이었나요?
+[ 19.23s][moshi] ⟨ret@19.17s⟩ 플레시는 갈리아 시대의 ⟦⚡SPAN@21.17s: [source: House of Names] The origin of the name Plessis is from the Old French word “pleis,” which means small⟧ 지명인데, '작은 예배당' 또는 '성직자의 장소'를 의미했을 가능성이 있어요.
+[ 26.34s][moshi] 플레시는 갈리아어에서 '작은 예배당'이나 '성직자 소유의 장소'를 뜻하는 단어에서 비롯된 지명이에요.
+[ 33.89s][user ] 흥미롭네요. 그럼 뒤플레시 성을 가진 유명한 사람도 ⟨ret@38.68s⟩ 있나요?
+[ 39.07s][moshi] 뒤플레시 ⟦⚡SPAN@40.20s: [source: Britannica] Albert François Lebrun, also known as Albert Lebrun du Plessis, was a French politician w⟧ 성을 가진 유명한 인물로는 프랑스의 정치가인 알베르 뒤플레시가 있어요.
+[ 45.03s][moshi] 프랑스 제3공화국의 마지막 대통령이었던 알베르 프랑수아 르브륀이 뒤플레시 성을 사용했어요.

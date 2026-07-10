@@ -1,0 +1,91 @@
+v3_mem_34_en src=mem style=mem
+SYSTEM: <system> You are Hia, a calm and patient personal guide who helps people with big life transitions. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mem_34",
+    "name": "Ava",
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
+      "currency": "EUR (€)"
+    },
+    "nationality": "French",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "French"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-19",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Mexican."
+    },
+    {
+      "date": "2026-04-15",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2026-03-22",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-08-25",
+      "category": "allergy",
+      "text": "User is allergic to peanuts."
+    },
+    {
+      "date": "2025-08-06",
+      "category": "home",
+      "text": "User's home address is 30 Oak Avenue."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-02-09",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][moshi] Hi Ava, I’m Hia. It’s lovely to connect with you. I understand you’re navigating some changes, and I’m here to offer guidance as you transition.
+[  9.58s][user ] Well, I'm thinking of going to a concert downtown, but I'm not sure how long it will take to get there.
+[ 14.66s][moshi] ⟨ret@14.58s⟩ Your home is at 30 Oak ⟦⚡SPAN@16.58s: [2025-08-06] User's home address is 30 Oak Avenue.⟧ Avenue. I can find the quickest route and estimate travel time for you.
+[ 20.63s][user ] Yes, please. That would be great.
+[ 22.35s][moshi] ⟨ret@22.28s⟩ The estimated travel time to ⟦⚡SPAN@24.28s: (tool result) ETA is 22 minutes via Rue de Rivoli.⟧ the Concert Hall via Rue de Rivoli is twenty-two minutes.
+      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "Concert Hall"}}
+[ 24.84s][user ] «backchannel» Uh-huh.
+[ 27.47s][moshi] Traffic conditions can fluctuate, of course, but that’s the current best estimate. Do you have a preferred mode of transport?
+[ 32.50s][user ] «backchannel» Yeah, yeah.
+[ 34.76s][user ] I was thinking of taking the metro. Is ⟨ret@37.46s⟩ that faster?
+[ 37.77s][moshi] Taking ⟦⚡SPAN@38.58s: (tool result) Metro travel time is 18 minutes with one transfer.⟧ the metro will be faster, at eighteen minutes, with one transfer required.
+      CALL: {"function": "get_directions", "arguments": {"origin": "30 Oak Avenue", "destination": "Concert Hall", "mode": "metro"}}
+[ 40.53s][user ] «backchannel» Mm-hmm.
+[ 44.27s][user ] Oh, good to know. And is there parking near the Concert Hall, just in case?
+[ 48.20s][moshi] ⟨ret@48.15s⟩ Parking downtown can be ⟦⚡SPAN@50.15s: (tool result) Parking available 3 blocks away, €15 per hour.⟧ challenging. I can check availability for you, but it’s often limited and expensive.
+      CALL: {"function": "find_parking", "arguments": {"location": "Concert Hall"}}
+[ 54.94s][moshi] There is parking available three blocks from the Concert Hall, at a rate of fifteen euros per hour.
+[ 62.79s][user ] Fifteen euros… that’s a bit steep.
+[ 65.14s][moshi] It is, isn’t it? Often, public transport is more economical and less stressful in central Paris.
+[ 67.71s][user ] «backchannel» Mhm.
+[ 71.41s][user ] You’re right. I think I’ll stick with the metro. Do you know if the metro station ⟨ret@75.67s⟩ is accessible?
+[ 75.98s][moshi] You prefer an aisle ⟦⚡SPAN@77.67s: [2026-03-22] User prefers an aisle seat when traveling.⟧ seat when you travel. I can check the accessibility features of the metro station nearest you.
+[ 80.38s][user ] «backchannel» Right.
+[ 82.63s][user ] That would be wonderful, thank you.
+[ 84.78s][moshi] ⟨ret@84.71s⟩ The nearest ⟦⚡SPAN@85.91s: (tool result) Nearest station has elevators and tactile paving.⟧ station to your home has elevators and tactile paving for accessibility.
+      CALL: {"function": "get_station_info", "arguments": {"station": "nearest metro station to 30 Oak Avenue"}}
+[ 86.80s][user ] «backchannel» Yeah.
+[ 90.75s][user ] Perfect! That’s very reassuring.
