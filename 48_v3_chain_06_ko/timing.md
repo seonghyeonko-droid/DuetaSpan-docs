@@ -68,75 +68,53 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 내 브라우저에 맞춰서 설정해 줄 수 있 | S2 서울역에서 출발하는 걸로요. | S3 Bella Italia로 가는 길 좀 알려줄 수 있을까요? | S4 아니요, 괜찮아요. 지금은 그냥 이대로 괜찮습니다.
+# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점 | S2 아, 그렇군요. 그럼 이번 주 금요일에 부산 가는 기차표 좀  | S3 고마워요. 그런데 혹시 그 기차역 근처에 맛집도 좀 알아봐 줄 | S4 와, 정말 고마워요. 덕분에 여행 계획이 훨씬 수월해졌네요.
 
-     0.00s  user  발화 시작: 혹시 사용자 에이전트를 내 브라우저에 맞춰서 설정해 줄 수 있을까요? MyCustomBrowser 버전 십점
-     7.47s  <ret> 발화 (turn1 첫 프레임)
-     7.71s  agent 발화 시작: <ret> 사용자 에이전트 설정을 도와드릴게요. 사용자 에이전트를 MyCustomBrowser 버전 십점 오
-     7.74s  user  발화 끝
-     9.07s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.78s]: (tool result) User agent set to MyCustomBrowser version 10.5.
-    18.84s  agent 발화 끝
-    19.03s  user  발화 시작: 흐음, 지금 서울 날씨는 어때요?
-    21.34s  <ret> 발화 (turn3 첫 프레임)
-    21.57s  user  발화 끝
-    21.58s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 이십팔 점 삼도이고, 습도는 육십오퍼센트, 바람은 시속 삼 점 이킬로미터
-    22.86s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.76s]: (tool result) 28.3°C, humidity 65%, wind 3.2 km/h.
-    24.43s  user  발화 시작: 네.
-    25.06s  user  발화 끝
-    28.34s  agent 발화 끝
-    28.45s  user  발화 시작: 그럼, 이번 주 금요일에 부산 가는 기차표 좀 알아봐 줄 수 있을까요?
-    32.70s  user  발화 끝
-    32.81s  agent 발화 시작: 네, 금요일 부산행 기차표를 찾아보겠습니다. 출발역은 어디로 하시겠어요?
-    35.23s  user  발화 시작: 네.
-    35.58s  user  발화 끝
-    37.06s  agent 발화 끝
-    37.12s  user  발화 시작: 서울역에서 출발하는 걸로요.
-    39.01s  <ret> 발화 (turn9 첫 프레임)
-    39.20s  user  발화 끝
-    39.40s  agent 발화 시작: <ret> 서울역에서 부산역까지 금요일 칠월 십일일 오후 두시 삼십분 KTX, 오만 구천팔백원이고 좌석이 있
-    41.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.20s]: (tool result) Seoul Station to Busan Station, Friday, July 11, 2026, 1
-    49.60s  agent 발화 끝
-    49.71s  user  발화 시작: 네, 예약해 주세요.
-    51.06s  <ret> 발화 (turn11 첫 프레임)
-    51.29s  agent 발화 시작: <ret> 서울역에서 부산역까지 금요일 칠월 십일일 오후 두시 삼십분 KTX 예약이 완료되었고, 예약 아이디
-    51.33s  user  발화 끝
-    53.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: (tool result) Seoul Station to Busan Station, Friday, July 11, 2026, 1
-    62.19s  agent 발화 끝
-    62.84s  user  발화 시작: 감사합니다. 그런데, 혹시 근처에 맛있는 이탈리아 음식점도 찾아줄 수 있을까요?
-    68.79s  <ret> 발화 (turn13 첫 프레임)
-    68.95s  agent 발화 시작: <ret> 서울에서 이백미터 거리에 Bella Italia, 오백오십미터 거리에 La Piazza, 팔백미터
-    68.95s  user  발화 끝
-    70.31s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.88s]: (tool result) Seoul (37.5665, 126.9780): Bella Italia (200m), La Piazz
-    76.83s  agent 발화 끝
-    77.03s  user  발화 시작: Bella Italia로 가는 길 좀 알려줄 수 있을까요?
-    80.59s  <ret> 발화 (turn15 첫 프레임)
-    80.72s  user  발화 끝
-    80.74s  agent 발화 시작: <ret> 현재 위치에서 강남대로를 북동쪽으로 이백미터 걸어가시면 됩니다.
-    81.87s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.40s]: (tool result) Starting from current location, walk 200m northeast on G
-    85.14s  agent 발화 끝
-    86.30s  user  발화 시작: 알겠습니다. 혹시, 제 알람 좀 확인해 줄 수 있을까요?
-    90.34s  <ret> 발화 (turn17 첫 프레임)
-    90.37s  user  발화 끝
-    90.42s  agent 발화 시작: <ret> 칠월 십이일 오전 일곱 시에 알람이 설정되어 있습니다.
-    91.38s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.84s]: (tool result) Alarm set for 7:00 AM on July 12, 2026.
-    92.65s  user  발화 시작: 네.
-    93.19s  user  발화 끝
-    94.19s  user  발화 시작: 그럼, 내일 아침 일곱 시에 알람은 맞춰져 있네요.
-    94.26s  agent 발화 끝
-    98.20s  agent 발화 시작: 네, 맞습니다. 혹시 다른 알람을 추가하시겠어요?
-    98.22s  user  발화 끝
-   101.95s  agent 발화 끝
-   102.02s  user  발화 시작: 아니요, 괜찮아요. 지금은 그냥 이대로 괜찮습니다.
-   105.50s  agent 발화 시작: 혹시 더 궁금한 점 있으시면 언제든지 말씀해 주세요.
-   105.62s  user  발화 끝
-   108.67s  user  발화 시작: 아, 그러고 보니, 오늘 주식 시장 상황은 어때요? 삼성전자 주식요.
-   108.87s  agent 발화 끝
-   112.95s  <ret> 발화 (turn24 첫 프레임)
-   113.18s  agent 발화 시작: <ret> 삼성전자 주식(공 공 오 구 삼 공)은 현재 칠만 오천삼백원에 거래되고 있으며, 오늘 일 점 이퍼
-   113.20s  user  발화 끝
-   114.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Samsung Electronics (005930) is trading at ₩75,300, up 1
-   122.08s  agent 발화 끝
-   122.20s  user  발화 시작: 그렇군요. 그럼, 오늘 하루도 잘 보내세요.
-   125.85s  user  발화 끝
-   125.98s  agent 발화 시작: 네, 고객님도 좋은 하루 보내세요.
-   128.24s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 줄 수 있을까요?
+     4.70s  <ret> 발화 (turn1 첫 프레임)
+     4.94s  agent 발화 시작: <ret> MyCustomBrowser 버전 십점오 디렉터리를 생성했습니다.
+     5.00s  user  발화 끝
+     6.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.93s]: (tool result) Directory 'MyCustomBrowser version 10.5' created success
+     8.87s  agent 발화 끝
+     8.93s  user  발화 시작: 음, 그럼 지금 서울 날씨는 어때요?
+    11.45s  <ret> 발화 (turn3 첫 프레임)
+    11.65s  user  발화 끝
+    11.69s  agent 발화 시작: <ret> 현재 서울의 기온은 섭씨 이십오 점 칠도이고, 습도는 육십팔%, 바람은 시속 삼 점 이킬로미터입니
+    13.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) 25.7°C, humidity 68%, wind 3.2 km/h.
+    14.51s  user  발화 시작: 진짜요?
+    15.33s  user  발화 끝
+    19.71s  agent 발화 끝
+    19.81s  user  발화 시작: 아, 그렇군요. 그럼 이번 주 금요일에 부산 가는 기차표 좀 알아봐 줄래요?
+    24.44s  <ret> 발화 (turn6 첫 프레임)
+    24.52s  agent 발화 시작: <ret> 이번 주 금요일 부산행 기차표는 오후 두시 삼십분 KTX가 두 시간 십오 분, 오만 구천팔백 원이
+    24.53s  user  발화 끝
+    26.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: (tool result) 14:30 KTX 부산행, 2시간 15분 소요, 59,800원; 16:00 ITX-새마을 부산행, 2
+    30.19s  user  발화 시작: 예.
+    30.83s  user  발화 끝
+    35.60s  agent 발화 끝
+    35.66s  user  발화 시작: KTX로 예약해 줘요.
+    37.25s  <ret> 발화 (turn9 첫 프레임)
+    37.59s  user  발화 끝
+    37.65s  agent 발화 시작: <ret> KTX 오후 두시 삼십분 부산행으로 예약 완료되었습니다. 좌석은 십일A이고, 확인 코드는 XJ74
+    39.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Reservation confirmed: Passenger Name: User Name, Train:
+    46.18s  agent 발화 끝
+    46.25s  user  발화 시작: 고마워요. 그런데 혹시 그 기차역 근처에 맛집도 좀 알아봐 줄 수 있을까요?
+    50.80s  <ret> 발화 (turn11 첫 프레임)
+    51.11s  agent 발화 시작: <ret> 부산역 근처에는 돼지국밥이 오백미터, 밀면이 칠백오십미터, 씨앗호떡이 일킬로미터 거리에 있습니다.
+    51.15s  user  발화 끝
+    52.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: (tool result) Busan Station, (35.1031, 128.7724): Dwaeji Gukbap (500m)
+    59.18s  agent 발화 끝
+    59.94s  user  발화 시작: 돼지국밥이 제일 가까우니까, 거기 예약 좀 해 줄 수 있을까요?
+    64.21s  <ret> 발화 (turn13 첫 프레임)
+    64.36s  agent 발화 시작: <ret> 돼지국밥 두 명분, 이천이십육년 칠월 십일일 오후 여섯 시로 예약 완료되었습니다. 확인 코드는 R
+    64.38s  user  발화 끝
+    66.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Reservation confirmed: Dwaeji Gukbap, Busan Station, 2 p
+    72.10s  agent 발화 끝
+    72.22s  user  발화 시작: 와, 정말 고마워요. 덕분에 여행 계획이 훨씬 수월해졌네요.
+    76.85s  user  발화 끝
+    77.00s  agent 발화 시작: 천만에요. 여행 계획에 도움이 되었다니 저도 기쁩니다. 혹시 다른 필요한 건 없으신가요?
+    80.51s  user  발화 시작: 네.
+    81.14s  user  발화 끝
+    82.98s  agent 발화 끝
+    83.16s  user  발화 시작: 아, 그러고 보니 다음 주 화요일에 중요한 회의가 있는데, 알람 좀 맞춰줄 수 있을까요?
+    89.18s  user  발화 끝

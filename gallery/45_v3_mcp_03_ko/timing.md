@@ -76,41 +76,37 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 오늘 저녁에 볼 만한 영화 있을까요? | S2 '행오버' 예매해 주세요. | S3 네, 그렇게 해주세요. | S4 아니요, 괜찮습니다. 감사합니다.
+# EXAMINER(FDB-v2) 단계: S1 혹시 지금 제일 인기 있는 영화가 뭔지 알아볼 수 있을까요? | S2 '미션 임파서블' 예매해 줄 수 있어요? | S3 와, 고마워요! | S4 아니요, 괜찮아요.
 
-     0.00s  user  발화 시작: 혹시 오늘 저녁에 볼 만한 영화 있을까요?
-     2.66s  <ret> 발화 (turn1 첫 프레임)
-     2.98s  agent 발화 시작: <ret> 영화 검색해 드릴게요. 어떤 장르를 좋아하시나요?
-     3.18s  user  발화 끝
-     4.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: (no information found)
-     6.46s  agent 발화 시작: 죄송하지만, 선호하는 장르를 말씀해 주셔야 영화를 찾아드릴 수 있어요.
-     6.50s  agent 발화 끝
-    10.90s  agent 발화 끝
-    11.27s  user  발화 시작: 음… 코미디요.
-    12.37s  <ret> 발화 (turn4 첫 프레임)
-    12.77s  agent 발화 시작: <ret> 코미디 영화라면… 코미디 영화로는 '행오버'가 있고, '브라이즈메이드', '슈퍼배드'도 있어요.
-    13.02s  user  발화 끝
-    13.09s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.15s]: (tool result) The Hangover, 2009; Bridesmaids, 2011; Superbad, 2007
-    16.71s  user  발화 시작: 네.
-    17.16s  user  발화 끝
-    17.92s  agent 발화 시작: 혹시 다른 장르도 괜찮으신가요?
-    17.96s  agent 발화 끝
-    19.80s  agent 발화 끝
-    20.25s  user  발화 시작: '행오버' 예매해 주세요.
-    21.83s  <ret> 발화 (turn8 첫 프레임)
-    22.18s  user  발화 끝
-    22.23s  agent 발화 시작: <ret> '행오버' 예매를 도와드릴게요. '행오버' 영화, 날짜는 칠월 십일일 저녁 일곱 시 반, 좌석은 
-    22.33s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.63s]: (tool result) Movie: The Hangover, Date: July 11, 2026, Time: 7:30 PM,
-    35.27s  agent 발화 끝
-    35.29s  user  발화 시작: 네, 그렇게 해주세요.
-    36.26s  <ret> 발화 (turn10 첫 프레임)
-    36.58s  agent 발화 시작: <ret> 문자로 예매 정보를 보내드렸습니다.
-    36.72s  user  발화 끝
-    37.30s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.58s]: (tool result) SMS sent to +821099998888, Message: "The Hangover, July 
-    39.16s  agent 발화 끝
-    39.16s  agent 발화 시작: 문자로 예매 정보를 보내드렸습니다.
-    41.29s  agent 발화 끝
-    42.43s  user  발화 시작: 아니요, 괜찮습니다. 감사합니다.
-    44.38s  agent 발화 시작: 즐거운 영화 관람 되세요.
-    44.55s  user  발화 끝
-    46.09s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 지금 제일 인기 있는 영화가 뭔지 알아볼 수 있을까요?
+     3.59s  <ret> 발화 (turn1 첫 프레임)
+     3.91s  agent 발화 시작: <ret> 지금 가장 인기 있는 영화는 크리스토퍼 놀란 감독의 '오펜하이머'예요.
+     4.16s  user  발화 끝
+     4.31s  ⚡SPAN 주입 [d'=0.72s / d_lead=1.83s]: Movies_1_FindMovies: "Oppenheimer is a 2023 biographical thriller film
+     8.02s  agent 발화 끝
+     8.56s  user  발화 시작: 아, 그거 봤어요. 다른 영화는 없나요?
+    11.06s  <ret> 발화 (turn3 첫 프레임)
+    11.38s  agent 발화 시작: <ret> '바비'라는 영화도 있어요. 그레타 거윅 감독님이 만드셨고요.
+    11.61s  user  발화 끝
+    13.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.56s]: Movies_1_FindMovies: "Barbie is a 2023 fantasy comedy film directed by
+    14.03s  user  발화 시작: 네.
+    14.39s  user  발화 끝
+    14.48s  <ret> 발화 (turn5 첫 프레임)
+    14.88s  agent 발화 시작: <ret> 많은 분들이 좋아하시더라고요. '미션 임파서블: 데드 레코닝 PART ONE'도 많은 사랑을 받고
+    14.94s  agent 발화 끝
+    14.98s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.26s]: Movies_3_FindMovies: "Mission: Impossible – Dead Reckoning Part One is
+    20.34s  agent 발화 끝
+    20.88s  user  발화 시작: '미션 임파서블' 예매해 줄 수 있어요?
+    22.93s  <ret> 발화 (turn7 첫 프레임)
+    23.33s  agent 발화 시작: <ret> 네, '미션 임파서블' 메가박스 코엑스관, 칠월 십이일 저녁 일곱시 삼십분, 이자리 예매 완료되었
+    23.42s  user  발화 끝
+    24.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) Booking confirmed, theater: Megabox Coex, date: July 12,
+    32.37s  agent 발화 끝
+    32.37s  user  발화 시작: 와, 고마워요!
+    33.71s  agent 발화 시작: 예매 도와드릴 수 있어서 기쁩니다. 혹시 다른 영화도 보시겠어요?
+    33.71s  user  발화 끝
+    37.73s  agent 발화 끝
+    37.85s  user  발화 시작: 아니요, 괜찮아요.
+    39.33s  user  발화 끝
+    39.44s  agent 발화 시작: 즐거운 영화 관람 되세요!
+    41.19s  agent 발화 끝

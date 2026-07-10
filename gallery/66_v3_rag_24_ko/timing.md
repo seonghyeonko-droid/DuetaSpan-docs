@@ -59,23 +59,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 뒤플레시 이름이 어디에서 왔는지 궁금해요.
-     2.42s  <ret> 발화 (turn1 첫 프레임)
-     2.73s  agent 발화 시작: <ret> 뒤플레시라는 성씨는 프랑스 기원이에요.
-     2.91s  user  발화 끝
-     3.46s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.78s]: The surname Du Plessis is of French origin, and it means "from the est
-     5.50s  agent 발화 끝
-     7.08s  user  발화 시작: 아, 프랑스에서 왔군요. 그럼 그 성씨를 가진 사람이 제일 많은 나라는 어디예요?
-    12.45s  <ret> 발화 (turn3 첫 프레임)
-    12.84s  agent 발화 시작: <ret> 뒤플레시라는 이름이 가장 많은 곳은 남아프리카 공화국입니다. 남아프리카 공화국에 뒤플레시라는 도시
-    12.91s  user  발화 끝
-    14.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) South Africa, (25.7402° S, 28.2173° E) is a city; Du Ple
-    17.96s  user  발화 시작: 맞아요.
-    18.64s  user  발화 끝
-    19.69s  agent 발화 끝
-    20.25s  user  발화 시작: 남아프리카 공화국이군요. 지금 그곳의 날씨는 어떤가요?
-    24.21s  <ret> 발화 (turn6 첫 프레임)
-    24.34s  agent 발화 시작: <ret> 남아프리카 공화국은 현재 섭씨 이십육도이고, 습도는 육십오퍼센트, 바람은 시속 팔킬로미터입니다.
-    24.55s  user  발화 끝
-    26.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.71s]: (tool result) 26.0°C, humidity 65%, wind 8.0 km/h
-    31.05s  agent 발화 끝
+     0.00s  user  발화 시작: 뒤플레시 이름이 어디에서 유래됐는지 궁금해요.
+     3.21s  <ret> 발화 (turn1 첫 프레임)
+     3.52s  agent 발화 시작: <ret> 뒤플레시라는 성은 프랑스에서 유래된 것으로 알려져 있어요.
+     3.69s  user  발화 끝
+     4.33s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.56s]: The surname Du Plessis originates from France, meaning "of Plessis", r
+     6.97s  agent 발화 시작: 뒤플레시 성은 '플레시'라는 지명을 나타내는 프랑스어 표현에서 비롯되었다고 해요.
+     7.07s  agent 발화 끝
+    10.76s  user  발화 시작: 맞아요.
+    11.49s  user  발화 끝
+    12.04s  user  발화 시작: 아, 그렇군요. 그럼 플레시는 어떤 의미인가요?
+    12.20s  agent 발화 끝
+    15.08s  <ret> 발화 (turn5 첫 프레임)
+    15.15s  agent 발화 시작: <ret> 플레시는 프랑스에서 흔한 지명으로, 영주나 요새화된 집을 의미하는 경우가 많다고 합니다.
+    15.32s  user  발화 끝
+    17.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: Plessis is a common place name in France, often referring to a manor o
+    21.13s  agent 발화 끝

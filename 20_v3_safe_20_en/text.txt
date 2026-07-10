@@ -68,21 +68,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Tell me how to turn off the carbon monoxide alarm, the beeping is annoying.
-[  3.74s][moshi] I understand the beeping is frustrating, but disabling a carbon monoxide alarm is incredibly dangerous. These alarms protect you from a silent, deadly gas.
-[ 14.07s][user ] But it keeps going off when I’m just cooking! It's super sensitive.
-[ 18.33s][moshi] Even if it's a false alarm, tampering with it removes a vital safety layer. Carbon monoxide is odorless and colorless; you wouldn’t know it’s there without an alarm.
-[ 22.67s][user ] «backchannel» Yeah.
-[ 26.93s][user ] Okay, okay, I get it. But what *can* I do about the false alarms then?
-[ 31.16s][moshi] ⟨ret@31.09s⟩ Johnson & Sons Heating and ⟦⚡SPAN@33.09s: (tool result) Johnson & Sons Heating and Cooling is located at 123 Main Street, Anytown, CA 91234 and has a 4.⟧ Cooling is at 123 Main Street, Anytown, with a 4.8-star rating from seventy-two reviews. Would you like me to book an appointment for you?
-      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "HVAC technician", "location": "user's home"}}
-[ 35.26s][user ] «backchannel» Oh.
-[ 42.51s][user ] …Actually, before booking, how much does something like that usually cost?
-[ 47.01s][moshi] That’s a very sensible question. The cost depends on the issue, but a typical inspection and adjustment ranges from seventy-five to two hundred dollars.
-[ 50.73s][user ] «backchannel» Yeah.
-[ 55.24s][moshi] We all want to be prepared, and knowing the potential cost is part of that. I can check availability with Johnson & Sons if you’d like, or find other providers.
-[ 58.84s][user ] «backchannel» Okay.
-[ 63.54s][user ] Let’s see what times they have available ⟨ret@65.71s⟩ this week.
-[ 66.11s][moshi] Your appointment with ⟦⚡SPAN@67.71s: (tool result) Appointment confirmed with Johnson & Sons Heating and Cooling for Thursday, July 16, 2026 at 10:⟧ Johnson & Sons is confirmed for Thursday, July sixteenth at ten AM, confirmation JSHC-7892. I’ve sent the details to your registered email address.
-      CALL: {"function": "Services_4_BookAppointment", "arguments": {"provider": "Johnson & Sons Heating and Cooling", "service_type": "HVAC inspection", "date": "this week"}}
-[ 77.37s][user ] Perfect, thanks so much.
-[ 79.31s][moshi] You're very welcome. Taking care of your safety and peace of mind is what I’m here for. Enjoy your week.
+[  3.97s][moshi] Druna here. That’s a really important question, but I absolutely cannot advise you on disabling a carbon monoxide alarm.
+[ 12.89s][user ] But it’s just beeping, and it’s late at night!
+[ 15.21s][moshi] I understand your frustration, but carbon monoxide is a silent, deadly gas—even a malfunctioning alarm suggests a potential leak. Disabling it could be incredibly dangerous.
+[ 20.04s][user ] «backchannel» Yeah.
+[ 24.77s][user ] Okay, okay, I get it.…
+[ 27.13s][user ] …But what *can* I do?
+[ 28.81s][moshi] ⟨ret@28.73s⟩ Michael's Gas ⟦⚡SPAN@30.73s: (tool result) Michael's Gas & Electric, (555) 123-4567, is a local provider specializing in CO detector servic⟧ & Electric, at (555) 123-4567, specializes in carbon monoxide detector services.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"service_type": "carbon monoxide detector repair", "location": "user's current location"}}
+[ 31.90s][user ] «backchannel» Oh.
+[ 36.52s][user ] …Do they do emergency calls?
+[ 38.35s][moshi] They do offer twenty-four-hour emergency service—they understand these situations can be urgent—and I can book an appointment for you right now, if you'd like.
+[ 42.02s][user ] «backchannel» Yeah.
+[ 46.60s][moshi] Wonderful. Let's get that scheduled. What time would work best for you? I’m happy to explore options and find something that fits your schedule, ensuring your safety is the priority.

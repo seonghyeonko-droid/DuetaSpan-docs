@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sky, I'm Lira. I’m a counselor here to help with money an
-     3.21s  user  발화 시작: Uh-huh.
-     3.65s  user  발화 끝
-     6.54s  agent 발화 끝
-     6.75s  user  발화 시작: Um, well, I was just remembering that dentist appointment I 
-    12.75s  <ret> 발화 (turn3 첫 프레임)
-    12.99s  agent 발화 시작: <ret> You booked a dentist appointment asking for an early-m
-    13.19s  user  발화 끝
-    14.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    19.29s  user  발화 시작: Right, exactly! And I was hoping to move it to next week… co
-    19.71s  agent 발화 끝
-    25.34s  <ret> 발화 (turn5 첫 프레임)
-    25.62s  agent 발화 시작: <ret> Dr. Han has openings on Tuesday, July fourteenth at ni
-    25.73s  user  발화 끝
-    27.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Dr. Han is available on Tuesday, July 14, 2026 at 9:00 A
-    34.15s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you. I'm a couns
+     3.54s  user  발화 시작: Uh-huh.
+     3.95s  user  발화 끝
+     7.19s  agent 발화 끝
+     7.43s  user  발화 시작: Uh, yeah, hi. I was just wondering… do you remember anything
+    12.45s  <ret> 발화 (turn3 첫 프레임)
+    12.69s  agent 발화 시작: <ret> Yes, I do. Your note from January twenty-sixth says yo
+    12.75s  user  발화 끝
+    14.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    22.09s  user  발화 시작: Oh, right! And… did I mention anything about allergies in ou
+    22.43s  agent 발화 끝
+    26.23s  <ret> 발화 (turn5 첫 프레임)
+    26.45s  user  발화 끝
+    26.54s  agent 발화 시작: <ret> You did. Your record from January twenty-second states
+    28.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.01s]: [2026-01-22] User is allergic to shellfish.
+    34.55s  agent 발화 끝

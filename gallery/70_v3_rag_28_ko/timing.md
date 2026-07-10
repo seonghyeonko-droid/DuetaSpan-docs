@@ -68,23 +68,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 퇴역 군인부(Department of Veterans… | S2 …Affairs)가 언제 만들어졌는지 아세요? | S3 천구백삼십년이라고요? 좀 더 자세히 설명해 줄 수 있어요? 그 | S4 네, 천구백삼십년이 맞다면, 그 전에는 어떻게 운영됐는지 궁금
+# EXAMINER(FDB-v2) 단계: S1 혹시 참전용사부라고 하는 데가 언제 만들어졌는지 아세요? | S2 음, 잠깐만요. 그게 언제 만들어졌는지 다시 한… | S3 …번만 말씀해 주시겠어요? 기억이 잘 안 나서요. | S4 그… 지금 서울 날씨는 어때요? 갑자기 궁금해졌어요.
 
-     0.00s  user  발화 시작: 퇴역 군인부(Department of Veterans…
-     3.10s  user  발화 끝
-     4.26s  user  발화 시작: …Affairs)가 언제 만들어졌는지 아세요?
-     6.33s  <ret> 발화 (turn2 첫 프레임)
-     6.64s  agent 발화 시작: <ret> 퇴역 군인부(Department of Veterans Affairs)는 천구백삼십년에 만들어졌습니
-     6.85s  user  발화 끝
-     7.53s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.00s]: The Department of Veterans Affairs was created in 1930.
-    11.64s  agent 발화 끝
-    12.08s  user  발화 시작: 천구백삼십년이라고요? 좀 더 자세히 설명해 줄 수 있어요? 그 전에, 지금 서울 날씨는 어때요?
-    18.34s  <ret> 발화 (turn4 첫 프레임)
-    18.65s  agent 발화 시작: <ret> 서울 날씨를 확인해 드렸습니다. 현재 서울은 칠월 십일일 금요일 오후 두 시 삼십삼분입니다. 퇴역
-    18.71s  user  발화 끝
-    18.84s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.77s]: (tool result) It is Friday, July 10, 2026 at 2:33 PM in Asia/Seoul rig
-    27.40s  user  발화 시작: 네, 천구백삼십년이 맞다면, 그 전에는 어떻게 운영됐는지 궁금해요.
-    27.50s  agent 발화 끝
-    31.81s  agent 발화 시작: 천구백삼십년 이전에 퇴역 군인 지원은 주로 전쟁부 산하의 국립 홈(National Home for Disab
-    31.92s  user  발화 끝
-    39.92s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 참전용사부라고 하는 데가 언제 만들어졌는지 아세요?
+     3.53s  <ret> 발화 (turn1 첫 프레임)
+     3.84s  agent 발화 시작: <ret> 참전용사부는 천구백삼십년 칠월 이십일일에 만들어졌습니다. 괜찮으시다면, 예산 관리나 재정 목표 설
+     3.84s  user  발화 끝
+     4.97s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.58s]: The Department of Veterans Affairs was established on July 21, 1930.
+    12.42s  agent 발화 끝
+    12.62s  user  발화 시작: 음, 잠깐만요. 그게 언제 만들어졌는지 다시 한…
+    16.41s  user  발화 끝
+    17.88s  user  발화 시작: …번만 말씀해 주시겠어요? 기억이 잘 안 나서요.
+    20.28s  <ret> 발화 (turn4 첫 프레임)
+    20.59s  agent 발화 시작: <ret> 천구백삼십년 칠월 이십일일입니다. 혹시 다른 궁금한 점이 있으신가요? 아니면, 예산 관련해서 좀 
+    20.79s  user  발화 끝
+    21.24s  ⚡SPAN 주입 [d'=0.96s / d_lead=8.16s]: The Department of Veterans Affairs was established on July 21, 1930.
+    28.75s  agent 발화 끝
+    28.95s  user  발화 시작: 그… 지금 서울 날씨는 어때요? 갑자기 궁금해졌어요.
+    33.23s  <ret> 발화 (turn6 첫 프레임)
+    33.46s  agent 발화 시작: <ret> 지금 서울은 기온이 이십팔 점 영도이고, 습도는 육십오 퍼센트, 바람은 시속 삼 점 이킬로미터입니
+    33.63s  user  발화 끝
+    35.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h
+    41.53s  agent 발화 끝

@@ -60,43 +60,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 바다 전망 호텔, 샌디에이고에서 이월 십일부터 칠박 세개 방  | S2 아, 그리고 그 호텔 근처에 괜찮은 레스토랑도 좀 찾아줘. | S3 본 앤 레이즈드는 어떤 곳인데. | S4 고마워, 혹시 렌터카도 같이 알아봐 줄 수 있을까?
+# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔 샌디에이고… | S2 훌륭해. 혹시 그 호텔에서 해변까지 얼마나 걸릴까? | S3 음… 혹시 수영장이 있나? | S4 …근데, 혹시 호텔 근처에 괜찮은 레스토랑도 알아봐 줄 수 있
 
-     0.00s  user  발화 시작: 바다 전망 호텔, 샌디에이고에서 이월 십일부터 칠박 세개 방 예약해 줘.
-     4.67s  <ret> 발화 (turn1 첫 프레임)
-     4.82s  agent 발화 시작: <ret> 확인되었습니다. 오션 뷰 호텔에서 이월 십일부터 칠박 세개 방이 예약되었고, 확인 번호는 팔 오 
-     4.86s  user  발화 끝
-     6.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.57s]: (tool result) Confirmation number is 85297-XMJ, three rooms at Ocean V
-    12.15s  user  발화 시작: 어어.
-    12.78s  user  발화 끝
-    17.38s  agent 발화 끝
-    17.81s  user  발화 시작: 혹시 그 호텔에 수영장이 있는지 알아봐 줄 수 있어?
-    20.13s  <ret> 발화 (turn4 첫 프레임)
-    20.45s  agent 발화 시작: <ret> 네, 오션 뷰 호텔에는 야외 수영장, 피트니스 센터, 스파가 있습니다. 편의시설도 잘 갖춰져 있어
-    20.68s  user  발화 끝
-    22.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (tool result) Ocean View Hotel, San Diego, has an outdoor pool, a fitn
-    27.96s  agent 발화 끝
-    28.57s  user  발화 시작: 아, 그리고 그 호텔 근처에 괜찮은 레스토랑도 좀 찾아줘.
-    31.61s  <ret> 발화 (turn6 첫 프레임)
-    32.01s  agent 발화 시작: <ret> 샌디에이고, 오션 뷰 호텔 근처에는 더 피쉬 마켓(이백오십미터), 주니퍼 앤 아이비(오백미터), 
-    32.22s  user  발화 끝
-    33.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) San Diego, Ocean View Hotel: The Fish Market (250m), Jun
-    42.49s  agent 발화 끝
-    42.71s  user  발화 시작: 본 앤 레이즈드는 어떤 곳인데.
-    44.98s  agent 발화 시작: 본 앤 레이즈드는 스테이크 전문점으로—
-    45.16s  user  발화 끝
-    47.18s  user  발화 시작: … 거기는 예약이 얼마나 밀려? 지금 당장 예약할 수 있을까?
-    47.80s  agent 발화 끝
-    51.08s  <ret> 발화 (turn10 첫 프레임)
-    51.16s  agent 발화 시작: <ret> 네, 본 앤 레이즈드에서 이월 십이일 일곱시에 두명으로 예약이 완료되었습니다. 확인 번호는 사십구
-    51.34s  user  발화 끝
-    53.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) Reservation confirmed at Born & Raised, San Diego, on Fe
-    56.95s  user  발화 시작: 와.
-    57.58s  user  발화 끝
-    58.94s  agent 발화 끝
-    59.98s  user  발화 시작: 고마워, 혹시 렌터카도 같이 알아봐 줄 수 있을까?
-    63.44s  <ret> 발화 (turn13 첫 프레임)
-    63.67s  agent 발화 시작: <ret> 샌디에이고에서 이월 십일부터 십칠일까지 렌터카를 검색해 본 결과, 허츠 컴팩트 차량은 하루 사십오
-    63.86s  user  발화 끝
-    65.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.13s]: (tool result) San Diego, 2026-02-10 to 2026-02-17: Hertz - Compact, $4
-    76.80s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔 샌디에이고…
+     2.26s  user  발화 끝
+     3.23s  user  발화 시작: …이월 십일부터 칠박 세개 방 예약해 줘.
+     5.79s  <ret> 발화 (turn2 첫 프레임)
+     5.95s  agent 발화 시작: <ret> 오션뷰 호텔 샌디에이고, 이월 십일부터 십칠일까지 세개 방이 예약되었고, 총 비용은 천팔백칠십오 
+     6.14s  user  발화 끝
+     7.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: (tool result) Confirmation ID: 8A9Z2B, Ocean View Hotel, San Diego, 3 
+    11.85s  user  발화 시작: 어어.
+    12.49s  user  발화 끝
+    16.10s  agent 발화 끝
+    16.30s  user  발화 시작: 훌륭해. 혹시 그 호텔에서 해변까지 얼마나 걸릴까?
+    19.52s  <ret> 발화 (turn5 첫 프레임)
+    19.81s  user  발화 끝
+    19.82s  agent 발화 시작: <ret> 호텔에서 해변까지 거리는 팔백오십 미터이고, 걸어서 약 십일분 정도 걸립니다.
+    21.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Distance to beach: 850 meters, estimated walking time: 1
+    24.68s  agent 발화 끝
+    24.71s  user  발화 시작: 음… 혹시 수영장이 있나?
+    26.21s  <ret> 발화 (turn7 첫 프레임)
+    26.61s  agent 발화 시작: <ret> 네, 오션뷰 호텔에는 야외 수영장이 있고, 아침 여덟시부터 밤 열시까지 이용 가능합니다.
+    26.69s  user  발화 끝
+    28.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: (tool result) Ocean View Hotel, San Diego, has an outdoor swimming poo
+    32.95s  agent 발화 끝
+    33.08s  user  발화 시작: 아, 그거 좋네—
+    34.16s  user  발화 시작: …근데, 혹시 호텔 근처에 괜찮은 레스토랑도 알아봐 줄 수 있어?
+    34.32s  user  발화 끝
+    37.90s  <ret> 발화 (turn10 첫 프레임)
+    38.06s  agent 발화 시작: <ret> 호텔 근처에 밋츠 씨푸드(육백오십미터), 이탈리안 비스트로(구백미터), 타코 숍(사백미터)이 있습
+    38.27s  user  발화 끝
+    39.10s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.11s]: (tool result) Mitch's Seafood: 650 meters, Italian Bistro: 900 meters,
+    44.17s  agent 발화 끝

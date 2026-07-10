@@ -77,23 +77,21 @@
 # }
 
 
-     0.00s  user  발화 시작: I was wondering about the origin of the surname du Plessis. 
-     5.68s  <ret> 발화 (turn1 첫 프레임)
-     5.75s  agent 발화 시작: <ret> The name du Plessis originates from France, meaning “o
-     5.79s  user  발화 끝
-     6.88s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.34s]: Du Plessis is a French surname meaning “of the manor.”
-    11.93s  user  발화 시작: Mhm.
-    12.47s  user  발화 끝
-    14.05s  user  발화 시작: Oh, that's interesting! Is it still common in France today?
-    14.09s  agent 발화 끝
-    18.08s  <ret> 발화 (turn4 첫 프레임)
-    18.48s  agent 발화 시작: <ret> Yes, it is. Du Plessis is currently the eighty-seventh
-    18.54s  user  발화 끝
-    20.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: Du Plessis is the eighty-seventh most common surname in France.
-    24.74s  agent 발화 끝
-    25.07s  user  발화 시작: Welll… my grandmother was Afrikaans. Does it have a history 
-    29.88s  <ret> 발화 (turn6 첫 프레임)
-    30.26s  agent 발화 시작: <ret> It does, actually. The surname du Plessis is quite com
-    30.40s  user  발화 끝
-    31.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: The surname du Plessis is common among Afrikaans-speaking South Africa
-    39.02s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering about the name du Plessis. It sounds… French
+     4.62s  <ret> 발화 (turn1 첫 프레임)
+     4.68s  agent 발화 시작: <ret> The name du Plessis actually comes from France, Korana
+     4.72s  user  발화 끝
+     5.82s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.09s]: Du Plessis is a French surname originating as a topographic name for s
+     9.95s  user  발화 시작: Mhm.
+    10.58s  user  발화 끝
+    11.77s  agent 발화 끝
+    11.79s  user  발화 시작: Oh, that's interesting. Is it a common name in other places 
+    15.62s  <ret> 발화 (turn4 첫 프레임)
+    16.00s  agent 발화 시작: <ret> It’s most often found in South Africa now, surprisingl
+    16.04s  user  발화 끝
+    17.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.68s]: The surname du Plessis is most common in South Africa, where it was br
+    22.68s  agent 발화 끝
+    23.00s  user  발화 시작: Huguenot refugees? I don’t know much about them.
+    26.78s  agent 발화 시작: They were French Protestants fleeing religious persecution i
+    26.80s  user  발화 끝
+    34.29s  agent 발화 끝

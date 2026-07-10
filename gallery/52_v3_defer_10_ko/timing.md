@@ -76,20 +76,30 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 휴가 때 프랑스 갔던 사진들 찾아줘, 썸네일 말고. | S2 아, 파리 사진 좀 보여줘 봐. | S3 음… 에펠탑이 잘 나왔네. 근데… | S4 …다른 사진도 좀 볼 수 있어?
 
-     0.00s  user  발화 시작: 흐음… 작년 프랑스 휴가…
-     2.87s  user  발화 끝
-     4.86s  user  발화 시작: …사진들 찾아줘. 썸네일 말고.
-     6.72s  <ret> 발화 (turn2 첫 프레임)
-     6.79s  agent 발화 시작: <ret> 네, 알겠습니다. 잠시만 기다려 주세요. 프랑스 휴가 사진, 썸네일 제외하고 삼십사장이 검색됐습니
-     6.94s  user  발화 끝
-     8.00s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.88s]: (tool result) /home/sunan/pictures/france holiday/2025/full size image
-     9.67s  user  발화 시작: 음.
-    10.29s  user  발화 끝
-    13.71s  agent 발화 끝
-    14.36s  user  발화 시작: 그거… 혹시 니스 해변 사진은 몇 장이야?
-    16.73s  <ret> 발화 (turn5 첫 프레임)
-    17.12s  agent 발화 시작: <ret> 니스 해변 사진은 총 십이장이 있습니다. 즐거운 시간 되세요.
-    17.26s  user  발화 끝
-    18.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) /home/sunan/pictures/france holiday/2025/full size image
-    21.24s  agent 발화 끝
+     0.00s  user  발화 시작: 휴가 때 프랑스 갔던 사진들 찾아줘, 썸네일 말고.
+     3.22s  <ret> 발화 (turn1 첫 프레임)
+     3.29s  agent 발화 시작: <ret> 프랑스 휴가 사진 세 장 찾았어요. 파리, 니스, 리옹 사진입니다.
+     3.33s  user  발화 끝
+     5.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: (tool result) /home/user/Pictures/France Holiday/2025-07-15 Paris.jpg;
+     5.97s  user  발화 시작: 맞아.
+     6.42s  user  발화 끝
+     7.60s  user  발화 시작: 아, 파리 사진 좀 보여줘 봐.
+     7.78s  agent 발화 끝
+     9.18s  <ret> 발화 (turn4 첫 프레임)
+     9.57s  agent 발화 시작: <ret> 파리 사진을 불러왔습니다. 지금 화면에 보여드릴게요.
+     9.72s  user  발화 끝
+    11.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.37s]: (tool result) File successfully read.
+    11.71s  user  발화 시작: 응.
+    12.11s  user  발화 끝
+    12.94s  agent 발화 끝
+    14.08s  user  발화 시작: 음… 에펠탑이 잘 나왔네. 근데…
+    16.99s  user  발화 끝
+    18.03s  user  발화 시작: …다른 사진도 좀 볼 수 있어?
+    19.87s  agent 발화 시작: 지금 다른 사진들을 불러오고 있는데, 잠시만 기다려 주시겠어요?
+    19.96s  user  발화 끝
+    23.39s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) /home/user/Pictures/France Holiday/2025-07-16 Louvre.jpg
+    24.07s  agent 발화 시작: <ret> 잠시만 기다려 주세요. 루브르 박물관 사진과 에펠탑 야경 사진도 찾았어요. 둘 다 멋지네요.
+    24.22s  agent 발화 끝
+    30.51s  agent 발화 끝

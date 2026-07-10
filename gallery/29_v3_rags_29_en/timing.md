@@ -56,11 +56,11 @@
 # }
 
 
-     0.00s  user  발화 시작: Who is currently the…
-     1.56s  user  발화 끝
-     3.15s  user  발화 시작: …oldest player in the NBA?
-     4.91s  <ret> 발화 (turn2 첫 프레임)
-     5.22s  user  발화 끝
-     5.23s  agent 발화 시작: <ret> Vince Carter holds the record as the oldest NBA player
-     6.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.09s]: Vince Carter is the oldest player to ever play in the NBA, retiring at
-    14.32s  agent 발화 끝
+     0.00s  user  발화 시작: Who is the oldest…
+     1.75s  user  발화 끝
+     3.36s  user  발화 시작: …player currently in the NBA?
+     5.06s  <ret> 발화 (turn2 첫 프레임)
+     5.25s  user  발화 끝
+     5.38s  agent 발화 시작: <ret> Vince Carter is the oldest player in the NBA, at forty
+     7.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: Vince Carter is currently the oldest player in the NBA, at age forty-t
+    15.02s  agent 발화 끝

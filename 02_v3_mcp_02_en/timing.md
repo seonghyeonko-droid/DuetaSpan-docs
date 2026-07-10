@@ -68,79 +68,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm feeling a bit overwhelmed with | S2 Yes, please. Directions to Olympic | S3 …to book a massage for this evenin | S4 Perfect. Thank you so much.
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to get a better handle  | S2 Okay, that’s good to know. | S3 Hmm, 12 minutes... that's not terr | S4 That’s lovely.
 
-     0.00s  user  발화 시작: I'm feeling a bit overwhelmed with everything I need to do t
-     3.25s  agent 발화 시작: It's perfectly normal to feel that way when facing a full sc
-     3.38s  user  발화 끝
-    11.68s  agent 발화 끝
-    13.06s  user  발화 시작: That sounds good, actually. I need to check the weather firs
-    16.75s  <ret> 발화 (turn3 첫 프레임)
-    16.99s  agent 발화 시작: <ret> The current weather is twenty-three point zero degrees
-    17.08s  user  발화 끝
-    17.16s  ⚡SPAN 주입 [d'=0.41s / d_lead=0.41s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
-    22.37s  user  발화 시작: Right.
-    22.86s  user  발화 끝
-    29.74s  agent 발화 끝
-    29.80s  user  발화 시작: Okay, good to know. Thanks.
-    32.20s  user  발화 끝
-    32.32s  agent 발화 시작: You’re very welcome. Is there anything specific you’re hopin
-    37.88s  agent 발화 끝
-    38.84s  user  발화 시작: I was thinking of going for a run in the park. Do you know w
-    43.46s  <ret> 발화 (turn8 첫 프레임)
-    43.78s  agent 발화 시작: <ret> The nearest park is Olympic Park, one thousand and fif
-    43.84s  user  발화 끝
-    45.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.21s]: (tool result) Seoul (37.5665, 126.9780): Olympic Park (1,050m), Childr
-    49.89s  user  발화 시작: Yeah.
-    50.39s  user  발화 끝
-    58.81s  user  발화 시작: Yes, please. Directions to Olympic Park.
-    59.00s  agent 발화 끝
-    61.89s  <ret> 발화 (turn11 첫 프레임)
-    62.28s  agent 발화 시작: <ret> Driving will take fifteen minutes and cover eight poin
-    62.39s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.75s]: (tool result) Driving: 15 minutes, 8.2 km; Transit: 30 minutes, 6.1 km
-    62.42s  user  발화 끝
-    77.21s  user  발화 시작: Transit sounds good. Start navigation.
-    77.24s  agent 발화 끝
-    80.13s  <ret> 발화 (turn13 첫 프레임)
-    80.21s  agent 발화 시작: <ret> Excellent choice. Transit navigation to Olympic Park h
-    80.39s  user  발화 끝
-    80.69s  ⚡SPAN 주입 [d'=0.56s / d_lead=0.85s]: (tool result) Transit route started: Olympic Park, estimated arrival 9
-    84.35s  user  발화 시작: Yeah.
-    84.84s  user  발화 끝
-    90.83s  agent 발화 끝
-    91.75s  user  발화 시작: That's great. Um… I also need…
-    95.31s  user  발화 끝
-    97.02s  user  발화 시작: …to book a massage for this evening.
-    99.09s  user  발화 끝
-    99.10s  agent 발화 시작: A massage sounds lovely. Do you have a preferred location or
-   100.65s  user  발화 시작: Right.
-   101.29s  user  발화 끝
-   104.42s  agent 발화 끝
-   105.67s  user  발화 시작: Not really. Just somewhere nearby with availability after si
-   110.41s  <ret> 발화 (turn20 첫 프레임)
-   110.48s  agent 발화 시작: <ret> Spa Eden has openings at six thirty, seven, and seven 
-   110.52s  user  발화 끝
-   112.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.80s]: (tool result) Spa Eden, 6:30 PM, 7:00 PM, 7:30 PM; Serenity Spa, 6:15 
-   125.28s  agent 발화 끝
-   126.02s  user  발화 시작: Spa Eden at seven PM, please.
-   128.83s  <ret> 발화 (turn22 첫 프레임)
-   129.23s  agent 발화 시작: <ret> Your massage at Spa Eden is confirmed for seven PM. Yo
-   129.28s  ⚡SPAN 주입 [d'=0.45s / d_lead=0.45s]: (tool result) Spa Eden, 7:00 PM, confirmed, booking ID: QX92BZ
-   129.40s  user  발화 끝
-   139.48s  agent 발화 끝
-   139.66s  user  발화 시작: Perfect. Thank you so much.
-   142.03s  agent 발화 시작: You’re very welcome. It’s good to see you’re taking time for
-   142.16s  user  발화 끝
-   143.53s  user  발화 시작: Yeah.
-   143.97s  user  발화 끝
-   146.15s  agent 발화 끝
-   146.61s  user  발화 시작: I feel a lot better having that sorted.
-   148.98s  agent 발화 시작: That's wonderful to hear. Remember, a little planning can ma
-   149.19s  user  발화 끝
-   153.77s  user  발화 시작: Yeah.
-   154.21s  user  발화 끝
-   155.37s  agent 발화 끝
-   155.60s  user  발화 시작: I think you're right. I appreciate your help, Driaus.
-   158.50s  agent 발화 시작: It was my pleasure to assist you. Enjoy your run and your ma
-   158.75s  user  발화 끝
-   163.23s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to get a better handle on my mornings. It feels s
+     4.29s  agent 발화 시작: A rushed morning can set the tone for the whole day. Let’s e
+     4.44s  user  발화 끝
+    10.50s  agent 발화 끝
+    11.80s  user  발화 시작: Well, I need to know the weather first thing…
+    14.38s  user  발화 끝
+    16.02s  user  발화 시작: …so I don't pick the wrong clothes.
+    17.80s  <ret> 발화 (turn4 첫 프레임)
+    18.04s  agent 발화 시작: <ret> It is currently 25.0 degrees Celsius in Seoul, with 68
+    18.23s  user  발화 끝
+    19.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) 25.0°C, humidity 68%, wind 7.2 km/h
+    23.50s  user  발화 시작: Yeah.
+    23.99s  user  발화 끝
+    26.71s  agent 발화 끝
+    27.33s  user  발화 시작: Okay, that’s good to know.
+    28.87s  agent 발화 시작: Knowing the temperature allows for a more deliberate choice 
+    28.94s  user  발화 끝
+    31.03s  user  발화 시작: Yeah.
+    31.52s  user  발화 끝
+    34.42s  agent 발화 끝
+    34.43s  user  발화 시작: I also need to check if there’s traffic on my way to work.
+    37.12s  <ret> 발화 (turn10 첫 프레임)
+    37.52s  agent 발화 시작: <ret> The drive from Seoul to Gangnam is 3.4 kilometers, tak
+    37.66s  user  발화 끝
+    39.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.89s]: (tool result) 3.4 km, 12 minutes, moderate traffic
+    44.42s  agent 발화 끝
+    44.70s  user  발화 시작: Hmm, 12 minutes... that's not terrible.
+    47.58s  agent 발화 시작: Even moderate traffic is manageable with a little preparatio
+    47.65s  user  발화 끝
+    49.79s  user  발화 시작: Yeah.
+    50.25s  user  발화 끝
+    53.37s  agent 발화 끝
+    53.38s  user  발화 시작: Yes, please. Remind me to leave at 8:15.
+    56.56s  <ret> 발화 (turn15 첫 프레임)
+    56.88s  agent 발화 시작: <ret> I’ve set an alarm for 8:15, confirmation id 78a92b.
+    56.94s  user  발화 끝
+    57.06s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.92s]: (tool result) Alarm set for 08:15, id 78a92b
+    60.77s  user  발화 시작: Yeah.
+    61.22s  user  발화 끝
+    62.63s  user  발화 시작: Great, thanks. I also want to listen to some music while I g
+    62.80s  agent 발화 끝
+    66.81s  <ret> 발화 (turn18 첫 프레임)
+    66.89s  agent 발화 시작: <ret> Now playing “Weightless” by Marconi Union, from the ye
+    66.98s  user  발화 끝
+    68.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: (tool result) Weightless — Marconi Union (2011)
+    72.03s  agent 발화 끝
+    74.22s  user  발화 시작: That’s lovely.
+    75.14s  agent 발화 시작: Music can be a wonderful way to create a peaceful atmosphere
+    75.27s  user  발화 끝
+    76.86s  user  발화 시작: Yeah.
+    77.50s  user  발화 끝
+    79.83s  user  발화 시작: I think that covers it. Thank you, Driaus.
+    79.86s  agent 발화 끝
+    82.56s  user  발화 끝
+    82.59s  agent 발화 시작: You’re very welcome. A structured start can truly transform 
+    87.64s  agent 발화 끝

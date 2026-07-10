@@ -63,23 +63,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 정부 부처에 대해 읽고 있었는데… | S2 혹시, 재향군인부(Department of Veterans A | S3 천구백삼십년? 그거 좀… 최근 같아. 훨씬 더 예전에 다른 이 | S4 천팔백팔십오년… 그러니까, 이름은 천구백삼십년에 바뀐 거고, 
+# EXAMINER(FDB-v2) 단계: S1 어, 국방부 산하 참전용사처가 언제 시작됐는지 궁금했어. | S2 1930년이라고? 좀… 늦은 것 같아. 그 전에 뭐 없었어? | S3 그럼 처음부터 “참전용사처”라고 불린 건 아니었겠네? 원래 이 | S4 응, 그렇다. 고마워, 브루날.
 
-     0.00s  user  발화 시작: 어, 정부 부처에 대해 읽고 있었는데…
-     2.49s  user  발화 끝
-     4.08s  user  발화 시작: 혹시, 재향군인부(Department of Veterans Affairs)는 언제 만들어졌어?
-     8.56s  <ret> 발화 (turn2 첫 프레임)
-     8.96s  agent 발화 시작: <ret> 음, 재향군인부는 천구백삼십년 삼월 삼일에 설립되었어요. 국가를 위해 봉사하신 분들을 지원한 역사
-     9.03s  user  발화 끝
-    10.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.06s]: The Department of Veterans Affairs was established on March 3, 1930.
-    21.02s  agent 발화 끝
-    21.43s  user  발화 시작: 천구백삼십년? 그거 좀… 최근 같아. 훨씬 더 예전에 다른 이름으로 시작하지 않았어?
-    27.16s  <ret> 발화 (turn4 첫 프레임)
-    27.32s  agent 발화 시작: <ret> 네, 사실은 천팔백팔십오년에 국립 장애 퇴역 군인 및 선원 자택(National Home for 
-    27.49s  user  발화 끝
-    29.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.86s]: It originated as the National Home for Disabled Soldiers and Sailors i
-    43.18s  agent 발화 끝
-    44.25s  user  발화 시작: 천팔백팔십오년… 그러니까, 이름은 천구백삼십년에 바뀐 거고, 아이디어는 훨씬 더 오래됐다는 거네. 원래 목적
-    54.08s  user  발화 끝
-    54.11s  agent 발화 시작: 처음에는 남북 전쟁 참전 용사들에게 집과 보살핌을 제공하기 위해 만들어졌어요. 당시에는 매우 구체적인 필요였
-    64.27s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 국방부 산하 참전용사처가 언제 시작됐는지 궁금했어.
+     4.09s  <ret> 발화 (turn1 첫 프레임)
+     4.49s  agent 발화 시작: <ret> 네, 참전용사처는 천구백삼십 년 3월 3일에 설립되었어요. 국가를 위해 봉사하신 분들을 위한 서비
+     4.58s  user  발화 끝
+     6.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.13s]: The United States Department of Veterans Affairs was established on Ma
+    15.61s  agent 발화 끝
+    16.05s  user  발화 시작: 1930년이라고? 좀… 늦은 것 같아. 그 전에 뭐 없었어?
+    21.90s  <ret> 발화 (turn3 첫 프레임)
+    22.06s  agent 발화 시작: <ret> 음, 사실은 천팔백육십육 년에 설립된 국립 장애병사 및 선원 자택에서 발전된 거랍니다. 당연히 그
+    22.17s  user  발화 끝
+    23.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.45s]: The Department of Veterans Affairs evolved from the National Home for 
+    33.51s  agent 발화 끝
+    34.29s  user  발화 시작: 그럼 처음부터 “참전용사처”라고 불린 건 아니었겠네? 원래 이름이 뭐였어?
+    40.52s  <ret> 발화 (turn5 첫 프레임)
+    40.73s  user  발화 끝
+    40.76s  agent 발화 시작: <ret> 처음에는 국립 장애병사 및 선원 자택이었고, 남북전쟁 당시 북군 참전용사들을 돌봤어요. 이런 기원
+    41.99s  user  발화 시작: 응응.
+    42.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: The National Home for Disabled Soldiers and Sailors was initially esta
+    42.62s  user  발화 끝
+    44.60s  agent 발화 끝
+    44.94s  user  발화 시작: 응, 그렇다. 고마워, 브루날.
+    47.42s  agent 발화 시작: 천만에요. 제가 그 점에 대해 명확하게 설명해 드릴 수 있어서 기쁩니다.
+    47.52s  user  발화 끝
+    53.49s  agent 발화 끝

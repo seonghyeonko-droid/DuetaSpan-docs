@@ -64,24 +64,27 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m planning a trip and need to visualize the Apple website. Can you create a detailed map of it, focusing on the products?
-[  6.82s][moshi] ⟨ret@6.74s⟩ I’ve created a ⟦⚡SPAN@7.86s: (tavily-map) Apple.com website map created successfully.⟧ detailed map of the Apple website, focused on its product sections.
-[  8.61s][user ] «backchannel» Okay.
-[ 12.15s][user ] That’s great, but can it show me where to find information on the Vision ⟨ret@17.24s⟩ Pro specifically?
-[ 17.64s][moshi] Yes, I’ve updated the ⟦⚡SPAN@19.24s: (tavily-map) Apple.com website map updated to highlight Vision Pro information.⟧ map to highlight all information related to the Vision Pro on Apple’s site.
-[ 20.60s][user ] «backchannel» Uh-huh.
-[ 23.13s][moshi] «interrupted» It displays links to the Vision Pro product page, technical specifications, and available accessories—
-[ 28.59s][user ] «interrupts_prev» …Actually, before we get too deep into the map, could you just search for reviews of the Vision Pro?
-[ 34.15s][moshi] ⟨ret@34.08s⟩ Search results indicate mixed ⟦⚡SPAN@36.08s: (web_search) The Vision Pro has received mixed reviews, with praise for its display and immersive experience, ⟧ reviews, praising the display but noting the high price and limited apps.
-[ 36.62s][user ] «backchannel» Right.
-[ 41.12s][user ] Hmm, okay. What’s the current stock price for ⟨ret@44.55s⟩ Apple?
-[ 44.95s][moshi] Apple—ticker symbol ⟦⚡SPAN@46.55s: (get_stock_price_global_market) Apple (AAPL) is trading at 193.22 USD, up 0.88% today.⟧ AAPL—is currently trading at one hundred ninety-three dollars and twenty-two cents, up zero point eighty-eight percent today.
-[ 54.01s][user ] That’s good to know. Now, back to the map—can you zoom in on the accessories section for the Vision ⟨ret@61.44s⟩ Pro?
-[ 61.68s][moshi] I’ve zoomed the map ⟦⚡SPAN@63.44s: (tavily-map) Apple.com website map zoomed to Vision Pro accessories section.⟧ to focus on the Vision Pro accessories section, displaying available cases and related items.
-[ 68.16s][user ] Okay, that's helpful. Could you find some hotels near the Apple Park visitor center ⟨ret@73.28s⟩ in Cupertino?
-[ 73.68s][moshi] In Cupertino, California, ⟦⚡SPAN@75.28s: (Hotels_2_SearchHouse) Cupertino, CA (37.3317,-122.0307): Hotel Valencia Santana Row (792 m), The Orchard Hote⟧ Hotel Valencia Santana Row is seven hundred ninety-two meters away, The Orchard Hotel is one thousand six hundred eight meters, and Hyatt House Cupertino is one thousand nine hundred sixty-one meters.
-[ 86.82s][user ] Hotel Valencia sounds good. Can you reserve a room there for me for two nights, starting July fifteenth?
-[ 93.41s][moshi] ⟨ret@93.26s⟩ I’ve reserved a room for ⟦⚡SPAN@95.26s: (Hotels_2_BookHouse) Hotel Valencia Santana Row, Cupertino, CA, July 15-17, 2026, 1 King Bed, $385/night, conf⟧ you at Hotel Valencia Santana Row from July fifteenth to seventeenth, with a king bed, costing three hundred eighty-five dollars per night; your confirmation ID is seven X nine L two P.
-[100.65s][user ] «backchannel» Yeah.
-[105.90s][user ] Fantastic. Thank you so much for your help, Koral.
-[109.28s][moshi] You’re very welcome. I’m glad I could assist you with your travel planning. Enjoy your trip.
+[  0.00s][user ] I'm trying to plan a trip, and I'd like to see what the Apple website looks like as a detailed map.
+[  5.20s][moshi] ⟨ret@5.12s⟩ I’ve created ⟦⚡SPAN@6.40s: (tool result) Map created: Apple website overview, 20 points of interest identified.⟧ a detailed map of the Apple website, identifying twenty key areas.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com"}}
+[  7.14s][user ] «backchannel» Okay.
+[ 10.92s][user ] Twenty? That seems like a lot. Can you just show me where the products ⟨ret@14.57s⟩ are listed?
+[ 14.97s][moshi] I've now focused the ⟦⚡SPAN@16.57s: (tool result) Map focused: Apple products page, 8 product categories highlighted.⟧ map on the products page, highlighting eight categories.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/products/"}}
+[ 17.24s][user ] «backchannel» Uh-huh.
+[ 19.23s][moshi] I can further refine the map to a specific product if you'd like—perhaps the iPhone?
+[ 21.15s][user ] «backchannel» Right.
+[ 25.31s][user ] Actually, before we go deeper into Apple…
+[ 29.78s][user ] …could you find hotels in Seoul?
+[ 32.22s][moshi] Let’s switch gears—I can search for hotels in Seoul. What dates are you considering?
+[ 38.05s][user ] July fifteenth to twentieth of next year.
+[ 41.14s][moshi] «interrupted» ⟨ret@41.06s⟩ I found twelve hotels in ⟦⚡SPAN@43.06s: (tool result) 12 hotels found in Seoul, price range $80-$350 per night.⟧ Seoul for those dates, ranging from eighty to three hundred fifty dollars per night—
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Seoul", "checkInDate": "2027-07-15", "checkOutDate": "2027-07-20"}}
+[ 46.61s][user ] «interrupts_prev» …Are any of those near ⟨ret@48.20s⟩ Myeongdong?
+[ 48.59s][moshi] Four hotels near Myeongdong ⟦⚡SPAN@50.20s: (tool result) 4 hotels found near Myeongdong, price range $120-$280 per night.⟧ are available, ranging from one hundred twenty to two hundred eighty dollars per night.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Seoul, Myeongdong", "checkInDate": "2027-07-15", "checkOutDate": "2027-07-20"}}
+[ 54.96s][user ] Okay, can you book the L7 Myeongdong by LOTTE for ⟨ret@58.49s⟩ me?
+[ 58.73s][moshi] Your reservation at ⟦⚡SPAN@60.49s: (tool result) Reservation confirmed: L7 Myeongdong by LOTTE, Jul 15-20, $250/night, confirmation ID: 8J9K2L.⟧ the L7 Myeongdong by LOTTE is confirmed for July fifteenth to twentieth, two hundred fifty dollars a night. Your confirmation ID is 8J9K2L.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotelName": "L7 Myeongdong by LOTTE", "checkInDate": "2027-07-15", "checkOutDate": "2027-07-20"}}
+[ 69.99s][user ] Perfect! Thanks so much.
+[ 72.36s][moshi] You’re very welcome. I’m glad I could help with your Seoul arrangements—enjoy your trip!

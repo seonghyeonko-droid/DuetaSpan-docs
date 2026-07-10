@@ -71,11 +71,11 @@
 
      0.00s  agent 발화 시작: Hello Kim, it’s lovely to connect with you.
      2.26s  agent 발화 끝
-     2.30s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling really overwhelm
-     8.32s  user  발화 끝
-     8.71s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
-    15.80s  agent 발화 끝
-    17.09s  user  발화 시작: Well, everything feels expensive! I’m trying to save for a t
-    22.88s  user  발화 끝
-    23.03s  agent 발화 시작: That’s a common feeling when balancing current needs with fu
-    32.90s  agent 발화 끝
+     2.31s  user  발화 시작: Oh, Ara… that’s a pretty name. I’m just… overwhelmed. I keep
+     9.45s  user  발화 끝
+     9.78s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
+    18.21s  agent 발화 끝
+    19.50s  user  발화 시작: Welll… I don’t even know *where* all my money goes. It just…
+    29.01s  user  발화 끝
+    29.20s  agent 발화 시작: That’s a really common feeling. It sounds like gaining some 
+    37.68s  agent 발화 끝

@@ -63,29 +63,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, that’s good. Now, can you fin | S3 Play “Kind of Blue”, please. | S4 That's perfect, thank you.
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, well, what’s the weather in S | S3 That sounds pleasant. Can you find | S4 Bellagio sounds nice. Can you rese
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.08s  <ret> 발화 (turn1 첫 프레임)
-     4.39s  agent 발화 시작: <ret> I can adjust the browser’s user agent for you. The use
-     4.40s  user  발화 끝
-     5.04s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.30s]: (tool result) User agent set to SuperCrawler version 10.1
-     7.86s  user  발화 시작: Mhm.
-     8.31s  user  발화 끝
-    12.09s  agent 발화 끝
-    12.81s  user  발화 시작: Hmm, that’s good. Now, can you find me some jazz music?
-    16.61s  <ret> 발화 (turn4 첫 프레임)
-    16.84s  user  발화 끝
-    16.85s  agent 발화 시작: <ret> I found “Kind of Blue” by Miles Davis, “A Love Supreme
-    18.37s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.57s]: (tool result) Kind of Blue — Miles Davis — Columbia, 1959; A Love Supr
-    27.42s  agent 발화 끝
-    27.74s  user  발화 시작: Play “Kind of Blue”, please.
-    29.21s  <ret> 발화 (turn6 첫 프레임)
-    29.29s  agent 발화 시작: <ret> Now playing “Kind of Blue” by Miles Davis. I hope you 
-    29.49s  user  발화 끝
-    29.54s  ⚡SPAN 주입 [d'=0.33s / d_lead=0.33s]: (tool result) Playing “Kind of Blue” — Miles Davis — Columbia, 1959
-    33.54s  agent 발화 끝
-    34.21s  user  발화 시작: That's perfect, thank you.
-    35.96s  user  발화 끝
-    36.00s  agent 발화 시작: You're very welcome. I'm glad I could help you find some mus
-    40.40s  agent 발화 끝
+     3.43s  <ret> 발화 (turn1 첫 프레임)
+     3.74s  user  발화 끝
+     3.75s  agent 발화 시작: <ret> I’ve created a directory named 'SuperCrawler version t
+     4.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.86s]: (tool result) Directory 'SuperCrawler version ten point one' created s
+     5.87s  user  발화 시작: Mhm.
+     6.41s  user  발화 끝
+     8.61s  agent 발화 끝
+     9.31s  user  발화 시작: Hmm, well, what’s the weather in Seoul right now?
+    12.22s  <ret> 발화 (turn4 첫 프레임)
+    12.46s  agent 발화 시작: <ret> The weather in Seoul is twenty-four point zero degrees
+    12.55s  user  발화 끝
+    13.98s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.38s]: (tool result) 24.0°C, humidity 68%, wind 4.2 km/h
+    22.84s  agent 발화 끝
+    23.25s  user  발화 시작: That sounds pleasant. Can you find me some Italian restauran
+    27.22s  <ret> 발화 (turn6 첫 프레임)
+    27.30s  agent 발화 시작: <ret> In Seoul, I found La Piazza, one hundred and twenty me
+    27.32s  user  발화 끝
+    29.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: (tool result) Seoul (37.5665, 126.9780): La Piazza (120m), Bellagio (3
+    38.67s  agent 발화 끝
+    39.50s  user  발화 시작: Bellagio sounds nice. Can you reserve a table for two there 
+    44.50s  user  발화 끝

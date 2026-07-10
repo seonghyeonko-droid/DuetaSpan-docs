@@ -67,31 +67,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] When does Demi Lovato's new album come out in 2015?
-[  5.21s][moshi] ⟨ret@4.97s⟩ It was released in October ⟦⚡SPAN@6.97s: Demi Lovato's fifth studio album, *Confident*, was released in October 2015.⟧ of 2015, a really exciting time for her fans. It feels like a turning point in her artistry, doesn't it?
-[ 12.99s][user ] Oh, okay. What kind of music is on ⟨ret@15.62s⟩ it?
-[ 16.02s][moshi] It's a pop album, ⟦⚡SPAN@17.62s: *Confident* is a pop album with influences of R&B, soul, and electronic dance music.⟧ blending in R&B, soul, and some electronic dance music. She really explored different sounds on that one.
-[ 23.99s][user ] Is it a good album?
-[ 25.37s][moshi] That's subjective, of course, but it received generally positive reviews. Critics praised her vocal performance and songwriting.
-[ 32.37s][user ] What were the singles from that ⟨ret@34.49s⟩ album?
-[ 34.53s][moshi] The singles released were ⟦⚡SPAN@36.49s: The singles from *Confident* were "Cool for the Summer", "Confident", and "Sorry Not Sorry".⟧ "Cool for the Summer", "Confident", and "Sorry Not Sorry". Those songs really captured the album’s energy.
-[ 41.85s][user ] I like “Cool for the Summer”.
-[ 44.13s][moshi] That's a great choice! It's such a fun and empowering song. It’s easy to see why it resonated with so many people.
-[ 48.20s][user ] «backchannel» Mm-hmm.
-[ 52.05s][user ] Were there any other artists featured on the ⟨ret@55.00s⟩ album?
-[ 55.39s][moshi] Actually, no other artists ⟦⚡SPAN@57.00s: No other artists are featured on Demi Lovato's album *Confident*.⟧ are featured on *Confident*; it’s entirely a solo album. She really took the lead on this project.
-[ 58.88s][user ] «backchannel» Mm-hmm.
-[ 62.75s][user ] Hmm, that's interesting—
-[ 64.26s][user ] …do you know what she was doing *before* that ⟨ret@66.80s⟩ album?
-[ 66.83s][moshi] Before *Confident*, she released ⟦⚡SPAN@68.80s: Demi Lovato released her fourth studio album, *Demi*, in May 2013.⟧ *Demi* in May of 2013. It was a bit of a transitional album for her, creatively speaking—
-[ 69.92s][user ] «backchannel» Mm-hmm.
-[ 74.96s][moshi] Yes, it explored a more mature sound. It was a step towards the bolder, more confident direction she took with *Confident*. It’s interesting to trace her artistic development, isn't it?
-[ 79.41s][user ] «backchannel» Yeah.
-[ 86.35s][user ] Was *Demi* a hit too?
-[ 88.06s][moshi] ⟨ret@87.99s⟩ It debuted at number ⟦⚡SPAN@89.99s: *Demi* debuted at number six on the *Billboard* 200 chart in the United States.⟧ six on the *Billboard* 200 chart in the US. It did quite well, though *Confident* surpassed its success.
-[ 94.39s][user ] «backchannel» Yeah.
-[ 96.82s][user ] What about her music ⟨ret@98.60s⟩ videos?
-[ 98.83s][moshi] She’s known for visually ⟦⚡SPAN IRRELEVANT@100.60s: The current temperature in London, United Kingdom is 18.3°C, humidity is 82%, and the wind speed is 7.1 km/h.⟧ striking music videos, often with strong storytelling. They really complement her music.
-[104.90s][moshi] I find that exploring an artist’s full body of work, including the visuals, can deepen your appreciation. It’s about the whole experience.
-[113.16s][user ] That’s a good point. Thanks!
-[115.46s][moshi] You're very welcome. I'm glad I could help you explore Demi Lovato's music a little more. Enjoy your listening!
+[  0.00s][user ] When does Demi Lovato's new album come out? I heard it was sometime in 2015.
+[  6.31s][moshi] ⟨ret@6.07s⟩ It was released in October ⟦⚡SPAN@8.07s: Demi Lovato’s fifth studio album, “Confident,” was released in October 2015.⟧ of twenty fifteen. It’s exciting when artists share new work, isn't it?
+[ 10.05s][user ] «backchannel» Uh-huh.
+[ 11.96s][user ] October, okay. Was that her first ⟨ret@14.61s⟩ album?
+[ 15.01s][moshi] No, “Don’t Forget” ⟦⚡SPAN@16.13s: Demi Lovato’s debut studio album, “Don’t Forget,” was released in September 2008.⟧ came out in September of two thousand eight. She has quite a musical history.
+[ 20.92s][user ] Two thousand eight… that’s a while ago! What kind of music did she make then?
+[ 26.38s][moshi] She began with a pop and rock sound—very energetic. Finding your voice takes time, you know?
+[ 32.51s][user ] I guess so. What about “Confident”? Is it very different?
+[ 36.57s][moshi] ⟨ret@36.51s⟩ “Confident” leans more into ⟦⚡SPAN@38.51s: “Confident” is primarily a pop album with elements of R&B and electronic dance music.⟧ pop, with touches of R&B and electronic dance music—a bit of a shift.
+[ 40.54s][user ] «backchannel» Uh-huh.
+[ 44.01s][user ] That sounds interesting. I like R&B.
+[ 47.28s][moshi] R&B can be so emotionally resonant—it really allows for vulnerability.
+[ 49.71s][user ] «backchannel» Mm-hmm.
+[ 52.56s][user ] Is “Confident” still available to listen ⟨ret@55.18s⟩ to?
+[ 55.55s][moshi] Yes, “Confident” is still ⟦⚡SPAN@57.18s: (tool result) Confident — Demi Lovato, Hollywood Records (2015); Sorry Not Sorry — Demi Lovato, Hollywood Reco⟧ available. You can also find “Sorry Not Sorry” and “Tell Me You Love Me.”
+      CALL: {"function": "Music_3_LookupMusic", "arguments": {"artist_name": "Demi Lovato", "album_name": "Confident"}}
+[ 58.52s][user ] «backchannel» Mm-hmm.
+[ 61.51s][user ] Oh, those sound familiar! I think I’ve heard “Sorry Not Sorry” before.
+[ 66.40s][moshi] «interrupted» It’s a very catchy song—it gained a lot of popularity on the radio—
+[ 70.13s][user ] «interrupts_prev» …did she tour after “Confident” came out?
+[ 73.08s][moshi] Yes, she did embark on the Future Now Tour in two thousand sixteen, with Nick Jonas. Touring can be creatively invigorating, though demanding.
+[ 76.95s][user ] «backchannel» Yeah.
+[ 82.19s][user ] That sounds fun! Was the tour successful?
+[ 85.42s][moshi] ⟨ret@85.37s⟩ The Future Now Tour ⟦⚡SPAN@87.37s: The Future Now Tour grossed over forty million dollars, selling over five hundred thousand tickets.⟧ grossed over forty million dollars, and sold over five hundred thousand tickets. A very successful run.
+[ 88.67s][user ] «backchannel» Mhm.
+[ 93.17s][user ] Wow, that's a lot of money. What was the first single from ⟨ret@97.55s⟩ “Confident”?
+[ 97.80s][moshi] “Cool for the Summer” came ⟦⚡SPAN@99.55s: “Cool for the Summer” was released as the lead single from Demi Lovato’s album “Confident” in July 2015.⟧ out in July of twenty fifteen, as the first single. It really set the stage for the album.
+[105.05s][user ] July… so before October. Makes sense.
+[108.35s][moshi] It builds anticipation, doesn’t it? Releasing a single first is a common strategy.
+[113.16s][user ] Yeah, it does. I think I'll go listen to "Confident" now.
+[117.34s][moshi] Wonderful. Music can be such a source of comfort and inspiration. I hope you enjoy it.

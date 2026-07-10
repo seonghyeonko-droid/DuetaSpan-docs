@@ -76,131 +76,113 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 Perfect. I think I’ll head there a | S3 Okay. Could you check if I need a  | S4 Excellent. What time does the firs
+# EXAMINER(FDB-v2) 단계: S1 What's the price range at Zuni Caf | S2 I'd like something near Fisherman' | S3 Hmm, that's a bit long. | S4 Perfect.
 
      0.00s  user  발화 시작: What's the price range at Zuni Cafe?
-     2.05s  <ret> 발화 (turn1 첫 프레임)
-     2.28s  agent 발화 시작: <ret> Zuni Cafe is considered an expensive restaurant. It's 
-     2.40s  user  발화 끝
-     3.25s  ⚡SPAN 주입 [d'=1.20s / d_lead=6.44s]: (tool result) Zuni Cafe, 1658 Market Street, San Francisco, CA 94102 i
-     5.22s  user  발화 시작: Okay.
-     5.85s  user  발화 끝
-     8.72s  user  발화 시작: Okay, and what's the weather like there right now?
-     8.72s  agent 발화 끝
-    10.92s  <ret> 발화 (turn4 첫 프레임)
-    11.16s  agent 발화 시작: <ret> It’s currently eighteen point nine degrees Celsius wit
-    11.30s  user  발화 끝
-    11.42s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.97s]: (tool result) 18.9°C, humidity 62%, wind 8.0 km/h
-    19.13s  agent 발화 끝
-    19.27s  user  발화 시작: That sounds nice.
-    20.43s  agent 발화 시작: San Francisco often has a pleasant microclimate. It's a wond
-    20.60s  user  발화 끝
-    22.89s  user  발화 시작: Yeah.
-    23.49s  user  발화 끝
-    26.39s  user  발화 시작: Are there any good bookstores nearby?
-    26.45s  agent 발화 끝
-    28.00s  <ret> 발화 (turn9 첫 프레임)
-    28.23s  agent 발화 시작: <ret> City Lights Bookstore is four hundred fifty-nine meter
-    28.47s  user  발화 끝
-    30.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.53s]: (tool result) City Lights Bookstore (459 meters), Green Apple Books (1
-    35.15s  user  발화 시작: Yeah.
-    35.64s  user  발화 끝
-    38.76s  agent 발화 끝
-    39.11s  user  발화 시작: City Lights sounds closest. What are their hours today?
-    42.75s  <ret> 발화 (turn12 첫 프레임)
-    42.98s  agent 발화 시작: <ret> City Lights Bookstore at two sixty-one Columbus Avenue
-    43.18s  user  발화 끝
-    44.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) City Lights Bookstore, 261 Columbus Ave, San Francisco, 
-    46.39s  user  발화 시작: Yeah.
-    46.88s  user  발화 끝
-    48.91s  agent 발화 끝
-    49.32s  user  발화 시작: Perfect. I think I’ll head there after dinner.
-    51.80s  agent 발화 시작: That sounds like a lovely plan. A good book is always a nice
-    52.04s  user  발화 끝
-    57.13s  user  발화 시작: Actually, before I go, could you find me a jazz club?
-    57.31s  agent 발화 끝
-    60.12s  <ret> 발화 (turn17 첫 프레임)
-    60.48s  agent 발화 시작: <ret> Grant & Green is eight hundred seventy-five meters awa
-    60.78s  user  발화 끝
-    62.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: (tool result) Grant & Green (875 meters), Black Cat (1.1 km), Yoshi's 
-    70.31s  agent 발화 끝
-    70.52s  user  발화 시작: Hmm, Yoshi's is the furthest. What kind of music is playing 
-    75.10s  <ret> 발화 (turn19 첫 프레임)
-    75.26s  agent 발화 시작: <ret> Yoshi’s has the Maria Schneider Orchestra performing a
-    75.33s  user  발화 끝
-    77.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.90s]: (tool result) Yoshi's, 510 Embarcadero West, Oakland, CA 94606 has a p
-    79.74s  user  발화 시작: That sounds interesting—
-    80.16s  agent 발화 끝
-    81.29s  user  발화 시작: …is it a formal place?
-    81.35s  user  발화 끝
-    82.45s  <ret> 발화 (turn22 첫 프레임)
-    82.61s  agent 발화 시작: <ret> Yoshi's dress code is smart casual, so you don’t need 
-    82.76s  user  발화 끝
-    84.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: (tool result) Yoshi's, 510 Embarcadero West, Oakland, CA 94606 has a d
-    85.89s  user  발화 시작: Yeah.
-    86.38s  user  발화 끝
-    87.77s  agent 발화 시작: Many people enjoy dressing up a little, but it’s not strictl
-    87.89s  agent 발화 끝
-    94.62s  agent 발화 끝
-    94.97s  user  발화 시작: Okay. Could you check if I need a reservation for Yoshi's?
-    97.58s  <ret> 발화 (turn26 첫 프레임)
-    97.98s  agent 발화 시작: <ret> Yoshi's recommends making a reservation, especially fo
-    98.20s  user  발화 끝
-    99.02s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.60s]: (tool result) Yoshi's, 510 Embarcadero West, Oakland, CA 94606 recomme
-   100.82s  user  발화 시작: Yeah.
-   101.32s  user  발화 끝
-   103.40s  user  발화 시작: Can you try to book a table for one at eight then?
-   103.58s  agent 발화 끝
-   105.91s  <ret> 발화 (turn29 첫 프레임)
-   106.07s  agent 발화 시작: <ret> I’ve booked a table for one at Yoshi’s for eight PM; y
-   106.30s  user  발화 끝
-   107.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) Appointment booked at Yoshi's, 510 Embarcadero West, Oak
-   111.95s  user  발화 시작: Yeah.
-   112.44s  user  발화 끝
-   114.09s  agent 발화 끝
-   114.43s  user  발화 시작: Wonderful! Thank you so much.
-   116.41s  user  발화 끝
-   116.51s  agent 발화 시작: You’re very welcome. I’m glad I could help with your evening
-   120.64s  user  발화 시작: Now, I need to set an alarm for seven thirty tomorrow mornin
-   120.82s  agent 발화 끝
-   123.68s  <ret> 발화 (turn34 첫 프레임)
-   124.08s  agent 발화 시작: <ret> An alarm is set for seven thirty AM tomorrow.
-   124.16s  user  발화 끝
-   125.10s  user  발화 시작: Right.
-   125.52s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.61s]: (tool result) Alarm set for 7:30 AM.
-   125.69s  user  발화 끝
-   127.24s  user  발화 시작: Perfect. And can you remind me to pack my book?
-   127.68s  agent 발화 끝
-   130.03s  <ret> 발화 (turn37 첫 프레임)
-   130.26s  agent 발화 시작: <ret> I’ve added a reminder to pack your book for seven fort
-   130.42s  user  발화 끝
-   132.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) Alarm set for 7:45 AM with label "Pack book".
-   134.99s  agent 발화 끝
-   135.41s  user  발화 시작: Excellent. What time does the first train leave for the airp
-   138.53s  <ret> 발화 (turn39 첫 프레임)
-   138.77s  agent 발화 시작: <ret> A train departs from Millbrae Station at eight fifteen
-   139.01s  user  발화 끝
-   140.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Train departs from Millbrae Station at 8:15 AM, arriving
-   146.35s  user  발화 시작: Okay, that's doable.
-   146.37s  agent 발화 끝
-   147.82s  user  발화 끝
-   148.06s  agent 발화 시작: Planning ahead makes travel so much smoother. It helps minim
-   151.69s  user  발화 시작: Right.
-   152.19s  user  발화 끝
-   153.20s  agent 발화 끝
-   153.61s  user  발화 시작: Is there traffic on the way to Millbrae station right now?
-   156.08s  <ret> 발화 (turn44 첫 프레임)
-   156.48s  agent 발화 시작: <ret> There’s moderate congestion, and the estimated travel 
-   156.65s  user  발화 끝
-   158.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) Current traffic conditions show moderate congestion, est
-   163.33s  agent 발화 끝
-   163.97s  user  발화 시작: Forty-five minutes… I should probably leave soon then.
-   167.50s  agent 발화 시작: That’s a wise decision. Allowing extra time is always a good
-   167.59s  user  발화 끝
-   170.17s  user  발화 시작: Mm-hmm.
-   170.66s  user  발화 끝
-   172.31s  agent 발화 끝
-   172.78s  user  발화 시작: Thanks again for all your help, Dar.
-   174.69s  user  발화 끝
-   174.77s  agent 발화 시작: You’re most welcome. I’m happy to have assisted you. Enjoy y
-   179.58s  agent 발화 끝
+     2.04s  <ret> 발화 (turn1 첫 프레임)
+     2.27s  agent 발화 시작: <ret> Zuni Cafe is considered an expensive dining option. It
+     2.49s  user  발화 끝
+     3.24s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.33s]: (tool result) Zuni Cafe, San Francisco, CA is in the $$$ (expensive) p
+     4.10s  user  발화 시작: Uh-huh.
+     4.55s  user  발화 끝
+     7.59s  user  발화 시작: And what's the weather like there right now?
+     7.59s  agent 발화 끝
+     9.45s  <ret> 발화 (turn4 첫 프레임)
+     9.69s  agent 발화 시작: <ret> It’s currently eighteen point three degrees Celsius in
+     9.85s  user  발화 끝
+     9.95s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.66s]: (tool result) 18.3°C, humidity 62%, wind 8.0 km/h
+    18.35s  agent 발화 끝
+    18.49s  user  발화 시작: That sounds nice.
+    19.78s  agent 발화 시작: It does, doesn’t it? San Francisco often has pleasant evenin
+    19.91s  user  발화 끝
+    21.65s  user  발화 시작: Right.
+    22.28s  user  발화 끝
+    24.71s  user  발화 시작: I'm thinking of visiting, maybe staying a few nights.
+    24.83s  agent 발화 끝
+    27.84s  agent 발화 시작: That sounds wonderful. Are you planning a trip specifically 
+    27.94s  user  발화 끝
+    30.11s  user  발화 시작: Yeah.
+    30.60s  user  발화 끝
+    32.84s  agent 발화 끝
+    33.00s  user  발화 시작: Yes, but I haven’t booked anything yet.
+    35.06s  agent 발화 시작: Okay. Do you have any preferences for hotels, perhaps a part
+    35.12s  user  발화 끝
+    36.91s  user  발화 시작: Uh-huh.
+    37.45s  user  발화 끝
+    39.92s  agent 발화 끝
+    40.48s  user  발화 시작: I'd like something near Fisherman's Wharf.
+    42.40s  <ret> 발화 (turn15 첫 프레임)
+    42.47s  agent 발화 시작: <ret> The Hotel Riu Plaza starts at two hundred eighty-nine 
+    42.74s  user  발화 끝
+    44.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.19s]: (tool result) Hotel Riu Plaza Fisherman's Wharf, 2500 Mason St, San Fr
+    50.44s  user  발화 시작: The Argonaut sounds better. Can you check availability for n
+    50.66s  agent 발화 끝
+    54.11s  <ret> 발화 (turn17 첫 프레임)
+    54.35s  agent 발화 시작: <ret> I’ve reserved a Deluxe King Room at the Argonaut for n
+    54.46s  user  발화 끝
+    56.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.29s]: (tool result) Argonaut Hotel, 499 Jefferson St, San Francisco, CA 9413
+    64.64s  agent 발화 끝
+    64.78s  user  발화 시작: That’s great, thank you!
+    66.15s  agent 발화 시작: You’re very welcome.
+    66.19s  user  발화 끝
+    67.09s  user  발화 시작: Actually, I was wondering about getting around.
+    67.44s  agent 발화 끝
+    69.62s  user  발화 끝
+    69.73s  agent 발화 시작: Are you thinking of renting a car, or relying on public tran
+    74.45s  agent 발화 끝
+    74.52s  user  발화 시작: Public transport would be good.
+    75.97s  <ret> 발화 (turn23 첫 프레임)
+    76.29s  agent 발화 시작: <ret> Take the thirty Stockton bus from Jefferson and Hyde s
+    76.32s  user  발화 끝
+    77.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.85s]: (tool result) Take the 30 Stockton bus from Jefferson St & Hyde St, ar
+    87.14s  agent 발화 끝
+    87.23s  user  발화 시작: Hmm, that's a bit long.
+    88.70s  user  발화 끝
+    88.82s  agent 발화 시작: It is a little lengthy, yes. We could explore alternative ro
+    92.90s  user  발화 시작: …are there any bike rentals nearby the hotel?
+    93.63s  agent 발화 끝
+    94.75s  <ret> 발화 (turn27 첫 프레임)
+    95.15s  agent 발화 시작: <ret> Blazing Saddles is two hundred fifty meters away, Unli
+    95.39s  user  발화 끝
+    96.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: (tool result) Blazing Saddles Bike Rentals (250 m), Unlimited Biking (
+   104.01s  agent 발화 끝
+   104.73s  user  발화 시작: Blazing Saddles sounds closest.
+   106.95s  agent 발화 시작: It is the nearest option. Would you like me to check their a
+   106.98s  user  발화 끝
+   111.61s  user  발화 시작: Yes, please.
+   111.76s  agent 발화 끝
+   112.42s  <ret> 발화 (turn31 첫 프레임)
+   112.74s  agent 발화 시작: <ret> They offer standard bikes for thirty-five dollars a da
+   112.84s  user  발화 끝
+   114.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.98s]: (tool result) Standard bike: $35/day; Electric bike: $75/day; Tandem b
+   116.88s  user  발화 시작: Yeah.
+   117.32s  user  발화 끝
+   120.26s  user  발화 시작: I’ll take a standard bike for two days.
+   120.72s  agent 발화 끝
+   122.33s  <ret> 발화 (turn34 첫 프레임)
+   122.41s  agent 발화 시작: <ret> A standard bike is reserved for you, pickup next Satur
+   122.52s  user  발화 끝
+   124.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.20s]: (tool result) Standard bike reserved, pickup 2026-07-17, return 2026-0
+   127.46s  user  발화 시작: Right.
+   128.19s  user  발화 끝
+   132.41s  user  발화 시작: Perfect.
+   132.61s  agent 발화 끝
+   132.83s  agent 발화 시작: Wonderful. It sounds like your trip is taking shape nicely.
+   133.00s  user  발화 끝
+   137.00s  agent 발화 끝
+   137.74s  user  발화 시작: It is. I’m also wondering about events happening that weeken
+   141.13s  <ret> 발화 (turn39 첫 프레임)
+   141.53s  agent 발화 시작: <ret> There's the Outside Lands festival, a Giants baseball 
+   141.57s  user  발화 끝
+   143.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) Outside Lands Music and Arts Festival (Golden Gate Park)
+   147.47s  agent 발화 끝
+   147.81s  user  발화 시작: Shakespeare in the Park sounds lovely.
+   149.78s  agent 발화 시작: It's a very popular event. Would you like me to find ticket 
+   149.93s  user  발화 끝
+   151.25s  user  발화 시작: Right.
+   151.75s  user  발화 끝
+   154.78s  agent 발화 끝
+   155.53s  user  발화 시작: No, that’s alright. I think I’m all set for now.
+   158.46s  agent 발화 시작: Excellent. I’m glad I could help. Enjoy your trip to San Fra
+   158.53s  user  발화 끝
+   163.36s  agent 발화 끝

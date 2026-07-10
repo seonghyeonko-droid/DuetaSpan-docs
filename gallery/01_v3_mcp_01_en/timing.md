@@ -63,61 +63,53 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m planning a trip and need to vi | S2 …Actually, before we get too deep  | S3 That’s good to know. Now, back to  | S4 Hotel Valencia sounds good. Can yo
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to plan a trip, and I'd | S2 Actually, before we go deeper into | S3 July fifteenth to twentieth of nex | S4 Okay, can you book the L7 Myeongdo
 
-     0.00s  user  발화 시작: I’m planning a trip and need to visualize the Apple website.
-     6.74s  <ret> 발화 (turn1 첫 프레임)
-     6.82s  agent 발화 시작: <ret> I’ve created a detailed map of the Apple website, focu
-     6.86s  user  발화 끝
-     7.86s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.45s]: (tavily-map) Apple.com website map created successfully.
-     8.61s  user  발화 시작: Okay.
-     9.48s  user  발화 끝
-    11.27s  agent 발화 끝
-    12.15s  user  발화 시작: That’s great, but can it show me where to find information o
-    17.24s  <ret> 발화 (turn4 첫 프레임)
-    17.64s  agent 발화 시작: <ret> Yes, I’ve updated the map to highlight all information
-    17.85s  user  발화 끝
-    19.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tavily-map) Apple.com website map updated to highlight Vision Pro inf
-    20.60s  user  발화 시작: Uh-huh.
-    21.05s  user  발화 끝
-    23.13s  agent 발화 시작: It displays links to the Vision Pro product page, technical 
-    23.15s  agent 발화 끝
-    28.59s  user  발화 시작: …Actually, before we get too deep into the map, could you ju
-    29.39s  agent 발화 끝
-    34.08s  <ret> 발화 (turn8 첫 프레임)
-    34.15s  agent 발화 시작: <ret> Search results indicate mixed reviews, praising the di
-    34.24s  user  발화 끝
-    36.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (web_search) The Vision Pro has received mixed reviews, with praise fo
-    36.62s  user  발화 시작: Right.
-    37.26s  user  발화 끝
-    40.41s  agent 발화 끝
-    41.12s  user  발화 시작: Hmm, okay. What’s the current stock price for Apple?
-    44.55s  <ret> 발화 (turn11 첫 프레임)
-    44.95s  agent 발화 시작: <ret> Apple—ticker symbol AAPL—is currently trading at one h
-    45.14s  user  발화 끝
-    46.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.18s]: (get_stock_price_global_market) Apple (AAPL) is trading at 193.22 USD,
-    54.01s  user  발화 시작: That’s good to know. Now, back to the map—can you zoom in on
-    54.13s  agent 발화 끝
-    61.44s  <ret> 발화 (turn13 첫 프레임)
-    61.68s  agent 발화 시작: <ret> I’ve zoomed the map to focus on the Vision Pro accesso
-    61.75s  user  발화 끝
-    63.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tavily-map) Apple.com website map zoomed to Vision Pro accessories se
-    68.16s  user  발화 시작: Okay, that's helpful. Could you find some hotels near the Ap
-    68.35s  agent 발화 끝
-    73.28s  <ret> 발화 (turn15 첫 프레임)
-    73.68s  agent 발화 시작: <ret> In Cupertino, California, Hotel Valencia Santana Row i
-    73.86s  user  발화 끝
-    75.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.27s]: (Hotels_2_SearchHouse) Cupertino, CA (37.3317,-122.0307): Hotel Valenc
-    86.82s  user  발화 시작: Hotel Valencia sounds good. Can you reserve a room there for
-    86.95s  agent 발화 끝
-    93.26s  <ret> 발화 (turn17 첫 프레임)
-    93.35s  user  발화 끝
-    93.41s  agent 발화 시작: <ret> I’ve reserved a room for you at Hotel Valencia Santana
-    95.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.34s]: (Hotels_2_BookHouse) Hotel Valencia Santana Row, Cupertino, CA, July 1
-   100.65s  user  발화 시작: Yeah.
-   101.47s  user  발화 끝
-   105.75s  agent 발화 끝
-   105.90s  user  발화 시작: Fantastic. Thank you so much for your help, Koral.
-   109.28s  user  발화 끝
-   109.28s  agent 발화 시작: You’re very welcome. I’m glad I could assist you with your t
-   114.01s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to plan a trip, and I'd like to see what the Appl
+     5.12s  <ret> 발화 (turn1 첫 프레임)
+     5.19s  user  발화 끝
+     5.20s  agent 발화 시작: <ret> I’ve created a detailed map of the Apple website, iden
+     6.40s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.81s]: (tool result) Map created: Apple website overview, 20 points of intere
+     7.14s  user  발화 시작: Okay.
+     8.24s  user  발화 끝
+    10.01s  agent 발화 끝
+    10.92s  user  발화 시작: Twenty? That seems like a lot. Can you just show me where th
+    14.57s  <ret> 발화 (turn4 첫 프레임)
+    14.97s  agent 발화 시작: <ret> I've now focused the map on the products page, highlig
+    15.18s  user  발화 끝
+    16.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Map focused: Apple products page, 8 product categories h
+    17.24s  user  발화 시작: Uh-huh.
+    17.88s  user  발화 끝
+    19.23s  agent 발화 시작: I can further refine the map to a specific product if you'd 
+    19.32s  agent 발화 끝
+    21.15s  user  발화 시작: Right.
+    21.55s  user  발화 끝
+    24.14s  agent 발화 끝
+    25.31s  user  발화 시작: Actually, before we go deeper into Apple…
+    27.89s  user  발화 끝
+    29.78s  user  발화 시작: …could you find hotels in Seoul?
+    32.22s  agent 발화 시작: Let’s switch gears—I can search for hotels in Seoul. What da
+    32.28s  user  발화 끝
+    37.92s  agent 발화 끝
+    38.05s  user  발화 시작: July fifteenth to twentieth of next year.
+    41.06s  <ret> 발화 (turn12 첫 프레임)
+    41.14s  agent 발화 시작: <ret> I found twelve hotels in Seoul for those dates, rangin
+    41.20s  user  발화 끝
+    43.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) 12 hotels found in Seoul, price range $80-$350 per night
+    46.61s  user  발화 시작: …Are any of those near Myeongdong?
+    47.31s  agent 발화 끝
+    48.20s  <ret> 발화 (turn14 첫 프레임)
+    48.59s  agent 발화 시작: <ret> Four hotels near Myeongdong are available, ranging fro
+    48.68s  user  발화 끝
+    50.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) 4 hotels found near Myeongdong, price range $120-$280 pe
+    54.96s  user  발화 시작: Okay, can you book the L7 Myeongdong by LOTTE for me?
+    55.12s  agent 발화 끝
+    58.49s  <ret> 발화 (turn16 첫 프레임)
+    58.73s  agent 발화 시작: <ret> Your reservation at the L7 Myeongdong by LOTTE is conf
+    58.89s  user  발화 끝
+    60.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: (tool result) Reservation confirmed: L7 Myeongdong by LOTTE, Jul 15-20
+    69.99s  user  발화 시작: Perfect! Thanks so much.
+    70.09s  agent 발화 끝
+    71.92s  user  발화 끝
+    72.36s  agent 발화 시작: You’re very welcome. I’m glad I could help with your Seoul a
+    77.36s  agent 발화 끝

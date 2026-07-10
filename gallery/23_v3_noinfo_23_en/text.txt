@@ -69,46 +69,45 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.20s⟩ last year?
-[  3.60s][moshi] The weather in Tokyo ⟦⚡SPAN@5.20s: (tool result) 10.2°C, humidity 88%, wind 3.1 km/h⟧ on December twenty-fourth of last year was 10.2 degrees Celsius, with eighty-eight percent humidity and a 3.1 kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
-[ 13.64s][user ] Uhhh, can you find me a hotel in Seoul for next weekend?
-[ 16.74s][moshi] Could you tell me how many guests will be staying at the hotel?
-[ 18.28s][user ] «backchannel» Yeah.
-[ 20.03s][user ] Just ⟨ret@20.50s⟩ two.
-[ 20.90s][moshi] I found three ⟦⚡SPAN@22.50s: (tool result) Lotte Hotel Seoul (37.5665, 126.9780), The Plaza Seoul (37.5658, 126.9763), Shilla Stay Seoul (3⟧ hotels in Seoul: Lotte Hotel Seoul, The Plaza Seoul, and Shilla Stay Seoul.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Seoul", "date": "2026-07-12", "guests": "2"}}
-[ 25.30s][user ] «backchannel» Yeah, yeah.
-[ 27.66s][user ] What’s the price of the Lotte ⟨ret@29.51s⟩ Hotel?
-[ 29.82s][moshi] The Lotte ⟦⚡SPAN@30.95s: (tool result) Lotte Hotel Seoul is trading at ₩345,000, up 2.3%⟧ Hotel Seoul is currently trading at 345,000 won, with a 2.3 percent increase today.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Lotte Hotel Seoul"}}
-[ 37.19s][user ] Okay, book it for two nights, starting next ⟨ret@39.76s⟩ Saturday.
-[ 40.08s][moshi] Alright, I’ve ⟦⚡SPAN@41.36s: (tool result) Lotte Hotel Seoul, 2026-07-11, 2 nights, ₩690,000, 8Z9X2Q⟧ booked two nights at the Lotte Hotel Seoul, starting next Saturday, for 690,000 won. Your confirmation number is 8Z9X2Q.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Lotte Hotel Seoul", "check_in_date": "2026-07-11", "nights": "2"}}
-[ 51.04s][user ] Could you set an alarm for 7 ⟨ret@53.17s⟩ AM tomorrow?
-[ 53.49s][moshi] I’ve set ⟦⚡SPAN@54.37s: (tool result) Alarm set for 2026-07-11 at 07:00⟧ an alarm for 7 AM tomorrow.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "07:00", "date": "2026-07-11"}}
-[ 56.62s][user ] What time is it now in New York?
-[ 58.26s][moshi] ⟨ret@58.18s⟩ It is currently ⟦⚡SPAN@59.78s: (tool result) It is Friday, July 10, 2026 at 7:58 PM in America/New York right now.⟧ 7:58 PM in New York.
-      CALL: {"function": "get_time", "arguments": {"location": "New York"}}
-[ 60.89s][user ] Find me some Italian restaurants ⟨ret@63.10s⟩ nearby.
-[ 63.50s][moshi] There are three ⟦⚡SPAN@65.10s: (tool result) Bella Italia (37.5662, 126.9778) 230m, Trattoria Uno (37.5645, 126.9791) 450m, Pasta e Vino (37.⟧ Italian restaurants nearby: Bella Italia, Trattoria Uno, and Pasta e Vino.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian"}}
-[ 69.93s][user ] Can you reserve a table for two at Bella Italia at 8 PM?
-[ 73.37s][moshi] ⟨ret@73.22s⟩ I’ve reserved a ⟦⚡SPAN@75.22s: (tool result) Bella Italia, 20:00, 2 guests, confirmed, 5J7R4P⟧ table for two at Bella Italia at 8 PM. Your confirmation number is 5J7R4P.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Bella Italia", "time": "20:00", "guests": "2"}}
-[ 77.98s][user ] «backchannel» Okay.
-[ 80.75s][user ] That’s great. I'm feeling a bit stressed about work.
-[ 83.95s][moshi] [curious] Work stress is very common, isn’t it? What specifically is causing you the most worry right now?
-[ 85.74s][user ] «backchannel» Yeah.
-[ 89.19s][user ] Welll… a big presentation next week.
-[ 92.08s][moshi] A big presentation can definitely be stressful! Have you started preparing? Sometimes breaking it down into smaller steps can make it feel less daunting.
-[ 95.53s][user ] «backchannel» Yeah.
-[100.90s][user ] I've started, but I keep second-guessing myself.
-[103.75s][moshi] That's totally normal. Self-doubt creeps in. What's the core message you want to deliver in this presentation?
-[109.97s][user ] Just to show the new strategy will work.
-[112.53s][moshi] That’s a clear goal. Focus on the data that supports the strategy, and remember your expertise. You’ve gotten this far—you’re capable.
-[120.34s][user ] Thanks, that helps.
-[121.27s][moshi] You’re very welcome. I'm glad I could offer some support.
-[124.53s][user ] I think I’m all set for now.
-[126.04s][moshi] Wonderful! Enjoy your trip.
+[  0.00s][user ] Do you know the phone number for ⟨ret@1.89s⟩ Dr. Eleanor Vance?
+[  2.28s][moshi] I’m sorry, I couldn’t ⟦⚡SPAN@3.89s: (tool result)⟧ find a phone number for Dr. Eleanor Vance. It doesn't seem to be publicly listed.
+      CALL: {"function": "search", "arguments": {"query": "phone number for Dr. Eleanor Vance"}}
+[  5.82s][user ] «backchannel» Yeah, totally.
+[  8.41s][user ] Oh, uh, that's okay.
+[ 10.41s][moshi] That's alright. Sometimes those details aren't easy to come by.
+[ 11.83s][user ] «backchannel» Okay.
+[ 14.37s][user ] Could you find me some good restaurants nearby? I'm really ⟨ret@17.98s⟩ craving Italian.
+[ 18.38s][moshi] There are three Italian ⟦⚡SPAN@19.98s: (tool result) Seoul, South Korea (37.5665, 126.9780): Bella Italia (250m), La Piazza (580m), Trattoria Uno (81⟧ restaurants nearby: Bella Italia, two hundred and fifty meters away, La Piazza at five hundred and eighty meters, and Trattoria Uno at eight hundred and ten meters.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"cuisine": "Italian", "location": "current"}}
+[ 25.46s][user ] «backchannel» Uh-huh.
+[ 29.25s][user ] Bella Italia sounds good. Can you make a reservation for me ⟨ret@33.43s⟩ there?
+[ 33.74s][moshi] I've made a ⟦⚡SPAN@34.87s: (tool result) Bella Italia, July 11, 2026 at 7:00 PM, party of 2, confirmation ID: 847XG9⟧ reservation for you at Bella Italia for July eleventh at seven PM, for a party of two. Your confirmation ID is eight four seven X G nine.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Bella Italia", "time": "7:00 PM", "date": "July 11, 2026", "party_size": "2"}}
+[ 40.70s][user ] «backchannel» Okay.
+[ 43.53s][user ] Perfect, thank you!
+[ 44.69s][moshi] You're very welcome! I’m glad I could help with that. It’s nice to have a good meal planned.
+[ 50.35s][user ] I'm also feeling really stressed about a presentation I have next week.
+[ 54.01s][moshi] That’s understandable. Presentations can be quite nerve-wracking. What part of the presentation is causing you the most stress?
+[ 61.89s][user ] Just… everything, really. I'm worried about forgetting what to say, or people judging my ideas.
+[ 67.88s][moshi] It's common to feel overwhelmed when facing a big presentation. Let’s break it down. Have you had a chance to practice?
+[ 71.02s][user ] «backchannel» Uh-huh.
+[ 74.90s][moshi] Practicing is a great first step. Even just running through it a few times can boost your confidence significantly. It helps with recall, too.
+[ 83.75s][user ] I guess I haven't. I keep putting it off.
+[ 86.40s][moshi] That’s okay. Procrastination often comes from fear. We can work on strategies to make practice less daunting, if you'd like.
+[ 94.01s][user ] Yes, please. Any tips?
+[ 95.58s][moshi] Start small. Don’t try to perfect the whole presentation at once. Focus on just the opening, then the next section, and so on.
+[104.42s][user ] That sounds… manageable.
+[106.93s][moshi] It is! Small steps build momentum. Also, visualize success. Imagine yourself delivering a confident and engaging presentation.
+[115.86s][user ] I’ll try that. What about if I blank out during it?
+[118.81s][moshi] It happens to the best of us. Have notes, but don’t read directly from them. Use them as prompts. And remember, a pause isn’t a disaster.
+[127.48s][user ] Okay. That’s good to know.
+[129.29s][moshi] It is. And remember your audience wants you to succeed. They're not looking for perfection, they want to hear your ideas.
+[136.16s][user ] That's a good way to look at it. Could you set an alarm for me to remind me to practice ⟨ret@141.20s⟩ tomorrow morning?
+[141.58s][moshi] I’ve set an ⟦⚡SPAN@143.20s: (tool result) Alarm set for July 11, 2026 at 9:00 AM, label: Presentation Practice⟧ alarm for tomorrow, July eleventh, at nine AM, labeled “Presentation Practice”.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "9:00 AM", "date": "July 11, 2026", "label": "Presentation Practice"}}
+[147.44s][user ] Great! Thanks, Brae.
+[148.91s][moshi] You’re most welcome. Remember, you’ve got this. A little preparation goes a long way.
+[154.09s][user ] I think I’m starting to feel a bit better already.
+[156.14s][moshi] [happy] That’s wonderful to hear! It’s a sign you’re already taking positive steps.
+[162.05s][user ] I don’t think I do, for now. Thank you again.
+[165.30s][moshi] You’re very welcome. Wishing you all the best with your presentation. Take care.

@@ -56,58 +56,56 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.46s⟩ May tenth.
-[  4.85s][moshi] There are three buses: ⟦⚡SPAN@6.46s: (tool result) 14:30, Greyhound, $185.00; 17:00, FlixBus, $162.00; 21:45, Jefferson Lines, $201.00⟧ Greyhound at two thirty PM for one hundred eighty-five dollars, FlixBus at five PM for one hundred sixty-two, and Jefferson Lines at nine forty-five PM for two hundred one.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "passengers": "3", "date": "May tenth"}}
-[  9.46s][user ] «backchannel» Yeah.
-[ 16.25s][user ] That FlixBus sounds good. Can you buy me a ⟨ret@19.64s⟩ ticket?
-[ 19.81s][moshi] Excellent. I've booked ⟦⚡SPAN@21.64s: (tool result) Confirmed: FlixBus, Chicago to Denver, May 10, 3 passengers, $486.00, booking ID: GH729X⟧ three FlixBus tickets from Chicago to Denver on May tenth for four hundred eighty-six dollars. Your booking ID is GH729X.
-      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"bus": "FlixBus", "date": "May tenth", "passengers": "3"}}
-[ 30.45s][user ] I think I said May tenth… but wait—
-[ 33.09s][user ] …is there a way to change the date to ⟨ret@35.61s⟩ May eleventh?
-[ 35.77s][moshi] Oh, ⟦⚡SPAN@36.41s: (tool result) No buses available on May 11.⟧ I understand— Unfortunately, there are no buses available on May eleventh.
-[ 41.16s][user ] Okay, that's a shame. Can you at least tell me the weather in Denver on May ⟨ret@46.08s⟩ tenth?
-[ 46.32s][moshi] The weather ⟦⚡SPAN@47.20s: (tool result) 20.0°C, humidity 65%, wind 8.2 km/h⟧ in Denver on May tenth will be twenty degrees Celsius, with sixty-five percent humidity and an eight point two kilometer per hour wind.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denver", "date": "May tenth"}}
-[ 51.52s][user ] «backchannel» Yeah.
-[ 54.52s][user ] That sounds pleasant. Could you find a hotel near Union Station in Denver?
-[ 59.58s][moshi] ⟨ret@59.51s⟩ The Maven Hotel is one ⟦⚡SPAN@61.51s: (tool result) The Maven Hotel at Dairy Block, 1.2 km; The Oxford Hotel, 1.5 km; Hyatt Place Denver Downtown, 1⟧ point two kilometers away, The Oxford Hotel is one point five kilometers, and Hyatt Place Denver Downtown is one point eight kilometers.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Denver Union Station"}}
-[ 68.48s][user ] Tell me more about The ⟨ret@70.47s⟩ Maven Hotel.
-[ 70.84s][moshi] The Maven Hotel is ⟦⚡SPAN@72.47s: (tool result) 1850 Wazee St, Denver, CO 80202, United States; 4-star, free Wi-Fi, fitness center, restaurant.⟧ located at eighteen fifty Wazee Street, Denver, Colorado, eight zero two zero two. It’s a four-star hotel with free Wi-Fi, a fitness center, and a restaurant.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"hotel": "The Maven Hotel at Dairy Block"}}
-[ 83.02s][user ] Could you reserve a room there for me, for one night, ⟨ret@86.68s⟩ May tenth?
-[ 86.89s][moshi] I have reserved a ⟦⚡SPAN@88.68s: (tool result) Confirmed: The Maven Hotel, Denver, May 10, 1 night, $289.00, reservation ID: XJ412Z⟧ room at The Maven Hotel in Denver for one night on May tenth for two hundred eighty-nine dollars. Your reservation ID is XJ412Z.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel": "The Maven Hotel at Dairy Block", "date": "May tenth", "nights": "1"}}
-[ 97.52s][user ] That's great. What time is sunset in Denver on May ⟨ret@101.97s⟩ tenth?
-[102.19s][moshi] Sunset in Denver on ⟦⚡SPAN@103.56s: (tool result) 8:12 PM⟧ May tenth will be at eight twelve PM.
-      CALL: {"function": "get_time", "arguments": {"location": "Denver", "date": "May tenth", "event": "sunset"}}
-[104.85s][user ] «backchannel» Mhm.
-[105.91s][user ] Are there any good restaurants near the ⟨ret@108.77s⟩ hotel?
-[108.89s][moshi] Rioja is point three ⟦⚡SPAN@110.77s: (tool result) Rioja, 0.3 km; Mercantile Dining & Provision, 0.1 km; Stoic & Genuine, 0.4 km⟧ kilometers away, Mercantile Dining & Provision is point one kilometers, and Stoic & Genuine is point four kilometers.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "The Maven Hotel"}}
-[116.72s][user ] Mercantile sounds interesting. Can you make a reservation for two people there at seven PM?
-[122.95s][moshi] ⟨ret@122.85s⟩ Yes, I’ve made a ⟦⚡SPAN@124.85s: (tool result) Confirmed: Mercantile Dining & Provision, May 10, 7:00 PM, 2 people, confirmation ID: YL893A⟧ reservation for two at Mercantile Dining & Provision on May tenth at seven PM. Your confirmation ID is YL893A.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Mercantile Dining & Provision", "time": "7:00 PM", "people": "2"}}
-[127.47s][user ] «backchannel» Uh-huh.
-[132.15s][user ] Perfect. Could you set an alarm for eight AM on May ⟨ret@136.04s⟩ tenth?
-[136.35s][moshi] ⟦⚡SPAN@136.54s: (tool result) Alarm set for May 10, 8:00 AM.⟧ An alarm is now set for eight AM on May tenth.
-      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "8:00 AM", "date": "May tenth"}}
-[137.68s][user ] «backchannel» Yeah.
-[139.59s][user ] What's the current stock price of ⟨ret@141.77s⟩ Tesla?
-[142.08s][moshi] Tesla, ticker TSLA, is ⟦⚡SPAN@143.77s: (tool result) Tesla (TSLA) is trading at $177.85, up 2.3% today.⟧ currently trading at one hundred seventy-seven dollars and eighty-five cents, up two point three percent today.
-      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "TSLA"}}
-[150.37s][user ] Could you share my location with my wife? I’ll need to get her number from ⟨ret@156.13s⟩ memory.
-[156.35s][moshi] Could you please tell ⟦⚡SPAN@157.41s: (no information found)⟧ me your wife’s phone number?
-[158.51s][moshi] I'm sorry, I don't have access to that information. You'll need to provide her number first.
-[160.40s][user ] «backchannel» Yeah.
-[162.92s][user ] [YYYY-MM-DD] Wife's number is 555-123-4567. ⟨ret@167.52s⟩
-[167.66s][moshi] Thank you. ⟦⚡SPAN@168.48s: [YYYY-MM-DD] Wife's number is 555-123-4567.⟧ I have saved your wife’s number.
-[169.59s][user ] Now, please share my location with 555-123-4567. ⟨ret@175.28s⟩
-[175.51s][moshi] I have ⟦⚡SPAN@177.28s: (tool result) Location shared with 555-123-4567.⟧ shared your current location with 555-123-4567.
-      CALL: {"function": "Messaging_1_ShareLocation", "arguments": {"number": "555-123-4567"}}
-[179.16s][user ] «backchannel» Wow.
-[181.09s][user ] That's wonderful. I think that's all I need for now.
-[184.40s][moshi] It sounds like you’ve planned a lovely trip.
-[186.58s][user ] No, I think I'm all set. Thank you.
-[189.46s][moshi] You're very welcome. Enjoy your trip.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on ⟨ret@4.54s⟩ May tenth.
+[  4.93s][moshi] There are three buses: ⟦⚡SPAN@6.54s: (tool result) 14:35, Greyhound, $125.00; 16:00, FlixBus, $110.00; 20:15, Jefferson Lines, $130.00⟧ Greyhound at two thirty-five PM for one hundred twenty-five dollars, FlixBus at four PM for one hundred ten, and Jefferson Lines at eight fifteen PM for one hundred thirty.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "three"}}
+[ 10.90s][user ] «backchannel» Uh-huh.
+[ 15.64s][user ] Actually, make that May ⟨ret@17.54s⟩ eleventh.
+[ 17.77s][moshi] On May eleventh, Greyhound ⟦⚡SPAN@19.54s: (tool result) 08:00, Greyhound, $132.00; 10:15, FlixBus, $115.00; 18:45, Jefferson Lines, $138.00⟧ departs at eight AM for one hundred thirty-two dollars, FlixBus at ten fifteen for one hundred fifteen, and Jefferson Lines at six forty-five PM for one hundred thirty-eight.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "three"}}
+[ 24.67s][user ] «backchannel» Yeah.
+[ 28.59s][user ] That Jefferson Lines one sounds good. Can I buy a ticket for that?
+[ 33.22s][moshi] Just to confirm, that’s the Jefferson Lines bus to Denver on May eleventh departing at six forty-five PM for one hundred thirty-eight dollars, for three passengers?
+[ 43.73s][user ] Yes, that’s ⟨ret@45.09s⟩ right.
+[ 45.40s][moshi] Your ⟦⚡SPAN@46.21s: (tool result) Confirmation: JFL7892345, Passengers: 3, Total: $138.00⟧ ticket is confirmed! The confirmation number is JFL7892345. The total is one hundred thirty-eight dollars.
+      CALL: {"function": "Buses_3_BuyBusTicket", "arguments": {"bus": "Jefferson Lines", "date": "May eleventh", "time": "18:45", "passengers": "three", "price": "$138.00"}}
+[ 54.35s][user ] Great, thanks! Um, what's the weather like in Denver right now?
+[ 58.95s][moshi] ⟨ret@58.89s⟩ The current weather in Denver ⟦⚡SPAN@60.89s: (tool result) 18.3°C, humidity 62%, wind 8.2 km/h⟧ is eighteen point three degrees Celsius, with sixty-two percent humidity and an eight point two kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denver"}}
+[ 67.37s][user ] Is there anything fun to do in ⟨ret@69.64s⟩ Denver?
+[ 70.01s][moshi] Denver has many ⟦⚡SPAN@71.64s: (tool result) Denver Art Museum, 100 W 14th Ave Pkwy, Denver, CO 80202; Denver Botanic Gardens, 1007 York St, ⟧ attractions. The Denver Art Museum, the Denver Botanic Gardens, and Red Rocks Amphitheatre are all popular choices.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Denver"}}
+[ 75.64s][user ] «backchannel» Mhm.
+[ 78.59s][user ] What’s the address of the Botanic ⟨ret@81.07s⟩ Gardens again?
+[ 81.45s][moshi] The ⟦⚡SPAN@82.27s: (tool result) 1007 York St, Denver, CO 80206, 39.741998, -104.990279⟧ address is one thousand seven York Street, Denver, Colorado, eight zero two zero six.
+      CALL: {"function": "map_geocode", "arguments": {"address": "1007 York St, Denver, CO 80206"}}
+[ 86.64s][moshi] That is one thousand seven York Street, Denver, Colorado, eight zero two zero six, at latitude thirty-nine point seven four one nine nine eight, and longitude negative one hundred four point nine nine zero two seven nine.
+[ 99.60s][user ] That sounds lovely. Maybe I should book a hotel near ⟨ret@103.57s⟩ there.
+[103.72s][moshi] That’s a good idea. I can ⟦⚡SPAN@105.57s: (tool result) The Maven Hotel at Dairy Block, 1850 Wazee St, Denver, CO 80202, $210/night; The ART, a hotel, 1⟧ search for hotels near the Denver Botanic Gardens if you like.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Denver Botanic Gardens"}}
+[108.50s][moshi] The Maven Hotel is two hundred ten dollars a night, The ART is one hundred eighty-five, and Hyatt Place is one hundred ninety-five.
+[113.35s][user ] «backchannel» Right.
+[116.27s][user ] The ART sounds interesting.
+[118.79s][moshi] —it has a very modern aesthetic, known for its rotating art exhibits and central location. It's often—
+[120.97s][user ] «backchannel» Yeah.
+[125.43s][moshi] —a popular choice for visitors seeking a cultural experience.
+[126.93s][user ] «backchannel» Yeah.
+[129.45s][user ] …are there any restaurants nearby, ⟨ret@131.73s⟩ too?
+[131.80s][moshi] Rioja ⟦⚡SPAN@132.53s: (tool result) Rioja, 1338 Larimer St, Denver, CO 80202, Mediterranean, $$; Stoic & Genuine, 1701 Wynkoop St, D⟧ offers Mediterranean cuisine, Stoic & Genuine specializes in seafood, and TAG Restaurant serves American fare.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "The ART, a hotel"}}
+[134.69s][user ] «backchannel» Yeah, totally.
+[138.87s][user ] Okay, Rioja sounds good. Can you make a reservation there for two people on May eleventh at seven ⟨ret@145.37s⟩ PM?
+[145.68s][moshi] A table for ⟦⚡SPAN@147.37s: (tool result) Reservation confirmed: Rioja, May 11th, 7:00 PM, Table for 2, Confirmation ID: RJA456789⟧ two at Rioja is confirmed for May eleventh at seven PM. Your confirmation ID is RJA456789.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Rioja", "date": "May eleventh", "time": "19:00", "people": "two"}}
+[155.36s][user ] Perfect. I think that’s everything for now.
+[157.99s][moshi] That’s wonderful. It sounds like you have a lovely trip planned to Denver.
+[160.38s][user ] «backchannel» Yeah.
+[162.53s][user ] Yeah, it does. Thanks so much for your help.
+[165.15s][moshi] You're very welcome. I am glad I could help you with the arrangements.
+[166.65s][user ] «backchannel» Yeah.
+[168.11s][user ] I feel a lot less stressed now, actually.
+[171.36s][moshi] That's good to hear. Sometimes just having a plan in place can make a big difference.
+[175.90s][user ] It really does. I appreciate you taking the time.
+[179.64s][moshi] It's my role to help people feel more prepared and at ease.
+[183.16s][user ] I think I'm all set now.
+[185.00s][moshi] Very well.

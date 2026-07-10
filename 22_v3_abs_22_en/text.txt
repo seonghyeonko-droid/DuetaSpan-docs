@@ -67,22 +67,19 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.12s⟩ hate?
-[  2.28s][moshi] They fundamentally reject ⟦⚡SPAN@4.12s: Anarchists oppose all forms of hierarchical rule and coercive control.⟧ any system imposing authority over individuals. It's a broad opposition, really.
-[  9.16s][user ] That's interesting. What about historical figures who leaned that ⟨ret@12.55s⟩ way?
-[ 12.78s][moshi] Pierre-Joseph ⟦⚡SPAN@13.59s: Pierre-Joseph Proudhon was a significant proponent of anarchist philosophy.⟧ Proudhon is often considered a key figure in early anarchist thought. He explored mutualism extensively.
-[ 21.93s][user ] Mutualism… can you explain that a bit?
-[ 24.95s][moshi] It’s a system advocating reciprocal, free association for exchange, based on labor. Essentially, fair trade and cooperation.
-[ 34.18s][user ] So, no central authority at all?
-[ 36.97s][moshi] «interrupted» Exactly. Mutualists believe in individual ownership of the means of production—
-[ 41.57s][user ] «interrupts_prev» …but doesn't that just create inequality again, if some people own more than others?
-[ 46.23s][moshi] That's a very insightful point. It's a common critique of mutualism, and it's a fair one. It relies on a lot of social pressure to prevent accumulation.
-[ 52.12s][user ] «backchannel» Yeah.
-[ 55.55s][user ] What about more modern anarchist ⟨ret@57.85s⟩ thinkers?
-[ 58.01s][moshi] Noam Chomsky, though ⟦⚡SPAN@59.85s: Noam Chomsky has expressed sympathy with anarchist ideas.⟧ not strictly an anarchist himself, has voiced support for many anarchist principles. He often critiques power structures.
-[ 69.10s][user ] Are there anarchist communities anywhere today?
-[ 72.01s][moshi] ⟨ret@71.86s⟩ Yes, there are anarchist ⟦⚡SPAN@73.86s: There are anarchist collectives and communities worldwide.⟧ collectives and communities around the world, though they vary greatly in size and practice.
-[ 79.11s][user ] What do they *do* day to day?
-[ 80.59s][moshi] Their activities range from mutual aid networks to political activism and alternative living arrangements. It really depends on the group.
-[ 89.23s][user ] That sounds…challenging.
-[ 91.18s][moshi] It certainly requires dedication and a strong sense of community. It’s about building a different way of life, which isn't always easy. Enjoy your trip.
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.34s⟩ hate?
+[  2.50s][moshi] Anarchists fundamentally oppose any ⟦⚡SPAN@4.34s: Anarchists oppose all forms of hierarchical rule and coercive control.⟧ system imposing control over others, so it isn’t one specific mode of government they dislike, but all of them. It’s a rather comprehensive opposition, really.
+[  9.71s][user ] «backchannel» Uh-huh.
+[ 14.55s][user ] That's… comprehensive. What about planning a trip? Do you help with that?
+[ 19.67s][moshi] I do! Planning trips is one of my favorite things to assist with. Where are you hoping to go, or do you need some inspiration?
+[ 27.51s][user ] I’m thinking somewhere warm, maybe the Caribbean. Somewhere I can just… unwind.
+[ 32.60s][moshi] The Caribbean sounds lovely! I can certainly help you explore options for a relaxing getaway. Are you thinking of a specific island, or would you like me to suggest some?
+[ 42.86s][user ] Suggest some! I haven't really decided. Somewhere not too crowded, if possible.
+[ 47.64s][moshi] «interrupted» Let me check availability and crowds for some lesser-known Caribbean islands—
+[ 51.59s][user ] «interrupts_prev» …Actually, before you do that, do you know what the weather is like in Barbados right ⟨ret@56.45s⟩ now?
+[ 56.76s][moshi] Currently in Barbados, ⟦⚡SPAN@58.45s: 28.0°C, humidity 82%, wind 13.5 km/h⟧ it’s twenty-eight degrees Celsius, with eighty-two percent humidity and a thirteen-and-a-half kilometer per hour wind. Sounds quite pleasant, doesn't it?
+[ 67.76s][user ] That *does* sound nice. Are there any good hotels ⟨ret@70.88s⟩ there?
+[ 71.03s][moshi] The Crane Resort ⟦⚡SPAN@72.88s: (tool result) The Crane Resort, Barbados, 13.1667, -59.5833, 4.8 stars, $350 per night; Fairmont Royal Pavilio⟧ is available for three-hundred-and-fifty dollars a night, with a four-point-eight-star rating. The Fairmont Royal Pavilion is four-hundred-and-twenty, four-point-five stars, and Sandy Lane is six-hundred, five stars.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Barbados"}}
+[ 85.75s][user ] The Crane Resort sounds good. Can you tell me more about it?
+[ 89.39s][moshi] It’s a beautiful resort known for its stunning cliffside location and historic charm. It offers a range of amenities, perfect for unwinding. Would you like me to check availability for your dates?

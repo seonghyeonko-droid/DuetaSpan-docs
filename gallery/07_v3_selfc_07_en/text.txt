@@ -77,36 +77,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on ⟨ret@3.59s⟩ June fifteenth.
-[  3.83s][moshi] I’ve scheduled a ⟦⚡SPAN@5.59s: (tool result) booking id: GV20260615-873, property: The Grandview Lofts, date: 2026-06-15, time: 14:00, agent:⟧ viewing at The Grandview Lofts for June fifteenth at two PM with Amelia Chen; your booking ID is GV20260615-873. That sounds like a good first step in finding a new place!
-[ 18.64s][user ] Actually… June fourteenth, not fifteenth. Sorry about that.
-[ 22.82s][moshi] ⟨ret@22.66s⟩ No problem at ⟦⚡SPAN@24.66s: (tool result) booking id: GV20260614-219, property: The Grandview Lofts, date: 2026-06-14, time: 14:00, agent:⟧ all. I’ve updated your viewing at The Grandview Lofts to June fourteenth at two PM, booking ID GV20260614-219. It's perfectly alright to adjust plans.
-[ 37.16s][user ] What's the weather going to be like ⟨ret@39.08s⟩ then?
-[ 39.32s][moshi] On June fourteenth, it ⟦⚡SPAN@41.08s: (tool result) 21.0°C, humidity 68%, wind 7.2 km/h⟧ will be twenty-one degrees Celsius with sixty-eight percent humidity and a seven point two kilometer per hour wind. A lovely day for a viewing!
-[ 49.45s][user ] Are there any good coffee shops ⟨ret@51.52s⟩ nearby?
-[ 51.68s][moshi] There are several ⟦⚡SPAN@53.52s: (tool result) Seoul (37.5665, 126.9780): Cafe Onion Anguk (150m), Coffee Nap Roasters (280m), Anthracite Coffe⟧ coffee shops nearby. Cafe Onion Anguk is one hundred fifty meters away, Coffee Nap Roasters is two hundred eighty, and Anthracite is three hundred fifty meters.
-[ 64.71s][user ] Hmm, what about restaurants? Italian, preferably.
-[ 69.56s][moshi] ⟨ret@69.16s⟩ Within a short ⟦⚡SPAN@71.16s: (tool result) Seoul (37.5665, 126.9780): La Tavola (400m), Bellagio (600m), Osteria Saporito (750m)⟧ distance, La Tavola is four hundred meters away, Bellagio is six hundred, and Osteria Saporito is seven hundred fifty. Hopefully one of those will satisfy your craving!
-[ 76.43s][user ] «backchannel» Right.
-[ 83.24s][user ] Could you book me a table at La Tavola for, uh, six ⟨ret@87.07s⟩ thirty?
-[ 87.31s][moshi] I’ve booked ⟦⚡SPAN@89.07s: (tool result) restaurant: La Tavola, date: 2026-06-14, time: 18:30, party size: 2, confirmation id: LT20260614⟧ a table for two at La Tavola on June fourteenth at six thirty PM. Your confirmation ID is LT20260614-555.
-[100.98s][user ] That's great. What time is sunset on the fourteenth?
-[104.73s][moshi] ⟨ret@104.49s⟩ Sunset on June fourteenth ⟦⚡SPAN@106.49s: (tool result) It is Friday, June 14, 2026 at 7:28 PM in Asia/Seoul right now.⟧ in Seoul is at seven twenty-eight PM. Plenty of time for dinner after your viewing!
-[111.48s][user ] Find me some information about The Grandview Lofts.
-[114.73s][moshi] ⟨ret@114.42s⟩ The Grandview ⟦⚡SPAN@115.94s: (tool result) The Grandview Lofts is a luxury apartment complex in the heart of Seoul, known for its modern de⟧ Lofts is a luxury apartment complex in Seoul, known for its modern design and city views. You can find more information at grandviewlofts.kr.
-[126.78s][user ] Play some jazz ⟨ret@128.00s⟩ music.
-[128.24s][moshi] I’m now playing ⟦⚡SPAN@129.68s: (tool result) Miles Davis — So What (1959); John Coltrane — Blue Train (1957); Charles Mingus — Mingus Ah Um (⟧ "So What" by Miles Davis, followed by "Blue Train" by John Coltrane and “Mingus Ah Um” by Charles Mingus.
-[133.11s][user ] «backchannel» Uh-huh.
-[136.29s][user ] Is the stock doing well? Apple, I mean.
-[138.90s][moshi] ⟨ret@138.74s⟩ Apple Inc. (AAPL) is ⟦⚡SPAN@140.74s: (tool result) Apple Inc. (AAPL) is trading at 192.50 USD, up 1.2% today.⟧ currently trading at one hundred ninety-two point fifty US dollars, up one point two percent today. That’s encouraging to hear.
-[146.43s][user ] «backchannel» Yeah.
-[149.32s][user ] Remind me to call my sister tomorrow.
-[151.38s][moshi] ⟨ret@151.30s⟩ I've set a ⟦⚡SPAN@153.30s: (tool result) reminder id: RM20260615-123, date: 2026-06-15, time: 10:00, task: Call sister⟧ reminder for you to call your sister tomorrow at ten AM. Reminder ID is RM20260615-123. Staying connected is so important.
-[160.28s][user ] «backchannel» Yeah, totally.
-[164.15s][user ] What's the fastest way to get to La Tavola from The Grandview ⟨ret@168.29s⟩ Lofts?
-[168.53s][moshi] The fastest way to ⟦⚡SPAN@170.29s: (tool result) map directions: Driving 6.2 km, 15 minutes; Walking 4.8 km, 55 minutes; Public Transit 5.1 km, 3⟧ La Tavola from The Grandview Lofts is by driving, six point two kilometers, taking about fifteen minutes. Walking would take fifty-five minutes, or public transit about thirty.
-[178.12s][user ] «backchannel» Yeah.
-[181.09s][user ] Okay, thank you.
-[182.61s][moshi] You're very welcome. I’m glad I could help with your arrangements.
-[186.65s][user ] I think that's all for now.
-[188.07s][moshi] Enjoy your trip.
+[  0.00s][user ] I’m thinking about moving to Seoul, but I keep getting different dates for when the cherry blossoms ⟨ret@5.16s⟩ bloom.
+[  5.39s][moshi] In Seoul, the cherry ⟦⚡SPAN@7.16s: The cherry blossoms in Seoul typically bloom between late March and early April.⟧ blossoms usually bloom between late March and early April. That's a beautiful time to visit, or to make a move!
+[ 14.07s][user ] That's good to know. Uh, actually, I meant 2027.
+[ 17.64s][moshi] ⟨ret@17.49s⟩ Still, in Seoul, the ⟦⚡SPAN@19.49s: The cherry blossoms in Seoul typically bloom between late March and early April.⟧ cherry blossoms typically bloom between late March and early April. Planning ahead is smart when moving!
+[ 25.82s][user ] Okay, great. I’d…
+[ 28.59s][user ] …like to find some apartments in the Gangnam ⟨ret@31.35s⟩ district.
+[ 31.59s][moshi] I found two options ⟦⚡SPAN@33.35s: (tool result) 37.4979, 127.0276, The Galleria Foret, 2300000000 KRW, 4 bedrooms, 3 bathrooms; 37.4985, 127.028⟧ in Gangnam: The Galleria Foret, listed at two billion three hundred million Korean won with four bedrooms, and Raemian Estian at one billion eight hundred million won with three bedrooms.
+      CALL: {"function": "Homes_2_FindHomeByArea", "arguments": {"area": "Gangnam"}}
+[ 44.47s][user ] Raemian Estian sounds interesting. Can you schedule a viewing for me ⟨ret@48.11s⟩ there?
+[ 48.27s][moshi] I’ve scheduled a ⟦⚡SPAN@50.11s: (tool result) Raemian Estian, July 18, 2026, 10:00 AM, confirmation ID: 89jklm⟧ viewing for Raemian Estian on July eighteenth, two thousand twenty-six, at ten AM. Your confirmation ID is eight nine jklm.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home": "Raemian Estian"}}
+[ 58.96s][user ] Perfect! I also need to find a good Korean language school nearby.
+[ 63.85s][moshi] ⟨ret@63.45s⟩ Two Korean language ⟦⚡SPAN@65.45s: (tool result) Gangnam Language Center, 37.4965, 127.0264, 02-555-1234; Lexis Korean, 37.4972, 127.0270, 02-555⟧ schools are near Gangnam: Gangnam Language Center at thirty-seven point four nine six five latitude, one hundred twenty-seven point zero two six four longitude, and Lexis Korean at thirty-seven point four nine seven two, one hundred twenty-seven point zero two seven zero.
+      CALL: {"function": "Services_4_FindProvider", "arguments": {"area": "Gangnam", "service": "Korean language school"}}
+[ 74.24s][user ] «backchannel» Right.
+[ 83.71s][user ] Lexis Korean sounds better. What are their phone ⟨ret@86.70s⟩ number again?
+[ 87.10s][moshi] The phone number for ⟦⚡SPAN@88.70s: Lexis Korean, 37.4972, 127.0270, 02-555-5678⟧ Lexis Korean is zero two – five five five – five six seven eight.
+[ 93.68s][user ] Great. Could you look up the weather forecast for Seoul on July eighteenth?
+[ 98.53s][moshi] ⟨ret@98.37s⟩ On July eighteenth, ⟦⚡SPAN@100.37s: (tool result) 27.0°C, humidity 78%, wind 4.2 km/h⟧ two thousand twenty-six, the forecast for Seoul is twenty-seven degrees Celsius, with seventy-eight percent humidity and a four point two kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "July 18, 2026", "location": "Seoul"}}
+[110.92s][user ] Hmm, that sounds a bit warm.
+[113.73s][moshi] It does sound warm, but hopefully a comfortable warmth for your viewing! It’s good you’re thinking ahead.
+[120.84s][user ] Actually, I meant July eighteenth, 2027.
+[124.08s][moshi] ⟨ret@123.92s⟩ On July eighteenth, two ⟦⚡SPAN@125.92s: (tool result) 25.5°C, humidity 75%, wind 3.8 km/h⟧ thousand twenty-seven, Seoul’s forecast is twenty-five point five degrees Celsius, with seventy-five percent humidity and a three point eight kilometer per hour wind. A little more pleasant, perhaps?
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"date": "July 18, 2027", "location": "Seoul"}}
+[131.80s][user ] «backchannel» Uh-huh.
+[136.80s][user ] Yes, much better. Can you find me some good restaurants near Raemian Estian?
+[142.19s][moshi] ⟨ret@142.03s⟩ ⟦⚡SPAN@142.75s: (tool result) Byeokje Galbi, 37.4970, 127.0285, Korean BBQ, 02-555-9012; Gwanghwamun Jip, 37.4968, 127.0278, K⟧ Near Raemian Estian, I found Byeokje Galbi, a Korean BBQ restaurant, and Gwanghwamun Jip, also Korean.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Raemian Estian"}}
+[147.95s][user ] «backchannel» Yeah.
+[150.31s][user ] I think I'll try Byeokje Galbi. Can you make a reservation for two people there on July eighteenth at seven PM?

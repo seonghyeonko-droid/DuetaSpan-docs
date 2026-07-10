@@ -69,21 +69,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Andrea, it’s lovely to meet you. I’m Jaeia, and I’m he
-     8.35s  agent 발화 끝
-     8.47s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just feeling…lost, I gue
-    16.38s  agent 발화 시작: Uncertainty can be a heavy companion. It’s completely unders
-    16.49s  user  발화 끝
-    20.09s  user  발화 시작: Wow.
-    20.91s  user  발화 끝
-    27.56s  agent 발화 시작: Sometimes, naming the specific source of that uncertainty ca
-    27.65s  agent 발화 끝
-    39.34s  agent 발화 끝
-    39.41s  user  발화 시작: It’s my career, mostly. I’ve been at the same company for fi
-    45.72s  user  발화 끝
-    45.98s  agent 발화 시작: Fifteen years is a significant commitment. Restructuring oft
-    58.69s  agent 발화 끝
-    58.74s  user  발화 시작: It is. I don't even know where to begin.
-    61.88s  user  발화 끝
-    61.95s  agent 발화 시작: Beginning can be the hardest part, certainly. Perhaps we cou
-    74.20s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Andrea, welcome. My name is Jaeia, and I’m here to off
+     4.67s  user  발화 시작: Right.
+     5.21s  user  발화 끝
+     7.21s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just feeling…lost, I gue
+     7.36s  agent 발화 끝
+    14.97s  agent 발화 시작: It sounds like you're carrying a lot right now. Change can b
+    15.05s  user  발화 끝
+    20.17s  user  발화 시작: Yeah.
+    20.71s  user  발화 끝
+    25.59s  agent 발화 끝
+    25.61s  agent 발화 시작: It's alright to take your time with that. Sometimes just ack
+    40.22s  agent 발화 끝
+    41.31s  user  발화 시작: My partner and I…we decided to separate. After fifteen years
+    48.54s  user  발화 끝
+    48.67s  agent 발화 시작: Fifteen years is a significant part of a life, Andrea. It’s 
+    59.28s  agent 발화 끝
+    59.32s  user  발화 시작: No, I…I don’t think I do. It’s just waves, isn’t it? Of sadn
+    65.85s  user  발화 끝
+    66.04s  agent 발화 시작: Exactly. Waves are a good way to describe it. They come and 
+    79.40s  agent 발화 끝

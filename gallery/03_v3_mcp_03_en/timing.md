@@ -58,39 +58,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm feeling a bit overwhelmed with | S2 That sounds good. | S3 A timeline, yeah, that might work. | S4 Maybe you're right. I should just 
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling really stuck on this r | S2 It’s about the impact of social me | S3 Maybe… articles specifically about | S4 Okay, that's actually really usefu
 
-     0.00s  user  발화 시작: I'm feeling a bit overwhelmed with studying for my exams.
-     3.54s  agent 발화 시작: It's understandable to feel that way when facing exams, Thun
-     3.61s  user  발화 끝
-     9.88s  agent 발화 끝
-     9.92s  user  발화 시작: Well, history is really tough. I need to memorize so many da
-    14.08s  agent 발화 시작: History can definitely be demanding! Perhaps we could explor
-    14.18s  user  발화 끝
-    19.46s  agent 발화 끝
-    20.32s  user  발화 시작: That sounds good.
-    21.64s  <ret> 발화 (turn5 첫 프레임)
-    21.70s  user  발화 끝
-    21.71s  agent 발화 시작: <ret> Spaced repetition involves reviewing information at in
-    23.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Spaced repetition is a learning technique that incorpora
-    25.95s  user  발화 시작: Yeah.
-    26.45s  user  발화 끝
-    27.21s  user  발화 시작: That sounds…complicated. Is there a simpler way?
-    27.41s  agent 발화 끝
-    31.05s  user  발화 끝
-    31.45s  agent 발화 시작: It can seem daunting at first. Perhaps creating a timeline m
-    38.49s  agent 발화 끝
-    38.69s  user  발화 시작: A timeline, yeah, that might work. Can you find me some key 
-    43.71s  <ret> 발화 (turn10 첫 프레임)
-    44.10s  agent 발화 시작: <ret> The French Revolution began in seventeen eighty-nine, 
-    44.11s  user  발화 끝
-    45.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.91s]: (tool result) The French Revolution began in 1789 with the Storming of
-    57.96s  user  발화 시작: That’s…a lot.
-    58.01s  agent 발화 끝
-    60.01s  agent 발화 시작: It is a significant period, isn’t it? Remember, breaking it 
-    60.03s  user  발화 끝
-    66.20s  user  발화 시작: Maybe you're right. I should just focus on one event at a ti
-    66.22s  agent 발화 끝
-    69.90s  agent 발화 시작: Exactly! Small steps, Thunaen. And celebrating each mileston
-    70.03s  user  발화 끝
-    76.43s  agent 발화 끝
+     0.00s  user  발화 시작: I'm feeling really stuck on this research paper. I just… can
+     5.04s  agent 발화 시작: It's completely normal to feel overwhelmed when facing a big
+     5.04s  user  발화 끝
+    11.31s  user  발화 시작: That sounds… good. Uhhh, maybe.
+    11.34s  agent 발화 끝
+    15.38s  agent 발화 시작: Great. First, what’s the main topic you're researching? Know
+    15.48s  user  발화 끝
+    20.01s  agent 발화 끝
+    20.89s  user  발화 시작: It’s about the impact of social media on teenage mental heal
+    24.66s  <ret> 발화 (turn5 첫 프레임)
+    24.73s  agent 발화 시작: <ret> A 2024 Pew Research study found sixty-eight percent of
+    24.73s  user  발화 끝
+    26.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (tool result) Social media use is linked to increased rates of anxiety
+    28.06s  user  발화 시작: Exactly.
+    28.89s  user  발화 끝
+    29.55s  agent 발화 시작: That statistic is quite striking, isn’t it? It highlights th
+    29.58s  agent 발화 끝
+    36.83s  agent 발화 끝
+    37.13s  user  발화 시작: Maybe… articles specifically about coping mechanisms?
+    41.07s  <ret> 발화 (turn9 첫 프레임)
+    41.39s  user  발화 끝
+    41.46s  agent 발화 시작: <ret> CBT, mindfulness, limiting screen time, and real conne
+    43.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) Cognitive behavioral therapy (CBT) and mindfulness exerc
+    46.88s  agent 발화 끝
+    47.04s  user  발화 시작: Okay, that's actually really useful. I think I can… start wi
+    51.66s  user  발화 끝
+    51.70s  agent 발화 시작: I’m glad to hear it. Remember, taking small, manageable step
+    56.88s  agent 발화 끝

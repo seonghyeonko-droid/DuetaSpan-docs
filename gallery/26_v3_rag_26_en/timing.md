@@ -58,41 +58,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, I was wondering about fla | S2 Okay, well, what about… um, the ca | S3 I just… I get so stressed about ex | S4 Perfect! Thanks, Kiora.
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, I was wondering about fla | S2 Hmm, Belgium… I wasn’t thinking of | S3 Right, okay. Good to know. I keep  | S4 Oh, okay. That’s good…
 
-     0.00s  user  발화 시작: Hey, uh, I was wondering about flags… do you know any flags 
-     6.27s  <ret> 발화 (turn1 첫 프레임)
-     6.44s  user  발화 끝
-     6.51s  agent 발화 시작: <ret> The flag of Germany features black, red, and gold—a st
-     8.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: The flag of Germany is composed of black, red, and gold bands.
-    11.54s  user  발화 시작: Oh, gold? I thought it was yellow. Hmmm.
-    11.70s  agent 발화 끝
-    15.34s  user  발화 끝
-    15.76s  agent 발화 시작: You’re right to question that! Often, the color is described
-    18.48s  user  발화 시작: Right.
-    19.11s  user  발화 끝
-    21.69s  agent 발화 끝
-    21.72s  user  발화 시작: Okay, well, what about… um, the capital of Germany?
-    25.55s  <ret> 발화 (turn6 첫 프레임)
-    25.86s  agent 발화 시작: <ret> Berlin is the capital of Germany, a city of 3.7 millio
-    25.98s  user  발화 끝
-    27.23s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.11s]: (tool result) Berlin is the capital and largest city of Germany, with 
-    31.97s  agent 발화 끝
-    32.01s  user  발화 시작: Wow, that's a lot of people. Do you think I could handle stu
-    36.73s  user  발화 끝
-    36.84s  agent 발화 시작: Studying abroad can be challenging, but also incredibly rewa
-    42.53s  agent 발화 끝
-    42.58s  user  발화 시작: I just… I get so stressed about exams.
-    45.91s  agent 발화 시작: It’s very common to feel stressed during exams. Perhaps we c
-    45.95s  user  발화 끝
-    52.04s  user  발화 시작: That actually sounds really good. Maybe we can talk about th
-    52.11s  agent 발화 끝
-    57.13s  agent 발화 시작: [happy] That sounds like a wonderful plan. We definitely can
-    57.27s  user  발화 끝
-    59.63s  user  발화 시작: Uh-huh.
-    60.17s  user  발화 끝
-    62.60s  agent 발화 끝
-    63.86s  user  발화 시작: Perfect! Thanks, Kiora.
-    65.65s  agent 발화 시작: You're very welcome! Take care and remember to be kind to yo
-    65.80s  user  발화 끝
-    69.62s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, uh, I was wondering about flags… like, which countries 
+     7.00s  <ret> 발화 (turn1 첫 프레임)
+     7.13s  user  발화 끝
+     7.23s  agent 발화 시작: <ret> The flag of Germany has black, red, and yellow horizon
+     9.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.45s]: The flag of Germany features black, red, and yellow horizontal bands.
+    13.64s  user  발화 시작: Oh, Germany, right. I knew that one, I think. But are there 
+    13.68s  agent 발화 끝
+    19.53s  <ret> 발화 (turn3 첫 프레임)
+    19.62s  user  발화 끝
+    19.77s  agent 발화 시작: <ret> Yes, Belgium also has a flag with those colors! It fea
+    21.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: Belgium's flag consists of three vertical bands of black, yellow, and 
+    22.82s  user  발화 시작: Right.
+    23.54s  user  발화 끝
+    26.36s  user  발화 시작: Hmm, Belgium… I wasn’t thinking of Europe at all. This is fo
+    26.39s  agent 발화 끝
+    32.98s  user  발화 끝
+    32.99s  agent 발화 시작: A quiz sounds fun! Is it a geography quiz, or something else
+    37.57s  agent 발화 끝
+    37.68s  user  발화 시작: It’s a general knowledge one, mostly visual. Okay, so German
+    45.38s  <ret> 발화 (turn8 첫 프레임)
+    45.70s  agent 발화 시작: <ret> Actually, Austria's flag is red, white, and red—it doe
+    45.74s  user  발화 끝
+    47.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: The flag of Austria is composed of three horizontal bands of red, whit
+    51.77s  agent 발화 끝
+    51.83s  user  발화 시작: Right, okay. Good to know. I keep getting those central Euro
+    58.23s  agent 발화 시작: It's very easy to do! They share some similarities in design
+    58.32s  user  발화 끝
+    62.37s  user  발화 시작: But are there any other flags with black, red, and yellow? I
+    62.43s  agent 발화 끝
+    67.20s  <ret> 발화 (turn12 첫 프레임)
+    67.60s  agent 발화 시작: <ret> It appears Germany and Belgium are the only internatio
+    67.74s  user  발화 끝
+    69.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: No other internationally recognized national flag contains both black,
+    72.70s  user  발화 시작: Yeah.
+    73.20s  user  발화 끝
+    74.51s  agent 발화 끝
+    75.79s  user  발화 시작: Oh, okay. That’s good…
+    78.28s  user  발화 끝
+    80.32s  user  발화 시작: …to know. Thanks, Kiora!
+    82.54s  user  발화 끝
+    82.61s  agent 발화 시작: You’re very welcome! I’m glad I could help with your quiz. B
+    87.70s  agent 발화 끝

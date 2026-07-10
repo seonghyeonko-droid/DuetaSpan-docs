@@ -55,91 +55,87 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 uh, I was reading about Italy… and | S2 okay, good. Good to know. Um… what | S3 I’m just worried I’ll freeze up… | S4 do you… have any other suggestions
+# EXAMINER(FDB-v2) 단계: S1 Um, I was reading about Italy, and | S2 Okay… so, what kind of preparation | S3 Nine kilometers… that’s… not that  | S4 Oh. Okay. That’s… good to know.
 
-     0.00s  user  발화 시작: uh, I was reading about Italy… and I was wondering, when did
-     5.25s  <ret> 발화 (turn1 첫 프레임)
-     5.49s  agent 발화 시작: <ret> Mount Vesuvius last erupted in March of nineteen forty
-     5.66s  user  발화 끝
-     7.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: Mount Vesuvius last erupted in March of nineteen forty-four.
-    12.90s  agent 발화 끝
-    12.96s  user  발화 시작: nineteen forty-four… wow. That’s… a while ago.
-    17.93s  agent 발화 시작: It is quite some time ago, yes. Though, it remains an active
-    18.01s  user  발화 끝
-    24.90s  user  발화 시작: monitored closely? Like, are they expecting another eruption
-    25.11s  agent 발화 끝
-    29.24s  <ret> 발화 (turn5 첫 프레임)
-    29.46s  agent 발화 시작: <ret> Scientists currently assess Vesuvius’ eruption risk as
-    29.53s  user  발화 끝
-    31.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.93s]: Scientists currently assess Vesuvius’ eruption risk as moderate.
-    37.39s  agent 발화 끝
-    38.08s  user  발화 시작: moderate… hmmmm. So, not *imminent* then?
-    42.15s  agent 발화 시작: Not imminent, no. Moderate means they observe ongoing activi
-    42.24s  user  발화 끝
-    49.82s  user  발화 시작: okay, good. Good to know. Um… what about Pompeii?
-    50.03s  agent 발화 끝
-    53.09s  <ret> 발화 (turn9 첫 프레임)
-    53.15s  agent 발화 시작: <ret> Pompeii was largely destroyed by the eruption of Mount
-    53.38s  user  발화 끝
-    54.45s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.67s]: Pompeii was largely destroyed by the eruption of Mount Vesuvius in sev
-    61.74s  user  발화 시작: yeah, I’ve seen pictures. It’s… incredible, really.
-    61.82s  agent 발화 끝
-    64.64s  agent 발화 시작: It is a poignant reminder of nature’s power, isn’t it? And t
-    64.69s  user  발화 끝
-    66.85s  user  발화 시작: Yeah.
-    67.39s  user  발화 끝
-    70.40s  agent 발화 시작: Thinking about career paths, sometimes acknowledging those k
-    70.43s  agent 발화 끝
-    77.11s  user  발화 시작: Yeah.
-    77.70s  user  발화 끝
-    80.13s  agent 발화 끝
-    80.98s  user  발화 시작: that’s… a really interesting point. I hadn’t thought of it l
-    85.39s  agent 발화 시작: Sometimes, reframing things can offer a fresh perspective. I
-    85.42s  user  발화 끝
-    92.28s  user  발화 시작: welll… I’m actually feeling pretty stressed about a job inte
-    92.34s  agent 발화 끝
-    96.81s  agent 발화 시작: Job interviews can certainly be stressful. What specifically
-    96.86s  user  발화 끝
-   103.44s  agent 발화 끝
-   104.42s  user  발화 시작: I’m just worried I’ll freeze up…
-   106.36s  user  발화 끝
-   108.44s  user  발화 시작: …and forget everything I want to say.
-   110.52s  user  발화 끝
-   110.64s  agent 발화 시작: That’s a very common fear. Have you practiced answering pote
-   113.90s  user  발화 시작: Right.
-   114.54s  user  발화 끝
-   115.51s  user  발화 시작: I’ve tried, but it feels so… awkward.
-   115.74s  agent 발화 끝
-   117.84s  <ret> 발화 (turn24 첫 프레임)
-   118.00s  agent 발화 시작: <ret> Practicing with a friend or mentor can help reduce int
-   118.05s  user  발화 끝
-   119.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: Practicing with a friend or mentor can help reduce interview anxiety.
-   120.41s  user  발화 시작: Uh-huh.
-   120.91s  user  발화 끝
-   125.13s  agent 발화 끝
-   126.60s  user  발화 시작: maybe. I guess I could ask my sister.
-   129.01s  agent 발화 시작: That's a great idea! A supportive friend or family member ca
-   129.23s  user  발화 끝
-   130.72s  user  발화 시작: Yeah.
-   131.21s  user  발화 끝
-   134.48s  user  발화 시작: do you… have any other suggestions?
-   134.61s  agent 발화 끝
-   136.60s  <ret> 발화 (turn30 첫 프레임)
-   136.77s  agent 발화 시작: <ret> Deep breathing exercises can help calm nerves before a
-   136.97s  user  발화 끝
-   137.72s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.95s]: Deep breathing exercises can help calm nerves before an interview.
-   139.59s  user  발화 시작: Right.
-   140.18s  user  발화 끝
-   143.72s  agent 발화 끝
-   144.01s  user  발화 시작: oh. I’ve heard of that.
-   146.27s  user  발화 끝
-   146.33s  agent 발화 시작: It’s worth a try! Even a few minutes of focused breathing ca
-   151.96s  user  발화 시작: yeah, I suppose so. Thanks, Bena.
-   152.07s  agent 발화 끝
-   154.83s  user  발화 끝
-   154.91s  agent 발화 시작: You’re very welcome. Remember to be kind to yourself—you’ve 
-   159.71s  user  발화 시작: I'll try.
-   159.72s  agent 발화 끝
-   160.44s  agent 발화 시작: Good. I have faith in you. Enjoy your preparation, and remem
-   160.53s  user  발화 끝
-   165.11s  agent 발화 끝
+     0.00s  user  발화 시작: Um, I was reading about Italy, and… when did Vesuvius last e
+     4.92s  <ret> 발화 (turn1 첫 프레임)
+     5.16s  agent 발화 시작: <ret> Mount Vesuvius last erupted in March of nineteen forty
+     5.32s  user  발화 끝
+     6.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: Mount Vesuvius last erupted in March of nineteen forty-four.
+    12.53s  agent 발화 끝
+    12.55s  user  발화 시작: Wow, nineteen forty-four… that’s a long time ago.
+    17.13s  agent 발화 시작: It is quite a while ago, yes. Though it remains an active vo
+    17.23s  user  발화 끝
+    24.01s  user  발화 시작: Is it… is it likely to erupt again soon?
+    24.19s  agent 발화 끝
+    26.64s  <ret> 발화 (turn5 첫 프레임)
+    26.86s  agent 발화 시작: <ret> Scientists currently assess Vesuvius as a moderate thr
+    26.96s  user  발화 끝
+    28.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: Scientists currently assess Vesuvius as a moderate threat.
+    33.71s  agent 발화 끝
+    34.44s  user  발화 시작: A moderate threat… hmmm. What does that even *mean* exactly?
+    38.89s  agent 발화 시작: A moderate threat means an eruption isn’t imminent, but it's
+    39.02s  user  발화 끝
+    44.49s  user  발화 시작: Okay… so, what kind of preparations?
+    44.68s  agent 발화 끝
+    47.29s  <ret> 발화 (turn9 첫 프레임)
+    47.35s  agent 발화 시작: <ret> Italy has a national plan for volcanic risk management
+    47.59s  user  발화 끝
+    48.65s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.73s]: Italy has a national plan for volcanic risk management.
+    55.00s  user  발화 시작: Evacuation routes… that sounds scary.
+    55.08s  agent 발화 끝
+    57.88s  agent 발화 시작: It’s responsible planning, really. Being prepared helps mini
+    57.91s  user  발화 끝
+    60.05s  user  발화 시작: Yeah.
+    60.53s  user  발화 끝
+    63.65s  agent 발화 시작: It’s similar to having a fire drill, just on a larger scale.
+    63.68s  agent 발화 끝
+    69.23s  user  발화 시작: Yeah.
+    69.72s  user  발화 끝
+    71.80s  agent 발화 끝
+    72.65s  user  발화 시작: Welll… I’m planning a trip to Naples next year.
+    75.63s  <ret> 발화 (turn16 첫 프레임)
+    75.71s  agent 발화 시작: <ret> Naples is located approximately nine kilometers from M
+    75.84s  user  발화 끝
+    77.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: Naples is located approximately nine kilometers from Mount Vesuvius.
+    83.34s  user  발화 시작: Nine kilometers… that’s… not that far, is it?
+    83.35s  agent 발화 끝
+    86.74s  agent 발화 시작: Relatively speaking, no, it's quite close. But the city is w
+    86.85s  user  발화 끝
+    92.25s  agent 발화 끝
+    93.39s  user  발화 시작: But what if it erupts *while* I’m there?
+    95.94s  agent 발화 시작: That’s a natural concern. The monitoring systems are quite a
+    95.98s  user  발화 끝
+   100.93s  user  발화 시작: Right.
+   101.56s  user  발화 끝
+   103.55s  agent 발화 끝
+   103.62s  user  발화 시작: Alerts… so I’d have time to leave?
+   105.62s  <ret> 발화 (turn23 첫 프레임)
+   106.00s  agent 발화 시작: <ret> Italy’s alert system has four color codes: green, yell
+   106.21s  user  발화 끝
+   107.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: Italy’s alert system has four color codes: green, yellow, orange, and 
+   108.56s  user  발화 시작: Uh-huh.
+   109.19s  user  발화 끝
+   113.55s  agent 발화 끝
+   115.55s  user  발화 시작: Green, yellow, orange, red… okay. What does orange mean?
+   119.84s  user  발화 끝
+   120.13s  agent 발화 시작: Orange indicates an eruption is probable within days or week
+   122.03s  user  발화 시작: Yeah.
+   122.53s  user  발화 끝
+   126.38s  agent 발화 끝
+   126.78s  user  발화 시작: Oh. Okay. That’s… good to know.
+   129.61s  agent 발화 시작: It is reassuring to understand the system, isn't it? It allo
+   129.74s  user  발화 끝
+   131.70s  user  발화 시작: Right.
+   132.33s  user  발화 끝
+   134.79s  agent 발화 끝
+   135.75s  user  발화 시작: Yeah. I guess so. Um… what’s the weather like in Naples righ
+   139.94s  <ret> 발화 (turn32 첫 프레임)
+   140.25s  agent 발화 시작: <ret> The weather in Naples is currently twenty-eight point 
+   140.38s  user  발화 끝
+   141.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.79s]: (tool result) 28.0°C, humidity 62%, wind 7.2 km/h
+   149.88s  user  발화 시작: Twenty-eight degrees… sounds nice.
+   150.04s  agent 발화 끝
+   152.25s  agent 발화 시작: It does sound quite pleasant, doesn't it? Perhaps a good tim
+   152.33s  user  발화 끝
+   156.58s  agent 발화 끝

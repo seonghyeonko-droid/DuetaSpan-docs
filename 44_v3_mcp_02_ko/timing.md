@@ -68,55 +68,59 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 오늘 날씨 어때요? | S2 흐음… | S3 레이크사이드 부산 호텔로 예약해 주세요. | S4 열시 삼십분 버스로 예약해 주세요.
+# EXAMINER(FDB-v2) 단계: S1 오늘 서울 날씨 어때요? | S2 부산은 서울보다 조금 더 덥겠네요. | S3 와, 정말 고마워요. | S4 메가박스 해운대까지 가는 길 좀 알려줘.
 
-     0.00s  user  발화 시작: 오늘 날씨 어때요?
-     0.81s  <ret> 발화 (turn1 첫 프레임)
-     1.20s  agent 발화 시작: <ret> 현재 기온은 섭씨 이십삼 점 영도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다. 쾌
-     1.37s  user  발화 끝
-     2.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: 23.0°C, humidity 74%, wind 5.5 km/h
-    10.81s  user  발화 시작: 그럼 서울 날씨는요?
-    10.89s  agent 발화 끝
-    11.98s  <ret> 발화 (turn3 첫 프레임)
-    12.38s  agent 발화 시작: <ret> 서울 날씨를 알려드릴게요. 서울의 현재 기온은 섭씨 이십오 점 영도이고, 습도는 육십팔%, 바람은
-    12.46s  user  발화 끝
-    12.48s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.60s]: 25.0°C, humidity 68%, wind 3.2 km/h
-    19.56s  user  발화 시작: 네.
-    20.19s  user  발화 끝
-    23.60s  agent 발화 끝
-    23.80s  user  발화 시작: 흐음…
-    24.25s  user  발화 끝
-    24.30s  agent 발화 시작: 혹시 다른 지역의 날씨도 확인해 드릴까요?
-    25.19s  user  발화 시작: 네.
-    25.59s  user  발화 끝
-    26.61s  agent 발화 끝
-    27.50s  user  발화 시작: 아니요, 됐어요. 이번 주말에 부산 갈 건데, 부산 호텔 예약 좀 도와주세요.
-    32.13s  user  발화 끝
-    32.18s  <ret> 발화 (turn9 첫 프레임)
-    32.34s  agent 발화 시작: <ret> 이번 주말 부산 호텔 예약을 도와드리겠습니다. 부산 호텔 검색 결과, 레이크사이드 부산 호텔은 별
-    33.78s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.73s]: (tool result) Hotel Lakeside Busan, 4.5 stars, from ₩150,000 per night
-    52.39s  agent 발화 끝
-    52.70s  user  발화 시작: 레이크사이드 부산 호텔로 예약해 주세요.
-    55.24s  <ret> 발화 (turn11 첫 프레임)
-    55.32s  agent 발화 시작: <ret> 레이크사이드 부산 호텔로 예약을 진행하겠습니다. 레이크사이드 부산 호텔 예약이 완료되었습니다. 이
-    55.43s  user  발화 끝
-    57.16s  ⚡SPAN 주입 [d'=1.92s / d_lead=3.09s]: (tool result) Reservation confirmed, Hotel Lakeside Busan, 2 guests, c
-    62.59s  user  발화 시작: 와.
-    62.99s  user  발화 끝
-    70.17s  agent 발화 끝
-    70.27s  user  발화 시작: 감사합니다. 혹시 부산역에서 호텔까지 가는 버스 시간표도 알아봐 주실 수 있나요?
-    75.27s  <ret> 발화 (turn14 첫 프레임)
-    75.50s  agent 발화 시작: <ret> 백일번 버스는 열시, 열시 삼십분, 열한시, 열한시 삼십분에 출발하고, 백이십삼번 버스는 열시 십
-    75.81s  user  발화 끝
-    77.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.66s]: (tool result) Bus 101, departs 10:00, 10:30, 11:00, 11:30; Bus 123, de
-    92.15s  agent 발화 끝
-    93.43s  user  발화 시작: 열시 삼십분 버스로 예약해 주세요.
-    95.89s  agent 발화 시작: 죄송하지만, 버스 티켓은 직접 구매하셔야 합니다. 예약 기능은 제공되지 않습니다. 대신, 버스 시간표를 다시
-    95.92s  user  발화 끝
-   101.72s  user  발화 시작: 네네.
-   102.54s  user  발화 끝
-   104.47s  agent 발화 끝
-   105.14s  user  발화 시작: 아니요, 괜찮아요. 그럼 그만 할게요.
-   108.00s  agent 발화 시작: 네, 알겠습니다. 즐거운 여행 되세요.
-   108.10s  user  발화 끝
-   111.05s  agent 발화 끝
+     0.00s  user  발화 시작: 오늘 서울 날씨 어때요?
+     1.24s  <ret> 발화 (turn1 첫 프레임)
+     1.64s  agent 발화 시작: <ret> 서울은 현재 기온이 이십삼 점 영도이고, 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
+     1.79s  user  발화 끝
+     3.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+     8.46s  user  발화 시작: 아, 네.
+     8.58s  agent 발화 끝
+     9.09s  user  발화 끝
+     9.28s  agent 발화 시작: 날씨가 꽤 쾌적하네요. 혹시 다른 지역 날씨도 알아봐 드릴까요?
+    11.02s  user  발화 시작: 네네.
+    11.66s  user  발화 끝
+    13.49s  agent 발화 끝
+    13.70s  user  발화 시작: 그럼, 내일 부산 날씨도 알려주세요.
+    15.62s  <ret> 발화 (turn6 첫 프레임)
+    16.02s  agent 발화 시작: <ret> 내일 부산은 기온이 이십오 점 영도이고 습도는 육십팔%, 바람은 시속 칠 점 영킬로미터로 예상됩니
+    16.12s  user  발화 끝
+    16.98s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.86s]: (tool result) 25.0°C, humidity 68%, wind 7.0 km/h
+    22.88s  agent 발화 끝
+    24.08s  user  발화 시작: 부산은 서울보다 조금 더 덥겠네요.
+    26.52s  agent 발화 시작: 네, 그렇습니다. 부산은 서울보다 조금 더 따뜻할 것으로 보입니다. 혹시 여행 계획이 있으신가요?
+    26.66s  user  발화 끝
+    28.96s  user  발화 시작: 네.
+    29.36s  user  발화 끝
+    32.63s  agent 발화 끝
+    33.19s  user  발화 시작: 다음 주 금요일에 부산 가는 기차표 예매해 줄 수 있어요?
+    36.11s  <ret> 발화 (turn11 첫 프레임)
+    36.35s  agent 발화 시작: <ret> 다음 주 금요일 서울에서 부산 가는 기차표를 예매했습니다. 오후 두시 삼십분 KTX, 좌석은 십오
+    36.41s  user  발화 끝
+    37.47s  ⚡SPAN 주입 [d'=1.36s / d_lead=11.73s]: (tool result) Seoul to Busan, next Friday, 14:30, KTX, ₩59800, seat 15
+    48.08s  agent 발화 끝
+    48.67s  user  발화 시작: 와, 정말 고마워요.
+    50.25s  agent 발화 시작: 천만에요. 도움이 되어 기쁩니다. 혹시 부산에서 할 만한 일도 찾아볼까요?
+    50.28s  user  발화 끝
+    52.59s  user  발화 시작: 네.
+    53.08s  user  발화 끝
+    56.27s  agent 발화 끝
+    57.28s  user  발화 시작: 음… 부산에 볼만한 영화관 좀 찾아줘.
+    59.82s  <ret> 발화 (turn16 첫 프레임)
+    60.13s  user  발화 끝
+    60.22s  agent 발화 시작: <ret> 부산에서 영화관은 해운대 메가박스가 일 점 이킬로미터, 롯데시네마 부산이 이 점 오킬로미터, CG
+    61.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: (tool result) Busan, Haeundae, Megabox Haeundae (1.2km), Lotte Cinema 
+    65.91s  user  발화 시작: 네.
+    66.17s  user  발화 끝
+    68.61s  agent 발화 끝
+    69.52s  user  발화 시작: 메가박스 해운대까지 가는 길 좀 알려줘.
+    71.80s  <ret> 발화 (turn19 첫 프레임)
+    72.20s  agent 발화 시작: <ret> 부산에서 메가박스 해운대까지 자동차로 이십분, 십이 점 오킬로미터입니다.
+    72.43s  user  발화 끝
+    73.08s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.92s]: (tool result) Busan to Megabox Haeundae, driving, 20 minutes, 12.5 km
+    78.13s  agent 발화 끝
+    78.58s  user  발화 시작: 알겠어요. 감사합니다.
+    79.97s  agent 발화 시작: 네, 천만에요. 즐거운 여행 되세요.
+    80.05s  user  발화 끝
+    82.88s  agent 발화 끝

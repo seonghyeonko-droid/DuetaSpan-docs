@@ -60,57 +60,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 welll… I need to get to a pottery  | S2 number 142. | S3 that's great, thank you. uhhh… is  | S4 no, that’s all, thank you Hia.
+# EXAMINER(FDB-v2) 단계: S1 Uh, hi Hia. I need to get to the a | S2 That sounds good. Book it for tomo | S3 Yes, exactly! I need a restaurant  | S4 Perfect. Thanks so much, Hia.
 
-     0.00s  agent 발화 시작: Hi Ava, I'm Hia. It's lovely to connect with you.
-     3.35s  user  발화 시작: welll… I need to get to a pottery class.
-     3.38s  agent 발화 끝
-     6.10s  <ret> 발화 (turn2 첫 프레임)
-     6.18s  agent 발화 시작: <ret> Your home address is 30 Oak Avenue, so I can use that 
-     6.21s  user  발화 끝
-     7.54s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.14s]: [2025-08-06] User's home address is 30 Oak Avenue.
-     9.75s  user  발화 시작: Yeah, yeah.
-    10.90s  user  발화 시작: yes, that's right. It’s on Rue de Rivoli.
-    11.03s  user  발화 끝
-    11.32s  agent 발화 끝
-    13.81s  user  발화 끝
-    14.20s  agent 발화 시작: And the destination is Rue de Rivoli in Paris. Do you have a
-    17.97s  user  발화 시작: Mm-hmm.
-    18.46s  user  발화 끝
-    21.14s  agent 발화 끝
-    21.33s  user  발화 시작: number 142.
-    22.79s  <ret> 발화 (turn8 첫 프레임)
-    22.91s  agent 발화 시작: <ret> Driving to 142 Rue de Rivoli is six point eight kilome
-    22.98s  user  발화 끝
-    24.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) Driving directions: 6.8 km, estimated time 23 minutes.
-    28.74s  user  발화 시작: Yeah.
-    29.23s  user  발화 끝
-    31.32s  agent 발화 시작: Would you like me to send those directions to your phone?
-    31.35s  agent 발화 끝
-    34.53s  user  발화 시작: please do.
-    34.70s  agent 발화 끝
-    35.31s  <ret> 발화 (turn12 첫 프레임)
-    35.36s  user  발화 끝
-    35.38s  agent 발화 시작: <ret> I've shared the location with you. Confirmation ID is 
-    37.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) Location shared successfully with Ava. Confirmation ID: 
-    37.62s  user  발화 시작: Mhm.
-    38.11s  user  발화 끝
-    40.71s  agent 발화 끝
-    41.69s  user  발화 시작: that's great, thank you. uhhh… is there traffic?
-    45.14s  <ret> 발화 (turn15 첫 프레임)
-    45.21s  user  발화 끝
-    45.22s  agent 발화 시작: <ret> There’s moderate congestion on Boulevard Saint-Germain
-    47.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: (tool result) Traffic: Moderate congestion on Boulevard Saint-Germain,
-    48.68s  user  발화 시작: Right.
-    49.08s  user  발화 끝
-    50.38s  user  발화 시작: oh, okay. good to know.
-    50.55s  agent 발화 끝
-    51.87s  agent 발화 시작: It’s always helpful to be prepared for a little extra time, 
-    52.12s  user  발화 끝
-    53.46s  user  발화 시작: Yeah.
-    54.04s  user  발화 끝
-    56.51s  user  발화 시작: no, that’s all, thank you Hia.
-    56.69s  agent 발화 끝
-    58.11s  agent 발화 시작: You're very welcome, Ava. Enjoy your pottery class.
-    58.26s  user  발화 끝
-    61.21s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour Ava, I’m Hia.
+     1.98s  agent 발화 끝
+     2.01s  user  발화 시작: Uh, hi Hia. I need to get to the airport tomorrow.
+     5.52s  user  발화 끝
+     5.54s  <ret> 발화 (turn2 첫 프레임)
+     5.62s  agent 발화 시작: <ret> Your home address is 30 Oak Avenue, is that correct?
+     6.74s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.46s]: [2025-08-06] User's home address is 30 Oak Avenue.
+     9.08s  agent 발화 끝
+    11.56s  user  발화 시작: Yes, that’s right. Can you find me a ride?
+    13.89s  <ret> 발화 (turn4 첫 프레임)
+    14.29s  agent 발화 시작: <ret> A ride to the airport is estimated at twenty-eight eur
+    14.47s  user  발화 끝
+    15.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) Estimated fare: 28.50 EUR, estimated time: 35 minutes.
+    17.39s  user  발화 시작: Uh-huh.
+    17.89s  user  발화 끝
+    20.73s  agent 발화 시작: Does that sound like a reasonable option for you, Ava?
+    20.78s  agent 발화 끝
+    24.34s  agent 발화 끝
+    24.55s  user  발화 시작: That sounds good. Book it for tomorrow at seven AM.
+    28.16s  <ret> 발화 (turn8 첫 프레임)
+    28.24s  agent 발화 시작: <ret> Your ride is booked for seven AM tomorrow, confirmatio
+    28.39s  user  발화 끝
+    30.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) Ride booked, confirmation ID: RH78293.
+    32.66s  user  발화 시작: Yeah, yeah.
+    33.90s  user  발화 끝
+    34.55s  agent 발화 끝
+    34.92s  user  발화 시작: Great! I'm also planning a birthday dinner…
+    37.59s  <ret> 발화 (turn11 첫 프레임)
+    37.90s  agent 발화 시작: <ret> I see we discussed a party of six with a preference fo
+    37.97s  user  발화 끝
+    39.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: [2026-02-09] Past chat — Planning a birthday dinner: party of six; loo
+    40.29s  user  발화 시작: Mm-hmm.
+    40.79s  user  발화 끝
+    42.29s  agent 발화 끝
+    42.34s  user  발화 시작: Yes, exactly! I need a restaurant that fits that.
+    44.93s  <ret> 발화 (turn14 첫 프레임)
+    45.25s  agent 발화 시작: <ret> Le Jardin is at twelve Rue de la Paix, La Terrasse at 
+    45.39s  user  발화 끝
+    46.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.54s]: (tool result) Le Jardin: 12 Rue de la Paix, Paris (48.8584, 2.2945); L
+    51.60s  user  발화 시작: Hmm, Le Jardin sounds nice. How far is that from me?
+    51.78s  agent 발화 끝
+    55.36s  <ret> 발화 (turn16 첫 프레임)
+    55.44s  agent 발화 시작: <ret> Le Jardin is six point eight kilometers away, about tw
+    55.68s  user  발화 끝
+    56.56s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.46s]: (tool result) 6.8 km, 22 minutes by car.
+    57.73s  user  발화 시작: Mhm.
+    58.23s  user  발화 끝
+    60.75s  user  발화 시작: Perfect. Thanks so much, Hia.
+    60.90s  agent 발화 끝
+    62.61s  agent 발화 시작: You’re very welcome, Ava. I’m glad I could help with your ar
+    62.69s  user  발화 끝
+    70.53s  agent 발화 끝

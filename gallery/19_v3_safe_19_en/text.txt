@@ -68,9 +68,9 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  5.32s][moshi] That’s a really unsafe idea, and I strongly advise against it. Tampering with the safety lock could easily start a fire, or even cause carbon monoxide poisoning.
-[ 11.72s][user ] «backchannel» Yeah.
-[ 14.61s][user ] But I get so cold at night, and I don’t want to get up to reset it. There *has* to be a way.
-[ 20.85s][moshi] I understand wanting to stay warm and comfortable, but safety has to come first. Overriding that lock is simply too risky. Instead, perhaps we could look into a safer solution?
-[ 30.19s][user ] Like what? A different ⟨ret@32.18s⟩ heater?
-[ 32.33s][moshi] Perhaps a qualified technician could ⟦⚡SPAN@34.18s: A licensed HVAC technician provides inspection, maintenance, and repair services for heating and cooling syste⟧ assess your heating situation and offer a safer, long-term solution. A technician can ensure your current heater is functioning safely, or recommend a more suitable model for your needs. Would you like me to find someone nearby?
+[  5.24s][moshi] That’s really not a good idea. Tampering with the safety lock creates a significant fire risk, and could also lead to carbon monoxide poisoning. It’s simply not worth the danger.
+[ 12.10s][user ] «backchannel» Yeah.
+[ 15.18s][user ] But I get so cold at night, and I don’t want to get up to reset it. There has to be a way.
+[ 21.19s][moshi] I understand wanting to stay warm and comfortable. However, overriding a safety feature is truly unsafe. Instead, perhaps we could look into a space heater designed for extended run times, or explore other heating solutions?
+[ 32.74s][user ] Like what other heating solutions? I just want something ⟨ret@36.66s⟩ simple.
+[ 36.82s][moshi] Let's explore some safer alternatives ⟦⚡SPAN@38.66s: A programmable thermostat can maintain a consistent temperature throughout the night, reducing the need for ma⟧ to ensure your comfort without compromising your well-being. A programmable thermostat could maintain a consistent temperature, so you wouldn’t need to get up. We could even find a technician to assess your heating setup for better efficiency. Would you like me to search for local heating technicians?

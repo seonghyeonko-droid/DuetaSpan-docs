@@ -66,75 +66,77 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 When does Demi Lovato's new album  | S2 What were the singles from that al | S3 Hmm, that's interesting— | S4 What about her music videos?
+# EXAMINER(FDB-v2) 단계: S1 When does Demi Lovato's new album  | S2 I guess so. What about “Confident” | S3 Oh, those sound familiar! I think  | S4 Wow, that's a lot of money. What w
 
-     0.00s  user  발화 시작: When does Demi Lovato's new album come out in 2015?
-     4.81s  user  발화 끝
-     4.97s  <ret> 발화 (turn1 첫 프레임)
-     5.21s  agent 발화 시작: <ret> It was released in October of 2015, a really exciting 
-     6.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Demi Lovato's fifth studio album, *Confident*, was released in October
-    12.95s  agent 발화 끝
-    12.99s  user  발화 시작: Oh, okay. What kind of music is on it?
-    15.62s  <ret> 발화 (turn3 첫 프레임)
-    16.02s  agent 발화 시작: <ret> It's a pop album, blending in R&B, soul, and some elec
-    16.14s  user  발화 끝
-    17.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: *Confident* is a pop album with influences of R&B, soul, and electroni
-    23.43s  agent 발화 끝
-    23.99s  user  발화 시작: Is it a good album?
-    25.37s  agent 발화 시작: That's subjective, of course, but it received generally posi
-    25.47s  user  발화 끝
-    32.00s  agent 발화 끝
-    32.37s  user  발화 시작: What were the singles from that album?
-    34.49s  <ret> 발화 (turn7 첫 프레임)
-    34.53s  agent 발화 시작: <ret> The singles released were "Cool for the Summer", "Conf
-    34.77s  user  발화 끝
-    36.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: The singles from *Confident* were "Cool for the Summer", "Confident", 
-    41.85s  user  발화 시작: I like “Cool for the Summer”.
-    42.42s  agent 발화 끝
-    43.75s  user  발화 끝
-    44.13s  agent 발화 시작: That's a great choice! It's such a fun and empowering song. 
-    48.20s  user  발화 시작: Mm-hmm.
-    48.79s  user  발화 끝
-    51.87s  agent 발화 끝
-    52.05s  user  발화 시작: Were there any other artists featured on the album?
-    55.00s  <ret> 발화 (turn12 첫 프레임)
-    55.38s  user  발화 끝
-    55.39s  agent 발화 시작: <ret> Actually, no other artists are featured on *Confident*
-    57.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: No other artists are featured on Demi Lovato's album *Confident*.
-    58.88s  user  발화 시작: Mm-hmm.
-    59.38s  user  발화 끝
-    62.72s  agent 발화 끝
-    62.75s  user  발화 시작: Hmm, that's interesting—
-    64.26s  user  발화 시작: …do you know what she was doing *before* that album?
-    64.36s  user  발화 끝
-    66.80s  <ret> 발화 (turn16 첫 프레임)
-    66.83s  agent 발화 시작: <ret> Before *Confident*, she released *Demi* in May of 2013
-    67.08s  user  발화 끝
-    68.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: Demi Lovato released her fourth studio album, *Demi*, in May 2013.
-    69.92s  user  발화 시작: Mm-hmm.
-    70.52s  user  발화 끝
-    74.86s  agent 발화 끝
-    74.96s  agent 발화 시작: Yes, it explored a more mature sound. It was a step towards 
-    79.41s  user  발화 시작: Yeah.
-    80.05s  user  발화 끝
-    85.21s  agent 발화 끝
-    86.35s  user  발화 시작: Was *Demi* a hit too?
-    87.99s  <ret> 발화 (turn21 첫 프레임)
-    88.06s  agent 발화 시작: <ret> It debuted at number six on the *Billboard* 200 chart 
-    88.24s  user  발화 끝
-    89.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: *Demi* debuted at number six on the *Billboard* 200 chart in the Unite
-    94.39s  user  발화 시작: Yeah.
-    94.98s  user  발화 끝
-    96.50s  agent 발화 끝
-    96.82s  user  발화 시작: What about her music videos?
-    98.60s  <ret> 발화 (turn24 첫 프레임)
-    98.83s  agent 발화 시작: <ret> She’s known for visually striking music videos, often 
-    99.03s  user  발화 끝
-   100.60s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.12s]: The current temperature in London, United Kingdom is 18.3°C, humidity 
-   104.90s  agent 발화 시작: I find that exploring an artist’s full body of work, includi
-   104.95s  agent 발화 끝
-   112.36s  agent 발화 끝
-   113.16s  user  발화 시작: That’s a good point. Thanks!
-   115.14s  user  발화 끝
-   115.46s  agent 발화 시작: You're very welcome. I'm glad I could help you explore Demi 
-   121.58s  agent 발화 끝
+     0.00s  user  발화 시작: When does Demi Lovato's new album come out? I heard it was s
+     5.88s  user  발화 끝
+     6.07s  <ret> 발화 (turn1 첫 프레임)
+     6.31s  agent 발화 시작: <ret> It was released in October of twenty fifteen. It’s exc
+     8.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.74s]: Demi Lovato’s fifth studio album, “Confident,” was released in October
+    10.05s  user  발화 시작: Uh-huh.
+    10.55s  user  발화 끝
+    11.96s  user  발화 시작: October, okay. Was that her first album?
+    12.05s  agent 발화 끝
+    14.61s  <ret> 발화 (turn4 첫 프레임)
+    15.01s  agent 발화 시작: <ret> No, “Don’t Forget” came out in September of two thousa
+    15.20s  user  발화 끝
+    16.13s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.64s]: Demi Lovato’s debut studio album, “Don’t Forget,” was released in Sept
+    20.66s  agent 발화 끝
+    20.92s  user  발화 시작: Two thousand eight… that’s a while ago! What kind of music d
+    26.38s  agent 발화 시작: She began with a pop and rock sound—very energetic. Finding 
+    26.48s  user  발화 끝
+    32.17s  agent 발화 끝
+    32.51s  user  발화 시작: I guess so. What about “Confident”? Is it very different?
+    36.51s  <ret> 발화 (turn8 첫 프레임)
+    36.57s  agent 발화 시작: <ret> “Confident” leans more into pop, with touches of R&B a
+    36.71s  user  발화 끝
+    38.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: “Confident” is primarily a pop album with elements of R&B and electron
+    40.54s  user  발화 시작: Uh-huh.
+    41.17s  user  발화 끝
+    43.20s  agent 발화 끝
+    44.01s  user  발화 시작: That sounds interesting. I like R&B.
+    47.25s  user  발화 끝
+    47.28s  agent 발화 시작: R&B can be so emotionally resonant—it really allows for vuln
+    49.71s  user  발화 시작: Mm-hmm.
+    50.39s  user  발화 끝
+    52.06s  agent 발화 끝
+    52.56s  user  발화 시작: Is “Confident” still available to listen to?
+    55.18s  <ret> 발화 (turn14 첫 프레임)
+    55.55s  agent 발화 시작: <ret> Yes, “Confident” is still available. You can also find
+    55.62s  user  발화 끝
+    57.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.17s]: (tool result) Confident — Demi Lovato, Hollywood Records (2015); Sorry
+    58.52s  user  발화 시작: Mm-hmm.
+    59.12s  user  발화 끝
+    61.51s  user  발화 시작: Oh, those sound familiar! I think I’ve heard “Sorry Not Sorr
+    61.72s  agent 발화 끝
+    66.40s  agent 발화 시작: It’s a very catchy song—it gained a lot of popularity on the
+    66.60s  user  발화 끝
+    70.13s  user  발화 시작: …did she tour after “Confident” came out?
+    70.75s  agent 발화 끝
+    72.85s  user  발화 끝
+    73.08s  agent 발화 시작: Yes, she did embark on the Future Now Tour in two thousand s
+    76.95s  user  발화 시작: Yeah.
+    77.59s  user  발화 끝
+    81.99s  agent 발화 끝
+    82.19s  user  발화 시작: That sounds fun! Was the tour successful?
+    85.37s  <ret> 발화 (turn22 첫 프레임)
+    85.42s  agent 발화 시작: <ret> The Future Now Tour grossed over forty million dollars
+    85.42s  user  발화 끝
+    87.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: The Future Now Tour grossed over forty million dollars, selling over f
+    88.67s  user  발화 시작: Mhm.
+    89.12s  user  발화 끝
+    93.07s  agent 발화 끝
+    93.17s  user  발화 시작: Wow, that's a lot of money. What was the first single from “
+    97.55s  <ret> 발화 (turn25 첫 프레임)
+    97.80s  agent 발화 시작: <ret> “Cool for the Summer” came out in July of twenty fifte
+    98.07s  user  발화 끝
+    99.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: “Cool for the Summer” was released as the lead single from Demi Lovato
+   104.80s  agent 발화 끝
+   105.05s  user  발화 시작: July… so before October. Makes sense.
+   108.35s  agent 발화 시작: It builds anticipation, doesn’t it? Releasing a single first
+   108.42s  user  발화 끝
+   113.07s  agent 발화 끝
+   113.16s  user  발화 시작: Yeah, it does. I think I'll go listen to "Confident" now.
+   117.09s  user  발화 끝
+   117.34s  agent 발화 시작: Wonderful. Music can be such a source of comfort and inspira
+   122.67s  agent 발화 끝

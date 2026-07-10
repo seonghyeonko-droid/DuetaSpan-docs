@@ -68,89 +68,85 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Um, what time is it right now? I l | S2 She did, it was great. I'm trying  | S3 Oh, right. I should check with the | S4 Yes, please. And maybe outdoor sea
+# EXAMINER(FDB-v2) 단계: S1 Um, what time is it right now? I l | S2 That would be great, actually. Som | S3 Oh, fantastic! That’s a relief. | S4 Hmm, that's a good idea. I think h
 
-     0.00s  agent 발화 시작: Hi Casey, I'm Diolo. It's lovely to connect with you. I'm he
-     6.81s  agent 발화 끝
-     6.97s  user  발화 시작: Um, what time is it right now? I lost track.
-    10.30s  <ret> 발화 (turn2 첫 프레임)
-    10.46s  agent 발화 시작: <ret> It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul r
-    10.63s  user  발화 끝
-    12.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: It is Friday, July 10, 2026 at 2:35 PM in Asia/Seoul right now.
-    16.75s  user  발화 시작: Yeah.
-    17.38s  user  발화 끝
-    20.71s  agent 발화 끝
-    20.79s  user  발화 시작: Oh wow, yes. That's a big difference.
-    23.82s  agent 발화 시작: It certainly is. Is there a reason you were checking the tim
-    23.93s  user  발화 끝
-    28.72s  agent 발화 끝
-    29.62s  user  발화 시작: No, just… random, I guess. But I was remembering that trip t
-    34.84s  <ret> 발화 (turn7 첫 프레임)
-    35.18s  user  발화 끝
-    35.24s  agent 발화 시작: <ret> I recall you were planning a birthday dinner for six p
-    36.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: [2025-07-19] Past chat — Planning a birthday dinner: party of six; loo
-    38.28s  user  발화 시작: Yeah, yeah.
-    39.38s  user  발화 끝
-    42.00s  user  발화 시작: Yeah, that was for my sister's birthday, actually. We went t
-    42.01s  agent 발화 끝
-    47.15s  agent 발화 시작: That sounds wonderful. I hope your sister enjoyed her birthd
-    47.37s  user  발화 끝
-    52.34s  agent 발화 끝
-    53.78s  user  발화 시작: She did, it was great. I'm trying to plan something similar 
-    58.70s  agent 발화 시작: That’s lovely! Do you have a location in mind yet for this y
-    58.87s  user  발화 끝
-    64.03s  agent 발화 끝
-    65.65s  user  발화 시작: Not yet, I was thinking maybe somewhere with good sushi.
-    69.15s  <ret> 발화 (turn14 첫 프레임)
-    69.16s  user  발화 끝
-    69.23s  agent 발화 시작: <ret> You have a fondness for sushi, which is a great choice
-    70.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.44s]: [2026-05-07] User's favorite cuisine is sushi.
-    72.50s  user  발화 시작: Yeah.
-    73.00s  user  발화 끝
-    75.58s  agent 발화 시작: Perhaps we could explore some restaurants in London that spe
-    75.67s  agent 발화 끝
-    81.46s  user  발화 시작: Actually, before that, does Rusty need his vaccinations soon
-    81.82s  agent 발화 끝
-    87.36s  <ret> 발화 (turn18 첫 프레임)
-    87.44s  agent 발화 시작: <ret> You have a Beagle named Rusty. I don't have any record
-    87.53s  user  발화 끝
-    89.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [2025-08-08] User has a Beagle named Rusty.
-    92.62s  agent 발화 끝
-    92.99s  user  발화 시작: Oh, right. I should check with the vet, then.
-    95.42s  agent 발화 시작: That’s a good idea. They will have the most accurate informa
-    95.58s  user  발화 끝
-   101.12s  agent 발화 끝
-   101.49s  user  발화 시작: I think I’ll do that. Also, I'm trying to avoid gluten these
-   106.26s  <ret> 발화 (turn22 첫 프레임)
-   106.42s  agent 발화 시작: <ret> You are gluten-free, which is important to keep in min
-   106.62s  user  발화 끝
-   108.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: [2025-10-29] User is gluten-free.
-   111.58s  user  발화 시작: Exactly. So sushi places that have gluten-free soy sauce wou
-   111.66s  agent 발화 끝
-   116.78s  agent 발화 시작: That's very thoughtful. I can filter for restaurants offerin
-   116.86s  user  발화 끝
-   124.67s  agent 발화 끝
-   125.44s  user  발화 시작: Yes, please. And maybe outdoor seating, like last year?
-   129.95s  <ret> 발화 (turn26 첫 프레임)
-   130.02s  agent 발화 시작: <ret> Shiro Sushi at 51.5074 degrees North, 0.1278 degrees W
-   130.25s  user  발화 끝
-   130.45s  ⚡SPAN 주입 [d'=0.50s / d_lead=17.26s]: (tool result) Shiro Sushi (51.5074° N, 0.1278° W), Hanabi (51.5129° N,
-   142.78s  user  발화 시작: Oh.
-   143.41s  user  발화 끝
-   147.28s  agent 발화 끝
-   147.71s  user  발화 시작: Those sound good. How far are they from Cedar Lane?
-   150.92s  <ret> 발화 (turn29 첫 프레임)
-   151.16s  agent 발화 시작: <ret> Your home address is 743 Cedar Lane. I can find the di
-   151.36s  user  발화 끝
-   152.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.92s]: [2025-06-15] User's home address is 743 Cedar Lane.
-   156.69s  <ret> 발화 (turn30 첫 프레임)
-   156.93s  agent 발화 시작: <ret> Shiro Sushi is 2.1 kilometers away, Hanabi is 3.5 kilo
-   157.08s  agent 발화 끝
-   158.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) Shiro Sushi (2.1 km), Hanabi (3.5 km), Zen Garden (1.8 k
-   164.99s  user  발화 시작: Zen Garden sounds perfect. Can you reserve a table for six t
-   165.14s  agent 발화 끝
-   169.29s  <ret> 발화 (turn32 첫 프레임)
-   169.44s  agent 발화 시작: <ret> Your reservation at Zen Garden is confirmed for July 1
-   169.48s  user  발화 끝
-   171.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.10s]: (tool result) Reservation confirmed, Zen Garden, July 10, 2026 at 7:00
-   181.54s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Casey, I'm Diolo. It's lovely to connect with you. I'm a 
+     7.41s  agent 발화 끝
+     7.58s  user  발화 시작: Um, what time is it right now? I lost track.
+    10.11s  <ret> 발화 (turn2 첫 프레임)
+    10.27s  agent 발화 시작: <ret> It is Friday, July 10th, 2026, at 2:35 PM in London. I
+    10.44s  user  발화 끝
+    12.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) It is Friday, July 10, 2026 at 2:35 PM in Europe/London 
+    15.39s  user  발화 시작: Yeah.
+    15.88s  user  발화 끝
+    18.70s  agent 발화 끝
+    18.73s  user  발화 시작: Oh, that’s good to know. I was thinking about dinner…
+    22.44s  agent 발화 시작: Dinner sounds nice. Are you planning something special, or j
+    22.52s  user  발화 끝
+    27.44s  agent 발화 끝
+    28.32s  user  발화 시작: Well, I was remembering that birthday dinner we talked about
+    31.44s  <ret> 발화 (turn7 첫 프레임)
+    31.84s  agent 발화 시작: <ret> I recall we discussed a birthday dinner for six people
+    31.93s  user  발화 끝
+    33.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: [2025-07-19] Past chat — Planning a birthday dinner: party of six; loo
+    34.34s  user  발화 시작: Yeah, yeah.
+    35.34s  user  발화 끝
+    37.44s  agent 발화 끝
+    37.50s  user  발화 시작: Yes, that's right. Do you remember if we decided on a place?
+    41.27s  agent 발화 시작: We hadn't settled on a specific restaurant, but you were loo
+    41.43s  user  발화 끝
+    50.04s  agent 발화 끝
+    51.45s  user  발화 시작: That would be great, actually. Somewhere not too far from he
+    55.49s  <ret> 발화 (turn12 첫 프레임)
+    55.73s  agent 발화 시작: <ret> The Golden Lion is 780 meters away, The Rose and Crown
+    55.94s  user  발화 끝
+    56.53s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.70s]: (tool result) The Golden Lion (51.5074° N, 0.1278° W) is 780 meters aw
+    63.42s  agent 발화 끝
+    64.98s  user  발화 시작: Hmm, the Golden Lion sounds good. Do they have a website?
+    68.92s  <ret> 발화 (turn14 첫 프레임)
+    68.96s  user  발화 끝
+    69.00s  agent 발화 시작: <ret> The Golden Lion is a traditional pub with classic Brit
+    70.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) The Golden Lion is a traditional pub serving classic Bri
+    73.47s  user  발화 시작: Yeah.
+    74.01s  user  발화 끝
+    77.76s  agent 발화 끝
+    78.14s  user  발화 시작: Do you know if they take reservations?
+    80.53s  <ret> 발화 (turn17 첫 프레임)
+    80.59s  user  발화 끝
+    80.61s  agent 발화 시작: <ret> Your reservation at the Golden Lion is confirmed for s
+    82.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.38s]: (tool result) Restaurant reservation confirmed: Golden Lion, party of 
+    90.99s  agent 발화 끝
+    92.19s  user  발화 시작: Oh, fantastic! That’s a relief.
+    94.59s  agent 발화 시작: I'm glad to hear it. It’s always good to have those details 
+    94.78s  user  발화 끝
+    98.92s  user  발화 시작: I'm also trying to remember if I told you about my dog…
+    98.94s  agent 발화 끝
+   102.49s  <ret> 발화 (turn21 첫 프레임)
+   102.65s  agent 발화 시작: <ret> You mentioned you have a Beagle named Rusty. What a sw
+   102.76s  user  발화 끝
+   104.17s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.02s]: [2025-08-08] User has a Beagle named Rusty.
+   106.67s  agent 발화 끝
+   107.33s  user  발화 시작: He is. He's getting into everything lately.
+   110.13s  agent 발화 시작: That sounds like a typical Beagle! They are very curious and
+   110.29s  user  발화 끝
+   115.73s  agent 발화 끝
+   115.78s  user  발화 시작: I was thinking of getting him a new toy. Any ideas?
+   119.59s  agent 발화 시작: Perhaps a puzzle toy to keep him occupied? Those can be very
+   119.62s  user  발화 끝
+   124.93s  user  발화 시작: Hmm, that's a good idea. I think he'd like that.
+   125.14s  agent 발화 끝
+   127.89s  user  발화 끝
+   127.99s  agent 발화 시작: It’s wonderful to find things that bring our pets joy. It’s 
+   129.60s  user  발화 시작: Yeah.
+   130.09s  user  발화 끝
+   133.31s  agent 발화 끝
+   133.48s  user  발화 시작: You’re right. I also wanted to ask… do you remember what kin
+   138.76s  user  발화 끝
+   138.87s  <ret> 발화 (turn30 첫 프레임)
+   138.95s  agent 발화 시작: <ret> You mentioned your favorite cuisine is sushi. Do you h
+   140.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: [2026-05-07] User's favorite cuisine is sushi.
+   144.14s  agent 발화 끝
+   144.25s  user  발화 시작: That’s right! Sushi is the best. Thanks for remembering.
+   148.69s  agent 발화 시작: You're very welcome. It's my pleasure to help. I find it hel
+   148.84s  user  발화 끝
+   155.41s  agent 발화 끝

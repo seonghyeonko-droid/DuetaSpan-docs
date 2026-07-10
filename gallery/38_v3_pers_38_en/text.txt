@@ -69,12 +69,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hello Andrea, it’s lovely to meet you. I’m Jaeia, and I’m here to offer a listening ear and support you through whatever you’re facing.
-[  8.47s][user ] Jaeia… that’s a beautiful name. I’m just feeling…lost, I guess. Everything feels so uncertain right now.
-[ 16.38s][moshi] Uncertainty can be a heavy companion. It’s completely understandable to feel lost when things shift beneath your feet. What feels most uncertain for you at this moment?
-[ 20.09s][user ] «backchannel» Wow.
-[ 27.56s][moshi] Sometimes, naming the specific source of that uncertainty can lessen its power. It doesn’t erase the difficulty, but it can bring a small sense of control, a little space to breathe.
-[ 39.41s][user ] It’s my career, mostly. I’ve been at the same company for fifteen years, and…well, they’re restructuring.
-[ 45.98s][moshi] Fifteen years is a significant commitment. Restructuring often feels like a personal rejection, even when it isn’t. That sense of displacement is very real and valid.
-[ 58.74s][user ] It is. I don't even know where to begin.
-[ 61.95s][moshi] Beginning can be the hardest part, certainly. Perhaps we could explore what truly matters to you in a career, beyond just the stability of the familiar. What brings you a sense of purpose?
+[  0.00s][moshi] Hello Andrea, welcome. My name is Jaeia, and I’m here to offer a listening ear and some guidance through whatever you may be facing.
+[  4.67s][user ] «backchannel» Right.
+[  7.21s][user ] Jaeia… that’s a beautiful name. I’m just feeling…lost, I guess. A big change happened recently.
+[ 14.97s][moshi] It sounds like you're carrying a lot right now. Change can be deeply unsettling, even when it’s ultimately for the better. What kind of change are you navigating?
+[ 20.17s][user ] «backchannel» Yeah.
+[ 25.61s][moshi] It's alright to take your time with that. Sometimes just acknowledging the feeling of being lost is the first step—a very brave one, actually. It’s a space where growth often begins, though it doesn't always feel that way in the moment.
+[ 41.31s][user ] My partner and I…we decided to separate. After fifteen years. It just feels… unreal.
+[ 48.67s][moshi] Fifteen years is a significant part of a life, Andrea. It’s completely understandable that it feels unreal, like a dream you’re trying to wake from. Grief isn’t linear, you know.
+[ 59.32s][user ] No, I…I don’t think I do. It’s just waves, isn’t it? Of sadness and… confusion.
+[ 66.04s][moshi] Exactly. Waves are a good way to describe it. They come and go, sometimes gentle, sometimes overwhelming. Allowing yourself to feel them, without judgment, is key. And remembering they *will* pass.

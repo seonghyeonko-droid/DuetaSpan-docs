@@ -63,31 +63,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 Could you open IMG_1234 for me? | S3 What time is it right now? | S4 That's great, thank you.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     4.43s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> I found three pictures from your France holiday in two
-     4.54s  user  발화 끝
-     6.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.92s]: (tool result) /Users/sunan/Pictures/France Holiday_2025/IMG_1234.jpg, 
-     9.64s  user  발화 시작: Uh-huh.
-    10.08s  user  발화 끝
-    16.33s  user  발화 시작: Could you open IMG_1234 for me?
-    16.43s  agent 발화 끝
-    19.14s  <ret> 발화 (turn4 첫 프레임)
-    19.30s  agent 발화 시작: <ret> I’ve opened IMG_1234 for you. It looks like a lovely s
-    19.47s  user  발화 끝
-    20.18s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.86s]: (tool result) File opened successfully.
-    21.33s  user  발화 시작: Yeah.
-    21.64s  user  발화 끝
-    24.16s  agent 발화 끝
-    24.88s  user  발화 시작: What time is it right now?
-    26.48s  <ret> 발화 (turn7 첫 프레임)
-    26.64s  agent 발화 시작: <ret> It is currently three seventeen PM in Seoul, on Friday
-    26.86s  user  발화 끝
-    28.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) It is Friday, July 10, 2026 at 3:17 PM in Asia/Seoul rig
-    33.27s  agent 발화 끝
-    33.51s  user  발화 시작: That's great, thank you.
-    34.51s  user  발화 끝
-    34.80s  agent 발화 시작: You’re very welcome. I’m glad I could help. Enjoy looking th
-    38.96s  agent 발화 끝
+     4.56s  <ret> 발화 (turn1 첫 프레임)
+     4.64s  agent 발화 시작: <ret> I found three pictures from your France holiday in 202
+     4.67s  user  발화 끝
+     6.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.67s]: (tool result) /Users/sunan/Pictures/FranceHoliday/2025/IMG_1234.jpg, /
+    10.94s  user  발화 시작: Uh-huh.
+    11.43s  user  발화 끝
+    19.12s  user  발화 시작: Can you open IMG_1234.jpg?
+    19.31s  agent 발화 끝
+    22.18s  <ret> 발화 (turn4 첫 프레임)
+    22.50s  agent 발화 시작: <ret> I’ve opened IMG_1234.jpg for you. It looks like a love
+    22.73s  user  발화 끝
+    23.21s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.44s]: (tool result) File opened successfully.
+    25.19s  user  발화 시작: Yeah.
+    25.64s  user  발화 끝
+    28.93s  agent 발화 끝
+    29.45s  user  발화 시작: That’s great, thanks!
+    30.71s  agent 발화 시작: You're very welcome. It's good to revisit happy memories, is
+    30.82s  user  발화 끝
+    34.55s  agent 발화 끝

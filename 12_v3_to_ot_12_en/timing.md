@@ -58,23 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who played the guitar  | S2 Wow, I didn’t realize it was him!  | S3 You won't believe who it was... | S4 So, Jal, do you have any tips for 
+# EXAMINER(FDB-v2) 단계: S1 Do you know who played the guitar  | S2 Hey, did you take the recycling ou | S3 Sorry, where were we? Oh right, gu | S4 Definitely. It’s amazing how he bl
 
-     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson’s 
-     5.34s  <ret> 발화 (turn1 첫 프레임)
-     5.55s  agent 발화 시작: <ret> That would be Eddie Van Halen, actually. A truly iconi
-     5.79s  user  발화 끝
-     7.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.80s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s song “B
-     9.73s  user  발화 시작: Yeah.
-    10.50s  user  발화 끝
-    11.18s  user  발화 시작: Wow, I didn’t realize it was him! That's amazing.
-    11.35s  agent 발화 끝
-    14.82s  user  발화 시작: You won't believe who it was...
-    14.93s  user  발화 끝
-    16.70s  user  발화 끝
-    18.20s  user  발화 시작: So, Jal, do you have any tips for dealing with a really stre
-    22.32s  <ret> 발화 (turn6 첫 프레임)
-    22.71s  agent 발화 시작: <ret> Deep, mindful breaths can really help calm things down
-    22.92s  user  발화 끝
-    24.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: Deep breathing exercises can help reduce stress and promote relaxation
-    28.03s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know who played the guitar solo on Michael Jackson's 
+     4.60s  <ret> 발화 (turn1 첫 프레임)
+     4.83s  agent 발화 시작: <ret> That was Eddie Van Halen, actually. He brought a reall
+     5.05s  user  발화 끝
+     6.39s  user  발화 시작: Okay.
+     6.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
+     7.03s  user  발화 끝
+     8.86s  user  발화 시작: Wow, I always forget it wasn't a session musician.
+     8.90s  agent 발화 끝
+    12.67s  agent 발화 시작: It’s easy to overlook individual contributions in a song lik
+    12.70s  user  발화 끝
+    17.59s  agent 발화 끝
+    18.98s  user  발화 시작: Hey, did you take the recycling out?
+    20.83s  user  발화 시작: Sorry, where were we? Oh right, guitarists.
+    20.91s  user  발화 끝
+    24.66s  user  발화 끝
+    24.73s  agent 발화 시작: We were talking about Eddie Van Halen and his incredible sol
+    30.27s  user  발화 시작: Definitely. It’s amazing how he blended rock with pop so sea
+    30.37s  agent 발화 끝
+    35.54s  user  발화 끝
+    35.91s  agent 발화 시작: It was a really innovative collaboration, and a defining mom
+    44.11s  agent 발화 끝

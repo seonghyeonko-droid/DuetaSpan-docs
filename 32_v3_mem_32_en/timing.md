@@ -59,25 +59,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to meet you. I’m a counse
-     5.32s  user  발화 시작: Yeah.
-     5.95s  user  발화 끝
-     7.01s  user  발화 시작: Well, uh, I was just remembering a trip I was planning a whi
-     7.05s  agent 발화 끝
-    10.61s  <ret> 발화 (turn3 첫 프레임)
-    10.69s  agent 발화 시작: <ret> You were planning a trip to Kyoto in March, is that ri
-    10.71s  user  발화 끝
-    12.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    15.36s  user  발화 시작: Mm-hmm.
-    15.99s  user  발화 끝
-    17.36s  user  발화 시작: Yes, Kyoto. I was thinking about it because I need to start 
-    17.36s  agent 발화 끝
-    23.62s  user  발화 끝
-    23.64s  agent 발화 시작: That sounds wonderful. Do you have any specific thoughts abo
-    31.11s  agent 발화 끝
-    31.68s  user  발화 시작: I’m into rock climbing, and I was hoping to find some good s
-    35.68s  <ret> 발화 (turn8 첫 프레임)
-    35.84s  agent 발화 시작: <ret> Ah, rock climbing! That's fantastic. Knowing you enjoy
-    35.97s  user  발화 끝
-    37.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: [2026-02-20] User is into rock climbing.
-    46.36s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour Manon, I'm Thunalo. It's lovely to connect with you.
+     2.62s  user  발화 시작: Yeah.
+     3.26s  user  발화 끝
+     3.59s  user  발화 시작: Uh, yeah, that’s right. I’m stuck on a painting, and it’s re
+     3.60s  agent 발화 끝
+     7.97s  <ret> 발화 (turn3 첫 프레임)
+     8.05s  agent 발화 시작: <ret> I hear that frustration, Manon. Perhaps recalling past
+     8.08s  user  발화 끝
+     9.49s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.02s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    16.00s  agent 발화 시작: You mentioned a trip to Kyoto in March of this year.
+    16.07s  agent 발화 끝
+    17.99s  user  발화 시작: Mm-hmm.
+    18.49s  user  발화 끝
+    18.97s  agent 발화 시작: Sometimes, simply revisiting the details of an anticipated e
+    19.05s  agent 발화 끝
+    28.06s  agent 발화 끝
+    28.09s  user  발화 시작: Welll… the gardens, I think. I’ve been looking at pictures, 
+    31.84s  user  발화 끝
+    31.86s  agent 발화 시작: The gardens sound beautiful. Visual inspiration is powerful.
+    41.42s  agent 발화 끝

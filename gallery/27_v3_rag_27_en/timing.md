@@ -60,43 +60,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Doon, could you tell me when Lux A | S2 That’s true. So, how old would he  | S3 …could you tell me where he's from | S4 Dark ambient… I’ll have to check t
+# EXAMINER(FDB-v2) 단계: S1 I'm trying to learn more about ele | S2 …about this Lux Aurunque guy. | S3 Nineteen seventy—wow, that's quite | S4 …did he release anything before th
 
-     0.00s  user  발화 시작: Doon, could you tell me when Lux Aurunque was born?
-     3.21s  <ret> 발화 (turn1 첫 프레임)
-     3.44s  agent 발화 시작: <ret> Lux Aurunque was born in nineteen seventy. It’s wonder
-     3.52s  user  발화 끝
-     5.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: Lux Aurunque was born in nineteen seventy.
-     6.80s  user  발화 시작: Yeah, yeah.
-     7.90s  user  발화 끝
-     9.60s  agent 발화 끝
-     9.64s  user  발화 시작: Nineteen seventy? That seems… early for the kind of music he
-    13.91s  <ret> 발화 (turn4 첫 프레임)
-    14.17s  user  발화 끝
-    14.22s  agent 발화 시작: <ret> His first album came out in two thousand and three. It
-    14.41s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.67s]: Lux Aurunque’s first album was released in two thousand and three.
-    16.39s  user  발화 시작: Mm-hmm.
-    16.89s  user  발화 끝
-    20.89s  agent 발화 끝
-    21.24s  user  발화 시작: That’s true. So, how old would he be now, roughly?
-    24.39s  agent 발화 시작: Let me quickly calculate that for you—
-    24.48s  user  발화 끝
-    26.93s  agent 발화 끝
-    28.21s  user  발화 시작: …actually, before you do that…
-    29.68s  user  발화 끝
-    31.38s  user  발화 시작: …could you tell me where he's from?
-    32.70s  <ret> 발화 (turn10 첫 프레임)
-    32.74s  agent 발화 시작: <ret> He’s originally from Rome, Italy. It's interesting to 
-    32.98s  user  발화 끝
-    34.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: Lux Aurunque is from Rome, Italy.
-    38.46s  user  발화 시작: Italy, that explains a lot! What genre does he work in?
-    38.66s  agent 발화 끝
-    43.15s  <ret> 발화 (turn12 첫 프레임)
-    43.21s  agent 발화 시작: <ret> He's known for dark ambient and experimental electroni
-    43.33s  user  발화 끝
-    45.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: Lux Aurunque is known for dark ambient and experimental electronic mus
-    50.72s  agent 발화 끝
-    51.63s  user  발화 시작: Dark ambient… I’ll have to check that out. Thank you, Doon.
-    55.42s  user  발화 끝
-    55.61s  agent 발화 시작: You’re very welcome. I'm glad I could assist you in explorin
-    61.22s  agent 발화 끝
+     0.00s  user  발화 시작: I'm trying to learn more about electronic music composers.
+     3.23s  user  발화 끝
+     3.35s  agent 발화 시작: That’s a fascinating area of study. It’s quite broad, though
+     7.62s  user  발화 시작: Yeah, yeah.
+     8.26s  user  발화 끝
+    11.13s  agent 발화 끝
+    11.16s  user  발화 시작: Hmm, well, I keep hearing…
+    13.32s  user  발화 끝
+    15.20s  user  발화 시작: …about this Lux Aurunque guy.
+    16.85s  <ret> 발화 (turn5 첫 프레임)
+    17.25s  agent 발화 시작: <ret> Lux Aurunque was born in Italy in nineteen seventy. He
+    17.37s  user  발화 끝
+    18.37s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.11s]: Lux Aurunque is an electronic musician born in 1970 in Italy.
+    20.77s  user  발화 시작: Uh-huh.
+    21.22s  user  발화 끝
+    23.14s  user  발화 시작: Nineteen seventy—wow, that's quite a while ago. What kind of
+    23.36s  agent 발화 끝
+    28.13s  agent 발화 시작: He began with relatively simple setups—analog synthesizers a
+    28.14s  user  발화 끝
+    33.12s  user  발화 시작: …did he release anything before the year two thousand?
+    34.01s  agent 발화 끝
+    35.79s  <ret> 발화 (turn10 첫 프레임)
+    35.84s  user  발화 끝
+    36.03s  agent 발화 시작: <ret> Yes, he did. Lux Aurunque released his first EP, “Nine
+    37.23s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.99s]: Lux Aurunque released his first EP, "Nine Secrets," in 1997.
+    47.02s  agent 발화 끝

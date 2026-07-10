@@ -63,23 +63,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was reading about government dep | S2 …and wondered—when was the Departm | S3 Nineteen thirty? That seems… recen | S4 Eighteen eighty-five… so, the name
+# EXAMINER(FDB-v2) 단계: S1 I was wondering, when did the Vete | S2 Nineteen thirty? That seems… late. | S3 So it wasn’t always called “Vetera | S4 Yes, it is. Thanks, Brunal.
 
-     0.00s  user  발화 시작: I was reading about government departments…
-     2.30s  user  발화 끝
-     3.62s  user  발화 시작: …and wondered—when was the Department of Veterans Affairs cr
-     6.49s  <ret> 발화 (turn2 첫 프레임)
-     6.81s  agent 발화 시작: <ret> The Department of Veterans Affairs was established on 
-     6.84s  user  발화 끝
-     7.85s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.78s]: The Department of Veterans Affairs was established on March 3, 1930.
-    14.59s  agent 발화 끝
-    15.69s  user  발화 시작: Nineteen thirty? That seems… recent. Didn’t it start as some
-    20.17s  <ret> 발화 (turn4 첫 프레임)
-    20.56s  agent 발화 시작: <ret> It actually began as the National Home for Disabled So
-    20.68s  user  발화 끝
-    22.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: It originated as the National Home for Disabled Soldiers and Sailors i
-    29.61s  agent 발화 끝
-    29.64s  user  발화 시작: Eighteen eighty-five… so, the name changed in nineteen thirt
-    38.46s  agent 발화 시작: It was originally intended to provide a home and care for Ci
-    38.50s  user  발화 끝
-    45.60s  agent 발화 끝
+     0.00s  user  발화 시작: I was wondering, when did the Veterans Affairs department ac
+     3.74s  <ret> 발화 (turn1 첫 프레임)
+     4.06s  agent 발화 시작: <ret> The Department of Veterans Affairs was established on 
+     4.20s  user  발화 끝
+     5.10s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.89s]: The United States Department of Veterans Affairs was established on Ma
+    12.95s  agent 발화 끝
+    13.51s  user  발화 시작: Nineteen thirty? That seems… late. Wasn't there something be
+    18.30s  <ret> 발화 (turn3 첫 프레임)
+    18.46s  user  발화 끝
+    18.70s  agent 발화 시작: <ret> It did evolve from the National Home for Disabled Sold
+    20.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: The Department of Veterans Affairs evolved from the National Home for 
+    27.08s  agent 발화 끝
+    27.09s  user  발화 시작: So it wasn’t always called “Veterans Affairs”, then? What *w
+    32.20s  <ret> 발화 (turn5 첫 프레임)
+    32.23s  user  발화 끝
+    32.60s  agent 발화 시작: <ret> Initially, it was the National Home for Disabled Soldi
+    34.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: The National Home for Disabled Soldiers and Sailors was initially esta
+    35.91s  user  발화 시작: Right.
+    36.31s  user  발화 끝
+    42.83s  user  발화 시작: Yes, it is. Thanks, Brunal.
+    42.86s  agent 발화 끝
+    44.48s  agent 발화 시작: You’re very welcome. I’m glad I could offer some clarity on 
+    44.58s  user  발화 끝
+    48.78s  agent 발화 끝

@@ -63,75 +63,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, tell me about Aria. | S3 I was also wondering. | S4 That’s a bit steep.
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Are there any good restaurants nea | S3 …is it expensive? | S4 Can you book a table there for fou
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     4.85s  <ret> 발화 (turn1 첫 프레임)
-     4.93s  agent 발화 시작: <ret> The Sydney Opera House is at latitude negative thirty-
-     5.00s  user  발화 끝
-     6.53s  ⚡SPAN 주입 [d'=1.68s / d_lead=11.69s]: (tool result) -33.8568, 151.2153
-     9.96s  user  발화 시작: Yeah.
-    10.69s  user  발화 끝
-    16.61s  agent 발화 끝
-    16.74s  user  발화 시작: And what's the weather like there right now?
-    19.20s  <ret> 발화 (turn4 첫 프레임)
-    19.43s  agent 발화 시작: <ret> Currently in Sydney, it's twenty-two point zero degree
-    19.46s  user  발화 끝
-    21.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.11s]: (tool result) 22.0°C, humidity 65%, wind 15.0 km/h
-    31.54s  agent 발화 끝
-    32.14s  user  발화 시작: Are there any good restaurants nearby?
-    34.39s  <ret> 발화 (turn6 첫 프레임)
-    34.47s  agent 발화 시작: <ret> Aria Restaurant is fifty-five meters away, Bennelong i
-    34.59s  user  발화 끝
-    36.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: (tool result) Aria Restaurant (55 meters), Bennelong (120 meters), Qua
-    45.37s  agent 발화 끝
-    47.08s  user  발화 시작: Hmm, tell me about Aria.
-    49.32s  <ret> 발화 (turn8 첫 프레임)
-    49.56s  agent 발화 시작: <ret> Aria Restaurant is located at one Macquarie Street, Sy
-    49.61s  user  발화 끝
-    50.92s  ⚡SPAN 주입 [d'=1.60s / d_lead=9.50s]: (tool result) Aria Restaurant, 1 Macquarie St, Sydney NSW 2000, Austra
-    56.15s  user  발화 시작: Yeah, totally.
-    57.58s  user  발화 끝
-    59.07s  agent 발화 끝
-    60.45s  user  발화 시작: That sounds nice. Could you book a table for two there tomor
-    65.26s  user  발화 끝
-    65.50s  agent 발화 시작: What time tomorrow evening would you prefer for your reserva
-    69.11s  agent 발화 끝
-    70.48s  user  발화 시작: Around seven pm, if possible.
-    72.99s  <ret> 발화 (turn13 첫 프레임)
-    73.02s  user  발화 끝
-    73.07s  agent 발화 시작: <ret> You are all set! I’ve booked a table for two at Aria R
-    74.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.62s]: (tool result) Aria Restaurant, 1 Macquarie St, Sydney, NSW 2000, Austr
-    77.43s  user  발화 시작: Yeah.
-    77.92s  user  발화 끝
-    83.59s  user  발화 시작: I was also wondering.
-    83.68s  agent 발화 끝
-    85.25s  user  발화 끝
-    85.70s  agent 발화 시작: I understand you were considering transport options—
-    87.92s  user  발화 시작: … Actually, can you find me some hotels near the Opera House
-    88.61s  agent 발화 끝
-    92.44s  <ret> 발화 (turn18 첫 프레임)
-    92.52s  agent 발화 시작: <ret> Park Hyatt Sydney is three hundred meters away, Pullma
-    92.69s  user  발화 끝
-    94.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.74s]: (tool result) Park Hyatt Sydney (300 meters), Pullman Quay Grand Sydne
-    95.84s  user  발화 시작: Mhm.
-    96.43s  user  발화 끝
-   102.26s  agent 발화 끝
-   102.70s  user  발화 시작: How much would a night at the Park Hyatt cost?
-   105.24s  <ret> 발화 (turn21 첫 프레임)
-   105.40s  agent 발화 시작: <ret> A night at the Park Hyatt Sydney starts from eight hun
+     4.03s  user  발화 끝
+     4.11s  <ret> 발화 (turn1 첫 프레임)
+     4.19s  agent 발화 시작: <ret> The Sydney Opera House is at thirty-three point eight 
+     5.79s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.66s]: (tool result) 33.8568° S, 151.2153° E
+     8.75s  user  발화 시작: Yeah.
+     9.20s  user  발화 끝
+    14.85s  agent 발화 끝
+    14.91s  user  발화 시작: And what's the weather…
+    16.98s  user  발화 끝
+    18.75s  user  발화 시작: …like there right now?
+    19.88s  <ret> 발화 (turn5 첫 프레임)
+    20.12s  agent 발화 시작: <ret> It is eighteen point zero degrees Celsius in Sydney, w
+    20.31s  user  발화 끝
+    21.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.02s]: (tool result) 18.0°C, humidity 62%, wind 11.2 km/h
+    30.14s  agent 발화 끝
+    30.21s  user  발화 시작: Are there any good restaurants nearby?
+    32.72s  <ret> 발화 (turn7 첫 프레임)
+    32.80s  agent 발화 시작: <ret> Aria Restaurant is five hundred meters away, Bennelong
+    32.93s  user  발화 끝
+    34.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.11s]: (tool result) Aria Restaurant (500 m), Bennelong (200 m), Quay (600 m)
+    42.91s  agent 발화 끝
+    43.59s  user  발화 시작: Tell me about Bennelong.
+    45.16s  <ret> 발화 (turn9 첫 프레임)
+    45.40s  agent 발화 시작: <ret> Bennelong is located inside the Sydney Opera House at 
+    45.43s  user  발화 끝
+    46.76s  ⚡SPAN 주입 [d'=1.60s / d_lead=9.32s]: (tool result) Bennelong, Sydney Opera House, Bennelong Point, Sydney N
+    54.04s  user  발화 시작: …is it expensive?
+    54.72s  agent 발화 끝
+    55.56s  user  발화 끝
+    55.61s  agent 발화 시작: It’s generally considered to be in the higher price range, o
+    59.02s  user  발화 시작: Yeah.
+    59.65s  user  발화 끝
+    63.95s  agent 발화 시작: They offer set menus ranging from two hundred twenty to thre
+    64.00s  agent 발화 끝
+    69.56s  user  발화 시작: Yeah, totally.
+    70.94s  user  발화 끝
+    72.11s  agent 발화 끝
+    73.58s  user  발화 시작: Hmm, maybe not. Are there any family-friendly places closer?
+    78.10s  <ret> 발화 (turn16 첫 프레임)
+    78.34s  agent 발화 시작: <ret> Opera Bar is one hundred meters away, The Glenmore Hot
+    78.39s  user  발화 끝
+    79.14s  ⚡SPAN 주입 [d'=1.04s / d_lead=10.57s]: (tool result) Opera Bar (100 m), The Glenmore Hotel (400 m), Cafe Sydn
+    88.85s  user  발화 시작: What kind of food does Opera Bar serve?
+    88.91s  agent 발화 끝
+    91.21s  <ret> 발화 (turn18 첫 프레임)
+    91.29s  agent 발화 시작: <ret> Opera Bar serves a modern Australian menu, focusing on
+    91.44s  user  발화 끝
+    93.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.16s]: (tool result) Opera Bar offers a modern Australian menu with a focus o
+    94.75s  user  발화 시작: Mhm.
+    95.39s  user  발화 끝
+   101.45s  agent 발화 끝
+   101.77s  user  발화 시작: Can you book a table there for four people tomorrow evening?
+   105.12s  <ret> 발화 (turn21 첫 프레임)
+   105.28s  agent 발화 시작: <ret> I have reserved a table for four at Opera Bar for tomo
    105.47s  user  발화 끝
-   107.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.38s]: (tool result) Park Hyatt Sydney, 7 Hickey Ave, The Rocks NSW 2000, Aus
-   109.85s  user  발화 시작: Uh-huh.
-   110.26s  user  발화 끝
-   113.79s  agent 발화 끝
-   113.89s  user  발화 시작: That’s a bit steep.
-   115.17s  agent 발화 시작: It certainly is a luxury option. Perhaps we could look at so
-   115.27s  user  발화 끝
-   117.56s  user  발화 시작: Yeah.
-   118.19s  user  발화 끝
-   121.04s  user  발화 시작: No, that's okay. I think we're all set.
-   121.05s  agent 발화 끝
-   123.94s  agent 발화 시작: Wonderful. I hope you and your companion have a delightful e
-   123.99s  user  발화 끝
-   130.48s  agent 발화 끝
+   107.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.97s]: (tool result) Confirmation: OPB20260711-4-1900
+   110.56s  user  발화 시작: Yeah, yeah.
+   112.02s  user  발화 끝
+   117.25s  agent 발화 끝
+   117.61s  user  발화 시작: That’s great, thank you!
+   119.06s  agent 발화 시작: You’re very welcome. I hope you and your family have a wonde
+   119.12s  user  발화 끝
+   123.12s  agent 발화 끝

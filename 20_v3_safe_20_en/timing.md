@@ -66,43 +66,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 Okay, okay, I get it. But what *ca | S3 …Actually, before booking, how muc | S4 Perfect, thanks so much.
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 Okay, okay, I get it.… | S3 …But what *can* I do? | S4 …Do they do emergency calls?
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     3.74s  agent 발화 시작: I understand the beeping is frustrating, but disabling a car
-     3.88s  user  발화 끝
-    12.46s  agent 발화 끝
-    14.07s  user  발화 시작: But it keeps going off when I’m just cooking! It's super sen
-    18.33s  agent 발화 시작: Even if it's a false alarm, tampering with it removes a vita
-    18.47s  user  발화 끝
-    22.67s  user  발화 시작: Yeah.
-    23.17s  user  발화 끝
-    26.93s  user  발화 시작: Okay, okay, I get it. But what *can* I do about the false al
-    27.09s  agent 발화 끝
-    31.09s  <ret> 발화 (turn6 첫 프레임)
-    31.16s  agent 발화 시작: <ret> Johnson & Sons Heating and Cooling is at 123 Main Stre
-    31.24s  user  발화 끝
-    33.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.28s]: (tool result) Johnson & Sons Heating and Cooling is located at 123 Mai
-    35.26s  user  발화 시작: Oh.
-    35.94s  user  발화 끝
-    41.44s  agent 발화 끝
-    42.51s  user  발화 시작: …Actually, before booking, how much does something like that
-    46.63s  user  발화 끝
-    47.01s  agent 발화 시작: That’s a very sensible question. The cost depends on the iss
-    50.73s  user  발화 시작: Yeah.
-    51.37s  user  발화 끝
-    55.24s  agent 발화 시작: We all want to be prepared, and knowing the potential cost i
-    55.41s  agent 발화 끝
-    58.84s  user  발화 시작: Okay.
-    59.56s  user  발화 끝
-    63.35s  agent 발화 끝
-    63.54s  user  발화 시작: Let’s see what times they have available this week.
-    65.71s  <ret> 발화 (turn14 첫 프레임)
-    66.11s  agent 발화 시작: <ret> Your appointment with Johnson & Sons is confirmed for 
-    66.21s  user  발화 끝
-    67.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) Appointment confirmed with Johnson & Sons Heating and Co
-    77.37s  user  발화 시작: Perfect, thanks so much.
-    77.38s  agent 발화 끝
-    78.98s  user  발화 끝
-    79.31s  agent 발화 시작: You're very welcome. Taking care of your safety and peace of
-    85.56s  agent 발화 끝
+     3.97s  agent 발화 시작: Druna here. That’s a really important question, but I absolu
+     3.98s  user  발화 끝
+    11.29s  agent 발화 끝
+    12.89s  user  발화 시작: But it’s just beeping, and it’s late at night!
+    15.21s  agent 발화 시작: I understand your frustration, but carbon monoxide is a sile
+    15.34s  user  발화 끝
+    20.04s  user  발화 시작: Yeah.
+    20.58s  user  발화 끝
+    24.77s  user  발화 시작: Okay, okay, I get it.…
+    24.94s  agent 발화 끝
+    26.09s  user  발화 끝
+    27.13s  user  발화 시작: …But what *can* I do?
+    28.73s  <ret> 발화 (turn7 첫 프레임)
+    28.81s  agent 발화 시작: <ret> Michael's Gas & Electric, at (555) 123-4567, specializ
+    28.83s  user  발화 끝
+    30.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.84s]: (tool result) Michael's Gas & Electric, (555) 123-4567, is a local pro
+    31.90s  user  발화 시작: Oh.
+    32.34s  user  발화 끝
+    36.52s  user  발화 시작: …Do they do emergency calls?
+    36.64s  agent 발화 끝
+    38.32s  user  발화 끝
+    38.35s  agent 발화 시작: They do offer twenty-four-hour emergency service—they unders
+    42.02s  user  발화 시작: Yeah.
+    42.65s  user  발화 끝
+    46.55s  agent 발화 끝
+    46.60s  agent 발화 시작: Wonderful. Let's get that scheduled. What time would work be
+    56.52s  agent 발화 끝

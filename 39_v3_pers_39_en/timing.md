@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Lucia, hello! I’m Aril, and I’m here to help you navigate fr
-     6.95s  agent 발화 끝
-     8.19s  user  발화 시작: Aril… that’s a pretty name. I’m just feeling a little lost, 
-    16.07s  user  발화 끝
-    16.25s  agent 발화 시작: Moving is a big change, and feeling lost afterward is comple
-    19.77s  user  발화 시작: Wow.
-    20.45s  user  발화 끝
-    25.67s  user  발화 시작: Welll… I’m not really sure how to *start* conversations, I g
-    25.75s  agent 발화 끝
-    32.34s  agent 발화 시작: That’s a really common feeling, Lucia. Often, it helps to th
-    32.44s  user  발화 끝
-    44.39s  agent 발화 끝
+     0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you.
+     2.73s  agent 발화 끝
+     3.95s  user  발화 시작: Oh, hi Aril. That’s… a nice name. I’m just feeling a bit los
+    13.50s  user  발화 끝
+    13.69s  agent 발화 시작: It takes courage to admit that, Lucia. Feeling lost is compl
+    17.04s  user  발화 시작: Wow.
+    17.86s  user  발화 끝
+    22.67s  user  발화 시작: Welll… I moved here a few years ago, and it’s just hard to m
+    22.78s  agent 발화 끝
+    29.61s  agent 발화 시작: San Francisco can be like that, I hear. It’s wonderful you r
+    29.72s  user  발화 끝
+    40.60s  agent 발화 끝

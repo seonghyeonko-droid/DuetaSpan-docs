@@ -68,24 +68,41 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I’m hoping to book three rooms at  | S2 That’s great. I’m also trying to f | S3 …are there any car rental places n | S4 Perfect. Thank you so much, Tian.
 
-     0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.35s  <ret> 발화 (turn1 첫 프레임)
-     5.42s  user  발화 끝
-     5.59s  agent 발화 시작: <ret> I’ve reserved three rooms for you at the Ocean View Ho
-     7.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Reservation confirmed for 3 rooms at Ocean View Hotel in
-    11.91s  user  발화 시작: …Is parking included with the reservation?
-    12.68s  agent 발화 끝
-    13.83s  <ret> 발화 (turn3 첫 프레임)
-    13.98s  agent 발화 시작: <ret> Parking is available at the Ocean View Hotel for thirt
-    14.22s  user  발화 끝
-    15.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.23s]: (tool result) Ocean View Hotel, San Diego: parking available, $35 per 
-    17.56s  user  발화 시작: Mm-hmm.
-    18.05s  user  발화 끝
-    19.21s  agent 발화 끝
-    19.24s  user  발화 시작: Okay, that’s reasonable. Can you add a rental car to my rese
-    22.91s  <ret> 발화 (turn6 첫 프레임)
-    23.31s  agent 발화 시작: <ret> A compact car is available from Hertz for sixty-five d
-    23.39s  user  발화 끝
-    24.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Compact car available from Hertz, $65 per day.
-    30.12s  agent 발화 끝
+     0.00s  user  발화 시작: I’m hoping to book three rooms at the Ocean View Hotel in Sa
+     5.84s  <ret> 발화 (turn1 첫 프레임)
+     6.02s  user  발화 끝
+     6.08s  agent 발화 시작: <ret> I’ve reserved three rooms at the Ocean View Hotel in S
+     7.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=17.77s]: (tool result) Confirmation ID: OVH20260210-3R, total cost $2100.00
+    16.41s  user  발화 시작: Right.
+    16.86s  user  발화 끝
+    23.85s  agent 발화 끝
+    23.98s  user  발화 시작: And could you check if they have a shuttle service to the ai
+    26.74s  <ret> 발화 (turn4 첫 프레임)
+    26.89s  agent 발화 시작: <ret> The Ocean View Hotel in San Diego does offer a complim
+    27.12s  user  발화 끝
+    28.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (tool result) Ocean View Hotel, San Diego, offers complimentary airpor
+    34.40s  agent 발화 끝
+    34.73s  user  발화 시작: That’s great. I’m also trying to figure out the best way to 
+    38.89s  user  발화 끝
+    39.26s  agent 발화 시작: Public transportation is a good option—
+    41.25s  user  발화 시작: …are there any car rental places near the hotel?
+    41.98s  agent 발화 끝
+    43.30s  <ret> 발화 (turn8 첫 프레임)
+    43.69s  agent 발화 시작: <ret> Hertz is one point two kilometers away, at fifty-five 
+    43.93s  user  발화 끝
+    45.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.91s]: (tool result) Hertz, 1.2 km, $55/day; Avis, 1.8 km, $60/day; Enterpris
+    57.43s  user  발화 시작: Hmm, Enterprise sounds good. Can you check availability for 
+    57.60s  agent 발화 끝
+    62.47s  <ret> 발화 (turn10 첫 프레임)
+    62.55s  agent 발화 시작: <ret> I’ve reserved a minivan with Enterprise for the whole 
+    62.76s  user  발화 끝
+    64.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.26s]: (tool result) Minivan reserved, confirmation #ENT20260210-7D, total $3
+    72.42s  user  발화 시작: Oh.
+    72.91s  user  발화 끝
+    75.82s  agent 발화 끝
+    76.52s  user  발화 시작: Perfect. Thank you so much, Tian.
+    78.74s  agent 발화 시작: You’re very welcome. I’m glad I could help with the arrangem
+    78.77s  user  발화 끝
+    85.87s  agent 발화 끝

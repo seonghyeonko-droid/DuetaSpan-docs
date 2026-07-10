@@ -63,93 +63,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Tell me about Le Fumoir. | S3 …What time does the Louvre open? | S4 What about getting around Paris? I
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Are there any good restaurants nea | S3 …Actually, before you do, what’s t | S4 Can you see if they have any table
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.16s  <ret> 발화 (turn1 첫 프레임)
-     3.37s  user  발화 끝
-     3.38s  agent 발화 시작: <ret> The Eiffel Tower in Paris is at forty-eight point eigh
-     4.44s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.11s]: (tool result) 48.8584,2.2945
-     9.23s  user  발화 시작: Yeah.
-     9.73s  user  발화 끝
-    11.49s  agent 발화 끝
-    11.71s  user  발화 시작: That's great. What about the Louvre Museum?
-    14.02s  <ret> 발화 (turn4 첫 프레임)
-    14.41s  agent 발화 시작: <ret> The Louvre Museum is at forty-eight point eight six ze
-    14.44s  user  발화 끝
-    16.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) 48.8606,2.3376
-    20.45s  user  발화 시작: Right.
-    21.18s  user  발화 끝
-    22.93s  agent 발화 끝
-    23.02s  user  발화 시작: Okay, and how far apart are they?
-    24.68s  <ret> 발화 (turn7 첫 프레임)
-    24.99s  agent 발화 시작: <ret> The distance between the Eiffel Tower and the Louvre M
-    25.05s  user  발화 끝
-    26.52s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.71s]: (tool result) 3.2 km
-    31.70s  agent 발화 끝
-    31.94s  user  발화 시작: Hmm, maybe. Are there any good restaurants near the Louvre?
-    35.36s  user  발화 끝
-    35.46s  <ret> 발화 (turn9 첫 프레임)
-    35.77s  agent 발화 시작: <ret> Le Fumoir is five hundred meters away, Bistrot Valois 
-    37.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.60s]: (tool result) Le Fumoir (500 m), Bistrot Valois (600 m), Angelina (700
-    38.94s  user  발화 시작: Okay.
-    39.66s  user  발화 끝
-    45.37s  agent 발화 끝
-    45.69s  user  발화 시작: Tell me about Le Fumoir.
-    47.04s  <ret> 발화 (turn12 첫 프레임)
-    47.10s  agent 발화 시작: <ret> Le Fumoir is at six Rue de l'Amiral de Coligny, a Fren
-    47.30s  user  발화 끝
-    48.64s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.48s]: (tool result) Le Fumoir, 6 Rue de l'Amiral de Coligny, 75001 Paris, Fr
-    55.59s  agent 발화 끝
-    56.46s  user  발화 시작: That sounds nice. Could you make a reservation there for two
-    61.31s  <ret> 발화 (turn14 첫 프레임)
-    61.32s  user  발화 끝
-    61.47s  agent 발화 시작: <ret> You are all set! Your reservation at Le Fumoir is conf
-    62.99s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.81s]: (tool result) Le Fumoir, 2026-07-11 at 20:00 for 2 people, confirmatio
-    72.27s  agent 발화 끝
-    72.60s  user  발화 시작: Perfect!
-    73.44s  agent 발화 시작: I'm glad I could help with that. I find a little planning ah
-    73.56s  user  발화 끝
-    78.30s  agent 발화 끝
-    80.75s  user  발화 시작: Actually, I'm thinking of going to a museum tomorrow morning
-    84.41s  user  발화 시작: …What time does the Louvre open?
-    84.50s  user  발화 끝
-    86.26s  <ret> 발화 (turn19 첫 프레임)
-    86.41s  agent 발화 시작: <ret> The Louvre Museum opens at nine AM and closes at six P
-    86.53s  user  발화 끝
-    88.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.21s]: (tool result) Opens 9:00 AM, Closes 6:00 PM
-    94.17s  user  발화 시작: Good to know. And what's the weather forecast for Paris tomo
-    94.61s  agent 발화 끝
-    97.55s  <ret> 발화 (turn21 첫 프레임)
-    97.85s  agent 발화 시작: <ret> The weather in Paris tomorrow will be twenty-five degr
-    98.02s  user  발화 끝
-    99.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: (tool result) 25.0°C, humidity 60%, wind 8.0 km/h
-   106.80s  agent 발화 끝
-   107.00s  user  발화 시작: Sounds pleasant. Is there anything else I should know about 
-   111.36s  user  발화 끝
-   111.78s  agent 발화 시작: It’s a very large museum, so planning your visit in advance 
-   119.20s  agent 발화 끝
-   120.48s  user  발화 시작: That's helpful. Maybe I’ll just focus on the Mona Lisa.
-   124.04s  user  발화 끝
-   124.41s  agent 발화 시작: A classic choice! It’s quite popular, so be prepared for a c
-   129.55s  agent 발화 끝
-   130.62s  user  발화 시작: What about getting around Paris? Is the metro easy to use?
-   134.75s  agent 발화 시작: The Paris Metro is very efficient and easy to navigate. It's
-   134.82s  user  발화 끝
-   140.73s  agent 발화 끝
-   140.78s  user  발화 시작: Great. Do you think I should buy a metro pass?
-   143.57s  agent 발화 시작: Considering you’ll be visiting multiple locations, a metro p
-   143.60s  user  발화 끝
-   148.37s  user  발화 시작: Mm-hmm.
-   148.87s  user  발화 끝
-   149.79s  user  발화 시작: Okay, good idea. Could you tell me how much a one-day metro 
-   149.92s  agent 발화 끝
-   154.51s  <ret> 발화 (turn32 첫 프레임)
-   154.64s  user  발화 끝
-   154.82s  agent 발화 시작: <ret> A one-day metro pass in Paris costs eight point four f
-   156.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) 8.45 EUR
-   162.37s  agent 발화 끝
-   163.68s  user  발화 시작: Okay, that seems reasonable. Thanks for all your help!
-   166.51s  agent 발화 시작: You’re very welcome. It sounds like you’re planning a wonder
-   166.54s  user  발화 끝
-   171.60s  agent 발화 끝
+     2.80s  <ret> 발화 (turn1 첫 프레임)
+     3.03s  agent 발화 시작: <ret> The Eiffel Tower is at forty-eight point eight five ei
+     3.14s  user  발화 끝
+     3.92s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.34s]: (tool result) 48.8584° N, 2.2945° E
+     9.37s  agent 발화 끝
+     9.44s  user  발화 시작: That’s great. What’s the weather like there right now?
+    11.94s  <ret> 발화 (turn3 첫 프레임)
+    12.34s  agent 발화 시작: <ret> It’s twenty-one point zero degrees Celsius, with sixty
+    12.59s  user  발화 끝
+    13.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) 21.0°C, humidity 65%, wind 8.2 km/h
+    16.81s  user  발화 시작: Yeah, totally.
+    18.09s  user  발화 끝
+    18.91s  user  발화 시작: Hmm, sounds pleasant.
+    18.96s  agent 발화 끝
+    20.23s  agent 발화 시작: It does, doesn’t it? Paris is lovely this time of year.
+    20.33s  user  발화 끝
+    23.75s  agent 발화 끝
+    23.78s  user  발화 시작: Are there any good restaurants nearby?
+    26.10s  <ret> 발화 (turn8 첫 프레임)
+    26.25s  agent 발화 시작: <ret> Le Jules Verne is five hundred meters away, Les Ombres
+    26.31s  user  발화 끝
+    28.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Le Jules Verne (500m), Les Ombres (700m), 58 Tour Eiffel
+    32.60s  agent 발화 끝
+    33.12s  user  발화 시작: What kind of cuisine does Le Jules Verne offer?
+    35.71s  <ret> 발화 (turn10 첫 프레임)
+    36.02s  agent 발화 시작: <ret> Le Jules Verne offers French, fine dining, and modern 
+    36.04s  user  발화 끝
+    36.21s  ⚡SPAN 주입 [d'=0.50s / d_lead=4.44s]: (tool result) French, Fine Dining, Modern European
+    37.48s  user  발화 시작: Okay.
+    38.30s  user  발화 끝
+    40.41s  user  발화 시작: That sounds amazing. Is it possible to make a reservation th
+    40.47s  agent 발화 끝
+    45.27s  user  발화 끝
+    45.46s  agent 발화 시작: I can certainly check availability for you—
+    47.44s  user  발화 시작: …Actually, before you do, what’s the price range like?
+    48.19s  agent 발화 끝
+    50.67s  user  발화 끝
+    50.77s  agent 발화 시작: Le Jules Verne is known for being quite upscale—
+    51.93s  user  발화 시작: Yeah.
+    52.43s  user  발화 끝
+    53.78s  agent 발화 시작: It's a fairly expensive experience, with entrees averaging a
+    53.90s  agent 발화 끝
+    60.49s  agent 발화 끝
+    60.54s  user  발화 시작: Two hundred euros! Okay, maybe not. Are there any more affor
+    65.21s  <ret> 발화 (turn19 첫 프레임)
+    65.36s  agent 발화 시작: <ret> Cafe Constant is one point two kilometers away, Le Rel
+    65.54s  user  발화 끝
+    67.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: (tool result) Cafe Constant (1.2km), Le Relais de l'Entrecôte (1.5km),
+    72.26s  agent 발화 끝
+    73.78s  user  발화 시작: Bistro Paul Bert sounds good. What kind of food do they serv
+    77.91s  <ret> 발화 (turn21 첫 프레임)
+    78.13s  user  발화 끝
+    78.30s  agent 발화 시작: <ret> Bistrot Paul Bert serves traditional French cuisine, w
+    79.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) Traditional French, Steakhouse, Bistro
+    84.83s  agent 발화 끝
+    86.24s  user  발화 시작: Can you see if they have any tables available tomorrow eveni
+    89.88s  <ret> 발화 (turn23 첫 프레임)
+    90.11s  agent 발화 시작: <ret> Your reservation at Bistrot Paul Bert is confirmed for
+    90.17s  user  발화 끝
+    91.40s  ⚡SPAN 주입 [d'=1.52s / d_lead=9.46s]: (tool result) Reservation confirmed for 2 people, 20:00, July 11, 2026
+    99.56s  agent 발화 끝
+    99.67s  user  발화 시작: Wonderful! That's perfect.
+   101.44s  agent 발화 시작: I’m so glad I could help you with that. Planning a nice even
+   101.65s  user  발화 끝
+   105.53s  user  발화 시작: It is. Thanks so much for your help, Nellara.
+   105.93s  agent 발화 끝
+   108.30s  user  발화 끝
+   108.32s  agent 발화 시작: You are very welcome. Enjoy your dinner!
+   110.39s  agent 발화 끝

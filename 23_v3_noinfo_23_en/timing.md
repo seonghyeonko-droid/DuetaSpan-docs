@@ -68,91 +68,89 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What was the weather like in Tokyo | S2 Okay, book it for two nights, star | S3 Can you reserve a table for two at | S4 Just to show the new strategy will
+# EXAMINER(FDB-v2) 단계: S1 Do you know the phone number for D | S2 Perfect, thank you! | S3 Yes, please. Any tips? | S4 That's a good way to look at it. C
 
-     0.00s  user  발화 시작: What was the weather like in Tokyo on December twenty-fourth
-     3.20s  <ret> 발화 (turn1 첫 프레임)
-     3.60s  agent 발화 시작: <ret> The weather in Tokyo on December twenty-fourth of last
-     3.84s  user  발화 끝
-     5.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.17s]: (tool result) 10.2°C, humidity 88%, wind 3.1 km/h
-    12.77s  agent 발화 끝
-    13.64s  user  발화 시작: Uhhh, can you find me a hotel in Seoul for next weekend?
-    16.74s  agent 발화 시작: Could you tell me how many guests will be staying at the hot
-    16.88s  user  발화 끝
-    18.28s  user  발화 시작: Yeah.
-    18.91s  user  발화 끝
-    20.03s  user  발화 시작: Just two.
-    20.16s  agent 발화 끝
-    20.50s  <ret> 발화 (turn6 첫 프레임)
-    20.90s  agent 발화 시작: <ret> I found three hotels in Seoul: Lotte Hotel Seoul, The 
-    20.95s  user  발화 끝
-    22.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) Lotte Hotel Seoul (37.5665, 126.9780), The Plaza Seoul (
-    25.30s  user  발화 시작: Yeah, yeah.
-    26.11s  user  발화 끝
-    27.34s  agent 발화 끝
-    27.66s  user  발화 시작: What’s the price of the Lotte Hotel?
-    29.51s  <ret> 발화 (turn9 첫 프레임)
-    29.82s  agent 발화 시작: <ret> The Lotte Hotel Seoul is currently trading at 345,000 
-    29.92s  user  발화 끝
-    30.95s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.18s]: (tool result) Lotte Hotel Seoul is trading at ₩345,000, up 2.3%
-    37.01s  agent 발화 끝
-    37.19s  user  발화 시작: Okay, book it for two nights, starting next Saturday.
-    39.76s  <ret> 발화 (turn11 첫 프레임)
-    40.08s  agent 발화 시작: <ret> Alright, I’ve booked two nights at the Lotte Hotel Seo
-    40.14s  user  발화 끝
-    41.36s  ⚡SPAN 주입 [d'=1.60s / d_lead=10.52s]: (tool result) Lotte Hotel Seoul, 2026-07-11, 2 nights, ₩690,000, 8Z9X2
-    50.61s  agent 발화 끝
-    51.04s  user  발화 시작: Could you set an alarm for 7 AM tomorrow?
-    53.17s  <ret> 발화 (turn13 첫 프레임)
-    53.49s  agent 발화 시작: <ret> I’ve set an alarm for 7 AM tomorrow.
-    53.63s  user  발화 끝
-    54.37s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.86s]: (tool result) Alarm set for 2026-07-11 at 07:00
-    56.35s  agent 발화 끝
-    56.62s  user  발화 시작: What time is it now in New York?
-    58.18s  <ret> 발화 (turn15 첫 프레임)
-    58.26s  agent 발화 시작: <ret> It is currently 7:58 PM in New York.
-    58.37s  user  발화 끝
-    59.78s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.05s]: (tool result) It is Friday, July 10, 2026 at 7:58 PM in America/New Yo
-    60.89s  user  발화 시작: Find me some Italian restaurants nearby.
-    61.31s  agent 발화 끝
-    63.10s  <ret> 발화 (turn17 첫 프레임)
-    63.44s  user  발화 끝
-    63.50s  agent 발화 시작: <ret> There are three Italian restaurants nearby: Bella Ital
-    65.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.40s]: (tool result) Bella Italia (37.5662, 126.9778) 230m, Trattoria Uno (37
-    69.90s  agent 발화 끝
-    69.93s  user  발화 시작: Can you reserve a table for two at Bella Italia at 8 PM?
-    73.22s  <ret> 발화 (turn19 첫 프레임)
-    73.30s  user  발화 끝
-    73.37s  agent 발화 시작: <ret> I’ve reserved a table for two at Bella Italia at 8 PM.
-    75.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Bella Italia, 20:00, 2 guests, confirmed, 5J7R4P
-    77.98s  user  발화 시작: Okay.
-    78.67s  user  발화 끝
-    80.75s  user  발화 시작: That’s great. I'm feeling a bit stressed about work.
-    80.83s  agent 발화 끝
-    83.61s  user  발화 끝
-    83.95s  agent 발화 시작: [curious] Work stress is very common, isn’t it? What specifi
-    85.74s  user  발화 시작: Yeah.
-    86.19s  user  발화 끝
-    89.19s  user  발화 시작: Welll… a big presentation next week.
-    89.60s  agent 발화 끝
-    92.08s  agent 발화 시작: A big presentation can definitely be stressful! Have you sta
-    92.11s  user  발화 끝
-    95.53s  user  발화 시작: Yeah.
-    95.98s  user  발화 끝
-   100.90s  user  발화 시작: I've started, but I keep second-guessing myself.
-   100.94s  agent 발화 끝
-   103.75s  agent 발화 시작: That's totally normal. Self-doubt creeps in. What's the core
-   103.75s  user  발화 끝
-   109.97s  user  발화 시작: Just to show the new strategy will work.
-   110.01s  agent 발화 끝
-   112.37s  user  발화 끝
-   112.53s  agent 발화 시작: That’s a clear goal. Focus on the data that supports the str
-   120.34s  user  발화 시작: Thanks, that helps.
-   120.41s  agent 발화 끝
-   121.27s  agent 발화 시작: You’re very welcome. I'm glad I could offer some support.
-   121.43s  user  발화 끝
-   124.53s  user  발화 시작: I think I’m all set for now.
-   124.59s  agent 발화 끝
-   126.00s  user  발화 끝
-   126.04s  agent 발화 시작: Wonderful! Enjoy your trip.
-   127.97s  agent 발화 끝
+     0.00s  user  발화 시작: Do you know the phone number for Dr. Eleanor Vance?
+     1.89s  <ret> 발화 (turn1 첫 프레임)
+     2.28s  agent 발화 시작: <ret> I’m sorry, I couldn’t find a phone number for Dr. Elea
+     2.54s  user  발화 끝
+     3.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result)
+     5.82s  user  발화 시작: Yeah, totally.
+     6.92s  user  발화 끝
+     8.25s  agent 발화 끝
+     8.41s  user  발화 시작: Oh, uh, that's okay.
+    10.39s  user  발화 끝
+    10.41s  agent 발화 시작: That's alright. Sometimes those details aren't easy to come 
+    11.83s  user  발화 시작: Okay.
+    12.52s  user  발화 끝
+    14.29s  agent 발화 끝
+    14.37s  user  발화 시작: Could you find me some good restaurants nearby? I'm really c
+    17.98s  <ret> 발화 (turn7 첫 프레임)
+    18.38s  agent 발화 시작: <ret> There are three Italian restaurants nearby: Bella Ital
+    18.53s  user  발화 끝
+    19.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.85s]: (tool result) Seoul, South Korea (37.5665, 126.9780): Bella Italia (25
+    25.46s  user  발화 시작: Uh-huh.
+    26.04s  user  발화 끝
+    29.23s  agent 발화 끝
+    29.25s  user  발화 시작: Bella Italia sounds good. Can you make a reservation for me 
+    33.43s  <ret> 발화 (turn10 첫 프레임)
+    33.74s  agent 발화 시작: <ret> I've made a reservation for you at Bella Italia for Ju
+    33.83s  user  발화 끝
+    34.87s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.92s]: (tool result) Bella Italia, July 11, 2026 at 7:00 PM, party of 2, conf
+    40.70s  user  발화 시작: Okay.
+    41.38s  user  발화 끝
+    43.53s  user  발화 시작: Perfect, thank you!
+    43.66s  agent 발화 끝
+    44.58s  user  발화 끝
+    44.69s  agent 발화 시작: You're very welcome! I’m glad I could help with that. It’s n
+    49.96s  agent 발화 끝
+    50.35s  user  발화 시작: I'm also feeling really stressed about a presentation I have
+    54.01s  agent 발화 시작: That’s understandable. Presentations can be quite nerve-wrac
+    54.05s  user  발화 끝
+    61.66s  agent 발화 끝
+    61.89s  user  발화 시작: Just… everything, really. I'm worried about forgetting what 
+    67.77s  user  발화 끝
+    67.88s  agent 발화 시작: It's common to feel overwhelmed when facing a big presentati
+    71.02s  user  발화 시작: Uh-huh.
+    71.65s  user  발화 끝
+    74.90s  agent 발화 시작: Practicing is a great first step. Even just running through 
+    74.97s  agent 발화 끝
+    83.19s  agent 발화 끝
+    83.75s  user  발화 시작: I guess I haven't. I keep putting it off.
+    86.33s  user  발화 끝
+    86.40s  agent 발화 시작: That’s okay. Procrastination often comes from fear. We can w
+    94.01s  user  발화 시작: Yes, please. Any tips?
+    94.13s  agent 발화 끝
+    95.58s  agent 발화 시작: Start small. Don’t try to perfect the whole presentation at 
+    95.76s  user  발화 끝
+   103.14s  agent 발화 끝
+   104.42s  user  발화 시작: That sounds… manageable.
+   106.81s  user  발화 끝
+   106.93s  agent 발화 시작: It is! Small steps build momentum. Also, visualize success. 
+   115.79s  agent 발화 끝
+   115.86s  user  발화 시작: I’ll try that. What about if I blank out during it?
+   118.77s  user  발화 끝
+   118.81s  agent 발화 시작: It happens to the best of us. Have notes, but don’t read dir
+   127.34s  agent 발화 끝
+   127.48s  user  발화 시작: Okay. That’s good to know.
+   129.29s  agent 발화 시작: It is. And remember your audience wants you to succeed. They
+   129.42s  user  발화 끝
+   136.15s  agent 발화 끝
+   136.16s  user  발화 시작: That's a good way to look at it. Could you set an alarm for 
+   141.20s  <ret> 발화 (turn31 첫 프레임)
+   141.58s  agent 발화 시작: <ret> I’ve set an alarm for tomorrow, July eleventh, at nine
+   141.63s  user  발화 끝
+   143.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.26s]: (tool result) Alarm set for July 11, 2026 at 9:00 AM, label: Presentat
+   147.44s  user  발화 시작: Great! Thanks, Brae.
+   147.84s  agent 발화 끝
+   148.91s  agent 발화 시작: You’re most welcome. Remember, you’ve got this. A little pre
+   149.01s  user  발화 끝
+   154.05s  agent 발화 끝
+   154.09s  user  발화 시작: I think I’m starting to feel a bit better already.
+   156.14s  agent 발화 시작: [happy] That’s wonderful to hear! It’s a sign you’re already
+   156.31s  user  발화 끝
+   160.68s  agent 발화 끝
+   162.05s  user  발화 시작: I don’t think I do, for now. Thank you again.
+   164.91s  user  발화 끝
+   165.30s  agent 발화 시작: You’re very welcome. Wishing you all the best with your pres
+   170.16s  agent 발화 끝

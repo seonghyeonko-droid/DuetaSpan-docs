@@ -67,41 +67,38 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hello Marie, it’s lovely to connect with you. My name is Bir, and I’m a counselor here to listen—to offer a space for reflection and support.
-[  8.14s][user ] Bir… that’s a pretty name. I’m just feeling really overwhelmed lately, with everything changing at work.
-[ 14.62s][moshi] It sounds as though you’re carrying a lot right now, Marie. Change can certainly bring a sense of being overwhelmed. What feels most unsettling about these shifts?
-[ 23.60s][user ] Well, it’s not just *one* thing. It’s like… everything I thought I knew is suddenly uncertain.
-[ 30.01s][moshi] Uncertainty can be deeply unsettling, yes. It’s natural to feel adrift when familiar foundations seem to shift. Have you experienced this kind of feeling before?
-[ 41.12s][user ] uhhh… yeah, a few times. But it always feels so… new, each time.
-[ 46.10s][moshi] It’s interesting how even familiar feelings can feel brand new in the moment. Each experience holds its own unique weight, doesn't it?
-[ 50.82s][user ] «backchannel» Yeah, yeah.
-[ 53.83s][moshi] It does. It’s almost as if our capacity to feel doesn’t diminish with time, but rather expands—allowing for a more nuanced experience of emotions. Do you find yourself focusing on what you’ve lost, or what might be gained?
-[ 64.04s][user ] «backchannel» Yeah.
-[ 68.09s][user ] I think… mostly what I’ve lost. My routine, my sense of control…
-[ 73.75s][moshi] That makes perfect sense. Grief often begins with a focus on what’s been taken away. It's a very natural stage in processing change.
-[ 78.68s][user ] «backchannel» Yeah.
-[ 82.21s][user ] It’s just hard to imagine things getting better. I feel stuck.
-[ 85.78s][moshi] Feeling stuck is incredibly common when navigating loss, Marie. It’s like being caught in a current—difficult to move forward. What does “better” look like to you, even in a small way?
-[ 93.85s][user ] «backchannel» Mm-hmm.
-[ 96.96s][user ] Hmm. I guess… feeling like I have some direction again. Some purpose.
-[101.69s][moshi] Direction and purpose are powerful anchors, certainly. Perhaps exploring what truly energizes you, outside of work, could offer a new sense of direction?
-[111.72s][user ] That’s… a thought. I used to paint, but I haven't in years.
-[116.61s][moshi] Painting sounds like a beautiful outlet. It's remarkable how often we set aside things that nourish our souls when life gets busy. What stopped you from painting?
-[126.72s][user ] Just… no time, I guess. And feeling like it wasn’t “productive.”
-[132.18s][moshi] That’s a very common pattern, equating worth with productivity. It's a gentle reminder that joy and self-expression *are* productive—for our well-being.
-[138.58s][user ] «backchannel» Yeah.
-[142.73s][user ] I suppose so. It feels silly to even talk about painting when everything else is falling apart.
-[148.39s][moshi] It doesn’t sound silly at all, Marie. Sometimes, tending to our inner selves is the most courageous act we can take, especially during turbulent times.
-[153.48s][user ] «backchannel» Really?
-[158.35s][user ] Welll… maybe. It’s just hard to see the point.
-[162.39s][moshi] It’s understandable to struggle with finding meaning when you’re feeling overwhelmed. Perhaps focusing on small, achievable steps—like simply setting up your painting supplies—could rekindle that spark?
-[173.46s][user ] That… doesn’t sound awful.
-[175.91s][moshi] It doesn’t need to be grand, Marie. Small steps are often the most sustainable. What’s one small thing you could do today, just for yourself?
-[181.66s][user ] «backchannel» Yeah.
-[185.59s][user ] I could… look up some art supply stores.
-[188.33s][moshi] That’s a wonderful start. It’s a way of acknowledging your creative side and nurturing a part of yourself that deserves attention.
-[196.43s][user ] Thanks, Bir. That actually helps.
-[199.04s][moshi] You're very welcome, Marie. Remember, allowing yourself space for gentle exploration is a sign of strength, not weakness. It takes courage to turn inward.
-[205.24s][user ] «backchannel» Mhm.
-[207.88s][user ] I think I needed to hear that.
-[209.79s][moshi] I'm glad it resonated. Sometimes, all it takes is a gentle shift in perspective to begin to navigate the waves. Enjoy your evening, Marie.
+[  0.00s][moshi] Marie, welcome. My name is Bir, and I’m here to listen—to offer a little support as you navigate whatever’s on your mind today.
+[  7.22s][user ] Bir… that’s a lovely name. I’m just feeling a bit lost, honestly. Work’s been awful.
+[ 13.56s][moshi] Lost is a very human feeling, Marie. It sounds like work is contributing to that sense of disorientation. Could you tell me a little more about what’s been difficult?
+[ 23.27s][user ] Uhhh, well, it’s just… everything feels pointless. Like I’m spinning my wheels.
+[ 28.28s][moshi] That sense of pointlessness can be deeply draining. It’s brave of you to acknowledge it. Have you felt this way before, or is it new?
+[ 35.25s][user ] I think it comes and goes. But it’s been worse lately.
+[ 38.79s][moshi] It’s understandable that it feels more intense now. Sometimes, external pressures amplify those inner feelings. What changed recently at work?
+[ 45.70s][user ] «backchannel» Yeah.
+[ 48.81s][user ] A new manager. He's… demanding. And doesn't seem to value anyone’s input.
+[ 54.90s][moshi] A shift in leadership can certainly disrupt things. It’s disheartening when you feel your contributions aren’t valued. How does that make you feel specifically?
+[ 60.01s][user ] «backchannel» Yeah.
+[ 63.65s][user ] Small. Like I don’t matter.
+[ 65.79s][moshi] That’s a painful feeling, Marie. To feel diminished, like your worth isn’t recognized. It's natural to react strongly to that.
+[ 70.53s][user ] «backchannel» Yeah, yeah.
+[ 73.48s][moshi] Sometimes, when we feel unseen, we begin to question our own value. It's important to remember that your worth isn't defined by someone else's perception of you. It’s intrinsic.
+[ 81.42s][user ] «backchannel» Mm-hmm.
+[ 83.69s][user ] That’s… easier said than done.
+[ 86.12s][moshi] It’s a practice, not a destination. It takes consistent effort to nurture that inner knowing. What helps you feel grounded, Marie, when you're feeling small?
+[ 96.97s][user ] I used to paint. Haven’t in ages, though.
+[ 99.91s][moshi] Painting… that sounds like a beautiful outlet. It’s common to let hobbies fall by the wayside when life gets overwhelming. What’s kept you from picking it up again?
+[109.64s][user ] Just… no time. And honestly, no energy.
+[113.49s][moshi] A lack of time and energy are very real obstacles. It sounds like you’re carrying a heavy load. Perhaps small steps, even fifteen minutes, could be a starting point?
+[119.90s][user ] «backchannel» Yeah.
+[123.32s][user ] Maybe. I don’t know. It feels silly to focus on painting when everything else is falling apart.
+[130.14s][moshi] It’s not silly at all, Marie. Sometimes, nurturing ourselves—even in small ways—is the most powerful thing we can do during challenging times. It's about self-compassion.
+[135.92s][user ] «backchannel» Really?
+[140.88s][user ] Self-compassion… I keep hearing that.
+[144.04s][moshi] It’s a concept many find difficult to embrace, especially when we’re critical of ourselves. What does self-compassion mean to you, Marie?
+[152.38s][user ] I guess… being kind to myself, even when I mess up.
+[155.88s][moshi] That’s a wonderful starting point. It's recognizing that everyone makes mistakes, and treating yourself with the same kindness you would offer a friend.
+[160.08s][user ] «backchannel» Yeah, yeah.
+[164.37s][user ] Hmm. That actually… helps, thinking about it that way.
+[168.49s][moshi] I'm glad to hear that, Marie. It’s a shift in perspective that can be profoundly healing. Remember, you deserve that kindness.
+[177.84s][user ] Thanks, Bir. That was… good to hear.
+[181.12s][moshi] You're very welcome, Marie. It was a privilege to listen. Remember to be gentle with yourself, and to reach out if you need further support.

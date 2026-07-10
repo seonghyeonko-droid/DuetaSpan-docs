@@ -65,36 +65,34 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.93s][moshi] ⟨ret@4.85s⟩ The Sydney Opera ⟦⚡SPAN@6.53s: (tool result) -33.8568, 151.2153⟧ House is at latitude negative thirty-three point eight five six eight, and longitude one five one point two one five three. It's a truly iconic landmark!
-[  9.96s][user ] «backchannel» Yeah.
-[ 16.74s][user ] And what's the weather like there right now?
-[ 19.43s][moshi] ⟨ret@19.20s⟩ Currently in Sydney, ⟦⚡SPAN@21.20s: (tool result) 22.0°C, humidity 65%, wind 15.0 km/h⟧ it's twenty-two point zero degrees Celsius, with sixty-five percent humidity and wind at fifteen point zero kilometers per hour. Sounds lovely for a visit.
+[  4.19s][moshi] ⟨ret@4.11s⟩ The Sydney Opera House ⟦⚡SPAN@5.79s: (tool result) 33.8568° S, 151.2153° E⟧ is at thirty-three point eight five six eight degrees south, and one hundred fifty-one point two one five three degrees east. A beautiful landmark, isn’t it?
+      CALL: {"function": "map_geocode", "arguments": {"address": "Sydney Opera House"}}
+[  8.75s][user ] «backchannel» Yeah.
+[ 14.91s][user ] And what's the weather…
+[ 18.75s][user ] …like there right ⟨ret@19.88s⟩ now?
+[ 20.12s][moshi] It is eighteen point ⟦⚡SPAN@21.88s: (tool result) 18.0°C, humidity 62%, wind 11.2 km/h⟧ zero degrees Celsius in Sydney, with sixty-two percent humidity and wind at eleven point two kilometers per hour. Sounds pleasant for a stroll.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Sydney Opera House"}}
-[ 32.14s][user ] Are there any good restaurants nearby?
-[ 34.47s][moshi] ⟨ret@34.39s⟩ Aria Restaurant is fifty-five meters ⟦⚡SPAN@36.39s: (tool result) Aria Restaurant (55 meters), Bennelong (120 meters), Quay (250 meters)⟧ away, Bennelong is one hundred and twenty meters, and Quay is two hundred and fifty meters from the Opera House. Would you like details on any of those?
+[ 30.21s][user ] Are there any good restaurants nearby?
+[ 32.80s][moshi] ⟨ret@32.72s⟩ Aria Restaurant is five hundred ⟦⚡SPAN@34.72s: (tool result) Aria Restaurant (500 m), Bennelong (200 m), Quay (600 m)⟧ meters away, Bennelong is two hundred meters, and Quay is six hundred meters from the Opera House. Would you like to know more about any of those?
       CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Sydney Opera House"}}
-[ 47.08s][user ] Hmm, tell me about ⟨ret@49.32s⟩ Aria.
-[ 49.56s][moshi] Aria Restaurant ⟦⚡SPAN@50.92s: (tool result) Aria Restaurant, 1 Macquarie St, Sydney NSW 2000, Australia⟧ is located at one Macquarie Street, Sydney, New South Wales, two thousand, Australia. It's known for its modern Australian cuisine.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant_name": "Aria Restaurant", "location": "Sydney Opera House"}}
-[ 56.15s][user ] «backchannel» Yeah, totally.
-[ 60.45s][user ] That sounds nice. Could you book a table for two there tomorrow evening?
-[ 65.50s][moshi] What time tomorrow evening would you prefer for your reservation?
-[ 70.48s][user ] Around seven pm, if possible.
-[ 73.07s][moshi] ⟨ret@72.99s⟩ You are all set! ⟦⚡SPAN@74.99s: (tool result) Aria Restaurant, 1 Macquarie St, Sydney, NSW 2000, Australia, reservation for 2 at 7:00 PM, conf⟧ I’ve booked a table for two at Aria Restaurant, one Macquarie Street, Sydney, for seven PM tomorrow, confirmation id ARIA-seven four nine two.
-      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Aria Restaurant", "date": "tomorrow", "time": "7:00 PM", "party_size": "2"}}
-[ 77.43s][user ] «backchannel» Yeah.
-[ 83.59s][user ] I was also wondering.
-[ 85.70s][moshi] «interrupted» I understand you were considering transport options—
-[ 87.92s][user ] «interrupts_prev» … Actually, can you find me some hotels near the Opera House too?
-[ 92.52s][moshi] ⟨ret@92.44s⟩ Park Hyatt Sydney is three ⟦⚡SPAN@94.44s: (tool result) Park Hyatt Sydney (300 meters), Pullman Quay Grand Sydney Harbour (400 meters), InterContinental⟧ hundred meters away, Pullman Quay Grand Sydney Harbour is four hundred, and InterContinental Sydney is six hundred meters from the Opera House.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Sydney Opera House"}}
-[ 95.84s][user ] «backchannel» Mhm.
-[102.70s][user ] How much would a night at the Park Hyatt ⟨ret@105.24s⟩ cost?
-[105.40s][moshi] A night at the Park ⟦⚡SPAN@107.24s: (tool result) Park Hyatt Sydney, 7 Hickey Ave, The Rocks NSW 2000, Australia, from $850 per night⟧ Hyatt Sydney starts from eight hundred and fifty dollars. It's located at seven Hickey Avenue, The Rocks, New South Wales, two thousand.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Park Hyatt Sydney", "date": "tomorrow", "party_size": "2"}}
-[109.85s][user ] «backchannel» Uh-huh.
-[113.89s][user ] That’s a bit steep.
-[115.17s][moshi] It certainly is a luxury option. Perhaps we could look at some more affordable choices, if you'd like?
-[117.56s][user ] «backchannel» Yeah.
-[121.04s][user ] No, that's okay. I think we're all set.
-[123.94s][moshi] Wonderful. I hope you and your companion have a delightful evening at Aria and enjoy your time in Sydney.
+[ 43.59s][user ] Tell me about ⟨ret@45.16s⟩ Bennelong.
+[ 45.40s][moshi] «interrupted» Bennelong is located ⟦⚡SPAN@46.76s: (tool result) Bennelong, Sydney Opera House, Bennelong Point, Sydney NSW 2000, Australia. Rating: 4.6 stars (2⟧ inside the Sydney Opera House at Bennelong Point. It has a four point six star rating from two thousand eight hundred sixty-eight reviews—
+      CALL: {"function": "map_place_details", "arguments": {"place_id": "ChIJl0F6Wn2YEj4R3tLwT-wK34w"}}
+[ 54.04s][user ] «interrupts_prev» …is it expensive?
+[ 55.61s][moshi] It’s generally considered to be in the higher price range, offering a refined dining experience. The menu features modern Australian cuisine.
+[ 59.02s][user ] «backchannel» Yeah.
+[ 63.95s][moshi] They offer set menus ranging from two hundred twenty to three hundred fifty Australian dollars per person, depending on the seating and courses.
+[ 69.56s][user ] «backchannel» Yeah, totally.
+[ 73.58s][user ] Hmm, maybe not. Are there any family-friendly places closer?
+[ 78.34s][moshi] ⟨ret@78.10s⟩ Opera ⟦⚡SPAN@79.14s: (tool result) Opera Bar (100 m), The Glenmore Hotel (400 m), Cafe Sydney (500 m)⟧ Bar is one hundred meters away, The Glenmore Hotel is four hundred, and Cafe Sydney is five hundred meters. Those are considered family-friendly options.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Sydney Opera House", "filters": "family-friendly"}}
+[ 88.85s][user ] What kind of food does Opera Bar serve?
+[ 91.29s][moshi] ⟨ret@91.21s⟩ Opera Bar serves a ⟦⚡SPAN@93.21s: (tool result) Opera Bar offers a modern Australian menu with a focus on seafood and share plates; Opera Bar - ⟧ modern Australian menu, focusing on seafood and share plates. You can find their full menu on their website, operabar.com.au.
+      CALL: {"function": "web_search", "arguments": {"query": "Opera Bar Sydney menu"}}
+[ 94.75s][user ] «backchannel» Mhm.
+[101.77s][user ] Can you book a table there for four people tomorrow ⟨ret@105.12s⟩ evening?
+[105.28s][moshi] I have reserved ⟦⚡SPAN@107.12s: (tool result) Confirmation: OPB20260711-4-1900⟧ a table for four at Opera Bar for tomorrow, July eleventh, at seven p.m. Your confirmation number is OPB20260711-4-1900.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant_name": "Opera Bar", "date": "2026-07-11", "time": "19:00", "party_size": "4"}}
+[110.56s][user ] «backchannel» Yeah, yeah.
+[117.61s][user ] That’s great, thank you!
+[119.06s][moshi] You’re very welcome. I hope you and your family have a wonderful evening.

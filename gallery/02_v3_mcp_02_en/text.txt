@@ -69,34 +69,31 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I'm feeling a bit overwhelmed with everything I need to do today.
-[  3.25s][moshi] It's perfectly normal to feel that way when facing a full schedule. Perhaps we can prioritize tasks and create a manageable plan?
-[ 13.06s][user ] That sounds good, actually. I need to check the weather first, ⟨ret@16.75s⟩ though.
-[ 16.99s][moshi] ⟦⚡SPAN@17.16s: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h⟧ The current weather is twenty-three point zero degrees Celsius, with seventy-four percent humidity and a wind speed of five point five kilometers per hour. Knowing the weather can help with planning.
-[ 22.37s][user ] «backchannel» Right.
-[ 29.80s][user ] Okay, good to know. Thanks.
-[ 32.32s][moshi] You’re very welcome. Is there anything specific you’re hoping to accomplish outdoors today?
-[ 38.84s][user ] I was thinking of going for a run in the park. Do you know where the nearest park ⟨ret@43.46s⟩ is?
-[ 43.78s][moshi] The nearest park ⟦⚡SPAN@45.46s: (tool result) Seoul (37.5665, 126.9780): Olympic Park (1,050m), Children's Grand Park (2,300m), Seoul Forest (⟧ is Olympic Park, one thousand and fifty meters from here. Children’s Grand Park is two thousand three hundred meters away, and Seoul Forest is three thousand eight hundred meters. Would you like directions to Olympic Park?
-[ 49.89s][user ] «backchannel» Yeah.
-[ 58.81s][user ] Yes, please. Directions to Olympic ⟨ret@61.89s⟩ Park.
-[ 62.28s][moshi] ⟦⚡SPAN@62.39s: (tool result) Driving: 15 minutes, 8.2 km; Transit: 30 minutes, 6.1 km; Walking: 1 hour 45 minutes, 5.8 km⟧ Driving will take fifteen minutes and cover eight point two kilometers. Transit is thirty minutes over six point one kilometers, and walking takes one hour and forty-five minutes for five point eight kilometers. I can start navigation if you’d like.
-[ 77.21s][user ] Transit sounds good. Start navigation.
-[ 80.21s][moshi] ⟨ret@80.13s⟩ ⟦⚡SPAN@80.69s: (tool result) Transit route started: Olympic Park, estimated arrival 9:52 AM.⟧ Excellent choice. Transit navigation to Olympic Park has begun, with an estimated arrival time of nine fifty-two AM. I’ll keep you updated on any changes.
-[ 84.35s][user ] «backchannel» Yeah.
-[ 91.75s][user ] That's great. Um… I also need…
-[ 97.02s][user ] …to book a massage for this evening.
-[ 99.10s][moshi] A massage sounds lovely. Do you have a preferred location or time in mind?
-[100.65s][user ] «backchannel» Right.
-[105.67s][user ] Not really. Just somewhere nearby with availability after six PM.
-[110.48s][moshi] ⟨ret@110.41s⟩ Spa Eden has openings ⟦⚡SPAN@112.41s: (tool result) Spa Eden, 6:30 PM, 7:00 PM, 7:30 PM; Serenity Spa, 6:15 PM, 6:45 PM; Relax Zone, 7:15 PM, 8:00 P⟧ at six thirty, seven, and seven thirty PM. Serenity Spa has six fifteen and six forty-five PM, and Relax Zone has seven fifteen and eight PM. Which spa and time would you prefer?
-[126.02s][user ] Spa Eden at seven PM, ⟨ret@128.83s⟩ please.
-[129.23s][moshi] ⟦⚡SPAN@129.28s: (tool result) Spa Eden, 7:00 PM, confirmed, booking ID: QX92BZ⟧ Your massage at Spa Eden is confirmed for seven PM. Your booking ID is QX92BZ. I’ve sent a confirmation to your registered email.
-[139.66s][user ] Perfect. Thank you so much.
-[142.03s][moshi] You’re very welcome. It’s good to see you’re taking time for self-care.
-[143.53s][user ] «backchannel» Yeah.
-[146.61s][user ] I feel a lot better having that sorted.
-[148.98s][moshi] That's wonderful to hear. Remember, a little planning can make a big difference in managing your day.
-[153.77s][user ] «backchannel» Yeah.
-[155.60s][user ] I think you're right. I appreciate your help, Driaus.
-[158.50s][moshi] It was my pleasure to assist you. Enjoy your run and your massage.
+[  0.00s][user ] I'm trying to get a better handle on my mornings. It feels so rushed.
+[  4.29s][moshi] A rushed morning can set the tone for the whole day. Let’s explore how to create a calmer start.
+[ 11.80s][user ] Well, I need to know the weather first thing…
+[ 16.02s][user ] …so I don't pick the wrong ⟨ret@17.80s⟩ clothes.
+[ 18.04s][moshi] It is currently ⟦⚡SPAN@19.80s: (tool result) 25.0°C, humidity 68%, wind 7.2 km/h⟧ 25.0 degrees Celsius in Seoul, with 68 percent humidity and wind at 7.2 kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul"}}
+[ 23.50s][user ] «backchannel» Yeah.
+[ 27.33s][user ] Okay, that’s good to know.
+[ 28.87s][moshi] Knowing the temperature allows for a more deliberate choice of clothing, reducing morning stress.
+[ 31.03s][user ] «backchannel» Yeah.
+[ 34.43s][user ] I also need to check if there’s traffic on my way ⟨ret@37.12s⟩ to work.
+[ 37.52s][moshi] The drive from ⟦⚡SPAN@39.12s: (tool result) 3.4 km, 12 minutes, moderate traffic⟧ Seoul to Gangnam is 3.4 kilometers, taking approximately 12 minutes with moderate traffic.
+      CALL: {"function": "map_directions", "arguments": {"origin": "Seoul", "destination": "Gangnam"}}
+[ 44.70s][user ] Hmm, 12 minutes... that's not terrible.
+[ 47.58s][moshi] Even moderate traffic is manageable with a little preparation. Would you like me to set a reminder?
+[ 49.79s][user ] «backchannel» Yeah.
+[ 53.38s][user ] Yes, please. Remind me to leave at ⟨ret@56.56s⟩ 8:15.
+[ 56.88s][moshi] ⟦⚡SPAN@57.06s: (tool result) Alarm set for 08:15, id 78a92b⟧ I’ve set an alarm for 8:15, confirmation id 78a92b.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "08:15"}}
+[ 60.77s][user ] «backchannel» Yeah.
+[ 62.63s][user ] Great, thanks. I also want to listen to some music while I get ready.
+[ 66.89s][moshi] ⟨ret@66.81s⟩ Now playing “Weightless” ⟦⚡SPAN@68.81s: (tool result) Weightless — Marconi Union (2011)⟧ by Marconi Union, from the year 2011.
+      CALL: {"function": "Music_3_PlayMedia", "arguments": {"title": "Weightless"}}
+[ 74.22s][user ] That’s lovely.
+[ 75.14s][moshi] Music can be a wonderful way to create a peaceful atmosphere to begin your day.
+[ 76.86s][user ] «backchannel» Yeah.
+[ 79.83s][user ] I think that covers it. Thank you, Driaus.
+[ 82.59s][moshi] You’re very welcome. A structured start can truly transform your mornings.

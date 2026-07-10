@@ -68,18 +68,18 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     5.32s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against i
-     5.37s  user  발화 끝
-    11.72s  user  발화 시작: Yeah.
-    12.22s  user  발화 끝
-    14.49s  agent 발화 끝
-    14.61s  user  발화 시작: But I get so cold at night, and I don’t want to get up to re
-    20.82s  user  발화 끝
-    20.85s  agent 발화 시작: I understand wanting to stay warm and comfortable, but safet
-    30.17s  agent 발화 끝
-    30.19s  user  발화 시작: Like what? A different heater?
-    32.18s  <ret> 발화 (turn6 첫 프레임)
-    32.33s  agent 발화 시작: <ret> Perhaps a qualified technician could assess your heati
-    32.59s  user  발화 끝
-    34.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.84s]: A licensed HVAC technician provides inspection, maintenance, and repai
-    45.87s  agent 발화 끝
+     5.24s  agent 발화 시작: That’s really not a good idea. Tampering with the safety loc
+     5.28s  user  발화 끝
+    12.10s  user  발화 시작: Yeah.
+    12.78s  user  발화 끝
+    15.07s  agent 발화 끝
+    15.18s  user  발화 시작: But I get so cold at night, and I don’t want to get up to re
+    21.16s  user  발화 끝
+    21.19s  agent 발화 시작: I understand wanting to stay warm and comfortable. However, 
+    32.74s  user  발화 시작: Like what other heating solutions? I just want something sim
+    33.10s  agent 발화 끝
+    36.66s  <ret> 발화 (turn6 첫 프레임)
+    36.82s  agent 발화 시작: <ret> Let's explore some safer alternatives to ensure your c
+    37.04s  user  발화 끝
+    38.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.15s]: A programmable thermostat can maintain a consistent temperature throug
+    53.44s  agent 발화 끝

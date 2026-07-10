@@ -60,67 +60,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Actually, what’s the weather like  | S3 Yes, what time will it be there wh | S4 That's helpful, thank you. I’m a l
+# EXAMINER(FDB-v2) 단계: S1 How many senators are there in the | S2 Four hundred fifty meters… hmm. Wh | S3 Oh, alright. Maybe I'll just call  | S4 Thank you, Nias. You've been very 
 
      0.00s  user  발화 시작: How many senators are there in the French Senate?
-     2.61s  <ret> 발화 (turn1 첫 프레임)
-     2.69s  agent 발화 시작: <ret> I’m afraid I couldn’t find a specific number for the F
-     2.86s  user  발화 끝
-     4.29s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.44s]: (no information found)
-     4.70s  user  발화 시작: Mhm.
-     5.42s  user  발화 끝
-     7.13s  agent 발화 끝
-     7.91s  user  발화 시작: Oh, uhhh, that’s okay. What about the US Senate?
-    10.66s  <ret> 발화 (turn4 첫 프레임)
-    10.90s  agent 발화 시작: <ret> The US Senate has one hundred senators, two from each 
-    11.10s  user  발화 끝
-    11.94s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.97s]: The United States Senate is composed of one hundred senators.
-    15.75s  user  발화 시작: Okay.
-    16.57s  user  발화 끝
-    18.87s  agent 발화 끝
-    19.01s  user  발화 시작: Hmm, interesting. Could you find me a good restaurant nearby
-    23.35s  <ret> 발화 (turn7 첫 프레임)
-    23.59s  agent 발화 시작: <ret> La Petite Maison, a French restaurant, is six hundred 
-    23.73s  user  발화 끝
-    25.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) La Petite Maison is a French restaurant 650 meters away.
-    30.59s  user  발화 시작: Actually, what’s the weather like right now?
-    30.95s  agent 발화 끝
-    32.80s  <ret> 발화 (turn9 첫 프레임)
-    33.11s  agent 발화 시작: <ret> The current weather is twenty-one point five degrees C
-    33.18s  user  발화 끝
-    34.32s  ⚡SPAN 주입 [d'=1.52s / d_lead=9.56s]: (tool result) It is 21.5°C, humidity 68%, wind 3.2 km/h.
-    36.19s  user  발화 시작: Yeah, yeah.
-    37.47s  user  발화 끝
-    42.67s  agent 발화 끝
-    42.70s  user  발화 시작: That sounds nice. I'm planning a trip to Seoul next week.
-    47.06s  user  발화 끝
-    47.36s  agent 발화 시작: That sounds lovely! Seoul is a beautiful city. Is there anyt
-    53.71s  user  발화 시작: Yes, what time will it be there when it’s two PM here?
-    53.80s  agent 발화 끝
-    57.04s  <ret> 발화 (turn14 첫 프레임)
-    57.36s  agent 발화 시작: <ret> It’s currently seven PM in Seoul, Asia. That's a signi
-    57.54s  user  발화 끝
-    59.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) It is Friday, July 10, 2026 at 7:00 PM in Asia/Seoul rig
-    63.15s  agent 발화 끝
-    64.52s  user  발화 시작: Wow, that’s a big difference. Can you look up some good attr
-    68.10s  <ret> 발화 (turn16 첫 프레임)
-    68.35s  agent 발화 시작: <ret> Gyeongbokgung Palace is a well-known attraction in Seo
-    68.60s  user  발화 끝
-    70.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.63s]: (tool result) Gyeongbokgung Palace is a popular attraction in Seoul.
-    72.13s  user  발화 시작: Okay.
-    72.95s  user  발화 끝
-    73.85s  user  발화 시작: A palace sounds perfect! Uh, do you have any advice for deal
-    73.98s  agent 발화 끝
-    78.91s  agent 발화 시작: Jet lag can be tough. Try adjusting your sleep schedule a fe
-    78.94s  user  발화 끝
-    83.52s  user  발화 시작: Right.
-    84.29s  user  발화 끝
-    85.71s  user  발화 시작: That's helpful, thank you. I’m a little anxious about the fl
-    86.05s  agent 발화 끝
-    89.41s  agent 발화 시작: It’s completely normal to feel anxious before flying. Perhap
-    89.55s  user  발화 끝
-    95.25s  agent 발화 끝
-    95.52s  user  발화 시작: That’s a good idea. Thanks, Nias.
-    98.03s  agent 발화 시작: You’re very welcome. Wishing you a smooth journey and a wond
-    98.06s  user  발화 끝
-   103.22s  agent 발화 끝
+     2.59s  user  발화 끝
+     2.64s  <ret> 발화 (turn1 첫 프레임)
+     2.72s  agent 발화 시작: <ret> I'm afraid I couldn't find that information for you. I
+     4.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (no information found)
+     5.18s  user  발화 시작: Mhm.
+     5.64s  user  발화 끝
+     8.19s  agent 발화 끝
+     8.88s  user  발화 시작: Oh, that’s okay. Well, what about the US Senate? How many se
+    13.09s  <ret> 발화 (turn4 첫 프레임)
+    13.33s  agent 발화 시작: <ret> There are one hundred senators in the US Senate, with 
+    13.46s  user  발화 끝
+    14.37s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.37s]: The United States Senate is composed of one hundred senators, two from
+    17.79s  user  발화 시작: Okay.
+    18.42s  user  발화 끝
+    20.70s  agent 발화 끝
+    20.84s  user  발화 시작: Hmm, interesting. Could you find me a good Italian restauran
+    25.60s  <ret> 발화 (turn7 첫 프레임)
+    25.84s  agent 발화 시작: <ret> There are three Italian restaurants nearby: Trattoria 
+    26.03s  user  발화 끝
+    27.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) Trattoria Romana, (34.0522, -118.2437), 123 Main Street,
+    36.75s  user  발화 시작: Four hundred fifty meters… hmm. What’s the weather like ther
+    37.12s  agent 발화 끝
+    42.46s  <ret> 발화 (turn9 첫 프레임)
+    42.70s  agent 발화 시작: <ret> It’s twenty-one point one degrees Celsius with sixty-e
+    42.77s  user  발화 끝
+    44.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.59s]: (tool result) 21.1°C, humidity 68%, wind 8.2 km/h
+    46.46s  user  발화 시작: Yeah, yeah.
+    47.28s  user  발화 끝
+    54.29s  agent 발화 끝
+    54.44s  user  발화 시작: That sounds lovely. Do they have outdoor seating?
+    57.76s  user  발화 끝
+    58.32s  agent 발화 시작: That’s something I’m unable to check directly, I'm sorry. I 
+    64.59s  user  발화 시작: Oh, alright. Maybe I'll just call them. What time is it righ
+    64.67s  agent 발화 끝
+    67.96s  <ret> 발화 (turn14 첫 프레임)
+    68.36s  agent 발화 시작: <ret> It's Friday, July tenth, two thousand twenty-six, at s
+    68.53s  user  발화 끝
+    69.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) It is Friday, July 10, 2026 at 6:47 PM in America/Los An
+    75.44s  agent 발화 끝
+    76.75s  user  발화 시작: Okay, good to know. I think I’ll make a reservation then.
+    80.10s  agent 발화 시작: Wonderful. I'm glad I could help you find a place for dinner
+    80.22s  user  발화 끝
+    82.57s  user  발화 시작: Okay.
+    83.25s  user  발화 끝
+    83.75s  user  발화 시작: Thank you, Nias. You've been very helpful.
+    83.85s  agent 발화 끝
+    86.12s  agent 발화 시작: You're very welcome. It's my pleasure to assist you in findi
+    86.14s  user  발화 끝
+    90.62s  user  발화 시작: Right.
+    91.12s  user  발화 끝
+    92.76s  user  발화 시작: I appreciate that. I think I'm all set for now.
+    93.11s  agent 발화 끝
+    95.66s  agent 발화 시작: Take care, and enjoy your evening.
+    95.85s  user  발화 끝
+    98.01s  agent 발화 끝

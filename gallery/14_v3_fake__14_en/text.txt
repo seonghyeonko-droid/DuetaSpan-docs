@@ -56,29 +56,27 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who wrote “My Love, My Life”? It’s from Mamma Mia!.
-[  4.22s][moshi] ⟨ret@3.98s⟩ That song was written ⟦⚡SPAN@5.98s: Björn Ulvaeus wrote “My Love, My Life” for the musical Mamma Mia!.⟧ by Björn Ulvaeus, actually. It’s a beautiful piece, isn't it?
-[  9.56s][user ] Hmm, yeah, it is. Is he in ABBA?
-[ 13.52s][moshi] ⟨ret@13.29s⟩ Yes, he is! ⟦⚡SPAN@15.29s: Björn Ulvaeus is a member of the Swedish pop group ABBA.⟧ Björn Ulvaeus was one of the founding members of ABBA, alongside Benny Andersson.
-[ 20.91s][user ] Oh, okay, so he writes music for both?
-[ 23.84s][moshi] He does. Both Benny Andersson and Björn Ulvaeus were the primary songwriters for ABBA.
-[ 26.44s][user ] «backchannel» Yeah.
-[ 30.36s][user ] That’s interesting. What else has Björn Ulvaeus ⟨ret@33.86s⟩ written?
-[ 34.09s][moshi] He co-wrote the musical ⟦⚡SPAN@35.86s: Björn Ulvaeus co-wrote the musical Chess, with Benny Andersson and Tim Rice.⟧ *Chess* with Benny Andersson and Tim Rice, a very different style of work.
-[ 36.50s][user ] «backchannel» Yeah.
-[ 42.16s][user ] Chess? Like, the ⟨ret@44.00s⟩ game?
-[ 44.32s][moshi] ⟦⚡SPAN IRRELEVANT@44.50s: The current weather in Reykjavik, Iceland is 8.0°C, humidity 88%, wind 7.2 km/h.⟧ It's a conceptual musical set in the world of competitive chess, a fascinating story.
-[ 49.82s][moshi] Settling into a new city can feel overwhelming, but exploring different art forms can be a lovely distraction.
-[ 54.95s][user ] «backchannel» Uh-huh.
-[ 57.33s][user ] I guess so. What kind of music does Benny Andersson ⟨ret@61.05s⟩ write?
-[ 61.21s][moshi] Benny Andersson’s ⟦⚡SPAN@62.41s: Benny Andersson is known for writing music with a strong melodic and harmonic focus.⟧ music is known for its strong melodies and harmonic richness.
-[ 64.07s][user ] «backchannel» Uh-huh.
-[ 66.01s][moshi] It certainly does. Their combined talents created such iconic songs.
-[ 69.87s][user ] «backchannel» Yeah.
-[ 71.10s][user ] So they worked together on Mamma Mia! ⟨ret@73.76s⟩ too?
-[ 74.06s][moshi] Yes, they collaborated on ⟦⚡SPAN@75.76s: Björn Ulvaeus and Benny Andersson wrote the music and lyrics for Mamma Mia!.⟧ the music and lyrics for *Mamma Mia!* as well.
-[ 75.99s][user ] «backchannel» Yeah.
-[ 78.58s][user ] Wow, they’re a dynamic duo.
-[ 80.80s][moshi] They truly are. It's wonderful when creative partnerships work so seamlessly.
-[ 86.33s][user ] I think I'll listen to some ABBA now.
-[ 88.63s][moshi] That sounds like a lovely idea. Enjoy your music!
+[  0.00s][user ] Do you know who wrote "My Love, My Life" from Mamma Mia? It's such a beautiful song.
+[  5.97s][moshi] ⟨ret@5.74s⟩ That song was written ⟦⚡SPAN@7.74s: Björn Ulvaeus wrote "My Love, My Life" as a song for his wife, Agnetha Fältskog.⟧ by Björn Ulvaeus, actually, as a gift for his wife, Agnetha. It’s lovely he expressed his feelings that way.
+[ 15.02s][user ] Oh, wow, that's really sweet! Did he write a lot of ABBA songs?
+[ 19.29s][moshi] ⟨ret@19.06s⟩ Yes, Björn Ulvaeus ⟦⚡SPAN@21.06s: Björn Ulvaeus and Benny Andersson wrote nearly all of ABBA's songs together.⟧ collaborated very closely with Benny Andersson; together, they wrote almost all of ABBA’s songs.
+[ 27.30s][user ] That's amazing! They were a really good team. Um… I'm thinking of moving to the city.
+[ 33.23s][moshi] Moving can be a big step, but a positive one. What are you hoping to find in a new city?
+[ 41.19s][user ] Well, I’m looking for somewhere with a good music scene, and maybe some parks.
+[ 45.74s][moshi] A vibrant music scene and green spaces are wonderful priorities. Are you thinking of a particular city already?
+[ 54.48s][user ] Not really, I was just wondering what the weather is like in Seattle right ⟨ret@58.68s⟩ now.
+[ 58.92s][moshi] It is currently ⟦⚡SPAN@60.68s: (tool result) 18.9°C, humidity 68%, wind 2.8 km/h.⟧ 18.9 degrees Celsius in Seattle, with 68% humidity and a 2.8 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seattle"}}
+[ 63.06s][user ] «backchannel» Oh.
+[ 69.02s][user ] Okay, that doesn’t sound too bad. Are there any good restaurants around Pike Place ⟨ret@74.23s⟩ Market?
+[ 74.38s][moshi] There’s The Pink ⟦⚡SPAN@76.23s: (tool result) The Pink Door (47.6062, -122.3321) 450 meters, Lowell's Restaurant (47.6058, -122.3317) 200 mete⟧ Door, four hundred and fifty meters away, Lowell's Restaurant, two hundred meters, and Matt's in the Market, just one hundred meters away.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Pike Place Market"}}
+[ 78.53s][user ] «backchannel» Yeah.
+[ 85.53s][user ] Wow, that’s really close! Hmm… I’m also curious…
+[ 92.87s][user ] …about the stock price for Tesla.
+[ 94.99s][moshi] ⟨ret@94.92s⟩ Tesla, ticker TSLA, ⟦⚡SPAN@96.92s: (tool result) Tesla (TSLA) is trading at 177.89 USD, up 2.1% today.⟧ is currently trading at one hundred and seventy-seven dollars and eighty-nine cents, with a 2.1% increase today.
+      CALL: {"function": "get_stock_price_global_market", "arguments": {"ticker": "TSLA"}}
+[104.95s][user ] That’s good to know. Thanks for all the ⟨ret@107.84s⟩ information!
+[108.16s][moshi] You’re very ⟦⚡SPAN IRRELEVANT@109.20s: The average high temperature in Ulaanbaatar, Mongolia, in January is -25.5°C.⟧ welcome. I’m glad I could help you explore those ideas today.
+[112.80s][user ] I think I'm going to start looking at apartments in Seattle.
+[115.70s][moshi] That sounds like a wonderful next step. I wish you all the best with your apartment search, and settling into the city.

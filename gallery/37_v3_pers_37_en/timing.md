@@ -60,16 +60,16 @@
 
 
      0.00s  agent 발화 시작: Hello Jamie, welcome. I’m Hunar, and I’m here to offer suppo
-     2.44s  user  발화 시작: Mm-hmm.
-     3.07s  user  발화 끝
-     8.25s  agent 발화 끝
-     9.12s  user  발화 시작: Hunar… that’s a beautiful name. I’m just feeling a bit overw
-    15.84s  user  발화 끝
-    16.26s  agent 발화 시작: It’s perfectly natural to feel overwhelmed, Jamie. What feel
-    21.02s  user  발화 시작: Mhm.
-    21.74s  user  발화 끝
-    24.82s  user  발화 시작: I guess… finding a good walking group. Something to help me 
-    25.21s  agent 발화 끝
-    31.54s  agent 발화 시작: That's a lovely goal, Jamie. Connecting with others through 
-    31.68s  user  발화 끝
-    42.54s  agent 발화 끝
+     8.02s  agent 발화 끝
+     8.40s  user  발화 시작: Hunar… that’s a beautiful name. It sounds… peaceful. I’m jus
+    14.74s  agent 발화 시작: Thank you, Jamie. Overwhelmed is perfectly understandable. W
+    14.84s  user  발화 끝
+    22.20s  agent 발화 끝
+    23.01s  user  발화 시작: Uhhh, well, I keep second-guessing if I made the right choic
+    28.98s  user  발화 끝
+    29.38s  agent 발화 시작: It’s natural to feel that pull, Jamie. Nostalgia is a powerf
+    37.49s  agent 발화 끝
+    37.50s  user  발화 시작: Just… knowing everyone. Being able to walk everywhere. It fe
+    45.39s  agent 발화 시작: That sense of connection is truly important. Perhaps explori
+    45.56s  user  발화 끝
+    53.41s  agent 발화 끝

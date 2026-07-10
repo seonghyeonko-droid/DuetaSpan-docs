@@ -66,43 +66,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 버스표 세 장, 오월 십일에 보여줘. | S2 아침 여덟시 출발이면 너무 일러.… | S3 그럼 두시 출발하는 걸로 해줘. | S4 메이븐 호텔이 제일 저렴하네. 거기가 어디쯤에 있는지 알려줄 
+# EXAMINER(FDB-v2) 단계: S1 시카고에서 덴버까지 버스표 세 장, 오월 십일에 보여줘. | S2 그럼 플릭스버스로 예약해 줘. | S3 혹시 덴버에 도착해서 바로 근처에 괜찮은 호텔 있어? | S4 그 호텔 예약도 좀 해 줘. 오월 십일에서 십이일까지…
 
      0.00s  user  발화 시작: 시카고에서 덴버까지 버스표 세 장, 오월 십일에 보여줘.
-     4.58s  <ret> 발화 (turn1 첫 프레임)
-     4.76s  user  발화 끝
-     4.89s  agent 발화 시작: <ret> 시카고에서 덴버까지 오월 십일 버스표는 그레이하운드 백팔십오달러에 스무시간 삼십분, 플릭스버스 백
-     6.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) Chicago, IL to Denver, CO, May 10, 2026, 3 passengers: G
-    10.40s  user  발화 시작: 와.
-    11.08s  user  발화 끝
-    13.65s  agent 발화 끝
-    13.86s  user  발화 시작: 플릭스버스가 더 싸네. 그거 좀 더 자세히 알려줄래?
-    17.67s  <ret> 발화 (turn4 첫 프레임)
-    18.06s  agent 발화 시작: <ret> 플릭스버스는 오월 십일 아침 여덟시에 출발해서 다음 날 오전 여섯시에 도착하고, 세 분 요금은 백
-    18.07s  user  발화 끝
-    19.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.24s]: (tool result) FlixBus, Chicago to Denver, May 10, 2026, 3 passengers: 
-    26.30s  agent 발화 끝
-    27.64s  user  발화 시작: 아침 여덟시 출발이면 너무 일러.…
-    30.19s  user  발화 끝
-    32.10s  user  발화 시작: …좀 더 늦게 출발하는 거 있어?
-    33.28s  <ret> 발화 (turn7 첫 프레임)
-    33.67s  agent 발화 시작: <ret> 플릭스버스 중 오후 열두시 이후 출발하는 건 오후 두시에 출발해서 다음 날 오전 열시에 도착하고,
-    33.85s  user  발화 끝
-    35.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: (tool result) FlixBus, Chicago to Denver, May 10, 2026, 3 passengers: 
-    38.89s  user  발화 시작: 대박.
-    39.53s  user  발화 끝
-    41.88s  agent 발화 끝
-    41.95s  user  발화 시작: 그럼 두시 출발하는 걸로 해줘.
-    43.82s  <ret> 발화 (turn10 첫 프레임)
-    43.98s  user  발화 끝
-    44.21s  agent 발화 시작: <ret> 플릭스버스, 시카고에서 덴버 가는 오월 십일 오후 두시 출발, 세 분 예약 완료되었습니다. 확인 
-    45.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.29s]: (tool result) FlixBus, Chicago to Denver, May 10, 2026, 3 passengers, 
-    54.51s  agent 발화 끝
-    55.56s  user  발화 시작: 혹시 덴버 근처에 괜찮은 호텔도 알아봐 줄 수 있어?
-    58.81s  <ret> 발화 (turn12 첫 프레임)
-    58.95s  agent 발화 시작: <ret> 덴버에는 메이븐 호텔이 일박에 이백오십달러, 브라운 팰리스 호텔 삼백달러, 하얏트 리젠시 덴버가 
-    59.22s  user  발화 끝
-    60.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) Denver, CO: The Maven Hotel at Dairy Block, $250/night; 
-    66.98s  user  발화 시작: 메이븐 호텔이 제일 저렴하네. 거기가 어디쯤에 있는지 알려줄 수 있어?
-    67.06s  agent 발화 끝
-    71.47s  user  발화 끝
+     3.79s  <ret> 발화 (turn1 첫 프레임)
+     4.02s  user  발화 끝
+     4.10s  agent 발화 시작: <ret> 시카고에서 덴버까지 오월 십일에 출발하는 버스는 그레이하운드와 플릭스버스가 있습니다. 그레이하운드
+     5.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.17s]: (tool result) 2 buses found: Greyhound, $185.00 (15h 30m); FlixBus, $1
+    11.31s  user  발화 시작: 와.
+    12.04s  user  발화 끝
+    15.27s  agent 발화 끝
+    15.56s  user  발화 시작: 플릭스버스가 더 싸네. 시간은 좀 더 걸리지만.
+    18.75s  user  발화 끝
+    18.91s  agent 발화 시작: 네, 플릭스버스가 조금 더 저렴하지만, 이동 시간이 삼십분 더 걸립니다.
+    23.22s  agent 발화 끝
+    24.50s  user  발화 시작: 그럼 플릭스버스로 예약해 줘.
+    26.07s  <ret> 발화 (turn6 첫 프레임)
+    26.38s  agent 발화 시작: <ret> 플릭스버스 예약이 완료되었습니다. 시카고에서 덴버까지 오월 십일, 세 분이시죠. 총 사백팔십육달러
+    26.43s  user  발화 끝
+    27.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=10.76s]: (tool result) Booking confirmed: FlixBus, Chicago to Denver, May 10th,
+    33.18s  user  발화 시작: 대박.
+    33.81s  user  발화 끝
+    37.05s  user  발화 시작: 확인번호 다시 한 번만 말해 줄래?
+    37.13s  agent 발화 끝
+    39.05s  agent 발화 시작: 확인번호는 BX78921입니다.
+    39.16s  user  발화 끝
+    42.09s  user  발화 시작: 혹시 덴버에 도착해서 바로 근처에 괜찮은 호텔 있어?
+    42.10s  agent 발화 끝
+    45.70s  <ret> 발화 (turn11 첫 프레임)
+    46.09s  agent 발화 시작: <ret> 덴버 도착 근처에는 메이븐 호텔, 커티스 호텔, 하얏트 하우스 덴버/다운타운이 있습니다. 가격은 
+    46.11s  user  발화 끝
+    47.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.88s]: (tool result) The Maven Hotel at Dairy Block, 4.5 stars, $250/night; T
+    55.90s  user  발화 시작: 메이븐 호텔이 제일 좋나 보네.
+    55.97s  agent 발화 끝
+    57.83s  agent 발화 시작: 네, 메이븐 호텔은 평점이 사 점 오점으로 가장 높습니다.
+    57.93s  user  발화 끝
+    62.23s  agent 발화 끝
+    63.19s  user  발화 시작: 그 호텔 예약도 좀 해 줘. 오월 십일에서 십이일까지…
+    67.11s  user  발화 끝
+    68.54s  user  발화 시작: …이박 삼일로.
+    69.97s  user  발화 끝

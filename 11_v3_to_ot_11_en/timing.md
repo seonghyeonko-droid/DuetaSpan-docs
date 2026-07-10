@@ -68,23 +68,21 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, do you happen to know when th | S2 Wow, that was a while ago. I thoug | S3 He’s such a know-it-all, honestly… | S4 Sorry about that. Anyway, I’m tryi
+# EXAMINER(FDB-v2) 단계: S1 Hey, do you know the last time the | S2 Wow, really? That was… a while bac | S3 Sorry about that. So, 2018… that’s | S4 I guess so. It's just frustrating 
 
-     0.00s  user  발화 시작: Hey, do you happen to know when the A’s were last no-hit? I’
-     4.92s  <ret> 발화 (turn1 첫 프레임)
-     5.30s  agent 발화 시작: <ret> That would have been April twenty-first, two thousand 
-     5.46s  user  발화 끝
-     6.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: The Oakland Athletics were last no-hit on April 21, 2018.
-    12.53s  user  발화 시작: Wow, that was a while ago. I thought it was more recent.
-    12.68s  agent 발화 끝
-    15.91s  user  발화 끝
-    16.01s  agent 발화 시작: It’s easy to lose track of time, especially with sports! Do 
-    22.96s  agent 발화 끝
-    23.06s  user  발화 시작: He’s such a know-it-all, honestly…
-    25.55s  user  발화 끝
-    27.37s  user  발화 시작: Sorry about that. Anyway, I’m trying to find a good sleep sc
-    31.06s  <ret> 발화 (turn6 첫 프레임)
-    31.20s  user  발화 끝
-    31.30s  agent 발화 시작: <ret> A consistent schedule really is key, yes. Aim to go to
-    33.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: Consistent sleep schedules promote better sleep quality and daytime al
-    38.45s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, do you know the last time the Oakland A's were no-hit? 
+     4.17s  <ret> 발화 (turn1 첫 프레임)
+     4.56s  agent 발화 시작: <ret> That happened on April twenty-first, two thousand eigh
+     4.72s  user  발화 끝
+     6.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: The Oakland Athletics were last no-hit on April 21, 2018.
+    11.18s  user  발화 시작: Wow, really? That was… a while back. Uh, honey, can you grab
+    11.33s  agent 발화 끝
+    17.25s  user  발화 시작: Sorry about that. So, 2018… that’s quite a stretch.
+    17.43s  user  발화 끝
+    21.09s  agent 발화 시작: It is a significant gap, yes. It’s understandable to feel li
+    21.18s  user  발화 끝
+    29.44s  agent 발화 끝
+    29.57s  user  발화 시작: I guess so. It's just frustrating as a fan.
+    32.35s  user  발화 끝
+    32.39s  agent 발화 시작: Being a fan definitely has its ups and downs, doesn't it? So
+    40.69s  agent 발화 끝

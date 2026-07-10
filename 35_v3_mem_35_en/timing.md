@@ -66,35 +66,24 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Oh, hi Klen. I’m planning a trip t | S2 That sounds pretty good, actually— | S3 …but what about the wildflower sea | S4 That’s great to know. Thanks, Klen
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I'm a counselor here to help with your f
-     5.46s  agent 발화 끝
-     6.23s  user  발화 시작: Oh, hi Klen. I’m planning a trip to New Zealand in March, an
-    12.50s  <ret> 발화 (turn2 첫 프레임)
-    12.90s  agent 발화 시작: <ret> You mentioned planning a trip to New Zealand in March—
-    13.00s  user  발화 끝
-    14.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    18.22s  user  발화 시작: Mm-hmm.
-    19.04s  user  발화 끝
-    20.13s  agent 발화 끝
-    21.08s  user  발화 시작: Yes, that’s right. Do you think you could look for some one-
-    25.71s  user  발화 끝
-    25.89s  <ret> 발화 (turn5 첫 프레임)
-    25.97s  agent 발화 시작: <ret> A one-way flight to Auckland, New Zealand, is availabl
-    27.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.15s]: (tool result) Auckland (AKL), New Zealand is available from Toronto (Y
-    38.12s  agent 발화 끝
-    38.31s  user  발화 시작: That sounds pretty good, actually—
-    40.15s  user  발화 시작: …but what about the wildflower season there? Is March a good
-    40.15s  user  발화 끝
-    44.85s  <ret> 발화 (turn8 첫 프레임)
-    45.05s  user  발화 끝
-    45.09s  agent 발화 시작: <ret> The alpine wildflower season peaks December to Februar
-    46.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) The alpine wildflower season in New Zealand typically pe
-    48.29s  user  발화 시작: Mm-hmm.
-    48.92s  user  발화 끝
-    54.77s  agent 발화 끝
-    55.17s  user  발화 시작: That’s great to know. Thanks, Klen.
-    57.10s  user  발화 끝
-    57.50s  agent 발화 시작: You're very welcome, Avery. I'm glad I could help with your 
-    62.21s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you're planning a trip to N
+     4.35s  agent 발화 끝
+     5.15s  user  발화 시작: Yeah, March next year. I was hoping you could suggest some g
+    11.65s  <ret> 발화 (turn2 첫 프레임)
+    12.05s  agent 발화 시작: <ret> You mentioned your interest in alpine wildflowers—that
+    12.19s  user  발화 끝
+    13.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [2025-08-26] User is into alpine wildflower photography.
+    16.32s  user  발화 시작: Mm-hmm.
+    16.91s  user  발화 끝
+    17.73s  agent 발화 시작: Mount Cook National Park is renowned for its stunning displa
+    17.84s  agent 발화 끝
+    24.12s  agent 발화 끝
+    24.14s  user  발화 시작: That sounds amazing! Is it pretty accessible by public trans
+    30.12s  user  발화 시작: …Actually, before we get into transport, what’s the weather 
+    30.30s  user  발화 끝
+    35.19s  <ret> 발화 (turn7 첫 프레임)
+    35.35s  user  발화 끝
+    35.35s  agent 발화 시작: <ret> Mount Cook Village is at latitude forty-three point ni
+    37.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: (tool result) Mount Cook Village, New Zealand is 43.9983°S, 170.1358°E
+    48.29s  agent 발화 끝
