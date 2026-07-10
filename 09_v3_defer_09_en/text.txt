@@ -69,17 +69,21 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I’m hoping to book three rooms at Ocean View Hotel in San Diego for seven nights starting on ⟨ret@5.13s⟩ February tenth.
-[  5.37s][moshi] I’ve reserved three rooms ⟦⚡SPAN@7.13s: (tool result) Ocean View Hotel, San Diego, 3 rooms, 2026-02-10 to 2026-02-17, total $2850.00, confirmation ID ⟧ at the Ocean View Hotel in San Diego for seven nights, starting February tenth, with a total cost of two thousand eight hundred fifty dollars. Your confirmation ID is 7a9b2c.
-      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "num_rooms": "3", "start_date": "2026-02-10", "duration": "7"}}
-[ 13.21s][user ] «backchannel» Right.
-[ 21.66s][user ] That sounds perfect. Do they have…
-[ 25.93s][user ] …a shuttle service to the ⟨ret@27.65s⟩ airport?
-[ 27.80s][moshi] Yes, the Ocean View ⟦⚡SPAN@29.65s: (tool result) Ocean View Hotel, San Diego: airport shuttle available, runs every 30 minutes.⟧ Hotel does offer an airport shuttle, running every thirty minutes. It’s quite convenient.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "amenities": "airport shuttle"}}
-[ 34.96s][user ] That’s great—
-[ 35.88s][user ] …actually, before we finalize, could you check if they allow ⟨ret@39.30s⟩ pets?
-[ 39.54s][moshi] They do allow pets ⟦⚡SPAN@41.30s: (tool result) Ocean View Hotel, San Diego: pets allowed, $75 per pet per night.⟧ at the Ocean View Hotel, with a seventy-five dollar fee per pet, per night.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "pet_friendly": "true"}}
-[ 46.21s][user ] Okay, good to know. Let’s go ahead and confirm the booking as is then.
-[ 49.93s][moshi] Wonderful. I’m glad the pet policy works for you. Your trip sounds like it’s shaping up nicely.
+[  0.00s][user ] I’d like to book three rooms at Ocean View Hotel…
+[  3.99s][user ] …in San Diego for seven nights starting on February ⟨ret@6.83s⟩ tenth.
+[  7.07s][moshi] I’ve reserved three ⟦⚡SPAN@8.83s: (tool result) Ocean View Hotel, San Diego, 3 rooms reserved for 7 nights starting February 10th, 2026, confirm⟧ rooms at Ocean View Hotel in San Diego for seven nights beginning February tenth, two thousand twenty-six. Your confirmation ID is eight-nine-x-zee-two-four. That sounds lovely.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "number_of_rooms": "3", "start_date": "February tenth", "duration": "7 nights"}}
+[ 16.97s][user ] «backchannel» Mm-hmm.
+[ 20.92s][user ] What’s the weather typically like in San Diego in ⟨ret@23.92s⟩ February?
+[ 24.08s][moshi] The typical February ⟦⚡SPAN@25.92s: (tool result) 18.3°C, humidity 68%, wind 8.1 km/h.⟧ weather in San Diego is eighteen point three degrees Celsius, with sixty-eight percent humidity and winds at eight point one kilometers per hour.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"city": "San Diego", "date": "February"}}
+[ 35.76s][user ] Are there any good Italian restaurants ⟨ret@38.16s⟩ nearby?
+[ 38.55s][moshi] There are several ⟦⚡SPAN@40.16s: (tool result) San Diego (32.7157,-117.1611): Little Italy (500m), Buca di Beppo (800m), Filippi's Pizza Grotto⟧ Italian restaurants near you in San Diego. Little Italy is five hundred meters away, Buca di Beppo is eight hundred meters, and Filippi’s Pizza Grotto is twelve hundred meters.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "San Diego", "cuisine": "Italian"}}
+[ 51.41s][user ] Can you tell me more about ⟨ret@53.00s⟩ Little Italy?
+[ 53.40s][moshi] «interrupted» Little Italy ⟦⚡SPAN@55.00s: (tool result) Little Italy, San Diego, CA 92101, 32.7163° N, 117.1638° W. A historic neighborhood known for it⟧ is located at ninety-two-one-oh-one, with coordinates thirty-two point seven-one-six-three north, and one-one-seven point one-six-three-eight west. It’s a historic neighborhood—
+      CALL: {"function": "Maps_search_places", "arguments": {"query": "Little Italy, San Diego"}}
+[ 65.93s][user ] «interrupts_prev» …do they have outdoor seating?
+[ 67.63s][moshi] ⟨ret@67.56s⟩ Several restaurants in ⟦⚡SPAN@69.56s: (tool result) Little Italy (600m, outdoor seating available), Buca di Beppo (900m, outdoor seating available),⟧ Little Italy offer outdoor seating. Little Italy is six hundred meters away, Buca di Beppo is nine hundred, and Cafe Bella is eleven hundred.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"city": "San Diego", "cuisine": "Italian", "outdoor_seating": "true"}}
+[ 79.45s][user ] Perfect! Book

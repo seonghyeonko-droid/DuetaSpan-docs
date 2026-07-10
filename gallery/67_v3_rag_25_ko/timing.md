@@ -58,133 +58,149 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지가 무슨 스포츠를 했는지 궁금해요. | S2 이야, 대단하네요. 그럼 라파엘라 레지는 누가 상대였을까요? | S3 테니스 코치라니, 멋지네요. 잭 소크 선수는요? | S4 서로 다른 나라 출신이군요. 그럼 잭 소크 선수의 고향은 어디
+# EXAMINER(FDB-v2) 단계: S1 잭 소크랑 라파엘라 레지가 무슨 스포츠를 했는지 아세요? | S2 아니요, 그냥 갑자기 떠올라서 물어본 거예요. | S3 라파엘라 레지 선수의 키는 얼마죠? | S4 그렇군요. 그럼 두 분의 나이를 알 수 있을까요?
 
-     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지가 무슨 스포츠를 했는지 궁금해요.
-     3.69s  <ret> 발화 (turn1 첫 프레임)
-     3.75s  user  발화 끝
-     3.84s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수 모두 테니스를 쳐요. 혹시 다른 선수들에 대해서도 알아보고 싶
-     5.13s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.13s]: Jack Sock and Raffaella Reggi both play tennis.
-     6.05s  user  발화 시작: 네.
-     6.40s  user  발화 끝
-    10.97s  agent 발화 끝
-    11.47s  user  발화 시작: 음… 그 두 사람 테니스 실력이 어느 정도인지 좀 더 자세히 알려줄 수 있을까요?
-    16.38s  <ret> 발화 (turn4 첫 프레임)
-    16.53s  agent 발화 시작: <ret> 잭 소크 선수는 남자 단식 테니스에서 세계 팔위까지 오른 적이 있어요. 실력이 아주 뛰어난 선수죠
-    16.62s  user  발화 끝
-    18.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: Jack Sock has been ranked as high as world No. 8 in men's singles tenn
-    23.34s  user  발화 시작: 팔위면 꽤 높은 순위네요. 근데 라파엘라 레지는 어떤가요?
-    23.76s  agent 발화 끝
-    26.69s  <ret> 발화 (turn6 첫 프레임)
-    27.04s  user  발화 끝
-    27.07s  agent 발화 시작: <ret> 라파엘라 레지 선수는 프로 테니스 선수로 활동했고, 최고 순위가 세계 백칠십일위였어요. 꽤 괜찮은
-    28.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: Raffaella Reggi is a former professional tennis player who reached a c
-    35.14s  user  발화 시작: 백칠십일위면 잭 소크보다 훨씬 낮은 순위네요. 두 사람 경기한 적이 있나요?
-    35.28s  agent 발화 끝
-    39.36s  <ret> 발화 (turn8 첫 프레임)
-    39.72s  user  발화 끝
-    39.75s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수는 프로 테니스 경기에서 서로 맞붙은 적은 없어요. 기회가 없었
-    41.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.96s]: Jack Sock and Raffaella Reggi have never played a professional tennis 
-    47.69s  user  발화 시작: 아, 경기한 적이 없군요. 그럼 혹시 잭 소크 선수는 다른 유명 선수랑 경기한 적이 있나요?
-    47.71s  agent 발화 끝
-    52.19s  <ret> 발화 (turn10 첫 프레임)
-    52.34s  agent 발화 시작: <ret> 잭 소크 선수는 로저 페더러, 라파엘 나달, 노박 조코비치 선수와 경기한 적이 있어요. 쟁쟁한 선
-    52.56s  user  발화 끝
-    54.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Jack Sock has played against Roger Federer, Rafael Nadal, and Novak Dj
-    60.08s  agent 발화 끝
-    60.37s  user  발화 시작: 이야, 대단하네요. 그럼 라파엘라 레지는 누가 상대였을까요?
-    64.05s  <ret> 발화 (turn12 첫 프레임)
-    64.29s  agent 발화 시작: <ret> 라파엘라 레지 선수는 세레나 윌리엄스와 비너스 윌리엄스 선수와 경쟁했어요. 역시 뛰어난 선수들이었
-    64.54s  user  발화 끝
-    66.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: Raffaella Reggi competed against players such as Serena Williams and V
-    68.16s  user  발화 시작: 네.
-    68.69s  user  발화 끝
-    71.47s  agent 발화 끝
-    71.98s  user  발화 시작: 세레나 윌리엄스, 비너스 윌리엄스… 엄청난 선수들이네요. 혹시 두 사람 다 그랜드 슬램에서 우승한 적이 있나
-    79.32s  <ret> 발화 (turn15 첫 프레임)
-    79.55s  agent 발화 시작: <ret> 잭 소크 선수는 이천십팔년 US 오픈 남자 복식에서 우승했고, 라파엘라 레지 선수는 그랜드 슬램에
-    79.63s  user  발화 끝
-    80.60s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.71s]: Jack Sock won the 2018 US Open men's doubles title, while Raffaella Re
-    88.26s  agent 발화 끝
-    88.38s  user  발화 시작: 아, 잭 소크 선수만 우승했군요. 라파엘라 레지 선수는 복식은 어땠나요?
-    93.55s  <ret> 발화 (turn17 첫 프레임)
-    93.63s  agent 발화 시작: <ret> 라파엘라 레지 선수는 천구백구십구년 호주 오픈 여자 복식에서 준결승까지 진출했어요. 복식에서도 좋
-    93.84s  user  발화 끝
-    94.05s  ⚡SPAN 주입 [d'=0.50s / d_lead=9.27s]: Raffaella Reggi reached the quarterfinals of the 1999 Australian Open 
-   102.90s  agent 발화 끝
-   102.94s  user  발화 시작: 준결승이면 꽤 잘한 거네요. 두 사람 다 은퇴했나요?
-   106.54s  <ret> 발화 (turn19 첫 프레임)
-   106.64s  user  발화 끝
-   106.85s  agent 발화 시작: <ret> 잭 소크 선수는 이천이십삼년 십이월에 은퇴했고, 라파엘라 레지 선수는 이천사년에 은퇴했어요. 각자
-   108.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: Jack Sock retired from professional tennis in December 2023, while Raf
-   113.47s  user  발화 시작: 그렇군요.
-   114.20s  user  발화 끝
-   116.70s  user  발화 시작: 이천사년이면 꽤 오래됐네요. 지금은 뭐 하고 있을까요?
-   116.82s  agent 발화 끝
-   119.78s  <ret> 발화 (turn22 첫 프레임)
-   120.02s  agent 발화 시작: <ret> 라파엘라 레지 선수는 현재 이탈리아에서 테니스 코치로 활동하고 계세요. 후배 양성에 힘쓰시는 모습
-   120.21s  user  발화 끝
-   121.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: Raffaella Reggi is now a tennis coach in Italy.
-   125.33s  user  발화 시작: 음.
-   125.55s  user  발화 끝
-   127.98s  user  발화 시작: 테니스 코치라니, 멋지네요. 잭 소크 선수는요?
-   127.99s  agent 발화 끝
-   131.02s  <ret> 발화 (turn25 첫 프레임)
-   131.35s  user  발화 끝
-   131.41s  agent 발화 시작: <ret> 잭 소크 선수는 여러 사업에 참여하고 있고, 여전히 테니스 커뮤니티에서 활동하고 있어요. 다재다능
-   133.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: Jack Sock is involved in various business ventures and remains active 
-   138.36s  user  발화 시작: 사업도 한다고요? 대단하네요. 혹시 잭 소크 선수의 키가 얼마나 되나요?
-   138.50s  agent 발화 끝
-   142.79s  <ret> 발화 (turn27 첫 프레임)
-   143.18s  agent 발화 시작: <ret> 잭 소크 선수의 키는 일미터 팔십삼센티미터예요. 꽤 큰 키시죠.
-   143.40s  user  발화 끝
-   144.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: Jack Sock is 1.83 meters tall.
-   148.04s  agent 발화 끝
-   148.44s  user  발화 시작: 백팔십삼cm면 꽤 크네요. 라파엘라…
-   151.48s  user  발화 끝
-   152.56s  user  발화 시작: …레지 선수는 키가 얼마나 됐을까요?
-   154.68s  <ret> 발화 (turn30 첫 프레임)
-   155.00s  agent 발화 시작: <ret> 라파엘라 레지 선수의 키는 일미터 육십오센티미터예요. 잭 소크 선수보다는 조금 작으시죠.
-   155.05s  user  발화 끝
-   156.12s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.72s]: Raffaella Reggi is 1.65 meters tall.
-   161.72s  agent 발화 끝
-   161.89s  user  발화 시작: 그렇군요. 두 사람의 국적이 어떻게 되나요?
-   164.07s  <ret> 발화 (turn32 첫 프레임)
-   164.39s  agent 발화 시작: <ret> 잭 소크 선수는 미국 국적이고, 라파엘라 레지 선수는 이탈리아 국적이에요. 서로 다른 나라 출신이
-   164.48s  user  발화 끝
-   165.03s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.28s]: Jack Sock is American, and Raffaella Reggi is Italian.
-   168.74s  user  발화 시작: 음.
-   169.24s  user  발화 끝
-   171.58s  user  발화 시작: 서로 다른 나라 출신이군요. 그럼 잭 소크 선수의 고향은 어디인가요?
-   171.67s  agent 발화 끝
-   175.36s  <ret> 발화 (turn35 첫 프레임)
-   175.51s  agent 발화 시작: <ret> 잭 소크 선수는 미국 네브래스카주 링컨에서 태어났어요. 고향이 아름다운 곳이겠죠.
-   175.75s  user  발화 끝
-   177.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.38s]: Jack Sock was born in Lincoln, Nebraska, USA.
-   177.44s  user  발화 시작: 맞아요.
-   177.94s  user  발화 끝
-   180.88s  agent 발화 끝
-   181.80s  user  발화 시작: 네브래스카주요. 라파엘라 레지 선수의 고향은 어디인가요?
-   185.53s  <ret> 발화 (turn38 첫 프레임)
-   185.93s  agent 발화 시작: <ret> 라파엘라 레지 선수는 이탈리아 사르데냐 섬 카글리아리에서 태어났어요. 지중해의 아름다운 섬이죠.
-   186.05s  user  발화 끝
-   187.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: Raffaella Reggi was born in Cagliari, Sardinia, Italy.
-   190.40s  user  발화 시작: 네.
-   190.76s  user  발화 끝
-   192.27s  agent 발화 끝
-   192.62s  user  발화 시작: 사르데냐 섬이군요. 두 사람 다 테니스에 재능이 있었나 봐요.
-   195.53s  <ret> 발화 (turn41 첫 프레임)
-   195.92s  agent 발화 시작: <ret> 잭 소크 선수와 라파엘라 레지 선수 모두 주니어 시절부터 테니스 재능을 보였어요. 어릴 때부터 테
-   196.18s  user  발화 끝
-   197.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: Both Jack Sock and Raffaella Reggi showed early promise in tennis as j
-   204.81s  user  발화 시작: 어릴 때부터였군요. 혹시 두 사람의 생년월일도 알 수 있을까요?
-   204.96s  agent 발화 끝
-   208.35s  <ret> 발화 (turn43 첫 프레임)
-   208.75s  agent 발화 시작: <ret> 잭 소크 선수는 천구백구십이년 십일월 스물넷째 날에 태어났고, 라파엘라 레지 선수는 천구백칠십구년
-   208.92s  user  발화 끝
-   210.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.51s]: Jack Sock was born on November 24, 1992, and Raffaella Reggi was born 
-   218.26s  agent 발화 끝
-   218.51s  user  발화 시작: 그렇군요. 두 분 모두 건강하게 잘 지내셨으면 좋겠네요.
-   222.12s  agent 발화 시작: 두 분 모두 건강하고 행복하게 지내시길 저도 바랍니다. 이야기를 나눠서 즐거웠어요.
-   222.35s  user  발화 끝
-   227.39s  agent 발화 끝
+     0.00s  user  발화 시작: 잭 소크랑 라파엘라 레지가 무슨 스포츠를 했는지 아세요?
+     3.24s  <ret> 발화 (turn1 첫 프레임)
+     3.39s  agent 발화 시작: <ret> 두 분이 어떤 스포츠를 하셨는지 여쭤보셨네요.
+     3.61s  user  발화 끝
+     4.84s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.95s]: Jack Sock and Raffaella Reggi both play tennis professionally.
+     6.31s  agent 발화 시작: 잭 소크 선수와 라파엘라 레지 선수 모두 테니스를 프로 선수로 하셨습니다.
+     6.34s  agent 발화 끝
+     7.84s  user  발화 시작: 네.
+     8.29s  user  발화 끝
+    11.27s  user  발화 시작: 테니스요? 좀 이상한데요. 그런 경기 본 적 없어요.
+    11.35s  agent 발화 끝
+    14.64s  user  발화 끝
+    14.99s  agent 발화 시작: 두 분이 테니스를 하셨다는 정보가 있습니다. 혹시 다른 스포츠를 생각하고 계신 걸까요?
+    20.64s  agent 발화 끝
+    21.20s  user  발화 시작: 음, 그럴 수도 있겠네요. 혹시 다른 정보는 없어요?
+    24.06s  user  발화 끝
+    24.15s  <ret> 발화 (turn7 첫 프레임)
+    24.22s  agent 발화 시작: <ret> 잭 소크 선수는 이천십칠년 델레이 비치 오픈에서 첫 ATP 타이틀을 획득하셨습니다.
+    26.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.92s]: Jack Sock won his first ATP title in 2017 at the Delray Beach Open.
+    30.06s  user  발화 시작: 잠깐만요, 잭 소크는 남자 선수잖아요. 라파엘라 레지는 누구죠?
+    30.15s  agent 발화 끝
+    33.59s  <ret> 발화 (turn9 첫 프레임)
+    33.99s  agent 발화 시작: <ret> 라파엘라 레지 선수에 대해 더 자세히 알아보겠습니다.
+    34.18s  user  발화 끝
+    34.79s  ⚡SPAN 주입 [d'=1.20s / d_lead=3.56s]: Raffaella Reggi is an Italian former professional tennis player.
+    37.45s  agent 발화 시작: 라파엘라 레지 선수는 이탈리아의 전 프로 테니스 선수입니다.
+    37.55s  agent 발화 끝
+    41.05s  user  발화 시작: 아, 이탈리아 선수였군요. 그럼 두 분이 같이 경기한 적이 있나요?
+    41.30s  agent 발화 끝
+    44.05s  <ret> 발화 (turn12 첫 프레임)
+    44.20s  agent 발화 시작: <ret> 두 분이 함께 경기하셨다는 기록은 찾을 수 없습니다.
+    44.48s  user  발화 끝
+    45.17s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.28s]: There is no record of Jack Sock and Raffaella Reggi playing a match to
+    47.48s  agent 발화 끝
+    47.48s  agent 발화 시작: 잭 소크 선수와 라파엘라 레지 선수가 함께 경기한 기록은 찾을 수 없습니다.
+    52.72s  agent 발화 끝
+    52.90s  user  발화 시작: 이상하네요. 그럼 왜 제가 그 질문을 했는지 아세요?
+    55.95s  user  발화 끝
+    56.11s  agent 발화 시작: 질문하신 이유가 궁금하네요. 혹시 다른 분과 혼동하신 걸까요?
+    58.44s  user  발화 시작: 네.
+    58.78s  user  발화 끝
+    60.55s  agent 발화 끝
+    60.72s  user  발화 시작: 아니요, 그냥 갑자기 떠올라서 물어본 거예요.
+    63.30s  user  발화 끝
+    63.47s  agent 발화 시작: 갑자기 떠올라서 질문하셨군요. 괜찮습니다.
+    66.69s  agent 발화 끝
+    66.81s  user  발화 시작: 그럼, 혹시 테니스 외에 다른 스포츠도 하는지 알 수 있나요?
+    69.95s  <ret> 발화 (turn20 첫 프레임)
+    70.34s  agent 발화 시작: <ret> 두 분이 테니스 외 다른 스포츠를 하는지 확인해 보겠습니다.
+    70.51s  user  발화 끝
+    71.71s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.61s]: Jack Sock enjoys playing golf in his free time.
+    73.76s  agent 발화 시작: 잭 소크 선수는 여가 시간에 골프를 즐기시는 것으로 알려져 있습니다.
+    73.95s  agent 발화 끝
+    78.11s  agent 발화 끝
+    78.31s  user  발화 시작: 골프요? 잭 소크 선수는 골프도 치는군요. 라파엘라 레지는요?
+    82.73s  <ret> 발화 (turn23 첫 프레임)
+    82.75s  user  발화 끝
+    82.81s  agent 발화 시작: <ret> 라파엘라 레지 선수의 다른 스포츠 활동에 대한 정보는 찾을 수 없습니다.
+    84.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: No information is available regarding Raffaella Reggi's participation 
+    87.48s  agent 발화 끝
+    87.51s  user  발화 시작: 음, 알겠습니다. 그럼, 혹시 잭 소크 선수의 키를 알 수 있을까요?
+    92.18s  <ret> 발화 (turn25 첫 프레임)
+    92.26s  agent 발화 시작: <ret> 잭 소크 선수의 키를 알아봐 드리겠습니다.
+    92.41s  user  발화 끝
+    93.30s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.68s]: Jack Sock is 1.83 meters tall.
+    94.90s  agent 발화 시작: 잭 소크 선수의 키는 일미터 팔십삼센티미터입니다.
+    94.94s  agent 발화 끝
+    97.07s  user  발화 시작: 네.
+    97.57s  user  발화 끝
+    98.46s  agent 발화 끝
+    98.73s  user  발화 시작: 일미터 팔십삼센티미터요? 생각보다 크네요.
+   101.86s  agent 발화 시작: 네, 잭 소크 선수는 키가 크신 편입니다.
+   101.87s  user  발화 끝
+   104.41s  user  발화 시작: 라파엘라 레지 선수의 키는 얼마죠?
+   104.63s  agent 발화 끝
+   106.59s  <ret> 발화 (turn31 첫 프레임)
+   107.00s  agent 발화 시작: <ret> 라파엘라 레지 선수의 키를 알아봐 드리겠습니다.
+   107.18s  user  발화 끝
+   108.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: Raffaella Reggi is 1.68 meters tall.
+   110.06s  agent 발화 시작: 라파엘라 레지 선수의 키는 일미터 육십팔센티미터입니다.
+   110.23s  agent 발화 끝
+   112.50s  user  발화 시작: 음.
+   112.94s  user  발화 끝
+   113.89s  agent 발화 끝
+   114.70s  user  발화 시작: 일미터 육십팔센티미터요? 잭 소크 선수보다 작네요.
+   118.86s  agent 발화 시작: 네, 라파엘라 레지 선수는 잭 소크 선수보다 키가 작으신 편입니다.
+   118.96s  user  발화 끝
+   123.33s  user  발화 시작: 두 분의 국적이 다르네요.…
+   123.35s  agent 발화 끝
+   124.80s  user  발화 끝
+   126.90s  user  발화 시작: …잭 소크 선수는 어디 출신이죠?
+   128.92s  <ret> 발화 (turn38 첫 프레임)
+   129.32s  agent 발화 시작: <ret> 잭 소크 선수의 출신지를 알아봐 드리겠습니다.
+   129.58s  user  발화 끝
+   130.52s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.96s]: Jack Sock was born in Lincoln, Nebraska, USA.
+   132.15s  agent 발화 시작: 잭 소크 선수는 미국 네브래스카주 링컨에서 태어났습니다.
+   132.28s  agent 발화 끝
+   135.71s  user  발화 시작: 미국인이군요. 그럼 라파엘라 레지 선수는요?
+   135.85s  agent 발화 끝
+   137.95s  <ret> 발화 (turn41 첫 프레임)
+   138.19s  agent 발화 시작: <ret> 라파엘라 레지 선수는 이탈리아 출신입니다.
+   138.43s  user  발화 끝
+   139.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.14s]: Raffaella Reggi is from Rome, Italy.
+   141.29s  user  발화 시작: 로마군요. 이탈리아는 테니스 강국인가요?
+   141.33s  agent 발화 끝
+   143.93s  <ret> 발화 (turn43 첫 프레임)
+   144.01s  agent 발화 시작: <ret> 이탈리아가 테니스 강국인지 알아보겠습니다.
+   144.20s  user  발화 끝
+   145.61s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.96s]: Italy has a strong tradition in tennis, with numerous successful playe
+   146.86s  agent 발화 시작: 이탈리아는 수많은 성공한 선수들을 배출하며 테니스 강국으로서의 전통을 가지고 있습니다.
+   146.97s  agent 발화 끝
+   150.25s  user  발화 시작: 음.
+   150.65s  user  발화 끝
+   152.55s  user  발화 시작: 그렇군요. 그럼 두 분의 나이를 알 수 있을까요?
+   152.61s  agent 발화 끝
+   154.93s  <ret> 발화 (turn47 첫 프레임)
+   155.32s  agent 발화 시작: <ret> 잭 소크 선수는 천구백구십이년 십일월 이십사일, 라파엘라 레지 선수는 천구백구십삼년 십이월 십삼일
+   155.37s  user  발화 끝
+   156.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: Jack Sock was born on November 24, 1992, and Raffaella Reggi on Decemb
+   158.75s  user  발화 시작: 맞아요.
+   159.24s  user  발화 끝
+   164.24s  user  발화 시작: 잭 소크 선수가 조금 더 나이가 많군요.
+   164.59s  agent 발화 끝
+   166.72s  user  발화 끝
+   167.09s  agent 발화 시작: 네, 잭 소크 선수가 라파엘라 레지 선수보다 조금 더 연상입니다.
+   170.02s  user  발화 시작: 네.
+   170.51s  user  발화 끝
+   171.34s  agent 발화 끝
+   171.61s  user  발화 시작: 그럼, 마지막으로 두 분의 현재 랭킹을 알 수 있을까요?
+   174.37s  <ret> 발화 (turn53 첫 프레임)
+   174.76s  agent 발화 시작: <ret> 두 분의 현재 랭킹을 찾아보겠습니다.
+   174.85s  user  발화 끝
+   175.41s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.35s]: Jack Sock is currently unranked, and Raffaella Reggi is retired.
+   177.04s  agent 발화 시작: 잭 소크 선수는 현재 랭킹이 없고, 라파엘라 레지 선수는 은퇴하셨습니다.
+   177.11s  agent 발화 끝
+   181.49s  user  발화 시작: 아, 잭 소크 선수는 랭킹이 없군요. 라파엘라 레지 선수는 은퇴하셨다니.
+   181.85s  agent 발화 끝
+   185.74s  agent 발화 시작: 네, 두 분의 현재 상황이 그렇습니다.
+   185.84s  user  발화 끝
+   188.06s  agent 발화 끝
+   188.99s  user  발화 시작: 알겠습니다. 시간 내주셔서 감사합니다.
+   191.11s  agent 발화 시작: 도움이 되었다니 기쁩니다. 좋은 하루 보내세요.
+   191.26s  user  발화 끝
+   194.49s  agent 발화 끝

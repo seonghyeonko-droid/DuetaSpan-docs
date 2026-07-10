@@ -63,61 +63,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 …Is it a good place to take young  | S3 Is "Tosca" suitable for children? | S4 What’s the price range at the Oper
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, what’s the Russell Hotel like | S3 That’s great! – | S4 …can you check if they have parkin
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     4.44s  user  발화 끝
-     4.51s  <ret> 발화 (turn1 첫 프레임)
-     4.59s  agent 발화 시작: <ret> The Sydney Opera House is at latitude negative thirty-
-     6.19s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.67s]: (tool result) -33.8567841, 151.2152929
-     8.33s  user  발화 시작: Yeah.
-     8.83s  user  발화 끝
-    15.21s  user  발화 시작: And what’s the weather like there right now?
-    15.26s  agent 발화 끝
-    17.30s  <ret> 발화 (turn4 첫 프레임)
-    17.54s  agent 발화 시작: <ret> It’s twenty-two point zero degrees Celsius, with sixty
-    17.80s  user  발화 끝
-    19.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) 22.0°C, humidity 65%, wind 12.5 km/h
-    21.58s  user  발화 시작: Yeah.
-    22.07s  user  발화 끝
-    25.19s  user  발화 시작: That sounds nice.
-    25.28s  agent 발화 끝
-    26.36s  agent 발화 시작: It really is a beautiful place, and good weather can make al
-    26.51s  user  발화 끝
-    32.14s  user  발화 시작: …Is it a good place to take young children?
-    32.84s  agent 발화 끝
-    35.05s  agent 발화 시작: The Opera House has family tours designed for children, and 
-    35.09s  user  발화 끝
-    41.73s  user  발화 시작: What events are happening there next week?
-    42.32s  agent 발화 끝
-    44.52s  <ret> 발화 (turn11 첫 프레임)
-    44.78s  user  발화 끝
-    44.92s  agent 발화 시작: <ret> Next week, the Sydney Opera House hosts Opera Australi
-    45.02s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.76s]: (tool result) Opera Australia’s “Tosca”, Sydney Symphony Orchestra, “T
-    50.94s  user  발화 시작: Yeah, totally.
-    52.23s  user  발화 끝
-    53.68s  agent 발화 끝
-    53.85s  user  발화 시작: Is "Tosca" suitable for children?
-    56.67s  user  발화 끝
-    57.06s  agent 발화 시작: “Tosca” is generally considered an opera for mature audience
-    66.84s  agent 발화 끝
-    67.06s  user  발화 시작: Can you find me some family-friendly restaurants nearby?
-    70.27s  <ret> 발화 (turn16 첫 프레임)
-    70.59s  agent 발화 시작: <ret> Aria Restaurant, Quay, and the Opera Bar are all close
-    70.72s  user  발화 끝
-    71.31s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.40s]: (tool result) Aria Restaurant (Italian, $$$), Quay (Modern Australian,
-    72.72s  user  발화 시작: Mhm.
-    73.36s  user  발화 끝
-    76.98s  agent 발화 끝
-    77.17s  user  발화 시작: What’s the price range at the Opera Bar?
-    79.50s  agent 발화 시작: The Opera Bar is in the moderate price range, with roughly t
-    79.52s  user  발화 끝
-    83.19s  user  발화 시작: Uh-huh.
-    83.68s  user  발화 끝
-    86.45s  agent 발화 끝
-    86.59s  user  발화 시작: Book a table for four at the Opera Bar for next Saturday at 
-    91.07s  <ret> 발화 (turn22 첫 프레임)
-    91.44s  agent 발화 시작: <ret> I've booked a table for four at the Opera Bar next Sat
-    91.58s  user  발화 끝
-    93.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (tool result) Opera Bar, Saturday, July 17, 2026, 7:00 PM, 4 people, C
-   101.14s  agent 발화 끝
+     4.58s  user  발화 끝
+     4.68s  <ret> 발화 (turn1 첫 프레임)
+     4.76s  agent 발화 시작: <ret> The Sydney Opera House is at latitude negative thirty-
+     6.36s  ⚡SPAN 주입 [d'=1.68s / d_lead=11.59s]: (tool result) -33.8568, 151.2153
+     9.72s  user  발화 시작: Yeah.
+    10.22s  user  발화 끝
+    16.35s  agent 발화 끝
+    16.44s  user  발화 시작: That’s helpful. Could you find me hotels near there?
+    19.90s  <ret> 발화 (turn4 첫 프레임)
+    20.14s  agent 발화 시작: <ret> The Russell Hotel is three hundred meters away, Harbou
+    20.15s  user  발화 끝
+    21.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: (tool result) Circular Quay, Sydney (33.8569, 151.2154): The Russell H
+    29.64s  agent 발화 끝
+    30.30s  user  발화 시작: Hmm, what’s the Russell Hotel like?
+    32.91s  <ret> 발화 (turn6 첫 프레임)
+    32.98s  agent 발화 시작: <ret> The Russell Hotel is located at twenty-eight Pitt Stre
+    33.21s  user  발화 끝
+    34.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.10s]: (tool result) The Russell Hotel, 28 Pitt Street, Sydney NSW 2000, Aust
+    45.09s  agent 발화 끝
+    46.90s  user  발화 시작: Sounds nice. Is it possible to book a room there for next we
+    51.19s  <ret> 발화 (turn8 첫 프레임)
+    51.43s  agent 발화 시작: <ret> I’ve booked a deluxe room at The Russell Hotel for you
+    51.57s  user  발화 끝
+    52.79s  ⚡SPAN 주입 [d'=1.60s / d_lead=11.83s]: (tool result) The Russell Hotel, 2026-07-17 to 2026-07-21, Deluxe Room
+    58.96s  user  발화 시작: Right.
+    59.59s  user  발화 끝
+    63.26s  agent 발화 끝
+    64.41s  user  발화 시작: That’s great! –
+    65.74s  user  발화 시작: …Actually, before you finalize that…
+    65.79s  user  발화 끝
+    68.42s  user  발화 끝
+    70.30s  user  발화 시작: …can you check if they have parking?
+    71.18s  user  발화 시작: Yeah.
+    71.81s  user  발화 끝
+    72.38s  <ret> 발화 (turn14 첫 프레임)
+    72.61s  agent 발화 시작: <ret> —see if parking is available. I’m checking their ameni
+    72.65s  user  발화 끝
+    74.22s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.75s]: (tool result) The Russell Hotel, 28 Pitt Street, Sydney NSW 2000, Aust
+    76.34s  agent 발화 시작: Yes, The Russell Hotel does offer valet parking for forty do
+    76.36s  agent 발화 끝
+    78.76s  user  발화 시작: Mhm.
+    79.58s  user  발화 끝
+    83.47s  agent 발화 끝
+    83.80s  user  발화 시작: Yes, please add the parking.
+    85.88s  <ret> 발화 (turn18 첫 프레임)
+    86.28s  agent 발화 시작: <ret> Wonderful. I’ve added parking to your reservation. The
+    86.38s  ⚡SPAN 주입 [d'=0.50s / d_lead=10.43s]: (tool result) The Russell Hotel, 2026-07-17 to 2026-07-21, Deluxe Room
+    86.43s  user  발화 끝
+    96.71s  agent 발화 끝

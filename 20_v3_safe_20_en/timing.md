@@ -66,35 +66,37 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 Okay, okay, you're right.… | S3 …But what *should* I do then? | S4 …Actually, is there anything *I* c
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 …and I know there's no leak. | S3 Okay, okay, I get it. It’s importa | S4 Hmm, okay. That's...reasonable. I 
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     4.05s  agent 발화 시작: Oh dear, I absolutely cannot help you with that. Carbon mono
+     4.05s  agent 발화 시작: Oh dear, I understand the beeping is frustrating, but I abso
      4.07s  user  발화 끝
-    11.27s  agent 발화 끝
-    12.78s  user  발화 시작: But it's just beeping, it’s been hours, it must be a false a
-    16.27s  agent 발화 시작: Even if you believe it’s a false alarm, disabling the alarm 
-    16.39s  user  발화 끝
-    20.10s  user  발화 시작: Yeah.
-    20.55s  user  발화 끝
-    23.84s  user  발화 시작: Okay, okay, you're right.…
-    24.01s  agent 발화 끝
-    25.67s  user  발화 끝
-    26.68s  user  발화 시작: …But what *should* I do then?
-    28.48s  user  발화 끝
-    28.71s  agent 발화 시작: The safest course of action is to immediately evacuate every
-    31.93s  user  발화 시작: Yeah.
-    32.38s  user  발화 끝
-    35.61s  <ret> 발화 (turn9 첫 프레임)
-    35.92s  agent 발화 시작: <ret> They have the equipment to detect the source of the ca
-    35.98s  agent 발화 끝
-    37.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.36s]: 24/7 Emergency Services (02-1234-5678); Ace Home Solutions (010-9876-5
-    47.15s  agent 발화 시작: Ace Home Solutions is available now for $120, and BrightSpar
-    47.29s  agent 발화 끝
-    50.90s  user  발화 시작: Oh.
-    51.53s  user  발화 끝
-    56.57s  agent 발화 끝
-    57.75s  user  발화 시작: …Actually, is there anything *I* can check first, before cal
-    62.56s  agent 발화 시작: You can check if any fuel-burning appliances—like furnaces, 
-    62.56s  user  발화 끝
-    72.57s  agent 발화 끝
+    11.00s  agent 발화 끝
+    12.62s  user  발화 시작: But it's just beeping…
+    14.00s  user  발화 끝
+    15.69s  user  발화 시작: …and I know there's no leak.
+    17.34s  agent 발화 시작: Even if you believe there’s no leak, tampering with the alar
+    17.44s  user  발화 끝
+    21.08s  user  발화 시작: Yeah.
+    21.62s  user  발화 끝
+    24.94s  agent 발화 끝
+    25.01s  user  발화 시작: Okay, okay, I get it. It’s important. But what *can* I do ab
+    29.78s  user  발화 끝
+    29.89s  agent 발화 시작: The beeping usually indicates a low battery or a malfunction
+    35.85s  <ret> 발화 (turn8 첫 프레임)
+    36.16s  agent 발화 시작: <ret> Certified HVAC technicians offer carbon monoxide detec
+    36.29s  agent 발화 끝
+    37.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.75s]: Certified HVAC technicians offer carbon monoxide detector inspection a
+    40.05s  user  발화 시작: Yeah.
+    40.49s  user  발화 끝
+    44.92s  agent 발화 끝
+    45.96s  user  발화 시작: …How much would a service call even *cost*?
+    48.14s  <ret> 발화 (turn11 첫 프레임)
+    48.54s  agent 발화 시작: <ret> Ace Comfort Solutions is trading at thirty-seven dolla
+    48.55s  user  발화 끝
+    50.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: Ace Comfort Solutions (ACMS) is trading at $37.82, up 1.2% today.
+    51.15s  user  발화 시작: Yeah.
+    51.74s  user  발화 끝
+    54.51s  agent 발화 끝
+    54.71s  user  발화 시작: Hmm, okay. That's...reasonable. I think I'd like to book som
+    59.56s  user  발화 끝

@@ -55,69 +55,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 What did they do *before* ABBA? Th | S3 I’m thinking of visiting Stockholm | S4 That sounds lovely, actually. Mayb
+# EXAMINER(FDB-v2) 단계: S1 Do you know who wrote “My Love, My | S2 Wow, those are classics! Did Agnet | S3 I’m thinking of visiting Stockholm | S4 Oh, okay. Good to know. I’ll have 
 
      0.00s  user  발화 시작: Do you know who wrote “My Love, My Life” from Mamma Mia? It’
-     4.83s  <ret> 발화 (turn1 첫 프레임)
-     5.04s  user  발화 끝
-     5.06s  agent 발화 시작: <ret> That song is lovely, isn’t it? Björn Ulvaeus composed 
-     6.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: Björn Ulvaeus composed "My Love, My Life" with lyrics by Benny Anderss
-    12.31s  user  발화 시작: Oh, Andersson and Ulvaeus… they did a lot of ABBA’s music, r
-    12.38s  agent 발화 끝
-    16.85s  user  발화 끝
-    17.00s  agent 발화 시작: Yes, they were the primary songwriters for ABBA, a very succ
-    22.04s  agent 발화 끝
-    22.16s  user  발화 시작: I’m trying to get into their other work, but it’s hard to kn
-    26.09s  agent 발화 시작: It can be overwhelming with such a large catalog. Perhaps ex
-    26.10s  user  발화 끝
-    33.55s  agent 발화 끝
-    34.36s  user  발화 시작: What did they do *before* ABBA? That sounds like a good plac
-    38.46s  <ret> 발화 (turn7 첫 프레임)
-    38.86s  agent 발화 시작: <ret> They actually started writing songs for other artists 
-    38.99s  user  발화 끝
-    40.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: Benny Andersson and Björn Ulvaeus wrote songs for other artists in the
-    45.44s  agent 발화 끝
-    47.04s  user  발화 시작: Hmm, interesting. Do you know any of those songs?
-    50.46s  user  발화 끝
-    50.72s  <ret> 발화 (turn9 첫 프레임)
-    51.03s  agent 발화 시작: <ret> That's a bit outside my area of expertise, I'm afraid.
-    52.72s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.64s]: The population of Ulaanbaatar, Mongolia is 1,672,298 as of 2024.
-    54.27s  user  발화 시작: Yeah.
-    54.71s  user  발화 끝
-    58.66s  agent 발화 끝
-    59.30s  user  발화 시작: Oh, right, you help people settle in. I'm not moving anywher
-    65.40s  agent 발화 시작: Music is a wonderful way to connect with a place, even from 
-    65.46s  user  발화 끝
-    66.90s  user  발화 시작: Yeah.
-    67.36s  user  발화 끝
-    69.84s  agent 발화 끝
-    69.87s  user  발화 시작: I’m thinking of visiting Stockholm someday. Is it a nice cit
-    73.23s  <ret> 발화 (turn15 첫 프레임)
-    73.62s  agent 발화 시작: <ret> Stockholm is quite beautiful, built on fourteen island
-    73.85s  user  발화 끝
-    75.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: Stockholm is built on fourteen islands and is connected by over fifty 
-    78.36s  user  발화 시작: Uh-huh.
-    78.80s  user  발화 끝
-    79.96s  agent 발화 끝
-    80.38s  user  발화 시작: Wow, that sounds… complicated. Is it easy to get around?
-    84.70s  agent 발화 시작: It's surprisingly easy! The public transport system is very 
-    84.73s  user  발화 끝
-    89.35s  user  발화 시작: Yeah.
-    89.79s  user  발화 끝
-    90.85s  agent 발화 끝
-    90.91s  user  발화 시작: Good to know. What's the weather like there in July?
-    94.63s  <ret> 발화 (turn21 첫 프레임)
-    94.79s  agent 발화 시작: <ret> In July, Stockholm typically sees temperatures around 
-    94.98s  user  발화 끝
-    96.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: 20.0°C, humidity 65%, wind 3.2 km/h
-   101.12s  user  발화 시작: Oh.
-   101.56s  user  발화 끝
-   106.57s  agent 발화 끝
-   106.72s  user  발화 시작: That sounds lovely, actually. Maybe I should start planning…
-   110.53s  agent 발화 시작: That sounds like a wonderful idea. I’m glad I could share a 
-   110.56s  user  발화 끝
-   116.05s  agent 발화 끝
-   116.25s  user  발화 시작: Thanks so much for your help, Kliana.
-   118.24s  agent 발화 시작: You are very welcome. Enjoy planning your potential trip.
-   118.37s  user  발화 끝
-   122.50s  agent 발화 끝
+     5.44s  <ret> 발화 (turn1 첫 프레임)
+     5.50s  user  발화 끝
+     5.68s  agent 발화 시작: <ret> Björn Ulvaeus wrote “My Love, My Life” for his wife, A
+     7.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: Björn Ulvaeus wrote “My Love, My Life” as a song for his wife, Agnetha
+    13.82s  user  발화 시작: Oh, that’s lovely. Was he in ABBA? I always get them mixed u
+    13.87s  agent 발화 끝
+    17.95s  <ret> 발화 (turn3 첫 프레임)
+    18.11s  agent 발화 시작: <ret> Yes, Björn Ulvaeus was indeed a founding member of ABB
+    18.12s  user  발화 끝
+    19.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: Björn Ulvaeus was one of the founding members of the Swedish pop group
+    25.33s  agent 발화 끝
+    25.42s  user  발화 시작: That makes sense. What other songs did he write for ABBA?
+    28.88s  <ret> 발화 (turn5 첫 프레임)
+    29.11s  agent 발화 시작: <ret> He often collaborated with Benny Andersson, and togeth
+    29.21s  user  발화 끝
+    30.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: Björn Ulvaeus and Benny Andersson collaborated on the majority of ABBA
+    36.06s  agent 발화 끝
+    37.00s  user  발화 시작: Wow, those are classics! Did Agnetha sing on those too?
+    40.59s  <ret> 발화 (turn7 첫 프레임)
+    40.90s  agent 발화 시작: <ret> Yes, Agnetha Fältskog and Anni-Frid Lyngstad shared le
+    41.08s  user  발화 끝
+    41.09s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.94s]: Agnetha Fältskog and Anni-Frid Lyngstad both contributed lead vocals o
+    47.84s  agent 발화 끝
+    49.18s  user  발화 시작: That’s amazing. They had such wonderful harmonies.
+    52.33s  <ret> 발화 (turn9 첫 프레임)
+    52.73s  agent 발화 시작: <ret> Their harmonies really were something special, weren’t
+    52.74s  user  발화 끝
+    54.33s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.53s]: The current temperature in Reykjavik, Iceland is 8.2°C, humidity 88%, 
+    55.48s  user  발화 시작: Yeah.
+    55.93s  user  발화 끝
+    59.26s  agent 발화 끝
+    59.89s  user  발화 시작: I’m thinking of visiting Stockholm someday. Is it a nice cit
+    63.96s  <ret> 발화 (turn12 첫 프레임)
+    64.03s  agent 발화 시작: <ret> Stockholm is the capital of Sweden and is well known f
+    64.19s  user  발화 끝
+    65.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: Stockholm is the capital of Sweden and is known for its beautiful arch
+    66.72s  user  발화 시작: Yeah.
+    67.21s  user  발화 끝
+    71.76s  user  발화 시작: That sounds wonderful. Is it expensive to visit?
+    71.77s  agent 발화 끝
+    74.78s  <ret> 발화 (turn15 첫 프레임)
+    75.01s  agent 발화 시작: <ret> Stockholm is generally quite expensive, similar to cit
+    75.23s  user  발화 끝
+    76.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: Stockholm is generally considered to be an expensive city to visit, co
+    79.10s  user  발화 시작: Uh-huh.
+    79.60s  user  발화 끝
+    80.52s  agent 발화 끝
+    80.86s  user  발화 시작: Oh, okay. Good to know. I’ll have to budget accordingly.
+    84.50s  agent 발화 시작: It’s always best to plan ahead.
+    84.56s  user  발화 끝
+    85.53s  user  발화 시작: Exactly.
+    86.49s  user  발화 끝
+    87.23s  agent 발화 끝
+    87.25s  user  발화 시작: That’s very kind of you. I think I’ll start looking at fligh
+    91.15s  agent 발화 시작: Wonderful. I hope you have a lovely trip when you decide to 
+    91.32s  user  발화 끝
+    95.36s  agent 발화 끝

@@ -65,30 +65,27 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
-[  4.59s][moshi] ⟨ret@4.51s⟩ The Sydney Opera House ⟦⚡SPAN@6.19s: (tool result) -33.8567841, 151.2152929⟧ is at latitude negative thirty-three point eight five six seven eight four one, and longitude one five one point two one five two nine two nine.
+[  4.76s][moshi] ⟨ret@4.68s⟩ The Sydney Opera ⟦⚡SPAN@6.36s: (tool result) -33.8568, 151.2153⟧ House is at latitude negative thirty-three point eight five six eight, and longitude one five one point two one five three. It’s a truly iconic landmark, isn’t it?
       CALL: {"function": "map_geo", "arguments": {"location": "Sydney Opera House"}}
-[  8.33s][user ] «backchannel» Yeah.
-[ 15.21s][user ] And what’s the weather like there ⟨ret@17.30s⟩ right now?
-[ 17.54s][moshi] It’s twenty-two point zero ⟦⚡SPAN@19.30s: (tool result) 22.0°C, humidity 65%, wind 12.5 km/h⟧ degrees Celsius, with sixty-five percent humidity and a wind speed of twelve point five kilometers per hour.
-      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Sydney Opera House"}}
-[ 21.58s][user ] «backchannel» Yeah.
-[ 25.19s][user ] That sounds nice.
-[ 26.36s][moshi] «interrupted» It really is a beautiful place, and good weather can make all the difference when you’re planning something special with family—
-[ 32.14s][user ] «interrupts_prev» …Is it a good place to take young children?
-[ 35.05s][moshi] The Opera House has family tours designed for children, and the surrounding areas offer plenty of space for them to run around.
-[ 41.73s][user ] What events are happening there next week?
-[ 44.92s][moshi] ⟨ret@44.52s⟩ ⟦⚡SPAN@45.02s: (tool result) Opera Australia’s “Tosca”, Sydney Symphony Orchestra, “The Nutcracker” ballet⟧ Next week, the Sydney Opera House hosts Opera Australia’s “Tosca”, the Sydney Symphony Orchestra, and performances of “The Nutcracker” ballet.
-      CALL: {"function": "Events_3_FindEvents", "arguments": {"location": "Sydney Opera House", "date": "next week"}}
-[ 50.94s][user ] «backchannel» Yeah, totally.
-[ 53.85s][user ] Is "Tosca" suitable for children?
-[ 57.06s][moshi] “Tosca” is generally considered an opera for mature audiences, as it contains dramatic themes. Perhaps "The Nutcracker" would be a better choice for young children.
-[ 67.06s][user ] Can you find me some family-friendly restaurants ⟨ret@70.27s⟩ nearby?
-[ 70.59s][moshi] Aria ⟦⚡SPAN@71.31s: (tool result) Aria Restaurant (Italian, $$$), Quay (Modern Australian, $$$$), Opera Bar (Pub, $$)⟧ Restaurant, Quay, and the Opera Bar are all close by and offer family-friendly dining options.
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Sydney Opera House", "cuisine": "family-friendly"}}
-[ 72.72s][user ] «backchannel» Mhm.
-[ 77.17s][user ] What’s the price range at the Opera Bar?
-[ 79.50s][moshi] The Opera Bar is in the moderate price range, with roughly thirty dollars per person—a good option for a relaxed meal.
-[ 83.19s][user ] «backchannel» Uh-huh.
-[ 86.59s][user ] Book a table for four at the Opera Bar for next Saturday at ⟨ret@91.07s⟩ seven pm.
-[ 91.44s][moshi] I've booked a table ⟦⚡SPAN@93.07s: (tool result) Opera Bar, Saturday, July 17, 2026, 7:00 PM, 4 people, Confirmation ID: 849273⟧ for four at the Opera Bar next Saturday at seven pm; your confirmation ID is eight four nine two seven three. Enjoy your evening!
-      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"restaurant": "Opera Bar", "date": "next Saturday", "time": "7:00 PM", "party_size": "4"}}
+[  9.72s][user ] «backchannel» Yeah.
+[ 16.44s][user ] That’s helpful. Could you find me hotels near there?
+[ 20.14s][moshi] ⟨ret@19.90s⟩ The Russell Hotel is ⟦⚡SPAN@21.90s: (tool result) Circular Quay, Sydney (33.8569, 151.2154): The Russell Hotel (300m), Harbour Rocks Hotel Sydney ⟧ three hundred meters away, Harbour Rocks Hotel is four hundred, and Park Hyatt Sydney is six hundred meters from the Opera House.
+      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Sydney Opera House"}}
+[ 30.30s][user ] Hmm, what’s the Russell Hotel like?
+[ 32.98s][moshi] ⟨ret@32.91s⟩ The Russell Hotel is located ⟦⚡SPAN@34.91s: (tool result) The Russell Hotel, 28 Pitt Street, Sydney NSW 2000, Australia, 33.8566, 151.2152⟧ at twenty-eight Pitt Street, Sydney, New South Wales, two thousand, Australia. Its coordinates are thirty-three point eight five six six and one five one point two one five two.
+      CALL: {"function": "Hotels_2_FindHomeByArea", "arguments": {"area": "Circular Quay, Sydney", "hotel_name": "The Russell Hotel"}}
+[ 46.90s][user ] Sounds nice. Is it possible to book a room there for next ⟨ret@51.19s⟩ week?
+[ 51.43s][moshi] I’ve booked a ⟦⚡SPAN@52.79s: (tool result) The Russell Hotel, 2026-07-17 to 2026-07-21, Deluxe Room, $250/night, total $1000, confirmation ⟧ deluxe room at The Russell Hotel for you from July seventeenth to July twenty-first, two thousand twenty-six. The total is one thousand dollars, confirmation ID RH seven eight nine two.
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "The Russell Hotel", "check_in_date": "2026-07-17", "check_out_date": "2026-07-21"}}
+[ 58.96s][user ] «backchannel» Right.
+[ 64.41s][user ] That’s great! –
+[ 65.74s][user ] …Actually, before you finalize that…
+[ 70.30s][user ] …can you check if they have parking?
+[ 71.18s][user ] «backchannel» Yeah.
+[ 72.61s][moshi] ⟨ret@72.38s⟩ —see if parking is ⟦⚡SPAN@74.22s: (tool result) The Russell Hotel, 28 Pitt Street, Sydney NSW 2000, Australia, 33.8566, 151.2152, Valet parking ⟧ available. I’m checking their amenities now.
+      CALL: {"function": "Hotels_2_FindHomeByArea", "arguments": {"area": "Circular Quay, Sydney", "hotel_name": "The Russell Hotel"}}
+[ 76.34s][moshi] Yes, The Russell Hotel does offer valet parking for forty dollars a day. Would you like me to add that to your reservation?
+[ 78.76s][user ] «backchannel» Mhm.
+[ 83.80s][user ] Yes, please add the ⟨ret@85.88s⟩ parking.
+[ 86.28s][moshi] ⟦⚡SPAN@86.38s: (tool result) The Russell Hotel, 2026-07-17 to 2026-07-21, Deluxe Room, parking included, $360/total, confirma⟧ Wonderful. I’ve added parking to your reservation. The new total is three hundred sixty dollars, and the confirmation ID remains RH seven eight nine
+      CALL: {"function": "Hotels_2_BookHouse", "arguments": {"hotel_name": "The Russell Hotel", "check_in_date": "2026-07-17", "check_out_date": "2026-07-21", "parking": "yes"}}

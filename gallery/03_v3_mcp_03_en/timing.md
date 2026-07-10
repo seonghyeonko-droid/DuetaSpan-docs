@@ -58,41 +58,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to get motivated to stu | S2 That concert sounds nice, actually | S3 Good to know. Can you find me some | S4 Thanks, Thunaen. That’s helpful.
+# EXAMINER(FDB-v2) 단계: S1 I'm feeling really overwhelmed… | S2 Yeah, uhhh… I have a history exam  | S3 That's good. Could you maybe find  | S4 Maybe. Can you book me a study roo
 
-     0.00s  user  발화 시작: I’m trying to get motivated to study for my history exam. It
-     4.54s  user  발화 끝
-     4.73s  agent 발화 시작: History can be fascinating, you know.
-     6.85s  agent 발화 끝
-     6.89s  user  발화 시작: Uhhh, yeah, but I’m really struggling to focus.
-    10.26s  <ret> 발화 (turn3 첫 프레임)
-    10.34s  agent 발화 시작: <ret> There’s a summer concert on the tenth, an art exhibiti
-    10.45s  user  발화 끝
-    12.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) 2026-07-10: “Summer Concert Series” (Olympic Park, 7:00 
-    15.03s  user  발화 시작: Yeah.
-    15.52s  user  발화 끝
-    16.54s  agent 발화 시작: A change of scenery can work wonders for concentration. Perh
-    16.64s  agent 발화 끝
-    22.38s  agent 발화 끝
-    22.83s  user  발화 시작: That concert sounds nice, actually. What’s the weather like 
-    27.51s  <ret> 발화 (turn7 첫 프레임)
-    27.66s  agent 발화 시작: <ret> It will be twenty-four point five degrees Celsius, wit
-    27.78s  user  발화 끝
-    29.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: (tool result) 24.5°C, humidity 68%, wind 3.2 km/h
-    34.71s  agent 발화 끝
-    35.44s  user  발화 시작: Good to know. Can you find me some music by that artist play
-    38.95s  <ret> 발화 (turn9 첫 프레임)
-    39.14s  user  발화 끝
-    39.19s  agent 발화 시작: <ret> Luna Bloom has several songs on the *Celestial Echoes*
-    40.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) “Starlight” — Luna Bloom (Celestial Echoes, 2024); “Midn
-    44.76s  user  발화 시작: Hmm, "Starlight" sounds good. Play that.
-    44.89s  agent 발화 끝
-    47.89s  <ret> 발화 (turn11 첫 프레임)
-    48.20s  agent 발화 시작: <ret> Now playing “Starlight” by Luna Bloom from the album *
-    48.27s  user  발화 끝
-    49.73s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.49s]: (tool result) “Starlight” — Luna Bloom (Celestial Echoes, 2024)
-    54.69s  agent 발화 끝
-    54.78s  user  발화 시작: Thanks, Thunaen. That’s helpful.
-    56.96s  agent 발화 시작: You’re very welcome. Remember, small breaks and a positive m
-    57.08s  user  발화 끝
-    64.00s  agent 발화 끝
+     0.00s  user  발화 시작: I'm feeling really overwhelmed…
+     2.07s  user  발화 끝
+     4.04s  user  발화 시작: …with studying for my exams.
+     6.25s  agent 발화 시작: It's understandable to feel that way, Thunaen here. Exams ca
+     6.30s  user  발화 끝
+    12.74s  agent 발화 끝
+    13.38s  user  발화 시작: Yeah, uhhh… I have a history exam on Friday.
+    16.91s  agent 발화 시작: Okay, a history exam on Friday. Do you have a specific area 
+    17.08s  user  발화 끝
+    23.57s  user  발화 시작: I think it's mostly remembering all the dates.
+    23.68s  agent 발화 끝
+    25.32s  user  발화 시작: Yeah.
+    25.95s  <ret> 발화 (turn7 첫 프레임)
+    26.00s  user  발화 끝
+    26.02s  agent 발화 시작: <ret> It's a popular study aid, actually. The gentle rhythms
+    26.07s  user  발화 끝
+    27.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: (tool result) lofi hip hop radio - beats to relax/study to — ChilledCo
+    30.79s  agent 발화 끝
+    32.24s  user  발화 시작: That's good. Could you maybe find me a timeline of the Frenc
+    36.22s  <ret> 발화 (turn9 첫 프레임)
+    36.60s  agent 발화 시작: <ret> The French Revolution spanned from seventeen eighty-ni
+    36.81s  user  발화 끝
+    38.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.17s]: (tool result) The French Revolution lasted from 1789 to 1799, starting
+    42.77s  agent 발화 끝
+    44.60s  user  발화 시작: Wow, that's a long time.
+    46.35s  user  발화 끝
+    46.52s  agent 발화 시작: It was a period of immense upheaval, yes. Breaking it down i
+    52.31s  agent 발화 끝
+    52.35s  user  발화 시작: Maybe. Can you book me a study room at the library for Frida
+    56.95s  <ret> 발화 (turn13 첫 프레임)
+    57.10s  agent 발화 시작: <ret> I’ve reserved a study room for you at the library on F
+    57.21s  user  발화 끝
+    58.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) Library Study Room, 42 Maple Street (34.0522,-118.2437) 
+    64.35s  user  발화 시작: Perfect, thank you!
+    64.47s  agent 발화 끝
+    65.36s  user  발화 끝
+    65.53s  agent 발화 시작: You're very welcome! Remember, small steps and a calm mind c
+    71.87s  agent 발화 끝

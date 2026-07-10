@@ -70,12 +70,12 @@
 
 
      0.00s  agent 발화 시작: Hello Kim, it’s lovely to meet you. I’m Ara, and I help peop
-     6.03s  agent 발화 끝
-     6.06s  user  발화 시작: Oh, Ara… that’s a pretty name. I’m just… feeling really over
-    11.85s  user  발화 끝
-    12.22s  agent 발화 시작: It’s completely understandable to feel overwhelmed, Kim. Man
-    18.19s  agent 발화 끝
-    19.47s  user  발화 시작: Well, I’m trying to plan for retirement, but it just feels i
-    25.26s  user  발화 끝
-    25.43s  agent 발화 시작: Planning for the future in New York can be daunting. It’s go
-    32.00s  agent 발화 끝
+     5.74s  agent 발화 끝
+     5.75s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling really overwhelm
+    11.45s  user  발화 끝
+    11.76s  agent 발화 시작: It’s perfectly understandable to feel overwhelmed, Kim. Coul
+    18.25s  agent 발화 끝
+    19.49s  user  발화 시작: Well, I’m trying to plan for retirement, but it feels imposs
+    26.35s  user  발화 끝
+    26.50s  agent 발화 시작: Retirement planning *can* feel daunting, and it’s wonderful 
+    34.05s  agent 발화 끝

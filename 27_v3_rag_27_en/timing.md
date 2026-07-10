@@ -60,33 +60,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know when Lux Aurunque was  | S2 That's interesting… um, was he bor | S3 …did he collaborate with any other | S4 What kind of music did they make t
+# EXAMINER(FDB-v2) 단계: S1 Do you know when Lux Aurunque was  | S2 …of music does he make? | S3 …is he still making music now, or  | S4 Has he collaborated with anyone el
 
      0.00s  user  발화 시작: Do you know when Lux Aurunque was born?
-     2.08s  <ret> 발화 (turn1 첫 프레임)
-     2.31s  agent 발화 시작: <ret> Lux Aurunque was born in nineteen seventy, a pivotal y
-     2.54s  user  발화 끝
-     4.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: Lux Aurunque was born in nineteen seventy.
-     7.70s  user  발화 시작: Yeah, yeah.
-     8.38s  user  발화 끝
-    12.04s  agent 발화 끝
-    12.19s  user  발화 시작: That's interesting… um, was he born in Italy?
-    14.62s  <ret> 발화 (turn4 첫 프레임)
-    14.69s  agent 발화 시작: <ret> He was indeed born in Rome, Italy, on January twelfth,
-    14.96s  user  발화 끝
-    15.66s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.32s]: Lux Aurunque was born in Rome, Italy, on January 12, 1970.
-    19.21s  user  발화 시작: …did he collaborate with any other musicians early on?
-    20.01s  agent 발화 끝
-    22.12s  <ret> 발화 (turn6 첫 프레임)
-    22.33s  agent 발화 시작: <ret> He first collaborated with Alessandro Bellini in ninet
-    22.44s  user  발화 끝
-    23.56s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.20s]: Lux Aurunque first collaborated with Alessandro Bellini in nineteen ei
-    25.05s  user  발화 시작: Mm-hmm.
-    25.55s  user  발화 끝
-    30.53s  agent 발화 끝
-    30.97s  user  발화 시작: What kind of music did they make together?
-    32.84s  <ret> 발화 (turn9 첫 프레임)
-    32.92s  agent 발화 시작: <ret> They created experimental electronic music in the nine
-    33.09s  user  발화 끝
-    34.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: Bellini and Aurunque created experimental electronic music in the nine
-    42.60s  agent 발화 끝
+     2.51s  <ret> 발화 (turn1 첫 프레임)
+     2.58s  user  발화 끝
+     2.75s  agent 발화 시작: <ret> Lux Aurunque was born in nineteen seventy. It's fascin
+     4.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: Lux Aurunque was born in nineteen seventy.
+     6.95s  user  발화 시작: Yeah, yeah.
+     7.77s  user  발화 끝
+    10.44s  agent 발화 끝
+    10.45s  user  발화 시작: Hmm, and what kind…
+    12.51s  user  발화 끝
+    14.38s  user  발화 시작: …of music does he make?
+    15.65s  <ret> 발화 (turn5 첫 프레임)
+    15.72s  agent 발화 시작: <ret> He creates dark ambient and experimental electronic mu
+    15.90s  user  발화 끝
+    16.85s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.78s]: Lux Aurunque creates dark ambient and experimental electronic music.
+    22.77s  user  발화 시작: …is he still making music now, or has he stopped?
+    23.50s  agent 발화 끝
+    25.13s  <ret> 발화 (turn7 첫 프레임)
+    25.36s  agent 발화 시작: <ret> He released an album in twenty twenty-three, so he is 
+    25.49s  user  발화 끝
+    26.57s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.23s]: Lux Aurunque released an album in twenty twenty-three.
+    30.83s  user  발화 시작: Uh-huh.
+    31.28s  user  발화 끝
+    34.59s  agent 발화 끝
+    34.88s  user  발화 시작: Where is he from, originally?
+    36.72s  user  발화 끝
+    36.99s  <ret> 발화 (turn10 첫 프레임)
+    37.04s  agent 발화 시작: <ret> He is originally from France. It's interesting how loc
+    38.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: Lux Aurunque is originally from France.
+    40.55s  user  발화 시작: Yeah, totally.
+    41.38s  user  발화 끝
+    43.70s  agent 발화 끝
+    44.83s  user  발화 시작: Has he collaborated with anyone else?
+    46.77s  <ret> 발화 (turn13 첫 프레임)
+    46.91s  agent 발화 시작: <ret> He has collaborated with several artists, including Va
+    47.09s  user  발화 끝
+    48.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.22s]: Lux Aurunque has collaborated with several artists including Varg Vike
+    56.13s  agent 발화 끝

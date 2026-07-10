@@ -68,23 +68,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Do you know when the Oakland A's w | S2 Can you believe how long ago that  | S3 So, who pitched the no-hitter agai | S4 Perfect, thanks so much! I really 
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, do you know when the last | S2 Can you believe how… | S3 Anyway, who pitched it? | S4 True enough. I’m always exhausted.
 
-     0.00s  user  발화 시작: Do you know when the Oakland A's were last no-hit? I’m tryin
-     4.37s  <ret> 발화 (turn1 첫 프레임)
-     4.68s  user  발화 끝
-     4.76s  agent 발화 시작: <ret> The last time the A's were no-hit was April twenty-fir
-     6.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: The Oakland Athletics were last no-hit on April 21, 2018.
-    12.58s  user  발화 시작: Wow, that long ago! Uhhh, I thought it was more recent.
-    12.78s  agent 발화 끝
-    16.80s  user  발화 시작: Can you believe how long ago that was?
-    16.97s  user  발화 끝
-    18.91s  user  발화 시작: So, who pitched the no-hitter against them?
-    19.05s  user  발화 끝
-    21.18s  <ret> 발화 (turn5 첫 프레임)
-    21.41s  agent 발화 시작: <ret> James Paxton of the Seattle Mariners pitched that game
-    21.68s  user  발화 끝
-    23.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: James Paxton pitched a no-hitter against the Oakland Athletics on Apri
-    30.69s  agent 발화 끝
-    32.24s  user  발화 시작: Perfect, thanks so much! I really appreciate it.
-    34.78s  user  발화 끝
+     0.00s  user  발화 시작: Hey, uh, do you know when the last time was that the Oakland
+     4.86s  <ret> 발화 (turn1 첫 프레임)
+     5.24s  agent 발화 시작: <ret> The last time the A’s were no-hit was April twenty-fir
+     5.38s  user  발화 끝
+     6.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: The Oakland Athletics were last no-hit on April 21, 2018.
+    13.44s  user  발화 시작: Wow, really? That long ago…
+    13.64s  agent 발화 끝
+    16.45s  user  발화 끝
+    17.46s  user  발화 시작: Can you believe how…
+    18.93s  user  발화 끝
+    20.72s  user  발화 시작: …expensive groceries are these days?
+    22.72s  user  발화 시작: Anyway, who pitched it?
+    22.84s  user  발화 끝
+    23.87s  <ret> 발화 (turn6 첫 프레임)
+    24.10s  agent 발화 시작: <ret> James Shields, pitching for the White Sox, threw the n
+    24.14s  user  발화 끝
+    25.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: James Shields of the White Sox pitched a no-hitter against the Athleti
+    29.43s  agent 발화 끝
+    30.04s  user  발화 시작: Shields, huh? I remember him.
+    32.86s  user  발화 끝
+    32.88s  agent 발화 시작: He had a solid career. Getting enough quality rest is import
+    40.90s  agent 발화 끝
+    42.15s  user  발화 시작: True enough. I’m always exhausted.
+    44.78s  user  발화 끝
+    44.80s  agent 발화 시작: Well, perhaps we could explore some strategies to improve yo
+    53.33s  agent 발화 끝

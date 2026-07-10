@@ -58,107 +58,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 주니 카페의 가격대는 어떻게 돼요? | S2 그 호텔 근처에 맛있는 식당도 추천해 줄 수 있나요? | S3 십오분 정도 걸리는군요. | S4 미리 예약해야 하는군요.
+# EXAMINER(FDB-v2) 단계: S1 주니 카페의 가격대는 어떻게 되나요? | S2 포린 시네마가 제일 가까운 것 같네요. 영화를 상영하는 식당인 | S3 저녁 일곱시쯤에 예매하고 싶은데, 가능할까요? | S4 그럼 자동차로 가는 길을 알려주세요.
 
-     0.00s  user  발화 시작: 주니 카페의 가격대는 어떻게 돼요?
-     1.78s  <ret> 발화 (turn1 첫 프레임)
-     2.09s  agent 발화 시작: <ret> 가격대는 보통 수준이에요. 주니 카페는 샌프란시스코 마켓 스트리트 천육백오십팔번지에 있어요.
-     2.17s  user  발화 끝
-     3.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: Price range: $$ (Moderate) ; Zuni Café — 1658 Market St, San Francisco
-     7.04s  user  발화 시작: 네.
-     7.44s  user  발화 끝
-     9.23s  agent 발화 끝
-     9.55s  user  발화 시작: 그곳 주변에 괜찮은 호텔 있나요?
-    11.34s  <ret> 발화 (turn4 첫 프레임)
-    11.57s  agent 발화 시작: <ret> 주니 카페 주변에는 니코 호텔 샌프란시스코와 클랜시 호텔이 있어요. 니코 호텔은 별점 사 점 육점
-    11.68s  user  발화 끝
-    13.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.51s]: Hotel Nikko San Francisco (4.6 stars, 257 rooms, from $289/night), The
-    20.49s  user  발화 시작: 정말요?
-    21.30s  user  발화 끝
-    29.60s  user  발화 시작: 클랜시 호텔이 더 저렴하네요.
-    30.09s  agent 발화 끝
-    31.36s  user  발화 끝
-    31.41s  agent 발화 시작: 네, 클랜시 호텔이 조금 더 저렴한 편이네요.
-    32.52s  user  발화 시작: 네네.
-    33.15s  user  발화 끝
-    34.50s  agent 발화 끝
-    34.60s  user  발화 시작: 그 호텔 예약해 줄 수 있어요?
-    36.21s  <ret> 발화 (turn10 첫 프레임)
-    36.44s  agent 발화 시작: <ret> 클랜시 호텔, 이천이십육년 칠월 십오일부터 십팔일까지 이인실 딜럭스룸을 예약했습니다. 총 칠백오십
-    36.49s  user  발화 끝
-    38.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: The Clancy, Autograph Collection: Check-in 2026-07-15, check-out 2026-
-    47.71s  agent 발화 끝
-    47.94s  user  발화 시작: 확인 번호를 다시 한 번 알려주시겠어요?
-    50.34s  user  발화 끝
-    50.84s  agent 발화 시작: 확인 번호는 팔A92B3입니다.
-    53.84s  agent 발화 끝
-    54.51s  user  발화 시작: 그 호텔 근처에 맛있는 식당도 추천해 줄 수 있나요?
-    57.58s  <ret> 발화 (turn14 첫 프레임)
-    57.65s  agent 발화 시작: <ret> 클랜시 호텔 근처에는 토니 피자 나폴레타나와 플로어 앤 워터가 있어요. 토니 피자는 이탈리아 음식
-    57.70s  user  발화 끝
-    58.86s  ⚡SPAN 주입 [d'=1.28s / d_lead=18.74s]: Tony's Pizza Napoletana (Italian, 4.7 stars, $20-30), Flour + Water (I
-    76.38s  agent 발화 끝
-    76.69s  user  발화 시작: 토니 피자가 더 끌리네요.
-    78.30s  agent 발화 시작: 토니 피자가 더 마음에 드시는군요.
-    78.39s  user  발화 끝
-    80.79s  agent 발화 끝
-    81.11s  user  발화 시작: 그곳의 메뉴 좀 볼 수 있을까요?
-    82.69s  <ret> 발화 (turn18 첫 프레임)
-    83.08s  agent 발화 시작: <ret> 토니 피자 나폴레타나 메뉴는 마르게리타가 십팔달러, 마리나라가 십육달러, 뉴요커가 이십이달러입니다
-    83.09s  user  발화 끝
-    84.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.43s]: Tony's Pizza Napoletana Menu: Margherita ($18), Marinara ($16), New Yo
-    93.49s  user  발화 시작: 혹시 그 피자집까지 가는 대중교통 방법 좀 알려주세요?
-    93.52s  agent 발화 끝
-    97.25s  <ret> 발화 (turn20 첫 프레임)
-    97.46s  user  발화 끝
-    97.48s  agent 발화 시작: <ret> 클랜시 호텔에서 먼지 스트리트 역까지 지하철 K 노선을 타세요. 그 후 영 점 삼마일을 걸어가면 
-    99.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.24s]: Take the Muni Metro K-Ingleside/T-Third Street line from Powell Street
-   109.72s  agent 발화 끝
-   110.29s  user  발화 시작: 십오분 정도 걸리는군요.
-   112.09s  agent 발화 시작: 네, 십오분 정도 걸립니다.
-   112.13s  user  발화 끝
-   114.15s  agent 발화 끝
-   114.87s  user  발화 시작: 그 근처에 볼만한 관광지도 있나요?
-   117.10s  <ret> 발화 (turn24 첫 프레임)
-   117.26s  agent 발화 시작: <ret> 토니 피자 나폴레타나 근처에는 롬바드 스트리트, 피어 삼십구 코이트 타워가 있습니다. 롬바드 스트
-   117.27s  user  발화 끝
-   119.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.70s]: Lombard Street (0.6 miles), Pier 39 (1.2 miles), Coit Tower (1.5 miles
-   129.81s  user  발화 시작: 코이트 타워는 어떤 곳이에요?.
-   129.97s  agent 발화 끝
-   132.45s  user  발화 끝
-   132.66s  agent 발화 시작: 코이트 타워는 —
-   133.40s  user  발화 시작: …거기에서 바라보는 풍경이 아주 멋지다고 들었는데, 맞나요?
-   134.13s  agent 발화 끝
-   138.21s  user  발화 끝
-   138.24s  agent 발화 시작: 네, 맞아요. 코이트 타워는 샌프란시스코의 멋진 풍경을 감상할 수 있는 곳으로 유명합니다.
-   142.08s  user  발화 시작: 네.
-   142.58s  user  발화 끝
-   144.25s  agent 발화 시작: 코이트 타워 꼭대기에서는 도시 전체와 금문교, 알카트라즈 섬까지 한눈에 볼 수 있어요. 역사적인 의미도 깊은
-   144.36s  agent 발화 끝
-   153.46s  user  발화 시작: 알카트라즈 섬도 가보고 싶네요.
-   153.71s  agent 발화 끝
-   155.27s  <ret> 발화 (turn32 첫 프레임)
-   155.51s  agent 발화 시작: <ret> 알카트라즈 섬은 피어 삼십삼 알카트라즈 랜딩에서 출발하는 페리를 이용할 수 있습니다. 미리 alc
-   155.53s  user  발화 끝
-   157.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.92s]: Alcatraz Island: Ferry departs from Pier 33 Alcatraz Landing, San Fran
-   159.65s  user  발화 시작: 정말요?
-   160.47s  user  발화 끝
-   165.20s  user  발화 시작: 미리 예약해야 하는군요.
-   165.43s  agent 발화 끝
-   166.95s  user  발화 끝
-   167.02s  agent 발화 시작: 네, 미리 예약하는 것이 좋습니다.
-   169.28s  agent 발화 끝
-   170.24s  user  발화 시작: 오늘 날씨는 어때요?
-   171.44s  <ret> 발화 (turn37 첫 프레임)
-   171.59s  agent 발화 시작: <ret> 샌프란시스코는 현재 십팔 점 삼도이고, 습도는 육십오%, 바람은 시속 팔 점 이킬로미터로 부는 부
-   171.66s  user  발화 끝
-   173.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.50s]: 18.3°C, humidity 65%, wind 8.2 km/h, partly cloudy.
-   181.09s  agent 발화 끝
-   182.97s  user  발화 시작: 겉옷을 챙겨야겠네요.
-   184.34s  user  발화 끝
-   184.52s  agent 발화 시작: 네, 겉옷을 챙기시는 것이 좋겠네요.
-   187.10s  agent 발화 끝
-   188.26s  user  발화 시작: 정말 감사합니다.
-   189.59s  agent 발화 시작: 도움이 되었다니 기쁩니다. 좋은 여행 되세요.
-   189.64s  user  발화 끝
-   192.74s  agent 발화 끝
+     0.00s  user  발화 시작: 주니 카페의 가격대는 어떻게 되나요?
+     2.30s  <ret> 발화 (turn1 첫 프레임)
+     2.54s  user  발화 끝
+     2.61s  agent 발화 시작: <ret> 주니 카페의 가격대는 보통 수준입니다. 두 명이 식사하면 대략 삼십에서 육십 달러 정도 예상하시면
+     4.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.98s]: (tool result) Zuni Cafe, 1658 Market St, San Francisco, CA 94102, USA;
+     5.45s  user  발화 시작: 네네.
+     6.14s  user  발화 끝
+    10.59s  agent 발화 끝
+    10.62s  user  발화 시작: 아, 그렇군요. 그럼 근처에 비슷한 가격대의 다른 맛집은 어디가 있나요?
+    15.21s  <ret> 발화 (turn4 첫 프레임)
+    15.52s  agent 발화 시작: <ret> 주니 카페 근처에 비슷한 가격대의 맛집으로는 포린 시네마, 노파, 스테이트 버드 프로비전스가 있습
+    15.62s  user  발화 끝
+    17.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.63s]: (tool result) Foreign Cinema, 2534 Mission St, San Francisco, CA 94110
+    31.15s  agent 발화 끝
+    31.96s  user  발화 시작: 포린 시네마가 제일 가까운 것 같네요. 영화를 상영하는 식당인가요?
+    36.78s  <ret> 발화 (turn6 첫 프레임)
+    37.01s  user  발화 끝
+    37.01s  agent 발화 시작: <ret> 포린 시네마에서는 영화를 상영합니다. 현재 상영하는 영화는 오펜하이머, 바비, 패스트 라이브스입니
+    38.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Oppenheimer — Christopher Nolan — 2023; Barbie — Greta G
+    39.64s  user  발화 시작: 그렇죠.
+    40.23s  user  발화 끝
+    44.10s  agent 발화 끝
+    44.48s  user  발화 시작: 오펜하이머를 보고 싶은데, 오늘 몇 시에 상영하나요?
+    48.21s  <ret> 발화 (turn9 첫 프레임)
+    48.50s  agent 발화 시작: <ret> 포린 시네마에서 오펜하이머는 오늘 오후 여섯시 삼십분과 밤 아홉시 십오분에 상영합니다. 혹시 다른
+    48.50s  user  발화 끝
+    50.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) 6:30 PM, 9:15 PM
+    52.43s  user  발화 시작: 정말요?
+    53.16s  user  발화 끝
+    57.41s  user  발화 시작: 저녁 일곱시쯤에 예매하고 싶은데, 가능할까요?
+    57.54s  agent 발화 끝
+    60.63s  <ret> 발화 (turn12 첫 프레임)
+    60.71s  agent 발화 시작: <ret> 네, 포린 시네마에서 오펜하이머 오후 일곱시 상영 티켓 두 장을 예매했습니다. 총 금액은 육만 달
+    60.74s  user  발화 끝
+    61.75s  ⚡SPAN 주입 [d'=1.12s / d_lead=10.71s]: (tool result) Confirmation: Foreign Cinema, Oppenheimer, 7:00 PM, 2 ti
+    71.42s  agent 발화 끝
+    73.08s  user  발화 시작: 감사합니다. 혹시 포린 시네마까지 가는 가장 빠른 길은 어떻게 되나요?
+    77.52s  <ret> 발화 (turn14 첫 프레임)
+    77.85s  user  발화 끝
+    77.91s  agent 발화 시작: <ret> 주니 카페에서 포린 시네마까지 가는 가장 빠른 길은 자동차로 십분, 삼 점 이킬로미터입니다. 대중
+    79.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.59s]: (tool result) Foreign Cinema, 2534 Mission St, San Francisco, CA 94110
+    82.75s  user  발화 시작: 음.
+    83.57s  user  발화 끝
+    87.50s  agent 발화 끝
+    88.09s  user  발화 시작: 그럼 자동차로 가는 길을 알려주세요.
+    90.44s  user  발화 끝
+    90.50s  <ret> 발화 (turn17 첫 프레임)
+    90.57s  agent 발화 시작: <ret> 주니 카페에서 북쪽으로 마켓 스트리트를 따라 십육번 스트리트까지 이동합니다. 발렌시아 스트리트로 
+    92.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.55s]: (tool result) 1. Head north on Market St toward 16th St (450 m); 2. Tu
+   102.11s  agent 발화 끝
+   103.96s  user  발화 시작: 알겠습니다. 그런데 혹시 주차 공간이 있나요?
+   107.20s  user  발화 끝

@@ -59,13 +59,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Manon, I’m Thunalo. It’s lovely to connect with you; I’m a counselor here to help with creative flow.
-[  4.39s][user ] «backchannel» Yeah.
-[  5.84s][user ] Um, I’m feeling stuck. I want to plan something fun, but everything feels…flat.
-[ 11.76s][moshi] It sounds like you’re experiencing a bit of creative fatigue, which is perfectly normal. Do you have any trips coming up that we could explore?
-[ 16.69s][user ] «backchannel» Mm-hmm.
-[ 18.70s][moshi] ⟨ret@18.30s⟩ I ⟦⚡SPAN@19.26s: [2026-03-15] User is planning a trip to Kyoto in March.⟧ recall you were planning a trip to Kyoto in March.
-[ 21.49s][moshi] Perhaps brainstorming activities for that trip could rekindle some excitement? It’s a beautiful city.
-[ 26.96s][user ] Oh, yes! Kyoto… I was thinking about temples, but I want something a little different. Something…active.
-[ 34.04s][moshi] ⟨ret@33.88s⟩ That’s a wonderful idea! ⟦⚡SPAN@35.56s: [2026-02-20] User is into rock climbing.⟧ I see you also enjoy rock climbing.
-[ 37.56s][moshi] Kyoto might not be the first place that comes to mind for climbing, but there are some options nearby. Would you like me to look those up for you?
+[  0.00s][moshi] Hi Manon, I'm Thunalo. It's lovely to connect with you today.
+[  2.77s][user ] «backchannel» Yeah.
+[  3.78s][user ] Yes, exactly. I'm feeling a bit stuck with a project at work, actually.
+[  8.22s][moshi] I see. That's perfectly alright, many people experience that. Do you recall if this feeling is similar to anything we discussed before?
+[ 16.34s][user ] Uhhh… maybe? I think we talked about feeling overwhelmed ⟨ret@21.61s⟩ once.
+[ 22.01s][moshi] I recall ⟦⚡SPAN@23.13s: [2026-03-15] User is planning a trip to Kyoto in March.⟧ you were planning a trip to Kyoto in March. Sometimes, planning something exciting can help shift focus, even if indirectly.
+[ 27.19s][user ] «backchannel» Mm-hmm.
+[ 29.29s][moshi] It sounds like you’re juggling a lot. Would you like to explore how that Kyoto trip is progressing, perhaps as a starting point?
+[ 36.24s][user ] Actually, yes. I haven’t looked at booking anything yet, but…

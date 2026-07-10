@@ -59,27 +59,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you; I’m 
-     4.39s  user  발화 시작: Yeah.
-     5.02s  user  발화 끝
-     5.84s  agent 발화 끝
-     5.84s  user  발화 시작: Um, I’m feeling stuck. I want to plan something fun, but eve
-    11.76s  agent 발화 시작: It sounds like you’re experiencing a bit of creative fatigue
-    11.81s  user  발화 끝
-    16.69s  user  발화 시작: Mm-hmm.
-    17.42s  user  발화 끝
-    18.30s  <ret> 발화 (turn5 첫 프레임)
-    18.70s  agent 발화 시작: <ret> I recall you were planning a trip to Kyoto in March.
-    18.81s  agent 발화 끝
-    19.26s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.81s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    21.49s  agent 발화 시작: Perhaps brainstorming activities for that trip could rekindl
-    21.52s  agent 발화 끝
-    26.96s  user  발화 시작: Oh, yes! Kyoto… I was thinking about temples, but I want som
-    26.99s  agent 발화 끝
-    33.88s  <ret> 발화 (turn8 첫 프레임)
-    34.04s  agent 발화 시작: <ret> That’s a wonderful idea! I see you also enjoy rock cli
-    34.18s  user  발화 끝
-    35.56s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.70s]: [2026-02-20] User is into rock climbing.
-    37.56s  agent 발화 시작: Kyoto might not be the first place that comes to mind for cl
-    37.74s  agent 발화 끝
-    44.04s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It's lovely to connect with you today
+     2.77s  user  발화 시작: Yeah.
+     3.26s  user  발화 끝
+     3.78s  user  발화 시작: Yes, exactly. I'm feeling a bit stuck with a project at work
+     3.80s  agent 발화 끝
+     8.22s  agent 발화 시작: I see. That's perfectly alright, many people experience that
+     8.28s  user  발화 끝
+    15.96s  agent 발화 끝
+    16.34s  user  발화 시작: Uhhh… maybe? I think we talked about feeling overwhelmed onc
+    21.61s  <ret> 발화 (turn5 첫 프레임)
+    22.01s  agent 발화 시작: <ret> I recall you were planning a trip to Kyoto in March. S
+    22.04s  user  발화 끝
+    23.13s  ⚡SPAN 주입 [d'=1.52s / d_lead=7.42s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    27.19s  user  발화 시작: Mm-hmm.
+    27.69s  user  발화 끝
+    29.29s  agent 발화 시작: It sounds like you’re juggling a lot. Would you like to expl
+    29.43s  agent 발화 끝
+    35.92s  agent 발화 끝
+    36.24s  user  발화 시작: Actually, yes. I haven’t looked at booking anything yet, but
+    39.94s  user  발화 끝

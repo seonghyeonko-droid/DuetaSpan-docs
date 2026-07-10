@@ -63,53 +63,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m planning a trip to Seoul, and  | S2 Hmm, Bukchon Hanok Village sounds  | S3 That’s helpful. Can you find some  | S4 Great. Thanks so much for your hel
+# EXAMINER(FDB-v2) 단계: S1 Create a detailed map of the Apple | S2 Actually, how about hotels near th | S3 …Do any of those have availability | S4 Great, thank you.
 
-     0.00s  user  발화 시작: I’m planning a trip to Seoul, and I’d like to see some inter
-     4.58s  user  발화 끝
-     4.94s  agent 발화 시작: Seoul is a vibrant city with much to offer visitors.
-     8.00s  agent 발화 끝
-     8.10s  user  발화 시작: Could you find some attractions for me, please?
-    10.29s  <ret> 발화 (turn3 첫 프레임)
-    10.52s  agent 발화 시작: <ret> Gyeongbokgung Palace, N Seoul Tower, Bukchon Hanok Vil
-    10.64s  user  발화 끝
-    12.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: Gyeongbokgung Palace (37.56668, 126.97829), N Seoul Tower (37.56668, 1
-    15.00s  user  발화 시작: Yeah.
-    15.63s  user  발화 끝
-    17.19s  agent 발화 끝
-    17.20s  user  발화 시작: Hmm, Bukchon Hanok Village sounds nice. What’s the weather l
-    21.70s  <ret> 발화 (turn6 첫 프레임)
-    21.94s  agent 발화 시작: <ret> It is currently 25.0°C in Bukchon Hanok Village, with 
-    22.20s  user  발화 끝
-    23.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: 25.0°C, humidity 68%, wind 3.2 km/h
-    24.83s  user  발화 시작: Mm-hmm.
-    25.51s  user  발화 끝
-    29.88s  agent 발화 시작: I can also look up hotels nearby if you’d like—
-    30.00s  agent 발화 끝
-    32.12s  user  발화 시작: Actually, before we book anything, could you show me a map o
-    32.79s  agent 발화 끝
-    36.48s  <ret> 발화 (turn10 첫 프레임)
-    36.71s  agent 발화 시작: <ret> Here’s a map of Bukchon Hanok Village. It shows the ar
-    36.92s  user  발화 끝
-    38.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.03s]: (tool result) https://upload.wikimedia.org/wikipedia/commons/thumb/9/9
-    40.55s  user  발화 시작: Mhm.
-    41.00s  user  발화 끝
-    42.74s  agent 발화 끝
-    44.13s  user  발화 시작: That’s helpful. Can you find some restaurants in that area?
-    47.60s  <ret> 발화 (turn13 첫 프레임)
-    47.83s  agent 발화 시작: <ret> Hwangsaengga Kalguksu, Hanok Tea House, and Le Grenier
-    47.97s  user  발화 끝
-    49.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.21s]: Hwangsaengga Kalguksu (37.57059, 126.98477), Hanok Tea House (37.57065
-    53.94s  user  발화 시작: Le Grenier a Pain sounds good. Do they have a website?
-    54.03s  agent 발화 끝
-    57.15s  <ret> 발화 (turn15 첫 프레임)
-    57.55s  user  발화 끝
-    57.55s  agent 발화 시작: <ret> Their website is legrenierapain.com. It's a French bak
-    59.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: Le Grenier a Pain — legrenierapain.com : Le Grenier a Pain is a French
-    60.33s  user  발화 시작: Yeah.
-    60.96s  user  발화 끝
-    62.41s  agent 발화 끝
-    63.08s  user  발화 시작: Great. Thanks so much for your help, Koral.
-    65.24s  agent 발화 시작: You’re very welcome. I hope you enjoy your trip to Seoul.
-    65.48s  user  발화 끝
-    68.94s  agent 발화 끝
+     0.00s  user  발화 시작: Create a detailed map of the Apple website, focusing on the 
+     4.65s  <ret> 발화 (turn1 첫 프레임)
+     4.72s  user  발화 끝
+     4.73s  agent 발화 시작: <ret> I’ve mapped the Apple website, highlighting iPhone, iP
+     5.93s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.55s]: (tool result) Map created: Apple website product sections identified –
+     6.99s  user  발화 시작: Okay.
+     7.63s  user  발화 끝
+    10.28s  agent 발화 끝
+    11.16s  user  발화 시작: Hmm, can you find me restaurants near the Apple Store in Seo
+    14.64s  <ret> 발화 (turn4 첫 프레임)
+    15.04s  agent 발화 시작: <ret> There are several restaurants nearby: VIPS is one hund
+    15.27s  user  발화 끝
+    16.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: (tool result) Restaurants near Apple Store Seoul: VIPS (120m), Lotteri
+    19.09s  user  발화 시작: Uh-huh.
+    20.01s  user  발화 끝
+    22.51s  agent 발화 시작: Outback Steakhouse is two hundred meters away, and Shake Sha
+    22.59s  agent 발화 끝
+    25.41s  user  발화 시작: Right.
+    25.86s  user  발화 끝
+    29.88s  agent 발화 끝
+    31.05s  user  발화 시작: Actually, how about hotels near that Apple Store instead?
+    34.11s  <ret> 발화 (turn9 첫 프레임)
+    34.34s  agent 발화 시작: <ret> I’ve found hotels nearby: L7 Myeongdong is five hundre
+    34.56s  user  발화 끝
+    36.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (tool result) Hotels near Apple Store Seoul: L7 Myeongdong (500m), Nin
+    41.36s  user  발화 시작: …Do any of those have availability for next week?
+    42.12s  agent 발화 끝
+    44.41s  <ret> 발화 (turn11 첫 프레임)
+    44.59s  user  발화 끝
+    44.65s  agent 발화 시작: <ret> Checking availability for L7 Myeongdong, Nine Tree Pre
+    46.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) L7 Myeongdong, room type Deluxe, July 17-21, 2026, confi
+    50.40s  agent 발화 시작: L7 Myeongdong has a Deluxe room available from July seventee
+    50.44s  agent 발화 끝
+    60.90s  user  발화 시작: Perfect. Can you add a reminder to my calendar for that?
+    60.98s  agent 발화 끝
+    64.77s  <ret> 발화 (turn14 첫 프레임)
+    64.85s  agent 발화 시작: <ret> I’ve added a reminder for July seventeenth, two thousa
+    64.93s  user  발화 끝
+    66.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.23s]: (tool result) Alarm set: July 17, 2026, 3:00 PM, Hotel check-in, id 4D
+    74.08s  agent 발화 끝
+    74.12s  user  발화 시작: Great, thank you.
+    75.13s  agent 발화 시작: You're very welcome. Enjoy your trip to Seoul!
+    75.27s  user  발화 끝
+    77.90s  agent 발화 끝

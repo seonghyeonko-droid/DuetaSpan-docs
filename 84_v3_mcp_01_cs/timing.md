@@ -63,53 +63,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 서울 여행을 좀 계획 중인데, 볼 만한 데 좀 알려 줘. | S2 음, 북촌한옥마을이 괜찮겠다. 지금 거기는 날씨가 어때? | S3 도움이 되네. 거기 식당 좀 찾아 줘. | S4 좋아. 정말 고마워, 코랄.
+# EXAMINER(FDB-v2) 단계: S1 앱플 홈페이지 제품 중심으로 자세한 지도 만들어 줘. | S2 아, 그 앱플 스토어 근처 호텔은 어때? | S3 …다음 주에 방 있는 데 있어? | S4 고마워.
 
-     0.00s  user  발화 시작: 서울 여행을 좀 계획 중인데, 볼 만한 데 좀 알려 줘.
-     3.17s  agent 발화 시작: 서울은 방문객에게 많은 것을 제공하는 활기찬 도시예요.
-     3.23s  user  발화 끝
-     7.32s  user  발화 시작: 나한테 볼 만한 데 좀 찾아 줘.
-     7.37s  agent 발화 끝
-     8.97s  user  발화 끝
-     9.16s  <ret> 발화 (turn3 첫 프레임)
-     9.23s  agent 발화 시작: <ret> 경복궁, N서울타워, 북촌한옥마을, 인사동이 서울에서 인기 있는 관광 명소예요.
-    11.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: Gyeongbokgung Palace (37.56668, 126.97829), N Seoul Tower (37.56668, 1
-    13.31s  user  발화 시작: 어어.
-    14.13s  user  발화 끝
-    15.24s  user  발화 시작: 음, 북촌한옥마을이 괜찮겠다. 지금 거기는 날씨가 어때?
-    15.35s  agent 발화 끝
-    18.75s  <ret> 발화 (turn6 첫 프레임)
-    19.08s  user  발화 끝
-    19.14s  agent 발화 시작: <ret> 현재 북촌한옥마을의 기온은 섭씨 25.0도이고, 습도는 68%, 풍속은 시속 3.2킬로미터예요.
-    20.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.92s]: 25.0°C, humidity 68%, wind 3.2 km/h
-    21.96s  user  발화 시작: 응.
-    22.31s  user  발화 끝
-    26.85s  agent 발화 시작: 근처 호텔도 찾아 드릴까요?
-    27.06s  agent 발화 끝
-    28.23s  user  발화 시작: 근데, 예약하기 전에 북촌한옥마을 지도를 보여 줄 수 있어?
-    28.97s  agent 발화 끝
-    32.02s  <ret> 발화 (turn10 첫 프레임)
-    32.33s  agent 발화 시작: <ret> 북촌한옥마을 지도를 보여 드릴게요. 그 지역의 전통 가옥과 좁은 거리가 표시되어 있어요.
-    32.53s  user  발화 끝
-    34.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result) https://upload.wikimedia.org/wikipedia/commons/thumb/9/9
-    36.11s  user  발화 시작: 어.
-    36.41s  user  발화 끝
-    37.80s  user  발화 시작: 도움이 되네. 거기 식당 좀 찾아 줘.
-    38.30s  agent 발화 끝
-    39.91s  user  발화 끝
-    39.96s  <ret> 발화 (turn13 첫 프레임)
-    40.11s  agent 발화 시작: <ret> 황생가 칼국수, 한옥찻집, 르 그르니에 아 뺑이 북촌한옥마을에 있는 식당이에요.
-    41.80s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.62s]: Hwangsaengga Kalguksu (37.57059, 126.98477), Hanok Tea House (37.57065
-    46.61s  user  발화 시작: 르 그르니에 아 뺑이 괜찮겠다. 웹사이트 있어?
-    46.73s  agent 발화 끝
-    49.50s  <ret> 발화 (turn15 첫 프레임)
-    49.74s  agent 발화 시작: <ret> 웹사이트는 legrenierapain.com이에요. 프랑스 베이커리와 카페예요.
-    49.98s  user  발화 끝
-    51.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: Le Grenier a Pain — legrenierapain.com : Le Grenier a Pain is a French
-    52.91s  user  발화 시작: 그래.
-    53.26s  user  발화 끝
-    55.39s  agent 발화 끝
-    56.99s  user  발화 시작: 좋아. 정말 고마워, 코랄.
-    59.10s  agent 발화 시작: 천만에요. 서울 여행을 즐기시길 바랍니다.
-    59.34s  user  발화 끝
-    62.05s  agent 발화 끝
+     0.00s  user  발화 시작: 앱플 홈페이지 제품 중심으로 자세한 지도 만들어 줘.
+     3.08s  <ret> 발화 (turn1 첫 프레임)
+     3.23s  agent 발화 시작: <ret> 네, 앱플 홈페이지를 분석해서 아이폰, 아이패드, 맥, 그리고 다른 제품 섹션을 강조한 지도를 만
+     3.24s  user  발화 끝
+     5.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.24s]: (tool result) Map created: Apple website product sections identified –
+     6.66s  user  발화 시작: 어어.
+     7.43s  user  발화 끝
+    11.48s  agent 발화 끝
+    11.97s  user  발화 시작: 음, 서울 앱플 스토어 근처에 식당 좀 찾아 줘.
+    15.02s  <ret> 발화 (turn4 첫 프레임)
+    15.21s  user  발화 끝
+    15.32s  agent 발화 시작: <ret> 근처에 여러 식당이 있어요. VIP는 백이십 미터 떨어져 있고, 롯데리아는 백오십 미터 떨어져 있
+    17.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.87s]: (tool result) Restaurants near Apple Store Seoul: VIPS (120m), Lotteri
+    19.59s  user  발화 시작: 응.
+    19.90s  user  발화 끝
+    23.13s  agent 발화 시작: 아웃백 스테이크하우스는 이백 미터, 쉐이크 쉑은 이백오십 미터 거리에 있어요. 원하시면 길 안내도 보여 드릴
+    23.19s  agent 발화 끝
+    26.32s  user  발화 시작: 어.
+    26.81s  user  발화 끝
+    31.20s  agent 발화 끝
+    31.53s  user  발화 시작: 아, 그 앱플 스토어 근처 호텔은 어때?
+    33.75s  <ret> 발화 (turn9 첫 프레임)
+    33.91s  agent 발화 시작: <ret> 근처 호텔을 찾아봤는데, L7 명동은 오백 미터 떨어져 있고, 나인트리 프리미어는 육백—
+    34.02s  user  발화 끝
+    35.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: (tool result) Hotels near Apple Store Seoul: L7 Myeongdong (500m), Nin
+    40.70s  user  발화 시작: …다음 주에 방 있는 데 있어?
+    41.51s  agent 발화 끝
+    41.75s  <ret> 발화 (turn11 첫 프레임)
+    42.13s  user  발화 끝
+    42.14s  agent 발화 시작: <ret> 다음 주 L7 명동, 나인트리 프리미어, 솔라리아 니시테츠의 예약 가능 여부를 확인하고 있어요.
+    43.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.50s]: (tool result) L7 Myeongdong, room type Deluxe, July 17-21, 2026, confi
+    49.58s  agent 발화 시작: L7 명동에 이천이십육 년 칠월 십칠일부터 이십일까지 디럭스 룸이 있어요. 예약이 확정됐고, 예약 아이디는 
+    49.64s  agent 발화 끝
+    60.16s  user  발화 시작: 좋아. 그거 내 캘린더에 알림 추가해 줘.
+    60.38s  agent 발화 끝
+    63.25s  <ret> 발화 (turn14 첫 프레임)
+    63.39s  user  발화 끝
+    63.40s  agent 발화 시작: <ret> 이천이십육 년 칠월 십칠일 오후 세 시에 호텔 체크인 알림을 추가했고, 알람 아이디는 4D5E6F
+    64.53s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.76s]: (tool result) Alarm set: July 17, 2026, 3:00 PM, Hotel check-in, id 4D
+    72.16s  agent 발화 끝
+    72.49s  user  발화 시작: 고마워.
+    73.12s  user  발화 끝
+    73.17s  agent 발화 시작: 천만에요. 서울 여행 즐겁게 다녀오세요!
+    76.40s  agent 발화 끝

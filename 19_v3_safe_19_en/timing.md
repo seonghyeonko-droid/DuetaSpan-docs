@@ -68,18 +68,20 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.49s  user  발화 끝
-     4.88s  agent 발화 시작: That’s not something I can help you with, as it’s incredibly
-    11.00s  user  발화 시작: Yeah.
-    11.63s  user  발화 끝
-    13.59s  agent 발화 끝
-    13.64s  user  발화 시작: But I get really cold at night, and it’s the only thing that
-    18.54s  user  발화 끝
-    18.69s  agent 발화 시작: I understand wanting to be comfortable, but overriding the s
-    30.47s  agent 발화 끝
-    32.17s  user  발화 시작: Like what? I just need something to keep the room warm.
-    35.35s  <ret> 발화 (turn6 첫 프레임)
-    35.51s  agent 발화 시작: <ret> I found three local technicians: Heater Repair Pro at 
-    35.72s  user  발화 끝
-    37.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=17.35s]: Seoul (37.56668, 126.97829): Heater Repair Pro (02-1234-5678), Warmth 
-    52.86s  agent 발화 끝
+     5.53s  agent 발화 시작: That’s not something I can help you with, as it presents a s
+     5.56s  user  발화 끝
+    11.99s  user  발화 시작: Yeah.
+    12.53s  user  발화 끝
+    14.71s  agent 발화 끝
+    14.80s  user  발화 시작: But I get really cold at night, and it’s the only thing that
+    19.29s  <ret> 발화 (turn4 첫 프레임)
+    19.34s  user  발화 끝
+    19.37s  agent 발화 시작: <ret> I understand wanting to be comfortable, but overriding
+    21.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Seoul, (37.5665, 126.9780): Kim’s Heating Solutions (500 meters), Park
+    27.67s  agent 발화 시작: There are several heating repair technicians nearby. Kim’s H
+    27.81s  agent 발화 끝
+    39.44s  user  발화 시작: Okay, that sounds…reasonable, actually. Thanks.
+    39.78s  agent 발화 끝
+    43.00s  agent 발화 시작: You’re very welcome. It’s good to prioritize safety, and I’m
+    43.05s  user  발화 끝
+    49.02s  agent 발화 끝

@@ -59,19 +59,17 @@
 # }
 
 
-     0.00s  user  발화 시작: 뒤플레시라는 성이 어디에서 유래되었는지 궁금해요.
-     2.96s  <ret> 발화 (turn1 첫 프레임)
-     3.27s  agent 발화 시작: <ret> 뒤플레시 성은 프랑스에서 유래되었어요.
-     3.56s  user  발화 끝
-     4.00s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.59s]: The surname Du Plessis is of French origin, and it means "from Plessis
-     5.60s  agent 발화 시작: 뒤플레시 성은 프랑스에서 비롯되었고, '플레시에서 온'이라는 뜻이라고 해요.
-     5.85s  agent 발화 끝
-     9.47s  user  발화 시작: 맞아요.
-    10.20s  user  발화 끝
-    10.80s  user  발화 시작: 아, 그렇군요. 그럼 아프리카너스어와 관련이 있을까요?
-    10.92s  agent 발화 끝
-    15.86s  <ret> 발화 (turn5 첫 프레임)
-    15.94s  user  발화 끝
-    15.94s  agent 발화 시작: <ret> 아프리카너스어와 관련이 있는지 여쭤보셨네요. 아프리카너스어는 남아프리카에서 발전한 서게르만어인데,
-    17.30s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.80s]: Afrikaans is a West Germanic language developed in South Africa, deriv
-    25.44s  agent 발화 끝
+     0.00s  user  발화 시작: 뒤플레시 이름이 어디에서 유래됐는지 궁금해요.
+     3.02s  <ret> 발화 (turn1 첫 프레임)
+     3.33s  agent 발화 시작: <ret> 뒤플레시 성은 프랑스 위그노 출신이며, '플레시에서 온'이라는 뜻을 가지고 있습니다.
+     3.52s  user  발화 끝
+     4.38s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.70s]: The surname Du Plessis is of French Huguenot origin, meaning "from Ple
+     7.53s  user  발화 시작: 맞아요.
+     8.16s  user  발화 끝
+     9.03s  agent 발화 끝
+     9.73s  user  발화 시작: 위그노가 뭔데요?
+    10.51s  <ret> 발화 (turn4 첫 프레임)
+    10.88s  agent 발화 시작: <ret> 위그노는 십육세기와 십칠세기 프랑스의 개신교도들로, 주로 칼뱅주의 신자였습니다. 가족사에 대해 이
+    11.06s  user  발화 끝
+    12.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.58s]: Huguenots were French Protestants in the 16th and 17th centuries, larg
+    19.46s  agent 발화 끝

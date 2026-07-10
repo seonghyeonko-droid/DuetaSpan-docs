@@ -58,27 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, uh, who did the guitar solo o | S2 Did you see that email from accoun | S3 …Anyway, was he paid a lot for it? | S4 That's...not as much as I expected
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, who did the guitar solo o | S2 Oh, seriously? That’s cool. | S3 Wow, I didn’t know that! Did he wr | S4 That’s amazing. I'll have to liste
 
      0.00s  user  발화 시작: Hey, uh, who did the guitar solo on Michael Jackson’s “Beat 
-     4.18s  <ret> 발화 (turn1 첫 프레임)
-     4.41s  agent 발화 시작: <ret> That was Eddie Van Halen, actually. He brought a reall
-     4.67s  user  발화 끝
-     6.08s  user  발화 시작: Okay.
-     6.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat I
-     6.80s  user  발화 끝
-     8.70s  user  발화 시작: Wow, really? I thought it sounded different from his usual s
-     8.90s  agent 발화 끝
-    13.36s  user  발화 시작: Did you see that email from accounting?
-    13.38s  user  발화 끝
-    15.59s  user  발화 시작: …Anyway, was he paid a lot for it?
-    15.72s  user  발화 끝
-    17.44s  <ret> 발화 (turn6 첫 프레임)
-    17.76s  agent 발화 시작: <ret> He received twenty thousand dollars for that solo. It 
-    17.90s  user  발화 끝
-    19.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.46s]: Eddie Van Halen was paid $20,000 for his work on “Beat It”.
-    23.22s  agent 발화 끝
-    23.27s  user  발화 시작: That's...not as much as I expected, considering how iconic i
-    27.75s  user  발화 끝
-    28.10s  agent 발화 시작: Sometimes the greatest contributions aren’t always measured 
-    32.82s  agent 발화 끝
+     4.95s  <ret> 발화 (turn1 첫 프레임)
+     5.18s  agent 발화 시작: <ret> Eddie Van Halen performed the guitar solo on “Beat It”
+     5.33s  user  발화 끝
+     6.88s  user  발화 시작: Okay.
+     6.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.48s]: Eddie Van Halen performed the guitar solo on Michael Jackson’s song "B
+     7.69s  user  발화 끝
+     9.56s  user  발화 시작: Oh, seriously? That’s cool.
+     9.65s  agent 발화 끝
+    11.98s  user  발화 시작: Wow, I didn’t know that! Did he write it too, or just play i
+    12.09s  user  발화 끝
+    15.80s  <ret> 발화 (turn5 첫 프레임)
+    16.18s  agent 발화 시작: <ret> Eddie Van Halen both wrote and performed that solo. It
+    16.28s  user  발화 끝
+    17.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: Eddie Van Halen wrote and performed the guitar solo for "Beat It".
+    22.48s  agent 발화 끝
+    23.31s  user  발화 시작: That’s amazing. I'll have to listen to it again now, knowing
+    27.47s  user  발화 끝

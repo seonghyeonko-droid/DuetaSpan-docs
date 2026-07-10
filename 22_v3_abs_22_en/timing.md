@@ -66,49 +66,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 So, it’s not just about government | S3 That sounds… idealistic. Do any pl | S4 Mexico, huh? I didn't know that. W
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 So, no rulers at all? That sounds… | S3 …wait, is anarchism even legal any | S4 Turbulent is one word for it. Was 
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.59s  user  발화 끝
-     2.61s  <ret> 발화 (turn1 첫 프레임)
-     2.77s  agent 발화 시작: <ret> But I'm afraid there’s no readily available informatio
-     4.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.83s]: (no information found)
-     7.36s  user  발화 시작: Uh-huh.
-     7.85s  user  발화 끝
-    10.54s  user  발화 시작: Welll… that’s disappointing. What about political ideologies
-    10.59s  agent 발화 끝
-    14.47s  <ret> 발화 (turn4 첫 프레임)
-    14.63s  agent 발화 시작: <ret> Anarchism fundamentally opposes all hierarchical rule 
-    14.76s  user  발화 끝
-    16.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.83s]: Anarchism opposes all forms of hierarchical rule and domination.
-    26.43s  user  발화 시작: So, it’s not just about governments, then?
-    26.45s  agent 발화 끝
-    28.84s  agent 발화 시작: Precisely. Anarchists challenge power structures in all area
-    28.86s  user  발화 끝
-    38.41s  user  발화 시작: Do they have any… positive goals, or just what they’re again
-    38.77s  agent 발화 끝
-    41.89s  <ret> 발화 (turn8 첫 프레임)
-    42.05s  agent 발화 시작: <ret> They advocate for self-governed societies built on vol
-    42.15s  user  발화 끝
-    43.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.95s]: Anarchists advocate for self-governed societies based on voluntary ins
-    50.63s  user  발화 시작: That sounds… idealistic. Do any places actually try that?
-    51.00s  agent 발화 끝
-    55.49s  agent 발화 시작: There have been historical attempts at anarchist societies, 
-    55.54s  user  발화 끝
-    61.71s  user  발화 시작: …But do any exist *now*, like even small ones?
-    62.34s  agent 발화 끝
-    64.71s  <ret> 발화 (turn12 첫 프레임)
-    64.95s  agent 발화 시작: <ret> The Zapatista Autonomous Municipalities in Chiapas, Me
-    65.09s  user  발화 끝
-    66.39s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.72s]: The Zapatista Autonomous Municipalities in Chiapas, Mexico, practice s
-    73.63s  user  발화 시작: Mexico, huh? I didn't know that. What's their main goal?
-    73.67s  agent 발화 끝
-    77.09s  <ret> 발화 (turn14 첫 프레임)
-    77.33s  agent 발화 시작: <ret> Their main goal is Indigenous autonomy and rights, and
-    77.42s  user  발화 끝
-    79.09s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: The Zapatistas seek Indigenous autonomy and rights, resisting neoliber
-    87.81s  agent 발화 끝
-    88.68s  user  발화 시작: Wow, that’s really interesting. Thanks, Frunax.
-    91.26s  user  발화 끝
-    91.53s  agent 발화 시작: You’re very welcome. I’m glad I could share some information
-   100.39s  agent 발화 끝
+     2.56s  <ret> 발화 (turn1 첫 프레임)
+     2.72s  agent 발화 시작: <ret> But unfortunately, I couldn’t find a definitive answer
+     2.91s  user  발화 끝
+     4.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.59s]: (no information found)
+     7.13s  user  발화 시작: Uh-huh.
+     7.54s  user  발화 끝
+    10.16s  user  발화 시작: Hmm, well, what *do* anarchists generally believe in?
+    10.31s  agent 발화 끝
+    13.28s  <ret> 발화 (turn4 첫 프레임)
+    13.43s  agent 발화 시작: <ret> Generally, anarchists believe in self-governed societi
+    13.54s  user  발화 끝
+    15.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: Anarchism is a political philosophy that advocates for self-governed s
+    23.97s  user  발화 시작: So, no rulers at all? That sounds… chaotic.
+    24.00s  agent 발화 끝
+    27.95s  user  발화 끝
+    28.09s  agent 발화 시작: It can seem that way at first glance, but the idea is that p
+    38.91s  user  발화 시작: But doesn't that mean anyone could just do whatever they wan
+    39.26s  agent 발화 끝
+    42.23s  user  발화 시작: …wait, is anarchism even legal anywhere?
+    42.33s  user  발화 끝
+    45.16s  <ret> 발화 (turn9 첫 프레임)
+    45.27s  user  발화 끝
+    45.32s  agent 발화 시작: <ret> Anarchism isn't illegal as a philosophy, but actions t
+    47.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: Anarchism is not illegal in and of itself, but acts of violence or dis
+    56.21s  user  발화 시작: Okay, that makes a little more sense. So, where has anarchis
+    56.23s  agent 발화 끝
+    61.52s  <ret> 발화 (turn11 첫 프레임)
+    61.68s  agent 발화 시작: <ret> Anarchist principles were notably put into practice, a
+    61.86s  user  발화 끝
+    63.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.13s]: During the Spanish Civil War, anarchist principles were implemented in
+    72.27s  user  발화 시작: Turbulent is one word for it. Was it successful, though?
+    72.82s  agent 발화 끝
+    75.75s  <ret> 발화 (turn13 첫 프레임)
+    75.83s  agent 발화 시작: <ret> The areas in Spain saw increased worker control and eq
+    75.97s  user  발화 끝
+    77.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.38s]: The anarchist areas in Spain experienced increased worker control and 
+    86.21s  agent 발화 끝
+    86.45s  user  발화 시작: Interesting. I think I need to read up on the Spanish Civil 
+    90.01s  agent 발화 시작: That sounds like a wonderful idea. It’s a fascinating, albei
+    90.11s  user  발화 끝
+    98.03s  agent 발화 끝

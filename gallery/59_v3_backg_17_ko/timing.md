@@ -68,27 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 건강한 사람의 평균 심박수는 어떻게 돼요? | S2 아, 그건 좀 다르네요. 더 정확한 범위가 있을까요? | S3 오십 회에서 구십 회요? 그건 좀 놀랍네요. | S4 그럼 운동할 때 심박수는 어떻게 달라지나요?
+# EXAMINER(FDB-v2) 단계: S1 건강한 사람의 평균 심박수는 어떻게 되나요? | S2 [sigh] 아, 오늘따라 손님이 너무 없네… | S3 운동은 거의 안 해요. | S4 그렇군요. 감사합니다.
 
-     0.00s  user  발화 시작: 혹시 건강한 사람의 평균 심박수는 어떻게 돼요?
-     2.65s  <ret> 발화 (turn1 첫 프레임)
-     2.80s  agent 발화 시작: <ret> 성인의 정상적인 안정 시 심박수는 분당 육십 회에서 백 회 사이입니다. 건강 관리에 관심이 많으시
-     3.05s  user  발화 끝
-     3.15s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.41s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
-    10.15s  user  발화 시작: [sigh] 아, 오늘따라 차가 너무 막히네.
-    10.21s  agent 발화 끝
-    12.30s  user  발화 시작: 아, 그건 좀 다르네요. 더 정확한 범위가 있을까요?
-    12.54s  user  발화 끝
-    15.13s  <ret> 발화 (turn4 첫 프레임)
-    15.37s  agent 발화 시작: <ret> 건강한 성인의 일반적인 심박수는 분당 오십 회에서 구십 회 사이입니다. 조금 더 정확한 수치로 말
-    15.63s  user  발화 끝
-    17.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: The typical heart rate for a healthy adult is between 50 and 90 bpm.
-    23.26s  user  발화 시작: 오십 회에서 구십 회요? 그건 좀 놀랍네요.
-    23.34s  agent 발화 끝
-    25.70s  user  발화 끝
-    25.73s  agent 발화 시작: 네, 맞습니다. 개인차가 있을 수 있지만, 보통 그 범위에 속한다고 알려져 있습니다.
-    31.34s  agent 발화 끝
-    32.64s  user  발화 시작: 그럼 운동할 때 심박수는 어떻게 달라지나요?
-    35.09s  user  발화 끝
-    35.50s  agent 발화 시작: 운동 중에는 심박수가 당연히 올라갑니다. 운동 강도에 따라 달라지는데, 최대 심박수의 오십%에서 팔십오% 정
-    44.45s  agent 발화 끝
+     0.00s  user  발화 시작: 건강한 사람의 평균 심박수는 어떻게 되나요?
+     2.59s  <ret> 발화 (turn1 첫 프레임)
+     2.75s  agent 발화 시작: <ret> 건강한 성인의 정상적인 안정 시 심박수는 분당 육십 회에서 백 회 사이입니다. 혹시 운동을 자주 
+     2.91s  user  발화 끝
+     3.09s  ⚡SPAN 주입 [d'=0.50s / d_lead=8.57s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
+    11.32s  agent 발화 끝
+    12.75s  user  발화 시작: [sigh] 아, 오늘따라 손님이 너무 없네…
+    15.25s  user  발화 끝
+    16.42s  user  발화 시작: 운동은 거의 안 해요.
+    17.33s  <ret> 발화 (turn4 첫 프레임)
+    17.56s  agent 발화 시작: <ret> 건강한 사람의 평균 심박수는 분당 오십 회에서 구십 회 정도라고 합니다. 규칙적인 운동을 하면 심
+    17.66s  user  발화 끝
+    19.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.17s]: The average heart rate for a healthy person is between 50 and 90 bpm.
+    26.73s  user  발화 시작: 그렇군요. 감사합니다.
+    26.73s  agent 발화 끝
+    27.99s  agent 발화 시작: 도움이 되었다니 다행입니다.
+    28.15s  user  발화 끝
+    30.02s  agent 발화 끝

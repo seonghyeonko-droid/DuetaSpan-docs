@@ -63,29 +63,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I read somewhere the Department of | S2 Nineteen thirty? That seems… late. | S3 Okay, so eighteen eighty-five… but | S4 So, the nineteen thirty date is wh
+# EXAMINER(FDB-v2) 단계: S1 So, I was reading about government | S2 …when was the Department of Vetera | S3 Nineteen thirty? That seems… late. | S4 So the hospital came first, and th
 
-     0.00s  user  발화 시작: I read somewhere the Department of Veterans Affairs was star
-     4.11s  <ret> 발화 (turn1 첫 프레임)
-     4.42s  agent 발화 시작: <ret> The Department of Veterans Affairs was formally establ
-     4.44s  user  발화 끝
-     5.47s  ⚡SPAN 주입 [d'=1.36s / d_lead=7.46s]: The United States Department of Veterans Affairs was established on Ju
-    11.88s  agent 발화 끝
-    12.33s  user  발화 시작: Nineteen thirty? That seems… late. I thought it was around t
-    17.62s  <ret> 발화 (turn3 첫 프레임)
-    17.75s  user  발화 끝
-    18.02s  agent 발화 시작: <ret> You are right to question that. Congress authorized th
-    19.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.34s]: The precursor to the Department of Veterans Affairs, the National Home
-    26.36s  user  발화 시작: Okay, so eighteen eighty-five… but that wasn’t the full depa
-    26.37s  agent 발화 끝
-    31.07s  <ret> 발화 (turn5 첫 프레임)
-    31.18s  user  발화 끝
-    31.47s  agent 발화 시작: <ret> Yes, that initial home provided care specifically for 
-    33.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.05s]: The National Home for Disabled Soldiers provided domiciliary care for 
-    35.48s  user  발화 시작: Yeah.
-    35.97s  user  발화 끝
-    38.50s  user  발화 시작: So, the nineteen thirty date is when it became a full depart
-    38.52s  agent 발화 끝
-    42.40s  agent 발화 시작: Precisely. It was then that it evolved into the department a
-    42.47s  user  발화 끝
-    50.42s  agent 발화 끝
+     0.00s  user  발화 시작: So, I was reading about government agencies, and I’m curious
+     3.94s  user  발화 끝
+     5.21s  user  발화 시작: …when was the Department of Veterans Affairs actually create
+     8.30s  <ret> 발화 (turn2 첫 프레임)
+     8.61s  agent 발화 시작: <ret> The Department of Veterans Affairs was established on 
+     8.69s  user  발화 끝
+     9.42s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.95s]: The United States Department of Veterans Affairs was established on Ju
+    15.56s  agent 발화 끝
+    16.57s  user  발화 시작: Nineteen thirty? That seems… late. Weren't there veterans ne
+    21.51s  <ret> 발화 (turn4 첫 프레임)
+    21.91s  agent 발화 시작: <ret> Actually, yes. The first federal veterans’ hospital op
+    22.03s  user  발화 끝
+    23.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: The first federal veterans’ hospital opened in 1866, offering care to 
+    31.88s  user  발화 시작: So the hospital came first, and then the department much lat
+    31.88s  agent 발화 끝
+    36.29s  <ret> 발화 (turn6 첫 프레임)
+    36.68s  agent 발화 시작: <ret> You're right to question that. The Bureau of Pensions 
+    36.84s  user  발화 끝
+    38.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: The Bureau of Pensions, established in 1861, initially handled veteran
+    47.95s  agent 발화 끝

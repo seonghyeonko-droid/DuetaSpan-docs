@@ -63,29 +63,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어디서 읽었는데, 재향군인부(Department of Vete | S2 1930년? 그거 좀… 늦네. 남북전쟁 즈음인 줄 알았어. | S3 알았어, 1885년… 근데 그게 완전한 부처는 아니었지? 그냥 | S4 그럼 1930년이 완전한 부처가 된 날짜인 거야?
+# EXAMINER(FDB-v2) 단계: S1 어, 정부 기관에 대해 읽다가 궁금해졌어…… | S2 그럼, 재향군인부(Department of Veterans A | S3 천구백삼십년? 그거 좀… 늦었네. 그보다 훨씬 전부터 퇴역 군 | S4 그러니까 병원이 먼저 생기고, 그 다음에 부서가 훨씬 뒤에 만
 
-     0.00s  user  발화 시작: 어디서 읽었는데, 재향군인부(Department of Veterans Affairs)가 생각보다 훨씬 일찍 
-     6.19s  <ret> 발화 (turn1 첫 프레임)
-     6.29s  user  발화 끝
-     6.59s  agent 발화 시작: <ret> 네, 재향군인부는 천구백삼십 년 7월 21일에 정식으로 설립되었어요. 읽으신 내용과 일치하는지 확
-     8.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: The United States Department of Veterans Affairs was established on Ju
-    17.86s  agent 발화 끝
-    17.99s  user  발화 시작: 1930년? 그거 좀… 늦네. 남북전쟁 즈음인 줄 알았어.
-    24.05s  <ret> 발화 (turn3 첫 프레임)
-    24.20s  agent 발화 시작: <ret> 맞아요, 의문 가지시는 게 당연해요. 의회는 천팔백팔십오 년에 국가 장애병사 자택(National
-    24.33s  user  발화 끝
-    26.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.55s]: The precursor to the Department of Veterans Affairs, the National Home
-    37.37s  user  발화 시작: 알았어, 1885년… 근데 그게 완전한 부처는 아니었지? 그냥 집이었잖아?
-    37.75s  agent 발화 끝
-    43.20s  <ret> 발화 (turn5 첫 프레임)
-    43.35s  agent 발화 시작: <ret> 네, 그 최초의 자택은 남북전쟁 당시 북군 참전 용사들을 위한 특별한 치료를 제공했어요. 하지만 
-    43.43s  user  발화 끝
-    45.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.57s]: The National Home for Disabled Soldiers provided domiciliary care for 
-    49.52s  user  발화 시작: 응응.
-    50.15s  user  발화 끝
-    53.92s  user  발화 시작: 그럼 1930년이 완전한 부처가 된 날짜인 거야?
-    53.92s  agent 발화 끝
-    57.50s  agent 발화 시작: 정확해요. 그때 오늘날 우리가 알고 있는 부처 형태로 발전하게 되었답니다. 모든 게 시간이 지나면서 발전한다
-    57.52s  user  발화 끝
-    69.56s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 정부 기관에 대해 읽다가 궁금해졌어……
+     3.13s  user  발화 끝
+     4.67s  user  발화 시작: 그럼, 재향군인부(Department of Veterans Affairs)는 언제 만들어졌어?
+     9.19s  <ret> 발화 (turn2 첫 프레임)
+     9.59s  agent 발화 시작: <ret> 음, 재향군인부는 천구백삼십년 칠월 이십일일에 설립됐습니다. 이런 정보를 알아두시는 건 좋은 일이
+     9.66s  user  발화 끝
+    11.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: The United States Department of Veterans Affairs was established on Ju
+    18.63s  agent 발화 끝
+    19.08s  user  발화 시작: 천구백삼십년? 그거 좀… 늦었네. 그보다 훨씬 전부터 퇴역 군인들을 지원해야 했잖아?
+    25.23s  <ret> 발화 (turn4 첫 프레임)
+    25.47s  agent 발화 시작: <ret> 네, 사실 그렇습니다. 최초의 연방 퇴역 군인 병원은 천팔백육십육년에 문을 열어서 남북 전쟁 참전
+    25.66s  user  발화 끝
+    27.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.75s]: The first federal veterans’ hospital opened in 1866, offering care to 
+    38.22s  agent 발화 끝
+    39.36s  user  발화 시작: 그러니까 병원이 먼저 생기고, 그 다음에 부서가 훨씬 뒤에 만들어졌다는 거야? 좀 이상하잖아?
+    45.36s  <ret> 발화 (turn6 첫 프레임)
+    45.51s  agent 발화 시작: <ret> 맞아요, 그렇게 생각하시는 게 맞습니다. 천팔백육십일년에 연금국(Bureau of Pensions
+    45.66s  user  발화 끝
+    47.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.52s]: The Bureau of Pensions, established in 1861, initially handled veteran
+    60.03s  agent 발화 끝

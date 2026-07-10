@@ -66,71 +66,85 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 When does Demi Lovato's new album  | S2 Is it true she wrote most of the s | S3 …but did she tour… | S4 That’s a lot of money!
+# EXAMINER(FDB-v2) 단계: S1 When does Demi Lovato's new album  | S2 Wow, that's great! | S3 …the Summer” a lot. | S4 That's a lot of money!
 
      0.00s  user  발화 시작: When does Demi Lovato's new album come out in 2015?
-     3.75s  <ret> 발화 (turn1 첫 프레임)
-     3.97s  agent 발화 시작: <ret> Demi Lovato's album, *Confidence*, came out on October
-     4.07s  user  발화 끝
-     5.75s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.71s]: Demi Lovato's fifth studio album, Confidence, was released on October 
-    12.68s  agent 발화 끝
-    12.70s  user  발화 시작: Oh, okay. And what kind of music is on it?
-    15.76s  user  발화 끝
-    15.90s  agent 발화 시작: It's primarily pop and R&B, with elements of soul and electr
-    23.31s  agent 발화 끝
-    23.57s  user  발화 시작: Hmm, interesting.
-    24.90s  agent 발화 시작: It explores themes of self-acceptance, empowerment, and over
-    24.94s  user  발화 끝
-    29.52s  user  발화 시작: Uh-huh.
-    30.15s  user  발화 끝
-    31.89s  agent 발화 끝
-    32.78s  user  발화 시작: Is it true she wrote most of the songs herself?
-    35.83s  <ret> 발화 (turn8 첫 프레임)
-    35.87s  agent 발화 시작: <ret> Demi Lovato co-wrote almost all of the songs on *Confi
-    35.88s  user  발화 끝
-    37.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: Lovato co-wrote nearly all of the songs on *Confidence*, working with 
-    45.21s  user  발화 시작: That’s cool. Did it do well commercially?
-    45.33s  agent 발화 끝
-    48.07s  <ret> 발화 (turn10 첫 프레임)
-    48.22s  agent 발화 시작: <ret> *Confidence* debuted at number one on the Billboard 20
-    48.30s  user  발화 끝
-    50.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: *Confidence* debuted at number one on the Billboard 200 chart and has 
-    55.68s  agent 발화 끝
-    56.61s  user  발화 시작: Wow, that’s amazing!
-    58.55s  user  발화 끝
-    58.84s  agent 발화 시작: It speaks to the resonance of her message, I think. Finding 
-    66.81s  agent 발화 끝
-    67.75s  user  발화 시작: …but did she tour…
-    69.08s  user  발화 끝
-    70.18s  user  발화 시작: …after the album came out?
-    72.02s  user  발화 끝
-    72.11s  agent 발화 시작: She did indeed, embarking on the Future Now Tour in 2016 wit
-    74.45s  user  발화 시작: Yeah, yeah.
-    75.87s  user  발화 끝
-    77.67s  agent 발화 끝
-    77.82s  user  발화 시작: Was the tour successful?
-    79.71s  user  발화 끝
-    79.76s  <ret> 발화 (turn18 첫 프레임)
-    79.99s  agent 발화 시작: <ret> The Future Now Tour grossed over thirty million dollar
-    81.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: The Future Now Tour grossed over $30 million from 60 shows.
-    87.69s  agent 발화 끝
-    88.42s  user  발화 시작: That’s a lot of money!
-    89.72s  <ret> 발화 (turn20 첫 프레임)
-    90.03s  user  발화 끝
-    90.11s  agent 발화 시작: <ret> It is. Touring is a big undertaking, but it allows an 
-    91.72s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.58s]: The capital of Australia is Canberra; Wikipedia — en.wikipedia.org: Ca
-    96.49s  agent 발화 시작: Sometimes, I find, the energy exchange during a live perform
-    96.69s  agent 발화 끝
-    99.78s  user  발화 시작: Yeah.
-   100.41s  user  발화 끝
-   105.91s  agent 발화 끝
-   106.62s  user  발화 시작: Do you think performing helps with confidence?
-   109.39s  user  발화 끝
-   109.81s  agent 발화 시작: Stepping into the spotlight, sharing your vulnerability, and
-   116.00s  user  발화 시작: Yeah.
-   116.64s  user  발화 끝
-   117.88s  user  발화 시작: That makes a lot of sense. Thanks, Runana.
-   117.88s  agent 발화 끝
-   120.92s  user  발화 끝
-   121.31s  agent 발화 시작: You’re very welcome. Remember to be kind to yourself and nur
-   126.17s  agent 발화 끝
+     4.16s  user  발화 끝
+     4.33s  <ret> 발화 (turn1 첫 프레임)
+     4.56s  agent 발화 시작: <ret> Demi Lovato released her album, *Confidence*, in Octob
+     6.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: Demi Lovato's fifth studio album, Confidence, was released in October 
+    12.99s  agent 발화 끝
+    13.03s  user  발화 시작: Oh, okay. And what kind of music is on it?
+    15.60s  <ret> 발화 (turn3 첫 프레임)
+    16.00s  agent 발화 시작: <ret> It’s primarily pop and R&B, with touches of soul and e
+    16.17s  user  발화 끝
+    17.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.33s]: Confidence is primarily a pop and R&B album, with elements of soul and
+    23.32s  agent 발화 끝
+    23.83s  user  발화 시작: Interesting. Is it well-received?
+    25.84s  <ret> 발화 (turn5 첫 프레임)
+    26.15s  agent 발화 시작: <ret> Critics generally responded positively, praising Demi’
+    26.32s  user  발화 끝
+    27.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: Confidence received generally positive reviews from music critics, pra
+    32.17s  user  발화 시작: Uh-huh.
+    32.81s  user  발화 끝
+    35.00s  agent 발화 끝
+    35.85s  user  발화 시작: Hmm. I wonder if it went platinum?
+    38.05s  <ret> 발화 (turn8 첫 프레임)
+    38.19s  agent 발화 시작: <ret> *Confidence* was certified Platinum by the RIAA on Jan
+    38.39s  user  발화 끝
+    40.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: Confidence was certified Platinum by the RIAA on January 12, 2016.
+    46.04s  user  발화 시작: Wow, that's great!
+    46.63s  agent 발화 끝
+    47.60s  user  발화 끝
+    48.03s  agent 발화 시작: It truly is. Sometimes, recognizing those achievements can b
+    56.70s  agent 발화 끝
+    57.00s  user  발화 시작: Yeah, definitely. What songs are the most popular from it?
+    60.68s  <ret> 발화 (turn12 첫 프레임)
+    61.02s  user  발화 끝
+    61.07s  agent 발화 시작: <ret> “Cool for the Summer” and “Confident” were the lead si
+    61.80s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.21s]: "Cool for the Summer" and "Confident" were released as the lead single
+    65.36s  user  발화 시작: Mm-hmm.
+    65.95s  user  발화 끝
+    69.25s  user  발화 시작: I’ve heard “Cool for…
+    69.28s  agent 발화 끝
+    70.82s  user  발화 끝
+    72.13s  user  발화 시작: …the Summer” a lot.
+    73.48s  <ret> 발화 (turn16 첫 프레임)
+    73.64s  agent 발화 시작: <ret> It peaked at number eleven on the Billboard Hot 100. A
+    73.87s  user  발화 끝
+    75.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: "Cool for the Summer" peaked at number eleven on the Billboard Hot 100
+    75.48s  user  발화 시작: Yeah.
+    76.12s  user  발화 끝
+    80.13s  agent 발화 끝
+    81.05s  user  발화 시작: Is she on tour with that album?
+    83.07s  agent 발화 시작: She embarked on the Future Now Tour in September of twenty s
+    83.17s  user  발화 끝
+    85.99s  user  발화 시작: …did she perform any of her older songs too?
+    86.72s  agent 발화 끝
+    89.18s  agent 발화 시작: She did, actually. The Future Now Tour included a mix of son
+    89.23s  user  발화 끝
+    94.89s  user  발화 시작: Yeah.
+    95.48s  user  발화 끝
+   100.74s  user  발화 시작: That makes sense. I like when they do that.
+   100.77s  agent 발화 끝
+   103.89s  <ret> 발화 (turn24 첫 프레임)
+   103.93s  agent 발화 시작: <ret> The Future Now Tour grossed over fifty million dollars
+   103.98s  user  발화 끝
+   105.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.38s]: The Future Now Tour grossed over fifty million dollars.
+   111.31s  agent 발화 끝
+   111.34s  user  발화 시작: That's a lot of money!
+   112.64s  <ret> 발화 (turn26 첫 프레임)
+   112.88s  agent 발화 시작: <ret> It certainly is. I find that success often comes from 
+   113.00s  user  발화 끝
+   114.64s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=5.23s]: The average high temperature in Reykjavik, Iceland in July is 13.1°C.
+   116.23s  user  발화 시작: Mhm.
+   116.86s  user  발화 끝
+   118.11s  agent 발화 끝
+   118.52s  user  발화 시작: I guess so.
+   119.71s  agent 발화 시작: It's about allowing your true self to shine through, and tha
+   119.72s  user  발화 끝
+   124.79s  user  발화 시작: That’s a good point. Thanks!
+   124.90s  agent 발화 끝
+   126.80s  agent 발화 시작: You're very welcome. Remember, creative expression is a jour
+   126.91s  user  발화 끝
+   132.59s  agent 발화 끝

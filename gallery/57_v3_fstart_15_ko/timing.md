@@ -50,45 +50,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도를 알려줄 수 있어? | S2 베넬롱이 오페라 하우스 안에 있다고 했지? | S3 …줄 수 있어? 오늘 저녁 일곱시에. | S4 고마워.
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼요? | S2 아, 잠깐만, 그… | S3 메뉴 좀 보여줘, 아리아 레스토랑. | S4 파크 하얏트 시드니 가격이 얼마야?
 
-     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도를 알려줄 수 있어?
-     3.34s  <ret> 발화 (turn1 첫 프레임)
-     3.42s  agent 발화 시작: <ret> 위도는 마이너스 삼십삼 점 팔오육칠팔사일, 경도는 백오십일 점 이일오이사구입니다.
-     3.65s  user  발화 끝
-     5.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: -33.8567841,151.2152929
-     6.03s  user  발화 시작: 응.
-     6.52s  user  발화 끝
-     9.67s  agent 발화 끝
-    10.56s  user  발화 시작: 음… 그럼 그 근처에 괜찮은 레스토랑은 어디가 있을까?
-    14.14s  <ret> 발화 (turn4 첫 프레임)
-    14.39s  user  발화 끝
-    14.53s  agent 발화 시작: <ret> 아리아 레스토랑, 베넬롱, 그리고 퀘이 레스토랑이 근처에 있습니다. 모두 고급 레스토랑이에요.
-    16.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: Aria Restaurant (Italian, $$$$): 1 Macquarie St, Sydney NSW 2000, Aust
-    16.91s  user  발화 시작: 응.
-    17.50s  user  발화 끝
-    20.36s  agent 발화 끝
-    20.44s  agent 발화 시작: 아리아는 이탈리아 음식이고, 베넬롱과 퀘이는 현대 호주 요리를 제공합니다. 가격대는 모두 최고급이에요.
-    28.13s  agent 발화 끝
-    28.19s  user  발화 시작: 베넬롱이 오페라 하우스 안에 있다고 했지?
-    30.77s  user  발화 끝
-    30.93s  agent 발화 시작: 네, 맞아요. 베넬롱은 시드니 오페라 하우스 안에 위치하고 있습니다.
-    34.76s  agent 발화 끝
-    34.82s  user  발화 시작: 그 레스토랑 예약 좀 해…
-    36.70s  user  발화 끝
-    38.65s  user  발화 시작: …줄 수 있어? 오늘 저녁 일곱시에.
-    41.04s  agent 발화 시작: 오늘 저녁 일곱시에 베넬롱 레스토랑을 예약해 드리겠습니다. 몇 분이신가요? —
-    41.15s  user  발화 끝
-    45.40s  user  발화 시작: 혹시 창가 자리로 부탁할 수 있을까?
-    46.23s  agent 발화 끝
-    47.31s  <ret> 발화 (turn13 첫 프레임)
-    47.70s  agent 발화 시작: <ret> 네, 베넬롱 레스토랑 오늘 저녁 일곱시에 두 분 예약 완료되었습니다. 창가 자리를 요청드렸고, 확
-    47.71s  user  발화 끝
-    49.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.81s]: Reservation confirmed: Bennelong, July 10, 2026, 7:00 PM, 2 guests, wi
-    53.26s  user  발화 시작: 어어.
-    54.22s  user  발화 끝
-    56.46s  user  발화 시작: 고마워.
-    56.51s  agent 발화 끝
-    57.33s  agent 발화 시작: 천만에요. 즐거운 저녁 식사 되세요.
-    57.37s  user  발화 끝
-    59.95s  agent 발화 끝
+     0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼요?
+     3.61s  <ret> 발화 (turn1 첫 프레임)
+     3.68s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 -삼십삼 점 팔 오 육 팔, 경도는 백오십일 점 이 일 오 삼입니다
+     3.88s  user  발화 끝
+     5.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.80s]: (tool result) -33.8568, 151.2153
+     9.26s  user  발화 시작: 진짜?
+    10.04s  user  발화 끝
+    14.39s  user  발화 시작: 음… 그럼 근처에 맛집 좀 찾아줄 수 있어?
+    14.48s  agent 발화 끝
+    17.05s  <ret> 발화 (turn4 첫 프레임)
+    17.45s  agent 발화 시작: <ret> 오페라 하우스 근처에는 오페라 바가 백미터, 아리아 레스토랑이 이백미터, 베넬롱이 이백오십미터 거
+    17.62s  user  발화 끝
+    19.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.53s]: (tool result) Opera Bar (100m), Aria Restaurant (200m), Bennelong (250
+    20.41s  user  발화 시작: 와.
+    21.05s  user  발화 끝
+    25.96s  agent 발화 시작: 어떤 종류의 음식을 선호하시나요? 이탈리아, 프랑스, 아니면 다른 종류를 찾으시나요? 메뉴를 보고 싶으시면 
+    25.98s  agent 발화 끝
+    31.47s  user  발화 시작: 아.
+    31.96s  user  발화 끝
+    33.86s  user  발화 시작: 아, 잠깐만, 그…
+    34.02s  agent 발화 끝
+    35.23s  user  발화 끝
+    36.92s  user  발화 시작: …지금 시드니는 몇 시야?
+    38.34s  <ret> 발화 (turn10 첫 프레임)
+    38.73s  agent 발화 시작: <ret> 지금 시드니는 기온이 섭씨 이십삼도이고 습도는 칠십사%, 바람은 시속 오 점 오킬로미터입니다.
+    38.90s  user  발화 끝
+    40.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) 23.0°C, humidity 74%, wind 5.5 km/h
+    45.25s  agent 발화 시작: 맛집을 다시 찾으시면, 메뉴를 보고 싶으신지, 아니면 다른 종류를 찾으시는지 알려주세요.
+    45.40s  agent 발화 끝
+    50.84s  agent 발화 끝
+    51.70s  user  발화 시작: 메뉴 좀 보여줘, 아리아 레스토랑.
+    53.74s  <ret> 발화 (turn13 첫 프레임)
+    54.13s  agent 발화 시작: <ret> 아리아 레스토랑에 이천이십육년 칠월 십일일 저녁 일곱시에 두명 예약이 완료되었습니다. 확인 번호는
+    54.23s  user  발화 끝
+    55.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.74s]: (tool result) Aria Restaurant, Sydney, reservation for 2 people on Jul
+    56.42s  user  발화 시작: 응.
+    56.92s  user  발화 끝
+    61.87s  agent 발화 끝
+    63.05s  user  발화 시작: 고마워. 그럼 호텔도 찾아줄 수 있어? 오페라 하우스 근처에.
+    66.81s  <ret> 발화 (turn16 첫 프레임)
+    67.12s  agent 발화 시작: <ret> 오페라 하우스 근처에는 파크 하얏트 시드니가 삼백미터, 풀먼 퀘이 그랜드 시드니 하버가 오백미터,
+    67.35s  user  발화 끝
+    68.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.67s]: (tool result) Park Hyatt Sydney (300m), Pullman Quay Grand Sydney Harb
+    77.67s  user  발화 시작: 파크 하얏트 시드니 가격이 얼마야?
+    77.79s  agent 발화 끝
+    79.93s  <ret> 발화 (turn18 첫 프레임)
+    80.24s  agent 발화 시작: <ret> 파크 하얏트 시드니 (PHS.AX) 주가는 오늘 일 점 이퍼센트 상승한 이백사십오 점 오 영 호주
+    80.25s  user  발화 끝
+    81.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Park Hyatt Sydney (PHS.AX) is trading at $245.50 AUD, up
+    87.18s  agent 발화 끝
+    87.88s  user  발화 시작: 좋아, 그럼 파크 하얏트 시드니로 예약해 줘. 내일 밤으로.
+    91.42s  <ret> 발화 (turn20 첫 프레임)
+    91.81s  agent 발화 시작: <ret> 파크 하얏트 시드니에 이천이십육년 칠월 십일일 일박 예약이 완료되었습니다. 확인 번호는 팔B6C4
+    92.00s  user  발화 끝
+    93.27s  ⚡SPAN 주입 [d'=1.84s / d_lead=9.18s]: (tool result) Park Hyatt Sydney, Sydney, room booked for 1 night, July
+   101.00s  agent 발화 끝

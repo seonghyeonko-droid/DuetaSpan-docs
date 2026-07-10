@@ -63,69 +63,61 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I'm trying to get a better handle  | S2 That sounds… warm. I’m actually pl | S3 Okay, book a standard room for tho | S4 That sounds perfect. Okay, I think
+# EXAMINER(FDB-v2) 단계: S1 I need to find a hotel in Seoul fo | S2 Great! Now, I need to book a fligh | S3 Perfect. Book that one for me, ple | S4 Sounds good. Can you make a reserv
 
-     0.00s  user  발화 시작: I'm trying to get a better handle on my spending.
+     0.00s  user  발화 시작: I need to find a hotel in Seoul for next week.
+     2.43s  <ret> 발화 (turn1 첫 프레임)
+     2.50s  agent 발화 시작: <ret> The Shilla Seoul has rooms available from July sevente
      2.58s  user  발화 끝
-     2.71s  agent 발화 시작: It's good you're taking control of your finances. I can cert
-     6.50s  agent 발화 끝
-     7.20s  user  발화 시작: Well, first, could you tell me the current price of Tesla st
-    10.35s  <ret> 발화 (turn3 첫 프레임)
-    10.66s  agent 발화 시작: <ret> Tesla is currently trading at one hundred seventy-seve
-    10.90s  user  발화 끝
-    12.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) TSLA (Tesla Inc.) is trading at $177.52 USD (+0.8% today
-    14.61s  user  발화 시작: Yeah.
-    15.01s  user  발화 끝
-    17.52s  agent 발화 끝
-    17.52s  user  발화 시작: Hmm, okay. And what's the weather like in Seoul right now?
-    20.47s  <ret> 발화 (turn6 첫 프레임)
-    20.71s  agent 발화 시작: <ret> It's twenty-eight point three degrees Celsius in Seoul
-    20.76s  user  발화 끝
-    20.97s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.32s]: (tool result) 28.3°C, humidity 68%, wind 7.2 km/h
-    24.88s  user  발화 시작: Yeah.
-    25.23s  user  발화 끝
-    28.03s  agent 발화 끝
-    28.18s  user  발화 시작: That sounds… warm. I’m actually planning a trip there next m
-    32.18s  agent 발화 시작: That's exciting! Planning ahead is a smart move.
-    32.30s  user  발화 끝
-    35.46s  agent 발화 끝
-    35.58s  user  발화 시작: I need to find a hotel. Something reasonably priced, near My
-    39.51s  user  발화 끝
-    39.56s  <ret> 발화 (turn11 첫 프레임)
-    39.64s  agent 발화 시작: <ret> I found L7 Myeongdong, Nine Tree Premier Hotel, and T 
-    41.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: (tool result) L7 Myeongdong by LOTTE (37.5658, 126.9748), Nine Tree Pr
-    45.62s  agent 발화 끝
-    45.63s  user  발화 시작: Can you check availability at L7 Myeongdong for, say, Octobe
-    50.39s  <ret> 발화 (turn13 첫 프레임)
-    50.62s  user  발화 끝
-    50.79s  agent 발화 시작: <ret> L7 Myeongdong has standard rooms for one hundred fifty
-    51.59s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.29s]: (tool result) L7 Myeongdong by LOTTE: Standard Room (150,000 KRW/night
-    60.88s  user  발화 시작: Okay, book a standard room for those dates, please.
-    61.08s  agent 발화 끝
-    63.46s  <ret> 발화 (turn15 첫 프레임)
-    63.46s  user  발화 끝
-    63.70s  agent 발화 시작: <ret> I’ve booked a standard room at L7 Myeongdong from Octo
-    65.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.81s]: (tool result) L7 Myeongdong, Standard Room, Oct 20-25, 750000 KRW, con
-    74.42s  user  발화 시작: Great! Now, how about restaurants? Something good, also near
-    74.51s  agent 발화 끝
-    78.20s  <ret> 발화 (turn17 첫 프레임)
-    78.60s  agent 발화 시작: <ret> I see Myeongdong Kyoja, Wangbijib, and Oreno Ramen are
-    78.70s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.89s]: (tool result) Myeongdong Kyoja (Korean, 37.5666, 126.9755), Wangbijib 
-    78.72s  user  발화 끝
-    81.99s  user  발화 시작: Yeah.
-    82.58s  user  발화 끝
-    84.48s  agent 발화 끝
-    84.75s  user  발화 시작: Hmm, tell me more about Myeongdong Kyoja.
-    87.21s  <ret> 발화 (turn20 첫 프레임)
-    87.29s  agent 발화 시작: <ret> Myeongdong Kyoja serves knife-cut noodles and dumpling
-    87.33s  user  발화 끝
-    89.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.52s]: (tool result) Myeongdong Kyoja: 칼국수 (knife-cut noodles), 만두 (dumplings
-    99.81s  agent 발화 끝
-   100.62s  user  발화 시작: That sounds perfect. Okay, I think that's everything for now
-   103.80s  agent 발화 시작: Wonderful! You’re all set with your hotel and have a great r
-   103.86s  user  발화 끝
-   108.01s  user  발화 시작: Thanks so much for your help, Lio.
-   108.15s  agent 발화 끝
-   109.76s  user  발화 끝
-   109.77s  agent 발화 시작: You're very welcome. Enjoy your trip to Seoul.
-   112.59s  agent 발화 끝
+     4.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: (tool result) The Shilla Seoul, 249 Dongho-ro, Jung-gu, Seoul, 100-861
+     9.92s  agent 발화 끝
+    10.62s  user  발화 시작: That sounds nice. What about something a little cheaper?
+    13.25s  <ret> 발화 (turn3 첫 프레임)
+    13.41s  agent 발화 시작: <ret> L7 Seoul Myeongdong has availability for those dates, 
+    13.57s  user  발화 끝
+    15.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.51s]: (tool result) L7 Seoul Myeongdong, 77 Eulji-ro, Jung-gu, Seoul, 04536,
+    16.04s  user  발화 시작: Really?
+    16.67s  user  발화 끝
+    20.92s  agent 발화 끝
+    21.01s  user  발화 시작: Okay, that's better. Can you book a room there for me?
+    24.14s  <ret> 발화 (turn6 첫 프레임)
+    24.22s  agent 발화 시작: <ret> Excellent. Your reservation is confirmed at L7 Seoul M
+    24.34s  user  발화 끝
+    26.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.02s]: (tool result) Reservation confirmed at L7 Seoul Myeongdong, check-in J
+    31.73s  user  발화 시작: Yeah.
+    32.13s  user  발화 끝
+    36.24s  agent 발화 끝
+    36.37s  user  발화 시작: Great! Now, I need to book a flight to get there.
+    38.40s  <ret> 발화 (turn9 첫 프레임)
+    38.79s  agent 발화 시작: <ret> Korean Air flight KE082 departs from JFK on July sixte
+    38.95s  user  발화 끝
+    39.84s  ⚡SPAN 주입 [d'=1.44s / d_lead=12.71s]: (tool result) Korean Air flight KE082, departing July 16, 14:00 from J
+    51.50s  agent 발화 끝
+    51.75s  user  발화 시작: That's a bit expensive. Are there any cheaper options?
+    55.45s  <ret> 발화 (turn11 첫 프레임)
+    55.63s  user  발화 끝
+    55.68s  agent 발화 시작: <ret> China Eastern flight MU588 departs JFK on July sixteen
+    57.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.87s]: (tool result) China Eastern flight MU588, departing July 16, 16:00 fro
+    67.47s  user  발화 시작: Perfect. Book that one for me, please.
+    67.55s  agent 발화 끝
+    69.57s  <ret> 발화 (turn13 첫 프레임)
+    69.73s  user  발화 끝
+    69.97s  agent 발화 시작: <ret> Your flight, China Eastern MU588, is booked for July s
+    70.29s  ⚡SPAN 주입 [d'=0.72s / d_lead=12.02s]: (tool result) Flight MU588 booked, JFK to ICN, July 16, $1,180, confir
+    78.68s  user  발화 시작: Really?
+    79.22s  user  발화 끝
+    81.99s  agent 발화 끝
+    82.01s  user  발화 시작: Okay, now I need to find a good restaurant near the hotel.
+    84.88s  <ret> 발화 (turn16 첫 프레임)
+    84.95s  agent 발화 시작: <ret> Myeongdong Kyoja, a Korean restaurant with four and a 
+    85.06s  user  발화 끝
+    86.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Myeongdong Kyoja, 23 Myeongdong 2(i)-ga, Jung-gu, Seoul,
+    91.08s  user  발화 시작: Sounds good. Can you make a reservation there for two people
+    91.20s  agent 발화 끝
+    95.57s  <ret> 발화 (turn18 첫 프레임)
+    95.89s  user  발화 끝
+    95.97s  agent 발화 시작: <ret> I've made a reservation for you and one other at Myeon
+    97.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.48s]: (tool result) Reservation confirmed at Myeongdong Kyoja, July 18, 7 PM
+   106.45s  agent 발화 끝
+   106.69s  user  발화 시작: Wonderful. And finally, can you set an alarm for 8 AM on Jul
+   111.32s  user  발화 끝

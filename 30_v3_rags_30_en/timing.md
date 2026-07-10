@@ -64,11 +64,11 @@
 # }
 
 
-     0.00s  user  발화 시작: When was the printing press…
-     1.94s  user  발화 끝
-     3.59s  user  발화 시작: …first used in Europe, roughly?
-     6.26s  <ret> 발화 (turn2 첫 프레임)
-     6.27s  user  발화 끝
-     6.50s  agent 발화 시작: <ret> The printing press first appeared in Europe around fou
-     8.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.71s]: Johannes Gutenberg demonstrated the printing press around 1440 in Main
-    17.21s  agent 발화 끝
+     0.00s  user  발화 시작: When was the printing…
+     2.50s  user  발화 끝
+     4.20s  user  발화 시작: …press first invented in Europe?
+     6.91s  <ret> 발화 (turn2 첫 프레임)
+     6.92s  user  발화 끝
+     7.15s  agent 발화 시작: <ret> The printing press was developed in Europe around four
+     8.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: Johannes Gutenberg developed the printing press with movable type in E
+    15.62s  agent 발화 끝

@@ -77,19 +77,17 @@
 # }
 
 
-     0.00s  user  발화 시작: 휴가 때 프랑스 갔던 사진 찾아줘…
-     2.26s  user  발화 끝
-     3.38s  user  발화 시작: …썸네일 말고.
-     4.37s  <ret> 발화 (turn2 첫 프레임)
-     4.44s  agent 발화 시작: <ret> 프랑스 휴가 사진 세 장을 찾았어요. IMG_1234.jpg, IMG_5678.jpg, IMG_9
-     4.48s  user  발화 끝
-     6.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.67s]: (tool result) /Users/sunan/Pictures/France Holiday/IMG_1234.jpg, /User
-     8.12s  user  발화 시작: 음.
-     8.54s  user  발화 끝
-    13.02s  user  발화 시작: 아, IMG_9012.png 이거 열어 봐 줘.
-    13.11s  agent 발화 끝
-    16.20s  <ret> 발화 (turn5 첫 프레임)
-    16.59s  agent 발화 시작: <ret> IMG_9012.png 파일은 PNG 이미지이고, 해상도는 천구백이십x1080, 용량은 이 점 삼
-    16.72s  user  발화 끝
-    18.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: (tool result) /Users/sunan/Pictures/France Holiday/IMG_9012.png: PNG i
-    24.60s  agent 발화 끝
+     0.00s  user  발화 시작: 휴가 때 프랑스 사진 찾아줘. 썸네일 말고.
+     2.92s  <ret> 발화 (turn1 첫 프레임)
+     2.99s  agent 발화 시작: <ret> 프랑스 휴가 사진 세 장을 찾았어요. /home/user/Pictures/France_Holida
+     3.05s  user  발화 끝
+     4.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: (tool result) /home/user/Pictures/France Holiday_2025/IMG_1234.jpg, /h
+     6.38s  user  발화 시작: 음.
+     6.77s  user  발화 끝
+    10.87s  user  발화 시작: 제일 큰 파일은 뭐야?
+    10.87s  agent 발화 끝
+    11.76s  <ret> 발화 (turn4 첫 프레임)
+    12.16s  agent 발화 시작: <ret> IMG_9012.png 파일이 가장 크고, 십이 점 오MB에 삼천팔백사십x2160 픽셀입니다.
+    12.34s  user  발화 끝
+    13.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: (tool result) 12.5MB, PNG image, 3840x2160 pixels
+    20.27s  agent 발화 끝

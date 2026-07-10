@@ -76,101 +76,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 파리 에펠탑의 좌표를 알려줄 수 있을까요? | S2 아니요, 그곳으로 가는 길을 알려주세요. | S3 그럼, 가장 가까운 식당을 추천해 주세요. | S4 혹시 그 식당까지 가는 가장 빠른 길은 어떻게 되나요?
+# EXAMINER(FDB-v2) 단계: S1 파리 에펠탑의 좌표를 알려줄 수 있을까요? | S2 리츠 파리가 좋겠네요. 예약해 줄 수 있나요? | S3 르 부용 샤르티에가 가깝네요. | S4 …그중에 루브르 박물관은 예약해야 하나요?
 
      0.00s  user  발화 시작: 파리 에펠탑의 좌표를 알려줄 수 있을까요?
-     0.00s  <ret> 발화 (turn1 첫 프레임)
-     0.00s  <ret> 발화 (turn4 첫 프레임)
-     0.00s  <ret> 발화 (turn8 첫 프레임)
-     0.02s  agent 발화 시작: <ret> 에펠탑의 좌표는 위도 사십팔 점 팔 오 팔 사, 경도 이 점 이 구 사 오입니다. 혹시 다른 장소
-     0.02s  user  발화 끝
-     0.03s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: Seoul: <name> (230 m), <name> (310 m), <name> (350 m), <name> (400 m),
-     0.04s  <ret> 발화 (turn12 첫 프레임)
-     0.06s  <ret> 발화 (turn10 첫 프레임)
-     0.06s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: 48.8584, 2.2945
-     0.06s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: 37.5659, 126.9756
-     0.08s  user  발화 시작: 어머.
-     0.08s  agent 발화 끝
-     0.08s  user  발화 시작: 그럼, 서울 남산타워의 좌표도 알려주세요.
-     0.08s  user  발화 끝
-     0.09s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: 07:00, 07:20, 07:40, 08:00, 08:20, 08:40, 09:00, 09:20...
-     0.10s  agent 발화 시작: <ret> 남산타워의 좌표는 위도 삼십칠 점 오 육 오 구, 경도 백이십육 점 구 칠 오 육입니다. 두 곳의
-     0.10s  user  발화 끝
-     0.10s  <ret> 발화 (turn6 첫 프레임)
-     0.10s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Take bus 109 from <station> to <station>, walk 150m. Estimated time: 1
-     0.15s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: 28.0°C, humidity 65%, wind 3.2 km/h
-     0.16s  user  발화 시작: 네, 확인했어요. 그런데 지금 서울 날씨는 어떤가요?
-     0.16s  agent 발화 끝
-     0.18s  agent 발화 시작: <ret> 현재 서울의 기온은 이십팔 점 영도이고, 습도는 육십오%, 풍속은 시속 삼 점 이킬로미터입니다. 
-     0.18s  user  발화 끝
-     0.21s  <ret> 발화 (turn21 첫 프레임)
-     0.23s  user  발화 시작: 서울에서 가장 가까운 카페를 찾아줄 수 있을까요?
-     0.23s  agent 발화 끝
-     0.25s  agent 발화 시작: <ret> 서울에서 가장 가까운 카페는 이백삼십미터 거리의 <name>입니다. 다른 카페도 찾아드릴까요?
-     0.25s  user  발화 끝
-     0.26s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: 4.5 stars, "Excellent pizza and pasta!" - <user>; "Great atmosphere an
-     0.26s  <ret> 발화 (turn17 첫 프레임)
-     0.28s  user  발화 시작: 아니요, 그곳으로 가는 길을 알려주세요.
-     0.28s  agent 발화 끝
-     0.29s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: 14:00, 16:30, 19:00, 21:30
-     0.30s  agent 발화 시작: <ret> 현재 위치에서 백구번 버스를 타고 <station> 정류장에서 내려서 백오십미터를 걸어가시면 됩니
-     0.30s  user  발화 끝
-     0.31s  <ret> 발화 (turn19 첫 프레임)
-     0.34s  user  발화 시작: 버스 시간표를 보여줄 수 있을까요?
-     0.34s  agent 발화 끝
-     0.35s  <ret> 발화 (turn15 첫 프레임)
-     0.36s  ⚡SPAN 주입 [d'=0.05s / d_lead=0.05s]: <name> (300 m): Korean cuisine; <name> (400 m): Italian cuisine; <name
-     0.36s  agent 발화 시작: <ret> 백구번 버스는 일곱시, 일곱시 이십분, 일곱시 사십분, 여덟시, 여덟시 이십분, 여덟시 사십분, 
-     0.36s  user  발화 끝
-     0.40s  <ret> 발화 (turn25 첫 프레임)
-     0.41s  user  발화 시작: 네.
-     0.41s  agent 발화 끝
-     0.41s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: <name> (500 m): <Movie 1>, <Movie 2>; <name> (700 m): <Movie 3>, <Movi
-     0.41s  user  발화 시작: 혹시 지금 근처에 영화관도 있나요?
-     0.41s  user  발화 끝
-     0.43s  agent 발화 시작: <ret> 서울에서 오백미터 거리의 <name> 영화관에서는 <Movie 일>, <Movie 이>를 상영하고
-     0.43s  user  발화 끝
-     0.44s  ⚡SPAN 주입 [d'=0.04s / d_lead=0.04s]: Reservation confirmed for 2 guests at 19:00, confirmation ID: 789234
-     0.49s  user  발화 시작: <Movie 일>의 상영 시간을 알려주세요.
-     0.49s  agent 발화 끝
-     0.50s  agent 발화 시작: <ret> <Movie 일>은 오후 두시, 네시 삼십분, 일곱시, 아홉시 삼십분에 상영합니다.
-     0.50s  user  발화 끝
-     0.53s  user  발화 시작: 그럼, 가장 가까운 식당을 추천해 주세요.
-     0.53s  agent 발화 끝
-     0.55s  <ret> 발화 (turn27 첫 프레임)
-     0.55s  agent 발화 시작: <ret> 서울에서 삼백미터 거리의 <name>은 한국 음식점이고, 사백미터 거리의 <name>은 이탈리아 
-     0.55s  user  발화 끝
-     0.60s  user  발화 시작: 이탈리아 음식점의 리뷰를 보여주세요.
-     0.60s  agent 발화 끝
-     0.61s  ⚡SPAN 주입 [d'=0.06s / d_lead=0.06s]: Walk 200m to <station>, take subway line 2 to <station>, walk 100m. Es
-     0.61s  agent 발화 시작: <ret> <name> 이탈리아 음식점은 별점 사 점 오점이고, 리뷰에는 “훌륭한 피자와 파스타!” 그리고 
-     0.61s  user  발화 끝
-     0.66s  user  발화 시작: 그 식당으로 예약해 줄 수 있을까요?
-     0.66s  agent 발화 끝
-     0.67s  <ret> 발화 (turn31 첫 프레임)
-     0.68s  agent 발화 시작: 예약을 도와드리겠습니다. 몇 시에 몇 명으로 예약하시겠어요?
-     0.68s  user  발화 끝
-     0.70s  ⚡SPAN 주입 [d'=0.03s / d_lead=0.03s]: Gyeongbokgung Palace, Changdeokgung Palace, Insadong, Bukchon Hanok Vi
-     0.70s  user  발화 시작: 오늘 저녁 일곱시에 두 명으로 예약해주세요.
-     0.70s  agent 발화 끝
-     0.72s  agent 발화 시작: <ret> 일곱시에 두명으로 <name> 이탈리아 음식점 예약이 완료되었습니다. 확인 번호는 칠 팔 구 이 
-     0.72s  user  발화 끝
-     0.76s  user  발화 시작: 혹시 그 식당까지 가는 가장 빠른 길은 어떻게 되나요?
-     0.76s  agent 발화 끝
-     0.79s  agent 발화 시작: <ret> 현재 위치에서 이백미터를 걸어서 <station> 역으로 이동한 다음, 이호선으로 환승해서 <st
-     0.79s  user  발화 끝
-     0.85s  user  발화 시작: 지금 제 휴대폰에 길 안내를 보내줄 수 있나요?
-     0.85s  agent 발화 끝
-     0.87s  agent 발화 시작: —
-     0.87s  user  발화 끝
-     0.88s  user  발화 시작: … 혹시 서울에 있는 다른 재미있는 관광지도 추천해 줄 수 있어요?
-     0.88s  agent 발화 끝
-     0.91s  agent 발화 시작: <ret> 서울에는 경복궁, 창덕궁, 인사동 등 다양한 관광 명소가 있습니다.
-     0.91s  user  발화 끝
-     0.94s  agent 발화 시작: 경복궁, 창덕궁, 인사동, 북촌 한옥마을, 남산타워 등이 유명합니다. [curious] 어디를 가장 먼저 가
-     0.94s  agent 발화 끝
-     0.98s  user  발화 시작: 예.
-     0.98s  agent 발화 끝
-     0.98s  user  발화 시작: 북촌 한옥마을에 대해 더 자세히 알려주세요.
-     0.98s  user  발화 끝
-     1.00s  user  발화 끝
+     2.90s  <ret> 발화 (turn1 첫 프레임)
+     3.14s  agent 발화 시작: <ret> 에펠탑의 좌표는 북위 사십팔 점 팔 오 팔 사도, 동경 이 점 이 구 사 오도입니다. 파리에 가실
+     3.19s  user  발화 끝
+     4.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: (tool result) 48.8584° N, 2.2945° E
+    11.57s  agent 발화 끝
+    12.20s  user  발화 시작: 네, 다음 달에 파리 여행을 가려고 해요.
+    15.90s  user  발화 끝
+    16.06s  agent 발화 시작: 다음 달 파리 여행을 계획하고 계시는군요. 멋진 여행이 될 거예요. 혹시 숙소는 예약하셨나요?
+    20.11s  user  발화 시작: 아.
+    20.74s  user  발화 끝
+    21.99s  agent 발화 끝
+    22.64s  user  발화 시작: 아직 숙소를 예약하지 못했어요. 추천해 줄 만한 곳이 있을까요?
+    27.02s  <ret> 발화 (turn6 첫 프레임)
+    27.07s  user  발화 끝
+    27.10s  agent 발화 시작: <ret> 파리에는 럭셔리 호텔이 많아요. 리츠 파리, 브리스톨 파리, 포시즌 호텔 조르주 V가 괜찮은 선택
+    29.02s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.12s]: (tool result) Hotel Ritz Paris, 15 Place Vendôme, 75001 Paris; Le Bris
+    35.21s  agent 발화 끝
+    35.73s  user  발화 시작: 리츠 파리가 좋겠네요. 예약해 줄 수 있나요?
+    39.10s  user  발화 끝
+    39.20s  <ret> 발화 (turn8 첫 프레임)
+    39.28s  agent 발화 시작: <ret> 리츠 파리 호텔이 예약되었습니다. 확인 번호는 RTZ78923입니다. 팔월 십오일부터 이십일까지 
+    41.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.99s]: (tool result) Confirmation ID: RTZ78923, Hotel Ritz Paris, 15 Place Ve
+    48.28s  agent 발화 끝
+    48.66s  user  발화 시작: 감사합니다. 혹시 그 근처에 괜찮은 레스토랑도 알아봐 줄 수 있을까요?
+    52.92s  <ret> 발화 (turn10 첫 프레임)
+    53.16s  agent 발화 시작: <ret> 리츠 파리 근처에는 르 부용 샤르티에, 라르페주, 세프팀 레스토랑이 있습니다. 르 부용 샤르티에는
+    53.25s  user  발화 끝
+    53.42s  ⚡SPAN 주입 [d'=0.50s / d_lead=12.57s]: (tool result) Le Bouillon Chartier, 7 Rue du Faubourg Montmartre, 7500
+    60.24s  user  발화 시작: 네.
+    60.69s  user  발화 끝
+    65.73s  agent 발화 끝
+    66.07s  user  발화 시작: 르 부용 샤르티에가 가깝네요.
+    68.51s  user  발화 끝
+    68.70s  agent 발화 시작: 르 부용 샤르티에가 가장 가깝네요. 가성비 좋은 맛집으로 유명합니다.
+    70.42s  user  발화 시작: 네.
+    71.01s  user  발화 끝
+    73.13s  agent 발화 시작: 파리에서 맛있는 식사를 즐기실 수 있을 거예요. 혹시 파리에서 꼭 가봐야 할 관광지도 궁금하신가요?
+    73.15s  agent 발화 끝
+    79.87s  user  발화 시작: 네, 물론이죠.
+    79.90s  agent 발화 끝
+    80.68s  <ret> 발화 (turn17 첫 프레임)
+    80.92s  agent 발화 시작: <ret> 파리에서는 에펠탑, 루브르 박물관, 개선문, 노트르담 대성당, 오르세 미술관을 꼭 방문해 보세요.
+    81.01s  user  발화 끝
+    82.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Eiffel Tower, Louvre Museum, Arc de Triomphe, Notre-Dame
+    87.22s  user  발화 시작: …그중에 루브르 박물관은 예약해야 하나요?
+    87.78s  agent 발화 끝
+    90.13s  <ret> 발화 (turn19 첫 프레임)
+    90.37s  agent 발화 시작: <ret> 루브르 박물관은 시간대별 예약을 권장합니다. 현재 오전 열시, 열한시, 오후 한시, 두시에 예약 
+    90.60s  user  발화 끝
+    92.05s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.25s]: (tool result) Louvre Museum, 99 Rue de Rivoli, 75001 Paris: Time slots
+    98.61s  agent 발화 끝
+    98.84s  user  발화 시작: 오후 한시로 예약해 줄 수 있을까요?
+   100.76s  <ret> 발화 (turn21 첫 프레임)
+   101.16s  agent 발화 시작: <ret> 루브르 박물관 오후 한시 입장권이 예약되었습니다. 확인 번호는 LVR45678입니다. 팔월 십육일
+   101.39s  user  발화 끝
+   101.88s  ⚡SPAN 주입 [d'=1.12s / d_lead=7.79s]: (tool result) Confirmation ID: LVR45678, Louvre Museum, 99 Rue de Rivo
+   108.95s  agent 발화 끝

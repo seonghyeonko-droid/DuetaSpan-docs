@@ -68,73 +68,51 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to plan a trip to Seoul | S2 L7 Seoul Myeongdong sounds good. C | S3 That's great! Now, what about thin | S4 Yes, please.
+# EXAMINER(FDB-v2) 단계: S1 I’m trying to plan a trip to Busan | S2 Hmm, the Park Hyatt sounds nice. W | S3 Flights, ideally. From Seoul. | S4 Excellent. That’s everything for n
 
-     0.00s  user  발화 시작: I’m trying to plan a trip to Seoul. Can you check the weathe
-     3.59s  <ret> 발화 (turn1 첫 프레임)
-     3.83s  agent 발화 시작: <ret> It is currently 23.0°C in Seoul, with seventy-four per
-     4.02s  user  발화 끝
-     5.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.77s]: 23.0°C, humidity 74%, wind 5.5 km/h
-     7.13s  user  발화 시작: Yeah.
-     7.62s  user  발화 끝
-    12.60s  agent 발화 끝
-    13.87s  user  발화 시작: That sounds pleasant. Um…
-    16.32s  user  발화 끝
-    16.55s  agent 발화 시작: It does seem quite agreeable, a lovely day for exploring.
-    18.24s  user  발화 시작: Yeah, yeah.
-    19.06s  user  발화 끝
-    20.60s  user  발화 시작: I’d like to find a nice hotel there, something central.
-    20.67s  agent 발화 끝
-    23.76s  <ret> 발화 (turn7 첫 프레임)
-    24.07s  agent 발화 시작: <ret> Hotel Shilla is ₩350000, while L7 Seoul Myeongdong is 
-    24.26s  user  발화 끝
-    25.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: Hotel Shilla (37.56668, 126.97829): ₩350000, L7 Seoul Myeongdong (37.5
-    30.41s  user  발화 시작: Yeah.
-    30.91s  user  발화 끝
-    33.52s  agent 발화 끝
-    33.53s  agent 발화 시작: I can refine the search if you have specific preferences, su
-    35.76s  user  발화 시작: Yeah.
-    36.20s  user  발화 끝
-    38.26s  agent 발화 끝
-    38.41s  user  발화 시작: L7 Seoul Myeongdong sounds good. Can you check if they have 
-    43.84s  <ret> 발화 (turn12 첫 프레임)
-    44.00s  agent 발화 시작: <ret> L7 Seoul Myeongdong has availability next Friday. A St
-    44.14s  user  발화 끝
-    45.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: L7 Seoul Myeongdong: available, Standard Room ₩220000, Deluxe Room ₩28
-    56.94s  agent 발화 끝
-    57.04s  user  발화 시작: Okay, book the standard room for me.
-    58.99s  <ret> 발화 (turn14 첫 프레임)
-    59.07s  agent 발화 시작: <ret> You are all set. A Standard Room at L7 Seoul Myeongdon
-    59.17s  user  발화 끝
-    60.43s  ⚡SPAN 주입 [d'=1.44s / d_lead=9.04s]: L7 Seoul Myeongdong: booked, Standard Room, check-in 2026-07-17, confi
-    63.17s  user  발화 시작: Right.
-    63.81s  user  발화 끝
-    68.11s  agent 발화 끝
-    68.69s  user  발화 시작: That's great! Now, what about things to do?
-    71.37s  <ret> 발화 (turn17 첫 프레임)
-    71.68s  agent 발화 시작: <ret> Popular attractions include Gyeongbokgung Palace, N Se
-    71.78s  user  발화 끝
-    72.73s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.25s]: Gyeongbokgung Palace, N Seoul Tower, Bukchon Hanok Village, …
-    74.16s  user  발화 시작: Yeah.
-    74.65s  user  발화 끝
-    77.82s  user  발화 시작: Can you find me directions to Gyeongbokgung Palace from the 
-    77.94s  agent 발화 끝
-    81.27s  <ret> 발화 (turn20 첫 프레임)
-    81.67s  agent 발화 시작: <ret> It’s 2.1 kilometers, about twenty-seven minutes by foo
-    81.77s  ⚡SPAN 주입 [d'=0.50s / d_lead=7.13s]: (map directions) 2.1 km, approx. 27 mins, walk: <directions string>
-    81.80s  user  발화 끝
-    85.22s  user  발화 시작: Yeah.
-    85.62s  user  발화 끝
-    88.80s  agent 발화 끝
-    89.13s  user  발화 시작: Yes, please.
-    89.89s  <ret> 발화 (turn23 첫 프레임)
-    90.29s  agent 발화 시작: <ret> Walk south on Myeongdong-gil, then turn left onto Toeg
-    90.32s  user  발화 끝
-    91.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (map directions) Walk south on Myeongdong-gil, turn left onto Toegye-r
-    93.93s  user  발화 시작: Right.
-    94.56s  user  발화 끝
-    97.56s  agent 발화 끝
-    98.32s  user  발화 시작: Perfect, thank you so much.
-    99.90s  agent 발화 시작: You’re very welcome. I hope you enjoy your trip to Seoul.
-    99.92s  user  발화 끝
-   103.64s  agent 발화 끝
+     0.00s  user  발화 시작: I’m trying to plan a trip to Busan next month.
+     2.73s  agent 발화 시작: Busan is a wonderful choice. Perhaps we could start by looki
+     2.91s  user  발화 끝
+     5.21s  user  발화 시작: Uh-huh.
+     5.71s  user  발화 끝
+     8.00s  agent 발화 끝
+     9.27s  user  발화 시작: Yeah, that’d be great. Something near Haeundae Beach.
+    12.28s  <ret> 발화 (turn4 첫 프레임)
+    12.51s  user  발화 끝
+    12.52s  agent 발화 시작: <ret> I found three hotels near Haeundae Beach: Paradise, Pa
+    14.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: (tool result) Paradise Hotel Busan, 189 Haeundaehaebyeon-ro, Haeundae-
+    15.75s  user  발화 시작: Yeah.
+    16.20s  user  발화 끝
+    18.64s  user  발화 시작: Hmm, the Park Hyatt sounds nice. What’s the price like?
+    18.68s  agent 발화 끝
+    21.99s  <ret> 발화 (turn7 첫 프레임)
+    22.22s  agent 발화 시작: <ret> A room at the Park Hyatt Busan from July twelfth to fi
+    22.48s  user  발화 끝
+    23.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: (tool result) Park Hyatt Busan, reservation for one room, July 12-15, 
+    28.85s  user  발화 시작: Yeah.
+    29.30s  user  발화 끝
+    32.02s  user  발화 시작: That sounds good. I also need to figure out transportation.
+    32.04s  agent 발화 끝
+    36.28s  agent 발화 시작: Are you interested in flights, trains, or buses to Busan?
+    36.28s  user  발화 끝
+    37.66s  user  발화 시작: Yeah.
+    38.15s  user  발화 끝
+    39.91s  user  발화 시작: Flights, ideally. From Seoul.
+    40.03s  agent 발화 끝
+    42.63s  user  발화 끝
+    42.75s  <ret> 발화 (turn13 첫 프레임)
+    42.83s  agent 발화 시작: <ret> Korean Air flight 801 departs Seoul at nine AM on July
+    44.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.85s]: (tool result) Korean Air 801, departs July 12, 2026, 9:00 AM KST, arri
+    50.12s  user  발화 시작: Yeah.
+    50.61s  user  발화 끝
+    53.68s  agent 발화 끝
+    53.78s  user  발화 시작: Okay, let's book that flight.
+    55.71s  <ret> 발화 (turn16 첫 프레임)
+    55.76s  user  발화 끝
+    55.79s  agent 발화 시작: <ret> I’ve booked a roundtrip flight on Korean Air, flight 8
+    57.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.79s]: (tool result) Korean Air 801, departs July 12, 2026, 9:00 AM KST, arri
+    65.58s  agent 발화 끝
+    65.59s  user  발화 시작: Excellent. That’s everything for now, I think.
+    68.26s  user  발화 끝
+    68.31s  agent 발화 시작: Wonderful. I trust you’ll have a very pleasant trip to Busan
+    72.28s  agent 발화 끝

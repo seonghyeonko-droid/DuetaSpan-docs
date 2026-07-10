@@ -69,21 +69,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hello Andrea, my name is Jaeia. It’s lovely to connect with 
-    10.80s  agent 발화 끝
-    10.85s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just… feeling really los
-    18.26s  user  발화 끝
-    18.27s  agent 발화 시작: It’s understandable to feel lost when things shift, Andrea. 
-    22.25s  user  발화 시작: Wow.
-    23.07s  user  발화 끝
-    30.24s  agent 발화 시작: Sometimes simply naming the difference, acknowledging what’s
-    30.33s  agent 발화 끝
-    41.64s  agent 발화 끝
-    41.73s  user  발화 시작: It’s my job, mostly. I… I lost it last month. And I don’t ev
-    48.30s  user  발화 끝
-    48.47s  agent 발화 시작: Losing a job is a significant loss, Andrea. It's not just ab
-    62.62s  agent 발화 끝
-    62.63s  user  발화 시작: I… I’m trying. It's just hard, you know? But… thank you, Jae
-    67.08s  user  발화 끝
-    67.22s  agent 발화 시작: Andrea. Taking the time to acknowledge the pain is a kindnes
-    80.86s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Andrea, it’s lovely to connect with you. My name is Ja
+     5.83s  user  발화 시작: Right.
+     6.23s  user  발화 끝
+     8.98s  user  발화 시작: Jaeia… that’s a beautiful name. I’m just… feeling really los
+     9.04s  agent 발화 끝
+    14.71s  agent 발화 시작: It sounds as though you're carrying a heavy heart, Andrea. F
+    14.81s  user  발화 끝
+    19.27s  user  발화 시작: Yeah.
+    19.76s  user  발화 끝
+    24.06s  agent 발화 시작: Sometimes, simply acknowledging that feeling—giving it space
+    24.12s  agent 발화 끝
+    33.99s  agent 발화 끝
+    35.08s  user  발화 시작: I don’t even know where to start. Everything feels… differen
+    40.59s  user  발화 끝
+    40.67s  agent 발화 시작: Grief often reshapes our world, Andrea. It’s natural for eve
+    53.71s  agent 발화 끝
+    53.86s  user  발화 시작: Yeah… it really is. It just feels like… a part of me is miss
+    59.05s  user  발화 끝
+    59.12s  agent 발화 시작: That’s a deeply resonant way to describe it. Losing someone 
+    73.64s  agent 발화 끝

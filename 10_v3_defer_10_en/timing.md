@@ -63,24 +63,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I need to find pictures from my Fr | S2 …but not the small thumbnail versi | S3 Oh, great! Could you show me the m | S4 Perfect, thank you.
 
-     0.00s  user  발화 시작: I need to find pictures related to my holiday in France last
-     5.60s  <ret> 발화 (turn1 첫 프레임)
-     5.65s  user  발화 끝
-     5.68s  agent 발화 시작: <ret> I found three pictures from your France holiday in two
-     7.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) /home/user/Pictures/France Holiday_2023/IMG_1234.jpg, /h
-    10.28s  user  발화 시작: Uh-huh.
-    10.73s  user  발화 끝
-    16.29s  user  발화 시작: Oh, that's great! Can you open IMG_1234 for me?
-    16.44s  agent 발화 끝
-    20.46s  <ret> 발화 (turn4 첫 프레임)
-    20.62s  agent 발화 시작: <ret> IMG_1234 is a JPG, one nine two zero by one zero eight
-    20.77s  user  발화 끝
-    22.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.59s]: (tool result) /home/user/Pictures/France Holiday_2023/IMG_1234.jpg: 19
-    25.58s  user  발화 시작: Yeah.
-    26.07s  user  발화 끝
-    32.22s  agent 발화 끝
-    32.71s  user  발화 시작: Perfect, thank you!
-    33.78s  agent 발화 시작: You're very welcome. It sounds like a lovely trip, revisitin
-    33.95s  user  발화 끝
-    39.71s  agent 발화 끝
+     0.00s  user  발화 시작: I need to find pictures from my France trip last year…
+     3.04s  user  발화 끝
+     4.41s  user  발화 시작: …but not the small thumbnail versions.
+     6.29s  <ret> 발화 (turn2 첫 프레임)
+     6.37s  agent 발화 시작: <ret> I found two hundred thirty-four photos from your Franc
+     6.53s  user  발화 끝
+     8.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) /pictures/France_2025/vacation photos (234 files found)
+    10.19s  user  발화 시작: Mhm.
+    10.69s  user  발화 끝
+    12.62s  agent 발화 끝
+    13.54s  user  발화 시작: Oh, great! Could you show me the most recent one?
+    16.11s  <ret> 발화 (turn5 첫 프레임)
+    16.26s  agent 발화 시작: <ret> The most recent photo is beach_sunset_20250715.jpg fro
+    16.45s  user  발화 끝
+    17.23s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.69s]: (tool result) /pictures/France_2025/vacation photos/beach sunset_20250
+    19.46s  user  발화 시작: Really?
+    20.10s  user  발화 끝
+    25.95s  agent 발화 끝
+    28.04s  user  발화 시작: Perfect, thank you.
+    28.99s  agent 발화 시작: You're very welcome! It's wonderful to help you rediscover t
+    29.04s  user  발화 끝
+    33.20s  agent 발화 끝

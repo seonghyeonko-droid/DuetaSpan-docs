@@ -66,69 +66,75 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오나요, 이천십오년에? | S2 ‘Skyscraper’를 가장 좋아해요. | S3 …그 앨범에 수록된 다른 곡들도 궁금해요. | S4 맞아요, 저도 그래요.
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요. | S2 아직 날짜는 정하지 못했어요. 한국에서 하는 콘서트가 있으면  | S3 이천십일년 앨범 'Unbroken'에는 어떤 곡들이 들어있나요 | S4 아, 'Camp Rock' 봤어요! 정말 재미있었죠.
 
-     0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오나요, 이천십오년에?
-     4.72s  user  발화 끝
-     4.95s  <ret> 발화 (turn1 첫 프레임)
-     5.11s  agent 발화 시작: <ret> 이천십오년 십월에 새 앨범이 발매될 예정입니다. 혹시 데미 로바토의 다른 앨범에 대해서도 궁금하신
-     6.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: October 2015.
-    11.79s  user  발화 시작: 아, 네.
-    11.83s  agent 발화 끝
-    12.34s  agent 발화 시작: 데미 로바토는 다양한 장르를 소화하는 가수로 유명하죠. 그녀의 음악 스타일은 어떻게 생각하시나요?
-    12.48s  user  발화 끝
-    18.29s  user  발화 시작: 음, 저는 그녀의 발라드 스타일을 좋아해요.
-    18.36s  agent 발화 끝
-    21.43s  agent 발화 시작: 발라드 스타일을 좋아하시는군요. 감성적인 가사와 멜로디가 특징이죠. 혹시 특별히 좋아하는 곡이 있으신가요?
-    21.48s  user  발화 끝
-    26.93s  user  발화 시작: 음.
-    27.57s  user  발화 끝
-    29.58s  agent 발화 끝
-    31.94s  user  발화 시작: ‘Skyscraper’를 가장 좋아해요.
-    34.20s  <ret> 발화 (turn8 첫 프레임)
-    34.25s  user  발화 끝
-    34.44s  agent 발화 시작: <ret> 죄송하지만, ‘Skyscraper’에 대한 추가 정보는 찾을 수 없었습니다. 다른 곡에 대해서도 
-    36.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (no information found)
-    40.13s  agent 발화 끝
-    41.10s  user  발화 시작: 다른 곡도 괜찮아요.
-    42.70s  user  발화 끝
-    42.86s  agent 발화 시작: 그녀의 다른 인기곡으로는 ‘Sorry Not Sorry’나 ‘Heart Attack’이 있습니다. 들어보신 
-    47.85s  agent 발화 끝
-    48.21s  user  발화 시작: ‘Heart Attack’도 좋아요.
-    49.59s  user  발화 끝
-    49.88s  agent 발화 시작: ‘Heart Attack’도 좋아하시는군요. 그 곡은 이천십삼년에 발매되었는데, 당시 큰 인기를 끌었습니다—
-    55.77s  user  발화 시작: …그 앨범에 수록된 다른 곡들도 궁금해요.
-    56.36s  agent 발화 끝
-    59.47s  user  발화 끝
-    59.67s  agent 발화 시작: 아, 이천십삼년 앨범에 수록된 다른 곡들이 궁금하시군요. ‘Made to Love You’나 ‘In Case
-    62.82s  user  발화 시작: 예.
-    63.22s  user  발화 끝
-    66.94s  agent 발화 끝
-    67.09s  user  발화 시작: 오, ‘In Case You Forgot’도 듣고 싶네요.
-    70.23s  user  발화 끝
-    70.30s  agent 발화 시작: ‘In Case You Forgot’은 강렬한 가사와 퍼포먼스가 인상적인 곡입니다. 뮤직비디오도 꼭 한번 보
-    77.58s  agent 발화 끝
-    77.74s  user  발화 시작: 알겠습니다. 뮤직비디오도 볼게요.
-    80.21s  <ret> 발화 (turn19 첫 프레임)
-    80.41s  user  발화 끝
-    80.44s  agent 발화 시작: <ret> 데미 로바토의 음악은 많은 사람들에게 영감을 주죠. 그녀의 음악을 통해 위로를 받거나 공감하는 분
-    82.21s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.74s]: The capital of Australia is Canberra.
-    83.16s  user  발화 시작: 네.
-    83.75s  user  발화 끝
-    88.07s  user  발화 시작: 맞아요, 저도 그래요.
-    88.18s  agent 발화 끝
-    89.63s  user  발화 끝
-    89.69s  agent 발화 시작: 그녀의 음악이 당신에게 어떤 의미를 가지는지 궁금하네요. 혹시 음악을 통해 얻는 특별한 경험이 있으신가요?
-    94.97s  user  발화 시작: 네.
-    95.65s  user  발화 끝
-    96.56s  user  발화 시작: 음악은 제 삶의 큰 부분이에요.
-    96.59s  agent 발화 끝
-    99.05s  agent 발화 시작: 음악이 삶의 큰 부분이라는 말씀, 정말 공감됩니다. 음악은 우리의 감정을 표현하고 치유하는 힘을 가지고 있죠
-    99.10s  user  발화 끝
-   104.36s  user  발화 시작: 맞아요.
-   105.18s  user  발화 끝
-   107.08s  user  발화 시작: 네, 정말 그래요.
-   107.12s  agent 발화 끝
-   108.33s  agent 발화 시작: 데미 로바토의 음악과 함께 더욱 행복하고 즐거운 시간을 보내시길 바랍니다.
-   108.46s  user  발화 끝
-   112.82s  agent 발화 끝
+     0.00s  user  발화 시작: 데미 로바토 새 앨범 언제 나와요? 이천십오년 기준으로요.
+     3.39s  <ret> 발화 (turn1 첫 프레임)
+     3.54s  agent 발화 시작: <ret> 데미 로바토의 앨범, 'Confidence'가 이천십오년 십월에 발매되었답니다. 혹시 다른 앨범에
+     3.65s  user  발화 끝
+     5.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: Demi Lovato’s album, Confidence, was released in October 2015.
+     8.41s  user  발화 시작: 네네.
+     9.14s  user  발화 끝
+    10.68s  agent 발화 끝
+    11.71s  user  발화 시작: 아, 'Confidence' 앨범이군요. 그 앨범에 수록된 곡들 좀 알려주실 수 있을까요?
+    17.18s  user  발화 끝
+    17.30s  <ret> 발화 (turn4 첫 프레임)
+    17.38s  agent 발화 시작: <ret> 'Confidence' 앨범에는 'Cool for the Summer', 'Confident', 
+    19.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) London, UK (51.5074, 0.1278): Paris, France (2560 meters
+    20.18s  user  발화 시작: 음.
+    20.64s  user  발화 끝
+    22.05s  agent 발화 끝
+    22.16s  agent 발화 시작: 지금 파리, 로마, 베를린은 런던에서 각각 이천오백육십 미터, 만 사천 이백 미터, 구천삼백 미터 거리에 있
+    32.09s  agent 발화 끝
+    32.31s  user  발화 시작: 런던은 별로 관심 없고, 데미 로바토 콘서트 티켓 예매하는 거 도와주실 수 있나요?
+    37.91s  user  발화 끝
+    38.07s  agent 발화 시작: 콘서트 티켓 예매를 도와드릴 수 있어요. 혹시 콘서트 날짜나 장소를 정해두셨나요?
+    40.86s  user  발화 시작: 예.
+    41.35s  user  발화 끝
+    43.39s  agent 발화 끝
+    44.14s  user  발화 시작: 아직 날짜는 정하지 못했어요. 한국에서 하는 콘서트가 있으면 좋겠네요.
+    48.74s  <ret> 발화 (turn11 첫 프레임)
+    48.81s  user  발화 끝
+    48.82s  agent 발화 시작: <ret> 죄송하지만, 현재 데미 로바토는 한국에서 콘서트를 할 예정이 없답니다. 다른 지역 콘서트도 찾아볼
+    50.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Demi Lovato is not currently scheduled to perform in Sou
+    52.22s  user  발화 시작: 음.
+    52.71s  user  발화 끝
+    55.91s  agent 발화 끝
+    55.95s  user  발화 시작: 아쉽네요. 그럼 데미 로바토의…
+    58.48s  user  발화 끝
+    59.59s  user  발화 시작: …다른 앨범들은 언제 발매되었는지 알려주세요.
+    62.44s  <ret> 발화 (turn15 첫 프레임)
+    62.83s  agent 발화 시작: <ret> 데미 로바토의 데뷔 앨범 'Don’t Forget'은 이천팔년에 발매되었어요. 이천십일년에는 'U
+    62.96s  user  발화 끝
+    64.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: Demi Lovato released her debut album, Don’t Forget, in 2008.
+    66.44s  user  발화 시작: 정말요?
+    67.08s  user  발화 끝
+    70.20s  agent 발화 끝
+    71.22s  user  발화 시작: 이천십일년 앨범 'Unbroken'에는 어떤 곡들이 들어있나요?
+    75.30s  agent 발화 시작: 'Unbroken' 앨범에는 'Skyscraper', 'Give Your Heart a Break', 'Un
+    75.34s  user  발화 끝
+    80.36s  user  발화 시작: …혹시 데미 로바토가 가장 좋아하는 색깔이 뭐예요?
+    80.99s  agent 발화 끝
+    84.17s  <ret> 발화 (turn20 첫 프레임)
+    84.41s  agent 발화 시작: <ret> 도쿄의 칠월 십일 평균 기온은 이십팔 점 오도로 예상되며, 습도는 칠십%랍니다. 혹시 여행 계획 
+    84.57s  user  발화 끝
+    86.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.20s]: The average temperature in Tokyo on July 10, 2026 is forecast to be 28
+    92.62s  agent 발화 끝
+    92.84s  user  발화 시작: 아니요, 그냥 궁금해서요. 데미 로바토가 연기를 한 영화도 있나요?
+    96.63s  <ret> 발화 (turn22 첫 프레임)
+    96.95s  agent 발화 시작: <ret> 네, 데미 로바토는 이천팔년 디즈니 채널 영화 'Camp Rock'에 출연했어요. 뮤지컬 영화랍니
+    97.15s  user  발화 끝
+    98.39s  ⚡SPAN 주입 [d'=1.76s / d_lead=6.25s]: Demi Lovato starred in the 2008 Disney Channel movie, Camp Rock.
+   101.52s  user  발화 시작: 네네.
+   102.25s  user  발화 끝
+   103.20s  agent 발화 끝
+   103.38s  user  발화 시작: 아, 'Camp Rock' 봤어요! 정말 재미있었죠.
+   106.25s  agent 발화 시작: 정말 재미있었죠. 데미 로바토의 연기 변신도 돋보였다고 생각해요. 힘든 시기를 극복하는 청춘의 이야기를 잘 
+   106.43s  user  발화 끝
+   112.48s  user  발화 시작: 네.
+   113.11s  user  발화 끝
+   115.42s  agent 발화 끝
+   116.50s  user  발화 시작: 맞아요, 정말 감동적이었어요. 오늘 정보 감사합니다.
+   120.06s  user  발화 끝
+   120.23s  agent 발화 시작: 도움이 되었다니 기쁘네요.
+   121.84s  agent 발화 끝

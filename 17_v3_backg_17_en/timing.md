@@ -58,25 +58,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 Oh, that's a pretty wide range… uh | S3 Did you see the game last night? W | S4 So, below fifty might be a concern
+# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 …and then the dog just started bar | S3 So, fifty to ninety is a good gene | S4 That’s reassuring. Thanks, Eus.
 
      0.00s  user  발화 시작: What is the average heart rate of a healthy person?
-     2.23s  <ret> 발화 (turn1 첫 프레임)
-     2.62s  agent 발화 시작: <ret> A healthy person’s heart typically beats between sixty
-     2.72s  user  발화 끝
-     4.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.76s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
-     9.30s  user  발화 시작: Oh, that's a pretty wide range… uhhh, is there a lower end t
-     9.38s  agent 발화 끝
-    13.09s  user  발화 끝
-    13.27s  agent 발화 시작: Yes, there is. Lower heart rates can also be perfectly norma
-    20.03s  agent 발화 끝
-    20.63s  user  발화 시작: Did you see the game last night? What a finish!
-    23.12s  <ret> 발화 (turn5 첫 프레임)
-    23.27s  agent 발화 시작: <ret> As for a general average, many sources suggest between
-    23.44s  user  발화 끝
-    25.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: A healthy heart rate is generally considered to be between 50 and 90 b
-    29.05s  agent 발화 끝
-    30.86s  user  발화 시작: So, below fifty might be a concern?
-    33.53s  agent 발화 시작: It could be, though it depends on your overall health and ac
-    33.53s  user  발화 끝
-    40.06s  agent 발화 끝
+     2.10s  <ret> 발화 (turn1 첫 프레임)
+     2.49s  user  발화 끝
+     2.50s  agent 발화 시작: <ret> A healthy person’s heart typically beats between sixty
+     4.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: A normal resting heart rate for adults ranges from 60 to 100 bpm.
+     9.36s  agent 발화 끝
+     9.54s  user  발화 시작: That seems… high. Is there a lower range for athletes?
+    12.88s  <ret> 발화 (turn3 첫 프레임)
+    13.12s  agent 발화 시작: <ret> Actually, for athletes, a resting heart rate can go as
+    13.19s  user  발화 끝
+    14.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: Well-trained athletes may have a resting heart rate as low as 40 bpm.
+    20.53s  agent 발화 끝
+    21.19s  user  발화 시작: …and then the dog just started barking at the mailman!
+    23.96s  user  발화 끝
+    24.00s  user  발화 시작: So, fifty to ninety is a good general range then?
+    26.54s  <ret> 발화 (turn6 첫 프레임)
+    26.85s  agent 발화 시작: <ret> Yes, fifty to ninety beats per minute is a very health
+    27.05s  user  발화 끝
+    28.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: A normal resting heart rate generally falls between 60 and 100 bpm, th
+    34.18s  user  발화 시작: That’s reassuring. Thanks, Eus.
+    34.27s  agent 발화 끝
+    36.02s  agent 발화 시작: You’re very welcome. I’m glad I could put your mind at ease.
+    36.16s  user  발화 끝
+    39.53s  agent 발화 끝

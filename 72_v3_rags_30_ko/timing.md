@@ -57,8 +57,8 @@
 
 
      0.00s  user  발화 시작: 유럽에서 인쇄술은 언제 발명되었나요?
-     2.50s  <ret> 발화 (turn1 첫 프레임)
-     2.66s  agent 발화 시작: <ret> 유럽에서 인쇄술이 발명된 건 대략 천사백 사십 년쯤이었어요. 새로운 지식의 확산에 큰 영향을 주었
-     2.77s  user  발화 끝
-     4.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: The printing press was invented in Europe around 1440.
-     9.51s  agent 발화 끝
+     3.01s  <ret> 발화 (turn1 첫 프레임)
+     3.17s  agent 발화 시작: <ret> 유럽에서 인쇄술이 발명된 건 대략 천사백사십 년쯤입니다. 새로운 지식의 확산에 큰 영향을 주었죠.
+     3.24s  user  발화 끝
+     5.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: The printing press was invented in Europe around 1440.
+     9.98s  agent 발화 끝

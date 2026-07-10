@@ -55,53 +55,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 지금 이사 갈 곳을 찾고 있는데, 혹시 제  | S2 이십오분이면 괜찮네요. 근데… 혹시 지금 교통 상황은 어떤가요 | S3 오, P2가 있군요. 그럼 혹시… 제가 채식주의자인데, 올림픽 | S4 아, 감사합니다. 그럼 저는 이제 출발해야 할 것 같아요.
+# EXAMINER(FDB-v2) 단계: S1 어… 안녕하세요. 혹시 제가 지금 있는 곳에서 해운대까지 얼마 | S2 음… 휴게소는 괜찮아요. 근데 제가 채식주의자거든요. 혹시 해 | S3 러빙헛이 더 가깝네요. 혹시 러빙헛까지 가는 길도 알려주실 수 | S4 아니요, 괜찮아요. 즐거운 여행 되세요.
 
-     0.00s  agent 발화 시작: 지원 씨, 안녕하세요. 저는 히아입니다. 큰 변화를 겪고 계신 분들을 돕는 상담가입니다.
-     6.17s  agent 발화 끝
-     6.69s  user  발화 시작: 어… 안녕하세요. 지금 이사 갈 곳을 찾고 있는데, 혹시 제 집에서 올림픽공원까지 얼마나 걸릴까요?
-    13.59s  <ret> 발화 (turn2 첫 프레임)
-    13.67s  agent 발화 시작: <ret> 지원 씨의 집 주소는 서울 마포구 성산동 사 오 육번지입니다.
-    13.77s  user  발화 끝
-    15.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: [2026-04-15] User's home address is 서울 마포구 성산동 45-6.
-    16.51s  user  발화 시작: 어.
-    17.00s  user  발화 끝
-    17.69s  agent 발화 끝
-    18.64s  user  발화 시작: 네, 맞아요. 거기서 올림픽공원까지 얼마나 걸릴까요? 지금 바로 가려고 하거든요.
-    24.05s  <ret> 발화 (turn5 첫 프레임)
-    24.29s  agent 발화 시작: <ret> 마포구 성산동 사 오 육번지에서 올림픽공원까지는 강남대로를 이용하면 십이 점 삼킬로미터, 이십오분
-    24.29s  user  발화 끝
-    26.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: (tool result) 12.3 km, 25 minutes, via Gangnamdae-ro; 14.1 km, 31 minu
-    30.36s  user  발화 시작: 어.
-    30.86s  user  발화 끝
-    35.51s  agent 발화 끝
-    35.55s  user  발화 시작: 이십오분이면 괜찮네요. 근데… 혹시 지금 교통 상황은 어떤가요?
-    40.69s  <ret> 발화 (turn8 첫 프레임)
-    40.77s  agent 발화 시작: <ret> 강남대로는 현재 보통 혼잡한 상태이며, 예상 지연 시간은 오분입니다.
-    40.92s  user  발화 끝
-    42.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Moderate congestion, estimated delay 5 minutes.
-    44.17s  user  발화 시작: 어.
-    44.98s  user  발화 끝
-    45.66s  <ret> 발화 (turn10 첫 프레임)
-    45.76s  agent 발화 끝
-    45.82s  agent 발화 시작: <ret> 혹시 올림픽공원 근처에 주차 공간이 있는지 궁금하신가요? 올림픽공원에는 P1 주차장 팔십자리, P
-    47.10s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.75s]: (tool result) Parking lot P1 (80 spaces available), P2 (120 spaces ava
-    51.79s  user  발화 시작: 응.
-    52.19s  user  발화 끝
-    59.23s  agent 발화 끝
-    59.28s  user  발화 시작: 오, P2가 있군요. 그럼 혹시… 제가 채식주의자인데, 올림픽공원 근처에 채식 식당이 있을까요?
-    65.51s  <ret> 발화 (turn13 첫 프레임)
-    65.75s  agent 발화 시작: <ret> 지원 씨는 채식주의자시군요. 올림픽공원 근처에 채식 식당을 찾아보겠습니다. 올림픽공원 근처에는 L
-    65.91s  user  발화 끝
-    67.51s  ⚡SPAN 주입 [d'=2.00s / d_lead=15.21s]: [2026-04-19] User is vegetarian.
-    80.96s  agent 발화 끝
-    81.22s  user  발화 시작: Loving Hut이 제일 가까운가 보네요. 그럼… 혹시 그 식당에 예약이 필요한가요?
-    86.39s  <ret> 발화 (turn15 첫 프레임)
-    86.63s  agent 발화 시작: <ret> Loving Hut에 오늘 오후 세시에 한명으로 예약이 완료되었습니다. 확인 번호는 칠b9x2z입
-    86.73s  user  발화 끝
-    88.39s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.06s]: (tool result) Reservation confirmed for 1 person at Loving Hut, today 
-    92.70s  agent 발화 끝
-    93.29s  user  발화 시작: 아, 감사합니다. 그럼 저는 이제 출발해야 할 것 같아요.
-    96.69s  agent 발화 시작: 즐거운 식사 되세요.
-    96.85s  user  발화 끝
-    98.12s  agent 발화 끝
+     0.00s  agent 발화 시작: 지원님, 안녕하세요. 저는 여러분의 삶의 전환을 돕는 에이전트, 히아입니다.
+     4.92s  user  발화 시작: 어… 안녕하세요. 혹시 제가 지금 있는 곳에서 해운대까지 얼마나 걸릴까요?
+     5.14s  agent 발화 끝
+     9.97s  <ret> 발화 (turn2 첫 프레임)
+    10.05s  agent 발화 시작: <ret> 먼저, 지원님의 주소는 서울 마포구 성산동 사 오 육번지입니다.
+    10.24s  user  발화 끝
+    11.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.88s]: [2026-04-15] User's home address is 서울 마포구 성산동 45-6.
+    12.79s  user  발화 시작: 어.
+    13.19s  user  발화 끝
+    13.71s  user  발화 시작: 네, 맞아요. 그래서 해운대까지 얼마나 걸릴까요?
+    13.93s  agent 발화 끝
+    16.25s  <ret> 발화 (turn5 첫 프레임)
+    16.49s  agent 발화 시작: <ret> 서울 마포구 성산동 사 오 육번지에서 해운대로 가는 거리는 삼백십이 점 사킬로미터이고, 경부고속도
+    16.53s  user  발화 끝
+    18.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) 312.4 km, estimated time 4 hours 23 minutes, route via G
+    22.61s  user  발화 시작: 어.
+    23.11s  user  발화 끝
+    25.25s  agent 발화 끝
+    25.26s  agent 발화 시작: 네, 꽤 먼 거리입니다. 혹시 중간에 휴게소에 들르고 싶으신가요?
+    27.41s  user  발화 시작: 어.
+    28.23s  user  발화 끝
+    29.33s  agent 발화 끝
+    29.36s  user  발화 시작: 음… 휴게소는 괜찮아요. 근데 제가 채식주의자거든요. 혹시 해운대 근처에 채식 식당을 알려주실 수 있을까요?
+    37.43s  <ret> 발화 (turn10 첫 프레임)
+    37.51s  agent 발화 시작: <ret> 지원님께서 채식주의자이시군요.
+    37.70s  user  발화 끝
+    38.39s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.08s]: [2026-04-19] User is vegetarian.
+    39.59s  agent 발화 끝
+    39.81s  user  발화 시작: 네, 맞아요.
+    40.57s  <ret> 발화 (turn12 첫 프레임)
+    40.81s  agent 발화 시작: <ret> 해운대 근처에 러빙헛 해운대(삼 점 칠킬로미터)와 베지테이블(사 점 이킬로미터) 두 곳의 채식 식
+    40.96s  user  발화 끝
+    42.49s  ⚡SPAN 주입 [d'=1.92s / d_lead=8.30s]: (tool result) Loving Hut Haeundae, 273-14 U-dong, Haeundae-gu, Busan (
+    49.11s  agent 발화 끝
+    49.91s  user  발화 시작: 러빙헛이 더 가깝네요. 혹시 러빙헛까지 가는 길도 알려주실 수 있을까요?
+    54.99s  <ret> 발화 (turn14 첫 프레임)
+    55.23s  agent 발화 시작: <ret> 해운대에서 러빙헛 해운대까지는 삼 점 칠킬로미터이고, 해운대 해변도로를 이용하면 약 팔분이 걸립니
+    55.37s  user  발화 끝
+    56.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.53s]: (tool result) 3.7 km, estimated time 8 minutes, route via Haeundae Bea
+    58.05s  user  발화 시작: 응.
+    58.45s  user  발화 끝
+    61.67s  user  발화 시작: 아, 감사합니다.
+    61.77s  agent 발화 끝
+    62.94s  agent 발화 시작: 도움이 되어 기쁩니다.
+    63.09s  user  발화 끝
+    64.37s  agent 발화 끝
+    64.76s  user  발화 시작: 아니요, 괜찮아요. 즐거운 여행 되세요.
+    67.26s  agent 발화 시작: 지원님도 좋은 하루 보내세요.
+    67.34s  user  발화 끝
+    69.00s  agent 발화 끝

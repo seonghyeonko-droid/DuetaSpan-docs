@@ -76,69 +76,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘. | S2 오만원… 음… 조금 부담스럽네. 좀 더 저렴한 곳은 없을까? | S3 그래, 도보로 알려줘. | S4 인사이드 아웃 이는 평점이 어때?
+# EXAMINER(FDB-v2) 단계: S1 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘. | S2 칼국수 좋아하지. 근데… 그 이탈리아 식당, 평점 좀 알려줄  | S3 아, 맞아. 근데 혹시 지금 날씨 어때? | S4 알았어. 고마워.
 
      0.00s  user  발화 시작: 그랜드뷰 로프트에 육월 십오일에 방문 예약을 잡아줘.
-     3.42s  user  발화 끝
-     3.47s  <ret> 발화 (turn1 첫 프레임)
-     3.70s  agent 발화 시작: <ret> 그랜드뷰 로프트 육월 십오일 오후 두시부터 세시까지 방문 예약이 확정되었습니다. 예약 번호는 vi
-     5.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.27s]: (tool result) The Grandview Lofts, 2026-06-15, 14:00-15:00, confirmed,
-    14.97s  agent 발화 끝
-    15.57s  user  발화 시작: 아니, 괜찮아. 근데 그 근처에 맛있는 식당 있으면 추천해 줄 수 있어?
-    19.56s  <ret> 발화 (turn3 첫 프레임)
-    19.88s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에 한강뷰 한식당이 이백삼십미터 거리에 있고, 벨라 이탈리아라는 이탈리아 식당
-    20.06s  user  발화 끝
-    21.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: (tool result) Seoul, Korean, 4.5 stars, $$$, Han River View Restaurant
-    30.77s  agent 발화 끝
-    30.78s  user  발화 시작: 한식당이 좋겠어. 가격대는 어느 정도야?
-    33.35s  user  발화 끝
-    33.54s  agent 발화 시작: 한식당은 가격대가 조금 높은 편이에요. 한 상차림에 오만원 정도 생각하시면 될 것 같아요.
-    39.89s  agent 발화 끝
-    40.25s  user  발화 시작: 오만원… 음… 조금 부담스럽네. 좀 더 저렴한 곳은 없을까?
-    43.81s  <ret> 발화 (turn7 첫 프레임)
-    44.04s  agent 발화 시작: <ret> 조금 더 저렴한 곳으로는 김스 키친이 사백오십미터 거리에 있고, 드래곤 팰리스라는 중국집은 오백팔
-    44.09s  user  발화 끝
-    45.09s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.67s]: (tool result) Seoul, Korean, 4.0 stars, $$, Kim's Kitchen (450 m), Chi
-    54.71s  agent 발화 끝
-    55.55s  user  발화 시작: 김스 키친으로 가볼까. 가는 길 좀 알려줘.
-    57.88s  <ret> 발화 (turn9 첫 프레임)
-    57.90s  user  발화 끝
-    57.95s  agent 발화 시작: <ret> 김스 키친까지 걸어가면 칠분, 버스를 타면 십이분, 택시를 타면 사분 정도 걸립니다. 도보로 가는
-    59.24s  ⚡SPAN 주입 [d'=1.36s / d_lead=10.16s]: (tool result) Walking: 7 min (450 m), Bus: 12 min (600 m), Taxi: 4 min
-    64.66s  user  발화 시작: 어.
-    64.97s  user  발화 끝
-    68.11s  agent 발화 끝
-    69.46s  user  발화 시작: 그래, 도보로 알려줘.
-    70.57s  <ret> 발화 (turn12 첫 프레임)
-    70.84s  user  발화 끝
-    70.88s  agent 발화 시작: <ret> 그랜드뷰 로드를 북쪽으로 쭉 가세요. 메이플 스트리트에서 좌회전하고, 오크 에비뉴에서 우회전하면 
-    72.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) Head north on Grandview Rd, turn left onto Maple St, tur
-    79.51s  agent 발화 끝
-    80.08s  user  발화 시작: 고마워. 그런데, 혹시 오늘 날씨는 어때?
-    83.20s  <ret> 발화 (turn14 첫 프레임)
-    83.32s  user  발화 끝
-    83.43s  agent 발화 시작: <ret> 서울은 현재 이십팔도이고, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터입니다. 구름이 조금 있
-    85.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h, partly cloudy.
-    90.80s  agent 발화 끝
-    92.65s  user  발화 시작: 아, 그렇구나. 그럼… 오늘 저녁에 영화 볼만한 거 있어?
-    95.90s  <ret> 발화 (turn16 첫 프레임)
-    96.05s  agent 발화 시작: <ret> 서울에서 오늘 저녁에는 인사이드 아웃 이 배드 보이즈 라이드 오어 다이, 가필드 무비가 상영됩니다
-    96.21s  user  발화 끝
-    97.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.83s]: (tool result) "Inside Out 2" (19:00, 21:30), "Bad Boys: Ride or Die" (
-   101.12s  user  발화 시작: 음.
-   101.62s  user  발화 끝
-   107.83s  user  발화 시작: 인사이드 아웃 이는 평점이 어때?
-   107.87s  agent 발화 끝
-   109.79s  <ret> 발화 (turn19 첫 프레임)
-   110.03s  agent 발화 시작: <ret> 인사이드 아웃 이는 주요 영화 리뷰 사이트에서 평균 팔 점 오점 만점을 받았어요. 평이 아주 좋네
-   110.23s  user  발화 끝
-   111.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.64s]: (tool result) "Inside Out 2" received an average rating of 8.5/10 on m
-   115.52s  user  발화 시작: 응.
-   115.73s  user  발화 끝
-   117.67s  agent 발화 끝
-   117.70s  user  발화 시작: 팔 점 오점… 괜찮네. 그럼 일곱시 타임으로 예매해줘.
-   121.63s  <ret> 발화 (turn22 첫 프레임)
-   121.87s  user  발화 끝
-   122.03s  agent 발화 시작: <ret> 인사이드 아웃 이 오늘 저녁 일곱시
-   123.23s  ⚡SPAN 주입 [d'=1.60s / d_lead=2.91s]: (tool result) 2 adult tickets for "Inside Out 2" at 19:00 in Seoul, co
-   124.94s  agent 발화 끝
+     3.62s  <ret> 발화 (turn1 첫 프레임)
+     3.70s  user  발화 끝
+     3.85s  agent 발화 시작: <ret> 그랜드뷰 로프트 방문 예약을 육월 십오일 오후 두시에 잡아드렸어요. 확인 번호는 GH789KL입니
+     5.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.52s]: (tool result) Visit scheduled for The Grandview Lofts on June 15th, 20
+    14.38s  agent 발화 끝
+    14.78s  user  발화 시작: 아니, 괜찮아. 근데 그 근처에 맛집 좀 알려줘.
+    17.63s  <ret> 발화 (turn3 첫 프레임)
+    17.94s  agent 발화 시작: <ret> 그랜드뷰 로프트 근처에 매콤한 칼국수집이 오백미터, 이탈리아 식당이 팔백미터, 카페 블룸이 천이백
+    18.01s  user  발화 끝
+    19.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.76s]: (tool result) Seoul, (37.5665, 126.9780), The Spicy Noodle (500m), Ita
+    28.68s  user  발화 시작: 칼국수 좋아하지. 근데… 그 이탈리아 식당, 평점 좀 알려줄 수 있어?
+    28.70s  agent 발화 끝
+    33.87s  <ret> 발화 (turn5 첫 프레임)
+    34.02s  agent 발화 시작: <ret> 이탈리아 식당은 별점 사 점 오점에 리뷰가 백이십개, 가격대는 조금 높은 편이에요. 괜찮으시겠어요
+    34.19s  user  발화 끝
+    35.15s  ⚡SPAN 주입 [d'=1.28s / d_lead=7.18s]: (tool result) Italian Place, 4.5 stars, 120 reviews, price range $$$.
+    41.20s  agent 발화 끝
+    41.40s  user  발화 시작: 응, 괜찮아. 근데… 잠깐만, 칼국수집 이름이 뭐였지?
+    45.48s  agent 발화 시작: 매콤한 칼국수집이었어요. 오백미터 거리에 있습니다. 기억이 잘 안 나시면 다시 한번 알려드릴게요.
+    45.61s  user  발화 끝
+    51.46s  agent 발화 끝
+    52.25s  user  발화 시작: 아, 맞아. 근데 혹시 지금 날씨 어때?
+    56.52s  <ret> 발화 (turn9 첫 프레임)
+    56.59s  agent 발화 시작: <ret> 지금 서울은 기온이 이십팔도, 습도는 육십오%, 바람은 시속 삼 점 이킬로미터로 불고 있어요. 날
+    56.78s  user  발화 끝
+    58.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: (tool result) 28.0°C, humidity 65%, wind 3.2 km/h.
+    62.34s  user  발화 시작: 어.
+    62.65s  user  발화 끝
+    65.16s  user  발화 시작: 흐음… 더위 조심해야겠다. 근데, 혹시 내일 모레 날씨도 알려줄 수 있어?
+    65.36s  agent 발화 끝
+    69.52s  <ret> 발화 (turn12 첫 프레임)
+    69.60s  agent 발화 시작: <ret> 내일 모레 서울은 기온이 삼십도, 습도는 칠십%, 바람은 시속 사 점 팔킬로미터로 불고 비가 올 
+    69.74s  user  발화 끝
+    70.96s  ⚡SPAN 주입 [d'=1.44s / d_lead=10.01s]: (tool result) 30.0°C, humidity 70%, wind 4.8 km/h, chance of rain 20%.
+    79.61s  agent 발화 끝
+    81.52s  user  발화 시작: 알았어. 고마워.
+    82.94s  user  발화 끝
+    83.35s  agent 발화 시작: 도움이 되었다니 기쁘네요.
+    84.94s  user  발화 시작: 아니, 괜찮아.
+    85.14s  agent 발화 끝
+    85.76s  user  발화 끝
+    86.06s  agent 발화 시작: 그럼 즐거운 하루 보내세요.
+    87.99s  agent 발화 끝

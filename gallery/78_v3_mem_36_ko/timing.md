@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 혜호님. 저는 모시라고 합니다. 재정 상담을 도와드리는 에이전트예요.
-     2.89s  user  발화 시작: 그래.
-     3.52s  user  발화 끝
-     6.07s  agent 발화 끝
-     6.58s  user  발화 시작: 음… 혹시 제가 예전에 차 알아보는 얘기 했던 거 기억나세요?
-    10.31s  <ret> 발화 (turn3 첫 프레임)
-    10.46s  agent 발화 시작: <ret> 네, 혜호님. 하이브리드 모델에 마일리지 삼만 마일 이하로 알아보셨던 것 기억합니다.
-    10.70s  user  발화 끝
-    11.99s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.88s]: [2025-11-22] Past chat — Researching a used car: comparing hybrid mode
-    16.34s  agent 발화 끝
-    16.58s  user  발화 시작: 아, 맞다. 그 차, 혹시 부산에 있는 중고차 매장에서 볼 수 있는 거 있을까요?
-    21.79s  <ret> 발화 (turn5 첫 프레임)
-    22.17s  agent 발화 시작: <ret> 부산에서 하이브리드 차량을 찾으셨는데요, 기아 니로 이천이십이년식이 마일리지 이만팔천오백 킬로미터
-    22.42s  user  발화 끝
-    23.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=20.83s]: (tool result) Kia Niro (2022) - 28,500 miles - ₩22,500,000; Hyundai Io
-    43.00s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 혜호님. 저는 재정 상담사 리라입니다. 무엇을 도와드릴까요?
+     2.44s  user  발화 시작: 그래.
+     3.07s  user  발화 끝
+     5.23s  agent 발화 끝
+     5.41s  user  발화 시작: 저… 혹시 제가 예전에 차를 알아보는 얘기 했던 거 기억하세요?
+     9.14s  <ret> 발화 (turn3 첫 프레임)
+     9.29s  agent 발화 시작: <ret> 네, 혜호님. 하이브리드 모델을 찾으시고, 주행 거리는 삼만 마일 이하를 원하셨던 걸 기억합니다.
+     9.52s  user  발화 끝
+    10.82s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.34s]: [2025-11-22] Past chat — Researching a used car: comparing hybrid mode
+    15.64s  agent 발화 끝
+    16.19s  user  발화 시작: 아, 맞다! 그때 얘기했었죠. 혹시 지금 시세는 좀 어떻게 되나요?
+    20.63s  <ret> 발화 (turn5 첫 프레임)
+    21.02s  agent 발화 시작: <ret> 현재 하이브리드 차량 시세는 토요타 프리우스가 이천팔백오십만 원이고, 현대 아이오닉은 이천육백팔십
+    21.04s  user  발화 끝
+    22.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.64s]: (tool result) Toyota Prius (PRIUS) is trading at 28,500,000 KRW, up 2.
+    34.65s  agent 발화 끝

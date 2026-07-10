@@ -68,31 +68,29 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 어, 재향군인부요? 그거 언제 생겼대? | S2 음, 천구백삼십년이라고? 그건 좀 빠른 것 같은데. 더 일찍  | S3 아, 천구백십칠년이 처음이었구나. 그럼 천구백삼십년은 뭐 달라 | S4 그래, 이름이 바뀐 거였구나. 그럼 지금은 재향군인부라고 하던
+# EXAMINER(FDB-v2) 단계: S1 국가유공자부(Department of Veterans Affa | S2 음… 그게 정확한 날짜 맞아? 좀 더 일찍 만들어졌을 수도 있 | S3 흐으으음… 그럼 천구백삼십년은 뭐, 공식적으로 바뀐 날짜인 거 | S4 알겠어. 그럼 천구백십칠년부터 계속 쭉 이어져 왔다는 거네.
 
-     0.00s  user  발화 시작: 어, 재향군인부요? 그거 언제 생겼대?
-     2.73s  <ret> 발화 (turn1 첫 프레임)
-     3.00s  user  발화 끝
-     3.04s  agent 발화 시작: <ret> 재향군인부는 천구백삼십년 칠월 이십일일에 설립되었답니다. 예전에 보훈 관련해서 여쭤보신 적이 있으
-     4.17s  ⚡SPAN 주입 [d'=1.44s / d_lead=7.36s]: The Department of Veterans Affairs was established on July 21, 1930.
-    10.40s  agent 발화 끝
-    10.45s  user  발화 시작: 음, 천구백삼십년이라고? 그건 좀 빠른 것 같은데. 더 일찍 생기지 않았나?
-    15.24s  <ret> 발화 (turn3 첫 프레임)
-    15.55s  agent 발화 시작: <ret> 사실 재향군인부의 시작은 천구백십칠년으로 거슬러 올라가요. 당시에는 '재향군인국'이라는 이름으로 
-    15.67s  user  발화 끝
-    16.20s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.93s]: The agency's origins can be traced back to 1917, with the establishmen
-    23.47s  agent 발화 끝
-    24.31s  user  발화 시작: 아, 천구백십칠년이 처음이었구나. 그럼 천구백삼십년은 뭐 달라진 거야?
-    28.90s  <ret> 발화 (turn5 첫 프레임)
-    29.13s  agent 발화 시작: <ret> 천구백삼십년에 '재향군인국'이 정식으로 '재향군인청'으로 명칭이 변경되었답니다. 규모도 좀 커졌을
-    29.35s  user  발화 끝
-    30.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.60s]: In 1930, the Veteran's Bureau was formally renamed the Veterans Admini
-    33.53s  user  발화 시작: 응.
-    34.02s  user  발화 끝
-    36.73s  agent 발화 끝
-    36.76s  user  발화 시작: 그래, 이름이 바뀐 거였구나. 그럼 지금은 재향군인부라고 하던데, 또 바뀐 거야?
-    42.69s  <ret> 발화 (turn8 첫 프레임)
-    42.76s  agent 발화 시작: <ret> 네, 맞습니다. 천구백구십년에 '재향군인청'에서 지금의 '재향군인부'로 다시 한 번 부처 명칭이 
-    43.00s  user  발화 끝
-    44.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: The Veterans Administration became the Department of Veterans Affairs 
-    49.07s  agent 발화 끝
+     0.00s  user  발화 시작: 국가유공자부(Department of Veterans Affairs)가 언제 만들어졌는지 궁금해.
+     5.23s  <ret> 발화 (turn1 첫 프레임)
+     5.54s  agent 발화 시작: <ret> 국가유공자부는 천구백삼십년 칠월 이십일일에 만들어졌습니다.
+     5.70s  user  발화 끝
+     7.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: The Department of Veterans Affairs was established on July 21, 1930.
+     9.70s  user  발화 시작: 음… 그게 정확한 날짜 맞아? 좀 더 일찍 만들어졌을 수도 있잖아.
+     9.71s  agent 발화 끝
+    14.15s  <ret> 발화 (turn3 첫 프레임)
+    14.22s  agent 발화 시작: <ret> 사실 그 부처의 시작은 천구백십칠년으로 거슬러 올라갑니다. 당시에는 '재향군인국'이라는 이름이었어
+    14.38s  user  발화 끝
+    15.51s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.99s]: The agency’s origins can be traced back to 1917 with the establishment
+    21.14s  user  발화 시작: 흐으으음… 그럼 천구백삼십년은 뭐, 공식적으로 바뀐 날짜인 거네?
+    21.21s  agent 발화 끝
+    25.19s  <ret> 발화 (turn5 첫 프레임)
+    25.26s  agent 발화 시작: <ret> 네, 천구백삼십년에는 재향군인국이 장관급 부서로 승격되면서 공식적으로 현재의 국가유공자부가 된 겁
+    25.40s  user  발화 끝
+    27.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: The Veteran’s Bureau was elevated to a cabinet-level department in 193
+    29.37s  user  발화 시작: 응.
+    29.77s  user  발화 끝
+    32.52s  user  발화 시작: 알겠어. 그럼 천구백십칠년부터 계속 쭉 이어져 왔다는 거네.
+    32.53s  agent 발화 끝
+    36.14s  agent 발화 시작: 맞습니다. 천구백십칠년부터 쭉 이어져 오면서 명칭과 역할이 조금씩 바뀌어 왔다고 보시면 됩니다.
+    36.35s  user  발화 끝
+    42.25s  agent 발화 끝

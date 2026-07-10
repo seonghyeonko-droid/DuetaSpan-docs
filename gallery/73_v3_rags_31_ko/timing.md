@@ -61,9 +61,9 @@
 # }
 
 
-     0.00s  user  발화 시작: 데어데블 시즌 삼는 언제 나오나요?
-     2.34s  <ret> 발화 (turn1 첫 프레임)
-     2.58s  agent 발화 시작: <ret> 데어데블 시즌 삼는 이천십팔년 십월 이십육일에 공개되었습니다. 새로운 시즌을 기대하셨군요.
-     2.58s  user  발화 끝
-     4.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: Daredevil season 3 was released on October 26, 2018.
-     9.58s  agent 발화 끝
+     0.00s  user  발화 시작: 데어데블 시즌 삼은 언제 나오나요?
+     1.84s  <ret> 발화 (turn1 첫 프레임)
+     2.06s  agent 발화 시작: <ret> 데어데블 시즌 삼은 이천십팔년 십월 이십육일에 공개되었어요. 새로운 시즌을 기대하셔도 좋겠네요.
+     2.26s  user  발화 끝
+     3.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: The third season of Daredevil was released on October 26, 2018.
+     9.75s  agent 발화 끝

@@ -69,39 +69,45 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.38s⟩ last year?
-[  3.78s][moshi] The weather in ⟦⚡SPAN@5.38s: (tool result) 10.0°C, humidity 85%, wind 3.1 km/h⟧ Tokyo on December twenty-fourth, twenty twenty-three, was ten degrees Celsius, with eighty-five percent humidity and a three point one kilometer per hour wind.
+[  0.00s][user ] What was the weather like in Tokyo on December twenty-fourth ⟨ret@3.76s⟩ last year?
+[  4.16s][moshi] The weather in ⟦⚡SPAN@5.76s: (tool result) 8.2°C, humidity 63%, wind 3.1 km/h⟧ Tokyo on December twenty-fourth, twenty twenty-three was 8.2 degrees Celsius, with sixty-three percent humidity and a 3.1 kilometer per hour wind.
       CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Tokyo", "date": "2023-12-24"}}
-[  7.12s][user ] «backchannel» Yeah.
-[ 14.95s][user ] Hmm, that sounds chilly. Uh, do you think I should pack a warm coat if I go there this December?
-[ 20.76s][moshi] December in Tokyo can be quite cool, so a warm coat is a very good idea. I always recommend being prepared for cooler temperatures.
-[ 28.39s][user ] Okay, good to know. I'm also thinking of seeing a movie while I'm there.
-[ 31.93s][moshi] That sounds like a lovely plan! Tokyo has many excellent cinemas.
-[ 36.67s][user ] Could you find movies…
-[ 39.52s][user ] …playing on December twenty-fifth?
-[ 41.26s][moshi] ⟨ret@41.18s⟩ On December twenty-fifth in ⟦⚡SPAN@42.94s: (tool result) Godzilla Minus One (12:00, 15:00, 18:00), Your Name. (13:30, 16:30, 19:30)⟧ Tokyo, Godzilla Minus One is playing at twelve, three, and six, and Your Name is showing at one thirty, four thirty, and seven thirty.
-      CALL: {"function": "Movies_1_FindMovies", "arguments": {"date": "2024-12-25", "location": "Tokyo"}}
-[ 50.56s][user ] Oh, Your Name! I love that one!
-[ 53.63s][moshi] That's wonderful! It’s a beautiful film.
-[ 54.79s][user ] «backchannel» Uh-huh.
-[ 56.46s][moshi] It really is. Perhaps you could check the showtimes closer to the date, as they might change.
-[ 62.58s][user ] Yes, that's a good idea. Can you find me a nice hotel near Shibuya crossing?
-[ 67.29s][moshi] ⟨ret@67.21s⟩ Near Shibuya crossing, the ⟦⚡SPAN@69.21s: (tool result) Cerulean Tower Tokyu Hotel (4.7 stars, 30000 JPY), Shibuya Excel Hotel Tokyu (4.5 stars, 25000 J⟧ Cerulean Tower Tokyu Hotel has four point seven stars and costs thirty thousand yen, and the Shibuya Excel Hotel Tokyu has four point five stars at twenty-five thousand yen.
-      CALL: {"function": "Hotels_2_SearchHouse", "arguments": {"location": "Shibuya crossing"}}
-[ 81.05s][user ] Hmm, the Cerulean Tower sounds nice. Is it possible to book a room there for December twenty-fourth and twenty-fifth?
-[ 87.55s][moshi] ⟨ret@87.40s⟩ I have booked a ⟦⚡SPAN@89.40s: (tool result) Cerulean Tower Tokyu Hotel, Deluxe Room, 30000 JPY, check-in 2024-12-24, check-out 2024-12-25, c⟧ Deluxe Room at the Cerulean Tower Tokyu Hotel for December twenty-fourth and twenty-fifth, costing thirty thousand yen; your confirmation ID is eight three nine two seven.
-      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"hotel_name": "Cerulean Tower Tokyu Hotel", "check_in_date": "2024-12-24", "check_out_date": "2024-12-25"}}
-[ 98.03s][user ] Perfect! Thank you so much.
-[ 99.65s][moshi] You’re very welcome! It sounds like you’re planning a wonderful trip.
-[103.17s][user ] I think so. I need to figure out how to get from the airport to ⟨ret@106.59s⟩ the hotel.
-[106.98s][moshi] From Narita Airport ⟦⚡SPAN@108.59s: (tool result) Narita International Airport to Cerulean Tower Tokyu Hotel: 1 hour 30 minutes by train (Narita E⟧ to the Cerulean Tower, the Narita Express train takes one hour and thirty minutes, while the Airport Limousine bus takes one hour and forty-five minutes.
-      CALL: {"function": "map_directions", "arguments": {"origin": "Narita International Airport", "destination": "Cerulean Tower Tokyu Hotel"}}
-[114.89s][user ] «backchannel» Yeah, totally.
-[118.36s][user ] The train sounds faster. What time does the next Narita Express ⟨ret@122.67s⟩ leave?
-[122.91s][moshi] The next Narita Express ⟦⚡SPAN@124.67s: (tool result) Narita Express: 14:00, 15:00, 16:00⟧ trains leave at two, three, and four PM.
-      CALL: {"function": "Trains_1_FindTrains", "arguments": {"origin": "Narita International Airport", "destination": "Shibuya"}}
-[127.95s][user ] Okay, the three PM train works. I think that's everything for now.
-[131.63s][moshi] Wonderful! It sounds like everything is arranged. Have a truly fantastic time in Tokyo.
-[133.42s][user ] «backchannel» Uh-huh.
-[137.55s][user ] Thank you, Brae. I will.
-[139.00s][moshi] You’re most welcome. Enjoy your trip.
+[ 14.43s][user ] Hmm, and what about Seoul on the ⟨ret@16.77s⟩ same day?
+[ 17.17s][moshi] In Seoul on ⟦⚡SPAN@18.77s: (tool result) -2.1°C, humidity 88%, wind 6.7 km/h⟧ December twenty-fourth, twenty twenty-three, it was negative 2.1 degrees Celsius, with eighty-eight percent humidity and a 6.7 kilometer per hour wind.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Seoul", "date": "2023-12-24"}}
+[ 20.16s][user ] «backchannel» Wow.
+[ 26.39s][user ] That's quite a difference! I'm thinking of traveling there next month.
+[ 30.21s][moshi] That is a significant temperature difference. Traveling can be wonderfully grounding, you know?
+[ 35.36s][user ] Yeah, I really need a break. Could you look for flights to Seoul from New York around ⟨ret@40.61s⟩ January fifteenth?
+[ 40.92s][moshi] Korean Air ⟦⚡SPAN@42.05s: (tool result) Korean Air (KE), New York (JFK) to Seoul (ICN), January 15, 2026, $1256.00, +0.85%⟧ has a one-way flight from New York to Seoul on January fifteenth, twenty twenty-six, for twelve hundred fifty-six dollars, up 0.85 percent.
+      CALL: {"function": "Flights_4_SearchOnewayFlight", "arguments": {"origin": "New York", "destination": "Seoul", "date": "2026-01-15"}}
+[ 50.32s][user ] That sounds okay. Can you check hotels too? Something near ⟨ret@54.03s⟩ Myeongdong?
+[ 54.35s][moshi] In Myeongdong, the ⟦⚡SPAN@56.03s: (tool result) L7 Myeongdong by LOTTE (37.5654, 126.9798), average price $189.00; Nine Tree Premier Hotel Myeon⟧ L7 by LOTTE averages one hundred eighty-nine dollars, and the Nine Tree Premier Hotel II averages one hundred fifty-five.
+      CALL: {"function": "Hotels_4_SearchHotel", "arguments": {"location": "Myeongdong, Seoul"}}
+[ 63.98s][user ] Hmm, the Nine Tree sounds good. Can you reserve a room for two nights, starting January sixteenth?
+[ 69.98s][moshi] ⟨ret@69.90s⟩ I've reserved a room at ⟦⚡SPAN@71.90s: (tool result) Nine Tree Premier Hotel Myeongdong II, check-in 2026-01-16, 2 nights, $310.00, confirmed: 87X2L9⟧ the Nine Tree Premier Hotel Myeongdong II for two nights starting January sixteenth, two thousand twenty-six, totaling three hundred ten dollars. Confirmation number is 87X2L9.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel": "Nine Tree Premier Hotel Myeongdong II", "check_in": "2026-01-16", "nights": "2"}}
+[ 79.37s][user ] Great! I also need to find a good restaurant ⟨ret@81.95s⟩ nearby.
+[ 82.11s][moshi] Myeongdong Kyoja serves ⟦⚡SPAN@83.95s: (tool result) Myeongdong Kyoja (37.5648, 126.9812), Korean, 4.5 stars; Wangbijib Myeongdong Main Store (37.566⟧ Korean cuisine and has four-and-a-half stars. Wangbijib is a Korean BBQ place with four-and-three stars.
+      CALL: {"function": "Restaurants_2_FindRestaurants", "arguments": {"location": "Myeongdong, Seoul", "cuisine": "Korean"}}
+[ 91.38s][user ] Kyoja sounds interesting. Can you make a reservation there for January seventeenth at ⟨ret@95.64s⟩ seven PM?
+[ 96.03s][moshi] I’ve made a ⟦⚡SPAN@97.64s: (tool result) Myeongdong Kyoja, January 17, 2026, 7:00 PM, reservation confirmed: Y5P8QZ⟧ reservation for you at Myeongdong Kyoja on January seventeenth, two thousand twenty-six, at seven PM. Your confirmation number is Y5P8QZ.
+      CALL: {"function": "Restaurants_2_ReserveRestaurant", "arguments": {"restaurant": "Myeongdong Kyoja", "date": "2026-01-17", "time": "19:00"}}
+[105.64s][user ] Perfect. I need to remember to buy a travel adapter.
+[109.24s][moshi] That’s a smart thing to think of ahead of time. Preparation reduces stress, doesn’t it?
+[114.46s][user ] Definitely. Um, could you find me some information about traditional Korean tea ⟨ret@119.43s⟩ ceremonies?
+[119.58s][moshi] A traditional ⟦⚡SPAN@121.43s: (tool result) A traditional Korean tea ceremony, or *darye*, is a ritualized way of preparing and drinking tea⟧ Korean tea ceremony, called *darye*, emphasizes harmony, respect, purity, and tranquility. More information is available on Wikipedia.
+      CALL: {"function": "search", "arguments": {"query": "traditional Korean tea ceremony"}}
+[127.13s][user ] «backchannel» Yeah, totally.
+[131.45s][user ] That sounds lovely. I think I need to find a local SIM card too.
+[135.27s][moshi] A SIM card is a great idea for staying connected. It's good to have a plan.
+[139.92s][user ] Do you know if there are any good hiking trails near ⟨ret@142.62s⟩ Seoul?
+[142.85s][moshi] Bukhansan National ⟦⚡SPAN@144.62s: (tool result) Bukhansan National Park (37.6088, 127.0142), moderate difficulty, 5.7 km; Gwanaksan Mountain (37⟧ Park offers a moderate 5.7-kilometer hike. Gwanaksan Mountain is more challenging, at 8.3 kilometers.
+      CALL: {"function": "Travel_1_FindAttractions", "arguments": {"location": "Seoul", "type": "hiking trail"}}
+[145.69s][user ] «backchannel» Yeah.
+[151.79s][user ] Hmm, Bukhansan sounds manageable. I'd like to set an alarm for six AM on January sixteenth.
+[158.13s][moshi] ⟨ret@157.97s⟩ An alarm is set ⟦⚡SPAN@159.97s: (tool result) Alarm set for January 16, 2026, 6:00 AM⟧ for six AM on January sixteenth, two thousand twenty-six.
+      CALL: {"function": "Alarm_1_AddAlarm", "arguments": {"time": "06:00", "date": "2026-01-16"}}
+[159.91s][user ] «backchannel» Yeah.
+[162.95s][user ] Thank you so much, Brae. This has been incredibly helpful.
+[165.72s][moshi] You’re very welcome. I’m glad I could help you plan a rejuvenating trip. Enjoy your journey!

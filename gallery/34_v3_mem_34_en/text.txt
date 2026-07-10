@@ -61,29 +61,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Ava, I’m Hia. It's lovely to connect with you. What’s on your mind today?
-[  4.14s][user ] Um, I need to get to the Louvre Museum. What’s the quickest way?
-[  7.53s][moshi] ⟨ret@7.47s⟩ From your home at ⟦⚡SPAN@8.91s: 30 Oak Avenue.⟧ 30 Oak Avenue, the fastest route to the Louvre is by metro line one.
-[ 15.48s][user ] Oh, right. And how long will that ⟨ret@17.80s⟩ take, roughly?
-[ 18.20s][moshi] The metro journey ⟦⚡SPAN@19.80s: (tool result) 28 minutes, 1 transfer.⟧ to the Louvre Museum will take approximately twenty-eight minutes, with one transfer.
-      CALL: {"function": "get_travel_time", "arguments": {"origin": "30 Oak Avenue", "destination": "Louvre Museum", "mode": "metro"}}
-[ 21.38s][user ] «backchannel» Uh-huh.
-[ 24.81s][moshi] It sounds like you’re planning a day out in Paris. Is this a special occasion?
-[ 27.00s][user ] «backchannel» Okay.
-[ 29.88s][user ] Welll… it’s for my parents. They’re visiting from Lyon.
-[ 33.38s][moshi] That’s wonderful. It’s lovely to share Paris with family. Do your parents have any mobility concerns I should consider for the route?
-[ 40.90s][user ] No, they’re pretty active, actually. But my mother has a peanut allergy.
-[ 44.85s][moshi] ⟨ret@44.77s⟩ Good to know. We’ve noted ⟦⚡SPAN@46.77s: [2025-08-25] User's home address is 30 Oak Avenue.⟧ your mother’s peanut allergy, and it won’t affect the travel route from 30 Oak Avenue.
-[ 48.44s][user ] «backchannel» Mm-hmm.
-[ 51.66s][user ] That's a relief. Are there any good Mexican restaurants near the Louvre?
-[ 55.95s][moshi] ⟨ret@55.88s⟩ Considering your preference for ⟦⚡SPAN@57.88s: [2026-04-19] User's favorite cuisine is Mexican.⟧ Mexican cuisine, “El Rancho” is a highly-rated option close to the Louvre.
-[ 58.88s][user ] «backchannel» Mhm.
-[ 63.01s][user ] Hmm, that sounds nice. Does it have ⟨ret@65.97s⟩ outdoor seating?
-[ 66.37s][moshi] Yes, ⟦⚡SPAN@67.17s: (tool result) Yes, limited outdoor seating available.⟧ El Rancho does offer limited outdoor seating.
-      CALL: {"function": "get_restaurant_details", "arguments": {"restaurant_name": "El Rancho", "attribute": "outdoor seating"}}
-[ 68.69s][user ] «backchannel» Right.
-[ 69.94s][user ] Perfect!
-[ 70.69s][moshi] I’m glad to hear that. Planning ahead makes these visits so much smoother. Perhaps we could discuss some other options nearby, in case El Rancho is full?
-[ 73.78s][user ] «backchannel» Yeah.
-[ 79.86s][user ] No, that's okay, I think. Just getting there is the main thing.
-[ 83.70s][moshi] I’m happy to help with that. Remember to allow extra time for potential crowds at the museum. Enjoy your time with your parents, Ava.
+[  0.00s][moshi] Hi Ava, I’m Hia. It’s lovely to connect with you. I understand I can help guide you through life’s transitions, and today that seems to be about getting somewhere.
+[  9.58s][user ] uh, yes. I need to get to my friend Camille’s place.
+[ 12.89s][moshi] ⟨ret@12.81s⟩ Your home address is ⟦⚡SPAN@14.81s: [2025-08-06] User's home address is 30 Oak Avenue.⟧ listed as 30 Oak Avenue. Is that correct as your starting point?
+[ 17.27s][user ] «backchannel» Yeah, yeah.
+[ 18.73s][user ] yes, that's right.
+[ 20.64s][moshi] And where is Camille’s place, Ava? Just the address will do.
+[ 22.98s][user ] «backchannel» Mm-hmm.
+[ 25.25s][user ] 12 Rue de ⟨ret@26.80s⟩ Rivoli.
+[ 27.20s][moshi] That address ⟦⚡SPAN@28.80s: (tool result) 12 Rue de Rivoli, 75001 Paris, France, 48.8606° N, 2.3376° E⟧ is 12 Rue de Rivoli, 75001 Paris, France.
+      CALL: {"function": "geocoding", "arguments": {"address": "12 Rue de Rivoli"}}
+[ 30.71s][user ] «backchannel» Yeah.
+[ 32.35s][moshi] Would you like directions, or are you curious about the distance and estimated travel time?
+[ 37.63s][user ] distance, please.
+[ 38.90s][moshi] ⟨ret@38.82s⟩ The distance between your ⟦⚡SPAN@40.82s: (tool result) 3.2 kilometers⟧ home and Camille’s is 3.2 kilometers.
+      CALL: {"function": "distance", "arguments": {"origin": "30 Oak Avenue, 75000 Paris, France", "destination": "12 Rue de Rivoli, 75001 Paris, France"}}
+[ 40.71s][user ] «backchannel» Yeah.
+[ 44.16s][user ] hmm, and how long will that take by bus?
+[ 47.18s][moshi] ⟨ret@46.86s⟩ The bus journey ⟦⚡SPAN@48.86s: (tool result) Approximately 22 minutes.⟧ will take approximately 22 minutes.
+      CALL: {"function": "navigation", "arguments": {"origin": "30 Oak Avenue, 75000 Paris, France", "destination": "12 Rue de Rivoli, 75001 Paris, France", "mode": "bus"}}
+[ 50.75s][user ] that sounds good.
+[ 51.78s][moshi] I’m glad that works for you, Ava. Sometimes, transitions are simply about finding the most practical route.
+[ 58.65s][user ] actually, I remember I told someone I’m allergic to ⟨ret@61.69s⟩ peanuts…
+[ 62.09s][moshi] Yes, you’ve noted ⟦⚡SPAN@63.21s: [2025-08-25] User is allergic to peanuts.⟧ a peanut allergy in your profile. Is there a concern about peanuts on the bus route?
+[ 64.01s][user ] «backchannel» Yeah.
+[ 67.84s][user ] no, just remembering.
+[ 69.43s][moshi] It's good to be mindful of your needs, Ava. Perhaps it's a reminder to always have an epinephrine pen handy when traveling.
+[ 72.94s][user ] «backchannel» Uh-huh.
+[ 76.85s][user ] but… are there any good Mexican restaurants near Camille’s?
+[ 80.59s][moshi] ⟨ret@80.51s⟩ You enjoy Mexican ⟦⚡SPAN@82.51s: [2026-04-19] User's favorite cuisine is Mexican.⟧ cuisine. Let me check for restaurants nearby.

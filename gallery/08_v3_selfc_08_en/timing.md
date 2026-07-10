@@ -55,119 +55,127 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to Denv | S2 Hozier, huh? I wonder if I could g | S3 Book that room for me, please. | S4 I do. Thanks again for everything.
+# EXAMINER(FDB-v2) 단계: S1 Show me buses from Chicago to… | S2 Trains sound good. What are the op | S3 Actually— could you tell me about  | S4 What about snacks?
 
-     0.00s  user  발화 시작: Show me buses from Chicago to Denver for three passengers on
-     4.40s  <ret> 발화 (turn1 첫 프레임)
-     4.79s  agent 발화 시작: <ret> There are three buses on May tenth: Greyhound at two t
-     5.00s  user  발화 끝
-     6.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.85s]: (tool result) 14:30, Greyhound, $125.00, 18h 30m; 16:00, FlixBus, $110
-     9.20s  user  발화 시작: Yeah.
-     9.83s  user  발화 끝
-    15.64s  agent 발화 끝
-    15.77s  user  발화 시작: That Wanderu one sounds good. Can you book it?
-    18.25s  <ret> 발화 (turn4 첫 프레임)
-    18.48s  agent 발화 시작: <ret> I have booked the Wanderu bus for you. It departs at e
-    18.68s  user  발화 끝
-    20.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: (tool result) Wanderu, Chicago to Denver, May 10, 2026, 3 passengers, 
-    27.10s  agent 발화 끝
-    27.79s  user  발화 시작: Perfect. Uhhh, what's the weather like in Denver that day?
-    31.54s  <ret> 발화 (turn6 첫 프레임)
-    31.69s  agent 발화 시작: <ret> The forecast for Denver on May tenth is eighteen point
-    31.81s  user  발화 끝
-    33.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.25s]: (tool result) 18.3°C, humidity 62%, wind 8.2 km/h, partly cloudy
-    41.94s  agent 발화 끝
-    42.26s  user  발화 시작: That sounds pleasant enough. Is there anything interesting t
-    47.27s  <ret> 발화 (turn8 첫 프레임)
-    47.66s  agent 발화 시작: <ret> Denver has the Art Museum, Red Rocks Amphitheatre, and
-    47.67s  user  발화 끝
-    47.77s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.51s]: (tool result) Denver Art Museum (100 W 14th Ave Pkwy), Red Rocks Amphi
-    51.12s  user  발화 시작: Yeah.
-    51.76s  user  발화 끝
-    53.08s  user  발화 시작: Red Rocks sounds cool. What kind of events are happening the
-    53.17s  agent 발화 끝
-    57.42s  <ret> 발화 (turn11 첫 프레임)
-    57.80s  user  발화 끝
-    57.82s  agent 발화 시작: <ret> Red Rocks Amphitheatre hosts The String Cheese Inciden
-    59.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.69s]: (tool result) May 12: The String Cheese Incident; May 15: Hozier; May 
-    65.51s  agent 발화 끝
-    65.68s  user  발화 시작: Hozier, huh? I wonder if I could get tickets…
-    68.44s  <ret> 발화 (turn13 첫 프레임)
-    68.83s  agent 발화 시작: <ret> Tickets for Hozier at Red Rocks on May fifteenth are a
-    68.92s  user  발화 끝
-    69.64s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.15s]: (tool result) Hozier, Red Rocks Amphitheatre, May 15, 2026, tickets av
-    73.97s  agent 발화 끝
-    74.03s  user  발화 시작: Eighty-nine dollars is okay. Can you get me two?
-    77.01s  <ret> 발화 (turn15 첫 프레임)
-    77.24s  agent 발화 시작: <ret> I have secured two tickets to see Hozier at Red Rocks 
-    77.41s  user  발화 끝
-    78.61s  ⚡SPAN 주입 [d'=1.60s / d_lead=9.36s]: (tool result) Hozier, Red Rocks Amphitheatre, May 15, 2026, 2 tickets,
-    86.61s  agent 발화 끝
-    86.69s  user  발화 시작: That's great! – but actually, hold on, what time does the bu
-    91.55s  user  발화 끝
-    91.71s  agent 발화 시작: The bus arrives—
-    92.17s  user  발화 시작: …is there a good hotel near Red Rocks? I might want to stay 
-    92.86s  agent 발화 끝
-    96.62s  <ret> 발화 (turn19 첫 프레임)
-    96.76s  agent 발화 시작: <ret> Nearby hotels include Hotel Monte Vista, The Golden Ho
-    96.88s  user  발화 끝
-    98.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) Hotel Monte Vista (1.2 km), The Golden Hotel (10.5 km), 
-   101.71s  user  발화 시작: Mhm.
-   102.34s  user  발화 끝
-   103.54s  user  발화 시작: Origin Red Rocks sounds closest. What's their availability l
-   103.76s  agent 발화 끝
-   108.77s  <ret> 발화 (turn22 첫 프레임)
-   109.09s  agent 발화 시작: <ret> Origin Red Rocks has one queen room available on May f
-   109.33s  user  발화 끝
-   109.57s  ⚡SPAN 주입 [d'=0.80s / d_lead=5.14s]: (tool result) Origin Red Rocks, May 15, 2026, one queen room available
-   114.01s  user  발화 시작: Book that room for me, please.
-   114.23s  agent 발화 끝
-   115.78s  <ret> 발화 (turn24 첫 프레임)
-   116.09s  agent 발화 시작: <ret> I have booked a queen room at Origin Red Rocks for you
-   116.26s  user  발화 끝
-   117.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.86s]: (tool result) Origin Red Rocks, May 15, 2026, one queen room, $210.00,
-   120.37s  user  발화 시작: Uh-huh.
-   121.00s  user  발화 끝
-   124.87s  user  발화 시작: Wonderful. So, to recap, I have a bus ticket, concert ticket
-   124.95s  agent 발화 끝
-   131.17s  user  발화 끝
-   131.20s  agent 발화 시작: That is correct. You have transportation, entertainment, and
-   133.33s  user  발화 시작: Yeah.
-   134.05s  user  발화 끝
-   136.01s  agent 발화 끝
-   136.15s  user  발화 시작: This has been so helpful. What time does the bus actually ar
-   140.65s  <ret> 발화 (turn30 첫 프레임)
-   140.88s  agent 발화 시작: <ret> The Wanderu bus arrives in Denver at two thirty PM on 
-   141.09s  user  발화 끝
-   142.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) Wanderu, Chicago to Denver, May 10, 2026, arrives 14:30
-   144.58s  agent 발화 끝
-   145.31s  user  발화 시작: Ah, that's earlier than I thought. Good to know.
-   148.06s  agent 발화 시작: It is good to be prepared. Sometimes adjusting expectations 
-   148.22s  user  발화 끝
-   150.54s  user  발화 시작: Mm-hmm.
-   151.17s  user  발화 끝
-   153.22s  user  발화 시작: You're right. I think I'm all set then.
-   153.39s  agent 발화 끝
-   156.07s  agent 발화 시작: It sounds as though you have a well-planned trip.
-   156.18s  user  발화 끝
-   157.07s  user  발화 시작: Uh-huh.
-   157.65s  user  발화 끝
-   158.11s  user  발화 시작: I do. Thanks again for everything.
-   158.66s  agent 발화 끝
-   160.85s  agent 발화 시작: You are very welcome. It was my pleasure to assist you.
-   160.97s  user  발화 끝
-   163.45s  user  발화 시작: Yeah, yeah.
-   164.46s  agent 발화 끝
-   164.74s  user  발화 끝
-   165.09s  user  발화 시작: I appreciate your help.
-   166.51s  agent 발화 시작: I am glad I could offer some support.
-   166.75s  user  발화 끝
-   168.00s  user  발화 시작: I think I'll just relax now.
-   168.35s  agent 발화 끝
-   169.79s  agent 발화 시작: That sounds like a wonderful idea. I hope you enjoy your tim
-   169.93s  user  발화 끝
-   173.11s  user  발화 시작: I will. Goodbye.
-   173.26s  agent 발화 끝
-   175.37s  user  발화 끝
-   175.45s  agent 발화 시작: Goodbye.
-   176.08s  agent 발화 끝
+     0.00s  user  발화 시작: Show me buses from Chicago to…
+     2.40s  user  발화 끝
+     4.53s  user  발화 시작: …Denver for three passengers on May tenth.
+     6.96s  <ret> 발화 (turn2 첫 프레임)
+     7.35s  agent 발화 시작: <ret> There are buses from Chicago to Denver on May tenth. G
+     7.43s  user  발화 끝
+     8.96s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.32s]: (tool result) Chicago, IL to Denver, CO, 2026-05-10: Greyhound (14h 30
+    10.28s  user  발화 시작: Yeah.
+    10.91s  user  발화 끝
+    14.22s  user  발화 시작: Actually, make that May eleventh.
+    14.67s  agent 발화 끝
+    16.04s  <ret> 발화 (turn5 첫 프레임)
+    16.27s  agent 발화 시작: <ret> On May eleventh, Greyhound is fifteen hours for one hu
+    16.49s  user  발화 끝
+    18.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.68s]: (tool result) Chicago, IL to Denver, CO, 2026-05-11: Greyhound (15h 00
+    20.83s  user  발화 시작: Hmm, are there any direct routes?
+    20.95s  agent 발화 끝
+    23.27s  <ret> 발화 (turn7 첫 프레임)
+    23.41s  agent 발화 시작: <ret> Let me look into direct routes from Chicago to Denver 
+    23.56s  user  발화 끝
+    24.87s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.79s]: (tool result) Chicago, IL to Denver, CO, 2026-05-11 (direct): Greyhoun
+    27.20s  agent 발화 끝
+    27.23s  agent 발화 시작: Greyhound offers a direct route taking fourteen hours forty-
+    32.99s  user  발화 시작: That’s a bit pricey.
+    33.20s  agent 발화 끝
+    34.51s  user  발화 끝
+    34.70s  agent 발화 시작: It is a bit higher than the other options, yes. Is cost your
+    37.94s  user  발화 시작: Yeah.
+    38.48s  user  발화 끝
+    39.94s  agent 발화 끝
+    40.25s  user  발화 시작: Well, I was hoping for something overnight, actually.
+    43.63s  <ret> 발화 (turn13 첫 프레임)
+    43.70s  agent 발화 시작: <ret> I understand you'd prefer an overnight option— I’m sor
+    43.81s  user  발화 끝
+    45.31s  ⚡SPAN 주입 [d'=1.68s / d_lead=2.29s]: (no information found)
+    51.89s  agent 발화 끝
+    54.25s  user  발화 시작: Trains sound good. What are the options?
+    56.83s  <ret> 발화 (turn15 첫 프레임)
+    57.22s  agent 발화 시작: <ret> Amtrak's California Zephyr takes twenty-seven hours th
+    57.35s  user  발화 끝
+    58.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.09s]: (tool result) Chicago, IL to Denver, CO: Amtrak California Zephyr (27h
+    64.30s  user  발화 시작: The California Zephyr sounds interesting.
+    64.31s  agent 발화 끝
+    67.30s  agent 발화 시작: It's a very scenic route, known for its beautiful views.
+    67.35s  user  발화 끝
+    70.68s  agent 발화 끝
+    70.81s  user  발화 시작: Could you check availability for that train on May tenth?
+    74.07s  <ret> 발화 (turn19 첫 프레임)
+    74.38s  agent 발화 시작: <ret> On May tenth, coach seats are available for two hundre
+    74.50s  user  발화 끝
+    75.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.35s]: (tool result) Amtrak California Zephyr, Chicago to Denver, 2026-05-10:
+    77.40s  user  발화 시작: Mhm.
+    78.03s  user  발화 끝
+    78.57s  user  발화 시작: Is there a sleeper car available?
+    78.73s  agent 발화 끝
+    80.85s  agent 발화 시작: Yes, there’s one roomette available in the sleeper car for s
+    80.91s  user  발화 끝
+    85.07s  user  발화 시작: Hmm, six hundred is a lot.
+    85.19s  agent 발화 끝
+    87.05s  user  발화 끝
+    87.46s  agent 발화 시작: It is a significant difference in price, but offers more com
+    90.08s  user  발화 시작: Right.
+    90.53s  user  발화 끝
+    91.81s  agent 발화 끝
+    92.64s  user  발화 시작: Actually— could you tell me about the roomette? What does th
+    96.67s  <ret> 발화 (turn27 첫 프레임)
+    96.74s  agent 발화 시작: <ret> A roomette is a private cabin with seats that convert 
+    96.81s  user  발화 끝
+    98.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: (tool result) Amtrak California Zephyr Roomette: Private cabin, two se
+    99.32s  user  발화 시작: Yeah.
+    99.86s  user  발화 끝
+   102.44s  agent 발화 끝
+   102.60s  user  발화 시작: That sounds quite nice.
+   104.31s  agent 발화 시작: Many travelers appreciate the added comfort and privacy on t
+   104.49s  user  발화 끝
+   106.05s  user  발화 시작: Yeah, totally.
+   107.19s  user  발화 끝
+   108.66s  agent 발화 끝
+   109.23s  user  발화 시작: Okay, book me the roomette for May tenth.
+   111.45s  <ret> 발화 (turn33 첫 프레임)
+   111.82s  agent 발화 시작: <ret> You are booked on the Amtrak California Zephyr in a ro
+   112.09s  user  발화 끝
+   113.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Amtrak California Zephyr, Chicago to Denver, 2026-05-10,
+   119.91s  user  발화 시작: Perfect. Thank you so much!
+   120.08s  agent 발화 끝
+   122.09s  agent 발화 시작: You're very welcome. I hope you enjoy your journey.
+   122.17s  user  발화 끝
+   123.90s  user  발화 시작: Yeah.
+   124.53s  user  발화 끝
+   125.05s  agent 발화 끝
+   125.58s  user  발화 시작: Do you think I should pack a book?
+   127.51s  user  발화 끝
+   127.60s  agent 발화 시작: That's a wonderful idea. A good book is always a pleasant co
+   130.51s  user  발화 시작: Yeah.
+   131.19s  user  발화 끝
+   133.39s  agent 발화 끝
+   133.61s  user  발화 시작: What about snacks?
+   135.25s  agent 발화 시작: Bringing some of your favorite snacks is also a good plan. T
+   135.27s  user  발화 끝
+   142.25s  agent 발화 끝
+   143.12s  user  발화 시작: I think I will.
+   144.44s  agent 발화 시작: Excellent. It’s always good to be prepared.
+   144.45s  user  발화 끝
+   146.84s  agent 발화 끝
+   147.61s  user  발화 시작: Maybe I should also pack a travel pillow.
+   150.65s  user  발화 끝
+   150.89s  <ret> 발화 (turn45 첫 프레임)
+   151.12s  agent 발화 시작: <ret> That's a thoughtful addition— I’m unable to find speci
+   151.39s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.43s]: (no information found)
+   158.71s  user  발화 시작: …Actually, could you find me the weather in Denver on May te
+   159.00s  agent 발화 끝
+   162.13s  <ret> 발화 (turn47 첫 프레임)
+   162.28s  agent 발화 시작: <ret> The forecast for Denver on May tenth is twenty-one deg
+   162.59s  user  발화 끝
+   164.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (tool result) Denver, CO, 2026-05-10: 21.0°C, humidity 45%, wind 8.0 k
+   164.66s  user  발화 시작: Yeah, totally.
+   166.04s  user  발화 끝
+   167.84s  agent 발화 끝
+   167.92s  user  발화 시작: That sounds lovely.
+   169.67s  user  발화 끝
+   169.76s  agent 발화 시작: It does indeed. I trust you will have a relaxing and enjoyab
+   173.60s  agent 발화 끝
