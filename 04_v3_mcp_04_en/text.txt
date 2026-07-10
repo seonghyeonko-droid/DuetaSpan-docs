@@ -64,15 +64,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@4.15s⟩ one?
-[  4.47s][moshi] I’m setting your ⟦⚡SPAN@6.15s: (no information found)⟧ user agent to SuperCrawler version ten point one… I could not be found.
+[  0.00s][user ] Could you please set the user agent to SuperCrawler version ten point ⟨ret@3.84s⟩ one?
+[  4.16s][moshi] I ⟦⚡SPAN@4.80s: (tool result) The user agent should be set to SuperCrawler version 10.1.⟧ am setting your user agent to SuperCrawler version ten point one… …confirmed.
       CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "SuperCrawler version 10.1"}}
-[  7.50s][user ] «backchannel» Mhm.
-[ 11.88s][user ] Hmm, is that really working? I don't feel like it changed.
-[ 15.77s][moshi] ⟨ret@15.69s⟩ Let me quickly ⟦⚡SPAN@17.05s: (no information found)⟧ check the current user agent… it could not be found.
-      CALL: {"function": "playwright_get_user_agent", "arguments": {}}
-[ 20.66s][user ] But SuperCrawler is a bit aggressive, isn’t it?
-[ 23.06s][moshi] It can be, depending on the website. Sometimes a more subtle approach is better, yes.
-[ 29.39s][user ] Okay, could you change it back to the default then?
-[ 32.15s][moshi] ⟨ret@32.07s⟩ I’ve reset ⟦⚡SPAN@33.11s: (no information found)⟧ the user agent to the default setting now… it could not be found.
-      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "default"}}
+[  6.74s][user ] «backchannel» Mhm.
+[ 10.71s][user ] Hmm, does that actually work? Can you check what the user agent is ⟨ret@14.48s⟩ now?
+[ 14.72s][moshi] Let me ⟦⚡SPAN@15.84s: (tool result) I am setting your user agent to SuperCrawler version ten point one… …confirmed.⟧ verify the current user agent setting… SuperCrawler version ten point one.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {}}
+[ 21.14s][user ] That’s strange, it still says the default. Are you sure it changed?
+[ 25.63s][moshi] ⟨ret@25.55s⟩ It appears ⟦⚡SPAN@26.75s: Let me verify the current user agent setting… SuperCrawler version ten point one.⟧ the user agent is still showing as the default… perhaps there was a temporary glitch… SuperCrawler version ten point one.
+[ 35.65s][user ] Okay, well, can you try setting it to “VerySecretAgent” then? Just see if anything sticks.
+[ 40.72s][moshi] ⟨ret@40.64s⟩ I’m now setting ⟦⚡SPAN@42.64s: (tool result) It appears the user agent is still showing as the default… perhaps there was a temporary glitch…⟧ the user agent to VerySecretAgent, and will confirm it shortly… VerySecretAgent.
+      CALL: {"function": "playwright_custom_user_agent", "arguments": {"user_agent": "VerySecretAgent"}}

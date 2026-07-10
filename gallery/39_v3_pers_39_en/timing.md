@@ -52,14 +52,14 @@
 
 
      0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you. I’m Aril, and I h
-     7.00s  agent 발화 끝
-     8.09s  user  발화 시작: Aril… that’s a pretty name. Um, I’m just feeling really lone
-    13.74s  user  발화 끝
-    13.95s  agent 발화 시작: That’s completely understandable, Lucia. Loneliness can be r
-    17.80s  user  발화 시작: Wow.
-    18.52s  user  발화 끝
-    24.23s  user  발화 시작: Welll… I moved here a few years ago, and I haven’t really ma
-    24.28s  agent 발화 끝
-    29.81s  agent 발화 시작: It absolutely is hard, and you've been brave to move and sta
-    29.91s  user  발화 끝
-    42.85s  agent 발화 끝
+     7.27s  agent 발화 끝
+     8.56s  user  발화 시작: Aril… that’s a pretty name. I’m just feeling a bit lost, hon
+    15.88s  user  발화 끝
+    16.09s  agent 발화 시작: That’s perfectly understandable, Lucia. San Francisco can be
+    19.70s  user  발화 시작: Wow.
+    20.52s  user  발화 끝
+    25.74s  user  발화 시작: Uhhh, I guess… putting myself out there? It feels awkward, y
+    25.82s  agent 발화 끝
+    32.97s  agent 발화 시작: It absolutely does feel awkward! Many people struggle with t
+    33.11s  user  발화 끝
+    42.66s  agent 발화 끝

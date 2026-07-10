@@ -59,19 +59,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just looking at flags, and I’m trying to remember one… it had black, red, and yellow on ⟨ret@6.43s⟩ it?
-[  6.66s][moshi] That’s a striking combination ⟦⚡SPAN@8.43s: The flag of Germany features black, red, and yellow horizontal bands.⟧ of colors… which flag are you thinking of specifically?… Germany, it would seem.
-[ 13.12s][user ] Uh, I think it’s a European one? I’m terrible with geography, honestly.
-[ 18.03s][moshi] It’s perfectly alright to struggle with geography, many people do! Perhaps knowing the country will help?
-[ 20.81s][user ] «backchannel» Right.
-[ 24.11s][user ] I think it starts with a G… Germany, maybe? Is that ⟨ret@28.07s⟩ right?
-[ 28.38s][moshi] Germany’s ⟦⚡SPAN@29.19s: Germany’s flag consists of three horizontal bands of black, red, and gold.⟧ flag does indeed feature those colors… The flag of Germany is black, red, and gold—that is, yellow—arranged in horizontal bands… Does that sound like the one you had in mind?… black, red, and gold
-[ 42.31s][user ] Yes! That’s it! I always get the colors mixed up.
-[ 46.34s][moshi] It's easy to do, especially with similar shades. I'm glad we found it.
-[ 51.06s][user ] Oh, actually, speaking of colors, do you have a favorite?
-[ 55.00s][moshi] I find blues and greens very calming, personally.
-[ 57.96s][user ] Back to flags though… what’s the oldest national flag still in use?
-[ 62.41s][moshi] ⟨ret@62.33s⟩ The oldest continuously used ⟦⚡SPAN@64.33s: The Danish flag, the Dannebrog, is considered the oldest continuously used national flag in the world.⟧ national flag is the Dannebrog of Denmark, with origins dating back to… the thirteenth century.
-[ 66.11s][user ] «backchannel» Uh-huh.
-[ 71.66s][user ] Wow, that's really interesting! Thanks, Kiora.
-[ 75.11s][moshi] You’re very welcome! It's my pleasure to help you explore these topics.
+[  0.00s][user ] Hey, uh, I was wondering… do you know any countries with a flag that’s black, red, and ⟨ret@6.63s⟩ yellow?
+[  6.87s][moshi] The flag that features ⟦⚡SPAN@8.63s: [The flag of Germany features black, red, and yellow horizontal bands.]⟧ black, red, and yellow horizontal bands is…
+[ 11.29s][user ] Oh, Germany! Right, of course. I should have remembered that. It’s just, my history isn’t the best, you see.
+[ 19.63s][moshi] That’s perfectly alright! Everyone has areas they find a bit trickier. It’s good you’re thinking about it, though.
+[ 22.45s][user ] «backchannel» Right.
+[ 25.79s][user ] Yeah, well, I’m trying to study for this geography test, and it's a lot. Are there any *other* flags like ⟨ret@31.95s⟩ that, though?
+[ 32.27s][moshi] There is another flag ⟦⚡SPAN@33.95s: [The flag of Belgium is composed of three vertical bands: black, yellow, and red.]⟧ with those colors, though in a different arrangement. The flag with black, yellow, and red vertical bands is…
+[ 39.61s][user ] Belgium! Okay, that's two. Hmmm, what about… uh, are those colors common for some reason?
+[ 46.98s][moshi] Those colors do appear in several national flags, often representing historical ties or symbolic meanings. Perhaps we could look into that?
+[ 55.40s][user ] No, no, that’s okay. I think I just need to focus on memorizing for now. Thanks for the help, Kiora!
+[ 62.44s][moshi] You're very welcome! Remember, breaking down the task into smaller steps can make studying much less daunting. Good luck with your test.

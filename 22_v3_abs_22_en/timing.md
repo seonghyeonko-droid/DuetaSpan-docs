@@ -66,45 +66,47 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Hmm, okay. What about the history  | S3 Interesting. Was he involved in an | S4 Bakunin sounds more…active. What k
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 Oh, that’s interesting. What about | S3 Hmm, that makes sense. What's thei | S4 That's a pretty optimistic view, i
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.12s  <ret> 발화 (turn1 첫 프레임)
-     2.28s  agent 발화 시작: <ret> Anarchists fundamentally oppose all forms of hierarchi
-     2.45s  user  발화 끝
-     4.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: Anarchists oppose all forms of hierarchical rule, including government
-     5.84s  user  발화 시작: Uh-huh.
-     6.42s  user  발화 끝
-     8.34s  user  발화 시작: …but specifically, which system gets the most criticism from
-     8.39s  agent 발화 끝
-    11.83s  <ret> 발화 (turn4 첫 프레임)
-    12.06s  agent 발화 시작: <ret> They direct the most intense criticism towards states,
-    12.17s  user  발화 끝
-    12.87s  ⚡SPAN 주입 [d'=1.04s / d_lead=9.37s]: Anarchists are particularly critical of state capitalism and statist s
-    21.43s  agent 발화 끝
-    21.45s  user  발화 시작: Hmm, okay. What about the history of anarchist movements?
-    25.34s  user  발화 끝
-    25.34s  agent 발화 시작: Anarchist thought has roots stretching back to ancient Greec
-    33.09s  user  발화 시작: And who were some key figures in those early movements?
-    33.45s  agent 발화 끝
-    36.06s  <ret> 발화 (turn8 첫 프레임)
-    36.37s  agent 발화 시작: <ret> Pierre-Joseph Proudhon is often considered the first s
-    36.52s  user  발화 끝
-    38.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: Early anarchist movements included figures like Pierre-Joseph Proudhon
-    46.38s  user  발화 시작: Interesting. Was he involved in any specific events or upris
-    46.70s  agent 발화 끝
-    50.68s  <ret> 발화 (turn10 첫 프레임)
-    51.07s  agent 발화 시작: <ret> Proudhon primarily focused on theoretical work and mut
-    51.23s  user  발화 끝
-    52.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.83s]: Pierre-Joseph Proudhon’s writings from the eighteen-forties… laying th
-    60.71s  agent 발화 시작: …social reforms through peaceful means. He didn't directly l
-    60.90s  agent 발화 끝
-    68.73s  agent 발화 끝
-    69.07s  user  발화 시작: So, what came *after* Proudhon? What were the next big devel
-    73.72s  agent 발화 시작: Mikhail Bakunin greatly expanded anarchist thought in the ei
-    73.79s  user  발화 끝
-    82.01s  agent 발화 끝
-    82.27s  user  발화 시작: Bakunin sounds more…active. What kind of action did he promo
-    86.86s  agent 발화 시작: He championed direct action and the abolition of the state t
-    87.00s  user  발화 끝
-    94.14s  agent 발화 끝
+     2.34s  <ret> 발화 (turn1 첫 프레임)
+     2.50s  agent 발화 시작: <ret> Anarchists fundamentally oppose any form of hierarchic
+     2.68s  user  발화 끝
+     4.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.89s]: Anarchists oppose all forms of hierarchical rule, including government
+     6.75s  user  발화 시작: Mm-hmm.
+     7.24s  user  발화 끝
+    10.29s  user  발화 시작: …do they have any specific historical examples of government
+    10.39s  agent 발화 끝
+    15.12s  <ret> 발화 (turn4 첫 프레임)
+    15.27s  agent 발화 시작: <ret> Historically, anarchists have actively opposed state-b
+    15.47s  user  발화 끝
+    17.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.61s]: Anarchists have historically opposed states such as the Spanish State 
+    25.89s  agent 발화 끝
+    25.92s  user  발화 시작: Oh, that’s interesting. What about modern anarchists? Are th
+    31.94s  user  발화 끝
+    31.98s  agent 발화 시작: Modern anarchist thought is quite diverse. While opposition 
+    41.69s  user  발화 시작: So, it's not just about kings and dictators, then?
+    42.12s  agent 발화 끝
+    44.70s  agent 발화 시작: Not at all. Anarchists critique the systemic power structure
+    44.74s  user  발화 끝
+    56.09s  user  발화 시작: Hmm, that makes sense. What's their ideal, then? If not gove
+    56.29s  agent 발화 끝
+    61.73s  <ret> 발화 (turn10 첫 프레임)
+    62.13s  agent 발화 시작: <ret> Anarchists envision a society organized around volunta
+    62.24s  user  발화 끝
+    63.73s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: Anarchists envision a society without rulers, often based on voluntary
+    71.17s  agent 발화 끝
+    71.37s  user  발화 시작: Direct democracy sounds chaotic. How would that even work on
+    75.99s  agent 발화 시작: It's a valid concern. Proponents suggest federations of smal
+    76.08s  user  발화 끝
+    81.15s  user  발화 시작: Yeah, totally.
+    81.97s  user  발화 끝
+    86.58s  user  발화 시작: That's a pretty optimistic view, isn't it? Do they ever comp
+    86.65s  agent 발화 끝
+    92.22s  agent 발화 시작: Compromise is a complex issue for anarchists. Some engage in
+    92.22s  user  발화 끝
+   106.04s  agent 발화 끝
+   107.46s  user  발화 시작: I see. So there's a lot of internal debate. Thanks, Frunax, 
+   111.73s  agent 발화 시작: You're very welcome. It’s fascinating to explore these ideas
+   111.90s  user  발화 끝
+   117.51s  agent 발화 끝

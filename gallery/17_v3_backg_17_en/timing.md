@@ -58,21 +58,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 …sixty and a hundred, right? That  | S3 Anyone seen my keys? I swear I jus | S4 Oh, okay. That’s a bit lower then.
+# EXAMINER(FDB-v2) 단계: S1 What is the average heart rate of  | S2 Oh, that’s a pretty wide range. | S3 Did you remember to take the recyc | S4 But what about athletes? Their hea
 
      0.00s  user  발화 시작: What is the average heart rate of a healthy person?
-     2.47s  <ret> 발화 (turn1 첫 프레임)
-     2.87s  agent 발화 시작: <ret> A normal resting heart rate for adults generally falls
-     2.87s  user  발화 끝
-     4.47s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.12s]: The normal resting heart rate for adults ranges from 60 to 100 beats p
-     8.98s  agent 발화 끝
-     9.10s  user  발화 시작: …sixty and a hundred, right? That seems high.
-    12.32s  user  발화 끝
-    12.58s  agent 발화 시작: It can feel that way, certainly. A healthy range is quite br
-    16.84s  agent 발화 끝
-    17.53s  user  발화 시작: Anyone seen my keys? I swear I just had them.
-    20.36s  user  발화 끝
-    20.38s  agent 발화 시작: Actually, the generally accepted range is fifty to ninety be
-    24.80s  user  발화 시작: Oh, okay. That’s a bit lower then. Good to know.
-    24.92s  agent 발화 끝
-    28.49s  user  발화 끝
+     2.20s  <ret> 발화 (turn1 첫 프레임)
+     2.58s  user  발화 끝
+     2.59s  agent 발화 시작: <ret> So, a typical resting heart rate falls between sixty a
+     4.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [A normal resting heart rate for adults ranges from 60 to 100 beats pe
+     7.45s  agent 발화 끝
+     7.53s  user  발화 시작: Oh, that’s a pretty wide range.
+     9.14s  user  발화 끝
+     9.30s  agent 발화 시작: It is rather broad, isn’t it? Factors like fitness level and
+    14.58s  agent 발화 끝
+    15.29s  user  발화 시작: Did you remember to take the recycling out?
+    17.41s  user  발화 끝
+    17.44s  user  발화 시작: But what about athletes? Their heart rate is lower, right?
+    20.57s  <ret> 발화 (turn6 첫 프레임)
+    20.72s  agent 발화 시작: <ret> For well-trained athletes, it can be as low as forty t
+    20.91s  user  발화 끝
+    22.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.55s]: [Well-trained athletes may have a resting heart rate as low as 40-60 b
+    28.27s  agent 발화 끝

@@ -76,27 +76,22 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was wondering about the name du  | S2 Oh, interesting. Is it an old name | S3 And is it connected to Afrikaans a | S4 That makes a lot of sense, thank y
 
-     0.00s  user  발화 시작: I was wondering about the name du Plessis. It seems quite co
-     4.30s  <ret> 발화 (turn1 첫 프레임)
-     4.34s  user  발화 끝
-     4.37s  agent 발화 시작: <ret> The name du Plessis originates from France, meaning “o
-     5.50s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.74s]: Du Plessis is a French surname, originally denoting someone from Pless
-    10.10s  user  발화 시작: Mhm.
-    10.74s  user  발화 끝
-    12.10s  user  발화 시작: Oh, interesting. Is it an old name, then?
-    12.10s  agent 발화 끝
-    14.65s  <ret> 발화 (turn4 첫 프레임)
-    15.04s  agent 발화 시작: <ret> The earliest records of the name du Plessis date back 
-    15.15s  user  발화 끝
-    16.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: The name du Plessis originates from France, meaning “of the chapel” or
-    21.85s  agent 발화 끝
-    22.18s  user  발화 시작: And is it connected to Afrikaans at all? I heard something a
-    26.28s  <ret> 발화 (turn6 첫 프레임)
-    26.66s  agent 발화 시작: <ret> The du Plessis family were French Huguenots who settle
-    26.80s  user  발화 끝
-    28.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: The name du Plessis originates from France, meaning “of the chapel” or
-    35.35s  user  발화 시작: That makes a lot of sense, thank you.
-    35.57s  agent 발화 끝
-    37.88s  user  발화 끝
+     0.00s  user  발화 시작: I was wondering about the name du Plessis… it seems quite co
+     4.19s  <ret> 발화 (turn1 첫 프레임)
+     4.25s  user  발화 끝
+     4.26s  agent 발화 시작: <ret> The name du Plessis originates from France, and specif
+     5.39s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.24s]: Du Plessis is a French surname, originating as a title denoting “of Pl
+    10.38s  user  발화 시작: Mhm.
+    11.01s  user  발화 끝
+    12.45s  user  발화 시작: Oh, France! I always assumed it was… well, something else.
+    12.50s  agent 발화 끝
+    16.68s  <ret> 발화 (turn4 첫 프레임)
+    17.07s  agent 발화 시작: <ret> It actually became particularly established in South A
+    17.12s  user  발화 끝
+    18.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.27s]: The name du Plessis originates from France, and specifically relates t
+    26.34s  agent 발화 끝
+    26.59s  user  발화 시작: Huguenots… that’s right, they fled religious persecution, di
+    31.87s  user  발화 끝
+    31.90s  agent 발화 시작: Yes, many did seek refuge elsewhere, and that movement certa
+    40.94s  agent 발화 끝

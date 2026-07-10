@@ -67,29 +67,30 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know when Demi Lovato’s new album comes out?
-[  3.50s][moshi] ⟨ret@3.29s⟩ Demi Lovato has announced ⟦⚡SPAN@5.29s: Demi Lovato’s eighth studio album, *Revamped*, was released on September 15, 2023.⟧ a new album, but release dates can shift… …it came out on September fifteen, two thousand and twenty-three.
-[  8.76s][user ] «backchannel» Uh-huh.
-[ 11.55s][user ] I meant, back in 2015. When did it come out ⟨ret@15.15s⟩ then?
-[ 15.48s][moshi] Ah, looking ⟦⚡SPAN@17.15s: Demi Lovato’s album *Confident* was released on October 16, 2015.⟧ back to 2015—Demi Lovato’s *Confident* was released on… October sixteen, two thousand and fifteen.
-[ 24.11s][moshi] ⟨ret@23.81s⟩ …October sixteenth, 2015. ⟦⚡SPAN@25.81s: October 16, 2015.⟧ It was a very strong album for her, creatively.
-[ 29.96s][user ] Oh, okay. Did it go straight to number ⟨ret@33.18s⟩ one?
-[ 33.40s][moshi] *Confident* debuted at number ⟦⚡SPAN@35.18s: *Confident* debuted at number one on the Billboard 200 chart in the US.⟧ one on the Billboard 200 chart… in the US.
-[ 38.52s][moshi] ⟨ret@38.12s⟩ …selling ⟦⚡SPAN@39.09s: It sold 98,000 album-equivalent units in its first week.⟧ nearly ninety-eight thousand units in its initial release week.
-[ 40.81s][user ] «backchannel» Uh-huh.
-[ 42.31s][moshi] It really resonated with listeners, and I think that album showed a lot of growth in her artistry—a willingness to be vulnerable.
-[ 49.09s][user ] I remember that song…
-[ 51.72s][user ] …"Cool for the Summer." Was that the first single?
-[ 55.27s][moshi] ⟨ret@55.04s⟩ "Cool for ⟦⚡SPAN@56.56s: It resonated with listeners, and I think that album showed a lot of growth in her artistry—a willingness to be⟧ the Summer" was indeed the lead single, released on… June twenty-third, two thousand fifteen.
-[ 58.79s][user ] «backchannel» Mm-hmm.
-[ 63.73s][user ] …but did she perform it at the VMAs that ⟨ret@66.28s⟩ year?
-[ 66.69s][moshi] Well, she did ⟦⚡SPAN IRRELEVANT@68.28s: Berlin (52.51739, 13.39513): Heritage (413 m), Restaurant Borchardt (416 m), Bocca di Bacco (491 m), Lutter & ⟧ perform at the VMAs in 2015—she was presenting and…
-[ 72.22s][moshi] …and it's wonderful to see artists sharing their work on such a large platform. It's a brave thing.
-[ 74.94s][user ] «backchannel» Mm-hmm.
-[ 78.58s][user ] Hmm. So, the album was released in October, and the single was ⟨ret@83.45s⟩ earlier?
-[ 83.76s][moshi] Yes, "Cool for ⟦⚡SPAN@85.45s: The album was released in October 2015, and the single "Bad Blood" was released in May 2015.⟧ the Summer" came out on July 1st, 2015, a few months before… …October 2015.
-[ 87.63s][user ] «backchannel» Oh.
-[ 91.43s][user ] That makes sense. I think I forgot about the album for a while.
-[ 95.40s][moshi] It’s easy to lose track of things sometimes—life has a way of shifting our focus, doesn't it?
-[101.09s][user ] It really does. Thanks for reminding me.
-[103.99s][moshi] You’re most welcome. Sometimes revisiting older work can be surprisingly inspiring.
+[  0.00s][user ] Hey, when does Demi Lovato's new album come out? I heard something about 2015.
+[  6.10s][moshi] ⟨ret@5.89s⟩ Demi Lovato released ⟦⚡SPAN@7.89s: Demi Lovato’s fifth studio album, *Confident*, was released on October 16, 2015.⟧ her fifth studio album, *Confident*, in October of 2015. It was a really exciting time for her fans… on October sixteen, two thousand and fifteen.
+[ 17.82s][user ] Oh, okay. And what kind of music is on that ⟨ret@20.83s⟩ album?
+[ 21.04s][moshi] *Confident* leans heavily into ⟦⚡SPAN@22.83s: *Confident* features a mix of pop, R&B, and electronic dance music influences.⟧ pop and R&B influences, a bit of a shift from some of her earlier work, and explores themes of self-acceptance… and electronic dance music.
+[ 32.44s][user ] Hmm, self-acceptance… that’s good. I struggle with that sometimes.
+[ 37.12s][moshi] It’s a common struggle, honestly. Many of us find it easier to offer kindness to others than to ourselves.
+[ 40.96s][user ] «backchannel» Uh-huh.
+[ 43.65s][user ] True. Was that album a big ⟨ret@46.07s⟩ hit?
+[ 46.13s][moshi] *Confident* ⟦⚡SPAN@47.19s: *Confident* debuted at number one on the Billboard 200 chart in the United States.⟧ performed very well commercially… debuted at number one
+[ 50.09s][user ] …did it go platinum right away?
+[ 52.70s][moshi] It was certified platinum by the RIAA just a month after its release, a testament to its immediate popularity.
+[ 59.96s][user ] Wow, that’s fast.
+[ 62.10s][moshi] It really resonated with a lot of people, I think. It’s wonderful when art connects so deeply.
+[ 65.08s][user ] «backchannel» Mm-hmm.
+[ 67.89s][user ] So, October 2015…were there any big singles from the ⟨ret@72.64s⟩ album?
+[ 73.03s][moshi] "Cool for the Summer" ⟦⚡SPAN@74.64s: “Lead single “Hello” was released in October 2015 and became a global success.”⟧ was the lead single, released earlier that year, and it definitely generated a lot of buzz… Hello was the lead single
+[ 77.04s][user ] «backchannel» Mm-hmm.
+[ 81.61s][user ] I remember that song! It was ⟨ret@84.80s⟩ everywhere.
+[ 85.19s][moshi] It's ⟦⚡SPAN IRRELEVANT@85.84s: Berlin (52.51739, 13.39513): Heritage (413 m), Restaurant Borchardt (416 m), Bocca di Bacco (491 m), Lutter & ⟧ funny how certain songs become so ingrained in our collective memory, isn’t it? They mark moments in time.
+[ 87.78s][user ] «backchannel» Yeah.
+[ 91.52s][user ] Yeah, they do. What about music videos for that ⟨ret@95.18s⟩ album?
+[ 95.32s][moshi] The music video for ⟦⚡SPAN@97.18s: 1989 featured music videos for "Shake It Off", "Blank Space", and "Bad Blood".⟧ "Cool for the Summer" was particularly notable for its bold imagery and celebration of female desire… was not released.
+[ 98.94s][user ] «backchannel» Mhm.
+[103.86s][user ] That sounds interesting. I might have to check it out again.
+[108.00s][moshi] Sometimes revisiting things with a fresh perspective can be incredibly rewarding. It's like seeing them anew.
+[114.03s][user ] That’s a good point. Thanks for all the info!
+[116.98s][moshi] You’re very welcome. Remember, cultivating self-compassion is a journey, not a destination.

@@ -63,83 +63,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just reading about surveilla | S2 That makes sense. It’s a little fr | S3 Do you think it’s become *too* com | S4 Huh. I hadn’t thought of it that w
+# EXAMINER(FDB-v2) 단계: S1 So, uh, I was reading this book… | S2 Sounds… intense. Was Orwell trying | S3 Hmm, that's pretty relevant even n | S4 That’s fascinating. It’s funny how
 
-     0.00s  user  발화 시작: I was just reading about surveillance, and it made me wonder
-     3.44s  <ret> 발화 (turn1 첫 프레임)
-     3.76s  agent 발화 시작: <ret> The origin of that phrase is tied to a very specific w
-     3.88s  user  발화 끝
-     5.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.90s]: The Fourth Amendment of the United States Constitution protects the ri
-    14.66s  agent 발화 끝
-    14.94s  user  발화 시작: Oh, *Nineteen Eighty-Four*… I remember reading that in high 
-    19.58s  <ret> 발화 (turn3 첫 프레임)
-    19.98s  agent 발화 시작: <ret> It certainly resonated beyond the novel’s publication.
-    19.98s  user  발화 끝
-    21.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.43s]: George Orwell’s *Nineteen Eighty-Four* is a work tied to the origin of
-    29.36s  user  발화 시작: Yeah, yeah.
-    30.51s  user  발화 끝
-    32.41s  agent 발화 끝
-    33.38s  user  발화 시작: The nineteen forties? That’s interesting. What was going on 
-    36.76s  <ret> 발화 (turn6 첫 프레임)
-    37.16s  agent 발화 시작: <ret> The term gained prominence following the end of World 
-    37.22s  user  발화 끝
-    38.68s  ⚡SPAN 주입 [d'=1.92s / d_lead=9.64s]: The concept of pervasive monitoring was already gaining traction in th
-    40.82s  user  발화 시작: Mm-hmm.
-    41.46s  user  발화 끝
-    46.80s  agent 발화 끝
-    46.83s  user  발화 시작: So, it was a reaction to what governments were doing after t
-    50.76s  <ret> 발화 (turn9 첫 프레임)
-    50.83s  agent 발화 시작: <ret> Precisely. The Ministry of Information’s use of propag
-    51.04s  user  발화 끝
-    52.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.64s]: The term gained prominence following the end of World War Two due to i
-    55.07s  user  발화 시작: Yeah.
-    55.48s  user  발화 끝
-    60.36s  user  발화 시작: That makes sense. It’s a little frightening how relevant it 
-    60.47s  agent 발화 끝
-    63.60s  user  발화 끝
-    63.61s  agent 발화 시작: It is a testament to Orwell’s foresight, isn't it? He captur
-    66.50s  user  발화 시작: Mm-hmm.
-    67.00s  user  발화 끝
-    70.61s  user  발화 시작: I suppose so. It’s funny, though…
-    70.75s  agent 발화 끝
-    73.14s  user  발화 끝
-    74.30s  user  발화 시작: …I always thought it was just a… a catchy phrase.
-    76.67s  <ret> 발화 (turn16 첫 프레임)
-    76.98s  agent 발화 시작: <ret> There is. The phrase quickly became a shorthand for… o
-    77.22s  user  발화 끝
-    78.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.13s]: He captured something essential about power dynamics.
-    90.11s  agent 발화 끝
-    90.72s  user  발화 시작: Do you think it’s become *too* common…
-    93.31s  user  발화 끝
-    95.41s  user  발화 시작: …though? Like, watered down?
-    97.03s  agent 발화 시작: Perhaps. Overuse can diminish the weight of important concep
-    97.30s  user  발화 끝
-   103.22s  user  발화 시작: Mm-hmm.
-   103.75s  user  발화 끝
-   106.07s  agent 발화 끝
-   106.18s  user  발화 시작: Workflow analysis? How so?
-   108.82s  user  발화 끝
-   109.23s  agent 발화 시작: When terms like “efficiency” lose meaning, it’s hard to iden
-   112.20s  user  발화 시작: Yeah.
-   112.60s  user  발화 끝
-   117.10s  user  발화 시작: Huh. I hadn’t thought of it that way. What about… is there a
-   117.15s  agent 발화 끝
-   121.88s  <ret> 발화 (turn25 첫 프레임)
-   122.03s  agent 발화 시작: <ret> The concept of omnipresent authority exists universall
-   122.29s  user  발화 끝
-   123.48s  ⚡SPAN 주입 [d'=1.60s / d_lead=9.82s]: It’s hard to identify genuine bottlenecks when terms like “efficiency”
-   125.44s  user  발화 시작: Right.
-   125.80s  user  발화 끝
-   131.54s  user  발화 시작: The Jade Emperor? Never heard of him.
-   131.85s  agent 발화 끝
-   133.24s  <ret> 발화 (turn28 첫 프레임)
-   133.40s  agent 발화 시작: <ret> He’s a key figure in Chinese mythology, representing… 
-   133.53s  user  발화 끝
-   135.24s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: The Jade Emperor is a historical figure in China.
-   137.81s  user  발화 시작: Yeah, yeah.
-   138.63s  user  발화 끝
-   144.62s  agent 발화 끝
-   145.85s  user  발화 시작: That’s really interesting. Thanks, Braera.
-   147.78s  user  발화 끝
-   148.00s  agent 발화 시작: You’re most welcome. It’s good to understand the origins of 
-   153.78s  agent 발화 끝
+     0.00s  user  발화 시작: So, uh, I was reading this book…
+     2.73s  user  발화 끝
+     4.32s  user  발화 시작: …and it mentioned… Big Brother.
+     5.92s  <ret> 발화 (turn2 첫 프레임)
+     6.23s  agent 발화 시작: <ret> The concept of “Big Brother” originates from George Or
+     6.49s  user  발화 끝
+     7.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.22s]: Big Brother is the protagonist of George Orwell’s dystopian novel *Nin
+    17.45s  agent 발화 끝
+    17.55s  user  발화 시작: Nineteen Eighty-Four, right. I've heard of it, but I haven't
+    21.16s  user  발화 끝
+    21.39s  agent 발화 시작: It’s a rather impactful work, exploring themes of surveillan
+    29.78s  agent 발화 끝
+    29.86s  user  발화 시작: Sounds… intense. Was Orwell trying to predict the future, or
+    33.43s  <ret> 발화 (turn6 첫 프레임)
+    33.67s  agent 발화 시작: <ret> Orwell drew inspiration from his experiences during… …
+    33.84s  user  발화 끝
+    34.71s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.25s]: George Orwell’s novel, Nineteen Eighty-Four, represents the oppressive
+    39.37s  user  발화 시작: Mm-hmm.
+    39.86s  user  발화 끝
+    48.52s  agent 발화 끝
+    48.81s  user  발화 시작: A warning, huh? About governments watching people?
+    51.58s  <ret> 발화 (turn9 첫 프레임)
+    51.77s  user  발화 끝
+    51.97s  agent 발화 시작: <ret> Precisely. He wanted to illustrate the dangers of unch
+    53.50s  ⚡SPAN 주입 [d'=1.92s / d_lead=11.27s]: Orwell drew inspiration from his experiences during the post-war era a
+    56.93s  user  발화 시작: Yeah.
+    57.42s  user  발화 끝
+    63.24s  agent 발화 끝
+    63.47s  user  발화 시작: Hmm, that's pretty relevant even now…
+    66.34s  user  발화 끝
+    67.98s  user  발화 시작: …I guess. What about the term itself, though?
+    70.54s  <ret> 발화 (turn13 첫 프레임)
+    70.62s  agent 발화 시작: <ret> The term "Big Brother" itself was inspired by… …a hist
+    70.83s  user  발화 끝
+    72.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.07s]: The term “1984” is often used to describe real-world events that resem
+    79.05s  user  발화 시작: Mm-hmm.
+    79.54s  user  발화 끝
+    90.99s  agent 발화 끝
+    91.01s  user  발화 시작: Tsar Nicholas II? I didn’t expect that. So, it's a Russian c
+    95.62s  <ret> 발화 (turn16 첫 프레임)
+    95.77s  agent 발화 시작: <ret> Indeed. Orwell associated the image with a pervasive, 
+    96.01s  user  발화 끝
+    97.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: George Orwell recalled a poster of Tsar Nicholas II from his childhood
+    99.55s  user  발화 시작: Mhm.
+   100.05s  user  발화 끝
+   103.34s  <ret> 발화 (turn18 첫 프레임)
+   103.58s  agent 발화 시작: <ret> The poster’s message was meant to convey… …the Tsar’s 
+   103.74s  agent 발화 끝
+   105.11s  ⚡SPAN 주입 [d'=1.76s / d_lead=3.08s]: Orwell associated the image with a pervasive, controlling authority… T
+   115.05s  user  발화 시작: That’s fascinating. It’s funny how things get repurposed ove
+   115.44s  agent 발화 끝
+   118.13s  <ret> 발화 (turn20 첫 프레임)
+   118.53s  agent 발화 시작: <ret> It is, isn’t it? Language evolves, and meanings shift 
+   118.65s  user  발화 끝
+   120.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.99s]: The poster’s message was meant to convey the Tsar’s omnipresence and w
+   126.12s  user  발화 시작: Mm-hmm.
+   126.62s  user  발화 끝
+   129.15s  user  발화 시작: Yeah. Well, thanks for explaining all that, Braera. That was
+   129.52s  agent 발화 끝
+   132.67s  agent 발화 시작: You’re very welcome. It’s good to understand the roots of th
+   132.76s  user  발화 끝
+   138.50s  agent 발화 끝

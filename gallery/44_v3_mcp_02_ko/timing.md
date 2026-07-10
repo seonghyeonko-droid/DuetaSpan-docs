@@ -68,51 +68,93 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 확인해 줄래? weather.example. | S2 고마워. 음… 이번 주 토요일에 서울에서… | S3 음… 아침 일찍, 일곱시에서 여덟시 사이로 부탁해. | S4 일 이 삼 사 오 육 칠 팔? 알았어. 고마워.
+# EXAMINER(FDB-v2) 단계: S1 날씨 업데이트 좀 확인해 줄 수 있어? weather.exam | S2 아, 그렇구나. 그럼 내일 모레 부산 가는 기차표 예매 좀 해 | S3 고마워. | S4 열다섯시 삼십분 버스로 해 줘.
 
-     0.00s  user  발화 시작: 날씨 업데이트 좀 확인해 줄래? weather.example.com에서.
-     2.94s  <ret> 발화 (turn1 첫 프레임)
-     3.34s  agent 발화 시작: <ret> weather.example.com의 날씨 업데이트를 주시하고 있습니다… 잠시만 기다려 주세요… 
-     3.51s  user  발화 끝
-     4.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (no information found)
-     6.25s  user  발화 시작: 아.
-     7.07s  user  발화 끝
-     9.83s  agent 발화 끝
-    10.08s  user  발화 시작: 아, 잠깐만. 그건 됐어. 갑자기 친구한테 전화가 와서.
-    13.63s  user  발화 끝
-    13.90s  agent 발화 시작: 친구분과 통화하세요.
-    15.06s  user  발화 시작: 고마워. 음… 이번 주 토요일에 서울에서…
-    15.28s  agent 발화 끝
-    19.36s  user  발화 끝
-    20.87s  user  발화 시작: …부산 가는 기차표 예매해 줄 수 있어?
-    22.98s  <ret> 발화 (turn7 첫 프레임)
-    23.38s  agent 발화 시작: <ret> 이번 주 토요일 서울에서 부산 가는 기차표 예매를 진행하겠습니다… 몇 시쯤 출발하는 걸 원하세요?
-    23.45s  user  발화 끝
-    24.74s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.74s]: (no information found)
-    31.05s  user  발화 시작: 음… 아침 일찍, 일곱시에서 여덟시 사이로 부탁해.
-    31.12s  agent 발화 끝
-    34.77s  <ret> 발화 (turn9 첫 프레임)
-    34.93s  agent 발화 시작: <ret> 서울에서 부산 가는 기차표를 일곱시에서 여덟시 사이에 예매하고 있습니다… 찾을 수 없습니다.
-    35.03s  user  발화 끝
-    36.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: (no information found)
-    40.32s  <ret> 발화 (turn10 첫 프레임)
-    40.40s  agent 발화 시작: <ret> 일곱시 삼십분 KTX101 열차, 열시에 도착, 오만 구천팔백원입니다. 예매하시겠어요?
-    40.49s  agent 발화 끝
-    42.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: {"train_number": "KTX101", "departure_time": "07:30", "arrival_time": 
-    43.17s  user  발화 시작: 네.
-    43.62s  user  발화 끝
-    47.67s  agent 발화 끝
-    47.87s  user  발화 시작: 응, 예매해 줘.
-    48.83s  <ret> 발화 (turn13 첫 프레임)
-    49.23s  agent 발화 시작: <ret> KTX101 열차 예매를 완료했습니다… 예매번호는 일 이 삼 사 오 육 칠 팔입니다… 찾을 수 없
-    49.25s  user  발화 끝
-    50.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.78s]: (no information found)
-    51.90s  user  발화 시작: 네.
-    52.30s  user  발화 끝
-    56.89s  user  발화 시작: 일 이 삼 사 오 육 칠 팔? 알았어. 고마워.
-    57.01s  agent 발화 끝
-    60.02s  agent 발화 시작: 천만다행입니다. 즐거운 여행 되세요.
-    60.12s  user  발화 끝
-    62.69s  agent 발화 끝
-    63.15s  user  발화 시작: 좋은 하루 보내세요.
-    64.62s  user  발화 끝
+     0.00s  user  발화 시작: 날씨 업데이트 좀 확인해 줄 수 있어? weather.example.com에서.
+     3.44s  <ret> 발화 (turn1 첫 프레임)
+     3.84s  agent 발화 시작: <ret> weather.example.com의 날씨 업데이트를 주시하고 있습니다… 찾을 수 없습니다.
+     4.03s  user  발화 끝
+     5.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: (no information found)
+     6.19s  user  발화 시작: 음.
+     6.68s  user  발화 끝
+     8.70s  agent 발화 끝
+     8.96s  user  발화 시작: 흐으음…
+     9.42s  <ret> 발화 (turn4 첫 프레임)
+     9.46s  user  발화 끝
+     9.81s  agent 발화 시작: <ret> 현재 서울의 날씨는 맑고 기온은 이십사도입니다… 습도는 육십%입니다… 찾을 수 없습니다.
+    10.78s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.49s]: (no information found)
+    14.20s  user  발화 시작: 네.
+    14.64s  user  발화 끝
+    16.23s  <ret> 발화 (turn6 첫 프레임)
+    16.29s  agent 발화 끝
+    16.39s  agent 발화 시작: <ret> 오후에는 소나기가 올 가능성이 있습니다… 우산 챙기시는 게 좋겠습니다… 찾을 수 없습니다.
+    18.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (no information found)
+    19.42s  user  발화 시작: 네.
+    20.05s  user  발화 끝
+    21.81s  user  발화 시작: 그럼 오늘 저녁 일곱시에 소나기가 올 확률은 얼마나 돼?
+    22.04s  agent 발화 끝
+    25.70s  <ret> 발화 (turn9 첫 프레임)
+    25.78s  agent 발화 시작: <ret> weather.example.com에서 오늘 저녁 일곱시 소나기 확률을 확인해 보겠습니다… 찾을 
+    25.88s  user  발화 끝
+    27.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (tool result) 오후에는 소나기가 올 가능성이 있습니다.
+    31.08s  <ret> 발화 (turn10 첫 프레임)
+    31.48s  agent 발화 시작: <ret> 오늘 저녁 일곱시에 소나기가 올 확률은 팔십%입니다…
+    31.61s  agent 발화 끝
+    32.60s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.70s]: {"probability": "80%"}
+    33.25s  user  발화 시작: 와.
+    33.70s  user  발화 끝
+    35.17s  agent 발화 끝
+    36.92s  user  발화 시작: 아, 그렇구나. 그럼 내일 모레 부산 가는 기차표 예매 좀 해 줄 수 있어?
+    40.93s  <ret> 발화 (turn13 첫 프레임)
+    41.33s  agent 발화 시작: <ret> 내일 모레 부산행 기차표 예매를 시작합니다… 출발 시간은 언제로 하시겠어요?… 출발 시간은 언제로
+    41.36s  user  발화 끝
+    42.21s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.58s]: (tool result) 부산행 기차표 예매를 도와드릴 수 있습니다.
+    47.91s  agent 발화 끝
+    48.21s  user  발화 시작: 음… 오후 세시로 해 줘.
+    50.91s  <ret> 발화 (turn15 첫 프레임)
+    51.12s  user  발화 끝
+    51.23s  agent 발화 시작: <ret> 부산행 오후 세시 기차표 예매가 완료되었습니다… 확인 번호는 AX9273입니다.
+    52.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: {"confirmation_number": "AX9273"}
+    54.12s  user  발화 시작: 네네.
+    54.94s  user  발화 끝
+    57.53s  agent 발화 끝
+    57.69s  user  발화 시작: 고마워.
+    58.23s  <ret> 발화 (turn18 첫 프레임)
+    58.51s  user  발화 끝
+    58.63s  agent 발화 시작: <ret> 천만에요. 혹시 좌석 등급을 지정하시겠어요?… 일반실 또는 특실
+    59.03s  ⚡SPAN 주입 [d'=0.80s / d_lead=4.63s]: 부산행 오후 세시 기차표 예매가 완료되었습니다… 확인 번호는 AX9273입니다.
+    60.46s  user  발화 시작: 네.
+    60.95s  user  발화 끝
+    63.26s  agent 발화 끝
+    64.97s  user  발화 시작: 아니, 그냥 제일 싼 걸로 해 줘.
+    67.64s  <ret> 발화 (turn21 첫 프레임)
+    67.80s  agent 발화 시작: <ret> 좌석 등급을 일반석으로 변경했습니다… 십이A석으로 배정되었습니다.
+    67.92s  user  발화 끝
+    69.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.14s]: {"status": "confirmed", "seat": "12A"}
+    70.39s  user  발화 시작: 네.
+    70.89s  user  발화 끝
+    72.94s  agent 발화 끝
+    73.60s  user  발화 시작: 좋아. 그럼 그 기차역까지 가는 버스 시간표 좀 알려 줄래? 지금 내 위치 기준으로.
+    78.43s  <ret> 발화 (turn24 첫 프레임)
+    78.73s  agent 발화 시작: <ret> 현재 위치에서 부산역까지 가는 버스 시간표를 확인해 보겠습니다… 찾을 수 없습니다.
+    78.87s  user  발화 끝
+    80.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.50s]: (no information found)
+    84.24s  agent 발화 끝
+    84.28s  <ret> 발화 (turn25 첫 프레임)
+    84.36s  agent 발화 시작: <ret> 열네시, 열다섯시 삼십분, 열일곱시에 버스가 있습니다… 어느 버스를 타시겠어요?
+    86.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: {"bus_times": ["14:00", "15:30", "17:00"]}
+    87.29s  user  발화 시작: 네.
+    87.69s  user  발화 끝
+    89.87s  agent 발화 끝
+    89.94s  user  발화 시작: 열다섯시 삼십분 버스로 해 줘.
+    91.77s  <ret> 발화 (turn28 첫 프레임)
+    92.01s  agent 발화 시작: <ret> 열다섯시 삼십분 버스 노선은 백이십삼번이고, 예상 소요 시간은 육십분입니다…
+    92.10s  user  발화 끝
+    93.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: {"route": "123", "estimated_time": "60 minutes"}
+    98.21s  agent 발화 끝
+    98.27s  user  발화 시작: 알았어. 고마워.
+    99.09s  <ret> 발화 (turn30 첫 프레임)
+    99.41s  agent 발화 시작: <ret> 즐거운 여행 되세요… 알 수 없습니다.
+    99.64s  user  발화 끝
+   100.45s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.72s]: (no information found)
+   102.13s  agent 발화 끝

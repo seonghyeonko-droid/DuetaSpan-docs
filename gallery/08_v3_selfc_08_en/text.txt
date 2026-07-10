@@ -56,53 +56,62 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.60s⟩ tenth.
-[  4.99s][moshi] Let me find buses from ⟦⚡SPAN@6.60s: (no information found)⟧ Chicago to Denver for three passengers on… May tenth, I could not be found.
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May tenth", "passengers": "3"}}
-[  7.27s][user ] «backchannel» Yeah.
-[ 10.80s][user ] Actually, make that May ⟨ret@12.77s⟩ eleventh.
-[ 13.00s][moshi] There is one bus, ⟦⚡SPAN@14.77s: [{"bus_number": "42", "departure_time": "8:00 AM", "arrival_time": "10:00 PM", "price": 150.00}]⟧ number 42, departing at 8:00 AM and arriving at 10:00 PM, costing…
-      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "date": "May eleventh", "passengers": "3"}}
-[ 19.49s][user ] One-fifty sounds reasonable. Can you book it?
-[ 23.04s][moshi] ⟨ret@22.89s⟩ I have booked bus ⟦⚡SPAN@24.89s: [{"confirmation_number": "AX927", "status": "confirmed"}]⟧ number 42 for three passengers; your confirmation number is…
-      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_number": "42", "passengers": "3"}}
-[ 28.21s][user ] AX927. Got it. Do they have Wi-Fi on ⟨ret@32.99s⟩ board?
-[ 33.38s][moshi] ⟦⚡SPAN@33.49s: [{"amenities": ["Wi-Fi", "power outlets", "restroom"]}]⟧ Bus number 42 does offer Wi-Fi, as well as power outlets and a…
-      CALL: {"function": "Buses_3_GetBusAmenities", "arguments": {"bus_number": "42"}}
-[ 36.01s][user ] «backchannel» Really?
-[ 37.61s][user ] That’s good to know. What about legroom?
-[ 41.01s][moshi] Legroom can vary, but generally, longer routes offer more space. It’s a consideration…
-[ 46.62s][user ] Is there a way to see a seat map before booking?
-[ 49.90s][moshi] Unfortunately, seat maps aren't currently available for this particular bus line. However…
-[ 54.98s][user ] Oh, that’s too bad. What’s the refund policy, just in ⟨ret@58.57s⟩ case?
-[ 58.75s][moshi] You'll receive a full refund ⟦⚡SPAN@60.33s: [{"policy": "Full refund if canceled 24 hours before departure."}]⟧ if you cancel your booking at least 24 hours before…
-      CALL: {"function": "Buses_3_GetRefundPolicy", "arguments": {"confirmation_number": "AX927"}}
-[ 61.74s][user ] «backchannel» Okay.
-[ 63.90s][user ] Twenty-four hours. Okay. And where does that bus actually depart from in ⟨ret@70.17s⟩ Chicago?
-[ 70.58s][moshi] Bus ⟦⚡SPAN@71.38s: [{"location": "Union Station, 225 South Canal Street"}]⟧ number 42 departs from Union Station, located at 225 South Canal…
-      CALL: {"function": "Buses_3_GetDepartureLocation", "arguments": {"bus_number": "42"}}
-[ 73.14s][user ] «backchannel» Uh-huh.
-[ 75.89s][user ] Union Station. Right. Is there parking ⟨ret@79.63s⟩ there?
-[ 79.84s][moshi] Yes, parking ⟦⚡SPAN@80.91s: [{"parking_available": "Yes", "hourly_rate": "25.00"}]⟧ is available at Union Station, at a rate of twenty-five…
-      CALL: {"function": "Buses_3_CheckParking", "arguments": {"location": "Union Station"}}
-[ 81.94s][user ] «backchannel» Yeah.
-[ 85.11s][user ] Twenty-five dollars an hour? That’s steep!
-[ 87.96s][moshi] Parking in central areas often carries higher rates, I find. It is a common…
-[ 92.14s][user ] Is there any cheaper parking ⟨ret@94.36s⟩ nearby?
-[ 94.50s][moshi] LAZ Parking is ⟦⚡SPAN@96.36s: [{"parking_name": "LAZ Parking", "distance": "0.5 miles", "hourly_rate": "15.00"}]⟧ 0.5 miles away, offering parking at fifteen dollars…
-      CALL: {"function": "Buses_3_FindNearbyParking", "arguments": {"location": "Union Station, Chicago"}}
-[ 96.85s][user ] «backchannel» Yeah.
-[100.25s][user ] Fifteen is much better. Can you give me directions to ⟨ret@104.03s⟩ that parking?
-[104.34s][moshi] Head west on Canal Street, ⟦⚡SPAN@106.03s: [{"directions": "Head west on Canal Street, turn right onto Harrison Street, LAZ Parking will be on your left.⟧ then turn right onto Harrison Street; LAZ Parking will be…
-      CALL: {"function": "Navigation_1_GetDirections", "arguments": {"origin": "Union Station, Chicago", "destination": "LAZ Parking"}}
-[109.14s][user ] Okay, that sounds straightforward.
-[111.74s][moshi] It’s good to have a clear plan, especially when traveling. Knowing the route can…
-[113.78s][user ] «backchannel» Yeah.
-[115.76s][user ] Actually, wait a second—
-[117.17s][user ] …what’s the weather like in Denver on the eleventh? I should probably pack ⟨ret@122.14s⟩ accordingly.
-[122.45s][moshi] The forecast for Denver on ⟦⚡SPAN@124.14s: [{"temperature": "65°F", "condition": "Sunny"}]⟧ May eleventh is sunny, with a temperature of sixty-five…
-      CALL: {"function": "Weather_1_GetForecast", "arguments": {"city": "Denver", "date": "May eleventh"}}
-[126.56s][user ] Sunny and sixty-five. Perfect!
-[129.13s][moshi] That sounds quite pleasant. A comfortable temperature is often helpful for…
-[133.94s][user ] I think I’m all set then. Thanks for your help.
-[137.23s][moshi] You’re very welcome. I’m glad I could assist you with your travel arrangements.
+[  0.00s][user ] Show me buses from Chicago to Denver for three passengers on May ⟨ret@4.65s⟩ tenth.
+[  5.02s][moshi] Let me see what buses ⟦⚡SPAN@6.65s: (no information found)⟧ are available from Chicago to Denver… …but I could not be found.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May tenth"}}
+[  6.97s][user ] «backchannel» Yeah.
+[ 10.01s][user ] Actually, make that May ⟨ret@12.17s⟩ eleventh.
+[ 12.40s][moshi] There’s a bus departing ⟦⚡SPAN@14.17s: [{"bus_id": "789", "departure_time": "08:00", "arrival_time": "16:00", "price": 150.00}]⟧ at 8:00 AM, arriving at 4:00 PM, for $150.00.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May eleventh"}}
+[ 18.63s][user ] Hmm, are there any earlier options?
+[ 21.27s][moshi] ⟨ret@21.14s⟩ Yes, there is one ⟦⚡SPAN@23.14s: [{"bus_id": "123", "departure_time": "06:00", "arrival_time": "14:00", "price": 135.00}]⟧ departing at 6:00 AM, arriving at 2:00 PM, for $135.00.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"origin": "Chicago", "destination": "Denver", "num_passengers": 3, "date": "May eleventh", "earlier": true}}
+[ 27.49s][user ] That sounds better. Can you reserve three seats on that ⟨ret@31.08s⟩ one?
+[ 31.47s][moshi] ⟦⚡SPAN@31.58s: [{"confirmation_number": "ABC456"}]⟧ I have reserved three seats for you, confirmation number ABC456.
+      CALL: {"function": "Buses_3_ReserveSeats", "arguments": {"bus_id": "123", "num_seats": 3}}
+[ 34.29s][user ] «backchannel» Really?
+[ 35.98s][user ] Great. And can you remind me the day ⟨ret@38.82s⟩ before?
+[ 39.22s][moshi] I’ve set a reminder for ⟦⚡SPAN@40.82s: [{"reminder_id": "REM789"}]⟧ May tenth, reminding you about your bus to Denver.
+      CALL: {"function": "Reminders_1_CreateReminder", "arguments": {"reminder_text": "Bus to Denver departs tomorrow", "reminder_date": "May tenth"}}
+[ 43.45s][user ] Perfect. Is there anything I should pack specifically for that trip?
+[ 47.53s][moshi] For a long bus journey, comfort is key—a good book or music can really help.
+[ 52.34s][user ] I suppose. What's the weather like in Denver on the ⟨ret@56.18s⟩ eleventh?
+[ 56.58s][moshi] The forecast ⟦⚡SPAN@57.38s: [{"temperature": "75", "condition": "Sunny"}]⟧ for Denver on May eleventh is sunny, with a temperature of 75 degrees.
+      CALL: {"function": "Weather_1_GetWeather", "arguments": {"location": "Denver", "date": "May eleventh"}}
+[ 60.03s][user ] «backchannel» Okay.
+[ 62.30s][user ] That sounds lovely. I should probably get a new sun hat then.
+[ 66.54s][moshi] A good sun hat is always a wise investment, especially with prolonged sun exposure.
+[ 69.64s][user ] «backchannel» Right.
+[ 71.52s][user ] Do you think I should bring a sweater, even if it’s sunny?
+[ 74.62s][moshi] Evenings in Denver can sometimes cool down, so a light sweater would be a prudent addition.
+[ 76.86s][user ] «backchannel» Yeah.
+[ 80.14s][user ] Good point. Okay, one more thing.
+[ 82.52s][moshi] What else is on your mind?
+[ 83.06s][user ] «backchannel» Yeah, totally.
+[ 84.04s][user ] Can you find me a good coffee shop near Denver Union ⟨ret@87.69s⟩ Station?
+[ 88.09s][moshi] Pigtrain Coffee Co. ⟦⚡SPAN@89.69s: [{"name": "Pigtrain Coffee Co.", "address": "1615 Wynkoop St", "rating": 4.5}]⟧ is nearby, at 1615 Wynkoop Street, with a 4.5-star rating.
+      CALL: {"function": "Places_1_FindPlaces", "arguments": {"query": "coffee shop", "near": "Denver Union Station"}}
+[ 95.12s][user ] That sounds perfect! Are they open ⟨ret@98.38s⟩ early?
+[ 98.53s][moshi] They open at 6:00 AM ⟦⚡SPAN@100.14s: [{"opening_time": "06:00", "closing_time": "18:00"}]⟧ and close at 6:00 PM.
+      CALL: {"function": "Places_1_GetHours", "arguments": {"place_name": "Pigtrain Coffee Co."}}
+[ 99.69s][user ] «backchannel» Really?
+[102.18s][user ] Wonderful. I think that covers everything for now.
+[105.49s][moshi] It sounds like you’ve made excellent preparations for your trip.
+[107.83s][user ] «backchannel» Yeah, yeah.
+[108.63s][user ] Actually.
+[109.50s][moshi] Yes?
+[110.85s][user ] …do they have wifi at the coffee shop?
+[113.66s][moshi] ⟨ret@113.59s⟩ Yes, Pigtrain Coffee ⟦⚡SPAN@115.03s: [{"has_wifi": true}]⟧ Co. does offer wifi.
+      CALL: {"function": "Places_1_GetAmenities", "arguments": {"place_name": "Pigtrain Coffee Co.", "amenity": "wifi"}}
+[117.00s][user ] That’s a relief. Okay, *now* I think I’m set.
+[120.74s][moshi] I'm glad to hear it. It seems like a very pleasant journey awaits you.
+[124.40s][user ] Thanks, Oruus. You’ve been a big help.
+[126.34s][moshi] You are most welcome. Taking the time to plan carefully often reduces travel stress.
+[128.31s][user ] «backchannel» Yeah.
+[132.64s][user ] I agree. I feel much more relaxed now.
+[136.13s][moshi] Relaxation is a wonderful state to cultivate, both before and during your travels.
+[141.29s][user ] Definitely. I think I’ll go start packing.
+[143.96s][moshi] A proactive approach is always beneficial—enjoy the process of preparation.
+[146.70s][user ] «backchannel» Yeah.
+[149.58s][user ] I will. Thanks again.
+[151.32s][moshi] Safe travels, and may your journey be filled with peaceful moments.

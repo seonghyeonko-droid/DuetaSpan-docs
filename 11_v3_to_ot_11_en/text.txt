@@ -69,15 +69,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hey, do you know when the A's were last no-hit? It feels like ⟨ret@4.13s⟩ ages ago…
-[  4.51s][moshi] The last time ⟦⚡SPAN@6.13s: The last time the Oakland Athletics were no-hit was May 9, 2023, when Dallas Keuchel of the Texas Rangers pitc⟧ the A's were no-hit was… April twenty-first, two thousand eighteen, against the Angels… May ninth, two thousand twenty-three, against the Rangers.
-[ 15.43s][user ] Wow, really? That *was* a long…
-[ 20.32s][user ] …time ago. Uhhh… my sister just texted.
-[ 23.74s][user ] «to_other» She says she's bringing pizza over later.
-[ 25.99s][user ] Sorry, where were we? Right, the A’s.
-[ 28.34s][moshi] ⟨ret@28.11s⟩ We were discussing that ⟦⚡SPAN@30.11s: [April 21, 2018, the Los Angeles Angels pitched a combined no-hitter against the Oakland Athletics, winning 4-⟧ game. It can be surprisingly unsettling to watch a team struggle like that.
-[ 30.54s][user ] «backchannel» Right.
-[ 35.28s][user ] Yeah, it is. Do you have any tips for dealing with frustration, generally?
-[ 39.21s][moshi] Sometimes a simple breathing exercise can help center you. Focusing on your breath is grounding.
-[ 44.58s][user ] «backchannel» Okay.
-[ 46.16s][moshi] A regular sleep schedule also contributes to emotional resilience, which is vital for handling daily stress.
+[  0.00s][user ] Hey, uh, do you know when the A's were last no-hit? It feels like ⟨ret@4.79s⟩ ages ago…
+[  5.18s][moshi] The last time ⟦⚡SPAN@6.79s: The last time the Oakland Athletics were no-hit was May 9, 2023, when Dallas Keuchel of the Texas Rangers pitc⟧ the A's were no-hit was… …April twenty-first, two thousand eighteen, by Sean Manaea of the Red Sox. Quite a game for Boston, I imagine… May ninth, two thousand twenty-three, when Dallas Keuchel of the Texas Rangers pitched a seven-to-zero no-hitter against them.
+[ 23.61s][user ] «to_other» Oh, seriously? Did you bring the mail in?
+[ 26.30s][user ] Wow, that *was* a while ago. Hmm. What about the ⟨ret@30.98s⟩ Mariners?
+[ 31.21s][moshi] The last time ⟦⚡SPAN@32.98s: The Seattle Mariners were last no-hit on June 21, 2023, by Domingo Germán of the New York Yankees.⟧ the Mariners were no-hit was… …June eighth, two thousand twenty-three, by Reid Detmers of the Angels. It’s interesting how those streaks can vary between teams… June twenty-first, two thousand twenty-three, by Domingo Germán of the New York Yankees.
+[ 50.37s][user ] That’s recent! Okay, one more – the Dodgers?
+[ 53.91s][moshi] ⟨ret@53.84s⟩ The last time ⟦⚡SPAN@55.84s: The last time the Dodgers were no-hit was August 31, 2023, by Taijuan Walker of the Philadelphia Phillies.⟧ the Dodgers were no-hit was… …September sixteenth, two thousand twenty-two, by Tyler Beede of the Giants… August thirty-first, two thousand twenty-three, by Taijuan Walker of the Philadelphia Phillies.

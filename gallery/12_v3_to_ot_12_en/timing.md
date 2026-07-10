@@ -58,29 +58,27 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Jal, do you know who played th | S2 …go on, Jal. I’m listening. | S3 Wow, that’s rough. He didn't get p | S4 That's true. Thanks, Jal. I feel a
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, who did the guitar solo o | S2 …wait, hold on a sec. Sorry about  | S3 Wow, I didn’t know that! He’s incr | S4 I can imagine! That’s a really fas
 
-     0.00s  user  발화 시작: Hey Jal, do you know who played the guitar solo on Michael J
-     4.67s  <ret> 발화 (turn1 첫 프레임)
-     4.90s  agent 발화 시작: <ret> The guitar solo on “Beat It” was played by… Eddie Van 
-     5.09s  user  발화 끝
-     6.18s  user  발화 시작: Okay.
-     6.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.38s]: Eddie Van Halen played the guitar solo on Michael Jackson’s “Beat It”.
-     6.80s  user  발화 끝
-     8.21s  user  발화 시작: Oh, remind me to pick up milk later.
-     8.28s  agent 발화 끝
-    10.59s  user  발화 시작: …go on, Jal. I’m listening.
-    10.61s  user  발화 끝
-    12.36s  <ret> 발화 (turn5 첫 프레임)
-    12.75s  agent 발화 시작: <ret> Eddie Van Halen performed that solo, though he didn’t 
-    12.85s  user  발화 끝
-    14.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.40s]: [Eddie Van Halen performed the iconic guitar solo on Michael Jackson's
-    19.14s  agent 발화 끝
-    20.17s  user  발화 시작: Wow, that’s rough. He didn't get paid for that?
-    23.22s  user  발화 끝
-    23.39s  agent 발화 시작: It’s unfortunately not uncommon for artists to face those ki
-    31.40s  agent 발화 끝
-    31.97s  user  발화 시작: That's true. Thanks, Jal. I feel a bit calmer knowing the st
-    36.27s  user  발화 끝
-    36.45s  agent 발화 시작: You’re very welcome. Sometimes just understanding the backgr
-    42.01s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, uh, who did the guitar solo on Michael Jackson's "Beat 
+     5.22s  <ret> 발화 (turn1 첫 프레임)
+     5.45s  agent 발화 시작: <ret> The guitar solo on "Beat It" was performed by… Eddie V
+     5.65s  user  발화 끝
+     6.89s  user  발화 시작: Okay.
+     7.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.75s]: Eddie Van Halen performed the guitar solo on Michael Jackson's "Beat I
+     7.67s  user  발화 끝
+     9.20s  user  발화 시작: Honey, did you take out the trash yet?
+     9.20s  agent 발화 끝
+    11.29s  user  발화 시작: …wait, hold on a sec. Sorry about that. You were saying?
+    11.41s  user  발화 끝
+    15.12s  <ret> 발화 (turn5 첫 프레임)
+    15.51s  agent 발화 시작: <ret> …Eddie Van Halen, back in nineteen eighty-two. It was 
+    15.59s  user  발화 끝
+    17.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.38s]: [Eddie Van Halen performed the guitar solo on Michael Jackson’s “Beat 
+    20.89s  agent 발화 끝
+    21.87s  user  발화 시작: Wow, I didn’t know that! He’s incredible. Was it a difficult
+    27.42s  user  발화 끝
+    27.52s  agent 발화 시작: It’s considered quite technically demanding, yes. Eddie Van 
+    33.22s  agent 발화 끝
+    33.84s  user  발화 시작: I can imagine! That’s a really fast part. Thanks, Jal, that'
+    39.95s  user  발화 끝

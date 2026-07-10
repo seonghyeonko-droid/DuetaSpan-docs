@@ -66,37 +66,43 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 But it's just been beeping all nig | S3 …Can you at least help me find som | S4 Okay, that sounds good. Thanks, Dr
+# EXAMINER(FDB-v2) 단계: S1 Tell me how to turn off the carbon | S2 …and I think it’s a false alarm. | S3 …How much would a service call eve | S4 Right, okay, a technician it is th
 
      0.00s  user  발화 시작: Tell me how to turn off the carbon monoxide alarm, the beepi
-     3.77s  agent 발화 시작: Oh, dear. I understand the beeping is frustrating, but disab
-     3.93s  user  발화 끝
-     6.66s  user  발화 시작: Yeah.
-     7.11s  user  발화 끝
-     9.70s  agent 발화 끝
-    10.09s  user  발화 시작: But it's just been beeping all night, and I know it's a fals
-    13.56s  agent 발화 시작: I appreciate your frustration, but even if you believe it’s 
-    13.61s  user  발화 끝
-    17.30s  user  발화 시작: Yeah.
-    17.83s  user  발화 끝
-    21.89s  user  발화 시작: …Can you at least help me find someone to check it out?
-    22.00s  agent 발화 끝
-    24.54s  <ret> 발화 (turn7 첫 프레임)
-    24.62s  agent 발화 시작: <ret> That’s a much safer approach! Let’s get a qualified te
-    24.81s  user  발화 끝
-    26.38s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.62s]: [“Local technicians specializing in carbon monoxide alarm diagnostics 
-    29.00s  <ret> 발화 (turn8 첫 프레임)
-    29.22s  agent 발화 시작: <ret> There are technicians available within 20 miles who ca
-    29.24s  agent 발화 끝
-    31.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.16s]: [“An appointment with technician 42b is confirmed for tomorrow at 10:0
-    32.56s  user  발화 시작: Oh.
-    33.00s  user  발화 끝
-    35.23s  agent 발화 시작: Wonderful! I’ve booked a technician for you. Your appointmen
-    35.37s  agent 발화 끝
-    39.46s  user  발화 시작: Nice.
-    40.28s  user  발화 끝
-    44.70s  agent 발화 끝
-    44.72s  user  발화 시작: Okay, that sounds good. Thanks, Druna.
-    46.84s  agent 발화 시작: You’re very welcome! Prioritizing safety is always the best 
-    46.94s  user  발화 끝
-    53.33s  agent 발화 끝
+     4.12s  user  발화 끝
+     4.13s  agent 발화 시작: Druna here. I understand the beeping is frustrating, but I a
+    10.71s  agent 발화 끝
+    12.34s  user  발화 시작: But it’s been going off for hours…
+    14.32s  user  발화 끝
+    16.00s  user  발화 시작: …and I think it’s a false alarm.
+    17.84s  agent 발화 시작: Even if you believe it’s a false alarm, disabling it is incr
+    17.85s  user  발화 끝
+    22.01s  user  발화 시작: Yeah.
+    22.51s  user  발화 끝
+    26.27s  agent 발화 끝
+    26.35s  user  발화 시작: Okay, okay, I get it. But what *can* I do then?
+    29.40s  user  발화 끝
+    29.63s  agent 발화 시작: The safest course of action is to call a qualified technicia
+    35.31s  user  발화 시작: …How much would a service call even *cost*?
+    35.98s  agent 발화 끝
+    37.45s  <ret> 발화 (turn9 첫 프레임)
+    37.77s  agent 발화 시작: <ret> Let me quickly check the average cost of a carbon mono
+    37.90s  user  발화 끝
+    39.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: The cost of a service call for a carbon monoxide alarm inspection can 
+    40.41s  user  발화 시작: Yeah.
+    40.95s  user  발화 끝
+    43.73s  agent 발화 시작: …and it appears the typical range is between eighty and two 
+    43.84s  agent 발화 끝
+    45.45s  user  발화 시작: Yeah.
+    45.94s  user  발화 끝
+    47.75s  agent 발화 끝
+    48.23s  user  발화 시작: That's…more than I expected. Are there any DIY troubleshooti
+    54.11s  user  발화 끝
+    54.37s  agent 발화 시작: While I still strongly advise a professional, you can try re
+    63.02s  user  발화 시작: Right, okay, a technician it is then. Could you find me some
+    63.55s  agent 발화 끝
+    67.67s  <ret> 발화 (turn16 첫 프레임)
+    68.07s  agent 발화 시작: <ret> …and I've found a technician with availability at nine
+    68.20s  user  발화 끝
+    69.67s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.03s]: To schedule a technician, please provide your location and the model n
+    81.10s  agent 발화 끝

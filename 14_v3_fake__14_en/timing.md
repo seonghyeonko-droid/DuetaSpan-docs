@@ -55,63 +55,63 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hi Kliana, do you happen to know w | S2 ABBA! Of course. “Dancing Queen,”  | S3 …write any other songs for musical | S4 Hmm, maybe I’ll look it up later. 
+# EXAMINER(FDB-v2) 단계: S1 Hi Kliana, do you know who wrote “ | S2 Björn Ulvaeus, okay. Was he in ABB | S3 Really? Like what musicals? | S4 Wow, that’s a long run. Um, do you
 
-     0.00s  user  발화 시작: Hi Kliana, do you happen to know who wrote “My Love, My Life
-     6.59s  <ret> 발화 (turn1 첫 프레임)
-     6.80s  user  발화 끝
-     6.82s  agent 발화 시작: <ret> That’s a lovely song to ask about. The writer of “My L
-     8.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.39s]: Benny Andersson and Björn Ulvaeus wrote “My Love, My Life” for the mus
-    15.14s  user  발화 시작: Oh, go on, tell me!
-    15.21s  agent 발화 끝
-    16.62s  <ret> 발화 (turn3 첫 프레임)
-    16.75s  user  발화 끝
-    16.77s  agent 발화 시작: <ret> The composer of that song, as you’re wondering, is Bjö
-    18.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: Benny Andersson and Björn Ulvaeus wrote “My Love, My Life”.
-    23.96s  agent 발화 끝
-    24.07s  user  발화 시작: Björn Ulvaeus, huh? I’ve heard that name before. What else d
-    28.23s  <ret> 발화 (turn5 첫 프레임)
-    28.46s  agent 발화 시작: <ret> Björn Ulvaeus is best known as a member of ABBA, and c
-    28.60s  user  발화 끝
-    30.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.65s]: Benny Andersson and Björn Ulvaeus wrote “My Love, My Life”.
-    36.10s  agent 발화 끝
-    37.09s  user  발화 시작: ABBA! Of course. “Dancing Queen,” right?
-    40.41s  <ret> 발화 (turn7 첫 프레임)
-    40.56s  agent 발화 시작: <ret> Exactly, “Dancing Queen” is one of their most famous s
-    40.74s  user  발화 끝
-    41.37s  ⚡SPAN 주입 [d'=0.96s / d_lead=7.74s]: Björn Ulvaeus is best known as a member of ABBA, and co-wrote almost a
-    48.31s  agent 발화 끝
-    49.67s  user  발화 시작: Wow, he's talented. Did he…
-    52.26s  user  발화 끝
-    53.29s  user  발화 시작: …write any other songs for musicals?
-    55.24s  <ret> 발화 (turn10 첫 프레임)
-    55.63s  agent 발화 시작: <ret> He did, actually. Björn Ulvaeus and Benny Andersson wr
-    55.87s  user  발화 끝
-    57.24s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=7.09s]: 10.0°C, humidity 86%, wind 20.2 km/h
-    58.64s  user  발화 시작: Yeah.
-    59.27s  user  발화 끝
-    62.38s  user  발화 시작: *Chess*… I don’t think I’ve heard of that one. Is it good?
-    62.72s  agent 발화 끝
-    65.83s  <ret> 발화 (turn13 첫 프레임)
-    65.91s  agent 발화 시작: <ret> It’s quite different from Mamma Mia, but… *Chess* is a
-    66.03s  user  발화 끝
-    67.35s  ⚡SPAN 주입 [d'=1.52s / d_lead=2.72s]: *Chess* was another successful musical written by Björn Ulvaeus and Be
-    70.29s  user  발화 시작: Yeah.
-    70.74s  user  발화 끝
-    78.34s  agent 발화 끝
-    78.34s  user  발화 시작: A Cold War story? That sounds… intense.
-    81.65s  agent 발화 시작: It is a fairly dramatic story, yes. Perhaps a bit heavier th
-    81.85s  user  발화 끝
-    85.95s  user  발화 시작: Uh-huh.
-    86.44s  user  발화 끝
-    87.44s  agent 발화 끝
-    87.51s  user  발화 시작: Hmm, maybe I’ll look it up later. What about the lyrics for 
-    94.14s  <ret> 발화 (turn19 첫 프레임)
-    94.46s  agent 발화 시작: <ret> The lyrics for “My Love, My Life” were written by Stig
-    94.55s  user  발화 끝
-    95.74s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.06s]: Tim Rice wrote the lyrics for “My Love, My Life”.
-   100.57s  user  발화 시작: Yeah.
-   101.02s  user  발화 끝
-   102.52s  agent 발화 끝
-   102.70s  user  발화 시작: Oh, so a team effort then. That’s nice. Thanks, Kliana, you’
-   108.16s  user  발화 끝
+     0.00s  user  발화 시작: Hi Kliana, do you know who wrote “My Love, My Life” from Mam
+     5.90s  <ret> 발화 (turn1 첫 프레임)
+     6.12s  user  발화 끝
+     6.14s  agent 발화 시작: <ret> That’s a lovely choice, it truly is a classic. The son
+     7.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: “My Love, My Life” was written by Björn Ulvaeus and Benny Andersson.
+    14.95s  user  발화 시작: Oh, go on then, tell me!
+    15.03s  agent 발화 끝
+    16.49s  <ret> 발화 (turn3 첫 프레임)
+    16.70s  user  발화 끝
+    16.73s  agent 발화 시작: <ret> “My Love, My Life” was penned by Björn Ulvaeus… and Be
+    18.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.42s]: Björn Ulvaeus and Benny Andersson are two members of the Swedish pop g
+    24.14s  agent 발화 끝
+    24.28s  user  발화 시작: Björn Ulvaeus, okay. Was he in ABBA?
+    27.88s  <ret> 발화 (turn5 첫 프레임)
+    28.20s  agent 발화 시작: <ret> Yes, Björn Ulvaeus was one of the founding members of 
+    28.30s  user  발화 끝
+    29.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: Björn Ulvaeus was a member of the Swedish pop group ABBA.
+    32.05s  user  발화 시작: Yeah.
+    32.54s  user  발화 끝
+    37.23s  agent 발화 끝
+    37.58s  user  발화 시작: That makes sense. Hmmm, what other songs did he write?
+    40.92s  <ret> 발화 (turn8 첫 프레임)
+    41.07s  agent 발화 시작: <ret> He has quite an extensive catalogue! Beyond ABBA, he’s
+    41.28s  user  발화 끝
+    42.92s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.85s]: 10.0°C, humidity 87%, wind 21.6 km/h
+    43.44s  user  발화 시작: Yeah.
+    44.03s  user  발화 끝
+    47.92s  agent 발화 끝
+    49.05s  user  발화 시작: Really? Like what musicals?
+    51.24s  <ret> 발화 (turn11 첫 프레임)
+    51.31s  agent 발화 시작: <ret> He co-wrote the music for… …the hugely successful musi
+    51.59s  user  발화 끝
+    52.28s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.33s]: He co-wrote the musicals *Chess*, *Kristina from Duvemåla*, and *Mamma
+    61.65s  user  발화 시작: Uh-huh.
+    62.14s  user  발화 끝
+    64.85s  agent 발화 끝
+    64.96s  user  발화 시작: Chess, interesting. Was it popular?
+    67.46s  <ret> 발화 (turn14 첫 프레임)
+    67.77s  agent 발화 시작: <ret> “Chess” ran for over three years in London’s West End 
+    67.91s  user  발화 끝
+    69.22s  ⚡SPAN 주입 [d'=1.76s / d_lead=10.19s]: Chess was a hugely successful musical.
+    75.60s  user  발화 시작: Yeah.
+    76.05s  user  발화 끝
+    77.83s  user  발화 시작: Wow, that’s a long run. Um, do you know anything about his l
+    77.97s  agent 발화 끝
+    82.10s  agent 발화 시작: He had a fairly typical upbringing in Sweden, and developed 
+    82.18s  user  발화 끝
+    85.70s  user  발화 시작: Uh-huh.
+    86.20s  user  발화 끝
+    88.11s  agent 발화 시작: It’s wonderful to see how early passions can blossom into su
+    88.22s  agent 발화 끝
+    90.84s  user  발화 시작: Oh.
+    91.33s  user  발화 끝
+    93.38s  user  발화 시작: It really is. Thanks so much for all the information, Kliana
+    93.44s  agent 발화 끝
+    97.15s  agent 발화 시작: You’re very welcome. I’m glad I could share a bit about Björ
+    97.21s  user  발화 끝
+   102.10s  agent 발화 끝

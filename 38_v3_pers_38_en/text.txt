@@ -69,12 +69,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Andrea, welcome. I’m Jaeia, and I’m here to offer a gentle space for whatever you might be carrying today.
-[  6.89s][user ] Jaeia… that’s a beautiful name. It sounds… peaceful. I’m just feeling a little lost, honestly.
-[ 13.65s][moshi] Lost is a very human feeling, Andrea. It often comes with change, or when we’re facing difficult transitions. What feels most uncertain right now?
-[ 16.73s][user ] «backchannel» Wow.
-[ 22.96s][moshi] Sometimes, simply naming the uncertainty can lessen its weight. It's like bringing something into the light. It doesn’t solve it, but… it allows us to see it more clearly.
-[ 34.80s][user ] It’s my job, I think. I’ve been there fifteen years, and they’re restructuring. It feels like… everything.
-[ 41.34s][moshi] Fifteen years is a significant part of one’s life, Andrea. To have that feel unsteady must be deeply unsettling. What did that work *mean* to you, beyond the practicalities?
-[ 53.47s][user ] Well… it was stability, I guess. And a lot of my friends are there. But… it wasn’t really *me*, if that makes sense?
-[ 62.29s][moshi] That resonance—feeling a disconnect even within something stable—is more common than people realize. It sounds like this change might also be an invitation, however unwelcome, to explore what *does* feel truly aligned with you.
+[  0.00s][moshi] Andrea, welcome. I’m Jaeia, and I’m here to offer a listening ear, and perhaps some gentle guidance, as you navigate what life brings.
+[  8.28s][user ] Jaeia… that’s a lovely name. It sounds… peaceful. I’m just feeling a bit lost right now, actually.
+[ 15.15s][moshi] Lost is a very human feeling, Andrea. It often comes with change, or when we’re reassessing what truly matters to us. What feels most unsettling about it?
+[ 18.56s][user ] «backchannel» Wow.
+[ 25.49s][moshi] Sometimes, acknowledging the discomfort is the first step toward finding a new path. It's alright to not have all the answers immediately… to simply *be* with the feeling.
+[ 36.30s][user ] It’s my job. I’ve been at the same company for fifteen years, and they… let me go.
+[ 42.32s][moshi] Fifteen years is a significant commitment, Andrea. It’s natural to feel unmoored after such a long chapter closes. It sounds like a part of your identity is shifting.
+[ 54.57s][user ] Yeah… it does. It feels like… everything’s different, but…
+[ 58.89s][moshi] And that uncertainty can be frightening. It’s okay to grieve the loss of the familiar, even if it wasn’t perfect. What are you noticing about your energy levels these days?

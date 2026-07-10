@@ -56,11 +56,15 @@
 # }
 
 
-     0.00s  user  발화 시작: Who’s the oldest player…
-     1.66s  user  발화 끝
-     3.32s  user  발화 시작: …currently playing in the NBA?
-     5.12s  <ret> 발화 (turn2 첫 프레임)
-     5.44s  agent 발화 시작: <ret> The oldest player in the NBA right now is… …Vince Cart
-     5.49s  user  발화 끝
-     7.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.36s]: LeBron James is the oldest player currently playing in the NBA, having
-    18.81s  agent 발화 끝
+     0.00s  user  발화 시작: Who's the oldest player currently playing in the NBA?
+     3.74s  <ret> 발화 (turn1 첫 프레임)
+     3.80s  user  발화 끝
+     4.06s  agent 발화 시작: <ret> The oldest player in the NBA right now is… LeBron Jame
+     5.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: LeBron James is the oldest player currently in the NBA, having been bo
+     7.39s  user  발화 시작: Right.
+     8.03s  user  발화 끝
+     8.54s  user  발화 시작: Wow, really? I thought it was someone else.
+     8.73s  agent 발화 끝
+    11.21s  agent 발화 시작: It’s easy to lose track of who’s still playing, even at that
+    11.26s  user  발화 끝
+    15.37s  agent 발화 끝

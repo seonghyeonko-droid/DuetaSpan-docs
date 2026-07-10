@@ -68,33 +68,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey, do you know when the A's were | S2 …time ago. Uhhh… my sister just te | S3 She says she's bringing pizza over | S4 Yeah, it is. Do you have any tips 
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, do you know when the A's  | S2 Oh, seriously? Did you bring the m | S3 Wow, that *was* a while ago. Hmm.  | S4 That’s recent! Okay, one more – th
 
-     0.00s  user  발화 시작: Hey, do you know when the A's were last no-hit? It feels lik
-     4.13s  <ret> 발화 (turn1 첫 프레임)
-     4.51s  agent 발화 시작: <ret> The last time the A's were no-hit was… April twenty-fi
-     4.67s  user  발화 끝
-     6.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.13s]: The last time the Oakland Athletics were no-hit was May 9, 2023, when 
-    15.43s  user  발화 시작: Wow, really? That *was* a long…
-    15.64s  agent 발화 끝
-    19.28s  user  발화 끝
-    20.32s  user  발화 시작: …time ago. Uhhh… my sister just texted.
-    23.74s  user  발화 시작: She says she's bringing pizza over later.
-    23.84s  user  발화 끝
-    25.99s  user  발화 시작: Sorry, where were we? Right, the A’s.
-    26.10s  user  발화 끝
-    28.11s  <ret> 발화 (turn6 첫 프레임)
-    28.34s  agent 발화 시작: <ret> We were discussing that game. It can be surprisingly u
-    28.39s  user  발화 끝
-    30.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: [April 21, 2018, the Los Angeles Angels pitched a combined no-hitter a
-    30.54s  user  발화 시작: Right.
-    30.99s  user  발화 끝
-    35.28s  user  발화 시작: Yeah, it is. Do you have any tips for dealing with frustrati
-    35.30s  agent 발화 끝
-    39.16s  user  발화 끝
-    39.21s  agent 발화 시작: Sometimes a simple breathing exercise can help center you. F
-    44.58s  user  발화 시작: Okay.
-    45.13s  user  발화 끝
-    46.16s  agent 발화 시작: A regular sleep schedule also contributes to emotional resil
-    46.25s  agent 발화 끝
-    53.34s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, uh, do you know when the A's were last no-hit? It feels
+     4.79s  <ret> 발화 (turn1 첫 프레임)
+     5.18s  agent 발화 시작: <ret> The last time the A's were no-hit was… …April twenty-f
+     5.32s  user  발화 끝
+     6.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.61s]: The last time the Oakland Athletics were no-hit was May 9, 2023, when 
+    23.61s  user  발화 시작: Oh, seriously? Did you bring the mail in?
+    23.79s  agent 발화 끝
+    26.30s  user  발화 시작: Wow, that *was* a while ago. Hmm. What about the Mariners?
+    26.43s  user  발화 끝
+    30.98s  <ret> 발화 (turn4 첫 프레임)
+    31.21s  agent 발화 시작: <ret> The last time the Mariners were no-hit was… …June eigh
+    31.40s  user  발화 끝
+    32.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=18.98s]: The Seattle Mariners were last no-hit on June 21, 2023, by Domingo Ger
+    50.19s  agent 발화 끝
+    50.37s  user  발화 시작: That’s recent! Okay, one more – the Dodgers?
+    53.84s  <ret> 발화 (turn6 첫 프레임)
+    53.91s  agent 발화 시작: <ret> The last time the Dodgers were no-hit was… …September 
+    54.02s  user  발화 끝
+    55.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=16.61s]: The last time the Dodgers were no-hit was August 31, 2023, by Taijuan 
+    70.52s  agent 발화 끝

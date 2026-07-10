@@ -64,10 +64,12 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just reading something……
-[  2.79s][user ] …and it said the VA was started way back in nineteen nineteen? Is that ⟨ret@6.83s⟩ right?
-[  7.14s][moshi] The Department ⟦⚡SPAN@8.19s: The Department of Veterans Affairs (VA) was originally established in 1919 as the Veterans’ Bureau.⟧ of Veterans Affairs wasn’t formally established in nineteen nineteen, but… it was established as the Veterans’ Bureau.
-[ 15.82s][user ] But what then? That article seemed pretty sure of ⟨ret@18.93s⟩ itself, uhhh…
-[ 19.33s][moshi] The agency’s origins ⟦⚡SPAN@20.93s: The Veterans’ Bureau was renamed the Veterans Administration in 1930.⟧ trace back to 1930, when Congress officially created it as… the Veterans Administration.
-[ 26.43s][user ] Nineteen thirty? That’s a big difference. What was it *before* 1930, then?
-[ 31.17s][moshi] ⟨ret@31.09s⟩ Before 1930, services for veterans ⟦⚡SPAN@33.09s: The Department of Veterans Affairs wasn’t formally established in nineteen nineteen, but… it was established a⟧ were handled by the Bureau of War Risk Insurance and the Veterans Bureau, which began in… nineteen twenty-one.
+[  0.00s][user ] I was just reading about government agencies… when was the Department of Veterans Affairs actually ⟨ret@6.06s⟩ created?
+[  6.37s][moshi] The Department ⟦⚡SPAN@7.42s: The Department of Veterans Affairs was established on August 9, 1930, by President Herbert Hoover.⟧ of Veterans Affairs was established on August ninth… nineteen thirty, by President Hoover. It's interesting how long it took to formally recognize that need.
+[ 16.62s][user ] Nineteen thirty? That seems… late. Didn’t veterans need support much earlier than that?
+[ 22.50s][moshi] ⟨ret@22.10s⟩ Support was managed ⟦⚡SPAN@24.10s: Prior to 1930, veteran support was managed by the Bureau of War Risks and the Veterans Bureau, established in ⟧ earlier, actually, by the Bureau of War Risks and the Veterans Bureau… established in nineteen twenty-one. It’s good to question assumptions about timelines.
+[ 33.03s][user ] So, the nineteen thirty date is just when it became a *department*? That makes more sense. What did the Veterans Bureau do?
+[ 40.67s][moshi] ⟨ret@40.27s⟩ The Veterans Bureau ⟦⚡SPAN@42.27s: The Veterans Bureau provided compensation, medical care, and vocational rehabilitation for World War I veteran⟧ provided compensation, medical care, and vocational rehabilitation… for veterans of World War One. A lot of returning service members needed assistance then.
+[ 44.22s][user ] «backchannel» Right.
+[ 51.64s][user ] Okay, that clarifies things. Thanks, Brunal.
+[ 54.04s][moshi] You’re very welcome. Sometimes digging a little deeper reveals a more complete picture, doesn't it?

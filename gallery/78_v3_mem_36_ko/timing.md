@@ -69,19 +69,19 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 혜호님. 저는 리라입니다. 돈 관리와 예산에 관해 도와드리는 상담사예요.
-     5.93s  agent 발화 끝
-     6.65s  user  발화 시작: 음… 혹시 제가 예전에 치과 예약했던 거 기억하시려나?
-    10.90s  user  발화 끝
-    10.90s  <ret> 발화 (turn2 첫 프레임)
-    11.05s  agent 발화 시작: <ret> 네, 혜호님. 일월 이십육일에 한 선생님으로 아침 시간대로 예약하셨던 거 기억합니다. 혹시 예약 
-    12.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
-    16.06s  user  발화 시작: 응.
-    16.60s  user  발화 끝
-    19.16s  agent 발화 끝
-    19.67s  user  발화 시작: 그게 아니라… 혹시 그때 예약했던 시간 알려줄 수 있어?
-    22.88s  <ret> 발화 (turn5 첫 프레임)
-    23.27s  agent 발화 시작: <ret> 예약 시간은 삼월 십오일 아홉 시입니다.
-    23.37s  user  발화 끝
-    23.38s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.49s]: [2026-03-15T09:00:00]
-    25.76s  agent 발화 끝
+     0.00s  agent 발화 시작: 안녕하세요, 혜호님. 저는 리라입니다. 돈 관리와 예산 관련해서 도와드리는 상담사예요.
+     3.38s  user  발화 시작: 그래.
+     3.82s  user  발화 끝
+     6.95s  agent 발화 끝
+     7.16s  user  발화 시작: 혹시… 제가 전에 치과 예약했던 거 기억하세요?
+    10.13s  <ret> 발화 (turn3 첫 프레임)
+    10.28s  agent 발화 시작: <ret> 네, 기억합니다. 혜호님께서는 일찍 여는 시간대를 선호하시고, 한 선생님을 찾으셨었죠…
+    10.53s  user  발화 끝
+    11.81s  ⚡SPAN 주입 [d'=1.68s / d_lead=6.76s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    17.05s  agent 발화 끝
+    17.52s  user  발화 시작: 맞아요. 근데 혹시 그때 예약했던 날짜가 언제였는지 기억 안 나요.
+    20.91s  <ret> 발화 (turn5 첫 프레임)
+    21.31s  agent 발화 시작: <ret> 예약하신 날짜는 이천육십육 년 일월 이십육일이었어요.
+    21.36s  user  발화 끝
+    22.91s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    25.57s  agent 발화 끝

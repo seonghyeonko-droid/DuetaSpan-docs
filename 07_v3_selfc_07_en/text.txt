@@ -77,29 +77,40 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.47s⟩ fifteenth.
-[  3.71s][moshi] Let's see about ⟦⚡SPAN@4.99s: (no information found)⟧ scheduling a viewing at The Grandview Lofts for… it could not be found.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
-[  9.18s][user ] Actually, make that June sixteenth.
-[ 11.41s][moshi] ⟨ret@11.25s⟩ Okay, a viewing at ⟦⚡SPAN@13.25s: [{"appointmentId": "78923", "time": "2:30 PM"}]⟧ The Grandview Lofts is now set for… …at 2:30 PM on June sixteenth. Does that time work for you?
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 19.94s][user ] That sounds perfect. Thanks!
-[ 21.99s][moshi] Wonderful! It’s good to get things settled quickly. Planning can be so empowering.
-[ 27.14s][user ] I’m also looking at Riverbend Estates. Could you check availability there?
-[ 31.20s][moshi] ⟨ret@31.12s⟩ Riverbend Estates has ⟦⚡SPAN@33.12s: [{"date": "June twentieth", "time": "10:00 AM"}, {"date": "June twenty-second", "time": "1:00 PM"}]⟧ openings on June twentieth at 10:00 AM and… …June twenty-second at 1:00 PM. Would either of those work?
-      CALL: {"function": "Homes_2_CheckAvailability", "arguments": {"propertyName": "Riverbend Estates"}}
-[ 40.97s][user ] Let’s go with the twentieth.
-[ 42.70s][moshi] ⟨ret@42.54s⟩ Excellent. A viewing at ⟦⚡SPAN@44.54s: [{"appointmentId": "45612", "time": "10:00 AM"}]⟧ Riverbend Estates is confirmed for… …10:00 AM on June twentieth. I've noted both appointments for you.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "Riverbend Estates", "date": "June twentieth", "time": "10:00 AM"}}
-[ 48.24s][user ] «backchannel» Mm-hmm.
-[ 52.47s][user ] Great. And can you send me directions to The Grandview ⟨ret@55.46s⟩ Lofts?
-[ 55.62s][moshi] Directions to The ⟦⚡SPAN@57.46s: [{"distance": "8.2 miles", "estimatedTime": "15 minutes", "route": "Via I-95 North"}]⟧ Grandview Lofts are approximately… …8.2 miles, with an estimated travel time of fifteen minutes via I-95 North.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 66.11s][user ] That's helpful. Thank you so much!
-[ 68.80s][moshi] You're very welcome. Taking these steps is a big accomplishment, and it’s a pleasure to support you.
-[ 74.88s][user ] Actually, one last thing—what’s the weather forecast for June sixteenth?
-[ 79.07s][moshi] ⟨ret@78.84s⟩ For June sixteenth, ⟦⚡SPAN@80.84s: [{"date": "June sixteenth", "high": "78°F", "low": "65°F", "condition": "Sunny"}]⟧ the forecast is showing a high of… …78 degrees and a low of 65, with sunny conditions. Sounds like a lovely day for a viewing.
-      CALL: {"function": "Weather_2_GetForecast", "arguments": {"date": "June sixteenth"}}
-[ 84.13s][user ] «backchannel» Mm-hmm.
-[ 91.45s][user ] Perfect. That’s all I needed.
-[ 93.31s][moshi] Wonderful! It seems you’ve got everything well in hand. Enjoy your viewings.
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth. … actually, make that June ⟨ret@6.38s⟩ sixteenth.
+[  6.62s][moshi] I’m scheduling ⟦⚡SPAN@7.90s: (tool result) Please confirm your desired viewing date for The Grandview Lofts is June sixteenth.⟧ a viewing for The Grandview Lofts on June sixteenth… at two pm.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "2024-06-16"}}
+[ 12.44s][user ] Great. And could you find out…
+[ 16.56s][user ] …what the pet policy is ⟨ret@18.20s⟩ there?
+[ 18.36s][moshi] Let me check the pet ⟦⚡SPAN@20.20s: (tool result) The Grandview Lofts welcomes pets with a maximum weight of 25 pounds per pet and a pet fee of $5⟧ policy for The Grandview Lofts… pets are welcome with a maximum weight of twenty-five pounds per pet and a five hundred dollar fee.
+      CALL: {"function": "Homes_2GetPetPolicy", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 28.48s][user ] Okay.
+[ 29.18s][moshi] ⟨ret@28.94s⟩ The Grandview Lofts allows ⟦⚡SPAN@30.94s: [{"petTypesAllowed": ["cats", "dogs"], "weightLimit": "50 lbs", "petFee": "$50/month"}]⟧ cats and dogs under fifty pounds… and there’s a fifty dollar monthly fee.
+[ 35.97s][user ] Hmm, that's reasonable. What about ⟨ret@38.54s⟩ parking?
+[ 38.70s][moshi] I’m looking up the ⟦⚡SPAN@40.54s: (tool result) The Grandview Lofts offers assigned parking spaces for an additional monthly fee.⟧ parking information for The Grandview Lofts now… assigned parking spaces are available.
+      CALL: {"function": "Homes_2GetParkingInfo", "arguments": {"propertyName": "The Grandview Lofts"}}
+[ 45.20s][user ] Sure.
+[ 46.21s][moshi] ⟨ret@45.81s⟩ Parking is ⟦⚡SPAN@47.81s: [{"parkingType": "garage", "monthlyCost": "$150", "availability": "limited"}]⟧ garage-style, costs one hundred fifty dollars monthly… and availability is limited.
+[ 49.85s][user ] «backchannel» Right.
+[ 54.19s][user ] Limited, huh? Okay. I think I’d like to see a different place. The Oakwood Residences, if possible.
+[ 60.41s][moshi] You’d prefer to view The Oakwood Residences instead? That sounds perfectly alright.
+[ 65.93s][user ] Yes, please. And could you check if they have a gym?
+[ 69.07s][moshi] ⟨ret@68.83s⟩ I’m checking ⟦⚡SPAN@69.87s: (tool result) The Oakwood Residences have a 24-hour fitness center with cardio and strength-training equipment⟧ for a gym at The Oakwood Residences… they do indeed.
+      CALL: {"function": "Homes_2GetAmenities", "arguments": {"propertyName": "The Oakwood Residences", "amenity": "gym"}}
+[ 73.05s][user ] Thanks.
+[ 74.02s][moshi] ⟨ret@73.86s⟩ They do! The Oakwood ⟦⚡SPAN@75.86s: [{"amenity": "gym", "details": "fully equipped fitness center with cardio and weight machines"}]⟧ Residences has a fully equipped fitness center…
+[ 79.64s][user ] That’s good to know. Can we schedule a viewing there for, say, the ⟨ret@83.75s⟩ eighteenth?
+[ 84.07s][moshi] I’m scheduling ⟦⚡SPAN@85.27s: (tool result) To schedule a viewing, please contact the sales team at +65 6734 8288 or email sales@oakwoodasia⟧ a viewing for The Oakwood Residences on June eighteenth… please contact sales at plus six five six seven three four eight two eight eight.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Oakwood Residences", "date": "2024-06-18"}}
+[ 90.65s][user ] «backchannel» Uh-huh.
+[ 94.90s][user ] Perfect. Also, what’s the closest grocery ⟨ret@98.00s⟩ store?
+[ 98.24s][moshi] Let me find the ⟦⚡SPAN@100.00s: (tool result) The Oakwood Residences is located near FairPrice Finest at Newton Chill, which is the closest gr⟧ closest grocery store to The Oakwood Residences… FairPrice Finest at Newton Chill.
+      CALL: {"function": "Homes_2GetNearbyPOI", "arguments": {"propertyName": "The Oakwood Residences", "poiType": "grocery store"}}
+[103.07s][user ] «backchannel» Yeah.
+[105.10s][user ] Okay.
+[105.74s][moshi] ⟨ret@105.67s⟩ Fresh Foods Market is ⟦⚡SPAN@107.43s: [{"name": "Fresh Foods Market", "distance": "0.5 miles", "directions": "Walk north on Elm Street"}]⟧ just half a mile away… directions are north on Elm Street.
+[110.09s][user ] «backchannel» Okay.
+[112.50s][user ] Great. That sounds really convenient.
+[115.61s][moshi] I'm glad to hear it sounds good; convenience really makes a difference, doesn't it?
+[122.43s][user ] It does. Thanks for all your help, Tellar.
+[125.22s][moshi] You’re very welcome! Finding the right place is a big step, and I’m here for you.

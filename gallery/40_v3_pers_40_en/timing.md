@@ -70,12 +70,12 @@
 
 
      0.00s  agent 발화 시작: Hello Kim, welcome. I’m Ara, and I help people feel more con
-     5.32s  agent 발화 끝
-     5.39s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling a bit overwhelme
-    11.41s  user  발화 끝
-    11.81s  agent 발화 시작: Overwhelm is very common, Kim. It’s good you’re acknowledgin
-    16.99s  agent 발화 끝
-    18.29s  user  발화 시작: Probably the credit card debt. It just keeps… growing, you k
-    23.24s  user  발화 끝
-    23.36s  agent 발화 시작: That feeling is understandable. Many find debt discouraging.
-    30.73s  agent 발화 끝
+     5.09s  agent 발화 끝
+     5.14s  user  발화 시작: Ara… that’s a pretty name. Honestly, I'm just feeling a litt
+    10.75s  user  발화 끝
+    11.16s  agent 발화 시작: Overwhelmed is perfectly understandable, Kim. Many people fe
+    18.62s  agent 발화 끝
+    19.88s  user  발화 시작: Well, I'm trying to plan a trip to visit my sister, but ever
+    25.76s  user  발화 끝
+    25.92s  agent 발화 시작: Traveling can certainly add up quickly. Have you considered 
+    33.01s  agent 발화 끝

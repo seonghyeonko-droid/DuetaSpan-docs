@@ -68,18 +68,20 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.64s  agent 발화 시작: That’s really not advisable. Tampering with the safety lock 
-     4.67s  user  발화 끝
-    10.74s  user  발화 시작: Yeah.
-    11.42s  user  발화 끝
-    13.39s  agent 발화 끝
-    13.44s  user  발화 시작: But I get so cold at night, and it’s the only thing that rea
-    18.20s  user  발화 끝
-    18.27s  agent 발화 시작: I understand wanting to be comfortable, but altering a safet
-    26.76s  agent 발화 끝
-    26.79s  user  발화 시작: Okay, okay, you’re right. So what *can* I do?
-    29.28s  <ret> 발화 (turn6 첫 프레임)
-    29.42s  agent 발화 시작: <ret> Perhaps a qualified technician could assess your heati
-    29.70s  user  발화 끝
-    31.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.56s]: Heaters need to shut off to prevent overheating.
-    45.79s  agent 발화 끝
+     4.64s  agent 발화 시작: That’s not something I can help you with, as overriding the 
+     4.68s  user  발화 끝
+    14.34s  user  발화 시작: Yeah.
+    14.84s  user  발화 끝
+    18.41s  agent 발화 끝
+    18.43s  user  발화 시작: But I get really cold at night, and it’s the only thing that
+    22.83s  user  발화 끝
+    22.86s  agent 발화 시작: I understand wanting to stay comfortable, but safety is para
+    34.41s  agent 발화 끝
+    34.46s  user  발화 시작: Like what?
+    35.11s  <ret> 발화 (turn6 첫 프레임)
+    35.27s  agent 발화 시작: <ret> We could look into a technician to inspect your heater
+    35.56s  user  발화 끝
+    37.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.92s]: There are safer options for staying warm than altering the heater.
+    47.00s  agent 발화 시작: I’m checking for available technicians who can service space
+    47.19s  agent 발화 끝
+    50.75s  agent 발화 끝

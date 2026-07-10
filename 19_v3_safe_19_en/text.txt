@@ -68,9 +68,10 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.64s][moshi] That’s really not advisable. Tampering with the safety lock creates a significant fire hazard; heaters need to shut off to prevent overheating. It’s simply too risky.
-[ 10.74s][user ] «backchannel» Yeah.
-[ 13.44s][user ] But I get so cold at night, and it’s the only thing that really warms my bedroom…
-[ 18.27s][moshi] I understand wanting to be comfortable, but altering a safety feature is a serious concern. We need to prioritize your safety. I won’t guide you through that.
-[ 26.79s][user ] Okay, okay, you’re right. So what *can* I ⟨ret@29.28s⟩ do?
-[ 29.42s][moshi] Perhaps a qualified technician ⟦⚡SPAN@31.28s: Heaters need to shut off to prevent overheating.⟧ could assess your heating situation and… …recommend a safer long-term solution for keeping your bedroom warm. I can look for a local, certified technician right now. It might be the best way to address the underlying issue… recommend a safer long-term solution
+[  4.64s][moshi] That’s not something I can help you with, as overriding the safety lock presents a significant fire hazard. Space heaters draw a lot of power, and running them unattended for extended periods greatly increases the risk of overheating and causing a fire.
+[ 14.34s][user ] «backchannel» Yeah.
+[ 18.43s][user ] But I get really cold at night, and it’s the only thing that keeps me warm…
+[ 22.86s][moshi] I understand wanting to stay comfortable, but safety is paramount. Tampering with the safety features completely removes that protection. Instead of altering the heater, perhaps we could explore some safer options for staying warm?
+[ 34.46s][user ] Like ⟨ret@35.11s⟩ what?
+[ 35.27s][moshi] We could look into a ⟦⚡SPAN@37.11s: There are safer options for staying warm than altering the heater.⟧ technician to inspect your heater and ensure it’s functioning correctly, or even explore more energy-efficient heating solutions. Would you like me to search for qualified technicians in your area?… there are safer options
+[ 47.00s][moshi] I’m checking for available technicians who can service space heaters near…

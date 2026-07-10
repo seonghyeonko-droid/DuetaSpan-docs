@@ -56,25 +56,26 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Hi Kliana, do you happen to know who wrote “My Love, My Life” from Mamma Mia? It’s such a beautiful song.
-[  6.82s][moshi] ⟨ret@6.59s⟩ That’s a lovely ⟦⚡SPAN@8.59s: Benny Andersson and Björn Ulvaeus wrote “My Love, My Life” for the musical *Chess*.⟧ song to ask about. The writer of “My Love, My Life” is… Benny Andersson and Björn Ulvaeus.
-[ 15.14s][user ] Oh, go on, tell me!
-[ 16.77s][moshi] ⟨ret@16.62s⟩ The composer of that ⟦⚡SPAN@18.62s: Benny Andersson and Björn Ulvaeus wrote “My Love, My Life”.⟧ song, as you’re wondering, is Björn Ulvaeus. It's a very touching piece… and Benny Andersson.
-[ 24.07s][user ] Björn Ulvaeus, huh? I’ve heard that name before. What else did he ⟨ret@28.23s⟩ write?
-[ 28.46s][moshi] Björn Ulvaeus is best ⟦⚡SPAN@30.23s: Benny Andersson and Björn Ulvaeus wrote “My Love, My Life”.⟧ known as a member of ABBA, and co-wrote almost all of their hits… My Love, My Life.
-[ 37.09s][user ] ABBA! Of course. “Dancing Queen,” ⟨ret@40.41s⟩ right?
-[ 40.56s][moshi] Exactly, ⟦⚡SPAN@41.37s: Björn Ulvaeus is best known as a member of ABBA, and co-wrote almost all of their hits… My Love, My Life.⟧ “Dancing Queen” is one of their most famous songs, and he co-wrote that as well… My Love, My Life.
-[ 49.67s][user ] Wow, he's talented. Did he…
-[ 53.29s][user ] …write any other songs for ⟨ret@55.24s⟩ musicals?
-[ 55.63s][moshi] He did, actually. ⟦⚡SPAN IRRELEVANT@57.24s: 10.0°C, humidity 86%, wind 20.2 km/h⟧ Björn Ulvaeus and Benny Andersson wrote the music for *Chess*, another successful musical.
-[ 58.64s][user ] «backchannel» Yeah.
-[ 62.38s][user ] *Chess*… I don’t think I’ve heard of that one. Is it good?
-[ 65.91s][moshi] ⟨ret@65.83s⟩ It’s quite different ⟦⚡SPAN@67.35s: *Chess* was another successful musical written by Björn Ulvaeus and Benny Andersson.⟧ from Mamma Mia, but… *Chess* is a concept album turned musical, with a very interesting Cold War story. It has some really powerful songs… it was also very successful.
-[ 70.29s][user ] «backchannel» Yeah.
-[ 78.34s][user ] A Cold War story? That sounds… intense.
-[ 81.65s][moshi] It is a fairly dramatic story, yes. Perhaps a bit heavier than the joy of *Mamma Mia*.
-[ 85.95s][user ] «backchannel» Uh-huh.
-[ 87.51s][user ] Hmm, maybe I’ll look it up later. What about the lyrics for “My Love, My Life”? Who wrote ⟨ret@94.14s⟩ those?
-[ 94.46s][moshi] The lyrics ⟦⚡SPAN@95.74s: Tim Rice wrote the lyrics for “My Love, My Life”.⟧ for “My Love, My Life” were written by Stig Anderson, a close collaborator with Björn and Benny… Tim Rice.
-[100.57s][user ] «backchannel» Yeah.
-[102.70s][user ] Oh, so a team effort then. That’s nice. Thanks, Kliana, you’ve been a great help!
+[  0.00s][user ] Hi Kliana, do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a beautiful song.
+[  6.14s][moshi] ⟨ret@5.90s⟩ That’s a lovely choice, ⟦⚡SPAN@7.90s: “My Love, My Life” was written by Björn Ulvaeus and Benny Andersson.⟧ it truly is a classic. The song “My Love, My Life” was written by… Björn Ulvaeus and Benny Andersson.
+[ 14.95s][user ] Oh, go on then, tell me!
+[ 16.73s][moshi] ⟨ret@16.49s⟩ “My Love, My Life” ⟦⚡SPAN@18.49s: Björn Ulvaeus and Benny Andersson are two members of the Swedish pop group ABBA.⟧ was penned by Björn Ulvaeus… and Benny Andersson, two members of the Swedish pop group ABBA.
+[ 24.28s][user ] Björn Ulvaeus, okay. Was he in ⟨ret@27.88s⟩ ABBA?
+[ 28.20s][moshi] Yes, Björn ⟦⚡SPAN@29.88s: Björn Ulvaeus was a member of the Swedish pop group ABBA.⟧ Ulvaeus was one of the founding members of ABBA, alongside Benny Andersson… alongside Benny Andersson.
+[ 32.05s][user ] «backchannel» Yeah.
+[ 37.58s][user ] That makes sense. Hmmm, what other songs did he ⟨ret@40.92s⟩ write?
+[ 41.07s][moshi] He has quite ⟦⚡SPAN IRRELEVANT@42.92s: 10.0°C, humidity 87%, wind 21.6 km/h⟧ an extensive catalogue! Beyond ABBA, he’s contributed to musicals and film scores.
+[ 43.44s][user ] «backchannel» Yeah.
+[ 49.05s][user ] Really? Like what ⟨ret@51.24s⟩ musicals?
+[ 51.31s][moshi] He ⟦⚡SPAN@52.28s: He co-wrote the musicals *Chess*, *Kristina from Duvemåla*, and *Mamma Mia!*.⟧ co-wrote the music for… …the hugely successful musical “Chess” with Benny Andersson and Tim Rice. It was quite a landmark production… Chess, Kristina from Duvemåla, and Mamma Mia!
+[ 61.65s][user ] «backchannel» Uh-huh.
+[ 64.96s][user ] Chess, interesting. Was it ⟨ret@67.46s⟩ popular?
+[ 67.77s][moshi] “Chess” ran ⟦⚡SPAN@69.22s: Chess was a hugely successful musical.⟧ for over three years in London’s West End and two years on Broadway, so yes, it was very popular… hugely successful
+[ 75.60s][user ] «backchannel» Yeah.
+[ 77.83s][user ] Wow, that’s a long run. Um, do you know anything about his life?
+[ 82.10s][moshi] He had a fairly typical upbringing in Sweden, and developed an interest in music at a young age.
+[ 85.70s][user ] «backchannel» Uh-huh.
+[ 88.11s][moshi] It’s wonderful to see how early passions can blossom into such incredible careers, isn’t it?
+[ 90.84s][user ] «backchannel» Oh.
+[ 93.38s][user ] It really is. Thanks so much for all the information, Kliana.
+[ 97.15s][moshi] You’re very welcome. I’m glad I could share a bit about Björn Ulvaeus with you.

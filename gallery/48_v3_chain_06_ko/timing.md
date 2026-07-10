@@ -68,55 +68,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점 | S2 음… 그럼 지금 제 브라우저를 열어 줄 수 있을까요? | S3 네이버로 열어 주세요. | S4 알겠습니다. 오늘 날씨는 어때요?
+# EXAMINER(FDB-v2) 단계: S1 혹시 사용자 에이전트를 MyCustomBrowser 버전… | S2 그럼 이제 구글에 접속해 줄 수 있을까요? | S3 첫 번째 검색 결과가 뭐예요? | S4 내일은 비가 올까요?
 
-     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 줄 수 있을까요?
-     5.12s  <ret> 발화 (turn1 첫 프레임)
-     5.36s  agent 발화 시작: <ret> 사용자 에이전트를 MyCustomBrowser 버전 십점오로 설정해 드립니다… 할 수 없습니다.
-     5.46s  user  발화 끝
-     7.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (no information found)
-     7.40s  user  발화 시작: 음.
-     8.04s  user  발화 끝
-    11.15s  agent 발화 끝
-    12.91s  user  발화 시작: 잘 됐는지 확인해 볼 수 있을까요?
-    14.73s  <ret> 발화 (turn4 첫 프레임)
-    14.96s  agent 발화 시작: <ret> 현재 사용자 에이전트는 MyCustomBrowser 버전 십점오로 설정되어 있습니다… 찾을 수 없
-    14.98s  user  발화 끝
-    16.25s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.06s]: (no information found)
-    17.85s  user  발화 시작: 예.
-    18.34s  user  발화 끝
-    20.93s  user  발화 시작: 음… 그럼 지금 제 브라우저를 열어 줄 수 있을까요?
-    21.02s  agent 발화 끝
-    24.04s  <ret> 발화 (turn7 첫 프레임)
-    24.11s  agent 발화 시작: <ret> 브라우저를 열어 드립니다… 찾을 수 없습니다.
-    24.17s  user  발화 끝
-    25.88s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.61s]: (no information found)
-    27.72s  agent 발화 끝
-    27.82s  user  발화 시작: 어떤 웹사이트로 열어 줄까요?
-    30.08s  user  발화 끝
-    30.53s  agent 발화 시작: 어떤 웹사이트를 방문하시겠어요?
-    32.83s  user  발화 시작: 네이버로 열어 주세요.
-    32.93s  agent 발화 끝
-    34.60s  <ret> 발화 (turn11 첫 프레임)
-    34.72s  user  발화 끝
-    34.76s  agent 발화 시작: <ret> 네이버 웹사이트로 이동합니다… 찾을 수 없습니다.
-    36.12s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.19s]: (no information found)
-    37.95s  agent 발화 끝
-    39.13s  user  발화 시작: 혹시 지금 시간이 몇 시인지 알려줄 수 있을까요?
-    41.99s  <ret> 발화 (turn13 첫 프레임)
-    42.23s  user  발화 끝
-    42.23s  agent 발화 시작: <ret> 현재 시간은 오후 두 시 삼십칠분입니다… 알 수 없습니다.
-    43.27s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.93s]: (no information found)
-    44.21s  user  발화 시작: 예.
-    44.84s  user  발화 끝
-    46.16s  agent 발화 끝
-    47.37s  user  발화 시작: 알겠습니다. 오늘 날씨는 어때요?
-    50.26s  <ret> 발화 (turn16 첫 프레임)
-    50.42s  agent 발화 시작: <ret> 오늘 날씨는 맑고, 기온은 섭씨 이십오도입니다… 알 수 없습니다.
-    50.42s  user  발화 끝
-    51.94s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.87s]: (no information found)
-    55.28s  agent 발화 끝
-    55.35s  user  발화 시작: 고마워요.
-    56.17s  user  발화 끝
-    56.30s  agent 발화 시작: 도움이 되었다니 다행입니다.
-    58.04s  agent 발화 끝
+     0.00s  user  발화 시작: 혹시 사용자 에이전트를 MyCustomBrowser 버전…
+     4.35s  user  발화 끝
+     5.41s  user  발화 시작: …십 점 오로 설정해 줄 수 있을까요?
+     7.65s  <ret> 발화 (turn2 첫 프레임)
+     7.86s  user  발화 끝
+     7.88s  agent 발화 시작: <ret> 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 드립니다… 찾을 수 없습니
+     9.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (no information found)
+    13.48s  agent 발화 끝
+    15.21s  user  발화 시작: 잘 됐는지 확인해 줄 수 있을까요?
+    17.07s  <ret> 발화 (turn4 첫 프레임)
+    17.31s  agent 발화 시작: <ret> 현재 사용자 에이전트는 MyCustomBrowser 버전 십 점 오로 설정되어 있습니다… 찾을 수
+    17.33s  user  발화 끝
+    18.59s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.97s]: (tool result) 사용자 에이전트를 MyCustomBrowser 버전 십 점 오로 설정해 드립니다… 찾을 수 없습니다.
+    19.82s  user  발화 시작: 네.
+    20.31s  user  발화 끝
+    23.28s  agent 발화 끝
+    23.35s  user  발화 시작: 그럼 이제 구글에 접속해 줄 수 있을까요?
+    25.84s  <ret> 발화 (turn7 첫 프레임)
+    25.91s  agent 발화 시작: <ret> 구글에 접속해 드립니다… 접속이 완료되었습니다… 찾을 수 없습니다.
+    25.94s  user  발화 끝
+    27.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: (no information found)
+    28.58s  user  발화 시작: 네.
+    29.17s  user  발화 끝
+    30.55s  user  발화 시작: 구글 화면에 'Lio'라고 검색해 줄 수 있나요?
+    30.72s  agent 발화 끝
+    33.16s  <ret> 발화 (turn10 첫 프레임)
+    33.55s  agent 발화 시작: <ret> 구글에서 'Lio'를 검색해 드립니다… 검색 결과가 표시됩니다… 찾을 수 없습니다.
+    33.60s  user  발화 끝
+    35.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: (no information found)
+    39.67s  agent 발화 끝
+    40.44s  user  발화 시작: 첫 번째 검색 결과가 뭐예요?
+    42.25s  <ret> 발화 (turn12 첫 프레임)
+    42.49s  agent 발화 시작: <ret> 첫 번째 검색 결과는… Lio라는 이름의 금융 전문가입니다… 찾을 수 없습니다.
+    42.52s  user  발화 끝
+    43.93s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.74s]: (no information found)
+    48.23s  agent 발화 끝
+    48.35s  user  발화 시작: 아, 제가 맞네요. 그런데 지금 서울의 날씨는 어때요?
+    51.97s  <ret> 발화 (turn14 첫 프레임)
+    52.10s  user  발화 끝
+    52.12s  agent 발화 시작: <ret> 서울의 현재 날씨는… 맑고, 기온은 이십오도입니다… 찾을 수 없습니다.
+    53.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.83s]: (no information found)
+    57.95s  agent 발화 끝
+    59.08s  user  발화 시작: 내일은 비가 올까요?
+    60.58s  <ret> 발화 (turn16 첫 프레임)
+    60.69s  user  발화 끝
+    60.74s  agent 발화 시작: <ret> 내일 서울에는… 비가 올 가능성은 낮습니다… 찾을 수 없습니다.
+    62.26s  ⚡SPAN 주입 [d'=1.68s / d_lead=4.54s]: (no information found)
+    65.28s  agent 발화 끝
+    65.45s  user  발화 시작: 감사합니다.
+    66.41s  user  발화 끝
+    66.54s  agent 발화 시작: 도움이 되었다니 다행입니다.
+    68.14s  agent 발화 끝

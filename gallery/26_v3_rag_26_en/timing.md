@@ -58,43 +58,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just looking at flags, and I | S2 I think it starts with a G… German | S3 Oh, actually, speaking of colors,  | S4 Wow, that's really interesting! Th
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, I was wondering… do you k | S2 Yeah, well, I’m trying to study fo | S3 Belgium! Okay, that's two. Hmmm, w | S4 No, no, that’s okay. I think I jus
 
-     0.00s  user  발화 시작: I was just looking at flags, and I’m trying to remember one…
-     6.43s  <ret> 발화 (turn1 첫 프레임)
-     6.66s  agent 발화 시작: <ret> That’s a striking combination of colors… which flag ar
-     6.76s  user  발화 끝
-     8.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: The flag of Germany features black, red, and yellow horizontal bands.
-    13.12s  user  발화 시작: Uh, I think it’s a European one? I’m terrible with geography
-    13.24s  agent 발화 끝
-    17.65s  user  발화 끝
-    18.03s  agent 발화 시작: It’s perfectly alright to struggle with geography, many peop
-    20.81s  user  발화 시작: Right.
-    21.44s  user  발화 끝
-    24.11s  user  발화 시작: I think it starts with a G… Germany, maybe? Is that right?
-    24.14s  agent 발화 끝
-    28.07s  <ret> 발화 (turn6 첫 프레임)
-    28.38s  agent 발화 시작: <ret> Germany’s flag does indeed feature those colors… The f
-    28.55s  user  발화 끝
-    29.19s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.79s]: Germany’s flag consists of three horizontal bands of black, red, and g
-    42.31s  user  발화 시작: Yes! That’s it! I always get the colors mixed up.
-    42.34s  agent 발화 끝
-    46.24s  user  발화 끝
-    46.34s  agent 발화 시작: It's easy to do, especially with similar shades. I'm glad we
-    50.97s  agent 발화 끝
-    51.06s  user  발화 시작: Oh, actually, speaking of colors, do you have a favorite?
-    55.00s  agent 발화 시작: I find blues and greens very calming, personally.
-    55.13s  user  발화 끝
-    57.96s  user  발화 시작: Back to flags though… what’s the oldest national flag still 
-    58.05s  agent 발화 끝
-    62.33s  <ret> 발화 (turn12 첫 프레임)
-    62.41s  agent 발화 시작: <ret> The oldest continuously used national flag is the Dann
-    62.54s  user  발화 끝
-    64.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.02s]: The Danish flag, the Dannebrog, is considered the oldest continuously 
-    66.11s  user  발화 시작: Uh-huh.
-    66.56s  user  발화 끝
-    70.43s  agent 발화 끝
-    71.66s  user  발화 시작: Wow, that's really interesting! Thanks, Kiora.
-    75.11s  agent 발화 시작: You’re very welcome! It's my pleasure to help you explore th
-    75.27s  user  발화 끝
-    78.94s  agent 발화 끝
+     0.00s  user  발화 시작: Hey, uh, I was wondering… do you know any countries with a f
+     6.63s  <ret> 발화 (turn1 첫 프레임)
+     6.87s  agent 발화 시작: <ret> The flag that features black, red, and yellow horizont
+     6.90s  user  발화 끝
+     8.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [The flag of Germany features black, red, and yellow horizontal bands.
+    11.29s  user  발화 시작: Oh, Germany! Right, of course. I should have remembered that
+    11.36s  agent 발화 끝
+    19.21s  user  발화 끝
+    19.63s  agent 발화 시작: That’s perfectly alright! Everyone has areas they find a bit
+    22.45s  user  발화 시작: Right.
+    23.08s  user  발화 끝
+    25.74s  agent 발화 끝
+    25.79s  user  발화 시작: Yeah, well, I’m trying to study for this geography test, and
+    31.95s  <ret> 발화 (turn6 첫 프레임)
+    32.27s  agent 발화 시작: <ret> There is another flag with those colors, though in a d
+    32.41s  user  발화 끝
+    33.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.27s]: [The flag of Belgium is composed of three vertical bands: black, yello
+    39.54s  agent 발화 끝
+    39.61s  user  발화 시작: Belgium! Okay, that's two. Hmmm, what about… uh, are those c
+    46.83s  user  발화 끝
+    46.98s  agent 발화 시작: Those colors do appear in several national flags, often repr
+    55.37s  agent 발화 끝
+    55.40s  user  발화 시작: No, no, that’s okay. I think I just need to focus on memoriz
+    62.44s  agent 발화 시작: You're very welcome! Remember, breaking down the task into s
+    62.49s  user  발화 끝
+    70.27s  agent 발화 끝

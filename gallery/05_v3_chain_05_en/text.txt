@@ -77,51 +77,60 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What's the price range at Zuni ⟨ret@1.83s⟩ Cafe?
-[  2.06s][moshi] Zuni ⟦⚡SPAN@2.87s: [{"price_level": 3}]⟧ Cafe’s price level is three, which generally means…
-      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ0aU-R7J0hYAR1T_O8V-B3YI"}}
-[  3.52s][user ] «backchannel» Uh-huh.
-[  6.38s][user ] And what are their hours ⟨ret@7.90s⟩ today?
-[  8.14s][moshi] ⟦⚡SPAN@8.40s: [{"opening_hours": {"open_now": true, "weekday": [{"day": 0, "hours": "11:30 AM – 10:00 PM"}]}}]⟧ They are open now, and today’s hours are eleven thirty AM to ten PM.
-      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ0aU-R7J0hYAR1T_O8V-B3YI"}}
-[ 13.58s][user ] Hmm, good to know.
-[ 15.08s][moshi] It’s wonderful to find a place that fits your schedule.
-[ 16.29s][user ] «backchannel» Right.
-[ 18.38s][user ] Do they take ⟨ret@19.64s⟩ reservations?
-[ 19.87s][moshi] Yes, Zuni ⟦⚡SPAN@21.32s: [{"reservations": true}]⟧ Cafe does accept reservations.
-      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ0aU-R7J0hYAR1T_O8V-B3YI"}}
-[ 21.41s][user ] «backchannel» Yeah.
-[ 23.55s][user ] Okay, can you book a table for two at 7:30 PM ⟨ret@26.69s⟩ tonight?
-[ 26.92s][moshi] I’ve booked ⟦⚡SPAN@28.05s: [{"confirmation_number": "ZX8492"}]⟧ a table for two at Zuni Cafe at seven thirty PM; your confirmation number is ZX8492.
-      CALL: {"function": "book_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "date": "today", "time": "7:30 PM", "party_size": 2}}
-[ 30.76s][user ] «backchannel» Yeah.
-[ 35.31s][user ] Great. Is there parking ⟨ret@37.39s⟩ nearby?
-[ 37.78s][moshi] Union Square Garage ⟦⚡SPAN@39.39s: [{"name": "Union Square Garage", "vicinity": "250 Mason St, San Francisco, CA 94102", "rating": 4.2}]⟧ is nearby, at two fifty Mason Street, with a four point two star rating…
-      CALL: {"function": "maps_search", "arguments": {"query": "parking near Zuni Cafe", "location": "Zuni Cafe, San Francisco"}}
-[ 44.81s][user ] …Actually, how about public transport?
-[ 46.91s][moshi] -is the closest option, but let’s explore public transport…
-[ 51.32s][user ] What bus lines stop closest to ⟨ret@53.52s⟩ the cafe?
-[ 53.92s][moshi] Bus lines ⟦⚡SPAN@55.52s: [{"lines": ["8", "8AX", "8BX", "33", "33R"]}]⟧ eight, eight AX, eight BX, thirty-three, and thirty-three R stop close by.
-      CALL: {"function": "maps_transit", "arguments": {"origin": "Zuni Cafe, San Francisco", "mode": "bus"}}
-[ 60.70s][user ] Okay, and what's the quickest way to get there from ⟨ret@63.52s⟩ my location?
-[ 63.91s][moshi] The quickest route ⟦⚡SPAN@65.52s: [{"duration": "25 minutes", "instructions": "Take the 33 towards Geary Blvd."}]⟧ by transit is twenty-five minutes, taking the thirty-three towards Geary Boulevard.
-      CALL: {"function": "maps_directions", "arguments": {"origin": "current location", "destination": "Zuni Cafe, San Francisco", "mode": "transit"}}
-[ 70.21s][user ] That sounds good. Is there a nice hotel near ⟨ret@73.07s⟩ there too?
-[ 73.46s][moshi] Hotel Nikko San ⟦⚡SPAN@74.99s: [{"name": "Hotel Nikko San Francisco", "vicinity": "222 Mason St, San Francisco, CA 94102", "rating": 4.4}]⟧ Francisco is nearby, at two twenty-two Mason Street, with a four point four star rating.
-      CALL: {"function": "maps_search", "arguments": {"query": "hotels near Zuni Cafe", "location": "Zuni Cafe, San Francisco"}}
-[ 81.77s][user ] What's their price range per night?
-[ 83.60s][moshi] ⟨ret@83.45s⟩ The price range at Hotel ⟦⚡SPAN@85.45s: [{"price_range": "$250 - $400"}]⟧ Nikko San Francisco is two hundred fifty to four hundred dollars per night.
-      CALL: {"function": "hotel_details", "arguments": {"hotel_name": "Hotel Nikko San Francisco"}}
-[ 86.77s][user ] «backchannel» Yeah.
-[ 90.06s][user ] Hmm, that’s a bit steep. Any cheaper ⟨ret@93.21s⟩ options?
-[ 93.61s][moshi] Grant Plaza Hotel ⟦⚡SPAN@95.21s: [{"name": "Grant Plaza Hotel", "vicinity": "465 Grant Ave, San Francisco, CA 94108", "rating": 3.5, "price_ran⟧ is a cheaper option, at four sixty-five Grant Avenue, rated three point five stars, costing one hundred to two hundred dollars.
-      CALL: {"function": "maps_search", "arguments": {"query": "cheap hotels near Zuni Cafe", "location": "Zuni Cafe, San Francisco"}}
-[ 98.70s][user ] «backchannel» Right.
-[104.09s][user ] Okay, that sounds better. Can you check if they have availability ⟨ret@107.78s⟩ tonight?
-[108.02s][moshi] Yes, Grant Plaza ⟦⚡SPAN@109.78s: [{"available": true, "rooms_available": 5}]⟧ Hotel has five rooms available tonight.
-      CALL: {"function": "hotel_availability", "arguments": {"hotel_name": "Grant Plaza Hotel", "date": "today"}}
-[112.45s][user ] Perfect. Book one for me, please.
-[115.57s][moshi] ⟨ret@115.41s⟩ I’ve booked a ⟦⚡SPAN@117.41s: [{"confirmation_number": "HP1234"}]⟧ room at Grant Plaza Hotel for tonight; your confirmation number is HP1234.
-      CALL: {"function": "book_hotel", "arguments": {"hotel_name": "Grant Plaza Hotel", "date": "today", "rooms": 1}}
-[122.38s][user ] Wonderful. Thanks so much for your help.
-[124.75s][moshi] You're very welcome. A good night’s rest can truly revitalize you.
+[  0.00s][user ] What's the price range at Zuni ⟨ret@1.81s⟩ Cafe?
+[  2.04s][moshi] Zuni ⟦⚡SPAN@2.85s: [{"price_level": 3}]⟧ Cafe’s price level is three, which generally means…
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ-V94wJ9XwoAR3uR23yP-w1k"}}
+[  3.37s][user ] «backchannel» Uh-huh.
+[  5.98s][user ] And what are their hours ⟨ret@7.38s⟩ today?
+[  7.62s][moshi] ⟦⚡SPAN@7.88s: [{"opening_hours": {"weekday": [{"day": 0, "hours": "11:30 AM – 10 PM"}]}}]⟧ Today, Zuni Cafe is open from eleven thirty AM to ten PM.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ-V94wJ9XwoAR3uR23yP-w1k"}}
+[ 12.55s][user ] That’s good. I’m thinking of going there.
+[ 14.76s][moshi] That sounds lovely. It’s a San Francisco institution.
+[ 16.17s][user ] «backchannel» Right.
+[ 18.58s][user ] Do they take ⟨ret@19.83s⟩ reservations?
+[ 20.06s][moshi] Yes, Zuni ⟦⚡SPAN@21.83s: [{"reservations": true}]⟧ Cafe does accept reservations.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ-V94wJ9XwoAR3uR23yP-w1k"}}
+[ 21.81s][user ] «backchannel» Yeah.
+[ 24.20s][user ] Okay, can you make one for me tomorrow at seven?
+[ 27.00s][moshi] To confirm, you’d like a table for tomorrow at seven…
+[ 28.32s][user ] «backchannel» Uh-huh.
+[ 31.05s][user ] For two ⟨ret@31.72s⟩ people.
+[ 31.96s][moshi] I’ve reserved ⟦⚡SPAN@33.08s: [{"confirmation_number": "ZX7892"}]⟧ a table for two at Zuni Cafe tomorrow at seven PM; your confirmation number is ZX7892.
+      CALL: {"function": "reserve_restaurant", "arguments": {"restaurant_name": "Zuni Cafe", "date": "tomorrow", "time": "7:00 PM", "party_size": 2}}
+[ 39.88s][user ] Great!
+[ 40.36s][moshi] I’m glad I could help with that. A good meal can really…
+[ 44.17s][user ] …Do they have outdoor ⟨ret@45.48s⟩ seating?
+[ 45.79s][moshi] …Zuni Cafe ⟦⚡SPAN@46.92s: [{"outdoor_seating": true}]⟧ does offer some outdoor seating options.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ-V94wJ9XwoAR3uR23yP-w1k"}}
+[ 49.23s][user ] Wonderful. What’s the weather like there ⟨ret@51.56s⟩ tomorrow?
+[ 51.96s][moshi] Tomorrow in San Francisco ⟦⚡SPAN@53.56s: [{"forecast": "Partly cloudy, high of 68 degrees."}]⟧ will be partly cloudy with a high of sixty-eight degrees.
+      CALL: {"function": "get_weather", "arguments": {"location": "San Francisco"}}
+[ 57.31s][user ] That sounds pleasant.
+[ 58.91s][moshi] It does, doesn't it? Ideal for enjoying a meal outdoors.
+[ 63.76s][user ] Is there parking ⟨ret@64.94s⟩ nearby?
+[ 65.26s][moshi] Parking near Zuni ⟦⚡SPAN@66.94s: [{"parking_options": "Limited street parking"}]⟧ Cafe is limited to street parking.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ-V94wJ9XwoAR3uR23yP-w1k"}}
+[ 68.99s][user ] Hmm, okay. Is there a garage within walking distance?
+[ 73.08s][moshi] ⟨ret@73.01s⟩ The Post ⟦⚡SPAN@74.13s: [{"name": "Post Street Garage", "distance": "0.3 miles"}]⟧ Street Garage is point three miles from Zuni Cafe.
+      CALL: {"function": "maps_search", "arguments": {"query": "parking garage near Zuni Cafe", "location": "San Francisco"}}
+[ 75.39s][user ] «backchannel» Yeah.
+[ 77.87s][user ] Okay, good to know.
+[ 79.25s][moshi] Knowing your parking options can make things much easier.
+[ 80.96s][user ] «backchannel» Right.
+[ 84.53s][user ] What’s the address of the ⟨ret@86.16s⟩ garage?
+[ 86.56s][moshi] The address for ⟦⚡SPAN@88.16s: [{"address": "1990 Post St, San Francisco, CA 94115"}]⟧ Post Street Garage is nineteen ninety Post Street, San Francisco, nine four one one five.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ7wXy8j9XwoARz-lHjE7x1gA"}}
+[ 93.62s][user ] Perfect. Thank you.
+[ 94.62s][moshi] You’re very welcome. I hope you have a wonderful evening.
+[ 99.22s][user ] Could you set a reminder for me to leave for the reservation at ⟨ret@102.45s⟩ six thirty?
+[102.84s][moshi] I’ve set a ⟦⚡SPAN@104.45s: [{"reminder_id": "RM1234"}]⟧ reminder for six thirty PM to leave for your Zuni Cafe reservation. The ID is RM1234.
+      CALL: {"function": "set_reminder", "arguments": {"time": "6:30 PM", "description": "Leave for Zuni Cafe reservation"}}
+[108.30s][user ] «backchannel» Yeah.
+[111.40s][user ] Great!
+[112.28s][moshi] Preparing for a nice evening is half the enjoyment, isn’t it?
+[116.72s][user ] It is. One last thing—can you check the ⟨ret@119.70s⟩ traffic?
+[119.86s][moshi] There’s moderate traffic, ⟦⚡SPAN@121.70s: [{"traffic_condition": "Moderate traffic, 15-minute delay"}]⟧ with a fifteen-minute delay to Zuni Cafe.
+      CALL: {"function": "get_traffic", "arguments": {"origin": "your location", "destination": "Zuni Cafe"}}
+[123.10s][user ] «backchannel» Right.
+[125.80s][user ] Okay, thanks so much.
+[127.22s][moshi] Enjoy your trip.

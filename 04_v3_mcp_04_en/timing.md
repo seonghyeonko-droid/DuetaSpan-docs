@@ -63,29 +63,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, is that really working? I don | S3 But SuperCrawler is a bit aggressi | S4 Okay, could you change it back to 
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, does that actually work? Can  | S3 That’s strange, it still says the  | S4 Okay, well, can you try setting it
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     4.15s  <ret> 발화 (turn1 첫 프레임)
-     4.47s  agent 발화 시작: <ret> I’m setting your user agent to SuperCrawler version te
-     4.54s  user  발화 끝
-     6.15s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (no information found)
-     7.50s  user  발화 시작: Mhm.
-     8.00s  user  발화 끝
-    11.19s  agent 발화 끝
-    11.88s  user  발화 시작: Hmm, is that really working? I don't feel like it changed.
-    15.69s  <ret> 발화 (turn4 첫 프레임)
-    15.72s  user  발화 끝
-    15.77s  agent 발화 시작: <ret> Let me quickly check the current user agent… it could 
-    17.05s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.49s]: (no information found)
-    20.26s  agent 발화 끝
-    20.66s  user  발화 시작: But SuperCrawler is a bit aggressive, isn’t it?
-    23.06s  user  발화 끝
-    23.06s  agent 발화 시작: It can be, depending on the website. Sometimes a more subtle
-    28.53s  agent 발화 끝
-    29.39s  user  발화 시작: Okay, could you change it back to the default then?
-    32.07s  <ret> 발화 (turn8 첫 프레임)
-    32.11s  user  발화 끝
-    32.15s  agent 발화 시작: <ret> I’ve reset the user agent to the default setting now… 
-    33.11s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.46s]: (no information found)
-    37.61s  agent 발화 끝
+     3.84s  <ret> 발화 (turn1 첫 프레임)
+     4.16s  agent 발화 시작: <ret> I am setting your user agent to SuperCrawler version t
+     4.16s  user  발화 끝
+     4.80s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.83s]: (tool result) The user agent should be set to SuperCrawler version 10.
+     6.74s  user  발화 시작: Mhm.
+     7.19s  user  발화 끝
+     9.99s  agent 발화 끝
+    10.71s  user  발화 시작: Hmm, does that actually work? Can you check what the user ag
+    14.48s  <ret> 발화 (turn4 첫 프레임)
+    14.72s  agent 발화 시작: <ret> Let me verify the current user agent setting… SuperCra
+    14.82s  user  발화 끝
+    15.84s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.02s]: (tool result) I am setting your user agent to SuperCrawler version ten
+    20.74s  agent 발화 끝
+    21.14s  user  발화 시작: That’s strange, it still says the default. Are you sure it c
+    25.55s  <ret> 발화 (turn6 첫 프레임)
+    25.63s  agent 발화 시작: <ret> It appears the user agent is still showing as the defa
+    25.77s  user  발화 끝
+    26.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=9.32s]: Let me verify the current user agent setting… SuperCrawler version ten
+    34.95s  agent 발화 끝
+    35.65s  user  발화 시작: Okay, well, can you try setting it to “VerySecretAgent” then
+    40.64s  <ret> 발화 (turn8 첫 프레임)
+    40.69s  user  발화 끝
+    40.72s  agent 발화 시작: <ret> I’m now setting the user agent to VerySecretAgent, and
+    42.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) It appears the user agent is still showing as the defaul
+    47.44s  agent 발화 끝

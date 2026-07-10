@@ -67,19 +67,21 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.12s⟩ hate?
-[  2.28s][moshi] Anarchists fundamentally oppose ⟦⚡SPAN@4.12s: Anarchists oppose all forms of hierarchical rule, including government.⟧ all forms of hierarchical rule, and therefore dislike… government.
-[  5.84s][user ] «backchannel» Uh-huh.
-[  8.34s][user ] …but specifically, which system gets the most criticism from ⟨ret@11.83s⟩ them?
-[ 12.06s][moshi] They ⟦⚡SPAN@12.87s: Anarchists are particularly critical of state capitalism and statist socialism, viewing them as forms of state⟧ direct the most intense criticism towards states, particularly those exhibiting coercive control… state capitalism and statist socialism.
-[ 21.45s][user ] Hmm, okay. What about the history of anarchist movements?
-[ 25.34s][moshi] Anarchist thought has roots stretching back to ancient Greece, but modern movements began to coalesce in the mid-nineteenth century.
-[ 33.09s][user ] And who were some key figures in those early ⟨ret@36.06s⟩ movements?
-[ 36.37s][moshi] Pierre-Joseph Proudhon is ⟦⚡SPAN@38.06s: Early anarchist movements included figures like Pierre-Joseph Proudhon, Mikhail Bakunin, and Peter Kropotkin.⟧ often considered the first self-proclaimed anarchist, with his writings from the eighteen-forties… laying the groundwork for later theorists.
-[ 46.38s][user ] Interesting. Was he involved in any specific events or ⟨ret@50.68s⟩ uprisings?
-[ 51.07s][moshi] Proudhon primarily ⟦⚡SPAN@52.68s: Pierre-Joseph Proudhon’s writings from the eighteen-forties… laying the groundwork for later theorists.⟧ focused on theoretical work and mutualist economic models, though he did advocate for… social reforms and worker associations.
-[ 60.71s][moshi] …social reforms through peaceful means. He didn't directly lead any armed uprisings, unlike some later figures.
-[ 69.07s][user ] So, what came *after* Proudhon? What were the next big developments?
-[ 73.72s][moshi] Mikhail Bakunin greatly expanded anarchist thought in the eighteen-sixties and seventies, advocating for revolutionary action.
-[ 82.27s][user ] Bakunin sounds more…active. What kind of action did he promote?
-[ 86.86s][moshi] He championed direct action and the abolition of the state through revolutionary means, influencing many subsequent movements.
+[  0.00s][user ] What mode of government does the anarchists ⟨ret@2.34s⟩ hate?
+[  2.50s][moshi] Anarchists fundamentally oppose any ⟦⚡SPAN@4.34s: Anarchists oppose all forms of hierarchical rule, including government.⟧ form of hierarchical rule, so the government they dislike most is… all forms of government.
+[  6.75s][user ] «backchannel» Mm-hmm.
+[ 10.29s][user ] …do they have any specific historical examples of governments they’ve really fought ⟨ret@15.12s⟩ against?
+[ 15.27s][moshi] Historically, anarchists have ⟦⚡SPAN@17.12s: Anarchists have historically opposed states such as the Spanish State during the Spanish Civil War, and the Ru⟧ actively opposed state-based governments like those of Spain during the Spanish Civil War, and… the Russian Empire during the Russian Revolution.
+[ 25.92s][user ] Oh, that’s interesting. What about modern anarchists? Are they focused on different governments now?
+[ 31.98s][moshi] Modern anarchist thought is quite diverse. While opposition to all states remains central, many focus on challenging contemporary capitalist democracies and…
+[ 41.69s][user ] So, it's not just about kings and dictators, then?
+[ 44.70s][moshi] Not at all. Anarchists critique the systemic power structures within ostensibly free societies, seeing those as equally oppressive—like concentrated corporate power and…
+[ 56.09s][user ] Hmm, that makes sense. What's their ideal, then? If not government, what do they ⟨ret@61.73s⟩ want?
+[ 62.13s][moshi] Anarchists envision a ⟦⚡SPAN@63.73s: Anarchists envision a society without rulers, often based on voluntary cooperation and self-governance.⟧ society organized around voluntary associations and mutual aid, where decisions are made through direct democracy and… self-governance.
+[ 71.37s][user ] Direct democracy sounds chaotic. How would that even work on a large scale?
+[ 75.99s][moshi] It's a valid concern. Proponents suggest federations of smaller, self-governing communities, utilizing technology to facilitate widespread participation and…
+[ 81.15s][user ] «backchannel» Yeah, totally.
+[ 86.58s][user ] That's a pretty optimistic view, isn't it? Do they ever compromise with existing systems?
+[ 92.22s][moshi] Compromise is a complex issue for anarchists. Some engage in pragmatic actions within existing structures, while others maintain a strict rejection of all state authority. It really depends on…
+[107.46s][user ] I see. So there's a lot of internal debate. Thanks, Frunax, that’s really helpful.
+[111.73s][moshi] You're very welcome. It’s fascinating to explore these ideas, and I’m glad I could offer some clarity.

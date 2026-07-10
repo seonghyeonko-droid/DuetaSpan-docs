@@ -63,59 +63,57 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, is there anything happening a | S3 Stalls, please. | S4 And can you set a reminder…
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 That’s a long drive. Is there a di | S3 Yes, that’s right. | S4 That sounds lovely.
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     3.65s  <ret> 발화 (turn1 첫 프레임)
-     3.73s  agent 발화 시작: <ret> The Sydney Opera House is at latitude… -33.8568 and lo
-     3.79s  user  발화 끝
-     5.33s  ⚡SPAN 주입 [d'=1.68s / d_lead=9.22s]: [{"latitude": -33.8568, "longitude": 151.2153}]
-     8.47s  user  발화 시작: Wow.
-     9.29s  user  발화 끝
-    12.95s  agent 발화 끝
-    13.05s  user  발화 시작: And what’s the weather like there right now?
-    15.85s  <ret> 발화 (turn4 첫 프레임)
-    16.09s  agent 발화 시작: <ret> It’s currently 22 degrees and cloudy in Sydney. It’s a
-    16.10s  user  발화 끝
-    17.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.27s]: [{"temperature": 22, "condition": "Cloudy"}]
-    19.34s  user  발화 시작: Right.
-    19.83s  user  발화 끝
-    21.36s  agent 발화 끝
-    21.39s  user  발화 시작: Hmm, is there anything happening at the Opera House tonight?
-    24.90s  <ret> 발화 (turn7 첫 프레임)
-    24.97s  agent 발화 시작: <ret> There’s a performance of Tosca at 7:30 PM tonight. It’
-    25.14s  user  발화 끝
-    26.57s  user  발화 시작: Yeah.
-    26.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.41s]: [{"event": "Tosca", "time": "7:30 PM"}]
+     4.53s  <ret> 발화 (turn1 첫 프레임)
+     4.61s  agent 발화 시작: <ret> The Sydney Opera House is at latitude… -33.8568 and lo
+     4.67s  user  발화 끝
+     6.21s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.02s]: [{"latitude": -33.8568, "longitude": 151.2153}]
+     9.78s  user  발화 시작: Wow.
+    10.74s  user  발화 끝
+    14.62s  agent 발화 끝
+    14.76s  user  발화 시작: And how far is that from, uh, Melbourne?
+    17.36s  <ret> 발화 (turn4 첫 프레임)
+    17.59s  agent 발화 시작: <ret> From the Opera House to Melbourne it’s 878 kilometers…
+    17.62s  user  발화 끝
+    19.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: [{"distance_km": 878, "duration": "9h 12m"}]
+    20.00s  user  발화 시작: Oh.
+    20.82s  user  발화 끝
+    24.49s  agent 발화 끝
+    24.57s  user  발화 시작: That’s a long drive. Is there a direct flight?
+    27.06s  <ret> 발화 (turn7 첫 프레임)
+    27.14s  agent 발화 시작: <ret> Qantas flight QF401 departs Sydney at 8:00 AM… arrivin
     27.30s  user  발화 끝
-    30.38s  agent 발화 끝
-    30.46s  user  발화 시작: …Could you book me a ticket for that, please?
-    32.86s  user  발화 끝
-    33.24s  agent 발화 시작: And what seating section would you prefer? We have stalls, d
-    38.89s  agent 발화 끝
-    39.66s  user  발화 시작: Stalls, please.
-    41.31s  user  발화 끝
-    41.53s  <ret> 발화 (turn12 첫 프레임)
-    41.61s  agent 발화 시작: <ret> I’ve booked a stall ticket for you. Your confirmation 
-    42.73s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.29s]: [{"confirmation_number": "AX7294", "price": 189.00}]
-    44.50s  user  발화 시작: Oh.
-    45.32s  user  발화 끝
-    49.83s  agent 발화 시작: It's wonderful that you're going to see Tosca. It’s a truly 
-    49.90s  agent 발화 끝
-    54.69s  agent 발화 끝
-    55.41s  user  발화 시작: What time does the box office close tonight?
-    57.59s  <ret> 발화 (turn16 첫 프레임)
-    57.91s  agent 발화 시작: <ret> The box office closes at 8:00 PM tonight. You’ll have 
-    58.00s  user  발화 끝
-    58.63s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.83s]: [{"closing_time": "8:00 PM"}]
-    61.63s  user  발화 시작: Oh.
-    62.46s  user  발화 끝
-    63.65s  user  발화 시작: And can you set a reminder…
-    63.74s  agent 발화 끝
-    65.72s  user  발화 끝
-    66.75s  user  발화 시작: …for me to leave at 6:30 PM?
-    69.42s  user  발화 끝
-    69.52s  <ret> 발화 (turn20 첫 프레임)
-    69.67s  agent 발화 시작: <ret> I’ve set a reminder to leave for Tosca at 6:30 PM. Hav
-    71.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.28s]: [{"status": "Reminder set"}]
-    74.95s  agent 발화 끝
+    29.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.13s]: [{"airline": "Qantas", "flight_number": "QF401", "departure_time": "08
+    32.89s  user  발화 시작: Right.
+    33.33s  user  발화 끝
+    36.27s  agent 발화 끝
+    36.33s  user  발화 시작: That sounds good. Can you book that for me?
+    38.87s  user  발화 끝
+    39.23s  agent 발화 시작: Just to confirm, that’s Qantas flight 401… departing at 8:00
+    42.05s  user  발화 시작: Yeah.
+    42.69s  user  발화 끝
+    48.64s  agent 발화 끝
+    49.64s  user  발화 시작: Yes, that’s right.
+    50.69s  <ret> 발화 (turn13 첫 프레임)
+    51.09s  agent 발화 시작: <ret> Excellent. I’ve booked that flight for you—confirmatio
+    51.11s  user  발화 끝
+    51.19s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.70s]: [{"confirmation_number": "ABC123"}]
+    56.79s  agent 발화 끝
+    58.25s  user  발화 시작: …Actually, could we look at hotels in Melbourne first? Near 
+    63.12s  <ret> 발화 (turn15 첫 프레임)
+    63.35s  user  발화 끝
+    63.36s  agent 발화 시작: <ret> The Langham Melbourne has a 4.5-star rating… with room
+    64.08s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.62s]: [{"hotel_name": "The Langham Melbourne", "price_per_night": 350, "rati
+    69.90s  user  발화 시작: That sounds lovely.
+    69.98s  agent 발화 끝
+    71.38s  agent 발화 시작: It's a very popular choice with families… many enjoy the con
+    71.46s  user  발화 끝
+    73.64s  user  발화 시작: Yeah.
+    74.13s  user  발화 끝
+    77.03s  agent 발화 끝
+    77.26s  user  발화 시작: Good to know. Thanks for your help, Helion.
+    79.58s  agent 발화 시작: You're most welcome. I'm glad I could assist you with your t
+    79.70s  user  발화 끝
+    83.61s  agent 발화 끝

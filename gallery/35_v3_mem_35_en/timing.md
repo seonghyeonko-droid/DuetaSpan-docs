@@ -66,28 +66,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Yeah, I am. I’m thinking of going  | S2 Actually, yes! But I was wondering | S3 …But March is still good for *some | S4 That sounds perfect, yes please.
 
-     0.00s  agent 발화 시작: Hi Avery, I’m Klen.
-     1.61s  agent 발화 끝
-     2.41s  user  발화 시작: Yes, I am! I’m thinking about that trip to New Zealand in Ma
-     7.28s  <ret> 발화 (turn2 첫 프레임)
-     7.55s  user  발화 끝
-     7.66s  agent 발화 시작: <ret> So, you’re planning a trip to New Zealand in March… ar
-     9.28s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    14.84s  agent 발화 끝
-    14.84s  user  발화 시작: Well, I’m really into alpine wildflower photography, so some
-    22.17s  <ret> 발화 (turn4 첫 프레임)
-    22.25s  agent 발화 시작: <ret> Alpine wildflower photography in New Zealand sounds lo
-    22.35s  user  발화 끝
-    24.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: [2025-08-26] User is into alpine wildflower photography.
-    27.57s  user  발화 시작: Mm-hmm.
-    28.02s  user  발화 끝
-    29.31s  agent 발화 시작: …with areas like Arthur’s Pass and Mount Cook National Park 
-    29.53s  agent 발화 끝
-    38.95s  agent 발화 끝
-    39.32s  user  발화 시작: …Actually, before we get to hotels, could you tell me what t
-    46.05s  user  발화 끝
-    46.18s  <ret> 발화 (turn8 첫 프레임)
-    46.42s  agent 발화 시작: <ret> The average high is around eighteen degrees Celsius, w
-    47.30s  ⚡SPAN 주입 [d'=1.12s / d_lead=9.18s]: [{"date": "2024-03-15", "high_temp_c": 18, "low_temp_c": 6, "condition
-    55.60s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen.
+     1.65s  agent 발화 끝
+     2.44s  user  발화 시작: Yeah, I am. I’m thinking of going somewhere warm in March.
+     7.02s  agent 발화 시작: March is a lovely time to escape the Canadian winter. You me
+     7.02s  user  발화 끝
+    13.06s  user  발화 시작: Actually, yes! But I was wondering about the best time to se
+    13.79s  agent 발화 끝
+    18.48s  <ret> 발화 (turn4 첫 프레임)
+    18.63s  agent 발화 시작: <ret> That's a beautiful thought. New Zealand offers stunnin
+    18.66s  user  발화 끝
+    20.40s  ⚡SPAN 주입 [d'=1.92s / d_lead=11.54s]: [2026-06-07] User is planning a trip to New Zealand in March. – are yo
+    30.17s  agent 발화 끝
+    31.28s  user  발화 시작: …But March is still good for *some* flowers, right?
+    34.05s  <ret> 발화 (turn6 첫 프레임)
+    34.21s  agent 발화 시작: <ret> March is still excellent for lower-altitude blooms, an
+    34.37s  user  발화 끝
+    36.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.05s]: [2025-08-26] User is into alpine wildflower photography. – Knowing you
+    38.00s  user  발화 시작: Mm-hmm.
+    38.64s  user  발화 끝
+    39.26s  agent 발화 끝
+    39.32s  agent 발화 시작: The Canterbury region on the South Island is particularly kn
+    49.01s  agent 발화 끝
+    51.28s  user  발화 시작: That sounds perfect, yes please.
+    53.35s  user  발화 끝

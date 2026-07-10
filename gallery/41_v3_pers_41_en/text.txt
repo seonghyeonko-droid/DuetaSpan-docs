@@ -67,44 +67,42 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Marie, it’s so good to connect with you. I’m Bir, and I’m here to offer support as you navigate life’s transitions.
-[  6.54s][user ] Bir… that’s a lovely name. Is it Scandinavian? I’m just… processing everything right now.
-[ 13.85s][moshi] It is, actually. My grandmother was from Norway. It means “birch tree,” a symbol of new beginnings, which feels fitting for this work. It sounds like you have a lot on your mind.
-[ 21.52s][user ] «backchannel» Yeah.
-[ 23.77s][user ] A lot. My company… they’re restructuring. I might lose my job.
-[ 28.98s][moshi] That’s a significant uncertainty to face, Marie. It’s understandable to feel overwhelmed when stability feels threatened. What worries you most about that possibility?
-[ 32.81s][user ] «backchannel» Really?
-[ 38.84s][user ] Uhhh… just… everything. I’ve been there ten years. It’s all I know.
-[ 43.71s][moshi] Ten years is a long time to dedicate to one place. It’s natural to feel a sense of loss, even anticipating it. It’s like a part of your identity is shifting.
-[ 54.06s][user ] Yeah. Exactly. It feels like a part of me is… disappearing.
-[ 58.48s][moshi] That’s a very poignant way to describe it. Grief isn’t always about death; it’s about loss of any kind. And it’s okay to grieve what might be.
-[ 64.48s][user ] «backchannel» Yeah, yeah.
-[ 68.18s][moshi] It’s a process, Marie, and it unfolds in its own time. There’s no right or wrong way to feel. Perhaps we can explore what gives you strength outside of your work?
-[ 78.25s][user ] I… I used to paint. Before everything got so busy.
-[ 81.98s][moshi] Painting. That sounds lovely. A creative outlet can be a wonderful source of solace and self-expression. Do you think you might revisit that?
-[ 90.44s][user ] I don’t know. I feel so drained. I just want to curl up and do nothing.
-[ 95.17s][moshi] That’s perfectly valid, Marie. Sometimes, the most courageous thing we can do is simply rest and allow ourselves to feel. Rest is not weakness.
-[106.78s][user ] It’s just… what if I can’t find another job? What if I’m not good enough?
-[112.07s][moshi] Those “what ifs” can be very powerful, and often unkind. They’re rooted in fear, not necessarily reality. What evidence do you have that you aren’t good enough?
-[118.84s][user ] «backchannel» Yeah.
-[122.41s][user ] Well… nothing, really. It’s just… the market is tough.
-[126.40s][moshi] The market *is* competitive, that’s true. But your ten years of experience speak volumes, Marie. We can explore ways to highlight your strengths.
-[131.71s][user ] «backchannel» Yeah.
-[135.62s][user ] I guess. It’s hard to see the positive right now.
-[138.99s][moshi] It often is, in the midst of uncertainty. It’s like being in a dark forest, unable to see the path ahead. But even in darkness, stars still shine.
-[149.00s][user ] That’s… a nice image.
-[151.47s][moshi] Sometimes, a shift like this can be an opportunity, Marie, even if it doesn’t feel like it now. A chance to realign with what truly matters.
-[160.41s][user ] What if what truly matters is just… feeling safe?
-[164.41s][moshi] Safety is a fundamental human need. And it’s okay to prioritize that. But safety can also be found within, Marie – in your resilience, your skills, your inner strength.
-[169.49s][user ] «backchannel» Yeah, yeah.
-[174.89s][user ] 흐으으음… I don’t know about strength.
-[177.56s][moshi] I sense a gentle questioning of your own capabilities. It’s common to doubt ourselves in times of change. What's one thing you *are* proud of accomplishing?
-[187.64s][user ] I… led a big project last year. It was really stressful, but it went well.
-[193.76s][moshi] That’s significant, Marie. Leading a successful project under pressure demonstrates leadership, problem-solving, and perseverance. You have those qualities within you.
-[203.42s][user ] I hadn’t really thought about it like that.
-[205.91s][moshi] Often, we downplay our accomplishments. It’s a habit many of us fall into. Recognizing your strengths is a crucial step in building self-compassion.
-[210.56s][user ] «backchannel» Uh-huh.
-[215.27s][moshi] It is. And self-compassion is a powerful ally during times of transition. It allows us to navigate challenges with kindness and understanding.
-[222.06s][user ] «backchannel» Mhm.
-[225.95s][user ] I think I need to… think about all this.
-[229.15s][moshi] That’s a wonderful idea, Marie. Take the time you need. And remember, I’m here to support you as you process these feelings.
+[  0.00s][moshi] Marie, it’s lovely to connect with you. I’m Bir, and I work with people navigating life’s transitions and finding peace within change.
+[  8.74s][user ] Bir… that’s a beautiful name. It sounds… Scandinavian? Is that right?
+[ 13.60s][moshi] It is, actually. My grandmother was from Norway. But more importantly, I’m curious what brings you here today, Marie.
+[ 20.86s][user ] Well, uhhh, it’s my mom. She passed away last month.
+[ 24.29s][moshi] I’m so sorry to hear that, Marie. Losing a mother is a uniquely painful experience. It shifts the world beneath your feet.
+[ 32.47s][user ] It does. Everything feels… different. Even simple things.
+[ 36.73s][moshi] That’s very common. Grief isn’t just sadness; it’s a re-orientation, a learning to live in a world altered by absence.
+[ 42.99s][user ] «backchannel» Yeah.
+[ 45.92s][user ] I keep expecting her to call. Just to check in.
+[ 49.50s][moshi] Those phantom calls are so normal, Marie. Our brains hold onto patterns, and it takes time to rewrite them.
+[ 53.42s][user ] «backchannel» Yeah.
+[ 56.25s][user ] It’s been hard to focus at work. I feel… distracted.
+[ 60.13s][moshi] That’s understandable. Grief saps energy, and concentration can feel impossible. Be gentle with yourself, Marie.
+[ 66.41s][user ] «backchannel» Mm-hmm.
+[ 68.95s][user ] My sister keeps saying I need to “move on.”
+[ 72.05s][moshi] That phrase can be so unhelpful. There isn’t a timetable for grief, and “moving on” implies forgetting, which isn’t the goal.
+[ 76.95s][user ] «backchannel» Yeah, yeah.
+[ 80.06s][moshi] It’s more about learning to carry the love and memories alongside the pain, isn’t it? To integrate the loss into your life story.
+[ 88.14s][user ] I guess so. It just feels… disrespectful to forget her.
+[ 92.26s][moshi] Exactly. Honoring her memory doesn’t mean being perpetually stuck in sorrow, but it does mean keeping her spirit alive.
+[ 99.84s][user ] I've been avoiding looking at old photos. It hurts too much.
+[103.52s][moshi] It’s natural to protect yourself from pain, Marie. But avoidance can sometimes prolong the process.
+[107.50s][user ] «backchannel» Yeah.
+[110.52s][user ] But… what if looking at them just makes me fall apart?
+[114.21s][moshi] Perhaps start small. One photo, one memory. Allow yourself to feel whatever arises without judgment.
+[118.50s][user ] «backchannel» Yeah.
+[122.40s][user ] That sounds… terrifying, honestly.
+[125.15s][moshi] It’s brave to face difficult emotions, Marie. And it’s okay to start with just a flicker of courage.
+[130.96s][user ] I keep thinking about all the things I didn’t say.
+[134.03s][moshi] That’s a very common regret. We often carry unspoken words. Perhaps writing a letter to her could be a way to express them?
+[141.84s][user ] Hmm. A letter. I hadn’t thought of that.
+[145.31s][moshi] It doesn’t need to be perfect. Just a space to say what’s in your heart. A conversation you wish you’d had.
+[148.38s][user ] «backchannel» Yeah, yeah.
+[152.68s][user ] It’s just… it feels so final, you know?
+[156.28s][moshi] It is final in one sense, Marie. But love transcends finality. Her presence lives on in your memories and in who you are.
+[164.40s][user ] That’s… a nice way to put it. Thank you, Bir.
+[168.08s][moshi] You’re very welcome, Marie. Remember, grief is a journey, not a destination. Be kind to yourself along the way.
+[175.14s][user ] I will try.
+[176.35s][moshi] And if you find yourself needing further support, please don’t hesitate to reach out. I'm here to listen.

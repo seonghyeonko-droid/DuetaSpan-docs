@@ -68,31 +68,31 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 interrupting… Is parking included  | S3 Okay, and could you add a request  | S4 Great. What’s the cancellation pol
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 …Is parking included with the rese | S3 Wonderful, thank you. Could you al | S4 The Marine Room sounds lovely. Can
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.03s  <ret> 발화 (turn1 첫 프레임)
-     5.19s  user  발화 끝
-     5.27s  agent 발화 시작: <ret> I have reserved three rooms for you at the Ocean View 
-     7.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.83s]: [{"confirmation_number": "A7B29X", "hotel_name": "Ocean View Hotel", "
-     8.93s  user  발화 시작: interrupting… Is parking included with the reservation?
-     9.10s  agent 발화 끝
-    11.97s  agent 발화 시작: Parking is available at the hotel for twenty-five dollars pe
-    12.03s  user  발화 끝
-    16.22s  agent 발화 끝
-    16.66s  user  발화 시작: Okay, and could you add a request for a room with an ocean v
-    20.37s  <ret> 발화 (turn5 첫 프레임)
-    20.64s  user  발화 끝
-    20.69s  agent 발화 시작: <ret> I’ve added a request for an ocean view room to your re
-    22.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.17s]: [{"confirmation_number": "A7B29X", "request_status": "pending"}]
-    22.96s  user  발화 시작: Yeah.
-    23.64s  user  발화 끝
-    24.85s  agent 발화 시작: …it is currently pending, but the hotel will do its best to 
-    24.86s  agent 발화 끝
-    29.89s  user  발화 시작: Great. What’s the cancellation policy?
-    29.99s  agent 발화 끝
-    31.88s  <ret> 발화 (turn9 첫 프레임)
-    32.20s  agent 발화 시작: <ret> You may cancel for a full refund up to seventy-two hou
-    32.38s  user  발화 끝
-    33.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.59s]: [{"confirmation_number": "A7B29X", "cancellation_policy": "Full refund
-    37.80s  agent 발화 끝
+     5.21s  <ret> 발화 (turn1 첫 프레임)
+     5.38s  user  발화 끝
+     5.45s  agent 발화 시작: <ret> I have reserved three rooms for you at the Ocean View 
+     7.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.39s]: [{"reservation_id": "987654321", "hotel_name": "Ocean View Hotel", "ci
+     8.42s  user  발화 시작: Mm-hmm.
+     9.06s  user  발화 끝
+     9.84s  agent 발화 끝
+     9.97s  user  발화 시작: …Is parking included with the reservation?
+    11.78s  <ret> 발화 (turn4 첫 프레임)
+    12.10s  agent 발화 시작: <ret> Parking is included with your reservation, at no addit
+    12.23s  user  발화 끝
+    13.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [{"parking_included": true, "parking_fee": 0, "amenities": ["pool", "g
+    16.59s  agent 발화 끝
+    16.90s  user  발화 시작: Wonderful, thank you. Could you also find out about nearby r
+    20.53s  <ret> 발화 (turn6 첫 프레임)
+    20.88s  user  발화 끝
+    20.92s  agent 발화 시작: <ret> The Marine Room and George's at the Cove are both high
+    22.53s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [{"restaurant_name": "The Marine Room", "cuisine": "Seafood", "rating"
+    26.29s  agent 발화 끝
+    26.58s  user  발화 시작: The Marine Room sounds lovely. Can you make a reservation th
+    32.06s  <ret> 발화 (turn8 첫 프레임)
+    32.30s  agent 발화 시작: <ret> I have secured a reservation for four at The Marine Ro
+    32.37s  user  발화 끝
+    34.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: [{"reservation_id": "123456789", "restaurant_name": "The Marine Room",
+    38.60s  agent 발화 끝

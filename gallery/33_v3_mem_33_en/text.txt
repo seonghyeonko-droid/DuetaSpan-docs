@@ -69,38 +69,35 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Casey, I’m Diolo. It’s lovely to connect with you today.
-[  2.47s][user ] «backchannel» Yeah, yeah.
-[  3.47s][user ] Oh, hello. Um, what’s the time in London right now?
-[  7.27s][moshi] ⟨ret@7.11s⟩ It’s currently 2:37 PM in ⟦⚡SPAN@9.11s: ["14:37"]⟧ London. A good time for a cup of tea, perhaps?
+[  0.00s][moshi] Hi Casey, I'm Diolo. It's lovely to connect with you today.
+[  2.41s][user ] «backchannel» Yeah, yeah.
+[  3.38s][user ] Uh, what time is it in London right ⟨ret@5.80s⟩ now?
+[  5.96s][moshi] It’s currently 2:37 PM ⟦⚡SPAN@7.80s: (no information found)⟧ in London. A perfect time for a cup of tea, perhaps?… could not be found.
       CALL: {"function": "get_time", "arguments": {"location": "London"}}
-[ 10.49s][user ] «backchannel» Yeah.
-[ 12.48s][user ] Hmm, maybe later. I’m trying to remember… did I tell you about my sourdough ⟨ret@18.05s⟩ starter?
-[ 18.29s][moshi] Yes, you mentioned you’re ⟦⚡SPAN@20.05s: [2026-03-07] User is into home fermentation.⟧ quite into home fermentation back in March. Are you working on a new batch?
-[ 25.34s][user ] Yeah, a rye one. But… I’m worried about gluten. I've been trying to be ⟨ret@31.14s⟩ careful.
-[ 31.38s][moshi] That’s right, you are ⟦⚡SPAN@33.14s: [2025-10-29] User is gluten-free.⟧ gluten-free. Rye does contain gluten, so you might want to adjust the recipe.
-[ 34.23s][user ] «backchannel» Yeah, yeah.
-[ 37.71s][user ] Oh dear. Right. Okay, so… what about sushi? I'm craving something ⟨ret@43.47s⟩ light.
-[ 43.54s][moshi] ⟦⚡SPAN@43.97s: [2026-05-07] User's favorite cuisine is sushi.⟧ Sushi is your favorite, isn’t it? A wonderfully light and flavorful choice.
-[ 49.94s][user ] Yes! I was thinking of ordering some. Do you know any good ⟨ret@54.64s⟩ places nearby?
-[ 55.04s][moshi] There’s ⟦⚡SPAN@55.68s: ["Sushi Zen - 4.5 stars, 0.5 miles; Hana Sushi - 4.2 stars, 1.2 miles"]⟧ Sushi Zen, rated 4.5 stars, just half a mile away, or Hana Sushi, 4.2 stars, at 1.2 miles.
-      CALL: {"function": "search_restaurants", "arguments": {"cuisine": "sushi", "location": "London"}}
-[ 64.54s][user ] Sushi Zen sounds good. Is there outdoor seating? I might have friends join me.
-[ 70.41s][moshi] ⟨ret@70.17s⟩ Yes, Sushi Zen ⟦⚡SPAN@72.17s: ["Yes"]⟧ does have outdoor seating available. That sounds lovely for a gathering.
-      CALL: {"function": "get_restaurant_details", "arguments": {"restaurant_name": "Sushi Zen", "attribute": "outdoor_seating"}}
-[ 76.25s][user ] Great! I remember planning a birthday dinner… for six people.
-[ 80.51s][moshi] ⟨ret@80.35s⟩ You were planning a birthday ⟦⚡SPAN@82.35s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ dinner for six, needing outdoor seating, which is why you asked about that earlier.
-[ 87.43s][user ] Exactly! And… I have a dog. A Beagle.
-[ 92.18s][moshi] ⟨ret@92.10s⟩ Rusty, your ⟦⚡SPAN@93.86s: [2025-08-08] User has a Beagle named Rusty.⟧ Beagle! A very handsome fellow, I imagine. Does Rusty enjoy outings too?
-[102.00s][user ] He does, but he can't come to restaurants, sadly. Um, is it likely to rain later?
-[108.16s][moshi] ⟨ret@108.01s⟩ Scattered showers are expected ⟦⚡SPAN@110.01s: ["Scattered showers expected after 6 PM"]⟧ after 6 PM this evening. Perhaps an earlier dinner is best?
-      CALL: {"function": "get_weather", "arguments": {"location": "London"}}
-[114.52s][user ] Good point. I should probably check… is my address still on file? Just in ⟨ret@120.57s⟩ case.
-[120.89s][moshi] Yes, your address ⟦⚡SPAN@122.57s: [2025-06-15] User's home address is 743 Cedar Lane.⟧ is listed as 743 Cedar Lane. I can confirm that for you.
-[127.81s][user ] Oh, good. And… what about allergies? I always ⟨ret@131.76s⟩ forget.
-[132.00s][moshi] You have a peanut allergy. It's ⟦⚡SPAN@133.76s: [2025-06-20] User is allergic to peanuts.⟧ good to be mindful of that when ordering food.
-[133.24s][user ] «backchannel» Yeah.
-[136.47s][user ] Right, peanuts. Thank you for reminding me. That’s a relief.
-[140.12s][moshi] You’re very welcome. It’s my pleasure to help you stay comfortable and safe.
-[144.80s][user ] Well, that was helpful. I think I’m ready to order now.
-[148.62s][moshi] Wonderful! I’m glad I could assist you. Enjoy your sushi.
+[ 10.28s][user ] «backchannel» Yeah.
+[ 12.92s][user ] Hmm, I'm trying to remember… did I mention a trip I was ⟨ret@16.76s⟩ planning?
+[ 17.00s][moshi] You were planning a birthday ⟦⚡SPAN@18.76s: [2025-07-19] Past chat — Planning a birthday dinner: party of six; looking for outdoor seating.⟧ dinner for a party of six, and you mentioned wanting outdoor seating. Does that sound right?
+[ 24.41s][user ] Yes, that's it! I was thinking of somewhere Italian.
+[ 28.49s][moshi] Italian sounds wonderful. Do you have a particular area of London in mind?
+[ 30.74s][user ] «backchannel» Yeah, yeah.
+[ 33.55s][user ] Not really, somewhere central, I suppose. And… gluten-free options are ⟨ret@40.10s⟩ essential.
+[ 40.34s][moshi] You ⟦⚡SPAN@41.14s: [2025-10-29] User is gluten-free.⟧ are gluten-free, so we'll definitely prioritize restaurants with good gluten-free menus. I can certainly help with that.
+[ 49.41s][user ] That would be great, thanks. Um, what about sushi, actually?
+[ 53.32s][moshi] ⟨ret@53.24s⟩ Your favorite cuisine is ⟦⚡SPAN@55.24s: [2026-05-07] User's favorite cuisine is sushi.⟧ sushi, and I recall that. Would you like me to find some central London sushi restaurants with outdoor seating?
+[ 63.39s][user ] Actually, no sushi this time. Just thinking out loud.
+[ 67.64s][moshi] That's perfectly alright. Sometimes we just need to explore our options, don't we?
+[ 72.27s][user ] Yeah, welll… I also have a beagle, Rusty.
+[ 75.74s][moshi] That’s lovely! A beagle named Rusty. Such a cheerful breed.
+[ 81.37s][user ] He's a handful, honestly. I need to book him in for grooming soon.
+[ 85.33s][moshi] Oh, a grooming appointment for Rusty. That’s responsible pet ownership.
+[ 90.48s][user ] Do you think there are any good dog groomers near Cedar Lane?
+[ 93.84s][moshi] ⟨ret@93.77s⟩ Your address is 743 ⟦⚡SPAN@95.77s: [2025-06-15] User's home address is 743 Cedar Lane.⟧ Cedar Lane. Let me see what dog groomers are nearby… Pawsitive Vibes Grooming is 0.5 miles from your home, and has a 4.8-star rating.
+[104.67s][user ] Oh, that sounds good! Can you check their availability next ⟨ret@108.89s⟩ week?
+[109.05s][moshi] They have availability next ⟦⚡SPAN@110.65s: (tool result) Pawsitive Vibes Grooming is 0.5 miles from your home, and has a 4.8-star rating.⟧ Tuesday at 10:00 AM and Thursday at 2:00 PM. Which works best for you?… Tuesday at ten AM
+      CALL: {"function": "check_availability", "arguments": {"business": "Pawsitive Vibes Grooming", "date_range": "next week"}}
+[117.29s][user ] Tuesday at ten sounds perfect. Can you book that for ⟨ret@121.00s⟩ Rusty?
+[121.12s][moshi] Excellent, Rusty's appointment is ⟦⚡SPAN@123.00s: (tool result) Pawsitive Vibes Grooming has availability next Tuesday at 10:00 AM and Thursday at 2:00 PM.⟧ confirmed for Tuesday at 10:00 AM. I hope he enjoys his pampering… next Tuesday at ten.
+      CALL: {"function": "book_appointment", "arguments": {"business": "Pawsitive Vibes Grooming", "date": "Tuesday", "time": "10:00 AM", "pet": "Rusty"}}
+[126.54s][user ] «backchannel» Oh.
+[128.94s][user ] That's brilliant, thank you so much, Diolo.
+[131.49s][moshi] You’re very welcome, Casey. It’s been a pleasure helping you today.
