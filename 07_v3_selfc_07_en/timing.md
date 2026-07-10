@@ -4,43 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_selfc_07",
-#     "name": "Rennora",
+#     "name": "Ivy",
 #     "location": {
-#       "city": "Tokyo",
-#       "country": "Japan",
-#       "timezone": "Asia/Tokyo (JST, UTC+9)",
-#       "currency": "JPY (¥)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Japanese",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "50s",
-#     "language": "Japanese"
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
+#       "date": "2026-06-05",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
 #       "date": "2026-05-29",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "category": "home",
+#       "text": "User's home address is 585 Elm Street."
+#     },
+#     {
+#       "date": "2026-05-01",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
 #       "date": "2026-04-27",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
 #     },
 #     {
 #       "date": "2026-01-21",
-#       "category": "pet",
-#       "text": "User has a Siamese cat named Bella."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
 #       "date": "2025-10-16",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-29",
+#       "date": "2026-04-05",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-01",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -48,15 +66,7 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-07-12",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-05-31",
+#       "date": "2025-08-24",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
@@ -66,51 +76,65 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Perfect. And can you find me infor | S3 Hmm, that’s good to know. Are ther | S4 Excellent. Thanks for all your hel
+# EXAMINER(FDB-v2) 단계: S1 Set up a viewing for me at The Gra | S2 Is it open right now? | S3 What’s their rating? | S4 I’m a little nervous about the vie
 
      0.00s  user  발화 시작: Set up a viewing for me at The Grandview Lofts on June fifte
-     3.72s  <ret> 발화 (turn1 첫 프레임)
-     3.95s  agent 발화 시작: <ret> Great! Your viewing at The Grandview Lofts is confirme
+     3.53s  <ret> 발화 (turn1 첫 프레임)
+     3.76s  agent 발화 시작: <ret> Alright, I’ve scheduled a viewing for you at The Grand
      4.17s  user  발화 끝
-     5.24s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.25s]: (tool result) Viewing scheduled for The Grandview Lofts, June fifteent
-    10.20s  agent 발화 끝
-    10.48s  user  발화 시작: Actually, June sixteenth would be better.
-    12.82s  <ret> 발화 (turn3 첫 프레임)
-    12.83s  user  발화 끝
-    12.98s  agent 발화 시작: <ret> No problem at all. It’s now set for June sixteenth at 
-    14.74s  ⚡SPAN 주입 [d'=1.92s / d_lead=6.11s]: (tool result) Viewing rescheduled for The Grandview Lofts, June sixtee
-    19.06s  user  발화 시작: Perfect. And can you find me information on the neighborhood
-    19.09s  agent 발화 끝
-    22.33s  <ret> 발화 (turn5 첫 프레임)
-    22.56s  agent 발화 시작: <ret> The Arts District is known for its vibrant art scene a
-    22.76s  user  발화 끝
-    24.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.32s]: [source: CityData.com] The Grandview Lofts are located in the Arts Dis
-    27.73s  user  발화 시작: Is it a safe area?
-    27.89s  agent 발화 끝
-    29.32s  <ret> 발화 (turn7 첫 프레임)
-    29.48s  agent 발화 시작: <ret> It's considered safer than approximately fifty-two per
-    29.62s  user  발화 끝
-    31.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.11s]: [source: NeighborhoodScout] The Arts District has a crime index of six
-    37.59s  agent 발화 끝
-    37.65s  user  발화 시작: Hmm, that’s good to know. Are there any good coffee shops ne
-    42.19s  <ret> 발화 (turn9 첫 프레임)
-    42.46s  user  발화 끝
-    42.59s  agent 발화 시작: <ret> There are three coffee shops nearby: Brew & Bloom, Dai
-    44.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: (tool result) Three coffee shops within one mile: Brew & Bloom, Daily 
-    46.22s  user  발화 시작: Right.
-    46.95s  user  발화 끝
-    49.22s  agent 발화 끝
-    49.51s  user  발화 시작: Brew & Bloom sounds nice. What are their hours?
-    52.89s  <ret> 발화 (turn12 첫 프레임)
-    53.29s  agent 발화 시작: <ret> Brew & Bloom is open from seven AM to seven PM every d
-    53.48s  user  발화 끝
-    54.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Brew & Bloom is open seven AM to seven PM, seven days a 
-    58.93s  user  발화 시작: Excellent. Thanks for all your help, Tellar.
-    59.08s  agent 발화 끝
-    61.37s  agent 발화 시작: You’re very welcome. It’s my pleasure to support you through
-    61.52s  user  발화 끝
-    68.22s  agent 발화 끝
-    68.30s  user  발화 시작: I’m also looking at a place called Willow Creek Apartments…
-    71.77s  user  발화 끝
-    72.11s  agent 발화 시작: Willow Creek Apartments, a good option. What would you like 
-    77.39s  agent 발화 끝
+     5.05s  ⚡SPAN 주입 [d'=1.52s / d_lead=6.11s]: (tool result) Viewing scheduled for June fifteenth at 2:00 PM.
+     9.87s  agent 발화 끝
+    10.18s  user  발화 시작: Actually, make that June sixteenth.
+    12.52s  <ret> 발화 (turn3 첫 프레임)
+    12.58s  user  발화 끝
+    12.68s  agent 발화 시작: <ret> No problem at all. I’ve rescheduled your viewing for T
+    14.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.25s]: (tool result) Viewing rescheduled for June sixteenth at 2:00 PM.
+    20.88s  user  발화 시작: Great. And can you find me the nearest coffee shop to that a
+    20.92s  agent 발화 끝
+    24.40s  <ret> 발화 (turn5 첫 프레임)
+    24.64s  agent 발화 시작: <ret> The closest coffee shop is The Daily Grind, just point
+    24.87s  user  발화 끝
+    26.40s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) “The Daily Grind” is 0.3 miles away.
+    30.45s  user  발화 시작: Is it open right now?
+    30.48s  agent 발화 끝
+    31.79s  <ret> 발화 (turn7 첫 프레임)
+    31.95s  agent 발화 시작: <ret> Yes, The Daily Grind is currently open and will be unt
+    32.06s  user  발화 끝
+    33.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.60s]: (tool result) Open until 6:00 PM.
+    37.54s  agent 발화 끝
+    37.58s  user  발화 시작: Perfect. I might want to grab a bite…
+    40.17s  user  발화 끝
+    42.21s  user  발화 시작: …to eat after. Are there any Italian restaurants nearby?
+    46.14s  <ret> 발화 (turn10 첫 프레임)
+    46.38s  user  발화 끝
+    46.53s  agent 발화 시작: <ret> Luigi’s, an Italian restaurant, is about point seven m
+    48.14s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) “Luigi’s” is 0.7 miles away.
+    49.67s  user  발화 시작: Right.
+    50.35s  user  발화 끝
+    52.32s  agent 발화 끝
+    53.57s  user  발화 시작: What’s their rating?
+    54.43s  <ret> 발화 (turn13 첫 프레임)
+    54.83s  agent 발화 시작: <ret> Luigi’s has a rating of four and a half stars. [happy]
+    54.85s  user  발화 끝
+    56.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) 4.5 stars.
+    60.39s  user  발화 시작: Sounds good. Okay, can you set a reminder for me to leave fo
+    60.48s  agent 발화 끝
+    66.52s  <ret> 발화 (turn15 첫 프레임)
+    66.68s  agent 발화 시작: <ret> I’ve set a reminder for you to leave for the viewing a
+    66.83s  user  발화 끝
+    68.12s  ⚡SPAN 주입 [d'=1.60s / d_lead=6.71s]: (tool result) Reminder set for June sixteenth, 1:30 PM.
+    73.39s  user  발화 시작: Thanks so much, that’s really helpful.
+    73.39s  agent 발화 끝
+    75.52s  user  발화 끝
+    75.92s  agent 발화 시작: You’re very welcome. It’s my pleasure to help you get organi
+    81.01s  agent 발화 끝
+    82.01s  user  발화 시작: I’m a little nervous about the viewing, to be honest.
+    84.74s  user  발화 끝
+    85.10s  agent 발화 시작: It’s perfectly normal to feel nervous about something new. W
+    88.87s  user  발화 시작: Uh-huh.
+    89.59s  user  발화 끝
+    91.55s  agent 발화 끝
+    91.55s  user  발화 시작: That would be great, actually.
+    93.21s  user  발화 끝
+    93.33s  agent 발화 시작: Wonderful. Sometimes just voicing your concerns can make a b
+   101.85s  agent 발화 끝

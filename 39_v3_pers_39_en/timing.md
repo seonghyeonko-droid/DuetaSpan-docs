@@ -4,17 +4,17 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_39",
-#     "name": "세재",
+#     "name": "Lucia",
 #     "location": {
-#       "city": "Seoul",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Korean",
+#     "nationality": "American",
 #     "gender": "female",
 #     "age_range": "50s",
-#     "language": "Korean"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 세재, it’s so lovely to connect with you. I’m Aril, and I help
-     8.99s  agent 발화 끝
-     9.10s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a bit lost, I 
-    17.40s  agent 발화 시작: It’s completely understandable to feel that way, 세재. Many pe
-    17.54s  user  발화 끝
-    21.42s  user  발화 시작: Wow.
-    22.24s  user  발화 끝
-    28.30s  agent 발화 끝
-    28.98s  user  발화 시작: [sigh] Well, I moved here last year for my husband’s job, an
-    38.67s  user  발화 끝
-    38.85s  agent 발화 시작: That’s a big adjustment, and it takes courage to acknowledge
-    51.28s  agent 발화 끝
+     0.00s  agent 발화 시작: Lucia, it’s wonderful to connect with you. I’m Aril, and I h
+     8.11s  agent 발화 끝
+     8.26s  user  발화 시작: Aril… that’s a lovely name. I was just thinking, it's been s
+    15.67s  agent 발화 시작: It’s completely understandable to feel that way, especially 
+    15.81s  user  발화 끝
+    18.99s  user  발화 시작: Wow.
+    19.80s  user  발화 끝
+    24.71s  agent 발화 끝
+    25.36s  user  발화 시작: Welll… I guess I worry about putting myself out there. It fe
+    32.97s  user  발화 끝
+    33.19s  agent 발화 시작: That’s a very common feeling, Lucia. Starting can be the har
+    41.53s  agent 발화 끝

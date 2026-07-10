@@ -6,15 +6,15 @@
 #     "user_id": "v3_to_ot_12",
 #     "name": "Rowan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
@@ -58,23 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Jal, I was just wondering who  | S2 Wow, I had no idea! I always assum | S3 Did you remember to take the trash | S4 Sorry about that, where was Van Ha
+# EXAMINER(FDB-v2) 단계: S1 I was just listening to Beat It, a | S2 Did you send it to accounting yet? | S3 Sorry about that, where were we? O | S4 That’s too bad. It would have been
 
-     0.00s  user  발화 시작: Hey Jal, I was just wondering who actually played the guitar
-     6.85s  <ret> 발화 (turn1 첫 프레임)
-     7.08s  agent 발화 시작: <ret> That’s a fantastic question, and a really memorable so
-     7.23s  user  발화 끝
-     8.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.47s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-    11.30s  user  발화 시작: Okay.
-    11.94s  user  발화 끝
-    17.89s  agent 발화 끝
-    18.02s  user  발화 시작: Wow, I had no idea! I always assumed it was someone more clo
-    24.41s  user  발화 시작: Did you remember to take the trash out?
-    24.60s  user  발화 끝
-    26.57s  user  발화 시작: Sorry about that, where was Van Halen when he recorded it? W
-    26.76s  user  발화 끝
-    31.19s  <ret> 발화 (turn6 첫 프레임)
-    31.58s  agent 발화 시작: <ret> He was gaining quite a bit of recognition— By 1982, Ed
-    31.76s  user  발화 끝
-    32.55s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.67s]: [source: Rolling Stone] By 1982, Eddie Van Halen and Van Halen had rel
-    43.60s  agent 발화 끝
+     0.00s  user  발화 시작: I was just listening to Beat It, and that guitar solo is inc
+     4.70s  <ret> 발화 (turn1 첫 프레임)
+     4.93s  agent 발화 시작: <ret> Eddie Van Halen played the guitar solo on Michael Jack
+     5.14s  user  발화 끝
+     6.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     7.34s  user  발화 시작: Okay.
+     7.88s  user  발화 끝
+    11.18s  agent 발화 끝
+    11.40s  user  발화 시작: Wow, I didn't know that! He's amazing. Hey, Mark, did you fi
+    16.73s  user  발화 시작: Did you send it to accounting yet?
+    16.91s  user  발화 끝
+    18.70s  user  발화 시작: Sorry about that, where were we? Oh right, Eddie Van Halen. 
+    18.85s  user  발화 끝
+    24.68s  <ret> 발화 (turn6 첫 프레임)
+    25.07s  agent 발화 시작: <ret> Beyond “Beat It,” Eddie Van Halen didn’t collaborate o
+    25.28s  user  발화 끝
+    26.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.06s]: [source: Rolling Stone] Van Halen did not collaborate with Michael Jac
+    33.13s  agent 발화 끝
+    33.80s  user  발화 시작: That’s too bad. It would have been cool to hear more of them
+    39.22s  user  발화 끝

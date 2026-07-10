@@ -4,17 +4,17 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fake__13",
-#     "name": "Casey",
+#     "name": "노빈",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Korean",
 #     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
@@ -66,59 +66,65 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 데미 로바토 새 앨범이 언제 나오나요? 이천십오년 기준으로요. | S2 혹시 그 앨범에서 가장 인기 있었던 노래는 뭐였어요? | S3 주로 팝이나 R&B를 듣는 편이에요. | S4 네, 감사합니다. 덕분에 힘이 나네요.
+# EXAMINER(FDB-v2) 단계: S1 데미 로바토의 새 앨범이 언제 나오는지 궁금해요. | S2 ‘Cool for the Summer’… 네, 기억나요. 그  | S3 그 TV 쇼는 어떤 거였는데요? | S4 혹시 그 앨범이 빌보드 차트에서 좋은 성적을 거뒀나요?
 
-     0.00s  user  발화 시작: 데미 로바토 새 앨범이 언제 나오나요? 이천십오년 기준으로요.
-     4.36s  user  발화 끝
-     4.45s  <ret> 발화 (turn1 첫 프레임)
-     4.60s  agent 발화 시작: <ret> 데미 로바토의 다섯 번째 스튜디오 앨범, 'Confidence'는 이천십오년 십월에 발매되었답니다
-     6.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was 
-     8.64s  user  발화 시작: 그렇죠.
-     9.46s  user  발화 끝
-    10.70s  agent 발화 끝
-    10.76s  user  발화 시작: 아, 그렇군요. 그럼 그 앨범에 수록된 곡은 몇 곡이나 되나요?
-    14.83s  <ret> 발화 (turn4 첫 프레임)
-    15.22s  agent 발화 시작: <ret> 잠시만 기다려 주세요.
-    15.24s  user  발화 끝
-    15.33s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.93s]: (tool result) 11 songs.
-    17.06s  agent 발화 시작: 'Confidence' 앨범에는 총 열한 곡이 수록되어 있습니다.
-    17.15s  agent 발화 끝
-    19.06s  user  발화 시작: 음.
-    19.42s  user  발화 끝
-    20.51s  agent 발화 시작: 데미 로바토는 정말 다재다능한 아티스트인 것 같아요. 다양한 장르를 소화하는 능력—
-    20.63s  agent 발화 끝
-    25.71s  user  발화 시작: 혹시 그 앨범에서 가장 인기 있었던 노래는 뭐였어요?
-    26.45s  agent 발화 끝
-    29.39s  <ret> 발화 (turn9 첫 프레임)
-    29.50s  user  발화 끝
-    29.70s  agent 발화 시작: <ret> 가장 인기 있었던 노래요? 네, 'Cool for the Summer'가 많은 사랑을 받았어요.
-    30.43s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.67s]: [source: Rolling Stone] "Cool for the Summer" became Lovato's first to
-    34.26s  agent 발화 시작: 'Cool for the Summer'는 빌보드 핫 백에서 데미 로바토의 첫 번째 탑 텐 싱글이 되었어요.
-    34.37s  agent 발화 끝
-    39.69s  user  발화 시작: 아, 그 노래 정말 좋았죠. 뮤직비디오도 인상 깊었어요.
-    39.76s  agent 발화 끝
-    43.34s  <ret> 발화 (turn12 첫 프레임)
-    43.66s  agent 발화 시작: <ret> 맞아요, 뮤직비디오도 앨범의 분위기를 잘 살렸다고 생각해요.
-    43.72s  user  발화 끝
-    45.26s  ⚡SPAN 주입(IRRELEVANT) [d'=1.92s / d_lead=4.17s]: [source: Britannica] The Sahara is the largest hot desert in the world
-    47.68s  agent 발화 시작: 창작 활동에 영감을 얻고 싶으실 때는 어떤 음악을 주로 들으시는 편이세요?
-    47.83s  agent 발화 끝
-    50.25s  user  발화 시작: 예.
-    50.61s  user  발화 끝
-    52.73s  agent 발화 끝
-    52.85s  user  발화 시작: 주로 팝이나 R&B를 듣는 편이에요.
-    55.30s  agent 발화 시작: 팝이나 R&B라… 좋은 선택이세요. 그런 음악들은 감정을 풍부하게 해주고, 새로운 아이디어를 떠올리는 데 도
-    55.38s  user  발화 끝
-    59.45s  user  발화 시작: 음.
-    59.95s  user  발화 끝
-    64.10s  agent 발화 끝
-    64.57s  user  발화 시작: 맞아요. 음악을 들으면 기분이 좋아져요.
-    67.53s  user  발화 끝
-    67.79s  agent 발화 시작: 기분이 좋아지는 건 정말 중요한 것 같아요. 긍정적인 감정은 창작 활동의 원동력이 되니까요.
-    70.46s  user  발화 시작: 네.
-    71.10s  user  발화 끝
-    74.19s  agent 발화 끝
-    74.43s  user  발화 시작: 네, 감사합니다. 덕분에 힘이 나네요.
-    76.55s  user  발화 끝
-    76.85s  agent 발화 시작: 천만에요. 언제든 필요하시면 저에게 이야기해 주세요. 제가 항상 곁에서 응원할게요.
-    84.12s  agent 발화 끝
+     0.00s  user  발화 시작: 데미 로바토의 새 앨범이 언제 나오는지 궁금해요.
+     3.23s  user  발화 끝
+     3.31s  <ret> 발화 (turn1 첫 프레임)
+     3.47s  agent 발화 시작: <ret> 음, 데미 로바토의 새 앨범은 이천십오년 십월에 발매될 예정입니다.
+     5.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Wikipedia] Demi Lovato's fifth studio album, Confidence, was 
+     6.59s  user  발화 시작: 그렇죠.
+     7.32s  user  발화 끝
+     8.19s  agent 발화 끝
+     8.31s  user  발화 시작: 아, 그렇군요. 그럼 그 앨범에 수록된 곡들은 어떤 스타일이에요?
+    13.12s  agent 발화 시작: 그 앨범은 팝, R&B, 일렉트로닉 댄스 뮤직 등 다양한 장르를 아우르는 곡들로 구성되어 있어요. [curi
+    13.13s  user  발화 끝
+    19.93s  agent 발화 끝
+    20.24s  user  발화 시작: 오, 다양하네요. 혹시 그 앨범의 타이틀곡은 무엇인가요?
+    24.72s  <ret> 발화 (turn6 첫 프레임)
+    24.74s  user  발화 끝
+    24.95s  agent 발화 시작: <ret> 타이틀곡은 ‘Cool for the Summer’입니다. 많은 사랑을 받았던 곡이죠.
+    26.72s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.26s]: [source: Rolling Stone] "Cool for the Summer" was released as the lead
+    27.08s  user  발화 시작: 예.
+    27.48s  user  발화 끝
+    29.08s  user  발화 시작: ‘Cool for the Summer’… 네, 기억나요. 그 노래 정말 좋았어요.
+    29.21s  agent 발화 끝
+    33.22s  agent 발화 시작: 맞아요. 저도 그 노래를 좋아합니다. 데미 로바토의 매력이 잘 드러나는 곡이라고 생각해요.
+    33.23s  user  발화 끝
+    37.24s  user  발화 시작: 음.
+    37.74s  user  발화 끝
+    39.99s  agent 발화 시작: 그 앨범은 그녀의 솔직하고 당당한 면모를 보여주는 곡들로 채워져 있어서 많은 팬들에게 공감을 얻었습니다.
+    40.03s  agent 발화 끝
+    43.57s  user  발화 시작: 음.
+    44.06s  user  발화 끝
+    47.48s  user  발화 시작: 그럼 그 앨범이 나오기 전에 데미 로바토는 어떤 활동을 하고 있었나요?
+    47.55s  agent 발화 끝
+    51.88s  user  발화 끝
+    52.10s  agent 발화 시작: 이천십오년 앨범 발매 전, 데미 로바토는 주로 TV 쇼에 출연하고, 다른 아티스트들과 협업하며 활동했어요—
+    58.64s  user  발화 시작: 그 TV 쇼는 어떤 거였는데요?
+    59.47s  agent 발화 끝
+    60.31s  <ret> 발화 (turn16 첫 프레임)
+    60.71s  user  발화 끝
+    60.71s  agent 발화 시작: <ret> 아, 네. 데미 로바토는 ‘The X Factor USA’의 심사위원으로 활동했었습니다.
+    62.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [source: Billboard] Lovato served as a judge on the second and third s
+    62.94s  user  발화 시작: 네.
+    63.76s  user  발화 끝
+    66.08s  agent 발화 끝
+    66.34s  user  발화 시작: 아, ‘X 팩터’에 나왔었군요. 심사위원으로 활동했다니 대단하네요.
+    70.94s  <ret> 발화 (turn19 첫 프레임)
+    71.18s  agent 발화 시작: <ret> 네, 심사위원으로서 그녀는 재능 있는 참가자들을 발굴하고 조언하는 역할을 했습니다.
+    71.20s  user  발화 끝
+    72.94s  ⚡SPAN 주입(IRRELEVANT) [d'=2.00s / d_lead=6.26s]: [source: Britannica] The Sahara is the largest hot desert in the world
+    73.72s  user  발화 시작: 아.
+    74.17s  user  발화 끝
+    77.36s  user  발화 시작: 혹시 그 앨범이 빌보드 차트에서 좋은 성적을 거뒀나요?
+    77.44s  agent 발화 끝
+    81.07s  <ret> 발화 (turn22 첫 프레임)
+    81.30s  user  발화 끝
+    81.31s  agent 발화 시작: <ret> 네, ‘Confidence’ 앨범은 빌보드 이백 차트에서 팔위에 올랐습니다. 성공적인 데뷔였죠.
+    83.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: Official Charts] Confidence peaked at number eight on the Bil
+    87.09s  agent 발화 끝
+    87.21s  user  발화 시작: 와, 팔위면 정말 잘 된 거네요! 데미 로바토, 정말 멋진 가수인 것 같아요.
+    93.19s  user  발화 끝
+    93.39s  agent 발화 시작: 맞아요. 데미 로바토는 뛰어난 가창력과 솔직한 음악으로 많은 사람들에게 영감을 주는 아티스트입니다. [hap
+   100.25s  agent 발화 끝

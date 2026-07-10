@@ -4,17 +4,17 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Hugo",
+#     "name": "하형",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "male",
+#     "nationality": "Korean",
+#     "gender": "non-binary",
 #     "age_range": "early 20s",
-#     "language": "English"
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
@@ -61,23 +61,27 @@
 # }
 
 
-     0.00s  agent 발화 시작: 안녕하세요, 휴고님. 저는 클렌이라고 해요. 돈 관리와 예산 짜는 걸 도와드리는 전문가랍니다.
-     6.12s  agent 발화 끝
-     6.32s  user  발화 시작: 아, 네. 뉴질랜드 여행 계획 세우고 있는데, 혹시 추천해 줄 만한 곳 있어요?
-    11.39s  agent 발화 시작: 뉴질랜드 여행을 계획하고 계시는군요. 어떤 스타일의 여행을 선호하시나요? 액티비티를 좋아하시는지, 아니면 조
-    11.50s  user  발화 끝
-    16.68s  user  발화 시작: 아.
-    17.12s  user  발화 끝
-    21.77s  agent 발화 끝
-    21.84s  agent 발화 시작: 휴고님께서는 활동적인 여행보다는 조용히 휴식을 취하는 걸 더 좋아하실 것 같아요. 퀸스타운 근처에 있는 와카
-    34.15s  user  발화 시작: 잠깐만요, 혹시 렌터카는 미리 예약해야 할까요?
-    34.92s  agent 발화 끝
-    37.73s  <ret> 발화 (turn6 첫 프레임)
-    37.80s  agent 발화 시작: <ret> 퀸스타운에서 십월 일일부터 칠일 동안 렌터카를 빌릴 수 있으며, 하루 육십오달러부터 시작합니다.
-    37.98s  user  발화 끝
-    38.85s  ⚡SPAN 주입 [d'=1.12s / d_lead=6.11s]: (tool result) Available cars from $65 per day.
-    40.12s  user  발화 시작: 응.
-    40.56s  user  발화 끝
-    43.67s  user  발화 시작: 오, 생각보다 괜찮네요. 그럼 바로 예약해 주세요.
-    43.92s  agent 발화 끝
-    47.55s  user  발화 끝
+     0.00s  agent 발화 시작: 하형 씨, 안녕하세요. 저는 클렌이라고 해요. 돈 관리와 예산 짜는 걸 도와드리는 상담사입니다.
+     6.58s  agent 발화 끝
+     6.63s  user  발화 시작: 아, 안녕하세요. 뉴질랜드 여행 계획하고 있는데, 혹시 추천해 줄 만한 곳 있을까요?
+    12.22s  <ret> 발화 (turn2 첫 프레임)
+    12.37s  agent 발화 시작: <ret> 십월에 뉴질랜드 여행을 계획하고 계시는군요. 정말 멋진 곳이에요. 여행 스타일을 좀 더 알려주실 
+    12.47s  user  발화 끝
+    14.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: [2025-12-04] User is planning a trip to New Zealand in October.
+    14.80s  user  발화 시작: 응.
+    15.29s  user  발화 끝
+    18.51s  user  발화 시작: 음… 저는 좀 조용한 곳을 좋아하고, 자연을 즐기는 걸 좋아해요. 너무 붐비는 관광지는 피하고 싶어요.
+    18.72s  agent 발화 끝
+    25.59s  agent 발화 시작: 조용하고 자연을 즐기는 스타일이시군요. 뉴질랜드 남섬의 퀸스타운 근처에 있는 와카티푸 호수 주변은 어떠세요?
+    25.78s  user  발화 끝
+    35.68s  user  발화 시작: 혹시 거기 가는 데 비행기표는 얼마나 해요?
+    36.49s  agent 발화 끝
+    37.99s  <ret> 발화 (turn7 첫 프레임)
+    38.22s  agent 발화 시작: <ret> 비행기표 가격이 궁금하시군요. 부산에서 퀸스타운까지 가는 가장 저렴한 항공편을 찾아볼게요. 부산에
+    38.45s  user  발화 끝
+    39.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.15s]: (tool result) 최저가 ₩1,890,000부터 있습니다.
+    44.35s  user  발화 시작: 아.
+    44.66s  user  발화 끝
+    50.30s  agent 발화 시작: 가격이 조금 부담스러울 수도 있겠네요. 다른 도시를 경유하면 좀 더 저렴해질 수도 있습니다.
+    50.37s  agent 발화 끝
+    56.46s  agent 발화 끝

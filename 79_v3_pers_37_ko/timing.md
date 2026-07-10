@@ -4,17 +4,17 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Noah",
+#     "name": "노연",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "male",
+#     "nationality": "Korean",
+#     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
@@ -51,13 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: 노아 씨, 안녕하세요. 저는 후나르예요. 새로운 도시에서 안정을 찾도록 돕는 웰니스 코치랍니다. 시드니에서 
-    10.65s  user  발화 시작: 음… 솔직히 좀 외로운데요. 여기 와서 아는 사람 하나 없이 시작하니까, 뭔가 텅 빈 기분이랄까.
-    10.76s  agent 발화 끝
-    17.08s  user  발화 끝
-    17.14s  agent 발화 시작: [curious] 아, 그런 외로움이 드시는군요. 새로운 환경에 적응하는 건 쉽지 않죠. 혹시 어떤 점이 가
-    26.78s  agent 발화 끝
-    27.16s  user  발화 시작: 그냥… 매일 혼자 밥 먹고, 혼자 걸어 다니고. 주말에는 갈 데도 없고, 같이 이야기할 사람도 없어요.
-    33.64s  user  발화 끝
-    33.66s  agent 발화 시작: 혼자만의 시간이 익숙하지 않으시다면 더욱 힘들 수 있겠네요. 혹시 시드니에 오기 전에 어떤 활동들을 즐겨 하
-    42.51s  agent 발화 끝
+     0.00s  agent 발화 시작: 노연 씨, 안녕하세요. 저는 여러분의 정착을 돕는 웰니스 코치, 후나예요. 부산으로 오신 걸 환영드리고, 새
+    11.72s  user  발화 시작: 후나라고 하셨죠? 이름이 좀 특이하시네요. 혹시… 일본 이름인가요?
+    11.82s  agent 발화 끝
+    15.74s  user  발화 끝
+    15.87s  agent 발화 시작: [curious] 아, 물어봐 주셔서 고마워요. 후나는 제 부모님께서 지어주신 이름이에요. 특별한 의미가 담
+    24.61s  user  발화 시작: 어어.
+    25.24s  user  발화 끝
+    27.41s  user  발화 시작: 부산에 온 지 얼마 안 됐는데, 사실 아직 뭘 해야 할지 잘 모르겠어요. 그냥 집에서만 지내는 것 같고…
+    27.65s  agent 발화 끝
+    33.39s  user  발화 끝
+    33.74s  agent 발화 시작: 새로운 곳에 오셨을 때는 그런 감정을 느끼시는 게 당연해요. 낯선 환경에 적응하는 데는 시간이 필요하니까요.
+    44.55s  agent 발화 끝

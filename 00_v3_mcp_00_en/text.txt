@@ -6,15 +6,15 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
     "user_id": "v3_mcp_00",
     "name": "Nina",
     "location": {
-      "city": "Berlin",
-      "country": "Germany",
-      "timezone": "Europe/Berlin (CET, UTC+1)",
+      "city": "Paris",
+      "country": "France",
+      "timezone": "Europe/Paris (CET, UTC+1)",
       "currency": "EUR (€)"
     },
-    "nationality": "German",
+    "nationality": "French",
     "gender": "female",
     "age_range": "40s",
-    "language": "German"
+    "language": "French"
   },
   "saved_memories": [
     {
@@ -64,38 +64,46 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.75s⟩ Paris?
-[  3.98s][moshi] Certainly. ⟦⚡SPAN@5.03s: (tool result) 48.8584° N, 2.2945° E⟧ The Eiffel Tower in Paris is located at 48.8584 degrees North, 2.2945 degrees East.
+[  0.00s][user ] Can you give me the coordinates for the Eiffel Tower in ⟨ret@3.33s⟩ Paris?
+[  3.56s][moshi] The ⟦⚡SPAN@4.61s: (tool result) 48.8584° N, 2.2945° E⟧ Eiffel Tower is located at 48.8584 degrees North, 2.2945 degrees East. It's quite a landmark!
       CALL: {"function": "maps_geo", "arguments": {"location": "Eiffel Tower, Paris"}}
-[ 11.13s][user ] «backchannel» Right.
-[ 14.37s][user ] Okay, great. And how far is that from, say, the Louvre ⟨ret@17.49s⟩ Museum?
-[ 17.88s][moshi] It’s approximately ⟦⚡SPAN@19.49s: (tool result) 3.1 kilometers⟧ 3.1 kilometers from the Eiffel Tower to the Louvre Museum. A pleasant walk, really.
-      CALL: {"function": "maps_distance", "arguments": {"start": "48.8584° N, 2.2945° E", "end": "Louvre Museum, Paris"}}
-[ 25.83s][user ] That sounds doable. Is there a good route for ⟨ret@29.11s⟩ walking?
-[ 29.43s][moshi] Absolutely. A walking ⟦⚡SPAN@30.95s: (tool result) Along the Seine, estimated time 45 minutes.⟧ route along the Seine is estimated to take around 45 minutes.
-      CALL: {"function": "maps_directions", "arguments": {"start": "Eiffel Tower, Paris", "end": "Louvre Museum, Paris", "mode": "walking"}}
-[ 33.53s][user ] «backchannel» Oh.
-[ 35.13s][moshi] «interrupted» It's a beautiful walk, passing by several charming cafes and boutiques—
-[ 39.76s][user ] «interrupts_prev» Are there any good bookstores along that route?
-[ 42.89s][moshi] That’s a lovely question! Yes, there's Shakespeare and Company, a famous English-language bookstore, a bit off the direct route, but worth it.
-[ 46.00s][user ] «backchannel» Okay.
-[ 52.27s][user ] Oh, that sounds perfect! Can you give me directions to Shakespeare and Company from the ⟨ret@57.88s⟩ Louvre?
-[ 58.20s][moshi] Of ⟦⚡SPAN@59.16s: (tool result) 25 minutes, along the Seine.⟧ course. From the Louvre, it’s about a 25-minute walk along the Seine.
-      CALL: {"function": "maps_directions", "arguments": {"start": "Louvre Museum, Paris", "end": "Shakespeare and Company, Paris", "mode": "walking"}}
-[ 66.05s][user ] Wonderful. I think I'll plan that. Is it usually crowded there?
-[ 70.62s][moshi] Shakespeare and Company is quite popular, especially with tourists, so it can get crowded, yes. But it’s a magical place.
-[ 78.86s][user ] [happy] Good to know! Maybe I’ll go early. Could you check if they have any events happening ⟨ret@84.30s⟩ tomorrow?
-[ 84.69s][moshi] Yes, they have ⟦⚡SPAN@86.30s: (tool result) Poetry reading, 7 PM.⟧ a poetry reading scheduled for 7 PM tomorrow evening.
-      CALL: {"function": "event_search", "arguments": {"location": "Shakespeare and Company, Paris", "date": "tomorrow"}}
-[ 89.90s][user ] A poetry reading! That’s fantastic. Can you add a reminder to my calendar for 6:45 PM ⟨ret@97.36s⟩ tomorrow?
-[ 97.59s][moshi] Certainly! A reminder ⟦⚡SPAN@99.36s: (tool result) Reminder set for tomorrow, 6:45 PM.⟧ for the poetry reading has been set for 6:45 PM tomorrow.
-      CALL: {"function": "calendar_add", "arguments": {"event": "Poetry reading at Shakespeare and Company", "time": "6:45 PM", "date": "tomorrow"}}
-[104.39s][user ] Perfect. That's really helpful.
-[106.67s][moshi] I’m so glad I could assist you in planning your day! It sounds like a lovely itinerary.
-[112.57s][user ] I think it will be. One last thing—is there a nice place for dinner near Shakespeare and Company?
-[119.40s][moshi] ⟨ret@119.16s⟩ There’s Le Bouillon ⟦⚡SPAN@121.16s: (tool result) Le Bouillon Chartier, 10 minutes walk.⟧ Chartier, a traditional French restaurant, about a 10-minute walk from the bookstore.
-      CALL: {"function": "restaurant_search", "arguments": {"location": "Shakespeare and Company, Paris", "cuisine": "French"}}
-[125.77s][user ] Le Bouillon Chartier, okay. I've heard of that place.
-[129.92s][moshi] It’s known for its classic French cuisine and affordable prices. A very popular spot, though!
-[137.40s][user ] Right. Well, thank you so much for all your help.
-[139.95s][moshi] You're very welcome! Enjoy your explorations in Paris, and remember to embrace the unexpected moments. That’s where the best memories are made.
+[  7.18s][user ] «backchannel» Exactly.
+[ 14.96s][user ] That’s helpful. Now, can you find me a highly-rated French restaurant ⟨ret@19.90s⟩ nearby?
+[ 20.29s][moshi] Le Jules Verne ⟦⚡SPAN@21.90s: (tool result) Le Jules Verne: 4.6 stars, 0.1km⟧ is a French restaurant 0.1 kilometers away, with a 4.6-star rating. It’s in the Eiffel Tower itself.
+      CALL: {"function": "maps_search", "arguments": {"query": "French restaurant", "latitude": 48.8584, "longitude": 2.2945, "radius": "1km", "sort_by": "rating"}}
+[ 28.77s][user ] Wow, in the tower? Is it ⟨ret@31.52s⟩ expensive?
+[ 31.83s][moshi] Le Jules Verne ⟦⚡SPAN@33.36s: (tool result) Price range: $$$$⟧ is in the $$$$ price range, indicating it’s quite an expensive dining experience.
+      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJ0wbi0W-gEmsR6jB9E54-wJ0"}}
+[ 38.76s][user ] Oh, okay. Maybe something a bit more affordable. Could you look for something around fifty euros per ⟨ret@45.71s⟩ person?
+[ 46.00s][moshi] Bouillon Chartier has ⟦⚡SPAN@47.71s: (tool result) Bouillon Chartier: 4.2 stars, 1.8km⟧ a 4.2-star rating and is 1.8 kilometers away. It’s in the more affordable €-€€ price range.
+      CALL: {"function": "maps_search", "arguments": {"query": "French restaurant", "latitude": 48.8584, "longitude": 2.2945, "radius": "2km", "price_range": "€-€€"}}
+[ 55.34s][user ] That sounds much better. Can you check if they have availability for tomorrow evening around 8 ⟨ret@61.80s⟩ pm?
+[ 61.88s][moshi] Excellent! I’ve ⟦⚡SPAN@63.40s: (tool result) Reservation confirmed: Bouillon Chartier, tomorrow at 8:00 PM for 2 people. Confirmation #BC7892⟧ confirmed a reservation for you at Bouillon Chartier tomorrow at 8 pm for two people. Your confirmation number is BC7892.
+      CALL: {"function": "restaurant_reserve", "arguments": {"restaurant_name": "Bouillon Chartier", "date": "tomorrow", "time": "8pm", "party_size": "2"}}
+[ 73.26s][user ] Perfect! That’s a huge weight off my mind.
+[ 76.98s][moshi] I’m glad I could help. Planning a nice evening is always a good idea.
+[ 78.39s][user ] «backchannel» Okay.
+[ 81.28s][user ] I’m meeting a friend I haven’t seen in ages.
+[ 84.37s][moshi] «interrupted» It’s wonderful to reconnect with old friends—
+[ 86.89s][user ] «interrupts_prev» …do they have a dress code?
+[ 88.40s][moshi] ⟨ret@88.32s⟩ Bouillon Chartier ⟦⚡SPAN@89.76s: (tool result) Dress code: Casual⟧ is known for being quite casual.
+      CALL: {"function": "restaurant_details", "arguments": {"restaurant_name": "Bouillon Chartier"}}
+[ 91.98s][moshi] The dress code is casual, so you can dress comfortably.
+[ 96.95s][user ] Fantastic. Could you set a reminder for me to leave for the restaurant at 7:15 pm ⟨ret@103.04s⟩ tomorrow?
+[103.44s][moshi] I’ve set a ⟦⚡SPAN@105.04s: (tool result) Reminder set: Tomorrow at 7:15 PM - Leave for Bouillon Chartier⟧ reminder for you to leave for Bouillon Chartier tomorrow at 7:15 pm.
+      CALL: {"function": "reminder_set", "arguments": {"time": "tomorrow 7:15pm", "message": "Leave for Bouillon Chartier"}}
+[109.47s][user ] You’re a lifesaver, Nellara. I’m terrible at remembering these things.
+[114.14s][moshi] It's perfectly alright to need a little help with the details. That’s what I’m here for!
+[120.75s][user ] So, this friend… we had a bit of a falling out last year. I’m a little nervous.
+[126.31s][moshi] It’s completely normal to feel anxious before reconnecting after a disagreement. It takes courage to reach out.
+[135.26s][user ] I just want everything…
+[138.36s][user ] …to go smoothly. Any advice?
+[140.72s][moshi] Focus on listening actively and expressing your feelings calmly. Being open and understanding is key.
+[148.11s][user ] That’s really good advice. What if they bring up the argument?
+[152.06s][moshi] Acknowledge their feelings and try to find common ground. It’s about understanding, not necessarily agreeing.
+[159.26s][user ] Okay, that makes sense. I’m still a little worried, but better prepared.
+[163.96s][moshi] It’s wonderful you’re going into this with a thoughtful approach. That’s a great first step.
+[170.78s][user ] Thanks, Nellara. You’ve really helped me feel more confident.
+[174.20s][moshi] [happy] You are very welcome. I’m so pleased to hear that. Have a lovely evening with your friend.
+[179.21s][user ] I think I will.
+[181.02s][moshi] Enjoy your trip.

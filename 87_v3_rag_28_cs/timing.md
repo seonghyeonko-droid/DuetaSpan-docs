@@ -4,48 +4,43 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_28",
-#     "name": "정슬",
+#     "name": "Lucia",
 #     "location": {
-#       "city": "Busan",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Korean",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "40s",
-#     "language": "Korean"
+#     "age_range": "50s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-06-26",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
-#     },
-#     {
-#       "date": "2026-04-22",
 #       "category": "work",
-#       "text": "User works as a accountant."
+#       "text": "User works as a nurse."
 #     },
 #     {
 #       "date": "2026-03-27",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
 #       "date": "2026-03-03",
-#       "category": "diet",
-#       "text": "User is pescatarian."
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
 #     },
 #     {
 #       "date": "2025-10-11",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
 #     },
 #     {
 #       "date": "2025-07-27",
 #       "category": "home",
-#       "text": "User's home address is 960 Pine Court."
+#       "text": "User's home address is 820 Cedar Lane."
 #     }
 #   ],
 #   "conversation_summaries": [
@@ -58,34 +53,37 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-06-29",
-#       "title": "Setting up a home network",
+#       "date": "2025-11-13",
+#       "title": "Apartment hunting downtown",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 어, 정부 부처들 읽다가… 퇴역 군인부 언제 시작했는지 궁금해 | S2 천구백삼십년? 솔직히 생각보다 엄청 최근인데. 훨씬 오래된 줄 | S3 그러면 연금국에서 남북 전쟁 때 처리했겠네… 근데 그 *전*에 | S4 와, 천육백삼십육년! 진짜 대박이다. 나라 시작할 때부터 거의
 
-     0.00s  user  발화 시작: 어, 정부 부처들 읽다가… 참전용사부 있잖아, 그거 언제 시작했어?
-     4.45s  <ret> 발화 (turn1 첫 프레임)
-     4.85s  agent 발화 시작: <ret> 음, 참전용사부는 천구백삼십 년에 국가 기관이 됐습니다.
-     4.90s  user  발화 끝
-     6.05s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.72s]: [source: Wikipedia] The United States Department of Veterans Affairs w
-     9.47s  user  발화 시작: 일구삼십년? 생각보다 늦네, 그렇지? 제1차 세계 대전 끝나고 훨씬 전에 생길 줄 알았어.
-     9.57s  agent 발화 끝
-    15.22s  <ret> 발화 (turn3 첫 프레임)
-    15.45s  agent 발화 시작: <ret> 그러실 만하네요. 참전용사분들 필요가 시간이 지나면서 변했거든요.
-    15.68s  user  발화 끝
-    17.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [source: US Department of Veterans Affairs] Prior to 1930, support for
-    20.39s  agent 발화 시작: 일구삼십년 이전에는 참전용사 지원이 중앙 집중화되지 않아서 여러 기관에 흩어져 있었어요.
-    20.63s  agent 발화 끝
-    27.61s  agent 발화 끝
-    28.32s  user  발화 시작: 그럼, 그때도 아예 없었던 건 아니고… 그냥 엉망이었던 거야? 있긴 있었어?
-    33.42s  <ret> 발화 (turn6 첫 프레임)
-    33.74s  agent 발화 시작: <ret> 네, 천팔백육십일 년부터 퇴직연금국에서 남북전쟁 참전용사하고 가족들에게 혜택을 드렸습니다.
-    33.97s  user  발화 끝
-    35.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.07s]: [source: National Archives] The Bureau of Pensions, established in 186
-    41.81s  agent 발화 끝
+     0.00s  user  발화 시작: 어, 정부 부처들 읽다가… 퇴역 군인부 언제 시작했는지 궁금해.
+     4.11s  <ret> 발화 (turn1 첫 프레임)
+     4.51s  agent 발화 시작: <ret> 네, 퇴역 군인부는 호버 대통령님께서 천구백삼십년에 설립하셨습니다.
+     4.58s  user  발화 끝
+     5.71s  ⚡SPAN 주입 [d'=1.60s / d_lead=5.97s]: [source: Wikipedia] The United States Department of Veterans Affairs w
+    10.39s  user  발화 시작: 천구백삼십년? 솔직히 생각보다 엄청 최근인데. 훨씬 오래된 줄 알았어.
+    10.48s  agent 발화 끝
+    15.43s  <ret> 발화 (turn3 첫 프레임)
+    15.66s  agent 발화 시작: <ret> 사실, 퇴역 군인들을 위한 지원은 더 오래 전부터 있었어요. 천구백삼십년 이전에 퇴역 군인 관련 
+    15.90s  user  발화 끝
+    17.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.63s]: [source: History.com] Prior to 1930, veterans’ affairs were managed by
+    28.23s  agent 발화 끝
+    29.00s  user  발화 시작: 그러면 연금국에서 남북 전쟁 때 처리했겠네… 근데 그 *전*에는? 독립 전쟁 참전 용사들은?
+    34.94s  <ret> 발화 (turn5 첫 프레임)
+    35.17s  agent 발화 시작: <ret> 네, 퇴역 군인들에 대한 지원은 천육백삼십육년으로 거슬러 올라가요. 순례자들이 장애가 있는 군인들
+    35.35s  user  발화 끝
+    36.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.32s]: [source: VA.gov] Initially, assistance to veterans dates back to 1636,
+    38.13s  user  발화 시작: 어어.
+    38.94s  user  발화 끝
+    43.97s  user  발화 시작: 와, 천육백삼십육년! 진짜 대박이다. 나라 시작할 때부터 거의 신경 썼다는 거네.
+    44.49s  agent 발화 끝
+    49.72s  user  발화 끝

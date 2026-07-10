@@ -4,102 +4,91 @@
 # {
 #   "profile": {
 #     "user_id": "v3_fstart_15",
-#     "name": "Ada",
+#     "name": "라완",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Seoul",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "female",
-#     "age_range": "50s",
-#     "language": "English"
+#     "nationality": "Korean",
+#     "gender": "non-binary",
+#     "age_range": "late 30s",
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-01",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
-#     },
-#     {
-#       "date": "2025-09-20",
+#       "date": "2025-09-09",
 #       "category": "hobby",
 #       "text": "User is into rock climbing."
 #     },
 #     {
-#       "date": "2025-09-09",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Mexican."
+#       "date": "2025-07-12",
+#       "category": "diet",
+#       "text": "User is lactose-intolerant."
 #     },
 #     {
-#       "date": "2025-07-12",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "date": "2025-06-19",
+#       "category": "pet",
+#       "text": "User has a Poodle named Coco."
 #     },
 #     {
 #       "date": "2025-05-30",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in December."
+#       "category": "allergy",
+#       "text": "User is allergic to pollen."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-06-16",
-#       "title": "Apartment hunting downtown",
+#       "date": "2025-06-08",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "wanted a pet-friendly building",
-#         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 해산물 먹고 싶은데, 분위기 좋은 곳으로! | S3 내일 저녁 일곱 시로 예약해 줘. 두 명. | S4 고마워!
+# EXAMINER(FDB-v2) 단계: S1 시드니 오페라 하우스의 위도와 경도는 어떻게 돼? | S2 가격대는 어때? — | S3 오, 좋네. 그럼 여섯 시에 예약해 줘. | S4 고마워.
 
      0.00s  user  발화 시작: 시드니 오페라 하우스의 위도와 경도는 어떻게 돼?
-     3.65s  <ret> 발화 (turn1 첫 프레임)
-     3.72s  agent 발화 시작: <ret> 시드니 오페라 하우스의 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다
-     3.83s  user  발화 끝
-     5.65s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.28s]: (tool result) latitude: -33.8568, longitude: 151.2153
-     6.87s  user  발화 시작: 응.
-     7.37s  user  발화 끝
-    11.00s  agent 발화 끝
-    11.09s  user  발화 시작: 음, 그 근처에 괜찮은 레스토랑 있어?
-    13.93s  user  발화 끝
-    14.27s  agent 발화 시작: 물론이죠. 어떤 종류의 음식을 선호하시나요? 이탈리아, 프랑스, 아니면—
-    18.89s  user  발화 시작: 해산물 먹고 싶은데, 분위기 좋은 곳으로!
-    19.55s  agent 발화 끝
-    21.64s  <ret> 발화 (turn6 첫 프레임)
-    22.03s  agent 발화 시작: <ret> 해산물요? 분위기 좋은 곳이라면 ‘Quay’를 추천해 드립니다.
-    22.08s  user  발화 끝
-    23.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Quay: 4.6 stars, seafood, Upper Level, Overseas Passenge
-    25.87s  agent 발화 끝
-    25.99s  agent 발화 시작: ‘Quay’는 별점 사 점 육, 해산물 전문점이고, 오버시즈 패신저 터미널에 있습니다.
-    28.66s  user  발화 시작: 응.
-    29.16s  user  발화 끝
-    32.15s  <ret> 발화 (turn9 첫 프레임)
-    32.47s  agent 발화 끝
-    32.55s  agent 발화 시작: <ret> 예약해 드릴까요? 혹시 특정 날짜나 시간이 있으신가요?
-    33.99s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.98s]: (tool result) no availability for tonight
-    36.50s  agent 발화 시작: 죄송합니다, 오늘 저녁은 예약이 꽉 찼습니다. 내일은 어떠신가요?
-    36.53s  agent 발화 끝
-    40.92s  user  발화 시작: 내일 저녁 일곱 시로 예약해 줘. 두 명.
-    41.22s  agent 발화 끝
-    44.03s  <ret> 발화 (turn12 첫 프레임)
-    44.19s  agent 발화 시작: <ret> 네, ‘Quay’ 내일 저녁 일곱 시, 두 분 예약 완료되었습니다. 확인 번호는 ZXCV123입니
-    44.28s  user  발화 끝
-    45.87s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.76s]: (tool result) reservation confirmed: Quay, tomorrow 7pm, 2 people, con
-    50.96s  agent 발화 끝
-    51.60s  user  발화 시작: 고마워!
-    52.39s  agent 발화 시작: 천만에요. 즐거운 시간 보내세요.
-    52.42s  user  발화 끝
-    54.97s  agent 발화 끝
+     3.32s  <ret> 발화 (turn1 첫 프레임)
+     3.40s  agent 발화 시작: <ret> 위도는 마이너스 삼십삼 점 팔오육팔도, 경도는 백오십일 점 이일오삼도입니다.
+     3.52s  user  발화 끝
+     5.32s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.84s]: (tool result) latitude=-33.8568, longitude=151.2153
+     6.46s  user  발화 시작: 응.
+     6.95s  user  발화 끝
+     9.24s  agent 발화 끝
+     9.28s  user  발화 시작: 음… 그 근처에 괜찮은 레스토랑 있으면 찾아줘.
+    12.89s  <ret> 발화 (turn4 첫 프레임)
+    13.12s  user  발화 끝
+    13.28s  agent 발화 시작: <ret> 아리아 레스토랑이 있습니다. 주소는 호주 시드니 뉴사우스웨일스 이천 매쿼리 스트리트 일번지입니다.
+    14.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.86s]: (tool result) Aria Restaurant, 1 Macquarie St, Sydney NSW 2000, Austra
+    15.71s  user  발화 시작: 와.
+    16.15s  user  발화 끝
+    20.12s  agent 발화 시작: 분위기가 꽤 좋고, 해피아워도 있대요.
+    20.14s  agent 발화 끝
+    22.56s  agent 발화 끝
+    23.78s  user  발화 시작: 가격대는 어때? —
+    25.09s  user  발화 시작: 혹시 아이랑 같이 가기에도 괜찮을까?
+    25.30s  user  발화 끝
+    27.97s  agent 발화 시작: 네, 아리아 레스토랑은 어린이 메뉴도 준비되어 있습니다.
+    28.00s  user  발화 끝
+    31.35s  agent 발화 끝
+    31.59s  user  발화 시작: 오, 좋네. 그럼 여섯 시에 예약해 줘.
+    33.92s  <ret> 발화 (turn11 첫 프레임)
+    34.31s  agent 발화 시작: <ret> 아리아 레스토랑 여섯 시에 두 분으로 예약 완료되었습니다. 확인 번호는 칠팔구사오입니다.
+    34.41s  user  발화 끝
+    35.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.51s]: (tool result) Reservation confirmed for 2 people at Aria Restaurant at
+    38.09s  user  발화 시작: 그니까.
+    38.67s  user  발화 끝
+    39.81s  agent 발화 끝
+    39.92s  user  발화 시작: 확인번호 다시 한 번만 말해 줄래?
+    42.09s  agent 발화 시작: 확인 번호는 칠팔구사오입니다.
+    42.21s  user  발화 끝
+    44.52s  agent 발화 끝
+    44.59s  user  발화 시작: 고마워.
+    45.55s  user  발화 끝
+    45.56s  agent 발화 시작: 즐거운 저녁 식사 되세요.
+    47.35s  agent 발화 끝

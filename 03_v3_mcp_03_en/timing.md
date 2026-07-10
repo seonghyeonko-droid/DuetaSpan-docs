@@ -6,15 +6,15 @@
 #     "user_id": "v3_mcp_03",
 #     "name": "Charlotte",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "female",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
@@ -58,57 +58,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 No, it's four-five-six Pine Avenue | S3 Yes, that one. | S4 Okay, finalize the order.
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Can you apply the discount code SU | S3 What’s the new total? | S4 And send me a confirmation email.
 
      0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
-     2.72s  <ret> 발화 (turn1 첫 프레임)
-     3.12s  agent 발화 시작: <ret> Excellent. I’ve clicked the checkout button within the
-     3.33s  user  발화 끝
-     3.76s  ⚡SPAN 주입 [d'=1.04s / d_lead=4.63s]: (tool result) iframe 'shopping cart' button 'Checkout' clicked
-     6.24s  user  발화 시작: Mhm.
-     6.74s  user  발화 끝
-     7.75s  agent 발화 끝
-     9.00s  user  발화 시작: Uh-huh.
-     9.63s  user  발화 끝
-     9.85s  <ret> 발화 (turn4 첫 프레임)
-     9.93s  agent 발화 시작: <ret> Now, to confirm, is the shipping address still one-two
-    11.85s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (no information found)
-    15.03s  agent 발화 시작: I don't seem to have a stored shipping address for you curre
-    15.12s  agent 발화 끝
-    18.58s  user  발화 시작: No, it's four-five-six Pine Avenue now.
-    18.68s  agent 발화 끝
-    20.96s  <ret> 발화 (turn7 첫 프레임)
-    21.36s  agent 발화 시작: <ret> Got it. Four-five-six Pine Avenue.
-    21.50s  user  발화 끝
-    22.64s  ⚡SPAN 주입 [d'=1.68s / d_lead=3.15s]: (tool result) iframe 'checkout' field 'shipping address' filled with '
-    24.35s  agent 발화 시작: Wonderful! Your shipping address has been updated to four-fi
-    24.51s  agent 발화 끝
-    29.86s  user  발화 시작: Right.
-    29.95s  agent 발화 끝
-    30.32s  <ret> 발화 (turn10 첫 프레임)
-    30.35s  user  발화 끝
-    30.46s  agent 발화 시작: <ret> And will you be using your Visa ending in seven-eight-
-    32.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.85s]: (no information found)
-    35.25s  agent 발화 시작: I don’t have a payment method on file for you at this time.
-    35.32s  agent 발화 끝
-    38.65s  user  발화 시작: Yes, that one.
-    38.77s  agent 발화 끝
-    39.86s  <ret> 발화 (turn13 첫 프레임)
-    39.93s  user  발화 끝
-    40.17s  agent 발화 시작: <ret> Your Visa ending in seven-eight-nine-zero is now added
-    41.70s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.32s]: (tool result) iframe 'payment' field 'card number' filled with '7890'
-    45.08s  user  발화 시작: Great. Is the total forty-nine ninety-nine?
-    45.49s  agent 발화 끝
-    47.78s  <ret> 발화 (turn15 첫 프레임)
-    48.10s  agent 발화 시작: <ret> Yes, the total comes to forty-nine dollars and ninety-
-    48.26s  user  발화 끝
-    49.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.54s]: (tool result) $49.99
-    52.64s  agent 발화 끝
-    53.00s  user  발화 시작: Okay, finalize the order.
-    54.30s  <ret> 발화 (turn17 첫 프레임)
-    54.70s  agent 발화 시작: <ret> Absolutely. Confirming your order now.
-    54.75s  user  발화 끝
-    55.42s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.91s]: (tool result) iframe 'order confirmation' button 'Place Order' clicked
-    57.42s  agent 발화 시작: Your order has been placed! You’ll receive a confirmation em
-    57.61s  agent 발화 끝
-    62.56s  agent 발화 끝
+     2.90s  <ret> 발화 (turn1 첫 프레임)
+     3.30s  agent 발화 시작: <ret> Alright, I've navigated to the checkout page within th
+     3.46s  user  발화 끝
+     4.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) checkout page loaded
+     7.42s  agent 발화 끝
+     8.84s  user  발화 시작: What's the total cost, including shipping?
+    11.41s  <ret> 발화 (turn3 첫 프레임)
+    11.48s  agent 발화 시작: <ret> The total comes to one hundred and twenty-five dollars
+    11.57s  user  발화 끝
+    12.77s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.44s]: (tool result) $125.50
+    14.71s  user  발화 시작: Yeah.
+    15.34s  user  발화 끝
+    15.79s  agent 발화 시작: It’s wonderful you’re finalizing this purchase! Staying on t
+    15.92s  agent 발화 끝
+    21.85s  agent 발화 끝
+    22.24s  user  발화 시작: Can you apply the discount code SUMMER20?
+    24.87s  <ret> 발화 (turn7 첫 프레임)
+    25.02s  agent 발화 시작: <ret> The discount code SUMMER20 has been successfully appli
+    25.20s  user  발화 끝
+    26.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) discount applied
+    29.75s  agent 발화 끝
+    30.03s  user  발화 시작: What’s the new total?
+    31.13s  <ret> 발화 (turn9 첫 프레임)
+    31.37s  agent 발화 시작: <ret> With the discount, the new total is one hundred dollar
+    31.46s  user  발화 끝
+    33.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: (tool result) $100.40
+    36.09s  agent 발화 끝
+    36.11s  user  발화 시작: Use my saved credit card to complete the purchase.
+    39.04s  <ret> 발화 (turn11 첫 프레임)
+    39.36s  agent 발화 시작: <ret> Excellent! Your order is confirmed; the reference numb
+    39.48s  user  발화 끝
+    40.88s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.93s]: (tool result) order confirmed, #78945
+    45.27s  user  발화 시작: And send me a confirmation email.
+    45.29s  agent 발화 끝
+    46.95s  <ret> 발화 (turn13 첫 프레임)
+    47.27s  agent 발화 시작: <ret> A confirmation email has been sent to user@example.com
+    47.38s  user  발화 끝
+    48.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.00s]: (tool result) email sent
+    54.27s  agent 발화 끝

@@ -6,7 +6,7 @@
 #     "user_id": "v3_mcp_01",
 #     "name": "예재",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -58,55 +58,67 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘. | S2 열다섯 개면 딱 좋네. 근데— | S3 아니, 괜찮아. 아이폰 십오 프로 맥스는? | S4 지도에서 확인해 봤는데, 프로 맥스가 확실히 오래 가네. 고마
+# EXAMINER(FDB-v2) 단계: S1 음… 애플 웹사이트 제품 중심으로 상세 지도를 만들어 줄 수  | S2 …혹시 아이폰 십오 프로 모델은 따로 표시되나? | S3 구백구십구달러? 생각보다 비싸네. 다른 색상은 뭐가 있어? | S4 좋아. 고마워.
 
-     0.00s  user  발화 시작: 애플 웹사이트 제품 중심으로 자세한 지도를 만들어 줘.
-     3.79s  <ret> 발화 (turn1 첫 프레임)
-     4.01s  agent 발화 시작: <ret> 네, 알겠습니다. tavily-map을 사용하여 애플 웹사이트의 제품 관련 상세 지도를 생성해 드
-     4.07s  user  발화 끝
-     5.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: (tool result) Map created: Apple website, products focused, 32 nodes i
-    10.72s  agent 발화 시작: 애플 웹사이트 제품 중심으로 지도를 생성했고, 총 삼십이 개의 노드를 확인했습니다.
-    10.91s  agent 발화 끝
-    16.51s  agent 발화 끝
-    17.37s  user  발화 시작: 삼십두 개나? 좀 많네. 아이폰만 따로 보여줄 수 있어?
-    20.94s  <ret> 발화 (turn4 첫 프레임)
-    21.17s  agent 발화 시작: <ret> 물론입니다. 아이폰 관련 부분만 집중해서 tavily-map을 다시 실행해 볼까요?
-    21.35s  user  발화 끝
-    22.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Map updated: Apple website, iPhone focused, 15 nodes ide
-    26.69s  agent 발화 시작: 아이폰에 초점을 맞춰 지도를 업데이트했고, 이제 열다섯 개의 노드가 확인되었습니다.
-    26.82s  agent 발화 끝
-    30.02s  user  발화 시작: 응.
-    30.42s  user  발화 끝
-    31.78s  agent 발화 끝
-    32.10s  user  발화 시작: 열다섯 개면 딱 좋네. 근데—
-    34.16s  user  발화 시작: 아이폰 십오 프로 모델은 지도에 어떻게 표시돼?
-    34.22s  user  발화 끝
-    37.59s  agent 발화 시작: 아이폰 십오 프로 모델은 지도에서 'iPhone 십오 Pro'라는 노드로 표시됩니다. 상세 정보는 노드를 클
-    37.86s  user  발화 끝
-    40.29s  user  발화 시작: 어.
-    40.92s  user  발화 끝
-    45.09s  agent 발화 시작: 지도에는 아이폰 십오 프로의 스펙, 가격, 구매 링크 등이 연결되어 있습니다. 다른 모델도 확인해 보시겠어요
-    45.23s  agent 발화 끝
-    50.18s  user  발화 시작: 맞아.
-    50.81s  user  발화 끝
-    52.97s  agent 발화 끝
-    53.14s  user  발화 시작: 아니, 괜찮아. 아이폰 십오 프로 맥스는?
-    56.10s  <ret> 발화 (turn14 첫 프레임)
-    56.29s  user  발화 끝
-    56.33s  agent 발화 시작: <ret> 아이폰 십오 프로 맥스 역시 'iPhone 십오 Pro Max' 노드로 표시됩니다. 두 모델의 차
-    58.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: (tool result) Comparison displayed: iPhone 15 Pro vs iPhone 15 Pro Max
-    63.68s  agent 발화 시작: 아이폰 십오 프로와 맥스의 주요 차이점을 지도에 표시했습니다. 화면 크기, 배터리 용량 등이 비교됩니다.
-    63.89s  agent 발화 끝
-    71.47s  agent 발화 끝
-    72.18s  user  발화 시작: 배터리 용량은 얼마나 차이가 나?
-    74.44s  user  발화 끝
-    74.58s  agent 발화 시작: 아이폰 십오 프로 맥스는 아이폰 십오 프로보다 배터리 용량이 약간 더 큽니다. 정확한 수치는 지도에서 확인하
-    82.46s  agent 발화 시작: 확인해 보시고 궁금한 점이 있으면 언제든지 말씀해 주세요.
-    82.65s  agent 발화 끝
-    84.57s  user  발화 시작: 응.
-    84.88s  user  발화 끝
-    86.02s  user  발화 시작: 지도에서 확인해 봤는데, 프로 맥스가 확실히 오래 가네. 고마워.
-    86.29s  agent 발화 끝
-    90.63s  agent 발화 시작: 도움이 되었다니 기쁩니다. 앞으로도 여행 계획이나 휴식 계획에 필요한 정보가 있다면 언제든 말씀해 주세요.
-    90.70s  user  발화 끝
-    97.90s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 애플 웹사이트 제품 중심으로 상세 지도를 만들어 줄 수 있어?
+     4.70s  <ret> 발화 (turn1 첫 프레임)
+     4.93s  agent 발화 시작: <ret> 지금 tavily-map 도구를 사용해서 애플 웹사이트 제품 관련 상세 지도를 생성해 드릴게요.
+     5.04s  user  발화 끝
+     6.70s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: <no information found>
+    10.59s  <ret> 발화 (turn2 첫 프레임)
+    10.83s  agent 발화 시작: <ret> 애플 웹사이트 제품 관련 지도 생성이 완료됐습니다. 총 스물일곱개 섹션이 확인됐어요.
+    11.01s  agent 발화 끝
+    12.59s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.47s]: (tool result) Map created: Apple website, products focus. 27 sections 
+    16.30s  agent 발화 끝
+    17.15s  user  발화 시작: 스물일곱개나? 좀 많네. 아이폰 관련 섹션만 보여줄 수 있어?
+    22.27s  <ret> 발화 (turn4 첫 프레임)
+    22.49s  agent 발화 시작: <ret> tavily-map 도구를 사용해서 아이폰 관련 섹션만 필터링해 드릴게요. 잠시만 기다려—
+    22.71s  user  발화 끝
+    24.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.29s]: <no information found>
+    28.05s  user  발화 시작: …혹시 아이폰 십오 프로 모델은 따로 표시되나?
+    28.78s  agent 발화 끝
+    30.95s  <ret> 발화 (turn6 첫 프레임)
+    31.14s  user  발화 끝
+    31.18s  agent 발화 시작: <ret> 아이폰 십오 프로 모델은 별도로 표시됩니다.
+    32.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.95s]: (tool result) iPhone 15 Pro section found. Detailed specs, pricing, an
+    34.02s  agent 발화 시작: 아이폰 십오 프로 섹션을 찾았습니다. 상세 스펙, 가격, 그리고 재고 현황이 표시됩니다.
+    34.13s  agent 발화 끝
+    36.05s  user  발화 시작: 어.
+    36.50s  user  발화 끝
+    39.81s  agent 발화 끝
+    40.48s  user  발화 시작: 가격이 얼마야? 지금 바로 확인할 수 있어?
+    43.23s  <ret> 발화 (turn10 첫 프레임)
+    43.53s  agent 발화 시작: <ret> 현재 아이폰 십오 프로의 가격을 확인해 드릴게요.
+    43.62s  user  발화 끝
+    45.23s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.23s]: <no information found>
+    46.46s  <ret> 발화 (turn11 첫 프레임)
+    46.70s  agent 발화 시작: <ret> 아이폰 십오 프로는 십이기가 RAM, 시작 가격은 구백구십구달러입니다.
+    46.77s  agent 발화 끝
+    48.46s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.09s]: (tool result) iPhone 15 Pro: 12GB RAM, starting at $999.
+    48.67s  user  발화 시작: 우와.
+    49.30s  user  발화 끝
+    51.66s  user  발화 시작: 구백구십구달러? 생각보다 비싸네. 다른 색상은 뭐가 있어?
+    51.79s  agent 발화 끝
+    56.54s  <ret> 발화 (turn14 첫 프레임)
+    56.69s  agent 발화 시작: <ret> 다른 색상 옵션을 확인해 드릴게요.
+    56.80s  user  발화 끝
+    57.90s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.91s]: <no information found>
+    58.98s  <ret> 발화 (turn15 첫 프레임)
+    59.38s  agent 발화 시작: <ret> 아이폰 십오 프로 색상은 블랙 티타늄, 화이트 티타늄, 블루 티타늄, 내추럴 티타늄입니다.
+    59.60s  agent 발화 끝
+    60.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.33s]: (tool result) iPhone 15 Pro colors: Black Titanium, White Titanium, Bl
+    64.70s  agent 발화 끝
+    64.75s  user  발화 시작: 블루 티타늄이 예쁘겠는데. 지금 바로 예약할 수 있어?
+    69.02s  <ret> 발화 (turn17 첫 프레임)
+    69.08s  agent 발화 시작: <ret> 블루 티타늄 모델 예약을 도와드릴게요.
+    69.38s  user  발화 끝
+    70.14s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.95s]: <no information found>
+    71.83s  <ret> 발화 (turn18 첫 프레임)
+    71.91s  agent 발화 시작: <ret> 예약이 완료되었습니다. 주문 번호는 칠 팔 구 사 오 육 일 이 삼입니다.
+    72.03s  agent 발화 끝
+    72.47s  ⚡SPAN 주입 [d'=0.64s / d_lead=5.23s]: (tool result) Reservation confirmed. Order number: 789456123.
+    77.14s  agent 발화 끝
+    77.83s  user  발화 시작: 좋아. 고마워.
+    79.19s  agent 발화 시작: 즐거운 쇼핑 되세요.
+    79.26s  user  발화 끝
+    81.07s  agent 발화 끝

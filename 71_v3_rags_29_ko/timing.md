@@ -4,61 +4,68 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_29",
-#     "name": "Hannah",
+#     "name": "다린",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Seoul",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "Korean",
 #     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "English"
+#     "age_range": "early 30s",
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-05",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-02-24",
+#       "date": "2026-04-13",
 #       "category": "pet",
 #       "text": "User has a tabby cat named Luna."
 #     },
 #     {
+#       "date": "2026-03-05",
+#       "category": "work",
+#       "text": "User works as a software engineer."
+#     },
+#     {
 #       "date": "2025-12-13",
-#       "category": "trip",
-#       "text": "User is planning a trip to Kyoto in March."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Korean BBQ."
 #     },
 #     {
 #       "date": "2025-10-31",
-#       "category": "home",
-#       "text": "User's home address is 343 Cedar Lane."
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2025-09-13",
+#       "category": "diet",
+#       "text": "User is vegan."
 #     },
 #     {
 #       "date": "2025-07-13",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "category": "hobby",
+#       "text": "User is into birdwatching."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-15",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-07",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 빈스 카터 선수 외에 현재 nba에서 가장 나이가 많은 선수는 누구인가요?
-     4.64s  <ret> 발화 (turn1 첫 프레임)
-     4.80s  agent 발화 시작: <ret> 음, nba에서 가장 나이가 많은 선수는… 빈스 카터 선수가 현재 사십일 세로, nba에서 가장 
-     5.00s  user  발화 끝
-     6.08s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.11s]: [source: ESPN] Vince Carter, at age 41, is currently the oldest player
-    13.61s  agent 발화 끝
+     0.00s  user  발화 시작: 빈스 카터 선수가 지금…
+     1.70s  user  발화 끝
+     3.16s  user  발화 시작: …nba에서 가장 나이가 많은 선수인가요?
+     5.81s  <ret> 발화 (turn2 첫 프레임)
+     5.97s  agent 발화 시작: <ret> 네, 빈스 카터 선수가 현재 nba에서 가장 나이가 많은 선수인데, 나이가 사십일세입니다.
+     6.17s  user  발화 끝
+     7.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: ESPN] Vince Carter is the oldest player in the NBA at age 41.
+    11.76s  agent 발화 끝

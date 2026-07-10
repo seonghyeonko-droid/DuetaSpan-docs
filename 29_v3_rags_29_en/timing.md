@@ -6,15 +6,15 @@
 #     "user_id": "v3_rags_29",
 #     "name": "Hannah",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "female",
 #     "age_range": "late 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
@@ -56,9 +56,11 @@
 # }
 
 
-     0.00s  user  발화 시작: Who’s the oldest player currently playing in the NBA?
-     2.49s  <ret> 발화 (turn1 첫 프레임)
-     2.81s  agent 발화 시작: <ret> That’s a great question, and staying active is wonderf
-     2.91s  user  발화 끝
-     4.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.41s]: [source: Wikipedia] Vince Carter is the oldest player in the NBA, havi
-    12.36s  agent 발화 끝
+     0.00s  user  발화 시작: Who's the oldest player…
+     1.84s  user  발화 끝
+     2.81s  user  발화 시작: …currently playing in the NBA?
+     4.25s  <ret> 발화 (turn2 첫 프레임)
+     4.57s  agent 발화 시작: <ret> Vince Carter is currently the oldest player in the NBA
+     4.60s  user  발화 끝
+     6.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.11s]: [source: Wikipedia] Vince Carter is the oldest player in the NBA, havi
+    10.68s  agent 발화 끝

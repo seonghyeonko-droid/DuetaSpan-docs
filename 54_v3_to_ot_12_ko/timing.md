@@ -4,76 +4,77 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_12",
-#     "name": "Rowan",
+#     "name": "서빈",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Canadian",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "Korean",
+#     "gender": "male",
+#     "age_range": "early 20s",
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-11",
+#       "date": "2026-05-26",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Mexican."
+#     },
+#     {
+#       "date": "2026-03-20",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2026-01-09",
-#       "category": "work",
-#       "text": "User works as a physical therapist."
+#       "date": "2026-03-01",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
 #     },
 #     {
-#       "date": "2025-09-07",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in October."
+#       "date": "2025-11-02",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
 #     },
 #     {
-#       "date": "2025-07-07",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Thai."
+#       "date": "2025-10-22",
+#       "category": "home",
+#       "text": "User's home address is 657 Elm Street."
+#     },
+#     {
+#       "date": "2025-07-24",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-03-01",
-#       "title": "Booked a dentist appointment",
+#       "date": "2025-07-02",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-25",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
 #       ]
 #     }
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 비트 잇 기타 솔로를 누가 연주했는지 궁금해. 혹시 알아? | S2 와, 정말요? 에디 밴 헤일런이라니, 대단하네요. 잠깐만요,  | S3 엄마, 나중에 다시 전화할게. | S4 아, 죄송해요. 다시 얘기할 수 있을까요?
 
-     0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해요.
-     2.95s  <ret> 발화 (turn1 첫 프레임)
-     3.24s  user  발화 끝
-     3.26s  agent 발화 시작: <ret> 기타 솔로 연주자에 대해 말씀하시는 거죠? 에디 밴 헤일런이 마이클 잭슨의 “비트 잇” 기타 솔로
-     3.99s  ⚡SPAN 주입 [d'=1.04s / d_lead=2.73s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-     8.63s  user  발화 시작: 맞아요.
-     9.31s  user  발화 끝
-    10.53s  agent 발화 끝
-    11.23s  user  발화 시작: 잠깐만, 오늘 저녁 뭐 먹을까?
-    13.90s  user  발화 시작: 아, 죄송해요. 다시 말씀드려도 될까요? 그 기타 솔로가 누구인지요.
-    13.95s  user  발화 끝
-    17.75s  user  발화 끝
-    17.95s  agent 발화 시작: 네, 방금 말씀드렸듯이 에디 밴 헤일런이 연주했습니다.
-    20.55s  user  발화 시작: 네.
-    20.99s  user  발화 끝
-    21.50s  agent 발화 시작: 혹시 에디 밴 헤일런에 대해 더 궁금한 점이 있으신가요?
-    21.65s  agent 발화 끝
-    25.52s  agent 발화 끝
+     0.00s  user  발화 시작: 비트 잇 기타 솔로를 누가 연주했는지 궁금해. 혹시 알아?
+     3.89s  <ret> 발화 (turn1 첫 프레임)
+     4.16s  user  발화 끝
+     4.20s  agent 발화 시작: <ret> 에디 밴 헤일런이 마이클 잭슨의 ‘비트 잇’ 기타 솔로를 연주했어요.
+     5.33s  ⚡SPAN 주입 [d'=1.44s / d_lead=4.68s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+     5.97s  user  발화 시작: 맞아요.
+     6.79s  user  발화 끝
+     8.88s  agent 발화 끝
+     9.55s  user  발화 시작: 와, 정말요? 에디 밴 헤일런이라니, 대단하네요. 잠깐만요, 엄마, 지금 통화 중이에요.
+    16.14s  user  발화 시작: 엄마, 나중에 다시 전화할게.
+    16.18s  user  발화 끝
+    18.54s  user  발화 끝
+    18.55s  user  발화 시작: 아, 죄송해요. 다시 얘기할 수 있을까요?
+    21.64s  user  발화 끝
+    21.72s  agent 발화 시작: 에디 밴 헤일런은 뛰어난 기타리스트로 널리 알려져 있죠.
+    25.28s  agent 발화 끝

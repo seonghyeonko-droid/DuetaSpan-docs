@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_37",
-#     "name": "Noah",
+#     "name": "Jamie",
 #     "location": {
 #       "city": "Sydney",
 #       "country": "Australia",
@@ -12,52 +12,62 @@
 #       "currency": "AUD ($)"
 #     },
 #     "nationality": "Australian",
-#     "gender": "male",
-#     "age_range": "early 30s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-02-09",
-#       "category": "work",
-#       "text": "User works as a nurse."
-#     },
-#     {
-#       "date": "2026-01-06",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2025-09-20",
+#       "date": "2026-03-07",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
-#       "date": "2025-08-17",
-#       "category": "trip",
-#       "text": "User is planning a trip to Vietnam in August."
+#       "date": "2025-10-19",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2025-09-20",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2025-08-18",
+#       "category": "home",
+#       "text": "User's home address is 178 Elm Street."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-02-05",
-#       "title": "Planning a birthday dinner",
+#       "date": "2026-02-24",
+#       "title": "Setting up a home network",
 #       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
+#         "asked about mesh routers",
+#         "coverage for a 3-story house"
+#       ]
+#     },
+#     {
+#       "date": "2025-12-14",
+#       "title": "Researching a used car",
+#       "bullets": [
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Noah, welcome to Sydney. I’m Hunar, and I’m here to help you
-     7.09s  agent 발화 끝
-     7.35s  user  발화 시작: Hunar… that’s a lovely name. It’s just, everything feels so…
-    15.33s  agent 발화 시작: It’s completely natural to feel overwhelmed when a rhythm sh
-    15.41s  user  발화 끝
-    24.90s  user  발화 시작: I— I mean, just finding a good coffee shop feels stressful! 
-    25.39s  agent 발화 끝
-    31.11s  agent 발화 시작: [laugh] That’s a very Sydney problem, actually. It's good to
-    31.12s  user  발화 끝
-    41.44s  agent 발화 끝
+     0.00s  agent 발화 시작: Jamie, welcome. I’m Hunar, and I help people feel settled an
+     6.49s  agent 발화 끝
+     6.83s  user  발화 시작: Hunar… that’s a beautiful name. Sydney’s lovely, of course, 
+    12.54s  agent 발화 시작: It’s perfectly natural to feel overwhelmed when adjusting, J
+    12.62s  user  발화 끝
+    18.29s  user  발화 시작: Well, I’m trying to find a good yoga studio— somewhere not t
+    18.79s  agent 발화 끝
+    23.98s  user  발화 끝
+    23.99s  agent 발화 시작: A calming space sounds essential. What kind of yoga practice
+    32.02s  user  발화 시작: Hmmm, mostly restorative. I— I mean, something gentle, focus
+    32.24s  agent 발화 끝
+    38.22s  user  발화 끝

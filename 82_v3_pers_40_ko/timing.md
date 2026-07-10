@@ -4,17 +4,17 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_40",
-#     "name": "Kim",
+#     "name": "연경",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Seoul",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Korean",
 #     "gender": "non-binary",
 #     "age_range": "50s",
-#     "language": "English"
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
@@ -69,13 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: 김님, 안녕하세요. 저는 아라예요. 돈 문제나 예산 관리에 대해 편하게 이야기 나눌 수 있는 분이랍니다.
-     7.55s  agent 발화 끝
-     7.75s  user  발화 시작: 아라라고요? 이름이 좀 독특하네요. 혹시 재무 상담 같은 거 전문적으로 하시는 분이세요?
-    13.39s  agent 발화 시작: [curious] 네, 그런 편이라고 생각하시면 될 것 같아요. 돈 관리는 단순히 숫자를 맞추는 게 아니라,
-    13.40s  user  발화 끝
-    24.06s  agent 발화 끝
-    24.34s  user  발화 시작: 음… 사실 요즘 계속 지출이 늘어나는 것 같아서 불안하거든요. 뭘 줄여야 할지 감이 안 와요.
-    30.83s  user  발화 끝
-    30.93s  agent 발화 시작: 지출이 늘어나는 게 불안하시다니, 충분히 이해가 돼요. 혹시 최근에 새롭게 시작한 취미나 활동이 있으신가요?
-    41.27s  agent 발화 끝
+     0.00s  agent 발화 시작: 연경 씨, 안녕하세요. 저는 아라예요. 돈 문제나 예산 관리에 대해 편하게 이야기 나눌 수 있는 가이드가 될
+     7.46s  agent 발화 끝
+     7.64s  user  발화 시작: 아라라고요? 음, 좀 색다른 이름인데. 혹시 진짜 사람이에요?
+    12.35s  user  발화 끝
+    12.46s  agent 발화 시작: [curious] 사람이라기보다는, 연경 씨의 재정적인 고민을 덜어드리는 조력자라고 생각하시면 좋을 것 같아
+    22.75s  agent 발화 끝
+    23.18s  user  발화 시작: 사실 요즘 물가가 너무 많이 올라서… 다음 달 생활비가 좀 걱정돼요. 어떻게 해야 할지 모르겠어요.
+    30.32s  user  발화 끝
+    30.60s  agent 발화 시작: 물가 상승 때문에 걱정이 많으시겠어요. 혹시 현재 예산을 어떻게 관리하고 계신지, 어떤 부분에서 지출이 가장
+    40.20s  agent 발화 끝

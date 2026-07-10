@@ -6,15 +6,15 @@
 #     "user_id": "v3_mem_32",
 #     "name": "Manon",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
+#     "nationality": "French",
 #     "gender": "female",
 #     "age_range": "late 30s",
-#     "language": "German"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
@@ -59,23 +59,25 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It’s lovely to connect with you. I’m 
-     7.15s  user  발화 시작: Yeah.
-     7.78s  user  발화 끝
-     9.15s  user  발화 시작: Oh, hi Thunalo. I was just thinking about a trip I'm plannin
-     9.37s  agent 발화 끝
-    14.66s  <ret> 발화 (turn3 첫 프레임)
-    14.73s  agent 발화 시작: <ret> That sounds wonderful! You’re heading to Kyoto in Marc
-    14.76s  user  발화 끝
-    15.30s  ⚡SPAN 주입 [d'=0.64s / d_lead=1.09s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    21.16s  user  발화 시작: Mm-hmm.
-    21.65s  user  발화 끝
-    23.81s  agent 발화 끝
-    24.28s  user  발화 시작: I’m still pretty early, honestly. I'm feeling a bit overwhel
-    29.62s  agent 발화 시작: That's completely understandable. Kyoto has so much to offer
-    29.74s  user  발화 끝
-    39.72s  agent 발화 끝
-    39.83s  user  발화 시작: I— I mean, I want to make sure I don’t miss anything amazing
-    45.69s  agent 발화 시작: That’s a very insightful balance to strike. It sounds like y
-    45.85s  user  발화 끝
-    57.93s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Manon, I’m Thunalo. It’s lovely to connect with you. I un
+     5.64s  user  발화 시작: Yeah.
+     6.27s  user  발화 끝
+     7.29s  user  발화 시작: Yeah, a little bit. I'm trying to plan my trip to Kyoto, and
+     7.42s  agent 발화 끝
+    13.94s  <ret> 발화 (turn3 첫 프레임)
+    14.01s  agent 발화 시작: <ret> You’re heading to Kyoto in March, that’s wonderful! It
+    14.15s  user  발화 끝
+    15.46s  ⚡SPAN 주입 [d'=1.52s / d_lead=8.02s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    19.66s  user  발화 시작: Mm-hmm.
+    20.15s  user  발화 끝
+    21.85s  agent 발화 시작: Do you have a particular aspect of the trip that feels most 
+    22.03s  agent 발화 끝
+    30.24s  agent 발화 끝
+    31.59s  user  발화 시작: I think… finding things to *do*. I love rock climbing, and I
+    38.54s  <ret> 발화 (turn7 첫 프레임)
+    38.70s  agent 발화 시작: <ret> You enjoy rock climbing, that’s fantastic! Kyoto offer
+    38.82s  user  발화 끝
+    40.54s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.52s]: [2026-02-20] User is into rock climbing.
+    47.23s  agent 발화 끝
+    47.25s  user  발화 시작: Oh, that’s good to know! I— I mean, are there any beginner-f
+    53.18s  user  발화 끝

@@ -1,84 +1,90 @@
 v3_pause_16_ko src=nq style=v1
-SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 개인 가이드 Braera입니다. <system>
+SYSTEM: <system> 당신은 생산성과 일상 루틴을 돕는 친절하고 꾸준한 개인 가이드인 Braera입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_pause_16",
-    "name": "Andrea",
+    "name": "보별",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
     },
-    "nationality": "British",
+    "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 30s",
-    "language": "English"
+    "age_range": "40s",
+    "language": "Korean"
   },
   "saved_memories": [
     {
       "date": "2026-05-12",
+      "category": "hobby",
+      "text": "User is into home fermentation."
+    },
+    {
+      "date": "2026-02-27",
       "category": "home",
       "text": "User's home address is 148 Elm Street."
     },
     {
-      "date": "2026-02-27",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "date": "2025-09-07",
+      "category": "work",
+      "text": "User works as a graphic designer."
     },
     {
-      "date": "2026-02-11",
+      "date": "2025-08-18",
       "category": "trip",
       "text": "User is planning a trip to Vietnam in May."
     },
     {
-      "date": "2025-08-18",
-      "category": "work",
-      "text": "User works as a graduate student."
-    },
-    {
       "date": "2025-05-28",
-      "category": "allergy",
-      "text": "User is allergic to pollen."
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-10",
+      "date": "2025-08-02",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2025-06-03",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
-      ]
-    },
-    {
-      "date": "2025-07-21",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 혹시 빅 브라더라는 말은…
-[  2.91s][user ] …어디서 처음 나왔는지 아세요?
-[  4.77s][moshi] 그 용어가 처음 사용된 배경에 대해 궁금하시군요.
-[  7.85s][moshi] ⟨ret@7.45s⟩ 빅 브라더라는 ⟦⚡SPAN@9.45s: [source: Britannica] The term “Big Brother” was popularized by George Orwell in his dystopian novel Nineteen E⟧ 표현은 문학 작품에서 유래했어요. 조지 오웰의 디스토피아 소설, ‘천구백팔십사년’에서 처음 유명해졌습니다.
-[ 16.57s][user ] 아, ‘천구백팔십사년’…
-[ 18.72s][moshi] 소설 속 배경과 관련이 깊습니다.
-[ 21.26s][moshi] ⟨ret@20.94s⟩ 오웰은 당시 사회 ⟦⚡SPAN@22.94s: [source: Literary Hub] Orwell drew inspiration from his experiences during the Spanish Civil War and his obser⟧ 분위기를 반영하고자 했습니다. 스페인 내전 경험과 전체주의 정권 관찰에서 영감을 받았다고 합니다.
-[ 24.85s][user ] «backchannel» 아.
-[ 28.99s][user ] 그럼 빅 브라더는 구체적으로 어떤 의미였을까요?
-[ 32.30s][moshi] 감시와 통제를 상징하는 표현이었죠.
-[ 34.72s][moshi] ⟨ret@34.65s⟩ 소설 속 ⟦⚡SPAN@36.17s: [source: CliffsNotes] Big Brother represents the omnipresent state and its constant surveillance of citizens.⟧ 빅 브라더는 절대적인 권력을 가진 존재입니다. 시민들을 끊임없이 감시하는 전지전능한 국가를 상징합니다.
-[ 43.83s][user ] 요즘도 빅 브라더라는 말이 자주 쓰이던데,
-[ 47.27s][moshi] 사회 비판적인 맥락에서 자주 사용됩니다.
-[ 49.92s][moshi] ⟨ret@49.69s⟩ 감시 사회에 대한 ⟦⚡SPAN@51.69s: [source: The Guardian] The term has become a common metaphor for intrusive government surveillance and loss of⟧ 경각심을 일깨우는 용도로 쓰입니다. 정부의 과도한 감시와 사생활 침해에 대한 은유로 쓰입니다.
-[ 52.86s][user ] «backchannel» 음.
-[ 57.64s][user ] 혹시 빅 브라더처럼 개인정보를 보호할 수 있는 방법도 있을까요?
-[ 62.19s][moshi] ⟨ret@62.03s⟩ 강력한 비밀번호 ⟦⚡SPAN@63.39s: (tool result) 개인정보 보호를 위한 몇 가지 방법이 있습니다: 강력한 비밀번호 사용, VPN 사용, 개인정보 설정 확인 등.⟧ 사용, VPN 사용, 개인정보 설정 확인 등이 있습니다.
-[ 67.27s][moshi] 개인정보 설정을 꼼꼼히 확인하는 것도 중요합니다.
+[  0.00s][user ] 빅 브라더라는 말이 어디서 왔는지 ⟨ret@3.05s⟩ 궁금했는데…
+[  3.44s][moshi] 조지 오웰의 ⟦⚡SPAN@5.05s: [source: Wikipedia] "Big Brother is the protagonist of George Orwell's dystopian novel Nineteen Eighty-Four."⟧ 디스토피아 소설 《천구백팔십사》의 주인공이 빅 브라더입니다.
+[  8.35s][user ] 아, 그렇군요. 그럼 그…
+[ 11.13s][user ] …소설에서 어떤 의미로 ⟨ret@13.06s⟩ 사용됐어요?
+[ 13.38s][moshi] 오웰의 소설에서 ⟦⚡SPAN@15.06s: [source: Britannica] "In Orwell’s novel, Big Brother is the seemingly benevolent but all-seeing dictator of Oc⟧ 빅 브라더는 오세아니아를 지배하는 전지전능한 독재자입니다.
+[ 16.07s][user ] «backchannel» 아.
+[ 18.71s][user ] 뭔가 섬뜩하네요. 지금도 빅…
+[ 22.34s][user ] …브라더라는 표현을 많이 쓰잖아요.
+[ 24.90s][moshi] 현대 사회에서도 감시나 권력 남용을 비판할 때 자주 사용되죠.
+[ 29.12s][user ] 혹시 그 소설이 출판된 해를 알 수 ⟨ret@31.79s⟩ 있을까요?
+[ 32.10s][moshi] ⟦⚡SPAN@33.23s: (tool result) 1949⟧ 《천구백팔십사》는 천구백사십구년에 출판되었습니다.
+[ 35.97s][user ] 생각보다 오래됐네요. 그 소설이 지금도 많이 ⟨ret@39.24s⟩ 읽히나요?
+[ 39.47s][moshi] 《천구백팔십사》는 전 ⟦⚡SPAN@41.16s: [source: Goodreads] "Nineteen Eighty-Four has sold over 50 million copies worldwide."⟧ 세계적으로 오천만 권 이상 판매되었습니다.
+[ 40.89s][user ] «backchannel» 네.
+[ 44.38s][user ] 와, 정말 대단하네요. 그 소설의 배경이 된 시대는 ⟨ret@48.43s⟩ 언제인가요?
+[ 48.59s][moshi] 오웰은 자신의 ⟦⚡SPAN@50.19s: [source: Literary Hub] "Orwell extrapolates from the social and political trends of his own time—the 1940s—to ⟧ 시대, 천구백사십년대의 사회적, 정치적 흐름을 바탕으로 미래의 섬뜩한 비전을 만들었습니다.
+[ 51.48s][user ] «backchannel» 네.
+[ 56.42s][user ] 그럼 그 소설은 미래를 예측한 건가요?
+[ 59.21s][moshi] 미래를 예측했다고 보기는 어렵지만, 권력의 위험성을 경고하는 메시지를 담고 있습니다.
+[ 64.97s][user ] 혹시 그 소설을 영화화한 적도 ⟨ret@67.22s⟩ 있나요?
+[ 67.53s][moshi] 마이클 래드포드가 ⟦⚡SPAN@69.22s: (tool result) 1984, directed by Michael Radford⟧ 감독한 천구백팔십사년 영화가 있습니다.
+[ 69.08s][user ] «backchannel» 그렇죠.
+[ 71.99s][user ] 아, 영화도 있었군요. 한번 찾아봐야겠어요.
+[ 74.39s][moshi] 좋은 선택입니다. 책과 영화 모두 깊은 생각을 하게 만드는 작품이죠.

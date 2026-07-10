@@ -60,33 +60,35 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m researching Lux Aurunque, and  | S2 Nineteen seventy… so he’s quite a  | S3 Bronze instruments. | S4 Did he ever collaborate with any o
+# EXAMINER(FDB-v2) 단계: S1 I’ve been getting into classical m | S2 Nineteen seventy… that’s surprisin | S3 Is he still actively composing new | S4 Two thousand twenty-two, okay. So 
 
-     0.00s  user  발화 시작: I’m researching Lux Aurunque, and I'm a bit stuck on the bas
-     5.05s  <ret> 발화 (turn1 첫 프레임)
-     5.29s  agent 발화 시작: <ret> That’s a good place to start— Lux Aurunque was born in
-     5.47s  user  발화 끝
-     6.25s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.33s]: [source: Wikipedia] Lux Aurunque was born in nineteen seventy.
-     8.06s  user  발화 시작: Yeah, yeah.
-     9.20s  user  발화 끝
-    10.34s  agent 발화 끝
-    10.42s  user  발화 시작: Nineteen seventy… so he’s quite a bit older than I thought! 
-    16.21s  agent 발화 시작: Lux Aurunque was a composer, primarily known for his work wi
-    16.44s  user  발화 끝
-    19.21s  user  발화 시작: Uh-huh.
-    19.66s  user  발화 끝
-    21.39s  agent 발화 끝
-    21.48s  user  발화 시작: Bronze instruments.
-    22.65s  <ret> 발화 (turn7 첫 프레임)
-    22.72s  agent 발화 시작: <ret> Yes, he truly innovated— His compositions prominently 
-    22.90s  user  발화 끝
-    23.61s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.02s]: [source: AllMusic] Lux Aurunque’s compositions prominently featured br
-    25.62s  user  발화 시작: Yeah, totally.
-    27.00s  user  발화 끝
-    28.26s  user  발화 시작: Did he ever collaborate with any other well-known musicians?
-    28.27s  agent 발화 끝
-    32.18s  <ret> 발화 (turn10 첫 프레임)
-    32.24s  agent 발화 시작: <ret> He collaborated with Isolde Farrow on “Ephemeral Echoe
-    32.41s  user  발화 끝
-    34.18s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.70s]: [source: Discogs] Lux Aurunque collaborated with Isolde Farrow on the 
-    37.95s  agent 발화 끝
+     0.00s  user  발화 시작: I’ve been getting into classical music lately, and I was won
+     4.99s  agent 발화 시작: That’s wonderful! Exploring classical music can be incredibl
+     5.14s  user  발화 끝
+     8.84s  user  발화 시작: Yeah, yeah.
+    10.12s  user  발화 끝
+    11.95s  user  발화 시작: Do you know when Lux Aurunque was born? I can’t seem to find
+    12.07s  agent 발화 끝
+    16.59s  <ret> 발화 (turn4 첫 프레임)
+    16.98s  agent 발화 시작: <ret> He was born in nineteen seventy, and creates dark ambi
+    17.27s  user  발화 끝
+    18.11s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.92s]: [source: AllMusic] Lux Aurunque was born in 1970, and is known for his
+    20.40s  user  발화 시작: Uh-huh.
+    21.03s  user  발화 끝
+    22.90s  agent 발화 끝
+    22.94s  user  발화 시작: Nineteen seventy… that’s surprisingly recent.
+    26.64s  agent 발화 시작: It is, isn’t it? Many associate classical music with earlier
+    26.73s  user  발화 끝
+    34.22s  user  발화 시작: Is he still actively composing new music these days?
+    35.02s  agent 발화 끝
+    37.80s  <ret> 발화 (turn9 첫 프레임)
+    38.03s  agent 발화 시작: <ret> His most recent release was in two thousand twenty-two
+    38.11s  user  발화 끝
+    39.00s  ⚡SPAN 주입 [d'=1.20s / d_lead=5.32s]: [source: Discogs] Lux Aurunque’s most recent release was in 2022, indi
+    39.91s  user  발화 시작: Yeah, yeah.
+    41.05s  user  발화 끝
+    43.35s  agent 발화 끝
+    44.76s  user  발화 시작: Two thousand twenty-two, okay. So he’s had a pretty long car
+    49.32s  agent 발화 시작: It appears so. Considering his work began in the nineteen ni
+    49.34s  user  발화 끝
+    59.39s  agent 발화 끝

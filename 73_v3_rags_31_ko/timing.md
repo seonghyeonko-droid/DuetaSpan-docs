@@ -4,72 +4,66 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Noa",
+#     "name": "라경",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "American",
+#     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "English"
+#     "age_range": "late 30s",
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-05-15",
+#       "category": "diet",
+#       "text": "User is vegan."
+#     },
+#     {
+#       "date": "2026-03-12",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
+#       "date": "2026-02-24",
+#       "category": "home",
+#       "text": "User's home address is 982 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-01-24",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     },
 #     {
 #       "date": "2025-12-18",
-#       "category": "home",
-#       "text": "User's home address is 808 Elm Street."
-#     },
-#     {
-#       "date": "2025-12-14",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is Italian."
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
 #     },
 #     {
 #       "date": "2025-11-04",
-#       "category": "allergy",
-#       "text": "User is allergic to peanuts."
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in October."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-04-05",
-#       "title": "Comparing gym memberships",
-#       "bullets": [
-#         "wants a pool",
-#         "close to the office"
-#       ]
-#     },
-#     {
-#       "date": "2025-11-07",
+#       "date": "2026-01-25",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
 #         "budget for 2 bedrooms"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  user  발화 시작: 데어데블 시즌 삼는 언제 공개되나요?
-     2.11s  <ret> 발화 (turn1 첫 프레임)
-     2.34s  agent 발화 시작: <ret> 데어데블 시즌 삼의 공개 날짜를 알려드릴게요. 데어데블 시즌 삼는 이천십팔년 십월 이십육일에 공개
-     2.54s  user  발화 끝
-     3.15s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.61s]: [source: Wikipedia] Daredevil season three was released on October 26,
-    10.16s  agent 발화 끝
+     0.00s  user  발화 시작: 데어데블 시즌 삼은 언제 공개되나요?
+     1.69s  <ret> 발화 (turn1 첫 프레임)
+     1.92s  agent 발화 시작: <ret> 데어데블 시즌 삼의 공개 날짜를 알려드릴게요. 데어데블 시즌 삼은 이천십팔년 십월 이십육일에 공개
+     2.12s  user  발화 끝
+     2.73s  ⚡SPAN 주입 [d'=1.04s / d_lead=3.92s]: [source: Wikipedia] Daredevil season 3 was released on October 26, 201
+    10.41s  agent 발화 끝

@@ -64,33 +64,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] So, I was wondering… where did the term “big brother” actually come from?
-[  5.22s][user ] … I'm curious about the origin of the ⟨ret@7.68s⟩ phrase.
-[  7.99s][moshi] That's a fascinating question, ⟦⚡SPAN@9.68s: [source: Britannica] "Big Brother is the totalitarian leader of Oceania in George Orwell’s dystopian novel Nin⟧ and it stems from a very influential novel.
-[ 12.62s][moshi] The term originates from George Orwell’s novel, *Nineteen Eighty-Four*, published in 1949.
-[ 19.13s][user ] Nineteen Eighty-Four… I think I read that in high school. It was pretty ⟨ret@23.51s⟩ dark.
-[ 23.75s][moshi] Orwell’s intention wasn’t ⟦⚡SPAN@25.19s: [source: Literary Hub] “Orwell’s intention was not to predict the future, but to warn against the dangers of t⟧ to predict the future, but to warn against the dangers of totalitarianism.
-[ 27.89s][user ] «backchannel» Yeah, yeah.
-[ 29.30s][user ] So, “big brother” was meant as a warning, not a prediction? That’s ⟨ret@33.77s⟩ interesting.
-[ 34.16s][moshi] Precisely. The character of ⟦⚡SPAN@35.77s: [source: Wikipedia] “Big Brother is the personification of the Party and is the subject of ubiquitous surveill⟧ Big Brother represents the oppressive power of the state.
-[ 38.45s][moshi] He personifies the Party and is the subject of constant surveillance within the novel.
-[ 40.11s][user ] «backchannel» Mm-hmm.
-[ 42.93s][user ] Ubiquitous surveillance… sounds a little too close to home these days, doesn’t it?
-[ 47.86s][moshi] ⟨ret@47.78s⟩ The phrase has become synonymous ⟦⚡SPAN@49.78s: [source: History.com] "The phrase ‘Big Brother’ has become a byword for oppressive government intrusion."⟧ with oppressive government intrusion into private lives.
-[ 49.78s][user ] «backchannel» Yeah.
-[ 52.18s][user ] I guess it’s become a…
-[ 54.23s][user ] …bit of a cultural touchstone, then.
-[ 56.71s][moshi] ⟨ret@56.55s⟩ The first season of the ⟦⚡SPAN@58.31s: (tool result) 2000⟧ reality show *Big Brother* aired in the year 2000.
-[ 59.66s][user ] «backchannel» Yeah.
-[ 60.92s][user ] Oh, right, the TV show! I'd completely forgotten about that.
-[ 65.07s][moshi] ⟨ret@64.83s⟩ The show's name deliberately ⟦⚡SPAN@66.83s: [source: Rolling Stone] “The show’s creator, John de Mol, wanted a social experiment centered around constant ⟧ references Orwell’s novel, though with a very different intent.
-[ 69.78s][moshi] The show’s creator wanted a social experiment focused on constant surveillance of its participants.
-[ 73.22s][user ] «backchannel» Mm-hmm.
-[ 75.25s][user ] A social experiment… that's a bit unsettling, ⟨ret@78.71s⟩ actually.
-[ 78.87s][moshi] The show’s ⟦⚡SPAN@79.99s: [source: The Guardian] "Big Brother's success lies in its exploration of human behaviour under pressure."⟧ success stems from exploring human behavior under constant pressure and observation.
-[ 80.89s][user ] «backchannel» Yeah.
-[ 84.18s][user ] So, from a dystopian novel to a reality TV show… quite a journey for a ⟨ret@90.03s⟩ phrase.
-[ 90.19s][moshi] Today, ⟦⚡SPAN@91.07s: [source: Oxford English Dictionary] “Big brother: a person or organization exercising strict control.”⟧ the phrase signifies someone or an organization exerting strict control.
-[ 91.92s][user ] «backchannel» Right.
-[ 95.22s][user ] It’s funny how a warning can become so… normalized.
-[ 99.38s][moshi] It’s a poignant reminder to remain vigilant and critically examine the world around us.
+[  0.00s][user ] I was just reading about surveillance, and it made me think…
+[  4.58s][user ] …where did the term…
+[  7.61s][user ] …“Big Brother” even come ⟨ret@9.16s⟩ from?
+[  9.48s][moshi] The term originates ⟦⚡SPAN@11.16s: [source: Wikipedia] “Big Brother is the protagonist of the dystopian novel Nineteen Eighty-Four by George Orwe⟧ from George Orwell’s novel *Nineteen Eighty-Four*, published in nineteen forty-nine.
+[ 15.38s][user ] Nineteen forty-nine… that’s right after the Second World War.
+[ 19.28s][moshi] It is. Orwell finished writing it in February of nineteen forty-eight, but it was published the following year.
+[ 23.36s][user ] «backchannel» Yeah, yeah.
+[ 24.90s][user ] Was he responding to something happening at the ⟨ret@27.92s⟩ time?
+[ 28.16s][moshi] Orwell’s novel reflected ⟦⚡SPAN@29.60s: [source: Britannica] “Orwell’s novel reflects many of the totalitarian regimes that had arisen in Europe durin⟧ the totalitarian regimes arising in Europe during the twentieth century.
+[ 30.32s][user ] «backchannel» Mm-hmm.
+[ 33.81s][user ] So, it wasn't about one specific country?
+[ 36.55s][moshi] Not specifically. It was a broader commentary on the dangers of unchecked power and surveillance.
+[ 39.04s][user ] «backchannel» Yeah.
+[ 42.14s][user ] I guess that's why it feels so universal. It's scary how relevant it still is.
+[ 47.90s][moshi] [surprised] It truly is. The themes of control and privacy continue to resonate strongly today.
+[ 49.95s][user ] «backchannel» Mm-hmm.
+[ 53.21s][user ] Is there anything else Orwell wrote that's ⟨ret@56.12s⟩ similar?
+[ 56.20s][moshi] *Animal Farm*, ⟦⚡SPAN@57.56s: [source: Literary Hub] “Animal Farm, published in 1945, is an allegorical novella satirizing Stalinist Russia.⟧ published in nineteen forty-five, satirizes Stalinist Russia as an allegorical novella.
+[ 62.13s][user ] Oh, right! *Animal Farm*. I read that in high school.
+[ 65.97s][moshi] It’s a powerful story, isn’t it? Both works showcase Orwell's keen observation of political systems.
+[ 70.27s][user ] «backchannel» Mm-hmm.
+[ 72.22s][user ] Do you think he predicted all of this? The cameras and data collection…
+[ 76.89s][moshi] It’s remarkable how prescient he was. He identified core issues that have only intensified.
+[ 78.99s][user ] «backchannel» Oh.
+[ 82.34s][user ] It’s unsettling. I feel…
+[ 86.58s][user ] …like I need to disconnect for a while.
+[ 88.78s][moshi] Sometimes, a digital detox is exactly what’s needed. Prioritizing mindful disconnection can be very restorative.
+[ 95.42s][user ] Maybe I will. Thanks, Braera.
+[ 97.61s][moshi] You're very welcome.

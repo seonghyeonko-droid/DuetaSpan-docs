@@ -63,81 +63,69 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 So, I was wondering… where did the | S2 So, “big brother” was meant as a w | S3 …bit of a cultural touchstone, the | S4 So, from a dystopian novel to a re
+# EXAMINER(FDB-v2) 단계: S1 I was just reading about surveilla | S2 Was he responding to something hap | S3 Is there anything else Orwell wrot | S4 It’s unsettling. I feel…
 
-     0.00s  user  발화 시작: So, I was wondering… where did the term “big brother” actual
-     5.22s  user  발화 시작: … I'm curious about the origin of the phrase.
-     5.37s  user  발화 끝
-     7.68s  <ret> 발화 (turn2 첫 프레임)
-     7.99s  agent 발화 시작: <ret> That's a fascinating question, and it stems from a ver
-     8.13s  user  발화 끝
-     9.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.77s]: [source: Britannica] "Big Brother is the totalitarian leader of Oceani
-    12.62s  agent 발화 시작: The term originates from George Orwell’s novel, *Nineteen Ei
-    12.76s  agent 발화 끝
-    19.02s  agent 발화 끝
-    19.13s  user  발화 시작: Nineteen Eighty-Four… I think I read that in high school. It
-    23.51s  <ret> 발화 (turn5 첫 프레임)
-    23.75s  agent 발화 시작: <ret> Orwell’s intention wasn’t to predict the future, but t
-    23.93s  user  발화 끝
-    25.19s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.61s]: [source: Literary Hub] “Orwell’s intention was not to predict the futu
-    27.89s  user  발화 시작: Yeah, yeah.
-    29.30s  user  발화 시작: So, “big brother” was meant as a warning, not a prediction? 
-    29.36s  agent 발화 끝
-    29.41s  user  발화 끝
-    33.77s  <ret> 발화 (turn8 첫 프레임)
-    34.16s  agent 발화 시작: <ret> Precisely. The character of Big Brother represents the
-    34.25s  user  발화 끝
-    35.77s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.45s]: [source: Wikipedia] “Big Brother is the personification of the Party a
-    38.45s  agent 발화 시작: He personifies the Party and is the subject of constant surv
-    38.61s  agent 발화 끝
-    40.11s  user  발화 시작: Mm-hmm.
-    40.74s  user  발화 끝
-    42.93s  user  발화 시작: Ubiquitous surveillance… sounds a little too close to home t
-    42.98s  agent 발화 끝
-    47.78s  <ret> 발화 (turn12 첫 프레임)
-    47.86s  agent 발화 시작: <ret> The phrase has become synonymous with oppressive gover
-    48.02s  user  발화 끝
-    49.78s  user  발화 시작: Yeah.
-    49.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.49s]: [source: History.com] "The phrase ‘Big Brother’ has become a byword fo
-    50.50s  user  발화 끝
-    52.18s  user  발화 시작: I guess it’s become a…
-    52.35s  agent 발화 끝
-    53.89s  user  발화 끝
-    54.23s  user  발화 시작: …bit of a cultural touchstone, then.
-    56.55s  <ret> 발화 (turn16 첫 프레임)
-    56.71s  agent 발화 시작: <ret> The first season of the reality show *Big Brother* air
-    56.76s  user  발화 끝
-    58.31s  ⚡SPAN 주입 [d'=1.76s / d_lead=4.35s]: (tool result) 2000
-    59.66s  user  발화 시작: Yeah.
-    60.11s  user  발화 끝
-    60.92s  user  발화 시작: Oh, right, the TV show! I'd completely forgotten about that.
-    61.06s  agent 발화 끝
-    64.83s  <ret> 발화 (turn19 첫 프레임)
-    65.07s  agent 발화 시작: <ret> The show's name deliberately references Orwell’s novel
-    65.09s  user  발화 끝
-    66.83s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.81s]: [source: Rolling Stone] “The show’s creator, John de Mol, wanted a soc
-    69.78s  agent 발화 시작: The show’s creator wanted a social experiment focused on con
-    69.87s  agent 발화 끝
-    73.22s  user  발화 시작: Mm-hmm.
-    73.86s  user  발화 끝
-    74.92s  agent 발화 끝
-    75.25s  user  발화 시작: A social experiment… that's a bit unsettling, actually.
-    78.71s  <ret> 발화 (turn23 첫 프레임)
-    78.87s  agent 발화 시작: <ret> The show’s success stems from exploring human behavior
-    79.04s  user  발화 끝
-    79.99s  ⚡SPAN 주입 [d'=1.28s / d_lead=5.36s]: [source: The Guardian] "Big Brother's success lies in its exploration 
-    80.89s  user  발화 시작: Yeah.
-    81.39s  user  발화 끝
-    84.18s  user  발화 시작: So, from a dystopian novel to a reality TV show… quite a jou
-    84.23s  agent 발화 끝
-    90.03s  <ret> 발화 (turn26 첫 프레임)
-    90.19s  agent 발화 시작: <ret> Today, the phrase signifies someone or an organization
-    90.34s  user  발화 끝
-    91.07s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.04s]: [source: Oxford English Dictionary] “Big brother: a person or organiza
-    91.92s  user  발화 시작: Right.
-    92.42s  user  발화 끝
-    95.22s  user  발화 시작: It’s funny how a warning can become so… normalized.
-    95.23s  agent 발화 끝
-    99.38s  agent 발화 시작: It’s a poignant reminder to remain vigilant and critically e
-    99.43s  user  발화 끝
-   103.64s  agent 발화 끝
+     0.00s  user  발화 시작: I was just reading about surveillance, and it made me think…
+     3.38s  user  발화 끝
+     4.58s  user  발화 시작: …where did the term…
+     6.05s  user  발화 끝
+     7.61s  user  발화 시작: …“Big Brother” even come from?
+     9.16s  <ret> 발화 (turn3 첫 프레임)
+     9.48s  agent 발화 시작: <ret> The term originates from George Orwell’s novel *Ninete
+     9.50s  user  발화 끝
+    11.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: Wikipedia] “Big Brother is the protagonist of the dystopian n
+    15.27s  agent 발화 끝
+    15.38s  user  발화 시작: Nineteen forty-nine… that’s right after the Second World War
+    19.28s  agent 발화 시작: It is. Orwell finished writing it in February of nineteen fo
+    19.36s  user  발화 끝
+    23.36s  user  발화 시작: Yeah, yeah.
+    24.83s  agent 발화 끝
+    24.87s  user  발화 끝
+    24.90s  user  발화 시작: Was he responding to something happening at the time?
+    27.92s  <ret> 발화 (turn8 첫 프레임)
+    28.16s  agent 발화 시작: <ret> Orwell’s novel reflected the totalitarian regimes aris
+    28.27s  user  발화 끝
+    29.60s  ⚡SPAN 주입 [d'=1.68s / d_lead=5.70s]: [source: Britannica] “Orwell’s novel reflects many of the totalitarian
+    30.32s  user  발화 시작: Mm-hmm.
+    30.82s  user  발화 끝
+    33.81s  user  발화 시작: So, it wasn't about one specific country?
+    33.86s  agent 발화 끝
+    36.55s  agent 발화 시작: Not specifically. It was a broader commentary on the dangers
+    36.67s  user  발화 끝
+    39.04s  user  발화 시작: Yeah.
+    39.81s  user  발화 끝
+    42.14s  user  발화 시작: I guess that's why it feels so universal. It's scary how rel
+    42.24s  agent 발화 끝
+    47.79s  user  발화 끝
+    47.90s  agent 발화 시작: [surprised] It truly is. The themes of control and privacy c
+    49.95s  user  발화 시작: Mm-hmm.
+    50.45s  user  발화 끝
+    53.03s  agent 발화 끝
+    53.21s  user  발화 시작: Is there anything else Orwell wrote that's similar?
+    56.12s  <ret> 발화 (turn17 첫 프레임)
+    56.20s  agent 발화 시작: <ret> *Animal Farm*, published in nineteen forty-five, satir
+    56.45s  user  발화 끝
+    57.56s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.79s]: [source: Literary Hub] “Animal Farm, published in 1945, is an allegori
+    61.99s  agent 발화 끝
+    62.13s  user  발화 시작: Oh, right! *Animal Farm*. I read that in high school.
+    65.97s  agent 발화 시작: It’s a powerful story, isn’t it? Both works showcase Orwell'
+    66.16s  user  발화 끝
+    70.27s  user  발화 시작: Mm-hmm.
+    70.80s  user  발화 끝
+    72.22s  user  발화 시작: Do you think he predicted all of this? The cameras and data 
+    72.31s  agent 발화 끝
+    76.89s  agent 발화 시작: It’s remarkable how prescient he was. He identified core iss
+    77.04s  user  발화 끝
+    78.99s  user  발화 시작: Oh.
+    79.49s  user  발화 끝
+    82.34s  user  발화 시작: It’s unsettling. I feel…
+    82.35s  agent 발화 끝
+    84.46s  user  발화 끝
+    86.58s  user  발화 시작: …like I need to disconnect for a while.
+    88.78s  agent 발화 시작: Sometimes, a digital detox is exactly what’s needed. Priorit
+    88.84s  user  발화 끝
+    95.40s  agent 발화 끝
+    95.42s  user  발화 시작: Maybe I will. Thanks, Braera.
+    97.61s  agent 발화 시작: You're very welcome.
+    97.78s  user  발화 끝
+    98.86s  agent 발화 끝

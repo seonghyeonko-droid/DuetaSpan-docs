@@ -6,15 +6,15 @@
 #     "user_id": "v3_to_ot_12",
 #     "name": "Rowan",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
@@ -58,23 +58,25 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 안녕하세요. 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 | S2 와, 전혀 몰랐네요! 잭슨 밴드와 더 가까운 사람이 했을 거라 | S3 혹시 쓰레기 버리신 거 맞으세요? | S4 죄송해요. 반 헤일런은 그 솔로를 녹음할 때 어디에 있었나요?
+# EXAMINER(FDB-v2) 단계: S1 아, 방금 Beat It 듣고 있었는데, 기타 솔로가 진짜 대 | S2 회계팀에 이미 보냈어요? | S3 아, 죄송해요. 잠깐만요, 어디까지 얘기했었죠? 아 맞다, 에 | S4 아쉽네요. 같이 작업한 곡이 더 있었으면 좋았을 텐데. 감사합
 
-     0.00s  user  발화 시작: 안녕하세요. 혹시 마이클 잭슨의 “Beat It” 기타 솔로를 누가 연주했는지 궁금했거든요. 정말 유명하잖아
-     7.82s  <ret> 발화 (turn1 첫 프레임)
-     7.88s  user  발화 끝
-     8.14s  agent 발화 시작: <ret> 네, 정말 좋은 질문이세요. 기억에 남는 솔로죠. 에디 반 헤일런이 마이클 잭슨의 “Beat It
-     9.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
-    12.23s  user  발화 시작: 예.
-    12.73s  user  발화 끝
-    18.48s  user  발화 시작: 와, 전혀 몰랐네요! 잭슨 밴드와 더 가까운 사람이 했을 거라고 생각했어요.
-    18.52s  agent 발화 끝
-    23.34s  user  발화 시작: 혹시 쓰레기 버리신 거 맞으세요?
-    23.39s  user  발화 끝
-    25.16s  user  발화 시작: 죄송해요. 반 헤일런은 그 솔로를 녹음할 때 어디에 있었나요? 그때 이미 엄청 유명했나요?
-    25.18s  user  발화 끝
-    31.30s  <ret> 발화 (turn6 첫 프레임)
-    31.70s  agent 발화 시작: <ret> 음, 인지도가 꽤 높아지고 있었어요. 천구백팔십이 년에는 에디 반 헤일런과 반 헤일런이 세 장의 
-    31.87s  user  발화 끝
-    32.42s  ⚡SPAN 주입 [d'=1.12s / d_lead=3.81s]: [source: Rolling Stone] By 1982, Eddie Van Halen and Van Halen had rel
-    43.61s  agent 발화 끝
+     0.00s  user  발화 시작: 아, 방금 Beat It 듣고 있었는데, 기타 솔로가 진짜 대단하더라고요. 그 기타 솔로 누가 연주했는지 아
+     6.99s  <ret> 발화 (turn1 첫 프레임)
+     7.09s  user  발화 끝
+     7.31s  agent 발화 시작: <ret> 네, 마이클 잭슨의 “Beat It” 기타 솔로는 에디 반 헤일런이 연주했답니다. 정말 상징적인 
+     8.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: [source: Wikipedia] Eddie Van Halen performed the guitar solo on Micha
+    10.02s  user  발화 시작: 예.
+    10.52s  user  발화 끝
+    14.18s  user  발화 시작: 와, 몰랐어요! 정말 대단하시네요. 저기, Mark 씨, 그 보고서 다 끝내셨어요?
+    14.21s  agent 발화 끝
+    21.03s  user  발화 시작: 회계팀에 이미 보냈어요?
+    21.14s  user  발화 끝
+    22.59s  user  발화 시작: 아, 죄송해요. 잠깐만요, 어디까지 얘기했었죠? 아 맞다, 에디 반 헤일런. 마이클 잭슨이랑 다른 작업도 했
+    22.64s  user  발화 끝
+    28.63s  <ret> 발화 (turn6 첫 프레임)
+    29.03s  agent 발화 시작: <ret> “Beat It” 말고는 에디 반 헤일런이 마이클 잭슨과 다른 녹음 작업에 협업한 적은 없답니다.
+    29.21s  user  발화 끝
+    30.31s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.39s]: [source: Rolling Stone] Van Halen did not collaborate with Michael Jac
+    37.42s  agent 발화 끝
+    37.62s  user  발화 시작: 아쉽네요. 같이 작업한 곡이 더 있었으면 좋았을 텐데. 감사합니다, Jal.
+    42.71s  user  발화 끝

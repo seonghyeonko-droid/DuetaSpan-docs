@@ -4,110 +4,124 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pause_16",
-#     "name": "Andrea",
+#     "name": "보별",
 #     "location": {
-#       "city": "London",
-#       "country": "United Kingdom",
-#       "timezone": "Europe/London (GMT, UTC+0)",
-#       "currency": "GBP (£)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "British",
+#     "nationality": "Korean",
 #     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "age_range": "40s",
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-05-12",
+#       "category": "hobby",
+#       "text": "User is into home fermentation."
+#     },
+#     {
+#       "date": "2026-02-27",
 #       "category": "home",
 #       "text": "User's home address is 148 Elm Street."
 #     },
 #     {
-#       "date": "2026-02-27",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "date": "2025-09-07",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
-#       "date": "2026-02-11",
+#       "date": "2025-08-18",
 #       "category": "trip",
 #       "text": "User is planning a trip to Vietnam in May."
 #     },
 #     {
-#       "date": "2025-08-18",
-#       "category": "work",
-#       "text": "User works as a graduate student."
-#     },
-#     {
 #       "date": "2025-05-28",
-#       "category": "allergy",
-#       "text": "User is allergic to pollen."
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-10",
+#       "date": "2025-08-02",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-03",
 #       "title": "Setting up a home network",
 #       "bullets": [
 #         "asked about mesh routers",
 #         "coverage for a 3-story house"
 #       ]
-#     },
-#     {
-#       "date": "2025-07-21",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 혹시 빅 브라더라는 말은… | S2 아, ‘천구백팔십사년’… | S3 그럼 빅 브라더는 구체적으로 어떤 의미였을까요? | S4 혹시 빅 브라더처럼 개인정보를 보호할 수 있는 방법도 있을까요
+# EXAMINER(FDB-v2) 단계: S1 빅 브라더라는 말이 어디서 왔는지 궁금했는데… | S2 뭔가 섬뜩하네요. 지금도 빅… | S3 생각보다 오래됐네요. 그 소설이 지금도 많이 읽히나요? | S4 혹시 그 소설을 영화화한 적도 있나요?
 
-     0.00s  user  발화 시작: 혹시 빅 브라더라는 말은…
-     2.26s  user  발화 끝
-     2.91s  user  발화 시작: …어디서 처음 나왔는지 아세요?
-     4.57s  user  발화 끝
-     4.77s  agent 발화 시작: 그 용어가 처음 사용된 배경에 대해 궁금하시군요.
-     7.45s  <ret> 발화 (turn3 첫 프레임)
-     7.85s  agent 발화 시작: <ret> 빅 브라더라는 표현은 문학 작품에서 유래했어요. 조지 오웰의 디스토피아 소설, ‘천구백팔십사년’에
-     7.87s  agent 발화 끝
-     9.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: [source: Britannica] The term “Big Brother” was popularized by George 
-    16.56s  agent 발화 끝
-    16.57s  user  발화 시작: 아, ‘천구백팔십사년’…
-    18.64s  user  발화 끝
-    18.72s  agent 발화 시작: 소설 속 배경과 관련이 깊습니다.
-    20.94s  <ret> 발화 (turn6 첫 프레임)
-    21.16s  agent 발화 끝
-    21.26s  agent 발화 시작: <ret> 오웰은 당시 사회 분위기를 반영하고자 했습니다. 스페인 내전 경험과 전체주의 정권 관찰에서 영감을
-    22.94s  ⚡SPAN 주입 [d'=2.00s / d_lead=2.99s]: [source: Literary Hub] Orwell drew inspiration from his experiences du
-    24.85s  user  발화 시작: 아.
-    25.48s  user  발화 끝
-    28.72s  agent 발화 끝
-    28.99s  user  발화 시작: 그럼 빅 브라더는 구체적으로 어떤 의미였을까요?
-    32.30s  agent 발화 시작: 감시와 통제를 상징하는 표현이었죠.
-    32.40s  user  발화 끝
-    34.65s  <ret> 발화 (turn10 첫 프레임)
-    34.70s  agent 발화 끝
-    34.72s  agent 발화 시작: <ret> 소설 속 빅 브라더는 절대적인 권력을 가진 존재입니다. 시민들을 끊임없이 감시하는 전지전능한 국가
-    36.17s  ⚡SPAN 주입 [d'=1.52s / d_lead=4.63s]: [source: CliffsNotes] Big Brother represents the omnipresent state and
-    42.83s  agent 발화 끝
-    43.83s  user  발화 시작: 요즘도 빅 브라더라는 말이 자주 쓰이던데,
-    46.97s  user  발화 끝
-    47.27s  agent 발화 시작: 사회 비판적인 맥락에서 자주 사용됩니다.
-    49.69s  <ret> 발화 (turn13 첫 프레임)
-    49.86s  agent 발화 끝
-    49.92s  agent 발화 시작: <ret> 감시 사회에 대한 경각심을 일깨우는 용도로 쓰입니다. 정부의 과도한 감시와 사생활 침해에 대한 은
-    51.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.61s]: [source: The Guardian] The term has become a common metaphor for intru
-    52.86s  user  발화 시작: 음.
-    53.35s  user  발화 끝
-    57.64s  user  발화 시작: 혹시 빅 브라더처럼 개인정보를 보호할 수 있는 방법도 있을까요?
-    57.66s  agent 발화 끝
-    62.03s  <ret> 발화 (turn16 첫 프레임)
-    62.19s  agent 발화 시작: <ret> 강력한 비밀번호 사용, VPN 사용, 개인정보 설정 확인 등이 있습니다.
-    62.37s  user  발화 끝
-    63.39s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.00s]: (tool result) 개인정보 보호를 위한 몇 가지 방법이 있습니다: 강력한 비밀번호 사용, VPN 사용, 개인정보 설정 
-    67.19s  agent 발화 끝
-    67.27s  agent 발화 시작: 개인정보 설정을 꼼꼼히 확인하는 것도 중요합니다.
-    70.46s  agent 발화 끝
+     0.00s  user  발화 시작: 빅 브라더라는 말이 어디서 왔는지 궁금했는데…
+     3.05s  <ret> 발화 (turn1 첫 프레임)
+     3.44s  agent 발화 시작: <ret> 조지 오웰의 디스토피아 소설 《천구백팔십사》의 주인공이 빅 브라더입니다.
+     3.60s  user  발화 끝
+     5.05s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.04s]: [source: Wikipedia] "Big Brother is the protagonist of George Orwell's
+     8.35s  user  발화 시작: 아, 그렇군요. 그럼 그…
+     8.49s  agent 발화 끝
+    10.09s  user  발화 끝
+    11.13s  user  발화 시작: …소설에서 어떤 의미로 사용됐어요?
+    13.06s  <ret> 발화 (turn4 첫 프레임)
+    13.38s  agent 발화 시작: <ret> 오웰의 소설에서 빅 브라더는 오세아니아를 지배하는 전지전능한 독재자입니다.
+    13.58s  user  발화 끝
+    15.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [source: Britannica] "In Orwell’s novel, Big Brother is the seemingly 
+    16.07s  user  발화 시작: 아.
+    16.70s  user  발화 끝
+    18.71s  user  발화 시작: 뭔가 섬뜩하네요. 지금도 빅…
+    19.03s  agent 발화 끝
+    20.55s  user  발화 끝
+    22.34s  user  발화 시작: …브라더라는 표현을 많이 쓰잖아요.
+    24.79s  user  발화 끝
+    24.90s  agent 발화 시작: 현대 사회에서도 감시나 권력 남용을 비판할 때 자주 사용되죠.
+    28.65s  agent 발화 끝
+    29.12s  user  발화 시작: 혹시 그 소설이 출판된 해를 알 수 있을까요?
+    31.79s  <ret> 발화 (turn10 첫 프레임)
+    32.10s  agent 발화 시작: <ret> 《천구백팔십사》는 천구백사십구년에 출판되었습니다.
+    32.17s  user  발화 끝
+    33.23s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.70s]: (tool result) 1949
+    35.79s  agent 발화 끝
+    35.97s  user  발화 시작: 생각보다 오래됐네요. 그 소설이 지금도 많이 읽히나요?
+    39.24s  <ret> 발화 (turn12 첫 프레임)
+    39.47s  agent 발화 시작: <ret> 《천구백팔십사》는 전 세계적으로 오천만 권 이상 판매되었습니다.
+    39.72s  user  발화 끝
+    40.89s  user  발화 시작: 네.
+    41.16s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.72s]: [source: Goodreads] "Nineteen Eighty-Four has sold over 50 million cop
+    41.34s  user  발화 끝
+    44.20s  agent 발화 끝
+    44.38s  user  발화 시작: 와, 정말 대단하네요. 그 소설의 배경이 된 시대는 언제인가요?
+    48.43s  <ret> 발화 (turn15 첫 프레임)
+    48.59s  agent 발화 시작: <ret> 오웰은 자신의 시대, 천구백사십년대의 사회적, 정치적 흐름을 바탕으로 미래의 섬뜩한 비전을 만들었
+    48.82s  user  발화 끝
+    50.19s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.74s]: [source: Literary Hub] "Orwell extrapolates from the social and politi
+    51.48s  user  발화 시작: 네.
+    51.94s  user  발화 끝
+    56.34s  agent 발화 끝
+    56.42s  user  발화 시작: 그럼 그 소설은 미래를 예측한 건가요?
+    58.86s  user  발화 끝
+    59.21s  agent 발화 시작: 미래를 예측했다고 보기는 어렵지만, 권력의 위험성을 경고하는 메시지를 담고 있습니다.
+    64.91s  agent 발화 끝
+    64.97s  user  발화 시작: 혹시 그 소설을 영화화한 적도 있나요?
+    67.22s  <ret> 발화 (turn20 첫 프레임)
+    67.53s  agent 발화 시작: <ret> 마이클 래드포드가 감독한 천구백팔십사년 영화가 있습니다.
+    67.83s  user  발화 끝
+    69.08s  user  발화 시작: 그렇죠.
+    69.22s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.82s]: (tool result) 1984, directed by Michael Radford
+    69.71s  user  발화 끝
+    71.35s  agent 발화 끝
+    71.99s  user  발화 시작: 아, 영화도 있었군요. 한번 찾아봐야겠어요.
+    74.39s  agent 발화 시작: 좋은 선택입니다. 책과 영화 모두 깊은 생각을 하게 만드는 작품이죠.
+    74.57s  user  발화 끝
+    79.26s  agent 발화 끝

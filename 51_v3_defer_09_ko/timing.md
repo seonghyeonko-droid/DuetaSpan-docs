@@ -6,7 +6,7 @@
 #     "user_id": "v3_defer_09",
 #     "name": "보아",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -68,25 +68,29 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박, 방 세 개 예 | S2 혹시 취소하려면 어떻게 해야 해? | S3 … 혹시 수영장이 있는지 알려줄 수 있어? | S4 그럼 조식은 포함되어 있어?
 
-     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박 동안 객실 세개 예약해 줘.
-     6.06s  <ret> 발화 (turn1 첫 프레임)
-     6.21s  agent 발화 시작: <ret> 네, 알겠습니다. 오션뷰 호텔 샌디에이고, 이월 십일부터 칠박, 객실 세개 맞으신가요?
-     6.26s  user  발화 끝
-     7.50s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.49s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 ro
-    12.55s  agent 발화 시작: 네, 예약이 완료되었습니다. 오션뷰 호텔, 샌디에이고, 이월 십일부터 십칠일까지 객실 세개, 확인 번호는 팔
-    12.70s  agent 발화 끝
-    21.36s  agent 발화 끝
-    21.47s  user  발화 시작: …근데 혹시 그 호텔에 수영장이 있나요?
-    24.24s  user  발화 끝
-    24.59s  agent 발화 시작: 수영장이 있는지—아, 네, 확인해 드리겠습니다. 잠시만 기다려 주세요.
-    26.91s  user  발화 시작: 응.
-    27.26s  user  발화 끝
-    28.77s  <ret> 발화 (turn6 첫 프레임)
-    28.80s  ⚡지연 SPAN 주입(선제발표 직전): [source: Hotels.com] Ocean View Hotel features an outdoor pool, a fitn
-    28.84s  agent 발화 시작: <ret> 잠시만요.
-    28.89s  agent 발화 끝
-    29.27s  ⚡SPAN 주입 [d'=0.50s / d_lead=0.95s]: (no information found)
-    29.79s  agent 발화 시작: <ret> 호텔에 수영장이 있는지 알아봤는데요— 오션뷰 호텔에는 야외 수영장과 피트니스 센터, 그리고 무료 
-    29.79s  agent 발화 끝
-    38.31s  agent 발화 끝
+     0.00s  user  발화 시작: 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박, 방 세 개 예약해 줘.
+     5.31s  <ret> 발화 (turn1 첫 프레임)
+     5.47s  agent 발화 시작: <ret> 예약이 완료됐습니다. 확인 번호는 팔십사B7G이고, 오션뷰 호텔 샌디에이고에서 이월 십일부터 십칠
+     5.60s  user  발화 끝
+     7.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: (tool result) Reservation confirmed. Confirmation number is 84B7G. Thr
+    15.23s  user  발화 시작: 혹시 취소하려면 어떻게 해야 해?
+    15.44s  agent 발화 끝
+    17.21s  agent 발화 시작: 취소 정책은 호텔마다 다르지만, 보통 예약 확인서에 자세히 나와 있습니다—
+    17.21s  user  발화 끝
+    20.99s  user  발화 시작: … 혹시 수영장이 있는지 알려줄 수 있어?
+    21.84s  agent 발화 끝
+    23.72s  user  발화 끝
+    24.09s  agent 발화 시작: 네, 오션뷰 호텔에는 수영장이 있습니다. [surprised] 호텔 웹사이트에 따르면 야외 수영장과 어린이 
+    28.22s  user  발화 시작: 응.
+    28.63s  user  발화 끝
+    31.37s  agent 발화 시작: 수영장 이용 시간은 매일 아침 여덟시부터 저녁 아홉시까지입니다. 수건도 제공되는 것 같아요.
+    31.50s  agent 발화 끝
+    37.16s  agent 발화 끝
+    37.65s  user  발화 시작: 그럼 조식은 포함되어 있어?
+    39.41s  <ret> 발화 (turn9 첫 프레임)
+    39.56s  agent 발화 시작: <ret> 네, 모든 객실 유형에 조식이 포함되어 있습니다. 뷔페식으로 제공되고, 매일 아침 일곱시부터 열시
+    39.64s  user  발화 끝
+    40.85s  ⚡SPAN 주입 [d'=1.44s / d_lead=8.35s]: (tool result) Breakfast is included for all room types.
+    47.90s  agent 발화 끝

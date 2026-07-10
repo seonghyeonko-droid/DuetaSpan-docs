@@ -4,79 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Sahiha",
+#     "name": "Sky",
 #     "location": {
-#       "city": "Tokyo",
-#       "country": "Japan",
-#       "timezone": "Asia/Tokyo (JST, UTC+9)",
-#       "currency": "JPY (¥)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Japanese",
+#     "nationality": "American",
 #     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "Japanese"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-03-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "category": "home",
+#       "text": "User's home address is 70 Maple Drive."
 #     },
 #     {
 #       "date": "2026-01-22",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-12-08",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
+#       "date": "2025-12-08",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
 #       "date": "2025-11-06",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-10-11",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
 #       "date": "2025-07-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-22",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-01",
+#       "date": "2026-01-26",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-23",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: Hi Sahiha, I'm Lira. It’s good to connect with you. Is there
-     2.44s  user  발화 시작: Uh-huh.
-     2.98s  user  발화 끝
-     5.10s  user  발화 시작: Oh, hi Lira. I was just thinking about that trip I’m plannin
-     5.14s  agent 발화 끝
-     9.88s  <ret> 발화 (turn3 첫 프레임)
-    10.11s  agent 발화 시작: <ret> You’re planning a trip to Switzerland in March of next
-    10.19s  user  발화 끝
-    11.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.34s]: [2026-03-06] User is planning a trip to Switzerland in March.
-    16.45s  agent 발화 끝
-    17.71s  user  발화 시작: Yes, actually. I’m a vegetarian, and I’m wondering if that w
-    21.89s  <ret> 발화 (turn5 첫 프레임)
-    22.20s  agent 발화 시작: <ret> That’s a very practical consideration when traveling. 
-    22.43s  user  발화 끝
-    23.17s  ⚡SPAN 주입 [d'=1.28s / d_lead=2.70s]: [2026-01-22] User is vegetarian.
-    30.31s  agent 발화 끝
+     0.00s  agent 발화 시작: Hi Sky, I'm Lira. It's good to connect with you. I'm a couns
+     3.90s  user  발화 시작: Uh-huh.
+     4.34s  user  발화 끝
+     7.92s  agent 발화 끝
+     8.02s  user  발화 시작: Oh, hi Lira. Um, I was just remembering I mentioned somethin
+    14.78s  <ret> 발화 (turn3 첫 프레임)
+    15.01s  agent 발화 시작: <ret> Yes, you did. You booked an appointment with Dr. Han, 
+    15.25s  user  발화 끝
+    16.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    19.35s  agent 발화 끝
+    20.55s  user  발화 시작: Right, that’s it! And, uh, what time was that appointment ag
+    25.14s  <ret> 발화 (turn5 첫 프레임)
+    25.45s  agent 발화 시작: <ret> It's scheduled for January twenty-sixth at eight fifte
+    25.64s  user  발화 끝
+    26.74s  ⚡SPAN 주입 [d'=1.60s / d_lead=4.34s]: (tool result) January twenty-sixth, eight fifteen AM with Dr. Han.
+    29.79s  agent 발화 끝

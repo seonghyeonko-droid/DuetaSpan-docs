@@ -4,81 +4,84 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_36",
-#     "name": "Sahiha",
+#     "name": "혜호",
 #     "location": {
-#       "city": "Tokyo",
-#       "country": "Japan",
-#       "timezone": "Asia/Tokyo (JST, UTC+9)",
-#       "currency": "JPY (¥)"
+#       "city": "Seoul",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Japanese",
+#     "nationality": "Korean",
 #     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "Japanese"
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-03-06",
-#       "category": "trip",
-#       "text": "User is planning a trip to Switzerland in March."
+#       "category": "home",
+#       "text": "User's home address is 70 Maple Drive."
 #     },
 #     {
 #       "date": "2026-01-22",
-#       "category": "diet",
-#       "text": "User is vegetarian."
-#     },
-#     {
-#       "date": "2025-12-08",
 #       "category": "allergy",
 #       "text": "User is allergic to shellfish."
 #     },
 #     {
+#       "date": "2025-12-08",
+#       "category": "diet",
+#       "text": "User is vegetarian."
+#     },
+#     {
 #       "date": "2025-11-06",
-#       "category": "pet",
-#       "text": "User has a Golden Retriever named Max."
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
+#     },
+#     {
+#       "date": "2025-10-11",
+#       "category": "work",
+#       "text": "User works as a graphic designer."
 #     },
 #     {
 #       "date": "2025-07-02",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-11-22",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
-#       ]
-#     },
-#     {
-#       "date": "2025-06-01",
+#       "date": "2026-01-26",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
 #         "prefers Dr. Han"
+#       ]
+#     },
+#     {
+#       "date": "2025-06-23",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 사히하님, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 관련 상담을 도와드리는 역할을 하고 있어요.
-     8.11s  agent 발화 끝
-     8.66s  user  발화 시작: 음… 스위스 여행 계획 세우고 있는데, 혹시 제가 언제 가기로 했었죠? 갑자기 기억이 안 나네요.
-    15.42s  <ret> 발화 (turn2 첫 프레임)
-    15.58s  agent 발화 시작: <ret> 기억이 잘 안 나실 때도 있으시죠. 내년 삼월에 스위스 여행을 계획하고 계셨어요.
-    15.75s  user  발화 끝
-    16.70s  ⚡SPAN 주입 [d'=1.28s / d_lead=3.36s]: [2026-03-06] User is planning a trip to Switzerland in March.
-    22.23s  user  발화 시작: 아, 맞다! 스위스! 그럼 혹시 제가 뭘 챙겨가면 좋을까요? 알레르기 때문에 걱정이 좀 돼요.
-    22.30s  agent 발화 끝
-    29.44s  <ret> 발화 (turn4 첫 프레임)
-    29.84s  agent 발화 시작: <ret> 여행 전에 미리 준비하면 훨씬 편하시겠죠. 조개류 알레르기가 있으시니, 스위스 음식 드실 때 조심
-    30.01s  user  발화 끝
-    31.44s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.51s]: [2025-11-06] User is allergic to shellfish.
-    35.64s  user  발화 시작: 응.
-    36.14s  user  발화 끝
-    39.20s  agent 발화 끝
-    39.90s  user  발화 시작: 감사합니다, 리라 씨.
-    41.32s  user  발화 끝
+     0.00s  agent 발화 시작: 혜호님, 안녕하세요. 저는 리라입니다. 돈 관리와 예산 관련해서 도와드리는 상담사예요.
+     3.65s  user  발화 시작: 그래.
+     4.29s  user  발화 끝
+     7.42s  agent 발화 끝
+     7.42s  user  발화 시작: 음… 혹시 제가 예전에 치과 예약했던 거 기억나세요?
+    11.13s  <ret> 발화 (turn3 첫 프레임)
+    11.28s  agent 발화 시작: <ret> 네, 기억나요. 일찍 진료받고 한 선생님을 선호하셨죠. 혹시 또 예약이 필요하신가요?
+    11.44s  user  발화 끝
+    13.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.90s]: [2026-01-26] Past chat — Booked a dentist appointment: asked for an ea
+    18.18s  user  발화 시작: 아, 네. 그때보다 좀 더 빨리 예약하고 싶은데… 가능할까요?
+    18.19s  agent 발화 끝
+    22.19s  <ret> 발화 (turn5 첫 프레임)
+    22.34s  agent 발화 시작: <ret> 화요일 오전 여덟시, 수요일 오전 일곱시 삼십분에 예약 가능합니다. 혹시 괜찮으신 시간이 있으세요
+    22.49s  user  발화 끝
+    24.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.23s]: (tool result) Available slots with Dr. Han: Tuesday at 8:00 AM, Wednes
+    29.57s  agent 발화 끝

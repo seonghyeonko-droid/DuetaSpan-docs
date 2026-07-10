@@ -6,7 +6,7 @@
 #     "user_id": "v3_rag_28",
 #     "name": "정슬",
 #     "location": {
-#       "city": "Busan",
+#       "city": "Seoul",
 #       "country": "South Korea",
 #       "timezone": "Asia/Seoul (KST, UTC+9)",
 #       "currency": "KRW (₩)"
@@ -68,20 +68,23 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 음… 퇴역 군인부(Department of… | S2 …Veterans Affairs)가 언제 만들어졌는지 궁금하네 | S3 천구백삼십년이라고요? 좀 더 일찍 만들어진 건 아니었나요? 혹 | S4 아, 그렇군요. 그럼 천구백삼십년에 완전히 새로운 부처가 만들
 
-     0.00s  user  발화 시작: 퇴역 군인 부처가 언제 만들어졌는지 궁금해.
-     2.30s  <ret> 발화 (turn1 첫 프레임)
-     2.62s  agent 발화 시작: <ret> 음, 관련 정보를 찾아봤는데… 퇴역 군인 부처는 허버트 후버 대통령에 의해 천구백삼십년 칠월 이십
-     2.77s  user  발화 끝
-     3.74s  ⚡SPAN 주입 [d'=1.44s / d_lead=2.51s]: [source: Britannica] The Department of Veterans Affairs was establishe
-    12.03s  agent 발화 끝
-    13.28s  user  발화 시작: 천구백삼십년이라고? 그건 좀 의외인데. 이전에는 없었던 거야?
-    17.98s  agent 발화 시작: 이전에도 퇴역 군인들을 위한 지원은 있었지만, 지금처럼 하나의 부처로 공식화된 건 그때부터예요.
-    18.24s  user  발화 끝
-    24.55s  user  발화 시작: 그럼 그전에는 누가 담당했어?
-    24.65s  agent 발화 끝
-    26.24s  <ret> 발화 (turn5 첫 프레임)
-    26.55s  agent 발화 시작: <ret> 그건 또 다른 질문이네요. 천구백삼십년 이전에는 전쟁 위험 보험국에서 퇴역 군인 관련 업무를 담당
-    26.58s  user  발화 끝
-    26.74s  ⚡SPAN 주입 [d'=0.50s / d_lead=2.23s]: [source: National Archives] Prior to 1930, the administration of veter
-    36.57s  agent 발화 끝
+     0.00s  user  발화 시작: 음… 퇴역 군인부(Department of…
+     3.37s  user  발화 끝
+     4.71s  user  발화 시작: …Veterans Affairs)가 언제 만들어졌는지 궁금하네요.
+     8.37s  <ret> 발화 (turn2 첫 프레임)
+     8.68s  user  발화 끝
+     8.69s  agent 발화 시작: <ret> 퇴역 군인부는 천구백삼십년 칠월 이십일일에 설립되었고, 여러 퇴역 군인 지원 프로그램을 통합했어요
+    10.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.91s]: [source: Britannica] The Department of Veterans Affairs was establishe
+    15.60s  agent 발화 끝
+    15.61s  user  발화 시작: 천구백삼십년이라고요? 좀 더 일찍 만들어진 건 아니었나요? 혹시 그 전에도 비슷한 기관이 있었나요?
+    22.18s  <ret> 발화 (turn4 첫 프레임)
+    22.25s  agent 발화 시작: <ret> 천구백삼십년 이전에 전쟁 위험 보험국과 퇴역 군인국에서 퇴역 군인 지원을 담당했어요.
+    22.33s  user  발화 끝
+    23.54s  ⚡SPAN 주입 [d'=1.36s / d_lead=6.16s]: [source: History.com] Prior to 1930, veteran benefits were administere
+    28.41s  agent 발화 끝
+    28.44s  user  발화 시작: 아, 그렇군요. 그럼 천구백삼십년에 완전히 새로운 부처가 만들어진 건 아니고, 기존 기관들을 합친 거군요?
+    35.11s  agent 발화 시작: 맞아요. 기존 기관들을 통합해서 퇴역 군인부를 새롭게 만들었어요. [happy] 예산 관리에도 도움이 될 것
+    35.39s  user  발화 끝
+    43.12s  agent 발화 끝

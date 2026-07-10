@@ -4,51 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_backg_17",
-#     "name": "Remy",
+#     "name": "도정",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "early 30s",
-#     "language": "English"
+#     "nationality": "Korean",
+#     "gender": "male",
+#     "age_range": "late 30s",
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-08",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2026-06-04",
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     },
 #     {
-#       "date": "2026-04-03",
+#       "date": "2026-02-07",
+#       "category": "pet",
+#       "text": "User has a Siamese cat named Bella."
+#     },
+#     {
+#       "date": "2026-01-30",
+#       "category": "home",
+#       "text": "User's home address is 86 Birch Road."
+#     },
+#     {
+#       "date": "2026-01-18",
+#       "category": "allergy",
+#       "text": "User is allergic to shellfish."
+#     },
+#     {
+#       "date": "2025-10-23",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2025-08-18",
+#       "date": "2025-09-26",
 #       "category": "cuisine",
-#       "text": "User's favorite cuisine is Korean BBQ."
-#     },
-#     {
-#       "date": "2025-08-14",
-#       "category": "work",
-#       "text": "User works as a architect."
+#       "text": "User's favorite cuisine is Thai."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2026-01-18",
-#       "title": "Setting up a home network",
+#       "date": "2026-01-02",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-07-10",
+#       "date": "2025-09-20",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -58,18 +68,25 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 요즘 건강 관리에 관심이 많아서 그런데, 혹시 건강한 사람의  | S2 아, 그건 좀 높은 편이네요. 그럼 좀 더 건강한 사람의 평균 | S3 [sigh] 오늘따라 차가 너무 막히네. | S4 아하, 그럼 평균적으로는 분당 칠십오회 정도라고 생각하면 될까
 
-     0.00s  user  발화 시작: 음… 건강한 사람의 평균 심박수는 어떻게 돼요?
-     4.03s  <ret> 발화 (turn1 첫 프레임)
-     4.18s  agent 발화 시작: <ret> 보통 성인의 경우, 건강한 성인의 정상적인 심박수는 분당 육십 회에서 백 회 사이입니다.
-     4.44s  user  발화 끝
-     4.53s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.42s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     7.28s  user  발화 시작: 예.
-     7.73s  user  발화 끝
-    10.07s  user  발화 시작: 그럼 운동할 때는 얼마나 올라가는 걸까요?
-    10.34s  agent 발화 끝
-    12.67s  user  발화 시작: [sigh] 아, 오늘따라 지하철이 왜 이렇게 붐비지?
-    12.85s  user  발화 끝
-    15.72s  user  발화 끝
-    16.00s  agent 발화 시작: 운동 강도에 따라 다르지만, 최대 심박수의 칠십오 퍼센트 정도까지는 괜찮다고 합니다.
-    21.65s  agent 발화 끝
+     0.00s  user  발화 시작: 요즘 건강 관리에 관심이 많아서 그런데, 혹시 건강한 사람의 평균 심박수가 어떻게 되는지 궁금해요.
+     6.12s  <ret> 발화 (turn1 첫 프레임)
+     6.27s  agent 발화 시작: <ret> 건강한 성인의 정상적인 안정 시 심박수는 분당 육십 회에서 백 회 사이입니다.
+     6.48s  user  발화 끝
+     6.62s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.00s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
+     8.79s  user  발화 시작: 예.
+     9.24s  user  발화 끝
+    11.03s  user  발화 시작: 아, 그건 좀 높은 편이네요. 그럼 좀 더 건강한 사람의 평균 심박수는 어느 정도일까요?
+    11.27s  agent 발화 끝
+    16.60s  <ret> 발화 (turn4 첫 프레임)
+    16.82s  user  발화 끝
+    16.83s  agent 발화 시작: <ret> 좀 더 건강한 성인의 일반적인 심박수는 분당 육십 회에서 구십 회 사이입니다.
+    18.60s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: [source: Cleveland Clinic] For adults, a typical heart rate ranges fro
+    22.02s  agent 발화 끝
+    22.16s  user  발화 시작: [sigh] 오늘따라 차가 너무 막히네.
+    24.36s  user  발화 시작: 아하, 그럼 평균적으로는 분당 칠십오회 정도라고 생각하면 될까요?
+    24.51s  user  발화 끝
+    28.58s  agent 발화 시작: 네, 대략 분당 칠십오 회 정도로 생각하시면 괜찮겠습니다.
+    28.67s  user  발화 끝
+    32.28s  agent 발화 끝

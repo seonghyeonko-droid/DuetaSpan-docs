@@ -4,76 +4,78 @@
 # {
 #   "profile": {
 #     "user_id": "v3_pers_38",
-#     "name": "Avery",
+#     "name": "재준",
 #     "location": {
-#       "city": "Sydney",
-#       "country": "Australia",
-#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
-#       "currency": "AUD ($)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "Australian",
-#     "gender": "non-binary",
-#     "age_range": "late 20s",
-#     "language": "English"
+#     "nationality": "Korean",
+#     "gender": "female",
+#     "age_range": "40s",
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-04-02",
-#       "category": "work",
-#       "text": "User works as a architect."
-#     },
-#     {
-#       "date": "2025-07-24",
+#       "date": "2026-05-05",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2025-07-22",
+#       "date": "2026-02-20",
+#       "category": "allergy",
+#       "text": "User is allergic to cat dander."
+#     },
+#     {
+#       "date": "2025-11-01",
 #       "category": "pet",
 #       "text": "User has a Poodle named Coco."
 #     },
 #     {
-#       "date": "2025-07-17",
-#       "category": "hobby",
-#       "text": "User is into alpine wildflower photography."
+#       "date": "2025-10-18",
+#       "category": "work",
+#       "text": "User works as a physical therapist."
+#     },
+#     {
+#       "date": "2025-08-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in August."
+#     },
+#     {
+#       "date": "2025-06-09",
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-25",
+#       "date": "2025-08-11",
 #       "title": "Planning a birthday dinner",
 #       "bullets": [
 #         "party of six",
 #         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2025-09-30",
-#       "title": "Researching a used car",
-#       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
 
-     0.00s  agent 발화 시작: 에이버리님, 안녕하세요. 저는 재이아예요. 힘든 시간을 보내고 계신 분들이 변화를 잘 받아들이고 슬픔을 극복
-     7.47s  user  발화 시작: 응응.
-     7.91s  user  발화 끝
-    11.51s  user  발화 시작: 재이아… 이름이 예쁘네요. 근데, 상담사라고 하셨죠? 저는 그냥 좀 마음이 복잡해서요.
-    11.60s  agent 발화 끝
-    17.81s  user  발화 끝
-    17.90s  agent 발화 시작: 복잡한 마음이 드시는군요. 어떤 점이 가장 힘드신가요? 지금 느끼시는 감정을 편하게 말씀해 주시면 좋겠어요.
-    21.49s  user  발화 시작: 응.
-    21.94s  user  발화 끝
-    25.32s  agent 발화 시작: 때로는 말로 표현하는 것만으로도 마음이 조금은 가벼워질 수 있답니다. 어떤 생각들이 머릿속을 맴돌고 계신지,
-    25.40s  agent 발화 끝
-    36.68s  user  발화 시작: 사실… 최근에 직장을 그만뒀거든요. 뭘 해야 할지 전혀 감이 안 와요.
-    37.09s  agent 발화 끝
-    41.48s  agent 발화 시작: 직장을 그만두셨다니, 쉽지 않은 결정이셨을 텐데요. 새로운 시작을 앞두고 불안하고 막막한 마음이 드시는 건 
-    41.48s  user  발화 끝
-    52.56s  agent 발화 끝
-    52.69s  user  발화 시작: 그냥… 뭘 해도 되는 것 같지 않고, 뭘 해야 할지도 모르겠어요. 그냥 멍한 상태로 하루하루가 흘러가는 것 
-    60.10s  user  발화 끝
+     0.00s  agent 발화 시작: 재준 씨, 안녕하세요. 저는 Jaeia예요. 힘든 시간을 보내고 계신 분들을 돕는 일을 하고 있어요. 혹시 
+     8.06s  user  발화 시작: 응응.
+     8.70s  user  발화 끝
+    12.44s  user  발화 시작: 아, Jaeia 씨군요. 이름이 예쁘네요. 그냥… 요즘 좀 많이 힘들어요. 뭘 해야 할지 모르겠어요.
+    12.52s  agent 발화 끝
+    19.02s  user  발화 끝
+    19.13s  agent 발화 시작: 많이 힘드시군요. 뭘 해야 할지 모르는 막막함은, 마치 안개 속에 갇힌 기분이 들 수도 있을 것 같아요. 지
+    24.34s  user  발화 시작: 응.
+    24.83s  user  발화 끝
+    29.81s  agent 발화 시작: 괴로운 점을 말씀해 주시는 것만으로도 큰 용기가 필요했을 텐데, 정말 감사합니다. 혹시 어떤 변화 때문에 힘
+    29.83s  agent 발화 끝
+    40.72s  user  발화 시작: 사실… 어머니가 돌아가시고 나서요. 한 달 정도 됐는데, 아직도 마음이 너무 아파요.
+    41.17s  agent 발화 끝
+    46.13s  agent 발화 시작: 어머니를 잃은 슬픔은, 어떤 말로도 다 표현할 수 없을 만큼 깊을 거예요. 한 달은, 슬픔을 받아들이기에는 
+    46.19s  user  발화 끝
+    61.53s  agent 발화 끝
+    61.67s  user  발화 시작: 어머니는… 항상 저를 믿어주셨어요. 제가 뭘 하든 항상 응원해주시고… 그런 따뜻한 마음이 너무 그리워요.
+    68.80s  user  발화 끝

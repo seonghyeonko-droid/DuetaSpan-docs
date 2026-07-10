@@ -4,17 +4,17 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Alice",
+#     "name": "라율",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Busan",
+#       "country": "South Korea",
+#       "timezone": "Asia/Seoul (KST, UTC+9)",
+#       "currency": "KRW (₩)"
 #     },
-#     "nationality": "French",
+#     "nationality": "Korean",
 #     "gender": "female",
 #     "age_range": "late 30s",
-#     "language": "French"
+#     "language": "Korean"
 #   },
 #   "saved_memories": [
 #     {
@@ -77,16 +77,19 @@
 # }
 
 
-     0.00s  user  발화 시작: 프랑스 휴가 사진 찾아줘. 작년 거. 썸네일 말고.
-     3.56s  <ret> 발화 (turn1 첫 프레임)
-     3.64s  agent 발화 시작: <ret> 네, 알겠습니다. 작년 프랑스 휴가 사진이 삼십칠 장 있습니다. 썸네일은 제외했어요.
-     3.84s  user  발화 끝
-     4.60s  ⚡SPAN 주입 [d'=1.04s / d_lead=1.18s]: (tool result) Found 37 images matching '프랑스 휴가' from 2023, excluding t
-     7.62s  user  발화 시작: 맞아.
-     8.16s  user  발화 끝
-    10.13s  agent 발화 끝
-    12.86s  user  발화 시작: 그중에 에펠탑 사진은 몇 장이야?
-    14.08s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) 8 images contain '에펠탑'.
-    14.92s  agent 발화 시작: <ret> 에펠탑 사진은 여덟 장이네요.
-    15.12s  user  발화 끝
-    17.09s  agent 발화 끝
+     0.00s  user  발화 시작: 내 프랑스 휴가 사진 찾아줘. 작년 거 말고…
+     3.15s  user  발화 끝
+     4.58s  user  발화 시작: …썸네일 말고.
+     5.78s  <ret> 발화 (turn2 첫 프레임)
+     5.85s  agent 발화 시작: <ret> 이천이십이년 프랑스 휴가 사진 십칠장을 찾았어요. 혹시 특정 날짜 사진을 보고 싶으신가요?
+     6.00s  user  발화 끝
+     7.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.18s]: (tool result) 2022년 프랑스 휴가 관련 사진 17장 발견.
+     8.85s  user  발화 시작: 그래.
+     9.34s  user  발화 끝
+    13.03s  agent 발화 끝
+    13.09s  user  발화 시작: 아니, 그냥 보여줘.
+    14.71s  <ret> 발화 (turn5 첫 프레임)
+    15.03s  user  발화 끝
+    15.10s  agent 발화 시작: <ret> 사진첩에 표시해 드렸어요. 확인해 보시고, 다른 사진을 찾으실 게 있으면 말씀해 주세요. [hap
+    16.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) 사진첩에 표시됨.
+    21.03s  agent 발화 끝

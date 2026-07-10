@@ -4,69 +4,56 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 {
   "profile": {
     "user_id": "v3_defer_10",
-    "name": "Alice",
+    "name": "Lukas",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "French",
-    "gender": "female",
-    "age_range": "late 30s",
-    "language": "French"
+    "nationality": "Canadian",
+    "gender": "male",
+    "age_range": "early 30s",
+    "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-05-07",
-      "category": "home",
-      "text": "User's home address is 447 Oak Avenue."
-    },
-    {
-      "date": "2026-04-06",
-      "category": "pet",
-      "text": "User has a Corgi named Mochi."
-    },
-    {
       "date": "2026-03-14",
-      "category": "trip",
-      "text": "User is planning a trip to Lisbon in October."
+      "category": "home",
+      "text": "User's home address is 260 Maple Drive."
     },
     {
-      "date": "2026-02-23",
+      "date": "2026-02-18",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-11-09",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in August."
+    },
+    {
+      "date": "2025-09-16",
       "category": "seat",
       "text": "User prefers a window seat when traveling."
     },
     {
-      "date": "2026-02-18",
+      "date": "2025-07-29",
       "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2025-09-16",
-      "category": "diet",
-      "text": "User is lactose-intolerant."
+      "text": "User works as a marketing manager."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-12-28",
-      "title": "Comparing gym memberships",
+      "date": "2025-09-26",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "wants a pool",
-        "close to the office"
+        "party of six",
+        "looking for outdoor seating"
       ]
     },
     {
-      "date": "2025-12-23",
-      "title": "Booked a dentist appointment",
-      "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
-      ]
-    },
-    {
-      "date": "2025-07-31",
+      "date": "2025-09-02",
       "title": "Apartment hunting downtown",
       "bullets": [
         "wanted a pet-friendly building",
@@ -78,12 +65,16 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Find pictures related to my holiday in France last year, but not thumbnails.
-[  3.96s][moshi] ⟨ret@3.90s⟩ I found twenty-seven pictures ⟦⚡SPAN@5.90s: (tool result) 27 files found: ‘Paris EiffelTower.jpg’, ‘Nice Beach.png’, ‘Lyon FoodMarket.jpeg’…⟧ from your France holiday last year, excluding thumbnails.
-      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "date": "last year", "exclude": "thumbnails"}}
-[  6.98s][user ] «backchannel» Mhm.
-[  9.60s][user ] Oh, great! Could you send ‘Paris_EiffelTower.jpg’ to my sister, Sarah? Her email is ⟨ret@17.51s⟩ sarah.jones@email.com.
-[ 17.81s][moshi] The ⟦⚡SPAN@18.47s: (tool result) Email sent to sarah.jones@email.com with attachment ‘Paris EiffelTower.jpg’.⟧ picture of the Eiffel Tower has been sent to Sarah at sarah.jones@email.com.
-      CALL: {"function": "send_email", "arguments": {"recipient": "sarah.jones@email.com", "attachment": "Paris_EiffelTower.jpg"}}
-[ 20.59s][user ] «backchannel» Yeah.
-[ 22.80s][user ] Perfect, thanks! I— I mean, do you think I’m spending too much on trips?
-[ 26.54s][moshi] [sigh] It’s good to check in with yourself about spending. We can absolutely look at your budget together if you’d like.
+[  4.22s][moshi] ⟨ret@4.16s⟩ I found twelve files from ⟦⚡SPAN@6.16s: (tool result) 12 files found: 'Paris EiffelTower.jpg', 'Nice Beach.png', 'Lyon FoodMarket.jpeg', 'Provence Lav⟧ your France holiday last year, excluding thumbnails. They include photos from Paris, Nice, and Lyon.
+      CALL: {"function": "search_files", "arguments": {"keywords": "France holiday", "year": 2023, "exclude": "thumbnails"}}
+[  8.65s][user ] «backchannel» Mhm.
+[ 12.07s][user ] Can you send the Paris…
+[ 14.79s][user ] …picture to my sister, ⟨ret@16.37s⟩ Sarah?
+[ 16.68s][moshi] I’ve ⟦⚡SPAN@17.33s: (tool result) File 'Paris EiffelTower.jpg' sent to Sarah.⟧ just sent the Eiffel Tower picture to Sarah.
+      CALL: {"function": "send_file", "arguments": {"recipient": "Sarah", "file": "Paris_EiffelTower.jpg"}}
+[ 18.29s][user ] «backchannel» Yeah.
+[ 19.59s][user ] That’s great, thanks. What’s the weather like in Paris right now?
+[ 22.99s][moshi] Let me check on that.
+[ 24.38s][user ] Okay, thanks.
+  ⟦⚡지연 SPAN 도착@24.23s: (tool result) Temperature: 15°C, Condition: Partly Cloudy, Wind: 12 km/h⟧
+[ 25.17s][moshi] «deferred_result» ⟨ret@25.18s⟩ The current weather in Paris is 15 degrees Celsius and partly cloudy. It's fifteen degrees Celsius and partly cloudy with a twelve kilometer per hour wind.

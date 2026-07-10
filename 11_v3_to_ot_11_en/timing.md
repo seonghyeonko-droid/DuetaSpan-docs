@@ -4,56 +4,53 @@
 # {
 #   "profile": {
 #     "user_id": "v3_to_ot_11",
-#     "name": "Toaira",
+#     "name": "Rowan",
 #     "location": {
-#       "city": "Tokyo",
-#       "country": "Japan",
-#       "timezone": "Asia/Tokyo (JST, UTC+9)",
-#       "currency": "JPY (¥)"
+#       "city": "New York",
+#       "country": "United States",
+#       "timezone": "America/New_York (EST, UTC-5)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Japanese",
+#     "nationality": "American",
 #     "gender": "non-binary",
-#     "age_range": "40s",
-#     "language": "Japanese"
+#     "age_range": "early 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-03-26",
+#       "date": "2026-04-03",
 #       "category": "allergy",
 #       "text": "User is allergic to penicillin."
 #     },
 #     {
+#       "date": "2026-03-26",
+#       "category": "trip",
+#       "text": "User is planning a trip to Lisbon in October."
+#     },
+#     {
 #       "date": "2026-02-12",
 #       "category": "hobby",
-#       "text": "User is into home fermentation."
+#       "text": "User is into birdwatching."
 #     },
 #     {
 #       "date": "2025-09-24",
-#       "category": "trip",
-#       "text": "User is planning a trip to Iceland in December."
-#     },
-#     {
-#       "date": "2025-07-12",
 #       "category": "diet",
 #       "text": "User is lactose-intolerant."
 #     },
 #     {
+#       "date": "2025-07-12",
+#       "category": "seat",
+#       "text": "User prefers an aisle seat when traveling."
+#     },
+#     {
 #       "date": "2025-06-13",
-#       "category": "work",
-#       "text": "User works as a software engineer."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
 #       "date": "2026-06-08",
-#       "title": "Planning a birthday dinner",
-#       "bullets": [
-#         "party of six",
-#         "looking for outdoor seating"
-#       ]
-#     },
-#     {
-#       "date": "2026-01-24",
 #       "title": "Booked a dentist appointment",
 #       "bullets": [
 #         "asked for an early-morning slot",
@@ -61,33 +58,35 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-08-28",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-01-24",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Hey Ellana, I was just wondering…  | S2 Seriously, Fiers? Of all people? | S3 Sorry about that. So, who was the  | S4 Okay, so Sale and Fiers… that’s a 
+# EXAMINER(FDB-v2) 단계: S1 I was just wondering… has that hap | S2 Wow, that was a while ago. Hey, Ma | S3 Seriously, it's overflowing! | S4 Sorry about that. So, who was pitc
 
-     0.00s  user  발화 시작: Hey Ellana, I was just wondering… when was the last time the
-     6.08s  <ret> 발화 (turn1 첫 프레임)
-     6.47s  agent 발화 시작: <ret> That’s a good question, and a frustrating experience f
-     6.49s  user  발화 끝
-     7.92s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.69s]: [source: baseball-reference.com] The Oakland Athletics were last no-hi
-    15.52s  agent 발화 끝
-    15.75s  user  발화 시작: Wow, that’s… recent. I feel like it’s been longer than that.
-    22.03s  user  발화 시작: Seriously, Fiers? Of all people?
-    22.10s  user  발화 끝
-    24.46s  user  발화 시작: Sorry about that. So, who was the pitcher before Fiers to no
-    24.57s  user  발화 끝
-    29.11s  <ret> 발화 (turn5 첫 프레임)
-    29.19s  user  발화 끝
-    29.32s  agent 발화 시작: <ret> Chris Sale of the Chicago White Sox pitched a no-hitte
-    31.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: [source: MLB.com] Prior to Mike Fiers’ no-hitter in 2018, the last no-
-    35.15s  user  발화 시작: Okay, so Sale and Fiers… that’s a bit of a gap, actually. Th
-    35.25s  agent 발화 끝
-    39.22s  user  발화 끝
+     0.00s  user  발화 시작: I was just wondering… has that happened to the A’s recently?
+     5.47s  <ret> 발화 (turn1 첫 프레임)
+     5.84s  user  발화 끝
+     5.86s  agent 발화 시작: <ret> It’s good to think about the history of the game. Let’
+     7.31s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.98s]: [source: Baseball-Reference.com] The Oakland Athletics were last no-hi
+     9.67s  agent 발화 시작: The last time the A’s were no-hit was April twenty-first, tw
+     9.84s  agent 발화 끝
+    15.09s  agent 발화 끝
+    16.18s  user  발화 시작: Wow, that was a while ago. Hey, Mark, did you remember to ta
+    20.03s  user  발화 시작: Seriously, it's overflowing!
+    20.11s  user  발화 끝
+    21.76s  user  발화 시작: Sorry about that. So, who was pitching for the A’s that day?
+    21.88s  user  발화 끝
+    25.47s  <ret> 발화 (turn6 첫 프레임)
+    25.60s  user  발화 끝
+    25.69s  agent 발화 시작: <ret> Frankie Montas was the Athletics’ starting pitcher on 
+    26.99s  ⚡SPAN 주입 [d'=1.52s / d_lead=5.14s]: [source: Baseball-Reference.com] On April 21, 2018, the Oakland Athlet
+    30.66s  agent 발화 시작: It’s interesting to look back at those matchups, isn’t it?
+    30.83s  agent 발화 끝
+    33.19s  agent 발화 끝

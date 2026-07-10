@@ -6,9 +6,9 @@
 #     "user_id": "v3_pers_40",
 #     "name": "Kim",
 #     "location": {
-#       "city": "San Francisco",
+#       "city": "New York",
 #       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "timezone": "America/New_York (EST, UTC-5)",
 #       "currency": "USD ($)"
 #     },
 #     "nationality": "American",
@@ -69,13 +69,13 @@
 # }
 
 
-     0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I’m he
-     8.35s  agent 발화 끝
-     9.31s  user  발화 시작: Ara… that’s a pretty name. I’m just feeling really overwhelm
-    15.66s  user  발화 끝
-    15.71s  agent 발화 시작: It’s perfectly normal to feel overwhelmed, especially with s
-    24.57s  agent 발화 끝
-    24.62s  user  발화 시작: Well, I— I mean, I’m trying to save for a down payment on a 
-    31.44s  user  발화 끝
-    31.68s  agent 발화 시작: That’s a wonderful goal! Saving for something big like a dow
-    41.00s  agent 발화 끝
+     0.00s  agent 발화 시작: Kim, it’s so lovely to connect with you. I’m Ara, and I help
+     7.41s  agent 발화 끝
+     8.46s  user  발화 시작: Ara… that’s a pretty name. I’m just… overwhelmed, honestly. 
+    15.04s  user  발화 끝
+    15.07s  agent 발화 시작: It absolutely can feel that way, Kim. Many people share that
+    23.32s  agent 발화 끝
+    23.37s  user  발화 시작: Welll… I’m trying to plan for retirement, but it all seems s
+    30.61s  user  발화 끝
+    30.84s  agent 발화 시작: That’s a very common feeling when looking ahead. It’s great 
+    39.88s  agent 발화 끝

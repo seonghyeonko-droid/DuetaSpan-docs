@@ -4,7 +4,7 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mem_35",
-#     "name": "Hugo",
+#     "name": "Avery",
 #     "location": {
 #       "city": "Toronto",
 #       "country": "Canada",
@@ -12,75 +12,78 @@
 #       "currency": "CAD ($)"
 #     },
 #     "nationality": "Canadian",
-#     "gender": "male",
-#     "age_range": "early 20s",
+#     "gender": "non-binary",
+#     "age_range": "50s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-06-07",
-#       "category": "seat",
-#       "text": "User prefers an aisle seat when traveling."
-#     },
-#     {
-#       "date": "2026-05-29",
-#       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-12-04",
-#       "category": "trip",
-#       "text": "User is planning a trip to New Zealand in October."
-#     },
-#     {
-#       "date": "2025-09-26",
+#       "date": "2026-06-14",
 #       "category": "home",
-#       "text": "User's home address is 517 Maple Drive."
+#       "text": "User's home address is 70 Cedar Lane."
+#     },
+#     {
+#       "date": "2026-06-13",
+#       "category": "seat",
+#       "text": "User prefers a window seat when traveling."
+#     },
+#     {
+#       "date": "2026-06-07",
+#       "category": "trip",
+#       "text": "User is planning a trip to New Zealand in March."
 #     },
 #     {
 #       "date": "2025-08-26",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
-#     },
-#     {
-#       "date": "2025-07-08",
-#       "category": "allergy",
-#       "text": "User is allergic to penicillin."
+#       "category": "hobby",
+#       "text": "User is into alpine wildflower photography."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-06-29",
-#       "title": "Researching a used car",
+#       "date": "2026-06-25",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "comparing hybrid models",
-#         "wants under 30k miles"
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2026-02-06",
+#       "title": "Comparing gym memberships",
+#       "bullets": [
+#         "wants a pool",
+#         "close to the office"
+#       ]
+#     },
+#     {
+#       "date": "2025-11-23",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yeah, it does. I’m starting to loo | S2 That's great. Are there any partic | S3 …actually, before we go into airli | S4 Okay, good to know. And are there 
 
-     0.00s  agent 발화 시작: Hi Hugo, I'm Klen. I understand you’re planning a trip to Ne
-     6.25s  agent 발화 끝
-     6.69s  user  발화 시작: Yeah, it does. I’m starting to look at flights, and I always
-    10.78s  <ret> 발화 (turn2 첫 프레임)
-    11.16s  agent 발화 시작: <ret> Considering your travel preferences… You prefer an ais
-    11.28s  ⚡SPAN 주입 [d'=0.50s / d_lead=1.37s]: [2026-06-07] User prefers an aisle seat when traveling.
-    11.36s  user  발화 끝
-    17.00s  user  발화 시작: Mm-hmm.
-    17.50s  user  발화 끝
-    18.85s  user  발화 시작: That's great. Are there any particular airlines that are goo
-    19.04s  agent 발화 끝
-    24.17s  agent 발화 시작: Several airlines offer excellent service on that route. Let 
-    24.26s  user  발화 끝
-    29.41s  user  발화 시작: …actually, before we go into airlines, what’s the best time 
-    30.18s  agent 발화 끝
-    34.08s  <ret> 발화 (turn7 첫 프레임)
-    34.32s  agent 발화 시작: <ret> Unfortunately, I don’t have specific detailed weather 
-    34.55s  user  발화 끝
-    36.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.25s]: [no information found]
-    46.57s  agent 발화 끝
-    48.10s  user  발화 시작: Okay, good to know. And are there any areas you’d recommend 
-    54.17s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you're planning a trip to N
+     4.72s  agent 발화 끝
+     5.21s  user  발화 시작: Yes, that's right! I’m starting to look at flights and thing
+     9.71s  <ret> 발화 (turn2 첫 프레임)
+    10.11s  agent 발화 시작: <ret> March is a beautiful time to visit. New Zealand’s wild
+    10.25s  user  발화 끝
+    11.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.13s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    16.52s  user  발화 시작: …do you think I should book flights and accommodation togeth
+    17.24s  agent 발화 끝
+    18.72s  user  발화 시작: Mhm.
+    19.21s  user  발화 끝
+    20.95s  <ret> 발화 (turn5 첫 프레임)
+    21.02s  agent 발화 시작: <ret> When booking flights, Avery, I recall you prefer a win
+    21.06s  user  발화 끝
+    22.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.41s]: [2026-06-13] User prefers a window seat when traveling.
+    23.44s  user  발화 시작: Mm-hmm.
+    23.93s  user  발화 끝
+    28.39s  user  발화 시작: Oh, that’s a good reminder! Yes, please. And what about the 
+    28.43s  agent 발화 끝
+    34.69s  user  발화 끝

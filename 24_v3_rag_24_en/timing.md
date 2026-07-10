@@ -4,43 +4,61 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rag_24",
-#     "name": "우서",
+#     "name": "Ada",
 #     "location": {
-#       "city": "Busan",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
+#       "city": "San Francisco",
+#       "country": "United States",
+#       "timezone": "America/Los_Angeles (PST, UTC-8)",
+#       "currency": "USD ($)"
 #     },
-#     "nationality": "Korean",
+#     "nationality": "American",
 #     "gender": "female",
-#     "age_range": "40s",
-#     "language": "Korean"
+#     "age_range": "late 20s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
+#       "date": "2026-04-20",
+#       "category": "home",
+#       "text": "User's home address is 209 Cedar Lane."
+#     },
+#     {
 #       "date": "2026-04-03",
 #       "category": "pet",
-#       "text": "User has a Poodle named Coco."
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
 #       "date": "2026-01-30",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
+#       "category": "allergy",
+#       "text": "User is allergic to penicillin."
 #     },
 #     {
 #       "date": "2025-12-29",
 #       "category": "diet",
-#       "text": "User is vegan."
+#       "text": "User is vegetarian."
 #     },
 #     {
 #       "date": "2025-08-13",
-#       "category": "home",
-#       "text": "User's home address is 609 Oak Avenue."
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is Ethiopian."
+#     },
+#     {
+#       "date": "2025-07-23",
+#       "category": "trip",
+#       "text": "User is planning a trip to Vietnam in December."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-10-09",
+#       "date": "2025-12-30",
+#       "title": "Planning a birthday dinner",
+#       "bullets": [
+#         "party of six",
+#         "looking for outdoor seating"
+#       ]
+#     },
+#     {
+#       "date": "2025-08-25",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -48,39 +66,30 @@
 #       ]
 #     },
 #     {
-#       "date": "2025-09-22",
-#       "title": "Setting up a home network",
+#       "date": "2025-06-10",
+#       "title": "Comparing gym memberships",
 #       "bullets": [
-#         "asked about mesh routers",
-#         "coverage for a 3-story house"
+#         "wants a pool",
+#         "close to the office"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’ve been researching my family hi | S2 Oh, France! That’s interesting. I  | S3 Normandy… so it’s a very old name, | S4 That explains a lot, actually. My 
 
      0.00s  user  발화 시작: I’ve been researching my family history, and I keep coming a
-     8.15s  <ret> 발화 (turn1 첫 프레임)
-     8.23s  agent 발화 시작: <ret> The name du Plessis originates from France, signifying
-     8.34s  user  발화 끝
-     9.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.35s]: [source: Wikipedia] Du Plessis is a French surname, originally denotin
-    12.91s  user  발화 시작: Mhm.
-    13.54s  user  발화 끝
-    14.57s  agent 발화 끝
-    14.70s  user  발화 시작: Oh, France! That’s interesting. I always assumed it was… wel
-    23.00s  <ret> 발화 (turn4 첫 프레임)
-    23.40s  agent 발화 시작: <ret> Many families with long histories have noble connectio
-    23.42s  user  발화 끝
-    25.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.52s]: [source: House of Du Plessis] The House of du Plessis was a French nob
-    26.83s  agent 발화 시작: The du Plessis family was a noble family in France, tracing 
-    26.91s  agent 발화 끝
-    34.06s  agent 발화 끝
-    34.78s  user  발화 시작: Normandy… so it’s a very old name, then? I wonder if it’s co
-    40.19s  <ret> 발화 (turn7 첫 프레임)
-    40.35s  agent 발화 시작: <ret> Many Huguenots escaping France settled in South Africa
-    40.47s  user  발화 끝
-    42.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: [source: South African History Online] Many Huguenots fleeing religiou
-    46.41s  agent 발화 끝
-    46.60s  user  발화 시작: That explains a lot, actually. My ancestors *did* emigrate t
-    53.69s  user  발화 끝
+     8.36s  <ret> 발화 (turn1 첫 프레임)
+     8.44s  agent 발화 시작: <ret> It is a lovely name, and often carries a sense of hist
+     8.57s  user  발화 끝
+     9.56s  ⚡SPAN 주입 [d'=1.20s / d_lead=8.34s]: [source: Wikipedia] “Du Plessis is a French surname, originally denoti
+    16.77s  agent 발화 끝
+    16.78s  agent 발화 시작: The name du Plessis originates as a French surname, indicati
+    24.95s  user  발화 시작: Mhm.
+    25.49s  user  발화 끝
+    27.63s  agent 발화 끝
+    27.92s  user  발화 시작: So, it’s French in origin? That’s surprising. I thought perh
+    35.17s  <ret> 발화 (turn5 첫 프레임)
+    35.41s  agent 발화 시작: <ret> The surname du Plessis was first found in Normandy, ho
+    35.43s  user  발화 끝
+    37.17s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: [source: House of Names] “The surname du Plessis was first found in No
+    41.07s  agent 발화 끝

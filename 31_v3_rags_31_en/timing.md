@@ -4,15 +4,15 @@
 # {
 #   "profile": {
 #     "user_id": "v3_rags_31",
-#     "name": "Noa",
+#     "name": "Caleb",
 #     "location": {
-#       "city": "New York",
-#       "country": "United States",
-#       "timezone": "America/New_York (EST, UTC-5)",
-#       "currency": "USD ($)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "non-binary",
+#     "nationality": "Australian",
+#     "gender": "male",
 #     "age_range": "40s",
 #     "language": "English"
 #   },
@@ -67,9 +67,9 @@
 # }
 
 
-     0.00s  user  발화 시작: When was the third season of Daredevil released?
-     2.72s  <ret> 발화 (turn1 첫 프레임)
-     2.95s  agent 발화 시작: <ret> That’s a popular question, actually. The third season 
-     3.04s  user  발화 끝
-     3.68s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.20s]: [source: Wikipedia] Daredevil season 3 was released on October 26, 201
-    10.00s  agent 발화 끝
+     0.00s  user  발화 시작: When was the third season of Daredevil actually released?
+     3.83s  <ret> 발화 (turn1 첫 프레임)
+     4.07s  agent 발화 시작: <ret> That season was highly anticipated. Daredevil season t
+     4.17s  user  발화 끝
+     5.03s  ⚡SPAN 주입 [d'=1.20s / d_lead=2.72s]: [source: Wikipedia] Daredevil season 3 was released on Netflix on Octo
+    12.23s  agent 발화 끝

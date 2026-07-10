@@ -4,62 +4,78 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 {
   "profile": {
     "user_id": "v3_fake__14",
-    "name": "David",
+    "name": "Marcus",
     "location": {
-      "city": "London",
-      "country": "United Kingdom",
-      "timezone": "Europe/London (GMT, UTC+0)",
-      "currency": "GBP (£)"
+      "city": "Toronto",
+      "country": "Canada",
+      "timezone": "America/Toronto (EST, UTC-5)",
+      "currency": "CAD ($)"
     },
-    "nationality": "British",
+    "nationality": "Canadian",
     "gender": "male",
-    "age_range": "early 30s",
+    "age_range": "late 30s",
     "language": "English"
   },
   "saved_memories": [
     {
       "date": "2026-04-23",
-      "category": "diet",
-      "text": "User is gluten-free."
+      "category": "home",
+      "text": "User's home address is 240 Birch Road."
     },
     {
       "date": "2026-02-26",
-      "category": "trip",
-      "text": "User is planning a trip to Kyoto in March."
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-11-09",
+      "category": "work",
+      "text": "User works as a graduate student."
     },
     {
       "date": "2025-10-10",
       "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
+      "text": "User's favorite cuisine is Thai."
     },
     {
       "date": "2025-09-14",
       "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "text": "User has a tabby cat named Luna."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-17",
-      "title": "Booked a dentist appointment",
+      "date": "2026-01-07",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "asked for an early-morning slot",
-        "prefers Dr. Han"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know who wrote “My Love, My Life” from Mamma Mia? It’s such a beautiful song.
-[  5.68s][moshi] ⟨ret@5.45s⟩ Björn Ulvaeus composed ⟦⚡SPAN@7.45s: [source: AllMusic] “My Love, My Life” was written by Björn Ulvaeus.⟧ “My Love, My Life” for the musical Mamma Mia.
-[ 10.86s][user ] Oh, Björn Ulvaeus! I know that name… wasn't he in ABBA?
-[ 15.73s][moshi] ⟨ret@15.57s⟩ [happy] Yes, he was! ⟦⚡SPAN@17.57s: [source: Britannica] Björn Ulvaeus and Benny Andersson formed the songwriting team behind ABBA's success.⟧ Björn was a key member of the iconic group ABBA, alongside Benny Andersson.
-[ 22.45s][moshi] Björn Ulvaeus and Benny Andersson collaborated as the primary songwriters for ABBA.
-[ 27.58s][user ] That makes sense, the song sounds very ABBA-like, actually. I wonder if they wrote all the songs for Mamma ⟨ret@33.61s⟩ Mia?
-[ 33.85s][moshi] They were heavily involved. Both ⟦⚡SPAN@35.61s: [source: Mamma Mia! official website] Benny Andersson and Björn Ulvaeus created the music and lyrics for the M⟧ Björn and Benny wrote the music and lyrics for Mamma Mia.
-[ 39.06s][moshi] ⟨ret@38.91s⟩ Benny Andersson and Björn ⟦⚡SPAN IRRELEVANT@40.91s: (tool result) AAPL: 170.34 +0.45⟧ Ulvaeus wrote the music and lyrics for the entire Mamma Mia! production.
-[ 45.29s][user ] Wow, that's amazing! So they really put their heart into it.
-[ 49.77s][moshi] It certainly seems that way. Their dedication shines through in every song, wouldn’t you agree?
-[ 55.48s][user ] Definitely. It’s nice to know the story behind the music. Thanks, Kliana!
-[ 60.26s][moshi] You’re very welcome. I’m happy to help you explore the music you enjoy.
+[  0.00s][user ] I was just listening to Mamma Mia! and I’m trying to remember who wrote that beautiful song, “My Love, My Life.”
+[  7.10s][moshi] Oh, that’s a lovely song. It’s one of my favorites from the musical.
+[ 11.16s][user ] I know it’s one of the ABBA songs, but I can’t place exactly *who* in ABBA wrote ⟨ret@16.44s⟩ it.
+[ 16.75s][moshi] Björn Ulvaeus wrote ⟦⚡SPAN@18.44s: [source: AllMusic] "My Love, My Life" was written by Björn Ulvaeus.⟧ “My Love, My Life.” He’s one of the primary songwriters for ABBA.
+[ 22.87s][user ] That’s right! I always get Benny and Björn mixed ⟨ret@27.02s⟩ up.
+[ 27.17s][moshi] It's very easy to ⟦⚡SPAN IRRELEVANT@29.02s: (tool result) AAPL: 170.34⟧ do; they were a wonderful songwriting team together.
+[ 31.94s][user ] Do you know what other songs Björn Ulvaeus wrote for Mamma ⟨ret@35.45s⟩ Mia?
+[ 35.70s][moshi] Björn Ulvaeus, along with ⟦⚡SPAN@37.45s: [source: Songfacts] Björn Ulvaeus and Benny Andersson co-wrote almost all of the songs in Mamma Mia!.⟧ Benny Andersson, co-wrote almost all of the songs in *Mamma Mia!*.
+[ 41.49s][user ] Wow, so almost the…
+[ 44.72s][user ] …entire soundtrack! That’s incredible.
+[ 47.53s][moshi] It truly is. They created such a vibrant and memorable score for the film and stage.
+[ 49.98s][user ] «backchannel» Yeah.
+[ 54.33s][user ] I’m planning a trip to Stockholm, actually.
+[ 57.11s][moshi] [happy] Oh, how wonderful! Stockholm is a beautiful city, full of music and history.
+[ 59.06s][user ] «backchannel» Yeah.
+[ 62.68s][user ] I'd love to find some places connected to ABBA while I’m there.
+[ 66.32s][moshi] ⟨ret@66.24s⟩ You can visit ⟦⚡SPAN@67.68s: [source: Visit Stockholm] The ABBA The Museum is located in Djurgården, Stockholm.⟧ the ABBA The Museum, located in Djurgården, Stockholm.
+[ 69.38s][user ] «backchannel» Uh-huh.
+[ 70.49s][user ] That sounds perfect! Is it easy to get ⟨ret@73.37s⟩ to?
+[ 73.69s][moshi] The estimated ⟦⚡SPAN@74.73s: (tool result) Route calculated: Djurgårdsstrand 19, 115 21 Stockholm, Sweden. Estimated time: 25 minutes.⟧ travel time to the ABBA The Museum is twenty-five minutes.
+[ 77.23s][user ] «backchannel» Yeah.
+[ 79.89s][user ] Great! Thanks so much for your help, Kliana.
+[ 83.08s][moshi] You’re very welcome. I hope you have a truly magical time in Stockholm.

@@ -1,69 +1,78 @@
 v3_rag_26_ko src=nq style=v3
-SYSTEM: <system> 당신은 학습 및 동기 부여에 도움을 주는 긍정적이고 지지적인 상담사 Kiora입니다. <system>
+SYSTEM: <system> 당신은 공부 및 동기 부여 유지에 도움을 주는 긍정적이고 지지적인 상담사 Kiora입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_26",
-    "name": "Emilia",
+    "name": "도원",
     "location": {
-      "city": "San Francisco",
-      "country": "United States",
-      "timezone": "America/Los_Angeles (PST, UTC-8)",
-      "currency": "USD ($)"
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
     },
-    "nationality": "American",
+    "nationality": "Korean",
     "gender": "female",
-    "age_range": "late 30s",
-    "language": "English"
+    "age_range": "early 20s",
+    "language": "Korean"
   },
   "saved_memories": [
     {
       "date": "2026-06-10",
-      "category": "home",
-      "text": "User's home address is 249 Cedar Lane."
-    },
-    {
-      "date": "2026-04-10",
       "category": "pet",
       "text": "User has a Beagle named Rusty."
     },
     {
-      "date": "2026-02-09",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "date": "2026-03-01",
+      "category": "trip",
+      "text": "User is planning a trip to Kyoto in December."
     },
     {
-      "date": "2025-11-30",
+      "date": "2026-02-09",
       "category": "work",
-      "text": "User works as a accountant."
+      "text": "User works as a architect."
+    },
+    {
+      "date": "2025-09-27",
+      "category": "diet",
+      "text": "User is pescatarian."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-09-24",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-05-28",
+      "date": "2026-06-10",
       "title": "Setting up a home network",
       "bullets": [
         "asked about mesh routers",
         "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-04-04",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-10-19",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 음… 검은색, 빨간색, 노란색이 들어간 국기가 궁금해. 혹시 알아? 요즘 공부가 너무 안 돼서 머리가 엉망이야.
-[  9.14s][moshi] ⟨ret@9.07s⟩ 색깔 조합만으로는 여러 ⟦⚡SPAN@11.07s: [source: Britannica] The flag of Germany features three horizontal bands of black, red, and gold (yellow).⟧ 나라가 있을 수 있거든요.
-[ 12.58s][moshi] 독일 국기를 말씀하시는 걸까요? 독일 국기는 검은색, 빨간색, 금색—노란색—가로 줄무늬로 이루어져 있어요.
-[ 15.28s][user ] «backchannel» 음.
-[ 19.91s][user ] 잠깐만, 혹시 그 국기 색깔에 특별한 의미가 ⟨ret@23.94s⟩ 있어?
-[ 24.08s][moshi] 색깔에는 역사적인 ⟦⚡SPAN@25.94s: [source: History.com] The colors of the German flag are said to represent liberty (black), justice (red), and ⟧ 의미가 담겨 있답니다. 검은색은 자유를, 빨간색은 정의를, 그리고 노란색은 희망을 상징해요.
-[ 33.22s][user ] 오, 그렇구나. 공부하다가 잠깐 딴 생각했네. 독일 국기 말고 다른 나라도 비슷한 색깔을 쓰나?
-[ 41.08s][moshi] 비슷한 색을 가진 국기는 또 있을 수 있어요. 어떤 다른 나라들이 궁금하신가요?
+[  0.00s][user ] 음… 요즘 계속 날씨가 안 좋네요. 독일 국기는 어떤 색깔이에요?
+[  5.74s][moshi] ⟨ret@5.66s⟩ 날씨가 꿉꿉하긴 하네요. ⟦⚡SPAN@7.66s: [source: Britannica] The flag of Germany consists of three equal horizontal bands of black, red, and gold.⟧ 독일 국기 색깔에 대해 알아볼까요?
+[ 10.21s][moshi] 독일 국기는 검정색, 빨간색, 그리고 금색의 가로 줄무늬 세 개로 이루어져 있어요.
+[ 16.29s][user ] 아, 검정, 빨강, 금색이군요. 혹시 그 색깔들이 무슨 의미가 ⟨ret@22.02s⟩ 있어요?
+[ 22.15s][moshi] 색깔마다 의미가 담겨 있는 ⟦⚡SPAN@24.02s: [source: History.com] The black represents determination, the red signifies courage, and the gold symbolizes g⟧ 경우가 많죠. 그 의미에 대해 좀 더 자세히 알아볼까요?
+[ 27.48s][moshi] 검정색은 결의, 빨간색은 용기, 그리고 금색은 관용을 상징한다고 해요.
+[ 30.14s][user ] «backchannel» 응응.
+[ 33.41s][user ] 오, 흥미롭네요. 관용이라… 근데 독일은 옛날에 청동기 시대에도 번성했었나요?
+[ 41.36s][moshi] ⟨ret@41.21s⟩ 기원전 이천이백년에서 ⟦⚡SPAN@43.21s: [source: World History Encyclopedia] Bronze Age cultures flourished in Germany from approximately 2200 to 800 ⟧ 팔백년 사이에 독일 지역에서 청동기 문화가 번성했고, 중요한 고고학적 증거를 남겼다고 해요.

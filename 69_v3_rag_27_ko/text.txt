@@ -1,70 +1,72 @@
 v3_rag_27_ko src=hotpotqa style=v1
-SYSTEM: <system> 당신은 학습 및 동기 부여에 도움을 주는 따뜻하고 주의 깊은 상담사 Doon입니다. <system>
+SYSTEM: <system> 당신은 학습 및 동기 부여에 도움을 주는 따뜻하고 세심한 상담사 Doon입니다. <system>
 CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
 {
   "profile": {
     "user_id": "v3_rag_27",
-    "name": "Kim",
+    "name": "연준",
     "location": {
-      "city": "Paris",
-      "country": "France",
-      "timezone": "Europe/Paris (CET, UTC+1)",
-      "currency": "EUR (€)"
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
     },
-    "nationality": "French",
+    "nationality": "Korean",
     "gender": "non-binary",
-    "age_range": "early 20s",
-    "language": "French"
+    "age_range": "50s",
+    "language": "Korean"
   },
   "saved_memories": [
     {
       "date": "2026-05-17",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is Italian."
-    },
-    {
-      "date": "2026-03-12",
       "category": "hobby",
-      "text": "User is into rock climbing."
+      "text": "User is into marathon training."
     },
     {
       "date": "2025-12-07",
-      "category": "allergy",
-      "text": "User is allergic to shellfish."
+      "category": "home",
+      "text": "User's home address is 945 Elm Street."
     },
     {
       "date": "2025-12-06",
-      "category": "home",
-      "text": "User's home address is 411 Maple Drive."
+      "category": "diet",
+      "text": "User is lactose-intolerant."
     },
     {
       "date": "2025-09-15",
-      "category": "diet",
-      "text": "User is vegetarian."
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
     },
     {
       "date": "2025-06-11",
       "category": "work",
-      "text": "User works as a architect."
+      "text": "User works as a high-school teacher."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-26",
-      "title": "Researching a used car",
+      "date": "2026-06-03",
+      "title": "Comparing gym memberships",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "wants a pool",
+        "close to the office"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] 룩스 아우룬케 작곡가가 언제 태어났는지 궁금해요.
-[  3.87s][moshi] ⟨ret@3.79s⟩ 룩스 ⟦⚡SPAN@4.91s: [source: AllMusic] Lux Aurunque was born in 1970.⟧ 아우룬케에 대해 알아보고 있어요.
-[  5.16s][user ] «backchannel» 예.
-[  6.84s][user ] 아, 그렇군요. 그럼 그분은 지금 몇 살이신가요?
-[  9.78s][moshi] «interrupted» 음—
-[  9.74s][user ] «interrupts_prev» 혹시 그분이 어떤 장르의 음악을 주로 하시나요?
-[ 12.33s][moshi] ⟨ret@12.17s⟩ 아, ⟦⚡SPAN@13.45s: [source: Rate Your Music] Lux Aurunque primarily composes ambient and drone music.⟧ 네. 룩스 아우룬케는 주로 앰비언트 음악을 하시는 분이에요.
+[  0.00s][user ] 룩스 아우룬케 작곡가의 출생 연도를 알 수 있을까요?
+[  3.82s][moshi] ⟨ret@3.74s⟩ 룩스 아우룬케는 ⟦⚡SPAN@5.74s: [source: Britannica] Lux Aurunque was born in 1970 and is known for his innovative approach to electronic musi⟧ 천구백칠십 년에 태어났으며, 전자 음악에 대한 혁신적인 접근 방식으로 알려져 있습니다.
+[  8.05s][user ] «backchannel» 예.
+[ 11.88s][user ] 아, 그렇군요. 혹시 그분이 활동하던…
+[ 17.24s][user ] …시기에 다른 유명한 전자 음악가도 있었나요?
+[ 19.77s][moshi] ⟨ret@19.70s⟩ 그 시대에는 여러 ⟦⚡SPAN@21.70s: [source: AllMusic] In the 1970s, artists like Kraftwerk and Brian Eno were pioneers in electronic music experi⟧ 뛰어난 전자 음악가들이 활동했죠.
+[ 23.66s][moshi] 천구백칠십 년대에는 크래프트베르크나 브라이언 이노 같은 음악가들이 전자 음악 실험의 선구자였습니다.
+[ 27.70s][user ] «backchannel» 음.
+[ 31.09s][user ] 크래프트베르크요? 그분들은 어떤 음악을 주로 ⟨ret@34.37s⟩ 하셨나요?
+[ 34.57s][moshi] — 음악 스타일은… ⟦⚡SPAN@36.37s: [source: Rolling Stone] Kraftwerk is known for its minimalist and robotic sound, influencing genres like synth⟧ 아, 크래프트베르크에 대해 더 궁금하시군요.
+[ 38.97s][moshi] 크래프트베르크는 미니멀하고 로봇 같은 사운드로 유명하며, 신스팝과 테크노 장르에 영향을 미쳤습니다.
+[ 42.84s][user ] «backchannel» 그러니까요.
+[ 46.60s][user ] 신스팝과 테크노라… 룩스 아우룬케님은 그런 장르에도 영향을 주셨나요?
+[ 51.48s][moshi] 룩스 아우룬케의 음악은 다양한 장르에 영향을 미쳤다고 알려져 있습니다. 그의 독창적인 스타일은 많은 후배 음악가들에게 영감을 주었죠.

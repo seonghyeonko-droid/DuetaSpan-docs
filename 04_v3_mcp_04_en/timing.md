@@ -4,33 +4,33 @@
 # {
 #   "profile": {
 #     "user_id": "v3_mcp_04",
-#     "name": "시호",
+#     "name": "Lily",
 #     "location": {
-#       "city": "Seoul",
-#       "country": "South Korea",
-#       "timezone": "Asia/Seoul (KST, UTC+9)",
-#       "currency": "KRW (₩)"
+#       "city": "Sydney",
+#       "country": "Australia",
+#       "timezone": "Australia/Sydney (AEDT, UTC+11)",
+#       "currency": "AUD ($)"
 #     },
-#     "nationality": "Korean",
-#     "gender": "male",
+#     "nationality": "Australian",
+#     "gender": "female",
 #     "age_range": "late 30s",
-#     "language": "Korean"
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-06-21",
 #       "category": "seat",
-#       "text": "User prefers a window seat when traveling."
+#       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
-#       "date": "2026-06-02",
-#       "category": "allergy",
-#       "text": "User is allergic to shellfish."
+#       "date": "2026-05-16",
+#       "category": "cuisine",
+#       "text": "User's favorite cuisine is sushi."
 #     },
 #     {
 #       "date": "2026-01-04",
-#       "category": "cuisine",
-#       "text": "User's favorite cuisine is sushi."
+#       "category": "diet",
+#       "text": "User is vegetarian."
 #     },
 #     {
 #       "date": "2025-07-08",
@@ -39,8 +39,8 @@
 #     },
 #     {
 #       "date": "2025-05-30",
-#       "category": "home",
-#       "text": "User's home address is 289 Pine Court."
+#       "category": "hobby",
+#       "text": "User is into vintage synth collecting."
 #     }
 #   ],
 #   "conversation_summaries": [
@@ -51,29 +51,41 @@
 #         "party of six",
 #         "looking for outdoor seating"
 #       ]
+#     },
+#     {
+#       "date": "2025-11-12",
+#       "title": "Apartment hunting downtown",
+#       "bullets": [
+#         "wanted a pet-friendly building",
+#         "budget for 2 bedrooms"
+#       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 That’s good— but what site am I pr | S3 Hmm. Can you now search Google for | S4 Actually, no, that's okay. Thanks—
+# EXAMINER(FDB-v2) 단계: S1 Could you please set the user agen | S2 Hmm, or actually, make that versio | S3 That’s better. Now, can you check  | S4 Okay, good. Thanks.
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     5.23s  <ret> 발화 (turn1 첫 프레임)
-     5.24s  user  발화 끝
-     5.55s  agent 발화 시작: <ret> Alright, I’ve set the user agent to SuperCrawler versi
-     6.27s  ⚡SPAN 주입 [d'=1.04s / d_lead=8.02s]: (tool result) User agent set to SuperCrawler version 10.1.
-     9.21s  user  발화 시작: Mhm.
-     9.70s  user  발화 끝
-    13.42s  user  발화 시작: That’s good— but what site am I pretending to be now, exactl
-    13.57s  agent 발화 끝
-    17.83s  agent 발화 시작: [laugh] That’s a very practical question. It’s masking your 
-    17.95s  user  발화 끝
-    27.44s  user  발화 시작: Hmm. Can you now search Google for “best sourdough starter r
-    27.47s  agent 발화 끝
-    32.27s  <ret> 발화 (turn6 첫 프레임)
-    32.30s  user  발화 끝
-    32.58s  agent 발화 시작: <ret> I found one hundred and twenty-three results for “best
-    33.38s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.39s]: (tool result) Searching for best sourdough starter recipes… Results fo
-    40.96s  agent 발화 끝
-    41.53s  user  발화 시작: Actually, no, that's okay. Thanks— I think I’m good for now.
-    45.13s  user  발화 끝
+     5.26s  <ret> 발화 (turn1 첫 프레임)
+     5.56s  user  발화 끝
+     5.58s  agent 발화 시작: <ret> I’ve set the user agent to SuperCrawler version ten po
+     6.22s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.46s]: (tool result) User agent set to SuperCrawler version 10.1.
+     8.02s  user  발화 시작: Mhm.
+     8.52s  user  발화 끝
+    10.83s  user  발화 시작: Hmm, or actually, make that version ten point two.
+    11.04s  agent 발화 끝
+    15.28s  <ret> 발화 (turn4 첫 프레임)
+    15.52s  agent 발화 시작: <ret> [happy] Of course. The user agent is now SuperCrawler 
+    15.64s  user  발화 끝
+    17.04s  ⚡SPAN 주입 [d'=1.76s / d_lead=8.76s]: (tool result) User agent set to SuperCrawler version 10.2.
+    24.28s  agent 발화 끝
+    24.29s  user  발화 시작: That’s better. Now, can you check what the current IP addres
+    28.66s  <ret> 발화 (turn6 첫 프레임)
+    28.74s  agent 발화 시작: <ret> It appears your current IP address is two zero three d
+    28.78s  user  발화 끝
+    29.86s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.14s]: (tool result) 203.0.113.42
+    35.88s  agent 발화 끝
+    36.52s  user  발화 시작: Okay, good. Thanks.
+    37.77s  agent 발화 시작: You’re very welcome. It sounds like you’re preparing for som
+    37.90s  user  발화 끝
+    42.95s  agent 발화 끝

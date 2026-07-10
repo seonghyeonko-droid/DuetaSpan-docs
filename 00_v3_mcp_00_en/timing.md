@@ -6,15 +6,15 @@
 #     "user_id": "v3_mcp_00",
 #     "name": "Nina",
 #     "location": {
-#       "city": "Berlin",
-#       "country": "Germany",
-#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "city": "Paris",
+#       "country": "France",
+#       "timezone": "Europe/Paris (CET, UTC+1)",
 #       "currency": "EUR (€)"
 #     },
-#     "nationality": "German",
+#     "nationality": "French",
 #     "gender": "female",
 #     "age_range": "40s",
-#     "language": "German"
+#     "language": "French"
 #   },
 #   "saved_memories": [
 #     {
@@ -63,75 +63,91 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Are there any good bookstores alon | S3 [happy] Good to know! Maybe I’ll g | S4 I think it will be. One last thing
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Perfect! That’s a huge weight off  | S3 You’re a lifesaver, Nellara. I’m t | S4 That’s really good advice. What if
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.75s  <ret> 발화 (turn1 첫 프레임)
-     3.98s  agent 발화 시작: <ret> Certainly. The Eiffel Tower in Paris is located at 48.
-     4.11s  user  발화 끝
-     5.03s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.25s]: (tool result) 48.8584° N, 2.2945° E
-    11.13s  user  발화 시작: Right.
-    11.63s  user  발화 끝
-    14.22s  agent 발화 끝
-    14.37s  user  발화 시작: Okay, great. And how far is that from, say, the Louvre Museu
-    17.49s  <ret> 발화 (turn4 첫 프레임)
-    17.88s  agent 발화 시작: <ret> It’s approximately 3.1 kilometers from the Eiffel Towe
-    17.93s  user  발화 끝
-    19.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.97s]: (tool result) 3.1 kilometers
-    25.83s  user  발화 시작: That sounds doable. Is there a good route for walking?
-    25.86s  agent 발화 끝
-    29.11s  <ret> 발화 (turn6 첫 프레임)
-    29.43s  agent 발화 시작: <ret> Absolutely. A walking route along the Seine is estimat
-    29.48s  user  발화 끝
-    30.95s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.79s]: (tool result) Along the Seine, estimated time 45 minutes.
-    33.53s  user  발화 시작: Oh.
-    33.92s  user  발화 끝
-    35.13s  agent 발화 시작: It's a beautiful walk, passing by several charming cafes and
-    35.21s  agent 발화 끝
-    39.76s  user  발화 시작: Are there any good bookstores along that route?
-    40.40s  agent 발화 끝
-    42.85s  user  발화 끝
-    42.89s  agent 발화 시작: That’s a lovely question! Yes, there's Shakespeare and Compa
-    46.00s  user  발화 시작: Okay.
-    46.64s  user  발화 끝
-    52.27s  user  발화 시작: Oh, that sounds perfect! Can you give me directions to Shake
-    52.31s  agent 발화 끝
-    57.88s  <ret> 발화 (turn13 첫 프레임)
-    58.20s  agent 발화 시작: <ret> Of course. From the Louvre, it’s about a 25-minute wal
-    58.20s  user  발화 끝
-    59.16s  ⚡SPAN 주입 [d'=1.28s / d_lead=6.11s]: (tool result) 25 minutes, along the Seine.
-    64.31s  agent 발화 끝
-    66.05s  user  발화 시작: Wonderful. I think I'll plan that. Is it usually crowded the
-    70.62s  agent 발화 시작: Shakespeare and Company is quite popular, especially with to
-    70.77s  user  발화 끝
-    78.83s  agent 발화 끝
-    78.86s  user  발화 시작: [happy] Good to know! Maybe I’ll go early. Could you check i
-    84.30s  <ret> 발화 (turn17 첫 프레임)
-    84.65s  user  발화 끝
-    84.69s  agent 발화 시작: <ret> Yes, they have a poetry reading scheduled for 7 PM tom
-    86.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.19s]: (tool result) Poetry reading, 7 PM.
-    89.88s  agent 발화 끝
-    89.90s  user  발화 시작: A poetry reading! That’s fantastic. Can you add a reminder t
-    97.36s  <ret> 발화 (turn19 첫 프레임)
-    97.59s  agent 발화 시작: <ret> Certainly! A reminder for the poetry reading has been 
-    97.64s  user  발화 끝
-    99.36s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Reminder set for tomorrow, 6:45 PM.
-   104.39s  user  발화 시작: Perfect. That's really helpful.
-   104.54s  agent 발화 끝
-   106.67s  agent 발화 시작: I’m so glad I could assist you in planning your day! It soun
-   106.70s  user  발화 끝
-   112.05s  agent 발화 끝
-   112.57s  user  발화 시작: I think it will be. One last thing—is there a nice place for
-   119.16s  <ret> 발화 (turn23 첫 프레임)
-   119.29s  user  발화 끝
-   119.40s  agent 발화 시작: <ret> There’s Le Bouillon Chartier, a traditional French res
-   121.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.58s]: (tool result) Le Bouillon Chartier, 10 minutes walk.
-   125.77s  user  발화 시작: Le Bouillon Chartier, okay. I've heard of that place.
-   125.98s  agent 발화 끝
-   129.60s  user  발화 끝
-   129.92s  agent 발화 시작: It’s known for its classic French cuisine and affordable pri
-   136.45s  agent 발화 끝
-   137.40s  user  발화 시작: Right. Well, thank you so much for all your help.
-   139.93s  user  발화 끝
-   139.95s  agent 발화 시작: You're very welcome! Enjoy your explorations in Paris, and r
-   149.64s  agent 발화 끝
+     3.33s  <ret> 발화 (turn1 첫 프레임)
+     3.56s  agent 발화 시작: <ret> The Eiffel Tower is located at 48.8584 degrees North, 
+     3.70s  user  발화 끝
+     4.61s  ⚡SPAN 주입 [d'=1.28s / d_lead=11.24s]: (tool result) 48.8584° N, 2.2945° E
+     7.18s  user  발화 시작: Exactly.
+     8.19s  user  발화 끝
+    14.80s  agent 발화 끝
+    14.96s  user  발화 시작: That’s helpful. Now, can you find me a highly-rated French r
+    19.90s  <ret> 발화 (turn4 첫 프레임)
+    20.29s  agent 발화 시작: <ret> Le Jules Verne is a French restaurant 0.1 kilometers a
+    20.32s  user  발화 끝
+    21.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.48s]: (tool result) Le Jules Verne: 4.6 stars, 0.1km
+    28.77s  user  발화 시작: Wow, in the tower? Is it expensive?
+    28.77s  agent 발화 끝
+    31.52s  <ret> 발화 (turn6 첫 프레임)
+    31.83s  agent 발화 시작: <ret> Le Jules Verne is in the $$$$ price range, indicating 
+    31.95s  user  발화 끝
+    33.36s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.35s]: (tool result) Price range: $$$$
+    38.18s  agent 발화 끝
+    38.76s  user  발화 시작: Oh, okay. Maybe something a bit more affordable. Could you l
+    45.71s  <ret> 발화 (turn8 첫 프레임)
+    46.00s  agent 발화 시작: <ret> Bouillon Chartier has a 4.2-star rating and is 1.8 kil
+    46.14s  user  발화 끝
+    47.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.90s]: (tool result) Bouillon Chartier: 4.2 stars, 1.8km
+    54.90s  agent 발화 끝
+    55.34s  user  발화 시작: That sounds much better. Can you check if they have availabi
+    61.80s  <ret> 발화 (turn10 첫 프레임)
+    61.88s  agent 발화 시작: <ret> Excellent! I’ve confirmed a reservation for you at Bou
+    62.05s  user  발화 끝
+    63.40s  ⚡SPAN 주입 [d'=1.60s / d_lead=10.48s]: (tool result) Reservation confirmed: Bouillon Chartier, tomorrow at 8:
+    72.36s  agent 발화 끝
+    73.26s  user  발화 시작: Perfect! That’s a huge weight off my mind.
+    76.58s  user  발화 끝
+    76.98s  agent 발화 시작: I’m glad I could help. Planning a nice evening is always a g
+    78.39s  user  발화 시작: Okay.
+    79.03s  user  발화 끝
+    81.28s  user  발화 시작: I’m meeting a friend I haven’t seen in ages.
+    81.33s  agent 발화 끝
+    84.37s  agent 발화 시작: It’s wonderful to reconnect with old friends—
+    84.52s  user  발화 끝
+    86.89s  user  발화 시작: …do they have a dress code?
+    87.43s  agent 발화 끝
+    88.32s  <ret> 발화 (turn17 첫 프레임)
+    88.40s  agent 발화 시작: <ret> Bouillon Chartier is known for being quite casual.
+    88.45s  user  발화 끝
+    89.76s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.61s]: (tool result) Dress code: Casual
+    91.98s  agent 발화 시작: The dress code is casual, so you can dress comfortably.
+    92.01s  agent 발화 끝
+    95.69s  agent 발화 끝
+    96.95s  user  발화 시작: Fantastic. Could you set a reminder for me to leave for the 
+   103.04s  <ret> 발화 (turn20 첫 프레임)
+   103.44s  agent 발화 시작: <ret> I’ve set a reminder for you to leave for Bouillon Char
+   103.57s  user  발화 끝
+   105.04s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result) Reminder set: Tomorrow at 7:15 PM - Leave for Bouillon C
+   109.41s  agent 발화 끝
+   109.47s  user  발화 시작: You’re a lifesaver, Nellara. I’m terrible at remembering the
+   113.91s  user  발화 끝
+   114.14s  agent 발화 시작: It's perfectly alright to need a little help with the detail
+   119.51s  agent 발화 끝
+   120.75s  user  발화 시작: So, this friend… we had a bit of a falling out last year. I’
+   125.93s  user  발화 끝
+   126.31s  agent 발화 시작: It’s completely normal to feel anxious before reconnecting a
+   134.33s  agent 발화 끝
+   135.26s  user  발화 시작: I just want everything…
+   137.01s  user  발화 끝
+   138.36s  user  발화 시작: …to go smoothly. Any advice?
+   140.72s  agent 발화 시작: Focus on listening actively and expressing your feelings cal
+   140.90s  user  발화 끝
+   148.11s  user  발화 시작: That’s really good advice. What if they bring up the argumen
+   148.17s  agent 발화 끝
+   152.04s  user  발화 끝
+   152.06s  agent 발화 시작: Acknowledge their feelings and try to find common ground. It
+   159.26s  user  발화 시작: Okay, that makes sense. I’m still a little worried, but bett
+   159.43s  agent 발화 끝
+   163.94s  user  발화 끝
+   163.96s  agent 발화 시작: It’s wonderful you’re going into this with a thoughtful appr
+   169.42s  agent 발화 끝
+   170.78s  user  발화 시작: Thanks, Nellara. You’ve really helped me feel more confident
+   174.20s  agent 발화 시작: [happy] You are very welcome. I’m so pleased to hear that. H
+   174.26s  user  발화 끝
+   179.21s  user  발화 시작: I think I will.
+   179.38s  agent 발화 끝
+   180.82s  user  발화 끝
+   181.02s  agent 발화 시작: Enjoy your trip.
+   182.40s  agent 발화 끝

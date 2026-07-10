@@ -6,15 +6,15 @@
 #     "user_id": "v3_rags_30",
 #     "name": "Robin",
 #     "location": {
-#       "city": "Toronto",
-#       "country": "Canada",
-#       "timezone": "America/Toronto (EST, UTC-5)",
-#       "currency": "CAD ($)"
+#       "city": "Berlin",
+#       "country": "Germany",
+#       "timezone": "Europe/Berlin (CET, UTC+1)",
+#       "currency": "EUR (€)"
 #     },
-#     "nationality": "Canadian",
+#     "nationality": "German",
 #     "gender": "non-binary",
 #     "age_range": "early 30s",
-#     "language": "English"
+#     "language": "German"
 #   },
 #   "saved_memories": [
 #     {
@@ -64,9 +64,11 @@
 # }
 
 
-     0.00s  user  발화 시작: When was the printing press invented in Europe?
-     2.35s  <ret> 발화 (turn1 첫 프레임)
-     2.59s  agent 발화 시작: <ret> That’s a fascinating question, tracing the roots of kn
-     2.82s  user  발화 끝
-     4.19s  ⚡SPAN 주입 [d'=1.84s / d_lead=3.81s]: [source: Britannica] Johannes Gutenberg invented the printing press wi
-    12.32s  agent 발화 끝
+     0.00s  user  발화 시작: When was the printing…
+     2.02s  user  발화 끝
+     3.08s  user  발화 시작: …press first invented in Europe?
+     5.35s  <ret> 발화 (turn2 첫 프레임)
+     5.59s  agent 발화 시작: <ret> That’s a pivotal moment in history, really. Johannes G
+     5.66s  user  발화 끝
+     6.71s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.85s]: [source: Britannica] Johannes Gutenberg is credited with the invention
+    16.58s  agent 발화 끝

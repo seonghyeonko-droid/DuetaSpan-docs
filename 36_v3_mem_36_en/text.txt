@@ -4,69 +4,75 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 {
   "profile": {
     "user_id": "v3_mem_36",
-    "name": "Sahiha",
+    "name": "Sky",
     "location": {
-      "city": "Tokyo",
-      "country": "Japan",
-      "timezone": "Asia/Tokyo (JST, UTC+9)",
-      "currency": "JPY (¥)"
+      "city": "New York",
+      "country": "United States",
+      "timezone": "America/New_York (EST, UTC-5)",
+      "currency": "USD ($)"
     },
-    "nationality": "Japanese",
+    "nationality": "American",
     "gender": "non-binary",
     "age_range": "early 30s",
-    "language": "Japanese"
+    "language": "English"
   },
   "saved_memories": [
     {
       "date": "2026-03-06",
-      "category": "trip",
-      "text": "User is planning a trip to Switzerland in March."
+      "category": "home",
+      "text": "User's home address is 70 Maple Drive."
     },
     {
       "date": "2026-01-22",
-      "category": "diet",
-      "text": "User is vegetarian."
-    },
-    {
-      "date": "2025-12-08",
       "category": "allergy",
       "text": "User is allergic to shellfish."
     },
     {
+      "date": "2025-12-08",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
       "date": "2025-11-06",
-      "category": "pet",
-      "text": "User has a Golden Retriever named Max."
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
+    },
+    {
+      "date": "2025-10-11",
+      "category": "work",
+      "text": "User works as a graphic designer."
     },
     {
       "date": "2025-07-02",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
+      "category": "pet",
+      "text": "User has a Corgi named Mochi."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-11-22",
-      "title": "Researching a used car",
-      "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
-      ]
-    },
-    {
-      "date": "2025-06-01",
+      "date": "2026-01-26",
       "title": "Booked a dentist appointment",
       "bullets": [
         "asked for an early-morning slot",
         "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-23",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Sahiha, I'm Lira. It’s good to connect with you. Is there anything I can help you with today?
-[  2.44s][user ] «backchannel» Uh-huh.
-[  5.10s][user ] Oh, hi Lira. I was just thinking about that trip I’m planning… the one to ⟨ret@9.88s⟩ Switzerland.
-[ 10.11s][moshi] You’re planning a trip to ⟦⚡SPAN@11.88s: [2026-03-06] User is planning a trip to Switzerland in March.⟧ Switzerland in March of next year. Is there a specific aspect you’d like to discuss?
-[ 17.71s][user ] Yes, actually. I’m a vegetarian, and I’m wondering if that will be ⟨ret@21.89s⟩ difficult there?
-[ 22.20s][moshi] That’s a ⟦⚡SPAN@23.17s: [2026-01-22] User is vegetarian.⟧ very practical consideration when traveling. Switzerland has many vegetarian options, and it shouldn’t be difficult to find suitable meals.
+[  0.00s][moshi] Hi Sky, I'm Lira. It's good to connect with you. I'm a counselor who helps people with money and budgeting, and I'm here to support you however I can.
+[  3.90s][user ] «backchannel» Uh-huh.
+[  8.02s][user ] Oh, hi Lira. Um, I was just remembering I mentioned something about a dentist appointment a while back… did I ever actually ⟨ret@14.78s⟩ book that?
+[ 15.01s][moshi] Yes, you did. You booked ⟦⚡SPAN@16.78s: [2026-01-26] Past chat — Booked a dentist appointment: asked for an early-morning slot; prefers Dr. Han.⟧ an appointment with Dr. Han, requesting a morning slot.
+[ 20.55s][user ] Right, that’s it! And, uh, what time was that appointment again? I can’t seem to find it in ⟨ret@25.14s⟩ my calendar.
+[ 25.45s][moshi] It's scheduled for ⟦⚡SPAN@26.74s: (tool result) January twenty-sixth, eight fifteen AM with Dr. Han.⟧ January twenty-sixth at eight fifteen AM with Dr. Han.
+      CALL: {"function": "get_appointment_details", "arguments": {"date": "2026-01-26", "doctor": "Dr. Han"}}

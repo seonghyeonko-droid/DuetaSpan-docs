@@ -4,7 +4,7 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 {
   "profile": {
     "user_id": "v3_mem_35",
-    "name": "Hugo",
+    "name": "Avery",
     "location": {
       "city": "Toronto",
       "country": "Canada",
@@ -12,61 +12,66 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
       "currency": "CAD ($)"
     },
     "nationality": "Canadian",
-    "gender": "male",
-    "age_range": "early 20s",
+    "gender": "non-binary",
+    "age_range": "50s",
     "language": "English"
   },
   "saved_memories": [
     {
-      "date": "2026-06-07",
-      "category": "seat",
-      "text": "User prefers an aisle seat when traveling."
-    },
-    {
-      "date": "2026-05-29",
-      "category": "work",
-      "text": "User works as a software engineer."
-    },
-    {
-      "date": "2025-12-04",
-      "category": "trip",
-      "text": "User is planning a trip to New Zealand in October."
-    },
-    {
-      "date": "2025-09-26",
+      "date": "2026-06-14",
       "category": "home",
-      "text": "User's home address is 517 Maple Drive."
+      "text": "User's home address is 70 Cedar Lane."
+    },
+    {
+      "date": "2026-06-13",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-06-07",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in March."
     },
     {
       "date": "2025-08-26",
-      "category": "cuisine",
-      "text": "User's favorite cuisine is sushi."
-    },
-    {
-      "date": "2025-07-08",
-      "category": "allergy",
-      "text": "User is allergic to penicillin."
+      "category": "hobby",
+      "text": "User is into alpine wildflower photography."
     }
   ],
   "conversation_summaries": [
     {
-      "date": "2025-06-29",
-      "title": "Researching a used car",
+      "date": "2026-06-25",
+      "title": "Planning a birthday dinner",
       "bullets": [
-        "comparing hybrid models",
-        "wants under 30k miles"
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    },
+    {
+      "date": "2025-11-23",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
       ]
     }
   ]
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Hugo, I'm Klen. I understand you’re planning a trip to New Zealand in October—that sounds wonderful!
-[  6.69s][user ] Yeah, it does. I’m starting to look at flights, and I always get stuck on ⟨ret@10.78s⟩ seat selection.
-[ 11.16s][moshi] ⟦⚡SPAN@11.28s: [2026-06-07] User prefers an aisle seat when traveling.⟧ Considering your travel preferences… You prefer an aisle seat, Hugo. I can certainly keep that in mind when we look at flight options.
-[ 17.00s][user ] «backchannel» Mm-hmm.
-[ 18.85s][user ] That's great. Are there any particular airlines that are good for long-haul flights to New Zealand?
-[ 24.17s][moshi] «interrupted» Several airlines offer excellent service on that route. Let me check current ratings and reviews for you—
-[ 29.41s][user ] «interrupts_prev» …actually, before we go into airlines, what’s the best time of year to visit, ⟨ret@34.08s⟩ weather-wise?
-[ 34.32s][moshi] Unfortunately, I don’t ⟦⚡SPAN@36.08s: [no information found]⟧ have specific detailed weather data for New Zealand in October. However, it's generally springtime there, with temperatures ranging from ten to twenty degrees Celsius.
-[ 48.10s][user ] Okay, good to know. And are there any areas you’d recommend specifically for a first-time visitor?
+[  0.00s][moshi] Hi Avery, I'm Klen. I understand you're planning a trip to New Zealand in March.
+[  5.21s][user ] Yes, that's right! I’m starting to look at flights and things, but it feels a ⟨ret@9.71s⟩ bit overwhelming.
+[ 10.11s][moshi] «interrupted» March is a ⟦⚡SPAN@11.71s: [2026-06-07] User is planning a trip to New Zealand in March.⟧ beautiful time to visit. New Zealand’s wildflower season is starting then, perfect for photography—
+[ 16.52s][user ] «interrupts_prev» …do you think I should book flights and accommodation together, or separately?
+[ 18.72s][user ] «backchannel» Mhm.
+[ 21.02s][moshi] ⟨ret@20.95s⟩ When booking flights, Avery, I recall ⟦⚡SPAN@22.95s: [2026-06-13] User prefers a window seat when traveling.⟧ you prefer a window seat for travelling. Would you like me to search for options with that preference?
+[ 23.44s][user ] «backchannel» Mm-hmm.
+[ 28.39s][user ] Oh, that’s a good reminder! Yes, please. And what about the best regions for alpine wildflowers?

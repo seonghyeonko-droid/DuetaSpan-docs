@@ -67,20 +67,24 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Do you know when Demi Lovato’s new album comes out? I’m so excited to hear it.
-[  4.83s][moshi] ⟨ret@4.61s⟩ Demi Lovato’s new ⟦⚡SPAN@6.61s: [source: Wikipedia] Demi Lovato's fifth studio album, *Confident*, was released in October 2015.⟧ album, *Confident*, was released in October 2015.
-[ 10.10s][user ] October? That feels like a long time ago ⟨ret@13.56s⟩ now.
-[ 13.95s][moshi] The ⟦⚡SPAN@14.76s: [source: Britannica] The platypus is a semiaquatic mammal endemic to eastern Australia, including Tasmania.⟧ platypus is native to eastern Australia and Tasmania.
-[ 18.84s][user ] Huh, that’s random. But back to Demi.
-[ 21.52s][moshi] «interrupted» Yes, of course. It’s easy to get sidetracked, isn't it—
-[ 24.28s][user ] «interrupts_prev» …was *Confident* a successful album?
-[ 27.53s][moshi] ⟨ret@27.46s⟩ *Confident* debuted at number ⟦⚡SPAN@29.46s: [source: Billboard] *Confident* debuted at number one on the Billboard 200 chart, becoming Lovato's first char⟧ one on the Billboard 200 chart in the US.
-[ 29.39s][user ] «backchannel» Mm-hmm.
-[ 32.39s][moshi] ⟨ret@32.16s⟩ The album includes work ⟦⚡SPAN@34.16s: [source: Rolling Stone] The album features collaborations with Max Martin, Ryan Tedder, and Mitch Allan.⟧ with Max Martin, Ryan Tedder, and Mitch Allan.
-[ 36.83s][user ] Cool. So, what kind of sound did she go for with that album?
-[ 40.61s][moshi] She explored a more mature and confident sound, as the title suggests.
-[ 45.88s][user ] And has she released anything since ⟨ret@48.14s⟩ then?
-[ 48.29s][moshi] She released *Tell Me ⟦⚡SPAN@50.14s: [source: Official Charts Company] Lovato has released several albums and singles since *Confident*, including ⟧ You Love Me* in 2017, among other projects.
-[ 50.48s][user ] «backchannel» Yeah, yeah.
-[ 53.10s][user ] Oh, okay. Thanks for the info, Runana.
-[ 55.81s][moshi] You’re very welcome. It’s my pleasure to help you explore her musical journey.
+[  0.00s][user ] I was just wondering about Demi Lovato’s music… when is her next album coming out?
+[  5.57s][moshi] It’s wonderful you’re connecting with music right now. What specifically are you hoping to find with a new album?
+[ 11.88s][user ] I mean, I remember she had one come out a while ago… around 2015, I ⟨ret@16.45s⟩ think?
+[ 16.68s][moshi] Her album, *Confidence*, ⟦⚡SPAN@18.45s: [source: Wikipedia] Demi Lovato’s fifth studio album, Confidence, was released in October 2015.⟧ was released in October of 2015.
+[ 21.87s][user ] Oh, right! October. That rings a bell.
+[ 25.60s][moshi] Sometimes remembering is less about pinpointing a date and more about the feeling the music evokes, don't you think?
+[ 32.29s][user ] Yeah, that's true. But I was also curious…
+[ 36.99s][user ] …if she’s released anything since then.
+[ 39.17s][moshi] ⟨ret@39.10s⟩ She released *Dancing ⟦⚡SPAN@41.10s: [source: Rolling Stone] Demi Lovato released her seventh studio album, *Dancing with the Devil… The Art of Sta⟧ with the Devil… The Art of Staying Alive* in April 2021.
+[ 41.76s][user ] «backchannel» Mm-hmm.
+[ 46.01s][moshi] Exploring an artist’s evolution can be really inspiring. It’s a journey of self-discovery, both for them and for us.
+[ 53.91s][user ] Actually, I’m trying to figure out what album to listen to on a road trip.
+[ 58.09s][moshi] «interrupted» Choosing music for a road trip is a lovely idea—
+[ 60.58s][user ] «interrupts_prev» …do you think *Confidence* would be a good choice ⟨ret@63.47s⟩ for that?
+[ 63.86s][moshi] *Confidence* could be ⟦⚡SPAN IRRELEVANT@65.47s: [source: Britannica] The Great Barrier Reef, located off the coast of Queensland, Australia, is the world’s la⟧ a great choice, especially if you enjoy a powerful and vulnerable sound.
+[ 69.80s][moshi] It's about finding music that resonates with the energy of your journey, you know?
+[ 72.12s][user ] «backchannel» Mm-hmm.
+[ 75.34s][user ] I do. What about her more recent stuff? Is it very ⟨ret@79.20s⟩ different?
+[ 79.51s][moshi] Her eighth album, *Holy ⟦⚡SPAN@81.20s: [source: Billboard] *Holy Fvck*, Lovato’s eighth studio album, was released in August 2022 and features a more⟧ Fvck*, came out in August 2022 and leans into a rock sound.
+[ 81.20s][user ] «backchannel» Yeah.
+[ 85.96s][user ] Oh, rock, huh? That’s interesting. Maybe I’ll check that one out too. Thanks!

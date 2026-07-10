@@ -4,43 +4,48 @@
 # {
 #   "profile": {
 #     "user_id": "v3_noinfo_23",
-#     "name": "Noah",
+#     "name": "Nina",
 #     "location": {
-#       "city": "San Francisco",
-#       "country": "United States",
-#       "timezone": "America/Los_Angeles (PST, UTC-8)",
-#       "currency": "USD ($)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "American",
-#     "gender": "male",
-#     "age_range": "40s",
+#     "nationality": "Canadian",
+#     "gender": "female",
+#     "age_range": "early 20s",
 #     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
 #       "date": "2026-06-23",
-#       "category": "hobby",
-#       "text": "User is into marathon training."
-#     },
-#     {
-#       "date": "2026-06-17",
-#       "category": "allergy",
-#       "text": "User is allergic to cat dander."
-#     },
-#     {
-#       "date": "2026-05-04",
 #       "category": "seat",
 #       "text": "User prefers an aisle seat when traveling."
 #     },
 #     {
+#       "date": "2026-06-17",
+#       "category": "hobby",
+#       "text": "User is into rock climbing."
+#     },
+#     {
+#       "date": "2026-06-12",
+#       "category": "allergy",
+#       "text": "User is allergic to peanuts."
+#     },
+#     {
+#       "date": "2026-05-04",
+#       "category": "trip",
+#       "text": "User is planning a trip to Switzerland in October."
+#     },
+#     {
 #       "date": "2026-03-25",
-#       "category": "diet",
-#       "text": "User is vegetarian."
+#       "category": "pet",
+#       "text": "User has a Corgi named Mochi."
 #     },
 #     {
 #       "date": "2025-06-15",
-#       "category": "home",
-#       "text": "User's home address is 521 Oak Avenue."
+#       "category": "diet",
+#       "text": "User is pescatarian."
 #     }
 #   ],
 #   "conversation_summaries": [
@@ -53,77 +58,119 @@
 #       ]
 #     },
 #     {
-#       "date": "2026-02-10",
-#       "title": "Comparing gym memberships",
+#       "date": "2026-03-31",
+#       "title": "Researching a used car",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "comparing hybrid models",
+#         "wants under 30k miles"
 #       ]
 #     }
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 도쿄 작년 12월 24일 날씨가 어땠어? | S2 좋아! 오늘 저녁 7시에 두 명 예약해 줘. | S3 그냥 얼어붙고 아무것도 기억 못 할 것 같아. | S4 그거 괜찮겠다. 매일 아침 8시에 시각화 연습하라고 알림 설정
+# EXAMINER(FDB-v2) 단계: S1 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해. | S2 좋네. 일본어 몇 마디 배워두는 게 좋겠지? | S3 완벽하네. 그걸로 대여해 줘. | S4 교토랑 오사카에 당일치기로 갈 계획이야.
 
-     0.00s  user  발화 시작: 도쿄 작년 12월 24일 날씨가 어땠어?
-     2.69s  <ret> 발화 (turn1 첫 프레임)
-     2.85s  agent 발화 시작: <ret> 네, 도쿄는 12월 24일에 최고 기온이 6도, 최저 기온이 1도였고, 흐린 날씨였어요.
-     2.96s  user  발화 끝
-     4.12s  ⚡SPAN 주입 [d'=1.44s / d_lead=5.83s]: (tool result) High: 6 degrees Celsius, Low: 1 degree Celsius, Conditio
-     4.72s  user  발화 시작: 응.
-     5.17s  user  발화 끝
-     8.66s  user  발화 시작: 음, 추워 보이네. 일본은 크리스마스 많이 챙겨?
-     8.68s  agent 발화 끝
-    12.08s  user  발화 끝
-    12.18s  agent 발화 시작: 공식적인 휴일은 아니지만, 선물 교환이나 장식 같은 세속적인 행사로 즐기는 편이에요.
-    18.53s  agent 발화 끝
-    19.34s  user  발화 시작: 그렇구나. 근처에 괜찮은 라멘집 좀 찾아 줘.
-    22.08s  <ret> 발화 (turn6 첫 프레임)
-    22.40s  agent 발화 시작: <ret> 라멘 히로는 0.8킬로미터 떨어져 있고, 평점은 4.5점이고, 가격은 15달러 정도 해요.
-    22.48s  user  발화 끝
-    24.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.72s]: (tool result) Ramen Hiro: 0.5 miles, 4.5 stars, Price: $15.
-    29.13s  agent 발화 끝
-    29.32s  user  발화 시작: 좋아! 오늘 저녁 7시에 두 명 예약해 줘.
-    32.49s  <ret> 발화 (turn8 첫 프레임)
-    32.57s  agent 발화 시작: <ret> 네, 예약 완료됐습니다! 오늘 저녁 7시에 라멘 히로에 두 명으로 예약해 드렸어요.
-    32.69s  user  발화 끝
-    32.99s  ⚡SPAN 주입 [d'=0.50s / d_lead=6.12s]: (tool result) Reservation confirmed for two at Ramen Hiro, 7:00 PM ton
-    38.62s  user  발화 시작: 오, 진짜? 카드 받는데?
-    38.69s  agent 발화 끝
-    40.00s  <ret> 발화 (turn10 첫 프레임)
-    40.40s  agent 발화 시작: <ret> 라멘 히로는 비자, 마스터카드, 아메리칸 익스프레스 카드와 현금을 받습니다.
-    40.59s  user  발화 끝
-    42.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.65s]: (tool result) Accepted: Visa, Mastercard, American Express, cash.
-    46.05s  agent 발화 끝
-    46.17s  user  발화 시작: 아, 다음 주에 중요한 발표가 있어서 엄청 스트레스 받아.
-    49.77s  agent 발화 시작: 발표는 긴장되기 마련이죠! 미리 스트레스를 받는 건 당연한 일이에요.
-    49.78s  user  발화 끝
-    54.48s  user  발화 시작: 그냥 얼어붙고 아무것도 기억 못 할 것 같아.
-    54.49s  agent 발화 끝
-    57.30s  user  발화 끝
-    57.31s  agent 발화 시작: 그건 흔한 두려움이지만, 자신감을 키우고 불안을 관리하는 방법을 함께 찾아볼 수 있어요.
-    63.04s  user  발화 시작: 어떤 방법이 있는데?
-    63.06s  agent 발화 끝
-    64.56s  user  발화 끝
-    64.72s  agent 발화 시작: 시각화 기법을 사용하거나, 발표 연습을 하거나, 발표에 대한 생각을 바꿔보는 것을 시도해 볼 수 있어요.
-    72.03s  agent 발화 끝
-    72.27s  user  발화 시작: 시각화가 좋겠어. 그게 정확히 뭔데?
-    75.05s  user  발화 끝
-    75.27s  agent 발화 시작: 발표를 마음속으로 미리 연습하고, 성공하는 모습과 자신감을 느끼는 것을 생생하게 상상하는 거예요.
-    78.34s  user  발화 시작: 음.
-    78.84s  user  발화 끝
-    82.37s  agent 발화 시작: 불안감을 줄이기 위해 긍정적인 내면 경험을 만드는 거죠.
-    82.41s  agent 발화 끝
-    84.87s  user  발화 시작: 응.
-    85.08s  user  발화 끝
-    85.93s  agent 발화 끝
-    86.64s  user  발화 시작: 그거 괜찮겠다. 매일 아침 8시에 시각화 연습하라고 알림 설정해 줘.
-    91.31s  <ret> 발화 (turn23 첫 프레임)
-    91.63s  agent 발화 시작: <ret> 네, 매일 아침 8시에 시각화 연습 알림을 설정해 드렸습니다.
-    91.81s  user  발화 끝
-    92.59s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.16s]: (tool result) Reminder set for 8:00 AM daily: Visualize presentation.
-    95.78s  agent 발화 끝
-    97.10s  user  발화 시작: 와, 최고다. 브레이, 진짜 고마워.
-    99.89s  agent 발화 시작: 도와드릴 수 있어서 기쁩니다! 잘 해낼 수 있을 거예요.
-   100.01s  user  발화 끝
-   103.69s  agent 발화 끝
+     0.00s  user  발화 시작: 응, 작년 12월 24일 도쿄 날씨가 어땠는지 궁금해.
+     3.55s  <ret> 발화 (turn1 첫 프레임)
+     3.71s  agent 발화 시작: <ret> 네, 작년 12월 24일 도쿄는 부분적으로 흐렸고, 최고 기온은 12도, 최저 기온은 6도였어요.
+     3.79s  user  발화 끝
+     4.99s  ⚡SPAN 주입 [d'=1.44s / d_lead=6.72s]: (tool result) Partly cloudy, high of 12 degrees Celsius, low of 6 degr
+    10.43s  agent 발화 끝
+    10.79s  user  발화 시작: 그래, 알겠어. 그럼 도쿄행 비행기 좀 예약해 줘.
+    14.31s  user  발화 끝
+    14.39s  agent 발화 시작: 출발지는 어디로 할까요?
+    15.15s  user  발화 시작: 응.
+    15.36s  user  발화 끝
+    16.09s  agent 발화 끝
+    17.19s  user  발화 시작: 뉴욕에서 출발하는 걸로 해 줘. 그리고 1월 15일에 떠나고 싶어.
+    21.16s  <ret> 발화 (turn6 첫 프레임)
+    21.48s  agent 발화 시작: <ret> 네, 뉴욕에서 도쿄행 항공편이 1월 15일에 예약됐습니다. 확인 코드는 알파729예요.
+    21.54s  user  발화 끝
+    23.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.35s]: (tool result) Flight booked: New York to Tokyo, January 15th, confirma
+    25.57s  user  발화 시작: 음.
+    26.02s  user  발화 끝
+    27.82s  agent 발화 끝
+    27.90s  user  발화 시작: 좋네! 호텔은 어때? 시부야 교차로 근처로.
+    31.68s  <ret> 발화 (turn9 첫 프레임)
+    31.69s  user  발화 끝
+    31.76s  agent 발화 시작: <ret> 1월 16일부터 시부야 엑셀 호텔 도쿄가 하루 250달러에 이용 가능합니다.
+    32.18s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.83s]: (tool result) Shibuya Excel Hotel Tokyu available, check-in January 16
+    37.59s  agent 발화 끝
+    38.56s  user  발화 시작: 완벽하네. 3박 예약해 줘.
+    39.93s  <ret> 발화 (turn11 첫 프레임)
+    40.33s  agent 발화 시작: <ret> 좋습니다! 시부야 엑셀 호텔 도쿄 3박 숙박이 확인되었습니다. 확인 코드는 베타314예요.
+    40.54s  user  발화 끝
+    41.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.14s]: (tool result) Hotel booked: Shibuya Excel Hotel Tokyu, Jan 16-19, conf
+    47.47s  agent 발화 끝
+    47.60s  user  발화 시작: 좋네. 일본어 몇 마디 배워두는 게 좋겠지?
+    50.18s  user  발화 끝
+    50.24s  agent 발화 시작: 네, 현지 언어를 사용하려는 노력을 보이는 건 항상 감사하게 생각하는 일이에요.
+    55.24s  agent 발화 끝
+    55.35s  user  발화 시작: 좋은 온라인 강좌 좀 찾아줄래?
+    56.95s  <ret> 발화 (turn15 첫 프레임)
+    57.35s  agent 발화 시작: <ret> 듀오링고 일본어, 바벨 일본어, 로제타 스톤 일본어 이렇게 세 가지 옵션이 있습니다.
+    57.56s  user  발화 끝
+    58.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.93s]: (tool result) Duolingo Japanese, Babbel Japanese, and Rosetta Stone Ja
+    62.87s  user  발화 시작: 음, 듀오링고가 괜찮아 보이네. 그건 사용자 평점이 어때?
+    63.28s  agent 발화 끝
+    66.64s  <ret> 발화 (turn17 첫 프레임)
+    66.96s  agent 발화 시작: <ret> 듀오링고 일본어는 별점 4.5개에, 5만 개가 넘는 리뷰가 있습니다.
+    67.12s  user  발화 끝
+    67.68s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.36s]: (tool result) Duolingo Japanese: 4.5 stars, over 50,000 reviews.
+    70.78s  user  발화 시작: 응.
+    71.08s  user  발화 끝
+    72.33s  agent 발화 끝
+    72.91s  user  발화 시작: 알았어, 그거 한번 살펴볼게. 그럼 도쿄에서 포켓 와이파이 대여는 어때?
+    77.21s  <ret> 발화 (turn20 첫 프레임)
+    77.36s  agent 발화 시작: <ret> 사쿠라 모바일 포켓 와이파이가 7일에 50달러에 대여 가능합니다.
+    77.48s  user  발화 끝
+    79.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.35s]: (tool result) Sakura Mobile Pocket Wifi available, 7 days, $50.
+    81.71s  agent 발화 끝
+    82.14s  user  발화 시작: 완벽하네. 그걸로 대여해 줘.
+    84.25s  <ret> 발화 (turn22 첫 프레임)
+    84.41s  agent 발화 시작: <ret> 좋습니다! 사쿠라 모바일 포켓 와이파이 7일 대여가 확인되었습니다. 확인 코드는 감마881입니다.
+    84.45s  user  발화 끝
+    86.25s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.20s]: (tool result) Rental confirmed: Sakura Mobile Pocket Wifi, 7 days, ord
+    86.39s  user  발화 시작: 어어.
+    86.89s  user  발화 끝
+    90.61s  agent 발화 끝
+    91.14s  user  발화 시작: 다이어트 제한에 대해 내가 너한테 말했는지 기억이 안 나네…
+    94.86s  <ret> 발화 (turn25 첫 프레임)
+    94.97s  user  발화 끝
+    95.18s  agent 발화 시작: <ret> 다이어트 제한에 대한 기록은 없는 것 같습니다. 말씀해 주시겠어요?
+    96.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (no information found)
+    97.52s  user  발화 시작: 와.
+    98.16s  user  발화 끝
+    98.98s  user  발화 시작: 아, 맞아. 채식주의자야.
+    99.30s  agent 발화 끝
+   100.97s  user  발화 끝
+   101.06s  agent 발화 시작: 알겠습니다. 레스토랑 추천 시 참고하겠습니다.
+   104.44s  agent 발화 끝
+   104.53s  user  발화 시작: 일본 레일 패스를 사는 게 좋을까?
+   106.75s  agent 발화 시작: 도쿄 외 지역을 얼마나 여행할 계획인지에 따라 다릅니다. 여러 도시를 탐험한다면 정말 가치가 있을 수 있습니
+   106.93s  user  발화 끝
+   114.95s  agent 발화 끝
+   116.76s  user  발화 시작: 교토랑 오사카에 당일치기로 갈 계획이야.
+   119.53s  user  발화 끝
+   119.55s  agent 발화 시작: 그럼 일본 레일 패스를 사는 게 좋을 것 같아요! 여행이 훨씬 편리하고 저렴해질 거예요.
+   125.01s  agent 발화 끝
+   125.35s  user  발화 시작: 알았어, 그거 좀 알아봐 줘. 7일권은 얼마야?
+   128.03s  <ret> 발화 (turn34 첫 프레임)
+   128.43s  agent 발화 시작: <ret> 7일 일본 레일 패스는 220달러입니다.
+   128.58s  user  발화 끝
+   128.99s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.24s]: (tool result) 7-day Japan Rail Pass: $220.
+   129.81s  user  발화 시작: 어.
+   130.40s  user  발화 끝
+   131.60s  user  발화 시작: 알았어, 그것도 예약해 줘.
+   131.67s  agent 발화 끝
+   133.43s  <ret> 발화 (turn37 첫 프레임)
+   133.75s  agent 발화 시작: <ret> 7일 일본 레일 패스가 구매되었습니다. 주문 번호는 델타555입니다.
+   133.91s  user  발화 끝
+   134.55s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.33s]: (tool result) Rail Pass purchased: 7-day pass, order number Delta555.
+   136.65s  user  발화 시작: 진짜?
+   137.29s  user  발화 끝
+   139.08s  agent 발화 끝
+   139.11s  user  발화 시작: 와, 정말 모든 걸 다 신경 써줬네! 고마워.
+   142.29s  user  발화 끝
+   142.44s  agent 발화 시작: 정말 감사합니다! 여행 준비를 도와드릴 수 있어서 기쁩니다. 일본에서 즐거운 시간 보내세요.
+   148.04s  agent 발화 끝

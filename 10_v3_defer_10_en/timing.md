@@ -4,69 +4,56 @@
 # {
 #   "profile": {
 #     "user_id": "v3_defer_10",
-#     "name": "Alice",
+#     "name": "Lukas",
 #     "location": {
-#       "city": "Paris",
-#       "country": "France",
-#       "timezone": "Europe/Paris (CET, UTC+1)",
-#       "currency": "EUR (€)"
+#       "city": "Toronto",
+#       "country": "Canada",
+#       "timezone": "America/Toronto (EST, UTC-5)",
+#       "currency": "CAD ($)"
 #     },
-#     "nationality": "French",
-#     "gender": "female",
-#     "age_range": "late 30s",
-#     "language": "French"
+#     "nationality": "Canadian",
+#     "gender": "male",
+#     "age_range": "early 30s",
+#     "language": "English"
 #   },
 #   "saved_memories": [
 #     {
-#       "date": "2026-05-07",
-#       "category": "home",
-#       "text": "User's home address is 447 Oak Avenue."
-#     },
-#     {
-#       "date": "2026-04-06",
-#       "category": "pet",
-#       "text": "User has a Corgi named Mochi."
-#     },
-#     {
 #       "date": "2026-03-14",
-#       "category": "trip",
-#       "text": "User is planning a trip to Lisbon in October."
+#       "category": "home",
+#       "text": "User's home address is 260 Maple Drive."
 #     },
 #     {
-#       "date": "2026-02-23",
+#       "date": "2026-02-18",
+#       "category": "pet",
+#       "text": "User has a tabby cat named Luna."
+#     },
+#     {
+#       "date": "2025-11-09",
+#       "category": "trip",
+#       "text": "User is planning a trip to Iceland in August."
+#     },
+#     {
+#       "date": "2025-09-16",
 #       "category": "seat",
 #       "text": "User prefers a window seat when traveling."
 #     },
 #     {
-#       "date": "2026-02-18",
+#       "date": "2025-07-29",
 #       "category": "work",
-#       "text": "User works as a software engineer."
-#     },
-#     {
-#       "date": "2025-09-16",
-#       "category": "diet",
-#       "text": "User is lactose-intolerant."
+#       "text": "User works as a marketing manager."
 #     }
 #   ],
 #   "conversation_summaries": [
 #     {
-#       "date": "2025-12-28",
-#       "title": "Comparing gym memberships",
+#       "date": "2025-09-26",
+#       "title": "Planning a birthday dinner",
 #       "bullets": [
-#         "wants a pool",
-#         "close to the office"
+#         "party of six",
+#         "looking for outdoor seating"
 #       ]
 #     },
 #     {
-#       "date": "2025-12-23",
-#       "title": "Booked a dentist appointment",
-#       "bullets": [
-#         "asked for an early-morning slot",
-#         "prefers Dr. Han"
-#       ]
-#     },
-#     {
-#       "date": "2025-07-31",
+#       "date": "2025-09-02",
 #       "title": "Apartment hunting downtown",
 #       "bullets": [
 #         "wanted a pet-friendly building",
@@ -76,24 +63,32 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Find pictures related to my holida | S2 …picture to my sister, Sarah? | S3 That’s great, thanks. What’s the w | S4 Okay, thanks.
 
      0.00s  user  발화 시작: Find pictures related to my holiday in France last year, but
-     3.90s  <ret> 발화 (turn1 첫 프레임)
-     3.96s  agent 발화 시작: <ret> I found twenty-seven pictures from your France holiday
-     4.11s  user  발화 끝
-     5.90s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.99s]: (tool result) 27 files found: ‘Paris EiffelTower.jpg’, ‘Nice Beach.png
-     6.98s  user  발화 시작: Mhm.
-     7.62s  user  발화 끝
-     8.95s  agent 발화 끝
-     9.60s  user  발화 시작: Oh, great! Could you send ‘Paris_EiffelTower.jpg’ to my sist
-    17.51s  <ret> 발화 (turn4 첫 프레임)
-    17.81s  agent 발화 시작: <ret> The picture of the Eiffel Tower has been sent to Sarah
-    17.99s  user  발화 끝
-    18.47s  ⚡SPAN 주입 [d'=0.96s / d_lead=4.43s]: (tool result) Email sent to sarah.jones@email.com with attachment ‘Par
-    20.59s  user  발화 시작: Yeah.
-    21.22s  user  발화 끝
-    22.24s  agent 발화 끝
-    22.80s  user  발화 시작: Perfect, thanks! I— I mean, do you think I’m spending too mu
-    26.54s  agent 발화 시작: [sigh] It’s good to check in with yourself about spending. W
-    26.64s  user  발화 끝
-    31.87s  agent 발화 끝
+     4.16s  <ret> 발화 (turn1 첫 프레임)
+     4.22s  agent 발화 시작: <ret> I found twelve files from your France holiday last yea
+     4.39s  user  발화 끝
+     6.16s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.24s]: (tool result) 12 files found: 'Paris EiffelTower.jpg', 'Nice Beach.png
+     8.65s  user  발화 시작: Mhm.
+     9.09s  user  발화 끝
+    11.46s  agent 발화 끝
+    12.07s  user  발화 시작: Can you send the Paris…
+    13.81s  user  발화 끝
+    14.79s  user  발화 시작: …picture to my sister, Sarah?
+    16.37s  <ret> 발화 (turn5 첫 프레임)
+    16.68s  agent 발화 시작: <ret> I’ve just sent the Eiffel Tower picture to Sarah.
+    16.78s  user  발화 끝
+    17.33s  ⚡SPAN 주입 [d'=0.96s / d_lead=2.67s]: (tool result) File 'Paris EiffelTower.jpg' sent to Sarah.
+    18.29s  user  발화 시작: Yeah.
+    18.79s  user  발화 끝
+    19.36s  agent 발화 끝
+    19.59s  user  발화 시작: That’s great, thanks. What’s the weather like in Paris right
+    22.99s  agent 발화 시작: Let me check on that.
+    23.11s  user  발화 끝
+    24.19s  agent 발화 끝
+    24.23s  ⚡지연 SPAN 주입(선제발표 직전): (tool result) Temperature: 15°C, Condition: Partly Cloudy, Wind: 12 km
+    24.38s  user  발화 시작: Okay, thanks.
+    25.17s  agent 발화 시작: <ret> The current weather in Paris is 15 degrees Celsius and
+    25.20s  user  발화 끝
+    32.49s  agent 발화 끝
