@@ -58,43 +58,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to remember a flag… it  | S2 That's right! It was Germany. Hmm, | S3 Donatello, yes! That rings a bell. | S4 Perfect! Thanks, Kiora, you’re a l
+# EXAMINER(FDB-v2) 단계: S1 Uh, hey… I was wondering about fla | S2 Oh, right! Germany. I knew it felt | S3 Okay, that makes sense. My grandma | S4 Yeah, actually. What about a flag 
 
-     0.00s  user  발화 시작: I’m trying to remember a flag… it has black, red, and yellow
-     4.35s  user  발화 끝
-     4.39s  agent 발화 시작: Flags can be tricky to recall, it’s easy to mix up the color
-    13.31s  user  발화 시작: Oh, just a quiz. I think it was a European country.
-    13.39s  agent 발화 끝
-    16.78s  <ret> 발화 (turn3 첫 프레임)
-    16.87s  user  발화 끝
-    17.02s  agent 발화 시작: <ret> The flag with black, red, and yellow bands is… the fla
-    18.78s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: Wikipedia] The flag of Germany features three horizontal band
-    19.14s  user  발화 시작: Right.
-    19.92s  user  발화 끝
-    21.69s  user  발화 시작: That's right! It was Germany. Hmm, I also need to remember a
-    21.74s  agent 발화 끝
-    27.80s  user  발화 끝
-    27.81s  agent 발화 시작: Sculptors often capture a feeling or idea in their work, do 
-    34.75s  agent 발화 끝
-    34.83s  user  발화 시작: I think he did a lot of bronze work. And he was Italian, I t
-    38.14s  <ret> 발화 (turn8 첫 프레임)
-    38.46s  agent 발화 시작: <ret> The Italian sculptor known for bronze work was… Donate
-    38.57s  user  발화 끝
-    39.98s  ⚡SPAN 주입 [d'=1.84s / d_lead=4.44s]: [source: Britannica] Donatello was a Florentine sculptor of the Early 
-    42.90s  agent 발화 끝
-    42.93s  user  발화 시작: Donatello, yes! That rings a bell. He sounds important.
-    47.92s  agent 발화 시작: [happy] He absolutely was— Donatello really influenced a who
-    48.02s  user  발화 끝
-    55.67s  user  발화 시작: Okay, last one. I need a city in Spain. It starts with a ‘B’
-    55.76s  agent 발화 끝
-    59.97s  <ret> 발화 (turn12 첫 프레임)
-    60.36s  agent 발화 시작: <ret> The Spanish city that starts with ‘B’ is… Barcelona.
-    60.53s  user  발화 끝
-    61.57s  ⚡SPAN 주입 [d'=1.60s / d_lead=3.70s]: [source: WorldAtlas] Barcelona is the capital and largest city of Cata
-    62.03s  user  발화 시작: Uh-huh.
-    62.66s  user  발화 끝
-    64.06s  agent 발화 끝
-    65.37s  user  발화 시작: Perfect! Thanks, Kiora, you’re a lifesaver.
-    68.37s  agent 발화 시작: You're very welcome! It’s great to hear I could help you wit
-    68.55s  user  발화 끝
-    72.03s  agent 발화 끝
+     0.00s  user  발화 시작: Uh, hey… I was wondering about flags.
+     3.38s  user  발화 끝
+     3.46s  agent 발화 시작: It’s good to be curious! Flags can be really fascinating, an
+    13.51s  user  발화 시작: Well, I was thinking about one… it's black, red, and yellow.
+    13.56s  agent 발화 끝
+    19.08s  <ret> 발화 (turn3 첫 프레임)
+    19.20s  user  발화 끝
+    19.32s  agent 발화 시작: <ret> The flag you're describing—with those colors—is… the f
+    21.08s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.53s]: "[source: Britannica] The national flag of Germany consists of three e
+    21.37s  user  발화 시작: Right.
+    22.01s  user  발화 끝
+    23.85s  agent 발화 끝
+    23.88s  user  발화 시작: Oh, right! Germany. I knew it felt familiar. Hmmmm… so, what
+    30.36s  <ret> 발화 (turn6 첫 프레임)
+    30.51s  agent 발화 시작: <ret> Belgium’s flag has a different arrangement—it’s black,
+    30.64s  user  발화 끝
+    31.72s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.49s]: "[source: Encyclopedia Britannica] The flag of Belgium is a tricolor o
+    36.00s  agent 발화 끝
+    36.13s  user  발화 시작: Okay, that makes sense. My grandma used to collect flags, ac
+    43.73s  user  발화 끝
+    43.83s  agent 발화 시작: That’s lovely! It’s wonderful to have hobbies that connect u
+    51.06s  agent 발화 끝
+    51.13s  user  발화 시작: Yeah, actually. What about a flag that has a maple leaf on i
+    55.49s  <ret> 발화 (turn10 첫 프레임)
+    55.73s  agent 발화 시작: <ret> The flag with a maple leaf is… the flag of Canada, wit
+    55.90s  user  발화 끝
+    57.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.07s]: "[source: The Canadian Encyclopedia] The Canadian flag features a red 
+    61.80s  agent 발화 끝

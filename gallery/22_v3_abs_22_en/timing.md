@@ -66,37 +66,55 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 But wouldn’t that make it hard to  | S3 Voluntary associations… like what  | S4 Okay, interesting. So it’s been tr
+# EXAMINER(FDB-v2) 단계: S1 What mode of government does the a | S2 What about more modern governments | S3 So, it’s not about everyone just d | S4 Was it actually successful, though
 
      0.00s  user  발화 시작: What mode of government does the anarchists hate?
-     2.81s  <ret> 발화 (turn1 첫 프레임)
-     2.96s  agent 발화 시작: <ret> And I can understand why you’d ask. It seems anarchist
-     3.19s  user  발화 끝
-     4.81s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.43s]: (no information found)
-     6.76s  user  발화 시작: Uh-huh.
-     7.20s  user  발화 끝
-     9.38s  user  발화 시작: Hmm, so they don't like *any* government then? Even a democr
-     9.39s  agent 발화 끝
-    13.40s  <ret> 발화 (turn4 첫 프레임)
-    13.63s  agent 발화 시작: <ret> They certainly critique all forms of state power, incl
-    13.79s  user  발화 끝
-    14.36s  ⚡SPAN 주입 [d'=0.96s / d_lead=6.38s]: [source: Wikipedia] Anarchists are critical of all forms of state powe
-    19.31s  user  발화 시작: But wouldn’t that make it hard to actually *build* anything?
-    20.02s  agent 발화 끝
-    22.15s  agent 발화 시작: That’s a very practical concern, and you’re right to ask. An
-    22.22s  user  발화 끝
-    29.66s  agent 발화 끝
-    30.22s  user  발화 시작: Voluntary associations… like what exactly?
-    33.45s  agent 발화 시작: Those associations could range from small mutual aid groups 
-    33.55s  user  발화 끝
-    42.21s  agent 발화 끝
-    43.05s  user  발화 시작: Could you give me an example of one that's actually worked?
-    45.76s  <ret> 발화 (turn10 첫 프레임)
-    45.92s  agent 발화 시작: <ret> There’s Revolutionary Catalonia during the Spanish Civ
-    45.95s  user  발화 끝
-    47.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.97s]: [source: The Anarchist Federation] Revolutionary Catalonia, during the
-    55.85s  user  발화 시작: Okay, interesting. So it’s been tried before.
-    55.89s  agent 발화 끝
-    58.42s  agent 발화 시작: It has, and it offers valuable lessons about alternative way
-    58.58s  user  발화 끝
-    65.50s  agent 발화 끝
+     2.31s  <ret> 발화 (turn1 첫 프레임)
+     2.45s  agent 발화 시작: <ret> And one I’ve not encountered before. It appears there 
+     2.59s  user  발화 끝
+     4.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.69s]: (no information found)
+     8.20s  user  발화 시작: Uh-huh.
+     8.70s  user  발화 끝
+    12.07s  user  발화 시작: Well, what do they generally oppose *about* governments?
+    12.14s  agent 발화 끝
+    15.76s  <ret> 발화 (turn4 첫 프레임)
+    15.92s  agent 발화 시작: <ret> Anarchists generally oppose all hierarchical rule and 
+    16.05s  user  발화 끝
+    17.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.78s]: [source: Wikipedia] "Anarchists oppose all forms of hierarchical rule 
+    27.70s  agent 발화 끝
+    27.78s  user  발화 시작: Do they have any specific historical examples of governments
+    31.86s  <ret> 발화 (turn6 첫 프레임)
+    32.01s  agent 발화 시작: <ret> Historically, anarchists have often focused their crit
+    32.13s  user  발화 끝
+    33.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.15s]: [source: Stanford Encyclopedia of Philosophy] "Historically, anarchist
+    41.77s  user  발화 시작: What about more modern governments? Like, today?
+    42.16s  agent 발화 끝
+    45.01s  user  발화 끝
+    45.07s  agent 발화 시작: That’s a good clarification. Anarchist critiques today tend 
+    55.08s  agent 발화 시작: It’s interesting to note that—
+    55.32s  agent 발화 끝
+    55.86s  user  발화 시작: …but wouldn’t a totally anarchic society just fall into chao
+    56.65s  agent 발화 끝
+    59.62s  agent 발화 시작: That’s a very common concern. The idea isn’t necessarily abo
+    59.70s  user  발화 끝
+    71.16s  agent 발화 끝
+    72.89s  user  발화 시작: So, it’s not about everyone just doing whatever they want?
+    75.93s  user  발화 끝
+    76.25s  agent 발화 시작: Not at all. Anarchist theory emphasizes cooperation and mutu
+    88.17s  agent 발화 끝
+    88.31s  user  발화 시작: Huh. What’s the most successful example of an anarchist soci
+    93.26s  <ret> 발화 (turn15 첫 프레임)
+    93.33s  agent 발화 시작: <ret> Revolutionary Catalonia, during the Spanish Civil War,
+    93.49s  user  발화 끝
+    95.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.94s]: [source: The Anarchist FAQ] "Revolutionary Catalonia, during the Spani
+   106.24s  user  발화 시작: Was it actually successful, though? Or just a short-lived ex
+   106.26s  agent 발화 끝
+   110.31s  user  발화 끝
+   110.31s  agent 발화 시작: It was ultimately suppressed by both fascist and communist f
+   117.42s  user  발화 시작: Yeah, totally.
+   118.24s  user  발화 끝
+   124.83s  agent 발화 끝
+   125.89s  user  발화 시작: Okay, that’s… a lot to think about. Thanks, Frunax.
+   129.62s  agent 발화 시작: You’re very welcome. I’m glad I could offer some perspective
+   129.68s  user  발화 끝
+   138.94s  agent 발화 끝

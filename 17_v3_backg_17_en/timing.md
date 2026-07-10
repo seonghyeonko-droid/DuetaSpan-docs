@@ -58,22 +58,27 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 What’s a normal heart rate for an  | S2 Did you remember to take the recyc | S3 Hmm, okay. Is there a range that’s | S4 That's good to know, thanks.
 
-     0.00s  user  발화 시작: I was just wondering, what's a normal heart rate?
-     2.63s  <ret> 발화 (turn1 첫 프레임)
-     3.00s  user  발화 끝
-     3.03s  agent 발화 시작: <ret> A normal heart rate is something many people ask about
-     4.63s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: [source: Mayo Clinic] A normal resting heart rate for adults ranges fr
-     8.65s  agent 발화 시작: The typical resting heart rate for most adults is… between 6
-     8.82s  agent 발화 끝
-    14.76s  agent 발화 끝
-    14.80s  user  발화 시작: Did you remember to take the chicken out of the freezer?
-    17.17s  user  발화 시작: Oh, okay, that’s good to know. Is there a range for what's c
-    17.25s  user  발화 끝
-    22.68s  <ret> 발화 (turn5 첫 프레임)
-    22.84s  agent 발화 시작: <ret> When we talk about healthy, there's a slightly narrowe
-    22.96s  user  발화 끝
-    24.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [source: American Heart Association] For most adults, a healthy heart 
-    27.52s  agent 발화 시작: A healthy heart rate, generally speaking, falls… between 50 
-    27.70s  agent 발화 끝
-    32.80s  agent 발화 끝
+     0.00s  user  발화 시작: What’s a normal heart rate for an adult?
+     1.84s  <ret> 발화 (turn1 첫 프레임)
+     2.24s  agent 발화 시작: <ret> A normal resting heart rate falls between sixty and on
+     2.26s  user  발화 끝
+     3.84s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.99s]: "[source: Mayo Clinic] A normal resting heart rate for adults ranges f
+     9.23s  agent 발화 끝
+     9.37s  user  발화 시작: Oh, that’s… higher than I thought. What about for someone re
+    12.89s  <ret> 발화 (turn3 첫 프레임)
+    13.12s  agent 발화 시작: <ret> For someone very fit, a resting heart rate can be lowe
+    13.17s  user  발화 끝
+    14.89s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.85s]: "[source: American Heart Association] Well-trained athletes may have r
+    21.96s  agent 발화 끝
+    22.67s  user  발화 시작: Did you remember to take the recycling out?
+    24.71s  user  발화 시작: Hmm, okay. Is there a range that’s considered unhealthy?
+    24.75s  user  발화 끝
+    27.30s  <ret> 발화 (turn6 첫 프레임)
+    27.62s  agent 발화 시작: <ret> A consistently high heart rate, above one hundred beat
+    27.66s  user  발화 끝
+    29.30s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.34s]: "[source: National Institutes of Health] A heart rate consistently abo
+    37.88s  user  발화 시작: That's good to know, thanks.
+    37.96s  agent 발화 끝
+    39.36s  user  발화 끝

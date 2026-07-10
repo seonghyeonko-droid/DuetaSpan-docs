@@ -60,27 +60,33 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was reading about Lux Aurunque,  | S2 …or did he study music formally? | S3 Was he known for a particular styl | S4 Ambient sounds—that's cool. What o
+# EXAMINER(FDB-v2) 단계: S1 Do you know… | S2 Hmm, and where exactly in Rome? | S3 …was he involved in any other proj | S4 Oh, interesting! What kind of musi
 
-     0.00s  user  발화 시작: I was reading about Lux Aurunque, and I'm curious—when was h
-     4.29s  <ret> 발화 (turn1 첫 프레임)
-     4.52s  agent 발화 시작: <ret> Lux Aurunque was born… in 1970. It’s wonderful you’re 
-     4.63s  user  발화 끝
-     6.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: [source: Britannica] Lux Aurunque was born in 1970 and was a noted Ita
-     6.60s  user  발화 시작: Mm-hmm.
-     7.24s  user  발화 끝
-    10.54s  agent 발화 끝
-    10.59s  user  발화 시작: That’s interesting. Was he entirely self-taught…
-    13.97s  user  발화 끝
-    16.08s  user  발화 시작: …or did he study music formally?
-    18.35s  agent 발화 시작: Understanding his musical education gives a fuller picture o
-    18.53s  user  발화 끝
-    25.38s  user  발화 시작: Was he known for a particular style of composition?
-    25.45s  agent 발화 끝
-    28.52s  user  발화 끝
-    28.55s  <ret> 발화 (turn7 첫 프레임)
-    28.63s  agent 발화 시작: <ret> Lux Aurunque’s compositions are characterized by minim
-    29.75s  ⚡SPAN 주입 [d'=1.20s / d_lead=7.41s]: [source: AllMusic] Lux Aurunque’s compositions are characterized by th
-    36.02s  user  발화 시작: Ambient sounds—that's cool. What other composers influenced 
-    36.04s  agent 발화 끝
-    40.28s  user  발화 끝
+     0.00s  user  발화 시작: Do you know…
+     0.82s  user  발화 끝
+     2.93s  user  발화 시작: …when Lux Aurunque was born?
+     4.79s  <ret> 발화 (turn2 첫 프레임)
+     5.03s  agent 발화 시작: <ret> Lux Aurunque was born in Italy… on November 22, 1970. 
+     5.20s  user  발화 끝
+     6.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.62s]: [source: AllMusic] Lux Aurunque was born in Rome, Italy on November 22
+     8.03s  user  발화 시작: Mm-hmm.
+     8.52s  user  발화 끝
+    13.65s  agent 발화 끝
+    14.05s  user  발화 시작: Hmm, and where exactly in Rome?
+    16.05s  <ret> 발화 (turn5 첫 프레임)
+    16.09s  agent 발화 시작: <ret> He was born in Rome, specifically…
+    16.30s  user  발화 끝
+    17.41s  ⚡SPAN 주입 [d'=1.36s / d_lead=2.45s]: [source: Discogs] Lux Aurunque was born in the Monteverde neighborhood
+    18.54s  agent 발화 끝
+    18.58s  user  발화 시작: …was he involved in any other projects besides Lux Aurunque?
+    22.16s  <ret> 발화 (turn7 첫 프레임)
+    22.24s  agent 발화 시작: <ret> …and was also a member of the duo Terminale, alongside
+    22.38s  user  발화 끝
+    23.44s  ⚡SPAN 주입 [d'=1.28s / d_lead=8.44s]: [source: Resident Advisor] Lux Aurunque was a member of the electronic
+    30.68s  agent 발화 끝
+    32.11s  user  발화 시작: Oh, interesting! What kind of music did Terminale make?
+    35.55s  <ret> 발화 (turn9 첫 프레임)
+    35.63s  agent 발화 시작: <ret> Terminale produced minimal techno and experimental ele
+    35.86s  user  발화 끝
+    37.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.76s]: [source: Bandcamp] Terminale produced minimal techno and experimental 
+    44.39s  agent 발화 끝

@@ -69,11 +69,13 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Andrea, welcome. I’m Jaeia, and I’m here to offer a gentle space for navigating life’s transitions, whatever they may be.
-[  7.33s][user ] Jaeia… that’s a beautiful name. It sounds… peaceful. I’m just feeling so lost right now, honestly.
-[ 13.15s][moshi] It’s understandable to feel lost when facing uncertainty, Andrea. Sometimes, simply acknowledging that feeling can be a first step towards finding direction.
-[ 16.07s][user ] «backchannel» Wow.
-[ 22.01s][moshi] What feels most overwhelming about this sense of being lost—is it a specific change, or more a general feeling of disconnection?
-[ 29.51s][user ] It's… well, my partner and I just separated. After fifteen years. Everything feels upended.
-[ 36.23s][moshi] Fifteen years is a significant chapter, Andrea. It’s natural to feel profoundly shaken when something so central to your life shifts—grief often arrives in waves.
-[ 46.95s][user ] It does. It really, really does. I just… I don’t even know where to begin to rebuild.
+[  0.00s][moshi] Andrea, welcome. I'm Jaeia, and I'm here to offer support as you navigate whatever may be on your mind.
+[  4.14s][user ] «backchannel» Right.
+[  6.44s][user ] Jaeia… that’s a beautiful name. It sounds… ancient? Is that intentional?
+[ 11.90s][moshi] It is, actually. It’s a name from a culture that deeply valued remembering ancestors, and I find that comforting in times of change.
+[ 16.44s][user ] «backchannel» Yeah.
+[ 21.22s][moshi] Change can bring up so many feelings, and often remembering those who came before us can ground us. Are you facing a particular transition right now?
+[ 32.31s][user ] Well, my mother passed away last month, and… it’s all a bit much. Everything feels different.
+[ 39.50s][moshi] Grief truly does shift everything, doesn’t it? It’s a profound reorientation. It’s alright to feel overwhelmed, to feel lost amongst the familiar.
+[ 49.82s][user ] It’s just… I don’t even know where to begin, you know? But… I want to honor her.
+[ 55.23s][moshi] That’s a beautiful intention, Andrea. Honoring her doesn’t require grand gestures, just finding ways to keep her spirit present in your life, in whatever feels right for you. Perhaps reflecting on a cherished memory?

@@ -1,0 +1,102 @@
+v3_selfc_07_ko src=mcp style=mcp_selfcorrect
+SYSTEM: <system> 당신은 큰 삶의 변화를 겪는 사람들을 돕는 긍정적이고 지지적인 상담사 Tellar입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_selfc_07",
+    "name": "윤율",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-05",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-05-29",
+      "category": "home",
+      "text": "User's home address is 585 Elm Street."
+    },
+    {
+      "date": "2026-05-01",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2026-04-27",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2026-01-21",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-10-16",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in October."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-05",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-08-24",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 그랜드뷰 로프트에 육월 십오일에 방문 예약 좀 잡아줘.
+[  3.59s][moshi] ⟨ret@3.36s⟩ 그랜드뷰 로프트 ⟦⚡SPAN@5.36s: (tool result) June 15th at 2:00 PM is available.⟧ 육월 십오일 오후 두시에 예약 가능합니다. 괜찮으세요?
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "The Grandview Lofts", "date": "June 15th"}}
+[  9.61s][user ] 응, 맞아. 근데 혹시… 십육일은 ⟨ret@11.85s⟩ 어때?
+[ 12.17s][moshi] 육월 십육일에는 오전 ⟦⚡SPAN@13.85s: (tool result) June 16th at 10:00 AM and 3:00 PM are available.⟧ 열시와 오후 세시에 예약이 가능합니다.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "The Grandview Lofts", "date": "June 16th"}}
+[ 14.78s][user ] «backchannel» 어.
+[ 16.68s][user ] 음… 세시로 해줘. ⟨ret@17.87s⟩
+[ 18.02s][moshi] 그랜드뷰 로프트 ⟦⚡SPAN@19.87s: (tool result) Booking confirmed. Confirmation number is 78921.⟧ 육월 십육일 오후 세시로 예약 완료되었습니다. 확인 번호는 칠 팔 구 이 일번입니다.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"home_name": "The Grandview Lofts", "date": "June 16th", "time": "3:00 PM"}}
+[ 23.77s][user ] «backchannel» 어.
+[ 27.07s][user ] 혹시 그 근처에 맛있는 이탈리안 레스토랑 있으면 추천해 줄 수 있어?
+[ 31.29s][moshi] ⟨ret@31.22s⟩ 그랜드뷰 로프트 근처에 ⟦⚡SPAN@33.22s: (tool result) Bella Notte - Italian, 4.5 stars, 0.3 miles away.⟧ 벨라 노테라는 이탈리안 레스토랑이 있습니다. 별점은 사 점 오점이고, 거리는 영 점 삼마일입니다.
+      CALL: {"function": "Search_Restaurants", "arguments": {"location": "near The Grandview Lofts", "cuisine": "Italian"}}
+[ 39.96s][user ] 벨라 노테… 아, 그게 아니라, 좀 더 캐주얼한 곳으로… 피자 같은 거 파는 ⟨ret@44.65s⟩ 데.
+[ 44.80s][moshi] 벨라 노테 말고 ⟦⚡SPAN@46.65s: (tool result) Tony's Pizzeria - Pizza, 4.2 stars, 0.5 miles away.⟧ 토니 피자도 있습니다. 별점은 사 점 이점이고, 거리는 영 점 오마일입니다. 피자를 전문으로 합니다.
+      CALL: {"function": "Search_Restaurants", "arguments": {"location": "near The Grandview Lofts", "cuisine": "Pizza"}}
+[ 54.30s][user ] 토니 피자, 좋아 보여. 거기는 몇 시까지 ⟨ret@57.22s⟩ 해?
+[ 57.45s][moshi] 토니 ⟦⚡SPAN@58.26s: (tool result) Tony's Pizzeria is open until 10:00 PM.⟧ 피자리아는 밤 열시까지 영업합니다.
+      CALL: {"function": "Get_RestaurantHours", "arguments": {"restaurant_name": "Tony's Pizzeria"}}
+[ 58.56s][user ] «backchannel» 음.
+[ 60.09s][user ] 고마워. 덕분에 편하게 준비할 수 있겠어.
+[ 62.84s][moshi] 도움이 되었다니 기쁩니다. 집 보러 가시기 전에 편안하게 휴식하세요.

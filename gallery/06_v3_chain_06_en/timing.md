@@ -63,87 +63,89 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 And how much does the 256GB model  | S3 Alright, let's proceed to checkout | S4 Now, place the order.
+# EXAMINER(FDB-v2) 단계: S1 Could you set the user agent to My | S2 Okay. And… what's the current time | S3 John Smith, January first, ninetee | S4 Wonderful. Could you find a good I
 
      0.00s  user  발화 시작: Could you set the user agent to MyCustomBrowser version ten 
-     5.06s  <ret> 발화 (turn1 첫 프레임)
-     5.13s  agent 발화 시작: <ret> Okay, I’ve set the user agent to MyCustomBrowser versi
-     5.23s  user  발화 끝
-     7.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.67s]: (tool result) User agent set to MyCustomBrowser version 10.5
-     9.81s  agent 발화 끝
-    10.62s  user  발화 시작: Great. Now, can you go to apple.com?
-    13.74s  <ret> 발화 (turn3 첫 프레임)
-    13.89s  agent 발화 시작: <ret> I’ve navigated to apple.com as requested.
-    14.04s  user  발화 끝
-    15.26s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.00s]: (tool result) Navigated to https://www.apple.com
-    15.59s  user  발화 시작: Yeah.
-    16.17s  user  발화 끝
-    16.89s  agent 발화 끝
-    17.03s  user  발화 시작: Hmm, I’m looking for the iPhone 15 Pro specs. Can you find t
-    23.56s  <ret> 발화 (turn6 첫 프레임)
-    23.63s  agent 발화 시작: <ret> I found the iPhone 15 Pro specs page at apple.com/ipho
-    23.75s  user  발화 끝
-    25.56s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.25s]: (tool result) Found: https://www.apple.com/iphone-15-pro/specs
-    26.71s  user  발화 시작: Really?
-    27.49s  user  발화 끝
-    29.88s  agent 발화 끝
-    29.98s  user  발화 시작: Could you read me the storage options?
-    31.87s  <ret> 발화 (turn9 첫 프레임)
-    32.26s  agent 발화 시작: <ret> The iPhone 15 Pro is available with 128GB, 256GB, 512G
-    32.43s  user  발화 끝
-    33.07s  ⚡SPAN 주입 [d'=1.20s / d_lead=10.11s]: (tool result) 128GB, 256GB, 512GB, 1TB
-    42.37s  agent 발화 끝
-    42.55s  user  발화 시작: And how much does the 256GB model cost?
-    46.45s  <ret> 발화 (turn11 첫 프레임)
-    46.61s  user  발화 끝
-    46.67s  agent 발화 시작: <ret> The 256GB iPhone 15 Pro costs $999.
-    48.45s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.91s]: (tool result) $999
-    51.58s  agent 발화 끝
-    51.66s  user  발화 시작: Okay, I think I'll order one. Can you add it to my cart?
-    55.19s  <ret> 발화 (turn13 첫 프레임)
-    55.54s  user  발화 끝
-    55.55s  agent 발화 시작: <ret> I’ve added the 256GB iPhone 15 Pro to your shopping ca
-    55.69s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.33s]: (tool result) Item added to cart.
-    60.82s  user  발화 시작: Perfect. What’s in my cart now?
-    60.88s  agent 발화 끝
-    63.31s  <ret> 발화 (turn15 첫 프레임)
-    63.35s  user  발화 끝
-    63.38s  agent 발화 시작: <ret> Your cart currently contains one iPhone 15 Pro with 25
-    65.31s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.56s]: (tool result) iPhone 15 Pro (256GB) - $999
-    68.72s  user  발화 시작: Really?
-    69.49s  user  발화 끝
-    70.73s  user  발화 시작: Alright, let's proceed to checkout.
-    70.94s  agent 발화 끝
-    72.87s  <ret> 발화 (turn18 첫 프레임)
-    73.26s  agent 발화 시작: <ret> I’ve navigated you to the checkout page.
-    73.27s  user  발화 끝
-    73.99s  ⚡SPAN 주입 [d'=1.12s / d_lead=2.58s]: (tool result) Navigated to checkout page.
-    75.83s  agent 발화 끝
-    76.17s  user  발화 시작: Could you fill in my shipping address? It’s 123 Main Street,
-    83.20s  <ret> 발화 (turn20 첫 프레임)
-    83.51s  agent 발화 시작: <ret> I’ve filled in your shipping address as 123 Main Stree
-    83.68s  user  발화 끝
-    85.20s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.67s]: (tool result) Shipping address filled.
-    90.19s  agent 발화 끝
-    91.08s  user  발화 시작: And use my saved payment method.
-    93.18s  <ret> 발화 (turn22 첫 프레임)
-    93.47s  agent 발화 시작: <ret> I’ve selected your saved payment method for this purch
-    93.61s  user  발화 끝
-    94.62s  ⚡SPAN 주입 [d'=1.44s / d_lead=3.14s]: (tool result) Saved payment method selected.
-    96.50s  user  발화 시작: Now, place the order.
-    96.62s  agent 발화 끝
-    97.58s  <ret> 발화 (turn24 첫 프레임)
-    97.87s  agent 발화 시작: <ret> Your order has been placed, and your confirmation numb
-    97.97s  user  발화 끝
-    99.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.79s]: (tool result) Order placed. Confirmation number: ABC-12345.
-   103.60s  user  발화 시작: Fantastic. Thank you!
-   103.66s  agent 발화 끝
-   105.44s  user  발화 끝
-   105.47s  agent 발화 시작: You’re very welcome. I’m glad I could help with your purchas
-   109.31s  agent 발화 끝
-   109.40s  user  발화 시작: One more thing - remind me to check the shipping status tomo
-   113.79s  <ret> 발화 (turn28 첫 프레임)
-   114.08s  agent 발화 시작: <ret> I’ve set a reminder for you to check the shipping stat
-   114.30s  user  발화 끝
-   115.79s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Reminder set for tomorrow at 2:00 PM.
-   117.92s  agent 발화 끝
+     5.10s  <ret> 발화 (turn1 첫 프레임)
+     5.18s  agent 발화 시작: <ret> Alright, I’ve set the user agent to MyCustomBrowser ve
+     5.18s  user  발화 끝
+     7.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.31s]: (tool result) User agent set to MyCustomBrowser version 10.5.
+     9.49s  agent 발화 끝
+    10.13s  user  발화 시작: Now, can you go to example.com?
+    12.72s  <ret> 발화 (turn3 첫 프레임)
+    12.95s  agent 발화 시작: <ret> I’ve opened example.com for you. Is there anything spe
+    13.08s  user  발화 끝
+    13.22s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.42s]: (tool result) Page opened: https://example.com
+    16.02s  user  발화 시작: Yeah.
+    16.38s  user  발화 끝
+    18.37s  agent 발화 끝
+    18.38s  user  발화 시작: Uh, yeah… can you find all the links on that page?
+    20.71s  <ret> 발화 (turn6 첫 프레임)
+    20.96s  user  발화 끝
+    21.03s  agent 발화 시작: <ret> I found two links on the page: https://www.iana.org/do
+    22.71s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.43s]: (tool result) Links found: https://www.iana.org/domains/example, https
+    25.87s  user  발화 시작: Yeah.
+    26.41s  user  발화 끝
+    29.46s  agent 발화 끝
+    29.68s  user  발화 시작: Hmm, interesting. What’s the title of that first link?
+    32.27s  <ret> 발화 (turn9 첫 프레임)
+    32.67s  agent 발화 시작: <ret> The title of that first link is IANA — Example Domains
+    32.88s  user  발화 끝
+    33.31s  ⚡SPAN 주입 [d'=1.04s / d_lead=6.67s]: (tool result) Page title: IANA — Example Domains
+    39.34s  agent 발화 끝
+    39.58s  user  발화 시작: Okay. And… what's the current time in London?
+    43.37s  user  발화 끝
+    43.62s  <ret> 발화 (turn11 첫 프레임)
+    43.86s  agent 발화 시작: <ret> The current time in London is two thirty-five PM. Perh
+    45.62s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) 14:35
+    48.81s  user  발화 시작: Maybe… I’m thinking of booking a flight. Could you check fli
+    48.86s  agent 발화 끝
+    54.48s  <ret> 발화 (turn13 첫 프레임)
+    54.83s  user  발화 끝
+    54.88s  agent 발화 시작: <ret> I found two flights next Friday: United at nine AM for
+    56.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.46s]: (tool result) Flights found: [{"airline": "United", "price": 680, "tim
+    64.16s  user  발화 시작: Hmm, the United flight sounds good. Can you book that one fo
+    64.34s  agent 발화 끝
+    67.54s  user  발화 끝
+    67.97s  agent 발화 시작: To book the United flight, I need your full name and date of
+    71.27s  user  발화 시작: John Smith, January first, nineteen eighty-five.
+    71.34s  agent 발화 끝
+    74.26s  <ret> 발화 (turn17 첫 프레임)
+    74.34s  agent 발화 시작: <ret> Excellent. Your United flight is booked – confirmation
+    74.50s  user  발화 끝
+    76.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.77s]: (tool result) Booking confirmed: Confirmation number is 789456.
+    78.22s  user  발화 시작: Yeah.
+    78.57s  user  발화 끝
+    81.11s  agent 발화 끝
+    81.32s  user  발화 시작: Great! Can you add a reminder to my calendar for that flight
+    85.01s  agent 발화 시작: What time would you like the reminder to be set for?
+    85.16s  user  발화 끝
+    87.87s  agent 발화 끝
+    88.67s  user  발화 시작: Two hours before the flight.
+    89.92s  <ret> 발화 (turn22 첫 프레임)
+    90.29s  user  발화 끝
+    90.32s  agent 발화 시작: <ret> I’ve added a reminder for your United flight to Paris 
+    91.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.46s]: (tool result) Reminder added: United flight to Paris, next Friday at 7
+    97.64s  user  발화 시작: That’s perfect, thanks. What’s the weather forecast for Pari
+    97.78s  agent 발화 끝
+   101.37s  <ret> 발화 (turn24 첫 프레임)
+   101.69s  agent 발화 시작: <ret> The forecast for Paris next Friday is eighteen degrees
+   101.80s  user  발화 끝
+   103.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) Forecast: 18°C, partly cloudy.
+   108.13s  agent 발화 끝
+   108.15s  user  발화 시작: Wonderful. Could you find a good Italian restaurant near the
+   111.86s  <ret> 발화 (turn26 첫 프레임)
+   112.26s  agent 발화 시작: <ret> I found Il Ristorante, an Italian restaurant with four
+   112.36s  user  발화 끝
+   113.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.04s]: (tool result) Restaurant found: "Il Ristorante", 4.5 stars, 500m from 
+   119.31s  agent 발화 끝
+   119.34s  user  발화 시작: Five hundred meters… is that walkable?
+   121.68s  <ret> 발화 (turn28 첫 프레임)
+   121.92s  agent 발화 시작: <ret> Yes, it’s an eight-minute walk from the Eiffel Tower t
+   122.16s  user  발화 끝
+   123.04s  ⚡SPAN 주입 [d'=1.36s / d_lead=4.02s]: (tool result) Walking distance: 8 minutes.
+   125.94s  agent 발화 끝
+   126.08s  user  발화 시작: Okay, that’s good to know. Thanks for your help, Lio.
+   128.72s  user  발화 끝
+   128.73s  agent 발화 시작: You’re very welcome, John. Have a wonderful trip to Paris.
+   132.24s  agent 발화 끝

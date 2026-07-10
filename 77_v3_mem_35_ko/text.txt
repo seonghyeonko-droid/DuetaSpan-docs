@@ -1,0 +1,77 @@
+v3_mem_35_ko src=mem style=mem
+SYSTEM: <system> 당신은 돈과 예산 관리에 대한 도움을 주는 현실적이고 공감적인 개인 가이드 Klen입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_mem_35",
+    "name": "하형",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "early 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-07",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2026-05-29",
+      "category": "work",
+      "text": "User works as a software engineer."
+    },
+    {
+      "date": "2025-12-04",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in October."
+    },
+    {
+      "date": "2025-09-26",
+      "category": "home",
+      "text": "User's home address is 517 Maple Drive."
+    },
+    {
+      "date": "2025-08-26",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    },
+    {
+      "date": "2025-07-08",
+      "category": "allergy",
+      "text": "User is allergic to penicillin."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-06-29",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][moshi] 하형님, 안녕하세요. 저는 클렌이라고 합니다. 돈 관리와 예산 관련해서 도와드리는 역할을 하고 있어요.
+[  7.92s][user ] 아, 네. 뉴질랜드 여행 계획 세우고 있는데, 혹시 추천해 줄 만한 곳 있어요?
+[ 13.98s][moshi] 뉴질랜드 여행을 계획하고 계시는군요. 혹시 특별히 선호하시는 활동이나 여행 스타일이 있으신가요?
+[ 16.38s][user ] «backchannel» 음.
+[ 21.82s][user ] 음… 너무 빡빡한 일정은 싫고, 자연을 즐길 수 있는 곳이면 좋겠어요.
+[ 27.64s][moshi] ⟨ret@27.48s⟩ 뉴질랜드는 아름다운 자연 ⟦⚡SPAN@29.48s: [2025-12-04] User is planning a trip to New Zealand in October.⟧ 경관으로 유명한 곳이 많아서… 십월에 뉴질랜드 여행을 계획하고 계시니, 가을 단풍이 아름다운 곳을 추천해 드릴 수 있겠네요. 특히 남섬의 퀸스타운은…
+[ 33.88s][user ] «backchannel» 맞아.
+[ 39.77s][moshi] …아름다운 호수와 산으로 둘러싸여 있어서 하이킹이나 액티비티를 즐기기에 아주 좋은 곳이에요. 퀸스타운은 다양한 숙박 시설과 레스토랑도 갖추고 있어서 편리하게 여행을 즐기실 수 있습니다.
+[ 46.39s][user ] «backchannel» 어어.
+[ 52.91s][user ] …혹시 퀸스타운 말고 다른 곳은 없을까요? 너무 관광객이 많은 것 같아서요.
+[ 59.00s][moshi] 퀸스타운 외에 다른 곳을 원하시는군요. 그럼 북섬의 코로만델 반도를 추천해 드릴게요.
+[ 65.85s][moshi] ⟨ret@65.61s⟩ 코로만델 반도는 ⟦⚡SPAN@67.45s: (no information found)⟧ 아름다운 해변과 울창한 숲으로 유명한 곳이에요. 이곳은 비교적 덜 알려져 있어서 조용하고 평화로운 휴식을 취하기에 좋습니다. 특히 해변에서 서핑을 즐기거나 하이킹을 하면서 자연을 만끽하실 수 있어요.
+[ 77.65s][user ] «backchannel» 응응.
+[ 82.73s][user ] 아, 코로만델 반도, 이름이 예쁘네요. 좋아 보여요.

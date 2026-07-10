@@ -1,0 +1,96 @@
+v3_rag_25_ko src=hotpotqa style=v2
+SYSTEM: <system> 당신은 슬픔과 변화를 겪는 사람들을 돕는 친절하고 침착한 웰니스 코치, Zura입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_25",
+    "name": "은연",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "40s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-20",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2025-10-29",
+      "category": "hobby",
+      "text": "User is into rock climbing."
+    },
+    {
+      "date": "2025-09-03",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    },
+    {
+      "date": "2025-08-06",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-19",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-02-19",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 잭 소크랑 라파엘라 레지 선수, 혹시 무슨 스포츠 하는 ⟨ret@4.03s⟩ 선수예요?
+[  4.19s][moshi] 잭 소크 선수와 ⟦⚡SPAN@6.03s: [source: Wikipedia] Jack Sock and Raffaella Reggi are tennis players.⟧ 라파엘라 레지 선수는… 테니스 선수예요.
+[  5.37s][user ] «backchannel» 네.
+[  8.10s][user ] 테니스요? 음… 솔직히 저는 그 두 분이 테니스 선수라는 걸 몰랐어요. 다른 스포츠도 하세요?
+[ 14.75s][moshi] ⟨ret@14.68s⟩ 잭 소크 선수는 ⟦⚡SPAN@16.20s: [source: ATP Tour] Jack Sock has competed in singles and doubles tennis.⟧ 싱글과 더블 테니스 경기에 모두 참가하셨어요.
+[ 18.54s][user ] 더블 테니스도 한다고요? 그럼 라파엘라 레지 선수도 더블을 치나요?
+[ 22.36s][moshi] ⟨ret@22.28s⟩ 라파엘라 레지 ⟦⚡SPAN@23.80s: [source: ITF Tennis] Raffaella Reggi has primarily competed in doubles tennis.⟧ 선수는 주로 더블 테니스에 집중하셨어요.
+[ 26.07s][user ] 주로 더블이셨군요. 그럼 두 분이 같이 테니스 경기를 한 적이 ⟨ret@30.25s⟩ 있나요?
+[ 30.65s][moshi] 잭 소크 ⟦⚡SPAN@31.69s: [source: Tennis Abstract] Jack Sock and Raffaella Reggi have not played a professional match together.⟧ 선수와 라파엘라 레지 선수는 프로 경기에서 함께 뛴 적은 없어요.
+[ 35.31s][user ] 아, 같이 친 적은 없었군요. 조금 아쉽네요. 그럼 잭 소크 선수의 최고 랭킹은 ⟨ret@40.48s⟩ 어떻게 돼요?
+[ 40.88s][moshi] 잭 ⟦⚡SPAN@42.00s: (tool result) Jack Sock's highest ATP singles ranking was world No. 8.⟧ 소크 선수의 테니스 랭킹을 알아봤는데… 최고 랭킹은 세계 팔위였어요.
+[ 46.11s][user ] 세계 팔위였군요. 대단하네요. 라파엘라 레지 선수는 랭킹이 얼마나 높았나요?
+[ 51.69s][moshi] ⟨ret@51.53s⟩ 라파엘라 레지 선수의 ⟦⚡SPAN@53.53s: (tool result) Raffaella Reggi's highest WTA doubles ranking was world No. 15.⟧ 랭킹도 확인해 봤어요… 더블에서 최고 랭킹은 세계 십오위였답니다.
+[ 56.35s][user ] «backchannel» 진짜요?
+[ 58.68s][user ] 십오위도 엄청나네요. 두 분 다 실력 있는 선수들이네요. 혹시 두 분 다 미국 ⟨ret@63.32s⟩ 선수예요?
+[ 63.56s][moshi] 잭 소크 ⟦⚡SPAN@64.68s: [source: USTA] Jack Sock is an American tennis player.⟧ 선수는 미국 테니스 선수이세요.
+[ 67.60s][user ] 잭 소크 선수는 미국 선수군요. 라파엘라 레지 선수는요? 어느 나라 ⟨ret@72.65s⟩ 선수예요?
+[ 72.89s][moshi] 라파엘라 ⟦⚡SPAN@73.69s: [source: Wikipedia] Raffaella Reggi is an Italian tennis player.⟧ 레지 선수는 이탈리아 테니스 선수세요.
+[ 74.98s][user ] «backchannel» 네.
+[ 76.29s][user ] 이탈리아 선수였군요. 그럼 두 분은 언제부터 테니스를 시작했나요?
+[ 80.84s][moshi] ⟨ret@80.77s⟩ ⟦⚡SPAN@81.27s: [source: ATP Tour] Jack Sock began playing tennis at age 7.⟧ 잭 소크 선수는 일곱 살 때부터 테니스를 시작하셨어요.
+[ 84.58s][user ] 일곱 살부터 시작했군요. 라파엘라 레지 ⟨ret@87.61s⟩ 선수는요?
+[ 87.93s][moshi] 라파엘라 레지 ⟦⚡SPAN@89.21s: [source: ITF Tennis] Raffaella Reggi began playing tennis at age 5.⟧ 선수는 다섯 살 때부터 테니스를 시작하셨어요.
+[ 90.59s][user ] «backchannel» 음.
+[ 92.41s][user ] 다섯 살이라니, 정말 어렸네요. 혹시 두 분 다 올림픽에 참가한 적이 ⟨ret@97.10s⟩ 있나요?
+[ 97.33s][moshi] 잭 소크 선수는 ⟦⚡SPAN@99.10s: [source: Olympics.com] Jack Sock won a gold medal in doubles at the 2016 Rio Olympics.⟧ 이천십육년 리우 올림픽에서 더블 금메달을 따셨어요.
+[101.96s][user ] 금메달이라니, 굉장하네요. 라파엘라 레지 선수도 올림픽에 ⟨ret@106.33s⟩ 나갔나요?
+[106.73s][moshi] 라파엘라 ⟦⚡SPAN@108.33s: [source: ITF Tennis] Raffaella Reggi competed in the 1992 Barcelona Olympics.⟧ 레지 선수는 천구백구십이년 바르셀로나 올림픽에 참가하셨어요.
+[111.43s][user ] 천구백구십이년 올림픽이군요. 오래전이네요. 두 분 다 ⟨ret@115.97s⟩ 은퇴하셨나요?
+[116.37s][moshi] 잭 소크 ⟦⚡SPAN@117.97s: [source: ATP Tour] Jack Sock retired from professional tennis in December 2023.⟧ 선수는 이천이십삼년 십이월에 프로 테니스에서 은퇴하셨어요.
+[121.78s][user ] 이천이십삼년에 은퇴하셨군요. 라파엘라 레지 ⟨ret@125.07s⟩ 선수는요?
+[125.39s][moshi] 라파엘라 ⟦⚡SPAN@126.51s: [source: WTA Tennis] Raffaella Reggi retired from professional tennis in 2008.⟧ 레지 선수는 이천팔년에 프로 테니스를 은퇴하셨답니다.
+[127.23s][user ] «backchannel» 음.
+[129.66s][user ] 두 분 모두 은퇴하셨군요. 그래도 좋은 선수들이었다는 건 확실하네요.
+[134.03s][moshi] 두 분 모두 훌륭한 선수들이셨고, 테니스 팬들에게 많은 즐거움을 주셨어요.

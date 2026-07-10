@@ -59,25 +59,25 @@
 # }
 
 
-     0.00s  agent 발화 시작: Hi Manon, I'm Thunalo. It’s lovely to connect with you today
-     3.60s  user  발화 시작: Yeah.
-     4.27s  user  발화 끝
-     4.82s  agent 발화 끝
-     4.82s  user  발화 시작: Hi Thunalo. I was thinking about that trip I’m planning… the
-    10.68s  <ret> 발화 (turn3 첫 프레임)
-    10.76s  agent 발화 시작: <ret> You're planning a trip to Kyoto in March… a wonderful 
-    10.85s  user  발화 끝
-    12.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: [2026-03-15] User is planning a trip to Kyoto in March.
-    15.38s  user  발화 시작: Mm-hmm.
-    15.87s  user  발화 끝
-    17.38s  agent 발화 끝
-    17.40s  user  발화 시작: Yes! I’m trying to finalize the dates, actually. What’s the 
-    23.52s  <ret> 발화 (turn6 첫 프레임)
-    23.59s  agent 발화 시작: <ret> Kyoto is eight hours ahead of Paris in March… that’s s
-    23.70s  user  발화 끝
-    25.36s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.95s]: (tool result) Kyoto is 8 hours ahead of Paris in March.
-    30.55s  agent 발화 끝
-    31.06s  user  발화 시작: Eight hours… that’s quite a bit. I— I mean, will that affect
-    36.99s  agent 발화 시작: Jet lag can certainly be a factor with that time difference,
-    37.03s  user  발화 끝
-    45.34s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour Manon, I’m Thunalo. It’s lovely to connect with you.
+     6.52s  user  발화 시작: Yeah.
+     7.11s  user  발화 끝
+     8.39s  agent 발화 끝
+     8.54s  user  발화 시작: Yeah, a little. I'm trying to plan my Kyoto trip, but I feel
+    14.11s  <ret> 발화 (turn3 첫 프레임)
+    14.19s  agent 발화 시작: <ret> You’re planning a trip to Kyoto in March, which is won
+    14.24s  user  발화 끝
+    16.11s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.54s]: [2026-03-15] User is planning a trip to Kyoto in March.
+    20.94s  user  발화 시작: Mm-hmm.
+    21.44s  user  발화 끝
+    23.61s  agent 발화 시작: Sometimes, a lack of clarity around practicalities can reall
+    23.74s  agent 발화 끝
+    34.18s  agent 발화 끝
+    34.55s  user  발화 시작: I remember mentioning I like climbing… is there good rock cl
+    39.06s  <ret> 발화 (turn7 첫 프레임)
+    39.22s  agent 발화 시작: <ret> There are several climbing options near Kyoto, includi
+    39.45s  user  발화 끝
+    41.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.04s]: (tool result) There are several climbing gyms and outdoor spots within
+    48.26s  agent 발화 끝
+    48.93s  user  발화 시작: That sounds…perfect, actually. Thank you.
+    51.84s  user  발화 끝

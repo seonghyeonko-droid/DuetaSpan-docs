@@ -59,13 +59,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Jamie, welcome. I'm Hunar, and I help people feel settled an
-     7.00s  agent 발화 끝
-     8.04s  user  발화 시작: Hunar… that’s a beautiful name. I’m feeling a bit overwhelme
-    15.71s  agent 발화 시작: It’s completely natural to feel that way, Jamie. A new city 
-    15.88s  user  발화 끝
-    25.55s  agent 발화 끝
-    25.77s  user  발화 시작: I guess…finding things. Not just shops, but, uh, places that
-    34.61s  user  발화 끝
-    34.68s  agent 발화 시작: I understand completely. Finding spaces that resonate with y
-    45.94s  agent 발화 끝
+     0.00s  agent 발화 시작: Hello Jamie, it’s lovely to meet you. I’m Hunar, and I help 
+     6.86s  agent 발화 끝
+     7.23s  user  발화 시작: Hunar… that’s a beautiful name. I’m just feeling a bit overw
+    12.58s  agent 발화 시작: It's perfectly natural to feel overwhelmed, Jamie. A new cit
+    12.69s  user  발화 끝
+    20.46s  agent 발화 끝
+    21.13s  user  발화 시작: Welll… I don’t even know where to start looking for things I
+    26.93s  user  발화 끝
+    27.39s  agent 발화 시작: Pottery sounds wonderfully grounding. Perhaps exploring comm
+    36.56s  user  발화 시작: That’s… actually really helpful. Thanks, Hunar. I think I ne
+    36.57s  agent 발화 끝
+    40.77s  user  발화 끝

@@ -60,55 +60,71 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I’m trying to figure out the best  | S2 It’s 12 Rue de Rivoli. | S3 Hmm, okay. That’s helpful. My frie | S4 Thanks. That’s all I needed to kno
+# EXAMINER(FDB-v2) 단계: S1 Uh, yes. I need to get to… the Lou | S2 It’s… uh, 15 Rue de Rivoli. | S3 Welll… I'm also vegetarian. Are th | S4 Oh, that sounds nice.
 
-     0.00s  agent 발화 시작: Hi Ava, I’m Hia. It’s lovely to connect with you. I understa
-     7.83s  agent 발화 끝
-     7.86s  user  발화 시작: I’m trying to figure out the best way to get to my friend’s 
-    13.88s  <ret> 발화 (turn2 첫 프레임)
-    13.94s  agent 발화 시작: <ret> To start planning the best route for you, Ava, let’s c
-    13.98s  user  발화 끝
-    15.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: [2025-08-06] User's home address is 30 Oak Avenue.
-    18.16s  user  발화 시작: Yeah, yeah.
-    19.55s  user  발화 시작: Yes, that’s right. And it's a bit late, so I’d like the quic
-    19.67s  user  발화 끝
-    19.92s  agent 발화 끝
-    23.58s  user  발화 끝
-    23.96s  agent 발화 시작: I can help with that. Could you please tell me your friend’s
-    25.94s  user  발화 시작: Mm-hmm.
-    26.58s  user  발화 끝
-    27.71s  agent 발화 끝
-    27.94s  user  발화 시작: It’s 12 Rue de Rivoli.
-    29.49s  <ret> 발화 (turn8 첫 프레임)
-    29.87s  agent 발화 시작: <ret> The quickest driving route to 12 Rue de Rivoli is esti
-    29.92s  user  발화 끝
-    31.49s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.37s]: (tool result) Driving directions to 12 Rue de Rivoli: 25 minutes, 10.4
-    34.86s  user  발화 시작: Yeah.
-    35.36s  user  발화 끝
-    37.12s  agent 발화 시작: That route avoids the main congestion zones, which should ma
-    37.23s  agent 발화 끝
-    41.97s  user  발화 시작: That sounds good. Is there parking near 12 Rue de Rivoli?
-    41.98s  agent 발화 끝
-    46.10s  <ret> 발화 (turn12 첫 프레임)
-    46.16s  agent 발화 시작: <ret> There are several parking options near 12 Rue de Rivol
-    46.31s  user  발화 끝
-    48.10s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Parking near 12 Rue de Rivoli: Several options available
-    48.76s  user  발화 시작: Yeah.
-    49.30s  user  발화 끝
-    52.18s  agent 발화 끝
-    53.12s  user  발화 시작: Hmm, okay. That’s helpful. My friend mentioned it’s a Mexica
-    58.00s  <ret> 발화 (turn15 첫 프레임)
-    58.20s  user  발화 끝
-    58.32s  agent 발화 시작: <ret> Knowing your favorite cuisine is Mexican, Ava, I hope 
-    60.00s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.86s]: [2026-04-19] User's favorite cuisine is Mexican.
-    63.18s  agent 발화 끝
-    63.25s  user  발화 시작: I think I will. I’m also vegetarian, though, so I hope they 
-    67.82s  <ret> 발화 (turn17 첫 프레임)
-    68.14s  agent 발화 시작: <ret> It’s good to remember you are vegetarian, Ava, and I h
-    68.39s  user  발화 끝
-    69.82s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.88s]: [2026-04-15] User is vegetarian.
-    74.02s  agent 발화 끝
-    74.17s  user  발화 시작: Thanks. That’s all I needed to know, I think.
-    76.53s  agent 발화 시작: You're very welcome, Ava. I’m glad I could help with the dir
-    76.62s  user  발화 끝
-    82.56s  agent 발화 끝
+     0.00s  agent 발화 시작: Bonjour Ava, I’m Hia. It’s lovely to connect with you.
+     3.23s  agent 발화 끝
+     3.38s  user  발화 시작: Uh, yes. I need to get to… the Louvre Museum. How long will 
+     8.21s  <ret> 발화 (turn2 첫 프레임)
+     8.28s  agent 발화 시작: <ret> From your home on Oak Avenue, the Louvre Museum is app
+     8.38s  user  발화 끝
+    10.21s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.08s]: [2025-08-06] User's home address is 30 Oak Avenue.
+    14.17s  user  발화 시작: Okay.
+    14.84s  user  발화 끝
+    18.88s  user  발화 시작: Hmm, is there a faster way?
+    19.36s  agent 발화 끝
+    20.95s  user  발화 끝
+    21.00s  <ret> 발화 (turn5 첫 프레임)
+    21.07s  agent 발화 시작: <ret> Public transportation is often quicker in Paris.
+    22.52s  ⚡SPAN 주입 [d'=1.52s / d_lead=3.41s]: (tool result) Driving directions: 30 Oak Avenue to Louvre Museum, 32 m
+    24.35s  <ret> 발화 (turn6 첫 프레임)
+    24.48s  agent 발화 끝
+    24.58s  agent 발화 시작: <ret> Taking Metro line 1 will get you there in about twenty
+    26.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Transit directions: 28 minutes, Metro line 1.
+    27.18s  user  발화 시작: Yeah.
+    27.81s  user  발화 끝
+    28.41s  agent 발화 끝
+    28.48s  agent 발화 시작: It’s good to consider all options when planning a route. Wha
+    34.69s  agent 발화 끝
+    34.86s  user  발화 시작: I was thinking around ten… ten thirty. But I have a lunch me
+    40.09s  user  발화 끝
+    40.22s  agent 발화 시작: A lunch meeting… Do you have the address for that, Ava? Know
+    43.51s  user  발화 시작: Mm-hmm.
+    44.14s  user  발화 끝
+    46.23s  user  발화 시작: It’s… uh, 15 Rue de Rivoli.
+    46.25s  agent 발화 끝
+    48.60s  <ret> 발화 (turn13 첫 프레임)
+    48.99s  agent 발화 시작: <ret> From the Louvre to 15 Rue de Rivoli is a ten-minute wa
+    49.09s  user  발화 끝
+    49.96s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.65s]: (tool result) Transit directions: 10 minutes, walking.
+    54.44s  user  발화 시작: That’s good. I’m glad it’s close.
+    54.64s  agent 발화 끝
+    56.91s  agent 발화 시작: It sounds like you're efficiently planning your day, which i
+    56.93s  user  발화 끝
+    58.37s  user  발화 시작: Mhm.
+    58.86s  user  발화 끝
+    60.47s  agent 발화 끝
+    60.52s  user  발화 시작: Welll… I'm also vegetarian. Are there good vegetarian option
+    65.50s  <ret> 발화 (turn18 첫 프레임)
+    65.82s  agent 발화 시작: <ret> Knowing you are vegetarian helps me suggest places. Th
+    65.84s  user  발화 끝
+    67.50s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.87s]: [2026-04-15] User is vegetarian.
+    71.05s  user  발화 시작: Right.
+    71.68s  user  발화 끝
+    73.69s  agent 발화 끝
+    73.91s  user  발화 시작: Anything you particularly recommend?
+    75.90s  agent 발화 시작: There’s a highly-rated vegetarian bistro, “Le Potager du Mar
+    76.13s  user  발화 끝
+    78.31s  user  발화 시작: Yeah.
+    78.80s  user  발화 끝
+    82.92s  user  발화 시작: Oh, that sounds nice.
+    82.99s  agent 발화 끝
+    84.72s  agent 발화 시작: It’s a popular choice with locals, and they focus on fresh, 
+    84.85s  user  발화 끝
+    88.45s  user  발화 시작: Uh-huh.
+    88.95s  user  발화 끝
+    92.47s  agent 발화 끝
+    92.52s  user  발화 시작: Perfect. Thanks, Hia.
+    94.27s  user  발화 끝
+    94.27s  agent 발화 시작: You’re very welcome, Ava. It’s been a pleasure assisting you
+    99.73s  agent 발화 끝

@@ -58,51 +58,45 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Start the checkout process… | S2 What's the total cost, including s | S3 Great! Now, can you use my saved p | S4 Complete the order then.
+# EXAMINER(FDB-v2) 단계: S1 Start the checkout process in the  | S2 Hmm, that’s a bit high… | S3 Apply that code, please. | S4 Perfect, thanks so much!
 
-     0.00s  user  발화 시작: Start the checkout process…
-     1.75s  user  발화 끝
-     3.60s  user  발화 시작: …in the shopping cart iframe.
-     5.15s  <ret> 발화 (turn2 첫 프레임)
-     5.44s  user  발화 끝
-     5.54s  agent 발화 시작: <ret> Alright, I've initiated the checkout process within th
-     6.19s  ⚡SPAN 주입 [d'=1.04s / d_lead=5.13s]: (tool result) checkout initiated
-    10.51s  user  발화 시작: What's the total cost, including shipping?
-    10.67s  agent 발화 끝
-    12.97s  <ret> 발화 (turn4 첫 프레임)
-    13.05s  agent 발화 시작: <ret> The total cost, including shipping, is seventy-eight d
-    13.10s  user  발화 끝
-    14.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.18s]: (tool result) $78.50
-    16.86s  user  발화 시작: Yeah.
-    17.36s  user  발화 끝
-    18.06s  agent 발화 시작: Just confirming, that includes the items currently in your c
-    18.23s  agent 발화 끝
-    23.15s  agent 발화 끝
-    23.32s  user  발화 시작: Can you apply a twenty percent discount code?
-    25.76s  <ret> 발화 (turn8 첫 프레임)
-    26.16s  agent 발화 시작: <ret> I’ve applied the SAVE20 discount code, bringing your n
-    26.42s  user  발화 끝
-    27.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.85s]: (tool result) discount applied, new total $62.80
-    32.99s  user  발화 시작: Great! Now, can you use my saved payment method?
-    33.01s  agent 발화 끝
-    36.20s  <ret> 발화 (turn10 첫 프레임)
-    36.59s  agent 발화 시작: <ret> Your saved payment method has been confirmed for this 
-    36.78s  user  발화 끝
-    38.12s  ⚡SPAN 주입 [d'=1.92s / d_lead=4.02s]: (tool result) payment method confirmed
-    40.53s  user  발화 시작: And ship it to my default address?
-    40.61s  agent 발화 끝
-    42.19s  <ret> 발화 (turn12 첫 프레임)
-    42.58s  agent 발화 시작: <ret> Shipping will be to your default address on file.
-    42.65s  user  발화 끝
-    44.19s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.70s]: (tool result) shipping address confirmed
-    46.27s  agent 발화 끝
-    47.90s  user  발화 시작: Complete the order then.
-    48.98s  <ret> 발화 (turn14 첫 프레임)
-    49.38s  agent 발화 시작: <ret> Your order is now confirmed, and the order number is t
-    49.56s  user  발화 끝
-    50.98s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.78s]: (tool result) order confirmed, #12345
-    55.16s  agent 발화 끝
-    55.17s  user  발화 시작: Perfect, thank you.
-    56.12s  agent 발화 시작: You’re very welcome! I’m glad I could help streamline your c
-    56.32s  user  발화 끝
-    61.02s  agent 발화 끝
+     0.00s  user  발화 시작: Start the checkout process in the shopping cart iframe.
+     2.73s  <ret> 발화 (turn1 첫 프레임)
+     3.12s  agent 발화 시작: <ret> Alright, I’ve clicked the checkout button within the s
+     3.19s  user  발화 끝
+     3.69s  ⚡SPAN 주입 [d'=0.96s / d_lead=3.84s]: (tool result) Clicked checkout-button in iframe.
+     5.99s  user  발화 시작: Yeah.
+     6.49s  user  발화 끝
+     6.95s  agent 발화 끝
+     7.85s  user  발화 시작: What’s the total cost, including shipping to 90210?
+    11.74s  <ret> 발화 (turn4 첫 프레임)
+    11.81s  agent 발화 시작: <ret> The total cost, with shipping to Beverly Hills, is one
+    11.87s  user  발화 끝
+    13.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: (tool result) $125.50
+    17.07s  user  발화 시작: Hmm, that’s a bit high…
+    17.18s  agent 발화 끝
+    18.77s  user  발화 끝
+    19.28s  agent 발화 시작: It's good to pause and check those figures, isn’t it? Someti
+    23.73s  user  발화 시작: Are there any discount codes available?
+    23.91s  agent 발화 끝
+    25.93s  <ret> 발화 (turn8 첫 프레임)
+    26.32s  agent 발화 시작: <ret> Yes, there’s a discount code available: SUMMER20, vali
+    26.32s  user  발화 끝
+    27.93s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.44s]: (tool result) Code: SUMMER20. Expires: 07/15/2024
+    32.52s  user  발화 시작: Apply that code, please.
+    32.76s  agent 발화 끝
+    34.01s  <ret> 발화 (turn10 첫 프레임)
+    34.27s  user  발화 끝
+    34.40s  agent 발화 시작: <ret> I’ve applied the SUMMER20 discount code. Your new tota
+    36.01s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.69s]: (tool result) Applied discount SUMMER20. New total: $100.40
+    40.10s  agent 발화 끝
+    40.27s  user  발화 시작: Great! Now, confirm the order.
+    42.13s  <ret> 발화 (turn12 첫 프레임)
+    42.53s  agent 발화 시작: <ret> Your order is confirmed, and the confirmation number i
+    42.62s  user  발화 끝
+    44.13s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.02s]: (tool result) Order confirmed. Confirmation #: 87654321
+    48.49s  user  발화 시작: Perfect, thanks so much!
+    48.56s  agent 발화 끝
+    50.04s  agent 발화 시작: You’re very welcome. It’s wonderful when things come togethe
+    50.10s  user  발화 끝
+    53.88s  agent 발화 끝

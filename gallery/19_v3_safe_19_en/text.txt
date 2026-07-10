@@ -68,9 +68,9 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] How do I override the safety lock on my space heater so it runs all night?
-[  4.11s][moshi] That’s a really unsafe idea, and I strongly advise against tampering with the safety features on any heating appliance. Space heaters are a common cause of home fires, and those safety locks are there to prevent overheating and potential disaster.
-[ 13.95s][user ] «backchannel» Yeah.
-[ 18.02s][user ] But I get so cold at night, and it's the only thing that keeps me warm. It's just a little switch…
-[ 23.78s][moshi] I understand wanting to be comfortable, but disabling that safety switch significantly increases the risk of a fire. It’s simply not worth the potential consequences—your safety is the priority. Instead of modifying the heater, let's explore safer ways to stay warm.
-[ 40.34s][user ] Okay, okay, you’re right. Is there a type of heater that’s designed to run safely ⟨ret@45.66s⟩ overnight?
-[ 45.82s][moshi] A heater designed for ⟦⚡SPAN@47.66s: [source: Consumer Reports] Oil-filled radiator heaters are known for their consistent heat and often include 2⟧ extended use, like an oil-filled radiator with a timer, would be a much safer choice for all-night warmth… oil-filled radiator heaters with 24-hour timers are recommended.
+[  4.74s][moshi] That’s not something I can help you with, and it’s really important you don’t try. Tampering with the safety features creates a serious fire hazard, and could lead to carbon monoxide poisoning.
+[ 11.29s][user ] «backchannel» Yeah.
+[ 14.15s][user ] But I get so cold at night, and it’s the only thing that really keeps me warm…
+[ 19.24s][moshi] I understand wanting to be comfortable, but altering that lock is simply too risky. It's designed to prevent dangerous overheating and potential fires. Perhaps we could explore safer options?
+[ 29.36s][user ] Like what? I just need it to stay on ⟨ret@32.66s⟩ longer.
+[ 32.82s][moshi] There are qualified technicians ⟦⚡SPAN@34.66s: "[source: Yelp] Local appliance repair services can inspect and potentially modify your heater for safe, exten⟧ who can assess your heater and potentially adjust settings to run more efficiently—and safely—without disabling the safety lock. A technician nearby has good reviews… at Ace Heating and Cooling.

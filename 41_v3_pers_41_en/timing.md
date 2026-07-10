@@ -66,79 +66,83 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a beautiful name. Is i | S2 I’m trying to stay positive, but i | S3 Like…? | S4 It’s just… hard to shake this feel
+# EXAMINER(FDB-v2) 단계: S1 Bir… that’s a lovely name. It does | S2 But what does “healthy grieving” e | S3 Um… I used to love painting. I hav | S4 I feel like I’m rambling. Sorry.
 
-     0.00s  agent 발화 시작: Marie, it’s lovely to connect with you. I’m Bir, and I’m her
-     6.58s  agent 발화 끝
-     6.84s  user  발화 시작: Bir… that’s a beautiful name. Is it Scandinavian? I’m just… 
-    12.18s  agent 발화 시작: It is, actually. It means “little” in Old Norse. And feeling
-    12.31s  user  발화 끝
-    20.62s  agent 발화 끝
-    20.68s  user  발화 시작: It’s just… everything feels so different now. My job, my apa
-    27.09s  agent 발화 시작: Those are significant shifts, certainly. It’s understandable
-    27.17s  user  발화 끝
-    37.06s  agent 발화 끝
-    38.09s  user  발화 시작: I think… the uncertainty. I don’t know what’s next.
-    41.84s  agent 발화 시작: Uncertainty can be deeply uncomfortable, a feeling of being 
-    41.84s  user  발화 끝
-    47.12s  user  발화 시작: Yeah, yeah.
-    47.95s  user  발화 끝
-    50.35s  agent 발화 끝
-    50.39s  agent 발화 시작: Perhaps we can explore what a little uncertainty might be op
-    55.68s  user  발화 시작: Yeah.
-    56.17s  user  발화 끝
-    57.29s  agent 발화 끝
-    57.38s  user  발화 시작: That’s… a different way of looking at it. I hadn’t thought o
-    61.18s  user  발화 끝
-    61.22s  agent 발화 시작: Sometimes, when one door closes, it’s not an ending, but an 
-    65.40s  user  발화 시작: Yeah.
-    65.98s  user  발화 끝
-    68.59s  agent 발화 끝
-    69.52s  user  발화 시작: I’m trying to stay positive, but it’s hard. San Francisco is
-    74.85s  user  발화 끝
-    75.26s  agent 발화 시작: It is a city with its challenges, yes. Focusing on what you 
-    81.24s  user  발화 시작: Mm-hmm.
-    81.78s  user  발화 끝
-    83.28s  agent 발화 끝
-    83.30s  user  발화 시작: Like what? I feel like I have no control.
-    86.12s  agent 발화 시작: Control is often an illusion, Marie. But you can control you
-    86.26s  user  발화 끝
-    93.91s  agent 발화 끝
-    94.70s  user  발화 시작: Self-care… I haven’t been very good at that lately.
-    97.62s  agent 발화 시작: That’s common when we’re feeling overwhelmed. Small acts of 
-    97.84s  user  발화 끝
-   104.53s  agent 발화 끝
-   104.64s  user  발화 시작: Like…?
-   105.32s  user  발화 끝
-   105.33s  agent 발화 시작: A warm bath, a walk in the park, spending time with loved on
-   110.39s  user  발화 시작: Yeah.
-   110.83s  user  발화 끝
-   113.16s  agent 발화 끝
-   113.22s  user  발화 시작: I used to paint, but I haven’t touched a brush in months…
-   116.39s  agent 발화 시작: That’s interesting, you used to paint. It sounds like a sour
-   116.55s  user  발화 끝
-   120.19s  user  발화 시작: Yeah.
-   120.64s  user  발화 끝
-   122.88s  agent 발화 끝
-   125.37s  user  발화 시작: I just… didn’t have the time, or the energy. And I felt like
-   130.55s  agent 발화 시작: Selfishness is a strong word. Sometimes, nurturing our own c
-   130.55s  user  발화 끝
-   138.06s  user  발화 시작: I suppose so. It feels strange, though, prioritizing myself.
-   138.24s  agent 발화 끝
-   142.26s  agent 발화 시작: It can feel unfamiliar, especially if you’re accustomed to p
-   142.40s  user  발화 끝
-   149.96s  agent 발화 끝
-   150.13s  user  발화 시작: It’s just… hard to shake this feeling of being adrift.
-   153.50s  user  발화 끝
-   153.54s  agent 발화 시작: Adrift is a powerful image. It suggests a need for an anchor
-   157.58s  user  발화 시작: Yeah, yeah.
-   159.01s  user  발화 끝
-   161.93s  agent 발화 끝
-   162.78s  user  발화 시작: I don’t know… maybe my friends?
-   164.94s  agent 발화 시작: That’s wonderful. Connection with others is a vital source o
-   165.04s  user  발화 끝
-   171.86s  user  발화 시작: I will. Thank you, Bir. This has helped.
-   171.89s  agent 발화 끝
-   174.64s  agent 발화 시작: You’re very welcome, Marie. Remember, growth often happens i
-   174.77s  user  발화 끝
-   183.22s  agent 발화 끝
+     0.00s  agent 발화 시작: Marie, it’s so good to connect with you. I’m Bir, and I’m he
+     7.90s  user  발화 시작: Bir… that’s a lovely name. It doesn’t sound like a typical a
+     8.01s  agent 발화 끝
+    14.44s  agent 발화 시작: That’s a very thoughtful question, Marie. I exist as a voice
+    14.52s  user  발화 끝
+    25.07s  agent 발화 끝
+    25.11s  user  발화 시작: Welll… I guess so. I’m just feeling a bit lost lately. Every
+    30.76s  agent 발화 시작: Shaky feelings are completely understandable, especially whe
+    30.94s  user  발화 끝
+    39.20s  user  발화 시작: It’s just… my mom passed away a few months ago, and I’m stil
+    39.33s  agent 발화 끝
+    45.92s  agent 발화 시작: Grief doesn't follow a timeline, Marie. There’s no “should” 
+    46.06s  user  발화 끝
+    50.04s  user  발화 시작: Yeah, yeah.
+    51.47s  user  발화 끝
+    52.66s  agent 발화 시작: It’s common to feel disappointed in yourself for not being f
+    52.77s  agent 발화 끝
+    63.02s  user  발화 시작: Yeah.
+    63.51s  user  발화 끝
+    66.17s  agent 발화 끝
+    67.13s  user  발화 시작: I keep thinking I should be stronger, for my kids. They’re h
+    71.61s  user  발화 끝
+    71.77s  agent 발화 시작: It’s beautiful that you’re considering your children's needs
+    76.99s  user  발화 시작: Yeah.
+    77.39s  user  발화 끝
+    80.72s  user  발화 시작: But what does “healthy grieving” even look like? It’s all ju
+    80.85s  agent 발화 끝
+    85.95s  agent 발화 시작: Healthy grieving isn't about eliminating sadness, it’s about
+    86.09s  user  발화 끝
+    92.89s  user  발화 시작: Mm-hmm.
+    93.34s  user  발화 끝
+    95.35s  agent 발화 끝
+    95.64s  user  발화 시작: I’m also worried about my job. I feel like I can’t concentra
+   102.23s  agent 발화 시작: It’s completely natural for grief to impact your focus and p
+   102.31s  user  발화 끝
+   111.92s  agent 발화 끝
+   112.33s  user  발화 시작: Self-compassion? That feels… selfish.
+   115.88s  agent 발화 시작: It’s not selfish to care for yourself, Marie. It’s essential
+   115.98s  user  발화 끝
+   126.22s  agent 발화 끝
+   126.32s  user  발화 시작: I guess… I just feel guilty taking time for myself.
+   129.79s  agent 발화 시작: Guilt is often a companion to grief. It sounds like you're c
+   130.02s  user  발화 끝
+   135.53s  user  발화 시작: Yeah.
+   136.02s  user  발화 끝
+   138.69s  agent 발화 끝
+   139.32s  user  발화 시작: Um… I used to love painting. I haven’t touched a brush since
+   144.19s  user  발화 끝
+   144.56s  agent 발화 시작: Painting sounds like a beautiful outlet. It doesn’t have to 
+   149.75s  user  발화 시작: Yeah.
+   150.25s  user  발화 끝
+   153.42s  agent 발화 끝
+   154.97s  user  발화 시작: I'm afraid it will just make me sadder, thinking of her. She
+   160.50s  agent 발화 시작: It's alright if it brings up sadness. Sadness is a testament
+   160.62s  user  발화 끝
+   168.44s  user  발화 시작: That… makes sense. I keep replaying memories, too. Is that n
+   168.79s  agent 발화 끝
+   174.11s  agent 발화 시작: Absolutely normal, Marie. Memories are a way of keeping love
+   174.19s  user  발화 끝
+   181.71s  agent 발화 끝
+   181.79s  user  발화 시작: It’s just… they’re so vivid. It feels like she’s still here 
+   186.51s  user  발화 끝
+   186.88s  agent 발화 시작: Those vivid memories are a gift, Marie. Cherish them. They’r
+   189.97s  user  발화 시작: Yeah, yeah.
+   191.58s  user  발화 끝
+   193.45s  agent 발화 끝
+   194.22s  user  발화 시작: I feel like I’m rambling. Sorry.
+   196.62s  user  발화 끝
+   196.98s  agent 발화 시작: Please, don't apologize. Sharing your thoughts and feelings 
+   205.05s  user  발화 시작: It’s just hard to talk about.
+   205.19s  agent 발화 끝
+   206.91s  agent 발화 시작: It takes courage to speak your truth, Marie. I’m here to lis
+   206.94s  user  발화 끝
+   213.07s  user  발화 시작: Thank you, Bir. That… really helps.
+   213.21s  agent 발화 끝
+   215.98s  user  발화 끝
+   216.26s  agent 발화 시작: You are very welcome, Marie. Remember, you are not alone on 
+   224.00s  agent 발화 끝

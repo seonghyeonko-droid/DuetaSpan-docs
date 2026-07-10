@@ -1,0 +1,110 @@
+v3_chain_05_ko src=mcp style=mcp_chained
+SYSTEM: <system> 당신은 수면과 휴식을 돕는 차분하고 공감적인 개인 가이드, Dar입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_chain_05",
+    "name": "유우",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-03-27",
+      "category": "seat",
+      "text": "User prefers a window seat when traveling."
+    },
+    {
+      "date": "2026-01-29",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    },
+    {
+      "date": "2025-06-16",
+      "category": "trip",
+      "text": "User is planning a trip to Iceland in October."
+    },
+    {
+      "date": "2025-06-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-04-07",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-05",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] Zuni Cafe 가격대는 어떻게 ⟨ret@1.76s⟩ 돼요?
+[  2.07s][moshi] Zuni Cafe의 가격대는… ⟦⚡SPAN@3.76s: (tool result) "$$$"⟧ 상당히 높은 편이에요. 달러로 세 개 정도의 표시가 되어 있네요.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJ-V4wKqXWj4ARjKkX-J-bW5g"}}
+[  4.19s][user ] «backchannel» 네네.
+[  8.12s][user ] 아, 비싸군요. 그럼 비슷한 분위기인데 좀 더 저렴한 곳은 ⟨ret@12.60s⟩ 없을까요?
+[ 12.91s][moshi] 비슷한 분위기에 ⟦⚡SPAN@14.60s: (tool result) "Foreign Cinema ($$) - Mediterranean, Californian, Moroccan…", "Park Tavern ($$) - American, Gas⟧ 좀 더 저렴한 곳으로는 Foreign Cinema, Park Tavern, 그리고 Nopa가 있어요. 가격대는 두 개의 달러 표시네요.
+      CALL: {"function": "maps_search", "arguments": {"query": "San Francisco cafe similar to Zuni Cafe cheaper", "radius": "5000"}}
+[ 23.00s][user ] Foreign Cinema가 제일 끌리는데요, 거기는 예약이 가능한가요? ⟨ret@26.43s⟩
+[ 26.66s][moshi] Foreign Cinema는 ⟦⚡SPAN@28.43s: (tool result) "Available at 19:00, 19:15, 19:30"⟧ 오늘 저녁 일곱시, 일곱시 십오분, 일곱시 삼십분에 예약이 가능합니다.
+      CALL: {"function": "maps_restaurant_availability", "arguments": {"restaurant_id": "ChIJ4b9kXvXWj4AR_r2JzUv35pA", "date": "today", "time": "19:00"}}
+[ 29.04s][user ] «backchannel» 네.
+[ 33.43s][user ] 그럼 일곱시 십오분으로 예약해 주세요. ⟨ret@35.95s⟩
+[ 36.27s][moshi] Foreign Cinema에 오늘 ⟦⚡SPAN@37.95s: (tool result) "Reservation confirmed for 2 people at 19:15 today. Confirmation number: 82749."⟧ 저녁 일곱시 십오분에 두 명으로 예약이 완료되었습니다. 확인 번호는 팔 이 칠 사 구번입니다.
+      CALL: {"function": "maps_reserve_table", "arguments": {"restaurant_id": "ChIJ4b9kXvXWj4AR_r2JzUv35pA", "date": "today", "time": "19:15", "party_size": "2"}}
+[ 41.41s][user ] «backchannel» 정말요?
+[ 44.15s][user ] 팔 이 칠 사 구번이요, 알겠습니다.
+[ 47.30s][moshi] 예약 확인 문자 메시지를 보내드릴까요? 전화번호를 알려주시면 됩니다.
+[ 49.97s][user ] «backchannel» 네.
+[ 53.34s][user ] 아, 잠깐만요—
+[ 54.71s][user ] …혹시 Foreign Cinema 근처에 주차는 어떻게 해야 ⟨ret@57.51s⟩ 하나요?
+[ 57.83s][moshi] Foreign Cinema ⟦⚡SPAN@59.51s: (tool result) "Metered street parking available. Public garage at 2524 Mission St ($6/hr)."⟧ 주변에는 미터 주차장이 있고, 이천오백이십사 Mission St에 공영 주차장도 있습니다. 시간당 육달러예요.
+      CALL: {"function": "maps_parking", "arguments": {"latitude": "37.7664", "longitude": "-122.4219", "radius": "800"}}
+[ 66.29s][user ] 공영 주차장이 더 편하겠네요.
+[ 68.90s][moshi] 네, 공영 주차장이 좀 더 편리할 수 있겠어요. 주차 공간 확보에 대한 걱정을 덜 수 있겠죠.
+[ 75.51s][user ] Foreign Cinema까지 가는 가장 빠른 길은 어떻게 되나요? 지금 출발하면 얼마나 ⟨ret@80.88s⟩ 걸릴까요?
+[ 81.27s][moshi] 지금 출발하시면 ⟦⚡SPAN@82.88s: (tool result) "Estimated travel time: 18 minutes. Distance: 6.2 miles. Route: via I-280 N."⟧ 십팔분 정도 걸리고, 육 점 이마일 거리입니다. I-이백팔십 N을 이용하는 경로로 안내해 드릴게요.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "current location", "destination": "Foreign Cinema", "mode": "driving"}}
+[ 89.27s][user ] I-이백팔십 N으로 가요. 내비게이션 시작해 주세요. ⟨ret@93.09s⟩
+[ 93.33s][moshi] Foreign Cinema로 ⟦⚡SPAN@95.09s: (tool result) "Navigation started to Foreign Cinema."⟧ 가는 내비게이션을 시작했습니다. 안전 운전하세요.
+      CALL: {"function": "maps_start_navigation", "arguments": {"destination": "Foreign Cinema"}}
+[ 98.64s][user ] 감사합니다.
+[ 99.95s][moshi] 천만에요. 즐거운 저녁 식사 되세요.
+[103.48s][user ] 식사 후에 근처에 좋은 바가 있을까요?
+[106.44s][moshi] ⟨ret@106.29s⟩ 식사 후에 방문하기 ⟦⚡SPAN@108.29s: (tool result) "El Rio ($) - Dive bar, Latin music…", "The Chapel ($$) - Live music venue…", "Zeitgeist ($) - B⟧ 좋은 바로는 El Rio, The Chapel, 그리고 Zeitgeist가 있습니다. 가격대는 다양해요.
+      CALL: {"function": "maps_search", "arguments": {"query": "bars near Foreign Cinema", "radius": "1000"}}
+[110.48s][user ] «backchannel» 네.
+[114.04s][user ] Zeitgeist가 분위기가 좋아 보이네요.
+[116.75s][moshi] Zeitgeist는 맥주 정원으로 유명하고, 활기찬 분위기를 자랑합니다.
+[119.06s][user ] «backchannel» 그렇죠.
+[121.47s][user ] Zeitgeist까지 가는 길은 어떻게 되나요? ⟨ret@124.28s⟩
+[124.50s][moshi] Zeitgeist까지는 칠분 ⟦⚡SPAN@126.28s: (tool result) "Estimated travel time: 7 minutes. Distance: 1.5 miles. Route: via Mission St."⟧ 정도 걸리고, 일 점 오마일 거리입니다. Mission St를 이용하는 경로입니다.
+      CALL: {"function": "maps_directions", "arguments": {"origin": "Foreign Cinema", "destination": "Zeitgeist"}}
+[131.25s][user ] 알겠습니다.
+[132.44s][moshi] 혹시 Zeitgeist의 영업시간을 알아드릴까요?
+[135.51s][user ] 네, ⟨ret@136.33s⟩ 알려주세요.
+[136.72s][moshi] Zeitgeist는 ⟦⚡SPAN@137.85s: (tool result) "Open until 2:00 AM"⟧ 새벽 두시까지 영업합니다. 늦은 시간까지 즐기실 수 있겠네요.
+      CALL: {"function": "maps_place_details", "arguments": {"place_id": "ChIJt4XjXvXWj4ARV34-32p6lXQ"}}
+[142.75s][user ] 늦게까지 하네요. 정말 좋네요.
+[145.24s][moshi] 네, 늦게까지 운영해서 여유롭게 시간을 보내실 수 있을 거예요.

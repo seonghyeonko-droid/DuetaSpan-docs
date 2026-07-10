@@ -68,24 +68,37 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 Book three rooms at Ocean View Hot | S2 …San Diego during that time? | S3 Are there any good seafood restaur | S4 Please do, for 7 PM on the tenth.
 
      0.00s  user  발화 시작: Book three rooms at Ocean View Hotel in San Diego for seven 
-     5.03s  <ret> 발화 (turn1 첫 프레임)
-     5.27s  agent 발화 시작: <ret> I’ve confirmed your reservation at the Ocean View Hote
-     5.28s  user  발화 끝
-     7.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.21s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego, 3 ro
-     8.62s  user  발화 시작: …Does that include breakfast?
-     9.48s  agent 발화 끝
-    10.33s  <ret> 발화 (turn3 첫 프레임)
-    10.49s  agent 발화 시작: <ret> The Ocean View Hotel does include a complimentary cont
-    10.56s  user  발화 끝
-    12.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.87s]: (tool result) Ocean View Hotel, San Diego: complimentary continental b
-    13.79s  user  발화 시작: Mm-hmm.
-    14.28s  user  발화 끝
-    15.18s  user  발화 시작: Perfect. And can you set a reminder to check out on February
-    15.35s  agent 발화 끝
-    19.61s  <ret> 발화 (turn6 첫 프레임)
-    19.85s  agent 발화 시작: <ret> I’ve set a reminder for February seventeenth to check 
-    20.00s  user  발화 끝
-    21.61s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.02s]: (tool result) Reminder set for February seventeenth: Check out of Ocea
-    23.88s  agent 발화 끝
+     5.33s  <ret> 발화 (turn1 첫 프레임)
+     5.42s  user  발화 끝
+     5.57s  agent 발화 시작: <ret> I’ve reserved three rooms for you at the Ocean View Ho
+     7.33s  ⚡SPAN 주입 [d'=2.00s / d_lead=14.33s]: (tool result) Reservation confirmed: Ocean View Hotel, San Diego. Thre
+    13.85s  user  발화 시작: Right.
+    14.34s  user  발화 끝
+    19.90s  agent 발화 끝
+    19.95s  user  발화 시작: What's the weather forecast for…
+    21.69s  user  발화 끝
+    23.28s  user  발화 시작: …San Diego during that time?
+    24.76s  <ret> 발화 (turn5 첫 프레임)
+    24.92s  agent 발화 시작: <ret> The forecast for San Diego from February tenth to seve
+    25.03s  user  발화 끝
+    26.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=13.78s]: (tool result) San Diego, February 10th-17th: Sunny, highs 68-72°F, low
+    38.70s  agent 발화 끝
+    39.09s  user  발화 시작: Are there any good seafood restaurants near the hotel?
+    41.86s  <ret> 발화 (turn7 첫 프레임)
+    42.05s  user  발화 끝
+    42.10s  agent 발화 시작: <ret> Mitch’s Seafood is just point three miles from the Oce
+    43.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: (tool result) Mitch's Seafood is 0.3 miles from Ocean View Hotel. Rati
+    51.09s  user  발화 시작: …Do they take reservations?
+    51.84s  agent 발화 끝
+    52.34s  <ret> 발화 (turn9 첫 프레임)
+    52.65s  agent 발화 시작: <ret> Give me a moment to check if Mitch’s Seafood accepts r
+    52.83s  user  발화 끝
+    54.34s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.30s]: (tool result) Mitch's Seafood: Reservations accepted. Availability at 
+    56.85s  agent 발화 시작: Yes, Mitch’s Seafood does accept reservations, and they have
+    56.96s  agent 발화 끝
+    68.08s  agent 발화 끝
+    68.59s  user  발화 시작: Please do, for 7 PM on the tenth.
+    71.13s  user  발화 끝

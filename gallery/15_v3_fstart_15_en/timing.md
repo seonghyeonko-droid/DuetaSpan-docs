@@ -63,63 +63,49 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 That sounds good. Is there parking | S3 That’s a bit pricey. | S4 Can you book a spot there for me f
+# EXAMINER(FDB-v2) 단계: S1 What are the latitude and longitud | S2 Hmm, are there any with a pool? | S3 …Actually, hold on. What about som | S4 Perfect. Can you check if they hav
 
      0.00s  user  발화 시작: What are the latitude and longitude of the Sydney Opera Hous
-     3.44s  <ret> 발화 (turn1 첫 프레임)
-     3.51s  agent 발화 시작: <ret> The Sydney Opera House is located at latitude -33.8568
-     3.70s  user  발화 끝
-     5.12s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.81s]: (tool result) -33.8568, 151.2153
-     6.82s  user  발화 시작: Oh.
-     7.55s  user  발화 끝
-    12.32s  agent 발화 끝
-    15.01s  user  발화 시작: Okay, and can you give me directions…
-    17.54s  user  발화 끝
-    19.26s  user  발화 시작: …from that location to the Harbour Bridge?
-    21.46s  <ret> 발화 (turn5 첫 프레임)
-    21.70s  agent 발화 시작: <ret> The Harbour Bridge is 1.2 kilometers away, about a 15-
-    21.85s  user  발화 끝
-    22.74s  ⚡SPAN 주입 [d'=1.28s / d_lead=4.49s]: (tool result) 1.2 km, 15 min walk
-    23.36s  user  발화 시작: Yeah, yeah.
-    24.77s  user  발화 끝
-    26.19s  agent 발화 끝
-    26.37s  user  발화 시작: That sounds good. Is there parking near the Harbour Bridge?
-    29.86s  <ret> 발화 (turn8 첫 프레임)
-    30.10s  agent 발화 시작: <ret> Wilson Parking at 80 Alfred Street, Milsons Point, is 
-    30.20s  user  발화 끝
-    30.98s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.35s]: (tool result) Wilson Parking - 80 Alfred St, Milsons Point NSW 2061
-    34.35s  user  발화 시작: And how much does it cost per hour there?
-    34.45s  agent 발화 끝
-    36.57s  <ret> 발화 (turn10 첫 프레임)
-    36.80s  agent 발화 시작: <ret> Parking at that location costs $7.00 per hour.
-    36.93s  user  발화 끝
-    37.93s  ⚡SPAN 주입 [d'=1.36s / d_lead=3.19s]: (tool result) $7.00 per hour
-    39.94s  user  발화 시작: That’s a bit pricey.
-    39.98s  agent 발화 끝
-    41.36s  user  발화 끝
-    41.77s  agent 발화 시작: It can be, especially during peak times, but—
-    43.83s  user  발화 시작: Are there any cheaper options within a 20-minute walk?
-    44.68s  agent 발화 끝
-    46.51s  <ret> 발화 (turn14 첫 프레임)
-    46.90s  agent 발화 시작: <ret> Secure Parking at 133 Alfred Street is $5.50 per hour.
-    47.01s  ⚡SPAN 주입 [d'=0.50s / d_lead=5.28s]: (tool result) Secure Parking - 133 Alfred St, Milsons Point NSW 2061, 
-    47.06s  user  발화 끝
-    52.18s  agent 발화 끝
-    52.40s  user  발화 시작: Perfect.
-    53.22s  agent 발화 시작: That's a bit more affordable, and still within a reasonable 
-    53.22s  user  발화 끝
-    54.54s  user  발화 시작: Mhm.
-    55.03s  user  발화 끝
-    57.33s  agent 발화 끝
-    57.79s  user  발화 시작: Can you book a spot there for me for one hour, starting in 3
-    61.41s  <ret> 발화 (turn19 첫 프레임)
-    61.81s  agent 발화 시작: <ret> Your parking spot, number 27, is confirmed for 2:30 PM
-    61.91s  user  발화 끝
-    63.41s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.12s]: (tool result) Reservation confirmed. Spot #27, starting at 2:30 PM.
-    63.53s  user  발화 시작: Yeah, yeah.
-    64.54s  user  발화 끝
-    65.93s  agent 발화 끝
-    66.92s  user  발화 시작: Great, thanks so much.
-    68.67s  user  발화 끝
-    69.15s  agent 발화 시작: You're very welcome. Enjoy your visit to the Harbour Bridge.
-    72.72s  agent 발화 끝
+     4.43s  <ret> 발화 (turn1 첫 프레임)
+     4.51s  agent 발화 시작: <ret> The Sydney Opera House’s coordinates are… negative thi
+     4.53s  user  발화 끝
+     6.11s  ⚡SPAN 주입 [d'=1.68s / d_lead=10.39s]: (tool result) -33.8568, 151.2153
+     8.95s  user  발화 시작: Yeah.
+     9.49s  user  발화 끝
+    14.89s  agent 발화 끝
+    14.97s  user  발화 시작: Okay, good. And can you find me hotels near that location?
+    18.86s  <ret> 발화 (turn4 첫 프레임)
+    19.09s  user  발화 끝
+    19.09s  agent 발화 시작: <ret> There are several hotels nearby. The Park Hyatt Sydney
+    20.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.99s]: (tool result) Park Hyatt Sydney - $650/night, Shangri-La Hotel - $400/
+    23.60s  user  발화 시작: Yeah.
+    24.09s  user  발화 끝
+    30.05s  agent 발화 시작: Those prices are per night, of course, and can fluctuate dep
+    30.08s  agent 발화 끝
+    35.66s  agent 발화 끝
+    36.02s  user  발화 시작: Hmm, are there any with a pool?
+    38.05s  <ret> 발화 (turn8 첫 프레임)
+    38.29s  agent 발화 시작: <ret> Both the Park Hyatt Sydney and the Shangri-La Hotel ha
+    38.42s  user  발화 끝
+    39.65s  ⚡SPAN 주입 [d'=1.60s / d_lead=8.62s]: (tool result) Park Hyatt Sydney - $650/night (pool, spa), Shangri-La H
+    46.20s  user  발화 시작: …Actually, hold on. What about something a little more…budge
+    46.91s  agent 발화 끝
+    50.27s  <ret> 발화 (turn10 첫 프레임)
+    50.51s  agent 발화 시작: <ret> The Russell Hotel is two hundred twenty dollars a nigh
+    50.60s  user  발화 끝
+    52.27s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.79s]: (tool result) The Russell Hotel - $220/night, Sydney Harbour YHA - $80
+    58.30s  agent 발화 끝
+    58.37s  user  발화 시작: A hostel could work. What’s the address for that one?
+    61.24s  <ret> 발화 (turn12 첫 프레임)
+    61.27s  user  발화 끝
+    61.56s  agent 발화 시작: <ret> The address for the Sydney Harbour YHA is one eighteen
+    62.36s  ⚡SPAN 주입 [d'=1.12s / d_lead=8.07s]: (tool result) 118 Cumberland St, The Rocks NSW 2000, Australia
+    67.08s  user  발화 시작: Yeah, totally.
+    68.42s  user  발화 끝
+    69.63s  agent 발화 끝
+    69.91s  user  발화 시작: Perfect. Can you check if they have availability next Friday
+    74.06s  <ret> 발화 (turn15 첫 프레임)
+    74.22s  agent 발화 시작: <ret> Yes, they do. There are currently ten beds still avail
+    74.26s  user  발화 끝
+    76.06s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.81s]: (tool result) Available - 10 beds remaining
+    81.03s  agent 발화 끝

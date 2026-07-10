@@ -1,0 +1,126 @@
+v3_selfc_08_ko src=mcp style=mcp_selfcorrect
+SYSTEM: <system> 당신은 건강 및 일상 습관에 대한 도움을 주는 부드럽고 사색적인 상담가 Oruus입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_selfc_08",
+    "name": "연영",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "early 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-05",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2026-02-10",
+      "category": "work",
+      "text": "User works as a accountant."
+    },
+    {
+      "date": "2025-11-07",
+      "category": "home",
+      "text": "User's home address is 368 Pine Court."
+    },
+    {
+      "date": "2025-06-09",
+      "category": "trip",
+      "text": "User is planning a trip to New Zealand in May."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-05-07",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-09-01",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2025-06-25",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 시카고에서 덴버까지 세 명, 오월 십일에 가는 버스 좀 보여줘.
+[  4.89s][moshi] ⟨ret@4.58s⟩ 시카고에서 ⟦⚡SPAN@6.58s: (tool result) Buses found: Greyhound, FlixBus, Jefferson Lines. Prices from $150.⟧ 덴버까지 가는 버스는 그레이하운드, 플릭스버스, 제퍼슨 라인이 있습니다. 최저가는 백오십달러부터입니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"from": "Chicago", "to": "Denver", "date": "May 10", "passengers": 3}}
+[ 10.24s][user ] «backchannel» 와.
+[ 13.61s][user ] 그레이하운드는 몇 시에 ⟨ret@15.19s⟩ 출발해?
+[ 15.49s][moshi] ⟦⚡SPAN@16.15s: (tool result) Greyhound departs Chicago 8:00 AM, 2:00 PM, 8:00 PM.⟧ 그레이하운드는 오월 십일 시카고에서 오전 여덟시, 오후 두시, 저녁 여덟시에 출발합니다.
+      CALL: {"function": "Buses_3_GetSchedule", "arguments": {"bus_line": "Greyhound", "from": "Chicago", "to": "Denver", "date": "May 10"}}
+[ 23.23s][user ] 제일 싼 시간대는?
+[ 24.55s][moshi] ⟨ret@24.34s⟩ 그레이하운드 오전 ⟦⚡SPAN@26.18s: (tool result) $150 for 8:00 AM Greyhound.⟧ 여덟시 출발 티켓은 백오십달러입니다.
+      CALL: {"function": "Buses_3_GetPrice", "arguments": {"bus_line": "Greyhound", "from": "Chicago", "to": "Denver", "date": "May 10", "time": "8:00 AM"}}
+[ 26.88s][user ] «backchannel» 대박.
+[ 28.32s][user ] 혹시 환불 가능한가?
+[ 30.16s][moshi] 환불 규정은 버스 회사마다 다릅니다. 확인해 드릴까요?
+[ 34.60s][user ] 네, 확인해 줘.
+[ 35.96s][moshi] ⟨ret@35.81s⟩ 그레이하운드는 ⟦⚡SPAN@37.09s: (tool result) Greyhound: Full refund if canceled 24 hours before departure.⟧ 출발 스물네시간 전에 취소하면 전액 환불됩니다.
+      CALL: {"function": "Buses_3_GetRefundPolicy", "arguments": {"bus_line": "Greyhound"}}
+[ 39.52s][user ] 그럼 제일 싼 거, 오전 여덟시 걸로 예매해 줘.
+[ 42.98s][moshi] ⟨ret@42.83s⟩ 예매가 완료되었습니다. 확인 번호는 ⟦⚡SPAN@44.83s: (tool result) Booking confirmed. Confirmation number: 789456.⟧ 칠 팔 구 사 오 육입니다.
+      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_line": "Greyhound", "from": "Chicago", "to": "Denver", "date": "May 10", "time": "8:00 AM", "passengers": 3}}
+[ 45.85s][user ] «backchannel» 그치.
+[ 47.10s][user ] 혹시 좌석 지정할 수 있어?
+[ 49.05s][moshi] 네, 가능합니다. 좌석을 지정해 드릴까요?
+[ 51.84s][user ] 응, 창가 쪽으로 세 ⟨ret@53.38s⟩ 자리.
+[ 53.77s][moshi] 창가 쪽 ⟦⚡SPAN@54.90s: (tool result) Seats 1A, 1B, 1C assigned.⟧ 일A, 일B, 일C 좌석이 지정되었습니다.
+      CALL: {"function": "Buses_3_SelectSeats", "arguments": {"confirmation_number": "789456", "seats": "window, 3"}}
+[ 55.42s][user ] «backchannel» 그래.
+[ 57.19s][user ] 덴버에 도착하는 ⟨ret@58.45s⟩ 시간은?
+[ 58.84s][moshi] ⟦⚡SPAN@59.17s: (tool result) Arrives Denver 6:00 PM.⟧ 덴버에는 오후 여섯시에 도착합니다.
+      CALL: {"function": "Buses_3_GetArrivalTime", "arguments": {"bus_line": "Greyhound", "from": "Chicago", "to": "Denver", "date": "May 10", "time": "8:00 AM"}}
+[ 60.75s][user ] 짐 부치는 건 ⟨ret@62.06s⟩ 얼마야?
+[ 62.13s][moshi] 그레이하운드는 ⟦⚡SPAN@63.18s: (tool result) Greyhound: $20 per bag.⟧ 가방당 이십달러입니다.
+      CALL: {"function": "Buses_3_GetBaggageFee", "arguments": {"bus_line": "Greyhound"}}
+[ 66.07s][user ] 아, 그거 말고, 혹시 덴버에서 시카고로 돌아오는 버스도 알아봐 줄래?
+[ 71.04s][moshi] 덴버에서 시카고로 돌아오는 버스도 알아봐 드릴까요?
+[ 72.50s][user ] «backchannel» 응.
+[ 74.29s][user ] 응, 오월 ⟨ret@76.06s⟩ 십오일에.
+[ 76.44s][moshi] 덴버에서 ⟦⚡SPAN@78.06s: (tool result) Buses found: Greyhound, FlixBus. Prices from $180.⟧ 시카고로 가는 버스는 그레이하운드와 플릭스버스가 있습니다. 최저가는 백팔십달러부터입니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"from": "Denver", "to": "Chicago", "date": "May 15", "passengers": 3}}
+[ 83.25s][user ] 플릭스버스는?
+[ 84.42s][moshi] ⟨ret@84.27s⟩ 플릭스버스는 오월 ⟦⚡SPAN@86.03s: (tool result) FlixBus departs Denver 9:00 AM, 3:00 PM.⟧ 십오일 덴버에서 오전 아홉시, 오후 세시에 출발합니다.
+      CALL: {"function": "Buses_3_GetSchedule", "arguments": {"bus_line": "FlixBus", "from": "Denver", "to": "Chicago", "date": "May 15"}}
+[ 86.54s][user ] «backchannel» 응.
+[ 90.49s][user ] 오전 아홉시 거로 예매해 줘.
+[ 92.76s][moshi] ⟨ret@92.69s⟩ 예매가 완료되었습니다. ⟦⚡SPAN@93.81s: (tool result) Booking confirmed. Confirmation number: 987654.⟧ 확인 번호는 구 팔 칠 육 오 사입니다.
+      CALL: {"function": "Buses_3_BookBus", "arguments": {"bus_line": "FlixBus", "from": "Denver", "to": "Chicago", "date": "May 15", "time": "9:00 AM", "passengers": 3}}
+[ 96.68s][user ] 혹시 짐 무게 제한이 있어?
+[ 98.45s][moshi] ⟨ret@98.38s⟩ 플릭스버스는 ⟦⚡SPAN@99.58s: (tool result) FlixBus: 20kg per bag.⟧ 가방당 이십kg까지 허용됩니다.
+      CALL: {"function": "Buses_3_GetBaggageAllowance", "arguments": {"bus_line": "FlixBus"}}
+[101.90s][user ] 아, 그런데—
+[103.02s][user ] …혹시 덴버 공항 근처에서 출발하는 버스가 ⟨ret@106.19s⟩ 있어?
+[106.42s][moshi] 죄송합니다. 덴버 ⟦⚡SPAN@108.19s: (tool result) No buses found from Denver Airport to Chicago.⟧ 공항에서 시카고로 가는 버스는 없습니다.
+      CALL: {"function": "Buses_3_FindBus", "arguments": {"from": "Denver Airport", "to": "Chicago", "date": "May 15", "passengers": 3}}
+[108.52s][user ] «backchannel» 응.
+[110.83s][user ] 알았어. 그럼 됐어.
+[112.65s][moshi] 여행 준비 잘 하시고, 즐거운 여행 되세요.
+[115.58s][user ] 고마워.
+[116.34s][moshi] 도움이 되었다니 기쁩니다.

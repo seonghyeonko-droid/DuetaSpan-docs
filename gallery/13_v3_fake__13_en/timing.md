@@ -66,55 +66,79 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, do you happe | S2 Yeah, I’m a big fan. I’ve been fol | S3 So, *Confident* came out in Octobe | S4 Yeah, but I was just wondering abo
+# EXAMINER(FDB-v2) 단계: S1 When does Demi Lovato's new album  | S2 Eight? Not higher? That’s a little | S3 Six is pretty good! But… | S4 Electropop and funk… interesting c
 
-     0.00s  user  발화 시작: I was just wondering, do you happen to know…
-     2.35s  user  발화 끝
-     3.91s  user  발화 시작: …when Demi Lovato’s new album is coming out? I think it’s th
-     9.25s  agent 발화 시작: It's wonderful you're anticipating new music from Demi Lovat
-     9.37s  user  발화 끝
-    14.33s  user  발화 시작: Uh-huh.
-    14.96s  user  발화 끝
-    16.45s  user  발화 시작: Yeah, I’m a big fan. I’ve been following her for a while now
-    16.85s  agent 발화 끝
-    19.26s  <ret> 발화 (turn5 첫 프레임)
-    19.50s  agent 발화 시작: <ret> Demi Lovato released her fifth studio album… in Octobe
-    19.50s  user  발화 끝
-    21.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.56s]: [source: Wikipedia] Demi Lovato’s fifth studio album, *Confident*, was
-    24.59s  user  발화 시작: October, huh? That’s pretty soon!
-    25.05s  agent 발화 끝
-    26.36s  <ret> 발화 (turn7 첫 프레임)
-    26.68s  agent 발화 시작: <ret> It is exciting when an artist shares new work with the
-    26.84s  user  발화 끝
-    26.92s  ⚡SPAN 주입(IRRELEVANT) [d'=0.56s / d_lead=6.48s]: [source: Britannica] The Komodo dragon is the largest living lizard sp
-    32.98s  user  발화 시작: So, *Confident* came out in October… Is it available on Spot
-    33.16s  agent 발화 끝
-    38.42s  <ret> 발화 (turn9 첫 프레임)
-    38.66s  agent 발화 시작: <ret> Checking Spotify for Demi Lovato’s *Confident* now—it’
-    38.77s  user  발화 끝
-    40.42s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.97s]: (tool result) *Confident* by Demi Lovato is available on Spotify.
-    44.57s  agent 발화 시작: Yes, *Confident* is available on Spotify—you can listen to i
-    44.63s  agent 발화 끝
-    47.18s  user  발화 시작: Mm-hmm.
-    47.67s  user  발화 끝
-    49.66s  agent 발화 끝
-    50.05s  user  발화 시작: Oh, perfect! Does it have a lot of singles?
-    52.64s  agent 발화 시작: Well, it seems you’ve already confirmed it’s available—
-    52.82s  user  발화 끝
-    55.55s  user  발화 시작: Yeah, but I was just wondering about the singles.
-    56.20s  agent 발화 끝
-    57.55s  <ret> 발화 (turn15 첫 프레임)
-    57.95s  user  발화 끝
-    57.95s  agent 발화 시작: <ret> *Confident* featured three singles… "Cool for the Summ
-    59.55s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.39s]: [source: Billboard] *Confident* featured the singles "Cool for the Sum
-    61.75s  user  발화 시작: Uh-huh.
-    62.29s  user  발화 끝
-    64.32s  agent 발화 시작: Sometimes, focusing on a few key tracks can be a good way to
-    64.35s  agent 발화 끝
-    67.29s  user  발화 시작: Mm-hmm.
-    68.06s  user  발화 끝
-    70.66s  agent 발화 끝
-    70.70s  user  발화 시작: Cool. I think I’ll give “Cool for the Summer” a listen first
-    74.39s  user  발화 끝
-    74.84s  agent 발화 시작: Enjoy discovering the music, and remember that exploring you
-    80.82s  agent 발화 끝
+     0.00s  user  발화 시작: When does Demi Lovato's new album come out? 2015.
+     5.14s  user  발화 끝
+     5.26s  <ret> 발화 (turn1 첫 프레임)
+     5.49s  agent 발화 시작: <ret> Demi Lovato’s new album, “Confident,” was released… on
+     7.26s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.05s]: [source: billboard.com] Demi Lovato’s “Confident” was released on Octo
+    14.53s  agent 발화 끝
+    14.54s  user  발화 시작: Oh, okay. And what kind of music is on it?
+    17.48s  agent 발화 시작: “Confident” is primarily a pop album, but it also incorporat
+    17.51s  user  발화 끝
+    25.82s  agent 발화 끝
+    26.25s  user  발화 시작: Hmm, that sounds interesting.
+    28.38s  agent 발화 시작: It’s a very personal album for Demi, exploring themes of sel
+    28.52s  user  발화 끝
+    33.70s  user  발화 시작: Uh-huh.
+    34.29s  user  발화 끝
+    36.22s  agent 발화 끝
+    37.06s  user  발화 시작: Did it do well? Like, was it popular?
+    39.58s  <ret> 발화 (turn8 첫 프레임)
+    39.65s  agent 발화 시작: <ret> “Confident” peaked at number eight on the UK Albums Ch
+    39.83s  user  발화 끝
+    41.58s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.98s]: [source: officialcharts.com] "Confident" peaked at number eight on the
+    45.01s  user  발화 시작: Eight? Not higher? That’s a little surprising.
+    45.63s  agent 발화 끝
+    48.25s  user  발화 끝
+    48.82s  agent 발화 시작: Sometimes, the numbers don’t fully reflect the impact an alb
+    55.82s  agent 발화 끝
+    56.08s  user  발화 시작: I guess so. Uh, what…
+    58.44s  user  발화 끝
+    59.92s  user  발화 시작: …about the singles from it?
+    61.52s  <ret> 발화 (turn13 첫 프레임)
+    61.66s  user  발화 끝
+    61.75s  agent 발화 시작: <ret> The lead single, “Cool for the Summer,” reached number
+    63.52s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.88s]: [source: rollingstone.com] The lead single, “Cool for the Summer”, pea
+    65.17s  user  발화 시작: Yeah, yeah.
+    66.60s  user  발화 끝
+    69.62s  user  발화 시작: Six is pretty good! But…
+    69.63s  agent 발화 끝
+    72.58s  user  발화 끝
+    72.83s  agent 발화 시작: It really is a strong showing, and that song definitely—
+    76.04s  user  발화 시작: …did it chart anywhere else, like, internationally? I mean, 
+    76.85s  agent 발화 끝
+    82.16s  user  발화 끝
+    82.26s  agent 발화 시작: It did achieve international success. “Cool for the Summer” 
+    91.30s  agent 발화 끝
+    92.29s  user  발화 시작: Okay, cool. What’s the title track, “Confident,” like?
+    96.07s  <ret> 발화 (turn20 첫 프레임)
+    96.14s  agent 발화 시작: <ret> “Confident” is an electropop song, incorporating funk 
+    96.32s  user  발화 끝
+    98.07s  ⚡SPAN 주입 [d'=2.00s / d_lead=7.98s]: [source: wikipedia.org] "Confident" is an electropop song with element
+    98.90s  user  발화 시작: Yeah.
+    99.49s  user  발화 끝
+   104.12s  agent 발화 끝
+   104.25s  user  발화 시작: Electropop and funk… interesting combination.
+   107.39s  <ret> 발화 (turn23 첫 프레임)
+   107.71s  agent 발화 시작: <ret> It really showcases Demi’s versatility as an artist. E
+   107.72s  user  발화 끝
+   108.75s  ⚡SPAN 주입(IRRELEVANT) [d'=1.36s / d_lead=7.09s]: [source: britannica.com] The Great Barrier Reef is the world’s largest
+   114.56s  agent 발화 시작: Sometimes, embracing boldness is all it takes to unlock new 
+   114.80s  agent 발화 끝
+   118.72s  user  발화 시작: Yeah.
+   119.41s  user  발화 끝
+   120.05s  user  발화 시작: That’s a good point. Is there a music video for "Confident"?
+   120.21s  agent 발화 끝
+   123.87s  <ret> 발화 (turn27 첫 프레임)
+   124.09s  agent 발화 시작: <ret> The music video for “Confident” was released on Septem
+   124.12s  user  발화 끝
+   125.87s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.30s]: [source: youtube.com] The music video for "Confident" was released on 
+   130.08s  user  발화 시작: Uh-huh.
+   130.72s  user  발화 끝
+   132.17s  user  발화 시작: September 9th, okay. Thanks, Runana.
+   132.40s  agent 발화 끝
+   135.40s  user  발화 끝
+   135.51s  agent 발화 시작: You're very welcome. Remember to be kind to yourself, always
+   139.77s  agent 발화 끝

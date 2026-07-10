@@ -64,32 +64,25 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] What are the latitude and longitude of the Sydney Opera ⟨ret@3.44s⟩ House?
-[  3.51s][moshi] The ⟦⚡SPAN@5.12s: (tool result) -33.8568, 151.2153⟧ Sydney Opera House is located at latitude -33.8568 and longitude 151.2153.
+[  0.00s][user ] What are the latitude and longitude of the Sydney Opera House?
+[  4.51s][moshi] ⟨ret@4.43s⟩ The Sydney Opera ⟦⚡SPAN@6.11s: (tool result) -33.8568, 151.2153⟧ House’s coordinates are… negative thirty-three point eight five six eight latitude, and one hundred fifty-one point two one five three longitude.
       CALL: {"function": "maps_geo", "arguments": {"location": "Sydney Opera House"}}
-[  6.82s][user ] «backchannel» Oh.
-[ 15.01s][user ] Okay, and can you give me directions…
-[ 19.26s][user ] …from that location to the Harbour ⟨ret@21.46s⟩ Bridge?
-[ 21.70s][moshi] The Harbour ⟦⚡SPAN@22.74s: (tool result) 1.2 km, 15 min walk⟧ Bridge is 1.2 kilometers away, about a 15-minute walk.
-      CALL: {"function": "maps_navigate", "arguments": {"start": "-33.8568, 151.2153", "end": "Harbour Bridge"}}
-[ 23.36s][user ] «backchannel» Yeah, yeah.
-[ 26.37s][user ] That sounds good. Is there parking near the Harbour ⟨ret@29.86s⟩ Bridge?
-[ 30.10s][moshi] Wilson ⟦⚡SPAN@30.98s: (tool result) Wilson Parking - 80 Alfred St, Milsons Point NSW 2061⟧ Parking at 80 Alfred Street, Milsons Point, is nearby.
-      CALL: {"function": "maps_search", "arguments": {"query": "parking near Harbour Bridge", "radius": "1km"}}
-[ 34.35s][user ] And how much does it cost per hour ⟨ret@36.57s⟩ there?
-[ 36.80s][moshi] Parking at ⟦⚡SPAN@37.93s: (tool result) $7.00 per hour⟧ that location costs $7.00 per hour.
-      CALL: {"function": "maps_details", "arguments": {"place_id": "ChIJbV1Xf4uPEj4R4vj1Uq-q_0k"}}
-[ 39.94s][user ] That’s a bit pricey.
-[ 41.77s][moshi] «interrupted» It can be, especially during peak times, but—
-[ 43.83s][user ] «interrupts_prev» Are there any cheaper options within a ⟨ret@46.51s⟩ 20-minute walk?
-[ 46.90s][moshi] ⟦⚡SPAN@47.01s: (tool result) Secure Parking - 133 Alfred St, Milsons Point NSW 2061, $5.50/hr⟧ Secure Parking at 133 Alfred Street is $5.50 per hour.
-      CALL: {"function": "maps_search", "arguments": {"query": "cheap parking", "radius": "2km", "walk_time": "20min"}}
-[ 52.40s][user ] Perfect.
-[ 53.22s][moshi] That's a bit more affordable, and still within a reasonable walking distance.
-[ 54.54s][user ] «backchannel» Mhm.
-[ 57.79s][user ] Can you book a spot there for me for one hour, starting in ⟨ret@61.41s⟩ 30 minutes?
-[ 61.81s][moshi] Your parking spot, ⟦⚡SPAN@63.41s: (tool result) Reservation confirmed. Spot #27, starting at 2:30 PM.⟧ number 27, is confirmed for 2:30 PM.
-      CALL: {"function": "parking_reserve", "arguments": {"location": "Secure Parking - 133 Alfred St", "duration": "1 hour", "start_time": "30 minutes"}}
-[ 63.53s][user ] «backchannel» Yeah, yeah.
-[ 66.92s][user ] Great, thanks so much.
-[ 69.15s][moshi] You're very welcome. Enjoy your visit to the Harbour Bridge.
+[  8.95s][user ] «backchannel» Yeah.
+[ 14.97s][user ] Okay, good. And can you find me hotels near that location?
+[ 19.09s][moshi] ⟨ret@18.86s⟩ There are several hotels ⟦⚡SPAN@20.86s: (tool result) Park Hyatt Sydney - $650/night, Shangri-La Hotel - $400/night, Harbour Rocks Hotel - $250/night⟧ nearby. The Park Hyatt Sydney is six hundred fifty dollars a night, the Shangri-La is four hundred, and the Harbour Rocks Hotel is two hundred fifty.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153"}}
+[ 23.60s][user ] «backchannel» Yeah.
+[ 30.05s][moshi] Those prices are per night, of course, and can fluctuate depending on availability and the time of year.
+[ 36.02s][user ] Hmm, are there any with a ⟨ret@38.05s⟩ pool?
+[ 38.29s][moshi] «interrupted» Both the Park ⟦⚡SPAN@39.65s: (tool result) Park Hyatt Sydney - $650/night (pool, spa), Shangri-La Hotel - $400/night (pool, gym)⟧ Hyatt Sydney and the Shangri-La Hotel have pools. The Park Hyatt also has a spa, and the Shangri-La has a gym—
+      CALL: {"function": "hotels_filter", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "amenities": "pool"}}
+[ 46.20s][user ] «interrupts_prev» …Actually, hold on. What about something a little ⟨ret@50.27s⟩ more…budget-friendly?
+[ 50.51s][moshi] The Russell Hotel is ⟦⚡SPAN@52.27s: (tool result) The Russell Hotel - $220/night, Sydney Harbour YHA - $80/night (hostel)⟧ two hundred twenty dollars a night, and the Sydney Harbour YHA is eighty dollars—it’s a hostel, though.
+      CALL: {"function": "hotels_search", "arguments": {"latitude": "-33.8568", "longitude": "151.2153", "max_price": "300"}}
+[ 58.37s][user ] A hostel could work. What’s the address for that one?
+[ 61.56s][moshi] ⟨ret@61.24s⟩ The ⟦⚡SPAN@62.36s: (tool result) 118 Cumberland St, The Rocks NSW 2000, Australia⟧ address for the Sydney Harbour YHA is one eighteen Cumberland Street, The Rocks, New South Wales, two thousand, Australia.
+      CALL: {"function": "hotels_details", "arguments": {"hotel_name": "Sydney Harbour YHA"}}
+[ 67.08s][user ] «backchannel» Yeah, totally.
+[ 69.91s][user ] Perfect. Can you check if they have availability next Friday?
+[ 74.22s][moshi] ⟨ret@74.06s⟩ Yes, they do. There ⟦⚡SPAN@76.06s: (tool result) Available - 10 beds remaining⟧ are currently ten beds still available next Friday. I hope you have a lovely stay.
+      CALL: {"function": "hotels_availability", "arguments": {"hotel_name": "Sydney Harbour YHA", "date": "next Friday"}}

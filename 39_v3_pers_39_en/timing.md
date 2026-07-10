@@ -51,15 +51,15 @@
 # }
 
 
-     0.00s  agent 발화 시작: Lucia, it’s wonderful to connect with you. I’m Aril, and I h
-     8.15s  agent 발화 끝
-     9.39s  user  발화 시작: Aril… that’s a lovely name. Honestly, I’m just feeling a bit
-    15.20s  agent 발화 시작: It’s completely understandable to feel that way, Lucia. Drif
-    15.28s  user  발화 끝
-    18.89s  user  발화 시작: Wow.
-    19.70s  user  발화 끝
-    25.03s  user  발화 시작: Welll… I don’t even know where to start. It feels awkward ju
-    25.16s  agent 발화 끝
-    30.16s  user  발화 끝
-    30.21s  agent 발화 시작: That awkwardness is very common, and perfectly valid. Perhap
-    38.88s  agent 발화 끝
+     0.00s  agent 발화 시작: Lucia, it’s so lovely to connect with you. I’m Aril, and I h
+     6.62s  agent 발화 끝
+     7.81s  user  발화 시작: Aril… that’s a pretty name. I’m just… feeling a little lost,
+    15.54s  user  발화 끝
+    15.75s  agent 발화 시작: It’s completely understandable to feel lost, Lucia. Often, t
+    20.38s  user  발화 시작: Wow.
+    21.20s  user  발화 끝
+    28.12s  user  발화 시작: Welll… I used to love hiking, but I haven’t been in ages. An
+    28.18s  agent 발화 끝
+    36.64s  agent 발화 시작: It sounds like you have some wonderful interests waiting to 
+    36.65s  user  발화 끝
+    48.60s  agent 발화 끝

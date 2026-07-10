@@ -1,0 +1,87 @@
+v3_defer_09_ko src=mcp style=mcp_deferred
+SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 친절하고 침착한 개인 가이드 Tian입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_defer_09",
+    "name": "보아",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "female",
+    "age_range": "late 30s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-04-24",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2026-03-05",
+      "category": "home",
+      "text": "User's home address is 530 Elm Street."
+    },
+    {
+      "date": "2025-12-23",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Korean BBQ."
+    },
+    {
+      "date": "2025-10-20",
+      "category": "diet",
+      "text": "User is vegetarian."
+    },
+    {
+      "date": "2025-08-12",
+      "category": "allergy",
+      "text": "User is allergic to pollen."
+    },
+    {
+      "date": "2025-07-04",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2025-10-24",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-06-27",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 오션뷰 호텔, 샌디에이고, 이월 십일부터 칠박…
+[  5.57s][user ] …방 세 개 예약해 ⟨ret@6.82s⟩ 줘.
+[  6.98s][moshi] 오션뷰 호텔, 샌디에이고, ⟦⚡SPAN@8.82s: (tool result) Confirmation number is 8675309. Three rooms at Ocean View Hotel in San Diego are reserved for se⟧ 이월 십일부터 칠박, 방 세 개를 예약했습니다. 확인 번호는 팔 육 칠 오 삼 공 구입니다.
+      CALL: {"function": "Hotels_4_ReserveHotel", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "check_in_date": "2025-02-10", "length_of_stay": 7, "number_of_rooms": 3}}
+[ 12.80s][user ] «backchannel» 어어.
+[ 17.15s][user ] 그 호텔에 수영장이 있는지 궁금해.
+[ 19.86s][moshi] ⟨ret@19.54s⟩ 네, ⟦⚡SPAN@20.74s: (tool result) Yes, Ocean View Hotel has a swimming pool.⟧ 오션뷰 호텔에는 수영장이 있습니다.
+      CALL: {"function": "Hotels_4_CheckHotelAmenities", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "amenity": "swimming pool"}}
+[ 22.63s][user ] 아, 그런데… 그 호텔 근처에 괜찮은 해변이 있을까?
+[ 26.41s][moshi] «interrupted» 근처 해변에 대해 알아보고 있는데—
+[ 28.04s][user ] «interrupts_prev» … 혹시 호텔에서 해변까지 셔틀버스가 운행하는지 알 수 ⟨ret@31.16s⟩ 있을까?
+[ 31.56s][moshi] ⟦⚡SPAN@31.66s: (tool result) Yes, Ocean View Hotel offers a free shuttle to Coronado Beach every two hours.⟧ 잠시만 기다려 주세요.
+      CALL: {"function": "Hotels_4_CheckHotelShuttle", "arguments": {"hotel_name": "Ocean View Hotel", "city": "San Diego", "destination": "beach"}}
+[ 32.73s][moshi] 네, 오션뷰 호텔에서는 코로라도 해변까지 두시간마다 무료 셔틀버스를 운행하고 있습니다.
+[ 40.08s][user ] 코로라도 해변이 어디에 있는지 알려줄 수 ⟨ret@42.65s⟩ 있어?
+[ 42.80s][moshi] 코로라도 ⟦⚡SPAN@43.85s: [source: Google Maps] Coronado Beach is located on the west coast of Coronado Island, across the bay from down⟧ 해변은 샌디에이고 시내에서 배를 건너 코로라도 섬 서쪽에 위치해 있습니다.

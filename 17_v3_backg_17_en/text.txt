@@ -59,10 +59,11 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering, what's a normal heart ⟨ret@2.63s⟩ rate?
-[  3.03s][moshi] A normal heart rate is ⟦⚡SPAN@4.63s: [source: Mayo Clinic] A normal resting heart rate for adults ranges from 60 to 100 beats per minute.⟧ something many people ask about, and it’s good to be aware of your body’s signals.
-[  8.65s][moshi] The typical resting heart rate for most adults is… between 60 and 100 beats per minute.
-[ 14.80s][user ] «to_other» Did you remember to take the chicken out of the freezer?
-[ 17.17s][user ] Oh, okay, that’s good to know. Is there a range for what's considered *healthy* ⟨ret@22.68s⟩ though?
-[ 22.84s][moshi] When we talk about ⟦⚡SPAN@24.68s: [source: American Heart Association] For most adults, a healthy heart rate is between 50 and 90 beats per minu⟧ healthy, there's a slightly narrower range to aim for.
-[ 27.52s][moshi] A healthy heart rate, generally speaking, falls… between 50 and 90 beats per minute.
+[  0.00s][user ] What’s a normal heart rate for ⟨ret@1.84s⟩ an adult?
+[  2.24s][moshi] A normal resting heart ⟦⚡SPAN@3.84s: "[source: Mayo Clinic] A normal resting heart rate for adults ranges from 60 to 100 beats per minute."⟧ rate falls between sixty and one hundred beats per minute. It’s good you’re thinking about your health.
+[  9.37s][user ] Oh, that’s… higher than I thought. What about for someone really ⟨ret@12.89s⟩ fit?
+[ 13.12s][moshi] For someone very fit, ⟦⚡SPAN@14.89s: "[source: American Heart Association] Well-trained athletes may have resting heart rates as low as 40 to 60 be⟧ a resting heart rate can be lower—between forty and sixty beats per minute. It indicates good cardiovascular conditioning.
+[ 22.67s][user ] «to_other» Did you remember to take the recycling out?
+[ 24.71s][user ] Hmm, okay. Is there a range that’s considered ⟨ret@27.30s⟩ unhealthy?
+[ 27.62s][moshi] A consistently high heart ⟦⚡SPAN@29.30s: "[source: National Institutes of Health] A heart rate consistently above 100 beats per minute is called tachyc⟧ rate, above one hundred beats per minute, is tachycardia, while below sixty is bradycardia. It’s worth checking with a doctor if you’re concerned.
+[ 37.88s][user ] That's good to know, thanks.

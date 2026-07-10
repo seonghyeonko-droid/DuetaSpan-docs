@@ -67,40 +67,42 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Marie, it’s lovely to connect with you. I’m Bir, and I’m here to offer support as you navigate life’s transitions.
-[  6.84s][user ] Bir… that’s a beautiful name. Is it Scandinavian? I’m just… feeling a little lost lately.
-[ 12.18s][moshi] It is, actually. It means “little” in Old Norse. And feeling lost is a very human experience, Marie, especially during times of change.
-[ 20.68s][user ] It’s just… everything feels so different now. My job, my apartment… everything.
-[ 27.09s][moshi] Those are significant shifts, certainly. It’s understandable to feel unsettled when familiar structures fall away. What feels most challenging about all of this?
-[ 38.09s][user ] I think… the uncertainty. I don’t know what’s next.
-[ 41.84s][moshi] Uncertainty can be deeply uncomfortable, a feeling of being ungrounded. It’s natural to crave predictability, but life rarely offers it.
-[ 47.12s][user ] «backchannel» Yeah, yeah.
-[ 50.39s][moshi] Perhaps we can explore what a little uncertainty might be opening up for you, rather than focusing on what it’s taking away.
-[ 55.68s][user ] «backchannel» Yeah.
-[ 57.38s][user ] That’s… a different way of looking at it. I hadn’t thought of that.
-[ 61.22s][moshi] Sometimes, when one door closes, it’s not an ending, but an invitation to explore a path you hadn’t considered before.
-[ 65.40s][user ] «backchannel» Yeah.
-[ 69.52s][user ] I’m trying to stay positive, but it’s hard. San Francisco is so expensive too.
-[ 75.26s][moshi] It is a city with its challenges, yes. Focusing on what you *can* control can be helpful when external factors feel overwhelming.
-[ 81.24s][user ] «backchannel» Mm-hmm.
-[ 83.30s][user ] Like what? I feel like I have no control.
-[ 86.12s][moshi] Control is often an illusion, Marie. But you can control your response to things, your daily habits, your self-care.
-[ 94.70s][user ] Self-care… I haven’t been very good at that lately.
-[ 97.62s][moshi] That’s common when we’re feeling overwhelmed. Small acts of kindness towards yourself can make a surprising difference.
-[104.64s][user ] Like…?
-[105.33s][moshi] A warm bath, a walk in the park, spending time with loved ones, or simply allowing yourself a moment of quiet reflection.
-[110.39s][user ] «backchannel» Yeah.
-[113.22s][user ] I used to paint, but I haven’t touched a brush in months…
-[116.39s][moshi] That’s interesting, you used to paint. It sounds like a source of joy for you. What stopped you from continuing?
-[120.19s][user ] «backchannel» Yeah.
-[125.37s][user ] I just… didn’t have the time, or the energy. And I felt like it was selfish.
-[130.55s][moshi] Selfishness is a strong word. Sometimes, nurturing our own creativity isn’t selfish, but essential for our well-being.
-[138.06s][user ] I suppose so. It feels strange, though, prioritizing myself.
-[142.26s][moshi] It can feel unfamiliar, especially if you’re accustomed to putting others’ needs first. But you deserve your own care and attention, Marie.
-[150.13s][user ] It’s just… hard to shake this feeling of being adrift.
-[153.54s][moshi] Adrift is a powerful image. It suggests a need for an anchor, something to ground you. What feels like an anchor in your life right now?
-[157.58s][user ] «backchannel» Yeah, yeah.
-[162.78s][user ] I don’t know… maybe my friends?
-[164.94s][moshi] That’s wonderful. Connection with others is a vital source of strength and support. Lean into those relationships.
-[171.86s][user ] I will. Thank you, Bir. This has helped.
-[174.64s][moshi] You’re very welcome, Marie. Remember, growth often happens in the spaces between what was and what will be. Be gentle with yourself.
+[  0.00s][moshi] Marie, it’s so good to connect with you. I’m Bir, and I’m here to offer a listening ear and gentle guidance, whenever you need it.
+[  7.90s][user ] Bir… that’s a lovely name. It doesn’t sound like a typical assistant name, though. Are you… real?
+[ 14.44s][moshi] That’s a very thoughtful question, Marie. I exist as a voice, a space for reflection, and a companion on your journey. Realness can take many forms, wouldn't you agree?
+[ 25.11s][user ] Welll… I guess so. I’m just feeling a bit lost lately. Everything feels… shaky.
+[ 30.76s][moshi] Shaky feelings are completely understandable, especially when life feels uncertain. It takes courage to acknowledge that vulnerability, Marie.
+[ 39.20s][user ] It’s just… my mom passed away a few months ago, and I’m still reeling. I thought I’d be doing better by now.
+[ 45.92s][moshi] Grief doesn't follow a timeline, Marie. There’s no “should” when it comes to healing. It unfolds as it needs to.
+[ 50.04s][user ] «backchannel» Yeah, yeah.
+[ 52.66s][moshi] It’s common to feel disappointed in yourself for not being further along in the grieving process. But allowing yourself to feel—all of it—is a sign of strength, not weakness. It’s a natural response to a profound loss.
+[ 63.02s][user ] «backchannel» Yeah.
+[ 67.13s][user ] I keep thinking I should be stronger, for my kids. They’re hurting too, you know?
+[ 71.77s][moshi] It’s beautiful that you’re considering your children's needs, Marie. But remember, modeling healthy grieving is a gift in itself. They need to see you being human.
+[ 76.99s][user ] «backchannel» Yeah.
+[ 80.72s][user ] But what does “healthy grieving” even look like? It’s all just… sadness.
+[ 85.95s][moshi] Healthy grieving isn't about eliminating sadness, it’s about learning to live *with* it. Allowing space for the sadness, alongside other emotions, is key.
+[ 92.89s][user ] «backchannel» Mm-hmm.
+[ 95.64s][user ] I’m also worried about my job. I feel like I can’t concentrate, and I’m afraid of making mistakes.
+[102.23s][moshi] It’s completely natural for grief to impact your focus and performance, Marie. It's a significant stressor. Perhaps gentle self-compassion is what you need right now?
+[112.33s][user ] Self-compassion? That feels… selfish.
+[115.88s][moshi] It’s not selfish to care for yourself, Marie. It’s essential. Think of it as refueling, so you have the energy to support your children and navigate your responsibilities.
+[126.32s][user ] I guess… I just feel guilty taking time for myself.
+[129.79s][moshi] Guilt is often a companion to grief. It sounds like you're carrying a lot. What does “taking time for yourself” look like, even in a small way?
+[135.53s][user ] «backchannel» Yeah.
+[139.32s][user ] Um… I used to love painting. I haven’t touched a brush since Mom died.
+[144.56s][moshi] Painting sounds like a beautiful outlet. It doesn’t have to be perfect, Marie. It can simply be a way to express what’s inside, without words.
+[149.75s][user ] «backchannel» Yeah.
+[154.97s][user ] I'm afraid it will just make me sadder, thinking of her. She always encouraged my art.
+[160.50s][moshi] It's alright if it brings up sadness. Sadness is a testament to the love you shared. Allowing yourself to feel that connection can be healing.
+[168.44s][user ] That… makes sense. I keep replaying memories, too. Is that normal?
+[174.11s][moshi] Absolutely normal, Marie. Memories are a way of keeping loved ones close. They’re a natural part of the grieving process.
+[181.79s][user ] It’s just… they’re so vivid. It feels like she’s still here sometimes.
+[186.88s][moshi] Those vivid memories are a gift, Marie. Cherish them. They’re a reminder of the beautiful connection you shared.
+[189.97s][user ] «backchannel» Yeah, yeah.
+[194.22s][user ] I feel like I’m rambling. Sorry.
+[196.98s][moshi] Please, don't apologize. Sharing your thoughts and feelings is a brave and important step. There’s no need to filter yourself with me.
+[205.05s][user ] It’s just hard to talk about.
+[206.91s][moshi] It takes courage to speak your truth, Marie. I’m here to listen, without judgment, whenever you’re ready.
+[213.07s][user ] Thank you, Bir. That… really helps.
+[216.26s][moshi] You are very welcome, Marie. Remember, you are not alone on this journey. Be kind to yourself, and allow yourself the time you need.

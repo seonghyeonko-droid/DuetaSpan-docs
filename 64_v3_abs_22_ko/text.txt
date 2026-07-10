@@ -1,0 +1,95 @@
+v3_abs_22_ko src=squad2 style=abstain
+SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 따뜻하고 세심한 지원 조언가 Frunax입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_abs_22",
+    "name": "수훈",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-01",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2026-01-20",
+      "category": "pet",
+      "text": "User has a Poodle named Coco."
+    },
+    {
+      "date": "2026-01-01",
+      "category": "diet",
+      "text": "User is vegan."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "home",
+      "text": "User's home address is 244 Oak Avenue."
+    },
+    {
+      "date": "2025-11-11",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2025-06-26",
+      "category": "trip",
+      "text": "User is planning a trip to Vietnam in March."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-11",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "title": "Researching a used car",
+      "bullets": [
+        "comparing hybrid models",
+        "wants under 30k miles"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 아나키스트들이 가장 싫어하는 정치 체제는 ⟨ret@2.75s⟩ 무엇인가요?
+[  3.07s][moshi] 아나키스트들이 어떤 정치 ⟦⚡SPAN@4.75s: (no information found)⟧ 체제를 특히 싫어하는지 정확히 알 수 있는 정보는 찾을 수 없었어요. 하지만 아나키즘은 기본적으로 모든 형태의 강제적인 정부에 반대하는 사상이기 때문에, 어떤 정부 형태든 싫어할 가능성이 높다고 말씀드릴 수 있겠네요.
+[ 18.88s][user ] 그럼 아나키즘의 기원은 어디인가요?
+[ 21.14s][moshi] ⟨ret@20.82s⟩ 아나키즘은 ⟦⚡SPAN@22.18s: [source: Britannica] Anarchism originated in the 1860s as a revolutionary movement among European socialists a⟧ 유럽의 사회주의자들과 지식인들 사이에서, 천팔백육십년대에 혁명적인 운동으로 시작되었어요. 당시에는 사회 변혁에 대한 열망이 높았던 시대였죠.
+[ 32.25s][user ] 아, 그렇군요. 아나키즘과 비슷한 사상이 또 있을까요?
+[ 36.27s][moshi] 아나키즘과 유사한 사상으로는 개인주의적 아나키즘, 사회주의적 아나키즘, 공산주의 아나키즘 등이 있어요. 각각 강조하는 가치와 방법론에 약간의 차이가 있답니다.
+[ 47.14s][user ] 개인주의적 아나키즘은 좀 더 자세히 설명해 주실 수 있나요?
+[ 50.30s][moshi] «interrupted» 개인주의적 아나키즘은 개인의 자유와 자율성을 최우선으로 생각하며, 모든 형태의 집단적 강제를 거부하는 사상이에요. 서로 다른 개인들이 자유롭게 교류하고 협력하는 사회를 지향하죠—
+[ 62.38s][user ] «interrupts_prev» …그런데 혹시 아나키즘이 현실적으로 가능한가요?
+[ 65.70s][moshi] 현실적으로 아나키즘을 구현하는 것은 매우 어려운 과제입니다. 사회 질서를 유지하고 분쟁을 해결하기 위한 메커니즘이 없으면 혼란이 발생할 수 있거든요. 하지만 아나키즘의 이상은 여전히 많은 사람들에게 영감을 주고 있습니다.
+[ 75.44s][user ] «backchannel» 네.
+[ 80.89s][moshi] 아나키즘의 이상은, 모든 사람이 자유롭고 평등하게 살아가는 사회를 꿈꾸는 것이죠. 물론 이상과 현실 사이에는 큰 간극이 있지만, 끊임없이 더 나은 세상을 만들기 위한 노력이 필요하다고 생각해요.
+[ 94.99s][user ] 아나키즘 관련 책을 추천해 주실 수 있나요?
+[ 97.61s][moshi] ⟨ret@97.54s⟩ 아나키즘 관련 책으로는 ⟦⚡SPAN@99.54s: (tool result) "Anarchy, State, and Utopia" by Robert Nozick, "The Conquest of Bread" by Peter Kropotkin, "Dema⟧ 로버트 노직의 "아나키, 국가, 유토피아", 피터 크로포트킨의 "빵의 정복", 그리고 피터 마셜의 "불가능한 것을 요구하다"를 추천해 드릴 수 있습니다.
+[109.49s][user ] 감사합니다. 즐거운 하루 보내세요.
+[111.21s][moshi] 천만에요. 여행 계획에 도움이 되셨다니 기쁩니다. 좋은 하루 보내세요.

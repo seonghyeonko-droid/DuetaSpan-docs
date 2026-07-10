@@ -63,81 +63,87 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 That sounds better. Can you show m | S3 Do they take reservations? | S4 Could you also find me a good bake
+# EXAMINER(FDB-v2) 단계: S1 Can you give me the coordinates fo | S2 Could you book a table for two the | S3 …actually, what’s the weather like | S4 I think so too. Is there a good pl
 
      0.00s  user  발화 시작: Can you give me the coordinates for the Eiffel Tower in Pari
-     3.82s  <ret> 발화 (turn1 첫 프레임)
-     3.82s  agent 발화 시작: <ret> The Eiffel Tower in Paris is located at 48.8584 degree
-     4.12s  user  발화 끝
-     5.10s  ⚡SPAN 주입 [d'=1.28s / d_lead=10.15s]: (tool result) 48.8584° N, 2.2945° E
-    13.90s  user  발화 시작: Okay, great. And can you find me a highly-rated French resta
-    13.97s  agent 발화 끝
-    18.97s  <ret> 발화 (turn3 첫 프레임)
-    19.37s  agent 발화 시작: <ret> Le Jules Verne, with 4.7 stars, is just 0.2 kilometers
-    19.61s  user  발화 끝
-    20.97s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.49s]: (tool result) Le Jules Verne - 4.7 stars - 0.2 km
-    23.83s  user  발화 시작: Right.
-    24.65s  user  발화 끝
-    25.77s  user  발화 시작: That sounds amazing. Is it expensive?
-    25.86s  agent 발화 끝
-    28.78s  <ret> 발화 (turn6 첫 프레임)
-    29.09s  agent 발화 시작: <ret> Le Jules Verne is in the $$$$ price range, indicating 
-    29.15s  user  발화 끝
-    30.62s  ⚡SPAN 주입 [d'=1.84s / d_lead=5.42s]: (tool result) Price range: $$$$
-    34.39s  user  발화 시작: Oh, wow. Okay, maybe something a little more affordable then
-    34.51s  agent 발화 끝
-    37.80s  <ret> 발화 (turn8 첫 프레임)
-    38.10s  user  발화 끝
-    38.12s  agent 발화 시작: <ret> Les Cocottes has 4.3 stars and is 0.8 kilometers away,
-    39.80s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.95s]: (tool result) Les Cocottes - 4.3 stars - 0.8 km
-    41.92s  user  발화 시작: Yeah.
-    42.42s  user  발화 끝
-    45.07s  agent 발화 끝
-    45.08s  user  발화 시작: That sounds better. Can you show me their menu?
-    48.66s  agent 발화 시작: I can search for a link to Les Cocottes’ menu online for you
-    48.70s  user  발화 끝
-    52.25s  user  발화 시작: Actually, could you check…
-    52.46s  agent 발화 끝
-    54.00s  user  발화 끝
-    55.79s  user  발화 시작: …if they have outdoor seating?
-    57.59s  user  발화 끝
-    57.68s  <ret> 발화 (turn14 첫 프레임)
-    57.76s  agent 발화 시작: <ret> Yes, Les Cocottes does have outdoor seating available.
-    59.18s  user  발화 시작: Yeah.
-    59.68s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.84s]: (tool result) Outdoor seating: Available
-    59.68s  user  발화 끝
-    61.60s  agent 발화 끝
-    61.61s  agent 발화 시작: It’s always nice to enjoy a meal outdoors, especially in Par
-    66.47s  agent 발화 끝
-    68.77s  user  발화 시작: Do they take reservations?
-    70.29s  <ret> 발화 (turn18 첫 프레임)
-    70.45s  agent 발화 시작: <ret> Reservations at Les Cocottes are recommended, as it is
-    70.53s  user  발화 끝
-    72.29s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) Reservations: Recommended
-    75.45s  agent 발화 끝
-    77.81s  user  발화 시작: Okay, can you book a table for two for tomorrow evening at 7
-    82.37s  <ret> 발화 (turn20 첫 프레임)
-    82.72s  user  발화 끝
-    82.73s  agent 발화 시작: <ret> Excellent, your reservation at Les Cocottes is confirm
-    84.37s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.78s]: (tool result) Reservation confirmed - Les Cocottes, tomorrow at 7:30 P
-    92.50s  user  발화 시작: Perfect! Thank you so much.
-    92.51s  agent 발화 끝
-    94.48s  user  발화 끝
-    94.58s  agent 발화 시작: You're very welcome! It sounds like you have a lovely evenin
-    99.23s  user  발화 시작: Could you also find me a good bakery near the Louvre?
-    99.31s  agent 발화 끝
-   102.38s  <ret> 발화 (turn24 첫 프레임)
-   102.61s  agent 발화 시작: <ret> Stohrer, with 4.6 stars, is a highly-rated bakery 0.6 
-   102.70s  user  발화 끝
-   104.38s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.62s]: (tool result) Stohrer - 4.6 stars - 0.6 km
-   109.23s  agent 발화 끝
-   109.74s  user  발화 시작: Oh, Stohrer, I’ve heard of them! Are they known for anything
-   113.95s  <ret> 발화 (turn26 첫 프레임)
-   114.03s  user  발화 끝
-   114.19s  agent 발화 시작: <ret> Stohrer is particularly famous for their rum babas.
-   115.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=3.74s]: (tool result) Speciality: Rum Babas
-   117.71s  user  발화 시작: Rum babas sound delicious! I think that’s all I need for now
-   117.93s  agent 발화 끝
-   121.51s  user  발화 끝
-   121.87s  agent 발화 시작: Wonderful! Enjoy your trip to Paris and the delicious treats
-   126.41s  agent 발화 끝
+     2.53s  <ret> 발화 (turn1 첫 프레임)
+     2.76s  agent 발화 시작: <ret> The Eiffel Tower in Paris is located at… 48.8584 degre
+     2.86s  user  발화 끝
+     3.81s  ⚡SPAN 주입 [d'=1.28s / d_lead=9.36s]: (tool result) 48.8584° N, 2.2945° E
+     9.32s  user  발화 시작: Right.
+    10.09s  user  발화 끝
+    12.12s  agent 발화 끝
+    12.31s  user  발화 시작: That’s great. Now, what’s the fastest way to get there from 
+    15.86s  <ret> 발화 (turn4 첫 프레임)
+    16.25s  agent 발화 시작: <ret> The fastest route from Gare du Nord is… Metro line 4 t
+    16.28s  user  발화 끝
+    17.86s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.37s]: (tool result) Metro line 4 to Strasbourg - Saint-Denis, then line 9 to
+    25.62s  agent 발화 끝
+    25.73s  user  발화 시작: Okay, and is there a cafe near the Trocadéro station?
+    28.46s  <ret> 발화 (turn6 첫 프레임)
+    28.77s  agent 발화 시작: <ret> Near Trocadéro station, there’s Carette—it’s at 3 Aven
+    28.82s  user  발화 끝
+    30.30s  ⚡SPAN 주입 [d'=1.84s / d_lead=6.44s]: (tool result) Carette - Trocadéro. 3 Avenue de New York, 75116 Paris. 
+    33.38s  user  발화 시작: Oh.
+    34.61s  user  발화 끝
+    35.18s  agent 발화 시작: It’s a popular spot, known for its pastries and views. It’s 
+    35.20s  agent 발화 끝
+    37.12s  user  발화 시작: Okay.
+    37.94s  user  발화 끝
+    41.20s  agent 발화 끝
+    41.70s  user  발화 시작: What time does it close?
+    43.12s  <ret> 발화 (turn11 첫 프레임)
+    43.31s  user  발화 끝
+    43.35s  agent 발화 시작: <ret> Carette is open today from… 11:00 AM to 7:00 PM.
+    44.24s  ⚡SPAN 주입 [d'=1.12s / d_lead=4.12s]: (tool result) 11:00 AM to 7:00 PM.
+    47.47s  agent 발화 끝
+    47.80s  user  발화 시작: Could you book a table for two there at six thirty?
+    50.39s  user  발화 끝
+    50.57s  agent 발화 시작: To confirm, you’d like a table for two at Carette at 6:30 PM
+    54.36s  agent 발화 끝
+    56.81s  user  발화 시작: Yes, please.
+    57.80s  <ret> 발화 (turn15 첫 프레임)
+    57.95s  agent 발화 시작: <ret> Alright, I’ve booked a table for you—confirmation numb
+    58.00s  user  발화 끝
+    59.48s  ⚡SPAN 주입 [d'=1.68s / d_lead=8.06s]: (tool result) Confirmation: RT492873. Table for 2 at 6:30 PM.
+    65.97s  user  발화 시작: Perfect! Uhm.
+    66.01s  agent 발화 끝
+    67.27s  agent 발화 시작: And knowing that you’re planning a lovely evening—
+    67.54s  user  발화 끝
+    69.59s  user  발화 시작: …actually, what’s the weather like right now near the Eiffel
+    70.09s  agent 발화 끝
+    72.88s  <ret> 발화 (turn19 첫 프레임)
+    73.02s  user  발화 끝
+    73.04s  agent 발화 시작: <ret> …18 degrees Celsius and partly cloudy, with a wind spe
+    74.88s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.00s]: (tool result) 18°C, partly cloudy. Wind 12 km/h.
+    78.04s  agent 발화 끝
+    78.08s  user  발화 시작: That sounds pleasant. Is there anything else I should know a
+    81.83s  user  발화 끝
+    81.88s  agent 발화 시작: Carette is known for its macarons and hot chocolate—it’s a c
+    88.64s  agent 발화 끝
+    88.70s  user  발화 시작: Good to know. What’s the best way to get from there back to 
+    93.08s  <ret> 발화 (turn23 첫 프레임)
+    93.31s  agent 발화 시작: <ret> From Carette, the fastest way back to Gare du Nord is…
+    93.43s  user  발화 끝
+    94.60s  ⚡SPAN 주입 [d'=1.52s / d_lead=9.74s]: (tool result) Metro line 9 to Franklin D. Roosevelt, then line 2 to Ga
+   103.05s  agent 발화 끝
+   103.57s  user  발화 시작: Okay, that’s very helpful. Thanks so much!
+   106.48s  user  발화 끝
+   106.91s  agent 발화 시작: You’re very welcome! It sounds like you have a wonderful eve
+   115.27s  user  발화 시작: I think so too. Is there a good playlist for walking around 
+   115.48s  agent 발화 끝
+   119.57s  user  발화 끝
+   119.91s  agent 발화 시작: That's a lovely idea! I can suggest a playlist for a Parisia
+   124.63s  agent 발화 끝
+   125.71s  user  발화 시작: Yes, please!
+   126.73s  <ret> 발화 (turn29 첫 프레임)
+   126.88s  agent 발화 시작: <ret> I found “Parisian Café Vibes” on Spotify—it’s 2 hours 
+   127.04s  user  발화 끝
+   128.74s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.42s]: (tool result) “Parisian Café Vibes” on Spotify. 2 hours 30 minutes.
+   130.24s  user  발화 시작: Yeah, totally.
+   131.53s  user  발화 끝
+   132.30s  agent 발화 끝
+   132.38s  user  발화 시작: That sounds perfect. Thanks again, Nellara.
+   134.88s  agent 발화 시작: You're most welcome. Enjoy your trip!
+   134.92s  user  발화 끝
+   137.42s  agent 발화 끝

@@ -64,33 +64,32 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] I was just wondering… where does the phrase “big brother” actually come from? …
-[  6.00s][user ] …I always assumed it was just a common saying…
-[  9.92s][user ] …but it feels like there's more ⟨ret@11.52s⟩ to it.
-[ 11.84s][moshi] The phrase ⟦⚡SPAN@13.52s: [source: Wikipedia] "The term 'Big Brother' originated from George Orwell's dystopian novel *Nineteen Eighty-F⟧ "big brother" actually comes from literature… specifically, George Orwell’s *Nineteen Eighty-Four* in 1949.
-[ 20.61s][user ] Oh, a book! That makes sense. Is it about actual brothers, or is it more metaphorical?
-[ 26.34s][moshi] It’s quite metaphorical, representing government surveillance and control. Orwell used it to depict a constant, watchful state.
-[ 32.76s][user ] «backchannel» Yeah, yeah.
-[ 35.89s][user ] Surveillance, right. That’s… unsettling. Is that book still widely read, ⟨ret@40.99s⟩ then?
-[ 41.23s][moshi] It is ⟦⚡SPAN@42.67s: [source: Goodreads] " *Nineteen Eighty-Four* has sold over 50 million copies worldwide and is considered one o⟧ very widely read, actually… with over fifty million copies sold worldwide.
-[ 43.71s][user ] «backchannel» Mm-hmm.
-[ 47.84s][user ] Wow, fifty million! That’s incredible. It sounds like a pretty impactful story.
-[ 53.48s][moshi] It certainly has been. The concepts within it continue to resonate and influence discussions today.
-[ 56.28s][user ] «backchannel» Yeah.
-[ 59.81s][user ] Hmm. So, if it's about surveillance…
-[ 64.09s][user ] …are there any real-world examples that people often compare it to?
-[ 67.67s][moshi] ⟨ret@67.59s⟩ It's often ⟦⚡SPAN@69.03s: [source: Electronic Frontier Foundation] "The term 'Big Brother' is frequently invoked in discussions about go⟧ used when discussing government surveillance programs… like the PRISM program.
-[ 69.92s][user ] «backchannel» Mm-hmm.
-[ 73.21s][user ] PRISM… I think I’ve heard of that. Was that the one Snowden talked about?
-[ 77.25s][moshi] Yes, Edward Snowden’s revelations in 2013 brought attention to PRISM and similar data collection efforts.
-[ 85.02s][user ] So, Orwell basically predicted that kind of thing? That’s a little scary.
-[ 89.27s][moshi] In a way, yes. He foresaw the potential for technology to be used for widespread monitoring and control.
-[ 94.33s][user ] «backchannel» Mm-hmm.
-[ 97.77s][user ] It's funny how books can do that… predict the future, almost.
-[101.32s][moshi] [curious] It's a testament to insightful observation and a deep understanding of human nature, really.
-[103.53s][user ] «backchannel» Yeah.
-[107.08s][user ] I suppose so. I might actually have to read that book now.
-[110.27s][moshi] It’s a powerful read, though it can be quite thought-provoking. I hope you find it worthwhile.
-[112.10s][user ] «backchannel» Right.
-[115.63s][user ] Thanks, Braera. I appreciate the info.
-[117.91s][moshi] You’re very welcome. It’s my pleasure to help you explore interesting origins like these.
+[  0.00s][user ] So, I was reading this book, and it mentioned Big ⟨ret@2.92s⟩ Brother…
+[  3.24s][moshi] The phrase ⟦⚡SPAN@4.92s: "[source: Wikipedia] The term 'Big Brother' originates from the 1949 novel Nineteen Eighty-Four by George Orwe⟧ “Big Brother” actually comes from literature—specifically, George Orwell’s novel Nineteen Eighty-Four.
+[ 11.45s][user ] Nineteen Eighty-Four? That sounds……
+[ 14.73s][user ] …familiar. What’s it about, ⟨ret@16.60s⟩ briefly?
+[ 17.00s][moshi] It’s a ⟦⚡SPAN@18.60s: "[source: Britannica] Nineteen Eighty-Four is a dystopian novel set in Oceania, a totalitarian state where the⟧ dystopian novel set in a place called Oceania, where the government, the Party, controls absolutely everything—public life, and even your private thoughts.
+[ 26.37s][user ] «backchannel» Yeah, yeah.
+[ 30.32s][user ] Wow, that sounds pretty grim. Uhhh, was Orwell trying to warn people about something ⟨ret@35.83s⟩ specific?
+[ 36.23s][moshi] Orwell intended the ⟦⚡SPAN@37.75s: "[source: History.com] Orwell wrote Nineteen Eighty-Four as a warning against totalitarianism and the dangers ⟧ book to be a warning against totalitarianism, and the dangers of a government with too much power. It’s a rather powerful message, isn’t it?
+[ 40.56s][user ] «backchannel» Mm-hmm.
+[ 47.90s][user ] Definitely. So, is it, like, a direct commentary on any specific country or leader?
+[ 53.01s][moshi] ⟨ret@52.93s⟩ It wasn’t meant to ⟦⚡SPAN@54.93s: "[source: Literary Hub] While not directly based on one figure, Nineteen Eighty-Four draws inspiration from St⟧ be about one single country or leader, but it was inspired by both Stalinist Russia and Nazi Germany.
+[ 56.84s][user ] «backchannel» Yeah.
+[ 62.02s][user ] I see. That makes sense. It’s interesting how things like that stick around in the culture, though.
+[ 66.42s][moshi] It is, isn’t it? Concepts from great literature often become part of our collective understanding of the world.
+[ 69.54s][user ] «backchannel» Mm-hmm.
+[ 74.13s][user ] Right. Well…
+[ 76.21s][user ] …I’m trying to plan a trip… to London, ⟨ret@79.40s⟩ actually.
+[ 79.71s][moshi] You could visit the ⟦⚡SPAN@81.40s: "(tool result) UCL University College London has a dedicated Orwell Room; there's also a pub he frequented, Th⟧ Orwell Room at University College London. There’s also a pub he used to go to, called The Grenadier.
+[ 87.78s][user ] A pub? That sounds nice. What year did Orwell actually *write* ⟨ret@92.58s⟩ Nineteen Eighty-Four?
+[ 92.97s][moshi] George Orwell ⟦⚡SPAN@94.58s: "[source: George Orwell Online] George Orwell began writing Nineteen Eighty-Four in 1948 and finished it in 19⟧ began writing Nineteen Eighty-Four in nineteen forty-eight, and finished it in nineteen forty-nine.
+[ 98.23s][user ] «backchannel» Mm-hmm.
+[102.17s][user ] Okay, so pretty close to the title year. Hmm… are there any good audiobooks of ⟨ret@107.39s⟩ it?
+[107.54s][moshi] The narration ⟦⚡SPAN@108.67s: "(tool result) The Simon Vance narration of Nineteen Eighty-Four is highly rated, available on Audible."⟧ by Simon Vance is very popular and available on Audible.
+[109.36s][user ] «backchannel» Yeah.
+[112.46s][user ] Simon Vance… I’ll look him up. That’s really helpful, thanks.
+[116.12s][moshi] You’re very welcome. I’m glad I could help you explore that question and perhaps add something to your trip planning.
+[118.83s][user ] «backchannel» Right.
+[124.36s][user ] I think that’s all for now.
+[125.68s][moshi] Very well. Enjoy your trip to London, and I hope you find the audiobook a good experience.

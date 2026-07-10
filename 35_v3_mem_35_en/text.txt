@@ -67,13 +67,14 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][moshi] Hi Avery, I'm Klen.
-[  2.01s][user ] Yeah, I am. I’m starting to look at flights for that New Zealand trip I ⟨ret@6.03s⟩ mentioned.
-[  6.43s][moshi] You’re planning a trip to ⟦⚡SPAN@8.03s: [2026-06-07] User is planning a trip to New Zealand in March.⟧ New Zealand in March, which is wonderful – March is a beautiful time to visit. Do you have any specific regions in mind yet?
-[ 15.17s][user ] Not really, I was hoping you could suggest something. I’m really into alpine wildflower photography.
-[ 21.14s][moshi] «interrupted» ⟨ret@21.12s⟩ Alpine wildflower photography in ⟦⚡SPAN@23.12s: [2025-08-26] User is into alpine wildflower photography.⟧ New Zealand… that sounds absolutely stunning. The best time for that is typically late spring, and the Mackenzie Basin offers incredible opportunities –
-[ 32.69s][user ] «interrupts_prev» …Is it easy to get to from Christchurch?
-[ 35.70s][moshi] That’s a very practical question. The Mackenzie Basin is about a three-hour drive southwest of Christchurch, making it quite accessible.
-[ 42.12s][user ] «backchannel» Mm-hmm.
-[ 44.31s][moshi] Many guided photography tours operate from Christchurch, or you could easily rent a car and explore at your own pace. Would you prefer a guided experience, or independent travel?
-[ 56.89s][user ] I think independent travel would be better. What’s the weather like in March?
+[  0.00s][moshi] Hi Avery, I'm Klen. I understand you’re planning a trip to New Zealand in March?
+[  5.48s][user ] Yes, that’s right. I’m starting to think about where to go ⟨ret@8.95s⟩ there, actually.
+[  9.34s][moshi] Given your trip to ⟦⚡SPAN@10.95s: [2026-06-07] User is planning a trip to New Zealand in March.⟧ New Zealand is planned for March, and knowing you enjoy alpine wildflower photography, I recommend Fiordland National Park—it’s stunning that time of year.
+[ 16.60s][user ] «backchannel» Mm-hmm.
+[ 18.89s][moshi] Fiordland offers incredible opportunities for photographing rare and beautiful wildflowers, with guided walks available.
+[ 26.60s][user ] …Is it easy to get to from ⟨ret@29.35s⟩ Queenstown?
+[ 29.51s][moshi] Getting to Fiordland from ⟦⚡SPAN@31.35s: [2026-06-07] User is planning a trip to New Zealand in March.⟧ Queenstown is quite straightforward—you can take a scenic coach or rent a car for more flexibility. The coach journey takes around four hours, offering beautiful views along the way.
+[ 33.45s][user ] «backchannel» Mm-hmm.
+[ 41.88s][user ] That sounds manageable. Are there good places to stay near the park?
+[ 46.81s][moshi] ⟨ret@46.57s⟩ There are several ⟦⚡SPAN@48.57s: [2026-06-07] User is planning a trip to New Zealand in March.⟧ charming accommodations near Fiordland National Park, ranging from cozy lodges to comfortable hotels in Te Anau—a small town just outside the park.
+      CALL: {"function": "get_travel_time", "arguments": {"origin": "Queenstown", "destination": "Fiordland National Park", "mode": "coach"}}

@@ -1,0 +1,71 @@
+v3_rag_27_ko src=hotpotqa style=v1
+SYSTEM: <system> 당신은 학습 및 동기 부여에 도움을 주는 따뜻하고 세심한 상담사 Doon입니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_rag_27",
+    "name": "연준",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-05-17",
+      "category": "hobby",
+      "text": "User is into marathon training."
+    },
+    {
+      "date": "2025-12-07",
+      "category": "home",
+      "text": "User's home address is 945 Elm Street."
+    },
+    {
+      "date": "2025-12-06",
+      "category": "diet",
+      "text": "User is lactose-intolerant."
+    },
+    {
+      "date": "2025-09-15",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is Thai."
+    },
+    {
+      "date": "2025-06-11",
+      "category": "work",
+      "text": "User works as a high-school teacher."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-03",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 럭스 아우룬케 작곡가가 태어난 해가 언제예요?
+[  3.03s][moshi] ⟨ret@2.96s⟩ 럭스 아우룬케 작곡가가 ⟦⚡SPAN@4.96s: "[source: AllMusic] Lux Aurunque was born in 1970."⟧ 태어난 해는… 천구백칠십 년입니다.
+[  5.00s][user ] «backchannel» 예.
+[  6.41s][user ] 아, 그렇군요. 그럼 그분은…
+[ 10.53s][user ] …주로 어떤 장르의 음악을 만드세요?
+[ 13.12s][moshi] ⟨ret@12.97s⟩ 럭스 아우룬케 작곡가는 주로 ⟦⚡SPAN@14.97s: "[source: Rate Your Music] Lux Aurunque primarily composes dark ambient and drone music."⟧ 다크 앰비언트와 드론 음악을 만드세요.
+[ 15.40s][user ] «backchannel» 음.
+[ 17.09s][user ] 드론 음악이요? 그게 어떤 스타일이에요? —
+[ 19.59s][user ] … 혹시 그분이 다른 이름으로 활동하기도 하나요?
+[ 22.74s][moshi] ⟨ret@22.66s⟩ 다른 이름으로 활동하는지… ⟦⚡SPAN@24.66s: "(tool result) No known aliases found for Lux Aurunque."⟧ 지금 확인해 볼게요.
+[ 26.02s][moshi] 다른 이름으로 활동한 기록은 없는 것 같아요. 럭스 아우룬케라는 이름으로만 활동하는군요.
+[ 28.82s][user ] «backchannel» 아.
+[ 31.89s][user ] 그렇군요. 알려주셔서 감사합니다.

@@ -63,18 +63,25 @@
 #   ]
 # }
 
+# EXAMINER(FDB-v2) 단계: S1 I was reading about government dep | S2 …when did the Veterans Affairs dep | S3 1930? That seems… surprisingly rec | S4 So, the Bureau did everything? It 
 
-     0.00s  user  발화 시작: I was just reading about government departments, and it made
-     6.69s  <ret> 발화 (turn1 첫 프레임)
-     7.01s  agent 발화 시작: <ret> The Department of Veterans Affairs was formally establ
-     7.21s  user  발화 끝
-     7.81s  ⚡SPAN 주입 [d'=1.12s / d_lead=5.18s]: [source: Britannica] The United States Department of Veterans Affairs 
-    12.19s  agent 발화 끝
-    12.60s  user  발화 시작: July 1930? That seems… late. I thought there must have been 
-    20.64s  <ret> 발화 (turn3 첫 프레임)
-    20.81s  user  발화 끝
-    21.04s  agent 발화 시작: <ret> You’re right to question that—there were certainly eff
-    22.64s  ⚡SPAN 주입 [d'=2.00s / d_lead=5.37s]: [source: VA.gov] Prior to 1930, the Veterans Bureau, established in 19
-    26.23s  agent 발화 시작: Support for veterans existed before 1930… through the Vetera
-    26.42s  agent 발화 끝
-    31.89s  agent 발화 끝
+     0.00s  user  발화 시작: I was reading about government departments……
+     2.26s  user  발화 끝
+     3.56s  user  발화 시작: …when did the Veterans Affairs department actually start?
+     6.16s  <ret> 발화 (turn2 첫 프레임)
+     6.48s  agent 발화 시작: <ret> The Department of Veterans Affairs was formed by Presi
+     6.53s  user  발화 끝
+     7.52s  ⚡SPAN 주입 [d'=1.36s / d_lead=8.30s]: [source: Wikipedia] The Department of Veterans Affairs was established
+    14.77s  agent 발화 끝
+    15.83s  user  발화 시작: 1930? That seems… surprisingly recent, actually. Was there n
+    20.48s  <ret> 발화 (turn4 첫 프레임)
+    20.88s  agent 발화 시작: <ret> Before the department as it exists today, veterans’ af
+    21.01s  user  발화 끝
+    22.48s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.31s]: [source: U.S. Department of Veterans Affairs History] Prior to 1930, t
+    30.17s  user  발화 시작: So, the Bureau did everything? It sounds like a big shift to
+    30.20s  agent 발화 끝
+    35.43s  <ret> 발화 (turn6 첫 프레임)
+    35.83s  agent 발화 시작: <ret> The act of nineteen thirty consolidated several agenci
+    35.96s  user  발화 끝
+    37.43s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.15s]: [source: Congressional Research Service] The 1930 act consolidated var
+    43.99s  agent 발화 끝

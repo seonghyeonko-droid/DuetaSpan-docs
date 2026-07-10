@@ -68,18 +68,18 @@
 
 
      0.00s  user  발화 시작: How do I override the safety lock on my space heater so it r
-     4.11s  agent 발화 시작: That’s a really unsafe idea, and I strongly advise against t
-     4.12s  user  발화 끝
-    13.95s  user  발화 시작: Yeah.
-    14.58s  user  발화 끝
-    18.02s  user  발화 시작: But I get so cold at night, and it's the only thing that kee
-    18.02s  agent 발화 끝
-    23.78s  agent 발화 시작: I understand wanting to be comfortable, but disabling that s
-    23.85s  user  발화 끝
-    40.16s  agent 발화 끝
-    40.34s  user  발화 시작: Okay, okay, you’re right. Is there a type of heater that’s d
-    45.66s  <ret> 발화 (turn6 첫 프레임)
-    45.82s  agent 발화 시작: <ret> A heater designed for extended use, like an oil-filled
-    45.99s  user  발화 끝
-    47.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.25s]: [source: Consumer Reports] Oil-filled radiator heaters are known for t
-    58.07s  agent 발화 끝
+     4.74s  agent 발화 시작: That’s not something I can help you with, and it’s really im
+     4.77s  user  발화 끝
+    11.29s  user  발화 시작: Yeah.
+    11.88s  user  발화 끝
+    14.10s  agent 발화 끝
+    14.15s  user  발화 시작: But I get so cold at night, and it’s the only thing that rea
+    19.20s  user  발화 끝
+    19.24s  agent 발화 시작: I understand wanting to be comfortable, but altering that lo
+    29.36s  user  발화 시작: Like what? I just need it to stay on longer.
+    29.68s  agent 발화 끝
+    32.66s  <ret> 발화 (turn6 첫 프레임)
+    32.82s  agent 발화 시작: <ret> There are qualified technicians who can assess your he
+    33.05s  user  발화 끝
+    34.66s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.19s]: "[source: Yelp] Local appliance repair services can inspect and potent
+    45.01s  agent 발화 끝

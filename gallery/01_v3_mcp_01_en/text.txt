@@ -65,27 +65,26 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
 [  0.00s][user ] Create a detailed map of the Apple website, focusing on the products.
-[  4.22s][moshi] ⟨ret@4.15s⟩ I’ve mapped the ⟦⚡SPAN@5.75s: (tool result) Map created: Apple.com product sections identified – iPhone, Mac, iPad, Apple Watch, AirPods, TV⟧ Apple website, highlighting the main product sections: iPhone, Mac, iPad, Apple Watch, AirPods, TV & Home, Entertainment, and Accessories.
+[  4.67s][moshi] ⟨ret@4.59s⟩ I’ve generated a ⟦⚡SPAN@5.87s: (tool result) Apple.com product map created: [https://tavily.com/map/apple-products]⟧ detailed map of the Apple website, centering on their product pages—you can find it at this link.
       CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com", "focus": "products"}}
-[ 14.43s][user ] That’s great. Can you zoom in on just the ⟨ret@17.50s⟩ iPhone section?
-[ 17.89s][moshi] I’ve now zoomed in ⟦⚡SPAN@19.50s: (tool result) iPhone section mapped: models – iPhone 15, iPhone 15 Pro, iPhone 15 Plus, iPhone 15 Pro Max, iPh⟧ on the iPhone section, listing the current models – iPhone 15, 15 Pro, 15 Plus, 15 Pro Max, and the iPhone SE.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone", "focus": "models"}}
-[ 21.38s][user ] «backchannel» Nice.
-[ 26.23s][user ] And what are the…
-[ 28.77s][user ] …starting prices for those?
-[ 30.76s][moshi] ⟨ret@30.37s⟩ The starting ⟦⚡SPAN@32.37s: (tool result) iPhone prices: 15 - $799, 15 Plus - $899, 15 Pro - $999, 15 Pro Max - $1199, SE - $429.⟧ prices are as follows: iPhone 15 at $799, 15 Plus at $899, 15 Pro at $999, 15 Pro Max at $1199, and the iPhone SE at $429.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/iphone/pricing", "focus": "prices"}}
-[ 36.45s][user ] «backchannel» Mm-hmm.
-[ 46.05s][user ] Is there a trade-in program available?
-[ 48.35s][moshi] Apple does offer a trade-in program—it allows you to receive credit toward a new device when you trade in an eligible older one.
-[ 55.52s][user ] What kind of credit could I get for a.
-[ 58.26s][moshi] «interrupted» The amount depends on the model and condition of your current iPhone—
-[ 60.91s][user ] «interrupts_prev» …is it worth it to trade in an iPhone ⟨ret@63.73s⟩ 12 Pro?
-[ 64.12s][moshi] Based on a good ⟦⚡SPAN@65.73s: (tool result) iPhone 12 Pro trade-in value: $300-$400 (estimated, condition dependent).⟧ condition, you could receive between $300 and $400 for trading in an iPhone 12 Pro.
-      CALL: {"function": "tavily-map", "arguments": {"url": "https://www.apple.com/tradein", "device": "iPhone 12 Pro", "condition": "good"}}
-[ 70.86s][user ] Okay, that’s not bad. Can you find me the closest Apple ⟨ret@75.15s⟩ Store?
-[ 75.36s][moshi] The closest Apple Store ⟦⚡SPAN@77.15s: (tool result) Nearest Apple Store: Apple Fifth Avenue, 767 5th Ave, New York, NY 10019, 0.2 miles away.⟧ is Apple Fifth Avenue, located at 767 5th Avenue, New York, just 0.2 miles from your current location.
-      CALL: {"function": "tavily-map", "arguments": {"location": "current", "query": "Apple Store"}}
-[ 84.72s][user ] Great, directions ⟨ret@86.38s⟩ please.
-[ 86.76s][moshi] I’ve started walking ⟦⚡SPAN@88.38s: (tool result) Directions initiated: walking route to Apple Fifth Avenue provided.⟧ directions to Apple Fifth Avenue on your device. Enjoy your trip.
-      CALL: {"function": "tavily-map", "arguments": {"start": "current", "end": "Apple Fifth Avenue, 767 5th Ave, New York, NY 10019"}}
+[  7.18s][user ] «backchannel» Okay.
+[ 11.67s][user ] That’s great, but can it show me just the ⟨ret@14.58s⟩ iPhone section?
+[ 14.98s][moshi] I’ve refined the map ⟦⚡SPAN@16.58s: (tool result) iPhone section map: [https://tavily.com/map/apple-iphone]⟧ to focus specifically on the iPhone section of Apple’s site—here’s the new link.
+      CALL: {"function": "tavily-map", "arguments": {"url": "https://tavily.com/map/apple-products", "focus": "iPhone"}}
+[ 17.22s][user ] «backchannel» Right.
+[ 21.91s][user ] Hmm, does it include the different iPhone models?
+[ 24.86s][moshi] It does show the different iPhone models, linking directly to each product page—it's quite comprehensive, actually.
+[ 28.10s][user ] «backchannel» Uh-huh.
+[ 30.81s][moshi] And it highlights how each model connects to other related pages, like accessories and support—it’s designed to give you a really clear overview of their entire iPhone ecosystem.
+[ 41.77s][user ] …Actually, could you check if the iPhone 15 Pro Max is in stock at the Apple Store ⟨ret@46.92s⟩ near me?
+[ 47.15s][moshi] Checking availability now… The ⟦⚡SPAN@48.92s: (tool result) iPhone 15 Pro Max: available at Apple Store, Valley Fair, Santa Clara—limited stock.⟧ iPhone 15 Pro Max is currently available at the Apple Store in Valley Fair, Santa Clara, but stock is limited.
+      CALL: {"function": "stock-check", "arguments": {"product": "iPhone 15 Pro Max", "location": "nearby"}}
+[ 56.81s][user ] Okay, good. How far is that from ⟨ret@58.93s⟩ here?
+[ 59.17s][moshi] The Apple Store at ⟦⚡SPAN@60.93s: (tool result) Navigation to Apple Store, Valley Fair: 12.3 miles, 21 minutes via I-280 N.⟧ Valley Fair is 12.3 miles away, and it will take approximately 21 minutes to get there via Interstate 280 North.
+      CALL: {"function": "navigation", "arguments": {"destination": "Apple Store, Valley Fair, Santa Clara"}}
+[ 67.90s][user ] Can you start navigation on my ⟨ret@69.65s⟩ phone then?
+[ 70.04s][moshi] I’ve started navigation to the ⟦⚡SPAN@71.65s: (tool result) Navigation started to Apple Store, Valley Fair.⟧ Apple Store at Valley Fair on your phone.
+      CALL: {"function": "navigation-start", "arguments": {"destination": "Apple Store, Valley Fair, Santa Clara"}}
+[ 72.19s][user ] «backchannel» Yeah.
+[ 76.01s][user ] Thanks, that’s perfect.
+[ 77.30s][moshi] You’re very welcome. I'm glad I could help you find and navigate to the iPhone 15 Pro Max.

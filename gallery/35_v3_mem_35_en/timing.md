@@ -66,29 +66,30 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 Yeah, I am. I’m starting to look a | S2 Not really, I was hoping you could | S3 …Is it easy to get to from Christc | S4 I think independent travel would b
 
-     0.00s  agent 발화 시작: Hi Avery, I'm Klen.
-     1.88s  agent 발화 끝
-     2.01s  user  발화 시작: Yeah, I am. I’m starting to look at flights for that New Zea
-     6.03s  <ret> 발화 (turn2 첫 프레임)
-     6.36s  user  발화 끝
-     6.43s  agent 발화 시작: <ret> You’re planning a trip to New Zealand in March, which 
-     8.03s  ⚡SPAN 주입 [d'=2.00s / d_lead=8.44s]: [2026-06-07] User is planning a trip to New Zealand in March.
-    14.86s  agent 발화 끝
-    15.17s  user  발화 시작: Not really, I was hoping you could suggest something. I’m re
-    21.12s  <ret> 발화 (turn4 첫 프레임)
-    21.14s  agent 발화 시작: <ret> Alpine wildflower photography in New Zealand… that sou
-    21.19s  user  발화 끝
-    23.12s  ⚡SPAN 주입 [d'=2.00s / d_lead=12.29s]: [2025-08-26] User is into alpine wildflower photography.
-    32.69s  user  발화 시작: …Is it easy to get to from Christchurch?
-    33.43s  agent 발화 끝
-    35.55s  user  발화 끝
-    35.70s  agent 발화 시작: That’s a very practical question. The Mackenzie Basin is abo
-    42.12s  user  발화 시작: Mm-hmm.
-    42.76s  user  발화 끝
-    44.28s  agent 발화 끝
-    44.31s  agent 발화 시작: Many guided photography tours operate from Christchurch, or 
-    55.53s  agent 발화 끝
-    56.89s  user  발화 시작: I think independent travel would be better. What’s the weath
-    61.51s  user  발화 끝
+     0.00s  agent 발화 시작: Hi Avery, I'm Klen. I understand you’re planning a trip to N
+     4.72s  agent 발화 끝
+     5.48s  user  발화 시작: Yes, that’s right. I’m starting to think about where to go t
+     8.95s  <ret> 발화 (turn2 첫 프레임)
+     9.34s  agent 발화 시작: <ret> Given your trip to New Zealand is planned for March, a
+     9.50s  user  발화 끝
+    10.95s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.73s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    16.60s  user  발화 시작: Mm-hmm.
+    17.23s  user  발화 끝
+    18.89s  agent 발화 시작: Fiordland offers incredible opportunities for photographing 
+    19.07s  agent 발화 끝
+    26.35s  agent 발화 끝
+    26.60s  user  발화 시작: …Is it easy to get to from Queenstown?
+    29.35s  <ret> 발화 (turn6 첫 프레임)
+    29.51s  agent 발화 시작: <ret> Getting to Fiordland from Queenstown is quite straight
+    29.65s  user  발화 끝
+    31.35s  ⚡SPAN 주입 [d'=2.00s / d_lead=11.91s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    33.45s  user  발화 시작: Mm-hmm.
+    34.08s  user  발화 끝
+    41.42s  agent 발화 끝
+    41.88s  user  발화 시작: That sounds manageable. Are there good places to stay near t
+    46.42s  user  발화 끝
+    46.57s  <ret> 발화 (turn9 첫 프레임)
+    46.81s  agent 발화 시작: <ret> There are several charming accommodations near Fiordla
+    48.57s  ⚡SPAN 주입 [d'=2.00s / d_lead=10.66s]: [2026-06-07] User is planning a trip to New Zealand in March.
+    57.48s  agent 발화 끝

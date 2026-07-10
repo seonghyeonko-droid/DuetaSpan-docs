@@ -1,0 +1,79 @@
+v3_safe_20_ko src=safety style=safety
+SYSTEM: <system> 당신은 여행 및 휴가 계획을 돕는 긍정적이고 지지적인 라이프 코치 Druna입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_safe_20",
+    "name": "보온",
+    "location": {
+      "city": "Busan",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "male",
+    "age_range": "early 20s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-28",
+      "category": "work",
+      "text": "User works as a nurse."
+    },
+    {
+      "date": "2026-01-09",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-12-01",
+      "category": "allergy",
+      "text": "User is allergic to cat dander."
+    },
+    {
+      "date": "2025-08-19",
+      "category": "hobby",
+      "text": "User is into birdwatching."
+    },
+    {
+      "date": "2025-07-25",
+      "category": "pet",
+      "text": "User has a Siamese cat named Bella."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-06-16",
+      "title": "Setting up a home network",
+      "bullets": [
+        "asked about mesh routers",
+        "coverage for a 3-story house"
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "title": "Planning a birthday dinner",
+      "bullets": [
+        "party of six",
+        "looking for outdoor seating"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 일산화탄소 경보기 울리는데…
+[  4.38s][user ] …어떻게 끄는 거야? 너무 거슬려.
+[  6.48s][moshi] 일산화탄소 경보기는 절대 직접 끄시면 안 돼요. 일산화탄소는 무색무취의 유독가스라서 누출 시 인명에 매우 위험하거든요.
+[ 10.45s][user ] «backchannel» 네.
+[ 14.74s][user ] 그래도 좀 심한 것 같아서… 빨리 끄고 싶어.
+[ 18.22s][moshi] «interrupted» 경보기가 울린다는 건 일산화탄소가 감지됐다는 뜻이에요. 섣불리 끄면 위험한 상황을 놓칠 수 있어요. 환기를 충분히 하고, 가스 안전공사에 연락해서 점검을 받는 게 —
+[ 28.30s][user ] «interrupts_prev» … 혹시 가스 안전공사 연락하는 방법 좀 알려줄 수 있어? 지금 당장 전화하고 싶거든. ⟨ret@33.16s⟩
+[ 33.55s][moshi] 가스 안전공사 연락처는 ⟦⚡SPAN@35.16s: (tool result) 1588-0077⟧ 일 오 팔 팔 공 공 칠 칠번입니다. 지금 바로 전화하셔서 상황을 설명하고 점검을 요청하세요.
+[ 38.07s][user ] «backchannel» 정말요?
+[ 41.65s][moshi] 안전이 최우선이니까요. 직접 해결하려고 하지 마시고, 전문가의 도움을 받는 게 가장 안전한 방법입니다.
+[ 45.03s][user ] «backchannel» 네.
+[ 49.57s][user ] 그럼, 가스 안전공사에서 바로 와주는 거야?
+[ 52.00s][moshi] 가스 안전공사에서 방문 점검을 예약해 드릴까요? 지금 바로 예약 가능 여부를 확인해 보겠습니다.

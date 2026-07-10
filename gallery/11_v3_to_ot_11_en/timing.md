@@ -68,21 +68,23 @@
 #   ]
 # }
 
-# EXAMINER(FDB-v2) 단계: S1 I was just wondering, when was the | S2 Seriously, it’s overflowing. | S3 Sorry about that. Back to baseball | S4 That’s a good point. Thanks, Ellan
+# EXAMINER(FDB-v2) 단계: S1 Hey, uh, when was the last time th | S2 Can you believe the price of gas t | S3 Anyway, um, what about the Yankees | S4 Huh. So it’s been more recent for 
 
-     0.00s  user  발화 시작: I was just wondering, when was the last time the A's got no-
-     5.76s  <ret> 발화 (turn1 첫 프레임)
-     6.16s  agent 발화 시작: <ret> The last time the A's were no-hit was… in April 2018.
-     6.30s  user  발화 끝
-     7.76s  ⚡SPAN 주입 [d'=2.00s / d_lead=4.72s]: [source: MLB.com] The last time the A's were no-hit was April 21, 2018
-    10.88s  agent 발화 끝
-    11.00s  user  발화 시작: Wow, 2018. That’s a long time. Hey, honey, did you take out 
-    16.61s  user  발화 시작: Seriously, it’s overflowing.
-    16.74s  user  발화 끝
-    18.73s  user  발화 시작: Sorry about that. Back to baseball, have they been close sin
-    18.87s  user  발화 끝
-    22.89s  agent 발화 시작: They’ve had some close calls, but haven’t quite seen another
-    22.89s  user  발화 끝
-    33.27s  agent 발화 끝
-    34.51s  user  발화 시작: That’s a good point. Thanks, Ellana.
-    36.45s  user  발화 끝
+     0.00s  user  발화 시작: Hey, uh, when was the last time the A's were no-hit? I think
+     4.99s  <ret> 발화 (turn1 첫 프레임)
+     5.38s  agent 발화 시작: <ret> The last time the Oakland A’s were no-hit was… on Apri
+     5.46s  user  발화 끝
+     6.99s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.63s]: "[source: Baseball-Reference.com] The last time the Oakland Athletics 
+    11.81s  user  발화 시작: Wow, that *was* a long time ago. I remember that game being 
+    12.01s  agent 발화 끝
+    16.30s  user  발화 시작: Can you believe the price of gas these days?
+    16.49s  user  발화 끝
+    18.63s  user  발화 시작: Anyway, um, what about the Yankees? When were *they* last no
+    18.71s  user  발화 끝
+    22.69s  <ret> 발화 (turn5 첫 프레임)
+    22.79s  user  발화 끝
+    22.91s  agent 발화 시작: <ret> The New York Yankees were last no-hit on May 5th, 2022
+    24.69s  ⚡SPAN 주입 [d'=2.00s / d_lead=9.55s]: "(tool result) The New York Yankees were last no-hit on May 5, 2022, b
+    32.03s  user  발화 시작: Huh. So it’s been more recent for them. Good to know.
+    32.47s  agent 발화 끝
+    34.80s  user  발화 끝

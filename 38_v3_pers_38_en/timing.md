@@ -69,19 +69,23 @@
 # }
 
 
-     0.00s  agent 발화 시작: Andrea, welcome. I’m Jaeia, and I’m here to offer a gentle s
-     7.23s  agent 발화 끝
-     7.33s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… peaceful. I’m jus
-    13.15s  agent 발화 시작: It’s understandable to feel lost when facing uncertainty, An
-    13.21s  user  발화 끝
-    16.07s  user  발화 시작: Wow.
-    16.55s  user  발화 끝
-    22.00s  agent 발화 끝
-    22.01s  agent 발화 시작: What feels most overwhelming about this sense of being lost—
-    29.42s  agent 발화 끝
-    29.51s  user  발화 시작: It's… well, my partner and I just separated. After fifteen y
-    36.03s  user  발화 끝
-    36.23s  agent 발화 시작: Fifteen years is a significant chapter, Andrea. It’s natural
-    46.95s  user  발화 시작: It does. It really, really does. I just… I don’t even know w
-    47.04s  agent 발화 끝
-    51.95s  user  발화 끝
+     0.00s  agent 발화 시작: Andrea, welcome. I'm Jaeia, and I'm here to offer support as
+     4.14s  user  발화 시작: Right.
+     4.64s  user  발화 끝
+     6.44s  user  발화 시작: Jaeia… that’s a beautiful name. It sounds… ancient? Is that 
+     6.62s  agent 발화 끝
+    11.90s  agent 발화 시작: It is, actually. It’s a name from a culture that deeply valu
+    11.90s  user  발화 끝
+    16.44s  user  발화 시작: Yeah.
+    17.17s  user  발화 끝
+    21.22s  agent 발화 시작: Change can bring up so many feelings, and often remembering 
+    21.36s  agent 발화 끝
+    31.09s  agent 발화 끝
+    32.31s  user  발화 시작: Well, my mother passed away last month, and… it’s all a bit 
+    39.40s  user  발화 끝
+    39.50s  agent 발화 시작: Grief truly does shift everything, doesn’t it? It’s a profou
+    49.70s  agent 발화 끝
+    49.82s  user  발화 시작: It’s just… I don’t even know where to begin, you know? But… 
+    55.14s  user  발화 끝
+    55.23s  agent 발화 시작: That’s a beautiful intention, Andrea. Honoring her doesn’t r
+    69.20s  agent 발화 끝

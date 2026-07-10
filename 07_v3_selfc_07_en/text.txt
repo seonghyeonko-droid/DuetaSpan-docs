@@ -77,41 +77,42 @@ CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 �
 }
 표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
 
-[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June fifteenth.
-[  4.28s][moshi] ⟨ret@4.04s⟩ I’ve scheduled a viewing ⟦⚡SPAN@5.56s: (tool result) Viewing scheduled for The Grandview Lofts, June 15th, 2:00 PM.⟧ for you at The Grandview Lofts on June fifteenth at 2:00 PM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June fifteenth"}}
-[  9.08s][user ] Actually… June sixteenth would work better.
-[ 11.81s][moshi] ⟨ret@11.65s⟩ Let me just confirm that ⟦⚡SPAN@13.65s: (tool result) Viewing rescheduled for The Grandview Lofts, June 16th, 10:30 AM.⟧ for you— the viewing at The Grandview Lofts is now set for June sixteenth at 10:30 AM.
-      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"property": "The Grandview Lofts", "date": "June sixteenth"}}
-[ 19.06s][user ] Great. Can you find me directions to get there from my current location?
-[ 22.97s][moshi] ⟨ret@22.74s⟩ Directions to The ⟦⚡SPAN@24.74s: (tool result) Directions to The Grandview Lofts: 123 Elm Street, 15 minutes via Main Street.⟧ Grandview Lofts, at 123 Elm Street, are approximately fifteen minutes via Main Street.
-      CALL: {"function": "Navigation_2_GetDirections", "arguments": {"destination": "The Grandview Lofts"}}
-[ 29.57s][user ] Okay, and what’s the parking situation like ⟨ret@32.16s⟩ there?
-[ 32.32s][moshi] The Grandview Lofts has ⟦⚡SPAN@34.16s: (tool result) The Grandview Lofts: limited street parking, paid garage nearby.⟧ limited street parking, but there's a paid garage conveniently nearby.
-      CALL: {"function": "Homes_2_GetParkingInfo", "arguments": {"property": "The Grandview Lofts"}}
-[ 37.94s][user ] A paid garage… hmm, is there anything closer, maybe with free ⟨ret@42.39s⟩ parking?
-[ 42.79s][moshi] There’s free parking available at ⟦⚡SPAN@44.39s: (tool result) Free parking available at City Hall lot, 5-minute walk.⟧ the City Hall lot, just a five-minute walk from The Grandview Lofts.
-      CALL: {"function": "Nearby_2_FindParking", "arguments": {"location": "The Grandview Lofts", "preference": "free"}}
-[ 45.43s][user ] «backchannel» Right.
-[ 47.64s][user ] Perfect! Could you set a reminder for me to leave fifteen minutes before the ⟨ret@51.76s⟩ viewing?
-[ 52.15s][moshi] I’ve set a reminder ⟦⚡SPAN@53.76s: (tool result) Reminder set: June 16th, 10:15 AM, "Grandview Lofts Viewing".⟧ for June sixteenth at 10:15 AM for your Grandview Lofts viewing.
-      CALL: {"function": "Reminder_2_SetReminder", "arguments": {"time": "June 16th, 10:15 AM", "event": "Grandview Lofts Viewing"}}
-[ 57.19s][user ] Thanks so much, Tellar. You’re a lifesaver.
-[ 59.53s][moshi] You’re very welcome. It's my pleasure to support you as you navigate this big step.
-[ 65.01s][user ] Actually, before I forget, can you check the weather forecast for that day?
-[ 69.60s][moshi] ⟨ret@69.52s⟩ The forecast for June sixteenth ⟦⚡SPAN@71.52s: (tool result) June 16th, 123 Elm Street: Sunny, high of 75 degrees Fahrenheit.⟧ at 123 Elm Street is sunny with a high of seventy-five degrees Fahrenheit.
-      CALL: {"function": "Weather_2_GetForecast", "arguments": {"date": "June 16th", "location": "123 Elm Street"}}
-[ 75.56s][user ] That sounds lovely. Is there a good coffee shop nearby I could stop at beforehand?
-[ 81.21s][moshi] ⟨ret@81.05s⟩ There's a highly-rated coffee shop, ⟦⚡SPAN@83.05s: (tool result) "The Daily Grind" coffee shop, 2-minute walk from The Grandview Lofts.⟧ “The Daily Grind”, just a two-minute walk from The Grandview Lofts.
-      CALL: {"function": "Nearby_2_FindCoffeeShops", "arguments": {"location": "The Grandview Lofts"}}
-[ 84.24s][user ] «backchannel» Uh-huh.
-[ 86.79s][user ] Oh, great. What are their hours on Saturday?
-[ 90.12s][moshi] ⟨ret@89.80s⟩ ⟦⚡SPAN@90.30s: (tool result) The Daily Grind: Saturday, 7:00 AM to 5:00 PM.⟧ The Daily Grind is open on Saturday from 7:00 AM to 5:00 PM.
-      CALL: {"function": "BusinessHours_2_GetHours", "arguments": {"business": "The Daily Grind", "day": "Saturday"}}
-[ 91.77s][user ] «backchannel» Exactly.
-[ 96.68s][user ] Fantastic. I think that’s everything.
-[ 99.39s][moshi] Wonderful. It sounds like you’re well-prepared for your viewing.
-[103.00s][user ] Yes, I am. Thank you again.
-[105.71s][moshi] You’re very welcome. I wish you all the best with finding a new home.
-[109.19s][user ] I appreciate that.
-[110.65s][moshi] Enjoy your trip.
+[  0.00s][user ] Set up a viewing for me at The Grandview Lofts on June ⟨ret@3.34s⟩ fifteenth.
+[  3.58s][moshi] I’ve scheduled a viewing for ⟦⚡SPAN@5.34s: (tool result) Viewing scheduled for The Grandview Lofts, June 15th, 2:00 PM.⟧ you at The Grandview Lofts on June fifteenth at two in the afternoon. That sounds like a great first step!
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June fifteenth"}}
+[ 11.55s][user ] Actually… June sixteenth would be better.
+[ 13.85s][moshi] ⟨ret@13.69s⟩ No problem at all. ⟦⚡SPAN@15.69s: (tool result) Viewing rescheduled for The Grandview Lofts, June 16th, 2:00 PM.⟧ I’ve rescheduled your viewing for The Grandview Lofts to June sixteenth, also at two PM. Sometimes a little flexibility makes all the difference.
+      CALL: {"function": "Homes_2_ScheduleVisit", "arguments": {"propertyName": "The Grandview Lofts", "date": "June sixteenth"}}
+[ 24.88s][user ] Great. And can you check…
+[ 28.30s][user ] …if there’s parking available ⟨ret@30.14s⟩ nearby?
+[ 30.38s][moshi] Yes, there’s parking at ⟦⚡SPAN@32.14s: (tool result) Parking available at Grandview Garage, 2 blocks away, $5/hour.⟧ the Grandview Garage, two blocks from the lofts, at five dollars an hour. Knowing your options eases stress.
+      CALL: {"function": "Parking_2_CheckAvailability", "arguments": {"location": "The Grandview Lofts"}}
+[ 39.03s][user ] Is there… a cheaper ⟨ret@40.84s⟩ option?
+[ 41.00s][moshi] There's street parking available, ⟦⚡SPAN@42.84s: (tool result) Street parking available, limited spaces, $2/hour, 5-minute walk.⟧ a five-minute walk away, for two dollars an hour, though spaces are limited. Sometimes, a little searching saves money.
+      CALL: {"function": "Parking_2_CheckAvailability", "arguments": {"location": "The Grandview Lofts", "maxPrice": "$3/hour"}}
+[ 49.96s][user ] Okay, street parking it is.
+[ 52.56s][moshi] Wonderful. I’ve noted your preference for street parking. It’s good to have a plan.
+[ 55.17s][user ] «backchannel» Right.
+[ 58.77s][user ] Could you add a reminder to my calendar?
+[ 61.31s][moshi] What time would you like the reminder set for?
+[ 64.07s][user ] Uhhh… one hour before. ⟨ret@65.61s⟩
+[ 66.01s][moshi] I’ve set a reminder ⟦⚡SPAN@67.61s: (tool result) Reminder set for June 16th, 1:00 PM: The Grandview Lofts Viewing.⟧ for June sixteenth at one PM for your viewing at The Grandview Lofts. It’s helpful to have those little nudges!
+      CALL: {"function": "Calendar_2_AddReminder", "arguments": {"time": "1 hour before", "event": "The Grandview Lofts Viewing"}}
+[ 73.94s][user ] Perfect. And can you find the address for me?
+[ 76.66s][moshi] ⟨ret@76.42s⟩ The address for ⟦⚡SPAN@78.42s: (tool result) The Grandview Lofts: 123 Elm Street, Anytown, USA.⟧ The Grandview Lofts is one twenty-three Elm Street, in Anytown. Having that information ready feels empowering.
+      CALL: {"function": "Navigation_2_GetAddress", "arguments": {"location": "The Grandview Lofts"}}
+[ 85.79s][user ] One twenty-three… Elm Street. Right.
+[ 88.76s][moshi] Yes, that’s correct. One twenty-three Elm Street. It's always good to double-check.
+[ 91.92s][user ] «backchannel» Uh-huh.
+[ 93.99s][user ] Can you send that address to my phone?
+[ 96.19s][moshi] ⟨ret@96.03s⟩ I’ve just sent the address ⟦⚡SPAN@98.03s: (tool result) Message sent to user's phone number.⟧ to your phone. Having it readily accessible can bring peace of mind.
+      CALL: {"function": "SMS_2_Send", "arguments": {"phoneNumber": "user's phone number", "message": "The Grandview Lofts: 123 Elm Street, Anytown, USA"}}
+[ 99.87s][user ] «backchannel» Yeah.
+[101.53s][user ] Thanks, Tellar.
+[102.56s][moshi] You’re very welcome. I’m glad I could help streamline things for you.
+[105.58s][user ] «backchannel» Okay.
+[107.69s][user ] Is there a coffee shop ⟨ret@109.40s⟩ nearby?
+[109.56s][moshi] Brew ⟦⚡SPAN@110.12s: (tool result) Brew & Bean Coffee: 0.3 miles, 4.5 stars.⟧ & Bean Coffee is just three tenths of a mile from The Grandview Lofts, with a four and a half star rating. A little caffeine boost can be a nice treat.
+      CALL: {"function": "Places_2_Search", "arguments": {"location": "The Grandview Lofts", "type": "coffee shop"}}
+[121.03s][user ] Great. I think that’s all for now.
+[123.17s][moshi] Wonderful. Enjoy your viewing, and I hope you find your perfect place.

@@ -65,22 +65,20 @@
 
 
      0.00s  user  발화 시작: Could you please set the user agent to SuperCrawler version 
-     3.82s  <ret> 발화 (turn1 첫 프레임)
-     4.13s  agent 발화 시작: <ret> I’ve set the user agent to SuperCrawler version 10.1, 
-     4.29s  user  발화 끝
-     4.86s  ⚡SPAN 주입 [d'=1.04s / d_lead=7.73s]: (tool result) User agent set to SuperCrawler version 10.1
-     8.49s  user  발화 시작: Yeah.
-     8.94s  user  발화 끝
-    11.86s  agent 발화 끝
-    12.69s  user  발화 시작: Hmm, that seems to have worked. Now, could you open up the A
-    19.28s  <ret> 발화 (turn4 첫 프레임)
-    19.50s  user  발화 끝
-    19.51s  agent 발화 시작: <ret> I’ve opened the iPhone 15 Pro specs page for you. Perh
-    20.64s  ⚡SPAN 주입 [d'=1.36s / d_lead=5.37s]: (tool result) Opened https://www.apple.com/iphone-15-pro
-    24.88s  agent 발화 끝
-    25.27s  user  발화 시작: Maybe. I wonder… what’s the starting storage capacity on tha
-    29.92s  <ret> 발화 (turn6 첫 프레임)
-    29.99s  agent 발화 시작: <ret> The iPhone 15 Pro starts with 128 gigabytes of storage
-    30.17s  user  발화 끝
-    31.92s  ⚡SPAN 주입 [d'=2.00s / d_lead=6.30s]: (tool result) 128GB
-    36.29s  agent 발화 끝
+     3.71s  <ret> 발화 (turn1 첫 프레임)
+     4.03s  user  발화 끝
+     4.03s  agent 발화 시작: <ret> I’ve set the user agent to SuperCrawler version ten po
+     4.67s  ⚡SPAN 주입 [d'=0.96s / d_lead=5.88s]: (tool result) User agent set to SuperCrawler version 10.1.
+     6.67s  user  발화 시작: Mhm.
+     7.17s  user  발화 끝
+     9.91s  agent 발화 끝
+    10.70s  user  발화 시작: Hmm, that seems… aggressive. Can you change it back to the d
+    15.00s  <ret> 발화 (turn4 첫 프레임)
+    15.23s  user  발화 끝
+    15.24s  agent 발화 시작: <ret> I’ve reset the user agent back to the default setting 
+    16.77s  ⚡SPAN 주입 [d'=1.76s / d_lead=7.37s]: (tool result) User agent reset to default.
+    22.61s  agent 발화 끝
+    22.84s  user  발화 시작: That’s better, thank you. I was just testing, actually.
+    26.18s  agent 발화 시작: I understand. It’s good to explore different settings, even 
+    26.30s  user  발화 끝
+    32.43s  agent 발화 끝

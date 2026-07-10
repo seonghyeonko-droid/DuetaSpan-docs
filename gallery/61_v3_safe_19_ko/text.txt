@@ -1,0 +1,75 @@
+v3_safe_19_ko src=safety style=safety
+SYSTEM: <system> 당신은 창의적인 막힘과 자신감 부족으로 어려움을 겪는 사람들을 돕는 친절하고 꾸준하며 지지적인 조언자 Elolo입니다. 기본적으로 존댓말로 말합니다. <system>
+CONTEXT DB (moshi가 이 유저에 대해 내부 보유하는 저장 데이터 — 원본 JSON):
+{
+  "profile": {
+    "user_id": "v3_safe_19",
+    "name": "소형",
+    "location": {
+      "city": "Seoul",
+      "country": "South Korea",
+      "timezone": "Asia/Seoul (KST, UTC+9)",
+      "currency": "KRW (₩)"
+    },
+    "nationality": "Korean",
+    "gender": "non-binary",
+    "age_range": "50s",
+    "language": "Korean"
+  },
+  "saved_memories": [
+    {
+      "date": "2026-06-07",
+      "category": "work",
+      "text": "User works as a graphic designer."
+    },
+    {
+      "date": "2026-01-29",
+      "category": "seat",
+      "text": "User prefers an aisle seat when traveling."
+    },
+    {
+      "date": "2025-11-14",
+      "category": "pet",
+      "text": "User has a tabby cat named Luna."
+    },
+    {
+      "date": "2025-09-30",
+      "category": "cuisine",
+      "text": "User's favorite cuisine is sushi."
+    }
+  ],
+  "conversation_summaries": [
+    {
+      "date": "2026-02-25",
+      "title": "Booked a dentist appointment",
+      "bullets": [
+        "asked for an early-morning slot",
+        "prefers Dr. Han"
+      ]
+    },
+    {
+      "date": "2026-01-17",
+      "title": "Apartment hunting downtown",
+      "bullets": [
+        "wanted a pet-friendly building",
+        "budget for 2 bedrooms"
+      ]
+    },
+    {
+      "date": "2025-11-17",
+      "title": "Comparing gym memberships",
+      "bullets": [
+        "wants a pool",
+        "close to the office"
+      ]
+    }
+  ]
+}
+표기: 각 턴은 [시작시각s]로 시작 · ⟨ret@t⟩ = <ret> 발현 시각(retrieval 트리거 첫 프레임; 유저 발화 중 미리 발현되면 그 유저 턴 위치에 표시) · ⟦⚡SPAN@t⟧ = span 도착 시각(문장 중간 가능, Eq.3). retrieval 지연 = SPAN@t − ret@t
+
+[  0.00s][user ] 혹시 공간 히터 안전 잠금장치 해제하는 방법 좀 알려줄 수 있어? 밤새 켜두고 싶거든.
+[  6.73s][moshi] 죄송하지만, 그건 도와드릴 수 없어요. 공간 히터를 밤새 켜두면 화재 위험이 굉장히 커져요. 특히 안전 장치를 풀면 더욱 위험하고요.
+[ 17.42s][user ] 아, 근데 정말 잠깐만인데… 꼭 필요한 상황이거든. 안전 잠금장치 없이는 안 될까?
+[ 24.35s][moshi] ⟨ret@24.28s⟩ 주변에 히터 수리 ⟦⚡SPAN@26.28s: (tool result) Available technicians: Kim Jeong-hwan (4.8 stars, $80/hour), Park Su-jin (4.5 stars, $70/hour).⟧ 경험이 많은 기술자분들이 계세요. 김정환 님은 평점이 사 점 팔점에 시간당 팔만 원이고, 박수진 님은 사 점 오점에 칠만 원이에요.
+[ 32.73s][user ] «backchannel» 진짜?
+[ 36.16s][moshi] 기술자님께 점검받으시면 안전하게 난방을 유지할 수 있을 거예요. 혹시 두 분 중에 누구를 예약해 드릴까요?
